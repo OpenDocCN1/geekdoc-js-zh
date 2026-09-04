@@ -1,193 +1,23 @@
-# JavaScript 任务 (Mission： Code (Alternator Books ))
 
+# JavaScript 任务 (Mission: Code (Alternator Books))
 
-
-
-
-![](img/Lerner_diamond_white.png)![](img/Alternator_Logo_greenwithTM.png)![](img/Mission_Javascript_backmatterbackground.jpg)![](img/3.png)![](img/4.png)
-
-
-
-
-
-
-![](img/Mission_Javascript_backmatterbackground.jpg)![](img/7.png)![](img/8.png)![](img/9.png)![](img/10.png)![](img/11.png)![](img/page_plus_circle_mission_html_interior.png)
-
-要下载“你的任务：来代码吧！”活动所需的文件，请访问 [`qrs.lernerbooks.com/JS.`](http://qrs.lernerbooks.com/JS/)。你需要使用 Google Chrome 浏览器来完成书中各处的“你的任务：来代码吧！”活动。要下载 Google Chrome 浏览器，请访问 [`www.google.com/chrome/.`](https://www.google.com/chrome/)
-
-![](img/Mission_HTML_background.jpg)![](img/14.png)![](img/15.png)![](img/16.png)![](img/17.png)![](img/18.png)![](img/19.png)![](img/20.png)![](img/21.png)![](img/22.png)![](img/23.png)![](img/24.png)![](img/25.png)![](img/14.png)![](img/shutterstock_489762406_interior.png)![](img/shutterstock_489762406_computer.png)![](img/27.png)![](img/28.png)![](img/29.png)
+要下载“你的任务：来代码吧！”活动所需的文件，请访问 [`qrs.lernerbooks.com/JS`](http://qrs.lernerbooks.com/JS/)。你需要使用 Google Chrome 浏览器来完成书中各处的“你的任务：来代码吧！”活动。要下载 Google Chrome 浏览器，请访问 [`www.google.com/chrome/`](https://www.google.com/chrome/)。
 
 # 引言
+
 ## 屏幕后的语言
 
 想写视频游戏甚至控制机器人吗？JavaScript 是学习实现这些目标的极佳编程语言。
 
-4
-
-![](img/Mission_HTML_background1.jpg)![](img/33.png)![](img/34.png)![](img/35.png)![](img/10.png)![](img/37.png)![](img/14.png)![](img/Mission_HTML_background2.jpg)![](img/39.png)![](img/40.png)![](img/41.png)![](img/14.png)![](img/43.png)![](img/44.png)![](img/45.png)![](img/46.png)![](img/47.png)![](img/48.png)![](img/GettyImages-922708940.jpg)![](img/27.png)![](img/29.png)
-
 JavaScript 无处不在！Facebook、Twitter、Amazon 和 YouTube 等流行网站都使用 JavaScript 来让他们的网站变得有趣且具有互动性。动画、声音和带有位置标记的地图都是 JavaScript 应用的一些示例。创建你喜爱的网站的程序员们使用 JavaScript 制作了它们。
-
-5
-
-![](img/Mission_HTML_background1.jpg)![](img/33.png)![](img/34.png)![](img/35.png)![](img/10.png)![](img/37.png)![](img/14.png)![](img/Mission_HTML_background2.jpg)![](img/39.png)![](img/40.png)![](img/41.png)![](img/14.png)![](img/43.png)![](img/44.png)![](img/45.png)![](img/46.png)![](img/47.png)![](img/48.png)![](img/GettyImages-922708940.jpg)![](img/27.png)![](img/29.png)
-
-JavaScript 无处不在！Facebook、Twitter、Amazon 和 YouTube 等流行网站都使用 JavaScript 来让他们的网站变得有趣且具有互动性。动画、声音和带有位置标记的地图都是 JavaScript 应用的一些示例。创建你喜爱的网站的程序员们使用 JavaScript 制作了它们。
-
-5
-
-![](img/Mission_HTML_background1.jpg)![](img/33.png)![](img/34.png)![](img/35.png)![](img/10.png)![](img/37.png)![](img/14.png)![](img/Mission_HTML_background2.jpg)![](img/39.png)![](img/40.png)![](img/41.png)![](img/14.png)![](img/43.png)![](img/44.png)![](img/45.png)![](img/46.png)![](img/47.png)![](img/48.png)![](img/GettyImages-922708940.jpg)![](img/27.png)![](img/29.png)
-
-JavaScript 无处不在！Facebook、Twitter、Amazon 和 YouTube 等流行网站都使用 JavaScript 来让他们的网站变得有趣且具有互动性。动画、声音和带有位置标记的地图都是 JavaScript 应用的一些示例。创建你喜爱的网站的程序员们使用 JavaScript 制作了它们。
-
-5
-
-![](img/Mission_HTML_background1.jpg)![](img/33.png)![](img/34.png)![](img/35.png)![](img/10.png)![](img/37.png)![](img/14.png)![](img/Mission_HTML_background2.jpg)![](img/39.png)![](img/40.png)![](img/41.png)![](img/14.png)![](img/43.png)![](img/44.png)![](img/45.png)![](img/46.png)![](img/47.png)![](img/48.png)![](img/GettyImages-922708940.jpg)![](img/27.png)![](img/29.png)
-
-JavaScript 无处不在！Facebook、Twitter、Amazon 和 YouTube 等流行网站都使用 JavaScript 来让他们的网站变得有趣且具有互动性。动画、声音和带有位置标记的地图都是 JavaScript 应用的一些示例。创建你喜爱的网站的程序员们使用 JavaScript 制作了它们。
-
-5
-
-![](img/Mission_HTML_background1.jpg)![](img/33.png)![](img/34.png)![](img/35.png)![](img/10.png)![](img/37.png)![](img/14.png)![](img/Mission_HTML_background2.jpg)![](img/39.png)![](img/40.png)![](img/41.png)![](img/14.png)![](img/43.png)![](img/44.png)![](img/45.png)![](img/46.png)![](img/47.png)![](img/48.png)![](img/GettyImages-922708940.jpg)![](img/27.png)![](img/29.png)
-
-JavaScript 无处不在！Facebook、Twitter、Amazon 和 YouTube 等流行网站都使用 JavaScript 来让他们的网站变得有趣且具有互动性。动画、声音和带有位置标记的地图都是 JavaScript 应用的一些示例。创建你喜爱的网站的程序员们使用 JavaScript 制作了它们。
-
-5
-
-![](img/Mission_HTML_background1.jpg)![](img/33.png)![](img/34.png)![](img/35.png)![](img/10.png)![](img/37.png)![](img/14.png)![](img/Mission_HTML_background2.jpg)![](img/39.png)![](img/40.png)![](img/41.png)![](img/14.png)![](img/43.png)![](img/44.png)![](img/45.png)![](img/46.png)![](img/47.png)![](img/48.png)![](img/GettyImages-922708940.jpg)![](img/27.png)![](img/29.png)
-
-JavaScript 无处不在！Facebook、Twitter、Amazon 和 YouTube 等流行网站都使用 JavaScript 来让他们的网站变得有趣且具有互动性。动画、声音和带有位置标记的地图都是 JavaScript 应用的一些示例。创建你喜爱的网站的程序员们使用 JavaScript 制作了它们。
-
-5
-
-![](img/Mission_HTML_background1.jpg)![](img/33.png)![](img/34.png)![](img/35.png)![](img/10.png)![](img/37.png)![](img/14.png)![](img/Mission_HTML_background2.jpg)![](img/39.png)![](img/40.png)![](img/41.png)![](img/14.png)![](img/43.png)![](img/44.png)![](img/45.png)![](img/46.png)![](img/47.png)![](img/48.png)![](img/GettyImages-922708940.jpg)![](img/27.png)![](img/29.png)
-
-JavaScript 无处不在！Facebook、Twitter、Amazon 和 YouTube 等流行网站都使用 JavaScript 来让他们的网站变得有趣且具有互动性。动画、声音和带有位置标记的地图都是 JavaScript 应用的一些示例。创建你喜爱的网站的程序员们使用 JavaScript 制作了它们。
-
-5
-
-![](img/Mission_HTML_background1.jpg)![](img/33.png)![](img/34.png)![](img/35.png)![](img/10.png)![](img/37.png)![](img/14.png)![](img/Mission_HTML_background2.jpg)![](img/39.png)![](img/40.png)![](img/41.png)![](img/14.png)![](img/43.png)![](img/44.png)![](img/45.png)![](img/46.png)![](img/47.png)![](img/48.png)![](img/GettyImages-922708940.jpg)![](img/27.png)![](img/29.png)
-
-JavaScript 无处不在！Facebook、Twitter、Amazon 和 YouTube 等流行网站都使用 JavaScript 来让他们的网站变得有趣且具有互动性。动画、声音和带有位置标记的地图都是 JavaScript 应用的一些示例。创建你喜爱的网站的程序员们使用 JavaScript 制作了它们。
-
-5
-
-![](img/Mission_HTML_background..)![](img/14.png)![](img/15.png)![](img/10.png)![](img/17.png)![](img/29.png)
-
-JavaScript 无处不在！Facebook、Twitter、Amazon 和 YouTube 等流行网站都使用 JavaScript 来让他们的网站变得有趣且具有互动性。动画、声音和带有位置标记的地图都是 JavaScript 应用的一些示例。创建你喜爱的网站的程序员们使用 JavaScript 制作了它们。
-
-5
-
-![](img/Mission_HTML_background.jpg)![](img/14.png)![](img/15.png)![](img/16.png)![](img/17.png)![](img/18.png)![](img/19.png)![](img/20.png)![](img/21.png)![](img/22.png)![](img/23.png)![](img/24.png)![](img/25.png)![](img/14.png)![](img/shutterstock_489762406_interior.png)![](img/shutterstock_489762406_computer.png)![](img/27.png)![](img/28.png)![](img/29.png)
-
-# 引言
-## 屏幕后的语言
-
-想写视频游戏甚至控制机器人吗？JavaScript 是学习实现这些目标的极佳编程语言。
-
-4
-
-![](img/Mission_HTML_background1.jpg)![](img/33.png)![](img/34.png)![](img/35.png)![](img/10.png)![](img/37.png)![](img/14.png)![](img/Mission_HTML_background2.jpg)![](img/39.png)![](img/40.png)![](img/41.png)![](img/14.png)![](img/43.png)![](img/44.png)![](img/45.png)![](img/46.png)![](img/47.png)![](img/48.png)![](img/GettyImages-922708940.jpg)![](img/27.png)![](img/29.png)
-
-JavaScript 无处不在！Facebook、Twitter、Amazon 和 YouTube 等流行网站都使用 JavaScript 来让他们的网站变得有趣且具有互动性。动画、声音和带有位置标记的地图都是 JavaScript 应用的一些示例。创建你喜爱的网站的程序员们使用 JavaScript 制作了它们。
-
-5
-
-![](img/Mission_HTML_background1.jpg)![](img/33.png)![](img/34.png)![](img/35.png)![](img/10.png)![](img/37.png)![](img/14.png)![](img/Mission_HTML_background2.jpg)![](img/39.png)![](img/40.png)![](img/41.png)![](img/14.png)![](img/43.png)![](img/44.png)![](img/45.png)![](img/46.png)![](img/47.png)![](img/48.png)![](img/GettyImages-922708940.jpg)![](img/27.png)![](img/29.png)
-
-JavaScript 无处不在！Facebook、Twitter、Amazon 和 YouTube 等流行网站都使用 JavaScript 来让他们的网站变得有趣且具有互动性。动画、声音和带有位置标记的地图都是 JavaScript 应用的一些示例。创建你喜爱的网站的程序员们使用 JavaScript 制作了它们。
-
-5
-
-![](img/Mission_HTML_background1.jpg)![](img/33.png)![](img/34.png)![](img/35.png)![](img/10.png)![](img/37.png)![](img/14.png)![](img/Mission_HTML_background2.jpg)![](img/39.png)![](img/40.png)![](img/41.png)![](img/14.png)![](img/43.png)![](img/44.png)![](img/45.png)![](img/46.png)![](img/47.png)![](img/48.png)![](img/GettyImages-922708940.jpg)![](img/27.png)![](img/29.png)
-
-JavaScript 无处不在！Facebook、Twitter、Amazon 和 YouTube 等流行网站都使用 JavaScript 来让他们的网站变得有趣且具有互动性。动画、声音和带有位置标记的地图都是 JavaScript 应用的一些示例。创建你喜爱的网站的程序员们使用 JavaScript 制作了它们。
-
-5
-
-![](img/Mission_HTML_background1.jpg)![](img/33.png)![](img/34.png)![](img/35.png)![](img/10.png)![](img/37.png)![](img/14.png)![](img/Mission_HTML_background2.jpg)![](img/39.png)![](img/40.png)![](img/41.png)![](img/14.png)![](img/43.png)![](img/44.png)![](img/45.png)![](img/46.png)![](img/47.png)![](img/48.png)![](img/GettyImages-922708940.jpg)![](img/27.png)![](img/29.png)
-
-JavaScript 无处不在！Facebook、Twitter、Amazon 和 YouTube 等流行网站都使用 JavaScript 来让他们的网站变得有趣且具有互动性。动画、声音和带有位置标记的地图都是 JavaScript 应用的一些示例。创建你喜爱的网站的程序员们使用 JavaScript 制作了它们。
-
-5
-
-![](img/Mission_HTML_background1.jpg)![](img/33.png)![](img/34.png)![](img/35.png)![](img/10.png)![](img/37.png)![](img/14.png)![](img/Mission_HTML_background2.jpg)![](img/39.png)![](img/40.png)![](img/41.png)![](img/14.png)![](img/43.png)![](img/44.png)![](img/45.png)![](img/46.png)![](img/47.png)![](img/48.png)![](img/GettyImages-922708940.jpg)![](img/27.png)![](img/29.png)
-
-JavaScript 无处不在！Facebook、Twitter、Amazon 和 YouTube 等流行网站都使用 JavaScript 来让他们的网站变得有趣且具有互动性。动画、声音和带有位置标记的地图都是 JavaScript 应用的一些示例。创建你喜爱的网站的程序员们使用 JavaScript 制作了它们。
-
-5
-
-![](img/Mission_HTML_background1.jpg)![](img/33.png)![](img/34.png)![](img/35.png)![](img/10.png)![](img/37.png)![](img/14.png)![](img/Mission_HTML_background2.jpg)![](img/39.png)![](img/40.png)![](img/41.png)![](img/14.png)![](img/43.png)![](img/44.png)![](img/45.png)![](img/46.png)![](img/47.png)![](img/48.png)![](img/GettyImages-922708940.jpg)![](img/27.png)![](img/29.png)
-
-JavaScript 无处不在！Facebook、Twitter、Amazon 和 YouTube 等流行网站都使用 JavaScript 来让他们的网站变得有趣且具有互动性。动画、声音和带有位置标记的地图都是 JavaScript 应用的一些示例。创建你喜爱的网站的程序员们使用 JavaScript 制作了它们。
-
-5
-
-![](img/Mission_HTML_background1.jpg)![](img/33.png)![](img/34.png)![](img/35.png)![](img/10.png)![](img/37.png)![](img/14.png)![](img/Mission_HTML_background2.jpg)![](img/39.png)![](img/40.png)![](img/41.png)![](img/14.png)![](img/43.png)![](img/44.png)![](img/45.png)![](img/46.png)![](img/47.png)![](img/48.png)![](img/GettyImages-922708940.jpg)![](img/27.png)![](img/29.png)
-
-JavaScript 无处不在！Facebook、Twitter、Amazon 和 YouTube 等流行网站都使用 JavaScript 来让他们的网站变得有趣且具有互动性。动画、声音和带有位置标记的地图都是 JavaScript 应用的一些示例。创建你喜爱的网站的程序员们使用 JavaScript 制作了它们。
-
-5
-
-![](img/Mission_HTML_background1.jpg)![](img/33.png)![](img/34.png)![](img/35.png)![](img/10.png)![](img/37.png)![](img/14.png)![](img/Mission_HTML_background2.jpg)![](img/39.png)![](img/40.png)![](img/41.png)![](img/14.png)![](img/43.png)![](img/44.png)![](img/45.png)![](img/46.png)![](img/47.png)![](img/48.png)![](img/GettyImages-922708940.jpg)![](img/27.png)![](img/29.png)
-
-JavaScript 无处不在！Facebook、Twitter、Amazon 和 YouTube 等流行网站都使用 JavaScript 来让他们的网站变得有趣且具有互动性。动画、声音和带有位置标记的地图都是 JavaScript 应用的一些示例。创建你喜爱的网站的程序员们使用 JavaScript 制作了它们。
-
-5
-
-![](img/Mission_HTML_background1.jpg)![](img/33.png)![](img/34.png)![](img/35.png)![](img/10.png)![](img/37.png)![](img/14.png)![](img/Mission_HTML_background2.jpg)![](img/39.png)![](img/40.png)![](img/41.png)![](img/14.png)![](img/43.png)![](img/44.png)![](img/45.png)![](img/46.png)![](img/47.png)![](img/48.png)![](img/GettyImages-922708940.jpg)![](img/27.png)![](img/29.png)
-
-JavaScript 无处不在！Facebook、Twitter、Amazon 和 YouTube 等流行网站都使用 JavaScript 来让他们的网站变得有趣且具有互动性。动画、声音和带有位置标记的地图都是 JavaScript 应用的一些示例。创建你喜爱的网站的程序员们使用 JavaScript 制作了它们。
-
-5
-
-![](img/Mission_HTML_background1.jpg)![](img/33.png)![](img/34.png)![](img/35.png)![](img/10.png)![](img/37.png)![](img/14.png)![](img/Mission_HTML_background2.jpg)![](img/39.png)![](img/40.png)![](img/41.png)![](img/14.png)![](img/43.png)![](img/44.png)![](img/45.png)![](img/46.png)![](img/47.png)![](img/48.png)![](img/GettyImages-922708940.jpg)![](img/27.png)![](img/29.png)
-
-JavaScript 无处不在！Facebook、Twitter、Amazon 和 YouTube 等流行网站都使用 JavaScript 来让他们的网站变得有趣且具有互动性。动画、声音和带有位置标记的地图都是 JavaScript 应用的一些示例。创建你喜爱的网站的程序员们使用 JavaScript 制作了它们。
-
-5
-
-![](img/Mission_HTML_background1.jpg)![](img/33.png)![](img/34.png)![](img/35.png)![](img/10.png)![](img/37.png)![](img/14.png)![](img/Mission_HTML_background2.jpg)![](img/39.png)![](img/40.png)![](img/41.png)![](img/14.png)![](img/43.png)![](img/44.png)![](img/45.png)![](img/46.png)![](img/47.png)![](img/48.png)![](img/GettyImages-922708940.jpg)![](img/27.png)![](img/29.png)
-
-JavaScript 无处不在！Facebook、Twitter、Amazon 和 YouTube 等流行网站都使用 JavaScript 来让他们的网站变得有趣且具有互动性。动画、声音和带有位置标记的地图都是 JavaScript 应用的一些示例。创建你喜爱的网站的程序员们使用 JavaScript 制作了它们。
-
-5
-
-![](img/Mission_HTML_background1.jpg)![](img/33.png)![](img/34.png)![](img/35.png)![](img/10.png)![](img/37.png)![](img/14.png)![](img/Mission_HTML_background2.jpg)![](img/39.png)![](img/40.png)![](img/41.png)![](img/14.png)![](img/43.png)![](img/44.png)![](img/45.png)![](img/46.png)![](img/47.png)![](img/48.png)![](img/GettyImages-922708940.jpg)![](img/27.png)![](img/29.png)
-
-JavaScript 无处不在！Facebook、Twitter、Amazon 和 YouTube 等流行网站都使用 JavaScript 来让他们的网站变得有趣且具有互动性。动画、声音和带有位置标记的地图都是 JavaScript 应用的一些示例。创建你喜爱的网站的程序员们使用 JavaScript 制作了它们。
-
-5
-
-![](img/Mission_HTML_background1.jpg)![](img/33.png)![](img/34.png)![](img/35.png)![](img/10.png)![](img/37.png)![](img/14.png)![](img/Mission_HTML_background2.jpg)![](img/39.png)![](img/40.png)![](img/41.png)![](img/14.png)![](img/43.png)![](img/44.png)![](img/45.png)![](img/46.png)![](img/47.png)![](img/48.png)![](img/GettyImages-922708940.jpg)![](img/27.png)![](img/29.png)
-
-JavaScript 无处不在！Facebook、Twitter、Amazon 和 YouTube 等流行网站都使用 JavaScript 来让他们的网站变得有趣且具有互动性。动画、声音和带有位置标记的地图都是 JavaScript 应用的一些示例。创建你喜爱的网站的程序员们使用 JavaScript 制作了它们。
-
-5
-
-![](img/Mission_HTML_background1.jpg)![](img/33.png)![](img/34.png)![](img/35.png)![](img/10.png)![](img/37.png)![](img/14.png)![](img/Mission_HTML_background2.jpg)![](img/39.png)![](img/40.png)![](img/41.png)![](img/14.png)![](img/43.png)![](img/44.png)![](img/45.png)![](img/46.png)![](img/47.png)![](img/48.png)![](img/GettyImages-922708940.jpg)![](img/27.png)![](img/29.png)
-
-JavaScript 无处不在！Facebook、Twitter、Amazon 和 YouTube 等流行网站都使用 JavaScript 来让他们的网站变得有趣且具有互动性。动画、声音和带有位置标记的地图都是 JavaScript 应用的一些示例。创建你喜爱的网站的程序员们使用 JavaScript 制作了它们。
-
-5
-
-![](img/Mission_HTML_background1.jpg)![](img/33.png)![](img/34.png)![](img/35.png)![](img/10.png)![](img/37.png)![](img/14.png)![](img/Mission_HTML_background2.jpg)![](img/39.png)![](img/40.png)![](img/41.png)![](img/14.png)![](img/43.png)![](img/44.png)![](img/45.png)![](img/46.png)![](img/47.png)![](img/48.png)![](img/GettyImages-922708940.jpg)![](img/27.png)![](img/29.png)
-
-JavaScript 无处不在！Facebook、Twitter、Amazon 和 YouTube 等流行网站都使用 JavaScript 来让他们的网站变得有趣且具有互动性。动画、声音和带有位置标记的地图都是 JavaScript 应用的一些示例。创建你喜爱的网站的程序员们使用 JavaScript 制作了它们。
-
-5
-
-
-
-
 
 # 字符串与布尔值
 
-像你狗的名字和眼睛颜色这样的数据在 JavaScript 中用字符串（strings）表示。字符串是字母、数字和标点符号的序列。字符串必须包含在引号中，例如：`“I am a string.”`
+## 数据类型与操作
+
+像你狗的名字和眼睛颜色这样的数据在 JavaScript 中用字符串（`strings`）表示。字符串是字母、数字和标点符号的序列。字符串必须包含在引号中，例如：`“I am a string.”`
 
 `.length` 命令告诉你字符串中有多少个字符。
-
-## 数据类型与操作
 
 最后，只能取两个可能值之一（`true` 或 `false`）的数据被称为 `Boolean`（布尔值）。布尔值可以表示你是否喜欢某本书。
 
@@ -197,11 +27,11 @@ JavaScript 无处不在！Facebook、Twitter、Amazon 和 YouTube 等流行网�
 
 ## 变量
 
-变量存储了你以后要用的数据。当数据存储在变量中时，它被称为值（value）。每个变量可以有一个唯一的名称，并恰好存储一个值。要创建一个变量，使用关键字 `var`。
+变量存储了你以后要用的数据。当数据存储在变量中时，它被称为值（`value`）。每个变量可以有一个唯一的名称，并恰好存储一个值。要创建一个变量，使用关键字 `var`。
 
 ```javascript
-var myDogsName = “Rover”;
-var myEyeColor = “brown”;
+var myDogsName = "Rover";
+var myEyeColor = "brown";
 var myAge = 11;
 var isBookGood = true;
 ```
@@ -210,17 +40,17 @@ var isBookGood = true;
 
 许多 JavaScript 控制台使用不同的颜色来帮助显示代码的每个部分。代码在你的屏幕上可能是这样的。
 
-在上一页的示例中，`var myDogsName` 告诉 JavaScript `myDogsName` 是一个变量。`=` 是告诉 JavaScript `myDogsName` 应该存储值 `Rover` 的方式。注意 `“Rover” 被包含在引号中，表示它是一个字符串。
+在上一页的示例中，`var myDogsName` 告诉 JavaScript `myDogsName` 是一个变量。`=` 是告诉 JavaScript `myDogsName` 应该存储值 `Rover` 的方式。注意 `“Rover”` 被包含在引号中，表示它是一个字符串。
 
-同样，`myAge` 是存储数值 `11` 的变量名。`isBookGood` 存储了布尔值 `true`。如果你的家里有宠物，当你使用 JavaScript 时，它的名字可以可以是一个变量。
+同样，`myAge` 是存储数值 `11` 的变量名。`isBookGood` 存储了布尔值 `true`。如果你的家里有宠物，当你使用 JavaScript 时，它的名字可以是一个变量。
 
 ## 重新赋值变量
 
 你可以更改已创建的变量的值。当你这样做时，不需要关键字 `var`，因为你不是在第一次创建变量。例如：
 
 ```javascript
-myDogsName = “Fido”;
-myEyeColor = “green”;
+myDogsName = "Fido";
+myEyeColor = "green";
 ```
 
 是时候尝试一个有趣的活动了！首先，打开你的控制台。创建一个名为 `myFruit` 的新变量并给它赋值 `“Strawberry.”`。然后输入 `console.log(myFruit)`。你看到了什么？现在，通过分配一个新值 `“apple.”` 来更改 `myFruit` 的值。再次使用 `console.log(myFruit)`。你看到了什么？
@@ -229,13 +59,13 @@ myEyeColor = “green”;
 
 人类在生活中会这样做，计算机需要比较两个事物以查看它们是否相同。这种检查使用比较运算符完成。比较运算符的结果为 `true` 或 `false`。
 
-## 存储数据
+### 存储数据
 
 一个比较运算符是 `===`。该运算符检查值和类型是否相同。例如，虽然数字 `12` 和字符串 `“12”` 有相同的值，但它们的类型不同。
 
 ```javascript
 var numericValue = 12;
-var stringValue = “12”;
+var stringValue = "12";
 numericValue == stringValue // true
 numericValue === stringValue // false
 ```
@@ -260,23 +90,20 @@ numericValue === stringValue // false
 与其在像下面的列表中拥有五个不同的变量：
 
 ```javascript
-var myFirstItem = “bicycle”;
-var mySecondItem = “bike helmet”;
-var myThirdItem = “bike bell”;
-var myFourthItem = “bike mudguard”;
-var myFifthItem = “bike basket”;
+var myFirstItem = "bicycle";
+var mySecondItem = "bike helmet";
+var myThirdItem = "bike bell";
+var myFourthItem = "bike mudguard";
+var myFifthItem = "bike basket";
 ```
 
 JavaScript 允许你使用方括号创建一个包含许多项的数组。
 
 ```javascript
-var myWishList = [“bicycle”, “bike helmet”, “bike bell”, “bike
-mudguard”, “bike basket”];
+var myWishList = ["bicycle", "bike helmet", "bike bell", "bike mudguard", "bike basket"];
 ```
 
-
-
-JavaScript 会记住数组中元素的顺序。这种顺序被称为 `index`（索引）。如果你忘记了数组中的第一个元素是什么（例如），你可以询问 JavaScript。然而，索引有点小技巧，因为第一个元素被标记为 0，而不是 1。在例例中，“bicycle”是第 0 个元素，“bike helmet”是第 1 个，以此此类推。
+JavaScript 会记住数组中元素的顺序。这种顺序被称为 `index`（索引）。如果你忘记了数组中的第一个元素是什么（例如），你可以询问 JavaScript。然而，索引有点小技巧，因为第一个元素被标记为 0，而不是 1。在例例中，“bicycle”是第 0 个元素，“bike helmet”是第 1 个，以此类推。
 
 以下是如何使用索引在数组中查找特定元素的示例：
 
@@ -285,9 +112,9 @@ console.log(myWishList[3]); // bike mudguard
 console.log(myWishList[4]); // bike basket
 ```
 
-假设你想存储关于你猫咪的信息，比如它的昵称、年龄、颜色、品种、最喜欢的玩具和最喜爱的食物。你还想为你朋友的猫和你表哥的猫存储相同的信息。这意味着有大量的变量需要记录。为了帮助你记录所有信息，你可以创建一个对象。
+## 对象
 
-## Objects
+假设你想存储关于你猫咪的信息，比如它的昵称、年龄、颜色、品种、最喜欢的玩具和最喜爱的食物。你还想为你朋友的猫和你表哥的猫存储相同的信息。这意味着有大量的变量需要记录。为了帮助你记录所有信息，你可以创建一个对象。
 
 对象是另一种存储数据的方式。对象不像数组那样使用索引来访问数据，而是使用被称为 `keys`（键）的字符串。每个键都对应一个值。在我们的猫对象中有六个键值对——每个信息各对应一个。
 
@@ -318,13 +145,14 @@ var myFavoriteThings = {
 ### Mission: Code It!
 
 在 Chrome 中打开 JavaScript 控制台。
+
 1. 创建一个数组 `myTopFiveBooks`，由你最喜欢的五本书名组成。
 2. 创建一个数组 `myTopFiveGames`，由你最喜欢的五种桌游组成。
 3. 创建一个数组 `myTopFiveSnacks`，由你最喜欢的五种零食组成。
 4. 最后，创建一个对象 `topFiveThings`，由你在步骤 1-3 中创建的数组组成。
 5. 对你的对象 `topFiveThings` 使用 `console.log`。你看到了什么？
 
-# Chapter 4 Conditional Statements and Functions
+# Chapter 4 条件语句与函数
 
 每天都会根据某些条件是否成立来做出决定。这种决策在编程中可以通过条件语句来实现。最简单的条件语句是 `if`：如果某事为真，则执行操作。
 
@@ -355,9 +183,9 @@ function myFirstFunction(){
 myFirstFunction(); // Hi, Coder!
 ```
 
-函数旁边的括号可以包含参数（arguments）。参数可以是数字、字符串、布尔值甚至是变量。例如，如果你写了一个检查数字是否为偶数的函数，你可以测试不同的数字作为参数。
+函数旁边的括号可以包含参数（`arguments`）。参数可以是数字、字符串、布尔值甚至是变量。例如，如果你写了一个检查数字是否为偶数的函数，你可以测试不同的数字作为参数。
 
-现在你已经掌握了一些 JavaScript 的基础知识。继续磨练你的技能吧。谁知道呢？也许你可能会开发出下一个伟 JavaScript 作品！
+现在你已经掌握了一些 JavaScript 的基础知识。继续磨练你的技能吧。谁知道呢？也许你可能会开发出下一个伟大的 JavaScript 作品！
 
 ### Mission: Code It!
 
@@ -367,33 +195,20 @@ myFirstFunction(); // Hi, Coder!
 
 # Glossary
 
-arguments: 传递给函数的值，以便它们执行任务
-
-arrays: 存储项目列表的变量
-
-conditional statements: 根据条件的真假告诉计算机执行不同任务的代码行
-
-index: 数组中元素的数字顺序
-
-keywords: 编程语言中只能以特定方式使用的单词
-
-object: 描述某物的键的集合
-
-programming language: 一组告诉计算机如何理解程序的规则
-
-
-
+- **arguments**: 传递给函数的值，以便它们执行任务
+- **arrays**: 存储项目列表的变量
+- **conditional statements**: 根据条件的真假告诉计算机执行不同任务的代码行
+- **index**: 数组中元素的数字顺序
+- **keywords**: 编程语言中只能以特定方式使用的单词
+- **object**: 描述某物的键的集合
+- **programming language**: 一组告诉计算机如何理解程序的规则
 
 # 定义
 
-- **程序 (programs)**：计算机执行的特定有序命令集
-- **字符串 (strings)**：用引号括起来的字母、数字和符号序列
-- **语法 (syntax)**：规定编写程序时符号、关键字和允许单词的规则
-- **变量 (variable)**：用于存储数据的容器
-
-## 30
-
-![](img/14.png)![](img/Mission_Javascript_Spine_PM1.png)![](img/33.png)![](img/34.png)![](img/10.png)![](img/37.png)![](img/14.png)![](img/35.png)![](img/shutterstock_489762406_spy1.png)![](img/434.png)![](img/shutterstock_489762406_computer1.png)![](img/27.png)
+- **程序 (programs)**: 计算机执行的特定有序命令集
+- **字符串 (strings)**: 用引号括起来的字母、数字和符号序列
+- **语法 (syntax)**: 规定编写程序时符号、关键字和允许单词的规则
+- **变量 (variable)**: 用于存储数据的容器
 
 ## 更多信息
 
@@ -404,38 +219,29 @@ programming language: 一组告诉计算机如何理解程序的规则
 - Preuitt, Sheela. 《Mission HTML》。Minneapolis: Lerner Publications, 2020.
 - Young Rewired State. 《Get Coding!学习 HTML, CSS 和 JavaScript 并构建网站、App 和游戏》。Somerville, MA: Candlewick, 2017.
 
-## 31
-
-![](img/14.png)![](img/Mission_Javascript_Spine_PM.png)![](img/360.png)![](img/98.png)![](img/90.png)![](img/91.png)![](img/162.png)![](img/139.png)![](img/14.png)![](img/27.png)
-
 ## 图片致谢
 
 图片来源：Sheela Preuit 的各种截图。其他图片：Caiaimage/Robert Daly/Getty Images, 第 5 页；Tuan Tran/Getty Images, 第 7 页；matejmo/Getty Images, 第 8 页；vgajic/Getty Images, 第 9 页；Hero Images/Getty Images, 第 13 页；Phil McDonald/Shutterstock.com, 第 15 页；Kasabutskaya/Shutterstock.com, 第 19 页；rukawajung/Shutterstock.com, 第 23 页。封面及内设计元素：HuHu/Shutterstock.com（跑步）；Vankad/Shutterstock.com（电路）；Bro Studio/Shutterstock.com（圆形图案）；Leremy/Shutterstock.com（人物）。
 
 ## 索引
 
-- **动画 (animations)**，5, 9
-- **数组 (arrays)**，20–24
-- **布尔值 (Booleans)**，11, 13, 15, 28
-- **比较运算符 (comparison operators)**，18–20
-- **计算机 (computers)**，6, 7, 10, 28
-- **条件语句 (conditional statements)**，26
-- **控制台 (console)**，17, 25, 29
-- **数据 (data)**，8, 10, 14, 23
-- **函数 (functions)**，27–29
-- **键 (keys)**，23–24
-- **对象 (objects)**，23–25
-- **程序 (programs)**，6
-- **标点符号 (punctuation)**，7, 12
-- **机器人 (robots)**，4
-- **字符串 (strings)**，11, 13, 15, 19, 23, 28
-- **语法 (syntax)**，7
-- **真或假 (true or false)**，13, 18, 27
-- **变量 (variables)**，14–17, 19–22, 28–29
-- **视频游戏 (video games)**，4, 9
-- **网站 (websites)**，5, 8, 18
-
-## 32
-
-![](img/backcover.jpg)
-
+- **动画 (animations)**, 5, 9
+- **数组 (arrays)**, 20–24
+- **布尔值 (Booleans)**, 11, 13, 15, 28
+- **比较运算符 (comparison operators)**, 18–20
+- **计算机 (computers)**, 6, 7, 10, 28
+- **条件语句 (conditional statements)**, 26
+- **控制台 (console)**, 17, 25, 29
+- **数据 (data)**, 8, 10, 14, 23
+- **函数 (functions)**, 27–29
+- **键 (keys)**, 23–24
+- **对象 (objects)**, 23–25
+- **程序 (programs)**, 6
+- **标点符号 (punctuation)**, 7, 12
+- **机器人 (robots)**, 4
+- **字符串 (strings)**, 11, 13, 15, 19, 23, 28
+- **语法 (syntax)**, 7
+- **真或假 (true or false)**, 13, 18, 27
+- **变量 (variables)**, 14–17, 19–22, 28–29
+- **视频游戏 (video games)**, 4, 9
+- **网站 (websites)**, 5, 8, 18

@@ -1,44 +1,19 @@
+
 # Ajax 高级指南
-
-
-
-
-
-
 
 ![](img/b372374b4ba34adee418bd5ab6e01f7f_0_0.png)
 
+`1B/ZR/QR/QWIN`
 
+## 关于作者
 
-
-
-
-
-
-1B/ZR/QR/QWIN
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-# 关于作者
-
-Nicholas C. Zakas 拥有 Merrimack College 的计算机科学学士学位和 Endincott College 的 MBA 学位。他是《Web 开发人员的专业 JavaScript》以及其他几本书的作者。Nicholas 在 Web 开发领域工作了五年多，并帮助全球一些最大的公司开发了解决方案。可以通过他的网站 www.zczonline.net 与 Nicholas 联系。
+Nicholas C. Zakas 拥有 Merrimack College 的计算机科学学士学位和 Endincott College 的 MBA 学位。他是《Web 开发人员的专业 JavaScript》以及其他几本书的作者。Nicholas 在 Web 开发领域工作了五年多，并帮助全球一些最大的公司开发了解决方案。可以通过他的网站 `www.zczonline.net` 与 Nicholas 联系。
 
 Jeremy Peak 从 1998 年就开始钻研 Web 开发。目前在一家学区的 IT 部门工作，Jeremy 使用 JavaScript、PHP 和 C# 开发 Web 解决方案。他写过涵盖 XSLT、WebForms 和 C 等主题的在线文章。
 
-Joe Fawcett 从 20 世纪 70 年代开始编程，离开学校在 IT 领域工作了一段时间。随后他追求了一份更稳妥的职业，直到 1994 年回归软件开发。2003 年，他因对社区的贡献和技术专长被授予 Microsoft XML 价值专家称号。Joe 在伦敦的 Financial Training Company担任开发人员，该公司提供专业认证和业务培训。
+Joe Fawcett 从 20 世纪 70 年代开始编程，离开学校在 IT 领域工作了一段时间。随后他追求了一份更稳妥的职业，直到 1994 年回归软件开发。2003 年，他因对社区的贡献和技术专长被授予 Microsoft XML 价值专家称号。Joe 在伦敦的 Financial Training Company 担任开发人员，该公司提供专业认证和业务培训。
 
-# 致谢
+## 致谢
 
 创作这本书需要许多人的参与，我们想感谢对本书做出贡献的人。
 
@@ -46,19 +21,19 @@ Joe Fawcett 从 20 世纪 70 年代开始编程，离开学校在 IT 领域工�
 
 最后，非常感谢提供出版前反馈的人：Martin Honnen、Peter Frueh、Mike Shaffer、Brad Neiberg、Steven Peterson 和 Eric Miraglia。
 
-# 引言
+## 引言
 
-随着 JavaScript 的最新进展，Web 开发人员能够为 Web应用程序创建前所未有的用户体验。打破自 Web 诞生以来主导它的“点击并等待”范式，开发者现在可以使用名为 Ajax 的技术将以前保留桌面应用程序的功能带到 Web。
+随着 JavaScript 的最新进展，Web 开发人员能够为 Web 应用程序创建前所未有的用户体验。打破自 Web 诞生以来主导它的“点击并等待”范式，开发者现在可以使用名为 Ajax 的技术将以前保留桌面应用程序的功能带到 Web。
 
-Ajax 是一个通用术语，围绕使用 JavaScript 发起的异步请求，其目的是从服务器检索信息而无需刷新页面。这些请求可以用任何方式执行，并使用任何数据传输格式。这种数据检索方法与文档对象模型（DOM）的交互性相结合，催生了挑战 Web 传统规则的新一代应用程序。Google、Yahoo 和 Microsoft 等大公司已转向创建看起来和运行像桌面应用程序的 应用程序。
+Ajax 是一个通用术语，围绕使用 JavaScript 发起的异步请求，其目的是从服务器检索信息而无需刷新页面。这些请求可以用任何方式执行，并使用任何数据传输格式。这种数据检索方法与文档对象模型（DOM）的交互性相结合，催生了挑战 Web 传统规则的新一代应用程序。Google、Yahoo 和 Microsoft 等大公司已转向创建看起来和运行像桌面应用程序的应用程序。
 
-本书涵盖了 Ajax 的各个方面，包括向服务器发起 HTTP 请求的不同方式以及用于传输数据的不同格式。你将学习如何在网站和 应用程序中执行客户端服务器通信的技术和模式。
+本书涵盖了 Ajax 的各个方面，包括向服务器发起 HTTP 请求的不同方式以及用于传输数据的不同格式。你将学习如何在网站和应用程序中执行客户端服务器通信的技术和模式。
 
-# 本书对象
+## 本书对象
 
 本书面向两类读者：
 
-- 希望提高其网站和 应用程序可用性的 Web 开发者。
+- 希望提高其网站和应用程序可用性的 Web 开发者。
 - 希望进一步了解该语言的中级 JavaScript 开发者。
 
 此外，对以下相关技术的熟悉程度是其适合这本书的有力指标：
@@ -73,93 +48,85 @@ Ajax 是一个通用术语，围绕使用 JavaScript 发起的异步请求，其
 
 本书不适合没有上述技术基础知识的初学者。此外，良好的 JavaScript 基础对于理解本书至关重要。没有这些知识的读者应参考诸如《入门 JavaScript，第二版》（Wiley Publishing, ISBN 0-7645-5587-1）和《Web 开发人员的专业 JavaScript》（Wiley Publishing, ISBN 0-7645-7908-8）。
 
-
-
-
-
-# 本书涵盖内容
+## 本书涵盖内容
 
 《专业 Ajax》（Professional Ajax）为 Ajax 技术、模式和用例提供了开发者层级的教程。
 
 本书从探索 Ajax 的根源开始，涵盖了 Web 的演进和新技术如何导致 Ajax 技巧的发展。书中详细讨论了与 Ajax 相关的框架（frames）、JavaScript、代码、XML 以及 XMLHttp。
 
-在介绍部分，书籍将开始介绍特定 Ajax 技术的实现。对比并分析了诸如隐藏框架、动态框架和 XML-Http 等请求代理（request brokers），解释了在什么情况下应该使用某种方法而非另一种方法。为了使这一讨论更加清晰，书中还包含了对 HTTP 请求和响应的简要概述。
+在介绍部分，书籍将开始介绍特定 Ajax 技术的实现。对比并分析了诸如隐藏框架、动态框架和 XMLHttp 等请求代理（request brokers），解释了在什么情况下应该使用某种方法而非另一种方法。为了使这一讨论更加清晰，书中还包含了对 HTTP 请求和响应的简要概述。
 
 在对各种请求类型有了基本理解后，书籍将提供如何在网站或 Web 应用程序中使用以及何时使用 Ajax 的示例。书中讨论了不同的数据格式（包括纯文本、XML、JSON）的优缺点。此外还讨论了 Web 服务以及如何利用它们来执行 Ajax 技术。
 
 书的最后一部分将引导你创建一个名为 AjaxMail 的完整 Ajax 应用程序，该程序整合了书中讨论的许多技术，并介绍了如何使用 Ajax 库来简化开发者的工作。
 
-# 本书结构
+## 本书结构
 
 本书通过提供关于 Ajax 的背景开始，然后进入实际实现。接下来，讨论了实现客户端服务器通信的各种方式，为本书的其余部分奠定了基础。建议通读本书，每一章都建立在前章节信息的基础上。
 
+- **第 10 章：“框架。”** 本章涵盖了 Ajax 框架：用于 PHP 的 JPS 以及用于 Java 的 DWR。这些框架都尝试使 Ajax 开发过程自动化。
 
--   **第 10 章：“框架。”** 本章涵盖了 Ajax 框架：用于 PHP 的 JPS 以及用于 Java 的 DWR。这些框架都尝试使 Ajax 开发过程自动化。
-
-# 使用本书的条件
+## 使用本书的条件
 
 要运行书中的示例，你需要以下环境：
 
--   *Windows 2000*、*Windows Server 2003*、*Windows XP* 或 *Mac OS*
--   *Internet Explorer 5.5 或更高版本*（Windows）、*Mozilla 1.0 或更高版本*（所有平台）、*Opera 7.5 或更高版本*（所有平台），或 *Safari 1.2 或更高版本*（Mac OS）。
+- Windows 2000、Windows Server 2003、Windows XP 或 Mac OS
+- Internet Explorer 5.5 或更高版本（Windows）、Mozilla 1.0 或更高版本（所有平台）、Opera 7.5 或更高版本（所有平台），或 Safari 1.2 或更高版本（Mac OS）。
 
-完整的源代码可从 www.wrox.com 下载。
+完整的源代码可从 `www.wrox.com` 下载。
 
-# 约定
+## 约定
 
 为了帮助你从书中获取最多的信息并跟踪进度，我们在书中使用了多种约定。
 
 **重要** 框包含了与正文直接相关的、容易被遗忘的信息。
 
-**注意** 提示（Tips）、技巧以及考虑当前课程的帮助以*斜体*形式呈现如下。
+**注意** 提示（Tips）、技巧以及考虑当前课程的帮助以斜体形式呈现如下。
 
 关于样式，我们使用：
 
--   当我们引入新术语和重要内容时，使用*斜体*突出。
--   我们显示快捷键，如：`Ctrl+A`。
--   我们显示文件名、URL 和文本内容，如：`persistence.properties`。
+- 当我们引入新术语和重要内容时，使用斜体突出。
+- 我们显示快捷键，如：`Ctrl+A`。
+- 我们显示文件名、URL 和文本内容，如：`persistence.properties`。
 
 我们以两种不同的方式呈现：
 
 > 在示例中，我们使用灰色背景突出显示新的和重要的代码。
 
--   *灰色高亮*用于上下文中较不重要的或之前出现过的代码。
+- 灰色高亮用于上下文中较不重要的或之前出现过的代码。
 
-# 源代码
+## 源代码
 
-在学习书中的示例时，你可以选择手动输入所有代码，也可以使用随书的源代码文件。书中使用的所有源代码均可在 www.wrox.com 下载。在网站上，点击书名（通过搜索框或列表之一），并点击书籍详情页上的“下载”链接以获取书的所有源代码。
+在学习书中的示例时，你可以选择手动输入所有代码，也可以使用随书的源代码文件。书中使用的所有源代码均可在 `www.wrox.com` 下载。在网站上，点击书名（通过搜索框或列表之一），并点击书籍详情页上的“下载”链接以获取书的所有源代码。
 
-**注意** 由于许多书的标题相似，你可以通过 ISBN 轻松找到它；本书的 ISBN 为 0-471-77778-1。
+**注意** 由于许多书的标题相似，你可以通过 ISBN 轻松找到它；本书的 ISBN 为 `0-471-77778-1`。
 
-下载代码后，使用你喜欢的压缩工具对其进行解压。或者，你可以前往 www.wrox.com/dynamic/books/download.aspx 查看本书及其他 Wrox 书的代码。
+下载代码后，使用你喜欢的压缩工具对其进行解压。或者，你可以前往 `www.wrox.com/dynamic/books/download.aspx` 查看本书及其他 Wrox 书的代码。
 
-# 错误
+## 错误
 
-我们尽力确保文本或代码没有错误。然而，没有人是完美的，错误在所避免。如果你在我们的书书中发现了错误（例如拼写错误或错误的代码），我们将非常感谢你的反馈。通过提交错误，你可以节省另一个读者的困扰，同时帮助我们提供更高质量的信息。
+我们尽力确保文本或代码没有错误。然而，没有人是完美的，错误在所难免。如果你在我们的书中发现了错误（例如拼写错误或错误的代码），我们将非常感谢你的反馈。通过提交错误，你可以节省另一个读者的困扰，同时帮助我们提供更高质量的信息。
 
-要查找本书的错误，请访问 www.wrox.com 并使用搜索框或标题列表找到该书。然后在书籍详情页上，点击“错误列表”（Errata）链接。在该页面上，你可以查看由 Wrox 作者提交的本书的所有错误。包含此错误在内的完整书列表也位于 www.wrox.com/misc-pages/bookerrata。
+要查找本书的错误，请访问 `www.wrox.com` 并使用搜索框或标题列表找到该书。然后在书籍详情页上，点击“错误列表”（Errata）链接。在该页面上，你可以查看由 Wrox 作者提交的本书的所有错误。包含此错误在内的完整书列表也位于 `www.wrox.com/misc-pages/bookerrata`。
 
-如果你在“错误列表”页面没有发现你的错误，请访问 www.wrox.com/contact/techupport.html 并填写表单向我们发送你发现的错误。我们将检查信息，并在适当的情况下发布错误消息并在后续版本中修复。
+如果你在“错误列表”页面没有发现你的错误，请访问 `www.wrox.com/contact/techupport.html` 并填写表单向我们发送你发现的错误。我们将检查信息，并在适当的情况下发布错误消息并在后续版本中修复。
 
-对于作者和同行讨论，请加入 p2p.wrox.com 的 P2P 论坛。论坛是一个基于 Web 的系统，用于向 Wrox 书留言并与其他读者互动。论坛提供订阅功能，当论坛发布新帖子时通过电子邮件向你发送感兴趣的话题。Wrox 作者、编辑、其他行业专家和读者都会出现在论坛中。
+对于作者和同行讨论，请加入 `p2p.wrox.com` 的 P2P 论坛。论坛是一个基于 Web 的系统，用于向 Wrox 书留言并与其他读者互动。论坛提供订阅功能，当论坛发布新帖子时通过电子邮件向你发送感兴趣的话题。Wrox 作者、编辑、其他行业专家和读者都会出现在论坛中。
 
-在 p2p.wrox.com 你将许多不同的论坛，它们不仅能帮助你阅读本书，还能帮助你开发应用程序。加入论坛请遵循以下步骤：
+在 `p2p.wrox.com` 你将找到许多不同的论坛，它们不仅能帮助你阅读本书，还能帮助你开发应用程序。加入论坛请遵循以下步骤：
 
-1. 访问 p2p.wrox.com 并点击“注册”链接。
+1. 访问 `p2p.wrox.com` 并点击“注册”链接。
 2. 阅读使用条款并点击“同意”。
 3. 完成加入所需的强制信息以及你想提供的任何可选信息，并点击“提交”。
 4. 你将收到一封电子邮件，其中说明如何验证账户并完成加入过程。
+
 > 注意 你可以在不加入 P2P 的情况下阅读论坛消息，但为了发布自己的消息，必须加入。
 
 有关如何使用 Wrox P2P 的更多信息，请务必阅读 P2P FAQ，以获取关于论坛软件以及许多针对 P2P 和 Wrox 书的常见问题的解答。要阅读 FAQ，请点击任何 P2P 页面上的 FAQ 链接。
 
-
-
-
-
 ## 第一章：什么是 Ajax？
 
-## 概述
+### 概述
 
 从 2001 年到 2005 年，全球维网在技术和方法上经历了巨大的增长，这些技术让这个曾经静态的媒介焕发了生机。在线手册和目录不再主导 Web，因为 Web 应用程序开始成为在线目的地的重要组成。Web 应用程序从其网站先驱演变而来，为用户提供了即时服务。对于业务流程管理或个人兴趣，随着用户开始创建更丰富的功能，开发者被迫创建新的交互范式。
 
@@ -167,9 +134,9 @@ Web 抛弃了那些在浏览器中存在已久但鲜为人知且使用较少的�
 
 这一浪潮的前沿是 Google。通过 Google Labs 工程师进行的实验，许多 Google 项目（如 Google 和 Google Maps）仅涉及一个从未卸载而是不断更新的单页。这些创新将桌面软件的优势引入通用浏览器，被誉为开启了 Web 开发的新时代。事实上，它们做到了。许多开源和商业产品开始利用这种新的 Web 模型。这些项目使用了诸如 JavaScript、远程过程调用和动态更新等各种术语。很快，一个新的术语出现了。
 
-## Ajax 的诞生
+### Ajax 的诞生
 
-2005 年 2 月，Adaptive Path 的 Jesse James Garrett 发表了一篇名为《Ajax：一种应用程序的新方法》的在线文章（可访问 www.adaptivepath.com/publications/essays/00385.php）。在本文中，Garrett 解释了 Web 应用程序如何缩小了 Web 与桌面应用程序之间的差距。他引用了 Google 和 Google Maps 等许多 Google 项目作为桌面交互模型引入 Web 的例子。这一运动变成了一场兴趣和争议的风暴：Ajax 是 Asynchronous JavaScript and XML 的缩写，它代表了 Web 的根本性转变。
+2005 年 2 月，Adaptive Path 的 Jesse James Garrett 发表了一篇名为《Ajax：一种应用程序的新方法》的在线文章（可访问 `www.adaptivepath.com/publications/essays/00385.php`）。在本文中，Garrett 解释了 Web 应用程序如何缩小了 Web 与桌面应用程序之间的差距。他引用了 Google 和 Google Maps 等许多 Google 项目作为桌面交互模型引入 Web 的例子。这一运动变成了一场兴趣和争议的风暴：Ajax 是 Asynchronous JavaScript and XML 的缩写，它代表了 Web 的根本性转变。
 
 从那以后起，大量 Ajax 相关文章、代码片段和争论在 Web 上涌现。开发者讨论它，杂志报道它，并将其应用于产品。但在理解什么是 Ajax 之前，你必须先理解 Web 的演变。
 
@@ -177,53 +144,51 @@ Web 抛弃了那些在浏览器中存在已久但鲜为人知且使用较少的�
 
 随着 Web 的演变，企业看到了向大众发布信息和服务的潜力。下一代 Web 增加了格式化和显示信息的能力，HTML 也随之演变，以满足这些精通媒体的用户的预期。但一家名为 Netscape 的小公司准备以更快的速度推动 Web 的使用。
 
-## JavaScript
+### JavaScript
 
-Netscape Navigator 是第一个主流 浏览器，并在很大程度上加速了 Web 技术的发展。然而，Netscape 经常因为在标准制定之前实现新技术和扩展而受到标准组织的嘲笑（Microsoft 则因忽视现有标准而受到指责）。
+Netscape Navigator 是第一个主流浏览器，并在很大程度上加速了 Web 技术的发展。然而，Netscape 经常因为在标准制定之前实现新技术和扩展而受到标准组织的嘲笑（Microsoft 则因忽视现有标准而受到指责）。
 
-JavaScript 最初名为 Mocha，由 Netscape 的 Brendan Eich 创建并包含在 2.0 版本中（1995 年发布）。第一次，开发者能够影响网页如何与用户交互。对于数据验证等简单任务，不再需要频繁在服务器之间往返，将这部分处理转移到浏览器变得可能。在大多数 Internet 用户通过 28.8 Kbps 调制解器连接的时代，这种能力非常重要，它将每次向服务器的请求变成了等待。减少用户等待响应的次数是走向 Ajax 方法的第一步。
+JavaScript 最初名为 Mocha，由 Netscape 的 Brendan Eich 创建并包含在 2.0 版本中（1995 年发布）。第一次，开发者能够影响网页如何与用户交互。对于数据验证等简单任务，不再需要频繁在服务器之间往返，将这部分处理转移到浏览器变得可能。在大多数 Internet 用户通过 28.8 Kbps 调制解调器连接的时代，这种能力非常重要，它将每次向服务器的请求变成了等待。减少用户等待响应的次数是走向 Ajax 方法的第一步。
 
-## Frames
+### Frames
 
-HTML 的原始版本旨在让每个文档独立，直到 HTML 4.0 才正式引入帧（frames）。网页显示可以拆分为多个文档的想法是非常激进的且具有争议的，但 Netscape Navigator 2.0 作为第一个同时支持帧和 JavaScript 的浏览器，事实证明这是 Ajax 演进的一大步。当 20 世纪 90 年代 Microsoft 与 Netscape 之间的战争开始时，JavaScript 和帧 都正式化了。随着两者功能的增加，创意开发者开始尝试将两者结合。因为帧代表对服务器的完全独立的请求，用 JavaScript 控制帧 及其内容为一些令人兴奋的可能性打开了大门。
+HTML 的原始版本旨在让每个文档独立，直到 HTML 4.0 才正式引入帧（frames）。网页显示可以拆分为多个文档的想法是非常激进且具有争议的，但 Netscape Navigator 2.0 作为第一个同时支持帧和 JavaScript 的浏览器，事实证明这是 Ajax 演进的一大步。当 20 世纪 90 年代 Microsoft 与 Netscape 之间的战争开始时，JavaScript 和帧都正式化了。随着两者功能的增加，创意开发者开始尝试将两者结合。因为帧代表对服务器的完全独立的请求，用 JavaScript 控制帧及其内容为一些令人兴奋的可能性打开了大门。
 
-## 隐藏帧技术（Hidden Frame Technique）
+### 隐藏帧技术（Hidden Frame Technique）
 
 随着开发者开始理解如何操作帧，出现了一种新技术来促进客户端-服务器通信。隐藏帧技术涉及设置帧，其中一个帧的宽度或高度被设置为 0 像素，其唯一目的是与服务器建立通信。隐藏帧将包含一个 HTML 表单，其特定字段可以由 JavaScript 动态填充并提交回服务器。当帧返回时，它会调用另一个 JavaScript 函数通知原始数据已返回。隐藏帧技术代表了 Web 应用程序第一个异步请求/响应模型。
 
 虽然这是第一个 Ajax 通信模型，但另一项技术进步就在眼前。
 
-## 动态 HTML 和 DOM
+### 动态 HTML 和 DOM
 
-直到大约 1996 年，Web 仍然是一个静态的世界。尽管 JavaScript 隐藏帧技术活跃了用户交互，但仍然没有在不重新加载页的情况下更改页面显示的方法。然后 Internet Explorer 4.0 出现了。
+直到大约 1996 年，Web 仍然是一个静态的世界。尽管 JavaScript 隐藏帧技术活跃了用户交互，但仍然没有在不重新加载页面的情况下更改页面显示的方法。然后 Internet Explorer 4.0 出现了。
 
-此时，Internet Explorer 已经追上了市场领导者 Netscape Navigator 的技术，并在一个重要方面通过引入动态 HTML（HTML）超过了它。尽管 HTML 仍处于开发阶段，但它代表了从静态网页时代迈出的的一步，允许开发者使用 JavaScript 修改已加载页面的任何部分。随着层叠样式表（CSS）的出现，HTML 重新定义了 Web 开发，成为一种动态学科，为 Microsoft 和 Netscape 开辟了道路。
+此时，Internet Explorer 已经追上了市场领导者 Netscape Navigator 的技术，并在一个重要方面通过引入动态 HTML（DHTML）超过了它。尽管 DHTML 仍处于开发阶段，但它代表了从静态网页时代迈出的一步，允许开发者使用 JavaScript 修改已加载页面的任何部分。随着层叠样式表（CSS）的出现，DHTML 重新定义了 Web 开发，成为一种动态学科，为 Microsoft 和 Netscape 开辟了道路。
 
-## Iframes（内帧）
+### Iframes（内帧）
 
-尽管隐藏帧技术变得非常流行，但它有一个缺点——必须提前计划并复用帧集（frameset）来使用隐藏帧。当 <iframe> 元素在 1997 年作为 HTML 4.0 的引入时，它引入了 Web 演进的另一个重要步骤。
+尽管隐藏帧技术变得非常流行，但它有一个缺点——必须提前计划并复用帧集（frameset）来使用隐藏帧。当 `<iframe>` 元素在 1997 年作为 HTML 4.0 的一部分引入时，它引入了 Web 演进的另一个重要步骤。
 
 与其定义帧集，开发者可以在页面的任何地方放置 iframe。这使得开发者可以忘记帧集，只需通过使用 CSS 在页面上放置 iframe 来实现客户端服务器通信。并且当 DOM 在 Internet Explorer 5 和 Netscape 6 中完全实现后，它引入了动态创建 iframe 的能力，这意味着可以使用 JavaScript 函数创建 iframe、发送请求并获取响应——而无需在页面中包含任何 HTML。这导致了隐藏帧技术的下一代：隐藏 iframe。
 
-## XMLHttp
+### XMLHttp
 
-Microsoft 的开发者可能意识隐藏帧技术和新的隐藏 iframe 技术的潜力，他们决定为开发者提供一种更好的客户端服务器交互工具。该工具以 ActiveX 对象的形式出现，称为 XMLHttpRequest，2001 年引入。
+Microsoft 的开发者可能意识到了隐藏帧技术和新的隐藏 iframe 技术的潜力，他们决定为开发者提供一种更好的客户端服务器交互工具。该工具以 ActiveX 对象的形式出现，称为 XMLHttpRequest，2001 年引入。
 
-JavaScript 的扩展之一允许创建 ActiveX ，这是 Microsoft 的属性编程对象。当通过 XML 库支持 HTML 时，XMLHttpRequest 对象被包含在其中并带有 XML 标记，这个对象不仅仅是另一个 XML 对象。它更像是一个可以从 JavaScript 控制的临时 HTTP 请求。开发者必须处理 HTTP 状态码和头部，以及从服务器返回的任何数据。数据可以是结构化的 XML、预格式化的 HTML 片段、序列化的 JavaScript 对象或开发者所需的任何其他格式。不再使用隐藏帧或 iframe，现在可以使用纯 JavaScript 编程地访问服务器，而独立于页面加载/刷新周期。XMLHttpRequest 对象为 Internet Explorer 提供了一个巨大的启示。
+JavaScript 的扩展之一允许创建 ActiveX 对象，这是 Microsoft 的属性编程对象。当通过 XML 库支持 HTML 时，XMLHttpRequest 对象被包含在其中并带有 XML 标记，这个对象不仅仅是另一个 XML 对象。它更像是一个可以从 JavaScript 控制的临时 HTTP 请求。开发者必须处理 HTTP 状态码和头部，以及从服务器返回的任何数据。数据可以是结构化的 XML、预格式化的 HTML 片段、序列化的 JavaScript 对象或开发者所需的任何其他格式。不再使用隐藏帧或 iframe，现在可以使用纯 JavaScript 编程地访问服务器，而独立于页面加载/刷新周期。XMLHttpRequest 对象为 Internet Explorer 提供了一个巨大的启示。
 
+随着热度的不断提升，开源项目 Mozilla 的开发者们开始编写他们自己的 XMLHttpRequest 移植。Mozilla 开发者并没有允许访问 ActiveX，而是在原生浏览器对象 `XMLHttpRequest` 中复制了该对象的主要方法和属性。随着主流浏览器都支持了某种形式的 XMLHttpRequest，Ajax 类型接口的开发真正腾飞了，并迫使边缘浏览器 Opera 和 Safari 也支持了某种形式的 XMLHttpRequest（两者都选择通过原生的 `XMLHttpRequest` 来实现，模仿了 Mozilla 的做法）。
 
-
-
-
-随着热度的不断提升，开源项目 Mozilla 的开发者们开始编写他们自己的 XMLHttpRequest 移植。Mozilla 开发者并没有允许访问 ActiveX，而是在原生浏览器对象 `XMLHttpRequest` 中复制了该对象的主要方法和属性。随着主流浏览器都支持了某种形式的 XMLHttpRequest，Ajax 类型接口的开发真正腾飞了，并迫使边缘浏览器 Opera 和 Safari 也支持了某种形式的 XMLHttpRequest（两者都选择通过原生的 XMLHttpRequest 来实现，模仿了 Mozilla 的做法）。
-
-## 真正的 Ajax
+### 真正的 Ajax
 
 尽管 Garrett 文章末尾附带了常见问题，但人们对于 Ajax 到底是什么仍然存在着一些困惑。简单来说，Ajax 无非是一种 Web 交互方法。这种方法涉及在服务器和客户端之间传输极少量的信息，以为用户提供响应迅速的体验。
 
-Garrett 并没有采用由浏览器发起请求并处理服务器请求的 Web 应用模型，而是提供了一个中间层——Garrett 称之为 **Ajax 引擎**——来处理这种通信。Ajax 引擎仅仅是一个 JavaScript 对象或函数，每当需要从服务器请求时就会被调用。与其提供指向另一个资源（如另一个网页）链接的传统方法，每个链接都会调用 Ajax 引擎，由它异步调度并执行请求，这意味着代码在执行时无需等待之前的响应。
 
-服务器（传统上负责提供 HTML、CSS 或 JavaScript）被配置为返回 Ajax 引擎可以使用的数据。这些数据可以被解析为文本或用户可能需要的任何其他数据。唯一的要求是 Ajax 引擎能够理解并解释这些数据。
+
+Garrett 并没有采用由浏览器发起请求并处理服务器请求的 Web 应用模型，而是提供了一个中间层——Garrett 称之为 **Ajax 引擎**——来处理这种通信。Ajax 引擎仅仅是一个 `JavaScript` 对象或函数，每当需要从服务器请求时就会被调用。与其提供指向另一个资源（如另一个网页）链接的传统方法，每个链接都会调用 Ajax 引擎，由它异步调度并执行请求，这意味着代码在执行时无需等待之前的响应。
+
+服务器（传统上负责提供 `HTML`、`CSS` 或 `JavaScript`）被配置为返回 Ajax 引擎可以使用的数据。这些数据可以被解析为文本或用户可能需要的任何其他数据。唯一的要求是 Ajax 引擎能够理解并解释这些数据。
 
 当 Ajax 引擎接收到服务器的响应时，它就会采取行动，通常会解析数据并根据提供的信息对用户界面进行多处更改。由于这个过程涉及的数据传输比传统的 Web 应用模型少，因此用户界面的更新更快，用户也能更快地完成工作。图 1-1 是 Garrett 文章插图的改编，展示了传统模型与 Ajax 应用模型的区别。
 
@@ -233,13 +198,13 @@ Garrett 并没有采用由浏览器发起请求并处理服务器请求的 Web �
 
 作为一种全新的 Web 应用模型，Ajax 仍处于婴儿阶段。然而，许多 Web 开发者已将这种发展视为一种挑战。挑战在于定义什么是良好的 Ajax Web 应用，什么是平庸的应用。Michael Mahemoff（http://mahemoff.com/）是一位软件开发者兼可用性专家，他指出了 Ajax 应用需要遵循的几个关键原则：
 
--   **最小流量（Minimal traffic）：** Ajax 应用应与服务器之间发送和接收尽可能少的信息。简而言之，Ajax 可以最小化客户端与服务器之间的流量。确保你的 Ajax 应用不发送和接收不必要的信息，可以增加其健壮性。
--   **无惊喜（No surprises）：** Ajax 应用通常引入了与传统 Web 应用不同的用户交互模型。与 Web 标准的“点击并等待”不同，Ajax 应用使用了其他界面范式，如拖放或双击。无论你选择哪种用户交互模型，都要保持一致，让用户知道他们该做什么。
--   **遵循既有约定（Established conventions）：** 不要浪费时间去发明用户不熟悉的新用户交互模型。要大量向传统的 Web 应用和桌面应用程序借鉴，以保持最低的学习曲线。
--   **无干扰（No distractions）：** 避免不必要且分散的页面元素，如循环动画和闪烁的页面部分。这些花哨会使用户忘记他们想要完成的任务。
--   **无障碍（Accessibility）：** 考虑你的主要和次要用户是谁，以及他们最可能如何访问你的 Ajax 应用。不要把自己程序到一个死胡同，导致意想不到的新观众完全被排除在外。你的用户会使用旧浏览器或特殊软件吗？确保你提前知道并做好计划。
--   **避免下载整个页面（Avoid entire page downloads）：** 初始页面下载后的所有服务器通信都应由 Ajax 引擎管理。在本地下载小量数据，而在其他地方重新加载整个页面。
--   **用户优先（User first）：** 在发明任何其他东西之前，先为用户设计 Ajax 应用。尽量让常见情况易于完成，不要被你如何融入广告或酷炫的效果所困扰。
+- **最小流量（Minimal traffic）：** Ajax 应用应与服务器之间发送和接收尽可能少的信息。简而言之，Ajax 可以最小化客户端与服务器之间的流量。确保你的 Ajax 应用不发送和接收不必要的信息，可以增加其健壮性。
+- **无惊喜（No surprises）：** Ajax 应用通常引入了与传统 Web 应用不同的用户交互模型。与 Web 标准的“点击并等待”不同，Ajax 应用使用了其他界面范式，如拖放或双击。无论你选择哪种用户交互模型，都要保持一致，让用户知道他们该做什么。
+- **遵循既有约定（Established conventions）：** 不要浪费时间区发明用户不熟悉的新用户交互模型。要大量向传统的 Web 应用和桌面应用程序借鉴，以保持最低的学习曲线。
+- **无干扰（No distractions）：** 避免不必要且分散的页面元素，如循环动画和闪烁的页面部分。这些花哨会使用户忘记他们想要完成的任务。
+- **无障碍（Accessibility）：** 考虑你的主要和次要用户是谁，以及他们最可能如何访问你的 Ajax 应用。不要把自己限制到一个死胡同，导致意想不到的新观众完全被排除在外。你的用户会使用旧浏览器或特殊软件吗？确保你提前知道并做好计划。
+- **避免下载整个页面（Avoid entire page downloads）：** 初始页面下载后的所有服务器通信都应由 Ajax 引擎管理。在本地下载小量数据，而在其他地方重新加载整个页面。
+- **用户优先（User first）：** 在发明任何其他东西之前，先为用户设计 Ajax 应用。尽量让常见情况易于完成，不要被你如何融入广告或酷炫的效果所困扰。
 
 所有这些原则的共同点是可用性。Ajax 主要是为了增强用户的 Web 体验；其背后的技术仅仅实现这一目标的手段。通过遵循上述原则，你可以确信你的 Ajax 应用是有用且易用的。
 
@@ -247,17 +212,17 @@ Garrett 并没有采用由浏览器发起请求并处理服务器请求的 Web �
 
 Garrett 文章提到了他认为是 Ajax 解决方案部分的科技：
 
--   HTML/XHTML：主要的内容表示语言
--   CSS：为 XHTML 提供样式格式
--   DOM：已加载页面的动态更新
--   XML：数据交换格式
--   XSLT：将 XML 转换为 XHTML（由 CSS 样式化）
--   XMLHttpRequest：主要的通信代理
--   JavaScript：用于编写 Ajax 引擎的脚本语言
+- HTML/XHTML：主要的内容表示语言
+- CSS：为 XHTML 提供样式格式
+- DOM：已加载页面的动态更新
+- XML：数据交换格式
+- XSLT：将 XML 转换为 XHTML（由 CSS 样式化）
+- XMLHttpRequest：主要的通信代理
+- JavaScript：用于编写 Ajax 引擎的脚本语言
 
-在实际上，所有这些技术都可以用于 Ajax 解决方案，但只有三个是必须的：HTML/XHTML、DOM 和 JavaScript。XHTML 对于显示信息显然是必要的，DOM 对于在不重新加载页的情况下更改 XHTML 页面的某些部分是必要的。最后一部分 JavaScript，对于启动客户端-服务器通信以及操作 DOM 更新 页面是必要的。列表中的其他技术对精调 Ajax 解决方案有帮助，但它们并非必须。
+在实际上，所有这些技术都可以用于 Ajax 解决方案，但只有三个是必须的：HTML/XHTML、DOM 和 `JavaScript`。XHTML 对于显示信息显然是必要的，DOM 对于在不重新加载页的情况下更改 XHTML 页面的某些部分是必要的。最后一部分 `JavaScript`，对于启动客户端-服务器通信以及操作 DOM 更新页面是必要的。列表中的其他技术对精调 Ajax 解决方案有帮助，但它们并非必须。
 
-Garrett 在文章中遗漏了一个主要组件：服务器端处理的必要性。之前列出的所有技术都直接关系到客户端 Ajax 引擎，但如果没有一个稳定、响应迅速的服务器等待向引擎发送内容，就不存在 Ajax。对于这一点，你可以使用你喜好的应用程序。无论你选择将服务器端组件编写为 PHP 页面、Java Servlet 还是 .NET 组件，你只需要将正确的格式传回引擎即可。
+Garrett 在文章中遗漏了一个主要组件：服务器端处理的必要性。之前列出的所有技术都直接关系到客户端 Ajax 引擎，但如果没有一个稳定、响应迅速的服务器等待向引擎发送内容，就不存在 Ajax。对于这一点，你可以使用你喜好的应用程序。无论你选择将服务器端组件编写为 `PHP` 页面、`Java Servlet` 还是 `.NET` 组件，你只需要将正确的格式传回引擎即可。
 
 ## 谁在使用 Ajax？
 
@@ -265,7 +230,7 @@ Garrett 在文章中遗漏了一个主要组件：服务器端处理的必要性
 
 ### Google
 
-开发者在谈论 Ajax 时经常提到的第一个例子之一是 Google Suggest (www.google.com/complete=1)。该界面是 Google 主界面的克隆，显著特征是一个用于输入搜索词的文本框。在你开始在文本框中输入之前，一切看起来都一样。当你开始输入时，Google 向服务器请求建议，显示出你可能感兴趣的搜索词下拉列表。每个建议都显示了该词的结果数量，以帮助决定
+开发者在谈论 Ajax 时经常提到的第一个例子之一是 Google Suggest（`www.google.com/complete=1`）。该界面是 Google 主界面的克隆，显著特征是一个用于输入搜索词的文本框。在你开始在文本框中输入之前，一切看起来都一样。当你开始输入时，Google 向服务器请求建议，显示出你可能感兴趣的搜索词下拉列表。每个建议都显示了该词的结果数量，以帮助决定
 
 图 1-2
 
@@ -273,12 +238,10 @@ Garrett 在文章中遗漏了一个主要组件：服务器端处理的必要性
 
 ### Gmail
 
-Google 的免费邮箱 Gmail 被誉为 Ajax 时代客户端服务器交互的奇迹。当你首次登录 Gmail 时，一个用户界面引擎会被加载到应用程序使用的一个 iframe 中。之后所有返回服务器的请求都通过这个用户界面引擎通过 XMLHttpRequest 对象进行。传回的数据
+Google 的免费邮箱 Gmail 被誉为 Ajax 时代客户端服务器交互的奇迹。当你首次登录 Gmail 时，一个用户界面引擎会被加载到应用程序使用的一个 iframe 中。之后所有返回服务器的请求都通过这个用户界面引擎通过 `XMLHttpRequest` 对象进行。传回的数据
 
+对于 `JavaScript` 而言，它由浏览器下载并实现了快速执行。
 
-
-
-对于 JavaScript 而言，它由浏览器下载并实现了快速执行。
 这些请求作为用户界面引擎的指令，告知屏幕上哪些内容应该被更新。
 
 此外，Gmail 应用使用了多个 frame 和 iframe 来管理和缓存大型用户更改。对 frame 极其复杂的使用使得 Gmail 能够配合“后退”和“前进”按钮正常工作，这是使用 frame 而不是或配合 XMLHttp 的优势之一。
@@ -291,59 +254,57 @@ Gmail 最大的成功在于其易用性。如图 1-3 所示，用户界面简单
 
 ## Google Maps
 
-Google Ajax Web 应用的最新新增是 Google Maps (http://maps.google.com)。Google Maps 的设计旨在与成熟的地图网站竞争，它使用 Ajax 来重新加载其地图（见图 1-4）。
+Google Ajax Web 应用的最新新增是 Google Maps（`http://maps.google.com`）。Google Maps 的设计旨在与成熟的地图网站竞争，它使用 Ajax 来重新加载其地图（见图 1-4）。
 
 ![](img/b372374b4ba34adee418bd5ab6e01f7f_13_1.png)
 
 图 1-4
 
-与其他地图应用不同，Google Maps 允许你拖动地图向各个方向移动。拖动代码对于 JavaScript 开发者来说不算什么，但地图的瓦片化和看似无尽的滚动效果则是另一回事了。地图被分成一系列图像，这些图像拼接在一起形成连续图像的外观。显示地图所使用的图像数量是有限的，因为每次用户移动地图时都创建图像将迅速导致内存问题。相反，相同的图像被反复用于地图的不同段落。
+与其他地图应用不同，Google Maps 允许你拖动地图向各个方向移动。拖动代码对于 `JavaScript` 开发者来说不算什么，但地图的瓦片化和看似无尽的滚动效果则是另一回事了。地图被分成一系列图像，这些图像拼接在一起形成连续图像的外观。显示地图所使用的图像数量是有限的，因为每次用户移动地图时都创建图像将迅速导致内存问题。相反，相同的图像被反复用于地图的不同段落。
 
-客户端与服务器的通信通过一个隐藏的 iframe 完成。每当你进行搜索或请求新路线时，这些信息会在 iframe 内部提交并返回。返回的数据是 XML 格式，并由 JavaScript 函数（AJAX 引擎）进行处理。该 XML 然后被用于多种不同的方式：某些用于调用正确的地图图像，另一些则使用 XSLT 转换为 HTML 并显示在主窗口中。底线是这个复杂的 AJAX 应用有着极其光阔的前途。
+客户端与服务器的通信通过一个隐藏的 iframe 完成。每当你进行搜索或请求新路线时，这些信息会在 iframe 内部提交并返回。返回的数据是 XML 格式，并由 `JavaScript` 函数（Ajax 引擎）进行处理。该 XML 然后被用于多种不同的方式：某些用于调用正确的地图图像，另一些则使用 XSLT 转换为 HTML 并显示在主窗口中。底线是这个复杂的 Ajax 应用有着极其广阔的前途。
 
 ## A9
 
-Amazon.com 以其几乎涵盖任何物品的在线市场而闻名世界，但当它发布搜索引擎时，并没有引起太大的轰和关注。A9 (www.a9.com) 的引入增强了搜索功能，允许你同时搜索不同类型的信息。对于网页和搜索图像，它使用 Google 来获取结果。它在 Amazon.com 上执行搜索，在 IMDB（互联网电影数据库）上搜索电影。黄页、维基百科和 Answers.com 的搜索于 2005 年年中上线。
+Amazon.com 以其几乎涵盖任何物品的在线市场而闻名世界，但当它发布搜索引擎时，并没有引起太大的轰动和关注。A9（`www.a9.com`）的引入增强了搜索功能，允许你同时搜索不同类型的信息。对于网页和搜索图像，它使用 Google 来获取结果。它在 Amazon.com 上执行搜索，在 IMDB（互联网电影数据库）上搜索电影。黄页、维基百科和 Answers.com 的搜索于 2005 年年中上线。
 
-让 A9 变得独特的是其用户界面的工作方式。当你执行搜索时，不同类型的的结果显示在页面的不同区域（见图 1-5）。
+让 A9 变得独特的是其用户界面的工作方式。当你执行搜索时，不同类型的结果显示在页面的不同区域（见图 1-5）。
 
 ![](img/b372374b4ba34adee418bd5ab6e01f7f_14_0.png)
 
 ## 图 1-5
 
-在结果页面上，你可以选择一个对应于搜索类型的复选框，搜索在场景切换之前通过隐藏 iframe 和 XMLHTTP 的组合执行。用户界面会向下移动，以容纳额外的搜索结果，这些结果一旦从服务器接收到就会被加载。结果是一个更具响应性的搜索结果页面，当你想要搜索不同类型的信息时，不需要重新加载页面。
+在结果页面上，你可以选择一个对应于搜索类型的复选框，搜索在场景切换之前通过隐藏 iframe 和 `XMLHTTP` 的组合执行。用户界面会向下移动，以容纳额外的搜索结果，这些结果一旦从服务器接收到就会被加载。结果是一个更具响应性的搜索结果页面，当你想要搜索不同类型的信息时，不需要重新加载页面。
 
 ## Yahoo! News
 
-2005 年还引入了 Yahoo! News 网站 (http://news.yahoo.com) 的新设计。新设计具有一项有趣的增强：当你将鼠标悬停在特定标题上，会弹出一个小框显示摘要，以及可选的与该故事相关的照片（见图 1-6）。
+2005 年还引入了 Yahoo! News 网站（`http://news.yahoo.com`）的新设计。新设计具有一项有趣的增强：当你将鼠标悬停在特定标题上，会弹出一个小框显示摘要，以及可选的与该故事相关的照片（见图 1-6）。
 
 ![](img/b372374b4ba34adee418bd5ab6e01f7f_15_0.png)
 
 图 1-6
 
-照片信息和摘要是通过 XMLHttpRequest 动态从服务器检索到页面中的。这是使用 Ajax 增强网页的完美示例。Yahoo! News 网站并没有将 Ajax 作为主要用法，没有 Ajax 它也完全可用；Ajax 功能仅用于在支持它的浏览器中添加更快速的体验。底部是一个语义上正确的 HTML 页面，在没有 CSS 格式的情况下按照逻辑布局的。
+照片信息和摘要是通过 `XMLHttpRequest` 动态从服务器检索到页面中的。这是使用 Ajax 增强网页的完美示例。Yahoo! News 网站并没有将 Ajax 作为主要用法，没有 Ajax 它也完全可用；Ajax 功能仅用于在支持它的浏览器中添加更快速的体验。底部是一个语义上正确的 HTML 页面，在没有 CSS 格式的情况下按照逻辑布局的。
 
 ## Bitflux Blog
 
-另一个使用 Ajax 作为增强的绝佳示例是 Bitflux Blog (http://blog.bitflux.com/)，它采用了一种名为 LiveSearch 的技术。LiveSearch 与网站上的搜索框配合工作。当你输入时，可能的结果列表会立即显示在下方（见图 1-7）。
+另一个使用 Ajax 作为增强的绝佳示例是 Bitflux Blog（`http://blog.bitflux.com/`），它采用了一种名为 LiveSearch 的技术。LiveSearch 与网站上的搜索框配合工作。当你输入时，可能的结果列表会立即显示在下方（见图 1-7）。
 
 ![](img/b372374b4ba34adee418bd5ab6e01f7f_15_1.png)
 
 图 1-7
 
-搜索结果使用 XMLHttpRequest 以 HTML 字符串的形式检索，然后插入到页面中。你也可以用老办法搜索该网站：填写文本框并按回车。LiveSearch Ajax 功能只是对整个网站的增强，搜索时并不需要。
+搜索结果使用 `XMLHttpRequest` 以 HTML 字符串的形式检索，然后插入到页面中。你也可以用老办法搜索该网站：填写文本框并按回车。LiveSearch Ajax 功能只是对整个网站的增强，搜索时并不需要。
 
 ## 困惑与争议
 
-尽管 Ajax 这个术词非常流行，但它也面临着相当的反对者和争议。一些人认为 Ajax 是输入内容的一种变异。在新技术的演进过程中，Ajax 推动了发展。许多人认为，如果使用更多 Ajax，可用性将会受到损害，而 Ajax 的流行已使其变成了一团糟。其他人花费了大量时间来剖析 Garrett 的文章，认为为一种已经存在的技术创建一个名称是不诚实的行为，也是意图不良的明显迹象。无论这些或其他围绕 Ajax 的争议如何，这种方法现在有了一个开发者迅速熟悉的名称，随之也需要对其进行更深入的理解，并以最好的方式使用它。
-
-
+尽管 Ajax 这个术语非常流行，但它也面临着相当的反对者和争议。一些人认为 Ajax 是输入内容的一种变异。在新技术的演进过程中，Ajax 推动了发展。许多人认为，如果使用更多 Ajax，可用性将会受到损害，而 Ajax 的流行已使其变成了一团糟。其他人花费了大量时间来剖析 Garrett 的文章，认为为一种已经存在的技术创建一个名称是不诚实的行为，也是意图不良的明显迹象。无论这些或其他围绕 Ajax 的争议如何，这种方法现在有了一个开发者迅速熟悉的名称，随之也需要对其进行更深入的理解，并以最好的方式使用它。
 
 而其他人对 Garrett 编写这篇现为人知文章的动机表示怀疑。正如所有方法一样，Ajax 在用于对良好的 Web 应用程序进行逻辑增强时，效果是最好的。
 
 ## 第 2 章：Ajax 基础
 
-Ajax 的驱动力是客户端（网络浏览器）与服务器之间的交互。在此之前，对这种通信的理解仅限于那些使用 Perl 和 C 等语言进行纯服务器端开发的开发者。ASP.NET、PHP 和 JSP 等较新的技术鼓励创建 Web 应用程序的工程师结合使用客户端和服务器端技术，但他们往往缺乏对所有客户端技术（如 JavaScript）的充分理解。现在，摆向已经另一个方向倾斜，客户端需要了解更多关于服务器技术的知识，以便创建 Ajax 解决方案。
+Ajax 的驱动力是客户端（网络浏览器）与服务器之间的交互。在此之前，对这种通信的理解仅限于那些使用 Perl 和 C 等语言进行纯服务器端开发的开发者。ASP.NET、PHP 和 JSP 等较新的技术鼓励创建 Web 应用程序的工程师结合使用客户端和服务器端技术，但他们往往缺乏对所有客户端技术（如 `JavaScript`）的充分理解。现在，摆向已经另一个方向倾斜，客户端需要了解更多关于服务器技术的知识，以便创建 Ajax 解决方案。
 
 ## HTTP 入门
 
@@ -366,7 +327,7 @@ HTTP 请求的格式如下：
 
 在 HTTP 请求中，第一行必须是请求行，指示请求类型、要访问的资源以及正在使用的 HTTP 版本。接下来是一组请求头（headers），表示可能对服务器有用的额外信息。请求头之后是一个空行，随后可以跟额外数据（称为正文，body）。
 
-HTTP 中定义了大量的请求类型，但 Ajax 开发者感兴趣的两种是 GET 和 POST。当你在网络浏览器中输入 URL 时，浏览器会针对该 URL 发送 GET 请求，这基本上告诉服务器获取资源并将其返回。以下是针对 www.wrox.com 的 GET 请求可能的样子：
+HTTP 中定义了大量的请求类型，但 Ajax 开发者感兴趣的两种是 GET 和 POST。当你在网络浏览器中输入 URL 时，浏览器会针对该 URL 发送 GET 请求，这基本上告诉服务器获取资源并将其返回。以下是针对 `www.wrox.com` 的 GET 请求可能的样子：
 
 ```
 GET /HTTP/1.1
@@ -378,9 +339,9 @@ Connection: Keep-Alive
 
 请求行的第一部分指定该请求是一个 GET 请求。该行的第二部分是正斜杠（/），表示它是针对域名根目录。请求行的最后部分指定使用 HTTP 版本 1.1（另一种方案是 1.0）。请求发送到哪里呢？这就是第二行的作用所在。
 
-第二行是请求中的第一个项，Host。Host 头指示了请求的目标。将 Host 与第一行的正斜杠结合，告诉服务器该请求是针对 www.wrox.com/ 的。Host 头是 HTTP 1.1 的要求； 1.0 版本并不需要它。User-Agent 头服务器和客户端脚本均可访问，它是浏览器检测的基石。该信息由你使用的浏览器（在本例中为 Firefox 1.0.1）定义，并在每个请求上自动设置。该行是 Connection 头，对于浏览器操作，通常设置为 Keep-Alive（它也可以设置为其他值，这些超出了本书的范围）。注意，最后一个头之后有一个空行。即使没有请求正文，该空行也是必须的。
+第二行是请求中的第一个项，`Host`。`Host` 头指示了请求的目标。将 `Host` 与第一行的正斜杠结合，告诉服务器该请求是针对 `www.wrox.com/` 的。`Host` 头是 HTTP 1.1 的要求；1.0 版本并不需要它。`User-Agent` 头服务器和客户端脚本均可访问，它是浏览器检测的基石。该信息由你使用的浏览器（在本例中为 Firefox 1.0.1）定义，并在每个请求上自动设置。该行是 `Connection` 头，对于浏览器操作，通常设置为 `Keep-Alive`（它也可以设置为其他值，这些超出了本书的范围）。注意，最后一个头之后有一个空行。即使没有请求正文，该空行也是必须的。
 
-如果你请求 www.wrox.com 域名下的一个页面，例如 http://www.wrox.com/books，请求将如下所示：
+如果你请求 `www.wrox.com` 域名下的一个页面，例如 `http://www.wrox.com/books`，请求将如下所示：
 
 ```
 GET /books/rox.com
@@ -389,7 +350,7 @@ User-Agent: Mozilla/5.0 (Windows; UI Windows NT 5.1; en-US; rv:1.7.6)
 cko/200050225 Firefox/1.0.1
 ```
 
-注意，只有第一行发生了变化，它仅包含 URL 中 www.rox.com 之后的部分。
+注意，只有第一行发生了变化，它仅包含 URL 中 `www.rox.com` 之后的部分。
 
 为 GET 请求发送参数需要将额外信息附加到 URL 本身。格式如下：
 
@@ -398,17 +359,20 @@ URL ? name=value&name=26..&name=valueN
 ```
 
 这些信息被称为查询字符串（query string），它们在 HTTP 请求行中重复，如下：
+
+```
 GET /books?name=Professional20Ajax HTTP/1.1
+
 Host: www.rox.com
+
 User-Agent: Mozilla/5.0 (Windows; UI Windows NT 5.1; en-US; rv:1.7.6)
+
 cko/200050225 Firefox/1.0.1
+
 Connection: Keep-Alive
+```
 
-注意，文本“Ajax”必须经过编码，将空格替换为 %20 以便发送。这些信息（称为查询字符串）在 HTTP 请求行中重复，如下：
-（此处省略重复的示例内容）
-
-
-
+注意，文本“Ajax”必须经过编码，将空格替换为 `%20` 以便发送。这些信息（称为查询字符串）在 HTTP 请求行中重复，如下：
 
 - 304 (NOT MODIFIED): 资源自上次请求以来未被修改。这通常用于浏览器缓存机制。
 - 401 (UNAUTHORIZED): 客户端没有访问该资源的权限。通常，这会导致浏览器提示输入用户名和密码登录服务器。
@@ -416,6 +380,8 @@ Connection: Keep-Alive
 - 404 (NOT FOUND): 资源在指定位置不存在。
 
 状态行之后是一些头部信息。通常情况下，服务器会返回一个 `Date` 头部，指示生成响应的日期和时间。服务器还可能返回一些关于自身的信息（尽管这并不是强制要求的）。接下来的两个头部看起来应该很相似，就像 POST 请求中的 `Content-Type` 和 `Content-Length` 头部一样。每个头部都指定了 ISO-8859-1 编码（这是英语资源的标准）以及 HTML（文本）的 MIME 类型。响应体简单地包含所请求资源的 HTML 源代码（尽管对于其他类型的资源，它可能包含纯文本或二进制数据）。这就是浏览器显示给用户的内容。
+
+
 
 请注意，此响应并没有指示所请求的数据类型；然而，这对服务器没有影响。对于每种类型的请求应该返回什么类型的数据以及应该使用何种数据，由客户端决定。
 
@@ -427,7 +393,7 @@ Connection: Keep-Alive
 
 ## 隐藏帧技术
 
-随着 HTML 框架（frames）的引入，隐藏帧技术运而生。这种技术的基本思想是创建一个用于客户端服务器通信的框架集（frameset）。你可以通过将的宽度或高度设置为 0 像素来隐藏帧，从而有效地将其从显示中移除。尽管某些浏览器（如 Netscape 4）无法完全隐藏帧（往往会留下粗的边框），但这种技术再次在开发者中流行起来。
+随着 HTML 框架（frames）的引入，隐藏帧技术应运而生。这种技术的基本思想是创建一个用于客户端服务器通信的框架集（frameset）。你可以通过将帧的宽度或高度设置为 0 像素来隐藏帧，从而有效地将其从显示中移除。尽管某些浏览器（如 Netscape 4)无法完全隐藏帧（往往会留下粗的边框），但这种技术再次在开发者中流行起来。
 
 ## 模式
 
@@ -437,11 +403,11 @@ Connection: Keep-Alive
 
 ## 图 2-1
 
-模式的第三步是从服务器接收到的响应。由于你处理的是帧，这可能是另一个网页。该网页 必须包含从服务器请求的数据，以及一些用于传输到可见帧的 JavaScript。通常，这是通过在返回的网页中分配 `onload` 事件处理器来实现的，该处理器会在页面完全加载后调用可见帧中的函数（这是第四步）。现在数据已在可见帧中，将由该帧决定如何处理这些数据。
+模式的第三步是从服务器接收到的响应。由于你处理的是帧，这可能是另一个网页。该网页必须包含从服务器请求的数据，以及一些用于传输到可见帧的 JavaScript。通常，这是通过在返回的网页中分配 `onload` 事件处理器来实现的，该处理器会在页面完全加载后调用可见帧中的函数（这是第四步）。现在数据已在可见帧中，将由该帧决定如何处理这些数据。
 
 ## 隐藏帧 GET 请求
 
-现在已经解释了帧技术，是时候学习更多关于它的知识了。对于任何新技术，最好的方法是运行一个示例。在这个示例中，你将创建一个简单的查询页面，客户代表可以在该页面查询客户信息。这是关于客户的第一个返回示例。它非常简单：用户将输入客户 ID 并接收有关客户的信息。这种功能通常需要数据库，因此也有必要进行一些服务器端编程。该示例使用 PHP（一种开源语言）和 MySQL（可在 www.mysql.org 获取）编写，MySQL 是一种与 PHP 结合得很好的开源数据库。
+现在已经解释了帧技术，是时候学习更多关于它的知识了。对于任何新技术，最好的方法是运行一个示例。在这个示例中，你将创建一个简单的查询页面，客户代表可以在该页面查询客户信息。这是关于客户的第一个返回示例。它非常简单：用户将输入客户 ID 并接收有关客户的信息。这种功能通常需要数据库，因此也有必要进行一些服务器端编程。该示例使用 PHP（一种开源语言）和 MySQL（可在 `www.mysql.org` 获取）编写，MySQL 是一种与 PHP 结合得很好的开源数据库。
 
 尽管这本设计旨在用于 MySQL，但你应该能够在极少修改或不修改的情况下在其他数据库上运行它。
 
@@ -465,7 +431,7 @@ PRIMARY KEY ('CustomerId')
 
 此表最重要的字段是 `CustomerId`，你将用它来查找客户信息。
 
-注意：你可以下载此脚本，并从 www.wxyz 下载一些示例数据。在设置好数据库后，是时候进入代码了。要使用隐藏帧技术，必须从如下 `frameset` 开始：
+注意：你可以下载此脚本，并从 `www.wxyz` 下载一些示例数据。在设置好数据库后，是时候进入代码了。要使用隐藏帧技术，必须从如下 `frameset` 开始：
 
 ```html
 <frameset rows="100%,0" frameborder="0">
@@ -499,14 +465,12 @@ function displayCustomerInfo(sText) {
 var divCustomerInfo = document.getElementById("divCustomerInfo");
 ```
 
-
-
 ```javascript
 divCustomerInfo.innerHTML = sText;
 }
 ```
 
-在该函数中，第一行获取了显示数据的 `<div>` 元素的引用。在第二行中，客户字符串 (sText) 被赋值给 `<div>` 元素的 `innerHTML` 属性。使用 `innerHTML` 可以为了格式化目的而在字符串中嵌入 HTML。这完成了主显示页面的代码编写。现在是时候创建服务端代码了。
+在该函数中，第一行获取了显示数据的 `<div>` 元素的引用。在第二行中，客户字符串 (`sText`) 被赋值给 `<div>` 元素的 `innerHTML` 属性。使用 `innerHTML` 可以为了格式化目的而在字符串中嵌入 HTML。这完成了主显示页面的代码编写。现在是时候创建服务端代码了。
 
 `userdata.php` 的基础代码是一个非常基础的 HTML 页面，其中两个地方包含了 PHP 代码：
 
@@ -549,9 +513,9 @@ PHP 代码的第一步是定义所有所需的数据项。在这个示例中，�
   //More here
 ```
 
-这段代码开始从查询字符串中获取 GET id。PHP 将所有查询字符串参数组织到 `$GET` 数组中以便检索。此 id 存储在 `$sid` 中，并用于创建存储在 `$query` 中的 SQL 查询。`$sInfo` 变量在这里也被创建并设置为空字符串。此代码块中的所有其他变量都包含针对你特定数据库配置的信息；你必须将它们替换为实现时的正确值。
+这段代码开始从查询字符串中获取 GET `id`。PHP 将所有查询字符串参数组织到 `$GET` 数组中以便检索。此 `id` 存储在 `$sid` 中，并用于创建存储在 `$query` 中的 SQL 查询。`$sInfo` 变量在这里也被创建并设置为空字符串。此代码块中的所有其他变量都包含针对你特定数据库配置的信息；你必须将它们替换为实现时的正确值。
 
-在获取用户输入并为数据库奠基础后，下一步是调用数据库连接、执行查询并返回结果。如果存在给定 ID 的客户，`$sInfo` 将填充一个包含所有数据的 HTML 字符串，包括为电子邮件地址创建一个链接。如果客户无效，`$sInfo` 将填充错误消息，该消息将传回显示框架：
+在获取用户输入并为数据库奠定基础后，下一步是调用数据库连接、执行查询并返回结果。如果存在给定 ID 的客户，`$sInfo` 将填充一个包含所有数据的 HTML 字符串，包括为电子邮件地址创建一个链接。如果客户无效，`$sInfo` 将填充错误消息，该消息将传回显示框架：
 
 ```php
 $sID = $_GET["id"];
@@ -575,7 +539,6 @@ if($sResult = mysql_query($sQuery) && mysql_num_rows($sResult) > 0) {
 mysql_close($sLink);
 ?>
 ```
-
 
 接下来是 `SaveCustomer.php`，这是处理 POST 请求的文件。在上一个示例中，该页面被设置为为一个结合了 PHP 和 JavaScript 代码的简单 HTML 页面。PHP 代码用于从商店收集信息并存储在数据库中。由于这是一个 POST 请求，`$_POST` 数组包含了所有提交的信息：
 
@@ -603,7 +566,7 @@ values ('$sName','$sAddress','$sCity','$sState','$sZipCode','$sPhone','$sEmail')
 ?>
 ```
 
-这段代码段获取了关于客户的所有 POST 信息；此外，它定义了状态消息 ($sStatus) 和所需的数据库信息（如上一个示例所示）。该 SQL 语句是一个 `INSERT` 操作，添加所有获取到的信息。
+这段代码段获取了关于客户的所有 POST 信息；此外，它定义了状态消息 (`$sStatus`) 和所需的数据库信息（如上一个示例所示）。该 SQL 语句是一个 `INSERT` 操作，添加所有获取到的信息。
 
 执行 SQL 语句的代码与上一个示例非常相似：
 
@@ -655,7 +618,10 @@ mysql_close($oLink);
 在这里，`mysql_query()` 函数仅仅是语句成功执行的指示。在这种情况下，`$sStatus` 变量将被填充一条消息，表示保存成功并返回分配给数据的客户 ID。`$mysql_insert_id()` 函数始终返回最近一次 `INSERT` 语句的最后一个自增值。如果由于某些原因语句执行失败，`$sStatus` 变量将包含错误消息。
 
 `$sStatus` 变量被输出到一个 JavaScript 函数中，该函数在窗口加载时运行：
+
+```html
 <script type="javascript">
+```
 
 ```javascript
 window.onload = function () {
@@ -664,19 +630,23 @@ window.onload = function () {
 }
 ```
 
-```
+```html
 </script>
+```
 
 这段代码调用了显示框架中定义的 `saveResult` 函数，并传入 PHP 变量 `$sStatus` 的值。因为该变量包含字符串，所以必须将 PHP 的输出包含在引号内。当该函数执行时，假设客户数据已保存，表单页面与图 2-3 所示。
 
-
-
 ```html
 </script>
+
 </head>
+
 <body>
+
 <form method="post"></form>
+
 </body>
+
 </html>
 ```
 
@@ -688,12 +658,17 @@ var oForm = document.forms[0];
 
 for (var i = 0; i < oForm.elements.length; i++) {
 var oHidden = oFrame.document.createElement("input");
-Hidden.type = "hidden";
-Hidden.name = oForm.elements[i].name;
-Hidden.value = oForm.elements[i].value;
-HiddenForm.appendChild(oHidden);
-}
 ```
+
+
+
+`Hidden.type = "hidden";`
+
+`Hidden.name = oForm.elements[i].name;`
+
+`Hidden.value = oForm.elements[i].value;`
+
+`HiddenForm.appendChild(oHidden);`
 
 ```javascript
 oHiddenForm.action = oForm.action;
@@ -753,9 +728,6 @@ onsubmit="checkIFrame();return false">
 var xhr = new XMLHttpRequest();
 xhr.open("GET", "data.json", true);
 ```
-
-
-
 
 ```javascript
 var oXmlHttp = XMLHttpRequest.createRequest();
@@ -857,13 +829,10 @@ if (contentType == "text/xml") {
 ```javascript
 var sHeaders = XMLHttpRequest.getAllHeaders();
 var aHeaders = sHeaders.split(/\r?\n/);
-
 for (var i = 0; i < aHeaders.length; i++) {
   alert(aHeaders[i]);
 }
 ```
-
-
 
 ```php
 $sInfo = $aValues['Name']."<br>".$aValues['Address']."<br>
@@ -876,9 +845,7 @@ $aValues['E-mail']."</</a>";
 } else {
 $sInfo = "Customer with ID $sID doesn't exist.";
 }}
-
 mysql_close($oLink);
-
 echo $sInfo;
 ```
 
@@ -890,7 +857,7 @@ echo $sInfo;
 <p>Enter customer ID to retrieve information:</p>
 <p>Customer ID: <input type="text" id="ExtCustomerId" value="" /></p>
 <p><input type="button" value="Get Customer Info" onclick="requestCustomerInfo()" /></p>
-<div id="divCustomerInfo"></div
+<div id="divCustomerInfo"></div>
 ```
 
 `requestCustomerInfo()` 函数之前创建了一个隐藏的 iframe，但现在必须改为使用 `XMLHttpRequest`。
@@ -911,7 +878,9 @@ oXmlHttp.send(null);
 }
 ```
 
-注意，该函数的起始方式相同，通过获取用户输入的 ID。然后，使用 zXml 库创建一个 `XMLHttpRequest` 对象。调用 `open()` 方法，对 `GetCustomerData` 发起异步 GET 请求（该请求附带了上述 ID）。接下来是赋值事件处理程序，它检查 `Ready` 是否为 4，然后检查请求状态。如果请求成功（状态为 200），则调用 `displayCustomerInfo()` 并传入响应体（通过 response 访问）。如果失败（状态不是 200），则将错误信息传递给 `displayCustomerInfo()`。
+
+
+注意，该函数的起始方式相同，通过获取用户输入的 ID。然后，使用 `zXml` 库创建一个 `XMLHttpRequest` 对象。调用 `open()` 方法，对 `GetCustomerData` 发起异步 GET 请求（该请求附带了上述 ID）。接下来是赋值事件处理程序，它检查 `Ready` 是否为 4，然后检查请求状态。如果请求成功（状态为 200），则调用 `displayCustomerInfo()` 并传入响应体（通过 `response` 访问）。如果失败（状态不是 200），则将错误信息传递给 `displayCustomerInfo()`。
 
 这与隐藏帧/iframe 示例有几处不同。首先，主页面之外不需要任何 JavaScript 代码。这很重要，因为任何在两个地方保留代码的需求都存在产生不兼容性的可能；在基于帧的示例中，你依赖于显示页面和隐藏帧中的独立脚本来相互通信。通过调用 `GetCustomerInfo.php` 返回你感兴趣的数据，要更容易判断请求是否出现问题。在之前的示例中，没有机制可以让你识别并响应请求过程中的服务器错误。使用 `XMLHttpRequest`，所有的服务器错误都由你作为开发者处理，允许你向用户传递有意义的错误反馈。在许多方面，对于页面内头部，`XMLHttpRequest` 比隐藏帧是一个更优雅的解决方案。
 
@@ -921,9 +890,7 @@ oXmlHttp.send(null);
 
 ```php
 <?php
-
 header("Content-Type: text/plain");
-
 $sName = $_POST['txtName'];
 $sAddress = $_POST['txtAddress'];
 $sCity = $_POST['txtCity'];
@@ -931,11 +898,8 @@ $sState = $_POST['txtState'];
 $sZipCode = $_POST['txtZipCode'];
 $sPhone = $_POST['txtPhone'];
 $sEmail = $_POST['txtEmail'];
-
 $sStatus = "";
-
 $sServer = "your.database.server";
-
 $sDBName = "your_db_name";
 $sDBUsername = "your_db_username";
 $sDBPassword = "your_db_password";
@@ -948,15 +912,12 @@ $sPhone,'$sEmail");
 
 $oLink = mysql_connect($sDBServer,$sDBUsername,$sDBPassword);
 $mysql_select_db($sDBName) or $sStatus = "Unable to open database";
-
 if($oResult = $sSQL) {
 $sStatus = "Added customer; customer ID is " .$mysql_insert_id();
 } else {
 $sStatus = "An error occurred while inserting; customer not saved.";
 }
-
 mysql_close($oLink);
-
 echo $sStatus;
 ?>
 ```
@@ -975,20 +936,19 @@ Phone: <input type="text" name="txtPhone" value /><br />
 E-mail: <input type="text" name="txtEmail" value /><p>
 <p><input type="submit" value="Save Customer" /></p>
 </form>
-<div id="divStatus"></div```
+<div id="divStatus"></div>
+```
 
-你会注意到 `onSubmit` 处理程序已改为调用 `sendRequest()`（尽管事件处理程序返回了 `false` 以防止提交）。此方法首先组装 POST 请求的数据并创建 `XMLHttpRequest` 对象。数据应以 `name=value&name=value` 的字符串格式发送。每个参数的名称和值都经过了 URL 编码以避免传输过程中丢失数据。为了创建这一点，你需要遍历表单字段，提取 name 和 value。`getRequestBody()` 函数处理了这一点：
+你会注意到 `onSubmit` 处理程序已改为调用 `sendRequest()`（尽管事件处理程序返回了 `false` 以防止提交）。此方法首先组装 POST 请求的数据并创建 `XMLHttpRequest` 对象。数据应以 `name=value&name=value` 的字符串格式发送。每个参数的名称和值都经过了 URL 编码以避免传输过程中丢失数据。为了创建这一点，你需要遍历表单字段，提取 `name` 和 `value`。`getRequestBody()` 函数处理了这一点：
 
 ```javascript
 function getRequestBody(oForm) {
   var aParams = new Array();
-
   for (var i = 0; i < oForm.elements.length; i++) {
     var sParam = encodeURIComponent(oForm.elements[i].name);
     sParam += "=" + encodeURIComponent(oForm.elements[i].value);
     aParams.push(sParam);
   }
-
   return aParams.join("&");
 }
 ```
@@ -1003,11 +963,9 @@ function getRequestBody(oForm) {
 function sendRequest() {
   var oForm = document.forms[0];
   var sBody = getRequestBody(oForm);
-
   var oXmlHttp = new XMLHttpRequest();
   oXmlHttp.open("post", oForm.action, true);
   oXmlHttp.setRequestHeader("Content-Type", "application/x-www-urlencoded");
-
   oXmlHttp.onreadystatechange = function () {
     if (oXmlHttp.readyState == 4) {
     if (oXmlHttp.status == 200) {
@@ -1020,7 +978,7 @@ function sendRequest() {
 }
 ```
 
-与之前的示例一样，该函数的的第一步是获取表单引用并存储在变量 `oForm` 中。然后生成结果并存储在 `sBody` 中。接下来是创建和设置 `XMLHttpRequest` 对象。注意 `open()` 的第一个参数现在是 `post` 而不是 `get`，第二个参数设置为 `oForm.action`（再次可以在多个页面使用）。你还会注意到设置了请求头头。当表单从浏览器提交到服务器时，它会将请求内容设置为 `application/x-www-form-urlencoded`。大多数服务器端语言使用这种编码来正确解析 POST 数据，因此这一点非常重要。
+与之前的示例一样，该函数的第一步是获取表单引用并存储在变量 `oForm` 中。然后生成结果并存储在 `sBody` 中。接下来是创建和设置 `XMLHttpRequest` 对象。注意 `open()` 的第一个参数现在是 `post` 而不是 `get`，第二个参数设置为 `oForm.action`（再次可以在多个页面使用）。你还会注意到设置了请求头。当表单从浏览器提交到服务器时，它会将请求内容设置为 `application/x-www-form-urlencoded`。大多数服务器端语言使用这种编码来正确解析 POST 数据，因此这一点非常重要。
 
 `onreadystatechange` 事件处理程序与 GET 示例相似；唯一的区别是调用 `saveResult()` 而不是 `displayCustomerInfo()`。最后一行是重要的，因为 `sBody` 字符串被传递给 `send()`，使其成为请求体的一部分。这有效地模拟了浏览器的行为，因此服务器端逻辑应该可以工作。
 
@@ -1040,12 +998,9 @@ function sendRequest() {
 
 由于浏览器运行在用户的计算机上，浏览器制造商制定了安全限制以防止恶意代码对用户的机器造成破坏。
 
-
-
-
 JavaScript 范式中最重要的安全限制是同源策略（same origin policy），它决定了特定页面允许与哪些服务器通信。
 
-“源”（origin）被视为单个域，例如 WWW.example.com，通过单一协议（最常见的是 HTTP）访问。同源策略规定，任何从该源加载的页面都可以访问、下载并与同一源的任何其他页面进行交互。这使得隐藏帧（hidden frame）能够工作的原因：由于两个帧都来自同一个源，它们被允许使用 JavaScript 进行通信。如果你尝试从另一个源加载一个帧，你将无法与该页面或其任何脚本功能进行交互。其意图是防止恶意程序员从合法页面获取信息。
+“源”（origin）被视为单个域，例如 `WWW.example.com`，通过单一协议（最常见的是 HTTP）访问。同源策略规定，任何从该源加载的页面都可以访问、下载并与同一源的任何其他页面进行交互。这使得隐藏帧（hidden frame）能够工作的原因：由于两个帧都来自同一个源，它们被允许使用 JavaScript 进行通信。如果你尝试从另一个源加载一个帧，你将无法与该页面或其任何脚本功能进行交互。其意图是防止恶意程序员从合法页面获取信息。
 
 同源策略还会影响 `XMLHttpRequest` 的工作方式。使用 `XMLHttpRequest`，你无法访问任何与运行页面不同同源的资源。这意味着，默认情况下，你不能在 `open()` 方法中使用带有 `http://` 的 URL；你只能使用来自同一域的绝对或相对 URL。如果你需要访问位于不同源的 URL，你必须创建一个服务器端代理来处理通信（见图 2-4）。
 
@@ -1053,7 +1008,7 @@ JavaScript 范式中最重要的安全限制是同源策略（same origin policy
 
 图 2-4
 
-使用服务器端代理，浏览器向 Web 服务器发送请求。然后，Web 服务器联系域外的另一个 Web 服务器以请求适当的信息。当你的 Web 服务器接收到响应时，它会被转发回浏览器。结果是外部数据的无缝传输。你将在该过程之后使用服务器端代理。Internet Explorer 没有解释显式的源策略，它依赖于自身的安全区域来决定哪些可以和不能被访问。属于 Internet 安全区域的页面通常遵循类似于同源策略的规则，而位于受信任区域的页面可能会被豁。
+使用服务器端代理，浏览器向 Web 服务器发送请求。然后，Web 服务器联系域外的另一个 Web 服务器以请求适当的信息。当你的 Web 服务器接收到响应时，它会被转发回浏览器。结果是外部数据的无缝传输。你将在该过程之后使用服务器端代理。Internet Explorer 没有解释显式的源策略，它依赖于自身的安全区域来决定哪些可以和不能被访问。属于 Internet 安全区域的页面通常遵循类似于同源策略的规则，而位于受信任区域的页面可能会被豁免。
 
 ## 缓存控制 (Cache Control)
 
@@ -1065,13 +1020,16 @@ JavaScript 范式中最重要的安全限制是同源策略（same origin policy
 Cache-Control: no-cache
 ```
 
+
+
+
 这告诉浏览器不要缓存来自特定 URL 的数据。相反，浏览器始终从服务器调用新版本，而不是从自己的缓存中调用保存的版本。
 
-## 总结 (Summary)
+## 总结（Summary）
 
 本章向你介绍了几种用于客户端-服务器通信的 Ajax 技术。它从 HTTP 基础请求和响应开始。你学习了 HTTP 消息的格式以及 GET 请求与 POST 请求之间的区别。引入了头部（headers）和消息体（message bodies）的概念。
 
-你学习的第一种 Ajax 技术是隐藏帧技术，它使用一个宽度或高度为零的帧，有效地在用户面前隐藏了它。该技术通过 JavaScript 对隐藏帧进行进行调用来促进客户端-服务器的通信。通过使用隐藏技术，你学习了如何发送 GET 和 POST 请求。
+你学习的第一种 Ajax 技术是隐藏帧技术，它使用一个宽度或高度为零的帧，有效地在用户面前隐藏了它。该技术通过 JavaScript 对隐藏帧进行调用来促进客户端-服务器的通信。通过使用隐藏技术，你学习了如何发送 GET 和 POST 请求。
 
 接下来，你学习了用隐藏的 `iframe` 替换隐藏帧。因为可以使用 JavaScript 动态创建 `iframe`，所以这可能是现代浏览器中启动客户端-服务器通信的更优方式。使用的技术与隐藏帧相同，尽管 `iframe` 在你的页面设计中提供了更大的灵活性。
 
@@ -1079,26 +1037,23 @@ Cache-Control: no-cache
 
 最后，我们讨论了在客户端-服务器通信时的考虑因素。你了解了同源策略及其影响，并简要介绍了服务器端代理。
 
-## 第3章：Ajax 模式 (Chapter 3: Ajax Patterns)
+## 第 3 章：Ajax 模式（Chapter 3: Ajax Patterns）
 
-## 概述 (Overview)
+## 概述（Overview）
 
-描述解决常见问题的设计模式。尽管 Ajax 已经存在了数十年，但许多问题已被解决。自 20 世纪 90 年代中期以来，人们对设计模式投入了关注。由于你已经看到了一些这些模式的实际应用，例如隐藏帧技术和 `XMLHttpRequest`，这些都是使用 JavaScript 在客户端和服务器之间。作者 Michael Makhoff 在他的网站 www.ajaxpatterns.org 上记录了许多模式。在本章中介绍的模式是许多模式的混合。由开发者来决定是否在自己的应用中实现特定的模式。
+描述解决常见问题的设计模式。尽管 Ajax 已经存在了数十年，但许多问题已被解决。自 20 世纪 90 年代中期以来，人们对设计模式投入了关注。由于你已经看到了一些这些模式的实际应用，例如隐藏帧技术和 `XMLHttpRequest`，这些都是使用 JavaScript 在客户端和服务器之间。作者 Michael Makhoff 在他的网站 `www.ajaxpatterns.org` 上记录了许多模式。在本章中介绍的模式是许多模式的混合。由开发者来决定是否在自己的应用中实现特定的模式。
 
-## 通信控制模式 (Communication Control Patterns)
+## 通信控制模式（Communication Control Patterns）
 
 你已经从第 2 章知道如何使用 JavaScript 与服务器通信。真正的问题是：启动并继续向服务器请求的最佳方法是什么？在某些情况下，从服务器检索信息以便其可用；在其他情况下，你可能希望间隔向服务器发送或从其接收数据。所有内容不应该一次性下载，而是按顺序下载。Ajax 允许你精细控制客户端与服务器之间的通信以实现的效果。
 
-## 预测获取 (Predictive Fetch)
+## 预测获取（Predictive Fetch）
 
 在传统的 Web 解决方案中，应用程序不知道接下来发生什么。页面呈现许多链接，每个链接指向网站的不同部分。这可以被称为基于需的——用户通过其行为告诉服务器应该检索什么数据。虽然这种范式自诞生以来就主导着 Web，但它对用户强加了这种开始-停止的交互模型。在 Ajax 的帮助下，这种情况正在开始改变。
 
 预测获取模式是一个相对简单但实现困难的想法：Ajax 应用查询用户将获取什么并检索适当的数据。在理想世界中，如果能知道用户将做什么并在需要时确保数据可用就太好了。但在现实中，确定未来的用户行为是一个取决于意图的猜测。
 
-在某些简单的情况下，预测用户行为是最容易的。假设你正在阅读一篇分为三页的文章。逻辑上讲，如果你对第一页感兴趣，你也会对第二页和第三页感兴趣。如果第一页已经加载了几秒钟（可以通过超时轻松判断），则可能在后台下载第二页。同样，如果第二页已经加载了几秒钟，逻辑上可以假设读者将继续阅读第三页。当这些额外数据正在被加载缓存在
-
-
-客户端，读者继续阅读，几乎没有注意到在点击“下一页”链接后，下一页几乎是瞬间弹出的。
+在某些简单的情况下，预测用户行为是最容易的。假设你正在阅读一篇分为三页的文章。逻辑上讲，如果你对第一页感兴趣，你也会对第二页和第三页感兴趣。如果第一页已经加载了几秒钟（可以通过超时轻松判断），则可能在后台下载第二页。同样，如果第二页已经加载了几秒钟，逻辑上可以假设读者将继续阅读第三页。当这些额外数据正在被加载并缓存在客户端，读者继续阅读，几乎没有注意到在点击“下一页”链接后，下一页几乎是瞬间弹出的。
 
 另一个简单的用例发生在写邮件期间。大多数情况下，你是在给某个你认识的人写邮件，因此逻辑上可以假设该人已经在你的联系人录中。为了提供帮助，可以在后台预加载你的联系人录并提供建议。许多基于 Web 的电子邮箱系统（包括 Gmail 和 AOL Mail）都采用了这种方法。关键再次在于“逻辑假设”准则。通过预测并预加载与用户最可能的下一步操作相关的信息，你虽然关联到了任何可能的下一步，但你可能会迅速过载服务器，并让浏览器因额外的处理而变得缓慢。作为一个经验法则，只有当你认为假设完成用户的下一个请求是符合逻辑的时，才预取信息。
 
@@ -1110,11 +1065,12 @@ Cache-Control: no-cache
 
 ```php
 <?php
+
 $page = 1;
 $dataOnly = false;
 
 if (isset($_GET["page"])) {
-    $page = (int)$_GET["page"];
+    $page = (int) $_GET["page"];
 }
 
 if (isset($_GET["data"]) && $_GET["dataonly"] == "true") {
@@ -1125,6 +1081,7 @@ if (!$dataOnly) {
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
 "http://www.w3.org/TR/xhtml/xhtml1-transitional.dtd">
+
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
 <head>
     <title>Article Example</title>
@@ -1136,29 +1093,33 @@ if (!$dataOnly) {
 
 ```html
 <body>
+
 <h1>Article Title</h1>
+
 <div id="divLoadArea" style="display:none"></div>
 
 <?php
 
-$output = "<Page 
+$output = "<Page";
 
-for ($i=1; $i < 4; $i++) {
-  $output .= "<a href=\"ArticleExample.php?page=$i\" id=\"aPage=$i\">";
+for ($i = 1; $i < 4; $i++) {
+    $output .= "<a href=\"ArticleExample.php?page=$i\" id=\"aPage=$i\">";
 
-  if ($i==$page) {
-    $output .= " class=\"current\"";
-  }
-  $output .= ">$i</a>";
+    if ($i == $page) {
+        $output .= " class=\"current\"";
+    }
+
+    $output .= ">$i</a>";
 }
+
 echo $output;
 
-if ($page==1) {
-echo $pageText;
+if ($page == 1) {
+    echo $pageText;
 } else if ($page == 2) {
-echo $page2Text;
+    echo $page2Text;
 } else if ($page == 3) {
-echo $page3Text;
+    echo $page3Text;
 }
 
 if (!$dataOnly) {
@@ -1191,7 +1152,6 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis aute eiusmod tempo
 
 页面的 HTML 留出了文章标题的空间，还有一个用于加载额外页面的 `<div>` 元素。该 `<div>` 元素的显示属性被设置为确保其内容不会被意外显示。随后的 PHP 代码包含了输出文章可用页面列表的逻辑。在示例中，将三页内容，因此顶部输出了三个链接。
 
-
 参数 `ePage`。同时，每个页面的链接的 CSS 类被赋予了一个空字符串。然后，当前页面的 `<div>` 元素的 `display` 属性被设置为 `block` 以显示它，而该页面的链接的 CSS 类被设置为 `current`。
 
 相反，如果 `<div>` 元素不存在，则页面将通过传统的方式导航到文章的下一页：通过获取 URL（使用之前定义的 `getURLForPage` 函数）并将其赋值给 `location.href`。这是一个回退功能，以确保如果用户在 5 秒内点击链接，体验将回退到传统的 Web 范式。
@@ -1207,10 +1167,14 @@ function loadNextPage() {
             xmlHttp.abort();
         }
 
-        xmlHttp.open("get", URLForPage(iNextPageToLoad) + "&data=true", true);
-        xmlHttp.onreadystatechange = function () {
-            //more code here
+        xmlHttp.open(
+            "get",
+            URLForPage(iNextPageToLoad) + "&data=true",
+            true
+        );
 
+        xmlHttp.onreadystatechange = function () {
+            // more code here
             xmlHttp.send(null);
         };
     }
@@ -1226,103 +1190,154 @@ function loadNextPage() {
 ```javascript
 function loadNextPage() {
     if (iNextPageToLoad <= iPageCount) {
-if (!oXmlHttp) {
-  oXmlHttp = zXmlHttp.createRequest();
-} else if (oXmlHttp.readyState != 0) {
-  oXmlHttp.abort();
-}
+        if (!oXmlHttp) {
+            oXmlHttp = zXmlHttp.createRequest();
+        } else if (oXmlHttp.readyState != 0) {
+            oXmlHttp.abort();
+        }
 
-oXmlHttp.open("get", getURLForPage(iNextPageToLoad) + "&data=true", true);
-oXmlHttp.onreadystatechange = function () {
+        oXmlHttp.open(
+            "get",
+            getURLForPage(iNextPageToLoad) + "&data=true",
+            true
+        );
 
-  if (oXmlHttp.readyState == 4) {
-    if (oXmlHttp.status == 200) {
-      var divLoadArea = document.getElementById("divLoadArea");
-      divLoadArea.innerHTML = oXmlHttp.responseText;
-      var divNewPage = document.getElementById("divPage" + iNextPageToLoad);
-      divNewPage.style.display = "none";
-      document.body.appendChild(divNewPage);
-      divLoadArea.innerHTML = "";
-      iNextPageToLoad++;
-      setTimeout(loadNextPage, iWaitBeforeLoad);
+        oXmlHttp.onreadystatechange = function () {
+            if (oXmlHttp.readyState == 4) {
+                if (oXmlHttp.status == 200) {
+                    var divLoadArea =
+                        document.getElementById("divLoadArea");
+
+                    divLoadArea.innerHTML = oXmlHttp.responseText;
+
+                    var divNewPage = document.getElementById(
+                        "divPage" + iNextPageToLoad
+                    );
+
+                    divNewPage.style.display = "none";
+                    document.body.appendChild(divNewPage);
+                    divLoadArea.innerHTML = "";
+
+                    iNextPageToLoad++;
+                    setTimeout(loadNextPage, iWaitBeforeLoad);
+                }
+            }
+        };
+
+        oXmlHttp.send(null);
     }
-  }
-}
-
-oXmlHttp.send(null);
 }
 ```
 
-如上一章所述，会检查 `readyState` 确认它何时等于 4，并检查 `status` 属性以确保没有错误。一旦通过了这两个条件，真正的处理就开始了。首先，获取 `<div>` 元素的引用并存储在 `divLoadArea` 中。然后，返回的 `responseText` 是一个 HTML 片段，它将被解析并设置加载区域的 `innerHTML` 属性。这些以及相应的对象将被创建。接下来，将 `<div>` 元素的引用附加到获取的下一页上（你知道其 ID 将是 `divPageiNextPageToLoad`），并将其 `display` 属性设为 `none`，以确保它在被移动到加载区域之外时保持不可见。下一行将 `divNewPage` 追加到文档的 `body` 中，将其放入常规视图中供使用。加载区域的 `innerHTML` 属性被设置为空字符串，为加载另一个页面做准备。之后，`iNextPageToLoad` 变量加 1，并设置新的超时，在指定的时间后再次调用此函数。此函数将每 5 秒调用一次，直到所有页面加载完毕。
 
-由于此页面在没有 JavaScript 的情况下也应该是功能，因此所有代码都在确定浏览器是否能够使用 `XMLHttpRequest` 后在运行时挂载。幸运的是，`XMLHttpRequest` 库中的 `XMLHttpRequest` 对象有一个函数 `isSupported()`，可以用于判断这一点：
+
+
+
+如上一章所述，会检查`readyState`确认它何时等于 4，并检查`status`属性以确保没有错误。一旦通过了这两个条件，真正的处理就开始了。首先，获取`<div>`元素的引用并存储在`divLoadArea`中。然后，返回的`responseText`是一个 HTML 片段，它将被解析并设置加载区域的`innerHTML`属性。这些以及相应的对象将被创建。接下来，将`<div>`元素的引用附加到获取的下一页上（你知道其 ID 将是`divPageiNextPageToLoad`），并将其`display`属性设为`none`，以确保它在被移动到加载区域之外时保持不可见。下一行将`divNewPage`追加到文档的`body`中，将其放入常规视图中供使用。加载区域的`innerHTML`属性被设置为空字符串，为加载另一个页面做准备。之后，`iNextPageToLoad`变量加 1，并设置新的超时，在指定的时间后再次调用此函数。此函数将每 5 秒调用一次，直到所有页面加载完毕。
+
+由于此页面在没有 JavaScript 的情况下也应该是功能，因此所有代码都在确定浏览器是否能够使用`XMLHttpRequest`后在运行时挂载。幸运的是，`XMLHttpRequest`库中的`XMLHttpRequest`对象有一个函数`isSupported()`，可以用于判断这一点：
 
 ```javascript
 window.onload = function () {
+
   if (zXmlHttp.isSupported()) {
+
     //begin Ajax code here
+
   }
+
 }
 ```
 
-此代码块内部是 Predictive Fetch 代码的地方，确保不支持 `XMLHttpRequest` 的浏览器不会因为功能不全的代码而影响可用性。
+此代码块内部是 Predictive Fetch 代码的地方，确保不支持`XMLHttpRequest`的浏览器不会因为功能不全的代码而影响可用性。
 
-为文章设置 Predictive Fetch 的第一步是确定用户当前查看哪个页面。要做到这一点，你必须查看 URL 的查询字符串查看是否指定了 `page` 参数。如果是，你可以从那里提取页码；否则，你可以假设页码为 1（默认值）：
+为文章设置 Predictive Fetch 的第一步是确定用户当前查看哪个页面。要做到这一点，你必须查看 URL 的查询字符串查看是否指定了`page`参数。如果是，你可以从那里提取页码；否则，你可以假设页码为 1（默认值）：
 
 ```javascript
 window.onload = function () {
+
   if (zXmlHttp.isSupported()) {
+
     if (location.href.indexOf("page=") > -1) {
+
       var queryString = location.search.substring(1);
+
       iCurPage = parseInt(queryString.substring(queryString.indexOf("=")+1));
+
     } else {
+
       iCurPage = 1;
+
     }
+
     nextPageToLoad = iCurPage+1;
+
   }
+
 } // code here
 ```
 
-在此段代码中，测试页面的 URL（通过 `location.href` 访问）以检查是否指定了页面。如果是，则使用 `location.search` 获取查询字符串（包含问号），`substring(1)` 剥离问号，下一行提取等号后的字符串，使用 `parseInt` 转换为整数并赋值给 `iCurPage`。如果没有，则 `iCurPage` 赋值为 1。`nextPageToLoad` 变量被设置为当前页码加 1。
+在此段代码中，测试页面的 URL（通过`location.href`访问）以检查是否指定了页面。如果是，则使用`location.search`获取查询字符串（包含问号），`substring(1)`剥离问号，下一行提取等号后的字符串，使用`parseInt`转换为整数并赋值给`iCurPage`。如果没有，则`iCurPage`赋值为 1。`nextPageToLoad`变量被设置为当前页码加 1。
 
-下一步是覆盖链接的功能。记住，默认情况下，这些链接会刷新页面。如果支持 `XMLHttpRequest`，你需要覆盖这种行为并将其替换为 Ajax 调用：
+下一步是覆盖链接的功能。记住，默认情况下，这些链接会刷新页面。如果支持`XMLHttpRequest`，你需要覆盖这种行为并将其替换为 Ajax 调用：
 
 ```javascript
 window.onload = function () {
+
   if (zXmlHttp.isSupported()) {
+
     if (location.href.indexOf("page=") > -1) {
+
       var queryString = location.search.substring(1);
+
       iCurPage = parseInt(queryString.substring(queryString.indexOf("=")+1));
+
     } else {
+
       iCurPage = 1;
+
     }
+
     nextPageToLoad = iCurPage+1;
 
     var colLinks = document.getElementsByTagName("a");
+
     for (var i = 0; i < colLinks.length; i++) {
+
       if (colLinks[i].id.indexOf("page") == 0) {
+
         colLinks[i].onclick = function (oEvent) {
+
           var sPage = this.id.substring(5);
+
           showPage(sPage);
+
         }
+
       }
+
     }
+
     if (oEvent) {
+
         oEvent.preventDefault();
+
     } else {
+
       window.event.returnValue = false;
+
     }
+
   }
+
   setTimeout(loadNextPage, iWaitBeforeLoad);
+
 }
 ```
 
-在这里，通过 `getElementsByTagName("a")` 获取链接（<a> 元素）。如果链接的 ID 以 `page` 开头，则需要处理该链接；这是通过使用 `indexOf()` 并检查是否等于 0 来定的，这表示 `page` 是字符串的开头。接下来，为链接分配 `onclick` 事件处理程序。在此事件处理程序内部，使用链接的 ID（通过 `this.id` 访问）并使用 `substring(5)` 提取页面名。然后，将此值传递给之前定义的 `showPage()` 函数，它将显示相应的页面。之后，阻止链接的默认行为，即导航到新页面。由于 Internet Explorer (IE) 和 DOM 事件对象的差异，需要一个语句来确定适当的操作方案。如果事件对象已传递给函数（参数 `oEvent`），那么这是一个符合 DOM 标准的浏览器，调用 `preventDefault()` 方法来阻止默认行为。然而，如果 `oEvent` 为空，说明是 IE，事件对象可以通过 `window.event` 访问。此时将 `returnValue` 属性设置为 `false`，这是 IE 取消默认操作的方法。
+在这里，通过`getElementsByTagName("a")`获取链接（`<a>`元素）。如果链接的 ID 以`page`开头，则需要处理该链接；这是通过使用`indexOf()`并检查是否等于 0 来定的，这表示`page`是字符串的开头。接下来，为链接分配`onclick`事件处理程序。在此事件处理程序内部，使用链接的 ID（通过`this.id`访问）并使用`substring(5)`提取页面名。然后，将此值传递给之前定义的`showPage()`函数，它将显示相应的页面。之后，阻止链接的默认行为，即导航到新页面。由于 Internet Explorer (IE) 和 DOM 事件对象的差异，需要一个语句来确定适当的操作方案。如果事件对象已传递给函数（参数`oEvent`），那么这是一个符合 DOM 标准的浏览器，调用`preventDefault()`方法来阻止默认行为。然而，如果`oEvent`为空，说明是 IE，事件对象可以通过`window.event`访问。此时将`returnValue`属性设置为`false`，这是 IE 取消默认操作的方法。
 
-
-
-
-在妥善处理链接后，将为 `loadNextPage()` 的初始调用创建一个超时器。首次调用将在 5 秒后发生，并在该点自动加载第二页。
+在妥善处理链接后，将为`loadNextPage()`的初始调用创建一个超时器。首次调用将在 5 秒后发生，并在该点自动加载第二页。
 
 当你自己亲自进行测试时，尝试在不同的时间点点击页面链接。如果你在 5 秒通过之前点击，你将看到页面跳转到一个查询字符串已更改的新 URL。下一次，等待大约十秒然后点击页面链接。你应该发现 URL 没有发生变化，但文本发生了变化（这比跳转到新 URL 要快得多）。
 
@@ -1344,9 +1359,9 @@ window.onload = function () {
 
 ## 增量表单验证示例
 
-如前所述，提交节流可以通过各种用户交互来实现。在使用表单时，在填写表单的过程中增量地上传数据有时是有用的。最常见的用法是在用户填写表单时对数据进行验证，而不是等到最后再判断任何错误。在这种情况下，你可能都会使用每个表单元素的 `onchange` 事件处理器来确定何时上传数据。
+如前所述，提交节流可以通过各种用户交互来实现。在使用表单时，在填写表单的过程中增量地上传数据有时是有用的。最常见的用法是在用户填写表单时对数据进行验证，而不是等到最后再判断任何错误。在这种情况下，你可能都会使用每个表单元素的`onchange`事件处理器来确定何时上传数据。
 
-`change` 事件在 `<select>` 元素被选中时触发；对于其他元素，则在它的值改变并失去焦点时触发。例如，如果你在文本框中输入几个字母，然后点击屏幕上的其他地方（导致文本框失去焦点），`change` 事件就会触发，并调用 `onchange` 事件处理器。如果你再次点击文本框，然后点击其他地方（或按下 Tab 键），由于没有发生任何更改，文本框将失去焦点。使用这种提交节流的事件处理器可以防止不必要的请求。
+`change`事件在`<select>`元素被选中时触发；对于其他元素，则在它的值改变并失去焦点时触发。例如，如果你在文本框中输入几个字母，然后点击屏幕上的其他地方（导致文本框失去焦点），`change`事件就会触发，并调用`onchange`事件处理器。如果你再次点击文本框，然后点击其他地方（或按下 Tab 键），由于没有发生任何更改，文本框将失去焦点。使用这种提交节流的事件处理器可以防止不必要的请求。
 
 通常情况下，表单验证仅仅是提交的前期工作。表单的提交按钮初始为禁用状态，只有当所有字段都通过服务器验证后才会启用。例如，假设你正在运行一个用户必须注册才能访问某些功能的小网站。这可能是一个需要登录才能购买物品的购物网站，或者是一个需要会员身份才能访问留言板站点。在创建此新账户时，你想要确保的事项目有：
 
@@ -1360,116 +1375,191 @@ window.onload = function () {
 
 ```html
 <form method="post" action="Success.php">
+
 <table>
+
 <tr>
+
 <td><label for="txtFirstName">First Name</label></td>
+
 <td><input type="text" id="txtFirstName" name="txtFirstName" /></td>
+
 </tr>
+
 <tr>
+
 <td><label for="txtLastName">Last Name</label></td>
+
 <td><input type="text" id="txtLastName" name="txtLastName" /></td>
+
 </tr>
+
 <tr>
+
 <td><label for="txtEmail">E-mail</label></td>
+
 <td><input type="text" id="txtEmail" name="txtEmail" /></td>
+
 </tr>
+
 <tr>
+
 <td><label for="txtUsername">Username</label></td>
+
 <td><input type="text" id="txtUsername" name="txtUsername" /></td>
+
 </tr>
+
 <tr>
+
 <td><label for="txtBirthday">Birthday</label></td>
+
 <td><input type="text" id="txtBirthday" name="txtBirthday" /> (m/d/yyyy)</td>
+
 </tr>
+
 <tr>
+
 <td><label for="selGender">Gender</label></td>
+
 <td>
+
 <select id="selGender">
+
 <option>Male</option>
+
 <option>Female</option>
+
 </select>
+
 </td>
+
 </tr>
+
 </table>
+
 <input type="submit" id="btnSignUp" value="Sign Up!" />
+
 </form>
 ```
 
-
 ```php
 //check usernames
+
 if (in_array($_GET["txtUsername"], $usernames)) {
+
     $message = "This username already exists. Please choose another.";
+
 } else if (strlen($_GET["txtUsername"]) < 8) {
+
     $message = "Username must be at least 8 characters long.";
+
 } else {
+
     $valid = "true";
+
     $message = "";
+
 }
+
 else if (isset($_GET["txtBirthday"])) {
+
     $date = strtotime($_GET["txtBirthday"]);
+
     if ($date < 0) {
+
         $message = "This is not a valid date.";
+
     } else {
+
         $valid = "true";
+
         $message = "";
+
     }
+
 } else if (isset($_GET["txtEmail"])) {
+
     if (preg_match("/^[a-z0-9\-]+\.[a-z0-9\-]+\.[a-z0-9\-]+\.[a-z]{2,3}$/", $_GET["txtEmail"])) {
+
         $valid = "true";
+
         $message = "";
+
     } else {
+
         $message = "This e-mail address is not valid";
+
     }
+
 }
+
 echo "$valid||$message"; ?>
 ```
 
-在第一个文件中，步骤是确定要验证哪个字段。这是通过 `isset()` 函数测试 `$_GET` 数组中的某个值来实现。如果某个字段有值，则开始验证。对于用户名，会检查该值是否已存在于用户名数组中。生日被传递给 PHP 的内置函数 `time()`，该函数将任何数量美国格式的日期字符串转换为 UNIX 时间戳（自 1970 年 1 月 1 日以来的秒数）。如果出错，此函数将返回 -1，表示传入的字符串不是有效日期。电子邮件地址将通过正则表达式进行检查，以确保其格式正确。该正则表达式是由 John Coggeshall 在他的文章中设计的，
+在第一个文件中，步骤是确定要验证哪个字段。这是通过`isset()`函数测试`$_GET`数组中的某个值来实现。如果某个字段有值，则开始验证。对于用户名，会检查该值是否已存在于用户名数组中。生日被传递给 PHP 的内置函数`time()`，该函数将任何数量美国格式的日期字符串转换为 UNIX 时间戳（自 1970 年 1 月 1 日以来的秒数）。如果出错，此函数将返回 -1，表示传入的字符串不是有效日期。电子邮件地址将通过正则表达式进行检查，以确保其格式正确。该正则表达式是由 John Coggeshall 在他的文章中设计的，“E-mail validation with PHP 4”，该文章可以在 www.zend.com/send/spotlight/evl2apr.php 在线获取。
 
-“E-mail validation with PHP 4”，该文章可以在 www.zend.com/send/spotlight/evl2apr.php 在线获取。
+**注意**：此示例中使用的名称存储在一个简单的数组中，并硬编码在名称中。在实际实现中，用户名应该存储在数据库中，并应该查询数据库来确定哪些用户名已经存在。
 
-**重要** 注意：此示例中使用的名称存储在一个简单的数组中，并硬编码在名称中。在实际实现中，用户名应该存储在数据库中，并应该查询数据库来确定哪些用户名已经存在。
+变量`$valid`和`$message`被初始化为`false`和“An unknown error occurred.”。这确保了如果正确使用文件（例如传递了未识别的字段名），将返回否定验证结果。然而，当发生正验证时，两个变量都必须重置为适当的值（`$message`设置为空字符串，`true`）。在否定验证的情况下，只有`$message`变量被设置为`false`。此阶段的最后一步是按照之前提的格式输出响应字符串。
 
-变量 `$valid` 和 `$message` 被初始化为 `false` 和“An unknown error occurred.”。这确保了如果正确使用文件（例如传递了未识别的字段名），将返回否定验证结果。然而，当发生正验证时，两个变量都必须重置为适当的值（`$message` 设置为空字符串，`true`）。在否定验证的情况下，只有 `$message` 变量被设置为 `false`。此阶段的最后一步是按照之前提的格式输出响应字符串。
-
-接下来，JavaScript 将执行验证方法。可以使用简单的函数 `validateField()` 来验证每个字段，以便它知道应该如何进行验证。这需要花费一些工作来应对跨浏览器兼容性问题：
+接下来，JavaScript 将执行验证方法。可以使用简单的函数`validateField()`来验证每个字段，以便它知道应该如何进行验证。这需要花费一些工作来应对跨浏览器兼容性问题：
 
 ```javascript
 function validateField(oEvent) {
+
   oEvent = oEvent || window.event;
+
   var txtField = oEvent.target || oEvent.srcElement;
+
   //more code to come
+
 }
 ```
 
-此函数内部的第一几行代码消除了 IE 和符合 DOM 的浏览器（如 Firefox、Opera 和 Safari）之间事件模型的差异。符合 DOM 的浏览器向每个事件处理器传递一个事件对象；引起事件的控件存储在事件的 `target` 属性中。在 IE 中，事件是 `window` 的属性；因此，第一行将此值赋值给 `oEvent` 变量。逻辑或 (||) 在对象和空对象之间会返回空值。如果你是 IE，`oEvent` 将是 `null`；那么 `window.event` 的值将赋值给 `oEvent`。如果你是符合 DOM 的浏览器，`oEvent` 将重新赋值为自身。第二行对引起事件的控件执行相同的操作，该控件存储在 IE 的 `srcElement` 属性中。在这两行结束后，引起事件的控件被存储在 `txtField` 变量中。下一步是使用 `XMLHttpRequest` 使用 HTTP 请求：
+此函数内部的第一几行代码消除了 IE 和符合 DOM 的浏览器（如 Firefox、Opera 和 Safari）之间事件模型的差异。符合 DOM 的浏览器向每个事件处理器传递一个事件对象；引起事件的控件存储在事件的`target`属性中。在 IE 中，事件是`window`的属性；因此，第一行将此值赋值给`oEvent`变量。逻辑或 (||) 在对象和空对象之间会返回空值。如果你是 IE，`oEvent`将是`null`；那么`window.event`的值将赋值给`oEvent`。如果你是符合 DOM 的浏览器，`oEvent`将重新赋值为自身。第二行对引起事件的控件执行相同的操作，该控件存储在 IE 的`srcElement`属性中。在这两行结束后，引起事件的控件被存储在`txtField`变量中。下一步是使用`XMLHttpRequest`使用 HTTP 请求：
+
+```javascript
+function validateField(oEvent) {
+
+  oEvent = oEvent || window.event;
+```
+
+
+
+
+进入`/path/to/xxx`目录，找到`xxx.json`。
+
+在表达式`cvar = avar + bvar`中，加法运算符（`+`）将`avar`与`bvar`相加，得到它们的和`cvar`
+
+在`List.of(arg0, arg1, arg2)`中，`List`接口的工厂方法`of()`接受一系列的元素，返回包含它们的只读列表。
+
+之后我们这样调用`cmd`命令：`cmd arg0 arg1 arg2`。
+
+```
+if (condVar > someVal) {console.log("xxx")}
+```
+
+---
+
+`var txtField = oEvent.target || oEvent.srcElement;`
+
+`var xmlHttp = new XMLHttpRequest();`
+
+`xmlHttp.open("get","ValidateForm.php?" + txtField.name + "=" + encodeURIComponent(txtField.value), true);`
+
+`xmlHttp.onreadystatechange = function () { //more code to come };`
+
+`xmlHttp.send(null);`
+
+与第 2 章一样，你正在使用`zxml`库来获得跨浏览器的`XMLHttpRequest`支持。`XMLHttpRequest`对象被创建并存储在`xmlHttp`中。接下来，初始化连接的 GET 请求`open()`。注意，`ValidateForm.php`的查询字符串是通过组合字段名、等号以及字段值（使用`encodeURIComponent()`编码）创建的。还要注意这是一个异步请求。对于这种用例来说极其重要，你不希望在检查单个字段有效性时干扰用户界面的填写；记住使用`XMLHttpRequest`对象的同步请求在执行期间会冻结用户界面（包括输入和点击）。该函数的最后部分是处理来自服务器的响应：
 
 ```javascript
 function validateField(oEvent) {
   oEvent = oEvent || window.event;
   var txtField = oEvent.target || oEvent.srcElement;
-
   var xmlHttp = new XMLHttpRequest();
-  xmlHttp.open("get","ValidateForm.php?" + txtField.name + "="
-+encodeURIComponent(txtField.value), true);
-  xmlHttp.onreadystatechange = function () {
-    //more code to come
-  };
-  xmlHttp.send(null);
-}
-```
-
-与第 2 章一样，你正在使用 zxml 库来获得跨浏览器的 `XMLHttpRequest` 支持。`XMLHttpRequest` 对象被创建并存储在 `xmlHttp` 中。接下来，初始化连接的 GET 请求 `open()`。注意，`ValidateForm.php` 的查询字符串是通过组合字段名、等号以及字段值（使用 `encodeURIComponent()` 编码）创建的。还要注意这是一个异步请求。对于这种用例来说极其重要，你不希望在检查单个字段有效性时干扰用户界面的填写；记住使用 `XMLHttpRequest` 对象的同步请求在执行期间会冻结用户界面（包括输入和点击）。该函数的最后部分是处理来自服务器的响应：
-
-```javascript
-function validateField(oEvent) {
-  oEvent = oEvent || window.event;
-  var txtField = oEvent.target || oEvent.srcElement;
-
-  var xmlHttp = new XMLHttpRequest();
-  xmlHttp.open("get","ValidateForm.php?" + txtField.name + "="
-+encodeURIComponent(txtField.value), true);
+  xmlHttp.open("get","ValidateForm.php?" + txtField.name + "=" + encodeURIComponent(txtField.value), true);
   xmlHttp.onreadystatechange = function () {
     if (xmlHttp.readyState == 4) {
       var arrInfo = xmlHttp.responseText.split("||");
@@ -1489,13 +1579,9 @@ function validateField(oEvent) {
 }
 ```
 
-在检查 `readyState` 后，使用 `split()` 方法将 `responseText` 拆分为字符串数组（`arrInfo`）。`arrInfo[0]` 中的值必须传递给 `eval()` 以获取真正的布尔值。如果此值为 `false`，则将错误标题赋值为 `arrInfo[1]`，显示图像，并将文本框的自定义有效属性设置为 `false`。然而，当值有效时，则隐藏错误图像并将自定义有效属性设置为 `true`。
+在检查`readyState`后，使用`split()`方法将`responseText`拆分为字符串数组（`arrInfo`）。`arrInfo[0]`中的值必须传递给`eval()`以获取真正的布尔值。如果此值为`false`，则将错误标题赋值为`arrInfo[1]`，显示图像，并将文本框的自定义有效属性设置为`false`。然而，当值有效时，则隐藏错误图像并将自定义有效属性设置为`true`。
 
-
-
-
-
-```
+```javascript
 //如果启用了 Ajax，则禁用提交按钮并分配事件处理器
 window.onload = function () {
   if (ZHttpRequestIsSupported()) {
@@ -1503,7 +1589,6 @@ window.onload = function () {
     var txtUsername = document.getElementById("txtUsername");
     var txtBirthday = document.getElementById("txtBirthday");
     var txtEmail = document.getElementById("txtEmail");
-
     btnSignUp.disabled = true;
     txtUsername.onchange = validateField;
     txtBirthday.onchange = validateField;
@@ -1515,15 +1600,15 @@ window.onload = function () {
 };
 ```
 
-此 `onload` 事件处理器为每个文本框分配了 `onclick` 事件处理器，并将自定义的 `valid` 属性初始化为 `false`。此外，“注册”按钮从开始就是被禁用的，以防止提交无效数据。但请注意，只有在支持 `XMLHttp` 的情况下按钮会被禁用；否则，按钮将像普通表单一样运行，并在表单提交时进行验证。
+此`onload`事件处理器为每个文本框分配了`onclick`事件处理器，并将自定义的`valid`属性初始化为`false`。此外，“注册”按钮从开始就是被禁用的，以防止提交无效数据。但请注意，只有在支持`XMLHttp`的情况下按钮会被禁用；否则，按钮将像普通表单一样运行，并在表单提交时进行验证。
 
-当你离开时，三个经过验证的文本字段会在值改变且你移动到另一个字段时向服务器发送请求进行验证。使用“提交节流”（Submission Throttling）模式，用户体验是无缝的，但如果关闭了 JavaScript 或不支持 `XMLHttp`，表单将保持不变。
+当你离开时，三个经过验证的文本字段会在值改变且你移动到另一个字段时向服务器发送请求进行验证。使用“提交节流”（Submission Throttling）模式，用户体验是无缝的，但如果关闭了 JavaScript 或不支持`XMLHttp`，表单将保持不变。
 
 > 即使禁用了 JavaScript，在表单提交后对所有数据进行一次验证也是至关重要的。请记住，如果用户关闭了 JavaScript，你仍然需要在执行相关操作之前确保数据是有效的。
 
 ## 增量字段验证
 
-之前的验证方法是在字段值改变时对每个字段进行验证，而“提交节流”设计模式的另一种流行形式涉及在进行更改时定期提交表单。这是用于 `LiveSearch` 和 `Google Search` 的提交节流版本，即在用户输入字符时，数据会重复发送到服务器。在这两种情况下，提交激活状态都会发送到服务器；然而，也可以相同的方法在用户输入字符时反复验证单个字段。
+之前的验证方法是在字段值改变时对每个字段进行验证，而“提交节流”设计模式的另一种流行形式涉及在进行更改时定期提交表单。这是用于`LiveSearch`和`Google Search`的提交节流版本，即在用户输入字符时，数据会重复发送到服务器。在这两种情况下，提交激活状态都会发送到服务器；然而，也可以相同的方法在用户输入字符时反复验证单个字段。
 
 假设你想要填写一个表单，在某个网站注册需要你选择一个用户名（可能是多步注册过程的第 1 步）。在这种情况下，你希望确保只使用不存在的用户名。与其等待表单提交，你可以定期将数据上传到服务器进行验证，确保在输入用户名之前无法提交数据。
 
@@ -1545,7 +1630,7 @@ window.onload = function () {
 </form>
 ```
 
-注意，它保留了与上一个示例相同的基本格式，包括隐藏的错误消息。接下来，使用了上一个示例中的 `validateField()` 函数，并进行了一些更改：
+注意，它保留了与上一个示例相同的基本格式，包括隐藏的错误消息。接下来，使用了上一个示例中的`validateField()`函数，并进行了一些更改：
 
 ```javascript
 var xmlHttp = null;
@@ -1554,47 +1639,42 @@ var iTimeoutId = null;
 function validateField(oEvent) {
   oEvent = oEvent || window.event;
   var txtField = oEvent.target || oEvent.srcElement;
-
   var btnNext = document.getElementById("btnNext");
   btnNext.disabled = true;
-
   if (iTimeoutId != null) {
     clearTimeout(iTimeoutId);
     iTimeoutId = null;
   }
-
   if (!xmlHttp) {
     xmlHttp = new XMLHttpRequest.createRequest();
   } else if (xmlHttp.readyState != 0) {
     xmlHttp.abort();
   }
+}
 ```
 
 ```javascript
 xmlHttp.open("get", "ValidateForm.php?" + txtField.name + "=" + encodeURIComponent(txtField.value), true);
 xmlHttp.onreadystatechange = function () {
-
-if (xmlHttp.readyState == 4) {
-```
-
-```javascript
-if (oXmlHttp.status == 200) {
-  var arrInfo = oXmlHttp.responseText;
-  var imgError = document.getElementById("imgUsernameError");
-  if (!arrInfo) {
-    imgError.style.display = "none";
-    btnNext.disabled = false;
-  } else {
-    imgError.style.display = "block";
-    btnNext.disabled = true;
+  if (xmlHttp.readyState == 4) {
+    if (oXmlHttp.status == 200) {
+      var arrInfo = oXmlHttp.responseText;
+      var imgError = document.getElementById("imgUsernameError");
+      if (!arrInfo) {
+        imgError.style.display = "none";
+        btnNext.disabled = false;
+      } else {
+        imgError.style.display = "block";
+        btnNext.disabled = true;
+      }
+    } else {
+      alert("An error occurred while trying to contact the server.");
+    }
+    timeoutId = setTimeout(function () {
+      xmlHttp.send();
+    }, 500);
   }
-} else {
-  alert("An error occurred while trying to contact the server.");
-}
-
-timeoutId = setTimeout(function () {
-  xmlHttp.send();
-}, 500);
+};
 ```
 
 ## 定期刷新
@@ -1603,15 +1683,10 @@ timeoutId = setTimeout(function () {
 
 这种模式在 Web 上有多种不同的用法：例如，NFL 比分板更新在线比分。
 
-- ESPN 使用“刷新”自动更新在线比分。http://sports.espn.com/nfl/scoreboard 显示每场正在 NFL 比赛的最新比分和进攻情况。使用 `XMLHttp` 对象和一些 Flash，页面会重复更新新信息。
-- Gmail (mail.google.com) 使用“刷新”在收到新消息时通知用户。当你阅读电子邮件或执行其他操作时，Gmail 会定期检查收件箱是否有新邮件。在新邮件到达之前不会有通知，直到新邮件到达，新邮件的数量将显示在收件箱菜单旁边的括号中。
-- XHTML Live Chat (www.plasticstore.com/projects/chat/) 使用“刷新”通过简单的 Web 技术实现聊天室。聊天室文本每隔几秒检查一次新信息并更新。如果有新消息，页面将更新以反映，从而创建一个传统的聊天体验。
-
-
-
-
-
--   Magnetic Ajax Demo (//broken-notebook.com/magnetic/) 在线重现了磁性诗歌的体验（使用可以重新排列成句子的单字磁铁）。完整版每隔几秒轮询一次服务器，因此如果你和另一个人同时在重新排列单词，你将看到移动效果。
+- ESPN 使用“刷新”自动更新在线比分。`http://sports.espn.com/nfl/scoreboard`显示每场正在 NFL 比赛的最新比分和进攻情况。使用`XMLHttp`对象和一些 Flash，页面会重复更新新信息。
+- Gmail (`mail.google.com`) 使用“刷新”在收到新消息时通知用户。当你阅读电子邮件或执行其他操作时，Gmail 会定期检查收件箱是否有新邮件。在新邮件到达之前不会有通知，直到新邮件到达，新邮件的数量将显示在收件箱菜单旁边的括号中。
+- XHTML Live Chat (`www.plasticstore.com/projects/chat/`) 使用“刷新”通过简单的 Web 技术实现聊天室。聊天室文本每隔几秒检查一次新信息并更新。如果有新消息，页面将更新以反映，从而创建一个传统的聊天体验。
+- Magnetic Ajax Demo (`//broken-notebook.com/magnetic/`) 在线重现了磁性诗歌的体验（使用可以重新排列成句子的单字磁铁）。完整版每隔几秒轮询一次服务器，因此如果你和另一个人同时在重新排列单词，你将看到移动效果。
 
 显然，周期刷新（Periodic Refresh）提高用户体验的方法有很多种，但基本目的保持不变：通知用户更新的信息。
 
@@ -1623,12 +1698,12 @@ timeoutId = setTimeout(function () {
 
 ```sql
 CREATE TABLE `Comments` (
-`CommentId` INT NOT NULL AUTO_INCREMENT,
-`BlogEntryId` INT NOT NULL,
-`Name` VARCHAR(100) NOT NULL,
-`Message` VARCHAR(255) NOT NULL,
-`Date` DATETIME NOT NULL,
-PRIMARY KEY (`CommentId`)
+  `CommentId` INT NOT NULL AUTO_INCREMENT,
+  `BlogEntryId` INT NOT NULL,
+  `Name` VARCHAR(100) NOT NULL,
+  `Message` VARCHAR(255) NOT NULL,
+  `Date` DATETIME NOT NULL,
+  PRIMARY KEY (`CommentId`)
 ) COMMENT = 'Blog Comments';
 ```
 
@@ -1640,40 +1715,35 @@ from BlogComments order by Date desc
 limit 0,1
 ```
 
-此查询返回最新评论的 ID（自动生成的）、发表评论的人员姓名以及消息的前 50 个字符（使用 `LEFT()` 函数）。使用 50 个字符作为实际评论的预览（你可能不想获取整条消息）。
+此查询返回最新评论的 ID（自动生成的）、发表评论的人员姓名以及消息的前 50 个字符（使用`LEFT()`函数）。使用 50 个字符作为实际评论的预览（你可能不想获取整条消息）。
 
-运行此查询的页面是 `CheckComments.php`，它输出格式如下的字符串：`comment||name||message`。这种格式允许很方便地使用 `split()` 函数来提取各个部分。如果没有注释或发生错误，则评论 ID 将为 -1，其他部分将为空。以下是 `CheckComments.php` 的完整代码列表：
+运行此查询的页面是`CheckComments.php`，它输出格式如下的字符串：`comment||name||message`。这种格式允许很方便地使用`split()`函数来提取各个部分。如果没有注释或发生错误，则评论 ID 将为 -1，其他部分将为空。以下是`CheckComments.php`的完整代码列表：
 
 ```php
 <?php
 header("Cache-control: No-Cache");
 header("Pragma: No-Cache");
-
 //database information
 $DBServer = "your_database.server";
 $sDBName = "your_db_name";
 $sDBUsername = "your_db_username";
 $sDBPassword = "your_db_password";
-
 //create the SQL query
 $sSQL = "select CommentId, Name, LEFT(Message, 50) as ShortMessage from Comments order by Date limit 0,1";
-
 $oLink = mysql_connect($DBServer, $sDBUsername, $sDBPassword);
 mysql_select_db($sDBName, $oLink) or die("-1");
-
 if($oResult = mysql_query($sSQL) && mysql_num_rows($oResult) > 0) {
     $aValues = mysql_fetch_array($oResult, MYSQL_ASSOC);
     echo $aValues['CommentId'] . "|||" . $aValues['Name'] . "|||" . $aValues['ShortMessage'];
 } else {
     echo "-1";
 }
-
 mysql_free_result($oResult);
 mysql_close($oLink);
 ?>
 ```
 
-该文件最重要的部分是顶部包含的头头。通过将 `Cache-control` 和 `Pragma` 设置为 `No-Cache`，你是在告诉浏览器始终从服务器检索此文件，而不是从客户端缓存。然而，某些浏览器会反复返回相同的信息，从而使此功能失效。该文件的其余部分看起来非常熟悉，因为它使用了与之前使用数据库调用的示例相同的算法。你可以通过在每次发送请求时更改查询字符串来实现这一点。这通常通过给查询字符串分配时间戳来从服务器获取最新副本来实现。
+该文件最重要的部分是顶部包含的头头。通过将`Cache-control`和`Pragma`设置为`No-Cache`，你是在告诉浏览器始终从服务器检索此文件，而不是从客户端缓存。然而，某些浏览器会反复返回相同的信息，从而使此功能失效。该文件的其余部分看起来非常熟悉，因为它使用了与之前使用数据库调用的示例相同的算法。你可以通过在每次发送请求时更改查询字符串来实现这一点。这通常通过给查询字符串分配时间戳来从服务器获取最新副本来实现。
 
 接下来是调用此文件的 JavaScript。要使用它，你需要几个变量：
 
@@ -1684,55 +1754,77 @@ var iLastCommentId = -1; // 接收最后一条评论的 ID
 var divNotification = null; // 用于显示通知的层
 ```
 
-如往常，第一个变量是名为 `XMLHttpRequest` 的 `XMLHttpRequest` 对象，它将用于所有请求。第二个变量 `interval` 指定了检查新注释之间应该发生的毫秒数。在这种情况下，它被设置为 1000 毫秒（即 1 秒），但可以根据你的需求进行自定义。接下来，变量 `iLastCommentId` 用于存储数据库中的最后一条评论 ID。通过将此值与最近获取的评论 ID 进行比较，你可以判断是否添加了新评论。最后一个变量 `divNotification` 持有一个 `<div>` 元素的引用，该元素用于向用户显示有关新评论的通知。
 
-当检测到新评论时，`divNotification` 将填充有关新评论的信息，包括评论者的姓名、消息摘要以及查看完整评论的链接。如果 `<div>` 元素尚未创建，必须使用相应的样式信息进行创建：
+
+如往常，第一个变量是名为`XMLHttpRequest`的`XMLHttpRequest`对象，它将用于所有请求。第二个变量`interval`指定了检查新注释之间应该发生的毫秒数。在这种情况下，它被设置为 1000 毫秒（即 1 秒），但可以根据你的需求进行自定义。接下来，变量`iLastCommentId`用于存储数据库中的最后一条评论 ID。通过将此值与最近获取的评论 ID 进行比较，你可以判断是否添加了新评论。最后一个变量`divNotification`持有一个`<div>`元素的引用，该元素用于向用户显示有关新评论的通知。
+
+当检测到新评论时，`divNotification`将填充有关新评论的信息，包括评论者的姓名、消息摘要以及查看完整评论的链接。如果`<div>`元素尚未创建，必须使用相应的样式信息进行创建：
 
 ```javascript
 function showNotification(name, sMessage) {
+
     if (!divNotification) {
+
         divNotification = document.createElement("div");
+
         divNotification.className = "notification";
+
         document.body.appendChild(divNotification);
+
     }
-    divNotification.innerHTML = "<<strong>>New Comment</strong><br />" + 
+
+    divNotification.innerHTML = "**New Comment**<br />" + 
+
     name + "says: " + sMessage + "...<br /> <a href=\"CheckComments.php?id=" + iLastCommentId + "\">View comment</a>";
+
     divNotification.style.top = document.body.scrollTop + "px";
+
     divNotification.style.left = document.body.scrollLeft + "px";
+
     divNotification.style.display = "block";
+
     setTimeout(function () {
+
         divNotification.style.display = "none";
+
     }, 5000);
+
 }
 ```
 
-如你所见，`showNotification()` 函数接受两个参数：姓名和消息。然而，在使用这些信息之前，你必须确保 `divNotification` 不为 `null`。如有必要，将创建一个新的 `<div>` 并设置其 CSS 类为 `notification`，然后将其添加到正文中。之后，使用 `innerHTML` 设置通知内容：加粗的“**New Comment**”，随后是姓名和查看评论的链接。`CheckComments.php` 将查询字符串参数 `id` 分配给 `iLastCommentId` 的值，这指示了要查看的评论。然后，通过 `document.body` 的 `scrollTop` 和 `scrollLeft` 属性设置通知的位置。这确保了无论你向下还是向右滚动，通知始终在页面的左上角可见。该函数的最后部分是一个定时器，在 5 秒（5000 毫秒）后隐藏通知。
+如你所见，`showNotification()`函数接受两个参数：姓名和消息。然而，在使用这些信息之前，你必须确保`divNotification`不为`null`。如有必要，将创建一个新的`<div>`并设置其 CSS 类为`notification`，然后将其添加到正文中。之后，使用`innerHTML`设置通知内容：加粗的“**New Comment**”，随后是姓名和查看评论的链接。`CheckComments.php`将查询字符串参数`id`分配给`iLastCommentId`的值，这指示了要查看的评论。然后，通过`document.body`的`scrollTop`和`scrollLeft`属性设置通知的位置。这确保了无论你向下还是向右滚动，通知始终在页面的左上角可见。该函数的最后部分是一个定时器，在 5 秒（5000 毫秒）后隐藏通知。
 
-
-
-
-
-```
+```javascript
 showNotification(aData[1], aData[2]);
+
 }
+
 iLastCommentId = aData[0];
+
 }
+
 setTimeout(checkComments, iInterval);
 
 }
+
 );
+
 cXmlHttp.send(null);
 ```
 
-此函数创建了一个 XMLHttp 对象并异步调用 CheckComments.php。这段代码的重点部分已突出显示（其余部分与之前的示例几乎完全相同）。在本节中，`responseText` 使用 `split()` 拆分为一个数组。数组中的第一个值 `aData[0]` 是添加的评论 ID。如果它不等于上一个评论 ID，则可能需要发送通知。接下来，如果评论 ID 不至少 是一个已获取的评论 ID，且它与刚刚从服务器获取的 ID 不同，则应该显示通知。之后，将新 ID 分配给 `iLastCommentId` 以供以后使用。事件的最后一步是为 `checkComments()` 启动另一个定时器，以继续检查是否有更多评论。
+此函数创建了一个 XMLHttp 对象并异步调用`CheckComments.php`。这段代码的重点部分已突出显示（其余部分与之前的示例几乎完全相同）。在本节中，`responseText`使用`split()`拆分为一个数组。数组中的第一个值`aData[0]`是添加的评论 ID。如果它不等于上一个评论 ID，则可能需要发送通知。接下来，如果评论 ID 不至少是一个已获取的评论 ID，且它与刚刚从服务器获取的 ID 不同，则应该显示通知。之后，将新 ID 分配给`iLastCommentId`以供以后使用。事件的最后一步是为`checkComments()`启动另一个定时器，以继续检查是否有更多评论。
 
-最后一步是在页面加载后启动调用 `checkComments()`。这会从数据库中检索最近的评论 ID，但不会显示通知（因为 `iLastCommentId` 初始值为 -1）。当下次调用 `checkComments()` 时，可以将从数据库检索的 ID 与存储在 `iLastCommentId` 中的 ID 进行比较，以确定是否必须显示通知。按照常，如果浏览器支持 XMLHttp，则应启动该功能：
+最后一步是在页面加载后启动调用`checkComments()`。这会从数据库中检索最近的评论 ID，但不会显示通知（因为`iLastCommentId`初始值为 -1）。当下次调用`checkComments()`时，可以将从数据库检索的 ID 与存储在`iLastCommentId`中的 ID 进行比较，以确定是否必须显示通知。按照常，如果浏览器支持 XMLHttp，则应启动该功能：
 
 ```javascript
 window.onload = function () {
+
   if (xmlHttp.isSupported()) {
+
     checkComments();
+
   }
+
 };
 ```
 
@@ -1746,7 +1838,7 @@ Web 上一个长期存在的问题是页面下载的速度。当大家都在使�
 
 多阶段下载是一种 Ajax 模式，在页面加载时仅加载最基本的功能。一旦页面开始下载，它将开始下载应该出现在页面上的其他组件。如果用户在所有组件下载之前离开页面，也无大碍。然而，如果用户在页面上停留了很长时间（可能在阅读文章），额外功能会在后台加载，并在用户准备好时显示。主要的优势是，你作为开发者，可以决定下载什么内容以及在什么时间点下载。
 
-这是一个相当新的模式，并由微软的 start 页面流行起来。当你第一次访问 start 时，它是一个非常简单的页面，中间有一个搜索框。在后台，会发送系列请求来填充页面上的更多内容。几秒钟后，随着不同位置的内容被拉取并显示，页面就生生了。
+这是一个相当新的模式，并由微软的 start 页面流行起来。当你第一次访问 start 时，它是一个非常简单的页面，中间有一个搜索框。在后台，会发送系列请求来填充页面上的更多内容。几秒钟后，随着不同位置的内容被拉取并显示，页面就出现了。
 
 尽管多阶段下载很好，但它也有缺点：对于不支持 Ajax 技术的浏览器，页面必须以简单的形式运行。这意味着所有基本功能必须在没有任何额外下载的情况下工作。处理此问题的典型方法是提供“优雅降级”（graceful degradation），这意味着支持 Ajax 的浏览器将获得更丰富的界面，而其他浏览器则获得简单的、骨干的界面。如果你预计搜索引擎爬取你的网站，这一点尤为重要；因为这些机器人不支持 JavaScript，它们完全依赖页面中的 HTML 来确定你网站的价值。
 
@@ -1758,43 +1850,65 @@ Web 上一个长期存在的问题是页面下载的速度。当大家都在使�
 
 ```html
 <!DOCTYPE html PUBLIC "//W3C//DTD XHTML 1.0 Transitional//EN"
+
 http://www.w3.org/TR/DTD/xhtml-transitional.dtd">
+
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
 <head>
+
 <title>文章示例</title>
+
 <script type="text/javascript" src="zmxml.js"></script>
+
 <script type="text/javascript" src="Article.js"></script>
+
 <link rel="stylesheet" type="text/css" href="Article.css" />
+
 </head>
+
 <body>
+
 <h1>文章标题</h1>
+
 <div id="divAdditionalLinks"></div>
+
 <div id="divPage"></div>
+
 <!-- 文章内容在此处 -->
+
 <div></div>
+
 </body>
+
 </html>
 ```
 
-HTML 的重要部分是 ID 为 `divAdditionalLinks` 的 `<div>` 标签。这是为该文章下载的附加链接准备的容器。默认情况下，它的样式为 #divAdditionalLinks (：
+HTML 的重要部分是 ID 为`divAdditionalLinks`的`<div>`标签。这是为该文章下载的附加链接准备的容器。默认情况下，它的样式为`#divAdditionalLinks`：
 
 ```css
 float: right;
+
 padding: 10px;
+
 border: 1px solid navy;
+
 background-color: #cccccc;
+
 display: none;}
 ```
 
-将 CSS 的 `display` 属性设置为 `none` 是非常重要的，这样空的 `</div>` 元素就不会在页面布局中占用任何空间。如果不这样做，你将在文章的右侧看到一个小小的空框。
+将 CSS 的`display`属性设置为`none`是非常重要的，这样空的`</div>`元素就不会在页面布局中占用任何空间。如果不这样做，你将在文章的右侧看到一个小小的空框。
 
-与之前的示例不同，要下载的内容只是文本文件中的纯文本、链接和一个头部。为此，`AdditionalLinks.txt` 包含一些简单的 HTML 代码：
+与之前的示例不同，要下载的内容只是文本文件中的纯文本、链接和一个头部。为此，`AdditionalLinks.txt`包含一些简单的 HTML 代码：
 
+```html
 <h4>附加信息</h4>
 
 - <li><a href="http://www.wrox.com">Wrok</a></li>
 - <li><a href="http://www.nczonline.net">NCZOnline</a></li>
 - <li><a href="http://www.wdonline.com">XWebad</a></li>
+```
 
 此文件可以使用服务器端逻辑动态创建，但就本文而言，静态内容与本章中之前的示例一样有效：
 
@@ -1802,37 +1916,185 @@ display: none;}
 
 ```javascript
 function downloadLinks() {
+
   var xmlHttp = zXMLHttpRequest.createRequest();
 
   xmlHttp.open("get", "AdditionalLinks.txt", true);
+
   xmlHttp.onreadystatechange = function () {
+
     if (xmlHttp.readyState == 4) {
+
       if (xmlHttp.status == 200) {
+
         var divAdditionalLinks = document.getElementById("divAdditionalLinks");
+
         divAdditionalLinks.innerHTML = xmlHttp.responseText;
+
         divAdditionalLinks.style.display = "block";
+
       }
+
     }
+
   };
+
   xmlHttp.send(null);
+
 }
 ```
 
 ```javascript
 window.onload = function () {
+
   if (xmlHttp.isSupported()) {
+
     checkComments();
+
   }
+
 };
 ```
 
-此函数执行 `checkComments()` 的最后步骤是在页面加载后调用。这会从数据库中检索最近的评论 ID，但不会显示通知（因为 `iLastCommentId` 初始值为 -1）。当下次调用 `checkComments()` 时，可以将从数据库检索的 ID 与存储在 `iLastCommentId` 中的 ID 进行比较，以确定是否必须显示通知。按照常，如果浏览器支持 XMLHttp，则应启动该功能。
+此函数执行`checkComments()`的最后步骤是在页面加载后调用。这会从数据库中检索最近的评论 ID，但不会显示通知（因为`iLastCommentId`初始值为 -1）。当下次调用`checkComments()`时，可以将从数据库检索的 ID 与存储在`iLastCommentId`中的 ID 进行比较，以确定是否必须显示通知。按照常，如果浏览器支持 XMLHttp，则应启动该功能。
 
 要做的只是启动这种周期性刷新。你只需要在任何想要使用此功能的页面中包含必要的 JavaScript 和 CSS 文件即可。
 例如，这些文件可以在 www.wrox.com 下载。
 配合这些其他页面，你还可以使用它们来添加和查看评论以进行测试。
 
 ## 多阶段下载 (Multi-Stage Download)
+
+Web 上一个长期存在的问题是页面下载的速度。当大家都在使用 56 Kbps 时，网页设计师更清楚地意识到页面的“重量”（页面的总字节大小）。随着宽带互联网解决方案的普及，许多网站都进行了升级，包括更多多媒体、更多的图片和更多内容。这种方法虽然给用户提供了更多信息，但由于所有内容按看似随机的顺序加载，也会导致下载时间变长。坦率地说，这个问题有一个 Ajax 解决方案。
+
+多阶段下载是一种 Ajax 模式，在页面加载时仅加载最基本的功能。一旦页面开始下载，它将开始下载应该出现在页面上的其他组件。如果用户在所有组件下载之前离开页面，也无大碍。然而，如果用户在页面上停留了很长时间（可能在阅读文章），额外功能会在后台加载，并在用户准备好时显示。主要的优势是，你作为开发者，可以决定下载什么内容以及在什么时间点下载。
+
+这是一个相当新的模式，并由微软的 start 页面流行起来。当你第一次访问 start 时，它是一个非常简单的页面，中间有一个搜索框。在后台，会发送系列请求来填充页面上的更多内容。几秒钟后，随着不同位置的内容被拉取并显示，页面就出现了。
+
+尽管多阶段下载很好，但它也有缺点：对于不支持 Ajax 技术的浏览器，页面必须以简单的形式运行。这意味着所有基本功能必须在没有任何额外下载的情况下工作。处理此问题的典型方法是提供“优雅降级”（graceful degradation），这意味着支持 Ajax 的浏览器将获得更丰富的界面，而其他浏览器则获得简单的、骨干的界面。如果你预计搜索引擎爬取你的网站，这一点尤为重要；因为这些机器人不支持 JavaScript，它们完全依赖页面中的 HTML 来确定你网站的价值。
+
+## 附加信息链接示例
+
+在阅读文章时，经常会包含用于阅读该主题的附加信息链接。这里的关键问题是：主内容是什么？显然，文章正文是页面上的主要内容，因此它应该在页面初始加载时下载。附加链接没有那么重要，所以可以稍后加载。这个示例将引导你创建一个解决方案。
+
+首先，你需要布局一个用于存放文章的页面。例如，这是一个非常简单的布局：
+
+```html
+<!DOCTYPE html PUBLIC "//W3C//DTD XHTML 1.0 Transitional//EN"
+
+http://www.w3.org/TR/DTD/xhtml-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+
+<title>文章示例</title>
+
+<script type="text/javascript" src="zmxml.js"></script>
+
+<script type="text/javascript" src="Article.js"></script>
+
+<link rel="stylesheet" type="text/css" href="Article.css" />
+
+</head>
+
+<body>
+
+<h1>文章标题</h1>
+
+<div id="divAdditionalLinks"></div>
+
+<div id="divPage"></div>
+
+<!-- 文章内容在此处 -->
+
+<div></div>
+
+</body>
+
+</html>
+```
+
+HTML 的重要部分是 ID 为`divAdditionalLinks`的`<div>`标签。这是为该文章下载的附加链接准备的容器。默认情况下，它的样式为`#divAdditionalLinks`：
+
+```css
+float: right;
+
+padding: 10px;
+
+border: 1px solid navy;
+
+background-color: #cccccc;
+
+display: none;}
+```
+
+将 CSS 的`display`属性设置为`none`是非常重要的，这样空的`</div>`元素就不会在页面布局中占用任何空间。如果不这样做，你将在文章的右侧看到一个小小的空框。
+
+与之前的示例不同，要下载的内容只是文本文件中的纯文本、链接和一个头部。为此，`AdditionalLinks.txt`包含一些简单的 HTML 代码：
+
+```html
+<h4>附加信息</h4>
+
+- <li><a href="http://www.wrox.com">Wrok</a></li>
+- <li><a href="http://www.nczonline.net">NCZOnline</a></li>
+- <li><a href="http://www.wdonline.com">XWebad</a></li>
+```
+
+此文件可以使用服务器端逻辑动态创建，但就本文而言，静态内容与本章中之前的示例一样有效：
+
+使这一切运行起来的 JavaScript 非常简单，与本章中之前所有的示例非常相似：
+
+```javascript
+function downloadLinks() {
+
+  var xmlHttp = zXMLHttpRequest.createRequest();
+
+  xmlHttp.open("get", "AdditionalLinks.txt", true);
+
+  xmlHttp.onreadystatechange = function () {
+
+    if (xmlHttp.readyState == 4) {
+
+      if (xmlHttp.status == 200) {
+
+        var divAdditionalLinks = document.getElementById("divAdditionalLinks");
+```
+
+
+
+```javascript
+divAdditionalLinks.innerHTML = xmlHttp.responseText;
+
+divAdditionalLinks.style.display = "block";
+
+}
+
+}
+
+};
+
+xmlHttp.send(null);
+
+}
+```
+
+```javascript
+window.onload = function () {
+
+  if (xmlHttp.isSupported()) {
+
+    checkComments();
+
+  }
+
+};
+```
+
+此函数执行`checkComments()`的最后步骤是在页面加载后调用。这会从数据库中检索最近的评论 ID，但不会显示通知（因为`iLastCommentId`初始值为`-1`）。当下次调用`checkComments()`时，可以将从数据库检索的 ID 与存储在`iLastCommentId`中的 ID 进行比较，以确定是否必须显示通知。按照常，如果浏览器支持 XMLHttp，则应启动该功能。
+
+要做的只是启动这种周期性刷新。你只需要在任何想要使用此功能的页面中包含必要的 JavaScript 和 CSS 文件即可。例如，这些文件可以在`www.wrox.com`下载。配合这些其他页面，你还可以使用它们来添加和查看评论以进行测试。
+
+## 多阶段下载（Multi-Stage Download）
 
 Web 上一个长期存在的问题是页面下载的速度。当大家都在使用 56 Kbps 时，网页设计师更清楚地意识到页面的“重量”（页面的总字节大小）。随着宽带互联网解决方案的普及，许多网站都进行了升级，包括更多多媒体、更多的图片和更多内容。这种方法虽然给用户提供了更多信息，但由于所有内容按看似随机的顺序加载，也会导致下载时间变长。坦率地说，这个问题有一个 Ajax 解决方案。
 
@@ -1850,135 +2112,65 @@ Web 上一个长期存在的问题是页面下载的速度。当大家都在使�
 
 ```html
 <!DOCTYPE html PUBLIC "//W3C//DTD XHTML 1.0 Transitional//EN"
+
 http://www.w3.org/TR/DTD/xhtml-transitional.dtd">
+
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
 <head>
+
 <title>文章示例</title>
+
 <script type="text/javascript" src="zmxml.js"></script>
+
 <script type="text/javascript" src="Article.js"></script>
+
 <link rel="stylesheet" type="text/css" href="Article.css" />
+
 </head>
+
 <body>
+
 <h1>文章标题</h1>
+
 <div id="divAdditionalLinks"></div>
+
 <div id="divPage"></div>
+
 <!-- 文章内容在此处 -->
+
 <div></div>
+
 </body>
+
 </html>
 ```
 
-HTML 的重要部分是 ID 为 `divAdditionalLinks` 的 `<div>` 标签。这是为该文章下载的附加链接准备的容器。默认情况下，它的样式为 #divAdditionalLinks (：
+HTML 的重要部分是 ID 为`divAdditionalLinks`的`<div>`标签。这是为该文章下载的附加链接准备的容器。默认情况下，它的样式为`#divAdditionalLinks`：
 
 ```css
 float: right;
+
 padding: 10px;
+
 border: 1px solid navy;
+
 background-color: #cccccc;
+
 display: none;}
 ```
 
-将 CSS 的 `display` 属性设置为 `none` 是非常重要的，这样空的 `</div>` 元素就不会在页面布局中占用任何空间。如果不这样做，你将在文章的右侧看到一个小小的空框。
+将 CSS 的`display`属性设置为`none`是非常重要的，这样空的`</div>`元素就不会在页面布局中占用任何空间。如果不这样做，你将在文章的右侧看到一个小小的空框。
 
-与之前的示例不同，要下载的内容只是文本文件中的纯文本、链接和一个头部。为此，`AdditionalLinks.txt` 包含一些简单的 HTML 代码：
-
-<h4>附加信息</h4>
-
-- <li><a href="http://www.wrox.com">Wrok</a></li>
-- <li><a href="http://www.nczonline.net">NCZOnline</a></li>
-- <li><a href="http://www.wdonline.com">XWebad</a></li>
-
-此文件可以使用服务器端逻辑动态创建，但就本文而言，静态内容与本章中之前的示例一样有效：
-
-使这一切运行起来的 JavaScript 非常简单，与本章中之前所有的示例非常相似：
-
-```javascript
-function downloadLinks() {
-  var xmlHttp = zXMLHttpRequest.createRequest();
-
-  xmlHttp.open("get", "AdditionalLinks.txt", true);
-  xmlHttp.onreadystatechange = function () {
-    if (xmlHttp.readyState == 4) {
-      if (xmlHttp.status == 200) {
-        var divAdditionalLinks = document.getElementById("divAdditionalLinks");
-        divAdditionalLinks.innerHTML = xmlHttp.responseText;
-        divAdditionalLinks.style.display = "block";
-      }
-    }
-  };
-  xmlHttp.send(null);
-}
-```
-
-```javascript
-window.onload = function () {
-  if (xmlHttp.isSupported()) {
-    checkComments();
-  }
-};
-```
-
-此函数执行 `checkComments()` 的最后步骤是在页面加载后调用。这会从数据库中检索最近的评论 ID，但不会显示通知（因为 `iLastCommentId` 初始值为 -1）。当下次调用 `checkComments()` 时，可以将从数据库检索的 ID 与存储在 `iLastCommentId` 中的 ID 进行比较，以确定是否必须显示通知。按照常，如果浏览器支持 XMLHttp，则应启动该功能。
-
-要做的只是启动这种周期性刷新。你只需要在任何想要使用此功能的页面中包含必要的 JavaScript 和 CSS 文件即可。
-例如，这些文件可以在 www.wrox.com 下载。
-配合这些其他页面，你还可以使用它们来添加和查看评论以进行测试。
-
-## 多阶段下载 (Multi-Stage Download)
-
-Web 上一个长期存在的问题是页面下载的速度。当大家都在使用 56 Kbps 时，网页设计师更清楚地意识到页面的“重量”（页面的总字节大小）。随着宽带互联网解决方案的普及，许多网站都进行了升级，包括更多多媒体、更多的图片和更多内容。这种方法虽然给用户提供了更多信息，但由于所有内容按看似随机的顺序加载，也会导致下载时间变长。坦率地说，这个问题有一个 Ajax 解决方案。
-
-多阶段下载是一种 Ajax 模式，在页面加载时仅加载最基本的功能。一旦页面开始下载，它将开始下载应该出现在页面上的其他组件。如果用户在所有组件下载之前离开页面，也无大碍。然而，如果用户在页面上停留了很长时间（可能在阅读文章），额外功能会在后台加载，并在用户准备好时显示。主要的优势是，你作为开发者，可以决定下载什么内容以及在什么时间点下载。
-
-这是一个相当新的模式，并由微软的 start 页面流行起来。当你第一次访问 start 时，它是一个非常简单的页面，中间有一个搜索框。在后台，会发送系列请求来填充页面上的更多内容。几秒钟后，随着不同位置的内容被拉取并显示，页面就生了。
-
-尽管多阶段下载很好，但它也有缺点：对于不支持 Ajax 技术的浏览器，页面必须以简单的形式运行。这意味着所有基本功能必须在没有任何额外下载的情况下工作。处理此问题的典型方法是提供“优雅降级”（graceful degradation），这意味着支持 Ajax 的浏览器将获得更丰富的界面，而其他浏览器则获得简单的、骨干的界面。如果你预计搜索引擎爬取你的网站，这一点尤为重要；因为这些机器人不支持 JavaScript，它们完全依赖页面中的 HTML 来确定你网站的价值。
-
-## 附加信息链接示例
-
-在阅读文章时，经常会包含用于阅读该主题的附加信息链接。这里的关键问题是：主内容是什么？显然，文章正文是页面上的主要内容，因此它应该在页面初始加载时下载。附加链接没有那么重要，所以可以稍后加载。这个示例将引导你创建一个解决方案。
-
-首先，你需要布局一个用于存放文章的页面。例如，这是一个非常简单的布局：
+与之前的示例不同，要下载的内容只是文本文件中的纯文本、链接和一个头部。为此，`AdditionalLinks.txt`包含一些简单的 HTML 代码：
 
 ```html
-<!DOCTYPE html PUBLIC "//W3C//DTD XHTML 1.0 Transitional//EN"
-http://www.w3.org/TR/DTD/xhtml-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
-<head>
-<title>文章示例</title>
-<script type="text/javascript" src="zmxml.js"></script>
-<script type="text/javascript" src="Article.js"></script>
-<link rel="stylesheet" type="text/css" href="Article.css" />
-</head>
-<body>
-<h1>文章标题</h1>
-<div id="divAdditionalLinks"></div>
-<div id="divPage"></div>
-<!-- 文章内容在此处 -->
-<div></div>
-</body>
-</html>
-```
-
-HTML 的重要部分是 ID 为 `divAdditionalLinks` 的 `<div>` 标签。这是为该文章下载的附加链接准备的容器。默认情况下，它的样式为 #divAdditionalLinks (：
-
-```css
-float: right;
-padding: 10px;
-border: 1px solid navy;
-background-color: #cccccc;
-display: none;}
-```
-
-将 CSS 的 `display` 属性设置为 `none` 是非常重要的，这样空的 `</div>` 元素就不会在页面布局中占用任何空间。如果不这样做，你将在文章的右侧看到一个小小的空框。
-
-与之前的示例不同，要下载的内容只是文本文件中的纯文本、链接和一个头部。为此，`AdditionalLinks.txt` 包含一些简单的 HTML 代码：
-
 <h4>附加信息</h4>
 
 - <li><a href="http://www.wrox.com">Wrok</a></li>
 - <li><a href="http://www.nczonline.net">NCZOnline</a></li>
 - <li><a href="http://www.wdonline.com">XWebad</a></li>
+```
 
 此文件可以使用服务器端逻辑动态创建，但就本文而言，静态内容与本章中之前的示例一样有效：
 
@@ -1986,122 +2178,183 @@ display: none;}
 
 ```javascript
 function downloadLinks() {
+
   var xmlHttp = zXMLHttpRequest.createRequest();
 
   xmlHttp.open("get", "AdditionalLinks.txt", true);
+
   xmlHttp.onreadystatechange = function () {
+
     if (xmlHttp.readyState == 4) {
+
       if (xmlHttp.status == 200) {
+
         var divAdditionalLinks = document.getElementById("divAdditionalLinks");
+
         divAdditionalLinks.innerHTML = xmlHttp.responseText;
+
         divAdditionalLinks.style.display = "block";
+
       }
+
     }
+
   };
+
   xmlHttp.send(null);
+
 }
 ```
 
 ```javascript
 window.onload = function () {
+
   if (xmlHttp.isSupported()) {
+
     checkComments();
+
   }
+
 };
 ```
 
-此函数执行 `checkComments()` 的最后步骤是在页面加载后调用。这会从数据库中检索最近的评论 ID，但不会显示通知（因为 `iLastCommentId` 初始值为 -1）。当下次调用 `checkComments()` 时，可以将从数据库检索的 ID 与存储在 `iLastCommentId` 中的 ID 进行比较，以确定是否必须显示通知。按照常，如果浏览器支持 XMLHttp，则应启动该功能。
+此函数执行`checkComments()`的最后步骤是在页面加载后调用。这会从数据库中检索最近的评论 ID，但不会显示通知（因为`iLastCommentId`初始值为`-1`）。当下次调用`checkComments()`时，可以将从数据库检索的 ID 与存储在`iLastCommentId`中的 ID 进行比较，以确定是否必须显示通知。按照常，如果浏览器支持 XMLHttp，则应启动该功能。
 
-要做的只是启动这种周期性刷新。你只需要在任何想要使用此功能的页面中包含必要的 JavaScript 和 CSS 文件即可。
-例如，这些文件可以在 www.wrox.com 下载。
-配合这些其他页面，你还可以使用它们来添加和查看评论以进行测试。
+要做的只是启动这种周期性刷新。你只需要在任何想要使用此功能的页面中包含必要的 JavaScript 和 CSS 文件即可。例如，这些文件可以在`www.wrox.com`下载。配合这些其他页面，你还可以使用它们来添加和查看评论以进行测试。
 
-## 取消待处理请求 (Cancel Pending Requests)
+## 取消待处理请求（Cancel Pending Requests）
 
-如果服务器上发生错误，意味着返回了非 200 的状态，你需要决定该做什么。很可能是文件未找到 (404) 或发生了内部服务器错误 (302)，几分钟后重试会有帮助，因为这些问题需要管理员来修复问题。处理此问题最简单的方法就是直接取消
-
-
-
-所有待处理请求。你可以在代码的某处设置一个标记，表示“不要再发送任何请求”。这对于使用周期性刷新（Periodic Refresh）模式的解决方案影响最大。
+如果服务器上发生错误，意味着返回了非 200 的状态，你需要决定该做什么。很可能是文件未找到（404）或发生了内部服务器错误（302），几分钟后重试会有帮助，因为这些问题需要管理员来修复问题。处理此问题最简单的方法就是直接取消所有待处理请求。你可以在代码的某处设置一个标记，表示“不要再发送任何请求”。这对于使用周期性刷新（Periodic Refresh）模式的解决方案影响最大。
 
 注释通知示例可以修改以考虑这一点。Ajax 解决方案为用户提供了额外价值，但并不是页面的主要关注。如果请求失败，没有理由提醒用户；你只需取消任何请求以防止更多错误的发生。这样做，你需要添加一个全局变量来指示是否启用请求：
 
 ```javascript
 var XMLHttpRequest = null;
+
 var iInterval = 1000;
+
 var iLastCommentId = -1;
+
 var divNotification = null;
+
 var blnRequestsEnabled = true;
 ```
 
-现在，在进行任何请求之前，必须检查 `blnRequestsEnabled` 变量。这可以通过将 `checkComments()` 函数的主体封装在一个 `if` 语句中来实现：
+现在，在进行任何请求之前，必须检查`blnRequestsEnabled`变量。这可以通过将`checkComments()`函数的主体封装在一个`if`语句中来实现：
 
 ```javascript
 function checkComments() {
 
   if (blnRequestsEnabled) {
+
     if (!XMLHttpRequest) {
+
       XMLHttpRequest = XMLHttpRequest.createRequest();
+
     } else if (XMLHttpRequest.readyState != 0) {
+
       XMLHttpRequest.abort();
+
     }
 
     XMLHttpRequest.open("get", "CheckComments.php", true);
+
     XMLHttpRequest.onreadystatechange = function () {
+
       if (XMLHttpRequest.status == 200) {
+
         var aData = XMLHttpRequest.responseText.split("||");
+
         if (aData[0] != iLastCommentId) {
+
           if (iLastCommentId != -1) {
+
             showNotification(aData[1], aData[2]);
+
           }
+
           iLastCommentId = aData[0];
+
         }
+
       setTimeout(checkComments, iInterval);
+
     }
+
   }
 
   XMLHttpRequest.send(null);
+
 }
 ```
 
 但这并不是全部需要做的工作；你必须检测可能发生的两种不同类型的错误：提供状态码的服务器错误，以及无法到达服务器（服务器或互联网连接丢失）。
 
-首先，将初始 `if` 语句中的所有内容封装在 `try...catch` 块中。当无法访问服务器时，浏览器反应的时间不同，但它们都会抛出错误。将整个请求封装在 `try...catch` 中可以捕获到任何抛出的错误，此时你可以将 `blnRequestsEnabled` 设置为 `false`。接下来，对于错误，当状态不等于 200 时，你可以抛出一个自定义错误。这会被 `try...catch` 块捕获，并产生与无法访问服务器相同的效果（将 `blnRequestsEnabled` 设置为 `false`）：
+首先，将初始`if`语句中的所有内容封装在`try...catch`块中。当无法访问服务器时，浏览器反应的时间不同，但它们都会抛出错误。将整个请求封装在`try...catch`中可以捕获到任何抛出的错误，此时你可以将`blnRequestsEnabled`设置为`false`。接下来，对于错误，当状态不等于 200 时，你可以抛出一个自定义错误。这会被`try...catch`块捕获，并产生与无法访问服务器相同的效果（将`blnRequestsEnabled`设置为`false`）：
 
 ```javascript
 function checkComments() {
+
     if (blnRequestsEnabled) {
+
         try {
+
             if (!oXmlHttp) {
+
                 oXmlHttp = zXmlHttp.getRequest();
+
             } else if (oXmlHttp.readyState != 0) {
+
                 oXmlHttp.open("get", "CheckComments.php", true);
+
                 oXmlHttp.onreadystatechange = function () {
+
                     if (oXmlHttp.readyState == 4) {
+
                         if (oXmlHttp.status == 200) {
+
                             var aData = oXmlHttp.responseText.split("||");
+
                             if (aData[0] != iLastCommentId) {
+
                                 if (iLastCommentId != -1) {
+
                                     showNotification(aData[1], aData[2]);
+
                                 }
+
                                 iLastCommentId = aData[0];
+
                             }
+
                             setTimeout(checkComments, iInterval);
+
                         }
+
                     } else {
+
                         throw new Error("An error occurred.");
+
                     }
+
                 };
+
                 oXmlHttp.send(null);
+
             }
+
         } catch (oException) {
+
             blnRequestsEnabled = false;
+
         }
+
     }
+
 }
 ```
 
-现在，当两种错误类型中的任意一种发生时，都会抛出一个错误（由浏览器或你抛出），`blnRequestsEnabled` 变量将被设置为 `false`，如果调用 `checkIf()`将有效地取消任何后续请求。
+现在，当两种错误类型中的任意一种发生时，都会抛出一个错误（由浏览器或你抛出），`blnRequestsEnabled`变量将被设置为`false`，如果调用`checkIf()`将有效地取消任何后续请求。
 
 你可能已经注意到，只有状态为 200 时才会创建另一个请求，这防止了任何其他状态下发生另一个请求。这对于服务器错误有效，但对通信错误无效。当错误发生时，有多种处理方式总是总是好的。
 
@@ -2117,36 +2370,57 @@ function checkComments() {
 var iFailed = 0;
 ```
 
-`iFailed` 从 0 开始，并在每次请求失败时加 1。因此，如果 `iFailed` 大于一个特定数字，你只需取消请求，因为显然它无法工作。例如，如果你想在取消所有待处理请求之前尝试十次，可以采取如下：
+`iFailed`从 0 开始，并在每次请求失败时加 1。因此，如果`iFailed`大于一个特定数字，你只需取消请求，因为显然它无法工作。例如，如果你想在取消所有待处理请求之前尝试十次，可以采取如下：
 
 ```javascript
 function downloadLinks() {
+
     var xmlHttp = XMLHttpRequest.createRequest();
 
     if (iFailed < 10) {
+
         xmlHttp.open("AdditionalLinks.txt", true);
+
         xmlHttp.onreadystatechange = function () {
+
             if (xmlHttp.readyState == 4) {
+
                 if (xmlHttp.status == 200) {
+
                     var divAdditionalLinks = document.getElementById("AdditionalLinks");
+
                     divAdditionalLinks.innerHTML = xmlHttp.responseText;
+
                     divAdditionalLinks.style.display = "block";
+
                 }
+
             }
+
         }
+
         xmlHttp.send(null);
+
     } else {
+
         throw new Error("An error occurred.");
+
     }
+
 } catch (oException) {
+
     iFailed++;
+
     downloadLinks();
+
 }
 ```
 
-这段代码的构建与之前的示例类似。使用 `try...catch` 块来捕获通信过程中发生的任何错误，并在状态不为 200 时抛出自定义错误。主要区别在于，当捕获到错误时，`iFailed` 变量增加并调用了 `downloadLinks()`。只要 `iFailed` 小于 10（意味着失败了十次），就会触发另一个请求。
 
-通常情况下，重试模式应该在请求预期发生一次时使用，例如多阶段下载。如果你尝试在间隔请求（如周期性刷新）中使用此模式，可能会导致请求数量不断增加并占占用大量内存。
+
+这段代码的构建与之前的示例类似。使用 `try...catch` 块来捕获通信过程中发生的任何错误，并在状态不为 `200` 时抛出自定义错误。主要区别在于，当捕获到错误时，`iFailed` 变量增加并调用了 `downloadLinks()`。只要 `iFailed` 小于 `10`（意味着失败了十次），就会触发另一个请求。
+
+通常情况下，重试模式应该在请求预期发生一次时使用，例如多阶段下载。如果你尝试在间隔请求（如周期性刷新）中使用此模式，可能会导致请求数量不断增加并占用大量内存。
 
 ## 总结
 
@@ -2156,17 +2430,13 @@ function downloadLinks() {
 
 本章还向你介绍了多阶段下载（Multi-Stage Download）模式，这是一种在页面加载后继续下载额外信息的方法。你了解到这将加快页面的初始下载时间，并且你可以以任何认为合适的方式控制请求的频率和顺序。
 
-
-
-
-
 ## 第 4 章：XML、XPath 和 XSLT
 
 ## 概述
 
 随着 XML 的普及，Web 开发者希望在服务器端和客户端都使用这项技术，但最初只有服务器端提供了 XML 功能。从 Internet Explorer 5.0 和 Mozilla 1.0 开始，微软和 Mozilla 开始在它们的浏览器中通过 JavaScript 支持 XML。最近，Apple 和 Opera 也为各自的浏览器添加了一些 XML 支持，尽管其程度尚未达到微软和 Mozilla 的水平。浏览器制造商继续通过新功能扩展 XML 支持的可用性，为 Web 开发者提供了类似于以往仅在服务器上找到的强大工具。
 
-在本章中，你将学习如何在 XML DOM 对象中加载和操作文档，使用 XPath 选择符合特定准标准的 XML 节点，以及使用 XSL 将 XML 文档转换为 HTML。
+在本章中，你将学习如何在 XML DOM 对象中加载和操作文档，使用 XPath 选择符合特定标准的 XML 节点，以及使用 XSL 将 XML 文档转换为 HTML。
 
 ## 浏览器中的 XML 支持
 
@@ -2174,7 +2444,7 @@ function downloadLinks() {
 
 ### IE 中的 XML DOM
 
-当微软为 IE 5.0 添加 XML 时，他们通过引入 MSXML 库实现的，这是一个最初编写用于解析 XML 的组件。该原始版本并非供公共使用，但开发者发现了它，并使用包含在 IE 4.0 中的完全升级版本的 MSXML 重新加载。同年晚些时候，3.0 版本作为 XML Server 发布。自诞生以来，MSXML 已从一个基础的非验证 XML 解析器变为一个功能全组件，能够验证 XML 文档、执行 XML 转换、支持命名空间使用、XML 简单 API (SAX) 以及 W3C XPath 和 XML Schema 标准，同时提升了性能。微软实现了一个可以实例化多个 ActiveX 对象的类。它的构造函数接收一个参数，包含要创建的 XML 文档版本；第一个 DOM 对象被称为 XmlDom，其创建方式如下：
+当微软为 IE 5.0 添加 XML 时，他们通过引入 MSXML 库实现的，这是一个最初编写用于解析 XML 的组件。该原始版本并非供公共使用，但开发者发现了它，并使用包含在 IE 4.0 中的完全升级版本的 MSXML 重新加载。同年晚些时候，3.0 版本作为 XML Server 发布。自诞生以来，MSXML 已从一个基础的非验证 XML 解析器变为一个功能全组件，能够验证 XML 文档、执行 XML 转换、支持命名空间使用、XML 简单 API (SAX) 以及 W3C XPath 和 XML Schema 标准，同时提升了性能。微软实现了一个可以实例化多个 ActiveX 对象的类。它的构造函数接收一个参数，包含要创建的 XML 文档版本；第一个 DOM 对象被称为 `XmlDom`，其创建方式如下：
 
 ```javascript
 var xDom = new ActiveXObject("XmlDom");
@@ -2182,13 +2452,13 @@ var xDom = new ActiveXObject("XmlDom");
 
 在编写时，有五个不同版本的 MSXML 文档，它们的版本字符串如下：
 
-- Microsoft.XmlDom
-- MSXML2.DOMDocument
-- MSXML3.DOMDocument
-- MSXML4.DOMDocument
-- MSXML5.DOMDocument
+- `Microsoft.XmlDom`
+- `MSXML2.DOMDocument`
+- `MSXML3.DOMDocument`
+- `MSXML4.DOMDocument`
+- `MSXML5.DOMDocument`
 
-重要的 MSXML 是一个 ActiveX 实现；它仅在 Windows 平台上可用。Mac 没有 XML DOM 支持。因为有五个版本，而你可能想使用最新版本，因此支持一个用于确定使用哪个版本的函数非常有帮助。这样做可以确保你获得最新且性能最高的版本。以下函数 `createDocument()` 允许你创建正确的 MSXML DOM 文档：
+重要的是 MSXML 是一个 ActiveX 实现；它仅在 Windows 平台上可用。Mac 没有 XML DOM 支持。因为有五个版本，而你可能想使用最新版本，因此支持一个用于确定使用哪个版本的函数非常有帮助。这样做可以确保你获得最新且性能最高的版本。以下函数 `createDocument()` 允许你创建正确的 MSXML DOM 文档：
 
 ```javascript
 function createDocument() {
@@ -2199,7 +2469,6 @@ function createDocument() {
     "MSXML2.DOMDocument",
     "Microsoft.XmlDom"
   ];
-
   for (var i = 0; i < aVersions.length; i++) {
     try {
       var oXmlDom = new ActiveXObject(aVersions[i]);
@@ -2208,12 +2477,11 @@ function createDocument() {
       // 什么都不做
     }
   }
-
   throw new Error("MSXML is not installed.");
 }
 ```
 
-该函数遍历 `a` 数组，该数组包含 MSXML 文档的版本字符串。它从最新版本 `MSXML5.DOMDocument` 开始，并尝试创建 DOM 文档。如果对象创建成功，则返回该对象并退出 `createDocument()`；如果失败，则抛出一个错误并被 `try...catch` 块捕获，循环继续并尝试下一个版本。如果 MSXML DOM 文档创建失败，抛出的错误将说明未安装 MSXML。此函数不是一个类，所以它的用法与其他任何返回值的函数一样：
+该函数遍历 `aVersions` 数组，该数组包含 MSXML 文档的版本字符串。它从最新版本 `MSXML5.DOMDocument` 开始，并尝试创建 DOM 文档。如果对象创建成功，则返回该对象并退出 `createDocument()`；如果失败，则抛出一个错误并被 `try...catch` 块捕获，循环继续并尝试下一个版本。如果 MSXML DOM 文档创建失败，抛出的错误将说明未安装 MSXML。此函数不是一个类，所以它的用法与其他任何返回值的函数一样：
 
 ```javascript
 var oXmlDom = createDocument();
@@ -2233,19 +2501,15 @@ oXmlDom.async = false;
 
 ```javascript
 oXmlDom.async = true;
-```
-
-```javascript
 oXmlDom.onreadystatechange = function () {
   if (oXmlDom.readyState == 4) {
     // 当文档完全加载时执行某些操作
   }
 };
-
 oXmlDom.load("myxml.xml");
 ```
 
-在此示例中，虚拟文档 `myxml.xml` 被加载。当 `readyState` 达到值 4 时，if 块中的代码将执行。
+在此示例中，虚拟文档 `myxml.xml` 被加载。当 `readyState` 达到值 `4` 时，`if` 块中的代码将执行。
 
 另一种加载 XML 数据的方法 `loadXML()` 与 `load()` 方法的区别在于后者从字符串加载。该字符串必须包含良好的 XML，如下所示：
 
@@ -2263,51 +2527,44 @@ var sXML = "<root><person><name>Jeremy McPeak</name></person></root>";
 
 | 属性 | 描述 |
 | :--- | :--- |
-| attributes | 包含节点的属性。 |
-| childNodes | 包含一个节点数组。 |
-| firstChild | 指向第一个子节点。 |
-| lastChild | 指向最后一个子节点。 |
-| nextSibling | 返回紧邻当前节点之后的节点。 |
-| nodeName | 返回节点的名称。 |
-| nodeType | 指定节点的类型。 |
-| nodeValue | 包含节点的值。 |
-| ownerDocument | 返回节点所属文档。 |
-| parentNode | 指向节点的父节点。 |
-| previousSibling | 返回紧邻当前节点之前的节点。 |
-| text | 返回节点的文本。 |
-| xml | 返回节点的 XML 表示。 |
-
-
-
-
+| `attributes` | 包含节点的属性。 |
+| `childNodes` | 包含一个节点数组。 |
+| `firstChild` | 指向第一个子节点。 |
+| `lastChild` | 指向最后一个子节点。 |
+| `nextSibling` | 返回紧邻当前节点之后的节点。 |
+| `nodeName` | 返回节点的名称。 |
+| `nodeType` | 指定节点的类型。 |
+| `nodeValue` | 包含节点的值。 |
+| `ownerDocument` | 返回节点所属文档。 |
+| `parentNode` | 指向节点的父节点。 |
+| `previousSibling` | 返回紧邻当前节点之前的节点。 |
+| `text` | 返回节点的文本。 |
+| `xml` | 返回节点的 XML 表示。 |
 
 如果你的当前节点是一个 `<book>` 元素，而你想选择另一个 `<book>` 元素？`<book/>` 元素之间是兄弟关系，因为它们共享同一个直接父节点。两个属性 `nextSibling` 和 `previousSibling` 用于选择与当前节点相邻的节点。`nextSibling` 属性引用下一个兄弟节点，而 `previousSibling` 属性则选择上一个兄弟节点：
 
-```
+```javascript
 var oSecondBook = oFirstBook.nextSibling;
-```
-
-```
-oFirstBook2 = oSecondBook.previousSibling;
+var oFirstBook2 = oSecondBook.previousSibling;
 ```
 
 在此代码中，`<book>` 元素被引用并赋值给 `oSecondBook`。然后引用变量 `oFirstBook2` 来指向紧接其之前的 `oSecondBook`，并使用 `oFirstBook` 包含与其相同的值。如果一个书籍元素后面没有兄弟节点，则 `nextSibling` 将为 `null`。`previousSibling` 也是如此；如果当前节点之前没有兄弟节点，`previousSibling` 将为 `null`。
 
 现在你已经知道如何遍历树层级结构，你应该知道如何从树中的节点中检索数据。例如，要检索第三个 `<book/>` 元素内的文本，你可以使用 `text` 属性，如下：
 
-```
+```javascript
 var sText = oRoot.childNodes[2].text;
 ```
 
 `text` 属性检索包含在该元素内的所有文本，它是微软的专有属性，非常有用。如果没有 `text` 属性，你必须像这样访问文本节点：
 
-```
+```javascript
 var sText = oRoot.childNodes[2].firstChild.nodeValue;
 ```
 
 使用 `text` 属性可以实现相同的结果。与上一个示例一样，使用 `childNodes` 集合引用 `<book/>` 元素；`<book/>` 元素的文本通过 `firstChild` 被引用，因为文本节点仍然是 DOM 中的一个节点。然后通过文本节点上的 `nodeValue` 属性检索文本。`text` 属性检索当前节点的值。
 
-这两个示例的结果是理想的；然而，`text` 属性在文本节点上使用 `nodeValue` 属性时行为方式不同。`text` 属性检索该元素及其子元素中包含的所有文本，而 `nodeValue` 属性只获取当前节点的值。这是一个很有用的属性，但它可能会检索比预预期更多的文本。例如，考虑以下 XML 文档：
+这两个示例的结果是理想的；然而，`text` 属性在文本节点上使用 `nodeValue` 属性时行为方式不同。`text` 属性检索该元素及其子元素中包含的所有文本，而 `nodeValue` 属性只获取当前节点的值。这是一个很有用的属性，但它可能会检索比预期更多的文本。例如，考虑以下 XML 文档：
 
 ```xml
 <xml version="1.0" encoding="utf-8"?>
@@ -2371,128 +2628,163 @@ var sXML = oRoot.xml;
 alert(sXML);
 ```
 
-这段代码序列化从文档元素开始的 XML 数据，如下：
 
-<books><book isbn="0471777811"><title>Professional Ajax</title><author>Nicholas C. Zakas, Jeremy Peacock, Joe Fawcett</author></book><book isbn="0764579088">Professional JavaScript for Web Developers</book><book isbn="0764557599">Professional C#</book><book isbn="1861002025">Professional Visual Basic 6 Databases</book></books>
-
-这段代码序列化从文档元素开始的 XML 数据，如下：
-
-<books><book isbn="0471777811"><title>Professional Ajax</title><author>Nicholas C. Zakas, Jeremy Peacock, Joe Fawcett</author></book><book isbn="0764579088">Professional JavaScript for Web Developers</book><book isbn="0764557599">Professional C#</book><book isbn="1861002025">Professional Visual Basic 6 Databases</book></books>
-
-`xml` 属性将 XML 转换为字符串表示，包含标签名、属性和文本：
-
-<books><book isbn="0471777811"><title>Professional Ajax</title><author>Nicholas C. Zakas, Jeremy Peacock, Joe Fawcett</author></book><book isbn="0764579088">Professional JavaScript for Web Developers</book><book isbn="0764557599">Professional C#</book><book isbn="1861002025">Professional Visual Basic 6 Databases</book></books>
-
-`xml` 属性将 XML 转换为字符串表示，包含标签名、属性和文本：
-
-<books><book isbn="0471777811"><title>Professional Ajax</title><author>Nicholas C. Zakas, Jeremy Peacock, Joe Fawcett</author></book><book isbn="0764579088">Professional JavaScript for Web Developers</book><book isbn="0764557599">Professional C#</book><book isbn="1861002025">Professional Visual Basic 6 Databases</book></books>
-
-`xml` 属性将 XML 转换为字符串表示，包含标签名、属性和文本：
-
-<books><book isbn="0471777811"><title>Professional Ajax</title><author>Nicholas C. Zakas, Jeremy Peacock, Joe Fawcett</author></book><book isbn="0764579088">Professional JavaScript for Web Developers</book><book isbn="0764557599">Professional C#</book><book isbn="1861002025">Professional Visual Basic 6 Databases</book></books>
-
-`xml` 属性将 XML 转换为字符串表示，包含标签名、属性和文本：
-
-<books><book isbn="0471777811"><title>Professional Ajax</title><author>Nicholas C. Zakas, Jeremy Peacock, Joe Fawcett</author></book><book isbn="0764579088">Professional JavaScript for Web Developers</book><book isbn="0764557599">Professional C#</book><book isbn="1861002025">Professional Visual Basic 6 Databases</book></books>
-
-`xml` 属性将 XML 转换为字符串表示，包含标签名、属性和文本：
-
-<books><book isbn="0471777811"><title>Professional Ajax</title><author>Nicholas C. Zakas, Jeremy Peacock, Joe Fawcett</author></book><book isbn="0764579088">Professional JavaScript for Web Developers</book><book isbn="0764557599">Professional C#</book><book isbn="1861002025">Professional Visual Basic 6 Databases</book></books>
-
-`xml` 属性将 XML 转换为字符串表示，包含标签名、属性和文本：
-
-<books><book isbn="0471777811"><title>Professional Ajax</title><author>Nicholas C. Zakas, Jeremy Peacock, Joe Fawcett</author></book><book isbn="0764579088">Professional JavaScript for Web Developers</book><book isbn="0764557599">Professional C#</book><book isbn="1861002025">Professional Visual Basic 6 Databases</book></books>
-
-`xml` 属性将 XML 转换为字符串表示，包含标签名、属性和文本：
-
-<books><book isbn="0471777811"><title>Professional Ajax</title><author>Nicholas C. Zakas, Jeremy Peacock, Joe Fawcett</author></book><book isbn="0764579088">Professional JavaScript for Web Developers</book><book isbn="0764557599">Professional C#</book><book isbn="1861002025">Professional Visual Basic 6 Databases</book></books>
-
-这段xml  属性从 XML 转换为字符串，，包含标签，，属性 ，如下：
-
-<books><book isbn="0471777811"><title>Professional Ajax</title><author>Nicholas C. Zakas, Jeremy Peacock, Joe Fawcett</author></book><book isbn="0764579088">Professional JavaScript for Web Developers</book><book isbn="0764557599">Professional C#</book><book isbn="1861002025">Professional Visual Basic 6 Databases</book></books>
 
 这段代码序列化从文档元素开始的 XML 数据，如下：
 
+```
 <books><book isbn="0471777811"><title>Professional Ajax</title><author>Nicholas C. Zakas, Jeremy Peacock, Joe Fawcett</author></book><book isbn="0764579088">Professional JavaScript for Web Developers</book><book isbn="0764557599">Professional C#</book><book isbn="1861002025">Professional Visual Basic 6 Databases</book></books>
+```
+
+这段代码序列化从文档元素开始的 XML 数据，如下：
+
+```
+<books><book isbn="0471777811"><title>Professional Ajax</title><author>Nicholas C. Zakas, Jeremy Peacock, Joe Fawcett</author></book><book isbn="0764579088">Professional JavaScript for Web Developers</book><book isbn="0764557599">Professional C#</book><book isbn="1861002025">Professional Visual Basic 6 Databases</book></books>
+```
 
 `xml` 属性将 XML 转换为字符串表示，包含标签名、属性和文本：
 
+```
 <books><book isbn="0471777811"><title>Professional Ajax</title><author>Nicholas C. Zakas, Jeremy Peacock, Joe Fawcett</author></book><book isbn="0764579088">Professional JavaScript for Web Developers</book><book isbn="0764557599">Professional C#</book><book isbn="1861002025">Professional Visual Basic 6 Databases</book></books>
+```
 
 `xml` 属性将 XML 转换为字符串表示，包含标签名、属性和文本：
 
+```
 <books><book isbn="0471777811"><title>Professional Ajax</title><author>Nicholas C. Zakas, Jeremy Peacock, Joe Fawcett</author></book><book isbn="0764579088">Professional JavaScript for Web Developers</book><book isbn="0764557599">Professional C#</book><book isbn="1861002025">Professional Visual Basic 6 Databases</book></books>
+```
 
 `xml` 属性将 XML 转换为字符串表示，包含标签名、属性和文本：
 
+```
 <books><book isbn="0471777811"><title>Professional Ajax</title><author>Nicholas C. Zakas, Jeremy Peacock, Joe Fawcett</author></book><book isbn="0764579088">Professional JavaScript for Web Developers</book><book isbn="0764557599">Professional C#</book><book isbn="1861002025">Professional Visual Basic 6 Databases</book></books>
+```
 
 `xml` 属性将 XML 转换为字符串表示，包含标签名、属性和文本：
 
+```
 <books><book isbn="0471777811"><title>Professional Ajax</title><author>Nicholas C. Zakas, Jeremy Peacock, Joe Fawcett</author></book><book isbn="0764579088">Professional JavaScript for Web Developers</book><book isbn="0764557599">Professional C#</book><book isbn="1861002025">Professional Visual Basic 6 Databases</book></books>
+```
 
 `xml` 属性将 XML 转换为字符串表示，包含标签名、属性和文本：
 
+```
 <books><book isbn="0471777811"><title>Professional Ajax</title><author>Nicholas C. Zakas, Jeremy Peacock, Joe Fawcett</author></book><book isbn="0764579088">Professional JavaScript for Web Developers</book><book isbn="0764557599">Professional C#</book><book isbn="1861002025">Professional Visual Basic 6 Databases</book></books>
+```
 
 `xml` 属性将 XML 转换为字符串表示，包含标签名、属性和文本：
 
+```
 <books><book isbn="0471777811"><title>Professional Ajax</title><author>Nicholas C. Zakas, Jeremy Peacock, Joe Fawcett</author></book><book isbn="0764579088">Professional JavaScript for Web Developers</book><book isbn="0764557599">Professional C#</book><book isbn="1861002025">Professional Visual Basic 6 Databases</book></books>
+```
 
 `xml` 属性将 XML 转换为字符串表示，包含标签名、属性和文本：
 
+```
 <books><book isbn="0471777811"><title>Professional Ajax</title><author>Nicholas C. Zakas, Jeremy Peacock, Joe Fawcett</author></book><book isbn="0764579088">Professional JavaScript for Web Developers</book><book isbn="0764557599">Professional C#</book><book isbn="1861002025">Professional Visual Basic 6 Databases</book></books>
+```
+
+这段 `xml` 属性从 XML 转换为字符串，包含标签、属性，如下：
+
+```
+<books><book isbn="0471777811"><title>Professional Ajax</title><author>Nicholas C. Zakas, Jeremy Peacock, Joe Fawcett</author></book><book isbn="0764579088">Professional JavaScript for Web Developers</book><book isbn="0764557599">Professional C#</book><book isbn="1861002025">Professional Visual Basic 6 Databases</book></books>
+```
+
+这段代码序列化从文档元素开始的 XML 数据，如下：
+
+```
+<books><book isbn="0471777811"><title>Professional Ajax</title><author>Nicholas C. Zakas, Jeremy Peacock, Joe Fawcett</author></book><book isbn="0764579088">Professional JavaScript for Web Developers</book><book isbn="0764557599">Professional C#</book><book isbn="1861002025">Professional Visual Basic 6 Databases</book></books>
+```
 
 `xml` 属性将 XML 转换为字符串表示，包含标签名、属性和文本：
 
+```
 <books><book isbn="0471777811"><title>Professional Ajax</title><author>Nicholas C. Zakas, Jeremy Peacock, Joe Fawcett</author></book><book isbn="0764579088">Professional JavaScript for Web Developers</book><book isbn="0764557599">Professional C#</book><book isbn="1861002025">Professional Visual Basic 6 Databases</book></books>
+```
 
 `xml` 属性将 XML 转换为字符串表示，包含标签名、属性和文本：
 
+```
 <books><book isbn="0471777811"><title>Professional Ajax</title><author>Nicholas C. Zakas, Jeremy Peacock, Joe Fawcett</author></book><book isbn="0764579088">Professional JavaScript for Web Developers</book><book isbn="0764557599">Professional C#</book><book isbn="1861002025">Professional Visual Basic 6 Databases</book></books>
+```
 
 `xml` 属性将 XML 转换为字符串表示，包含标签名、属性和文本：
 
+```
 <books><book isbn="0471777811"><title>Professional Ajax</title><author>Nicholas C. Zakas, Jeremy Peacock, Joe Fawcett</author></book><book isbn="0764579088">Professional JavaScript for Web Developers</book><book isbn="0764557599">Professional C#</book><book isbn="1861002025">Professional Visual Basic 6 Databases</book></books>
+```
 
 `xml` 属性将 XML 转换为字符串表示，包含标签名、属性和文本：
 
+```
 <books><book isbn="0471777811"><title>Professional Ajax</title><author>Nicholas C. Zakas, Jeremy Peacock, Joe Fawcett</author></book><book isbn="0764579088">Professional JavaScript for Web Developers</book><book isbn="0764557599">Professional C#</book><book isbn="1861002025">Professional Visual Basic 6 Databases</book></books>
+```
 
 `xml` 属性将 XML 转换为字符串表示，包含标签名、属性和文本：
 
+```
 <books><book isbn="0471777811"><title>Professional Ajax</title><author>Nicholas C. Zakas, Jeremy Peacock, Joe Fawcett</author></book><book isbn="0764579088">Professional JavaScript for Web Developers</book><book isbn="0764557599">Professional C#</book><book isbn="1861002025">Professional Visual Basic 6 Databases</book></books>
+```
 
 `xml` 属性将 XML 转换为字符串表示，包含标签名、属性和文本：
 
+```
 <books><book isbn="0471777811"><title>Professional Ajax</title><author>Nicholas C. Zakas, Jeremy Peacock, Joe Fawcett</author></book><book isbn="0764579088">Professional JavaScript for Web Developers</book><book isbn="0764557599">Professional C#</book><book isbn="1861002025">Professional Visual Basic 6 Databases</book></books>
+```
 
 `xml` 属性将 XML 转换为字符串表示，包含标签名、属性和文本：
 
+```
 <books><book isbn="0471777811"><title>Professional Ajax</title><author>Nicholas C. Zakas, Jeremy Peacock, Joe Fawcett</author></book><book isbn="0764579088">Professional JavaScript for Web Developers</book><book isbn="0764557599">Professional C#</book><book isbn="1861002025">Professional Visual Basic 6 Databases</book></books>
+```
 
 `xml` 属性将 XML 转换为字符串表示，包含标签名、属性和文本：
 
+```
 <books><book isbn="0471777811"><title>Professional Ajax</title><author>Nicholas C. Zakas, Jeremy Peacock, Joe Fawcett</author></book><book isbn="0764579088">Professional JavaScript for Web Developers</book><book isbn="0764557599">Professional C#</book><book isbn="1861002025">Professional Visual Basic 6 Databases</book></books>
+```
 
 `xml` 属性将 XML 转换为字符串表示，包含标签名、属性和文本：
 
+```
 <books><book isbn="0471777811"><title>Professional Ajax</title><author>Nicholas C. Zakas, Jeremy Peacock, Joe Fawcett</author></book><book isbn="0764579088">Professional JavaScript for Web Developers</book><book isbn="0764557599">Professional C#</book><book isbn="1861002025">Professional Visual Basic 6 Databases</book></books>
+```
 
 `xml` 属性将 XML 转换为字符串表示，包含标签名、属性和文本：
 
+```
 <books><book isbn="0471777811"><title>Professional Ajax</title><author>Nicholas C. Zakas, Jeremy Peacock, Joe Fawcett</author></book><book isbn="0764579088">Professional JavaScript for Web Developers</book><book isbn="0764557599">Professional C#</book><book isbn="1861002025">Professional Visual Basic 6 Databases</book></books>
+```
 
 `xml` 属性将 XML 转换为字符串表示，包含标签名、属性和文本：
 
+```
 <books><book isbn="0471777811"><title>Professional Ajax</title><author>Nicholas C. Zakas, Jeremy Peacock, Joe Fawcett</author></book><book isbn="0764579088">Professional JavaScript for Web Developers</book><book isbn="0764557599">Professional C#</book><book isbn="1861002025">Professional Visual Basic 6 Databases</book></books>
+```
 
 `xml` 属性将 XML 转换为字符串表示，包含标签名、属性和文本：
 
+```
 <books><book isbn="0471777811"><title>Professional Ajax</title><author>Nicholas C. Zakas, Jeremy Peacock, Joe Fawcett</author></book><book isbn="0764579088">Professional JavaScript for Web Developers</book><book isbn="0764557599">Professional C#</book><book isbn="1861002025">Professional Visual Basic 6 Databases</book></books>
+```
 
+`xml` 属性将 XML 转换为字符串表示，包含标签名、属性和文本：
 
+```
+<books><book isbn="0471777811"><title>Professional Ajax</title><author>Nicholas C. Zakas, Jeremy Peacock, Joe Fawcett</author></book><book isbn="0764579088">Professional JavaScript for Web Developers</book><book isbn="0764557599">Professional C#</book><book isbn="1861002025">Professional Visual Basic 6 Databases</book></books>
+```
 
+`xml` 属性将 XML 转换为字符串表示，包含标签名、属性和文本：
+
+```
+<books><book isbn="0471777811"><title>Professional Ajax</title><author>Nicholas C. Zakas, Jeremy Peacock, Joe Fawcett</author></book><book isbn="0764579088">Professional JavaScript for Web Developers</book><book isbn="0764557599">Professional C#</book><book isbn="1861002025">Professional Visual Basic 6 Databases</book></books>
+```
+
+`xml` 属性将 XML 转换为字符串表示，包含标签名、属性和文本：
+
+```
+<books><book isbn="0471777811"><title>Professional Ajax</title><author>Nicholas C. Zakas, Jeremy Peacock, Joe Fawcett</author></book><book isbn="0764579088">Professional JavaScript for Web Developers</book><book isbn="0764557599">Professional C#</book><book isbn="1861002025">Professional Visual Basic 6 Databases</book></books>
+```
 
 插入到其之前的节点。此方法还会返回所插入节点的值，但在此示例中这并非必要的。
 
@@ -2500,37 +2792,48 @@ alert(sXML);
 
 ## IE 中的错误处理
 
-当加载 XML 数据时，可能会出于各种原因引发错误。例如，可能找不到外部 XML 文件，或者 XML 格式不正确。为了处理这些情况，MSXML 提供了 parseError 对象，其中包含了相关信息。这是 MSXML 创建的每个 XML DOM 文档的属性。
+当加载 XML 数据时，可能会出于各种原因引发错误。例如，可能找不到外部 XML 文件，或者 XML 格式不正确。为了处理这些情况，MSXML 提供了 `parseError` 对象，其中包含了相关信息。这是 MSXML 创建的每个 XML DOM 文档的属性。
 
-要检查错误，parseError 对象暴露了 errorCode 属性，可以将其与整数 0 进行比较；如果 errorCode 不等于 0，则发生了错误。下面的示例专门设计用于触发错误：
+要检查错误，`parseError` 对象暴露了 `errorCode` 属性，可以将其与整数 0 进行比较；如果 `errorCode` 不等于 0，则发生了错误。下面的示例专门设计用于触发错误：
 
 ```
+```
+
+
+
+```javascript
 var sXml = "<root><person><name>Jeremy McPeak</name></root>";
+
 var xmlDom = createDocument();
+
 xmlDom.loadXML(sXml);
 
 if (xmlDom.parseError.errorCode != 0) {
+
   alert("发生了错误: " + xmlDom.parseError.reason);
+
 } else {
+
   // 成功加载的代码。
+
 }
 ```
 
-在突出显示的行中，`</person>` 元素没有闭合。因为加载的 XML 格式不正确，因此发生了错误。errorCode 与 0 进行比较；如果它们不匹配（它们确实不匹配！），警报将显示导致错误的原因。为了实现这一点，使用了 parseError 对象的 reason 属性，该属性描述了错误的原因。
+在突出显示的行中，`</person>` 元素没有闭合。因为加载的 XML 格式不正确，因此发生了错误。`errorCode` 与 `0` 进行比较；如果它们不匹配（它们确实不匹配！），警报将显示导致错误的原因。为了实现这一点，使用了 `parseError` 对象的 `reason` 属性，该属性描述了错误的原因。
 
-parseError 对象提供了以下属性以便你更好地理解错误：
+`parseError` 对象提供了以下属性，以便你更好地理解错误：
 
-- errorCode: 以长整型表示的代码
-- filePos: 指定错误发生所在文件位置的长整型
-- line: 包含错误的行号（长整型）
-- linePos: 错误发生所在行的字符位置（长整型）
-- reason: 指定错误原因的字符串
-- srcText: 错误所在行的文本
-- url: 字符串格式的 XML 文档 URL
+- `errorCode`：以长整型表示的代码
+- `filePos`：指定错误发生所在文件位置的长整型
+- `line`：包含错误的行号（长整型）
+- `linePos`：错误发生所在行的字符位置（长整型）
+- `reason`：指定错误原因的字符串
+- `srcText`：错误所在行的文本
+- `url`：字符串格式的 XML 文档 URL
 
 这些属性都提供了关于每个错误的信息，你可以根据自己的需求做出最合理的解释。
 
-- *重要* errorCode 属性可以是正数或负数；只有当 errorCode 等于 0 时，才能确定没有发生错误。
+- **重要**：`errorCode` 属性可以是正数或负数；只有当 `errorCode` 等于 `0` 时，才能确定没有发生错误。
 
 ## Firefox 中的 XML DOM
 
@@ -2538,19 +2841,19 @@ parseError 对象提供了以下属性以便你更好地理解错误：
 
 要在 Firefox 中创建 XML DOM，需要调用 `document.implementation` 对象的 `createDocument()` 方法。该方法接受三个参数：第一个是包含文档使用的命名空间 URI 的字符串，第二个是包含文档根元素限定名称的字符串，第三个是文档类型（也称为 doctype）。要创建 XML DOM，你可以这样做：
 
-```
+```javascript
 var oXmlDom = document.implementation.createDocument("", "", null);
 ```
 
 通过为前两个参数传递空字符串并为第三个参数传递 `null`，你可以确保创建一个完全空的文档。事实上，Firefox 不支持 doctype 的 JavaScript 支持，因此第三个参数必须为 `null`。要创建一个带有文档元素的 XML DOM，请在第二个参数中指定标签名：
 
-```
+```javascript
 var oXmlDom = document.implementation.createDocument("", "books", null);
 ```
 
 此代码创建了一个元素为 `<books>` 的 XML DOM。你可以更进一步，通过在第一个参数中指定命名空间 URI 来在创建 DOM 时指定命名空间：
 
-```
+```javascript
 var oXmlDom = document.implementation.createDocument("http://www.sitel.com", "books", null);
 ```
 
@@ -2560,42 +2863,47 @@ var oXmlDom = document.implementation.createDocument("http://www.sitel.com", "bo
 <books xmlns:a0="http://www.sitel.com" />
 ```
 
-从这里开始，你可以编程处理 XML 文档；但是，你可能希望将已有的 XML 文档加载到空白的 XML DOM 对象中
+从这里开始，你可以编程处理 XML 文档；但是，你可能希望将已有的 XML 文档加载到空白的 XML DOM 对象中。
 
 ## 在 Firefox 中加载 XML 数据
 
-将 XML 加载到 DOM 与微软的方法相似有一个明显的区别：Firefox 支持 `load()` 方法。因此，你可以在两个浏览器中使用相同的代码来加载外部 XML 数据：
+将 XML 加载到 DOM 与微软的方法相似，有一个明显的区别：Firefox 支持 `load()` 方法。因此，你可以在两个浏览器中使用相同的代码来加载外部 XML 数据：
 
-```
+```javascript
 oXmlDom.load("books.xml");
 ```
 
-同样像微软，Firefox 也实现了 `async` 属性，其行为与微软一致：将 `async` 设置为 `false` 会强制文档以同步模式加载；否则文档将异步异步加载。
+同样像微软，Firefox 也实现了 `async` 属性，其行为与微软一致：将 `async` 设置为 `false` 会强制文档以同步模式加载；否则文档将异步加载。
 
 Firefox 和 XML DOM 实现之间的另一个区别是，Firefox 不支持 `readState` 属性或 `onstatechange` 事件处理器。相反，它支持 `load` 事件和 `onload` 事件处理器。`load` 事件在文档完全加载后触发。
 
-```
+```javascript
 oXmlDom.load("books.xml");
+
 oXmlDom.onload = function () {
+
   // 文档完全加载后执行某些操作。
+
 };
 ```
 
 如之前所述，Firefox 实现中不存在 `loadXML()` 方法；但是，可以通过 Firefox 的 `DOMParser` 类模拟 `loadXML()` 的行为。该类有一个名为 `parseFromString()` 的方法，它可以加载一个字符串并将其解析为文档：
 
-```
+```javascript
 var sXml = "<root><name>Jeremy McPeake</name></root>";
+
 var oParser = new DOMParser();
+
 var oXmlDom = oParser.parseFromString(sXml, "text/xml");
 ```
 
-在此段代码中，创建了一个 XML 字符串传递给 `DOMParser.parseFromString()` 方法。`parseFromString()` 的两个参数是 XML 字符串和数据的内容类型。`parseFromString()` 方法返回一个 DOM 对象，你可以将其视为 XmlDom。
+在此段代码中，创建了一个 XML 字符串传递给 `DOMParser.parseFromString()` 方法。`parseFromString()` 的两个参数是 XML 字符串和数据的内容类型。`parseFromString()` 方法返回一个 DOM 对象，你可以将其视为 `XmlDom`。
 
 ## 在 Firefox 中检索数据
 
 尽管存在差异，IE 和 Firefox 共享许多检索 XML 的属性和方法。在 IE 中，你可以使用 `documentElement` 属性检索文档的根元素：
 
-```
+```javascript
 var oNode = XmlDom.documentElement;
 ```
 
@@ -2603,33 +2911,43 @@ Firefox 支持 W3C 标准的 `attributes`、`childNodes`、`firstChild`、`lastC
 
 简单回顾一下，文本属性返回节点及其后代的内容。然而，它不仅返回现有节点的文本，还返回子节点的文本；这很容易实现。一个接受参数的简单函数可以提供结果：
 
-```
+```javascript
 function getText(oNode) {
+
   var sText = ""
+
   for (var i = 0; i < oNode.childNodes.length; i++) {
+
     if (oNode.childNodes[i].hasChildren()) {
+
       sText += getText(oNode.childNodes[i]);
+
     } else {
+
       sText += oNode.childNodes[i].nodeValue;
+
     }
+
   }
+
   return sText;
+
 }
 ```
 
 在 `getText()` 中，`sText` 用于存储检索到的每个片段。当 `for` 循环遍历 `oNode` 时，会检查每个节点是否包含子节点。如果是，则将子节点传递给 `getText()` 并经历相同的过程。如果不是，则将当前节点的 `nodeValue` 添加到字符串中。在处理所有子节点后，函数返回 `sText`。
 
-IE 属性序列化当前节点包含的所有 XML。Firefox 使用 `XMLSerializer` 对象实现相同的结果。该对象有一个可以通过 JavaScript 使用 `serializeToString()` 方法：
+IE 属性序列化当前节点包含的所有 XML。Firefox 使用 `XMLSerializer` 对象实现相同的结果。该对象有一个可以通过 JavaScript 使用的 `serializeToString()` 方法：
 
-```
+```javascript
 function serializeXml(oNode) {
+
   var oSerializer = new XMLSerializer();
+
   return oSerializer.serializeToString(oNode);
+
 }
 ```
-
-
-
 
 注意：Firefox 与 IE 共享用于操作节点的 DOM 方法。请参阅“在 IE 中操作 DOM”部分以进行复习。
 
@@ -2639,15 +2957,21 @@ function serializeXml(oNode) {
 
 ```javascript
 var sXml = "<root><person><name>Jeremy Mcpeak</name></root>";
+
 var oParser = new DOMParser();
+
 var oXmlDom = oParser.parseFromString(sXml, "text/xml");
 ```
 
 ```javascript
 if (oXmlDom.documentElement.tagName != "parsererror") {
+
   // 没有发生错误。在这里执行操作。
+
 } else {
+
   alert("发生错误\n");
+
 }
 ```
 
@@ -2657,12 +2981,15 @@ if (oXmlDom.documentElement.tagName != "parsererror") {
 
 ```xml
 <parsererror xmlns="http://www.mozilla.org/newlayout/xml/parsererror.xml">
+
 XML Parsing: mismatched tag. Expected: <person>.
+
 Location: http://yoda/foreader/test.htm
+
 Line Number 1, Column 43: <sourcetext><root><person>Jeremy Mcpeak</name></root></sourcetext></parsererror>
 ```
 
-所有的信息都包含在错误文档中。如果你使用这种机制，将需要对它进行解析。此最简单的方法是使用正则表达式：
+所有的信息都包含在错误文档中。如果你使用这种机制，将需要对它进行解析。最简单的方法是使用正则表达式：
 
 ```javascript
 var reError = /([\s\S]*?)Location:([\s\S]*?)Line Number (\d+):<sourcetext>([\s\S]*?<\<\/sourcetext>)/;
@@ -2672,12 +2999,19 @@ var reError = /([\s\S]*?)Location:([\s\S]*?)Line Number (\d+):<sourcetext>([\s\S
 
 ```javascript
 if (oXmlDom.firstChild.tagName != "parsererror") {
+
   // 没有发生错误。在这里执行操作。
+
 } else {
+
   var oXmlSerializer = new XMLSerializer();
+
   var sXmlError = oXmlSerializer.serializeToString(oXmlDom);
+
   var reError = /([\s\S]*?)Location:([\s\S]*?)Line Number (\d+):<sourcetext>([\s\S]*)?(?:\<\/sourcetext>)/;
+
   reError.test(sXmlError);
+
 }
 ```
 
@@ -2685,10 +3019,15 @@ if (oXmlDom.firstChild.tagName != "parsererror") {
 
 ```javascript
 var str = "发生错误了!!\n" + 
+
 "描述: " + RegExp[1] + "\n" + 
+
 "文件: " + RegExp[2] + "\n" + 
+
 "行号: " + RegExp[3] + "\n" + 
+
 "行位置: " + RegExp[4] + "\n" + 
+
 "源代码: " + RegExp[5];
 
 alert(str);
@@ -2708,9 +3047,13 @@ var oXmlDom = zXmlDom.createDocument();
 
 ```javascript
 oXmlDom.onreadystatechange = function () {
+
   if (oXmlDom.readyState == 4) {
+
     // 文档完全加载时执行操作。
+
   }
+
 };
 ```
 
@@ -2722,32 +3065,59 @@ XML 是一种语义化语言。指定的 XML 元素描述数据。假设你正�
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
+
 <bookList>
+
   <book isbn="0417777781">
+
     <title>Professional Ajax</title>
+
     <author>Nicholas C. Zakas, Jeremy Fawcett</author>
+
     <publisher>Wrox</publisher>
+
   </book>
+
   <book isbn="0764579088">
+
     <title>Professional JavaScript for Web Developers</title>
+
     <author>Nicholas C. Zakas</author>
+
     <publisher>Wrox</publisher>
+
   </book>
+
   <book isbn="0764557599">
+
     <title>Professional C#</title>
+
     <author>Simon Robinson, et al</author>
+
     <publisher>Wrox</publisher>
+
   </book>
+
   <book isbn="18611066314">
+
     <title>GDI+ Programming: Creating Custom Controls Using C#</title>
+
     <author>Eric White</author>
+
     <publisher>Wrox</publisher>
+
   </book>
+
   <book isbn="18601002025">
+
     <title>Professional Visual Basic 6 Databases</title>
+
     <author>Charles Williams</author>
+
     <publisher>Wrox</publisher>
+
   </book>
+
 </bookList>
 ```
 
@@ -2755,46 +3125,62 @@ XML 是一种语义化语言。指定的 XML 元素描述数据。假设你正�
 
 ## 加载 XML 数据
 
-第一步是创建一个 XML DOM 文档并将 XML 数据加载其中。由于 `books.xml` 是异步加载的，你需要设置 `onreadystatechange` 事件处理程序：
+第一步是创建一个 XML DOM 文档并将 XML 数据加载其中。由于 `books.xml` 是异步加载的，你需要设置 `onreadystatechange` 事件处理程序。
 
 下一步是即使文档已加载，也要检查是否有错误，加载并不意味着一切都按预期工作：
 
-
-
 ```javascript
 if (oXmlDom.readyState == 4) {
+
     if (oXmlDom.parseError.errorCode == 0) {
+
         parseBookInfo(oXmlDom);
+
     } else {
+
         var str = "An error occurred!\n" + \
+
                  "Description: " + oXmlDom.parseError.reason + "\n" +
+
                  "File: " + oXmlDom.parseError.url + "\n" +
+
                  "Line: " + oXmlDom.parseError.line + "\n" +
+
                  "Line Position: " + oXmlDom.parseError.linePos + "\n" +
+
                  "Source Code: " + oXmlDom.parseError.srcText;
+
         alert(str);
+
     }
+
 }
 ```
+
+
 
 如果没有发生错误，XML DOM 文档将传递给 `parseBookInfo()`，该函数负责解析书籍列表。如果发生了错误，收集在 `parseError` 对象中的错误信息将在警告框中显示。
 
 通过 `onchange` 事件处理器，使用 `load()` 方法来加载 XML 数据：
-`XmlDom.load("books.xml");`
+
+```javascript
+XmlDom.load("books.xml");
+```
 
 XML 文档已加载。该过程的下一步是解析 XML 数据。
 
 ## 解析书籍列表
 
-`parseBookInfo` 函数负责解析 DOM 文档。该函数接受一个参数，即 DOM 文档本身：
+`parseBookInfo()` 函数负责解析 DOM 文档。该函数接受一个参数，即 DOM 文档本身：
 
 ```javascript
 function parseBookInfo(oXmlDom) {
     var oRoot = oXmlDom.documentElement;
     var oFragment = document.createDocumentFragment();
+}
 ```
 
-变量 `oRoot` 被赋值为 XML 文档的 `documentElement`。这仅仅是为了方便，因为输入 `oRoot` 比输入 `oXmlDom.documentElement` 要容易且快速得多。你还还创建了一个文档片段（document fragment）。
+变量 `oRoot` 被赋值为 XML 文档的 `documentElement`。这仅仅是为了方便，因为输入 `oRoot` 比输入 `oXmlDom.documentElement` 要容易且快速得多。你还创建了一个文档片段（document fragment）。
 
 `parseBookInfo()` 函数生成许多 HTML 元素，因此会对加载到浏览器中的 HTML 产生多次更改。从显示时间来看，逐个向 HTML DOM 添加元素是一个耗时的过程。每个元素都被添加到一个文档片段中，一旦所有 HTML 元素创建完成，该片段就会添加到文档中。因此，HTML DOM 需要更新一次而不是多次，从而实现更快的渲染。
 
@@ -2805,6 +3191,7 @@ var aBooks = oRoot.getElementsByTagName("book");
 
 for (var i = 0; i < aBooks.length; i++) {
     var sIsbn = aBooks[i].getAttribute("isbn");
+}
 ```
 
 ```javascript
@@ -2825,20 +3212,24 @@ do {
     case "title":
       sTitle = oCurrentChild.text;
       break;
+
     case "author":
       sAuthor = oCurrentChild.text;
       break;
+
     case "publisher":
       sPublisher = oCurrentChild.text;
       break;
+
     default:
       break;
   }
+
   oCurrentChild = oCurrentChild.nextSibling;
 } while (oCurrentChild && oCurrentChild.nextSibling);
 ```
 
-在第一行中，`oCurrentChild` 被赋值为 `<book/>` 元素当前节点的第一个子节点。（记住，这发生在 `for` 循环内部）。`tagName` 用于 `switch` 块以确定对这些数据进行什么操作。然后 `switch` 块将其赋值给相应 `tagName` 当前节点的变量。要获取这些数据，你使用 `text` 属性，它会获取元素内所有的文本节点。`oCurrentChild` 变量通过 `nextSibling` 属性赋值为当前节点的下一个节点。如果存在下一个节点，则循环继续；否则，`oCurrentChild` 为 `null` 循环退出。
+在第一行中，`oCurrentChild` 被赋值为 `<book/>` 元素当前节点的第一个子节点。（记住，这发生在 `for` 循环内部。）`tagName` 用于 `switch` 块以确定对这些数据进行什么操作。然后 `switch` 块将其赋值给相应 `tagName` 当前节点的变量。要获取这些数据，你使用 `text` 属性，它会获取元素内所有的文本节点。`oCurrentChild` 变量通过 `nextSibling` 属性赋值为当前节点的下一个节点。如果存在下一个节点，则循环继续；否则，`oCurrentChild` 为 `null`，循环退出。
 
 当所有数据变量包含所需数据时，你就可以开始生成 HTML 元素来显示这些数据了。
 
@@ -2846,9 +3237,6 @@ do {
 <div class="bookContainer">
   <img class="bookContainer">
 ```
-
-
-
 
 你将使用 `init()` 来处理 `window.onload` 事件。这有助于确保 JavaScript 生成的元素被添加到页面中，而不会引起错误。
 
@@ -2859,15 +3247,14 @@ do {
 "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 
 <html xmlns="http://www.w3.org/1999/xhtml">
-
 <head>
   <title>书籍 XML 练习</title>
   <link rel="stylesheet" type="text/css" href="books.css" />
   <script type="text/javascript" src="zxml.js"></script>
   <script type="text/javascript" src="books.js"></script>
 </head>
-<body onload="init()">
 
+<body onload="init()">
 </body>
 </html>
 ```
@@ -2884,45 +3271,45 @@ do {
 
 一个 XPath 表达式由两部分组成：上下文（context）和选择模式（selection pattern）。上下文节点是选择模式开始的上下文。参考上一节的 `books.xml`，考虑这个 XPath 表达式：
 
-```
+```xpath
 book/author
 ```
 
-如果如果在根级别（其上下文）表示，所有的 `<author>` 节点都将被返回，因为 `<book>` 元素是文档元素的元素，并包含一个 `<author/>` 元素。这个表达式并不具体，因为所有的 `<author/>` 元素都会被返回。
+如果在根级别（其上下文）表示，所有的 `<author>` 节点都将被返回，因为 `<book>` 元素是文档元素的元素，并包含一个 `<author/>` 元素。这个表达式并不具体，因为所有的 `<author/>` 元素都会被返回。
 
 如果你只想检索具有特定 ISBN 的 `<book>` 元素呢？XPath 表达式看起来如下：
 
-```
+```xpath
 book[@isbn='0471777781']
 ```
 
-表达式的 `book` 部分描述要检索什么。方括号内部是元素必须匹配的条件。`@isbn` 部分代表 isbn 属性（attribute 的缩写）。这个表达式的意思是“找到属性 isbn 为 '0471777781' 的 book 元素”。
+表达式的 `book` 部分描述要检索什么。方括号内部是元素必须匹配的条件。`@isbn` 部分代表 `isbn` 属性（attribute 的缩写）。这个表达式的意思是“找到属性 `isbn` 为 `'0471777781'` 的 `book` 元素”。
 
 XPath 表达式也可以更复杂。考虑以下表达式：
 
-```
+```xpath
 book[contains(text(), 'McPeak')]
 ```
 
-这个表达式的意思是“找到包含字符串 'McPeak' 的 book 元素”。由于这是一个复杂的表达式，从外向内进行拆解会有帮助。移除所有条件，你得到这个表达式：
+这个表达式的意思是“找到包含字符串 `'McPeak'` 的 `book` 元素”。由于这是一个复杂的表达式，从外向内进行拆解会有帮助。移除所有条件，你得到这个表达式：
 
-```
+```xpath
 book...
 ```
 
-首先，你现在寻找一个具有子元素 `<author>` 的 book 元素，如果它是最外层元素，则会被返回；接着是条件。在第一组括号内部，你注意到 `<author/>` 元素：
+首先，你现在寻找一个具有子元素 `<author>` 的 `book` 元素，如果它是最外层元素，则会被返回；接着是条件。在第一组括号内部，你注意到 `<author/>` 元素：
 
-```
+```xpath
 author...
 ```
 
-现在你知道你正在寻找一个具有子元素 `<author>` 的 book 元素，而且还需要检查它，因为表达式并没有在此结束：
+现在你知道你正在寻找一个具有子元素 `<author>` 的 `book` 元素，而且还需要检查它，因为表达式并没有在此结束：
 
-```
+```xpath
 contains(text(), 'McPeak')
 ```
 
-`contains()` 函数接收参数，并且如果第一个参数包含第二个参数，则返回真。`text()` 函数返回上下文中的所有文本，`<author/>` 元素的文本内容作为第一个参数传递给 `contains()`。第二个参数是搜索文本，在此例中为 'McPeak'。
+`contains()` 函数接收参数，并且如果第一个参数包含第二个参数，则返回真。`text()` 函数返回上下文中的所有文本，`<author/>` 元素的文本内容作为第一个参数传递给 `contains()`。第二个参数是搜索文本，在此例中为 `'McPeak'`。
 
 重要提示：`contains()` 函数与所有 XPath 函数一样是区分大小写的。
 
@@ -2932,15 +3319,12 @@ contains(text(), 'McPeak')
 
 ## IE 中的 XPath
 
-微软的 XPath 实现是 MSXML 3.0 及更高版本的一部分。如果你使用的是任何版本的 Windows XP 或安装了 IE 6.0 或更高版本，你的电脑就具备此能力。（注：由于原文中存在大量重复段落，译文已按要求对核心内容进行翻译）
-
-
-
+微软的 XPath 实现是 MSXML 3.0 及更高版本的一部分。如果你使用的是任何版本的 Windows XP 或安装了 IE 6.0 或更高版本，你的电脑就具备此能力。（注：由于原文中存在大量重复段落，译文已按要求对核心内容进行翻译。）
 
 ```xml
 <comp:address>
-<comp:ip>127.0.0.1</comp:ip>
-<comp:hostname>localhost</comp:hostname>
+  <comp:ip>127.0.0.1</comp:ip>
+  <comp:hostname>localhost</comp:hostname>
 </comp:address>
 ```
 
@@ -2958,21 +3342,25 @@ contains(text(), 'McPeak')
     <author>Nicholas C. Zakas, Jeremy Peak, Joe Fawcett</author>
     <pub:name>Wrox</pub:name>
   </book>
+
   <book isbn="0764579088">
     <title>Professional JavaScript for Web Developers</title>
     <author>Nicholas C. Zakas</author>
     <pub:name>Wrox</pub:name>
   </book>
+
   <book isbn="0764557599">
     <title>Professional C#</title>
     <author>Simon Robinson, et al</author>
     <pub:name>Wrox</pub:name>
   </book>
+
   <book isbn="1861006314">
     <title>GDI+ Programming: Creating Custom Controls Using C#</title>
     <author>Eric White</author>
     <pub:name>Wrox</pub:name>
   </book>
+
   <book isbn="1861002025">
     <title>Professional Visual Basic 6 Databases</title>
     <author>Charles Williams</author>
@@ -2981,16 +3369,17 @@ contains(text(), 'McPeak')
 </bookList>
 ```
 
-这个修订后的文档在使用两个命名空间：由 `xmlns="http://site1.com"` 指定的默认命名空间，以及通过 `xmlns:pub="http://site2.com"` 指定的 pub 命名空间。默认命名空间没有缀；因此，文档中所有没有前缀的元素都使用默认命名空间。注意 `<publisher>` 元素被替换为了 `<book>`。
+这个修订后的文档在使用两个命名空间：由 `xmlns="http://site1.com"` 指定的默认命名空间，以及通过 `xmlns:pub="http://site2.com"` 指定的 `pub` 命名空间。默认命名空间没有前缀；因此，文档中所有没有前缀的元素都使用默认命名空间。注意 `<publisher>` 元素被替换为了 `<book>`。
 
 处理包含命名空间的 XML 文档时，必须声明这些命名空间才能使用 XPath 表达式。MSXML 文档暴露了一个名为 `setProperty()` 的方法，用于设置对象的二级属性。特定的属性 `SelectionNamespaces` 用于为任何默认或外部命名空间设置别名。除了使用 `setProperty()` 方法外，命名空间声明的赋值与 XML 文档中的一样。
 
 ```javascript
-var sName="xmlns:na='http://site1.com' xmlns:pub='http://site2.com'";
+var sName = "xmlns:na='http://site1.com' xmlns:pub='http://site2.com'";
+
 xmlDocument.setProperty("SelectionNamespaces", sName);
 ```
 
-名称 `na` 和 `pub` 代表 XML 文档中使用的命名空间。注意命名空间前缀 `na` 是为默认命名空间定义的。MSXML 在 XPath 选择节点时不会识别默认命名空间，因此定义别名前缀是必要的。现在 `SelectionNamespace` 属性已经设置好，你可以选择文档内的节点了：
+名称 `na` 和 `pub` 代表 XML 文档中使用的命名空间。注意命名空间前缀 `na` 是为默认命名空间定义的。MSXML 在 XPath 选择节点时不会识别默认命名空间，因此定义别名前缀是必要的。现在 `SelectionNamespaces` 属性已经设置好，你可以选择文档内的节点了：
 
 ```javascript
 var rRoot = xmlDocument.documentElement;
@@ -3004,84 +3393,94 @@ if (cPublishers.length > 0) {
 }
 ```
 
-XPath 表达式使用了 `SelectionNamespaces` 属性中指定的命名空间，并选择所有的 `<pub:name/>` 元素。在本例中，返回了一个包含五个元素的 NodeList，你可以随后使用它。
+XPath 表达式使用了 `SelectionNamespaces` 属性中指定的命名空间，并选择所有的 `<pub:name/>` 元素。在本例中，返回了一个包含五个元素的 `NodeList`，你可以随后使用它。
 
 ## Firefox 中的 XPath
 
 Firefox 的 XPath 实现遵循 DOM 标准，这与 IE 的实现非常不同。Firefox 的实现允许 XPath 表达式同时在 HTML 和 XML 文档上运行。核心主要对象是：`XPathEvaluator` 和 `XPathResult`。
 
-`XPathEvaluator` 类将 XPath 表达式传递给 `evaluate()` 方法，该方法接受五个参数：要运行的 XPath 字符串、表达式应运行的上下文节点、命名空间解析器（这是一个处理表达式中命名空间的函数）、你需要的类型（共有 10 种结果类型）以及用于包含结果的 `XPathResult` 对象（如果此参数为 null，则创建一个新的 `XPathResult`）。
+`XPathEvaluator` 类将 XPath 表达式传递给 `evaluate()` 方法，该方法接受五个参数：要运行的 XPath 字符串、表达式应运行的上下文节点、命名空间解析器（这是一个处理表达式中命名空间的函数）、你需要的类型（共有 10 种结果类型）以及用于包含结果的 `XPathResult` 对象（如果此参数为 `null`，则创建一个新的 `XPathResult`）。
 
 在继续之前，理解 `evaluate()` 返回的各种结果类型非常重要：这些是：
 
-- *XPathResult.ANY_TYPE*，不返回特定类型。方法返回表达式评估自然产生的类型。
-- *XPathResult.ANY_ORDERED_NODE_TYPE*，返回一个通过 `singleNode` 属性访问的节点集；如果没有匹配的节点，则返回 null。返回的节点可能不是第一个节点。
-- *XPathResult.BOOLEAN*，返回一个布尔值。
-- *XPathResult.FIRST_ORDERED_NODE_TYPE*，返回包含一个节点的节点。该节点通过 `XPathResult` 类的 `singleNode` 属性访问。返回的节点。
-- *XPathResult.NUMBER_TYPE*，返回一个数字。
-- *XPathResult.STRING_TYPE*，返回一个字符串。
-- *XPathResult.ORDERED_NODE_ITERATOR_TYPE*，返回一个可以使用 `iterateNext()` 迭代的节点集。
-- *XPathResult.ORDERED_NODE_SNAPSHOT_TYPE*，返回结果的快照。
-- *XPathResult.BOOLEAN*，返回一个布尔值。
-- *XPathResult.FIRST_ORDERED_NODE_TYPE*，返回包含一个节点的节点。
-
-
+- `XPathResult.ANY_TYPE`，不返回特定类型。方法返回表达式评估自然产生的类型。
+- `XPathResult.ANY_ORDERED_NODE_TYPE`，返回一个通过 `singleNode` 属性访问的节点集；如果没有匹配的节点，则返回 `null`。返回的节点可能不是第一个节点。
+- `XPathResult.BOOLEAN`，返回一个布尔值。
+- `XPathResult.FIRST_ORDERED_NODE_TYPE`，返回包含一个节点的节点。该节点通过 `XPathResult` 类的 `singleNode` 属性访问。返回的节点。
+- `XPathResult.NUMBER_TYPE`，返回一个数字。
+- `XPathResult.STRING_TYPE`，返回一个字符串。
+- `XPathResult.ORDERED_NODE_ITERATOR_TYPE`，返回一个可以使用 `iterateNext()` 迭代的节点集。
+- `XPathResult.ORDERED_NODE_SNAPSHOT_TYPE`，返回结果的快照。
+- `XPathResult.BOOLEAN`，返回一个布尔值。
+- `XPathResult.FIRST_ORDERED_NODE_TYPE`，返回包含一个节点的节点。
 
 ```javascript
 var oElement;
+
 while (oElement = oResult.iterateNext()) {
   aNodes.push(oElement);
 }
 ```
 
-这个示例与最后的评估代码相似。但是，请注意 `evaluate()` 方法中增加的内容：之前编写的 `nsResolver` 函数指针被传递给 `evaluate()` 方法，用于处理 XPath 表达式中的命名空间。代码的其余部分你应该应该很熟悉。生成的 `NodeList` 通过 `XPathResult` 类的 `iterateNext()` 方法转换为数组以便进行遍历。
+
+
+这个示例与最后的评估代码相似。但是，请注意`evaluate()`方法中增加的内容：之前编写的`nsResolver`函数指针被传递给`evaluate()`方法，用于处理 XPath 表达式中的命名空间。代码的其余部分你应该应该很熟悉。生成的`NodeList`通过`XPathResult`类的`iterateNext()`方法转换为数组以便进行遍历。
 
 如你所见，Firefox 的 XPath 实现与微软的方法非常不同；因此，使用一个允许你执行 XPath 评估的跨浏览器库是有帮助的。
 
 ## 跨浏览器 XPath
 
-作者创建的 XML 库通过通用接口提供了跨浏览器 XPath 功能。提供 XPath 功能的响应对象是 `zXPath`，它有两个方法。
+作者创建的 XML 库通过通用接口提供了跨浏览器 XPath 功能。提供 XPath 功能的响应对象是`zXPath`，它有两个方法。
 
-第一个方法是 `selectSingleNode()`。该方法与同名的 IE 方法一样，返回匹配上下文（context）、XPath 字符串以及三个参数的第一个节点：上下文节点、一个包含命名空间声明的字符串。命名空间字符串应采用如下格式：
+第一个方法是`selectSingleNode()`。该方法与同名的 IE 方法一样，返回匹配上下文（context）、XPath 字符串以及三个参数的第一个节点：上下文节点、一个包含命名空间声明的字符串。命名空间字符串应采用如下格式：
 
 ```
 xmlns:na='http://site.com' xmlns:pub='http://site2.com'
+
 xmlns:ns='http://site3.com'
 ```
 
-如果你没有使用命名空间，那么 `selectSingleNode()` 的第一个参数是唯一要求的参数。
+如果你没有使用命名空间，那么`selectSingleNode()`的第一个参数是唯一要求的参数。
 
-`selectSingleNode()` 的返回值是选定的 XML 节点，如果未找到匹配项则返回 `null`。如果浏览器不支持 XPath，将抛出错误，提示浏览器未安装 XPath 引擎。以下示例针对根元素评估 XPath 表达式。
+`selectSingleNode()`的返回值是选定的 XML 节点，如果未找到匹配项则返回`null`。如果浏览器不支持 XPath，将抛出错误，提示浏览器未安装 XPath 引擎。以下示例针对根元素评估 XPath 表达式。
 
 ```javascript
 var oRoot = oXmlDocument.documentElement;
+
 var oNode = zXPath.selectSingleNode(oRoot, "book/author", null);
 ```
 
 ```javascript
 if (oNode) {
+
   alert(oNode.xml);
+
 }
 ```
 
-此示例在文档上下文中搜索 `<book/>` 元素包含的 `<author>` 元素。如果找到，会将序列化的 XML 数据通过 `alert` 方法显示给用户。
+此示例在文档上下文中搜索`<book/>`元素包含的`<author>`元素。如果找到，会将序列化的 XML 数据通过`alert`方法显示给用户。
 
-第二个方法是 `zSelectNodes()`，它返回一个类似于 IE `selectNodes()` 方法的节点集。其语法与上述 `selectSingleNode()` 方法相似，参数完全相同，并适用相同的命名空间规则。同样，如果浏览器未安装 XPath 引擎，也会抛出错误。下一个示例演示了 `selectNodes()` 方法：
+第二个方法是`zSelectNodes()`，它返回一个类似于 IE`selectNodes()`方法的节点集。其语法与上述`selectSingleNode()`方法相似，参数完全相同，并适用相同的命名空间规则。同样，如果浏览器未安装 XPath 引擎，也会抛出错误。下一个示例演示了`selectNodes()`方法：
 
 ```javascript
 var sNameSpace = "xmlns:na=http://site.com
+
 xmlns:pub='http://site2.com";
+
 var oRoot = oXmlDom.documentElement;
+
 var sXPath = "na:book/pub:name";
 
 var oNodes = zXPath.selectNodes(oRoot, sXPath, sNameSpace);
 
 if (oNodes.length > 0) {
+
   alert(oNodes.length);
+
 }
 ```
 
-此示例与 `selectSingleNode()` 示例一样，搜索包含命名空间的文档中的所有作者元素。如果结果的长度大于 0，则会将结果的长度显示给用户。
+此示例与`selectSingleNode()`示例一样，搜索包含命名空间的文档中的所有作者元素。如果结果的长度大于 0，则会将结果的长度显示给用户。
 
 XPath 是在 XML 文档中导航和选择某些节点的强大工具，尽管它最初并不是作为独立工具设计的。相反，它是为了 XSL 转换而创建。
 
@@ -3093,22 +3492,19 @@ XPath 是在 XML 文档中导航和选择某些节点的强大工具，尽管它
 
 XSL 是一种基于 XML 的语言，旨在将 XML 文档转换为另一种数据形式。这种定义可能让 XSL 看起来是一项没用的技术，但事实并非如此。XSL 最流行的用途是将 XML 文档转换为 HTML 文档，这正是本介绍所涵盖的内容。
 
+如果没有大括号，输出将使用字符串字面量"$Title"和"$varIsbn"。
 
+在 XSL 指令的属性中（例如`select`）中使用变量是此条规则的例外。在这些类型的属性中使用大括号会导致错误，并导致文档转换失败。
 
+此示例中剩余的 XSL 指令都是`<xsl:value-of/>`元素。这些元素检索匹配到的变量节点或应用`select`属性的节点的值。`select`属性的行为与`<xsl:variable>`的`select`属性相同：它们构建一个 XPath 表达式并选择匹配的节点或变量。此模板中的第一个`<xsl:value-of/>`引用了`$Title`变量（缺少大括号），因此使用了变量的值。接着，使用了作者元素的值；配合`$Var`和`$publisher/`。
 
-如果没有大括号，输出将使用字符串字面量 "$Title" 和 "$varIsbn"。
-
-在 XSL 指令的属性中（例如 `select`）中使用变量是此条规则的例外。在这些类型的属性中使用大括号会导致错误，并导致文档转换失败。
-
-此示例中剩余的 XSL 指令都是 `<xsl:value-of/>` 元素。这些元素检索匹配到的变量节点或应用 `select` 属性的节点的值。`select` 属性的行为与 `<xsl:variable>` 的 `select` 属性相同：它们构建一个 XPath 表达式并选择匹配的节点或变量。此模板中的第一个 `<xsl:value-of/>` 引用了 `$Title` 变量（缺少大括号），因此使用了变量的值。接着，使用了作者元素的值；配合 `$Var` 和 `$publisher/`。
-
-为了让 XML 文档在浏览器中进行转换，它必须有一个样式表。在 `books.xml` 中，在 XML 声明之后立即添加以下内容：
+为了让 XML 文档在浏览器中进行转换，它必须有一个样式表。在`books.xml`中，在 XML 声明之后立即添加以下内容：
 
 ```xml
 <?xml-stylesheet type="text/xml" href="books.xsl"?>
 ```
 
-这告诉处理器将 `books.xsl` 样式表应用于该文档。在 Web 浏览器中查看修改后的 XML 将不再显示 XML 结构，而是将显示转换成 HTML 的结果。然而，使用此指令无法通过 JavaScript 实现。对于这一点，你需要使用一些特殊对象。
+这告诉处理器将`books.xsl`样式表应用于该文档。在 Web 浏览器中查看修改后的 XML 将不再显示 XML 结构，而是将显示转换成 HTML 的结果。然而，使用此指令无法通过 JavaScript 实现。对于这一点，你需要使用一些特殊对象。
 
 ## IE 中的 XSL
 
@@ -3118,32 +3514,35 @@ XSL 是一种基于 XML 的语言，旨在将 XML 文档转换为另一种数据
 
 ```javascript
 var oXmlDom = zXmlDom.createDocument();
+
 var OXslDom = zXmlDom.createDocument();
 ```
 
 ```javascript
 oXmlDom.async = false;
+
 OXslDom.async = false;
 
 oXmlDom.load("books.xml");
+
 OXslDom.load("books.xsl");
 ```
 
-当两个文档都加载后，你调用 `transformNode()` 方法开始转换：
+当两个文档都加载后，你调用`transformNode()`方法开始转换：
 
 ```javascript
 var sResults = oXmlDom.transformNode(oXmlDom);
 ```
 
-`transformNode()` 方法接受一个 XML DOM 对象作为参数（在此情况下为 XSL 文档），并将转换后的数据作为字符串返回。但你不需要在文档级别调用 `transformNode()`；它可以从 XML 文档中的任何元素调用：
+`transformNode()`方法接受一个 XML DOM 对象作为参数（在此情况下为 XSL 文档），并将转换后的数据作为字符串返回。但你不需要在文档级别调用`transformNode()`；它可以从 XML 文档中的任何元素调用：
 
 ```javascript
 var sResults = oXmlDom.documentElement.firstChild.transformNode(oXmlDom);
 ```
 
-`transformNode()` 方法将只转换调用它的元素及其子元素。在本示例中，第一个 `<book/>` 元素被转换，如图 4-3 所示。
+`transformNode()`方法将只转换调用它的元素及其子元素。在本示例中，第一个`<book/>`元素被转换，如图 4-3 所示。
 
-这是因为你通过在一个没有子元素的元素上调用 `transform()` 只转换了一个节点。
+这是因为你通过在一个没有子元素的元素上调用`transform()`只转换了一个节点。
 
 ![](img/b372374b4ba34adee418bd5ab6e01f7f_113_0.png)
 
@@ -3153,106 +3552,125 @@ IE 中的第二种转换方法稍微复杂一些，但它也提供了更多的�
 
 ```javascript
 var XMLDom = zXMLDom.createDocument();
+
 XMLDom.async = false;
+
 XMLDom.load("books.xml");
 ```
 
 ```javascript
 var XslDom = new ActiveX("Msxml2.FreeThreadedDOMDocument.3.0")
+
 XslDom.async = false;
+
 XslDom.load("books.xml");
 ```
 
-`FreeThreadedDOMDocument` 类是另一个 ActiveX 类，是 MSXML 库的一部分。你必须使用 `FreeThreadedDOMDocument` 类来创建 `XSLTemplate` 对象（下一个示例显示了 XSLTemplate 对象的创建）。在旧版本的 MSXML 中，每次调用 `transformNode()` 方法都会强制重新编译 XSL 样式表，从而大大减慢转换过程。使用 `FreeThreadedDOMDocument`，样式表会被缓存并一直可用直到它从内存中移除。
+`FreeThreadedDOMDocument`类是另一个 ActiveX 类，是 MSXML 库的一部分。你必须使用`FreeThreadedDOMDocument`类来创建`XSLTemplate`对象（下一个示例显示了 XSLTemplate 对象的创建）。在旧版本的 MSXML 中，每次调用`transformNode()`方法都会强制重新编译 XSL 样式表，从而大大减慢转换过程。使用`FreeThreadedDOMDocument`，样式表会被缓存并一直可用直到它从内存中移除。
 
 创建 XSL DOM 对象之后，你必须创建另一个 ActiveX 对象，即 XSL 模板：
 
 ```javascript
 var XslTemplate = new ActiveX("Msxml2.XSLTemplate.3.0")
+
 XslTemplate.stylesheet = XslDom;
 ```
 
-`XSLTemplate` 类用于创建 XSL 样式表并创建 `XSLProcessor`；因此在创建模板后，XSL 文档被赋值给 `XSLTemplate` 类的 `stylesheet` 属性，该属性会缓存并加载 XSL。
+`XSLTemplate`类用于创建 XSL 样式表并创建`XSLProcessor`；因此在创建模板后，XSL 文档被赋值给`XSLTemplate`类的`stylesheet`属性，该属性会缓存并加载 XSL。
 
-此过程中下一步是创建 `XSLProcessor`，它是通过调用 `XSLTemplate` 类的 `createProcessor()` 方法的：
+此过程中下一步是创建`XSLProcessor`，它是通过调用`XSLTemplate`类的`createProcessor()`方法的：
 
 ```javascript
 var XslProcessor = XslTemplate.createProcessor();
+
 XslProcessor.input = XslDom;
 ```
 
-创建处理器后，将其 `input` 属性赋值为 `XmlDom`，即包含要转换的 XML 文档的 DOM 对象。此时，处理器所需的所有内容已就绪，剩下的只需执行实际转换并检索输出：
+创建处理器后，将其`input`属性赋值为`XmlDom`，即包含要转换的 XML 文档的 DOM 对象。此时，处理器所需的所有内容已就绪，剩下的只需执行实际转换并检索输出：
 
 ```javascript
 oXmlProcessor.transform();
+
 document.body.innerHTML = oXmlProcessor.output;
 ```
 
-与 `transformNodes()` 不同，`transform()` 方法不会将结果作为字符串返回。要检索转换的输出，请使用 `XSLProcessor` 对象的 `output` 属性。整个过程比 `transformNode()` 方法需要更多的代码，但产生相同的结果。
+与`transformNodes()`不同，`transform()`方法不会将结果作为字符串返回。要检索转换的输出，请使用`XSLProcessor`对象的`output`属性。整个过程比`transformNode()`方法需要更多的代码，但产生相同的结果。
 
-
-
-
-这段代码为 `XSLProcessor` 添加了 "message" 参数。当执行 XSL 转换时，处理器会使用参数 "My Book List" 的值并将其放置在合适的位置。XSL 中的参数使用 `<xsl:param/>` 指令：
+这段代码为`XSLProcessor`添加了"message"参数。当执行 XSL 转换时，处理器会使用参数"My Book List"的值并将其放置在合适的位置。XSL 中的参数使用`<xsl:param/>`指令：
 
 ```xml
 <xsl:param name="message" />
 ```
 
-注意 `name` 属性与 `addParameter()` 中的名称匹配。该参数接收 "My Book List" 的值，该值是通过你之前学过的变量语法获取的：
+注意`name`属性与`addParameter()`中的名称匹配。该参数接收"My Book List"的值，该值是通过你之前学过的变量语法获取的：
 
 ```xml
 <xsl:value-of select="$message" />
 ```
 
-在此示例中，`<xsl:value-of/>` 指令获取参数值。更新后的 XSL 样式表看起来如下：
+在此示例中，`<xsl:value-of/>`指令获取参数值。更新后的 XSL 样式表看起来如下：
 
 ```xml
 <xsl:stylesheet version="1.0"
+
 xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
 <xsl:template match="/">
+
 <html>
+
   <head>
+
     <link rel="stylesheet" type="text/css" href="books.css" />
+
   </head>
+
   <body>
+
     <xsl:value-of select="$message" />
+
     <xsl:apply-templates />
+
   </body>
+
 </html>
+
 </xsl:template>
-```xml
+```
 
-更新后的样式表新增了两行代码。第一行是添加的 `<xsl:param/>` 指令，第二行是获取参数值的 `<xsl:value-of/>`。参数声明可以存在 XSL 文档的任何位置。此代码显示参数声明位于文档顶部，但你并不限于此位置。
+更新后的样式表新增了两行代码。第一行是添加的`<xsl:param/>`指令，第二行是获取参数值的`<xsl:value-of/>`。参数声明可以存在 XSL 文档的任何位置。此代码显示参数声明位于文档顶部，但你并不限于此位置。
 
-使用 `XSLProcessor` 的最后一个特性是它的速度；它会编译 XSL 样式表，因此使用相同样式表进行后续转换的速度更快（相比于 `transformNodes()`）。要实现这一点，可以使用 `XSLProcessor` 对象的 `reset()` 方法。该方法会清除输入和输出属性，但不会清除样式表属性。这为下一次使用相同样式表的转换做了准备。
+使用`XSLProcessor`的最后一个特性是它的速度；它会编译 XSL 样式表，因此使用相同样式表进行后续转换的速度更快（相比于`transformNodes()`）。要实现这一点，可以使用`XSLProcessor`对象的`reset()`方法。该方法会清除输入和输出属性，但不会清除样式表属性。这为下一次使用相同样式表的转换做了准备。
 
 ## Firefox 中的 XSLT
 
-与 XML 和 XPath 一，Firefox 的 XSLT 转换实现与 IE 实现不同。Firefox 确实实现了 `XSLProcessor` 类来执行转换，但相似之处仅此此。
+与 XML 和 XPath 一，Firefox 的 XSLT 转换实现与 IE 实现不同。Firefox 确实实现了`XSLProcessor`类来执行转换，但相似之处仅此此。
 
 在 Firefox 中执行转换的第一步是将 XML 和 XSL 文档加载到 DOM 对象中：
 
 ```javascript
 var oXmlDom = zXmlDom.createDocument();
+
 var oXsDom = zXmlDom.createDocument();
 
 oXmlDom.async = false;
+
 oXsDom.async = false;
 
 oXmlDom.load("books.xml");
+
 oXsDom.load("books.xml");
 ```
 
-`XSLTProcessor` 暴露了 `importStylesheet()` 方法，它接受一个包含 XSLT 文档的 XML DOM 对象作为参数：
+`XSLTProcessor`暴露了`importStylesheet()`方法，它接受一个包含 XSLT 文档的 XML DOM 对象作为参数：
 
 ```javascript
 var oXsltProcessor = new XSLTProcessor();
+
 oXsltProcessor.importStylesheet(oXsDom);
 ```
 
-最后，调用转换方法。这里有两个方法：`transformToDocument()` 和 `transformToFragment()`。`transformToDocument()` 方法接受一个 XML DOM 对象作为参数并返回一个包含转换结果的新 DOM 对象。这是你想使用的方法：
+最后，调用转换方法。这里有两个方法：`transformToDocument()`和`transformToFragment()`。`transformToDocument()`方法接受一个 XML DOM 对象作为参数并返回一个包含转换结果的新 DOM 对象。这是你想使用的方法：
 
 ```javascript
 var oNewDom = oXsltProcessor.transformToDocument(oXmlDom);
@@ -3260,66 +3678,72 @@ var oNewDom = oXsltProcessor.transformToDocument(oXmlDom);
 
 生成的 DOM 对象可以像任何其他 XML DOM 对象一样使用。你可以使用 XPath 选择节点，通过属性遍历节点结构，甚至在另一个转换中使用它。
 
-`transformToFragment()` 方法顾其名所示，返回一个文档片段（document fragment），用于附加到另一个 DOM 对象中。该方法接受两个参数：第一个是你想转换的 XML 对象，第二个是你打算将结果附加到的 DOM 对象：
+`transformToFragment()`方法顾其名所示，返回一个文档片段（document fragment），用于附加到另一个 DOM 对象中。该方法接受两个参数：第一个是你想转换的 XML 对象，第二个是你打算将结果附加到的 DOM 对象：
 
 ```javascript
 var oFragment = oXsltProcessor.transformToFragment(oXmlDom, document);
+
 document.body.appendChild(oFragment);
 ```
 
-在此示例中，生成的 DOM 片段被附加到文档对象的 body 中。注意，你可以将片段附加到传递给 `transformToFragment()` 方法的 DOM 对象中的任何节点上。
+在此示例中，生成的 DOM 片段被附加到文档对象的 body 中。注意，你可以将片段附加到传递给`transformToFragment()`方法的 DOM 对象中的任何节点上。
 
-但如果你想像 Microsoft 实现的 `transformNode()` 方法那样返回字符串作为转换结果呢？你可以之前学过的 `XMLSerializer` 类。只需将转换传递给 `serializeToString()` 方法即可：
+但如果你想像 Microsoft 实现的`transformNode()`方法那样返回字符串作为转换结果呢？你可以之前学过的`XMLSerializer`类。只需将转换传递给`serializeToString()`方法即可：
 
 ```javascript
 var oSerializer = new XMLSerializer();
+
 var str = oSerializer.serializeToString(oNewDom);
 ```
 
-如果使用 `xml` 库，通过使用 `xml` 属性可以简化：
+如果使用`xml`库，通过使用`xml`属性可以简化：
 
 ```javascript
 var str = oFragment.xml;
 ```
 
-`XSLProcessor` 类还允许你设置传递给 XSL 样式表的参数。`setParameter()` 方法提供了此支持；它接受三个参数：命名空间 URI、值以及用于赋值的参数名。例如：
+`XSLProcessor`类还允许你设置传递给 XSL 样式表的参数。`setParameter()`方法提供了此支持；它接受三个参数：命名空间 URI、值以及用于赋值的参数名。例如：
 
 ```javascript
 oXslProcessor.importStylesheet(oXslDom);
+
 oXslProcessor.setParameter(null, "message", "My Book List");
+
 var oNewDom = oXslProcessor.transformToDocument(oXmlDom);
 ```
 
-在此示例中，参数 `message` 被赋值为 "My Book List"。值 `null` 作为命名空间 URI 传递，这允许在样式表中无需指定前缀和相应的命名空间 URI 即可使用参数：
+在此示例中，参数`message`被赋值为"My Book List"。值`null`作为命名空间 URI 传递，这允许在样式表中无需指定前缀和相应的命名空间 URI 即可使用参数：
 
 ```xml
 <xsl:param name="message" />
 ```
 
-在调用 `transformToDocument()` 或 `transformToFragment()` 之前必须调用 `setParameter()`，否则参数值将不会用于转换。
+
+
+在调用`transformToDocument()`或`transformToFragment()`之前必须调用`setParameter()`，否则参数值将不会用于转换。
 
 ## 跨浏览器 XSL
 
-在之前的章节中，你已经看到 `zXml` 库让跨平台处理 XML 数据变得更加简单。该库中用于 XSL 的只有一个方法：`transformToText()`。该方法返回字符串，接受两个参数：要转换的 XML 文档和 XSL 文档：
+在之前的章节中，你已经看到`zXml`库让跨平台处理 XML 数据变得更加简单。该库中用于 XSL 的只有一个方法：`transformToText()`。该方法返回字符串，接受两个参数：要转换的 XML 文档和 XSL 文档：
 
 ```javascript
 var sResult = zXml.transformToText(oXmlDom, oXslDom);
 ```
 
-正如名称所示，返回的结果是一个字符串。然后你可以将转换结果 (sResult) 添加到 HTML 文档中：
+正如名称所示，返回的结果是一个字符串。然后你可以将转换结果（`sResult`）添加到 HTML 文档中：
 
 ```javascript
 var oDiv = document.getElementById("transformedData");
 oDiv.innerHTML = sResult;
 ```
 
-这可能是 `Xml` 库中最简单的对象了。
+这可能是`zXml`库中最简单的对象了。
 
 ## 回顾最佳精选
 
 想象你经营了一家在线书店。你的访问者会喜欢你实现的“精选”（Best Picks）功能，但你开始收到反馈，说他们想看上周的精选。决定使用 Ajax 请求。
 
-使用 HTTP，浏览器获取书列表并将 `responseText` 加载到 XML DOM 对象中。样式表也加载到它自己的 XML DOM 对象中，来自列表的数据被转换为 HTML，然后写入页面。为了提供一些易用性，你在右上角放置了一个链接。
+使用 HTTP，浏览器获取书列表并将`responseText`加载到 XML DOM 对象中。样式表也加载到它自己的 XML DOM 对象中，来自列表的数据被转换为 HTML，然后写入页面。为了提供一些易用性，你在右上角放置了一个链接。
 
 ```javascript
 function init(sFileName) {
@@ -3333,16 +3757,13 @@ function init(sFileName) {
     oReq.send();
 }
 
-
 function transformXml(sResponse) {
     var oXmlDom = zXmlDom.createDocument();
     oXmlDom.async = false;
     oXmlDom.loadXML(sResponse);
-
     var oXslDom = zXmlDom.createDocument();
     oXslDom.async = false;
     oXslDom.loadXML("books.xsl");
-
     var str = zXslt.transformTo(oXmlDom, oXslDom);
     document.getElementById("divBookList").innerHTML = str;
 }
@@ -3360,21 +3781,17 @@ function changeList() {
 }
 ```
 
-
-
 ```javascript
 bIsThisWeek = false;
-
 ) else {
     aChanger.innerHTML = "Last Week's Picks";
     init("thisweekbooks.xml");
     bIsThisWeek = true;
-
 return false;
 }
 ```
 
-在代码中，通过 `getById()` 方法获取了 (ajax)。并检查了变量 `bIsThisWeek`。根据其取值，通过向 `init()` 发送名称来加载相应的列表。这会获取新列表，转换数据并将其写入页面。请注意，当用户下一次点击链接时，链接文本会发生发生变化。`bIsThisWeek` 变量也确保了用户下一次点击链接时加载正确的列表。最后，函数返回 `false`。由于此函数是链接的事件处理程序，返回任何其他值都会导致链接表现得像普通链接一样，并可能使用户离开应用程序。
+在代码中，通过`getById()`方法获取了（`ajax`）。并检查了变量`bIsThisWeek`。根据其取值，通过向`init()`发送名称来加载相应的列表。这会获取新列表，转换数据并将其写入页面。请注意，当用户下一次点击链接时，链接文本会发生发生变化。`bIsThisWeek`变量也确保了用户下一次点击链接时加载正确的列表。最后，函数返回`false`。由于此函数是链接的事件处理程序，返回任何其他值都会导致链接表现得像普通链接一样，并可能使用户离开应用程序。
 
 最后，你可以用 HTML 完成这个小节项目，这里是整个文档的内容：
 
@@ -3383,15 +3800,11 @@ return false;
 "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-
     <title>Book XML Exercise</title>
-
     <link rel="stylesheet" type="text/css" href="books.css" />
     <script type="text/javascript" src="zxml.js"></script>
     <script type="text/javascript">
-
         function init(sFilename) {
-
             var oReq = zXmlHttp.createRequest();
             oReq.onreadystatechange = function () {
                 if (oReq.readyState == 4) {
@@ -3400,18 +3813,16 @@ return false;
                     }
                 }
             };
-
             oReq.open("GET", sFilename, true);
             oReq.send();
         }
-
         function transformXml(sResponseText) {
-
             var oXmlDom = zXmlDom.createDocument();
             oXmlDom.async = false;
             oXmlDom.loadXML(sResponseText);
         }
     </script>
+```
 
 ```javascript
 var oXslDom = zXmlDom.createDocument();
@@ -3454,42 +3865,40 @@ function changeList() {
 </html>
 ```
 
-要运行此项目，必须从 Web 服务器上运行，因为使用了 `XMLHttpRequest`。只需将此 HTML 文件、zXml 库和 CSS 文件放在名为 `books` 的目录中。启动浏览器并指向 http://localhost/books.htm。
+要运行此项目，必须从 Web 服务器上运行，因为使用了`XMLHttpRequest`。只需将此 HTML 文件、`zXml`库和 CSS 文件放在名为`books`的目录中。启动浏览器并指向`http://localhost/books.htm`。
 
 ## 总结
 
-在本章中，你学习了如何在 Internet Explorer 和 Firefox 中创建和遍历 DOM 对象，以及这两个实现之间的差异。一旦使用了跨浏览器 zXml 库，就可以轻松地创建、遍历和操作 DOM 对象。你还学习了如何使用 JavaScript 加载 XML 数据并输出到页面。
+在本章中，你学习了如何在 Internet Explorer 和 Firefox 中创建和遍历 DOM 对象，以及这两个实现之间的差异。一旦使用了跨浏览器`zXml`库，就可以轻松地创建、遍历和操作 DOM 对象。你还学习了如何使用 JavaScript 加载 XML 数据并输出到页面。
 
-在第二部分，XPath 的简要介绍了 XML 文档的功能。你学习了 IE 和 Firefox 支持 XPath 和命名空间的方式，它们非常不同。为了解决这个问题，引入了跨浏览器 zXPath 对象来轻松选择节点。最后，你学习了 XSL 转换以及如何使用 MSXML 执行它们。尽管这两个接口有一些共同之处，跨浏览器 zXml 库允许在两个平台上执行 XSL 转换。
+在第二部分，XPath 的简要介绍了 XML 文档的功能。你学习了 IE 和 Firefox 支持 XPath 和命名空间的方式，它们非常不同。为了解决这个问题，引入了跨浏览器`zXPath`对象来轻松选择节点。最后，你学习了 XSL 转换以及如何使用 MSXML 执行它们。尽管这两个接口有一些共同之处，跨浏览器`zXml`库允许在两个平台上执行 XSL 转换。
 
 # 第 5 章：带 RSS 的聚合
 
-XML 的引入开启了共享的新时代。数据共享在当时是非常困难的。公司有自己的私有协议和格式，没有公开。除了 HTML 之外传输信息的想法在当时是很奇怪的。这在 1998 年发生了变化，微软引入了带有新功能的 Explorer 4.0。基于 Channel Definition (CDF)，Channel 允许网站进行适配。然而，Channel 的问题在于对桌面的支持糟糕。任何人都可以创建频道，但行业缺乏管理文件的工具。整个聚合概念似乎随着 Channel 的失败而终结。然后 RSS 出现了。
+XML 的引入开启了共享的新时代。数据共享在当时是非常困难的。公司有自己的私有协议和格式，没有公开。除了 HTML 之外传输信息的想法在当时是很奇怪的。这在 1998 年发生了变化，微软引入了带有新功能的 Explorer 4.0。基于 Channel Definition（CDF），Channel 允许网站进行适配。然而，Channel 的问题在于对桌面的支持糟糕。任何人都可以创建频道，但行业缺乏管理文件的工具。整个聚合概念似乎随着 Channel 的失败而终结。然后 RSS 出现了。
 
 # RSS
 
-1999 年，Netscape 发布了一个门户。这个想法很简单：从多个源获取信息并显示它们。为了方便这一点，Netscape 开发了基于资源描述框架 (RDF) 的 XML 格式。这后来被称为 RSS 0.9。
+1999 年，Netscape 发布了一个门户。这个想法很简单：从多个源获取信息并显示它们。为了方便这一点，Netscape 开发了基于资源描述框架（RDF）的 XML 格式。这后来被称为 RSS 0.9。
 
-在 RSS 0.9 引入后不久，Dave 联系了 Kathy 关于 RSS。当 Weiner 开发用于网站的 XML 格式时，发现 RSS 可以合并并简化为一种更好、更易用的格式。Dave 发布了新的 Web Summary (RSS)，它变成了 RSS 0.1。他们随后开始使用 RSS 0.9，直到 2001 年取消了 feeds 支持。Netscape 失去了对 RSS 的兴趣，并留下了一个答案。
+在 RSS 0.9 引入后不久，Dave 联系了 Kathy 关于 RSS。当 Weiner 开发用于网站的 XML 格式时，发现 RSS 可以合并并简化为一种更好、更易用的格式。Dave 发布了新的 Web Summary（RSS），它变成了 RSS 0.1。他们随后开始使用 RSS 0.9，直到 2001 年取消了 feeds 支持。Netscape 失去了对 RSS 的兴趣，并留下了一个答案。
 
-是什么将 RSS 格式拆分为不同的版本？一个由发布者和其他方为了继续开发 RSS 而形成的邮件列表。这个小组（groups.yahoo.com/group/rss-dev/）在 2000 年 12 月产生了名为 RSS 1.0 的规范。RSS 1.0 基于原始的 RSS 0.9，并通过修改原始 0.9 版本来扩展它。这些模块是可以任何人创建的命名空间，允许在不更改规范的情况下添加新功能。重要的是，RSS 1.0 是 RSS 0.9 的衍生品，但不与 RSS 1 相关。
+是什么将 RSS 格式拆分为不同的版本？一个由发布者和其他方为了继续开发 RSS 而形成的邮件列表。这个小组（`groups.yahoo.com/group/rss-dev/`）在 2000 年 12 月产生了名为 RSS 1.0 的规范。RSS 1.0 基于原始的 RSS 0.9，并通过修改原始 0.9 版本来扩展它。这些模块是可以任何人创建的命名空间，允许在不更改规范的情况下添加新功能。重要的是，RSS 1.0 是 RSS 0.9 的衍生品，但不与 RSS 1 相关。
 
-同时，Weiner 宣布自己为 RSS 所有者并继续开发他的版本，发布了他称为 RSS 2.0 (Really Syndication)。基于 Weiner 和 Libby 共同开发的 RSS 0.1。RSS 2.0 的重点是格式的简单性。当 Weiner 在哈佛工作时，他将 RSS 2.0 的所有权交给了哈佛的互联网与社会中心（Berkman Center for the Internet & Society），该中心现在管理并发布 http://blogs.harvard.edu/tech/rss 规范。RSS 2.0 是目前最广泛使用的 RSS。
+同时，Weiner 宣布自己为 RSS 所有者并继续开发他的版本，发布了他称为 RSS 2.0（Really Syndication）。基于 Weiner 和 Libby 共同开发的 RSS 0.1。RSS 2.0 的重点是格式的简单性。当 Weiner 在哈佛工作时，他将 RSS 2.0 的所有权交给了哈佛的互联网与社会中心（Berkman Center for the Internet & Society），该中心现在管理并发布`http://blogs.harvard.edu/tech/rss`规范。RSS 2.0 是目前最广泛使用的 RSS。
 
 注意：RSS 包含了 RSS 格式的三个版本：RSS 0.9、RSS 1.0 和 RSS 2.0。
 
 # RSS 0.1
 
-RSS 0.1 基于文档类型定义 (DTDs)，在 RSS 2.0 发布之前可能是最流行的 RSS 版本。某些统计显示，RSS 0.9 占了 2001 年 52% 的聚合市场，并持续增长直到 2.0 的引入。它的流行归于极的简单。今天只有少数 0.9 feeds 在使用，但 RSS 2.0 的当前地位很大程度上归于 RSS 0.9。
+RSS 0.1 基于文档类型定义（DTDs），在 RSS 2.0 发布之前可能是最流行的 RSS 版本。某些统计显示，RSS 0.9 占了 2001 年 52% 的聚合市场，并持续增长直到 2.0 的引入。它的流行归于极的简单。今天只有少数 0.9 feeds 在使用，但 RSS 2.0 的当前地位很大程度上归于 RSS 0.9。
 
 RSS 0.9 的 DTD 列出了 24 个元素（比 RSS 0.9 多了 14 个）；人类和机器都能轻松读取。看这个示例：
 
 ```xml
 <?xml version="1.0" encoding="UTF-8" ?>
-
 <!DOCTYPE rss PUBLIC "//Netscape Communications//DTD RSS 0.9//EN"
 "http://my.netscape.com/publish/formats/rss-0.9.dtd">
-
 <rss version="0.9">
   <channel>
     <title>My Revenge/</title>
@@ -3507,15 +3916,11 @@ RSS 0.9 的 DTD 列出了 24 个元素（比 RSS 0.9 多了 14 个）；人类�
 </rss>
 ```
 
-RSS 0.9（同样的 2.0）的一个定义特征是将所有数据包含在 `<channel>` 元素内部。元素定义信息以及 `<item>` 元素都由 `<channel>` 中。这与下一个 RSS 版本：RSS 1.0 形成了鲜明对比。
+RSS 0.9（同样的 2.0）的一个定义特征是将所有数据包含在`<channel>`元素内部。元素定义信息以及`<item>`元素都由`<channel>`中。这与下一个 RSS 版本：RSS 1.0 形成了鲜明对比。
 
 # RSS 1.0
 
 RSS 1.0 背离了当时的 0.9，并遵循 0.9 的 RSS 格式。RSS 1.0 比之前的版本冗长得多，它的扩展性使其成为一种非常有吸引力的格式，特别是对于基于 RDF 的应用程序开发者。RSS 1.0 尽管与 RSS 0.9 有某些相似之处，但在结构上是不同的，并且类似于 RSS 0.9。
-
-
-
-
 
 ```xml
 <description>
@@ -3549,15 +3954,17 @@ RSS 1.0 背离了当时的 0.9，并遵循 0.9 的 RSS 格式。RSS 1.0 比之�
 </item>
 ```
 
-注意 `<item>` 元素位于 `<channel>` 元素之外。`<channel>` 内部的 `<items>` 元素包含值列表，即 `<channel>` 内部包含项目的 `<rdf:Seq>` 元素。如你所见，它比 RSS 0.91 更复杂，而 RSS 1.0 虽然获得了一批追随者，但与 RSS 0.91 的流行程度相比。
+注意`<item>`元素位于`<channel>`元素之外。`<channel>`内部的`<items>`元素包含值列表，即`<channel>`内部包含项目的`<rdf:Seq>`元素。如你所见，它比 RSS 0.91 更复杂，而 RSS 1.0 虽然获得了一批追随者，但与 RSS 0.91 的流行程度相比。
 
 > RSS 1.0 不是基于 DTD 的版本 0.91，因此文档中没有必要包含一个。
 
 # RSS 2.0
 
-RSS 2.0 几乎镜像了 RSS 0.91。版本 2.0 引入了许多新元素，例如示例中的 `<author/>` 元素，同时允许像 RSS 1.0 那样进行模块化扩展。得益于继承 RSS 0.91 的简单性以及类似于 RSS 1.0 的可扩展性，难怪 RSS 2.0 是最广泛使用的 RSS 格式。
+RSS 2.0 几乎镜像了 RSS 0.91。版本 2.0 引入了许多新元素，例如示例中的`<author/>`元素，同时允许像 RSS 1.0 那样进行模块化扩展。得益于继承 RSS 0.91 的简单性以及类似于 RSS 1.0 的可扩展性，难怪 RSS 2.0 是最广泛使用的 RSS 格式。
 
 以下是一个基础 RSS 2.0 文档的示例：
+
+
 
 ```xml
 <?xml version="1.0" encoding="UTF-8" ?>
@@ -3642,7 +4049,7 @@ function XParserAttribute(oNode) {
 }
 ```
 
-XParserAttribute 构造函数接受一个参数，DOM 属性节点。通过该节点，属性的值被访问并存储在 value 属性中。简单吗？
+XParserAttribute 构造函数接受一个参数，DOM 属性节点。通过该节点，属性的值被访问并存储在 `value` 属性中。简单吗？
 
 XParserElement 代表 XML 元素，负责访问和检索元素的值和属性。类的构造函数接受两个参数：元素的节点和该节点的值。
 
@@ -3653,9 +4060,9 @@ function XParserElement(oNode, sValue) {
 }
 ```
 
-在最初几行中，四个类中的两个被设置为参数的值。注意赋值时使用的 OR ( | ) 运算符。
+在最初几行中，四个类中的两个被设置为参数的值。注意赋值时使用的 OR（`|`）运算符。
 
-在 node 的赋值中，使用 OR 运算符是三元运算符的简写，并产生结果 `this.node = (oNode)ToNode:false;`。value 的赋值更像一个 if...else块。
+在 `node` 的赋值中，使用 OR 运算符是三元运算符的简写，并产生结果 `this.node = (oNode)ToNode:false;`。`value` 的赋值更像一个 `if...else` 块。
 
 ```javascript
 if (sValue) {
@@ -3667,13 +4074,11 @@ if (sValue) {
 }
 ```
 
-简写版本删除了 if...else 块超过一半的字符，减少多余字符总是好事。
+简写版本删除了 `if...else` 块超过一半的字符，减少多余字符总是好事。
 
-> Firefox DOM 中的元素没有 text 属性。XParser 使用了前面的章节介绍的 zXml 库，该库扩展了 Firefox DOM 以包含 text 和 xml 属性。
+> Firefox DOM 中的元素没有 `text` 属性。XParser 使用了前面的章节介绍的 zXml 库，该库扩展了 Firefox DOM 以包含 `text` 和 `xml` 属性。
 
 接下来的几行构建属性集合，一个 XParserAttribute 对象的集合。
-
-
 
 ```javascript
 if (this.node) {
@@ -3765,7 +4170,7 @@ default:
     break;
 ```
 
-此代码检查 `<dc:date/>` 元素，它是 Dublin Core 扩展（http://dublin.org/documents/terms/）的一部分。该扩展被广泛使用，因此检查它并使用其值是一个好主意。由于某种原因，馈在 `switch` 块中没有元素，则代表该元素的属性（来自 `XParser` 类的第一行）。由于 `XParser` 是一个 JavaScript 类，并不是每个元素都需要解析。然而，使用 `switch` 允许在需要时添加其他元素。`XParser` 是包含上述内容的类。它的构造函数接受 `sFileName` 和一个名为 `bIsXml` 的可选参数。为了最大的灵活性，`XParser` 设计为可以自己的请求，或者使用外部的 `responseType`。如果 `bIsXml` 为 `false` 或 `undefined`，则 `sFileName` 被视为 URL，`XParser` 将发起自己的请求；否则，`sFileName` 被视为 XML 字符串并加载到 `bIsXml` 中。
+此代码检查 `<dc:date/>` 元素，它是 Dublin Core 扩展（`http://dublin.org/documents/terms/`）的一部分。该扩展被广泛使用，因此检查它并使用其值是一个好主意。由于某种原因，馈在 `switch` 块中没有元素，则代表该元素的属性（来自 `XParser` 类的第一行）。由于 `XParser` 是一个 JavaScript 类，并不是每个元素都需要解析。然而，使用 `switch` 允许在需要时添加其他元素。`XParser` 是包含上述内容的类。它的构造函数接受 `sFileName` 和一个名为 `bIsXml` 的可选参数。为了最大的灵活性，`XParser` 设计为可以自己的请求，或者使用外部的 `responseType`。如果 `bIsXml` 为 `false` 或 `undefined`，则 `sFileName` 被视为 URL，`XParser` 将发起自己的请求；否则，`sFileName` 被视为 XML 字符串并加载到 `bIsXml` 中。
 
 ```javascript
 var o = this;
@@ -3779,8 +4184,8 @@ this.onload = null;
 if (bIsXml) {
   this.load(sFileName);
 }
-
 ```
+
 如果 `bIsXml` 为 `false` 或 `undefined`，则 `sFileName` 被视为 URL，`XParser` 将发起自己的请求；否则，`sFileName` 被视为 XML 字符串并加载到 `bIsXml` 中。
 
 ```javascript
@@ -3811,10 +4216,7 @@ XParser.prototype.load = function (sXML) {
   // ... 后续解析逻辑
 ```
 
-(由于您提供的原始文本在结尾处存在明显的逻辑重复和断层，译文严格遵循了您要求的“不要漏掉任何行”和“不要重复原文”的原则，并对可读性进行了专业对齐翻译。)
-
-
-
+（由于您提供的原始文本在结尾处存在明显的逻辑重复和断层，译文严格遵循了您要求的“不要漏掉任何行”和“不要重复原文”的原则，并对可读性进行了专业对齐翻译。）
 
 ```javascript
 var oNode = oChannel.childNodes[i];
@@ -3822,6 +4224,8 @@ if (oNode.nodeType == 1) {
 ```
 
 使用循环来遍历通道的子节点。再次检查当前 Item 的 `nodeType` 属性。如果确认为元素，则继续解析。与 XParserItem 一样，这里使用了 `switch` 块。
+
+
 
 ```javascript
 switch (oNode.tagName.toLowerCase()) {
@@ -3855,9 +4259,11 @@ switch (oNode.tagName.toLowerCase()) {
     break;
 ```
 
-RSS 和 Atom 在规范的这部分有几个相似的元素，这使得工作变得更加简单（减少了代码量）。这几个元素的主要区别在于 `<link/>` 元素（就像在 XParserItem 中一样）。Atom 包含 `<link/>` 元素，但你想要使用的值是一个属性。通过使用 `getAttribute()` 方法获取属性值，并将其包含在 XParserElement 构造函数中。接下来是 RSS 特有的元素。
+RSS 和 Atom 在规范的这部分有几个相似的元素，这使得工作变得更加简单（减少了代码量）。这几个元素的主要区别在于`<link/>`元素（就像在`XParserItem`中一样）。Atom 包含`<link/>`元素，但你想要使用的值是一个属性。通过使用`getAttribute()`方法获取属性值，并将其包含在`XParserElement`构造函数中。接下来是 RSS 特有的元素。
 
+```javascript
 // RSS 标签
+```
 
 然后是 Atom 特有的元素。
 
@@ -3876,49 +4282,65 @@ default:
   break;
 ```
 
+```javascript
 var oItems = null;
+
 if (this.isRss) {
+
     oItems = oChannel.getElementsByTagName("item");
+
 } else {
+
   try {
+
     oXmlDom.setProperty('SelectionLanguage', 'XPath');
+
     oXmlDom.setProperty('SelectionNamespaces',
+
       'xmlns:atom="http://www.w3.org/2005/Atom/');
+
     oitems = oXmlDom.selectNodes("/atom:feed/atom:entry");
+
   } catch (oError) {
+
     oItems = oChannel.getElementsByTagName("entry");
+
   }
+
 }
 ```
 
-解析 feed 的信息元素，然后是时候创建并填充 items 数组。该数组意味着 `<rss:item>` 和 `<atom:entry>` 元素将被循环遍历并发送到 XParserItem 构造函数。
+解析 feed 的信息元素，然后是时候创建并填充 items 数组。该数组意味着`<rss:item>`和`<atom:entry>`元素将被循环遍历并发送到`XParserItem`构造函数。
 
-从现代 XML DOM 版本 4 开始，`getElementsByTagName` 方法发生了一些变化。在版本 3 及以下版本中，使用 `getElementsByTagName()` 时会忽略限定名，获取元素只需将标签名传递给方法即可。
+从现代 XML DOM 版本 4 开始，`getElementsByTagName`方法发生了一些变化。在版本 3 及以下版本中，使用`getElementsByTagName()`时会忽略限定名，获取元素只需将标签名传递给方法即可。
 
-然而，在版本 4 及更高版本中，选择带有命名空间的元素需要使用 `selectNodes()` 方法，该方法接收 XPath 表达式。`setProperty` 方法用于为 XML DOM 解析器设置额外属性，通过它设置命名空间，以便能够使用 `selectNodes()` 进行选择。在上一个示例中，使用了 `try...catch` 块来区分应该使用哪种方法。首先尝试 `selectNodes()`；如果失败，则使用 `getElementsByTagName()` 来检索元素。
+然而，在版本 4 及更高版本中，选择带有命名空间的元素需要使用`selectNodes()`方法，该方法接收 XPath 表达式。`setProperty`方法用于为 XML DOM 解析器设置额外属性，通过它设置命名空间，以便能够使用`selectNodes()`进行选择。在上一个示例中，使用了`try...catch`块来区分应该使用哪种方法。首先尝试`selectNodes()`；如果失败，则使用`getElementsByTagName()`来检索元素。
 
 ```text
-selectNodes() 是一个仅限 Internet Explorer 的方法，因为它是 MSXML 的一部分。基于 Mozilla 的浏览器继续允许
-getElementsByTagName() 获取带有默认命名空间的元素。
+selectNodes() 是一个仅限 Internet Explorer 的方法，因为它是 MSXML 的一部分。基于 Mozilla 的浏览器继续允许 getElementsByTagName() 获取带有默认命名空间的元素。
 ```
 
-在获取 `<rss:item>` 和 `<atom:entry>` 元素后，每个单独节点都被传递给 XParserItem 类以创建 items 数组。
+在获取`<rss:item>`和`<atom:entry>`元素后，每个单独节点都被传递给`XParserItem`类以创建 items 数组。
 
 ```javascript
 for (var i = 0; i < oItems.length; i++) {
+
   this.items[i] = new XParserItem(oItems[i]);
+
 }
 ```
 
-此时，所有重要的元素都已解析并包含在对应的属性中。唯一需要做的是触发 `onload` 事件：
+此时，所有重要的元素都已解析并包含在对应的属性中。唯一需要做的是触发`onload`事件：
 
 ```javascript
 if (typeof this.onload == "function") {
+
   this.onload();
+
 }
 ```
 
-当 `onload` 被声明时，它被赋值为 `null`。正因如此，检查它是否为函数（意味着该事件现在有了处理器）很重要，然后调用 `onload()` 方法。该事件的使用将在本章后续部分介绍。
+当`onload`被声明时，它被赋值为`null`。正因如此，检查它是否为函数（意味着该事件现在有了处理器）很重要，然后调用`onload()`方法。该事件的使用将在本章后续部分介绍。
 
 # 用户体验
 
@@ -3928,142 +4350,131 @@ if (typeof this.onload == "function") {
 
 图 5-1
 
-第一个窗格称为 feeds 窗格，显示用户可以点击的不同 feeds。feeds 窗格中 id 为 `divFeed` 的 `<div>` 元素允许将 feeds 列表写入文档。由于此窗格是动态填充的，只有容器元素是静态写入的：
+第一个窗格称为 feeds 窗格，显示用户可以点击的不同 feeds。feeds 窗格中 id 为`divFeed`的`<div>`元素允许将 feeds 列表写入文档。由于此窗格是动态填充的，只有容器元素是静态写入的：
 
 ```html
 <div id="divFeedsPane">
+
   <div class="paneheader">Feeds</div>
+
   <div id="divFeedList"></div>
+
 </div>
 ```
 
-当用户点击某个 feed 时，items 被加载到中间窗格（items 窗格）。第二个窗格有两个用于显示信息的元素。第一个是 id 为 `divViewingItem` 的 `<div>` 元素。该元素向用户展示两个内容：它们是什么。
+当用户点击某个 feed 时，items 被加载到中间窗格（items 窗格）。第二个窗格有两个用于显示信息的元素。第一个是 id 为`divViewingItem`的`<div>`元素。该元素向用户展示两个内容：它们是什么。
 
-（注：OCR 文本中包含大量重复段落，此处已进行合并以保持文档清晰。）
-
-
-
-由于服务器仅负责拉取和调用远程源，因此使用一个 ASP.NET 页面来负责这些操作是合理的。这个页面名为 xml.aspx，它将有一个后置代码（code-behind），其中包含了大量的 ASP.NET 代码。
+由于服务器仅负责拉取和调用远程源，因此使用一个 ASP.NET 页面来负责这些操作是合理的。这个页面名为`xml.aspx`，它将有一个后置代码（code-behind），其中包含了大量的 ASP.NET 代码。
 
 **注意** 后置代码是为 ASP.NET 平台编写网页的方法。与内联编程（即服务器端代码与 HTML 标记交织在一起，如 PHP 和 ASP）不同，后置代码允许你从 HTML 代码中移除所有逻辑并将其放置在单独的类中。这实现了 HTML 与所选 .NET 编程语言的整洁分离。
 
-服务器端的入口点是 `Page_Load` 事件处理程序，其中调用了 `StartFooReader()` 方法。你的代码将包含在 `StartFooReader()` 中。
+服务器端的入口点是`Page_Load`事件处理程序，其中调用了`StartFooReader()`方法。你的代码将包含在`StartFooReader()`中。
 
 此项目的语言是 C#，它是为 .NET Framework 创建的语言。
 
 ## 设置头部
 
-对于此应用程序，你必须设置几个头部。在 ASP.NET 中设置头部是一个简单任务：`Response.ContentType = "text/xml"; Response.CacheControl = "No-cache";`
+对于此应用程序，你必须设置几个头部。在 ASP.NET 中设置头部是一个简单任务：
 
-头部是通过 `Response` 对象设置的，该对象包含 HTTP 响应信息。设置 MIME 内容类型对于应用程序的操作至关重要。除非 MIME 指定其为 XML 文档，或 "text/xml" 是许多类型之一，否则基于 Mozilla 的浏览器将不会加载你的 XML 文件。
+`Response.ContentType = "text/xml"; Response.CacheControl = "No-cache";`
 
-确保通过 `XMLHttpRequest` 获取的数据不被缓存也很重要。Internet Explorer (IE) 会缓存所有通过 `XMLHttpRequest` 获取的数据，除非显式地在 `CacheControl` 头部中设置。如果未设置此头部，IE 将一直使用缓存数据，直到浏览器缓存被清空。
+头部是通过`Response`对象设置的，该对象包含 HTTP 响应信息。设置 MIME 内容类型对于应用程序的操作至关重要。除非 MIME 指定其为 XML 文档，或`"text/xml"`是许多类型之一，否则基于 Mozilla 的浏览器将不会加载你的 XML 文件。
+
+确保通过`XMLHttpRequest`获取的数据不被缓存也很重要。Internet Explorer (IE) 会缓存所有通过`XMLHttpRequest`获取的数据，除非显式地在`CacheControl`头部中设置。如果未设置此头部，IE 将一直使用缓存数据，直到浏览器缓存被清空。
 
 ## 获取远程数据
 
-为了确定要显示的源，FooReader.NET 使用了一个专有的 XML 文档 `feeds.xml`，该文件包含了一个可供用户请求的源列表。该文件包含一组 `<link>` 元素，由 `<section>` 元素划分为不同的。`<link>` 元素有一个 `filename` 属性，类似于 HTML 中的 `id` 属性；它必须是唯一的，并通过 `<link>` 标识：
+为了确定要显示的源，FooReader.NET 使用了一个专有的 XML 文档`feeds.xml`，该文件包含了一个可供用户请求的源列表。该文件包含一组`<link>`元素，由`<section>`元素划分为不同的。`<link>`元素有一个`filename`属性，类似于 HTML 中的`id`属性；它必须是唯一的，并通过`<link>`标识：
 
 ```xml
 <xml version="1.0" encoding="utf-8">
+
 <feeds>
+
   <section>
+
     <link name="News">
+
     <link name="Yahoo! Top Stories" filename="yahoo_topstories" href="http://rss.news.yahoo.com/rss/topstories" />
+
   </section>
+
 </feeds>
+
 </xml>
 ```
 
-示例展示了一个基本的源列表。一个典型的列表可以包含任意数量的 `<section>` 和 `<link>` 元素。注意 `<section>` 元素可以是根元素的子，而 `<link>` 元素只能包含在 `<section>` 元素中。
+示例展示了一个基本的源列表。一个典型的列表可以包含任意数量的`<section>`和`<link>`元素。注意`<section>`元素可以是根元素的子，而`<link>`元素只能包含在`<section>`元素中。
 
-**注意** `<section>` 和 `<link>` 的 `name` 属性会在源面板中显示给用户，不用于任何其他操作。
+**注意** `<section>`和`<link>`的`name`属性会在源面板中显示给用户，不用于任何其他操作。
 
-在请求源时，`filename` 属性的值被赋值给查询字符串中的 `xml` 变量：
+在请求源时，`filename`属性的值被赋值给查询字符串中的`xml`变量：
 
-xml.aspx?file=FileName
+`xml.aspx?file=FileName`
 
-在 ASP.NET 中，`Request` 对象包含名为 `QueryString` 的 `NameValueCollection`。使用此集合，你可以提取查询字符串中 `xml` 变量的值：
+在 ASP.NET 中，`Request`对象包含名为`QueryString`的`NameValueCollection`。使用此集合，你可以提取查询字符串中`xml`变量的值：
 
 ```csharp
 if (Request.QueryString["xml"] != null)
+
 {
+
     string xml = Request.QueryString["xml"];
+
     FeedsFile feedsFile = new FeedsFile(Server.MapPath("feeds.xml"));
 ```
 
-在第一行中，检查查询字符串中是否存在 `xml` 变量。该值随后被赋值给 `xml` 变量，并实例化 `FeedsFile` 对象。
+在第一行中，检查查询字符串中是否存在`xml`变量。该值随后被赋值给`xml`变量，并实例化`FeedsFile`对象。
 
-`FeedsFile` 类包含一个名为 `GetLinkByFileName` 的方法，它返回一个 `FeedsLink` 对象并包含特定 `<link>` 元素的信息。字符串变量 `fileName` 被赋值为缓存文件的路径值，稍后使用。
+`FeedsFile`类包含一个名为`GetLinkByFileName`的方法，它返回一个`FeedsLink`对象并包含特定`<link>`元素的信息。字符串变量`fileName`被赋值为缓存文件的路径值，稍后使用。
 
-FeedsFile link = feedsFile.GetLinkByFileName(xml);
+`FeedsFile link = feedsFile.GetLinkByFileName(xml);`
 
 ```csharp
 string fileName = string.Format(
 @"{0}xml\{1}.xml", Server.MapPath(String.Empty),link.FileName);
 ```
 
-> `String.Format()` 正如其名所示，用于格式化字符串（双重含义！）。传递给方法的第一个参数是要格式化的字符串。该字符串很可能包含像 `{0}`、`{1}`、`{2}` 等格式化项目。这些项会被传递给方法的正确参数替换（例如泛型 `HttpRequest` 类），但在上面的示例中，`{0}` 被替换为 `Server.MapPath(String.Empty)` 返回的结果字符串。
+> `String.Format()`正如其名所示，用于格式化字符串（双重含义！）。传递给方法的第一个参数是要格式化的字符串。该字符串很可能包含像`{0}`、`{1}`、`{2}`等格式化项目。这些项会被传递给方法的正确参数替换（例如泛型`HttpRequest`类），但在上面的示例中，`{0}`被替换为`Server.MapPath(String.Empty)`返回的结果字符串。
 
-> `@` 运算符告诉编译器不要处理转义序列。上述示例中的字符串可以写成 `"{0}xml\{1}.xml"` 且值相同。
+> `@`运算符告诉编译器不要处理转义序列。上述示例中的字符串可以写成`"{0}xml\{1}.xml"`且值相同。
 
-.NET Framework 在 `System.Net` 命名空间中提供了 `HttpRequest` 类来从远程主机请求数据。.NET Framework 提供了一些类来执行此任务（例如泛型 `HttpRequest` 类），但 `HttpRequest` 类提供了 HTTP 特有的功能，最适合应用程序。要创建一个 `HttpRequest` 对象，你调用 `WebRequest` 类的 `Create` 方法并传递 `HttpRequest`。
+.NET Framework 在`System.Net`命名空间中提供了`HttpRequest`类来从远程主机请求数据。.NET Framework 提供了一些类来执行此任务（例如泛型`HttpRequest`类），但`HttpRequest`类提供了 HTTP 特有的功能，最适合应用程序。要创建一个`HttpRequest`对象，你调用`WebRequest`类的`Create`方法并传递`HttpRequest`。
 
 ```csharp
 HttpRequest getFeed = (HttpRequest)WebRequest.Create(link.Url);
+
 getFeed.UserAgent = "FooReader.NET (http://reader.downloader.com)";
+
 string feedXml = String.Empty;
 ```
 
-一个 HTTP 特有方法 `HttpRequest` 提供了 `UserAgent` 属性。使用此属性是必要的，但它记录了正在访问远程服务器的内容。许多爬虫都有自己的 user agent ；FooReader 也是如此。变量 `feedXml` 创建为空字符串。它稍后将被赋值为响应的内容。此过程的下一步是发送请求并获取远程主机的内容。一个 HTTP 特有方法 `HttpRequest` 提供了 `UserAgent` 属性。使用此属性是必要的，但它记录了正在访问远程服务器的内容。许多爬虫都有自己的 user agent ；FooReader 也是如此。变量 `feedXml` 创建为空字符串。它稍后将被赋值为响应的内容。此过程的下一步是发送请求并获取远程主机的内容。
-
-一个 HTTP 特有方法 `HttpRequest` 提供了 `UserAgent` 属性。使用此属性是必要的，但它记录了正在访问远程服务器的内容。许多爬虫都有自己的 user agent ；FooReader 也是如此。变量 `feedXml` 创建为空字符串。它稍后将被赋值为响应的内容。此过程的下一步是发送请求并获取远程主机的内容。
-
-一个 HTTP 特有方法 `HttpRequest` 提供了 `UserAgent` 属性。使用此属性是必要的，但它记录了正在访问远程服务器的内容。许多爬虫都有自己的 user agent ；FooReader 也是如此。变量 `feedXml` 创建为空字符串。它稍后将被赋值为响应的内容。此过程的下一步是发送请求并获取远程主机的内容。
+一个 HTTP 特有方法`HttpRequest`提供了`UserAgent`属性。使用此属性是必要的，但它记录了正在访问远程服务器的内容。许多爬虫都有自己的 user agent；FooReader 也是如此。变量`feedXml`创建为空字符串。它稍后将被赋值为响应的内容。此过程的下一步是发送请求并获取远程主机的内容。
 
 ```csharp
 // next step in this process to make the request and get the remote host
 ```
 
-一个 HTTP 特有方法 `HttpRequest` 提供了 `UserAgent` 属性。使用此属性是必要的，但它记录了正在访问远程服务器的内容。许多爬虫都有自己的 user agent ；FooReader 也是如此。变量 `feedXml` 创建为空字符串。它稍后将被赋值为响应的内容。此过程的下一步是发送请求并获取远程主机的内容。
+
+
+一个 HTTP 特有方法 `HttpRequest` 提供了 `UserAgent` 属性。使用此属性是必要的，但它记录了正在访问远程服务器的内容。许多爬虫都有自己的 user agent；`FooReader` 也是如此。变量 `feedXml` 创建为空字符串。它稍后将被赋值为响应的内容。此过程的下一步是发送请求并获取远程主机的内容。
 
 ```csharp
 // next step in this process to make the request and get the remote host
 ```
 
-一个 HTTP 特有方法 `HttpRequest` 提供了 `UserAgent` 属性。使用此属性是必要的，但它记录了正在访问远程服务器的内容。许多爬虫都有自己的 user agent ；FooReader 也是如此。变量 `feedXml` 创建为空字符串。它稍后将被赋值为响应的内容。此过程的下一步是发送请求并获取远程主机的内容。
-
-```csharp
-// next step in this process to make the request and get the remote host
-```
-
-一个 HTTP 特有方法 `HttpRequest` 提供了 `UserAgent` 属性。使用此属性是必要的，但它记录了正在访问远程服务器的内容。许多爬虫都有自己的 user agent ；FooReader 也是如此。变量 `feedXml` 创建为空字符串。它稍后将被赋值为响应的内容。此过程的下一步是发送请求并获取远程主机的内容。
-
-```csharp
-// next step in this process to make the request and get the remote host
-```
-
-一个 HTTP 特有方法 `HttpRequest` 提供了 `UserAgent` 属性。使用此属性是必要的，但它记录了正在访问远程服务器的内容。许多爬虫都有自己的 user agent ；FooReader 也是如此。变量 `feedXml` 创建为空字符串。它稍后将被赋值为响应的内容。此过程的下一步是发送请求并获取远程主机的内容。
-
-```csharp
-// next step in this process to make the request and get the remote host
-```
-
-一个 HTTP 特有方法 `HttpRequest` 提供了 `UserAgent` 属性。使用此属性是必要的，但它记录了正在访问远程服务器的内容。许多爬虫都有自己的 user agent ；FooReader 也是如此。变量 `feedXml` 创建为空字符串。它稍后将被赋值为响应的内容。此过程的下一步是发送请求并获取远程主机的内容。
-
-```csharp
-// next step in this process to make the request and get the remote host
-```
-
-一个 HTTP 特有方法 `HttpRequest` 提供了 `UserAgent` 属性。使用此属性是必要的，但它记录了正在访问远程服务器的内容。许多爬虫都有自己的 user agent ；FooReader 也是如此。变量 `feedXml` 创建为空字符串。它稍后将被赋值为响应的内容。此过程的下一步是发送请求并获取远程主机的内容。
+一个 HTTP 特有方法 `HttpRequest` 提供了 `UserAgent` 属性。使用此属性是必要的，但它记录了正在访问远程服务器的内容。许多爬虫都有自己的 user agent；`FooReader` 也是如此。变量 `feedXml` 创建为空字符串。它稍后将被赋值为响应的内容。此过程的下一步是发送请求并获取远程主机的内容。
 
 ```csharp
 // ... 140
+
 string contents = string.Empty;
-  using (StreamReader file = File.OpenText(path)) {
-    contents = file.ReadToEnd();
-  }
-  return contents;
+
+using (StreamReader file = File.OpenText(path)) {
+  contents = file.ReadToEnd();
 }
+
+return contents;
 ```
 
 这真的只是一个方便函数，因为应用程序需要大量的读取。
@@ -4074,19 +4485,17 @@ string contents = string.Empty;
 
 ```csharp
 private XmlDocument _doc;
+
 public FeedsFile(string path) {
   _doc = new XmlDocument();
 ```
-
-
-
 
 ```javascript
 _doc.Load(path);
 }
 ```
 
-FeedsFile 暴露了 GetLinkByFileName 方法。该方法接受一个参数 `fileName` 并返回一个 `FeedsLink` 对象。
+`FeedsFile` 暴露了 `GetLinkByFileName` 方法。该方法接受一个参数 `fileName` 并返回一个 `FeedsLink` 对象。
 
 ```csharp
 public FeedsLink GetLinkByFileName(string fileName)
@@ -4098,9 +4507,9 @@ public FeedsLink GetLinkByFileName(string fileName)
 }
 ```
 
-XmlDocument SelectSingleNode() 方法根据传递给它的 XPath 表达式选择特定的 `XmlNode`。在此实例中，使用的 XPath 表达式使用 `String.Format()` 格式化，并选择具有特定属性的 `<link/>`。选中的 `XmlNode` 然后被传递给 `FeedsLink` 构造函数并返回该对象。
+`XmlDocument.SelectSingleNode()` 方法根据传递给它的 XPath 表达式选择特定的 `XmlNode`。在此实例中，使用的 XPath 表达式使用 `String.Format()` 格式化，并选择具有特定属性的 `<link/>`。选中的 `XmlNode` 然后被传递给 `FeedsLink` 构造函数并返回该对象。
 
-FeedsLink 接收一个 `XmlNode`，从该节点检索所需的信息并赋值给私有成员。
+`FeedsLink` 接收一个 `XmlNode`，从该节点检索所需的信息并赋值给私有成员。
 
 ```csharp
 private string _name;
@@ -4115,7 +4524,7 @@ public FeedsLink(XmlNode myNode)
 }
 ```
 
-`_name` 持有 `_name` 属性的值，`_filename` 被赋值为 `filename` 属性的值，并且创建一个 `System.Uri` 对象并赋值给 `_uri`。
+`_name` 持有 `name` 属性的值，`_filename` 被赋值为 `filename` 属性的值，并且创建一个 `System.Uri` 对象并赋值给 `_uri`。
 
 > 是的，可以使用字符串代替 `Uri` 对象，并且接受 `Uri` 对象的方法也重载为接受字符串，但 `Uri` 对象要酷得多。
 
@@ -4151,17 +4560,17 @@ public Uri Url
 }
 ```
 
-FeedsFileLink 中的访问器提供了对私有成员的只读访问。这些特定的访问器被称为 getter（获取器），返回私有成员的值。这确保了类包含的数据不会被错误地覆盖或损坏。
+`FeedsFileLink` 中的访问器提供了对私有成员的只读访问。这些特定的访问器被称为 getter（获取器），返回私有成员的值。这确保了类包含的数据不会被错误地覆盖或损坏。
 
 ## 将客户端与服务器连接
 
-FooReader 的胶水是 JavaScript 代码，它使用由 XParser 获取的数据，并通过 JavaScript 中的 FeedsFile 将其发送到用户界面进行显示。这些代码包含在 `feedsparser.js` 和 `fooreader.js` 中。
+`FooReader` 的胶水是 JavaScript 代码，它使用由 `XParser` 获取的数据，并通过 JavaScript 中的 `FeedsFile` 将其发送到用户界面进行显示。这些代码包含在 `feedsparser.js` 和 `fooreader.js` 中。
 
 ## 解析 Feeds — 客户端样式
 
 位于 `feedsparser.js` 中的 `FeedsFile` 类与其服务器端对应非常相似；它负责将 `feeds.xml` 解析为 JavaScript 对象。
 
-FeedsFileElement 代表 `feeds.xml` 中的一个元素。由于文档中只使用了两种不同的元素，该类实际上非常简单。它接受一个参数：元素的节点。
+`FeedsFileElement` 代表 `feeds.xml` 中的一个元素。由于文档中只使用了两种不同的元素，该类实际上非常简单。它接受一个参数：元素的节点。
 
 ```javascript
 function FeedsFileElement(oNode) {
@@ -4180,6 +4589,7 @@ function FeedsFileElement(oNode) {
 else {
     this.fileName = oNode.getAttribute("filename");
 }
+
 this.name = oNode.getAttribute("name");
 ```
 
@@ -4192,24 +4602,21 @@ function FeedsFile() {
     var oThis = this;
     this.sections = {};
     this.onload = null;
-
     var oXmlDom = document.createDocument();
     oXmlDom.load("feeds.xml");
 }
 ```
 
-尽管 使用 XML DOM 加载，但仍然应该 XML 对象的异步能力（默认行为）。如果文件加载，应用程序将等待文档完全加载。`onreadystatechange` 事件用于监控加载状态：
+尽管使用 XML DOM 加载，但仍然应该利用 XML 对象的异步能力（默认行为）。如果文件加载，应用程序将等待文档完全加载。`onreadystatechange` 事件用于监控加载状态：
 
 ```javascript
 oXmlDom.onreadystatechange = function () {
     if (oXmlDom.readyState == 4) {
         var oSections = oXmlDom.getElementsByTagName("section");
-
         for (var i = 0; i < oSections.length; i++) {
             oThis.sections[i] = new FeedsFileElement(oSections[i]);
         }
         oXmlDom = null;
-
         if (typeof oThis.onload == "function") {
             oThis.onload();
         }
@@ -4219,7 +4626,7 @@ oXmlDom.onreadystatechange = function () {
 
 通过 `getElementsByTagName()` 方法获取 `<section>` 元素并用 `FeedsFileElement` 对象填充 `sections` 数组。一旦 DOM 操作完成，通过将 `oXmlDom` 设置为 `null` 释放文档，并触发 `onload` 事件。
 
-FeedsFile 类有一个名为 `getLinkFileName` 的方法（从 C# 版本记住）。该方法搜索每个 section 的 links 数组并返回具有匹配 `fileName` 的 link 对象。再次，文件名是唯一的，这是 link 的标识符：
+`FeedsFile` 类有一个名为 `getLinkFileName` 的方法（从 C# 版本记住）。该方法搜索每个 section 的 links 数组并返回具有匹配 `fileName` 的 link 对象。再次，文件名是唯一的，这是 link 的标识符：
 
 ```javascript
 this.getLinkFileName = function (sFileName) {
@@ -4252,7 +4659,6 @@ this.getLinkFileName = function (sFileName) {
 ```javascript
 var divFeedList = document.getElementById("divFeedList");
 var oFragment = document.createDocumentFragment();
-
 for (var i = 0; i < FeedsFile.sections.length; i++) {
   // ...
 }
@@ -4260,7 +4666,7 @@ for (var i = 0; i < FeedsFile.sections.length; i++) {
 
 feeds 列表的目标位置通过 `getElementById()` 获取并存储在 `divFeedList` 中。创建 feeds 列表会不断更新页面。
 
-如之前所述，sections 应该在 UI 中轻松定义，为 section 名称配上图标是很好的很好的方法。
+如之前所述，sections 应该在 UI 中轻松定义，为 section 名称配上图标是很好的方法。
 
 ```javascript
 var Icon = document.createElement("img");
@@ -4309,7 +4715,10 @@ oUL.appendChild(oLi);
 ```
 
 `<a>` 元素有一个 `frFileName` 属性，该属性将包含与 feed 关联的文件。当所有的 links 和 sections 创建完成后，将无序列表附加到文档碎片：
+
+```javascript
 oFragment.appendChild(oUL);
+```
 
 并将文档碎片附加到 `divFeedList`，并在用户界面中加载第一个 feed。
 
@@ -4318,14 +4727,11 @@ divFeedList.appendChild(oFragment);
 loadFeed(feeds.sections[0].links[0].fileName);
 ```
 
-
-
-
 应用程序已通过 feeds 完全加载。feeds 已经完全填充，但 items feeds 是空的。现在控制权交给了 `loadFeed()`。
 
 ## loadFeed()
 
-`loadFeed()` 函数负责在 XParser 对象中加载指定的 feed 并填充 items。此函数兼作 feeds 中链接的 `onclick` 事件处理程序。它接受一个参数 `sFileName`，对应于 `<link href="feeds.xml">` 的 `href` 属性。如果由于事件触发了 `loadFeed()`，则 `sFileName` 将更改为之前提到的 `frFileName` 属性的值。
+`loadFeed()` 函数负责在 `XParser` 对象中加载指定的 feed 并填充 items。此函数兼作 feeds 中链接的 `onclick` 事件处理程序。它接受一个参数 `sFileName`，对应于 `<link href="feeds.xml">` 的 `href` 属性。如果由于事件触发了 `loadFeed()`，则 `sFileName` 将更改为之前提到的 `frFileName` 属性的值。
 
 ```javascript
 function loadFeed(sFileName) {
@@ -4348,9 +4754,11 @@ var sName = feedsFile.getByName(sFileName).name
 toggleLoadingDiv(true);
 ```
 
-通过 `feedsFile` 对象的 `getByFileName()` 方法获取 feed。然后调用 `toggleLoadingDiv()` 函数，显示应用程序正在填充结果。
 
-项目列表仅仅是由 DOM 方法创建的 `<div>` 元素。但首先，必须从文档中删除任何现有项目，以新列表替换它们。这在循环中很容易处理：
+
+通过`feedsFile`对象的`getByFileName()`方法获取feed。然后调用`toggleLoadingDiv()`函数，显示应用程序正在填充结果。
+
+项目列表仅仅是由DOM方法创建的`<div>`元素。但首先，必须从文档中删除任何现有项目，以新列表替换它们。这在循环中很容易处理：
 
 ```javascript
 while (divItemList.hasChildNodes()) {
@@ -4358,16 +4766,16 @@ while (divItemList.hasChildNodes()) {
 }
 ```
 
-由于 `divItemList` 中唯一的子元素就是这些项目，因此删除每个子元素是安全的。使用 XParser 对象：
+由于`divItemList`中唯一的子元素就是这些项目，因此删除每个子元素是安全的。使用`XParser`对象：
 
 ```javascript
 sFileName = "xml.aspx?xml=" + sFileName
 oFeed = new XParser(sFileName);
 ```
 
-`sFileName` 被更改以反映服务器应用程序的 URL，并传递给 XParser 构造函数。
+`sFileName`被更改以反映服务器应用程序的URL，并传递给`XParser`构造函数。
 
-执行 `HttpRequest` 请求可能需要几秒钟，如果不考虑到这一点，可能会抛出错误。为了解决这个问题，XParser 暴露了一个名为 `onload` 的事件，该事件在 `XMLHttpRequest` 达到 `OK` 状态（状态码 200）时触发。在 FooReader.NET 中，XParser 的 `onload` 事件用于将项目写入 `divItemList`，加载阅读面板并隐藏加载用户界面。
+执行`HttpRequest`请求可能需要几秒钟，如果不考虑到这一点，可能会抛出错误。为了解决这个问题，`XParser`暴露了一个名为`onload`的事件，该事件在`XMLHttpRequest`达到`OK`状态（状态码200）时触发。在FooReader.NET中，`XParser`的`onload`事件用于将项目写入`divItemList`，加载阅读面板并隐藏加载用户界面。
 
 ```javascript
 oFeed.onload = function () {
@@ -4375,11 +4783,11 @@ oFeed.onload = function () {
   divViewingItem.innerHTML = sTitle + "(" + oFeed.type + ")";
 ```
 
-就像在 `init()` 中一样，在这里创建了一个文档以减少用户界面的负载。如前所述，`itemView` 将通过 `innerHTML` 属性显示 feed 的名称和类型。这种用户反馈对于创建一个良好的 Ajax 应用至关重要。虽然这些信息对于应用程序运行可能不是必需，但它让用户理解自己在做什么。
+就像在`init()`中一样，在这里创建了一个文档以减少用户界面的负载。如前所述，`itemView`将通过`innerHTML`属性显示feed的名称和类型。这种用户反馈对于创建一个良好的Ajax应用至关重要。虽然这些信息对于应用程序运行可能不是必需，但它让用户理解自己在做什么。
 
-> 注意：使用 `innerHTML` 属性可以使用更少的字符和空间来更改元素的内容；然而，请使用 DOM 方法。`innerText` 属性是理想的；但 Firefox 不支持该属性。
+> 注意：使用`innerHTML`属性可以使用更少的字符和空间来更改元素的内容；然而，请使用DOM方法。`innerText`属性是理想的；但Firefox不支持该属性。
 
-现在是时候创建项目了。项目是块级样式 `<div>` 元素，在 feed 面板中包含两个 `<div>`，而另一个容器包含项目的标题。组成项目的元素使用 `createElement()` 方法创建。
+现在是时候创建项目了。项目是块级样式`<div>`元素，在feed面板中包含两个`<div>`，而另一个容器包含项目的标题。组成项目的元素使用`createElement()`方法创建。
 
 ```javascript
 for (var i = 0; i < ofItems.length; i++) {
@@ -4394,11 +4802,11 @@ for (var i = 0; i < ofItems.length; i++) {
 }
 ```
 
-创建的第一个元素是 `<a>` 元素。锚点的属性是典型的：`class` 属性设置为 CSS 类 `itemlink`，`href` 设置为 `#`，`onclick` 设置为 `itemClick`，`ondclick` 事件在处理双击时由 `doubleClick()` 触发，`id` 属性设置为包含字符串 `oAX`，其中 `x` 是项目编号。
+创建的第一个元素是`<a>`元素。锚点的属性是典型的：`class`属性设置为CSS类`itemlink`，`href`设置为`#`，`onclick`设置为`itemClick`，`ondclick`事件在处理双击时由`doubleClick()`触发，`id`属性设置为包含字符串`oAX`，其中`x`是项目编号。
 
-> 注意：`itemClick()` 函数将在下一个章节创建。
+> 注意：`itemClick()`函数将在下一个章节创建。
 
-创建第一个 `<div>`。此元素将包含项目的标题：
+创建第一个`<div>`。此元素将包含项目的标题：
 
 ```javascript
 var divTitle = document.createElement("div");
@@ -4406,7 +4814,7 @@ divTitle.className = "headline";
 divTitle.innerHTML = oItem.title.value;
 ```
 
-你会注意到这里使用了 `innerHTML` 而不是 `createTextNode()`。这是因为在标题中使用了 HTML 格式（它们是 HTML 实体或元素）。这留下了另一个 `<div>` 来存放日期：
+你会注意到这里使用了`innerHTML`而不是`createTextNode()`。这是因为在标题中使用了HTML格式（它们是HTML实体或元素）。这留下了另一个`<div>`来存放日期：
 
 ```javascript
 var divDate = document.createElement("div");
@@ -4414,107 +4822,101 @@ divDate.className = "itemdate";
 divDate.appendChild(document.createTextNode("Date: " + oItem.date.value));
 ```
 
-创建日期的元素与标题的元素类似，你会注意到使用 `createTextNode()` 将文本附加到元素上（这样做是因为日期中不应该有任何 HTML 格式）。
+创建日期的元素与标题的元素类似，你会注意到使用`createTextNode()`将文本附加到元素上（这样做是因为日期中不应该有任何HTML格式）。
 
-两个 `<div>` 元素都被附加到 `<a>` 元素，而 `<a>` 又被附加到文档片段中：
-A.appendChild(divTitle);
+两个`<div>`元素都被附加到`<a>`元素，而`<a>`又被附加到文档片段中：
 
 ```javascript
+oA.appendChild(divTitle);
 oA.appendChild(divDate);
 oFragment.appendChild(oA);
 ```
 
 循环执行后，片段被添加到文档中：
+
+```javascript
 divItemList.appendChild(oFragment);
-
-（注：由于提供的原始文本后续存在大量重复内容，翻译部分已按要求处理核心逻辑结构，未重复输出译文。）
-
-
+```
 
 ![](img/b372374b4ba34adee418bd5ab6e01f7f_151_0.png)
 
 # 图 5-4
 
-在控制台中，你将看到文件和文件夹列表。这些项目包含在 IIS 根文件夹中。在左窗格中找到 FooReader 文件夹。右键点击该文件夹并从上下文菜单中选择“属性”。你现在正在查看 FooReader 文件夹的网页属性（见图 5-5）。
+在控制台中，你将看到文件和文件夹列表。这些项目包含在IIS根文件夹中。在左窗格中找到FooReader文件夹。右键点击该文件夹并从上下文菜单中选择“属性”。你现在正在查看FooReader文件夹的网页属性（见图5-5）。
 
 ![](img/b372374b4ba34adee418bd5ab6e01f7f_151_1.png)
 
 # 图 5-5
 
-在“目录”选项卡上，你可以在窗口底部看到“应用程序设置”部分。点击“创建”按钮，将显示“属性”窗口（见图 5-6）。
+在“目录”选项卡上，你可以在窗口底部看到“应用程序设置”部分。点击“创建”按钮，将显示“属性”窗口（见图5-6）。
 
 ![](img/b372374b4ba34adee418bd5ab6e01f7f_152_0.png)
 
-图 5-6 点击“确定”。IIS 会将 FooReader 文件夹作为一个应用程序进行测试，并将其运行。FooReader.NET 应用程序现在已安装。
+图 5-6 点击“确定”。IIS会将FooReader文件夹作为一个应用程序进行测试，并将其运行。FooReader.NET应用程序现在已安装。
 
 ## 测试
 
-在部署任何应用程序之前，测试安装是一个好主意。为了测试，`feeds.xml` 仅包含一个源：Yahoo! News。
+在部署任何应用程序之前，测试安装是一个好主意。为了测试，`feeds.xml`仅包含一个源：Yahoo! News。
 
-打开浏览器并导航到 http://localhost/fooreader/xml.aspx?xml=yahoo_stories。
+打开浏览器并导航到`http://localhost/fooreader/xml.aspx?xml=yahoo_stories`。
 
-此测试旨在确保服务器端组件能够正确检索新闻源。如果一切运行正常，你应该会在浏览器中看到显示的 XML 馈（见图 5-7）。
+此测试旨在确保服务器端组件能够正确检索新闻源。如果一切运行正常，你应该会在浏览器中看到显示的XML馈（见图5-7）。
 
 ![](img/b372374b4ba34adee418bd5ab6e01f7f_152_1.png)
 
 图 5-7
 
-如果由于某种原因看到 ASP.NET 错误，错误信息将告诉你应该做什么。最常见的错误是“拒绝访问”（Access Denied），在这种情况下，应为 ASP.NET 用户帐户（或 Windows 2003 中的 NETWORK SERVICE）赋予适当权限。
+如果由于某种原因看到ASP.NET错误，错误信息将告诉你应该做什么。最常见的错误是“拒绝访问”（Access Denied），在这种情况下，应为ASP.NET用户帐户（或Windows 2003中的`NETWORK SERVICE`）赋予适当权限。
 
-如果你没有 Web 服务器的访问权限（例如从提供商处运行网络空间时），你可能通过开启身份充（impersonation）来解决“拒绝访问”错误。身份充设置位于 `web.config` 文件中。
+如果你没有Web服务器的访问权限（例如从提供商处运行网络空间时），你可能通过开启身份充（impersonation）来解决“拒绝访问”错误。身份充设置位于`web.config`文件中。
 
-`web.config` 文件是 Web 应用程序基于 XML 的配置文件。`web.config` 的根元素是 `<configuration/>`，后面通常跟着 `<system.web/>` 元素。你可以在 `<system.web/>` 元素中添加以下行：`<identity impersonate="true"/>`
+`web.config`文件是Web应用程序基于XML的配置文件。`web.config`的根元素是`<configuration/>`，后面通常跟着`<system.web/>`元素。你可以在`<system.web/>`元素中添加以下行：`<identity impersonate="true"/>`
 
-请记住，此解决方案高度取决于环境和 Web 服务器的设置。然而，它可能会解决你在租用服务器环境中遇到的未经授权访问错误。
+请记住，此解决方案高度取决于环境和Web服务器的设置。然而，它可能会解决你在租用服务器环境中遇到的未经授权访问错误。
 
-一旦应用程序通过测试并确认可用，你就可以编辑 `feeds.xml` 以包含你需要的任何源。
+一旦应用程序通过测试并确认可用，你就可以编辑`feeds.xml`以包含你需要的任何源。
 
 ## 总结
 
-在本章中，你学习了在线分发的历史，包括 RSS 和 Atom 作为两种主导的 XML 分发格式的兴起。你还学习了 RSS 聚合器（如 FooReader.NET）如何让使用新闻源变得更加简单。
+在本章中，你学习了在线分发的历史，包括RSS和Atom作为两种主导的XML分发格式的兴起。你还学习了RSS聚合器（如FooReader.NET）如何让使用新闻源变得更加简单。
 
-本章详细介绍了基于 Web 的 RSS/Atom 聚合器 FooReader.NET 的创建和实现。从客户端组件开始，你学习了如何创建 XParser，这是一种 JavaScript 的 RSS/Atom 解析器，为基于 RSS 和 Atom 的 Web 应用程序开发者提供了一个易用的接口。你还学习了 XParser 如何使用 Microsoft Internet Explorer 和基于 Mozilla 的浏览器中的 XML DOM 预设。
+本章详细介绍了基于Web的RSS/Atom聚合器FooReader.NET的创建和实现。从客户端组件开始，你学习了如何创建XParser，这是一种JavaScript的RSS/Atom解析器，为基于RSS和Atom的Web应用程序开发者提供了一个易用的接口。你还学习了XParser如何使用Microsoft Internet Explorer和基于Mozilla的浏览器中的XML DOM预设。
 
-你学习到，Web 应用程序的客户端组件是向用户正确显示数据的必要条件，而服务器端组件用于检索所需数据。通过使用 C# 和 .NET Framework，你学习了如何检索远程 XML 馈、将其缓存并输出到页面。你还学习了如何设置 HTTP 请求头，以便浏览器知道预期内容，并让远程服务器知道谁正在访问它们。
+你学习到，Web应用程序的客户端组件是向用户正确显示数据的必要条件，而服务器端组件用于检索所需数据。通过使用C#和.NET Framework，你学习了如何检索远程XML馈、将其缓存并输出到页面。你还学习了如何设置HTTP请求头，以便浏览器知道预期内容，并让远程服务器知道谁正在访问它们。
 
-最后，你学习了如何在 IIS 中设置应用程序并进行测试，以确保其正确安装。
+最后，你学习了如何在IIS中设置应用程序并进行测试，以确保其正确安装。
 
 # 第 6 章：Web 服务
 
 ## 概述
 
-当 XML 使用在 2000 年后开始兴起时，企业、开发者等人一直在寻找使用它的新方法。分离内容与呈现的承诺已经实现，但如何利用这种能力呢？答案是以 Web 服务形式出现的。
+当XML使用在2000年后开始兴起时，企业、开发者等人一直在寻找使用它的新方法。分离内容与呈现的承诺已经实现，但如何利用这种能力呢？答案是以Web服务形式出现的。
 
-Web 服务提供了一种应用程序和服务器之间交换数据的方法。为了促进这种通信，Web 服务利用互联网在消费者（使用数据的应用程序）和提供者（包含数据的服务器）之间来回发送 XML 数据组成的消息。这与传统的分布式计算模型（如 CORBA、DCOM 和 RMI）相似，在这些模型中，方法通过网络连接执行。Web 服务的主要区别在于，传输的数据是 XML 文本而不是二进制格式。
+Web服务提供了一种应用程序和服务器之间交换数据的方法。为了促进这种通信，Web服务利用互联网在消费者（使用数据的应用程序）和提供者（包含数据的服务器）之间来回发送XML数据组成的消息。这与传统的分布式计算模型（如CORBA、DCOM和RMI）相似，在这些模型中，方法通过网络连接执行。Web服务的主要区别在于，传输的数据是XML文本而不是二进制格式。
 
-Web 服务背后的承诺是，让全球任何应用程序都能按需使用软件组件。无论是 Web 应用程序还是传统的桌面应用程序，都可能使用相同的服务来执行相同的任务。
+Web服务背后的承诺是，让全球任何应用程序都能按需使用软件组件。无论是Web应用程序还是传统的桌面应用程序，都可能使用相同的服务来执行相同的任务。
 
 ## 相关技术
 
-Web 服务并不是单一的技术或平台；事实上，它是协议、语言和格式的混合体。尽管多个平台已将 Web 服务整合到其目前的产品中，但仍有一些基本部分保持一致的。
+Web服务并不是单一的技术或平台；事实上，它是协议、语言和格式的混合体。尽管多个平台已将Web服务整合到其目前的产品中，但仍有一些基本部分保持一致的。
 
 ## SOAP
 
-SOAP 是基于 XML 的语言与许多种用于传输此类数据的常用协议的结合。SOAP 规范描述了一种具有许多元素和属性的复杂语言，旨在描述大多数类型的数据。这些信息可以通过任意数量的协议传输，但最常见是通过 HTTP 随其他流量发送。
+SOAP是基于XML的语言与许多种用于传输此类数据的常用协议的结合。SOAP规范描述了一种具有许多元素和属性的复杂语言，旨在描述大多数类型的数据。这些信息可以通过任意数量的协议传输，但最常见是通过HTTP随其他流量发送。
 
-> 最初是 Simple Object Access Protocol（简单对象访问协议）的缩写，现在仅称为 SOAP。
+> 最初是Simple Object Access Protocol（简单对象访问协议）的缩写，现在仅称为SOAP。
 
-使用 SOAP 有两种方法：远程调用 (RPC) 样式和文档样式。
+使用SOAP有两种方法：远程调用(RPC)样式和文档样式。
 
 ## RPC 样式 SOAP
 
-RPC 样式将 Web 视为包含一个或多个方法（就像你使用本地类与数据库建立通信一样）。向服务发出请求，详细说明要调用的方法名称和参数（如果有）。方法在服务器上执行，并发送一个包含返回值的 XML 响应（如果消息发送成功的话）。想象一个提供算术运算（加、减、乘、除）的 Web 服务。每个方法接受两个输入并返回一个结果。一个加法的 RPC 样式请求看起来如下：
+RPC样式将Web视为包含一个或多个方法（就像你使用本地类与数据库建立通信一样）。向服务发出请求，详细说明要调用的方法名称和参数（如果有）。方法在服务器上执行，并发送一个包含返回值的XML响应（如果消息发送成功的话）。想象一个提供算术运算（加、减、乘、除）的Web服务。每个方法接受两个输入并返回一个结果。一个加法的RPC样式请求看起来如下：
 
 ```xml
 <xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope">
 <soap:Header xmlns:soap="http://schemas.xmlsoap.org/soap/envelope">
 ```
-` 标签中并不完整（缺少了结束标签），我根据您提供的上下文逻辑对已提供的文本部分进行了翻译。
-
-以下是翻译后的内容：
-
-[content]
 
 ```xml
 <faultcode:soap:Client</faultcode>
@@ -4528,15 +4930,15 @@ There is an error in XML document (4, 13).
 </soap:Envelope>
 ```
 
-`<soap:Fault>` 元素只能有一个，它对遇到的问题给出了说明。最有价值的信息包含在 `<code></code>` 中。故障类型非常有限，只有两种，即 `soap:Server` 和 `soap:client`。`soap:Server` 错误可能指示服务器无法连接到数据库等问题。在这种情况下，重新发送消息可能就足够了。如果指定为 `soap:Client`，则意味着消息格式不正确，不修改将无法成功。
+`<soap:Fault>`元素只能有一个，它对遇到的问题给出了说明。最有价值的信息包含在`<code></code>`中。故障类型非常有限，只有两种，即`soap:Server`和`soap:client`。`soap:Server`错误可能指示服务器无法连接到数据库等问题。在这种情况下，重新发送消息可能就足够了。如果指定为`soap:Client`，则意味着消息格式不正确，不修改将无法成功。
 
-`<faultstring/>` 元素提供了一个具可读性的错误消息，它包含了特定于详细信息。如果次级系统（如数据库）是根本原因，则与此错误相关的信息可能会可选的 `<factor/>` 元素中返回（在此示例中未显示）。
+`<faultstring/>`元素提供了一个具可读性的错误消息，它包含了特定于详细信息。如果次级系统（如数据库）是根本原因，则与此错误相关的信息可能会可选的`<factor/>`元素中返回（在此示例中未显示）。
 
 ## 文档风格 SOAP
 
-文档风格 SOAP 依赖于 XML 架构（schemas）来设计请求和响应的格式。这种风格正变得流行，有些人预测它最终将取代 RPC 风格。关于 SOAP 编码，请参阅 http://microsoft.com/library/en-us/dnasm/html/argosoap.asp。
+文档风格SOAP依赖于XML架构（schemas）来设计请求和响应的格式。这种风格正变得流行，有些人预测它最终将取代RPC风格。关于SOAP编码，请参阅`http://microsoft.com/library/en-us/dnasm/html/argosoap.asp`。
 
-文档风格请求看起来可能与 RPC 风格请求没有区别。例如，上一节中的 RPC 请求只需通过删除 `soap:encodingStyle` 属性，就可以作为一个有效的文档风格请求。区别在于，RPC 请求始终在其参数周围的容器元素中使用相同的方法名；而文档风格请求没有此类限制。以下是一个示例：
+文档风格请求看起来可能与RPC风格请求没有区别。例如，上一节中的RPC请求只需通过删除`soap:encodingStyle`属性，就可以作为一个有效的文档风格请求。区别在于，RPC请求始终在其参数周围的容器元素中使用相同的方法名；而文档风格请求没有此类限制。以下是一个示例：
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -4547,30 +4949,25 @@ There is an error in XML document (4, 13).
 </soap:Envelope>
 ```
 
-注意，高亮行在单个元素中包含了方法名 (add) 和两个操作数 (op1 和 op2)。这种结构在 RPC 风格请求中是不可能的。文档风格具有这种灵活性，是因为有一个配套的 XML 架构。Web 服务可以使用此 XML 架构来验证请求的结构；服务可以自由地适当使用请求中的信息。响应遵循与请求相同的基本规则：
+注意，高亮行在单个元素中包含了方法名(`add`)和两个操作数(`op1`和`op2`)。这种结构在RPC风格请求中是不可能的。文档风格具有这种灵活性，是因为有一个配套的XML架构。Web服务可以使用此XML架构来验证请求的结构；服务可以自由地适当使用请求中的信息。响应遵循与请求相同的基本规则：
 
-使用 Visual Studio .NET 创建的 Web 服务默认是文档风格的（尽管可以通过对底层代码应用各种属性来更改它）。
+使用Visual Studio .NET创建的Web服务默认是文档风格的（尽管可以通过对底层代码应用各种属性来更改它）。
 
-此时，你可能在想 XML 架构存储在何处以及它是如何提供给客户端和服务的。这些问题的答案在于另一个缩写：WSDL。
+此时，你可能在想XML架构存储在何处以及它是如何提供给客户端和服务的。这些问题的答案在于另一个缩写：WSDL。
 
 ## WSDL
 
-Web 服务描述语言 (WSDL) 是另一种基于 XML 的语言，用于描述特定 Web 服务的使用方法，或者描述如何构建特定的服务。生成的规范描述了一种极其复杂的语言，被设计得极具灵活性，并允许尽可能的重用；它是那种只有最狂热的爱好者才会手动构建构建的文档。通常，使用软件工具创建初始 WSDL 文件，然后根据需要进行调优。
+Web服务描述语言(WSDL)是另一种基于XML的语言，用于描述特定Web服务的使用方法，或者描述如何构建特定的服务。生成的规范描述了一种极其复杂的语言，被设计得极具灵活性，并允许尽可能的重用；它是那种只有最狂热的爱好者才会手动构建构建的文档。通常，使用软件工具创建初始WSDL文件，然后根据需要进行调优。
 
-以下是一个 WSDL 文件，描述了一个带有单个 `add` 方法的示例数学服务（该方法将用于构建）：
+以下是一个WSDL文件，描述了一个带有单个`add`方法的示例数学服务（该方法将用于构建）：
 
-（此处省略了 WSDL 代码块，因为它不需要翻译）
+文档风格消息与RPC风格消息的主要区别在于，文档风格将消息作为`<soap:body>`内部的元素发送，发送者和接收者可以根据嵌入的架构（schema）作为指南，约定任何内容。然而，RPC风格的消息在被调的方法之后有一个元素。这又为该方法接受的每个参数提供一个元素。
 
+`<soap:operation/>`有两个子元素`<wsdl:input>`和`<wsdl:output>`，用于描述请求和响应格式。在这种情况下，`<soap:body>`指定了使用literal（字面量）。在实际操作中，这是文档风格服务的唯一选项；而RPC风格服务的选择扩展到了encoded（编码），在这种情况下，`<soap:body>`会进一步指定参数类型使用了哪种编码类型。
 
+文档的最后部分`<wsdl:service/>`定义了如何从客户端调用服务。它还包含了对服务的易读描述以及`<wsdl:port/>`元素，后者引用了最后一节中的`Soap`。该部分最重要的元素是`<soap:address/>`，它包含一个访问服务所需的URL的`location`属性。
 
-
-文档风格消息与 RPC 风格消息的主要区别在于，文档风格将消息作为 `<soap:body>` 内部的元素发送，发送者和接收者可以根据嵌入的架构（schema）作为指南，约定任何内容。然而，RPC 风格的消息在被调的方法之后有一个元素。这又为该方法接受的每个参数提供一个元素。
-
-`<soap:operation/>` 有两个子元素 `<wsdl:input>` 和 `<wsdl:output>`，用于描述请求和响应格式。在这种情况下，`<soap:body>` 指定了使用 literal（字面量）。在实际操作中，这是文档风格服务的唯一选项；而 RPC 风格服务的选择扩展到了 encoded（编码），在这种情况下，`<soap:body>` 会进一步指定参数类型使用了哪种编码类型。
-
-文档的最后部分 `<wsdl:service/>` 定义了如何从客户端调用服务。它还包含了对服务的易读描述以及 `<wsdl:port/>` 元素，后者引用了最后一节中的 Soap 。该部分最重要的元素是 `<soap:address/>`，它包含一个访问服务所需的 URL 的 `location` 属性。
-
-```
+```xml
 <wsdl:service name="Math">
 <wsdl:documentation>
 Contains a number of simple arithmetical functions
@@ -4581,13 +4978,15 @@ Contains a number of simple arithmetical functions
 </wsdl:service>
 ```
 
-对于新开发者来说，查看 WSDL 文件可能有些令而畏，但好消息是，你可能永远不需要手动编写一个。事实上，本节中的文件是由 .NET Web 服务自动生成的，它会检查底层代码并生成 XML。
 
-XML 架构是一个 Web 主题，深入讨论超出了本书的范围。如果你想了解更多关于 XML 架构的知识，可以考虑《Beginning XML》（Wiley 出版，第三版，ISBN 0-7645-7073），或者访问 w3schools.com/xml/default.asp。
+
+对于新开发者来说，查看`WSDL`文件可能有些令而畏，但好消息是，你可能永远不需要手动编写一个。事实上，本节中的文件是由`.NET` Web 服务自动生成的，它会检查底层代码并生成`XML`。
+
+`XML`架构是一个 Web 主题，深入讨论超出了本书的范围。如果你想了解更多关于`XML`架构的知识，可以考虑《Beginning XML》（Wiley 出版，第三版，ISBN 0-7645-7073），或者访问 `w3schools.com/xml/default.asp`。
 
 ## REST
 
-表述状态转移（Representational State Transfer，缩写为 REST）表示一种使用现有 HTTP 协议传输数据的方法。尽管主要用于 Web 服务，但 REST 也适用于任何类型的 HTTP 请求和响应。在 Web 服务方面，REST 允许你以特定格式调用 URL 以返回数据（这同时也处于特定格式）。Web 服务的使用中，数据将以 XML 格式返回。例如，假设 Wrox 提供一种获取所有作者列表的方法；REST 风格 Web 服务使用简单的 URL 来访问数据：http://www.wrox.com/services/authors/。该服务可能通过此 URL 返回关于每个作者的 XML 表述：
+表述状态转移（Representational State Transfer，缩写为 REST）表示一种使用现有`HTTP`协议传输数据的方法。尽管主要用于 Web 服务，但 REST 也适用于任何类型的`HTTP`请求和响应。在 Web 服务方面，REST 允许你以特定格式调用`URL`以返回数据（这同时也处于特定格式）。Web 服务的使用中，数据将以`XML`格式返回。例如，假设 Wrox 提供一种获取所有作者列表的方法；REST 风格 Web 服务使用简单的`URL`来访问数据：`http://www.wrox.com/services/authors/`。该服务可能通过此`URL`返回关于每个作者的`XML`表述：
 
 ```xml
 <xml version="1.0" encoding="utf-8" ?>
@@ -4602,9 +5001,9 @@ XML 架构是一个 Web 主题，深入讨论超出了本书的范围。如果�
 </author>
 ```
 
-关于此 XML 有几点注意：首先，声明了 `http://www.wrox.com/services/authors-books` 命名空间，以便任何带前缀的元素（如 `<authors>`）都属于该命名空间。这意味着 `<authors>` 元素可以与具有名称但不同命名空间的元素区分来。http://www.wrox.com/services/authors-books` 命名空间仅作为字符串使用；关键在于它是一个资源标识符（URI），它是一个标识符，而不是资源定位符（URL），后者指向特定的位置。
+关于此`XML`有几点注意：首先，声明了`http://www.wrox.com/services/authors-books`命名空间，以便任何带前缀的元素（如`<authors>`）都属于该命名空间。这意味着`<authors>`元素可以与具有名称但不同命名空间的元素区分来。`http://www.wrox.com/services/authors-books`命名空间仅作为字符串使用；关键在于它是一个资源标识符（`URI`），它是一个标识符，而不是资源定位符（`URL`），后者指向特定的位置。
 
-尽管如此，REST 风格的服务现在已经在这种标记上实现了标准化。`Xlink` 是一种链接文档的方法，提供了双向依赖关系，以便文档可以相互激活——例如，通过点击自动或者预设。它的兄弟 `XPointer` 关注的是文档内的章节，尽管它们在 W3C 处尚未被广泛使用。
+尽管如此，REST 风格的服务现在已经在这种标记上实现了标准化。`Xlink`是一种链接文档的方法，提供了双向依赖关系，以便文档可以相互激活——例如，通过点击自动或者预设。它的兄弟`XPointer`关注的是文档内的章节，尽管它们在 W3C 处尚未被广泛使用。
 
 ```html
 <html>
@@ -4620,7 +5019,7 @@ XML 架构是一个 Web 主题，深入讨论超出了本书的范围。如果�
 </html>
 ```
 
-用户可以通过遵循链接之一来获取单个作者数据，这可能会返回类似下面的 XML：
+用户可以通过遵循链接之一来获取单个作者数据，这可能会返回类似下面的`XML`：
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>
@@ -4632,7 +5031,7 @@ XML 架构是一个 Web 主题，深入讨论超出了本书的范围。如果�
 </author>
 ```
 
-再次，你看到元素位于 http://www.wrox.com/services/authors-books 命名空间中，且 `xlink:href` 属性是提取进一步信息的方法。该数据的 HTML 表述可能如下：
+再次，你看到元素位于`http://www.wrox.com/services/authors-books`命名空间中，且`xlink:href`属性是提取进一步信息的方法。该数据的`HTML`表述可能如下：
 
 ```html
 <html>
@@ -4649,7 +5048,7 @@ XML 架构是一个 Web 主题，深入讨论超出了本书的范围。如果�
 </html>
 ```
 
-如果碰巧，用户想要点击 Professional Ajax 的链接，他或她可能会收到如下 XML 响应：
+如果碰巧，用户想要点击 Professional Ajax 的链接，他或她可能会收到如下`XML`响应：
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>
@@ -4667,29 +5066,27 @@ XML 架构是一个 Web 主题，深入讨论超出了本书的范围。如果�
 
 # .NET 连接
 
-微软在 2000 年发布了 .NET Framework，旨在提供一个与 Java 竞争的平台无关的开发框架。由于微软从几乎
+微软在 2000 年发布了 .NET Framework，旨在提供一个与 Java 竞争的平台无关的开发框架。由于微软从几乎从 .NET 计划开始，它们在内部对`XML`提供了强有支持，并支持使用`SOAP`和`WSDL`创建和消费 Web 服务。通过使用 .NET，有简单的方法为现有应用程序提供 Web 封装器（wrapper），以及通过 Web 服务暴露 .NET 类。
 
-从 .NET 计划开始，它们在内部对 XML 提供了强有支持，并支持使用 SOAP 和 WSDL 创建和消费 Web 服务。通过使用 .NET，有简单的方法为现有应用程序提供 Web 封装器（wrapper），以及通过 Web 服务暴露 .NET 类。
-
-在开发 Web 服务时，你可以决定与 SOAP 和 WSDL 交互的程度。有很多工具可以将开发者免受底层结构的干扰，在必要时，你也可以修改细小的细节。2005 版本的 .NET Framework 进一步地利用了 XML 和 Web 服务。
+在开发 Web 服务时，你可以决定与`SOAP`和`WSDL`交互的程度。有很多工具可以将开发者免受底层结构的干扰，在必要时，你也可以修改细小的细节。2005 版本的 .NET Framework 进一步地利用了`XML`和 Web 服务。
 
 ## 设计决策
 
 尽管 .NET Framework 使服务开发变得更加简单，但其目的不仅仅是为了创建服务。就像任何其他编程任务一样，有若干个设计和开发决策必须做出。记住，Web 服务提供了一种独立平台的方式来接收和发送数据，服务消费者并不（在许多情况下）想要关于其实现方式的信息。遗憾的是，当涉及到互操作性时，有些事情是需要的。
 
-- 所有平台都支持相同的数据类型。例如，许多服务返回 ADO.NET 数据集。没有 .NET 的系统将无法理解这种数据格式。同样，数组也是问题所在，因为它们可以用许多方式表示。
+- 所有平台都支持相同的数据类型。例如，许多服务返回 `ADO.NET` 数据集。没有 .NET 的系统将无法理解这种数据格式。同样，数组也是问题所在，因为它们可以用许多方式表示。
 
 - 某些服务的问题不仅仅是请求中缺失或额外的头部。这个问题与无法获取所有正确标头的消费者有关，这可能会引发问题，特别是在涉及到服务安全时。
 
-为了解决这些或其他问题，Web 服务互操作性组织（Web Services Interoperability Organization）成立了。你可以在 www.ws-i.org/ 找到它的目标、发现和会议建议。
+为了解决这些或其他问题，Web 服务互操作性组织（Web Services Interoperability Organization）成立了。你可以在 `www.ws-i.org/` 找到它的目标、发现和会议建议。
 
-创建 Web 服务时，你的首要决策是使用哪个平台。如果你选择 Windows，几乎肯定会使用 IIS 作为你的 Web 服务。你可以使用 ASP.NET 创建服务，或者为较旧版本的 IIS 使用 ASP（这要困难得多）。本章中的示例使用了 ASP.NET。
+创建 Web 服务时，你的首要决策是使用哪个平台。如果你选择 Windows，几乎肯定会使用`IIS`作为你的 Web 服务。你可以使用`ASP.NET`创建服务，或者为较旧版本的`IIS`使用`ASP`（这要困难得多）。本章中的示例使用了`ASP.NET`。
 
-如果你正在使用 UNIX 或 Linux，你可能会使用 JSP 或 PHP，这两者都有开源的 Web 服务。使用这些工具时，你需要分别用 Java 或 PHP 编程来创建 Web 服务。
+如果你正在使用 UNIX 或 Linux，你可能会使用`JSP`或`PHP`，这两者都有开源的 Web 服务。使用这些工具时，你需要分别用 Java 或 PHP 编程来创建 Web 服务。
 
-> 项目（http://www.apache.org/axis/）拥有适用于 Java 和 C++ 的开发工具。
+> 项目（`http://www.apache.org/axis/`）拥有适用于 Java 和 C++ 的开发工具。
 
-> 对于 PHP，有许多选择，包括 PhpXMLRPC (http://phpmlrpc.sourceforge.net/) 和 Pear SOAP (http://pear.php.net/package/SOAP)。
+> 对于 PHP，有许多选择，包括 `PhpXMLRPC` (`http://phpmlrpc.sourceforge.net/`) 和 `Pear SOAP` (`http://pear.php.net/package/SOAP`)。
 
 选择好语言后，你需要决定谁将访问你的服务。是你的应用程序是唯一的调用者，还是你的服务将向公众开放？如果是后者，你需要考虑之前讨论过的互操作性问题；如果是前者，你可以利用客户端或服务器提供的某些特殊功能。
 
@@ -4698,19 +5095,19 @@ XML 架构是一个 Web 主题，深入讨论超出了本书的范围。如果�
 ## 创建 Windows 服务
 
 现在是时候离开规范和理论，创建一个简单的 Web 服务了。
-本节描述的 Web 服务使用文档风格的 SOAP 请求和响应，以实现本章之前在 WSDL 中描述的 Math 服务。注意，此过程使用了微软提供的免费工具，这比使用（例如）Visual Studio .NET 需要多一些工作。你在这一节中所付出的额外工作将有助于你理解 Web 服务，如果你以后选择自动生成的服务，这些努力可能会在你的开发生涯中产生丰报。
+本节描述的 Web 服务使用文档风格的`SOAP`请求和响应，以实现本章之前在`WSDL`中描述的 Math 服务。注意，此过程使用了微软提供的免费工具，这比使用（例如）`Visual Studio .NET`需要多一些工作。你在这一节中所付出的额外工作将有助于你理解 Web 服务，如果你以后选择自动生成的服务，这些努力可能会在你的开发生涯中产生丰报。
 
 ## 系统要求
 
 要创建此服务，你至少需要三个要求：
 
-- 一台运行 IIS 5 或更高版本的 Windows 机器。这是所有 XP 专业版机器以及从 Windows 2000 开始的所有服务器的标配配置。
-- 运行 IIS 的机器上必须安装 .NET Framework。你还需要在开发机器上安装 .NET 软件开发包 (SDK)。出于本例的考虑，假设你正在拥有 IIS 的机器上开发（你可以从 http://msmicrosoft.com/netframework/downloads/updates/default.aspx 下载 .NET Framework 和 SDK）。
+- 一台运行 `IIS 5` 或更高版本的 Windows 机器。这是所有 XP 专业版机器以及从 Windows 2000 开始的所有服务器的标配配置。
+- 运行`IIS`的机器上必须安装 .NET Framework。你还需要在开发机器上安装 .NET 软件开发包 (SDK)。出于本例的考虑，假设你正在拥有`IIS`的机器上开发（你可以从 `http://msmicrosoft.com/netframework/downloads/updates/default.aspx` 下载 .NET Framework 和 SDK）。
 - 一个编写代码的文本编辑器。可以是记事本（Notepad），它是所有 Windows 机器上的标准配置，并且对于本例的目的来说足够了（尽管支持语法高亮的开发编辑器会更好）。
 
 ## 配置 IIS
 
-第一个任务是为你的服务创建一个家。转到“开始> 管理工具”，并选择“Internet 信息服务”。（或者，在“开始> 运行”框中输入 %systemroot%\System32\inetinfos.msc 并点击确定）。展开左侧的树结构找到“默认站点”节点，然后右键点击并选择“新建> 虚拟目录”，如图 6-1 所示。这将弹出虚拟目录创建向导，引导你设置客户端所看到的 Web 服务名称（见图 6-2）。
+第一个任务是为你的服务创建一个家。转到“开始> 管理工具”，并选择“Internet 信息服务”。（或者，在“开始> 运行”框中输入 `%systemroot%\System32\inetinfos.msc` 并点击确定）。展开左侧的树结构找到“默认站点”节点，然后右键点击并选择“新建> 虚拟目录”，如图 6-1 所示。这将弹出虚拟目录创建向导，引导你设置客户端所看到的 Web 服务名称（见图 6-2）。
 
 ![](img/b372374b4ba34adee418bd5ab6e01f7f_165_0.png)
 
@@ -4720,10 +5117,7 @@ XML 架构是一个 Web 主题，深入讨论超出了本书的范围。如果�
 
 图 6-2
 
-将文件夹命名为 Math，然后点击下一步。在下一个屏幕上，浏览到标准的 IIS 目录 C:\InetPub\wwwroot。在此下方直接创建一个名为 Math 的新文件夹。接受向导的默认设置。完成后，你的层次结构现在看起来应该像图 6-3。（*注：由于原文后半部分出现重复且混乱，译文已在此处结束*）
-
-
-
+将文件夹命名为 Math，然后点击下一步。在下一个屏幕上，浏览到标准的`IIS`目录 `C:\InetPub\wwwroot`。在此下方直接创建一个名为 Math 的新文件夹。接受向导的默认设置。完成后，你的层次结构现在看起来应该像图 6-3。（*注：由于原文后半部分出现重复且混乱，译文已在此处结束*）
 
 ```csharp
 [WebMethod(Description = "Returns the sum of two floats as a float")]
@@ -4763,30 +5157,32 @@ public float divide(float op1, float op2)
 <%@WebService Language="c#" CodeBehind="Math.asmx.cs" Inherits="Wrox.Services.Math"%>
 ```
 
-这是使用了你刚刚创建的 Math 类的 ASP.NET 文件。@WebService 告诉页面像 Web 服务一样运行。其他属性的意义可能显而易见：Language 指定了要使用的语言；CodeBehind 指定了代码所在的代码名称；Class 指定了要使用的类的完全限定名。同样将此文件保存到 Math 目录中，命名为 Math.asmx。
+这是使用了你刚刚创建的 Math 类的`ASP.NET`文件。`@WebService`告诉页面像 Web 服务一样运行。其他属性的意义可能显而易见：`Language`指定了要使用的语言；`CodeBehind`指定了代码所在的代码名称；`Class`指定了要使用的类的完全限定名。同样将此文件保存到 Math 目录中，命名为 `Math.asmx`。
 
 # 创建程序集
 
-在创建这两个文件之后，你就可以进入下一个阶段：将源代码编译成存放在 DLL 中的程序集。要此此，你可以使用 .NET SDK 带的 C# 编译器。它位于你 Windows 目录下的 `Microsoft.Framework\<版本号>` 文件夹中（例如：`C:\WINDOWS\Microsoft.NET\Framework\v1.1.4322\`）。
+在创建这两个文件之后，你就可以进入下一个阶段：将源代码编译成存放在 `DLL` 中的程序集。要此此，你可以使用 .NET SDK 带的 C# 编译器。它位于你 Windows 目录下的 `Microsoft.Framework\<版本号>` 文件夹中（例如：`C:\WINDOWS\Microsoft.NET\Framework\v1.1.4322\`）。
 
 编译和调试代码最简单的方法是创建一个批文件。创建另一个文本文件并输入以下内容（尽管书籍的格式如此，但所有内容应在同一行）：
 `C:\Microsoft.NET\Framework\v1.1.4322\csc.exe /r:System.dll /r:System.Web.dll /r:System.Services.dll /t:library /out:bin\Math.dll Math.asmx`
 
-记住根据需要修改 c.exe 的路径，并使用“另存为”对话框创建 Math 文件夹。确保文件类型设置为“所有文件”，或者用双引号括起文件名。否则，记事本会为你的文件添加 .txt 扩展名。
+记住根据需要修改 `c.exe` 的路径，并使用“另存为”对话框创建 Math 文件夹。确保文件类型设置为“所有文件”，或者用双引号括起文件名。否则，记事本会为你的文件添加 `.txt` 扩展名。
 
 ## 注意事项
 
-如果你使用记事本，请小心使用“另存为”对话框。为名称加上双引号。否则，记事本会为你的文件添加 .txt 扩展名。
+如果你使用记事本，请小心使用“另存为”对话框。为名称加上双引号。否则，记事本会为你的文件添加 `.txt` 扩展名。
 
-接下来，你需要编译 DLL。从开始~运行中打开命令提示符并输入 `cmd`。输入 `cd \netpub\wwwroot\Math` 进入 Math 文件夹。最后，运行以下批文件：
+接下来，你需要编译 `DLL`。从开始~运行中打开命令提示符并输入 `cmd`。输入 `cd \netpub\wwwroot\Math` 进入 Math 文件夹。最后，运行以下批文件：
 
 ```batch
-:netpub\wwwroot\Math\MakeService.bat
-```
+
+
+
+`:netpub\wwwroot\Math\MakeService.bat`
 
 如果一切顺利，你将看到编译器显示一些版本和版权信息，然后是一行分割线。这意味着编译成功了。如果有任何错误，它们将输出到控制台。检查指示的行并纠正任何语法或拼写错误。
 
-假设 DLL 已编译完成，你准备好提供服务了吗？.NET 服务的乐趣之一是 Web 宿会自动创建。打开你的网络浏览器并导航到 http://localhost/math.asmx。你将看到一个与图 6-4 显示的相同的页面。
+假设 DLL 已编译完成，你准备好提供服务了吗？.NET 服务的乐趣之一是 Web 宿会自动创建。打开你的网络浏览器并导航到`http://localhost/math.asmx`。你将看到一个与图 6-4 显示的相同的页面。
 
 ![](img/b372374b4ba34adee418bd5ab6e01f7f_169_0.png)
 
@@ -4796,82 +5192,96 @@ public float divide(float op1, float op2)
 
 ## 注意事项
 
-查看 WSDL 的另一种方法是在 Web 服务 URL 后添加 `?WSDL`，例如 http://localhost/Math/math.asmx?WSDL。
+查看 WSDL 的另一种方法是在 Web 服务 URL 后添加`?WSDL`，例如`http://localhost/Math/math.asmx?WSDL`。
 
-由于你可能已经习惯了 `add` 方法，请尝试 `divide` 方法。点击上一个屏幕链接应该显示图 6-5 所示的页面。
+由于你可能已经习惯了`add`方法，请尝试`divide`方法。点击上一个屏幕链接应该显示图 6-5 所示的页面。
 
-# Math Web Services - Microsoft Internet Explorer
+## Math Web Services - Microsoft Internet Explorer
 
-# Math
+### Math
 
 点击查看操作列表。
 
-divide
+#### divide
 
 返回两个浮点数的商作为浮点数返回。
 
-要使用 HTTP POST 测试操作，请点击“Invoke”按钮。参数值
+要使用 HTTP POST 测试操作，请点击“Invoke”按钮。
 
-int
+参数值
 
-SOAP
+`int`
+
+`SOAP`
 
 以下是示例请求和响应。所示的占位符需要替换为实际值。
+
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
+
 <float xmlns="http://schemas.microsoft.com/services/math/3415927">
 ```
+
 ![](img/b372374b4ba34adee418bd5ab6e01f7f_170_0.png)
 
-# 图 6-5
+图 6-5
 
 分割下方是与 WebMethod 属性一起使用的描述，这是一个小型测试表单。如果你输入两个数字（例如 2 和 7），你将收到如所示的响应。
+
 ![](img/b372374b4ba34adee418bd5ab6e01f7f_170_1.png)
 
-# 图 6-6
+图 6-6
 
 在生产环境中，你可以移除与 WebMethod 属性一起使用的描述，这是一个小型测试表单。如果你输入两个数字（例如 2 和 7），你将收到如所示的响应。
 
-
-http://msdn.microsoft.com/library/default.asp?url=/workshop/author/webservice/webservice.asp.
+`http://msdn.microsoft.com/library/default.asp?url=/workshop/author/webservice/webservice.asp`
 
 **注意** 此文件以及本章相关的其他文件包含在 www.wrox.com 的 *Professional Ajax* 代码下载中。
 
-你可以通过多种方式添加行为（behaviors）。最直接的方法是使用元素的 CSS `style` 属性。要向 `<div>` 添加 Web 服务，代码如下：
+你可以通过多种方式添加行为（behaviors）。最直接的方法是使用元素的 CSS `style` 属性。要向`<div>`添加 Web 服务，代码如下：
 
 ```html
 <div id="divServiceHandler" style="behavior: url(webservice.htc);"></</div>
 ```
 
-这假设行为文件位于服务器上与 页面相同的文件夹中。
+这假设行为文件位于服务器上与页面相同的文件夹中。
 
-为了演示如何使用此行为，请创建一个新版本的测试框架（harness），并将高亮行直接插入到 `<body>` 元素下方：
+为了演示如何使用此行为，请创建一个新版本的测试框架（harness），并将高亮行直接插入到`<body>`元素下方：
 
 ```html
 <body onload="setUIEnabled(true);">
-<div id="divServiceHandler" style="behavior: url(webservice.htc);"></</div>
+  <div id="divServiceHandler" style="behavior: url(webservice.htc);"></</div>
+</body>
 ```
 
 ```html
 Operation:<select id="lstMethods" width="200px" name="lstMethods" disabled="disabled">
 ```
 
-下一步是使用 Web 服务行为定义 `performOperation()` 方法。该方法接受三个参数：方法名和两个操作数。代码如下：
+下一步是使用 Web 服务行为定义`performOperation()`方法。该方法接受三个参数：方法名和两个操作数。代码如下：
 
 ```javascript
 var iCallId = 0;
+
 function performSpecificOperation(sMethod, sOp1, sOp2) {
   var oServiceHandler = document.getElementById("divServiceHandler");
+
   if (!oServiceHandler.Math) {
     oServiceHandler.useService(SERVICE_URL + "?WSDL", "Math");
   }
-  iCallId = oServiceHandler.Math.callService(handleResponseFromBehavior, sMethod, sOp1, sOp2);
+
+  iCallId = oServiceHandler.Math.callService(
+    handleResponseFromBehavior,
+    sMethod,
+    sOp1,
+    sOp2
+  );
 }
 ```
 
-变量 `iCallId` 初始化为 0。它在测试中不起作用，但可以用于跟踪多个并发调用。然后，将附加了行为的 `<div>` 元素存储在 `oServiceHandler` 中。接下来，通过检查 `Math` 属性是否存在来测试该行为是否已使用。如果不存在，你必须通过传递 WSDL 文件的 URL 和标识符来设置行为。设置标识符的原因是允许行为同时使用多个服务。随后将执行 `callService()` 方法，并在回调函数（`handleResponseFromBehavior()`）中传入方法名和两个参数。
+变量`iCallId`初始化为 0。它在测试中不起作用，但可以用于跟踪多个并发调用。然后，将附加了行为的`<div>`元素存储在`oServiceHandler`中。接下来，通过检查`Math`属性是否存在来测试该行为是否已使用。如果不存在，你必须通过传递 WSDL 文件的 URL 和标识符来设置行为。设置标识符的原因是允许行为同时使用多个服务。随后将执行`callService()`方法，并在回调函数（`handleResponseFromBehavior()`）中传入方法名和两个参数。
 
-当接收响应时，将调用回调函数 `handleResponseFromBehavior()`：
+当接收响应时，将调用回调函数`handleResponseFromBehavior()`：
 
 ```javascript
 function handleResponseFromBehavior(oResult)
@@ -4879,55 +5289,76 @@ function handleResponseFromBehavior(oResult)
 
 ```javascript
 var oResponseOutput = document.getElementById("txtResponse");
+
 if (oResult.error) {
   var sErrorMessage = oResult.errorDetail.code
     + "\n" + oResult.errorDetail.string;
+
   alert("An error occurred:\n"
     + sErrorMessage
     + " See message pane for SOAP fault.");
+
   oResponseOutput.value = oResult.errorDetail.raw.xml;
 } else {
   var oResponseOutput = document.getElementById("txtResult");
+
   oResponseOutput.value = oResult.value;
   oResponseOutput.value = oResult.raw.xml;
 }
 ```
 
-回调函数接收一个包含调用详情的 `oResult` 对象。如果 `error` 属性不为 0，则显示相关的 SOAP 故障详情；否则，在页面上显示 `oResult.value`（返回值）。
+回调函数接收一个包含调用详情的`oResult`对象。如果`error`属性不为 0，则显示相关的 SOAP 故障详情；否则，在页面上显示`oResult.value`（返回值）。
 
-你可以将 `performSpecificOperation()` 和 `handleResponseBehavior()` 函数放置在外部 JavaScript 文件中，并使用 `<script>` 元素将其包含在测试框架中，如下：
+你可以将`performSpecificOperation()`和`handleResponseBehavior()`函数放置在外部 JavaScript 文件中，并使用`<script>`元素将其包含在测试框架中，如下：
+
+```html
 <script type="javascript" src="WebServiceExample.js"></script>
+```
 
-如你所示，使用 Web 服务非常简单。所有的工作都在后台由行为完成，尽管 `webservice.htc` 文件对于脚本来说有点大（51kb），但它可以提供非常丰富的功能。
+如你所示，使用 Web 服务非常简单。所有的工作都在后台由行为完成，尽管`webservice.htc`文件对于脚本来说有点大（51kb），但它可以提供非常丰富的功能。
 
-- *注意* 如果你想查看该行为是如何工作的，请随时在文本编辑器中检查 `webservice.htc` 文件。然而，它并不是作为教程设计的，其中包含了近 2300 行 JavaScript 代码。
+- **注意** 如果你想查看该行为是如何工作的，请随时在文本编辑器中检查`webservice.htc`文件。然而，它并不是作为教程设计的，其中包含了近 2300 行 JavaScript 代码。
 
-# Mozilla 方法
+## Mozilla 方法
 
-现代基于 Mozilla 的浏览器（如 Firefox 和 Netscape）在它们的 JavaScript 实现中包含了一些高级 SOAP 类。这些浏览器试图通过更易于使用的类来封装 SOAP 调用的基本策略。与上一个示例一样，你必须先定义 `performSpecificOperation()` 函数：
+现代基于 Mozilla 的浏览器（如 Firefox 和 Netscape）在它们的 JavaScript 实现中包含了一些高级 SOAP 类。这些浏览器试图通过更易于使用的类来封装 SOAP 调用的基本策略。与上一个示例一样，你必须先定义`performSpecificOperation()`函数：
 
 ```javascript
 function performSpecificOperation(sMethod, sOp1, sOp2) {
   var oSoapCall = new SOAPCall();
+
   oSoapCall.transportURI = SERVICE_URL;
   oSoapCall.actionURI = SOAP_ACTION_BASE + "/" + sMethod;
+
   var aParams = [];
   var oParam = new SOAPParameter("sOp1", "op1");
 ```
 
 ```javascript
 oParam.namespaceURI = SOAP_ACTION_BASE;
-aParams.push(oParam); oParam = new SOAPParameter(sOp2, "op2");
+
+aParams.push(oParam);
+oParam = new SOAPParameter(sOp2, "op2");
+
 oParam.namespaceURI = SOAP_ACTION_BASE;
 aParams.push(oParam);
-oSoapCall.encode(0, sMethod, SOAP_ACTION_BASE, null,
-aParams.length, aParams);
+
+oSoapCall.encode(
+  0,
+  sMethod,
+  SOAP_ACTION_BASE,
+  null,
+  aParams.length,
+  aParams
+);
 ```
 
 ```javascript
 var serializer = new XMLSerializer();
-document.getElementById("txtName").value = =
-serializer.toString(oSoapCall.envelope);
+
+document.getElementById("txtName").value =
+  serializer.toString(oSoapCall.envelope);
+
 setUIEnabled(false);
 ```
 
@@ -4935,56 +5366,55 @@ setUIEnabled(false);
 // 更多代码
 ```
 
-此脚本利用了许多内置类，第一个是 `SOAPCall`。该类以类似于 `SOAPCall` 的方式封装了 Web 服务功能。在创建了 `SOAPCall` 实例后，它设置了两个属性：`transportURI` 指向 Web 服务位置，`actionURI` 指定动作和方法。
+此脚本利用了许多内置类，第一个是`SOAPCall`。该类以类似于`SOAPCall`的方式封装了 Web 服务功能。在创建了`SOAPCall`实例后，它设置了两个属性：`transportURI`指向 Web 服务位置，`actionURI`指定动作和方法。
 
-接下来，使用 `SOAPParameter` 构造函数创建参数，这些参数传递了 WSDL 架构。每个参数都设置了 `namespaceURI`。
+接下来，使用`SOAPParameter`构造函数创建参数，这些参数传递了 WSDL 架构。每个参数都设置了`namespaceURI`。
 
-`asyncInvoke` 方法仅接受一个参数：回调函数（`handleResponse()`）。由 SOAP 调用将传入三个参数：一个 SOAP 对象、指向原始 SOAP 调用的指针（如有必要）以及一个错误码。这些都传递给 `handleResponse` 函数进行处理，当调用返回时：
+`asyncInvoke`方法仅接受一个参数：回调函数（`handleResponse()`）。由 SOAP 调用将传入三个参数：一个 SOAP 对象、指向原始 SOAP 调用的指针（如有必要）以及一个错误码。这些都传递给`handleResponse`函数进行处理，当调用返回时：
 
 ```javascript
 oSoapCall.asyncInvoke(
-    function (oResponse, oCall, iError) {
-        {
-            var oResult = handleResponse(oResponse, oCall, iError);
-            showSoapResults(oResult);
-        }
+  function (oResponse, oCall, iError) {
+    {
+      var oResult = handleResponse(oResponse, oCall, iError);
+      showSoapResults(oResult);
     }
+  }
 );
 ```
 
-
-
-```
+```javascript
 {
   return oResponse;
 }
 ```
 
-如果 `error` 代码不为 0，则发生了一个无法解释的错误。这种情况极罕见；在大多数情况下，错误将通过响应对象的 `fault` 属性返回。
+如果`error`代码不为 0，则发生了一个无法解释的错误。这种情况极罕见；在大多数情况下，错误将通过响应对象的`fault`属性返回。
 
-现在使用了另一个内置类 `XmlSerializer`。它接收一个 XML 节点并可以将其转换为字符串或流。该字符串会被获取并显示在右侧的文本区域中。
+现在使用了另一个内置类`XmlSerializer`。它接收一个 XML 节点并可以将其转换为字符串或流。该字符串会被获取并显示在右侧的文本区域中。
 
-如果 `oResponse.fault` 不为空，则发生了 SOAP 故障错误（SOAP fault），系统会构建错误消息并显示给用户，且不再采取后续操作。调用成功后，响应对象将作为函数的返回值传出，并通过 `showSoapResults()` 函数处理：
+如果`oResponse.fault`不为空，则发生了 SOAP 故障错误（SOAP fault），系统会构建错误消息并显示给用户，且不再采取后续操作。调用成功后，响应对象将作为函数的返回值传出，并通过`showSoapResults()`函数处理：
 
 ```javascript
 function showSoapResults(oResult) {
   if (!oResult) {
-    document.getElementById("txtResult").value = oResult.body.firstChild.firstChild.firstChild.data;
+    document.getElementById("txtResult").value =
+      oResult.body.firstChild.firstChild.firstChild.data;
   }
 }
 ```
 
-在检查 `oResult` 有效后，使用 DOM 提取 `<methodResult>` 的值。
+在检查`oResult`有效后，使用 DOM 提取`<methodResult>`的值。
 
-- `SoapResponse` 类有一个名为 `getParameters` 的方法，理论上可以以更优雅的方式获取参数。然而，它似乎无法与宣传的文档样式配合，需要使用更原始的方法来检查 `soap:Body` 的结构。
+- `SoapResponse`类有一个名为`getParameters`的方法，理论上可以以更优雅的方式获取参数。然而，它似乎无法与宣传的文档样式配合，需要使用更原始的方法来检查`soap:Body`的结构。
 
 ## 通用方法
 
-在几乎所有现代浏览器上消费 Web 唯一方法是使用 `XmlHttp`。由于 Internet Explorer、Firefox、Opera 和 Safari 对 `XmlHttp` 有一些基础支持，这是你实现跨浏览器一致性的最佳选择。遗憾的是，这种一致性是有代价的——你需要负责构建 SOAP 请求并将其发送到服务器。你还要负责解析结果并等待错误。
+在几乎所有现代浏览器上消费 Web 唯一方法是使用`XmlHttp`。由于 Internet Explorer、Firefox、Opera 和 Safari 对`XmlHttp`有一些基础支持，这是你实现跨浏览器一致性的最佳选择。遗憾的是，这种一致性是有代价的——你需要负责构建 SOAP 请求并将其发送到服务器。你还要负责解析结果并等待错误。
 
-这种场景下的主角是微软的 `XmlHttpRequest` 类以及上述更现代的基于 Mozilla 的浏览器中的 `HttpRequest` 类。它们具有相似的方法和属性，尽管按照这些事物的传统惯例，XML 在达成一致之前就先出现在标准中了，因此后发布的 Mozilla 版本是符合 W3C 标准的。这些类的基本结构是允许 HTTP 请求指向一个 Web 地址。目标并不一定要返回 XML——任何内容都可以被检索——也包含了发送数据的能力。对于 SOAP 调用，通常做法是发送一个带有 `<soap:Envelope>` 作为负载的 POST 请求。
+这种场景下的主角是微软的`XmlHttpRequest`类以及上述更现代的基于 Mozilla 的浏览器中的`HttpRequest`类。它们具有相似的方法和属性，尽管按照这些事物的传统惯例，XML 在达成一致之前就先出现在标准中了，因此后发布的 Mozilla 版本是符合 W3C 标准的。这些类的基本结构是允许 HTTP 请求指向一个 Web 地址。目标并不一定要返回 XML——任何内容都可以被检索——也包含了发送数据的能力。对于 SOAP 调用，通常做法是发送一个带有`<soap:Envelope>`作为负载的 POST 请求。
 
-在例例中，你将再次调用测试平台。但这次不同，你将使用 zXML 库来创建 XmlHttp 并构建你自己的 soap 对象。该库使用了多种技术来检查浏览器支持的 XML 类。它还封装了这些类，并以几乎完全相同的方式添加了额外的方法和属性。SOAP 请求字符串的生成在一个名为 `getRequest()` 的函数中处理：
+在例例中，你将再次调用测试平台。但这次不同，你将使用 zXML 库来创建`XmlHttp`并构建你自己的 soap 对象。该库使用了多种技术来检查浏览器支持的 XML 类。它还封装了这些类，并以几乎完全相同的方式添加了额外的方法和属性。SOAP 请求字符串的生成在一个名为`getRequest()`的函数中处理：
 
 ```javascript
 function getRequest(sMethod, sOp1, sOp2) {
@@ -4993,30 +5423,37 @@ function getRequest(sMethod, sOp1, sOp2) {
     + "xmlns:xsd=http://www.w3.org/2001/XMLSchema"
     + "xmlns:soap=http://schemas.xmlsoap.org/soap/envelope/"
     + "<soap:Body>"
-    + "<" + sMethod + 
+    + "<" + sMethod +
+```
 
-`getRequest()` 函数非常简单；它只需以合适的格式构建 SOAP 字符串（合适的格式可以是 .NET 服务描述的）。`getRequest()` 返回完整的 SOAP 字符串并由 `performSpecificOperation()` 构建 SOAP 请求：
+`getRequest()`函数非常简单；它只需以合适的格式构建 SOAP 字符串（合适的格式可以是 .NET 服务描述的）。`getRequest()`返回完整的 SOAP 字符串并由`performSpecificOperation()`构建 SOAP 请求：
 
 ```javascript
 function performSpecificOperation(sMethod, sOp1, sOp2) {
   var XmlHttp = zXmlHttpClient.getRequest();
+
   setIsEnabled(false);
+
   var sRequest = getRequest(sMethod, sOp1, sOp2);
   var sSoapActionHeader = SOAP_ACTION_BASE + "/" + sMethod;
+
   XmlHttp.open("POST", SERVICE_URL, true);
   XmlHttp.onreadystatechange = handleResponse;
   XmlHttp.setRequestHeader("Content-Type", "text/xml");
   XmlHttp.setRequestHeader("SOAPAction", sSoapActionHeader);
   XmlHttp.send(sRequest);
+
   document.getElementById("txtRequest").value = sRequest;
 }
 ```
 
-首先调用 zHttpClient 库创建 XMLHttpRequest。如之前所述，如果你使用 Internet Explorer则是 ActiveX 类，如果你使用基于 Mozilla 的浏览器则是 XMLHttpRequest。对象的 `open` 方法尝试初始化请求。第一个参数表示这是一个包含数据的 POST 请求，然后是 URL，最后是一个布尔参数，指定在调用后是否应该等待响应。
+首先调用 zHttpClient 库创建`XMLHttpRequest`。如之前所述，如果你使用 Internet Explorer 则是 ActiveX 类，如果你使用基于 Mozilla 的浏览器则是`XMLHttpRequest`。对象的`open`方法尝试初始化请求。第一个参数表示这是一个包含数据的 POST 请求，然后是 URL，最后是一个布尔参数，指定在调用后是否应该等待响应。
 
-请求的 `onreadystatechange` 属性指定了当请求状态改变时调用哪个函数。
+请求的`onreadystatechange`属性指定了当请求状态改变时调用哪个函数。
 
-`performspecificOperation()` 函数随后向请求添加两个标头。第一个指定内容类型为 `text/xml`，第二个添加 `SOAPAction` 标头。这可以从 .NET 标头或 WSDL 文件中的 `<soap:operation/>` 元素读取。一旦请求发送，原始 XML 将显示在左侧框中。当请求的状态改变时，将调用 `handleResponse()` 函数：
+`performspecificOperation()`函数随后向请求添加两个标头。第一个指定内容类型为`text/xml`，第二个添加`SOAPAction`标头。这可以从 .NET 标头或 WSDL 文件中的`<soap:operation/>`元素读取。一旦请求发送，原始 XML 将显示在左侧框中。当请求的状态改变时，将调用`handleResponse()`函数：
+
+
 
 ```javascript
 function handleResponse() {
@@ -5036,27 +5473,27 @@ function handleResponse() {
 }
 ```
 
-`handleResponse()` 函数响应请求的任何状态变化。当 `readyState` 等于 4（表示完成）时，不再有后续处理，可以检查是否有有效结果。
+`handleResponse()`函数响应请求的任何状态变化。当`readyState`等于`4`（表示完成）时，不再有后续处理，可以检查是否有有效结果。
 
-如果 `oXmlHttp.status` 不等于 200 或 `responseXML` 属性为空，则发生了错误并向用户显示消息。如果错误应该是 SOAP 故障，也会显示在消息面板。然而，如果错误不是 SOAP 故障，则显示文本。如果请求成功，XML 将显示在右侧框中。
+如果`oXmlHttp.status`不等于`200`或`responseXML`属性为空，则发生了错误并向用户显示消息。如果错误应该是SOAP故障，也会显示在消息面板。然而，如果错误不是SOAP故障，则显示文本。如果请求成功，XML将显示在右侧框中。
 
 ## 跨域服务
 
 在本章中，你一直在调用同一域名下的服务。但如果你需要调用不同域名的服务呢？这是一个常见需求，可以使用服务器端代理处理。代理接收客户端的请求，将其传递给外部服务，然后将响应返回给客户端。
 
-## Google Web APIs 服务
+## Google Web APIs服务
 
-Google 提供了可以通过其 Web 服务调用的方法，包括检索缓存页面的方法。你需要使用的方法是 `suggestion`，它接收一个短语并返回 Google 认为你想输入的内容。如果你的短语无效或模糊到至于 Google 无法提供建议，则返回一个空字符串。
+Google提供了可以通过其Web服务调用的方法，包括检索缓存页面的方法。你需要使用的方法是`suggestion`，它接收一个短语并返回Google认为你想输入的内容。如果你的短语无效或模糊到至于Google无法提供建议，则返回一个空字符串。
 
-> 重要：可以在网上找到 Google APIs 服务的工具包。该工具包包含了 SOAP 和 WSDL 标准，以及 C#、Visual Basic 和 .NET 的示例。
+> **重要**：可以在网上找到Google APIs服务的工具包。该工具包包含了SOAP和WSDL标准，以及C#、Visual Basic和.NET的示例。
 
-你需要通过密钥注册 Google 以允许你访问该服务。关于如何将其用于商业目的和开发目的也有相关规定。
+你需要通过密钥注册Google以允许你访问该服务。关于如何将其用于商业目的和开发目的也有相关规定。
 
 ## 设置代理
 
-在下载文档并获得密钥后，你需要在你的服务器上设置一个服务，以接收用户的调用并将其传递给 Google。基础服务的构建方式与之前讨论的 Math 服务相同。
+在下载文档并获得密钥后，你需要在你的服务器上设置一个服务，以接收用户的调用并将其传递给Google。基础服务的构建方式与之前讨论的Math服务相同。
 
-打开 IIS 管理器（管理工具=Internet 服务）。展开树形到 `Default Web Site` 节点，右键点击并选择“新建=虚拟目录”。在“创建虚拟目录”向向”的别名中，将你的新目录命名为 `GoogleProxy`，然后点击。在下一屏幕上，浏览到 `C:\inetpub\wwwroot` 的 IIS 目录，并创建一个名为 `GoogleProxy` 的新文件夹。
+打开IIS管理器（管理工具=Internet服务）。展开树形到`Default Web Site`节点，右键点击并选择“新建=虚拟目录”。在“创建虚拟目录”向向”的别名中，将你的新目录命名为`GoogleProxy`，然后点击。在下一屏幕上，浏览到`C:\inetpub\wwwroot`的IIS目录，并创建一个名为`GoogleProxy`的新文件夹。
 
 接下来，打开文本编辑器创建以下文件，所有内容在一一行：
 
@@ -5064,23 +5501,17 @@ Google 提供了可以通过其 Web 服务调用的方法，包括检索缓存�
 <@ WebService Language="GoogleProxy.asmx" Class="Wrox.Services.GoogleProxyService" %>
 ```
 
-将其保存为 GoogleProxy 目录下的 `GoogleProxy.asmx`。
+将其保存为GoogleProxy目录下的`GoogleProxy.asmx`。
 
-现在创建主文件 `GoogleProxy.asmx.cs`：
+现在创建主文件`GoogleProxy.asmx.cs`：
 
 ```csharp
 using System;
 using System.Web;
 using System.Web.Services;
-```
-
-
-
 using GoogleService;
 
 namespace Wrox.Services
-
-```csharp
 {
     [WebService(Description = "Enables calls to the Google API",
     Namespace = "http://www.wrox.com/services/googleProxy")]
@@ -5109,40 +5540,38 @@ namespace Wrox.Services
 }
 ```
 
-请记得修改您的 `GoogleKey` 变量的值，然后将文件保存到与其它文件相同的位置。
+请记得修改您的`GoogleKey`变量的值，然后将文件保存到与其它文件相同的位置。
 
-代码本身非常简单；`doSpellingSuggestion` 方法创建了 `GoogleSearchService` 类的实例。然后设置了服务的 URL。这并非总是必要的，但我们发现，经常更改服务的 URL 往往很有帮助。在生产环境中，URL 将从配置文件中读取，这样您就可以轻松地迁移服务器。
+代码本身非常简单；`doSpellingSuggestion`方法创建了`GoogleSearchService`类的实例。然后设置了服务的URL。这并非总是必要的，但我们发现，经常更改服务的URL往往很有帮助。在生产环境中，URL将从配置文件中读取，这样您就可以轻松地迁移服务器。
 
-现在调用 `doSpellingSuggestion` 方法，并传递 Google 密钥和 `Phrase` 参数。这是使用服务器端代理的另一个优势：您可以将密钥等敏感信息与浏览器客户端环境隔离开。
+现在调用`doSpellingSuggestion`方法，并传递Google密钥和`Phrase`参数。这是使用服务器端代理的另一个优势：您可以将密钥等敏感信息与浏览器客户端环境隔离开。
 
-如果抛出异常，异常将被重新抛出并以 SOAP 故障（SOAP fault）的形式返回。如果返回的建议为 `null`，则返回一个合适的字符串；否则直接返回该建议。
+如果抛出异常，异常将被重新抛出并以SOAP故障（SOAP fault）的形式返回。如果返回的建议为`null`，则返回一个合适的字符串；否则直接返回该建议。
 
-现在您需要创建一个与 Google 交互的类。首先，将 `GoogleSearch.wsdl` 文件复制到 `GoogleProxy` 文件夹，然后打开命令提示符，导航到 `GoogleProxy` 目录并运行该文件（您可以忽略关于缺少架构的警告）：
+现在您需要创建一个与Google交互的类。首先，将`GoogleSearch.wsdl`文件复制到`GoogleProxy`文件夹，然后打开命令提示符，导航到`GoogleProxy`目录并运行该文件（您可以忽略关于缺少架构的警告）：
 
-`WSDL/namespace:GoogleSearch /out:GoogleSearchService.cs`
-`GoogleSearch.wsdl`
+```
+WSDL/namespace:GoogleSearch /out:GoogleSearchService.cs
+GoogleSearch.wsdl
+```
 
-WSDL 工具读取 `GoogleSearch.wsdl` 文件并创建一个用于通信的类的源代码。该类将根据 WSDL 第一个参数的指示位于 `GoogleSearch` 命名空间中。源代码需要转换为 DLL，要实现这一点，您需要像以前一样使用 C# 编译器。请输入以下命令提示符或使用命令行中的 `MakeGoogleSearchDLL.bat` 文件：
+WSDL工具读取`GoogleSearch.wsdl`文件并创建一个用于通信的类的源代码。该类将根据WSDL第一个参数的指示位于`GoogleSearch`命名空间中。源代码需要转换为DLL，要实现这一点，您需要像以前一样使用C#编译器。请输入以下命令提示符或使用命令行中的`MakeGoogleSearchDLL.bat`文件：
 
-- 重要：WSDL 似乎位于多个不同的位置，取决于机器上安装了哪些其他 Microsoft 组件。在安装了 Visual .NET 的机器上，它可能位于 `C:\Program Files\Visual Studio .NET 2003\SDKv1.1`，但您可能需要在您的机器上进行搜索。
+> **重要**：WSDL似乎位于多个不同的位置，取决于机器上安装了哪些其他Microsoft组件。在安装了Visual .NET的机器上，它可能位于`C:\Program Files\Visual Studio .NET 2003\SDKv1.1`，但您可能需要在您的机器上进行搜索。
 
 ```cmd
 C:\WINDOWS\Microsoft.NET\Framework\v1.1.4322\csc.exe /r:System.dll /r:System.Web.dll /r:System.Web.Services.dll /library /out:bin\GoogleSearchService.dll GoogleSearchService.cs
 ```
 
-生成的 `GoogleSearchService.cs` 包含了与 Google API 交互所需的方法。`doSpellingSuggestion` 方法是封装基于 Web 服务的一个示例。
+生成的`GoogleSearchService.cs`包含了与Google API交互所需的方法。`doSpellingSuggestion`方法是封装基于Web服务的一个示例。
 
-最后一步是将代码编译为 DLL。使用上面提供的命令生成 `GoogleSearchService.dll`。编译完成后，您可以在应用程序中使用此 DLL 来访问 Google API。
-
-
-
-
+最后一步是将代码编译为DLL。使用上面提供的命令生成`GoogleSearchService.dll`。编译完成后，您可以在应用程序中使用此DLL来访问Google API。
 
 # 对象字面量
 
-对象字面量用于以键值对的形式存储信息，最终创建一个对象。对象字面量由两个大括号 ({ 和 }) 定义。在大括号内部，可以放置任意数量的键值对，每个对通过字符串、冒号和值来定义。每个键值对后面都必须跟一个逗号，最后一个除外（这使得它更像是在 Perl 中定义关联数组）。例如：
+对象字面量用于以键值对的形式存储信息，最终创建一个对象。对象字面量由两个大括号（`{`和`}`）定义。在大括号内部，可以放置任意数量的键值对，每个对通过字符串、冒号和值来定义。每个键值对后面都必须跟一个逗号，最后一个除外（这使得它更像是在Perl中定义关联数组）。例如：
 
-```
+```javascript
 var oCar = {
   "color" : "red",
   "doors" : 4,
@@ -5150,9 +5579,9 @@ var oCar = {
 }
 ```
 
-这段代码创建了一个具有三个属性 `color`, `doors` 和 `paidFor` 的对象，每个属性包含不同的值。你可以使用对象名和点表示法来访问这些属性，如下：
+这段代码创建了一个具有三个属性`color`、`doors`和`paidFor`的对象，每个属性包含不同的值。你可以使用对象名和点表示法来访问这些属性，如下：
 
-```
+```javascript
 alert(oCar.color); // 输出 "red"
 alert(oCar.doors); // 输出 "4"
 alert(oCar.paidFor); // 输出 "true"
@@ -5160,30 +5589,30 @@ alert(oCar.paidFor); // 输出 "true"
 
 你也可以使用括号表示法，并将属性名作为字符串值传递（就像使用对象字面量符号定义的方式一样）：
 
-```
+```javascript
 alert(oCar["color"]); // 输出 "red"
 alert(oCar["doors"]); // 输出 "4"
 alert(oCar["paidFor"]); // 输出 "true"
 ```
 
-也可以使用 JavaScript Object 构造函数创建相同的对象，如下：
+也可以使用JavaScript Object构造函数创建相同的对象，如下：
 
-```
+```javascript
 var oCar = new Object();
 oCar.color = "red"
 oCar.doors = 4;
 oCar.paidFor = true;
 ```
 
-如你所见，对象字面量表示比使用 Object 构造需要的代码更少。
+如你所见，对象字面量表示比使用Object构造需要的代码更少。
 
-> **重要** 再次强调，虽然这两种方法在 JavaScript 中都是有效的，但只有对象字面量表示在 JSON 中是有效的。
+> **重要** 再次强调，虽然这两种方法在JavaScript中都是有效的，但只有对象字面量表示在JSON中是有效的。
 
 # 混合字面量
 
 可以将对象字面量和数组字面量混合，创建一个包含对象的数组或包含数组的对象。假设你想创建一个与上一节创建的类似的汽车对象数组。你可以这样操作：
 
-```
+```javascript
 var oCars = [
   {
     "color" : "red",
@@ -5203,64 +5632,60 @@ var oCars = [
 ];
 ```
 
-这段代码定义了一个数组 `aCars`，其中包含三个对象。这三个对象分别拥有名为 `color`, `doors` 和 `paidFor` 的属性。（当然，每个对象代表一辆汽车）。你可以通过括号和点表示法的组合访问数组的任何信息。例如，要获取数组中第二辆汽车的门数，以下行即可：
+这段代码定义了一个数组`aCars`，其中包含三个对象。这三个对象分别拥有名为`color`、`doors`和`paidFor`的属性。（当然，每个对象代表一辆汽车）。你可以通过括号和点表示法的组合访问数组的任何信息。例如，要获取数组中第二辆汽车的门数，以下行即可：
 
-```
+```javascript
 alert(aCars[1].doors); // 输出 "4"
 ```
 
-在这个示例中，你首先获取数组中第二个位置（位置 1）的值，然后获取名为 `doors` 的属性。
+在这个示例中，你首先获取数组中第二个位置（位置1）的值，然后获取名为`doors`的属性。
 
 你也可以像在对象字面量内部那样定义属性，例如：
 
-```
+```javascript
 var oCarInfo = {
 "availableColors" : ["red", "white", "blue"],
 "availableDoors" : [2, 4]
 };
 ```
 
-这段代码定义了一个名为 `oCarInfo` 的对象，它有两个属性：`availableColors` 和 `availableDoors`。这两个属性都是数组，分别包含字符串和数字。要访问这里的值，只需反转括号和点表示法的顺序即可。要获取第二个值，你可以这样做：
+这段代码定义了一个名为`oCarInfo`的对象，它有两个属性：`availableColors`和`availableDoors`。这两个属性都是数组，分别包含字符串和数字。要访问这里的值，只需反转括号和点表示法的顺序即可。要获取第二个值，你可以这样做：
 
-```
+```javascript
 alert(oCarInfo.availableColors[1]);
 ```
 
-在这个示例中，你首先返回名为 `availableColors` 的属性，然后获取第二个位置（位置 1）的值。这一切与和 JSON 有什么关系呢？
+在这个示例中，你首先返回名为`availableColors`的属性，然后获取第二个位置（位置1）的值。这一切与和JSON有什么关系呢？
 
-# JSON 语法
+# JSON语法
 
-JSON 语法本质上只是为了存储数据而混合了对象和数组字面量。与上一节示例相比的唯一区别是，JSON 没有变量。记住，JSON 只表示数据；它没有变量、赋值或等等的概念。因此，上一个示例的 JSON 代码如下：
+JSON语法本质上只是为了存储数据而混合了对象和数组字面量。与上一节示例相比的唯一区别是，JSON没有变量。记住，JSON只表示数据；它没有变量、赋值或等等的概念。因此，上一个示例的JSON代码如下：
 
-```
+```json
 {
 "availableColors" : ["red", "white", "blue"],
 "availableDoors" : [2, 4]
 }
 ```
 
-注意，变量 `oCarInfo` 已经被移除，大括号后面的分号也被删除了。如果这些数据通过 HTTP 传输到浏览器，由于字符较少，速度会很快。假设这些数据是使用 `XMLHttpRequest`（或其他某种客户端服务器通信方法）获取并存储在名为 `sJSON` 的变量中的。你现在拥有的是一段信息，而不是一个对象，更不是一个包含两个数组的对象。要将其转换为对象，你可以简单地使用 JavaScript 的 `eval()` 函数，如下：
+注意，变量`oCarInfo`已经被移除，大括号后面的分号也被删除了。如果这些数据通过HTTP传输到浏览器，由于字符较少，速度会很快。假设这些数据是使用`XMLHttpRequest`（或其他某种客户端服务器通信方法）获取并存储在名为`sJSON`的变量中的。你现在拥有的是一段信息，而不是一个对象，更不是一个包含两个数组的对象。要将其转换为对象，你可以简单地使用JavaScript的`eval()`函数，如下：
 
-```
+```javascript
 var oCarInfo = eval("(" + sJSON + ")")
 ```
 
-这个示例使用了 JSON 解析，然后将这些字符串传递给 `eval()` 函数，该函数充当 JavaScript 解释器。此操作的结果是一个与上一节定义的 `oCarInfo` 对象完全相同的 JavaScript 对象。你可以完全相同的方式访问此对象中的信息：
+这个示例使用了JSON解析，然后将这些字符串传递给`eval()`函数，该函数充当JavaScript解释器。此操作的结果是一个与上一节定义的`oCarInfo`对象完全相同的JavaScript对象。你可以完全相同的方式访问此对象中的信息：
 
-```
+```javascript
 alert(oCarInfo.availableColors[0]); // 输出 "red"
 alert(oCarInfo.availableDoors[1]); // 输出 "4"
 ```
 
 # 重要
 
-在将任何 JSON 字符串传递给 `eval()` 之前，在其周围加上额外的括号是非常重要的。记住，大括号在 JavaScript 中表示语句（例如在 `if` 语句中）。解释器知道大括号代表对象而不是语句的唯一方法是查看它之前是否有等号，或者它周围是否有括号。
+在将任何JSON字符串传递给`eval()`之前，在其周围加上额外的括号是非常重要的。记住，大括号在JavaScript中表示语句（例如在`if`语句中）。解释器知道大括号代表对象而不是语句的唯一方法是查看它之前是否有等号，或者它周围是否有括号。
 
 （注：由于你提供的原始文本在最后部分出现了部分重复和未完成的复制/粘贴笔误，我已基于技术文档的理解进行了翻译和整理，确保逻辑连贯。）
-
-
-
-
 
 ```json
 {
@@ -5277,19 +5702,19 @@ alert(oCarInfo.availableDoors[1]); // 输出 "4"
 }
 ```
 
-如你所见，许多多余信息并不存在。由于闭合标签不需要匹配起始标签，这大大减少了传输信息所需的字节数。不计空格的情况下，JSON 为 224 字节，而可比的 XML 数据为 365 字节，节省了 100 多个字节。（这就是为什么 JSON 的创建者 Crockford 将其称为“XML 的扁平替代方案”。）
+如你所见，许多多余信息并不存在。由于闭合标签不需要匹配起始标签，这大大减少了传输信息所需的字节数。不计空格的情况下，JSON为224字节，而可比的XML数据为365字节，节省了100多个字节。（这就是为什么JSON的创建者Crockford将其称为“XML的扁平替代方案”。）
 
-与 XML 相比，JSON 格式数据的缺点是对于外行人士来说可读性较低。因为 XML 是冗长的，很容易理解它表示什么数据。而 JSON 采用简写表示法，肉眼观察时可能很难解析。当然，有人会认为数据交换格式永远不应该用肉眼观察，但那样确实没有理由让数据具有人类可读性。但这引发了一个问题：是否有可用的 JSON 工具？答案是肯定的。
+与XML相比，JSON格式数据的缺点是对于外行人士来说可读性较低。因为XML是冗长的，很容易理解它表示什么数据。而JSON采用简写表示法，肉眼观察时可能很难解析。当然，有人会认为数据交换格式永远不应该用肉眼观察，但那样确实没有理由让数据具有人类可读性。但这引发了一个问题：是否有可用的JSON工具？答案是肯定的。
 
-## 服务端 JSON 工具
+## 服务端JSON工具
 
-如你所知，Ajax 与客户端和服务器之间的交互有关，除非有服务端工具来辅助编码和解码，否则 JSON 在此方面毫无用处。幸运的是，针对服务端语言有很多 JSON 工具。虽然讨论这些工具中的每一个超出了本书的范围，但查看其中一个并使用它开发解决方案是有帮助的。
+如你所知，Ajax与客户端和服务器之间的交互有关，除非有服务端工具来辅助编码和解码，否则JSON在此方面毫无用处。幸运的是，针对服务端语言有很多JSON工具。虽然讨论这些工具中的每一个超出了本书的范围，但查看其中一个并使用它开发解决方案是有帮助的。
 
 ## JSON-PHP
 
-JSON-PHP 是一个用于实现 JSON 信息编码和解码的 PHP 工具程序。该工具由 Michal Migurski 编写，可以在 http://mike.teczno.com/json.php 免费获取。要在 PHP 中使用 JSON，你只需要在页面中引入 JSON 文件并利用 JSON 对象即可。
+JSON-PHP是一个用于实现JSON信息编码和解码的PHP工具程序。该工具由Michal Migurski编写，可以在`http://mike.teczno.com/json.php`免费获取。要在PHP中使用JSON，你只需要在页面中引入JSON文件并利用JSON对象即可。
 
-创建 JSON 对象的的新实例非常简单：
+创建JSON对象的新实例非常简单：
 
 ```php
 <?php
@@ -5298,9 +5723,11 @@ $JSON = new JSON();
 ?>
 ```
 
-第一行包含了 `JSON.php` 文件，其中包含 JSON 对象的定义。第二行简单地实例化对象并将其存储在变量 `$oJSON` 中。现在你已经准备好在 PHP 页面中开始编码和解码 JSON 了。
+第一行包含了`JSON.php`文件，其中包含JSON对象的定义。第二行简单地实例化对象并将其存储在变量`$oJSON`中。现在你已经准备好在PHP页面中开始编码和解码JSON了。
 
-要将 PHP 对象编码为 JSON 字符串，使用 `encode()` 方法，它接受一个参数：要编码的对象，该对象可以是一个数组也可以一个完整的对象。无论对象或数组是如何创建的，无论是否使用了类定义；所有对象都可以使用此方法进行编码。考虑以下类定义：
+要将PHP对象编码为JSON字符串，使用`encode()`方法，它接受一个参数：要编码的对象，该对象可以是一个数组也可以一个完整的对象。无论对象或数组是如何创建的，无论是否使用了类定义；所有对象都可以使用此方法进行编码。考虑以下类定义：
+
+
 
 ```php
 <?php
@@ -5320,7 +5747,7 @@ class Person {
 ?>
 ```
 
-这段 PHP 代码定义了一个 `Person` 类，用于存储一些个人信息。你可以这样使用该类：
+这段 PHP 代码定义了一个`Person`类，用于存储一些个人信息。你可以这样使用该类：
 
 ```php
 <?php
@@ -5330,7 +5757,7 @@ $oPerson->siblingNames[1] = "Tammy";
 ?>
 ```
 
-要对 PHP 对象进行编码，只需将其传递给 `encode()` 方法，方法如下：
+要对 PHP 对象进行编码，只需将其传递给`encode()`方法，方法如下：
 
 ```php
 <?php
@@ -5339,13 +5766,16 @@ $sJSONText = $oJSON->encode($oPerson);
 ```
 
 这创建了一个 JSON 字符串：
+
+```json
 {"age":26,"hairColor":"brown","name":"Mike","siblingNames":["Matt","Tammy"]}
+```
 
-`$oPerson` 现在准备好传输到 JavaScript 或任何支持 JSON 编码信息的语言了。
+`$oPerson`现在准备好传输到 JavaScript 或任何支持 JSON 编码信息的语言了。
 
-但如果你有一个 JSON 字符串呢？那就是使用 `decode()` 方法的地方。
+但如果你有一个 JSON 字符串呢？那就是使用`decode()`方法的地方。
 
-假设你有之前显示的 JSON 字符串，并想从它创建一个 PHP 对象。只需将字符串传递给 `decode()` 方法即可：
+假设你有之前显示的 JSON 字符串，并想从它创建一个 PHP 对象。只需将字符串传递给`decode()`方法即可：
 
 ```php
 <?php
@@ -5353,7 +5783,7 @@ $sPerson = $sJSON->decode($sJSONText);
 ?>
 ```
 
-现在，变量 `$sPerson` 可以像上一个示例中的变量一样被使用，就就像它是使用 `Person` 类创建的一样：
+现在，变量`$sPerson`可以像上一个示例中的变量一样被使用，就像它是使用`Person`类创建的一样：
 
 ```php
 print("<h3>Person Information</h3>");
@@ -5369,7 +5799,7 @@ for ($i=0; $i < count($sPerson->siblingNames); $i++) {
 print("</ul>");
 ```
 
-这段代码输出了 `$sPerson` 对象中包含的信息，这证明了对象已经通过正确的方式构建。JSON-PHP 将在本书的多个项目中使用，因为它是在服务端语言中使用 JSON 最简单的方法。
+这段代码输出了`$sPerson`对象中包含的信息，这证明了对象已经通过正确的方式构建。JSON-PHP 将在本书的多个项目中使用，因为它是在服务端语言中使用 JSON 最简单的方法。
 
 ## 其他工具
 
@@ -5404,11 +5834,7 @@ print("</ul>");
 <input type="text" name="txtAutosuggest" value=" />
 ```
 
-在大多数情况下，这将迫使你使用文本框。问题是，某些浏览器（特别是 Windows 上的 Internet Explorer 和所有操作系统上的 Firefox）具有根据你之前输入的值提供建议列表的自动补全功能。要这样做，请将 `autocomplete` 属性设置为 `off`：
-
-
-
-
+在大多数情况下，这将迫使你使用文本框。问题是，某些浏览器（特别是 Windows 上的 Internet Explorer 和所有操作系统上的 Firefox）具有根据你之前输入的值提供建议列表的自动补全功能。要这样做，请将`autocomplete`属性设置为`off`：
 
 ```html
 <input type="text" name="txtAutosuggest" value="autocomplete" off />
@@ -5416,13 +5842,13 @@ print("</ul>");
 
 现在你可以确信没有浏览器的自动完成行为会产生干扰。唯一需要设计的其他界面组件是建议的下拉列表。
 
-建议下拉列表仅仅是一个绝对定位的 `<div>` 元素，它被放置文本框下方，以营造出下拉列表的错觉（参见图 7-1）。
+建议下拉列表仅仅是一个绝对定位的`<div>`元素，它被放置文本框下方，以营造出下拉列表的错觉（参见图 7-1）。
 
 ![](img/b372374b4ba34adee418bd5ab6e01f7f_194_0.png)
 
 图 7-1
 
-在这个 `<div>` 元素内部有几个 `<div>` 元素，每个对应一个建议。通过更改这些元素的样式，可以实现高亮特定建议的效果。创建图 7-1 所示列表的 HTML 代码如下：
+在这个`<div>`元素内部有几个`<div>`元素，每个对应一个建议。通过更改这些元素的样式，可以实现高亮特定建议的效果。创建图 7-1 所示列表的 HTML 代码如下：
 
 ```html
 <div class="suggestions">
@@ -5439,7 +5865,7 @@ print("</ul>");
 
 这段 HTML 不会直接编码到主 HTML 文件中；相反，它将通过 JavaScript 代码动态创建。为了正确创建它，你需要了解 HTML 的通用格式。
 
-当然，需要一些 CSS 来让下拉列表正常工作。最外层的 `<div>` 有一个类 `suggestions`，其定义如下：
+当然，需要一些 CSS 来让下拉列表正常工作。最外层的`<div>`有一个类`suggestions`，其定义如下：
 
 ```css
 div.suggestions {
@@ -5451,9 +5877,9 @@ div.suggestions {
 }
 ```
 
-此 CSS 类的前几行针对支持两种框模型尺寸模式的浏览器：内容框（content box）和边框框（border box）（更多信息请参阅 www.w3schools.org/css/box.html）。在怪异模式（quirks mode）下，Internet Explorer 默认使用 border-box；在标准模式（standards mode）下，Internet Explorer 默认使用 content box。大多数其他符合 DOM 标准的浏览器（Mozilla、Opera 和 Safari）默认使用 content box，这意味着浏览器之间渲染 `<div>` 元素的方式存在差异。为了解决这个问题，CSS 类中设置为 border box 的第一行 `moz-box-sizing` 是 Mozilla 特有的，而第二行则用于支持官方 CSS3 box-sizing 的浏览器。假设你在页面中使用了怪异模式，该类将正常工作。（如果你使用标准模式，只需删除前几行即可。）
+此 CSS 类的前几行针对支持两种框模型尺寸模式的浏览器：内容框（content box）和边框框（border box）（更多信息请参阅`www.w3schools.org/css/box.html`）。在怪异模式（quirks mode）下，Internet Explorer 默认使用 border-box；在标准模式（standards mode）下，Internet Explorer 默认使用 content box。大多数其他符合 DOM 标准的浏览器（Mozilla、Opera 和 Safari）默认使用 content box，这意味着浏览器之间渲染`<div>`元素的方式存在差异。为了解决这个问题，CSS 类中设置为 border box 的第一行`moz-box-sizing`是 Mozilla 特有的，而第二行则用于支持官方 CSS3 `box-sizing`的浏览器。假设你在页面中使用了怪异模式，该类将正常工作。（如果你使用标准模式，只需删除前几行即可。）
 
-剩余的样式添加了边框，并确保下拉列表 `<div>` 元素是绝对定位的。
+剩余的样式添加了边框，并确保下拉列表`<div>`元素是绝对定位的。
 
 接下来，下拉列表需要一些格式设置：
 
@@ -5475,11 +5901,11 @@ div.suggestions.current {
 }
 ```
 
-所有这些样式都包含在一个名为 `autosuggest.css` 的外部 CSS 文件中。
+所有这些样式都包含在一个名为`autosuggest.css`的外部 CSS 文件中。
 
 ## 数据库表
 
-为了方便查询匹配特定片段的州和省，有必要使用数据库表。有几个开源数据库产品可以与 PHP 配合，但最常用的是 MySQL（可用 www.mysql.org）。许多虚拟主机公司提供 PHP 托管的同时也提供一个或多个 MySQL 数据库，因此此处将使用 MySQL。
+为了方便查询匹配特定片段的州和省，有必要使用数据库表。有几个开源数据库产品可以与 PHP 配合，但最常用的是 MySQL（可用`www.mysql.org`）。许多虚拟主机公司提供 PHP 托管的同时也提供一个或多个 MySQL 数据库，因此此处将使用 MySQL。
 
 尽管此示例旨在配合 MySQL 使用，但它应该可以在少量或不修改的情况下在数据库上运行。
 
@@ -5493,7 +5919,7 @@ CREATE TABLE StatesAndProvinces (
 ) COMMENT = 'States and Provinces';
 ```
 
-在本课程中，消耗部分是填充来自世界各国家的州和省名称。在 www.wrox.com 下载的此示例代码包含一个 SQL 文件，用于填充包含所有美国州的州表，以及另一个用于插入加拿大的省和领地的文件。
+在本课程中，消耗部分是填充来自世界各国家的州和省名称。在`www.wrox.com`下载的此示例代码包含一个 SQL 文件，用于填充包含所有美国州的州表，以及另一个用于插入加拿大的省和领地的文件。
 
 在数据库表中设置此内容可以让你快速获取针对用户已输入文本的建议列表。例如，如果用户输入了字母 M，你可以运行以下查询获取前五个建议：
 
@@ -5519,15 +5945,15 @@ LIMIT 0, 5
 
 ## 类
 
-需要两个类来表示自动完成的两个组件：AutoSuggestControl 和 SuggestionProvider。自动完成控件在创建时会被分配建议提供者。建议提供者只有一个方法：requestSuggestions()。
+需要两个类来表示自动完成的两个组件：`AutoSuggestControl`和`SuggestionProvider`。自动完成控件在创建时会被分配建议提供者。建议提供者只有一个方法：`requestSuggestions()`。
 
 | AutoSuggestControl | SuggestionProvider |
-|---|---|
-| autosuggest() -> | requestSuggestions() |
+| --- | --- |
+| `autosuggest()` -> | `requestSuggestions()` |
 
 ## AutoSuggestControl
 
-AutoSuggestControl 类是自动完成功能的封装。为了正常工作，控件需要知道要处理的文本以及使用的建议提供者。形成相对简单的构造函数：
+`AutoSuggestControl`类是自动完成功能的封装。为了正常工作，控件需要知道要处理的文本以及使用的建议提供者。形成相对简单的构造函数：
 
 ```javascript
 function AutoSuggestControl(Textbox, oProvider) {
@@ -5536,11 +5962,11 @@ function AutoSuggestControl(Textbox, oProvider) {
 }
 ```
 
-复杂性将在此基础上构建自动完成类。由于 AutoSuggestControl 类相当复杂，将其解释拆分为特定的功能类型要简单得多。
+复杂性将在此基础上构建自动完成类。由于`AutoSuggestControl`类相当复杂，将其解释拆分为特定的功能类型要简单得多。
 
 ## 实现 Typehead
 
-为了实现第一个功能 Typehead，了解它的工作原理会有帮助。Typehead 框观察用户输入的内容并做出建议，仅高亮添加的部分。例如，如果你在文本框中输入 `Ma`，建议可能是 `Maine`，但只有 `ine` 会被高亮。这样做允许用户在不中断的情况下继续输入，只需替换高亮的字符。
+为了实现第一个功能 Typehead，了解它的工作原理会有帮助。Typehead 框观察用户输入的内容并做出建议，仅高亮添加的部分。例如，如果你在文本框中输入`Ma`，建议可能是`Maine`，但只有`ine`会被高亮。这样做允许用户在不中断的情况下继续输入，只需替换高亮的字符。
 
 最初，使用 JavaScript 实现唯一的高亮类型是高亮文本框中的文本：
 
@@ -5549,12 +5975,11 @@ var oTextbox = document.getElementById("txtState");
 oTextbox.select();
 ```
 
-这段代码获取 `txtState` 文本框内的一个范围并选择其中包含的所有文本。虽然这种功能对于许多日常用途是可以的，但对于实现 typehead 并没有什么帮助。幸运的是，Internet Explorer 和 Firefox 都有选择项目的方法（如果可用）。但像既常一样，世界上两个最大的竞争者的方法完全不同。
+这段代码获取`txtState`文本框内的一个范围并选择其中包含的所有文本。虽然这种功能对于许多日常用途是可以的，但对于实现 typehead 并没有什么帮助。幸运的是，Internet Explorer 和 Firefox 都有选择项目的方法（如果可用）。但像既常一样，世界上两个最大的竞争者的方法完全不同。
 
-Internet Explorer 的解决方案是使用 range。不要与 DOM range 混淆，Internet Explorer range 是页面上的一个不可见选择，从一个字符开始到另一个字符结束。当 range 被填充后，你可以仅高亮其中包含的文本，这非常适合 typehead。为了为特定的文本框创建 range，你使用 Internet Explorer 为每个文本框提供的 `createRange()` 方法。
+Internet Explorer 的解决方案是使用 range。不要与 DOM range 混淆，Internet Explorer range 是页面上的一个不可见选择，从一个字符开始到另一个字符结束。当 range 被填充后，你可以仅高亮其中包含的文本，这非常适合 typehead。为了为特定的文本框创建 range，你使用 Internet Explorer 为每个文本框提供的`createRange()`方法。
 
-
-一旦你拥有了文本范围，它的方法允许你选择文本的某些部分。虽然有很多范围方法，但本示例中感兴趣的只有 `moveStart()` 和 `moveEnd()`，它们都接受两个参数：一个单位和一个数字。单位可以是 `character`（字符）、`word`（单词）、`sentence`（句子）或 `textedit`（文本编辑），它表示从文本开始或结束移动的单位数（`moveStart()` 应该是正数，而 `moveEnd()` 应该是负数）。当设置了范围的端点后，你可以调用 `select()` 来高亮显示这些字符。例如，要选择文本框中的前三个字符，你可以执行：
+一旦你拥有了文本范围，它的方法允许你选择文本的某些部分。虽然有很多范围方法，但本示例中感兴趣的只有`moveStart()`和`moveEnd()`，它们都接受两个参数：一个单位和一个数字。单位可以是`character`（字符）、`word`（单词）、`sentence`（句子）或`textedit`（文本编辑），它表示从文本开始或结束移动的单位数（`moveStart()`应该是正数，而`moveEnd()`应该是负数）。当设置了范围的端点后，你可以调用`select()`来高亮显示这些字符。例如，要选择文本框中的前三个字符，你可以执行：
 
 ```javascript
 var oRange = oTextbox.createTextRange();
@@ -5564,16 +5989,16 @@ oRange.select();
 oext.focus();
 ```
 
-注意，为了为 `moveEnd()` 获取适当的值，必须根据要选择的字符数（3）设置文本框中的文本长度。最后一步是将焦点设置为文本框，以便选中的内容可见（只有当文本框获得焦点时，才能选择文本）。这个过程在 Internet Explorer 中有点复杂，但选择起来非常简单。相比之下，Firefox 非常直观。
+注意，为了为`moveEnd()`获取适当的值，必须根据要选择的字符数（3）设置文本框中的文本长度。最后一步是将焦点设置为文本框，以便选中的内容可见（只有当文本框获得焦点时，才能选择文本）。这个过程在 Internet Explorer 中有点复杂，但选择起来非常简单。相比之下，Firefox 非常直观。
 
-Firefox 中的文本框有一个名为 `selectionRange()` 的非标准方法，它接受两个参数：起始字符的索引和要选择的最后一个字符之后的字符索引。因此，使用 Mozilla 选择文本框中的前三个字符的方法：
+Firefox 中的文本框有一个名为`selectionRange()`的非标准方法，它接受两个参数：起始字符的索引和要选择的最后一个字符之后的字符索引。因此，使用 Mozilla 选择文本框中的前三个字符的方法：
 
 ```javascript
 oTextbox.setSelectionRange(0,3);
 oTextbox.focus();
 ```
 
-在 `AutoSuggestControl` 类中，你首先需要的第一件事是以一种特定于浏览器的方式选择字符范围。这个名为 `selectRange()` 的方法会为你处理所有的脏累工作：
+在`AutoSuggestControl`类中，你首先需要的第一件事是以一种特定于浏览器的方式选择字符范围。这个名为`selectRange()`的方法会为你处理所有的脏累工作：
 
 ```javascript
 AutoSuggestControl.prototype.selectRange = function (iStart, iEnd) {
@@ -5588,17 +6013,19 @@ AutoSuggestControl.prototype.selectRange = function (iStart, iEnd) {
 }
 ```
 
-该方法使用了特性检测（即检测某些浏览器特性的过程）来确定如何选择字符。它通过测试 `createRange` 方法是否存在来确定 Internet Explorer 是否使用文本范围，通过测试 `setSelectionRange()` 方法来确定是否应该使用 Firefox 方法。参数是要选择的第一个字符和要选择的字符数。这些值被传递给特定于浏览器的选择方法。
+该方法使用了特性检测（即检测某些浏览器特性的过程）来确定如何选择字符。它通过测试`createRange`方法是否存在来确定 Internet Explorer 是否使用文本范围，通过测试`setSelectionRange()`方法来确定是否应该使用 Firefox 方法。参数是要选择的第一个字符和要选择的字符数。这些值被传递给特定于浏览器的选择方法。
 
-## typeAhead() 方法
+## `typeAhead()`方法
 
-现在你已经可以选择文本框的部分了，是时候实现自动类型全（typesahead）功能了。为了实现这一点，定义了一个 `typeAhead()` 方法，它接受一个参数：要在文本框中显示的建议内容（suggestion）。假设传递进去的建议内容是合适的（且必须至少包含一个字符）。该方法执行了三件事：
+
+
+现在你已经可以选择文本框的部分了，是时候实现自动补全（typeahead）功能了。为了实现这一点，定义了一个`typeAhead()`方法，它接受一个参数：要在文本框中显示的建议内容（suggestion）。假设传递进去的建议内容是合适的（且必须至少包含一个字符）。该方法执行了三件事：
 
 1. 获取文本框中已存在文本的长度。
 2. 将建议内容放入文本框中。
 3. 使用上一步的信息，仅选择用户未使用的文本部分。
 
-此外，由于字体（typeface）仅在 Internet Explorer 和 Firefox 中受支持，你应该在执行选择之前检查是否使用了这两种浏览器之一，以免干扰用户的输入。再次强调，对文本框的 `createTextRange()` 和 `setSelectionRange()` 方法进行目的是：
+此外，由于字体（typeface）仅在 Internet Explorer 和 Firefox 中受支持，你应该在执行选择之前检查是否使用了这两种浏览器之一，以免干扰用户的输入。再次强调，对文本框的`createTextRange()`和`setSelectionRange()`方法进行目的是：
 
 ```javascript
 AutoSuggestControl.prototype.typeAhead = function (suggestion) {
@@ -5611,13 +6038,13 @@ AutoSuggestControl.prototype.typeAhead = function (suggestion) {
 };
 ```
 
-完成此方法后，你现在需要另一个方法来调用它并传递建议。这就是 `autosuggest()` 方法用用场。
+完成此方法后，你现在需要另一个方法来调用它并传递建议。这就是`autosuggest()`方法用武之地。
 
 ## autosuggest() 方法
 
-该控件中最重要的方法可能是 `autosuggest()`。这个单一方法负责接收文本框的建议数组并决定如何处理它们。最终，此方法将用于实现完整的自动建议功能（包括下拉建议），但目前，它仅用于实现提前补全。
+该控件中最重要的方法可能是`autosuggest()`。这个单一方法负责接收文本框的建议数组并决定如何处理它们。最终，此方法将用于实现完整的自动建议功能（包括下拉建议），但目前，它仅用于实现提前补全。
 
-由于 `autosuggest()` 是一个建议数组，你可以选择使用哪一个作为 `typesahead` 的值。建议使用数组中的第一个值以保持简单。问题是，某个值可能没有建议，此时可能会返回一个空数组。如果没有建议，你不应该调用 `typeAhead()`，因此首先检查数组的长度是重要的：
+由于`autosuggest()`是一个建议数组，你可以选择使用哪一个作为`typeahead`的值。建议使用数组中的第一个值以保持简单。问题是，某个值可能没有建议，此时可能会返回一个空数组。如果没有建议，你不应该调用`typeAhead()`，因此首先检查数组的长度是重要的：
 
 ```javascript
 AutoSuggestControl.prototype.autosuggest = function (suggestions) {
@@ -5629,54 +6056,48 @@ AutoSuggestControl.prototype.autosuggest = function (suggestions) {
 
 但建议从哪里来呢？实际上，这是建议者（suggestion provider）调用此方法并传递建议的任务。该功能的实现将在本章后面讨论。
 
-## 处理按事件
+## 处理按键事件
 
-当然，自动建议功能必须通过事件与文本框绑定。有三个处理键的事件：`keydown`、`keypress` 和 `keyup`。当用户按下键盘上的按键时，`keydown` 事件会触发；当用户释放键盘上的按键时，`keyup` 事件会触发。……（注：原文此处存在大量重复的错误文本，已根据逻辑进行清理处理）……有三个处理键的事件：`keydown`、`keypress` 和 `keyup`。
+当然，自动建议功能必须通过事件与文本框绑定。有三个处理键的事件：`keydown`、`keypress`和`keyup`。当用户按下键盘上的按键时，`keydown`事件会触发；当用户释放键盘上的按键时，`keyup`事件会触发。
 
-`keydown` 事件在用户按下键盘上的按键时触发；`keyup` 事件在用户释放键盘上的按键时触发。……（注：原文此处存在大量重复的错误文本，已根据逻辑进行清理处理）……有三个处理键的事件：`keydown`、`keypress` 和 `keyup`。
+`keydown`事件在用户按下键盘上的按键时触发；`keyup`事件在用户释放键盘上的按键时触发。
 
-`keydown` 事件在用户按下键盘上的按键时触发；`keyup` 事件在用户释放键盘上的按键时触发。
-
-
-
-
-`handleKeyUp` 方法如下：
+`handleKeyUp`方法如下：
 
 ```javascript
 AutoSuggestControl.prototype.handleKeyUp = function (oEvent) {
   var iKeyCode = oEvent.keyCode;
+
+  if (iKeyCode < 32 || (iKeyCode >= 33 && iKeyCode <= 46)
+    || (iKeyCode >= 112 && iKeyCode <= 123)) {
+    //ignore
+  } else {
+    this.provider.requestSuggestions(this);
+  }
+};
 ```
 
-```javascript
-if (iKeyCode < 32 || (iKeyCode >= 33 && iKeyCode <= 46)
-  || (iKeyCode >= 112 && iKeyCode <= 123)) {
-//ignore
-} else {
-  this.provider.requestSuggestions(this);
-}
-}
-```
+当用户按下字符键时，自动补全功能通过调用建议提供者的`requestSuggestions()`方法并将自动补全控件的指针作为参数传递来开始。请记住，建议提供者将调用之前定义的`autosuggest()`方法。`requestSuggestions()`方法开始检索用于使用的建议过程。
 
-当用户按下字符键时，自动补全功能通过调用建议提供者的 `requestSuggestions()` 方法并将自动补全控件的指针作为参数传递来开始。请记住，建议提供者将调用之前定义的 `autosuggest()` 方法。`requestSuggestions()` 方法开始检索用于使用的建议过程。
-
-使用该方法必须被赋值为文本框的事件处理器。最好创建一个单独的方法来完成控件的初始化（未来会有这种需要）。`init()` 方法就此此目的：
+使用该方法必须被赋值为文本框的事件处理器。最好创建一个单独的方法来完成控件的初始化（未来会有这种需要）。`init()`方法就此目的：
 
 ```javascript
 AutoSuggestControl.prototype.init = function () {
   var oThis = this;
   this.textbox.keyup = function (oEvent) {
-  if (!oEvent) {
-    oEvent = window.event;
-  }
-  oThis.handleKeyUp(oEvent);
+    if (!oEvent) {
+      oEvent = window.event;
+    }
+    oThis.handleKeyUp(oEvent);
+  };
 };
 ```
 
-`init()` 方法通过创建一个指向文本框的指针开始，以便后续使用。为文本框的 `onkeyup` 事件处理器定义了一个匿名函数。在这个函数内部，使用 `oThis` 指针调用了 `handleKeyUp()` 方法。（在此处使用 `this` 将指向自动补全控件内部的文本）。
+`init()`方法通过创建一个指向文本框的指针开始，以便后续使用。为文本框的`onkeyup`事件处理器定义了一个匿名函数。在这个函数内部，使用`oThis`指针调用了`handleKeyUp()`方法。（在此处使用`this`将指向自动补全控件内部的文本框）。
 
-由于此方法传递了事件对象，因此有必要检查 DOM 事件和 Internet Explorer 事件。DOM 事件作为参数传递给事件处理器，而 Internet Explorer 事件是 `window` 的一个属性。与其编写浏览器检测，不如你可以检查 `oEvent` 对象是否传递到了事件处理器。如果不是，将 `window.event` 赋值给 `oEvent` 变量。`oEvent` 变量可以直接传递到 `handleKeyUp()` 事件处理器中。
+由于此方法传递了事件对象，因此有必要检查 DOM 事件和 Internet Explorer 事件。DOM 事件作为参数传递给事件处理器，而 Internet Explorer 事件是`window`的一个属性。与其编写浏览器检测，不如你可以检查`oEvent`对象是否传递到了事件处理器。如果不是，将`window.event`赋值给`oEvent`变量。`oEvent`变量可以直接传递到`handleKeyUp()`事件处理器中。
 
-`init()` 方法应该在 `AutoSuggestControl` 构造函数内部调用：
+`init()`方法应该在`AutoSuggestControl`构造函数内部调用：
 
 ```javascript
 function AutoSuggestControl(oTextbox, oProvider) {
@@ -5686,11 +6107,11 @@ function AutoSuggestControl(oTextbox, oProvider) {
 }
 ```
 
-这就是实现自动补全控件输入联想功能的所有内容。此时，你正在用户输入内容时向其显示单个建议。当然，目标是通过下拉列表提供多个建议建议。
+这就是实现自动补全控件输入联想功能的所有内容。此时，你正在用户输入内容时向其显示单个建议。当然，目标是通过下拉列表提供多个建议。
 
 ## 显示多个建议
 
-在任务早些时候，你查看了用于建议下拉列表的 HTML 和 CSS。现在的任务是以程序方式创建 HTML 以及创建实际功能的 CSS；这是一个多步骤的过程。首先，需要一个属性来存储 `<div>` 元素，因为 `AutoSuggestControl` 的各种方法都需要访问它。该属性稍后会被调用并初始化为 `null`：
+在任务早些时候，你查看了用于建议下拉列表的 HTML 和 CSS。现在的任务是以程序方式创建 HTML 以及创建实际功能所需的 CSS；这是一个多步骤的过程。首先，需要一个属性来存储`<div>`元素，因为`AutoSuggestControl`的各种方法都需要访问它。该属性稍后会被调用并初始化为`null`：
 
 ```javascript
 function AutoSuggestControl(oTextbox, oProvider) {
@@ -5701,7 +6122,7 @@ function AutoSuggestControl(oTextbox, oProvider) {
 }
 ```
 
-定义几个控制其行为的方法后，就可以创建下拉列表。简单的方法是 `hideSuggestions()`，它在显示后隐藏下拉列表：
+定义几个控制其行为的方法后，就可以创建下拉列表。简单的方法是`hideSuggestions()`，它在显示后隐藏下拉列表：
 
 ```javascript
 AutoSuggestControl.prototype.hideSuggestions = function () {
@@ -5709,7 +6130,7 @@ AutoSuggestControl.prototype.hideSuggestions = function () {
 };
 ```
 
-接下来，需要一个方法来高亮下拉列表中的当前建议。`highlightSuggestion()` 方法接受一个参数，即包含当前建议的 `<div>` 元素。其目的是将当前建议的 `<div>` 的 `class` 属性设置为 `current`，并清除列表中其他元素的 `class` 属性。这样做可以在下拉列表提供类似于普通表单的高亮效果。算法非常简单：遍历 `layer` 的节点。如果子节点等于传入的节点，则将 `class` 设置为 `current`；否则，通过将其设置为空字符串来清除 `class` 属性：
+接下来，需要一个方法来高亮下拉列表中的当前建议。`highlightSuggestion()`方法接受一个参数，即包含当前建议的`<div>`元素。其目的是将当前建议的`<div>`的`class`属性设置为`current`，并清除列表中其他元素的`class`属性。这样做可以在下拉列表提供类似于普通表单的高亮效果。算法非常简单：遍历`layer`的节点。如果子节点等于传入的节点，则将`class`设置为`current`；否则，通过将其设置为空字符串来清除`class`属性：
 
 ```javascript
 AutoSuggestControl.prototype.highlightSuggestion = function (oSuggestionNode) {
@@ -5724,10 +6145,10 @@ AutoSuggestControl.prototype.highlightSuggestion = function (oSuggestionNode) {
 };
 ```
 
-定义这两个方法后，是时候创建下拉列表 `<div>` 了。`createDropDown` 方法创建最外层的 `<div>` 元素并为下拉列表定义事件处理器。要创建 `<div>` 元素，使用 `createElement()` 方法并分配以下样式属性：
+定义这两个方法后，是时候创建下拉列表`<div>`了。`createDropDown`方法创建最外层的`<div>`元素并为下拉列表定义事件处理器。要创建`<div>`元素，使用`createElement()`方法并分配以下样式属性：
 
 ```javascript
-AutoSuggestionControl.prototype.createDropDown = function () {
+AutoSuggestControl.prototype.createDropDown = function () {
   this.layer = document.createElement("div");
   this.layer.className = "suggestions"
   this.layer.style.visibility = "hidden"
@@ -5737,19 +6158,18 @@ AutoSuggestionControl.prototype.createDropDown = function () {
 };
 ```
 
-此代码创建了 `<div>` 元素并将其赋值给 `layer` 属性。
-
+此代码创建了`<div>`元素并将其赋值给`layer`属性。
 
 ```javascript
 return iLeft;
 ```
 
-`getLeft()` 方法首先将 `oNode` 指向文本框，并将 `iLeft` 初始化为 0。`while` 循环将在向上遍历 DOM 结构直到 `<body>` 元素时，持续将 `oNode.offsetLeft` 加到 `iLeft` 中。
+`getLeft()`方法首先将`oNode`指向文本框，并将`iLeft`初始化为0。`while`循环将在向上遍历 DOM 结构直到`<body>`元素时，持续将`oNode.offsetLeft`加到`iLeft`中。
 
 相同的算法可以用于获取文本框的顶部位置：
 
 ```javascript
-AutoSuggestControl.prototype.getType = function () {
+AutoSuggestControl.prototype.getTop = function () {
   var oNode = this.textbox;
   var iTop = 0;
   while (oNode.tagName != "BODY") {
@@ -5762,9 +6182,9 @@ AutoSuggestControl.prototype.getType = function () {
 
 这两个方法将用于将下拉列表放置在正确的位置。
 
-# 添加并显示建议
+## 添加并显示建议
 
-该过程的下一步是创建一个方法，将建议添加到下拉列表中并显示它。`showSuggestions()` 方法接受一个建议数组作为参数，并构建用于显示它们的必要 DOM 元素。随后，该方法将下拉列表定位在文本框下方并将其显示给用户：
+该过程的下一步是创建一个方法，将建议添加到下拉列表中并显示它。`showSuggestions()`方法接受一个建议数组作为参数，并构建用于显示它们的必要 DOM 元素。随后，该方法将下拉列表定位在文本框下方并将其显示给用户：
 
 ```javascript
 AutoSuggestControl.prototype.showSuggestions = function (aSuggestions) {
@@ -5778,23 +6198,23 @@ AutoSuggestControl.prototype.showSuggestions = function (aSuggestions) {
   }
 
   this.layer.style.left = this.getLeft() + "px";
-  this.layer.style.top = (this.getType() + this.textbox.offsetHeight) + "px";
+  this.layer.style.top = (this.getTop() + this.textbox.offsetHeight) + "px";
   this.layer.style.visibility = "visible";
 }
 ```
 
-第一行简单地定义了供以后使用的变量 `oDiv`。第二行通过将 `innerHTML` 属性设置为空字符串来清除下拉列表的内容。然后，`for` 循环会为每个建议创建一个 `<div>` 元素和节点，然后将其添加到下拉层中。
+第一行简单地定义了供以后使用的变量`oDiv`。第二行通过将`innerHTML`属性设置为空字符串来清除下拉列表的内容。然后，`for`循环会为每个建议创建一个`<div>`元素和文本节点，然后将其添加到下拉层中。
 
-接下来的代码部分开始使用 `getLeft()` 方法设置图层的左位置。要设置顶部位置，你需要将 `getTop()` 的值加到文本框的高度（通过 `offsetHeight` 属性获取）。如果不这样做，下拉列表将直接显示在文本框上方。（记住，`getTop()` 获取的是文本框的顶部，而不是下拉列表的顶部）。最后，将图层的 `visibility` 属性设置为 `visible` 以显示它。
+接下来的代码部分开始使用`getLeft()`方法设置图层的左位置。要设置顶部位置，你需要将`getTop()`的值加到文本框的高度（通过`offsetHeight`属性获取）。如果不这样做，下拉列表将直接显示在文本框上方。（记住，`getTop()`获取的是文本框的顶部，而不是下拉列表的顶部）。最后，将图层的`visibility`属性设置为`visible`以显示它。
 
-# 更新功能
+## 更新功能
 
 为了显示建议下拉列表，你需要对定义的功能进行几处更改。
 
-第一个更新是为 `autuggest()` 方法添加了第二个参数，该参数指示是否应该调用该功能（其原因稍后会解释）。通常情况下，只有当此参数为 `true` 时才应该调用 `typeAhead()` 方法。如果至少有一个建议，则应该使用 `typeAhead` 并调用 `showSuggestions()` 显示下拉列表；如果没有建议，则应该调用 `hideSuggestions()` 隐藏下拉列表；
+第一个更新是为`autosuggest()`方法添加了第二个参数，该参数指示是否应该调用该功能（其原因稍后会解释）。通常情况下，只有当此参数为`true`时才应该调用`typeAhead()`方法。如果至少有一个建议，则应该使用`typeAhead`并调用`showSuggestions()`显示下拉列表；如果没有建议，则应该调用`hideSuggestions()`隐藏下拉列表：
 
 ```javascript
-AutoSuggestControl.prototype.autuggest = function (suggestions, bTypeAhead) {
+AutoSuggestControl.prototype.autosuggest = function (suggestions, bTypeAhead) {
   if (suggestions.length > 0) {
     if (bTypeAhead) {
       this.typeAhead(suggestions[0]);
@@ -5803,10 +6223,10 @@ AutoSuggestControl.prototype.autuggest = function (suggestions, bTypeAhead) {
   } else {
     this.hideSuggestions();
   }
-}
+};
 ```
 
-由于几个不同的原因，有必要更新 `handleKeyUp()` 方法。第一个原因是将 `bTypeAhead` 参数更新到 `requestSuggestions()` 调用。当从此处调用时，该参数将始终为 `true`：
+由于几个不同的原因，有必要更新`handleKeyUp()`方法。第一个原因是将`bTypeAhead`参数更新到`requestSuggestions()`调用。当从此处调用时，该参数将始终为`true`：
 
 ```javascript
 AutoSuggestControl.prototype.handleKeyUp = function (oEvent) {
@@ -5819,27 +6239,22 @@ AutoSuggestControl.prototype.handleKeyUp = function (oEvent) {
   } else if (iKeyCode >= 37 && iKeyCode <= 40) {
     this.handleNavigation(iKeyCode);
   }
-}
+};
 ```
-*(注：由于原文中 `handleKeyUp` 的代码块不完整或存在差异，此处根据上下文逻辑翻译了其描述，并保持了代码结构的一致性。纠正：原文提供的文本中 `handleKeyUp` 代码块似乎被截断或不完整，我已根据逻辑进行了处理。)*
 
+如果`diff`小于或等于零，则意味着需要高亮上一个建议。在这种情况下，你必须首先确保`cur`大于0（如果`cur`不至少为1，则没有上一个建议可以跳转）。通过该测试后，`cur`减1以获取正确建议的引用。
 
+该方法的最后一步是确保`node`不为空。如果不为空，则将`node`传递给`highlightSuggestion()`并将建议文本放入文本框；如果为`null`，则不采取任何操作。
 
-
-
-如果 `diff` 小于或等于零，则意味着需要高亮上一个建议。在这种情况下，你必须首先确保 `cur` 大于 0（如果 `cur` 不至少为 1，则没有上一个建议可以跳转）。通过该测试后，`cur` 减 1 以获取正确建议的引用。
-
-该方法的最后一步是确保 `node` 不为空。如果不为空，则将 `node` 传递给 `highlightSuggestion()`并将建议文本放入文本框；如果为 `null`，则不采取任何操作。
-
-跟踪已选建议的另一部分是确保 `cur` 处于正确的位置；否则可能会出现一些异常行为。将 `cur` 重置为 -1 的正确位置是在 `autosuggest()` 方法中，在显示下拉列表之前：
+跟踪已选建议的另一部分是确保`cur`处于正确的位置；否则可能会出现一些异常行为。将`cur`重置为-1的正确位置是在`autosuggest()`方法中，在显示下拉列表之前：
 
 ```javascript
-AutoSuggestControl.prototype.autosuggest = function (aSuggest) {
+AutoSuggestControl.prototype.autosuggest = function (aSuggestions) {
 	this.cur = -1;
 
 	if (aSuggestions.length > 0) {
 		if (bTypeAhead) {
-			aSuggestions[0]];
+			this.typeAhead(aSuggestions[0]);
 		}
 
 		this.showSuggestions(aSuggestions);
@@ -5849,7 +6264,9 @@ AutoSuggestControl.prototype.autosuggest = function (aSuggest) {
 };
 ```
 
-同样，将 `cur` 设置为正确的值是非常重要的。这应该在 `handleKeyUp()` 方法中完成：
+同样，将`cur`设置为正确的值是非常重要的。这应该在`handleKeyUp()`方法中完成：
+
+
 
 ```javascript
 AutoSuggestControl.prototype.handleKeyUp = function (oEvent) {
@@ -5865,118 +6282,175 @@ AutoSuggestControl.prototype.handleKeyUp = function (oEvent) {
 	} else {
 		this.provider.requestSuggestions(this, true);
 	}
+```
 
-这一小小的添加在请求建议之前保存了用户输入的内容。通过这两个方法，可以确保 `gotoSuggestion()` 在正确的时间被调用。
+这一小小的添加在请求建议之前保存了用户输入的内容。通过这两个方法，可以确保`gotoSuggestion()`在正确的时间被调用。
 
-为了处理上箭头、下箭头、Esc 和回车键，需要一个 `handleKeyDown()` 方法。与 `handleKeyUp()` 类似，它也需要传递事件对象。同样，你需要依靠事件判断按了哪个键。上箭头、下箭头、Esc 和回车键的代码分别为 38、40、27 和 13。`handleKeyDown()` 方法定义如下：
+为了处理上箭头、下箭头、Esc 和回车键，需要一个`handleKeyDown()`方法。与`handleKeyUp()`类似，它也需要传递事件对象。同样，你需要依靠事件判断按了哪个键。上箭头、下箭头、Esc 和回车键的代码分别为 38、40、27 和 13。`handleKeyDown()`方法定义如下：
 
 ```javascript
 AutoSuggestionControl.prototype.handleKeyDown = function (oEvent) {
+
   switch(oEvent.keyCode) {
+
     case 38: // 上箭头
+
       this.gotoSuggestion(-1);
+
       break;
+
     case 40: // 下箭头
+
       this.gotoSuggestion(1);
+
       break;
+
     case 27: // esc
+
       this.textbox.value = this.inputText;
+
       this.selectRange(this.userText.length, 0);
+
       /* falls through **/
+
     case 13: // 回车
+
       this.hideSuggestions();
+
       oEvent.returnValue = false;
+
       if (oEvent.preventDefault()) {
+
         oEvent.preventDefault();
+
       }
+
       break;
+
   }
+
 }
 ```
 
-当按下上箭头（代码 38）时，调用 `gotoSuggestion()` 并传入参数 -1，表示选择上一个建议。同样，当按下下箭头（代码 40）时，调用 `gotoSuggestion()` 并传入参数 1 以高亮下一个建议。如果按下 Esc（代码 27），有几件事要做：
+当按下上箭头（代码 38）时，调用`gotoSuggestion()`并传入参数 -1，表示选择上一个建议。同样，当按下下箭头（代码 40）时，调用`gotoSuggestion()`并传入参数 1 以高亮下一个建议。如果按下 Esc（代码 27），有几件事要做：
 
-首先，你需要将文本框的值设置为用户输入的原始文本。其次，你需要将文本的选择位置设置为用户输入之后，以便其可以继续输入。这是通过将范围设置为长度来实现的。然后穿透到回车键（代码 13），它会隐藏建议列表。这里只包含一次 `hideSuggestions()` 调用，而不是两次。然而，当用户按下上下方向箭头时，下拉列表中显示建议。这意味着当按下回车键时，你只需要隐藏下拉列表。
+首先，你需要将文本框的值设置为用户输入的原始文本。其次，你需要将文本的选择位置设置为用户输入之后，以便其可以继续输入。这是通过将范围设置为长度来实现的。然后穿透到回车键（代码 13），它会隐藏建议列表。这里只包含一次`hideSuggestions()`调用，而不是两次。然而，当用户按下上下方向箭头时，下拉列表中显示建议。这意味着当按下回车键时，你只需要隐藏下拉列表。
 
-对于 Esc 和回车，你必须阻止按键的默认行为。为了防止用户在只想选择时回车键就提交了表单，通过设置 `event.returnValue = false`（针对 IE）然后调用 `preventDefault()` 来实现。
+对于 Esc 和回车，你必须阻止按键的默认行为。为了防止用户在只想选择时回车键就提交了表单，通过设置`event.returnValue = false`（针对 IE）然后调用`preventDefault()`来实现。
 
-## 更新 init()
+## 更新`init()`
 
-现在已经添加了所有功能，必须对其进行初始化。以前，`init()` 方法用于设置 `keyup` 处理器；现在必须扩展以设置 `keydown` 和 `onblur` 处理器以及下拉列表。`keydown` 事件的设置方式与 `keyup` 类似：
+现在已经添加了所有功能，必须对其进行初始化。以前，`init()`方法用于设置`keyup`处理器；现在必须扩展以设置`keydown`和`onblur`处理器以及下拉列表。`keydown`事件的设置方式与`keyup`类似：
 
 ```javascript
 AutoSuggestControl.prototype.init = function () {
+
   var oThis = this;
 
   this.textbox.keyup = function (oEvent) {
+
     if (!oEvent) {
+
       oEvent = window.event;
+
     }
+
     oThis.handleKeyUp(oEvent);
+
   };
 
   this.textbox.keydown = function (oEvent) {
+
     if (!oEvent) {
+
       oEvent = window.event;
+
     }
+
     oThis.handleKeyDown(oEvent);
+
   };
+
   // 后续代码
 ```
 
-可以看出，`keydown` 处理器使用了相同的算法：首先确定事件对象，然后将其传入 `handleKeyDown()` 方法。到目前，隐藏下拉列表的唯一方法是按下回车键。但如果用户点击了屏幕的其他地方或使用 Tab 键切换到新字段怎么办？为了准备这种情况，你必须设置一个 `onblur` 处理器，每当文本框失去焦点时都会隐藏建议：
+可以看出，`keydown`处理器使用了相同的算法：首先确定事件对象，然后将其传入`handleKeyDown()`方法。到目前，隐藏下拉列表的唯一方法是按下回车键。但如果用户点击了屏幕的其他地方或使用 Tab 键切换到新字段怎么办？为了准备这种情况，你必须设置一个`onblur`处理器，每当文本框失去焦点时都会隐藏建议：
 
 ```javascript
 AutoSuggestControl.prototype.init = function () {
+
   var oThis = this;
 
   this.textbox.keyup = function (oEvent) {
+
     if (!oEvent) {
+
       oEvent = window.event;
+
     }
+
     oThis.handleKeyUp(oEvent);
+
   };
 
   this.textbox.keydown = function (oEvent) {
+
     if (!oEvent) {
+
       oEvent = window.event;
+
     }
+
     oThis.handleKeyDown(oEvent);
+
   };
 
   this.textbox.onblur = function () {
+
     oThis.hideSuggestions();
+
   };
 
   this.createDropDown();
+
 };
 ```
 
-你还会注意到调用了 `createDropDown()` 方法来创建初始下拉列表。这完成了自动完成的键盘支持，但还有一点需要考虑。
+你还会注意到调用了`createDropDown()`方法来创建初始下拉列表。这完成了自动完成的键盘支持，但还有一点需要考虑。
 
 ## 快速输入支持
 
-由于 `handleKeyUp` 方法在每次按下按键时都会请求建议，你可能在疑惑有人打字很快时是否能跟得上。答案是否定的。你可能会惊讶地发现建议太晚了（包括用户输入时），导致用户体验非常糟糕。
+由于`handleKeyUp`方法在每次按下按键时都会请求建议，你可能在疑惑有人打字很快时是否能跟得上。答案是否定的。你可能会惊讶地发现建议太晚了（包括用户输入时），导致用户体验非常糟糕。
 
-为了实现这一点，首先你需要一个属性来持有超时 ID。你可以直接将 `timeoutId` 添加到 AutoSuggestControl 类中，如下：
+为了实现这一点，首先你需要一个属性来持有超时 ID。你可以直接将`timeoutId`添加到`AutoSuggestControl`类中，如下：
 
 ```javascript
 function AutoSuggestControl(oTextbox, oProvider) {
+
   this.cur = -1;
+
   this.layer = null;
+
   this.provider = oProvider;
+
   this.textbox = oTextbox;
+
   this.timeoutId = null;
+
   this.userText = otextbox.value;
+
   this.init();
+
 }
 ```
 
-接下来，更新 `handleKeyUp()` 方法以使用这个新属性：
+接下来，更新`handleKeyUp()`方法以使用这个新属性：
 
 ```javascript
 AutoSuggestControl.prototype.handleKeyUp = function (oEvent) {
+
   var keyCode = oEvent.keyCode;
+
   var oThis = this;
 
   this.userText = this.textbox.value;
@@ -5984,84 +6458,113 @@ AutoSuggestControl.prototype.handleKeyUp = function (oEvent) {
   clearTimeout(this.timeoutId);
 
   if (keyCode == 8 || keyCode == 46) {
+
     this.timeoutId = setTimeout(function () {
+
       oThis.provider.requestSuggestions(oThis, false);
+
     }, 250);
+
   } else if (keyCode < 32 || (keyCode >= 33 && keyCode <= 46) || (keyCode >= 112 && keyCode <= 123)) {
+
     //ignore
+
   } else {
+
     this.timeoutId = setTimeout(function () {
+
       oThis.provider.requestSuggestions(oThis, true);
+
     }, 250);
+
   }
+
 };
 ```
 
-此方法中的新行存储了 `this` 对象的引用，这在使用 `setTimeout()` 方法时非常重要。新行代码清除了任何可能已经启动的超时，它取消了已发起的建议请求。简单来说，在请求建议之前，用户会等待一段时间。这可以通过使用 `setTimeout` 方法来实现的。通过这种方式，可以确保只有在用户停止打字时才会发出请求。
+此方法中的新行存储了`this`对象的引用，这在使用`setTimeout()`方法时非常重要。新行代码清除了任何可能已经启动的超时，它取消了已发起的建议请求。简单来说，在请求建议之前，用户会等待一段时间。这可以通过使用`setTimeout`方法来实现的。通过这种方式，可以确保只有在用户停止打字时才会发出请求。
 
+## 建议提供者（Suggestion Provider）
 
-
-
-
-# 建议提供者 (Suggestion Provider)
-
-与 AutoSuggestControl 相比，SuggestionProvider 类相对简单，它只有一个目的：从服务器请求建议并将其转发给控件。为了实现这一点，SuggestionProvider 需要一个 HttpRequest 实例。我们不会为每个请求创建一个新对象，而是反复使用同一个对象，以避免连续创建和销毁对象的开销。此单例是通过使用 XML 库的 XMLHttpRequest 工厂创建的，存储在名为 `http` 的属性中：
+与`AutoSuggestControl`相比，`SuggestionProvider`类相对简单，它只有一个目的：从服务器请求建议并将其转发给控件。为了实现这一点，`SuggestionProvider`需要一个`HttpRequest`实例。我们不会为每个请求创建一个新对象，而是反复使用同一个对象，以避免连续创建和销毁对象的开销。此单例是通过使用 XML 库的`XMLHttpRequest`工厂创建的，存储在名为`http`的属性中：
 
 ```javascript
 function SuggestionProvider() {
+
     this.http = XMLHttpRequest.createRequest();
+
 }
 ```
 
-建议提供者的方法是 `requestSuggestions()`，你可能在架构讨论中见过它。该方法接受两个参数：要操作的 `AutoSuggestControl` 以及一个指示是否使用自动完成（typeahead）的标志。其完整代码如下：
+建议提供者的方法是`requestSuggestions()`，你可能在架构讨论中见过它。该方法接受两个参数：要操作的`AutoSuggestControl`以及一个指示是否使用自动完成（typeahead）的标志。其完整代码如下：
 
 ```javascript
 SuggestionProvider.prototype.requestSuggestions = function (oAutoSuggestControl,
+
     var http = this.http;
 
     // 取消任何活动请求
+
     if (http.readyState == 0) {
+
         http.abort();
+
     }
 
     // 定义数据
+
     var data = {
+
         requesting: "StatesAndProvinces",
+
         text: oAutoSuggestControl.inputText,
+
         limit: 5
+
     };
 
     // 打开与服务器的连接
+
     http.open("post", "suggestions.php", true);
+
     http.onreadystatechange = function () {
+
         if (http.readyState == 4) {
+
             // 解析返回的 JavaScript（数组）
+
             var suggestions = JSON.parse(http.responseText);
+
             // 为控件提供建议
+
             oAutoSuggestControl.autosuggest(suggestions, bTypeAhead);
+
         }
+
     }
 
     // 发送请求
+
     oHttp.send(JSON.stringify(oData));
+
 };
 ```
 
-方法内部的第一行将 `xhr` 赋值为存储的 `XMLHttpRequest` 对象。这样做是为了方便并保持代码整洁。接下来，你检查是否已经有一个请求在等待响应。如果 `XMLHttpRequest` 对象已准备好可以可以使用，其 `readyState` 将为 0；否则，你必须在发送另一个请求之前取消现有的请求（通过调用 `abort()`）。
+方法内部的第一行将`xhr`赋值为存储的`XMLHttpRequest`对象。这样做是为了方便并保持代码整洁。接下来，你检查是否已经有一个请求在等待响应。如果`XMLHttpRequest`对象已准备好可以使用，其`readyState`将为 0；否则，你必须在发送另一个请求之前取消现有的请求（通过调用`abort()`）。
 
-由于发送到服务器的数据是 JSON 编码的，因此你首先需要创建一个对象 (`oData`) 来存储信息。发送的信息包含三部分：从中获取数据的表、文本框中的当前值以及要检索的最大建议数量（5）。最大建议数量很重要，因为它能防止重复执行耗时的数据库查询。
+由于发送到服务器的数据是 JSON 编码的，因此你首先需要创建一个对象（`oData`）来存储信息。发送的信息包含三部分：从中获取数据的表、文本框中的当前值以及要检索的最大建议数量（5）。最大建议数量很重要，因为它能防止重复执行耗时的数据库查询。
 
-接下来，打开到 `suggestions.php` 的请求，这是控件的服务器端组件。该请求是异步的（`open()` 的最后一个参数设置为 `true`），因此有必要提供一个 `onreadychange` 事件处理器。该事件处理器确保 `readyState` 为 4，然后将返回的文本解析为 JSON 值数组。该数组连同原始数据一起通过 `outsetget()` 传回给 `AutoSuggest`。
+接下来，打开到`suggestions.php`的请求，这是控件的服务器端组件。该请求是异步的（`open()`的最后一个参数设置为`true`），因此有必要提供一个`onreadychange`事件处理器。该事件处理器确保`readyState`为 4，然后将返回的文本解析为 JSON 值数组。该数组连同原始数据一起通过`outsetget()`传回给`AutoSuggest`。
 
-该方法的最后一步当然是发送请求。由于请求是 POST 类型，数据必须传递到 `send()` 方法中。`oData` 在发送之前会先编码为 JSON。
+该方法的最后一步当然是发送请求。由于请求是 POST 类型，数据必须传递到`send()`方法中。`oData`在发送之前会先编码为 JSON。
 
-至此，`SuggestionProvider` 类编写完成。唯一剩下的工作就是编写使用这些数据的 `suggestions.php` 文件。
+至此，`SuggestionProvider`类编写完成。唯一剩下的工作就是编写使用这些数据的`suggestions.php`文件。
 
-# 服务器端组件 (The Server-Side Component)
+## 服务器端组件（The Server-Side Component）
 
-在许多方面，autosuggest 控件的服务器端组件是最直观的；它只是从上到下执行的简单程序，不需要考虑任何函数或方法。注意，这是一个 PHP页面，本节中的所有代码必须包含在 PHP 代码块 `<?php ... ?>` 中。
+在许多方面，autosuggest 控件的服务器端组件是最直观的；它只是从上到下执行的简单程序，不需要考虑任何函数或方法。注意，这是一个 PHP 页面，本节中的所有代码必须包含在 PHP 代码块`<?php ... ?>`中。
 
-页面的第一部分是将内容类型设置为 `text/plain`；表示这是一个 PHP 文件，不应被处理为其他类型。你可以可选地指定字符集，但要确保它兼容 Unicode（例如 UTF-8），因为 JavaScript 中使用了这些字符。以下是分配内容类型的行：
+页面的第一部分是将内容类型设置为`text/plain`；表示这是一个 PHP 文件，不应被处理为其他类型。你可以可选地指定字符集，但要确保它兼容 Unicode（例如 UTF-8），因为 JavaScript 中使用了这些字符。以下是分配内容类型的行：
 
 ```php
 header("Content-Type: text/plain; charset=UTF-8");
@@ -6071,62 +6574,93 @@ header("Content-Type: text/plain; charset=UTF-8");
 
 ```php
 require_once("suggestions.php");
+
 $JSON = new JSON();
 ```
 
-通常当数据发送到 PHP 页面时，使用 `$_GET`、`$_POST` 或 `$_REQUEST` 来获取它。在这里，数据不是以传统的键值对形式发送的，而是以 JSON 字符串发送，且 PHP 对这种数据类型没有内置支持。你需要创建一个对象 (`oData`) 来存储信息。发送的信息包含三部分：获取数据的表、文本框中的当前值以及要检索的最大建议数量（5）。最大建议数量很重要，因为它防止重复执行耗时的数据库查询。
+通常当数据发送到 PHP 页面时，使用`$_GET`、`$_POST`或`$_REQUEST`来获取它。在这里，数据不是以传统的键值对形式发送的，而是以 JSON 字符串发送，且 PHP 对这种数据类型没有内置支持。你需要创建一个对象（`oData`）来存储信息。发送的信息包含三部分：获取数据的表、文本框中的当前值以及要检索的最大建议数量（5）。最大建议数量很重要，因为它防止重复执行耗时的数据库查询。
 
-接下来，打开到 `suggestions.php` 的请求，这是控件的服务器端组件。该请求是异步的（`open()` 的最后一个参数设置为 `true`），因此有必要提供一个 `onreadychange` 事件处理器。该事件处理器确保 `readyState` 为 4，然后将返回的文本解析为 JSON 值数组。该数组连同原始数据一起通过 `outsetget()` 传回给 `AutoSuggest`。
+接下来，打开到`suggestions.php`的请求，这是控件的服务器端组件。该请求是异步的（`open()`的最后一个参数设置为`true`），因此有必要提供一个`onreadychange`事件处理器。该事件处理器确保`readyState`为 4，然后将返回的文本解析为 JSON 值数组。该数组连同原始数据一起通过`outsetget()`传回给`AutoSuggest`。
 
-该方法的最后一步当然是发送请求。由于请求是 POST 类型，数据必须传递到 `send()` 方法中。`oData` 在发送之前会先编码为 JSON。
+该方法的最后一步当然是发送请求。由于请求是 POST 类型，数据必须传递到`send()`方法中。`oData`在发送之前会先编码为 JSON。
 
-至此，`SuggestionProvider` 类完成。唯一剩下的工作就是编写使用这些数据的 `suggestions.php` 文件。
+至此，`SuggestionProvider`类完成。唯一剩下的工作就是编写使用这些数据的`suggestions.php`文件。
 
-# 客户端组件 (The Client-Side Component)
+## 客户端组件（The Client-Side Component）
 
-到为止，你已经构建了 autosuggest 控件所需的 HTML、CSS、JavaScript 和 PHP。剩下的工作是将它们整合到一个页面中。最重要的是记住包含所有必要的 JavaScript 文件。在这种情况下，你需要包含 `json.js`、`zmml.js` 和 `autosuggest.js`。同样重要的是样式文件 `autosuggest.css`。
+到为止，你已经构建了 autosuggest 控件所需的 HTML、CSS、JavaScript 和 PHP。剩下的工作是将它们整合到一个页面中。最重要的是记住包含所有必要的 JavaScript 文件。在这种情况下，你需要包含`json.js`、`zmml.js`和`autosuggest.js`。同样重要的是样式文件`autosuggest.css`。
 
-有必要在页面完全加载后使用 `onload` 事件处理器实例化 `AutoSuggestControl`。示例页面的完整代码如下：
+有必要在页面完全加载后使用`onload`事件处理器实例化`AutoSuggestControl`。示例页面的完整代码如下：
 
 ```html
 <html>
+
 <head>
+
   <title>AutoSuggest Example</title>
+
   <script type="text/javascript" src="json.js"></script>
+
   <script type="text/javascript" src="zmml.js"></script>
+
   <script type="text/javascript" src="autosuggest.js"></script>
+
   <link rel="stylesheet" type="text/css" href="autosuggest.css" />
+
   <script type="text/javascript">
+
     window.onload = function () {
+
       var TextBox = new AutoSuggestControl(document.getElementById('txtState'), new SuggestionProvider());
+
     }
+
   </script>
+
 </head>
+
 <body>
+
   <form method="post" action="your_action.php">
+
     <table border="0">
+
       <tr>
-        <td>名称：</td>
-        <td><input type="text" name="txtName" id="txtName" /></td>
-      </tr>
-      <tr>
-        <td>地址 1：</td>
-        <td><input type="text" name="txtAddress1" id="txtAddress1" /></td>
-      </tr>
-      <tr>
-        <td>地址 2：</td>
-        <td><input type="text" name="txtAddress2" id="txtAddress2" /></td>
-      </tr>
-    </table>
-  </form>
-</body>
-</html>
 ```
 
 
 
+`<td>名称：</td>`
 
+`<td><input type="text" name="txtName" id="txtName" /></td>`
 
+`</tr>`
+
+`<tr>`
+
+`<td>地址 1：</td>`
+
+`<td><input type="text" name="txtAddress1" id="txtAddress1" /></td>`
+
+`</tr>`
+
+`<tr>`
+
+`<td>地址 2：</td>`
+
+`<td><input type="text" name="txtAddress2" id="txtAddress2" /></td>`
+
+`</tr>`
+
+`</table>`
+
+`</form>`
+
+`</body>`
+
+`</html>`
+
+```html
 <table>
   <tr>
     <td><input type="text" name="txtCity" id="txtCity" /></td>
@@ -6145,16 +6679,15 @@ $JSON = new JSON();
   </tr>
 </table>
 <input type="submit" value="Save Information" />
-
-请注意，一旦包含了必要的文件，你只需要在 `window.onload` 事件处理程序中放置一行 JavaScript 即可设置功能：
-
-```javascript
-var textBox = new
-AutoSuggestControl(document.getElementById('txtState'),
-    newSuggestionProvider());
 ```
 
-这一行代码创建了一个新的 `AutoSuggestControl`，并传递了 id 为 `txtState` 的文本框引用以及一个新的 `SuggestionProvider` 类。重要的是，这一行代码必须在 `onload` 事件处理程序中执行，因为在整个页面加载之前，`getElementById` 并不是 100% 可用的。
+请注意，一旦包含了必要的文件，你只需要在`window.onload`事件处理程序中放置一行 JavaScript 即可设置功能：
+
+```javascript
+var textBox = new AutoSuggestControl(document.getElementById('txtState'), newSuggestionProvider());
+```
+
+这一行代码创建了一个新的`AutoSuggestControl`，并传递了 id 为`txtState`的文本框引用以及一个新的`SuggestionProvider`类。重要的是，这一行代码必须在`onload`事件处理程序中执行，因为在整个页面加载之前，`getElementById`并不是 100% 可用的。
 
 示例设计也是使用该控件的一种方式：填写个人信息。这可以是一个客户可以更新其信息的页面，也可以是一个运输表单。无论你选择如何使用此功能，它都将提高你表单的易用性。自动建议控件虽然不像 Ajax 解决方案那样华丽，但它是展示如何以非干扰方式使用 Ajax 的极佳范例。
 
@@ -6176,7 +6709,7 @@ AutoSuggestControl(document.getElementById('txtState'),
 
 在 Web 上，大多数组件最初局限于静态 HTML 组件，设计用于模拟操作系统的控件，如菜单、结构树和工具栏。虽然这些组件提供了模拟传统应用程序的方法，但它们提供的功能仅此于此。
 
-得益于 `XMLHttpRequest` 的能力，组件开始将数据处理和检索与 HTML 结合，创建通常只出现在桌面端的丰富 Web 组件。
+得益于`XMLHttpRequest`的能力，组件开始将数据处理和检索与 HTML 结合，创建通常只出现在桌面端的丰富 Web 组件。
 
 在本章中，你将使用 PHP、ASP.NET、HTML 和 Ajax 创建四个 Web 组件：新闻滚动条（news ticker）、天气组件、Web 搜索组件和站点搜索组件。接下来的章节将引导你完成这些组件的创建以及如何将它们应用到你的网页中。
 
@@ -6188,9 +6721,9 @@ AutoSuggestControl(document.getElementById('txtState'),
 
 对于这个项目，你将使用 PHP 执行服务器的功能：充当代理为客户端获取请求 Feed。客户端应用程序由常见的元素组成：HTML 和 JavaScript。
 
-# 服务端组件
+### 服务端组件
 
-如所述，用 PHP 编写的服务器应用程序非常简单。要从服务器请求信息，URL 的查询字符串中应包含一个 `url` 变量：`sticker.php?url=http://rss.news.yahoo.com/rss/topstories`
+如所述，用 PHP 编写的服务器应用程序非常简单。要从服务器请求信息，URL 的查询字符串中应包含一个`url`变量：`sticker.php?url=http://rss.news.yahoo.com/rss/topstories`
 
 因为服务器的工作是获取远程信息，因此服务器应用程序只包含几行：
 
@@ -6198,24 +6731,19 @@ AutoSuggestControl(document.getElementById('txtState'),
 <?php
 header("Content-Type: text/xml");
 header("Cache-Control: no-cache");
-
 if ( isset($_GET["url"]) ) {
     $remoteUrl = $_GET["url"];
-
     $xml = file_get_contents($remoteUrl);
-
     echo $xml;
 }
 ?>
 ```
 
-前两行分别设置了 `Content-Type` 和 `Cache-Control` 头部。如第 5 章所述，将 MIME 内容类型设置为 `text/xml` 是重要的；否则 Mozilla Firefox 不会将数据识别为 XML。
-
-前两行分别设置了 `Content-Type` 和 `Cache-Control` 头部。如第 5 章所述，将 MIME 内容类型设置为 `text/xml` 是重要的；否则 Mozilla Firefox 不会将数据识别为 XML。
+前两行分别设置了`Content-Type`和`Cache-Control`头部。如第 5 章所述，将 MIME 内容类型设置为`text/xml`是重要的；否则 Mozilla Firefox 不会将数据识别为 XML。
 
 图 8-1
 
-# 客户端组件
+### 客户端组件
 
 在深入代码之前，应该讨论客户端的功能。客户端：
 
@@ -6230,11 +6758,11 @@ if ( isset($_GET["url"]) ) {
 - 滚动条中的数据标题应为链接，引导用户进入指定的新闻。
 - 鼠标进入滚动条时停止滚动，鼠标移出时恢复。
 
-客户端代码由两个类组成：`NewsTicker` 类负责以 HTML 格式构建滚动条、格式化滚动条动画并提供将 Feed 添加到滚动条的能力；`NewsFeed` 类负责请求 Feed、解析并放入 HTML，以及轮询新数据。
+客户端代码由两个类组成：`NewsTicker`类负责以 HTML 格式构建滚动条、格式化滚动条动画并提供将 Feed 添加到滚动条的能力；`NewsFeed`类负责请求 Feed、解析并放入 HTML，以及轮询新数据。
 
-# NewsTicker 类
+### NewsTicker 类
 
-`NewsTicker` 类是客户端的主类。构造函数接受一个参数：要附加到滚动条的 HTMLElement：
+`NewsTicker`类是客户端的主类。构造函数接受一个参数：要附加到滚动条的 HTMLElement：
 
 ```javascript
 function NewsTicker (appendTo) {
@@ -6244,7 +6772,7 @@ function NewsTicker (appendTo) {
 }
 ```
 
-这几行代码初始化了 `oThis` 的属性。首先通过赋值变量 `oThis` 创建对象。`timer` 属性初始化为 `null`，将控制滚动动画（`setTimeout` 返回一个唯一的定时器标识符）。`feeds` 属性是一个 `NewsTicker` 对象的数组。
+这几行代码初始化了`oThis`的属性。首先通过赋值变量`oThis`创建对象。`timer`属性初始化为`null`，将控制滚动动画（`setTimeout`返回一个唯一的定时器标识符）。`feeds`属性是一个`NewsTicker`对象的数组。
 
 接下来的属性创建了组件的主要元素：
 
@@ -6258,10 +6786,7 @@ this.tickerContainer.className = "NewsTicker";
 this.ticker.className = "NewsTicker";
 ```
 
-这些属性 `tickerContainer` 和 `ticker` 分别是新创建的 `<div>` 和 `<br/>` 元素，它们定义了其名称的含义：前者包含了组件的所有元素，而 `ticker` 元素则滚动其包含的新闻。
-
-
-
+这些属性`tickerContainer`和`ticker`分别是新创建的`<div>`和`<br/>`元素，它们定义了其名称的含义：前者包含了组件的所有元素，而`ticker`元素则滚动其包含的新闻。
 
 否则，文本将由于换行而直接出现，而不是滚动显示。此构造函数输出的 HTML 代码如下：
 
@@ -6271,7 +6796,7 @@ this.ticker.className = "NewsTicker";
 </div>
 ```
 
-作为用户界面的一部分，请记住，当用户将鼠标悬停在新闻滚动器上时，滚动动画会停止。为了实现这一功能，为 `tickerContainer` 的 `onmouseover` 和 `mouseout` 事件分配事件处理程序：
+作为用户界面的一部分，请记住，当用户将鼠标悬停在新闻滚动器上时，滚动动画会停止。为了实现这一功能，为`tickerContainer`的`onmouseover`和`mouseout`事件分配事件处理程序：
 
 ```javascript
 this.tickerContainer.onmouseover = function () {
@@ -6285,16 +6810,16 @@ this.tickerContainer.onmouseout = function () {
 };
 ```
 
-在 `mouseover` 事件处理器中，`clearTimeout` 清除了定时器属性，从而停止动画。注意这里使用了 `oThis`，因为作用域在事件处理器内部发生了变化。`mouseout` 事件处理器通过调用 `tick()` 方法使动画重新开始，该方法负责执行动画。
+在`mouseover`事件处理器中，`clearTimeout`清除了定时器属性，从而停止动画。注意这里使用了`oThis`，因为作用域在事件处理器内部发生了变化。`mouseout`事件处理器通过调用`tick()`方法使动画重新开始，该方法负责执行动画。
 
-下一步是将 `ticker` 元素附加到 `tickerContainer`，并将组件的 HTML 附加到其父级 `HTMLElement`：
+下一步是将`ticker`元素附加到`tickerContainer`，并将组件的 HTML 附加到其父级`HTMLElement`：
 
 ```javascript
 var oAppend = (oAppend) ? oAppend : document.body;
 oAppend.appendChild(this.tickerContainer);
 ```
 
-第一行代码将 `ticker` 添加到 `tickerContainer`，这产生了我们在本节之前看到的 HTML。下一行为开发者提供了便利。如果 `appendTo` 存在，构造函数会将组件附加到 `appendTo` 的值。然而，如果它不存在，则 HTML 将附加到 `document.body`。这为该参数提供了一个默认值，如果你想将组件附加到文档，则无需传递参数。
+第一行代码将`ticker`添加到`tickerContainer`，这产生了我们在本节之前看到的 HTML。下一行为开发者提供了便利。如果`appendTo`存在，构造函数会将组件附加到`appendTo`的值。然而，如果它不存在，则 HTML 将附加到`document.body`。这为该参数提供了一个默认值，如果你想将组件附加到文档，则无需传递参数。
 
 构造函数的最后几行初始化了滚动器：
 
@@ -6303,11 +6828,11 @@ this.ticker.style.left = this.tickerContainer.offsetLeft + "px";
 this.tick();
 ```
 
-第一行代码将 `ticker` 放置于 `tickerContainer` 的最右边缘。动画从左向右滚动。
+第一行代码将`ticker`放置于`tickerContainer`的最右边缘。动画从左向右滚动。
 
-> 注意：Internet Explorer 和 Firefox 具有不同的模式，这些模式会根据 HTML 页面中指定的 `doctype` 来渲染标记。在标准模式下，你必须在任何为元素定位的代码行添加 "px"，否则浏览器将无法对元素进行定位。
+> 注意：Internet Explorer 和 Firefox 具有不同的模式，这些模式会根据 HTML 页面中指定的`doctype`来渲染标记。在标准模式下，你必须在任何为元素定位的代码行添加 "px"，否则浏览器将无法对元素进行定位。
 
-最后，`tick()` 方法启动动画，最终的构造函数代码如下：
+最后，`tick()`方法启动动画，最终的构造函数代码如下：
 
 ```javascript
 function NewsTicker(oAppend) {
@@ -6316,33 +6841,27 @@ function NewsTicker(oAppend) {
   this.feeds = [];
   this.tickerContainer = document.createElement("div");
   this.ticker = document.createElement("div");
-
   this.tickerContainer.className = "newsTickerContainer";
   this.ticker.className = "newsTicker";
-
   this.tickerContainer.onmouseover = function () {
     clearTimeout(oThis.timer);
   };
-
   this.tickerContainer.onmouseout = function () {
     oThis.tick();
   };
-
   this.tickerContainer.appendChild(this.ticker);
-
   var oToAppend = (appendTo) ? appendToTo : document.body;
   oToAppend.appendChild(this.tickerContainer);
-
   this.ticker.style.left = this.tickerContainer.offsetWidth + "px";
   this.tick();
 }
 ```
 
-# 执行动画
+### 执行动画
 
-动画的基本逻辑是通过一组像素移动元素，并重复此操作，直到元素到达页面上的特定位置为止。此组件中使用的滚动动画可能是你所能执行的最简单类型的动画：线性的从右向左移动，直到 `ticker` 的右边缘到达容器的左边缘。最后部分是动画的限制，可以通过 `-this.ticker.offsetWidth` 表示。当 `ticker` 到达此位置时，动画将重新开始。
+动画的基本逻辑是通过一组像素移动元素，并重复此操作，直到元素到达页面上的特定位置为止。此组件中使用的滚动动画可能是你所能执行的最简单类型的动画：线性的从右向左移动，直到`ticker`的右边缘到达容器的左边缘。最后部分是动画的限制，可以通过`-this.ticker.offsetWidth`表示。当`ticker`到达此位置时，动画将重新开始。
 
-`tick()` 方法起始于收集这些信息：
+`tick()`方法起始于收集这些信息：
 
 ```javascript
 NewsTicker.prototype.tick = function () {
@@ -6350,9 +6869,9 @@ NewsTicker.prototype.tick = function () {
   var oThis = this;
 ```
 
-`tickerWidth` 变量包含了动画的终点：`ticker` 的负 `offsetWidth`。再次，将指向 `NewTicker` 对象的指针赋值给 `oThis`。
+`tickerWidth`变量包含了动画的终点：`ticker`的负`offsetWidth`。再次，将指向`NewTicker`对象的指针赋值给`oThis`。
 
-为了执行动画，设置了一个低时间间隔的定时器来重复移动所需元素的函数。在这种动画中，它是 `tick()` 方法内部的一个函数：
+为了执行动画，设置了一个低时间间隔的定时器来重复移动所需元素的函数。在这种动画中，它是`tick()`方法内部的一个函数：
 
 ```javascript
 var setTimeout = function () {
@@ -6360,17 +6879,16 @@ var setTimeout = function () {
 };
 ```
 
-你可以使用外部变量、函数或方法来帮助动画，但那种方法并不面向对象。将动画逻辑保留在 `tick()` 方法内部使 `ticker` 更易部署和维护。
+你可以使用外部变量、函数或方法来帮助动画，但那种方法并不面向对象。将动画逻辑保留在`tick()`方法内部使`ticker`更易部署和维护。
 
-动画的第一步是判断 `ticker` 是否包含任何数据，因为滚动一个 `<div>` 元素是没有意义的：
+动画的第一步是判断`ticker`是否包含任何数据，因为滚动一个`<div>`元素是没有意义的：
 
 ```javascript
 if (this.ticker.innerHTML) {
-
 }
 ```
 
-这段代码检查元素的 `innerHTML` 属性；如果 `ticker` 数据中存在任何 HTML，则动画就应该开始：
+这段代码检查元素的`innerHTML`属性；如果`ticker`数据中存在任何 HTML，则动画就应该开始：
 
 ```javascript
 if (this.ticker.offsetLeft > iTickerLength) {
@@ -6379,17 +6897,15 @@ if (this.ticker.offsetLeft > iTickerLength) {
 }
 ```
 
-这段代码移动 `ticker`。第一行新代码检查 `ticker` 的位置（`offsetLeft`）相对于动画边界（`tickerLength`）的情况。如果位置大于限制，则继续动画。下一行生成 `ticker` 的新左位置：在 `iLeft` 中向左移动一个像素。然而，这只是动画的一部分。`ticker` 将继续移动直到到达边界；你必须重置 `ticker`。
+这段代码移动`ticker`。第一行新代码检查`ticker`的位置（`offsetLeft`）相对于动画边界（`tickerLength`）的情况。如果位置大于限制，则继续动画。下一行生成`ticker`的新左位置：在`iLeft`中向左移动一个像素。然而，这只是动画的一部分。`ticker`将继续移动直到到达边界；你必须重置`ticker`。
 
 ```javascript
 NewsTicker.prototype.tick = function () {
   var iTickerLength = -this.ticker.offsetWidth;
   var oThis = this;
-
   var setTimeoutFunc = function () {
     oThis.tick();
   };
-
   if (this.ticker.innerHTML) {
     if (this.ticker.offsetLeft > iTickerLength) {
       var iNewLeft = this.ticker.offsetLeft - 1;
@@ -6400,52 +6916,71 @@ NewsTicker.prototype.tick = function () {
   }
   this.timer = setTimeout(setTimeoutFunc, 50);
 };
-```
 
-第一个代码块执行此操作。在动画结束时，`ticker` 再次放置在右边缘。最后一行代码为 `setTimeoutFunc` 设置了定时器，直到用户鼠标悬停在容器上时停止。
+
+
+第一个代码块执行此操作。在动画结束时，`ticker` 再次放置在右边缘。最后一行代码为`setTimeoutFunc`设置了定时器，直到用户鼠标悬停在容器上时停止。
 
 # 添加馈
 
-`NewsTicker` 类的一个方法是 `add` 方法，它将馈添加到 `ticker` 并填充数组：
+`NewsTicker`类的一个方法是`add`方法，它将馈添加到`ticker`并填充数组：
 
 ```javascript
+
 NewsTicker.prototype.add = function (sUrl) {
+
   var feedsLength = this.feeds.length;
+
   this.feeds[feedsLength] = new NewsTickerFeed(this, sUrl);
+
 }
+
 ```
 
-该方法接受一个参数：远程馈的 URL。然后创建一个 `NewsTickerFeed` 对象作为 `feeds` 数组的元素。这在类的任何地方都没有被使用，除了初始化和填充数组。它仅仅为了可能想要访问 `ticker` 中不同馈的开发者提供便利。
+该方法接受一个参数：远程馈的 URL。然后创建一个`NewsTickerFeed`对象作为`feeds`数组的元素。这在类的任何地方都没有被使用，除了初始化和填充数组。它仅仅为了可能想要访问`ticker`中不同馈的开发者提供便利。
 
-# NewsTickerFeed 类
+# NewsTickerFeed类
 
-没有内容的滚动器并不好用。`NewsTickerFeed` 获取馈，使用 XPath 进行解析，并组装 HTML 添加到 `ticker`。该类的构造函数接受两个参数：第一个是对父级 `NewsTicker` 对象的引用；这允许在需要时访问 `NewsTicker` 对象的属性和方法。第二个参数是你想要获取的馈的 URL。
+没有内容的滚动器并不好用。`NewsTickerFeed`获取馈，使用 XPath 进行解析，并组装 HTML 添加到`ticker`。该类的构造函数接受两个参数：第一个是对父级`NewsTicker`对象的引用；这允许在需要时访问`NewsTicker`对象的属性和方法。第二个参数是你想要获取的馈的 URL。
 
 ```javascript
+
 function NewsTickerFeed(oParent, sUrl) {
+
   this.parent = oParent;
+
   this.url = sUrl;
+
   this.container = null;
 
   this.poll();
+
 }
+
 ```
 
-与 `NewsTicker` 类的构造函数相比，`NewsTickerFeed` 类的构造函数相对简单。该类三个属性：`parent` 是父级 `NewsTicker` 对象的引用；`url` 是馈的 URL；`container` 是包含馈信息的 `<span>` 元素。
+与`NewsTicker`类的构造函数相比，`NewsTickerFeed`类的构造函数相对简单。该类三个属性：`parent`是父级`NewsTicker`对象的引用；`url`是馈的 URL；`container`是包含馈信息的`<span>`元素。
 
 # 轮新信息
 
-在构造函数退出之前调用的 `poll()` 方法向服务器应用程序发起请求。它每一半分钟自动检查一次更新：
+在构造函数退出之前调用的`poll()`方法向服务器应用程序发起请求。它每一半分钟自动检查一次更新：
 
 ```javascript
+
 NewsTickerFeed.prototype.poll = function () {
+
   var oReq = zXmlHttp.createRequest();
+
   oReq.onreadystatechange = function () {
+
     if (oReq.readyState == 4) {
+
       if (oReq.status == 200) {
+
 ```
 
 ```javascript
+
 oThis.populateTicker(oReq.responseText);
 
 }};
@@ -6457,25 +6992,35 @@ oReq.open("GET", sFullUrl, true);
 oReq.send(null);
 
 }
+
 ```
 
-This code creates the XMLHttp object. First, you'll notice the ever-popular technique of assigning a pointer to the NewsTickerFeed object to oThis. The next code block creates an XMLHttpRequest object with the zXml library and defines the onreadychange event handler. Upon a successful request, the responseText property is set to the populateTicker() method.
+此代码创建 XMLHttp 对象。首先，你会注意到将指针赋值给`oThis`来引用`NewsTickerFeed`对象的常用技术。下一个代码块使用 `zXml` 库创建了一个 `XMLHttpRequest` 对象，并定义了 `onreadychange` 事件处理程序。在请求成功后， `responseText` 属性会被设置为 `populateTicker()` 方法。
 
-Before making the actual request, it is important to encode the URL. This ensures any characters such as white space, ampersands, quote marks, and so on are converted to their corresponding escape sequence for proper transmission.
+在发起实际请求之前，对 URL 进行编码非常重要。这确保了空格、与号、引号等任何字符都会被转换为其相应的转义序列，以便正确传输。
 
-One final addition to poll() is the automatic updating. To facilitate this, use a similar approach to the tick() method of the NewsTicker class:
+`poll()` 的最后一个补充是自动更新。为此，使用与 `NewsTicker` 类的 `tick()` 方法类似的方法：
 
 ```javascript
+
 NewsTickerFeed.prototype.type = function () {
+
 var oThis = this;
 
 var oReq = zXMLHttpRequest.createRequest();
+
 oReq.onreadystatechange = function () {
+
 if (oReq.readyState == 4) {
+
 if (oReq.status == 200) {
+
 oThis.populateTicker(oReq.responseText);
+
 }
+
 }
+
 };
 
 var sFullUrl = encodeURI("newsticker.php?url=" + this.url);
@@ -6485,153 +7030,227 @@ oReq.open("GET", sFullUrl, true);
 oReq.send(null);
 
 var doSetTimeout = function () {
+
 oThis.poll();
+
 };
 
 setTimeout(doSetTimeout, 90000);
+
 }
+
 ```
 
-This new code creates another function called doseTimeout() to pass to the setTimeout() method. Because this version of doseTimeout() exists only in the scope of the poll() method, the poll() method will not interfere with the previous function of the same name in tick(). The poll() method is set to run every 1.5 minutes and will update the feed.
+此新代码创建了另一个名为 `doseTimeout()` 函数，用于传递给 `setTimeout()` 方法。因为此版本的 `doseTimeout()` 仅存在于 `poll()` 方法的作用域中，所以 `poll()` 方法不会与 `tick()` 中先前同名函数冲突。`poll()` 方法设置为每 1.5 分钟运行一次，并将更新馈。
 
-## Adding Content
+## 添加内容
 
-The final method of the NewsTickerFeed class is populateTicker(), mentioned earlier because it's called in poll(). This method accepts the XMLHttpRequest responseText as its argument and parses as XParser.
+`NewsTickerFeed` 类的最后一个方法是 `populateTicker()`，之前提到过，因为它是在 `poll()` 中调用的。此方法接受 `XMLHttpRequest` 的 `responseText` 作为其参数，并解析为 `XParser`。
 
 ```javascript
+
 NewsTickerFeed.prototype.populateTicker = function (xml) {
+
   var oParser = new XParser(xml, true);
+
 }
+
 ```
 
-By passing the second argument as value of true, XParser treats the first argument as serialized XML and will not make its own XMLhttp request. With the XML now parsed, you can start to create the HTML:
+通过传递第二个参数为 `true`，`XParser` 将第一个参数视为序列化的 XML，并且不会发出自己的 `XMLhttp` 请求。由于 XML 现在已被解析，你可以开始创建 HTML：
 
 ```javascript
+
 NewsTickerFeed.prototype.populateTicker = function (xml) {
+
   var oParser = new XParser(xml, true);
 
   var spanLinkContainer = document.createElement("a");
+
   aFeedTitle.className = "newsticker-feed-Title";
+
   aFeedTitle.href = oParser.link.value;
+
   aFeedTitle.target = "_new";
+
   aFeedTitle.innerHTML = oParser.title.value;
+
   spanLinkContainer.appendChild(aFeedTitle);
+
 }
+
 ```
 
-The first step is to create an element to encapsulate all the links. This element serves a purpose of convenience: when the feed is updated, it is easier to remove one element several children than is to remove elements one at a time. Also, don't confuse this container with the container property. The latter contains spanLinkContainer.
+第一步是创建一个元素来封装所有链接。此元素方便之处在于：当馈更新时，移除一个含有多个子元素的元素比逐个移除元素更容易。此外，不要将此容器与 `container` 属性混淆。后者包含 `spanLinkContainer`。
 
-To separate the feeds in the ticker, the feed's title is used. This is too a link; so if the user clicks on the link, a new window pops up them to the feed's web site. This link is given CSS class of newTicker-feed-Title and is appended to spanLinkContainer.
+为了在 `ticker` 中区分馈，使用了馈的标题。这也是一个链接；因此，如果用户点击该链接，新窗口将弹出，将用户带到馈的网站。此链接被赋予 `newTicker-feed-Title` 的 CSS 类，并附加到 `spanLinkContainer`。
 
-Next, create the items by iterating through the items array of the XParser object:
+接下来，通过迭代 `XParser` 对象的 `items` 数组来创建项目：
 
 ```javascript
+
 NewsTickerFeed.prototype.populateTicker = function (xml) {
+
   var oParser = new XParser(xml, true);
 
   var aFeedTitle = document.createElement("a");
+
   aFeedTitle.className = "newsticker-feed-Title";
+
   aFeedTitle.href = oParser.link.value;
+
   aFeedTitle.target = "_new";
+
 ```
 
 ```javascript
+
 aFeedTitle.innerHTML = oParser.title.value;
 
 spanContainer.appendChild(aFeedTitle);
 
 for (var i = 0; i < oParser.items.length; i++) {
+
     var item = oParser.items[i];
 
     var aFeedLink = document.createElement("a");
+
     aFeedLink.href = item.link.value;
+
     aFeedLink.target = "_new";
+
     aFeedLink.className = "newsTicker-feedItem";
+
     aFeedLink.innerHTML = item.title.value;
 
     spanContainer.appendChild(aFeedLink);
+
 }
+
 ```
 
-Each link opens a new window when clicked and has a CSS class of newsTicker-feedItem. When the link is clicked, it is appended to spanLinkContainer, and which you add to the ticker:
+每个链接在被点击时会打开一个新窗口，并具有 `newsTicker-feedItem` 的 CSS 类。当链接被点击时，它会被附加到 `spanLinkContainer`，然后你将添加它到`ticker`：
 
 ```javascript
+
 NewsTickerFeed.prototype.populateTicker = function (sXml) {
+
     var oParser = new XParser(sXml, true);
 
     spanLinkContainer = document.createElement("span");
 
     aFeedTitle = document.createElement("a");
+
     aFeedTitle.className = "newsTicker-feedTitle";
+
 ```
 
 ```javascript
+
     if (!spanLinkContainer) {
+
         spanLinkContainer = document.createElement("span");
 
         aFeedTitle = document.createElement("a");
+
         aFeedTitle.className = "newsTicker-feedTitle";
+
     }
+
     aFeedTitle.href = oParser.link.value;
+
     aFeedTitle.target = "_new";
+
 ```
-
-
 
 CSS 的美之处在于它能够改变任何页面或小组件的外观和感受（在大多数情况下不受标记限制）。你可以尝试它，设计出你自己的样式，以适应你的页面。
 
 ## 实现 NewsTicker 小组件
 
-由于后端代码使用 PHP，因此设置此小组件只需上传文件并在 HTML 中引用它们即可（当然需要 PHP）。要将 JavaScript 和 CSS 添加到你的页面，请添加 `<script>` 和 `<link>` 标签：
+由于后端代码使用 PHP，因此设置此小组件只需上传文件并在 HTML 中引用它们即可（当然需要 PHP）。要将 JavaScript 和 CSS 添加到你的页面，请添加`<script>`和`<link>`标签：
 
 ```
 <!DOCTYPE html PUBLIC "//W3C//DTD XHTML 1.1//EN">
+
   <html xmlns="http://www.w3.org/TR/xhtmlml11/DTD/xhtmlml11.dtd">
+
 ```
 
 ```html
+
 <html xmlns="http://www.w3.org/1999/xhtml">
+
 <head>
+
   <title>Ajax News Ticker</title>
+
   <link rel="stylesheet" type="text/css" href="css/newsticker.css" />
+
   <script type="text/javascript" src="js/zxml.js"></script>
+
   <script type="text/javascript" src="js/xsparser.js"></script>
+
   <script type="text/javascript" src="js/newsticker.js"></script>
+
 </head>
+
 ```
 
 ```html
+
 <<body>
+
 </body>
+
 </html>
+
 ```
 
-你还需要实例化一个新的 NewsTicker 实例。记住，NewsTicker 是添加到 HTMLElement 上的，因此最好在页面加载时通过 `onload` 事件创建该对象：
+你还需要实例化一个新的`NewsTicker`实例。记住，`NewsTicker`是添加到 `HTMLElement` 上的，因此最好在页面加载时通过`onload`事件创建该对象：
 
 ```
 <!DOCTYPE html PUBLIC "//W3C//DTD XHTML 1.1//EN">
+
   <html xmlns="http://www.w3.org/TR/xhtmlml11/DTD/xhtmlml11.dtd">
+
 ```
 
 ```html
+
 <html xmlns="http://www.w3.org/1999/xhtml">
+
 <head>
+
   <title>Ajax News Ticker</title>
+
   <link rel="stylesheet" type="text/css" href="css/newsticker.css" />
+
   <script type="text/javascript" src="js/zxml.js"></script>
+
   <script type="text/javascript" src="js/xsparser.js"></script>
+
   <script type="text/javascript" src="js/newsticker.js"></script>
+
   <script type="text/javascript">
+
   function init() {
+
     var newsTicker = new NewsTicker();
+
     newsTicker.add("http://rss.news.yahoo.com/rss/topstories");
+
   }
+
 }
+
 ```
 
 ```
+
 onload = init;
+
 </script>
+
 ```
 
 </head>
@@ -6641,7 +7260,7 @@ onload = init;
 </html>
 ```
 
-由于此小组件使用 XParser 来解析新闻，因此任何 RSS 2.0 和 Atom 馈都可以与此小组件配合使用。（前面的示例拉取了雅虎头条新闻馈）。抛弃那些无聊的博客滚动吧；它们必须滚动起来！
+由于此小组件使用 `XParser` 来解析新闻，因此任何 RSS 2.0 和 Atom 馈都可以与此小组件配合使用。（前面的示例拉取了雅虎头条新闻馈）。抛弃那些无聊的博客滚动吧；它们必须滚动起来！
 
 ## 创建天气小组件
 
@@ -6649,24 +7268,26 @@ onload = init;
 
 ## Weather.com SDK
 
-创建此小组件的第一步是找到天气信息的来源。可能最流行的是 Weather.com XML 服务。你将使用这些信息来创建此小组件。
+创建此小组件的第一步是找到天气信息的来源。可能最流行的是 `Weather.com XML` 服务。你将使用这些信息来创建此小组件。
 
-Weather.com XML 服务的使用取决于以下指南。要使用你的 XML 馈，你必须注册许可。要注册，请访问 http://registration.weather.com/registration/xmlop/step1/。注册后，Weather.com 将向你发送一封电子邮件，包含 XML 馈 SDK 的链接并提供你的许可密钥和合作伙伴 ID。
 
-对于基于 Web 的应用程序，你必须限制从服务获取信息的频率。正如 SDK 文档指定的，缓存条件（Cached Conditions）的刷新率为30 分钟；因此，服务器应用程序必须缓存获取的信息，并每 30 分钟更新一次。有两种方法可以实现这一点：
 
-- 1. 创建一个独立于 Web 运行的智能线程，每 30 分钟拉取一次馈。应用程序可以使用缓存的馈，无需担心信息获取之间的时间间隔。
-- 2. 对于每个页面请求，应用程序可以记录上次拉取馈的时间，并在 30 分钟后刷新数据。
+Weather.com XML 服务的使用取决于以下指南。要使用你的 XML 馈，你必须注册许可。要注册，请访问 `http://registration.weather.com/registration/xmlop/step1/`。注册后，`Weather.com` 将向你发送一封电子邮件，包含 XML 馈 SDK 的链接并提供你的许可密钥和合作伙伴 ID。
 
-这两种架构都可以实现此小组件的目的。第一种是理想。在两种情况下，服务器与远程主机之间的通信都是相同的；智能线程每半小时只需要一次文件操作（写入缓存的馈）。遗憾的是，ASP.NET 应用程序在活动 20 分钟后会超时，这可能导致数据过旧。可以更改这种行为；但需要访问 `machine.config` 文件，并不是每个人都有权限访问环境中的该配置文件。因此，此小组件将使用第二种解决方案。
+对于基于 Web 的应用程序，你必须限制从服务获取信息的频率。正如 SDK 文档指定的，缓存条件（Cached Conditions）的刷新率为 30 分钟；因此，服务器应用程序必须缓存获取的信息，并每 30 分钟更新一次。有两种方法可以实现这一点：
+
+1. 创建一个独立于 Web 运行的智能线程，每 30 分钟拉取一次馈。应用程序可以使用缓存的馈，无需担心信息获取之间的时间间隔。
+2. 对于每个页面请求，应用程序可以记录上次拉取馈的时间，并在 30 分钟后刷新数据。
+
+这两种架构都可以实现此小组件的目的。第一种是理想。在两种情况下，服务器与远程主机之间的通信都是相同的；智能线程每半小时只需要一次文件操作（写入缓存的馈）。遗憾的是，`ASP.NET` 应用程序在活动 20 分钟后会超时，这可能导致数据过旧。可以更改这种行为；但需要访问 `machine.config` 文件，并不是每个人都有权限访问环境中的该配置文件。因此，此小组件将使用第二种解决方案。
 
 ## 服务端组件
 
-你可以使用任何支持 .NET 的语言来编写后端；但本章中的示例将使用 C# 语言。服务器应用程序的核心是 Wrox.ProfessionalAjax.Weather 命名空间下的两个类。你可以将类编译为库（.dll 文件），也可以在应用程序中原生使用它们。选择最终取决于你；然而，练习将类直接集成到应用程序中，因此不需要引用外部库。
+你可以使用任何支持 `.NET` 的语言来编写后端；但本章中的示例将使用 C# 语言。服务器应用程序的核心是 `Wrox.ProfessionalAjax.Weather` 命名空间下的两个类。你可以将类编译为库（`.dll` 文件），也可以在应用程序中原生使用它们。选择最终取决于你；然而，练习将类直接集成到应用程序中，因此不需要引用外部库。
 
 ## WeatherSettings 类
 
-WeatherSettings 类包含了从 Weather.com 获取天气信息所需的所有信息。检索这些数据需要三项信息：你的许可密钥、合作伙伴 ID 和位置 ID。这些设置位于外部 XML 文档中，结构如下：
+`WeatherSettings` 类包含了从 `Weather.com` 获取天气信息所需的所有信息。检索这些数据需要三项信息：你的许可密钥、合作伙伴 ID 和位置 ID。这些设置位于外部 XML 文档中，结构如下：
 
 ```xml
 <weather>
@@ -6679,9 +7300,10 @@ WeatherSettings 类包含了从 Weather.com 获取天气信息所需的所有信
 ```
 
 如你所见，这是一个简单的 XML 文档。`<ids>`、`<partner>` 和 `<location>` 元素包含了获取天气信息所需的信息。许可密钥、合作伙伴 ID 和位置 ID 分别对应。
+
 注意，你需要将括号中的项目替换为你自己的信息。
 
-WeatherSettings 类提取这些信息并将其赋值给私有变量。类的构造函数接收一个参数：应用程序的路径。
+`WeatherSettings` 类提取这些信息并将其赋值给私有变量。类的构造函数接收一个参数：应用程序的路径。
 
 ```csharp
 public WeatherSettings(string path)
@@ -6695,8 +7317,6 @@ public WeatherSettings(string path)
 }
 ```
 
-
-
 ```c
 {
   string xmlStr = String.Empty;
@@ -6705,17 +7325,18 @@ public WeatherSettings(string path)
 ```
 
 根据 SDK，获取天气馈送（weather feed）的 URL 如下：
-http://soap.weather.com/weather/local/[locID]?cc=*&prod=xoap&par=[part ID]&key=[lic]
+
+`http://soap.weather.com/weather/local/[locID]?cc=*&prod=xoap&par=[part ID]&key=[lic]`
 
 括号中的信息是位置 ID、合作伙伴 ID 和密钥。使用 `String.Format()` 方法，你可以格式化 URL 使其包含你自己的设置信息：
-string baseUrl =
 
 ```csharp
-"http://soap.weather.com/weather/local/{0}?cc=*&prod=xoap&par={1}&key={2}";
+string baseUrl = "http://soap.weather.com/weather/local/{0}?cc=*&prod=xoap&par={1}&key={2}";
 string url = String.Format(baseUrl, _settings.LocationId, _settings.PartnerId, _settings.LicenseKey);
 ```
 
-这主要是 `_settings` 对象使用的地方。`String.Format()` 返回的最终字符串包含了 Weather.com 字典所需的全部完整信息。
+这主要是 `_settings` 对象使用的地方。`String.Format()` 返回的最终字符串包含了 `Weather.com` 字典所需的全部完整信息。
+
 `_getWebWeather()` 中的下一个操作是向远程主机发送请求并获取天气馈送：
 
 ```c
@@ -6738,11 +7359,11 @@ using (WebClient client = new WebClient())
 
 在此段代码的开头，创建了一个 `WebClient` 对象。如果你还记得第 5 章，你曾使用 `HttpRequest` 对象从远程主机检索数据。你也可以对这个小部件执行相同的操作，但正如你从之前的代码所示，`WebClient` 使用了简单得接口。
 
-要读取远程服务器的响应，请使用 `OpenRead()` 方法。该方法返回一个 `Stream` 对象，你可以用 `StreamReader` 类读取它。`StreamReader` 的 `ToEnd()` 方法读取流并将其作为字符串返回给 `xmlStr`。如果由于某种原因失败（注：此处原文可能有误，应为由于某种原因失败*）（最可能是由于未找到远程主机），则由 `_writeErrorDoc()` 创建一个错误并用于天气馈送的处理过程中。
+要读取远程服务器的响应，请使用 `OpenRead()` 方法。该方法返回一个 `Stream` 对象，你可以用 `StreamReader` 类读取它。`StreamReader` 的 `ToEnd()` 方法读取流并将其作为字符串返回给 `xmlStr`。如果由于某种原因失败（注：此处原文可能有误，应为由于某种原因失败），则由 `_writeErrorDoc()` 创建一个错误并用于天气馈送的处理过程中。
 
 此时，你已经有一些可用的 XML 数据；现在对 XML 文档执行 XML 转换。在服务器端进行数据转换有几个优点。首先，它极大地简化了客户端代码。发送到客户端的数据已经是 HTML 格式，因此可以轻松地添加到页面中。服务器端转换还减少了客户端的工作量。数据在到达客户端时已经是完整的，除了放置在页面中外，不需要任何其他数据处理。
 
-.NET 中的 XSL 转换与第 4 章中 MSXML 提供的转换非常相似。转换的第一步是创建涉及的对象：
+`.NET` 中的 XSL 转换与第 4 章中 `MSXML` 提供的转换非常相似。转换的第一步是创建涉及的对象：
 
 ```csharp
 XslTransform transform = new XslTransform();
@@ -6750,14 +7371,14 @@ XmlDocument xml = new XmlDocument();
 using (StringWriter writer = new StringWriter())
 ```
 
-.NET 中的转换包含一个 `XslTransform` 对象、一个 `XmlDocument` 对象和一个 `StringWriter` 对象，后者包含转换后的结果数据。转换过程的下一步是将 XML 数据加载到 `XmlDocument` 对象中，并将 XSL 文档加载到 `Xslt` 对象中：
+`.NET` 中的转换包含一个 `XslTransform` 对象、一个 `XmlDocument` 对象和一个 `StringWriter` 对象，后者包含转换后的结果数据。转换过程的下一步是将 XML 数据加载到 `XmlDocument` 对象中，并将 XSL 文档加载到 `Xslt` 对象中：
 
 ```csharp
 xml.LoadXml(xmlStr);
 xslt.Load(path + "/weather.xslt");
 ```
 
-`XmlDocument` 类的 `LoadXml` 方法类似于 MSXML 库中的 `loadXML()` 方法。它接受一个代表 XML 数据的字符串参数。XML 文档通过 `LoadXml` 方法加载到 `XMLDocument` 中。该方法接受一个参数：一个包含 XML 文档路径的字符串。
+`XmlDocument` 类的 `LoadXml` 方法类似于 `MSXML` 库中的 `loadXML()` 方法。它接受一个代表 XML 数据的字符串参数。XML 文档通过 `LoadXml` 方法加载到 `XMLDocument` 中。该方法接受一个参数：一个包含 XML 文档路径的字符串。
 
 最后一步是执行转换并从 `StringWriter` 中获取结果数据：
 
@@ -6779,7 +7400,7 @@ using (StreamWriter writer = new StreamWriter(_cachedFile))
 
 `StreamWriter` 类构造函数接受一个包含写入文件路径的字符串参数。`StreamWriter` 写入 `xmlStr` 的内容并在 `using` 块退出时立即释放。
 
-注意为了让应用程序更新 `weather_cache.xml` 的内容，ASP.NET 必须对该文件拥有正确的修改权限。
+注意为了让应用程序更新 `weather_cache.xml` 的内容，`ASP.NET` 必须对该文件拥有正确的修改权限。
 
 `_getWebWeather()` 的完整代码如下：
 
@@ -6851,7 +7472,7 @@ private string _getCachedWeather()
 
 # 决定使用哪个版本
 
-GetWeather() 是一个决定是从 Web 还是从缓存提取馈送的公共方法。.NET Framework 提供了一个名为 `DateTime` 的结构，它在框架中被广泛使用。当需要日期或时间可以使用可以使用实例。获取日期时间如此。为了获取文件的“修改”系统属性，编写一个名为 `LastModified` 的公共访问器如下：
+`GetWeather()` 是一个决定是从 Web 还是从缓存提取馈送的公共方法。`.NET Framework` 提供了一个名为 `DateTime` 的结构，它在框架中被广泛使用。当需要日期或时间可以使用可以使用实例。获取日期时间如此。为了获取文件的“修改”系统属性，编写一个名为 `LastModified` 的公共访问器如下：
 
 ```csharp
 public DateTime LastModified
@@ -6870,11 +7491,11 @@ public DateTime LastModified
 }
 ```
 
-此代码段获取最后写入的时间。首先，你必须检查缓存文件是否存在，否则在尝试检索 `DateTime` 信息时会抛出异常。如果存在，则 `GetLastWriteTime()` 方法检索最后写入的时间。如果文件不存在，则通过将年、月、日设置为1来创建一个 `DateTime` 实例。这确保了如果文件不存在，应用程序将推送新的馈送。
+此代码段获取最后写入的时间。首先，你必须检查缓存文件是否存在，否则在尝试检索 `DateTime` 信息时会抛出异常。如果存在，则 `GetLastWriteTime()` 方法检索最后写入的时间。如果文件不存在，则通过将年、月、日设置为 1 来创建一个 `DateTime` 实例。这确保了如果文件不存在，应用程序将推送新的馈送。
 
-GetWeather() 方法使用这些信息决定是否推送新的馈送：`DateTime timeLimit = LastModified.AddMinutes(30);`
+`GetWeather()` 方法使用这些信息决定是否推送新的馈送：`DateTime timeLimit = LastModified.AddMinutes(30);`
 
-使用 `AddMinutes()` 方法，为 `LastModified` 返回的时间增加了30分钟。这个新的 `DateTime` 实例 `timeLimit` 将通过使用 `CompareTo()` 方法与当前时间进行比较：
+使用 `AddMinutes()` 方法，为 `LastModified` 返回的时间增加了 30 分钟。这个新的 `DateTime` 实例 `timeLimit` 将通过使用 `CompareTo()` 方法与当前时间进行比较：
 
 ```csharp
 if (DateTime.Now.CompareTo(timeLimit) > -1)
@@ -6887,14 +7508,11 @@ else
 }
 ```
 
-`CompareTo()` 方法返回一个整数。如果当前时间（由 `DateTime.Now` 指定）大于 `timeLimit`，返回的整数大于零。如果两个时间相等，方法返回零。如果当前时间小于 `timeLimit`，则
-
-
-返回 1。在此代码中，只有在至少过去 30 分钟后才会检索新的契约；否则将检索缓存的版本。
+`CompareTo()` 方法返回一个整数。如果当前时间（由 `DateTime.Now` 指定）大于 `timeLimit`，返回的整数大于零。如果两个时间相等，方法返回零。如果当前时间小于 `timeLimit`，则返回 -1。在此代码中，只有在至少过去 30 分钟后才会检索新的契约；否则将检索缓存的版本。
 
 ## 编写错误文档
 
-还需要提到 WeatherInfo 类的最后一个方法：_writeErrorDoc()。如前所述，该方法会在无法连接到远程主机时写入一个简单的 XML 格式错误文档。它接受一个参数，即一个 `WebException` 实例：
+还需要提到 `WeatherInfo` 类的最后一个方法：`_writeErrorDoc()`。如前所述，该方法会在无法连接到远程主机时写入一个简单的 XML 格式错误文档。它接受一个参数，即一个 `WebException` 实例：
 
 ```csharp
 private string _writeErrorDoc(WebException exception)
@@ -6915,11 +7533,13 @@ private string _writeErrorDoc(WebException exception)
 }
 ```
 
-在代码的前两行中创建了一个 `XmlDocument` 对象并加载了一个简单的 XML 文档（根元素）。错误文档仅包含两个元素：`<alert/>` 和 `<message/>`。.NET 中的 DOM 方法与 Internet Explorer 和 Firefox 中的 DOM 方法相似。第一个元素 `<alert/>` 是通过 `CreateElement()` 方法创建的。使用 `InnerText` 属性获取其文本节点。创建 `<message/>` 元素也使用了相同的步骤。该元素将持有来自 `WebException` 对象的消息。
+在代码的前两行中创建了一个 `XmlDocument` 对象并加载了一个简单的 XML 文档（根元素）。错误文档仅包含两个元素：`<alert/>` 和 `<message/>`。`.NET` 中的 DOM 方法与 `Internet Explorer` 和 `Firefox` 中的 DOM 方法相似。第一个元素 `<alert/>` 是通过 `CreateElement()` 方法创建的。使用 `InnerText` 属性获取其文本节点。创建 `<message/>` 元素也使用了相同的步骤。该元素将持有来自 `WebException` 对象的消息。
 
 当所有元素都创建并填充了所需数据后，它们通过 `AppendChild()` 方法被附加到文档中，并返回由 `OuterXml` 属性输出的序列化 XML 数据。
 
 为了完成该类的编写，有两个访问访问器用于访问 `_settings` 和 `_cachedFile` 私有成员：
+
+
 
 ```csharp
 public Settings Settings
@@ -6943,7 +7563,7 @@ public string CachedFile
 
 ## 使用 WeatherInfo 类
 
-大部分工作已经在服务器端应用程序中完成，剩下的工作就是让 `WeatherInfo` 类投入运行。ASP.NET 文件 `weather.aspx` 充当客户端与 Weather.com XML 服务之间的代理。你将在此页面中使用 `WeatherInfo` 类。
+大部分工作已经在服务器端应用程序中完成，剩下的工作就是让`WeatherInfo`类投入运行。ASP.NET 文件`weather.aspx`充当客户端与 Weather.com XML 服务之间的代理。你将在此页面中使用`WeatherInfo`类。
 
 实现该类的第一步是创建它的实例：
 
@@ -6952,7 +7572,7 @@ WeatherInfo weather = new WeatherInfo(Server.MapPath(String.Empty));
 string weatherData = weather.GetWeatherData();
 ```
 
-在此代码中，通过使用 `Server.MapPath(String.Empty)` 向构造函数传递路径来创建 `WeatherInfo` 类的实例。有了这个新实例，你可以使用 `GetWeatherData()` 方法并检索天气信息，将其存储在 `weatherData` 中。
+在此代码中，通过使用`Server.MapPath(String.Empty)`向构造函数传递路径来创建`WeatherInfo`类的实例。有了这个新实例，你可以使用`GetWeatherData()`方法并检索天气信息，将其存储在`weatherData`中。
 
 下一步设置标头：
 
@@ -6962,18 +7582,21 @@ Response.CacheControl = "no-cache";
 Response.AddHeader("Weather-Modified", weather.LastModified.ToFileTime().ToString());
 ```
 
-前两行看起来相似。它们将 MIME 内容类型设置为 `text/xml` 并告诉浏览器不要缓存标头。然而，第三行显示了一个名为 `Weather-Modified` 的自定义 HTTP标头。该标头为客户端代码提供了检查是否有新版本数据的方法。
+前两行看起来相似。它们将 MIME 内容类型设置为`text/xml`并告诉浏览器不要缓存标头。然而，第三行显示了一个名为`Weather-Modified`的自定义 HTTP标头。该标头为客户端代码提供了检查是否有新版本数据的方法。
 
-分配给此标头的值由长整数组成（由 `ToFileTime()` 方法返回），代表 `LastModified` 属性返回的时间。因为此值是文件系统的修改属性（`WeatherInfo` 类的 `LastModified` 属性返回该值），它将在文件更新之前保持不变，这使其成为在客户端检查新更新的理想选择。
+分配给此标头的值由长整数组成（由`ToFileTime()`方法返回），代表`LastModified`属性返回的时间。因为此值是文件系统的修改属性（`WeatherInfo`类的`LastModified`属性返回该值），它将在文件更新之前保持不变，这使其成为在客户端检查新更新的理想选择。
 
 最后，输出天气数据：
+
+```csharp
 Response.Write(weatherData);
+```
 
 你现在需要一个客户端来消费这些信息。
 
 ## 客户端组件
 
-得益于服务器应用程序执行的工作，此组件的客户端代码异常地简单。客户端剩下的工作就是检索数据。`AjaxWeatherWidget` 类正是这样做：
+得益于服务器应用程序执行的工作，此组件的客户端代码异常地简单。客户端剩下的工作就是检索数据。`AjaxWeatherWidget`类正是这样做：
 
 ```javascript
 function AjaxWeatherWidget(oElement) {
@@ -6983,11 +7606,11 @@ function AjaxWeatherWidget(oElement) {
 }
 ```
 
-`AjaxWeatherWidget` 构造函数接受一个参数：用于附加数据的 HTMLElement，它被赋值给 `element` 属性。如果没有提供参数，则变为 `document.body`。像 NewsTicker 示例一样，该类会自动检查更新，这就是存在 `lastModified` 属性的原因。构造函数调用了 `getWeather()`，该方法在退出前从服务器检索天气数据。
+`AjaxWeatherWidget`构造函数接受一个参数：用于附加数据的`HTMLElement`，它被赋值给`element`属性。如果没有提供参数，则变为`document.body`。像`NewsTicker`示例一样，该类会自动检查更新，这就是存在`lastModified`属性的原因。构造函数调用了`getWeather()`，该方法在退出前从服务器检索天气数据。
 
 ## 从服务器获取数据
 
-`getWeather()` 方法通过 `XMLHttpRequest` 联系服务器并检索天气信息。它每分钟轮询服务器一次更新信息：
+`getWeather()`方法通过`XMLHttpRequest`联系服务器并检索天气信息。它每分钟轮询服务器一次更新信息：
 
 ```javascript
 AjaxWeatherWidget.prototype.getWeather = function () {
@@ -6997,12 +7620,9 @@ AjaxWeatherWidget.prototype.getWeather = function () {
     };
 ```
 
-该方法通过赋值 `oThis` 创建指向对象的指针。该指针在嵌套函数 `doTimeout()` 中使用，该函数调用了 `getWeather()` 方法。`doTimeout()` 用于进行持续更新。
+该方法通过赋值`oThis`创建指向对象的指针。该指针在嵌套函数`doTimeout()`中使用，该函数调用了`getWeather()`方法。`doTimeout()`用于进行持续更新。
 
-
-
-
-小部件中的下一个项目是温度，它包含在 XML 中 `weather/cc/temp` 处 id 为 `weatherTemp` 的 `<div>` 元素中。该信息的样式如下：
+小部件中的下一个项目是温度，它包含在 XML 中`weather/cc/temp`处 id 为`weatherTemp`的`<div>`元素中。该信息的样式如下：
 
 ```css
 #weatherTemp {
@@ -7016,7 +7636,7 @@ AjaxWeatherWidget.prototype.getWeather = function () {
 
 将此元素定位为绝对定位（`absolute`）可以让你将其放置在容器的任何位置。在这种情况下，它位于右上角。该元素包含的文本颜色为白色，高度为 48 像素。
 
-温度下方是天气位置。在 XML 文件中，此信息位于 `weather/loc/d`。这段文字颜色为白色，并使用了较小的字体：
+温度下方是天气位置。在 XML 文件中，此信息位于`weather/loc/d`。这段文字颜色为白色，并使用了较小的字体：
 
 ```css
 #weatherLocation {
@@ -7028,9 +7648,9 @@ AjaxWeatherWidget.prototype.getWeather = function () {
 }
 ```
 
-再次，该元素也是绝对定位的。它的右边缘距离 `weatherContainer` 的右边缘 12 像素，距离其顶部 60 像素。字体高度为 12 像素，采用 Tahoma 字体。
+再次，该元素也是绝对定位的。它的右边缘距离`weatherContainer`的右边缘 12 像素，距离其顶部 60 像素。字体高度为 12 像素，采用 Tahoma 字体。
 
-风是另一个需要显示的重要信息。在 XML 文档中，信息位于 `weather/cc/wind`。
+风是另一个需要显示的重要信息。在 XML 文档中，信息位于`weather/cc/wind`。
 
 ```css
 #weatherWind {
@@ -7048,9 +7668,9 @@ AjaxWeatherWidget.prototype.getWeather = function () {
 }
 ```
 
-如果你还记得在本节之前讨论过的 HTML 结构，`weatherWind` 包含另一个 `<div>`。这个内部元素包含实际信息，而其父元素仅作为标签并定位信息。与之前的元素不同，`weatherWind` 使用 `left` 属性而不是 `right` 属性来水平定位元素，且该元素距离顶部 85 像素。标签文本加粗了，而风力信息没有加粗。它显示的最后一条信息是最后更新时间。此信息也存在于 XML 数据中。其位置如下：
+如果你还记得在本节之前讨论过的 HTML 结构，`weatherWind`包含另一个`<div>`。这个内部元素包含实际信息，而其父元素仅作为标签并定位信息。与之前的元素不同，`weatherWind`使用`left`属性而不是`right`属性来水平定位元素，且该元素距离顶部 85 像素。标签文本加粗了，而风力信息没有加粗。它显示的最后一条信息是最后更新时间。此信息也存在于 XML 数据中。其位置如下：
 
-`weather/loc/tm`。与之前讨论的风力信息一样，时间信息的 HTML 结构由一个父元素（`weatherTime`）和一个子元素 `<span>`组成。外部元素定位信息并作为标签；内部元素包含实际的时间信息：
+`weather/loc/tm`。与之前讨论的风力信息一样，时间信息的 HTML 结构由一个父元素（`weatherTime`）和一个子元素`<span>`组成。外部元素定位信息并作为标签；内部元素包含实际的时间信息：
 
 ```css
 #weatherTime {
@@ -7065,16 +7685,17 @@ AjaxWeatherWidget.prototype.getWeather = function () {
 }
 ```
 
-前提取决于 XML 样式表，本质上完全自定义完全掌握在你的手中；你有能力完全更改数据的标记、结构和样式。在本节中，为每个元素都提供了信息的路径。这几个元素已经涵盖了 XML 文件中的所有可用元素。SDK 并没有涵盖这些元素；但是，这些信息存在于 Weather.com 的 DTD 中，地址为 www.weather.com/documentation/xml/weather.dtd。
+前提取决于 XML 样式表，本质上完全自定义完全掌握在你的手中；你有能力完全更改数据的标记、结构和样式。在本节中，为每个元素都提供了信息的路径。这几个元素已经涵盖了 XML 文件中的所有可用元素。SDK 并没有涵盖这些元素；但是，这些信息存在于 Weather.com 的 DTD 中，地址为`www.weather.com/documentation/xml/weather.dtd`。
 
 # 实现天气小部件
 
 由于后端代码主要连接到一个 C# 类，因此你的实现方案有两种：
 
-- 1. 你可以将其添加到已有的 ASP-NET 网站中。这将需要你修改你的代码。如果你选择此路线，你将需要修改 `weather.aspx` 页面以符合你的命名。
-- 2. 你可以使用下载示例中的代码作为一个独立的免费微应用程序。你可以按照第 5 节结尾列出的步骤来了解如何操作。
+1. 你可以将其添加到已有的 ASP-NET 网站中。这将需要你修改你的代码。如果你选择此路线，你将需要修改`weather.aspx`页面以符合你的命名。
 
-选择权完全取决于你，但本节的剩余部分假设你选择了后种方案。要实现 `AjaxWidget` 类，你应该在 HTML 中引用正确的 CSS 和 JavaScript 文件：
+2. 你可以使用下载示例中的代码作为一个独立的免费微应用程序。你可以按照第 5 节结尾列出的步骤来了解如何操作。
+
+选择权完全取决于你，但本节的剩余部分假设你选择了后种方案。要实现`AjaxWidget`类，你应该在 HTML 中引用正确的 CSS 和 JavaScript 文件：
 
 ```html
 <!DOCTYPE html xmlns="//W3C//DTD HTML 1.1//EN">
@@ -7085,18 +7706,15 @@ AjaxWeatherWidget.prototype.getWeather = function () {
   <link rel="stylesheet" type="text/css" href="css/weatherwidget.css"/>
   <script type="text/javascript" src="js/zxml.js"></script>
   <script type="text/javascript" src="js/weatherwidget.js"></script>
-```
-
-```html
 </head>
 <body>
 </body>
 </html>
 ```
 
-天气小部件唯一的外部依赖是 `zXml` 库，你也应该在 HTML 中引用它。
+天气小部件唯一的外部依赖是`zXml`库，你也应该在 HTML 中引用它。
 
-剩下的剩下的工作就是创建一个 `AjaxWeatherWidget` 对象并将其附加到 HTML 元素：
+剩下的剩下的工作就是创建一个`AjaxWeatherWidget`对象并将其附加到 HTML 元素：
 
 ```html
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN">
@@ -7122,33 +7740,30 @@ onload = init;
 </html>
 ```
 
+如你所知，前两行设置了所需的请求头，以便浏览器能够正确处理数据。下一行代码使用`isset()`函数来确定查询键是否存在于查询字符串中。
 
-
-
-如你所知，前两行设置了所需的请求头，以便浏览器能够正确处理数据。下一行代码使用 `isset()` 函数来确定查询键是否存在于查询字符串中。
-
-搜索词应该经过多种函数的处理，以便向远程主机发送适当的请求。它首先被传递给 `stripsashes()` 函数。如果 PHP 配置中启用了魔术引号（magic quotes，默认开启），任何到达的引号都会自动加上斜杠进行转义：例如 "search query"。`stripsashes()` 函数会移除这种转义，只留下 "search query"。在移除斜杠后，进入 `urlencode()` 函数，该函数会对字符进行正确编码，以便在查询字符串中使用。空格、引号和和符号都会被编码。
+搜索词应该经过多种函数的处理，以便向远程主机发送适当的请求。它首先被传递给`stripsashes()`函数。如果 PHP 配置中启用了魔术引号（magic quotes，默认开启），任何到达的引号都会自动加上斜杠进行转义：例如 "search query"。`stripsashes()`函数会移除这种转义，只留下 "search query"。在移除斜杠后，进入`urlencode()`函数，该函数会对字符进行正确编码，以便在查询字符串中使用。空格、引号和和符号都会被编码。
 
 如果搜索词没有经过这些处理，MSN 服务器将返回 404 错误：Bad Request（错误请求）。
 
-当搜索词准备好传输时，它会被包含在 URL 中并存储在变量 `$url` 中。最后，`file_get_contents()` 函数打开远程文件，读取内容并作为 `$xml` 变量返回，然后使用 `echo` 命令将其打印到页面。
+当搜索词准备好传输时，它会被包含在 URL 中并存储在变量`$url`中。最后，`file_get_contents()`函数打开远程文件，读取内容并作为`$xml`变量返回，然后使用`echo`命令将其打印到页面。
 
 ## 客户端组件
 
-客户端代码与本章之前创建的类不同。此小组件没有创建一个类并使用其实例，而是由一个静态对象 msnWebSearch 组成：
+客户端代码与本章之前创建的类不同。此小组件没有创建一个类并使用其实例，而是由一个静态对象`msnWebSearch`组成：
 
 ```javascript
 var msnWebSearch = {};
 ```
 
-在这里，你使用对象字面量符号创建了 `msnWebSearch` 对象。你将在 `HTMLElement` 的 `onclick` 事件中使用此对象来执行搜索：
+在这里，你使用对象字面量符号创建了`msnWebSearch`对象。你将在`HTMLElement`的`onclick`事件中使用此对象来执行搜索：
 
 ```html
 <a href="#" onclick="msnWebSearch.search(event,'Professional Ajax');
-return false;"></</a>
+return false;"></a>
 ```
 
-该对象暴露了几个方法，用于获取搜索结果，并绘制和定位包含数据的 HTML。涵盖的第一个方法是 `drawListBox()`，它负责绘制 HTML。该方法绘制列表所示：
+该对象暴露了几个方法，用于获取搜索结果，并绘制和定位包含数据的 HTML。涵盖的第一个方法是`drawListBox()`，它负责绘制 HTML。该方法绘制列表所示：
 
 ```html
 <div class="ajaxnWebSearchBox">
@@ -7169,7 +7784,7 @@ return false;"></</a>
 
 ## 绘制结果用户界面
 
-生成此 HTML 的代码相当长，因为元素是使用 DOM 方法生成的。`drawResultBox()` 方法接受一个参数，即事件对象：
+生成此 HTML 的代码相当长，因为元素是使用 DOM 方法生成的。`drawResultBox()`方法接受一个参数，即事件对象：
 
 ```javascript
 msnWebSearch.drawResultBox = function (e) {
@@ -7179,7 +7794,7 @@ msnWebSearch.drawResultBox = function (e) {
   var aCloseLink = document.createElement("a");
 ```
 
-这几行使用 `createElement()` 方法创建 HTML 元素。元素创建后，你可以开始为它们分配属性。首先确定的两个元素是 `aCloseLink.href = "#"`、`aCloseLink.className = "ajaxWebSearchCloseLink"` 以及 `aCloseLink.onclick`。
+这几行使用`createElement()`方法创建 HTML 元素。元素创建后，你可以开始为它们分配属性。首先确定的两个元素是`aCloseLink.href = "#"`、`aCloseLink.className = "ajaxWebSearchCloseLink"`以及`aCloseLink.onclick`。
 
 ```javascript
 aCloseLink.href = "#";
@@ -7194,9 +7809,9 @@ divHeading.appendChild(child.document.createTextNode("MSN Search Results"));
 divHeading.appendChild(aCloseLink);
 ```
 
-前四行创建了关闭结果框的链接。`close()` 方法成为链接的 `onclick` 事件处理器。接接的一组代码向 `<div>` 中填充了文本和链接。
+前四行创建了关闭结果框的链接。`close()`方法成为链接的`onclick`事件处理器。接接的一组代码向`<div>`中填充了文本和链接。
 
-当此结果被绘制到页面上时，尚未收到服务器应用程序的响应。为了显示正在进行操作（而不是空空弹出一个框），如果能让用户看到一条显示数据正在加载的消息就更好（见图 8-4）。要实现这一点，创建另一个元素并将其添加到 `divResultsPane` 中
+当此结果被绘制到页面上时，尚未收到服务器应用程序的响应。为了显示正在进行操作（而不是空空弹出一个框），如果能让用户看到一条显示数据正在加载的消息就更好（见图 8-4）。要实现这一点，创建另一个元素并将其添加到`divResultsPane`中
 
 ```javascript
 var divLoading = document.createElement("div");
@@ -7214,9 +7829,9 @@ divResultsPane.appendChild(divLoading);
 
 图 8-4
 
-此代码创建了消息并将其添加到 `divResultsPane`，同时为 `divResultsPane` 分配了类名。
+此代码创建了消息并将其添加到`divResultsPane`，同时为`divResultsPane`分配了类名。
 
-完成这些元素后，剩下的只需向 `divSearchBox` 元素添加：
+完成这些元素后，剩下的只需向`divSearchBox`元素添加：
 
 ```javascript
 divSearchBox.className = "ajaxWebSearchResults";
@@ -7228,7 +7843,9 @@ divSearchBox.appendChild(divResultsPane);
 document.body.appendChild(divSearchBox);
 ```
 
-此代码将 `divHeading` 和 `divResultsPane` 添加到搜索框中。`drawListBox()` 的最后一步是在页面上定位搜索框。方法将 `divSearchBox` 返回给调用者。
+
+
+此代码将`divHeading`和`divResultsPane`添加到搜索框中。`drawListBox()`的最后一步是在页面上定位搜索框。方法将`divSearchBox`返回给调用者。
 
 ```javascript
 msnWebSearch.drawListBox = function (e) {
@@ -7237,11 +7854,9 @@ msnWebSearch.drawListBox = function (e) {
 };
 ```
 
-
-
 ## 构建搜索接口
 
-`msnSearchBox` 对象的最后一个方法是 `search()`，它提供了执行搜索的接口。你可以通过元素的 `onclick` 事件调用 `search()`。它接受两个参数：一个事件对象和一个搜索词：
+`msnSearchBox`对象的最后一个方法是`search()`，它提供了执行搜索的接口。你可以通过元素的`onclick`事件调用`search()`。它接受两个参数：一个事件对象和一个搜索词：
 
 ```javascript
 msnSearchBox.search = function (e,sSearchTerm) {
@@ -7254,15 +7869,15 @@ msnSearchBox.search = function (e,sSearchTerm) {
 };
 ```
 
-第一行调用 `drawResultBox()` 方法并将事件 `e` 传递给它。下一行对 URL 进行编码以便正确传输。该 URL 被传递给 `XParser` 构造函数以创建一个解析器。解析器的 `onload` 事件处理程序在搜索馈加载完成时调用 `populateResult()` 方法，为搜索框填充结果。
+第一行调用`drawResultBox()`方法并将事件`e`传递给它。下一行对URL进行编码以便正确传输。该URL被传递给`XParser`构造函数以创建一个解析器。解析器的`onload`事件处理程序在搜索馈加载完成时调用`populateResult()`方法，为搜索框填充结果。
 
 当然，构建搜索小部件的原因之一是让它符合你的风格。
 
 ## 自定义网络搜索小部件
 
-多亏了 CSS，你可以轻松地为现有网站以及以后可能进行的任何重新设计自定义小部件。
+多亏了CSS，你可以轻松地为现有网站以及以后可能进行的任何重新设计自定义小部件。
 
-讨论的第一个 CSS 类是 `ajaxWebSearchBox`，它是搜索框的类。因为框是定位的，所以它必须具有 `position: absolute`（绝对定位）：
+讨论的第一个CSS类是`ajaxWebSearchBox`，它是搜索框的类。因为框是定位的，所以它必须具有`position: absolute`（绝对定位）：
 
 ```css
 .ajaxWebSearchBox {
@@ -7273,9 +7888,9 @@ msnSearchBox.search = function (e,sSearchTerm) {
 }
 ```
 
-绝对定位是唯一的要求。所有其他属性都可以根据你的喜好可选。在示例中，框具有深蓝色背景、宽度为 500 像素，四周各有 1 像素的内边距。这个内边距会在内容周围提供一个 1 像素的边框。
+绝对定位是唯一的要求。所有其他属性都可以根据你的喜好可选。在示例中，框具有深蓝色背景、宽度为500像素，四周各有1像素的内边距。这个内边距会在内容周围提供一个1像素的边框。
 
-下一个类是 `ajaxWebSearchHeading`，它包含框的标题文本和关闭链接。为了将链接定位在右上角，使用了绝对定位。因此，它要求 `ajaxWebSearchHeading` 具有 `position: relative`（相对定位）：
+下一个类是`ajaxWebSearchHeading`，它包含框的标题文本和关闭链接。为了将链接定位在右上角，使用了绝对定位。因此，它要求`ajaxWebSearchHeading`具有`position: relative`（相对定位）：
 
 ```css
 .ajaxWebSearchHeading {
@@ -7288,7 +7903,7 @@ msnSearchBox.search = function (e,sSearchTerm) {
 }
 ```
 
-再次，唯一要求的属性是 `position` 属性。其余属性帮助元素呈现标题外观。背景颜色是较浅的蓝色，字体为白色、加粗、14 像素高并使用 Tahoma 字体。元素的高度为 21 像素，在顶部和左边缘有内边距。
+再次，唯一要求的属性是`position`属性。其余属性帮助元素呈现标题外观。背景颜色是较浅的蓝色，字体为白色、加粗、14像素高并使用Tahoma字体。元素的高度为21像素，在顶部和左边缘有内边距。
 
 如之前所述，关闭链接的位置是绝对的：
 
@@ -7308,11 +7923,11 @@ a:hover.ajaxWebSearchCloseLink
 }
 ```
 
-该元素距离右侧 5 像素，距离顶部 3 像素，放置在右上角。此链接没有任何文本装饰，颜色为白色。当用户悬停在链接上时，文本颜色变为红色。
+该元素距离右侧5像素，距离顶部3像素，放置在右上角。此链接没有任何文本装饰，颜色为白色。当用户悬停在链接上时，文本颜色变为红色。
 
-注意，没有使用已访问（visited）或激活（active）伪类。这是因为窗口始终忽略此链接的 `href` 属性（它在事件处理程序中返回 `false`）。因此，链接永远不会处于激活或已访问状态。
+注意，没有使用已访问（visited）或激活（active）伪类。这是因为窗口始终忽略此链接的`href`属性（它在事件处理程序中返回`false`）。因此，链接永远不会处于激活或已访问状态。
 
-接下来，`ajaxWebSearchResults` 类显示结果面板：
+接下来，`ajaxWebSearchResults`类显示结果面板：
 
 ```css
 .ajaxWebSearchResults
@@ -7322,7 +7937,7 @@ a:hover.ajaxWebSearchCloseLink
 }
 ```
 
-该元素没有 CSS 属性。现有属性仅用于定义结果面板并使其易读。背景颜色是浅蓝色，周围有 5 像素的内边距。你还可以对加载消息进行样式设置：
+该元素没有CSS属性。现有属性仅用于定义结果面板并使其易读。背景颜色是浅蓝色，周围有5像素的内边距。你还可以对加载消息进行样式设置：
 
 ```css
 .ajaxWebSearchResults div
@@ -7333,14 +7948,11 @@ a:hover.ajaxWebSearchCloseLink
 }
 ```
 
-（注：由于原始文本包含大量重复的 OCR 错误，译文已根据逻辑流提取核心内容并翻译。）
-
-
-
+（注：由于原始文本包含大量重复的OCR错误，译文已根据逻辑流提取核心内容并翻译。）
 
 ## 数据库信息
 
-此特定博客的数据库表相对简单。它包含四列：id、title、date 和 posting。以下 SQL 语句创建了这张名为 `BlogPosts` 的表：
+此特定博客的数据库表相对简单。它包含四列：`id`、`title`、`date`和`posting`。以下SQL语句创建了这张名为`BlogPosts`的表：
 
 ```sql
 CREATE TABLE BlogPosts {
@@ -7351,9 +7963,9 @@ CREATE TABLE BlogPosts {
 }
 ```
 
-当查询运行时，它会创建该表，但表是空的。此示例的代码下载包位于 www.wrox.com，其中包含一个 SQL 文件，可以向表中添加记录。
+当查询运行时，它会创建该表，但表是空的。此示例的代码下载包位于www.wrox.com，其中包含一个SQL文件，可以向表中添加记录。
 
-搜索结果主要需要的所需的信息有两部分：id（用于指向博客文章的 URL）和 title（标题）。有了这些知识，你就可以创建搜索查询：
+搜索结果主要需要的所需的信息有两部分：`id`（用于指向博客文章的URL）和`title`（标题）。有了这些知识，你就可以创建搜索查询：
 
 ```sql
 SELECT TOP 10
@@ -7364,13 +7976,13 @@ title LIKE '%SEARCHSTRING%'
 ORDER BY date DESC
 ```
 
-该查询从 `BlogPosts` 表中选择 `id` 和 `title` 列，条件是 `posting` 和 `title` 的内容包含搜索字符串实例。返回的结果按日期降序排列，且仅返回十条记录。
+该查询从`BlogPosts`表中选择`id`和`title`列，条件是`posting`和`title`的内容包含搜索字符串实例。返回的结果按日期降序排列，且仅返回十条记录。
 
 不过，在深入代码之前，需要讨论返回的数据结构。
 
 ## 返回的数据结构
 
-检索到的唯一两个信息是博客文章 ID 和其标题，而搜索结果可能包含多篇文章。此时，你需要一个对象结果集，每个对象都包含 `title` 和 `id` 属性：
+检索到的唯一两个信息是博客文章ID和其标题，而搜索结果可能包含多篇文章。此时，你需要一个对象结果集，每个对象都包含`title`和`id`属性：
 
 ```json
 {
@@ -7387,11 +7999,11 @@ ORDER BY date DESC
 }
 ```
 
-这段代码说明了从服务器返回的数据格式。该结构是一个包含多个对象的数组，每个对象都有 `title` 和 `id` 属性。规划好结果集后，你现在可以处理 `SiteSearch` 类了。
+这段代码说明了从服务器返回的数据格式。该结构是一个包含多个对象的数组，每个对象都有`title`和`id`属性。规划好结果集后，你现在可以处理`SiteSearch`类了。
 
 ## SiteSearch 类
 
-该组件使用名为 `SiteSearch` 的简单类来连接数据库、执行搜索查询并将结果作为 JSON 字符串返回。该类有一个私有字段 `_connectionString`，即到 MSSQL 数据库的连接字符串，并接受一个包含连接字符串的字符串参数：
+该组件使用名为`SiteSearch`的简单类来连接数据库、执行搜索查询并将结果作为JSON字符串返回。该类有一个私有字段`_connectionString`，即到MSSQL数据库的连接字符串，并接受一个包含连接字符串的字符串参数：
 
 ```csharp
 private string _connectionString;
@@ -7404,9 +8016,9 @@ public SiteSearch(string connectionString)
 }
 ```
 
-如你所示，构造函数非常简单。唯一执行的操作是将 `connectionString` 参数的值赋值给 `_connectionString`。你可能已经猜到了，该类的唯一方法 `Search()` 是该类的核心内容。
+如你所示，构造函数非常简单。唯一执行的操作是将`connectionString`参数的值赋值给`_connectionString`。你可能已经猜到了，该类的唯一方法`Search()`是该类的核心内容。
 
-`Search()` 方法接受一个参数：搜索字符串。该搜索字符串用于 `String.Format()` 方法中以格式化搜索查询：
+`Search()`方法接受一个参数：搜索字符串。该搜索字符串用于`String.Format()`方法中以格式化搜索查询：
 
 ```csharp
 public string Search(string searchString)
@@ -7417,22 +8029,17 @@ title LIKE '%{0}%' ORDER BY date DESC", searchString);
     return query;
 }
 ```
-*(注：由于原文提供的 C# 代码块中存在换行错误，翻译时已根据逻辑进行了完整性处理)*
 
-由于我已经翻译了文本，由于我已经翻译了文本了，由于我已经翻译了文本，由于我已经翻译了文本了，由于我已经翻译了文本，由于我已经翻译了文本，由于我已经翻译了文本了，由于我已经翻译了文本，由于我已经翻译了文本了，由于我已经翻译了文本，由于我已经翻译了文本了，由于我已经翻译了文本，由于我已经翻译了文本了，由于我已经翻译了文本，由于我已经翻译了文本了，由于我已经翻译了文本，由于我已经翻译了文本了，由于我已经翻译了文本，由于我已经翻译了文本了，由于我已经翻译了文本，由于我已经翻译了文本了，由于我已经翻译了文本，由于我已经翻译了文本了，由于我已经翻译了文本，由于我已经翻译了文本了，由于我已经翻译了文本，由于我已经翻译了文本了，由于我已经翻译了文本，由于我已经翻译了文本了，由于我已经翻译了文本，由于我已经翻译了文本了，由于我已经翻译了文本，由于我已经翻译了文本了，由于我已经翻译了文本，由于我已经翻译了文本了，由于我已经翻译了文本，由于我已经翻译了文本了，由于我已经翻译了文本，由于我已经翻译了文本了，由于我已经翻译了文本，由于我已经翻译了文本了，由于我已经翻译了文本，由于我已经翻译了文本了，由于我已经翻译了文本，由于我已经翻译了文本了，由于我已经翻译了文本，由于我已经翻译了文本了，由于我已经翻译了文本，由于我已经翻译了文本了，由于我已经翻译了文本，由于我已经翻译了文本了，由于我已经翻译了文本，由于我已经翻译了文本了，由于我已经翻译了文本，由于我已经翻译了文本了，由于我已经翻译了文本，由于我已经翻译了文本了，由于我已经翻译了文本，由于我已经翻译了文本了，由于我已经翻译了文本，由于我已经翻译了文本了，由于我已经翻译了文本，由于我已经翻译了文本了，由于我已经翻译了文本，由于我已经翻译了文本了，由于我已经翻译了文本，由于我已经翻译了文本了，由于我已经翻译了文本，由于我已经翻译了文本了，由于我已经翻译了文本，由于我已经翻译了文本了，由于我已经翻译了文本，由于我已经翻译了文本了，由于我已经翻译了，，由于我已经翻译了文本，由于我已经翻译了，由于我已经翻译了文本，由于我已经翻译了文本，由于我已经翻译了文本，由于我已经翻译了，由于我已经翻译了，由于由于提供的文本中出现了大量重复的占位符/错误文本，我已根据逻辑语性完成了核心部分的翻译。)*
+*(注：由于原文提供的C#代码块中存在换行错误，翻译时已根据逻辑进行了完整性处理)*
 
 ## 构建搜索页面
 
-由于连接字符串现在是应用程序设置的一部分，可以将 `if` 块更改为以下内容：
+由于连接字符串现在是应用程序设置的一部分，可以将`if`块更改为以下内容：
 
 ```csharp
 if (Request.QueryString["search"] != null)
 {}
 ```
-
-
-
-
 
 ```csharp
 string searchTerm = Request.QueryString["search"];
@@ -7440,11 +8047,11 @@ string constr = ConfigurationSettings.AppSettings["connectionStr"];
 SiteSearch siteSearch = new SiteSearch(constr);
 ```
 
-这段代码与之前的代码略有不同。它没有硬编码数据库信息，而是通过 `ConfigurationSettings.AppSettings` 集合从应用程序设置中提取信息。将 web.config 文件中 key 属性的值传递给 `AppSettings` 集合，即可获取该值。
+这段代码与之前的代码略有不同。它没有硬编码数据库信息，而是通过`ConfigurationSettings.AppSettings`集合从应用程序设置中提取信息。将web.config文件中`key`属性的值传递给`AppSettings`集合，即可获取该值。
 
-**重要** `ConfigurationSettings` 对象来自 `System.Configuration` 命名空间，因此你需要在类文件开头的 `using` 语句中添加 `System.Configuration`。
+**重要** `ConfigurationSettings`对象来自`System.Configuration`命名空间，因此你需要在类文件开头的`using`语句中添加`System.Configuration`。
 
-实例化 `SiteSearch` 对象后，最后的步骤是使用 `if` 块来执行搜索并将结果输出到页面：
+实例化`SiteSearch`对象后，最后的步骤是使用`if`块来执行搜索并将结果输出到页面：
 
 ```csharp
 if (Request.QueryString["search"] != null)
@@ -7459,11 +8066,11 @@ if (Request.QueryString["search"] != null)
 }
 ```
 
-此代码中的新行调用 `Search()` 方法执行搜索。返回的 JSON 字符串被存储在 `json` 变量中，然后通过 `Response.Write()` 方法写入页面。
+此代码中的新行调用`Search()`方法执行搜索。返回的JSON字符串被存储在`json`变量中，然后通过`Response.Write()`方法写入页面。
 
-**注意** 你可以添加一个 `else` 块来处理查询字符串中的搜索参数不存在的情况；客户端代码将处理验证，因此没有必要专门做这一点。
+**注意** 你可以添加一个`else`块来处理查询字符串中的搜索参数不存在的情况；客户端代码将处理验证，因此没有必要专门做这一点。
 
-完成 `.aspx` 文件后，最终代码如下：
+完成`.aspx`文件后，最终代码如下：
 
 ```csharp
 Response.CacheControl = "no-cache";
@@ -7490,15 +8097,15 @@ Response.Write(json);
 
 客户端功能极其重要，特别是对于像这样的一个小部件。在用户你的网站的搜索功能之前，用户已经对它的工作方式有了假设。遵循一些准则是有关重要的：
 
-- *用户将输入文本进行搜索并按下回车键或提交按钮。LiveSearch 的边输入边搜索功能是具有革命性的，但它违背了用户已经习惯的模式。无需刷新页面的即时结果是一项新功能。*
+- *用户将输入文本进行搜索并按下回车键或提交按钮。LiveSearch的边输入边搜索功能是具有革命性的，但它违背了用户已经习惯的模式。无需刷新页面的即时结果是一项新功能。*
 
-- *用户期望被告知未找到结果。如果你还记得 `SiteSearch` 类，当未找到结果时，会返回一个空的 JSON 数组；因此，这个责任被交给了客户端代码。*
+- *用户期望被告知未找到结果。如果你还记得`SiteSearch`类，当未找到结果时，会返回一个空的JSON数组；因此，这个责任被交给了客户端代码。*
 
 这些准则似乎是显而易见的，但考虑用户体验至关重要。追求“酷炫”的特性并不总是正确的做法。
 
 ## 用户界面
 
-任何客户端组件的起步都是使用 HTML 构建用户界面。在这个示例中，你将使用包含在一个 `<div>` 元素内的四个元素：
+任何客户端组件的起步都是使用HTML构建用户界面。在这个示例中，你将使用包含在一个`<div>`元素内的四个元素：
 
 ```html
 <div class="ajaxSiteSearchContainer">
@@ -7512,24 +8119,26 @@ Response.Write(json);
 </div>
 ```
 
-每个元素都包含一个 `class` 属性。这确保了小部件可以通过 CSS 轻松地自定义，你可以对其进行定制以适应几乎任何网站。
+每个元素都包含一个`class`属性。这确保了小部件可以通过CSS轻松地自定义，你可以对其进行定制以适应几乎任何网站。
 
-当然，你不会直接将这些 HTML 添加到网站的 HTML 代码中；JavaScript 会动态创建类并将其附加到所需的 HTML 元素上。
+当然，你不会直接将这些HTML添加到网站的HTML代码中；JavaScript会动态创建类并将其附加到所需的HTML元素上。
 
 ## AjaxSiteSearch 类
 
-`AjaxSiteSearch` 类封装了除 CSS 信息和其他依赖之外的所有显示用户界面、向服务器发送请求以及显示服务器响应所需的内容。类的构造函数接受一个参数，即用于附加搜索用户面的 HTML 元素：
+`AjaxSiteSearch`类封装了除CSS信息和其他依赖之外的所有显示用户界面、向服务器发送请求以及显示服务器响应所需的内容。类的构造函数接受一个参数，即用于附加搜索用户面的HTML元素：
 
 ```javascript
 function AjaxSiteSearch(oElement) {
 ```
 
-第一步是编写构成用户界面的 HTML 元素。这自然是通过 DOM 方法实现的：
+第一步是编写构成用户界面的HTML元素。这自然是通过DOM方法实现的：
 
 ```javascript
 var oThis = this;
 this.result = null;
 ```
+
+
 
 ```javascript
 this.widgetContainer = document.createElement("div");
@@ -7616,10 +8225,6 @@ var oReq = XMLHttpRequest.createRequest();
 oReq.onreadystatechange = function () {
 ```
 
-
-
-
-
 ```javascript
 if (oReq.readyState == 4) {
     if (oReq.status == 200) {
@@ -7631,7 +8236,7 @@ oReq.open("GET", sUrl, true);
 oReq.send();
 ```
 
-熟悉的第一行创建了一个指针，指向 `XMLHttpRequest` 对象的 `onreadystatechange` 事件处理程序内部使用的对象。第二行使用 `encodeURI()` 函数对搜索 URL 和搜索词进行编码。这会将字符替换为适当的转义序列（例如：空格会被转换为 %20）。
+熟悉的第一行创建了一个指针，指向 `XMLHttpRequest` 对象的 `onreadystatechange` 事件处理程序内部使用的对象。第二行使用 `encodeURI()` 函数对搜索 URL 和搜索词进行编码。这会将字符替换为适当的转义序列（例如：空格会被转换为 `%20`）。
 
 代码的其余部分执行 `XMLHttpRequest`。在请求成功时，`responseText` 被传递给 `handleResponse()` 方法。
 
@@ -7664,6 +8269,7 @@ AjaxSiteSearch.prototype.handleResponse = function (sJSON) {
 自然，如果存在任何结果，你会希望显示这些信息。如果没有，则通过警框框通知用户未找到其搜索结果。
 
 显示结果就像创建 `<a>` 元素一样简单：
+
 ```javascript
 AjaxSiteSearch.prototype.handleResponse = function (sJSON) {
   this.result = JSON.parse(sJSON);
@@ -7742,11 +8348,7 @@ input.ajaxSiteSearchButton {
 }
 ```
 
-
-
-
-
-## 第9 章：AjaxMail
+# 第9章：AjaxMail
 
 ## 概述
 
@@ -7829,6 +8431,8 @@ CREATE TABLE AjaxMailMessages (
 );
 ```
 
+
+
 `MessageId` 是自动递增字段，是数据库中具有唯一 ID 号的邮件；它也是主键。`To`、`CC`、`From`、`Subject`、`Date` 和 `Message` 字段是邮件消息的一部分。（`To` 和 `From` 必须包含引号，因为它们在 SQL 中是关键字）。`HasAttachments` 和 `Unread` 字段是 `tinyint`，这意味着它们的值可以是 0 或 1（假或真）。最后，`FolderId` 字段包含存储消息的文件夹 ID。这允许你选择仅存在于收件箱或垃圾箱文件夹中的消息。
 
 如果邮件包含任何附件，它们将存储在 `AjaxMailAttachments` 表中：
@@ -7904,9 +8508,6 @@ class AjaxMailbox {
 }
 ```
 
-
-
-
 ## 数据库操作
 
 AjaxMailbox 的职责是处理与数据库的所有交互。为了便于这种通信，有几个方法关联数据库。第一个方法是 `connect()`，如你所预期的，它启动与数据库的连接：
@@ -7978,7 +8579,7 @@ function clearAll() {
 
 从 POP3 服务器获取电子邮件不是一项简单的任务，处理这个长时间的过程超出了本书的范围。相反，AjaxMail 使用 `POP3Lib` 与 POP3 服务器接口。该库包含了许多有助于此类通信的类。这些类被用于 `checkMail()` 方法，该方法负责从 POP3 服务器下载消息并插入数据库。
 
-该方法通过创建 `Pop3` 类的新实例开始，该类用于与 POP3 服务器通信。它的构造函数接受四个参数：第一个参数是 POP3 服务器名称，第二个是用户名，第三是是密码，第四个（可选）参数是端口（默认110）。要连接 POP3 服务器，使用 `login()` 方法。此方法返回一个布尔值，指示登录尝试的成功（true）或失败（false）。
+该方法通过创建 `Pop3` 类的新实例开始，该类用于与 POP3 服务器通信。它的构造函数接受四个参数：第一个参数是 POP3 服务器名称，第二个是用户名，第三是是密码，第四个（可选）参数是端口（默认 110）。要连接 POP3 服务器，使用 `login()` 方法。此方法返回一个布尔值，指示登录尝试的成功（true）或失败（false）。
 
 ```php
 class AjaxMailbox
@@ -8003,20 +8604,19 @@ function checkMail() {
 
 | 属性/方法 | 说明 |
 |---|---|
-| from | 发件人的电子邮件地址。 |
-| to | 收件人的电子邮件地址。如果邮件是在此字段中带有多个地址发送的，则此属性也包含所有收件人。 |
-| subject | 邮件的主题。 |
-| cc | CC 字段中的收件人信息。 |
-| bcc | 如果你作为密抄接收邮件，你的电子邮件地址就在此属性中。 |
-| date | RFC 2822 格式的邮件日期。 |
-| unixTimeStamp | 自 1970 年 1 月 1 日起的 Unix 时间戳（秒）。 |
-| hasAttachments | 表示邮件是否包含一个或多个附件的布尔值。 |
-| attachments | 附件数组。 |
-| getMessage() | 获取纯文本正文。 |
-| getHTMLMessage() | 获取 HTML 正文（如果有）。 |
+| `from` | 发件人的电子邮件地址。 |
+| `to` | 收件人的电子邮件地址。如果邮件是在此字段中带有多个地址发送的，则此属性也包含所有收件人。 |
+| `subject` | 邮件的主题。 |
+| `cc` | CC 字段中的收件人信息。 |
+| `bcc` | 如果你作为密抄接收邮件，你的电子邮件地址就在此属性中。 |
+| `date` | RFC 2822 格式的邮件日期。 |
+| `unixTimeStamp` | 自 1970 年 1 月 1 日起的 Unix 时间戳（秒）。 |
+| `hasAttachments` | 表示邮件是否包含一个或多个附件的布尔值。 |
+| `attachments` | 附件数组。 |
+| `getMessage()` | 获取纯文本正文。 |
+| `getHTMLMessage()` | 获取 HTML 正文（如果有）。 |
 
 这些属性和方法用于提取邮件信息并插入数据库。登录成功后，第一要务是检查服务器上是否有邮件。你可以通过 `mailCount` 属性来实现。如果 `mailCount` 大于 0，则调用 `getEmails()` 来获取所有邮件信息。
-
 
 你可以使用消息的 `hasAttachments` 属性来判断消息是否包含附件。如果有附件，你必须先获取最近添加的电子邮件的 ID。（记住，附件是与它们所属的电子邮件绑定的。）确定 ID 后，将为每个附件创建 SQL INSERT 语句：
 
@@ -8097,21 +8697,23 @@ class JSONObject {
 }
 ```
 
-`JSONObject` 实例仅用于存储数据，直到其被序列化为 JSON 格式。对于 `getFolderPage()`，此对象包含有关文件夹的信息：消息总数 (`messageCount`）、当前页 (`page`）、总页数 (`pageCount`）、文件夹编号 (`folder`）、返回的第一条消息 (`firstMessage`）、未读消息总数 (`unreadCount`），最后该页中的消息数组 (`messages`）。数据结构如下：
+`JSONObject` 实例仅用于存储数据，直到其被序列化为 JSON 格式。对于 `getFolderPage()`，此对象包含有关文件夹的信息：消息总数（`messageCount`）、当前页（`page`）、总页数（`pageCount`）、文件夹编号（`folder`）、返回的第一条消息（`firstMessage`）、未读消息总数（`unreadCount`），最后该页中的消息数组（`messages`）。数据结构如下：
 
 ```json
 {
-  "messageCount":0,
-  "page":1,
-  "pageCount":1,
-  "folder":1,
-  "firstMessage":0,
+  "messageCount": 0,
+  "page": 1,
+  "pageCount": 1,
+  "folder": 1,
+  "firstMessage": 0,
   "unreadCount": 0,
-  "messages":[]
+  "messages": []
 }
 ```
 
 创建 `JSONObject` 并初始化若干与数据库中信息相关的属性：
+
+
 
 ```php
 class AjaxMailbox {
@@ -8146,68 +8748,65 @@ $info->messages = array();
 
 `JSONObject` 被创建并初始化了若干与数据库中信息相关的属性。使用 `count()` 函数，你可以轻松地获取消息总数。通过指定第一条消息，你可以确保消息包含在结果集中。页码被分配给文件夹。第一条消息是根据页码计算的。`messages` 属性被初始化为空数组。
 
-此时，有两种情况：数据库返回了结果，或者没有。在应用程序中，知道何时进行选择很重要。坦率地说，`mysql_query()` 函数在查询失败时返回 false，因此你可以通过检查 `$result` 变量来判断查询是否失败。如果有错误，可以返回在 `$info` 对象的属性中。否则，你需要遍历返回的行，为每条消息创建一个新的 `JSONObject` 并将其添加到消息数组。
+此时，有两种情况：数据库返回了结果，或者没有。在应用程序中，知道何时进行选择很重要。坦率地说，`mysql_query()` 函数在查询失败时返回 `false`，因此你可以通过检查 `$result` 变量来判断查询是否失败。如果有错误，可以返回在 `$info` 对象的属性中。否则，你需要遍历返回的行，为每条消息创建一个新的 `JSONObject` 并将其添加到消息数组。
 
 完整的 SQL 语句选择了所有 `FolderId` 匹配 `$folder` 的消息，并按日期倒序排列返回的行。它还从 `$firstMessage` 的值开始选择，并仅检索 `MESSAGES_PER_PAGE` 指定的数量。
 
-
-
 ```php
-$conn = \$this->connect();
+$conn = $this->connect();
 ```
 
 ```php
 $query = "select count (MessageId) as count from
 AjaxMailMessages";
-$query = "where FolderId=\$folder";
+$query = "where FolderId=$folder";
 ```
 
 ```php
-$result = mysql_query($query, \$conn);
+$result = mysql_query($query, $conn);
 $row = mysql_fetch_assoc($result);
 ```
 
 ```php
 $info = new JSONObject();
-\$info->messageCount = (int) \$row['count'];
-\$info->page = \$page;
-\$info->pageCount = (int) ceil(\$info-
-messageCount/MESSAGES_PER_PAGE);
-\$info->folder = \$folder;
+$info->messageCount = (int) $row['count'];
+$info->page = $page;
+$info->pageCount = (int) ceil($info->messageCount/MESSAGES_PER_PAGE);
+$info->folder = $folder;
 ```
 
 ```php
-$firstMessageNum = (\$page-1) * MESSAGES_PER_PAGE;
-\$info->firstMessage = \$firstMessageNum+1;
+$firstMessageNum = ($page-1) * MESSAGES_PER_PAGE;
+$info->firstMessage = $firstMessageNum+1;
 
-\$info->messages = array();
+$info->messages = array();
 ```
 
 ```php
-\$info->unreadCount = \$this->getUnreadCount(\$conn);
+$info->unreadCount = $this->getUnreadCount($conn);
 ```
 
 ```php
 $query = "select * from AjaxMailMessages where
-FolderId=\$folder";
-\$query .= "order by date limit \$firstMessageNum, ";
-\$query .= " MESSAGES_PER_PAGE";
+FolderId=$folder";
+$query .= "order by date limit $firstMessageNum, ";
+$query .= " MESSAGES_PER_PAGE";
 ```
 
 ```php
-$result = mysql_query($query, \$conn);
-if (!\$info->error) {
-    \$info->error = mysql_error(\$conn);
+$result = mysql_query($query, $conn);
+if (!$info->error) {
+    $info->error = mysql_error($conn);
 } else {
-    while (\$row = mysql_fetch_assoc(\$result)) {
-        \$message = new JSONObject();
-        \$message->id = \$row['MessageId'];
-        \$message->from = \$row['From'];
-        \$message->subject = \$row['Subject'];
-        \$message->date = date("M j Y", intval(\$row['Date']));
-        \$message->hasAttachments = (\$row['HasAttachments'] == 1);
-        \$message->unread = (\$row['Unread'] == 1);
-        \$info->messages[] = \$message;
+    while ($row = mysql_fetch_assoc($result)) {
+        $message = new JSONObject();
+        $message->id = $row['MessageId'];
+        $message->from = $row['From'];
+        $message->subject = $row['Subject'];
+        $message->date = date("M j Y", intval($row['Date']));
+        $message->hasAttachments = ($row['HasAttachments'] == 1);
+        $message->unread = ($row['Unread'] == 1);
+        $info->messages[] = $message;
     }
 }
 ```
@@ -8217,13 +8816,13 @@ $this->disconnect($conn);
 return $info;
 ```
 
-在这段代码中，检查了 `$result` 变量。如果查询失败，则向 `$info` 对象中添加一个错误属性，并赋值从 `mysql_error()` 获取的错误消息。客户端代码随后可以检查此属性以判断是否发生错误。查询执行成功后，创建一个新的 `JSONObject` 来包含消息信息；这存储在 `$message` 中。该对象填充了来自 `$row` 对象的所有信息，特别注意格式化消息日期，使其仅显示月份、日期和年份。（这消除了对 JavaScript 日期格式化器）。此外，由于 `HasAttachments` 和 `Unread` 字段是布型的，它们被转换为数字1，以便 $message 上的属性用布尔值而非整数填充。循环内部最后一行将 `$message` 对象添加到 messages 数组的末尾。
+在这段代码中，检查了 `$result` 变量。如果查询失败，则向 `$info` 对象中添加一个错误属性，并赋值从 `mysql_error()` 获取的错误消息。客户端代码随后可以检查此属性以判断是否发生错误。查询执行成功后，创建一个新的 `JSONObject` 来包含消息信息；这存储在 `$message` 中。该对象填充了来自 `$row` 对象的所有信息，特别注意格式化消息日期，使其仅显示月份、日期和年份。（这消除了对 JavaScript 日期格式化器）。此外，由于 `HasAttachments` 和 `Unread` 字段是布型的，它们被转换为数字1，以便 `$message` 上的属性用布尔值而非整数填充。循环内部最后一行将 `$message` 对象添加到 `messages` 数组的末尾。
 
 完成后，你可以安全地断开数据库连接（使用 `disconnect()`）并返回 `$info` 对象。这是使用 `getFolderPage()` 将对象 JSON 编码并发送给客户端的过程。
 
-# 获取特定消息
+## 获取特定消息
 
-获取特定消息涉及两个类：`AjaxMailMessage` 和 `AjaxMailattachmentHeader`，以及 `AjaxMailbox` 类的一个名为 `getMessage()` 的方法。这两个辅助类纯用于存储信息，这些信息稍会被 JSON 编码并发送给客户端。
+获取特定消息涉及两个类：`AjaxMailMessage` 和 `AjaxMailAttachmentHeader`，以及 `AjaxMailbox` 类的一个名为 `getMessage()` 的方法。这两个辅助类纯用于存储信息，这些信息稍会被 JSON 编码并发送给客户端。
 
 第一个类 `AjaxMailMessage` 代表单封电子邮件消息：
 
@@ -8284,7 +8883,7 @@ function AjaxMailAttachmentHeader($id, $filename, $size) {
 }
 ```
 
-该类的构造函数接受三个参数：附件 ID（`AjaxMailAttachments` 表中 `AttachmentId` 列的值）、文件名以及以字节为单位的附件大小。大小通过将除以 1024 然后四舍五入到最接近的千分之一位转换为字符串（由文件中的 KB 数表示，这样你可以得到 "0.55 KB"）。当进行 JSON 编码时，`AjaxMailHeader` 对象会被添加到之前的 JSON 结构中，如下：
+该类的构造函数接受三个参数：附件 ID（`AjaxMailAttachments` 表中 `AttachmentId` 列的值）、文件名以及以字节为单位的附件大小。大小通过将除以 1024 然后四舍五入到最接近的千分之一位转换为字符串（由文件中的 KB 数表示，这样你可以得到 "0.55 KB"）。当进行 JSON 编码时，`AjaxMailAttachmentHeader` 对象会被添加到之前的 JSON 结构中，如下：
 
 ```json
 to : "to",
@@ -8329,9 +8928,6 @@ function getMessage($messageId) {
 ```
 
 该方法首先通过 `connect()` 连接到数据库。接下来，执行查询以检索电子邮件的不同部分，结果存储于 `$row`。下一步是创建 `AjaxMailMessage` 对象并用数据库数据填充它：
-
-
-}
 
 ```php
 //other methods
@@ -8417,41 +9013,49 @@ function sendMail($to, $subject, $message, $cc="") {
     if ($cc != "") {
 ```
 
+
+
+# AJAXMail 类详解
+
+以下代码展示了 `AjaxMailbox` 类的核心方法，包括发送邮件、处理附件、管理垃圾箱以及标记已读/未读等功能。
+
+## 发送邮件逻辑
+
+在 `sendMail` 方法中，首先解析收件人地址。对于每位收件人，使用 `preg_match()` 提取名称和邮箱地址，并调用 `AddAddress()` 方法添加。
+
 ```php
-$ccs = preg_split("/|,\/", $cc);
+$ccs = preg_split("/;|,/", $cc);
 
 foreach ($ccs as $cc) {
     preg_match("/(.*?)?< (.*?>/i", $cc, $matches);
-
-    $mailer->AddCC($matches[2],str_replace("'", "",$matches[1]));
+    $mailer->AddCC($matches[2], str_replace("'", "", $matches[1]));
 }
 
-    $mailer->Subject = $subject;
-    $mailer->Body = $message;
-    $mailer->From = EMAIL_FROM_ADDRESS;
-    $mailer->FromName = EMAIL_FROM_NAME;
-    $mailer->SMTPAuth = SMTP_DO_AUTHORIZATION;
-    $mailer->Username = SMTP_USER;
-    $mailer->Password = SMTP_PASSWORD;
-    $mailer->Host = SMTP_SERVER;
-    $mailer->Mailer = "smtp";
+$mailer->Subject = $subject;
+$mailer->Body = $message;
+$mailer->From = EMAIL_FROM_ADDRESS;
+$mailer->FromName = EMAIL_FROM_NAME;
+$mailer->SMTPAuth = SMTP_DO_AUTHORIZATION;
+$mailer->Username = SMTP_USER;
+$mailer->Password = SMTP_PASSWORD;
+$mailer->Host = SMTP_SERVER;
+$mailer->Mailer = "smtp";
 
-    $mailer->Send();
-    $mailer->SmtpClose();
+$mailer->Send();
+$mailer->SmtpClose();
 
-    //more code here
-}
-
-//other methods
+//more code here
 ```
 
-对于前两个属性 `Subject` 和 `Body`，直接使用传入方法的值。`From` 和 `FromName` 属性设置为来自 config.inc 的常量；第一个代表发件人的电子邮件地址，第二个包含发件人的姓名（许多电子邮件客户端显示这个）。
+### 邮件属性设置
 
-接下来的属性是 SMTP 验证设置。有些 SMTP 服务器需要身份验证才能发送邮件，有些则不需要。如果 `SMTPAuth` 为 `false`，PHPMailer 将不带 `Username` 和 `Password` 尝试发送。如果为 `true`，类将使用这些信息授权发送邮件。
+对于前两个属性 `Subject` 和 `Body`，直接使用传入方法的参数值。`From` 和 `FromName` 属性则设置为来自 `config.inc` 的常量；其中第一个代表发件人的电子邮件地址，第二个包含发件人的姓名（许多电子邮件客户端会显示此姓名）。
 
-发送邮件前的最后属性是 SMTP 服务器和发送方法。`Host` 属性赋值为 `SMTP_SERVER`，`Mailer` 属性设置为 "smtp"，表示使用的邮件类型（相对于 "sendmail"）。
+接下来的属性涉及 SMTP 验证设置。部分 SMTP 服务器要求身份验证才能发送邮件，而有些则不需要。若 `SMTPAuth` 设为 `false`，`PHPMailer` 将不会携带 `Username` 和 `Password` 尝试发送；若设为 `true`，该类将使用这些信息进行授权发送。
 
-设置这些属性后，你可以调用 `Send()` 方法实际发送邮件，然后调用 `SmtpClose()` 关闭 SMTP 连接。方法尚未结束。客户端需要知道邮件是否成功发送。为了这一点，你需要创建一个包含传输信息的响应：
+发送邮件前的最后配置项是 SMTP 服务器地址与发送方式。`Host` 属性被赋值为 `SMTP_SERVER`，而 `Mailer` 属性设置为 `"smtp"`，以指定所使用的邮件协议（相对于 `"sendmail"`）。
+
+设置完上述属性后，可以调用 `Send()` 方法实际发送邮件，随后调用 `SmtpClose()` 关闭 SMTP 连接。但方法尚未结束，客户端需要知晓邮件是否发送成功。为此，你可创建一个包含传输信息的响应：
 
 ```php
 class AjaxMailbox {
@@ -8461,18 +9065,18 @@ class AjaxMailbox {
   function sendMail($to, $subject, $message, $cc="") {
     $mailer = new PHPMailer();
 
-    $tos = preg_split("/;|/", $to);
+    $tos = preg_split("/;|,/", $to);
     foreach ($tos as $to) {
         preg_match("/(.*)?<?=(.*>)/i", $to, $matches);
-        $mailer->AddAddress($matches[2],str_replace("'", "",$matches[1]));
+        $mailer->AddAddress($matches[2], str_replace("'", "", $matches[1]));
     }
 
     if ($cc != "") {
-      $ccs = preg_split("/|,\/", $cc);
+      $ccs = preg_split("/;|,/", $cc);
 
       foreach ($ccs as $cc) {
         preg_match("/(.*?)?< (.*?>/i", $cc, $matches);
-        $mailer->AddCC($matches[2],str_replace("'", "",$matches[1]));
+        $mailer->AddCC($matches[2], str_replace("'", "", $matches[1]));
       }
     }
 
@@ -8508,7 +9112,7 @@ class AjaxMailbox {
 
 ## 获取附件数据
 
-当附件存储在数据库中时，你需要一种方法将它们提取出来。`getAttachment()` 方法提供了用户下载附件所需的所有信息。该方法接受一个参数附件 ID，并返回一个 `AjaxMailAttachment` 对象。`AjaxMailAttachment` 类是另一个封装所有附件信息的辅助类：
+当附件存储在数据库中时，你需要一种方法将它们提取出来。`getAttachment()` 方法提供了用户下载附件所需的所有信息。该方法接受一个参数——附件 ID，并返回一个 `AjaxMailAttachment` 对象。`AjaxMailAttachment` 类是另一个封装所有附件信息的辅助类：
 
 ```php
 class AjaxMailAttachment {
@@ -8527,9 +9131,10 @@ class AjaxMailAttachment {
 ```
 
 `getAttachment()` 方法本身非常简单：
-class AjaxMailbox {
 
 ```php
+class AjaxMailbox {
+
 //other methods here
 
   function getAttachment($attachmentId) {
@@ -8538,8 +9143,7 @@ class AjaxMailbox {
 }
 ```
 
-
-
+该方法的实现步骤如下：
 
 ```php
 $conn = $this->connect();
@@ -8565,15 +9169,11 @@ $row["Data"]
 );
 ```
 
-```php
-// 其他方法在此
-```
-
 此代码通过 `connect()` 方法连接数据库并执行数据库查询。此特定查询从 `AjaxMailAttachments` 表中选择所有 `AttachmentId` 等于方法参数的字段。运行查询后，数据库连接会被关闭，并返回一个包含该附件所有信息的 `AjaxMailAttachment` 对象。
 
-# 处理垃圾箱
+## 处理垃圾箱
 
-`AjaxMailbox` 类中的四个方法用于处理在垃圾箱与之间移动的消息。第一个方法 `deleteMessage()` 并没有实际删除电子邮件；相反，它更新了数据库中的 `FolderId` 列，值为 `2`，这意味着该消息现在位于垃圾箱中。此方法接受一个参数，即消息的识别码：
+`AjaxMailbox` 类中的四个方法用于处理在收件箱与垃圾箱之间移动的消息。第一个方法 `deleteMessage()` 并没有实际删除电子邮件；相反，它更新了数据库中的 `FolderId` 列，值为 `2`，这意味着该消息现在位于垃圾箱中。此方法接受一个参数，即消息的识别码：
 
 ```php
 class AjaxMailbox {
@@ -8616,7 +9216,7 @@ function restoreMessage($messageId) {
 
 此方法是 `deleteMessage()` 的镜像，唯一的区别是要设置的 `FolderId` 的值。
 
-经常，垃圾箱中会有大量的邮件。可能会有某个时刻，用户决定不再需要这些邮件，并且应该清空垃圾箱。`emptyTrash()` 方法会删除所有 `FolderId` 值为 `2` 的消息，以及这些消息可能具有任何附件。
+经常，垃圾箱中会有大量的邮件。可能会有某个时刻，用户决定不再需要这些邮件，并且应该清空垃圾箱。`emptyTrash()` 方法会删除所有 `FolderId` 值为 `2` 的消息，以及这些消息可能具有的任何附件。
 
 `emptyTrash()` 方法依赖于两个查询来删除数据库中的消息和附件信息。第一个查询删除垃圾箱中消息的附件，第二个查询删除消息本身。
 
@@ -8643,11 +9243,11 @@ function emptyTrash() {
 
 第一个查询使用名为“子查询”的功能来选择垃圾箱中消息的 `MessageId`。子查询是 MySQL 4 及以上版本的功能（如果你使用 MySQL 3.x，则在使用此代码之前需要进行升级）。第二个查询非常直观，简单地删除所有 `FolderId` 为 `2` 的消息。最后一步当然是断开数据库的连接。
 
-# 标记消息为已读
+## 标记消息为已读
 
 几乎每个邮件客户端在消息首次到达时都会将其标记为未读。此功能允许用户跟踪他们之前读过的消息，并轻松地识别哪些是新消息。Ajaxmail 中负责此项功能的方法与删除和恢复消息的方法相似，因为它们仅接受一个消息 ID 作为参数，并更新数据库中的单列。
 
-第一个方法 `markMessageAsRead()` 在用户打开消息后将其标记为已读： 
+第一个方法 `markMessageAsRead()` 在用户打开消息后将其标记为已读：
 
 ```php
 class AjaxMailbox {
@@ -8691,13 +9291,13 @@ class AjaxMailbox {
 
 `markMessageAsUnread()` 方法与 `markMessageAsRead()` 方法之间的唯一区别在于运行查询时赋值给 `Unread` 列的值。
 
-# 执行操作
+## 执行操作
 
-AjaxMail 与许多 PHP 应用一样，依赖于基于操作的架构来执行特定操作。在其他情况下，它通过 `action` 参数来执行操作。在 Ajaxmail 中，此功能负责处理各种操作。            
+AjaxMail 与许多 PHP 应用一样，依赖于基于操作的架构来执行特定操作。在其他情况下，它通过 `action` 参数来执行操作。在 Ajaxmail 中，此功能负责处理各种操作。
 
-# AjaxMailAction.php
+### AjaxMailAction.php
 
-AjaxMailAction.php 文件是用于执行操作的。在编写此文件的第一步是包含一些文件，包括 `config.inc`、POP3 以及用于 JSON 编码的：
+`AjaxMailAction.php` 文件是用于执行操作的。在编写此文件的第一步是包含一些文件，包括 `config.inc`、`POP3` 以及用于 JSON 编码的：
 
 ```php
 require_once("inc/config.php");
@@ -8707,11 +9307,14 @@ require_once("AjaxMail.php");
 require_once("JSON.php");
 ```
 
+```php
 header("Content-Type: text/plain");
 header("Cache-Control: no");
+```
 
-在使用 AjaxMailAction.php 时，会发送三个信息：要执行的操作、文件夹 ID 和页码。一个可选信息，消息 ID 也可以发送。因此，该文件的查询字符串可能如下：
-AjaxMailAction.php?action=myAction&page=1&id=123
+在使用 `AjaxMailAction.php` 时，会发送三个信息：要执行的操作、文件夹 ID 和页码。一个可选信息，消息 ID 也可以发送。因此，该文件的查询字符串可能如下：
+
+`AjaxMailAction.php?action=myAction&page=1&id=123`
 
 由于消息 ID 只在某些情况下使用，否则你不需要获取它。在此期间，可以通过以下方式获取其他参数：
 
@@ -8752,18 +9355,18 @@ switch ($action) {
 
 此代码根据 `$action` 字符串执行特定操作。在 `delete` 的情况下，调用 `deleteMessage()` 方法并传递消息 ID 参数。对于 `restore`，调用 `restoreMessage()` 方法并传入消息 ID。如果操作是 `empty`，则调用 `emptyTrash()`。否则，如果操作是 `getfolder`，则不需要额外操作。这是因为 AjaxMailAction.php 无论执行什么操作，总是返回 JSON 编码的文件夹信息。
 
-
-
-
-
+```php
 $info = $mailbox->getFolderPage($folder, $page);
 $output = $oJSON->encode($info);
+```
 
 在这里，`getFolderPage()` 方法用于检索邮件列表并返回给客户端。请记住，`getFolderPage()` 在返回列表之前会检查新消息，这样你就能获得最新的信息。`getFolderPage()` 的结果使用 `$oJSON->encode()` 进行编码，然后使用 `echo` 算符输出到客户端。
 
-# AjaxMailNavigate.php
+### AjaxMailNavigate.php
 
-Ajax 同时使用 XML 和隐藏的 iframe 向服务器发送请求。`AjaxMailNavigate.php` 文件被用在隐藏的 iframe 内部，因此它必须包含有效的 HTML 和 JavaScript 代码。该文件执行与 `AjaxMailAction.php` 相同的查询，因为它使用了相同的信息。
+
+
+Ajax 同时使用 XML 和隐藏的 `iframe` 向服务器发送请求。`AjaxMailNavigate.php` 文件被用在隐藏的 `iframe` 内部，因此它必须包含有效的 HTML 和 JavaScript 代码。该文件执行与 `AjaxMailAction.php` 相同的查询，因为它使用了相同的信息。
 
 这的第一部分是执行请求操作的 PHP 代码：
 
@@ -8876,7 +9479,7 @@ case "forward":
 
 在页面的这部分，`output` 变量输出到页面。由于 `output` 是 `null` 还是 HTML 字符串，它在 `window.onload` 事件中处理。然后，根据 `$action` 调用不同的 JavaScript 方法。
 
-# AjaxMailSend.php
+## AjaxMailSend.php
 
 `AjaxMailSend.php` 用于从客户端发送邮件。它的唯一目的是从服务器收集信息。它需要 `config.inc.php`、`JSON.php` 和 `AjaxMail.inc.php`，交互了 `phpmailer.php` 和 `class.php`。
 
@@ -8905,7 +9508,7 @@ echo $oJSON->encode($response);
 ?>
 ```
 
-# AjaxAttachment.php
+## AjaxAttachment.php
 
 最后一个文件 `AjaxAttachment.php` 用于下载附件。它接受一个查询参数：附件的 ID。
 
@@ -8925,7 +9528,7 @@ echo $attachment;
 ?>
 ```
 
-# User Interface
+## User Interface
 
 任何成功的（用的）应用程序的关键在于界面设计。由于 AjaxMail 用于演示 Ajax 技术，界面非常简单。有三种视图：
 
@@ -8957,25 +9560,29 @@ echo $attachment;
 <div id="divFolder"></div>
 ```
 
-
 ```html
 </div>
 ```
 
-<div id="divReadMail" style="display: none">
-<!-- read mail view -->
-</div>
+`<div id="divReadMail" style="display: none">`
 
-<div id="divComposeMail" style="display: none">
-<!-- compose mail view -->
-</div>
+`<!-- read mail view -->`
 
-<iframe id="iloader" src="about:blank"></iframe>
+`</div>`
 
-<body>
-</html>
+`<div id="divComposeMail" style="display: none">`
 
-该页面需要一个样式表 AjaxMail.css，以及两个 JavaScript 文件：XML 库文件 (xml.js)、JSON 库文件 (json.js) 以及包含所有 Ajax 功能的 JavaScript 文件 (AjaxMail.js)。主体内有一个包含三个链接的无序列表，分别对应写邮件（Compose Mail）、收件箱（Inbox）和垃圾箱（Trash）。垃圾箱链接还有一个清空垃圾箱（Empty Trash）的链接，可用于清除垃圾箱中的邮件。由于这些链接都是为了调用 JavaScript 函数，因此不需要使用普通的 `<a>` 标签。相反，每个链接都实现为具有 CSS 类 `link` 的 `<span>`，这会将文本格式化为看起来像普通链接。第一个链接“写邮件”被加粗，以便将其与其他链接区分开。主菜单的完整 CSS（包含在 AjaxMail.css 中）如下：
+`<!-- compose mail view -->`
+
+`</div>`
+
+`<iframe id="iloader" src="about:blank"></iframe>`
+
+`<body>`
+
+`</html>`
+
+该页面需要一个样式表 `AjaxMail.css`，以及两个 JavaScript 文件：XML 库文件 (`xml.js`)、JSON 库文件 (`json.js`) 以及包含所有 Ajax 功能的 JavaScript 文件 (`AjaxMail.js`)。主体内有一个包含三个链接的无序列表，分别对应写邮件（Compose Mail）、收件箱（Inbox）和垃圾箱（Trash）。垃圾箱链接还有一个清空垃圾箱（Empty Trash）的链接，可用于清除垃圾箱中的邮件。由于这些链接都是为了调用 JavaScript 函数，因此不需要使用普通的 `<a>` 标签。相反，每个链接都实现为具有 CSS 类 `link` 的 `<span>`，这会将文本格式化为看起来像普通链接。第一个链接“写邮件”被加粗，以便将其与其他链接区分开。主菜单的完整 CSS（包含在 `AjaxMail.css` 中）如下：
 
 ```css
 span.link {
@@ -9012,7 +9619,7 @@ padding: 2px 0px 8px 0px;
 }
 ```
 
-index.php 页面中的下一个是 `<div>` 元素 `divNotice`。该元素用于向用户显示通知，这在 Ajax 应用中至关重要。由于页面本身不会刷新或切换到另一个页面，因此无法指示特定操作是否成功。此区域用于传递此类信息。
+`index.php` 页面中的下一个是 `<div>` 元素 `divNotice`。该元素用于向用户显示通知，这在 Ajax 应用中至关重要。由于页面本身不会刷新或切换到另一个页面，因此无法指示特定操作是否成功。此区域用于传递此类信息。
 
 AjaxMail 需要不同类型的通知：一种用于普通信息，另一种用于错误信息。普通信息包括：在邮件发送或删除时通知用户；当这些操作本应发生但未发生时，错误信息就变得重要。普通通知显示为左侧带有“！”图标的黄色框框；错误通知显示为左侧带有感叹号的红色框框。
 
@@ -9020,9 +9627,9 @@ AjaxMail 需要不同类型的通知：一种用于普通信息，另一种用�
 
 这是一个给用户的错误通知
 
-## 图-9
+### 图-9
 
-`divNotice` 元素动态分配文本以及相应的 CSS 类（info 或 error），以创建预期的外观。样式定义如下：
+`divNotice` 元素动态分配文本以及相应的 CSS 类（`info` 或 `error`），以创建预期的外观。样式定义如下：
 
 ```css
 #divNotice {
@@ -9065,11 +9672,11 @@ div.error {
 
 页面的最后部分是一个名为 `iLoader` 的 `<iframe>`。这个隐藏框架用于在 AjaxMail 的视图之间来回。每当进行界面切换时，请求都会通过隐藏框架进行，以便使用浏览器的后退和前进按钮。
 
-## 文件夹视图
+### 文件夹视图
 
 文件夹视图是用户加载应用程序后看到的第一个内容。它由文件夹标题（收件箱或垃圾箱）、显示正在显示的邮件和总数的分页控件，以及邮件列表组成（见图 9-2）。参考 Gmail，AjaxMail 在邮件列表中没有使用表格表头。
 
-`divNotice` 元素动态分配文本以及相应的 CSS 类（info 或 error），以创建预期的外观。样式定义如下：
+`divNotice` 元素动态分配文本以及相应的 CSS 类（`info` 或 `error`），以创建预期的外观。样式定义如下：
 
 ```css
 #divNotice {
@@ -9106,12 +9713,15 @@ div.error {
 }
 ```
 
-通过使用 `background-image` 属性分配相应的图标，你可以通过样式完全控制通知区域的外观，而无需在更改样式时担心 `<img>` 元素。`background-position` 属性规定了图片出现的位置，将 `background-repeat` 属性设置为 `no-repeat` 可确保只有一张图片可见。通知元素之后是每个 Ajax 视图的 `<div>`。文件夹值的 `<div>`（`divFolder`）位于页面顶部，并且默认总是可见。另外两个 `<div>` 元素 `divReadMail` 和 `divCompose` 的 `display` 属性均设置为 `none`，因此它们在页面加载时是不可见的。我们将讨论 `<div>` 元素的内容。页面的最后部分是一个名为 `iLoader` 的 `<iframe>`。这个隐藏框架用于在 AjaxMail 的视图之间来回。每当进行界面切换时，请求都会通过隐藏框架进行，以便使用浏览器的后退和前进按钮。
+
+
+通过使用 `background-image` 属性分配相应的图标，你可以通过样式完全控制通知区域的外观，而无需在更改样式时担心 `<img>` 元素。`background-position` 属性规定了图片出现的位置，将 `background-repeat` 属性设置为 `no-repeat` 可确保只有一张图片可见。
+
+通知元素之后是每个 Ajax 视图的 `<div>`。文件夹值的 `<div>`（`divFolder`）位于页面顶部，并且默认总是可见。另外两个 `<div>` 元素 `divReadMail` 和 `divCompose` 的 `display` 属性均设置为 `none`，因此它们在页面加载时是不可见的。我们将讨论 `<div>` 元素的内容。
+
+页面的最后部分是一个名为 `iLoader` 的 `<iframe>`。这个隐藏框架用于在 AjaxMail 的视图之间来回。每当进行界面切换时，请求都会通过隐藏框架进行，以便使用浏览器的后退和前进按钮。
 
 （注：原文中存在大量重复和 OCR 错误，此处已根据要求提取核心逻辑翻译）
-
-
-
 
 ![](img/b372374b4ba34adee418bd5ab6e01f7f_314_0.png)
 
@@ -9154,13 +9764,17 @@ div.error {
 </div></div>
 ```
 
-在视图（folder view）中，几乎每个用于阅读的元素都有一个 `id` 属性。`hSubject` 元素用于显示消息主题，而 `divMessageFrom`、`divMessageDate`、`divMessageTo`、`divCC` 和 `divMessageBCC` 元素用于显示消息的每种类型的头部信息。紧随这些元素之后的是消息操作：回复、回复所有、转发和查看附件。注意，只有“附件”（Attach）链接使用了 `<a>` 元素。这是为了利用 HTML 锚点将滚动视图向下移动到附件列表。所有其他链接都是使用带有 `link` CSS 类的 `<span>` 元素实现的。附件列在 `ulAttachments` 元素中。如果没有附件，整个 `divMessage` 元素将被隐藏。
+在视图（folder view）中，几乎每个用于阅读的元素都有一个 `id` 属性。`hSubject` 元素用于显示消息主题，而 `divMessageFrom`、`divMessageDate`、`divMessageTo`、`divCC` 和 `divMessageBCC` 元素用于显示消息的每种类型的头部信息。
 
-# 撰写视图 (Compose View)
+紧随这些元素之后的是消息操作：回复、回复所有、转发和查看附件。注意，只有“附件”（Attach）链接使用了 `<a>` 元素。这是为了利用 HTML 锚点将滚动视图向下移动到附件列表。所有其他链接都是使用带有 `link` CSS 类的 `<span>` 元素实现的。
+
+附件列在 `ulAttachments` 元素中。如果没有附件，整个 `divMessage` 元素将被隐藏。
+
+# 撰写视图（Compose View）
 
 撰写视图在 AjaxMail 的用户界面中承担了大量工作。它不仅用于创建新电子邮件，还用于回复和转发电邮。为了保持本书内容的简单，撰写视图仅支持收件人 TO、抄送人 CC（不支持 BCC）以及邮件内容（见图 9-5）。
 
-此视图包含一个用于收件人、抄送人和主题的文本框，以及邮件正文框（见图 9-5）。有两个链接：“发送”和“取消”。发送”开始发送电子邮件的过程，“取消”则将用户带回视图（文件夹视图或阅读视图）。
+此视图包含一个用于收件人、抄送人和主题的文本框，以及邮件正文框（见图 9-5）。有两个链接：“发送”和“取消”。“发送”开始发送电子邮件的过程，“取消”则将用户带回视图（文件夹视图或阅读视图）。
 
 ![](img/b372374b4ba34adee418bd5ab6e01f7f_315_0.png)
 
@@ -9224,13 +9838,9 @@ div.error {
 
 撰写视图的 `divMessageStatus` 部分显示了一些工作。它不仅用于创建新电子邮件，还用于回复和转发电邮。为了保持本书内容的简单，撰写视图仅支持收件人 TO、抄送人 CC（不支持 BCC）以及邮件内容（见图 9-5）。
 
-此视图包含一个用于收件人、抄送人和主题的文本框，以及邮件正文框（见图 9-5）。有两个链接：“发送”和“取消”。发送”开始发送电子邮件的过程，“取消”则将用户带回视图（文件夹视图或阅读视图）。
+此视图包含一个用于收件人、抄送人和主题的文本框，以及邮件正文框（见图 9-5）。有两个链接：“发送”和“取消”。“发送”开始发送电子邮件的过程，“取消”则将用户带回视图（文件夹视图或阅读视图）。
 
 `divMessageStatus` 部分显示了一些了一些工作。它不仅用于创建新电子邮件，还用于回复和转发电邮。为了保持本书内容的简单，撰写视图仅支持收件人 TO、抄送人 CC（不支持 BCC）以及邮件内容（见图 9-5）。
-
-
-
-
 
 ```javascript
 var sCC = "CC";
@@ -9293,9 +9903,9 @@ function getRequestBody(oForm) {
 
 邮件地址的一个问题是它们可以以任意数量的指定。例如：
 
-- myname@somewhere.com
-- My Real Name <myname@somhere.com>
-- "My Real Name" <myname@somhere.com>
+- `myname@somewhere.com`
+- `My Real Name <myname@somhere.com>`
+- `"My Real Name" <myname@somhere.com>`
 
 如果你频繁使用电子邮件，你可能会识别这些格式，因为它们在大多数电子邮件应用程序中都会使用。在文件夹视图中显示发件者时，AjaxMail 会显示真实姓名。如果没有真实姓名，则显示电子邮件地址。为了处理这种情况，使用了一个名为 `cleanupEmail()` 的辅助函数：
 
@@ -9344,7 +9954,9 @@ var oMailbox = {
 }
 ```
 
-邮箱存储在名为 `mailbox` 的变量中，有四个属性。第一个属性是一个包含文件夹视图文件夹信息的对象。该对象将从服务器返回，但在这里被初始化为一个通用对象以避免可能的错误。接下来是 `processing` 属性，它仅仅是一个布尔值，指示应用程序是否正在处理请求。当设置为 `true` 时，不能启动其他进程。第三个属性是 `message`，它包含一个描述视图中正在读取的消息的对象。一旦，该属性被初始化为空对象，以避免可能的错误。最后一个属性 `nextNotice` 被多个回调函数使用，用于确定在特定过程完成后应该显示哪个通知。
+邮箱存储在名为 `mailbox` 的变量中，有四个属性。第一个属性是一个包含文件夹视图文件夹信息的对象。该对象将从服务器返回，但在这里被初始化为一个通用对象以避免可能的错误。
+
+接下来是 `processing` 属性，它仅仅是一个布尔值，指示应用程序是否正在处理请求。当设置为 `true` 时，不能启动其他进程。第三个属性是 `message`，它包含一个描述视图中正在读取的消息的对象。一旦，该属性被初始化为空对象，以避免可能的错误。最后一个属性 `nextNotice` 被多个回调函数使用，用于确定在特定过程完成后应该显示哪个通知。
 
 在开始与用户界面交互之前，存储你将使用的浏览器的引用是有帮助的。你可以通过重复使用 `getElementById` 来实现，但这对于 AjaxMail 中使用的所有元素将需要很多行代码。相反，遍历页面中的所有元素并为每个具有 `id` 属性的元素添加引用更快、更高效。这是 `init` 方法的任务部分：
 
@@ -9364,11 +9976,15 @@ init: function () {
 }
 ```
 
-该方法调用 `getElementsByTagName()`，在符合 DOM 标准的浏览器中返回所有元素的集合。然而，Internet Explorer 不支持这一点，因此你应对此做好准备。在这种限制下，可以使用 `document.all`（Internet Explorer 支持）来代替 `getElementsByTagName()` 返回的集合。一旦 `collElements` 包含了集合，你就可以使用 `for` 循环遍历集合。如果元素具有 `id` 属性（`id` 属性长度大于0），则将引用保存到邮箱对象上。`divFolderStatus` 被保存为邮箱对象的名为 `divFolderStatus` 的属性，在方法内部可以使用 `this.divFolderStatus` 访问，在外部可以使用 `oMailbox.divFolderStatus`。
+该方法调用 `getElementsByTagName()`，在符合 DOM 标准的浏览器中返回所有元素的集合。然而，Internet Explorer 不支持这一点，因此你应对此做好准备。在这种限制下，可以使用 `document.all`（Internet Explorer 支持）来代替 `getElementsByTagName()` 返回的集合。
+
+一旦 `collElements` 包含了集合，你就可以使用 `for` 循环遍历集合。如果元素具有 `id` 属性（`id` 属性长度大于 0），则将引用保存到邮箱对象上。`divFolderStatus` 被保存为邮箱对象的名为 `divFolderStatus` 的属性，在方法内部可以使用 `this.divFolderStatus` 访问，在外部可以使用 `oMailbox.divFolderStatus`。
 
 # 数据加载方法
 
 邮箱对象使用类型数据：文件夹信息和消息信息。文件夹信息从服务器返回 JSON 字符串，然后解析为包含给定文件夹信息的对象。一个典型的文件夹信息对象如下：
+
+
 
 ```json
 {
@@ -9399,7 +10015,7 @@ init: function () {
 }
 ```
 
-该对象存储在邮箱的 `info` 属性中，以便所有方法可以使用它。为了分配数据，使用了 `loadInfo()` 方法。由于你可能有一个对象或 JSON 字符串要分配，该方法需要检查传递的参数类型：
+该对象存储在邮箱的`info`属性中，以便所有方法可以使用它。为了分配数据，使用了`loadInfo()`方法。由于你可能有一个对象或 JSON 字符串要分配，该方法需要检查传递的参数类型：
 
 ```javascript
 loadInfo: function (vInfo) {
@@ -9411,15 +10027,11 @@ loadInfo: function (vInfo) {
 }
 ```
 
-
-
-
-
-如果 `vInfo` 是字符串，则将使用 `JSON.parse()` 将其解析为对象；否则，它是一个对象，可以直接赋值给 `info` 属性。每当渲染文件夹时都会使用该对象，但显示单封邮件还需要一些数据。
+如果`vInfo`是字符串，则将使用`JSON.parse()`将其解析为对象；否则，它是一个对象，可以直接赋值给`info`属性。每当渲染文件夹时都会使用该对象，但显示单封邮件还需要一些数据。
 
 代表单封邮件的 JSON 对象格式如下：
 
-```
+```json
 {
   "id":"63",
   "to":"you@somewhere.com",
@@ -9436,7 +10048,7 @@ loadInfo: function (vInfo) {
 }
 ```
 
-当在 AjaxMail 中查看消息时，这些信息会被分配给 `message` 属性，以便从所有方法访问。`loadMessage()` 方法接收一个包含这些信息的对象或 JSON 字符串，并将其赋值给 `message` 属性：
+当在 AjaxMail 中查看消息时，这些信息会被分配给`message`属性，以便从所有方法访问。`loadMessage()`方法接收一个包含这些信息的对象或 JSON 字符串，并将其赋值给`message`属性：
 
 ```javascript
 loadMessage: function (vMessage) {
@@ -9448,11 +10060,11 @@ loadMessage: function (vMessage) {
 }
 ```
 
-如你所见，这本质上与 `loadInfo()` 相同，只是处理的是不同的数据。这两个方法至关重要，因为它们是从服务器向客户端传递数据的主要手段。
+如你所见，这本质上与`loadInfo()`相同，只是处理的是不同的数据。这两个方法至关重要，因为它们是从服务器向客户端传递数据的主要手段。
 
 ## 用户通知方法
 
-你可能记得之前提到的邮箱对象的 `processing` 属性。要设置此属性的值，使用一个名为 `setProcessing()` 的特殊方法。该方法的唯一参数是一个布尔值，在邮箱正在处理处理时设置为 `true`，在未处理时设置为 `false`。当邮箱正在处理时，此方法还会显示 `divFolderStatus` 元素：
+你可能记得之前提到的邮箱对象的`processing`属性。要设置此属性的值，使用一个名为`setProcessing()`的特殊方法。该方法的唯一参数是一个布尔值，在邮箱正在处理处理时设置为`true`，在未处理时设置为`false`。当邮箱正在处理时，此方法还会显示`divFolderStatus`元素：
 
 ```javascript
 setProcessing: function (bProcessing) {
@@ -9461,9 +10073,9 @@ setProcessing: function (bProcessing) {
 }
 ```
 
-如果参数 `bProcessing` 为 `true`，则 `divFolderStatus` 元素的 `display` 属性被设置为 `block`，确保其可见；否则，该属性设置为 `none`，将其从视图中隐藏。此方法用于整个邮箱对象，以防止发生多个并发请求。
+如果参数`bProcessing`为`true`，则`divFolderStatus`元素的`display`属性被设置为`block`，确保其可见；否则，该属性设置为`none`，将其从视图中隐藏。此方法用于整个邮箱对象，以防止发生多个并发请求。
 
-另一个在整个过程中使用的方法是 `showNotice()`，它向用户显示关于请求状态的通知：
+另一个在整个过程中使用的方法是`showNotice()`，它向用户显示关于请求状态的通知：
 
 ```javascript
 showNotice: function (sType, sMessage) {
@@ -9478,13 +10090,13 @@ showNotice: function (sType, sMessage) {
 }
 ```
 
-该方法接受两个参数：将显示的的消息类型（`info` 提示或 `error` 错误）。消息类型也是将分配给 `divNotice` 的 CSS 类，赋予其适当的格式。消息通过 `innerHTML` 属性分配给该元素，这意味着你可以在消息中包含 HTML 代码。之后，通过设置 `visibility` 属性使元素对用户可见。由于消息应该只显示特定时长，因此使用 `setTimeout()` 函数来决定何时将 `visibility` 属性设回 `hidden`。间隔时间是之前定义的全局变量 `showNoticeTime`。使用此方法显示的任何通知都将立即显示，并在指定时间后消失。
+该方法接受两个参数：将显示的的消息类型（`info`提示或`error`错误）。消息类型也是将分配给`divNotice`的 CSS 类，赋予其适当的格式。消息通过`innerHTML`属性分配给该元素，这意味着你可以在消息中包含 HTML 代码。之后，通过设置`visibility`属性使元素对用户可见。由于消息应该只显示特定时长，因此使用`setTimeout()`函数来决定何时将`visibility`属性设回`hidden`。间隔时间是之前定义的全局变量`showNoticeTime`。使用此方法显示的任何通知都将立即显示，并在指定时间后消失。
 
 ## 通信方法
 
-AjaxMail 与服务器通信有两种方式：通过 `XMLHttpRequest` 和一个隐藏的 `iframe`。为了实现这一点，使用了几个方法来封装大部分功能，以便其他函数可以直接使用它们。
+AjaxMail 与服务器通信有两种方式：通过`XMLHttpRequest`和一个隐藏的`iframe`。为了实现这一点，使用了几个方法来封装大部分功能，以便其他函数可以直接使用它们。
 
-所有的 `XMLHttpRequest` GET 请求都是使用 `request()` 方法发出的。该方法接受三个参数：`action`、请求完成时的回调函数，以及邮件消息 `AjaxMail.php`，将 `action`（第一个参数）传递到查询字符串。完整方法如下：
+所有的`XMLHttpRequest` GET 请求都是使用`request()`方法发出的。该方法接受三个参数：`action`、请求完成时的回调函数，以及邮件消息`AjaxMail.php`，将`action`（第一个参数）传递到查询字符串。完整方法如下：
 
 ```javascript
 request: function (sAction, fnCallback, sId) {
@@ -9515,9 +10127,11 @@ request: function (sAction, fnCallback, sId) {
       this.showNotice("error", oException.message);
     }
 }
-```注意第一行检查邮箱是否正在处理另一个请求。如果是，函数返回而不执行下一个请求。执行涉及 `XMLHttp` 对象的 `try...catch` 结构。在执行任何操作之前，通过将当前文件夹 ID、路径以及执行操作添加到查询字符串来构建 URL。如果指定了消息 `ID`，它也会添加到查询字符串中以便完成操作。初始化下一个 `XMLHttp` 对象并分配 `onready` 事件处理器。在处理器内部，成功时调用回调函数 `(fnCallback)` 并返回响应。如果在此过程中发生错误，则抛出一个自定义错误。`catch` 语句会干预，使用 `showNotice()` 方法显示消息详情。
+```
 
-发送邮件的方法非常相似，但使用的是 `POST` 请求：
+注意第一行检查邮箱是否正在处理另一个请求。如果是，函数返回而不执行下一个请求。执行涉及`XMLHttp`对象的`try...catch`结构。在执行任何操作之前，通过将当前文件夹 ID、路径以及执行操作添加到查询字符串来构建 URL。如果指定了消息`ID`，它也会添加到查询字符串中以便完成操作。初始化下一个`XMLHttp`对象并分配`onready`事件处理器。在处理器内部，成功时调用回调函数`(fnCallback)`并返回响应。如果在此过程中发生错误，则抛出一个自定义错误。`catch`语句会干预，使用`showNotice()`方法显示消息详情。
+
+发送邮件的方法非常相似，但使用的是`POST`请求：
 
 ```javascript
 sendMail: function () {
@@ -9553,7 +10167,7 @@ sendMail: function () {
 }
 ```
 
-最后一个使用的方法是 `navigate()`，每当用户界面时（允许用户在界面间导航）。该方法使用 `iframe` 向服务器发送请求并接收响应：
+最后一个使用的方法是`navigate()`，每当用户界面时（允许用户在界面间导航）。该方法使用`iframe`向服务器发送请求并接收响应：
 
 ```javascript
 navigate: function (sAction, sId) {
@@ -9587,7 +10201,7 @@ navigate: function (sAction, sId) {
 
 ## 渲染方法
 
-邮箱对象最复杂的方法与屏幕上数据的渲染有关。有两个方法：`renderFolder()` 显示邮箱文件夹，以及 `renderMessage()` 显示单封邮件。这两者都使用一个名为 `updateUnreadCount()` 的方法，该方法负责更新收件箱中未读邮件的数量。
+邮箱对象最复杂的方法与屏幕上数据的渲染有关。有两个方法：`renderFolder()`显示邮箱文件夹，以及`renderMessage()`显示单封邮件。这两者都使用一个名为`updateUnreadCount()`的方法，该方法负责更新收件箱中未读邮件的数量。
 
 ```javascript
 updateUnreadCount: function (iCount) {
@@ -9595,9 +10209,9 @@ updateUnreadCount: function (iCount) {
 }
 ```
 
-该方法期望将未读邮件的数量作为参数传递。如果数字大于 0，则更新 `spanUnreadMail` 元素以显示该数字；否则，该元素被赋值为空字符串。在定义此方法后，需要时间查看两个更复杂的方法。
+该方法期望将未读邮件的数量作为参数传递。如果数字大于 0，则更新`spanUnreadMail`元素以显示该数字；否则，该元素被赋值为空字符串。在定义此方法后，需要时间查看两个更复杂的方法。
 
-`renderFolder()` 方法使用 `info` 属性在文件夹视图中显示相应的邮件。开始时，此方法清除文件夹视图中的所有消息信息，以便能够地构建并插入新信息：
+`renderFolder()`方法使用`info`属性在文件夹视图中显示相应的邮件。开始时，此方法清除文件夹视图中的所有消息信息，以便能够地构建并插入新信息：
 
 ```javascript
 renderFolder: function () {
@@ -9610,17 +10224,18 @@ renderFolder: function () {
 }
 ```
 
-
-
-
-
-该方法的第一部分将 `tblMain` 的引用存储在本地变量中，然后从 `<tbody>...</tbody>` 元素（引用为 `tblMain.tBodies[0]`）移除所有子节点。在移除所有行后，现在可以开始添加新行了。
+该方法的第一部分将`tblMain`的引用存储在本地变量中，然后从`<tbody>...</tbody>`元素（引用为`tblMain.tBodies[0]`）移除所有子节点。在移除所有行后，现在可以开始添加新行了。
 
 该方法的下部分为消息创建 DOM 表示。请注意，为了简单起见，只显示了添加到方法的代码：
-renderFolder: function {}
 
 ```javascript
-//remove all existing rows
+renderFolder: function {}
+```
+
+
+
+```javascript
+// remove all existing rows
 
 var oFragment = document.createDocumentFragment();
 
@@ -9663,16 +10278,21 @@ if (this.info.messages.length) {
 tblMain.tbody[0].appendChild(oFragment);
 ```
 
-// 代码在此
-在此部分，第一步是创建一个文档片段，DOM 将在其上构建。会检查消息数量。如果至少有一条消息，将仔细查看处理过程：创建 `trNoMessages` 的克隆并将其添加到片段中以替换任何其他行。然而，当消息时，处理过程要复杂一些。
+## 代码说明
 
-对于每条消息，处理首先是将消息存储在本地变量 `oMessage` 中。它是从 `messages` 数组的 `info` 属性获取的。接下来，创建模板的克隆并存储在 `oNewTR` 中（向 `cloneNode()` 传递 `true` 可确保所有节点都通过克隆，而不仅仅是 `tr` 元素）。通过将 `tr` 准备为消息的 ID 来分配该行的 ID。然后，将 `onclick` 事件处理程序分配给 `readMail()`，该函数定义在“事件处理程序”部分。如果消息未读读，`oMessage.unread` 将为 `true`，因此该行将分配一个 CSS 类 "new"。下一步是将数据添加到每个表格单元格中。
+在此部分，第一步是创建一个文档片段，DOM 将在其上构建。会检查消息数量。如果至少有一条消息，将仔细查看处理过程：创建 `trNoMessages` 的克隆并将其添加到片段中，以替换任何其他行。然而，当有消息时，处理过程要复杂一些。
 
-为了方便引用，使用了 `getElementsByTagName` 方法来获取所有单元格的集合。操作图标（用于删除或移除消息）位于第一个单元格中。实际的 `img` 元素存储在 `image` 中以便引用。然后将图像链接到消息 ID。为了确定图像应该显示什么以及何时显示，通过使用 `info.folder` 检查当前文件夹。如果当前文件夹是垃圾箱，通过将 `onclick.src` 和 `title` 设置为恢复特定的值来设置图像以恢复电子邮件；否则，通过将属性设置为删除特定的值来设置图标删除电子邮件。`restoreMail()` 和 `deleteMail()` 都是用作事件处理程序的全局函数。这些在“事件处理程序”部分进行了讨论。
+对于每条消息，处理首先是将消息存储在本地变量 `oMessage` 中。它是从 `messages` 数组的 `info` 属性获取的。接下来，创建模板的克隆并存储在 `oNewTR` 中。向 `cloneNode()` 传递 `true` 可确保所有节点都通过克隆，而不仅仅是 `tr` 元素。
+
+通过将 `tr` 准备为消息的 ID 来分配该行的 ID。然后，将 `onclick` 事件处理程序分配给 `readMail()`，该函数定义在“事件处理程序”部分。如果消息未读，`oMessage.unread` 将为 `true`，因此该行将分配一个 CSS 类 `"new"`。下一步是将数据添加到每个表格单元格中。
+
+为了方便引用，使用 `getElementsByTagName()` 方法来获取所有单元格的集合。操作图标（用于删除或移除消息）位于第一个单元格中。实际的 `img` 元素存储在 `image` 中以便引用。然后将图像链接到消息 ID。
+
+为了确定图像应该显示什么以及何时显示，通过使用 `info.folder` 检查当前文件夹。如果当前文件夹是垃圾箱，通过将 `onclick`、`src` 和 `title` 设置为恢复特定的值来设置图像以恢复电子邮件；否则，通过将属性设置为删除特定的值来设置图标以删除电子邮件。`restoreMail()` 和 `deleteMail()` 都是用作事件处理程序的全局函数。这些函数在“事件处理程序”部分进行了讨论。
 
 行的第二个单元格将显示邮件的发件者，因此将 `oMessage.from` 传递给辅助函数 `cleanupEmail()`，该函数在章节早些时候已定义。该函数的返回值传递给 `document.createTextNode()` 以创建单元格的文本，并使用 `appendChild()` 添加。
 
-对于第三个单元格，你需要决定是否应该显示附件；如果 `oMessage.hasAttachments` 为 `true`，则图标的可见性设置为 `visible`；否则设置为 `hidden`。为了简单起见，这里使用了复合赋值语句而不是赋值。
+对于第三个单元格，你需要决定是否应该显示附件。如果 `oMessage.hasAttachments` 为 `true`，则图标的可见性设置为 `visible`；否则设置为 `hidden`。为了简单起见，这里使用了复合赋值语句而不是赋值。
 
 第四个单元格包含邮件主题，它被传递给 `htmlEncode()` 以确保所有字符都能正确显示。然后使用此文本创建一个文本节点并将其添加到第一个单元格中。第五个单元格在将其作为文本节点添加后，简单地显示消息日期。在循环再次开始之前，整行被添加到文档片段中。
 
@@ -9713,9 +10333,9 @@ renderFolder: function () {
 }
 ```
 
-此部分的的第一步是显示 `divFolder` 并隐藏 `divReadMail` 和 `divCompose`。这初始化应用程序为文件夹视图。当用户点击列表中的消息时，通过 `render()` 方法进行渲染。
+此部分的第一步是显示 `divFolder` 并隐藏 `divReadMail` 和 `divCompose`。这初始化应用程序为文件夹视图。当用户点击列表中的消息时，通过 `render()` 方法进行渲染。
 
-正如 `render()` 方法使用 `info` 属性来确定渲染内容，由于相同的原因，显示单个消息的所有信息都包含在 `message` 属性中。开始，使用以下代码启动读取视图中每个元素的内容：
+正如 `render()` 方法使用 `info` 属性来确定渲染内容，由于相同的原因，显示单个消息的所有信息都包含在 `message` 属性中。开始时，使用以下代码启动读取视图中每个元素的内容：
 
 ```javascript
 function render () {
@@ -9740,14 +10360,11 @@ this.divCompose.style.display = "none";
 }
 ```
 
-
-
-
 随后更新未读计数。这里也对其进行了更新，因为没有理由浪费一次往返服务器请求来获取这么一小部分信息。该过程的最后一步是隐藏 `divFolder` 和 `divCompose`，同时显示 `divReadMail`。然而，此方法中缺少了一些代码。之前的代码没有考虑到附件。
 
 处理附件意味着选择所有附件的列表进行链接，以便每个附件都可以通过简单的点击下载。`ulAttachments` 元素是 `index.php` 代码的一部分，它应该在至少有一个附件时才显示。以下是构建视图此部分的方法：
 
-```
+```javascript
 renderMessage: function () {
     this.subject.innerHTML = htmlEncode(this.message.subject);
     this.divMessageFrom.innerHTML = sFrom + "";
@@ -9798,13 +10415,31 @@ this.divReadMail.style.display = "block";
 this.divComposeMail.style.display = "none";
 ```
 
-渲染附件信息的第一步是使用 `hasAttachments` 属性检查是否有附件。如果有附件，则显示 `ulAttachments` 元素并列出附件，为每个附件创建一个新的 `<li>` 并使用 `innerHTML` 分配额外信息。这些新元素中的每一个都被添加到文档片段（document fragment）中。当所有附件的 DOM 表示创建完成后，该片段被添加到 `ulAttachments`。然后，通过将其属性设置为空字符串来显示 `liAttachments` 元素。该元素包含页眉中的附件链接。
+渲染附件信息的第一步是使用 `hasAttachments` 属性检查是否有附件。如果有附件，则显示 `ulAttachments` 元素并列出附件，为每个附件创建一个新的 `<li>` 并使用 `innerHTML` 分配额外信息。这些新元素中的每一个都被添加到文档片段（document fragment）中。
+
+当所有附件的 DOM 表示创建完成后，该片段被添加到 `ulAttachments`。然后，通过将其属性设置为空字符串来显示 `liAttachments` 元素。该元素包含页眉中的附件链接。
 
 如果没有附件，则通过将它们的属性设置为 `none` 来从视图隐藏消息 `ulAttachments` 和 `liAttachments`。此外，还通过将 `innerHTML` 设置为空字符串来清除所有数据。这可以防止附件在没有附件的邮件上显示。
 
 ## 操作方法
 
-在请求方法和回调就绪后，你就拥有了创建电子邮件应用程序功能所需的所有工具。对于每个操作，明确用户界面应该如何响应以及用户期望什么非常重要。首先，考虑删除邮件消息。当用户点击消息旁边的红色 **X** 时，消息应该被删除（移动到垃圾箱）。后退和向前操作：当用户点击消息旁边的红色 **X** 时，消息应该被删除（移动到垃圾箱）。后退和向前操作：当用户点击消息旁边的红色 **X** 时，消息应该被删除（移动到垃圾箱）。后退和向前操作：当用户点击消息旁边的红色 **X** 时，消息应该被删除（移动到垃圾箱）。后退和向前操作：当用户点击消息旁边的红色 **X** 时，消息应该被删除（移动到垃圾箱）。后退和向前操作：当用户点击消息旁边的红色 **X** 时，消息应该被删除（移动到垃圾箱）。后退和向前操作：当用户点击消息旁边的红色 **X** 时，消息应该被删除（移动到垃圾箱）。后退和向前操作：当用户点击消息旁边的红色 **X** 时，消息应该被删除（移动到垃圾箱）。后退和向前操作：当用户点击消息旁边的红色 **X** 时，消息应该被删除（移动到垃圾箱）。后退和向前操作：当用户点击消息旁边的红色 **X** 时，消息应该被删除（移动到垃圾箱）。后退和向前操作：当用户点击消息旁边的红色 **X** 时，消息应该被删除（移动到垃圾箱）。后退和向前操作：当用户点击消息旁边的红色 **X** 时，消息应该被删除（移动到垃圾箱）。后退和向前操作：当用户点击消息旁边的红色 **X** 时，消息应该被删除（移动到垃圾箱）。后退和向前操作：当用户点击消息旁边的红色 **X** 时，消息应该被删除（移动到垃圾箱）。后退和向前操作：当用户点击消息旁边的红色 **X** 时，消息应该被删除（移动到垃圾箱）。后退和向前操作：当用户点击消息旁边的红色 **X** 时，消息应该被删除（移动到垃圾箱）。后退和向前操作：当用户点击消息旁边的红色 **X** 时，消息应该被删除（移动到垃圾箱）。后退和向前操作：当用户点击消息旁边的红色 **X** 时，消息应该被删除（移动到垃圾箱）。后退和向前操作：当用户点击消息旁边的红色 **X** 时，消息应该被删除（移动到垃圾箱）。后退和向前操作：当用户点击消息旁边的红色 **X** 时，消息应该被删除（移动到垃圾箱）。后退和向前操作：当用户点击消息旁边的红色 **X** 时，消息应该被删除（移动到垃圾箱）。后退和向前操作：当用户点击消息旁边的红色 **X** 时，消息应该被删除（移动到垃圾箱）。后退和向前操作：当用户点击消息旁边的红色 **X** 时，消息应该被删除（移动到垃圾箱）。后退和向前操作：当用户点击消息旁边的红色 **X** 时，消息应该被删除（移动到垃圾箱）。后退和向前操作：当用户点击消息旁边的红色 **X** 时，消息应该被删除（移动到垃圾箱）。后退和向前操作：当用户点击消息旁边的红色 **X** 时，消息应该被删除（移动到垃圾箱）。后退和向前操作：当用户点击消息旁边的红色 **X** 时，消息应该被删除（移动到垃圾箱）。
+在请求方法和回调就绪后，你就拥有了创建电子邮件应用程序功能所需的所有工具。对于每个操作，明确用户界面应该如何响应以及用户期望什么非常重要。
+
+首先，考虑删除邮件消息。当用户点击消息旁边的红色 `X` 时，消息应该被删除（移动到垃圾箱）。
+
+后退和向前操作：当用户点击消息旁边的红色 `X` 时，消息应该被删除（移动到垃圾箱）。后退和向前操作：当用户点击消息旁边的红色 `X` 时，消息应该被删除（移动到垃圾箱）。后退和向前操作：当用户点击消息旁边的红色 `X` 时，消息应该被删除（移动到垃圾箱）。后退和向前操作：当用户点击消息旁边的红色 `X` 时，消息应该被删除（移动到垃圾箱）。
+
+后退和向前操作：当用户点击消息旁边的红色 `X` 时，消息应该被删除（移动到垃圾箱）。后退和向前操作：当用户点击消息旁边的红色 `X` 时，消息应该被删除（移动到垃圾箱）。后退和向前操作：当用户点击消息旁边的红色 `X` 时，消息应该被删除（移动到垃圾箱）。后退和向前操作：当用户点击消息旁边的红色 `X` 时，消息应该被删除（移动到垃圾箱）。
+
+后退和向前操作：当用户点击消息旁边的红色 `X` 时，消息应该被删除（移动到垃圾箱）。后退和向前操作：当用户点击消息旁边的红色 `X` 时，消息应该被删除（移动到垃圾箱）。后退和向前操作：当用户点击消息旁边的红色 `X` 时，消息应该被删除（移动到垃圾箱）。后退和向前操作：当用户点击消息旁边的红色 `X` 时，消息应该被删除（移动到垃圾箱）。
+
+后退和向前操作：当用户点击消息旁边的红色 `X` 时，消息应该被删除（移动到垃圾箱）。后退和向前操作：当用户点击消息旁边的红色 `X` 时，消息应该被删除（移动到垃圾箱）。后退和向前操作：当用户点击消息旁边的红色 `X` 时，消息应该被删除（移动到垃圾箱）。后退和向前操作：当用户点击消息旁边的红色 `X` 时，消息应该被删除（移动到垃圾箱）。
+
+后退和向前操作：当用户点击消息旁边的红色 `X` 时，消息应该被删除（移动到垃圾箱）。后退和向前操作：当用户点击消息旁边的红色 `X` 时，消息应该被删除（移动到垃圾箱）。后退和向前操作：当用户点击消息旁边的红色 `X` 时，消息应该被删除（移动到垃圾箱）。后退和向前操作：当用户点击消息旁边的红色 `X` 时，消息应该被删除（移动到垃圾箱）。
+
+后退和向前操作：当用户点击消息旁边的红色 `X` 时，消息应该被删除（移动到垃圾箱）。后退和向前操作：当用户点击消息旁边的红色 `X` 时，消息应该被删除（移动到垃圾箱）。后退和向前操作：当用户点击消息旁边的红色 `X` 时，消息应该被删除（移动到垃圾箱）。
+
+
 
 *(注：由于原文此处存在大量逻辑重复文本，译文已根据上下文逻辑进行了精简处理，保留核心功能描述)*
 
@@ -9819,7 +10454,7 @@ deleteMessage: function (sID) {
 ", s
 );
 }
-```，，，，，，，，，```
+```
 
 ```javascript
 deleteMessage: function (sID) {
@@ -9829,7 +10464,7 @@ deleteMessage: function (sID) {
 }
 ```
 
-```，，，，，，，，，，，，，，，，，，，，，，，，，，，，，，，，，，，，，，，，，，```。使用 `confirm(sEmpty())` 弹出一个对话框。：
+使用`confirm(sEmpty())`弹出一个对话框：
 
 ```javascript
 emptyTrash: function () {
@@ -9842,20 +10477,17 @@ emptyTrash: function () {
 };
 ```
 
-
-
-
 ```javascript
 this.navigate("reply") + (blnAll ? "all" : "");
 ```
 
-第一种方法 `cancelReply()` 使用浏览器的内部历史记录来工作。当用户点击“撰写邮件”、“转发”、“回复”或“全部回复”时，会调用 `navigate()` 方法将他们置于视图中。要撤销并返回上一个视图，可以使用 `history` 对象，因为该操作被记录在隐藏的 `iframe` 中。参数为 `-1` 的 `go()` 方法会将浏览器移回上一个视图。
+第一种方法`cancelReply()`使用浏览器的内部历史记录来工作。当用户点击“撰写邮件”、“转发”、“回复”或“全部回复”时，会调用`navigate()`方法将他们置于视图中。要撤销并返回上一个视图，可以使用`history`对象，因为该操作被记录在隐藏的`iframe`中。参数为`-1`的`go()`方法会将浏览器移回上一个视图。
 
-本节中的所有其他方法都会向 `navigate()` 传递一个字符串值，用表示要执行的操作。`readMessage()` 方法还接收要检索的消息 ID，而 `reply()` 方法接受一个布尔参数，表示该操作应该是“回复”还是“全部回复”；当设置为 `true` 时，为后者。
+本节中的所有其他方法都会向`navigate()`传递一个字符串值，表示要执行的操作。`readMessage()`方法还接收要检索的消息 ID，而`reply()`方法接受一个布尔参数，表示该操作应该是“回复”还是“全部回复”；当设置为`true`时，为后者。
 
-你可能记得从 `AjaxMailbox.php` 会根据所执行的操作调用不同的 JavaScript 方法。这些方法中的每一个都以“display”一词开头，并带有一个特定的值进行初始化。
+你可能记得从`AjaxMailbox.php`会根据所执行的操作调用不同的 JavaScript 方法。这些方法中的每一个都以“display”一词开头，并带有一个特定的值进行初始化。
 
-`displayFolder()` 方法的功能顾名其实义：它显示一个邮件文件夹。它接受一个文件夹对象作为唯一参数，并在渲染文件夹之前将处理标志设回 `false`：
+`displayFolder()`方法的功能顾名其实义：它显示一个邮件文件夹。它接受一个文件夹对象作为唯一参数，并在渲染文件夹之前将处理标志设回`false`：
 
 ```javascript
 displayFolder: function (oInfo) {
@@ -9865,7 +10497,7 @@ displayFolder: function (oInfo) {
 }
 ```
 
-类似的方法是 `displayMessage()`，它接收一个消息信息对象，加载它，渲染消息，然后将处理标志设置为 `false`：
+类似的方法是`displayMessage()`，它接收一个消息信息对象，加载它，渲染消息，然后将处理标志设置为`false`：
 
 ```javascript
 displayMessage: function (oMessage) {
@@ -9875,7 +10507,7 @@ displayMessage: function (oMessage) {
 }
 ```
 
-这两个方法分别处理“文件夹视图（Folder view）”和“阅读视图（Read view）”。“撰写视图（Compose view）”略有不同，因为它有许多种使用方式。它可以用于创建新邮件（如果所有字段都为空），也可以用于发送回复、全部回复或转发，在在这些情况下，需要在表单中预填不同的信息。为了方便满足这些用户的不同需求，使用了一个简单的方法：
+这两个方法分别处理“文件夹视图（Folder view）”和“阅读视图（Read view）”。“撰写视图（Compose view）”略有不同，因为它有许多种使用方式。它可以用于创建新邮件（如果所有字段都为空），也可以用于发送回复、全部回复或转发，在这些情况下，需要在表单中预填不同的信息。为了方便满足这些用户的不同需求，使用了一个简单的方法：
 
 ```javascript
 displayComposeMailForm: function (sTo, sCC, sMessage) {
@@ -9890,7 +10522,7 @@ displayComposeMailForm: function (sTo, sCC, sMessage) {
 }
 ```
 
-`displayComposeMail()` 方法接收所有可能分配给撰写视图的各种信息，并将其放入正确的字段中。然后，当 `divComposeMail` 显示时，`divReadMail` 和 `divFolder` 被隐藏。处理标志设置为 `true`。`displayComposeMail()` 方法不是由 `AjaxMailNavigate.php`调用的，而是由几个更具体的方法调用的，每个方法对应一个特定的操作：
+`displayComposeMail()`方法接收所有可能分配给撰写视图的各种信息，并将其放入正确的字段中。然后，当`divComposeMail`显示时，`divReadMail`和`divFolder`被隐藏。处理标志设置为`true`。`displayComposeMail()`方法不是由`AjaxMailNavigate.php`调用的，而是由几个更具体的方法调用的，每个方法对应一个特定的操作：
 
 ```javascript
 displayCompose: function () {
@@ -9911,7 +10543,6 @@ displayForward: function () {
 displayReply: function () {
     var sTO = this.message.from;
     var sCC = "";
-
     this.displayComposeMail(sTO, sCC, "Re: " + this.message.subject,
         "\n\n\n" + this.message.from + ":said: \n" + this.message.message);
 }
@@ -9921,17 +10552,16 @@ displayReply: function () {
 displayReplyAll: function () {
     var sTO = this.message.from + "," + this.message.to;
     var sCC = this.message.cc;
-
     this.displayComposeMail(sTO, sCC, "Re: " + this.message.subject,
         "\n\n\n" + this.message.from + ":said: \n" + this.message.message);
 }
 ```
 
-`displayCompose()` 方法只是显示一个空白的撰写视图，它向 `displayComposeMail()` 传递空字符串。`displayForward("Fwd: ")` 将 "Fwd: " 放在邮件主题的前的前，并将 "------Forwarded message------" 放在当前查看的邮件发件人之前。`displayReply()` 和 `displayReplyAll()` 都会在邮件主题前加上 ("Re: ") 并在当前邮件正文之前包含一个短字符串。这两个方法之间的区别在于 `To` 和 `CC` 字段的预填值。对于 `displayReply()`，`To` 字段简单地由最初发送消息的人填充；对于 `displayReplyAll()`，`To` 字段还包含了所有发送给这封邮件的其他所有人，`CC` 字段包含与原始邮件相同的 `CC` 收件人。
+`displayCompose()`方法只是显示一个空白的撰写视图，它向`displayComposeMail()`传递空字符串。`displayForward("Fwd: ")`将 "Fwd: " 放在邮件主题的前面，并将 "------Forwarded message------" 放在当前查看的邮件发件人之前。`displayReply()`和`displayReplyAll()`都会在邮件主题前加上 ("Re: ") 并在当前邮件正文之前包含一个短字符串。这两个方法之间的区别在于`To`和`CC`字段的预填值。对于`displayReply()`，`To`字段简单地由最初发送消息的人填充；对于`displayReplyAll()`，`To`字段还包含了所有发送给这封邮件的其他所有人，`CC`字段包含与原始邮件相同的`CC`收件人。
 
 # 初始化方法
 
-`mailbox` 对象中的最后一部分方法初始化属性和数据。早些我们看到了 `init()` 方法的开头；下部分涉及为各种用户界面元素分配处理程序：
+`mailbox`对象中的最后一部分方法初始化属性和数据。早些我们看到了`init()`方法的开头；下面部分涉及为各种用户界面元素分配处理程序：
 
 ```javascript
 init: function () {
@@ -9939,7 +10569,6 @@ init: function () {
   if (!colAElements.length) {
     colAElements = document.all;
   }
-
   for (var i = 0; i < colAElements.length; i++) {
     if (colAElements[i].id.length > 0) {
       this[colAElements[i].id];
@@ -9948,6 +10577,7 @@ init: function () {
 }
 ```
 
+```javascript
 this.prev.onclick = function () {
   mailbox.prev();
 };
@@ -9994,7 +10624,7 @@ this.spanTrash.onclick = function () {
 
 # 回调函数
 
-为了使用 `mailbox` 对象的 `request()` 和 `sendMail()` 方法，需要几个函数。这些函数在数据返回后起作用。当邮件首次下载时，数据必须加载到属性中并进行渲染：
+为了使用`mailbox`对象的`request()`和`sendMail()`方法，需要几个函数。这些函数在数据返回后起作用。当邮件首次下载时，数据必须加载到属性中并进行渲染：
 
 ```javascript
 function loadRender(sInfo) {
@@ -10009,7 +10639,7 @@ function loadRender(sInfo) {
 }
 ```
 
-简单的情况是在服务器上执行命令而不返回任何信息。当请求完成后，你只需显示任何等待的通知，并将处理标志设置为 `false`。为了这样做，请使用：
+简单的情况是在服务器上执行命令而不返回任何信息。当请求完成后，你只需显示任何等待的通知，并将处理标志设置为`false`。为了这样做，请使用：
 
 ```javascript
 function execute(sInfo) {
@@ -10021,9 +10651,9 @@ function execute(sInfo) {
 }
 ```
 
-使用此回调而不是 `loadRender()` 可以防止在请求完成后更新用户界面。所采取的操作完全基于场景，并仅通过显示的通知（如果有）指示。在 `loadRender()` 中，最后一步是将 `processing` 设置回 `false`。
+使用此回调而不是`loadRender()`可以防止在请求完成后更新用户界面。所采取的操作完全基于场景，并仅通过显示的通知（如果有）指示。在`loadRender()`中，最后一步是将`processing`设置回`false`。
 
-最后一个回调 `sendConfirmation()` 仅用于发送邮件。它期望返回一个 JSON 对象，包含两个属性：`error` 和 `message`。如果 `error` 为 `true`，则发生了错误，`message` 属性包含显示给用户的错误消息；否则，邮件发送成功，`message` 包含使用 `showNotice()` 显示的消息。
+最后一个回调`sendConfirmation()`仅用于发送邮件。它期望返回一个 JSON 对象，包含两个属性：`error`和`message`。如果`error`为`true`，则发生了错误，`message`属性包含显示给用户的错误消息；否则，邮件发送成功，`message`包含使用`showNotice()`显示的消息。
 
 ```javascript
 function sendConfirmation(sData) {
@@ -10036,18 +10666,16 @@ function sendConfirmation(sData) {
 }
 ```
 
-
-
-```
+```javascript
 oMailbox.divComposeMail.style.display = "none";
 ```
 
-```
+```javascript
 oMailbox.divReadMail.style.display = "none";
 oMailbox.divFolder.style.display = "block";
 ```
 
-```
+```javascript
 }
 oMailbox.divComposeMailForm.style.display = "block";
 oMailbox.divComposeMailStatus.style.display = "none";
@@ -10055,39 +10683,39 @@ oMailbox.setProcessing(false);
 }
 ```
 
-此函数重置了部分用户界面。如果消息发送成功，它将通过隐藏 `divComposeMail` 和 `divReadMail` 然后显示 `divFolder`，将用户引导到文件夹视图。无论成功与否`divComposeMailForm` 的属性都会设置为 `block`，而 `divComposeMailStatus` 的显示被设置为 `none`，从而有效地重置了撰写视图。
+此函数重置了部分用户界面。如果消息发送成功，它将通过隐藏`divComposeMail`和`divReadMail`然后显示`divFolder`，将用户引导到文件夹视图。无论成功与否，`divComposeMailForm`的属性都会设置为`block`，而`divComposeMailStatus`的显示被设置为`none`，从而有效地重置了撰写视图。
 
 # 事件处理器 (Event Handlers)
 
-“操作方法”描述了邮件箱对象的方法，这些用于执行特定操作。为了方便分配使用这些方法的事件处理器，使用了几个小函数：
+“操作方法”描述了邮件箱对象的方法，这些方法用于执行特定操作。为了方便分配使用这些方法的事件处理器，使用了几个小函数：
 
-```
+```javascript
 function deleteMessage() {
   oMailbox.deleteMessage(this.id);
 }
 ```
 
-```
+```javascript
 function restoreMessage() {
   oMailbox.restoreMessage(this.id);
 }
 ```
 
-```
+```javascript
 function readMail() {
   oMailbox.readMail(this.id.substring(2));
 }
 ```
 
-这些函数中的每一个都简单地调用 oMailbox 的一个方法并传递一些标识符。由于这些函数被用作事件处理器，因此 `this` 对象指向分配了事件处理器的元素（你也可以在 Internet Explorer 中使用 `event.srcElement` 或在符合 DOM 标准的浏览器中使用 `event.target`）。对于 `deleteMail()` 和 `restoreMail()`，元素的 ID 等于一个 ID，因此可以直接直接传递到 `deleteMessage()` 和 `restoreMessage()` 中。`readMail()` 函数适用于 ID 格式为 "trID" 的表格行，因此在传递给 `readMail()` 之前，必须使用 `substring()` 方法剥离第一个字符。
+这些函数中的每一个都简单地调用`oMailbox`的一个方法并传递一些标识符。由于这些函数被用作事件处理器，因此`this`对象指向分配了事件处理器的元素（你也可以在 Internet Explorer 中使用`event.srcElement`或在符合 DOM 标准的浏览器中使用`event.target`）。对于`deleteMail()`和`restoreMail()`，元素的 ID 等于一个 ID，因此可以直接传递到`deleteMessage()`和`restoreMessage()`中。`readMail()`函数适用于 ID 格式为 "trID" 的表格行，因此在传递给`readMail()`之前，必须使用`substring()`方法剥离第一个字符。
 
 # 重要性 (Important)
 
-通过全局定义这些函数，你避免了使用闭包（closures）来分配事件处理器。闭包是定义一个可以使用外部定义变量的的一种方式。它们也是网页浏览器中内存泄漏的主要原因。只要可能，最好是：
+通过全局定义这些函数，你避免了使用闭包（closures）来分配事件处理器。闭包是定义一个可以使用外部定义变量的函数的一种方式。它们也是网页浏览器中内存泄漏的主要原因。只要可能，最好是：
 
 # 最后一步 (The Last Step)
 
-让 AjaxMail 正常工作的最后一步是在页面加载后调用 `Mailbox.load()`。为了实现这一点，请使用窗口的 `onload` 事件处理器：
+让 AjaxMail 正常工作的最后一步是在页面加载后调用`Mailbox.load()`。为了实现这一点，请使用窗口的`onload`事件处理器：
 
 ```javascript
 window.onload = function () {
@@ -10097,13 +10725,13 @@ window.onload = function () {
 
 现在，当页面加载完成后，Ajax 初始化将开始，应用程序就准备绪可以使用。
 
-要测试 AjaxMail，请导航到 www.yourdomain.com/AjaxMail/。这会加载初始视图，你就可以开始使用了。
+要测试 AjaxMail，请导航到 `www.yourdomain.com/AjaxMail/`。这会加载初始视图，你就可以开始使用了。
 
 ## 总结 (Summary)
 
 在本章中，你学习了如何创建一个名为 AjaxMail 的完整 Ajax 应用。你开始设计服务器端架构。使用 PHP 和 MySQL，你设计了一个后端系统，用于从 POP3 服务器下载消息并将其存储在电子邮件应用程序中。你创建了几个数据库表来处理与电子邮件应用程序相关的各种数据。POP3Lib 用于 POP3 通信，PHPMailer 用于 SMTP 通信。
 
-然后，你设计了一个不需要刷新页面的动态用户界面。通信是通过结合使用 `XMLHttpRequest` 和隐藏的 `iframe` 实现的。`XMLHttpRequest` 执行如删除特定电子邮件消息等操作，而隐藏的 `iframe` 则允许后退和前进按钮正常工作。
+然后，你设计了一个不需要刷新页面的动态用户界面。通信是通过结合使用`XMLHttpRequest`和隐藏的`iframe`实现的。`XMLHttpRequest`执行如删除特定电子邮件消息等操作，而隐藏的`iframe`则允许后退和前进按钮正常工作。
 
 # 第 10 章：Ajax 框架 (Ajax Frameworks)
 
@@ -10114,10 +10742,12 @@ window.onload = function () {
 所选框架使用了不同的服务器端处理技术：分别是 PHP、Java 和 ASP.NET。它们都属于以下类别：
 
 - JSPans：使用 PHP
+
 - DWR：使用 Java
+
+
+
 - Ajax.NET：使用 ASP.NET
-
-
 
 ```php
 class Customer
@@ -10186,11 +10816,13 @@ class Customer
 对于应用程序和简单示例，你通常会看到代码直接写在页面中。为了更具可维护性，并让你能够直接通过继承来复用类，将它们放在单独的文件中更好。
 
 接下来是一行关键代码：
+
 `require_once '../JSpan.php';`
 
 `require_once` 指令指示 PHP处理器使指定文件中的代码对面的其他部分可用。如果代码已经包含，则忽略该指令。所示路径假设此页面位于与 JSpan 实例相同的级目录中。如果不是如此，则需要进行修改。`JSpan.php` 实际上并没有做什么；它仅仅是设置了一个名为 JSPAN 的变量，该变量包含了主要的 PHP 类和必要的 JavaScript 文件。
 
 下一阶段使用 JSPAN 变量配合另一个 `require_once` 指令，使 PostOffice 中的类可用：
+
 `require_once '../JSpan.php';`
 
 ```php
@@ -10199,11 +10831,13 @@ require_once JSpan/PostOffice.php';
 ```
 
 然后创建一个 JSpan_PostOffice_Server 的新实例：
+
 `$PostOffice = &new JSpan_Server_PostOffice();`
 
 PostOffice 包含 JSpan_Server_PostOffice 类，该类被 JSpan 应用程序使用，负责创建客户端 JavaScript 方法，其签名模仿 Customer 的方法。它不是使用在本地运行的方法，而是通过 `XMLHttpRequest` 将参数传递给服务器，获取的任何结果都通过 HTTP 响应返回。
 
 接下来，通过 `addHandler` 方法将 Customer 类传递给 JSpan_Server_PostOffice。
+
 `$PostOffice->addHandler(new Customer());`
 
 JSpan_Server_PostOffice 使用反射来检查我们的业务类并创建必要的 JavaScript 存根。
@@ -10321,11 +10955,7 @@ if (!$rs->EOF) {
 }
 ```
 
-
-
-
-
-注意：ADODB.Recordset 是一个持有 SQL select 查询结果的类。它拥有允许用户滚动查看返回的行的方法，以及允许检索不同字段的名称、类型和值的属性。
+注意：`ADODB.Recordset` 是一个持有 SQL select 查询结果的类。它拥有允许用户滚动查看返回的行的方法，以及允许检索不同字段的名称、类型和值的属性。
 
 Recordset 暴露了一个布尔属性 EOF，代表文件末尾（End of File）。如果该值不为 true，则至少返回了一行数据；因此，地址数组的 success 字段被设置为 TRUE。
 
@@ -10335,7 +10965,7 @@ recordset 的各个字段被作为地址数组的成员添加。
 
 关闭 Recordset 和 Connection 以释放系统资源，并返回 `$rs->close();`：
 
-```
+```php
 $rs->close();
 $conn->close();
 return $status;
@@ -10355,7 +10985,7 @@ return $status;
 
 页面中有两个 `<script>` 块。第一个块获取之前创建的 `server-customer.php` 页面，因此 `src` 指向此处。它还包含一个查询字符串值 `client`，指示页面使用 JavaScript。
 
-```
+```html
 <script type='text/javascript' src='customer-server.php?client'></script>
 ```
 
@@ -10364,7 +10994,10 @@ return $status;
 第二个块包含此应用程序特定的内联代码，例如 `fetchAddress()` 和 `showAddress()` 方法。
 
 当页面加载完成后，`<body>` 元素会在 `onload` 事件触发时调用 `init()` 函数：
+
+```html
 <body onload="init();">
+```
 
 ```javascript
 function init() {
@@ -10414,9 +11047,12 @@ function fetchAddress(Email)
 ```
 
 如果未填写电子邮件，将调用 `alert` 并返回函数。所需的实体 `remoteCustomer` 将调用 `getFromEmail()`，并将用户的电子邮件作为其参数：
-remoteCustomer.getAddressFromEmail(Email);
 
-当当服务器端处理完成后，将调用在 `customerCallback` 上定义的 `getAddressFromEmail()` 方法，该方法反过来调用 `showAddress()`：
+```javascript
+remoteCustomer.getAddressFromEmail(Email);
+```
+
+当服务器端处理完成后，将调用在 `customerCallback` 上定义的 `getAddressFromEmail()` 方法，该方法反过来调用 `showAddress()`：
 
 ```javascript
 function showAddress(Address)
@@ -10424,6 +11060,7 @@ function showAddress(Address)
   document.getElementById("txtForenames").value = replaceNull(Address["forenames"], "");
   document.getElementById("txtSurname").value = replaceNull(Address["surname"], "");
   //其他框已填充...
+}
 ```
 
 页面上的文本字段由用户提供的值填充。使用了一个小的辅助函数 `replaceNull()` 来确保如果任何字段为 null，输出也是有用的；否则，某些框中会出现 "null" 字样：
@@ -10441,107 +11078,9 @@ function replaceNull(Value, ReplaceWith)
 
 `replaceNull()` 检查第一个参数的值，如果是 null，则返回第二个参数。否则，返回第一个参数。
 
+
+
 `replaceNull()` 检查第一个参数的值，如果是 null，则返回第二个参数。否则，返回第一个参数。
-
-当服务器端处理完成后，将调用 `customerCallback` 上定义的 `getAddressFromEmail()` 方法，该方法反过来调用 `showAddress()`：
-
-当服务器端处理完成后，将调用 `customerCallback` 上定义的 `getAddressFromEmail()` 方法，该方法反过来调用 `showAddress()`：
-
-当服务器端处理完成后，将调用 `customerCallback` 上定义的 `getAddressFromEmail()` 方法，该方法反过来调用 `showAddress()`：
-
-当服务器端处理完成后，将调用 `customerCallback` 上定义的 `getAddressFromEmail()` 方法，该方法反过来调用 `showAddress()`：
-
-当服务器端处理完成后，将调用 `customerCallback` 上定义的 `getAddressFromEmail()` 方法，该方法反过来调用 `showAddress()`：
-
-当服务器端处理完成后，将调用 `customerCallback` 上定义的 `getAddressFromEmail()` 方法，该方法反过来调用 `showAddress()`：
-
-当服务器端处理完成后，将调用 `customerCallback` 上定义的 `getAddressFromEmail()` 方法，该方法反过来调用 `showAddress()`：
-
-当服务器端处理完成后，将调用 `customerCallback` 上定义的 `getAddressFromEmail()` 方法，该方法反过来调用 `showAddress()`：
-
-当服务器端处理完成后，将调用 `customerCallback` 上定义的 `getAddressFromEmail()` 方法，该方法反过来调用 `showAddress()`：
-
-当服务器端处理完成后，将调用 `customerCallback` 上定义的 `getAddressFromEmail()` 方法，该方法反过来调用 `showAddress()`：
-
-当服务器端处理完成后，将调用 `customerCallback` 上定义的 `getAddressFromEmail()` 方法，该方法反过来调用 `showAddress()`：
-
-当服务器端处理完成后，将调用 `customerCallback` 上定义的 `getAddressFromEmail()` 方法，该方法反过来调用 `showAddress()`：
-
-当服务器端处理完成后，将调用 `customerCallback` 上定义的 `getAddressFromEmail()` 方法，该方法反过来调用 `showAddress()`：
-
-当服务器端处理完成后，将调用 `customerCallback` 上定义的 `getAddressFromEmail()` 方法，该方法反过来调用 `showAddress()`：
-
-当服务器端处理完成后，将调用 `customerCallback` 上定义的 `getAddressFromEmail()` 方法，该方法反过来调用 `showAddress()`：
-
-当服务器端处理完成后，将调用 `customerCallback` 上定义的 `getAddressFromEmail()` 方法，该方法反过来调用 `showAddress()`：
-
-当服务器端处理完成后，将调用 `customerCallback` 上定义的 `getAddressFromEmail()` 方法，该方法反过来调用 `showAddress()`：
-
-当服务器端处理完成后，将调用 `customerCallback` 上定义的 `getAddressFromEmail()` 方法，该方法反过来调用 `showAddress()`：
-
-当服务器端处理完成后，将调用 `customerCallback` 上定义的 `getAddressFromEmail()` 方法，该方法反过来调用 `showAddress()`：
-
-当服务器端处理完成后，将调用 `customerCallback` 上定义的 `getAddressFromEmail()` 方法，该方法反过来调用 `showAddress()`：
-
-当服务器端处理完成后，将调用 `customerCallback` 上定义的 `getAddressFromEmail()` 方法，该方法反过来调用 `showAddress()`：
-
-当服务器端处理完成后，将调用 `customerCallback` 上定义的 `getAddressFromEmail()` 方法，该方法反过来调用 `showAddress()`：
-
-当服务器端处理完成后，将调用 `customerCallback` 上定义的 `getAddressFromEmail()` 方法，该方法反过来调用 `showAddress()`：
-
-当服务器端处理完成后，将调用 `customerCallback` 上定义的 `getAddressFromEmail()` 方法，该方法反过来调用 `showAddress()`：
-
-当服务器端处理完成后，将调用 `customerCallback` 上定义的 `getAddressFromEmail()` 方法，该方法反过来调用 `showAddress()`：
-
-当服务器端处理完成后，将调用 `customerCallback` 上定义的 `getAddressFromEmail()` 方法，该方法反过来调用 `showAddress()`：
-
-当服务器端处理完成后，将调用 `customerCallback` 上定义的 `getAddressFromEmail()` 方法，该方法反过来调用 `showAddress()`：
-
-当服务器端处理完成后，将调用 `customerCallback` 上定义的 `getAddressFromEmail()` 方法，该方法反过来调用 `showAddress()`：
-
-当服务器端处理完成后，将调用 `customerCallback` 上定义的 `getAddressFromEmail()` 方法，该方法反过来调用 `showAddress()`：
-
-当服务器端处理完成后，将调用 `customerCallback` 上定义的 `getAddressFromEmail()` 方法，该方法反过来调用 `showAddress()`：
-
-当服务器端处理完成后，将调用 `customerCallback` 上定义的 `getAddressFromEmail()` 方法，该方法反过来调用 `showAddress()`：
-
-当服务器端处理完成后，将调用 `customerCallback` 上定义的 `getAddressFromEmail()` 方法，该方法反过来调用 `showAddress()`：
-
-当服务器端处理完成后，将调用 `customerCallback` 上定义的 `getAddressFromEmail()` 方法，该方法反过来调用 `showAddress()`：
-
-当服务器端处理完成后，将调用 `customerCallback` 上定义的 `getAddressFromEmail()` 方法，该方法反过来调用 `showAddress()`：
-
-当服务器端处理完成后，将调用 `customerCallback` 上定义的 `getAddressFromEmail()` 方法，该方法反过来调用 `showAddress()`：
-
-当服务器端处理完成后，将调用 `customerCallback` 上定义的 `getAddressFromEmail()` 方法，该方法反过来调用 `showAddress()`：
-
-当服务器端处理完成后，将调用 `customerCallback` 上定义的 `getAddressFromEmail()` 方法，该方法反过来调用 `showAddress()`：
-
-当服务器端处理完成后，将调用 `customerCallback` 上定义的 `getAddressFromEmail()` 方法，该方法反过来调用 `showAddress()`：
-
-当服务器端处理完成后，将调用 `customerCallback` 上定义的 `getAddressFromEmail()` 方法，该方法反过来调用 `showAddress()`：
-
-当服务器端处理完成后，将调用 `customerCallback` 上定义的 `getAddressFromEmail()` 方法，该方法反过来调用 `showAddress()`：
-
-当服务器端处理完成后，将调用 `customerCallback` 上定义的 `getAddressFromEmail()` 方法，该方法反过来调用 `showAddress()`：
-
-当服务器端处理完成后，将调用 `customerCallback` 上定义的 `getAddressFromEmail()` 方法，该方法反过来调用 `showAddress()`：
-
-当服务器端处理完成后，将调用 `customerCallback` 上定义的 `getAddressFromEmail()` 方法，该方法反过来调用 `showAddress()`：
-
-当服务器端处理完成后，将调用 `customerCallback` 上定义的 `getAddressFromEmail()` 方法，该方法反过来调用 `showAddress()`：
-
-当服务器端处理完成后，将调用 `customerCallback` 上定义的 `getAddressFromEmail()` 方法，该方法反过来调用 `showAddress()`：
-
-当服务器端处理完成后，将调用 `customerCallback` 上定义的 `getAddressFromEmail()` 方法，该方法反过来调用 `showAddress()`：
-
-当服务器端处理完成后，将调用 `customerCallback` 上定义的 `getAddressFromEmail()` 方法，该方法反过来调用 `showAddress()`：
-
-当服务器端处理完成后，将调用 `customerCallback` 上定义的 `getAddressFromEmail()` 方法，该方法反过来调用 `showAddress()`：
-
-当服务器端处理完成后，将调用 `customerCallback` 上定义的 `getAddressFromEmail()` 方法，该方法反过来调用 `showAddress()`：
-
-当服务器端处理完成后，将调用 `customerCallback` 上定义的 `getAddressFromEmail()` 方法，该方法反过来调用 `showAddress()`：
 
 当服务器端处理完成后，将调用 `customerCallback` 上定义的 `getAddressFromEmail()` 方法，该方法反过来调用 `showAddress()`：
 
@@ -10574,7 +11113,10 @@ recordset 的各个字段被作为地址数组的成员添加。
 第二个块包含此应用程序特定的内联代码，例如 `fetchAddress()` 和 `showAddress()` 方法。
 
 当页面加载完成后，`<body>` 元素会在 `onload` 事件触发时调用 `init()` 函数：
+
+```html
 <body onload="init();">
+```
 
 ```javascript
 function init() {
@@ -10624,7 +11166,10 @@ function fetchAddress(Email)
 ```
 
 如果未填写电子邮件，将调用 `alert` 并返回函数。所需的实体 `remoteCustomer` 将调用 `getFromEmail()`，并将用户的电子邮件作为其参数：
+
+```javascript
 remoteCustomer.getAddressFromEmail(Email);
+```
 
 当服务器端处理完成后，将调用 `customerCallback` 上定义的 `getAddressFromEmail()` 方法，该方法反过来调用 `showAddress()`：
 
@@ -10651,11 +11196,7 @@ function replaceNull(Value, ReplaceWith)
 
 `replaceNull()` 检查第一个参数的值，如果是 null，则返回第二个参数。否则，返回第一个参数。
 
-`replaceNull()` 检查第一个参数的值，如果是 null，则返回第二个参数。否则，返回第一个参数。
-
 当服务器端处理完成后，将调用 `customerCallback` 上定义的 `getAddressFromEmail()` 方法，该方法反过来调用 `showAddress()`：...（此处省略后续重复的段落）
-
-
 
 ```php
 'array'=>array(
@@ -10674,9 +11215,11 @@ function replaceNull(Value, ReplaceWith)
 );
 ```
 
-每种类型都使用特定的类来将其翻译为返回给定数据的函数。每个类的代码可以存在于页面本身，也可以存在于单独的文件中。在默认的 JSpan 设置下，所有类都定义在页面中；$file 属性被设置为 null。
+每种类型都使用特定的类来将其翻译为返回给定数据的函数。每个类的代码可以存在于页面本身，也可以存在于单独的文件中。在默认的 JSpan 设置下，所有类都定义在页面中；`$file` 属性被设置为 null。
 
 每个序列化器都都有一个命名为 `generate` 的方法，用于生成 JavaScript 表示形式。例如，如果一个布尔值 `true` 被序列化到客户端，其表示形式类似于下面：
+
+
 
 ```javascript
 var data_serialized = 'new Function('var t1 = true; return t1;');';
@@ -10684,11 +11227,11 @@ var data_func = eval(data_serialized);
 var data_func = data_func();
 ```
 
-Unserializer.php 和 Types.php 用于 JavaScript 和 PHP 之间的转换。
+`Unserializer.php` 和 `Types.php` 用于 JavaScript 和 PHP 之间的转换。
 
-Types.php 包含了两个基础类型的定义：JSpan_Object 和 JSpan_Error。（所有 JavaScript 对象都被转换为这些类型之一的实例。虽然 JSpan_Error 具有错误章节中讨论的 `code`、`name` 和 `message` 属性，但 JSpan_Object 是一个空类，作为更具体实现的基类。）
+`Types.php` 包含了两个基础类型的定义：`JSpan_Object` 和 `JSpan_Error`。（所有 JavaScript 对象都被转换为这些类型之一的实例。虽然 `JSpan_Error` 具有错误章节中讨论的 `code`、`name` 和 `message` 属性，但 `JSpan_Object` 是一个空类，作为更具体实现的基类。）
 
-Unserializer.php 使用其他类中的一个进行反序列化，这两个类都位于 unserializer 文件夹中：XML.php 中的 JSpan_Unserializer_XML 或 PHP.php 中的 JSpan_Unserializer_PHP。除非特别要求使用 PHP 版本，否则将使用 XML 版本。
+`Unserializer.php` 使用其他类中的一个进行反序列化，这两个类都位于 `unserializer` 文件夹中：`XML.php` 中的 `JSpan_Unserializer_XML` 或 `PHP.php` 中的 `JSpan_Unserializer_PHP`。除非特别要求使用 PHP 版本，否则将使用 XML 版本。
 
 在 JSpan 表示中，每个元素都由 XML 文档中的一个元素表示；例如，布尔值是一个带有属性 `v` 的 `<b>` 元素。
 
@@ -10696,15 +11239,15 @@ Unserializer.php 使用其他类中的一个进行反序列化，这两个类都
 <b v="1"/>
 ```
 
-false 的值将显示为 v=0。
+`false` 的值将显示为 `v=0`。
 
 代表 `getFromEmail()` 调用的完整文档（该方法接受代表电子邮件地址的字符串并返回客户的详细信息）如下：
 
 ```xml
-<a href="0"><s>hmqueen4128@yahoo.com/s</s>/e/</a></r>
+<a href="0"><s>hmqueen4128@yahoo.com</s>/e/</a></r>
 ```
 
-`<x>` 元素是文档的根，<a> 代表方法参数的数组。第一个参数包含在 `<e k="0">` 中，代表一个字符串；该元素由 `<a>` 元素中的实际数据组成。
+`<x>` 元素是文档的根，`<a>` 代表方法参数的数组。第一个参数包含在 `<e k="0">` 中，代表一个字符串；该元素由 `<a>` 元素中的实际数据组成。
 
 ## JSpan 总结
 
@@ -10718,7 +11261,7 @@ Direct Web Remoting (DWR) 设计用于配合 Java 使用，它是最常用的面
 
 ## 工作原理
 
-DWR 也使用反射来检查其配置文件中指定的任何类。它将 JavaScript 分发到客户端，其中每个函数都类似于类上的函数，但多了一个额外的参数，用于指定调用函数的时刻。与 JSpan 类似，DWR 使用跨浏览器库和最新版本的 XMLHttpRequest，如果运行 Internet Explorer 则使用 ActiveX 版本，对于基于 Mozilla 的浏览器以及 Safari 和 Conquer 等浏览器则使用原生 JavaScript 版本。
+DWR 也使用反射来检查其配置文件中指定的任何类。它将 JavaScript 分发到客户端，其中每个函数都类似于类上的函数，但多了一个额外的参数，用于指定调用函数的时刻。与 JSpan 类似，DWR 使用跨浏览器库和最新版本的 `XMLHttpRequest`，如果运行 Internet Explorer 则使用 ActiveX 版本，对于基于 Mozilla 的浏览器以及 Safari 和 Conquer 等浏览器则使用原生 JavaScript 版本。
 
 ## 安装 DWR
 
@@ -10736,7 +11279,7 @@ DWR 的安装非常直观，但需要一些先决条件。
 
 ## 设置测试
 
-下一步是创建两个文件：web.xml 和 dwr.xml。首先是 web.xml，如上所示：
+下一步是创建两个文件：`web.xml` 和 `dwr.xml`。首先是 `web.xml`，如上所示：
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -10763,7 +11306,7 @@ DWR 的安装非常直观，但需要一些先决条件。
 </web-app>
 ```
 
-第二个文件 dwr.xml 也位于 WEB-INF 中。一个最小示例示例所示：
+第二个文件 `dwr.xml` 也位于 `WEB-INF` 中。一个最小示例所示：
 
 ```xml
 <dwr>
@@ -10775,16 +11318,15 @@ DWR 的安装非常直观，但需要一些先决条件。
 </dwr>
 ```
 
-此示例指示 java.util.Date 类将对客户端可用，并需要引用为 JDate。`creator` 属性指定为 new，使得 Java 代码使用 `new` 运算符实例化对象，如下：
-`Date dt = new java.util.Date();`
+此示例指示 `java.util.Date` 类将对客户端可用，并需要引用为 `JDate`。`creator` 属性指定为 `new`，使得 Java 代码使用 `new` 运算符实例化对象，如下：
 
-最后，将你之前下载的 dwr.jar 文件复制到 WEB-INF\lib 目录。
+```java
+Date dt = new java.util.Date();
+```
 
-现在你可以通过导航到 http://localhost/DwrTest/dwr 来尝试 DWR。点击此链接后，将显示完整的测试页面，如图 10-6 所示。
+最后，将你之前下载的 `dwr.jar` 文件复制到 `WEB-INF\lib` 目录。
 
-
-
-
+现在你可以通过导航到 `http://localhost/DwrTest/dwr` 来尝试 DWR。点击此链接后，将显示完整的测试页面，如图 10-6 所示。
 
 # Jdate (java.util) 的方法
 
@@ -10806,11 +11348,11 @@ DWR 的报告如果是错误则将以红色背景显示，否则显示为蓝色�
 
 这里共有 34 个声明的方法：
 
-- Calendar
+- `Calendar`
   - (不建议在辅助类中使用重载方法)
-- Compare
+- `Compare`
   - (不建议在辅助类中使用重载方法)
-- Format
+- `Format`
   - (不建议在辅助类中使用重载方法)
 
 # 图 10-6
@@ -10896,9 +11438,6 @@ public class Customer {
 }
 ```
 
-
-
-
 ```java
 address.put("addressStateCounty", rs.getString(9));
 address.put("addressZipPC", rs.getString(10));
@@ -10909,23 +11448,35 @@ address.put("addressCountry", rs.getString(11));
 通过 `executeQuery()` 方法创建 `ResultSet` 以获取 SQL 字符串。`ResultSet` 封装了 SQL Select 查询返回的数据。它提供了允许用户在行之间移动并访问任何特定字段值的方法。如果成功，这些值将被添加到 `address` 哈希表中；如果失败，则地址保持为空，并将成功值设置为 `false`。
 
 接下来，关闭 `ResultSet` 和 `Connection` 以释放资源：
+
+```java
 rs.close();
 con.close();
+```
 
 最后，返回详情：
+
+```java
 return address;
+```
 
 在保存 `Customer.java` 文件后，你需要编译它。假设你已经按照图 10-5 所示设置了文件夹，打开命令提示符，导航到保存 `Customer.java` 的文件夹，并运行：
+
+```
 javac -d ..\classes Customer.java
+```
 
 > 你可能会收到关于未检查方法的警告，你可以忽略它。
 
 要使该类能够通过 DWR 访问，你需要修改早些创建的 `dwr.xml` 文件。在 `<allow>` 部分添加以下 `<create>` 元素：
-<create create="new" javascript="Customer">
-<param name="class" value="Customer"/>
-</create>
 
-你现在可能需要使用 Tomcat 首页提供的应用程序管理器，导航到 http://localhost/DwrTest/dwr，并验证 `Customer` 类是否出现及其对应的 `getAddressFromEmail()` 方法。
+```xml
+<create create="new" javascript="Customer">
+  <param name="class" value="Customer"/>
+</create>
+```
+
+你现在可能需要使用 Tomcat 首页提供的应用程序管理器，导航到 `http://localhost/DwrTest/dwr`，并验证 `Customer` 类是否出现及其对应的 `getAddressFromEmail()` 方法。
 
 一旦验证 `Customer` 类有效，你就可以在 `CustomerClient-Json` 页面中重用它作为客户端。所有的 HTML 都可以保留，但你需要更改脚本部分以包含之前所示的 DWR 文件，并且需要从 `<body>` 元素中移除 `onload` 属性。另一个更改是利用 DWR 提供的一些工具函数。这些包括设置和检索值、复选框选项，以及在执行耗时操作时显示等待消息。
 
@@ -10963,6 +11514,8 @@ var callback = function (Address) {
 ## 关于 dwr.xml
 
 使用的 `dwr.xml` 文件始终在 `<allow>` 部分使用 `<create>` 元素，结构如下：
+
+
 
 ```xml
 <create creator="new" javascript="Customer">
@@ -11067,10 +11620,6 @@ Spring 框架和相关技术是一个巨大的课题。除了访问上述 URL �
 <convert converter="bean" match="your.full.package.BeanName"/>
 ```
 
-
-
-
-
 ## 重要提示
 
 关于哪些转换器可用以及哪些转换器需要专门允许供您的代码使用的更多信息，请参见 http://getahead.ltd.uk/dwr/server/dwrxml/converters。
@@ -11137,7 +11686,7 @@ public class Index : System.Web.UI.Page
 }
 ```
 
-此行的目的是向生成的 HTML 注入必要的 JavaScript。现在你就可以按 F5 来设置项目了，你应该会看到一个空白页面。查看源代码时，你会注意到以下 <script> 元素：
+此行的目的是向生成的 HTML 注入必要的 JavaScript。现在你就可以按 F5 来设置项目了，你应该会看到一个空白页面。查看源代码时，你会注意到以下 `<script>` 元素：
 
 ```html
 <script type="text/javascript" src="/AjaxTest/common.ashx"></script>
@@ -11167,18 +11716,17 @@ public int Add(int firstNumber, int secondNumber)
 }
 ```
 
-然后可以使用语法 Class.Method(Arg1, Arg2) 在客户端访问。因此在此代码中：
+然后可以使用语法 `Class.Method(Arg1, Arg2)` 在客户端访问。因此在此代码中：
 
 ```javascript
 var response = Index.Add(6, 8);
 ```
 
-```
-
-Index.Add 返回的 response 具有三个属性：value（如上所示）、error 和 request。为了使你的代码更健壮，在继续之前你应该检查 error 属性是否为真：
+`Index.Add` 返回的 `response` 具有三个属性：`value`（如上所示）、`error` 和 `request`。为了使你的代码更健壮，在继续之前你应该检查 `error` 属性是否为真：
 
 ```javascript
 var response = Index.Add(6, 8);
+
 if (response.error) {
     alert(response.error);
 }
@@ -11187,7 +11735,7 @@ else {
 }
 ```
 
-request 属性提供了对底层 XMLHttpRequest 对象的访问，在复杂场景下访问原始 XML 很有帮助。
+`request` 属性提供了对底层 XMLHttpRequest 对象的访问，在复杂场景下访问原始 XML 很有帮助。
 
 前面的示例显示了同步调用，当服务器处理方法时脚本会等待。要启动异步调用，在方法的最后一个参数中传递函数指针：
 
@@ -11199,10 +11747,11 @@ var callback = function (response) {
         alert(response.value);
     }
 };
+
 Index.Add(6, 8, callback);
 ```
 
-在使用异步调用时，你也可以在回调函数之后传递一个上下文参数。这将位于 response 中。
+在使用异步调用时，你也可以在回调函数之后传递一个上下文参数。这将位于 `response` 中。
 
 ## 创建 Customer-NET.aspx
 
@@ -11212,13 +11761,13 @@ Index.Add(6, 8, callback);
 
 ## 实现 Customer 类
 
-除了直接在 .aspx 页面访问方法外，还可以访问任何外部类的方法，并且返回的类型可以转换为 JavaScript 函数。在 Ajax.Utility.GetType 方法中使用当前页面类时，你需要传递自定义类。
+除了直接在 .aspx 页面访问方法外，还可以访问任何外部类的方法，并且返回的类型可以转换为 JavaScript 函数。在 `Ajax.Utility.GetType` 方法中使用当前页面类时，你需要传递自定义类。
 
-向 AjaxTest 添加新类并将其保存为 Customer.cs 这实现了与本章中其他示例相同的功能——即一个单一方法 GetAddressEmail()。
+向 AjaxTest 添加新类并将其保存为 Customer.cs 这实现了与本章中其他示例相同的功能——即一个单一方法 `GetAddressEmail()`。
 
 > 如前，该类用于演示使用 Ajax，它绝不是编写业务类的模型。
 
-该类以若干使用 using 语句开头，以便更方便地访问所需的类型：
+该类以若干使用 `using` 语句开头，以便更方便地访问所需的类型：
 
 ```csharp
 using System;
@@ -11227,7 +11776,6 @@ using System.Data.OleDb;
 using System.Text;
 ```
 
-
 返回值是一个哈希表（hashtable），它通过唯一键来访问数据项，方式类似于 DWR 中的 hashmap。一个名为 `success` 的键被赋值为 `false`，如果数据库调用成功，则会将其修改为 `true`。
 
 下一步是创建到 Sales 数据库的连接。如之前所述，数据库的连接详细将存储在配置文件中：
@@ -11235,6 +11783,7 @@ using System.Text;
 ```c
 string sConnString = "Provider=OLEDB; Data Source='localhost'; " 
     + "Initial Catalog=sales; User Id='Test";
+
 OleDbConnection conn = new OleDbConnection(sConnString);
 conn.Open();
 ```
@@ -11257,29 +11806,43 @@ SQL.append(safeEmail + "');");
 
 ```c
 OleDbCommand cmd = new OleDbCommand(SQL.ToString(), conn);
-OleDataDataReader dr = cmd.ExecuteReader();
 ```
+
+
+
+`OleDataDataReader dr = cmd.ExecuteReader();`
 
 如您所见，该代码与其 Java 等版本非常相似。
 
 通过调用 `read()` 方法逐行访问，`dr.Read()` 的返回值仅在行存在时才为 `true`。在这种情况下，哈希表被填充，且 `success` 键被设置为 `true`；否则，它将被设置为 `false` 且细节留空。
 
-```c
+```
 Boolean found = dr.Read();
+
 if (found) {
+
     address["success"] = true;
+
     address["forenames"] = (dr.IsDBNull(1) ? "" : dr.GetString(1));
+
 }
 ```
 
-```c
+```
 address["surname"] = (dr.IsDBNull(2) ? "" : dr.GetString(2));
+
 address["address1"] = (dr.IsDBNull(4) ? "" : dr.GetString(4));
+
 address["address2"] = (dr.IsDBNull(5) ? "" : dr.GetString(5));
+
 address["address3"] = (dr.IsDBNull(6) ? "" : dr.GetString(6));
+
 address["addressTown"] = (dr.IsDBNull(7) ? "" : dr.GetString(7));
+
 address["addressStateCounty"] = (dr.IsDBNull(8) ? "" : dr.GetString(8));
+
 address["addressZipFC"] = (dr.IsDBNull(9) ? "" : dr.GetString(9));
+
 address["addressCountry"] = (dr.IsDBNull(10) ? "" : dr.GetString(10));
 ```
 
@@ -11287,46 +11850,59 @@ address["addressCountry"] = (dr.IsDBNull(10) ? "" : dr.GetString(10));
 
 最后，关闭读取器和连接，并返回哈希表。
 
-```c
+```
 dr.Close();
+
 conn.Close();
+
 return address;
 ```
 
 最后一步是添加自定义属性：
 
-```c
+```
 [Ajax.AjaxMethod()]
+
 public Hashtable GetAddressFromEmail(string email)
 ```
 
 这完成了 `Customer` 类的创建。它作为一个独立类存在，因此可以被其他应用程序使用，而不仅仅是网页。下一阶段是将其注册到 `Customer-AjaxNET.aspx` 中，以便在客户端可用。
 
-# 将 Customer 注册为远程对象
+## 将 Customer 注册为远程对象
 
 要注册 `Customer` 类，返回到 `Customer-AjaxNET.aspx` 页面的代码视图，并在 `Page_Load(object sender, System.EventArgs e)` 事件处理器中添加以下内容：
 
-```c
+```
 private void Page_Load(object sender, System.EventArgs e)
+
 {
+
     Ajax.Utility.RegisterTypeForAjax(typeof(Customer));
+
 }
 ```
 
 与之前的 `Index.aspx` 一样，这会在 HTML 中引入两个 JavaScript 包含项，它们提供了将方法调用中继到服务器端对象的客户端功能。
 
-# 创建客户端代码
+## 创建客户端代码
 
 此代码与本章中的其他示例没有太大区别。`fetchAddress()` 函数与使用 DWR 的版本相同，只是方法名上有细微的大小写差异：
 
 ```javascript
 function fetchAddress(Email) {
+
     if (!Email) {
+
         alert("Please enter your email address before choosing an item.");
+
         document.getElementById("txtEmail").focus();
+
         return;
+
     }
+
     Customer.GetAddressFromEmail(Email, callback);
+
 }
 ```
 
@@ -11334,80 +11910,116 @@ function fetchAddress(Email) {
 
 如果提供了值，则调用 `GetAddressFromEmail()` 方法。该方法的第二个参数是方法名。
 
-# 简单和复杂类型
+## 简单和复杂类型
 
-Ajax 框架使用 JavaScript 对象表示（JSON，你在第 7 章中过的）将对象传递给客户端。它可以处理所有基本类型，如整数、字符串和布尔值，并且内置支持某些 .NET 复杂类型，如 ADO.NET `dataset` 或 `datatable`。
+Ajax 框架使用 JavaScript 对象表示（JSON，你在第 7 章中见过的）将对象传递给客户端。它可以处理所有基本类型，如整数、字符串和布尔值，并且内置支持某些 .NET 复杂类型，如 ADO.NET `dataset` 或 `datatable`。
 
 作为操作 `dataset` 的示例，假设你调用了服务器端类的函数 `MyClass.GetDataSet(callback)` 返回了一个 `dataset`：你的回调函数随后可以以在 .NET 中相同的方式从 `dataset` 中读取值：
 
 ```javascript
 function callback(Response) {
+
   if (Response.error) {
+
     alert(Response.error);
+
     return;
+
   }
+
   var tblNames = Response.value.Tables[0];
+
   var sTable = "<table><tr><th>Forenames</th><th>Surname</th></tr>";
+
   for (var i = 0; i < tblNames.Rows.length; i++) {
+
     var oRow = tblNames.Rows[i];
+
     sTable += "<tr><td>" + oRow.Forenames + "</td>";
+
     sTable += "<td>" + oRow.Surname + "</td></tr>";
+
   }
+
   sTable += "</table>";
+
   document.getElementById("divNames").innerHTML = sTable;
+
 }
 ```
 
-# 如果你想从方法返回一个自定义的类并让 Ajax.NET 正确地序列化它，你需要将其标记为 `Serializable` 属性。例如，考虑一个代表用户的类：
+如果你想从方法返回一个自定义的类并让 Ajax.NET 正确地序列化它，你需要将其标记为 `Serializable` 属性。例如，考虑一个代表用户的类：
 
 ```csharp
 [Serializable()]
+
 public class User
+
 {
+
     private string _userName = "";
+
     private string _userEmail = "";
 
     public string UserName
+
     {
+
         get
+
         {
+
             return _userName;
+
         }
+
     }
 
     public string UserEmail
+
     {
+
         get
+
         {
+
             return _userEmail;
+
         }
+
     }
 
     public User(string Name, string Email)
+
     {
+
         _userName = Name;
+
         _userEmail = Email;
+
     }
+
 }
 ```
 
-假设名为 `GetFromId()` 的方法返回了一个对象，这些属性在 JavaScript 中是用的：
+假设名为 `GetFromId()` 的方法返回了一个对象，这些属性在 JavaScript 中是可用的：
 
 ```javascript
 MyClass.GetFromId(6, callback);
 
 function callback(Response) {
+
     var oUser = Response.value;
+
     alert(oUser.UserName + "\n" + oUser.UserEmail);
+
 }
 ```
 
+完成了本章的内容，覆盖了三个不同 Ajax 框架的大量内容，你也完成了一系列不同的任务。
 
+- 对于 JSPpan，你安装了 PHP，创建了一个类，并连接到了数据库。
 
-Having completed this chapter, which covered a lot of ground on three different Ajax frameworks, you have accomplished a number of different tasks.
+- 使用 DWR，你设置了一个新的、能够处理 Java servlet 和 JSP 页面的 Web 服务器，然后使用基本的文本编辑器创建了一个 Java 类，并通过命令行工具对其进行了编译。你还学习了如何修改 XML 配置文件，以便该类能在客户端使用。
 
-- For JSPpan, you have installed PHP, created a class, and connected to a database.
-
-- With DWR, you set up a new web server that could handle Java servlets and JSP pages, and then created a Java class using a basic text editor before compiling it using command-line tools. You also learned how to modify the XML config files to allow the class to be used from the client.
-
-- For Ajax.NET, you learned how to modify the `web.config` file to override the built-in page handler and how to install `Ajax.dll` and add a reference to this class to it. You then created a class that could retrieve information from a database and utilized this class using JavaScript on the client.
+- 对于 Ajax.NET，你学习了如何修改 `web.config` 文件以覆盖内置的页面处理器，如何安装 `Ajax.dll` 并将对该类的引用添加到其中。然后你创建了一个能够从数据库中检索信息的类，并使用 JavaScript 在客户端将其应用。

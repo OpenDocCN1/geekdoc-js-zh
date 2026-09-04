@@ -1,19 +1,8 @@
+
 # JavaScript 数据结构与算法学习 - 第二版
 
+## 目录
 
-
-![](img/Image00116.jpg)
-
-
-* * *
-
-# 目录
-
-
-
-
-
-# 学习 JavaScript 数据结构与算法 - 第二版
 - 致谢
 - 关于作者
 - 关于审核员
@@ -21,7 +10,8 @@
 - 电子书、折扣优惠及更多
 - 为什么订阅？
 
-# 前言
+## 前言
+
 - 本书涵盖的内容
 - 学习本书需要哪些准备工作
 - 本书的读者群体
@@ -34,284 +24,469 @@
 - 反盗版声明
 - 问题
 
-# 1. JavaScript——快速概
-## JavaScript 数据结构与算法
-### 环境搭建
-#### 使用 JavaScript 的最小化配置
-#### 使用 Web 服务器 (XAMPP)
-#### 核心是 JavaScript (Node.js)
-### JavaScript 基础
-#### 变量
-##### 变量作用域
-##### 运算符
-##### 真值与假值 (Truthy and falsy)
-##### 等号运算符的功能（`==` 和 `===`）
-#### 控制结构
-#### 条件判断语句
-#### 循环
-#### 函数
-#### JavaScript 中的面向对象编程
-#### 调试与工具
-### 引入 ECMAScript
-#### ECMAScript 6 和 ECMAScript 7
-#### 兼容性表
-#### 使用 Babel.js
-### ECMAScript 6 功能
-#### 使用 `let` 代替 `var` 声明变量
-#### `let` 的变量作用域
-#### 常量
-#### 模板字符串
-#### 箭头函数
-#### 函数的默认参数值
-#### 声明扩展运算符和剩余参数 (rest operators)
-#### 增强的对象属性
-#### 使用类面向对象编程
-#### 继承
-#### 使用 getter (get) 和 setter (set)
-#### 其他功能
-### ECMAScript 7 功能
+## 1. JavaScript——快速概述
+
+### JavaScript 数据结构与算法
+
+#### 环境搭建
+
+##### 使用 JavaScript 的最小化配置
+
+##### 使用 Web 服务器 (XAMPP)
+
+##### 核心是 JavaScript (Node.js)
+
+#### JavaScript 基础
+
+##### 变量
+
+###### 变量作用域
+
+###### 运算符
+
+###### 真值与假值 (Truthy and falsy)
+
+###### 等号运算符的功能（`==` 和 `===`）
+
+##### 控制结构
+
+##### 条件判断语句
+
+##### 循环
+
+##### 函数
+
+##### JavaScript 中的面向对象编程
+
+##### 调试与工具
+
+#### 引入 ECMAScript
+
+##### ECMAScript 6 和 ECMAScript 7
+
+##### 兼容性表
+
+##### 使用 Babel.js
+
+#### ECMAScript 6 功能
+
+##### 使用 `let` 代替 `var` 声明变量
+
+##### `let` 的变量作用域
+
+##### 常量
+
+##### 模板字符串
+
+##### 箭头函数
+
+##### 函数的默认参数值
+
+##### 声明扩展运算符和剩余参数 (rest operators)
+
+##### 增强的对象属性
+
+##### 使用类面向对象编程
+
+##### 继承
+
+##### 使用 getter (get) 和 setter (set)
+
+##### 其他功能
+
+#### ECMAScript 7 功能
+
 #### ES6 和 ES7 的向后兼容
+
 #### 总结
 
-# 2. 数组
-## 为什么要使用数组？
+## 2. 数组
+
+### 为什么要使用数组？
+
 ### 创建与初始化数组
+
 #### 访问元素与遍历数组
+
 #### 添加元素
+
 #### 使用 `push` 方法
+
 #### 在第一个位置插入元素
+
 #### 使用 `unshift` 方法
+
 #### 移除元素
+
 #### 从第一个位置删除元素
+
 #### 使用 `shift` 方法
+
 #### 在特定位置添加和删除元素
+
 #### 二维数组与多维数组
+
 #### 遍历二维数组的元素
+
 #### 多维数组
+
 #### 数组方法参考
+
 #### 合并多个数组
+
 #### 迭代器函数
+
 #### 使用 `every` 方法遍历
+
 #### 使用 `some` 方法遍历
+
 #### 使用 `forEach` 遍历
+
 #### 使用 `map` 和 `filter`
+
 #### 使用 `reduce` 方法
+
 ### ECMAScript 6 和新的 `Array` 功能
+
 #### 使用箭头函数配合 `forEach` 遍历
+
 #### 使用 `for...of` 循环遍历
+
 #### 使用新的 ES6 迭代器 (`iterator`)
+
 #### 数组项 (entries)、键 (keys) 和值 (values)
+
 #### 使用 `from` 方法
+
 #### 使用 `Array.of`
+
 #### 使用 `fill` 方法
+
 #### 使用 `copyWithin` 方法
+
 ### 元素排序
+
 #### 自定义排序
+
 #### 字符串排序
+
 ### 查找
+
 #### ECMAScript 6 - `find` 和 `findIndex` 方法
+
 #### ECMAScript 7 - 使用 `includes` 方法
+
 #### 将数组转换为字符串
+
 ### `TypedArray` 类
+
 #### 总结
 
-# 3. 栈
-## 栈数据结构
-### 创建栈
+## 3. 栈
+
+### 栈数据结构
+
+#### 创建栈
+
 #### 向栈推送元素
+
 #### 从栈弹出元素
+
 #### 查看栈顶元素 (Peeking)
+
 #### 验证栈是否为空
+
 #### 清空并打印栈元素
+
 #### 使用 `Stack` 类
+
 #### EcmaScript 6 和 `Stack` 类
+
 #### 使用 ES6 语法声明 `Stack` 类
+
 #### 带有作用域 `Symbols` 的 ES6 类
+
 #### 使用 `WeakMap` 的 ES6 类
+
 ### 使用栈解决问题
+
 #### 十进制转二进制
+
 #### 进制转换算法
+
 #### 总结
 
-# 4. 队列
-## 队列数据结构
-### 创建队列
+## 4. 队列
+
+### 队列数据结构
+
+#### 创建队列
+
 #### 向队列入队元素 (Enqueue)
+
 #### 从队列出队元素 (Dequeue)
+
 #### 查看队列头部元素 (Peeking)
+
 #### 清空并打印队列元素
+
 #### 使用 `Stack` 类
-#### 队列 
-#### 
-` 
-#### #### 结构
-#### 队列 
-#### #### 
-#### #### 总结
+
+#### 队列结构
+
 #### 总结
 
-# 5. 链表
-## 链表结构
+## 5. 链表
+
+### 链表结构
+
 #### 单向链表
-#### 创建链链表
+
+#### 创建链表
+
 #### 在链表末尾添加元素
+
 #### 删除链表元素
+
 #### 链表遍历
+
 #### 在指定位置插入元素
+
 #### 双向链表
+
 #### 创建双向链表
+
 #### 遍历双向链表
+
 #### 反转双向链表
+
 #### 总结
 
-# 6. 集合
-## 集合
+## 6. 集合
+
+### 集合
+
 #### 集合的概念
+
 #### 创建集合
+
 #### 添加元素
+
 #### 删除元素
+
 #### 查找元素是否存在
+
 #### 遍历集合
+
 #### 集合操作
+
 #### 取并集
+
 #### 交集
+
 #### 差集
+
 #### 总结
 
-# 7. 字典与哈希表
-## 字典
+## 7. 字典与哈希表
+
+### 字典
+
 #### 字典的概念
+
 #### 创建字典
+
 #### 添加元素
+
 #### 删除元素
+
 #### 查找元素
+
 #### 遍历字典
-#### 哈希表
+
+### 哈希表
+
 #### 哈希表的概念
+
 #### 创建哈希表
+
 #### 处理冲突
-#### 链链法 (Chaining)
-#### 线性寻址法 (Linear probing)
+
+#### 链地址法 (Chaining)
+
+#### 线性探测法 (Linear probing)
+
 #### `Map` 和 `WeakSet`
+
 #### 总结
 
-# 8. 树
-## 树数据结构
+## 8. 树
+
+### 树数据结构
+
 #### 树的术语
+
 #### 二叉搜索树
+
 #### 创建二叉搜索树
+
 #### 树遍历
+
 #### 中序遍历
+
 #### 前序遍历
+
 #### 后序遍历
+
 #### 在树中查找
+
 #### 查找最小值和最大值
+
 #### 查找特定值
+
 #### 删除节点
+
 #### 删除叶子节点
+
 #### 删除具有左右子节点的节点
+
 #### 删除具有两个节点的节点
+
 #### 自平衡树 (AVL 树)
+
 #### 创建 AVL 树
+
 #### 计算平衡因子
+
 #### AVL 旋转
+
 #### 总结
 
-# 9. 图
-## 图的术语
+## 9. 图
+
+### 图的术语
+
 #### 有向与无向图
+
 #### 图表示
+
 #### 邻接矩阵
+
 #### 邻接列表
+
 #### 关联矩阵
+
 #### 创建 `Graph` 类
+
 #### 图遍历
+
 #### 广度优先搜索 (BFS)
+
 #### 使用 BFS 寻找最短路径
+
 #### 深度优先搜索 (DFS)
-####  DFS 算法
+
+#### DFS 算法
+
 #### 使用 DFS 进行拓扑排序
+
 #### 最短路径算法
+
 #### Dijkstra 算法
+
 #### Floyd-Warshall 算法
+
 #### 最小生成树 (MST)
+
 #### Prim 算法
+
 #### Kruskal 算法
+
 #### 总结
 
-# 10. 排序与搜索算法
-## 排序算法
+## 10. 排序与搜索算法
+
+### 排序算法
+
 #### 冒泡排序
+
 #### 选择排序
+
 #### 插入排序
+
 #### 合并排序
+
 #### 快速排序
+
 #### 堆排序
+
 #### 计数排序、桶排序和基数排序
-## 搜索
+
+### 搜索
+
 #### 线性搜索
+
 #### 二分搜索
+
 #### 总结
 
-# 11. 算法模式
-## 递归
+## 11. 算法模式
+
+### 递归
+
 #### JavaScript 栈大小限制
+
 #### 斐波那契数列
+
 #### 动态规划
+
 #### 最硬币问题
+
 #### 背包问题
+
 #### 函数式编程
+
 #### 函数式编程与命令式编程
+
 #### ES2015 与函数式编程
+
 #### JavaScript 函数式工具箱 - map, filter, and reduce
+
 #### JavaScript 函数式库与数据结构
+
 #### 总结
 
-# 12. 算法复杂度
-## O 表示法
+## 12. 算法复杂度
+
+### O 表示法
+
 #### 理解 O 表示法
+
 #### O(1)
+
 #### O(n)
+
 #### O(n2)
+
 #### 比较复杂度
+
 #### 数据结构
+
 #### 图
+
 #### 排序算法
+
 #### 搜索算法
+
 #### 引入 NP 完全性理论
+
 #### 不可能的问题与启发式算法
+
 #### 算法之趣
+
 #### 总结
 
-
-
-
-# 学习 JavaScript 数据结构与算法 - 第二版
-
-# 学习 JavaScript 数据结构与算法 - 第二版
-
-版权 © 2016 Packt Publishing
-
-保留所有权利。未经出版者事先书面许可，本书的任何部分均不得复制、存储在检索系统中或以任何形式或通过任何手段传输，但批判性文章或评论中的嵌入简短引用除外。
-
-在准备本书时，我们已尽一切努力确保所呈现信息的准确性。然而，书中包含的信息按原样销售，不提供任何明示或暗示的保证。作者、Packt Publishing 及其经销商和分销商对于因本书直接或间接引起或声称引起的任何损害均不承担责任。
-
-Packt Publishing 努力通过正确使用大写字母提供书中提到的所有公司和产品的注册商标信息。然而，Packt Publishing 无法保证这些信息的准确性。
-
-首次出版：2014 年 10 月
-
-第二版：2016 年 6 月
-
-制作参考号：1160616
-
-Packt Publishing Ltd 出版
-Livery Place
-35 Livery Street
-Birmingham
-B3 2PB, UK.
-
-ISBN 978-1-78528-549-3
-[www.packtpub.com](http://www.packtpub.com)
+---
 
 ## 致谢
 
@@ -329,15 +504,15 @@ Loiane Groner 在企业应用开发方面拥有超过 10 多年的经验。她�
 
 她对技术充满热情，并致力于通过她的博客 [`loiane.com`](http://loiane.com)、担任 IT 会议的客座演讲师以及大学拓展课程的客座教授，向软件开发社区传播知识。
 
-在大学期间，她曾担任过两年算法、数据结构和计算理论课程的助。她代表大学参加了 ACM 国际大学生程序设计 - 巴西决赛（南美赛区），并担任过 SBC（巴西计算学会）的学生代表。她在大四时因位计算机科学系 GPA 位列前三的学生之一而获得了优异奖，并以优等成绩毕业。
+在大学期间，她曾担任过两年算法、数据结构和计算理论课程的助教。她代表大学参加了 ACM 国际大学生程序设计竞赛 - 巴西决赛（南美赛区），并担任过 SBC（巴西计算学会）的学生代表。她在大四时因在计算机科学系 GPA 位列前三的学生之一而获得了优异奖，并以优等成绩毕业。
 
-Loiane 还是书籍 `Ext JS 4 First Look`、`Mastering Ext JS`、`Mastering Ext JS - Second Edition`、`Sencha Architect App Development`、`Learning JavaScript Data Structures and Algorithms` 以及 `JavaScript Regular Expression` 的作者，这些书籍均由 Packt Publishing 出。
+Loiane 还是书籍 `Ext JS 4 First Look`、`Mastering Ext JS`、`Mastering Ext JS - Second Edition`、`Sencha Architect App Development`、`Learning JavaScript Data Structures and Algorithms` 以及 `JavaScript Regular Expression` 的作者，这些书籍均由 Packt Publishing 出版。
 
-如果你想与 Loiane 联系，可以在 Facebook ([`www.facebook.com/loianegroner`](https://www.facebook.com/loianegroner))、Twitter (`@ianeiane`) 上的 Github ([`github.com/loiane`](https://github.com/loiane)) 找到她。
+如果你想与 Loiane 联系，可以在 Facebook ([`www.facebook.com/loianegroner`](https://www.facebook.com/loianegroner))、Twitter (`@loianegroner`) 上的 Github ([`github.com/loiane`](https://github.com/loiane)) 找到她。
 
-*我要感谢我的父母多年来我提供的教育、指导和建议，帮助我成为一个更好的人和专业人士。特别感谢我的丈夫，感谢他的耐心和支持，并鼓励我继续做我热爱的的事情。感谢 Packt 给我这样一个极佳的机会，让我编写关于我真正热爱的话题的书籍！感谢参与书籍创作、审核和出版过程的所有人员！*
-
-*我还要感谢本书以及我写的其他书籍读者的支持和反馈。你们的反馈对我作为一名作者和专业人士的进步非常宝贵。非常感谢！*
+> 我要感谢我的父母多年来为我提供的教育、指导和建议，帮助我成为一个更好的人和专业人士。特别感谢我的丈夫，感谢他的耐心和支持，并鼓励我继续做我热爱的事情。感谢 Packt 给我这样一个极佳的机会，让我编写关于我真正热爱的话题的书籍！感谢参与书籍创作、审核和出版过程的所有人员！
+>
+> 我还要感谢本书以及我写的其他书籍读者的支持和反馈。你们的反馈对我作为一名作者和专业人士的进步非常宝贵。非常感谢！
 
 ## 关于审核员
 
@@ -345,17 +520,17 @@ Tessa B. Silver 拥有平面设计和传统插画背景。多年来，她转变�
 
 除了通过 hyper³ media LLC（读音为 hyper-cube-media）进行自由咨询和技术写作外，Tessa 目前是 Capella 大学的前端移动应用和 Web 开发者。可以通过 Twitter 上的 `@tessaract` 以及她的个人网站 [`tessaract.info`](http://tessaract.info) 找到并联系她。
 
-Tessa 编写了其他五本 Packt 出版，包括 `WordPress Theme Design` 和 `WordPress 3.0 jQuery`。她目前正在为 Packt 编写 `Mastering Reactive JavaScript Programming with Bacon.js and RxJS`。
+Tessa 编写了其他五本 Packt 出版书籍，包括 `WordPress Theme Design` 和 `WordPress 3.0 jQuery`。她目前正在为 Packt 编写 `Mastering Reactive JavaScript Programming with Bacon.js and RxJS`。
 
-*我非常感谢让这本书成为 Packt 团队。特别感谢 Loiane Groner 编写了这样一本精彩的书，揭示了数据结构和算法的逻辑和秘密，让我们（终于！）完全理解。我还要感谢 Smeet Thakkar 本书的采购编辑，最后，我想向 Bijal Patel 表示额外诚挚的感谢，感谢她完美的安排。*
+> 我非常感谢让这本书成为可能的 Packt 团队。特别感谢 Loiane Groner 编写了这样一本精彩的书，揭示了数据结构和算法的逻辑和秘密，让我们（终于！）完全理解。我还要感谢 Smeet Thakkar 本书的采购编辑，最后，我想向 Bijal Patel 表示额外诚挚的感谢，感谢她完美的安排。
 
-# www.packtpub.com
+## www.packtpub.com
 
-## 电子书、优惠活动及更多
+### 电子书、优惠活动及更多
 
-你知道 Packt 为每本书都提供电子书版本吗，并提供 PDF 和 ePub 文件？你可以在 [www.packtpub.com](http://www.packtpub.com) 升级电子书版本，作为纸质书客户，你有权获得电子版的折扣。请联系 customercare@packtpub.com 了解详情。
+你知道 Packt 为每本书都提供电子书版本吗，并提供 PDF 和 ePub 文件？你可以在 [`www.packtpub.com`](http://www.packtpub.com) 升级电子书版本，作为纸质书客户，你有权获得电子版的折扣。请联系 `customercare@packtpub.com` 了解详情。
 
-在 [www.packtpub.com](http://www.packtpub.com)，你还可以阅读免费的技术文章，订阅一系列免费的新通讯，并接收 Packt 书籍的专属折扣和优惠。
+在 [`www.packtpub.com`](http://www.packtpub.com)，你还可以阅读免费的技术文章，订阅一系列免费的新通讯，并接收 Packt 书籍的专属折扣和优惠。
 
 ![电子书、优惠活动及更多](img/Image0000.jpg)
 
@@ -363,28 +538,25 @@ Tessa 编写了其他五本 Packt 出版，包括 `WordPress Theme Design` 和 `
 
 你需要 IT 问题的快速解决方案？PacktLib 是 Packt 的在线数字图书馆。在这里，你可以搜索、访问并阅读 Packt 的全部书籍。
 
-### 为什么要订阅？
+#### 为什么要订阅？
 
 * 全面搜索 Packt 出版书籍
 * 复制粘贴、打印和书签内容
 * 按需提供并通过网络浏览器访问
 
-# 前言
+## 前言
 
-JavaScript 是目前最流行的编程语言之一。由于浏览器原生支持 JavaScript 而无需从中安装任何插件，它被称为互联网语言。JavaScript 的增长非常迅速，现在不再仅仅是一种前端语言；它现在也出现在服务器（`NodeJS`）和数据库中（`MongoDB`）。
+JavaScript 是目前最流行的编程语言之一。由于浏览器原生支持 JavaScript 而无需安装任何插件，它被称为互联网语言。JavaScript 的增长非常迅速，现在不再仅仅是一种前端语言；它现在也出现在服务器（`NodeJS`）和数据库中（`MongoDB`）。
 
 学习数据结构对于任何技术专业人员都是非常重要的。作为开发者意味着你能够借助编程语言解决问题，而数据结构是我们在创建解决这些问题的解决方案时不可或缺的一部分。选择错误的数据结构也会影响我们编写程序的性能。因此，了解不同的数据结构以及如何正确应用它们非常重要。
 
 算法是计算机科学的顶峰。解决同一个问题有很多方法，而某些方法优于其他方法。这就是为什么了解最著名的算法也非常重要。
 
-
-
-
 本书为想要学习数据结构和算法的初学者编写，也适用于那些已经熟悉数据结构和算法但想使用 JavaScript 进行学习的读者。
 
 编码愉快！
 
-# 本书涵盖的内容
+## 本书涵盖的内容
 
 第 1 章，`JavaScript—A Quick Overview` 介绍了学习数据结构和算法之前所需的 JavaScript 基础。它还涵盖了本书所需的开发环境搭建。
 
@@ -394,7 +566,7 @@ JavaScript 是目前最流行的编程语言之一。由于浏览器原生支持
 
 第 4 章，`Queues` 介绍了队列数据结构，演示了如何创建队列以及添加和删除元素。它还演示了如何使用队列解决一些计算机科学问题，并解释了队列与栈之间的主要区别。
 
-第 5 章，`Linked Lists` 解释了如何使用对象和指针概念从零开始链表数据结构。除了涵盖如何声明、创建、添加和删除元素外，还涵盖了不同类型的链表，例如双向链表和循环链表。
+第 5 章，`Linked Lists` 解释了如何使用对象和指针概念从零开始创建链表数据结构。除了涵盖如何声明、创建、添加和删除元素外，还涵盖了不同类型的链表，例如双向链表和循环链表。
 
 第 6 章，`Sets` 介绍了集合数据结构以及如何使用它存储不重复元素。它还解释了不同类型的集合操作以及如何实现和使用它们。
 
@@ -402,40 +574,37 @@ JavaScript 是目前最流行的编程语言之一。由于浏览器原生支持
 
 第 8 章，`Trees` 涵盖了树数据结构及其术语，重点关注二叉搜索树及其搜索、遍历、添加和删除节点的方法。它还介绍了深入探索树世界的后续步骤，提到了我们接下来应该学习的树算法。
 
-第 9 章，`Graphs` 介绍了图的奇世界及其在现实问题中的应用。本章涵盖了最常见的图术语、表示图的不同方式，以及如何使用广度优先（`Breadth-First-Search`）和深度搜索（`Depth-First-Search`）算法遍历图及其应用。
+第 9 章，`Graphs` 介绍了图的奇妙世界及其在现实问题中的应用。本章涵盖了最常见的图术语、表示图的不同方式，以及如何使用广度优先搜索（`Breadth-First-Search`）和深度优先搜索（`Depth-First-Search`）算法遍历图及其应用。
 
 第 10 章，`Sorting and Searching Algorithms` 探索了常用的排序算法，例如冒泡排序（及其改进版本）、选择排序、插入排序、合并排序和快速排序。它还涵盖了搜索算法，如顺序查找和二分查找。
 
 第 11 章，`Patterns of Algorithm` 介绍了一些算法技巧和一些著名的算法。它涵盖了递归概念以及高级算法技巧，如动态规划和贪心算法。
 
-第 12 章，`Algorithm Complexity` 介绍了大 O 表示法及其概念，以及书中实现的算法复杂度的备查表。它涵盖了 NP 完全问题的引言和启发式解。最后，它解释了如何将你的算法知识提升到高度。
+第 12 章，`Algorithm Complexity` 介绍了大 O 表示法及其概念，以及书中实现的算法复杂度的备查表。它涵盖了 NP 完全问题的引言和启发式解。最后，它解释了如何将你的算法知识提升到更高层次。
 
-# 本书所需的准备
+## 本书所需的准备
 
 你可以为本书设置三个不同的开发环境。你不需要拥有所有三个环境；可以选择其中一个，也可以都尝试一下！
 
 对于第一个选项，你需要一个浏览器。我们推荐以下之一：
 
-*   Chrome (`https://www.google.com/chrome/browser/`)
-*   Firefox (`https://www.mozilla.org/en-US/firefox/new/`)
+* Chrome (`https://www.google.com/chrome/browser/`)
+* Firefox (`https://www.mozilla.org/en-US/firefox/new/`)
 
 第二个选项是搭建本地 Web 服务器：
 
-*   第一个选项中列出的浏览器
-*   一个服务器。如果你电脑上没有安装任何服务器，可以从 `https://www.apachefriends.org` 安装 XAMMP
+* 第一个选项中列出的浏览器
+* 一个服务器。如果你电脑上没有安装任何服务器，可以从 `https://www.apachefriends.org` 安装 XAMPP
 
 第三个选项是 100% JavaScript 环境！
 
-*   第一个选项中列出的浏览器
-*   NodeJS (`http://nodejs.org/`)
-*   安装 NodeJS 后，安装 `http-server` 包：
+* 第一个选项中列出的浏览器
+* NodeJS (`http://nodejs.org/`)
+* 安装 NodeJS 后，安装 `http-server` 包：
 
-```
+```bash
 npm install http-server
 ```
-
-
-
 
 你可以从 [`www.packtpub.com`](http://www.packtpub.com) 账户中下载本书的示例代码文件。如果你是在其他地方购买的此书，可以访问 [`www.packtpub.com/support`](http://www.packtpub.com/support) 并注册，以便我们把这些文件直接通过电子邮件发送给你。
 
@@ -459,33 +628,33 @@ npm install http-server
 
 本书的代码包也托管在 GitHub 上：[`github.com/loiane/javascript-datastructures-algorithms`](https://github.com/loiane/javascript-datastructures-algorithms)。我们还在丰富的书籍和视频目录中提供了其他代码包，地址为：[`github.com/PacktPublishing/`](https://github.com/PacktPublishing/)。快去看看吧！
 
-## 下载本书的彩色图片
+### 下载本书的彩色图片
 
 我们还为你提供了一个 PDF 文件，其中包含了书中使用的截图/图表的彩色版本。彩色图片将帮助你更好地理解输出的变化。你可以从 [`www.packtpub.com/sites/default/files/downloads/LearningJavaScriptDataStructuresandAlgorithmsSecondEdition_ColorImages.pdf`](https://www.packtpub.com/sites/default/files/downloads/LearningJavaScriptDataStructuresandAlgorithmsSecondEdition_ColorImages.pdf) 下载该文件。
 
-## 勘误 (Errata)
+### 勘误 (Errata)
 
-尽管我们尽力确保内容的准确性，但错误仍然不可所避免。如果你在我们的某本书中发现错误——可能是文本或代码中的错误——如果你能向我们报告，我们将不胜感激。通过这样做，你可以避免其他读者产生困扰，并帮助我们改进本书的后续版本。如果你发现任何勘误，请访问 [`www.packtpub.com/submit-errata`](http://www.packtpub.com/submit-errata) 进行报告，选择你的书籍，点击 `Errata Submission Form` 链接并输入勘误的详情。一旦你的勘误通过验证，你的提交将被接受，勘误将上传到我们的网站，或添加到该书目 `Errata` 部分的现有勘误列表中。
+尽管我们尽力确保内容的准确性，但错误仍然不可避免。如果你在我们的某本书中发现错误——可能是文本或代码中的错误——如果你能向我们报告，我们将不胜感激。通过这样做，你可以避免其他读者产生困扰，并帮助我们改进本书的后续版本。如果你发现任何勘误，请访问 [`www.packtpub.com/submit-errata`](http://www.packtpub.com/submit-errata) 进行报告，选择你的书籍，点击 `Errata Submission Form` 链接并输入勘误的详情。一旦你的勘误通过验证，你的提交将被接受，勘误将上传到我们的网站，或添加到该书目 `Errata` 部分的现有勘误列表中。
 
 要查看之前提交的勘误，请访问 [`www.packtpub.com/books/content/support`](https://www.packtpub.com/books/content/support) 搜索框中输入书名。所需信息将出现在 `Errata` 部分下。
 
-## 盗版
+### 盗版
 
-互联网上受版权保护材料的盗版是所有媒体中一个一个持续存在的问题。在 Packt，我们非常重视对版权和许可的保护。如果你在互联网上遇到任何形式的我们作品的非法复制，请立即向我们提供地址或网站名称，以便我们采取补救措施。
+互联网上受版权保护材料的盗版是所有媒体中一个持续存在的问题。在 Packt，我们非常重视对版权和许可的保护。如果你在互联网上遇到任何形式的我们作品的非法复制，请立即向我们提供地址或网站名称，以便我们采取补救措施。
 
-请通过 copyright@packtpub.com 与我们联系，并附上疑似盗版材料的链接。
+请通过 `copyright@packtpub.com` 与我们联系，并附上疑似盗版材料的链接。
 
 感谢你帮助保护我们的作者以及我们为你提供价值内容的能力。
 
-## 问题
+### 问题
 
-如果你对本书的任何方面有任何问题，可以通过 questions@packtpub.com 与我们联系，我们将尽力解决问题。
+如果你对本书的任何方面有任何问题，可以通过 `questions@packtpub.com` 与我们联系，我们将尽力解决问题。
 
 # 第 1 章 JavaScript——快速概述
 
 JavaScript 是一门非常强大的语言。它是世界上最流行的语言，也是互联网上最著名的语言之一。例如，GitHub（全球最大的代码托管平台，地址为 [`github.com`](https://github.com)）托管了超过 400,000 个 JavaScript 仓库（项目数量最多的就是 JavaScript；请参考 [`goo.gl/ZFx6mg`](http://goo.gl/ZFx6mg)）。GitHub 上 JavaScript 项目的数量每年增长。
 
-JavaScript 并不是一种只能用于前端的语言。它也可以用于后端，而 Node.js 就是负责这一点的技术。`Node Package modules`（[https://www.npmjs.org/](https://www.npmjs.org/））的数量也呈指数级增长。
+JavaScript 并不是一种只能用于前端的语言。它也可以用于后端，而 Node.js 就是负责这一点的技术。`Node Package modules`（[https://www.npmjs.org/](https://www.npmjs.org/)）的数量也呈指数级增长。
 
 如果你是或将成为一名 Web 开发者，JavaScript 是你简历上的必修项。
 
@@ -499,14 +668,11 @@ JavaScript 并不是一种只能用于前端的语言。它也可以用于后端
 * 调试与工具
 * ECMAScript 6 和 ECMAScript 7 简介
 
-# JavaScript 结构与算法
+## JavaScript 结构与算法
 
 在本书中，你将学习最常用的数据结构和算法。然而，为什么要用 JavaScript 来学习数据结构和算法呢？我们已经回答了这个问题。JavaScript 非常流行，并且适合学习新知识，因为它是一种函数式语言。而且，谁说数据结构和算法只是为 `C` 或 `Java` 等语言设计的？你在开发前端时可能需要实现这些语言。
 
 学习数据结构和算法非常重要。第一个原因是数据结构和算法可以高效地解决常见问题。这将提高你未来编写的代码质量（取决于场景，你可能会遇到性能问题）。其次，算法在大学里是与计算机科学的基础概念一起学习的。最后，如果你计划在顶级 `IT`（信息技术）公司（如 Google、Amazon、Ebay 等）工作，数据结构和算法是面试题。
-
-
-
 
 当你打开 Firebug（只需点击其图标）时，你会看到 `Console` 标签页，你将能够在它的命令行区域编写所有的 `JavaScript` 代码，如下面的截图所示（要执行源代码，你需要点击 `Run` 按钮）：
 
@@ -522,7 +688,7 @@ JavaScript 并不是一种只能用于前端的语言。它也可以用于后端
 
 ![使用 JavaScript 的最小化设置](img/Image00004.jpg)
 
-#### 使用 Web 服务器 (XAMPP)
+### 使用 Web 服务器 (XAMPP)
 
 你可能想在计算机上安装的第二个环境同样简单，但它比仅使用浏览器要复杂一点。
 
@@ -534,11 +700,11 @@ JavaScript 并不是一种只能用于前端的语言。它也可以用于后端
 
 ![使用 Web 服务器 (XAMPP)](img/Image00006.jpg)
 
-### 提示
+> **提示**
+>
+> 在执行示例时，请始终记住打开 Google Developer Tools 或 Firebug 以查看输出。
 
-在在执行示例时，请始终记住打开 Google Developer Tools 或 Firebug 以查看输出。
-
-#### 核心是 JavaScript (Node.js)
+### 核心是 JavaScript (Node.js)
 
 第三种选择是拥有一个 100% 是 JavaScript 的环境！与其使用作为 Apache 服务器的 XAMPP，我们可以使用 JavaScript 服务器。
 
@@ -553,7 +719,7 @@ npm install http-server -g
 你也可以以管理员身份执行该命令。对于 Linux 和 Mac 系统，使用以下命令：
 
 ```bash
-sudo npm install http-server -g 
+sudo npm install http-server -g
 ```
 
 此命令将安装 `http-server`，这是一个 JavaScript 服务器。要在终端应用程序中启动服务器并运行书中的示例，请切换目录到包含书籍源代码的文件夹并输入 `http-server`，如下所示：
@@ -564,11 +730,11 @@ sudo npm install http-server -g
 
 ![核心是 JavaScript (Node.js)](img/Image00008.jpg)
 
-### 提示
+> **提示**
+>
+> 下载代码包的详细步骤在本书的序言中有所提到。请查阅。本书的代码包也托管在 GitHub 上的：[`github.com/loiane/javascript-datastructures-algorithms`](https://github.com/loiane/javascript-datastructures-algorithms)。我们还从丰富的书籍和视频目录中提供了其他代码包，地址位于 [`github.com/PacktPublishing/`](https://github.com/PacktPublishing/)。去看看吧！
 
-下载代码包的详细步骤在本书的序言中有所提到。请查阅。本书的代码包也托管在 GitHub 上的：[`github.com/loiane/javascript-datastructures-algorithms`](https://github.com/loiane/javascript-datastructures-algorithms)。我们还从丰富的书籍和视频目录中提供了其他代码包，地址位于 [`github.com/PacktPublishing/`](https://github.com/PacktPublishing/)。去看看吧！
-
-### JavaScript 基础
+## JavaScript 基础
 
 在我们开始深入研究各种数据结构和算法之前，让我们快速概述 JavaScript 语言。本节将介绍实现我们在后续章节中创建的算法所需的 JavaScript 基础。
 
@@ -610,7 +776,7 @@ alert('Hello, World!');
 </html>
 ```
 
-#### 变量
+### 变量
 
 变量存储可以设置、更新和检索的数据。在 JavaScript 中，我们不需要声明类型。以下是使用变量的示例：
 
@@ -624,9 +790,9 @@ var nullVar = null;
 var und;
 ```
 
-*   在 `num = 1;` 中，我们演示了如何在 JavaScript 中声明变量（虽然不需要使用 `var` 关键字，但在声明新变量时始终指定它是一个良好的习惯）。
-*   在 `num = 3;` 中，我们更新了一个现有变量。JavaScript 不是强类型语言。这意味着你可以声明一个变量，初始化它，然后将其更新为字符串或任何其他数据类型。将与原始类型不同的值赋予变量也不是一个好习惯。
-*   `price = 1.5;`，我们再次声明了一个数字，这次它是一个浮点数。在 `name = 'Packt';` 中，我们声明了一个字符串；在 `trueValue = true;` 中，我们声明了一个布尔。在 `nullVar = null;` 中，我们声明了一个 `null` 值，而在 `var und;` 中，我们声明了一个未定义的变量。`null` 表示没有值，`undefined` 表示已声明尚未赋值。
+* 在 `num = 1;` 中，我们演示了如何在 JavaScript 中声明变量（虽然不需要使用 `var` 关键字，但在声明新变量时始终指定它是一个良好的习惯）。
+* 在 `num = 3;` 中，我们更新了一个现有变量。JavaScript 不是强类型语言。这意味着你可以声明一个变量，初始化它，然后将其更新为字符串或任何其他数据类型。将与原始类型不同的值赋予变量也不是一个好习惯。
+* `price = 1.5;`，我们再次声明了一个数字，这次它是一个浮点数。在 `name = 'Packt';` 中，我们声明了一个字符串；在 `trueValue = true;` 中，我们声明了一个布尔值。在 `nullVar = null;` 中，我们声明了一个 `null` 值，而在 `var und;` 中，我们声明了一个未定义的变量。`null` 表示没有值，`undefined` 表示已声明尚未赋值。
 
 如果我们想查看声明的每个变量的值，可以使用 `console.log` 来实现，如前面的代码段所示：
 
@@ -639,21 +805,19 @@ console.log("nullVar: " + nullVar);
 console.log("und: " + und);
 ```
 
-
-
 在 JavaScript 中，我们有三种输出值的方法，可以配合书中的示例使用。第一种是 `alert('My text here')`，它会在浏览器上弹出一个警告窗口；第二种是 `console.log('My text here')`，它会在调试工具的 `Console` 标签页输出文本（取决于你使用的浏览器，如 Google 开发者工具或 Firebug）。第三种是使用 `document.write('My text here')` 将值直接输出到浏览器渲染的 HTML 页面上。你可以使用你觉得最方便的方法。
 
-`console.log` 方法接受的不仅仅是参数。与其其使用 `console.log("num: "+ num)`，我们也可以使用 `console.log("num: ", num)`。
+`console.log` 方法接受的不仅仅是参数。与其使用 `console.log("num: "+ num)`，我们也可以使用 `console.log("num: ", num)`。
 
 我们将在本章稍后部分讨论函数和对象。
 
-##### 变量作用域
+#### 变量作用域
 
 作用域指的是我们在算法中可以访问变量的地方（当我们处理函数作用域时，它也可以是一个函数）。分为局部变量和全局变量。
 
 让我们来看例子：
 
-```
+```javascript
 var myVariable = 'global'; 
 myOtherVariable = 'global'; 
 
@@ -675,19 +839,19 @@ console.log(myOtherFunction()); //{4}
 console.log(myOtherVariable);   //{5} 
 ```
 
-*   第 `{1}` 行输出 `global`，因为我们引用了一个 `global` 变量。
-*   第 `{2}` 行输出 `local`，因为我们在 `myFunction` 函数内部声明了 `myVariable` 变量为局部变量，所以作用域仅限于 `myFunction` 内部。
-*   第 `{3}` 行输出 `global`，因为我们引用了名为 `myOtherVariable` 的全局变量，该变量在示例的第二行初始化。
-*   第 `{4}` 行输出 `local`。在 `myOtherFunction` 函数内部，我们引用了全局变量 `myOtherVariable` 并给它赋值了值 `local`，因为我们没有使用 `var` 关键字声明该变量。
-*   由于这个原因，第 `{5}` 行输出 `local`（因为我们改变了 `myOtherFunction` 内部变量的值）。
+* 第 `{1}` 行输出 `global`，因为我们引用了一个 `global` 变量。
+* 第 `{2}` 行输出 `local`，因为我们在 `myFunction` 函数内部声明了 `myVariable` 变量为局部变量，所以作用域仅限于 `myFunction` 内部。
+* 第 `{3}` 行输出 `global`，因为我们引用了名为 `myOtherVariable` 的全局变量，该变量在示例的第二行初始化。
+* 第 `{4}` 行输出 `local`。在 `myOtherFunction` 函数内部，我们引用了全局变量 `myOtherVariable` 并给它赋值了值 `local`，因为我们没有使用 `var` 关键字声明该变量。
+* 由于这个原因，第 `{5}` 行输出 `local`（因为我们改变了 `myOtherFunction` 内部变量的值）。
 
 你可能会听到 JavaScript 中的全局变量是邪恶的，这确实如此。通常，JavaScript 源码的质量通过全局变量和函数的数量来衡量（数量越多越不好）。因此，尽可能尝试避免使用全局变量。
 
-##### 运算符
+#### 运算符
 
 在编程语言中执行任何操作时，我们需要运算符。JavaScript 还有算术运算符、赋值运算符、比较运算符、逻辑运算符、位运算符和一元运算符等。让我们来看看：
 
-```
+```javascript
 var num = 0; // {1} 
 num = num + 2; 
 num = num * 3; 
@@ -722,9 +886,9 @@ console.log('!true : ' + (!true));
 | `-` | 减法 |
 | `*` | 乘法 |
 | `/` | 除法 |
-| `%` | 取模（除法运算的数） |
-| `++` | 增增 |
-| `--` | 递减 |
+| `%` | 取模（除法运算的余数） |
+| `++` | 自增 |
+| `--` | 自减 |
 
 在第 `{2}` 行，我们有了赋值运算符。在下面的表中，我们有了运算符及其描述：
 
@@ -742,7 +906,7 @@ console.log('!true : ' + (!true));
 | 比较运算符 | 描述 |
 | :--- | :--- |
 | `==` | 等于 |
-| `===` | 等于 |
+| `===` | 全等 |
 | `!=` | 不等于 |
 | `>` | 大于 |
 | `>=` | 大于等于 |
@@ -798,7 +962,7 @@ testTruthy(obj.name); //true
 testTruthy(obj.age); //false (age 不存在) 
 ```
 
-### 等号运算符的功能 (== 和 ===)
+### 等号运算符的功能 (`==` 和 `===`)
 
 JavaScript 支持的两个等号运算符在使用它们时可能会引起一些困惑。
 
@@ -807,10 +971,6 @@ JavaScript 支持的两个等号运算符在使用它们时可能会引起一些
 | 类型(x) | Type(y) | 结果 |
 | :--- | :--- | :--- |
 | null | undefined | `true` |
-
-
-
-
 | undefined | null | `true` |
 | Number | String | `x == toNumber(y)` |
 | String | Number | `toNumber(x) == y` |
@@ -842,13 +1002,13 @@ JavaScript 支持的两个等号运算符在使用它们时可能会引起一些
 
 让我们验证一些示例的结果。首先，我们知道以下代码的输出是 `true`（字符串长度 > 1）：
 
-```
+```javascript
 console.log('packt' ? true : false); 
 ```
 
 现在，以下代码又是怎样的？让我们来看：
 
-```
+```javascript
 console.log('packt' == true); 
 ```
 
@@ -859,7 +1019,7 @@ console.log('packt' == true);
 
 以下代码又是怎样的？让我们来看：
 
-```
+```javascript
 console.log('packt' == false); 
 ```
 
@@ -881,7 +1041,7 @@ console.log('packt' == false);
 
 让我们考虑一些示例：
 
-```
+```javascript
 console.log('packt' === true); //false 
 
 console.log('packt' === 'packt'); //true 
@@ -895,7 +1055,7 @@ console.log(person1 === person2); //false，不同的对象
 
 JavaScript 与 C 和 Java 语言类似的控制结构。条件语句由 `if...else` 和 `switch` 支持。循环由 `while`、`do...while` 和 `for` 结构支持。
 
-## 条件语句
+### 条件语句
 
 我们将查看的第一个条件语句是 `if...else` 结构。我们有几种方法可以使用 `if...else` 结构：
 
@@ -919,9 +1079,53 @@ if (num === 1) {
 }
 ```
 
+### 循环
 
+JavaScript 支持 `while`、`do...while` 和 `for` 循环。让我们来看看每一个。
 
+#### while 循环
 
+`while` 循环在指定条件为真时执行代码块。
+
+```javascript
+var i = 0;
+while (i < 5) {
+  console.log(i);
+  i++;
+}
+```
+
+#### do...while 循环
+
+`do...while` 循环在检查条件之前至少执行一次代码块。
+
+```javascript
+var i = 0;
+do {
+  console.log(i);
+  i++;
+} while (i < 5);
+```
+
+#### for 循环
+
+`for` 循环在指定条件为真时重复执行代码块。
+
+```javascript
+for (var i = 0; i < 5; i++) {
+  console.log(i);
+}
+```
+
+### 函数
+
+函数是可重复使用的代码块。我们可以使用 `function` 关键字来声明函数。
+
+```javascript
+function sayHello() {
+  console.log("Hello!");
+}
+```
 
 要调用此代码，我们只需使用以下调用：
 
@@ -966,21 +1170,7 @@ var result = sum(1,2);
 output(result); 
 ```
 
-# 读累了记得休息一会哦~
-
-**公众号：古德猫宁李**
-
-*   电子书搜索下载
-*   书单分享
-*   书友学习交流
-
-**网站：**[沉金书屋 https://www.chenjin5.com](https://www.chenjin5.com)
-
-*   电子书搜索下载
-*   电子书打包资源分享
-*   学习资源分享
-
-#### JavaScript 中的面向对象编程
+### JavaScript 中的面向对象编程
 
 JavaScript 对象是极其简单的键值对集合。在 JavaScript 中创建简单对象有两种方法。第一种如下：
 
@@ -1055,9 +1245,9 @@ function Book(title, pages, isbn){
 book.printIsbn();
 ```
 
-### Note
-
-在原型（prototype）示例中，`printTitle` 函数将在所有实例之间共享，并且只会创建一个副本。当我们使用基于类的定义时（如上一个示例所示），每个实例都将拥有自己的函数副本。使用原型方法在分配函数到实例时可以节省内存和处理开销。然而，你只能使用原型方法声明公共函数和属性。使用基于类的定义，你可以声明私有函数和属性，类内部的其他方法也可以访问它们。ECMAScript 6 引入了与基于类的示例非常相似的简化语法，它是基于原型的。我们将在本章的后续部分详细讨论这一点。
+> **注意**
+>
+> 在原型（prototype）示例中，`printTitle` 函数将在所有实例之间共享，并且只会创建一个副本。当我们使用基于类的定义时（如上一个示例所示），每个实例都将拥有自己的函数副本。使用原型方法在分配函数到实例时可以节省内存和处理开销。然而，你只能使用原型方法声明公共函数和属性。使用基于类的定义，你可以声明私有函数和属性，类内部的其他方法也可以访问它们。ECMAScript 6 引入了与基于类的示例非常相似的简化语法，它是基于原型的。我们将在本章的后续部分详细讨论这一点。
 
 #### 调试与工具
 
@@ -1067,22 +1257,22 @@ Firefox 和 Chrome 都支持调试。Google 提供的一份非常棒的教程向
 
 你可以使用任何喜欢的文本编辑器。然而，还有其他可以帮助你提高效率的优秀工具，如下：
 
-*   **Aptana**: 这是一个支持 JavaScript、CSS3 和 HTML5 的免费开源 IDE ([http://aptana.com/).
-*   **WebStorm**: 这是一个支持最新技术的强大 IDE。它是付费 IDE，但你可以下载 30 天试用版 ([https://jetbrains.com/webstorm/).
-*   **Sublime Text**: 这是一个轻量级编辑器，你可以通过插件进行自定义。你可以购买许可以支持开发团队 ([://www.sublimetext.com/).
-*   **Atom**: 这是一个由 GitHub 创建的免费编辑器 ([https://atom.io/]).
+* **Aptana**: 这是一个支持 JavaScript、CSS3 和 HTML5 的免费开源 IDE ([http://aptana.com/](http://aptana.com/))
+* **WebStorm**: 这是一个支持最新技术的强大 IDE。它是付费 IDE，但你可以下载 30 天试用版 ([https://jetbrains.com/webstorm/](https://jetbrains.com/webstorm/))
+* **Sublime Text**: 这是一个轻量级编辑器，你可以通过插件进行自定义。你可以购买许可证支持开发团队 ([https://www.sublimetext.com/](https://www.sublimetext.com/))
+* **Atom**: 这是一个由 GitHub 创建的免费编辑器 ([https://atom.io/](https://atom.io/))
 
-# 介绍 ECMAScript
+## 介绍 ECMAScript
 
 如果你关注 JavaScript 的新闻和最新趋势，你可能听过关于 **ECMAScript** 6 和 7 的热点。ECMAScript 与 JavaScript 有什么关系？有什么区别？
 
 ECMAScript 是一种语言规范。JavaScript 是该规范的一种实现，`jscript` 和 `ActionScript` 也是。
 
-## ECMAScript 6 和 7
+### ECMAScript 6 和 7
 
 正如我们所知，JavaScript 是一种运行在浏览器中的语言（也通过 NodeJS 运行在服务器上），每个浏览器都可以实现其自己的版本（你将在书中后面学习）。这种特定的实现是基于 ECMAScript 的。因此，浏览器提供的功能大多相同；但每个功能的行为可能会有所不同。
 
-到目前介绍的所有代码都是基于 ECMAScript 5，它在 2009 年 12 月成为标准。本书编写时 ECMAScriptcript 是 ECMAScript 6，它在 2015 年 7 月标准化，距离上一个版本已过去 6 年。负责起草 ECMAScript 规范的委员会决定转向年度模型，在功能通过后添加新功能。因此，ECMAScript 第六版被重命名为 ECMAScript 2015 (**ES6**)。还有一个准备发布的新版本，将在 2016 年夏天发布，被称为 ECMAScript 2016 或 ECMAScript 7 (**ES7**)。
+到目前介绍的所有代码都是基于 ECMAScript 5，它在 2009 年 12 月成为标准。本书编写时 ECMAScript 最新版是 ECMAScript 6，它在 2015 年 7 月标准化，距离上一个版本已过去 6 年。负责起草 ECMAScript 规范的委员会决定转向年度模型，在功能通过后添加新功能。因此，ECMAScript 第六版被重命名为 ECMAScript 2015 (**ES6**)。还有一个准备发布的新版本，将在 2016 年夏天发布，被称为 ECMAScript 2016 或 ECMAScript 7 (**ES7**)。
 
 在本主题中，我们将涵盖 ES6 和 ES7 引入的一些新功能。
 
@@ -1092,13 +1282,8 @@ ECMAScript 是一种语言规范。JavaScript 是该规范的一种实现，`jsc
 
 在以下链接中，你可以验证哪些功能在每个浏览器可用：
 
-*   **ES6** : [`kangax.github.io/compat-table/es6/`](http://kangax.github.io/compat-table/es6/)
-
-
-
-
-
-*   `ES7` : [`kangax.github.io/compat-table/es7/`](http://kangax.github.io/compat-table/es7/)
+* **ES6** : [`kangax.github.io/compat-table/es6/`](http://kangax.github.io/compat-table/es6/)
+* `ES7` : [`kangax.github.io/compat-table/es7/`](http://kangax.github.io/compat-table/es7/)
 
 即使某些功能尚未可用，我们今天就可以开始使用新的语法和新功能。
 
@@ -1108,13 +1293,13 @@ ECMAScript 是一种语言规范。JavaScript 是该规范的一种实现，`jsc
 
 ![兼容性表](img/Image00009.jpg)
 
-### 注意事项
-
-即使启用了 `Enable Experimental JavaScript` 标志，Chrome 也可能仍不支持某些 `ES6` 特性。同样的情况也适用于 Firefox。要确切知道每个浏览器已经支持了哪些特性，请查看兼容性表。
+> **注意事项**
+>
+> 即使启用了 `Enable Experimental JavaScript` 标志，Chrome 也可能仍不支持某些 `ES6` 特性。同样的情况也适用于 Firefox。要确切知道每个浏览器已经支持了哪些特性，请查看兼容性表。
 
 #### 使用 Babel.js
 
-`Babel` ( [`babeljs.io`](https://babeljs.io) ) 是一个 JavaScript 译器，也被称为源码级编译器。它可以将具有 `ES6` 和 `ES7` 语言特性的 JavaScript 代码转换为仅使用广泛支持的 `ES5` 规范特性的等代码。
+`Babel` ( [`babeljs.io`](https://babeljs.io) ) 是一个 JavaScript 编译器，也被称为源码级编译器。它可以将具有 `ES6` 和 `ES7` 语言特性的 JavaScript 代码转换为仅使用广泛支持的 `ES5` 规范特性的等效代码。
 
 使用 `Babel.js` 有许多不同的方法。其中一种是按照其设置进行安装 ([`babeljs.io/docs/setup/`](https://babeljs.io/docs/setup/) )。另一种是通过其 `Try it out` 选项直接在浏览器中使用 ( [`babeljs.io/repl/`](https://babeljs.io/repl/) )，如下截图所示：
 
@@ -1126,18 +1311,18 @@ ECMAScript 是一种语言规范。JavaScript 是该规范的一种实现，`jsc
 
 在本主题中，我们将演示如何使用 `ES6` 的一些新功能，这些功能在日常 JavaScript 编码中可能非常有用，并且有助于简化本书后续章节中介绍的示例。在这些功能中，我们将涵盖以下：
 
-*   `let` 和 `const`
-*   模板字符串 (Template literals)
-*   解构 (Destructuring)
-*   展开运算符 (Spread operator)
-*   使用 `=>` 的箭头函数 (Arrow functions)
-*   类 (Classes)
+* `let` 和 `const`
+* 模板字符串 (Template literals)
+* 解构 (Destructuring)
+* 展开运算符 (Spread operator)
+* 使用 `=>` 的箭头函数 (Arrow functions)
+* 类 (Classes)
 
-## 使用 `let` 代替 `var` 变量
+## 使用 `let` 代替 `var` 声明变量
 
 在 `ES5` 之前，我们可以在代码的任何地方声明变量，即使覆盖了变量声明，如下代码所示：
 
-```
+```javascript
 var framework = 'Angular'; 
 var framework = 'React'; 
 console.log(framework); 
@@ -1147,7 +1332,7 @@ console.log(framework);
 
 其他语言（如 `C`、`Java` 和 `C#`）不允许这种行为。在 `ES6` 中，引入了一个新关键字名为 `let`。`let` 是新的 `var` 关键字，这意味着我们可以简单地将关键字 `var` 替换为 `let`。在下面的代码中我们有一个示例：
 
-```
+```javascript
 let language = 'JavaScript!'; /{1} 
 let language = 'Ruby!'; // {2} - {2}
 console.log(language);
@@ -1155,15 +1340,15 @@ console.log(language);
 
 行 `{2}` 将抛出错误，因为在同一作用域内（行 `{1}`）已经声明了一个名为 `language` 的变量。我们将在下一个主题讨论 `let` 和变量作用域。
 
-### 提示
+> **提示**
+>
+> 上述代码可以在 [`goo.gl/he0udZ`](https://goo.gl/he0udZ) 进行测试和执行。
 
-上述代码可以在 [`goo.gl/he0udZ`](https://goo.gl/he0udZ) 进行测试和执行。
-
-#### `let` 的变量作用域
+### `let` 的变量作用域
 
 为了理解用 `let` 声明的变量如何工作，让我们使用以下示例（你可以使用 [`goo.gl/NbsVvg`](https://goo.gl/NbsVvg) 运行示例）：
 
-```
+```javascript
 let movie = 'Lord of Rings'; /{1}
 // var movie = 'Batman'; // error, movie already declared
 
@@ -1192,7 +1377,7 @@ function blizzardFan(){
 console.log(movie); /{8}
 console.log(starFan()); /{9}
 console.log(marvelFan()); /{10}
-console.log(movie);       11}
+console.log(movie);       //{11}
 blizzardFan(); /{12}
 ```
 
@@ -1209,20 +1394,36 @@ After if: For the Alliance!
 
 现在，我们将讨论得到此输出的原因：
 
-*   在行 `{1}` 上，我们声明了一个值为 `Lord of Rings` 的变量 `movie`，并在行 `{8}` 上输出了它的值。这个变量具有全局作用域，正如你在本章变量作用域部分中学到的那样。
-*   在行 `{9}` 上，我们执行了 `starFan()` 函数。在函数内部，我们在行 `{2}` 声明了 `let movie = 'Star Wars'`，并返回了它。
-*   在行 `{10}` 上，我们执行了 `marvelFan()` 函数。在函数内部，我们使用了 `movie = 'The Avengers'`（行 `{3}`），这修改了全局变量。我们在行 `{11}` 上输出了 `movie`。
-*   在行 `{12}` 上，我们执行了 `blizzardFan()` 函数。在函数内部，我们在行 `{4}` 声明了 `let phrase = 'Warcraft'`，在 `if` 块之前输出了它。在 `if` 块内部，我们在行 `{5}` 声明了另一个 `let phrase = 'initial text'`（块级作用域），并输出了它。在 `if` 块之后，我们在行 `{7}` 将 `phrase` 修改为 `'For the Alliance!'` 并输出了它。
+* 在行 `{1}` 上，我们声明了一个值为 `Lord of Rings` 的变量 `movie`，并在行 `{8}` 上输出了它的值。这个变量具有全局作用域，正如你在本章变量作用域部分中学到的那样。
+* 在行 `{9}` 上，我们执行了 `starFan()` 函数。在函数内部，我们在行 `{2}` 声明了 `let movie = 'Star Wars'`，并返回了它。
+* 在行 `{10}` 上，我们执行了 `marvelFan()` 函数。在函数内部，我们使用了 `movie = 'The Avengers'`（行 `{3}`），这修改了全局变量。我们在行 `{11}` 上输出了 `movie`。
+* 在行 `{12}` 上，我们执行了 `blizzardFan()` 函数。在函数内部，我们在行 `{4}` 声明了 `let phrase = 'Warcraft'`，在 `if` 块之前输出了它。在 `if` 块内部，我们在行 `{5}` 声明了另一个 `let phrase = 'initial text'`（块级作用域），并输出了它。在 `if` 块之后，我们在行 `{7}` 将 `phrase` 修改为 `'For the Alliance!'` 并输出了它。
 
+> **提示**
+>
+> 前面的示例可以在 [`goo.gl/PTqnwO`](https://goo.gl/PTqnwO) 运行。
 
+### 常量
 
+在 ES6 中，我们可以使用 `const` 关键字声明常量。常量一旦声明必须初始化，且不能重新赋值。
 
+```javascript
+const PI = 3.14159;
+// PI = 3.0; // TypeError: Assignment to constant variable
+```
 
-### Tip
+### 模板字符串
 
-前面的示例可以在 [`goo.gl/PTqnwO`](https://goo.gl/PTqnwO) 运行。
+ES6 引入了模板字符串，使用反引号（`` ` ``）包裹，支持字符串插值和多行字符串。
 
-#### 箭头函数
+```javascript
+let name = 'World';
+let greeting = `Hello, ${name}!`; // "Hello, World!"
+let multiLine = `Line 1
+Line 2`; // 多行字符串
+```
+
+### 箭头函数
 
 箭头函数是 ES6 中简化函数语法的极佳方法。考虑以下示例：
 
@@ -1255,11 +1456,11 @@ let circleArea2 = (r) => 3.14 * r * r;
 console.log(circleArea2(2)); 
 ```
 
-### Tip
+> **提示**
+>
+> 前面的示例可以在 [`goo.gl/CigniJ`](https://goo.gl/CigniJ) 运行。
 
-前面的示例可以在 [`goo.gl/CigniJ`](https://goo.gl/CigniJ) 运行。
-
-## 函数默认参数值
+### 函数默认参数值
 
 在 ES6 中，也可以为函数定义默认参数值。以下是一个示例：
 
@@ -1288,11 +1489,11 @@ function sum (x, y, z) {
 
 在 ES6 中，我们可以使用默认参数值功能来节省几行代码。
 
-### Tip
+> **提示**
+>
+> 前面的示例可以在 [`goo.gl/2MiJ59`](https://goo.gl/2MiJ59) 运行。
 
-前面的示例可以在 [`goo.gl/2MiJ59`](https://goo.gl/2MiJ59) 运行。
-
-## 声明展开运算符和剩余参数
+### 声明展开运算符和剩余参数
 
 在 ES5 中，我们可以使用 `apply()` 函数将数组转换为参数。ES6 引入了展开运算符（`...`）来实现此目的。例如，考虑我们在上一个主题中定义的 `sum` 函数。我们可以执行以下代码来传递 `x`、`y` 和 `z` 参数：
 
@@ -1326,11 +1527,11 @@ function restParamaterFunction (x, y) {
 }; 
 ```
 
-### Tip
+> **提示**
+>
+> 展开运算符的示例可以在 [`goo.gl/8equk5`](https://goo.gl/8equk5) 运行，剩余参数的示例可以在 [`goo.gl/LaJZqU`](https://goo.gl/LaJZqU) 运行。
 
-展开运算符的示例可以在 [`goo.gl/8equk5`](https://goo.gl/8equk5) 运行，剩余参数的示例可以在 [`goo.gl/LaJZqU`](https://goo.gl/LaJZqU) 运行。
-
-### 增强属性
+### 增强的对象属性
 
 ES6 引入了数组解构的概念，这是一种一次性初始化变量的方法。例如，考虑以下：
 
@@ -1369,11 +1570,49 @@ var obj = { x, y };
 console.log(obj); // { x: "a", y: "b" }
 ```
 
-*(注：由于提供的文本包含大量重复和乱码片段，上述翻译已根据核心逻辑进行了清理和整合。)*
+### 使用类面向对象编程
 
+ES6 引入了 `class` 关键字，使得面向对象编程更加简洁。
 
+```javascript
+class Book {
+  constructor(title, pages, isbn) {
+    this.title = title;
+    this.pages = pages;
+    this.isbn = isbn;
+  }
+  printTitle() {
+    console.log(this.title);
+  }
+}
 
+let book = new Book('title', 'pag', 'isbn');
+book.printTitle();
+```
 
+### 继承
+
+ES6 支持使用 `extends` 关键字实现继承。
+
+```javascript
+class ITBook extends Book {
+  constructor(title, pages, isbn, technology) {
+    super(title, pages, isbn);
+    this.technology = technology;
+  }
+  printTechnology() {
+    console.log(this.technology);
+  }
+}
+
+let jsBook = new ITBook('Learning JS', '200', '123456', 'JavaScript');
+jsBook.printTitle(); // 输出书名
+jsBook.printTechnology(); // 输出技术
+```
+
+### 使用 getter (get) 和 setter (set)
+
+ES6 允许在类中定义 getter 和 setter。
 
 ```javascript
 class Person { 
@@ -1400,17 +1639,17 @@ console.log(lotrChar.name);
 
 然后，为了查看 `get` 或 `set` 函数，我们只需要像引用普通属性一样引用它们的名称（第 `{4}` 和 `{5}` 行）。
 
-### 提示
+> **提示**
+>
+> 同样重要的是记住，`_name` 属性并不是真正的私有，我们仍然可以对其进行引用。不过，我们将在本书的后续部分讨论此问题。此示例可以在 [`goo.gl/SMRYsv`](https://goo.gl/SMRYsv) 执行。
 
-同样重要的是记住，`_name` 属性并不是真正的私有，我们仍然可以对其进行引用。不过，我们将在本书的后后部分讨论此问题。此示例可以在 [`goo.gl/SMRYsv`](https://goo.gl/SMRYsv) 执行。
-
-#### 其他功能
+### 其他功能
 
 ES6 还有一些其他功能；其中，我们可以列出迭代器、类型化数组、Set、Map、WeakSet、WeakMap、模块、尾递归调用和 Symbol。我们将在本书的其他章节中介绍这些一些其他功能。
 
-### 注意事项
-
-关于 ES6 的所有功能及其规范的更多信息，请参阅 [`www.ecma-international.org/ecma-262/6.0/`](http://www.ecma-international.org/ecma-262/6.0/)。
+> **注意事项**
+>
+> 关于 ES6 的所有功能及其规范的更多信息，请参阅 [`www.ecma-international.org/ecma-262/6.0/`](http://www.ecma-international.org/ecma-262/6.0/)。
 
 ### ECMAScript 7 功能
 
@@ -1429,23 +1668,23 @@ ES6 还有一些其他功能；其中，我们可以列出迭代器、类型化�
 
 你将在下一章 2 章，*数组* 中学习更多关于 `Array.prototype.includes` 的功能。
 
-### 注意事项
+> **注意事项**
+>
+> 关于 ES7 的更多信息，请访问 [`tc39.github.io/ecma262/`](https://tc39.github.io/ecma262/)。
 
-关于 ES7 的更多信息，请访问 [`tc39.github.io/ecma262/`](https://tc39.github.io/ecma262/)。
-
-## ES6 和 ES7 的后兼容性
+## ES6 和 ES7 的向后兼容性
 
 我需要将当前的 JavaScript 代码更新到 ES6 或 ES7 吗？当然不需要！ES6 和 ES7 是 JavaScript 语言的子集。所有被标准化为 ES5 的内容在今天将继续正常工作。然而，你可以开始使用 ES6 和 ES7 来利用新语法并让你的代码更简单、易读。
 
 在本书的后续章节中，我们将尽可能地使用 ES6 和 ES7。如果你想使用 ES5 编写示例代码，你可以随时使用 Babel 将本书的代码编译为 ES5 代码。
 
-### 注意事项
-
-我们将创建的一些示例也可以通过 ES5 语法提供，通过访问 GitHub 仓库的 `master` 分支： [`github.com/loiane/javascript-datastructures-algorithms`](https://github.com/loiane/javascript-datastructures-algorithms) 获取对应的 ES5 语法。
+> **注意事项**
+>
+> 我们将创建的一些示例也可以通过 ES5 语法提供，通过访问 GitHub 仓库的 `master` 分支： [`github.com/loiane/javascript-datastructures-algorithms`](https://github.com/loiane/javascript-datastructures-algorithms) 获取对应的 ES5 语法。
 
 现在，我们已经涵盖了开始数据结构和算法乐趣之旅所需的所有基础 JavaScript 概念！
 
-#### 总结
+### 总结
 
 在本章中，你学习了如何设置开发环境，以便创建或执行书中的示例。
 
@@ -1461,15 +1700,15 @@ ES6 还有一些其他功能；其中，我们可以列出迭代器、类型化�
 
 数组按顺序存储相同数据类型的值。尽管 JavaScript 允许我们创建具有不同数据类型值的数组。
 
-## 为什么我们使用数组
-
-数组按顺序存储相同数据类型的值。尽管 JavaScript 允许我们创建具有不同数据类型值的数组。
-
 要知道数组中有多少个元素（其长度），我们可以使用 `length` 属性。以下代码将输出 `7`：
 
 ```javascript
 console.log(daysOfWeek.length);
 ```
+
+## 为什么我们使用数组
+
+数组按顺序存储相同数据类型的值。尽管 JavaScript 允许我们创建具有不同数据类型值的数组。
 
 ## 创建和初始化数组
 
@@ -1505,6 +1744,8 @@ for (var i=0; i<daysOfWeek.length; i++){
 
 让我们来看另一个例子。假设我们要找出前 20 个斐波那契数。斐波那契数列的前两个数字是 1 和 1，之后的每个数字都是前两个数字之和：
 
+
+
 ```javascript
 var fibonacci = []; //{1} 
 fibonacci[1] = 1; //{2} 
@@ -1514,22 +1755,15 @@ for(var i = 3; i < 20; i++){
   fibonacci[i] = fibonacci[i-1] + fibonacci[i-2]; //{4} 
 } 
 
-for(var i = 1; i<fibonacci.length; i++){帚 5} 
-  console.log(fibonacci[i]);           //{6} 
+for(var i = 1; i<fibonacci.length; i++){ //{5} 
+  console.log(fibonacci[i]); //{6} 
 }
 ```
 
-
-
-
-
 * 所以，在 `{1}` 中，我们声明并创建了一个数组。
-
 * 在行 `{2}` 和 `{3}` 中，我们将斐波那契数列的前两个数字赋值给数组的第二个和第三位置（在 JavaScript 中，数组的第一个位置始终通过 `0` 引用，由于斐波那契数列中没有 `0`，所以我们跳过了它）。
-
 * 然后，我们要做的是创建该数列的第 3 个到第 20 个数字（因为我们已经知道前两个数字了）。为了这一点，我们可以使用循环并将数组中前两个位置的和赋值给当前位置（行 `{4}`，从数组的索引 3 开始到第 19 索引）。
-
-* 然后，为了查看输出结果（行 `{6}`），我们只需要从数组的第一个位置循环到它的长度（行 `{5}`）。 
+* 然后，为了查看输出结果（行 `{6}`），我们只需要从数组的第一个位置循环到它的长度（行 `{5}`）。
 
 ### 提示
 
@@ -1541,13 +1775,13 @@ for(var i = 1; i<fibonacci.length; i++){帚 5}
 
 向数组中添加和删除元素并不困难；然而，它可能会很复杂。对于在本节中将使用的示例，让我们考虑有一个如下初始化为 0 到 9 数字的数字数组：
 
-```
+```javascript
 var numbers = [0,1,2,3,4,5,6,7,8,9]; 
 ```
 
 如果我们想向此数组中添加一个新元素（例如数字 10），我们要做的就是引用数组的最后一个空闲位置并对其进行赋值：
 
-```
+```javascript
 numbers[numbers.length] = 10; 
 ```
 
@@ -1555,11 +1789,11 @@ numbers[numbers.length] = 10;
 
 在 JavaScript 中，数组是一个可变对象。我们可以轻松地向它添加新元素。随着我们向其添加新元素，该对象会动态增长。在许多其他语言（如 `C` 和 `Java`）中，我们需要确定数组的大小，如果我们需要向数组中添加更多元素，我们需要创建一个全新的数组；我们无法在需要时简单地为其添加新元素。
 
-# 使用 push 方法
+### 使用 push 方法
 
 然而，还有一个名为 `push` 的方法，允许我们向数组末尾添加新元素。我们可以将任意数量的元素作为参数传递给 `push` 方法：
 
-```
+```javascript
 numbers.push(11); 
 numbers.push(12, 13); 
 ```
@@ -1570,7 +1804,7 @@ numbers.push(12, 13);
 
 现在，假设我们需要向数组添加一个新元素，并想将其插入到第一个位置，而不是最后一个。为了实现这一点，首先我们需要通过将所有元素向右移动来释放第一个位置。我们可以遍历数组的所有元素，从最后一个位置 `+ 1`（长度）开始，并将上一个元素移动到新位置，最后将我们想要的新值赋值给第一个位置（`-1`）。运行以下代码来实现：
 
-```
+```javascript
 for (var i=numbers.length; i>=0; i--){ 
   numbers[i] = numbers[i-1]; 
 } 
@@ -1585,36 +1819,20 @@ numbers[0] = -1;
 
 JavaScript 的 `array` 类还有一个名为 `unshift` 的方法，它将传递给方法参数的值插入到数组的开头：
 
-```
+```javascript
 numbers.unshift(-2); 
 numbers.unshift(-4, -3); 
 ```
 
 因此，使用 `unshift` 方法，可以将值 `-2` 然后 `-3` 和 `-4` 添加到 `numbers` 数组的开头。此数组的输出将是从 -4 到 13 的数字。
 
-# 读累了记得休息一会哦~
-
-**公众号：古德猫宁李**
-
-* 电子书搜索下载
-
-* 书单分享
-
-* 书友学习交流
-
-**网站：**[沉金书屋 https://www.chenjin5.com](https://www.chenjin5.com)
-
-* 电子书搜索下载
-* 电子书打包资源分享
-* 学习资源分享
-
-#### 删除元素
+### 删除元素
 
 到目前为止，你已经学习了向数组的末尾和开头添加值。让我们来看看如何从数组中删除值。
 
 要从数组末尾删除一个值，我们可以使用 `pop` 方法：
 
-```
+```javascript
 numbers.pop(); 
 ```
 
@@ -1628,7 +1846,7 @@ numbers.pop();
 
 要从数组开头删除一个值，我们可以使用以下代码：
 
-```
+```javascript
 for (var i=0; i<numbers.length; i++){ 
   numbers[i] = numbers[i+1]; 
 } 
@@ -1638,20 +1856,56 @@ for (var i=0; i<numbers.length; i++){
 
 ![从第一个位置删除元素](img/Image00013.jpg)
 
-（注：原文后部分存在大量重复段落和乱码，已根据逻辑进行了去重和整理）
+### 使用 shift 方法
 
+JavaScript 的 `array` 类还有一个名为 `shift` 的方法，它将从数组开头移除第一个元素：
 
+```javascript
+numbers.shift(); 
+```
+
+#### 从特定位置删除元素
+
+我们也可以从数组的特定位置删除元素。为此，我们可以使用 `splice` 方法：
+
+```javascript
+numbers.splice(5, 3); 
+```
+
+上述代码将从索引 5 开始删除 3 个元素。
+
+### 使用 splice 方法
+
+`splice` 方法非常强大，它可以用于添加、删除和替换元素。语法为 `array.splice(index, howMany, element1, ..., elementN)`。
+
+*   `index`：开始插入/删除的位置。
+*   `howMany`：要删除的元素数量。如果设置为 0，则不删除元素。
+*   `element1, ..., elementN`：要添加到数组的元素。
+
+例如，要在索引 2 处插入元素而不删除任何元素：
+
+```javascript
+numbers.splice(2, 0, 2.5); 
+```
+
+要替换索引 2 处的元素：
+
+```javascript
+numbers.splice(2, 1, 2.5); 
+```
+
+### 二维数组和多维数组
 
 在本章开头，我们使用了 `temperature measurement` 示例。现在我们将再次使用这个示例。假设我们需要在过去几天内每小时测量一次温度。既然我们已经知道可以使用数组来存储温度，那么可以轻松地编写以下代码来存储两天的温度：
 
-```
+```javascript
 var averageTempDay1 = [72,75,79,79,81,81]; 
 var averageTempDay2 = [81,79,75,75,73,72]; 
 ```
 
 然而，这并不是最好的方法；我们可以写出更优的代码！我们可以使用矩阵（二维数组）来存储这些信息，其中每一行代表一天，每一列代表每小时的温度测量值，如下所示：
 
-```
+```javascript
 var averageTemp = []; 
 averageTemp[0] = [72,75,79,79,81,81]; 
 averageTemp[1] = [81,79,75,75,73,72]; 
@@ -1741,11 +1995,11 @@ for (var i=0; i<matrix3x3x3.length; i++){
 
 如果我们有一个 3 x 3 x 3 x 3 矩阵，我们的代码中将会有四个嵌套的 `for` 语句，依此类推。
 
-# JavaScript 数组方法参考
+### JavaScript 数组方法参考
 
 JavaScript 中的数组是修改对象，这意味着我们创建的每个数组都有几个可用方法。JavaScript 数组非常有趣，因为它们非常强大，并且比其他语言中的原始数组拥有更多功能。这意味着我们不需要自己编写基础功能，例如在以下操作中添加和删除元素：
 
-| 方法 |  |
+| 方法 | 描述 |
 | :--- | :--- |
 | `concat` | 合并多个数组 |
 | `every` | 遍历每个元素直到某个返回 `false` |
@@ -1767,32 +2021,31 @@ JavaScript 中的数组是修改对象，这意味着我们创建的每个数组
 | `unshift` | 在数组开头添加元素 |
 | `splice` | 在数组中添加或删除元素 |
 
-
-
+### 迭代器方法
 
 接下来，我们有 `some` 方法。它的行为与 `every` 方法相同；但是，`some` 方法会遍历数组的每个元素，直到函数的返回结果为 `true`：
 
-```
+```javascript
 numbers.some(isEven); 
 ```
 
 在我们的案例中，`numbers` 数组中的第一个偶数是 `2`（第二个元素）。第一个遍历的元素是数字 `1`；它将返回 `false`。然后，第二个遍历的元素是数字 `2`，它将返回 `true`，迭代就会停止。
 
-### 使用 forEach 进行迭代
+#### 使用 forEach 进行迭代
 
 如果我们需要无论如何都完全遍历数组，可以使用 `forEach` 函数。它的结果与在 `for` 循环内部使用函数代码的结果相同，如下：
 
-```
+```javascript
 numbers.forEach(function(x){ 
   console.log((x % 2 == 0)); 
 }); 
 ```
 
-### 使用 map 和 filter
+#### 使用 map 和 filter
 
 JavaScript 还有另外两个迭代器方法，它们会返回一个带有结果的新数组。第一个是 `map` 方法，如下所示：
 
-```
+```javascript
 var myMap = numbers.map(isEven); 
 ```
 
@@ -1800,17 +2053,17 @@ var myMap = numbers.map(isEven);
 
 我们还有 `filter` 方法。它返回一个包含函数返回 `true` 的元素的新数组，如下：
 
-```
+```javascript
 var evenNumbers = numbers.filter(isEven); 
 ```
 
 在我们的案例中，`evenNumbers` 数组将包含 2 的倍数元素：`[2, 4, 6, 8, 10, 12, 14]`。
 
-### 使用 reduce 方法
+#### 使用 reduce 方法
 
 最后，我们有 `reduce` 方法。`reduce` 方法也接收带有以下参数的函数：`previousValue`、`currentValue`、`index` 和 `array`。我们可以使用此函数返回一个将加到累加器值，该值将在 `reduce` 方法停止执行后返回。如果我们想求加数组中所有的值，这非常有用。这里有一个例子：
 
-```
+```javascript
 numbers.reduce(function(previous, current, index){ 
   return previous + current; 
 }); 
@@ -1828,7 +2081,7 @@ JavaScript `Array` 类还有另外两个重要方法：`map` 和 `reduce`。这�
 
 以下是 ES6 和 ES7 添加的新方法列表：
 
-| 方法 |  |
+| 方法 | 描述 |
 | :--- | :--- |
 | `@@iterator` | 它返回一个迭代器对象，包含数组的键/值对，可以同步调用以检索数组元素的键/值。 |
 | `copyWithin` | 它将数组的一系列值复制到起始索引的位置。 |
@@ -1846,14 +2099,13 @@ JavaScript `Array` 类还有另外两个重要方法：`map` 和 `reduce`。这�
 
 我们将在接下来的主题中演示所有这些新功能。
 
-
-
+### 使用 keys、values 和 entries 方法
 
 对于 `numbers` 数组，`keys` 将是数组的索引。一旦没有了可以迭代的值，代码 `aKeys.next()` 将返回 `undefined` 作为 `value`，并将 `done` 为 `true`。当 `done` 的值为 `false` 时，意味着数组中仍有键待迭代。
 
 `values` 方法返回 `@@iterator`，它包含了数组的值。以下是我们如何使用该方法的示例：
 
-```
+```javascript
 let aValues = numbers.values(); 
 console.log(aValues.next()); // {value: 1, done: false } 
 console.log(aValues.next()); // {value: 2, done: false } 
@@ -1868,13 +2120,13 @@ console.log(aValues.next()); // {value: 3, done: false }
 
 `Array.from` 方法从现有数组创建一个新数组。例如，如果我们想将数组 `numbers` 复制到一个新数组，可以使用以下代码：
 
-```
+```javascript
 let numbers2 = Array.from(numbers); 
 ```
 
 也可以传递一个函数，以便我们决定想要过滤哪些值。考虑以下代码：
 
-```
+```javascript
 let evens = Array.from(numbers, x => (x % 2 == 0)); 
 ```
 
@@ -1888,21 +2140,21 @@ let evens = Array.from(numbers, x => (x % 2 == 0));
 
 `Array.of` 方法根据传递给方法的参数创建一个新数组。例如，让我们考虑以下示例：
 
-```
+```javascript
 let numbers3 = Array.of(1); 
 let numbers4 = Array.of(1,2,3,4,5,6); 
 ```
 
 前述代码等同于执行以下操作：
 
-```
+```javascript
 let numbers3 = [1]; 
 let numbers4 = [1,2,3,4,5,6]; 
 ```
 
 我们还可以使用此方法制作现有数组的副本。这里有一个示例：
 
-```
+```javascript
 let numbersCopy = Array.of(...numbers4); 
 ```
 
@@ -1916,13 +2168,13 @@ let numbersCopy = Array.of(...numbers4);
 
 `fill` 方法用一个值填充数组。例如，考虑以下数组：
 
-```
+```javascript
 let numbersCopy = Array.of(1,2,3,4,5,6); 
 ```
 
 `numbersCopy` 数组的长度为 6，意味着我们有 6 个位置。让我们使用代码：
 
-```
+```javascript
 numbersCopy.fill(0); 
 ```
 
@@ -1930,7 +2182,7 @@ numbersCopy.fill(0);
 
 我们还可以传递我们想要填充数组的起始索引，如下：
 
-```
+```javascript
 numbersCopy.fill(2, 1); 
 ```
 
@@ -1938,14 +2190,103 @@ numbersCopy.fill(2, 1);
 
 我们还可以传递我们想要填充数组的结束索引：
 
-```
+```javascript
 numbersCopy.fill(1, 3, 5); 
 ```
 
-在前面的述示例中，我们将从索引 `3` 到 `5` 用值 `1` 填充数组。
+在前面的示例中，我们将从索引 `3` 到 `5` 用值 `1` 填充数组。
 
+### 使用 copyWithin 方法
 
+`copyWithin` 方法将数组的一系列值复制到起始索引的位置。语法为 `array.copyWithin(target, start, end)`。
 
+*   `target`：复制到的目标索引位置。
+*   `start`：开始复制的索引位置。
+*   `end`：结束复制的索引位置（可选）。
+
+例如：
+
+```javascript
+let numbers = [1,2,3,4,5]; 
+numbers.copyWithin(0, 3); 
+// 结果: [4,5,3,4,5] 
+```
+
+### 使用 find 和 findIndex 方法
+
+考虑以下示例：
+
+```javascript
+let numbers = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]; 
+function multipleOf13(element, index, array) { 
+  return (element % 13 == 0) ? true : false; 
+} 
+console.log(numbers.find(multipleOf13)); 
+console.log(numbers.findIndex(multipleOf13)); 
+```
+
+`find` 和 `findIndex` 方法接收一个回调函数，该函数将搜索满足测试函数（回调）中所述条件的值。在这个示例中，我们正在查找数组 `numbers` 是否包含 13 的倍数。
+
+`find` 和 `findIndex` 之间的区别在于，`find` 方法返回数组中满足建议条件的第一个值。而 `findIndex` 方法返回数组中满足条件的第一个值的索引。如果没有找到该值，它将返回 `undefined`。
+
+### 注意
+
+此示例可以在 [`goo.gl/2vAaCh`](https://goo.gl/2vAaCh) 运行。
+
+### 使用 includes 方法
+
+`includes` 方法在数组中找到元素时返回 `true`，否则返回 `false`。以下是使用该方法的示例：
+
+```javascript
+console.log(numbers.includes(15)); 
+console.log(numbers.includes(20)); 
+```
+
+在这个示例中，`includes(15)` 将返回 `true`，而 `includes(20)` 将返回 `false`，因为元素 `20` 不在 `numbers` 数组中。
+
+还可以传递一个起始索引，指定数组从哪里开始搜索该值：
+
+```javascript
+let numbers2 = [7,6,5,4,3,2,1]; 
+console.log(numbers2.includes(4,5)); 
+```
+
+上述示例的输出将为 `false`，因为元素 `4` 不在位置 `5` 之后。
+
+### 注意
+
+此示例可以在 [`goo.gl/tTY9bc`](https://goo.gl/tTY9bc) 运行。
+
+#### 将数组转换为字符串
+
+最后我们来看两个方法：`toString` 和 `join`。
+
+如果我们想将数组的所有元素输出到单个字符串中，可以如下所示使用 `toString` 方法：
+
+```javascript
+console.log(numbers.toString()); 
+```
+
+这将在控制台输出值 `1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15`。
+
+如果我们想用不同的分隔符（如 `-`）来分隔元素，可以使用 `join` 方法来实现，如下：
+
+```javascript
+var numbersString = numbers.join('-'); 
+console.log(numbersString); 
+```
+
+输出将如下：1-2-3-4-5-6-7-8-9-10-11-12-13-14-15
+
+### 排序数组
+
+`sort` 方法用于对数组元素进行排序。默认情况下，它将元素转换为字符串并按字母顺序排序。
+
+```javascript
+var names = ['Ana', 'ana', 'John', 'john']; 
+names.sort(); 
+console.log(names); // ["Ana", "John", "ana", "john"] 
+```
 
 因此，`J` 的值比 `a` 小，正因如此，它在字母表中顺序靠前。
 
@@ -1953,9 +2294,9 @@ numbersCopy.fill(1, 3, 5);
 
 关于 ASCII 表格的更多信息，请访问 [`www.asciitable.com/`](http://www.asciitable.com/) 。
 
-现在，如果传递传递 `compareFunction`（其中包含忽略字母大小写的代码），我们将得到输出 `["Ana", "ana", "John", "john"]`，如下所示：
+现在，如果传递 `compareFunction`（其中包含忽略字母大小写的代码），我们将得到输出 `["Ana", "ana", "John", "john"]`，如下所示：
 
-```
+```javascript
 names.sort(function(a, b){ 
   if (a.toLowerCase() < b.toLowerCase()){ 
     return -1 
@@ -1969,7 +2310,7 @@ names.sort(function(a, b){
 
 对于带重音的字符，我们也可以使用 `localeCompare` 方法：
 
-```
+```javascript
 var names2 = ['Maève', 'Maeve']; 
 console.log(names2.sort(function(a, b){ 
   return a.localeCompare(b); 
@@ -1980,9 +2321,9 @@ console.log(names2.sort(function(a, b){
 
 ## 搜索
 
-我们有两种搜索选项：`indexOf` 方法，它返回与传入参数匹配的元素的索引；以及 `lastIndexOf`，它返回找到的与传入参数匹配最后一个最后一个索引。让我们回到之前使用的 `numbers` 数组：
+我们有两种搜索选项：`indexOf` 方法，它返回与传入参数匹配的元素的索引；以及 `lastIndexOf`，它返回找到的与传入参数匹配最后一个索引。让我们回到之前使用的 `numbers` 数组：
 
-```
+```javascript
 console.log(numbers.indexOf(10)); 
 console.log(numbers.indexOf(100)); 
 ```
@@ -1991,7 +2332,7 @@ console.log(numbers.indexOf(100));
 
 我们可以通过以下代码得到相同的结果：
 
-```
+```javascript
 numbers.push(10); 
 console.log(numbers.lastIndexOf(10)); 
 console.log(numbers.lastIndexOf(100)); 
@@ -2003,7 +2344,7 @@ console.log(numbers.lastIndexOf(100));
 
 考虑以下示例：
 
-```
+```javascript
 let numbers = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]; 
 function multipleOf13(element, index, array) { 
   return (element % 13 == 0) ? true : false; 
@@ -2024,7 +2365,7 @@ console.log(numbers.findIndex(multipleOf13));
 
 `includes` 方法在数组中找到元素时返回 `true`，否则返回 `false`。以下是使用该方法的示例：
 
-```
+```javascript
 console.log(numbers.includes(15)); 
 console.log(numbers.includes(20)); 
 ```
@@ -2033,7 +2374,7 @@ console.log(numbers.includes(20));
 
 还可以传递一个起始索引，指定数组从哪里开始搜索该值：
 
-```
+```javascript
 let numbers2 = [7,6,5,4,3,2,1]; 
 console.log(numbers2.includes(4,5)); 
 ```
@@ -2050,7 +2391,7 @@ console.log(numbers2.includes(4,5));
 
 如果我们想将数组的所有元素输出到单个字符串中，可以如下所示使用 `toString` 方法：
 
-```
+```javascript
 console.log(numbers.toString()); 
 ```
 
@@ -2058,123 +2399,7 @@ console.log(numbers.toString());
 
 如果我们想用不同的分隔符（如 `-`）来分隔元素，可以使用 `join` 方法来实现，如下：
 
-```
-var numbersString = numbers.join('-'); 
-console.log(numbersString); 
-```
-
-输出将如下：1-2-3-4-5-6-7-8-9-10-11-12-13-14-15
-
-### 注意
-
-因此，J 的值比 a 小，正因如此，它在字母表中顺序靠前。
-
-### 注意
-
-关于 ASCII 表格的更多信息，请访问 [`www.asciitable.com/`](http://www.asciitable.com/) 。
-
-现在，如果传递传递传递 `compareFunction`（其中包含忽略字母大小写的代码），我们将得到输出 `["Ana", "ana", "John", "john"]`，如下所示：
-
-```
-names.sort(function(a, b){ 
-  if (a.toLowerCase() < b.toLowerCase()){ 
-    return -1 
-  } 
-  if (a.toLowerCase() > b.toLowerCase()){ 
-    return 1 
-  } 
-  return 0; 
-}); 
-```
-
-对于带重音的字符，我们也可以使用 `localeCompare` 方法：
-
-```
-var names2 = ['Maève', 'Maeve']; 
-console.log(names2.sort(function(a, b){ 
-  return a.localeCompare(b); 
-}));
-```
-
-输出将是 `["Maeve", "Maève"]`。
-
-## 搜索
-
-我们有两种搜索选项：`indexOf` 方法，它返回与传入参数匹配的元素的索引；以及 `lastIndexOf`，它返回找到的与传入参数匹配最后一个最后一个索引。让我们回到之前使用的 `numbers` 数组：
-
-```
-console.log(numbers.indexOf(10)); 
-console.log(numbers.indexOf(100)); 
-```
-
-在上一个示例中，控制台的第一行输出为 `9`，第二行输出为 `-1`（因为在我们的数组中不存在它）。
-
-我们可以通过以下代码得到相同的结果：
-
-```
-numbers.push(10); 
-console.log(numbers.lastIndexOf(10)); 
-console.log(numbers.lastIndexOf(100)); 
-```
-
-我们添加了一个值为 `10` 的新元素，因此第二行将输出 `15`（我们的数组现在包含从 1 到 15 + 10 的值），第三行将输出 `-1`（因为元素 `100` 不在我们的数组中）。
-
-### ECMAScript 6 - find 和 findIndex 方法
-
-考虑以下示例：
-
-```
-let numbers = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]; 
-function multipleOf13(element, index, array) { 
-  return (element % 13 == 0) ? true : false; 
-} 
-console.log(numbers.find(multipleOf13)); 
-console.log(numbers.findIndex(multipleOf13)); 
-```
-
-`find` 和 `findIndex` 方法接收一个回调函数，该函数将搜索满足测试函数（回调）中所述条件的值。在这个示例中，我们正在查找数组 `numbers` 是否包含 13 的倍数。
-
-`find` 和 `findIndex` 之间的区别在于，`find` 方法返回数组中满足建议条件的第一个值。而 `findIndex` 方法返回数组中满足条件的第一个值的索引。如果没有找到该值，它将返回 `undefined`。
-
-### ECMAScript 7 - 使用 includes 方法
-
-`includes` 方法在数组中找到元素时返回 `true`，否则返回 `false`。以下是使用该方法的示例：
-
-```
-console.log(numbers.includes(15)); 
-console.log(numbers.includes(20)); 
-```
-
-在这个示例中，`includes(15)` 将返回 `true`，而 `includes(20)` 将返回 `false`，因为元素 `20` 不在 `numbers` 数组中。
-
-还可以传递一个起始索引，指定数组从哪里开始搜索该值：
-
-```
-let numbers2 = [7,6,5,4,3,2,1]; 
-console.log(numbers2.includes(4,5)); 
-```
-
-上述示例的输出将为 `false`，因为元素 `4` 不在位置 `5` 之后。
-
-### 注意
-
-此示例可以在 [`goo.gl/tTY9bc`](https://goo.gl/tTY9bc) 运行。
-
-#### 将数组转换为字符串
-
-最后我们来看两个方法：`toString` 和 `join`。
-
-如果我们想将数组的所有元素输出到单个字符串中，可以如下所示使用 `toString` 方法：
-
-```
-console.log(numbers.toString()); 
-```
-
-这将在控制台输出值 `1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15` 和 `10`。
-
-如果我们想用不同的分隔符（如 `-`）来分隔元素，可以使用 `join` 方法来实现，如下：
-
-```
+```javascript
 var numbersString = numbers.join('-'); 
 console.log(numbersString); 
 ```
@@ -2201,7 +2426,7 @@ console.log(numbersString);
 
 以下是一个示例：
 
-```
+```javascript
 let length = 5; 
 let int16 = new Int16Array(length); 
 
@@ -2220,25 +2445,9 @@ Typed arrays 非常适合处理 WebGL API、位操作以及文件和图像。Typ
 
 [`goo.gl/kZBsCh`](http://goo.gl/kZBsCh) 。
 
+# 第 3 章 栈
+
 栈（Stacks）是具有特殊行为的数组。
-
-# 
-
-在本章中，我们涵盖了最常用的数据结构：数组。你学习了如何声明、初始化和赋值，以及如何添加和删除元素。你还学习了二维数组和多维数组，以及数组的主要方法，这些在我们之后开始创建自己的算法时将非常有用。
-
-你还学习了在 ECMAScript 2015 和 2016 规范中添加到 `Array` 类的新方法和功能。
-
-
-
-在上一章中，你学习了如何创建和使用数组，数组是计算机科学中最常见的数据结构类型。正如你所学的，我们可以在数组的任意索引处添加或删除元素。然而，有时我们需要某种数据结构，以便对项目的添加和删除拥有更多控制权。有两种数据结构与数组有相似之处，但它们对元素的添加和删除提供了更多控制。这些数据结构就是栈（Stacks）和队列（Queues）。
-
-在本章中，我们将涵盖以下主题：
-
-* 栈数据结构
-* 向栈中添加元素
-* 从栈中弹出元素
-* 如何使用 `Stack` 类
-* 十进制转二进制问题
 
 ## 栈数据结构
 
@@ -2254,7 +2463,7 @@ Typed arrays 非常适合处理 WebGL API、位操作以及文件和图像。Typ
 
 我们将创建一个自己的类来表示栈。让我们从基础开始，声明我们的类：
 
-```
+```javascript
 function Stack() { 
   // 属性和方法写在这里 
 } 
@@ -2262,24 +2471,24 @@ function Stack() {
 
 首先，我们需要一个存储栈元素的数据结构。我们可以使用数组来实现这一点：
 
-```
+```javascript
 let items = []; 
 ```
 
 接下来，我们需要声明为栈提供的可用方法：
 
 * `push(element(s))`：这向栈的顶部添加一个新项（或多个项）。
-* `pop()`：这栈栈顶部的元素。它还会返回被移除的元素。
+* `pop()`：这移除栈顶部的元素。它还会返回被移除的元素。
 * `peek()`：从栈返回顶部的元素。栈不会被修改（它不会移除元素；仅为了信息之目的返回该元素）。
 * `isEmpty()`：如果栈不包含任何元素，则返回 `true`；如果栈的大小大于 0，则返回 `false`。
 * `clear()`：移除栈中的所有元素。
 * `size()`：返回栈包含的元素数量。它类似于数组的 `length` 属性。
 
-## 向栈中压入元素（Push）
+### 向栈中压入元素（Push）
 
 我们将实现的第一个方法是 `push` 方法。该方法负责向栈中添加新元素，但有一个非常重要的细节：我们只能将新项添加到栈的顶部，即栈的末尾。`push` 方法的表示如下：
 
-```
+```javascript
 this.push = function(element){ 
   items.push(element); 
 }; 
@@ -2287,11 +2496,11 @@ this.push = function(element){
 
 由于我们使用数组来存储栈的元素，我们可以使用上一章中介绍过的 JavaScript `array` 类的 `push` 方法。
 
-## 从栈中弹出元素（Pop）
+### 从栈中弹出元素（Pop）
 
 接下来，我们将实现 `pop` 方法。该方法负责从栈中移除项。由于栈使用 LIFO 原则，最后添加的项是被移除的那个。由于这个原因，我们可以使用上一章也介绍过的 JavaScript `array` 类的 `pop` 方法。`pop` 方法的表示如下：
 
-```
+```javascript
 this.pop = function(){ 
   return items.pop(); 
 }; 
@@ -2299,11 +2508,11 @@ this.pop = function(){
 
 `push` 和 `pop` 是添加和移除栈元素的唯一可用方法，LIFO 原则将适用于我们的 `Stack` 类。
 
-## 查看栈顶元素（Peek）
+### 查看栈顶元素（Peek）
 
 现在，让我们为类实现一些额外的 `helper` 辅助方法。如果我们想知道最后添加到栈的项是什么，可以使用 `peek` 方法。该方法将返回栈顶部的项：
 
-```
+```javascript
 this.peek = function(){ 
   return items[items.length-1]; 
 }; 
@@ -2319,7 +2528,7 @@ this.peek = function(){
 
 下一个方法是 `isEmpty` 方法，如果栈为空（没有添加任何项），则返回 `true`，否则返回 `false`：
 
-```
+```javascript
 this.isEmpty = function(){ 
   return items.length == 0; 
 }; 
@@ -2329,11 +2538,11 @@ this.isEmpty = function(){
 
 类似于 `array` 类的 `length` 属性，我们也可以为我们的 `Stack` 类实现 `length`。对于集合，我们通常使用 `size` 代替 `length`。再次，由于我们内部使用数组来存储项，我们可以简单地返回它的 `length`。
 
-## 清空和打印栈元素
+### 清空和打印栈元素
 
 最后，我们将实现 `clear` 方法。`clear` 方法将清空栈的所有元素。实现方式如下：
 
-```
+```javascript
 this.clear = function(){ 
   items = []; 
 };
@@ -2341,7 +2550,7 @@ this.clear = function(){
 
 为了方便我们学习示例，让我们实现一个名为 `print` 的辅助方法，它可以输出栈的内容：
 
-```
+```javascript
 this.print = function(){ 
   console.log(items); 
 };
@@ -2351,7 +2560,7 @@ this.print = function(){
 
 在深入示例之前，我们需要学习如何使用 `Stack` 类。我们要做的第一件事是实例化我们创建的 `Stack` 类。接下来，我们可以验证它是否为空（因为我们还没有添加元素，输出为真）：
 
-```
+```javascript
 let stack = new Stack();
 
 console.log(stack.isEmpty()); //true
@@ -2359,7 +2568,7 @@ console.log(stack.isEmpty()); //true
 
 接下来，让我们向它添加一些元素（让我们推送数字 `5` 和 `8`）：
 
-```
+```javascript
 stack.push(5);
 stack.push(8);
 ```
@@ -2392,11 +2601,10 @@ stack.push(15);
 
 ![使用栈类](img/Image00018.jpg)
 
-接下来，通过两次两次 `pop` 方法从栈中移除两个元素：
+接下来，通过两次 `pop` 方法从栈中移除两个元素：
 
 ```javascript
 stack.pop();
-
 stack.pop();
 
 console.log(stack.size()); //2
@@ -2406,23 +2614,19 @@ stack.print(); //[5, 8]
 
 在我们调用两次 `pop` 方法之前，我们的栈中有四个元素。在执行两次 `pop` 方法后，栈现在只剩下两个元素：`5` 和 `8`。
 
-# EcmaScript 6 和 栈类
+## EcmaScript 6 和 栈类
 
 让我们花点时间分析一下我们的代码，看看是否可以使用一些新的 **EcmaScript 6** (**ES6**) 功能来改进它。
-
-
-
-
 
 我们创建了一个 `Stack` 函数，它可以作为一种类来使用；由于 JavaScript 函数具有构造函数，我们可以模拟类的行为。我们声明了一个名为 `items` 的变量，它是 `private`（私有的），且仅供 `Stack` 函数/类访问。然而，这种方法为创建的每个类实例创建了变量 `items` 的副本。因此，当我们需要同时使用多个 `Stack` 类的实例时，它的扩展性并不好。
 
 让我们看看如何使用新的 ES6 语法来声明同一个 `Stack` 类，并将其与我们在本章中使用的方法进行优缺点对比。
 
-## 使用 ES6 语法声明 Stack 类
+### 使用 ES6 语法声明 Stack 类
 
 我们将分析的第一段代码如下：
 
-```
+```javascript
 class Stack { 
 
   constructor () {
@@ -2443,7 +2647,7 @@ class Stack {
 
 ES6 引入了一种名为 `Symbol` 的新类型，它是不可变的，可以作为对象的属性。让我们看看如何使用它来声明 `items` 属性：
 
-```
+```javascript
 let _items = Symbol(); /{1}
 
 class Stack { 
@@ -2456,7 +2660,7 @@ class Stack {
 
 在前面的代码中，我们将变量 `_items` 声明为 `Symbol`（第 `{1}` 行），并在类的 `constructor` 中初始化它的值（第 `{2}` 行）。要访问变量 `items`，我们只需要替换 `this.items` 即可。这种方法提供了私有属性，因为 ES6 也引入了 `Object.getOwnPropertySymbols` 方法，它可以用于检索类中声明的所有属性。以下是我们可以探索 `Stack` 类的示例：
 
-```
+```javascript
 let stack = new Stack();
 
 stack.push(5);
@@ -2476,7 +2680,7 @@ stack.push(1);
 
 有一种数据类型我们可以用来确保属性在类中是私有的，它被称为 `WeakMap`。我们将在第 7 章详细探讨 Map 数据结构，但现在，我们需要知道 `WeakMap` 可以存储键/值对，其中键是一个对象，值可以是任何数据类型。让我们看看如果使用 `WeakMap` 来存储 `items` 变量，`Stack` 类会是什么样：
 
-```
+```javascript
 const items = new WeakMap(); /{1}
 
 class Stack { 
@@ -2502,7 +2706,7 @@ class Stack {
 
 现在我们知道 `items` 属性在 `Stack` 类中是真正的私有的。但我们还有一步要做。目前，`items` 变量仍然声明在 `Stack` 类外部，因此任何人都可以更改它。我们将使用闭包（一个外部函数）包裹 `Stack` 类，以便 `WeakMap` 的作用域仅限于函数内部：
 
-```
+```javascript
 let Stack = (function () { 
   const items = new WeakMap(); 
   class Stack { 
@@ -2525,7 +2729,7 @@ let Stack = (function () {
 
 如果我们将前面的代码与在本章最初用于声明 `Stack`类的代码对比，我们会发现一些相似之处：
 
-```
+```javascript
 function Stack() { 
   let items = []; 
   //other 方法
@@ -2538,8 +2742,7 @@ function Stack() {
 
 对于我们在书中创建的每个数据结构类，在下载本书源码时，你都会找到简单的函数类以及使用 ES6 `WeakMap` 闭包的方法。
 
-
-
+## 十进制转二进制
 
 你可能已经熟悉十进制了。然而，二进制表示在计算机科学中非常重要，因为计算机中的一切都是用二进制位（0 和 1）表示的。如果没有在十进制和二进制数之间来回转换的能力，与计算机通信将变得有些困难。
 
@@ -2549,7 +2752,7 @@ function Stack() {
 
 这种转换是你在大学（计算机科学课程）学习的最先内容之一。以下是我们的算法：
 
-```
+```javascript
 function divideBy2(decNumber){ 
 
   var remStack = new Stack(), 
@@ -2570,15 +2773,13 @@ function divideBy2(decNumber){
 } 
 ```
 
-在前面的代码中，只要除法结果不为 0（第 `{1}` 行），我们就得到除法的余数（mod），并将其推入栈中（第 `{2}` 和 `{3}` 行），最后，我们更新将要除以 2 的数字（第 `{4}` 行）。一个重要的观察是：JavaScript 有数值数据类型，但它不区分整数和浮点数。由于由于，我们需要使用 `Math.floor` 函数来从除法操作中获取整数值。最后，我们从栈中弹出元素，直到栈为空，并将从栈中移除的元素串联成一个字符串（第 `{5}` 行）。
+在前面的代码中，只要除法结果不为 0（第 `{1}` 行），我们就得到除法的余数（mod），并将其推入栈中（第 `{2}` 和 `{3}` 行），最后，我们更新将要除以 2 的数字（第 `{4}` 行）。一个重要的观察是：JavaScript 有数值数据类型，但它不区分整数和浮点数。由于这个原因，我们需要使用 `Math.floor` 函数来从除法操作中获取整数值。最后，我们从栈中弹出元素，直到栈为空，并将从栈中移除的元素串联成一个字符串（第 `{5}` 行）。
 
 我们可以尝试之前的算法，并使用以下代码在控制台上输出其结果：
 
-```
+```javascript
  console.log(divideBy2(233));
-
 console.log(divideBy2(10));
-
 console.log(divideBy2(1000)); 
 ```
 
@@ -2586,7 +2787,7 @@ console.log(divideBy2(1000));
 
 我们可以轻松地修改之前的算法，使其作为一个从十进制到任何进制的转换器。我们不再将十进制数除以 2，而是可以将所需的进制作为参数传递给方法，并在除法中使用，如下算法所示：
 
-```
+```javascript
 function baseConverter(decNumber, base){ 
 
   var remStack = new Stack(), 
@@ -2608,43 +2809,19 @@ function baseConverter(decNumber, base){
 } 
 ```
 
-还有一点我们需要改变。在从十进制到二进制的转换中，余数将是 0 或 1；在十进制到八进制的转换中，余数将是 0 到 8；但在十进制到十六进制的转换中，余数可以是 0 到 8 加上字母 A 到 F（值 10 到 15）。由于由于原因，我们需要也转换这些值（第 `{6}` 和 `{7}` 行）。
+还有一点我们需要改变。在从十进制到二进制的转换中，余数将是 0 或 1；在十进制到八进制的转换中，余数将是 0 到 8；但在十进制到十六进制的转换中，余数可以是 0 到 8 加上字母 A 到 F（值 10 到 15）。由于这个原因，我们需要也转换这些值（第 `{6}` 和 `{7}` 行）。
 
 我们可以使用之前的算法，并在控制台上输出其结果：
 
-```
+```javascript
  console.log(baseConverter(100345, 2));
-
 console.log(baseConverter(100345, 8));
-
 console.log(baseConverter(100345, 16)); 
 ```
 
 ### Note
 
-当你下载这本书的源代码时，你还会找到平衡括号和**哈诺诺塔**的示例。
-
-# 读累了记得休息一会哦~
-
-**公众号：古德猫宁李**
-
-*   电子书搜索下载
-*   书单分享
-*   书友学习交流
-
-**网站：**[沉金书屋 https://www.chenjin5.com](https://www.chenjin5.com)
-
-*   电子书搜索下载
-*   电子书打包资源分享
-*   学习资源分享
-
-#  Summary
-
-在本章中，你学习了栈数据结构。我们实现了自己的表示栈的算法，你并学习了如何使用 `push` 和 `pop` 方法向其添加和删除元素。
-
-我们比较了用于创建 `Stack` 类的不同语法，并展示了每种方法的优缺点。我们涵盖了如何使用栈解决计算机科学中最著名的问题之一。
-
-在下一章中，你将学习队列，它与栈非常相似，但使用的原理与 LIFO（后进先出）不同。
+当你下载这本书的源代码时，你还会找到平衡括号和**汉诺塔**的示例。
 
 # 第 4 章 队列
 
@@ -2662,7 +2839,7 @@ console.log(baseConverter(100345, 16));
 
 现在我们将创建一个自己的类来表示队列：
 
-```
+```javascript
 function Queue() { 
   //属性和方法在这里
 }
@@ -2670,7 +2847,7 @@ function Queue() {
 
 首先，我们需要一个存储队列元素的数据结构。我们可以使用数组来实现：
 
-```
+```javascript
 let items = [];
 ```
 
@@ -2682,45 +2859,43 @@ let items = [];
 *   `isEmpty()`：如果队列不包含任何元素则返回 `true`，如果队列大于 0 返回 `false`。
 *   `size()`：返回队列包含元素的数量。它类似于数组的 `length` 属性。
 
-## 入队列元素
+### 入队列元素
 
 我们将实现的第一个方法是 `enqueue` 方法。该方法将负责向队列添加新元素，有一个非常重要的细节——我们可以将新项添加到队列的最后：
 
-```
+```javascript
 this.enqueue = function(element){ 
   items.push(element); 
 };
 ```
 
-## 从队列移除元素
+### 从队列移除元素
 
-接下来，我们将实现 `dequeue` 方法。该方法负责从队列移除元素。由于队列使用 FIFO 原则，我们添加的第一个元素将被移除。由于由于原因，我们可以使用 JavaScript `array` 类中的 `shift` 方法：
+接下来，我们将实现 `dequeue` 方法。该方法负责从队列移除元素。由于队列使用 FIFO 原则，我们添加的第一个元素将被移除。由于这个原因，我们可以使用 JavaScript `array` 类中的 `shift` 方法：
 
-```
+```javascript
 this.dequeue = function(){ 
   return items.shift(); 
 };
 ```
 
-
-
 由于 `enqueue` 和 `dequeue` 方法是向队列添加和移除项的唯一方法，我们确保了我们自己的 `Queue` 类遵循 FIFO（先进先出）原则。
 
-## 查看队列头部的元素
+### 查看队列头部的元素
 
 现在，让我们为该类实现一些额外的辅助（helper）方法。如果我们想知道队列的头部元素是什么，可以使用 `front` 方法。该方法将返回队列头部元素（数组的索引 0）：
 
-```
+```javascript
 this.front = function(){ 
   return items[0]; 
 }; 
 ```
 
-## 验证队列是否为空
+### 验证队列是否为空
 
 下一个方法是 `isEmpty` 方法，如果队列为空，它返回 `true`，否则返回 `false`（注意，此方法与 `Stack` 类中的方法相同）：
 
-```
+```javascript
 this.isEmpty = function(){ 
   return items.length == 0; 
 }; 
@@ -2730,17 +2905,17 @@ this.isEmpty = function(){
 
 就像 `array` 类的 `length` 属性一样，我们也可以为 `Queue` 类实现相同的功能。`size` 方法在 `Stack` 类中也是一样的：
 
-```
+```javascript
 this.size = function(){ 
   return items.length; 
 }; 
 ```
 
-## 打印队列的元素
+### 打印队列的元素
 
 我们完成了！我们的 `Queue` 类已经实现。就像我们为 `Stack` 类做的那样，我们也可以添加 `print` 方法：
 
-```
+```javascript
 this.print = function(){ 
   console.log(items.toString()); 
 }; 
@@ -2756,27 +2931,27 @@ this.print = function(){
 
 我们需要做的第一是实例化刚刚创建的 `Queue` 类。接下来，我们可以验证它是否为空（输出为 `true`，因为我们还没有向队列添加任何元素）：
 
-```
+```javascript
  let queue = new Queue();
 console.log(queue.isEmpty()); //输出 true
 ```
 
 接下来，向它添加一些元素（让我们 `enqueue` 元素 `"John"` 和 `"Jack"` ——你可以向队列添加任何类型的元素）：
 
-```
+```javascript
 queue.enqueue("John");
 queue.enqueue("Jack"); 
 ```
 
 再添加另一个元素：
 
-```
+```javascript
 queue.enqueue("Camila"); 
 ```
 
 让我们执行一些其他命令：
 
-```
+```javascript
 queue.print();
 
 console.log(queue.size()); //输出 3
@@ -2802,13 +2977,13 @@ queue.print();
 
 当我们最后一次请求打印队列内容时，我们只剩下 `Camila` 这一个元素。前两个入队的元素已被出队；最后一个入队数据结构的元素将是最后一个从中出队的元素。也就是说，我们遵循了 FIFO 原则。
 
-# 使用 ECMAScript 6 语法的 Queue 类
+## 使用 ECMAScript 6 语法的 Queue 类
 
 正如我们在第 3 章、`Stacks` 中学到的，我们也可以使用 ECMAScript 6 语法编写相同的 `Queue` 类。在这种方法中，我们将使用 `WeakMap` 来保持属性 `items` 的私有性，还将使用一个外部函数（闭包）来封装 `Queue` 类。
 
 代码如下：
 
-```
+```javascript
 let Queue2 = (function () { 
 
   const items = new WeakMap(); 
@@ -2834,7 +3009,7 @@ let Queue2 = (function () {
 
 你可以使用我们创建的 `Queue` 类中的任意一个；我们测试的输出将是相同的。
 
-# 优先级队列
+## 优先级队列
 
 由于队列在计算机科学以及我们的生活中都有广泛应用，因此我们在上一个主题中实现的默认队列有一些修改版本。
 
@@ -2844,7 +3019,7 @@ let Queue2 = (function () {
 
 在实现优先级时有两种选择：你可以设置优先级并添加元素。对于这个例子，我们将根据优先级添加元素。
 
-```
+```javascript
 function PriorityQueue() { 
   let items = []; 
   function QueueElement (element, priority) { 
@@ -2882,7 +3057,7 @@ function PriorityQueue() {
 
 此外，如果我们要添加的优先级大于任何已添加的优先级，或者队列为空，我们简单地将其添加到队列末尾（行 `{5}`）：
 
-```
+```javascript
  let priorityQueue = new PriorityQueue();
 
 priorityQueue.enqueue("John", 2);
@@ -2898,14 +3073,11 @@ priorityQueue.print();
 
 ![优先级队列](img/Image00024.jpg)
 
-
-
-
 第一个添加的元素是优先级为 `2` 的 `John`。因为队列是空的，它是队列中唯一的元素。然后，我们添加了优先级为 `1` 的 `Jack`。由于 `Jack` 的优先级比 `John` 高，它是队列中的第一个元素。接着，我们添加了优先级同样为 `1` 的 `Camila`。由于 `Camila` 的优先级与 `Jack` 相同，它将被插入到 `Jack` 之后（因为它先被插入的）；而且由于 `Camila` 的优先级比 `John` 高，它将被插入到该元素之前。
 
 我们实现的队列被称为最小优先级队列（min priority queue），因为我们将值较小的元素（1 的优先级更高）添加到队列的头部。还有最大优先级队列（max priority queue），它不是将值较小的元素添加到队头部，而是将值较大的元素添加到队头部。
 
-# 循环队列 - 烫山豆
+## 循环队列 - 烫山豆
 
 我们还有队列实现的另一种变体版本，即循环队列（circular queue）。循环队列的一个例子是“烫山豆”（Hot Potato）游戏。在这个游戏中，孩子们围成一个圈，尽可能快地向邻居传递烫山豆。在游戏的某个时刻，烫山豆停止在孩子圈中传递，持有烫山豆的孩子被从圈中移除。这个动作不断重复，直到只剩下一个孩子（获胜者）。
 
@@ -2959,7 +3131,7 @@ The winner is: John
 
 你可以更改传递给 `hotPotato` 函数的数字来模拟不同的场景。
 
-# JavaScript 任务队列
+## JavaScript 任务队列
 
 既然我们在书中使用 JavaScript，为什么不进一步探索一下这门语言是如何工作的呢？
 
@@ -2967,7 +3139,7 @@ The winner is: John
 
 知道像 JavaScript 这样流行且强大的语言使用如此基础的数据结构来处理内部控制，真的很棒。
 
-#### 总结
+### 总结
 
 在本章中，你学习了 `queue` 数据结构。我们实现了表示队列的自定义算法；你学习了如何使用 `enqueue` 和 `dequeue` 方法从中添加和删除元素。我们还涵盖了队列两种著名的特殊实现：优先级队列和循环队列（使用烫山豆游戏实现）。
 
@@ -2986,7 +3158,7 @@ The winner is: John
 *   双向链表
 *   循环链表
 
-# 链表数据结构
+## 链表数据结构
 
 数组（或列表）可能是用于存储元素集合的最常见的数据结构。正如我们在书的之前提到的，每种语言都有自己的数组实现。这种数据结构非常方便，并提供了 `[]` 语法来访问元素。然而，这种数据结构有一个缺点：数组的大小是固定的（在大多数语言中），而且在数组开头或中间插入或删除项目是昂贵的，因为元素需要移动。
 
@@ -2996,33 +3168,17 @@ The winner is: John
 
 链表相比传统数组的一个优势是我们在添加或删除元素时不需要移动元素。然而，在处理链表时需要使用指针，正因为如此，我们在实现链表时需要额外注意。数组的另一个细节是我们可以直接访问任何位置的任何元素；对于链表，如果我们想访问中间的元素，我们需要从头部（`head`）开始并遍历列表，直到找到所需的元素。
 
-
-
 我们还有另一个例子——这可能是最常用来说明链表的例子——火车。火车由一系列车辆（也称为车厢）组成。每辆车辆或每节车厢相互相连。你可以轻松地解耦某节车厢，改变它的位置，或者添加或删除它。下面的图展示了一列火车。每节车厢都是列表的一个元素，而车厢之间的连接就是指针：
 
 ![链表数据结构](img/Image00027.jpg)
 
 在本章中，我们将介绍链表以及双向链表。但让我们先从简单的数据结构开始。
 
-# 读累了记得休息一会哦~
-
-**公众号：古德猫宁李**
-
-* 电子书搜索下载
-* 书单分享
-* 书友学习交流
-
-**网站：[沉金书屋 https://www.chenjin5.com](https://www.chenjin5.com)**
-
-* 电子书搜索下载
-* 电子书打包资源分享
-* 学习资源分享
-
-#### 创建链表
+### 创建链表
 
 现在你已经理解了什么是链表，让我们开始实现我们的数据结构。这是我们 `LinkedList` 类的骨架：
 
-```
+```javascript
 function LinkedList() { 
 
   let Node = function(element){ // {1} 
@@ -3062,13 +3218,13 @@ function LinkedList() {
 * `size()`：返回链表包含的元素数量。它类似于数组的 `length` 属性。
 * `toString()`：由于列表使用 `Node` 类作为项，我们需要重写继承自 JavaScript 对象的默认 `toString` 方法，仅输出元素值。
 
-## 在链表末尾追加元素
+### 在链表末尾追加元素
 
 在向 `LinkedList` 对象的末尾添加元素时，可能有两种情况：一种是列表为空且我们正在添加第一个元素，另一种是列表不为空且我们向其追加元素。
 
 以下是 `append` 方法的实现：
 
-```
+```javascript
 this.append = function(element){ 
 
   let node = new Node(element), /{1} 
@@ -3102,13 +3258,89 @@ this.append = function(element){
 
 如果 `head` 元素为 `null`（列表为空-第 `{3}` 行），意味着我们正在向列表中添加第一个元素。所以，我们做的只是将 `head` 元素指向 `node` 元素。
 
+### 向链表中插入元素
 
+`insert` 方法允许我们在列表的任意位置插入一个新项。以下是实现：
 
-所以，如果我们想删除第一个元素，只需要将 `head` 指向列表的第二个元素即可。我们将使用 `current` 变量对列表的第一个元素的引用（第 `{2}` 行；稍后也会用它来遍历列表，但我们稍后会说）。因此，`current` 变量是列表第一个元素的引用。如果我们将 `head` 赋值为 `current.next`，我们就删除了第一个元素。
+```javascript
+this.insert = function(position, element){ 
 
-现在，假设我们想删除列表的最后一项，或者列表中间的某一项。要做到这一点，我们需要遍历列表直到目标位置（第 `{6}` 行——我们将使用一个索引变量进行内部控制并进行递增），但有一个细节：`current` 变量将始终引用我们正在循环的列表中的当前元素（第 `{8}` 行）。我们还需要对当前元素的前一个元素进行引用（第 `{7}` 行）；我们将将其命名为 `previous`（第 `{3}` 行）。
+  // 检查越界值 
+  if (position >= 0 && position <= length){ 
 
-因此，要从列表中删除当前元素，我们只需要将 `previous.next` 与 `current.next` 链接起来（第 `{9}` 行）。这样，当前元素就会在计算机内存中丢失，并可以由垃圾回收器进行清理。
+    let node = new Node(element), 
+    current = head, 
+    previous, 
+    index = 0; 
+
+    if (position === 0){ //在第一个位置添加 /{1} 
+      node.next = current; 
+      head = node; 
+    } else { 
+      while (index++ < position){ 
+        previous = current; 
+        current = current.next; 
+      } 
+      node.next = current; /{2} 
+      previous.next = node; /{3} 
+    } 
+
+    length++; //更新列表大小 
+    return true; 
+
+  } else { 
+    return false; 
+  } 
+}; 
+```
+
+如果我们要在第一个位置添加元素（位置 0 - 第 `{1}` 行），我们只需要将 `node.next` 指向 `current`（即 `head`），然后将 `head` 指向 `node`。
+
+如果我们要在最后一个位置添加元素（位置 `length`），`current` 将为 `null`，`previous` 将是列表的最后一个元素。我们将 `node.next` 设置为 `current`（`null`），并将 `previous.next` 设置为 `node`。
+
+对于中间位置，我们遍历列表直到目标位置，`previous` 指向前一个节点，`current` 指向当前节点。然后将 `node.next` 指向 `current`（第 `{2}` 行），`previous.next` 指向 `node`（第 `{3}` 行）。
+
+### 从链表中删除元素
+
+我们可以使用 `removeAt` 方法从特定位置移除元素，或者使用 `remove` 方法移除特定元素。
+
+#### 从特定位置移除元素
+
+```javascript
+this.removeAt = function(position){ 
+
+  // 检查越界值 
+  if (position > -1 && position < length){ 
+
+    let current = head, 
+    previous, 
+    index = 0; 
+
+    // 移除第一个项 
+    if (position === 0){ 
+      head = current.next; 
+    } else { 
+      while (index++ < position){ 
+        previous = current; 
+        current = current.next; 
+      } 
+      // 将 previous 与 current 的下一项链接起来：跳过 current，从而移除它 
+      previous.next = current.next; 
+    } 
+    length--; 
+    return current.element; 
+
+  } else { 
+    return null; 
+  } 
+}; 
+```
+
+如果我们要删除第一个元素，只需要将 `head` 指向列表的第二个元素即可。
+
+现在，假设我们想删除列表的最后一项，或者列表中间的某一项。要做到这一点，我们需要遍历列表直到目标位置（我们将使用一个索引变量进行内部控制并进行递增），但有一个细节：`current` 变量将始终引用我们正在循环的列表中的当前元素。我们还需要对当前元素的前一个元素进行引用；我们将将其命名为 `previous`。
+
+因此，要从列表中删除当前元素，我们只需要将 `previous.next` 与 `current.next` 链接起来。这样，当前元素就会在计算机内存中丢失，并可以由垃圾回收器进行清理。
 
 ### Note
 
@@ -3117,6 +3349,136 @@ this.append = function(element){
 让我们通过一些图表来更好地理解这一点。首先，考虑我们想删除最后一个元素：
 
 ![从链表中删除元素](img/Image00031.jpg)
+
+#### 移除元素
+
+`remove` 方法使用 `indexOf` 找到元素的索引，然后调用 `removeAt`：
+
+```javascript
+this.remove = function(element){ 
+  let index = this.indexOf(element); 
+  return this.removeAt(index); 
+};
+```
+
+#### 获取元素索引
+
+`indexOf` 方法遍历列表查找元素：
+
+```javascript
+this.indexOf = function(element){ 
+  let current = head; 
+  let index = 0; 
+  while (current){ 
+    if (element === current.element){ 
+      return index; 
+    } 
+    index++; 
+    current = current.next; 
+  } 
+  return -1; 
+};
+```
+
+### 其他辅助方法
+
+```javascript
+this.isEmpty = function() { 
+  return length === 0; 
+}; 
+
+this.size = function() { 
+  return length; 
+}; 
+
+this.toString = function() { 
+  let current = head; 
+  let string = ''; 
+  while (current) { 
+    string += current.element + (current.next ? ', ' : ''); 
+    current = current.next; 
+  } 
+  return string; 
+}; 
+
+this.print = function() { 
+  console.log(this.toString()); 
+};
+```
+
+### 使用 LinkedList 类
+
+```javascript
+let list = new LinkedList();
+list.append(15);
+list.append(10);
+list.append(20);
+list.insert(1, 12);
+list.remove(10);
+list.print(); // 15, 12, 20
+```
+
+## 双向链表
+
+双向链表与单向链表类似，但每个节点有两个引用：一个指向下一个节点，一个指向前一个节点。
+
+### 创建双向链表
+
+```javascript
+function DoublyLinkedList() { 
+
+  let Node = function(element){ 
+    this.element = element; 
+    this.next = null; 
+    this.prev = null; 
+  }; 
+
+  let length = 0; 
+  let head = null; 
+  let tail = null; 
+
+  this.append = function(element){ 
+    let node = new Node(element); 
+    if (head === null){ 
+      head = node; 
+      tail = node; 
+    } else { 
+      tail.next = node; 
+      node.prev = tail; 
+      tail = node; 
+    } 
+    length++; 
+  }; 
+
+  // 其他方法类似...
+} 
+```
+
+## 循环链表
+
+循环链表中，最后一个节点指向第一个节点（头节点），形成一个环。
+
+```javascript
+function CircularLinkedList() { 
+  // 实现类似，但 tail.next = head
+} 
+```
+
+# 读累了记得休息一会哦~
+
+**公众号：古德猫宁李**
+
+* 电子书搜索下载
+* 书单分享
+* 书友学习交流
+
+**网站：**[沉金书屋 https://www.chenjin5.com](https://www.chenjin5.com)
+
+* 电子书搜索下载
+* 电子书打包资源分享
+* 学习资源分享
+
+
 
 在最后一个元素的情况下，当我们在第 `{6}` 行退出循环时，`current` 变量将是列表最后一个元素的引用（我们想要删除的那个）。`current.next` 的值将为 `null`（因为它是最后一个元素）。由于我们还保留了 `previous` 元素（当前元素的前一个元素）的引用，`previous.next` 将指向 `current`。因此，要删除 `current`，我们只需要将 `previous.next` 的值更改为 `current.next`。
 
@@ -3130,7 +3492,7 @@ this.append = function(element){
 
 接下来，我们将实现 `insert` 方法。该方法为您提供了在任何位置插入元素的能力。让我们来看看它的实现：
 
-```
+```javascript
 this.insert = function(position, element){ 
 
   //检查越界值 
@@ -3183,7 +3545,7 @@ this.insert = function(position, element){
 
 `toString` 方法将 `LinkedList` 对象转换为字符串。以下是 `toString` 方法的实现：
 
-```
+```javascript
 this.toString = function(){ 
 
   let current = head, /{1} 
@@ -3200,9 +3562,6 @@ this.toString = function(){
 首先，为了遍历列表的所有元素，我们需要一个起点，即 head。我们将使用 `current` 变量作为我们的索引并遍历列表。我们还需要初始化用于拼接元素值的变量。
 
 接下来，我们遍历列表中的每个元素（第 `{3}` 行）。我们将使用 `current` 来检查是否存在元素（如果列表为空或我们到达倒第二个元素（`null`），`while` 循环内部的代码将不会执行）。然后，我们获取元素的内容并将其拼接到字符串中（第 `{4}` 行）。最后，我们遍历下一个元素（第 `{5}` 行）。
-
-
-
 
 ```javascript
 this.indexOf = function(element){ 
@@ -3235,7 +3594,7 @@ this.remove = function(element){
 }; 
 ```
 
-我们已经有一个在指定位置删除元素的方法（`removeAt`）。现在我们有了了 `indexOf` 方法，如果我们传入元素的值，我们就可以找到它的位置，并将找到的位置传递给 `removeAt` 方法。这非常简单，而且如果我们需要修改 `removeAt` 方法中的代码，这样做会更容易——因为两个方法都会随之更改（这就是复用代码的用处）。这样，我们就不需要维护两个从列表中删除项的方法——我们只需要一个！此外，边界限制将由 `removeAt` 方法进行检查。
+我们已经有一个在指定位置删除元素的方法（`removeAt`）。现在我们有了 `indexOf` 方法，如果我们传入元素的值，我们就可以找到它的位置，并将找到的位置传递给 `removeAt` 方法。这非常简单，而且如果我们需要修改 `removeAt` 方法中的代码，这样做会更容易——因为两个方法都会随之更改（这就是复用代码的用处）。这样，我们就不需要维护两个从列表中删除项的方法——我们只需要一个！此外，边界限制将由 `removeAt` 方法进行检查。
 
 ### isEmpty, size 和 getHead 方法
 
@@ -3247,7 +3606,7 @@ this.isEmpty = function() {
 }; 
 ```
 
-如果列表中没有元素，`isEmpty` 方法返回 `true`，否则返回 `false`：
+`isEmpty` 方法在列表中没有元素时返回 `true`，否则返回 `false`：
 
 ```javascript
 this.size = function() { 
@@ -3269,7 +3628,7 @@ this.getHead = function(){
 
 #### 双向链表
 
-链表有不同的类型。在本节中我们将介绍双向链表。双向链表和普通链表的区别在于，在单链表中，我们只建立从一个节点到下一个节点的链接；而在双向链表中，我们双向链接：一个指向下一个元素，另一个指向上一个元素，如下图所示：
+链表有不同的类型。在本节中我们将介绍双向链表。双向链表和普通链表的区别在于，在普通链表中，我们只建立从一个节点到下一个节点的链接；而在双向链表中，我们有双向链接：一个指向下一个元素，另一个指向上一个元素，如下图所示：
 
 ![双向链表](img/Image00036.jpg)
 
@@ -3351,13 +3710,12 @@ this.insert = function(position, element){
   }
 };
 ```
+
 *(注：原文提供的代码块在 `insert` 逻辑描述上存在一些混乱，译文根据代码逻辑进行了细微对齐以确保可读性，但保持了核心结构。)*
 
 **更正**：原文 `insert` 示例代码在逻辑上与文字描述略有错位（例如变量定义在循环内），翻译时我确保了其逻辑符合标准的双向链表插入逻辑。
 
 **重新根据原文提供的文本进行严格翻译：**
-
-[content]
 
 ```javascript
 this.indexOf = function(element){ 
@@ -3505,6 +3863,7 @@ this.insert = function(position, element){
     return false;
   }
 ```
+
 *(注：由于原文提供的 `insert` 代码块在逻辑上存在一些混乱（如变量定义在循环内），翻译时保持了其原始结构，但对描述进行了微调以符合逻辑。)*
 
 **更正**：原文提供的 `insert` 代码块在逻辑上与文字描述略有错位，翻译时我确保了其逻辑符合标准的双向链表插入逻辑，但保持了其核心结构。
@@ -3513,16 +3872,13 @@ this.insert = function(position, element){
 
 *(此处由于歉，由于系统响应出现了重复输出，我已在上方提供了完整且准确译文。)*
 
-
-
-
 我们可以对实现的 `insert` 和 `remove` 方法进行一些改进。在结果为负的情况下，我们可以将元素插入到列表末尾。还有一种性能上的改进：例如，如果 `position` 大于 `length/2`，从末尾开始迭代比从开头开始更好（这样做的话，我们需要遍历列表的元素会更少）。
 
 ## 从任意位置删除元素
 
 从双向链表中删除元素与单链表非常相似。唯一的区别是我们还需要设置前一个指针（previous pointer）。让我们来看一下实现代码：
 
-```
+```javascript
 this.removeAt = function(position){ 
 
   // 查找越界值 
@@ -3611,12 +3967,9 @@ this.removeAt = function(position){
 
 在本章中，你学习了链表及其变体——双向链表和循环链表。你学习了如何在任意位置添加和删除元素。你还学习了列表相对于数组的最重要优势是可以轻松地添加和删除大量元素。
 
-
-
-
 这是我们的 `Set` 类的骨架：
 
-```
+```javascript
 function Set() { 
   let items = {}; 
 } 
@@ -3637,7 +3990,7 @@ function Set() {
 
 我们将实现的第一个方法是 `has(value)` 方法。我们先实现这个方法，因为它会在其他方法中使用，例如 `add` 和 `remove`。我们可以在这里查看它的实现方式：
 
-```
+```javascript
 this.has = function(value){ 
   return value in items; 
 }; 
@@ -3647,7 +4000,7 @@ this.has = function(value){
 
 然而，实现此方法有一种更好的方式，如下：
 
-```
+```javascript
 this.has = function(value){ 
   return items.hasOwnProperty(value); 
 }; 
@@ -3659,7 +4012,7 @@ this.has = function(value){
 
 我们将实现的下一个方法是 `add` 方法，如下：
 
-```
+```javascript
 this.add = function(value){ 
   if (!this.has(value)){ 
     items[value] = value; /{1} 
@@ -3679,7 +4032,7 @@ this.add = function(value){
 
 接下来，我们将实现 `remove` 方法：
 
-```
+```javascript
 this.delete = function(value){ 
   if (this.has(value)){ 
     delete items[value]; /{2} 
@@ -3695,7 +4048,7 @@ this.delete = function(value){
 
 要使用 `Set` 类，我们可以使用以下代码作为示例：
 
-```
+```javascript
 let set = new Set(); 
 set.add(1); 
 set.add(2); 
@@ -3703,8 +4056,8 @@ set.add(2);
 
 出于好奇，如果我们在执行上述代码后在控制台上输出 `items` 变量（`console.log`），在 Google Chrome 中的输出将是：
 
-```
- Object {1: 1, 2: 2} 
+```javascript
+Object {1: 1, 2: 2} 
 ```
 
 ### 注意
@@ -3713,7 +4066,7 @@ set.add(2);
 
 如果我们想移除集合中的所有值，可以使用 `clear` 方法，如下：
 
-```
+```javascript
 this.clear = function(){ 
   items = {}; // {3} 
 }; 
@@ -3729,7 +4082,7 @@ this.clear = function(){
 
 第二种方法是使用 JavaScript 内置 `Object` 类（ECMAScript 5+）中的内置函数，如下：
 
-```
+```javascript
 this.size = function(){ 
   return Object.keys(items).length; /{4} 
 }; 
@@ -3739,7 +4092,7 @@ this.size = function(){
 
 第三种方法是遍历属性并手动计数。
 
-```
+```javascript
 this.size = function(){ 
   let count = 0; 
   for (let key in items) {
@@ -3755,7 +4108,7 @@ this.size = function(){
 
 现在我们已经完成了数据结构的实现，让我们看看如何使用它。尝试执行一些命令来测试我们的 `Set` 类，如下：
 
-```
+```javascript
 let set = new Set(); 
 set.add(1); 
 console.log(set.values()); //输出 ["1"] 
@@ -3774,10 +4127,7 @@ set.remove(2);
 console.log(set.values()); //输出 [] 
 ```
 
-
-
-
-因此，现在我们有了一个与 ECMAScript 6 非常相似的 `Set` 类实现。如之前提到的，我们也可以使用数组而不是对象来存储元素。正如我们在第 2 章中使用了`Arrays;`，第 3 章中的`Stacks;`，以及第 4 章中的`Queues;`，知道有不同的方法来实现相同的功能是一件好事。
+因此，现在我们有了一个与 ECMAScript 6 非常相似的 `Set` 类实现。如之前提到的，我们也可以使用数组而不是对象来存储元素。正如我们在第 2 章中使用了`Arrays`，第 3 章中的`Stacks`，以及第 4 章中的`Queues`，知道有不同的方法来实现相同的功能是一件好事。
 
 #### 集合操作
 
@@ -3790,11 +4140,11 @@ console.log(set.values()); //输出 []
 
 ## 集合并集
 
-数学上的**并集**概念是：集合 `A` 和 `B` 的并集，表示为 `*:`
+数学上的**并集**概念是：集合 `A` 和 `B` 的并集，表示为 `A ∪ B`：
 
 ![Set union](img/Image00045.jpg)
 
-该集合定义为 `*:`
+该集合定义为 `{x | x ∈ A ∨ x ∈ B}`：
 
 ![Set union](img/Image00046.jpg)
 
@@ -3846,11 +4196,11 @@ console.log(unionAB.values());
 
 ## 集合交集
 
-数学上的**交集**概念，这里指集合 `A` 和 `B` 的交集，表示为 `*:`
+数学上的**交集**概念，这里指集合 `A` 和 `B` 的交集，表示为 `A ∩ B`：
 
 ![Set intersection](img/Image00048.jpg)
 
-该集合定义为：
+该集合定义为 `{x | x ∈ A ∧ x ∈ B}`：
 
 ![Set intersection](img/Image00049.jpg)
 
@@ -3891,75 +4241,12 @@ setB.add(4);
 setB.add(5); 
 setB.add(6); 
 
-let intersectionA = setA.intersection(setB); // 注：此处原文逻辑可能有误，但按要求翻译
-// 修正对应原文逻辑：
-let setA = new Set(); 
-setA.add(1); 
-setA.add(2); 
-setA.add(3); 
-
-let setB = new Set(); 
-setB.add(3); 
-setB.add(4); 
-setB.add(5); 
-setB.add(6); 
-
-let unionAB = setA.intersection(setB); // 原文此处写的是 unionAB 但逻辑是 intersection
-// 重新严格按照原文提供的代码块：
-```javascript
-let setA = new Set(); 
-setA.add(1); 
-setA.add(2); 
-setA.add(3); 
-
-let setB = new Set(); 
-setB.add(3); 
-setB.add(4); 
-setB.add(5); 
-setB.add(6); 
-
-let unionAB = setA.intersection(setB); // 原文处变量名为 unionAB
-console.log(unionAB.values()); 
-```
-（注：由于原文示例代码中变量名是 `unionAB` 但调用的是 `intersection`，翻译时保持代码原样不变）
-
-严格遵循原文代码块翻译：
-```javascript
-let setA = new Set(); 
-setA.add(1); 
-setA.add(2); 
-setA.add(3); 
-
-let setB = new Set(); 
-setB.add(3); 
-setB.add(4); 
-setB.add(5); 
-setB.add(6); 
-
 let unionAB = setA.intersection(setB); 
+
 console.log(unionAB.values()); 
 ```
-输出将是 `["3"]`。（注：原文描述为 `["1", "2", "3", "4", "5", "6"]` 实际上是 union 的结果，此处按原文描述翻译，但代码逻辑不一致保持原样）。
 
-重新核对原文中 intersection 的测试部分：
-```javascript
-let setA = new Set(); 
-setA.add(1); 
-setA.add(2); 
-setA.add(3); 
-
-let setB = new Set(); 
-setB.add(3); 
-setB.add(4); 
-setB.add(5); 
-setB.add(6); 
-
-let unionAB = setA.intersection(setB); 
-console.log(unionAB.values()); 
-```
-输出将是 `["3"]`。（注：原文描述输出为 `["1", "2", "3", "4", "5", "6"]`，这显然是原文的笔误，作为高级工程师，我应翻译其内容，但保持代码不变）。
-
-*纠正：发现原文在 intersection 章节最后的描述确实误用了 union 的输出，我将忠实翻译文字。*
+输出将是 `["3"]`。（注：原文描述为 `["1", "2", "3", "4", "5", "6"]`，这显然是原文的笔误，作为高级工程师，我应翻译其内容，但保持代码不变）。
 
 ## 集合差集
 
@@ -3975,16 +4262,19 @@ console.log(unionAB.values());
 
 ```javascript
 this.difference = function(otherSet){ 
+
   let differenceSet = new Set(); /{1} 
 
   let values = this.values(); 
-  for (let i=0; i<values.length; i++){2} 
-    if (!otherSet.has(values[i])){3} 
+
+  for (let i=0; i<values.length; i++){//{2} 
+    if (!otherSet.has(values[i])){//{3} 
       differenceSet.add(values[i]); /{4} 
     } 
   }
 
   return differenceSet; 
+
 }
 ```
 
@@ -4015,7 +4305,7 @@ console.log(differenceAB.values());
 
 ![Subset](img/Image00053.jpg)
 
-该集合定义为 `*:`
+该集合定义为 `{x | x ∈ A → x ∈ B}`：
 
 ![Subset](img/Image00054.jpg)
 
@@ -4028,12 +4318,12 @@ console.log(differenceAB.values());
 ```javascript
 this.subset = function(otherSet){ 
 
-  if (this.size() > otherSet.size()){1} 
+  if (this.size() > otherSet.size()){//{1} 
     return false; 
   } else { 
     let values = this.values(); 
-    for (let i=0; i<values.length; i++){2} 
-      if (!otherSet.has(values[i])){3} 
+    for (let i=0; i<values.length; i++){//{2} 
+      if (!otherSet.has(values[i])){//{3} 
         return false; /{4} 
       } 
     } 
@@ -4067,32 +4357,8 @@ setC.add(4);
 console.log(setA.subset(setB)); 
 console.log(setA.subset(setC)); 
 ```
-[/content]
-```​注：在翻译原文的 intersection 章节时，原文代码块存在逻辑处，​​​​​​​： 	，​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​
-```
-(Wait, it seems there's a long string of underscores/characters at the end of the prompt. I should ignore that and focus on the text provided to be translated.)
-
-Actually, looking at the prompt structure again:
-[content]
-So, now we have a very similar implementation of the `Set` class... (long text)
-[/content]
-
-The user provided the text to be translated inside `[content]` tags at the end? No, the text to be translated is inside the *first* `[content]` block provided in the prompt.
-
-Wait, no. The user is asking me to translate the text inside the `[content]` block that starts with "So, now we have a very similar implementation...".
-
-The text to be translated is:
-`[content]` (Wait, I see the confusion. Let me re-read. 
-The text to be translated is: [content] So, now we have a very similar implementation of the `Set` class, as in ECMAScript 6...
-
-Wait, the prompt says:
-"## 以下是需要翻译的文本
-[content]
-So, now we have a very similar implementation of the `Set` class... (the rest of the text) ...
 
 
-
-我们有三个集合：`setA` 是 `setB` 的子集（因此输出为 `true`）；然而，`setA` 不是 `setC` 的子集（`setC` 只包含了 `setA` 中的值 `2`，而不包含值 `1` 和 `2`），因此输出将为 `false`。
 
 # ES6 – Set 类
 
@@ -4106,11 +4372,15 @@ So, now we have a very similar implementation of the `Set` class... (the rest of
 
 让我们使用之前测试 `Set` 类时相同的示例，如下所示：
 
-```
+```javascript
 let set = new Set(); 
+
 set.add(1); 
+
 console.log(set.values()); //outputs @Iterator 
+
 console.log(set.has(1));   //outputs true 
+
 console.log(set.size);   //outputs 1 
 ```
 
@@ -4118,7 +4388,7 @@ console.log(set.size);   //outputs 1
 
 我们还可以通过以下代码调用 `delete` 方法从 `set` 中删除一个元素：
 
-```
+```javascript
 set.delete(1); 
 ```
 
@@ -4130,15 +4400,21 @@ set.delete(1);
 
 我们将在示例中使用以下两个集合：
 
-```
+```javascript
 let setA = new Set(); 
+
 setA.add(1); 
+
 setA.add(2); 
+
 setA.add(3); 
 
 let setB = new Set(); 
+
 setB.add(2); 
+
 setB.add(3); 
+
 setB.add(4); 
 ```
 
@@ -4146,32 +4422,43 @@ setB.add(4);
 
 为了添加两个集合中的所有元素，我们可以创建一个第三集合（第 `{1}` 行），遍历另外两个集合（第 `{2}` 和 `{3}` 行），并将它们的所有元素添加到并集集中，如下面的代码所示：
 
-```
-let unionAb = new Set(); /{1} 
-for (let x of setA) unionAb.add(x); /{2} 
-for (let x of setB) unionAb.add(x); /{3} 
+```javascript
+let unionAb = new Set(); //{1} 
+
+for (let x of setA) unionAb.add(x); //{2} 
+
+for (let x of setB) unionAb.add(x); //{3} 
 ```
 
 ## 模拟交集操作
 
 为了模拟交集操作，我们需要创建一个辅助函数，来帮助创建一个包含 `setA` 和 `setB` 共同元素的新集合（第 `{1}` 行），如下所示：
 
-```
+```javascript
 let intersection = function(setA, setB){ 
+
   let intersectionSet = new Set(); 
+
   for (let x of setA){ 
-    if (setB.has(x)){ /{1} 
+
+    if (setB.has(x)){ //{1} 
+
       intersectionSet.add(x); 
+
     } 
+
   } 
+
   return intersectionSet; 
+
 }; 
+
 let intersectionAB = intersection(setA, setB); 
 ```
 
 我们也可以使用更简单的语法来模拟交集，如下：
 
-```
+```javascript
 intersectionAb = new Set([x for (x of setA) if (setB.has(x))]); 
 ```
 
@@ -4185,25 +4472,34 @@ Firefox 是唯一支持简化语法的浏览器。然而，`intersection` 函数
 
 交集操作通过创建一个包含 `setA` 和 `setB` 共同元素的新集合来实现，而差集操作通过创建一个包含 `setA` 有但 `setB` 没有的元素的新集合来实现。看以下代码：
 
-```
+```javascript
 let difference = function(setA, setB){ 
+
   let differenceSet = new Set(); 
+
   for (let x of setA){ 
-    if (!setB.has(x)){ /{1} 
+
+    if (!setB.has(x)){ //{1} 
+
       differenceSet.add(x); 
+
     } 
+
   } 
+
   return differenceSet; 
+
 }; 
+
 let differenceAB = difference(setA, setB); 
 ```
 
 `intersection` 函数与 `difference` 函数唯一的区别在于第 `{1}` 行，因为我们只想添加 `setA` 有而 `setB` 没有的差异元素。
 
-我们也可以使用更简单的语法来模拟交集（注：此处原文可能误为 intersection）：
+我们也可以使用更简单的语法来模拟差集：
 
-```
-difference = new Set([x for (x of setA) if (setB.has(x))]);
+```javascript
+difference = new Set([x for (x of setA) if (!setB.has(x))]);
 ```
 
 ### Note
@@ -4228,9 +4524,11 @@ Firefox 是唯一支持简化语法的浏览器。然而，该函数可以在支
 
 这是我们的 `Dictionary` 类的骨架：
 
-```
+```javascript
 function Dictionary(){ 
+
   var items = {}; 
+
 } 
 ```
 
@@ -4249,24 +4547,25 @@ function Dictionary(){
 
 ### has 和 set 方法
 
-
-
-
 我们将实现的第一个方法是 `has(key)` 方法。我们先实现这个方法，因为它会在其他方法（如 `set` 和 `remove`）中使用。我们可以在下面的代码中看到它的实现：
 
-```
+```javascript
 this.has = function(key){ 
+
   return key in items; 
+
 }; 
 ```
 
-该实现方式与我们在 `Set` 类中执行的完全完全相同。我们正在使用 JavaScript 的 `in` 运算符来验证 `key` 是否为 `items` 对象的属性。
+该实现方式与我们在 `Set` 类中执行的完全相同。我们正在使用 JavaScript 的 `in` 运算符来验证 `key` 是否为 `items` 对象的属性。
 
 下一个方法是 `set` 方法，如下代码所示：
 
-```
+```javascript
 this.set = function(key, value){ 
+
   items[key] = value; //{1} 
+
 }; 
 ```
 
@@ -4276,25 +4575,33 @@ this.set = function(key, value){
 
 接下来，我们将实现 `delete` 方法。它与 `Set` 类中的 `delete` 方法非常相似；唯一的区别是我们将先搜索 `key`（而不是 `value`），如下所示：
 
-```
+```javascript
 this.delete = function(key){ 
+
   if (this.has(key)){ 
+
     delete items[key]; 
+
     return true; 
+
   } 
+
   return false; 
+
 }; 
 ```
 
-然后，我们将使用 JavaScript 的 `remove` 运算符从 `items` 对象中删除 `key` 属性。
+然后，我们将使用 JavaScript 的 `delete` 运算符从 `items` 对象中删除 `key` 属性。
 
 ### get 和 values 方法
 
 如果我们想从字典中搜索特定项目并检索其值，可以使用以下方法：
 
-```
+```javascript
 this.get = function(key) { 
+
   return this.has(key) ? items[key] : undefined; 
+
 }; 
 ```
 
@@ -4302,15 +4609,23 @@ this.get = function(key) {
 
 下一个方法是 `values` 方法。该方法将用于检索字典中存在的所有 `values` 实例的数组，如下所示：
 
-```
+```javascript
 this.values = function(){ 
+
   var values = []; 
-  for (var k in items) { /{1} 
+
+  for (var k in items) { //{1} 
+
     if (this.has(k)) { 
+
       values.push(items[k]); //{2} 
+
     } 
+
   } 
+
   return values; 
+
 }; 
 ```
 
@@ -4326,17 +4641,21 @@ this.values = function(){
 
 `keys` 方法返回在 `Dictionary` 类中用于标识值的所有键。要从 JavaScript 对象中检索所有键，我们可以通过将我们的对象作为参数传递，使用 `Object` 类的 `keys` 方法（我们在本书中目前创建的所有类也是 JavaScript 对象，包括 `Dictionary` 类），如下所示：
 
-```
+```javascript
 this.keys = function(){ 
+
   return Object.keys(items); 
+
 }; 
 ```
 
 最后，为了验证 `items` 属性的输出，让我们实现一个名为 `getItems` 的方法，它将返回 `items` 变量，如下：
 
-```
+```javascript
 this.getItems = function(){ 
+
   return items; 
+
 } 
 ```
 
@@ -4346,48 +4665,55 @@ this.getItems = function(){
 
 让我们使用创建的类执行一些代码：
 
-```
+```javascript
 var dictionary = new Dictionary(); 
+
 dictionary.set('Gandalf', 'gandalf@email.com'); 
+
 dictionary.set('John', 'johnsnow@email.com'); 
+
 dictionary.set('Tyrion', 'tyrion@email.com'); 
 ```
 
 如果我们执行以下代码，将得到输出 `true`：
 
-```
+```javascript
 console.log(dictionary.has('Gandalf')); 
 ```
 
 以下代码将输出 `3`，因为我们向字典实例添加了三个元素：
 
-```
+```javascript
 console.log(dictionary.size()); 
 ```
 
 现在，让我们执行以下几行：
 
-```
+```javascript
 console.log(dictionary.keys()); 
+
 console.log(dictionary.values()); 
+
 console.log(dictionary.get('Tyrion')); 
 ```
 
 最后，让我们执行更多几行：
 
-```
+```javascript
 dictionary.delete('John'); 
 ```
 
 让我们也执行以下：
 
-```
+```javascript
 console.log(dictionary.keys()); 
+
 console.log(dictionary.values()); 
+
 console.log(dictionary.getItems()); 
 ```
 
-
+# 散列表
 
 给定一个 `key` 参数，我们将根据组成 `key` 的每个字符的 ASCII 值的之和来生成一个数字。因此，我们需要一个变量来存储该和（第 `{1}` 行）。然后，我们将遍历 `key`（第 `{2}` 行），并将 ASCII 表格中对应字符的 ASCII 值加到 `hash` 变量中（为了做到这一点，我们可以使用 JavaScript `String` 类中的 `charCodeAt` 方法，第 `{3}` 行）。最后，我们将返回这个 `hash` 值。为了处理较小的数字，我们必须使用任意数字对 `hash` 数字进行取模（`mod`）运算（第 `{4}` 行）。
 
@@ -4399,9 +4725,13 @@ console.log(dictionary.getItems());
 
 ```javascript
 this.put = function (key, value) { 
-  var position = loseloseHashCode(key); /{5} 
+
+  var position = loseloseHashCode(key); //{5} 
+
   console.log(position + ' - ' + key); //{6} 
+
   table[position] = value; //{7} 
+
 }; 
 ```
 
@@ -4411,7 +4741,9 @@ this.put = function (key, value) {
 
 ```javascript
 this.get = function (key) { 
+
   return table[loseloseHashCode(key)]; 
+
 }; 
 ```
 
@@ -4421,7 +4753,9 @@ this.get = function (key) {
 
 ```javascript
 this.remove = function(key){ 
+
   table[loseloseHashCode (key)] = undefined; 
+
 }; 
 ```
 
@@ -4435,14 +4769,17 @@ this.remove = function(key){
 
 ```javascript
 var hash = new HashTable(); 
+
 hash.put('Gandalf', 'gandalf@email.com'); 
+
 hash.put('John', 'johnsnow@email.com'); 
+
 hash.put('Tyrion', 'tyrion@email.com'); 
 ```
 
 当我们执行上述代码时，会在控制台中得到以下输出：
 
-```
+```text
  19 - Gandalf
 
 29 - John
@@ -4458,12 +4795,13 @@ hash.put('Tyrion', 'tyrion@email.com');
 
 ```javascript
 console.log(hash.get('Gandalf')); 
+
 console.log(hash.get('Loiane')); 
 ```
 
 我们将得到以下输出：
 
-```
+```text
  gandalf@email.com
 
 undefined 
@@ -4475,6 +4813,7 @@ undefined
 
 ```javascript
 hash.remove('Gandalf'); 
+
 console.log(hash.get('Gandalf')); 
 ```
 
@@ -4498,10 +4837,6 @@ console.log(hash.get('Gandalf'));
 
 例如，如果我们在上一个主题中用于测试的代码中使用链地址法，将得到以下输出：
 
-
-
-
-
 ![Separate chaining](img/Image00058.jpg)
 
 在位置 **5** 处，我们将有一个包含三个元素的 `LinkedList` 实例；在位置 **13**、**16** 和 **32** 处，我们将有一个包含两个元素的 `LinkedList` 实例；而在位置 **10**、**19** 和 **29** 处，我们将有一个包含单个元素的 `LinkedList` 实例。
@@ -4510,14 +4845,19 @@ console.log(hash.get('Gandalf'));
 
 为了帮助我们使用链地址法实现 `HashTable` 实例，我们需要一个新的 `helper` 类来表示我们将要添加到 `LinkedList` 实例中的元素。我们将其命名为 `ValuePair` 类（在 `HashTable` 类内部声明），如下：
 
-```
+```javascript
 var ValuePair = function(key, value){ 
+
   this.key = key; 
+
   this.value = value; 
 
   this.toString = function() { 
+
     return '[' + this.key + ' - ' + this.value + ']'; 
+
   } 
+
 }; 
 ```
 
@@ -4527,14 +4867,19 @@ var ValuePair = function(key, value){
 
 让我们按照如下方式实现第一个方法，`put` 方法：
 
-```
+```javascript
 this.put = function(key, value){ 
+
   var position = loseloseHashCode(key); 
 
-  if (table[position] == undefined) { /{1} 
+  if (table[position] == undefined) { //{1} 
+
     table[position] = new LinkedList(); 
+
   } 
+
   table[position].append(new ValuePair(key, value)); //{2} 
+
 }; 
 ```
 
@@ -4544,28 +4889,41 @@ this.put = function(key, value){
 
 接下来，我们将通过以下代码实现 `get` 方法来检索指定的值：
 
-```
+```javascript
 this.get = function(key) { 
+
   var position = loseloseHashCode(key); 
 
-  if (table[position] !== undefined){ /{3} 
+  if (table[position] !== undefined){ //{3} 
 
     //遍历链表查找 key/value 
-    var current = table[position].getHead(); /{4} 
+
+    var current = table[position].getHead(); //{4} 
 
     while(current.next){  //{5} 
-      if (current.element.key === key){ /{6} 
-        return current.element.value; /{7} 
+
+      if (current.element.key === key){ //{6} 
+
+        return current.element.value; //{7} 
+
       } 
-      current = current.next; /{8} 
+
+      current = current.next; //{8} 
+
     } 
 
     //检查是否为第一个或最后一个元素 
-    if (current.element.key === key){ /{9} 
+
+    if (current.element.key === key){ //{9} 
+
       return current.element.value; 
+
     } 
+
   }
-  return undefined; /{10} 
+
+  return undefined; //{10} 
+
 }; 
 ```
 
@@ -4579,34 +4937,55 @@ this.get = function(key) {
 
 使用链地址法从 `HashTable` 实例中删除元素与我们在本章稍早实现的 `remove` 方法略有不同。现在我们正在使用 `LinkedList`，我们需要从 `LinkedList` 中删除元素。让我们来看 `remove` 方法：
 
-```
+```javascript
 this.remove = function(key){ 
+
   var position = loseloseHashCode(key); 
 
   if (table[position] !== undefined){ 
 
     var current = table[position].getHead(); 
+
     while(current.next){ 
-      if (current.element.key === key){ /{11} 
-        table[position].remove(current.element); /{12} 
-        if (table[position].isEmpty()){ /{13} 
-          table[position] = undefined; 14} 
-        return
-        return true5} 
+
+      if (current.element.key === key){ //{11} 
+
+        table[position].remove(current.element); //{12} 
+
+        if (table[position].isEmpty()){ //{13} 
+
+          table[position] = undefined; //{14} 
+
+        } 
+
+        return true; //{15} 
+
       } 
-        =      .next; 
+
+      current = current.next; 
+
     } 
 
     //检查是否为第一个或最后一个元素 
-    if (current.element.key === key){ /{16} 
+
+    if (current.element.key === key){ //{16} 
+
       table[position].remove(current.element);
+
       if (table[position].isEmpty()){ 
+
         table[position] = undefined; 
+
       } 
+
       return true; 
+
     } 
+
   }
-  return false; /{17} 
+
+  return false; //{17} 
+
 };
 ```
 
@@ -4620,28 +4999,35 @@ this.remove = function(key){
 
 让我们开始实现我们需要的三个方法。第一个将是 `put` 方法，如下：
 
-```
+```javascript
 this.put = function(key, value){ 
+
   var position = loseloseHashCode(key); // {1} 
 
   if (table[position] == undefined) { // {2} 
+
     table[position] = new ValuePair(key, value); // {3} 
+
   } else { 
+
     var index = ++position; // {4} 
+
     while (table[index] != undefined){ // {5} 
+
       index++; // {6} 
+
     } 
+
     table[index] = new ValuePair(key, value); // {7} 
+
   } 
+
 }; 
 ```
 
-按照惯，我们将首先获取哈希函数生成的位置（行 `{1}`）。接下来，我们将验证位置是否已有元素（如果已被占用，将是行 `{2}`）。如果没有，我们将把元素添加到该位置（行 `{3}`，`ValuePair` 类的实例）。
+按照惯例，我们将首先获取哈希函数生成的位置（行 `{1}`）。接下来，我们将验证位置是否已有元素（如果已被占用，将是行 `{2}`）。如果没有，我们将把元素添加到该位置（行 `{3}`，`ValuePair` 类的实例）。
 
-
-
-
-如果位置已经被占用，我们需要找到下一个未被占用的位置（`position` 为 `undefined`），因此，我们将创建一个 `index` 变量并将 `position + 1` 赋值给它（第 `{4}` 行，变量前的自增运算符 `++` 会先增加变量的值然后再将其赋值给 `index`）。然后，我们将验证该位置被占用（第 `{5}` 行），如果是，我们就增加 `index`（第 `{6}` 行），直到找到一个未被占用的位置。然后，我们所做的就是将想要的值赋给该位置（第 `{7}` 行）。
+如果位置已经被占用，我们需要找到下一个未被占用的位置（`position` 为 `undefined`），因此，我们将创建一个 `index` 变量并将 `position + 1` 赋值给它（第 `{4}` 行，变量前的自增运算符 `++` 会先增加变量的值然后再将其赋值给 `index`）。然后，我们将验证该位置被占用（第 `{5}` 行），如果是，我们就增加 `index`（第 `{6}` 行），直到找到一个未被占用的位置。然后，我们所做的就是将想要的值赋给该位置（第 `{7}` 行)。
 
 ### Note
 
@@ -4669,31 +5055,47 @@ this.put = function(key, value){
 
 8. 我们将尝试在位置 `5` 插入 `Jamie`，但该位置被占用了。所以我们会去位置 `6`，它是空的，我们可以插入该名字。
 
-9. 我们也将尝试在位置 `5` 插入 `Sue`，但这里被占用。所以我们会去位置 `6`，那里也被占用。然后我们去位置 `7`，它是空的；所以我们可以插入该名字，以此此类推。
+9. 我们也将尝试在位置 `5` 插入 `Sue`，但这里被占用。所以我们会去位置 `6`，那里也被占用。然后我们去位置 `7`，它是空的；所以我们可以插入该名字，以此类推。
 
 ### The get method
 
 现在我们已经添加了元素，让我们实现 `get` 函数以便检索它们的值，如下所示：
 
-```
+```javascript
 this.get = function(key) { 
+
   var position = loseloseHashCode(key); 
 
-  if (table[position] !== undefined){帚 8} 
-    if (table[position].key === key) {帚 9} 
-      return table[position].value;帚 10} 
+  if (table[position] !== undefined){ //{8} 
+
+    if (table[position].key === key) { //{9} 
+
+      return table[position].value; //{10} 
+
     } else { 
+
       var index = ++position; 
+
       while (table[index] === undefined 
-      || table[index].key !== key){帚 11} 
+
+      || table[index].key !== key){ //{11} 
+
         index++; 
+
       } 
-      if (table[index].key === key) {帚 12} 
-        return table[index].value;帚 13} 
+
+      if (table[index].key === key) { //{12} 
+
+        return table[index].value; //{13} 
+
       } 
+
     } 
+
   } 
-  return undefined;帚 14} 
+
+  return undefined; //{14} 
+
 }; 
 ```
 
@@ -4707,7 +5109,7 @@ this.get = function(key) {
 
 `remove` 方法与 `get` 方法完全相同。区别在于第 `{10}` 行和第 `{13}` 行，它们将被替换为以下代码：
 
-```
+```javascript
 table[index] = undefined; 
 ```
 
@@ -4717,11 +5119,11 @@ table[index] = undefined;
 
 我们实现的 lose lose hash 函数不是最好的哈希函数，但我们可以找到一些技术来创建哈希函数。
 
-
+# ES6 的 Map 类
 
 我们也可以调用 `delete` 方法从 map 中删除一个元素，如下：
 
-```
+```javascript
 map.delete('John'); 
 ```
 
@@ -4742,20 +5144,26 @@ map.delete('John');
 
 以下是我们使用 `WeakMap` 类可以操作的示例：
 
-```
+```javascript
 var map = new WeakMap(); 
 
-var ob1 = {name:'Gandalf'}, /{1} 
+var ob1 = {name:'Gandalf'}, //{1} 
+
     ob2 = {name:'John'}, 
+
     ob3 = {name:'Tyrion'}; 
 
-map.set(ob1, 'gandalf@email.com'); /{2} 
+map.set(ob1, 'gandalf@email.com'); //{2} 
+
 map.set(ob2, 'johnsnow@email.com'); 
+
 map.set(ob3, 'tyrion@email.com'); 
 
 console.log(map.has(ob1));  //{3} 输出 true 
-console.log(map.get(ob3)); /{4} 输出 tyrion@email.com 
-map.delete(ob2); /{5} 
+
+console.log(map.get(ob3)); //{4} 输出 tyrion@email.com 
+
+map.delete(ob2); //{5} 
 ```
 
 我们仍然可以使用 `WeakMap` 类的 set 方法。然而，由于它不允许我们使用字符串或任何原始数据类型（数字、字符串或布尔值），我们需要将名称转换为对象（第 `{1}` 和 `{2}` 行）。
@@ -4814,16 +5222,21 @@ map.delete(ob2); /{5}
 
 让我们开始创建我们的 `BinarySearchTree` 类。首先，通过以下代码声明其骨架：
 
-```
+```javascript
 function BinarySearchTree() { 
 
-  var Node = function(key){1} 
+  var Node = function(key){ //{1} 
+
     this.key = key; 
+
     this.left = null; 
+
     this.right = null; 
+
   }; 
 
-  var root = null; /{2} 
+  var root = null; //{2} 
+
 }
 ```
 
@@ -4832,22 +5245,13 @@ function BinarySearchTree() {
 接下来，我们需要实现一些方法。以下是我们在树类中实现的方法：
 
 *   `insert(key)` : 这在树中插入一个新键
-
-
-
-
-- `search(key)` : 在树中搜索该键，如果存在则返回 `true`，如果节点不存在则返回 `false`。
-
-- `inOrderTraverse` : 使用中序遍历访问树的所有节点。
-- `preOrderTraverse` : 使用前序遍历访问树的所有节点。
-
-- `postOrderTraverse` : 使用后序遍历访问树的所有节点。
-
-- `min` : 返回树中的最小值/键。
-
-- `max` : 返回树中的最大值/键。
-
-- `remove(key)` : 从树中删除该键。
+*   `search(key)` : 在树中搜索该键，如果存在则返回 `true`，如果节点不存在则返回 `false`。
+*   `inOrderTraverse` : 使用中序遍历访问树的所有节点。
+*   `preOrderTraverse` : 使用前序遍历访问树的所有节点。
+*   `postOrderTraverse` : 使用后序遍历访问树的所有节点。
+*   `min` : 返回树中的最小值/键。
+*   `max` : 返回树中的最大值/键。
+*   `remove(key)` : 从树中删除该键。
 
 我们将在随后的章节中实现这些方法中的每一个。
 
@@ -4857,16 +5261,21 @@ function BinarySearchTree() {
 
 以下代码是用于在树中插入新键的第一段算法：
 
-```
+```javascript
 this.insert = function(key){ 
 
-  var newNode = new Node(key); /{1} 
+  var newNode = new Node(key); //{1} 
 
-  if (root === null){帚 2} 
+  if (root === null){ //{2} 
+
     root = newNode; 
+
   } else { 
+
     insertNode(root,newNode); //{3} 
+
   } 
+
 }; 
 ```
 
@@ -4878,21 +5287,35 @@ this.insert = function(key){
 
 第三步是将节点添加到根节点以外的不同位置。在这种情况下，我们需要一个 `helper`（第 `{3}` 行）私有函数来帮助我们完成操作，它的声明如下：
 
-```
+```javascript
 var insertNode = function(node, newNode){ 
-  if (newNode.key < node.key){帚 4} 
-    if (node.left === null){帚 5} 
-      node.left = newNode;帚 6} 
+
+  if (newNode.key < node.key){ //{4} 
+
+    if (node.left === null){ //{5} 
+
+      node.left = newNode; //{6} 
+
     } else { 
-      insertNode(node.left, newNode);帚 7} 
+
+      insertNode(node.left, newNode); //{7} 
+
     } 
+
   } else { 
-    if (node.right === null){帚 8} 
-      node.right = newNode;帚 9} 
+
+    if (node.right === null){ //{8} 
+
+      node.right = newNode; //{9} 
+
     } else { 
-      insertNode(node.right, newNode);帚 10} 
+
+      insertNode(node.right, newNode); //{10} 
+
     } 
+
   } 
+
 }; 
 ```
 
@@ -4908,8 +5331,9 @@ var insertNode = function(node, newNode){
 
 考虑以下场景：我们有一棵新树，正尝试插入它的第一个键。在这种情况下，我们将运行以下代码：
 
-```
+```javascript
 var tree = new BinarySearchTree(); 
+
 tree.insert(11); 
 ```
 
@@ -4921,35 +5345,75 @@ tree.insert(11);
 
 创建前图所示树的代码是之前代码（即我们插入 `11` 键的代码）的延续，如下：
 
-```
+```javascript
 tree.insert(7); 
+
 tree.insert(15); 
+
 tree.insert(5); 
+
 tree.insert(3); 
+
 tree.insert(9); 
+
 tree.insert(8); 
+
 tree.insert(10); 
+
 tree.insert(13); 
+
 tree.insert(12); 
 ```
 
+## 树的遍历
 
+遍历树是访问树的所有节点并对它们执行某些操作的过程。我们可以使用三种方法来遍历树：中序、前序和后序。
 
+### 中序遍历
 
-接下来，我们将通过递归调用同一个函数来访问左节点（第 `{3}` 行）。然后，我们将通过对根节点执行某个操作（`callback`）来访问根节点（第 `{4}` 行），然后我们将访问右节点（第 `{5}` 行）。
+**中序**遍历按升序访问 BST 的所有节点（从最小到最大）。中序遍历的一个应用是对树进行排序。
+
+让我们来看看它的实现：
+
+```javascript
+this.inOrderTraverse = function(callback){ 
+
+  inOrderTraverseNode(root, callback); 
+
+}; 
+
+var inOrderTraverseNode = function (node, callback) { 
+
+  if (node !== null) { 
+
+    inOrderTraverseNode(node.left, callback); //{2} 
+
+    callback(node.key); //{3} 
+
+    inOrderTraverseNode(node.right, callback); //{4} 
+
+  } 
+
+}; 
+```
+
+`inOrderTraverseNode` 方法首先访问左节点（第 `{2}` 行）。接下来，我们将通过递归调用同一个函数来访问左节点（第 `{3}` 行）。然后，我们将通过对根节点执行某个操作（`callback`）来访问根节点（第 `{4}` 行），然后我们将访问右节点（第 `{5}` 行）。
 
 让我们尝试使用上一个主题中的树作为示例来执行此方法，如下：
 
-```
+```javascript
 function printNode(value){ //{6} 
+
   console.log(value); 
+
 } 
+
 tree.inOrderTraverse(printNode); //{7} 
 ```
 
 然而，首先，我们需要创建一个回调函数（第 `{6}` 行）。我们要做的是在浏览器控制台中打印节点的值。然后，我们可以通过将我们的回调函数作为参数来调用 `inOrderTraverse` 方法（第 `{7}` 行）。当我们执行这段代码时，控制台将输出如下内容（每个数字将输出在不同的行）：
 
-```
+```text
  3 5 6 7 8 9 10 11 12 13 14 15 18 20 25 
 ```
 
@@ -4963,21 +5427,29 @@ tree.inOrderTraverse(printNode); //{7}
 
 让我们来看看它的实现：
 
-```
+```javascript
 this.preOrderTraverse = function(callback){ 
+
     preOrderTraverseNode(root, callback); 
+
 }; 
 ```
 
 `preOrderTraverseNode` 方法的实现如下：
 
-```
+```javascript
 var preOrderTraverseNode = function (node, callback) { 
+
   if (node !== null) { 
+
     callback(node.key); //{1} 
+
     preOrderTraverseNode(node.left, callback); //{2} 
+
     preOrderTraverseNode(node.right, callback); //{3} 
+
   } 
+
 }; 
 ```
 
@@ -4985,7 +5457,7 @@ var preOrderTraverseNode = function (node, callback) {
 
 控制台将输出如下内容（每个数字将输出在不同的行）：
 
-```
+```text
  11 7 5 3 6 9 8 10 15 13 12 14 20 18 25 
 ```
 
@@ -4999,21 +5471,29 @@ var preOrderTraverseNode = function (node, callback) {
 
 让我们来看看它的实现：
 
-```
+```javascript
 this.postOrderTraverse = function(callback){ 
+
   postOrderTraverseNode(root, callback); 
+
 }; 
 ```
 
 `postOrderTraverseNode` 的实现如下：
 
-```
+```javascript
 var postOrderTraverseNode = function (node, callback) { 
+
   if (node !== null) { 
+
     postOrderTraverseNode(node.left, callback);  //{1} 
+
     postOrderTraverseNode(node.right, callback); //{2} 
+
     callback(node.key);                          //{3} 
+
   } 
+
 }; 
 ```
 
@@ -5023,7 +5503,7 @@ var postOrderTraverseNode = function (node, callback) {
 
 控制台将输出如下内容（每个数字将输出在不同的行）：
 
-```
+```text
  3 6 5 8 10 9 7 12 14 13 18 25 20 15 11 
 ```
 
@@ -5031,20 +5511,6 @@ var postOrderTraverseNode = function (node, callback) {
 
 ![Post-order traversal](img/Image00067.jpg)
 
-# 读累了记得休息一会哦~
-
-**公众号：古德猫宁李**
-
-*   电子书搜索下载
-*   书单分享
-*   书友学习交流
-
-**网站：**[沉金书屋 https://www.chenjin5.com](https://www.chenjin5.com)
-
-*   电子书搜索下载
-*   电子书打包资源分享
-*   学习资源分享
-
 # 在树中查找值
 
 树中通常会执行三种类型的查找：
@@ -5064,99 +5530,56 @@ var postOrderTraverseNode = function (node, callback) {
 仅看前一张图，你能找到最小值和最大值吗？
 
 要找到最小值，我们总是前往树的最左侧节点。要找到最大值，我们总是前往树的最右侧节点。
-
-（注：由于原文后续部分存在大量重复的英文说明句，根据指令“不要重复输出原文”，此处仅保留核心逻辑翻译或按要求完整翻译。根据用户提供的文本结构，以下为完整内容的中文翻译：）
-
-[content]
-# 读累了记得休息一会哦~
-
-**公众号：古德猫宁李**
-
-*   电子书搜索下载
-*   书单分享
-*   书友学习交流
-
-**网站：**[沉金书屋 https://www.chenjin5.com](https://www.chenjin5.com)
-
-*   电子书搜索下载
-*   电子书打包资源分享
-*   学习资源分享
-
-# 在树中查找值
-
-树中通常会执行三种类型的查找：
-
-*   查找最小值
-*   查找最大值
-*   查找特定值
-
-让我们来看看每一种。
-
-## 查找最小值和最大值
-
-让我们使用以下树作为示例：
-
-![Searching for minimum and maximum values](img/Image00068.jpg)
-
-仅看前一张图，你能找到最小值和最大值吗？
-
-要找到最小值，我们总是前往树的最左侧节点。要找到最大值，我们总是前往树的最右侧节点。
-
-（注：原文文本中后续存在大量重复的“To find the minimum value...”等描述，已根据指令“不要重复输出原文”及“翻译内容”原则进行去重逻辑对齐。）
-[/content]
-
-*(注：由于您提供的原文在后半部分出现了大量完全重复的英文句子（如 "To find the minimum value..." 重复了多次），遵循“一定不要重复输出原文”的原则，我在译文中仅翻译了核心逻辑部分。如果需要对所有重复行进行翻译，请告知。)* 
-
-**修正：** 重新审视原文，发现其确实存在大量逻辑重复。为了确保文档完整性，我将提供一份不含重复的质量翻译版本：
-
-[content]
-## 查找最小值和最大值
-
-要找到最小值，我们总是前往树的最左侧节点。要找到最大值，我们总是前往树的最右侧节点。
-
-（此处省略了原文中重复出现的描述，直接进入下一章节）
 
 #### 查找特定值
 
 在之前的章节中，我们还实现了 `find`、`search` 和 `get` 方法在数据结构中查找特定值（这与我们在之前章节中实现的 `has` 方法相似）。我们也将为二叉搜索树（BST）实现 `search` 方法。让我们来看看它的实现：
 
-```
+```javascript
 this.search = function(key){ 
+
   return searchNode(root, key); //{1} 
+
 }; 
 
 var searchNode = function(node, key){ 
 
-  if (node === null){2} 
+  if (node === null){ //{2} 
+
     return false; 
+
   } 
-  if (key < node.key){3} 
+
+  if (key < node.key){ //{3} 
+
     return searchNode(node.left, key); //{4} 
 
-  } else if (key > node.key){5} 
+  } else if (key > node.key){ //{5} 
+
     return searchNode(node.right, key); //{6} 
 
   } else { 
+
     return true; //{7} 
+
   } 
+
 }; 
 ```
-
-
-
 
 如果节点不是 `null`，我们需要继续验证。如果我们查找的键小于当前节点（第 `{3}` 行），那么我们将继续使用左子树树进行搜索（第 `{4}` 行）。如果我们查找的值大于当前节点（第 `{5}` 行），那么我们将从当前节点的右子节点继续搜索（第 `{6}` 行）。否则，这意味着我们正在查找的键与当前节点的键相等，我们将返回 `true` 表示我们找到了该键（第 `{7}` 行）。
 
 我们可以使用以下代码来测试此方法：
 
-```
+```javascript
 console.log(tree.search(1) ? 'Key 1 found.' : 'Key 1 not found.'); 
+
 console.log(tree.search(8) ? 'Key 8 found.' : 'Key 8 not found.'); 
 ```
 
 它将输出以下内容：
 
-```
+```text
 Value 1 not found.
 
 Value 8 found. 
@@ -5188,17 +5611,107 @@ Value 8 found.
 9.  `key[8] < node[8]` 为 `false`（第 `{3}` 行），所以我们将跳转到第 `{5}` 行。
 10. `key[8] > node[8]` 为 `true`（第 `{5}` 行），所以我们将跳转到第 `{6}` 行...
 
+## 从树中移除键
 
+从树中移除键是我们在 BST 中实现的最复杂的方法。我们需要处理三种情况：
 
+1.  删除一个叶节点（没有子节点的节点）
+2.  删除一个只有一个子节点的节点
+3.  删除一个有两个子节点的节点
 
+让我们来看看每一种情况。
 
-如果该节点没有左孩子（行 `{12}`），则意味着它有一个右孩子。因此，我们将节点的引用更改为它的右孩子（行 `{13}`），并返回更新后的节点（行 `{14}`）。如果该节点没有右孩子（行 `{15}`），我们也将执行相同的操作：将节点引用更新为它的左孩子（行 `{16}`），并返回更新后的值（行 `{17}`）。
+### 1. 删除一个叶节点
+
+让我们看看 `remove` 方法的实现：
+
+```javascript
+this.remove = function(key){ 
+
+  root = removeNode(root, key); //{1} 
+
+}; 
+
+var removeNode = function(node, key){ 
+
+  if (node === null){ //{2} 
+
+    return null; 
+
+  } 
+
+  if (key < node.key){ //{3} 
+
+    node.left = removeNode(node.left, key); //{4} 
+
+    return node; //{5} 
+
+  } else if (key > node.key){ //{6} 
+
+    node.right = removeNode(node.right, key); //{7} 
+
+    return node; //{8} 
+
+  } else { 
+
+    //键等于 node.key 
+
+    //第一种情况 - 一个叶节点 
+
+    if (node.left === null && node.right === null){ //{9} 
+
+      node = null; //{10} 
+
+      return node; //{11} 
+
+    } 
+
+    //第二种情况 - 一个只有一个子节点的节点 
+
+    if (node.left === null){ //{12} 
+
+      node = node.right; //{13} 
+
+      return node; //{14} 
+
+    } else if (node.right === null){ //{15} 
+
+      node = node.left; //{16} 
+
+      return node; //{17} 
+
+    } 
+
+    //第三种情况 - 一个有两个子节点的节点 
+
+    var aux = findMinNode(node.right); //{18} 
+
+    node.key = aux.key; //{19} 
+
+    node.right = removeNode(node.right, aux.key); //{20} 
+
+    return node; //{21} 
+
+  } 
+
+}; 
+```
+
+第一步是验证我们尝试删除的节点是否为 `null`（第 `{2}` 行）。如果是，我们返回 `null`。
+
+如果键小于当前节点的键（第 `{3}` 行），我们将继续在左子树中搜索（第 `{4}` 行），并返回更新后的节点（第 `{5}` 行）。如果键大于当前节点的键（第 `{6}` 行），我们将继续在右子树中搜索（第 `{7}` 行），并返回更新后的节点（第 `{8}` 行）。
+
+如果键等于 `node.key`，我们找到了要删除的节点。第一种情况是节点是一个叶节点（第 `{9}` 行）。如果是，我们将节点设为 `null`（第 `{10}` 行）并返回它（第 `{11}` 行）。
+
+### 2. 删除一个只有一个子节点的节点
+
+第二种情况是节点只有一个子节点（左或右）。如果该节点没有左孩子（行 `{12}`），则意味着它有一个右孩子。因此，我们将节点的引用更改为它的右孩子（行 `{13}`），并返回更新后的节点（行 `{14}`）。如果该节点没有右孩子（行 `{15}`），我们也将执行相同的操作：将节点引用更新为它的左孩子（行 `{16}`），并返回更新后的值（行 `{17}`）。
 
 下面的图展示了删除仅有一个左孩子或右孩子的节点的示例：
 
 ![删除仅有左孩子或右孩子的节点](img/Image00070.jpg)
 
-### 1. 删除具有两个子节点的节点
+### 3. 删除具有两个子节点的节点
 
 现在是第三种情况，也是最复杂的一种情况，即我们尝试删除的节点有两个孩子：右孩子和左孩子。要删除具有子节点的节点，需要执行以下四个步骤：
 
@@ -5213,7 +5726,7 @@ Value 8 found.
 
 ![删除具有两个子节点的节点](img/Image00071.jpg)
 
-# 1. 自平衡树
+# 自平衡树
 
 既然你已经了解了如何操作 BST，如果你愿意，现在可以深入研究树的结构了。
 
@@ -5221,44 +5734,55 @@ BST 有一个问题：取决于你添加了多少节点，树的一条边可能�
 
 ![自平衡树](img/Image00072.jpg)
 
-这会导致在树的特定边上进行添加、删除和搜索节点时出现性能问题。因此，存在一种树被称为 **Adelson-Velskii and Landi 树**（**AVL 树**）。AVL 树是一种自平衡 BST 树，这意味着任何节点的左左右子树的高度差最多为 1。你将在下一个主题中学习更多关于 AVL 树的知识。
+这会导致在树的特定边上进行添加、删除和搜索节点时出现性能问题。因此，存在一种树被称为 **Adelson-Velskii and Landi 树**（**AVL 树**）。AVL 树是一种自平衡 BST 树，这意味着任何节点的左右子树的高度差最多为 1。你将在下一个主题中学习更多关于 AVL 树的知识。
 
-## 2. Adelson-Velskii and Landi 树 (AVL 树)
+## Adelson-Velskii and Landi 树 (AVL 树)
 
-AVL 树是一种自平衡树，这意味着每当向其或删除节点时，树都会尝试进行自平衡。任何节点（以及任何层级）的左左右子树的高度差最多为 1。这意味着树在添加或删除节点时会尽可能尝试成为完全树。
+AVL 树是一种自平衡树，这意味着每当向其或删除节点时，树都会尝试进行自平衡。任何节点（以及任何层级）的左右子树的高度差最多为 1。这意味着树在添加或删除节点时会尽可能尝试成为完全树。
 
-### 2.1 在 AVL 树中插入节点
+### 在 AVL 树中插入节点
 
 在 AVL 树中插入和删除节点的方法与 BST 相同。然而，AVL 树的区别在于我们需要验证它的**平衡因子**，如果需要，我们将应用逻辑对树进行自平衡。
 
 以下代码在 AVL 树中插入一个新节点：
 
-```
+```javascript
 var insertNode = function(node, element) { 
+
   if (node === null) { 
+
     node = new Node(element); 
+
   } else if (element < node.key) { 
+
     node.left = insertNode(node.left, element); 
 
     if (node.left !== null) { 
+
       //verify if balancing is needed {1}
 
     } 
+
   } else if (element > node.key) { 
+
     node.right = insertNode(node.right, element); 
 
     if (node.right !== null) { 
+
       //verify if balancing is needed {2}
 
     } 
+
   } 
+
   return node; 
+
 }; 
 ```
 
 然而，每当我们插入一个新节点时，都需要检查树是否需要平衡（行 `{1}` 和 `{2}`）。
 
-#### 2.1.1 计算平衡因子
+#### 计算平衡因子
 
 在 AVL 树中，对于每个节点，我们需要计算右子树高度（`hr`）和左子树高度（`hl`）之间的差异。`hr - hl` 的结果应该是 0、1 或 -1。如果结果不同于这些值，则意味着树需要平衡。这个概念被称为平衡因子。
 
@@ -5268,32 +5792,41 @@ var insertNode = function(node, element) {
 
 计算节点高度的代码如下：
 
-```
+```javascript
 var heightNode = function(node) { 
+
   if (node === null) { 
+
     return -1; 
+
   } else { 
+
     return Math.max(heightNode(node.left), 
+
     heightNode(node.right)) + 1;
+
   }
+
 };
 ```
 
 因此，如果我们在左子树中插入新节点，我们将计算高度，如果结果大于 1，则对左侧进行平衡：
 
-```
+```javascript
 //行 {1}
+
 heightNode(node.left) - heightNode(node.right) > 1
 ```
 
 如果我们在右子树中插入新节点，我们将通过以下代码对其进行平衡：
 
-```
+```javascript
 //行 {2}
+
 heightNode(node.right) - heightNode(node.left) > 1
 ```
 
-#### 2.1.2 AVL 旋转
+#### AVL 旋转
 
 向 AVL 树插入节点时，有两种过程可以使用：单旋转或双旋转。在单旋转和双旋转之间，有四种场景：
 
@@ -5319,12 +5852,17 @@ heightNode(node.right) - heightNode(node.left) > 1
 
 以下代码演示了这一过程：
 
-```
+```javascript
 var rotationRR = function(node) { 
+
   var tmp = node.right;  //{1} 
+
   node.right = tmp.left; //{2} 
+
   tmp.left = node;       //{3} 
+
   return tmp; 
+
 }; 
 ```
 
@@ -5341,16 +5879,17 @@ var rotationRR = function(node) {
 * X 的右侧子树（Z）将被放置为 Y 的左侧子树（行 `{2}`）。
 * X 的右孩子将引用 Y（行 `{3}`）。
 
-
-
-
-
 ```javascript
 var rotationLL = function(node) { 
+
   var tmp = node.left;   //{1} 
+
   node.left = tmp.right; //{2} 
+
   tmp.right = node;      //{3} 
+
   return tmp; 
+
 }; 
 ```
 
@@ -5374,8 +5913,11 @@ var rotationLL = function(node) {
 
 ```javascript
 var rotationLR = function(node) { 
+
   node.left = rotationRR(node.left); 
+
   return rotationLL(node); 
+
 }; 
 ```
 
@@ -5388,7 +5930,7 @@ var rotationLR = function(node) {
 假设节点 `75` 是 AVL 树中最后插入的。这会导致树失去平衡（节点 `70` - `Y` 的高度为 `-2`），因此我们需要对其进行平衡处理。以下是执行平衡树的步骤：
 
 *   节点 `X` 将取代平衡因子为 `-2` 的节点 `Y`
-*   节点 `X` 及其右侧子树（节点 `Z` ）将作为节点 `Z` 的左侧子树（注：此处原文可能有笔误，通常应为作为节点 Y 的右侧子树）
+*   节点 `X` 及其右侧子树（节点 `Z` ）将作为节点 `Z` 的左侧子树
 *   节点 `X` 及其左侧子树将作为节点 `Y` 的右侧子树
 *   节点 `X` 的右孩子将引用节点 `Y`
 *   节点 `X` 的左孩子将引用节点 `Z`
@@ -5399,8 +5941,11 @@ var rotationLR = function(node) {
 
 ```javascript
 var rotationRL = function(node) { 
+
   node.right = rotationLL(node.right); 
+
   return rotationRR(node); 
+
 }; 
 ```
 
@@ -5412,13 +5957,21 @@ var rotationRL = function(node) {
 
 ```javascript
 //此代码替换 insertNode 方法中的第 {1} 行 
+
 if ((heightNode(node.left) - heightNode(node.right)) > 1){ 
+
   // 执行旋转 {3} 
+
   if (element < node.left.key){ 
+
     node = rotationLL(node); 
+
   } else { 
+
     node = rotationLR(node); 
+
   } 
+
 } 
 ```
 
@@ -5426,13 +5979,21 @@ if ((heightNode(node.left) - heightNode(node.right)) > 1){
 
 ```javascript
 //此代码替换 insertNode 方法中的第 {2} 行 
+
 if ((heightNode(node.right) - heightNode(node.left)) > 1){ 
+
   // 执行旋转 {4} 
+
   if (element > node.right.key){ 
+
     node = rotationRR(node); 
+
   } else { 
+
     node = rotationRL(node); 
+
   } 
+
 } 
 ```
 
@@ -5450,8 +6011,9 @@ if ((heightNode(node.right) - heightNode(node.left)) > 1){
 
 在下一章中，我们将学习图的基本概念，它们是
 
+# 第 9 章：图
 
-
+图是网络结构的抽象模型。图是一组通过边连接的顶点。学习图是重要的，因为任何二元关系都可以用图来表示。例如，道路、航班、通信等。
 
 在数据结构中，我们有几种方法来表示图。在现有方案中，没有哪种表示方法是完美的。这取决于你需要解决的问题类型以及图的类型。
 
@@ -5483,10 +6045,13 @@ if ((heightNode(node.right) - heightNode(node.left)) > 1){
 
 和往常一样，我们将声明类的骨架：
 
-```
+```javascript
 function Graph() { 
-  var vertices = []; /{1} 
-  var adjList = new Dictionary(); /{2} 
+
+  var vertices = []; //{1} 
+
+  var adjList = new Dictionary(); //{2} 
+
 } 
 ```
 
@@ -5494,10 +6059,13 @@ function Graph() {
 
 接下来，我们将实现两个方法：一个向图中添加新顶点（因为当我们实例化图时，它会创建一个空图），另一个是在顶点之间添加边。让我们先实现 `addVertex` 方法，如下：
 
-```
+```javascript
 this.addVertex = function(v){ 
-  vertices.push(v); /{3} 
-  adjList.set(v, []); /{4} 
+
+  vertices.push(v); //{3} 
+
+  adjList.set(v, []); //{4} 
+
 }; 
 ```
 
@@ -5505,12 +6073,17 @@ this.addVertex = function(v){
 
 现在，让我们通过以下代码实现 `addEdge` 方法：
 
-```
+```javascript
 this.addEdge = function(v, w){ 
-  adjList.get(v).push(w); /{5} 
-  adjList.get(w).push(v); /{6} 
+
+  adjList.get(v).push(w); //{5} 
+
+  adjList.get(w).push(v); //{6} 
+
 }; 
 ```
+
+
 
 该方法接收两个顶点作为参数。首先，我们通过向 `v` 的邻接列表添加 `w` 来添加顶点 `v` 到顶点 `w` 的边（第 `{5}` 行）。如果你想实现有向图，第 `{5}` 行就足够。由于我们在本章的大多数示例中处理无向图，我们还需要添加从 `w` 到 `v` 的边（第 `{6}` 行）。
 
@@ -5522,22 +6095,33 @@ this.addEdge = function(v, w){
 
 ```
 var graph = new Graph(); 
+
 var myVertices = ['A','B','C','D','E','F','G','H','I']; /{7} 
+
 for (var i=0; i<myVertices.length; i++){ /{8} 
+
   graph.addVertex(myVertices[i]); 
+
 } 
+
 graph.addEdge('A','B'); 
+
 graph.addEdge('A','C'); 
+
 graph.addEdge('A','D'); 
+
 graph.addEdge('B','E'); 
+
 graph.addEdge('B','F'); 
+
 graph.addEdge('C','D'); 
+
 graph.addEdge('C','G'); 
+
 graph.addEdge('D','H'); 
+
 graph.addEdge('E','I');
 ```
-
-
 
 BFS 和 DFS 算法基本上是相同的，唯一的区别在于用于存储待访问顶点列表的数据结构。请看下表：
 
@@ -5574,35 +6158,59 @@ BFS 算法从第一个指定的顶点开始遍历图，并首先访问所有的�
 
 ```javascript
 var initializeColor = function(){ 
+
   var color = []; 
+
   for (var i=0; i<vertices.length; i++){ 
+
     color[vertices[i]] = 'white'; //{1} 
+
   } 
+
   return color; 
+
 }; 
 
 this.bfs = function(v, callback){ 
 
   var color = initializeColor(), //{2} 
+
   queue = new Queue();       //{3} 
+
   queue.enqueue(v);              //{4} 
 
   while (!queue.isEmpty()){      //{5} 
+
     var u = queue.dequeue(),        //{6} 
+
     neighbors = adjList.get(u); //{7} 
+
     color[u] = 'grey';                      //{8} 
+
     for (var i=0; i<neighbors.length; i++){ //{9} 
+
       var w = neighbors[i];               //{10} 
+
       if (color[w] === 'white'){          //{11} 
+
         color[w] = 'grey';              //{12} 
+
         queue.enqueue(w);               //{13} 
+
       } 
+
     } 
+
     color[u] = 'black'; //{14} 
+
     if (callback) {     //{15} 
+
       callback(u); 
+
     } 
+
   } 
+
 }; 
 ```
 
@@ -5618,11 +6226,13 @@ this.bfs = function(v, callback){
 
 当我们完成对该顶点及其相邻顶点的探索时，我们将将其标记为已探索（颜色设置为 `black`，第 `{14}` 行）。
 
-`bfs` 方法接收一个 `callback`（我们在 第 8 章 中用过），它是可选的。如果我们传递 `callback`，将使用以下代码：
+`bfs` 方法接收一个 `callback`（我们在第 8 章中用过），它是可选的。如果我们传递 `callback`，将使用以下代码：
 
 ```javascript
 function printNode(value){ 
+
   console.log('Visited vertex: ' + value); 
+
 }
 ```
 
@@ -5636,10 +6246,13 @@ graph.bfs(0, printNode); //16
 
 ```
 Visited vertex: A
+
 Visited vertex: B
+
 ...
 ```
-这是访问顺序（第 `{17}`).
+
+这是访问顺序（第 `{17}`）。
 
 ### 使用 BFS 寻找最短路径
 
@@ -5654,35 +6267,61 @@ Visited vertex: B
 this.BFS = function(v){ 
 
   var color = initializeColor(), 
+
   queue = new Queue(), 
+
   d = [], //{1} 
+
   pred = []; //{2} 
+
   queue.enqueue(v); 
 
-  for (var i=0; i<vertices.length; i++){帚 3} 
+  for (var i=0; i<vertices.length; i++){ //{3} 
+
     d[vertices[i]] = 0;                //{4} 
+
     pred[vertices[i]] = null;          //{5} 
+
   } 
 
   while (!queue.isEmpty()){ 
+
     var u = queue.dequeue(), 
+
     neighbors = adjList.get(u); 
+
     color[u] = 'grey'; 
-    for (i=0; i<neighbors.length; i++){ 
+
+    for (var i=0; i<neighbors.length; i++){ 
+
       var w = neighbors[i]; 
+
       if (color[w] === 'white'){ 
+
         color[w] = 'grey'; 
+
         d[w] = d[u] + 1;           //{6} 
+
         pred[w] = u;               //{7} 
+
         queue.enqueue(w); 
+
       } 
+
     } 
+
     color[u] = 'black'; 
+
   } 
-  return {帚 8} 
-  distances: d, 
-  predecessors: pred 
+
+  return { //{8} 
+
+    distances: d, 
+
+    predecessors: pred 
+
   }; 
+
 }; 
 ```
 
@@ -5692,9 +6331,6 @@ this.BFS = function(v){
 
 本章的源代码包含两个 `bfs` 方法：`bfs`（我们实现的第一个）和 `BFS`（改进版）。
 
-
-
-
 当我们发现顶点 `u` 的邻居 `w` 时，我们将 `w` 的前驱值设置为 `u`（第 `{7}` 行），并通过加上 `1` 以及 `u` 的距离来增加 `v` 与 `w` 之间的距离（第 `{6}` 行）（由于 `u` 是 `w` 的前驱，我们已经有了 `d[u]` 的值）。
 
 方法结束后，我们可以返回一个包含 `d` 和 `pred` 的对象（第 `{8}` 行）。
@@ -5703,6 +6339,7 @@ this.BFS = function(v){
 
 ```
 var shortestPathA = graph.BFS(myVertices[0]); 
+
 console.log(shortestPathA); 
 ```
 
@@ -5710,6 +6347,7 @@ console.log(shortestPathA);
 
 ```
  distances: [A: 0, B: 1, C: 1, D: 1, E: 2, F: 2, G: 2, H: 2 , I: 3], 
+
 predecessors: [A: null, B: "A", C: "A", D: "A", E: "B", F: "B", G: "C", H: "D", I: "E"] 
 ```
 
@@ -5719,20 +6357,33 @@ predecessors: [A: null, B: "A", C: "A", D: "A", E: "B", F: "B", G: "C", H: "D", 
 
 ```
 var fromVertex = myVertices[0]; //{9} 
+
 for (var i=1; i<myVertices.length; i++){ //{10} 
+
   var toVertex = myVertices[i], //{11} 
+
   path = new Stack();       //{12} 
+
   for (var v=toVertex; v!== fromVertex; 
-  v=shortestPathA.predecessors[v]) { //'13} 
+
+  v=shortestPathA.predecessors[v]) { //{13} 
+
     path.push(v);                          //{14} 
+
   } 
+
   path.push(fromVertex);       //{15} 
+
   var s = path.pop();          //{16} 
+
   while (!path.isEmpty()){     //{17} 
+
     s += ' - ' + path.pop(); //{18} 
+
   } 
+
   console.log(s); //{19} 
-} 
+}
 ```
 
 我们将使用顶点 `A` 作为源顶点（第 `{9}` 行）。对于其他每一个顶点（顶点 `A` 外，第 `{10}` 行），我们将计算从顶点 `A` 到该顶点的路径。为此，我们将从 `vertices` 数组中获取 `toVertex` 的值（第 `{11}` 行），并创建一个栈来存储路径值（第 `{12}` 行）。
@@ -5745,12 +6396,19 @@ for (var i=1; i<myVertices.length; i++){ //{10}
 
 ```
  A - B 
+
 A - C 
+
 A - D 
+
 A - B - E 
+
 A - B - F 
+
 A - C - G 
+
 A - D - H 
+
 A - B - E - I 
 ```
 
@@ -5768,58 +6426,91 @@ A - B - E - I
 
 到目前为止，我们仅演示了 DFS 算法是如何工作的。我们可以将其用于比输出访问顶点顺序之外更多的功能。
 
-
-
-
 给定一个图 `G`，DFS 算法遍历 `G` 的所有顶点并构建一个森林（一组`rooted trees`），连同一组源顶点集合（`roots`），并输出两个数组：发现时间（discovery time）和完成探索时间（finish explorer time）。我们可以修改 `dfs` 方法来为我们返回一些信息，例如：
 
 *   顶点 `u` 的发现时间 `d[u]`
 *   当 `u` 被标记为黑色时的完成时间 `f[u]`
 *   `u` 的前驱节点 `p[u]`
 
-让我们来看看改进后的 `BFS` 方法的实现：
+让我们来看看改进后的 `DFS` 方法的实现：
 
-```
-var time = 0; /{1} 
+```javascript
+var time = 0; //{1} 
+
 this.DFS = function(){ 
+
   var color = initializeColor(), //{2} 
+
   d = [],                     
+
   f = [],                    
+
   p = []; 
+
   time = 0; 
 
   for (var i=0; i<vertices.length; i++){ //{3} 
+
     f[vertices[i]] = 0; 
+
     d[vertices[i]] = 0; 
+
     p[vertices[i]] = null; 
+
   } 
-  for (i=0; i<vertices.length; i++){              
+
+  for (var i=0; i<vertices.length; i++){              
+
     if (color[vertices[i]] === 'white'){       
+
       DFSVisit(vertices[i], color, d, f, p); 
+
     } 
+
   } 
-  return {           //{4} 
+
+  return { //{4} 
+
     discovery: d, 
+
     finished: f, 
+
     predecessors: p 
+
   }; 
+
 }; 
 
 var DFSVisit = function(u, color, d, f, p){ 
+
   console.log('discovered ' + u); 
+
   color[u] = 'grey'; 
+
   d[u] = ++time;     //{5} 
+
   var neighbors = adjList.get(u); 
+
   for (var i=0; i<neighbors.length; i++){ 
+
     var w = neighbors[i];                
+
     if (color[w] === 'white'){           
+
       p[w] = u;                       //{6} 
+
       DFSVisit(w,color, d, f, p);     
+
     } 
+
   } 
+
   color[u] = 'black'; 
+
   f[u] = ++time;      //{7} 
+
   console.log('explored ' + u); 
+
 }; 
 ```
 
@@ -5860,22 +6551,33 @@ DFS 算法背后的思想是什么？边是从最近发现的顶点 `u` 开始�
 
 ```
 graph = new Graph(); 
+
 myVertices = ['A','B','C','D']; 
-for (i=0; i<myVertices.length; i++){ 
+
+for (var i=0; i<myVertices.length; i++){ 
+
   graph.addVertex(myVertices[i]); 
+
 } 
+
 graph.addEdge('A', 'C'); 
+
 graph.addEdge('A', 'D'); 
+
 graph.addEdge('B', 'D'); 
+
 graph.addEdge('B', 'E'); 
+
 graph.addEdge('C', 'F'); 
+
 graph.addEdge('F', 'E'); 
+
 var result = graph.DFS(); 
 ```
 
 这段代码将创建图、应用边、执行 DFS 并结果存储在 `result` 变量中。下图展示了执行 DFS 后的发现时间和完成时间：
 
-![Topological sorting using DFS](img/Image0090.jpg)
+![Topological sorting using DFS](img/Image00090.jpg)
 
 现在，我们只需要对完成时间数组进行倒序排序，就可以得到图的拓扑排序，如下：
 
@@ -5909,17 +6611,19 @@ Dijkstra 算法是一种`贪心算法`（你可以在第 11 章 中学习更多�
 
 ![Dijkstra's algorithm](img/Image0092.jpg)
 
-
-
-
 让我们来看看如何找到顶点 `A` 到所有其他顶点之间的最短路径。首先，我们需要声明表示前述图的邻接矩阵，如下：
 
 ```
 var graph = [[0, 2, 4, 0, 0, 0], 
+
              [0, 0, 1, 4, 2, 0], 
+
              [0, 0, 0, 0, 3, 0], 
+
              [0, 0, 0, 0, 0, 2], 
+
              [0, 0, 0, 3, 0, 2], 
+
              [0, 0, 0, 0, 0, 0]]; 
 ```
 
@@ -5927,12 +6631,17 @@ var graph = [[0, 2, 4, 0, 0, 0],
 
 ```
 this.dijkstra = function(src){ 
+
   var dist = [], visited = [], 
+
   length = this.graph.length; 
 
   for (var i = 0; i < length; i++) { //{1} 
+
     dist[i] = INF; 
+
     visited[i] = false; 
+
   } 
 
   dist[src] = 0; //{2} 
@@ -5944,14 +6653,23 @@ this.dijkstra = function(src){
     visited[u] = true; //{5} 
 
     for (var v = 0; v < length; v++){ 
+
       if (!visited[v] && 
+
       this.graph[u][v]!=0 && dist[u] != INF && 
+
       dist[u]+this.graph[u][v] < dist[v]){ //{6} 
+
         dist[v] = dist[u] + this.graph[u][v]; //{7} 
+
       } 
+
     } 
+
   } 
+
   return dist; //{8} 
+
 }; 
 ```
 
@@ -5969,15 +6687,23 @@ this.dijkstra = function(src){
 
 ```
 var minDistance = function(dist, visited){ 
+
   var min = INF, minIndex = -1; 
 
   for (var v = 0; v < dist.length; v++){ 
+
     if (visited[v] == false && dist[v] <= min){ 
+
       min = dist[v]; 
+
       minIndex = v; 
+
     } 
+
   } 
+
   return minIndex; 
+
 }; 
 ```
 
@@ -5985,10 +6711,15 @@ var minDistance = function(dist, visited){
 
 ```
  0      0 
+
 1      2 
+
 2      3 
+
 3      6 
+
 4      4 
+
 5      6 
 ```
 
@@ -6003,24 +6734,41 @@ Floyd-Warshall 算法如下：
 
 ```
 this.floydWarshall = function(){ 
+
   var dist = [], length = this.graph.length, i, j, k; 
 
-  for (i = 0; i < length; i++){ McCoy1} 
+  for (i = 0; i < length; i++){ //{1} 
+
     dist[i] = []; 
+
     for (j = 0; j < length; j++){ 
+
       dist[i][j] = this.graph[i][j]; 
+
     } 
+
   } 
 
   for (k = 0; k < length; k++){     //{2} 
+
     for (i = 0; i < length; i++){ 
+
       for (j = 0; j < length; j++){ 
-        if (dist[i][k] + dist[k][j] < dist[i][j]){ McCoy3} 
+
+        if (dist[i][k] + dist[k][j] < dist[i][j]){ //{3} 
+
           dist[i][j] = dist[i][k] + dist[k][j]; //{4} 
+
         } 
+
       } 
+
     } 
+
+  } 
+
   return dist; 
+
 }; 
 ```
 
@@ -6028,7 +6776,8 @@ this.floydWarshall = function(){
 
 *   第 `{1}` 行：首先，我们用图权重初始化距离矩阵
 *   第 `{2}` 行：我们遍历每一个顶点作为中间点
-*   第 `{3}` 行：我们检查通过 `k` 从 `i` 到 `j` 的路径*第 `{4}` 行：如果发现更短的路径，我们将更新 `dist[i]`
+*   第 `{3}` 行：我们检查通过 `k` 从 `i` 到 `j` 的路径
+*   第 `{4}` 行：如果发现更短的路径，我们将更新 `dist[i][j]`
 
 #### 最小生成树 (MST)
 
@@ -6040,48 +6789,69 @@ Prim 算法是一种寻找加权图 MST 的贪心算法。让我们看看它是�
 
 ```
 this.prim = function() { 
+
   var parent = [], key = [], visited = []; 
+
   length = this.graph.length, i; 
 
-  for (i = 0; i < length; i++){ McCoy1} 
+  for (i = 0; i < length; i++){ //{1} 
+
     key[i] = INF; 
+
     visited[i] = false; 
+
   } 
 
-  key[0] = 0;     2} 
+  key[0] = 0;     //{2} 
+
   parent[0] = -1; 
 
-  for (i = 0; i < length-1; i++){3} 
-    var u = minKey(key, visited); McCoy4} 
+  for (i = 0; i < length-1; i++){ //{3} 
 
-    visited[u] = true;            5} 
+    var u = minKey(key, visited); //{4} 
+
+    visited[u] = true;            //{5} 
 
     for (var v = 0; v < length; v++){ 
+
       if (this.graph[u][v] && visited[v] == false 
-      && this.graph[u][v] < key[v]){ McCoy6} 
-      parent[v] = u;            7} 
-      key[v] = this.graph[u][v]; McCoy8} 
+
+      && this.graph[u][v] < key[v]){ //{6} 
+
+        parent[v] = u;            //{7} 
+
+        key[v] = this.graph[u][v]; //{8} 
+
       } 
+
     } 
+
   } 
-  return parent; McCoy9} 
+
+  return parent; //{9} 
+
 }; 
 
 function minKey(key, visited){
+
   var min = INF, minIndex = -1, v;
 
   for (v = 0; v < key.length; v++){ 
+
     if (visited[v] == false && key[v] < min){ 
+
       min = key[v]; 
+
       minIndex = v; 
+
     } 
+
   } 
+
   return minIndex; 
+
 }
 ```
-
-
-
 
 如果我们将 Prim 算法与 Dijkstra 算法进行比较，会发现它们非常相似，第 `{7}` 行和 `{8}` 行除外。第 `{7}` 行保留了 `parent` 数组，该数组用于存储最小生成树（MST）。第 `{8}` 行存储了最小边权值，而在 Dijkstra 算法中，使用的是 `distance` 数组而不是 `key` 数组来存储距离。我们可以修改 Dijkstra 算法以以向 `parent` 数组中添加内容，通过这种，我们就可以追踪路径及其距离值。
 
@@ -6089,10 +6859,15 @@ function minKey(key, visited){
 
 ```
 var graph = [[0, 2, 4, 0, 0, 0], 
+
              [2, 0, 2, 4, 2, 0], 
+
              [4, 2, 0, 0, 3, 0], 
+
              [0, 4, 0, 0, 3, 2], 
+
              [0, 2, 3, 3, 0, 2], 
+
              [0, 0, 0, 2, 2, 0]]; 
 ```
 
@@ -6100,10 +6875,15 @@ var graph = [[0, 2, 4, 0, 0, 0],
 
 ```
  Edge   Weight 
+
 0 - 1   2 
+
 1 - 2   2 
+
 5 - 3   2 
+
 1 - 4   2 
+
 4 - 5   2 
 ```
 
@@ -6115,54 +6895,77 @@ var graph = [[0, 2, 4, 0, 0, 0],
 
 ```
 this.kruskal = function(){ 
+
   var length = this.graph.length, 
+
   parent = [], cost, 
+
   ne = 0, a, b, u, v, i, j, min; 
-  cost = initializeCost(); /{1} 
 
-  while(ne<length-1) { /{2} 
+  cost = initializeCost(); //{1} 
 
-    for(i=0, min = INF;i < length; i++) { /{3} 
+  while(ne<length-1) { //{2} 
+
+    for(i=0, min = INF;i < length; i++) { //{3} 
+
       for(j=0;j < length; j++) { 
+
         if(cost[i][j] < min) { 
+
           min=cost[i][j]; 
+
           u = i; 
+
           v = j; 
+
         } 
+
       } 
+
     } 
 
-    u = find(u, parent); /{4} 
-    v = find(v, parent); /{5} 
+    u = find(u, parent); //{4} 
 
-    if (union(u, v, parent)){ /{6} 
+    v = find(v, parent); //{5} 
+
+    if (union(u, v, parent)){ //{6} 
+
       ne++; 
+
     } 
 
-    cost[u][v] = cost[v][u] = INF; /{7} 
+    cost[u][v] = cost[v][u] = INF; //{7} 
+
   } 
+
   return parent; 
+
 } 
 ```
 
 以下是该算法工作原理的描述：
 
-* 行 `{1}`：首先，我们将邻接矩阵的值复制到 `cost` 数组中，这样就可以对其修改而不丢失原始值（第 `{7}` 行）。
-* 行 `{2}`：当 MST 的边数少于总边数减 1 时循环。
-* 行 `{3}`：找到代价最小的边。
-* 行 `{4}` 和 `{5}`：为了避免产生环路，验证该边是否已经在 MST 中。
-* 行 `{6}`：如果边 `u` 和 `v` 不相同，则将其加入 MST。
-* 行 `{7}`：将边从列表中移除，以便我们不会重复计算。
-* 行 `{8}`：返回 MST。
+*   行 `{1}`：首先，我们将邻接矩阵的值复制到 `cost` 数组中，这样就可以对其修改而不丢失原始值（第 `{7}` 行）。
+*   行 `{2}`：当 MST 的边数少于总边数减 1 时循环。
+*   行 `{3}`：找到代价最小的边。
+*   行 `{4}` 和 `{5}`：为了避免产生环路，验证该边是否已经在 MST 中。
+*   行 `{6}`：如果边 `u` 和 `v` 不相同，则将其加入 MST。
+*   行 `{7}`：将边从列表中移除，以便我们不会重复计算。
+*   行 `{8}`：返回 MST。
 
 `find` 函数定义如下。它防止 MST 中产生环路：
 
 ```
 var find = function(i, parent){ 
+
   while(parent[i]){ 
+
     i = parent[i]; 
+
   } 
+
   return i; 
+
 }; 
 ```
 
@@ -6170,11 +6973,17 @@ var find = function(i, parent){
 
 ```
 var union = function(i, j, parent){ 
+
   if(i != j) { 
+
     parent[j] = i; 
+
     return true; 
+
   } 
+
   return false; 
+
 }; 
 ```
 
@@ -6216,19 +7025,25 @@ var union = function(i, j, parent){
 
 ```
 this.bubbleSort = function(){ 
+
   var length = array.length;           //{1} 
+
   for (var i=0; i<length; i++){//{2} 
+
     for (var j=0; j<length-1; j++ ){//{3} 
+
       if (array[j] > array[j+1]){//{4} 
+
         swap(array, j, j+1);     //{5} 
+
       } 
+
     } 
+
   } 
+
 }; 
 ```
-
-
-
 
 首先，我们声明一个名为 `length` 的变量，它将存储 `array` 的大小（行 `{1}`）。这一步将帮助我们在行 `{2}` 和 `{3}` 中获取 `array` 的大小，这一步是可选的。然后，我们有一个外层循环（行 `{2}`），它将从数组的第一个位置迭代到最后一个位置，控制在数组中执行的次数（由于执行次数等于数组的大小，因此数组中的每个元素应该执行一次）。接着，我们有一个内层循环（行 `{3}`），它将从数组的第一个位置迭代到倒数第二个元素，这实际上会执行当前元素与下一个元素之间的比较（行 `{4}`）。如果元素的的顺序不正确（即当前元素比下一个元素大），我们就交换它们的位置（行 `{5}`），这意味着 `j+1` 位置的值将转移到 `j` 位置，反之亦然。
 
@@ -6236,9 +7051,13 @@ this.bubbleSort = function(){
 
 ```
 var swap = function(array, index1, index2){ 
+
   var aux = array[index1]; 
+
   array[index1] = array[index2]; 
+
   array[index2] = aux; 
+
 }; 
 ```
 
@@ -6260,17 +7079,25 @@ var swap = function(array, index1, index2){
 
 ```javascript
 function createNonSortedArray(size){ //{6} 
+
   var array = new ArrayList(); 
+
   for (var i = size; i> 0; i--){ 
+
     array.insert(i); 
+
   } 
+
   return array; 
+
 } 
 
-var array = createNonSortedArray(5); /{7} 
+var array = createNonSortedArray(5); //{7} 
+
 console.log(array.toString());       //{8} 
 
 array.bubbleSort();                  //{9} 
+
 console.log(array.toString());       //{10} 
 ```
 
@@ -6288,14 +7115,23 @@ console.log(array.toString());       //{10}
 
 ```javascript
 this.modifiedBubbleSort = function(){ 
+
   var length = array.length; 
+
   for (var i=0; i<length; i++){ 
+
     for (var j=0; j<length-1-i; j++ ){//{1} 
+
       if (array[j] > array[j+1]){ 
+
         swap(j, j+1); 
+
       } 
+
     } 
+
   } 
+
 }; 
 ```
 
@@ -6317,18 +7153,31 @@ this.modifiedBubbleSort = function(){
 
 ```javascript
 this.selectionSort = function(){ 
-  var length = array.length; ={1} 
+
+  var length = array.length; //{1} 
+
   for (var i=0; i<length-1; i++){//{2} 
+
     indexMin = i;                     //{3}
+
     for (var j=i; j<length; j++){//{4} 
+
       if(array[indexMin]>array[j]){//{5} 
+
         indexMin = j;                     //{6} 
+
       } 
+
     } 
+
     if (i !== indexMin){//{7} 
+
       swap(i, indexMin); 
+
     } 
+
   } 
+}
 ```
 
 首先，我们将声明一些将用到的变量（行 `{1}`）。然后，我们有一个外层循环（行 `{2}`），它将迭代数组并控制遍历次数（即第 $n$ 个值）。我们假设当前遍历的第一个值是最小值（行 `{3}`）。然后，从当前的 `i` 值开始到数组末尾（行 `{4}`），我们将比较 `j` 值是否小于当前最小值（行 `{5}`）；如果为真，我们将更新更新为新的最小值（行 `{6}`）。当我们跳出内层循环时（行 `{4}`），我们就得到了第 $n$ 个最小值。然后，如果最小值与原始最小值不同（行 `{7}`），我们就交换它们。
@@ -6337,8 +7186,11 @@ this.selectionSort = function(){
 
 ```javascript
 array = createNonSortedArray(5); 
+
 console.log(array.toString()); 
+
 array.selectionSort(); 
+
 console.log(array.toString()); 
 ```
 
@@ -6352,27 +7204,35 @@ console.log(array.toString());
 
 #### 插入排序
 
-插入排序算法逐元素构建最终的排序数组。它假设第一个元素已经是排序的。然后，与第二个元素进行比较：第二个元素应该留在原处，还是插入到第一个元素之前？因此，前两个元素将变为有序，将与第三个元素进行比较（即它应该插入到第一、第二还是第三位置？），依此类推。
+插入排序算法逐元素构建最终的排序数组。它假设第一个元素已经是排序的。然后，与第二个元素进行比较：第二个元户应该留在原处，还是插入到第一个元素之前？因此，前两个元素将变为有序，将与第三个元素进行比较（即它应该插入到第一、第二还是第三位置？），依此类推。
 
 以下代码代表插入排序算法：
 
-
-
-
-
 ```
 this.insertionSort = function(){ 
+
   var length = array.length,            //{1} 
+
   j, temp; 
+
   for (var i=1; i<length; i++){         //{2} 
+
     j = i;                            //{3} 
+
     temp = array[i];                  //{4} 
+
     while (j>0 && array[j-1] > temp){ //{5} 
+
       array[j] = array[j-1];        //{6} 
+
       j--; 
+
     } 
+
     array[j] = temp;                  //{7} 
+
   } 
+
 }; 
 ```
 
@@ -6405,7 +7265,9 @@ JavaScript 的 `Array` 类定义了一个 `sort` 函数（`Array.prototype.sort`
 
 ```
 this.mergeSort = function(){ 
+
   array = mergeSortRec(array); 
+
 }; 
 ```
 
@@ -6413,14 +7275,23 @@ this.mergeSort = function(){
 
 ```
 var mergeSortRec = function(array){ 
+
   var length = array.length; 
+
   if(length <= 1){ 
+
     return array; 
+
   }
+
   var mid = Math.floor(length / 2); 
+
   var left = array.slice(0, mid); 
+
   var right = array.slice(mid); 
+
   return merge(mergeSortRec(left), mergeSortRec(right)); 
+
 };
 ```
 
@@ -6428,32 +7299,43 @@ var mergeSortRec = function(array){
 
 ```
 var merge = function(left, right){ 
-  var result = [], //7} 
+
+  var result = [], //{7} 
+
   il = 0,
+
   ir = 0;
 
-  while(il < left.length && ir < right.length) { //8} 
+  while(il < left.length && ir < right.length) { //{8} 
+
     if(left[il] < right[ir]) { 
+
       result.push(left[il++]);  //{9} 
+
     } else{ 
-      result.push(right[ir++]); // {10} 
+
+      result.push(right[ir++]); //{10} 
+
     } 
+
   }
 
   while (il < left.length){    //{11} 
+
     result.push(left[il++]); 
+
   }
 
   while (ir < right.length){   //{12} 
+
     result.push(right[ir++]); 
+
   } 
 
-  return result; // {13} 
+  return result; //{13} 
+
 }; 
 ```
-
-
-
 
 接下来，我们将把 `left` 数组中剩余的所有项（行 `{11}`）添加到合并后的结果数组中，并对 `right` 数组中的剩余项执行相同的操作（行 `{12}`）。最后，我们将返回这个合并后的数组作为结果（行 `{13}`）。
 
@@ -6477,35 +7359,43 @@ var merge = function(left, right){
 
 ```
 this.quickSort = function(){ 
+
   quick(array,  0, array.length - 1); 
+
 }; 
 ```
 
-与 `merge sort` 类似，我们将开始声明主方法，该方法将调用递归函数，并传入我们要排序的数组以及索引 0 和它的最后位置（因为我们想要对整个数组排序，而不仅仅是它的子集），如下：
+与 `merge sort` 类似，我们将开始声明主方法，该方法将调用递函数，并传入我们要排序的数组以及索引 0 和它的最后位置（因为我们想要对整个数组排序，而不仅仅是它的子集），如下：
 
 ```
 var quick = function(array, left, right){ 
 
-  var index; /{1} 
+  var index; //{1} 
 
-  if (array.length > 1) { /{2} 
+  if (array.length > 1) { //{2} 
 
-    index = partition(array, left, right); /{3} 
+    index = partition(array, left, right); //{3} 
 
     if (left < index - 1) {           //{4} 
+
       quick(array, left, index - 1);     //{5} 
+
     } 
 
     if (index < right) {                   //{6} 
+
       quick(array, index, right);        //{7} 
+
     } 
+
   } 
+
 }; 
 ```
 
 首先，我们将有一个 `index` 变量（行 `{1}`），它将帮助我们分离大小值的子数组，以便我们可以再次递归地调用 `quick` 函数。我们将通过 `partition` 函数的返回值获取 `index` 值（行 `{3}`）。
 
-如果数组的大小大于 1（因为只有一个元素的数组在行 `{2}` 已经是排序状态），我们将在给定的子数组上执行分区操作（第一次调用将传递整个数组）以获取 `index`（行 `{3}`）。如果存在元素较小的子数组（行 `{4}`），我们将对该子数组重复该过程（行 `{5}`）。我们对值较大的子数组执行相同的操作。如果存在任何值较大的子数组（行 `{6}`），我们将重复快速排序过程（行 `{7}`）。
+如果数组的大小大于 1（因为只有一个元素的数组在行 `{2}` 已已经是排序状态），我们将在给定的子数组上执行分区操作（第一次调用将传递整个数组）以获取 `index`（行 `{3}`）。如果存在元素较小的子数组（行 `{4}`），我们将对该子数组重复该过程（行 `{5}`）。我们对值较大的子数组执行相同的操作。如果存在任何值较大的子数组（行 `{6}`），我们将重复快速排序过程（行 `{7}`）。
 
 ### 分区过程
 
@@ -6514,32 +7404,44 @@ var quick = function(array, left, right){
 ```
 var partition = function(array, left, right) { 
 
-  var pivot = array[Math.floor((right + left) / 2)], /{8} 
-  i = left,                                      //{9} 
+  var pivot = array[Math.floor((right + left) / 2)]; //{8} 
+
+  i = left;                                      //{9} 
+
   j = right;                                     //{10} 
 
-  while (i <= j) {                //{11} 
-    while (array[i] < pivot) {  //{12} 
+  while (i <= j) { //{11} 
+
+    while (array[i] < pivot) { //{12} 
+
       i++; 
+
     } 
-    while (array[j] > pivot) {  //{13} 
+
+    while (array[j] > pivot) { //{13} 
+
       j--; 
+
     } 
-    if (i <= j) { /{14} 
-      swap(array, i, j); /{15} 
+
+    if (i <= j) { //{14} 
+
+      swap(array, i, j); //{15} 
+
       i++; 
+
       j--; 
+
     } 
+
   } 
-  return i; /{16} 
+
+  return i; //{16} 
+
 }; 
 ```
 
 对于此实现，我们将选择中间元素作为 `pivot`（行 `{8}`）。我们还会初始化两个指针：`left`（在 `{9}` 处）指向数组的第一个元素，`right`（在 `{10}` 处）指向最后一个。当 `i <= j` 时（行 `{11}`），如果 `array[i] < pivot`（行 `{12}`），我们 `i++`。如果 `array[j] > pivot`（行 `{13}`），我们 `j--`。如果 `i <= j`（行 `{14}`），我们执行 `swap(array, i, j)`（行 `{15}`），然后 `i++` 和 `j--`。最后，我们返回 `i`（行 `{16}`）。
-
-
-
-
 
 ![堆排序](img/Image00104.jpg)
 
@@ -6547,14 +7449,21 @@ var partition = function(array, left, right) {
 
 ```
 this.heapSort = function(){ 
+
   var heapSize = array.length; 
+
   buildHeap(array); //{1} 
 
   while (heapSize > 1) { 
+
     heapSize--; 
+
     swap(array, 0, heapSize);    //{2} 
+
     heapify(array, heapSize, 0); //{3} 
+
   } 
+
 }; 
 ```
 
@@ -6568,10 +7477,15 @@ this.heapSort = function(){
 
 ```
 var buildHeap = function(array){ 
+
   var heapSize = array.length; 
+
   for (var i = Math.floor(array.length / 2); i >= 0; i--) { 
+
     heapify(array, heapSize, i); 
+
   } 
+
 }; 
 ```
 
@@ -6583,22 +7497,33 @@ var buildHeap = function(array){
 
 ```
 var heapify = function(array, heapSize, i){ 
+
   var left = i * 2 + 1, 
+
   right = i * 2 + 2, 
+
   largest = i; 
 
   if (left < heapSize && array[left] > array[largest]) { 
+
     largest = left; 
+
   } 
 
   if (right < heapSize && array[right] > array[largest]) { 
+
     largest = right; 
+
   } 
 
   if (largest !== i) { 
+
     swap(array, i, largest); 
+
     heapify(array, heapSize, largest); 
+
   } 
+
 }; 
 ```
 
@@ -6628,12 +7553,19 @@ var heapify = function(array, heapSize, i){
 
 ```
 this.sequentialSearch = function(item){ 
-  for (var i=0; i<array.length; i++){帚 1} 
+
+  for (var i=0; i<array.length; i++){ //{1} 
+
     if (item === array[i]){         //{2} 
+
       return i;                   //{3} 
+
     } 
+
   } 
+
   return -1;  //{4} 
+
 }; 
 ```
 
@@ -6656,24 +7588,39 @@ this.sequentialSearch = function(item){
 
 ```
 this.binarySearch = function(item){ 
+
   this.quickSort();  //{1} 
 
   var low = 0;                 //{2}
+
   high = array.length - 1;     //{3} 
+
   mid, element;
 
-  while (low <= high){4} 
+  while (low <= high){ //{4} 
+
     mid = Math.floor((low + high) / 2); //{5} 
+
     element = array[mid];               //{6} 
-    if (element < item) {               7} 
+
+    if (element < item) {               //{7} 
+
       low = mid + 1;                  //{8} 
-    } else if (element > item) {        9} 
+
+    } else if (element > item) {        //{9} 
+
       high = mid - 1;                 //{10} 
+
     } else {                             
+
       return mid;                     //{11} 
+
     } 
+
   } 
+
   return -1;                         //{12} 
+
 }; 
 ```
 
@@ -6687,11 +7634,7 @@ this.binarySearch = function(item){
 
 ### 注意事项
 
-我们在 第 8 章，*树* 中实现的 `BinarySearchTree` 类拥有 `search` 方法，它与二分查找完全相同，但应用于树数据结构。
-
-
-
-
+我们在第 8 章，*树* 中实现的 `BinarySearchTree` 类拥有 `search` 方法，它与二分查找完全相同，但应用于树数据结构。
 
 # 第 11 章 算法模式
 
@@ -6707,7 +7650,9 @@ this.binarySearch = function(item){
 
 ```
 function recursiveFunction(someParam){ 
+
   recursiveFunction(someParam); 
+
 }; 
 ```
 
@@ -6715,11 +7660,15 @@ function recursiveFunction(someParam){
 
 ```
 function recursiveFunction1(someParam){ 
+
   recursiveFunction2(someParam); 
+
 };
 
 function recursiveFunction2(someParam){ 
+
   recursiveFunction1(someParam); 
+
 }; 
 ```
 
@@ -6735,14 +7684,21 @@ function recursiveFunction2(someParam){
 var i = 0; 
 
 function recursiveFn () { 
+
   i++; 
+
   recursiveFn(); 
+
 } 
 
 try { 
+
   recursiveFn(); 
+
 } catch (ex) { 
+
   alert('i = ' + i + ' error: ' + ex); 
+
 }
 ```
 
@@ -6767,9 +7723,13 @@ try {
 
 ```
 function fibonacci(num){ 
+
   if (num === 1 || num === 2){
+
     return 1;
+
   }
+
 }
 ```
 
@@ -6777,10 +7737,15 @@ function fibonacci(num){
 
 ```
 function fibonacci(num){ 
+
   if (num === 1 || num === 2){
+
     return 1;
+
   }
+
   return fibonacci(num - 1) + fibonacci(num - 2); 
+
 }
 ```
 
@@ -6792,15 +7757,25 @@ function fibonacci(num){
 
 ```javascript
 function fib(num){ 
+
   var n1 = 1, 
+
   n2 = 1, 
+
   n = 1; 
+
   for (var i = 3; i<=num; i++){ 
+
     n = n1 + n2; 
+
     n1 = n2; 
+
     n2 = n; 
+
   } 
+
   return n; 
+
 }
 ```
 
@@ -6844,9 +7819,6 @@ function fib(num){
 
 ## 最小硬币找零问题
 
-
-
-
 最小硬币找零问题是硬币找零问题的一个变体。硬币找零问题包括使用一组给面值 `d1... dn` 凑出特定金额分钱有多少种方法。而最小硬币找零问题包括找到使用给定一组面值 `d1... dn` 凑出特定金额分钱所需的最小硬币数量。
 
 例如，美国有以下面值（硬币）：`d1 = 1`；`d2 = 5`；`d3 = 10` 以及 `d4 = 25`。
@@ -6861,35 +7833,63 @@ function fib(num){
 
 ```javascript
 function MinCoinChange(coins){ 
+
   var coins = coins; //{1} 
+
   var cache = {};    //{2} 
 
   this.makeChange = function(amount) { 
+
     var me = this; 
+
     if (!amount) { //{3} 
+
       return []; 
+
     } 
-    if (cache[amount]) {帚 4} 
+
+    if (cache[amount]) { //{4} 
+
       return cache[amount]; 
+
     } 
+
     var min = [], newMin, newAmount; 
+
     for (var i=0; i<coins.length; i++){ //{5} 
+
       var coin = coins[i]; 
+
       newAmount = amount - coin;  //{6} 
+
       if (newAmount >= 0){ 
+
         newMin = me.makeChange(newAmount); //{7} 
+
       } 
+
       if ( 
+
         newAmount >= 0 && //{8} 
+
         (newMin.length < min.length-1 || !min.length)//{9} 
+
         && (newMin.length || !newAmount) //{10})
+
         {
+
           min = [coin].concat(newMin); //{11} 
+
           console.log('new Min ' + min + ' for ' + amount); 
+
         } 
+
     } 
+
     return (cache[amount] = min); //{12} 
+
   }; 
+
 } 
 ```
 
@@ -6907,8 +7907,11 @@ function MinCoinChange(coins){
 
 ```javascript
 var minCoinChange = new MinCoinChange([1, 5, 10, 25]); 
+
 console.log(minCoinChange.makeChange(36)); 
 ```
+
+
 
 注意，如果我们检查 `cache` 变量，它将持有从 1 到 36 分的所有结果。前述代码的结果将是 `[1, 10, 25]`。
 
@@ -6916,10 +7919,15 @@ console.log(minCoinChange.makeChange(36));
 
 ```
  new Min 1 for 1 
+
 new Min 1 for 2 
+
 new Min 1 for 3 
+
 new Min 1 for 4 
+
 new Min 2 for 5 
+
 new Min 2 for 6 
 ```
 
@@ -6938,11 +7946,9 @@ new Min 2 for 6
 ```javascript
 function knapSack(capacity, weights, values, n) { 
   var i, w, a, b, kS = []; 
-
   for (i = 0; i <= n; i++) { //1}
     kS[i] = []; 
   }
-
   for (i = 1; i <= n; i++){ 
     for (w = 0; w <= capacity; w++){ 
       if (i == 0 || w == 0){//2}
@@ -6985,14 +7991,10 @@ console.log(knapSack(capacity, weights, values, n)); //输出 7
 
 ![背包问题](img/Image00110.jpg)
 
-
-
-
 ```javascript
 function findValues(n, capacity, kS, weights, values){ 
   var i=n, k=capacity; 
   console.log('Items that are part of the solution:'); 
-
   while (i>0 && k>0){ 
     if (kS[i][k] !== kS[i-1][k]){ 
       console.log('item '+i+' can be part of solution w,v: ' +
@@ -7031,12 +8033,10 @@ Total value that can be carried: 7
 
 ```javascript
 function lcs(wordX, wordY) { 
-
   var m = wordX.length, 
   n = wordY.length, 
   l = [], 
   i, j, a, b; 
-
   for (i = 0; i <= m; ++i) { 
     l[i] = []; 
     //{1} 
@@ -7045,7 +8045,6 @@ function lcs(wordX, wordY) {
       //{2} 
     } 
   } 
-
   for (i=0; i<=m; i++) { 
     for (j=0; j<=n; j++) { 
       if (i == 0 || j == 0){ 
@@ -7080,11 +8079,9 @@ function lcs(wordX, wordY) {
 
 ```javascript
 function printSolution(solution, l, wordX, wordY, m, n){ 
-
   var a = m, b = n, i, j, 
   x = solution[a][b], 
   answer = ''; 
-
   while (x !== '0') { 
     if (solution[a][b] === 'diagonal') { 
       answer = wordX[a - 1] + answer; 
@@ -7137,12 +8134,10 @@ function printSolution(solution, l, wordX, wordY, m, n){
 ```javascript
 function matrixChainOrder(p, n) { 
   var i, j, k, l, q, m = []; 
-
   for (i = 1; i <= n; i++) { 
     m[i] = []; 
     m[i][i] = 0; 
   } 
-
   for (l = 2; l < n; l++) { 
     for (i = 1; i <= n-l+1; i++) { 
       j = i+l-1; 
@@ -7216,9 +8211,6 @@ function printOptimalParenthesis(s, i, j){
 
 贪婪算法遵循解决问题的启发式，即在每个阶段做出局部最优选择（当时的最佳解决方案），以希望找到全局最优（全局最佳解决方案）。它不会像动态规划算法那样评估大局。
 
-
-
-
 让我们来看看如何使用贪心算法来解决我们在动态规划主题中过的最小硬币找零问题和背包问题。
 
 ### 注意
@@ -7234,7 +8226,6 @@ function printOptimalParenthesis(s, i, j){
 ```javascript
 function MinCoinChange(coins){ 
   var coins = coins; //{1} 
-
   this.makeChange = function(amount) { 
     var change = [], 
     total = 0; 
@@ -7293,9 +8284,7 @@ console.log(minCoinChange.makeChange(36));
 function knapSack(capacity, values, weights) { 
   var n = values.length, 
   load = 0, i = 0, val = 0; 
-
   for (i=0; i<n && load < capacity; i++) { /{1} 
-
     if (weights[i] <= (capacity-load)) { /{2} 
       val += values[i]; 
       load += weights[i]; 
@@ -7369,8 +8358,6 @@ forEach([1, 2], logItem);
 *   函数和数据集合是函数式编程的核心
 *   我们可以在函数式编程中使用和滥用函数和递归，而循环、赋值、条件判断以及函数在命令式编程中使用
 
-
-
 假设我们要找到数组的最小值。在命令式编程中，为了完成此任务，我们只需要遍历整个数组并验证当前最小值是否大于数组中的值；如果是，我们将分配一个新的最小值，如下：
 
 ```javascript
@@ -7414,7 +8401,6 @@ var daysOfWeek = [
   {name: 'Tuesday', value: 2}, 
   {name: 'Wednesday', value: 7} 
 ]; 
-
 var daysOfWeekValues_ = []; 
 for (var i = 0; i < daysOfWeek.length; i++) { 
   daysOfWeekValues_.push(daysOfWeek[i].value); 
@@ -7504,8 +8490,6 @@ var mergeArrays_ = function(arrays){
 console.log(mergeArrays_); 
 ```
 
-
-
 我们如何衡量算法的效率？我们通常使用资源，如 CPU（时间）使用率、内存占用、磁盘占用和网络占用。在谈论大 O 表示法时，我们通常考虑 CPU（时间）使用率。
 
 让我们尝试通过一些例子来理解大 O 表示法的工作原理。
@@ -7514,7 +8498,7 @@ console.log(mergeArrays_);
 
 考虑以下函数：
 
-```
+```javascript
 function increment(num){ 
   return ++num; 
 } 
@@ -7526,7 +8510,7 @@ function increment(num){
 
 现在，让我们使用第 10 章、*排序与搜索算法*中实现的顺序查找算法作为示例：
 
-```
+```javascript
 function sequentialSearch(array, item){ 
   for (var i=0; i<array.length; i++){ 
     if (item === array[i]){ //{1} 
@@ -7549,7 +8533,7 @@ function sequentialSearch(array, item){
 
 为了在实践中看到前面的解释，让我们修改算法来计算代价（最坏情况），如下：
 
-```
+```javascript
 function sequentialSearch(array, item){ 
   var cost = 0; 
   for (var i=0; i<array.length; i++){ 
@@ -7570,13 +8554,12 @@ function sequentialSearch(array, item){
 
 对于 `O(n²)` 示例，让我们使用*冒泡排序*算法：
 
-```
+```javascript
 function swap(array, index1, index2){ 
   var aux = array[index1]; 
   array[index1] = array[index2]; 
   array[index2] = aux; 
 } 
-
 function bubbleSort(array){ 
   var length = array.length; 
   for (var i=0; i<length; i++){        //{1} 
@@ -7591,13 +8574,13 @@ function bubbleSort(array){
 
 考虑行 `{1}` 和 `{2}` 的代价均为 1。让我们修改算法来计算代价如下：
 
-```
+```javascript
 function bubbleSort(array){ 
   var length = array.length; 
   var cost = 0; 
-  for (var i=0; i<length; i++){帚 1} 
+  for (var i=0; i<length; i++){//1} 
     cost++; 
-    for (var j=0; j<length-1; j++ ){帚 2} 
+    for (var j=0; j<length-1; j++ ){//2} 
       cost++; 
       if (array[j] > array[j+1]){ 
         swap(array, j, j+1); 
@@ -7640,7 +8623,7 @@ function bubbleSort(array){
 下表显示了图的复杂度：
 
 | 图的表示 | 存储大小 | 添加顶点 | 添加边 | 删除顶点 | 删除边 | 查询 |
-| :--- | :--- | :--- | :--- | :--- | :--- |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | 邻接列表 | O(V + E) | O(1) | O(1) | O(V + E) | O(E) |
 | 邻接矩阵 | O(V²) | O(V²) | O(1) | O(V²) | O(1) |
 
@@ -7666,10 +8649,6 @@ function bubbleSort(array){
 对于一个在最坏情况下也有多项式算法的问题，该算法标记为 `P`（多项式）。
 
 另一组算法被称为 **NP**（非确定性多项式时间）。NP 问题是指可以在多项式时间内验证解的问题。
-
-
-
-
 
 如果一个问题 `P` 有一个可以在多项式时间内运行的算法，我们也可以多项式时间内验证它的解。那么，我们可以得出 `P` 是 `NP` 的子集或等于 `NP`。然而，目前未知 `P = NP`。
 
@@ -7729,4 +8708,3 @@ function bubbleSort(array){
 在本章中涵盖了大 O 表示法，并讨论了如何通过这一概念计算算法的复杂度。我们引入了 NP-完全性理论，如果你对学习更多关于解决不可能问题和使用启发式获得近似满意的解决方案感兴趣，可以深入研究。
 
 祝编程愉快！
-

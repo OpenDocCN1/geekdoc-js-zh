@@ -1,28 +1,9 @@
-# Javascript：从新手到忍者
 
-
-
-
-
+# JavaScript：从新手到忍者
 
 ![](img/3f13fb49bc2503b7b87740a26b7bda07_0_0.png)
 
-
-
-
 ![](img/3f13fb49bc2503b7b87740a26b7bda07_2_0.png)
-
-
-
-
-
-
-
-
-
-
-
-
 
 ![](img/3f13fb49bc2503b7b87740a26b7bda07_3_0.png)
 
@@ -44,7 +25,7 @@ SitePoint 专门为 Web 专业人士出版有趣、实用且易于理解的内�
 
 本书的目的是向你介绍使用 JavaScript 语言进行编程，最终帮助你成长为 JavaScript 忍者。
 
-现在是学习 JavaScript 的激动时刻，它终于摆脱了早期作为一种在网页上产生拙劣效果的基础脚本语言的声誉。今天，JavaScript 用于创建专业且强大的 Web 应用程序。现代浏览器现在能够以闪速运行 JavaScript 代码，而 Node.js 通过促进其在其他环境中的使用彻底改变了它。这导致了构建 JavaScript 应用程序的方法更加专业和结构化，简而言之，它是一门真正的编程语言。JavaScript 已经成熟了。
+现在是学习 JavaScript 的激动时刻，它终于摆脱了早期作为一种在网页上产生拙劣效果的基础脚本语言的声誉。今天，JavaScript 用于创建专业且强大的 Web 应用程序。现代浏览器现在能够以闪速运行 JavaScript 代码，而 `Node.js` 通过促进其在其他环境中的使用彻底改变了它。这导致了构建 JavaScript 应用程序的方法更加专业和结构化，简而言之，它是一门真正的编程语言。JavaScript 已经成熟了。
 
 JavaScript 有许多酷的特性使其与其他语言脱颖而出，例如回调、一等函数、原型继承和闭包。它的事件模型也使其成为现代 Web 应用程序开发的极佳。然而，JavaScript 的王牌是每种语言都具备的特性——无处不在。JavaScript 无处可见；任何可以使用浏览器的人都可以使用。随着它在浏览器之外变得越来越可用，这种情况每年都在增加。这意味着随着 JavaScript 成为 [GitHub 上最流行语言](https://github.com/trending/languages) 的首选，它的影响力在未来将更加普及。我只能看到 JavaScript 在未来变得越来越流行，因为它成为[物联网](https://www.iot.org/) 的语言——帮助控制家用电器，甚至编写机器人。
 
@@ -64,7 +45,7 @@ JavaScript 有许多酷的特性使其与其他语言脱颖而出，例如回调
 
 书中的代码将使用等宽字体显示，如下：
 
-```
+```html
 <h1>A Perfect Summer’s Day</h1>
 <p>It was a lovely day for a walk in the park. The birds were singing and the kids were all at school.</p>
 ```
@@ -88,7 +69,9 @@ example.css
 example.css (excerpt)
 ```
 
+```css
 border-top: 1px solid #333
+```
 
 如果要在现有示例中插入额外的代码，新代码将以粗体显示：
 
@@ -129,6 +112,7 @@ URL.open("http://www.sitepoint.com/responsive-web-design-real-user-testing/?resp
 ## 警告：注意！
 
 警告将突出任何可能会让你遇到麻烦的陷阱沿
+
 ...的方法。
 
 ## 补充材料
@@ -161,7 +145,7 @@ books@sitepoint.com
 
 - 编程
 - JavaScript 的历史
--  JavaScript 编程所需的工具
+- JavaScript 编程所需的工具
 - Hello, World!——你的第一个 JavaScript 程序
 - 控制台中的 JavaScript
 - 另一个更复杂的 JavaScript 程序
@@ -186,7 +170,7 @@ JavaScript 也是一种动态语言，这意味着程序的元素可以在运行
 
 万维网（Wide Web）最初是一组通过超链接连接在一起的页面。很快，人们想要更多的交互，Netscape（一家早期的浏览器供应商）邀请 Brendan Eich 为他们的 Navigator 浏览器开发一种新语言。由于 Netscape 和微软之间为了抢占市场先机而激烈竞争，这必须快速完成，Eich 仅用十天就创建了一个原型语言。为了做到，他从其他语言中借用了元素，包括 AWK、Java、Perl、Scheme、HyperTalk 和 Self。这种新语言最初名为 LiveScript，但后来匆忙更命名为 JavaScript，以便利用当时太阳微系统公司的 Java 语言所吸引的宣传。这个名称经常引起一些不幸的误解，JavaScript 经常被认为是 Java 的轻量版；这两种语言之间毫无关系，尽管 JavaScript 与 Java 共享一些语法。
 
-JavaScript 于 1995 年在 Netscape Navigator 浏览器的第 2 版本中亮相。次，微软对 JavaScript 进行了反向工程创建了自己的版本，称为 JScript，以避免与拥有 Java 商标并授权给 Netscape 的太阳微系统产生版权问题。JavaScript 随着 Internet Explorer 浏览器的第 3 版本发布，与 JavaScript 几乎相同——它甚至具有相同的 Bug 和偏差——但确实有一些 Internet Explorer 特有的功能。微软同时在 Internet Explorer 中包含了另一种脚本语言 VBScript，尽管它从未真正流行过。
+JavaScript 于 1995 年在 Netscape Navigator 浏览器的第 2 版本中亮相。次，微软对 JavaScript 进行了反向工程创建了自己的版本，称为 JScript，以避免与拥有 Java 商标并授权给 Netscape 的太阳微系统产生版权问题。JavaScript 随着 Internet Explorer 浏览器的第 3 版本发布，与 JavaScript 几乎相同——它甚至具有相同的 Bug 和偏差——但确实有一些 Internet Explorer 特有的功能。微软同时在 Internet Explorer 中包含了另一种脚本语言 VBScript，虽然它从未真正流行过。
 
 JavaScript（以及 JScript）立即流行起来。它门槛低且相对容易学习，其使用量的爆炸式增长使得网页变得动态且更具交互性。遗憾的是，它的低门槛也是一种诅咒，这意味着人们可以在不太理解自己在做什么的情况下编写代码片段。使用不当时，代码很容易被复制和粘贴，导致 Web 上到处都是代码示例。JavaScript 还经常被用于创建恼人的弹出广告和浏览器嗅探（检测使用何种浏览器查看网页的过程），它因此开始引起负面反应。
 
@@ -215,9 +199,6 @@ HTML5 是最新的 HTML 规范，尽管它实际上更多是所有用于 Web 技
 HTML5 证明自己非常受欢迎，并正成为 Web 开发的主流标准。JavaScript 在它一些有趣的作品中是一个关键特性。
 
 # Node.js
-
-
-
 
 2009 年，Ryan Dahl 开发了 Node.js，它允许使用 JavaScript 编写服务端应用程序。它基于 Google 的 V8 引擎，并在事件驱动的环境中实现了非阻塞输入输出。这使得创建完全使用 JavaScript 编写的快速且强大的实时 Web 应用成为可能。它还催生许多不需要浏览器的应用程序和 JavaScript 库。Node JS 已证明非常受欢迎，且其使用量持续增长。随着 JavaScript 开始出现在许多环境中，人们对它的兴趣和使用频率也随之增加。
 
@@ -257,23 +238,23 @@ JavaScript 似乎有一个光明的未来。随着 Web 平台的不断进化和�
 
 ### Chrome
 
-查看 > 开发者 > JavaScript 控制台，或按下 Command + Option + J (Mac) 或 Control + Shift + J (Windows/Linux)
+查看 > 开发者 > JavaScript 控制台，或按下 `Command + Option + J` (Mac) 或 `Control + Shift + J` (Windows/Linux)
 
 ### Safari
 
-按下 Command + Option + I
+按下 `Command + Option + I`
 
 ### Internet Explorer
 
-按下 F12 打开开发者工具。点击控制台（Console）选项卡。
+按下 `F12` 打开开发者工具。点击控制台（Console）选项卡。
 
 ### Firefox
 
-按下 CTRL + SHIFT + K 打开 Web 控制台（Windows 上）或 COMMAND + SHIFT + K（Mac 上）。
+按下 `CTRL + SHIFT + K` 打开 Web 控制台（Windows 上）或 `COMMAND + SHIFT + K`（Mac 上）。
 
 ### 备选方案
 
-你可以安装 Firebug 插件，按下 F12 打开 Firebug，并点击控制台（Console）选项卡。
+你可以安装 Firebug 插件，按下 `F12` 打开 Firebug，并点击控制台（Console）选项卡。
 
 另一个选项是使用 JS Console 网站。这允许你直接在浏览器中输入 JavaScript 命令并查看结果。我使用这个控制台运行了书中的大部分代码段。
 
@@ -285,7 +266,7 @@ JavaScript 似乎有一个光明的未来。随着 Web 平台的不断进化和�
 
 进入你浏览器中的 JS 控制台并输入以下行代码：
 
-```
+```javascript
 console.log("Hello World!");
 ```
 
@@ -293,7 +274,7 @@ console.log("Hello World!");
 
 ## 浏览器中的 JavaScript
 
-JavaScript 是一种解释型语言，需要宿主环境来运行。由于它的起源，JavaScript 运行的主要环境是浏览器，尽管它也可以在其他环境中运行；例如，Node.js 用于在服务器上运行 JavaScript。
+JavaScript 是一种解释型语言，需要宿主环境来运行。由于它的起源，JavaScript 运行的主要环境是浏览器，尽管它也可以在其他环境中运行；例如，`Node.js` 用于在服务器上运行 JavaScript。
 
 ## Web 的三层
 
@@ -325,8 +306,6 @@ button.addEventListener("click", function() {
 });
 </script>
 ```
-
-
 
 非侵入式 JavaScript（Unobtrusive JavaScript）是指将 JavaScript 代码与 HTML 和 CSS 完全分离，最好存放在单独的文件中。这可以通过相同的 `<script>` 标签和 `src` 属性来链接到文件：
 
@@ -501,71 +480,56 @@ alert("Welcome to Quiz Ninja!");
 - Ajax 的出现及其在 Gmail 和 Google Maps 等网络应用中的应用推动了 JavaScript 的复兴。
 - JavaScript 的主要环境是浏览器，但不必非在那里使用。
 - 你只需要一个文本编辑器和一个带有 JavaScript 解释器的浏览器（或其他宿环境）就可以编写 JavaScript。
-
-
-
-
-
 - 优雅降级（Graceful degradation）和渐进增强（Progressive enhancement）是确保用户在缺少某些要求的情况下也能获得良好体验的过程。
 - 非侵入式 JavaScript（Unobtrusive JavaScript）是指将 JavaScript 功能与 HTML 内容和 CSS 样式分离来。
 
 在下一章中，我们将开始学习一些编程基础知识——让我们开始吧，忍者！
 
-# 第2章
+# 第2章 编程基础
+
+在上一章中，我们介绍了 JavaScript 并搭建了编程环境，在其中我们上手编写了几个 JavaScript 程序。在这一章中，我们将进一步深入 JavaScript 是如何运作的，并开始编写一些程序。
+
+我们将涵盖以下主题：
+
+- 良好注释代码的重要性
+- JavaScript 语法——表达式、语句、分号和空白
+- 原始数据类型
+- 字符串——字符串字面量和如 `length` 等字符串方法
+- 变量——声明与赋值
+- 数字——十进制、十六进制、八进制和指数形式、Infinity（无穷）以及 NaN
+- 算术运算，如 `+`, `-`, `*`, `/`, 和 `%`
+- undefined 和 null
+- 布尔值——真值（truthy）和假值（falsy）
+- 逻辑运算符——AND,OR 和 NOT
+- 我们的项目——我们将在其中设置一些问题和答案
 
 ## 编程基础
 
-在上一章中，我们介绍了 JavaScript 并搭建了编程环境，在其中我们上手编写了几个 JavaScript 程序。在这一章中，我们将进一步深入 JavaScript 是如何运作的，并开始编写一些程序。
+### 良好注释代码的重要性
 
-我们将涵盖以下主题：
+### JavaScript 语法
 
-- 良好注释代码的重要性
-- JavaScript 语法——表达式、语句、分号和空白
-- 原始数据类型
-- 字符串——字符串字面量和如 length 等字符串方法
-- 变量——声明与赋值
-- 数字——十进制、十六进制、八进制和指数形式、Infinity（无穷）以及 NaN
-- 算术运算，如 +, -, *, /, 和 %
-- undefined 和 null 
-- 布尔值——真值（truthy）和假值（falsy）
-- 逻辑运算符——AND,OR 和 NOT
-- 我们的项目——我们将在其中设置一些问题和答案
+### 原始数据类型
 
-[content]
-在上一章中，我们介绍了 JavaScript 并搭建了编程环境，在其中我们上手编写了几个 JavaScript 程序。在这一章中，我们将进一步深入 JavaScript 是如何运作的，并开始编写一些程序。
+### 字符串
 
-我们将涵盖以下主题：
+### 变量
 
-- 良好注释代码的重要性
-- JavaScript 语法——表达式、语句、分号和空白
-- 原始数据类型
-- 字符串——字符串字面量和如 length 等字符串方法
-- 变量——声明与赋值
-- 数字——十进制、十六进制、八进制和指数形式、Infinity（无穷）以及 NaN
-- 算术运算，如 +, -, *, /, 和 %
-- undefined 和 null 
-- 布尔值——真值（truthy）和假值（falsy）
-- 逻辑运算符——AND,OR 和 NOT
-- 我们的项目——我们将在其中设置一些问题和答案
+### 数字
 
-- 良好注释代码的重要性
-- JavaScript 语法
-- 原始数据类型
-- 字符串
-- 变量
-- 数字
-- 算术运算
-- undefined 和 null
-- 布尔值
-- 逻辑运算符
-- 我们的项目
+### 算术运算
 
+### undefined 和 null
 
+### 布尔值
 
+### 逻辑运算符
+
+### 我们的项目
 
 下划线将每个新单词分隔开：
 
-first_name_and_last_name
+`first_name_and_last_name`
 
 JavaScript 的内置函数使用驼峰命名法（camel-case），但在命名变量时，你可以选择使用其中一种，或者两者结合使用。对于忍者来说，保持一致至关重要。
 
@@ -573,13 +537,13 @@ JavaScript 的内置函数使用驼峰命名法（camel-case），但在命名�
 
 以下单词供语言本身使用，不能用于命名变量（或后续章节中出现的函数或对象属性）：
 
-abstract, boolean, break, byte, case, catch, char, class, const, continue, debugger, default, delete, double, else, enum, export, extends, false, final, finally, float, for, function, goto, if, implements, import, private, instanceof, int, fetch, long, native, new, null, package, protected, public, return, short, static, super, switch, synchronized, this, throw, throws, transient, true, typeof, volatile, void, while, with
+`abstract`, `boolean`, `break`, `byte`, `case`, `catch`, `char`, `class`, `const`, `continue`, `debugger`, `default`, `delete`, `double`, `else`, `enum`, `export`, `extends`, `false`, `final`, `finally`, `float`, `for`, `function`, `goto`, `if`, `implements`, `import`, `private`, `instanceof`, `int`, `fetch`, `long`, `native`, `new`, `null`, `package`, `protected`, `public`, `return`, `short`, `static`, `super`, `switch`, `synchronized`, `this`, `throw`, `throws`, `transient`, `true`, `typeof`, `volatile`, `void`, `while`, `with`
 
 这些单词之所以被保留，是因为其中许多被语言本身使用，而且你将在本书的后面遇到它们。
 
 然而，许多单词并没有被语言使用；人们只能假设它们曾计划在某个时刻使用，但从未真正被使用。此外还有几个保留的单词本该被保留，因为它们是语言的重要部分：
 
-undefined, NaN, Infinity
+`undefined`, `NaN`, `Infinity`
 
 这些将在本章稍后介绍。你也应该避免使用这些单词作为变量名。
 
@@ -587,7 +551,7 @@ undefined, NaN, Infinity
 
 要给变量赋值，我们使用 `=` 运算符。这个示例展示了如何将变量名指向字符串字面量 "Walter"：
 
-```
+```javascript
 var name; // 先声明变量
 undefined
 name = "Walter"; // 给变量赋值字符串
@@ -598,7 +562,7 @@ name = "Walter"; // 给变量赋值字符串
 
 要查看变量的值，只需在控制台中输入它即可。变量名现在引用字符串 "Walter"，所以它的行为与该字符串完全相同：
 
-```
+```javascript
 name;
 << "Walter"
 
@@ -610,14 +574,14 @@ typeof name;
 
 你可以同时声明并初始化一个变量：
 
-```
+```javascript
 var name = "Jesse";
 << "Jesse"
 ```
 
 你还可以在一条语句中声明并为多个变量赋值：
 
-```
+```javascript
 var x = 2, y, z = "Hi"; // y 仅被声明，它是 undefined
 << undefined
 ```
@@ -632,12 +596,12 @@ var x = 2, y, z = "Hi"; // y 仅被声明，它是 undefined
 
 我们可以使用点符号法访问字符串的属性。这涉及一个点 `.` 后跟着我们感兴趣属性。例如，每个字符串都有一个 `length` 属性，告诉我们字符串中有多少字符：
 
-```
+```javascript
 name = "Heisenberg"; // 声明并赋值变量
 << "Heisenberg"
 ```
 
-```
+```javascript
 name.length; // 调用 name 的 length 方法
 << 10
 ```
@@ -648,45 +612,45 @@ name.length; // 调用 name 的 length 方法
 
 你可以用于访问基本值属性的另一种符号是方括号：
 
-```
+```javascript
 name['length']; // 注意属性名在引号内
 << 10
 ```
 
 所有基本值的属性都是不可变的，这意味着它们无法被更改。你可以尝试，但你的努力是徒劳的：
 
-```
+```javascript
 name.length;
 << 10
 ```
 
-```
+```javascript
 name.length = 7; // 尝试更改长度
 << 7
 ```
 
-```
+```javascript
 name.length; // 检查是否已更改
 << 10
 ```
 
 方法是基本值或对象可以执行的操作。要调用方法，我们使用点运算符 `[.]` 后面跟方法名、圆括号（这是区分属性和方法的有用方法——方法以圆括号结尾）。例如，我们可以使用 `toUpperCase()` 方法将字符串写为全大写：
 
-```
+```javascript
 name.toUpperCase();
 << "HEISENBERG"
 ```
 
 或者使用 `toLowerCase()` 方法，它将把我的名字写为全小写：
 
-```
+```javascript
 name.toLowerCase();
 << "heisenberg"
 ```
 
 如果你想知道某个位置上的字符是哪一个，可以使用 `charAt()` 方法：
 
-```
+```javascript
 name.charAt(1);
 << "e"
 ```
@@ -695,76 +659,75 @@ name.charAt(1);
 
 如果你想找到字符或子字符串在字符串中出现的位置，可以使用 `indexOf()` 方法：
 
-```
+```javascript
 name.indexOf("H");
 << 0
 ```
 
 如果字符不在字符串中，则将返回 -1：
 
-```
+```javascript
 name.indexOf("a");
 << -1
 ```
 
 如果我们想要字符的最后一次出现，可以使用 `lastIndexOf()` 方法：
 
-```
+```javascript
 name.lastIndexOf("e");
 << 1
 ```
 
 `concat()` 方法可以用于拼接字符串：
 
-```
+```javascript
 "Hello".concat(" World");
 << "Hello World"
 ```
 
 `repeat()` 方法创建一个包含指定次数副本的新字符串：
 
-```
+```javascript
 "abc".repeat(3);
 << "abcabcabc"
 ```
 
 `trim()` 方法移除字符串两端的空白：
 
-```
+```javascript
 "  Hello  ".trim();
 << "Hello"
 ```
 
 `slice()` 方法将字符串的一部分作为新字符串返回：
 
-```
+```javascript
 "Hello".slice(0, 2);
 << "He"
 ```
 
-
-
+## 数字
 
 将数字赋值给变量：
 
-```
+```javascript
 var number = 5;
 >> 5
 ```
 
-```
+```javascript
 number.toExponential();
 >> "5e0"
 ```
 
 `toFixed()` 方法将数字四舍五入为固定的小数位数：
 
-```
+```javascript
 var pi = 3.1415926;
 >> undefined
 ```
 
-```
+```javascript
 pi.toFixed(3); // 使用变量时只需要一个点
 >> "3.142"
 ```
@@ -773,12 +736,12 @@ pi.toFixed(3); // 使用变量时只需要一个点
 
 `toPrecision()` 方法将数字四舍五入到固定数量的有效数字，并以字符串形式返回（通常使用科学计数法）：
 
-```
+```javascript
 325678..toPrecision(2);
 >> "3.3e+5"
 ```
 
-```
+```javascript
 2.459.toPrecision(2)
 >> "2.5"
 ```
@@ -789,42 +752,42 @@ JavaScript 中可以执行所有的常规算术运算。
 
 加法：
 
-```
+```javascript
 5 + 4.3;
 >> 9.3
 ```
 
 减法：
 
-```
+```javascript
 6 - 11;
 >> -5
 ```
 
 乘法：
 
-```
+```javascript
 6 * 7;
 >> 42
 ```
 
 除法：
 
-```
+```javascript
 3/7;
 >> 0.42857142857142855
 ```
 
 你也可以使用 `%` 运算符计算除法的余数：
 
-```
+```javascript
 26%; // 等同于询问“13 除以 6 的余数是多少”
 >> 5
 ```
 
 这与模运算（modulo arithmetic）相似，但不完全相同。这是因为结果的符号始终与第一个数字相同：
 
-```
+```javascript
 -4%; // -4 模 3 的结果是 2
 >> -1
 ```
@@ -833,41 +796,41 @@ JavaScript 中可以执行所有的常规算术运算。
 
 如果一个变量已经被赋值了一个数值，可以通过以下操作对其增加：
 
-```
+```javascript
 points = 0; // 初始化分为 0
 >> 0
 ```
 
-```
+```javascript
 points = points + 10;
 >> 10
 ```
 
 这会将 `points` 变量中持有的值增加 10。你也可以使用复合赋值运算符 `+=`，它是执行相同任务的快捷方式，可以帮助你避免重复编写变量名：
 
-```
+```javascript
 points += 10;
 >> 20
 ```
 
 上一节中的所有运算符都有等效复合赋值运算符：
 
-```
+```javascript
 points -= 5; // points 减少 5
 >> 15
 ```
 
-```
+```javascript
 points *= 2; // points 翻倍
 >> 30
 ```
 
-```
+```javascript
 points /= 3; // 将 points 的值除以 3
 >> 10
 ```
 
-```
+```javascript
 points %= 7; // 将 points 的值改为余数
 // 如果其当前值被除以 7
 >> 3
@@ -879,24 +842,24 @@ points %= 7; // 将 points 的值改为余数
 
 那么，将 `++` 运算符放在变量之前或之后有什么区别呢？主要的区别在于操作返回的值。两种操作都会将 `points` 的值加 1，但 `points++` 会先返回原始值再加 1，而 `++points` 会返回新值：
 
-```
+```javascript
 points++; // 将返回 3，然后将 points 增加到 4
 >> 3
 ```
 
-```
+```javascript
 ++points; // 将 points 增加到 5，然后返回它
 >> 5
 ```
 
 还有一个工作方式相同的 `--` 运算符：
 
-```
+```javascript
 points--;
 >> 5
 ```
 
-```
+```javascript
 --points;
 >> 3
 ```
@@ -905,19 +868,19 @@ points--;
 
 `Infinity` 是 JavaScript 中一个特殊的错误值，用于表示 JavaScript 无法处理的任何数字。JavaScript 能处理的最大数字是 1.7976931348623157e+308：
 
-```
+```javascript
 1e308; // 1 后面有 308 个 0！
 >> 1e308
 ```
 
-```
+```javascript
 2e308; // 太大了！
 >> Infinity
 ```
 
 还有一个值 `-Infinity`，用于低于 -1.7976931348623157e+308 的负数：
 
-```
+```javascript
 -1e308;
 >> -Infinity
 ```
@@ -931,17 +894,17 @@ points--;
 
 JavaScript 可以处理的最小数字是 5e-324。任何低于此值的值都会求值为 5e-324 或零：
 
-```
+```javascript
 5e-324;
 >> 5e-324
 ```
 
-```
+```javascript
 3e-325;
 >> 5e-325
 ```
 
-```
+```javascript
 2e-325;
 >> 0
 ```
@@ -950,14 +913,14 @@ JavaScript 可以处理的最小数字是 5e-324。任何低于此值的值都�
 
 `NaN` 是“Not a Number”（不是数字）的缩写错误值。当尝试执行某操作但结果不是数值时使用：
 
-```
+```javascript
 "hello" * 5;
 >> NaN
 ```
 
 然而，`typeof` 运算符返回的结果相当讽刺：
 
-```
+```javascript
 typeof NaN;
 >> 'number'
 ```
@@ -966,7 +929,7 @@ typeof NaN;
 
 类型转换是在后台转换值的类型的过程，以尝试让操作能够执行。例如，如果你尝试将一个字符串和一个数字相乘，JavaScript 将尝试将字符串转换为数字：
 
-```
+```javascript
 "2" + 8;
 >> "28"
 ```
@@ -983,31 +946,31 @@ typeof NaN;
 
 要将字符串转换为数字，可以将数字字符串乘以 1，由于强制转换，它将转换为数字：
 
-```
+```javascript
 answer = "5" * 1;
 >> 5
 ```
 
-```
+```javascript
 typeof answer;
 >> "number"
 ```
 
 将字符串转换为整数的另一种巧妙方法是直接在它前面加一个 `+` 号：
 
-```
+```javascript
 answer = +"5";
 >> 5
 ```
 
-```
+```javascript
 typeof answer;
 >> "number"
 ```
 
 将字符串转换为数字的另一种方法是使用 `Number` 函数：
 
-```
+```javascript
 Number("23");
 >> 23
 ```
@@ -1016,32 +979,30 @@ Number("23");
 
 将数字转换为字符串，可以使用 `String()` 函数：
 
-```
+```javascript
 String(123);
 >> "123"
 ```
 
 将数字转换为字符串的另一种方法是使用 `toString()` 方法：
 
-```
+```javascript
 (123).toString();
 >> "123"
 ```
 
 你也可以使用模板字量（template literals）将数字转换为字符串：
 
-```
+```javascript
 `${123}`;
 >> "123"
 ```
-
-
 
 只有两个布尔值：true 和 false。它们以乔治·布尔（George Boole）的名字命名，他是一位研究代数逻辑领域的英国数学家。布尔值是组成计算机程序的逻辑语句的基础。JavaScript 中的每一个值都有一个布尔值，而且其中大多数值都是 true（这些被称为“真值”，truthy values）。
 
 要找到某个东西的布尔值，你可以像这样使用 `Boolean` 函数：
 
-```
+```javascript
 Boolean("hello");
 << true
 
@@ -1054,13 +1015,13 @@ Boolean(0);
 
 只有七个值始终为 false，这些被称为“假值”（falsy values）：
 
-- "" // 双引号空字符串
-- '' 单引号空字符串
-- 0
-- NaN
-- false
-- null
-- undefined
+- `""` // 双引号空字符串
+- `''` 单引号空字符串
+- `0`
+- `NaN`
+- `false`
+- `null`
+- `undefined`
 
 ## 注意：真值和假值
 
@@ -1076,7 +1037,7 @@ Boolean(0);
 
 在值的前面放置 `!` 运算符将将其转换为布尔值并返回相反的值。因此，真值将返回 false，假值将返回 true。这被称为取反：
 
-```
+```javascript
 !true;
 << false
 
@@ -1086,7 +1047,7 @@ Boolean(0);
 
 你可以使用双重否定 `(!!)` 来判断一个值是真值还是假值（这是使用我们之前使用的布尔函数的快捷方法，因为你实际上是对取反的结果再次进行取反）：
 
-```
+```javascript
 !!'';
 << false
 
@@ -1112,7 +1073,7 @@ Boolean(0);
 
 逻辑与运算符作用于两个或多个值（操作数），只有当所有操作数都是真值时，结果才为 true。如果所有值都真，则返回最后一个真值；如果其中至少有一个是假值，则返回第一个假值：
 
-```
+```javascript
 true && true;
 << true
 
@@ -1126,7 +1087,7 @@ true && true;
 
 逻辑或运算符也作用于两个或多个操作数，但如果*任何一个*操作数为真，结果就为 true，因此它只在两个操作数都为假时才会进行求值。如果任何一个为真，则返回*第一个*真值；如果全部为假，则返回*最后一个*假值：
 
-```
+```javascript
 true || false;
 << true
 
@@ -1147,7 +1108,7 @@ NaN || undefined;
 
 下面的示例演示了这一点：
 
-```
+```javascript
 a = 0; // 声明变量 a 并赋值为 0
 << 0
 
@@ -1186,7 +1147,7 @@ JavaScript 将任何与位运算符一起使用的值都转换为 32 位整数�
 
 这是 107376019，但正如你在代码中看到的，结果实际上使用了负值：
 
-```
+```javascript
 -44;
 << -45
 ```
@@ -1197,14 +1158,14 @@ JavaScript 将任何与位运算符一起使用的值都转换为 32 位整数�
 
 你也可以使用位与运算符 `&`，它将两个数字都转换为二进制，并返回一个二进制数，在操作数对应位均为 1 的位置上该二进制数也为 1。这是一个例子：
 
-```
+```javascript
 12 & 10; // 在二进制中这是 1100 & 1010，所以只有第一位在两种情况下都是 1
 << 8
 ```
 
 它也可以用于非整数，其中真返回 1，假返回 0。
 
-```
+```javascript
 5 & "hello"; // 两个都是真
 << 1
 ```
@@ -1213,14 +1174,14 @@ JavaScript 将任何与位运算符一起使用的值都转换为 32 位整数�
 
 还有位或运算符 `|`，它将两个数字都转换为二进制，并返回一个二进制数，在两个操作数之一对应位为 1 的位置上该二进制数也为 1。这是一个例子：
 
-```
+```javascript
 12 | 10; // 在二进制中这是 1100 | 1010，所以前 3 位包含一个 1
 << 14
 ```
 
 这也可以用于非整数，真返回 1，假返回 0。
 
-```
+```javascript
 '' | ""
 << 0 // 两个都是假值
 ```
@@ -1229,14 +1190,14 @@ JavaScript 将任何与位运算符一起使用的值都转换为 32 位整数�
 
 另一个操作是位异或运算符 `^`，它代表“互斥或”（eXclusive OR）。它将两个数字都转换为二进制，并返回一个二进制数，在两个操作数之一对应位为 1 的位置上该二进制数也为 1，但不能同为 1。这是一个例子：
 
-```
+```javascript
 12 ^ 10; // 在二进制中这是 1100 ^ 1010，所以只有第二和第三位是互斥的 1
 << 6
 ```
 
 使用非整数值时，如果任一操作数为真值，则求值为 1；如果两个操作数都是真或都是假，则求值为 0：
 
-```
+```javascript
 1 ^ 0; // 第一个操作数是真
 << 1
 
@@ -1247,17 +1208,17 @@ true ^ true; // 如果两个操作数都是真，结果为假
 
 位移运算符 `<<` 和 `>>` 将二进制表示向右或左移动指定的位数，这实际上是将数字乘以或除以 2 的幂：
 
-```
+```javascript
 3 << 1; // 乘以 2
 << 6
 ```
 
-```
+```javascript
 16 >> 1; // 除以 2
 << 8
 ```
 
-```
+```javascript
 5 << 3; // 乘以 2 的立方 (8)
 << 40
 ```
@@ -1272,7 +1233,7 @@ true ^ true; // 如果两个操作数都是真，结果为假
 
 遗憾的是，我们不能使用它，因为它用于给变量赋值。例如，假设我们有一个名为 answer 的变量并想检查它是否等于 5，我们可能会尝试这样做：
 
-```
+```javascript
 answer = 5;
 << 5
 ```
@@ -1281,55 +1242,51 @@ answer = 5;
 
 检查相等性的正确方法是使用双等运算符 `==`（被称为“软相等”）或三等运算符 `===`（被称为“硬相等”）。
 
-
-
-
-
-```
+```javascript
 answer == 5;
 << true
 ```
 
 这似乎运行良好，但遗憾的是，在使用软相等（soft equality）时会遇到一些小问题：
 
-```
+```javascript
 answer == "5";
 << true
 ```
 
 如你所见，当我们检查变量 `answer` 是否等于字符串 `"5"` 时，JavaScript 返回了 `true`，而实际上 `answer` 等于数字 `5`。这是一个重要的区别，但当使用软不不等时，JavaScript 会在进行比较时尝试将两个值强制转换为相同类型。这可能会导致一些非常奇怪的结果：
 
-```
+```javascript
 " == 0";
 << true
 ```
 
-```
+```javascript
 " " == "0";
 << false
 ```
 
-```
+```javascript
 false == "0";
 << true
 ```
 
-```
+```javascript
 "1" == true;
 << true
 ```
 
-```
+```javascript
 "2" == true;
 << false
 ```
 
-```
+```javascript
 "true" == true;
 << false
 ```
 
-```
+```javascript
 null == undefined;
 << true
 ```
@@ -1340,17 +1297,17 @@ null == undefined;
 
 硬相等还会测试值是否为相同类型：
 
-```
+```javascript
 answer === 5;
 << true
 ```
 
-```
+```javascript
 answer === "5";
 << false
 ```
 
-```
+```javascript
 null === undefined;
 << false
 ```
@@ -1361,55 +1318,55 @@ null === undefined;
 
 硬相等产生的唯一奇怪结果是：
 
-```
+```javascript
 NaN === NaN;
 << false
 ```
 
 `NaN` 是 JavaScript 中唯一一个不等于它自己的值。为了处理这个问题，有一个特殊的函数 `isNaN` 来测试它：
 
-```
+```javascript
 isNaN(NaN);
 << true
 ```
 
-```
+```javascript
 isNaN(5);
 << true
 ```
 
 遗憾的是，这并不总是能正常工作，正如这个示例所示：
 
-```
+```javascript
 isNaN("hello");
 << true
 ```
 
 这是因为函数首先尝试将字符串转换为数字，而不包含数字的字符串会被转换为 `NaN`：
 
-```
+```javascript
 Number("hello");
 << NaN
 ```
 
 准确检查一个值是否为 `NaN` 的唯一方法是检查其类型是否为数字（类型 `"number"`），并且也检查 `isNaN` 函数是否返回 `true`。这两个条件应该与我们之前看到的逻辑与（`&&`）结合使用：
 
-```
+```javascript
 isnan = NaN; // 将变量 isnan 设置为 isNaN
 << NaN
 ```
 
-```
+```javascript
 notnan = "hello"; // 将变量 notnan 设置为 "hello"
 << "hello"
 ```
 
-```
+```javascript
 typeof(isnan) === "number" && isNaN(isnan);
 << true
 ```
 
-```
+```javascript
 typeof(notnan) === "number" && isNaN(notnan);
 << false
 ```
@@ -1418,7 +1375,7 @@ typeof(notnan) === "number" && isNaN(notnan);
 
 如果你想检查由字符串表示的数字是否等于一个数字，你应该自己显式地将其转换为数字：
 
-```
+```javascript
 > Number("5") === 5
 << true
 ```
@@ -1429,12 +1386,12 @@ typeof(notnan) === "number" && isNaN(notnan);
 
 我们可以使用不不等运算符来检查两个值是否相等。有一个软不不等运算符 `!=` 和一个硬不不等运算符 `!==`。它们的工作方式与软相等和硬相等运算符类似：
 
-```
+```javascript
 16 != "16"; // 类型转换使它们相等
 << false
 ```
 
-```
+```javascript
 16 !== "16"
 << true
 ```
@@ -1445,19 +1402,19 @@ typeof(notnan) === "number" && isNaN(notnan);
 
 我们可以使用 `>` 运算符来检查一个值是否大于另一个值：
 
-```
+```javascript
 8 > 4; << true
 ```
 
 你也可以以类似的方式使用“小于” `<` 运算符：
 
-```
+```javascript
 8 < 4; << false
 ```
 
 如果你想检查一个值是否大于等于另一个值，可以使用 `>=` 运算符，但要注意，相等测试的工作方式与软相等运算符相同：
 
-```
+```javascript
 8 >= 4;
 << true
 
@@ -1470,7 +1427,7 @@ typeof(notnan) === "number" && isNaN(notnan);
 
 如你所见，类型转换意味着字符串可能会与数字混淆。遗憾的是，没有“硬”的大于或等于运算符，因此避免类型转换的另一种替代方法是使用大于运算符、逻辑或（`||`）和硬等等的组合：
 
-```
+```javascript
 8 > 8 || 8 === 8;
 << true
 
@@ -1480,7 +1437,7 @@ typeof(notnan) === "number" && isNaN(notnan);
 
 还有一个类似的“小于或等于”运算符：
 
-```
+```javascript
 -1 <= 1;
 << true
 
@@ -1490,14 +1447,14 @@ typeof(notnan) === "number" && isNaN(notnan);
 
 这些运算符也可以用于字符串，字符串将按字母顺序排序，以检查一个字符串是否“小于”另一个字符串：
 
-```
+```javascript
 "apples" < "bananas";
 >> true
 ```
 
 但要注意，结果是区分大小写的，且大写字母被认为“小于”小写字母：
 
-```
+```javascript
 "apples" < "Bananas";
 >> false
 ```
@@ -1510,7 +1467,7 @@ typeof(notnan) === "number" && isNaN(notnan);
 
 scripts.js (节)
 
-```
+```javascript
 var question = "What is Superman's real name?"
 var answer = prompt(question);
 alert("You answered " + answer);
@@ -1518,13 +1475,13 @@ alert("You answered " + answer);
 
 现在让我们逐行检查这段代码，看看发生了什么：
 
-```
+```javascript
 var question = "What is Superman's real name?"
 ```
 
 这声明了一个变量名并将字符串 `"What is Superman's real name?"` 赋值给它。接下来，我们需要使用 `prompt` 对话框询问存储在 `question` 变量中的问题：
 
-```
+```javascript
 var answer = prompt(question);
 ```
 
@@ -1532,7 +1489,7 @@ var answer = prompt(question);
 
 最后，我们使用 `alert` 对话框显示玩家的答案：
 
-```
+```javascript
 alert("You answered " + answer);
 ```
 
@@ -1542,7 +1499,7 @@ alert("You answered " + answer);
 
 在本章中，我们学习了作为所有程序构建模块的原始类型：字符串、数字、布尔值（Booleans）、undefined 和 null。我们还学习了变量以及字符串和数字的不同方法，以及如何在类型之间进行转换。在下一章中，我们将研究数组、逻辑和循环。
 
-# 数组、逻辑与循环 (Arrays, Logic, and Loops)
+# 第3章 数组、逻辑与循环
 
 在上一章中，我们介绍了 JavaScript 的原始值，并进行了一些编程。在本章中，我们将研究数组，这是一种用于值列表的有用数据结构。我们还将研究允许我们控制程序流的逻辑语句，以及允许重复执行代码块的循环。
 
@@ -1563,13 +1520,13 @@ alert("You answered " + answer);
 
 数组是值的有序列表。要创建一个数组字面量，只需写一对方括号：
 
-```
+```javascript
 var myArray = [];
 ```
 
 你也可以使用数组构造函数：
 
-```
+```javascript
 var myArray = new Array();
 << []
 ```
@@ -1578,7 +1535,7 @@ var myArray = new Array();
 
 数组不是原始值，但它们有一个特殊的内置对象，正如使用 `typeof` 运算符所示：
 
-```
+```javascript
 typeof []
 << "object"
 ```
@@ -1593,7 +1550,7 @@ Donatello 在忍者披萨店工作，在那里他制作披萨并将其装箱准�
 
 我们可以通过创建一个名为 `pizzas` 的空数组字面量来表示 Donatello 的盒子堆：
 
-```
+```javascript
 var pizzas = [];
 ```
 
@@ -1601,12 +1558,11 @@ var pizzas = [];
 
 为了找出 0 号盒里有什么，Donatello 可以打开它并向内看。在 JavaScript 中，我们可以使用以下代码获取 `pizzas` 数组元素 0 的值：
 
-```
+```javascript
 pizzas[0];
 ```
 
-
-```
+```javascript
 pizzas[0];
 << undefined
 ```
@@ -1617,33 +1573,33 @@ pizzas[0];
 
 如果多纳泰罗（Donatello）想在 0 号盒子里放一个玛格丽特披萨，他只需要打开盒子把它放进去即可。要在他的 `pizzas` 数组的第一个元素放入字符串 "Margherita"，我们需要将其赋值给元素 0，如下所示：
 
-```
+```javascript
 pizzas[0] = "Margherita";
 ```
 
 数组中的每一项都可以被视为一个变量。你可以使用赋值运算符 `=` 来更改值。例如，我们可以将 `pizzas` 数组中第一个项的值改为“火腿加菠萝”：
 
-```
+```javascript
 pizzas[0] = "Ham & Pineapple";
 ```
 
 如果多纳泰罗又收到了几个披萨订单，他可以逐个向盒子里填充披萨。我们也可以通过给数组赋值来实现这一点：
 
-```
+```javascript
 pizza[1] = "Mushroom";
 pizza[2] = "Spinach & Rocket";
 ```
 
 正如多纳泰罗可以将披萨放入这堆盒子中的任何一个一样，我们也可以使用索引表示法向 `pizzas` 数组中的任何元素添加新项：
 
-```
+```javascript
 pizzas[5] = "Pineapple & Sweetcorn";
 << "Pineapple & Sweetcorn";
 ```
 
 我们只需在控制台中输入它们的名称即可查看披萨：
 
-```
+```javascript
 pizzas;
 << ["Ham & Pineapple", "Mushroom", "Spinach & Rocket", undefined,
 undefined, "Pineapple & Sweetcorn"];
@@ -1655,7 +1611,7 @@ undefined, "Pineapple & Sweetcorn"];
 
 我们可以使用包含某些初始值的方括号来创建数组字面量，这样就不需要逐个添加值了。因此，我们可以按照下面的字面量创建另一堆披萨盒：
 
-```
+```javascript
 var pizzas = ["Margherita", "Mushroom", "Spinach & Rocket",
 "Pineapple & Sweetcorn"];
 << ["Margherita", "Mushroom", "Spinach & Rocket", "Pineapple &
@@ -1664,7 +1620,7 @@ Sweetcorn"];
 
 你不需要在数组内部使用相同类型的项。这个数组包含了五种不同类型的原始值，还包含一个对象：
 
-```
+```javascript
 mixedArray = [null, 1, "two", true, undefined, {}];
 << [null, 1, "two", true, undefined, {}];
 ```
@@ -1673,21 +1629,21 @@ mixedArray = [null, 1, "two", true, undefined, {}];
 
 多纳泰罗可以通过打开盒子并取出披萨来从盒中移除披萨，让盒子为空。`delete` 运算符执行相同的任务并从数组中删除一个项：
 
-```
+```javascript
 delete pizzas[3];
 << true
 ```
 
 如果我们观察数组，可以看到第四项（索引为 3）确实被删除了……但它被一个 `undefined` 值取代了（就好像盒子是空的样）：
 
-```
+```javascript
 pizzas;
 << ["Margherita", "Mushroom", "Spinach & Rocket", undefined];
 ```
 
 如果你以后想难住经验丰富的程序员，请注意这一点。位于位置 3 的值（"pineapple & Sweetcorn"）已从数组中删除，但它所占据的空间仍然在那里，并且包含一个 `undefined` 值。记住，多纳泰罗只是从盒子里移除了披萨，并没有完全移除盒子。这意味着数组仍然具有相同数量的元素，该位置仍然作为索引被引用，但它只会返回 `undefined`：
 
-```
+```javascript
 pizzas[3]
 << undefined
 ```
@@ -1698,21 +1654,21 @@ pizzas[3]
 
 为了演示这些方法，我们将使用与之前生成的类似的 `pizzas` 数组。你需要在控制台中输入以下内容来创建它的引用：
 
-```
+```javascript
 pizzas = ["Margherita", "Mushroom", "Spinach & Rocket", "Ham &
 "Pineapple", "Pineapple & Sweetcorn"]
 ```
 
 要找到数组的长度，我们可以使用 `length` 属性。这等同于多纳泰罗数他的披萨盒堆中有多少个盒子：
 
-```
+```javascript
 > pizzas.length
 << 5
 ```
 
 我们可以使用 `length` 来找到数组中的最后一项：
 
-```
+```javascript
 > pizzas[pizzas.length - 1]
 << "Pineapple & Sweetcorn"
 ```
@@ -1721,7 +1677,7 @@ pizzas = ["Margherita", "Mushroom", "Spinach & Rocket", "Ham &
 
 `length` 属性是可变的，这意味着手动更改它：
 
-```
+```javascript
 > pizzas.length = 8
 << 8
 > pizzas
@@ -1731,7 +1687,7 @@ pizzas = ["Margherita", "Mushroom", "Spinach & Rocket", "Ham &
 
 如你所见，如果你让数组变长，额外的槽位将被 `undefined` 填充：
 
-```
+```javascript
 > pizzas.length = 3
 << 3
 > pizzas
@@ -1740,7 +1696,7 @@ pizzas = ["Margherita", "Mushroom", "Spinach & Rocket", "Ham &
 
 如果你让数组比原来的短，所有额外的元素都将被移除。
 
-```
+```javascript
 pizzas.length = 3;
 << 3
 > pizzas
@@ -1751,35 +1707,33 @@ pizzas.length = 3;
 
 要从数组中移除最后一项，我们可以使用 `pop()` 方法。这就像多纳泰罗从顶部拿走一个披萨盒：
 
-```
+```javascript
 pizzas.pop();
 << "Spinach & Rocket"
 ```
 
 `shift()` 方法的工作方式与 `pop()` 类似，但它移除第一项。这就像多纳泰罗从堆中拿走一个披萨：
 
-```
+```javascript
 pizzas.shift();
 << "Margherita"
 ```
 
 `unshift()` 方法与 `push()` 方法类似，但它在开头添加一个新项。这就像多纳泰罗在底部添加一个披萨盒：
 
-```
+```javascript
 pizzas.unshift("Chicken & Bacon");
 << 3
 ```
 
-
-
 `splice()` 方法用于从数组中删除项并在原有位置插入新项。假设 Donatello 想要从一堆披萨中移除意大利腊肠（Pepperoni），并将其替换为一些包含“鸡肉和辣椒”以及“蔬菜豪华”的盒子：
 
-```
+```javascript
 > pizzas.splice(2, 1, "Chicken and Pepper", "Veggie Deluxe")
 << ["Pepperoni"]
 ```
 
-```
+```javascript
 > pizzas
 << ["Chicken and Bacon", "Mushroom", "Chicken and Pepper", "Veggie Deluxe", "Spicy Beef", "Chicken and Mushroom"]
 ```
@@ -1788,21 +1742,21 @@ pizzas.unshift("Chicken & Bacon");
 
 通过指定要删除的项数量为0，`splice()` 方法也可以在特定索引处插入值而不删除删除任何项：
 
-```
+```javascript
 pizzas.splice(4, 0, "Ham & Mushroom"); // 将 "Ham & Mushroom" 作为 pizzas 数组的第五项插入
 << []
 ```
 
 注意返回的是一个空数组，新值 "Ham & Mushroom" 已插入，如果我们查看 `pizzas` 数组就可以看到：
 
-```
+```javascript
 pizzas;
 << ["Chicken and Bacon", "Mushroom", "Chicken and Pepper", "Veggie Deluxe", "Ham & Mushroom", "Spicy Beef", "Chicken and Mushroom"]
 ```
 
 我们之前看到过可以使用 `delete` 操作符从数组中删除一个项。遗憾的是，这会在该位置留下一个 `undefined` 值。如果你想完全删除一个值，可以使用长度为 1 且不指定任何要添加的值的 `splice()`：
 
-```
+```javascript
 pizzas.splice(2, 1); // 删除索引 2 处的项（即数组中的第三个元素）
 << ["Chicken and Pepper"]
 ```
@@ -1812,13 +1766,14 @@ pizzas.splice(2, 1); // 删除索引 2 处的项（即数组中的第三个元�
 如果我们现在使用 `pizzas` 数组，可以看到 "Chicken and Pepper" 已经被完全删除了：
 
 pizzas;
+
 << ["Chicken & Bacon", "Mushroom", "Veggie Deluxe", "Ham & Mushroom", "Spicy Beef", "Chicken and Mushroom"]
 
 ## 反转
 
 我们可以使用 `reverse()` 方法反转数组的顺序：
 
-```
+```javascript
 pizzas.reverse();
 << ["Chicken and Mushroom", "Spicy Beef", "Ham & Mushroom", "Veggie Deluxe", "Mushroom", "Chicken & Bacon"]
 ```
@@ -1829,7 +1784,7 @@ pizzas.reverse();
 
 我们可以使用 `sort()` 方法对数组顺序进行排序：
 
-```
+```javascript
 pizzas.sort();
 << ["Chicken & Bacon", "Chicken & Mushroom", "Ham & Mushroom", "Mushroom", "Spicy Beef", "Veggie Deluxe"]
 ```
@@ -1840,7 +1795,7 @@ pizzas.sort();
 
 数字也是按字母顺序排序的，所以当你尝试对数字数组进行排序时，9 会在 10 之后：
 
-```
+```javascript
 [5, 9, 10].sort();
 << [10, 5, 9]
 ```
@@ -1867,36 +1822,36 @@ pizzas.indexOf("Margherita");
 
 你甚至拥有一个数组的数组，即多维数组，例如：
 
-```
+```javascript
 multiDimensional = [[0,1],"one","two","three"],[],[true,false]];
 << [[0,1],"one","two","three"],[],[true,false]]
 ```
 
 它可以创建一个坐标系：
 
-```
+```javascript
 coordinates = [[1,3],[4,2]];
 << [[1,3],[4,2]]
 ```
 
 要访问多维数组中的值，我们使用两个索引：一个指向项在外部数组中的位置，另一个指向它在内部数组中的位置：
 
-```
+```javascript
 x1 = coordinates[0][0]; // 第一个数组的第一个值
 << 1
 ```
 
-```
+```javascript
 x2 = coordinates[1][0]; // 第二个数组的第一个值
 << 4
 ```
 
-```
+```javascript
 y1 = coordinates[0][1]; // 第一个数组的第二个值
 << 3
 ```
 
-```
+```javascript
 y2 = coordinates[1][1]; // 第二个数组的第二个值
 << 2
 ```
@@ -1909,7 +1864,7 @@ y2 = coordinates[1][1]; // 第二个数组的第二个值
 
 `if` 结构如下：
 
-```
+```javascript
 if (condition) {
 code
 }
@@ -1943,9 +1898,11 @@ if (age >= 18) {
 
 编写 `if else` 语句的简写方法是使用三元运算符，它接受三个操作数：
 
-```
+```javascript
 condition ? expression_if_true : expression_if_false
 ```
+
+
 
 这是一个使用三元运算符测试变量的示例：
 
@@ -1992,15 +1949,11 @@ switch (number) {
 
 循环将根据特定条件反复执行某段代码。
 
+### while 循环
 
+我们首先来看看 `while` 循环。它会在特定条件为真时重复运行一段代码块，其结构如下：
 
-
-
-## while 循环
-
-我们首先来看看 while 循环。它会在特定条件为真时重复运行一段代码块，其结构如下：
-
-```
+```javascript
 while (condition) {
   do something
 }
@@ -2022,7 +1975,7 @@ while (bottles > 0) {
 
 代码块使用 `alert` 函数显示关于瓶子数量的消息，然后使用递减运算符将 `bottles` 变量减少 1。
 
-这里有一种更简洁的编写 while 循环的方法，将递增移动到条件中：
+这里有一种更简洁的编写 `while` 循环的方法，将递增移动到条件中：
 
 ```javascript
 var bottles = 11;
@@ -2033,7 +1986,7 @@ while (--bottles) {
 
 这段代码之所以有效，是因为只要 `bottles` 变量为真，循环就会继续，而且在每次循环结束后，`bottles` 变量的值都会减少 1。当 `bottles` 变量达到 0 时，它就不再为真（记住 0 是一个假值），因此循环将停止。注意，你必须从多一个瓶（11）开始，因为它在第一个代码块运行之前就会被减 1。
 
-## 无限循环
+### 无限循环
 
 `while` 循环中的条件在某时刻被满足是非常重要的，否则你将陷入导致程序崩溃的无限循环。
 
@@ -2049,7 +2002,7 @@ while(n>0) {
 
 这个循环将一直运行，因为变量 `n` 始终大于零。发生这种情况时，大多数浏览器会警告你有一个运行缓慢的脚本，并提供停止它的选项。如果没有警告，你通常可以通过关闭标签页或重启浏览器来杀掉进程。
 
-## do ... while 循环
+### do ... while 循环
 
 `do ... while` 循环与 `while` 循环相似。唯一的区别是条件位于代码块*之后*：
 
@@ -2071,9 +2024,9 @@ do {
 } while (bottles > 0)
 ```
 
-## for 循环
+### for 循环
 
-`for` 循环是 JavaScript 中最循环，其形式如下：
+`for` 循环是 JavaScript 中最常用的循环，其形式如下：
 
 ```javascript
 for (initialization ; condition ; after) { do something }
@@ -2093,14 +2046,15 @@ for (var bottles = 10 ; bottles > 0 ; bottles--) {
 
 ```javascript
 var bottles = 10; // bottles 在这里初始化
-for (: bottles > 0 ) { // 空的初始化和递增
+for (; bottles > 0 ;) { // 空的初始化和递增
   alert("There were " + bottles + " green bottles, hanging on the\nwall. And if one green bottle should accidentally fall, there'd be\n" + (bottles-1) + " green bottles hanging on the wall");
   bottles--; // 递增移动到代码块中
+}
 ```
 
 如你所示，可以使用 `while` 循环、`do ... while` 循环或 `for` 循环来实现相同的结果。`for` 循环是最常见的，因为它将循环的所有细节（初始化、条件和递增）保持在一个地方，并与代码块分开。
 
-## 嵌套 for 循环
+### 嵌套 for 循环
 
 你可以将一个循环放在另一个循环内部创建嵌套循环。它将有一个内层循环，该循环会在外层循环的下一个步骤发生之前一直运行。
 
@@ -2109,14 +2063,14 @@ for (: bottles > 0 ) { // 空的初始化和递增
 ```javascript
 for(var n=1; n<13; n++) {
   for(var m=1; m<13; m++) {
-    console.log(n + " * " + m + " = + + (n * m));
+    console.log(n + " * " + m + " = " + (n * m));
   }
 }
 ```
 
 外层循环的每次迭代都会运行一次内层循环。这产生了创建乘法表所需的嵌套结构。
 
-## 遍历数组
+### 遍历数组
 
 `for` 循环可以用于遍历数组。这里有一个示例：
 
@@ -2131,7 +2085,7 @@ for (var i = 0; i < fruits.length; i++) {
 
 # Quiz Ninja 项目
 
-现在我们已经了本章的末尾，是时候使用我们所学的知识来为我们的 Quiz Ninja 添加一些功能了。打开 `scripts.js`。
+现在我们已经到了本章的末尾，是时候使用我们所学的知识来为我们的 Quiz Ninja 添加一些功能了。打开 `scripts.js`。
 
 我们首先创建一个名为 `quiz` 的嵌套数组，其中包含所有问题和答案。每个项目都是另一个数组，其第一个项是问题，第二个项是答案：
 
@@ -2175,10 +2129,7 @@ for(var i=0; i<quiz.length; i++) {
 alert("Game Over, you scored " + score + " points");
 ```
 
-
-
-
-通过打开 index.htm 文件，在浏览器中尝试运行测试。它看起来应该类似于图 3.8 所示所示。
+通过打开 `index.htm` 文件，在浏览器中尝试运行测试。它看起来应该类似于图 3.8 所示所示。
 
 ![](img/3f13fb49bc2503b7b87740a26b7bda07_76_0.png)
 
@@ -2229,9 +2180,9 @@ alert("Game Over, you scored " + score + " points");
 
 要定义一个函数字面量，我们可以使用函数声明：
 
-```
+```javascript
 function hello() {
-alert("Hello World!");
+  alert("Hello World!");
 }
 ```
 
@@ -2245,7 +2196,7 @@ alert("Hello World!");
 
 ```javascript
 var goodbye = function() {
-alert("Goodbye World!");
+  alert("Goodbye World!");
 };
 ```
 
@@ -2253,13 +2204,13 @@ alert("Goodbye World!");
 
 ```javascript
 var goodbye = function bye() {
-alert("Goodbye World!");
+  alert("Goodbye World!");
 };
 ```
 
 这个函数的名称是 `bye`，它被赋值给变量 `goodbye`。
 
-注意示例以分号结尾。这结束完成了赋值语句，而普通的函数声明以代码块结束（块末尾不需要分号）。
+注意示例以分号结尾。这结束完成了赋值语句，而普通的函数声明以代码块结束（块末尾不需要分号)。
 
 ### 注意：函数的 name 属性
 
@@ -2276,12 +2227,12 @@ hello.name
 
 `name` 属性在调试代码时非常有用，因为函数的名称将用于用于指示哪些函数导致了问题。
 
-## Function() 构造函数
+### Function() 构造函数
 
 也可以使用构造函数 `Function()` 来声明函数。函数体以字符串的形式输入，例所示：
 
 ```javascript
-hi = new Function('alert('Hi World!');');
+hi = new Function('alert("Hi World!");');
 ```
 
 我们不建议使用这种声明函数的方法，因为速度较慢，并将函数代码放在字符串内部会产生问题。即使在这个简单的示例中，我们也必须为 `alert` 函数使用不同的引号，以区分定义函数体本身时引号。
@@ -2308,7 +2259,7 @@ hello();
 
 ### 注意：不要重复自己
 
-Don't Repeat Yourself（或简称 DRY）是一种编程原则，规定程序的每一个部分都应该只写写一次。这避免了重复，意味着不需要保持多段代码的更新和同步。
+Don't Repeat Yourself（或简称 DRY）是一种编程原则，规定程序的每一个部分都应该只写一次。这避免了重复，意味着不需要保持多段代码的更新和同步。
 
 如果你已将函数赋值给变量，你需要在变量后加上括号来调用它：
 
@@ -2344,8 +2295,6 @@ seeya();
 
 // "Goodbye World!"
 
-```
-
 结果可以在图 4.2 中看到。
 
 ![](img/3f13fb49bc2503b7b87740a26b7bda07_83_0.png)
@@ -2354,7 +2303,7 @@ seeya();
 
 ## 返回值
 
-所有函数都返回一个值，可以使用 `return` 运算符指定。不显式返回任何内容的函数（如我们目前为止看到示例）默认默认返回 `undefined`。
+所有函数都返回一个值，可以使用 `return` 运算符指定。不显式返回任何内容的函数（如我们目前为止看到示例）默认返回 `undefined`。
 
 示例中的函数将返回字符串 "Yo World!"：
 
@@ -2379,7 +2328,7 @@ function yo(){
 
 JavaScript 没有内置用于计算数字平方的函数，因此我们可以创建一个来演示参数的使用。在以下示例中，`square` 函数接受一个参数 `x`，它是要平方的数字。在函数体内部，参数名称就像一个变量，其值等于函数调用时输入的值。如你所见，它与自身相乘，并由函数返回结果：
 
-```
+```javascript
 function square(x){
   return x*x;
 }
@@ -2394,7 +2343,7 @@ square(4.5);
 
 在定义函数时，你可以使用任意数量的参数。例如，以下函数可以找到任意三个数字的平均值：
 
-```
+```javascript
 function mean(a,b,c){
   return (a+b+c)/3;
 }
@@ -2424,7 +2373,7 @@ mean(1,2,3,4,5); // 只计算 1,2 和 3 的平均值
 
 每个函数都有一个特殊的名为 `arguments` 对象。这是一个类数组对象，包含了函数在调用时对应的每一个实际：
 
-```
+```javascript
 function arguments(){
   return arguments;
 }
@@ -2527,11 +2476,11 @@ discount(20, undefined)
 
 在 JavaScript 中，函数创建自己的局部作用域。这意味着在函数内部定义的局部变量在外部是无法访问的。
 
-## 全局作用域 (Global Scope)
+### 全局作用域 (Global Scope)
 
-任何在任何函数之外声明的变量被称为全局全局。这意味着可以在程序的任何地方访问它。虽然初看起来这是个好主意，但不被认为是良好的做法。高手会尽量将全局变量减少到最，因为任何共享相同名的变量都会发生冲突并覆盖其他值。这看起来可能不会发生，但在大型程序中非常常见，当你忘记使用了哪些变量时——想想我们在循环中已经多少次使用变量 `i` 了！当你团队中编写代码或如果你使用可能与你的某些代码同名的代码库时，也会出现问题。
+任何在任何函数之外声明的变量被称为全局变量。这意味着可以在程序的任何地方访问它。虽然初看起来这是个好主意，但不被认为是良好的做法。高手会尽量将全局变量减少到最少，因为任何共享相同名的变量都会发生冲突并覆盖其他值。这看起来可能不会发生，但在大型程序中非常常见，当你忘记使用了哪些变量时——想想我们在循环中已经多少次使用变量 `i` 了！当你团队中编写代码或如果你使用可能与你的某些代码同名的代码库时，也会出现问题。
 
-## 局部作用域 (Local Scope)
+### 局部作用域 (Local Scope)
 
 任何使用 `var` 语句在函数内部声明的变量只在该函数内部可用。这被称为具有局部作用域，因为变量只在函数的局部范围内可见（换句话说，在函数块内部）。
 
@@ -2545,7 +2494,7 @@ function locals() {
   console.log("inside function: " + a);
 }
 
-locala(); // 调用局部函数
+locals(); // 调用局部函数
 
 console.log("a outside function: " + a);
 ```
@@ -2557,73 +2506,70 @@ console.log("a outside function: " + a);
 "a outside function: 1"
 ```
 
-
-
-`means` 具有全局作用域，可以在函数内部和外部访问。但 `a` 在局部函数内部使用 `var` 定义。这使得它在函数内部具有局部作用域，其值为 3，但它在函数外部保留了 `i` 的值。从任何角度来看，这两个变量是不同的变量。
+`a` 具有全局作用域，可以在函数内部和外部访问。但 `a` 在局部函数内部使用 `var` 定义。这使得它在函数内部具有局部作用域，其值为 3，但它在函数外部保留了 `1` 的值。从任何角度来看，这两个变量是不同的变量。
 
 这里是另一个例子，我们定义了一个全局变量并在函数内部对其进行重写：
 
+```javascript
 b = 2;
 
-```
 function localb() {
   b = 4; // 重写全局变量
   console.log("b inside function: " + b);
 }
-```
 
 localb(); // 调用 localb 函数
-
 console.log("b outside function: " + b);
+```
 
 以下是控制台日志结果：
 
+```
 "b inside function: 4"
 "b outside function: 4"
+```
 
 在这个例子中，`b` 在函数外部被全局定义并赋值为 2。然而，在函数内部没有使用 `var` 声明 `b`，因此仍然指向函数外部的全局变量。这意味着 `b` 在函数内部和外部是同一个变量，且 `b` 的值在全局范围内被重写为 4。
 
 这里是另一个例子，从函数内部创建一个全局变量，但该变量仍然可以函数外部访问：
 
-```
+```javascript
 function localc() {
   c = 5; // 创建一个新的全局变量
   console.log("c inside function: " + c);
 }
-```
 
 localc(); // 调用 localc 函数
-
 console.log("c outside function: " + c);
-
 ```
 
 这将导致以下控制台日志：
 
+```
 "c inside function: 5"
 "c outside function: 5"
+```
 
 在例子中，`c` 只在函数内部定义，但由于这样做没有使用 `var`，它具有全局作用域，并且函数外部也可以访问。
 
 这是另一个函数，它在函数内部创建一个局部变量，该变量在函数外部无法访问：
 
-```
+```javascript
 function localld() {
   var d = 6; // 创建一个新的局部变量
   console.log("d inside function: " + d);
 }
-```
 
 localld(); // 调用 localld 函数
-
 console.log("d outside function: " + d);
-
 ```
 
 这是日志结果：
 
+```
 "d inside function: 6"
 "d is not defined"
+```
 
 在这个例子中，`d` 也只在函数内部定义，但通过使用 `var` 它具有局部作用域，且仅在函数内部可见。当我们尝试在函数外部记录 `d` 的值时，会导致错误，因为 `d` 在其作用域之外未定义。
 
@@ -2635,7 +2581,7 @@ console.log("d outside function: " + d);
 
 所有变量声明都会自动移动到函数作用域的顶部，就像它们是在函数开始定义的一样。然而，变量赋值不会被提升。这意味着在函数末尾赋值的变量在赋值完成之前，其值将为 `undefined`。下面的示例展示了它是如何工作的：
 
-```
+```javascript
 function hoist(){
   console.log(a); // 此时 a 是 undefined
   //
@@ -2662,7 +2608,6 @@ function hoist(){
 
 ```
 add(2,3); // 这可以正常工作，因为 add 函数被提升了
-
 function add(x,y){
   console.log(x + y);
 }
@@ -2670,13 +2615,12 @@ function add(x,y){
 
 ```
 subtract(5,2); // 这将不起作用，因为 subtract 函数还没有定义
-
-ubtract = function(x,y){
+subtract = function(x,y){
   console.log(x - y);
 }
 ```
 
-这是定义函数字面量的两种方式之间的主要区别，可能会影响你关于使用哪种方法的决定。有些人喜欢使用函数表达式，这意味着你你被要求在使用它们之前定义所有函数并将它们赋值给变量。为了避免问题，忍者应该要么使用函数声明，要么确保所有函数都在作用域顶部定义，并与任何变量声明一起。
+这是定义函数字面量的两种方式之间的主要区别，可能会影响你关于使用哪种方法的决定。有些人喜欢使用函数表达式，这意味着你被要求在使用它们之前定义所有函数并将它们赋值给变量。为了避免问题，忍者应该要么使用函数声明，要么确保所有函数都在作用域顶部定义，并与任何变量声明一起。
 
 ## 回调函数 (Callbacks)
 
@@ -2685,7 +2629,7 @@ ubtract = function(x,y){
 
 这里有一个名为 `pizza` 的函数的简单示例，它接受一个关于披萨配料类型的参数，以及一个告诉程序该如何处理披萨的回调函数：
 
-```
+```javascript
 function pizza(topping, callback) {
   console.log("This is a " + topping + " pizza");
   callback();
@@ -2694,13 +2638,13 @@ function pizza(topping, callback) {
 
 现在我们可以为处理披萨的操作创建一些工具函数，例如烹饪和吃它们：
 
-```
+```javascript
 function cook() {
   console.log("The pizza is cooking");
 }
 ```
 
-```
+```javascript
 function eat() {
   console.log("I've eaten the pizza!");
 }
@@ -2710,19 +2654,23 @@ function eat() {
 
 让我们尝试在 `pizza` 函数中使用这些工具函数作为回调：
 
-- > pizza("Ham & Pineapple", cook);
-  - "This is a Ham & Pineapple pizza"
-  - "The pizza is cooking"
+```
+> pizza("Ham & Pineapple", cook);
+"This is a Ham & Pineapple pizza"
+"The pizza is cooking"
+```
 
-- > pizza("Ham & Pineapple", eat);
-  - "This is a Ham & Pineapple pizza"
-  - "I've eaten the pizza!"
+```
+> pizza("Ham & Pineapple", eat);
+"This is a Ham & Pineapple pizza"
+"I've eaten the pizza!"
+```
 
 好了，在这些示例中，`cook()` 和 `eat()` 函数非常相似，但它们证明了你可以做非常不同的事情。注意，回调 `cook` 和 `eat` 是作为参数传递的，没有带括号。这是因为参数只是函数的引用。实际的回调是在函数体内被调用的，那里使用了括号。
 
 函数可以接受匿名函数作为回调。例如，假设我们想送披萨，但我们没有交付函数。我们可以写一个匿名函数来执行我们想要：
 
-```
+```javascript
 pizza("Ham & Pineapple",function(){
   console.log("The pizza has been delivered.");
 });
@@ -2736,7 +2684,7 @@ pizza("Ham & Pineapple",function(){
 
 ```
 > [1,3,12,15,23,18,7].sort();
-> << [1, 12, 18, 23, 3, 5, 7]
+<< [1, 12, 18, 23, 3, 5, 7]
 ```
 
 原因是数字被转换成了字符串然后按字母顺序排列。
@@ -2749,16 +2697,13 @@ pizza("Ham & Pineapple",function(){
 
 这是一个可以作为回调来排序数字的 `compareNumbers` 函数示例：
 
-```
+```javascript
 function compareNumbers(a,b){
   return a-b;
 }
 ```
 
-这只是简单的减去正在比较的两个数字，得到一个结果为
-
-
-负（如果 b 大于 a）、零（如果 a 和 b 值相同）或正数（如果 a 大于 b）。这意味着它可以作为回调函数来正确对数字数组排序：
+这只是简单的减去正在比较的两个数字，得到一个结果为负（如果 b 大于 a）、零（如果 a 和 b 值相同）或正数（如果 a 大于 b）。这意味着它可以作为回调函数来正确对数字数组排序：
 
 ```
 > [1,3,12,5,23,18,7].sort(compareNumbers);
@@ -2815,14 +2760,14 @@ if (typeof callback === "function") {
 
 让我们尝试使用它：
 
-```javascript
+```
 > mean([2,5,7,11,44]); // 这应该只计算平均值
 << 5.8
 ```
 
 现在让我们使用匿名函数在计算平均值之前将所有数字翻倍：
 
-```javascript
+```
 > mean([2,5,7,11,4],function(x){ return 2*x; });
 << 11.6
 ```
@@ -2831,7 +2776,7 @@ if (typeof callback === "function") {
 
 最后，让我们使用在本章早些时候编写的 `square` 函数作为回调，在计算平均值之前将所有数字平方：
 
-```javascript
+```
 > mean([2,5,7,11,4],square);
 << 43
 ```
@@ -2844,15 +2789,12 @@ if (typeof callback === "function") {
 
 ECMAScript 5 引入了许多用于数组方法，它们利用回调函数使数组变得灵活得多。
 
-```javascript
-forEach()
-```
+### forEach()
 
 在上一章，我们看到可以使用 `for` 循环来遍历数组中的每个值，如下：
 
 ```javascript
 var colors = ["Red", "Green", "Blue"];
-
 for(var i = 0, max = colors.length; i < max; i++) {
   console.log("Color at position " + i + " is " + colors[i]);
 }
@@ -2872,7 +2814,7 @@ colors.forEach(function(color,index){
 "Color at position 2 is Blue"
 ```
 
-## map()
+### map()
 
 `map()` 方法与 `forEach()` 方法非常相似。它也遍历数组，并对数组中的每个项调用作为参数的回调。这通常用于处理从数据库返回的数据，例如添加 HTML 标签。区别在于它返回一个新数组，用回调函数的返回值替换每个值。例如，我们可以使用之前编写的 `square` 函数作为 `map()` 方法的回调来平方数组中的每个数字：
 
@@ -2881,10 +2823,10 @@ colors.forEach(function(color,index){
 << [1, 4, 9]
 ```
 
-
-
-
+```
+[1,3,6].map(function(x){ return 2*x; })
 << [2, 6, 12]
+```
 
 还有其他值得研究的回调函数数组方法，例如 `reduceRight()`、`every()` 和 `some()`。关于它们的更多信息可以在 Mozilla 开发者网络（Mozilla Developer Network）找到。
 
@@ -2924,10 +2866,10 @@ function play(quiz){
     answer = ask(question);
     check(answer);
   }
+}
 ```
 
 ```javascript
-}
 // 主游戏循环结束
 gameOver();
 }
@@ -2956,14 +2898,11 @@ scripts.js (节选)
 ```javascript
 function check(answer) {
     if(answer === quiz[i][1]) // quiz[i][1] 是答案
-```
-
-```javascript
-alert("Correct!");
-// 分数加 1
-score++;
+    alert("Correct!");
+    // 分数加 1
+    score++;
 } else {
-alert("Wrong!");
+    alert("Wrong!");
 }
 ```
 
@@ -2971,7 +2910,7 @@ alert("Wrong!");
 
 当所有问题都提问完毕且所有答案都检查完毕后，程序将跳出循环并调用 `gameOver()` 函数。该函数也定义在 `play` 函数的底部，如下：
 
-*scripts.js (节选)*
+scripts.js (节选)
 
 ```javascript
 function gameOver() {
@@ -3006,10 +2945,7 @@ JavaScript 中的所有内容要么是第 2 章中遇到的五种原始值之一
 
 JavaScript 中的对象是一个自包含的相关值和函数的集合。它们充当一组命名属性的集合，映射到任何 JavaScript 值，例如字符串、数字、布尔值、数组甚至函数。如果一个属性的值是一个函数，则它被称为**方法**。
 
-思考对象的一种方式是，它像字典字典，你可以在其中查找一个
-
-
-属性名并查看其值。另一种说法是，它像一个存储值的数据库；某些数据库实际上使用 JavaScript 对象来存储信息。这类似于其他编程语言中的哈希表（hash）或关联数组；然而，JavaScript 对象要灵活得多，因为它们可以用于封装可以在程序中重复使用的代码。它们还可以从其他对象继承属性（我们将在第 11 章中介绍）。
+思考对象的一种方式是，它像字典字典，你可以在其中查找一个属性名并查看其值。另一种说法是，它像一个存储值的数据库；某些数据库实际上使用 JavaScript 对象来存储信息。这类似于其他编程语言中的哈希表（hash）或关联数组；然而，JavaScript 对象要灵活得多，因为它们可以用于封装可以在程序中重复使用的代码。它们还可以从其他对象继承属性（我们将在第 11 章中介绍）。
 
 对象字面量是直接在语言中通过将所有属性和方法包裹在花括号 `{}` 中而创建的对象。对象字面量是 JavaScript 语言的一个显著特征，因为允许快速创建对象，而不需要类模板。
 
@@ -3017,7 +2953,7 @@ JavaScript 中的对象是一个自包含的相关值和函数的集合。它们
 
 这是一个描述“钢铁之躯”的对象字面量示例：
 
-```
+```javascript
 var superman = {
   name: "Superman",
   "real name": "Clark Kent",
@@ -3046,13 +2982,13 @@ var superman = {
 
 若要创建一个对象字面量，只需输入一对花括号。以下示例创建了一个赋值给变量 `spiderman` 的空对象：
 
-```
+```javascript
 var spiderman = {};
 ```
 
 也可以使用构造函数来创建对象。这个示例将创建一个空对象：
 
-```
+```javascript
 var spiderman = new Object();
 ```
 
@@ -3134,7 +3070,7 @@ superman.hasOwnProperty('name');
 
 我们可以通过 `for` 循环遍历对象的所有属性和方法。例如，为了将 `superman` 对象的所有属性打印到控制台，我们可以使用：
 
-```
+```javascript
 for(var key in superman) {
   console.log(key + ": " + superman[key]);
 }
@@ -3147,14 +3083,14 @@ for(var key in superman) {
 << "allies: Batman, Supergirl, Superboy"
 << "fly: function () {
   console.log("Up, up and away!");
-}");
+}";
 ```
 
 在这个示例中，我们创建了一个变量 `key`。它被用于在循环内部表示 `superman` 对象中每个属性或方法的名字。
 
 为了确保只返回对象的属性，可以先进行一个快速检查：
 
-```
+```javascript
 for(var key in superman) {
   if(superman.hasOwnProperty(key)){
     console.log(key + ": " + superman[key]);
@@ -3223,7 +3159,7 @@ superman
 
 对象甚至包含其他对象。这些被称为嵌套对象。这是一个包含其他对象的示例。它被赋值给变量 `jla`：
 
-```
+```javascript
 jla = {
 superman: { realName: "Clarke Kent" },
 batman: { realName: "Bruce Wayne" },
@@ -3259,7 +3195,7 @@ jla.martianManhunter['realName']
 
 以下示例展示了如何这样做：
 
-```
+```javascript
 function greet (options) {
 options = options || {};
 greeting = options.greeting || "Hello"
@@ -3272,9 +3208,7 @@ return greeting + "! My name is " + name + " and I am " + age +
 
 它接收一个名为 `options` 的对象作为参数。如果没有提供对象，我们在这一行中创建一个空对象来代替。
 
-
-
-
+```
 options = options || {};
 ```
 
@@ -3304,8 +3238,8 @@ greet({ name: "Lisa", age: 8 });
 
 例如，如果输入的年龄为 0，则将使用默认值，因为 0 是假的：
 
-```javascript
-greet({ age: p });
+```
+greet({ age: 0 });
 // << "Hello! My name is Anon and I am 18 years old."
 ```
 
@@ -3323,9 +3257,7 @@ JSON 是我们刚刚看到的对象字面量表示法的字符串表示。不过
 
 ```javascript
 var batman = {
-  "name": "Batman", "real name": "Bruce Wayne", "height": 74, "weight": 210, "hero": true, "villain": false, "allies": {
-    "Batgirl", "Superman"
-  }
+  "name": "Batman", "real name": "Bruce Wayne", "height": 74, "weight": 210, "hero": true, "villain": false, "allies": ["Robin", "Batgirl", "Superman"]
 };
 ```
 
@@ -3353,7 +3285,8 @@ var wonderWoman = {
     console.log("You will tell the truth!");
   }
 };
-JSON.stringify({"name":"Wonder Woman","real name":"Diana Prince","weight":"72","hero":"true","villain":"false","allies":["Wonder Girl","Donna Troy","Superman"]})
+JSON.stringify(wonderWoman)
+// {"name":"Wonder Woman","real name":"Diana Prince","height":72,"weight":165,"hero":true,"villain":false,"allies":["Wonder Girl","Donna Troy","Superman"]}
 ```
 
 注意引号被转义了，任何包含方法（例如上述的 `lasso` 方法）的对象都会被 `stringify` 方法忽略。
@@ -3366,41 +3299,41 @@ JSON.stringify({"name":"Wonder Woman","real name":"Diana Prince","weight":"72","
 
 `Math` 对象的所有属性和方法都是不可变的，无法更改。
 
-## 数学常数
+### 数学常数
 
-`Math` 对象有八个表示常用数混合的属性。注意，它们都用大写字母命名，这是常量值的命名约定：
+`Math` 对象有八个表示常用数学常数的属性。注意，它们都用大写字母命名，这是常量值的命名约定：
 
-```javascript
+```
 > Math.PI // 圆的周长与直径的比例
-// << 3.141592653589793
+<< 3.141592653589793
 ```
 
-```javascript
+```
 > Math.SQRT2 // 2 的平方根
-// << 1.414213562370951
+<< 1.414213562370951
 ```
 
-```javascript
-> Math.SQRT_1 // 2 的平方根的倒数
-// << 0.7071067811865476
+```
+> Math.SQRT1_2 // 2 的平方根的倒数
+<< 0.7071067811865476
 ```
 
-```javascript
+```
 > Math.E // 欧拉常数
-// << 2.718281828459045
+<< 2.718281828459045
 ```
 
-```javascript
+```
 > Math.LN2 // 2 的自然对数
-// << 0.693147180559453
+<< 0.693147180559453
 ```
 
-```javascript
+```
 > Math.LN10 // 10 的自然对数
-// << 2.30258509294046
+<< 2.30258509294046
 ```
 
-## 数学运算
+### 数学运算
 
 `Math` 对象有几个方法可以执行各种操作：
 
@@ -3412,21 +3345,31 @@ JSON.stringify({"name":"Wonder Woman","real name":"Diana Prince","weight":"72","
 - `pow()` 将任何数字（第一个参数）作为另一个数字（第二个参数）的幂。
 - `sqrt()` 返回数字的正平方根。
 
+```
+> Math.sqrt(0.25)
+<< 0.5
+```
 
+### 三角函数
 
+`Math` 对象有标准的三角函数方法：`sin()`、`cos()` 和 `tan()`。它们接受一个以弧度为单位的角度作为参数。如果你有角度，可以通过乘以 `Math.PI/180` 将其转换为弧度。
 
+`Math.sin()` 返回角度的正弦值：
 
+```
+> Math.sin(Math.PI/6);
 ω 应该是 0.5
 << 0.4999999999999994
+```
 
-Math.cos() 返回角度的余弦：
+`Math.cos()` 返回角度的余弦：
 
 ```
 > Math.cos(Math.PI/6);
 << 0.8660254037844387
 ```
 
-Math.tan() 返回角度的正切值：
+`Math.tan()` 返回角度的正切值：
 
 ```
 > Math.tan(Math.PI/4); // 另一个舍入误差，这里应该是 1
@@ -3438,21 +3381,21 @@ Math.tan() 返回角度的正切值：
 << 16331778728338344
 ```
 
-Math.asin() 返回一个数字的反正正值。结果是一个角度：
+`Math.asin()` 返回一个数字的反正弦值。结果是一个角度：
 
 ```
 > Math.asin(1);
 << 1.5707963267948966
 ```
 
-Math.acos() 返回一个数字的反余弦值。结果是一个角度：
+`Math.acos()` 返回一个数字的反余弦值。结果是一个角度：
 
 ```
 > Math.acos(0.5);
 << 1.0471975511969576
 ```
 
-Math.atan() 返回一个数字的反正切值。结果是一个角度：
+`Math.atan()` 返回一个数字的反正切值。结果是一个角度：
 
 ```
 > Math.atan(Math.sqrt(3)); // 等于 Math.PI/3
@@ -3461,17 +3404,17 @@ Math.atan() 返回一个数字的反正切值。结果是一个角度：
 
 ## 警告：舍入误差
 
-你可能注意到之前示例中的某些值并不完全准确。例如，sin(π/6) 应该是 0.5，但 Math.sin(Math.PI/6) 返回的是 0.4999999999999999。
+你可能注意到之前示例中的某些值并不完全准确。例如，sin(π/6) 应该是 0.5，但 `Math.sin(Math.PI/6)` 返回的是 0.4999999999999999。
 
 在处理浮点小数时，这是预料之中的。计算机在处理十进制时有很大困难（因为它们是以二进制运行的），答案在不同平台之间可能会有所不同。
 
-另一个问题是使用 Math.PI 给出的 π 值只精确到 16 位有效数字，这会影响整体准确性。
+另一个问题是使用 `Math.PI` 给出的 π 值只精确到 16 位有效数字，这会影响整体准确性。
 
 这些舍入误差对于大多数 Web 来说并不是大问题。每当你进行计算时，请确保你的程序不要依赖于精确的答案，而是具有某种程度的容差。
 
-## 随机数
+### 随机数
 
-Math.random() 方法用于创建随机数，这在编写程序时非常有用。调用该方法将生成一个 0 到 1 之间的数字，如下：
+`Math.random()` 方法用于创建随机数，这在编写程序时非常有用。调用该方法将生成一个 0 到 1 之间的数字，如下：
 
 ```
 > Math.random();
@@ -3485,7 +3428,7 @@ Math.random() 方法用于创建随机数，这在编写程序时非常有用。
 << 4.5809812403543013
 ```
 
-如果我们想生成一个随机整数，可以使用之前看到的 Math.floor() 方法来去掉返回值的小数部分。以下代码生成一个 0 到 5 之间的随机整数（它永远不会是 6，因为总是总是向下取整）：
+如果我们想生成一个随机整数，可以使用之前看到的 `Math.floor()` 方法来去掉返回值的小数部分。以下代码生成一个 0 到 5 之间的随机整数（它永远不会是 6，因为总是向下取整）：
 
 ```
 > Math.floor(6 * Math.random());
@@ -3494,15 +3437,15 @@ Math.random() 方法用于创建随机数，这在编写程序时非常有用。
 
 尝试编写一个可以在两个值之间生成随机数的函数是一个很有用的练习。
 
-## 实验性方法
+### 实验性方法
 
 有一些实验性函数正在被考虑纳入下一版本的 ECMAScript 规范，并且已经在某些浏览器中实现。你可以在 Mozilla Developer Reference 中找到完整列表。
 
 ## Date 对象
 
-Date 对象保存有关日期和时间的信息。每个对象代表时间中的一个时刻。
+`Date` 对象保存有关日期和时间的信息。每个对象代表时间中的一个时刻。
 
-## 构造函数
+### 构造函数
 
 使用 `new` 运算符使用构造函数创建一个新的日期对象：
 
@@ -3511,7 +3454,7 @@ Date 对象保存有关日期和时间的信息。每个对象代表时间中的
 << [object Date]{
 ```
 
-这确认了变量 date 指向一个 Date 对象。要查看日期，我们使用所有对象都具有的 toString() 方法：
+这确认了变量 date 指向一个 Date 对象。要查看日期，我们使用所有对象都具有的 `toString()` 方法：
 
 ```
 > today.toString();
@@ -3585,7 +3528,7 @@ new Date(year,month,day,hour,minutes,milliseconds)
 
 **Epoch** 是1970年1月1日。这是一个在编程中被用作测量日期的参考日期。它允许将日期表示为自元以来秒数的整数。这会导致一个很大的数字，并在2038年出现潜在问题，因为自元以来秒数将超过2,147,483,647（计算机可以处理的32位符号整数的最大值）。幸运的是，这个问题不会影响 JavaScript 日期，因为它使用的是浮点数而不是整数，因此它可以处理更大的值。
 
-## Getter 方法
+### Getter 方法
 
 日期对象的属性无法直接查看或更改。相反，它们有一些称为 **getter 方法** 的方法，返回有关日期对象的信息，例如月份和年份。一旦创建了日期对象，就可以访问所有的 getter 方法。每个方法有两个版本，一个返回本地时间信息，另一个使用协调世界时 (UTC)。
 
@@ -3593,31 +3536,31 @@ new Date(year,month,day,hour,minutes,milliseconds)
 
 UTC 是世界调节时钟的主要时间标准。它在1960年正式形成，与格林威治标准时间 (GMT) 非常相似。主要区别是 UTC是由科学界定义的标准，而 GMT 不是。
 
-getDate() 和 getDay() 方法用于查找日期对象所在的星期。它返回一个数字，从周日的0到周六的6：
+`getDay()` 方法用于查找日期对象所在的星期。它返回一个数字，从周日的0到周六的6：
 
 ```
 > diwali.getDay(); // 是周四
 << 4
 ```
 
-getDate() 和 getUTCMonth() 方法返回日期对象的几几：
+`getDate()` 方法返回日期对象的几号：
 
 ```
 > diwali.getDate(); // 是23号
 << 23
 ```
 
-getMonth() 和 getUTCMonth() 方法可以查找日期对象的月份。它返回一个整数，记住 JavaScript 从0开始计数，所以1月份是0，2月份是1，以此类推到12月份是11：
+`getMonth()` 和 `getUTCMonth()` 方法可以查找日期对象的月份。它返回一个整数，记住 JavaScript 从0开始计数，所以1月份是0，2月份是1，以此类推到12月份是11：
 
 ```
 > diwali.getMonth(); // 是10月
 << 9
 ```
 
-getFullYear() 和 getUTCFullYear() 方法返回日期对象的年份。还有一个 getYear() 方法，但它不符合 Y2K 标准，所以不应该使用：
+`getFullYear()` 和 `getUTCFullYear()` 方法返回日期对象的年份。还有一个 `getYear()` 方法，但它不符合 Y2K 标准，所以不应该使用：
 
 ```
-> diwali.getFullYear(); // 2000年后的年份失效了
+> diwali.getYear(); // 2000年后的年份失效了
 << 114
 ```
 
@@ -3626,42 +3569,42 @@ getFullYear() 和 getUTCFullYear() 方法返回日期对象的年份。还有一
 << 2014
 ```
 
-还有 getHours(), getUTCHours(), getMinutes(), getUTCMinutes(), getSeconds(), getUTCSeconds(), getMilliseconds(), 和 getUTMilliseconds() 方法将返回自午夜以来的分、秒和毫秒。
+还有 `getHours()`、`getUTCHours()`、`getMinutes()`、`getUTCMinutes()`、`getSeconds()`、`getUTCSeconds()`、`getMilliseconds()` 和 `getUTCMilliseconds()` 方法将返回自午夜以来的时、分、秒和毫秒。
 
-getTime() 方法返回表示自元以来毫秒数的时间戳：
+`getTime()` 方法返回表示自元以来毫秒数的时间戳：
 
 ```
 > diwali.getTime();
-<< 1414018800
+<< 1414018800000
 ```
 
-这对于按设定时间增加日期非常有用；例如，一天可以用 1000 * 60 * 60 * 24 毫秒表示：
+这对于按设定时间增加日期非常有用；例如，一天可以用 `1000 * 60 * 60 * 24` 毫秒表示：
 
 ```
-> christmasEve = new Date(christmas.getTime()) - 1000 * 60 * 60 * 24
+> christmasEve = new Date(christmas.getTime() - 1000 * 60 * 60 * 24)
 << [object Date]{
 }
 ```
 
 ```
 > christmasEve.toString();
-<< Fri 26 Dec 2014 00:00:00 GMT+0000 (GMT)
+<< "Wed Dec 24 2014 00:00:00 GMT+0000 (GMT)"
 ```
 
-getTimezoneOffset() 方法返回本地时间与 UTC 之间的差（分钟）。例如，我的时区目前是夏令时：
+`getTimezoneOffset()` 方法返回本地时间与 UTC 之间的差（分钟）。例如，我的时区目前是夏令时：
 
 ```
 > new Date().getTimezoneOffset()
 << -60
 ```
 
-这显示夏令时比 UTC 早小时。
+这显示夏令时比 UTC 早一小时。
 
-## Setter 方法
+### Setter 方法
 
 上一节提到的大多数 getter 方法都有相应的 setter 方法。这些方法用于更改日期对象中保存的值。每个方法接受一个表示要更新日期的参数。方法返回更新后日期对象的时间戳。
 
-例如，我们可以更改存储在 diwali 变量中的日期，使其包含2015年排灯节日期，即2015年11月11日，周三：
+例如，我们可以更改存储在 `diwali` 变量中的日期，使其包含2015年排灯节日期，即2015年11月11日，周三：
 
 ```
 > diwali.setDate(11)
@@ -3678,17 +3621,14 @@ getTimezoneOffset() 方法返回本地时间与 UTC 之间的差（分钟）。�
 << 1447200000000
 ```
 
-
-
-
 注意，这些函数返回的值是表示自 Unix 时间戳以来毫秒数的时间戳。要查看实际日期，我们需要使用 `toString()` 方法。
 
 ```
 > diwali.toString();
-<< "Nov 11 2015 00:00:00 GMT+0000 (GMT)",
+<< "Wed Nov 11 2015 00:00:00 GMT+0000 (GMT)",
 ```
 
-还有 `setHours()`、`setUTCHours()`、`setMinutes()`、`setUTCMinutes()`、`setSeconds()`、`setMilliseconds()` 和 `setUTCMilliseconds()` 方法可以用于编辑日期对象的时间部分。
+还有 `setHours()`、`setUTCHours()`、`setMinutes()`、`setUTCMinutes()`、`setSeconds()`、`setUTCSeconds()`、`setMilliseconds()` 和 `setUTCMilliseconds()` 方法可以用于编辑日期对象的时间部分。
 
 或者，如果你知道日期是一个时间戳，可以使用 `setTime()` 方法。
 
@@ -3705,20 +3645,20 @@ getTimezoneOffset() 方法返回本地时间与 UTC 之间的差（分钟）。�
 
 这里是给好奇读者的几个资源：
 
-- 由 Jeffrey Fried 编写的《Mastering Regular Expressions》
+- 由 Jeffrey Friedl 编写的《Mastering Regular Expressions》
 - Regular Expressions Info
 
 ## 创建正则表达式
 
 创建正则表达式有两种方法。第一种也是首选的方法是使用字面量表示法，将正则表达式写在正斜杠之间，正如我们见过的：
 
-```
+```javascript
 var pattern = /\w+ing/;
 ```
 
 或者，你可以使用 `new` 运算符创建 `RegExp` 对象的一个新实例：
 
-```
+```javascript
 var pattern = new RegExp('\\w+ing');
 ```
 
@@ -3727,6 +3667,8 @@ var pattern = new RegExp('\\w+ing');
 ## RegExp 方法
 
 一旦创建了正则表达式对象，可以使用 `test()` 来检查字符串（作为参数传递给方法）是否匹配正则表达式模式。如果模式在字符串中，则返回 `true`，否则返回 `false`：
+
+
 
 ```
 var pattern = /.*;;
@@ -3748,7 +3690,7 @@ pattern.exec("joking");
 
 ## 基础正则表达式
 
-在最基础的层，正则表达式就是一个字符字符串，因此以下将匹配字符串 'java'：
+在最基础的层面上，正则表达式就是一个字符字符串，因此以下将匹配字符串 'java'：
 
 ```
 /java/
@@ -3756,7 +3698,7 @@ pattern.exec("joking");
 
 ## 字符组
 
-字符组可以放在方括号内。这个**字符组**代表括号内的**任意**字符。例如，以下正则表达式匹配任何元音：
+字符组可以放在方括号内。这个`字符组`代表括号内的`任意`字符。例如，以下正则表达式匹配任何元音：
 
 ```
 /[aeiou]/
@@ -3835,16 +3777,19 @@ pattern.ignoreCase // 检查是否为 true
 pattern.ignoreCase = false // 这将不起作用
 ```
 
-
 `search()` 方法返回第一个匹配项的位置：
 
+```
 "I'm learning JavaScript".search(/java/i);
 << 13
+```
 
 `replace()` 方法将任何匹配项替换另一个字符串：
 
-"JavaScript".replace(/[aeiou]/ig,""*"); // 将所有元音替换为 *
+```
+"JavaScript".replace(/[aeiou]/ig,"*"); // 将所有元音替换为 *
 << "J*v*Sc*pt"
+```
 
 ## 掷骰子！
 
@@ -3856,7 +3801,7 @@ pattern.ignoreCase = false // 这将不起作用
 dice = {
   sides: 6,
   roll: function(){
-  return Math.floor(6 * Math.random()) + 1;
+    return Math.floor(6 * Math.random()) + 1;
   }
 }
 ```
@@ -3955,14 +3900,12 @@ if(answer === quiz.questions[i].answer){
 在本章中，我们将涵盖这些主题：
 
 - DOM 简介
-- 获取元素—getElementById, getElementsClassName, getElementsTagName, querySelector 和 queryquerySelectorAll
+- 获取元素—`getElementById`、`getElementsClassName`、`getElementsTagName`、`querySelector` 和 `querySelectorAll`
 - 遍历 DOM 树
 - 获取和设置元素的属性
 - 通过创建动态标记更新 DOM
 - 更改元素的 CSS
 - 我们的项目——将问题动态插入 DOM
-
-## 文档对象模型
 
 ## 什么是文档对象模型？
 
@@ -3971,7 +3914,7 @@ if(answer === quiz.questions[i].answer){
 在本章中，我们将涵盖这些主题：
 
 - DOM 简介
-- 获取元素—getElementById, getElementsClassName, getElementsTagName, querySelector 和 queryquerySelectorAll
+- 获取元素—`getElementById`、`getElementsClassName`、`getElementsTagName`、`querySelector` 和 `querySelectorAll`
 - 遍历 DOM 树
 - 获取和设置元素的属性
 - 通过创建动态标记更新 DOM
@@ -4010,19 +3953,17 @@ DOM 实际上并不是 JavaScript 的一部分，因为它是语言无关的。�
 
 在 Web 早期，Netscape 和微软等浏览器供应商开发了访问网页部分的自己的独特方法。起初，他们倾向于关注图像、链接和表单等常见页面元素。这些方法被称为 DOM 级 0 或遗留 DOM。世界网联盟（W3C）开始标准化这一过程，并在 1998 年创建了 DOM API 级 1。这引入了网页的完整模型，允许对它们的每个部分进行导航。
 
-DOM 级 2 于 2000 年发布，引入了流行的 getElementById() 方法，使得访问网页上的特定元素变得简单得多。
+DOM 级 2 于 2000 年发布，引入了流行的 `getElementById()` 方法，使得访问网页上的特定元素变得简单得多。
 
 当前标准是 DOM 级 3，尽管级 4 正在作为一种生存标准进行开发中，这意味着在正式化和发布之前，它已经在浏览器中实现。
 
 ## 示例网页
 
-为了阐明本章涵盖的 DOM 概念，我们将使用一个包含标题和三个落元素的简单网页。将以下代码保存到名为 `dom.htm` 的文件中：
+为了阐明本章涵盖的 DOM 概念，我们将使用一个包含标题和三个项目元素的简单网页。将以下代码保存到名为 `dom.htm` 的文件中：
 
 （见上方代码块）
 
 图 6.2 显示了此网页作为节点树图的样子。
-
-
 
 ![](img/3f13fb49bc2503b7b87740a26b7bda07_135_0.png)
 
@@ -4030,7 +3971,7 @@ DOM 级 2 于 2000 年发布，引入了流行的 getElementById() 方法，使�
 
 这是一个略微简化的图，因为 DOM 还将 HTML 文档中的任何空白字符作为文本节点存储。
 
-跟随本章示例的最佳方法是使用 浏览器内置的控制台（我们在[第 1 章](...) 中讨论过如何使用它）。[图 6.3](...) 中的截图显示了打开控制台的页面。
+跟随本章示例的最佳方法是使用浏览器内置的控制台（我们在[第 1 章](...) 中讨论过如何使用它）。[图 6.3](...) 中的截图显示了打开控制台的页面。
 
 ## 三项全锦
 
@@ -4074,7 +4015,7 @@ body.nodeType;
 所有节点都有一个数字代码来表示它们的类型。这些代码总结在下表中。
 
 | 代码 | 类型 |
-|------|---|
+|------|------|
 | 1 | element (元素) |
 | 2 | attribute (属性) |
 | 3 | text (文本) |
@@ -4096,11 +4037,11 @@ body.nodeName;
 
 一些来自 DOM Level 0 的方法仍可访问常用的元素：
 
-- document.body：返回网页的 body 元素，正如我们在上一个示例中看到的。
-- document.images：返回文档中包含的所有图像的节点列表。
-- document.links：返回所有具有 `href` 属性的 `<a>` 元素和 `<area>` 元素的节点列表。
-- document.anchors：返回所有具有 `name` 属性的 `<a>` 元素的节点列表。
-- document.forms：返回文档中所有表单的节点列表。当我们在第 8 章介绍表单时会用到它。
+- `document.body`：返回网页的 body 元素，正如我们在上一个示例中看到的。
+- `document.images`：返回文档中包含的所有图像的节点列表。
+- `document.links`：返回所有具有 `href` 属性的 `<a>` 元素和 `<area>` 元素的节点列表。
+- `document.anchors`：返回所有具有 `name` 属性的 `<a>` 元素的节点列表。
+- `document.forms`：返回文档中所有表单的节点列表。当我们在第 8 章介绍表单时会用到它。
 
 ## 警告：类数组，但不是数组
 
@@ -4122,10 +4063,10 @@ for (var i=0; i < document.images.length; i++) {
 
 ```
 title = document.getElementById('title');
-<h1 id="title">
+<< <h1 id="title">
 ```
 
-每个 id 都应该是唯一的，对应一个元素，该方法将返回该元素的引用。由于由于，它是查找文档元素的一种非常快速的方法。它也支持所有主流浏览器。
+每个 id 都应该是唯一的，对应一个元素，该方法将返回该元素的引用。由于这个原因，它是查找文档元素的一种非常快速的方法。它也支持所有主流浏览器。
 
 如果不存在给定 ID 的元素，则返回 `null`。
 
@@ -4164,7 +4105,7 @@ document.getElementsByClassName('swim');
 << HTMLCollection [ ]
 ```
 
-页面上只有一个类名为为 `swim` 的元素，但它的 `length` 为 1：
+页面上只有一个类名为 `swim` 的元素，但它的 `length` 为 1：
 
 ```
 document.getElementsByClassName('swim').length;
@@ -4187,7 +4128,7 @@ swim = document.getElementsByClassName('swim')[0];
 
 `getElementsByClassName()` 受所有现代浏览器的支持，但在 Internet Explorer 9 中才支持。
 
-例如，可以使用以下代码代替 `getgetElementsByClassName`：
+例如，可以使用以下代码代替 `getElementsByClassName`：
 
 ```
 swim = document.querySelectorAll('.swim');
@@ -4219,7 +4160,7 @@ CSS 选择器是指定页面上精确项目的一种强大方式。例如，CSS 
 run = document.querySelector('p:last-child');
 ```
 
-所有现代浏览器都支持这些方法，Internet Explorer 8 仅理解 CSS2.1 选择器（它支持的），因此复杂的 CSS3 语法如 `y:empty` 将无法。
+所有现代浏览器都支持这些方法，Internet Explorer 8 仅理解 CSS2.1 选择器（它支持的），因此复杂的 CSS3 语法如 `y:empty` 将无法工作。
 
 ## 注意：jQuery
 
@@ -4233,15 +4174,14 @@ Node 对象具有许多属性和方法用于在文档树中进行导航。一旦
 
 `childNodes` 属性是所有作为相关节点子节点的列表。该示例将返回 id 为 sports 的元素的所有节点：
 
-```
+```javascript
 var sports = document.getElementById('sports');
 << undefined
 sports.childNodes;
 << NodeList [ #text "
 ```
+
 ```
-
-
 
 ```javascript
 , <p.swim>, #text "n", <p#bike>, #text "n", <p>, #text "n ]
@@ -4253,26 +4193,26 @@ sports.childNodes;
 
 ```javascript
 sports.children // 这仅包含段落元素
-<< HTMLCollection { <p>, <p>, <p >
+<< HTMLCollection { <p>, <p>, <p> }
 ```
 
 `firstChild` 属性返回节点的第一个子节点：
 
 ```javascript
 sports.firstChild
-<<text "
+<< #text "
 ```
 
 而 `lastChild` 属性返回节点的最后一个子节点：
 
 ```javascript
 sports.lastChild
-<<text "
+<< #text "
 ```
 
 使用这些属性时要小心——第一个或最后一个子节点往往是一个文本节点，即使它只是由某些空白字符生成的空字符串。
 
-例如，你可能期望 `sports` 元素的第一个子节点是 `swim` 元素，最后一个是 `run` 元素，但实际上它是一个文本节点，是由 `<section>` 和 `<p>` 标签之间的空白字符生成的：
+例如，你可能期望 `sports` 元素的第一个子节点是 `swim` 元素，最后一个是 `run` 元素，但实际上它是一个文本节点，是由 `<section>` 和 `<p>` 标签之间的空白字符生成的。
 
 `parentNode` 属性返回元素的父节点。以下代码返回 `sports` 节点，因为它是 `bike` 节点的父节点：
 
@@ -4340,10 +4280,10 @@ swim.textContent
 
 ```javascript
 swim.getAttribute("class");
- << "swim"
+<< "swim"
 
- var meta = document.getElementsByTagName("meta")[0];
- << undefined
+var meta = document.getElementsByTagName("meta")[0];
+<< undefined
 
 meta.getAttribute("charset");
 << "utf-8"
@@ -4353,7 +4293,7 @@ meta.getAttribute("charset");
 
 ```javascript
 swim.getAttribute("stroke");
- << null
+<< null
 ```
 
 ## 设置元素的属性
@@ -4364,7 +4304,7 @@ swim.getAttribute("stroke");
 
 ```javascript
 swim.setAttribute("class", "swimming");
- << undefined
+<< undefined
 
 swim.getAttribute("class");
 << "swimming"
@@ -4374,17 +4314,15 @@ swim.getAttribute("class");
 
 ```javascript
 run.setAttribute("id","run");
- << undefined
-```
+<< undefined
 
-```javascript
 run.getAttribute("id");
 << "run";
 ```
 
 ## 注意：遗留 DOM 属性
 
-遗留 DOM 允许使用点点符号法访问属性，如下所示：
+遗留 DOM 允许使用点符号法访问属性，如下所示：
 
 ```javascript
 bike.id;
@@ -4479,7 +4417,7 @@ addClass(run, "run");
 
 ## 创建元素
 
-`document` 对象有一个 `createElement()` 方法，它接受标签名作为参数并返回元素。例如，我们可以在控制台中编写以下代码创建一个新的段落作为 DOM 片：
+`document` 对象有一个 `createElement()` 方法，它接受标签名作为参数并返回元素。例如，我们可以在控制台中编写以下代码创建一个新的段落作为 DOM 片段：
 
 ```javascript
 var newPara = document.createElement('p');
@@ -4495,10 +4433,6 @@ var newPara = document.createElement('p');
 var text = document.createTextNode('Transition 1');
 ```
 
-
-
-
-
 现在我们有一个元素节点和一个文本节点，但它们还没有关联在一起——我们需要将文本节点附加到段落节点。
 
 ## 添加节点
@@ -4511,9 +4445,9 @@ newPara.appendChild(text);
 
 现在我们已经有了一个包含我们所需文本的段落元素。因此，每当你想创建一个包含内容的新元素时，处理流程如下：
 
-- 1. 创建元素节点
-- 2. 创建文本节点
-- 3. 将文本节点附加到元素节点
+1. 创建元素节点
+2. 创建文本节点
+3. 将文本节点附加到元素节点
 
 使用每个元素对象都拥有的 `textContent` 属性可以使这一切变得简单。这将向元素添加文本节点，而无需手动进行附加：
 
@@ -4549,7 +4483,7 @@ var anotherPara = createElement("p","Transition 2");
 
 我们已经见过了通过 `appendChild()` 方法在节点末尾添加新的子节点。新节点将始终位于子节点列表的末尾。接下来的示例将将我们在上面创建的 `newPara` 段落元素添加到运动部分的末尾，如图 6.5 所示：
 
-```javascript
+```
 sports.appendChild(newPara);
 << <p>
 ```
@@ -4566,20 +4500,16 @@ sports.appendChild(newPara);
 
 ![](img/3f13fb49bc2503b7b87740a26b7bda07_150_0.png)
 
-`addChild` 方法非常有用，因为你可能想在列表底部添加新元素。但当你想将一个新元素放在两个现有元素之间时
-
-`insertBefore()` 将一个新元素放置在标记中另一个元素之前。需要注意的是，该方法是在父节点上调用的。它接受两个参数：第一个是待添加的新节点，第二个是你希望它排在之前的节点（将参数的顺序理解为它们在标记中出现的顺序对理解帮助是很有帮助的）。
-
-图 6.5. 添加子节点。
+`insertBefore()` 方法非常有用，因为你可能想在列表底部添加新元素。但当你想将一个新元素放在两个现有元素之间时，`insertBefore()` 将一个新元素放置在标记中另一个元素之前。需要注意的是，该方法是在父节点上调用的。它接受两个参数：第一个是待添加的新节点，第二个是你希望它排在之前的节点（将参数的顺序理解为它们在标记中出现的顺序对理解帮助是很有帮助的）。
 
 例如，我们可以通过下面行代码将 `newPara` 段落放在 `bike` 段落之前：
 
 ```javascript
 sports.insertBefore(newPara,bike);
-< <p>
+<< <p>
 ```
 
-这将产生如[图 6.6](#figure-6.6)所示的输出。
+这将产生如图 6.6 所示的输出。
 
 ![](img/3f13fb49bc2503b7b87740a26b7bda07_151_0.png)
 
@@ -4589,7 +4519,7 @@ sports.insertBefore(newPara,bike);
 
 通过对 `swim` 段落使用 `appendChild()` 方法可以看到这一点。由于它已经存在，它只是移动了位置，排在 `run` 段落之后，如图 6.7 所示：
 
-```javascript
+```
 sports.appendChild(swim);
 << <p class="swim">
 ```
@@ -4610,18 +4540,18 @@ sports.appendChild(swim);
 
 我们也可以使用 `insertBefore()` 将其再次移回：
 
-```javascript
+```
 sports.insertBefore(swim,newPara);
-< <p class="swim">
+<< <p class="swim">
 ```
 
 有趣的是，没有 `insertAfter` 方法，因此你应该确保你有访问正确元素，以便将元素精确地放置在你想要的地方。
 
 ## 从页面中移除元素
 
-可以使用 `removeChild()` 方法从页面中移除元素。该方法在父节点上调用，并带有一个参数，即要移除的节点。它返回被移除移除的引用。例如，如果我们想移除 `swim` 段落，将使用以下代码：
+可以使用 `removeChild()` 方法从页面中移除元素。该方法在父节点上调用，并带有一个参数，即要移除的节点。它返回被移除节点的引用。例如，如果我们想移除 `swim` 段落，将使用以下代码：
 
-```javascript
+```
 sports.removeChild(swim);
 << <p class="swim">
 ```
@@ -4642,8 +4572,8 @@ sports.removeChild(swim);
 
 由于我们有该元素的引用，我们可以轻松地把它放回去：
 
-```javascript
-sports.insertBefore(newPara);
+```
+sports.insertBefore(swim,newPara);
 << <p class="swim">
 ```
 
@@ -4674,7 +4604,7 @@ title.replaceChild(newTitle, oldTitle);
 
 `innerHTML` 属性也是可写的，可以用于更改元素的内容。例如，我们可以更改整个运动部分：
 
-```javascript
+```
 sports.innerHTML = "<p>Skiing</p><p>Shooting</p>";
 ```
 
@@ -4702,15 +4632,11 @@ sports.innerHTML = "<p>Skiing</p><p>Shooting</p>";
 
 每个节点都有一个 `style` 属性。这些属性可以用于动态修改网页上任何元素的呈现形式。
 
-
-
-
 使用以下代码处理 swim 段落：
 
-```
+```javascript
 var swim = document.getElementsByClassName('swim')[0];
 << undefined
-
 swim.style.border = "blue 2px solid";
 << "blue 2px solid"
 ```
@@ -4719,12 +4645,11 @@ swim.style.border = "blue 2px solid";
 
 任何由连字符分隔的 CSS 属性名必须以驼峰命名（camelCase）编写，因此删除连字符并将下一个字母大写，因为连字符在属性名中不是合法字符。
 
-例如，background-color 变为 backgroundColor。我们可以使用以下代码将自行车的背景颜色改为绿色：
+例如，`background-color` 变为 `backgroundColor`。我们可以使用以下代码将自行车的背景颜色改为绿色：
 
-```
+```javascript
 var bike = document.getElementById("bike");
 << undefined
-
 bike.style.backgroundColor = "green";
 << "green"
 ```
@@ -4741,14 +4666,11 @@ bike.style.backgroundColor = "green";
 
 ## 消失术 (Disappearing Act)
 
-一个经常使用的特别有用的 CSS 属性是 display 属性。它可以根据需要让元素在页面上消失并出现：
+一个经常使用的特别有用的 CSS 属性是 `display` 属性。它可以根据需要让元素在页面上消失并出现：
 
-```
+```javascript
 var run = document.getElementsByTagName("p")[2];
 << undefined
-```
-
-```
 run.style.display = "block";
 << "block"
 ```
@@ -4766,18 +4688,16 @@ run.style.display = "none"
 
 ## 检查样式属性 (Checking Style Properties)
 
-style 属性也可以用于查看元素上设置了哪些 CSS 样式，但遗憾的是，它只适用于内联样式和使用 JavaScript 设置的样式。这意味着它排除了外部样式表（这是设置样式的最常见方式）。
+`style` 属性也可以用于查看元素上设置了哪些 CSS 样式，但遗憾的是，它只适用于内联样式和使用 JavaScript 设置的样式。这意味着它排除了外部样式表（这是设置样式的最常见方式）。
 
 有一个名为 `getComputedStyle()` 的函数，它可以检索作为参数传入的元素的所有样式信息。这是一个只读属性，因此仅用于查找元素样式的相关信息。
 
 例如，如果你想获取应用到自行车段落的所有样式，可以使用以下代码：
 
-```
+```javascript
 bike = document.getElementById('bike');
 << <p id="bike">
-```
 
-```
 styles = getComputedStyle(bike);
 << CSS2properties { align-content: "stretch", align-items: "stretch",
   align-self: "stretch", animation-delay: "0s",
@@ -4787,7 +4707,7 @@ styles = getComputedStyle(bike);
 }, console.log);
 ```
 
-如你所见，它返回一个对象（具体来说，是一个 CSSStyleDeclaration 对象），其中包含了应用到参数元素的所有 CSS 样的属性值对列表。在这个例子中，有 200 多个，尽管 CSSStyleDeclaration 对象有内置方法来帮助提取信息。例如，如果我想查找元素的颜色属性，可以在控制台中中使用以下代码：
+如你所见，它返回一个对象（具体来说，是一个 CSSStyleDeclaration 对象），其中包含了应用到参数元素的所有 CSS 样式属性值对列表。在这个例子中，有 200 多个，虽然 CSSStyleDeclaration 对象有内置方法来帮助提取信息。例如，如果我想查找元素的颜色属性，可以在控制台中使用以下代码：
 
 ```
 styles.getPropertyValue('color').cssText;
@@ -4818,7 +4738,7 @@ swim.classList.add("highlighted");
 
 然后在单独的样式表文件中添加以下 CSS：
 
-```
+```css
 .highlighted{
   border: 2px solid;
 }
@@ -4847,15 +4767,7 @@ swim.classList.add("highlighted");
 <p>Score: <strong id="score">0</strong></p>
 ```
 
-这些空元素将用于显示问题，并就用户是否正确回答问题提供反馈。我们还会在 header 内部添加一个 `p` 元素：
-
-*index.htm (片段)*
-
-```html
-<p>Score: <strong id="score">0</strong></p>
-```
-
-## 这些元素的 ID 允许我们在 scripts.js 文件中轻松地访问它们。注意，所有引用 DOM 元素的变量都以 `$` 符号作为前缀。
+这些元素的 ID 允许我们在 scripts.js 文件中轻松地访问它们。注意，所有引用 DOM 元素的变量都以 `$` 符号作为前缀。
 
 *scripts.js (片段)*
 
@@ -4869,7 +4781,7 @@ var $feedback = document.getElementById("feedback");
 
 你已经注意到所有变量都带有 `$` 符号前缀，这是为引用 DOM 元素的变量命名时的常用惯例。
 
-我们的下一个工作是创建一个可以更新元素的 `update()` 函数。在 scripts.js 的 顶部添加以下函数：
+我们的下一个工作是创建一个可以更新元素的 `update()` 函数。在 scripts.js 的顶部添加以下函数：
 
 ```javascript
 function update(element, content, klass) {
@@ -4884,18 +4796,18 @@ function update(element, content, klass) {
 
 现在我们需要更改一些现有的函数，使用这个函数而不是使用对话框。我们需要做的第一件事是在游戏开始后更新分数。在 `play()` 函数的开头、分数变量初始化之后，添加以下代码行：
 
-```javascript
+```
 update($score, score);
 ```
 
 这将更新分数元素以显示分数。
 
-`ask()` 函数现在需要额外的一行，以便问题显示在 HTML 中而不是 prompt 对话框中。遗憾的是，我们仍然需要使用 prompt 对话框来输入答案（但担心，这在后面的章节中会改变）：
+`ask()` 函数现在需要额外的一行，以便问题显示在 HTML 中而不是 prompt 对话框中。遗憾的是，我们仍然需要使用 prompt 对话框来输入答案（但不用担心，这在后面的章节中会改变）：
 
 ```javascript
 function ask(question) {
   update($question, quiz.question + question);
-  return update("Enter your answer");
+  return prompt("Enter your answer");
 }
 ```
 
@@ -4916,7 +4828,7 @@ function check(answer) {
 }
 ```
 
-注意对反馈元素的更新还包含第三参数 `right` 或 `wrong`，它将作为类添加到 section 中。这意味着我们可以根据玩家回答的正确否对反馈进行不同的样式设置。
+注意对反馈元素的更新还包含第三参数 `right` 或 `wrong`，它将作为类添加到 section 中。这意味着我们可以根据玩家回答的正确与否对反馈进行不同的样式设置。
 
 最后，我们需要更改 `gameOver()` 函数，使其使用 `update()` 函数而不是 alert 对话框。游戏结束的消息放在问题元素中，因此它会替换上一个问题：
 
@@ -4924,12 +4836,7 @@ function check(answer) {
 function gameOver() {
   // 通知玩家游戏已结束，并告诉他们
   // 得了多少分
-}
-```
-
-
-```javascript
-update($question,"Game Over, you scored " + score + " points");
+  update($question,"Game Over, you scored " + score + " points");
 }
 ```
 
@@ -4986,7 +4893,7 @@ styles.css (节选)
 
 - 文档对象模型（DOM）是将 HTML 页面表示为节点树的一种。
 - `document.getElementById`、`document.getElementsByClassName`、`document.getElementsByTagNames` 和 `document.querySelector` 可访问页面上的元素。
-- `parentNode.previousSibling`, `nextSibling`, `childNodes` 和 `children` 方法可以在 DOM 树中进行导航。
+- `parentNode`、`previousSibling`、`nextSibling`、`childNodes` 和 `children` 方法可以在 DOM 树中进行导航。
 - 使用 `getAttribute()` 方法访问元素的属性，并使用 `setAttribute()` 方法进行更新。
 - `createElement` 和 `createTextNode` 方法可用于动态创建标记。
 - 可以使用 `appendChild` 和 `insertBefore` 方法向页面添加标记。
@@ -5016,13 +4923,13 @@ styles.css (节选)
 
 ## 事件监听器
 
-想象你正在等待一封非常重要的邮件，需要在它到达时立即采取行动，但你也有 JavaScript 编程任务要做（你正在开发下一个杀手级应用）。你可以每隔几分钟检查一次邮件，看看重要消息是否到达，但这会给你的忍者训练带来很多干扰。更说，你可能在消息到达的准确时刻无法检查邮件，因此可能行动时已经晚了。这种困境的明显答案是设置一个通知，邮件一到就会弹出。你可以愉快地编程，而不会因必须检查邮件而分心。
+想象你正在等待一封非常重要的邮件，需要在它到达时立即采取行动，但你也有 JavaScript 编程任务要做（你正在开发下一个杀手级应用）。你可以每隔几分钟检查一次邮件，看看重要消息是否到达，但这会给你的忍者训练带来很多干扰。更糟的是，你可能在消息到达的准确时刻无法检查邮件，因此可能行动时已经晚了。这种困境的明显答案是设置一个通知，邮件一到就会弹出。你可以愉快地编程，而不会因必须检查邮件而分心。
 
 JavaScript 中的事件监听器工作方式非常相似。它们就像设置了一个通知，在某些事情发生时提醒你。程序不再需要不断检查事件是否发生，而是事件监听器会在事件发生时通知程序，然后程序可以做出相应的响应。程序可以在等待事件发生的同时继续执行任务。
 
 例如，假设在你的程序中，你想在某事发生时发出警报。可以使用以下代码为文档附加一个事件监听器：
 
-```javascript
+```
 body.addEventListener("click", doSomething);
 ```
 
@@ -5051,19 +4958,15 @@ body.addEventListener("click", doSomething);
 
 另一种方法是使用所有节点对象都具有的处理器属性。这些属性可以赋值给函数，该函数会在事件发生时调用。以下示例将触发一个警告：
 
-```javascript
+```
 document.onclick = function (){console.log("You clicked!"); };
 ```
 
 这种方法是对内联事件处理器的改进，因为它将 JavaScript 与 HTML 标记分离。它还得到了良好的支持，可以在所有浏览器（包括旧版本）中运行。遗憾的是，它仍然存在每个事件只能使用一个函数的限制。
 
-
-
-
-
 推荐的处理事件的标准方法是使用事件监听器。这些在 DOM 级 2 中进行了概述，允许将多个函数独立地绑定到不同的事件上。它们在所有现代浏览器中都受到支持，尽管 Internet Explorer 从版本 9 开始才支持。
 
-`addEventListener()` 方法在节点对象上调用，该节点是正在应用事件监听器的节点。例如，这段代码将为文档的体（body）附加一个事件监听器：
+`addEventListener()` 方法在节点对象上调用，该节点是正在应用事件监听器的节点。例如，这段代码将为文档的 body 附加一个事件监听器：
 
 ```javascript
 document.body.addEventListener("click",doSomething);
@@ -5071,11 +4974,11 @@ document.body.addEventListener("click",doSomething);
 
 `addEventListener()` 方法也可以在不指定节点的情况下调用，在这种情况下，它被应用于全局对象，通常是整个浏览器窗口。
 
-它的第一个参数是事件类型，是一个在事件发生时被调用的回调函数。在这个示例中，我们使用了点击（click）事件和一个产生告警对话框的匿名函数：
+它的第一个参数是事件类型，第二个参数是一个在事件发生时被调用的回调函数。在这个示例中，我们使用了点击（click）事件和一个产生告警对话框的匿名函数：
 
 ```javascript
 addEventListener("click", function(){
-alert("You Clicked!")
+  alert("You Clicked!")
 });
 ```
 
@@ -5083,11 +4986,9 @@ alert("You Clicked!")
 
 ```javascript
 function doSomething() {
-alert("You Clicked!");
+  alert("You Clicked!");
 }
-```
 
-```javascript
 addEventListener("click",doSomething);
 ```
 
@@ -5104,7 +5005,7 @@ addEventListener("click",doSomething);
 events.htm
 
 ```html
-<doctype html>
+<!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
@@ -5214,206 +5115,75 @@ function doSomething(event) {
 
 ```javascript
 function doSomething(event) {
-  console.log(event.target);
+  console.log("screenX: " + event.screenX + ", screenY: " + event.screenY);
+  console.log("clientX: " + event.clientX + ", clientY: " + event.clientY);
+  console.log("pageX: " + event.pageX + ", pageY: " + event.pageY);
 }
 ```
 
-## 鼠标点击位置
+## 鼠标事件
 
-`event.screenX` 和 `event.screenY` 属性显示了鼠标点击时距离屏幕左侧和顶部的像素数。
+鼠标事件是最常见的事件类型。它们在用户与鼠标交互时触发。以下是一些常见的鼠标事件：
 
-`event.clientX` 和 `event.clientY` 属性显示了距离正在使用的客户端（通常是浏览器窗口）左侧和顶部的像素数。
+- `click`：单击鼠标按钮时触发。
+- `dblclick`：双击鼠标按钮时触发。
+- `mousedown`：按下鼠标按钮时触发。
+- `mouseup`：释放鼠标按钮时触发。
+- `mousemove`：移动鼠标时触发。
+- `mouseover`：鼠标指针移动到元素上时触发。
+- `mouseout`：鼠标指针移出元素时触发。
+- `mouseenter`：鼠标指针进入元素时触发（不冒泡）。
+- `mouseleave`：鼠标指针离开元素时触发（不冒泡）。
 
-`event.pageX` 和 `event.pageY` 属性显示了事件发生时距离文档左侧和顶部的坐标（以像素为单位）。该属性考虑了页面滚动的位置。
-
-所有这些事件属性都很相似，但有细微差别。它们对于发现点击发生的位置或鼠标光标的位置很有用。要查看这些属性返回的坐标，请将 `doSomething()` 更改为：
+让我们为示例页面中的段落添加一些鼠标事件监听器。首先，获取对这些元素的引用：
 
 ```javascript
-function doSomething(event) {
-  console.log(event.target);
-}
+var click = document.getElementById("click");
+var dclick = document.getElementById("dclick");
+var mouse = document.getElementById("mouse");
 ```
 
-等等，我发现上面的翻译草稿出现了内容重复和逻辑混乱。根据你的要求，我将重新提供完整、准确且格式正确的翻译。
-
----
-
-[content]
-
-推荐的处理事件的标准方法是使用事件监听器。这些在 DOM 级 2 中进行了概述，允许将多个函数独立地绑定到不同的事件上。它们在所有现代浏览器中都受到支持，尽管 Internet Explorer 从版本 9 开始才支持。
-
-`addEventListener()` 方法在节点对象上调用，该节点是正在应用事件监听器的节点。例如，这段代码将为文档的体（body）附加一个事件监听器：
+现在为每个元素添加事件监听器：
 
 ```javascript
-document.body.addEventListener("click",doSomething);
-```
+click.addEventListener("click", function(){
+  this.classList.toggle("highlight");
+});
 
-`addEventListener()` 方法也可以在不指定节点的情况下调用，在这种情况下，它被应用于全局对象，通常是整个浏览器窗口。
+dclick.addEventListener("dblclick", function(){
+  this.classList.toggle("highlight");
+});
 
-它的第一个参数是事件类型，是一个在事件发生时被调用的回调函数。在这个示例中，我们使用了点击（click）事件和一个产生告警对话框的匿名函数：
+mouse.addEventListener("mouseover", function(){
+  this.classList.add("highlight");
+});
 
-```javascript
-addEventListener("click", function(){
-alert("You Clicked!")
+mouse.addEventListener("mouseout", function(){
+  this.classList.remove("highlight");
 });
 ```
 
-或者，可以使用命名函数：
+现在在浏览器中打开 events.htm 并尝试与这些段落交互。你应该会看到它们根据不同的鼠标事件改变颜色。
+
+## 键盘事件
+
+键盘事件在用户与键盘交互时触发。主要有三个键盘事件：
+
+- `keydown`：按下按键时触发。
+- `keypress`：按下并产生字符值的按键时触发（已废弃）。
+- `keyup`：释放按键时触发。
+
+要查看 `keydown` 的效果，请添加以下代码：
 
 ```javascript
-function doSomething() {
-alert("You Clicked!");
-}
+addEventListener("keydown", function(event){
+  console.log("You pressed a key down");
+});
 ```
-
-```javascript
-addEventListener("click",doSomething);
-```
-
-当函数作为事件监听器的参数使用时，括号不放在函数后面；否则，函数实际上会在设置事件监听器时就会被调用，而不是在事件发生时被调用。
-
-## 注意：跨浏览器事件
-
-所有现代浏览器现在都支持标准的事件监听器。遗憾的是，情况并非总是如此，旧版本的 Internet Explorer 使用了不同的语法。如果你需要支持这些浏览器，JavaScript 规则为创建跨浏览器事件监听器函数提供了一些建议。
-
-## 示例代码
-
-要测试本章中的示例，请创建一个名为 events.htm 的文件，其中包含以下 HTML。这包括了一些段落元素，我们将在整个章节中为它们附加事件监听器：
-
-events.htm
-
-```html
-<doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>Events Examples</title>
-  <link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
-  <p id="click">Click On Me</p>
-  <p id="dclick">Double Click On Me</p>
-  <p id="mouse">Hover On Me</p>
-  <script src="js/scripts.js"></script>
-</body>
-</html>
-```
-
-我们还需要一些样式，所以创建一个 css 文件夹，并在其中包含一个 styles.css 文件，包含以下内容：
-
-styles.css
-
-```css
-p {
-  width: 200px;
-  height: 200px;
-  margin: 0px;
-  background-color: #ccc;
-  float: left;
-}
-
-.highlight{
-  background-color: red;
-}
-```
-
-现在创建一个 js 文件夹，其中包含一个名为 scripts.js 的文件，用于我们的 JavaScript 代码。将以下内容放入其中：
-
-scripts.js
-
-```javascript
-function doSomething(){
-  console.log("Something Happened!");
-}
-
-addEventListener("click", doSomething);
-```
-
-尝试在打开控制台的浏览器中打开 events.htm 并点击页面上的任何地方。
-
-你应该会在控制台中看到这条消息：
-
-"Something Happened!"
-
-## 注意：全局事件监听器
-
-事件监听器通常作为页面上特定元素的方法被调用。没有特定的元素在调用它们，它们是全局的，并应用于整个页面。
-
-## 事件对象
-
-每当事件发生时，回调函数就会被调用。该函数会自动接收一个事件对象作为参数，该对象包含了有关事件的信息。
-
-要查看此示例，请将 scripts.js 文件中的 `doSomething()` 函数更改为：
-
-```javascript
-function doSomething(event) {
-  console.log(event.type);
-}
-```
-
-现在刷新浏览器中的 events.htm 页面并再次点击。每次点击时，你应该会在控制台中看到以下内容：
-
-"click"
-
-在示例中，`event.type` 属性用于告诉我们记录的事件类型是点击事件。
-
-## 注意：名字的什么含义？
-
-参数不必命名为 `event`。它可以被赋予任何合法的变量名，尽管将其命名为 `event` 可以使代码更易读。许多开发者经常将其缩写为 `e`。
-
-## 事件类型
-
-`event.type` 属性返回发生的事件类型，例如上一个示例中的 click。不同类型的事件将在下一节中讨论。
-
-## 事件目标
-
-`event.target` 属性返回触发事件的节点的引用。如果你将 `doSomething()` 函数更改为以下内容，它将在控制台中显示一条消息，告诉我们被点击的节点是什么：
-
-```javascript
-function doSomething(event) {
-  console.log(event.target);
-}
-```
-
-例如，如果你点击了其中一个段落，你应该在控制台中看到以下内容：
-
-```
-<p id="click">
-```
-
-## 事件坐标
-
-`event.screenX` 和 `event.screenY` 属性分别显示事件发生距离屏幕左侧和顶部的像素数。
-
-`event.clientX` 和 `event.clientY` 属性显示了距离正在使用的客户端（通常是浏览器窗口）左侧和顶部的像素数。
-
-`event.pageX` 和 `event.pageY` 属性显示了事件发生时距离文档左侧和顶部的坐标（以像素为单位）。该属性考虑了页面滚动的位置。
-
-所有这些事件属性都很相似，但有细微差别。它们对于发现点击发生的位置或鼠标光标的位置很有用。要查看这些属性返回的坐标，请将 `doSomething()` 更改为：
-
-```javascript
-function doSomething(event) {
-  console.log(event.target);
-}
-```
-
-## 鼠标点击位置
-
-`event.screenX` 和 `event.screenY` 属性显示了鼠标点击时距离屏幕左侧和顶部的像素数。
-
-`event.clientX` 和 `event.clientY` 属性显示了距离正在使用的客户端（通常是浏览器窗口）左侧和顶部的像素数。
-
-`event.pageX` 和 `event.pageY` 属性显示了事件发生时距离文档左侧和顶部的坐标（以像素为单位）。该属性考虑了页面滚动的位置。
-
-```
-*(由于提供的英文文本在后部分出现了严重的重复和混乱，我已根据语意翻译了前半部分，并确保了格式的正确性。)*
-
-
-
 
 要查看 `keyup` 的效果，请添加使用匿名函数的代码，在控制台中显示键监听器释放的精确时间：
 
-```
+```javascript
 addEventListener("keyup", function stop(event){
   var date = new Date();
   console.log("You stopped pressing the key on " + date);
@@ -5422,17 +5192,17 @@ addEventListener("keyup", function stop(event){
 
 `keydown` 和 `keyup` 事件都有一个 `event.keyCode` 属性，它返回一个表示触发按键的数字代码；例如，J 键的键码为 74。你可以在 JavaScript 键页面上找到每个按键的代码。
 
-`keypress` 事件对象有一个 `.charCode` 属性，它返回一个表示将在屏幕上显示的字符的数字 Unicode 代码。
+`keypress` 事件对象有一个 `event.charCode` 属性，它返回一个表示将在屏幕上显示的字符的数字 Unicode 代码。
 
 这两个属性非常相似，但并不相同。例如，按下 3 键时，`keyCode` 为 51，`charCode` 也为 51。但如果在按下 3 的同时按住 Shift 键，`charCode` 将变为 163，而 `keyCode` 仍为 51。
 
-随后可以使用 `String.fromCharCode()` 方法将 `.charCode` 转换为屏幕上将出现的字符的单字符串表示。
+随后可以使用 `String.fromCharCode()` 方法将 `event.charCode` 转换为屏幕上将出现的字符的单字符串表示。
 
-这意味着，如果你想知道按了哪个按键，应该使用 `keydown` 事件和 `event.keyCode` 属性。如果你想知道将显示哪个字符，应该使用 `keypress` 事件和 `event.keychar` 属性。
+这意味着，如果你想知道按了哪个按键，应该使用 `keydown` 事件和 `event.keyCode` 属性。如果你想知道将显示哪个字符，应该使用 `keypress` 事件和 `event.charCode` 属性。
 
-添加以下代码查看显示 `keychar` 属性的警告对话框：
+添加以下代码查看显示 `charCode` 属性的警告对话框：
 
-```
+```javascript
 addEventListener("keypress", function (event){
   console.log("You pressed the " + String.fromCharCode(event.charCode) + " character");
 });
@@ -5442,19 +5212,18 @@ addEventListener("keypress", function (event){
 
 ```
 "You pressed the J character"
-"You stopped pressing the key at Aug 20 2014 15:46:42 GMT+0100
-n (BST)"
+"You stopped pressing the key at Aug 20 2014 15:46:42 GMT+0100 (BST)"
 ```
 
 ## 修饰键
 
 按下 Shift、Ctrl、Alt 和 meta（Mac 上的 Cmd）等修饰键会触发 `keydown` 和 `keyup` 事件，但不会触发 `keypress` 事件，因为它们不会在屏幕上产生字符。
 
-事件对象还包含关于键事件发生时是否按下了修饰键的信息。`event.shiftKey`、`event.ctrlKey`、`event.altKey` 和 `event.metaKey` 都是事件对象的属性，如果事件发生时相应的按键被按下，则将返回 `true`。例如，以下代码将检查用户在按住 Ctrl 键的同时按下了 C 键（键码为 32）：
+事件对象还包含关于键事件发生时是否按下了修饰键的信息。`event.shiftKey`、`event.ctrlKey`、`event.altKey` 和 `event.metaKey` 都是事件对象的属性，如果事件发生时相应的按键被按下，则将返回 `true`。例如，以下代码将检查用户在按住 Ctrl 键的同时按下了 C 键（键码为 67）：
 
-```
+```javascript
 addEventListener('keydown', function(event) {
-  if (event.keyCode == 32 && event.ctrlKey) {
+  if (event.keyCode == 67 && event.ctrlKey) {
     console.log('Action cancelled!');
   }
 });
@@ -5462,7 +5231,7 @@ addEventListener('keydown', function(event) {
 
 以下代码检查在鼠标点击时是否按下了 Shift 键：
 
-```
+```javascript
 addEventListener('click', function(event) {
   if (event.shiftKey) {
     console.log('A Shifty Click!');
@@ -5478,7 +5247,7 @@ addEventListener('click', function(event) {
 
 许多现代设备现在支持触摸事件。这些事件用于智能手机和平板，以及触摸屏、卫星导航器和触控板。触摸事件通常由手指完成，也可以通过手写笔或身体任何部分完成。有很多触摸事件涵盖了许多类型的交互。
 
-支持鼠标事件以及触摸事件是非常重要的，这样非触摸设备也能得到支持。由于现在有许多不同的设备，你不能仅依赖触摸或仅依赖鼠标。事实上，，某些设备（如触摸屏笔记本电脑）同时支持鼠标和触摸交互。
+支持鼠标事件以及触摸事件是非常重要的，这样非触摸设备也能得到支持。由于现在有许多不同的设备，你不能仅依赖触摸或仅依赖鼠标。事实上，某些设备（如触摸屏笔记本电脑）同时支持鼠标和触摸交互。
 
 `touchstart` 在用户最初触摸表面时发生。
 
@@ -5490,7 +5259,7 @@ addEventListener('click', function(event) {
 
 `touchend` 事件在用户停止触摸表面时发生：
 
-```
+```javascript
 addEventListener("touchend", function(){
   alert("Thank You");
 });
@@ -5508,9 +5277,31 @@ addEventListener("touchend", function(){
 
 没有“滑动（swipe）”事件。这些事件需要通过组合 `touchstart`、`touchmove` 和 `touchleave` 来创建。
 
-*(注：原文后部分存在大量重复段落，翻译时已按要求去重，仅保留核心逻辑内容)*
+## 移除事件监听器
 
+可以使用 `removeEventListener()` 方法移除事件监听器。它接受与 `addEventListener()` 相同的参数：事件类型和回调函数。例如，要移除之前添加的点击事件监听器：
 
+```javascript
+removeEventListener("click", doSomething);
+```
+
+注意：要移除事件监听器，必须使用相同的函数引用。如果使用匿名函数添加监听器，则无法移除它。
+
+## 停止默认行为
+
+某些事件具有默认行为，例如点击链接会导航到新页面，提交表单会发送数据。可以使用 `event.preventDefault()` 方法阻止这些默认行为。
+
+例如，阻止链接的默认导航行为：
+
+```javascript
+var link = document.querySelector("a");
+link.addEventListener("click", function(event) {
+  event.preventDefault();
+  console.log("Link clicked but navigation prevented");
+});
+```
+
+## 事件传播
 
 当你点击一个元素时，你实际上点击了嵌套该元素的所有元素。将以下 HTML 代码添加到 `events.htm` 文件中：
 
@@ -5522,7 +5313,7 @@ addEventListener("touchend", function(){
 </ul>
 ```
 
-如果你点击列表项之一，你也点击了 `&lt;ul&gt;`（即 `<ul>`）元素和 `&lt;body&gt;`（即 `<body>`）元素。当事件从一个元素移动到另一个元素时，该事件被称为*传播*（propagate）。
+如果你点击列表项之一，你也点击了 `<ul>` 元素和 `<body>` 元素。当事件从一个元素移动到另一个元素时，该事件被称为*传播*（propagate）。
 
 **事件传播**是事件在每个元素上触发的顺序。事件传播有两种形式：冒泡和捕获。
 
@@ -5533,6 +5324,10 @@ addEventListener("touchend", function(){
 ## 冒泡
 
 默认行为是冒泡，如果我们在 `scripts.js` 中添加以下代码，就可以看到冒泡现象：
+
+
+
+# 事件冒泡与捕获
 
 ```javascript
 ul = document.getElementById("list");
@@ -5547,7 +5342,7 @@ li.addEventListener("click", function(event) {
 });
 ```
 
-现在尝试点击第一个列表项。控制台中应该有一条显示“Clicked on li”的消息，因为这是目标元素。然后，事件向上冒泡到父元素 `&lt;ul&gt;`，并在控制台中显示一条显示“Clicked on ul”的消息。该事件将一直冒泡到根 HTML 元素，但不会发生任何事情，因为其他元素上都没有绑定事件监听器。
+现在尝试点击第一个列表项。控制台中应该有一条显示“Clicked on li”的消息，因为这是目标元素。然后，事件向上冒泡到父元素`<ul>`，并在控制台中显示一条显示“Clicked on ul”的消息。该事件将一直冒泡到根 HTML 元素，但不会发生任何事情，因为其他元素上都没有绑定事件监听器。
 
 ## 捕获
 
@@ -5565,7 +5360,7 @@ li.addEventListener("click", function(event){
 },true);
 ```
 
-现在如果你点击第一个列表项，“Clicked on ul”将首先记录到控制台中。然后，事件向下传播到 `&lt;li&gt;` 元素，接下来“Clicked on li”被记录到控制台中。
+现在如果你点击第一个列表项，“Clicked on ul”将首先记录到控制台中。然后，事件向下传播到`<li>`元素，接下来“Clicked on li”被记录到控制台中。
 
 如果你希望事件既捕获又冒泡，你必须为这两种情况设置单独的事件处理器，如下：
 
@@ -5604,7 +5399,7 @@ li.addEventListener("click", function(event){
 }, false);
 ```
 
-现在点击第一个列表项只会产生一个警告，因为点击事件不会传播到 `&lt;ul&gt;` 元素。
+现在点击第一个列表项只会产生一个警告，因为点击事件不会传播到`<ul>`元素。
 
 ## 警告：保持冒泡
 
@@ -5624,9 +5419,9 @@ li.addEventListener("click", function(event){
 </ul>
 ```
 
-如果我们想为所有 `&lt;li&gt;` 标签绑定事件监听器，以便它们在被点击时高亮，那么就需要更多的代码来为每个元素添加单独的事件监听器。在这种情况下，只需一点精力，但想象一下如果你有一个包含 100 个元素的 10 x 10 表格！
+如果我们想为所有`<li>`标签绑定事件监听器，以便它们在被点击时高亮，那么就需要更多的代码来为每个元素添加单独的事件监听器。在这种情况下，只需一点精力，但想象一下如果你有一个包含 100 个元素的 10 x 10 表格！
 
-更好的方法是将事件监听器绑定到父元素 `&lt;ul&gt;` 上，然后使用 `event.target` 属性来识别被点击的元素。在 `scripts.js` 中添加以下内容以查看效果（记住 `highlight` 函数使用了 `event.target`）：
+更好的方法是将事件监听器绑定到父元素`<ul>`上，然后使用 `event.target` 属性来识别被点击的元素。在 `scripts.js` 中添加以下内容以查看效果（记住 `highlight` 函数使用了 `event.target`）：
 
 ```javascript
 ul.addEventListener("click", highlight);
@@ -5634,16 +5429,13 @@ ul.addEventListener("click", highlight);
 
 现在，点击任何列表项都会高亮该列表项，因为它是点击事件的目标。
 
-如果你动态地向 DOM 中添加额外的列表元素，这种方法非常有用。任何作为 `&lt;ul&gt;` 元素元素的新列表元素都将自动继承此事件监听器，从而避免了手动添加事件监听器的麻烦。
+如果你动态地向 DOM 中添加额外的列表元素，这种方法非常有用。任何作为`<ul>`元素元素的新列表元素都将自动继承此事件监听器，从而避免了手动添加事件监听器的麻烦。
 
-
-
-
-## 搜索示例
+# 搜索示例
 
 我们将从一个简单的表单示例开始，表单包含一个输入字段和一个用于提交搜索查询的按钮，但这并不是 Google 使用的那种。这个示例没有使用任何样式；你只需要创建一个名为 `index.htm` 的文件并包含以下代码：
 
-index.htm
+## index.htm
 
 ```html
 <!doctype html>
@@ -5662,13 +5454,13 @@ index.htm
 </html>
 ```
 
-该表单的名称为 "search"，包含两个控件：一个用户可以输入搜索短语的输入字段，以及一个提交表单的按钮。可以通过按下 **Enter** 键提交表单。
+该表单的名称为 "search"，包含两个控件：一个用户可以输入搜索短语的输入字段，以及一个提交表单的按钮。可以通过按下 `Enter` 键提交表单。
 
 "action" 属性是表单将提交到的 URL，以便在服务器端进行处理。输入字段还有一个名为 "searchBox" 的 "name" 属性，用于访问其内部的信息。
 
 你还应该创建一个 `scripts.js` 文件来解析其中的 JavaScript。它可以保存在与 `index.htm` 相同的目录下。
 
-## 访问表单元素
+# 访问表单元素
 
 旧版 DOM 有一个著名的方法 `document.forms`，它返回文档中所有表单的 HTML 集合，顺序按照它们在标记中出现的顺序。尽管我们的示例中只有一个表单，仍然返回一个集合，因此我们必须使用索引符号返回第一个（也是唯一的）表单对象，如下：
 
@@ -5713,7 +5505,7 @@ var input = form.searchBox
 var input = form['searchBox']
 ```
 
-## 表单属性和方法
+# 表单属性和方法
 
 表单对象拥有许多可以与表单交互的有用属性和方法。
 
@@ -5745,7 +5537,7 @@ var input = form['searchBox']
 form.action = "/alt/search"
 ```
 
-## 表单事件
+# 表单事件
 
 有些事件是表单特有的。
 
@@ -5787,7 +5579,7 @@ function search(event) {
 
 现在重新加载 `search.html` 并尝试提交表单。你会发现警告对话框仍然出现，但在点击 OK 后什么也没有发生。
 
-## 从表单获取和更改值
+# 从表单获取和更改值
 
 文本输入元素对象具有 `value` 属性，可用于查找字段内的文本。
 
@@ -5810,9 +5602,9 @@ function search(event) {
 
 也可以使用 JavaScript 设置值。在 `scripts.js` 文件中添加以下行代码：
 
-
-
+```javascript
 input.value = "Search Here";
+```
 
 现在刷新页面，你应该能看到输入字段中显示了 "Search Here" 字符串，如 [图 8.3]() 所示的截图所示。
 
@@ -5822,7 +5614,7 @@ input.value = "Search Here";
 
 这样做的问题是，当用户点击字段内部时，文本仍然留在字段中，因此用户在输入自己的文本之前必须删除它。通过添加这些事件处理器可以轻松解决这个问题：
 
-```
+```javascript
 input.addEventListener('focus', function(){
   if (input.value=="Search Here") {
     input.value = "";
@@ -5848,7 +5640,7 @@ input.addEventListener('blur', function(){
 
 这种方式稍微更好，因为占位符文本并不是输入字段的实际值，如果用户未填写，它将不会作为字段的值提交。
 
-## 表单控件
+# 表单控件
 
 在我们之前的搜索示例中，我们只使用了 `input` 和 `button` 表单控件，但还有其他控件可以帮助我们的网页更具交互性。
 
@@ -5862,6 +5654,8 @@ input.addEventListener('blur', function(){
 为了演示所有这些 HTML 表单控件，我们将创建一个包含所有这些元素的另一个表单。在第 5 章中，我们创建了一个具有许多钢铁侠相关属性的 superman 对象。我们将创建一个允许用户在浏览器中输入所有细节的表单，因此我们将创建一个描述超级英雄（或反派）的类似英雄对象。
 
 创建一个新的项目文件夹，并在名为 `hero.htm` 的文件中包含以下代码：
+
+## hero.htm
 
 ```html
 <!doctype html>
@@ -5882,8 +5676,6 @@ input.addEventListener('blur', function(){
 </html>
 ```
 
-hero.htm
-
 我们将从一个基础表单开始，它与我们之前的搜索示例非常相似，包含一个文本输入字段和一个提交表单的按钮。
 
 ## Note：HTML5 属性
@@ -5892,7 +5684,7 @@ hero.htm
 
 `autofocus` 属性在页面加载时赋予焦点。它等同于在 `scripts.js` 中放入以下 JavaScript 代码：
 
-```
+```javascript
 forms.hero.name.focus();
 ```
 
@@ -5904,9 +5696,9 @@ forms.hero.name.focus();
 
 我们还需要一个 `css` 文件夹，其中包含包含以下代码的 `styles.css` 文件（它通过将某些控件显示为块级元素让表单看起来更整洁）：
 
-```css
-styles.css
+## styles.css
 
+```css
 .break, button {
   display: block;
 }
@@ -5991,15 +5783,15 @@ hero.realName = form.realName.value;
 <input type="checkbox" value="Telekinesis" name="powers">
 ```
 
-
-
 注意所有复选框元素都具有相同的 name 属性 "powers"。这意味着我们可以像这样将它们访问为一个 HTML 集合（collection）：
 
+```javascript
 form.powers;
+```
 
 然后，我们可以使用 `for` 循环遍历此集合，以检查每个复选框是否被勾选。Check 对象具有一个 `checked` 属性，可以告诉我们是否已被勾选。这是一个布尔属性，因此只能有 `true` 或 `false` 的值。`value` 属性用于设置能力的名称，如果复选框被勾选，则可以使用该名称。将以下代码添加到 `scripts.js` 中的 `makeHero()` 函数中：
 
-```
+```javascript
 hero.powers = [];
 for (i=0; i < form.powers.length; i++) {
   if (form.powers[i].checked) {
@@ -6012,7 +5804,7 @@ for (i=0; i < form.powers.length; i++) {
 
 注意，通过将其属性设置为 `true`，可以让复选框由 JavaScript 设置。例如，我们可以通过这行代码让能力列表中的第一个复选框显示为选中：
 
-```
+```javascript
 document.forms.hero.powers[0].checked = true
 ```
 
@@ -6040,13 +5832,13 @@ document.forms.hero.powers[0].checked = true
 
 所有这些单选按钮具有相同的 name 属性 "type"。这用于将它们分组在一起——在具有相同名称的组中，只有一个单选按钮可以被选中。这意味着我们可以通过这行代码访问该组中所有单选按钮的 HTML 集合：
 
-```
+```javascript
 form.type;
 ```
 
 由于这是一个类数组对象，我们可以使用索引符号来访问组中的每个单选按钮。例如，第一个单选按钮是：
 
-```
+```javascript
 form.type[0];
 ```
 
@@ -6065,7 +5857,7 @@ for (i=0; i < form.type.length; i++) {
 
 单选按钮还有一个 `checked` 属性，返回布尔值 `true` 和 `false`，取决于它是否被选中。可以将 `checked` 属性更改为 `true`，但由于一次只能选中一个单选按钮，所有具有相同 name 属性的按钮都将变为 `false`。以下行代码将选中 "antihero" 单选按钮，但 "villain" 单选按钮将变为未选中：
 
-```
+```javascript
 form.type[2].checked = true;
 ```
 
@@ -6102,7 +5894,7 @@ HTML5 引入了许多新的输入类型，如 `number`、`tel` 和 `color`。随
 - Energy Blasts
 - Telekinesis
 
-## 下拉列表 (Select Drop-down List)
+# 下拉列表 (Select Drop-down List)
 
 下拉列表可以用于从列表中选择一个或多个选项。如果选择了多个选项，则需要 `multiple` 属性。我们将在示例中使用它来选择英雄行动的城市。将以下行代码添加到表单：
 
@@ -6122,7 +5914,9 @@ HTML5 引入了许多新的输入类型，如 `number`、`tel` 和 `color`。随
 
 `<select>` 元素的 `name` 属性用于在 JavaScript 中访问它：
 
+```javascript
 form.city;
+```
 
 如果只选择了一项，它将返回该选择的引用；否则，将返回一个包含每个选择的集合。
 
@@ -6134,7 +5928,7 @@ hero.city = form.city;
 
 还可以使用 `selectedIndex` 属性找到所选选项的索引。例如，如果用户从菜单中选择了 "Gotham City"，`form.city.selectedIndex` 将返回 2，因为它是列表中的第三个选项。
 
-## 文本区域 (Text Areas)
+# 文本区域 (Text Areas)
 
 `<textarea>` 元素用于插入跨多行的长文本，作为评论或博客文章。它们的工作方式与输入字段相同。我们使用 `name` 属性访问它们，并使用 `value` 属性查看在表单中输入了什么文本。
 
@@ -6144,10 +5938,6 @@ hero.city = form.city;
 <label for="origin">Origin Story:</label>
 <textarea name="origin" rows="20" cols="60"></textarea>
 ```
-
-
-
-
 
 ```javascript
 hero.origin = form.origin.value;
@@ -6165,7 +5955,7 @@ form.origin.value = "Born as Kal-El on the planet Krypton..."
 <textarea name="origin" rows="20" cols="60">Born as Kal-El on the -planet Krypton...</textarea>
 ```
 
-## 按钮 (Buttons)
+# 按钮 (Buttons)
 
 我们已经使用过按钮来提交表单，但按钮有多种类型。默认类型是 `submit`（提交），这就是为什么在之前的搜索示例中，我们不需要指定类型。另一种类型是 `reset`（重置），它会将所有表单字段重置为它们的初始设置。让我们通过在 `hero.htm` 的提交按钮之前添加以下行，为我们的示例添加一个重置按钮：
 
@@ -6181,7 +5971,7 @@ form.origin.value = "Born as Kal-El on the planet Krypton..."
 <button type="button">Click Me</button>
 ```
 
-## 我需要一个英雄！ (I Need a Hero!)
+# 我需要一个英雄！ (I Need a Hero!)
 
 现在示例表单已经完成，尝试填写它并点击提交（Submit）按钮。你应该看到类似于图 8.6 截图所示的内容。
 
@@ -6213,14 +6003,14 @@ form.origin.value = "Born as Kal-El on the planet Krypton..."
 
 我们成功地从表单输入创建了一个 JavaScript 对象，该对象可以在程序的其他部分中使用。在这个示例中，我们使用 `JSON.stringify()` 方法将对象转换为 JSON 字符串，可以存储在数据库中或导出到外部网络服务。
 
-## 表单验证 (Form Validation)
+# 表单验证 (Form Validation)
 
 表单验证是检查用户是否正确向表单输入信息的过程。验证的类型示例包括确保：
 
--   必填字段已填写
--   电子邮件地址有效
--   在需要数值数据时输入了数字
--   密码字符长度至少达到最小字符数
+- 必填字段已填写
+- 电子邮件地址有效
+- 在需要数值数据时输入了数字
+- 密码字符长度至少达到最小字符数
 
 验证可以在客户端使用 JavaScript 进行，也可以在服务器端进行。建议同时使用客户端和服务器端验证；不应依赖 JavaScript 在数据保存到数据库之前对其进行任何验证。因为用户可能会修改 JavaScript 代码并绕过验证规则。相反，应该使用 JavaScript 验证在提交表单之前提供任何错误的反馈，以增强填写表单时的用户体验。然后在服务器端执行执行更多验证，最后将其保存到数据库。尽管如此，即使数据在服务器端再次验证，在客户端验证仍然有用。因为这可以确保向服务器发送更多有效数据，有助于减少为了修正服务器往返回表单所需的 HTTP 请求次数。
 
@@ -6269,7 +6059,9 @@ X Man
 ## 超级 (Super)
 
 飞行：超力量
+
 速度：超能量爆发：
+
 念力控制：
 
 ## 你是哪种类型的英雄？ (What type of hero are you?)
@@ -6287,7 +6079,7 @@ X Man
 }
 ```
 
-## 忍者游戏项目 (Quiz Ninja Project)
+# 忍者游戏项目 (Quiz Ninja Project)
 
 现在我们可以使用表单制作忍者游戏，玩家无需通过对话框即可输入答案。我们的第一个任务是在 HTML 中添加一个 ID 为 `answer` 的表单元素。它位于 `index.html` 的问题部分和反馈部分之间：
 
@@ -6340,19 +6132,16 @@ function chooseQuestion() {
 return prompt("Enter your answer:");
 ```
 
-
-
-
 我们将用几行代码替换它，这些代码将关注表单的输入字段，并清除之前的任何答案。输入字段是表单中的第一个元素，因此它的索引为 0：
 
-```
+```javascript
 $form[0].value = "";
 $form[0].focus();
 ```
 
 我们需要等待玩家输入答案并提交表单后才检查答案。我们可以使用事件监听器来检查表单何时被提交，然后调用 `check()` 函数。将以下代码添加到 `play()` 函数的开头——它必须放在 `play()` 函数内部，以便它能够调用 `check()` 函数：
 
-```
+```javascript
 $form.addEventListener('submit', function(event) {
   event.preventDefault();
   check($form[0].value);
@@ -6364,7 +6153,7 @@ $form.addEventListener('submit', function(event) {
 
 接下来，我们将此代码添加到 `check()` 函数的末尾，以增加 `i` 的值，然后选择下一个问题：
 
-```
+```javascript
 i++;
 if(i === quiz.questions.length) {
   gameOver();
@@ -6375,7 +6164,7 @@ if(i === quiz.questions.length) {
 
 现在玩家可以使用表单而不是 `prompt` 对话框输入答案，但许多元素在不需要时也显示了。例如，当页面加载时会显示表单，尽管没有问题要回答，而且在游戏开始后，开始按钮仍然留在页面上。为了解决这个问题，我们可以创建几个辅助函数来根据需要隐藏和显示元素。将以下内容添加到 `scripts.js` 中，`play()` 函数之前：
 
-```
+```javascript
 function hide(element) {
   element.style.display = "none";
 }
@@ -6435,6 +6224,7 @@ html {
 让我们试着玩一下。打开 `index.htm`，它看起来应该和图 8.10 显示的截图相似。
 
 # 答忍者！
+
 得分：-1
 
 ![](img/3f13fb49bc2503b7b87740a26b7bda07_216_0.png)
@@ -6545,17 +6335,13 @@ window.prompt("请输入你的名字?");
 
 值得重申，这些方法会中断程序的执行。这意味着所有内容都将在调用处停止处理，直到用户点击 OK 或取消。如果程序需要同时处理其他事情，或者程序正在等待回调函数的调用，这就会产生问题。
 
-
-
-
-
 window 对象包含许多属性和方法，提供有关用户浏览器的信息。
 
 ## 是什么浏览器？
 
 window 对象拥有一个 navigator 对象，该对象包含了有关正在使用的浏览器和操作系统的信息。其 `userAgent` 属性会返回有关浏览器的信息。例如，如果我运行以下代码行，它将显示我正在 Linux 上使用 Firefox 31.0 版本浏览器：
 
-```
+```javascript
 window.navigator.userAgent
 "Mozilla/5.0 (X11; Linux i686; rv:31.0) Gecko/20100101"
 "Firefox/31.0"
@@ -6569,70 +6355,70 @@ window.navigator.userAgent
 
 `href` 属性以字符串形式返回完整的 URL：
 
-```
+```javascript
 window.location.href
 "https://learnable.com/topics/all/book?utm_source=sitepoint&utm_medium=link&utm_content=top-nav"
 ```
 
 该属性（以及本节中的大多数其他属性）是一个读/写属性，这意味着它可以通过赋值来更改。如果这样做，页面将使用新属性重新加载。例如，以下代码行将页面重定向到 SitePoint 的主页：
 
-```
+```javascript
 window.location.href = "http://www.sitepoint.com/"
 "http://www.sitepoint.com/"
 ```
 
 `protocol` 属性返回一个描述所用协议的字符串（如 http, https, pop2, ftp 等）。注意末尾有一个冒号（:）：
 
-```
+```javascript
 window.location.protocol
 "https://"
 ```
 
 `host` 属性返回一个描述当前 URL 域名和端口号的字符串（如果使用默认端口 80，通常会省略它）：
 
-```
+```javascript
 window.location.host
 "learnable.com"
 ```
 
 `hostname` 属性返回一个描述当前 URL 域名的字符串：
 
-```
+```javascript
 window.location.host
 "learnable.com"
 ```
 
 `port` 属性返回一个描述端口号的字符串。如果 URL 中没有显式说明端口，它将返回一个空字符串：
 
-```
+```javascript
 window.location.port
 ""
 ```
 
 `pathname` 属性返回域名之后路径的字符串：
 
-```
+```javascript
 window.location.pathname
 "/topics/all/book"
 ```
 
 `search` 属性返回一个以 "?" 开头并后跟查询参数的字符串。如果没有查询字符串参数，它将返回一个空字符串：
 
-```
+```javascript
 window.location.search
 "?utm_source=sitepoint&utm_medium=link&utm_content=top-nav"
 ```
 
 `hash` 属性返回一个以 "#" 开头并跟随片段标识符的字符串。如果没有片段标识符，它将返回一个空字符串：
 
-```
+```javascript
 window.location.hash
 ""
 ```
 
 `origin` 属性返回一个显示当前页面来源协议和域名的字符串。该属性是只读的，因此无法更改：
 
-```
+```javascript
 window.location.origin
 "https://learnable.com"
 ```
@@ -6640,10 +6426,11 @@ window.location.origin
 window.location 对象还拥有这些方法：
 
 - `window.location.reload()` 方法可以用于强制重新加载当前页面。如果给参数为 `true`，它将强制浏览器从服务器重新加载页面，而不是使用缓存页面。
-
 - `window.location.assign()` 方法可以用于从作为参数提供的 URL 加载另一个资源，例如：
 
+```javascript
 window.location.assign("http://www.sitepoint.com/")
+```
 
 - `window.location.replace()` 方法与 `window.location.assign()` 方法几乎相同，不同之处当前页面不会存储在会话历史中，因此用户将无法使用后退按钮返回。
 
@@ -6655,7 +6442,7 @@ window.location.assign("http://www.sitepoint.com/")
 
 `window.history.go()` 方法可以跳转到特定页面，其中 0 是当前页面：
 
-```
+```javascript
 window.history.go(1); // 向后移动 1 页
 window.history.go(0); // 重新加载当前页面
 window.history.go(-1); // 向后退 3 页
@@ -6667,25 +6454,25 @@ window.history.go(-1); // 向后退 3 页
 
 可以使用 `window.open()` 方法打开新窗口。它将页面的 URL 作为第一个参数，并将属性列表作为第二个参数。这也可以赋值给变量，以便稍后在代码中引用该窗口：
 
-```
+```javascript
 popup = window.open('https://sitepoint.com', 'SitePoint', 'width=400, height=400,resizable=yes');
 ```
 
 `window.close()` 方法可以关闭窗口：
 
-```
+```javascript
 popup.close();
 ```
 
 `window.move()` 方法可以移动窗口。它接受两个参数，即屏幕的 X 和 Y 坐标：
 
-```
+```javascript
 window.moveTo(0,0);
 ```
 
 `window.resizeTo()` 方法可以用于调整窗口大小。它接受两个指定窗口宽度高度的参数：
 
-```
+```javascript
 window.resizeTo(600,400);
 ```
 
@@ -6697,31 +6484,31 @@ window.resizeTo(600,400);
 
 window.screen 对象包含有关显示器屏幕的信息。你可以使用 `height` 和 `width` 属性以像素为单位获取屏幕的高度和宽度：
 
-```
+```javascript
 window.screen.height
 1024
 ```
 
-```
+```javascript
 window.screen.width
 1280
 ```
 
 可以使用 `availHeight` 和 `availWidth` 找到排除操作系统菜单后的屏幕高度和宽度：
 
-```
+```javascript
 window.screen.availWidth
 1280
 ```
 
-```
+```javascript
 window.screen.availHeight
 995
 ```
 
 `colorDepth` 属性可以固定用户显示器的颜色位深，尽管除了收集用户统计外没有其他用例：
 
-```
+```javascript
 window.screen.colorDepth
 24
 ```
@@ -6730,19 +6517,19 @@ window.screen.colorDepth
 
 每个 window 对象都包含一个 document 对象。该对象具有处理加载到窗口中的页面的属性和方法。在第 6 章中，我们涵盖了对象模型以及用于操作页面项目的属性和方法。document 对象还包含其他值得关注的方法：
 
-```
+```javascript
 document.write()
 ```
 
 `write()` 方法简单地向页面写入一段文本字符串。如果页面已经加载，它将完全替换当前文档：
 
-```
+```javascript
 document.write("Hello, world!");
 ```
 
 可以在字符串中包含 HTML，这这将成为 DOM 树的一部分。例如，以下代码段将创建一个 `<h1>` 标签节点和一个子文本节点：
 
-```
+```javascript
 document.write("<<h1>Hello, world!</h1>");
 ```
 
@@ -6756,11 +6543,7 @@ document.write("<<h1>Hello, world!</h1>");
 
 对 `document.write()` 的使用被强烈反对，因为在现实中它只能通过在 HTML 文档中混合 JavaScript 来实际使用。出于这个原因，忍者没有理由使用它，尽管你可能会在一些旧的（我希望是）网络教程中遇到它。
 
-
-
-
-
-## Cookies
+# Cookies
 
 Cookies 是保存在用户计算机本地的小型文件。它们由 Netscape 发明，用于解决 HTTP 作为一个无状态协议的问题。这意味着浏览器不会在一次请求和另一个请求之间记住任何内容。每当用户访问页面时，都不会记住有关之前访问的任何信息。Cookies 可以通过存储可以在请求之间检索的信息来规避这个问题。
 
@@ -6876,7 +6659,7 @@ document.cookie = "name=Batman; expires=Thu, 01 Jan 1970 00:00:00 GMT";
 
 JavaScript 的 Cookie 处理非常基础，而且可能很繁琐。许多开发者使用如 Cookies 这样的库。
 
-## 定时函数
+# 定时函数
 
 `window` 对象提供了一些用于调度函数执行的有用方法。
 
@@ -6921,7 +6704,7 @@ clearInterval(intervalId);
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-  <div id="square"></</div>
+  <div id="square"></div>
   <script src="js/scripts.js"></script>
 </body>
 </html>
@@ -6929,7 +6712,7 @@ clearInterval(intervalId);
 
 这在页面上放置了一个 ID 为 `square` 的 div。添加以下 `styles.css`：
 
-styles.css
+## styles.css
 
 ```css
 #square {
@@ -6955,8 +6738,7 @@ function rotate() {
 rotate();
 ```
 
-
-scripts.js (节)
+## scripts.js (节)
 
 ```javascript
 var square = document.getElementById("square");
@@ -7001,7 +6783,7 @@ window.cancelAnimationFrame(id);
 
 图 9.1 浏览器中的动画
 
-# ## 注意：CSS 动画
+## 注意：CSS 动画
 
 旋转动画示例演示了如何使用 JavaScript 在浏览器中执行动画。也可以通过 `styles.css` 中的以下样式规则使用纯 CSS 动画来实现：
 
@@ -7102,19 +6884,17 @@ window.clearInterval(interval);
 
 [2] 详情见此篇 SitePoint 文章。
 
-
-
-
-
 # 测试与调试的重要性
 
 JavaScript 在处理错误方面是一门相当宽容的语言；在 ECMAScript 3 版本之前，它根本没有实现异常。当程序出现错误时，它不会向用户报警，而是在后台静默失败，这种情况有时仍然存在。这起初看起来可能是个好主意，错误可能会导致无人察觉的意外或错误结果，或者在后台潜伏很长时间后才导致程序发生戏剧性的崩溃。静默失败会让错误难以发现且难以溯源。
 
+
+
 出于这个原因，忍者们（ninjas）应该确保他们编写的代码在开发阶段能够“大声”失败，以便能够快速识别并修复任何错误。在生产环境中，忍者应该尝试让代码优雅地失败（尽管不是完全静默——我们仍然需要知道错误的发生），从而尽可能不影响用户体验。这通过确保处理了异常并严格测试代码来实现。
 
-## 严格模式 (Strict Mode)
+## 严格模式
 
-ECMAScript 5 包含一种严格模式，它会产生比警告更多的异常，并禁止使用某些已弃的功能。例如，尝试给一个未声明的变量赋值将导致异常：
+ECMAScript 5 包含一种严格模式，它会产生比警告更多的异常，并禁止使用某些已弃用的功能。例如，尝试给一个未声明的变量赋值将导致异常：
 
 ```
 e = 2.7182;
@@ -7151,19 +6931,19 @@ function strictly(){
 }());
 ```
 
-在文件开头放置 "use strict" 将对文件中所有的 JavaScript 强制执行模式，如果你在使用他人的代码，无法保证他们是用严格模式编写的。这种技术将确保只有你的代码被强制使用严格模式。
+在文件开头放置 `"use strict"` 将对文件中所有的 JavaScript 强制执行模式，如果你在使用他人的代码，无法保证他们是用严格模式编写的。这种技术将确保只有你的代码被强制使用严格模式。
 
-## 检查工具 (Linting Tools)
+## 检查工具
 
-除了简单使用严格模式外，可以使用如 JS Lint、JS Hint、ES Lint 等**检查**工具来测试 JavaScript 代码的质量。它们的设计目的是突出所有粗率的编程实践或语法错误，并且如果没有遵循某些规范（例如代码缩进方式），它们会报错。它们可能非常严苛，并使用一些主观的编码规范，例如不使用 ++ 和 -- 增减运算符（在 JS Lint 中）。
+除了简单使用严格模式外，可以使用如 `JS Lint`、`JS Hint`、`ES Lint` 等检查工具来测试 JavaScript 代码的质量。它们的设计目的是突出所有粗率的编程实践或语法错误，并且如果没有遵循某些规范（例如代码缩进方式），它们会报错。它们可能非常严苛，并使用一些主观的编码规范，例如不使用 `++` 和 `--` 增减运算符（在 `JS Lint` 中）。
 
 通过检查测试并不保证你的代码是正确的，但它意味着代码将更具一致性，并且可能出现问题。这些工具产生的一些错误和警告可能难以理解，但在尝试解释它们时，出色的 [JS Lint Error Explanations] 网站是一个非常有用的资源。
 
-## 功能检测 (Feature Detection)
+## 功能检测
 
 JavaScript 编程可能是一个不断变化的目标，因为它使用的 API 处于不断的流动状态中。作为 HTML5 规范的一部分，一直有新的 API 被开发（这些见[第 14 章]）。浏览器厂商不断添加对这些新功能的支持，但它们并不总是能跟上。此外，某些浏览器会支持特定功能，而另一些则不会。你无法依赖用户拥有最新的浏览器。
 
-解决这个问题的一种方法是通过浏览器嗅探。这涉及到使用我们在上一章见过的 `window.navigator.userAgent` 属性返回的字符串来识别用户的浏览器。然后可以使用该器的器的方法。然而，这种方法是有问题的，且不推荐，因为用户代理字符串是不可靠的。此外，浏览器的发展速度使得很难跟上各种浏览器支持的功能。
+解决这个问题的一种方法是通过浏览器嗅探。这涉及到使用我们在上一章见过的 `window.navigator.userAgent` 属性返回的字符串来识别用户的浏览器。然后可以使用该浏览器的方法。然而，这种方法是有问题的，且不推荐，因为用户代理字符串是不可靠的。此外，浏览器的发展速度使得很难跟上各种浏览器支持的功能。
 
 确定浏览器对功能支持的更好方法是使用功能检测。这是通过 `if` 语句在尝试实际调用方法之前检查对象或方法是否存在的。例如，假设我们要使用闪酷的 unicorn API，我们将任何方法调用封装在以下 `if` 块中：
 
@@ -7178,7 +6958,7 @@ if (window.unicorn)
 
 调试是寻找代码中出现 bug 并处理它们的过程。在很多情况下，错误发生的地方并不总是它的起源，因此你需要运行程序以查看其执行的不同阶段发生了什么。在这样做时，创建所谓的“断点”可能会有用，断点会停止代码运行，并允许我们查看程序中该点不同变量的值。在浏览器中调试 JavaScript 代码有多种选项。
 
-# 可靠的 Alert (The Trusty Alert)
+### 可靠的 Alert
 
 调试的基本形式是使用 `alert()` 方法在代码的某些点显示对话框。由于 `alert()` 会停止程序运行直到点击 OK，它允许我们有效地在代码中放置断点，让我们检查该点变量的值，看它们是否符合我们的预期。查看下面的示例，它检查人的年龄是否合适：
 
@@ -7198,17 +6978,16 @@ function amOldEnough(age){
 
 函数开头的 `alert` 方法允许我们看到该点 `age` 变量的值；一旦点击 OK，我们就可以检查返回的是正确的字符串。过去使用 alert 进行调试是唯一的选择，但自那时以后 JavaScript 开发取得了进步，现在不再建议用于调试。
 
-# 使用控制台 (Using the Console)
+### 使用控制台
 
 大多数现代浏览器都有一个 `console` 对象，它提供了许多用于记录信息的方法，它不是官方 ECMAScript 规范的一部分，但在所有主流浏览器中都得到了良好支持。
 
 - `console.log()` 方法可以用于记录程序不同阶段变量的值，尽管它并不会实际停止程序的执行。
-
 - `console.trace()` 方法将在控制台中记录一个交互式的堆栈跟踪。这将显示在代码运行期间发生异常之前调用的函数。
 
 这篇 SitePoint 文章还列出了 `console` 对象一些有用但鲜为人知的方法。
 
-# 调试工具
+### 调试工具
 
 大多数现代浏览器还拥有调试工具，允许你在代码中设置断点，这些断点会在某些点暂停。你可以看到这些点的所有变量的值并对其进行修改。这在尝试追踪 bug 时非常有用。以下是每个主要浏览器的调试器文档链接：
 
@@ -7217,10 +6996,7 @@ function amOldEnough(age){
 - Chrome
 - Safari
 
-## 错误对象 (Error Objects)
-
-
-
+## 错误对象
 
 当发生异常时，宿主环境可以创建一个错误对象，也可以在代码中使用构造函数创建它，如下所示：
 
@@ -7236,12 +7012,12 @@ error = new Error("Oops, something went wrong");
 
 还有六种用于特定错误的错误对象：
 
-- Eval 不在 ECMAScript 规范中使用，仅保留用于向后兼容。它曾被用于识别使用全局 `eval()` 函数时发生的错误。
-- RangeError：当数字超出允许的数值范围时会抛出该错误。
-- ReferenceError：当引用不存在的项时抛出该错误。例如，在控制台中调用函数 `unicorn()`（假设你没有定义一个名为 `unicorn()` 的函数）。
-- SyntaxError：当代码语法出现错误时抛出该错误。
-- TypeError：当使用的值类型出现错误时抛出该错误；例如，在需要数字的地方使用了字符串。
-- URIError：当编码或解码 URI 出现问题时抛出该错误。
+- `EvalError`：不在 ECMAScript 规范中使用，仅保留用于向后兼容。它曾被用于识别使用全局 `eval()` 函数时发生的错误。
+- `RangeError`：当数字超出允许的数值范围时会抛出该错误。
+- `ReferenceError`：当引用不存在的项时抛出该错误。例如，在控制台中调用函数 `unicorn()`（假设你没有定义一个名为 `unicorn()` 的函数）。
+- `SyntaxError`：当代码语法出现错误时抛出该错误。
+- `TypeError`：当使用的值类型出现错误时抛出该错误；例如，在需要数字的地方使用了字符串。
+- `URIError`：当编码或解码 URI 出现问题时抛出该错误。
 
 这些错误函数也可以作为构造函数来创建自定义错误对象：
 
@@ -7299,12 +7075,9 @@ squareRoot(-1); // "You can't square root negative numbers"
 
 通过**捕获（catching）**错误，可以优雅地处理异常。任何错误都可以对用户隐藏，但仍然可以被识别。然后我们可以恰当地处理该错误——甚至可以忽略它——并保持程序运行。
 
-## try, catch, and finally
+### try, catch, and finally
 
 如果我们怀疑某段代码会导致异常，可以将其封装在 `try` 块中。这会正常运行块中的代码，但如果发生异常，它将传递抛出的错误对象。
-
-
-
 
 ![](img/3f13fb49bc2503b7b87740a26b7bda07_248_0.png)
 
@@ -7345,21 +7118,33 @@ numberSpec.js (不完整)
 # 1 个通过, 1 个失败
 
 ReferenceError: factorsOf() is not defined in file://home/daz/Dropbox/JSNINJA1/5%20Code/Ch2010/numberSpec.js:4
+
 at AttemptSync://home/daz/Dropbox/JSNINJA1/5%20Code/Ch2010/numberTest/lib/jasmine-2
+
 QueueRunner.prototype.runfile://home/daz/Dropbox/JSNINJA1/5%20Code/Ch2010/numberTest
+
 QueueRunner.prototype.executefile://home/daz/Dropbox/JSNINJA1/5%20Code/Ch2010/numberTest/lib
+
 Env/queueRunnerFactory@home/daz/Dropbox/JSNINJA1/5%20Code/Ch2010/numberTest/lib
+
 Spec.prototype.executefile://home/daz/Dropbox/JSNINJA1/5%20Code/Ch2010/numberTest/lib
+
 wrapChildAsync@://home/daz/Dropbox/JSNINJA1/5%20Code/Ch2010/numberTest/lib/jasmine
+
 at AttemptSync://home/daz/Dropbox/JSNINJA1/5%20Code/Ch2010/numberTest/lib/jasmine-2
+
 QueueRunner.prototype.runfile://home/daz/Dropbox/JSNINJA1/5%20Code/Ch2010/numberTest
+
 QueueRunner.prototype.executefile://home/daz/Dropbox/JSNINJA1/5%20Code/Ch2010/numberTest/lib
+
 Env/queueRunnerFactory@home/daz/Dropbox/JSNINJA1/5%20Code/Ch2010/numberTest/lib
+
 Suite.prototype.executefile://home/daz/Dropbox/JSNINJA1/5%20Code/Ch2010/numberTest/lib
 
 图 10.2. 我们的第一个测试失败了
 
 这表明我们的测试失败了。好吧，你预期什么？我们还没有写任何代码呢！
+
 让我们在 `numberCruncher.js` 文件中尝试编写 `factorsOf()` 函数吧：
 
 src/numberCruncher.js (不完整)
@@ -7390,7 +7175,7 @@ return factors;
 
 图 10.3. 我们的测试仍然失败
 
-噢天哪，它失败了。这次的失败信息更具体一些。它说预数组是 `[1,2,3,4,6,12]`，但收到的数组是 `[1,2,3,4,6]`——最后一个数字 12 丢失了。查看我们的代码，这是因为循环在 `i < n` 时继续。我们需要让 `i` 一直运行并包含 `n`，这需要对我们的代码进行微小的调整：
+噢天哪，它失败了。这次的失败信息更具体一些。它说预期数组是 `[1,2,3,4,6,12]`，但收到的数组是 `[1,2,3,4,6]`——最后一个数字 12 丢失了。查看我们的代码，这是因为循环在 `i < n` 时继续。我们需要让 `i` 一直运行并包含 `n`，这需要对我们的代码进行微小的调整：
 
 ```javascript
 function factorsOf(n) {
@@ -7464,14 +7249,9 @@ describe("The isPrime() function", function() {
   });
 
 });
-
 ```
 
 如果你刷新 `SpecRunner.html` 页面，你将收到一条消息，告诉我们我们所有的规格都通过了。
-
-
-
-
 
 ![](img/3f13fb49bc2503b7b87740a26b7bda07_254_0.png)
 
@@ -7632,9 +7412,7 @@ src/numberCruncher.js (节选)
 
 图 10.8. 顺利通过
 
-
-
-# 总结
+## 总结
 
 在本章中，我们学习了以下内容：
 
@@ -7651,10 +7429,6 @@ src/numberCruncher.js (节选)
 
 在下一章中，我们将探讨 JavaScript 中函数式编程的概念。
 
-
-
-
-
 # 第 11 章
 
 ## 函数式 JavaScript
@@ -7665,7 +7439,7 @@ src/numberCruncher.js (节选)
 
 在本章中，我们将涵盖以下主题：
 
-- *函数式编程简介*
+- 函数式编程简介
 - 函数属性和方法
 - 返回函数的函数
 - 回调函数
@@ -7698,7 +7472,7 @@ random(10,20);
 
 这是一个抽象的示例，因为它将所有逻辑清晰地封装在函数内部。
 
-函数不应该修改它们处理的底层数据——它们应该返回一个不同的值而不是而不是值本身。这被称为非破坏性数据转换。例如，以下函数将返回反转后的字符串：
+函数不应该修改它们处理的底层数据——它们应该返回一个不同的值而不是修改值本身。这被称为非破坏性数据转换。例如，以下函数将返回反转后的字符串：
 
 ```
 function reverse(string) {
@@ -7724,7 +7498,7 @@ message; // 没有改变
 << "Hello"
 ```
 
-函数尽可能地只执行单一操作。它们随后可以被用作构建模块，创建代表更复杂抽象的其他函数，并进一步扩展功能。通过只执行单一任务，函数变得更加灵活，因为在许多情况下都可以作为构建模块使用，而不是与特定的操作紧密耦合。它还让代码更具模块化，因为每个函数都可以根据需要进行改进或替换，而无需干涉任何其他函数。这使得能够一个将一个函数替换为另一个，以改进其行为、对其进行细微修改，甚至是完全改变它。
+函数尽可能地只执行单一操作。它们随后可以被用作构建模块，创建代表更复杂抽象的其他函数，并进一步扩展功能。通过只执行单一任务，函数变得更加灵活，因为在许多情况下都可以作为构建模块使用，而不是与特定的操作紧密耦合。它还让代码更具模块化，因为每个函数都可以根据需要进行改进或替换，而无需干涉任何其他函数。这使得能够将一个函数替换为另一个，以改进其行为、对其进行细微修改，甚至是完全改变它。
 
 作为一个示例，我们可以使用在第 4 章中创建的 `square()` 函数：
 
@@ -7775,8 +7549,6 @@ sum([1,2,3], square); // 返回 1*2 + 2*2 + 3*2
 << 14
 ```
 
-
-
 ```
 square.apply(null, [4])
 << 16
@@ -7785,6 +7557,32 @@ square.apply(null, [4])
 如果你用作参数的数据已经是数组的形式，那么这就会非常有用。
 
 这两种方法允许编写通用函数，这些函数不会受限于作为特定对象的方法而绑定到该对象，从而在函数的使用上提供了更大的灵活性。
+
+## 函数属性和方法
+
+函数有一个内置属性 `length`，它返回函数期望的参数数量：
+
+```
+function add(a,b,c) {
+  return a + b + c;
+}
+add.length;
+<< 3
+```
+
+函数还有两个内置方法：`call()` 和 `apply()`。它们都允许你将函数应用到不同的对象，并提供参数。区别在于 `call()` 接受逗号分隔的参数列表，而 `apply()` 接受一个参数数组。
+
+```
+function add(a,b,c) {
+  return a + b + c;
+}
+add.call(null, 1, 2, 3);
+<< 6
+add.apply(null, [1, 2, 3]);
+<< 6
+```
+
+如果你用作参数的数据已经是数组的形式，那么这就会非常有用。
 
 ## 自定义属性
 
@@ -7799,106 +7597,6 @@ square.description = "Squares a number that is provided as an argument"
 
 如果一个函数的计算返回值需要一些时间，我们可以将结果保存在缓存中。如果以后再次使用相同的参数，我们可以从缓存中返回值，而不需要重新计算结果。例如，假设平方一个数字是一个耗时的计算操作。我们可以重写 `square()` 函数，将每个结果保存在一个作为函数属性的缓存对象中：
 
-```
-function square(x){
-  square.cache = {}; // 如果缓存不存在，则初始化为一个空对象
-  if (!square.cache[x]) { // 检查此值是否已经保存在缓存中
-    square.cache[x] = x*x; // 如果没有，则计算该值并存在缓存中
-  }
-  return square.cache[x]
-}
-```
-
-如果我们尝试调用几次函数，我们可以看到缓存对象存储了结果：
-
-```
-square(3);
-<< 9
-```
-
-```
-square(-11);
-<< 121
-```
-
-```
-square.cache;
-<< ("3": 9, "-11": 121);
-```
-
-## 警告：谨慎自定义
-
-向内置对象添加你自定义的属性是有风险的。忍者开发者应该小心，不要覆盖默认属性或方法。
-
-## 回调函数
-
-我们在第 4 章就介绍过回调函数。你会记得它们是作为参数传递给其他函数的函数。
-
-## 事件驱动的异步编程
-
-回调函数促进了事件驱动的异步编程。JavaScript 是**单线程环境**，这意味着一次只会有一段代码被处理。这看起来像是一个限制，但可以使用非阻塞技术来确保程序继续运行。与其等待事件发生，不如在事件发生时创建一个回调。这意味着代码能够无序运行，或者说*异步地*运行。事件可以是 DOM 事件，例如我们在第 7 章中看到的 `click` 和 `keypress`，但它们也可以是某些事件，例如等待文件加载、等待来自数据库或其他网站的数据，或者等待程序完成一个复杂的操作。通过使用回调，我们确保事件不会阻塞程序其他部分的执行。一旦事件发生，回调将在返回程序其余部分之前被调用。
-
-这里有一个名为 `wait()` 的函数示例，它接受一个回调。为了模拟一个需要一些时间发生的操作，我们可以使用 `setTimeout()` 函数在指定的秒数后调用回调：
-
-```javascript
-function wait(message, callback, seconds) {
-  setTimeout(callback, seconds * 1000);
-  console.log(message);
-}
-```
-
-现在让我们创建一个供之使用的的回调函数：
-
-```javascript
-function selfDestruct() {
-  console.log("BOOOM!");
-}
-```
-
-如果我们调用 `wait()` 函数然后向控制台打印消息，就可以看到 JavaScript 是如何异步工作的：
-
-```javascript
-wait("This tape will self-destruct in five seconds ... ",
-selfDestruct, 5); // should I accept this mission or not ... ?);
-console.log("Hmm, should I accept this mission or not ...?");
-```
-
-```
-<< "This tape will self-destruct in five seconds ..."
-<< "Hmm, should I accept this mission or not ... ? "
-<< "BOOOM!"
-```
-
-当 (wait) 函数被调用时，它内部的任何代码都会执行，因此显示消息 "This tape will destroy in five seconds ..."。控制权交还给程序，并执行程序的下一行，显示了 "Hmm, should I accept this mission or not ... ?"。五秒后，回调被调用。这说明 `setTimeout()` 函数并没有阻止程序其余部分的运行。
-
-记住，JavaScript 是单线程的，所以一次只能发生一个任务。如果一个事件处理时间很短，它可能仍然需要等待程序其他部分执行完回调后才会发生。例如，让我们看看将超时设置为零秒会发生什么：
-
-```javascript
-wait("This tape will self-destruct immediately ... ", selfDestruct, 0);
-console.log("Hmm, should I accept this mission or not ...?");
-```
-
-```
-<< "This tape will self-destruct immediately ..."
-<< "Hmm, should I accept this mission or not ... ? "
-<< "BOOOM!"
-```
-
-注意，尽管等待时间设置为零秒，(wait) 函数中的回调仍然被调用了。我们原以为回调会被立即调用，但回调在被调用之前必须等待当前的执行栈完成。在这种情况下，尽管等待时间设置为零秒，(wait) 函数中的回调仍然被调用……（注：原文此处存在大量重复段落，翻译已按要求去重并保持逻辑）。
-
-## 自定义属性
-
-没有什么可以阻止你向函数添加你自己的属性。例如，你可以为函数添加一个 `description` 属性，来描述它的功能：
-
-```
-square.description = "Squares a number that is provided as an argument"
-<< "Squares a number that is provided as an argument"
-```
-
-这个功能的用处是它提供了返回缓存，或者说**记忆化**。
-
-如果一个函数的计算返回值需要一些时间，我们可以将结果保存在缓存中。如果以后再次使用相同的参数，我们可以从缓存中返回值，而不需要重新计算结果。例如，假设平方一个数字是一个耗时的计算操作。我们可以重写 `square()` 函数，将每个结果保存在一个作为函数属性的缓存对象中：
-
 ```javascript
 function square(x){
   square.cache = {}; // 如果缓存不存在，则初始化为一个空对象
@@ -7934,7 +7632,7 @@ square.cache;
 
 我们在第 4 章就介绍过回调函数。你会记得它们是作为参数传递给其他函数的函数。
 
- 事件驱动的异步编程
+### 事件驱动的异步编程
 
 回调函数促进了事件驱动的异步编程。JavaScript 是**单线程环境**，这意味着一次只会有一段代码被处理。这看起来像是一个限制，但可以使用非阻塞技术来确保程序继续运行。与其等待事件发生，不如在事件发生时创建一个回调。这意味着代码能够无序运行，或者说*异步地*运行。事件可以是 DOM 事件，例如我们在第 7 章中看到的 `click` 和 `keypress`，但它们也可以是某些事件，例如等待文件加载、等待来自数据库或其他网站的数据，或者等待程序完成一个复杂的操作。通过使用回调，我们确保事件不会阻塞程序其他部分的执行。一旦事件发生，回调将在返回程序其余部分之前被调用。
 
@@ -7947,7 +7645,7 @@ function wait(message, callback, seconds) {
 }
 ```
 
-现在让我们创建一个供之使用的 回调函数：
+现在让我们创建一个供之使用的回调函数：
 
 ```javascript
 function selfDestruct() {
@@ -7969,7 +7667,7 @@ console.log("Hmm, should I accept this mission or not ...?");
 << "BOOOM!"
 ```
 
-当 (wait) 函数被调用时，它内部的任何代码都会执行，因此显示消息 "This tape will destroy in five seconds ..."。控制权交还给程序，并执行程序的下一行，显示了 "Hmm, should I accept this mission or not ... ?"。五秒后，回调被调用。这说明 `setTimeout()` 函数并没有阻止程序其余部分的运行。
+当 `wait()` 函数被调用时，它内部的任何代码都会执行，因此显示消息 "This tape will destroy in five seconds ..."。控制权交还给程序，并执行程序的下一行，显示了 "Hmm, should I accept this mission or not ... ?"。五秒后，回调被调用。这说明 `setTimeout()` 函数并没有阻止程序其余部分的运行。
 
 记住，JavaScript 是单线程的，所以一次只能发生一个任务。如果一个事件处理时间很短，它可能仍然需要等待程序其他部分执行完回调后才会发生。例如，让我们看看将超时设置为零秒会发生什么：
 
@@ -7984,28 +7682,47 @@ console.log("Hmm, should I accept this mission or not ...?");
 << "BOOOM!"
 ```
 
-注意，尽管等待时间设置为零秒，(wait) 函数中的回调仍然被调用了。我们原以为回调会被立即调用，但回调在被调用之前必须等待当前的执行栈完成……（注：原文此处存在大量重复段落，翻译已按要求去重并保持逻辑）。
+注意，尽管等待时间设置为零秒，`wait()` 函数中的回调仍然被调用了。我们原以为回调会被立即调用，但回调在被调用之前必须等待当前的执行栈完成。
 
-## 自定义属性
+## 返回函数的函数
 
-没有什么可以阻止你向函数添加你自己的属性。例如，你可以为函数添加一个 `description` 属性，来描述它的功能：
+函数可以返回另一个函数。这允许创建工厂函数，根据提供的参数生成特定的函数。例如，考虑通用的 `multiplier()` 函数：
 
 ```
-square.description = "Squares a number that is provided as an argument"
-<< "Squares a number that is provided as an argument"
+function multiplier(x){
+  return function(y){
+    return x*y;
+  }
+}
 ```
 
+此函数返回另一个函数，该函数在闭包中捕获参数 `x`，然后该参数在返回的函数中使用。它可以用于创建另一个函数：
 
+```
+doubler = multiplier(2);
+```
 
+这创建了一个名为 `doubler()` 的新函数，它接受一个参数，该参数将乘以传递给 `multiplier()` 函数的参数——在本例中为 2——从而创建一个将其参数乘以 2 的函数：
 
+```
+doubler(10);
+<< 20
+```
 
-ninja = temple();
-<< "Ninja Skills Katana, Bo, Shuriken, Yuri Cho Ho, Shinobi-Iri,
-"Henso-Jutsu"
+这使得 `multiplier()` 函数成为一个通用抽象，可以用于构建更具体的抽象，例如 `tripler()` 函数：
 
-ninja 变量代表一个闭包，因为它访问在 temple() 函数内部创建的变量。
+```
+tripler = multiplier(3);
 
-## 基础闭包示例
+tripler(10);
+<< 30
+```
+
+## 闭包
+
+闭包是一个让变量在原始定义函数的作用域之外保持可用的过程。当一个函数在另一个函数内部定义时，内部函数将保持对外部函数作用域中变量的访问，即使外部函数已经执行完毕。这是通过内部函数捕获外部函数的变量来实现的。
+
+### 基础闭包示例
 
 简单的闭包返回在函数作用域内创建的变量的值，使其在函数外部可用：
 
@@ -8016,7 +7733,7 @@ function closure() {
 }
 ```
 
-`inside` 变量的值在 closure() 函数外部是不可用的：
+`inside` 变量的值在 `closure()` 函数外部是不可用的：
 
 ```
 inside;
@@ -8030,7 +7747,7 @@ outside = closure();
 << "I was created inside the function"
 ```
 
-## 返回函数
+### 返回函数
 
 函数可以通过返回一个函数而不是单一值来形成一个闭包，从而保持对原始函数作用域内创建的所有变量的访问：
 
@@ -8052,10 +7769,12 @@ toFahrenheit = closure();
 
 然后可以使用它自己的参数来调用这个新函数，但原始函数中 `a` 和 `b` 的值仍然被记住：
 
+```
 toFahrenheit(30);
 << 86
+```
 
-## 计数器示例
+### 计数器示例
 
 闭包不仅维护来自另一个函数的变量值；该值随后还可以被更改。它可以用于创建一个 `counter()` 函数，该函数使用变量 `i` 开始计数。它返回一个函数，该函数使用闭包捕获 `i` 的值，每次调用新函数时就可以对其进行递增。在原始函数中定义的变量 `i` 的引用通过闭包在新函数中得到了维护：
 
@@ -8076,7 +7795,7 @@ count();
 << 2
 ```
 
-## 函数式示例
+### 函数式示例
 
 同样，也可以为函数提供的参数创建闭包。这允许我们创建一个通用函数，该函数根据其参数返回更具体的函数。例如，考虑通用的 `multiplier()` 函数：
 
@@ -8090,20 +7809,27 @@ function multiplier(x){
 
 此函数返回另一个函数，该函数在闭包中捕获参数 `x`，然后该参数在返回的函数中使用。它可以用于创建另一个函数：
 
+```
 doubler = multiplier(2);
+```
 
 这创建了一个名为 `doubler()` 的新函数，它接受一个参数，该参数将乘以传递给 `multiplier()` 函数的参数——在本例中为 2——从而创建一个将其参数乘以 2 的函数：
 
+```
 doubler(10);
 << 20
+```
 
 这使得 `multiplier()` 函数成为一个通用抽象，可以用于构建更具体的抽象，例如 `tripler()` 函数：
 
+```
 tripler = multiplier(3);
+
 tripler(10);
 << 30
+```
 
-# 警告：arguments 对象无法在闭包中捕获
+### 警告：arguments 对象无法在闭包中捕获
 
 `arguments` 对象无法被捕获在闭包并在函数中返回，因为它在嵌套函数内部是不可用的。因此，以下代码将失败：
 
@@ -8130,7 +7856,7 @@ function multiplier(){
 
 在 Learnable 上查看关于闭包的有用视频。
 
-# 立即执行函数表达式
+## 立即执行函数表达式
 
 立即执行函数表达式（或 IIFE，读作“iffy”）是一种函数，正如其名所示，它在定义后就会立即被调用。这通过在函数定义末尾放置括号可以轻松实现（记住我们使用括号来调用函数）。该函数还必须变成一个表达式，这通过将整个声明放在括号内来实现，如示例所示：
 
@@ -8147,18 +7873,18 @@ function multiplier(){
 
 IIFE 是执行任务的一种有用方法，同时可以将任何变量封装在函数的作用域内。这意味着全局命名空间不会被许多变量名污染。
 
-## 临时变量
+### 临时变量
 
 一旦变量在作用域中声明，就没有方法将其移除。如果一个变量只是临时的，如果它在代码后续部分仍然可用，可能会引起混惑。更糟糕的是，变量名可能会与其他代码（例如外部 JavaScript 库）冲突，导致错误。将任何使用临时变量的代码放在 IIFE 内部可以确保它只在 IIFE 调用时可用，之后它就会消失。以下示例使用 IIFE 交换两个全局变量 `a` 和 `b` 的值。此 IIFE 需要使用一个名为 `temp` 的临时变量，它只在 IIFE 调用时存在：
 
 ```
 a = 1;
 b = 2;
-function() {
+(function() {
   var temp = a;
   a = b;
   b = temp;
-}();
+}());
 ```
 
 ```
@@ -8176,10 +7902,9 @@ console.log(temp);
 << Error: "temp is not defined"
 ```
 
-# 模拟块作用域
+### 模拟块作用域
 
-在大多数其他语言中，变量在块内部具有作用域——这就是所谓的块作用域。但在 JavaScript 中并没有发生这种情况；变量的作用域仅限于
-函数。这意味着当在 `if` 块或 `for` 循环内部创建临时变量时，该变量在块外部仍然可用：
+在大多数其他语言中，变量在块内部具有作用域——这就是所谓的块作用域。但在 JavaScript 中并没有发生这种情况；变量的作用域仅限于函数。这意味着当在 `if` 块或 `for` 循环内部创建临时变量时，该变量在块外部仍然可用：
 
 ```
 var list = [1,2,3];
@@ -8192,60 +7917,61 @@ console.log(i); // i 在 for 块外部可用
 << 3
 ```
 
-## 注意：使用 let 进行作用域控制
+#### 注意：使用 let 进行作用域控制
 
 ECMAScript 的下一个版本在使用 `let` 代替 `var` 时支持块作用域。这在许多浏览器中已经生效。尝试以下示例查看是否有效：
 
 ```
 var list = [1,2,3];
-for (var i = 0, max = list.length; i < max; i++) {
+for (let i = 0, max = list.length; i < max; i++) {
 console.log(list[i]);
 }
-console.log(i); // i 在 for 块外部可用
+console.log(i); // i 在 for 块外部不可用
 << 1
 << 2
 << 3
+<< Error: "i is not defined"
 ```
 
-## 初始化代码
+### 初始化代码
 
 IIFE 可用于设置任何不再需要的初始化代码。由于代码只运行一次，因此不需要创建命名函数。IIFE 将被调用一次，并可以在页面加载时设置任何变量和事件处理器。以下示例向控制台打印欢迎消息，并消除组合消息时使用的所有临时变量：
 
 ```
-function() {
+(function() {
   var name = "Bart"; // 实际上这可能从 cookie 中获取
   var days = ["Sunday","Monday","Tuesday","Wednesday","Thursday",
   "Friday","Saturday"];
   date = new Date();
   today = days[date.getDay()] + " " + name + " + Today is " + today;
   console.log("Welcome back " + today);
-}
+}());
 // << "Welcome back Bart. Today is Sunday
 ```
 
-## 严格模式的安全
+### 严格模式的安全
 
-在最后一章中我们讨论了严格模式以避免任何粗糙的编码习惯。简单在文件开头放置 "use strict" 的问题之一是它对文件中的所有 JavaScript 强制严格模式，如果你在使用他人的代码，无法保证他们使用了严格模式。
+在最后一章中我们讨论了严格模式以避免任何粗糙的编码习惯。简单在文件开头放置 `"use strict"` 的问题之一是它对文件中的所有 JavaScript 强制严格模式，如果你在使用他人的代码，无法保证他们使用了严格模式。
 
 为了避免这种情况，使用严格模式推荐的方法是将你所有的代码放在 IIFE 内部，如下所示：
 
 ```
-function() {
+(function() {
   "use strict";
 
-// 你所有的代码将进入此函数内部
+  // 你所有的代码将进入此函数内部
 
 }());
 ```
 
 这确保了只有 IIFE 内部的你的代码被强制使用严格模式。
 
-# 创建自包含模块
+## 创建自包含模块
 
 IIFE 可用于将代码块封装在其自己的私有作用域内。这有效地创建了一个自包含的模块，它不会与程序的任何其他部分干扰。这样使用 IIFE 意味着可以以模块化的方式添加或移除代码。示例展示了两个模块 A 和 B，它们能够独立运行：
 
 ```
-function() {
+(function() {
   // 模块 A
   var name = "Module A";
   console.log("Hello from " + name);
@@ -8253,21 +7979,14 @@ function() {
 ```
 
 ```
-function() {
+(function() {
   // 模块 B
+  var name = "Module B";
+  console.log("Hello from " + name);
+}());
 ```
 
-
-
-
-
-```javascript
-var name = "Module B";
-console.log("Hello from " + name);
-{}}();
 ```
-
-```javascript
 "Hello from Module A"
 "Hello from Module B"
 ```
@@ -8330,8 +8049,11 @@ beachParty(); // 此时 party() 函数已经过重定义，尽管它没有被显
 "Wow this is amazing!",
 
 ```javascript
+
 party();
+
 "Been there, got the T-Shirt",
+
 ```
 
 beachParty(); // 但这个函数还没有被重定义
@@ -8375,11 +8097,11 @@ party.music; // 函数已重定义，所以属性不存在
 ```javascript
 function ride() {
   if (window.unicorn) {
-    ridePony = function() {
+    ride = function() {
       return "Riding on a unicorn is great fun"
     }
   } else {
-    ridePony = function() {
+    ride = function() {
       return "Riding on a standard pony is only okay";
     }
   }
@@ -8438,7 +8160,9 @@ function collatz(n, sequence) {
 }
 ```
 
+```
 collatz(18); "Sequence took 21 steps. It was 18,9,28,14,7,22,11,34,17,52,26,13,40,20,10,5,6,8,4,2,1"
+```
 
 ## 柯里化
 
@@ -8458,10 +8182,7 @@ function multiplier(x,y) {
 }
 ```
 
-该函数使用闭包在返回的新函数内部捕获第一个变量 `x`。这个新函数可以用于提供第二个参数。如果两个
-
-
-提供了参数后，函数简单地将它们相乘：
+该函数使用闭包在返回的新函数内部捕获第一个变量 `x`。这个新函数可以用于提供第二个参数。如果两个提供了参数后，函数简单地将它们相乘：
 
 ```
 multiplier(3,5);
@@ -8518,7 +8239,7 @@ calcTax(400);
 
 ## 通用柯化函数
 
-在在上一个例子中，我们硬编码了 `multiplier()` 函数以便其能够被柯化。可以使用一个 `curry()` 函数来接收任何函数并允许它进行部分应用（partial applied）。`curry` 函数如下：
+在上一个例子中，我们硬编码了 `multiplier()` 函数以便其能够被柯化。可以使用一个 `curry()` 函数来接收任何函数并允许它进行部分应用（partial applied）。`curry` 函数如下：
 
 ```
 function curry(func) {
@@ -8661,9 +8382,6 @@ function ask(question) {
 }
 ```
 
-
-
-
 由于我们不再使用变量 `i` 来跟踪当前提问，我们也可以从 `check()` 函数中删除这一行：
 
 ```
@@ -8683,7 +8401,7 @@ i++;
 
 `random()` 函数允许我们提供可供选择的选项，由于不需要任何输入，使得游戏变得变得容易得多。这意味着每个游戏产生问题的顺序都不同（尽管考虑到我们只有三个问题，这个范围是有限的！）
 
-# 总结
+## 总结
 
 在本章中，我们学习了以下内容：
 
@@ -8702,7 +8420,7 @@ i++;
 
 > [4] 斜边是直角三角形最长的边。它的长度可以使用公式 a² + b²= c² 求，这通常被称为勾哥拉斯定理。
 
-# 第12 章
+# 第 12 章
 
 ## JavaScript 中的面向对象编程
 
@@ -8725,29 +8443,31 @@ i++;
 
 ## 面向对象编程
 
-面向对象编程通常用于对现实世界中的对象建模。OOP 有三个主要概念：封装、多态和继承。我将使用我的榨汁机来说说明这些概念如何应用于编程环境中，因为榨汁机可以被视为一个对象。它是一个很棒的机器，每天早上为我制作果汁。榨汁机具有速度和容量等属性，还有它可以执行的方法或动作，如榨汁、开启和关闭。
+面向对象编程通常用于对现实世界中的对象建模。OOP 有三个主要概念：封装、多态和继承。我将使用我的榨汁机来说明这些概念如何应用于编程环境中，因为榨汁机可以被视为一个对象。它是一个很棒的机器，每天早上为我制作果汁。榨汁机具有速度和容量等属性，还有它可以执行的方法或动作，如榨汁、开启和关闭。
 
-## 封装
+### 封装
 
 当我使用榨汁机时，我将水果放入机器中，按下“开启”按钮并取出榨汁机。我完全不知道它是如何运作的——只知道它发出了很大的噪音！这演示了封装的概念：内部工作原理被隐藏在对象内部，只向最终用户暴露核心功能，如“开启”按钮。在 OOP 中，这涉及将所有编程逻辑保留在对象内部，并提供方法来实现这些功能，而无需让外部世界知道它是如何实现的。
 
-## 多态
+### 多态
 
 我的榨汁机与厨房中的其他电器使用相同的插座。我可以把各种类型的水果放进去，它仍然能为它们榨汁。这两个例子演示了多态的概念：同一个过程可以用于不同的对象。在 OOP 中，这意味着不同的对象可以有相同的方法，但它们以自己的方式实现它。
 
-## 继承
+### 继承
+
+
 
 我非常想要我榨汁机的新型号，因为它可以处理更多类型的水果，而且速度更快。尽管它有这些额外功能，但我确定它使用了和我榨汁机许多相同的零件。这演示了继承的概念：获取一个对象的特性并添加一些新特性。在 OOP 中，这意味着我们可以取一个已经存在的对象并继承它所有的属性和方法。然后我们可以通过添加新的属性和方法来改进它的功能。
 
 ## 类
 
-许多面向对象的语言（如 Java 和 Ruby）被称为经典语言。这是因为它们使用“类”（classes）的概念来定义对象的蓝图。对象作为该类的实例被创建，并继承类所有的属性和方法。JavaScript 不使用类（尽管 ECMAScript 将支持它们），但它确实使用原型（prototypes）。在 JavaScript 中，对象作为该类的实例被创建，并继承原型中所有的属性和方法。
+许多面向对象的语言（如 `Java` 和 `Ruby`）被称为经典语言。这是因为它们使用“类”（`classes`）的概念来定义对象的蓝图。对象作为该类的实例被创建，并继承类所有的属性和方法。`JavaScript` 不使用类（尽管 `ECMAScript` 将支持它们），但它确实使用原型（`prototypes`）。在 `JavaScript` 中，对象作为该类的实例被创建，并继承原型中所有的属性和方法。
 
 ## 构造函数
 
 在上一章中，我们看到可以使用对象字面量创建对象：
 
-```
+```javascript
 var dice = {
   sides: 6,
   roll: function () {
@@ -8770,13 +8490,13 @@ function Dice() {
 }
 ```
 
-使用 `new` 运算符调用构造函数以创建 Dice 对象实例：
+使用 `new` 运算符调用构造函数以创建 `Dice` 对象实例：
 
 ```javascript
 var red = new Dice();
 ```
 
-函数返回了一个赋值给变量 `red` 的对象，它被称为 Dice 构造函数的实例。我们可以使用 `instanceof` 运算符确认这一点：
+函数返回了一个赋值给变量 `red` 的对象，它被称为 `Dice` 构造函数的实例。我们可以使用 `instanceof` 运算符确认这一点：
 
 ```javascript
 red instanceof Dice // true
@@ -8810,14 +8530,13 @@ yellow.sides // Error: "yellow is undefined"
 window.sides // 6
 ```
 
-避免这种情况情况的一种方法是在构造函数的开头添加以下行（在示例示例中，构造函数名为 `Constructor`）：
+避免这种情况的一种方法是在构造函数的开头添加以下行（在示例中，构造函数名为 `Constructor`）：
 
 ```javascript
 if (!(this instanceof Constructor)) {
   throw new Error("Please call with new");
 }
 ```
-
 
 ```javascript
 if(!(this instanceof Constructor)) {
@@ -8831,18 +8550,18 @@ if(!(this instanceof Constructor)) {
 
 ## 注意：内置构造函数
 
-JavaScript 包含许多内置构造函数，例如 `Object`、`Array` 和 `Function`，它们可以被用来创建对象、数组和函数，而不是使用字面量。
+`JavaScript` 包含许多内置构造函数，例如 `Object`、`Array` 和 `Function`，它们可以被用来创建对象、数组和函数，而不是使用字面量。
 
 创建新对象最简单的方法是使用字面量语法：
 
-```
+```javascript
 literal = {};
 << {}
 ```
 
 可以使用 `Object` 构造函数：
 
-```
+```javascript
 constructedObject = new Object();
 << {}
 ```
@@ -8863,21 +8582,21 @@ var literalArray = [1,2,3];
 
 但另一种方法是使用 `Array` 构造函数：
 
-```
+```javascript
 constructedArray = new Array(1,2,3);
 << [1, 2, 3]
 ```
 
 然而，数组构造函数对于提供的参数表现出一些奇怪的行为。如果只给了一个参数，它不会像你预期的那样创建一个以该参数作为第一个元素的数组；而是设置数组的 `length` 属性！
 
-```
+```javascript
 new Array(5); // 你可能预期 [5]
 << [undefined, undefined, undefined, undefined, undefined]
 ```
 
 如果提供浮点数作为参数，会导致抛错误，因为数组的长度必须是整数：
 
-```
+```javascript
 new Array(2.5);
 << Error: "invalid array length"
 ```
@@ -8912,7 +8631,7 @@ green.instanceOf Dice
 
 ## 原型继承
 
-JavaScript 使用原型继承模型。为了查看它是如何工作的，让我们写一个创建乌龟的构造函数：
+`JavaScript` 使用原型继承模型。为了查看它是如何工作的，让我们写一个创建乌龟的构造函数：
 
 ```javascript
 var Turtle = function(name) {
@@ -9004,7 +8723,7 @@ Object.getPrototype(raph);
 }, "weapon": "Hands"}
 ```
 
-许多 JavaScript 引擎还支持秘密的 `__proto__` 属性。这被称为 dunder proto，是 "double underscore proto" 的缩写。它不是官方标准，但在大多数现代浏览器中都支持，并预计在下一个 JavaScript 版本中标准化。
+许多 `JavaScript` 引擎还支持秘密的 `__proto__` 属性。这被称为 dunder proto，是 "double underscore proto" 的缩写。它不是官方标准，但在大多数现代浏览器中都支持，并预计在下一个 `JavaScript` 版本中标准化。
 
 ```javascript
 raph.__proto__
@@ -9022,7 +8741,7 @@ Turtle.prototype.isPrototypeOf(raph)
 
 ## 自身属性和原型属性
 
-在在上一个例子中，对象有一个从构造函数继承的 `name` 属性，以及一个从原型属性继承的 `weapon` 属性。对象可以访问这两个属性，但 `name` 属性被视为其自身属性，而 `weapon` 属性是从原型对象继承的。每个对象都有 `hasOwnProperty()` 方法，可以用来检查一个方法是其自身属性还是继承自原型的：
+在上一个例子中，对象有一个从构造函数继承的 `name` 属性，以及一个从原型属性继承的 `weapon` 属性。对象可以访问这两个属性，但 `name` 属性被视为其自身属性，而 `weapon` 属性是从原型对象继承的。每个对象都有 `hasOwnProperty()` 方法，可以用来检查一个方法是其自身属性还是继承自原型的：
 
 ```javascript
 raph.hasOwnProperty('name');
@@ -9102,7 +8821,6 @@ Turtle.prototype = {
 
 你应该避免在任何实例创建之后重新定义原型。
 
-
 创建，否则这些实例的行为将与之后创建的任何实例有所不同。任何属性和方法都应该通过赋值添加到原型上。原型是实时的这一事实意味着所有添加的属性和方法将与所有实例共享。
 
 在创建原型后立即重写它似乎是一个好主意，可以一次性添加许多属性。但这会导致意料之外的问题，因为原型将失去与构造函数的链接：
@@ -9118,7 +8836,7 @@ Turtle.prototype.constructor
 Turtle.prototype.constructor = Turtle;
 ```
 
-使用混入函数（mixin function）可以更容易一次添加多个属性和方法，该内容将在章节稍后部分介绍。
+使用混入函数（`mixin function`）可以更容易一次添加多个属性和方法，该内容将在章节稍后部分介绍。
 
 ## 覆盖原型属性
 
@@ -9146,7 +8864,7 @@ leo.attack();
 << "Leonardo hits you with his Katana Blades"
 ```
 
-当调用属性或方法时，JavaScript 引擎将检查该对象是否拥有它自己的属性或方法。如果是，它将使用那一个；否则，它将使用原型的。
+当调用属性或方法时，`JavaScript` 引擎将检查该对象是否拥有它自己的属性或方法。如果是，它将使用那一个；否则，它将使用原型的。
 
 ## 原型应该用来什么？
 
@@ -9170,7 +8888,7 @@ return "Mmm, " + this.food + " tastes great!";
 
 要记住的黄金法则是：永远不要使用数组或对象作为原型对象的默认值。
 
-另一种方法是使用我们在第 4 章中看到的通过向函数提供默认值的方法来设置默认值。例如，food 属性的默认值可以在构造函数中设置为 "pizza"：
+另一种方法是使用我们在第 4 章中看到的通过向函数提供默认值的方法来设置默认值。例如，`food` 属性的默认值可以在构造函数中设置为 "pizza"：
 
 ```javascript
 var Turtle = function(name,food) {
@@ -9182,12 +8900,16 @@ this.food = food || "pizza";
 总结一下，在使用构造函数和原型对象创建实例时，应该考虑以下点：
 
 - 创建一个处理任何初始化的构造函数。
+
 - 在原型对象上添加任何保持不变的共享属性和任何共享方法。
+
 - 通过赋值将任何个人属性添加到实例中（对此可以使用混入函数，正如我们稍后看到的）。
+
 - 任何额外的方法和属性都可以稍后添加到原型中，并将添加到*所有*实例中。
+
 - 完全重写原型对象时要小心——构造函数类需要重置。
 
-为了演示，让我们创建另一个 Turtle 实例。使用构造函数来初始化实例：
+为了演示，让我们创建另一个 `Turtle` 实例。使用构造函数来初始化实例：
 
 ```
 var mike = new Turtle("Michelangelo");
@@ -9209,16 +8931,16 @@ mike.weapon = "Nunchucks";
 
 ## 公有方法和私有方法
 
-默认情况下，JavaScript 中对象的方法是**公共的**。方法和属性被认为是公共的，因为它们可以直接被查询并通过赋值进行更改。语言的动态性质意味着对象的属性和方法可以在创建后被更改。
+默认情况下，`JavaScript` 中对象的方法是**公共的**。方法和属性被认为是公共的，因为它们可以直接被查询并通过赋值进行更改。语言的动态性质意味着对象的属性和方法可以在创建后被更改。
 
-我们示例对象的 name 和 weapon 属性是公共的：
+我们示例对象的 `name` 和 `weapon` 属性是公共的：
 
 ```
 raph.weapon
 << "Sai"
 ```
 
-我们使用变量作用域的概念来保持属性**私有**并防止它们被更改。然后可以使用 **getter** 方法来返回它们的值。在这个示例中，Turtle() 构造函数被修改以包含一个私有的 _color` 属性：
+我们使用变量作用域的概念来保持属性**私有**并防止它们被更改。然后可以使用 **getter** 方法来返回它们的值。在这个示例中，`Turtle()` 构造函数被修改以包含一个私有的 `_color` 属性：
 
 ```javascript
 function Turtle(name,color) {
@@ -9228,8 +8950,7 @@ this.sayHi = function() {
 }
 
 // 此属性仅在构造函数内部可用
-function
-  var _color = color;
+var _color = color;
 
 this.getName = function() {
   return _name;
@@ -9240,7 +8961,7 @@ this.getColor = function() {
 }
 ```
 
-现在无法更改 _color 的值了，但可以使用 getter 方法访问它们：
+现在无法更改 `_color` 的值了，但可以使用 getter 方法访问它们：
 
 ```
 raph.getColor();
@@ -9259,11 +8980,9 @@ this.setColor = function(color) {
 }
 ```
 
-（注：原文中存在大量重复块，已根据逻辑流进行清理。）
-
 ## 继承
 
-当调用属性或方法时，JavaScript 引擎将检查该对象是否拥有它自己的属性或方法。如果是，它将使用那一个；否则，它将使用原型的。
+当调用属性或方法时，`JavaScript` 引擎将检查该对象是否拥有它自己的属性或方法。如果是，它将使用那一个；否则，它将使用原型的。
 
 原型可以在定义构造函数后用于添加新的属性和方法。它应该被用于定义任何对于构造函数的每个实例中都保持不变的属性。武器的例子是不合适的，因为乌龟们使用不同的武器（我们只需要它来演示覆盖！）。然而，它们确实喜欢同一种食物——披萨！这使得原型属性的一个良人选：
 
@@ -9289,7 +9008,7 @@ Turtle.prototype.food = "Pizza";
 
 ## 对象构造函数
 
-另一种方法是使用我们在第 4 章中看到的通过向函数提供默认值的方法来设置默认值。例如，food 属性的默认值可以在构造函数中设置为 "pizza"：
+另一种方法是使用我们在第 4 章中看到的通过向函数提供默定值的方法来设置默认值。例如，`food` 属性的默认值可以在构造函数中设置为 "pizza"：
 
 ```javascript
 var Turtle = function(name,food) {
@@ -9300,11 +9019,9 @@ this.food = food || "pizza";
 
 ## 属性
 
-不可枚举的属性在通过 for-in 循环遍历对象的属性和方法时将不会显示。每个对象都有一个名为 `propertyIsEnumerable()` 的方法（因为它是 Object 原型的一个方法），可以用来检查属性是否是可枚举的。
+不可枚举的属性在通过 `for-in` 循环遍历对象的属性和方法时将不会显示。每个对象都有一个名为 `propertyIsEnumerable()` 的方法（因为它是 `Object` 原型的一个方法），可以用来检查属性是否是可枚举的。
 
-
-
-Object 构造函数的原型上有一个 `toString()` 方法，所有对象都可以使用它；然而，不同的对象以不同的方式实现该方法。在数组对象上调用它将返回一个以逗号分隔的字符串字符串：
+`Object` 构造函数的原型上有一个 `toString()` 方法，所有对象都可以使用它；然而，不同的对象以不同的方式实现该方法。在数组对象上调用它将返回一个以逗号分隔的字符串字符串：
 
 ```
 [1,2,3].toString()
@@ -9320,7 +9037,7 @@ Object 构造函数的原型上有一个 `toString()` 方法，所有对象都�
 
 ## 注意：原始值包装器
 
-我们在第 2 章中遇到的数字、字符串和布尔原始类型有它们各自对应的构造函数：分别为 Number、String 和 Boolean。
+我们在第 2 章中遇到的数字、字符串和布尔原始类型有它们各自对应的构造函数：分别为 `Number`、`String` 和 `Boolean`。
 
 奇怪的是，这些构造函数并不产生原始值：
 
@@ -9345,7 +9062,7 @@ Number(2) === 2;
 << false
 ```
 
-原始值实际上是没有方法的。原始值包装对象 Number、String 和 Boolean 在后台被使用，为原始值提供方法。当在原始值上调用方法时，JavaScript 会创建一个包装对象，将其转换为对象，然后在对象上调用该方法。这意味着我们可以像在第 2 章中看到的那样，在原始值上调用方法：
+原始值实际上是没有方法的。原始值包装对象 `Number`、`String` 和 `Boolean` 在后台被使用，为原始值提供方法。当在原始值上调用方法时，`JavaScript` 会创建一个包装对象，将其转换为对象，然后在对象上调用该方法。这意味着我们可以像在第 2 章中看到的那样，在原始值上调用方法：
 
 ```
 2..toExponential(); // 记得在整数上调用方法要用两个点！
@@ -9371,9 +9088,9 @@ mike.toString();
 
 它可能传递的信息很少，但它确实返回了对象的字符串表示。
 
-`toString()` 方法在后台被许多内置函数使用。你可以使用它而不用担心引起错误，因为每个对象都拥有该方法，它是从 Object 原型对象继承来的。
+`toString()` 方法在后台被许多内置函数使用。你可以使用它而不用担心引起错误，因为每个对象都拥有该方法，它是从 `Object` 原型对象继承来的。
 
-使用 `toString()` 方法的一个示例是 `alert()`。如果将一个非字符串的对象作为参数传递给 alert 函数，它将在会在后台调用该对象的 `toString()` 并显示返回的字符串。例如，代码：
+使用 `toString()` 方法的一个示例是 `alert()`。如果将一个非字符串的对象作为参数传递给 `alert` 函数，它将在会在后台调用该对象的 `toString()` 并显示返回的字符串。例如，代码：
 
 ```
 alert([1,2,3]);
@@ -9383,9 +9100,9 @@ alert([1,2,3]);
 
 ![](img/3f13fb49bc2503b7b87740a26b7bda07_308_0.png)
 
-图 12.1. alert() 使用 toString()
+图 12.1. `alert()` 使用 `toString()`
 
-使用原型对象重写 `toString()` 方法通常是一个很有用的练习，这样就可以显示有意义的内容。例如，我们可以修改 Turtle() 的原型对象使其更具描述性：
+使用原型对象重写 `toString()` 方法通常是一个很有用的练习，这样就可以显示有意义的内容。例如，我们可以修改 `Turtle()` 的原型对象使其更具描述性：
 
 ```
 Turtle.prototype.toString = function() {
@@ -9406,10 +9123,13 @@ mike.toString();
 
 所有对象的属性在属性描述符中存储了以下属性：
 
-- value — 这是属性的值，默认为 undefined
-- writable — 这个布尔值显示属性是否可以被修改，默认为 false
-- enumerable — 这个布尔值显示当对象在 for 循环中显示时，该属性是否会显示，默认为 false
-- configurable — 这个布尔值显示你是否可以删除一个属性或其任何属性，默认为 false
+- `value` — 这是属性的值，默认为 `undefined`
+
+- `writable` — 这个布尔值显示属性是否可以被修改，默认为 `false`
+
+- `enumerable` — 这个布尔值显示当对象在 `for` 循环中显示时，该属性是否会显示，默认为 `false`
+
+- `configurable` — 这个布尔值显示你是否可以删除一个属性或其任何属性，默认为 `false`
 
 到目前为止，我们只通过赋值来设置属性，这只允许你设置属性的 `value` 属性。也可以通过属性描述符来设置每个属性属性。例如，以下对象具有一个属性名：
 
@@ -9432,9 +9152,9 @@ leo.color = "blue";
 
 这种方法的缺点是，它只能用于设置属性的 `value` 属性。任何通过赋值设置的属性，其 `writable`、`enumerable` 和 `configurable` 属性都会被设置为 true（注意，这些与这些属性的默认值相反）。
 
-# 获取和设置属性描述符
+### 获取和设置属性描述符
 
-Object() 函数有许多方法用于获取和定义属性描述符。我们可以使用 `Object.getOwnPropertyDescriptor()` 方法查看这些值：
+`Object()` 函数有许多方法用于获取和定义属性描述符。我们可以使用 `Object.getOwnPropertyDescriptor()` 方法查看这些值：
 
 ```
 Object.getOwnPropertyDescriptor(leo,'color');
@@ -9479,7 +9199,7 @@ Object.defineProperty(example, 'sillyString', {
 });
 ```
 
-为了测试这个，我们可以为 sillyString 属性赋值一个字符串：
+为了测试这个，我们可以为 `sillyString` 属性赋值一个字符串：
 
 ```
 example.sillyString = "Hello";
@@ -9497,7 +9217,7 @@ example.sillyString;
 
 这些方法在控制属性赋值方面赋予了更大的力量；然而，应该谨慎且少量使用，因为改变赋值的预期行为可能会引起困惑。
 
-get 和 set 属性描述符在控制构造函数中的属性获取和设置时特别有用。在下面的示例中，Dice() 构造函数被重写，使得 `sides` 现在是一个私有变量。然后我们可以利用属性创建一个返回边数的函数，而不是仅仅返回数字，以及一个禁止非正边数的函数：
+`get` 和 `set` 属性描述符在控制构造函数中的属性获取和设置时特别有用。在下面的示例中，`Dice()` 构造函数被重写，使得 `sides` 现在是一个私有变量。然后我们可以利用属性创建一个返回边数的函数，而不是仅仅返回数字，以及一个禁止非正边数的函数：
 
 ```
 var Dice = function() {
@@ -9530,7 +9250,6 @@ this.roll = function() {
 var yellow = new Dice(6);
 ```
 
-
 ```javascript
 yellow.sides;
 << "This dice has 6 sides"
@@ -9547,7 +9266,7 @@ yellow.sides = 0;
 
 ## 从对象创建对象
 
-可以完全避免使用构造函数（construct functions），直接使用对象来创建更多对象。`Object` 构造函数有一个名为 `create` 的方法，它可以使用提供的对象参数作为原型（prototype）来创建一个对象。例如，我们可以创建一个 `Human` 对象，它作为其他 `Human` 对象的的基础。这只需要作为一个对象字面量创建即可：
+可以完全避免使用构造函数（`construct functions`），直接使用对象来创建更多对象。`Object` 构造函数有一个名为 `create` 的方法，它可以使用提供的对象参数作为原型（`prototype`）来创建一个对象。例如，我们可以创建一个 `Human` 对象，它作为其他 `Human` 对象的的基础。这只需要作为一个对象字面量创建即可：
 
 ```javascript
 var Human = {
@@ -9559,7 +9278,7 @@ var Human = {
 { console.log("Walking"); }}
 ```
 
-这将作为所有 `Human` 对象的原型。它的名称字母大写，是因为它的作用类似于经典编程语言中的类（class），并且它仅用于创建 `Human` 对象。它应该遵循我们之前看到的原型对象的相同规则——它将包含 `Human` 对象使用的所有方法，以及任何不会经常更改的属性。事实上，属性是 `arms` 和 `legs`，方法是 `walk()`。
+这将作为所有 `Human` 对象的原型。它的名称字母大写，是因为它的作用类似于经典编程语言中的类（`class`），并且它仅用于创建 `Human` 对象。它应该遵循我们之前看到的原型对象的相同规则——它将包含 `Human` 对象使用的所有方法，以及任何不会经常更改的属性。事实上，属性是 `arms` 和 `legs`，方法是 `walk()`。
 
 我们可以使用 `Object.create()` 方法来创建 `Human` 原型对象的实例：
 
@@ -9576,8 +9295,10 @@ lois.name = "Lois Lane";
 << "Lois Lane"
 ```
 
+```
 lois.job = "Reporter";
 << "Reporter"
+```
 
 另一种方法是向 `Object.create()` 方法添加第二个参数，该参数包含要添加到新对象中的属性：
 
@@ -9589,7 +9310,7 @@ jimmy = Object.create(Human, { name: { value: "Jimmy Olsen",
   Olsen", "walk": function () { console.log("Walking"); } };
 ```
 
-这种方法有点不明智，因为使用描述符（descriptors）要添加的属性使得语法变得笨拙且整体冗长。通常创建对象然后逐个添加每个新属性会更容易。这可以使用后面介绍的 `mixin()` 方法来更快地完成。
+这种方法有点不明智，因为使用描述符（`descriptors`）要添加的属性使得语法变得笨拙且整体冗长。通常创建对象然后逐个添加每个新属性会更容易。这可以使用后面介绍的 `mixin()` 方法来更快地完成。
 
 ## 基于对象的继承
 
@@ -9664,7 +9385,7 @@ batman.realName;
 << "Bruce Wayne"
 ```
 
-还可以使用链式调用（chaining）在一行内创建并初始化新对象（该技术将在章节的后面部分详细介绍）：
+还可以使用链式调用（`chaining`）在一行内创建并初始化新对象（该技术将在章节的后面部分详细介绍）：
 
 ```javascript
 aquaman = Object.create(Superhuman).init("Aquaman","Arthur Curry");
@@ -9728,7 +9449,7 @@ superman.change();
 
 ## 向内置对象添加方法
 
-可以在 JavaScript 内置对象（如 `Number`、`String` 和 `Array`）的原型上添加更多方法以增加增加功能。这种做法被称为“猴补丁”（monkey-patching），尽管这是一个非常强大的技术，但在 JavaScript 社区中通常是不受欢迎的[6]。
+可以在 `JavaScript` 内置对象（如 `Number`、`String` 和 `Array`）的原型上添加更多方法以增加增加功能。这种做法被称为“猴补丁”（`monkey-patching`），尽管这是一个非常强大的技术，但在 `JavaScript` 社区中通常是不受欢迎的[6]。
 
 例如，我们可以在 `Number` 包装对象的原型上添加 `isOdd()` 和 `isEven()` 方法。这些方法对数字原始类型可用：
 
@@ -9756,7 +9477,7 @@ Number.prototype.isOdd = function() {
 << false
 ```
 
-数组是强大的对象，但 JavaScript 中似乎缺少了一些在其他语言中存在的基础方法。我们可以添加 `first()` 和 `last()` 方法，返回数组的第一个和最后一个项：
+数组是强大的对象，但 `JavaScript` 中似乎缺少了一些在其他语言中存在的基础方法。我们可以添加 `first()` 和 `last()` 方法，返回数组的第一个和最后一个项：
 
 ```javascript
 Array.prototype.first = function() {
@@ -9792,7 +9513,7 @@ jala.last();
 // （此处原文代码逻辑未完整，但按意图保留结构）
 ```
 
-猴补的一个有用示例是添加规范中存在但某些浏览器不支持的方法。一个例子是 `trim()` 方法，它是 `String` 原型的方法，因此所有字符串都继承它。但遗憾的是该方法在 Internet Explorer 8 或更低版本中没有实现。可以使用以下填充代码（polyfill）来修复：
+猴补的一个有用示例是添加规范中存在但某些浏览器不支持的方法。一个例子是 `trim()` 方法，它是 `String` 原型的方法，因此所有字符串都继承它。但遗憾的是该方法在 `Internet Explorer 8` 或更低版本中没有实现。可以使用以下填充代码（`polyfill`）来修复：
 
 ```javascript
 String.prototype.trim = String.prototype.trim || function() {
@@ -9800,7 +9521,7 @@ String.prototype.trim = String.prototype.trim || function() {
 }
 ```
 
-```javascript
+```
 " hello ".trim();
 ```
 
@@ -9810,10 +9531,9 @@ String.prototype.trim = String.prototype.trim || function() {
 
 ## Mixins
 
-Mixin 方法是一种在不使用继承的情况下，将某些对象的属性和方法添加到另一个对象的方法。它允许通过“混合”创建更复杂的对象。
+`Mixin` 方法是一种在不使用继承的情况下，将某些对象的属性和方法添加到另一个对象的方法。它允许通过“混合”创建更复杂的对象。
 
-
-将基础对象合并。下面是一个基础的混合（mixin）方法，它被作为属性添加到 `Object.prototype` 对象。这意味着每个对象都将继承这个方法，并可以使用它通过其他对象的属性和方法来增强自身：
+将基础对象合并。下面是一个基础的混合（`mixin`）方法，它被作为属性添加到 `Object.prototype` 对象。这意味着每个对象都将继承这个方法，并可以使用它通过其他对象的属性和方法来增强自身：
 
 ```javascript
 Object.defineProperty(Object.prototype, 'mixin', {
@@ -9851,7 +9571,7 @@ a.mixin(b);
 
 当对象通过赋值进行拷贝时，它们仅是通过引用拷贝的。这意味着内存中并没有实际创建另一个对象；新引用将仅仅指向旧对象。对任一对象所做的任何更改都会影响它们两个。数组和函数都是对象，所以每当它们通过赋值拷贝时，它们将将指向同一个对象，当其中一个发生变化时，所有的都会变化。这被称为对象的浅拷贝。深拷贝（或硬拷贝）则会创建一个完全的新对象，该对象具有与旧对象相同的所有属性。区别在于，当硬拷贝被更改时，原始对象保持不变；但当浅拷贝被更改时，原始对象也会随之改变。
 
-当我们尝试拷贝一个数组或对象的属性时，这会影响我们的 mixin 函数，如下例所示：
+当我们尝试拷贝一个数组或对象的属性时，这会影响我们的 `mixin` 函数，如下例所示：
 
 ```javascript
 a = {};
@@ -10024,15 +9744,17 @@ bizarro.name = "bizarro";
 
 ```javascript
 bizarro.realName = "Subject B";
+```
+
 注意这是一个深拷贝，并且不是通过引用拷贝的，因此对 `superman` 或 `bizarro` 的任何后续更改都不会影响另一个。
 
 # 使用 Mixin 方法添加功能
 
 原型继承模型允许我们通过继承其他对象的属性和方法为对象添加功能。虽然这很有用，但创建一个继承链可能是不理想的——有时我们只想添加属性和方法，而不将对象链接在一起。`mixin()` 方法允许我们将属性和方法封装在对象中，并添加到其他对象中，而没有创建链的开销。
 
-思考继承与从对象继承的区别的一种方法是考虑一个对象是“是什么”还是“拥有”什么。例如，坦克是一种车辆，所以它可能继承自车辆原型。坦克拥有大炮，所以这种功能可以使用 mixin 对象来添加。这给了我们额外的灵活性，因为其他对象也可能使用大炮但不是车辆，例如士兵。士兵可能继承自 `Human` 原型但也拥有大炮。
+思考继承与从对象继承的区别的一种方法是考虑一个对象是“是什么”还是“拥有”什么。例如，坦克是一种车辆，所以它可能继承自车辆原型。坦克拥有大炮，所以这种功能可以使用 `mixin` 对象来添加。这给了我们额外的灵活性，因为其他对象也可能使用大炮但不是车辆，例如士兵。士兵可能继承自 `Human` 原型但也拥有大炮。
 
-我们可以利用此为之前使用的超级英雄对象添加超能力。所有的超级英雄都是人类，所以他们从 `Human` 原型继承任何共同特征。但他们也有超能力，而且每个超级英雄都不同。这是 mixins 的完美用例：我们可以创建一些超能力对象，然后根据需要将它们添加到我们的任何英雄对象中：
+我们可以利用此为之前使用的超级英雄对象添加超能力。所有的超级英雄都是人类，所以他们从 `Human` 原型继承任何共同特征。但他们也有超能力，而且每个超级英雄都不同。这是 `mixins` 的完美用例：我们可以创建一些超能力对象，然后根据需要将它们添加到我们的任何英雄对象中：
 
 ```javascript
 flight = {
@@ -10092,7 +9814,7 @@ superman.fly().move().xRayVision();
 // "Superman 可以看穿一切！"
 ```
 
-这种技术被许多 JavaScript 库常用，最著名的 jQuery。它通过将多个方法调用放在同一行来使代码简洁，并且通过巧妙的方法命名，可以让调用读起来像一个句子；Jasmine 测试库就使用了这种技术。
+这种技术被许多 `JavaScript` 库常用，最著名的 `jQuery`。它通过将多个方法调用放在同一行来使代码简洁，并且通过巧妙的方法命名，可以让调用读起来像一个句子；`Jasmine` 测试库就使用了这种技术。
 
 这种技术的一个大缺点是会让调试变得困难。如果报告错误发生在某一行，无法知道是哪个方法导致了错误，因为该行上有多个方法调用。
 
@@ -10101,8 +9823,6 @@ superman.fly().move().xRayVision();
 ## This 和 That
 
 我们之前看到 `this` 的值指向调用方法的对象。它允许我们创建通用的方法，以返回特定对象的属性。注意当函数嵌套在另一个函数内部时可能会出现某种问题，这经常发生在使用对象方法时，特别是接受回调函数的方法时。问题是 `this` 的值在嵌套函数内部会丢失作用域并指向全局对象，如下所示：
-
-
 
 ```javascript
 superman.allies = [batman,wonderwoman,aquaman]
@@ -10120,7 +9840,7 @@ superman.findFinds = function(){
 "Wonder Woman is friends with "
 "Aquaman is friends with "
 
-它未能产生预期的输出，因为 `this.name` 实际上引用的是全局 `window` 对象的名称，在这种情况下它是空的，因此什么也没有显示。如果使用严格模式（strict mode），将抛出一个异常（这是一个关于静默失败可能无法被立即发现的良好示例）。
+它未能产生预期的输出，因为 `this.name` 实际上引用的是全局 `window` 对象的名称，在这种情况下它是空的，因此什么也没有显示。如果使用严格模式（`strict mode`），将抛出一个异常（这是一个关于静默失败可能无法被立即发现的良好示例）。
 
 这个问题有一个解决方案。
 
@@ -10170,8 +9890,8 @@ superman.findFriends();
 ```javascript
 fly = superman.fly;
 // function () {
-  return "Up, up and away! " + this.name + " soars through the air!"
-}
+//   return "Up, up and away! " + this.name + " soars through the air!"
+// }
 ```
 
 现在可以使用所有函数都拥有的 `call` 方法在另一个对象上调用此方法：
@@ -10183,7 +9903,7 @@ fly.call(batman);
 
 ## 借用数组方法
 
-借用方法最常见的用途之一就是数组。JavaScript 中有很多类数组对象，例如函数中可用的 `arguments` 对象以及许多 DOM 方法返回的 `node lists`（节点列表）。这些对象的行为类似于数组，但缺少数组的许多方法——如果它们有这些方法通常会非常方便。
+借用方法最常见的用途之一就是数组。`JavaScript` 中有很多类数组对象，例如函数中可用的 `arguments` 对象以及许多 `DOM` 方法返回的 `node lists`（节点列表）。这些对象的行为类似于数组，但缺少数组的许多方法——如果它们有这些方法通常会非常方便。
 
 例如，通过赋值一个指向它的变量，`arguments` 对象可以使用 `Array` 构造函数原型上的 `slice` 方法：
 
@@ -10252,7 +9972,6 @@ Game.prototype.play = function() {
   var question = this.questions[0];
   question.asked = false;
   update($question, this.phrase + question.question + " ?");
-
   var interval = setInterval(function() {
     console.log("Time left: " + this.time);
     if (this.time <= 0) {
@@ -10260,7 +9979,6 @@ Game.prototype.play = function() {
       console.log("Game over!");
     }
   }, 1000);
-
   // (此处应该是游戏循环逻辑)
 };
 
@@ -10269,16 +9987,13 @@ Game.prototype.chooseQuestion = function() {
   var questions = this.questions.filter(function(question) {
     return !question.asked;
   });
-
   if (questions.length === 0) {
     console.log("Game over!");
     return;
   }
-
   var question = questions[Math.floor(Math.random() * questions.length)];
   question.asked = true;
   update($question, this.phrase + question.question + " ?");
-
   var options = [];
   var option1 = this.chooseOption();
   options.push(option1.answer);
@@ -10286,7 +10001,6 @@ Game.prototype.chooseQuestion = function() {
   options.push(option2.answer);
   // 将答案插入数组的随机位置
   options.splice(Math.floor(Math.random() * 2), 0, question.answer);
-
   options.forEach(function(name) {
     var button = document.createElement("button");
     button.value = name;
@@ -10325,8 +10039,6 @@ Game.prototype.countDown = function() {
 }
 ```
 
-
-
 ```javascript
 // 更新显示的时间
 update($timer.time,this.time);
@@ -10336,6 +10048,7 @@ if(this.time <= 0) {
 }
 ```
 
+```javascript
 Game.prototype.gameOver = function() {
   console.log("gameOver invoked");
   // 通知玩家游戏已结束，并告诉他们得了多少分
@@ -10359,102 +10072,125 @@ false);
 
 # 总结
 
-在本章中，我们证明了 JavaScript 支持面向对象编程的三个主要概念：封装、多态和继承。我们学习了如何使用构造函数创建多个对象实例，以及使用对象来创建更多对象。我们还看到如何使用混入（mixins）将对象的功能模块化。
+在本章中，我们证明了 `JavaScript` 支持面向对象编程的三个主要概念：封装、多态和继承。我们学习了如何使用构造函数创建多个对象实例，以及使用对象来创建更多对象。我们还看到如何使用混入（`mixins`）将对象的功能模块化。
 
 本章的要点总结如下：
 
 - 面向对象编程 (OOP) 是一种使用对象作为构建模块的编程方式。
+
 - OOP 的主要概念是封装、多态和继承。
+
 - 构造函数可以用于创建对象的实例。
+
 - 在构造函数内部，`this` 关键字指向函数返回的对象。
-- 构造函数的所有实例都继承其原型对象（prototype）的所有属性和方法。
+
+- 构造函数的所有实例都继承其原型对象（`prototype`）的所有属性和方法。
+
 - 原型对象是活的，因此可以向现有实例添加新的属性和方法。
-- 原型链用于查找可用的方法。如果一个对象缺少某个方法，JavaScript 将检查其原型是否具有该方法；如果没有，它将继续检查该函数的原型，直到找到对象构造函数为止。
+
+- 原型链用于查找可用的方法。如果一个对象缺少某个方法，`JavaScript` 将检查其原型是否具有该方法；如果没有，它将继续检查该函数的原型，直到找到对象构造函数为止。
+
 - 通过在构造函数内部定义 `var` 和定义函数可以创建私有属性和方法。这些可以通过 getter 和 setter 函数设为公共。
-- 猴子补丁（Monkey-patching）是通过增强内置原型对象来向内置对象添加方法的过程。这应该谨慎执行，因为它可能会导致内置对象的工作出现意外行为。
-- 混入方法（mixin method）可以从其他对象添加属性和方法，而无需创建继承链。
+
+- 猴子补丁（`Monkey-patching`）是通过增强内置原型对象来向内置对象添加方法的过程。这应该谨慎执行，因为它可能会导致内置对象的工作出现意外行为。
+
+- 混入方法（`mixin method`）可以从其他对象添加属性和方法，而无需创建继承链。
+
 - 如果方法返回 `this` 的引用，则可以更改并按顺序调用方法。
+
 - 多态是指两个不同的对象以不同的方式使用同一个方法。
+
 - `this` 的值在嵌套函数内部不会保留，这可能会导致错误。可以通过 `var that = this;` 或使用 `bind(this)` 方法来绕过这个问题。
+
 - 方法可以从对象中“借用”。
 
-在下一章中，我们将学习如何使用 JavaScript 发送和接收数据。
+在下一章中，我们将学习如何使用 `JavaScript` 发送和接收数据。
 
 [5]本章稍后部分会有关于浅拷贝和深拷贝的更多内容。
-[6]另一方面，Ruby 编程社区通常接受猴子补丁，因此它在 Ruby 代码示例中非常常见。
+
+[6]另一方面，`Ruby` 编程社区通常接受猴子补丁，因此它在 `Ruby` 代码示例中非常常见。
 
 ## 第 13 章
 
 ## Ajax
 
-Ajax 是一种允许网页页面与服务器进行异步通信，并在不重新加载网页的情况下动态更新页面的技术。这使得数据可以在后台发送和接收，并根据用户事件更新页面的部分，而程序的其他部分继续运行。
+`Ajax` 是一种允许网页页面与服务器进行异步通信，并在不重新加载网页的情况下动态更新页面的技术。这使得数据可以在后台发送和接收，并根据用户事件更新页面的部分，而程序的其他部分继续运行。
 
-Ajax 的使用改变了网站的工作方式，并开启了 Web 应用程序的新时代。网页不再是静态的，而是动态应用程序。
+`Ajax` 的使用改变了网站的工作方式，并开启了 Web 应用程序的新时代。网页不再是静态的，而是动态应用程序。
 
 在本章中，我们将涵盖以下主题：
 
 - 客户端和服务器
-- Ajax 的简要历史
+
+- `Ajax` 的简要历史
+
 - 使用 `XMLHttpRequest` 对象与服务器通信
-- 使用 Ajax 接收数据
-- 使用 Ajax 发送数据
+
+- 使用 `Ajax` 接收数据
+
+- 使用 `Ajax` 发送数据
+
 - 表单数据
-- Ajax 超时
-- 带填充的 JSON
-- 我们的项目——使用 Ajax 获取问题
+
+- `Ajax` 超时
+
+- 带填充的 `JSON`
+
+- 我们的项目——使用 `Ajax` 获取问题
 
 ## 客户端和服务器
 
 被称为互联网的计算机网络可以分为两个部分：客户端和服务器。客户端（如 浏览器）会向服务器请求资源（通常是网页），服务器处理该请求并向客户端返回响应。
 
-JavaScript 最初被设计为一种客户端脚本语言，这意味着它在浏览器中本地运行，为从服务器返回的网页添加动态功能。Ajax 意味着 JavaScript 可以代表客户端从服务器请求资源。请求的资源通常是 JSON 数据或较小的文本片段，而不是整个网页。
+`JavaScript` 最初被设计为一种客户端脚本语言，这意味着它在浏览器中本地运行，为从服务器返回的网页添加动态功能。`Ajax` 意味着 `JavaScript` 可以代表客户端从服务器请求资源。请求的资源通常是 `JSON` 数据或较小的文本片段，而不是整个网页。
 
-因此，当使用 Ajax 请求资源时需要服务器。这通常涉及使用如 PHP、Ruby、Node.js 或 .NET 等服务器端语言通过 Ajax 请求（通常来自后端数据库）获取数据响应。为了练习使用 Ajax，你可以在自己的计算机上设置本地开发服务器，或者从使用跨源资源共享 (CORS) 的外部网站请求文件，以避免浏览器强制的同源策略。本章中的所有示例都可以在设置本地开发服务器的情况下运行，尽管如果你需要进行大量的 Ajax 或服务器开发，可能值得研究一下。
+因此，当使用 `Ajax` 请求资源时需要服务器。这通常涉及使用如 `PHP`、`Ruby`、`Node.js` 或 `.NET` 等服务器端语言通过 `Ajax` 请求（通常来自后端数据库）获取数据响应。为了练习使用 `Ajax`，你可以在自己的计算机上设置本地开发服务器，或者从使用跨源资源共享 (`CORS`) 的外部网站请求文件，以避免浏览器强制的同源策略。本章中的所有示例都可以在设置本地开发服务器的情况下运行，尽管如果你需要进行大量的 `Ajax` 或服务器开发，可能值得研究一下。
 
 ## 注意：同源策略和 CORS
 
-同源策略阻止任何数据从与请求页不同的域名传输。此策略由所有现代浏览器强制，用以阻止任何从外部源运行的恶意 JavaScript。问题是，许多网站的 API 依赖于跨域传输数据。跨源资源共享 (CORS) 是解决此问题的方案，它允许从其他站点请求资源。Ajax 通过 HTTP 头部指示哪些站点可以访问。
+同源策略阻止任何数据从与请求页不同的域名传输。此策略由所有现代浏览器强制，用以阻止任何从外部源运行的恶意 `JavaScript`。问题是，许多网站的 API 依赖于跨域传输数据。跨源资源共享 (`CORS`) 是解决此问题的方案，它允许从其他站点请求资源。`Ajax` 通过 HTTP 头部指示哪些站点可以访问。
 
 ## Ajax 的简要历史
 
 当万维网开始时，网页包含静态内容。页面的任何更改都需要重新加载页面，通常会导致屏幕变白。记住，这在拨号调制解调器常的年代。
 
-1999 年，微软在 Internet Explorer 5 中实现了 `XMLHttpRequest`。它最初是为 Outlook 客户端开发的，允许在后台异步发送数据。其他浏览器实现了这项技术，尽管它仍然鲜为人知。
+1999 年，微软在 `Internet Explorer 5` 中实现了 `XMLHttpRequest`。它最初是为 `Outlook` 客户端开发的，允许在后台异步发送数据。其他浏览器实现了这项技术，尽管它仍然鲜为人知。
 
-当 Google 在 2004 年和 2005 年分别推出 Gmail 和 Maps 时，异步加载技术开始被注意到。这些 Web 应用程序通过改变页面部分来增强用户体验。它们提供了更像桌面应用程序的快速响应体验。
+当 `Google` 在 2004 年和 2005 年分别推出 `Gmail` 和 `Maps` 时，异步加载技术开始被注意到。这些 Web 应用程序通过改变页面部分来增强用户体验。它们提供了更像桌面应用程序的快速响应体验。
 
-“Ajax”一词是由 James Garrett 在 2005 年的文章《Ajax: A New Approach to Web Applications》提出的，他在文中指的是了近期 Web 应用程序使用的技术。Ajax 是一个巧妙的缩写，指的是该过程的不同部分是：异步 JavaScript 和 XML：
+“`Ajax`”一词是由 `James Garrett` 在 2005 年的文章《`Ajax: A New Approach to Web Applications`》提出的，他在文中指的是了近期 Web 应用程序使用的技术。`Ajax` 是一个巧妙的缩写，指的是该过程的不同部分是：异步 `JavaScript` 和 `XML`：
 
 ### 异步
+
+
+
 当发送数据请求时，程序不需要停止等待响应。它可以继续运行，等待在接收响应时触发事件。通过调用回调来管理，程序能够高效运行，避免数据往返传输时的延迟。
 
 ### JavaScript
+
 JavaScript 一直被认为是不与服务器通信的“前端”语言。Ajax 允许 JavaScript 用于发送请求并接收服务器响应，允许实时更新内容。
 
 ### XML
+
 在最初提出该术语时，经常使用 XML 文档返回数据。可以发送许多类型的数据，但目前 Ajax 中最常用的是 JSON，它比 XML 更轻量且更容易解析。（尽管它从未真正流行，但 Ajax 有时被用来描述这种技术。）JSON 的另一个优势是 JavaScript 原生支持，因此你可以处理 JavaScript 对象，而无需使用 DOM 方法解析 XML 文件。
 
-
-
-
-
-应用程序编程接口（API）是一系列允许外部访问另一个程序或服务的方法。许多网站允许通过公共 API 对其数据进行受控的访问。这意味着开发者能够与数据交互，并创建第三方服务的组合（mashups）。例如，一个天气网站可能有一个 API，提供提供返回特定位置天气信息的方法，如温度、风速等。这些信息随后可以被用于在网页上显示本地天气数据。API 返回的信息通常被序列化为 JSON。由于数据是由外部网站提供的，因此必须启用 CORS 才能访问 API 的信息。某些服务可能还需要身份验证才能访问其 API。
+应用程序编程接口（API）是一系列允许外部访问另一个程序或服务的方法。许多网站允许通过公共 API 对其数据进行受控的访问。这意味着开发者能够与数据交互，并创建第三方服务的组合（mashups）。例如，一个天气网站可能有一个 API，提供返回特定位置天气信息的方法，如温度、风速等。这些信息随后可以被用于在网页上显示本地天气数据。API 返回的信息通常被序列化为 JSON。由于数据是由外部网站提供的，因此必须启用 CORS 才能访问 API 的信息。某些服务可能还需要身份验证才能访问其 API。
 
 ## XMLHttpRequest 对象
 
-尽管 XMLHttpRequest 最初由微软多年前就实现并且在大多数浏览器中都可用，但它最终由 WHATWG 和 W3C 作为 HTML5 规范的一部分进行了标准化。
+尽管 `XMLHttpRequest` 最初由微软多年前就实现并且在大多数浏览器中都可用，但它最终由 WHATWG 和 W3C 作为 HTML5 规范的一部分进行了标准化。
 
-XMLHttpRequest 是一项草案 API 规范，旨在扩展 XMLHttpRequest 对象。它添加了一些实用功能，如 CORS 和表单数据（在本章稍后的部分将介绍）。自 2011 年底以来，规范已经合并，现在简单地被称为 XMLHttpRequest。
+`XMLHttpRequest Level 2` 是一项草案 API 规范，旨在扩展 `XMLHttpRequest` 对象。它添加了一些实用功能，如 CORS 和表单数据（在本章稍后的部分将介绍）。自 2011 年底以来，规范已经合并，现在简单地被称为 `XMLHttpRequest`。
 
-XMLHttpRequest 是一个构造函数，返回一个带有用于发送和接收数据方法的对象。旧版本的 Internet Explorer（7 版本及之前）使用 ActiveX 对象实现此功能，但所有现代浏览器现在都原生支持它。
+`XMLHttpRequest` 是一个构造函数，返回一个带有用于发送和接收数据方法的对象。旧版本的 Internet Explorer（7 版本及之前）使用 ActiveX 对象实现此功能，但所有现代浏览器现在都原生支持它。
 
-要创建一个新的 XMLHttpRequest 对象，请使用以下代码：
+要创建一个新的 `XMLHttpRequest` 对象，请使用以下代码：
 
-```
+```javascript
 var xhr = new XMLHttpRequest();
 ```
 
-XMLHttpRequest 对象有一个名为 `readyState` 的属性。这是一个整数值，对应于请求的状态：
+`XMLHttpRequest` 对象有一个名为 `readyState` 的属性。这是一个整数值，对应于请求的状态：
 
 - 0: UNSENT（未发送）：尚未调用 `open()` 方法
 - 1: OPENED（已打开）：调用 `open()` 方法之后，调用 `send()` 方法之前
@@ -10462,9 +10198,9 @@ XMLHttpRequest 对象有一个名为 `readyState` 的属性。这是一个整数
 - 3: LOADING（加载中）：正在接收响应
 - 4: DONE（已完成）：已接收完整响应
 
-随着请求的进行，此值会更新并触发 `onreadychange` 事件。第一个任务是为 `onreadychange` 事件挂载一个回调函数。这是每当响应状态变化时会被调用的第一个函数：
+随着请求的进行，此值会更新并触发 `onreadystatechange` 事件。第一个任务是为 `onreadystatechange` 事件挂载一个回调函数。这是每当响应状态变化时会被调用的第一个函数：
 
-```
+```javascript
 xhr.onreadystatechange = processResponse;
 ```
 
@@ -10474,9 +10210,9 @@ xhr.onreadystatechange = processResponse;
 
 接下来我们调用 `open()` 方法。该方法设置请求并接受三个参数：
 
-- 第一个参数是 HTTP 动词（verb），将用于发送响应。有很多 HTTP 动词，但最常用用于检索数据的 **GET** 和用于发送数据的 **POST**。
+- 第一个参数是 HTTP 动词（verb），将用于发送响应。有很多 HTTP 动词，但最常用用于检索数据的 `GET` 和用于发送数据的 `POST`。
 
-## 注意：HTTP 动词
+### 注意：HTTP 动词
 
 Web 构建在超文本传输协议（HTTP）之上。当客户端（通常是浏览器）向服务器发送请求时，它包含了要使用何种 HTTP 动词的信息。HTTP 动词是 HTTP 的语言，告诉服务器正在进行什么种类型的请求，这决定了它如何处理该请求。
 
@@ -10493,11 +10229,11 @@ Web 构建在超文本传输协议（HTTP）之上。当客户端（通常是浏
 - 第二个参数是我们要发送请求的 URL 地址。
 - 最后一个参数是请求是否异步发送。这几乎总是被设置为 `true`，将其设置为 `false` 可能会导致许多问题：
 
-```
+```javascript
 xhr.open("GET", "path/to/resource", true);
 ```
 
-## 警告：避免同步请求
+### 警告：避免同步请求
 
 可以使用 Ajax 发起同步请求，但应该避免这样做。如果响应花费很长时间，该浏览器标签页中运行的所有内容都将被阻塞。这意味着在接收到 Ajax 响应之前，浏览器菜单、渲染和下载都会停止——这可不是良好的用户体验！
 
@@ -10505,19 +10241,19 @@ xhr.open("GET", "path/to/resource", true);
 
 最后一步是使用 `send()` 方法实际发送请求：
 
-```
+```javascript
 xhr.send();
 ```
 
 `send()` 方法接受任何要随请求发送的数据。如果请求是 GET 请求，此处可以留空，因为我们是在请求数据而不是发送数据。如果请求是 POST 请求，数据可以通过 `key=value` 查询字符串的形式发送，如下所示：
 
-```
+```javascript
 xhr.send("name=Superman");
 ```
 
 或者可以使用 JSON 字符串：
 
-```
+```javascript
 xhr.send("name:Superman");
 ```
 
@@ -10525,7 +10261,7 @@ xhr.send("name:Superman");
 
 一旦请求发送出去，程序可以在等待响应的同时继续执行其他任务。每当响应状态变化时，`onreadystatechange` 事件就会触发，我们之前设置的回调函数会被调用。此函数可以用于处理响应：
 
-```
+```javascript
 function processResponse() {
   if (xhr.readyState === 4 && xhr.status === 200) {
     // 对响应进行某些操作
@@ -10535,11 +10271,11 @@ function processResponse() {
 
 在回调函数内部，我们检查请求是否完成。当完成发生时，`readyState` 属性的值为 4 且 HTTP 状态为 200（换句话说，请求是成功的）。我们可以将任何想要运行的代码放在代码块中。
 
-## 注意：如果是同步请求则不需要回调
+### 注意：如果是同步请求则不需要回调
 
 如果请求是同步的（通过将 `open()` 方法的第三个参数设置为 `false`），则不需要回调函数；代码会阻塞在 `send()` 方法处直到收到响应。
 
-XMLHttpRequest 对象有多个属性可以处理响应：
+`XMLHttpRequest` 对象有多个属性可以处理响应：
 
 - `status` 属性返回 HTTP 状态码。响应成功通常为 200，创建资源为 201，请求成功但无内容返回为 204。
 - `response` 属性返回从服务器返回的响应。可以是文本、HTML、JSON、文档或文件。
@@ -10547,7 +10283,7 @@ XMLHttpRequest 对象有多个属性可以处理响应：
 - `responseXML` 属性返回文档对象，可以使用我们在第 6 章见过的 DOM 方法进行解析。
 - `responseType` 属性返回指示响应中数据类型的字符串。
 
-## 警告：注意 Cookie
+### 警告：注意 Cookie
 
 每个 Ajax 请求仍然 HTTP 请求，因此它们也会下载与请求关联的 Cookie。尽管 Cookie 有大小限制，但它们会累积，导致每个 Ajax 请求比预想的更大，变得缓慢。
 
@@ -10555,13 +10291,13 @@ XMLHttpRequest 对象有多个属性可以处理响应：
 
 为了演示如何使用 Ajax 更新页面，我们需要设置演示页面。创建一个名为 `ajax.htm` 的文件，包含以下代码：
 
-```
+```html
 <!doctype html>
 <html lang="en">
-<Head>
+<head>
 <meta charset="utf-8">
 <title>Ajax Example</title>
-</Head>
+</head>
 <body>
 <button id="text">Request Text</button>
 <button id="html">Request HTML</button>
@@ -10574,37 +10310,29 @@ Ajax response will appear here
 </html>
 ```
 
-ajax.htm
-
 这是一个标准的 HTML5 页面，包含三个按钮和一个 div 元素。每个按钮将用于发出不同类型的 Ajax 请求。第一个请求文本文件，第二个请求 HTML 文件，第三个请求来自外部 API 的 JSON。id 为 "output" 的 div 是我们将从 Ajax 请求接收到的响应的地方。
 
 Ajax 请求通常指向存储在服务器上的文件，因此我们将使用存储在 SitePoint Amazon Web 服务（AWS）服务器上的文本文件和 HTML 文件。这些是为了模拟通常存储在网站同一服务器上的文件。如果你设置了本地开发服务器，可以创建文件并从本地服务器提供服务。名为 `hello.txt` 的文件包含此字符串：
 
-
-
-hello.txt
-
-Hello Ajax!
-
-HTML 文件名为 hello.htm，包含以下内容：
-
-hello.htm
-
 ```
+Hello Ajax!
+```
+
+HTML 文件名为 `hello.htm`，包含以下内容：
+
+```html
 <h1>Hello Ajax!</h1>
 ```
 
-对于外部 API，我们将使用 JSON Test，它为 JSON 数据提供测试服务。URL http://ip.jstonest.com/ 将以 JSON 格式返回该计算机的 IP 地址。
+对于外部 API，我们将使用 JSON Test，它为 JSON 数据提供测试服务。URL `http://ip.jstonest.com/` 将以 JSON 格式返回该计算机的 IP 地址。
 
-## 注意：启用 CORS
+### 注意：启用 CORS
 
 存储在 SitePoint AWS 上的上的文件通过在 HTTP 头部中将 `Access-Control-Allow-Origin` 设置为 `'*'` 来允许 CORS。因此，任何域名都可以使用 Ajax 从其网站请求数据。在实际应用中，请求的文件通常托管在与请求它们的服务器同一台服务器上，因此 CORS 是不必要的。
 
 现在我们需要一个 JavaScript 文件。它应该命名为 `scripts.js` 并与其他文件一起保存在目录中。它包含以下代码：
 
-scripts.js (节录)
-
-```
+```javascript
 var text = document.getElementById("text");
 var html = document.getElementById("html");
 var api = document.getElementById("api");
@@ -10612,19 +10340,15 @@ var api = document.getElementById("api");
 
 它为 HTML 文件中的三个按钮中的每个按钮分配了一个变量。接下来，我们将添加一些代码为每个按钮分配一个事件处理器：
 
-scripts.js (节录)
-
-```
+```javascript
 text.addEventListener("click", function() { request("https://s3.amazonaws.amazonaws.com/sitepoint-book-content/jsinja/hello.txt") }, false);
 html.addEventListener("click", function() { request("https://s3.amazonaws.amazonaws.com/sitepoint-book-content/jsinja/hello.htm") }, false);
 api.addEventListener("click", function() { request("http://ip.jsonstonest.com/") }, false);
 ```
 
-这在点击按钮时会调用 `function()` 函数。该函数是执行 Ajax 请求的地方。它接受一个 URL 作为参数，这就是请求发送的地方。让我们将其添加到文件的末尾：
+这在点击按钮时会调用 `request()` 函数。该函数是执行 Ajax 请求的地方。它接受一个 URL 作为参数，这就是请求发送的地方。让我们将其添加到文件的末尾：
 
-scripts.js (节录)
-
-```
+```javascript
 function request(url) {
   var xhr = new XMLHttpRequest();
   xhr.onreadystatechange = function() {
@@ -10647,7 +10371,7 @@ function request(url) {
 
 让我们试一下。在浏览器中打开 `ajax.htm` 并按下按钮。你应该能看到与图 13.1 截图类似的场景。
 
-## Hello Ajax!
+### Hello Ajax!
 
 图 13.1. 一个运行良好的 Ajax 示例
 
@@ -10661,27 +10385,23 @@ function request(url) {
 
 要在我们的超级英雄示例中实现这一点，我们只需要将 `makeHero()` 函数的最后一行从：
 
-```
+```javascript
 alert(JSON.stringify(hero));
 ```
 
 改为：
 
-```
-scripts.js (节录)
-```
+```javascript
 send(JSON.stringify(hero));
 ```
 
 现在我们在 `scripts.js` 文件中添加 `send()` 函数：
 
-scripts.js (节录)
-
-```
+```javascript
 function send(hero) {
   var xhr = new XMLHttpRequest();
   xhr.open("POST", "http://reqres.in/api/users", true);
-  xhr.setRequestHeaderHeader("Content-Type", "application/json");
+  xhr.setRequestHeader("Content-Type", "application/json");
   xhr.onreadystatechange = function() {
     if (xhr.readyState === 4 && xhr.status === 201) {
       console.log(xhr.responseText);
@@ -10691,15 +10411,25 @@ function send(hero) {
 }
 ```
 
-现在，如果你打开 `hero.htm` 文件，填写一些关于超级英雄的详情并提交，你应该会从 Reqres 控制台收到一个类似下方的响应。它表示数据已从具有 `id` 和 `createdat` 属性的对象接收，而这些属性是由数据库添加的（实际上，数据并没有被保存，这些属性只是为了演示目的而添加的）：
+现在，如果你打开 `hero.htm` 文件，填写一些关于超级英雄的详情并提交，你应该会从 Reqres 控制台收到一个类似下方的响应。它表示数据已从具有 `id` 和 `createdAt` 属性的对象接收，而这些属性是由数据库添加的（实际上，数据并没有被保存，这些属性只是为了演示目的而添加的）：
 
-```
-<< "name":"Superman","realName":"Clarke Kent","powers":["Flight","Strength","Super Speed"],type":"hero","city":"Metropolis","origin":"Born as Kal-El on the planet Krypton, before being ...","age":"28","id":"242","createdat":"2014-11-02T15:38:02.11622">
+```json
+{
+  "name":"Superman",
+  "realName":"Clarke Kent",
+  "powers":["Flight","Strength","Super Speed"],
+  "type":"hero",
+  "city":"Metropolis",
+  "origin":"Born as Kal-El on the planet Krypton, before being ...",
+  "age":"28",
+  "id":"242",
+  "createdAt":"2014-11-02T15:38:02.11622"
+}
 ```
 
 大多数表单都有一个属性，指定在不使用 Ajax 提交表单时使用的 URL。它还有一个 `method` 属性，将指定要使用的 HTTP 动词。这些方法作为表单对象的属性可用，因此 `open()` 方法可以泛化适用于任何表单：
 
-```
+```javascript
 xhr.open(form.method, form.action, true);
 ```
 
@@ -10709,7 +10439,7 @@ xhr.open(form.method, form.action, true);
 
 使用构造函数创建 `FormData` 实例：
 
-```
+```javascript
 data = new FormData();
 ```
 
@@ -10717,9 +10447,7 @@ data = new FormData();
 
 `FormData` 接口有助于减少提交表单时所需的代码量。我们可以利用它来减少英雄页面的体积。编辑 `scripts.js` 文件使其包含以下内容：
 
-## scripts.js (节录)
-
-```
+```javascript
 var form = document.forms.hero;
 form.addEventListener("submit", submitHero, false);
 
@@ -10739,8 +10467,6 @@ function submitHero() {
 }
 ```
 
-
-
 Craig Buckler 以及 Mozilla 开发者网络（Mozilla Developer Network）。
 
 ## Ajax 超时
@@ -10751,7 +10477,7 @@ Ajax 请求响应所需的时间各异，这取决于请求发送到的服务器
 
 例如，要设置五秒的超时，可以使用以下代码：
 
-```
+```javascript
 xhr.timeout = 5000;
 ```
 
@@ -10769,7 +10495,7 @@ xhr.ontimeout = function() {
 
 JSONP 或带有填充的 JSON 是一种非常常见的数据传输技术，因为它允许在没有 CORS 的情况下绕过同源策略。它涉及发送一个封装在回调函数中的 JSON 字符串，该函数被注入到 `<script>` 标签中。同源策略不适用于 `<script>` 标签，而且由于回调函数已经在请求数据的域中定义过，因此通过引用该回调函数，所有封装在函数中的数据在在该域内都是可用的。
 
-## 警告：服务器必须支持 JSONP
+### 警告：服务器必须支持 JSONP
 
 响应请求的服务器必须支持 JSONP 请求并返回回调函数。如果返回的是普通的 JSON 数据，该技术将无法工作。
 
@@ -10777,13 +10503,11 @@ JSONP 或带有填充的 JSON 是一种非常常见的数据传输技术，因�
 
 为了演示使用 JSONP，我们将创建另一个小型网页。在新文件夹中，创建一个名为 `jsonp.htm` 的文件，并添加以下 HTML 代码：
 
-jsonp.htm
-
 ```html
 <!doctype html>
 <html lang="en">
 <head>
-  <Meta charset="utf-8">
+  <meta charset="utf-8">
   <title>JSONP Example</title>
 </head>
 <body>
@@ -10798,16 +10522,12 @@ jsonp.htm
 
 这与我们早期的 `FormData` 接口类似，但只有一个按钮会触发 JSONP 请求。为了处理此操作，我们将创建一个名为 `scripts.js` 的 JavaScript 文件，并保存在与 `jsonp.htm` 相同的目录下，其中包含以下代码：
 
-scripts.js（节选）
-
 ```javascript
 var send = document.getElementById("send");
 send.addEventListener("click", update , false);
 ```
 
 这为我们提供了按钮的引用，并添加了一个事件监听器，当按钮被点击时会调用 `update()` 函数。该函数负责 JSONP 请求，需要添加到 `scripts.js` 文件的底部：
-
-scripts.js（节选）
 
 ```javascript
 function update() {
@@ -10821,13 +10541,11 @@ function update() {
 
 ```json
 {
-  name: superman
+  "name": "superman"
 }
 ```
 
 注意指定的 URL 结尾处的字符串 `?callback=process`。这标识了我们希望在数据返回时被调用的回调函数名称。在这种情况下，调用了一个名为 `process()` 的函数，因此我们将此函数添加到 `scripts.js` 的底部：
-
-scripts.js（节选）
 
 ```javascript
 function process(response) {
@@ -10837,7 +10555,7 @@ function process(response) {
 
 此回调函数会自动将响应数据作为参数传递。然后我们可以在函数内部以我们喜欢的任何方式处理数据。在这种情况下，我们只是想在输出 `div` 中显示 `name` 属性的值。
 
-在浏览器中打开 `json.html` 并尝试点击按钮。如果一切运行正常，你应该能看到与图 13.2 所示截图类似的显示。
+在浏览器中打开 `jsonp.htm` 并尝试点击按钮。如果一切运行正常，你应该能看到与图 13.2 所示截图类似的显示。
 
 ![](img/3f13fb49bc2503b7b87740a26b7bda07_347_0.png)
 
@@ -10847,7 +10565,7 @@ function process(response) {
 
 我们可以使用 Ajax 从服务器获取问题，而不是将它们保存在 JavaScript 文件内部的一个对象中。首先，我们移除 `scripts.js` 文件开头存储在 `quiz` 变量中的对象，并将信息转移到单独的文件。这些信息必须是 JSON 格式，因此属性需要是字符串。该文件保存在 SitePoint 的 S3 账户上，可以通过以下 URL 找到（它包含比我们目前为止使用的三个多多的问题）：
 
-https://s3.amazonaws.com/sitepoint-book-content/jsninja/quiz.json
+`https://s3.amazonaws.com/sitepoint-book-content/jsninja/quiz.json`
 
 要访问这些 JSON 数据，我们需要一个函数来创建 Ajax 请求以获取数据。在 `scripts.js` 文件的 `"use strict"` 行之后添加以下函数：
 
@@ -10868,7 +10586,7 @@ function getQuiz() {
 update($question, "Waiting for questions...");
 ```
 
-此函数创建了一个新的 `XMLHttpRequest` 对象，并使用 `JSON.parse()` 方法将响应中的 JSON 数据转换为新的 JavaScript 对象。然后将此对象作为参数传递给我们在上一章中创建的 `Game()` 构造函数。之后，我们使用 `open()` 方法请求数据，使用 `overrideMimeType()` 方法表示预期返回 JSON 数据，并使用 `send()` 方法实际发送请求。然后我们在问题部分放置了一条条消息，表示我们正在等待问题加载。
+此函数创建了一个新的 `XMLHttpRequest` 对象，并使用 `JSON.parse()` 方法将响应中的 JSON 数据转换为新的 JavaScript 对象。然后将此对象作为参数传递给我们在上一章中创建的 `Game()` 构造函数。之后，我们使用 `open()` 方法请求数据，使用 `overrideMimeType()` 方法表示预期返回 JSON 数据，并使用 `send()` 方法实际发送请求。然后我们在问题部分放置了一条消息，表示我们正在等待问题加载。
 
 现在唯一需要更改的是绑定到按钮上的事件监听器，以便在点击时调用 `getQuiz()`：
 
@@ -10894,8 +10612,6 @@ $start.addEventListener('click', getQuiz);
 - JSONP 或带有填充的 JSON 是一种用于绕过同源策略的技术。它将响应数据封装在动态插入的 JavaScript 回调函数中。
 
 在下一章中，我们将查看 HTML5 的新功能以及如何实现它们。
-
-
 
 WHATWG 的目标是创建一个面向未来的 HTML 版本，使其能够在当今浏览器中运行，而不仅仅是作为未来的梦想（这正是 XHTML 版本 2 最终变成的）。它还引入了新元素，以及用于显示媒体的新型 API，例如在浏览器中原生播放视频，这在以前通常需要 Flash 等插件。
 
@@ -10929,7 +10645,7 @@ HTML5 规范的一个大特性是它被分为模块。这允许不同功能以�
 
 示例可以是：
 
-```
+```text
 data-toppings="ham & pineapple"
 data-hero="true"
 data-dropdown
@@ -10941,7 +10657,7 @@ data-max-length="32"
 
 每个元素都有一个 `dataset` 属性，用于访问其包含的任何 `data-` 属性。这里是一些标记的示例：
 
-```
+```html
 <div id="pizza" data-toppings="cheese, tomato, mushroom">
 蔬菜素华披萨
 </div>
@@ -10952,12 +10668,12 @@ data-max-length="32"
 ```javascript
 var pizza = document.getElementById("pizza");
 var toppings = pizza.dataset.toppings;
-"cheese, tomato, mushroom"
+// "cheese, tomato, mushroom"
 ```
 
 注意 `data-` 前缀被去掉了。要访问该属性，`toppings` 的用法就像它是 `dataset` 对象的属性一样。如果 `data-` 属性名称包含连字符，会被替换为驼峰命名法，因此 `data-max-length` 将通过 `maxLength` 进行访问。
 
-## 注意：浏览器支持
+### 注意：浏览器支持
 
 现代浏览器对 `data-` 属性的支持通常非常好……即使 Internet Explorer 8 也有部分支持！然而，一些旧版浏览器无法理解 `dataset` 属性，但可以使用标准的 `getAttribute` 方法找到 `data-` 属性。如果你仍然需要支持旧浏览器，可以将之前的代码替换为以下内容：
 
@@ -10977,7 +10693,7 @@ HTML5 规范包含许多 API，以帮助访问硬件，例如摄像头、电池�
 
 ## HTML5 Web Storage
 
-Web Storage API 在客户端计算机上提供了一个键值存储器，类似于使用 cookies，但限制更少、存储容量更大且更易使用。这非常适合存储用户信息，以及存储可以在未来会话中使用的特定应用程序信息。它受从 Internet Explorer 8 及以上的所有现代器的支持，并且每个域都有自己独立的区域。
+Web Storage API 在客户端计算机上提供了一个键值存储器，类似于使用 cookies，但限制更少、存储容量更大且更易使用。这非常适合存储用户信息，以及存储可以在未来会话中使用的特定应用程序信息。它受从 Internet Explorer 8 及以上的所有现代浏览器的支持，并且每个域都有自己独立的区域。
 
 Web Storage API 与 cookies 之间存在一些关键区别：
 
@@ -10991,7 +10707,7 @@ Web Storage API 与 cookies 之间存在一些关键区别：
 
 ```javascript
 if(window.localStorage) {
-  localStorage.setItem(name, "Walter White");
+  localStorage.setItem("name", "Walter White");
 }
 ```
 
@@ -10999,7 +10715,7 @@ if(window.localStorage) {
 
 ```javascript
 if(window.localStorage) {
-  localStorage.setItem(name, "Walter White");
+  localStorage.setItem("name", "Walter White");
 }
 ```
 
@@ -11007,7 +10723,7 @@ if(window.localStorage) {
 
 ```javascript
 if(window.localStorage) {
-  localStorage.removeItem(name);
+  localStorage.removeItem("name");
 }
 ```
 
@@ -11027,10 +10743,6 @@ if(window.localStorage) {
 }
 ```
 
-
-
-
-
 # 地理定位 (Geolocation)
 
 Geolocation API 用于获取设备的地理位置。这意味着它可以找到用户的精确位置，并链接到附近的场所或测量用户移动的速度。由于隐私考虑，必须由首位用户授予使用该项的权限。
@@ -11047,16 +10759,16 @@ if(navigator.geolocation) {
 
 ```javascript
 function youAreHere(position) {
-alert("Latitude: " + position.coords.latitude + ", Longitude: " + position.coords.longitude);
+  alert("Latitude: " + position.coords.latitude + ", Longitude: " + position.coords.longitude);
 }
 ```
 
 位置对象还有其他属性，可以查找有关设备位置和移动的信息：
 
-- * `position.speed` 属性返回设备以米/秒计的地面速度
-- * `position.altitude` 属性返回设备相对于 WGS84 椭球体的估计高度（米），这是地球中心的标准测量值
-- * `position.heading` 属性返回设备移动的方向，以度为单位的方位，从北顺时针测量
-- * `position.timestamp` 属性返回记录位置信息的时间
+- `position.speed` 属性返回设备以米/秒计的地面速度
+- `position.altitude` 属性返回设备相对于 WGS84 椭球体的估计高度（米），这是地球中心的标准测量值
+- `position.heading` 属性返回设备移动的方向，以度为单位的方位，从北顺时针测量
+- `position.timestamp` 属性返回记录位置信息的时间
 
 位置对象还具有计算测量准确性的属性。在有时只需要知道用户所在的城镇或城市时，这些属性非常有用；而在其他时候，你可能需要他们的精确位置。`position.accuracy` 属性返回纬度和经度属性的准确性（单位为米）。返回的值越小，测量越精确，`position.altitudeAccuracy` 属性也是如此，它返回高度属性的准确性（单位为米）。
 
@@ -11070,13 +10782,15 @@ if(navigator.geolocation) {
 
 可以使用 `clearWatch()` 方法通过使用监听的 ID 参数来停止回调函数的调用：
 
+```javascript
 navigator.geolocation.clearWatch(id);
+```
 
 Geolocation API 为网站或应用程序添加基于位置的信息提供了一个实用的接口。更多信息可以在 [Mozilla 开发者网络 (MDN)](https://developer.mozilla.org/en-US/docs/Web/API/Geolocation_API) 找到。
 
 # Web Workers
 
-我们之前看到 JavaScript 是一种单线程语言，这意味着一次只能有一个进程在运行。**Web workers** 允许在后台运行进程，为 JavaScript 增加了并发支持。其核心思想是将可能耗时较的操作放在后台执行，这样网站就可以继续运行，而不必担心当脚本运行时间过长时会出现 dreaded“脚本已无响应”消息（见[图 14.1](#figure-141)）。
+我们之前看到 JavaScript 是一种单线程语言，这意味着一次只能有一个进程在运行。**Web Workers** 允许在后台运行进程，为 JavaScript 增加了并发支持。其核心思想是将可能耗时较长的操作放在后台执行，这样网站就可以继续运行，而不必担心当脚本运行时间过长时会出现 dreaded“脚本已无响应”消息（见图 14.1）。
 
 ![](img/3f13fb49bc2503b7b87740a26b7bda07_357_0.png)
 
@@ -11152,12 +10866,12 @@ self.close();
 
 ```javascript
 var button = document.getElementById("rainbow");
-
 var rainbow = ["red","orange","yellow","green","blue","indigo","violet"];
 
 function change() {
-  document.body.backgroundColor = rainbow[Math.floor(7*Math.random())];
+  document.body.style.backgroundColor = rainbow[Math.floor(7*Math.random())];
 }
+
 button.addEventListener("click", change);
 ```
 
@@ -11173,7 +10887,9 @@ function factorize(event) {
   var factors = String(factorsOf(number));
   document.getElementById("output").innerHTML = factors;
 }
-``````javascript
+```
+
+```javascript
 function factorsOf(n) {
   if (n < 0) {
     throw new RangeError("Argument Error: Number must be positive");
@@ -11197,37 +10913,28 @@ function factorsOf(n) {
 
 这运行良好，即使是处理一些大数字，正如图 14.2 的截图所示。
 
-
-
-
-
-# 图 14.2. 我们的因数分解器的运行时
+### 图 14.2. 我们的因数分解器的运行时
 
 但如果你输入一个很大的数字（大约 18–20 位），处理答案需要更长时间，浏览器会显示警告，如图 14.3 所示。
 
 ![](img/3f13fb49bc2503b7b87740a26b7bda07_361_0.png)
 
-# 图 14.3. 极大数字的因数分解
+### 图 14.3. 极大数字的因数分解
 
 糟糕的是，在计算因数时无法点击“更改颜色”按钮——整个程序会冻结，直到操作完成。
 
 好消息是我们可以使用 web workers 来解决这个问题。首先，我们在 `js` 文件夹内创建一个名为 `factors.js` 的新文件。从 `scripts.js` 文件中移除 `factorsOf()` 函数并将其添加到该文件中。我们稍后会向该文件中添加更多内容，但首先我们需要编辑 `scripts.js` 中的 `factorize()` 函数，使其包含以下内容：
 
-js/factors.js *(节选)*
-
-```js
+```javascript
 function factorize(event) {
-
   event.preventDefault(); // 防止表单提交
-
   var number = form.number.value;
-
-  if(Worker) {
-    worker = new Worker("link/to/file/factors.js");
-
-    worker.postMessage('message', function(event) {
+  if(typeof Worker !== "undefined") {
+    worker = new Worker("js/factors.js");
+    worker.addEventListener('message', function(event) {
       document.getElementById("output").textContent = event.data;
     }, false);
+    worker.postMessage(number);
   }
 }
 ```
@@ -11238,14 +10945,11 @@ function factorize(event) {
 
 现在我们回到 `factors.js` 文件，并在文件末尾添加此事件监听代码：
 
-```js
-js/factors.js (节选)
-
+```javascript
 self.addEventListener('message', function(event) {
   var factors = String(factorsOf(Number(event.data)));
   self.postMessage(factors);
   self.close();
-
 }, false);
 ```
 
@@ -11253,7 +10957,7 @@ self.addEventListener('message', function(event) {
 
 现在如果我们测试代码，分解一个大数字仍然需要很长时间，但页面将不会冻结。你还可以在后台计算因数时继续更改背景颜色。
 
-# 注意：使用服务器
+### 注意：使用服务器
 
 包含 worker 代码的文件预计将被托管在服务器上。这是最佳选择，但如果你想在本地运行示例，需要在浏览器中关闭“同源策略”（same origin policy）设置。
 
@@ -11291,7 +10995,7 @@ Web workers 允许在单独线程中执行计算密集操作，这意味着程�
 
 可以使用我们在第 6 章中看到的文档方法之一通过变量引用音频或视频元素：
 
-```js
+```javascript
 video = document.getElementsByTagName("video")[0];
 ```
 
@@ -11306,16 +11010,36 @@ video = document.getElementsByTagName("video")[0];
 - `loop`：设置或获取片段是否循环。
 - `duration`：获取片段的长度。
 
+# Canvas
 
+`<canvas>` 元素提供了一个可以使用 JavaScript 绘制图形的区域。它最初由 Apple 引入，用于在 Safari 中显示仪表板小部件，但现在已成为 HTML5 规范的一部分。它提供了一个分辨率相关的位图画布，可以用于渲染图表、游戏图形或其他视觉图像。
 
+要使用 `<canvas>`，首先在 HTML 中添加元素：
+
+```html
+<canvas id="drawing" width="300" height="300">
+  您的浏览器不支持 canvas 元素。
+</canvas>
+```
+
+然后在 JavaScript 中获取绘图上下文：
 
 ```javascript
+var canvas = document.getElementById("drawing");
+var context = canvas.getContext("2d");
+```
+
+`context` 对象提供了绘制图形的方法和属性。`fillStyle` 属性设置填充颜色，`strokeStyle` 属性设置描边颜色。`lineWidth` 属性设置线条宽度。
+
+```javascript
+context.fillStyle = "#00f"; // 蓝色填充颜色
+context.strokeStyle = "#f00"; // 红色描边颜色
 context.lineWidth = 4;
 ```
 
 `fillRect()` 方法可以绘制一个填充的矩形。前两个参数是左上角的坐标，第三个参数是宽度，最后一个参数是高度。以下代码将在画布的左上角坐标 (10,10) 处绘制一个填充的蓝色矩形，宽度为 100 像素，高度为 50 像素：
 
-```
+```javascript
 context.fillRect(10,10,100,50);
 ```
 
@@ -11338,7 +11062,7 @@ context.lineWidth = 15;
 context.stroke();
 ```
 
-`arc()` 方法可以从特定点绘制给定半径的圆弧。前两个参数是圆弧中心的坐标；下一个参数是半径，接着是起始角度，然后是结束角度（注意这些是以弧度为单位的）。最后一个参数是一个布尔值，表示是否应该逆时针绘制圆弧。以下示例使用 Math.PI*2 代表一个圆周：
+`arc()` 方法可以从特定点绘制给定半径的圆弧。前两个参数是圆弧中心的坐标；下一个参数是半径，接着是起始角度，然后是结束角度（注意这些是以弧度为单位的）。最后一个参数是一个布尔值，表示是否应该逆时针绘制圆弧。以下示例使用 `Math.PI*2` 代表一个圆周：
 
 ```javascript
 context.arc(200, 200, 30, 0, Math.PI * 2, false);
@@ -11350,7 +11074,7 @@ context.stroke();
 `fillText()` 方法用于在画布上写入文本。第一个参数是要显示的文本，接下来的两个参数是 x 和 y 坐标。可以使用 `font` 属性来设置使用的字体样式，否则该样式将继承自画布元素的 CSS 设置（注意在在使用 `fillText()` 方法绘制文本之前需要对其进行更改）。以下示例将在坐标 (20,50) 处绘制绿色的“Hello”文本，如图 14.5 所示。
 
 ```javascript
-context.fillStyle = "#00c"; // 蓝色填充颜色
+context.fillStyle = "#0c0"; // 绿色填充颜色
 context.font = "bold 26px sans-serif";
 context.fillText("Hello", 20, 200);
 ```
@@ -11365,7 +11089,7 @@ context.fillText("Hello", 20, 200);
 
 HTML5 API 的进展非常快——新的 API 不断被引入，现有的 API 也经常发生变化。现代浏览器能够很快地更新并实现许多更改，但你不能总是保证用户拥有最新的浏览器。这时，`shim` 或 `polyfill` 就派上用场了。这些库允许你像往常一样使用 API；然后它们会填补用户浏览器未原生提供的必要代码。
 
-`shim` 和 `polyfill` 经常互换使用。它们的主要区别在于：`shim` 段为浏览器添加某些功能的代码，尽管其实现方法可能与标准 API 略有不同；而 `polyfill` 在实现相同功能的同时，使用了如果在该功能被原生支持时会使用的 API 命令。
+`shim` 和 `polyfill` 经常互换使用。它们的主要区别在于：`shim` 为浏览器添加某些功能的代码，尽管其实现方法可能与标准 API 略有不同；而 `polyfill` 在实现相同功能的同时，使用了如果在该功能被原生支持时会使用的 API 命令。
 
 这意味着，作为一名“忍者”开发者，你的代码可以正常使用 API，并且它们在旧版浏览器中也能按预期方式工作。这里的优势是可以使用同一组标准 API 命令——你不需要编写额外的代码来处理不同程度的支持。当用户更新他们的浏览器时，这种过渡将是无缝的，因为他们的体验将保持不变。一旦确认有足够的用户使用了最新浏览器，你就可以移除 `polyfill` 代码而无需更新任何实际的 JavaScript 代码。
 
@@ -11422,9 +11146,9 @@ jQuery 发布于 2006 年，最初是一个 DOM 操作框架。它已经成长�
 
 jQuery 是一个非常强大且完善的框架，提供了许多实用的方法。它已经如此流行，以至于许多在线教程都假设你正在使用 jQuery 而不仅仅是 JavaScript。你可以通过阅读 Earle Castle 和 Craig Sharkie 编写的优秀书籍《jQuery: Novice to Ninja: New Kicks and Tricks》来了解更多 jQuery 的知识。
 
-## 注意：$ 符号
+### 注意：$ 符号
 
-jQuery 框架使用 `$` 符号作为全局命名空间对象。它实际上是全局 `jquery` 对象的方便别名，所有的 jQuery 方法都是该对象的方法。这防止了全局作用域被所有的 jQuery 方法所污染。其他框架以类似的方式使用 `$` 符号，因为只需要一个字符即可访问任何方法；然而，如果它们中的一个被用于同一个项目，可能会导致方法冲突。
+jQuery 框架使用 `$` 符号作为全局命名空间对象。它实际上是全局 `jQuery` 对象的方便别名，所有的 jQuery 方法都是该对象的方法。这防止了全局作用域被所有的 jQuery 方法所污染。其他框架以类似的方式使用 `$` 符号，因为只需要一个字符即可访问任何方法；然而，如果它们中的一个被用于同一个项目，可能会导致方法冲突。
 
 ## 框架的优缺点
 
@@ -11461,78 +11185,77 @@ jQuery 框架使用 `$` 符号作为全局命名空间对象。它实际上是�
 
 不要依赖框架而发现自己学习的是框架而不是语言。使用框架有时会让你的代码变得凌乱；例如，编写看起来简洁但实际上效率低下的 jQuery 表达式。即使你选择使用库或框架，也要记住应该对事物的工作原理保持好奇。事实上，阅读框架的源代码是学习强大的 JavaScript 编程技巧的极佳方法。
 
-
-
+# 模块
 
 而不是局限于单一的用例。
 
 当你开始使用越来越多的模块时，你会发现某些模块依赖于其他模块才能工作。这些模块被称为依赖（dependencies）。依赖管理是确保模块所需的所有依赖都得到满足的过程。除非项目变得非常大，否则手动完成这可能是困难的。
 
-JavaScript 缺乏内置的模块创建方式 [8]，但可以使用 JavaScript 提供的工具来创建模块。实现这种功能的一种流行方法是使用 Christian Heilmann 的揭示模块模式（Revealing Module pattern）。它使用一个立即调用函数表达式（IIFE）返回一个对象作为模块，并将该对象存储在自己的命名空间（即赋值给它的变量）中，这有助于防止任何方法与其他同名方法发生冲突。
+JavaScript 缺乏内置的模块创建方式，但可以使用 JavaScript 提供的工具来创建模块。实现这种功能的一种流行方法是使用 Christian Heilmann 的揭示模块模式（Revealing Module pattern）。它使用一个立即调用函数表达式（IIFE）返回一个对象作为模块，并将该对象存储在自己的命名空间（即赋值给它的变量）中，这有助于防止任何方法与其他同名方法发生冲突。
 
 例如，我们根据第 11 章中创建的 `sum()`、`mean()` 和 `standardDeviation()` 函数创建了一个 `stats` 模块：
 
-```
+```javascript
 var Stats = (function() {
   "use strict";
 
   // square and sum are private functions
-function square(x) {
-  return x * x;
-}
-
-function sum(array, callback) {
-  if (typeof callback === "function") {
-    array = array.map(callback);
+  function square(x) {
+    return x * x;
   }
-  return array.reduce(function(a,b) { return a + b; });
-}
 
-function mean(array) {
-  return sum(array) / array.length;
-}
+  function sum(array, callback) {
+    if (typeof callback === "function") {
+      array = array.map(callback);
+    }
+    return array.reduce(function(a,b) { return a + b; });
+  }
 
-function sd(array) {
-  return sum(array,square) / array.length - square(mean(array));
-}
+  function mean(array) {
+    return sum(array) / array.length;
+  }
+
+  function sd(array) {
+    return sum(array,square) / array.length - square(mean(array));
+  }
 
   // public functions are exported as methods of an object
-return {
-  mean: mean,
-  standardDeviation: sd
-};
-})());
+  return {
+    mean: mean,
+    standardDeviation: sd
+  };
+})();
 ```
 
-此函数将返回一个赋值给变量 `stats` 的对象。它有两个公共方法：`mean()` 和 `standardDeviation()`。该模块还有两个私有函数：`square()` 和 `sum()`，它们没有被返回，因此对模块外部不可用（它们仅在其他方法的内部被使用）。通过 `Stats` 对象调用公共方法：
+此函数将返回一个赋值给变量 `Stats` 的对象。它有两个公共方法：`mean()` 和 `standardDeviation()`。该模块还有两个私有函数：`square()` 和 `sum()`，它们没有被返回，因此对模块外部不可用（它们仅在其他方法的内部被使用）。通过 `Stats` 对象调用公共方法：
 
-```
+```javascript
 Stats.mean([1,2,3]);
-<< 2
+// 2
 ```
 
-```
+```javascript
 Stats.standardDeviation([1,2,3]);
-<< 0.6666666666666666
+// 0.6666666666666666
 ```
 
 要在网页中使用模块，请在页面的 script 标签中包含保存模块的文件：
 
-```
+```html
 <script src="stats.js"></script>
 ```
 
 目前出现了两种实现 JavaScript 模块的方法：CommonJS 模块模式和异步模块定义模式（AMD）。遗憾的是，这些模式之间是不兼容的。下面是每种模式的示例，它们都能将模块保持在自己的命名空间中，并添加多个方法以及模块和其他与其他模块的依赖。
 
-# CommonJS 模块
+## CommonJS 模块
 
 CommonJS 模块具有紧凑的语法，专为同步加载设计。它是 Node.js 中实现模块的方式。
 
 模块在单独的文件创建，并使用 `module.exports` 方法使任何函数对其他文件可用。例如，我们可以为第 11 章中创建的 `random` 函数创建一个模块，首先将以下代码放在名为 `random.js` 的文件中：
 
-```
+```javascript
 module.exports = function(a,b) {
-if(b===undefined) b = a; // 如果只提供了一个参数，假设下限为 1
+  if(b===undefined) b = a; // 如果只提供了一个参数，假设下限为 1
   return Math.floor((b-a) * Math.random()) + a;
 }
 ```
@@ -11541,15 +11264,15 @@ if(b===undefined) b = a; // 如果只提供了一个参数，假设下限为 1
 
 要使用该模块，需要在主文件 `scripts.js` 内部引入它。这是通过 `require()` 方法实现的，它接受包含模块的文件作为参数，并返回导出的函数：
 
-```
+```javascript
 var random = require('./random');
 ```
 
 模块中导出的函数现在赋值给变量 `random`，然后使用它来调用该函数：
 
-```
+```javascript
 random(6);
-<< 4
+// 4
 ```
 
 ## 异步模块定义
@@ -11558,7 +11281,7 @@ random(6);
 
 AMD 模块写在单个文件中，并作为 `define()` 函数的参数提供。以下代码示例了如何在名为 `random.js` 的文件中将 `random()` 函数定义为 AMD 模块：
 
-```
+```javascript
 define({
   random: function (a, b) {
     if (b===undefined) b = a, a = 1; // 如果只提供了一个参数，假设下限为 1
@@ -11569,11 +11292,11 @@ define({
 
 使用该模块的过程与 CommonJS 模块语法相同。此代码将被放在主文件 `scripts.js` 中：
 
-```
+```javascript
 var random = require('./random');
 ```
 
-要使用 Require，你只需要在 HTML 文件中使用单独的 `<script>` 标签：
+要使用 RequireJS，你只需要在 HTML 文件中使用单独的 `<script>` 标签：
 
 ```html
 <script data-main="js/scripts.js" src="lib/require.js"></script>
@@ -11585,9 +11308,7 @@ var random = require('./random');
 require.config({
   // 任何配置都放在这里
 });
-```
 
-```
 require(['jquery', 'random']);
 ```
 
@@ -11595,7 +11316,7 @@ require(['jquery', 'random']);
 
 随着模块在 JavaScript 中变得越来越广泛的使用，需要工具来管理它们。包管理器有助于将代码组织成模块。它们还可以处理模块之间的依赖管理。
 
-# Browserify
+## Browserify
 
 一种使用 CommonJS 模式的工具，如 Browserify。它可以用于打包你自己的模块，也可以用于使用 Node 包管理器 (npm) 下载并安装的第三方模块。它创建一个包含所有必要模块（包括任何依赖项）的单个包文件。这意味着你可以将所有代码组织成单独的模块，但在 HTML 文件中只需要一个包文件：
 
@@ -11605,31 +11326,31 @@ require(['jquery', 'random']);
 
 npm 包通常需要 Node.js 运行，但 Browserify 也可以用于将 npm 包编译成在浏览器中运行的代码。任何以 npm 包形式提供的流行代码库都可以用于基于 Web的项目。要做到这一点，你需要在自己的机器上安装 Node.js 和 npm 包管理器。
 
-# 注意：Node 包管理器
+### 注意：Node 包管理器
 
 如果你安装了 Node.js（对于现代 JavaScript 开发者来说，这变得越来越有用），安装程序中将包含 Node 包管理器。这是用于安装 Node.js 编写的模块的包管理器。它包含了大量可以用于各种任务的模块。
 
+# MVC 架构
 
+MVC（模型-视图-控制器）是一种软件架构模式，用于分离应用程序的关注点。它将应用程序分为三个主要组件：
 
-以及删除（被称为 CRUD 任务），关于应用程序的特定信息，以及任何其他相关的逻辑和行为。例如，在一个待办事项应用中，会有一个任务模型，提供访问任务信息的方法，例如任务名称、截止日期和已完成的任务。这些数据将存储在数据库或其他其他容器中。
+- **模型（Models）**负责管理数据、逻辑和规则。它们提供创建、读取、更新以及删除（被称为 CRUD 任务），关于应用程序的特定信息，以及任何其他相关的逻辑和行为。例如，在一个待办事项应用中，会有一个任务模型，提供访问任务信息的方法，例如任务名称、截止日期和已完成的任务。这些数据将存储在数据库或其他其他容器中。
 
--   **视图（Views）**提供了模型的视觉表示，显示所有相关信息。在 Web 应用程序中，这将是在 页面上显示的 HTML。视图还为用户提供了与应用程序交互的方式，通常通过表单实现。在待办事项应用中，视图将以 HTML 列表的形式显示任务，并带有复选框，用户可以勾选该框来表示任务已完成。
+- **视图（Views）**提供了模型的视觉表示，显示所有相关信息。在 Web 应用程序中，这将是在 页面上显示的 HTML。视图还为用户提供了与应用程序交互的方式，通常通过表单实现。在待办事项应用中，视图将以 HTML 列表的形式显示任务，并带有复选框，用户可以勾选该框来表示任务已完成。
 
--   **控制器（Controllers）**通过在模型和视图之间进行通信将它们连接在一起。它们响应事件（这些事件通常是用户的输入，例如在表单中输入某些数据），处理信息，然后相应地更新模型和视图。在待办事项应用中，控制器函数将响应用户点击复选框的事件，然后通知模型任务已完成。模型将更新关于该任务的信息。
+- **控制器（Controllers）**通过在模型和视图之间进行通信将它们连接在一起。它们响应事件（这些事件通常是用户的输入，例如在表单中输入某些数据），处理信息，然后相应地更新模型和视图。在待办事项应用中，控制器函数将响应用户点击复选框的事件，然后通知模型任务已完成。模型将更新关于该任务的信息。
 
 ![](img/3f13fb49bc2503b7b87740a26b7bda07_382_0.png)
 
-注意：MV*
+### 注意：MV*
 
 看到使用缩写 MV* 来描述 JavaScript 框架而不是 MVC 是一种非常常见的现象。这是因为许多 JavaScript 实现并没有严格遵循控制器模式。有时控制器代码会混合在视图中，有时会使用其他模式，例如模型-视图-演示器（MVP）、模型-视图视图模型（MVVM），以及自称为模型-视图-任意（MVW）框架的 Angular。这些往往只是 MVC 模式的微变体，但为了简单起见，MV* 被作为一个通用术语。
 
-# 快速列表示例
+## 快速列表示例
 
 这是一个如何使用 JavaScript 实现 MVC 架构的示例。它是一个简单的列表创建器，允许用户通过向表单字段中输入内容来添加列表。
 
-首先，创建一个名为 MVC 的文件夹，并将以下内容保存为 list.htm：
-
-list.htm
+首先，创建一个名为 MVC 的文件夹，并将以下内容保存为 `list.htm`：
 
 ```html
 <!doctype html>
@@ -11650,11 +11371,9 @@ list.htm
 </html>
 ```
 
-这是一个基础 HTML5 Web 页面，包含一个带有单输入字段的表单，用于输入列表项。它还包含一个空的 `<li>` 元素用于放置列表项。现在我们需要创建 JavaScript 文件。在名为 js 的文件夹内创建一个名为 scripts.js 的文件。
+这是一个基础 HTML5 Web 页面，包含一个带有单输入字段的表单，用于输入列表项。它还包含一个空的 `<ul>` 元素用于放置列表项。现在我们需要创建 JavaScript 文件。在名为 js 的文件夹内创建一个名为 `scripts.js` 的文件。
 
-在 JavaScript 中，模型通常由一个构造函数表示，该函数可以创建对象的新实例。在此处，我们将跟踪列表拥有的所有属性以及任何方法。在这个示例中，我们将创建一个 `Item()` 构造函数，它仅有一个作为构造函数参数提供的 `name` 属性。将此代码添加到 scripts.js 中：
-
-js/scripts.js (节)
+在 JavaScript 中，模型通常由一个构造函数表示，该函数可以创建对象的新实例。在此处，我们将跟踪列表拥有的所有属性以及任何方法。在这个示例中，我们将创建一个 `Item()` 构造函数，它仅有一个作为构造函数参数提供的 `name` 属性。将此代码添加到 `scripts.js` 中：
 
 ```javascript
 "use strict"
@@ -11665,47 +11384,45 @@ function Item(name) {
 
 每个创建的新列表项都是该构造函数的一个实例。
 
-接下来，我们将创建一个控制器对象。它负责在用户添加信息时为表单添加事件监听器。当这种情况发生时，它将创建一个模型实例并渲染更新后的视图。将以下代码添加到 scripts.js：
+接下来，我们将创建一个控制器对象。它负责在用户添加信息时为表单添加事件监听器。当这种情况发生时，它将创建一个模型实例并渲染更新后的视图。将以下代码添加到 `scripts.js`：
 
 ```javascript
-js/scripts.js (节)
-controller = {
-  watch: function("submit", function(event) {
-    event.preventDefault(); // 防止表单被提交
-    this.add(form.name.value);
-  }.bind(this, false)); // 将此 绑定到控制器而不是表单
+var controller = {
+  watch: function() {
+    var form = document.getElementById("Input");
+    form.addEventListener("submit", function(event) {
+      event.preventDefault(); // 防止表单被提交
+      this.add(form.name.value);
+    }.bind(this), false); // 将此 绑定到控制器而不是表单
   },
 
   add: function(name) {
     var item = new Item(name);
     view.render(item);
   }
-}
+};
 ```
 
-之后，我们创建一个带有 `render()` 方法的视图对象。它用于产生一个 HTML 片段，显示实例的名称（来自存储在模型中的 name 属性）。它使用 DOM API 动态地插入到列表中。将以下代码添加到 scripts.js 文件中：
+之后，我们创建一个带有 `render()` 方法的视图对象。它用于产生一个 HTML 片段，显示实例的名称（来自存储在模型中的 name 属性）。它使用 DOM API 动态地插入到列表中。将以下代码添加到 `scripts.js` 文件中：
 
 ```javascript
-js/scripts.js (节)
-view = {
-  render: function() {
+var view = {
+  render: function(item) {
     var list = document.getElementById("list");
     var li = document.createElement("li");
     li.textContent = item.name;
     list.appendChild(li);
   }
-}
+};
 ```
 
-最后，我们必须调用控制器的 `watch()` 方法。它监控表单并检查它何时被提交。将此行添加到 scripts.js 文件的末：
+最后，我们必须调用控制器的 `watch()` 方法。它监控表单并检查它何时被提交。将此行添加到 `scripts.js` 文件的末：
 
 ```javascript
-controller.watch(document.getElementById("input"));
+controller.watch(document.getElementById("Input"));
 ```
 
-js/scripts.js (节)
-
-在浏览器中打开 list.html，并尝试向列表添加一些项。它看起来应该像图 15.2 中的截图一样。
+在浏览器中打开 `list.htm`，并尝试向列表添加一些项。它看起来应该像图 15.2 中的截图一样。
 
 ![](img/3f13fb49bc2503b7b87740a26b7bda07_385_0.png)
 
@@ -11713,44 +11430,45 @@ js/scripts.js (节)
 
 这只是 MVC 的一个微小而简单的示例。尽管如此，我希望这个示例演示了如何将代码分离到三个组件中。注意：保存数据
 
-大多数 Web 应用程序都需要某种形式的持久化来保存模型中的信息。可以使用我们在上一节中过的 Web Storage API。另一种常用的选项是当模型发生变化时，使用 Ajax 将模型的 JSON 表示发送到后端数据库。
+
+
+大多数 Web 应用程序都需要某种形式的持久化来保存模型中的信息。可以使用我们在上一节中过的 `Web Storage API`。另一种常用的选项是当模型发生变化时，使用 `Ajax` 将模型的 `JSON` 表示发送到后端数据库。
 
 # MVC 框架
 
-实现 MVC 可能需要大量工作，已经出现了许多框架可以为你处理大部分设置代码。MVC 框架的一个主要功能之一是数据绑定，它是连接模型和视图的过程。结果是，不需要大量的样板代码。单向数据绑定是指模型的变化会自动导致视图的更新，而双向数据绑定是指视图的变化会自动更新模型。这些这些方法通常通过使用路由井号来访问。控制器会查找 URL 中的井号以获取要执行的信息。例如，URL `http://ninjatasks.com/user/23#add` 可能用于添加任务，而 `http://ninjatasks.com/user/23#edit-task-32` 将用于编辑 ID 为 32 的任务。
+实现 MVC 可能需要大量工作，已经出现了许多框架可以为你处理大部分设置代码。MVC 框架的一个主要功能之一是数据绑定，它是连接模型和视图的过程。结果是，不需要大量的样板代码。单向数据绑定是指模型的变化会自动导致视图的更新，而双向数据绑定是指视图的变化会自动更新模型。这些方法通常通过使用路由井号来访问。控制器会查找 URL 中的井号以获取要执行的信息。例如，URL `http://ninjatasks.com/user/23#add` 可能用于添加任务，而 `http://ninjatasks.com/user/23#edit-task-32` 将用于编辑 ID 为 32 的任务。
 
 视图是使用 HTML 编写的简单页面，尽管通常可以使用可以将动态数据插入页面的模板语言（将在后续章节中介绍这些）：
 
-- Ember 是一个为了更容易构建大型 Web 应用程序设计的框架。它通过使用通用约定来避免大量的设置代码，尽管如果不遵循这些约定，可能会变得更加复杂。
+- **Ember** 是一个为了更容易构建大型 Web 应用程序设计的框架。它通过使用通用约定来避免大量的设置代码，尽管如果不遵循这些约定，可能会变得更加复杂。
 
-- AngularJS 是 Google 的一个强大框架，用于更容易创建动态 Web 应用程序。这是通过使用 ng-属性扩展 HTML 语言来实现的。
+- **AngularJS** 是 Google 的一个强大框架，用于更容易创建动态 Web 应用程序。这是通过使用 `ng-` 属性扩展 HTML 语言来实现的。
 
-- CanJS 是一个快速且轻级的支持数据绑定的框架。
+- **CanJS** 是一个快速且轻量级的支持数据绑定的框架。
 
-- Backbone.js 是由 Jeremy Ashkenas 创建的轻量级 MVC 框架。它对于如何执行任务没有太多的见解，使其非常灵活，但通常需要更多的代码来实现其他框架中几行代码就能完成的工作。
+- **Backbone.js** 是由 Jeremy Ashkenas 创建的轻量级 MVC 框架。它对于如何执行任务没有太多的见解，使其非常灵活，但通常需要更多的代码来实现其他框架中几行代码就能完成的工作。
 
 TodoMVC 网站有许多用流行的 MVC 框架编写的待办事项列表示例。
 
 # 模板
 
-
-
 MVC 框架使用模板语言将动态数据插入到页面中。
+
 模板语言可以用 HTML 或其他语言（如 markdown）编写，并编译为 HTML。它们可以是整个页面，但通常只是部分——即页面的一部分。这意味着应用程序可以在无需向服务器发送请求（即处理 HTTP 请求）的情况下更新页面的部分。这通常通过将 HTML 片段动态插入到 DOM 中来实现。
 
-模板语言允许 HTML 与 JavaScript 程序分离，这使得维护变得更加容易，因为它们不再紧密耦合。模板通常存储在单独的文件中或其对应的 script 标签内部，因此它们可以被重复使用，并且在需要更改时可以在一个地方进行快速编辑。此外，这还避免了向文档中插入大段 HTML 字符串（这会对性能产生负面影响）。只需要指向包含模板的相关文件的引用即可。
+模板语言允许 HTML 与 JavaScript 程序分离，这使得维护变得更加容易，因为它们不再紧密耦合。模板通常存储在单独的文件中或其对应的 `script` 标签内部，因此它们可以被重复使用，并且在需要更改时可以在一个地方进行快速编辑。此外，这还避免了向文档中插入大段 HTML 字符串（这会对性能产生负面影响）。只需要指向包含模板的相关文件的引用即可。
 
-模板语言具有一种向 HTML 插入动态数据的机制。它们倾向于分为两派：在大花括号（“胡须”符号 `{{ }}`）内放置动态代码，或者在嵌入 Ruby (ERB) 创建的特殊 `< %>` 标签内。
+模板语言具有一种向 HTML 插入动态数据的机制。它们倾向于分为两派：在大花括号（“胡须”符号 `{{ }}`）内放置动态代码，或者在嵌入 Ruby (ERB) 创建的特殊 `<% %>` 标签内。
 
-例如，Mustache 和 Handlebars 使用这种方法将变量的值插入到标题中：
+例如，`Mustache` 和 `Handlebars` 使用这种方法将变量的值插入到标题中：
 
-```
+```html
 <h1>Hello {{ name }}</h1>
 ```
 
-相反，Underscore 和 EJS 使用以下方式来实现相同的结果：
+相反，`Underscore` 和 `EJS` 使用以下方式来实现相同的结果：
 
-```
+```html
 <h1>Hello <%= name %></h1>
 ```
 
@@ -11758,7 +11476,7 @@ MVC 框架使用模板语言将动态数据插入到页面中。
 
 例如，假设我们想显示以下待办对象数组：
 
-```
+```javascript
 var tasks = [
   { name: "Get Milk" },
   { name: "Go for a run" },
@@ -11768,17 +11486,17 @@ var tasks = [
 ];
 ```
 
-Mustache 实现了“无逻辑”的模板，这些模板不需要在 JavaScript 中显式编写任何行逻辑代码；相反，逻辑是从上下文中推断出来的。它是如何遍历任务以显示任务列表的：
+`Mustache` 实现了“无逻辑”的模板，这些模板不需要在 JavaScript 中显式编写任何行逻辑代码；相反，逻辑是从上下文中推断出来的。它是如何遍历任务以显示任务列表的：
 
-```
-<<ul>
+```html
+<ul>
 {{#tasks}}
 <li>{{name}}</li>
 {{/tasks}}
 </ul>
 ```
 
-EJS 使用了更具显式的 JavaScript 编码来实现相同的结果。每行 JavaScript 代码都放在特殊的 `<% %>` 标签内。如果需要对任何值进行求值，则将其放在 `<%= %>` 中：
+`EJS` 使用了更具显式的 JavaScript 编码来实现相同的结果。每行 JavaScript 代码都放在特殊的 `<% %>` 标签内。如果需要对任何值进行求值，则将其放在 `<%= %>` 中：
 
 ```html
 <ul>
@@ -11814,9 +11532,7 @@ EJS 使用了更具显式的 JavaScript 编码来实现相同的结果。每行 
 
 ## 注意：Web 组件（Web Components）
 
-
-
-W3C 正在开发一种名为 Web Components 的标准，该标准试图扩展 HTML 并引入新功能，如模板、自定义标签、导入 HTML 部分的能力以及影子 DOM (shadow DOM)。其理念是使用它来开发模块化且自包含的组件，这些组件可以在不同的应用程序中重复使用。实现这些标准的一个例子是 Polymer 项目，它允许开发从小型部件到完整应用程序的任何内容。Web Components 是一个快速发展的领域，可能会在开发 Web 应用时被广泛使用。
+W3C 正在开发一种名为 `Web Components` 的标准，该标准试图扩展 HTML 并引入新功能，如模板、自定义标签、导入 HTML 部分的能力以及影子 DOM (`shadow DOM`)。其理念是使用它来开发模块化且自包含的组件，这些组件可以在不同的应用程序中重复使用。实现这些标准的一个例子是 `Polymer` 项目，它允许开发从小型部件到完整应用程序的任何内容。`Web Components` 是一个快速发展的领域，可能会在开发 Web 应用时被广泛使用。
 
 ## 压缩化（Minification）
 
@@ -11828,9 +11544,9 @@ W3C 正在开发一种名为 Web Components 的标准，该标准试图扩展 HT
 - Google Closure
 - UglifyJS
 
-这些工具还可以将变量和函数名改为单个字母。这通常被称为代码混淆（code obfuscation），因为它使代码更难以阅读。它们还会尝试采用优化来使代码运行更快。例如，这里我们在本节之前创建的 Stats 模块在使用 UglifyJS 之后：
+这些工具还可以将变量和函数名改为单个字母。这通常被称为代码混淆（code obfuscation），因为它使代码更难以阅读。它们还会尝试采用优化来使代码运行更快。例如，这里我们在本节之前创建的 `Stats` 模块在使用 `UglifyJS` 之后：
 
-```
+```javascript
 var Stats=function(function(e){return e*e})(function(e,t){if(typeof t="function")e.map(t)return e.reduce(function(e,t) e+t)function n(e){return t(e)/e.length}function(r){return t(r,r)/r.length-e(n)}return mean(n,standardDeviation:r)(r)}()
 ```
 
@@ -11838,7 +11554,7 @@ var Stats=function(function(e){return e*e})(function(e,t){if(typeof t="function"
 
 压缩你的代码可以对文件的总体大小产生重大影响，使它们下载和运行得更快。这意味着你的代码可以使用具有描述性的命名规范并带有良好的注释，因为这些会被压缩工具剥离。根据一般原则，你应该在开发阶段目标是注释良好且具有描述性的代码，而在生产环境中使用压缩代码（因为终端用户没有必要阅读注释）。
 
-文件也可以在服务器上使用 gzip 等文件压缩工具进行压缩，这对于减小文件大小具有显著效果。在生产环境 JavaScript 文件中同时使用压缩和压缩，其大小仅为原始大小的一小部分，使其下载快得多。
+文件也可以在服务器上使用 `gzip` 等文件压缩工具进行压缩，这对于减小文件大小具有显著效果。在生产环境 JavaScript 文件中同时使用压缩和压缩，其大小仅为原始大小的一小部分，使其下载快得多。
 
 ## 任务运行器（Task Runners）
 
@@ -11852,11 +11568,13 @@ var Stats=function(function(e){return e*e})(function(e,t){if(typeof t="function"
 
 ## Grunt
 
-在写本文时，最流行的任务运行器可能是 Grunt。它可以用于各种任务，并有一个插件系统，因此许多常见任务已经作为插件可用。Grunt 需要 Node.js 来运行，并使用以下代码安装：
+在写本文时，最流行的任务运行器可能是 `Grunt`。它可以用于各种任务，并有一个插件系统，因此许多常见任务已经作为插件可用。`Grunt` 需要 `Node.js` 来运行，并使用以下代码安装：
 
+```bash
 npm install grunt -g
+```
 
-注意 `-g` 标志用于全局安装，使其在系统的所有地方可用。它可以使用 grunt 而不是 node grunt 来运行。npm 还需要一个 package.json 文件。该文件列出了运行任务所需的所有 npm 包。基础 package.json 文件可以使用 `npm init` 命令创建。这里是 package.json 的示例：
+注意 `-g` 标志用于全局安装，使其在系统的所有地方可用。它可以使用 `grunt` 而不是 `node grunt` 来运行。`npm` 还需要一个 `package.json` 文件。该文件列出了运行任务所需的所有 `npm` 包。基础 `package.json` 文件可以使用 `npm init` 命令创建。这里是 `package.json` 的示例：
 
 ```json
 {
@@ -11868,9 +11586,10 @@ npm install grunt -g
   }
 }
 ```
-一个 Grunt 文件来创建自定义任务。它包含了任务所需的所有配置，始终保存为 Gruntfile.js。以下示例显示了一个创建默认任务的 Grunt 文件；它将压缩 src 文件夹。
 
-它使用 uglify 插件来压缩代码。所有的 Grunt 文件都放在使用 CommonJS 模块语法的封装函数内部：
+一个 `Grunt` 文件来创建自定义任务。它包含了任务所需的所有配置，始终保存为 `Gruntfile.js`。以下示例显示了一个创建默认任务的 `Grunt` 文件；它将压缩 `src` 文件夹。
+
+它使用 `uglify` 插件来压缩代码。所有的 `Grunt` 文件都放在使用 `CommonJS` 模块语法的封装函数内部：
 
 ```javascript
 module.exports = function(grunt) {
@@ -11892,31 +11611,32 @@ module.exports = function(grunt) {
 
 要运行默认任务，只需在终端输入以下命令：
 
-Gulp 是另一个比 Grunt 更晚出现的任务运行器，但它越来越受欢迎。Gulp 同样需要 Node.js 来运行，并通过 npm 安装。它也有自己的插件系统，尽管插件数量相对较少。
-
-Gulp 使用 package.json 文件和 Gulp 文件（始终保存为 gulpfile.js）来创建任务，但其语法与 Grunt 文件不同。Gulp 代码通过使用数据流的概念工作，数据流从一个插件管道到下一个插件，最后结果被管道到给定的目标。例如，压缩插件将获取来自 src 文件夹的文件流并将其管道到压缩器，压缩器会将压缩代码管道到名为 js 的文件夹。这意味着它可以比 Grunt 运行更快，因为不需要创建中间文件。
-
-Gulp 还有的能力
-
-
-
-
-使用 `gulp.watch()` 方法来监控文件。这将监控一个文件或一组文件，并在文件发生更改时运行一个函数。如果你想在任何文件更改时立即自动运行测试以快速发现任何错误，这将非常有用。
-
-下面是一个用于压缩一组文件的 gulp 文件示例。它使用了 `gulp-minify` 插件，该插件使用 `UglifyJS` 来压缩 `src` 目录下的任何 JavaScript 文件。
-
+```bash
+grunt
 ```
+
+## Gulp
+
+`Gulp` 是另一个比 `Grunt` 更晚出现的任务运行器，但它越来越受欢迎。`Gulp` 同样需要 `Node.js` 来运行，并通过 `npm` 安装。它也有自己的插件系统，尽管插件数量相对较少。
+
+`Gulp` 使用 `package.json` 文件和 `Gulp` 文件（始终保存为 `gulpfile.js`）来创建任务，但其语法与 `Grunt` 文件不同。`Gulp` 代码通过使用数据流的概念工作，数据流从一个插件管道到下一个插件，最后结果被管道到给定的目标。例如，压缩插件将获取来自 `src` 文件夹的文件流并将其管道到压缩器，压缩器会将压缩代码管道到名为 `js` 的文件夹。这意味着它可以比 `Grunt` 运行更快，因为不需要创建中间文件。
+
+`Gulp` 还有的能力使用 `gulp.watch()` 方法来监控文件。这将监控一个文件或一组文件，并在文件发生更改时运行一个函数。如果你想在任何文件更改时立即自动运行测试以快速发现任何错误，这将非常有用。
+
+下面是一个用于压缩一组文件的 `gulp` 文件示例。它使用了 `gulp-minify` 插件，该插件使用 `UglifyJS` 来压缩 `src` 目录下的任何 JavaScript 文件。
+
+```javascript
 var gulp = require('gulp'), // 需要 gulp
-minify = require('gulp-minify'); // 加载 minify 插件
+    minify = require('gulp-minify'); // 加载 minify 插件
 
 var
-source = 'src/*', // 这指定了源文件的位置
-dest = 'js/'; // 这指定了输出的目录
+    source = 'src/*', // 这指定了源文件的位置
+    dest = 'js/'; // 这指定了输出的目录
 
 gulp.task('default', function() {
   gulp.src(source) // 要读取的流
-  .pipe(minify()) // 将流传递给 minify 插件
-  .pipe(gulp.dest('./js')); // 流写入到的位置
+    .pipe(minify()) // 将流传递给 minify 插件
+    .pipe(gulp.dest('./js')); // 流写入到的位置
 });
 
 gulp
@@ -11924,23 +11644,27 @@ gulp
 
 要运行此任务，请在终端中输入以下命令：
 
-在编写时，Grunt 是最流行的任务运行器，并且有更多的文档和插件可用。Grunt 因其更精简、更简洁的语法而变得流行。此外，还有其他替代方案，如 Broccoli 和 Brunch，未来肯定会有更多工具出现。
+```bash
+gulp
+```
+
+在编写时，`Grunt` 是最流行的任务运行器，并且有更多的文档和插件可用。`Gulp` 因其更精简、更简洁的语法而变得流行。此外，还有其他替代方案，如 `Broccoli` 和 `Brunch`，未来肯定会有更多工具出现。
 
 ## 部署 JavaScript
 
 当涉及到部署你的 JavaScript 程序时，是时候考虑优化代码了。如果你使用了多个外部库和模块，你可能有大量文件需要包含在 HTML 文件中。实现此点的一种方法是简单地为每个 JavaScript 文件包含一个 `<script>` 标签；然而，出于许多原因，这并不是最优的：
 
--   脚本必须按照代码顺序包含
--   每个文件代表对服务器的次独立请求
--   文件将很大
+- 脚本必须按照代码顺序包含
+- 每个文件代表对服务器的次独立请求
+- 文件将很大
 
 解决方案是将所有脚本合并成一个经过压缩和处理的文件。有许多方法可以实现这一点，其中一些我们在本章中已经看过。
 
-你可以使用 Bower、End 或 Browserify 等包管理器来处理依赖管理；Browserify 还会将所有内容打包成一个单独的文件给你。或者，你可以使用 Grunt 或 Gulp 自动化合并文件并同时进行压缩的过程。服务器端也有许多选项可以为你完成这些工作。
+你可以使用 `Bower`、`End` 或 `Browserify` 等包管理器来处理依赖管理；`Browserify` 还会将所有内容打包成一个单独的文件给你。或者，你可以使用 `Grunt` 或 `Gulp` 自动化合并文件并同时进行压缩的过程。服务器端也有许多选项可以为你完成这些工作。
 
 一旦你将所有文件合并到一个文件并对其进行压缩和处理，下一步将其添加到 HTML 文件中。`<script>` 标签的最佳位置是页面右侧、紧接在 `</body>` 标签之前，我们在我们所有的示例中都使用了这一点：
 
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11956,19 +11680,19 @@ gulp
 
 这将确保页面在处理 JavaScript 代码之前已完成加载。
 
-如果你有大量的 JavaScript（即使在压缩之后），还可以进行进一步的优化，例如懒加载和预加载（预加载）。**懒加载（Lazy loading）**是加载立即需要的关键代码的过程，然后通过在 DOM 中动态插入另一个脚本标签来加载任何其他代码的过程。**预加载（Preloading）**是加载未来页面可能需要的任何代码的过程。这样，当用户访问相关页面时，代码已经下载完成。
+如果你有大量的 JavaScript（即使在压缩之后），还可以进行进一步的优化，例如懒加载和预加载。**懒加载（Lazy loading）**是加载立即需要的关键代码的过程，然后通过在 DOM 中动态插入另一个脚本标签来加载任何其他代码的过程。**预加载（Preloading）**是加载未来页面可能需要的任何代码的过程。这样，当用户访问相关页面时，代码已经下载完成。
 
 ## 测验 Ninja 项目
 
 我们将在测验项目中将在本章中学到的一些思想付实践。我们的第一个任务是使用 IIFE（立即调用函数表达式）将所有的视图逻辑移动到一个自包含的模块中。我们包含了所有引用元素的变量（以 `$` 符号开头的）以及 `update()`、`hide()` 和 `show()` 函数。我们将所有这些内容移动到一个匿名 IIFE 中，该函数返回一个赋值给全局变量 `view` 的对象。将以下代码添加到 `scripts.js` 文件的开头（紧接 `"use strict"` 声明之后）：
 
-```
+```javascript
 var view = (function () {
-  function update(element,content,klass) {
+  function update(element, content, klass) {
     var p = element.firstChild || document.createElement("p");
     p.textContent = content;
     element.appendChild(p);
-    if(klass) {
+    if (klass) {
       p.className = klass;
     }
   }
@@ -11993,49 +11717,49 @@ var view = (function () {
     hide: hide,
     show: show
   };
-})());
+})();
 ```
 
 这定义了函数并返回一个对象，该对象将 DOM 元素的引用作为属性，并将函数定义作为其方法。
 
 现在与视图相关的一切都是自包含的。要访问元素，我们现在将使用 `view.form`，调用 `update()` 函数将使用 `view.update()`。我们现在需要检查代码的其他部分并更新以使用这些新名称，这需要进行以下更改：
 
--   `update` 变为 `view.update`
--   `hide` 变为 `view.hide`
--   `show` 变为 `view.show`
--   所有的 `$` 符号变为 `view.`（例如， `$timer` 变为 `view.timer`）
+- `update` 变为 `view.update`
+- `hide` 变为 `view.hide`
+- `show` 变为 `view.show`
+- 所有的 `$` 符号变为 `view.`（例如，`$timer` 变为 `view.timer`）
 
-通过将视图逻辑分离到单独模块中，我们正在向 MVC 风格的结构迈进。Game 对象充当模型，事件处理器充当控制器，处理与玩家的所有不同交互。
+通过将视图逻辑分离到单独模块中，我们正在向 MVC 风格的结构迈进。`Game` 对象充当模型，事件处理器充当控制器，处理与玩家的所有不同交互。
 
 ## 部署
 
-我们为测验游戏完成的最后一个任务是为部署做准备。这将涉及移除 `console.log` 语句并压缩代码。为了方便起见，我们将使用 Gulp 任务来自动化这一过程。
+我们为测验游戏完成的最后一个任务是为部署做准备。这将涉及移除 `console.log` 语句并压缩代码。为了方便起见，我们将使用 `Gulp` 任务来自动化这一过程。
 
-为了使用 Gulp，你需要安装 Node.js。然后使用终端通过 npm 安装 Gulp，如下所示：
+为了使用 `Gulp`，你需要安装 `Node.js`。然后使用终端通过 `npm` 安装 `Gulp`，如下所示：
 
-```
+```bash
 $ npm install --g gulp
 ```
 
 在你的项目文件夹中，必须使用以下命令初始化项目：
 
-```
+```bash
 $ npm init
 ```
 
-系统将提示你输入项目名称、版本号、作者等参数。按回车键接受默认值。你的文件夹现在将包含一个 `package.json` 文件，它定义了你需要的依赖。首先，你必须安装本地版本的 Gulp 作为开发依赖：
+系统将提示你输入项目名称、版本号、作者等参数。按回车键接受默认值。你的文件夹现在将包含一个 `package.json` 文件，它定义了你需要的依赖。首先，你必须安装本地版本的 `Gulp` 作为开发依赖：
 
-```
+```bash
 $ npm install --save-dev gulp
 ```
 
-接下来，你将需要安装必要的 Gulp 插件。这些是用于移除 `console.log()` 语句的 `gulp-strip-debug` 插件和用于压缩代码的 `gulp-uglify` 插件。要安装这些，在终端提示符中输入命令：
+接下来，你将需要安装必要的 `Gulp` 插件。这些是用于移除 `console.log()` 语句的 `gulp-strip-debug` 插件和用于压缩代码的 `gulp-uglify` 插件。要安装这些，在终端提示符中输入命令：
 
-```
+```bash
 $ npm install --save-dev gulp-strip-debug gulp-uglify
 ```
 
-Gulp 和插件将显示 `package.json` 文件的 `devDependencies` 中：
+`Gulp` 和插件将显示 `package.json` 文件的 `devDependencies` 中：
 
 ```json
 {
@@ -12051,68 +11775,62 @@ Gulp 和插件将显示 `package.json` 文件的 `devDependencies` 中：
 }
 ```
 
-还有一个 `node_modules` 文件夹，其中安装了 Gulp 和插件。
+还有一个 `node_modules` 文件夹，其中安装了 `Gulp` 和插件。
 
 ## 注意：共享你的项目
 
-我们的 `node_modules` 文件夹仅包含开发依赖，因此不需要随代码发布。如果你使用 Git，可以将 `node_modules/` 添加到 `.gitignore` 文件。
+我们的 `node_modules` 文件夹仅包含开发依赖，因此不需要随代码发布。如果你使用 `Git`，可以将 `node_modules/` 添加到 `.gitignore` 文件。
 
 如果你想将项目传递给其他开发者，只需包含 `package.json` 文件。该开发者可以使用命令安装所有项目依赖：
 
-```
+```bash
 $ npm install
 ```
 
-开发时编写的主要 JavaScript 文件应该移动到名为 `src` 的新文件夹中。Gulp 任务将获取此文件夹中的 JavaScript 文件并通过 `stripdebug` 和 `uglify` 插件，然后保存到 `js` 文件夹。
+开发时编写的主要 JavaScript 文件应该移动到名为 `src` 的新文件夹中。`Gulp` 任务将获取此文件夹中的 JavaScript 文件并通过 `stripdebug` 和 `uglify` 插件，然后保存到 `js` 文件夹。
 
-我们现在需要创建一个运行任务的 gulp 文件。创建一个名为 `gulpfile.js` 的文件，包含以下代码行并将其保存到与 `index.html` 相同的目录：
+我们现在需要创建一个运行任务的 `gulp` 文件。创建一个名为 `gulpfile.js` 的文件，包含以下代码行并将其保存到与 `index.html` 相同的目录：
 
-```
+```javascript
 var
-gulp = require('gulp'),
-stripdebug = require('gulp-strip-debug'),
-uglify = require('gulp-uglify');
+    gulp = require('gulp'),
+    stripdebug = require('gulp-strip-debug'),
+    uglify = require('gulp-uglify');
 
 var
-source = 'src/*/*',
-dest = '/js/';
+    source = 'src/**/*',
+    dest = 'js/';
 
 // 移除调试信息并压缩 JS
 gulp.task('js', function() {
   return gulp.src(source)
-  .pipe(stripdebug())
-  .pipe(uglify())
-  .pipe(gulp.dest(dest));
+    .pipe(stripdebug())
+    .pipe(uglify())
+    .pipe(gulp.dest(dest));
 });
 
 // 默认任务
 gulp.task('default', ['js'], function() {
-
   // 监听 javascript 更改
-gulp.watch(source, ['js']);
+  gulp.watch(source, ['js']);
 });
 ```
 
-此文件包含两个任务：js 任务和默认任务。js 任务将使用
+此文件包含两个任务：`js` 任务和默认任务。`js` 任务将使用 `stripdebug` 插件移除调试用的 `console.log` 命令，然后使用 `uglify` 插件对代码进行压缩。使用此终端命令运行该任务：
 
-
-
-
-使用 stripdebug 插件移除调试用的 `console.log` 命令，然后使用 uglify 插件对代码进行压缩。使用此终端命令运行该任务：
-
-```
+```bash
 $ gulp js
 ```
 
-运行任务后，你应该会在 js 文件夹中找到一个 `scripts.js` 文件。该文件的内容应包含压缩后的代码，且体积比原始文件小。
+运行任务后，你应该会在 `js` 文件夹中找到一个 `scripts.js` 文件。该文件的内容应包含压缩后的代码，且体积比原始文件小。
 
-还有一个默认任务（default task）。它会运行我们的 js 任务并监听任何文件更新。如果 src 文件夹中添加、删除或修改了文件，任务将再次运行。使用以下命令运行默认任务：
+还有一个默认任务（default task）。它会运行我们的 `js` 任务并监听任何文件更新。如果 `src` 文件夹中添加、删除或修改了文件，任务将再次运行。使用以下命令运行默认任务：
 
-```
+```bash
 $ gulp
 ```
 
-可以向 `gulpfile.js` 中添加更多插件和任务。例如，如果你的项目 JavaScript 包含在几个较小的文件中，我们可以使用 Gulp 任务将它们合并，或者添加像 Sass 这样的 CSS 预处理器将 SCSS 编译为普通 CSS。你甚至可以运行一个 Gulp 任务来监控文件的变化，每当这些变化信号代码中存在错误时，就会对其运行 JS 测试。
+可以向 `gulpfile.js` 中添加更多插件和任务。例如，如果你的项目 JavaScript 包含在几个较小的文件中，我们可以使用 `Gulp` 任务将它们合并，或者添加像 `Sass` 这样的 CSS 预处理器将 `SCSS` 编译为普通 CSS。你甚至可以运行一个 `Gulp` 任务来监控文件的变化，每当这些变化信号代码中存在错误时，就会对其运行 JS 测试。
 
 尽管我们在本章中没有更改问答游戏的功能，但我们使其更加模块化，便于未来维护，并优化了文件大小，准备好进行部署。这些都是编写将部署到服务器的 JavaScript 时需要考虑的重要任务。
 
@@ -12121,29 +11839,17 @@ $ gulp
 在本章中，我们学习了以下内容：
 
 - 框架是一个 JavaScript 代码库，它提供了方法来更轻松地实现常见任务。
-
 - 框架可以使编程变得简单得多，但你应该仔细考虑自己是否需要框架，以及哪一个最适合你的需求。
-
 - 模块是一个自包含的代码单元，它提供了可以在其他文件中使用的函数和方法。
-
 - JavaScript 不支持模块，但存在一些可以模拟模块的模式。
-
-- CommonJS 模块和 AMD 模块是两种流行的模块模式。CommonJS 模块被 npm 使用，而 AMD 模块则被 RequireJS 使用。
-
-- Browserify 和 Bower 是两个流行的包管理器，可以用于安装模块和框架，并管理依赖关系。
-
+- `CommonJS` 模块和 `AMD` 模块是两种流行的模块模式。`CommonJS` 模块被 `npm` 使用，而 `AMD` 模块则被 `RequireJS` 使用。
+- `Browserify` 和 `Bower` 是两个流行的包管理器，可以用于安装模块和框架，并管理依赖关系。
 - MVC 模式用于将代码组织成不同的部分，每个部分负责应用程序的不同元素。
-
 - 模板文件可将视图与 JavaScript 分离；它们还允许将动态代码和编程逻辑插入到标记中。
-
 - 压缩（Minification）是移除代码中任何冗余字符以减小文件大小的过程。
-
-- 文件可以使用 gzip 压缩工具在服务器上进行压缩。
-
+- 文件可以使用 `gzip` 压缩工具在服务器上进行压缩。
 - 任务运行器（task runner）可用于自动化常用任务，如压缩代码、运行测试以及将多个文件合并为一个。
-
-- Grunt 和 Gulp 是两个最流行的任务运行器，它们的方法略有不同，但都拥有大量的插件来自动化常用任务。
-
+- `Grunt` 和 `Gulp` 是两个最流行的任务运行器，它们的方法略有不同，但都拥有大量的插件来自动化常用任务。
 - 在代码部署之前，应该将其合并成单个文件、进行压缩和处理。`<script>` 标签应该放置在 `</body>` 结束标签之前，以确保页面上的所有元素在脚本运行之前已加载。
 
 在下一章中，我们将查看 JavaScript 下一个版本的某些功能，以及使用 JavaScript 可以构建的一些想法。
@@ -12152,7 +11858,7 @@ $ gulp
 
 # 第 16 章
 
-# # 下一步
+# 下一步
 
 我们接近成为 JavaScript 忍者的道路终点。但当一段旅程结束，另一段旅程开始了。现在是时候提升你的 JavaScript 忍者技能了。在最后一章中，我们将看看 JavaScript 下一个版本包含的内容。我们还将探讨如何成为更好的程序员，并对如何利用新学的编程技能提供一些建议。
 
@@ -12162,18 +11868,18 @@ $ gulp
 - 关键忍者技能
 - JavaScript 开发的项目想法
 
-# ## 下一步：ECMA6, Harmony
+## 下一步：ECMA6, Harmony
 
-ECMAScript 的下一个版本将是第 6 版本。代号“Harmony”用于描述可能出现在 ECMAScript 第 6 或第7 版本中的特性。本节介绍了了一些正在讨论的精彩新功能，这些功能将帮助 JavaScript 成为一种更强大、表达丰富的语言。
+ECMAScript 的下一个版本将是第 6 版本。代号“Harmony”用于描述可能出现在 ECMAScript 第 6 或第 7 版本中的特性。本节介绍了一些正在讨论的精彩新功能，这些功能将帮助 JavaScript 成为一种更强大、表达丰富的语言。
 
-# ## 块作用域（Block Scope）
+## 块作用域（Block Scope）
 
 `let` 和 `const` 关键字被引入作为使用 `var` 声明变量的替代方案。
 
-`let` 的工作方式与 `var` ，但它具有块作用域，因此变量只存在于创建它的块内部：
+`let` 的工作方式与 `var` 类似，但它具有块作用域，因此变量只存在于创建它的块内部：
 
-```
-if(a < 10) {
+```javascript
+if (a < 10) {
   var b = 2;
   let c = 3;
 }
@@ -12182,7 +11888,7 @@ if(a < 10) {
 
 `const` 的工作方式与此类似，但用于声明常量值。一旦使用 `const` 声明了值，它就无法被重新定义或更改：
 
-```
+```javascript
 const PI = Math.PI;
 ```
 
@@ -12194,16 +11900,14 @@ Harmony 引入了在 JavaScript 中声明类的新语法。它在后台的工作
 
 这里是第 12 章乌龟示例的写法：
 
-```
+```javascript
 var Turtle = function(name) {
   this.name = name;
   this.sayHi = function() {
     return "Hi dude, my name is " + this.name;
   }
 }
-```
 
-```
 Turtle.prototype.attack = function(){
   return this.name + " hits with you his " + this.weapon;
 }
@@ -12280,7 +11984,7 @@ function hello(name = "JavaScript") {
 
 现在，如果提供了参数，将使用默认值：
 
-```
+```javascript
 hello("Ninja");
 // "Hello Ninja"
 
@@ -12290,25 +11994,19 @@ hello();
 
 ## 承诺（Promises）
 
-Harmony 将引入一种使用承诺（promises）的新语法。JavaScript 中异步编程使用的增加意味着会使用越来越多的回调。当在同一个函数中使用多个回调时，这可能会导致混乱且困惑的“意大利条式代码”。承诺被认为在不使用多个回调的情况下处理一段异步代码。承诺并不能实现任何使用回调就无法实现的功能，但它们的目标是简化过程并避免因使用多个回调而产生复杂代码。
+Harmony 将引入一种使用承诺（promises）的新语法。JavaScript 中异步编程使用的增加意味着会使用越来越多的回调。当在同一个函数中使用多个回调时，这可能会导致混乱且困惑的“意大利面式代码”。承诺被认为在不使用多个回调的情况下处理一段异步代码。承诺并不能实现任何使用回调就无法实现的功能，但它们的目标是简化过程并避免因使用多个回调而产生复杂代码。
 
 承诺处理操作执行的这些阶段：
 
-- pending（待定中）——操作尚未失败或完成
-
-- fulfilled（已完成）——操作成功
-
-
-
-
-
--- 失败—操作未执行
+- `pending`（待定中）——操作尚未失败或完成
+- `fulfilled`（已完成）——操作成功
+- `rejected`（已失败）——操作未执行
 
 这些阶段允许你为操作的每个部分指定运行的代码。
 
-Promise 是通过构造函数创建的。它接受一个名为执行器（executor）的函数作为参数，可以在其中说明成功失败失败条件：
+`Promise` 是通过构造函数创建的。它接受一个名为执行器（executor）的函数作为参数，可以在其中说明成功失败条件：
 
-```
+```javascript
 var promise = new Promise(
   function (resolve, reject) {
     if (...) { // 此处编写成功条件
@@ -12319,9 +12017,9 @@ var promise = new Promise(
   });
 ```
 
-现在，promise 被存储在一个变量中（在此例中称为 promise），你可以在 promise 上调用方法。`.then()` 方法提供了一种易读的方式，用于指定在操作成功后执行的操作：
+现在，`promise` 被存储在一个变量中（在此例中称为 `promise`），你可以在 `promise` 上调用方法。`.then()` 方法提供了一种易读的方式，用于指定在操作成功后执行的操作：
 
-```
+```javascript
 promise.then(
   function (value) {
     // 此处编写成功代码
@@ -12331,7 +12029,7 @@ promise.then(
 
 `.catch()` 方法用于指定如果操作失败应执行的操作：
 
-```
+```javascript
 promise.catch(
   function (reason) {
     // 此处编写失败代码
@@ -12345,18 +12043,18 @@ Harmony 还将引入对生成器的支持。这些是用于产生维持值状态
 
 要定义一个生成器函数，需要在函数声明后放置一个星号（*），如下所示：
 
-```
+```javascript
 function* exampleGenerator() {
 }
 ```
 
 调用生成器函数并不会实际运行函数中的任何代码；它返回一个新的生成器对象。这可以用于实现迭代器。例如，我们可以使用以下代码创建一个生成器来产生斐波那契数列（一种从两个数字开始，下一个数字通过前两个数字之和得到的序列）：
 
-```
-function* fibonacci(a,b) {
-  let [prev,current ] = [ a, b ];
-  for (;) {
-    [prev,current] = [current, prev + current];
+```javascript
+function* fibonacci(a, b) {
+  let [prev, current] = [a, b];
+  for (;;) {
+    [prev, current] = [current, prev + current];
     yield current;
   }
 }
@@ -12368,86 +12066,82 @@ function* fibonacci(a,b) {
 
 要根据此函数创建一个生成器对象，我们只需将变量赋值给该函数：
 
-```
-let sequence = fibonacci(1,1);
+```javascript
+let sequence = fibonacci(1, 1);
 ```
 
 生成器对象现在存储在 `sequence` 变量中。它继承了一个名为 `next()` 的方法，该方法用于获取 `yield` 命令产生的下一个值：
 
-```
+```javascript
 sequence.next();
-<< 2
-```
+// 2
 
-```
 sequence.next();
-<< 3
-```
+// 3
 
-```
 sequence.next();
-<< 5
+// 5
 ```
 
 也可以对生成器进行迭代：
 
-```
-for (n in sequence) {
+```javascript
+for (n of sequence) {
   // 在序列达到 100 后停止
-  if (n > 10)
+  if (n > 100)
     break;
   console.log(n);
 }
-<< 8
-<< 13
-<< 21
-<< 34
-<< 55
-<< 89
+// 8
+// 13
+// 21
+// 34
+// 55
+// 89
 ```
 
 请注意，序列是从使用 `next()` 方法产生的上一个值继续的。这是因为生成器会在程序的整个寿命期间维护其状态。
 
 ## 使用导出和导入的模块 (Modules Using Export and Import)
 
-Harmony 将原生支持模块。到目前，模块的主要实现是 CommonJS 和 RequireJS；Harmony 使用的语法尝试结合这两种方法的优良特性。该语法使用命名导出（named exports）来突出库中任何要导出的内容。通过在任何声明前面放置 `export` 关键字来实现的。例如，如果我们有一个 `average.js` 脚本，包含了我们在第11章中编写的 `sum()` 和 `mean()` 函数，我们可以将这些声明为命名导出：
+Harmony 将原生支持模块。到目前，模块的主要实现是 `CommonJS` 和 `RequireJS`；Harmony 使用的语法尝试结合这两种方法的优良特性。该语法使用命名导出（named exports）来突出库中任何要导出的内容。通过在任何声明前面放置 `export` 关键字来实现的。例如，如果我们有一个 `average.js` 脚本，包含了我们在第 11 章中编写的 `sum()` 和 `mean()` 函数，我们可以将这些声明为命名导出：
 
-```
+```javascript
 export function sum(array, callback) {
-  if(typeof callback === "function") {
+  if (typeof callback === "function") {
     array = array.map(callback);
   }
-  return array.reduce(function(a,b) { return a + b });
+  return array.reduce(function(a, b) { return a + b });
 }
 
 export function mean(array) {
-  return sum(array)/array.length;
+  return sum(array) / array.length;
 }
 ```
 
 要在主文件 `scripts.js` 中导入此内容，你需要添加这行代码：
 
-```
-import { sum, mean } from averages;
+```javascript
+import { sum, mean } from 'averages';
 ```
 
 现在可以在 `scripts.js` 文件中使用 `sum()` 和 `mean()` 函数了。
 
 模块文件中的所有内容都可以使用这种语法导入：
 
-```
+```javascript
 import * as averages from 'averages';
 ```
 
 这将导入 `averages.js` 文件中的所有函数，并为它们赋予一个 `averages` 命名空间。因此，可以这样使用 `mean` 函数：
 
-```
-averages.mean((2,6,10));
+```javascript
+averages.mean([2, 6, 10]);
 ```
 
 ## 今天即可可用 (Ready to Use Today)
 
-某些浏览器已经开始实现 Harmony 中的新功能，尽管可能还需要一段时间才能获得完全支持。现在可以使用转译器（transpiler）来实现这些功能，它将用 ECMAScript6 编写的代码转换为 JavaScript 代码，以便在现代浏览器中运行。转译器的一个例子是 Google Tracer，它支持 ECMAScript 6 的许多功能，并生成的代码在现代浏览器上运行良好。运行任何 JavaScript 时，可以通过添加 `--harmony` 标记来获得对某些新功能的支持。
+某些浏览器已经开始实现 Harmony 中的新功能，尽管可能还需要一段时间才能获得完全支持。现在可以使用转译器（transpiler）来实现这些功能，它将用 ECMAScript 6 编写的代码转换为 JavaScript 代码，以便在现代浏览器中运行。转译器的一个例子是 `Google Traceur`，它支持 ECMAScript 6 的许多功能，并生成的代码在现代浏览器上运行良好。运行任何 JavaScript 时，可以通过添加 `--harmony` 标记来获得对某些新功能的支持。
 
 ECMAScript 6 兼容性表包含了关于不同浏览器和转译器已实现哪些功能的最新信息。
 
@@ -12459,32 +12153,30 @@ JavaScript 的下一个版本承诺将提供强大的新功能，因此现在学
 
 ## 版本控制 (Version Control)
 
-版本控制软件允许你跟踪对代码进行的所有更改，因为代码的每个版本都被保留了，并且可以随时回滚。许多人使用粗略的版本控制形式，通过不同的文件名保存不同版本的代码，例如 `projectV1.js、projectV2.js、projectV3.js` 等。这是一个合理的方法，但可能会出错。（如果你以前用过这种方法，你有多少次在保存前忘记更改名称了？）它也没有提供使用源码控制管理工具可以获得的同等优势。
+版本控制软件允许你跟踪对代码进行的所有更改，因为代码的每个版本都被保留了，并且可以随时回滚。许多人使用粗略的版本控制形式，通过不同的文件名保存不同版本的代码，例如 `projectV1.js`、`projectV2.js`、`projectV3.js` 等。这是一个合理的方法，但可能会出错。（如果你以前用过这种方法，你有多少次在保存前忘记更改名称了？）它也没有提供使用源码控制管理工具可以获得的同等优势。
 
-最流行的源码控制管理工具之一是 Git，由 Linux Torvalds 编写，Git 允许你回滚到代码之前的版本。你还可以分支代码以测试新功能，而不会更改当前的稳定代码库。Git 是一个分布式源码控制系统，使得许多人可以分叉（fork）代码，独立开发，然后将他们的任何更改合并回主代码库。
+最流行的源码控制管理工具之一是 `Git`，由 `Linux Torvalds` 编写，`Git` 允许你回滚到代码之前的版本。你还可以分支代码以测试新功能，而不会更改当前的稳定代码库。`Git` 是一个分布式源码控制系统，使得许多人可以分叉（fork）代码，独立开发，然后将他们的任何更改合并回主代码库。
 
-Git 使用命令行来发布更改，但有很多 GUI 前端可以安装，以提供代码的视觉表示。
+`Git` 使用命令行来发布更改，但有很多 GUI 前端可以安装，以提供代码的视觉表示。
 
 如果你在团队中工作，源码控制是无价的，这意味着不同的开发者可以处理同一段代码，而不会给主代码库带来任何错误。如果代码库中意外出现错误，可以通过回滚到上一个稳定版本来轻松修复。
 
-有很多托管 Git 仓库的在线服务，包括 GitHub、Kiln、Bitbucket 和 Codeplane。它们可以用于托管在线 Git 仓库，供其他开发者分叉，这对于团队项目特别有用。其中一些服务将所有代码公开，因此被开源项目用于托管源码；另一些服务则保持代码私密，用于托管个人或业务项目。
+有很多托管 `Git` 仓库的在线服务，包括 `GitHub`、`Kiln`、`Bitbucket` 和 `Codeplane`。它们可以用于托管在线 `Git` 仓库，供其他开发者分叉，这对于团队项目特别有用。其中一些服务将所有代码公开，因此被开源项目用于托管源码；另一些服务则保持代码私密，用于托管个人或业务项目。
 
-
-
-
+## 保持更新
 
 - 参加会议或本地聚会
 - 阅读杂志文章
 - 为开源项目做贡献
 - 加入本地或在线用户组
-- 订阅 [SitePoint 通讯邮件，版本控制，](https://www.sitepoint.com)
-- 阅读关于更进阶主题的书籍，例如 Michael Fogus 编写的 [Functional JavaScript](https://www.amazon.com/Functional-JavaScript-Michael-Fogus/dp/1691327344) 和 Henrik Jroteg 编写的 [Human JavaScript](https://www.amazon.com/Human-JavaScript-Henrik-Jroteg/dp/1617294410)
+- 订阅 [SitePoint 通讯邮件](https://www.sitepoint.com)
+- 阅读关于更进阶主题的书籍，例如 Michael Fogus 编写的 [Functional JavaScript](https://www.amazon.com/Functional-JavaScript-Michael-Fogus/dp/1691327344) 和 Henrik Joreteg 编写的 [Human JavaScript](https://www.amazon.com/Human-JavaScript-Henrik-Joreteg/dp/1617294410)
 
 ## 使用常用的 JavaScript 编码模式
 
-模式是一种解决常见问题并代表最佳实践的代码。在 JavaScript 存在以来，已经出现了许多模式，帮助我们编写被证明有效的可维护代码。在 JavaScript 开发中，模式是实现特定目标的通用公认方法，它通常是实现该目标的最方式。
+模式是一种解决常见问题并代表最佳实践的代码。在 JavaScript 存在以来，已经出现了许多模式，帮助我们编写被证明有效的可维护代码。在 JavaScript 开发中，模式是实现特定目标的通用公认方法，它通常是实现该目标的最佳方式。
 
-使用标准编码实践的另一个优势是，它让开发者之间的代码共享变得轻而易举。如果你使用相同的风格和术语，开发者会发现跟进你的代码变得更容易。模式通常带有特定的名称（例如我们之前看到的 IIFE 模式）。这使得讨论不同模式变得更容易，因为可以明确引用这些名称。
+使用标准编码实践的另一个优势是，它让开发者之间的代码共享变得轻而易举。如果你使用相同的风格和术语，开发者会发现跟进你的代码变得更容易。模式通常带有特定的名称（例如我们之前看到的 `IIFE` 模式）。这使得讨论不同模式变得更容易，因为可以明确引用这些名称。
 
 反模式（Antipattern）是指被接受的糟糕实践代码。它通常产生的问题比它解决的问题要多，应该被避免。
 
@@ -12504,35 +12196,35 @@ JavaScript 在近年来发展得如此。它不再仅仅是一种用于在网页
 
 ## HTML5 游戏开发
 
-HTML5 的出现导致使用 JavaScript 编写并使用其他 HTML5 技术的在线游戏大量增长。以前，大多数在线游戏是使用 Flash 编写的，因为它被认为太慢了。Canvas 的采用以及更快的 JavaScript 引擎意味着 HTML5 游戏可以与原生应用竞争。WebGL 的开发意味着在浏览器中渲染 3D 游戏的快速 GPU 现在已成为可能。
+HTML5 的出现导致使用 JavaScript 编写并使用其他 HTML5 技术的在线游戏大量增长。以前，大多数在线游戏是使用 Flash 编写的，因为它被认为太慢了。Canvas 的采用以及更快的 JavaScript 引擎意味着 HTML5 游戏可以与原生应用竞争。`WebGL` 的开发意味着在浏览器中渲染 3D 游戏的快速 GPU 现在已成为可能。
 
-为了 Internet Explorer 9 的发布，微软与 Zepto labs 合作创建了一个精彩版本的《割绳子大战》（Cut the Rope），它仅使用 HTML5 技术即可在浏览器中运行。这是所能做事情的一个极佳例子，但游戏并不需要复杂；一个被良好实现的好主意变得非常受欢迎。在 js13kGames 中有很多不同风格游戏的示例，这是一项年度竞赛，所有游戏必须编写在 13 字节或以内（包括所有代码、图形和声音！）。
+为了 Internet Explorer 9 的发布，微软与 Zepto labs 合作创建了一个精彩版本的《割绳子大战》（Cut the Rope），它仅使用 HTML5 技术即可在浏览器中运行。这是所能做事情的一个极佳例子，但游戏并不需要复杂；一个被良好实现的好主意变得非常受欢迎。在 `js13kGames` 中有很多不同风格游戏的示例，这是一项年度竞赛，所有游戏必须编写在 13 KB 或以内（包括所有代码、图形和声音！）。
 
-有许多库可以帮助编写 HTML5 游戏代码。其中两个优秀的库是 Jaws 和 Phaser。
+有许多库可以帮助编写 HTML5 游戏代码。其中两个优秀的库是 `Jaws` 和 `Phaser`。
 
 如果你对编写 HTML5 游戏感兴趣，可以在 HTML5 游戏开发网站找到很多有用信息。
 
 ## 单页 Web 应用 (SPA)
 
-单页 Web 应用顾如名，是指运行在浏览器单个网页上的应用程序。其核心思想是在用户导航应用程序时创建一个无缝体验，避免从一个页面移动到另一个页面的感觉。这通常通过后台预加载数据来实现。数据可能存储在后端数据库并通过 Ajax 以 JSON 获取，或者使用 Local Storage API 存储本地。通常会使用 MVC 框架来确保界面快速更新。许多应用程序现在使用单页 Web 应用模型，Strike 待办事项应用就是一个很好的例子。
+单页 Web 应用顾名思义，是指运行在浏览器单个网页上的应用程序。其核心思想是在用户导航应用程序时创建一个无缝体验，避免从一个页面移动到另一个页面的感觉。这通常通过后台预加载数据来实现。数据可能存储在后端数据库并通过 `Ajax` 以 `JSON` 获取，或者使用 `Local Storage API` 存储本地。通常会使用 MVC 框架来确保界面快速更新。许多应用程序现在使用单页 Web 应用模型，`Strike` 待办事项应用就是一个很好的例子。
 
 ## App 开发
 
-Firefox OS 是由 Mozilla 基金启动的一个雄心勃勃的项目，旨在仅使用 Web 技术创建一个开源移动操作系统。[10]。这意味着 JavaScript 是编写任何 Firefox OS 设备软件的主要编程语言。如果你对智能手机或平板电脑 App 有想法，你已经拥有了制作它的工具。只需使用 HTML、CSS 和 JavaScript 创建你的应用，并使用浏览器中的 Firefox OS 模拟器进行测试。然后你可以将应用提交到 Firefox Marketplace，操作系统的用户可以在设备上安装它。
+`Firefox OS` 是由 Mozilla 基金会启动的一个雄心勃勃的项目，旨在仅使用 Web 技术创建一个开源移动操作系统。[10] 这意味着 JavaScript 是编写任何 `Firefox OS` 设备软件的主要编程语言。如果你对智能手机或平板电脑 App 有想法，你已经拥有了制作它的工具。只需使用 HTML、CSS 和 JavaScript 创建你的应用，并使用浏览器中的 `Firefox OS` 模拟器进行测试。然后你可以将应用提交到 `Firefox Marketplace`，操作系统的用户可以在设备上安装它。
 
-如果你想为 Firefox OS 开发应用，一个很好的起点是阅读 Preetish Panda 编写的这篇《Firefox OS Application Primer》，以及 Mozilla Developer Network 官方文档。
+如果你想为 `Firefox OS` 开发应用，一个很好的起点是阅读 Preetish Panda 编写的这篇《Firefox OS Application Primer》，以及 Mozilla Developer Network 官方文档。
 
-Android 和 iOS 不使用 JavaScript 作为原生编程语言；但是，仍然可以使用 HTML5 技术和 JavaScript 构建应用程序，然后使用 CocoonJS、Cordova 或 PhoneGap 等转换工具。这些工具会将 HTML5 应用转换为可以在 Android 和 iOS 平台上运行的原生代码。因此你可以仅使用 HTML5 技术和 JavaScript 构建，然后部署到多个设备上。
+Android 和 iOS 不使用 JavaScript 作为原生编程语言；但是，仍然可以使用 HTML5 技术和 JavaScript 构建应用程序，然后使用 `CocoonJS`、`Cordova` 或 `PhoneGap` 等转换工具。这些工具会将 HTML5 应用转换为可以在 Android 和 iOS 平台上运行的原生代码。因此你可以仅使用 HTML5 技术和 JavaScript 构建，然后部署到多个设备上。
 
 ## Node.js 开发
 
-JavaScript Tradition上被认为是用于浏览器客户端编程的前端编程语言。但当 Node.js 发布时，它改变了 JavaScript 的格局。Node.js 意味着 JavaScript 可以不使用浏览器运行，因此 JavaScript 现在可以用于编写服务器端代码或与文件系统交互的命令行工具。
+JavaScript 传统上被认为是用于浏览器客户端编程的前端编程语言。但当 `Node.js` 发布时，它改变了 JavaScript 的格局。`Node.js` 意味着 JavaScript 可以不使用浏览器运行，因此 JavaScript 现在可以用于编写服务器端代码或与文件系统交互的命令行工具。
 
-作为一个 JavaScript 忍者，你可能会安装 Node，以使用许多让你的生活更轻松的工具（例如我们在上一章中看到的 Grunt）。Node.js 可用于编写你自己的工具来帮助自动化工作流，或者构建服务器端应用（作为全栈）、可扩展的 Web 应用、链接到后端数据库的动态网站以及 Web API 服务。Node.js 越来越多地用于开发大型网站和应用程序，PayPal、Groupon 和 Yahoo 等公司正使用它来交付其网站的部分。
+作为一个 JavaScript 忍者，你可能会安装 `Node`，以使用许多让你的生活更轻松的工具（例如我们在上一章中看到的 `Grunt`）。`Node.js` 可用于编写你自己的工具来帮助自动化工作流，或者构建服务器端应用（作为全栈）、可扩展的 Web 应用、链接到后端数据库的动态网站以及 Web API 服务。`Node.js` 越来越多地用于开发大型网站和应用程序，`PayPal`、`Groupon` 和 `Yahoo` 等公司正使用它来交付其网站的部分。
 
-由于 JavaScript 的异步特性，Node.js 相比于 PHP、Python 和 Ruby 等传统的服务器端语言具有许多优势。它非常适合具有大量并发用户的实时更新应用，因为它能以非阻塞的方式快速处理请求。
+由于 JavaScript 的异步特性，`Node.js` 相比于 `PHP`、`Python` 和 `Ruby` 等传统的服务器端语言具有许多优势。它非常适合具有大量并发用户的实时更新应用，因为它能以非阻塞的方式快速处理请求。
 
-如果你想了解更多关于 Node.js 的，为什么不看看 Don Nguyen 写的 Jump Start Node.js 呢？
+如果你想了解更多关于 `Node.js` 的，为什么不看看 Don Nguyen 写的 `Jump Start Node.js` 呢？
 
 ## 还有！
 
@@ -12545,23 +12237,17 @@ Patrick Catanzariti 的一篇精彩文章列出了许多使用 JavaScript 作为
 在本章中，我们学习了以下内容：
 
 - ECMAScript 的下一个版本是版本 6，代号为 Harmony。它引入了几个令人兴奋的新功能，将帮助 JavaScript 变得更加灵活且易于使用。
-- 一个 Ninja JavaScript 开发者应该使用 Git 等版本控制工具来管理任何项目。
+- 一个 Ninja JavaScript 开发者应该使用 `Git` 等版本控制工具来管理任何项目。
 - Ninja JavaScript 开发者的知识可以通过订阅邮件列表、参加演讲和会议、在 Twitter 上关注开发者以及阅读书籍和博客文章来保持更新。
 - Ninja JavaScript 开发者应该使用被证明为最佳实践的常用 JavaScript 编码模式。这使得关于代码的交流变得更容易。
 - Ninja JavaScript 开发者应该大量代码并构建项目！
-
-
-
-
-
--   JavaScript 有许多不同的用途，例如 HTML5 游戏、使用 Node JS 进行服务端开发、Firefox OS 的应用开发以及构建单页 应用程序。
--   JavaScript 越来越多地用作物联网（IoT）的脚本语言，这意味着它可以用于为各种设备编程。
+- JavaScript 有许多不同的用途，例如 HTML5 游戏、使用 `Node.js` 进行服务端开发、`Firefox OS` 的应用开发以及构建单页 应用程序。
+- JavaScript 越来越多地用作物联网（IoT）的脚本语言，这意味着它可以用于为各种设备编程。
 
 这标志着我们旅程的终点！我希望你喜欢学习 JavaScript 的过程，并在未来继续提升你的技能。
 
 JavaScript 已经超越了它最初作为为网页添加效果的简单脚本语言的卑微起点。它现在占据着独特的地位，成为一种可以在客户端和服务器端使用的强大语言。JavaScript 现在正越来越多地出现在其他几个平台上，将其触达范围扩展到了 Web 之外。对于这种语言来说，未来无疑是光明的，因为它提供了与技术交互的的机会。你所能做的唯一限制就是你的想象力。你还在等什么？快去编程吧，忍者！
 
-[9] 我们在第11 章中使用闭包创建了一个迭代器函数。
+[9] 我们在第 11 章中使用闭包创建了一个迭代器函数。
 
 [10] 提供了一些额外的 API，用于与手机硬件和服务进行接口交互。
-

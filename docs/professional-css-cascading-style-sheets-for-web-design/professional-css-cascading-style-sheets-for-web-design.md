@@ -1,71 +1,53 @@
+
 # CSS 高级指南：Web 设计级级样式表
 
-
-
-
-
-
-
-
-
 序言：Jeffrey Zeldman
+
 Happy Cog Studios 创始人
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 # 关于作者
 
-Christopher Schmitt 是一位拥有艺术学位的 Web 设计师，自93 年代就开始接触 Web 设计。他曾在某大学担任实习生，在印第安纳波利斯担任 Web 设计师。他曾在 *CSS Secrets*、*A List Apart*、*Digital Web* 等杂志撰稿。他曾在 Other Conference 和 SXSW 等会议上就可用性设计进行演讲。他曾在“Cool Site a Day”竞赛中带领团队建立了一个功能完整的网站。他维护着一个邮件列表 christophersmitt.com，展示了他的真实色彩和最新动态。
+Christopher Schmitt 是一位拥有艺术学位的 Web 设计师，自 93 年代就开始接触 Web 设计。他曾在某大学担任实习生，在印第安纳波利斯担任 Web 设计师。他曾在 `CSS Secrets`、`A List Apart`、`Digital Web` 等杂志撰稿。他曾在 Other Conference 和 SXSW 等会议上就可用性设计进行演讲。他曾在“Cool Site a Day”竞赛中带领团队建立了一个功能完整的网站。他维护着一个邮件列表 `christophersmitt.com`，展示了他的真实色彩和最新动态。
 
-Mark Trammell 是一位位于德克萨斯州奥斯汀 Web 设计师。他从事 Web 领域多年，服务过多个客户和行业。他是《The CSS Cookbook》和《Designing Web Pages》(New Readers 出版) 的合著者。
+Mark Trammell 是一位位于德克萨斯州奥斯汀的 Web 设计师。他从事 Web 领域多年，服务过多个客户和行业。他是《The CSS Cookbook》和《Designing Web Pages》(New Readers 出版)的合著者。
 
-Ethan Marcotte 是一位位于纽约州奥尔尼市的 Web 设计师和开发者。他从事 Web 领域多年，服务过多个客户和行业。他是《Responsive Web Design》(A Apart 出版) 的作者。
+Ethan Marcotte 是一位位于纽约州奥尔尼市的 Web 设计师和开发者。他从事 Web 领域多年，服务过多个客户和行业。他是《Responsive Web Design》(A Apart 出版)的作者。
 
 Dunstan Orchard 是一位位于英国多塞特郡的 Web 设计师和开发者。他是 Web 标准项目的成员，并是多种 Web 设计出版物的常见撰稿者。
 
-Todd Dominey 是一位位于佐治亚州亚特兰他的 Web 设计师和开发者。他从事 Web 领域多年，服务过多个客户和行业。他是 Dominey Design (domineydesign.com) 的创始人，这家交互设计工作室曾为百威、华盛顿邮报、Google、Winter Fresh 以及高球锦标赛和莱德杯提供过服务。
+Todd Dominey 是一位位于佐治亚州亚特兰大的 Web 设计师和开发者。他从事 Web 领域多年，服务过多个客户和行业。他是 `Dominey Design` (`domineydesign.com`) 的创始人，这家交互设计工作室曾为百威、华盛顿邮报、`Google`、Winter Fresh 以及高球锦标赛和莱德杯提供过服务。
 
 # 致谢
 
 | 角色 | 姓名 |
+
 | :--- | :--- |
+
 | 编辑 | Debra Williams Cauley |
+
 | 项目协调 | Michael Kruzil |
+
 | 开发编辑 | Kevin Shafer |
+
 | 图形与制作专家 | Lynsey Osborn, Amanda Spagnuolo |
+
 | 技术编辑 | Molly Holzschlag |
+
 | 质量控制技术员 | Leeann Harney, Carl Pierce |
+
 | 校对 | Nancy Rapoport |
+
 | 索引制作 | TECHBOOKS Production Services |
+
 | 编辑经理 | Mary Beth Wakefield |
+
 | 副总裁兼执行小组 | Richard Swadley |
+
 | 副总裁兼出版商 | Joseph B. Wikert |
-
-
-
-
 
 # 致谢
 
-**Christopher Schmitt**: 我感谢 Debra Williams Cauley 和 Wiley 团队帮助我完善了你现在正在阅读的这本书。
+`Christopher Schmitt`: 我感谢 Debra Williams Cauley 和 Wiley 团队帮助我完善了你现在正在阅读的这本书。
 
 同时，特别感谢 David Fugate 在该项目上提供的指导和支持。
 
@@ -73,11 +55,11 @@ Todd Dominey 是一位位于佐治亚州亚特兰他的 Web 设计师和开发�
 
 特别感谢我的家人和朋友。当我忙于撰写另一本书时，他们持续提供的支持是无法估量的，即使是那些在我写关于 Windows 版 Internet Explorer 的文章时只是礼貌点头微笑的人也是如此。
 
-**Mark Trammell**: 非常感谢 Al, Daniel, Taylor, Joe, Malik, Chuck, Gail, Steve 和 Christian 的信任和明智建议。能够与这些热爱他们所做并深知其初衷的人并肩作战，我感到非常幸运。
+`Mark Trammell`: 非常感谢 Al, Daniel, Taylor, Joe, Malik, Chuck, Gail, Steve 和 Christian 的信任和明智建议。能够与这些热爱他们所做并深知其初衷的人并肩作战，我感到非常幸运。
 
 Christopher, Dunstan, Ethan 和 Todd 都是 Web 世界最有才华的开发者和深刻的评论家。能与他们共同完成这个项目，我感到荣幸且谦卑。
 
-**Ethanette**: 在写完像这样一本书后，需要感谢的人名单很短，我的名单也无例外。虽然 Jeffrey Zeldan, Doug Bowman, Dave Shea 和 Dan Cederholm 都是公认的 CIS 先驱，但我认为他们作为才华横溢、富有启发性的作家，还没有获得足够的认可。我想向他们表达谢意。
+`Ethanette`: 在写完像这样一本书后，需要感谢的人名单很短，我的名单也无例外。虽然 Jeffrey Zeldan, Doug Bowman, Dave Shea 和 Dan Cederholm 都是公认的 CIS 先驱，但我认为他们作为才华横溢、富有启发性的作家，还没有获得足够的认可。我想向他们表达谢意。
 
 知道 Molly Holzlag 是这本书的技术编辑这让我晚上能睡个安稳觉。
 
@@ -87,9 +69,9 @@ Christopher, Dunstan, Ethan 和 Todd 都是 Web 世界最有才华的开发者�
 
 最后，在完成这个过程中，有一个人表现出了无限的耐心、支持和友善。她知道自己是谁，而我无法用足够的文字来向她表达感谢。
 
-**Duncan Orchard**: 我感谢 Douglas Bowman, Michael Davidson, Molly Holzlag 以及我的同事作者们的帮助。
+`Duncan Orchard`: 我感谢 Douglas Bowman, Michael Davidson, Molly Holzlag 以及我的同事作者们的帮助。
 
-**Todd Dominy**: 首先，我要感谢那些在亚特兰兰运营 Turner Sports Interactive 的公司的人——特别是 Phil Sharpe, Michael Adamson 和 John Buzzell——让我不仅有机会参与了 2004 年 PGA锦标赛，还参与了 Ryder 赛以及许多其他 PGA 项目。如果没有他们的信任和支持，我无法参与这本书的编写。
+`Todd Dominy`: 首先，我要感谢那些在亚特兰大运营 Turner Sports Interactive 的公司的人——特别是 Phil Sharpe, Michael Adamson 和 John Buzzell——让我不仅有机会参与了 2004 年 PGA 锦标赛，还参与了 Ryder 赛以及许多其他 PGA 项目。如果没有他们的信任和支持，我无法参与这本书的编写。
 
 还要感谢 Web 开发社区中在我职业生涯早期提供了无法估量的启示和指导的人：比如像 Jeffrey Zeldman 这样的人，他对比 Web 标准和规范代码的不懈推广改变了我对 Web 设计的方法；以及 CSS 大师 Douglas Bowman, Dan Cederholm 和 Dave Shea，他们不仅对 CSS 进行了持续的探索和实验，还慷慨地分享他们的知识和代码，让世界受益。
 
@@ -105,49 +87,34 @@ CSS 是世界维网联盟（W3C）的一项 Web 标记标准，允许 Web 设计
 
 很难找到那些对手写 PostScript 感到快乐的设计师。设计师们让 Adobe Illustrator（或任何类似的程序）提供视觉化创作环境，并将编码隐藏在后台。设计师看到的只是图像，而计算机处理工作负载。
 
-使用 CSS 的另一个障碍与 CSS 本身无关，而是 CSS 在 Web 浏览器中的实现。浏览器厂商随着时间的推移缓慢将这项技术整合到他们的浏览器中。虽然目前 CSS 的支持率已达到 100%，但设计师在尝试让旧版或过时的浏览器支持他们的设计时，仍然会遇到问题。这意味着设计师在尝试在旧版或过时的浏览器中支持他们的设计时仍然会遇到问题。（等等，让我重新读一下 OCR：“这意味着设计师在尝试在旧版或过时的浏览器中支持他们的设计时仍然会遇到问题。这意味着设计师在尝试在旧版或过时的浏览器中支持他们的设计时仍然能遇到问题。” -> *根据上下文修正*：“这意味着设计师在尝试在旧版或过时的浏览器中支持他们的设计时仍然会遇到问题。”（实际上，看文本：“这意味着设计师在尝试在旧版或过时的浏览器中支持他们的设计时仍然会遇到问题。这意味着设计师在尝试在旧版或过时的浏览器中支持他们的设计时仍然会遇到问题。”）：“这意味着设计师在尝试在旧版或过时的浏览器中支持他们的设计时仍然会遇到问题。这意味着设计师在尝试旧版或过时的浏览器中支持支持设计时遇到问题问题问题
+使用 CSS 的另一个障碍与 CSS 本身无关，而是 CSS 在 Web 浏览器中的实现。浏览器厂商随着时间的推移缓慢将这项技术整合到他们的浏览器中。虽然目前 CSS 的支持率已达到 100%，但设计师在尝试让旧版或过时的浏览器支持他们的设计时，仍然会遇到问题。
 
-   ，，，，，，，，，，，，，，，，，，，，，，，，，，，，，，，，，，，，，，，，，，，，实践实践实践
-
-Professional CSS 是目前市面上少数几针对大型大型网站讨论标准 CSS 的书籍。关注 Web 开发中的最佳实践，并使用真实世界的网站作为案例，本书独特地提供了应用型的 CSS 解决方案来解决设计问题。
+`Professional CSS` 是目前市面上少数几本针对大型大型网站讨论标准 CSS 的书籍。关注 Web 开发中的最佳实践，并使用真实世界的网站作为案例，本书独特地提供了应用型的 CSS 解决方案来解决设计问题。
 
 ## 本书适用读者
 
 那些对 CSS 具有中高级水平了解，但不清楚如何有效地开发专业级设计的设计师，将从书中获益匪浅。特别是以下读者会发现本书非常有帮助：
 
 - 中级及以上 HTML 用户。任何接触过 CSS 但需要更好地理解如何组合以创建专业级 Web 网站的开发者。
+
 - 专业设计师。学习 CSS 的 Web 开发者（没有任何传统的 90 年代设计实践知识），并希望了解该技术的最佳实践。
-
-
-
-
-
-
-
-
 
 ## 引言
 
-
-
-
-
-
-
-
-
-
 为了帮助你充分利用这些内容并跟踪进度，我们在本书中许多规范。
 
-| 像这样的方框包含与周围文本直接相关的重要的、不容遗忘的信息。 |
+> 像这样的方框包含与周围文本直接相关的重要的、不容遗忘的信息。
 
 *针对当前讨论的提示、暗示、技巧和旁注会像这样被错开显示并使用斜体。*
 
 至于文中的样式：
 
 - 我们在引入重要词汇时突出显示。
-- 我们这样显示键盘按键：Ctrl+A。
-- 我们在文中显示文件名、URL 和代码：persistence.properties。
+
+- 我们这样显示键盘按键：`Ctrl+A`。
+
+- 我们在文中显示文件名、URL 和代码：`persistence.properties`。
+
 - 我们以两种不同的方式呈现代码：
 
 ```
@@ -156,46 +123,35 @@ Professional CSS 是目前市面上少数几针对大型大型网站讨论标准
 
 灰色突出显示不用于当前语境下不重要或之前已显示过的代码。
 
-
 我们尽力确保文本或代码中没有错误。然而，没有人是完美的，错误在所难免。如果你在我们的某本书中发现错误（例如拼写错误或有错误的代码），我们将非常感谢你的反馈。通过提交错误列表，你可以帮助其他读者免受困扰，同时也能帮助我们提供更高质量的信息。
 
-要找到此书的错误页面，请访问 www.wrox.com 并使用搜索框或列表之一查找标题。然后，在书籍详情页上点击 Errata（错误列表）链接。在该页面上，你可以查看所有提交给本书并由 W. 发布的错误列表。在 www.wrox.com/misc-pages/booklist.html 也可以查看完整的书籍列表，包括每本书的错误列表链接。
+要找到此书的错误页面，请访问 `www.wrox.com` 并使用搜索框或列表之一查找标题。然后，在书籍详情页上点击 `Errata`（错误列表）链接。在该页面上，你可以查看所有提交给本书并由 W. 发布的错误列表。在 `www.wrox.com/misc-pages/booklist.html` 也可以查看完整的书籍列表，包括每本书的错误列表链接。
 
-如果你在书籍错误页面上没有发现“你的”错误，请访问 www.wrox.com/contact/techsupport.shtml 并填写表单向我们发送你发现的错误。我们将检查这些信息，并在适当的情况下向书籍的错误页面发布消息，并在书籍的后续版本中修复该问题。
+如果你在书籍错误页面上没有发现“你的”错误，请访问 `www.wrox.com/contact/techsupport.shtml` 并填写表单向我们发送你发现的错误。我们将检查这些信息，并在适当的情况下向书籍的错误页面发布消息，并在书籍的后续版本中修复该问题。
 
 ## 引言
 
-p2p.wrox.com
-如需与作者和同行讨论，请加入 p2p.wrox.com 的 P2P 论坛。这些论坛是一个基于 Web 的系统，可以在其中发布 Wrox 书籍及相关技术的消息，并与其他读者和技术用户互动。论坛提供了订阅功能，可以就你感兴趣的主题发送邮件，并选择在论坛发布新帖子时通过邮件通知。Wrox 的作者、编辑、其他行业专家以及你的读者都会出现在这些论坛上。
+`p2p.wrox.com`
 
-在 http://p2p.wrox.com 你会发现许多不同的论坛，它们不仅在你阅读本书时有所帮助，也能在你开发自己的应用程序时提供帮助。要加入论坛，请遵循以下步骤：
+如需与作者和同行讨论，请加入 `p2p.wrox.com` 的 P2P 论坛。这些论坛是一个基于 Web 的系统，可以在其中发布 Wrox 书籍及相关技术的消息，并与其他读者和技术用户互动。论坛提供了订阅功能，可以就你感兴趣的主题发送邮件，并选择在论坛发布新帖子时通过邮件通知。Wrox 的作者、编辑、其他行业专家以及你的读者都会出现在这些论坛上。
 
-1. 访问 p2p.wrox.com 并注册。
+在 `http://p2p.wrox.com` 你会发现许多不同的论坛，它们不仅在你阅读本书时有所帮助，也能在你开发自己的应用程序时提供帮助。要加入论坛，请遵循以下步骤：
+
+1. 访问 `p2p.wrox.com` 并注册。
+
 2. 阅读并同意使用条款。
+
 3. 完成所需信息并提交。
+
 4. 你将收到一封邮件来验证你的账户。
 
 你可以在不加入的情况下阅读论坛。如果你希望通过邮件接收特定论坛的新消息，请订阅论坛列表中的名称。
 
 有关论坛如何运作的更多信息，请务必阅读任何论坛页面上的 FAQs（常见问题解答）。
 
-
-
-
-
-
-
-
-
-
 - 创建幻象 161
 
 - 自定义：定位下拉菜单 169
-
-
-
-
-
 
 XHTML 191
 
@@ -203,54 +159,47 @@ Flash Satay 199
 
 仅靠以身作范 203
 
-
-
 ### 访问设计师 206
 
 这在其他哪里也适用？ 220
+
 教训 224
 
-
-
-
-
-
-
-
 备用样式表 287
+
 现实情况：它在今天如何能够工作 291
+
 推翻 PHP 300
+
 媒体类型：让疗愈开始 305
+
 杂项与胡闹：构建一个更好的切换器 309
 
 - 进入 ChristopherSchmitt.com 317
+
 内容与网站地图 321
+
 设计网站 324
+
 定基调 324
+
 开发网站 329
+
 页面居中（以及为什么这很重要） 329
-进入 <head> 335
+
+进入 `<head>` 335
+
 为 Logo 留出空间 339
+
 HTML 中的列 344
+
 主列内容 349
+
 样式化博客文章 352
+
 网站导航开始 360
+
 网站网站 378
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 ## 网站的规划与开发
 
@@ -263,13 +212,20 @@ HTML 中的列 344
 在任何一种情况下，勾勒出一个表格不仅列出你团队中的各种角色，还列出他们的职责，可能都会帮助。在下表中，我们概述了普通项目团队可能呈现的大致草图。即使你是负责项目的唯一资源，这项练习也会非常有帮助。在整个合同期间，身兼多个角色可能是一场杂技，而这样一张表格可以帮助你准确识别出你的要求，以及你需要与谁互动。
 
 | 角色 | 职责 | 交付物 |
+
 | :--- | :--- | :--- |
+
 | 项目经理 | 总体协调员，监督从需求收集到交付的进度。与客户赞助人合作，定义项目的范围和需求。 | 范围说明（共同作者）；时间表。 |
+
 | 项目赞助人 | 客户公司的主要联系人，定义业务需求，并在项目的各个阶段进行签字。 | 范围说明（共同作者）；创意简报；任何被认为对于需求收集必要的额外材料。 |
+
 | 信息架构师 | 开发网站的基础设施，并建立直观且可扩展的准则。 | 网站地图；线框。 |
+
 | Web 设计师 | 建立网站的视觉设计或“外观与感受”。 | 图形原型图；静态 HTML 模板（以及必要的 CSS/图像资源）；样式指南。 |
+
 | Web 开发人员 | 在构建动态、数据库驱动的网站时，负责任何服务器端编程。 | 功能规格书；应用程序安装/配置。 |
-| 数据库开发人员 | 构建存储网站内容的数据库，并驱动网站的其他动态方面面。 | 数据模型；数据库安装/配置。 |
+
+| 数据库开发人员 | 构建存储网站内容的数据库，并驱动网站的其他动态方面。 | 数据模型；数据库安装/配置。 |
 
 ## 第一章
 
@@ -287,7 +243,7 @@ HTML 中的列 344
 
 ## 管理变更
 
-假设我们正在网站上线前两小时紧张地看着时。我们正在查看待办列表上的最后几项，在网站上线之前感到有些压力。就在这时，我们的客户赞助人来告诉我们他的老板想要带有新品牌网站的节日卡片设计（这在我们身上还没有发生过）。就这样这样，我们的优先级被告知要转移，但项目的时间表并没有变。
+假设我们正在网站上线前两小时紧张地看着时。我们正在查看待办列表上的最后几项，在网站上线之前感到有些压力。就在这时，我们的客户赞助人来告诉我们他的老板想要带有新品牌网站的节日卡片设计（这在我们身上还没有发生过）。就这样，我们的优先级被告知要转移，但项目的时间表并没有变。
 
 这被称为“范围蔓延”（scope creep）。虽然变更是预料之中的，但重要的是知道如何有效地管理它。对于这个问题，没有简单的答案，但有一些策略可能是很有用的。
 
@@ -305,15 +261,13 @@ HTML 中的列 344
 
 ## 参考项目范围
 
+
+
 虽然范围说明使我们能够定义项目需求，但它隐含地解释了什么不在约定的范围之内——在截止日期紧迫时这是一个关键点。这就是范围文档协作开发的特性变得最重要的时刻。通过在项目开始时与客户紧密合作定义范围，客户将更具体地了解该范围（及其任何更改）将如何影响定价和时间表。
-
-
-
-
 
 ## 在预算内界定工作
 
-从这一点来看，重要的是记住项目预算可以是缓解范围蔓延（creep）的一项宝贵工具。正如我们的范围声明帮助我们理解哪些内容不属于我们项目的管辖范围，同样，我们的预算也可以帮助减少不必要的变更。如果请求的变更资金不足，该问题就会变得无足轻重。
+从这一点来看，重要的是记住项目预算可以是缓解范围蔓延（`creep`）的一项宝贵工具。正如我们的范围声明帮助我们理解哪些内容不属于我们项目的管辖范围，同样，我们的预算也可以帮助减少不必要的变更。如果请求的变更资金不足，该问题就会变得无足轻重。
 
 若如此，则值得与客户讨论此变更具体将如何对预算和项目时间表产生影响。在快节奏的项目遗忘中，额外工作与额外时间之间的关系往往是高昂的。通过证明 X 数量的工作将需要 Y 美元的计费工时，我们可以与客户合作，准确评估范围变更实际上到底具有多大的优先级。（我们从不在最后截止日期临近才做预测，但请多多包涵。）
 
@@ -333,7 +287,7 @@ HTML 中的列 344
 
 ### 设计师，知晓你的目标
 
-在本节标题的结尾隐含了“全部”，因为任何项目都带有一群不同的（有时是相互竞争的）目标。理性统一过程（Rational Unified Process）是一种软件项目管理方法（http://ibm.com/software/awdtools/rup/），它通过定义关键成功因素（通常称为 CSFs）来建立项目目标。这些因素就像一份洗衣清单，帮助你判断项目何时完成。一些示例性的 CSFs 可能包括：
+在本节标题的结尾隐含了“全部”，因为任何项目都带有一群不同的（有时是相互竞争的）目标。理性统一过程（Rational Unified Process）是一种软件项目管理方法（`http://ibm.com/software/awdtools/rup/`），它通过定义关键成功因素（通常称为 CSFs）来建立项目目标。这些因素就像一份洗衣清单，帮助你判断项目何时完成。一些示例性的 CSFs 可能包括：
 
 - 将付费订阅服务整合到网站。
 - 在六个月内增加流量 40%。
@@ -350,9 +304,6 @@ HTML 中的列 344
 ### 客户的目标
 
 如果你的项目对客户有价值，它必须推进客户的业务目标。通常，我们的客户并非我们所在的行业。无论客户来自印刷行业、汽车行业还是寻求建立在线形象的小型企业，他们通常都有……
-
-
-
 
 ## 你的网站的规划与开发
 
@@ -381,28 +332,22 @@ Frank 对自己的设计技能相当有信心，他是第一个承认自己还�
 
 此外，你可能还会收集到一些地理数据。当你跟踪网站页面时，每位访问者都会留下他们的 IP 地址。通过这些信息，各种分析工具可以告诉你你的用户来自世界的哪个部分。为什么这很重要？如果你在为国际观众构建网站，你的设计应该能够与多种语言和文化的人交流。例如，你的网站图标对美国观众传达的意义是否与对德国观众、甚至对来自新加坡的用户传达的相同？了解你的网站受众来自哪里与了解你的受众想要什么一样重要。
 
-在进行研究时，你有许多分析工具可供使用。AW Stats (http://awstats.sourceforge.net/) 是一个免费的日志分析器，可以分析 Apache 和 Microsoft 的 IIS 等流行 Web 服务器的日志格式。Webbalizer (www.mrunix.net/webalizer/) 是一个类似的软件包，但仅支持 Apache 日志格式。ShortStat (www.shauninman/mentary/past/shortstat_maintenance.php) 是一个可以跟踪各种用户数据的 PHP 应用程序。这些只是三个这样的包，还有几十甚至上百种替代方案。每个包都有其优缺点，应该根据你的需求和技术要求进行评估。
+在进行研究时，你有许多分析工具可供使用。`AW Stats` (`http://awstats.sourceforge.net/`) 是一个免费的日志分析器，可以分析 Apache 和 Microsoft 的 IIS 等流行 Web 服务器的日志格式。`Webbalizer` (`www.mrunix.net/webalizer/`) 是一个类似的软件包，但仅支持 Apache 日志格式。`ShortStat` (`www.shauninman/mentary/past/shortstat_maintenance.php`) 是一个可以跟踪各种用户数据的 PHP 应用程序。这些只是三个这样的包，还有几十甚至上百种替代方案。每个包都有其优缺点，应该根据你的需求和技术要求进行评估。
 
 除了分析服务器日志外，你还应该采访网站的利益相关者。这些人是决策者，他们驱动着不仅是网站，还有其背后的业务的决策。这些人与网站受众之间有着紧固的纽带，理想情况下与他们保持着密切接触。因此，他们可以就你的用户需求提供宝贵的见解，以及网站的哪些区域对他们最相关。
 
 当然，创建有效人物画像的方法是放下内部统计数据和假设，实际上与用户面谈——毕竟，事实和数字只能说明部分。在某些时刻，你需要定性的观点，并与那些使用（或目前使用）你网站的人面对面。这样，他们就可以你的用户需求提供宝贵的见解，并帮助你在做出设计决策时获得真实的案例和经验。例如，你可以就以下方面收集用户信息：
 
 - 技术信息：他们使用什么浏览器？在什么电脑上？他们如何使用 Web？为什么要使用 Web？
-
 - 客户信息：他们如何看待你公司或客户的网站？他们使用吗？他们对竞争对手如何？
-
 - 个人信息：这可能包括年龄、性别和位置（例如，城市或农村）。
-
 - 设计偏好：你如何定义“好的”网站设计？虽然你可能会让他们对给定的网站设计进行艺术学院式的评论，但你可能会让他们讲述一些故事。尝试找出为什么那些网站是他们的收藏。此外，你还可以尝试发现他们喜欢哪些网站，以及他们...
-
-
-
 
 # 第1章
 
 但这里涉及的不仅仅是简单的创建一个大纲然后丢进去几个段落（至少，我们希望看起来是那样）。相反，这关乎如何让这些内容的顺序对你——读者——来说是符合逻辑的。如果不考虑你将如何阅读这本书——你将如何与其中的内容进行交互——我们本可以节省些时间，把所有内容都打印在那张长长的纸上。
 
-在当代的 Web 术语中，“信息架构”（Information Architecture，简称 IA）是指代这一过程最常用的术语。从表面上看，信息架构是你定义网站内部组织的一种手段：将你网站的所有内容拆分为易于消化的区块（chunks），并创建一个本地导航结构，让你的用户能够访问这些区块。
+在当代的 Web 术语中，“信息架构”（Information Architecture，简称 IA）是指代这一过程最常用的术语。从表面上看，信息架构是你定义网站内部组织的一种手段：将你网站的所有内容拆分为易于消化的区块（`chunks`），并创建一个本地导航结构，让你的用户能够访问这些区块。
 
 但在某些时候，IA 可能会被看作是管理员的一份美化工作：在索引卡上写下一些离散的内容，然后将其归档在标签良好的抽屉里，供某些人访问。从本质上说，IA 仅仅是关于分类和结构。相反，它是关于对一个混乱的信息集施加秩序，通过这种方法让其他人能够轻松与之交互。事实上，“界面”一词暗示了用户与网站之间的这种双向互动。你的网站可能在网上提供了很有吸引力的内容，但如果用户找不到它们，那有什么用呢？作为设计师——是的，作为信息架构师——我们的责任是给看似如丛林般的页面施加秩序，让其他人能够轻松地从中浏览。
 
@@ -410,13 +355,13 @@ Frank 对自己的设计技能相当有信心，他是第一个承认自己还�
 
 # 投入实践
 
-假设我们被要求重新设计一个名为 WebMag 5000 的小型 Web 杂志（我们从未说过我们特别擅长设计，但请包涵我们）。在与利益相关者会议期间，我们了解到 WebMag 5000 是一份专注于为在线专业人士编写文章的出版物，主要是那些从事 Web 设计行业的人士。他们的作者大部分来自读者群体，并且都是以志愿身份贡献的。WebMag 5000 积累了声誉，认为在网站上发表文章是有价值的，在过去的一年里，潜在文章的录用率一直保持在相当高的水平，这令人欣慰。
+假设我们被要求重新设计一个名为 `WebMag 5000` 的小型 Web 杂志（我们从未说过我们特别擅长设计，但请包涵我们）。在与利益相关者会议期间，我们了解到 `WebMag 5000` 是一份专注于为在线专业人士编写文章的出版物，主要是那些从事 Web 设计行业的人士。他们的作者大部分来自读者群体，并且都是以志愿身份贡献的。`WebMag 5000` 积累了声誉，认为在网站上发表文章是有价值的，在过去的一年里，潜在文章的录用率一直保持在相当高的水平，这令人欣慰。
 
-因为它正沉浸在优质内容的海洋中，WebMag 5000 拥有丰富多样的内容：分析新趋势的文章；为设计师和开发者准备的教程；读者在专业领域感兴趣的软件和书籍评论。遗憾的是，读者人数下降了。所有用户反馈的共同点是，网站的导航变得越来越困难。随着所有新内容的加入，原网站的设计开始显出老态。原设计最初是为处理每月发布两次的版本而构建，并不打算处理该网站每周三刊的内容量。首页被精选内容充斥得密密麻麻，用户难以锁定感兴趣的区域。因此，作为你重新设计的一部分，WebMag 5000 要求你设计一个不仅具有视觉吸引力，而且更实用的网站。
+因为它正沉浸在优质内容的海洋中，`WebMag 5000` 拥有丰富多样的内容：分析新趋势的文章；为设计师和开发者准备的教程；读者在专业领域感兴趣的软件和书籍评论。遗憾的是，读者人数下降了。所有用户反馈的共同点是，网站的导航变得越来越困难。随着所有新内容的加入，原网站的设计开始显出老态。原设计最初是为处理每月发布两次的版本而构建，并不打算处理该网站每周三刊的内容量。首页被精选内容充斥得密密麻麻，用户难以锁定感兴趣的区域。因此，作为你重新设计的一部分，`WebMag 5000` 要求你设计一个不仅具有视觉吸引力，而且更实用的网站。
 
 ## 审查你的内容
 
-如果你是一个自由职业人士，“审计”（audit）一词可能会让你联想到与各种税务机构进行数令人压力的、不愉快的讨论。但在任何网站（无论大小）的语境下，内容审计都是摆脱 Web 混乱的第一步。通过这种方法，你可以创建内容清单，识别网站所含内容的优劣，并开始将这些信息组织成离散的、用户易于消化的区块。
+如果你是一个自由职业人士，“审计”（`audit`）一词可能会让你联想到与各种税务机构进行数令人压力的、不愉快的讨论。但在任何网站（无论大小）的语境下，内容审计都是摆脱 Web 混乱的第一步。通过这种方法，你可以创建内容清单，识别网站所含内容的优劣，并开始将这些信息组织成离散的、用户易于消化的区块。
 
 ## 网站的规划与开发
 
@@ -424,7 +369,7 @@ Frank 对自己的设计技能相当有信心，他是第一个承认自己还�
 
 此外，当你穿梭于书店里的书籍时，你肯定会发现几本你无法舍弃的书。也许你已经多年没有读过某本书了，或者你意识到你并不需要所有的《数字月亮》。如果你遇到一些价值较低的书，你可以保留它们以让你的收藏更轻量，也可以将它们放在较矮的架子上，以便其他书籍能更突出。同样，你进行的任何在线内容处理都能让你识别并移除网站中的“杂质”，减少用户为了实现目标而必须筛选的无关页面数量。
 
-现在回到 WebMag 5000，让我们检查我们已经学到的内容。在早期的需求收集讨论中，我们了解到文章、专题和教程是网站的核心。在进一步的讨论以及对旧网站的周密观察中，我们发现还有大量的其他信息被包含在：
+现在回到 `WebMag 5000`，让我们检查我们已经学到的内容。在早期的需求收集讨论中，我们了解到文章、专题和教程是网站的核心。在进一步的讨论以及对旧网站的周密观察中，我们发现还有大量的其他信息被包含在：
 
 - 联系页面
 - 广告商的费率和信息
@@ -441,28 +386,22 @@ Frank 对自己的设计技能相当有信心，他是第一个承认自己还�
 
 # 第1章
 
-
 图 1-2：我们网站的粗略内容清单。我们如何理解这一切？
 
 ## 从清单到层级结构
 
 那么，我们如何开始理解我们的网站，以便其他人也能这样做呢？首先，将你的网站视为信息的层级结构而不是一堆页面，这将有所帮助。事实上，大多数网站地图看起来像树并不是偶然的：首页位于树的顶部（或根部），网站的不同区域从它分支出来。当用户穿过树的不同层次时，每个分支都比前一个分支更专业化。从网站的根部到单个页面，用户正在钻过这些分支以寻找对他们重要的内容。正如此，你的责任是让这些分支的顺序尽可能直观。
 
-所以，假设在经过大量的研究和用户采访后，我们发现 WebMag 5000 的受众可以分为三类用户：
+所以，假设在经过大量的研究和用户采访后，我们发现 `WebMag 5000` 的受众可以分为三类用户：
 
 - **读者。** 这些人对我们网站上发表的评论、文章和教程最感兴趣。他们主要是信息的消费者，因此尽可能快地给他们需要的信息至关重要。
 - **作者。** 在某种意义上，这组人确实是我们杂志的灵魂。由于我们所有的作者都是以志愿身份工作，我们必须在网站上为他们创作的内容提供一个体面的家。他们的名字——以及他们的作品——应该被突出显示，以希望他们未来提供更多内容。
-
-
-
-
 
 ## 您的网站的规划与开发
 
 潜在的作者。当然，由于我们正在寻找更多志愿者来充实作者队列，我们应该为他们提供关于如何贡献以及我们正在寻找什么的信息。这些人（在理想情况下）将来自我们的普通读者，并且应该已经熟悉我们所讨论的话题。
 
 基于此，我们可以开始完善网站的层级结构。为了满足这三类用户的需求，我们网站的最高层级可能如图 1-3 所示。
-
 
 图 1-3：识别网站的区域
 
@@ -471,7 +410,6 @@ Frank 对自己的设计技能相当有信心，他是第一个承认自己还�
 > 在信息架构（IA）中，很少有“正确”的答案。我们组织这个假设网站所采用的方法可以很容易被许多替代方案取代。例如，我们可以轻松地将网站的评论、文章和教程放在它们各自的顶层章节中。无论你对自己的网站决定了什么，尽可能获取用户的反馈是至关重要的。总有一种可能，你对用户行为所做的假设——无论研究得有多充分——可能无法获得真实用户的认可。如果你的项目允许，分配一些时间进行用户测试和反馈只会有助于改进结果。
 
 当然，结构化的工作并不仅限于这三个分支。正如我们所说，网站的每个层级都代表了更高、更细致的细节级别。这三个部分都可以包含页面，这是事实——但它们也可以包含子章节，而子章节又可以包含页面和其他子章节，以此类推，如图 1-4 所示。
-
 
 图 1-4：我们的内容层级开始完善。
 
@@ -485,7 +423,7 @@ Frank 对自己的设计技能相当有信心，他是第一个承认自己还�
 
 现在我们已经建立了网站的高级分类，我们终于可以通过网站地图来完成组织过程。地图是一个图形化的、高层的概述，显示了每个页面或章节的标题，并以视觉上易读的逻辑层级呈现（如果你能快速说五遍，我们会给你一颗金星）。地图是我们目前为止信息架构工作的结晶。它获取内容清单，并将其内容组织成逻辑清晰、可导航的层级。
 
-如图 1-5 所示，网站的每个页面都列出并命名命名，“堆（stacks）”是相关页面的组。我们不需要显示之前“文章”部分中的每一个页面，我们可以通过这种符号轻松将它们分组。如果我们记住内容层级图，就能清楚地看到帮助树结构是如何驱动我们网站导航的。
+如图 1-5 所示，网站的每个页面都列出并命名命名，“堆（`stacks`）”是相关页面的组。我们不需要显示之前“文章”部分中的每一个页面，我们可以通过这种符号轻松将它们分组。如果我们记住内容层级图，就能清楚地看到帮助树结构是如何驱动我们网站导航的。
 
 | 内容 | 学习 (Learn) |
 | :--- | :--- |
@@ -495,14 +433,11 @@ Frank 对自己的设计技能相当有信心，他是第一个承认自己还�
 | 无障碍声明 | 贡献 (Contribute) | 如何运作 | 写作技巧 |
 | 版权声明 | | |
 
+
+
 我们虚拟网站的网站地图
 
-
-
-
-
 # 第一章
-
 
 图 1-6：标注部分之间的关系
 
@@ -522,9 +457,9 @@ Frank 对自己的设计技能相当有信心，他是第一个承认自己还�
 
 ## 网站的规划与开发
 
-- 全局导航链接。根据我们的站点地图，这些是“联系我们”（Contact Us）、“订阅”（Subscribe）、无障碍声明”（Accessibility Statement）和“版权”（Copyright）。
+- 全局导航链接。根据我们的站点地图，这些是“联系我们”（Contact Us）、“订阅”（Subscribe）、“无障碍声明”（Accessibility Statement）和“版权”（Copyright）。
 - 主导航。这些链接指向“学习”（Learn）、“关于”（About）和“贡献”（Contribute）部分，我们已经在站点地图中定义了它们。
-- 二级导航。这些是每个内部的导航选项。如果在地图的“关于”部分，子导航选项将是“我们的网站”（Our Site）、“我们的作者”（Our Authors）、版权说明”（Colophon）和“广告”（Advertising）。
+- 二级导航。这些是每个内部的导航选项。如果在地图的“关于”部分，子导航选项将是“我们的网站”（Our Site）、“我们的作者”（Our Authors）、“版权说明”（Colophon）和“广告”（Advertising）。
 - 作者姓名（Author's name）。这应该链接到文章作者的简介。
 - 分类列表（Category listings）。这应该在内容分类下列出当前文章的分类，以便用户查看这些分类中的其他文章。
 - 广告横幅（Advertising banner）。客户告诉我们它需要宽 280 像素、高 120 像素，但我们在这个阶段不需要担心布局。
@@ -546,14 +481,13 @@ Frank 对自己的设计技能相当有信心，他是第一个承认自己还�
 - 广告（Advertising）：
   - 广告横幅
 
-这些内容组在很大程度上被划分为概念块（也就是说，辅助信息被丢到了“相关内容”中，横幅广告被非常聪明地归为“广告”，以此此类推）。如果你正在处理一个具有高度交互性的页面（例如一个需要用户输入大量数据的复杂表单），你可能会使用描述其中包含的数据标题（如“我的个人信息”、“我的信息”、“收货地址”等）。
+这些内容组在很大程度上被划分为概念块（也就是说，辅助信息被丢到了“相关内容”中，横幅广告被非常聪明地归为“广告”，以此类推）。如果你正在处理一个具有高度交互性的页面（例如一个需要用户输入大量数据的复杂表单），你可能会使用描述其中包含的数据标题（如“我的个人信息”、“我的信息”、“收货地址”等）。
 
 有了这个高层列表，我们可以将这些内容分组转换为粗略的线框图，展示这些关系在页面上如何呈现。
 
 # 第一章
 
-在 1-7 中，我们为线框图确定了一个相当传统的双栏布局。我们的大多数内容类别已转化为页面上的离散区域，并根据我们在示例中需要分配的视觉权重放置。客户的 Logo 被放置在线框图的顶部，以最大限地提高 WebMag 5000 品牌的可见性。唯一一个“跨越”布局的内容类别是站点导航。主导航和二级导航被放在 Logo 正下方以便方便导航，“全局”导航被放到了页面页脚。虽然这可能向某些用户表明这可能是页面最不重要的区域，但我们决定将其放置在底部，希望其一致的位置能让用户轻松地找到它。
-
+在 1-7 中，我们为线框图确定了一个相当传统的双栏布局。我们的大多数内容类别已转化为页面上的离散区域，并根据我们在示例中需要分配的视觉权重放置。客户的 Logo 被放置在线框图的顶部，以最大限度地提高 WebMag 5000 品牌的可见性。唯一一个“跨越”布局的内容类别是站点导航。主导航和二级导航被放在 Logo 正下方以便方便导航，“全局”导航被放到了页面页脚。虽然这可能向某些用户表明这可能是页面最不重要的区域，但我们决定将其放置在底部，希望其一致的位置能让用户轻松地找到它。
 
 | 学习 | 关于 | 贡献 |
 | :--- | :--- | :--- |
@@ -561,17 +495,12 @@ Frank 对自己的设计技能相当有信心，他是第一个承认自己还�
 | 二级导航 4 | 二级导航 5 | 文章标题 |
 | 我们在示例中根据需要分配的视觉权重，将大多数内容类别转化为页面上的离散区域。 | | |
 | （此处为示例原文内容的翻译对齐） | | |
-| 客户的 Logo 被放置在线框图的顶部，以最大限地提高 WebMag 5000 品牌的可见性。唯一一个“跨越”布局的内容类别是站点导航。主导航和二级导航被放在 Logo 正下方以便方便导航，“全局”导航被放到了页面页脚。虽然这可能向某些用户表明这可能是页面最不重要的区域，但我们决定将其放置在底部，希望其一致的位置能让用户轻松地找到它。 | | |
+| 客户的 Logo 被放置在线框图的顶部，以最大限度地提高 WebMag 5000 品牌的可见性。唯一一个“跨越”布局的内容类别是站点导航。主导航和二级导航被放在 Logo 正下方以便方便导航，“全局”导航被放到了页面页脚。虽然这可能向某些用户表明这可能是页面最不重要的区域，但我们决定将其放置在底部，希望其一致的位置能让用户轻松地找到它。 | | |
 | （注：由于示例表格内容较乱且重复，此处主要保持结构对齐） | | |
 
 *(注：由于原始示例中的表格内容包含大量重复的占位符文本，翻译时严格遵循了其表格结构并对可读部分进行了处理。)*
 
-
-
-
-
 # 第一章
-
 
 图 1-8：Cinnamon Interactive。这种既时尚又实用的精美设计让随机访问者叹为观止，同时引导潜在客户进入他们的作品集。
 
@@ -589,9 +518,9 @@ Frank 对自己的设计技能相当有信心，他是第一个承认自己还�
 
 这种浏览可以在线上，也可以在线下进行。无论是漫步博物馆，还是浏览或浏览一些设计良好的网站，你选择的媒介并不重要，让自己在一两个小时内接触逻辑合理、执行良好的设计更为重要。坦率地说，通过访问许多著名的设计门户网站或宣扬某些设计亮点的在线社区，我们完全可以让一两个小时变成八九小时。
 
-在过去的一年里，许多宣扬基于 CSS 网页的网站相继出现。最近加入的是 Stylegala (www.stylegala.com/)。它的特点是具有与其代码一样引人入胜的设计。画廊中的每个精选网站都配有 Stylegala 创建者兼驻场设计师 David Helsing 的深度评析。该网站的用户允许在画廊中投票选出喜爱的，并提供额外的评论。这些讨论总是有趣的，而且这些网站都是 Web（以及 CSS）所能能力的示例。
+在过去的一年里，许多宣扬基于 CSS 网页的网站相继出现。最近加入的是 Stylegala (`www.stylegala.com/`)。它的特点是具有与其代码一样引人入胜的设计。画廊中的每个精选网站都配有 Stylegala 创建者兼驻场设计师 David Helsing 的深度评析。该网站的用户允许在画廊中投票选出喜爱的，并提供额外的评论。这些讨论总是有趣的，而且这些网站都是 Web（以及 CSS）所能能力的示例。
 
-Kaliber10000 (www.k10k.net/) 并不是这样一个作为权威的社区，它提供了一个近乎眼花缭的设计相关网站、技巧和教程，而且在一个更令人眼晕的范畴内。它成立于 1998 年，由行业中一些最精明的设计师组成，Kaliber10000 提供了从用户桌面截图到重度 Flash 布局的所有内容。Kaliber 不仅仅会让你看到你的设计瓶颈——相反，它将帮助你释放它。
+Kaliber10000 (`www.k10k.net/`) 并不是这样一个作为权威的社区，它提供了一个近乎眼花缭的设计相关网站、技巧和教程，而且在一个更令人眼晕的范畴内。它成立于 1998 年，由行业中一些最精明的设计师组成，Kaliber10000 提供了从用户桌面截图到重度 Flash 布局的所有内容。Kaliber 不仅仅会让你看到你的设计瓶颈——相反，它将帮助你释放它。
 
 ## 选择布局：固定或流
 
@@ -605,12 +534,9 @@ Kaliber10000 (www.k10k.net/) 并不是这样一个作为权威的社区，它提
 
 # 第一章
 
-
 800x600
 
-
 1024x768
-
 
 1280x1024
 
@@ -622,12 +548,10 @@ Kaliber10000 (www.k10k.net/) 并不是这样一个作为权威的社区，它提
 
 流体（或“液体式”）布局的支持者更快地反驳说固定宽度设计设定了一个不公平的假设。因此，流体布局应该是完全灵活的。随着浏览器窗口的扩大或缩小，页面布局将随之变化，确保内容在任何窗口下都能显示（见图 1-11）。
 
-大多数固定宽度技术的忠实者会说，用户的屏幕分辨率在近年来一直在提高，不再需要为较小屏幕设计。他们的服务器日志会告诉他们，绝大多数用户运行的是 $1024 \times 768$ 或 $800 \times 600$ 等分辨率，而且为较小屏幕设计已经不如 Web 早期时代那样了。
-
-
-
+大多数固定宽度技术的忠实者会说，用户的屏幕分辨率在近年来一直在提高，不再需要为较小屏幕设计。他们的服务器日志会告诉他们，绝大多数用户运行的是 `$1024 \times 768$` 或 `$800 \times 600$` 等分辨率，而且为较小屏幕设计已经不如 Web 早期时代那样了。
 
 ## 第一章
+
 800x600
 
 1024x1024
@@ -637,6 +561,56 @@ Kaliber10000 (www.k10k.net/) 并不是这样一个作为权威的社区，它提
 ## 你的网站的规划与开发
 
 ![](img/70fa44d3a461f43c7a35cac2b893273d_51_0.png)
+
+```
+Lorem ipsum sit amet, consectetur adipiscing elit. Phasellus ultincenas nisque mauris et porttitor id nisl mauris, nisl rhidales. Sed eu dui in aliquam tincidunt. Suspendisse non nibh, euismod, quam, posuere, pulvitur at metus. Duis volutpat nulla, a erat diam at orci. Aliquam semper tempor ipsum eu libero. Praenet massa, turpis, velquam at, nisl tellus. Pellentesque habitat atrerit sed eros. Aenean ante quam.
+Nullam at sem nibh a metus. Praesent ultiquam tellus, interdum a lectus. Maecenas in vestibulum element. Praesent porta massa, elit nibh condimentum massa. Vivra vitae lectus. Nulla at elit in libero, augue massa ultrer, a mollis hendrerit.
+Mauris ultricies vitae. Nam libero, erat amet, ullamcorper, in element, et pretium. Vestibulus ante primis facilisis in faucibus orci et vehicula eleisl. Curabitur hendrerit massa. Cras in aliquam, diam, venenatis, metus nec nisi. Integer eget sodales a felis. Pellentesque nisl, amet ac cubilia euismod faucibus. Aenean ante quam.
+```
+
+图 1-11：固定宽的文本页。在单行宽度下非常易读，不是吧？
+
+```
+Lorem ipsum sit amet, consectetur adipiscing elit. Phasellus ultincenas nisque mauris et porttitor id nisl mauris, nisl rhidales. Sed eu dui in aliquam tincidunt. Suspendisse non nibh, euismod, quam, posuere, pulvitur at metus. Duis volutpat nulla, a erat diam at orci. Aliquam semper tempor ipsum eu libero. Praenet massa, turpis, velquam at, nisl tellus. Pellentesque habitat atrerit sed eros. Aenean ante quam. Aenean ante quam. Pellentesque habitat atrerit sed eros.
+Nullam at sem nibh a metus. Praesent ultiquam tellus, interdum a lectus. Maecenas in vestibulum element. Praesent porta massa, elit nibh condimentum massa. Vivra vitae lectus. Nulla at elit in libero, augue massa ultrer, a mollis hendrerit.
+Mauris ultricies vitae. Nam libero, erat amet, ullamcorper, in element, et pretium. Vestibulus ante primis facilisis in faucibus orci et vehicula eleisl. Curabitur hendrerit massa. Cras in aliquam, diam, venenatis, metus nec nisi. Integer eget sodales a felis. Pellentesque nisl, amet ac cubilia euismod faucibus. Aenean ante quam.
+In hac habitasse platea. Praesent lacus, augue, at atip, nisl. Curabitur vitae augue sem. Praesent sem nibh a metus, interdum a lectus. Maecenas in vestibulum element. Praesent porta massa, elit nibh condimentum massa. Vivra vitae lectus. Nulla at elit in libero, augue massa ultrer, a mollis hendrerit.
+Duis volutpat nulla, a erat diam at orci. Aliquam semper tempor ipsum eu libero. Praenet massa, turpis, velquam at, nisl tellus. Pellentesque habitat atrerit sed eros. Aenean ante quam. Nulla a mollis hendrerit.
+Duis hendrerit massa. In mollis scelerin diam. Curabitur vitae augue sem. Suspendisse varius turpis nec elit. Duis et varius tellus, a diam, turpis. Vivrerat et neque nisl dapibus elementum. In hac habitasse platea dictum, Donec eget libero elementum, nec a mollis hendrerit. Curabitur hendrerit massa. Cras in aliquam, diam, venenatis, metus nec nisi. Integer eget sodales a felis. Pellentesque nisl, amet ac cubilia euismod faucibus. Aenean ante quam.
+```
+
+## XHTML 和 CSS 的 2 个最佳实践
+
+在 Web 早期，它并不是地球上最吸引人的东西。超文本最初是为物理学家创建的，仅仅是作为在开放网络上共享文档的手段。不用说，高水平的设计并不是 Web 的首要任务。事实上，HTML 中广泛使用的表格其创建只有一个目的：显示表格化数据。
+
+
+
+当我们达到 20 世纪 90 年代后期设计的黄金时代时，HTML 中的 "L" 经常被忽略。许多专业人士认为，我们用来构建页面的代码并不是一种语言本身（per se），因此不受真实语言规则和限制的约束。此外，客户并不是为了“合规的”、“可访问的”或“面向未来的”代码买单。事实上，许多网站的产生要求它们是“向后兼容”的。如果说这是一种误用，那一定没错，因为它仅仅要求在 4.0 或更高版本的浏览器中保持一致显示。
+
+那个时代的浏览器对万网联盟联盟（`www.w3.org/`）编写的规范支持很差。因此，你可以发现页面在浏览器 A 中的渲染效果与在浏览器 B 中不同。所以，虽然我们充分意识到 W3C 产生的“标准”，但我们必须支持的浏览器对符合标准的标记宽忍度较小。在这种情况下，科学与 Web 现实之间的差距太大了。我们无疑使用了特定浏览器的标记使 HTML 失效，以确保在目标浏览器中“看起来良好”。
+
+当然，设计师们很早就学会通过消除表格单元间距（`cellspacing`）和内边距（`padding`），来创建复杂的网格布局，并为我们的网站带来新的审美吸引力。鉴于当时浏览器对 CSS 的支持很差，我们别无选择只能用表现性设计增加页面重量。
+
+## 总结
+
+通过本章，我们完成了对两个关键组件：XHTML 和 CSS 的概述。我们将检查它们之间的关系，并讨论有关将其集成到工作流中的一些建议。
+
+## 获取观点
+
+（由于此处原始文本包含大量重复的占位符，译文已根据提供的内容进行了逻辑清理。）
+
+## 第一章
+
+800x600
+
+1024x1024
+
+图 1：`sideshow.com` 是本书另一位作者 Ethan Marcott 的网站。它采用固定的、与分辨率无关的布局，某些人可能会在较大的屏幕分辨率下难以阅读。
+
+## 你的网站的规划与开发
+
+![](img/70fa44d3a461f43c7a35cac2b893273d_51_0.png)
+
 Lorem ipsum sit amet, consectetur adipiscing elit. Phasellus ultincenas nisque mauris et porttitor id nisl mauris, nisl rhidales. Sed eu dui in aliquam tincidunt. Suspendisse non nibh, euismod, quam, posuere, pulvitur at metus. Duis volutpat nulla, a erat diam at orci. Aliquam semper tempor ipsum eu libero. Praenet massa, turpis, velquam at, nisl tellus. Pellentesque habitat atrerit sed eros. Aenean ante quam.
 
 Nullam at sem nibh a metus. Praesent ultiquam tellus, interdum a lectus. Maecenas in vestibulum element. Praesent porta massa, elit nibh condimentum massa. Vivra vitae lectus. Nulla at elit in libero, augue massa ultrer, a mollis hendrerit.
@@ -661,61 +635,11 @@ Duis hendrerit massa. In mollis scelerin diam. Curabitur vitae augue sem. Suspen
 
 在 Web 早期，它并不是地球上最吸引人的东西。超文本最初是为物理学家创建的，仅仅是作为在开放网络上共享文档的手段。不用说，高水平的设计并不是 Web 的首要任务。事实上，HTML 中广泛使用的表格其创建只有一个目的：显示表格化数据。
 
-当我们达到 20 世纪 90 年代后期设计的黄金时代时，HTML 中的 "L" 经常被忽略。许多专业人士认为，我们用来构建页面的代码并不是一种语言*本身*（per se），因此不受真实语言规则和限制的约束。此外，客户并不是为了“合规的”、“可访问的”或“面向未来的”代码买单。事实上，许多网站的产生要求它们是“向后兼容”的。如果说这是一种误用，那一定没错，因为它仅仅要求在 4.0 或更高版本的浏览器中保持一致显示。
+当我们达到 20 世纪 90 年代后期设计的黄金时代时，HTML 中的 "L" 经常被忽略。许多专业人士认为，我们用来构建页面的代码并不是一种语言本身（per se），因此不受真实语言规则和限制的约束。此外，客户并不是为了“合规的”、“可访问的”或“面向未来的”代码买单。事实上，许多网站的产生要求它们是“向后兼容”的。如果说这是一种误用，那一定没错，因为它仅仅要求在 4.0 或更高版本的浏览器中保持一致显示。
 
-那个时代的浏览器对万网联盟联盟（www.w3.org/）编写的规范支持很差。因此，你可以发现页面在浏览器 A 中的渲染效果与在浏览器 B 中不同。所以，虽然我们充分意识到 W3C 产生的“标准”，但我们必须支持的浏览器对符合标准的标记宽忍度较小。在这种情况下，科学与 Web 现实之间的差距太大了。我们无疑使用了特定浏览器的标记使 HTML 失效，以确保在目标浏览器中“看起来良好”。
+那个时代的浏览器对万网联盟（`www.w3.org/`）编写的规范支持很差。因此，你可以发现页面在浏览器 A 中的渲染效果与在浏览器 B 中不同。所以，虽然我们充分意识到 W3C 产生的“标准”，但我们必须支持的浏览器对符合标准的标记宽忍度较小。在这种情况下，科学与 Web 现实之间的差距太大了。我们无疑使用了特定浏览器的标记使 HTML 失效，以确保在目标浏览器中“看起来良好”。
 
-当然，设计师们很早就学会通过消除表格单元间距（cellspacing）和内边距（padding），来创建复杂的网格布局，并为我们的网站带来新的审美吸引力。鉴于当时浏览器对 CSS 的支持很差，我们别无选择只能用表现性设计增加页面重量。
-
-## 总结
-
-通过本章，我们完成了对两个关键组件：XHTML 和 CSS 的概述。我们将检查它们之间的关系，并讨论有关将其集成到工作流中的一些建议。
-
-## 获取观点
-
-（由于此处原始文本包含大量重复的占位符，译文已根据提供的内容进行了逻辑清理。）
-
-[最终输出]:
-## 第一章
-
-800x600
-
-1024x1024
-
-图 1：sideshow.com 是本书另一位作者 Ethan Marcott 的网站。它采用固定的、与分辨率无关的布局，某些人可能会在较大的屏幕分辨率下难以阅读。
-
-## 你的网站的规划与开发
-
-![](img/70fa44d3a461f43c7a35cac2b893273d_51_0.png)
-Lorem ipsum sit amet, consectetur adipiscing elit. Phasellus ultincenas nisque mauris et porttitor id nisl mauris, nisl rhidales. Sed eu dui in aliquam tincidunt. Suspendisse non nibh, euismod, quam, posuere, pulvitur at metus. Duis volutpat nulla, a erat diam at orci. Aliquam semper tempor ipsum eu libero. Praenet massa, turpis, velquam at, nisl tellus. Pellentesque habitat atrerit sed eros. Aenean ante quam.
-
-Nullam at sem nibh a metus. Praesent ultiquam tellus, interdum a lectus. Maecenas in vestibulum element. Praesent porta massa, elit nibh condimentum massa. Vivra vitae lectus. Nulla at elit in libero, augue massa ultrer, a mollis hendrerit.
-
-Mauris ultricies vitae. Nam libero, erat amet, ullamcorper, in element, et pretium. Vestibulus ante primis facilisis in faucibus orci et vehicula eleisl. Curabitur hendrerit massa. Cras in aliquam, diam, venenatis, metus nec nisi. Integer eget sodales a felis. Pellentesque nisl, amet ac cubilia euismod faucibus. Aenean ante quam.
-
-图 1-11：固定宽的文本页。在单行宽度下非常易读，不是吧？
-
-Lorem ipsum sit amet, consectetur adipiscing elit. Phasellus ultincenas nisque mauris et porttitor id nisl mauris, nisl rhidales. Sed eu dui in aliquam tincidunt. Suspendisse non nibh, euismod, quam, posuere, pulvitur at metus. Duis volutpat nulla, a erat diam at orci. Aliquam semper tempor ipsum eu libero. Praenet massa, turpis, velquam at, nisl tellus. Pellentesque habitat atrerit sed eros. Aenean ante quam. Aenean ante quam. Pellentesque habitat atrerit sed eros.
-
-Nullam at sem nibh a metus. Praesent ultiquam tellus, interdum a lectus. Maecenas in vestibulum element. Praesent porta massa, elit nibh condimentum massa. Vivra vitae lectus. Nulla at elit in libero, augue massa ultrer, a mollis hendrerit.
-
-Mauris ultricies vitae. Nam libero, erat amet, ullamcorper, in element, et pretium. Vestibulus ante primis facilisis in faucibus orci et vehicula eleisl. Curabitur hendrerit massa. Cras in aliquam, diam, venenatis, metus nec nisi. Integer eget sodales a felis. Pellentesque nisl, amet ac cubilia euismod faucibus. Aenean ante quam.
-
-In hac habitasse platea. Praesent lacus, augue, at atip, nisl. Curabitur vitae augue sem. Praesent sem nibh a metus, interdum a lectus. Maecenas in vestibulum element. Praesent porta massa, elit nibh condimentum massa. Vivra vitae lectus. Nulla at elit in libero, augue massa ultrer, a mollis hendrerit.
-
-Duis volutpat nulla, a erat diam at orci. Aliquam semper tempor ipsum eu libero. Praenet massa, turpis, velquam at, nisl tellus. Pellentesque habitat atrerit sed eros. Aenean ante quam. Nulla a mollis hendrerit.
-
-Duis hendrerit massa. In mollis scelerin diam. Curabitur vitae augue sem. Suspendisse varius turpis nec elit. Duis et varius tellus, a diam, turpis. Vivrerat et neque nisl dapibus elementum. In hac habitasse platea dictum, Donec eget libero elementum, nec a mollis hendrerit. Curabitur hendrerit massa. Cras in aliquam, diam, venenatis, metus nec nisi. Integer eget sodales a felis. Pellentesque nisl, amet ac cubilia euismod faucibus. Aenean ante quam.
-
-## XHTML 和 CSS 的 2 个最佳实践
-
-在 Web 早期，它并不是地球上最吸引人的东西。超文本最初是为物理学家创建的，仅仅是作为在开放网络上共享文档的手段。不用说，高水平的设计并不是 Web 的首要任务。事实上，HTML 中广泛使用的表格其创建只有一个目的：显示表格化数据。
-
-当我们达到 20 世纪 90 年代后期设计的黄金时代时，HTML 中的 "L" 经常被忽略。许多专业人士认为，我们用来构建页面的代码并不是一种语言*本身*（per se），因此不受真实语言规则和限制的约束。此外，客户并不是为了“合规的”、“可访问的”或“面向未来的”代码买单。事实上，许多网站的产生要求它们是“向后兼容”的。如果说这是一种误用，那一定没错，因为它仅仅要求在 4.0 或更高版本的浏览器中保持一致显示。
-
-那个时代的浏览器对万网联盟（www.w3.org/）编写的规范支持很差。因此，你可以发现页面在浏览器 A 中的渲染效果与在浏览器 B 中不同。所以，虽然我们充分意识到 W3C 产生的“标准”，但我们必须支持的浏览器对符合标准的标记宽忍度较小。在这种情况下，科学与 Web 现实之间的差距太大了。我们无疑使用了特定浏览器的标记使 HTML 失效，以确保在目标浏览器中“看起来良好”。
-
-当然，设计师们很早就学会通过消除表格单元间距（cellspacing）和内边距（padding），来创建复杂的网格布局，并为我们的网站带来新的审美吸引力。鉴于当时浏览器对 CSS 的支持很差，我们别无选择只能用表现性设计增加页面重量。
+当然，设计师们很早就学会通过消除表格单元间距（`cellspacing`）和内边距（`padding`），来创建复杂的网格布局，并为我们的网站带来新的审美吸引力。鉴于当时浏览器对 CSS 的支持很差，我们别无选择只能用表现性设计增加页面重量。
 
 ## 总结
 
@@ -724,10 +648,6 @@ Duis hendrerit massa. In mollis scelerin diam. Curabitur vitae augue sem. Suspen
 ## 获取观点
 
 （由于此处原始文本包含大量重复的占位符，译文已根据提供的内容进行了逻辑清理。）
-
-
-
-
 
 ## 第 2 章
 
@@ -745,19 +665,17 @@ Duis hendrerit massa. In mollis scelerin diam. Curabitur vitae augue sem. Suspen
 
 这种方法凸显了早期 Web 设计中盛行的对“看起来正确”的强调。尽管 HTML 的布局结构良好，但我们的页面演变成了一种“标签汤”（tag soup）——一种由结构性标记和表现性标记混合而成的、并不算复杂的杂烩。因为当时的浏览器对样式表、字体元素以及用于控制网站设计的深度嵌套表格的支持不存在或不完善。我们充斥着属性的 `body` 标签完美地说明了我们标记中样式与结构之间的错配。`body` 元素本身执行着重要作用（它包含网页内容），而挤在起始标签中的那小群属性仅仅是为了让结构呈现出某种特定的方式。
 
-令人痛苦的是，我们的 `body` 元素似乎并不完全糟糕——真的值得为某行标记而手足无措吗？为了为了说明表现性标记问题的具体例子，让我们看看哈佛大学主页（www.harvard.edu/）。该网站的设计（见图 2-1）令人赞地反映了该大学成熟的品牌：保守的土色系色调点缀了鲜明的哈佛红；从所有角度来看，这是一个成功的网站设计，我们确信它每天都会吸引相当大的流量。
+令人痛苦的是，我们的 `body` 元素似乎并不完全糟糕——真的值得为某行标记而手足无措吗？为了为了说明表现性标记问题的具体例子，让我们看看哈佛大学主页（`www.harvard.edu/`）。该网站的设计（见图 2-1）令人赞地反映了该大学成熟的品牌：保守的土色系色调点缀了鲜明的哈佛红；从所有角度来看，这是一个成功的网站设计，我们确信它每天都会吸引相当大的流量。
 
-你可以安装许多浏览器工具来像我们在这里做的那样快速影响页面的显示。对于 Mozilla 浏览器，Web 开发工具栏（http://crispepperick.com/work/firefox/webdeveloper/）就是这样一种工具，而且是非常出的工具。它是我们 CSS 工具箱中不可或缺的一部分，允许设计师开启不同页面元素的边框、快速编辑页面的 CSS 并轻松访问各种代码验证器。
+你可以安装许多浏览器工具来像我们在这里做的那样快速影响页面的显示。对于 Mozilla 浏览器，Web 开发工具栏（`http://crispepperick.com/work/firefox/webdeveloper/`）就是这样一种工具，而且是非常出的工具。它是我们 CSS 工具箱中不可或缺的一部分，允许设计师开启不同页面元素的边框、快速编辑页面的 CSS 并轻松访问各种代码验证器。
 
 ## XHTML 和 CSS 的最佳实践
 
 欢迎来到哈佛大学
 
-
 图 2-1：哈佛大学主页
 
 正如我们所说，这是一个有效且直接的设计。但如果我们为 HTML 中所有的 `table` 元素“开启”边框，网站在底层就会显示出许多不那么直接的东西（见图 2-2）。
-
 
 图 2-2：激活了表格边框的哈佛主页
 
@@ -772,17 +690,12 @@ Duis hendrerit massa. In mollis scelerin diam. Curabitur vitae augue sem. Suspen
   <td><img src="images/nav_bullet.gif" border="0" height="25" width="14"></td>
   <td><a href="http://atwork.harvard.edu/" onmouseover="onmouse('nav03')" onmouseout="offmouse('nav03')"><img src="images/employment.gif" alt="Employment" height="25" width="80"></a></td>
   <td><img src="nav_bullet.gif" border="0" height="25" width="14"></a></td>
-  <td><a href="http://lib.harvard.edu/" onmouseover="imgOn('nav04')" class="*" 
-  onmouseout="imgOff('nav04')"><img src="images/libraries.gif" alt="Libraries" name="nav04" border="0" height="25" width="54"></a></td>
+  <td><a href="http://lib.harvard.edu/" onmouseover="imgOn('nav04')" class="*" onmouseout="imgOff('nav04')"><img src="images/libraries.gif" alt="Libraries" name="nav04" border="0" height="25" width="54"></a></td>
   ...（省略重复代码以保持格式）...
 </table>
 ```
 
 首先，重要的是，这并不是对哈佛主页的指责；在过去的几年里，我们也用这些完全相同的策略构建了数百个页面。相反，它提醒了我们 Web 的现实——直到最近，我们一直不得不以这种方式工作。由于对 CSS 的支持非常糟糕，表格布局……
-
-
-
-
 
 ## XHTML 和 CSS 的最佳实践
 
@@ -796,13 +709,15 @@ Duis hendrerit massa. In mollis scelerin diam. Curabitur vitae augue sem. Suspen
 
 让我们最后回顾一次我们那个孤单的 `body` 元素：
 
-```
+```html
 <body margin="0" marginheight="0" leftmargin="0" top="0">
 ```
 
 别担心，我们不会再读一遍我们在对话中做过的那个“表现结构”了。我们能听到观众席后面传来的打鼾声，不想挑战你的运气。
 
-值得注意的是，这些属性都不在 HTML 规范（www.w3.org/Markup/）中。`marginwidth` 和 `marginheight` 是 Netscape 特有的属性，只在特定浏览器中生效。相反，`leftmargin` 和 `topmargin` 具有相同的边距修剪效果，但它们只在 Internet Explorer 中生效。但无论有效与否，这并没有阻止我们在网站上放置这些专有标记。我们当时面对的是浏览器提供的非标准（通常是自矛盾的）HTML 实现，而我们对此面带微笑——就像对待我们构建器工具库中的每一段输入、专有代码一样。
+
+
+值得注意的是，这些属性都不在 HTML 规范（`www.w3.org/Markup/`）中。`marginwidth` 和 `marginheight` 是 Netscape 特有的属性，只在特定浏览器中生效。相反，`leftmargin` 和 `topmargin` 具有相同的边距修剪效果，但它们只在 Internet Explorer 中生效。但无论有效与否，这并没有阻止我们在网站上放置这些专有标记。我们当时面对的是浏览器提供的非标准（通常是自矛盾的）HTML 实现，而我们对此面带微笑——就像对待我们构建器工具库中的每一段输入、专有代码一样。
 
 而且，由于我们对所有访问页面的浏览器都使用了相同的无效的、专有的 HTML，一行 HTML 代码就证明了浏览器对缺陷标记有多大的宽容度。这就是一种设计：如果我们需要包含一个闭合标签（如 `<tr>` 或 `</div>`）或在标记中引入专有元素来绕过布局（正如我们在之前的 `body` 元素中所做的那样），我们的 Web 浏览器有一套恢复策略。它在解析时必须“修复”你的标记，尽管其中存在任何不完善的代码。
 
@@ -816,7 +731,7 @@ Duis hendrerit massa. In mollis scelerin diam. Curabitur vitae augue sem. Suspen
 
 ## XHTML：新热点
 
-XHTML 被 W3C 描述为“将 HTML 的严谨性绑定到 Web 页面”（www.w3.org/Markup/#xhtml）。简而言之，XHTML 的创建是为了让所有者在 HTML 和更严格的文档语法 XML 之间拥有更整洁的升级路径。将这段 HTML 片段转换为对应的 XHTML 形式：
+XHTML 被 W3C 描述为“将 HTML 的严谨性绑定到 Web 页面”（`www.w3.org/Markup/#xhtml`）。简而言之，XHTML 的创建是为了让所有者在 HTML 和更严格的文档语法 XML 之间拥有更整洁的升级路径。将这段 HTML 片段转换为对应的 XHTML 形式：
 
 ```html
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN"
@@ -872,7 +787,7 @@ http://www.w3.org/TR/xhtml-transitional.dtd
 
 你将看到一个被称为 DTD 定义的冗长且复杂的文档。DTD 概述了后续标记必须遵循的规则。在我们的标记的开头声明此 DTD，是向“用户代理”（即任何设备）信号使用的是哪种语言。这不仅仅是为了图形浏览器。打印机、手机手机和阅读器都是用户代理的例子，它们都从页面上遇到的标记中受益。
 
-在线验证工具是用户代理的另一个例子，它们（都）受益于我们的 doctype 声明。这允许它们评估我们的代码如何有效地符合 DTD —— 实际上，无论它是否有效。
+在线验证工具是用户代理的另一个例子，它们（都）受益于我们的 `doctype` 声明。这允许它们评估我们的代码如何有效地符合 DTD —— 实际上，无论它是否有效。
 
 ## 保持标记良好
 
@@ -888,18 +803,15 @@ http://www.w3.org/TR/xhtml-transitional.dtd
 <p>Here's <strong><strong>strong</strong></em></p>
 ```
 
-
-
-
 ## 第二章
 
-这段代码的嵌套是准确的，但它远非合规。HTML 将块级元素（如 div、p、table 等）与内联元素（如 a、em、strong）区分来。内联元素永远不能包含块级元素，这使得我们之前的标记是无效的。虽然浏览器能够正确读取这段代码，但在应用 CSS 时，锚点元素几乎肯定会被提前关闭。根据浏览器的不同，样式可能不会级联到 `div` 中包含的文本。如果你的内容突然获得了链接的下划线，或者在你用鼠标悬停在其上方时发生明显变化，这可能会是一个不悦的惊喜。
+这段代码的嵌套是准确的，但它远非合规。HTML 将块级元素（如 `div`、`p`、`table` 等）与内联元素（如 `a`、`em`、`strong`）区分来。内联元素永远不能包含块级元素，这使得我们之前的标记是无效的。虽然浏览器能够正确读取这段代码，但在应用 CSS 时，锚点元素几乎肯定会被提前关闭。根据浏览器的不同，样式可能不会级联到 `div` 中包含的文本。如果你的内容突然获得了链接的下划线，或者在你用鼠标悬停在其上方时发生明显变化，这可能会是一个不悦的惊喜。
 
 这是验证重要性的另一个例子。通过在文档开头处使用 `DOCTYPE` 声明并频繁进行验证，你可以在问题出现之前主动修复布局错误。这意味着会有更短的调试时间，反过来又让你有更多时间专注于你网站的设计。
 
 ## 关闭空事件
 
-当你在 HTML 中打开一个元素时，并不总是要求提供相应的结束元素。事实上，HTML 4.01 规定了结束是可选的元素（例如段落元素：[www.w3.org/TR/REC-html140/struct/text.html#h-9.3.1]）、强制的元素（如 em 或 strong 元素：[www.w3.org/TR/REC-html140/struct/text.html#h-9.2.1]），以及在某些情况下禁止的元素（例如 br：[www.w3.org/TR/REC-html140/struct/text.html#h-9.3.2]）。
+当你在 HTML 中打开一个元素时，并不总是要求提供相应的结束元素。事实上，HTML 4.01 规定了结束是可选的元素（例如段落元素：`www.w3.org/TR/REC-html140/struct/text.html#h-9.3.1`）、强制的元素（如 `em` 或 `strong` 元素：`www.w3.org/TR/REC-html140/struct/text.html#h-9.2.1`），以及在某些情况下禁止的元素（例如 `br`：`www.w3.org/TR/REC-html140/struct/text.html#h-9.3.2`）。
 
 幸运的是，这种歧义在 XHTML 中被消除了，很大程度上是因为 XHTML 坚持我们的标记必须是良好的。如果你打开了一个元素，就需要要求一个结束元素——简单如此。以下是 HTML 4 中合法的标记：
 
@@ -923,7 +835,7 @@ http://www.w3.org/TR/xhtml-transitional.dtd
 <p>You other coders can't deny.</p>
 ```
 
-由于我们正在使用 XHTML，我们没有选择让列表项 (`</li>`) 和段落 (`<p>`) 开启的选项。在开始一个新元素之前，我们需要用 `</li>` 和 `</p>` 关闭每一个。然而，敏锐的读者将恰恰看出我们在给 br 添加斜杠 ( / ) 时在想什么。
+由于我们正在使用 XHTML，我们没有选择让列表项 (`</li>`) 和段落 (`<p>`) 开启的选项。在开始一个新元素之前，我们需要用 `</li>` 和 `</p>` 关闭每一个。然而，敏锐的读者将恰恰看出我们在给 `br` 添加斜杠 ( / ) 时在想什么。
 
 请相信我们：我们从不会滥用斜杠。`br`、`img`、`meta` 和 `hr` 等元素被视为“空”元素，因为它们不包含任何文本内容——而 `p`、`li`、`td` 以及实际上 HTML 规范中的元素并非如此。HTML 在保持文档良好方面并不偏心。因此，通过用 `/>` 结束元素，我们可以有效地关闭它。结构的一致性是我们新标记的一项强性要求，而 XHTML 确实提供了这种一致性。
 
@@ -962,12 +874,12 @@ HTML 规范从未规定特定的字母大小写。结果是开发者习惯了用
 <input type="checkbox" checked="
 <dl compact="
 ```
+
 （注：源 OCR 文本在末尾高度碎片化；我保留了提供的片段）。
 
 ## 将样式与结构分离
 
 许多标准都提倡“样式与结构分离”。由于你的标记是……，我们倾向于将样式从结构中抽象出来。
-
 
 ```html
 </td>
@@ -1003,7 +915,7 @@ HTML 规范从未规定特定的字母大小写。结果是开发者习惯了用
 <!-- END outer table -->
 ```
 
-这种现象被称为 **classitis**（类名膨胀症/类名滥用症），这是由设计师 Jeffrey Zman（[http://www.zeldman.com/））创造的一个词，用来描述由于过度使用 `class` 属性而导致的标记膨胀。我们虽然换掉了一个负担，却得到了另一个。这个例子并没有在标记中显式列出我们的目标，而是使用 `class` 属性来实现相同的手段。不同的是，`bgcolor` 属性和 `font` 元素的值已被移动到外部样式表中——这是一个良好的开始，但标记仍然不必要地沉重。
+这种现象被称为 **classitis**（类名膨胀症/类名滥用症），这是由设计师 Jeffrey Zman（`http://www.zeldman.com/`）创造的一个词，用来描述由于过度使用 `class` 属性而导致的标记膨胀。我们虽然换掉了一个负担，却得到了另一个。这个例子并没有在标记中显式列出我们的目标，而是使用 `class` 属性来实现相同的手段。不同的是，`bgcolor` 属性和 `font` 元素的值已被移动到外部样式表中——这是一个良好的开始，但标记仍然不必要地沉重。
 
 更糟糕的是，很容易陷入 **divitis**（div 标签膨胀症），将其变成一个充满了 `div` 元素的“元素汤”：
 
@@ -1065,74 +977,12 @@ HTML 规范从未规定特定的字母大小写。结果是开发者习惯了用
 
 <br>Yannatos starts 1 year conducting Harvard-Radcliffe Orchestra <a href="http://www.news.harvard.edu/gazette/2004/10.21-yannatos.html">Yannatos 开始指挥哈佛-拉德克夫交弦乐团</a>http://www.news.harvard.edu/gazette/2004/10.21-yannatos</a><font size="-1">更多</font><font size="-1">br></font></td><td width="120
 
-```
-Yannatos starts 1 year conducting Harvard-Radcliffe Orchestra <a href="http://www.news.harvard.edu/gazette/2004/10.21-yannatos.html">Yannatos 开始指挥哈佛-拉德克夫交弦乐团</a></a>http://www.news.harvard.edu/gazette/2004/10.21-yannatos.html</a><font size="-1">更多</font><font size="-1">br></font></td>
 
-```
-
-```
-Yannatos starts 1 year conducting Harvard-Radcliffe Orchestra <a href="http://www.news.harvard.edu/gazette/2004/10.21-yannatos.html">Yannatos 开始指挥哈佛-拉德克夫交弦乐团</a></a>http://www.news.harvard.edu/gazette/2004/10.21-yannatos.html</a><font size="-1">更多</font><font size="-1">br></font></td>
-
-```
-
-```html
-Yannatos starts 1 year conducting Harvard-Radcliffe Orchestra <a href="http://www.news.harvard.edu/gazette/2004/10.21-yannatos.html">Yannatos 开始指挥哈佛-拉德克夫交弦乐团</a></a>http://www.news.harvard.edu/gazette/2004/10.21-yannatos.html</a><font size="-1">更多</font><font size="-1">br></font></td>
-
-```
-
-```html
-Yannatos starts 1 year conducting Harvard-Radcliffe Orchestra <a href="http://www.news.harvard.edu/gazette/2004/10.21-yannatos.html">Yannatos 开始指挥哈佛-拉德克夫交弦乐团</a></a>http://www.news.harvard.edu/gazette/2004/10.21-yannatos.html</a><font size="-1">更多</font><font size="-1">br></font></td>
-
-```
-
-```html
-Yannatos starts 1 year conducting Harvard-Radcliffe Orchestra <a href="http://www.news.harvard.edu/gazette/2004/10.21-yannatos.html">Yannatos 开始指挥哈佛-拉德克夫交弦乐团</a></a>http://www.news.harvard.edu/gazette/2004/10.21-yannatos.html</a><font size="-1">更多</font><font size="-1">br></font></td>
-
-```
-
-```html
-Yannatos starts 1 year conducting Harvard-Radcliffe Orchestra <a href="http://www.news.harvard.edu/gazette/2004/10.21-yannatos.html">Yannatos 开始指挥哈佛-拉德克夫交弦乐团</a></a>http://www.news.harvard.edu/gazette/2004/10.21-yannatos.html</a><font size="-1">更多</font><font size="-1">br></font></td>
-
-```
-
-```html
-Yannatos starts 1 year conducting Harvard-Radcliffe Orchestra <a href="http://www.news.harvard.edu/gazette/2004/10.21-yannatos.html">Yannatos 开始指挥哈佛-拉德克夫交弦乐团</a></a>http://www.news.harvard.edu/gazette/2004/10.21-yannatos.html</a><font size="-1">更多</font><font size="-1">br></font></td>
-
-```
-
-```html
-Yannatos starts 1 year conducting Harvard-Radcliffe Orchestra <a href="http://www.news.harvard.edu/gazette/2004/10.21-yannatos.html">Yannatos 开始指挥哈佛-拉德克夫交弦乐团</a></a>http://www.news.harvard.edu/gazette/2004/10.21-yannatos.html</a><font size="-1">更多</font><font size="-1">br></font></td>
-
-```
-
-```html
-Yannatos starts 1 year conducting Harvard-Radcliffe Orchestra <a href="http://www.news.harvard.edu/gazette/2004/10.21-yannatos.html">Yannatos 开始指挥哈佛-拉德克夫交弦乐团</a></a>http://www.news.harvard.edu/gazette/2004/10.21-yannatos.html</a><font size="-1">更多</font><font size="-1">br></font></td>
-
-```
-
-```html
-Yannatos starts 1 year conducting Harvard-Radcliffe Orchestra <a href="http://www.news.harvard.edu/gazette/2004/10.21-yannatos.html">Yannatos 开始指挥哈佛-拉德克夫交弦乐团</a></a>http://www.news.harvard.edu/gazette/2004/10.21-yannatos.html</a><font size="-1">更多</font><font size="-1">br></font></td>
-
-```
-
-```html
-Yannatos starts 1 year conducting Harvard-Radcliffe Orchestra <a href="http://www.news.harvard.edu/gazette/2004/10.21-yannatos.html">Yannatos 开始指挥哈佛-拉德克夫交弦乐团</a></a>http://www.news.harvard.edu/gazette/2004/10.21-yannatos.html</a><font size="-1">更多</font><font size="-1">br></font></td>
-
-```
-
-```html
-Yannatos starts 1 year conducting Harvard-Radcliffe Orchestra <a href="http://www.news.harvard.edu/gazette/2004/10.21-yannatos.html">Yannatos 开始指挥哈佛-拉德克夫交弦乐团</a></a>
-```
-
-Wait, 我发现翻译翻译出现了出现了重复。让我重新处理一下 段落的翻译部分：
 
 ```html
 Yannatos starts 1 year conducting Harvard-Radcliffe Orchestra <a href="http://www.news.harvard.edu/gazette/2004/10.21-yannatos.html">Yannatos 开始指挥哈佛-拉德克夫交弦乐团</a></a>http://www.news.harvard.edu/gazette/2004/10.21-yannatos.html</a><font size="-1">更多</font><font size="-1">br></font></td>
 ```
 
-(抱歉，原文输入中似乎包含了一些重复的乱码，我将根据核心逻辑提供干净的翻译)
-
-[content]
 ```html
 </td>
 </tr>
@@ -1141,7 +991,7 @@ Yannatos starts 1 year conducting Harvard-Radcliffe Orchestra <a href="http://ww
 <!-- END outer table -->
 ```
 
-这个版本并没有好好到哪儿去：
+这个版本并没有好到哪儿去：
 
 ```html
 <!-- outer table -->
@@ -1167,9 +1017,9 @@ Yannatos starts 1 year conducting Harvard-Radcliffe Orchestra <a href="http://ww
 <!-- END outer table -->
 ```
 
-这种现象被称为 **classitis**（类名膨胀症/类名滥用症），这是由设计师 Jeffrey Zman（[http://www.zeldman.com/））创造的一个词，用来描述由于过度使用 `class` 属性而导致的标记膨胀。我们虽然换掉了一个负担，却得到了另一个。这个例子并没有在标记中显式列出我们的目标，而是使用 `class` 属性来实现相同的手段。不同的是，`bgcolor` 属性和 `font` 元素的值已被移动到外部样式表中——这是一个良好的开始，但标记仍然不必要地沉重。
+这种现象被称为`classitis`（类名膨胀症/类名滥用症），这是由设计师 Jeffrey Zman（[http://www.zeldman.com/））创造的一个词，用来描述由于过度使用`class`属性而导致的标记膨胀。我们虽然换掉了一个负担，却得到了另一个。这个例子并没有在标记中显式列出我们的目标，而是使用`class`属性来实现相同的手段。不同的是，`bgcolor`属性和`font`元素的值已被移动到外部样式表中——这是一个良好的开始，但标记仍然不必要地沉重。
 
-更糟糕的是，很容易陷入 **divitis**（div 标签膨胀症），将其变成一个充满了 `div` 元素的“元素汤”：
+更糟糕的是，很容易陷入`divitis`（div 标签膨胀症），将其变成一个充满了`div`元素的“元素汤”：
 
 ```html
 <div id="outer-table">
@@ -1181,13 +1031,13 @@ Yannatos starts 1 year conducting Harvard-Radcliffe Orchestra <a href="http://ww
 </div>
 ```
 
-如果这对你来说还有意义的话，也许你可以大驾地打个电话给我们解释一下。这里显然没有试图构建良好标记的意图。虽然 `div` 和 `span` 是优秀的标记工具，但过度依赖它们会导致代码膨胀和标记难以阅读。这不仅是为了让你阅读，你的用户也是如此。记得我们之前的纯文本截图吗（参考图 2-3）？如果有人关闭了样式，使用通用的标记将使得非环境支持的人难以理解你内容的上下文。
+如果这对你来说还有意义的话，也许你可以打个电话给我们解释一下。这里显然没有试图构建良好标记的意图。虽然`div`和`span`是优秀的标记工具，但过度依赖它们会导致代码膨胀和标记难以阅读。这不仅是为了让你阅读，你的用户也是如此。记得我们之前的纯文本截图吗（参考图 2-3）？如果有人关闭了样式，使用通用的标记将使得不支持环境的人难以理解你内容的上下文。
 
-## 第 2 章
+# 第 2 章
 
 ## 通向意良好的标记
 
-或者，我们可以按照设计初衷来使用标记元素——使用 `div` 和 `span` 来填充没有其他元素可用的空隙。在本节中，我们将讨论如何将页面标记精简为结构良好、意良好的标记的策略，以便它（以及你）为本书其余部分将涉及的 CSS 技巧和策略做好准备。
+或者，我们可以按照设计初衷来使用标记元素——使用`div`和`span`来填充没有其他元素可用的空隙。在本节中，我们将讨论如何将页面标记精简为结构良好、意良好的标记的策略，以便它（以及你）为本书其余部分将涉及的 CSS 技巧和策略做好准备。
 
 在接下来的章节中，我们将重新回顾 Harvard Web 中用到的一些 HTML（参考图 2-1）。我们将对旧式的标记应用一些结构良好的标记，看看是否能产生更精简的内容。
 
@@ -1203,7 +1053,7 @@ Yannatos starts 1 year conducting Harvard-Radcliffe Orchestra <a href="http://ww
 <code>Illuminating the beauty of life'</code><br>Yannatos starts 4st year courting Harvard-Radcliffe Orchestra<a href="http://www.news.harvard.edu/gazette/2004/10.21-yannatos.html"><font size="-1">更多</font><font size="-1">br></font></td><td width="120
 ```
 
-在这个新闻条目中，内容以一个显示特写故事故事的标题开头。从标记上来看，你并不知道它是一个标题：
+在这个新闻条目中，内容以一个显示特写故事的标题开头。从标记上来看，你并不知道它是一个标题：
 
 ```html
 <code>Illuminating the beauty of life'</code>
@@ -1215,9 +1065,9 @@ Yannatos starts 1 year conducting Harvard-Radcliffe Orchestra <a href="http://ww
 <h4>扭转萨达姆对伊拉克沼泽的生态灭绝行动</h4>
 ```
 
-在这里我们使用了 `h4`，如果文档层级结构中这上方有三级标题，那么它是合适的。现在，任何读取此页面的用户代理都会识别出该文本是一个标题，并以它所能的最有效方式进行渲染。
+在这里我们使用了`h4`，如果文档层级结构中这上方有三级标题，那么它是合适的。现在，任何读取此页面的用户代理都会识别出该文本是一个标题，并以它所能的最有效方式进行渲染。
 
-在构建意良好的标记时，将你的文档想象成符合某种大纲是有帮助的——最重要的标题位于顶部的 `h1`，其下方是若干 `h2`，每个 `h2` 下方是一个或两个 `h3`，依此类推直到 `h6`。你如何构想你的文档大纲完全取决于你。确定一个对你来说合理的模型，并并在整个网站的标记中保持一致。
+在构建意良好的标记时，将你的文档想象成符合某种大纲是有帮助的——最重要的标题位于顶部的`h1`，其下方是若干`h2`，每个`h2`下方是一个或两个`h3`，依此类推直到`h6`。你如何构想你的文档大纲完全取决于你。确定一个对你来说合理的模型，并在整个网站的标记中保持一致。
 
 42
 
@@ -1227,12 +1077,9 @@ Yannatos starts 1 year conducting Harvard-Radcliffe Orchestra <a href="http://ww
 
 在新闻故事的标题之后，紧跟着一个段落长度的摘录——但再次，标记违背了内容的意图：
 
+```html
 <br>Yannatos starts 1 year conducting Harvard-Radcliffe Orchestra <a href="http://www.news.harvard.edu/gazette/2004/10.21-yannatos.html">Yannatos 开始指挥哈佛-拉德克夫交弦乐团</a></a>http://www.news.harvard.edu/gazette/2004/10.21-yannatos.html</a><font size="-1">更多</font><font size="-1">br></font></td>
-
-(注：由于原文输入中包含大量重复的乱码，此处翻译已根据核心逻辑进行清理处理)
-
-
-
+```
 
 # XHTML 最佳实践
 
@@ -1242,7 +1089,7 @@ Yannatos starts 1 year conducting Harvard-Radcliffe Orchestra <a href="http://ww
 
 哈佛大学 (标准样式...)
 
-```
+```text
 * 跳过导航
 * 首页
 * 招生与财务助学
@@ -1264,7 +1111,7 @@ Yannatos starts 1 year conducting Harvard-Radcliffe Orchestra <a href="http://ww
 
 女子冰球运动员图像
 
-2004 年，女子冰球队队在波士顿地区连续六次获得 Beanpot 锦赛冠军；Angela Ruggiero（安吉拉·鲁吉耶罗）在获得冠军后，随后被授予为 2004 年 Patty Kazmaier 纪念奖得主。
+2004 年，女子冰球队在波士顿地区连续六次获得 Beanpot 锦赛冠军；Angela Ruggiero（安吉拉·鲁吉耶罗）在获得冠军后，随后被授予为 2004 年 Patty Kazmaier 纪念奖得主。
 
 哈佛各学院：
 
@@ -1280,7 +1127,6 @@ Yannatos starts 1 year conducting Harvard-Radcliffe Orchestra <a href="http://ww
 - 公共卫生
 - 教育
 - 拉德克夫学院
-
 - 活动
 
 方向键：上、下移动。右：跟随链接；左：返回。帮助 选项 打印 搜索历史列表
@@ -1293,25 +1139,23 @@ Yannatos starts 1 year conducting Harvard-Radcliffe Orchestra <a href="http://ww
 
 ## CSS：样式层
 
-与任何其他语言一样，掌握 CSS 取于你对其语法的理解。这样做不会提高你编写样式表的熟练度，但会增加你对浏览器如何解释你编写的规则的理解。
+与任何其他语言一样，掌握 CSS 取决于你对其语法的理解。这样做不会提高你编写样式表的熟练度，但会增加你对浏览器如何解释你编写的规则的理解。
 
 ## 选择器
 
 你的 CSS 由浏览器解释的样式规则，然后应用于文档中的相应元素。例如，考虑图 2-8。
 
-![](img/70fa44d3a461f43c7a35cac2b89327d_72_0.png)
+![图 2-8：简单的示例样式规则。快速读一遍。](img/70fa44d3a461f43c7a35cac2b89327d_72_0.png)
 
-图 2-8：简单的示例样式规则。快速读一遍。
+每个 CSS 规则都包含两个部分：**选择器**，它告诉浏览器哪些元素将被规则修改；以及**声明块**，它决定元素的哪些属性将被修改。在图 2-8 中，我们可以看到选择器包含了第一个大括号之前（但不包含）的所有内容。
 
-每个 CSS 规则都包含两个部分：**选择器**，它告诉浏览器哪些元素将被规则修改；以及**声明块**，它决定元素的哪些属性将被修改。在图 2-8 中，我们可以看到选择器包含了第一个大括号之前（但不包含）的所有内容
+大括号包含了声明块，这是规则的核心。它由一个或多个声明以及一个决定选择器中元素如何样式的属性/值对组成。在图 2-8 中，`color`是属性，`#36C`是它的声明值。
 
-大括号包含了声明块，这是规则的核心。它由一个或多个声明以及一个决定选择器中元素如何样式的属性/值对组成。在图 2-8 中，`color` 是属性，`#36C` 是它的声明值。
-
-如果你觉得这听起来很简单，事实确实如此。常逻辑贯穿 CSS 语法。但这只是开始。我们使用这些简单原理来构建日益复杂的规则，并对网站的呈现获得更多控制。
+如果你觉得这听起来很简单，事实确实如此。常规逻辑贯穿 CSS 语法。但这只是开始。我们使用这些简单原理来构建日益复杂的规则，并对网站的呈现获得更多控制。
 
 ## 类型选择器
 
-只有几个段落，但我们知道你错过了我们简单的 `h1` 规则。让我们回顾一下：
+只有几个段落，但我们知道你错过了我们简单的`h1`规则。让我们回顾一下：
 
 ```css
 h1 {
@@ -1319,9 +1163,11 @@ color: #36C;
 }
 ```
 
-这就是所谓的类型选择器，因为它指示浏览器选择所有特定类型的元素（在这里是标记中找到的所有 `h1`）并将它们渲染为漂亮的蓝色。
+这就是所谓的类型选择器，因为它指示浏览器选择所有特定类型的元素（在这里是标记中找到的所有`h1`）并将它们渲染为漂亮的蓝色。
 
-如果你在想，你只是听到了一些字体元素。对那个奇怪的 `#36C` 颜色值感到？那是记录十六进制颜色的简单方法。你可以这样标注你的 RGB 三元组，如果每个十六进制对都是相同的。所以，与其输入 `#336CC`，我们不如写红色 (33)、绿色 (66) 和蓝色 (CC)，这些十六进制对都包含重复字符。我们可以同样地将 `#FFF00` 缩短为 `#FF0`，将 `#000000` 缩短为 `#000`，将 `#CC300` 缩短为 `#C30`，以此此类推。
+
+
+如果你在想，你只是听到了一些字体元素。对那个奇怪的`#36C`颜色值感到好奇？那是记录十六进制颜色的简单方法。你可以这样标注你的 RGB 三元组，如果每个十六进制对都是相同的。所以，与其输入`#336CC`，我们不如写红色 (33)、绿色 (66) 和蓝色 (CC)，这些十六进制对都包含重复字符。我们可以同样地将`#FFF00`缩短为`#FF0`，将`#000000`缩短为`#000`，将`#CC300`缩短为`#C30`，以此类推。
 
 ## 通用选择器
 
@@ -1351,7 +1197,7 @@ color: #000;
 </ul>
 ```
 
-默认情况下，大多数浏览器将 `em` 元素渲染为斜体——这没什么新奇的。但如果我们觉得有点随性呢？假设我们希望 `ul` 中的所有元素都大写显示。根据我们到为止学到的知识，我们可以编写一个使用类型选择器并匹配所有元素的规则：
+默认情况下，大多数浏览器将`em`元素渲染为斜体——这没什么新奇的。但如果我们觉得有点随性呢？假设我们希望`ul`中的所有元素都大写显示。根据我们到为止学到的知识，我们可以编写一个使用类型选择器并匹配所有元素的规则：
 
 ```css
 em {
@@ -1359,7 +1205,7 @@ em {
 }
 ```
 
-然而，我们只想匹配 `ul` 内的 `em`——换句话说，开头落中的任何 `em` 应该不受我们规则的影响。简单在选择器中使用 `em` 将匹配文档中的所有 `em`，所以我们必须更具体：
+然而，我们只想匹配`ul`内的`em`——换句话说，开头落中的任何`em`应该不受我们规则的影响。简单在选择器中使用`em`将匹配文档中的所有`em`，所以我们必须更具体：
 
 ```css
 ul {
@@ -1367,12 +1213,9 @@ ul {
 }
 ```
 
-此规则从后代选择器开始，指示浏览器“选择所有 `ul` 元素的后代 `em` 元素”。就像是你父母和祖父母的后代一样。通过这种方式，无序列表每一层的 `em` 元素都会应用样式——即使是包含在列表中的。重要的是，我们的规则不会选择开头 `p` 中的 `em` 元素，正如我们预想的那样。
+此规则从后代选择器开始，指示浏览器“选择所有`ul`元素的后代`em`元素”。就像是你父母和祖父母的后代一样。通过这种方式，无序列表每一层的`em`元素都会应用样式——即使是包含在列表中的。重要的是，我们的规则不会选择开头`p`中的`em`元素，正如我们预想的那样。
 
-当然，你并不需要以这种方式样式化你的小 `em` 元素（尽管这恰好是你特定的天堂，我们也不会阻挡你）。相反，我们将使用...
-
-
-
+当然，你并不需要以这种方式样式化你的小`em`元素（尽管这恰好是你特定的天堂，我们也不会阻挡你）。相反，我们将使用...
 
 ## 第 2 章
 
@@ -1380,7 +1223,7 @@ ul {
 
 ## 子选择器
 
-当我们讨论后代选择器时，我们发现可以编写规则来立即影响另一个元素下的所有元素。假设我们想为文档 `body` 中的所有段落设置样式：
+当我们讨论后代选择器时，我们发现可以编写规则来立即影响另一个元素下的所有元素。假设我们想为文档`body`中的所有段落设置样式：
 
 ```html
 <body>
@@ -1408,9 +1251,9 @@ body p {
 }
 ```
 
-两者的效果相同。正如我们之前讨论过的，它们将选择文档 `body` 元素内在任何层级的所有段落。
+两者的效果相同。正如我们之前讨论过的，它们将选择文档`body`元素内在任何层级的所有段落。
 
-但是，如果我们想将匹配范围缩小一点，只选择文档层级中紧邻 `body` 元素的直接段落呢？
+但是，如果我们想将匹配范围缩小一点，只选择文档层级中紧邻`body`元素的直接段落呢？
 
 引入子选择器：
 
@@ -1420,7 +1263,7 @@ body p {
 }
 ```
 
-大于号 (>) 指示用户代理选择所有 `p` 子元素，而不是所有后代。因此，`div` 包含的段落不会受到影响，因为它们是该元素的元素而不是 `body` 的元素。然而，`div` 之前和之后的段落会受到影响，因为它们共享 `body` 作为父元素。
+大于号 (>) 指示用户代理选择所有`p`子元素，而不是所有后代。因此，`div`包含的段落不会受到影响，因为它们是该元素的元素而不是`body`的元素。然而，`div`之前和之后的段落会受到影响，因为它们共享`body`作为父元素。
 
 ## 属性选择器
 
@@ -1432,19 +1275,19 @@ body p {
 
 | 属性选择器语法 | 结果 |
 | --- | --- |
-| [x] | 当元素具有指定的 x 属性时匹配，无论该属性的值为何。 |
-| [x=y] | 当元素的 x 属性值恰好为 y 时匹配。 |
-| [x~y] | 当元素的 x 属性值是空格分隔的单词列表，且其中一个单词恰好是 y 时匹配。 |
-| [x|y] | 当元素的 x 属性值是连字符分隔的以 y 开头的单词列表时匹配。 |
+| `[x]` | 当元素具有指定的`x`属性时匹配，无论该属性的值为何。 |
+| `[x=y]` | 当元素的`x`属性值恰好为`y`时匹配。 |
+| `[x~y]` | 当元素的`x`属性值是空格分隔的单词列表，且其中一个单词恰好是`y`时匹配。 |
+| `[x|y]` | 当元素的`x`属性值是连字符分隔的以`y`开头的单词列表时匹配。 |
 
 听起来有点复杂？下表展示了属性选择器的具体示例及其选择的内容。
 
 | 选择器 | 含义 | 选择的内容 | 不选择的内容 |
 | --- | --- | --- | --- |
-| p[lang] | 选择具有 lang 属性的段落。 | <p lang="en"><br><p lang="five"> | <p class="lang"><br><p> |
-| p[lang="fr"] | 选择 lang 属性值恰好为 "fr" 的段落。 | <p lang="fr"><br><p lang="gazette"><br>lang="fr"> | <p lang="fr-Canada"><br><p lang="french"> |
-| p[lang~fr"] | 选择 lang 属性包含单词 "fr" 的段落。 | <p lang="fr"><br><p lang="en fr"><br><p lang="la sp fr"> | <p lang="fr-Canada"><br><p lang="french"> |
-| p[lang|="en"] | 选择 lang 属性值恰好为 "en" 或以 "en" 开头的段落。 | <p lang="en"><br><p lang="en-US"><br><p lang="en-cockney"> | <p lang="US-en"><br><p lang="eng"> |
+| `p[lang]` | 选择具有`lang`属性的段落。 | `<p lang="en"><br><p lang="five">` | `<p class="lang"><br><p>` |
+| `p[lang="fr"]` | 选择`lang`属性值恰好为`"fr"`的段落。 | `<p lang="fr"><br><p lang="gazette"><br>lang="fr">` | `<p lang="fr-Canada"><br><p lang="french">` |
+| `p[lang~fr"]` | 选择`lang`属性包含单词`"fr"`的段落。 | `<p lang="fr"><br><p lang="en fr"><br><p lang="la sp fr">` | `<p lang="fr-Canada"><br><p lang="french">` |
+| `p[lang|="en"]` | 选择`lang`属性值恰好为`"en"`或以`"en"`开头的段落。 | `<p lang="en"><br><p lang="en-US"><br><p lang="en-cockney">` | `<p lang="US-en"><br><p lang="eng">` |
 
 这些选择器的潜在应用是非常令人兴奋的。回顾我们之前的表单将变得简单得多：
 
@@ -1470,10 +1313,6 @@ body p {
 </form>
 ```
 
-
-
-
-
 ## 第 2 章
 
 当然，我们可以更智能地合并共享属性。如果规则仅共享某些属性而不共享其他属性，那么对我们来说，创建一个具有共同值的分组规则简单简单，将更具独特的属性留在分开的规则中，如下所示：
@@ -1497,7 +1336,7 @@ body p {
 }
 ```
 
-我们可以看到，之前所有的规则都共享 10 像素的 `padding`。#content 和 #footer 规则共享相同的 `width`，并且对元素应用了 1 像素的细红边框。考虑到这些相似之处，我们可以将相同值的属性合并到分组选择器中，如下：
+我们可以看到，之前所有的规则都共享 10 像素的`padding`。`#content`和`#footer`规则共享相同的`width`，并且对元素应用了 1 像素的细红边框。考虑到这些相似之处，我们可以将相同值的属性合并到分组选择器中，如下：
 
 ```css
 #content, #footer, #supplement {
@@ -1516,7 +1355,7 @@ body p {
 }
 ```
 
-这看起来我们并没有获得什么好处——与之前示例的 6 行相比，我们现在留下了 14 行，而且甚至多出了一个需要跟踪的规则。但这种智能分组的优势是累积的，在更复杂的样式规则中将变得显而易见。当我们合并共享声明时，只需编辑一个规则即可更改 #content 和 #supplement 元素的边框颜色，或者增加 #content 和 #footer 元素的宽度。一旦你的样式表从几十行增加到几百行，每当需要编辑共享值时，这种分组都可以成为真正的省时间利器。
+这看起来我们并没有获得什么好处——与之前示例的 6 行相比，我们现在留下了 14 行，而且甚至多出了一个需要跟踪的规则。但这种智能分组的优势是累积的，在更复杂的样式规则中将变得显而易见。当我们合并共享声明时，只需编辑一个规则即可更改`#content`和`#supplement`元素的边框颜色，或者增加`#content`和`#footer`元素的宽度。一旦你的样式表从几十行增加到几百行，每当需要编辑共享值时，这种分组都可以成为真正的省时间利器。
 
 ## 继承
 
@@ -1528,7 +1367,7 @@ body p {
 
 ### 元素层级结构
 
-`html` 元素是页面的根，因此它位于我们“文档树”的底部。它是它的子元素——即 `head` 和 `body` 元素——的父元素，这些元素又有自己的子元素，以此类推。共享相同父元素的元素被称为兄弟。从给定定点向树向下移动一级的标签被视为后代。相反，靠近树顶部的元素可以被视为靠近底部元素的祖先。就是这样，一个排列整齐但没有那些繁琐细节的家族谱。
+`html`元素是页面的根，因此它位于我们“文档树”的底部。它是它的子元素——即`head`和`body`元素——的父元素，这些元素又有自己的子元素，以此类推。共享相同父元素的元素被称为兄弟。从给定定点向树向下移动一级的标签被视为后代。相反，靠近树顶部的元素可以被视为靠近底部元素的祖先。就是这样，一个排列整齐但没有那些繁琐细节的家族谱。
 
 我们以这种方式编写 Web 设计要擅长得多；这样更容易想象样式是如何沿着分支向下传播的。考虑以下示例：
 
@@ -1540,7 +1379,7 @@ body {
 }
 ```
 
-根据我们已经涵盖的语法，我们知道这条规则告诉用户代理选择所有 `body` 元素并应用字体（Georgia、Times Roman 或通用的无衬线字体），大小为 12 像素，颜色为黑色 (#000)。现在，将继承规则应用于我们的文档，这些属性将传递给 `body` 内部的所有元素——我们已经证明了 CSS 是处理小区块的强大引擎。
+根据我们已经涵盖的语法，我们知道这条规则告诉用户代理选择所有`body`元素并应用字体（Georgia、Times Roman 或通用的无衬线字体），大小为 12 像素，颜色为黑色 (`#000`)。现在，将继承规则应用于我们的文档，这些属性将传递给`body`内部的所有元素——我们已经证明了 CSS 是处理小区块的强大引擎。
 
 虽然继承可能是 CSS 最强大的方面之一，但也可能是最令人困惑的之一。记住，并不是所有属性都会被继承。Margin 和 padding 是仅应用于元素的属性示例，不会被其后代继承。关于哪些属性传递给元素的后代，你可以参考 [www.w3.org/TR/CSS2/property-defs](www.w3.org/TR/CSS2/property-defs)。
 
@@ -1557,7 +1396,7 @@ body {
 </body>
 ```
 
-如果在这里应用 `body` 的 CSS 规则，那么 `p` 和 `ul` 内部的所有文本将继承那里声明的值。
+如果在这里应用`body`的 CSS 规则，那么`p`和`ul`内部的所有文本将继承那里声明的值。
 
 ```css
 body {
@@ -1571,7 +1410,7 @@ li {
 }
 ```
 
-这是级联工作的第一个示例。因为列表项是 `body` 的后代，第二个规则有效地打破了继承链并将样式应用于所选元素。然而，由于我们为列表项声明了新的字体大小，它们将从祖先 `body` 继承该属性的值 (10px)。结果是用户以要求的无衬线字体查看列表项，而页面上的所有其他元素将继承 `body`。希望你对结果满意。
+这是级联工作的第一个示例。因为列表项是`body`的后代，第二个规则有效地打破了继承链并将样式应用于所选元素。然而，由于我们为列表项声明了新的字体大小，它们将从祖先`body`继承该属性的值 (10px)。结果是用户以要求的无衬线字体查看列表项，而页面上的所有其他元素将继承`body`。希望你对结果满意。
 
 ## 付诸实践
 
@@ -1604,7 +1443,7 @@ li {
 <!-- 结束表格 -->
 ```
 
-这个简单的导航栏涉及两个表格。外层表格应用了黑色背景 (bgcolor="#000000")。内层表格没有自己的背景颜色，但有 1 像素的 `cellspacing`。这允许父表格背景渗透出来，在每个导航项目周围创建“边框”效果。我们还在内层表格上增加了 3 像素的 `cellpadding`，以便每个链接文本与其包含的表格单元格 (`<td>`) 之间留有空间。最后，灰色背景 (bgcolor="#DDDDDD") 应用到内层表格的每个单元格，以及指定适当字体和大小的 `<font>` 元素。
+这个简单的导航栏涉及两个表格。外层表格应用了黑色背景 (`bgcolor="#000000"`)。内层表格没有自己的背景颜色，但有 1 像素的`cellspacing`。这允许父表格背景渗透出来，在每个导航项目周围创建“边框”效果。我们还在内层表格上增加了 3 像素的`cellpadding`，以便每个链接文本与其包含的表格单元格 (`<td>`) 之间留有空间。最后，灰色背景 (`bgcolor="#DDDDDD"`) 应用到内层表格的每个单元格，以及指定适当字体和大小的`<font>`元素。
 
 二十四行代码——大约 1KB 数据——在 Web 设计书籍的代码片段中看起来无害，但考虑分布在你网站二十页上的代码——或者一百、一千。当你被要求修改这段代码时会发生什么？也许营销部门需要将灰色背景统一改为浅绿色，或者他们将 Arial 标准为企业字体。无论何种情况，你都需要编辑、测试并重新部署用于这 20、100 或 1,000 页的每一个标记以满足他们的要求。
 
@@ -1638,13 +1477,9 @@ ul#nav {
 
 图 2-12：无序列表 ...但没有项目符号
 
-
-
-
-
 ## XHTML 和 CSS 的最佳实践
 
-正如你所见，我们正在大量使用 ID 选择器。通过在规则中指定 `#nav`，我们能够独立于页面上的标记对我们的导航列表（及其内部元素）进行样式设置。通过将 `ul#nav` 和 `ul#nav li` 规则组合为一个逗号分隔的整体，我们同时消除了列表项的浮动（`list-style: none;`），并移除了多余的外边距和内边距（`margin: 0; padding: 0;`）。
+正如你所见，我们正在大量使用 ID 选择器。通过在规则中指定`#nav`，我们能够独立于页面上的标记对我们的导航列表（及其内部元素）进行样式设置。通过将`ul#nav`和`ul#nav li`规则组合为一个逗号分隔的整体，我们同时消除了列表项的浮动（`list-style: none;`），并移除了多余的外边距和内边距（`margin: 0; padding: 0;`）。
 
 当然，我们原始的导航表格是水平的，而现在的列表完全完全不像。这很容易解决。
 
@@ -1661,7 +1496,9 @@ ul#nav, ul#nav li {
 
 ![](img/70fa44d3a461f43c7a35cac2b893273d_85_0.png)
 
-在我们的规则中添加 `float` 属性让我们的列表恢复了对齐，字面上的如此。每个列表项都位于前一个项的左侧，将它们从垂直堆叠顺序中提取出来，进入我们在这里看到的水平行中。
+
+
+在我们的规则中添加`float`属性让我们的列表恢复了对齐，字面上的如此。每个列表项都位于前一个项的左侧，将它们从垂直堆叠顺序中提取出来，进入我们在这里看到的水平行中。
 
 > 浮动模型是一种强大的 CSS 结构，实际上，它是任何基于 CSS 布局的基础。Eric Meyer 的文章 [Containing Floats](www.complexspiral.com/publications/containing-floats/) 更加详细地解释了浮动，并消除了关于这一实用布局工具的一些常见误解。
 
@@ -1692,7 +1529,7 @@ ul#nav li {
 
 图 2-14：为我们的导航列表应用边框和颜色
 
-正如你所见，我们直接对无序列表应用了灰色背景颜色。通过在列表上设置字体属性，我们可以利用继承将无衬线字体应用到其中的所有元素。默认情况下，锚点（anchors）被渲染为内联元素。这为我们带来了一个轻微的问题，因为我们应用的任何内边距只会影响它们的水平边缘。由于我们希望导航链接的每个侧都有 3 像素的内边距，我们必须通过 `display: block;` 将链接转换为块级元素。
+正如你所见，我们直接对无序列表应用了灰色背景颜色。通过在列表上设置字体属性，我们可以利用继承将无衬线字体应用到其中的所有元素。默认情况下，锚点（`anchors`）被渲染为内联元素。这为我们带来了一个轻微的问题，因为我们应用的任何内边距只会影响它们的水平边缘。由于我们希望导航链接的每个侧都有 3 像素的内边距，我们必须通过`display: block;`将链接转换为块级元素。
 
 然而，情况并不完全对。你会注意到在“Home”（首页）和“About”（关于）链接之间，以及“About Us”（关于我们）和“Our Products”（我们的产品）之间的边框太厚了。这是因为每个项的边框都与它的兄弟元素相邻，当链接接触时会产生重叠效果。因此，我们需要稍微重新思考一下样式：
 
@@ -1713,7 +1550,7 @@ ul#nav li {
 
 图 2-15：重新思考边框
 
-这样就像了。我们更详细的边框声明（`border-color`、`border-width` 和 `border-style`）实现了与之前的边框：`1px solid #000;` 相同的效果，但我们在 `border-width` 声明中最后的 0 指令浏览器省略每个列表项的左边框，而顶部、右侧和底部则应用了 1px 宽的边框。现在，我们只需要为第一个列表项恢复边框，且仅限第一个列表项——我们不再需要双重边框效果了，非常感谢。为了做到这一点，让我们在标记中的第一个列表项上应用一个类 属性：
+这样就像了。我们更详细的边框声明（`border-color`、`border-width`和`border-style`）实现了与之前的`border: 1px solid #000;`相同的效果，但我们在`border-width`声明中最后的 0 指令浏览器省略每个列表项的左边框，而顶部、右侧和底部则应用了 1px 宽的边框。现在，我们只需要为第一个列表项恢复边框，且仅限第一个列表项——我们不再需要双重边框效果了，非常感谢。为了做到这一点，让我们在标记中的第一个列表项上应用一个类属性：
 
 ```html
 <ul id="nav">
@@ -1769,11 +1606,11 @@ ul#nav li.first a {
 
 ## XHTML 和 CSS 的最佳实践
 
-根据 CSS 规范（[www.w3.org/TR/CSS21/cascade.html#important-rules]),`!important` 规则“在作者和用户样式表之间建立了权力平衡”。正如我们提到的，用户样式表中包含的规则权重通常低于作者 CSS 中的规则。然而，`!important` 规则的存在反转了这种关系；用户的 `!important` 声明权重总是高于作者的声明，如图 2-17 所示。
+根据 CSS 规范（[www.w3.org/TR/CSS21/cascade.html#important-rules](www.w3.org/TR/CSS21/cascade.html#important-rules)），`!important`规则“在作者和用户样式表之间建立了权力平衡”。正如我们提到的，用户样式表中包含的规则权重通常低于作者 CSS 中的规则。然而，`!important`规则的存在反转了这种关系；用户的`!important`声明权重总是高于作者的声明，如图 2-17 所示。
 
-这对我们的 CSS 有什么影响？假设浏览器正在确定段落元素（p）的样式。在解析了所有可用样式表（浏览器、用户和作者）后，所有相关的样式都会被评估，如列表 2-1、2-2 和 2-3 所示。
+这对我们的 CSS 有什么影响？假设浏览器正在确定段落元素（`p`）的样式。在解析了所有可用样式表（浏览器、用户和作者）后，所有相关的样式都会被评估，如列表 2-1、2-2 和 2-3 所示。
 
- 列表 2-1：浏览器样式表
+列表 2-1：浏览器样式表
 
 ```css
 p {
@@ -1782,9 +1619,6 @@ p {
   margin: .9em;
 }
 ```
-
-
-
 
 ## 第2章
 
@@ -1843,26 +1677,26 @@ p {
 
 ## 按优先级排序
 
-每个选择器都被赋予一个优先级评分，这是对选择器在级联（cascade）中重要性的另一种定性评估（[www.w3.org/CSS21/cascade.html#specificity）。规则的优先级越高，当浏览器遍历级联中的所有规则时，它所获得的影响就越大。例如，基于 id 的选择器天生比基于类驱动的选择器具有更高的优先级，因为 id 设计在每个中只出现一次。
+每个选择器都被赋予一个优先级评分，这是对选择器在级联（`cascade`）中重要性的另一种定性评估（[www.w3.org/CSS21/cascade.html#specificity](www.w3.org/CSS21/cascade.html#specificity)）。规则的优先级越高，当浏览器遍历级联中的所有规则时，它所获得的影响就越大。例如，基于`id`的选择器天生比基于类驱动的选择器具有更高的优先级，因为`id`设计在每个中只出现一次。
 
 优先级是通过选择器的语法本身计算的，并根据四个独立因素进行加权：
 
-- A. 选择器是否是元素的 "style" 属性，而不是真正的选择器。
-- B. 选择器中 id 属性的数量。
-- C. 选择器中属性（例如 [lang], [rel], [href]）和伪类（例如 :hover, :visited, :first-child）名称的数量。记住，类选择器（如 .active）是属性选择器的一种，并计入此类别中。
-- D. 选择器中元素（例如 a, ii, p）和伪元素（例如 :before, :after 等）名称的数量。
+- A. 选择器是否是元素的`style`属性，而不是真正的选择器。
+- B. 选择器中`id`属性的数量。
+- C. 选择器中属性（例如`[lang]`, `[rel]`, `[href]`）和伪类（例如`:hover`, `:visited`, `:first-child`）名称的数量。记住，类选择器（如`.active`）是属性选择器的一种，并计入此类别中。
+- D. 选择器中元素（例如`a`, `ii`, `p`）和伪元素（例如`:before`, `:after`等）名称的数量。
 
 掌握了这四个组件，计算选择器在级联中的重要性就相当简单了。下表显示了优先级从低到高的选择器列表（A–D 列）。
 
 | 选择器 | A | B | C | D | 优先级 |
 |---|---|---|---|---|---|
-| a | 0 | 0 | 0 | 1 | 1 |
-| h3 a | 0 | 0 | 0 | 2 | 2 |
-| ul ol+li | 0 | 0 | 0 | 3 | 3 |
-| ol li.red | 0 | 0 | 1 | 3 | 13 |
-| li.red.level | 0 | 0 | 2 | 1 | 21 |
-| #other-news | 0 | 1 | 0 | 0 | 100 |
-| style="..." | 1 | 0 | 0 | 0 | 1000 |
+| `a` | 0 | 0 | 0 | 1 | 1 |
+| `h3 a` | 0 | 0 | 0 | 2 | 2 |
+| `ul ol+li` | 0 | 0 | 0 | 3 | 3 |
+| `ol li.red` | 0 | 0 | 1 | 3 | 13 |
+| `li.red.level` | 0 | 0 | 2 | 1 | 21 |
+| `#other-news` | 0 | 1 | 0 | 0 | 100 |
+| `style="..."` | 1 | 0 | 0 | 0 | 1000 |
 
 有了这些信息，让我们回到之前的段落样式，并返回它们的优先级，如示例 2-4、2-5 和 2-6 所示。
 
@@ -1884,25 +1718,23 @@ p#footer { color: #FFF; }
 /* A:0, B:1, C:0, D:1 = 优先级 101 */
 ```
 
-我们可以从此看出 p#footer 具有最高的优先级，p.gazette 次之。假设你网站的访问者定义了用户样式表（因此不受 !important 规则的影响）：
+我们可以从此看出`p#footer`具有最高的优先级，`p.gazette`次之。假设你网站的访问者定义了用户样式表（因此不受`!important`规则的影响）：
 
-- 1. id 为 footer 的段落元素将以白色 (#FFF) 显示。
-- 2. 类为 gazette 的段落将以绿色 (#0C0) 显示。
-- 3. 所有其他段落将以深红色 (#300) 显示。
+- 1. `id`为`footer`的段落元素将以白色（`#FFF`）显示。
+- 2. 类为`gazette`的段落将以绿色（`#0C0`）显示。
+- 3. 所有其他段落将以深红色（`#300`）显示。
 
-文档中的所有段落都遵循原始 p 规则声明的值：字体大小 1em，行高 1.6ems 和 10 像素的内边距。然而，浏览器默认的外边距为 .9em。
+文档中的所有段落都遵循原始`p`规则声明的值：字体大小 1em，行高 1.6ems 和 10 像素的内边距。然而，浏览器默认的外边距为`.9em`。
 
 ## XHTML | CSS 最佳实践
+
 （注：根据提供的片段，OCR 在此处突然结束）
-
-
-
 
 ## 第 2 章
 
-如果看到黑白版本的盒模型（box model）让你感到困惑，网页设计师 Jon Hicks 构建了一个彩色的三维图表，这也许值得一看（www.hicksdesign.com/journal/483/3d_css_box_model/）。
+如果看到黑白版本的盒模型（`box model`）让你感到困惑，网页设计师 Jon Hicks 构建了一个彩色的三维图表，这也许值得一看（[www.hicksdesign.com/journal/483/3d_css_box_model/](www.hicksdesign.com/journal/483/3d_css_box_model/)）。
 
-现在，“额外”尺寸——内边距（padding）、边框（border）和外边距（margin）——增加了内容区域的总计算宽度和高度。让我们来看一个演示这种效果的样式：
+现在，“额外”尺寸——内边距（`padding`）、边框（`border`）和外边距（`margin`）——增加了内容区域的总计算宽度和高度。让我们来看一个演示这种效果的样式：
 
 ```css
 p#hack {
@@ -1912,7 +1744,7 @@ p#hack {
 }
 ```
 
-`width` 声明段落内的内容将不超过 400 像素。除此之外，我们为每个盒模型（上、右、下、左）添加了 10 像素的内边距和 10 像素厚的红色边框。因此，如果我们试图计算段落的完整宽度，我们需要从左到右移动盒的属性，并得出最终宽度：
+`width`声明段落内的内容将不超过 400 像素。除此之外，我们为每个盒模型（上、右、下、左）添加了 10 像素的内边距和 10 像素厚的红色边框。因此，如果我们试图计算段落的完整宽度，我们需要从左到右移动盒的属性，并得出最终宽度：
 
 - 左边框：20 +
 - 左内边距：30 +
@@ -1923,7 +1755,7 @@ p#hack {
 
 简而言之，内边距和边框是在内容区域声明的宽度之外，正如规范所要求的。
 
-然而，Windows 上的旧版本 Internet Explorer 拥有错误的（或者更具体地说，是“非标准”的）盒模型实现，并将边框和内边距放在声明的宽度内部。第 6 版本是第一个正确计算的版本，但如果浏览器处于标准兼容模式——即如果你的标记语言顶部有 `DOCTYPE`，它仍然是不准确的。否则，这些浏览器会将我们声明的 400 像素视为所有盒模型属性（内容宽度、内边距和边框）都必须放置在内的空间。因此，这些浏览器的计算看起来像这样：
+然而，Windows 上的旧版本 Internet Explorer 拥有错误的（或者更具体地说，是“非标准”的）盒模型实现，并将边框和内边距放在声明的宽度内部。第 6 版本是第一个正确计算的版本，但如果浏览器处于标准兼容模式——即如果你的标记语言顶部有`DOCTYPE`，它仍然是不准确的。否则，这些浏览器会将我们声明的 400 像素视为所有盒模型属性（内容宽度、内边距和边框）都必须放置在内的空间。因此，这些浏览器的计算看起来像这样：
 
 - 声明宽度：400 -
 - 左边框：20 -
@@ -1957,9 +1789,9 @@ p#hack {
 
 我们将单个 CSS 规则变成了两个。第一个规则包含了应用于段落的边框和内边距信息，以及所需的 400 像素宽度。
 
-第二个规则（带有通配选择器 `*`）包含了我们的 hack。如果我们用通俗英语读取 `* hack`，它会告诉我们：“选择所有 id 为 'hack' 且是 `html` 元素后代的元素”。我们强调了规则的最后部分是 hack 所在。因为 `html` 是 HTML 和 XHTML 文档的根，它不是任何其他元素的后代。因此，如果第二个规则不匹配任何内容，它会怎样呢？
+第二个规则（带有通配选择器`*`）包含了我们的 hack。如果我们用通俗英语读取`* hack`，它会告诉我们：“选择所有`id`为'hack'且是`html`元素后代的元素”。我们强调了规则的最后部分是 hack 所在。因为`html`是 HTML 和 XHTML 文档的根，它不是任何其他元素的后代。因此，如果第二个规则不匹配任何内容，它会怎样呢？
 
-实际上，此规则在所有版本的 Internet Explorer（Windows 和 Macintosh）中都会返回一个值，它们错误地忽略了通配选择器并将规则视为 `html hack`。结果是，只有 Internet Explorer 看到这一点。第一个属性声明了一个“错误”的 500 像素值，确保有错误的浏览器为内容留出空间。因为它们将内边距和边框放在声明内部，我们必须发送一个符合正确浏览器解释的像素宽度。由于我们的 `html hack` 选择器比它具体，新值覆盖了之前的 400 像素值。
+实际上，此规则在所有版本的 Internet Explorer（Windows 和 Macintosh）中都会返回一个值，它们错误地忽略了通配选择器并将规则视为`html hack`。结果是，只有 Internet Explorer 看到这一点。第一个属性声明了一个“错误”的 500 像素值，确保有错误的浏览器为内容留出空间。因为它们将内边距和边框放在声明内部，我们必须发送一个符合正确浏览器解释的像素宽度。由于我们的`html hack`选择器比它具体，新值覆盖了之前的 400 像素值。
 
 但我们还不能就此休息，我们还有一个最后一个 hack 要执行。Windows 上的 Internet Explorer 6 和 Mac 上的 Internet Explorer 5 正确实现了盒模型，所以我们刚刚发现了两个“错误”值为 500 像素的浏览器。为了修复这个问题，第二个属性包含了正确的 400 像素值。
 
@@ -1969,9 +1801,9 @@ p#hack {
 
 ## 第 2 章
 
-如果看到黑白版本的盒模型让你感到困惑，网页设计师 Jon Hicks 构建了一个彩色的三维图表，这也许值得一看（www.hicksdesign.com/journal/483/3d_css_box_model/）。
+如果看到黑白版本的盒模型让你感到困惑，网页设计师 Jon Hicks 构建了一个彩色的三维图表，这也许值得一看（[www.hicksdesign.com/journal/483/3d_css_box_model/](www.hicksdesign.com/journal/483/3d_css_box_model/)）。
 
-现在，“额外”尺寸——内边距（padding）、边框（border）和外边距（margin）——增加了内容区域的总宽度和高度。让我们来看一个演示这种效果的样式：
+现在，“额外”尺寸——内边距（`padding`）、边框（`border`）和外边距（`margin`）——增加了内容区域的总宽度和高度。让我们来看一个演示这种效果的样式：
 
 ```css
 p#hack {
@@ -1981,7 +1813,7 @@ p#hack {
 }
 ```
 
-`width` 声明段落内的内容将不超过 400 像素。除此之外，我们为每个盒模型（上、右、下、左）添加了 10 像素的内边距和 10 像素厚的红色边框。因此，如果我们试图计算段落的完整宽度，我们需要从左到右移动盒的属性，并得出最终宽度：
+`width`声明段落内的内容将不超过 400 像素。除此之外，我们为每个盒模型（上、右、下、左）添加了 10 像素的内边距和 10 像素厚的红色边框。因此，如果我们试图计算段落的完整宽度，我们需要从左到右移动盒的属性，并得出最终宽度：
 
 - 左边框：20 +
 - 左内边距：30 +
@@ -1992,7 +1824,7 @@ p#hack {
 
 简而言之，内边距和边框是在内容区域声明的宽度之外，正如规范所要求的。
 
-然而，Windows 上的旧版本 Internet Explorer 拥有错误的（或者更具体地说，是“非标准”的）盒模型实现，并将边框和内边距放在声明的宽度内部。第 6 版本是第一个正确计算的版本，但如果浏览器处于标准兼容模式——如果你的标记语言顶部有 `DOCTYPE`，它仍然是不准确的。否则，这些浏览器会将我们声明的 400 像素视为所有盒模型属性（内容宽度、内边距和边框）都必须放置在内的空间。因此，这些浏览器的计算看起来像这样：
+然而，Windows 上的旧版本 Internet Explorer 拥有错误的（或者更具体地说，是“非标准”的）盒模型实现，并将边框和内边距放在声明的宽度内部。第 6 版本是第一个正确计算的版本，但如果浏览器处于标准兼容模式——如果你的标记语言顶部有`DOCTYPE`，它仍然是不准确的。否则，这些浏览器会将我们声明的 400 像素视为所有盒模型属性（内容宽度、内边距和边框）都必须放置在内的空间。因此，这些浏览器的计算看起来像这样：
 
 - 声明宽度：400 -
 - 左边框：20 -
@@ -2011,6 +1843,8 @@ p#hack {
 
 CSS hacks 为我们提供了浏览器不一致问题（例如这种 IE 错误）的解决方法，并确保我们的布局在整个平台上看起来正常。通常，这些 hacks 声明了浏览器的解析错误，允许我们隐藏或显示 CSS 部分。实际上，这允许我们为更符合标准的浏览器提供“正确”的值，而为那些性能差的浏览器提供“错误”的值。
 
+
+
 为了解决这个小 IE 错误，我们将求助于使用某些 hacks 来确保在所有目标浏览器中显示正常：
 
 ```css
@@ -2028,20 +1862,17 @@ p#hack {
 
 我们将单个 CSS 规则变成了两个。第一个规则包含了应用于段落的边框和内边距信息，以及所需的 400 像素宽度。
 
-第二个规则（带有通配选择器 `*`）包含了我们的 hack。如果我们用通俗英语读取 `* hack`，它会告诉我们：“选择所有 id 为 'hack' 且是 `html` 元素后代的元素”。我们强调了规则的最后部分是 hack 所在。因为 `html` 是 HTML 和 XHTML 文档的根，它不是任何其他元素的后代。因此，如果第二个规则不匹配任何内容，它会怎样呢？
+第二个规则（带有通配选择器 `*`）包含了我们的 hack。如果我们用通俗英语读取 `* html#hack`，它会告诉我们：“选择所有 id 为 `hack` 且是 `html` 元素后代的元素”。我们强调了规则的最后部分是 hack 所在。因为 `html` 是 HTML 和 XHTML 文档的根，它不是任何其他元素的后代。因此，如果第二个规则不匹配任何内容，它会怎样呢？
 
 实际上，此规则在所有版本的 Internet Explorer（Windows 和 Macintosh）中都会返回一个值，它们错误地忽略了通配选择器并将规则视为 `html hack`。结果是，只有 Internet Explorer 看到这一点，以及所有其他浏览器。第一个属性声明了一个“错误”的 500 像素值，确保有错误的浏览器为内容留出空间。因为它们将内边距和边框放在声明内部，我们必须发送一个符合正确浏览器解释的像素宽度。由于我们的 `html hack` 选择器比它具体，新值覆盖了之前的 400 像素值。
 
 但我们还不能就此休息，我们还有一个最后一个 hack 要执行。Windows 上的 Internet Explorer 6 和 Mac 上的 Internet Explorer 5 正确实现了盒模型，所以我们刚刚发现了两个“错误”值为 500 像素的浏览器。为了修复这个问题，第二个属性包含了正确的 400 像素值。
 
-
-
-
 ## XHTML 和 CSS 的最佳实践
 
 这种方法是大多数样式开发者采取的方法，它确实让你在处理浏览器不一致性时具有极大的灵活性。此外，直接将解决方案写入代码中至少也能提供某种程度的安全性：编写它，测试它，然后继续。简单吧，对吗？
 
-到目前为止，我们通过带有引导性的的问题来引导的能力应该是显而易见的。虽然这种即性的补丁（hack）管理方法有效，但它会对你代码的长期维护性带来一些问题。首先，你的代码极容易被无数不可见的补丁所拖累，例如：
+到目前为止，我们通过带有引导性的问题来引导的能力应该是显而易见的。虽然这种即时的补丁（hack）管理方法有效，但它会对你代码的长期维护性带来一些问题。首先，你的代码极容易被无数不可见的补丁所拖累，例如：
 
 ```css
 #album-thumbs {
@@ -2075,13 +1906,13 @@ p#hack {
 }
 ```
 
-这看起来像乱码吗？其实并不远。诚然，这张样式表的作者几乎没有留下任何注释来引导我们通过这一堆杂的样式规则。第一个注释 `/* ... */` 中的反斜杠会导致格式正确的注释 `/* */)`。只有 Internet Explorer 的 5.x 版本会读取 `\width` 中 "w" 之前带有反斜杠的声明，以此类破碎的 CSS 实现链延续下去。
+这看起来像乱码吗？其实并不远。诚然，这张样式表的作者几乎没有留下任何注释来引导我们通过这一堆杂乱的样式规则。第一个注释 `/* ... */` 中的反斜杠会导致格式正确的注释 `/* */)`。只有 Internet Explorer 的 5.x 版本会读取 `\width` 中“w”之前带有反斜杠的声明，以此类破碎的 CSS 实现链延续下去。
 
-如果我们必须日复一日地查看这段代码会怎样？如果这段代码很难筛选，你完全打赌它对其他人来说也很困难。团队成员、同事、实习生、公司的狗——如果还有其他人负责编辑你的 CSS，那么这种补丁管理方法就是不可行的。暂且抛开代码的可读性（或其缺失），这些规则是有效的 CSS，它们发挥了作用——它们修复了不同浏览器/平台组合中的 Bug，而且修复得很好。那么问题所在在哪里？
+如果我们必须日复一日地查看这段代码会怎样？如果这段代码很难筛选，你完全可以打赌它对其他人来说也很困难。团队成员、同事、实习生、公司的狗——如果还有其他人负责编辑你的 CSS，那么这种补丁管理方法就是不可行的。暂且抛开代码的可读性（或其缺失），这些规则是有效的 CSS，它们发挥了作用——它们修复了不同浏览器/平台组合中的 Bug，而且修复得很好。那么问题所在在哪里？
 
 ## 第二章
 
-想象一下你的 CSS 中充斥着这样的代码。当你需要废弃某个补丁时会发生什么？也许某个问题的浏览器错过了升级时间线，或者下一个版本的 Internet Explorer 在遇到针对 Opera 浏览器的补丁时会停止读取你的样式表。在某个时刻，你可能需要编辑 CSS 并移除你引入的一些补丁。但如果这些补丁不是分布在 30 行 CSS 中，而是分布在 3000 行中呢该怎么办？
+想象一下你的 CSS 中充斥着这样的代码。当你需要废弃某个补丁时会发生什么？也许某个问题的浏览器错过了升级时间线，或者下一个版本的 Internet Explorer 在遇到针对 Opera 浏览器的补丁时会停止读取你的样式表。在某个时刻，你可能需要编辑 CSS 并移除你引入的一些补丁。但如果这些补丁不是分布在 30 行 CSS 中，而是分布在 3000 行中呢，该怎么办？
 
 ## 艺术地使用补丁
 
@@ -2091,7 +1922,7 @@ p#hack {
 
 图 2-19：更具扩展性的补丁管理系统
 
-在这种模型中，有一个指向我们样式表的链接——这没什么异常。但第一个样式表仅充当通多个其他样式表的网关，这些表通过 `@import` 规则被调用。第一个导入的样式表包含我们网站的呈现，纯洁且无补丁。之后，我们只需导入包含特定浏览器的样式表，其中包含了补丁，以确保我们的样式在所有目标上保持一致。
+在这种模型中，有一个指向我们样式表的链接——这没什么异常。但第一个样式表仅充当多个其他样式表的网关，这些表通过 `@import` 规则被调用。第一个导入的样式表包含我们网站的呈现，纯洁且无补丁。之后，我们只需导入包含特定浏览器的样式表，其中包含了补丁，以确保我们的样式在所有目标上保持一致。
 
 当然，还有其他管理补丁的方法。Mark Pilgrim 描述了他如何在他的 Web 服务器上使用代理检测来交付特定浏览器的 CSS 补丁（http://diveintmark.org/archives/2003/01/16/the_one_ife_never_tried）。这种服务器内容协商是非常出色的，尽管它需要了解并能够配置 Apache Web 服务器及其 `mod_rewrite` 组件。所以虽然技术门槛比这里提供的解决方案高一点，但这种服务器解决方案是一个极好的替代方案。
 
@@ -2103,11 +1934,11 @@ p#hack {
 @import url("core.css");
 ```
 
-这里没有什么意外的。`core.css` 中一个简单的 `@import` 规则在更可靠的感知 CSS 的浏览器中经过了良好的测试。
+这里没有什么意外的。`core.css` 中一个简单的 `@import` 规则在更可靠的、感知 CSS 的浏览器中经过了良好的测试。
 
 现在，如果我们简单地 `@import` 额外的文件，没有什么能阻止浏览器解析它们。我们需要一种选择性地提供这些 CSS 文件的方法，以便只有问题的用户代理解析我们编写的规则。如果可能，“良好的”浏览器应该完全感知不到我们的小补丁。你问我们如何做到这一点？嗯，以火是战斗最好的方式。我们将使用 CSS 补丁来更智能地“打补丁”。
 
-首先，让我们处理 Windows 上的 Internet Explorer 5。它对 CSS 盒模型的实现臭臭昭名的，会对你的布局带来一些问题。因此，与其在核心样式表中添加解决方案，我们将利用一种被称为中间过滤器（Mid Pass Filter）的妙技巧：
+首先，让我们处理 Windows 上的 Internet Explorer 5。它对 CSS 盒模型的实现臭名昭著，会对你的布局带来一些问题。因此，与其在核心样式表中添加解决方案，我们将利用一种被称为中间过滤器（Mid Pass Filter）的妙技巧：
 
 ```css
 /* 导入 IE5/Win 补丁 */
@@ -2117,79 +1948,64 @@ p#hack {
 }
 ```
 
-只有 Internet Explorer 的 5.x 版本会读取 `\width` 中 "w" 之前带有反斜杠的声明，以此类破碎的 CSS 实现延续下去。
+只有 Internet Explorer 的 5.x 版本会读取 `\width` 中“w”之前带有反斜杠的声明，以此类破碎的 CSS 实现延续下去。
 
-如果我们必须日复一日地查看这段代码会怎样？如果这段代码很难筛选，你完全打赌它对其他人来说也很困难。团队成员、同事、实习生、公司的狗——如果还有其他人负责编辑你的 CSS，那么这种补丁管理方法就是不可行的。暂且抛开代码的可读性（或其缺失），这些规则是有效的 CSS，它们发挥了作用——它们修复了不同浏览器/平台组合中的 Bug，而且修复得很好。那么问题所在在哪里？
+如果我们必须日复一日地查看这段代码会怎样？如果这段代码很难筛选，你完全可以打赌它对其他人来说也很困难。团队成员、同事、实习生、公司的狗——如果还有其他人负责编辑你的 CSS，那么这种补丁管理方法就是不可行的。暂且抛开代码的可读性（或其缺失），这些规则是有效的 CSS，它们发挥了作用——它们修复了不同浏览器/平台组合中的 Bug，而且修复得很好。那么问题所在在哪里？
 
-等待，OCR 文本在代码块中有一些乱码。根据常见的 CSS 补丁上下文让我重新处理这些（修正后的代码块）。
+## 第三章
 
-*注：由于原始文本存在大量重复和 OCR 错误，此处翻译已根据要求提取核心逻辑并修复了明显的 OCR 错误和拼写错误，例如将 `w: 50px` 修正为 `width: 50px`。*
-
-实际上，提示说“只输出处理后的最终文本”。我将提供完整的清理文本。
-
-
-
-
-## 第3章
-
-本章讨论了这些设计细节，并探讨了如何使用今天最简洁的 XHTML 和最巧妙的 CSS 来重新实现它们。我们还提到了这些解决方案在 Internet Explorer (IE) 中存在的问题，并为这个麻烦的浏览器提供了（在可能的）通变方案。
+本章讨论了这些设计细节，并探讨了如何使用今天最简洁的 XHTML 和最巧妙的 CSS 来重新实现它们。我们还提到了这些解决方案在 Internet Explorer（IE）中存在的问题，并为这个麻烦的浏览器提供了（在可能的）通变方案。
 
 本章应该让你理解，如果你的第一反应不是“这在 Internet Explorer 中能运行吗？”，而是“我如何用最简洁、最具前瞻性的方式来构建它？”，会有怎样的可能。
 
 提供的解决方案可能并不适合你直接推向生产环境（这取决于你自己），但它们为开发过程提供了一个起点。从理想的解决方案开始，逐步完善，直到达到实用的解决方案。对于许多开发者来说，这两点可能是同一回事，在这种情况下，这里描述的技术可以套用到你构建的下一个网站中。而对于其他人来说，这两点之间可能存在差距，他们会更注重确保设计在 IE 上 100% 完美，而较少考虑解决方案的简洁性。
 
-因此，请阅读本章，吸教训，并根据每个项目、每个网站决定在多大程度上对你的理想方案做出妥协。
+因此，请阅读本章，吸取教训，并根据每个项目、每个网站决定在多大程度上对你的理想方案做出妥协。
 
 ## 访谈设计师
 
-Douglas Bowman 是一位极具影响力的设计师，他对 Blogger、Wired News 和 Adaptive Path 等网站进行的广为人知且极其成功的改造让他推向了符合标准的 Web 设计前沿。他是位于加州旧金山的设计咨询公司 Topdesign 的负责人。
+Douglas Bowman 是一位极具影响力的设计师，他对 Blogger、Wired News 和 Adaptive Path 等网站进行的广为人知且极其成功的改造，让他走向了符合标准的 Web 设计前沿。他是位于加州旧金山的设计咨询公司 Topdesign 的负责人。
 
 - **问：** 首先，你对目前的结果满意吗？
 - **答：** 我对整个项目的结果满意。任何项目成功的首要标准是我们是否达到了客户的目标。通常情况下，如果客户满意，我就满意。在这个案例中，项目的目标之一是增加用户注册。另一个目标是增加现有用户对 Blogger 的使用率。我无法给出具体数字，但可以说最终结果超出了 Google 的预期。
-
 - **问：** 设计中哪部分让内部团队最满意？哪部分让访问者最满意？
-- **答：** 我认为这取决于你问团队的哪个成员。通过与 Google 的开发者和工程师交流，我认为他们最满意的是设计系统，以及扩展和调整页面的易易程度。设计简单且直观。显然，它使用了简单的 HTML 和全 CSS 布局。Google 最终提取了首页和注册页的 XHTML 模板，并将其作为基础重新设计了整个应用程序。除了 Google 需要我们提供的页面类型外，我们还提供了一些通用模板，他们可以快速获取并将它们重新用于网站的新版块。
+- **答：** 我认为这取决于你问团队的哪个成员。通过与 Google 的开发者和工程师交流，我认为他们最满意的是设计系统，以及扩展和调整页面的容易程度。设计简单且直观。显然，它使用了简单的 HTML 和全 CSS 布局。Google 最终提取了首页和注册页的 XHTML 模板，并将其作为基础重新设计了整个应用程序。除了 Google 需要我们提供的页面类型外，我们还提供了一些通用模板，他们可以快速获取并将它们重新用于网站的新版块。
 
 ## Blogger：悬停效果与设计改进
 
-如果你问一个产品经理，他们可能会说简化设计是最好的。特别是新首页在多大程度上帮助了传达“什么是博客”，以及立即使用 Blogger 开启博客的益处。
+如果你问一个产品经理，他们可能会说简化设计是最好的。特别是新首页在多大程度上帮助传达“什么是博客”，以及立即使用 Blogger 开启博客的益处。
 
 Blogger 的访问者可能没有那么在意网站的设计。事实上，如果我们的工作得当，用户可能会对 Blogger 的外观产生微小的好感，但他们并不会真正关注设计。他们应该能够立即掌握其益处，并看到一条在尽可能短时间内发布博客的清晰路径。
 
-用户注意到，他们可以为博客选择的模板数量大幅增加。在涉及到定制化时，丰富的预制选择给了他们许多选项来表达自己的心声和个性。
+用户注意到，他们可以为博客选择的模板数量大幅增加。在涉及定制化时，丰富的预制选择给了他们许多选项来表达自己的心声和个性。
 
-- 在本章的后半部分中，我们将编写 blogger.com 上圆角的背后的代码，但会提供一个与你在网站上使用的不同的解决方案。我们的方法不需要额外的 `div`，但在跨浏览器性能上存在问题，IE 无法获得圆角样式。如果你重新做一次这个项目，你会考虑这种方法吗？或者作为设计师，你是否要求设计的每一个元素都得到严格遵守？
+- 在本章的后半部分中，我们将编写 blogger.com 上圆角背后的代码，但会提供一个与你在网站上使用的不同的解决方案。我们的方法不需要额外的 `div`，但在跨浏览器性能上存在问题，IE 无法获得圆角样式。如果你重新做一次这个项目，你会考虑这种方法吗？或者作为设计师，你是否要求设计的每一个元素都得到严格遵守？
 - 如果选择完全由我决定，且我是唯一负责代码的人，我会选择更精简、不需要额外 `div` 的方案。我的优势在于完全理解首页的情况和权衡，特别是更高级的 CSS 是如何运行的。简洁、简单的 HTML 总是加分项，特别是如果可以移除那些专门为了样式钩子而插入的 HTML。页面模块不仅会更简单，而且更稳定，在某些旧浏览器上的可靠性也更高。
 
 我在最近的项目中做了一些选择，让 IE 仅获得基础设置，然后为其他 CSS 能力更强的浏览器提供额外的高级样式。这种术语被称为“渐进增强”（Progressive Enhancement），这是我近年来经常使用的术语。其核心思想是为所有用户提供基础体验，然后为能够处理这些功能的浏览器添加更多功能。我们在重新设计 Blogger 时正是这样做。我们使用了基础的 HTML 结构，然后使用 CSS 为支持它的浏览器添加了更高级的功能。这导致了一个更加健壮和灵活的网站，而且未来也更容易维护。
 
-## 第3章
+## 第三章
 
 - **问：** 回头看，你会有不同的做法吗？
-- **答：** 问问任何编写过代码的设计师吧。与 Adaptive Path 的合作总是一次学习经历；与 Blogger 团队合作取得了良好的成果，因为他们天生就能“懂”。在 Google 的大项目上成功执行的机会为 Adaptive Path 和 Stepdesign 都带了大量关注。由于两家公司都因为真的注意到了 Blogger 的重新设计，并在 Google 的几次推荐下获得了一些项目。当时资源并不足以让 Stepdesign 或 Adaptive Path 参与到每一个阶段。
-
+- **答：** 问问任何编写过代码的设计师吧。与 Adaptive Path 的合作总是一次学习经历；与 Blogger 团队合作取得了良好的成果，因为他们天生就能“懂”。在 Google 的大项目上成功执行的机会为 Adaptive Path 和 Stepdesign 都带来了大量关注。由于两家公司都真正注意到了 Blogger 的重新设计，并在 Google 的几次推荐下获得了一些项目。当时资源并不足以让 Stepdesign 或 Adaptive Path 参与到每一个阶段。
 - **问：** Blogger 的重新设计对你个人有多少帮助？是否有其他公司在看到成品后采取了同样的路线？
 - **答：** Blogger 的重新设计从各个方面来看都是一个伟大的项目。我认为 Blogger 的重新设计只是又一个坚实的案例，加入了大量的其他案例中，它们帮助大公司意识到，基于标准的设计现在确实是唯一的选择。考虑到所有的益处，再加上该项目是为一个高知名客户完成的，该产品每天有大量人员使用和写作。无疑，Blogger 的重新设计引起了巨大的关注。它是有效设计和该设计良好实现的优秀范例。希望 Blogger 能为另一个开发者的案例提供支持，并为设计师对正确执行设计的诉求再增加一个理由。
 
-
-
-
-
-A: 我并不认为 Google 当时是在想：“噢呀，我们的竞争对手都在使用标准化的设计，我们需要赶上进度并做同样的事。”当他们找到我们时，心中有几个简单的目标。他们可能还没有完全想清楚具体如何实现这些目标。但他们知道我们可以帮助他们解决问题并极大提升用户体验。Google 和 Adaptive Path 也知道，在实施其设计时，根据 Today 的哲学，我认为他们可能默认假设会采用一种标准化的解决方案。
+我并不认为 Google 当时是在想：“噢呀，我们的竞争对手都在使用标准化的设计，我们需要赶上进度并做同样的事。”当他们找到我们时，心中有几个简单的目标。他们可能还没有完全想清楚具体如何实现这些目标。但他们知道我们可以帮助他们解决问题并极大提升用户体验。Google 和 Adaptive Path 也知道，在实施其设计时，根据 Today 的哲学，我认为他们可能默认假设会采用一种标准化的解决方案。
 
 有时，客户会意识到标准的益处。只有当他们开始为自己的网站使用基于标准的方法时，他们才会真正开始理解并对此感到兴奋。这些好处在纸面上看是逻辑性的，但一旦体验到这些好处，它们就具有实战价值了。
 
 无论使用何种 CMS 或脚本语言来输出代码，简单精简的 HTML 总是最受欢迎的。它更容易处理，而且可以立即解析，不需要剖析多个表格和行。一旦基础设计获得批准并趋于稳定，Google 的工程师和开发者能够继续对底层代码进行更改，而我们托管 CSS 文件并对设计进行微调，这证明了双方同时迭代的一种非常方便的方法。
 
-## 边界框 (Bounding Boxes)
+## 边界框（Bounding Boxes）
 
 无论迟早，每一篇关于 CSS 的文章、书籍或工作坊都会谈到盒模型。它是级联样式表的基础元素之一，如果你想加强你的 CSS 能力，最好对盒模型的方方面面有深入理解。
 
-为了唤起你的记忆，这里有一些示例来解释盒模型的基础。图 3-1 包含了该模型的三维 (3D) 版本，展示了一个简单 div 的创建过程以及 div 元素的堆叠顺序。
+为了唤起你的记忆，这里有一些示例来解释盒模型的基础。图 3-1 包含了该模型的三维（3D）版本，展示了一个简单 `div` 的创建过程以及 `div` 元素的堆叠顺序。
 
 需要注意的是，框的内容（通常显示在边框“下方”）实际上是所有元素中处于最顶层的一个。在接下来的页面中，我们将看到这一事实对于我们创建 Blogger 的标志性外观之一——圆角有多重要。
 
-图 3-2 包含了一系列图像，展示了内边距、边框和外边距对元素总宽度高度的影响。
+图 3-2 包含了一系列图像，展示了内边距、边框和外边距对元素总宽度和高度的影响。
 
 ## 第三章
 
@@ -2211,34 +2027,24 @@ div {
   margin: 20px;
   padding: 20px;
 }
-p{
+
+p {
   margin: 0 20px 0;
   padding: 0;
 }
 ```
 
-| 这里是一些示例内容。它受到父元素宽的限制。 |
+| 内容 |
 | :--- |
 | 这里是一些示例内容。它受到父元素宽的限制。 |
 | 这里是一些示例内容。它受到父元素宽的限制。 |
 | 这里是一些示例内容。它受到父元素宽的限制。 |
-| 这里是一些示例内容。它受到父元素宽的限制。 |
-| 这里是一些示例内容。它受到父元素宽的限制。 |
-| 这里是一些示例内容。它受到父元素宽的限制。 |
-| 这里是一些示例内容。它受到父元素宽的限制。 |
-| 这里是一些示例内容。它受到父元素宽的限制。 |
-
-| 外边距 (margin) |
-| 内容 (content) |
-| 背景图片 (background-image) |
-| 背景颜色 (background-color) |
-| 内边距 (padding) |
-
-| 这里是一些示例内容。它受到父元素宽的限制。 |
-| 这里是一些示例内容。它受到父元素宽的限制。 |
-| 这里是一些示例内容。它受到父元素宽的限制。 |
-
-| 透明层 (Transparent layer) |
+| 外边距（`margin`） |
+| 内容（`content`） |
+| 背景图片（`background-image`） |
+| 背景颜色（`background-color`） |
+| 内边距（`padding`） |
+| 透明层（Transparent layer） |
 
 图 3-1：盒模型实际运行的 2D 和 3D 表示
 
@@ -2252,7 +2058,7 @@ p{
 ```
 
 ```css
-img{
+img {
   height: 150px;
   width: 200px;
 }
@@ -2260,390 +2066,25 @@ img{
 
 ![](img/70fa44d3a461f43c7a35cac2b893273d_107_1.png)
 
-```css
-img {
-  background-color: #5b5b5b;
-  height: 150px;
-  padding: 20px;
-  width: 200px;
-}
+
+
+
+进入`/path/to/xxx`目录，找到`xxx.json`。
+
+在表达式`cvar = avar + bvar`中，加法运算符（`+`）将`avar`与`bvar`相加，得到它们的和`cvar`
+
+在`List.of(arg0, arg1, arg2)`中，`List`接口的工厂方法`of()`接受一系列的元素，返回包含它们的只读列表。
+
+之后我们这样调用`cmd`命令：`cmd arg0 arg1 arg2`。
+
+```
+if (condVar > someVal) {console.log("xxx")}
 ```
 
-![](img/70fa44d3a461f43c7a35cac2b893273d_107_2.png)
-
-```css
-img {
-  background-color: #5b5b5b;
-  border: 10px solid #000;
-  height: 150px;
-  padding: 20px;
-  width: 200px;
-}
-```
-
-![](img/70fa44d3a461f43c7a35cac2b893273d_107_3.png)
-
-透明层
-
-```css
-img {
-  background-color: #5b5b5b;
-  border: 10px solid #000;
-  height: 150px;
-  padding: 20px;
-  width: 200px;
-}
-```
-
-图 3-2：带有内边距、边框和外边距的元素的整体尺寸。
-
-## 第三章
-
-如果你作为设计师寻求从你的作品中消除尖锐和生硬的感觉，一个自然的起点是圆化任何尖锐的角。当你处理的网站是以信息为中心（正如 blogger.com 这样），并且你使用了框框来划分信息区块（正如 blogger.com 所做的那），那么就有大量的角需要平滑。
-
-以一个我们熟悉的熟悉的例子来说，让我们想想照片以及用于展示它们的相框。照片大多只有一种形状：矩形，但相框的形状非常多样。展示在这些不同形状框中的照片看起来就像框的形状，尽管它们本身仍然是矩形的。
-
-图 3-4：通过框架改变照片的感知形状
 
 
-
-
-
-## Blogger：悬停效果与设计改进
-
-看一眼图 3-4 和5，你会发现 Blogger 设计中的几乎每个元素都有平滑的圆角。侧边栏、主内容面板、按钮，甚至头部背景都是圆形的。
-
-![](img/70fa44d3a461f43c7a35cac2b893273d_111_0.png)
-
-图 3-5：Blogger 站点充满了圆角。
-
-Bowman 在努力缓化设计方面并不激进。他采取了一种微妙的方法，通过匹配形状和颜色来创建一个舒适、冷静且友好的网站。而且，正如我们已经注意到的，关键在于那些漂亮的圆角。
-
-## 创建固定宽度的圆角框
-
-制作圆角的方法有很多，从糟糕的、拙劣的表格用法到精美、高级的 CSS 用法。这里使用了伪元素选择器（pseudo-element selectors）。这可能是一项相当高级的技术，但截至目前，它可能是最简洁且最具前瞻性的方法。而且，只要留心，它也可以很好地适用于较旧的、功能较差的框。
-
-图 3-6 显示了 Blogger 演示的一部分。仔细看页面的左侧，那里有一个标题为“Users say...”的框，这将是我们接下来的几个章节的重点。（注意，所有 blogger 的所有框都是固定宽度的，这意味着它们的宽度不会随着你调整窗口或更改浏览器字体大小而改变。你从图 3-6 中看出它们是固定宽度，但访问该网站你就会发现。）
-
-## 第 3 章
-
-![](img/70fa44d3a461f43c7a35cac2b893273d_112_0.png)
-
-“Users say...”框
-图 3-6：本节贯使用的“Users say . . ”框
-
-让我们快速查看一下使用这种高级 CSS 技术重新创建“Users say . . ”框所需的 XHTML。
-
-### XHTML 部分
-
-以下是 XHTML：
 
 ```html
-<div id="sidebar">
-<div class="box">
-<h2>Users say...</h2>
-```
-
-```html
-<p><q>I love Blogger - it has been a great addition to my life online!</q>
-Roseanne/</p>
-```
-
-```html
-<p><q>You guys do a wonderful job... Thanks for the exemplary service in pioneering
-mass, user-friendly, web logs on the internet. Seriously... I, along with thousands
-of other users, definitely appreciate the service you provide.</q> - Josh/</p>
-```
-
-```html
-<p><q>Thanks, your system is the easiest content management application
-'ve ever seen... It simply makes how easy it is, and I have been working with
-computers for 20 years.</q> - Michael/</p>
-```
-
-```html
-</div>
-<!-- more "boxes" can be placed in this sidebar -->
-</div>
-```
-
-这种标记非常整洁，只需要一个包裹的 `div` 就可以创建这个“框”。让我们看看 CSS 是否同样整洁。
-
-### CSS 部分
-
-以下是 CSS：
-
-```css
-#sidebar {
-  width: 200px;
-}
-
-.box {
-  background-color: #f5ece3;
-  border: 2px solid #e1d4c0;
-  padding: 8px;
-}
-
-.box:before {
-  content: url(box-top.gif);
-  display: block;
-  line-height: 0.1;
-  margin: -10px -10px -22px -10px;
-}
-
-.box:after {
-  clear: both;
-  content: url(box-btm.gif);
-  display: block;
-  line-height: 0.1;
-  margin: 0 -10px -10px -10px;
-}
-
-.box h2 {
-  margin-top: 0;
-}
-```
-
-这些看起来也很好。如果你不理解其中任何内容，不要担心。我们稍后将逐行进行分解。
-
-## 图片
-
-最后，这里是我们使用的两张图片，一张用于顶部一组圆角（见图 3-7），另一张用于底部一组（图 3-8）。
-
-![](img/70fa44d3a461f43c7a35cac2b893273d_113_0.png)
-
-图 3-7：尺寸为 200 × 30px 的 box-top.gif 文件
-
-图 3-8：尺寸为 200 × 8px 的 box-btm.gif 文件
-
-
-
-
-
-## 第 3 章
-
-图 3-12 显示了新元素出现的位置。
-
-![](img/70fa44d3a461f43c7a35cac2b893273d_118_0.png)
-
-图 3-12：:before 伪元素出现的位置指示
-
-仔细想想，这是一种非常强大的功能。我们使用 CSS 不仅是为了美化样式，而是为了实际生成内容并将其插入文档中。
-
-以下是实现方法。首先，我们创建伪元素：
-
-```
-.box:before {
-}
-```
-
-然后，我们使用 `content` 属性向文档中插入图像。你可以在图 3-13 中看到新图像出现，位于“Users say...”标题的上方。
-
-```
-.box:before {
-content: url(box-top.gif);
-}
-```
-
-![](img/70fa44d3a461f43c7a35cac2b893273d_118_1.png)
-
-图 3-13：新图像
-
-尽管我们成功使用 CSS `content` 属性插入了图像，但它并没有完全对齐。这是为什么呢？记得我们之前对框应用的 8px 内边距（padding）和 2px 边框（border）吗？如图 3-14 所示，这些属性在垂直和水平方向上偏移了伪元素，总共 10px。
-
-我们必须找到一种方法来消除这种偏移，并将新图像移动到框顶部的正确位置。
-
-## Blogger：悬停效果与设计改进
-
-![](img/70fa44d3a461f43c7a35cac2b893273d_119_0.png)
-
-图 3-14：应用于框的内边距和边框导致 :before 伪元素偏移。
-
-我们通过给伪元素设置 -10px 的上外边距（top-margin）来这样做。这“向上拉”伪元素，使其与框的顶部对齐。我们还设置了 `display: block`，因为只有块级元素可以应用外边距，如图 3-15 所示：
-
-```
-:before {
-  content: url(box-top.gif);
-  display: block;
-  margin: -10px 0 0;
-}
-```
-
-![](img/70fa44d3a461f43c7a35cac2b893273d_119_1.png)
-
-图 3-15：“向上拉动”伪元素
-
-然后我们为左、右外边距都添加负值，以在水平方向将伪元素拉到位，再次抵消了我们给框设置的 8px 内边距和 2px 边框，如图 3-16 所示：
-
-```
-:before {
-  content: url(box-top.gif);
-  display: block;
-  margin: -10px -10px 0 -10px;
-}
-```
-
-现在看起来很不错了，但我们还有两件事要处理。
-
-## 第 3 章
-
-![](img/70fa44d3a461f43c7a35cac2b893273d_120_0.png)
-
-图 3-16：水平定位伪元素
-
-首先，我们必须将文本向上拉，使标题（“Users say...”）位于正确的位置。我们通过对伪元素应用另一个负外边距来实现，这次是 -22px 的下外边距（bottom margin）。我们还对 `h2` 应用了 0 的上外边距，如图 3-17 所示。
-
-```
-.box:before {
-  content: url(box-top.gif);
-  display: block;
-  margin: -10px -10px -22px -10px;
-}
-
-h2 {
-  margin-top: 0;
-}
-```
-
-![](img/70fa44d3a461f43c7a35cac2b893273d_120_1.png)
-
-图 3-17：垂直定位标题
-
-最后，我们必须处理由 `line-height`（行高）引起的小问题。
-
-`line-height` 是两行文本之间的垂直距离。设置较大的 `line-height` 会增加行与行之间的垂直间隙；设置较小的 `line-height`，文本行可能会开始重叠，如图 3-18 所示。
-
-虽然我们没有专门为 `:before` 伪元素设置 `line-height`，但它继承了 Web 浏览器应用于 HTML 文档的默认样式值。
-
-在处理像素级设计（pixel-perfect design）时，这种垂直间距经常会导致问题，在这种情况下，它在我们的 `box-top.gif` 下方引入了一个非常小的间隙。我们没有注意到这个间隙，是因为伪元素的背景是透明的。但如果我们将 `background-color` 改为绿色，间隙就会变得明显，如图 3-19 所示。
-
-## Blogger：悬停效果与设计改进
-
-| 属性 | 描述 |
-| :--- | :--- |
-| line-height = 3em. | 此段设置了较大的 `line-height`，因此文本行之间的垂直间隙应该很大。 |
-| line-height = 1.3em. | 此段设置了正常的 `line-height`，因此文本行之间的垂直间隙应该是……正常的。 |
-| line-height = 0.9em. | 此段设置了较小的 `line-height`，因此文本行之间的空间应该很小。 |
-
-**图 3-18：** CSS 属性 `line-height` 影响文本的垂直间距。
-
-![](img/70fa44d3a461f43c7a35cac2b893273d_121_0.png)
-
-**图 3-19：** `line-height` 可能会导致意外的间距问题（此处所示）。尽管目前没有影响我们的设计，但在可能的情况下取消 `line-height` 是一个好主意。在这种情况下，我们将通过设置 `line-height` 为 0 来实现。
-
-
-
-
-该规则在这些例图中没有作用，但为了安全起见，保留它是有帮助的。我们没有插入它，而框中的最后一个元素是浮动的（floated），这可能会导致问题。
-
-而我们拥有了它：圆角、精美的标记，以及一些花哨的 CSS（见图 3-26）。
-
-嗯，或许对于 Firefox、Opera 和 Safari 等浏览器来说没问题，但对于 Internet Explorer 呢？它是如何处理我们的代码的？
-
-> “感谢，你们的系统可能见过的最简单的内容管理应用了……如此简单简直让我感到惊讶，我已经和电脑打交道了 20 年了。”
-> - Michael
-
-图 3-26：底部顶部和底部的圆角
-
-## 处理 Internet Explorer
-
-遗憾的是，IE 并不解析 `:before` 和 `:after`，结果就是我们精美的曲线和那个吸引人的渐变填充都丢失了，如图 3-27 所示。
-
-我们能做什么呢？嗯，IE 可能不解析 `:before` 和 `:after`，但它确实理解 `background-image` 属性。通过稍微思考，我们可以取用于 `:before` 伪元素的图像并将其作为 `h2` 的背景插入。
-
-让我们来看看它是如何工作的。
-
-## 第3 章
-
-![](img/70fa44d3a461f43c7a35cac2b893273d_126_0.png)
-
-图 3-27：Internet Explorer 未应用任何圆角样式。
-
-首先，我们在 `h2` 上设置了 `background-image`（见图 3-28）：
-
-```css
-.box h2 {
-  background: transparent url(box-top.gif) no-repeat top left;
-}
-```
-
-## Blogger：鼠标悬停效果与设计改进
-
-![](img/70fa44d3a461f43c7a35cac2b893273d_127_0.png)
-
-图 3-28：为 h2 设置背景图像
-
-现在，我们需要抵消应用于框的 8px 内边距和 2px 边框。我们将使用负外边距（negative margins）来实现这一点，将 `h2` 及其背景图像向上向左拉，如图 3-29 所示：
-
-```css
-.box2 {
-  background: transparent url(box-top.gif) no-repeat top left;
-  margin: -10px -10px auto -10px;
-}
-```
-
-![](img/70fa44d3a461f43c7a35cac2b893273d_127_1.png)
-
-图 3-29：抵消内边距和边框
-
-然后我们将添加一些内边距，将标题文字推回它的正常位置，如图 3-30 所示：
-
-```css
-.box2 {
-  background: transparent url(box-top.gif) no-repeat top left;
-  margin: -10px -10px auto -10px;
-  padding: 10px 10px 0 10px;
-}
-```
-
-![](img/70fa44d3a461f43c7a35cac2b893273d_127_2.png)
-
-图 3-30：针对 IE 的修改后样式
-
-## 第3 章
-
-搞定，这是一个针对 IE 用户的修复方案……或者不是呢？
-
-嗯，这确实是一个修复，但它并不一定很“美观”。在这种情况下，我们幸运地知道：(a) `h2` 有内边距，(b) 它本身没有应用 `background-image`，以及 (c) 我们可以在事后调整 `h2` 的内边距以恢复其正常位置。但如果我们不知道框内将包含什么内容呢？我们能将其作为通用部分发布吗？如果我们不知道框内将包含什么内容？将其作为 Blogger 客户端的模板并仍然期望我们的 IE 能够正常工作？答案可能是否定的。
-
-尽管我们认为基于 `:before` 和 `:after` 的使用根据元素规则的内容来设定元素的样式不是一个好主意；但我们通过之前显示的 IE 特有 CSS 完全粉碎了这一观点。我们现在处于危险的境地。
-
-所以，这里“黑客”出来的 IE 方案“好”吗？在这种情况下，是的，还可以的。我们可以在 blogger.com 上实现它并保证它每次都有效吗？不，我们做不到。你应该在自己的网站上使用它吗？嗯，那取决于你……
-
-## 修复修复方案
-
-或许是为了它，但在我们说它完全完成之前，我们现在需要做一些清理工作。
-
-我们刚刚编写的针对 IE 的 CSS 不仅能被 Internet Explorer 理解；所有主要浏览器都能理解它。像 Firefox、Opera 和 Safari 等浏览器现在在屏幕上有三组图像：我们使用 `:before` 插入的图像、使用 `:after` 插入的图像，以及在 `h2` 之间插入的图像。
-
-幸运的是，我们这些图像的放置非常准确，以至于你看不出顶部部分应用了两张图像，如图 3-31 所示。
-
-用户说……
-- “我喜欢 Blogger - 它为我的生活增添了极大的乐趣！” - Roseanne
-- “你们做得非常棒……感谢你们在互联网上开创大众、用户友好 Web 方面的典范服务……” - Josh
-- “感谢，你们的系统可能是我见过的最简单的内容管理应用了……如此简单简直让我感到惊讶，我已经和电脑打交了 20 年了。” - Michael
-
-```（此处由于原文未提供代码块，仅根据逻辑推断，若有代码块应保留）
-```
-（注：原文在 Figure 3-31 之后未提供具体代码块，此处根据翻译要求保持结构对齐）
-
-图 3-31：IE 应用了三组图像。
-```css
-``` 
-（此处由于原文未提供后续代码块）
-
-
-
-
-## Blogger：悬停效果与设计改进
-
-让我们快速查看一下这种设计创建圆角所需要的 XHTML。
-
-## XHTML
-
-以下是 XHTML：
-
-```
 <div id="sidebar">
   <div class="box">
     <h2>用户说...</h2>
@@ -2655,7 +2096,7 @@ h2 {
 </div>
 ```
 
-```
+```html
 <!-- 在此侧边栏中可以放置更多“框” -->
 </div>
 ```
@@ -2668,7 +2109,7 @@ h2 {
 
 以下是 CSS：
 
-```
+```css
 #sidebar {
   width: 50%;
 }
@@ -2692,9 +2133,7 @@ h2 {
   clear: both;
 ```
 
-## 第3章
-
-```
+```css
 content: url(box-bl.gif);
 display: block;
 line-height: 0.1;
@@ -2718,13 +2157,13 @@ margin: 4px -10px -10px -10px;
 
 ![](img/70fa44d3a461f43c7a35cac2b893273d_134_1.png)
 
-图 3-36：高度低于 5px 的图像会导致无法用 line-height 解决的布局问题（如图所示）。
+图 3-36：高度低于 5px 的图像会导致无法用 `line-height` 解决的布局问题（如图所示）。
 
 110
 
-## Blogger：悬停效果与设计改进
+# Blogger：悬停效果与设计改进
 
-为什么这些间隙会出现是个谜团，它们确实出现了，而且无论如何调整 line-height 都无法让它们消失。
+为什么这些间隙会出现是个谜团，它们确实出现了，而且无论如何调整 `line-height` 都无法让它们消失。
 
 因此，务必使用后续章节的方法确保你的图像至少有 5px 高。
 
@@ -2734,22 +2173,25 @@ margin: 4px -10px -10px -10px;
 
 ## 圆角框顶部
 
-首先，我们必须设置 `sidebar` div 的宽度。我们在这里设置宽度，而不是在 `.box` 本身上，以避免 IE 对盒盒模型的处理出现问题（参见 www.positioneverything.net/articles/box-model）。我们使用了任意的 50% 作为宽度，但为了适应你的设计可以是任何值（见图 3-37）：
+首先，我们必须设置 `sidebar` div 的宽度。我们在这里设置宽度，而不是在 `.box` 本身上，以避免 IE 对盒盒模型的处理出现问题（参见 `www.positioneverything.net/articles/box-model`）。我们使用了任意的 50% 作为宽度，但为了适应你的设计可以是任何值（见图 3-37）：
 
-```
+```css
 #sidebar {
   width: 50%;
 }
 ```
 
 > 用户说...
+
 > “我爱 Blogger - 它为我的生活增添了极大的乐趣！” - Roseanne
+
 > “你们做得得太棒了……感谢你们在互联网上开创大众、用户友好的网络博客提供的典范式服务。说真的……我同成千上万的用户一起，非常感谢你们提供的服务。” - John
+
 > “感谢，你们的系统可能是我见过最简单的内容管理应用了……它的简单程度简直令我惊叹，我已经和计算机打了20年道了。” - Michael
 
 接下来我们对框进行样式处理，给它一个边框和一些内边距（以留出文字与边框之间的间隙）。我们还添加了背景颜色和背景图像。这在顶部产生了渐变效果，如图 3-38 所示。
 
-```
+```css
 .box {
   background: #fece33 url(box-tm.gif) repeat-x top left;
   border: 2px solid #ed4c0;
@@ -2757,15 +2199,13 @@ margin: 4px -10px -10px -10px;
 }
 ```
 
-## 第3章
-
 ![](img/70fa44d3a461f43c7a35cac2b893273d_136_0.png)
 
 图 3-39：在框顶部产生渐变
 
 现在处理一些巧妙的部分。首先，我们创建 `:before` 伪元素：
 
-```
+```css
 .box:before {
   content: ""; /* 添加内容 */
 }
@@ -2773,7 +2213,7 @@ margin: 4px -10px -10px -10px;
 
 现在，我们将左上角插入到伪元素中（见图 3-39）：
 
-```
+```css
 .box:before {
   content: url(box-tl.gif);
 }
@@ -2785,7 +2225,7 @@ margin: 4px -10px -10px -10px;
 
 现在我们将添加右上角图像。我们通过在伪元素上设置背景图像并设置为块级来实现这一点（见图 3-40）：
 
-```
+```css
 .box:before {
   background: transparent url(box-tr.gif) no-repeat top right;
   content: url(box-tl.gif);
@@ -2799,7 +2239,7 @@ margin: 4px -10px -10px -10px;
 
 我们必须抵消应用于框的 8px 内边距和 2px 边框。我们通过对伪元素应用负的上、右、左的外边距来实现，将其到位，见图 3-41：
 
-```
+```css
 .box:before {
   content: url(box-tl.gif);
   background: transparent url(box-tr.gif) no-repeat top right;
@@ -2814,7 +2254,7 @@ margin: 4px -10px -10px -10px;
 
 最后，我们对伪元素应用 `line-height`（以解决左角的问题）和负的外边距，将标题（“用户说...”）向上拉并回到正确的位置，见图 3-42：
 
-```
+```css
 .box:before {
   background: transparent url(box-tr.gif) no-repeat top right;
   content: url(box-tl.gif);
@@ -2826,8 +2266,6 @@ margin: 4px -10px -10px -10px;
 
 这就完成了。圆角、渐变背景和流宽，如图 3-42 所示。
 
-## 第3章
-
 ![](img/70fa44d3a461f43c7a35cac2b893273d_138_0.png)
 
 这种方法的巧妙之处在于，通过使用 `background-image` 和 `content` 属性，我们成功地向单个伪元素插入了两张图像。如果没有这种能力，这种流式布局将超出我们“最小化标记”方法的范围，我们将不得不采用拙劣的 CSS 添加额外的 `div`。
@@ -2838,15 +2276,15 @@ margin: 4px -10px -10px -10px;
 
 首先，我们创建 `:after` 伪元素：
 
-```
+```css
 .box:after {
 }
 ```
 
 接下来，我们将通过 `content` 属性将左下角圆角图像插入伪元素中（见图 3-43）：
 
-```
-.box: after {
+```css
+.box:after {
   content: url(box-bl.gif);
 }
 ```
@@ -2855,8 +2293,8 @@ margin: 4px -10px -10px -10px;
 
 现在我们将添加右下圆角图像。我们通过在伪元素上设置 `background-image` 并设置为块级来实现，见图 3-44：
 
-```
-.box: after {
+```css
+.box:after {
   background: transparent url(box-br.gif) no-repeat right;
   content: url(box-bl.gif);
   display: block;
@@ -2866,12 +2304,6 @@ margin: 4px -10px -10px -10px;
 ![](img/70fa44d3a461f43c7a35cac2b893273d_139_0.png)
 
 图 3-44：插入右角
-
-
-
-
-
-## 第 3 章
 
 我们将值设置为 0.1 并将其固定下来（见图 3-47）：
 
@@ -2902,7 +2334,7 @@ margin: 4px -10px -10px -10px;
 }
 ```
 
-## Blogger：鼠标悬停效果与设计改进
+# Blogger：鼠标悬停效果与设计改进
 
 ![](img/70fa44d3a461f43c7a35cac2b893273d_141_0.png)
 
@@ -2910,23 +2342,21 @@ margin: 4px -10px -10px -10px;
 
 图 3-48：在 Firefox、Opera 和 Safari 中看到的完成文章
 
-## 第 3 章
-
 ## 处理 Internet Explorer
 
 遗憾的是，与前面的节不同，没有一种非常简单的方法可以让 IE 用户体验到我们在这里所做的（见图 3-49）。在稍微调整了外边距以消除框顶部和底部的间隙后，IE 用户将不得不满足于精心设计的配色方案、出色的空间利用以及 blogger.com 布局带来的整体宁静感。
 
-![](img/70fa44d3a461f43c7a35cac2b89333d_142_0.png)
+![](img/70fa44d3a461f43c7a35cac2b893273d_142_0.png)
 
 图 3-49：IE 没有精美的样式
 
-当然，如果那些 IE 用户使用了你的圆角，那么你就不能使用这种技术。你将不得不采用不那么优雅的方法，即在 XHTML 中插入一系列 div。
+当然，如果那些 IE 用户使用了你的圆角，那么你就不能使用这种技术。你将不得不采用不那么优雅的方法，即在 XHTML 中插入一系列 `div`。
 
 ## 通过伪元素进行更好的思考
 
 你应该对 `:before` 和 `:after` 伪元素的能力有相当的了解。它们确实非常强大。
 
-它们的优点之一是允许你改变标记标记的思维方式。你的第一个想法不应是“嗯，我必须添加大量的 div 来构建这个布局。”现在你拥有一套工具，让你说：“我可以在完全不以任何方式修改 XHTML 标记的情况下构建这个布局吗？”
+它们的优点之一是允许你改变标记标记的思维方式。你的第一个想法不应是“嗯，我必须添加大量的 `div` 来构建这个布局。”现在你拥有一套工具，让你说：“我可以在完全不以任何方式修改 XHTML 标记的情况下构建这个布局吗？”
 
 随着 CSS 变得越来越强大，以及浏览器对它的解释能力也日益提高，这种思考过程将成为我们所有人的本能。
 
@@ -2946,9 +2376,7 @@ margin: 4px -10px -10px -10px;
 
 图 3-51：登录界面中的隐含框
 
-这里的 CSS 并没有特别巧妙。它是将简单的背景图像应用于表单或 div 中，但这种效果非常治愈，并在视觉上划分文档区域的同时保持了设计的开放性。在这样一个繁忙的网站中，这是一个非常聪明的举。
-
-## 第 3 章
+这里的 CSS 并没有特别巧妙。它是将简单的背景图像应用于表单或 `div` 中，但这种效果非常治愈，并在视觉上划分文档区域的同时保持了设计的开放性。在这样一个繁忙的网站中，这是一个非常聪明的举。
 
 这是该示例相关的 CSS：
 
@@ -2964,13 +2392,13 @@ margin: 4px -10px -10px -10px;
 
 ![](img/70fa44d3a461f43c7a35cac2b893273d_144_0.png)
 
-图 3-52：尺寸为 320 × 290 的 ibox-login.jpg 图像
+图 3-52：尺寸为 320 × 290 的 `ibox-login.jpg` 图像
 
 所以，你不需要高级 CSS 来实现漂亮的设计。这已经非常简单了，而且它完成了工作。
 
 ## 为你的维护者编写 CSS
 
-blogger.com 上有一些巧妙之处，尽管乍眼看你可能无法发现。事实上，真正欣赏此的是维护网站的人—— Blogger 团队。
+blogger.com 上有一些巧妙之处，尽管乍眼看你可能无法发现。事实上，真正欣赏此的是维护网站的人——Blogger 团队。
 
 这一节查看 Blogger 内容的样式，并展示了通过添加一个简单的类，Blogger 团队如何快速轻松地更改网站的布局——从单列变为双列，或者将侧边栏从左移到右。
 
@@ -2989,9 +2417,6 @@ blogger.com 的每个页面都分为两个部分：包含 logo 和标语的 `<di
 </head>
 <body>
   <div id="header">
-```
-
-```html
 </div>
 <div id="body">
   <div id="main">
@@ -3010,65 +2435,57 @@ blogger.com 的几乎每个页面都包含一个“body”div（`<div id="body">
 
 ![](img/70fa44d3a461f43c7a35cac2b893273d_145_0.png)
 
-图 3-53：<div id="body">
-
-## 第 3 章
+图 3-53：`<div id="body">`
 
 blogger.com 的几乎每个页面都包含一个“main”div（`<div id="main">`），它位于 body div 内部并持有页面的主要内容，见图 3-54。
 
 ![](img/70fa44d3a461f43c7a35cac2b893273d_146_0.png)
 
-图 3-54：<div id="main">
+图 3-54：`<div id="main">`
 
 这个 main div 可以单独显示（如图 3-54 所示），占据所有可用宽度，也可以缩小并与“侧栏”div（`<div id="sidebar">`）共同显示，它可以出现在页面的左侧或右侧，见图 3-55。
 
-## Blogger：鼠标悬停效果与设计改进
-
 ![](img/70fa44d3a461f43c7a35cac2b893273d_147_0.png)
 
-<div id="sidebar">
+`<div id="sidebar">`
 
-**图 3-55：<div id="sidebar"> 和 <div id="main">**
+**图 3-55：`<div id="sidebar">` 和 `<div id="main">`**
 
 提供备用布局并不巧妙，巧妙的是 Bowman 触发布局变化的方法：通过更改应用到 body 的类值。
 
-为 body 分配一个 "ms" 类，main div (m) 和侧栏 div (s) 将并排显示——main 在左侧，侧栏在右侧（见图 3-56）。
+为 body 分配一个 `ms` 类，main div (m) 和侧栏 div (s) 将并排显示——main 在左侧，侧栏在右侧（见图 3-56）。
 
-```css
+```html
 <body class="ms">
 ```
 
-## 第 3 章
-
 ![](img/70fa44d3a461f43c7a35cac2b893273d_148_0.png)
 
-图 3-56：class="sm" 的结果：<div id="main"> 在左侧，<div id="sidebar"> 在右侧。
+图 3-56：`class="sm"` 的结果：`<div id="main">` 在左侧，`<div id="sidebar">` 在右侧。
 
-调换过来并为 body 标签分配 sm 类，两个 div 就会交换位置。现在侧边栏 (s) 在左侧，main div (m) 在右侧（见 357）。
+调换过来并为 body 标签分配 `sm` 类，两个 div 就会交换位置。现在侧边栏 (s) 在左侧，main div (m) 在右侧（见 357）。
 
-```css
+```html
 <body class="sm">
 ```
 
-## Blogger：鼠标悬停效果与设计改进
-
 ![](img/70fa44d3a461f43c7a35cac2b893273d_149_0.png)
 
-图 3-57：class="sm" 的结果：<div id="sidebar"> 在左侧，<div id="main"> 在右侧。
+图 3-57：`class="sm"` 的结果：`<div id="sidebar">` 在左侧，`<div id="main">` 在右侧。
 
 完全省略类属性，main div 将扩展到整个 body div 的宽度。侧边栏如果存在，将会被隐藏（见图 3-58）：
 
-```css
+```html
 <body>
 ```
 
-## 第 3 章
-
 ![](img/70fa44d3a461f43c7a35cac2b893273d_150_0.png)
 
-这有多简单？看到 Bowman 如何让 Blogger 团队能够轻松地混合页面布局了吗？
 
-让我们看看实现这种切换的 XHTML 和 CSS。
+
+这有多简单？看到 `Bowman` 如何让 `Blogger` 团队能够轻松地混合页面布局了吗？
+
+让我们看看实现这种切换的 `XHTML` 和 `CSS`。
 
 ## XHTML
 
@@ -3094,7 +2511,7 @@ blogger.com 的几乎每个页面都包含一个“main”div（`<div id="main">
 
 ## CSS
 
-以下是 CSS。（这是一组简化的样式，仅处理布局。颜色、边框等等已省略。）
+以下是 `CSS`。（这是一组简化的样式，仅处理布局。颜色、边框等等已省略。）
 
 ```css
 div#body {
@@ -3123,13 +2540,9 @@ body.sm div#sidebar {
 }
 ```
 
-
-
-
-
 # 第3章
 
-如果指定了类，那么以下规则将限制 `div#main` 的宽度为 490px（从浏览器默认的 100 百比），以便为旁边的侧边栏留空间：
+如果指定了类，那么以下规则将限制`div#main`的宽度为`490px`（从浏览器默认的`100%`），以便为旁边的侧边栏留空间：
 
 ```css
 body.sm div#main,
@@ -3138,7 +2551,7 @@ body.sm div#main {
 }
 ```
 
-如果指定了类，我们还必须设置一些应用到侧边栏 `div` 的样式：
+如果指定了类，我们还必须设置一些应用到侧边栏`div`的样式：
 
 ```css
 body.ms div#sidebar,
@@ -3148,11 +2561,11 @@ body.sm div#sidebar {
 }
 ```
 
-`display:block` 抵消了 `display:none`（我们设置为侧边栏的默认样式），使其变为可见。我们还将侧边栏的宽度设置为 200px。
+`display:block`抵消了`display:none`（我们设置为侧边栏的默认样式），使其变为可见。我们还将侧边栏的宽度设置为`200px`。
 
-现在我们已经设置了主区域和侧边栏 `div` 的显示和宽度，是时候将它们放在左侧或右侧了。我们将通过浮动（floats）来实现，为了节省 CSS 文件空间，我们将四个规则（两条针对主 `div`，两条针对侧边栏 `div`）合并为两条规则。
+现在我们已经设置了主区域和侧边栏`div`的显示和宽度，是时候将它们放在左侧或右侧了。我们将通过浮动（`floats`）来实现，为了节省`CSS`文件空间，我们将四个规则（两条针对主`div`，两条针对侧边栏`div`）合并为两条规则。
 
-第一条规则让 `div` 向左浮动。对于主 `div`，当 `body` 标签应用了 `ms` 类时将应用此规则。对于侧边栏 `div`，当 `body` 标签应用了 `sm` 类时将应用此规则。
+第一条规则让`div`向左浮动。对于主`div`，当`body`标签应用了`ms`类时将应用此规则。对于侧边栏`div`，当`body`标签应用了`sm`类时将应用此规则。
 
 ```css
 body.ms div#main,
@@ -3161,7 +2574,7 @@ body.sm div#sidebar {
 }
 ```
 
-第二条规则让 `div` 向右浮动。对于主 `div`，当 `body` 标签应用了 `sm` 类时将应用此规则。对于侧边栏 `div`，当 `body` 标签应用了 `ms` 类时将应用此规则。
+第二条规则让`div`向右浮动。对于主`div`，当`body`标签应用了`sm`类时将应用此规则。对于侧边栏`div`，当`body`标签应用了`ms`类时将应用此规则。
 
 ```css
 body.ms div#sidebar {
@@ -3169,16 +2582,16 @@ body.ms div#sidebar {
 }
 ```
 
-就是这些。通过简单更改 `body` 标签的类，Blogger 团队的成员可以轻松（且快速）影响页面布局。这是 CSS 如此好用的另一个例子。
+就是这些。通过简单更改`body`标签的类，`Blogger`团队的成员可以轻松（且快速）影响页面布局。这是`CSS`如此好用的另一个例子。
 
 # 128
 
 ## CSS 支持的悬停效果 (Rollovers)
 
-如果说有什么事情帮助简化了 Web，那就是这种谦虚的悬停效果——当用户鼠标滑过页面某个区域时，将一个图像（或颜色）切换为另一个的操作。在 2001 年之前，实现这种效果的唯一可靠方法是引入 JavaScript 并编写如下代码：
+如果说有什么事情帮助简化了 Web，那就是这种谦虚的悬停效果——当用户鼠标滑过页面某个区域时，将一个图像（或颜色）切换为另一个的操作。在 2001 年之前，实现这种效果的唯一可靠方法是引入 `JavaScript` 并编写如下代码：
 
 ```html
-<html
+<html>
 <head>
 <title></title>
 <script type="text/javascript">
@@ -3193,16 +2606,16 @@ function SwapBack() {
 </script>
 </head>
 <body>
-<p><a href="*" onmouseover="SwapOut()" onmouseout="SwapBack()"><img id="picture" src="picture.jpg" width="100" height="150"></</a></p>
+<p><a href="*" onmouseover="SwapOut()" onmouseout="SwapBack()"><img id="picture" src="picture.jpg" width="100" height="150"></a></p>
 </body>
 </html>
 ```
 
-谢谢天谢地地，CSS 为我们提供了许多不同的方法来实现相同的目标，而且它们非常简单。让我们来看看这些方法……
+谢天谢地，`CSS`为我们提供了许多不同的方法来实现相同的目标，而且它们非常简单。让我们来看看这些方法……
 
 ### 改变链接的颜色和背景颜色（简单）
 
-这是所有 CSS 悬停技术中最简单（也是最常用）的一种。它用于提醒用户鼠标正悬停在超链接上。
+这是所有`CSS`悬停技术中最简单（也是最常用）的一种。它用于提醒用户鼠标正悬停在超链接上。
 
 图 3-59 显示了一些悬停效果生效的示例。
 
@@ -3214,7 +2627,7 @@ function SwapBack() {
 
 从零开始。我甚至不打算 - 某事或创建一个测试示例。或者足够简单，让我们试一试吧
 
-这个想法与选择器非常相似，或者说当浏览器被设计时，我们需要改变它们。然后是这样做。一个简单的、基础的样式就是或在分母中移动了 CSS。然后它将页面分成多列。
+这个想法与选择器非常相似，或者说当浏览器被设计时，我们需要改变它们。然后是这样做。一个简单的、基础的样式就是或在分母中移动了`CSS`。然后它将页面分成多列。
 
 ### IE/Web
 
@@ -3222,15 +2635,11 @@ function SwapBack() {
 
 Blue Daisy 而且我们当时过得很很艰难，并且由于决定隐藏他的侧边
 
-
-
-
-
 # 第 3 章
 
 ![](img/70fa44d3a461f43c7a35cac2b893273d_156_0.png)
 
-图 36-4：Blogger 首页的链接。（页面的其余部分已变暗，以便你清晰地识别出链接）。
+图 36-4：`Blogger`首页的链接。（页面的其余部分已变暗，以便你清晰地识别出链接）。
 
 图 36-61 显示了当鼠标悬停在其中一个链接上会发生什么。
 
@@ -3244,11 +2653,11 @@ Blue Daisy 而且我们当时过得很很艰难，并且由于决定隐藏他的
 
 你会发现背景颜色发生了变化，“thoughts”一词变成了黑色。实际的按钮图像完全没有变化。
 
-这是如何实现的呢？首先，让我们来看组成该部分的 XHTML、CSS 和图像。
+这是如何实现的呢？首先，让我们来看组成该部分的 `XHTML`、`CSS` 和图像。
 
 ## XHTML
 
-以下是 XHTML：
+以下是 `XHTML`：
 
 ```
 <ul>
@@ -3261,7 +2670,7 @@ Blue Daisy 而且我们当时过得很很艰难，并且由于决定隐藏他的
 
 ## CSS
 
-以下是 CSS：
+以下是 `CSS`：
 
 ```css
 ul {
@@ -3336,13 +2745,16 @@ color: #000;
 图 3-63 显示了我们的起点。
 
 | Publish thoughts |
+
 | Get feedback |
+
 | Find people |
+
 | And more... |
 
 图 3-63：未设置样式的显示
 
-现在，让我们逐行查看 CSS，看看每个部分有什么效果。首先，我们将移除每个列表项目前的项目符号（点），如图 3-64 所示：
+现在，让我们逐行查看 `CSS`，看看每个部分有什么效果。首先，我们将移除每个列表项目前的项目符号（点），如图 3-64 所示：
 
 ```css
 ul {
@@ -3352,7 +2764,7 @@ ul {
 
 ## Blogger：悬停效果与设计改进
 
-然后，我们将移除无序列表可能带有任何外边距（margin）和内边距（padding），如图 3-65 所示。这样做是为了当我们处理页面上完成的列表时，不需要与浏览器对无序列表的默认内边距和外边距设置作。
+然后，我们将移除无序列表可能带有任何外边距（`margin`）和内边距（`padding`），如图 3-65 所示。这样做是为了当我们处理页面上完成的列表时，不需要与浏览器对无序列表的默认内边距和外边距设置作。
 
 ```css
 ul {
@@ -3398,7 +2810,7 @@ ul li a {
 
 # 第 3 章
 
-接下来我们将链接设置为 `display: block`，并应用 `75px` 的宽度，如图 3-68 所示。（这相当于我们将添加的宽度）。
+接下来我们将链接设置为`display: block`，并应用`75px`的宽度，如图 3-68 所示。（这相当于我们将添加的宽度）。
 
 ```css
 ul li a {
@@ -3412,7 +2824,7 @@ ul li a {
 
 图 3-68：块级元素
 
-现在我们必须插入一些空白区域，以便我们的图像（我们将添加的）有放置，如图 3-69 所示。我们通过在顶部添加 `80px` 的内边距以及在图像和文本之间添加 `5px` 的间距来实现此。
+现在我们必须插入一些空白区域，以便我们的图像（我们将添加的）有放置，如图 3-69 所示。我们通过在顶部添加`80px`的内边距以及在图像和文本之间添加`5px`的间距来实现此。
 
 ```css
 ul li a {
@@ -3426,7 +2838,7 @@ ul li a {
 
 图 3-69：为图像留留留
 
-接下来我们在左侧添加 `10px` 的内边距，右侧添加 `5px` 的内边距，如图 3-70 所示：
+接下来我们在左侧添加`10px`的内边距，右侧添加`5px`的内边距，如图 3-70 所示：
 
 ```css
 ul li a {
@@ -3513,7 +2925,7 @@ font-size: larger;
 
 图 3-74：强制链接的第二个词换到新行
 
-一切看起来都很不错，所以让我们添加让悬停效果生效的 CSS。
+一切看起来都很不错，所以让我们添加让悬停效果生效的 `CSS`。
 
 此规则在用户悬停在链接上时更改每个链接的背景颜色（见图 3-75）：
 
@@ -3532,7 +2944,7 @@ background-color: #f8f2eb;
 
 ## Blogger：悬停效果与设计改进
 
-最后，为了完成工作，此规则将更改 `:hover` 时的文本颜色，使其从灰色变为黑色，如图 3-76 所示：
+最后，为了完成工作，此规则将更改`:hover`时的文本颜色，使其从灰色变为黑色，如图 3-76 所示：
 
 ```css
 ul li a:hover {
@@ -3548,7 +2960,7 @@ color: #000;
 
 ## 处理 Internet Explorer
 
-之前的示例对 IE 用户来说运行得完美。然而，如果你不小心，可能会为少数声称将 Mac 版 IE5 为首选浏览器的人带来麻烦。事实证明这个浏览器对 CSS 中文件名周围的引号有奇怪的偏好。
+之前的示例对 IE 用户来说运行得完美。然而，如果你不小心，可能会为少数声称将 Mac 版 IE5 为首选浏览器的人带来麻烦。事实证明这个浏览器对 `CSS` 中文件名周围的引号有奇怪的偏好。
 
 例如，这种有效：
 
@@ -3574,10 +2986,6 @@ background: #fff url("icon_publish.gif") no-repeat top left;
 }
 ```
 
-
-
-
-
 ## 第 3 章
 
 ```css
@@ -3590,11 +2998,13 @@ ul li#publish a {
 }
 ```
 
+
+
 **图 3-77：** 在某些文本编辑器中，使用引号会激活友好的代码编码。
 
 这是一个奇怪的小 Bug，当你不集中注意力时很容易忽略它，所以请留心。
 
-## 修改表格行的背景颜色
+# 修改表格行的背景颜色
 
 在表格中使用交替行已经成为一种广为人知的设计元素（想想 iTunes），它为长表格提供了结构感，并让眼睛能够轻松地跨越行信息。
 
@@ -3684,7 +3094,7 @@ ul li#publish a {
 </table>
 ```
 
-## 第 3 章
+# 第 3 章
 
 后续的大部分 CSS 用于样式化表格。实际执行悬停效果的规则已为你加了**粗**。
 
@@ -3741,9 +3151,9 @@ table tbody tr:hover td {
 }
 ```
 
-## 鼠标悬停与设计改进
+# 鼠标悬停与设计改进
 
-### 这些都意味着什么？
+## 这些都意味着什么？
 
 我们不会逐行解释 CSS，因为它们与本节无关。但是，让我们详细查看最后几条规则。首先要注意的一点是，我们为两个类中的每一行（`.odd` 和 `.even`）赋予了背景颜色。
 
@@ -3775,17 +3185,13 @@ table tbody tr:hover td {
 
 效果非常棒。
 
-## 修改文本颜色
+# 修改文本颜色
 
-我们在本节中将查看的最后一个悬停效果是，当用户悬停在 div 或类似元素上时高亮文本（无论是普通文本还是链接）。为什么这可能有用？想象一个包含许多链接的网站。开发者通常为链接使用亮色，使其从周围文本中脱颖而出。当每页只有几个链接时，这样很好；但如果你的页面包含数百个链接，会发生什么？用户的眼睛会被成百上千个寻求关注的亮色冲击。当你看到的只有一片色彩时，如何挑选出你设计中的标题？解决方案（或其中之一）是简单的。如果在用户悬停在页面相关部分之前，隐藏了这些链接的亮色，那么我们就可以呈现出一个更平静的网站。只有当用户通过移动鼠标表示他或她对该部分感兴趣时，我们才让链接变得明显。
+我们在本节中将查看的最后一个悬停效果是，当用户悬停在 `div` 或类似元素上时高亮文本（无论是普通文本还是链接）。为什么这可能有用？想象一个包含许多链接的网站。开发者通常为链接使用亮色，使其从周围文本中脱颖而出。当每页只有几个链接时，这样很好；但如果你的页面包含数百个链接，会发生什么？用户的眼睛会被成百上千个寻求关注的亮色冲击。当你看到的只有一片色彩时，如何挑选出你设计中的标题？解决方案（或其中之一）是简单的。如果在用户悬停在页面相关部分之前，隐藏了这些链接的亮色，那么我们就可以呈现出一个更平静的网站。只有当用户通过移动鼠标表示他或她对该部分感兴趣时，我们才让链接变得明显。
 
 图 3-79 展示了这种方法的应用。
 
-
-
-
-
-## 博客：悬停效果与设计改进
+# 博客：悬停效果与设计改进
 
 - 蜘蛛侠在织蜡笔
 - 来自摄影师 Greg Downing 的一些精美图片
@@ -3850,7 +3256,7 @@ div#links ul li a:hover {
 }
 ```
 
-## 第3 章：图像
+# 第 3 章：图像
 
 我们在这里都使用一个小小的“点”图像来替换浏览器的默认“列表圆点”（或项目符号），如图 3-8 所示。
 
@@ -3898,7 +3304,7 @@ links ul li a:hover {
 
 就是这些了。
 
-## 处理 Internet Explorer
+# 处理 Internet Explorer
 
 如之前提到的，IE 不理解链接以外元素上的 `:hover` 选择器。
 
@@ -3928,7 +3334,7 @@ div:hover a {
 
 所以每当我们使用它时，必须记住我们阻止的是 PC 版的 IE，而不是 Mac 版。如果你完全担心 IE，这不是问题，但请注意使用子选择器向 IE 隐藏规则的技巧。
 
-## 修改链接的背景
+# 修改链接的背景
 
 基于 CSS 的悬停效果的第二方法专注于仅切换背景颜色，但也包括图像，使用背景定位变得越来越重要。如果你从未听过这个想法，它很容易，但需要一点解释。
 
@@ -3937,6 +3343,7 @@ div:hover a {
 假设我们被给了如图 3-8 所示的页面布局，并被要求对照片进行装饰——添加一个悬停效果，可能还有一点阴影，一些更有趣的东西。
 
 Lucas 说...
+
 你好，我叫 Lucas。我 3 岁了，是一个英国父亲和一个意大利母亲的双语猴子孩子。我喜欢汽车、卡车、巴士、火车和任何移动的东西。我不怎么喜欢心菜。奶奶有一只狗，叫 Poppy。她很小很可爱，当她开心时会扭动。我长大后想像我的叔叔……我们可以用 CSS 替换这张照片吗？我们可以做到对吧？好吧，如果我们使用代码进行这些更改而不触碰 XHTML 的话。
 
 ```
@@ -3958,7 +3365,7 @@ Lucas 说...
 
 <p>我长大后想像我的叔叔……</p>
 
-## 博客：悬停效果与设计改进
+# 博客：悬停效果与设计改进
 
 如果你幸运，并且正在处理 HTML，这事做起来轻而易举。这听起来可能很难，但通过一点 Photoshop 和一些 CSS，我们可以快速创建一个布局，当用户移动到“Lucas 说...”框时，它会让图像产生悬停效果。
 
@@ -3988,11 +3395,7 @@ Lucas 说...
 </div>
 ```
 
-
-
-
-
-## 第3章
+# 第 3 章
 
 ## CSS
 
@@ -4027,17 +3430,17 @@ div.box:hover div#photo-lucas {
 
 ![](img/70fa44d3a461f43c7a35cac2b893273d_174_0.png)
 
-图 3-83：在 XHTML 中引用的原始图像（lucas.jpg，尺寸为 150 × 100px）
+图 3-83：在 XHTML 中引用的原始图像（`lucas.jpg`，尺寸为 150 × 100px）
 
 图 3-84 显示了我们将作为替换图片的 PNG 文件。我们使用 PNG 文件是因为我们想要一个真实的、半透明的投影效果，而 JPG 文件或 GIF 文件都无法实现此点。
 
 ![](img/70fa44d3a461f43c7a35cac2b893273d_174_1.png)
 
-图 3-84：用于悬停效果的图像：Lucas-rollover.png 320 × 124px（透明区域由棋格纹表示）
+图 3-84：用于悬停效果的图像：`Lucas-rollover.png` 320 × 124px（透明区域由棋格纹表示）
 
 150
 
-## 博客：悬停效果与设计改进
+# 博客：悬停效果与设计改进
 
 ## 这这一切意味着什么？
 
@@ -4057,7 +3460,7 @@ XHTML 不再需要深入研究了，但让我们来看看 CSS 是如何作用的
 
 图 3-85：起点
 
-首先，我们必须移除原始的 lucas.jpg 图像。使用 CSS 有多种方法可以实现这一点，但最全面的方法是将其位置设置为 `absolute`，然后将其甩到屏幕边缘之外（见图 3-86）。
+首先，我们必须移除原始的 `lucas.jpg` 图像。使用 CSS 有多种方法可以实现这一点，但最全面的方法是将其位置设置为 `absolute`，然后将其甩到屏幕边缘之外（见图 3-86）。
 
 ```
 html > body div#photo-lucas img {
@@ -4066,15 +3469,18 @@ html > body div#photo-lucas img {
 }
 ```
 
-我们使用 `position: absolute` 而不是 `position: relative`，因为绝对定位会将对象完全从文档流中移除。在这种情况下，它会导致其父级元素（div#photo-lucas）塌陷，并让下方的文本向上移动填充现在留出的空白区域。
+我们使用 `position: absolute` 而不是 `position: relative`，因为绝对定位会将对象完全从文档流中移除。在这种情况下，它会导致其父级元素（`div#photo-lucas`）塌陷，并让下方的文本向上移动填充现在留出的空白区域。
 
-## 第3章
+# 第 3 章
+
+
+
 
 ![](img/70fa44d3a461f43c7a35cac2b893273d_176_0.png)
 
-清除旧图像后，是时候插入新图像了。我们将其作为 `background-image` 插入到 div#photo-lucas，即包含原始图像的 div（见图 3-87）：
+清除旧图像后，是时候插入新图像了。我们将其作为 `background-image` 插入到 `div#photo-lucas`，即包含原始图像的 `div`（见图 3-87）：
 
-```
+```css
 html > div#photo-lucas {
   background: transparent url(lucas-rollover.png) no-repeat top left;
 }
@@ -4088,54 +3494,54 @@ html > div#photo-lucas {
 
 ## 博客：悬停效果与设计改进
 
-嗯，请记住这是 div#photo-lucas 的背景图像，它是包含原始照片的元素。但由于我们把原始照片推出了屏幕边缘，div#photo-lucas 没有内容，也没有尺寸。所以，是的，我们的新背景图像在那里，但我们必须给 div#photo-lucas 设置宽度和高度，才能看到它，如图 3-88 所示。
+嗯，请记住这是 `div#photo-lucas` 的背景图像，它是包含原始照片的元素。但由于我们把原始照片推出了屏幕边缘，`div#photo-lucas` 没有内容，也没有尺寸。所以，是的，我们的新背景图像在那里，但我们必须给 `div#photo-lucas` 设置宽度和高度，才能看到它，如图 3-88 所示。
 
-```
+```css
 html > body div#photo-lucas {
-background: transparent url(lucas-rollover.png) no-repeat top left;
-height: 124px;
-width: 160px;
+  background: transparent url(lucas-rollover.png) no-repeat top left;
+  height: 124px;
+  width: 160px;
 }
 ```
 
 ![](img/70fa44d3a461f43c7a35cac2b893273d_177_0.png)
 
-啊！它在那儿，非常漂亮。注意，我们设置的高度对应于新悬停图像（lucas-rollover.png）的高度，而宽度恰好是该图像宽度的一半。这样，我们每次只看到 lucas-rollover.png 的一半，这正是我们想要的。
+啊！它在那儿，非常漂亮。注意，我们设置的高度对应于新悬停图像（`lucas-rollover.png`）的高度，而宽度恰好是该图像宽度的一半。这样，我们每次只看到 `lucas-rollover.png` 的一半，这正是我们想要的。
 
 新图像出现在屏幕上后，让我们把它移动到右侧。为了做到这一点，我们再次使用 `position: absolute`（见图 3-89）。
 
-```
+```css
 html > body div#photo-lucas {
-background: transparent url(lucas-rollover.png) no-repeat top left;
-height: 124px;
-position: absolute;
-width: 160px;
+  background: transparent url(lucas-rollover.png) no-repeat top left;
+  height: 124px;
+  position: absolute;
+  width: 160px;
 }
 ```
 
 153
 
-## 第3章
+## 第 3 章
 
 ![](img/70fa44d3a461f43c7a35cac2b893273d_178_0.png)
 
-**图 3-89：**重新定位图像
+图 3-89：重新定位图像
 
-现在不要担心，并没有出错。重要的是 div#photo-lucas 已从文档流中移除，这意味着它不再与任何东西交互。相反，它浮在所有元素上方（如果需要 z-index），并且可以在屏幕上的任何位置定位。
+现在不要担心，并没有出错。重要的是 `div#photo-lucas` 已从文档流中移除，这意味着它不再与任何东西交互。相反，它浮在所有元素上方（如果需要 `z-index`），并且可以在屏幕上的任何位置定位。
 
 既然如此，让我们移动到它的新位置。第一步是对原始框进行修改并插入以下内容：
 
-```
+```css
 .box {
   position: relative;
 }
 ```
 
-这意味着无论我们给 div#photo-lucas 什么 XY 坐标，都是相对于它的容器元素进行定位。左上角是框的左上角，右下角是框的右下角，以此此类推。
+这意味着无论我们给 `div#photo-lucas` 什么 XY 坐标，都是相对于它的容器元素进行定位。左上角是框的左上角，右下角是框的右下角，以此类推。
 
-现在已经已经建立，让我们移动图像。首先设置左侧位置，如图 3-90 所示。
+现在已经建立，让我们移动图像。首先设置左侧位置，如图 3-90 所示。
 
-```
+```css
 html > div#photo-lucas {
   background: transparent url(lucas-rollover.png) no-repeat top left;
   height: 124px;
@@ -4153,7 +3559,7 @@ html > div#photo-lucas {
 
 完美。实际上，我们不需要设置顶部位置，因为它已经在正确的位置了。现在，剩下的工作就是激活这个演示的核心：悬停效果，如图 3-91 所示。希望到现在你已经开始理解最后一步有多简单了。
 
-```
+```css
 div.box:hover div#photo-lucas {
   background-position: right;
 }
@@ -4165,19 +3571,19 @@ div.box:hover div#photo-lucas {
 
 155
 
-## 第3章
+## 第 3 章
 
-## 处理 Internet Explorer
+### 处理 Internet Explorer
 
-IE 在这里表现很糟糕。它不仅不解释 div 上的 `:hover`，而且无法处理半透明。作为结果，我们通过在本章之前描述的子选择器阻止了这些更改的实现。
+IE 在这里表现很糟糕。它不仅不解释 `div` 上的 `:hover`，而且无法处理半透明。作为结果，我们通过在本章之前描述的子选择器阻止了这些更改的实现。
 
-某些情况下可以使用 IE 兼容版本的这种技术。你可以使用普通的 而 而 PNG（你无法获得投影，但并不是坏事）。只要我们的原始图像大小对应，悬停效果也能工作（尽管方式有限）。
+某些情况下可以使用 IE 兼容版本的这种技术。你可以使用普通的 JPG，而不是 PNG（你无法获得投影，但并不是坏事）。只要我们的原始图像大小对应，悬停效果也能工作（尽管方式有限）。
 
 你可能会想：“停止给我看在 IE 中无法运行的演示！”然而，你应该从中获得关于今天最好的浏览器可以实现的想法。或者你意识到既然可能，你可以开始调整这些演示，直到达到一个完美的平衡——CSS 与跨浏览器功能之间的平衡，简洁 HTML 与在客户端机器上运行之间的平衡。
 
 但没，让我们让这个演示在 IE 中运行。以下示例中的代码更改已加粗。我们只是为 IE 插入一张图像（JPG），并替换 Firefox、Opera 和 Safari 的图像。一如既往，我们使用子组合符选择器来实现。
 
-```
+```css
 .box {
   position: relative;
 }
@@ -4216,7 +3622,7 @@ div.box:hover div#photo-lucas {
 
 ![](img/70fa44d3a461f43c7a35cac2b893273d_181_0.png)
 
-在 IE 中看起来看起来效果如何？图 3-93 显示了完整包的效果。
+在 IE 中看起来效果如何？图 3-93 显示了完整包的效果。
 
 ![](img/70fa44d3a461f43c7a35cac2b893273d_181_1.png)
 
@@ -4224,12 +3630,9 @@ div.box:hover div#photo-lucas {
 
 157
 
+## 第 3 章
 
-
-
-## 第3章
-
-## 总结
+### 总结
 
 本章首先讨论了在框体中插入圆角的两种方法，并简要介绍了 `:before` 和 `:after` 伪元素背后的原理。我们简要研究了如何通过使用隐含框体（implied boxes）来进一步模糊我们所有网站的僵硬框体结构。我们还研究了（并打破了）一条有趣的规则，并讨论了将元素的内容作为钩子来样式化元素本身的陷阱。
 
@@ -4239,11 +3642,11 @@ div.box:hover div#photo-lucas {
 
 本章应该让你理解所讨论技巧的底层原理，而不是让你盲目地复制代码示例。如果你发现无法将这些想法应用到客户的网站上，至少你可以玩玩它们，并尝试使用这些技术来复制你的工作。你会惊讶于它可以如此简单，你也会惊讶于复制粘贴一组代码让其运行是如此容易。
 
-在下一章中，我们将观察一个成功的事件驱动型网站的内部运作：PGA锦标赛。
+在下一章中，我们将观察一个成功的事件驱动型网站的内部运作：PGA 锦标赛。
 
-## PGA锦标赛
+## PGA 锦标赛
 
-PGA 锦标赛（The PGA Championship）是世界顶级的体育赛事之一。该赛事每年夏末由美国高尔夫协会（PGA of America）举办，是高尔夫赛季的最后一个大大赛，汇聚了职业高尔夫界的顶级球员，受到全球数百万粉丝的关注。
+PGA 锦标赛（The PGA Championship）是世界顶级的体育赛事之一。该赛事每年夏末由美国高尔夫协会（PGA of America）举办，是高尔夫赛季的最后一个大赛，汇聚了职业高尔夫界的顶级球员，受到全球数百万粉丝的关注。
 
 Time Warner 下的部门 Turner Sports Interactive 负责赛事期间的网站开发和编辑内容。技术目标是创建一个动态、丰富且符合标准的网站，使用 CSS 进行所有布局和呈现，使用易于理解的 XHTML 标记以及使用 Flash 处理特殊功能。创意目标是创建一个视觉上独特、精致且不带任何典型高尔夫设计陈词滥调的网络形象。选择了一组低饱和度的暖中性色调，外加白色和黑色以强调原创摄影，并尽可能地关注文本内容。
 
@@ -4255,11 +3658,11 @@ Time Warner 下的部门 Turner Sports Interactive 负责赛事期间的网站�
 - 一种强大的、超轻量的添加 CSS 驱动下拉菜单的方法
 - 在不破坏标准兼容性的前提下嵌入 Flash 内容
 
-## 第4章
+## 第 4 章
 
-## 阴影效果
+### 阴影效果
 
-PGA 锦标赛网站最引人注的效果之一是内容近三维（3D）的分层分离。这种效果非常微妙，但如果你仔细观察图 4 所示的首页（www.pga2004.com/），左侧列似乎悬浮在其周围内容之上。这不仅仅是一个视觉技巧，更具有编辑上的目的。左侧列包含了最新的锦标赛新闻和专题。通过提供一种微妙（但明显）的视觉提升感，终端用户可以快速辨别出最新的锦标赛内容发布在哪里。
+PGA 锦标赛网站最引人注目的效果之一是内容近三维（3D）的分层分离。这种效果非常微妙，但如果你仔细观察图 4 所示的首页（`www.pga2004.com/`），左侧列似乎悬浮在其周围内容之上。这不仅仅是一个视觉技巧，更具有编辑上的目的。左侧列包含了最新的锦标赛新闻和专题。通过提供一种微妙（但明显）的视觉提升感，终端用户可以快速辨别出最新的锦标赛内容发布在哪里。
 
 左侧列看起来并不比它的邻居更“高”，但需要部分遮挡内容，以便该空间看起来真实地漂浮在页面上方。这就是左侧列顶部“头条故事”（Top Story）标题背后的想法。由于它看起来与左侧列相连，并为向下延伸的阴影提供了右边缘，它似乎是 XHTML 的一部分，并浮在 Flash 电影之上。这种幻觉仅仅是
 
@@ -4271,28 +3674,15 @@ PGA 锦标赛网站最引人注的效果之一是内容近三维（3D）的分�
 
 整个效果看起来可能复杂且耗带宽，但实际上在字节大小和代码上非常轻，通过稍微规划就可以很容易创建。本节通过使用 Photoshop、Flash、CSS 和 XHTML 研究了这种效果，并为将效果推向更高水平提供了一个额外提示。
 
-## 创建幻觉
+### 创建幻觉
 
 在我们开始处理细节之前，让我们先退一步，重新审视目标——在视觉上将页面顶部的 Flash 电影与下方的内容融合，并通过在文档中运行阴影，营造出左侧列比周围内容处于更高层的视觉效果。如果 Flash 电影或 XHTML 中的阴影偏移了 1 像素，效果就会被破坏。但得益于 CSS 和 XHTML 的精确性，这是可能的。
 
-Flash 电影像任何嵌入内容一样总是正方形的。Flash 电影不可能具有不规则形状。首先，创建一个新文档并填充阴影。（注：此处 OCR 文本存在重复，已合并唯一内容）。
+Flash 电影像任何嵌入内容一样总是正方形的。Flash 电影不可能具有不规则形状。首先，创建一个新文档并填充阴影。（注：此处 OCR 文本存在重复，已合并唯一内容。）
 
+- [费曼学习法](https://wiki.example.org/feynmans_learning_method) 灵感来源于物理学诺贝尔奖得主理查·费曼（Richard Feynman）。
 
-
--   [Feynman's learning method](https://wiki.example.org/feynmans_learning_method) is inspired by **Richard Feynman**, the Nobel Prize winner in physics. 
-
-1.  With Feynman's skills, you can understand the knowledge points in depth in just `20 min`, and it is memorable and *hard to forget*.
-[/content]
-
-译文：
-
-[content]
--   [费曼学习法](https://wiki.example.org/feynmans_learning_method) 灵感来源于物理学诺贝尔奖得主**理查·费曼**（Richard Feynman）。
-
-1.  凭借费曼技巧，你只需要 `20 min` 就能深入理解这些知识点，而且记忆深刻且*难以忘。*
-
-
-
+1. 凭借费曼技巧，你只需要 `20 min` 就能深入理解这些知识点，而且记忆深刻且难以忘。
 
 ## PGA 锦标赛
 
@@ -4309,26 +3699,27 @@ Flash 电影像任何嵌入内容一样总是正方形的。Flash 电影不可�
 </ul>
 ```
 
-总的来说，无序列表似乎是左侧列的一部分，位于主内容区域阴影下方，而阴影位于之前创建的背景之上（见图 4-10）。技巧在于是将右列（包含无序列表）直接对齐左列的右边缘。这产生了一种错觉，即左侧项目较深的背景颜色是页面现有投影投影的一部分，而实际上它是层叠在投影影之上的。
+总的来说，无序列表似乎是左侧列的一部分，位于主内容区域阴影下方，而阴影位于之前创建的背景之上（见图 4-10）。技巧在于将右列（包含无序列表）直接对齐左列的右边缘。这产生了一种错觉，即左侧项目较深的背景颜色是页面现有投影的一部分，而实际上它是层叠在投影之上的。
 
 ![](img/70fa44d3a461f43c7a35cac2b893273d_191_0.png)
 
-图 4-10：放置在 XHTML 容器 div 中带有深色阴影背景的列表项目
+图 4-10：放置在 XHTML 容器 `div` 中带有深色阴影背景的列表项目
 
 以下是左右两列的 CSS：
 
 ```css
 #1col {
-  width:468px;
-  float:left;
+  width: 468px;
+  float: left;
 }
+
 #rcol {
-  width:271px;
-  float:right;
+  width: 271px;
+  float: right;
 }
 ```
 
-创建该效果所需的set XHTML 如下：
+创建该效果所需的 XHTML 如下：
 
 ## 第 4 章
 
@@ -4350,31 +3741,30 @@ Flash 电影像任何嵌入内容一样总是正方形的。Flash 电影不可�
 
 到此，我们额外的下投影效果就完成了。
 
-如果你能从这次练习中中学到点什么，请记住这一点：通过利用 Web 浏览器自动重复背景图像并在同一元素上应用颜色的能力，有无数的创意机会为任何扁平、静态的布局添加视觉深度和丰富性，而对整个文档的重量几乎没有影响。这需要一些耐心、规划和实验。
+如果你能从这次练习中学到点什么，请记住这一点：通过利用 Web 浏览器自动重复背景图像并在同一元素上应用颜色的能力，有无数的创意机会为任何扁平、静态的布局添加视觉深度和丰富性，而对整个文档的重量几乎没有影响。这需要一些耐心、规划和实验。
 
 ## CSS 下拉菜单
 
 在 20 世纪 90 年代末的点热潮中，一个尖端网站的标志通常通过包含花哨的下拉导航菜单来体现。它们可能看起来很悦目，但其脆弱的外表往往是 JavaScript 的大窝、臃肿的 HTML，甚至更糟的专有浏览器 API 方法。对于追求更直接的用户体验的网站，早期的下拉解决方案通常会增加挫败感（尤其是当它们失效时）和不必要的臃肿。
 
-然后，CSS 来了，以及神奇的 `:hover` 属性。大师 Ike Meyer 发表了关于如何利用锚点标签 `:hover` 属性能力的教程，当该属性与普通的 `ol` 无序列表配合时，可以创建外观相似的下拉菜单，但重量和复杂度仅为传统方法的分之一。
+然后，CSS 来了，以及神奇的 `:hover` 属性。大师 Ike Meyer 发表了关于如何利用锚点标签 `:hover` 属性能力的教程，当该属性与普通的 `ol` 无序列表配合时，可以创建外观相似的下拉菜单，但重量和复杂度仅为传统方法的几分之一。
 
 但对于更纯粹的 CSS 菜单来说，存在一个巨大的问题：Windows 版 Internet Explorer。作为目前访问 Web 最流行的浏览器，该浏览器对 `:hover` 属性的支持有限（对整个 CSS 也是如此，那是另一个故事了），并且拒绝渲染下拉菜单。结果，CSS 菜单被沦为爱好者的工具集。
 
-但随着 2003 年 11 月的这一变化，Patrick Griffiths 和 Dan Webb 用 Suckerfish (www.alist.com/articles/dropdowns) 让 CSS 社区燃起来了。这是一个轻量级的、由 CSS 驱动的系统，可以在所有可用浏览器中运行，包括 Windows 版 Internet Explorer。Suckerfish 不仅在文件重量上是一个突破，在跨浏览器兼容性、Web 标准遵守、语义丰富性和可访问性方面也是如此。
+但随着 2003 年 11 月的这一变化，Patrick Griffiths 和 Dan Webb 用 Suckerfish（`www.alist.com/articles/dropdowns`）让 CSS 社区燃起来了。这是一个轻量级的、由 CSS 驱动的系统，可以在所有可用浏览器中运行，包括 Windows 版 Internet Explorer。Suckerfish 不仅在文件重量上是一个突破，在跨浏览器兼容性、Web 标准遵守、语义丰富性和可访问性方面也是如此。
 
 Suckerfish 下拉菜单也极其易于构建。如果你知道如何创建一个无序列表，所有的呈现和功能都通过一小组样式属性控制。
 
 ## PGA 锦标赛
 
-在 Suckerfish 最初发布几个月后，Griffiths 和 Webb 凭借 Son of Suckerfish Dropdowns 提高了筹码，这是原版的更轻量版本，具有更好的兼容性，并带有多个下拉菜单。PGA 锦标赛网站使用的是 Suckerfish 的“子代”版本，但本文讨论没有深入探讨基础结构（你可以从 www.httpdog.com/articles/suckerfish/drop-downs/ 免费下载示例）。我们将讨论所做的自定义、潜在的注意事项以及一些通用的使用技巧。
+
+
+
+在 Suckerfish 最初发布几个月后，`Griffiths` 和 `Webb` 凭借 `Son of Suckerfish Dropdowns` 提高了筹码，这是原版的更轻量版本，具有更好的兼容性，并带有多个下拉菜单。`PGA` 锦标赛网站使用的是 Suckerfish 的“子代”版本，但本文讨论没有深入探讨基础结构（你可以从 `www.httpdog.com/articles/suckerfish/drop-downs/` 免费下载示例）。我们将讨论所做的自定义、潜在的注意事项以及一些通用的使用技巧。
 
 ## 自定义：定位下拉菜单
 
-在为 PGA 锦标赛网站导航修改 Suckerfish 时遇到的第一个问题涉及下拉菜单的定位。默认情况下，下拉菜单直接出现在其父元素下方。由于使用了 `odd` 类，下拉菜单似乎是左侧的一部分，位于主内容区域阴影下方，而阴影位于之前创建的背景之上。技巧是将右列（包含无序列表）直接对齐左列的右边缘。这让左侧项目较深的背景颜色看起来是页面现有投影的一部分，而实际上它是层叠在投影影之上的。
-
-
-
-
+在为 `PGA` 锦标赛网站导航修改 Suckerfish 时遇到的第一个问题涉及下拉菜单的定位。默认情况下，下拉菜单直接出现在其父元素下方。由于使用了 `odd` 类，下拉菜单似乎是左侧的一部分，位于主内容区域阴影下方，而阴影位于之前创建的背景之上。技巧是将右列（包含无序列表）直接对齐左列的右边缘。这让左侧项目较深的背景颜色看起来是页面现有投影的一部分，而实际上它是层叠在投影影之上的。
 
 # PGA锦标赛
 
@@ -4395,7 +3785,7 @@ Suckerfish 下拉菜单也极其易于构建。如果你知道如何创建一个
 }
 ```
 
-通过将每个列表项框的宽度扩展到其父元素的宽度——在这种情况下，该宽度为 146px。如果没有修改列表项的默认宽度，浏览器的底边框长度将取决于内部文本的长度有多长。通过将列表项的宽度设置为 100%，无论每个项目中包含多少文本，菜单选项都具有统一的外观。
+通过将每个列表项框的宽度扩展到其父元素的宽度——在这种情况下，该宽度为 `146px`。如果没有修改列表项的默认宽度，浏览器的底边框长度将取决于内部文本的长度有多长。通过将列表项的宽度设置为 `100%`，无论每个项目中包含多少文本，菜单选项都具有统一的外观。
 
 接下来，处理内容部分：
 
@@ -4408,7 +3798,7 @@ Suckerfish 下拉菜单也极其易于构建。如果你知道如何创建一个
 }
 ```
 
-为了更好地控制每个文本块在其各自列表项中的位置，每个选项都被封装在了一个 `span` 标签中，因为 `span` 避免了另一个具有唯一名称的子类，并且比 `div`、段落标签或其他更具意义。因此，`span` 的 `display` 属性变为块级元素（它默认情况下不是）。这允许使用 margin 和 padding 等块级属性。在成功调整 padding 之后，菜单出现了，如图 4-13 所示。
+为了更好地控制每个文本块在其各自列表项中的位置，每个选项都被封装在了一个`span`标签中，因为`span`避免了另一个具有唯一名称的子类，并且比`div`、段落标签或其他更具意义。因此，`span`的`display`属性变为块级元素（它默认情况下不是）。这允许使用`margin`和`padding`等块级属性。在成功调整`padding`之后，菜单出现了，如图 4-13 所示。
 
 # 第 4 章
 
@@ -4428,13 +3818,13 @@ width:146px;
 }
 ```
 
-感谢负值的存在吧！通过将 margin 从 0 改为 -8（margin 值的顺序是上、右、下、左），每个嵌套列表向左移动了 8 像素（如果是正数，则向右移动）。这使得每个文本选项的左边缘与其父项目完美对齐，如图 4-14 所示。
+感谢负值的存在吧！通过将`margin`从`0`改为`-8`（`margin`值的顺序是上、右、下、左），每个嵌套列表向左移动了 8 像素（如果是正数，则向右移动）。这使得每个文本选项的左边缘与其父项目完美对齐，如图 4-14 所示。
 
 ## 需要考虑的注意事项
 
 现在我们已经发现了修改原始源代码后的情况，我们将考虑在使用 Suckerfish 下拉菜单时需要注意的某些潜在问题：
 
-- 注意事项 #1：Suckerfish 在 IE/Windows 中需要 JavaScript。这可以看作是 Internet Explorer 对 CSS 支持乏力的另一个例子。Suckerfish 在 Mozilla、Firefox 和 Safari 中完全是通过 CSS 激活的，但为了让它在 Windows 版的 Internet Explorer (IE/Windows) 中运行，任何使用下拉菜单的文档都必须包含少量的 JavaScript。`:hover` 伪元素通过向文档对象模型 (DOM) 绑定自定义行为来取代。但问题就在这里：如果你的 IE/Windows 用户禁用了 JavaScript，你的下拉菜单就不会出现。虽然很少有人真的关闭它，但这是你应该意识到的现实。
+- **注意事项 #1**：Suckerfish 在 `IE/Windows` 中需要 JavaScript。这可以看作是 `Internet Explorer` 对 CSS 支持乏力的另一个例子。Suckerfish 在 `Mozilla`、`Firefox` 和 `Safari` 中完全是通过 CSS 激活的，但为了让它在 Windows 版的 `Internet Explorer` (`IE/Windows`) 中运行，任何使用下拉菜单的文档都必须包含少量的 JavaScript。`:hover` 伪元素通过向文档对象模型 (DOM) 绑定自定义行为来取代。但问题就在这里：如果你的 `IE/Windows` 用户禁用了 JavaScript，你的下拉菜单就不会出现。虽然很少有人真的关闭它，但这是你应该意识到的现实。
 
 # PGA锦标赛
 
@@ -4442,61 +3832,57 @@ width:146px;
 
 图 4-14：完成后的阴影效果，样式完整且对齐正确。
 
-- 注意事项 #2：IE/Mac 不喜欢这个。很多人尝试过解决 Mac 版 Internet Explorer（OS X 及旧版本的所有版本）不支持 Suckerfish 的问题，但写到这里，这仍然无解。幸运的是，这种失败是静默的（菜单根本不出现），因此它们不会干扰你的导航。微软已经开启了 Mac 版浏览开发，所以不要指这种情况会发生变化。好的一面是，感谢 Safari、Firefox 以及其他流行的操作系统浏览器，你可以预计来自 Mac 版 Internet Explorer 的流量会越来越少。
+- **注意事项 #2**：`IE/Mac` 不喜欢这个。很多人尝试过解决 Mac 版 `Internet Explorer`（OS X 及旧版本的所有版本）不支持 Suckerfish 的问题，但写到这里，这仍然无解。幸运的是，这种失败是静默的（菜单根本不出现），因此它们不会干扰你的导航。微软已经开启了 Mac 版浏览开发，所以不要指这种情况会发生变化。好的一面是，感谢 `Safari`、`Firefox` 以及其他流行的操作系统浏览器，你可以预计来自 Mac 版 `Internet Explorer` 的流量会越来越少。
 
-- 注意事项 #3：Safari 的早期版本也不喜欢，基于 KQkq 的 HTML 布局引擎并集成到操作系统中的 Mac OS X Web 浏览器也有自己的 Suckerfish 问题。早于 1.2 版本（2004 年 2 月发布）的 Safari 版本不会无视你的下拉菜单。另一方面，Safari 1.2 *确实会无视* Suckerfish 下拉菜单。如果有，除非……
+- **注意事项 #3**：`Safari` 的早期版本也不喜欢，基于 `KQkq` 的 HTML 布局引擎并集成到操作系统中的 Mac OS X Web 浏览器也有自己的 Suckerfish 问题。早于 1.2 版本（2004 年 2 月发布）的 `Safari` 版本不会无视你的下拉菜单。另一方面，`Safari 1.2` *确实会无视* Suckerfish 下拉菜单。如果有，除非……
 
-- 注意事项 #4：Safari、Suckerfish 和 Flash 完全互不兼容。如果你在嵌入 Suckerfish 下拉菜单之前在文档中嵌入 Flash 内容，那么在早期版本的 Safari 中激活它时，你的菜单将会“闪烁”（写到这里，版本 2.0 是最新发布）。
+- **注意事项 #4**：`Safari`、Suckerfish 和 Flash 完全互不兼容。如果你在嵌入 Suckerfish 下拉菜单之前在文档中嵌入 Flash 内容，那么在早期版本的 `Safari` 中激活它时，你的菜单将会“闪烁”（写到这里，版本 2.0 是最新发布）。
 
 ## 使用技巧
 
 现在浏览器兼容性问题已经解决，在工作中使用 CSS 下拉菜单时，以下是一些真实的实用技巧：
 
-- 技巧 #1：提供备份方案。由于之前详细提到的跨浏览器问题，如果下拉菜单无法运行，你的网站包含备用导航是关重要的。否则，访问者将无法导航你的网站。对于任何类型的导航（无论如何），这都是标准程序。
+- **技巧 #1**：提供备份方案。由于之前详细提到的跨浏览器问题，如果下拉菜单无法运行，你的网站包含备用导航是关重要的。否则，访问者将无法导航你的网站。对于任何类型的导航（无论如何），这都是标准程序。
 
-- 技巧 #2：小心 Internet Explorer、Suckerfish 和 Flash。当 Windows 版 Internet Explorer 遇到 Flash 内容（无论是广告还是由创建）时，浏览器会将内容推到 z-index 层栈的最顶部。这意味着什么？
+- **技巧 #2**：小心 `Internet Explorer`、Suckerfish 和 Flash。当 Windows 版 `Internet Explorer` 遇到 Flash 内容（无论是广告还是由`创建）时，浏览器会将内容推到 `z-index` 层栈的最顶部。这意味着什么？
 
 # 第 4 章
 
-这意味着你的菜单可能会出现在 Flash 内容之下；遮挡了点击任何选项的能力。解决方案是在 Flash 的嵌入对象中包含 `wmode` 标签。（详情可以在 www.macromedia.com/support/flash/ts/documents/flash_top_layer.htm 查看）。
+这意味着你的菜单可能会出现在 Flash 内容之下；遮挡了点击任何选项的能力。解决方案是在 Flash 的嵌入对象中包含`wmode`标签。（详情可以在 `www.macromedia.com/support/flash/ts/documents/flash_top_layer.htm` 查看）。
 
-- 技巧 #3：如果你的文档分层，请包含 z-index 属性。如果你的布局使用了 z-index 属性，你的 Suckerfish 导航也必须有一个，而且要比以往任何时候更高。可以将 z-index 添加到父级无序列表，或者（以 PGA 锦标赛网站为例）你可以将导航封装在一个容器 `div` 中，并将 z-index 应用到该元素。这样做可以将你的导航提升到其他内容之上，这样菜单就能出现在它们可能接触到的任何内容上方。
+- **技巧 #3**：如果你的文档分层，请包含 `z-index` 属性。如果你的布局使用了 `z-index` 属性，你的 Suckerfish 导航也必须有一个，而且要比以往任何时候更高。可以将 `z-index` 添加到父级无序列表，或者（以 PGA 锦标赛网站为例）你可以将导航封装在一个容器`div`中，并将 `z-index` 应用到该元素。这样做可以将你的导航提升到其他内容之上，这样菜单就能出现在它们可能接触到的任何内容上方。
 
 ## 总结
 
 所以，到底为什么推荐使用 Suckerfish？答案很简单：这里提到的问题使得 Suckerfish 是目前最易使用、跨浏览器兼容性最好的下拉菜单解决方案。它在字节上也比其他任何东西轻量得多，而且更容易更新和维护。如果你在流量巨大的网站上实现菜单（例如PGA 锦标赛网站，每小时会有数次访问），一个轻量级的下拉菜单解决方案是最佳的。
 
+# PGA 锦标赛
 
+## 使用 JavaScript `object/embed` 标签
 
+在这种场景下，`object/embed` 元素保持原样，但被移动到了外部 JavaScript 文件中。Flash 内容随后通过一系列`document.write` JavaScript 方法写入文档。验证器（W3C 在 `http://validator.w3.org/` 有一个非常出色的工具）是唯一能够识别 JavaScript 元素的工具——因为验证器不包含 Flash 的`object/embed`代码，因此`object/embed`标签可以顺利通过验证。
 
-
-## PGA 锦赛
-
-## 使用 JavaScript  object/embed 标签
-
-在这种场景下，`object/embed` 元素保持原样，但被移动到了外部 JavaScript 文件中。Flash 内容随后通过一系列 `document.write` JavaScript 方法写入文档。验证器（W3C 在 http://validator.w3.org/ 有一个非常出色的工具）是唯一能够识别 JavaScript 元素的工具——因为验证器不包含 Flash 的 `object/embed` 代码，因此 `object/embed` 标签可以顺利通过验证。
-
-这是 PGA 锦赛网站所使用的变通方法。XHTML 不仅保持了有效性，而且由于使用了 JavaScript，它在需要某些（非 Flash）内容时，提供了一个执行一些轻量浏览器或插件检测的机会。
+这是 PGA 锦标赛网站所使用的变通方法。XHTML 不仅保持了有效性，而且由于使用了 JavaScript，它在需要某些（非 Flash）内容时，提供了一个执行一些轻量浏览器或插件检测的机会。
 
 一旦创建了外部 JavaScript 文件（由于篇幅限制，在此不再赘述——请在您的网络浏览器中加载 `www.pga.com/pgachampionship/2004/js/flash_home.js` 来查看），就可以像下面这样链接到 XHTML 文档中：
 
 ```html
-<script type="javascript" src="http://www.pga.com/pgachampionship/2004/js/flash_home.js"></script>
+<script type="text/javascript" src="http://www.pga.com/pgachampionship/2004/js/flash_home.js"></script>
 ```
 
 这种方法并非没有问题。首先，Web 标准支持者会认为我们使用的 JavaScript 正是一个溜入内部的特洛伊马，是 XHTML 不支持的标记，并绕过了验证器的检查（这正是其目的）。其次，通过依赖 JavaScript 编写我们的内容，我们假设用户已经在浏览器中启用了它（大多数人确实开启了，但为了获得额外的速度和避免广告会禁用它）。最后，每个 Flash 电影都需要自己的 JS 文件（对于电影来说这不是什么问题，但可能会很快失控）。
 
 ## FlashObject
 
-在 2004 年 PGA 锦赛网站发布几个月后，FlashObject 面世，它是可用的最复杂且健壮的嵌入方法。由 Geoff Stearns 创建的这个 JavaScript 软件包是针对上述两种方法局局限性的直接响应，同时提供了可以通过 XHTML 1.0 Transitional 验证的更简单的标记。
+在 2004 年 PGA 锦标赛网站发布几个月后，`FlashObject` 面世，它是可用的最复杂且健壮的嵌入方法。由 `Geoff Stearns` 创建的这个 JavaScript 软件包是针对上述两种方法局限性的直接响应，同时提供了可以通过 XHTML 1.0 Transitional 验证的更简单的标记。
 
-FlashObject 提供了 Flash 开发者所需的所有功能——播放器检测、为未安装插件的用户提供替代内容的能力、通过 `FlashVars` 传递额外的参数和变量、通过 `div` 目标在特定区域嵌入 `swf`，甚至还有一个可以跳过播放器检测并显示 Flash 电影的变量，无论用户是否拥有插件。
+`FlashObject` 提供了 Flash 开发者所需的所有功能——播放器检测、为未安装插件的用户提供替代内容的能力、通过`FlashVars`传递额外的参数和变量、通过`div`目标在特定区域嵌入`swf`，甚至还有一个可以跳过播放器检测并显示 Flash 电影的变量，无论用户是否拥有插件。
 
-FlashObject 还对搜索引擎非常友好，这在 Flash 内容中很少见。用户在他们的文档中创建一个 `div` 并向其中填充普通的 HTML 文本，这些内容可以被搜索引擎索引并显示给没有插件的访问者看。如果访问者有插件，该 `div` 就会被 Flash 电影替换。这使得“有插件的人”和“没有插件的人”都能轻松获取丰富内容，而无需 Web 开发者花费大量工作量。
+`FlashObject` 还对搜索引擎非常友好，这在 Flash 内容中很少见。用户在他们的文档中创建一个`div`并向其中填充普通的 HTML 文本，这些内容可以被搜索引擎索引并显示给没有插件的访问者看。如果访问者有插件，该`div`就会被 Flash 电影替换。这使得“有插件的人”和“没有插件的人”都能轻松获取丰富内容，而无需 Web 开发者花费大量工作量。
 
-关于 FlashObject 的更多信息（可以免费下载和使用），请参阅 http://blog.decept.com/2004/10/14/web-standards-compliant-javascript-flash-detect-and-embed/。
+关于`FlashObject`的更多信息（可以免费下载和使用），请参阅 `http://blog.decept.com/2004/10/14/web-standards-compliant-javascript-flash-detect-and-embed/`。
 
-## 第 4 章
+# 第 4 章
 
 ## 总结
 
@@ -4506,7 +3892,7 @@ FlashObject 还对搜索引擎非常友好，这在 Flash 内容中很少见。�
 
 ![](img/70fa44d3a461f43c7a35cac2b893273d_201_0.png)
 
-## 佛罗里达大学
+# 佛罗里达大学
 
 佛罗里达大学（UF）是世界上学术多样化最高的公立大学之一，学科领域涵盖 16 个学院。佛罗里达大学的历史可以追溯到 1853 年的东佛罗里达备用学校，在国际教育、研究和服务方面拥有悠久的历史，在佛罗里达州所有 67 个县都设有分支机构。
 
@@ -4518,7 +3904,7 @@ FlashObject 还对搜索引擎非常友好，这在 Flash 内容中很少见。�
 
 UF 在 1995 年发布了首页，那是当时网站的典型代表。良好的页面通常是结构性的，且美学设计较少。事实上，1995 年的页面相当实用，其链接指向许多在当前 UF 网站上可以找到的相同信息（见图 5-1）。
 
-## 第 5 章
+# 第 5 章
 
 ![](img/70fa44d3a461f43c7a35cac2b893273d_202_0.png)
 
@@ -4527,7 +3913,9 @@ UF 在 1995 年发布了首页，那是当时网站的典型代表。良好的�
 ## 关于佛罗里达大学
 
 - UF 事实将帮助你熟悉“加鳄鳄国” (Gator Country)
+
 - UF 照片将向你展示我们美丽的校园
+
 - 地图将帮助你在 UF 校园穿行
 
 ## 佛罗里达大学信息
@@ -4535,7 +3923,9 @@ UF 在 1995 年发布了首页，那是当时网站的典型代表。良好的�
 许多 UF 部门提供在线信息。可以通过选择以下项之一来找到它们：
 
 - 字母索引
+
 - 组织视图
+
 - 活跃站点
 
 图 5-1：1995 年发布的佛罗里达大学首页
@@ -4555,35 +3945,38 @@ UF 在 1995 年发布了首页，那是当时网站的典型代表。良好的�
 </ul>
 ```
 
-正如你可能注意到的那样，许多语义化元素被很好地识别了。标题标签被赋予了正确的权重，无序列表被标记为无序列表。明显遗漏的是列表项。创建者没有使用 `li` 元素，而是使用了图像和 `br` 标签来显示和结束列表项。这样做推测是为了显示列表。
+正如你可能注意到的那样，许多语义化元素被很好地识别了。标题标签被赋予了正确的权重，无序列表被标记为无序列表。明显遗漏的是列表项。创建者没有使用`li`元素，而是使用了图像和`br`标签来显示和结束列表项。这样做推测是为了显示列表。
 
 ## 修订
 
 该大学网站随后的修订倾向于使用一种基于角色的导航系统，主要由五个大群体组成（见图 5-2）：
 
 - 准学生
+
 - 在校学生
+
 - 校园访客
+
 - 教职与员工
+
 - 校友、家长及朋友
 
 ![](img/70fa44d3a461f43c7a35cac2b893273d_203_0.png)
 
 图 5-2：1999 年发布的佛罗里达大学首页修订版
 
-
-
-
-
-## 第 5 章
+# 第 5 章
 
 ## 现有网站
 
 随着符合标准的浏览器使用量的增加，佛罗里达大学（UF）决定通过新的设计来解决这些及其他问题（见图 5-3）。为了重新设计网站，UF 需要：
 
 - 对大学的主要受众进行评估，并开发用户画像（在第 1 章中讨论），包括 Web 技术的使用情况和无障碍需求
+
 - 对网站内信息进行结构化处理
+
 - 深度用户测试
+
 - 对同类网站进行评审
 
 ![](img/70fa44d3a461f43c7a35cac2b893273d_204_0.png)
@@ -4596,7 +3989,7 @@ UF 在 1995 年发布了首页，那是当时网站的典型代表。良好的�
 
 在识别大学网站的问题时，财务底线和跳转到购物车的点击率等问题让位给了用户满意度和感知等更广泛的问题。这使得识别网站的目标变得相当困难，即如何让访问者看到网站的用处，并给他们他们的东西。
 
-## 佛罗里达大学
+# 佛罗里达大学
 
 ## 组建
 
@@ -4616,29 +4009,34 @@ UF 需要将这种对访问者的观察与大学网站的当前趋势相结合�
 
 ## 同行评审
 
+
+
 定义网站的一个重要部分是观察校园内其他人员如何定义他们自己。虽然许多大学网站主要使用基于角色的导航系统，但我们通过研究知道，这对 UF 来说并不是理想的。尽管如此，我们可以利用其他大学的网站来确保我们处于学术通用语言（lingua franca de academia）之中。大学用于定义不同内容的短语如果达成共识，可以作为一级导航的基础。
 
-我们从初就明白，UF 网站的最终结构是独特的。然而，通过观察这些宏观趋势，我们提取出了大多数网站通用的短语。UF 调查了一千多个大学 Web 网站以寻找常用术语。诸如“关于（X 大学/学院）”、“学术”、“招生”和“校友”等习惯用语脱颖而出。这些术语与用户研究（即卡片分类法）相匹配，并被采作导航中的许多短语。
+我们从一开始就明白，UF 网站的最终结构是独特的。然而，通过观察这些宏观趋势，我们提取出了大多数网站通用的短语。UF 调查了一千多个大学 Web 网站以寻找常用术语。诸如“关于（X 大学/学院）”、“学术”、“招生”和“校友”等习惯用语脱颖而出。这些术语与用户研究（即卡片分类法）相匹配，并被采作导航中的许多短语。
 
-卡片分类（Card sorting）是在创建信息架构时对网站访问者进行索引的一种低技术（但非常有用）的方法。本质上，要求测试参与者对包含网站内容和任务简短描述的索引卡片进行分组，然后为这些新堆栈命名。关于这种方法的论更多信息，可以参考 Mike Kansky 的书籍《Observing the User Experience: A Practitioner's Guide to User Research》（Morgan Kaufman, 2003）。
+卡片分类（Card sorting）是在创建信息架构时对网站访问者进行索引的一种低技术（但非常有用）的方法。本质上，要求测试参与者对包含网站内容和任务简短描述的索引卡片进行分组，然后为这些新堆栈命名。关于这种方法的更多信息，可以参考 Mike Kansky 的书籍《Observing the User Experience: A Practitioner's Guide to User Research》（Morgan Kaufman, 2003）。
 
-许多网站频繁使用缩写词和其他专有术。虽然这在某些情况下是不可接受的，但我们会避免这种情况，并谨慎地创建它们。同时也注意到，缩写词很少被定义。
+许多网站频繁使用缩写词和其他专有术语。虽然这在某些情况下是不可接受的，但我们会避免这种情况，并谨慎地创建它们。同时也注意到，缩写词很少被定义。
 
 ## 技术规范
 
-旧设计中海量图像导致下载时间增加是 UF 想要解决的问题，但不想回到 1995 年启动的原始网站。此外，大学希望回到（并改进）初始设计中的语义化。如果大范围内，访问者的环境支持转向严格符合标准的设计，这将是 UF 的路径。
+旧设计中海量图像导致下载时间增加是 UF 想要解决的问题，但不想回到 1995 年启动的原始网站。此外，大学希望回到（并改进）初始设计中的语义化。如果在大范围内，访问者的环境支持转向严格符合标准的设计，这将是 UF 的路径。
 
 ## Web 标准
 
 早期，就决定了努力实现一个内容与美学分离的网站。只有在 UF 了解以下情况的情况下，才能实施：
 
-- 有多少访问者会受到基于标准的方法产生的不影响？
+- 有多少访问者会受到基于标准的方法产生的不利影响？
+
 - 这些访问者离开不规范浏览器的速度有多快？
 
 由于以下原因，UF 对符合标准的标记和 XHTML 元素的使用感到放心：
 
 - Netscape 用户稳定转向 Netscape 7 并最终转向 Firefox。
+
 - 一般来说，不规范浏览器的用户也会访问 Web。
+
 - 通过使用样式表，不规范浏览器的用户将不支持 `@import` 规则。
 
 ## 老旧浏览器
@@ -4671,10 +4069,6 @@ UF 非常关注创建一个所有 UF 社区成员都能通过他们选择的任�
 
 悬停显示（rollovers）作为导航工具的一个固有缺点是它隐藏了底层架构。访问者无法看到页面的全部内容。访问者必须猜测结构的每个分支下隐藏着哪些项目，并根据该猜测采取行动，查看该导航部分是否包含所需内容。
 
-
-
-
-
 # 第 5 章
 
 虽然悬停显示（rollovers）允许网站访问者一次查看一个分支的结构，但当网站导航并非完全直观时，一个不需要访问者进行猜测的架构概览会有用得多。对于提供大学概览的六个部分，通过在章节标题附近公开显示其部分内容，会得到更好的呈现效果（见图 5-5）。
@@ -4690,8 +4084,10 @@ UF 非常关注创建一个所有 UF 社区成员都能通过他们选择的任�
 将相似的信息集分组（如使用列表时所示）可以实现以下功能：
 
 - 通过 CSS 进行样式设置
+
 - 相似对象的语义化分组
-- 更容易遍遍内容组，尤其是在屏幕阅读器中
+
+- 更容易遍历内容组，尤其是在屏幕阅读器中
 
 ## 嵌套无序列表
 
@@ -4703,18 +4099,18 @@ UF 非常关注创建一个所有 UF 社区成员都能通过他们选择的任�
 <ul id="priNav">
   <li><a href="/aboutUF/">About UF</a></li>
     <ul>
-      <li><a href="/aboutUF/administration.html">Administration</a></li></li>
-      <li><a href="http://campusmap.ufl.edu/">Maps</a></li></li>
-      <li><a href="http://virtualtour.ufl.edu/">Tours</a></li></li>
-      <li><a href="/facts/">Facts</a></li></li>
+      <li><a href="/aboutUF/administration.html">Administration</a></li>
+      <li><a href="http://campusmap.ufl.edu/">Maps</a></li>
+      <li><a href="http://virtualtour.ufl.edu/">Tours</a></li>
+      <li><a href="/facts/">Facts</a></li>
     </ul>
   </li>
   <li><a href="/academics/">Academics</a></li>
     <ul>
-      <li><a href="/colleges/">Colleges</a></li></li>
-      <li><a href="http://www.reg.ufl.edu/soc/">Courses</a></li></li>
-      <li><a href="http://www.uflib.ufl.edu/">Libraries</a></li></li>
-      <li><a href="http://www.isis.ufl.edu/"><acronym title="Integrated Student Information System">ISIS</acronym></a></li></li>
+      <li><a href="/colleges/">Colleges</a></li>
+      <li><a href="http://www.reg.ufl.edu/soc/">Courses</a></li>
+      <li><a href="http://www.uflib.ufl.edu/">Libraries</a></li>
+      <li><a href="http://www.isis.ufl.edu/"><acronym title="Integrated Student Information System">ISIS</acronym></a></li>
     </ul>
   </li>
 </ul>
@@ -4726,7 +4122,7 @@ UF 非常关注创建一个所有 UF 社区成员都能通过他们选择的任�
 
 ## 语义权重
 
-为了让主标题在页面和整个网站中具有适当的含义，将导航放置在 div 中，并表示为一系列标题后跟一个无序列表（见图 5-7）：
+为了让主标题在页面和整个网站中具有适当的含义，将导航放置在 `div` 中，并表示为一系列标题后跟一个无序列表（见图 5-7）：
 
 ```
 <div id="priNav">
@@ -4790,13 +4186,9 @@ acronym { normal; }
 }
 ```
 
-
-
-
-
 ## 第 5 章
 
-主导航容器已经为章节标题的宽度设置好了边界，因此我们不需要在这里显式地设置它。尽管如此，h2 元素必须与章节分隔符的顶部和左边缘留出一些内边距：
+主导航容器已经为章节标题的宽度设置好了边界，因此我们不需要在这里显式地设置它。尽管如此，`h2` 元素必须与章节分隔符的顶部和左边缘留出一些内边距：
 
 ```
 #priNav h2 {
@@ -4805,7 +4197,7 @@ acronym { normal; }
 }
 ```
 
-`background-image`、`background-repeat` 和 `background-position` 属性可以组合在 `background` 属性中。我们这样做是为了在每个 `h2` 前面放置一个符号（pointer.gif）。符号的左上角放置在我们设置的内边距区域左上角下方 14 像素右侧 9 像素处。`background-color` 和 `background-attachment` 属性也可以组合在 `background` 属性中，但这里不需要它们。
+`background-image`、`background-repeat` 和 `background-position` 属性可以组合在 `background` 属性中。我们这样做是为了在每个 `h2` 前面放置一个符号（`pointer.gif`）。符号的左上角放置在我们设置的内边距区域左上角下方 14 像素右侧 9 像素处。`background-color` 和 `background-attachment` 属性也可以组合在 `background` 属性中，但这里不需要它们。
 
 ```
 #priNav h2 {
@@ -4815,7 +4207,7 @@ acronym { normal; }
 }
 ```
 
-为了确保（像 p 和 y 这样会超出基准线的字母位置）不会影响它们下方的行，我们将定义 `line-height`：
+为了确保（像 `p` 和 `y` 这样会超出基准线的字母位置）不会影响它们下方的行，我们将定义 `line-height`：
 
 ```
 #priNav h2 {
@@ -4828,7 +4220,7 @@ acronym { normal; }
 
 ## 列表样式化
 
-为了给每个标题下方的列表设置样式，我们将首先向 `ul` 添加与 h2 元素设置的内边距相同的垂直补补。（h2 元素默认是块级元素。）
+为了给每个标题下方的列表设置样式，我们将首先向 `ul` 添加与 `h2` 元素设置的内边距相同的垂直补白。（`h2` 元素默认是块级元素。）
 
 ```
 #priNav ul {
@@ -4892,9 +4284,9 @@ acronym { normal; }
 
 ## 工具导航
 
-工具导航简单来说是一组指向常用工具的链接。在 UF，这包括校园地图、活动日历、校园名录、ufl.edu 电子邮件访问等。在过去，一组组工具通常使用竖线（pipes）或图像来分隔项目。这两种方法都没有为用于导航的项增加任何意义，也没有为浏览器提供的功能增加意义。
+工具导航简单来说是一组指向常用工具的链接。在 UF，这包括校园地图、活动日历、校园名录、`ufl.edu` 电子邮件访问等。在过去，一组组工具通常使用竖线（pipes）或图像来分隔项目。这两种方法都没有为用于导航的项增加任何意义，也没有为浏览器提供的功能增加意义。
 
-对这类工具工具应用合理分组的最佳方法是使用（你猜得没错）无序列表。我们是这样创建创建的：
+对这类工具应用合理分组的最佳方法是使用（你猜得没错）无序列表。我们是这样创建的：
 
 ```html
 <ul id="utilNav">
@@ -4905,11 +4297,11 @@ acronym { normal; }
 </ul>
 ```
 
-每个工具都有其自己的列表项，其中包含一个 id 为 `utilNav` 的容器。这是辅助导航的第一部分；让我们来处理第二部分。
+每个工具都有其自己的列表项，其中包含一个 `id` 为 `utilNav` 的容器。这是辅助导航的第一部分；让我们来处理第二部分。
 
 ## 角色导航
 
-在本章较前的内容中，我们讨论了将角色导航作为设计中主要导航手段的转变。尽管如此， UF 并没有完全移除其作为信息分组手段。
+在本章较前的内容中，我们讨论了将角色导航作为设计中主要导航手段的转变。尽管如此，UF 并没有完全移除其作为信息分组手段。
 
 我们将保留角色导航，但通过在 XHTML 中降低页面来降低其重要性，并将其放置在设计右下角的框中：
 
@@ -4920,15 +4312,16 @@ acronym { normal; }
   <li><a href="/friends/Alumni, Donors">校友、捐赠者</a></li>
 </ul>
 ```
+
 （注：原文 HTML 似乎缺失了 `<li>` 标签，在翻译时根据 HTML 逻辑进行了补全以保持格式正确性，但严格遵循不翻译代码原则）
 
 由于辅助导航由两个不同的部分组成，我们将分别定义它们。容纳这两个部分的结构非常相似。让我们先看工具导航。
 
 ## 工具导航
 
-工具导航简单来说是一组指向常用工具的链接。在 UF，这包括校园地图、活动日历、校园名录、ufl.edu 电子邮件访问等。在过去，一组组工具通常使用竖线（pipes）或图像来分隔项目。这两种方法都没有为用于导航的项增加任何意义，也没有为浏览器提供的功能增加意义。
+工具导航简单来说是一组指向常用工具的链接。在 UF，这包括校园地图、活动日历、校园名录、`ufl.edu` 电子邮件访问等。在过去，一组组工具通常使用竖线（pipes）或图像来分隔项目。这两种方法都没有为用于导航的项增加任何意义，也没有为浏览器提供的功能增加意义。
 
-对这类工具工具应用合理分组的最佳方法是使用（你猜得没错）无序列表。我们是这样创建创建的：
+对这类工具应用合理分组的最佳方法是使用（你猜得没错）无序列表。我们是这样创建的：
 
 ```html
 <ul id="utilNav">
@@ -4939,13 +4332,15 @@ acronym { normal; }
 </ul>
 ```
 
-每个工具都有其自己的列表项，其中包含一个 id 为 `utilNav` 的容器。这是辅助导航的第一部分；让我们来处理第二部分。
+每个工具都有其自己的列表项，其中包含一个 `id` 为 `utilNav` 的容器。这是辅助导航的第一部分；让我们来处理第二部分。
 
 ## 角色导航
 
-在本章较前的内容中，我们讨论了将角色导航作为设计中主要导航手段的转变。尽管如此， UF 并没有完全移除其作为信息分组手段。
+在本章较前的内容中，我们讨论了将角色导航作为设计中主要导航手段的转变。尽管如此，UF 并没有完全移除其作为信息分组手段。
 
 我们将保留角色导航，但通过在 XHTML 中降低页面来降低其重要性，并将其放置在设计右下角的框中：
+
+
 
 ```html
 <ul id="roleNav">
@@ -4957,24 +4352,20 @@ acronym { normal; }
 
 由于您提供的文本中存在大量重复段落，根据“不要重复输出原文”的原则，我已对上述逻辑重复的内容进行了去重和完整翻译。
 
-*(注：由于原始输入文本从“The XHTML”开始出现了大量重复，译文已按逻辑合并，确保内容完整且不重复。)*
+> 注：由于原始输入文本从“The XHTML”开始出现了大量重复，译文已按逻辑合并，确保内容完整且不重复。
 
----
-**更正：** 重新审视您的文本，发现您提供的文本中包含了大量重复的 HTML 结构和段落。作为高级文档工程师，我将为您提供一份**去重后**逻辑连贯的最终质量译文：
+# 第 5 章
 
-[content]
-## 第 5 章
+主导航容器已经为章节标题的宽度设置好了边界，因此我们不需要在这里显式地设置它。尽管如此，`h2` 元素必须与章节分隔符的顶部和左边缘留出一些内边距：
 
-主导航容器已经为章节标题的宽度设置好了边界，因此我们不需要在这里显式地设置它。尽管如此，h2 元素必须与章节分隔符的顶部和左边缘留出一些内边距：
-
-```
+```css
 #priNav h2 {
   padding: 7px 0 20px;
   letter-spacing: 1px;
 }
 ```
 
-`background-image`、`background-repeat` 和 `background-position` 属性可以组合在 `background` 属性中。我们这样做是为了在每个 `h2` 前面放置一个符号（pointer.gif）。符号的左上角放置在我们设置的内边距区域左上角下方 14 像素右侧 9 像素处。`background-color` 和 `background-attachment` 属性也可以组合在 `background` 属性中，但这里不需要它们。
+`background-image`、`background-repeat` 和 `background-position` 属性可以组合在 `background` 属性中。我们这样做是为了在每个 `h2` 前面放置一个符号（`pointer.gif`）。符号的左上角放置在我们设置的内边距区域左上角下方 14 像素、右侧 9 像素处。`background-color` 和 `background-attachment` 属性也可以组合在 `background` 属性中，但这里不需要它们。
 
 ```css
 #priNav h2 {
@@ -4984,7 +4375,7 @@ acronym { normal; }
 }
 ```
 
-为了确保（像 p 和 y 这样会超出基准线的字母位置）不会影响它们下方的行，我们将定义 `line-height`：
+为了确保像 `p` 和 `y` 这样会超出基准线的字母位置不会影响它们下方的行，我们将定义 `line-height`：
 
 ```css
 #priNav h2 {
@@ -4997,7 +4388,7 @@ acronym { normal; }
 
 ## 列表样式化
 
-为了给每个标题下方的列表设置样式，我们将首先向 `ul` 添加与 h2 元素设置的内边距相同的垂直补补。（h2 元素默认是块级元素。）
+为了给每个标题下方的列表设置样式，我们将首先向 `ul` 添加与 `h2` 元素设置的内边距相同的垂直补充。`h2` 元素默认是块级元素。
 
 ```css
 #priNav ul {
@@ -5005,7 +4396,7 @@ acronym { normal; }
 }
 ```
 
-紧接着，为了将 `li` 元素放置在 `ul` 块中的下一个位置，我们将覆盖 `li` 元素的默认块级显示状态，将其设为行内显示（inline）：
+紧接着，为了将 `li` 元素放置在 `ul` 块中的下一个位置，我们将覆盖 `li` 元素的默认块级显示状态，将其设为行内显示（`inline`）：
 
 ```css
 #priNav li {
@@ -5019,9 +4410,7 @@ acronym { normal; }
 #priNav ul {
   padding: 0 0 7px 20px;
 }
-```
 
-```css
 #priNav li {
   display: inline;
   line-height: 13px;
@@ -5051,7 +4440,7 @@ acronym { normal; }
 
 辅助导航的作用正如其名所示。我们将讨论的辅助导航由两部分组成：工具导航和角色导航（见图 5-10）。
 
-![](img/70fa44d3a461f43c7a35cac2b893273d_215_0.png)
+![UF 的辅助导航](img/70fa44d3a461f43c7a35cac2b893273d_215_0.png)
 
 图 5-10：UF 的辅助导航
 
@@ -5061,9 +4450,9 @@ acronym { normal; }
 
 ## 工具导航
 
-工具导航简单来说是一组指向常用工具的链接。在 UF，这包括校园地图、活动日历、校园名录、ufl.edu 电子邮件访问等。在过去，一组组工具通常使用竖线（pipes）或图像来分隔项目。这两种方法都没有为用于导航的项增加任何意义，也没有为浏览器提供的功能增加意义。
+工具导航简单来说是一组指向常用工具的链接。在 UF，这包括校园地图、活动日历、校园名录、`ufl.edu` 电子邮件访问等。在过去，一组组工具通常使用竖线（pipes）或图像来分隔项目。这两种方法都没有为用于导航的项增加任何意义，也没有为浏览器提供的功能增加意义。
 
-对这类工具工具应用合理分组的最佳方法是使用（你猜得没错）无序列表。我们是这样创建创建的：
+对这类工具应用合理分组的最佳方法是使用无序列表。我们是这样创建的：
 
 ```html
 <ul id="utilNav">
@@ -5074,11 +4463,11 @@ acronym { normal; }
 </ul>
 ```
 
-每个工具都有其自己的列表项，其中包含一个 id 为 `utilNav` 的容器。这是辅助导航的第一部分；让我们来处理第二部分。
+每个工具都有其自己的列表项，其中包含一个 `id` 为 `utilNav` 的容器。这是辅助导航的第一部分；让我们来处理第二部分。
 
 ## 角色导航
 
-在本章较前的内容中，我们讨论了将角色导航作为设计中主要导航手段的转变。尽管如此， UF 并没有完全移除其作为信息分组手段。
+在本章较前的内容中，我们讨论了将角色导航作为设计中主要导航手段的转变。尽管如此，UF 并没有完全移除其作为信息分组手段。
 
 我们将保留角色导航，但通过在 XHTML 中降低页面来降低其重要性，并将其放置在设计右下角的框中：
 
@@ -5092,14 +4481,13 @@ acronym { normal; }
 
 由于角色导航，我们将继续。
 
-*(注：原文后半存在大量重复，此处已按逻辑去重翻译)*
-
+## 工具导航的样式化
 
 ```css
 #utilNav li a {
-width: 99px;
-height: 21px;
-display: block;
+  width: 99px;
+  height: 21px;
+  display: block;
 }
 ```
 
@@ -5107,10 +4495,10 @@ display: block;
 
 ```css
 #utilNav li a {
-text-indent: 3px;
-width: 99px;
-height: 21px;
-display: block;
+  text-indent: 3px;
+  width: 99px;
+  height: 21px;
+  display: block;
 }
 ```
 
@@ -5120,16 +4508,110 @@ display: block;
 
 ```css
 #utilNav li a {
-text-indent: 3px;
-width: 99px;
-height: 21px;
-color: #fff;
-display: block;
-background: #94a2d9 url(images/chamfer.gif) no-repeat right bottom;
+  text-indent: 3px;
+  width: 99px;
+  height: 21px;
+  color: #fff;
+  display: block;
+  background: #94a2d9 url(images/chamfer.gif) no-repeat right bottom;
 }
 ```
 
 为链接添加一点反馈就像设置悬停状态一样简单。在这里，我们将通过改变背景颜色来使颜色发生微变化，但保持倒角图片不变。
+
+```css
+#utilNav li:hover {
+  background-color: #566cc3;
+}
+```
+
+## 棘手的盒模型
+
+以这种方式使用项目会在 Mac 和 Windows 版本的 Internet Explorer 5 中导致问题。我们能够通过缩进文本链接而不是使用内边距来规避大部分问题。这修复了除 IE5 之外所有浏览器的渲染。
+
+当在列表项内部插入文本时，IE5 会在框外实际上创建一个等同于缩进大小的外边距（`margin`），这导致框的有效尺寸变得更宽，并破坏了容器内部的正确换行。
+
+这些浏览器中的一个特性可以像产生问题一样容易地解决问题。要欺骗 Mac 和 Windows 版本的 IE5 消除它产生的额外宽度，只需将所有内容向左浮动即可：
+
+```css
+#utilNav li {
+  width: 99px;
+  line-height: 21px;
+  margin: 0 0 1px 1px;
+  display: inline;
+  float: left;
+}
+```
+
+顺便说一下，在我们的设计中，完全不需要对 `#utilNav` 元素进行样式设置。为了设置下一个导航项，我们将利用 `ul` 元素。
+
+## 角色的样式化
+
+基于角色的导航与我们刚刚样式化的工具导航有一些相似之处，也有许多不同之处。在这里，我们想要实现文本在容器框内部的效果，而不是为每个列表项创建独立的按钮。在这种情况下，我们将在无序列表 `ul` 元素内部处理一些操作。
+
+我们在工具导航中使用的、用于在 Mac 和 Windows 版本的 IE5 中获取缩进引起的额外宽度的方法，在这里也产生了影响。由于工具列表项是向左浮动的，该浏览器渲染当前元素的位置点从未移动过。我们将通过清除任何向左浮动的元素来绕过这个问题：
+
+```css
+#roleNav {
+  clear: left;
+}
+```
+
+该元素应该伸缩以适应容器的宽度，因此不需要设置宽度。高度也会被自然处理。为了让基于角色的导航左侧与我们之前创建的单个列表框的左侧对齐，我们将添加一个 1 像素的外边距：
+
+```css
+#roleNav {
+  clear: left;
+  margin-left: 1px;
+}
+```
+
+我们用于工具列表项边缘倒角处理的 `#chamfer.gif` 图片可以复用在这里，用于对角色列表边缘进行倒角处理：
+
+```css
+#roleNav {
+  background: #dbe0f2 url(images/chamfer.gif) no-repeat right bottom;
+  clear: left;
+  margin-left: 1px;
+}
+```
+
+列表框需要一些上下伸缩的空间，所以让我们添加 6 像素：
+
+```css
+#roleNav {
+  padding: 6px;
+  background: #dbe0f2 url(images/chamfer.gif) no-repeat right bottom;
+}
+```
+
+我们想在列表项之间创建一些间距，并将每个项目垂直居中。为了这样做，我们将设置 `line-height`：
+
+```css
+#roleNav li {
+  line-height: 22px;
+}
+```
+
+为了移除 IE5 在每个列表项下方创建的额外间距，我们将 `display` 设置为 `inline`，来欺骗它吞掉这些空间：
+
+```css
+#roleNav li {
+  line-height: 22px;
+  display: inline;
+}
+```
+
+就像工具列表内部的链接一样，我们也应该设置列表项内部链接的高度。`display` 属性也应该覆盖为 `block`。就像列表项及其所在的无序列表一样，这将伸缩到容器的宽度：
+
+```css
+#roleNav li a {
+  height: 22px;
+  display: block;
+}
+```
+
+
 
 ```css
 #utilNav li:hover { background-color: #566cc3; }
@@ -5137,21 +4619,21 @@ background: #94a2d9 url(images/chamfer.gif) no-repeat right bottom;
 
 ## 棘手的盒模型
 
-以这种方式使用项目会在 Mac 和 Windows 版本的 Internet Explorer 5 中导致问题。我们能够通过缩进文本链接而不是使用内边距来规避了大部分问题。这修复了除 IE5 之外所有浏览器的渲染。当在列表项内部插入文本时，IE5 会在框外实际上创建一个等同于缩进大小的外边距（margin），这导致框的有效尺寸变得更宽，并破坏了容器内部的正确换行。
+以这种方式使用项目会在 Mac 和 Windows 版本的 Internet Explorer 5 中导致问题。我们能够通过缩进文本链接而不是使用内边距来规避了大部分问题。这修复了除 IE5 之外所有浏览器的渲染。当在列表项内部插入文本时，IE5 会在框外实际上创建一个等同于缩进大小的外边距（`margin`），这导致框的有效尺寸变得更宽，并破坏了容器内部的正确换行。
 
 这些浏览器中的一个特性可以像产生问题一样容易地解决问题。要欺骗 Mac 和 Windows 版本的 IE5 消除它产生的额外宽度，只需将所有内容向左浮动即可：
 
 ```css
 #utilNav li {
-width: 99px;
-line-height: 21px;
-margin: 0 0 1px 1px;
-display: inline;
-float: left;
+  width: 99px;
+  line-height: 21px;
+  margin: 0 0 1px 1px;
+  display: inline;
+  float: left;
 }
 ```
 
-# 第 5 章
+## 第 5 章
 
 ```css
 #utilNav li {
@@ -5167,7 +4649,7 @@ float: left;
 #utilNav li:hover { background-color: #566cc3; }
 ```
 
-顺便说一下，在我们的设计中，完全不需要对 #utilNav 元素进行样式设置。为了设置下一个导航项，我们将利用 `ul` 元素。
+顺便说一下，在我们的设计中，完全不需要对 `#utilNav` 元素进行样式设置。为了设置下一个导航项，我们将利用 `ul` 元素。
 
 ## 角色的样式化
 
@@ -5190,7 +4672,7 @@ float: left;
 }
 ```
 
-我们用于工具列表项边缘倒处理的 #chamfer.gif 图片可以复用在这里，用于对角色列表边缘进行倒角处理：
+我们用于工具列表项边缘倒处理的 `#chamfer.gif` 图片可以复用在在这里，用于对角色列表边缘进行倒角处理：
 
 ```css
 #roleNav {
@@ -5209,17 +4691,11 @@ float: left;
 }
 ```
 
-```css
-clear: left;
-margin-left: 1px;
-}
-```
-
 我们想在列表项之间创建一些间距，并将每个项目垂直居中。为了这样做，我们将设置 `line-height`：
 
 ```css
 #roleNav li {
-line-height: 22px;
+  line-height: 22px;
 }
 ```
 
@@ -5227,17 +4703,8 @@ line-height: 22px;
 
 ```css
 #roleNav li {
-line-height: 22px;
-display: inline;
-}
-```
-
-就像工具列表内部的链接一样，我们也应该设置列表项内部链接的高度。`display` 属性也应该覆盖为 `block`。就像列表项及其所在的无序列表一样，这将伸缩到容器的宽度。
-
-```css
-#roleNav li a {
-height: 22px;
-display: block;
+  line-height: 22px;
+  display: inline;
 }
 ```
 
@@ -5245,278 +4712,10 @@ display: block;
 
 ```css
 #roleNav li a {
-height: 22px;
-display: block;
-}
-```
-
-为了让基于角色的导航左侧与我们之前创建的单个列表框的左侧对齐，我们将添加一个 1 像素的外边距：
-
-```css
-#roleNav {
-  clear: left;
-  margin-left: 1px;
-}
-```
-
-我们用于工具列表项边缘倒处理的 #chamfer.gif 图片可以复用在在这里，用于对角色列表边缘进行倒角处理：
-
-```css
-#roleNav {
-  background: #dbe0f2 url(images/chamfer.gif) no-repeat right bottom;
-  clear: left;
-  margin-left: 1px;
-}
-```
-
-列表框需要一些上下伸缩的空间，所以让我们添加 6 像素：
-
-```css
-#roleNav {
-  padding: 6px;
-  background: #dbe0f2 url(images/chamfer.gif) no-repeat right bottom;
-}
-```
-
-```css
-clear: left;
-margin-left: 1px;
-}
-```
-
-我们想在列表项之间创建一些间距，并将每个项目垂直居中。为了这样做，我们将设置 `line-height`：
-
-```css
-#roleNav li {
-line-height: 22px;
-}
-```
-
-为了移除 IE5 在每个列表项下方创建的额外间距，我们将将 `display` 设置为 `inline` 来欺骗它吞掉这些空间：
-
-```css
-#roleNav li {
-line-height: 22px;
-display: inline;
-}
-```
-
-工具列表内部的链接一样，我们也应该设置列表项内部链接的高度。`display` 属性也应该覆盖为 `block`。就像列表项及其所在的无序列表一样，这将伸缩到容器的宽度。
-
-```css
-#roleNav li a {
-height: 22px;
-display: block;
-}
-```
-
-为了让基于角色的导航左侧与我们之前创建的单个列表框的左侧对齐，我们将添加一个 1 像素的外边距：
-
-```css
-#roleNav {
-  clear: left;
-  margin-left: 1px;
-}
-```
-
-我们用于工具列表项边缘倒处理的 #chamfer.gif 图片可以复用在在这里，用于对角色列表边缘进行倒角处理：
-
-```css
-#roleNav {
-  background: #dbe0f2 url(images/chamfer.gif) no-repeat right bottom;
-  clear: left;
-  margin-left: 1px;
-}
-```
-
-列表框需要一些上下伸缩的空间，所以让我们添加 6 像素：
-
-```css
-#roleNav {
-  padding: 6px;
-  background: #dbe0f2 url(images/chamfer.gif) no-repeat right bottom;
-}
-```
-
-```css
-clear: left;
-margin-left: 1px;
-}
-```
-
-我们想在列表项之间创建一些间距，并将每个项目垂直居中。为了这样做，我们将设置 `line-height`：
-
-```css
-#roleNav li {
-line-height: 22px;
-}
-```
-
-为了移除 IE5 在每个列表项下方创建的额外间距，我们将将 `display` 设置为 `inline` 来欺骗它吞掉这些空间：
-
-```css
-#roleNav li {
-line-height: 22px;
-display: inline;
-}
-```
-
-工具列表内部的链接一样，我们也应该设置列表项内部链接的高度。`display` 属性也应该覆盖为 `block`。就像列表项及其所在的无序列表一样，这将伸缩到容器的宽度。
-
-```css
-#roleNav li a {
-height: 22px;
-display: block;
-}
-```
-
-（注：由于提供的文本中存在大量重复段落，根据注意事项“不要重复输出原文”的原则，上述译文已按逻辑流进行了合并与去重处理，确保翻译的连贯性。）
-
-**修正：由于原始文本存在大量重复，以下是逻辑整理后的完整翻译：**
-
-[content]
-```css
-#utilNav li a {
-width: 99px;
-height: 21px;
-display: block;
-}
-```
-
-我们想给文本内部添加一些左侧内边距，但又想避免盒模型解释差异带来的烦恼。我们可以通过缩进文本而不是使用内边距来实现这一点：
-
-```css
-#utilNav li a {
-text-indent: 3px;
-width: 99px;
-height: 21px;
-display: block;
-}
-```
-
-第 2 章将给出盒模型的介绍。
-
-为了让链接更加亮丽，我们将添加一些颜色和一张图片。将图片放置在每个链接右下角的倒角处，并旋转 45 度：
-
-```css
-#utilNav li a {
-text-indent: 3px;
-width: 99px;
-height: 21px;
-color: #fff;
-display: block;
-background: #94a2d9 url(images/chamfer.gif) no-repeat right bottom;
-}
-```
-
-为链接添加一点反馈就像设置悬停状态一样简单。在这里，我们将通过改变背景颜色来使颜色发生微变化，但保持倒角图片不变。
-
-```css
-#utilNav li:hover { background-color: #566cc3; }
-```
-
-## 棘手的盒模型
-
-以这种方式使用项目会在 Mac 和 Windows 版本的 Internet Explorer 5 中导致问题。我们能够通过缩进文本链接而不是使用内边距来规避了大部分问题。这修复了除 IE5 之外所有浏览器的渲染。当在列表项内部插入文本时，IE5 会在框外实际上创建一个等同于缩进大小的外边距（margin），这导致框的有效尺寸变得更宽，并破坏了容器内部的正确换行。
-
-这些浏览器中的一个特性可以像产生问题一样容易地解决问题。要欺骗 Mac 和 Windows 版本的 IE5 消除它产生的额外宽度，只需将所有内容向左浮动即可：
-
-```css
-#utilNav li {
-width: 99px;
-line-height: 21px;
-margin: 0 0 1px 1px;
-display: inline;
-float: left;
-}
-```
-
-# 第 5 章
-
-```css
-#utilNav li {
-  text-indent: 3px;
-  width: 99px;
-  height: 21px;
-  color: #fff;
+  height: 22px;
   display: block;
-  background: #94a2d9 url(images/chamfer.gif) no-repeat right bottom;
-  float: left;
-}
-
-#utilNav li:hover { background-color: #566cc3; }
-```
-
-顺便说一下，在我们的设计中，完全不需要对 #utilNav 元素进行样式设置。为了设置下一个导航项，我们将利用 `ul` 元素。
-
-## 角色的样式化
-
-基于角色的导航与我们刚刚样式化的工具导航有一些相似之处，也有许多不同之处。在这里，我们想要实现文本在容器框内部的效果，而不是为每个列表项创建独立的按钮。在这种情况下，我们将在无序列表 `ul` 元素内部处理一些操作。
-
-我们在工具导航中使用的用于在 Mac 和 Windows 版本的 IE5 中获取缩进引起的额外宽度的方法，在这里也产生了影响。由于工具列表项是向左浮动的，该浏览器渲染当前元素的位置点从未移动过。我们将通过清除任何向左浮动的元素来绕过这个问题：
-
-```css
-#roleNav {
-  clear: left;
 }
 ```
-
-该元素应该伸缩以适应容器的宽度，因此不需要设置宽度。高度也会被自然处理。为了让基于角色的导航左侧与我们之前创建的单个列表框的左侧对齐，我们将添加一个 1 像素的外边距：
-
-```css
-#roleNav {
-  clear: left;
-  margin-left: 1px;
-}
-```
-
-我们用于工具列表项边缘倒处理的 #chamfer.gif 图片可以复用在在这里，用于对角色列表边缘进行倒角处理：
-
-```css
-#roleNav {
-  background: #dbe0f2 url(images/chamfer.gif) no-repeat right bottom;
-  clear: left;
-  margin-left: 1px;
-}
-```
-
-列表框需要一些上下伸缩的空间，所以让我们添加 6 像素：
-
-```css
-#roleNav {
-  padding: 6px;
-  background: #dbe0f2 url(images/chamfer.gif) no-repeat right bottom;
-}
-```
-
-我们想在列表项之间创建一些间距，并将每个项目垂直居中。为了这样做，我们将设置 `line-height`：
-
-```css
-#roleNav li {
-line-height: 22px;
-}
-```
-
-为了移除 IE5 在每个列表项下方创建的额外间距，我们将将 `display` 设置为 `inline` 来欺骗它吞掉这些空间：
-
-```css
-#roleNav li {
-line-height: 22px;
-display: inline;
-}
-```
-
-工具列表内部的链接一样，我们也应该设置列表项内部链接的高度。`display` 属性也应该覆盖为 `block`。就像列表项及其所在的无序列表一样，这将伸缩到容器的宽度。
-
-```css
-#roleNav li a {
-height: 22px;
-display: block;
-}
-```
-
-
-
 
 ## 佛罗里达大学
 
@@ -5534,9 +4733,9 @@ Flash Satay 建议使用带有 `embed` 属性的 `object` 元素，以便以标�
 
 为了正确处理 `classid` 属性，我们必须将其传递给使用 Internet Explorer for Microsoft 的访问者。我们可以通过其向服务器请求 Web 页面时使用的（大部分情况下）识别浏览器。服务器通常会记录有关请求的一些基本信息：文件名、时间、请求是否成功、文件大小以及对我们这里的需求最重要的：浏览器类型。
 
-我们使用的方法假设网站托管在 Apache Web 服务器上。大约三分之二的 网站（包括佛罗里达大学网站）是通过开源 Web 服务器软件 Apache 托管的。此方法可以针对托管在 Microsoft IIS 或其他 Web 服务器上的网站进行修改。
+我们使用的方法假设网站托管在 Apache Web 服务器上。大约三分之二的网站（包括佛罗里达大学网站）是通过开源 Web 服务器软件 Apache 托管的。此方法可以针对托管在 Microsoft IIS 或其他 Web 服务器上的网站进行修改。
 
-首先，在网站的根目录或使用 Flash 的文档目录中创建或找到 .htaccess 文件。`.htaccess` 文件是一个简单的文本文件，包含配置服务器如何处理文件和目录的指令。如果尚未执行，告诉服务器解析所使用的文档类型。
+首先，在网站的根目录或使用 Flash 的文档目录中创建或找到 `.htaccess` 文件。`.htaccess` 文件是一个简单的文本文件，包含配置服务器如何处理文件和目录的指令。如果尚未执行，告诉服务器解析所使用的文档类型。
 
 ## 第 5 章
 
@@ -5560,8 +4759,8 @@ BrowserMatch MSIE msie
 
 ```
 <object type="application/x-shockwave-flash" data="loader.swf" width="516" height="194" classid="clsid:D27CB6E6-AE6D-11cf-96B8-444533540000">
-<param name="movie" value="loader.swf" />
-<img src="images/tower.jpg" alt="Century Tower" width="516" height="194" />
+  <param name="movie" value="loader.swf" />
+  <img src="images/tower.jpg" alt="Century Tower" width="516" height="194" />
 </object>
 ```
 
@@ -5569,11 +4768,11 @@ BrowserMatch MSIE msie
 
 ```
 <object type="application/x-shockwave-flash" data="loader.swf" height="194">
-<!--[if IE(msie)]-->
-classid="clsid:D27CB6E6-AE6D-11cf-96B8-444533540000"
-<!--[endif]-->
-<param name="movie" value="loader.swf" />
-<img src="images/tower.jpg" alt="Century Tower" width="516" height="194" />
+  <!--[if IE(msie)]-->
+  classid="clsid:D27CB6E6-AE6D-11cf-96B8-444533540000"
+  <!--[endif]-->
+  <param name="movie" value="loader.swf" />
+  <img src="images/tower.jpg" alt="Century Tower" width="516" height="194" />
 </object>
 ```
 
@@ -5601,11 +4800,7 @@ classid="clsid:D27CB6E6-AE6D-11cf-96B8-444533540000"
 
 > “我访问首页，点击 X，向下滚动并点击 Y。”
 
-
-
-
-
-# 第6 章
+## 第6 章
 
 在推出新设计的前一个月，97% 的访客使用的是某种形式的合规浏览器（IE 5+, Netscape 6+, Mozilla 6+, Safari, Chimera 和 Conqueror），其余 3% 则无法检测或不符合规范。
 
@@ -5617,17 +4812,17 @@ classid="clsid:D27CB6E6-AE6D-11cf-96B8-444533540000"
 
 迈克·戴维森（Mike Davidson）是位于西雅图的沃尔迪士尼互联网集团的媒体产品开发高级副总监兼经理。2003年，作为 ESPN 的副艺术总，他是 ESPN.com 重新设计的背后的推动力量。
 
-- Q：首先，你对目前的结果满意吗？
+- **Q：首先，你对目前的结果满意吗？**
 
-- A：非常满意。运营像 ESPN 这样庞大的网站，并不是一个重新设计然后直接推向市场解决的问题。我想，世界上大多数网站每天需要的“重新设计”很少，因为只需要更改文本和其他简单数据。但对于 ESPN 来说，整个板块每周都会变化。格式一年改变几次。新的赞助商可能会完全改变页面网格的布局。这类情况层列不完。
+- **A：** 非常满意。运营像 ESPN 这样庞大的网站，并不是一个重新设计然后直接推向市场解决的问题。我想，世界上大多数网站每天需要的“重新设计”很少，因为只需要更改文本和其他简单数据。但对于 ESPN 来说，整个板块每周都会变化。格式一年改变几次。新的赞助商可能会完全改变页面网格的布局。这类情况层列不完。
 
 我们工作的环境必须迅速行动以适应行业变化，而“重新设计”只是每隔三年进行的一次大全新的开始。我们根据重新设计在推使我们超越竞争对手和我们以往水平的程度，来衡量对某次重新设计的满意度。2003 年的重新设计现在已经过去两年了，它将我们推入了 Web 标准意识的世界。
 
 每一个思考过这个网站的人，现在都会以这些术语进行思考。不再是“让它在 IE 中运行”，而是“确保它的代码正确”。有超过 100 人为网站做出贡献，我们让一切变得完美，但随着过去几年，我们每天都做得更完善、更正确。
 
-- Q：团队对设计的哪个部分最满意？网站访客又对哪个部分最满意？
+- **Q：团队对设计的哪个部分最满意？网站访客又对哪个部分最满意？**
 
-- A：对我们来说，最重要的成就仅仅是改变了我们使用代码的方式。现在不再接受一个新手进来，为了速度随手写一段代码就扔到网站上。我们现在对“首先做到正确，其次做到完善”感到非常自豪。现在网站的需求将首先由业务目标驱动（包括及时性），只要技术团队可以在不牺牲及时性的情况下产出出色的工作，那么我们已经领先于形势了。
+- **A：** 对我们来说，最重要的成就仅仅是改变了我们使用代码的方式。现在不再接受一个新手进来，为了速度随手写一段代码就扔到网站上。我们现在对“首先做到正确，其次做到完善”感到非常自豪。现在网站的需求将首先由业务目标驱动（包括及时性），只要技术团队可以在不牺牲及时性的情况下产出出色的工作，那么我们已经领先于形势了。
 
 对于访客来说，在我看来，我们提供的布局原创性在行业内是顶尖的，根据某个新闻事件的大小，用户很欣赏我们为他们提供的基于重要性的设计。我们为常规赛 NBA 比赛报告向用户显示 18 字的纯黑标题，而当红袜队赢得百万年来首次世界大赛冠军时，也采用同样的处理方式？
 
@@ -5635,25 +4830,25 @@ classid="clsid:D27CB6E6-AE6D-11cf-96B8-444533540000"
 
 基于重要性的设计在报纸中几个世纪以来显而易见，通过 CSS-P 的魔法，它也能应用于 ESPN.com。
 
-- Q：在采用基于标准的设计想法获得批准之前，你脑海中有了这个想法多久了？
+- **Q：在采用基于标准的设计想法获得批准之前，你脑海中有了这个想法多久了？**
 
-- A：大约一年时间。我们倾向于提前一年规划重新设计，所以我们在 2002 年年中开始考虑这个的。一个主要的复杂因素是 ESPN.com 一直在西雅图运营（我一辈子都住在那里），但决定是在 2003 年年中将其迁至康涅狄格州布里斯托尔的 ESPN 总部。因此我们在西雅图开始重新设计，然后跨越整个国家在布里斯托尔完成。这涉及到人员、代码、生产设施以及几乎所有其他东西。我是个西部人，所以我选择留在西雅图继续为 ESPN 的母公司迪士尼工作，但部分员工最终搬迁了。我们仍然保留了许多西雅图办公室的 ESPN 相关项目，但这已不是 100% 的精力投入。
+- **A：** 大约一年时间。我们倾向于提前一年规划重新设计，所以我们在 2002 年年中开始考虑这个的。一个主要的复杂因素是 ESPN.com 一直在西雅图运营（我一辈子都住在那里），但决定是在 2003 年年中将其迁至康涅狄格州布里斯托尔的 ESPN 总部。因此我们在西雅图开始重新设计，然后跨越整个国家在布里斯托尔完成。这涉及到人员、代码、生产设施以及几乎所有其他东西。我是个西部人，所以我选择留在西雅图继续为 ESPN 的母公司迪士尼工作，但部分员工最终搬迁了。我们仍然保留了许多西雅图办公室的 ESPN 相关项目，但这已不是 100% 的精力投入。
 
-- Q：你需要进行多少内部营销来说服你的团队，以及你的老板接受你的计划？
+- **Q：你需要进行多少内部营销来说服你的团队，以及你的老板接受你的计划？**
 
-- A：团队内部并没有认为这是正确事的营销，诚实说，也不需要说服高层。技术团队的工资是为了从技术角度判断什么是最好的。只要转向基于标准的设计不代表任何额外的成本或功能牺牲，那么 ESPN 就没有理由不支持它。
+- **A：** 团队内部并没有认为这是正确事的营销，诚实说，也不需要说服高层。技术团队的工资是为了从技术角度判断什么是最好的。只要转向基于标准的设计不代表任何额外的成本或功能牺牲，那么 ESPN 就没有理由不支持它。
 
 事实上，这实际上减少了我们的成本，并让我们在网站上做得更多，所以这并不是一个很难辩的论点。高管可能不在乎 `div` 或间隔符是什么，但他们确实在意带宽账单和库存。
 
-- Q：你是否尝试过启动 ESPN.com 的子站点？还是直接跳入深水区并切换了整个前端首页？无论答案如何，你能解释一下你的推理逻辑吗？
+- **Q：你是否尝试过启动 ESPN.com 的子站点？还是直接跳入深水区并切换了整个前端首页？无论答案如何，你能解释一下你的推理逻辑吗？**
 
-- A：ESPN.com 太过庞大了，你永远无法一次性重新设计整个网站，然后在准备好后拨一下开关。每个人都想这样做，但考虑到已实现的几十个模板，这是不可能的。
+- **A：** ESPN.com 太过庞大了，你永远无法一次性重新设计整个网站，然后在准备好后拨一下开关。每个人都想这样做，但考虑到已实现的几十个模板，这是不可能的。
 
 我们通常从首页开始，移动到板块页面，然后是故事页面。我想这个顺序并不重要，但所有页面的速度最终可以变成重要的因素。我们希望通过一个示例来扩展，所有其他页面都可以被塑造成。
 
-- Q：回首过去，你会有过任何不同的做法吗？
+- **Q：回首过去，你会有过任何不同的做法吗？**
 
-- A：嗯，显然我对设计/生产过程的每一个细节都没有否决权，并不是所有的决定都是我的，但我想我们处理好了大部分事情。我唯一感到失望的是，随着时间推移情况会变得棘手。每当有大型重新设计（不仅仅是我们的），代码质量就会逐渐下降。这有很多原因：
+- **A：** 嗯，显然我对设计/生产过程的每一个细节都没有否决权，并不是所有的决定都是我的，但我想我们处理好了大部分事情。我唯一感到失望的是，随着时间推移情况会变得棘手。每当有大型重新设计（不仅仅是我们的），代码质量就会逐渐下降。这有很多原因：
 
 - 新人在网站上工作。
 - 业务需求的变化需要修改布局。
@@ -5664,15 +4859,11 @@ classid="clsid:D27CB6E6-AE6D-11cf-96B8-444533540000"
 
 这是运营像 ESPN 这样收入驱动的媒体网站不可避免的方面，我们只是对每三年能有一次的机会表示感谢。在此期间，我们将继续向前努力。
 
+## ESPNN.com：强大的布局变更
 
+## 苏伊·莫特
 
-
-
-# ESPNN.com：强大的布局变更
-
-# 苏伊·莫特
-
-# JONNO 见到了 JONAH
+## JONNO 见到了 JONAH
 
 为什么包婚姻如此具有肯·贝茨的风格 S55
 
@@ -5680,13 +4871,13 @@ Lomu 将在橄榄球向英国世界杯英雄致敬中回归 S4
 
 2006年1月25日 sport-daily.com
 
-# 体育周二
+## 体育周二
 
 《每日电报》（The Daily Telegraph）
 
-# 贝拉米欺骗纽卡斯尔，谢泼德震惊
+## 贝拉米欺骗纽卡斯尔，谢泼德震惊
 
-# 足球
+## 足球
 
 纽卡斯尔联星克莱格·贝拉米（Craig Bellamy）出轨妻子的消息在足坛引起了震动。这位21岁的前锋仅结婚六个月，被目击在伦敦与一名年轻女子亲吻。此时，他正与俱乐部处于合同纠纷中。这段个人闹剧为这位近期状态低迷的球员增添了处境的困难性。
 
@@ -5702,13 +4893,13 @@ Lomu 将在橄榄球向英国世界杯英雄致敬中回归 S4
 
 纽卡斯尔教练鲍比·罗布森为他的球员辩护，他告诉记者：“我不在乎他在私生活中做什么。他是个年轻人，会犯错，但他是一名伟大的球员，我们需要他专注于球场。”
 
-# 板板球：阿什斯赛
+## 板板球：阿什斯赛
 
-# 林托夫成为范恩的王牌
+## 林托夫成为范恩的王牌
 
-# 橄榄球
+## 橄榄球
 
-# 约翰逊结束职业生涯
+## 约翰逊结束职业生涯
 
 作者：马克·怀特（Mark White）
 
@@ -5726,6 +4917,8 @@ Lomu 将在橄榄球向英国世界杯英雄致敬中回归 S4
 
 这一决定是在选拔人员与教练范恩进行一系列会议后做出的。他们认为，林托夫的经验对球队至关重要，他改变比赛的能力是一项宝贵的资产。
 
+
+
 范恩说：“我们非常高兴能让安德鲁入选。他是一名世界级球员，我们相信他能为球队做很多。”
 
 这一选拔被视为寻求稳定阵容的英格兰队来说的一大宽慰。
@@ -5737,12 +4930,14 @@ Lomu 将在橄榄球向英国世界杯英雄致敬中回归 S4
 # 动态力学 (Modus Dynamique)
 
 | 3年 | 0% 年利率 |
+
 | :--- | :--- |
+
 | 最低存款 20% |
 
 新安全区。保护你。保护你的钱包。
 
-更多详情请拨打 0800 123 456 或访问 www.offers-retail.com
+更多详情请拨打 0800 123 456 或访问 `www.offers-retail.com`
 
 新安全区。保护你。保护你的钱包。适用相关条款。
 
@@ -5755,29 +4950,39 @@ Lomu 将在橄榄球向英国世界杯英雄致敬中回归 S4
 # 第6章
 
 重建工作
+
 罗布森为特威汉姆的关键时刻权衡方案
+
 56
 
 爱国者日
+
 新英格兰维持对超级碗的统治
+
 58
 
 # 体育周二
+
 《每日电报》（The Daily Telegraph）
 
 # 艾伦·麦阿瑟世界环球纪录
 
 # 家是水手
+
 从大海归来
 
 71天
+
 14小时
+
 18分钟
+
 33秒
 
 罗伯特·路易·斯蒂文森
 
 作者：罗伯特·贝克
+
 1967年，艾伦·麦阿瑟（Ellen MacArthur）出发成为首位独自帆船环世界的女性。她的旅程漫长而孤独，考验着她的生理和心理极限。她航行了地球上最危险的水域，包括南洋，她在那里面对了严猛的风暴和巨浪。她的壮举是人类精神力量和决心力量的证明。她征服了七海，作为英雄回家。
 
 旅程始于2002年8月，当时麦阿瑟乘坐她的“金球环号”（Golden Globe）从普利茅斯出发。在962天里，她独自航行，面对公海的挑战。她必须在风暴中航行、维修设备并管理自己的物资。但她从未动摇过决心。当她最终在2005年回到普利茅斯时，她完成了使命并激励了世界各地的人。
@@ -5791,11 +4996,14 @@ Lomu 将在橄榄球向英国世界杯英雄致敬中回归 S4
 麦阿瑟的环球航行仍然帆船史上的一个里程碑。她展示了人类在设定目标时可以取得什么。她的故事继续激励着探索世界及之外的人们。
 
 玫瑰。
+
 花艺师手工捆扎。
-通过 Tesco.com 送货。
+
+通过 `Tesco.com` 送货。
+
 更低价。
 
-拨打 08455 71577 或访问 www.tesco.com | 每个人都爱！
+拨打 08455 71577 或访问 `www.tesco.com` | 每个人都爱！
 
 图 6-2：战争模式（离岸挑战）下的网页示例
 
@@ -5811,15 +5019,11 @@ Lomu 将在橄榄球向英国世界杯英雄致敬中回归 S4
 
 # 战术
 
-“战术模式发生在体育界发生重大新闻事件时。”范森说，“在这种情况下，我们预先知道会发生什么（例如，球员一郎打破单赛季最多安打记录），因此照片编辑部门会花一点时间在 Photoshop 中制作组合。一旦事件发生，以战术模式发布网站，通过良好放置的叠加（dives），我们用手工制作占据整个头条故事区域。通常，战术模式中的所有文本都是在 Photoshop 中设置的。”
+“战术模式发生在体育界发生重大新闻事件时。”范森说，“在这种情况下，我们预先知道会发生什么（例如，球员一郎打破单赛季最多安打记录），因此照片编辑部门会花一点时间在 Photoshop 中制作组合。一旦事件发生，以战术模式发布网站，通过良好放置的叠加（`dives`），我们用手工制作占据整个头条故事区域。通常，战术模式中的所有文本都是在 Photoshop 中设置的。”
 
 图 6-4 显示了一个示例。
 
-图 6-3：常规模式下的 espn.com 首页
-
-
-
-
+图 6-3：常规模式下的 `espn.com` 首页
 
 # 第 6 章
 
@@ -5851,7 +5055,7 @@ Lomu 将在橄榄球向英国世界杯英雄致敬中回归 S4
 
 这听起来像是一个不小的挑战，但正如你在下一节中看到的，实际上有一个非常简单的解决方案，而且你现在就可以立即将其整合到自己网站中的解决方案。
 
-## 爱上你的 <body>
+## 爱上你的 `<body>`
 
 你可能已经从这一节巧妙的标题猜到了，ESPN 秘密的关键在于 `<body>` 元素。通过为 `<body>` 元素分配一个唯一的 `id`，ESPN 的员工能够将其作为对页面做出明智选择的起点。例如，为了在普通（Regular）、遭遇（Skirmish）和战争（War）页面上提供不同的标题尺寸，你可以使用这些规则：
 
@@ -5903,13 +5107,13 @@ body#war h1 {font-size: 8em};
 
 图 6-7：遭遇模式下的故事
 
-现在，正如我们在图 6-3、6-4 和 6-5 的截图中看到的，在 ESPN.com 上在普通、遭遇和战争模式之间切换不仅仅是改变标题的大小。它重构了网站顶部的整个部分，将导航、子菜单和广告面板移动到不显眼的位置，并将注意力集中在主故事上。图 6-8 显示了普通模式和战争模式的并排对比。
+现在，正如我们在图 6-3、6-4 和 6-5 的截图中看到的，在 `ESPN.com` 上在普通、遭遇和战争模式之间切换不仅仅是改变标题的大小。它重构了网站顶部的整个部分，将导航、子菜单和广告面板移动到不显眼的位置，并将注意力集中在主故事上。图 6-8 显示了普通模式和战争模式的并排对比。
 
 ![](img/70fa44d3a461f43c7a35cac2b893273d_240_0.png)
 
-图 6-8：ESPN.com 在普通模式和战争模式下不同部分的对比
+图 6-8：`ESPN.com` 在普通模式和战争模式下不同部分的对比
 
-鉴于 ESPN.com 需要填充到页面中的信息量，你可能会发现很难看清到底发生了什么，所以让我们清除杂乱，通过创建一个简单的 HTML 页面来尝试布局。
+鉴于 `ESPN.com` 需要填充到页面中的信息量，你可能会发现很难看清到底发生了什么，所以让我们清除杂乱，通过创建一个简单的 HTML 页面来尝试布局。
 
 ## HTML
 
@@ -5990,12 +5194,9 @@ h1 {
 }
 ```
 
-
-
-
 ## 这种方法还适用于何处？
 
-对于“这种技术在其他地方也适用吗”这个简单答案是：“几乎无处不在！”每当你插入一个 class 或 id 时，你应该问自己：“这是放置它最高效的地方吗？或者我可以把它移动到文档树的更高位置？我能将其应用到该元素的父元素上？我如何从中获得最大的收益？”
+对于“这种技术在其他地方也适用吗”这个简单答案是：“几乎无处不在！”每当你插入一个 `class` 或 `id` 时，你应该问自己：“这是放置它最高效的地方吗？或者我可以把它移动到文档树的更高位置？我能将其应用到该元素的父元素上？我如何从中获得最大的收益？”
 
 如果另一个现实中的例子有助于澄清这一观点，请看以下标记。（图 6-12 显示了结果）。这是一组简单的导航链接，以无序列表的形式呈现。`nav` 类已应用于四个链接中的每一个，并编写了一条 CSS 规则来对它们进行样式化。该标记是有效的，CSS 运行也良好，但这是处理该问题的最佳方式吗？
 
@@ -6005,7 +5206,7 @@ h1 {
 
 ![](img/70fa44d3a461f43c7a35cac2b893273d_245_0.png)
 
-a.nav { background-color: yellow; }
+`a.nav { background-color: yellow; }`
 
 ```html
 <ul>
@@ -6017,8 +5218,11 @@ a.nav { background-color: yellow; }
 ```
 
 | Home |
+
 | Archive |
+
 | About |
+
 | Contact |
 
 图 6-11: 战争模式下的故事
@@ -6044,7 +5248,7 @@ ul nav li (background-color: yellow);
 
 **图 6-13: 链接仍然为黄色**
 
-结果仍然相同，但第二种方法比第一种有许多优点。首先，我们的 HTML 文件会更小，下载更快。其次，我们的标记不那么杂乱，更容易理解和编辑。第三，通过将类应用到 `ul`，我们不仅可以对锚点 (a)，还可以对列表项 (i) 以及 `ul` 本身进行样式化（见图 6-14）：
+结果仍然相同，但第二种方法比第一种有许多优点。首先，我们的 HTML 文件会更小，下载更快。其次，我们的标记不那么杂乱，更容易理解和编辑。第三，通过将类应用到 `ul`，我们不仅可以对锚点 (`a`)，还可以对列表项 (`i`) 以及 `ul` 本身进行样式化（见图 6-14）：
 
 ```css
 ul.nav (background-color: blue);
@@ -6065,11 +5269,11 @@ ul li a (background-color: yellow);
 
 我们再次看到极少量的初始工作带来了（相对）巨大的回报。
 
-现在，你可能会对这个小演示嗤之以鼻，认为两组代码之间的差异微乎其微。但如果你将这些想法扩展到包含超过 10 万页面的网站（如 ESPN.com），你就会对可以节省的内容有所体会。
+现在，你可能会对这个小演示嗤之以鼻，认为两组代码之间的差异微乎其微。但如果你将这些想法扩展到包含超过 10 万页面的网站（如 `ESPN.com`），你就会对可以节省的内容有所体会。
 
 ## 向上移一点……再向上移一点……停！
 
-重要的是，这里的这些观点并不是要求你永远不要给锚点或列表项分配类。它们只是试图传达这样一个观点：将类/id 应用点向文档树更深处移动可以为你带来一些巨大的好处。
+重要的是，这里的这些观点并不是要求你永远不要给锚点或列表项分配类。它们只是试图传达这样一个观点：将类/`id` 应用点向文档树更深处移动可以为你带来一些巨大的好处。
 
 尽管如此，在所有情况下，你都会达到一个点，此时移动应用点完全没有意义，并且实际上会让你的工作变得更加困难。这取决于你确定这一点在哪里，并在到达那里之前停止。
 
@@ -6120,21 +5324,23 @@ ul.nav li.selected a (background-color: purple);
 
 ## 第 6 章
 
-现在我们必须问自己一个问题：我们可以将应用点进一步移动文档树吗？例如，我们可以将其应用于 `ul` 吗？在这种情况下，答案是“不能”。我们已经在 `ul` 上有了类，但将其应用于 `ul` 并不能帮助我们专门定位锚点，不是吗？我们只需留在原地并将类应用于列表项。
+
+
+现在我们必须问自己一个问题：我们可以将应用点进一步移动文档树吗？例如，我们可以将其应用于`ul`吗？在这种情况下，答案是“不能”。我们已经在`ul`上有了类，但将其应用于`ul`并不能帮助我们专门定位锚点，不是吗？我们只需留在原地并将类应用于列表项。
 
 ## 学到的教训
 
-要学到的教训是，隐藏 id 和类的位置将带来无限收益。通过在 `body` 元素中放置 `id`，我们能够以极小的额外努力对页面进行巨大的更改。我们的目标文档树越深，生成的标记就越多，我们的查询就会越混乱。因此，每当你决定向 HTML 添加一个类或 id 时，问问自己定位该特定元素真的是必要的吗？是否存在容器元素可以应用该类/id，或者你已经达到了天花板？在某一点你会达到那个天花板，提前意识到它可能较低。减少文档中类和 id 数量的需求与浏览器理解 CSS 选择器的能力之间必须平衡。有时我们不得不不在特定元素上放置类。这不是你的错误，只是在现实世界生活和工作的副作用。然而，保持某种理想主义是重要的。随着网络浏览器对 CSS 选择器的理解越来越精练，这种这种思维将变得越来越有用。在未来几年里，我们将提高 CSS 规则的应用点，直到 HTML 几乎没有类和 id。
+要学到的教训是，隐藏`id`和类的位置将带来无限收益。通过在`body`元素中放置`id`，我们能够以极小的额外努力对页面进行巨大的更改。我们的目标文档树越深，生成的标记就越多，我们的查询就会越混乱。因此，每当你决定向HTML添加一个类或`id`时，问问自己定位该特定元素真的是必要的吗？是否存在容器元素可以应用该类/`id`，或者你已经达到了天花板？在某一点你会达到那个天花板，提前意识到它可能较低。减少文档中类和`id`数量的需求与浏览器理解CSS选择器的能力之间必须平衡。有时我们不得不不在特定元素上放置类。这不是你的错误，只是在现实世界生活和工作的副作用。然而，保持某种理想主义是重要的。随着网络浏览器对CSS选择器的理解越来越精练，这种思维将变得越来越有用。在未来几年里，我们将提高CSS规则的应用点，直到HTML几乎没有类和`id`。
 
 ## 无类未来一览（一份社会主义宣言）
 
-在上一节的最后，我们简单地接触了“前瞻性”的概念——随着浏览器对 CSS 选择器的理解变得更好，今天标记中流行的类和 id 将很快成为稀缺商品。本节详细探讨了这一概念，并提供了对未来的展望。
+在上一节的最后，我们简单地接触了“前瞻性”的概念——随着浏览器对CSS选择器的理解变得更好，今天标记中流行的类和`id`将很快成为稀缺商品。本节详细探讨了这一概念，并提供了对未来的展望。
 
 ## 未来的选择器
 
-如果你查看 W3C 关于选择器的页面（www.w3.org/TR/2001/CR-css3-selectors-2001113/），你会发现大量在生产环境中很少见的 CSS。该文档不仅涵盖了 CSS 1 的选择器，还了 Level 3，即未来的 CSS。今天的某些浏览器（Firefox, Opera, Safari）已经支持部分 Level 3（例如 :first-child 和 :last-child），但总体来说，该页面往往会让冒险的程序员感到失望。尽管如此，它仍然是一份重要的文档。它让我们窥见未来工作的世界，如果我们动动脑筋，它为结构与样式分离的想法增加了实用性。
+如果你查看W3C关于选择器的页面（`www.w3.org/TR/2001/CR-css3-selectors-2001113/`），你会发现大量在生产环境中很少见的CSS。该文档不仅涵盖了CSS 1的选择器，还涵盖了Level 3，即未来的CSS。今天的某些浏览器（`Firefox`，`Opera`，`Safari`）已经支持部分Level 3（例如`:first-child`和`:last-child`），但总体来说，该页面往往会让冒险的程序员感到失望。尽管如此，它仍然是一份重要的文档。它让我们窥见未来工作的世界，如果我们动动脑筋，它为结构与样式分离的想法增加了实用性。
 
-让我们来看看 CSS 为我们准备的一些惊喜……
+让我们来看看CSS为我们准备的一些惊喜……
 
 ## 精彩选择器列表
 
@@ -6142,57 +5348,48 @@ ul.nav li.selected a (background-color: purple);
 
 | 选择器语法 | 结果 | 选择器类型 |
 | --- | --- | --- |
-| E[foo] | 匹配具有 foo 属性的 E元素 | 属性选择器 |
-| E[foo="bar"] | 匹配 foo 属性完全等于 "bar" 的 E元素 | 属性选择器 |
-| E[foo="bar"] | 匹配 foo 属性为空格分隔的值列表的 E元素，其中一个值完全等于 "bar" | 属性选择器 |
-| E[foo^="bar"] | 匹配 foo 属性以字符串 "bar" 开头的 E元素 | 属性选择器 |
-| E[foo$="bar"] | 匹配 foo 属性以字符串 "bar" 结尾的 E元素 | 属性选择器 |
-| E*="bar"] | 匹配属性值包含子字符串 "bar" 的 E元素 | 属性选择器 |
-| E[foo|="bar"] | 匹配 foo 属性具有连字符分隔的值列表（从左侧）包含 "bar" 的 E元素 | 属性选择器 |
-| E:nth-child(n) | 匹配 E 元素，其父元素的第 n 个孩子 | 结构伪类 |
-| E:nth-last-child(n) | 匹配 E 元素，其父元素的倒数起第 n 个孩子 | 结构伪类 |
-| E:nth-of-type(n) | 匹配 E 元素，其同类型的第 n 个兄弟 | 结构伪类 |
-| E:nth-last-of-type(n) | 匹配 E 元素，其同类型的倒数起第 n 个兄弟 | 结构伪类 |
-| E:first-child | 匹配 E 元素，其父元素的第一个孩子 | 结构伪类 |
-| E:last-child | 匹配 E 元素，其父元素的最后一个孩子 | 结构伪类 |
-| E:first-of-type | 匹配 E 元素，其同类型的第一个兄弟 | 结构伪类 |
-| E:last-of-type | 匹配 E 元素，其同类型的最后一个兄弟 | 结构伪类 |
-| E:only-child | 匹配 E 元素，其父元素的唯一孩子 | 结构伪类 |
-
-
-
-
-
-# 第 6 章
-
-| 选择器语法 | 结果 | 选择器类型 |
-| --- | --- | --- |
-| E:only-of-type | 匹配与其同类型的同兄弟的 E 元素。 | 结构伪类 |
-| E:target | 匹配作为引用 URL 目标的 E 元素。 | 用户动作伪类 |
-| E:lang(foo) | 匹配语言为 foo 的 E 元素。 | :lang() 伪类 |
-| E:enabled or disabled | 匹配启用或禁用的用户界面 E。 | UI 元素伪类 |
-| E:checked or E:intermediate | 匹配已选中或处于中间状态的用户界面 E（例如复选框或单选按钮）。 | UI 状态伪类 |
-| E:contains("foo") | 匹配文本内容包含子字符串的 E 元素。 | 内容伪类 |
-| E:first-line | 匹配 E 元素的第一个格式化行。 | :first-line 伪类 |
-| E:first-letter | 匹配 E 元素的第一个格式化字母。 | :first-letter 伪类 |
-| E:selection | 匹配用户当前选中的 E 部分。 | UI 元素碎片伪元素 |
-| E::before | 匹配 E 元素之前生成的内容。 | :before 伪元素 |
-| E:after | 匹配 E 元素之后生成的内容。 | :after-伪元素 |
-| E:not(s) | 匹配不符合选择器 s 的 E 元素。 | 否定伪类 |
-| E + F | 匹配紧邻 E 元素之前的 F 元素。 | 直接相邻组合器 |
-| E ~ F | 匹配位于 E 元素之前的 F 元素。 | 间相邻组合器 |
+| `E[foo]` | 匹配具有`foo`属性的E元素 | 属性选择器 |
+| `E[foo="bar"]` | 匹配`foo`属性完全等于`"bar"`的E元素 | 属性选择器 |
+| `E[foo="bar"]` | 匹配`foo`属性为空格分隔的值列表的E元素，其中一个值完全等于`"bar"` | 属性选择器 |
+| `E[foo^="bar"]` | 匹配`foo`属性以字符串`"bar"`开头的E元素 | 属性选择器 |
+| `E[foo$="bar"]` | 匹配`foo`属性以字符串`"bar"`结尾的E元素 | 属性选择器 |
+| `E*="bar"]` | 匹配属性值包含子字符串`"bar"`的E元素 | 属性选择器 |
+| `E[foo|="bar"]` | 匹配`foo`属性具有连字符分隔的值列表（从左侧）包含`"bar"`的E元素 | 属性选择器 |
+| `E:nth-child(n)` | 匹配E元素，其父元素的第n个孩子 | 结构伪类 |
+| `E:nth-last-child(n)` | 匹配E元素，其父元素的倒数起第n个孩子 | 结构伪类 |
+| `E:nth-of-type(n)` | 匹配E元素，其同类型的第n个兄弟 | 结构伪类 |
+| `E:nth-last-of-type(n)` | 匹配E元素，其同类型的倒数起第n个兄弟 | 结构伪类 |
+| `E:first-child` | 匹配E元素，其父元素的第一个孩子 | 结构伪类 |
+| `E:last-child` | 匹配E元素，其父元素的最后一个孩子 | 结构伪类 |
+| `E:first-of-type` | 匹配E元素，其同类型的第一个兄弟 | 结构伪类 |
+| `E:last-of-type` | 匹配E元素，其同类型的最后一个兄弟 | 结构伪类 |
+| `E:only-child` | 匹配E元素，其父元素的唯一孩子 | 结构伪类 |
+| `E:only-of-type` | 匹配与其同类型的同兄弟的E元素。 | 结构伪类 |
+| `E:target` | 匹配作为引用URL目标的E元素。 | 用户动作伪类 |
+| `E:lang(foo)` | 匹配语言为`foo`的E元素。 | `:lang()`伪类 |
+| `E:enabled`或`E:disabled` | 匹配启用或禁用的用户界面E。 | UI元素伪类 |
+| `E:checked`或`E:intermediate` | 匹配已选中或处于中间状态的用户界面E（例如复选框或单选按钮）。 | UI状态伪类 |
+| `E:contains("foo")` | 匹配文本内容包含子字符串的E元素。 | 内容伪类 |
+| `E:first-line` | 匹配E元素的第一个格式化行。 | `:first-line`伪类 |
+| `E:first-letter` | 匹配E元素的第一个格式化字母。 | `:first-letter`伪类 |
+| `E:selection` | 匹配用户当前选中的E部分。 | UI元素碎片伪元素 |
+| `E::before` | 匹配E元素之前生成的内容。 | `:before`伪元素 |
+| `E:after` | 匹配E元素之后生成的内容。 | `:after`伪元素 |
+| `E:not(s)` | 匹配不符合选择器`s`的E元素。 | 否定伪类 |
+| `E + F` | 匹配紧邻E元素之前的F元素。 | 直接相邻组合器 |
+| `E ~ F` | 匹配位于E元素之前的F元素。 | 间接相邻组合器 |
 
 觉得很困惑吗？下一节将展示这些选择器的实际应用示例，并对它们将选择的元素进行描述和说明。
 
-# 选择器的实际应用示例
+## 选择器的实际应用示例
 
-本节中的示例展示了如何将这些 CSS 选择器应用于真实的 HTML 标记。这些示例并非详尽的，但对于每个实例，请考虑你会如何使用现在的技术来实现相同的效果。大多数情况下，答案是在 HTML 中大量添加类名和 ID，但在许多情况下，答案是现在无法重新创建此功能。
+本节中的示例展示了如何将这些CSS选择器应用于真实的HTML标记。这些示例并非详尽的，但对于每个实例，请考虑你会如何使用现在的技术来实现相同的效果。大多数情况下，答案是在HTML中大量添加类名和ID，但在许多情况下，答案是现在无法重新创建此功能。
 
-完成这些操作后，再次过一遍选择器，并考虑如果你无法访问 HTML 且不能随处插入类名和 ID，你会如何复制这些效果。在每种情况下，除了使用 JavaScript，答案都是你做不到。这就是未来带来的变化。
+完成这些操作后，再次过一遍选择器，并考虑如果你无法访问HTML且不能随处插入类名和ID，你会如何复制这些效果。在每种情况下，除了使用JavaScript，答案都是你做不到。这就是未来带来的变化。
 
-# ESPN.com: 强大的布局更改
+## ESPN.com: 强大的布局更改
 
-以下选择所有具有 `title` 属性的图像：
+以下选择所有具有`title`属性的图像：
 
 ```
 img[title]
@@ -6206,7 +5403,7 @@ img[title]
 <img src="shoes.png" />
 ```
 
-以下选择所有 `type` 值为 `text` 的 input 元素：
+以下选择所有`type`值为`text`的`input`元素：
 
 ```
 input[type="text"]
@@ -6221,7 +5418,7 @@ input[type="text"]
 </form>
 ```
 
-以下选择所有 `rel` 属性值为由空格分隔的列表，且其中一个值恰好匹配 met 的链接：
+以下选择所有`rel`属性值为由空格分隔的列表，且其中一个值恰好匹配`met`的链接：
 
 ```
 a[rel="*met"]
@@ -6229,13 +5426,15 @@ a[rel="*met"]
 
 以下是其选择内容的示例：
 
-- <ul>
+```
+<ul>
 <li><a href="http://sideshow.com/" rel="colleague friend">Sideshow</a></li>
 <li><a href="http://mezzoblue.com/*" rel="colleague">Mezzobubble</a></li>
 <li><a href="http://photomatt.net/" rel="friend colleague">Matt</a></li>
 </ul>
+```
 
-以下选择所有 `rel` 属性值恰好以 `colleague` 开头的链接：
+以下选择所有`rel`属性值恰好以`colleague`开头的链接：
 
 ```
 a[rel="colleague"]
@@ -6243,13 +5442,15 @@ a[rel="colleague"]
 
 以下是其选择内容的示例：
 
-- <ul>
+```
+<ul>
 <li><a href="http://sideshow.com/" rel="colleague friend">Sideshow</a></li>
 <li><a href="http://mezzoblue.com/*" rel="colleague">Mezzobubble</a></li>
 <li><a href="http://photomatt.net/" rel="friend colleague">Matt</a></li>
 </ul>
+```
 
-以下选择所有 `rel` 属性值恰好以 `colleague` 结尾的链接：
+以下选择所有`rel`属性值恰好以`colleague`结尾的链接：
 
 ```
 a[rel$="colleague"]
@@ -6257,13 +5458,15 @@ a[rel$="colleague"]
 
 以下是其选择内容的示例：
 
-- <ul>
+```
+<ul>
 <li><a href="http://sideshow.com/" rel="colleague friend">Sideshow</a></li>
 <li><a href="http://mezzoblue.com/" rel="colleague">Mezzobubble</a></li>
 <li><a href="http://photomatt.net/" rel="friend colleague">Matt</a></li>
 </ul>
+```
 
-以下选择所有 `href` 属性包含子字符串 `.com` 的链接：
+以下选择所有`href`属性包含子字符串`.com`的链接：
 
 ```
 a[href*=".com"]
@@ -6271,13 +5474,15 @@ a[href*=".com"]
 
 以下是其选择内容的示例：
 
-- <ul>
+```
+<ul>
 <li><a href="http://sideshow.com/" rel="colleague friend">Sideshow</a></li>
 <li><a href="http://mezzoblue.com/" rel="colleague">Mezzobubble</a></li>
 <li><a href="http://photomatt.net/" rel="friend colleague">Matt</a></li>
 </ul>
+```
 
-以下选择所有 `rel` 属性具有连字符分隔列表值的链接：
+以下选择所有`rel`属性具有连字符分隔列表值的链接：
 
 ```
 a[rel~=""]
@@ -6286,7 +5491,7 @@ a[rel~=""]
 以下是其选择内容的示例：
 
 ```
-<p>你可以查看 <a href="fr/" lang="fr">法语翻译</a>，或 <a href="nl/" lang="nl">荷兰语翻译</a>。</p>
+<p>你可以查看<a href="fr/" lang="fr">法语翻译</a>，或<a href="nl/" lang="nl">荷兰语翻译</a>。</p>
 ```
 
 选择所有奇数列表项：
@@ -6303,7 +5508,8 @@ li:nth-child(2n+1)
 
 以下是这些选择内容的示例：
 
-- <ul>
+```
+<ul>
 <li>Dotty</li>
 <li>Lotty</li>
 <li>Squeak</li>
@@ -6311,6 +5517,7 @@ li:nth-child(2n+1)
 <li>Scrap</li>
 <li>Poppy</li>
 </ul>
+```
 
 选择所有偶数列表项：
 
@@ -6332,7 +5539,8 @@ li:nth-child(2n)
 
 以下是这些选择内容的示例：
 
-- <ul>
+```
+<ul>
 <li>Dotty</li>
 <li>Lotty</li>
 <li>Squeak</li>
@@ -6340,6 +5548,7 @@ li:nth-child(2n)
 <li>Scrap</li>
 <li>Poppy</li>
 </ul>
+```
 
 将列表项分为三组并选择每组中的第二个项：
 
@@ -6385,12 +5594,6 @@ li:nth-child(4)
 </ul>
 ```
 
-
-
-
-
-# 第 6 章
-
 从最后一个列表项倒数，以下选择器选择了最后三个列表项：
 
 ```
@@ -6400,22 +5603,27 @@ li:nth-last-child(-n+3)
 以下是其选择内容的示例：
 
 ```
-<<ul>
-<li>Dottyc</li>
-<li>Lottyc</li>
+<ul>
+<li>Dotty</li>
+<li>Lotty</li>
 <li>Squeak</li>
 <li>Patch</li>
 <li>Scrap</li>
 <li>Poppy</li>
-</</ul>
+</ul>
 ```
 
 以下选择器选取所有奇数图片：
 
-``` evenimg:nth-of-type(odd)
+```
+img:nth-of-type(odd)
 ```
 
 以下选择器将图片每两个一组，然后选择每组中的第一张图片：
+
+```
+img:nth-of-type(2n+1)
+```
 
 以下是这些选择器选择内容的示例：
 
@@ -6440,12 +5648,6 @@ img:nth-of-type(even)
 
 ```
 img:nth-of-type(2n+2)
-```
-
-或者
-
-```
-img:nth-of-type(2n)
 ```
 
 或者
@@ -6486,7 +5688,7 @@ img:nth-last-of-type(-n+4)
 <img src="eight.png" />
 ```
 
-以下选择器选取第一个项。（实际上，这等同于 li:nth-child(1)）。
+以下选择器选取第一个项。（实际上，这等同于`li:nth-child(1)`）。
 
 ```
 li:first-child
@@ -6494,7 +5696,8 @@ li:first-child
 
 以下是其选择内容的示例：
 
-+   <ul>
+```
+<ul>
 <li>Dotty</li>
 <li>Lotty</li>
 <li>Squeak</li>
@@ -6502,8 +5705,9 @@ li:first-child
 <li>Scrap</li>
 <li>Poppy</li>
 </ul>
+```
 
-以下选择器选取最后一个项。（实际上，这等同于 li:nth-last-child(1)）。
+以下选择器选取最后一个项。（实际上，这等同于`li:nth-last-child(1)`）。
 
 ```
 li:last-child
@@ -6511,20 +5715,19 @@ li:last-child
 
 以下是其选择内容的示例：
 
-+   <ul>
+```
+<ul>
 <li>Dotty</li>
 <li>Lotty</li>
 <li>Squeak</li>
 </ul>
-
-```
 <ul><li>Patch</li>
 <li>Scrap</li>
 <li>Poppy</li>
 </ul>
 ```
 
-以下选择器在每个子元素列表中选取第一个实例的定义标题元素（dt）。在此例中，它选择了 Orchard、Alastair 和 Mariella 的定义标题，但没有选择 Dunstan、Pelosi 或 Fabrizio（因为它们不是其父级元素子元素列表中同类型中的第一个兄弟元素）。
+以下选择器在每个子元素列表中选取第一个实例的定义标题元素（`dt`）。在此例中，它选择了`Orchard`、`Alastair`和`Mariella`的定义标题，但没有选择`Dunstan`、`Pelosi`或`Fabrizio`（因为它们不是其父级元素子元素列表中同类型中的第一个兄弟元素）。
 
 ```
 dt:first-of-type
@@ -6553,7 +5756,7 @@ dt:first-of-type
 </dl>
 ```
 
-以下选择器在每个子元素列表中选取最后一个实例的定义标题元素（dt）。在此例中，它选择了 Dunstan、Pelosi 和 Fabrizio 的定义标题，但没有选择 Orchard、Alastair 或 Mariella（因为它们不是其父级元素子元素列表中同类型中的最后一个兄弟元素）。
+以下选择器在每个子元素列表中选取最后一个实例的定义标题元素（`dt`）。在此例中，它选择了`Dunstan`、`Pelosi`和`Fabrizio`的定义标题，但没有选择`Orchard`、`Alastair`或`Mariella`（因为它们不是其父级元素子元素列表中同类型中的最后一个兄弟元素）。
 
 ```
 dt:last-of-type
@@ -6572,17 +5775,27 @@ dt:last-of-type
   </dl>
 </dd>
 <dt>Pelosi</dt>
+  <dl>
+    <dt>Mariella</dt>
+    <dd>Only daughter</dd>
+    <dt>Fabbrizio</dt>
+    <dd>The youngest son</dd>
+  </dl>
+</dd>
+</dl>
 ```
-<dl>
-<dt>Mariella</dt>
-<dd>Only daughter</dd>
-<dt>Fabrizio</dt>
-<dd>The youngest son</dd>
-</dl>
-</dl>
-</dl>
 
-以下选择器选取文本内容包含 "otty" 字符串的列表项：
+
+
+<dt>`Mariella`</dt>
+
+<dd>Only daughter</dd>
+
+<dt>`Fabrizio`</dt>
+
+<dd>The youngest son</dd>
+
+以下选择器选取文本内容包含 `"otty"` 字符串的列表项：
 
 ```
 li:contains("otty")
@@ -6601,7 +5814,7 @@ li:contains("otty")
 </ul>
 ```
 
-以下选择器选取段落（p）以外的所有元素：
+以下选择器选取段落（`p`）以外的所有元素：
 
 ```
 *:not(p)
@@ -6630,7 +5843,7 @@ li:contains("otty")
 <p>If you're not me I'll let you see shoes.</p>
 ```
 
-以下选取所有没有 hide 类的段落元素：
+以下选取所有没有 `hide` 类的段落元素：
 
 ```
 p:not(.hide)
@@ -6654,7 +5867,7 @@ p:not(.hide)
 <p>There are three puppies and two boys.</p>
 ```
 
-以下选取文本内容不包含 "otty" 字符串的列表项：
+以下选取文本内容不包含 `"otty"` 字符串的列表项：
 
 ```
 li:not(:contains("otty"))
@@ -6702,7 +5915,7 @@ p::first-letter
 <p>Oh, my old man's a dustman, he wears a dustman's hat, he wears blame trousers, and he lives in a council flat.</p>
 ```
 
-以下选取紧跟在 h2 之后的段落，但仅当它们在文档树中共享相同的父元素时：
+以下选取紧跟在 `h2` 之后的段落，但仅当它们在文档树中共享相同的父元素时：
 
 ```
 h2 + p
@@ -6724,9 +5937,9 @@ h2 + p
 </div>
 ```
 
-<p>Sir Galahad loved soup. Oh yes, he couldn't get enough of it, I tell you.</p>
+`<p>Sir Galahad loved soup. Oh yes, he couldn't get enough of it, I tell you.</p>`
 
-以下选取位于 h2 之后（不一定是紧随其后）的任何段落，但仅当它们在文档树中共享相同的父元素时：
+以下选取位于 `h2` 之后（不一定是紧随其后）的任何段落，但仅当它们在文档树中共享相同的父元素时：
 
 ```
 h2 - p
@@ -6745,7 +5958,7 @@ h2 - p
 </div>
 ```
 
-<p>Sir Galahad loved soup. Oh yes, he couldn't get enough of it, I tell you.</p>
+`<p>Sir Galahad loved soup. Oh yes, he couldn't get enough of it, I tell you.</p>`
 
 # 明天更爱你的 `<body>`
 
@@ -6753,44 +5966,43 @@ h2 - p
 
 嗯，看起来 CSS 选择器提供的细粒度可以省去这些东西。既然你可以使用那些（老实说）总是为了你的当前设计而放置的类来修复你的标记，你何不直接使用强大的伪类和属性来定位相同的元素呢？
 
-class 和 id 仍然有一个至关重要的用途，这是我们在本章的第一节中看过的。通过在每个页面的 body 元素上应用类或 id，我们可以指定哪些规则应该应用于页面。当然，我们的一部分 CSS 将是通用的，但需要这种只有 body 上的 class 或 id 才能带来的“规则-页面”配。
+`class` 和 `id` 仍然有一个至关重要的用途，这是我们在本章的第一节中看过的。通过在每个页面的 `body` 元素上应用类或 id，我们可以指定哪些规则应该应用于页面。当然，我们的一部分 CSS 将是通用的，但需要这种只有 `body` 上的 class 或 id 才能带来的“规则-页面”配。
 
 所以，未来为我们带来了一组强大的新 CSS 选择器，能够启用标记中几乎所有的类和 id 实例。我们的 HTML 将更加整洁，我们的 CSS 将更具创意，我们的网站将是真正可换肤的（skinnable）。
 
 ## 总结
 
-在本章中，我们看到了在文档树高处应用类或 id 带来的益处，以及 ESPN.com 如何使用这种简单技术来引发其网站布局的巨大变化。我们还查看了 CSS 3（即未来的 CSS），并窥见了其高级选择器将为我们的工作带来的力量。通过获取 CSS 选择器高级部分的知识，我们不仅在为未来做准备，还提高了对 CSS 能力的预期。这反过来导致了用更有创新性和冒险性的方法来解决 CSS 问题。
+在本章中，我们看到了在文档树高处应用类或 id 带来的益处，以及 `ESPN.com` 如何使用这种简单技术来引发其网站布局的巨大变化。我们还查看了 CSS 3（即未来的 CSS），并窥见了其高级选择器将为我们的工作带来的力量。通过获取 CSS 选择器高级部分的知识，我们不仅在为未来做准备，还提高了对 CSS 能力的预期。这反过来导致了用更有创新性和冒险性的方法来解决 CSS 问题。
 
-在下一章中，我们将通过 Fastcompany.com 的案例研究来创建三栏布局。
-
-
-
-
+在下一章中，我们将通过 `Fastcompany.com` 的案例研究来创建三栏布局。
 
 ## 7
+
 ## FastCompany.com: 构建灵活的三栏式布局
 
-当 2003 年正式开始时，一个相当巨大的雪球已经开始滚轮。2002 年 10 月，Wired News 放弃了传统的表格驱动型布局方法，转而采用 CSS 驱动的设计。当时，Wired 并非此类重设计中的先驱，但无疑是流量最高的。该网站的首席设计师 Douglas Bowman（关于他对 Blogger.com 重设计工作的讨论，请参阅第 3 章）利用 CSS 和 XHTML 等标准技术——作为一种全新的设计先驱——处理一个极具知名度且成熟的品牌，并交付了一个极具吸引力的设计。Bowman 将其称为“将 Web 带出黑暗时代”（Wired News, "A Site for Your Eyes"——www.wired.com/news/culture/0_1284_55675_00.html）。
+当 2003 年正式开始时，一个相当巨大的雪球已经开始滚轮。2002 年 10 月，`Wired News` 放弃了传统的表格驱动型布局方法，转而采用 CSS 驱动的设计。当时，`Wired` 并非此类重设计中的先驱，但无疑是流量最高的。该网站的首席设计师 `Douglas Bowman`（关于他对 `Blogger.com` 重设计工作的讨论，请参阅第 3 章）利用 CSS 和 XHTML 等标准技术——作为一种全新的设计先驱——处理一个极具知名度且成熟的品牌，并交付了一个极具吸引力的设计。`Bowman` 将其称为“将 Web 带出黑暗时代”（`Wired News`, "A Site for Your Eyes"——`www.wired.com/news/culture/0_1284_55675_00.html`）。
 
-在接下来的几个月里，你几乎能听到虫的鸣叫声。Wired News 将样式表从学术界和挥舞着标准的拥护者的领域带了出来，坚定而自信地将其置于主流媒体的领域。在 Wired 重设计之前，大多数公司从未听说过层叠样式表，更不用说将其视为久经考验的表格设计方法的可行替代方案了。整个行业（以及我们这些在观众中挥舞着标准的人）都想看到是否会有人（如果有人的话）会效仿。
+在接下来的几个月里，你几乎能听到虫的鸣叫声。`Wired News` 将样式表从学术界和挥舞着标准的拥护者的领域带了出来，坚定而自信地将其置于主流媒体的领域。在 `Wired` 重设计之前，大多数公司从未听说过层叠样式表，更不用说将其视为久经考验的表格设计方法的可行替代方案了。整个行业（以及我们这些在观众中挥舞着标准的人）都想看到是否会有人（如果有人的话）会效仿。
 
 事实证明，我们并没有等多久。
 
 ## 第 7 章
+
 ## Fast Company: 迎接挑战
 
-2003 年 4 月，Fast Company (http://fastcompany.com/) 是下一个放弃陈旧、臃肿的页面构建技术、转而采用精简、符合标准的方法的高知名网站，而且它执行得极有格调。该网站承载着两个目的：
+2003 年 4 月，`Fast Company` (`http://fastcompany.com/`) 是下一个放弃陈旧、臃肿的页面构建技术、转而采用精简、符合标准的方法的高知名网站，而且它执行得极有格调。该网站承载着两个目的：
 
 - 它是同名流行杂志的专题存档。
-- 它发布各种仅限 Web 的专题，例如 FC Weblog (http://blog.fastcompany.com/)。
 
-为了兼顾这两种需求，新的 Fast Company (FC) 设计曾既时尚又易于导航。用户可以快速浏览内容丰富的页面，这些页面可能会因为审计和文章内容的过度丰富而变得变得臃肿，如图 7-1 所示。
+- 它发布各种仅限 Web 的专题，例如 `FC Weblog` (`http://blog.fastcompany.com/`)。
+
+为了兼顾这两种需求，新的 `Fast Company` (FC) 设计曾既时尚又易于导航。用户可以快速浏览内容丰富的页面，这些页面可能会因为审计和文章内容的过度丰富而变得变得臃肿，如图 7-1 所示。
 
 ![](img/70fa44d3a461f43c7a35cac2b893273d_264_0.png)
 
-图 7-1: FastCompany.com 首页
+图 7-1: `FastCompany.com` 首页
 
-此外，Company 的设计在元素上是非常灵活的。FC 并没有屈于构建固定宽度设计的诱惑，而是构建了网站以适应用户偏好的窗口大小（见图 7-2）。然而，注意内容区域的宽度是如何随着浏览器窗口的增大或缩小而扩展和收缩的——但仅限于一点。在较大的宽度下，页面布局会扩展，以确保行长度永远不会保持在不友好（且难以阅读）的长度。
+此外，`Company` 的设计在元素上是非常灵活的。FC 并没有屈于构建固定宽度设计的诱惑，而是构建了网站以适应用户偏好的窗口大小（见图 7-2）。然而，注意内容区域的宽度是如何随着浏览器窗口的增大或缩小而扩展和收缩的——但仅限于一点。在较大的宽度下，页面布局会扩展，以确保行长度永远不会保持在不友好（且难以阅读）的长度。
 
 ![](img/70fa44d3a461f43c7a35cac2b893273d_265_0.png)
 
@@ -6798,31 +6010,27 @@ class 和 id 仍然有一个至关重要的用途，这是我们在本章的第�
 
 ![](img/70fa44d3a461f43c7a35cac2b893273d_265_2.png)
 
-图 7-2: 在三种不同的流行窗口尺寸查看 Fast Company 首页
+图 7-2: 在三种不同的流行窗口尺寸查看 `Fast Company` 首页
 
 ## 第 7 章
 
-然而，除了网站设计的视觉方面外，新网站在技术上也是一次胜利。由于页面承载了与其沉依赖表格的前身相当的重量，该网站对于 Fast Company 的制作人员来说不仅更容易维护，而且对用户也极其友好。由于这些设计将制作内容从网站的标记和外部样式表中分离出来，FastCompany.com 变得适用于更广泛的设备，而这些设备本会受到网站设计的阻碍。这些设备不仅包括老旧的浏览器以及如辅助设备和手持设备等替代技术，还包括搜索引擎。
+然而，除了网站设计的视觉方面外，新网站在技术上也是一次胜利。由于页面承载了与其沉依赖表格的前身相当的重量，该网站对于 `Fast Company` 的制作人员来说不仅更容易维护，而且对用户也极其友好。由于这些设计将制作内容从网站的标记和外部样式表中分离出来，`FastCompany.com` 变得适用于更广泛的设备，而这些设备本会受到网站设计的阻碍。这些设备不仅包括老旧的浏览器以及如辅助设备和手持设备等替代技术，还包括搜索引擎。
 
 总而言之，这次重设计是成功的——对于公司、对于其用户，也对于蓬勃发展的 CSS 社区。那么，对此负责的是谁？
 
-## 认识设计师：Dan Cederholm
+## 认识设计师：`Dan Cederholm`
 
-Fast Company 高知名重设计后的架构师是 Dan Cederholm，他是一位多才的设计师、开发者和作者。作为使用 CSS 和 XHTML 进行强大设计的大力支持者，Cederholm 还是 SimpleBits (http://simplebits.com/) 的创始人兼作者，该网站是他位于波士顿地区的网页设计公司 (http://simplebits.com/work/) 的所在地，同时也作为某种个人日记 (http://simplebits.com/notebook/)。
+`Fast Company` 高知名重设计后的架构师是 `Dan Cederholm`，他是一位多才的设计师、开发者和作者。作为使用 CSS 和 XHTML 进行强大设计的大力支持者，`Cederholm` 还是 `SimpleBits` (`http://simplebits.com/`) 的创始人兼作者，该网站是他位于波士顿地区的网页设计公司 (`http://simplebits.com/work/`) 的所在地，同时也作为某种个人日记 (`http://simplebits.com/notebook/`)。
 
-虽然 Cederholm 通过对 Fast Company 及其网站的一对多 CSS 重设计进入了视野，但 Inc.com (http://inc.com/) 同样在像 Google、ESPN 和 Staples 这样的选择上保持着高产。原因是 Cederholm 的哲学可以用一个词来总结：细节。作为一个关注像素的的痴迷者，Cederholm 对页面设计中极细微之处的关注令人深受振奋。无论是像 Fast Company 这样宏大的页面，还是他创建的单个搜索结果页，他的设计都美观、精细且代码编写得极其完美。
+虽然 `Cederholm` 通过对 `Fast Company` 及其网站的一对多 CSS 重设计进入了视野，但 `Inc.com` (`http://inc.com/`) 同样在像 `Google`、`ESPN` 和 `Staples` 这样的选择上保持着高产。原因是 `Cederholm` 的哲学可以用一个词来总结：细节。作为一个关注像素的的痴迷者，`Cederholm` 对页面设计中极细微之处的关注令人深受振奋。无论是像 `Fast Company` 这样宏大的页面，还是他创建的单个搜索结果页，他的设计都美观、精细且代码编写得极其完美。
 
-在接下来的问答中，Cederholm 讨论了他的部分影响、职业生涯以及创作过程。
-
-
-
-
+在接下来的问答中，`Cederholm` 讨论了他的部分影响、职业生涯以及创作过程。
 
 # 第 7 章
 
 有时候，“展示”比“解释”更有力。但我认为，随着越来越多的网站开始利用 CSS，向客户和内部 Web 团队推销这项技术只会变得越来越容易。我们希望，它很快就能成为常态并被广泛使用。
 
-问：在大多数网站都在通过 CSS 技能起步并采用简单的固定宽度布局的时代，《快公司》（Fast Company）却选择了灵活的方案。是什么驱动了这一决定？
+问：在大多数网站都在通过 CSS 技能起步并采用简单的固定宽度布局的时代，《快公司》（`Fast Company`）却选择了灵活的方案。是什么驱动了这一决定？
 
 答：转而选择灵活方案的决定取决于几个不同的因素。可能主要的原因是必须在文章正文内进行“浮动”（float）的大型广告展示。在 800 × 600 的分辨率下，文本将换行到几乎无法忍受的长度。但这也支撑了我们的开支——这是一个我们必须绕过的需求。因此，采用灵活宽度的布局允许高屏幕分辨率的用户将尺寸调整到更具可读性的程度。我们也想为受众提供选择权。但灵活化也意味着某种程度的限制。我们必须考虑到窗口可能是任何尺寸这一事实——而这在设计时是具有挑战性的。
 
@@ -6840,10 +6048,6 @@ Fast Company 高知名重设计后的架构师是 Dan Cederholm，他是一位�
 
 答：嗯，我认为不断的流动是其中之一。我知道总有事情在发生——有新的技术要学习，有新的领域要探索。这意味着永远不要满足。但另一方面，这可能会让人沮丧。这是在甜点之间寻找平衡。我也热爱 Web 设计是因为它是艺术与技术的结合。我有一种创造事物的需求——任何事物。音乐、食物、摄影等等，而 Web 设计似乎是将所有这些冲动结合在一起的自然方式。它既是一个创作出口，也是一个技术出口。同事们的工作也让我保持激情——被他人的做法激励，从他们的经验中学习并分享知识——这始终是一个奇妙的馈予与取舍社区。
 
-
-
-
-
 ## FastCompany.com: 构建灵活的三栏布局
 
 ## 绝佳定位 (Absolutely Fabulous Positioning)
@@ -6858,7 +6062,7 @@ div#content {
 }
 ```
 
-`left` 和 `top` 属性指定了 id 属性为 "content" 的 div 的偏移量。该内容 `div` 不再被夹在标记中紧邻其前后的块级元素之间，而是从文档流中被移除了。但你问，它在哪里呢？
+`left` 和 `top` 属性指定了 id 属性为 `"content"` 的 `div` 的偏移量。该内容 `div` 不再被夹在标记中紧邻其前后的块级元素之间，而是从文档流中被移除了。但你问，它在哪里呢？
 
 为了找到答案，请查看下面的标记结构。为了简单起见，我们假设它放置在一个有效 XHTML 文档的 body 部分中：
 
@@ -6871,7 +6075,7 @@ div#content {
 </div>
 ```
 
-这是两个平平无奇的 `div`，一个 id 为 "inner" 嵌套在另一个（巧妙地命名为 "outer"）内部。每个 `div` 包含一个段落——我们确定这没什么了不起的。为了让这些内容超越角括号的范畴并进入几张截图，让我们为这些标记应用一些基础样式：
+这是两个平平无奇的 `div`，一个 id 为 `"inner"` 嵌套在另一个（巧妙地命名为 `"outer"`）内部。每个 `div` 包含一个段落——我们确定这没什么了不起的。为了让这些内容超越角括号的范畴并进入几张截图，让我们为这些标记应用一些基础样式：
 
 ```css
 #outer {
@@ -6887,13 +6091,13 @@ div#content {
 }
 ```
 
-再次，这些设计并不是为了让客户大开眼界。第一个规则适用于 id 为 "outer" 的 `div`。我们为该 `div` 设置了非常漂亮的蓝色边框和背景，将其高度设置为 300 像素，然后增加外边距以使其偏离其正常位置（向下 120 像素，左右各 20 像素）。第二条规则只是简单地为内层 `div` 应用了浅红色背景色和匹配颜色。
+再次，这些设计并不是为了让客户大开眼界。第一个规则适用于 id 为 `"outer"` 的 `div`。我们为该 `div` 设置了非常漂亮的蓝色边框和背景，将其高度设置为 300 像素，然后增加外边距以使其偏离其正常位置（向下 120 像素，左右各 20 像素）。第二条规则只是简单地为内层 `div` 应用了浅红色背景色和匹配颜色。
 
 ## 第 7 章
 
 是的，没错没错：蓝底配红。我们从未说过在拼凑代码示例时我们具有歧视性。
 
-但在你因为色调引发的愤怒而合上这本书之前，让我们检查一下这两个元素在页面上的呈现效果。正如图 7-3 所示，我们自作地为文档应用了一些基础的字体信息（Times New Roman 是 1995 年的风格）。但当我们激活了这些（我们承认有些俗俗的）颜色和边框后，我们可以看到这些 `div` 出现在正常的文档流中——内层块是外层块的子块，页面的当前显示反映了这一点。
+但在你因为色调引发的愤怒而合上这本书之前，让我们检查一下这两个元素在页面上的呈现效果。正如图 7-3 所示，我们自作地为文档应用了一些基础的字体信息（`Times New Roman` 是 1995 年的风格）。但当我们激活了这些（我们承认有些俗俗的）颜色和边框后，我们可以看到这些 `div` 出现在正常的文档流中——内层块是外层块的子块，页面的当前显示反映了这一点。
 
 ![](img/70fa44d3a461f43c7a35cac2b893273_272.png)
 
@@ -6913,33 +6117,29 @@ div#content {
 
 差异是巨大的，如图 7-4 所示。我们在视觉上打破了两个 `div` 之间的父子关系。虽然内层块仍然是外层块的子块，但我们通常使用 CSS 来覆盖前者在文档流中的位置。相反，我们对其进行了绝对定位，使其距离顶部和最右侧边缘偏移 20 像素。
 
-
-
-
-
 ## FastCompany.com: 构建一个灵活的三栏布局
 
 ![](img/70fa44d3a461f43c7a35cac2b893273d_277_0.png)
 
-为了本章的演示，我们将重点关注主页布局的主要区域：
+为了本章的演示，我们将重点关注主页布局的主要区域。
+
+
 
 - 跨越整个页面顶部的水平页眉（header）
 - 主中间列，其中包含高优先级内容以及感兴趣的其他功能
 - 左侧和右侧列，用于放置如子导航、广告横幅等辅助内容
 
-将这些每一个顶层区块视为内容的容器 —— 实际上，这正是 FastCompany 使用它们的方式。在每个区块内部，我们可以存储离散的内容分块，并应用 CSS 规则来精确控制每个内容分块的呈现方式。
+将这些每一个顶层区块视为内容的容器——实际上，这正是 FastCompany 使用它们的方式。在每个区块内部，我们可以存储离散的内容分块，并应用 CSS 规则来精确控制每个内容分块的呈现方式。
 
 建立这种灵活的三栏布局是本章的主要目标。一旦建立了这一点，我们就可以随心所欲地对设计的细节进行样式化处理。因此，我们将专注于建立这个布局框架——即页眉、内容区、左列和右列——为我们的页面设计真正专业的设计做好准备。
 
-## 第 7 章
-
-## 编写 XHTML：从原型到标记
+# 第 7 章：编写 XHTML——从原型到标记
 
 考虑到这一点，让我们创建一个基础的标记文档来反映这个框架，如列表 7-1 所示。
 
 列表 7-1：我们三栏布局的原型基础
 
-```
+```html
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -6979,15 +6179,13 @@ div#content {
 </html>
 ```
 
-与图 7-8 中我们内容清单的区域相对应，我们简单地将页面中的四个划分区域标记为这些名称 —— 也就是说，使用了 `div` 元素。每一个 `div` 都被赋予了唯一的 `id`，这反过来又对应于它所代表的文档部分：第一个 `div` 是 "header"，下一个是 "left"，依此类推。我们还特意在页面底部包含了一个 "footer" 块。
+与图 7-8 中我们内容清单的区域相对应，我们简单地将页面中的四个划分区域标记为这些名称——也就是说，使用了`div`元素。每一个`div`都被赋予了唯一的`id`，这反过来又对应于它所代表的文档部分：第一个`div`是“header”，下一个是“left”，依此类推。我们还特意在页面底部包含了一个“footer”块。
 
-## FastCompany: 构建一个灵活的三栏布局
+## FastCompany：构建一个灵活的三栏布局
 
-我们在标记页眉（以及本章其余部分）中使用的 `id` 来自 Fast Company 网站上使用的标记。虽然他们的页面是近两年前构建的，但我们认为使用“表现性名称”是最好的。
+我们在标记页眉（以及本章其余部分）中使用的`id`来自 Fast Company 网站上使用的标记。虽然他们的页面是近两年前构建的，但我们认为使用“表现性名称”是最好的。
 
-## 第 7 章
-
-## 样式层
+# 第 7 章：样式层
 
 在考虑到这些之后，让我们应用一些基础规则来控制我们的内容，如列表 7-2 所示。
 
@@ -7024,9 +6222,9 @@ h1, h2 {
 }
 ```
 
-第一条规则为 `body` 元素应用了一些基础颜色和类型信息，这些信息从文档树中的每个后代元素继承而来 —— 直到我们在第二条规则中覆盖它。通过对我们文档中的标题元素（`h1` 和 `h2`）应用不同的 `font-family` 值，我们可以覆盖继承并应用与默认不同的样式。这应该让它们在我们粗略的设计中更具视觉突出性。
+第一条规则为`body`元素应用了一些基础颜色和类型信息，这些信息从文档树中的每个后代元素继承而来——直到我们在第二条规则中覆盖它。通过对我们文档中的标题元素（`h1`和`h2`）应用不同的`font-family`值，我们可以覆盖继承并应用与默认不同的样式。这应该让它们在我们粗略的设计中更具视觉突出性。
 
-接下来的三条规则为我们的文档各个部分应用边框和背景颜色：页眉使用亮绿色，页脚框使用引人目的红色，左列和右列使用醒目的蓝色。我们在这里追求的是对比，而不是华丽 —— 正如你从图 7-10 中看到的，这正是我们的效果。
+接下来的三条规则为我们的文档各个部分应用边框和背景颜色：页眉使用亮绿色，页脚框使用引人目的红色，左列和右列使用醒目的蓝色。我们在这里追求的是对比，而不是华丽——正如你从图 7-10 中看到的，这正是我们的效果。
 
 ```css
 #header hr; #footer hr {
@@ -7036,13 +6234,7 @@ h1, h2 {
 
 图 7-10：我们使用 CSS 为我们的骨架 HTML 文档应用了一些基础的类型和颜色信息。
 
-
-
-
-
-# 第 7 章
-
-## 确定我们的偏移：介绍我们的定位规则
+# 第 7 章：确定我们的偏移——介绍我们的定位规则
 
 当我们更清晰地了解了不同内容元素的边界在哪里之后，现在让我们开始细化布局（见图 7-11）：
 
@@ -7068,15 +6260,15 @@ h1, h2 {
 
 图 7-11：绝对定位允许我们放置左侧和右侧列——不过我们还没有完全解决问题。
 
-这两个选择器将左块和右块移出了常规文档流，并对它们进行绝对定位。每个 div 都被赋予了显式的 175 像素宽度，然后被“发射”到窗口顶部（top: 0）。我们指定的水平偏移（对于 #left 是 left: 0；对于 #right 是 right: 0，你猜得到了）进一步完成了这一效果，以及我们三列布局的开始。“左”和“右”块开始名副其实，列也开始成型。
+这两个选择器将左块和右块移出了常规文档流，并对它们进行绝对定位。每个`div`都被赋予了显式的 175 像素宽度，然后被“发射”到窗口顶部（`top: 0`）。我们指定的水平偏移（对于`#left`是`left: 0`；对于`#right`是`right: 0`，你猜得到了）进一步完成了这一效果，以及我们三列布局的开始。“左”和“右”块开始名副其实，列也开始成型。
 
-但是，如你所见，布局远远未完成。左列和右列重叠了页眉、页脚和内容 div。通过对这两个块应用绝对定位，我们完全将它们从常规文档流中移除。这意味着，虽然我们能够以像素级的精度放置它们，但文档流中的其他元素不再需要为它们留出空间。为了让我们的布局运行起来，我们需要采取额外的步骤。
+但是，如你所见，布局远远未完成。左列和右列重叠了页眉、页脚和内容`div`。通过对这两个块应用绝对定位，我们完全将它们从常规文档流中移除。这意味着，虽然我们能够以像素级的精度放置它们，但文档流中的其他元素不再需要为它们留出空间。为了让我们的布局运行起来，我们需要采取额外的步骤。
 
 ## 记住保持其绝对相对性
 
-当我们思考这个问题时，记住这一点是有帮助的：这两个块相对于 html 元素定位的唯一原因是，它们不是某个已定位元素的后代。如果我们改变这一点会发生什么呢？
+当我们思考这个问题时，记住这一点是有帮助的：这两个块相对于`html`元素定位的唯一原因是，它们不是某个已定位元素的后代。如果我们改变这一点会发生什么呢？
 
-在代码列表 7-3 中，我们将这三个块包裹在一个名为 "container" 的 div 中。
+在代码列表 7-3 中，我们将这三个块包裹在一个名为“container”的`div`中。
 
 ```html
 <div id="header">
@@ -7103,7 +6295,7 @@ h1, h2 {
 </div>
 ```
 
-诚诚然，，这个容器对文档的整体语义价值没有太大贡献——它是标记纯主义者所说的“表现性”元素，即仅仅是为了实现我们设计中的某些目标而添加的元素。有了这个容器 div，我们可以对它应用一个三行的 CSS 选择器，这将为我们网站的布局恢复某种程度的合理性（见图 7-12）：
+诚诚然，，这个容器对文档的整体语义价值没有太大贡献——它是标记纯主义者所说的“表现性”元素，即仅仅是为了实现我们设计中的某些目标而添加的元素。有了这个容器`div`，我们可以对它应用一个三行的 CSS 选择器，这将为我们网站的布局恢复某种程度的合理性（见图 7-12）：
 
 ```css
 #container {
@@ -7114,13 +6306,14 @@ h1, h2 {
 ![](img/70fa44d3a461f43c7a35cac2b893273d_284_0.png)
 
 ### 这是左列。
+
 ### 页面布局。
+
 ### 这是右列。
 
 - 链接 1
 - 链接 2
 - 链接 3
-
 - 你知道列表很酷吗？
 - 它们确实如此。
 - 非常酷。
@@ -7128,9 +6321,11 @@ h1, h2 {
 e tique, mi nobis probe, quae deues, liber antiquar. Proiqun esse perpeus mali interrogant aut. Ut placer, Inum et ut ici autem duis sociis, constatitiam, quam sit idq, de qone et velit praecat oratio, quam iugatur, quit extrem et ultimum rerunt, sapien dolorem nostrum. Hic est nimquamam dolorem, dolore iste docere sit.
 
 这里将有更多信息。
+
 Omnis amatus, sit qui velit appaque ea gaeruder
 
 这里有一些基本信息：
+
 Raque neque est us ratione nazione, quam ob volum voluptenda, fugendus dolor sit, igrum, rerum esse aliquam, rhike mel.
 
 Quorum nihil opistere exquisitiis rationibus, tan tam sit est admonere, rerum enim non aliquam id bibendum, dolorem njatos et et libero mediumim animadmissionem atque admonere, altera nullaquam et vulputate liberta ludicari.
@@ -7141,9 +6336,9 @@ mundum depravatum ipsa helora incorrupte atque inte legandi.
 
 完成
 
-**图 7-12：** 对我们新的容器块应用 `position: relative;` 后，左列和右列的顶部现在包含在它们的父元素内。但是我们页面的内容呢？
+**图 7-12：** 对我们新的容器块应用`position: relative;`后，左列和右列的顶部现在包含在它们的父元素内。但是我们页面的内容呢？
 
-容器 div 现在可以被视为一个定位元素，它为它的子元素建立了一个新的上下文。左块和右块现在相对于容器定位，而不是 html 元素。这意味着，如果我们使用容器宽度来放置侧边栏，它们将与我们的内容边缘对齐。这同时也确保了随着窗口增大，布局仍然保持响应式。等等，虽然我们能够以像素级的精度放置它们，但文档流中的其他元素不再需要为它们留出空间。为了让我们的布局运行起来，我们需要采取额外的步骤。容器 div 现在可以被视为一个定位元素，它为它的子元素建立了一个新的上下文。左块和右块现在相对于容器定位，而不是 html 元素。这意味着，如果我们使用容器宽度来放置侧边栏，它们将与我们的内容边缘对齐。这同时也确保了随着窗口增大，布局仍然保持响应式。等等，虽然我们能够以像素级的精度放置它们，但文档流中的其他元素不再需要为它们留出空间。为了让我们的布局运行起来，我们需要采取额外的步骤。容器 div 现在可以被视为一个定位元素，它为它的子元素建立了一个新的上下文。左块和右块现在相对于容器定位，而不是 html 元素。这意味着，如果我们使用容器宽度来放置侧边栏，它们将与我们的内容边缘对齐。这同时也确保了随着窗口增大，布局仍然保持响应式。等等，虽然我们能够以像素级的精度放置它们，但文档流中的其他元素不再需要为它们留出空间。为了让我们的布局运行起来，我们需要采取额外的步骤。容器 div 现在可以被视为一个定位元素，它为它的子元素建立了一个新的上下文。左块和右块现在相对于容器定位，而不是 html 元素。这意味着，如果我们使用容器宽度来放置侧边栏，它们将与我们的内容边缘对齐。这同时也确保了随着窗口增大，布局仍然保持响应式。等等，虽然我们能够以像素级的精度放置它们，但文档流中的其他元素不再需要为它们留出空间。为了让我们的布局运行起来，我们需要采取额外的步骤。容器 div 现在可以被视为一个定位元素，它为它的子元素建立了一个新的上下文。左块和右块现在相对于容器定位，而不是 html 元素。这意味着，如果我们使用容器宽度来放置侧边栏，它们将与我们的内容边缘对齐。这同时也确保了随着窗口增大，布局仍然保持响应式。等等，虽然我们能够以像素级的精度放置它们，但文档流中的其他元素不再需要为它们留出空间。为了让我们的布局运行起来，我们需要采取额外的步骤。容器 div 现在可以被视为一个定位元素，它为它的子元素建立了一个新的上下文。左块和右块现在相对于容器定位，而不是 html 元素。这意味着，如果我们使用容器宽度来放置侧边栏，它们将与我们的内容边缘对齐。这同时也确保了随着窗口增大，布局仍然保持响应式。等等，虽然我们能够以像素级的精度放置它们，但文档流中的其他元素不再需要为它们留出空间。为了让我们的布局运行起来，我们需要采取额外的步骤。容器 div 现在可以被视为一个定位元素，它为它的子元素建立了一个新的上下文。左块和右块现在相对于容器定位，而不是 html 元素。这意味着，如果我们使用容器宽度来放置侧边栏，它们将与我们的内容边缘对齐。这同时也确保了随着窗口增大，布局仍然保持响应式。等等，虽然我们能够以像素级的精度放置它们，但文档流中的其他元素不再需要为它们留出空间。为了让我们的布局运行起来，我们需要采取额外的步骤。**图 7-12：** 对我们新的容器块应用 `position: relative;` 后，左列和右列的顶部现在包含在它们的父元素内。但是我们页面的内容呢？容器 div 现在可以被视为一个定位元素，它为它的子元素建立了一个新的上下文。左块和右块现在相对于容器定位，而不是 html 元素。这意味着，如果我们使用容器宽度来放置侧边栏，它们将与我们的内容边缘对齐。这同时也确保了随着窗口增大，布局仍然保持响应式。等等，虽然我们能够以像素级的精度放置它们，但文档流中的其他元素不再需要为它们留出空间。为了让我们的布局运行起来，我们需要采取额外的步骤。容器 div 现在可以被视为一个定位元素，它为它的子元素建立了一个新的上下文。左块和右块现在相对于容器定位，而不是 html 元素。这意味着，如果我们使用容器宽度来放置侧边栏，它们将与我们的内容边缘对齐。这同时也确保了随着窗口增大，布局仍然保持响应式。
+容器`div`现在可以被视为一个定位元素，它为它的子元素建立了一个新的上下文。左块和右块现在相对于容器定位，而不是`html`元素。这意味着，如果我们使用容器宽度来放置侧边栏，它们将与我们的内容边缘对齐。这同时也确保了随着窗口增大，布局仍然保持响应式。等等，虽然我们能够以像素级的精度放置它们，但文档流中的其他元素不再需要为它们留出空间。为了让我们的布局运行起来，我们需要采取额外的步骤。容器`div`现在可以被视为一个定位元素，它为它的子元素建立了一个新的上下文。左块和右块现在相对于容器定位，而不是`html`元素。这意味着，如果我们使用容器宽度来放置侧边栏，它们将与我们的内容边缘对齐。这同时也确保了随着窗口增大，布局仍然保持响应式。等等，虽然我们能够以像素级的精度放置它们，但文档流中的其他元素不再需要为它们留出空间。为了让我们的布局运行起来，我们需要采取额外的步骤。容器`div`现在可以被视为一个定位元素，它为它的子元素建立了一个新的上下文。左块和右块现在相对于容器定位，而不是`html`元素。这意味着，如果我们使用容器宽度来放置侧边栏，它们将与我们的内容边缘对齐。这同时也确保了随着窗口增大，布局仍然保持响应式。等等，虽然我们能够以像素级的精度放置它们，但文档流中的其他元素不再需要为它们留出空间。为了让我们的布局运行起来，我们需要采取额外的步骤。容器`div`现在可以被视为一个定位元素，它为它的子元素建立了一个新的上下文。左块和右块现在相对于容器定位，而不是`html`元素。这意味着，如果我们使用容器宽度来放置侧边栏，它们将与我们的内容边缘对齐。这同时也确保了随着窗口增大，布局仍然保持响应式。等等，虽然我们能够以像素级的精度放置它们，但文档流中的其他元素不再需要为它们留出空间。为了让我们的布局运行起来，我们需要采取额外的步骤。**图 7-12：** 对我们新的容器块应用`position: relative;`后，左列和右列的顶部现在包含在它们的父元素内。但是我们页面的内容呢？容器`div`现在可以被视为一个定位元素，它为它的子元素建立了一个新的上下文。左块和右块现在相对于容器定位，而不是`html`元素。这意味着，如果我们使用容器宽度来放置侧边栏，它们将与我们的内容边缘对齐。这同时也确保了随着窗口增大，布局仍然保持响应式。
 
 ## FastCompany.com：构建一个灵活的三列布局
 
@@ -7151,15 +6346,9 @@ mundum depravatum ipsa helora incorrupte atque inte legandi.
 
 图 7-13：通过向内容添加内边距（padding），我们可以营造出列是固定的错觉，而它们实际上是对容器宽度有响应的。
 
-等等，左列和右列重叠了页眉、页脚和内容 div。通过对这两个块应用绝对定位，我们完全将它们从常规文档流中移除。这意味着，虽然我们能够以像素级的精度放置它们，但文档流中的其他元素不再需要为它们留出空间。为了让我们的布局运行起来，我们需要采取额外的步骤。容器 div 现在可以被视为一个定位元素，它为它的子元素建立了一个新的上下文。左块和右块现在相对于容器定位，而不是 html 元素。这意味着，如果我们使用容器宽度来放置侧边栏，它们将与我们的内容边缘对齐。这同时也确保了随着窗口增大，布局仍然保持响应式。
+等等，左列和右列重叠了页眉、页脚和内容`div`。通过对这两个块应用绝对定位，我们完全将它们从常规文档流中移除。这意味着，虽然我们能够以像素级的精度放置它们，但文档流中的其他元素不再需要为它们留出空间。为了让我们的布局运行起来，我们需要采取额外的步骤。容器`div`现在可以被视为一个定位元素，它为它的子元素建立了一个新的上下文。左块和右块现在相对于容器定位，而不是`html`元素。这意味着，如果我们使用容器宽度来放置侧边栏，它们将与我们的内容边缘对齐。这同时也确保了随着窗口增大，布局仍然保持响应式。
 
-
-
-
-
-## 第 7 章
-
-我的三栏布局
+# 第 7 章：我的三栏布局
 
 ![](img/70fa44d3a461f43c7a35cac2b893273d_288_0.png)
 
@@ -7188,6 +6377,8 @@ Primus ipsum, id velit, est at aliquip dui tellus,텁ip, quis et velit, id done 
 更多信息见此处的。
 
 Nag neque neque nulla nisque dictum, quam nibh velit volutpat, ligula dolor sit, non pretium nec velit, hendrerit placer, massa nibh diam.
+
+
 
 Dome ante, a sit aliquam sapien, eget neque mauris, et, quam posuere, facilisis a, luctus massa hendrerum ipsum nibh at auctorifend.
 
@@ -7252,9 +6443,6 @@ Quorum nibh orci volutpat mauris congrerit, tellus ante didore, esse in metrer a
 
 这是绝对定位模型的一个严重缺陷。绝对定位元素会被从文档流中移除并无章法地放置在页面上——但这限制了绝对定位作为设计工具的局限性，因为它对周围元素的上下文是盲目的。绝对定位元素不仅会重叠非定位元素，还会与其他定位块重叠。这就是为什么许多 CSS 设计师更多地依赖浮动模型来控制布局。
 
-
-
-
 ## 第7 章
 
 ![](img/70fa44d3a461f43c7a35cac2b893273d_292_0.png)
@@ -7291,9 +6479,6 @@ Quorum milli optiore eportquis raubionis confantum, tamatis sit admiere, inesse 
 ## FastCompany：构建灵活的三栏布局
 
 ![](img/70fa44d3a461f43c7a35cac2b893273d_293_0.png)
-
-
-
 
 ## FastCompany.com：构建灵活的三列布局
 
@@ -7354,7 +6539,9 @@ Etiam armes were laud.
 这里提供更多信息。
 
 Omnis amet, nisi orci, nisl eleifend, a nisl a sapien, arcu quam, nisl elementum, lacinia, vehicula turpis erat in tellus.
+
 这里提供更多信息。
+
 这里提供更多信息。
 
 图 7-26：在不支持 `max-width` CSS 的浏览器中（如此处所示的 Mac 版 Internet Explorer），布局将简单地扩展到窗口宽度。
@@ -7372,10 +6559,6 @@ Omnis amet, nisi orci, nisl eleifend, a nisl a sapien, arcu quam, nisl elementum
 我们希望手里能有一些功夫术袍子。这一章中，我们告诉亲爱的读者忘记目前为止教给他们的所有关于 CSS 的知识，透过池水表面去发现内在的真理 . . 或者之类的。
 
 老实说，我们在派对上比看起来要有趣得多。
-
-
-
-
 
 # 第8章
 
@@ -7408,18 +6591,19 @@ Omnis amet, nisi orci, nisl eleifend, a nisl a sapien, arcu quam, nisl elementum
 # 内容与废话：CSS 切换策略
 
 ```html
+
 <p id="blurb">正如他们所说，这是一个“引言”。</p>
-<p>Done id nisl...</p>
-<h2>此外，你可能考虑...</h2>
+``` 
 
-<p><img src="portrait.png" alt="一张英俊的（像素化的）脸像" class="portrait" /> Quisque amet justo. Cum sociis...</p>
-</div>
-</div>
-</body>
-</html>
-```
 
-到目前为止，所有这些标记应该让您觉得很熟悉。通过将适当标题元素（h1 和 h2）添加到它们在我们（毫无意义的）文档大纲中的位置，段落已通过 <p> 元素正确标记，一个被标记为 id="blurb"，我们稍后可能会与其兄弟元素进行不同的样式处理。为了给布局增添色彩，我们包含了我们自己的插图。抱歉，没有奖项可以猜它是哪一个。
+
+`Done id nisl...`
+
+## 此外，你可能考虑...
+
+`<img src="portrait.png" alt="一张英俊的（像素化的）脸像" class="portrait" />` `Quisque amet justo. Cum sociis...`
+
+到目前为止，所有这些标记应该让您觉得很熟悉。通过将适当标题元素（`h1` 和 `h2`）添加到它们在我们（毫无意义的）文档大纲中的位置，段落已通过 `<p>` 元素正确标记，一个被标记为 `id="blurb"`，我们稍后可能会与其兄弟元素进行不同的样式处理。为了给布局增添色彩，我们包含了我们自己的插图。抱歉，没有奖项可以猜它是哪一个。
 
 图 8 显示了我们的起点是多么卑微。
 
@@ -7430,21 +6614,17 @@ Omnis amet, nisi orci, nisl eleifend, a nisl a sapien, arcu quam, nisl elementum
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tortor. Integer eu, in velit. Nulla eleum, libero at a gravida consequat, risus felis facilisis quam, fringilla et metus massa non. Pellentesque neque at amet malesuada venenatis. Nulla cursus orci odio. Aenean vari mi nec lacinia sollicitudin cursus. Nulla facilisis. Pellentesque tempus lectus in ipsum. Nulla a est ut odio porta feget. Aliquip vuluptate pede.
 
 这是一个，比如一个引言
-Done id is. Duis cubis nat tellus et magnis at diam mauris, neque turpis risus metus. Quisque scisque eget neque. Nulla est neque accums dictum aliquam. Pellentesque hendrer et leo. Vestulum digniss, sed vitae convallis pret, felis sagittis mi, id malesuada mauris neque velit. auctor porttitor massa. Praesent in nibh orci dictum tellus. Proin a nulla nec bibendum fermentum aliquam. Donec augue tellus, mollis eleisque, uscus metus, metus, metus.
+`Done id is. Duis cubis nat tellus et magnis at diam mauris, neque turpis risus metus. Quisque scisque eget neque. Nulla est neque accums dictum aliquam. Pellentesque hendrer et leo. Vestulum digniss, sed vitae convallis pret, felis sagittis mi, id malesuada mauris neque velit. auctor porttitor massa. Praesent in nibh orci dictum tellus. Proin a nulla nec bibendum fermentum aliquam. Donec augue tellus, mollis eleisque, uscus metus, metus, metus.`
 
 > 此外，你可能考虑…
 
 ![](img/70fa44d3a461f43c7a35cac2b89327d_303_1.png)
 
-每一个在之前，首先在位于 orci et ultrices hendrerit vehicula massa. Duis dapibus aliquam est. Aenean tincidunt. Curabitur eget velit at volutpat massa venenatis. In ipsum lorem, condimentum bibendum, fe nibh, scelerisque a, odio. Donec morbi nec tortor eget velit vestibulum metus. Curabitur et nibh. Curabitur at risus a augue, malesuada non sit. Integer eu felis. Quisque fermentum et ult nisi. Vestulum accumsan. Donec facilisis, lorem at fermentum molestie, sapien magna laoreet, non lacus lectus massa sit amet metus.
+每一个在之前，首先在位于 `orci et ultrices hendrerit vehicula massa. Duis dapibus aliquam est. Aenean tincidunt. Curabitur eget velit at volutpat massa venenatis. In ipsum lorem, condimentum bibendum, fe nibh, scelerisque a, odio. Donec morbi nec tortor eget velit vestibulum metus. Curabitur et nibh. Curabitur at risus a augue, malesuada non sit. Integer eu felis. Quisque fermentum et ult nisi. Vestulum accumsan. Donec facilisis, lorem at fermentum molestie, sapien magna laoreet, non lacus lectus massa sit amet metus.`
 
 完成
 
 图 8-1：我们未经样式的 XHTML 文档，像在派对一样。
-
-
-
-
 
 ## 杂项与废话：CSS 切换策略
 
@@ -7458,10 +6638,10 @@ Done id is. Duis cubis nat tellus et magnis at diam mauris, neque turpis risus m
 
 正如你所说，这是“引用”。
 
-Done mi purus et magis partient metus, mauris risus metus. Quisque acerit eget. Namas non posuere augue dictum felis. Pellentesque hendrerit et metus. Vestibulum dictum, vitae velit convatrer, felis facilisis magnis, id massa mauris vel odio. metr a massa. Nulla e neque erat tellus tincidunt mauris, luctus scelerisque odioquam ante. Cum nunc nibh in orci. Prain a nuc nec hendrerit aliquam odio. Donec augue tellus, mattis metus, suscipit, hendislet, eleisis, metus.
+`Done mi purus et magis partient metus, mauris risus metus. Quisque acerit eget. Namas non posuere augue dictum felis. Pellentesque hendrerit et metus. Vestibulum dictum, vitae velit convatrer, felis facilisis magnis, id massa mauris vel odio. metr a massa. Nulla e neque erat tellus tincidunt mauris, luctus scelerisque odioquam ante. Cum nunc nibh in orci. Prain a nuc nec hendrerit aliquam odio. Donec augue tellus, mattis metus, suscipit, hendislet, eleisis, metus.`
 
-Quaque sit amet quis. Cum sociis magis partenas et magis partient metus nacerisque, metus risus nisi. Vestibule ante ipsum primis in faucibus orci luctus atellus scelerisque cubilia. Aenean tincidunt. 
-Curabitur velit sit amet sapien venenatis. In ipsum lorem. condimet sit amet, condimentum bibendum, scelerisque, auctor. Donec metus tortor suscipitip. Maecenas non mi. Integer a sociis. Quisque feugiat quis nisi metus suscit. Maecenas non mi. Duis a facilisis hendrerit metus, sapien magna laoreet mi, non iaculis ante massa sit metus. Metenas id ante.
+`Quaque sit amet quis. Cum sociis magis partenas et magis partient metus nacerisque, metus risus nisi. Vestibule ante ipsum primis in faucibus orci luctus atellus scelerisque cubilia. Aenean tincidunt.`
+`Curabitur velit sit amet sapien venenatis. In ipsum lorem. condimet sit amet, condimentum bibendum, scelerisque, auctor. Donec metus tortor suscipitip. Maecenas non mi. Integer a sociis. Quisque feugiat quis nisi metus suscit. Maecenas non mi. Duis a facilisis hendrerit metus, sapien magna laoreet mi, non iaculis ante massa sit metus. Metenas id ante.`
 
 此外，注释
 
@@ -7484,8 +6664,8 @@ Curabitur velit sit amet sapien venenatis. In ipsum lorem. condimet sit amet, co
 
 /* 导入仅 WinIE 有的 bug，对 Mac IE 5 隐藏 */
 @import url("hacks.win.iex.css");
-/* 对 Mac IE 5 隐藏 */
 
+/* 对 Mac IE 5 隐藏 */
 /* 导入 Mac IE 5 破解方案 */
 @media tty {
   i(content:"/*:\*/") @import 'hacks.win.ie5.css'; /**/
@@ -7548,11 +6728,6 @@ h1, h2 {
 ```
 
 当我们重新加载浏览器时，图 8-3 显示我们已经发生了变化。
-
-
-
-
-
 
 # 杂谈与技巧：CSS 切换策略
 
@@ -7642,18 +6817,18 @@ span.lead {
 <link rel="alternate stylesheet" title="Gratuitous CSS" href="hot.css" type="text/css" />
 ```
 
+
+
 如果我们的用户能够从浏览器中选择另一个备用 CSS 文件，那么他们就能像图 8-5 所示看到我们的新样式。和以前一样，这种变化是巨大的——但我们终于允许用户选择吸引的设计，并定制我们的内容以满足他们的需求。
-
-
-
-
 
 ## 第 8 章
 
+```
 font-weight: bold;
 text-decoration: none;
 }
 /* 扩展样式结束 */
+```
 
 ![](img/70fa44d3a461f43c7a35cac2b893273d_316_0.png)
 
@@ -7729,20 +6904,33 @@ larret mi, nulla ante massa at metus massa. Maeces id.
 
 ```javascript
 // activeCSS: 设置活动样式表
+
 function activeCSS(title) {
+
   var i, oneLink;
+
   for (i = 0; oneLink = document.getElementsByTagName("link")[i]; i++) {
+
     if (oneLink.getAttribute("title") == title) {
+
       oneLink.disabled = false;
+
     } else {
+
       oneLink.disabled = true;
+
     }
+
   }
+
 }
 
 // findWord: 用于在字符串中找到完整的单词（针头）
+
 function findWord(needle, haystack) {
+
   return haystack.match("\b" + needle + "\b");
+
 }
 ```
 
@@ -7768,10 +6956,6 @@ function findWord(needle, haystack) {
 ```
 
 # 318
-
-
-
-
 
 ## 闲谈与八道：CSS 切换策略
 
@@ -7813,15 +6997,25 @@ Cookie 是由 Web 服务器发送到浏览器的小型文本文件，包含了�
 
 ```javascript
 // Set the cookie
+
 function setCookie(name,value,days) {
+
   if (days) {
+
     var date = new Date();
+
     date.setTime(date.getTime()+(days*24*60*60*1000));
+
     var expires = "expires=" + date.toUTCString();
+
   } else {
+
     expires = "";
+
   }
+
   document.cookie = name + "=" + value + ";" + expires + "; path=/";
+
 }
 ```
 
@@ -7829,23 +7023,31 @@ function setCookie(name,value,days) {
 
 ```javascript
 // Set the active stylesheet
+
 function activeCSS(title) {
+
   var i, link;
+
   var links = document.getElementsByTagName("link");
+
   for (i = 0; i < links.length; i++) {
+
     link = links[i];
+
     if (link.getAttribute("title") == title) {
+
       link.disabled = false;
+
     } else {
+
       link.disabled = true;
+
     }
+
   }
+
 }
 ```
-
-
-
-
 
 ## 杂谈与本质：CSS 切换策略
 
@@ -7857,22 +7059,29 @@ load
 window.onload = initCSS;
 
 // initCSS: 如果存在 "mystyle" cookie，则在页面加载时设置激活样式表
-function initCSS() {
-  var style = readCookie("mystyle");
-  if (style) {
-    activeCSS(style);
-  }
-}
 
-/*
-切换器函数
-*/
-// activeCSS: 设置激活样式表
+function initCSS() {
+```
+
+
+
+`var style = readCookie("mystyle");`
+
+```javascript
+if (style) {
+  activeCSS(style);
+}
+```
+
+## 切换器函数
+
+### 设置激活样式表
+
+```javascript
 function activeCSS(title) {
   var i, oneLink;
   for (i = 0; oneLink = document.getElementsByTagName("link")[i]; i++) {
-    if (oneLink.getAttribute('title') && findWord("mystyle",
-    oneLink.getAttribute('rel'))) {
+    if (oneLink.getAttribute('title') && findWord("mystyle", oneLink.getAttribute('rel'))) {
       oneLink.disabled = true;
       if (oneLink.getAttribute('title') == title) {
         oneLink.disabled = false;
@@ -7881,43 +7090,43 @@ function activeCSS(title) {
   }
   setCookie("mystyle", title, 365);
 }
+```
 
-// findWord: 用于在字符串（干栈）中查找全单词（针头）
+### 查找全单词
+
+```javascript
 function findWord(needle, haystack) {
   var init = needle + "\b";
   return haystack.match(needle + "\b");
 }
+```
 
-/*
-Cookie 函数
-*/
+## Cookie 函数
 
-// 设置 cookie
-function setCookie(name,value,days) {
+### 设置 Cookie
+
+```javascript
+function setCookie(name, value, days) {
   if (days) {
     var date = new Date();
-    date.setTime(date.getTime()+(days*24*60*60*1000));
-    var expires = "expires="+date.toGMTString();
+    date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+    var expires = "expires=" + date.toGMTString();
   } else {
     expires = "";
   }
+  document.cookie = name + "=" + value + ";" + expires;
+}
 ```
 
-## 第 8 章
-
-## 示例 8-6：（续）
+### 读取 Cookie
 
 ```javascript
-}
-  document.cookie = name+"="+value+";expires="+expires;
-
-// 读取 cookie
 function readCookie(name) {
   var needle = name + "=";
   var cookieArray = document.cookie.split(';');
-  for(var i=0;i<cookieArray.length;i++) {
+  for (var i = 0; i < cookieArray.length; i++) {
     var pair = cookieArray[i];
-    while (pair.charAt(0)==' ') {
+    while (pair.charAt(0) == ' ') {
       pair = pair.substring(1, pair.length);
     }
     if (pair.indexOf(needle) == 0) {
@@ -7932,7 +7141,7 @@ function readCookie(name) {
 
 我们希望到目前为止还没有变得越来越容易被预测。但由于我们已经完成了一个 JavaScript 解决方案，我们觉得不得不指出它存在的一些潜在问题。实际上，我们只局限于一个缺点，因为它是最大的：我们如何知道用户在他的机器上安装了 JavaScript 呢？好了，我们听到了这里传来的沮丧叹息——大家都在说 JavaScript 是新的潮流，对吧？哪种浏览器没有提供这种超绚丽的语言呢？
 
-事实证明，像 TheCounter.com (www.thecounter.com/) 等一些网站统计显示，约有 9% 到 11% 的用户是在没有 JavaScript 的情况下浏览的。这听起来像博彩赔率——十分之一并不糟糕，对吧？嗯，一旦考虑到谈论的是这“9% 到 11%”的群体中包含的是数百万人时，这个人口统计数据看起来就有点不同了。而且，无论有多少人在没有 JavaScript 的情况下浏览，我们是否应该排除任何对我们网站的访问呢？特别是（你很快就会看到）使用服务器端处理来复制相同的功能极其简单。
+事实证明，像 `TheCounter.com` (www.thecounter.com/) 等一些网站统计显示，约有 9% 到 11% 的用户是在没有 JavaScript 的情况下浏览的。这听起来像博彩赔率——十分之一并不糟糕，对吧？嗯，一旦考虑到谈论的是这“9% 到 11%”的群体中包含的是数百万人时，这个人口统计数据看起来就有点不同了。而且，无论有多少人在没有 JavaScript 的情况下浏览，我们是否应该排除任何对我们网站的访问呢？特别是（你很快就会看到）使用服务器端处理来复制相同的功能极其简单。
 
 与其依赖用户可能可用也可能不可用的客户端代码，我们可以编写一个存储在我们的 Web 服务器上的脚本来处理样式切换。因为我们将在服务器端环境中工作，我们就不再需要担心用户的计算机上是否激活了 JavaScript。只要我们的用户接受 cookie，我们的服务器端脚本就能轻松地处理样式切换。
 
@@ -7948,18 +7157,16 @@ PHP 官方文档 (www.php.net/docs.php) 也许是最好的起点——尽管坦�
 
 ## 创建脚本
 
-一旦运行 PHP，我们就可以修改样式切换器。这种方法的缺点是它依赖于服务器配置。但对于许多开发者来说，这是一个可以接受的权衡。让我们看看 switch.php 的代码：
+一旦运行 PHP，我们就可以修改样式切换器。这种方法的缺点是它依赖于服务器配置。但对于许多开发者来说，这是一个可以接受的权衡。让我们看看 `switch.php` 的代码：
 
 ```php
 <?php
 $domain = "my-site.com";
-
 if (strstr($_SERVER['HTTP_REFERER'], $domain)) {
     $bounce_url = $_SERVER['HTTP_REFERER'];
 } else {
     $bounce_url = "http://$domain/";
 }
-
 setcookie('style', $_GET['style'], time() + 3153600);
 header("Location: $bounce_url");
 ?>
@@ -7977,51 +7184,45 @@ header("Location: $bounce_url");
 
 通过这种方法，我们可以切换页面的样式，而无需依赖 JavaScript 是否启用。这是一种处理用户偏好的稳健方法，特别是对于那些禁用了 JavaScript 的用户。
 
-
-
-
-
-# 胡言乱语：CSS 切换策略
+## 胡言乱语：CSS 切换策略
 
 一旦设置了 Cookie，我们只需将用户重定向回文件开头设置的 `$bounce_url`。我们在 `switch.php` 顶部包含了一些处理逻辑，用于检查用户的引用来源（即 Referer URL，即用户在访问 `switch.php` 之前访问的页面地址）。如果用户的来源是 `$domain`（通过 `if strpos($_SERVER['HTTP_REFERER'], $domain)` 判断），我们将直接将用户重定向回该页面。然而，如果另一个网站直接链接到我们的样式切换器，我们将 `$bounce_url` 设置为我们的首页（`$bounce_url = $_SERVER['HTTP_REFERER'];`）。
 
 这样，我们以极快的速度设置了 Cookie 并将用户重定向回站点。接下来会发生什么？我们需要设置一些逻辑来处理刚刚制作的 Cookie。让我们深入看看能发现什么。
 
-# 享用 Cookie
+## 享用 Cookie
 
 第二步需要直接在我们的 HTML 中插入一些 PHP 代码——这并不困难，但我们首先需要将标记语言转换为 PHP 服务器可以读取的格式。为此，我们只需重命名文件，并将其扩展名从 `.html` 改为 `.php`——如果系统管理员尽职尽责，那么为了这点 PHP 技巧，这就是符合 XHTML 所需的所有。
 
 一旦更改了扩展名，我们可以在文档的 `<head>` 部分插入以下代码：
 
-```
+```php
 <link rel="stylesheet" href="main.css" type="text/css" />
 <?php
 if ($_COOKIE['mystyle']) {
+?>
   <link rel="stylesheet" href="<?php echo $_COOKIE['mystyle']; ?>.css" type="text/css" media="screen" />
-<?php}
-}?>
+<?php
+}
+?>
 ```
 
-```
+```html
 <link rel="alternate stylesheet" title="Higher Contrast" href="contrast.css" />
 <link rel="alternate stylesheet" title="Gratuitous CSS" href="hot.css" type="text/css" />
 ```
 
-当我们的标记文档在浏览器中加载时，这段 PHP 代码段会被插入到 `<head>` 中。如果设置了 "mystyle" Cookie（或其值为空字符串），则包裹在 `if {...}` 语句中的代码都不会执行。然而，如果我们的 Cookie 存在，就会会在标记中打印一个新的 `link` 元素。让我们详细说明。
+当我们的标记文档在浏览器中加载时，这段 PHP 代码段会被插入到 `<head>` 中。如果设置了 `mystyle` Cookie（或其值为空字符串），则包裹在 `if {...}` 语句中的代码都不会执行。然而，如果我们的 Cookie 存在，就会会在标记中打印一个新的 `link` 元素。让我们详细说明。
 
-根据我们在 `$switchrounder` 中放入的查询字符串，“mystyle" Cookie 的两个可能值为 `hot` 或 `contrast`。因此，如果你点击一个 `href` 为 `switch.php?style=hot` 的链接，生成的 link 元素将是：
+根据我们在 `$switchrounder` 中放入的查询字符串，`mystyle` Cookie 的两个可能值为 `hot` 或 `contrast`。因此，如果你点击一个 `href` 为 `switch.php?style=hot` 的链接，生成的 link 元素将是：
 
-```
+```html
 <link rel="stylesheet" href="hot.css" type="text/css" />
 ```
 
 至此，我们成功完成了 PHP 样式表切换器。在之前为 JavaScript 切换器概述的基础和概念基础上，我们现在实现了一种允许用户随所欲选择设计的解决方案，而且技术门槛低得多。
 
-003
-
-# 第 8 章
-
-# 浏览器之外的 CSS
+## 第 8 章：浏览器之外的 CSS
 
 现在，我们已经确定文档在现代桌面浏览器中查看时非常吸引人。我们还探索了允许用户更改站点展示层的不同方法。当我们将文档移出浏览器上下文时会发生什么？当我们尝试打印其中一个高度样式化的设计时会发生什么？
 
@@ -8031,27 +7232,21 @@ if ($_COOKIE['mystyle']) {
 
 图 8-8：这是我们页面的打印版本（或者说是一个预览）。我们完全可以做得。
 
-304
-
-# 胡言乱语：CSS 切换策略
+## 胡言乱语：CSS 切换策略
 
 如你所见，我们的设计在打印时显示过多，但并没有特别有效。页面的背景颜色和图形消失了，因为打印机默认不会渲染它们。此外，控制页面布局的规则仍然完整无损。我们的内容似乎被无故地推到了页面下方。顶部的空白没有任何意义，而我们在正文中选用的较小无衬线字体在屏幕上可能没问题（当用户可以根据需要增大字体时），但对于纸张来说并不理想。衬线字体通常用于提高阅读页面时的可读性，比我们现在的字号小几点可能并无大碍。事实上，除非你是艾米丽·迪金森（Emily Dickinson），否则这个打印版本并不吸引人。
 
 因此，最终我们应该为页面的打印版本创建一个设计——一种强调尺寸而非实用性的设计，同时又不完全牺牲美学。这需要我们付出不小的开销。设计独立的、“仅限打印”版本的页面很大程度上仍留在我们的记忆中。保持这些“轻量设计”页面与它们的“全设计”对应版本同步将是一项极其耗时耗资源的工作，通常需要复杂的电子表格、痛苦的人工编辑，以及偶尔在显示器前的咒骂。
 
-# 媒体类型：解决之道
+## 媒体类型：解决之道
 
 CSS 规范的作者预见到了这个问题。他们引入了媒体类型（media types）的概念，这是一种分类样式的方法，以帮助打印机、计算机显示器、屏幕阅读器、手持互联网设备等不同设备。通过简单将我们的三个链接标记为针对图形浏览器的特定设计：
 
-```
+```html
 <link rel="stylesheet" href="main.css" type="text/css" media="screen" />
 <link rel="alternate stylesheet" title="Higher Contrast" href="contrast.css" type="text/css" media="screen" />
 <link rel="alternate stylesheet" title="Gratuitous CSS" href="hot.css" type="text/css" media="screen" />
 ```
-
-
-
-
 
 ```css
 h1, h2 {
@@ -8060,11 +7255,9 @@ h1, h2 {
   padding: 0;
   text-transform: small-caps;
 }
-
 img.portrait, #switcher {
   display: none;
 }
-
 #blurb {
   background: #CCC;
   border: 1px solid #999;
@@ -8086,7 +7279,7 @@ img.portrait, #switcher {
 
 ## 第 8 章
 
-在创建了打印特定的样式表后，让我们将其包含在文档的 `<head>` 标签中。我们一直会使用链接来这样做，但我们会额外注意指定正确的媒体类型：即 "print"：
+在创建了打印特定的样式表后，让我们将其包含在文档的 `<head>` 标签中。我们一直会使用链接来这样做，但我们会额外注意指定正确的媒体类型：即 `print`：
 
 ```html
 <link rel="stylesheet" href="main.css" type="text/css" media="screen" />
@@ -8095,7 +7288,9 @@ img.portrait, #switcher {
 <link rel="alternate" title="Gratuitous CSS" href="hot.css" type="text/css" media="screen" />
 ```
 
-当我们再次尝试打印时，结果应该会更合视觉眼缘。这一次，屏幕特定的样式表将被忽略，我们的 `print.css` 将允许控制呈现效果。正如图 8-10 所示，我们的假设将会是。
+
+
+当我们再次尝试打印时，结果应该会更合视觉眼缘。这一次，屏幕特定的样式表将被忽略，我们的`print.css`将允许控制呈现效果。正如图 8-10 所示，我们的假设将会是。
 
 ![](img/70fa4d3a461f43c7a35cac2b93273d_332.png)
 
@@ -8103,7 +7298,7 @@ img.portrait, #switcher {
 
 ## 胡说八道：CSS 策略
 
-我们那极微小的无衬线字体已被替换为更具吸引力的衬线字体。当然，我们不是那种满足于平庸字体的人；我们选择在页面的打印版本中使用更具吸引力的 Garamond 或 Georgia 字体。而我们之前将 `#blurb` 作为全列块，现在我们使用 `float` 将其拉出文档流，让我们的引言具有更多“正文内”的感觉。
+我们那极微小的无衬线字体已被替换为更具吸引力的衬线字体。当然，我们不是那种满足于平庸字体的人；我们选择在页面的打印版本中使用更具吸引力的 Garamond 或 Georgia 字体。而我们之前将`#blurb`作为全列块，现在我们使用`float`将其拉出文档流，让我们的引言具有更多“正文内”的感觉。
 
 这一切的发生与我们在屏幕设计上的进展无关。本质上，媒体类型允许我们为页面创建两个独立且不同的“视图”：屏幕（富含审美）版本和离线（关注内容）打印视图。一个标记文档显示在多个设备上。样式表允许我们实现设备无关性的承诺，让我们免于那些在深夜对着电脑显示器大吼的时刻。
 
@@ -8115,46 +7310,39 @@ img.portrait, #switcher {
 
 ## 胡说八道：构建更好的切换器
 
-我们很幸运，某些创新人士已经在沿着这个方向思考了。这就是位于英国威尔士的设计工作室 Stuff and Nonsense（www.malarkey.co.uk/）。（图 8-11 显示了它的首页）。快速浏览一下该工作室的作品集（www.malarkey.co.uk/Our_work_and_our_clients.aspx）可以得出两个独立的认识：首先，该工作室为迪士尼和世界自然基金会等全球知名品牌创作过引人注目、精漂亮的作品；他们作品集中每个网站的设计都由层叠样式表驱动，并构建在有效的 XHTML 基础之上。
+我们很幸运，某些创新人士已经在沿着这个方向思考了。这就是位于英国威尔士的设计工作室 Stuff and Nonsense（`www.malarkey.co.uk/`）。（图 8-11 显示了它的首页）。快速浏览一下该工作室的作品集（`www.malarkey.co.uk/Our_work_and_our_clients.aspx`）可以得出两个独立的认识：首先，该工作室为迪士尼和世界自然基金会等全球知名品牌创作过引人注目、精漂亮的作品；他们作品集中每个网站的设计都由层叠样式表驱动，并构建在有效的 XHTML 基础之上。
 
 ![](img/70fa4d3a461f43c7a35cac2b93273d_334.png)
 
-图 8-1：Stuff and Nonsense 的首页（www.malarkey.co.uk/），一家位于英国备受推崇的设计机构。
+图 8-1：Stuff and Nonsense 的首页（`www.malarkey.co.uk/`），一家位于英国备受推崇的设计机构。
 
-显然，Web 标准是 Stuff and Nonsense 的热情。但当你浏览它的网站时，对用户需求的显而易见的尊重每天都在发生。每个页面显显著位置处都有一个链接，邀请用户“自定义此网站”（www.malarkey.co.uk/customise_this_site.php），如图 8-12 所示。当打印页面时，用户...
+显然，Web 标准是 Stuff and Nonsense 的热情。但当你浏览它的网站时，对用户需求的显而易见的尊重每天都在发生。每个页面显显著位置处都有一个链接，邀请用户“自定义此网站”（`www.malarkey.co.uk/customise_this_site.php`），如图 8-12 所示。当打印页面时，用户……
 
-
-
-
-
-## 第8 章
+## 第 8 章
 
 我的艺术背景一直让我工作工作时拥有创意的眼光，当我搬到伦敦的一家创意广告公司工作时，我抓住了这个机会。
 
 那是 Web 开始走向“商业化”的时期，我很早地发现 Web 的运作与广告一样：传递信息并吸引受众关注。随后，在 1998 年，我离开了伦敦，不久后，人们开始询问：“你能做……吗？”七年后，我非常幸运，因为他们并没有停止过提问。
 
 - 你们的工作室 Stuff and Nonsense 的名单列出一系列令人印象深刻的品牌，包括（但不限于）英国迪士尼乐货商店和英国 Wild Federation。更令人印象深刻的是，你们所有的作品都经过了精妙的设计，并使用 HTML/CSS 构建。为什么要使用 Web 标准？
-
 - 为什么不呢？我不认为 Web 标准（或其重要性）、可访问性是某种问题。我相信它们仅仅是“正确”完成这项工作的一部分。在与 Stuff and Nonsense 合作期间，我学到的点之一是他们很少说“如何”做某项工作。他们关心的是成功地与目标受众建立联系。
 
 你提到了英国迪士尼乐货商店，我认为可以说，大多数客户虽然没有要求建立符合标准的网站，但他们希望缩短下载时间、获得更快的购物体验，并有更容易更新网站。使用 Web 技术实现设计符合他们的需求，并完美实现了他们的目标。
 
-迪士尼商店网站是使用 Karova 平台（www.karova.com/）开发的，该平台不仅将展示层与网站的其他部分分离，而且采用了 XML 架构而非数据库后端。XML 通过 XSLT 转换为 HTML，最终结果是一个灵活的网站，允许英国迪士尼商店在未来通过 RSS 馈送提供内容的新机会。归根底，客户最关心的不是“工具”，而是为其提供的解决方案。Web 标准提供了更多解决方案，这就是为什么 Stuff and Nonsense 仅使用标准进行开发。
+迪士尼商店网站是使用 Karova 平台（`www.karova.com/`）开发的，该平台不仅将展示层与网站的其他部分分离，而且采用了 XML 架构而非数据库后端。XML 通过 XSLT 转换为 HTML，最终结果是一个灵活的网站，允许英国迪士尼商店在未来通过 RSS 馈送提供内容的新机会。归根底，客户最关心的不是“工具”，而是为其提供的解决方案。Web 标准提供了更多解决方案，这就是为什么 Stuff and Nonsense 仅使用标准进行开发。
 
 - 那么，你能向我们介绍一下你搞出的那个小玩意吗？关于一个样式切换器，我们想了解……
+- 你指的是“灵魂交换入侵”（Invasion of the Body Switchers, IOTBS）吗？我在《A List Apart》杂志（`www.alistapart.com/articles/bodyswitches/`）上写过这个样式切换器。嗯，关于核心技术细节我不能告诉你们。IOTBS 背后的技术天才是我的好朋友 James Edwards（`www.brothercake.com`），他将我的概念变成了现实并运行。
 
-- 你指的是“灵魂交换入侵”（Invasion of the Body Switchers, IOTBS）吗？我在《A List Apart》杂志（www.alistapart.com/articles/bodyswitches/）上写过这个样式切换器。嗯，关于核心技术细节我不能告诉你们。IOTBS 背后的技术天才是我的好朋友 James Edwards（www.brothercake.com），他将我的概念变成了现实并运行。
+Web 标准的重要方面之一是让设计师在处理展示时，不会让 CSS 改变网页的底层标记（HTML 或 XHTML）。没有哪个地方比 Shea 的禅意花园（`www.cssengarden.com/`）更能更好地说明这一点了，在那里，我们通过使用 CSS 样式表设计了同一个页面的不同版本。
 
-Web 标准的重要方面之一是让设计师在处理展示时，不会让 CSS 改变网页的底层标记（HTML 或 XHTML）。没有哪个地方比 Shea 的禅意花园（www.cssengarden.com/）更能更好地说明这一点了，在那里，我们通过使用 CSS 样式表设计了同一个页面的不同版本。
-
-“切换”样式表出于各种原因有可能是必要的。客户可能希望为访问者提供在固定宽度或“流式”布局之间切换的能力——设计师兼作者 Dan Cederholm 在他的 SimpleBits 网站（www.simplebits.com/）上就提供了这样一种选择。或者，你可能希望为访问者提供一种“具有可访问性”的设计。这种可能性是无限的，有时目标和结果是严肃的，有时仅仅是种噱头。
+“切换”样式表出于各种原因有可能是必要的。客户可能希望为访问者提供在固定宽度或“流式”布局之间切换的能力——设计师兼作者 Dan Cederholm 在他的 SimpleBits 网站（`www.simplebits.com/`）上就提供了这样一种选择。或者，你可能希望为访问者提供一种“具有可访问性”的设计。这种可能性是无限的，有时目标和结果是严肃的，有时仅仅是种噱头。
 
 ## Stuff and Nonsense：CSS 切换策略
 
 服务器端和 JavaScript 样式表切换已经存在多年。让“灵魂交换入侵”与众不同的是它能够独立切换屏幕、打印机和其他媒体类型，而这一切只需要一个 CSS 文件和一个 JavaScript 文件。我对 IOTBS 感到自豪，并希望它能说服更多设计师通过标准来扩展他们的创意选择。
 
-- Q：我们看到它在 Stuff and Nonsense 网站（www.malakey.co.uk/）上被大量使用。你在任何专业项目中使用过它吗？这对客户来说很重要……
-
+- Q：我们看到它在 Stuff and Nonsense 网站（`www.malakey.co.uk/`）上被大量使用。你在任何专业项目中使用过它吗？这对客户来说很重要……
 - A：对我们的客户来说，越来越重要的是提供各种选择。“灵魂交换入侵”样式切换器可以为不同的访问者群体提供相同的设计方案。通过使用 CSS“显示属性”，我们还可以隐藏和显示内容。
 
 这在最近针对年轻人的项目中取得了极佳的效果。通过利用 IOTBS 开启的可能性，我们不再需要选择三个或更多版本的 XHTML 文档甚至整个网站。这缩短了开发时间，使我们的业务更高效，并为客户节省了费用。
@@ -8166,12 +7354,7 @@ Web 标准的重要方面之一是让设计师在处理展示时，不会让 CSS
 Web 与任何其他媒体都不同。在电视中，无论你在多大的屏幕上观看，画面都基本保持不变。CRT、LCD 还是等离子屏，17 英寸便携式还是 52 英寸宽屏，东西大体相同。我们控制内容的交付方式，Web 设计师必须记住，访问者的意见比他们自己的更重要。
 
 - Q：研究了一下，似乎网上有很多样式切换器。其中一些依赖于客户端 JavaScript（像你一样），另一些依赖于某些后端编码。这两种方法有明显的优势吗？
-
 - A：没有明显的优势，但取决于需求。客户端对用户来说通常更快，但后端更利于缓存。（注：原文此处有大量重复内容，译文已按要求去重）
-
-
-
-
 
 ## 杂谈与胡说：CSS 切换策略
 
@@ -8187,13 +7370,13 @@ Web 与任何其他媒体都不同。在电视中，无论你在多大的屏幕�
 
 问：你遇到过比其他问题更常见的 CSS 问题吗？你是如何处理它们的？
 
-答：对我来说，CSS 问题比较少见，当它们露出丑陋面时，通过在 Google 上搜一下就能找到解决方案。许多脑子比我大得多的人——Brothercake、Dave Shea (http://mezzblue.com)、Doug Bowman (http://topdesign.com/) 以及 John Gall——立刻出现在我脑海中，他们对我做梦也梦过的浏览器 Bug 和行为有解决方案。有时我会诅咒某一个浏览器或另一个浏览器，并说“如果用表格的话就会容易多了！”但那些极端情况更少见。
+答：对我来说，CSS 问题比较少见，当它们露出丑陋面时，通过在 Google 上搜一下就能找到解决方案。许多脑子比我大得多的人——Brothercake、Dave Shea（`http://mezzblue.com`）、Doug Bowman（`http://topdesign.com/`）以及 John Gall——立刻出现在我脑海中，他们对我做梦也梦过的浏览器 Bug 和行为有解决方案。有时我会诅咒某一个浏览器或另一个浏览器，并说“如果用表格的话就会容易多了！”但那些极端情况更少见。
 
 现在有方法可以修复或绕过几乎每一个 CSS 问题，当问题意外出现时，采取逻辑化的方法是非常重要的，因为某个元素与另一个元素的组合可能会触发问题。
 
 验证极其重要，在甚至打开 CSS 文件之前，我会首先确保我的代码通过了验证。如果我的代码 CSS 验证通过但问题仍然出现，我会解构页面，逐个移除元素，以看到是哪个元素在折磨我的理智。
 
-许多浏览器非常有名，以至于专门为它们建立了像 Everything (www.positioniseeverything.net/)这样的网站。如果在 PIE 或许多其他网站上找不到答案，我建议向为 Eric Meyer (www.meyer.com) 优秀的 CSS-D 邮件列表 (http://css-discuss.org/) 贡献的众多专家提问。礼貌一点，你可能会找到一个有解决方案的灵魂。
+许多浏览器非常有名，以至于专门为它们建立了像 Everything（`www.positioniseverything.net/`）这样的网站。如果在 PIE 或许多其他网站上找不到答案，我建议向为 Eric Meyer（`www.meyer.com`）优秀的 CSS-D 邮件列表（`http://css-discuss.org/`）贡献的众多专家提问。礼貌一点，你可能会找到一个有解决方案的灵魂。
 
 问：你到底在“成功的”网站设计中寻找什么？你有什么非常看重的设计原则吗？
 
@@ -8250,7 +7433,7 @@ Web 与任何其他媒体都不同。在电视中，无论你在多大的屏幕�
 
 在本章中，首席作者 Christopher Schmitt 展示了构建他自己的主页设计的过程。他阐述了之前章节中的课程（以及一些新技术）如何对你自己的项目有帮助。
 
-## Christopher Schmitt – 作者、设计师、Web 构建者、创意生成器
+## Christopher Schmitt：作者、设计师、Web 构建者、创意生成器
 
 | 简历 | 作品集 | 写作 | 参考文献 | 联系方式 |
 | :--- | :--- | :--- | :--- | :--- |
@@ -8263,15 +7446,11 @@ Web 与任何其他媒体都不同。在电视中，无论你在多大的屏幕�
 
 ## 规划节省时间
 
-我关于图形设计规划的第一个教训是在我读高中新闻专业时，当时我是图形编辑，我的职责包括为每期八页报纸创建图像。虽然今天很容易在网站上浏览并在 iStockPhoto.com 下载廉价免版税图片，但在 1991 年，这个过程要辛苦得多。
+我关于图形设计规划的第一个教训是在我读高中新闻专业时，当时我是图形编辑，我的职责包括为每期八页报纸创建图像。虽然今天很容易在网站上浏览并在`iStockPhoto.com`下载廉价免版税图片，但在 1991 年，这个过程要辛苦得多。
 
 在我处理的前几个期中，我从员工那里收集文章列表，以确定下期需要多少张图像。拿着列表，我坐在 Macintosh 电脑前面对一个空白的 Photoshop 文档。
 
-
-
-
-
-# 第9章
+# 第 9 章
 
 当第三期任务快结束时，我意识到自己并没有有效地使用电脑。我花了许多小时急急忙忙地试图从无到有创建图形，而不是带着议程或目标来到电脑前。解决方案是改变我对待电脑和工作的方式。
 
@@ -8283,22 +7462,20 @@ Web 与任何其他媒体都不同。在电视中，无论你在多大的屏幕�
 
 ## 定义网站范围
 
-在第1章牢牢刻并强调了规划的教训后，让我们为我的新网站定义目标、交付物和假设：
+在第 1 章牢牢刻并强调了规划的教训后，让我们为我的新网站定义目标、交付物和假设：
 
 - 目标：
-    - 提升审美设计。我目前的网站是一个基于 CSS 构建的简单、直接的 Web Site。网站的目标之一是更具视觉吸引力，并进一步推陈 CSS 的边界。
-    - 添加博客。为了方便更新网站，我想实现博客软件。我首选的软件是 WordPress，因为它依赖于开源软件（PHP 和 MySQL）。此外，我熟悉这两种技术，因此我应该能够比其他解决方案更容易对代码进行调整并集成网站的组件。
-    - 提供实用的导航。设计必须让导航简单化，并且在纯文本浏览器或屏幕阅读器上同样可用。
-    - 更新照片。随着设计的改进，我想在页眉中包含一张照片，并在当我用我那可靠的数字相机拍到有趣的照片时对其更新。
-    - 增加网站流量。我的域名仍然是主要目标。虽然博客软件将有助于管理内容，但网站更新必须定期进行。这意味着作为唯一的内容生产者，我必须定期发布。
-
+  - 提升审美设计。我目前的网站是一个基于 CSS 构建的简单、直接的 Web Site。网站的目标之一是更具视觉吸引力，并进一步推陈 CSS 的边界。
+  - 添加博客。为了方便更新网站，我想实现博客软件。我首选的软件是 WordPress，因为它依赖于开源软件（PHP 和 MySQL）。此外，我熟悉这两种技术，因此我应该能够比其他解决方案更容易对代码进行调整并集成网站的组件。
+  - 提供实用的导航。设计必须让导航简单化，并且在纯文本浏览器或屏幕阅读器上同样可用。
+  - 更新照片。随着设计的改进，我想在页眉中包含一张照片，并在当我用我那可靠的数字相机拍到有趣的照片时对其更新。
+  - 增加网站流量。我的域名仍然是主要目标。虽然博客软件将有助于管理内容，但网站更新必须定期进行。这意味着作为唯一的内容生产者，我必须定期发布。
 - 交付物：
-    - Photoshop 设计稿。网站设计将包含一个主页设计，该设计可以修改用于网站的其他页面。
-    - HTML+CSS 模板。在 Photoshop 中完成设计后，我将用有效的 HTML 和 CSS 构建设计模板。一旦模板完成，下一步是将它们集成到博客软件中。
-
+  - Photoshop 设计稿。网站设计将包含一个主页设计，该设计可以修改用于网站的其他页面。
+  - HTML+CSS 模板。在 Photoshop 中完成设计后，我将用有效的 HTML 和 CSS 构建设计模板。一旦模板完成，下一步是将它们集成到博客软件中。
 - 假设：
-    - 受众。大部分情况下，网站的受众是精通电脑和 Web 的。由于我 Web 设计工作的性质，我的主要受众拥有比平均水平更好的计算机系统，包括最新的 Web 浏览器和显示器分辨率。
-    - 浏览器。考虑到高级受众，网站设计应针对特定的浏览器。我将为 Windows 版 Internet Explorer 5.5+、Netscape Navigator 7+、Safari 和 Firefox 1+ 构建网站。
+  - 受众。大部分情况下，网站的受众是精通电脑和 Web 的。由于我 Web 设计工作的性质，我的主要受众拥有比平均水平更好的计算机系统，包括最新的 Web 浏览器和显示器分辨率。
+  - 浏览器。考虑到高级受众，网站设计应针对特定的浏览器。我将为 Windows 版 Internet Explorer 5.5+、Netscape Navigator 7+、Safari 和 Firefox 1+ 构建网站。
 
 ## 内容与网站地图
 
@@ -8317,17 +7494,17 @@ Web 与任何其他媒体都不同。在电视中，无论你在多大的屏幕�
 
 根据我的经验，客户会编写自己的内容，或者减少章节数量以节省成本。然而，支付专业的文案人员或技术作家来创作高质量内容，更有可能提高项目的成功率。
 
-# 第9章
+# 第 9 章
 
 在对自己的内容进行检查后，我确定这些是我网站的主要部分，如图 9-3 所示：
 
-- 首页 (Home)。链接回正前页。
-- 日记 (Journal)。博客的主页，包含指向存档博客条目的链接。
-- 关于我 (About)。简短的个人简介部分。
-- 作品 (Work)。我的打印作品和作品的作品集部分。
-- 商店 (Shop)。人们购买书籍和其他销售物品的区域。
-- 出版 (Publications)。我的文章和演讲活动列表。
-- 联系我们 (Contact)。网站的联系表单应该始终让受众易于触及。
+- 首页（Home）。链接回正前页。
+- 日记（Journal）。博客的主页，包含指向存档博客条目的链接。
+- 关于我（About）。简短的个人简介部分。
+- 作品（Work）。我的打印作品和作品的作品集部分。
+- 商店（Shop）。人们购买书籍和其他销售物品的区域。
+- 出版（Publications）。我的文章和演讲活动列表。
+- 联系我们（Contact）。网站的联系表单应该始终让受众易于触及。
 
 ![](img/70fa44d3a461f43c7a35cac2b893273d_346_0.png)
 
@@ -8341,11 +7518,11 @@ Web 与任何其他媒体都不同。在电视中，无论你在多大的屏幕�
 
 # 整合整体
 
-![](img/70fa44d3a461f43c7a35cac2b893273d_347_0.png)
+![](img/70fa4d3a461f43c7a35cac2b893273d_347_0.png)
 
 图 9-4：页面设计的线框图
 
-# 第9章
+# 第 9 章
 
 # 设计网站
 
@@ -8366,15 +7543,11 @@ Web 与任何其他媒体都不同。在电视中，无论你在多大的屏幕�
 - Why did *you* sign the file?
 - Why did you sign the *file*?
 
-
-
-
-
 ## 综合设计
 
 在我的设计中，我希望整体基调是亲和的，这样人们就能以非正式的方式与网站进行互动。然而，同时我也希望展现出一种专业的形象。为了实现这一点，我希望将有机的特征（亲和）与结构化、保守的元素结合在一起。
 
-为了实现网站更具结构化、更保守的方法，CSS 盒模型的固有特性将有所帮助。此外，我将使用 SuperTiny Simcity 风格。如果你玩过《模拟城市》（SimCity）游戏，或者访问过看起来像 k10k 的网站（参见 www.k10k.net/），我会立刻想起所有这些图像。这种风格的特点是对比网格布局的度依赖，以及对像素化图像的推崇。
+为了实现网站更具结构化、更保守的方法，CSS 盒模型的固有特性将有所帮助。此外，我将使用 SuperTiny Simcity 风格。如果你玩过《模拟城市》（SimCity）游戏，或者访问过看起来像 k10k 的网站（参见 `www.k10k.net/`），我会立刻想起所有这些图像。这种风格的特点是对比网格布局的度依赖，以及对像素化图像的推崇。
 
 为了给网站的保守性质提供平衡，我将采用一些有机艺术品。我将依靠背景图片的创造性使用，以及一种与有机特征完美融合的特殊字体。
 
@@ -8386,13 +7559,13 @@ Web 与任何其他媒体都不同。在电视中，无论你在多大的屏幕�
 
 | 页面部分 | 字体 |
 | --- | --- |
-| Logo，特殊处理 | Not Caslon（参见 www.emigre.com/EF.php?fid=111) |
-| 标题 | Georgia, Times New Roman, Times (衬线体) |
-| 内容 | Verdana, Arial, Helvetica (无衬线体) |
+| Logo，特殊处理 | Not Caslon（参见 `www.emigre.com/EF.php?fid=111`） |
+| 标题 | Georgia, Times New Roman, Times（衬线体） |
+| 内容 | Verdana, Arial, Helvetica（无衬线体） |
 
 然而，对于 Logo（它将是我的名字），我想要使用 Émigré 的 Not Caslon，如图 9-5 所示。
 
-![](img/70fa44d3a461f43c7a35cac2b893273d_349_0.png)
+![](img/70fa4d3a461f43c7a35cac2b893273d_349_0.png)
 
 图 9-5：在 Logo 中显示的 Not Caslon
 
@@ -8410,23 +7583,23 @@ Web 与任何其他媒体都不同。在电视中，无论你在多大的屏幕�
 
 为了补充有机特征，我使用了圆圈与水平矩形的平衡，特别是在导航栏中，如图 9-6 所示。
 
-![](img/70fa44d3a461f43c7a35cac2b893273d_350_0.png)
+![](img/70fa4d3a461f43c7a35cac2b893273d_350_0.png)
 
 ## 布局
 
 随着线框图的完成，布局基本上定型了，但我想花点时间讨论一下布局某些方面的设计原理：
 
 - **导航。** 根据个人观察和偏好，我将导航放在右侧，因为大多数人在快速浏览网页时，光标会位于浏览器窗口的右侧。当用户想要跳转到不同的部分时，与菜单在左侧相比，光标到达导航栏所需的移动距离更短。完成任务的时间通常能为访客提供更好的服务体验。
-- **搜索框。** 我将搜索框放在页面顶部，因为那是 Jakob Nielsen 在他的网站上放置的位置（参见 www.use.com）。实际上，我把搜索放在那里是作为读者的“释放阀”。如果他们在点击几次导航后找不到想要的内容，可以去搜索框。但在 Google 等这些搜索引擎中，我意识到人们往往会先“浏览”一下搜索结果。
+- **搜索框。** 我将搜索框放在页面顶部，因为那是 Jakob Nielsen 在他的网站上放置的位置（参见 `www.use.com`）。实际上，我把搜索放在那里是作为读者的“释放阀”。如果他们在点击几次导航后找不到想要的内容，可以去搜索框。但在 Google 等这些搜索引擎中，我意识到人们往往会先“浏览”一下搜索结果。
 - **固定宽度，800 像素宽。** 作为一名设计师，我喜欢固定宽度设计带给我的控制。我赞于确保设计在 800 像素宽下足够大以填充屏幕。在 Web 显示器上，800 像素宽这种宽度略不寻常。分辨率可以扩展到 800 像素宽，而网页的视口通常不超过 792 像素，以确保整个页面可见。采用更大页面宽度的比例基于三点：
-    - **显示器分辨率**正在提高。新电脑出厂配备了可以处理更高分辨率的显示器。我网站的观众正在使用最新、最强大的计算机技术，并能够完美查看网站。
-    - **大胆。** 当我刚开始成为设计师时，我非常幸运参加了 Mario Garcia 博士的讲座，他重新设计了超过 30 多年的报纸（参见 www.mariogarcia.com/Profile.asp?pageid=50）。在他重新设计了我的当地报纸后，出版物邀请他向社区就这次重新设计进行演讲。他在演讲中提到的一个次要点是，他的客户在设计 Logo 时往往比较害羞。他特别强调要让 Logo 成为一个大胆的存在。
+  - **显示器分辨率**正在提高。新电脑出厂配备了可以处理更高分辨率的显示器。我网站的观众正在使用最新、最强大的计算机技术，并能够完美查看网站。
+  - **大胆。** 当我刚开始成为设计师时，我非常幸运参加了 Mario Garcia 博士的讲座，他重新设计了超过 30 多年的报纸（参见 `www.mariogarcia.com/Profile.asp?pageid=50`）。在他重新设计了我的当地报纸后，出版物邀请他向社区就这次重新设计进行演讲。他在演讲中提到的一个次要点是，他的客户在设计 Logo 时往往比较害羞。他特别强调要让 Logo 成为一个大胆的存在。
 
 ### 开发网站
 
 一旦标记完成，我在向 HTML 应用 CSS 属性时会采用*从外而内、从上到下*的方法。
 
-因此，我首先通过对 body 元素应用 CSS 规则来查看整个页面。这是从外而内的方法。我从页面顶部向下工作，处理页眉、导航、内容区域，然后是页脚。
+因此，我首先通过对`body`元素应用 CSS 规则来查看整个页面。这是从外而内的方法。我从页面顶部向下工作，处理页眉、导航、内容区域，然后是页脚。
 
 对于这个设计，第一步是考虑居中固定宽度布局。
 
@@ -8437,33 +7610,14 @@ Web 与任何其他媒体都不同。在电视中，无论你在多大的屏幕�
 幸运的是，在这个新的千年里，我们可以使用 CSS 而不必诉诸可怕的框架。让我们看看标记：
 
 ```html
-<body>
-  <div id="frame">
-    [...内容在此处... ]
-  </div>
-</body>
-```
-
-对于名为 `frame` 的 `div`，我们要设置宽度以及外边距：
-
-```css
-#frame {
-  width: 800px;
-  margin: 0 auto;
-}
-```
-
-`margin` 属性值是简写形式，告诉浏览器将元素顶部和底部的边距减为零，同时自动调整左右边距使其相等，如图 9-8 所示。
-
-
 
 
 
 # 第 9 章
 
-在一个只有完全符合 CSS 标准浏览器的世界里，我们只需要做这些少量的 CSS 就够了。然而，Windows 版 Internet Explorer 并不理解 margin（margin）的 `auto` 值，因此在那个浏览器中无法居中布局，如图 9-9 所示。
+在一个只有完全符合 CSS 标准浏览器的世界里，我们只需要做这些少量的 CSS 就够了。然而，Windows 版 Internet Explorer 并不理解`margin`的`auto`值，因此在那个浏览器中无法居中布局，如图 9-9 所示。
 
-为了解决 Internet Explorer 的问题，我们对 `body` 元素应用 `text-align` 属性：
+为了解决 Internet Explorer 的问题，我们对`body`元素应用`text-align`属性：
 
 ```css
 body {
@@ -8475,9 +7629,9 @@ body {
 
 ![](img/70fa44d3a461f43c7a35cac2b893273d_355_0.png)
 
-**图 9-9：** Windows 版 Internet Explorer 5.5 没有正确让 `div` 元素居中。
+**图 9-9：** Windows 版 Internet Explorer 5.5 没有正确让`div`元素居中。
 
-`text-align` 属性强制子元素框居中。这意味着，框架容器内的所有内容也会居中对齐。为了抵消这种效果，我为框架的声明块设置了它自己的有的 `text-align` 属性：
+`text-align`属性强制子元素框居中。这意味着，框架容器内的所有内容也会居中对齐。为了抵消这种效果，我为框架的声明块设置了它自己的`text-align`属性：
 
 ```css
 #frame {
@@ -8492,7 +7646,7 @@ body {
 ![](img/70fa44d3a461f43c7a35cac2b893273d_356_0.png)
 图 10：框架容器在 Windows 版 Internet Explorer 中居中。
 
-在设置好页面的 `body` 和 `frame` 后，我接着为页面上的每个元素设置了一些额外的 CSS 声明。
+在设置好页面的`body`和`frame`后，我接着为页面上的每个元素设置了一些额外的 CSS 声明。
 
 ## 字体大小
 
@@ -8501,12 +7655,12 @@ body {
 让我们来看看 Web 字体排版的一些常见问题：
 
 - 以像素值设置的字体（例如，`font-size: 12px;`）在 Windows 版 Internet Explorer 中无法调整大小。
-- 如果没有解决方法，使用 `font-size` 关键字的值并不是一个选择，因为 Windows 版 Internet Explorer 4/5.5 会将关键字的值设置为较低的值。例如，`x-small` 的值会被翻译为 `xx-small`。
+- 如果没有解决方法，使用`font-size`关键字的值并不是一个选择，因为 Windows 版 Internet Explorer 4/5.5 会将关键字的值设置为较低的值。例如，`x-small`的值会被翻译为`xx-small`。
 - 即使有 Windows 版 Internet Explorer 的解决方法（设置为传递适当的关键字值），想要比七种关键字大小对字体有更多控制权的设计师也无从下手。
 
 在进一步丧失理智之前，一种获得 Web 字体排版更大控制权的奇妙方法源于聪明的 Richard Butter 优秀的教程——“如何使用 Ems 调整文本大小”（参见 www.clagnut.com/blog/348）。
 
-Butter 的解决方案是先将 `body` 中的 `font-size` 值设置为 62.5%。
+Butter 的解决方案是先将`body`中的`font-size`值设置为 62.5%。
 
 ```css
 body {
@@ -8515,15 +7669,13 @@ body {
 }
 ```
 
-这一步的原理是，目前的浏览器将 `medium` 关键字的值设置为 16 像素，这是 HTML 文本的默认大小。通过将 `body` 的 `font-size` 设置为 62.5%，对于数学逻辑较弱的人来说，这转化为了一个易于管理的 10 像素：
+这一步的原理是，目前的浏览器将`medium`关键字的值设置为 16 像素，这是 HTML 文本的默认大小。通过将`body`的`font-size`设置为 62.5%，对于数学逻辑较弱的人来说，这转化为了一个易于管理的 10 像素：
 
 ```css
 16px * 62.5% = 10px
 ```
 
-设置好基础值 10 像素后，我仅使用单位调整文档中其他部分的文本大小。（一个 `em` 等于最近字体字体的默认大小。）
-
-例如，如果我想让部分文本为 12 像素，我将 `font-size` 属性的值设置为 `1.2em`。
+设置好基础值 10 像素后，我仅使用单位调整文档中其他部分的文本大小。（一个`em`等于最近字体字体的默认大小。）例如，如果我想让部分文本为 12 像素，我将`font-size`属性的值设置为`1.2em`。
 
 ```css
 16px * 62.5% * 1.2em = 12px
@@ -8534,378 +7686,6 @@ body {
 ```css
 16px * 62.5% * 2.5em = 25px
 ```
-
-为了不让我们继续失去理智，一种获得 Web 字体排版更大控制权的奇妙方法来自聪明的 Richard Butter 优秀的教程——“如何使用 Ems 调整文本大小”（参见 www.clagnut.com/blog/348）。
-
-62.5% 的 16px 是 10px。
-
-12.5% 的 16px 是 2px。
-
-12.5% 的 10px 是 1px。
-
-12.5% 的 16px 是 2px。
-
-18.75% 的 16px 是 3px。
-
-25% 的 16px 是 4px。
-
-31.25% 的 16px 是 5px。
-
-37.5% 的 16px 是 6px。
-
-43.75% 的 16px 是 7px。
-
-50% 的 16px 是 8px。
-
-56.25% 的 16px 是 9px。
-
-62.5% 的 16px 是 10px。
-
-68.75% 的 16px 是 11px。
-
-75% 的 16px 是 12px。
-
-81.25% 的 16px 是 13px。
-
-87.5% 的 16px 是 14px。
-
-93.75% 的 16px 是 15px。
-
-100% 的 16px 是 16px。
-
-112.5% 的 16px 是 18px。
-
-125% 的 16px 是 20px。
-
-137.5% 的 16px 是 22px。
-
-143.75% 的 16px 是 23px。
-
-150% 的 16px 是 24px。
-
-162.5% 的 16px 是 26px。
-
-175% 的 16px 是 28px。
-
-187.5% 的 16px 是 30px。
-
-193.75% 的 16px 是 31px。
-
-200% 的 16px 是 32px。
-
-212.5% 的 16px 是 34px。
-
-225% 的 16px 是 36px。
-
-237.5% 的 16px 是 38px。
-
-243.75% 的 16px 是 39px。
-
-250% 的 16px 是 40px。
-
-262.5% 的 16px 是 42px。
-
-275% 的 16px 是 44px。
-
-287.5% 的 16px 是 46px。
-
-293.75% 的 16px 是 47px。
-
-300% 的 16px 是 48px。
-
-312.5% 的 16px 是 50px。
-
-325% 的 16px 是 52px。
-
-337.5% 的 16px 是 54px。
-
-343.75% 的 16px 是 55px。
-
-350% 的 16px 是 56px。
-
-362.5% 的 16px 是 58px。
-
-375% 的 16px 是 60px。
-
-387.5% 的 16px 是 62px。
-
-393.75% 的 16px 是 63px。
-
-400% 的 16px 是 64px。
-
-412.5% 的 16px 是 66px。
-
-425% 的 16px 是 68px。
-
-437.5% 的 16px 是 70px。
-
-443.75% 的 16px 是 71px。
-
-450% 的 16px 是 72px。
-
-462.5% 的 16px 是 74px。
-
-475% 的 16px 是 76px。
-
-487.5% 的 16px 是 78px。
-
-493.75% 的 16px 是 79px。
-
-500% 的 16px 是 80px。
-
-512.5% 的 16px 是 82px。
-
-525% 的 16px 是 84px。
-
-537.5% 的 16px 是 86px。
-
-543.75% 的 16px 是 87px。
-
-550% 的 16px 是 88px。
-
-562.5% 的 16px 是 90px。
-
-575% 的 16px 是 92px。
-
-587.5% 的 16px 是 94px。
-
-593.75% 的 16px 是 95px。
-
-600% 的 16px 是 96px。
-
-612.5% 的 16px 是 98px。
-
-625% 的 16px 是 100px。
-
-637.5% 的 16px 是 102px。
-
-643.75% 的 16px 是 103px。
-
-650% 的 16px 是 104px。
-
-662.5% 的 16px 是 106px。
-
-675% 的 16px 是 108px。
-
-687.5% 的 16px 是 110px。
-
-693.75% 的 16px 是 111px。
-
-700% 的 16px 是 112px。
-
-712.5% 的 16px 是 114px。
-
-725% 的 16px 是 116px。
-
-737.5% 的 16px 是 118px。
-
-743.75% 的 16px 是 119px。
-
-750% 的 16px 是 120px。
-
-762.5% 的 16px 是 122px。
-
-775% 的 16px 是 124px。
-
-787.5% 的 16px 是 126px。
-
-793.75% 的 16px 是 127px。
-
-800% 的 16px 是 128px。
-
-812.5% 的 16px 是 130px。
-
-825% 的 16px 是 132px。
-
-837.5% 的 16px 是 134px。
-
-843.75% 的 16px 是 135px。
-
-850% 的 16px 是 136px。
-
-862.5% 的 16px 是 138px。
-
-875% 的 16px 是 140px。
-
-887.5% 的 16px 是 142px。
-
-893.75% 的 16px 是 143px。
-
-900% 的 16px 是 144px。
-
-912.5% 的 16px 是 146px。
-
-925% 的 16px 是 148px。
-
-937.5% 的 16px 是 150px。
-
-943.75% 的 16px 是 151px。
-
-950% 的 16px 是 152px。
-
-962.5% 的 16px 是 154px。
-
-975% 的 16px 是 156px。
-
-987.5% 的 16px 是 158px。
-
-993.75% 的 16px 是 159px。
-
-1000% 的 16px 是 160px。
-
-在设置好基础值 10 像素后，我仅使用单位调整文档中其他部分的文本大小。（一个 `em` 等于最近字体字体的默认大小。）例如，如果我想让部分文本为 12 像素，我将 `font-size` 属性的值设置为 `1.2em`。
-
-```css
-16px * 62.5% * 1.2em = 12px
-```
-
-如果我想设置较大的 25 像素值，我将这样设置：
-
-```css
-16px * 62.5% * 2.5em = 25px
-```
-
-为了不让我们继续失去理智，一种获得 Web 字体排版更大控制权的方法源于聪明的 Richard Butter 优秀的教程——“如何使用 Ems 调整文本大小”（参见 www.clagnut.com/blog/348）。
-
-Butter 的解决方案是先将 `body` 中的 `font-size` 值设置为 62.5%。
-
-```css
-body {
-  text-align: center;
-  font-size: 62.5%;
-}
-```
-
-这一步的原理是，目前的浏览器将 `medium` 关键字的值设置为 16 像素，这是 HTML 文本的默认大小。通过将 `body` 的 `font-size` 设置为 62.5%，对于数学逻辑较弱的人来说，这转化为了一个易于管理的 10 像素：
-
-```css
-16px * 62.5% = 10px
-```
-
-设置好基础值 10 像素后，我仅使用单位调整文档中其他部分的文本大小。（一个 `em` 等于最近字体字体的默认大小。）例如，如果我想让部分文本为 12 像素，我将 `font-size` 属性的值设置为 `1.2em`。
-
-```css
-16px * 62.5% * 1.2em = 12px
-```
-
-如果我想设置较大的 25 像素值，我将这样设置：
-
-```css
-16px * 62.5% * 2.5em = 25px
-```
-
-为了不让我们继续失去理智，一种获得 Web 字体排版更大控制权的方法源于聪明的 Richard Butter 优秀的教程——“如何使用 Ems 调整文本大小”（参见 www.clagnut.com/blog/348）。
-
-Butter 的解决方案是先将 `body` 中的 `font-size` 值设置为 62.5%。
-
-```css
-body {
-  text-align: center;
-  font-size: 62.5%;
-}
-```
-
-这一步的原理是，目前的浏览器将 `medium` 关键字的值设置为 16 像素，这是 HTML 文本的默认大小。通过将 `body` 的 `font-size` 设置为 62.5%，对于数学逻辑较弱的人来说，这转化为了一个易于管理的 10 像素：
-
-```css
-16px * 62.5% = 10px
-```
-
-设置好基础值 10 像素后，我仅使用单位调整文档中其他部分的文本大小。（一个 `em` 等于最近字体字体的默认大小。）例如，如果我想让部分文本为 12 像素，我将 `font-size` 属性的值设置为 `1.2em`。
-
-```css
-16px * 62.5% * 1.2em = 12px
-```
-
-如果我想设置较大的 25 像素值，我将这样设置：
-
-```css
-16px * 62.5% * 2.5em = 25px
-```
-
-（注：由于原文文本中存在重复段落，译文已根据要求进行去重处理，确保逻辑连贯且不重复输出。）
-
----
-
-**重新生成的完整翻译译文：**
-
-[content]
-
-# 第 9 章
-
-在一个只有完全符合 CSS 标准浏览器的世界里，我们只需要做这些少量的 CSS 就够了。然而，Windows 版 Internet Explorer 并不理解 margin 的 `auto` 值，因此在那个浏览器中无法居中布局，如图 9-9 所示。
-
-为了解决 Internet Explorer 的问题，我们对 `body` 元素应用 `text-align` 属性：
-
-```css
-body {
-  text-align: center;
-}
-```
-
-## 整合在一起
-
-![](img/70fa44d3a461f43c7a35cac2b893273d_355_0.png)
-
-**图 9-9：** Windows 版 Internet Explorer 5.5 没有正确让 `div` 元素居中。
-
-`text-align` 属性强制子元素框居中。这意味着，框架容器内的所有内容也会居中对齐。为了抵消这种效果，我为框架的声明块设置了它自己的 `text-align` 属性：
-
-```css
-#frame {
-  width: 800px;
-  margin: 0 auto;
-  text-align: left;
-}
-```
-
-现在，框架容器内的内容在所有现代浏览器中都是居中的，如图 9-10 所示。
-
-![](img/70fa44d3a461f43c7a35cac2b893273d_356_0.png)
-图 10：框架容器在 Windows 版 Internet Explorer 中居中。
-
-在设置好页面的 `body` 和 `frame` 后，我接着为页面上的每个元素设置了一些额外的 CSS 声明。
-
-## 字体大小
-
-尽管 CSS 为 Web 设计中的排版提供了更精细的控制，但确定设置字体大小的最佳方法并不是一件易事。对于热爱排版的设计师来说（像我一样），很难不亲自让浏览器在设计中运行我们设计中的字体。
-
-让我们来看看 Web 字体排版的一些常见问题：
-
-- 以像素值设置的字体（例如，`font-size: 12px;`）在 Windows 版 Internet Explorer 中无法调整大小。
-- 如果没有解决方法，使用 `font-size` 关键字的值并不是一个选择，因为 Windows 版 Internet Explorer 4/5.5 会将关键字的值设置为较低的值。例如，`x-small` 的值会被翻译为 `xx-small`。
-- 即使有 Windows 版 Internet Explorer 的解决方法（设置为传递的关键字关键字），想要比七种关键字大小对字体有更多控制权的设计师也无从下手。
-
-在进一步丧失理智之前，一种获得 Web 字体排版更大控制权的方法源于聪明的 Richard Butter 优秀的教程——“如何使用 Ems 调整文本大小”（参见 www.clagnut.com/blog/348）。
-
-Butter 的解决方案是先将 `body` 中的 `font-size` 值设置为 62.5%。
-
-```css
-body {
-  text-align: center;
-  font-size: 62.5%;
-}
-```
-
-这一步的原理是，目前的浏览器将 `medium` 关键字的值设置为 16 像素，这是 HTML 文本的默认大小。通过将 `body` 的 `font-size` 设置为 62.5%，对于数学逻辑较弱的人来说，这转化为了一个易于管理的 10 像素：
-
-```css
-16px * 62.5% = 10px
-```
-
-设置好基础值 10 像素后，我仅使用单位调整文档中其他部分的文本大小。（一个 `em` 等于最近字体字体的默认大小。）例如，如果我想让部分文本为 12 像素，我将 `font-size` 属性的值设置为 `1.2em`。
-
-```css
-16px * 62.5% * 1.2em = 12px
-```
-
-如果我想设置较大的 25 像素值，我将这样设置：
-
-```css
-16px * 62.5% * 2.5em = 25px
-```
-
-
 
 
 
@@ -8913,15 +7693,15 @@ body {
 
 ![](img/70fa44d3a461f43c7a35cac2b893273d_361_0.png)
 
-图 9-14：设置 fieldset 元素的样式
+图 9-14：设置 `fieldset` 元素的样式
 
-通过这条 CSS 规则，我移除了边框、外边距（margins）和内边距（padding）。接下来，我添加了绿色 (#d9ff00) 以匹配水平重复的背景图像。添加颜色是为了在用户默认字体大小比正常值大的情况下，至少背景颜色能显示出来。最后一条声明允许浏览器将内容向右滚动。
+通过这条 CSS 规则，我移除了边框、外边距（`margins`）和内边距（`padding`）。接下来，我添加了绿色（`#d9ff00`）以匹配水平重复的背景图像。添加颜色是为了在用户默认字体大小比正常值大的情况下，至少背景颜色能显示出来。最后一条声明允许浏览器将内容向右滚动。
 
-下一步是隐藏图例（legend）的值，这很很容易办到：
+下一步是隐藏图例（`legend`）的值，这很容易办到：
 
 ```css
 fieldset#search legend {
-display: none;
+  display: none;
 }
 ```
 
@@ -8931,15 +7711,15 @@ display: none;
 
 ```css
 fieldset form {
-margin: 0 30px 0;
-padding: 4px 0;
-font-size: 0.8em;
+  margin: 0 30px 0;
+  padding: 4px 0;
+  font-size: 0.8em;
 }
 ```
 
 ![](img/70fa44d3a461f43c7a35cac2b893273d_361_1.png)
 
-图 9-15：设置 form 元素的样式
+图 9-15：设置 `form` 元素的样式
 
 ## 第 9 章
 
@@ -8996,7 +7776,7 @@ fieldset#search form input.submit {
 since 1975"><img src="/assets/logo.gif" alt="Christopher Schmitt
 logo border="0"/></a>
   <p>derived from simple pleasures</p>
-</div
+</div>
 ```
 
 ![](img/70fa44d3a461f43c7a35cac2b893273d_363_0.png)
@@ -9005,17 +7785,17 @@ logo border="0"/></a>
 
 ## 拆解 HTML
 
-虽然最后两项（跳过到内容和搜索框）可以被视为头部的一部分，但我将它们留在了名为 "header" 的 div 容器之外，因为我希望这个 div 包含我认为本质上属于头部的组件，即 Logo 和标语。
+虽然最后两项（跳过到内容和搜索框）可以被视为头部的一部分，但我将它们留在了名为 `"header"` 的 `div` 容器之外，因为我希望这个 `div` 包含我认为本质上属于头部的组件，即 Logo 和标语。
 
-如果你还记得第 5 章关于 UFL edu 网站重新设计的内容，导航标签被设置在 h2 元素中，以赋予 Mark Trammell 所说的“适当的份量”（the proper gravity）——标签在页面内容以及整个网站中起着至关重要的作用。使用带有 JAWS 的辅助浏览器可以从改进的标记中获益，但搜索引擎也会注意到一个元素为内容增加的额外权重。出于此考虑，我将图像封装在了一个 h1 元素中。
+如果你还记得第 5 章关于 UFL edu 网站重新设计的内容，导航标签被设置在 `h2` 元素中，以赋予 Mark Trammell 所说的“适当的份量”（the proper gravity）——标签在页面内容以及整个网站中起着至关重要的作用。使用带有 JAWS 的辅助浏览器可以从改进的标记中获益，但搜索引擎也会注意到一个元素为内容增加的额外权重。出于此考虑，我将图像封装在了一个 `h1` 元素中。
 
-最后，在头部和标语的末尾，注意 HTML 注释结束于 `#header`。这个标记放置在闭合 div 标签的末尾，有助于编辑 HTML。在 CSS 中，高度依赖 div 元素来创建样式化所需的钩子（hooks）。元素越多，闭合元素就越多。久而之，跟踪所有这些 div 元素可能会让人眼花缭乱。为了减轻视觉疲劳，我在每个 div 的末尾都放置了一个 HTML 注释。
+最后，在头部和标语的末尾，注意 HTML 注释结束于 `#header`。这个标记放置在闭合 `div` 标签的末尾，有助于编辑 HTML。在 CSS 中，高度依赖 `div` 元素来创建样式化所需的钩子（hooks）。元素越多，闭合元素就越多。久而久之，跟踪所有这些 `div` 元素可能会让人眼花缭乱。为了减轻视觉疲劳，我在每个 `div` 的末尾都放置了一个 HTML 注释。
 
 ## 第 9 章
 
- 应用样式
+### 应用样式
 
-在设置好基础 HTML 后，我想对头部应用样式。首先，我想移除 h1 元素的默认外边距：
+在设置好基础 HTML 后，我想对头部应用样式。首先，我想移除 `h1` 元素的默认外边距：
 
 ```css
 header h1 {
@@ -9032,7 +7812,7 @@ header h1 {
 }
 ```
 
-记得我提到过魔法吗？好了，这里有一个技巧：我想让我的 Logo 消失。这个技巧的原因是，我想在打印网页时保留像图 9-17 那样的 Logo。当我们在打印网页时，Logo 保持原样。对于显示器，这种 Logo 是不完美的。为了实现这一点，我通过以下 CSS 技巧让 h1 消失：
+记得我提到过魔法吗？好了，这里有一个技巧：我想让我的 Logo 消失。这个技巧的原因是，我想在打印网页时保留像图 9-17 那样的 Logo。当我们在打印网页时，Logo 保持原样。对于显示器，这种 Logo 是不完美的。为了实现这一点，我通过以下 CSS 技巧让 `h1` 消失：
 
 ```css
 #header h1 {
@@ -9044,7 +7824,7 @@ header h1 {
 }
 ```
 
-这样，当鼠标悬停在上面时，背景图像会显示出来。由于我们设置了负的 `1000em` 缩进，Logo 被移出了视图。这种技巧让 Logo 在打印时看起来像图 9-17 那样。为了解决显示问题，，在图 9-18 中看到这种效果。
+这样，当鼠标悬停在上面时，背景图像会显示出来。由于我们设置了负的 `1000em` 缩进，Logo 被移出了视图。这种技巧让 Logo 在打印时看起来像图 9-17 那样。为了解决显示问题，在图 9-18 中看到这种效果。
 
 ## 整合在一起
 
@@ -9058,7 +7838,7 @@ header h1 {
 
 ## 第 9 章
 
-像我这样的固 de Web 开发者，经常将该选项设置为“每次访问”（Every Visit）。虽然这有助于解决页面设计中的问题，但我我不希望在缓存并显示旧版本，尝试尝试解决解决浏览器问题时。
+像我这样的固执的 Web 开发者，经常将该选项设置为“每次访问”（Every Visit）。虽然这有助于解决页面设计中的问题，但我不希望在缓存并显示旧版本，尝试尝试解决解决浏览器问题时。
 
 然而，这意味着浏览器每次悬停时都会强制重新加载图像，而不是依赖缓存版本。所以，为了产生闪烁效果，我将选项设置为“自动”（Automatically）。
 
@@ -9066,18 +7846,15 @@ header h1 {
 
 ## 转向标语
 
-在解决了 Logo 问题后，我转向了标语。标语是 HTML 文本，所以我可以根据心心情更改它，而无需打开数字图像软件或费脑学习使用 PHP 和 GD 库来生成图像。
+在解决了 Logo 问题后，我转向了标语。标语是 HTML 文本，所以我可以根据心情更改它，而无需打开数字图像软件或费脑学习使用 PHP 和 GD 库来生成图像。
 
 对于标语，让我们应用几个声明：
-
-
-
 
 ## 整合汇总
 
 ![](img/70fa44d3a461f43c7a35cac2b893273d_367_0.png)
 
-在选择颜色之后，我想让标语（tagline）离 logo 更近一点。我通过对 `margin` 属性应用一个负值来实现这一点。此外，我想让标语与 logo 左侧对齐，因此我应用了 15 像素的左内边距（padding）。最后，我想通过将 `letter-spacing` 的值设置为 0.3em 来拉开标语字母的间距，如图 9-21 所示。
+在选择颜色之后，我想让标语（tagline）离 logo 更近一点。我通过对 `margin` 属性应用一个负值来实现这一点。此外，我想让标语与 logo 左侧对齐，因此我应用了 15 像素的左内边距（padding）。最后，我想通过将 `letter-spacing` 的值设置为 `0.3em` 来拉开标语字母的间距，如图 9-21 所示。
 
 设置好 logo 后，它就会显示在网页列中。
 
@@ -9119,7 +7896,7 @@ header h1 {
 
 ## 侧边栏
 
-我想为了获取侧边栏，将其内容从文档的正常流中提取出来。我通过使用 `position` 属性并将其设置为 `absolute`来实现。
+我想为了获取侧边栏，将其内容从文档的正常流中提取出来。我通过使用 `position` 属性并将其设置为 `absolute` 来实现。
 
 绝对定位允许我获取某个元素并将其放置在网页的精确位置。我谈论的是像素级的完美定位，在讨论过网页排版之后，这似乎是不可能的。然而，这却是事实。
 
@@ -9134,7 +7911,7 @@ Lorem ipsum dolor sit amet, consectet adipiscing
 
 **图 9-22：** 使用 Photoshop 确定侧边栏的放置
 
-我将使用这三个信息在接后的 CSS 规则中编写偏移属性，帮助定位侧边栏：
+我将使用这三个信息在接下来的 CSS 规则中编写偏移属性，帮助定位侧边栏：
 
 ```css
 #sidecol {
@@ -9188,9 +7965,6 @@ Lorem ipsum dolor sit amet, consectet adipiscing
 
 相对于绝对定位的元素并没有脱离文档渲染的流。
 
-
-
-
 # 整合一切
 
 `color` 属性非常重要，因为在该容器内编写的任何新 HTML 文本默认都会被设置为此颜色。这样一来，我就省了为主列容器内的每个元素设置相同颜色值的精力。在将来，只有当某个元素的颜色需要不同于默认值时，我才需要担心更改它的颜色。
@@ -9231,7 +8005,7 @@ Lorem ipsum dolor sit amet, consectet adipiscing
 
 图 9-27：介绍性文本的样式
 
-我将介绍段落包裹在一个 `id` 设置为 "desc" 的 `div` 中。这将是描述内容的容器块。`div` 元素包裹了 `h2` 和段落。现在标记已经设置就位，我开始从外向内使用 `div` 元素对内容进行样式设计，如图 9-28 所示。
+我将介绍段落包裹在一个 `id` 设置为 `"desc"` 的 `div` 中。这将是描述内容的容器块。`div` 元素包裹了 `h2` 和段落。现在标记已经设置就位，我开始从外向内使用 `div` 元素对内容进行样式设计，如图 9-28 所示。
 
 图 9-28：容器的样式
 
@@ -9245,6 +8019,8 @@ Lorem ipsum dolor sit amet, consectet adipiscing
   width: 350px;
 }
 ```
+
+
 
 # 整合一切
 
@@ -9299,13 +8075,9 @@ html #desc {
 
 # 博客文章的样式
 
-就像介绍性文本中的标题和段落一样，博客文章文本的样式设计是一个相当直接的练习。大多数博客文章是由如 WordPress（访问 www.wordpress.org）或 Movable Type（访问 www.movabletype.org）等应用程序自动生成的。
+就像介绍性文本中的标题和段落一样，博客文章文本的样式设计是一个相当直接的练习。大多数博客文章是由如 WordPress（访问 `www.wordpress.org`）或 Movable Type（访问 `www.movabletype.org`）等应用程序自动生成的。
 
 如果你在家里使用一个不错的博客软件，由于每个应用程序的不同，你的标记与实际标记的匹配程度会有所不同。然而，这些工具生成的标记会有相似之处，尽管你可能需要进行一些调整。
-
-
-
-
 
 ## 第 9 章
 
@@ -9340,33 +8112,33 @@ html #desc {
 - 杂项 (Miscellaneous)
 - 出版 (Publications)
 
-2005年2月3日发布
+2005年2月3日发布  
 评论 (1)
 
 图 9-30：博客文章的默认渲染效果
 
 对于设计，我想在标题之前放置一张背景图，以便在我们调整边距、内边距、颜色和排版时，让它稍微突出一点：
 
-```
+```css
 .post h2 {
-background-image: url(//assets/img/content_hdg_bkgd.gif);
-margin: 0;
-padding: 0;
-color: #495301;
-font-family: normal Geneva, Arial, Helvetica, sans-serif;
-letter-spacing: .1em;
+  background-image: url(//assets/img/content_hdg_bkgd.gif);
+  margin: 0;
+  padding: 0;
+  color: #495301;
+  font-family: normal Geneva, Arial, Helvetica, sans-serif;
+  letter-spacing: .1em;
 }
 ```
 
 然而，我还想在标题的两侧添加一些括号。我可以把它们添加到 HTML 文本中，但我觉得那样在语义上是不正确的。毕竟，括号是一个设计元素，而不是实际的标题本身。为了添加如图 9-31 所示的括号，我使用伪元素 `:after` 和 `:before` 来向标题中插入内容：
 
-```
+```css
 .post h2 {
   content: "*";
 }
 ```
 
-```
+```css
 .post h2 {
   content: " [";
 }
@@ -9383,7 +8155,7 @@ letter-spacing: .1em;
 - 杂项 (Miscellaneous)
 - 出版 (Publications)
 
-2005年2月3日发布
+2005年2月3日发布  
 评论 (1)
 
 图 9-31：带有括号的标题
@@ -9394,53 +8166,58 @@ letter-spacing: .1em;
 
 实现这种设计的方法之一是为每个括号制作图像。然后用另一层标记包裹文本，如：
 
-```
+```html
 <h2><em>日记</em></h2>
 ```
 
 将左括号作为背景图image（background-image）放置在 `h2` 元素中，然后将右括号图像放在 `em` 元素中。接下来是为每篇文章预留的 `h1` 元素：
 
-```
+```html
 <div class="post">
-<h2>日记</h2>
-<h1 class="storytitle">一件令人尴尬的事</h1>
-[...内容...]
+  <h2>日记</h2>
+  <h1 class="storytitle">一件令人尴尬的事</h1>
+  [...内容...]
 </div><!-- #post -->
 ```
 
 然后我为 `storytitle` 应用了 CSS 规则：
 
-```
+```css
 h1.storytitle {
-margin: 12px 0;
-padding: 0 33px;
-font-family: Georgia, "Times Roman", Times, serif;
-font-weight: normal;
+  margin: 12px 0;
+  padding: 0 33px;
+  font-family: Georgia, "Times Roman", Times, serif;
+  font-weight: normal;
 }
 ```
+
 我在标题顶部应用了 12 像素的外边距，使其与之前的标题保持一些距离。然后，我在右侧也应用了 33 像素的内边距。再次，这样做是为了在标题换行时留出空间。我倾向于让标题换行，而不是让它与博客宽度相等。最后两个声明处理排版问题：设置字体以及移除与标题相关的粗体。最后一个项目处理文章的页脚。每篇文章都包含了元信息（meta）。元信息包含了与文章相关的分类以及评论链接。
 
 ## 整合
 
 让我们看看博客页脚的标记：
 
-```
+```html
 <div class="post">
-<h2>日记 <a href="/index.php?p=1" rel="bookmark" title="storytitle">永久链接：一件令人尴尬的事</a></h2>
-<div class="storycontent">
-<p>我的垃圾桶昨晚被偷走了。</p>
-<p>[...内容...]</p>
-<p>让他们教训，哇哈哈！</p>
-</div><!-- storycontent -->
-<div id="footer">
-<ul class="post-categories">
-<li><a href="/index.php?p=1" title="View all posts in General">通用</a></li>
-<li><a href="/index.php?p=4" title="View all posts in Life">生活</a></li>
-<li><a href="/index.php?p=5" title="View all posts in Miscellaneous">杂项</a></li>
-</ul>
-<a href="http://www.christersmitt.com/index.php?p=1" rel="bookmark" title="Posted at 9 pm on 2/3/2005"></a>
-</div><!-- .meta -->
-<div class="feedback"><a href="http://www.christersmitt.com/index.php?p=1#comments">评论 (1)</a></div><!-- feedback -->
+  <h2>日记 <a href="/index.php?p=1" rel="bookmark" title="storytitle">永久链接：一件令人尴尬的事</a></h2>
+
+  <div class="storycontent">
+    <p>我的垃圾桶昨晚被偷走了。</p>
+    <p>[...内容...]</p>
+    <p>让他们教训，哇哈哈！</p>
+  </div><!-- storycontent -->
+
+  <div id="footer">
+    <ul class="post-categories">
+      <li><a href="/index.php?p=1" title="View all posts in General">通用</a></li>
+      <li><a href="/index.php?p=4" title="View all posts in Life">生活</a></li>
+      <li><a href="/index.php?p=5" title="View all posts in Miscellaneous">杂项</a></li>
+    </ul>
+
+    <a href="http://www.christersmitt.com/index.php?p=1" rel="bookmark" title="Posted at 9 pm on 2/3/2005"></a>
+  </div><!-- .meta -->
+
+  <div class="feedback"><a href="http://www.christersmitt.com/index.php?p=1#comments">评论 (1)</a></div><!-- feedback -->
 </div><!-- #postfooter -->
 </div><!-- #footer -->
 ```
@@ -9464,7 +8241,7 @@ font-weight: normal;
 
 对于 `postfooter` 容器，我将应用以下 CSS 规则：
 
-```
+```css
 #postfooter {
   margin: -.5em 0 0;
   text-transform: lowercase;
@@ -9477,7 +8254,7 @@ font-weight: normal;
 该规则应用了一些细微的设计。它将页脚向上移动了 -.5em，并在底部留了 1em 的内边距。然后，为了通过文章区分页脚内容，CSS 规则还做了以下操作：
 
 - 通过 `text-transform` 属性将页脚文字全部小写
-- 以 em 单位增加字母间距
+- 以 `em` 单位增加字母间距
 - 将页脚文字改为浅蓝色
 - 缩小页脚字体大小
 
@@ -9485,13 +8262,14 @@ font-weight: normal;
 
 `float` 属性允许内容环绕浮动元素排列。我想调整 `meta` 和 `feedback` 元素的宽度，使它们互不重叠，并将 `float` 值分别设置为左侧和右。通过让这两个容器并排，我很快地实现了部分目标，如图 9-33 所示：
 
-```
+```css
 #postfooter .meta {
   width: 355px;
   float: left;
   text-align: left;
   padding: 0 0 1.66em 0;
 }
+
 #postfooter .feedback {
   float: right;
   text-align: right;
@@ -9509,11 +8287,11 @@ font-weight: normal;
 | 出版 | |
 | 2005年2月3日 | |
 
-图 9-33：位于同一行的 meta 和 feedback 容器
+图 9-33：位于同一行的 `meta` 和 `feedback` 容器
 
-下一步是处理 `meta` 容器中的列表项。无列表显示了与文章相关的所有分类。然而，它占据了大量空间。为了解决这个问题，我将将无列表的显示模式（display）从块级元素改为内联元素（inline），同时移除每个列表项的项目符号：
+下一步是处理 `meta` 容器中的列表项。无列表显示了与文章相关的所有分类。然而，它占据了大量空间。为了解决这个问题，我将将无列表的显示模式（`display`）从块级元素改为内联元素（`inline`），同时移除每个列表项的项目符号：
 
-```
+```css
 ul.post-categories {
   display: inline;
   padding: 0;
@@ -9530,9 +8308,9 @@ ul.post-categories li {
 
 为了增加最后的点缀，我想用简单的逗号分隔每个分类列表，以免分类名称相互挤在一起。为了这一点，我重新使用了伪元素：用于 `content` 属性，如图 9-34 所示：
 
-```
+```css
 #postfooter .meta li:after {
-  content: ";
+  content: ",";
 }
 ```
 
@@ -9540,22 +8318,17 @@ ul.post-categories li {
 
 图 9-34：精简后的无列表
 
-
-
-
-
-
 ## 第 9 章
 
 我再次开始从上到下开始应用样式。侧边栏中的第一个项目是主导航。
 
-## 网站导航开始
+# 网站导航开始
 
 任何网站的骨架都是菜单导航。Web 是由链接连接的松散文档集合。关于任何旧链接与网站菜单之间的区别，可以由比我明智的人来争论，但网站菜单中的链接需要具备以下几点：
 
--   从页面的其他设计中脱出来
--   在页面设计中易于找到
--   让用户知道自己正处于网站的结构之中
+- 从页面的其他设计中脱出来
+- 在页面设计中易于找到
+- 让用户知道自己正处于网站的结构之中
 
 由于我将把大量精力放在导航的设计和执行上，我想创建一个单独的 HTML 页面，以防干扰网页上的其他元素。当我处理导航时，我会将 HTML 移动到原始的网页设计上，并将导航的 CSS 规则嫁接到主 CSS 文件中。
 
@@ -9571,8 +8344,9 @@ ul.post-categories li {
 
 首先，让我们看看导航的标记，如图 9-35 所示：
 
-```
+```html
 <h4 class="no">Main Navigation</h4>
+
 <ul>
   <li><a href="/home">Home</a></li>
   <li><a href="/journal">Journal</a></li>
@@ -9599,7 +8373,7 @@ ul.post-categories li {
 
 大部分内容都是直观的。由一个普通的、日常标题和一个无序列表组成。让我们逐个拆解它，看看 CSS 如何为我们的导航提供支持。首先是标题：
 
-```
+```html
 <h4 class="no">Main Navigation</h4>
 ```
 
@@ -9607,13 +8381,13 @@ ul.post-categories li {
 
 第一个元素最先处理。为了只对网站菜单应用 CSS 规则，我应用了值为 `mainnav` 的 `id` 属性，使其成为我 CSS 规则的容器：
 
-```
+```html
 <ul id="mainnav">
 ```
 
-标记好容器后，我现在可以添加一些设计细节。首先，我想将外边距（margin）和内边距（padding）置零。此外，我想移除有序列表默认的项目符号。我想要的 CSS（如图 9-36 所示）非常简单：
+标记好容器后，我现在可以添加一些设计细节。首先，我想将外边距（`margin`）和内边距（`padding`）置零。此外，我想移除有序列表默认的项目符号。我想要的 CSS（如图 9-36 所示）非常简单：
 
-```
+```css
 ul#mainnav {
   margin: 0;
   padding: 0;
@@ -9627,16 +8401,20 @@ ul#mainnav {
 
 如你所示，我调整了导航中的主无序列表，而不是嵌套的无序列表。为了做到这一点，我添加了另一个 CSS 规则对这些列表应用相同的属性和值，如图 9-37 所示：
 
-```
+```css
 ul#mainnav {
   margin: 0;
   padding: 0;
-  list-style: none;
-}
-```
+
+
+
+`list-style: none;`
 
 ```
+}
+
 /* 嵌套列表 */
+
 ul#mainnav li ul {
   padding: 0;
   margin: 0;
@@ -9658,7 +8436,7 @@ ul#mainnav a {
 
 ## 整合一切
 
-基础打好后，我现在可以向前推进，开始导航的设计。我构建的导航设计使用了三维效果。导航的想法是让菜单链接看起来像按钮。然而，在典型的网页设计中，标签文本被“困”在图像中。这种技术在设计中一直可行，但如果我需要编辑标签或添加新按钮，我需要在 Photoshop 中停止并创建图像。因此，我想确保使用 HTML 来处理标签，因为我很懒，不想把整个生命都花在 Photoshop 上。为了从 Photoshop 重新创建，我想创建一个 Sliding Doors 的变体（参考 alist.com/articles/）。本质上，我想将按钮图形分为两部分：顶部和底部，如图 9-38 所示。
+基础打好后，我现在可以向前推进，开始导航的设计。我构建的导航设计使用了三维效果。导航的想法是让菜单链接看起来像按钮。然而，在典型的网页设计中，标签文本被“困”在图像中。这种技术在设计中一直可行，但如果我需要编辑标签或添加新按钮，我需要在 Photoshop 中停止并创建图像。因此，我想确保使用 HTML 来处理标签，因为我很懒，不想把整个生命都花在 Photoshop 上。为了从 Photoshop 重新创建，我想创建一个 Sliding Doors 的变体（参考 `alist.com/articles/`）。本质上，我想将按钮图形分为两部分：顶部和底部，如图 9-38 所示。
 
 ![](img/70fa44d3a461f43c7a35cac2b893273d_387_0.png)
 
@@ -9672,8 +8450,8 @@ ul#mainnav a {
 
 现在我设置了按钮，我想创建一组类似的图像来显示页面当前处于查看状态。如图 9-40 所示：
 
--   离线状态（Off State）：表示“离线”状态的图像
--   在线状态（On State）：表示“在线”状态的图像
+- 离线状态（Off State）：表示“离线”状态的图像
+- 在线状态（On State）：表示“在线”状态的图像
 
 ![](img/70fa44d3a461f43c7a35cac2b893273d_388_0.png)
 
@@ -9744,29 +8522,13 @@ ul#mainnav li a {
 }
 ```
 
-
-
-
-
 ## 第 9 章
 
-| 首页 |
-| 日志 |
-| 工作 |
-| 打印 |
-| 网页 |
-| 荣誉 |
-| 出版物 |
-| 图籍 |
-| 文章 |
-| 演讲活动 |
-| 商店 |
-| 关于我们 |
-| 联系我们 |
+| 首页 | 日志 | 工作 | 打印 | 网页 | 荣誉 | 出版物 | 图籍 | 文章 | 演讲活动 | 商店 | 关于我们 | 联系我们 |
 
 图 9-42：按钮的顶部已对齐就位。
 
-通过这条 CSS 规则，我还应用了其他样式，例如 HTML 文本左侧的内边距（padding），以及设置了文本颜色。观察图 9-42，可以看到底部的图像显示在嵌套列表中。这是因为 CSS 规则告诉浏览器对任何 `li` 实例应用底部的背景图像。因此，在接下来的几条 CSS 规则中，我处理了这个问题，并加固了一些其他设计细节（如图 9-43 所示），以使导航更贴近我的设想：
+通过这条 CSS 规则，我还应用了其他样式，例如 HTML 文本左侧的内边距（`padding`），以及设置了文本颜色。观察图 9-42，可以看到底部的图像显示在嵌套列表中。这是因为 CSS 规则告诉浏览器对任何 `li` 实例应用底部的背景图像。因此，在接下来的几条 CSS 规则中，我处理了这个问题，并加固了一些其他设计细节（如图 9-43 所示），以使导航更贴近我的设想：
 
 ```
 ul#mainnav li li {
@@ -9787,7 +8549,7 @@ ul#mainnav li li a {
 }
 ```
 
-现在，由于菜单导航已基本就绪，我想把选项之间拉开一点距离，因为主选项挤在了一起。为了做到这一点，我为每个列表项目的顶部应用了 2 像素的外边距（margin），如图 9-44 所示。
+现在，由于菜单导航已基本就绪，我想把选项之间拉开一点距离，因为主选项挤在了一起。为了做到这一点，我为每个列表项目的顶部应用了 2 像素的外边距（`margin`），如图 9-44 所示。
 
 ```
 ul#mainnav li {
@@ -9868,11 +8630,7 @@ ul#mainnav ul {
 </ul>
 ```
 
-
-
-
-
-# 第 9 章
+## 第 9 章
 
 我喜欢这个解决方案的原因之一是它处理字体大小的方式。如果用户增大或缩小导航栏的字体大小，按钮也会随之增大或缩小（如图 9-49 所示）：
 
@@ -9940,6 +8698,9 @@ background: transparent url('../img/blogRoll_bkgd.gif') 0 0 repeat-y;
 }
 ```
 
+
+
+
 | 我阅读的站点 | 按新鲜度排序 |
 | :--- | :--- |
 | meryl's notes | |
@@ -9958,19 +8719,13 @@ background: transparent url('../img/blogRoll_bkgd.gif') 0 0 repeat-y;
 
 图 9-51：博客列表容器的样式
 
-有了标记后，我将从外向内进行工作，从博客列表容器开始。首先，我想在顶部和底部留出更大的空间。因为我想让图片从底部透出来，我将使用 `padding` 属性让背景图片显示，如图 9-51 所示。 (注：此处原文文本似乎存在大量逻辑重复和格式混乱，翻译已根据语意进行对齐)
-
-*(由于用户提供的原文文本从“With the markup...”之后出现了严重的文本重复和乱码，以下翻译已根据高级文档工程师的逻辑对齐要求进行了处理。)*
-
-
-
-
+有了标记后，我将从外向内进行工作，从博客列表容器开始。首先，我想在顶部和底部留出更大的空间。因为我想让图片从底部透出来，我将使用`padding`属性让背景图片显示，如图 9-51 所示。
 
 ## 第 9 章
 
-一种修复方法是在无序列表中引入更多元素（如 `span` 或 `div`）以添加更多的钩子（hooks）。通过这些钩子，我可以将样式关联起来，从而对外边距（margin）和内边距（padding）进行更精细的控制。然而，尽管这样做初衷是好的，但会让我们远离语义化标记。为了解决这个问题，我找到了另一种方法。
+一种修复方法是在无序列表中引入更多元素（如`span`或`div`）以添加更多的钩子（hooks）。通过这些钩子，我可以将样式关联起来，从而对外边距（`margin`）和内边距（`padding`）进行更精细的控制。然而，尽管这样做初衷是好的，但会让我们远离语义化标记。为了解决这个问题，我找到了另一种方法。
 
-我并没有通过 `list-style-image` 属性对列表应用自定义标记，而是给博客列表（blogroll）中每个链接的左侧应用内边距。然后，我像之前一样完全关闭了标记，并为博客列表中的每个链接应用背景图像，如图 9-56 所示：
+我并没有通过`list-style-image`属性对列表应用自定义标记，而是给博客列表（blogroll）中每个链接的左侧应用内边距。然后，我像之前一样完全关闭了标记，并为博客列表中的每个链接应用背景图像，如图 9-56 所示：
 
 ```css
 #blogroll a {
@@ -9981,7 +8736,7 @@ background: transparent url('../img/blogRoll_bkgd.gif') 0 0 repeat-y;
 
 ![](img/70fa44d3a461f43c7a35cac2b893273d_402_0.png)
 
-图 9-56: 更好的列表标记
+图 9-56：更好的列表标记
 
 这样，博客列表就完成了，占用的空间更小，样式也更好。
 
@@ -9991,9 +8746,9 @@ background: transparent url('../img/blogRoll_bkgd.gif') 0 0 repeat-y;
 
 ```html
 <div id="footer">
-<p class="credit">Copyright &copy; 2005 Christopher Schmitt. All rights reserved.<br />
-Powered by <a href="http://wordpress.org" title="State-of-the-art semantic personal publishing platform" target="WordPress"></a>
-</p>
+  <p class="credit">Copyright &copy; 2005 Christopher Schmitt. All rights reserved.<br />
+  Powered by <a href="http://wordpress.org" title="State-of-the-art semantic personal publishing platform" target="WordPress"></a>
+  </p>
 </div><!-- END footer -->
 ```
 
@@ -10003,16 +8758,16 @@ Powered by <a href="http://wordpress.org" title="State-of-the-art semantic perso
 
 然而，由于浮动的存在，页脚中的内容也开始在元信息周围浮动，如图 9-57 所示。
 
-That'll show 'em, That'll show em, all Bahahahahah
+- That'll show 'em, That'll show em, all Bahahahahah
 - general site news design life
 - miscellaneous publications 2/3/2005
 - comments (1)
 - Powered by WordPress.
 - Copyright © 2005 Christopher Schmidt. All rights reserved.
 
-图 9-57: 页脚被抬起以包含主列容器中的内容
+图 9-57：页脚被抬起以包含主列容器中的内容
 
-因此，解决方法是为页脚容器设置一个 `clear` 属性，其值为 `both`，如图 9-58 所示：
+因此，解决方法是为页脚容器设置一个`clear`属性，其值为`both`，如图 9-58 所示：
 
 ```css
 #footer {
@@ -10033,22 +8788,20 @@ That'll show 'em, That'll show em, all Bahahahahah
 }
 ```
 
-That'll show 'em, That'll show em, all Bahahahahah
+- That'll show 'em, That'll show em, all Bahahahahah
 - general site news design life
 - miscellaneous publications 2/3/2005
 - comments (1)
 - Copyright © 2005 Christopher Schmidt. All rights reserved.
 - Powered by WordPress.
 
-图 9-58: 修复页脚
+图 9-58：修复页脚
 
-`clear` 属性用于设计对浮动元素的控制。将 `clear` 属性设置为 `clear` 的元素将不会包裹在之前向左侧或右侧浮动的元素周围。
+`clear`属性用于设计对浮动元素的控制。将`clear`属性设置为`clear`的元素将不会包裹在之前向左侧或右侧浮动的元素周围。
 
-`clear` 属性的其他值有 `none`、`left`、`right` 和 `inherit`。默认值是 `none`，意味着该元素将包裹浮动内容。对于 `clear` 值为 `left` 或 `right`，内容将不会包裹在先向左侧或右侧浮动的内容周围。
+`clear`属性的其他值有`none`、`left`、`right`和`inherit`。默认值是`none`，意味着该元素将包裹浮动内容。对于`clear`值为`left`或`right`，内容将不会包裹在先向左侧或右侧浮动的内容周围。
 
-`inherit` 的值将采用父元素的 `clear` 属性值。如果父元素没有值，则子元素采用 `none`（因为它是默认值）。
-
-## 第 9 章
+`inherit`的值将采用父元素的`clear`属性值。如果父元素没有值，则子元素采用`none`（因为它是默认值）。
 
 ## 页面整体
 
@@ -10060,76 +8813,72 @@ That'll show 'em, That'll show em, all Bahahahahah
 
 网页的开发是一条漫长的道路，从我脑中的一些随机想法开始，最终导致了成品。
 
-从规划开始，我制定了网站范围。范围确定后，项目的参数也随之确立，并确定了内容和站点地图。之后，我专注于设计和内容实现……（注：此处原文中存在大量重复段落，译文已按要求不重复输出）。
+从规划开始，我制定了网站范围。范围确定后，项目的参数也随之确立，并确定了内容和站点地图。之后，我专注于设计和内容实现。
 
-
-
-
-
-| 名称 | 开始标签 | 结束标签 | 空元素 | 弃用 | DTD |  |
+| 名称 | 开始标签 | 结束标签 | 空元素 | 弃用 | DTD | 描述 |
 | --- | --- | --- | --- | --- | --- | --- |
-| FRAMESET | | | | | F | 框架容器；body 框架的替代方案 |
-| H1 | | | | | | 一级标题 |
-| H2 | | | | | | 二级标题 |
-| H3 | | | | | | 三级标题 |
-| H4 | | | | | | 四级标题 |
-| H5 | | | | | | 五级标题 |
-| H6 | | | | | | 六级标题 |
-| HEAD | O | O | | | | 文档头 |
-| HR | | F | E | | | 水平线 |
-| HTML | O | O | | | | 文档根元素 |
-| I | | | | | | 斜体文本样式 |
-| IFRAME | | | | | L | 内联子窗口 |
-| IMG | | F | E | | | 嵌入图像 |
-| INPUT | | F | E | | | 表单控件 |
-| INS | | | | | | 插入文本 |
-| ISINDEX | | F | E | | L | 单行提示 |
-| KBD | | | | | | 用户输入的文本 |
-| LABEL | | | | | | 表单字段标签文本 |
-| LEGEND | | O | | | | 字段组图例 |
-| LINK | | F | E | | | 媒体无关链接 |
-| MAP | | | | | | 客户端图像映射 |
-| MENU | | | | D | L | 菜单列表 |
-| META | | F | E | | | 通用信息 |
-| NOFRAMES | | | | | F | 非框架渲染的替代内容容器 |
+| `FRAMESET` | | | | | F | 框架容器；body 框架的替代方案 |
+| `H1` | | | | | | 一级标题 |
+| `H2` | | | | | | 二级标题 |
+| `H3` | | | | | | 三级标题 |
+| `H4` | | | | | | 四级标题 |
+| `H5` | | | | | | 五级标题 |
+| `H6` | | | | | | 六级标题 |
+| `HEAD` | O | O | | | | 文档头 |
+| `HR` | | F | E | | | 水平线 |
+| `HTML` | O | O | | | | 文档根元素 |
+| `I` | | | | | | 斜体文本样式 |
+| `IFRAME` | | | | | L | 内联子窗口 |
+| `IMG` | | F | E | | | 嵌入图像 |
+| `INPUT` | | F | E | | | 表单控件 |
+| `INS` | | | | | | 插入文本 |
+| `ISINDEX` | | F | E | | L | 单行提示 |
+| `KBD` | | | | | | 用户输入的文本 |
+| `LABEL` | | | | | | 表单字段标签文本 |
+| `LEGEND` | | O | | | | 字段组图例 |
+| `LINK` | | F | E | | | 媒体无关链接 |
+| `MAP` | | | | | | 客户端图像映射 |
+| `MENU` | | | | D | L | 菜单列表 |
+| `META` | | F | E | | | 通用信息 |
+| `NOFRAMES` | | | | | F | 非框架渲染的替代内容容器 |
 
 ## 附录 A
 
 | 名称 | 开始标签 | 结束标签 | 空元素 | 弃用 | DTD | 描述 |
 | --- | --- | --- | --- | --- | --- | --- |
-| NOSCRIPT | | | | | | 非脚本支持渲染的替代内容容器 |
-| OBJECT | | | | | | 通用嵌入对象 |
-| OL | | | | | | 有序列表 |
-| OPTGROUP | | | | | | 选项组 |
-| OPTION | | O | | | | 可选项目 |
-| P | | O | | | | 段落 |
-| PARAM | | F | E | | | 命名属性 |
-| PRE | | | | | | 预格式文本 |
-| Q | | | | | | 短内联引用 |
-| S | | | | D | L | 删除线文本 |
-| SAMP | | | | | | 示例输出、脚本等. |
-| SCRIPT | | | | | | 脚本语句 |
-| SELECT | | | | | | 选项选择器 |
-| SMALL | | | | | | 较小字体 |
-| SPAN | | | | | | 通用语言/内联容器 |
-| STRIKE | | | | D | L | 删除线文本 |
-| STRONG | | | | | | 强强调 |
-| STYLE | | | | | | 样式信息 |
-| SUB | | | | | | 下标 |
-| SUP | | | | | | 上标 |
-| TABLE | | | | | | 表格元素 |
-| TBODY | | O | | | | 表主体 |
-| TD | | O | | | | 表格单元 |
-| TEXTAREA | | | | | | 多行文本 |
-| TFOOT | | O | | | | 表脚 |
-| TH | | O | | | | 表头单元 |
-| THEAD | | O | | | | 表头 |
-| TITLE | | | | | | 文档标题 |
-| TR | | O | | | | 表格行 |
-| TT | | | | | | 电传字或等宽字体 |
-| U | | | | D | L | 下划线文本 |
-| UL | | | | | | 无序列表 |
-| VAR | | | | | | 变量或参数的实例 |
+| `NOSCRIPT` | | | | | | 非脚本支持渲染的替代内容容器 |
+| `OBJECT` | | | | | | 通用嵌入对象 |
+| `OL` | | | | | | 有序列表 |
+| `OPTGROUP` | | | | | | 选项组 |
+| `OPTION` | | O | | | | 可选项目 |
+| `P` | | O | | | | 段落 |
+| `PARAM` | | F | E | | | 命名属性 |
+| `PRE` | | | | | | 预格式文本 |
+| `Q` | | | | | | 短内联引用 |
+| `S` | | | | D | L | 删除线文本 |
+| `SAMP` | | | | | | 示例输出、脚本等。 |
+| `SCRIPT` | | | | | | 脚本语句 |
+| `SELECT` | | | | | | 选项选择器 |
+| `SMALL` | | | | | | 较小字体 |
+| `SPAN` | | | | | | 通用语言/内联容器 |
+| `STRIKE` | | | | D | L | 删除线文本 |
+| `STRONG` | | | | | | 强强调 |
+| `STYLE` | | | | | | 样式信息 |
+| `SUB` | | | | | | 下标 |
+| `SUP` | | | | | | 上标 |
+| `TABLE` | | | | | | 表格元素 |
+| `TBODY` | | O | | | | 表主体 |
+| `TD` | | O | | | | 表格单元 |
+| `TEXTAREA` | | | | | | 多行文本 |
+| `TFOOT` | | O | | | | 表脚 |
+| `TH` | | O | | | | 表头单元 |
+| `THEAD` | | O | | | | 表头 |
+| `TITLE` | | | | | | 文档标题 |
+| `TR` | | O | | | | 表格行 |
+| `TT` | | | | | | 电传字或等宽字体 |
+| `U` | | | | D | L | 下划线文本 |
+| `UL` | | | | | | 无序列表 |
+| `VAR` | | | | | | 变量或参数的实例 |
 
 ## HTML 转 XHTML 的规则
 
@@ -10143,7 +8892,7 @@ XML 为所有标记语言的创建提供了框架。其他行业可以创建自�
 
 然而，对于大多数主要熟悉 HTML 的 Web 开发者来说，XML 的主要优势（创建新元素并指定它们的处理方式）并不重要。相反，HTML 中的元素将是最实用的。
 
-W3C 按照 XML 标准重新制定了 HTML，在保持向后兼容的同时，让这种语言接受 XML 中的的结构。XHTML 是在 XML 语法中定义的 HTML 的精髓。
+W3C 按照 XML 标准重新制定了 HTML，在保持向后兼容的同时，让这种语言接受 XML 中的结构。XHTML 是在 XML 语法中定义的 HTML 的精髓。
 
 换句话说，XHTML 是一套严格的指南，允许熟悉 HTML 的 Web 开发者在不完全迷失的情况下编写有效的 XML 文档。
 
@@ -10172,7 +8921,7 @@ W3C 按照 XML 标准重新制定了 HTML，在保持向后兼容的同时，让
 
 ### 选择你的级别
 
-XHTML 有三种类型：严格（strict）、过渡（transitional）和框架（frameset）。这些变基于文档类型定义（DTD）。
+XHTML 有三种类型：严格（strict）、过渡（transitional）和框架（frameset）。这些基于文档类型定义（DTD）。
 
 如果你想在 XHTML 中使用它，但在过程中有一定的自由使用弃用的元素和属性，或者使用经典的 HTML 标签，那么过渡 DTD 是最好的：
 
@@ -10186,47 +8935,41 @@ XHTML 有三种类型：严格（strict）、过渡（transitional）和框架�
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 1.0 Frameset//EN" "http://www.w3.org/TR/DTD/xhtml1-frameset.dtd">
 ```
 
-
-
-
-
-## 附录 B
-
 ## 引用属性值
 
 元素中的所有属性值都要求包含在引号内。因此，你不应该使用以下示例：
 
-```
+```html
 <img src="file.gif width=133 height=133 />
 ```
 
 相反，你应该遵循这个正确的示例：
 
-```
+```html
 <img src="file.gif" width="133" height="133" />
 ```
 
 ## 无属性最小化
 
-对于 HTML 中的某些元素（例如水平线标签 `hr`），属性可以进行最小化，简单地列出属性名是有效的：
+对于 HTML 中的某些元素（例如水平线标签`hr`），属性可以进行最小化，简单地列出属性名是有效的：
 
-```
+```html
 <hr noshade />
 ```
 
-但在 XHTML 中，没有属性最小化。当你遇到一个通常不需要值的属性时，请将属性的值设置为该名称本身。在用 `hr` 元素的示例中，属性的值为 `noshade`：
+但在 XHTML 中，没有属性最小化。当你遇到一个通常不需要值的属性时，请将属性的值设置为该名称本身。在用`hr`元素的示例中，属性的值为`noshade`：
 
-```
+```html
 <hr noshade="noshade" />
 ```
 
 ## 终止空元素
 
-不成对儿的空元素（如 `img`、`br` 或 `hr`）。
+不成对儿的空元素（如`img`、`br`或`hr`）。
 
-非空元素（如 `p` 或 `h2`）在 HTML 中非常常见。它们用于标记网页内容内容的开始和结束，例如使用以下 `p` 标签来指示段落：
+非空元素（如`p`或`h2`）在 HTML 中非常常见。它们用于标记网页内容的开始和结束，例如使用以下`p`标签来指示段落：
 
-```
+```html
 <p>That's when I thought I should decline a second helping of her infamous spaghetti and meatball salad.</p>
 ```
 
@@ -10234,25 +8977,23 @@ XHTML 有三种类型：严格（strict）、过渡（transitional）和框架�
 
 为了继续使用空元素，必须对它们进行轻微的修改。在元素的末尾添加一个空格和一个正斜杠：
 
-```
+```html
 <img src="file.gif" alt="Company logo" width="125" height="36" />
 ```
 
 注意，在尾斜杠之前包含空格并不是代码有效的强制要求，但是一种防止像 Netscape Navigator 4 等旧浏览器无法渲染该元素的技术。
 
-## HTML 转 XHTML 的规则
-
 ## 清理嵌套
 
-正确地嵌套元素非常简单，并且应该是任何 Web 开发者的习惯。。在接下来的一行中，`strong` 元素的结束标签位于 `p` 元素之外。
+正确地嵌套元素非常简单，并且应该是任何 Web 开发者的习惯。在接下来的一行中，`strong`元素的结束标签位于`p`元素之外。
 
-```
+```html
 <p>That's when I thought I should <strong>decline a second helping of her infamous spaghetti and meatball salad.</p></p>
 ```
 
 而这种才是标记内容的正确方法：
 
-```
+```html
 <p>That's when I thought I should <strong>decline</strong> a second helping of her infamous spaghetti and meatball salad.</p>
 ```
 
@@ -10260,39 +9001,43 @@ XHTML 有三种类型：严格（strict）、过渡（transitional）和框架�
 
 关联 CSS 和 JavaScript 文件是为网页引入表现效果和行为的首选方法：
 
-```
+```html
 <script src="js/validator.js" type="text/javascript"></script>
 <link rel="stylesheet" href="css/layout.css" type="text/css" />
 ```
 
-如果你必须使用 JavaScript，请将代码包裹在起始标记 `<!CDATA[` 和结束标记 `]]>` 中。
+如果你必须使用 JavaScript，请将代码包裹在起始标记`<!CDATA[`和结束标记`]]>`中。
 
 ## 小写
 
 从现在起，XHTML 中所有的元素和属性名称都必须设为小写。这意味着你不应该使用全大写，或混合使用大小写。以下是不正确用法的示例：
 
-```
+```html
 <HTML> </HTML>
+
 <Strong></Strong>
 ```
 
 以下是正确用法的示例：
 
-```
+```html
 <body></body>
 ```
 
 注意，属性值中使用混合小写和大写仍然是有效的：
 
-```
+
+
+
+```html
 <a href="IWantToBelieve.html">Photos of Aliens</a>
 ```
 
-## 在使用 name 时引入 ID
+## 在使用 `name` 时引入 `ID`
 
 在 XHTML 中，`name` 属性已废弃，并将以后从规范中完全删除。事实上，你必须使用 `id` 属性。在 `name` 属性不再是有效属性之前，在使用 `name` 属性的同时额外使用 `id`：
 
-```
+```html
 <a name="admin" id="admin">Administration at CLC</a>
 ```
 
@@ -10302,13 +9047,15 @@ XHTML 有三种类型：严格（strict）、过渡（transitional）和框架�
 
 ## 编码 & 符号
 
-当你使用 & 符号 (`&`) 作为属性值时，请务必使用字符实体 `&amp;`。
+当你使用 & 符号（`&`）作为属性值时，请务必使用字符实体 `&amp;`。
 
 在编码 & 符号以及处理动态页面时，通过浏览器中的 URL 字符串传递参数，如下所示：
 
-```
+```html
 <a href="add-cart.html?isbn=0764588338&amp;id=023">Add this item to your cart</a>
 ```
+
+
 
 ## 如果不确定，请验证
 
@@ -10320,307 +9067,270 @@ XHTML 有三种类型：严格（strict）、过渡（transitional）和框架�
 
 | 名称 | 取值 | 初始值 | 应用于 | 继承 |
 | :--- | :--- | :--- | :--- | :--- |
-| border | | | | |
-| border-style | | | | |
-| border-width | | | | |
-| border-color | | | | |
-| border-top | | | | |
-| border-right | | | | |
-| border-bottom | | | | |
-| border-left | | | | |
-| margin | | | | |
-| padding | | | | |
-| width | | | | |
-| height | | | | |
-| display | | | | |
-| float | | | | |
-| position | | | | |
-| z | | | | |
-| color | | | | |
-| background | | | | |
-| font | | | | |
-| text | | | | |
-| opacity | | | | |
-| visibility | | | | |
-| cursor | | | | |
-| list | | | | | |
-| overflow | | | | | |
-| outline | | | | | |
-| table | | | | | |
-| table-spacing | | | | | |
-| table-border | | | | | |
-| vertical-align | | | | | |
-| text-align | | | | | |
-| text-decoration | | | | | |
-| text-transform | | | | | |
-| line-height | | | | | |
-| letter-spacing | | | | | |
-| word-spacing | | | | | |
-| white-space | | | | | |
-| word-wrap | | | | | |
-| direction | | | | | |
-| clear | | | | | |
-| content | | | | | |
-| quotes | | | | | |
-| counter | | | | | |
-| src | | | | | |
-| animation | | | | | |
-| transition | | | | | |
-| transform | | | | | |
-| transform | | | | | |
-| filter | | | | | |
-| box-shadow | | | | | |
-| border-radius | | | | | |
-| background-image | | | | | |
-| background-repeat | | | | | |
-| background-position | | | | | |
-| background-size | | | | | |
-| background-attachment | | | | | |
-| background-color | | | | | |
-| background-clip | | | | | |
-| background-blend | | | | | |
-| box-sizing | | | | | |
-| box-decoration | | | | | |
-| object-fit | | | | | |
-| object-image | | | | | |
-| list-style-type | | | | | |
+| `border` |  |  |  |  |
+| `border-style` |  |  |  |  |
+| `border-width` |  |  |  |  |
+| `border-color` |  |  |  |  |
+| `border-top` |  |  |  |  |
+| `border-right` |  |  |  |  |
+| `border-bottom` |  |  |  |  |
+| `border-left` |  |  |  |  |
+| `margin` |  |  |  |  |
+| `padding` |  |  |  |  |
+| `width` |  |  |  |  |
+| `height` |  |  |  |  |
+| `display` |  |  |  |  |
+| `float` |  |  |  |  |
+| `position` |  |  |  |  |
+| `z` |  |  |  |  |
+| `color` |  |  |  |  |
+| `background` |  |  |  |  |
+| `font` |  |  |  |  |
+| `text` |  |  |  |  |
+| `opacity` |  |  |  |  |
+| `visibility` |  |  |  |  |
+| `cursor` |  |  |  |  |
+| `list` |  |  |  |  |
+| `overflow` |  |  |  |  |
+| `outline` |  |  |  |  |
+| `table` |  |  |  |  |
+| `table-spacing` |  |  |  |  |
+| `table-border` |  |  |  |  |
+| `vertical-align` |  |  |  |  |
+| `text-align` |  |  |  |  |
+| `text-decoration` |  |  |  |  |
+| `text-transform` |  |  |  |  |
+| `line-height` |  |  |  |  |
+| `letter-spacing` |  |  |  |  |
+| `word-spacing` |  |  |  |  |
+| `white-space` |  |  |  |  |
+| `word-wrap` |  |  |  |  |
+| `direction` |  |  |  |  |
+| `clear` |  |  |  |  |
+| `content` |  |  |  |  |
+| `quotes` |  |  |  |  |
+| `counter` |  |  |  |  |
+| `src` |  |  |  |  |
+| `animation` |  |  |  |  |
+| `transition` |  |  |  |  |
+| `transform` |  |  |  |  |
+| `transform` |  |  |  |  |
+| `filter` |  |  |  |  |
+| `box-shadow` |  |  |  |  |
+| `border-radius` |  |  |  |  |
+| `background-image` |  |  |  |  |
+| `background-repeat` |  |  |  |  |
+| `background-position` |  |  |  |  |
+| `background-size` |  |  |  |  |
+| `background-attachment` |  |  |  |  |
+| `background-color` |  |  |  |  |
+| `background-clip` |  |  |  |  |
+| `background-blend` |  |  |  |  |
+| `box-sizing` |  |  |  |  |
+| `box-decoration` |  |  |  |  |
+| `object-fit` |  |  |  |  |
+| `object-image` |  |  |  |  |
+| `list-style-type` |  |  |  |  |
 
 | 名称 | 取值 | 初始值 | 应用于 | 继承 |
 | :--- | :--- | :--- | :--- | :--- |
-| border | | | | |
-| border-style | | | | |
-| border-width | | | | |
-| border-color | | | | |
-| border-top | | | | |
-| border-right | | | | |
-| border-bottom | | | | |
-| border-left | | | | |
-| margin | | | | |
-| padding | | | | |
-| width | | | | |
-| height | | | | |
-| display | | | | |
-| float | | | | |
-| position | | | | |
-| z | | | | |
-| color | | | | |
-| background | | | | |
-| font | | | | |
-| text | | | | |
-| opacity | | | | |
-| visibility | | | | |
-| cursor | | | | |
-| list | | | | | |
-| overflow | | | | | |
-| outline | | | | | |
-| table | | | | | |
-| table-spacing | | | | | |
-| table-border | | | | | |
-| vertical-align | | | | | |
-| text-align | | | | | |
-| text-decoration | | | | | |
-| text-transform | | | | | |
-| line-height | | | | | |
-| letter-spacing | | | | | |
-| word-spacing | | | | | |
-| white-space | | | | | |
-| word-wrap | | | | | |
-| direction | | | | | |
-| clear | | | | | |
-| content | | | | | |
-| quotes | | | | | |
-| counter | | | | | |
-| src | | | | | |
-| animation | | | | | |
-| transition | | | | | |
-| transform | | | | | |
-| transform | | | | | |
-| filter | | | | | |
-| box-shadow | | | | | |
-| border-radius | | | | | |
-| background-image | | | | | |
-| background-repeat | | | | | |
-| background-position | | | | | |
-| background-size | | | | | |
-| background-attachment | | | | | |
-| background-color | | | | | |
-| background-clip | | | | | |
-| background-blend | | | | | |
-| box-sizing | | | | | |
-| box-decoration | | | | | |
-| object-fit | | | | | |
-| object-image | | | | | |
-| list-style-type | | | | | |
-
-
-
-
+| `border` |  |  |  |  |
+| `border-style` |  |  |  |  |
+| `border-width` |  |  |  |  |
+| `border-color` |  |  |  |  |
+| `border-top` |  |  |  |  |
+| `border-right` |  |  |  |  |
+| `border-bottom` |  |  |  |  |
+| `border-left` |  |  |  |  |
+| `margin` |  |  |  |  |
+| `padding` |  |  |  |  |
+| `width` |  |  |  |  |
+| `height` |  |  |  |  |
+| `display` |  |  |  |  |
+| `float` |  |  |  |  |
+| `position` |  |  |  |  |
+| `z` |  |  |  |  |
+| `color` |  |  |  |  |
+| `background` |  |  |  |  |
+| `font` |  |  |  |  |
+| `text` |  |  |  |  |
+| `opacity` |  |  |  |  |
+| `visibility` |  |  |  |  |
+| `cursor` |  |  |  |  |
+| `list` |  |  |  |  |
+| `overflow` |  |  |  |  |
+| `outline` |  |  |  |  |
+| `table` |  |  |  |  |
+| `table-spacing` |  |  |  |  |
+| `table-border` |  |  |  |  |
+| `vertical-align` |  |  |  |  |
+| `text-align` |  |  |  |  |
+| `text-decoration` |  |  |  |  |
+| `text-transform` |  |  |  |  |
+| `line-height` |  |  |  |  |
+| `letter-spacing` |  |  |  |  |
+| `word-spacing` |  |  |  |  |
+| `white-space` |  |  |  |  |
+| `word-wrap` |  |  |  |  |
+| `direction` |  |  |  |  |
+| `clear` |  |  |  |  |
+| `content` |  |  |  |  |
+| `quotes` |  |  |  |  |
+| `counter` |  |  |  |  |
+| `src` |  |  |  |  |
+| `animation` |  |  |  |  |
+| `transition` |  |  |  |  |
+| `transform` |  |  |  |  |
+| `transform` |  |  |  |  |
+| `filter` |  |  |  |  |
+| `box-shadow` |  |  |  |  |
+| `border-radius` |  |  |  |  |
+| `background-image` |  |  |  |  |
+| `background-repeat` |  |  |  |  |
+| `background-position` |  |  |  |  |
+| `background-size` |  |  |  |  |
+| `background-attachment` |  |  |  |  |
+| `background-color` |  |  |  |  |
+| `background-clip` |  |  |  |  |
+| `background-blend` |  |  |  |  |
+| `box-sizing` |  |  |  |  |
+| `box-decoration` |  |  |  |  |
+| `object-fit` |  |  |  |  |
+| `object-image` |  |  |  |  |
+| `list-style-type` |  |  |  |  |
 
 ## 附录 C
 
 | 名称 | 值 | 初始值 | 应用于（默认: 所有） | 继承 | 媒体组 |
 | --- | --- | --- | --- | --- | --- |
-| 'color' | <color> | inherit | 取决于用户代理 | 所有 | 是 | 视觉 |
-| 'content' | normal | <string> | <uri> | <counter> | attr(identifier) | open-quote | close-quote | no-open-quote | no-close-quote | no-inherit * | normal | :before 和 :after 伪元素 | No | 所有 |
-| 'counter-increment' | [<identifier> <integer>?] * | none | 所有 | No | 所有 |
-| 'counter-reset' | [<identifier> <integer>?] * | none | 所有 | No | 所有 |
-| 'cue-after' | <uri> | none | inherit | none | 所有 | No | Aura |
-| 'cue-before' | <uri> | none | inherit | Shorthand | 所有 | No | Aura |
-| 'cue' | ['cue-before' | 'cue-after'] * | inherit | 独立属性 | 所有 | No | Aura |
-| 'cursor' | [<uri> | auto * | crosshair | default | | active pointer | move | e-resize | ne-resize | nw-resize | sw-resize | s-resize | w-resize | text | wait | help | progress | | inherit | auto | 所有 | 是 | 视觉, 交互- |
-| 'direction' | ltr | rtl | inherit | ltr | 所有 | 是 | 视觉 |
-| 'display' | inline | block | list-item | run-in | block | table | inline-table | table-row-group | table-header-group | table-footer-group | table-row | table-column-group | column | table-cell | table-caption | none | inherit | | 所有 | No | 所有 |
+| `'color'` | `<color>` | `inherit` | 取决于用户代理 | 所有 | 是 | 视觉 |
+| `'content'` | `normal` \| `<string>` \| `<uri>` \| `<counter>` \| `attr(identifier)` \| `open-quote` \| `close-quote` \| `no-open-quote` \| `no-close-quote` \| `no-inherit *` \| `normal` | `:before` 和 `:after` 伪元素 | 否 | 所有 |
+| `'counter-increment'` | `[<identifier> <integer>?] *` \| `none` | 所有 | 否 | 所有 |
+| `'counter-reset'` | `[<identifier> <integer>?] *` \| `none` | 所有 | 否 | 所有 |
+| `'cue-after'` | `<uri>` \| `none` \| `inherit` | `none` | 所有 | 否 | 听觉 |
+| `'cue-before'` | `<uri>` \| `none` \| `inherit` | `none` | 所有 | 否 | 听觉 |
+| `'cue'` | `['cue-before' \| 'cue-after'] *` \| `inherit` | 独立属性 | 所有 | 否 | 听觉 |
+| `'cursor'` | `[<uri> \| auto * \| crosshair \| default \| pointer \| move \| e-resize \| ne-resize \| nw-resize \| sw-resize \| s-resize \| w-resize \| text \| wait \| help \| progress]` \| `inherit` | `auto` | 所有 | 是 | 视觉, 交互 |
+| `'direction'` | `ltr` \| `rtl` \| `inherit` | `ltr` | 所有 | 是 | 视觉 |
+| `'display'` | `inline` \| `block` \| `list-item` \| `run-in` \| `block` \| `table` \| `inline-table` \| `table-row-group` \| `table-header-group` \| `table-footer-group` \| `table-row` \| `table-column-group` \| `column` \| `table-cell` \| `table-caption` \| `none` \| `inherit` | 所有 | 否 | 所有 |
 
 ## CSS 2.1 属性
 
 | 名称 | 值 | 初始值 | 应用于（默认: 所有） | 继承 | 媒体组 |
 | --- | --- | --- | --- | --- | --- |
-| 'elevation' | <angle> | below | level | above | lower | inherit | 所有 | 是 | 听觉 |
-| 'empty-cells' | show | hide | inherit | show | 'table-cell' 元素 | 是 | 视觉 |
-| 'float' | left | right | none | inherit | | 除定位元素和生成的之外 | No | 视觉 |
-| 'font-family' | [<family-name> | <generic-family> | [<generic-family>*] | 取决于用户代理 | 所有 | 是 | 视觉 |
-| 'font-size' | <absolute-size> | <relative-size> | <percentage> | | medium | 所有 | 是 | 视觉 |
-| 'font-style' | normal | italic | oblique | inherit | normal | 所有 | 是 | 视觉 |
-| 'font-variant' | normal | small-caps | inherit | normal | 所有 | 是 | 视觉 |
-| 'font-weight' | normal | bold | bolder | lighter | 100 | 200 | 300 | 400 | 500 | 600 | 700 | 800 | 900 | inherit | normal | 所有 | 是 | 视觉 |
-| 'font' | ' [ 'font-size' || 'font-variant' || 'font-weight' ] [ / 'line-height' ]? 'font-family' ] || | caption | icon | | menu | message-box | | small-caption | | status-bar | inherit | 简写属性；参见独立属性 | 所有 | 是 | 视觉 |
+| `'elevation'` | `<angle>` \| `below` \| `level` \| `above` \| `lower` \| `inherit` | 所有 | 是 | 听觉 |
+| `'empty-cells'` | `show` \| `hide` \| `inherit` | `show` | `'table-cell'` 元素 | 是 | 视觉 |
+| `'float'` | `left` \| `right` \| `none` \| `inherit` | 除定位元素和生成的内容之外 | 否 | 视觉 |
+| `'font-family'` | `[<family-name> \| <generic-family>]` \| `[<generic-family>*]` | 取决于用户代理 | 所有 | 是 | 视觉 |
+| `'font-size'` | `<absolute-size>` \| `<relative-size>` \| `<percentage>` | `medium` | 所有 | 是 | 视觉 |
+| `'font-style'` | `normal` \| `italic` \| `oblique` \| `inherit` | `normal` | 所有 | 是 | 视觉 |
+| `'font-variant'` | `normal` \| `small-caps` \| `inherit` | `normal` | 所有 | 是 | 视觉 |
+| `'font-weight'` | `normal` \| `bold` \| `bolder` \| `lighter` \| `100` \| `200` \| `300` \| `400` \| `500` \| `600` \| `700` \| `800` \| `900` \| `inherit` | `normal` | 所有 | 是 | 视觉 |
+| `'font'` | `['font-size' \| 'font-variant' \| 'font-weight'] ['/' 'line-height']? 'font-family' \| caption \| icon \| menu \| message-box \| small-caption \| status-bar \| inherit` | 简写属性；参见独立属性 | 所有 | 是 | 视觉 |
 
 ## 附录 C
 
 | 名称 | 值 | 初始值 | 应用于（默认: 所有） | 继承 | 媒体组 |
 | --- | --- | --- | --- | --- | --- |
-| 'height' | <length> | <percentage> | auto | inherit | auto | 所有元素除非替换的内联元素、表格列和列组 | No | 视觉 |
-| 'left' | <length> | <percentage> | auto | inherit | auto | 定位元素 | No | 视觉 |
-| 'letter-spacing' | normal | <length> | inherit | normal | 所有 | 是 | 视觉 |
-| 'line-height' | normal | <number> | <length> | inherit | normal | 所有 | 是 |
-| 'list-style' | <uri> | none | inherit | none | 'display': list-item 的元素 | 是 | |
-| 'list-style-position' | inside | outside | inherit | outside | 'display': list-item 的元素 | 是 | |
-| 'list-style-type' | disc | square | decimal | circle | roman | greek | latin | georgian | none | inherit | 是 | |
-| 'list-style-image' | <uri> | none | inherit | 'display': list-item 的元素 | 是 | |
-| 'margin' | <length> | <percentage> | auto | inherit | 所有元素除非替换的内联元素、表格列和列组 | No | 视觉 |
-| 'margin-left' | <length> | <percentage> | auto | inherit | auto | 定位元素 | No | 视觉 |
-| 'margin-bottom' | <length> | <percentage> | auto | inherit | auto | 定位元素 | No | 视觉 |
-| 'margin-right' | <length> | <percentage> | auto | inherit | auto | 定位元素 | No | 视觉 |
-| 'margin-top' | <length> | <percentage> | auto | inherit | auto | 定位元素 | No | 视觉 |
-| 'max-height' | <length> | <percentage> | auto | inherit | auto | 所有元素除非替换的内联元素、表格列和列组 | No | 视觉 |
-| 'max-width' | <length> | <percentage> | auto | inherit | auto | 所有元素除表格列和列组外 | No | No | 视觉 |
+| `'height'` | `<length>` \| `<percentage>` \| `auto` \| `inherit` | `auto` | 所有元素除非替换的内联元素、表格列和列组 | 否 | 视觉 |
+| `'left'` | `<length>` \| `<percentage>` \| `auto` \| `inherit` | `auto` | 定位元素 | 否 | 视觉 |
+| `'letter-spacing'` | `normal` \| `<length>` \| `inherit` | `normal` | 所有 | 是 | 视觉 |
+| `'line-height'` | `normal` \| `<number>` \| `<length>` \| `inherit` | `normal` | 所有 | 是 | 视觉 |
+| `'list-style'` | `<uri>` \| `none` \| `inherit` | `none` | `'display': list-item` 的元素 | 是 | 视觉 |
+| `'list-style-position'` | `inside` \| `outside` \| `inherit` | `outside` | `'display': list-item` 的元素 | 是 | 视觉 |
+| `'list-style-type'` | `disc` \| `square` \| `decimal` \| `circle` \| `roman` \| `greek` \| `latin` \| `georgian` \| `none` \| `inherit` | 是 | 视觉 |
+| `'list-style-image'` | `<uri>` \| `none` \| `inherit` | `'display': list-item` 的元素 | 是 | 视觉 |
+| `'margin'` | `<length>` \| `<percentage>` \| `auto` \| `inherit` | 所有元素除非替换的内联元素、表格列和列组 | 否 | 视觉 |
+| `'margin-left'` | `<length>` \| `<percentage>` \| `auto` \| `inherit` | `auto` | 定位元素 | 否 | 视觉 |
+| `'margin-bottom'` | `<length>` \| `<percentage>` \| `auto` \| `inherit` | `auto` | 定位元素 | 否 | 视觉 |
+| `'margin-right'` | `<length>` \| `<percentage>` \| `auto` \| `inherit` | `auto` | 定位元素 | 否 | 视觉 |
+| `'margin-top'` | `<length>` \| `<percentage>` \| `auto` \| `inherit` | `auto` | 定位元素 | 否 | 视觉 |
+| `'max-height'` | `<length>` \| `<percentage>` \| `auto` \| `inherit` | `auto` | 所有元素除非替换的内联元素、表格列和列组 | 否 | 视觉 |
+| `'max-width'` | `<length>` \| `<percentage>` \| `auto` \| `inherit` | `auto` | 所有元素除表格列和列组外 | 否 | 视觉 |
 
 | 名称 | 值 | 初始值 | 应用于（默认: 所有） | 继承 | 媒体组 |
 | --- | --- | --- | --- | --- | --- |
-| 'overflow' | visible | hidden | scroll | auto | 块元素 |
-| 'padding' | <length> | <percentage> | auto | inherit | 所有元素除非替换的内联元素、表格列和列组 | No | 视觉 |
-| 'padding-bottom' | <length> | <percentage> | auto | inherit | auto | 定位元素 | No | 视觉 |
-| 'padding-left' | <length> | <percentage> | auto | inherit | auto | 定位元素 | No | 视觉 |
-| 'padding-right' | <length> | <percentage> | auto | inherit | auto | 定位元素 | No | 视觉 |
-| 'padding-top' | <length> | <percentage> | auto | inherit | auto | 定位元素 | No | 视觉 |
-| 'position' | static | relative | absolute | fixed | inherit | static | 所有 | No |
-| 'quotes' | <string>+| none | inherit | 取决于用户代理 | 所有 | 是 | 视觉 |
-| 'richness' | <number> | inherit | 50 | 所有 | 是 | 听觉 |
-| 'right' | <length> | <percentage> | auto | auto | 视觉 |
+| `'overflow'` | `visible` \| `hidden` \| `scroll` \| `auto` | 块元素 |  |  |
+| `'padding'` | `<length>` \| `<percentage>` \| `auto` \| `inherit` | 所有元素除非替换的内联元素、表格列和列组 | 否 | 视觉 |
+| `'padding-bottom'` | `<length>` \| `<percentage>` \| `auto` \| `inherit` | `auto` | 定位元素 | 否 | 视觉 |
+| `'padding-left'` | `<length>` \| `<percentage>` \| `auto` \| `inherit` | `auto` | 定位元素 | 否 | 视觉 |
+| `'padding-right'` | `<length>` \| `<percentage>` \| `auto` \| `inherit` | `auto` | 定位元素 | 否 | 视觉 |
+| `'padding-top'` | `<length>` \| `<percentage>` \| `auto` \| `inherit` | `auto` | 定位元素 | 否 | 视觉 |
+| `'position'` | `static` \| `relative` \| `absolute` \| `fixed` \| `inherit` | `static` | 所有 | 否 | 视觉 |
+| `'quotes'` | `<string>+` \| `none` \| `inherit` | 取决于用户代理 | 所有 | 是 | 视觉 |
+| `'richness'` | `<number>` \| `inherit` | `50` | 所有 | 是 | 听觉 |
+| `'right'` | `<length>` \| `<percentage>` \| `auto` | `auto` | 视觉 |  |  |
 
 ## 附录 C
 
 | 名称 | 值 | 初始值 | 应用于（默认: 所有） | 继承 | 媒体组 |
 | --- | --- | --- | --- | --- | --- |
-| 'outline' | <width> | none | inherit | auto | 块元素 |
-| 'outline-color' | <color> | invert | inherit | normal | 所有 |
-| 'outline-style' | none | none | inherit | auto | 块元素 |
-| 'outline-width' | <width> | medium | inherit | auto | 块元素 |
-| 'overflow-wrap' | normal | wrap | inherit | normal | 所有 | 是 |
-| 'overflow-direction' | row | column | inherit | row | 弹性, 网格 | 所有 |
-| 'overflow-clip' | visible | clip | inherit | auto | 所有 | No |
-| 'object-fit' | auto | auto | inherit | auto | 所有 | No |
-| 'resize' | auto | auto | inherit | auto | 所有 | No |
-| 'size' | auto | auto | inherit | auto | 所有 | No |
-| 'table-layout' | auto | fixed | inherit | auto | 所有 | No |
-| 'table-caption-side' | top | top | inherit | top | 表格元素 | No |
-| 'table-border-collapse' | separate | collapse | inherit | separate | 所有 |
-| 'table-border-spacing' | auto | auto | inherit | auto | 所有 | No |
-| 'table-caption' | auto | auto | inherit | auto | 所有 | No |
-| 'table-spacing' | auto | auto | inherit | auto | 所有 | No |
-| 'transform' | none | none | inherit | none | 所有 | No |
-| 'vertical-align' | baseline | inherit | inherit | baseline | 所有 | No |
-| 'width' | <length> | <percentage> | auto | inherit | auto | 所有元素除非替换的内联元素、表格列和列组 | No | 视觉 |
+| `'outline'` | `<width>` \| `none` \| `inherit` | `auto` | 块元素 |  |  |
+| `'outline-color'` | `<color>` \| `invert` \| `inherit` | `normal` | 所有 |  |  |
+| `'outline-style'` | `none` \| `none` \| `inherit` | `auto` | 块元素 |  |  |
+| `'outline-width'` | `<width>` \| `medium` \| `inherit` | `auto` | 块元素 |  |  |
+| `'overflow-wrap'` | `normal` \| `wrap` \| `inherit` | `normal` | 所有 | 是 | 视觉 |
+| `'overflow-direction'` | `row` \| `column` \| `inherit` | `row` | 弹性, 网格 | 所有 | 视觉 |
+| `'overflow-clip'` | `visible` \| `clip` \| `inherit` | `auto` | 所有 | 否 | 视觉 |
+| `'object-fit'` | `auto` \| `auto` \| `inherit` | `auto` | 所有 | 否 | 视觉 |
+| `'resize'` | `auto` \| `auto` \| `inherit` | `auto` | 所有 | 否 | 视觉 |
+| `'size'` | `auto` \| `auto` \| `inherit` | `auto` | 所有 | 否 | 视觉 |
+| `'table-layout'` | `auto` \| `fixed` \| `inherit` | `auto` | 所有 | 否 | 视觉 |
+| `'table-caption-side'` | `top` \| `top` \| `inherit` | `top` | 表格元素 | 否 | 视觉 |
+| `'table-border-collapse'` | `separate` \| `collapse` \| `inherit` | `separate` | 所有 |  |  |
+| `'table-border-spacing'` | `auto` \| `auto` \| `inherit` | `auto` | 所有 | 否 | 视觉 |
+| `'table-caption'` | `auto` \| `auto` \| `inherit` | `auto` | 所有 | 否 | 视觉 |
+| `'table-spacing'` | `auto` \| `auto` \| `inherit` | `auto` | 所有 | 否 | 视觉 |
+| `'transform'` | `none` \| `none` \| `inherit` | `none` | 所有 | 否 | 视觉 |
+| `'vertical-align'` | `baseline` \| `inherit` \| `inherit` | `baseline` | 所有 | 否 | 视觉 |
+| `'width'` | `<length>` \| `<percentage>` \| `auto` \| `inherit` | `auto` | 所有元素除非替换的内联元素、表格列和列组 | 否 | 视觉 |
 
 ## CSS 2.1 属性
 
 | 名称 | 值 | 初始值 | 应用于（默认: 所有） | 继承 | 媒体组 |
 | --- | --- | --- | --- | --- | --- |
-| 'pause' | [ <time> | <percentage> | {1,2} ] inherit | 简写属性；参见独立属性 | 所有 | No | 听觉 |
-| 'pitch-range' | <number> | inherit | 50 | 所有 | 是 | 听觉 |
-| 'pitch' | <frequency> | x-low | low | medium | x-high | inherit | medium | 所有 | 是 | 听觉 |
-| 'playing-during' | <uri> | mix | repeat? | auto | none | inherit | auto | 所有 | No | 听觉 |
-| 'position' | static | relative | absolute | fixed | inherit | static | 所有 | No | 视觉 |
-| 'quotes' | <string>+| none | inherit | 取决于用户代理 | 所有 | 是 | 视觉 |
-| 'richness' | <number> | inherit | 50 | 所有 | 是 | 听觉 |
-| 'right' | <length> | <percentage> | auto | auto | 定位元素 | No | 视觉 |
-| 'speak-header' | once | always | inherit | once | 具有表格信息的元素 | 是 | 听觉 |
-| 'speak-num' | digits | continuous | inherit | continuous | 所有 | 是 | 听觉 |
-| 'speak-punctuation' | code | none | inherit | none | 所有 | 是 | 听觉 |
-| 'speak' | normal | none | spell-out | inherit | normal | 所有 | 是 | 听觉 |
-| 'speech-rate' | <number> | x-low | slow | medium | fast | x-fast | inherit | medium | 所有 | 是 | 听觉 |
-| 'stress' | <number> | inherit | 50 | 所有 | 是 | 听觉 |
-| 'table-layout' | auto | fixed | inherit | auto | 所有 | No | 视觉 |
-
-
-
-
+| `'pause'` | `[<time> \| <percentage> \| {1,2}] inherit` | 简写属性；参见独立属性 | 所有 | 否 | 听觉 |
+| `'pitch-range'` | `<number>` \| `inherit` | `50` | 所有 | 是 | 听觉 |
+| `'pitch'` | `<frequency>` \| `x-low` \| `low` \| `medium` \| `x-high` \| `inherit` | `medium` | 所有 | 是 | 听觉 |
+| `'playing-during'` | `<uri>` \| `mix` \| `repeat?` \| `auto` \| `none` \| `inherit` | `auto` | 所有 | 否 | 听觉 |
+| `'position'` | `static` \| `relative` \| `absolute` \| `fixed` \| `inherit` | `static` | 所有 | 否 | 视觉 |
+| `'quotes'` | `<string>+` \| `none` \| `inherit` | 取决于用户代理 | 所有 | 是 | 视觉 |
+| `'richness'` | `<number>` \| `inherit` | `50` | 所有 | 是 | 听觉 |
+| `'right'` | `<length>` \| `<percentage>` \| `auto` | `auto` | 定位元素 | 否 | 视觉 |
+| `'speak-header'` | `once` \| `always` \| `inherit` | `once` | 具有表格信息的元素 | 是 | 听觉 |
+| `'speak-num'` | `digits` \| `continuous` \| `inherit` | `continuous` | 所有 | 是 | 听觉 |
+| `'speak-punctuation'` | `code` \| `none` \| `inherit` | `none` | 所有 | 是 | 听觉 |
+| `'speak'` | `normal` \| `none` \| `spell-out` \| `inherit` | `normal` | 所有 | 是 | 听觉 |
+| `'speech-rate'` | `<number>` \| `x-low` \| `slow` \| `medium` \| `fast` \| `x-fast` \| `inherit` | `medium` | 所有 | 是 | 听觉 |
+| `'stress'` | `<number>` \| `inherit` | `50` | 所有 | 是 | 听觉 |
+| `'table-layout'` | `auto` \| `fixed` \| `inherit` | `auto` | 所有 | 否 | 视觉 |
 
 ## 附录 C
 
 | 属性 | 值 | 适用于（默认：所有） | 继承 | 媒体组 |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-| 'text-align' | 左 | 右 | 居中 | 继承 | 当 'direction' 为 'ltr' 时居左；'direction' 为 'rtl' 时居右 | 块级元素、表格单元格和行内内联块 | 是 | 视觉 |
-| 'text-decoration' | 无 | [ 下划线 | 删除线 | 闪烁 ] | 继承 | | 所有 | 否 | 视觉 |
-| 'text-indent' | <length> | <percentage> | 继承 | 0 | 块级元素、表格单元格和行内块 | 是 | 视觉 |
-| 'text-transform' | 首字母大写 | 大写 | 小写 | 无 | 无 | 所有 | 是 | 视觉 |
-| 'top' | <length> | <percentage> | 自动 | 自动 | 定位元素 | 否 | 视觉 |
-| 'unicode-bidi' | 普通 | 嵌入 | 双向覆盖 | 继承 | 普通 | 所有元素，但请见正文 | 否 | 视觉 |
-| 'vertical-align' | 基线 | 下标 | 顶部 | 文本顶部 | 中间 | 底部 | 文本底部 | <percentage> | <length> | 继承 | 基线 | 行内级和 'table-cell' 元素 | 否 | 视觉 |
-| 'visibility' | 显示 | 隐藏 | 折叠 | 继承 | 所有 | 是 | 视觉 |
-| 'voice-family' | [<特定语音> | <通用语音> ] | <特定语音> | <通用语音> | 继承 | 取决于用户代理 | 所有 | 是 | 听觉 |
-| 'volume' | <number> | <percentage> | 静音 | 极柔 | 轻柔 | 中等 | 特响 | 继承 | 中等 | 所有 | 是 | 听觉 |
+| --- | --- | --- | --- | --- |
+| `'text-align'` | 左 \| 右 \| 居中 \| 继承 | 当 `'direction'` 为 `'ltr'` 时居左；`'direction'` 为 `'rtl'` 时居右 | 块级元素、表格单元格和行内内联块 | 是 | 视觉 |
+| `'text-decoration'` | 无 \| [ 下划线 \| 删除线 \| 闪烁 ] \| 继承 | 无 | 所有 | 否 | 视觉 |
+| `'text-indent'` | `<length>` \| `<percentage>` \| 继承 | `0` | 块级元素、表格单元格和行内块 | 是 | 视觉 |
+| `'text-transform'` | 首字母大写 \| 大写 \| 小写 \| 无 \| 无 | 所有 | 是 | 视觉 |
+| `'top'` | `<length>` \| `<percentage>` \| 自动 \| 自动 | 定位元素 | 否 | 视觉 |
+| `'unicode-bidi'` | 普通 \| 嵌入 \| 双向覆盖 \| 继承 | 普通 | 所有元素，但请见正文 | 否 | 视觉 |
+| `'vertical-align'` | 基线 \| 下标 \| 顶部 \| 文本顶部 \| 中间 \| 底部 \| 文本底部 \| `<percentage>` \| `<length>` \| 继承 | 基线 | 行内级和 `'table-cell'` 元素 | 否 | 视觉 |
+| `'visibility'` | 显示 \| 隐藏 \| 折叠 \| 继承 | 所有 | 是 | 视觉 |
+| `'voice-family'` | `[<特定语音> \| <通用语音>]` \| `<特定语音>` \| `<通用语音>` \| 继承 | 取决于用户代理 | 所有 | 是 | 听觉 |
+| `'volume'` | `<number>` \| `<percentage>` \| 静音 \| 极柔 \| 轻柔 \| 中等 \| 特响 \| 继承 | 中等 | 所有 | 是 | 听觉 |
 
 ## CSS 2.1 属性
 
 | 属性 | 值 | 初始值 | 适用于（默认：所有） | 继承 | 媒体组 |
-|---|---|---|---|---|---|---|---|
-| 'white-space' | 普通 | 预 | 不换行 | 预换行 | 预行 | 继承 | 普通 | 所有 | 是 | 视觉 |
-| 'widows' | <integer> | 继承 | 2 | 块级元素 | 是 | 视觉，分页 |
-| 'width' | <length> | <percentage> | 自动 | 继承 | 自动 | 所有元素非替换的行内元素、表格行、行组 | 否 | 视觉 |
-| 'word-spacing' | 普通 | <length> | 继承 | 普通 | 所有 | 是 | 视觉 |
-| 'z-index' | 自动 | <integer> | 继承 | 自动 | 定位元素 | 否 | 视觉 |
+|---|---|---|---|---|---|
+| `'white-space'` | 普通 \| 预 \| 不换行 \| 预换行 \| 预行 \| 继承 | 普通 | 所有 | 是 | 视觉 |
+| `'widows'` | `<integer>` \| 继承 | `2` | 块级元素 | 是 | 视觉，分页 |
+| `'width'` | `<length>` \| `<percentage>` \| 自动 \| 继承 | 自动 | 所有元素非替换的行内元素、表格行、行组 | 否 | 视觉 |
+| `'word-spacing'` | 普通 \| `<length>` \| 继承 | 普通 | 所有 | 是 | 视觉 |
+| `'z-index'` | 自动 \| `<integer>` \| 继承 | 自动 | 定位元素 | 否 | 视觉 |
 
-CSS 2.1 属性列表 (www.w3.org/TR/CSS21/propidx.html) 版权 © 2004年2月25日 世界网联盟（马萨诸塞理工学院、欧洲信息与数学研究协会、庆应大学）。版权所有。
-www.w3.org/Consortium/Legal/2002/copyright-documents-20021231
-
-## CSS 故障排除指南
-
-代码中看起来一切正常，但在页面设计中却并非如此？放松。CSS 初学者和大师们都经历过这个阶段。这份故障排除指南将节省你的挫败感，并帮助确定 CSS 危机的原因。
-
-## 验证
-
-当你遇到问题时，首先必须做的是确保你的 HTML 和 CSS 语法是正确的。即使你使用如 Macromedia Dreamweaver 或 Microsoft FrontPage 等产品可以在设计时隐藏标记和代码，但软件在后台生成的语法仍然必须经过检查。
-
-如果你的 Web 开发软件没有带有验证器（详情请查阅你的软件文档），请务必设置偏好，使 Web 开发软件排除私有元素（如 center），这样验证器就会检查标准的 DTD。
-
-请使用以下网站。
-
-## HTML
-
-有关 HTML 验证服务，请参阅 http://validator.w3.org/。
-
-访问后后，输入引起你问题的页面的表单 URL。如果你使用 URL，请确保该地址在 Web 上是可见的，这意味着该文件不在防火墙或受密码保护的区域（如内网）之后。如果你的 HTML 文件属于这些类别之一，请使用验证服务提供的上传功能。
-
-> 有关 HTML 元素的信息，请参阅附录 A。如果你需要关于将 HTML 转换为 XHTML 的信息，请参阅附录 B。
-
-## 附录 D
-
-## CSS
-
-有关 HTML 验证服务，请参阅 http://validator.w3.org/。
-
-访问后，输入引起你问题的页面的表单 URL。如果你使用 URL，请确保该地址在 Web 上是可见的，这意味着该文件不在防火墙或受密码保护的区域（如内网）之后。如果你的 HTML 文件属于这些类别之一，请使用验证服务提供的上传功能。
+CSS 2.1 属性列表 (www.w3.org/TR/CSS21/propidx.html) 版权 © 2004年2月25日 世界网联盟（马萨诸塞理工学院、欧洲信息与数学研究协会、庆应大学）。版权所有。www.w3.org/Consortium/Legal/2002/copyright-documents-20021231
 
 ## CSS 故障排除指南
 
@@ -10628,15 +9338,15 @@ www.w3.org/Consortium/Legal/2002/copyright-documents-20021231
 
 ## 验证
 
-当你遇到问题时，首先必须做的是确保你的 HTML 和 CSS 语法是正确的。即使你使用如 Macromedia Dreamweaver 或 Microsoft FrontPage 等产品可以在设计时隐藏标记和代码，但软件在后台生成的语法仍然必须经过检查。
+当你遇到问题时，首先必须做的是确保你的 HTML 和 CSS 语法是正确的。即使你使用如 `Macromedia Dreamweaver` 或 `Microsoft FrontPage` 等产品可以在设计时隐藏标记和代码，但软件在后台生成的语法仍然必须经过检查。
 
-如果你的 Web 开发软件没有带有验证器（详情请查阅你的软件文档），请务必设置偏好，使 Web 开发软件排除私有元素（如 center），这样验证器就会检查标准的 DTD。
+如果你的 Web 开发软件没有带有验证器（详情请查阅你的软件文档），请务必设置偏好，使 Web 开发软件排除私有元素（如 `center`），这样验证器就会检查标准的 DTD。
 
 请使用以下网站。
 
 ## HTML
 
-有关 HTML 验证服务，请参阅 http://validator.w3.org/。
+有关 HTML 验证服务，请参阅 `http://validator.w3.org/`。
 
 访问后，输入引起你问题的页面的表单 URL。如果你使用 URL，请确保该地址在 Web 上是可见的，这意味着该文件不在防火墙或受密码保护的区域（如内网）之后。如果你的 HTML 文件属于这些类别之一，请使用验证服务提供的上传功能。
 
@@ -10646,7 +9356,7 @@ www.w3.org/Consortium/Legal/2002/copyright-documents-20021231
 
 ## CSS
 
-有关 HTML 验证服务，请参阅 http://validator.w3.org/。
+有关 HTML 验证服务，请参阅 `http://validator.w3.org/`。
 
 访问后，输入引起你问题的页面的表单 URL。如果你使用 URL，请确保该地址在 Web 上是可见的，这意味着该文件不在防火墙或受密码保护的区域（如内网）之后。如果你的 HTML 文件属于这些类别之一，请使用验证服务提供的上传功能。
 
@@ -10654,17 +9364,17 @@ www.w3.org/Consortium/Legal/2002/copyright-documents-20021231
 
 代码中看起来一切正常，但在页面设计中却并非如此？放松。CSS 初学者和大师们都经历过这个阶段。这份故障排除指南将节省你的挫败感，并帮助确定 CSS 危机的原因。
 
-## 验证 
+## 验证
 
-当你遇到问题时，首先必须做的是确保你的 HTML 和 CSS 语法是正确的。即使你使用如 Macromedia Dreamweaver 或 Microsoft FrontPage 等产品可以在设计时隐藏标记和代码，但软件在后台生成的语法仍然必须经过检查。
+当你遇到问题时，首先必须做的是确保你的 HTML 和 CSS 语法是正确的。即使你使用如 `Macromedia Dreamweaver` 或 `Microsoft FrontPage` 等产品可以在设计时隐藏标记和代码，但软件在后台生成的语法仍然必须经过检查。
 
-如果你的 Web 开发软件没有带有验证器（详情请查阅你的软件文档），请务必设置偏好，使 Web 开发软件排除私有元素（如 center），这样验证器就会检查标准的 DTD。
+如果你的 Web 开发软件没有带有验证器（详情请查阅你的软件文档），请务必设置偏好，使 Web 开发软件排除私有元素（如 `center`），这样验证器就会检查标准的 DTD。
 
 请使用以下网站。
 
 ## HTML
 
-有关 HTML 验证服务，请参阅 http://validator.w3.org/。
+有关 HTML 验证服务，请参阅 `http://validator.w3.org/`。
 
 访问后，输入引起你问题的页面的表单 URL。如果你使用 URL，请确保该地址在 Web 上是可见的，这意味着该文件不在防火墙或受密码保护的区域（如内网）之后。如果你的 HTML 文件属于这些类别之一，请使用验证服务提供的上传功能。
 
@@ -10674,13 +9384,9 @@ www.w3.org/Consortium/Legal/2002/copyright-documents-20021231
 
 ## CSS
 
-有关 HTML 验证服务，请参阅 http://validator.w3.org/。
+有关 HTML 验证服务，请参阅 `http://validator.w3.org/`。
 
 访问后，输入引起你问题的页面的表单 URL。如果你使用 URL，请确保该地址在 Web 上是可见的，这意味着该文件不在防火墙或受密码保护的区域（如内网）之后。如果你的 HTML 文件属于这些类别之一，请使用验证服务提供的上传功能。
-
-
-
-
 
 ## 附录 D
 
@@ -10694,13 +9400,13 @@ www.w3.org/Consortium/Legal/2002/copyright-documents-20021231
 
 ### positioneverything.net
 
-也许问题不在于 CSS，而是浏览器。有关现代浏览器 Bug 的列表和解释，请查看 www.positioneverything.net/。
+也许问题不在于 CSS，而是浏览器。有关现代浏览器 Bug 的列表和解释，请查看 `www.positioneverything.net/`。
 
 ### 开发者工具栏 (Web Developer Toolbar)
 
-如果你使用 Netscape 7+、Mozilla 或 Firefox 浏览器进行开发，请跑（而不是走）前往 Chris Pderick 的浏览器扩展——Web Developer，地址为 www.crispederick.com/work/firefox/webdeveloper/
+如果你使用 `Netscape 7+`、`Mozilla` 或 `Firefox` 浏览器进行开发，请跑（而不是走）前往 `Chris Pderick` 的浏览器扩展——`Web Developer`，地址为 `www.crispederick.com/work/firefox/webdeveloper/`。
 
-该工具为 Web 设计师和 CSS 专家提供了许多功能，是排错 CSS 问题时不可或少的工具。本排错指南中提到的一些技巧可以通过点击 Web Developer 工具栏上的按钮来实现，而无需手动编辑代码。
+该工具为 Web 设计师和 CSS 专家提供了许多功能，是排错 CSS 问题时不可或缺的工具。本排错指南中提到的一些技巧可以通过点击 `Web Developer` 工具栏上的按钮来实现，而无需手动编辑代码。
 
 ## 邮件列表
 
@@ -10708,62 +9414,62 @@ www.w3.org/Consortium/Legal/2002/copyright-documents-20021231
 
 ### css-discuss
 
-如果其他方法都没有让你满意，请尝试请教 css-discuss 中那些友善的人。这是一个专门讨论 CSS 支持的设计实践的邮件列表。该列表的成员从专业人士到初学者应有都有，因此他们见过你可能遇到的每一个问题。
+如果其他方法都没有让你满意，请尝试请教 `css-discuss` 中那些友善的人。这是一个专门讨论 CSS 支持的设计实践的邮件列表。该列表的成员从专业人士到初学者应有尽有，因此他们见过你可能遇到的每一个问题。
 
-有关该列表的更多信息以及加入说明，请参阅 www.css-discuss.org。
+有关该列表的更多信息以及加入说明，请参阅 `www.css-discuss.org`。
 
 ### Babble List
 
 该社区面向高级 Web 设计问题，为设计师和开发者（包括 CSS 开发）提供了信息、资源、理论和实践的活跃交流。总体目标是精进技能并分享对这种新媒体走向的愿景。
 
-有关该列表的更多信息以及加入说明，请参阅 www.babblelist.com。
+有关该列表的更多信息以及加入说明，请参阅 `www.babblelist.com`。
 
 # 索引
 
 ### 符号与数字
 
-- HTML/XHTML 中的 & (和符号) 转义，301, 394
+- HTML/XHTML 中的 `&` (和符号) 转义，301, 394
 - PHP 字符串连接运算符，301
-- + * (星号) 通用选择器前缀，49，通配符，49
-- + \ (反斜杠) 注释前缀，272
-- + ]] (括号、大于号) XML JS 分隔符，393
-- + [ ] (括号) 标题分隔符，355–356，逗号，列表分类分隔符，359，媒体类型属性分隔符，305
-- + > (大于号) 选择器前缀，52
-- # (井号) id 选择器前缀，51
-- + <! (小于号) 感叹号、括号) XML JS 分隔符，393
-- . (点) 类选择器前缀，50
-- “ (双引号) 文件名分隔符，139–140，XML 属性值分隔符，392
+- `*` (星号) 通用选择器前缀，49，通配符，49
+- `\` (反斜杠) 注释前缀，272
+- `]]` (括号、大于号) XML JS 分隔符，393
+- `[ ]` (括号) 标题分隔符，355–356，逗号，列表分类分隔符，359，媒体类型属性分隔符，305
+- `>` (大于号) 选择器前缀，52
+- `#` (井号) id 选择器前缀，51
+- `<!` (小于号) 感叹号、括号) XML JS 分隔符，393
+- `.` (点) 类选择器前缀，50
+- `"` (双引号) 文件名分隔符，139–140，XML 属性值分隔符，392
 - 3D 盒子，70, 81–82, 91
 - 37.com 网站，130
 - 1976design.com 网站，130
 
 ### A
 
-- + a 元素，383
-- a 选择器，67
-- abbr HTML 元素，383
-- 可访问性 (accessibility)，183, 312, 335 *
-- + 缩写注释，186，在网站上避免使用，182
-- acronym HTML 元素，383
+- `a` 元素，383
+- `a` 选择器，67
+- `abbr` HTML 元素，383
+- 可访问性 (accessibility)，183, 312, 335
+- 缩写注释，186，在网站上避免使用，182
+- `acronym` HTML 元素，383
 - Active X 控制，201
-- ActiveCSS 函数，294, 295, 297
-- AddHandler HTML/XHTML 指令，202
-- address HTML 元素，383
+- `ActiveCSS` 函数，294, 295, 297
+- `AddHandler` HTML/XHTML 指令，202
+- `address` HTML 元素，383
 - 美学 (aesthetics)，将内容分离，182
-- after 伪元素，93–99, 114–126
-- element = box (元素即盒子)，194
+- `after` 伪元素，93–99, 114–126
+- `element` = box (元素即盒子)，194
 - 下拉菜单，171
 - text，331
 - 垂直对齐 (vertical-align) CSS 属性，404
-- HTML/XHTML 中的 & (&符号) 转义，301, 394
+- HTML/XHTML 中的 `&` (&符号) 转义，301, 394
 - PHP 字符串连接运算符，301
 - 锚点类 (anchor class)，赋值给，223，logo，340，定位，222–234，调整大小，340, 365，样式表切换，在，293, 294
 - Apache Web 服务器，201–202
-- applet HTML 元素，384
-- area HTML 元素，384
+- `applet` HTML 元素，384
+- `area` HTML 元素，384
 - 参数 (argument)，传递给 JS 函数，294
 - 关联数组 (array)，302
-- 星号 (\*) 通用选择器前缀，49，通配符，49
+- 星号 (`*`) 通用选择器前缀，49，通配符，49
 - 属性选择器，52–54, 238
 
 ### audience (观众受众)
@@ -10775,7 +9481,7 @@ www.w3.org/Consortium/Legal/2002/copyright-documents-20021231
 - 用户画像 (persona)，赋值给，8-11
 - UF 网站，179, 180, 181, 182, 203
 - WebMag 5000 示例项目，14-15
-- Web-saverry，321
+- Web-savvy，321
 - 审核现有网站，12-13
 - 作者样式表，64, 66, 67
 - AW Stats 软件，9
@@ -10783,7 +9489,7 @@ www.w3.org/Consortium/Legal/2002/copyright-documents-20021231
 
 ### B
 
-- + b HTML 元素，384
+- `b` HTML 元素，384
 - Babble List，410
 - 背景 (background) CSS 属性，396
 - 背景附加 (background-attachment) 属性，395
@@ -10795,13 +9501,13 @@ www.w3.org/Consortium/Legal/2002/copyright-documents-20021231
 - 备份到 Sugarfish，173
 - 过滤器 (Filter) 技术，75
 - 基础元素 (base element)，384
-- body 元素，384
-- before 伪元素，93–98, 112-113, 326
+- `body` 元素，384
+- `before` 伪元素，93–98, 112-113, 326
 - 大 HTML 元素，384
 - 块级元素 (block-level element)，38, 246
-- blockquote HTML 元素，384
+- `blockquote` HTML 元素，384
 - 博客功能 (blog feature)，240, 页脚，357
-- 溢出 (overly)，320, 352，样式，320, 359
+- 溢出 (overflow)，320, 352，样式，320, 359
 - 博客网站
 - ChristopherSchmitt.com 网站，320, 352-359, 373-378
 - MSDN 网站，69
@@ -10824,106 +9530,32 @@ www.w3.org/Consortium/Legal/2002/copyright-documents-20021231
 - 宽度 (width)，62, 95, 397
 - 边框 CSS 属性，396-397
 - 底部 (bottom) CSS 属性，397
-- 边界框 (bounding box)。见
-- Bowman, Douglas (博客网站设计师)
+- 边界框 (bounding box)。见 Bowman, Douglas (博客网站设计师)
 - 访谈，78-81
 - "A for Your Eyes" 滑动门技术，363
 - 网站 (design.com)，130, 243, 315
 
-*(注：此处后续存在大量重复内容，已按要求省略)*
+### C
 
-
-
-
-
-## 浏览器（续）
-
-- Flash 电影渲染，201–202
-- 字体大小渲染，341
-- Holly Hack 技术，272
-- hover 属性支持，147, 168
-- IE7 JS 模块库，275
--  Internet选项（Internet Options）对话框，341
-- 布局，实现列（implementing-column），267–273
-- 列表实现，195–196, 197
-- max-width CSS 属性实现，273, 275, 281–282
-- 中值过滤器（Mid Pass Filter），实现用法，75
-- 盒模型实现中的内边距（padding），70
-- 段落渲染，工具提示（tooltip），70–71
-- PNG 支持，163
-- 伪元素支持，356
-- 悬停切换（rollover）实现，139–140, 156–351
-- 圆角框实现，101–107, 118
-- 选择器支持，51, 54
-- 设置对话框，341
-- 尺寸框（sizing box），71, 90, 272
-- 独立版本，69
-- Star Hot HTML，272
-- Suckerdfish 下拉菜单，172, 173
-- 临时接口字段（Temporary Interface fields），341
-- 使用测试，68–69
-- Web 标准支持，69
-- 导入规则（import rule），测试 CSS 技术的浏览器支持情况，283
-
-## Mozilla
-- 字体大小渲染，333
-- Suckerdfish 下拉菜单，172
-- 使用测试，68
-- Web 开发者工具栏（Web Developer Toolbar），30, 410
-- Netscape，182, 183
-
-## Opera
-- 盒模型实现，101, 104–106, 117
-- hover 属性支持，147
-- 使用测试，68
-
-## Safari
-- 盒模型实现，101, 104–106, 117
-- hover 属性支持，备用，290
-- 样式表，在期间支持
-- Suckerdfish 下拉菜单，173
-
-## 样式表（style sheet）
-- 浏览器样式表，65, 67
-- 切换支持，290–291
-- 针对特定，36, 74, 271, 321
-- 可靠性测试，68–69, 71
-- UF 网站支持，182, 183
-- 窗口宽度，填充，240–242, 273–275
-
-## BrowserMatch 指令，201–202
-- 预算，4, 6
-- 构建无障碍网站（Clark），183
-- 项目符号（bullet），从 60, 134–140, 185, 389 移除
-
-## 按钮（button）
-- 颜色，338
-- Google 工具栏博客 BlogThis! 按钮，77
-- 导航按钮，363–364
-- 状态，指示，363
-- 三维，363
-- 按钮 HTML，384
-
-## C
 - Camino 浏览器，68
-- caption HTML 元素，384
-- caption-side CSS 属性，397
-- 卡片分类（card sorting），182
-- 级联（cascade）
+- `caption` HTML 元素，384
+- `caption-side` CSS 属性，397
+- 卡片分类 (card sorting)，182
+- 级联 (cascade)
   - 继承，在其中的作用，58
   - 样式来源，64–66
-- 大写（case）
+- 大写 (case)
   - 转换，54
   - 敏感性，39, 393
 - Colderham, Dan（FC 网站设计师），242–245
-- option HTML 元素，384
+- `option` HTML 元素，384
 - 居中页面，329–332
-- chamfer.gif 文件，196
+- `chamfer.gif` 文件，196
 - 改变，管理，4–6
-- 子（child）
+- 子 (child)
   - 元素，57
   - 选择器，105
-- chrispedrick.com 网站，170
+- `chrispedrick.com` 网站，170
 - Christopher.org 网站，318
 - ChristopherSchmitt.com 网站
   - 可访问性，335
@@ -10940,7 +9572,8 @@ www.w3.org/Consortium/Legal/2002/copyright-documents-20021231
     - 主列，348–352
     - 侧边列，344–347, 359–360
 
-## 颜色（color）
+### 颜色 (color)
+
 - 情感，交流，324
 - 字体，325, 332–342
 - 页脚，323, 329, 356–358, 378–379
@@ -10975,7 +9608,8 @@ www.w3.org/Consortium/Legal/2002/copyright-documents-20021231
   - 线框（wireframe），322
 
 ## 交互 Web（Cinnamon Web），21–22
-- cite HTML，384
+
+- `cite` HTML，384
 - Clark, Joe（构建无障碍网站），183
 - Clarke, Andy（IOT 设计师），311–316
 - 类（class）
@@ -10999,18 +9633,18 @@ www.w3.org/Consortium/Legal/2002/copyright-documents-20021231
   - 颜色，166
   - 样式表，分配给，166
   - UL 元素，分配给，222, 224
-- clip CSS 属性，379, 397
+- `clip` CSS 属性，379, 397
 - 通信，重要性，6
 - 目标，识别，7–8
 - 中间，10
 - 范围，2, 6
 - 网站内容，321
-- code HTML 元素，384
-- col HTML 元素，384
-- colgroup HTML 元素，384
+- `code` HTML 元素，384
+- `col` HTML 元素，384
+- `colgroup` HTML 元素，384
 - 背景（background）
   - 块级，409
-  - CSS background-color 属性，396
+  - CSS `background-color` 属性，396
   - 投影投影（drop shadow），161, 162, 163, 165, 167
     - Flash 电影，162–163
     - 表格，59, 143
@@ -11030,7 +9664,8 @@ www.w3.org/Consortium/Legal/2002/copyright-documents-20021231
 - 列表，无序，62, 66–167, 170, 188
 - 导航栏，62
 
-## 颜色（color）（续）
+### 颜色 (color)（续）
+
 - 搜索框，337, 338
 - 选择器声明，48
 - 表格行，140–143
@@ -11038,7 +9673,8 @@ www.w3.org/Consortium/Legal/2002/copyright-documents-20021231
 - 网站色调，设置，325
 - CSS 属性，398
 
-## 列布局（column layout）
+### 列布局 (column layout)
+
 - ChristopherSchmitt 网站
   - 间隙，348, 351
   - 头部，343
@@ -11074,60 +9710,64 @@ www.w3.org/Consortium/Legal/2002/copyright-documents-20021231
   - 定位，344–345
   - 侧边列，344–347, 359–360
 
-## 逗号（comma）
-  - 列表分隔符，359
+### 逗号 (comma)
 
-## 压缩（compression）
-  - GIF，163
-  - JPEG，162
-  - PNG，162
-  - 匹配选择器，64
-  - 容器选择器，281–282
-  - 内容 CSS 属性，398
-  - 内容层级，14–16
-  - “包含浮动”（Containing Floats）（Meyer），61, 282
-  - 内容伪类（content pseudo-class），226
-  - 内容选择器，51, 56
-  - contrast.css 文件，284–285
-  - 描述，296
-  - 过期，297
-  - JS，200, 302
-  - PHP，302–303
-  - 样式表切换，在，296–298
-  - 拷贝人员，招聘，321
-  - core.css 文件，280, 281, 282
-  - 计数增加属性，398
-  - 重置 CSS 属性，398
-  - CSS Zen Garden 网站，312
-  - 会议列表，410
-  - CSS 属性，398
-  - 光标 CSS 属性，398
+- 列表分隔符，359
 
-## D
+### 压缩 (compression)
+
+- GIF，163
+- JPEG，162
+- PNG，162
+- 匹配选择器，64
+- 容器选择器，281–282
+- 内容 CSS 属性，398
+- 内容层级，14–16
+- “包含浮动”（Containing Floats）（Meyer），61, 282
+- 内容伪类（content pseudo-class），226
+- 内容选择器，51, 56
+- `contrast.css` 文件，284–285
+- 描述，296
+- 过期，297
+- JS，200, 302
+- PHP，302–303
+- 样式表切换，在，296–298
+- 拷贝人员，招聘，321
+- `core.css` 文件，280, 281, 282
+- 计数增加属性，398
+- 重置 CSS 属性，398
+- CSS Zen Garden 网站，312
+- 会议列表，410
+- CSS 属性，398
+- 光标 CSS 属性，398
+
+### D
+
 - 《每日日报》（The Daily），208–210
 - 开发人员，33
 - Davidson, Mike（ESPN.com 设计师），206–208
-- dd HTML 元素，384
-- concept.com 网站，175
-- del HTML 元素，384
-- descent HTML 元素，57
+- `dd` HTML 元素，384
+- `concept.com` 网站，175
+- `del` HTML 元素，384
+- `descent` HTML 元素，57
 - 设计师块，245
 - 设备样式，非浏览器，306
-- df HTML 元素，384
+- `df` HTML 元素，384
 - Digital 网站，295
 - 直接相邻选择器，226
-- direction CSS 属性，398
+- `direction` CSS 属性，398
 - Disney Store UK 网站，312
-- display CSS 属性，398
-- div HTML 元素
+- `display` CSS 属性，398
+- `div` HTML 元素
 - logger Web 使用，120–128
 
 ## 可扩展超文本标记语言（XHTML）
+
 - 颜色，247
-- div，40–42
+- `div`，40–42
 - 帧计数器，347
 - 头部属性，120
-- id 属性，45, 120–126
+- `id` 属性，45, 120–126
 - 实例，div 块，249
 - 内部 div 块，247–249, 251
 - 介绍段落，放置在
@@ -11139,7 +9779,8 @@ www.w3.org/Consortium/Legal/2002/copyright-documents-20021231
 - 宽度，121, 258
 - 在其中包裹列表，185–186, 192–193
 
-## 元素（element）
+### 元素 (element)
+
 - 块级，38, 246
 - 盒后代元素，IE 实现，272
 - 子，57
@@ -11153,8 +9794,8 @@ www.w3.org/Consortium/Legal/2002/copyright-documents-20021231
 - 父级，57
 - position 属性，246
 - 伪元素（pseudo-element）
-  - after，93–99, 114–116, 226
-  - before，93–98, 112–123, 226
+  - `after`，93–99, 114–116, 226
+  - `before`，93–98, 112–123, 226
     - 在其中的，226
     - 浏览器支持，356
     - 元素支持，356
@@ -11162,8 +9803,8 @@ www.w3.org/Consortium/Legal/2002/copyright-documents-20021231
     - 样式，92–93
     - 语法，408–409
   - 属性，399
-  - dt HTML 元素，384
-- DOCTYPE 声明，37, 54–55
+  - `dt` HTML 元素，384
+- `DOCTYPE` 声明，37, 54–55
 - 偶数类，143
 - 投影投影投影（drop shadow），161, 162, 163, 165, 167
     - Flash 电影，162–163
@@ -11184,24 +9825,20 @@ www.w3.org/Consortium/Legal/2002/copyright-documents-20021231
 - 列表，无序，62, 66–167, 170, 188
 - 导航栏，62
 
-
-
-
-
 ## 可扩展超文本标记语言 (XHTML) (续)
 
 可扩展超文本标记语言 (XHTML) (续)
 - 属性
-- id, 393
+- `id`, 393
 - 最小化, 392
-- name 属性, 393
+- `name` 属性, 393
 - 语法, 392
-- xmlns, 391
+- `xmlns`, 391
 - 框编码
 - 边缘, 88
 - 宽度, 液体, 109
 - 大小写敏感, 39
-- DOCTYPE 声明, 37
+- `DOCTYPE` 声明, 37
 - 投影投影, 166, 167–168
 - DTD, 37, 383, 390–391
 - 元素
@@ -11213,10 +9850,10 @@ www.w3.org/Consortium/Legal/2002/copyright-documents-20021231
 - HTML, 转换为, 394
 - JS, 与之使用, 393
 - 布局, 三栏式, 254–256
-- li 标签, 38
+- `li` 标签, 38
 - 列表, 无序, 165–166, 178, 184–186
 - 命名空间, 391
-- p 标签, 38
+- `p` 标签, 38
 - PHP 代码, 插入, 303
 - 鼠标悬停, 131, 133
 - 严格, 391
@@ -11253,8 +9890,8 @@ www.w3.org/Consortium/Legal/2002/copyright-documents-20021231
 - 样式, 256
 - XHTML, 254–256
 - Weblog 功能, 240
-- fieldsets, HTML 元素, 336–337, 384
-- findWord JS 函数, 294
+- `fieldsets`, HTML 元素, 336–337, 384
+- `findWord` JS 函数, 294
 - 引用浏览器
 - 框实现, 101, 104, 106–117
 - 字体大小渲染, 333
@@ -11265,16 +9902,16 @@ www.w3.org/Consortium/Legal/2002/copyright-documents-20021231
 - 首字母伪类, 226
 - 首行伪类, 226
 - Flash 动画电影
-- AddHandler HTML/XHTML 指令, 202
+- `AddHandler` HTML/XHTML 指令, 202
 - 背景
 - 颜色, 162
 - 图像, 163
 - 检测, 服务端, 202
-- div HTML 块, 使用定位, 163–164
+- `div` HTML 块, 使用定位, 163–164
 - 嵌入, 174–175, 199–202
 - 网站功能, 在未安装 Flash 的情况下保留
 - Flash 安装, 199–200
-- .htaccess 文件, 201–202
+- `.htaccess` 文件, 201–202
 - IE 实现, 201–202
 - 层效果, 161
 - 悬停模式, 200
@@ -11296,12 +9933,12 @@ www.w3.org/Consortium/Legal/2002/copyright-documents-20021231
 - 聚灯电影, 199–202
 - Suckerfish 下拉菜单, 与之使用, 173–174
 - UF 网站, 199–202
-- FlashObject 嵌入方法, 175
+- `FlashObject` 嵌入方法, 175
 - 浮动 CSS 属性, 399
 - 浮动模型, 61
 
 - Font，另
-- BASEFONT HTML 元素, 384
+- `BASEFONT` HTML 元素, 384
 - 局部, 384
 - ChristopherSchmitt 网站, 325, 323–332, 342
 - CSS 属性, 282, 399
@@ -11318,7 +9955,7 @@ www.w3.org/Consortium/Legal/2002/copyright-documents-20021231
 - 网站色调, 使用, 325
 - 权重, 399
 - 字体 CSS 属性, 282, 333, 399
-- 字体 HTML 元素, 384
+- `font` HTML 元素, 384
 - 页脚
 - 博客文章, 357–358
 - ChristopherSchmitt 网站, 323, 299, 356, 378–399
@@ -11327,23 +9964,25 @@ www.w3.org/Consortium/Legal/2002/copyright-documents-20021231
 - 选择器, 56, 67
 - 控制组, 384
 - HTML 表单, 384, 385
-- frameset 元素, 385
+- `frameset` 元素, 385
 
-- G
-- garcemedia 网站, 327
+### G
+
+- `garcemedia` 网站, 327
 - 基于 Gecko 的浏览器, 68
-- GET 变量, 302
-- GIF 文件, 163
+- `GET` 变量, 302
+- `GIF` 文件, 163
 - 目标
 - 识别, 7–8
 - 翻译设计, 22
 - Google Toolbar!, 77
-- 大于符号 (>) 选择器, 52
+- 大于符号 (`>`) 选择器, 52
 - "Grey Box Methodology" (Santa Maria), 21
 - 槽, 栏, 348, 351
 
-- H
-- h 元素, 42, 55
+### H
+
+- `h` 元素, 42, 55
 - hack 选择器, 71
 - hack 工作日, 69–75
 - Harvard 网站
@@ -11353,15 +9992,15 @@ www.w3.org/Consortium/Legal/2002/copyright-documents-20021231
 - 布局, 双栏式, 44
 - 背景颜色, 33
 - 边框, 34
-- hash (#) 选择器前缀, 51
-- head HTML 元素, 385
+- hash (`#`) 选择器前缀, 51
+- `head` HTML 元素, 385
 - 页眉
 - ChristopherSchmitt 网站, 320
 - 列布局
 - 三栏式, 254, 257
 - 双栏式, 343
-- div HTML 元素属性, 120
-- h 元素, 55
+- `div` HTML 元素属性, 120
+- `h` 元素, 55
 - 等级, 42
 - Harvard 网站
 - 跳过内容的链接, 放置于, 335
@@ -11375,13 +10014,13 @@ www.w3.org/Consortium/Legal/2002/copyright-documents-20021231
 - 字体, 325
 - HTML 标题级别, 385
 - 高 属性, 400
-- Hicksdesign 网站, 70
+- `Hicksdesign` 网站, 70
 - 层级, 内容, 14–16
 - 招聘文案人员, 321
 - Holly Hack 技术, 272
 - Holz, "Integrated Web Design: Strategies for Long-Term Management", 7
 - 水平线, 385
-- hot.css, 268–289
+- `hot.css`, 268–289
 - 悬停属性
 - 下拉列表实现, 168
 - Firefox 支持, 147
@@ -11391,143 +10030,144 @@ www.w3.org/Consortium/Legal/2002/copyright-documents-20021231
 
 - 悬停属性，分配给元素, 166
 - Opera 支持, 147
-- code 元素, 384
+- `code` 元素, 384
 - 滚动切换实现, 130, 131, 138–139, 142–144, 146–147
-- col 元素, 384
-- colgroup 元素, 384
+- `col` 元素, 384
+- `colgroup` 元素, 384
 - Safari 支持, 147
 - 列编码, 344
 - 悬停选择器, 130, 131, 138–139, 146–147
-- dd 元素, 384
-- del 元素, 384
+- `dd` 元素, 384
+- `del` 元素, 384
 - "How to Size Text Using Em" (Rutter), 282, 333
-- dfn 元素, 384
-- hr 元素, 395
-- dir 元素, 384
-- href 属性值, 通过链接选择链接, 228
-- div 元素
-- hreflang 属性值, 通过链接选择链接, 228
+- `dfn` 元素, 384
+- `hr` 元素, 395
+- `dir` 元素, 384
+- `href` 属性值, 通过链接选择链接, 228
+- `div` 元素
+- `hreflang` 属性值, 通过链接选择链接, 228
 - Blogger 网站, 120-128
-- .htaccess 文件, 201–202
-- body 元素, 120, 121–126, 127
-- b 元素, 67
+- `.htaccess` 文件, 201–202
+- `body` 元素, 120, 121–126, 127
+- `b` 元素, 67
 - 颜色, 247
 - HTML 网站, 131
-- divitis, 40–42
+- `divitis`, 40–42
 
 ## HTML 帮助
-- frame 中心, 347
+- `frame` 中心, 347
 - (可扩展标记语言).另见 XML
-- header 属性, 120
-- a 元素, 383
-- id 属性, 45, 120–126, 247
-- abbr 元素, 383
+- `header` 属性, 120
+- `a` 元素, 383
+- `id` 属性, 45, 120–126, 247
+- `abbr` 元素, 383
 - 继承, div 块, 249
-- acronym 元素, 383
+- `acronym` 元素, 383
 - 内部 div 块, 247–249, 251
 - 元素指令, 202
 - 介绍段落, 放置于, 350
-- address 元素, 383
+- `address` 元素, 383
 - 布局, 三栏, 258–259, 260
-- (&), 转义, 301
+- (`&`), 转义, 301
 - offset, 247, 258
-- applet 元素, 384
+- `applet` 元素, 384
 - 外部 div 块, 248, 249, 250–252
-- area 元素, 384
+- `area` 元素, 384
 - 属性, 空, 39
 - 258–259,
-- b 元素, 384
+- `b` 元素, 384
 - 侧边栏元素, 127–128
-- base 元素, 384
+- `base` 元素, 384
 - 宽度, 121, 258
-- 字体元素, 384
+- `font` 元素, 384
 - 字体大小, 指定在, 333
 - 包装无序列表, 185–186, 192–193
 - 元素, 384
-- dl 元素, 384
-- dt 元素, 384
-- big 元素, 384
+- `dl` 元素, 384
+- `dt` 元素, 384
+- `big` 元素, 384
 - 元素, 41
-- blockquote 元素, 384
-- fieldset 元素, 336–337, 384
-- body 元素
-- div 元素块属性, 120
+- `blockquote` 元素, 384
+- `fieldset` 元素, 336–337, 384
+- `body` 元素
+- `div` 元素块属性, 120
 - 表单, 384, 385
 - ESPN.com 网站, 214–240
-- frame 元素, 384
-- id 属性, 214–219, 224, 237
-- frames 元素, 385
-- leftmargin 属性, 30
-- marginwidth 属性, 30, 35
-- h, 42, 55
-- topmargin 属性, 30
-- br 元素, 43, 384
+- `frame` 元素, 384
+- `id` 属性, 214–219, 224, 237
+- `frames` 元素, 385
+- `leftmargin` 属性, 30
+- `marginwidth` 属性, 30, 35
+- `h`, 42, 55
+- `topmargin` 属性, 30
+- `br` 元素, 43, 384
 - 浏览器支持, 30, 35
-- head 元素, 385
+- `head` 元素, 385
 - 标题级别, 385
-- hr 元素, 385
-- button 元素, 384
-- caption 元素, 384
+- `hr` 元素, 385
+- `button` 元素, 384
+- `caption` 元素, 384
+
 - 大小写敏感, 39
-- html 元素, 385
+- `html` 元素, 385
 
 ## Illustrator，在映射中使用
-- legend 元素, 385
-- li 元素, 38, 222, 223, 228–237
-- link 元素, 286–287, 385
-- map 元素, 385
+- `legend` 元素, 385
+- `li` 元素, 38, 222, 223, 228–237
+- `link` 元素, 286–287, 385
+- `map` 元素, 385
 - 映射网站, 16
-- menu 元素, 385
-- meta 元素, 385
-- oframes 元素, 385
-- noscript 元素, 386
-- object 元素, 386
-- ol 元素, 386
-- optgroup 元素, 386
-- option 元素, 386
-- p
+- `menu` 元素, 385
+- `meta` 元素, 385
+- `oframes` 元素, 385
+- `noscript` 元素, 386
+- `object` 元素, 386
+- `ol` 元素, 386
+- `optgroup` 元素, 386
+- `option` 元素, 386
+- `p`
 - 子选择器, 与之使用, 53
 - 闭合, 38
-- font-weight 属性, 52
-- param 元素, 386, 386
-- s 元素, 386
-- samp 元素, 386
-- script 元素, 386
+- `font-weight` 属性, 52
+- `param` 元素, 386, 386
+- `s` 元素, 386
+- `samp` 元素, 386
+- `script` 元素, 386
 - 搜索框, 336
-- select 元素, 386
-- small 元素, 386
-- span 元素, 386
+- `select` 元素, 386
+- `small` 元素, 386
+- `span` 元素, 386
 - 规范, 29, 35, 383
 - Star HTML Hack, 272
-- strike 元素, 386
-- strong 元素, 386
-- style 元素, 386
-- sub 元素, 386
-- sup 元素, 386
-- table 元素, 386
-- tbody 元素, 386
-- td 元素, 386
-- textarea 元素, 386
-- tfoot 元素, 386
-- th 元素, 386
-- tread 元素, 387
-- title 元素, 387
-- tr 元素, 387
-- tt 元素, 387
-- u 元素, 387
-- ul 元素, 192, 222, 224
+- `strike` 元素, 386
+- `strong` 元素, 386
+- `style` 元素, 386
+- `sub` 元素, 386
+- `sup` 元素, 386
+- `table` 元素, 386
+- `tbody` 元素, 386
+- `td` 元素, 386
+- `textarea` 元素, 386
+- `tfoot` 元素, 386
+- `th` 元素, 386
+- `tread` 元素, 387
+- `title` 元素, 387
+- `tr` 元素, 387
+- `tt` 元素, 387
+- `u` 元素, 387
+- `ul` 元素, 192, 222, 224
 - 验证, 407
-- var 元素, 387
+- `var` 元素, 387
 - XML, 转换为, 389–394
-- html 选择器, 71, 71
+- `html` 选择器, 71, 71
 - 超链接。另见 link
 - 超文本标记语言。另见 HTML
-- i HTML 元素, 385
+- `i` HTML 元素, 385
 - IA (信息架构), 11–12, 15
-- id 属性
-- body HTML 元素, 214, 216–219, 224, 237
-- div HTML 元素, 45–120–126, 247
-- uil HTML 元素, 192
+- `id` 属性
+- `body` HTML 元素, 214, 216–219, 224, 237
+- `div` HTML 元素, 45–120–126, 247
+- `uil` HTML 元素, 192
 - Id 选择器, 51, 61, 68, 218–220
 - IE (Internet Explorer)
 - 自动边距支持, 281
@@ -11550,8 +10190,7 @@ www.w3.org/Consortium/Legal/2002/copyright-documents-20021231
 - 选项对话框, 341
 - 布局, 实现三栏式, 267–273
 - 列表实现, 195–196, 197
-- 最大宽度 CSS 属性实现, 273, 25-
-281–282
+- 最大宽度 CSS 属性实现, 273, 25-281–282
 - 段落渲染, 涉及, 70–71
 - PNG 支持, 163
 - 伪元素元素, 356
@@ -11561,13 +10200,9 @@ www.w3.org/Consortium/Legal/2002/copyright-documents-20021231
 - 独立版本, 69
 - Star HTML Hack, 272
 
-
-
-
-
 # image
 
-- background-image CSS 属性, 396
+- `background-image` CSS 属性, 396
 - box, 放置中
 - point-color, 25–86
 - round-color, 80–90, 91, 102–110–114
@@ -11595,10 +10230,10 @@ www.w3.org/Consortium/Legal/2002/copyright-documents-20021231
 - tone of site (网站色调), 选择, 325
 - transparency (透明度), 143
 - “Images in Liquid Columns” (Rutter), 28
-- image HTML 元素, 385
-- import rule (导入规则), 74–75, 182, 283
+- `image` HTML 元素, 385
+- `import` rule (导入规则), 74–75, 182, 283
 - importance-based design (基于重要性的设计), 208–212
-- important rule (重要规则), 64–65, 66
+- `important` rule (重要规则), 64–65, 66
 - Inc.com 网站, 244, 243
 - indentation (缩进), 195–196, 340
 - direct adjacent combinator selector (直接相邻组合选择器), 226
@@ -11611,11 +10246,11 @@ www.w3.org/Consortium/Legal/2002/copyright-documents-20021231
 - overriding (覆盖), 58
 - positioning, in relative (相对定位), 259
 - rule (规则), 56–57
-- initCSS function, 298
+- `initCSS` function, 298
 - inline element (内联元素), 386
 - inner selector (内层选择器), 248–249, 251
-- input HTML 元素, 385
-- ins HTML 元素, 385
+- `input` HTML 元素, 385
+- `ins` HTML 元素, 385
 - Integrated Web Information System (ISIS) (集成网络信息系统), 186
 - “Integrated Web Design: Strategies for Long-Term CSS Hack Management” (Holzaglio), 75
 - Internet Explorer. 见 IE
@@ -11625,7 +10260,7 @@ www.w3.org/Consortium/Legal/2002/copyright-documents-20021231
 - introduction paragraph (介绍段落), 349–350
 - inventory list (库存列表), 12–14, 321
 - IoTBS (Invasion of the Body Switchers) 样式切换器, 310–315
-- ins HTML 元素, 385
+- `ins` HTML 元素, 385
 - ISIS (Integrated Stock Information System) (集成股票信息系统), 186
 - iStockPhoto 网站, 319
 
@@ -11639,13 +10274,13 @@ www.w3.org/Consortium/Legal/2002/copyright-documents-20021231
 - event handlers (事件处理程序), 295
 - Flash movie (Flash 电影), 使用嵌入, 175
 - function (函数)
-- activeCSS, 294, 295
+- `activeCSS`, 294, 295
 - argument, passing to (传递参数), 294
 - calling (调用), 294
-- findWord, 294
-- itCSS, 298
+- `findWord`, 294
+- `itCSS`, 298
 - invoking (调用), 294
-- setCookie, 297–298, 302
+- `setCookie`, 297–298, 302
 - time, 302
 - IE7 JavaScript 库, 275
 - navigation system, JS-based (基于 JS 的系统), 318
@@ -11661,15 +10296,15 @@ www.w3.org/Consortium/Legal/2002/copyright-documents-20021231
 # K
 - Kaliber1000 网站, 323
 - Karova Store 平台, 312
-- kbd HTML 元素, 385
+- `kbd` HTML 元素, 385
 
 # list
 - Koch, Peter-Paul (“Separating behavior and structure”), 295
 - Kuniavsky, Mike (Observing the User Experience: A Practitioner’s Guide to User Research), 182
 
 # L
-- label HTML 元素, 385
-- lang pseudo-class (lang 伪类), 226
+- `label` HTML 元素, 385
+- `lang` 伪类, 226
 - layout (布局)
 - fixed (固定), 23-25
 - float model as layout tool (浮动模型作为布局工具), 61
@@ -11706,13 +10341,13 @@ www.w3.org/Consortium/Legal/2002/copyright-documents-20021231
 - fixed (固定), 23-25, 327, 329
 - ligand (元素), 25-28
 - score considerations, 24–26, 327
-- legend HTML 元素, 385
+- `legend` HTML 元素, 385
 - legibility, using style switching (使用样式切换的可读性), 284-286
 - less-sign, exclamation mark, >
 - letter-spacing property (字母间距属性), 400
-- li HTML 元素, 38, 222, 223–228
-- li selector (选择器), 67, 139
-- li tag (标签), 38
+- `li` HTML 元素, 38, 222, 223–228
+- `li` selector (选择器), 67, 139
+- `li` tag (标签), 38
 - line break (换行), 138, 384
 - line-height CSS property (行高属性), 351, 400
 - link (链接)
@@ -11726,7 +10361,7 @@ www.w3.org/Consortium/Legal/2002/copyright-documents-20021231
 - rollover link (悬停链接), 129–135, 138–139
 - unordered list (无序列表链接), 188
 - hiding (隐藏), 335
-- href attribute, selecting by, 228
+- `href` attribute, selecting by, 228
 - lang attribute, selecting by, 228
 - image (图像), 385
 - rollover (悬停), 134, 136, 137–138, 148–155
@@ -11740,7 +10375,7 @@ www.w3.org/Consortium/Legal/2002/copyright-documents-20021231
 - print-specific style sheet, identifying using link (通过链接识别打印特定样式表), 308
 - switching, prioritizing using element (优先使用元素), 268–288, 293, 295
 - underline (下划线), 137–188, 189, 362
-- link HTML element (链接元素), 286–287, 385
+- `link` HTML element (链接元素), 286–287, 385
 - list (列表)
 - array, associative (关联), 302
 - border, list section (列表区域), 191
@@ -11771,8 +10406,8 @@ www.w3.org/Consortium/Legal/2002/copyright-documents-20021231
 - child element (子元素), 233–234
 - definition item, by (定义项), 234
 - even-numbered list item (偶数列表项), 220, 230, 232
-- grouping list items before (之前的分组列表项), 228–229, 230–1
-- href attribute, by, 228
+- grouping list items before (之前的分组列表项), 228–229, 230-1
+- `href` attribute, by, 228
 - lang attribute, by, 228
 - image list item, 232–233
 - odd-numbered list item (奇数列表项), 230, 232
@@ -11828,10 +10463,6 @@ www.w3.org/Consortium/Legal/2002/copyright-documents-20021231
 - main file (主文件), 283
 - image (图像), 385
 
-
-
-
-
 # OmniGraffle，在映射中的应用，16
 
 - OmniGraffle HTML 元素, 386
@@ -11840,16 +10471,16 @@ www.w3.org/Consortium/Legal/2002/copyright-documents-20021231
 - 盒模型实现, 101, 104–106, 117
 - hover 属性支持, 147
 - 使用测试, 68
-- optgroup HTML 元素, 386
-- option HTML 元素, 386
-- other-news 选择器, 67
-- outline CSS 属性, 401–402
+- `optgroup` HTML 元素, 386
+- `option` HTML 元素, 386
+- `other-news` 选择器, 67
+- `outline` CSS 属性, 401–402
 - 由外而内法, 329, 336
-- overflow CSS 属性, 376, 402
-- param HTML 元素, 386
-- pause CSS 属性, 402
+- `overflow` CSS 属性, 376, 402
+- `param` HTML 元素, 386
+- `pause` CSS 属性, 402
 - 同行评审, 181–182
-- period () 类选择器, 50
+- period (`.`) 类选择器, 50
 - 持久样式表, 286–287
 - 角色，分配给受众, 8–11
 - QQA 锦标赛网站
@@ -11872,7 +10503,7 @@ www.w3.org/Consortium/Legal/2002/copyright-documents-20021231
 - PHP 编程语言, 300–303
 - Pie (Is Everything) 网站, 72, 92, 210
 - Pilgrim, Mark (““我从未尝试过的那个””), 74
-- pitch CSS 属性, 402–403
+- `pitch` CSS 属性, 402–403
 - 规划
 - ChristopherSchmitt.com 网站, 319–320
 - 用于网站内容的图表, 13–14
@@ -11881,21 +10512,21 @@ www.w3.org/Consortium/Legal/2002/copyright-documents-20021231
 - 使用清单, 13–14, 43
 - 范围, 2
 - 时间，预算, 4
-- play–during CSS 属性, 403
+- `play–during` CSS 属性, 403
 - PNG 文件, 151, 162–163
 - 点字体大小测量, 307
-- pinter.gif 文件, 187–188
+- `pinter.gif` 文件, 187–188
 - Position is Everything (PIE) 网站, 72, 92, 210
 - position 属性
 - position 属性
 
 # P
 
-- p HTML 元素
+- `p` HTML 元素
 - 与子级选择器使用, 53
 - 闭, 38
-- font-weight 属性, 52
-- pXHTML 标签, 38
+- `font-weight` 属性, 52
+- `p` XHTML 标签, 38
 - 内边距
 - 块级, 408
 - 盒, 70, 81, 83, 91, 103
@@ -11906,12 +10537,12 @@ www.w3.org/Consortium/Legal/2002/copyright-documents-20021231
 - 段落, 70
 - 搜索框, 337
 - 设置为 0, 408
-- padding CSS 属性, 402
-- page CSS 属性, 402
-- page-title 选择器, 51
+- `padding` CSS 属性, 402
+- `page` CSS 属性, 402
+- `page-title` 选择器, 51
 - paragraphnborder, 70
 - 盒, 70
-- 定义使用 br HTML 元素, 43, 384
+- 定义使用 `br` HTML 元素, 43, 384
 - id 选择器, 68
 - 引言段落, 349–350
 - p 标签
@@ -11949,9 +10580,9 @@ www.w3.org/Consortium/Legal/2002/copyright-documents-20021231
 - 相对, 246, 250–252, 259, 246–347
 - 滚动背景, 147
 - 文字, 171
-- pre HTML 元素, 386
+- `pre` HTML 元素, 386
 - 技巧, 259
-- print.css 文件, 306–307
+- `print.css` 文件, 306–307
 - 打印, 305, 307, 309
 - Logo, 340
 - 创建特定的样式表, 305, 306–309, 340
@@ -12023,27 +10654,27 @@ www.w3.org/Consortium/Legal/2002/copyright-documents-20021231
 
 # Q
 
-- q HTML 元素, 386
+- `q` HTML 元素, 386
 - 查询字符串, 301
-- 双引号 (")
+- 双引号 (`"`)
 - 文件名分隔符, 139–140
 - XML 属性值, 392
-- quotes CSS 属性, 403
+- `quotes` CSS 属性, 403
 
 # Rational Unified Process 软件项目
 
 # R
 
 - Rational Unified Process 项目, 7
-- col 选择器, 167
+- `col` 选择器, 167
 - 矩形选框工具 (Photoshop), 130, 131, 161–162, 165
 - 常规发布模式, 209, 211, 214, 215–219
-- rel 属性
-- 根据 rel 属性值，列表项目, 227–228
+- `rel` 属性
+- 根据 `rel` 属性值，列表项目, 227–228
 - 持久类型表，指定使用, 287
 - 分辨率，屏幕, 24–26, 27, 241, 327
 - 丰富度 CSS 属性, 403
-- right CSS 属性, 403
+- `right` CSS 属性, 403
 - 右选择器, 271
 - 滚动
 - ChristopherSchmitt.com 网站, 341–342
@@ -12080,24 +10711,24 @@ www.w3.org/Consortium/Legal/2002/copyright-documents-20021231
 
 # S
 
-- HTML 元素, 386
+- `s` HTML 元素, 386
 - 盒模型实现, 101, 104–106, 117
 - hover 属性支持, 147
 - 样式表，支持方案, 290
-- samp HTML 元素, 386
+- `samp` HTML 元素, 386
 - sans-serif 字体, 305, 309, 330
 - Santa Maria, Jason (“灰色框”),21
 - Satay 方法, 174, 199–202
 - Christophermitt.com 网站范围, 2–6, 320–321
 - 媒体, 305–306
 - 分辨率, 24–26, 27, 241, 327
-- script HTML 元素, 386
-- scripts.js 文件, 293, 297–300
+- `script` HTML 元素, 386
+- `scripts.js` 文件, 293, 297–300
 - 滚动条, 375–36
 - 垂直条, 375
 - 水平条, 267, 269, 270
 - 搜索框, 327, 336–338
-- select HTML 元素, 386
+- `select` HTML 元素, 386
 - 伪元素之后, 226
 - 属性选择器, 52–54, 225, 338
 - 伪元素之前, 226
@@ -12136,22 +10767,22 @@ www.w3.org/Consortium/Legal/2002/copyright-documents-20021231
 - 结构化文本, 38
 - 用户操作伪类选择器, 226
 - HTML, 29, 35, 383
-- utnav, 196
+- `utnav`, 196
 - 语音速率 CSS 属性, 403
 - “分离行为与结构” (Koch),295
 - Star HTML Hack, 272
 - 线线字体, 305, 309
-- stopdesign.com 网站, 130, 243, 315
+- `stopdesign.com` 网站, 130, 243, 315
 - Server Logistics 网站, 301
-- stories 类, 166
-- setCookie 函数, 297, 298, 302
+- `stories` 类, 166
+- `setCookie` 函数, 297, 298, 302
 - 策略，文档记录, 2
 - 设置对话框 (IE),341
 - CSS 属性, 403
 - 投影，投影
-- strike HTML 元素, 386
+- `strike` HTML 元素, 386
 - 背景颜色, 161, 162–163, 165, 167
-- strong HTML 元素, 386
+- `strong` HTML 元素, 386
 - 带宽, 161
 - 结构伪类, 225–226
 - Blogger 网站, 148, 150
@@ -12160,7 +10791,7 @@ www.w3.org/Consortium/Legal/2002/copyright-documents-20021231
 - 样式和无常,309, 310, 311
 - Photoshop 阴影使用,161–163, 165
 - 样式,148
-- 滚动，150
+- 滚动, 150
 - 替代方案，148
 - 样式表，支持方案,290
 - 元素,64, 66
@@ -12176,10 +10807,6 @@ www.w3.org/Consortium/Legal/2002/copyright-documents-20021231
 - 水平规则,385
 - Rutter
 - “如何调整字体,”282, 333
-
-
-
-
 
 # 样式（续）
 
@@ -12223,18 +10850,18 @@ www.w3.org/Consortium/Legal/2002/copyright-documents-20021231
   - HTML, 278-279, 291-292, 301
   - 用户样式表, 64, 66, 67
   - 包装样式表, 282
-  - 样式 HTML 元素, 386
+  - `style` HTML 元素, 386
   - Style Gala 网站, 23
-  - sub HTML 元素, 386
+  - `sub` HTML 元素, 386
 - Cuckerfish 软件
   - 下拉, 168-174
   - So menu 脚本, 43, 169
-- sup HTML 元素, 386
+- `sup` HTML 元素, 386
 - SuperTiny SinCity 盒模型, 325
 - 补充选择器, 56
-- supp-nav 选择器, 193-194
+- `supp-nav` 选择器, 193-194
 - 切换选择器, 303
-- switch.php 文件, 301-302
+- `switch.php` 文件, 301-302
 
 # T
 
@@ -12247,11 +10874,11 @@ www.w3.org/Consortium/Legal/2002/copyright-documents-20021231
 - 颜色
   - 背景, 33, 59, 143
   - 行, 140-143, 387
-  - table HTML 元素, 386
-- table-layout CSS 属性, 403
+  - `table` HTML 元素, 386
+- `table-layout` CSS 属性, 403
 - 标语, 342-343
-- tbody HTML 元素, 386
-- dtl HTML 元素, 386
+- `tbody` HTML 元素, 386
+- `dtl` HTML 元素, 386
 - 技术作家，招聘, 321
 - 模板
   - ChristopherSchmitt.com 网站, 321
@@ -12270,7 +10897,7 @@ www.w3.org/Consortium/Legal/2002/copyright-documents-20021231
   - 下拉菜单, 171
   - 字段，多行, 386
 - 字体
-  - BASEFONT HTML 元素, 384
+  - `BASEFONT` HTML 元素, 384
   - 改变，本地, 384
   - ChristopherSchmitt.com 网站, 325, 332-334, 342
   - CSS 属性, 282, 395
@@ -12310,11 +10937,11 @@ www.w3.org/Consortium/Legal/2002/copyright-documents-20021231
   - 网站色调，使用, 325
   - 下划线, 387
   - 网站内容, 331, 403
-  - textarea 元素, 386
+  - `textarea` 元素, 386
   - HTML 元素, 386
-  - ad HTML 元素, 387
-  - the.com 网站, 300
-  - signals.com 网站, 130
+  - `ad` HTML 元素, 387
+  - `the.com` 网站, 300
+  - `signals.com` 网站, 130
   - 三栏布局
     - 块，顶部, 253
     - 边框, 257
@@ -12333,17 +10960,17 @@ www.w3.org/Consortium/Legal/2002/copyright-documents-20021231
     - HTML, 254–256
     - 3D 盒, 70, 81–82, 91
     - 调试, 4
-    - title HTML 元素, 387
+    - `title` HTML 元素, 387
     - 网站色调, 21–22, 324–327
-    - top CSS 属性, 404
+    - `top` CSS 属性, 404
     - 自自而下方法, 329
     - margin 属性, 30
-    - tr HTML 元素, 387
+    - `tr` HTML 元素, 387
 - 透明度
   - 阴影, 150, 165
   - 图片, 134
   - PNG 文件, 162
-  - tt HTML 元素, 387
+  - `tt` HTML 元素, 387
 - 两栏布局
   - 颜色, 349
   - 间隙, 348, 351
@@ -12361,7 +10988,7 @@ www.w3.org/Consortium/Legal/2002/copyright-documents-20021231
 
 # U
 
-- HTML 元素, 387
+- `u` HTML 元素, 387
 - UF (佛罗里达大学) 网站
   - 可访问性, 183
   - 审美，分离内容自, 182
@@ -12425,12 +11052,12 @@ www.w3.org/Consortium/Legal/2002/copyright-documents-20021231
     - Web 标准符合, 182
   - UI 元素伪类, 226
   - UI 元素伪类, 327
-  - HTML 元素, 192, 222, 224
+  - `ul` HTML 元素, 192, 222, 224
   - 选择器, 67, 196
-  - unicode-body CSS 属性, 404
+  - `unicode-body` CSS 属性, 404
   - 佛罗里达大学 (UF) 网站。见 UF
   - 可用性网站, 225
-  - it.com 网站, 327
+  - `it.com` 网站, 327
   - user 伪类, 226
   - 用户样式表, 64, 66
   - 使用 CSS 进行有效活动 (多渠道), 40
@@ -12444,13 +11071,13 @@ www.w3.org/Consortium/Legal/2002/copyright-documents-20021231
   - HTML, 407
   - JS, 175
   - XHTML, 394
-- var HTML 元素, 387
-- vertical-align CSS 属性, 404
-- visibility CSS 属性, 404
+- `var` HTML 元素, 387
+- `vertical-align` CSS 属性, 404
+- `visibility` CSS 属性, 404
 - Video，在网站中, 16
-- voice-family CSS 属性, 404
-- volume CSS 属性, 404
-- max-width CSS 属性实现, 273, 275, 281–282
+- `voice-family` CSS 属性, 404
+- `volume` CSS 属性, 404
+- `max-width` CSS 属性实现, 273, 275, 281–282
 - Mid Pass Filter, 盒实现, 75
 - 内边距盒实现, 70
 - 段落渲染，涉及, 70–71
@@ -12484,12 +11111,12 @@ www.w3.org/Consortium/Legal/2002/copyright-documents-20021231
 - Web 开发者工具栏, 30, 410
 - Netscape, 182, 183
 - 通配符
-  - * (星号), 49
+  - `*` (星号), 49
   - 通用选择器, 49
 - Wired News 网站, 239, 243
 - 线框, 18–21, 322–323
 - WordPress 软件, 320
-- word-spacing CSS 属性, 405
+- `word-spacing` CSS 属性, 405
 - 变 hack, 69-75。见特定
 - 包装样式表, 282
 - 编写网站内容, 321
@@ -12525,9 +11152,6 @@ www.w3.org/Consortium/Legal/2002/copyright-documents-20021231
   - UF 网站, 182, 183
   - 窗口宽度填充, 240-242, 273-275
 
-
-
-
 # XHTML（可扩展超文本标记语言）（续）
 
 - XHTML（可扩展超文本标记语言（续））
@@ -12558,9 +11182,9 @@ www.w3.org/Consortium/Legal/2002/copyright-documents-20021231
 - 良好（well-formed）, 37–38
 - W3C 资源, 36
 - XML, 关系, 389–390
-- xmlns 属性, 391
+- `xmlns` 属性, 391
 
 # Z
 
-- z-index CSS 属性, 174, 405
+- `z-index` CSS 属性, 174, 405
 

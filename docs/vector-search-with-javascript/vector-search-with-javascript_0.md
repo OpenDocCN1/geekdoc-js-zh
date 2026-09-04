@@ -1,17 +1,10 @@
+
+
 # JavaScript 向量搜索
-
-
 
 ![](img/cover.jpg)
 
 ![Pragmatic Bookshelf](img/cover.jpg "Pragmatic Bookshelf")
-
-
-
-
-
-
-
 
 ## 关于 Pragmatic Bookshelf
 
@@ -19,11 +12,11 @@ Pragmatic Bookshelf 是一家敏捷出版公司。我们在这里是因为我们
 
 我们的 Pragmatic 课程、工作坊和其他产品可以帮助你和你的团队创建更好的软件并增加乐趣。欲了解更多信息以及最新的 Pragmatic 书籍，请访问 [`pragprog.com`](http://pragprog.com)。
 
-我们的电子书不包含任何数字版权管理（DRM），并且一直都是无 DRM 的。我们首创了测试书（beta book）概念，你可以在书籍编写期间购买并阅读，并向作者提供反馈以帮助为所有人写出更好的书。所有购买者的免费资源包括源代码下载（如适用）、勘误表和讨论论坛，均可在 pragprog.com 的书籍主页获取。我们的存在是为了让你的生活变得更轻松。
+我们的电子书不包含任何数字版权管理（DRM），并且一直都是无 DRM 的。我们首创了测试书（beta book）概念，你可以在书籍编写期间购买并阅读，并向作者提供反馈以帮助为所有人写出更好的书。所有购买者的免费资源包括源代码下载（如适用）、勘误表和讨论论坛，均可在 `pragprog.com` 的书籍主页获取。我们的存在是为了让你的生活变得更轻松。
 
 ### 新书公告
 
-想关注我们的最新书籍、公告以及偶尔的特别优惠吗？只需在 [pragprog.com](https://pragprog.com) 上创建一个账户（只需一个邮箱地址和密码）并勾选接收新闻事报即可。你也可以在 Twitter 上关注我们 @pragprog。
+想关注我们的最新书籍、公告以及偶尔的特别优惠吗？只需在 [pragprog.com](https://pragprog.com) 上创建一个账户（只需一个邮箱地址和密码）并勾选接收新闻事报即可。你也可以在 Twitter 上关注我们 `@pragprog`。
 
 ### 关于电子书格式
 
@@ -35,36 +28,39 @@ Pragmatic Bookshelf
 
 制作本书的团队包括：Dave Thomas（出版商）、Janet Furlow（首席官）、Susannah Davidson（开发编辑）、L. Sakhi MacMillan（校对）、Gilson Graphics（排版）
 
-客户支持请联系 support@pragprog.com。
+客户支持请联系 `support@pragprog.com`。
 
-国际版权请联系 rights@pragprog.com。
+国际版权请联系 `rights@pragprog.com`。
 
 献送给我的儿子们，他们无尽的问题和好奇心启发了本书，每天激励我继续探索。
 
 Ben Greenberg
-
 
 # 《使用 JavaScript 进行向量搜索》早期评价
 
 Ben 的书提供了我在学习该领域时希望拥有的通俗解释和示例。对于任何加入我团队的人来说，这是必读。
 
 | → | Laurent Doguin |
-| | Couchbase 开发者关系与策略高级总监 |
+|---|---|
+|  | Couchbase 开发者关系与策略高级总监 |
 
 本书在提供构建由向量搜索驱动的应用实战经验方面做得非常好。Ben 引导你完成一个基于现代 AI 模型向量嵌入的真实项目，并将其集成到功能性应用程序中，同时清晰地解释了底层组件，如 `cosine similarity algorithm`（余弦相似度算法）和 `vector space`（向量空间）。
 
 | → | Liran Tal |
-| | Snyk 开发者关系总监 |
+|---|---|
+|  | Snyk 开发者关系总监 |
 
 Ben 能够对复杂的向量搜索世界提供通俗且深入的介绍。他的逐步指导让即使是令人不知无措的话题也变得易于理解，而他对不同方法的深刻对比加深了理解。这本书实用、吸引人，非常适合任何想要探索这项变革性技术的人。
 
 | → | Kevin Lewis |
-| | 开发者关系专家 |
+|---|---|
+|  | 开发者关系专家 |
 
-《使用 JavaScript 进行向量搜索》面向所有想要探索向量搜索世界的读者。本书实现了一个运行的向量搜索服务，并涵盖了安全和验证。这很容易成为关于使用 Node.js 构建 API 的最佳书籍。
+《使用 JavaScript 进行向量搜索》面向所有想要探索向量搜索世界的读者。本书实现了一个运行的向量搜索服务，并涵盖了安全和验证。这很容易成为关于使用 `Node.js` 构建 API 的最佳书籍。
 
 | → | Santosh Yadav |
-| | 资级工程师，GitHub Star，Microsoft MVP 和 Angular GDE |
+|---|---|
+|  | 资级工程师，GitHub Star，Microsoft MVP 和 Angular GDE |
 
 # 前言
 
@@ -84,22 +80,18 @@ Ben 让这个主题变得通俗易懂、实用且有趣。他引导你了解向�
 
 Angie Jones，开发者关系副总裁
 
-
-
-
 感谢许多在本书撰写过程中提供周全反馈、敏锐洞解和慷慨鼓励的技术审稿员。他们的投入让这项工作变得更加清晰、准确，并且变得实用得多。
 
-* Aisha Blake
-* Brian King
-* Josh Grossman
-* Kevin Lewis
-* Samhitha Prasad
-* Tanay Pant
+- Aisha Blake
+- Brian King
+- Josh Grossman
+- Kevin Lewis
+- Samhitha Prasad
+- Tanay Pant
 
 感谢 Susannah Davidson 和整个 Pragmatic Bookshelf 制作团队，他们在从初稿到最终排版过程中提供的指导、耐心以及对细节的关注。
 
 我的家人，感谢你们在这个项目中提供的支持和鼓励。特别感谢我的妻子，是由于她的耐心和支持，才让我能够投入无数个夜晚和周末来编写这本书。
-
 
 # 引言
 
@@ -117,13 +109,13 @@ Angie Jones，开发者关系副总裁
 
 ## 本书内容
 
-本书提供了向量搜索的实战方法，将理论解释与真实世界的代码示例相结合。你将学习如何一步步实现向量搜索，从生成嵌入到优化性能。在此过程中，我们将涵盖向量索引、查询处理和混合搜索技术等核心概念。每一章都建立在前章的基础上，但如果你已经熟悉特定主题，可以随时跳到你最感兴趣章节；例如，如果你已经对向量搜索的基础有所了解，可能想跳过第 2 章`理解向量搜索` 。
+本书提供了向量搜索的实战方法，将理论解释与真实世界的代码示例相结合。你将学习如何一步步实现向量搜索，从生成嵌入到优化性能。在此过程中，我们将涵盖向量索引、查询处理和混合搜索技术等核心概念。每一章都建立在前章的基础上，但如果你已经熟悉特定主题，可以随时跳到你最感兴趣章节；例如，如果你已经对向量搜索的基础有所了解，可能想跳过第 2 章`理解向量搜索`。
 
 在整书中，你将基于 `RealWorld` 示例应用开发一个项目，这是一个模仿 `Medium` 功能的全栈博博客平台。你将逐步通过向量驱动的功能增强这个熟悉的应用程序。通过嵌入内容、启用相似性搜索并分层混合技术，你将一个传统的 CRUD 应用转换为现代、智能的搜索体验。这个项目让每个概念都足了实际的真实世界实现，并作为一个你可以在自己的工作中调整和扩展的运行示例。
 
 本书分为两个部分。第一部分`向量搜索基础`包含第 1 至 3 章，重点关注核心思想：什么是向量搜索，它是如何工作的，以及嵌入和相似性等构建模块。第二部分`构建向量搜索服务`跨越第 4 至 11 章，将引导你使用真实代码和真实数据设计、实现并优化一个功能完整的搜索系统。
 
-想从哪里开始？你将在第一章中通过一个快速上手的向量搜索项目来入门。第 2 章将向你介绍向量搜索的基础，包括它与传统搜索方法的区别，以及常用技术的高层概述。如果你已经熟悉了基础知识，可以跳到第 3 章`生成向量嵌入``，深入研究向量嵌入是如何运作的以及它们为何至关重要。准备好构建了吗？直接进入第 4 章`构建向量搜索基础``，设置你的环境并从零开始编写你自己的向量搜索系统。
+想从哪里开始？你将在第一章中通过一个快速上手的向量搜索项目来入门。第 2 章将向你介绍向量搜索的基础，包括它与传统搜索方法的区别，以及常用技术的高层概述。如果你已经熟悉了基础知识，可以跳到第 3 章`生成向量嵌入`，深入研究向量嵌入是如何运作的以及它们为何至关重要。准备好构建了吗？直接进入第 4 章`构建向量搜索基础`，设置你的环境并从零开始编写你自己的向量搜索系统。
 
 ## 本书使用的规范
 
@@ -139,26 +131,17 @@ Angie Jones，开发者关系副总裁
 
 向量搜索是一项处于体验转折点的技术。它是构建能够改变用户数据交互方式的智能直观系统的门户。在读完本书后，你将具备实现适用于你项目的稳健向量搜索解决方案的技能。那么，让我们开始向量搜索之旅吧！
 
-脚注
+## 脚注
 
-1
-
-[`pragprog.com/titles/bgvector`](http://pragprog.com/titles/bgvector)
+1. [`pragprog.com/titles/bgvector`](http://pragprog.com/titles/bgvector)
 
 Copyright © 2025, The Pragmatic Bookshelf.
 
-# 第一部分
+# 第一部分：向量搜索基础
 
-向量搜索基础
-
-# 第 1 章
-
-入门向量搜索
+# 第 1 章：入门向量搜索
 
 让我们通过一个快速的示例项目来热身，看看向量搜索有多用。你将在随后的章节中学习所有的底层概念，但现在，我们只是来玩玩，看看向量搜索是如何工作的。在本书之后，你将基于一个广泛采用的开源项目从零开始构建一个可运行的向量搜索项目。本章邀请你处理真实数据、运行真实代码并看到有意义的结果。
-
-
-
 
 想象一下你正在写这本书。没错，写正文花费了一些时间，但你成功地完成了一切……突然之间，你遇到了写作瓶颈。你需要为这本书起一个标题，但你无法想出一个既是一个很棒的标题，又符合你出版社书名风格的名字。我当时就是这样，你猜怎么着，我使用向量搜索来帮助我为这本书找到了最合适的标题。
 
@@ -166,11 +149,11 @@ Copyright © 2025, The Pragmatic Bookshelf.
 
 ## 设置项目
 
-创建一个名为 `name_this_book.js` 的新文件。这个文件将为你完成所有工作：爬取网站、生成嵌入、进行比较并返回顶部匹配项。嵌入是文本的数值表示，能够捕捉其含义和语境。嵌入是本书中的核心概念，我们将随着内容的推进进行更深入地探索它们。
+创建一个名为 `name_this_book.js` 的新文件。这个文件将为你完成所有工作：爬取网站、生成嵌入、进行比较并返回顶部匹配项。嵌入是文本的数值表示，能够捕捉其含义和语境。嵌入是本书中的核心概念，我们将随着内容的推进进行更深入的探索它们。
 
-在安装所需的库之前，请确保你已经安装了 Node.js。你可以从官方网站下载它。安装 Node.js 也会安装 `npm`，这是我们在本书中将到的包管理器。
+在安装所需的库之前，请确保你已经安装了 `Node.js`。你可以从官方网站下载它。安装 `Node.js` 也会安装 `npm`，这是我们在本书中将到的包管理器。
 
-一旦安装好 Node.js，你需要安装几个库：
+一旦安装好 `Node.js`，你需要安装几个库：
 
 ```bash
 npm install node-fetch dotenv cheerio
@@ -188,7 +171,7 @@ echo "OPENAI_API_KEY=your-key-here" > .env
 
 这是实现该功能的函数：
 
-`[getting_started_with_vector_search/name_this_book.js](http://media.pragprog.com/titles/bgvector/code/getting_started_with_vector_search%2Fname_this_book.js)`
+[`getting_started_with_vector_search/name_this_book.js`](http://media.pragprog.com/titles/bgvector/code/getting_started_with_vector_search%2Fname_this_book.js)
 
 ```javascript
 async function scrapeTitles() {
@@ -245,7 +228,10 @@ async function scrapeTitles() {
 
 接下来，我们将使用 OpenAI 的 `text-embedding-small` 模型为每个完整标题生成嵌入。让我们定义一个辅助函数来生成单个嵌入：
 
-`[getting_started_with_vector_search/name_this_book.js](http://media.pragprog.com/titles/bgvector/code/getting_started_with_vector_search%2Fname_this_book.js)`
+[`getting_started_with_vector_search/name_this_book.js`](http://media.pragprog.com/titles/bgvector/code/getting_started_with_vector_search%2Fname_this_book.js)
+
+
+
 
 ```javascript
 async function getEmbedding(text) {
@@ -318,13 +304,13 @@ async function embedTitles(books) {
 }
 ```
 
+```javascript
+return validBooks;
+```
 
-
-
-
-| ​� | `return` validBooks; |
-
-| ​� | } |
+```javascript
+}
+```
 
 这会将标题和副标题（如果存在）合并，并为每本书生成一个嵌入（embedding）。所有的嵌入请求会同时发出并并行处理。这可以提高速度，但如果你正在处理大型数据集或有严格的 API 速率限制，可能希望对请求进行节流或批量处理。
 
@@ -334,7 +320,7 @@ async function embedTitles(books) {
 
 现在你将嵌入一个新的标题想法，并使用余弦相似度与目录进行比较。以下是计算向量之间相似度的方法：
 
-[getting_started_with_vector_search/name_this_book.js](http://media.pragprog.com/titles/bgvector/code/getting_started_with_vector_search%2Fname_this_book.js)
+`[getting_started_with_vector_search/name_this_book.js](http://media.pragprog.com/titles/bgvector/code/getting_started_with_vector_search%2Fname_this_book.js)`
 
 ```javascript
 function cosineSimilarity(a, b) {
@@ -360,7 +346,7 @@ function cosineSimilarity(a, b) {
 
 以下是我们查找并排序顶部匹配项的方法：
 
-[getting_started_with_vector_search/name_this_book.js](http://media.pragprog.com/titles/bgvector/code/getting_started_with_vector_search%2Fname_this_book.js)
+`[getting_started_with_vector_search/name_this_book.js](http://media.pragprog.com/titles/bgvector/code/getting_started_with_vector_search%2Fname_this_book.js)`
 
 ```javascript
 function compareTitles(queryEmbedding, books) {
@@ -382,7 +368,7 @@ function compareTitles(queryEmbedding, books) {
 
 最后，让我们将一切连接起来。这个 `main()` 函数运行整个流程：爬取、嵌入、存储和比较。
 
-[getting_started_with_vector_search/name_this_book.js](http://media.pragprog.com/titles/bgvector/code/getting_started_with_vector_search%2Fname_this_book.js)
+`[getting_started_with_vector_search/name_this_book.js](http://media.pragprog.com/titles/bgvector/code/getting_started_with_vector_search%2Fname_this_book.js)`
 
 ```javascript
 async function main() {
@@ -413,8 +399,6 @@ async function main() {
   }
 }
 ```
-
-
 
 此前，你为真实的书名生成了嵌入（embeddings），并使用余弦相似度对它们进行比较。每个标题变成了一个数字列表，即向量，而你建议的标题也以相同的方式嵌入。然后，脚本根据这些向量的相似程度对结果进行排序。
 
@@ -450,7 +434,7 @@ async function main() {
 
 事实上，让我们计算一下。
 
-[understanding_vector_search/similarity_applies_bananas_oranges.js](http://media.pragprog.com/titles/bgvector/code/understanding_vector_search%2Fsimilarity_applies_bananas_oranges.js)
+`[understanding_vector_search/similarity_applies_bananas_oranges.js](http://media.pragprog.com/titles/bgvector/code/understanding_vector_search%2Fsimilarity_applies_bananas_oranges.js)`
 
 ```javascript
 const vectors = {
@@ -469,13 +453,11 @@ const calculateDotProduct = (vec1, vec2) =>
   vec1.reduce((sum, value, index) => sum + value * vec2[index], 0);
 ```
 
-
-
 嵌入（Embeddings）是数据的密集向量表示，能够捕捉不同实体之间的关系。我们使用嵌入来表示数据，使得相似性计算等操作变得更加简单。嵌入同时捕捉实体之间的语义关系和句法关系。例如，在单词的情况下，嵌入可以捕捉诸如“国王之于女王”这种语义关系，以及“国王之于多个国王（复数）”这种句法关系。
 
 这在现实中是什么样子的？让我们以国王和女王的为例，展示我们如何将它们表示为嵌入。在单词嵌入的情况下，单词 `king` 可能被表示为如下所示向量嵌入：
 
-```
+```text
 [
   0.010183674,
   -0.003974117,
@@ -509,11 +491,13 @@ const calculateDotProduct = (vec1, vec2) =>
 
 你现在准备好迈出向量搜索的第一步了。在过去的几个章节中，你已经探索了向量背后的概念、向量嵌入、生成式模型和嵌入模型等。所有这些知识已让你能够开始开发你的第一个向量搜索应用程序。在软件开发中，我们的目标是让事物变得易懂，而不是神秘。这就是为什么我们花这段时间建立你的理解，以便你建立信心。
 
+
+
 如之前提到的，我们将使用 OpenAI Embeddings API 来生成嵌入。OpenAI Embeddings API 是一个强大的工具，允许你为文本、图像等生成嵌入。该 API 易于使用且文档齐全，对于初接触嵌入的开发者来说是一个极佳的选择。在本节中，我们将学习如何使用 OpenAI API 生成嵌入。我们将探索 API 中提供的各种选项，以及如何利用它们为你的数据创建嵌入。
 
 OpenAI 为 Node.js 维护了一个官方 SDK，该 SDK 包含了 OpenAI APIs 的所有功能，包括 Embeddings API。你可以通过 Node.js 包管理器 `npm` 运行以下命令来安装 SDK：
 
-```
+```bash
 npm install openai
 ```
 
@@ -561,13 +545,8 @@ main();
 
 你注意到使用 SDK 创建的请求中有一个额外的 `encoding_format` 参数吗？该参数是你可以使用的两个主要参数之一，用于微调请求以满足你的需求。让我们探索它们：
 
-
-
-
-
-*   `encoding_format`: 决定你希望返回的数据格式，可以是浮点数或 base64 编码。默认值为 `float`，但如果你优先考虑兼容性和可移植性，`base64` 则更具优势。如果存储是一个主要的限制因素，Base64 数据可以进一步压缩数据，而且许多通信协议更方便地处理 base64 编码数据。
-
-*   `Dimensions`: 在此处，你可以指定输出的维度。截至本文编写时，此功能仅支持 OpenAI 的 `text-embedding-3` 模型。嵌入的维度越高，它包含的上下文（包括语义和句法）就越多，但也意味着它占用的空间越大。为你的数据找到合适的平衡需要通过微调来达到可选的维度。在许多情况下，使用模型提供的默认值更为安全。
+- `encoding_format`：决定你希望返回的数据格式，可以是浮点数或 base64 编码。默认值为 `float`，但如果你优先考虑兼容性和可移植性，`base64` 则更具优势。如果存储是一个主要的限制因素，Base64 数据可以进一步压缩数据，而且许多通信协议更方便地处理 base64 编码数据。
+- `Dimensions`：在此处，你可以指定输出的维度。截至本文编写时，此功能仅支持 OpenAI 的 `text-embedding-3` 模型。嵌入的维度越高，它包含的上下文（包括语义和句法）就越多，但也意味着它占用的空间越大。为你的数据找到合适的平衡需要通过微调来达到可选的维度。在许多情况下，使用模型提供的默认值更为安全。
 
 一旦提交了请求，API 将以以下格式返回数据：
 
@@ -640,9 +619,6 @@ OPENAI_API_KEY=your-api-key-here
 
 记住，不要将你的环境变量提交到任何公共代码仓库（例如 GitHub）。
 
-
-
-
 现在你已经知道了要构建什么，让我们来奠定基础。
 
 脚手架搭建（Scaffolding）涉及创建必要的目录和文件、安装依赖以及配置核心设置。
@@ -657,17 +633,17 @@ OPENAI_API_KEY=your-api-key-here
 
 请在你的项目根目录中创建以下目录：
 
-*   `api/`：包含后端的的核心 `API` 逻辑和配置，包括安全性和数据库连接。
-*   `config/`：包含后端的配置文件，包括环境变量和数据库连接设置。
-*   `controllers/`：包含控制器文件，用于处理各种路由的请求和响应。
-*   `middleware/`：包含自定义中间件逻辑，例如身份验证和 `JWT` 验证。
-*   `models/`：包含模型文件，定义存储在数据库中的数据结构。
-*   `routes/`：包含应用程序中不同端点的路由定义。
-*   `views/`：如果通过 Web 浏览器访问 `API service`，则包含服务器渲染的默认视图。
+- `api/`：包含后端的的核心 `API` 逻辑和配置，包括安全性和数据库连接。
+- `config/`：包含后端的配置文件，包括环境变量和数据库连接设置。
+- `controllers/`：包含控制器文件，用于处理各种路由的请求和响应。
+- `middleware/`：包含自定义中间件逻辑，例如身份验证和 `JWT` 验证。
+- `models/`：包含模型文件，定义存储在数据库中的数据结构。
+- `routes/`：包含应用程序中不同端点的路由定义。
+- `views/`：如果通过 Web 浏览器访问 `API service`，则包含服务器渲染的默认视图。
 
 当你创建了所有文件夹后，你的文件夹结构应该如下所示：
 
-```
+```text
 | vector-blog-platform/
 |├── api/
 |├── config/
@@ -694,21 +670,17 @@ OPENAI_API_KEY=your-api-key-here
 
 现在我们对数据库的要求有了更好的了解，让我们来看看可用于存储和查询向量嵌入的各种类型数据库：
 
-*   **文档数据库**是以文档格式（如 `JSON` 或 `XML`）存储数据的数据库。文档数据库非常适合存储非结构化数据（如向量嵌入），因为它们不需要预定义的模式。文档数据库可以针对高维数据的查询和索引进行优化，使其存储向量嵌入的良好选择。
-*   **图数据库**是以图格式存储数据的数据库，其中节点表示实体，边表示实体之间的关系。图数据库非常适合存储和查询数据之间复杂的关系，例如向量嵌入之间的关系。图数据库还可以优化高维数据的查询和索引，使其存储向量嵌入的另一个良好选择。
-*   **SQL 数据库**是以行和列表格形式存储数据的关系型数据库。SQL 数据库非常适合存储结构化数据（如用户配置和博客内容），但它们也可以用于存储向量嵌入。虽然这可能不是最常见的路径，但它们确实能够存储和查询向量嵌入。
+- **文档数据库**是以文档格式（如 `JSON` 或 `XML`）存储数据的数据库。文档数据库非常适合存储非结构化数据（如向量嵌入），因为它们不需要预定义的模式。文档数据库可以针对高维数据的查询和索引进行优化，使其存储向量嵌入的良好选择。
+- **图数据库**是以图格式存储数据的数据库，其中节点表示实体，边表示实体之间的关系。图数据库非常适合存储和查询数据之间复杂的关系，例如向量嵌入之间的关系。图数据库还可以优化高维数据的查询和索引，使其存储向量嵌入的另一个良好选择。
+- **SQL 数据库**是以行和列表格形式存储数据的关系型数据库。SQL 数据库非常适合存储结构化数据（如用户配置和博客内容），但它们也可以用于存储向量嵌入。虽然这可能不是最常见的路径，但它们确实能够存储和查询向量嵌入。
 
 ## 其他数据库选项
 
 在上述三类数据库的任何一类中都有许多部署选项。以下是你可以供项目考虑的数据库详尽但非穷尽的列表，按数据库类型分类：
 
-
-
-
-
-- 文档数据库：`MongoDB`, `Pinecone`
-- 图谱数据库：`Neo4j`, `TigerGraph`
-- SQL 数据库：`Supabase`, `Neon`
+- 文档数据库：`MongoDB`、`Pinecone`
+- 图谱数据库：`Neo4j`、`TigerGraph`
+- SQL 数据库：`Supabase`、`Neon`
 
 每个选项都提供了多种部署方法、定价结构和功能 set，包括托管型和自托管解决方案。虽然全面的对比超出了我们的讨论范围，但我鼓励你探索并选择最符合你需求和预算的选项。
 
@@ -726,7 +698,7 @@ OPENAI_API_KEY=your-api-key-here
 
 幸运的是，`npm` 提供了一个可以为你生成 `package.json` 文件的命令。要生成 `package.json` 文件，请在项目根目录下运行以下命令：
 
-```
+```bash
 npm init -y
 ```
 
@@ -752,11 +724,13 @@ npm init -y
 }
 ```
 
-现在我们已经有了 `package.json` 文件，可以开始为项目安装依赖项了。我们进展非常顺利！在这个阶段，我们本可以直接列出要安装的依赖项，但那样你就只是在“复制和粘贴”，而不理解你安装了什么。让我们花点时间了解我们将要安装的依赖项以及为什么需要它们。
 
-在安装依赖项时，我们需要考虑应用程序开发的三个领域。数据库是其中之一，正如我们之前讨论的，我们不能使用任何数据库，而是需要一个能够存储、索引和查询向量嵌入的数据库。我们将使用 `ORM`（或对象关系映射库）来与数据库交互。`ORM` 是一种编程结构，使我们能够像使用面向对象的编程语言一样，使用对象与数据库中的数据进行交互。通过示例可能会更容易理解。
 
-我们在本项目中使用的的大部分库（包括 `OpenAI SDK` 和 `Ottoman`）都执行异步操作。这些操作需要时间——例如查询数据库或发送网络请求——在通常情况下会阻止程序的继续运行。为了处理这个问题，我们将使用 `JavaScript` 的 `async/await` 语法。`async/await` 允许我们编写看起来和行为上更像普通同步代码的异步代码，使其更容易阅读和维护。在书中，每当我们获取数据、存储嵌入或与外部 API 交互时，都会看到这种模式。
+现在我们已经有了`package.json`文件，可以开始为项目安装依赖项了。我们进展非常顺利！在这个阶段，我们本可以直接列出要安装的依赖项，但那样你就只是在"复制和粘贴"，而不理解你安装了什么。让我们花点时间了解我们将要安装的依赖项以及为什么需要它们。
+
+在安装依赖项时，我们需要考虑应用程序开发的三个领域。数据库是其中之一，正如我们之前讨论的，我们不能使用任何数据库，而是需要一个能够存储、索引和查询向量嵌入的数据库。我们将使用`ORM`（或对象关系映射库）来与数据库交互。`ORM`是一种编程结构，使我们能够像使用面向对象的编程语言一样，使用对象与数据库中的数据进行交互。通过示例可能会更容易理解。
+
+我们在本项目中使用的的大部分库（包括`OpenAI SDK`和`Ottoman`）都执行异步操作。这些操作需要时间——例如查询数据库或发送网络请求——在通常情况下会阻止程序的继续运行。为了处理这个问题，我们将使用`JavaScript`的`async/await`语法。`async/await`允许我们编写看起来和行为上更像普通同步代码的异步代码，使其更容易阅读和维护。在书中，每当我们获取数据、存储嵌入或与外部 API 交互时，都会看到这种模式。
 
 假设你的应用程序有用户，用户模型可能像所示：
 
@@ -771,28 +745,25 @@ npm init -y
 }
 ```
 
-`User` 类表示数据库中的一条用户记录。你可以创建一个新的 `User` 对象，设置其属性并将其保存到数据库中。`ORM` 库负责将对象翻译为数据库查询。这是关于 `ORM` 如何工作以及它为什么在应用程序开发中有所帮助的层层概述。
+`User`类表示数据库中的一条用户记录。你可以创建一个新的`User`对象，设置其属性并将其保存到数据库中。`ORM`库负责将对象翻译为数据库查询。这是关于`ORM`如何工作以及它为什么在应用程序开发中有所帮助的层层概述。
 
-使用 `ORM` 的最大优势之一是它简化了数据查询。与其编写原始查询或复杂的数据库调用，像 `Ottoman` 这样的 `ORM` 让你使用熟悉的 JavaScript 方法和链式调用来表达你想要的内容。这在查询 `JSON` 文档数据库中常见的嵌套或层次结构数据时特别有用。例如，查找带有特定标签的所有博客文章或根据相似分数检索用户记录，可以使用直观的方法（如带有过滤条件的 `Model.find()`）完成，`Ottoman` 会在后台将其转换为优化的查询。这不仅提高了可读性，还降低了编写低效或错误查询的风险。
+使用`ORM`的最大优势之一是它简化了数据查询。与其编写原始查询或复杂的数据库调用，像`Ottoman`这样的`ORM`让你使用熟悉的 JavaScript 方法和链式调用来表达你想要的内容。这在查询`JSON`文档数据库中常见的嵌套或层次结构数据时特别有用。例如，查找带有特定标签的所有博客文章或根据相似分数检索用户记录，可以使用直观的方法（如带有过滤条件的`Model.find()`）完成，`Ottoman`会在后台将其转换为优化的查询。这不仅提高了可读性，还降低了编写低效或错误查询的风险。
 
-
-
-
-第二个关键步骤是将博客内容转换为向量嵌入（vector embeddings），以便我们能够进行相似性搜索。我们还将用户的用户的查询转换为向量嵌入，用以搜索内容。为每个查询生成新的嵌入需要快速完成，因此我们需要考虑性能，并确保该过程尽可能耗短。近期对用户行为的研究显示，如果响应加载时间超过三秒，40% 的用户将离开网站。（[[12]](#f_0037.xhtml_FOOTNOTE-12））这是一个巨大的压力，因此我们需要确保选择的平台和我们构建的 SDK 能够处理这些负载。
+第二个关键步骤是将博客内容转换为向量嵌入（vector embeddings），以便我们能够进行相似性搜索。我们还将用户的用户的查询转换为向量嵌入，用以搜索内容。为每个查询生成新的嵌入需要快速完成，因此我们需要考虑性能，并确保该过程尽可能耗短。近期对用户行为的研究显示，如果响应加载时间超过三秒，40%的用户将离开网站。（[[12]](#f_0037.xhtml_FOOTNOTE-12)）这是一个巨大的压力，因此我们需要确保选择的平台和我们构建的 SDK 能够处理这些负载。
 
 内容到嵌入的转换可以在内容创建时进行，因此我们还需要建立一套标准，规定在作者添加新内容时何时更新嵌入。例如，是否每次编辑都值得修订嵌入？还是说只有某些编辑需要？这些都是我们在构建博客平台功能时需要回答的问题。目前，可以安全地说，纠正一个简单的拼写错误可能不应该触发新的嵌入生成。或者应该呢？我们将这个问题留到以后在讨论优化搜索结果和其他更高级的话题时讨论。
 
 我们将依赖的最后一个应用程序管理领域是环境变量。环境变量设置在应用程序之外，以便在运行时对其进行配置。它们存储敏感数据，例如 API 密钥或数据库连接字符串，将这些信息排除在代码库之外。使用环境变量使得你的应用程序更加安全，并且在不同环境中易于配置。
 
-如果我不提到强制性的安全警告，将是失职的。在处理环境变量时，重要的是不要将敏感信息提交到你的版本控制系统中。务始终将你的环境变量添加到 `.env` 文件中，并将该文件包含在 `.gitignore` 中防止其被提交。这将有助于在开发过程中保持你的敏感信息安全。
+如果我不提到强制性的安全警告，将是失职的。在处理环境变量时，重要的是不要将敏感信息提交到你的版本控制系统中。务始终将你的环境变量添加到`.env`文件中，并将该文件包含在`.gitignore`中防止其被提交。这将有助于在开发过程中保持你的敏感信息安全。
 
-然而，对于生产环境，不建议在 `.env` 文件中存储密钥。相反，请使用安全的方法，例如在运行时从密钥管理器注入环境变量，或从云平台或容器编排系统提供的挂载密钥位置读取它们。这增加了额外的保护层，并确保你的密钥在生产环境中安全地处理。
+然而，对于生产环境，不建议在`.env`文件中存储密钥。相反，请使用安全的方法，例如在运行时从密钥管理器注入环境变量，或从云平台或容器编排系统提供的挂载密钥位置读取它们。这增加了额外的保护层，并确保你的密钥在生产环境中安全地处理。
 
 在了解了这些依赖项的原因和内容后，让我们指定一下将为项目安装的依赖项。我们将使用以下库和工具来构建博客平台：
 
 *   `Ottoman.js`: 一个用于 Couchbase 的 Node.js ORM 库（更准确地说，是一个 ODM 库，因为我们使用的是 JSON 文档数据而非关系关系模型），它允许我们使用对象与 Couchbase 数据库交互。
-*   `OpenAI Node.js SDK`: 用于 `OpenAI` API 的官方 Node.js SDK，允许我们为博客平台中的内容和用户查询生成向量嵌入。
-*   `dotenv`: 一个零依赖模块，可从 `.env` 文件将环境变量加载到 `process.env` 中，以保持我们的敏感信息安全。
+*   `OpenAI Node.js SDK`: 用于`OpenAI`API 的官方 Node.js SDK，允许我们为博客平台中的内容和用户查询生成向量嵌入。
+*   `dotenv`: 一个零依赖模块，可从`.env`文件将环境变量加载到`process.env`中，以保持我们的敏感信息安全。
 
 要安装这三个依赖项，你可以在项目的根目录下运行以下命令：
 
@@ -800,13 +771,13 @@ npm init -y
 npm install ottoman openai dotenv
 ```
 
-你可以通过检查 `package.json` 文件或运行以下命令来验证 `npm` 是否正确安装了依赖：
+你可以通过检查`package.json`文件或运行以下命令来验证`npm`是否正确安装了依赖：
 
 ```bash
 npm list
 ```
 
-运行 `npm list` 后，你将看到类似下面的输出：
+运行`npm list`后，你将看到类似下面的输出：
 
 ```
 vector-blog-platform@1.0.0 /path/to/your/project
@@ -826,37 +797,43 @@ vector-blog-platform@1.0.0 /path/to/your/project
 *   你通过安装 Node.js、搭建项目结构骨架以及选择合适的向量数据库，搭建了开发环境。
 *   你学习到向量嵌入是非结构化的、高维数据，需要专门的索引来以实现快速且准确的搜索。
 *   你探索了可以存储向量数据的数据库类型，包括文档数据库、图数据库和关系数据库，并理解了为什么文档数据库非常适合。
-*   你安装并配置了核心依赖项，包括一个 ORM (`Ottoman`)、用于生成嵌入的 `OpenAI` SDK 以及用于环境变量管理的 `dotenv`。
+*   你安装并配置了核心依赖项，包括一个 ORM (`Ottoman`)、用于生成嵌入的`OpenAI`SDK 以及用于环境变量管理的`dotenv`。
 
 在下一章中，我们将开始在 Node.js 应用程序中实现搜索功能。我们将涵盖如何查询向量数据库以获取相似的嵌入并向用户返回相关结果。
 
 ## 注释
 
 [[8]](#f_0034.xhtml_FNPTR-8)
+
 [`github.com/gothinkster/realworld`](https://github.com/gothinkster/realworld)
+
 [[9]](#f_0034.xhtml_FNPTR-9)
+
 [`codebase.show/projects/realworld`](https://codebase.show/projects/realworld)
 
 [[10]](#f_0034.xhtml_FNPTR-10)
+
 [`github.com/hummusonrails/vector-example-blog-platform`](https://github.com/hummusonrails/vector-example-blog-platform)
 
 [[11]](#f_0035.xhtml_FNPTR-11)
+
 [`cloud.couchbase.com`](https://cloud.couchbase.com)
 
 [[12]](#f_0036.xhtml_FNPTR-12)
+
 [`www.forbes.com/advisor/business/software/website-statistics/`](https://www.forbes.com/advisor/business/software/website-statistics/)
 
 [[13]](#f_0036.xhtml_FNPTR-13)
+
 [`ottomanjs.com/`](https://ottomanjs.com/)
 
 [[14]](#f_0036.xhtml_FNPTR-14)
+
 [`github.com/openai/openai-node`](https://github.com/openai/openai-node)
 
 [[15]](#f_0036.xhtml_FNPTR-15)
+
 [`www.npmjs.com/package/dotenv`](https://www.npmjs.com/package/dotenv)
-
-
-
 
 很多时候，当我兴奋于构建新事物时，我会直接开始写代码。后来，在经历了比我愿意承认更多的重构之后，我意识到我本应该先规划数据结构。
 
@@ -864,7 +841,7 @@ vector-blog-platform@1.0.0 /path/to/your/project
 
 > Carpe datum—抓住数据！
 
-或者，可以回溯 Rob Pike 在其 1989 年的论文《C 语言编程笔记》中编写的经典编程“规则”之一：
+或者，可以回溯 Rob Pike 在其 1989 年的论文《C 语言编程笔记》中编写的经典编程"规则"之一：
 
 规则 5。数据主宰一切。如果你选择了正确的数据结构并良好地组织了内容，那么算法几乎是显而易见的。数据结构而非算法，才是编程的核心。
 
@@ -872,10 +849,10 @@ vector-blog-platform@1.0.0 /path/to/your/project
 
 在我们正在构建的博客平台中，将拥有以下实体：
 
-* 用户 (Users)
-* 文章 (Articles)
-* 标签 (Tags)
-* 评论 (Comments)
+*   用户 (Users)
+*   文章 (Articles)
+*   标签 (Tags)
+*   评论 (Comments)
 
 每个实体都具有特定的属性，用于定义它们以及与其他实体的关系。让我们来看文章模型，它是与平台向量搜索功能关联密切的模型。
 
@@ -885,28 +862,28 @@ vector-blog-platform@1.0.0 /path/to/your/project
 
 文章模型具有以下属性：
 
-* `id`: 文章的唯一标识符。
-* `slug`: 文章的唯一 slug，衍生自标题。
-* `title`: 文章的标题。
-* `description`: 文章的简短描述或摘要。
-* `body`: 文章的正文或内容。
-* `author`: 文章作者的 ID ID。
-* `tagList`: 与文章关联的标签 ID 数组。
-* `comments`: 文章下评论的评论 ID 数组。
-* `favoritesCount`: 将该文章选为收藏的用户数量。
+*   `id`: 文章的唯一标识符。
+*   `slug`: 文章的唯一 slug，衍生自标题。
+*   `title`: 文章的标题。
+*   `description`: 文章的简短描述或摘要。
+*   `body`: 文章的正文或内容。
+*   `author`: 文章作者的 ID ID。
+*   `tagList`: 与文章关联的标签 ID 数组。
+*   `comments`: 文章下评论的评论 ID 数组。
+*   `favoritesCount`: 将该文章选为收藏的用户数量。
 
-查看 `author` 属性，我们可以看到它是用户 ID，在文章实体和用户实体之间建立了关系。`comments` 属性是评论 ID 数组，在文章实体和评论实体之间建立了关系。同样，`tagList` 属性是标签 ID 数组，在文章实体和标签实体之间建立了关系。正如我们在描述用户模型时做的那样，让我们将文章模型及其关系可视化，以进一步理解数据模型：
+查看`author`属性，我们可以看到它是用户 ID，在文章实体和用户实体之间建立了关系。`comments`属性是评论 ID 数组，在文章实体和评论实体之间建立了关系。同样，`tagList`属性是标签 ID 数组，在文章实体和标签实体之间建立了关系。正如我们在描述用户模型时做的那样，让我们将文章模型及其关系可视化，以进一步理解数据模型：
 
 ![Article Model](img/article_model.png "Article Model")
 
-现在我们对文章实体的数据模型有了良好的理解，让我们使用 Ottoman.js 编写代码来定义文章模型。在 `models/` 文件夹中创建一个名为 `Article.js` 的新文件并导入必要的依赖：
+现在我们对文章实体的数据模型有了良好的理解，让我们使用 Ottoman.js 编写代码来定义文章模型。在`models/`文件夹中创建一个名为`Article.js`的新文件并导入必要的依赖：
 
 ```javascript
 import { Schema, model, getModel } from 'ottoman';
 import slugify from 'slugify';
 ```
 
-在前面的代码中，我们正在从 Ottoman.js（一个 JavaScript 库）导入函数和模块，以帮助我们从模型与数据库交互，即 `Schema`、`model` 和 `getModel` 函数。你还会注意到对文章模型有一个独特的导入，即 `slugify` 库。该库将帮助我们根据标题为文章生成唯一的 slug。所有这些导入都是我们将在本文末尾创建的 `couchbaseClient` 的。
+在前面的代码中，我们正在从 Ottoman.js（一个 JavaScript 库）导入函数和模块，以帮助我们从模型与数据库交互，即`Schema`、`model`和`getModel`函数。你还会注意到对文章模型有一个独特的导入，即`slugify`库。该库将帮助我们根据标题为文章生成唯一的 slug。所有这些导入都是我们将在本文末尾创建的`couchbaseClient`的。
 
 接下来，让我们使用 Ottoman.js 的语法定义文章模型的架构：
 
@@ -1007,10 +984,6 @@ articleSchema.methods.removeComment = async function (commentId) {
 };
 ```
 
-
-
-
-
 ```javascript
 const scope = process.env.DB_SCOPE || "_default";
 const Article = model('Article', articleSchema, { scopeName: scope });
@@ -1018,33 +991,35 @@ const Article = model('Article', articleSchema, { scopeName: scope });
 export { articleSchema, Article };
 ```
 
-该模型定义了我们之前讨论的文章属性。`slug`、`title`、`description` 和 `body` 属性是必填字段，其中 `slug` 字段是唯一的并建立了索引，以实现更搜索性能。`tagList` 字段是标签 ID 数组，建立了文章实体与标签实体之间的关系。`author` 字段是一个用户 ID，建立了文章实体与用户实体之间的关系。`comments` 字段是评论 ID 数组，建立了文章实体与评论实体之间的关系。`favoritesCount` 字段是一个数字，用于跟踪将文章设为收藏的用户数量。
+该模型定义了我们之前讨论的文章属性。`slug`、`title`、`description`和`body`属性是必填字段，其中`slug`字段是唯一的并建立了索引，以实现更搜索性能。`tagList`字段是标签 ID 数组，建立了文章实体与标签实体之间的关系。`author`字段是一个用户 ID，建立了文章实体与用户实体之间的关系。`comments`字段是评论 ID 数组，建立了文章实体与评论实体之间的关系。`favoritesCount`字段是一个数字，用于跟踪将文章设为收藏的用户数量。
 
-你还会注意到 `embedding` 字段，它是一个数字数组。该字段将存储文章的向量嵌入（vector embedding），我们将其生成并存储在数据库中。该字段对于执行基于向量嵌入的相似性搜索至关重要。
 
-我们还使用了一个预钩子（pre hook），使用 `slugify` 库从标题自动生成一个干净的 slug。现在，让我们简要查看其他模型及其在平台中的作用。它们在创建向量搜索功能方面的作用较小，但从高层面上理解它们的工作原理将对后续工作有所帮助。
+
+你还会注意到`embedding`字段，它是一个数字数组。该字段将存储文章的向量嵌入（vector embedding），我们将其生成并存储在数据库中。该字段对于执行基于向量嵌入的相似性搜索至关重要。
+
+我们还使用了一个预钩子（pre hook），使用`slugify`库从标题自动生成一个干净的 slug。现在，让我们简要查看其他模型及其在平台中的作用。它们在创建向量搜索功能方面的作用较小，但从高层面上理解它们的工作原理将对后续工作有所帮助。
 
 ### 定义其他模型
 
-正如本章开头提到的，博客平台拥有用户、文章、评论和标签的模型。`Article` 模型是向量搜索过程的核心，因为它将持有平台创建的向量嵌入。其他模型对平台至关重要，但与我们探索重点的相关性不那么大。以下是其他模型的简要概述。每个模型的完整代码可以在项目的 GitHub 仓库中找到。
+正如本章开头提到的，博客平台拥有用户、文章、评论和标签的模型。`Article`模型是向量搜索过程的核心，因为它将持有平台创建的向量嵌入。其他模型对平台至关重要，但与我们探索重点的相关性不那么大。以下是其他模型的简要概述。每个模型的完整代码可以在项目的 GitHub 仓库中找到。
 
-*   `User` 模型可以编写文章、关注其他用户并收藏文章。如果你希望扩展在书中学到的功能，创建过滤器以按“关注的用户的文章”或“收藏的文章”进行搜索，那么这些关系以后可能会帮助对向量搜索结果进行个性化处理。
+- `User`模型可以编写文章、关注其他用户并收藏文章。如果你希望扩展在书中学到的功能，创建过滤器以按“关注的用户的文章”或“收藏的文章”进行搜索，那么这些关系以后可能会帮助对向量搜索结果进行个性化处理。
 
-*   `Comments` 与文章关联并由用户编写。虽然它们没有直接嵌入或为向量搜索建立索引，但它们增加了上下文的丰富性，稍后可能在带有混合搜索策略的进一步增强中使用这些信息。
+- `Comments`与文章关联并由用户编写。虽然它们没有直接嵌入或为向量搜索建立索引，但它们增加了上下文的丰富性，稍后可能在带有混合搜索策略的进一步增强中使用这些信息。
 
-*   `Tags` 用于对文章进行分类并支持基础过滤。由于我们不会为标签生成或存储向量嵌入，因此在这里不需要对它们进行进一步扩展。
+- `Tags`用于对文章进行分类并支持基础过滤。由于我们不会为标签生成或存储向量嵌入，因此在这里不需要对它们进行进一步扩展。
 
 有了对这些辅助模型的高层理解后，我们现在可以将注意力转回准备后端，在最需要的地方生成并持久向量嵌入——即文章本身。
 
 ### 将文章连接到数据库
 
-为了生成和存储嵌入，我们需要一个能够可靠持久数据并高效响应嵌入服务调用的后端。在我们情况下，我们使用 `Couchbase` 作为底层数据库，并使用 `Ottoman.js` 作为 ODM（对象文档映射器）与之交互。
+为了生成和存储嵌入，我们需要一个能够可靠持久数据并高效响应嵌入服务调用的后端。在我们情况下，我们使用`Couchbase`作为底层数据库，并使用`Ottoman.js`作为 ODM（对象文档映射器）与之交互。
 
-`Ottoman` 使得在 JavaScript 中建模文档以及处理用户、文章和标签等实体之间的关系变得简单。但在模型或服务逻辑中使用它之前，我们需要配置一个 Couchbase 集群的共享连接实例。
+`Ottoman`使得在 JavaScript 中建模文档以及处理用户、文章和标签等实体之间的关系变得简单。但在模型或服务逻辑中使用它之前，我们需要配置一个 Couchbase 集群的共享连接实例。
 
 现在来设置它。
 
-在 `services/` 目录下的名为 `clients` 的新子文件夹中，创建一个名为 `couchbaseClient.js` 的新文件。该文件将包含我们的共享 Couchbase 连接逻辑，并暴露一个其他应用程序部分可以重用的已配置 Ottoman 实例。
+在`services/`目录下的名为`clients`的新子文件夹中，创建一个名为`couchbaseClient.js`的新文件。该文件将包含我们的共享 Couchbase 连接逻辑，并暴露一个其他应用程序部分可以重用的已配置 Ottoman 实例。
 
 你的目录应该是：
 
@@ -1089,15 +1064,13 @@ export const getCluster = () => {
 };
 ```
 
-
-
-
-
 [[18]](#f_0040.xhtml_FNPTR-18)
-[`www.catb.org/esr/writings/taoup/html/ch01s06.html#rule5`](http://www.catb.org/esr/writings/taoup/html/ch01s06.html#rule5)
-[[19]](#f_0040.xhtml_FNPTR-19)
-[`www.npmjs.com/package/slugify`](https://www.npmjs.com/package/slugify)
 
+[`www.catb.org/esr/writings/taoup/html/ch01s06.html#rule5`](http://www.catb.org/esr/writings/taoup/html/ch01s06.html#rule5)
+
+[[19]](#f_0040.xhtml_FNPTR-19)
+
+[`www.npmjs.com/package/slugify`](https://www.npmjs.com/package/slugify)
 
 # 第 6 章：构建向量嵌入生成服务
 
@@ -1109,23 +1082,24 @@ export const getCluster = () => {
 
 向量嵌入生成服务将为文章生成嵌入并将其存储在数据库中。该服务将是博客平台的关键组件，因为它是实现用户根据语义相似性和相关性搜索文章的基础。
 
-项目根目录下的 `services/` 文件夹将包含所有的向量嵌入创建和搜索功能。该文件夹的内容我们将定义生成嵌入、存储在数据库中以及执行相似性搜索的逻辑。让我们从妥妥地结构化 `services/` 文件夹开始，以保持关注点分离并保持代码整洁。
+项目根目录下的`services/`文件夹将包含所有的向量嵌入创建和搜索功能。该文件夹的内容我们将定义生成嵌入、存储在数据库中以及执行相似性搜索的逻辑。让我们从妥妥地结构化`services/`文件夹开始，以保持关注点分离并保持代码整洁。
 
 当我们考虑应用程序中向量搜索服务的操作时，可以将其拆分为不同的组件：
 
-*   创建新文章或编辑现有文章：
-    *   为文章生成向量嵌入。
-    *   将向量嵌入保存到数据库。
-*   用户搜索查询：
-    *   为搜索查询生成向量嵌入。
-    *   在数据库中执行相似性搜索。
+- 创建新文章或编辑现有文章：
+  - 为文章生成向量嵌入。
+  - 将向量嵌入保存到数据库。
+
+- 用户搜索查询：
+  - 为搜索查询生成向量嵌入。
+  - 在数据库中执行相似性搜索。
 
 我们还引入了几个工具类来帮助处理向量操作；具体来说，我们需要处理以下内容：
 
-* 验证用于生成嵌入的文本输入。
-*   处理向量操作过程中可能出现的错误。
+- 验证用于生成嵌入的文本输入。
+- 处理向量操作过程中可能出现的错误。
 
-最后，我们需要一个客户端来与 OpenAI API 交互以生成嵌入。你之前已经创建了 `services/` 文件夹，但现在，让我们把它们整合在一起。考虑到这些组件，我们如下结构化 `services/` 文件夹：
+最后，我们需要一个客户端来与 OpenAI API 交互以生成嵌入。你之前已经创建了`services/`文件夹，但现在，让我们把它们整合在一起。考虑到这些组件，我们如下结构化`services/`文件夹：
 
 | | services/ |
 | :--- | :--- |
@@ -1146,30 +1120,30 @@ export const getCluster = () => {
 
 ![通过文件的嵌入流程图](img/embedding_process_through_files_flow.png "通过文件的嵌入流程图")
 
-新文章的流程开始于应用程序将文章内容传递给 `validateText.js`，以确保在继续之前符合质量标准。如果输入通过了验证，`createEmbedding.js` 将通过 `openaiClient.js` 调用 OpenAI 客户端生成向量嵌入。生成的嵌入随后使用 `saveEmbedding.js` 进行存储，它处理数据库操作。在整个过程中，`errorHandlers.js` 确保任何问题都能被优雅地处理。
+新文章的流程开始于应用程序将文章内容传递给`validateText.js`，以确保在继续之前符合质量标准。如果输入通过了验证，`createEmbedding.js`将通过`openaiClient.js`调用 OpenAI 客户端生成向量嵌入。生成的嵌入随后使用`saveEmbedding.js`进行存储，它处理数据库操作。在整个过程中，`errorHandlers.js`确保任何问题都能被优雅地处理。
 
-用户查询流程开始于应用程序接收搜索查询并将其传递给 `embedQuery.js` 为搜索文本生成向量嵌入。代码随后使用 OpenAI 客户端创建此查询嵌入。它将嵌入传递给 `performSearch.js`，后者针对存储的文章嵌入运行相似性搜索以找到相关结果。与文章流程一样，该过程包含了验证和错误处理，以确保运行顺且搜索结果准确。
+用户查询流程开始于应用程序接收搜索查询并将其传递给`embedQuery.js`为搜索文本生成向量嵌入。代码随后使用 OpenAI 客户端创建此查询嵌入。它将嵌入传递给`performSearch.js`，后者针对存储的文章嵌入运行相似性搜索以找到相关结果。与文章流程一样，该过程包含了验证和错误处理，以确保运行顺且搜索结果准确。
 
 ## 构建工具类
 
 在深入向量嵌入生成服务的核心功能之前，我们将从构建处理文本验证和错误管理的工具开始。这些工具确保系统正确执行向量操作并对错误做出优雅响应。
 
-项目根目录下的 `services/utils/` 文件夹将包含这些工具。该文件夹将包含验证文本输入和处理错误的逻辑。让我们从创建 `services/utils/` 文件夹并按如下方式对其进行结构化开始：
+项目根目录下的`services/utils/`文件夹将包含这些工具。该文件夹将包含验证文本输入和处理错误的逻辑。让我们从创建`services/utils/`文件夹并按如下方式对其进行结构化开始：
 
 | | utils/ |
 | :--- | :--- |
 | | ├── validateText.js |
 | | ├── errorHandlers.js |
 
-接下来，我们创建 `validateText.js` 功能。
+接下来，我们创建`validateText.js`功能。
 
 ### 验证文本输入
 
-`validateText.js` 工具将在生成向量嵌入之前验证文本输入。该工具确保文本输入符合生成嵌入的要求并妥善地处理错误。
+`validateText.js`工具将在生成向量嵌入之前验证文本输入。该工具确保文本输入符合生成嵌入的要求并妥善地处理错误。
 
 你可能会疑惑为什么在生成嵌入之前验证文本输入很重要。除了通用的数据质量和安全考虑外，生成向量嵌入涉及真实的计算和财务成本。验证确保我们只对有意义且符合预期的输入生成嵌入。
 
-以下是 `validateText.js` 工具可能性的示例。你在应用程序中需要的实际验证可能会有所不同，但这应该能给你一个起点：
+以下是`validateText.js`工具可能性的示例。你在应用程序中需要的实际验证可能会有所不同，但这应该能给你一个起点：
 
 ```javascript
 import { ValidationError } from './errorHandlers';
@@ -1208,19 +1182,15 @@ const validateText = (text) => {
 export default validateText;
 ```
 
+在前面的代码中，我们定义了一个`validateText`函数，它接受一个文本输入作为参数并对输入进行各种验证。该函数会检查输入是否为字符串、是否为空或仅包含空格、是否超过最大长度、是否符合最小长度、是否过于重复以及是否包含过多的标点符号。如果任何验证失败，该函数将抛出一个带有适当错误消息的`ValidationError`。如果所有验证均通过，函数将返回`true`。
 
-
-
-
-在前面的代码中，我们定义了一个 `validateText` 函数，它接受一个文本输入作为参数并对输入进行各种验证。该函数会检查输入是否为字符串、是否为空或仅包含空格、是否超过最大长度、是否符合最小长度、是否过于重复以及是否包含过多的标点符号。如果任何验证失败，该函数将抛出一个带有适当错误消息的 `ValidationError`。如果所有验证均通过，函数将返回 `true`。
-
-你可能已经注意到前面的代码使用了 `ValidationError`，它是从 `errorHandlers.js` 工具类导入的。然而，该工具类尚未存在，所以让我们接下来创建它。
+你可能已经注意到前面的代码使用了`ValidationError`，它是从`errorHandlers.js`工具类导入的。然而，该工具类尚未存在，所以让我们接下来创建它。
 
 ### 处理错误
 
-`errorHandlers.js` 工具类负责处理向量嵌入操作期间的错误。它定义了应用程序可以自定义错误类，用于抛出和捕获特定错误。这些类提供了更多的上下文和细节，使得调试和解决问题变得更容易。
+`errorHandlers.js`工具类负责处理向量嵌入操作期间的错误。它定义了应用程序可以自定义错误类，用于抛出和捕获特定错误。这些类提供了更多的上下文和细节，使得调试和解决问题变得更容易。
 
-以下是 `errorHandlers.js` 工具类的可能示例。你定义的实际错误类可能会根据需求有所不同，但正如之前提到的，这个示例应该为你提供一个良好的起点：
+以下是`errorHandlers.js`工具类的可能示例。你定义的实际错误类可能会根据需求有所不同，但正如之前提到的，这个示例应该为你提供一个良好的起点：
 
 [实现向量生成服务/errorHandlers.js](http://media.pragprog.com/titles/bgvector/code/implementing_vector_generation_service%2FerrorHandlers.js)
 
@@ -1234,17 +1204,17 @@ class ValidationError extends Error {
 }
 ```
 
-在应用程序开发的目前阶段，我们只创建了一个单一自定义错误类 `ValidationError`，它继承自内置的 `Error` 类。`ValidationError` 类接收一个 `message` 参数并将错误名称设置为 `ValidationError`。我们还使用 `Error.captureStackTrace` 来捕获错误的堆栈跟踪，这对于调试目的非常有帮助。当文本输入不符合生成向量嵌入的要求时，`ValidationError` 类会抛出验证错误。
+在应用程序开发的目前阶段，我们只创建了一个单一自定义错误类`ValidationError`，它继承自内置的`Error`类。`ValidationError`类接收一个`message`参数并将错误名称设置为`ValidationError`。我们还使用`Error.captureStackTrace`来捕获错误的堆栈跟踪，这对于调试目的非常有帮助。当文本输入不符合生成向量嵌入的要求时，`ValidationError`类会抛出验证错误。
 
-随着我们在接下来的章节中进一步构建应用程序，我们将定义额外的自定义错误类，以处理在向量嵌入期间可能发生的不同类型的错误。`ValidationError` 类将成为我们错误处理策略的基础。
+随着我们在接下来的章节中进一步构建应用程序，我们将定义额外的自定义错误类，以处理在向量嵌入期间可能发生的不同类型的错误。`ValidationError`类将成为我们错误处理策略的基础。
 
-有了文本验证和错误处理工具类，我们创建了一个基础，使得我们的向量嵌入服务更容易重构和维护。这些工具类确保了向量操作期间的有效文本输入和正确的错误处理。接下来，我们将实现持久化嵌入的逻辑，从在 `services/embeddings/` 文件夹中创建 `saveEmbedding.js` 开始。
+有了文本验证和错误处理工具类，我们创建了一个基础，使得我们的向量嵌入服务更容易重构和维护。这些工具类确保了向量操作期间的有效文本输入和正确的错误处理。接下来，我们将实现持久化嵌入的逻辑，从在`services/embeddings/`文件夹中创建`saveEmbedding.js`开始。
 
 ## 在数据库中存储嵌入
 
-`saveEmbedding.js` 模块将嵌入与其对应的文章存储在数据库中。将这些数据存储在一起允许基于向量距离进行高效的相似性搜索。
+`saveEmbedding.js`模块将嵌入与其对应的文章存储在数据库中。将这些数据存储在一起允许基于向量距离进行高效的相似性搜索。
 
-我们将 `saveEmbedding.js` 文件放在项目根目录下的 `services/embeddings/` 文件夹。如果你还没有该文件夹，请按照以下结构创建它：
+我们将`saveEmbedding.js`文件放在项目根目录下的`services/embeddings/`文件夹。如果你还没有该文件夹，请按照以下结构创建它：
 
 ```text
 embeddings/
@@ -1252,9 +1222,9 @@ embeddings/
   └── saveEmbedding.js
 ```
 
-在本节中，我们仅关注 `saveEmbedding.js` 功能，但你可以看到我们也创建了 `createEmbedding.js` 文件。我们将在创建向量嵌入 中构建生成文章嵌入的功能。现在，让我们专注于在数据库中存储嵌入。
+在本节中，我们仅关注`saveEmbedding.js`功能，但你可以看到我们也创建了`createEmbedding.js`文件。我们将在创建向量嵌入中构建生成文章嵌入的功能。现在，让我们专注于在数据库中存储嵌入。
 
-`saveEmbedding.js` 的核心职责是将嵌入及其相关文章存储在数据库中。由于我们在项目中使用的是 Couchbase，因此保存函数将利用 Couchbase 的文档数据库功能。以下是我们将采取的步骤概述：
+`saveEmbedding.js`的核心职责是将嵌入及其相关文章存储在数据库中。由于我们在项目中使用的是 Couchbase，因此保存函数将利用 Couchbase 的文档数据库功能。以下是我们将采取的步骤概述：
 
 1. 建立数据库连接：使用配置中的凭据连接到 Couchbase 实例。
 2. 准备嵌入数据：确保嵌入和关联文章数据准备好存储在文档中。
@@ -1264,9 +1234,11 @@ embeddings/
 
 ![保存文档的流程](img/save_document_flow.png "保存文档的流程")
 
-现在，让我们在 `saveEmbedding.js` 文件中遍历这一功能的实现：
+现在，让我们在`saveEmbedding.js`文件中遍历这一功能的实现：
 
 [实现向量生成服务/saveEmbedding.js](http://media.pragprog.com/titles/bgvector/code/implementing_vector_generation_service%2FsaveEmbedding.js)
+
+
 
 ```javascript
 import Article from '../models/Article';
@@ -1312,10 +1284,6 @@ const saveEmbedding = async (articleId, articleContent, embedding) => {
 export default saveEmbedding;
 ```
 
-
-
-
-
 `createEmbedding.js` 文件根据文章内容生成文章向量嵌入（vector embeddings）。这些嵌入捕捉了每篇文章的语义含义和上下文，能够实现返回相关结果的相似性搜索。为了编写可重用的代码，我们还将使用此服务为用户的搜索查询生成嵌入。
 
 准备好开始编写创建服务了吗？让我们开始吧！
@@ -1352,7 +1320,7 @@ OpenAI 客户端将连接到 OpenAI API 并为文本生成向量嵌入。该客�
 
 OpenAI 客户端位于项目根目录下的 `services/clients/` 文件夹中。该文件夹包含连接 OpenAI API 和生成向量嵌入的逻辑。如果我们还没有，就开始创建 `services/clients/` 文件夹并将其结构如下：
 
-```
+```text
 | clients/ |
 | ├── openaiClient.js |
 ```
@@ -1363,9 +1331,11 @@ OpenAI 客户端的核心职责是连接到 OpenAI API 并为文本输入生成�
 
 1. 连接到 OpenAI API：使用 API key 建立 OpenAI API 的连接。
 2. 生成嵌入：使用 OpenAI API 为文本输入生成向量嵌入。
-3. 处理响应：解析并处理来自 OpenAI API 的响应以提取嵌入。考虑到我们需要完成的步骤，让我们在 `openaiClient.js` 文件中查看实现。我们是参考 OpenAI Embeddings API 文档进行构建的。
+3. 处理响应：解析并处理来自 OpenAI API 的响应以提取嵌入。
 
-以下是 `openaiClient.js`功能可能性的示例：
+考虑到我们需要完成的步骤，让我们在 `openaiClient.js` 文件中查看实现。我们是参考 OpenAI Embeddings API 文档进行构建的。
+
+以下是 `openaiClient.js` 功能可能性的示例：
 
 ```javascript
 import OpenAI from 'openai';
@@ -1430,10 +1400,6 @@ class EmbeddingServiceError extends Error {
 }
 ```
 
-
-
-
-
 ```javascript
 this.status = status;
 Error.captureStackTrace(this, this.constructor);
@@ -1496,19 +1462,18 @@ export { createEmbedding };
 
 以下是进入后续章节的关键要点：
 
-*   我们为向量嵌入功能引入了清晰的服务结构，将关注点分离在 `embeddings/`、`clients/`、`search/` 和 `utils/` 文件夹中。
-*   `validateText.js` 和 `errorHandlers.js` 等工具函数确保系统只处理干净、有意义的输入并优雅地处理失败。
-*   `saveEmbedding.js` 模块处理嵌入持久化到数据库，确保更新后的内容产生更新的嵌入。
-*   `openaiClient.js` 文件封装了与 OpenAI API 交互的逻辑，包括验证和错误管理。
-
-
-
+* 我们为向量嵌入功能引入了清晰的服务结构，将关注点分离在 `embeddings/`、`clients/`、`search/` 和 `utils/` 文件夹中。
+* `validateText.js` 和 `errorHandlers.js` 等工具函数确保系统只处理干净、有意义的输入并优雅地处理失败。
+* `saveEmbedding.js` 模块处理嵌入持久化到数据库，确保更新后的内容产生更新的嵌入。
+* `openaiClient.js` 文件封装了与 OpenAI API 交互的逻辑，包括验证和错误管理。
 
 系统随后根据比较生成的相似性评分对结果进行排序。相似性评分越高，用户的搜索词与存储数据之间的匹配程度越密切。取决于我们如何设置排名算法，系统可以向用户返回顶部结果。每当用户输入新的查询时，系统都会重复此过程，以确保搜索结果保持相关性和最新性。
 
 搜索过程的第一步是将用户查询转换为向量嵌入（vector embedding）。好消息是，你已经精通了这个过程！我们还通过搭建文件结构和定义核心函数，在 `services/` 文件夹中为搜索服务搭建了必要的骨架。
 
 我们将使用 `embeddings/createEmbedding.js` 中的功能来生成用户查询的向量表示。`search/embedQuery.js` 将调用此函数并处理向搜索过程下一个阶段的流转。我们可以复用现有的嵌入生成逻辑，因为我们在构建 `createEmbedding` 时使其具有通用性和灵活性，因为无论输入源如何，生成嵌入的过程在本质上是相同的。主要的区别在于 `createEmbedding` 函数的最终输出是什么，我们可以从该函数的以下代码段中看到这一点：
+
+
 
 [implementing_vector_generation_service/createEmbedding.js](http://media.pragprog.com/titles/bgvector/code/implementing_vector_generation_service%2FcreateEmbedding.js)
 
@@ -1563,7 +1528,7 @@ node testEmbeddingCLI.js
 
 在提示时输入搜索查询。脚本将使用 OpenAI API 生成嵌入并打印结果向量的前几个维度。这让你在将其集成到更广泛的搜索系统之前，能够直观地快速查看查询嵌入的样式。
 
-从命令行生成查询嵌入后，你现在可以将该功能集成到服务层中。完善 `embedQuery.js` 中的代码，向完全功能 de 向量搜索服务迈进一步。
+从命令行生成查询嵌入后，你现在可以将该功能集成到服务层中。完善 `embedQuery.js` 中的代码，向完全功能的向量搜索服务迈进一步。
 
 [creating_vector_search_service/embedQuery.js](http://media.pragprog.com/titles/bgvector/code/creating_vector_search_service%2FembedQuery.js)
 
@@ -1617,22 +1582,19 @@ class ValidationError extends Error {
 
 确保将新的 `ValidationError` 添加到文件末尾的导出语句中，以便应用程序的其他部分（如 `embedQuery.js`）可以使用。有了这个新错误类，我们现在可以以更结构化、一致的方式处理验证错误，提高整个系统的可靠性。
 
-
-
-
-`embedQuery` 的代码非常轻量级，因为它利用了我们已经构建并将并将继续构建的现有服务和函数的组合性。虽然向量搜索是一个复杂的话，但在我们的代码库中实现它并不一定同样复杂。
+`embedQuery` 的代码非常轻量级，因为它利用了我们已经构建并将继续构建的现有服务和函数的组合性。虽然向量搜索是一个复杂的话，但在我们的代码库中实现它并不一定同样复杂。
 
 在我们构建使用点积（dot product）执行相似性搜索的逻辑之前，让我们从被调用函数的角度快速回顾一下用户查询嵌入和搜索过程的流程。
 
 ![通过函数的用户查询搜索流](img/user_search_flow_through_functions.png "通过函数的用户查询搜索流")
 
-*   用户输入搜索查询内容，系统调用 `embedAndSearch` 函数。
-*   对查询内容进行验证，确保其不为空。
-*   使用 `createEmbedding` 函数将查询转换为向量嵌入。
-*   将查询嵌入传递给 `performSearch` 函数以寻找最相关的文章。
-*   将搜索结果返回给用户，完成搜索过程。
+- 用户输入搜索查询内容，系统调用 `embedAndSearch` 函数。
+- 对查询内容进行验证，确保其不为空。
+- 使用 `createEmbedding` 函数将查询转换为向量嵌入。
+- 将查询嵌入传递给 `performSearch` 函数以寻找最相关的文章。
+- 将搜索结果返回给用户，完成搜索过程。
 
-如你所见，我们离实现一个功能完向量向量搜索服务并不了。下一步是实现向量搜索服务的核心相似性搜索逻辑。
+如你所见，我们离实现一个功能完备的向量搜索服务并不远。下一步是实现向量搜索服务的核心相似性搜索逻辑。
 
 ## 执行相似性搜索
 
@@ -1648,25 +1610,33 @@ class ValidationError extends Error {
 
 也许你有两个向量 `A` 和 `B`，表示如下：
 
-| | A = [1, 2, 3] |
-| | B = [4, 5, 6] |
+| 向量 | 值 |
+| --- | --- |
+| `A` | `[1, 2, 3]` |
+| `B` | `[4, 5, 6]` |
 
 每个向量有三个元素，这意味着它们是三维向量。要计算点积，我们将两个向量的对应元素相乘并求和：
 
-| | (1 * 4) + (2 * 5) + (3 * 6) = 4 + 10 + 18 = 32 |
+```text
+(1 * 4) + (2 * 5) + (3 * 6) = 4 + 10 + 18 = 32
+```
 
 `A` 和 `B` 的点积是 `32`。这个值告诉我们向量 `A` 和 `B` 在向量空间中的对齐密切程度。点积越高，向量在方向上越相似，它们所代表的内容越相关。
 
 如果向量相互正交或垂直呢？在这种情况下，点积将为零，表示向量没有对齐。在我们构建搜索系统时，理解正交性至关重要的。让我们来看两个正交向量的例子：
 
-| | C = [1, 0, 0] |
-| | D = [0, 1, 0] |
+| 向量 | 值 |
+| --- | --- |
+| `C` | `[1, 0, 0]` |
+| `D` | `[0, 1, 0]` |
 
 这里是 `C` 和 `D` 的点积：
 
-| | (1 * 0) + (0 * 1) + (0 * 0) = 0 + 0 + 0 = 0 |
+```text
+(1 * 0) + (0 * 1) + (0 * 0) = 0 + 0 + 0 = 0
+```
 
-结果为 0 表示向量 `C` 和 `D` 相互正交（或垂直）。正交性是向量数学中的一个基本概念，它使我们能够衡量搜索系统中向量之间的相似性。
+结果为 `0` 表示向量 `C` 和 `D` 相互正交（或垂直）。正交性是向量数学中的一个基本概念，它使我们能够衡量搜索系统中向量之间的相似性。
 
 在我们的搜索服务的语境下，向量中的每个元素都代表了嵌入模型在内容中识别出的特定特征。我们可以通过相乘对应特征并求和结果，确定内容在向量空间中的对齐密切程度。
 
@@ -1717,10 +1687,6 @@ export { performSearch };
 
 在 `utils/` 文件夹构建点积计算之前，让我们确保已经了使用 Ottoman.js 从 Couchbase 获取存储的嵌入的功能。请在 `services/search/` 目录下创建一个名为 `fetchEmbeddings.js` 的新文件并添加以下代码：
 
-
-
-
-
 # 第 8 章
 
 ## 创建搜索索引
@@ -1759,6 +1725,8 @@ export { getAllStoredEmbeddings };
 该函数使用了我们之前定义的 `Article` 模型从 Couchbase 获取所有文章，并提取它们的 ID 和嵌入。生成的对象数组是我们在 `performSearch` 函数中执行点积计算所需的。完成这一步后，我们可以在 `utils/` 目录下的 `mathUtils.js` 文件中构建点积计算。
 
 [creating_vector_search_service/mathUtils.js](http://media.pragprog.com/titles/bgvector/code/creating_vector_search_service%2FmathUtils.js)
+
+
 
 ```javascript
 import { VectorLengthError } from './errorHandlers';
@@ -1804,11 +1772,10 @@ class VectorLengthError extends Error {
 
 在本章中，你构建了向量搜索。以下是核心要点：
 
-*   通过点积，你改变了搜索。
-*   通过嵌入，你支持了搜索。
-*   你增加了自定义错误以确保搜索的可靠性。
-*   接下来，我们将关注索引。
-
+- 通过点积，你改变了搜索。
+- 通过嵌入，你支持了搜索。
+- 你增加了自定义错误以确保搜索的可靠性。
+- 接下来，我们将关注索引。
 
 ## 理解搜索索引
 
@@ -1825,10 +1792,6 @@ class VectorLengthError extends Error {
 这些技术的目标都是减少所需的比较次数。结果是更快速、更具可扩展性的搜索。当你运行查询时，索引利用这些快捷径快速找到少量候选结果，然后根据相似性对它们进行排名。
 
 让我们来看展示向量搜索索引流程的图表，如所示。
-
-
-
-
 
 ![Search Index Query Flow](img/search_index_query_flow.png "Search Index Query Flow")
 
@@ -1925,9 +1888,6 @@ query indexes
 
 就是这样！你已经成功使用 `cbshell` 在 Couchbase 中创建了向量搜索索引。该索引允许你通过将相似性计算的密集任务交给数据库，更高效地执行相似性搜索。让我们使用 Couchbase Node SDK 和 Ottoman.js 将此索引集成到我们的应用程序中。这部分涉及删除代码，这总是很有趣趣的！
 
-
-
-
 我们之前在 `performSearch.js` 中创建的代码实现了相似性搜索逻辑。它目前使用我们现在 `utils/mathUtils.js` 中构建的手动点积计算，来将查询嵌入与数据库中存储的嵌入进行比较。我们将移除这种手动计算，并将其替换为对 Couchbase 中创建的向量搜索索引的查询。
 
 既然 Couchbase 现在已经为我们处理了向量相似性计算，我们不再需要 `utils/mathUtils.js` 文件。你可以安全地删除此文件以清理代码库。
@@ -2013,9 +1973,6 @@ const performSearch = async (queryEmbedding) => {
 };
 ```
 
-
-
-
 [[22]](#f_0053.xhtml_FNPTR-22)
 
 [创建文章](https://realworld-docs.netlify.app/specifications/backend/endpoints/#create-article)
@@ -2033,6 +1990,8 @@ Copyright © 2025, The Pragmatic Bookshelf.
 # 第 9 章：集成向量搜索功能
 
 你已经取得了巨大的进展。在学习旅程的现在，你已经在一个健壮的 Node.js 后端构建了一个功能完整的向量搜索工具，探索了向量搜索背后的理论，并学习了驱动它的数学知识和算法。为你已经取得的成就感到自豪吧。
+
+
 
 在剩下的章节中，我们将专注于为实际应用场景集成并优化你的向量搜索功能。本章将通过向你的后端添加搜索 API 开启这一过程。我们将涵盖速率限制、错误处理以及请求和响应的结构化，以确保流畅且高效的搜索体验。到结束时，你将拥有一个基于你创建的向量搜索服务构建的完整搜索 API。
 
@@ -2072,17 +2031,13 @@ API 端点将作为网关，用户通过它提交搜索查询，并根据我们�
 
 正如我们所讨论过的，生成嵌入和计算相似性评分是资源密集型的。为了防止滥用并保护性能，我们将在搜索 API 上实施速率限制。这限制了用户在给定时间内可以发出的请求次数，确保公平使用。通过实施合理的限制，我们保持了 API 的响应能力，减轻了后端压力，并更有效地管理了资源消耗。
 
-让我们看看新向量搜索端点的结构视觉流程。图表 提供了请求和响应流程的高级概述，阐明了处理搜索查询时的关键组件和交互。
+让我们看看新向量搜索端点的结构视觉流程。图表提供了请求和响应流程的高级概述，阐明了处理搜索查询时的关键组件和交互。
 
 ![搜索 API 端点流程](img/api_search_endpoint_flow.png "Search API Endpoint Flow")
 
 此图捕捉了搜索 API 的请求-响应周期。客户端通过 `POST` 请求发送搜索查询，查询首先通过输入验证。验证后，搜索查询将经过处理、转换为向量嵌入并发送到我们的向量索引。数据库服务执行相似性计算并返回匹配结果，随后 API 将这些结果结构化为用户友好的 JSON 格式发送回客户端。
 
 在对端点的目的和流程有了清晰理解后，我们准备好进入实际实现阶段。这项工作将使我们的理论设计变为现实，为我们的应用程序用户提供实时、高效的向量搜索。
-
-
-
-
 
 现在是时候将我们的设计转换为功能性端点了。我们将遵循现有应用程序的结构，并遵守代码组织、可读性和可维护性的最佳实践。
 
@@ -2176,13 +2131,13 @@ export { performSearch };
 
 此实现确保了所有用户都可以访问搜索功能，同时处理了后端服务的三个关键方面：输入验证、结构化日志和错误处理。让我们来看看 `performSearch` 控制器是如何管理每项任务的。
 
-在执行任何数据库操作之前，控制器会检查传入搜索查询的有效性。具体而言，它确保 `query` 字段是请求体中存在的字符串。如果验证失败，API 将以 400 Bad Request 状态码响应，确保用户能够收到关于错误错误的清晰反馈。
+在执行任何数据库操作之前，控制器会检查传入搜索查询的有效性。具体而言，它确保 `query` 字段是请求体中存在的字符串。如果验证失败，API 将以 `400 Bad Request` 状态码响应，确保用户能够收到关于错误错误的清晰反馈。
 
 日志记录是任何后端应用程序中不可或缺的一部分。在该控制器中，结构化日志捕获了关键事件，例如接收查询和生成的数据库查询。捕获这些事件有助于开发者监控 API 使用情况并有效地调试问题。例如，控制器中的这段代码记录了从用户处收到的搜索查询：
 
-`log.debug(`Received search query: ${query}`)`
+`log.debug(\`Received search query: ${query}\`)`
 
-最后，控制器包含了错误处理，以管理搜索过程中的意外问题。如果在查询数据库或处理结果时发生错误，API 将以 500 Internal Server Error 状态码响应，表示服务器端问题。系统会记录错误详情以供进一步调查，帮助开发者快速识别并解决问题。
+最后，控制器包含了错误处理，以管理搜索过程中的意外问题。如果在查询数据库或处理结果时发生错误，API 将以 `500 Internal Server Error` 状态码响应，表示服务器端问题。系统会记录错误详情以供进一步调查，帮助开发者快速识别并解决问题。
 
 ### 整合一切
 
@@ -2204,10 +2159,6 @@ app.use('/api/search', searchRoutes);
 随着搜索 API 端点的实现，我们成功地将向量搜索功能集成到了应用程序的后端。用户可以提交搜索查询，API 将根据 Couchbase 执行的向量相似度计算返回相关文章。这一步标志着我们在构建基于向量搜索的健壮搜索服务的程中取得了一个重要里程碑。
 
 在下一节中，我们将探索如何处理搜索 API 中的错误和验证，确保用户获得清晰的反馈，并保持服务的可靠与安全。
-
-
-
-
 
 在我们的搜索 API 中，中间件会监控传入的请求并根据客户端 IP 地址或 API 密钥等标准实施速率限制。当客户端超过定义的限制时，中间件可以返回错误信息，例如“此 IP 的搜索请求过多，请在一分钟后重试”，并记录该事件以供进一步分析。这种方法有助于维护服务的可用性、防止滥用，并为使用模式提供价值见解。
 
@@ -2249,20 +2200,18 @@ export default searchRateLimiter;
 
 ## 核心要点
 
+
+
 在本章中，我们采取了重要步骤，在应用程序中实现了向量搜索功能。通过构建一个专用的搜索 API，我们弥合了后端与用户体验之间的差距，能够通过之前创建的向量搜索索引提供快速且相关的搜索结果。在此过程中，我们探索了关键概念，从设计 RESTful 端点到实现健壮的输入验证、速率限制和安全措施。
 
 以下是要点：
 
-*   理解 API 服务层：我们重新回顾了应用程序 API 层的结构，强调了路由、控制器和中间件的作用，为集成新的搜索端点奠定了基础。
-*   设计并实现搜索 API：我们应用 RESTful 原则创建了一个直观、幂等的搜索端点，确保了未来增强的灵活性以及与现有架构的一致性。
-*   错误处理与安全：我们强调了结构化错误处理、健壮的输入验证和防御性编程实践对于保护 API 免受误用以及确保无缝用户体验重要性。
-*   速率限制与稳定性：通过引入速率限制机制，我们保护服务免受过度使用，同时维护了用户的的公平访问。
+- 理解 API 服务层：我们重新回顾了应用程序 API 层的结构，强调了路由、控制器和中间件的作用，为集成新的搜索端点奠定了基础。
+- 设计并实现搜索 API：我们应用 RESTful 原则创建了一个直观、幂等的搜索端点，确保了未来增强的灵活性以及与现有架构的一致性。
+- 错误处理与安全：我们强调了结构化错误处理、健壮的输入验证和防御性编程实践对于保护 API 免受误用以及确保无缝用户体验重要性。
+- 速率限制与稳定性：通过引入速率限制机制，我们保护服务免受过度使用，同时维护了用户的的公平访问。
 
 在下一章中，我们将重点关注进一步增强搜索功能，深入研究优化技术，以提高准确性、处理复杂查询并为服务应对现实需求做好准备。
-
-
-
-
 
 - **流行度**：考虑浏览量、点赞或分享等指标，以突出那些引起用户极大兴趣的文章。
 
@@ -2272,7 +2221,7 @@ export default searchRateLimiter;
 
 在将新鲜性和流行度集成到我们的搜索排名之前，我们必须为数据库中的每篇文章计算并存储这些指标。让我们从新鲜性开始。你可以根据文章的发布日期推导出此指标。我们将新鲜性表示为文章发布以来的天数，并进行反向缩放，使得较新的文章具有更高的分数，例如：
 
-| | `recency = max_days - (current_date - publication_date)` |
+`recency = max_days - (current_date - publication_date)`
 
 在这里，`max_days` 是一个代表被认为相关的最大时间范围的常量（例如一年为 365 天）。超过此范围的文章新鲜性分将为 0。为了计算此值，我们将如下所示更新数据模型中的逻辑：
 
@@ -2297,7 +2246,7 @@ ArticleSchema.pre('save', function (next) {
 
 接下来，让我们处理流行度。此指标可以根据互动数据计算，例如文章获得的浏览次数或点赞次数。为了简单起见，我们将流行度定义为这些因素的加权和：
 
-| | `popularity = (0.7 * views) + (0.3 * likes)` |
+`popularity = (0.7 * views) + (0.3 * likes)`
 
 与新鲜性类似，我们将在文章文档中计算并存储此值。每当文章被查看或点赞时，我们将根据应用程序的需求，使用事件驱动的方法或定期批量更新过程来更新其流行度评分。我们将由你在应用程序中实现这部分用户互动跟踪。
 
@@ -2307,7 +2256,7 @@ ArticleSchema.pre('save', function (next) {
 
 在有了必要的字段后，我们可以修改搜索 API 以纳入加权排名。让我们重新回顾排名公式：
 
-| | `final_score = (0.7 * similarity_score) + (0.2 * recency) + (0.1 * popularity)` |
+`final_score = (0.7 * similarity_score) + (0.2 * recency) + (0.1 * popularity)`
 
 让我们用通俗易懂的语言解释这个公式。`final_score` 是三个组件的加权和：`similarity_score`、`recency` 和 `popularity`。`similarity_score` 是首要因素，占了最终总评分的 70%。新鲜度和流行度分别贡献了 20% 和 10%。这种分布确保了向量相似性仍然是主要的排名因素，而新鲜度和流行度提供了额外的上下文。
 
@@ -2362,9 +2311,6 @@ export { performSearch };
 ```
 
 在这里，`final_score` 是使用存储的 `similarity`、`recency` 和 `popularity` 值计算出的。
-
-
-
 
 你会发现许多实现这种逻辑的方法，但以下这个简单的示例可以帮助你上手。
 
@@ -2486,14 +2432,11 @@ const performSearch = asyncHandler(async (req, res) => {
 export { performSearch };
 ```
 
-
-
-
 构建混合搜索系统的第一步是定义何时使用向量搜索与何时使用关键词搜索的标准。这些标准应基于查询的特征和预期的搜索体验。例如，你可能考虑以下因素：
 
-*   查询长度：带有特定术语的短查询表明关键词搜索更合适，而具有更广泛概念的长查询则可能受益于向量搜索。
-*   查询结构：系统可能会对包含特定关键词或短语的查询触发关键词搜索，而将通用术语路由到向量搜索。
-*   用户偏好：系统允许用户选择自己的搜索方法，并选择最符合其需求的方法。
+- 查询长度：带有特定术语的短查询表明关键词搜索更合适，而具有更广泛概念的长查询则可能受益于向量搜索。
+- 查询结构：系统可能会对包含特定关键词或短语的查询触发关键词搜索，而将通用术语路由到向量搜索。
+- 用户偏好：系统允许用户选择自己的搜索方法，并选择最符合其需求的方法。
 
 通过定义选择搜索方法的清晰标准，你为构建灵活且以用户为中心的混合搜索系统奠定了基础。这些标准将引导评估用户查询并确定合适搜索模块的逻辑。
 
@@ -2507,7 +2450,7 @@ export { performSearch };
 
 为了实现这一点，我们将更新 `searchController.js` 文件中的 `performSearch` 函数，以评估查询将其路由到正确的搜索模块。以下是文件的更新部分，带有伪代码描述在何处实现混合切换逻辑：
 
-[optimizing_search_results/performSearch_with_search_method_routing.js](http://media.pragprog.com/titles/bgvector/code/optimizing_search_results%2FperformSearch_with_search_method_routing.js)
+[`optimizing_search_results/performSearch_with_search_method_routing.js`](http://media.pragprog.com/titles/bgvector/code/optimizing_search_results%2FperformSearch_with_search_method_routing.js)
 
 ```javascript
 // 根据查询类型确定搜索方法
@@ -2539,15 +2482,21 @@ return res.status(200).json({ results: [], count: 0 });
 
 以下是核心要点：
 
-*   时效性和流行度等动态指标可以在数据库中进行计算并存储，以创建一个更细致的排名系统，确保用户看到及时且相关的结果。
-*   使用停用词移除对用户查询进行预处理可以提高向量嵌入的质量并减少计算开销。
-*   停用词移除过程中的异常处理和保留短语确保确保了关键语境不丢失，从而维持用户查询的意图。
-*   混合搜索系统允许基于向量和基于关键词的方法无缝集成，为多样化的用户需求提供了灵活性。
-*   用于停用词移除的模块化工具确保了代码的可重用和维护性，能够适应不断变化的应用需求。
-*   根据预定义的标准动态路由查询简化了混合搜索的实现，同时保持了用户体验的直观和高效。
+
+
+时效性和流行度等动态指标可以在数据库中进行计算并存储，以创建一个更细致的排名系统，确保用户看到及时且相关的结果。
+
+使用停用词移除对用户查询进行预处理可以提高向量嵌入的质量并减少计算开销。
+
+停用词移除过程中的异常处理和保留短语确保确保了关键语境不丢失，从而维持用户查询的意图。
+
+混合搜索系统允许基于向量和基于关键词的方法无缝集成，为多样化的用户需求提供了灵活性。
+
+用于停用词移除的模块化工具确保了代码的可重用和维护性，能够适应不断变化的应用需求。
+
+根据预定义的标准动态路由查询简化了混合搜索的实现，同时保持了用户体验的直观和高效。
 
 你现在建立了一个专注于准确性、相关性和用户体验的精炼且高效的向量搜索系统。接下来，我们将通过探索今天向量搜索构建的实际应用来结束我们的合作。
-
 
 # 第 11 章 实际应用与后续步骤
 
@@ -2558,9 +2507,6 @@ return res.status(200).json({ results: [], count: 0 });
 首先，在探索后续之前，请花点时间庆祝你所取得的成就。这项技术包含了许多让初学者甚至资深开发者都感到畏惧的术语。但你读完了这本书并从零构建了一个向量搜索系统。这不是一项小事举！提醒一下，应用程序的代码可以在 GitHub 上获取^([[26]](#f_0069.xhtml_FOOTNOTE-26))，因此在你继续探索和学习更多向量搜索知识时，可以随时查阅。除了 GitHub 仓库外，请务必收藏书的网页^([[27]](#f_0069.xhtml_FOOTNOTE-27))，它将更新新的资源和信息，让你了解向量搜索技术的最新进展。
 
 ## 探索即将出现的新进展
-
-
-
 
 向量搜索领域正在快速演进，新的技术、算法和工具层出不穷。随着旅程的持续，关注这些进展将有助于确保你的系统保持高效、相关性和竞争优势。
 
@@ -2576,29 +2522,29 @@ return res.status(200).json({ results: [], count: 0 });
 
 向量量化减少了向量表示的大小，能够实现更快的相似性计算。局部适应向量量化（`LVQ`）的最新创新通过根据密度动态调整粒度来优化这一过程。
 
-这种技术对于欺诈检测和推荐引擎等实时应用特别有价值。如需深入了解，请参阅 Qdrant 介绍、用于实验的 `PyTorch` 库、Intel 的可扩展实现以及来自 GeeksForGeeks 的上手教程。
+这种技术对于欺诈检测和推荐引擎等实时应用特别有价值。如需深入了解，请参阅 Qdrant 介绍、用于实验的`PyTorch`库、Intel 的可扩展实现以及来自 GeeksForGeeks 的上手教程。
 
 ## 离线优先搜索
 
 离线优先搜索在低连接或无连接环境下也优先考虑功能。通过在本地存储索引并在可能与服务器同步，应用程序无论网络状况如何都能保持可用性和响应速度。
 
-可以通过 Offline-First GitHub 项目、关于 `iOS` 上向量搜索的教程以及关于使用 `Couchbase Mobile` 进行边缘搜索的文章来学习更多信息。
+可以通过 Offline-First GitHub 项目、关于`iOS`上向量搜索的教程以及关于使用`Couchbase Mobile`进行边缘搜索的文章来学习更多信息。
 
 ## 真实世界用例观察
 
-向量搜索通过提供更智能、更快、更相关的搜索体验正在改变各个行业。它的灵活性允许团队将其应用于从金融服务到娱乐的各个领域。在本部分，我们将探索三个不同的用例，说明向量搜索在现实场景中的威力。每个示例都强调了向量搜索如何解决关键业务挑战、推动创新并为组织创造价值。
+向量搜索通过提供更智能、更快、更相关的搜索体验正在改变各个行业。它的灵活性允许团队将其应用到从金融服务到娱乐的各个领域。在本部分，我们将探索三个不同的用例，说明向量搜索在现实场景中的威力。每个示例都强调了向量搜索如何解决关键业务挑战、推动创新并为组织创造价值。
 
 ### 金融服务中的欺诈检测
 
-欺诈预防是金融机构的首要任务，其风险很高，且检测和响应威胁的时间窗口很短。领先金融科技公司 Revolut 使用向量搜索支持其欺诈检测系统 `Sherlock`。
+欺诈预防是金融机构的首要任务，其风险很高，且检测和响应威胁的时间窗口很短。领先金融科技公司 Revolut 使用向量搜索支持其欺诈检测系统`Sherlock`。
 
-`Sherlock` 分析实时交易模式并识别可能表明欺诈行为的异常。该系统将每笔交易转换为向量，捕捉金额、商户、位置和时间等特征。它将这些向量与历史模式进行比较，如果匹配表明存在疑行为，会将交易标记为欺诈，通常在 50 毫秒内完成。
+`Sherlock`分析实时交易模式并识别可能表明欺诈行为的异常。该系统将每笔交易转换为向量，捕捉金额、商户、位置和时间等特征。它将这些向量与历史模式进行比较，如果匹配表明存在疑行为，会将交易标记为欺诈，通常在 50 毫秒内完成。
 
-向量搜索、机器学习和优化的数据库架构提供了这种速度。`Couchbase` 存储用户和商户配置，实现了快速检索和实时响应。团队不断用新模型更新 `Sherlock` 以应对新兴威胁。
+向量搜索、机器学习和优化的数据库架构提供了这种速度。`Couchbase`存储用户和商户配置，实现了快速检索和实时响应。团队不断用新模型更新`Sherlock`以应对新兴威胁。
 
 ### 个性化音乐内容推荐
 
-全球音乐流媒体领导者 Spotify 使用向量搜索支持其推荐引擎。`Discover Weekly` 和 `Release Radar` 等个性化歌单依赖于代表用户和内容的向量嵌入。
+全球音乐流媒体领导者 Spotify 使用向量搜索支持其推荐引擎。`Discover Weekly`和`Release Radar`等个性化歌单依赖于代表用户和内容的向量嵌入。
 
 用户向量根据收听习惯、喜欢的歌曲和歌单交互构建。内容向量代表流派、节奏和艺术家相似性等音乐特征。Spotify 实时比较这些向量，以呈现高度相关的音乐和播客推荐。
 
@@ -2616,34 +2562,35 @@ return res.status(200).json({ results: [], count: 0 });
 
 无论是持有这本书的纸质版还是阅读数字版，这里的内容都代表了一个最终的承诺版本。然而，你的向量搜索之旅并不会在此结束！
 
-
-
-
 [使用 Couchbase Mobile 在边缘进行向量搜索](https://www.couchbase.com/blog/vector-search-at-the-edge-with-couchbase-mobile/)
+
 [[38]](#f_0069.xhtml_FNPTR-38)
 
 [在 9 个月内构建先进信用卡欺诈检测系统](https://medium.com/revolut/building-a-state-of-the-art-card-fraud-detection-system-in-9-months-96463d7f652d)
+
 [[39]](#f_0069.xhtml_FNPTR-39)
 
 [介绍 Voyager：Spotify 新的近邻搜索库](https://engineering.atspotify.com/2023/10/introducing-voyager-spotifys-new-nearest-neighbor-search-library/)
+
 [[40]](#f_0069.xhtml_FNPTR-40)
 
 [AI 客户服务](https://www.zendesk.com/blog/ai-customer-service/)
+
 [[41]](#f_0069.xhtml_FNPTR-41)
 
 [向量搜索书籍](https://www.vectorsearchbook.com)
+
 [[42]](#f_0069.xhtml_FNPTR-42)
 
 [pgvector](https://pragprog.com/titles/bgvector)
-
 
 感谢你！
 
 我们希望你喜欢这本书，并且已经在考虑接下来想学习什么了。为了让你的做决定变得更容易，我们为你准备了这份礼物。
 
-现在就访问 [`pragprog.com`](https://pragprog.com)，并使用优惠码 `BUYANOTHER2025` 在购买下一本电子书时享受 7 折优惠。该优惠在法律禁止或限制的地区无效。此优惠不适用于任何版本的《实战程序员》（The Pragmatic Programmer）电子书。
+现在就访问[`pragprog.com`](https://pragprog.com)，并使用优惠码`BUYANOTHER2025`在购买下一本电子书时享受 7 折优惠。该优惠在法律禁止或限制的地区无效。此优惠不适用于任何版本的《实战程序员》（The Pragmatic Programmer）电子书。
 
-如果你想向世界分享自己的专业知识，为什么不向我们提交你的写作想法呢？毕竟，我们许多优秀的作者最初都像你一样是我们的读者。拥有高达 50% 的版税、世界级的编辑服务以及你信赖的声誉，没有任何损失。立即访问 [`pragprog.com/become-an-author/`](https://pragprog.com/become-an-author/) 了解更多信息并开始行动。
+如果你想向世界分享自己的专业知识，为什么不向我们提交你的写作想法呢？毕竟，我们许多优秀的作者最初都像你一样是我们的读者。拥有高达 50% 的版税、世界级的编辑服务以及你信赖的声誉，没有任何损失。立即访问[`pragprog.com/become-an-author/`](https://pragprog.com/become-an-author/)了解更多信息并开始行动。
 
 感谢你的持续支持。我们希望尽快听到你的消息！
 
@@ -2659,27 +2606,30 @@ The Pragmatic Bookshelf
 
 ![JavaScript 数据结构与算法常识指南（第一卷）封面链接到 Pragmatic Programmers 网站上的“A Common-Sense Guide to Data Structures and Algorithms in JavaScript, Volume 1”](http://pragmaticprogrammer.com/titles/jwjavascript)
 
-如果你认为数据结构和算法仅仅只是理论，那么你就错过了它们对你的 JavaScript 代码能产生的作用。学习使用 `Big O` 表示法让你的代码运行速度提高几个数量级。从 `hash tables`（哈希表）、`trees`（树）和 `graphs`（图）等数据结构中进行选择，指数级地增加代码的效率。这本书用简单的语言和清晰的图表，无论你的背景如何，都能让这个复杂的话题变得易懂。每一章都包含练习题，为你提供日常工作中掌握数据结构和算法所需的实践信息。
+如果你认为数据结构和算法仅仅只是理论，那么你就错过了它们对你的 JavaScript 代码能产生的作用。学习使用`Big O`表示法让你的代码运行速度提高几个数量级。从`hash tables`（哈希表）、`trees`（树）和`graphs`（图）等数据结构中进行选择，指数级地增加代码的效率。这本书用简单的语言和清晰的图表，无论你的背景如何，都能让这个复杂的话题变得易懂。每一章都包含练习题，为你提供日常工作中掌握数据结构和算法所需的实践信息。
 
 Jay Wengrow
+
 (514 页) ISBN: 9798888650646 $69.95
 
 ### 数据结构与算法常识指南（第二版）
 
 ![数据结构与算法常识指南（第二版）封面链接到 Pragmatic Programmers 网站上的“A Common-Sense Guide to Data Structures and Algorithms, Second Edition”](http://pragmaticprogrammer.com/titles/jwdsal2)
 
-如果你认为数据结构和算法仅仅只是理论，那么你就错过了它们对你的代码能产生的作用。学习使用 `Big O` 表示法让你的代码运行速度提高几个数量级。从 `hash tables`（哈希表）、`trees`（树）和 `graphs`（图）等数据结构中进行选择，指数级地增加代码的效率。这本书用简单的语言和清晰的图表，无论你的背景如何，都能让这个复杂的话题变得易懂。新版在每一章都包含了练习题，并增加了关于 `dynamic programming`（动态规划）、`heaps`（堆）和 `tries`（字典树）等主题的新章节。获取日常工作中掌握数据结构和算法所需的实践信息。
+如果你认为数据结构和算法仅仅只是理论，那么你就错过了它们对你的代码能产生的作用。学习使用`Big O`表示法让你的代码运行速度提高几个数量级。从`hash tables`（哈希表）、`trees`（树）和`graphs`（图）等数据结构中进行选择，指数级地增加代码的效率。这本书用简单的语言和清晰的图表，无论你的背景如何，都能让这个复杂的话题变得易懂。新版在每一章都包含了练习题，并增加了关于`dynamic programming`（动态规划）、`heaps`（堆）和`tries`（字典树）等主题的新章节。获取日常工作中掌握数据结构和算法所需的实践信息。
 
 Jay Wengrow
+
 (506 页) ISBN: 9781680507225 $45.95
 
 ### Elixir 机器学习
 
 ![Elixir 机器学习封面链接到 Pragmatic Programmers 网站上的“Machine Learning in Elixir”](http://pragmaticprogrammer.com/titles/smelixir)
 
-Stable Diffusion, ChatGPT, Whisper——这些只是机器学习驱动的惊人应用示例。尽管生产环境中的机器学习应用无处不在，但数据科学和机器学习任务的语言选择寥寥无几。Elixir 的 `Nx` 项目正试图改变现状。通过 `Nx`，你可以在 Elixir 这种实用的语言中，利用经过测试的 Erlang 虚拟机在你的应用程序中利用机器学习的力量。在本书中，你将学习如何利用 Elixir 和 `Nx` 生态系统解决计算机视觉、自然语言处理等领域的现实问题。
+Stable Diffusion, ChatGPT, Whisper——这些只是机器学习驱动的惊人应用示例。尽管生产环境中的机器学习应用无处不在，但数据科学和机器学习任务的语言选择寥寥无几。Elixir 的`Nx`项目正试图改变现状。通过`Nx`，你可以在 Elixir 这种实用的语言中，利用经过测试的 Erlang 虚拟机在你的应用程序中利用机器学习的力量。在本书中，你将学习如何利用 Elixir 和`Nx`生态系统解决计算机视觉、自然语言处理等领域的现实问题。
 
 Sean Moriarity
+
 (372 页) ISBN: 9798888650349 $61.95
 
 ### 机器学习编程
@@ -2689,5 +2639,5 @@ Sean Moriarity
 你决定攻克机器学习——因为你正在找工作、启动一个新项目，或者仅仅觉得自动驾驶汽车很酷。但从哪里开始呢？即使作为软件开发者，感到压力也是常有的。好消息是，这并没有那么困难。通过逐行编写代码来攻克机器学习，从简单的学习程序到真正的深度学习系统。通过将困难的话题拆解使其更易于理解，并通过亲身实践来建立信心。
 
 Paolo Perrotta
-(340 页) ISBN: 9781680506600 $47.95
 
+(340 页) ISBN: 9781680506600 $47.95

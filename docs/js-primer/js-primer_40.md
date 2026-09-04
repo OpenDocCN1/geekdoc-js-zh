@@ -1,12 +1,13 @@
+
 # HTTP 通信
 
 > 原文：[`jsprimer.net/use-case/ajaxapp/http/`](https://jsprimer.net/use-case/ajaxapp/http/)
 
 ローカルサーバーでアプリケーションが実行できるようになったので、次はGitHubのAPIを呼び出す処理を実装していきます。 GitHubのAPIを呼び出すためにはHTTP 通信をする必要があります。 ウェブブラウザ上でJavaScriptからHTTP 通信するために、[Fetch API](https://developer.mozilla.org/ja/docs/Web/API/Fetch_API)という機能を使います。
 
-## *Fetch API*
+## Fetch API
 
-***Fetch API**はHTTP 通信を行ってリソースを取得するためのAPIです。 Fetch APIを使うことで、ページ全体を再読み込みすることなく指定したURLからデータを取得できます。 Fetch APIは同じくHTTP 通信を扱う[XMLHttpRequest](https://developer.mozilla.org/ja/docs/Web/API/XMLHttpRequest)と似たAPIですが、より強力で柔軟な操作が可能です。
+**Fetch API**はHTTP 通信を行ってリソースを取得するためのAPIです。 Fetch APIを使うことで、ページ全体を再読み込みすることなく指定したURLからデータを取得できます。 Fetch APIは同じくHTTP 通信を扱う[XMLHttpRequest](https://developer.mozilla.org/ja/docs/Web/API/XMLHttpRequest)と似たAPIですが、より強力で柔軟な操作が可能です。
 
 リクエストを送信するためには、`fetch`メソッドを利用します。 `fetch`メソッドは引数で指定したURLに対して、HTTPリクエストを行えます。
 
@@ -19,9 +20,9 @@ const userId = "任意のGitHubユーザーID";
 fetch(`https://api.github.com/users/${encodeURIComponent(userId)}`); 
 ```
 
-## *レスポンスの受け取り*
+## レスポンスの受け取り
 
-*GitHubのAPIに対してHTTPリクエストを送信しましたが、まだレスポンスを受け取る処理を書いていません。 次にサーバーから返却されたレスポンスのログをコンソールに出力する処理を実装します。
+GitHubのAPIに対してHTTPリクエストを送信しましたが、まだレスポンスを受け取る処理を書いていません。 次にサーバーから返却されたレスポンスのログをコンソールに出力する処理を実装します。
 
 `fetch`メソッドは`Promise`を返します。この`Promise`インスタンスはリクエストのレスポンスを表す`Response`オブジェクトでresolveされます。 送信したリクエストにレスポンスが返却されると、`then`コールバックが呼び出されます。
 
@@ -39,9 +40,9 @@ fetch(`https://api.github.com/users/${encodeURIComponent(userId)}`)
     }); 
 ```
 
-## *エラーハンドリング*
+## エラーハンドリング
 
-*HTTP 通信にはエラーがつきものです。 そのためFetch APIを使った通信においても、エラーをハンドリングする必要があります。 たとえば、サーバーとの通信に際してネットワークエラーが発生した場合は、ネットワークエラーを表す`NetworkError`オブジェクトでrejectされた`Promise`が返されます。 すなわち、`then`メソッドの第二引数か`catch`メソッドのコールバック関数が呼び出されます。
+HTTP 通信にはエラーがつきものです。 そのためFetch APIを使った通信においても、エラーをハンドリングする必要があります。 たとえば、サーバーとの通信に際してネットワークエラーが発生した場合は、ネットワークエラーを表す`NetworkError`オブジェクトでrejectされた`Promise`が返されます。 すなわち、`then`メソッドの第二引数か`catch`メソッドのコールバック関数が呼び出されます。
 
 ```
 const userId = "js-primer-example";
@@ -127,9 +128,9 @@ index.jsでは関数を定義しているだけで、呼び出しは行ってい
 
 ![開発者ツールでHTTP 通信の記録を確認する](img/b10d033108210bd45e985650a174f69d.png)
 
-## *[コラム] XMLHttpRequest*
+## [コラム] XMLHttpRequest
 
-*[XMLHttpRequest](https://developer.mozilla.org/ja/docs/Web/API/XMLHttpRequest)（**XHR**）はFetch APIと同じくHTTP 通信を行うためのAPIです。 Fetch APIが標準化される以前は、ブラウザとサーバーの間で通信するにはXHRを使うのが一般的でした。 このセクションで扱ったFetch APIによる`fetchUserInfo`関数は、XHRを使うと次のように書けます。
+[XMLHttpRequest](https://developer.mozilla.org/ja/docs/Web/API/XMLHttpRequest)（XHR）はFetch APIと同じくHTTP 通信を行うためのAPIです。 Fetch APIが標準化される以前は、ブラウザとサーバーの間で通信するにはXHRを使うのが一般的でした。 このセクションで扱ったFetch APIによる`fetchUserInfo`関数は、XHRを使うと次のように書けます。
 
 ```
 function fetchUserInfo(userId) {
@@ -157,7 +158,7 @@ function fetchUserInfo(userId) {
 
 Fetch API 是为了取代 XHR 而创建的，大多数情况下不再需要使用 XHR。 另外，由于旧浏览器不支持 Fetch API，为了保持浏览器兼容性，有时会继续使用 XHR。 有关 XHR 的详细用法，请参考[XHR 的使用文档](https://developer.mozilla.org/ja/docs/Web/API/XMLHttpRequest/Using_XMLHttpRequest)。
 
-## *本节的检查清单*
+## 本节的检查清单
 
 **使用[Fetch API](https://developer.mozilla.org/ja/docs/Web/API/Fetch_API)发送 HTTP 请求
 

@@ -1,3 +1,4 @@
+
 # Todo 应用程序的重构
 
 > 原文：[`jsprimer.net/use-case/todoapp/final/`](https://jsprimer.net/use-case/todoapp/final/)
@@ -46,7 +47,8 @@ export class TodoItemView {
     createElement(todoItem, { onUpdateTodo, onDeleteTodo }) {
         const todoItemElement = todoItem.completed
             ? element`<li><input type="checkbox" class="checkbox" checked>
-                                    <s>${todoItem.title}</s>
+                                     ${todoItem.title}
+
                                     <button class="delete">x</button>
                                 </li>`
             : element`<li><input type="checkbox" class="checkbox">
@@ -206,10 +208,15 @@ export class App {
 *查看`App`类中注册的事件监听器函数，共有以下 4 种类型。
 
 | 事件流 | 监听器函数 | 角色 |
+
 | --- | --- | --- |
+
 | `Model` → `View` | `this.#todoListModel.onChange(listener)` | `TodoListModel`接收变更事件 |
+
 | `查看` → `模型` | `formElement.addEventListener("submit", listener)` | 接收表单提交事件 |
+
 | `查看` → `模型` | `onUpdateTodo: listener` | 接收待办事项复选框更新事件 |
+
 | `查看` → `模型` | `onDeleteTodo: listener` | 接收待办事项删除事件 |
 
 在三个从视图到模型的事件流中，存在三个监听器函数，它们分别在代码的不同位置编写。 此外，可以看出每个监听器函数都与待办事项应用的功能相对应。 为了使这些监听器函数更容易理解为待办事项应用的功能，让我们重新定义它们为`App`类的方法。

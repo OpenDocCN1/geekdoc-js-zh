@@ -1,3 +1,4 @@
+
 # JSP 入门指南
 
 ## 关于作者
@@ -7,11 +8,12 @@
 **Bharathi Natarajan** 是 Artesia Technologies 的首席工程师，并与他人合著了发表于 *JavaPro* 和 *JavaReport* 杂志的文章。他拥有计算机科学的本科和研究生学位。他拥有 8 年使用 *C/C++*、分布式编程和 J2EE 架构编程的专业经验。他也爱他的狗。
 
 > 献给我的父亲，Leonard Bollinger，我对他的敬仰远超我所表达的，并纪念我已故的岳母，Nancy Royston Jones Winters，她曾鼓励并爱护我。
+
 > ---Gary Bollinger
 
 > 献给我的父亲，Udayampalayam Subbian Natarajan，他从童年起就是我的灵感。我通往成功的道路始于他的指引和鼓励。
-> ---Bharathi Natarajan
 
+> ---Bharathi Natarajan
 
 ## 致谢
 
@@ -41,8 +43,6 @@ Osborne 的编辑们——我们有好几位——总是非常专业，帮助我
 
 如果你对以上任何一个问题的回答是肯定的，那么这本书就是为你准备的！JavaServer Pages 技术是由 Sun Microsystems, Inc. 开发的。最明显的是，该技术提供了一种更好的编写动态网页的方式。网页开发通常必须在其页面中包含静态 HTML 和动态内容。例如，假设你想针对访问页面的特定人员定制页面内容。页面的大部分为每个访问者提供相同的外观和感觉。但页面的某些部分从数据库中提取内容，这些内容根据用户人口统计数据或预先建立的登录信息进行定制。
 
-
-
 ## 前提条件
 
 本书面向寻求清晰了解JSP基本概念和技术的学生以及Web和Java初学者开发者。尽管部分内容具有挑战性，但我们通过大量的示例、提示和解释，使本书对具有适度经验的Web开发者和程序员同样易于理解。我们在JSP应用架构的背景下介绍Java servlet编程，并总体上提供我们认为能有效使用JavaServer Pages所必需的背景信息。不过，我们假设并要求具备一定的编程语言（最好是Java）知识及经验。我们也假设读者对互联网有一定了解。
@@ -50,8 +50,11 @@ Osborne 的编辑们——我们有好几位——总是非常专业，帮助我
 ## 本书结构
 
 我们将本书分为三部分：
+
 第一部分为构建JavaServer Pages奠定技术基础，侧重于语法元素及其正确使用。我们将第一部分分为六个模块，涵盖互联网技术基础以及JavaServer Pages的各个具体元素。
+
 第二部分介绍JSP实用开发的基础方面，侧重于构建“实际”JSP应用所必需的问题和技巧。我们将第二部分分为四个模块，涵盖Web架构中的常见软件模式、Web安全、应用工作流以及数据库集成。通过使用这些模式，Web开发者可以更快速、错误更少地创建Web应用。
+
 第三部分包含四个附录，提供支持我们基础讨论的辅助信息。
 
 ## 第一部分——JSP基础
@@ -71,10 +74,15 @@ Osborne 的编辑们——我们有好几位——总是非常专业，帮助我
 ## 第二部分——构建实际应用
 
 模块7开始了我们关于使用JavaServer Pages进行“实际”应用开发主要方面的讨论。它介绍了软件模式及其在JSP架构中的应用。我们特别关注以下模式：
+
 - 模型-视图-控制器（MVC）
+
 - 中介者
+
 - 命令
+
 - 策略
+
 - 桥接
 
 我们也提到了其他模式，但着墨较少，包括工厂、拦截器/过滤器和回调。
@@ -101,38 +109,56 @@ Osborne 的编辑们——我们有好几位——总是非常专业，帮助我
 
 大多数模块包含*专家问答*部分，以解决可能令人困惑的问题。每个模块都包含循序渐进的*项目*，让你有机会练习迄今为止所学的概念。你可以从Osborne的网站（`www.osborne.com`）下载项目内容。
 
-所有模块末尾都包含掌握度检查，让你有机会回顾模块中所学的概念。掌握度检查的答案在附录A中。
+所有模块末尾都包含掌握度检查，让你有机会回顾模坖中所学的概念。掌握度检查的答案在附录A中。
 
 ## 符号约定
 
 在几个地方，我们展示了源自正式规范的格式。当我们这样做时，我们使用以下约定：
+
 - 我们用等宽字体显示所有字面量：`literal`。
+
 - 当我们将元素的集合作为一个单元处理时，我们将它们显示在括号中：(element1 element2)。
-- 我们使用星号表示一个元素的零个或多个实例：(element1 element2)*。
+
+- 我们用星号表示一个元素的零个或多个实例：(element1 element2)*。
+
 - 我们用方括号表示可选术语：[element]。
+
 - 我们用连字符序列表示回车符后跟换行符：CR-LF。
+
 - 我们用斜体表示符号元素，例如变量或占位符名称：*element*。
+
 - 我们用大写字母并围绕变量使用'%'符号（Windows表示法）以等宽字体表示环境变量：`%TOMCAT_HOME%`。
+
 - 我们用反斜杠字符作为文件分隔符（Windows语法）以等宽字体表示目录名、相对路径和文件名：`%TOMCAT_HOME%\webapps\Book`。
+
 - 我们用斜体表示Java类名、接口名和方法名：*HelperBean.getProperty*。
 
 在本书的整个编写过程中，我们的目标始终是为你提供一个连贯、易于理解的JavaServer Pages编码指南，帮助你快速上手。我们赞赏你学习JavaServer Pages的决定，并鼓励你在学习过程以及随后的Web应用开发中充分利用互联网的潜力。祝你学习愉快，好运！
 
-
-
 ## 其他阅读资料
 
 1.  Alexander, C., S. Ishikawa, and M. Silverstein. 《建筑模式语言》。牛津大学出版社，1977年。
+
 2.  Alexander, C. 《建筑的永恒之道》。牛津大学出版社，1979年。
+
 3.  Alur, Deepak, John Crupi, and Dan Malks. 《Core J2EE 模式：最佳实践与设计策略》。Sun Microsystems Press, Prentice Hall, 2001年。
+
 4.  Berners-Lee, Tim, with Mark Fischetti. 《编织万维网：万维网的发明者关于其原始设计与最终命运的叙述》。Harper San Francisco, 1999年。
+
 5.  [DBTags] http://jakarta.apache.org/taglibs/doc/dbtags-doc/intro.html
+
 6.  Gamma, Erich, Richard Helm, Ralph Johnson, and John Vlissides. 《设计模式：可复用面向对象软件的基础》。Addison-Wesley Publishing Company, 1995年。
+
 7.  Geary, David. "JSP 模板"。《Java World》，2000年9月。 http://www.javaworld.com/javaworld/jw-09-2000/jw-0915-jspweb_p.html
+
 8.  Lea, Doug. "Christopher Alexander：面向对象设计师导论"。SUNY Oswego/NY CASE Center, 1993年12月。 http://g.oswego.edu/dl/ca/ca/ca.html
+
 9.  [MySQL] http://www.mysql.com
+
 10. [Struts] http://jakarta.apache.org/struts/index.html
+
 11. [Taglibs] http://jakarta.apache.org/taglibs/index.html
+
 12. [Tomcat] http://jakarta.apache.org/tomcat/index.html
 
 # 第一部分
@@ -148,7 +174,9 @@ Osborne 的编辑们——我们有好几位——总是非常专业，帮助我
 本模块目标
 
 -  了解客户端-服务器架构和 HTTP 协议的特性
+
 -  熟悉客户端互联网开发技术
+
 -  理解基础的服务器端互联网开发技术
 
 理解 JavaServer Pages (JSP) 始于理解超文本传输协议 (HTTP)。*协议*是一套在计算机网络上编码和传输数据请求的规则。你可以将协议视为计算机网络之间的语言。互联网以 HTTP 作为其母语。HTTP 允许一台计算机将文档传递给世界任何地方的另一台计算机。换句话说，HTTP 提供了 Web 客户端与 Web 服务器进行通信的线路。
@@ -163,9 +191,10 @@ Osborne 的编辑们——我们有好几位——总是非常专业，帮助我
 
 基于 HTTP，互联网提供了世界上最伟大的客户端-服务器应用架构。客户端-服务器架构将计算服务组织成集中式进程，这些进程提供诸如存储空间、数据库管理和文件传输等资源。然后，客户端向这些集中式进程请求所需的资源。图 1-1 展示了客户端-服务器架构的示意图。
 
-客户端-服务器架构旨在结合和协调资源以实现规模效益。通过集中化和共享资源，客户端-服务器架构可以以更低的成本向更多客户端提供更多的服务。与此同时，客户端-服务器架构试图对客户端隐藏网络的存在。当它们有效运作时，客户端似乎拥有它们所使用的服务器资源。这种网络透明性是一个令人钦佩的目标。然而实际上，网络服务器永远无法完全隐藏网络的存在。让我们来看看其中的一些原因。
+客户端-服务器架构旨在结合和协调资源以实现规模效益。通过集中化和共享资源，客户端-服务器架构可以以更低的成本向更多客户端提供更多的服务。与此同时，客户端-服务器架构试图对客户端隐藏网络的存在。当它们有效运作时，客户端似乎拥有它们所使用的服务器资源。这种网络透明性是一个令人钦佩的目标。然而实际上，网�服务器永远无法完全隐藏网络的存在。让我们来看看其中的一些原因。
 
 > **提示**
+
 > 网络打印机可能是最熟悉的客户端-服务器资源示例。想想打印机问题发生的频率，就能体会到实现网络透明性的难度。
 
 ## 网络透明性问题
@@ -173,7 +202,9 @@ Osborne 的编辑们——我们有好几位——总是非常专业，帮助我
 所有网络的三个特性使得网络透明性成为一个难以实现的目标：
 
 -   **延迟** 请求到达服务器并返回响应所需的时间
--   **可靠性** 客户端请求得到响应的可能性
+
+-   **可靠性** 客户端请得到响应的可能性
+
 -   **并发性** 服务器对客户端请求的执行顺序
 
 ![](img/7a40f8957e7c3eb68dbb9f8ab3cef54d_28_0.png)
@@ -185,9 +216,10 @@ Osborne 的编辑们——我们有好几位——总是非常专业，帮助我
 客户端无法预测这些网络特性的任何影响。如果一个服务器必须处理的请求量超出了其及时响应的能力，客户端将不得不等待或超时。如果通往服务器的网络路径崩溃了（可能是因为有人暂时将中间机器从网络中移除），客户端的请求将得不到响应。
 
 > **提示**
+
 > 要想象延迟和可靠性的影响，可以回想一下你访问过的那些没有响应的互联网站点的次数。
 
-如果一个客户端同时向服务器发送多个请求，它绝不能对服务器响应这些请求的顺序做任何假设。如果客户端确实做了假设，这些假设可能会导致客户端与服务器之间的数据不一致。去掉网络层，所有这些因素都是可预测的；一旦加上网络层，这些因素就再次变得不可预测。图 1-2 展示了网络透明性面临的挑战。
+如果一个客户端同时向服务器发送多个请请求，它绝不能对服务器响应这些请求的顺序做任何假设。如果客户端确实做了假设，这些假设可能会导致客户端与服务器之间的数据不一致。去掉网络层，所有这些因素都是可预测的；一旦加上网络层，这些因素就再次变得不可预测。图 1-2 展示了网络透明性面临的挑战。
 
 虽然在客户端-服务器架构中无法忽略网络特性，但服务器的特性会放大网络问题的影响。服务器的*状态*对网络问题的影响最大。
 
@@ -205,15 +237,16 @@ Osborne 的编辑们——我们有好几位——总是非常专业，帮助我
 
 有状态服务器发现建立网络透明性更加困难，因为它们必须保持客户端和服务器信息*同步*。同步是指在服务器对客户端的认知与客户端的实际状态之间保持一致性的行为。这种一致性最明显的挑战发生在客户端在未通知服务器的情况下与服务器断开连接时。假设，例如，一个用户在与服务器会话的中途关闭了客户端机器。处理这种非常典型的情况会给有状态服务器带来极大的复杂性。服务器必须以某种方式确定客户端的真实状态（客户端已消失），并相应地修改其对客户端的认知（移除其客户端信息）。执行此类同步的逻辑和代码是复杂的。当前的 HTTP 服务器通过不管理客户端状态来保持简单。HTTP 服务器是无状态服务器。
 
-
-
 ## HTTP 服务器是无状态的
 
 自1990年以来，HTTP服务器的既定目标一直是以尽可能快的速度向Web浏览器提供信息。在早期，这意味着提供HTML文档和图像。今天的Web服务器向浏览器传输视频、音频、动画图像以及许多其他丰富格式的内容。在整个演变过程中，HTTP服务器保持了轻量级和无状态性，反映了该协议基本的请求-响应范式。假设没有问题，从Web浏览器到Web服务器再返回的一个典型往返过程遵循以下步骤：
 
 1.  浏览器与Web服务器建立连接。
-2.  浏览器向Web服务器发送HTTP请求。
+
+2.  浏览器向Web服务器发送HTTP请请求。
+
 3.  Web服务器通过已建立的连接向浏览器发送HTTP响应。
+
 4.  Web服务器关闭连接。无论原因如何，任何过早关闭连接的行为都会终止当前请求。
 
 对于编写JavaServer Pages或Java servlets的开发者来说，理解HTTP协议的细节至关重要，因此让我们更仔细地看看HTTP消息格式。（本讨论源自HTTP/1.1协议规范。参见RFC 2616，网址为 http://www.ietf.org/rfc/rfc2616.txt。）
@@ -223,11 +256,15 @@ Osborne 的编辑们——我们有好几位——总是非常专业，帮助我
 # 1分钟速查
 
 -   什么是客户端-服务器架构？
+
 -   什么是网络透明性？
+
 -   什么是无状态服务器？
 
 -   客户端-服务器架构将计算服务组织成集中式进程，提供存储空间、数据库管理和文件传输等资源。
+
 -   当客户端-服务器架构对客户端隐藏网络的存在时，就发生了网络透明性。
+
 -   无状态服务器是指在客户端请求之间不保留任何客户端状态信息的服务器。
 
 ## HTTP 请求
@@ -252,7 +289,9 @@ CR-LF
 *请求行* 需要以下三个字段，彼此之间用空格字符分隔：
 
 -   请求方法
+
 -   请求URI
+
 -   HTTP版本
 
 请求行以CR-LF字符序列结束。
@@ -287,7 +326,9 @@ HTTP请求中的第二个字段是请求URI，它与你在网页中访问或在�
 HTTP请求必须指定一个Web资源作为请求的对象。它们使用统一资源标识符（URI）来实现这一点。URI规范提供了一种唯一标识互联网资源的方法。（参见RFC 2396，网址为 `http://www.ietf.org/rfc/rfc2396.txt`。）URI具有三个定义特征：
 
 -   **统一** URI支持多种资源类型，但遵循通用的语法形式。
+
 -   **资源** URI标识的资源可以是文档、图像、资源集合，或者实际上是任何具有身份的实体。
+
 -   **标识符** URI包含对资源的语法受限的引用。
 
 为了阐明这些定义，请看表1-1，其中显示了一些常见类型互联网URI的示例：
@@ -309,11 +350,17 @@ HTTP/1.1规范为HTTP请求URI提供了另一个更熟悉的名称，称为统�
 HTTP URI格式中的可选端口限定符指定HTTP权限服务的网络端口。当未指定此端口时，HTTP假设端口为80。
 
 | URI | 定义 |
+
 |---|---|
+
 | http://www.w3c.org/ | HTTP消息 |
+
 | ftp://ftp.NCSA.uiuc.edu/ | FTP消息 |
+
 | telnet://grex.cyberspace.org/ | Telnet协议消息 |
+
 | news:comp.lang.java | Usenet新闻组消息 |
+
 | mailto:aboll@bell.net | 电子邮件消息 |
 
 **表1-1** 常见的互联网URI
@@ -323,6 +370,7 @@ HTTP URI格式中的可选端口限定符指定HTTP权限服务的网络端口�
 HTTP/1.1规范还描述了与GET和POST方法相关的两种请求URI类型：
 
 -   绝对URI
+
 -   绝对路径
 
 *绝对URI* 形式提供了如前所述的完整URI。这是一个指定完整URI的请求行示例：
@@ -351,13 +399,12 @@ Host: www.w3c.org
 
 在从请求URI中剥离原始服务器后，浏览器使用它来建立连接。
 
-
-
 ### HTTP 协议版本
 
 HTTP 协议版本是 HTTP 请求行的第三部分。目前，这通常具有值 `HTTP/1.1`，但也可能具有值 `HTTP/1.0`。
 
 > **注意**
+
 > 通过支持持久连接，HTTP/1.1 相比 HTTP/1.0 提供了显著的性能优势。Web 浏览器和服务器使用通用头中的 `Connection:` 字段来指定是否保持连接打开。例如，客户端发送以下头字符串以保持其连接活动：`Connection: Keep-Alive`。
 
 ### 消息头
@@ -365,7 +412,9 @@ HTTP 协议版本是 HTTP 请求行的第三部分。目前，这通常具有值
 HTTP 在请求消息中支持三种类型的消息头：
 
 - **通用头** 提供有关消息的信息，包括日期等信息。例如，通用头将包含 `Connection:` 字段。
+
 - **请求头** 提供有关请求和发出请求的客户端的信息。例如，请求头将包含 `Host:` 字段。
+
 - **实体头** 提供有关通过 `POST` 方法发送到服务器的数据的信息。例如，实体头包含 `Content-Type:` 和 `Content-Length:` 字段。
 
 每个消息头以 `CR-LF` 字符序列结束。在所有消息头的完整序列之后，还有另一个 `CR-LF`。
@@ -376,7 +425,7 @@ HTTP 在请求消息中支持三种类型的消息头：
 
 ## HTTP 响应
 
-在接收并解释请求消息后，Web 服务器返回响应消息。HTTP 响应遵循以下通用格式的某种变体：
+在接收并解释请求消息后，Web 服务器返回响应消息。HTTP 响遵循以下通用格式的某种变体：
 
 ```
 状态行
@@ -396,7 +445,9 @@ CR-LF
 状态行需要三个字段，彼此之间由 SPACE 字符分隔：
 
 - HTTP 版本
+
 - 状态码
+
 - 原因短语
 
 状态行以 CR-LF 字符字符串结束。
@@ -414,30 +465,39 @@ HTTP 版本字段与讨论请求时相同。目前，请求和响应通常都发
 HTTP 在响应消息中支持三种类型的消息头：
 
 - **通用头** 提供有关消息的信息，包括日期等信息。例如，通用头将包含 `Date:` 字段。
+
 - **响应头** 提供有关响应和返回响应的服务器的信息。例如，响应头可以包含 `Server:` 字段。
+
 - **实体头** 提供有关通过 POST 方法发送到服务器的数据的信息。例如，实体头包含 `Content-Type:` 和 `Content-Length:` 字段。
 
 **表 1-2** 常见 HTTP 响应码和原因短语表
 
 | 状态码 | 原因短语 | 说明 |
+
 |---|---|---|
+
 | 200 | OK | 请求成功。 |
+
 | 301 | Moved Permanently | 请求的 Web 资源已永久移动到新 URL。 |
+
 | 400 | Bad Request | 请求的语法格式不正确。 |
+
 | 404 | Not Found | 服务器找不到请求的 URL。 |
+
 | 503 | Service Unavailable | 服务器请求过多或出现其他临时问题，无法处理特定请求。 |
 
 通用头和实体头在响应消息中的工作方式与在请求消息中相同。响应头在响应消息中取代请求头。每个单独的消息头以 `CR-LF` 字符序列结束。在所有消息头的完整序列之后，还有另一个 `CR-LF`。
 
 ### 消息体
 
-消息体部分在响应中的工作方式与在请求中相同。消息体是可选的，因为并非所有响应都返回实体体。服务器根据状态码为 `GET` 和 `POST` 请求返回消息体。当响应返回实体体时，其长度可能为零（如果这对请求的资源有意义）。新页面、图像、视频或任何其他新内容来自返回实体头和实体体的 `GET` 和 `POST` 请求。
+消息体部分在响应中的工作方式与在请求中相同。消息体是可选的，因为并非所有响应都返回实体体。服务器根据状态码为 `GET` 和 `POST` 请返消息体。当响应返回实体体时，其长度可能为零（如果这对请求的资源有意义）。新页面、图像、视频或任何其他新内容来自返回实体头和实体体的 `GET` 和 `POST` 请求。
 
 ![](img/7a40f8957e7c3eb68dbb9f8ab3cef54d_40_0.png)
 
 #### 1 分钟演练
 
 - 什么是 URI？
+
 - `GET` 和 `POST` HTTP 方法在将内容发送到 Web 服务器的方式上有何不同？
 
 ## 故事的其余部分
@@ -445,6 +505,7 @@ HTTP 在响应消息中支持三种类型的消息头：
 虽然 HTTP 协议和客户端-服务器范式提供了 Internet 传递请求和响应的线路，但 Web 浏览器和 Web 服务器提供了架构的其余部分。接下来我们讨论架构的这些部分，从浏览器开始。故事的一部分涉及浏览器和 Web 服务器为提供更丰富的网络架构而支持的技术。
 
 - URI 是统一资源标识符，用于唯一标识网络资源。
+
 - `GET` 方法使用 application/x-www-form-urlencoded 格式作为请求 URI 的一部分将内容发送到 Web 服务器。`POST` 方法使用以 application/x-www-form-urlencoded 格式或 multipart/form-data 格式编码的消息体将内容发送到 Web 服务器。
 
 ## 项目 1-1：回显 HTTP 协议
@@ -454,7 +515,9 @@ HTTP 在响应消息中支持三种类型的消息头：
 ### 逐步操作
 
 1. 从 JavaSoft 网站 (`http://java.sun.com/j2se`) 下载并安装 Java 2 SDK 标准版 (J2SE)。
+
 2. 创建一个指向 J2SE 安装目录的 `JAVA_HOME` 环境变量。配置您的 `PATH` 环境变量以包含 `%JAVA_HOME%\bin`。
+
 3. 从 Osborne 网站 (www.osborne.com) 将 `HTTPEcho.java` 程序文件下载到桌面上的临时目录：
 
 ![](img/7a40f8957e7c3eb68dbb9f8ab3cef54d_41_0.png)
@@ -537,137 +600,134 @@ public class HTTPEcho {
             throws IOException {
         if (len <= 0) {
             return 0;
-```
-
-
-
-```java
-    }
-    int count = 0, c;
-    while ((c = in.read()) != -1 && count < len) {
-        b[off++] = (byte)c;
-        count++;
-        if (c == '\n') {
-            break;
         }
-    }
-    return count > 0 ? count : -1;
-}
 
-/*
-    从输入套接字读取，
-    回显到控制台，
-    写入到输出套接字
-*/
-private void echoBuffer(BufferedInputStream in,
-                       OutputStream out) {
-    byte[] readBuf = new byte[BUF_SIZE];
-    try {
-        int rlen = -1;
-        int bodyLen = 0;
-        String line = null;
-
-        do {
-            line = null;
-            rlen = readLine(in, readBuf, 0, BUF_SIZE);
-            if (rlen > 0) {
-                line = new String(readBuf, 0, rlen);
-                System.out.print(line);
-                if (line.startsWith("Content-Length: ")) {
-                    String size =
-                        line.substring("Content-Length: ".length(),
-                                      line.length());
-                    bodyLen = Integer.parseInt(size.trim());
-                }
-                out.write(readBuf, 0, rlen);
+        int count = 0, c;
+        while ((c = in.read()) != -1 && count < len) {
+            b[off++] = (byte)c;
+            count++;
+            if (c == '\n') {
+                break;
             }
-        } while ((rlen > 0) && !(line.equals("\r\n")));
+        }
+        return count > 0 ? count : -1;
+    }
 
-        if (bodyLen > 0) {
-            System.out.println("<实体正文>");
-            int count = 0;
+    /*
+        从输入套接字读取，
+        回显到控制台，
+        写入到输出套接字
+    */
+    private void echoBuffer(BufferedInputStream in,
+                           OutputStream out) {
+        byte[] readBuf = new byte[BUF_SIZE];
+        try {
+            int rlen = -1;
+            int bodyLen = 0;
+            String line = null;
+
             do {
-                rlen = in.read(readBuf, 0, BUF_SIZE);
+                line = null;
+                rlen = readLine(in, readBuf, 0, BUF_SIZE);
                 if (rlen > 0) {
+                    line = new String(readBuf, 0, rlen);
+                    System.out.print(line);
+                    if (line.startsWith("Content-Length: ")) {
+                        String size =
+                            line.substring("Content-Length: ".length(),
+                                          line.length());
+                        bodyLen = Integer.parseInt(size.trim());
+                    }
                     out.write(readBuf, 0, rlen);
-                    count += rlen;
-                } else break;
-            } while (count < bodyLen);
+                }
+            } while ((rlen > 0) && !(line.equals("\r\n")));
+
+            if (bodyLen > 0) {
+                System.out.println("<实体正文>");
+                int count = 0;
+                do {
+                    rlen = in.read(readBuf, 0, BUF_SIZE);
+                    if (rlen > 0) {
+                        out.write(readBuf, 0, rlen);
+                        count += rlen;
+                    } else break;
+                } while (count < bodyLen);
+            }
+            out.flush();
+        } catch (IOException ioe) {
+            System.out.println(ioe.getMessage());
+        } finally {
+            readBuf = null;
         }
-        out.flush();
-    } catch (IOException ioe) {
-        System.out.println(ioe.getMessage());
-    } finally {
-        readBuf = null;
     }
-}
 
-/*
-    读取并回显请求，读取并回显响应
-*/
-private void echo() {
-    System.out.println("\nHTTP 请求：");
-    echoBuffer(fromBrowser, toWebServer);
-    System.out.println("\nHTTP 响应：");
-    echoBuffer(fromWebServer, toBrowser);
-}
-
-/*
-    关闭所有客户端套接字和已打开的文件描述符
-*/
-private void closeClientDescriptors() {
-    try {
-        fromWebServer.close();
-        toWebServer.close();
-        webServerSocket.close();
-        fromBrowser.close();
-        toBrowser.close();
-        browserSocket.close();
-    } catch (IOException ioe) {
-        System.out.println(ioe.getMessage());
+    /*
+        读取并回显请求，读取并回显响应
+    */
+    private void echo() {
+        System.out.println("\nHTTP 请求：");
+        echoBuffer(fromBrowser, toWebServer);
+        System.out.println("\nHTTP 响应：");
+        echoBuffer(fromWebServer, toBrowser);
     }
-}
 
-/*
-    所有请求/响应对都是
-    串行化的 - 因此不存在线程对
-    实例变量的竞争。
-*/
-public static void main(String [] args) {
-    HTTPEcho echo = new HTTPEcho();
-    if (args.length > 1) {
-        /* 回显命令行参数 */
-        System.out.println("在端口上启动 HTTPEcho: " +
-                           args[0] + "。");
-        System.out.println("Web 服务器主机: " +
-                           args[1] + "。");
-        System.out.println("Web 服务器端口: " +
-                           args[2] + "。");
-
-        /* 解析命令行参数 */
-        int interceptorPort = Integer.parseInt(args[0]);
-        String webServerHost = args[1];
-        int webServerPort = Integer.parseInt(args[2]);
-
-        /*
-            创建监听套接字并开始
-            回显 Web 浏览器请求和
-            Web 服务器响应
-        */
-        echo.setBrowserListenerSocket(
-            echo.createListenerSocket(interceptorPort));
-        while (true) {
-            echo.setBrowserSocket(echo.accept());
-            echo.setWebServerSocket(
-                echo.createClientSocket(webServerHost,
-                                        webServerPort));
-            echo.echo();
-            echo.closeClientDescriptors();
+    /*
+        关闭所有客户端套接字和已打开的文件描述符
+    */
+    private void closeClientDescriptors() {
+        try {
+            fromWebServer.close();
+            toWebServer.close();
+            webServerSocket.close();
+            fromBrowser.close();
+            toBrowser.close();
+            browserSocket.close();
+        } catch (IOException ioe) {
+            System.out.println(ioe.getMessage());
         }
-    } else {
-        System.out.println("用法: java HTTPEcho " +
-                           "interceptorPort " +
-                           "webServerHost webServerPort");
+    }
+
+    /*
+        所有请求/响应对都是
+        串行化的 - 因此不存在线程对
+        实例变量的竞争。
+    */
+    public static void main(String [] args) {
+        HTTPEcho echo = new HTTPEcho();
+        if (args.length > 1) {
+            /* 回显命令行参数 */
+            System.out.println("在端口上启动 HTTPEcho: " +
+                               args[0] + "。");
+            System.out.println("Web 服务器主机: " +
+                               args[1] + "。");
+            System.out.println("Web 服务器端口: " +
+                               args[2] + "。");
+
+            /* 解析命令行参数 */
+            int interceptorPort = Integer.parseInt(args[0]);
+            String webServerHost = args[1];
+            int webServerPort = Integer.parseInt(args[2]);
+
+            /*
+                创建监听套接字并开始
+                回显 Web 浏览器请求和
+                Web 服务器响应
+            */
+            echo.setBrowserListenerSocket(
+                echo.createListenerSocket(interceptorPort));
+            while (true) {
+                echo.setBrowserSocket(echo.accept());
+                echo.setWebServerSocket(
+                    echo.createClientSocket(webServerHost,
+                                            webServerPort));
+                echo.echo();
+                echo.closeClientDescriptors();
+            }
+        } else {
+            System.out.println("用法: java HTTPEcho " +
+                               "interceptorPort " +
+                               "webServerHost webServerPort");
+        }
     }
 }
 ```
@@ -707,39 +767,63 @@ Web 浏览器已成为大多数应用程序首选的用户界面。这种从传�
 HTML 4.0 规范列出了以下控件：
 
 **按钮**
+
 单选按钮
+
 文本输入
+
 对象
 
 **复选框**
+
 菜单
+
 文件选择
+
 隐藏字段
 
 将此 HTML 列表与 Visual Basic “开箱即用”附带的控件列表进行比较：
 
 **复选框**
+
 数据
+
 文件列表框
+
 图像
+
 列表框
+
 选项按钮
+
 文本框
 
 **组合框**
+
 目录列表框
+
 框架
+
 标签
+
 菜单
+
 图片框
+
 垂直滚动条
 
 **命令按钮**
+
 驱动器列表框
+
 水平滚动条
+
 直线
+
 OLE 容器
+
 形状
+
 计时器
 
 除了这些基本控件外，第三方供应商还提供了数百种专为 Visual Basic 编写的额外控件。Visual Basic 提供了比 HTML 和浏览器丰富得多的工具包，用于构建复杂的用户界面。
@@ -750,12 +834,12 @@ OLE 容器
 
 **简单访问服务器资源** 浏览器应用程序使实现客户端-服务器用户界面变得容易，同时提供了一个通用平台来实现它。在浏览器应用程序出现之前，客户端和服务器是*硬编码*相互关联的，各自使用一种私有语言（协议）。一些常见的应用程序是 Telnet、FTP、Gopher 和电子邮件。浏览器将这些独立的应用程序打包成一个只需点击几下鼠标即可启动的单一应用程序。
 
-
-
 **通用平台** HTML 提供了一种在浏览器页面内编程应用的简便方法，从而将其从单一应用转变为应用平台。
 
 **应用安装、部署与培训的便捷性**
+
 Web 应用无需安装浏览器以外的任何软件。（如今，浏览器通常已与操作系统捆绑。）Web 浏览器的普及也达到了某种临界点——如此多的应用使用浏览器，以至于人们理解并乐于接受浏览器作为他们的平台。人们很少需要专门学习如何使用 Web 浏览器的操作方法。
+
 浏览器应用的普及并不意味着用户完全满意其局限性。浏览器和 Web 服务器的最新发展旨在克服基本 Web 技术的限制。尽管本书描述的是服务器技术 JavaServer Pages，但让我们简要探讨一下浏览器技术。
 
 ### 扩展 Web 浏览器
@@ -763,10 +847,15 @@ Web 应用无需安装浏览器以外的任何软件。（如今，浏览器通�
 近年来，各厂商投入巨大精力扩展浏览器作为应用接口的能力。这通常是在让浏览器页面“更具动态性”的旗帜下进行的。这些客户端扩展中最重要的包括：
 
 - 辅助应用程序
+
 - 浏览器插件
+
 - JavaScript
+
 - VBScript
+
 - 动态 HTML
+
 - Java 小程序
 
 ### 辅助应用程序
@@ -774,7 +863,9 @@ Web 应用无需安装浏览器以外的任何软件。（如今，浏览器通�
 浏览器并不知道如何处理它们在 Web 上遇到的大多数格式类型。这部分是因为格式类型太多，也部分是因为新的格式类型不断出现。浏览器通过基于媒体格式启动其他应用程序来弥补不足。例如，浏览器可能无法处理 RealVideo 文件，但可以配置为启动 RealPlayer 应用程序来处理 RealVideo 下载。
 
 > **提示**
+
 >
+
 > 为 HTTP 请求格式提供基本方案的 MIME 标准也为启动辅助应用程序提供了基础。其原理是浏览器将其无法处理的 MIME 格式类型传递给辅助应用程序。
 
 最近，辅助应用程序功能已倾向于迁移到浏览器插件中。我们接下来讨论插件。
@@ -784,7 +875,9 @@ Web 应用无需安装浏览器以外的任何软件。（如今，浏览器通�
 浏览器插件无缝扩展浏览器功能，使其看起来像是浏览器本身的一部分。例如，Adobe 软件提供了一个用于查看 Adobe 便携式文档格式 (PDF) 的插件。其他插件支持音频和视频格式。例如，RealNetworks 有插件可以在浏览器中直接播放 RealAudio 和 RealVideo 文件。现在有数十种这样的插件程序适用于 Netscape 和 Internet Explorer。此类插件被加载到浏览器自身的地址空间中执行。厂商将插件作为共享库部署在浏览器中。
 
 > **注意**
+
 >
+
 > *共享库* 是特殊打包的代码单元（通常用 C 或 C++ 编写），可以在运行时加载并在应用程序中执行。在 Microsoft Windows 平台上，共享库使用 Microsoft 的动态链接库 (DLL) 格式，文件扩展名为 .dll。在 UNIX 平台上，共享库使用动态共享对象 (DSO) 格式，文件扩展名为 .so。
 
 辅助应用程序和插件都受限于它们不是通用编程语言这一事实。它们提供一种专有功能，且仅此一种。另一方面，JavaScript 为浏览器提供了一种真正灵活的编程语言。
@@ -792,9 +885,12 @@ Web 应用无需安装浏览器以外的任何软件。（如今，浏览器通�
 ### JavaScript
 
 JavaScript 是第一个用于浏览器的通用、“动态”客户端脚本语言。Netscape 于 1995 年首次推出 JavaScript，但将其命名为 LiveScript。（参见 Steenson 的文章 "JavaScript: Past, Present, and Future"，网址为 `http://home.netscape.com/computing/webbuilding/studio/feature19981111-1.html`。）
+
 Netscape 很快将 LiveScript 更名为 JavaScript，这使得许多刚刚开始了解 Java 的人感到困惑。同年，Java 的开发商 Sun 与 Netscape 发表联合新闻稿，这种混乱才有所减轻。新闻稿宣称 Java 和 JavaScript 是互补但非常不同的技术。（参见 `http://home.netscape.com/newsref/pr/newsrelease67.html`。）
+
 JavaScript 提供了一种用于创建用户界面控件的脚本语言。实际上，JavaScript 将代码逻辑插入浏览器。它支持诸如用户输入验证和鼠标光标悬停在网页某处时图像交换等效果。
-Microsoft 几乎立即编写了自己的 JavaScript 版本，并将其命名为 JScript。Microsoft 和 Netscape 都支持一种脚本语言标准，该标准涵盖了 JavaScript 和 JScript 的核心功能，并由欧洲计算机制造商协会 (ECMA) 标准组织控制。ECMA 将这种脚本语言命名为 ECMAScript。（参见 `http://www.ecma.ch/`。）尽管 Microsoft 和 Netscape 都承诺支持 ECMAScript 标准，但它们继续各自进行专有且不同的 JavaScript 增强。这意味着严重依赖 JavaScript 通常需要为不同的浏览器维护独立的代码库。
+
+Microsoft 几乎立即编写了自己的 JavaScript 版本，并将其命名为 JScript。Microsoft 和 Netscape 都支持一种脚本语言标准，该标准涵盖了 JavaScript和JScript的核心功能，并由欧洲计算机制造商协会 (ECMA) 标准组织控制。ECMA 将这种脚本语言命名为 ECMAScript。（参见 `http://www.ecma.ch/`。）尽管 Microsoft 和 Netscape 都承诺支持 ECMAScript 标准，但它们继续各自进行专有且不同的 JavaScript 增强。这意味着严重依赖 JavaScript 通常需要为不同的浏览器维护独立的代码库。
 
 ### VBScript
 
@@ -818,7 +914,7 @@ JavaScript 和 VBScript 都可以动态设置此元素的颜色。以下是 Java
 </script>
 ```
 
-DHTML 的标准化程度较低。Microsoft 添加了对其专有技术 ActiveX 和 VBScript 的支持，而 Netscape 不支持这些。Netscape 和 Internet Explorer 都支持 CSS，但对不同功能的支持程度不同。Internet Explorer 和 Netscape 的事件模型和 DOM 也不同，这使得 DHTML 的跨平台使用有些古怪。（参见 <http://www.dhtmlzone.com/>。）
+DHTML 的标准化程度较低。Microsoft 添加了对其专有技术 ActiveX 和 VBScript 的支持，而 Netscape 不支持这些。Netscape和Internet Explorer都支持CSS，但对不同功能的支持程度不同。Internet Explorer和Netscape的事件模型和DOM也不同，这使得DHTML的跨平台使用有些古怪。（参见 <http://www.dhtmlzone.com/>。）
 
 ### Java 小程序
 
@@ -827,7 +923,9 @@ Sun Microsystems 于 1995 年 2 月宣布了 Java，同年 Netscape 宣布了 Ja
 其最初名称为 Oak。Sun 将 Oak 描述为 C++ 的简化派生品，并描述其特性包括：
 
 - 通过网络下载将程序功能动态链接到正在运行的应用程序
+
 - 独立于任何 CPU 平台
+
 - 保证免受病毒侵害
 
 Oak 于 1995 年 4 月更名为 Java。（参见 Chris Rose 的文章 "It's the World Wide Web, But Not as We Know It"，发表于 PowerPC News: Apt Data News Ltd, 1995, Issue Number 534, UG534-17。另见 http://java.sun.com/pr/1995/04/pr950417-01.html。）
@@ -841,11 +939,12 @@ Oak 于 1995 年 4 月更名为 Java。（参见 Chris Rose 的文章 "It's the 
 ### 1 分钟练习
 
 - **浏览器插件和 JavaScript 有什么区别？**
+
   浏览器插件扩展浏览器功能，并在运行时加载到浏览器中。您将它们作为共享库部署。它们通常处理单一的专有媒体格式类型。另一方面，JavaScript 是一种由浏览器解释的通用编程语言。
+
 - **什么是动态 HTML？**
+
   动态 HTML 指的是一组松散的浏览器增强技术集合，但它与一个称为层叠样式表 (CSS) 的 W3C 规范以及暴露文档对象模型 (DOM) 的技术联系最为紧密。
-
-
 
 ## 浏览器技术的角色与局限性
 
@@ -856,7 +955,9 @@ Java小程序可以说是客户端技术中最通用且最强大的。凭借复�
 客户端扩展赋予浏览器的能力甚至可能适得其反。近年来的趋势是将功能从客户端移至服务器端。人们将此描述为从*胖客户端*向*瘦客户端*的转变。瘦客户端将应用程序用户界面的呈现与呈现的控制逻辑分离。摆脱胖客户端带来了若干优势。我们列出其中一些最重要的：
 
 - **集中式应用部署** 开发者可以将应用程序和应用程序升级部署到集中的应用服务器，而不是部署到访问这些应用程序的无数客户端机器上。
-- **强制信息一致性** 每个用户共享信息的相同视图，而不是在他或她的客户端机器上部署的视图。
+
+- **强制信息一致性** 每个用户共享信息的相同视图，而不是在他或她的客户端机器上部署的视视图。
+
 - **集中式安全管理** 管理员可以在服务器端而非每台客户端机器上控制对信息的访问。
 
 我们大多数人都曾因某些网站耗时过长而抱怨，因为必须先安装应用程序插件或下载Java小程序。网站越依赖此类技术，Web客户端就变得越臃肿，互联网在分发这些臃肿客户端时就越堵塞。Java小程序已逐渐失去其作为首选开发策略的光环，主要原因是它们倾向于胖客户端模式。JavaScript之所以仍然拥有一批忠实用户，部分原因在于它所尝试的功能远少于典型的Java小程序。现代计算中的范式转变让客户端“减肥”，而让服务器“增肥”。
@@ -864,6 +965,7 @@ Java小程序可以说是客户端技术中最通用且最强大的。凭借复�
 ### 1分钟快速复习
 
 - Web浏览器扩展在互联网技术中扮演什么角色？
+
 - 此类浏览器扩展的主要局限性是什么？
 
 ## 服务器端Web编程
@@ -871,9 +973,13 @@ Java小程序可以说是客户端技术中最通用且最强大的。凭借复�
 既然将应用功能移至服务器端有诸多优势，那么具体如何实现呢？最初，唯一的答案是使用通用网关接口（CGI）。
 
 > **注意**
+
 >
+
 > 蒂姆·伯纳斯-李在早期向欧洲核子研究中心（CERN，位于瑞士日内瓦）提交的提案中，已经预见到Web服务器需要以HTML视图的形式呈现存储在数据库中的“遗留”信息。（参见蒂姆·伯纳斯-李的《信息管理：一个提案》，网址为 `http://www.w3.org/History/1989/proposal.html`。[1989年，第12页]。）
+
 >
+
 > 这一需求最终催生了CGI标准。
 
 CGI标准规定了集成*外部网关程序*的公认机制——这些程序为非HTML信息源与Web服务器之间提供网关。图1-3展示了访问关系数据库的CGI架构。
@@ -885,9 +991,11 @@ http://myserver/cgi-bin/Scripts/foo.perl?name=emily
 ```
 
 CGI程序可以访问其 `QUERY_STRING` 环境变量，以检索 `name` 的值为 `emily` 这一事实。
+
 或者，如果我们使用 `POST` 请求发送URL，CGI可以从其标准输入文件描述符中读取 `name` 的值。`POST` 请求设置两个环境变量以支持检索此内容：`CONTENT_LENGTH` 和 `CONTENT_TYPE`。
 
 CGI是一个强大的工具，确实“统治”着网络——但它的日子屈指可数。启动程序来处理客户端请求会浪费服务器资源（包括CPU），并使响应页面的生成变得复杂。在最坏的情况下，每个客户端请求可能都需要启动一个或多个额外的进程。当Perl或其他脚本语言实现CGI程序时（这是现代互联网上的典型情况），效率会变得更糟，因为脚本语言通常会启动额外的进程来处理操作系统查询。这种CGI进程的激增限制了Web应用程序的可扩展性。
+
 此外，由于CGI程序在客户端请求之间不保持持久性，它们必须将与客户端相关的状态信息（例如，会话信息）存储在数据库或文件系统中。通常，我们希望服务器扩展与Web服务器之间有更紧密的耦合关系，以便我们可以改善响应时间和可扩展性，并支持高效的客户端状态管理。幸运的是，如今存在比CGI更好的技术。
 
 # 专家问答
@@ -896,7 +1004,7 @@ CGI是一个强大的工具，确实“统治”着网络——但它的日子�
 
 **答：** 软件模块之间的耦合程度有松有紧。松耦合的软件模块对彼此做很少的假设，并以通用方式传递信息。例如，CGI脚本位于与Web服务器不同的地址空间中。它们不对Web服务器的功能做任何假设。它们使用标准操作系统功能（如环境变量和标准文件操作）与Web服务器交换信息。所有这些特征意味着CGI程序与Web服务器的耦合非常松散。另一方面，紧耦合的软件模块利用彼此的实现细节来优化协作。例如，它们通常共享相同的内存地址空间，来回传递特定的数据结构，并共享公共代码库的专有特性。
 
-**问：** 在Web服务器和自定义扩展之间建立紧密耦合是否有风险？
+**问：** 在Web服务器和自定服务器扩展之间建立紧密耦合是否有风险？
 
 **答：** 是的，有风险。通过在服务器扩展和Web服务器之间建立紧密耦合，你使得扩展代码有可能破坏Web服务器的稳定性甚至导致其崩溃。
 
@@ -908,17 +1016,20 @@ CGI是一个强大的工具，确实“统治”着网络——但它的日子�
 
 **答：** 你可以通过将服务器扩展限制在小型、离散的功能上来降低风险。添加到Web服务器的代码越少，其可靠性降低的风险就越小。一个有用的方法是在服务器中构建桥接代码，该代码与更松散耦合的软件进行握手，也许通过网络套接字。
 
-
-
 ### 扩展 Web 服务器
 
 现代服务器端编程架构包含以下技术：
 
 - **服务器端 JavaScript** 一套用于 Web 服务器的 JavaScript 程序员工具包。
+
 - **服务器插件** 服务器在处理请求时调用的函数。
+
 - **活动服务器页面 (ASP)** 微软公司专有的用于编写 Web 服务器扩展的脚本技术。
+
 - **Servlet**  Sun Microsystems 公司使用 Java 处理客户端 HTTP 请求的技术。
+
 - **JavaServer Pages (JSP)** Sun Microsystems 公司用于编写 Web 服务器扩展的 Java 技术。
+
 - **Java 2 企业版 (J2EE) 应用服务器** 一种 Java 进程，除其他技术外，还支持 Web 服务器、servlet 和 JSP。
 
 让我们逐一了解这些技术，以理解它们的基本特性。
@@ -928,7 +1039,8 @@ CGI是一个强大的工具，确实“统治”着网络——但它的日子�
 服务器端 JavaScript 添加了访问数据库、文件系统和电子邮件的 API。服务器端 JavaScript 的主要问题是 IIS 支持 JScript，这是一种与 iPlanet 支持的 JavaScript 不同的实现。换句话说，当你使用服务器端 JavaScript 时，你必须选定一个特定的 Web 服务器。对于那些已经标准化使用特定技术供应商的公司来说，这是一个合理的要求，但对于必须尽可能多地满足各类客户需求的产品公司来说，这完全不合理。
 
 > **注意**
-> 现代互联网的一个有趣现象是专有技术与开放标准之间的持续紧张关系。HTML 可能是专有增强功能与创建开放标准的尝试之间斗争的最明显例子。JavaScript、DHTML、Java、浏览器插件架构——实际上，几乎每一种互联网技术——都有其自身的故事可讲。
+
+> 现代互联网的一个有趣现象是专有技术与开放标准之间的持续紧张关系。HTML 可能是专有增强功能与创建开放标准的尝试之间斗争的最明显例子。JavaScript、DHTML、Java、浏览器插件架构——实际上，几乎每一种互联网技术——都有其自身故事可讲。
 
 #### 服务器插件
 
@@ -970,18 +1082,20 @@ JSP 通过提供一个 JSP 容器来补充 Java servlet 架构，该容器管理
 
 #### J2EE 应用服务器
 
-J2EE 规范同时包含 Java servlet 和 JavaServer Pages。J2EE 应用服务器通常为 Web 服务以及其他服务（如我们在此不讨论的企业 JavaBeans 和 Java 消息服务）提供一个 Java 平台。我们在图 1-7 中展示了 J2EE 平台架构。
+J2EE 规范同时包含 Java servlet和JavaServer Pages。J2EE 应用服务器通常为 Web 服务以及其他服务（如我们在此不讨论的企业 JavaBeans 和 Java 消息服务）提供一个 Java 平台。我们在图 1-7 中展示了 J2EE 平台架构。
 
 #### Java Servlet 和 JavaServer Pages 的作用
 
 普通的 Web 服务器高效且有效地交付静态内容。然而，现代 Web 应用程序需要的不止是静态内容。浏览器的客户端扩展有助于满足这一需求，但并未真正解决客户端-服务器范式的特殊目的——提供远程服务。服务器端 JavaScript 很流行但属于专有技术。Web 服务器插件提供了有用但专有的扩展。此外，正如你将在本书第二部分看到的，企业应用程序需要服务器具备 Web 服务器所避免的所有功能。它们需要复杂的安全服务和会话管理。它们必须跟踪客户端状态。它们必须管理数据库访问，包括连接池。这份清单很长且无法回避。
 
-想象一下使用 CGI 脚本或服务器插件来编程这些企业服务器功能。W3C 从未打算让 CGI 脚本提供通用服务器平台。他们的意图是为遗留数据提供网关。同样，服务器插件提供了通向外部应用程序的高效网关，但并未提供完整的服务器端开发平台。活动服务器页面 (ASP) 提供了服务器端 Web 应用程序开发的平台，但该平台仅适用于微软技术。另一方面，Servlet 和 JavaServer Pages 为非专有的、跨平台的、可扩展的和可伸缩的互联网应用程序提供了服务器端平台。
+想象一下使用 CGI 脚本或服务器插件来编程这些企业服务器功能。W3C 从未打算让 CGI 脚本提供通用服务器平台。他们的意图是为遗留数据提供网关。同样，服务器插件提供了通向外部应用程序的高效网关，但并未提供完整的服务器端开发平台。活动服务器页面 (ASP) 提供了服务器端 Web 应用程序开发的平台，但该平台仅适用于微软技术。另一方面，Servlet和JavaServer Pages 为非专有的、跨平台的、可扩展的和可伸缩的互联网应用程序提供了服务器端平台。
 
 ## 1 分钟速查
 
 - 什么是服务器插件？
+
 - 为什么 CGI 的主导地位时日无多？
+
 - Java servlet 和 JavaServer Pages 的作用是什么？
 
 ### 项目 1-2：运行你的第一个 JSP 程序
@@ -993,13 +1107,16 @@ J2EE 规范同时包含 Java servlet 和 JavaServer Pages。J2EE 应用服务器
 **1.** 按照附录 B 中的说明安装 Tomcat servlet 容器。你也可以安装 Apache，但此项目只需要 Tomcat。
 
 - 服务器插件使用专有的 Web 服务器编程接口扩展 Web 服务器。最常见的三种 API 是：
+
   - **ISAPI** 用于微软 IIS 的 API。
+
   - **NSAPI** 用于 iPlanet 的 API。
+
   - **Apache Web 服务器 API** 用于 Apache Web 服务器的 API。
+
 - CGI 脚本浪费服务器资源并使响应页面的生成复杂化。最近的技术如活动服务器页面 (ASP)、Java servlet 和 JavaServer Pages 提供了更高效、更简单的方式来开发复杂的 Web 应用程序。
+
 - 这些 Java 技术为服务器端 Web 应用程序开发提供了一个通用平台，该平台是非专有的、跨平台的、可扩展的和可伸缩的。
-
-
 
 ## 模块 2
 
@@ -1008,7 +1125,9 @@ J2EE 规范同时包含 Java servlet 和 JavaServer Pages。J2EE 应用服务器
 ## 本模块目标
 
 -   理解 JavaServer Pages (JSP) 容器
+
 -   了解如何在编写 JavaServer Pages 时使用注释
+
 -   了解基本的 JSP 指令
 
 JSP 页面看起来像是带有特殊语法元素的超文本传输协议 (HTML) 页面。这些元素有助于提供当今 Web 页面所需的动态行为。在本模块和接下来的四个模块中，我们将解释 JSP 元素。
@@ -1019,7 +1138,9 @@ JSP 的生命周期与静态 HTML 文档不同。在 Web 服务器与 Web 浏览
 
 Java 2 企业版 (J2EE) 定义了几种容器，包括 JSP 容器、Servlet 容器和企业 JavaBeans 容器。用面向对象的术语来说，容器是组织其他类或组件的类或组件。J2EE 规范超越了这种简单的含义。J2EE 容器提供企业组件生存和活动的完整运行时环境。它们管理组件的生命周期，并为组件提供各种服务。此外，它们协调组件与更大的运行时环境之间的交互。
 
-除非开发人员编写符合容器规定的编程约定的软件组件，否则 J2EE 容器无法正常工作。开发人员必须实现这些约定，因为容器在组件生命周期的不同阶段会假定这些约定。规范通常将容器与应用程序软件之间的这种协议称为 *契约*，以强调其重要性。容器通过要求应用程序软件实现特定的 Java 接口来强制执行此类契约。
+除非开发人员编写符合容器规定的编程约定的软件组件，否则 J2EE 容器无法正常工作。开发人员必须实现这些约定，因为容器在组件生命周期的不同阶段会假定这些约定。规范通常将容器与应用程软件之间的这种协议称为 *契约*，以强调其重要性。容器通过要求应用程序软件实现特定的 Java 接口来强制执行此类契约。
+
+
 
 每个 J2EE 容器为其负责的组件提供服务。JSP 容器将 JavaServer Pages 转换为 Java servlet 代码，然后编译并将结果加载到 Servlet 容器中。它还协调 Servlet 容器与编译后的 JavaServer Pages 之间的关系。Servlet 容器为 Java servlet 提供运行时环境。
 
@@ -1034,10 +1155,13 @@ Java 2 企业版 (J2EE) 定义了几种容器，包括 JSP 容器、Servlet 容�
 5.  它调用生成的 servlet 的 service 方法。
 
 图 2-1 展示了其工作原理。
+
 如果浏览器应用程序随后请求相同的 JSP 页面，除非该 JSP 页面自上次调用以来发生了更改，否则 JSP 容器只需执行步骤 5。当 JSP 页面更改时，JSP 容器必须在流式传回响应之前重新执行所有五个步骤。步骤 1 到 4 解释了为什么 JavaServer Pages 在浏览器第一次请求时返回响应会稍慢一些。
 
 > **提示**
+>
 > 你可以通过在部署前预编译应用程序 JavaServer Pages，或者使用 JSP 1.1 规范第 3.4 节中指定的预编译协议来克服这首次编译的成本。Apache 提供了 `jspc` 程序来预编译你的应用程序，Tomcat 支持预编译协议。你可以通过在 JSP 请求后附加 `?jsp_precompile=true` 来使用此协议，如下所示：
+>
 > `http://localhost:8080/Book/jsp/ScriptingElements.jsp?jsp_precompile=true`。这将导致 JSP 容器编译页面而不执行它。
 
 ![图 2-1 JSP 页面生命周期的各个阶段](img/7a40f8957e7c3eb68dbb9f8ab3cef54d_69_0.png)
@@ -1051,11 +1175,15 @@ JSP 页面的诞生始于一个请求，但它所创建的一些 Java 对象的�
 JSP 容器支持四种不同的作用域：
 
 -   **page** 你只能在创建它们的 JSP 页面内引用具有 *页面* 作用域的对象。JSP 容器在 JSP 页面返回响应或将请求转发到另一个页面后会移除所有此类对象。
--   **request** 你可以从处理同一请求的任何页面访问具有 *请求* 作用域的对象。通常，一个页面可能会将请求转发到另一个页面，以便多个页面处理同一请求。所有这些页面都可以访问请求作用域中的对象。请求完成后，容器会移除此类对象。
+
+-   **request** 你可以从处理同一请求的任何页面访问具有 *请求* 作用域的对象。通常，一个页面可能会将请务转发到另一个页面，以便多个页面处理同一请求。所有这些页面都可以访问请求作用域中的对象。请求完成后，容器会移除此类对象。
+
 -   **session** 你可以从与创建对象的页面共享会话的任何页面访问具有 *会话* 作用域的对象。当关联的会话结束时，容器会移除此类对象。
+
 -   **application** 你可以在同一 Web 应用程序中的任何地方访问具有 *应用* 作用域的对象。当 JSP 容器重新加载 Servlet 上下文时（通常在服务器重启时），会移除具有应用作用域的对象。
 
 > ### 注意
+>
 > Web 应用程序将 servlet、JavaServer Pages 和其他资源打包成一个包，你可以将其部署并在来自多个供应商的多个容器上运行。Web 应用程序直接映射到为应用程序提供隔离环境的 Servlet 上下文。Java 接口 *javax.servlet.ServletContext* 描述了此上下文中的服务。例如，你可能在 Web 服务器中将此 URL 根目录与应用程序上下文相关联：`http://localhost/Book`。Servlet 容器创建一个与此上下文关联的单一 *ServletContext* 对象。任何以 `"/Book"`（*上下文路径*）开头的 URL 引用的 JSP 页面都可以访问此 *ServletContext* 对象。
 
 ![图像](img/7a40f8957e7c3eb68dbb9f8ab3cef54d_70_0.png)
@@ -1064,8 +1192,7 @@ JSP 容器支持四种不同的作用域：
 
 -   什么是 JSP 容器？
 -   JSP 页面首次加载时的各个阶段是什么？
--   JSP 页面中对象的作用域有哪些？
-
+-   JSP  JSP 页面中对象的作用域有哪些？
 -   JSP 容器是一个将 JavaServer Pages 转换为 Java servlet 代码，然后编译并将生成的 Java 字节码加载到 Servlet 容器中的进程。
 -   各个阶段是：（1）解释 JSP 页面，（2）生成 servlet，（3）编译 servlet，（4）将 servlet 加载到 Servlet 容器中，以及（5）调用 servlet 的 *service* 方法。
 -   作用域是页面、请求、会话和应用。
@@ -1090,36 +1217,23 @@ JSP 容器支持四种不同的作用域：
     __________________________________________________________________
 
 2.  转到 %TOMCAT\_HOME% 下的 bin 目录。（你已在步骤 1 中创建了此变量。）
-
 3.  在命令提示符下，输入
-
     ```
     %> startup
     ```
-
     这将启动 Tomcat Servlet 容器。要关闭 Tomcat Servlet 容器，请输入
-
     ```
     %> shutdown
     ```
-
 4.  启动一个浏览器（Internet Explorer 或 Netscape Navigator），因为 Tomcat 默认在端口 8080 上运行，请在浏览器窗口的相应字段中输入此 URL：
-
     ```
     http://localhost:8080
     ```
-
     你应该会看到 Tomcat 欢迎页面。
-
 5.  找到标题为 *JSP Examples* 的超链接并点击它。这将带你到一个显示你可以执行的 JSP 示例列表的 Web 页面。
-
 6.  选择任何示例的 *Execute* 超链接。JSP 示例应正确执行。例如，如果你选择运行 *Numberguess*，你应该会看到一个要求你输入 1 到 100 之间数字的页面。如果你看到这个页面，说明你已正确安装和配置了 Tomcat Servlet 容器。
-
 7.  选择任何示例的 *Source* 超链接。你应该会看到用于创建 JSP 页面的实际代码。
-
 8.  恭喜！你已经迈出了进入 JavaServer Pages 世界的重要第一步！你必须使 JSP 配置正常工作，以便能够构建和执行本书中描述的项目。通过练习示例 JavaServer Pages，你可以确保基本的 Tomcat 安装正常工作，并很好地了解 JSP 页面如何映射到 HTML 响应页面。
-
-
 
 ## JSP 构造
 
@@ -1274,9 +1388,8 @@ if(basket.full()) {
 <!-- 此页面创建于 Sat Dec 02 17:51:34 EST 2000 -->
 ```
 
-
-
 注意
+
 输出注释之所以存在，是因为浏览器允许你查看网页的源代码。这种代码共享很常见，但期望网页开发者为了这种共享而去注释生成的页面，似乎有些牵强。在决定使用多少输出注释时，你应遵循自己的直觉和利他主义倾向。
 
 ### 一分钟演练
@@ -1304,7 +1417,7 @@ JSP 页面可以向其容器发送消息，指示容器代其执行操作。规�
 
 程序员将复杂问题分解成更小的部分，以简化必须解决的问题。软件应用程序是人们解决的最复杂的问题之一，因此所有现代软件技术，包括 JavaServer Pages，都支持将软件划分为更小的部分或模块。软件模块提供了几个优势：
 
-- 解决更简单的问题有助于产生更清晰的解决方案。
+- 解决更简单的问题有助于产生更清晜的解决方案。
 - 你可以独立创建和测试每个模块。
 - 由于大问题往往分解为类似的小问题，模块化提高了软件的重用性。
 
@@ -1314,11 +1427,13 @@ JSP 容器通过两种包含机制支持模块化开发：
 - include 动作
 
 我们在此解释 include 指令，并在模块 5 中讨论 include 动作。
+
 include 指令指示 JSP 容器在指令出现的位置包含一个指定的资源。资源可以是任何静态页面或另一个 JSP 页面。如果你包含一个文件，通常是一个 HTML 或 JSP 页面片段，JSP 容器会用该文件的字节替换指令。你使用相对 URL 指定检索资源的位置（参见 RFC 2396，http://www.ietf.org/rfc/rfc2396.txt）。
 
 #### 相对 URL
 
 回顾模块 1，HTTP URL 的一般形式是：
+
 `http://origin-server[:port]/[path[?query]]`
 
 相对 URL 规范将其简化为以下形式之一：
@@ -1448,11 +1563,9 @@ include 指令通过使你能够将 JSP 页面拆分为多个部分来帮助你�
 
 **使用 include 指令只能加载静态文件。** 静态包含几乎算不上模块化，因为它们只显示了最低程度的 *内聚性*——即模块内容相互关联的程度。静态包含的内容只有在可以将其加载到多个 JSP 页面中时才具有内聚性。例如，一组页面的页眉或页脚包含了一系列本质上不相关的 HTML 行。它们的内聚性仅仅在于多个 HTML 页面共享这些相同的行。
 
-**include 指令在翻译时将被包含的内容绑定到页面。** 通常，软件架构中的这种早期绑定限制了灵活性。在灵活性的一端，开发者在编写代码时可能会 *硬编码* 绑定为字面值，例如通过插入页面页眉和页脚的 HTML，而不是使用 include 指令。在光谱的另一端，开发者可能在运行时通过查询数据源将内容绑定到页面。静态包含介于这两者之间，但更接近硬编码的一端。JSP 容器通过允许你将翻译推迟到请求时来帮助克服这种不灵活性。这在第一次请求页面（在翻译之前）时会导致明显的性能停顿。
+**include 指令在翻译时将被包含的内容绑定到页面。** 通常，软件架构中的这种早期绑定限制了灵活性。在灵活性的一端，开发者在编写代码时可能会 *硬编码* 绑定为字面值，例如通过插入页面页眉和页脚的 HTML，而不是使用 include 指令。在光谱的另一端，开发者可能在运行时通过查询数据源将内容绑定到页面。静态包含介于这两者之间，但更接近硬编码的一端。JSP 容器通过允许你将翻译推迟到请求时来帮助克服这种不灵活性。这在第一次请请页面（在翻译之前）时会导致明显的性能停顿。
 
-**include 指令可能导致难以理解的 JavaServer Pages。** 当你过度使用包含文件或包含文件包含 Java 或 JavaScript 代码时，JavaServer Pages 会变得混乱。如果你使用此类片段，必须小心保持这些代码片段尽可能自包含和内聚。你可能会错误地将任何页面的任何部分拆分为单独的、不相连的片段，当包含时，可以生成合法的 JSP 页面。你应该避免包含 Java 或 JavaScript 代码片段，因为你可以使用 JSP 动作或自定义标签库更好地包含代码。
-
-
+**include 指令可能导致难以理解的 JavaServer Pages。** 当你过度使用包含文件或包含文件包含 Java或 JavaScript 代码时，JavaServer Pages 会变得混乱。如果你使用此类片段，必须小心保持这些代码片段尽可能自包含和内聚。你可能会错误地将任何页面的任何部分拆分为单独的、不相连的片段，当包含时，可以生成合法的 JSP 页面。你应该避免包含 Java 或 JavaScript 代码片段，因为你可以使用 JSP 动作或自定义标签库更好地包含代码。
 
 # 一分钟速查
 
@@ -1470,63 +1583,49 @@ include 指令通过使你能够将 JSP 页面拆分为多个部分来帮助你�
 2.  在你的 Tomcat 安装目录下创建一个新的上下文，命名为 **Book**。
 3.  在 `%TOMCAT_HOME%/webapps` **下创建一个名为** **Book** 的子目录。
 4.  编辑文件 `%TOMCATE_HOME%/conf/server.xml`，并找到由 `<ContextManager>` 和 `</ContextManager>` 标签标识的 `ContextManager` 元素。在这些标签之间**插入一个新的** `<Context>`**元素**。你的那行代码应如下所示：
-
-```
-<Context path="/Book"
-         docBase="webapps/Book" >
-</Context>
-```
-
-这一行代码声明了你的上下文拥有一个虚拟路径 `/Book`，它映射到真实路径 `%TOMCAT_HOME%/webapps/Book`。
-
+    ```
+    <Context path="/Book"
+             docBase="webapps/Book" >
+    </Context>
+    ```
+    这一行代码声明了你的上下文拥有一个虚拟路径 `/Book`，它映射到真实路径 `%TOMCAT_HOME%/webapps/Book`。
 > **注意**
+>
 > 对于部署在 `%TOMCAT_HOME%/webapps` **目录**中的应用，将上下文元素添加到 `server.xml` 是可选的，但这仍然是一个好习惯。
-
 5.  启动（或重启）Tomcat servlet 容器。（Tomcat 需要此步骤来刷新其上下文。）
 6.  在 `%TOMCAT_HOME%/webapps/Book` 下创建两个名为 `jsp` 和 `html` 的子目录。
 7.  将以下文本复制到名为 `includeTest.jsp` 的文件中，该文件位于 `%TOMCAT_HOME%/webapps/Book/jsp` 下：
-
-```
-<HTML>
-<HEAD><TITLE> Include Test </TITLE></HEAD>
-<BODY>
-I should see this <br>
-<%@ include file="/html/insert.html" %>
-<br><br>
-If I don't, then the URL is not working...
-</BODY>
-</HTML>
-```
-
+    ```
+    <HTML>
+    <HEAD><TITLE> Include Test </TITLE></HEAD>
+    <BODY>
+    I should see this <br>
+    <%@ include file="/html/insert.html" %>
+    <br><br>
+    If I don't, then the URL is not working...
+    </BODY>
+    </HTML>
+    ```
 8.  将以下文本复制到名为 `insert.html` 的文件中，并将其保存在 `%TOMCAT_HOME%/webapps/Book/html` 下：
-
-```
-right below the line that reads: "I should see this"
-```
-
+    ```
+    right below the line that reads: "I should see this"
+    ```
 9.  启动 Web 浏览器并输入以下 URL：
     `http://localhost:8080/Book/jsp/includeTest.jsp`。
 10. 你应该在浏览器中看到以下内容：
-
-```
-I should see this
-right below the line that reads: "I should see this"
-
-If I don't, then the URL is not working...
-```
-
-这里我们演示了什么？在父 JSP `includeTest.jsp` 中，我们指定了一个包含相对 URL `/html/insert.html` 的 include 指令。因为该 URL 以斜杠 (/) 字符开头，JSP 容器将其视为上下文相对路径。因为我们的上下文的文档根是 `%TOMCAT_HOME%/webapps/Book`，容器会在文档根的 `html` 子目录下查找 `insert.html`。
-
-以下是为勤奋的读者准备的一些额外练习。
-
-- **练习 1** 在不移动被包含文件 `insert.html` 的情况下，编辑 `includeTest.jsp`，并将 include 指令中的 URL 修改为页面相对路径（即，不以 / 字符开头）。你应该重新加载你的 JSP 页面，并且在定位被包含文件时不应有任何问题。
-- **练习 2** 修改文件 `insert.html` 中的 "I should see this" 行，将其改为：
-
-```
-<H2> right below the line that reads: "I should see this" </H2>
-```
-
-即，使用 HTML 元素 H2 将其内容括起来。现在重新加载文件 `includeTest.jsp`。你可能期望看到被包含文件的内容以更大、加粗的字体显示，但你将不会看到。为什么你的更改没有生效？你如何才能让它生效？
+    ```
+    I should see this
+    right below the line that reads: "I should see this"
+    If I don't, then the URL is not working...
+    ```
+    这里我们演示了什么？在父 JSP `includeTest.jsp` 中，我们指定了一个包含相对 URL `/html/insert.html` 的 include 指令。因为该 URL 以斜杠 (/) 字符开头，JSP 容器将其视为上下文相对路径。因为我们的上下文的文档根是 `%TOMCAT_HOME%/webapps/Book`，容器会在文档根的 `html` 子目录下查找 `insert.html`。
+    以下是为勤奋的读者准备的一些额外练习。
+    - **练习 1** 在不移动被包含文件 `insert.html` 的情况下，编辑 `includeTest.jsp`，并将 include 指令中的 URL 修改为页面相对路径（即，不以 / 字符开头）。你应该重新加载你的 JSP 页面，并且在定位被包含文件时不应有任何问题。
+    - **练习 2** 修改文件 `insert.html` 中的 "I should see this" 行，将其改为：
+        ```
+        <H2> right below the line that reads: "I should see this" </H2>
+        ```
+        即，使用 HTML 元素 H2 将其内容括起来。现在重新加载文件 `includeTest.jsp`。你可能期望看到被包含文件的内容以更大、加粗的字体显示，但你将不会看到。为什么你的更改没有生效？你如何才能让它生效？
 
 ### page 指令
 
@@ -1549,6 +1648,7 @@ Page 指令遵循以下通用格式：
 你可以在一个 JSP 翻译单元中插入任意数量的 page 指令，即使它只是一个 JSP 页面文件。这些指令可以出现在翻译单元中任何文件的任何位置。
 
 > **提示**
+>
 > 一个好的编程惯例是在 JSP 页面文件的最开始指定一个 page 指令。这有助于阅读你代码的人找到适用于该页面的所有属性。
 
 #### page 指令的属性
@@ -1561,7 +1661,7 @@ Page 指令遵循以下通用格式：
 <%@ page language="java" %>
 ```
 
-**extends** extends 属性指定生成的 servlet 的父类。通常，JSP 容器从一个默认类扩展生成的 servlet。高级 JSP 开发人员可以使用此属性为其 JavaServer Pages 创建自定义父类。此类父类必须实现 Java 接口 *HttpJspPage*。这里有一个例子：
+**extends** extends 属性指定生成的 servlet 的父类。通常，JSP 容器从一个默认类扩展生成的 servlet。高级 JSP 开发人员可以使用此属性为其 JavaServer Pages 创建自定父类。此类父类必须实现 Java 接口 *HttpJspPage*。这里有一个例子：
 
 ```
 <%@ page extends="myPackage.ExampleHttpSuper" %>
@@ -1585,7 +1685,7 @@ Page 指令遵循以下通用格式：
 
 #### 问专家
 
-**问题：** 何时需要为 JSP 页面创建自定义父类？
+**问题：** 何时需要为 JSP 页面创建自定父类？
 
 **回答：** 你的 Web 应用程序可能需要为一整组 JavaServer Pages 提供某些方法或变量。例如，你可能创建了一个 Web 应用程序，其中一组 JavaServer Pages 必须绘制相同的用户界面元素。你可以编写一个自定义 Java 类，提供一组实用函数，如 *drawTable*、*drawComboBox*、*drawMenu* 和 *drawButton*。然后，你可以使用 extends 属性从这个绘图类派生你的生成的 JavaServer Pages。通过从这个自定义 Java 类扩展你的 JavaServer Pages，你使得这些函数在 JavaServer Pages 中的任何 Java 代码都可用。
 
@@ -1597,13 +1697,11 @@ Page 指令遵循以下通用格式：
 
 **回答：** JSP 容器和实现 JSP 页面的 Java 类必须使用某种方法调用协议进行通信。如果 Java 类未能实现这些方法，JSP 容器就无法调用它们，因此无法提供容器服务。Java 类通过实现以下接口来保证它支持该协议。
 
-
-
 #### 接口中的方法。从这个意义上说，接口充当JSP容器和生成的servlet之间的契约。
 
-**问：** 是否应该避免为你的JavaServer Pages提供此类自定义父类？
+**问：** 是否应该避免为你的JavaServer Pages提供此类自定父类？
 
-**答：** 有几个理由反对为你从JavaServer Pages生成的Java servlet编写自定义父类。首先，规范将责任放在了该自定义类的开发者身上，要求其符合契约。JSP容器无需检查其一致性。其次，JSP容器在从JSP页面生成servlet时，可以做出某些决定以提高性能。如果你强制它从你的自定义类继承，则限制了它做出此类决定的能力。第三，你可以使用自定义操作更轻松、更明确地创建自定义行为。（我们将在模块6中描述这一点。）
+**答：** 有几个理由反对为你从JavaServer Pages生成的Java servlet编写自定父类。首先，规范将责任放在了该自定父类的开发者身上，要求其符合契约。JSP容器无需检查其一致性。其次，JSP容器在从JSP页面生成servlet时，可以做出某些决定以提高性能。如果你强制它从你的自定父类继承，则限制了它做出此类决定的能力。第三，你可以使用自定义操作更轻松、更明确地创建自定行为。（我们将在模块6中描述这一点。）
 
 **import** import属性允许你指定一个Java导入声明——即一个逗号分隔的完全限定Java类型名或Java包名列表，后跟.*字符序列。如果你在JSP翻译单元中插入多个page指令，*import是你可以多次指定的唯一属性*。你必须指定任何你打算使用且不属于默认导入包集的Java类。默认导入的Java类集包括`java.lang.*`、`javax.servlet.*`、`javax.servlet.jsp.*`和`javax.servlet.http.*`。下面是一个示例：
 
@@ -1620,12 +1718,14 @@ Page 指令遵循以下通用格式：
 ```
 
 > **提示**
-正如我们在模块1中所述，HTTP是无状态的。这意味着该协议在连续的客户端请求之间不携带任何客户端状态。尽管如此，servlet和JavaServer Pages提供了其他机制来在多个请求之间保存客户端的状态。我们称这种客户端状态的保存为*会话*。Java servlet提供一个*HttpSession*对象来存储和检索会话信息。如果你不在JSP页面中使用*HttpSession*对象，请将会话属性设置为`false`，因为会话对象很大，会消耗内存资源。
+>
+>正如我们在模块1中所述，HTTP是无状态的。这意味着该协议在连续的客户端请求之间不携带任何客户端状态。尽管如此，servlet和JavaServer Pages提供了其他机制来在多个请求之间保存客户端的状态。我们称这种客户端状态的保存为*会话*。Java servlet提供一个*HttpSession*对象来存储和检索会话信息。如果你不在JSP页面中使用*HttpSession*对象，请将会话属性设置为`false`，因为会话对象很大，会消耗内存资源。
 
 **buffer** buffer属性为由隐式JSP变量*out*引用的*JspWriter*对象设置缓冲模型和缓冲区大小。
 
 > **注意**
-正如我们在模块4中讨论的，JSP容器创建了几个隐式对象并提供给JSP开发者。*JspWriter*对象和*HttpSession*对象只是这些隐式对象中的两个。
+>
+>正如我们在模块4中讨论的，JSP容器创建了几个隐式对象并提供给JSP开发者。*JspWriter*对象和*HttpSession*对象只是这些隐式对象中的两个。
 
 当你将缓冲区值指定为`none`时，生成的servlet不进行任何缓冲，并将写入*out*变量的输出直接传递给*ServletResponse*对象提供的*PrintWriter*对象。当你设置缓冲区大小时，*JspWriter*提供字符缓冲，这可以提高性能。与*PrintWriter*对象不同，*JspWriter*会抛出*IOExceptions*。默认缓冲区大小为8KB。下面是一个示例：
 
@@ -1664,7 +1764,8 @@ Page 指令遵循以下通用格式：
 **答：** autoFlush属性是给*JspWriter*对象的一个标志，告诉它要么在缓冲区满时自动刷新，要么抛出错误。访问你的JSP页面的Web客户端可能无法处理部分构建的数据流。你可以通过将autoFlush设置为`false`来确保向客户端发送正确且完整的数据流。将autoFlush设置为`false`后，如果在发送所有数据之前缓冲区满了，你会收到一个致命错误通知。
 
 > **提示**
-将isThreadSafe设置为`false`会导致容器向生成的servlet声明中添加*implements SingleThreadModel*。
+>
+>将isThreadSafe设置为`false`会导致容器向生成的servlet声明中添加*implements SingleThreadModel*。
 
 **问：** 为什么不将isThreadSafe属性设置为`false`，从而不用担心同步任何共享数据？
 
@@ -1694,15 +1795,12 @@ Page 指令遵循以下通用格式：
 
 #### 分步操作
 
-1. 确保你已正确安装Tomcat servlet容器并使其正在运行。
-2. 将以下文本复制到文件名为`errorTesting.jsp`的文件中，放在你在项目2-1中定义的Book上下文中。
-
-```
-<%@ page errorPage="errPage.jsp" %>
-<HTML>
-```
-
-
+1.  确保你已正确安装Tomcat servlet容器并使其正在运行。
+2.  将以下文本复制到文件名为`errorTesting.jsp`的文件中，放在你在项目2-1中定义的Book上下文中。
+    ```
+    <%@ page errorPage="errPage.jsp" %>
+    <HTML>
+    ```
 
 ### taglib 指令
 
@@ -1718,7 +1816,7 @@ prefix="tag prefix"
 %>
 ```
 
-您使用统一资源标识符（URI）来标识标签库。此 URI 可以是绝对 URI 或相对 URI，就像我们之前描述的那样。URI 指定了标签库描述符（TLD）的位置，TLD 定义了该标签库支持的自定义标签。prefix 属性为这些自定义标签指定标签前缀。
+您使用统一资源标识符（URI）来标识标签库。此 URI 可以是绝对 URI 或相对 URI，就像我们之前描述的那样。URI 指标了标签库描述符（TLD）的位置，TLD 定义了该标签库支持的自定义标签。prefix 属性为这些自定义标签指定标签前缀。
 
 #### 注意
 
@@ -1743,7 +1841,7 @@ JSP 规范还支持使用 web.xml 部署描述符（我们在附录 B 中描述�
 <search:complex> .... </search:complex>
 ```
 
-只要为每个标签库提供唯一的前缀，一个 JSP 页面就可以包含任意数量的 taglib 指令。正如您可能猜到的，前缀限定了标签库在页面内的作用域。您可以提供任何唯一的字符串作为前缀。虽然 taglib 指令可以出现在 JSP 页面文件中的任何位置，但所有需要该指令的自定义标签都必须跟在它后面。
+只要为每个标签库提供唯一的前缀，一个 JSP 页面就可以包含任意数量的 taglib 指令。正如您可能猜到的，前缀限制了标签库在页面内的作用域。您可以提供任何唯一的字符串作为前缀。虽然 taglib 指令可以出现在 JSP 页面文件中的任何位置，但所有需要该指令的自定义标签都必须跟在它后面。
 
 ### 一分钟练习
 
@@ -1751,7 +1849,6 @@ JSP 规范还支持使用 web.xml 部署描述符（我们在附录 B 中描述�
 - JSP 容器默认导入哪些*包*？
 - 为什么要在 page 指令中使用 *session* 属性？
 - taglib 指令的作用是什么？
-
 - 只能重复 import 属性。
 - 这些包是 `java.lang`、`javax.servlet`、`javax.servlet.jsp` 和 `javax.servlet.http`。
 - 使用 session 属性是为了指明您的 JSP 页面是否参与 HTTP 会话。
@@ -1760,42 +1857,30 @@ JSP 规范还支持使用 web.xml 部署描述符（我们在附录 B 中描述�
 ## 掌握度检查
 
 1. 这个注释声明有什么问题？
-
 ```
 <!-- This variable stores the JSP page context. --!>
 ```
-
 2. 这个注释声明有什么问题？
-
 ```
 <%-- This page was forwarded from <%= sourcePage %>. --%>
 ```
-
 3. 您的网站管理员要求您在网站的每个 JSP 页面顶部显示一个标准 logo 和标准标题。您如何在不重复每个 JSP 页面中此信息的情况下实现这一点？
-
 4. 这些 page 指令导入了哪些包？
-
 ```
 <%@ page import="java.util.Vector" errorPage="/myError.jsp" %>
 <%@ page import="com.mycorp.classes.*, java.util.*, java.text.*" %>
 ```
-
 5. 这里显示的 JSP 页面声明是否有问题？
-
 ```
 <%@ page import="java.util.Hashtable" "errorPage=/myError.jsp" %>
 <%@ page errorPage="/myError.jsp" %>
 ```
-
 6. 您可以在指定导入它的 page 指令之前，在 JSP 页面中使用 Java 类吗？
-
 7. 这个 taglib 指令有效吗？
-
 ```
 <%@ taglib uri="http://www.mywebsite.com/mytags" prefix="" %>
 ```
-
-8. 是否必须在 JSP 页面中指定自定义标签之前，先为它们指定 taglib 指令？
+8. 是否必须在 JSP 页面中指定自定标签之前，先为它们指定 taglib 指令？
 
 ## 模块 3
 
@@ -1881,8 +1966,6 @@ The date today is: <%= date %>
 </HTML>
 ```
 
-
-
 Apache Tomcat 的 JSP 容器会将此 JSP 页面翻译成类似于以下内容的 Java 源文件：
 
 ```java
@@ -1894,6 +1977,7 @@ import javax.servlet.jsp.tagext.*;
 import java.io.PrintWriter;
 import java.io.IOException;
 import java.io.FileInputStream;
+import java.io.ObjectInputStream;
 import java.io.ObjectInputStream;
 import java.util.Vector;
 import org.apache.jasper.runtime.*;
@@ -1975,11 +2059,11 @@ public class jspse2_jsp_0 extends HttpJspBase
 ```
 
 > 页面级指令
-
+>
 > JSP 声明（变量）
-
+>
 > JSP 声明（方法）
-
+>
 > _jspService 方法
 
 如代码清单所示，Tomcat 几乎逐字地将 JSP 脚本元素翻译成等效的 Java 源文件。生成的 servlet 的实现细节（最明显的是特定的类名）是特定于供应商的。JSP 规范描述了生成的 servlet 类的结构，但指出翻译成这种结构不必“照字面执行”。然而，供应商的灵活性受到限制，因为他们必须实现规范要求的功能并遵循脚本语言（目前是 Java）的语法。例如，规范要求支持 `page` 指令中的 `import` 属性。在 Java 中，你必须使用 `import` 语句来实现这一点。`import` 语句必须位于类声明之前。
@@ -1991,7 +2075,7 @@ Tomcat 分四个部分生成 servlet：
 - **隐式对象初始化** - JSP 容器对象
 - **_jspService 的主体** - JSP 脚本小程序和表达式
 
-容器将页面指令翻译成页面级语法和配置元素。例如，它将此指令
+容器将页面指令翻译成页面级语法和配置元器。例如，它将此指令
 
 ```jsp
 <%@ page import="ScriptingElements" %>
@@ -2016,6 +2100,7 @@ implements SingleThreadModel
 ```
 
 容器将 JSP 声明翻译成成员变量和方法的 Java 声明。
+
 JSP 容器生成初始化部分和主体部分作为 `_jspService` 方法的一部分。容器在 `_jspService` 方法的初始化部分初始化隐式对象。我们将在模块 4 中讨论隐式对象。
 
 容器将静态 HTML（模板数据）和 JSP 表达式翻译成 `out.write` 或 `out.print` 语句，并将这些语句放在 `_jspService` 方法的主体部分。
@@ -2053,7 +2138,8 @@ public String name = "Shakespeare";
 
 ### JSP 声明中的变量
 
-当你在 Java 中声明变量时，你隐式地为其分配了一个作用域。例如，当你在代码块内（即在花括号之间）声明变量时，你隐式地赋予了它块作用域。具有块作用域的变量在代码块执行期间存在和消亡。同样，如果你在方法中声明变量，你隐式地赋予了它方法作用域。具有方法作用域的变量仅在方法调用的生命周期内存在。类似地，当你声明类的成员变量时，你隐式地赋予了它对象作用域。具有对象作用域的变量存在于声明它们的类实例或对象的生命周期内。如果你将变量声明为静态的（使用 `static` 关键字），你隐式地赋予了它类作用域。JVM 在第一次加载声明类时创建类变量，并且仅在类卸载时（通常在 JVM 关闭时）销毁它们。
+当你在 Java 中声变量时，你隐式地为其分配了一个作用域。例如，当你在代码块内（即在花括号之间）声明变量时，你隐式地赋予了它块作用域。具有块作用域的变量在代码块执行期间存在和消亡。同样，如果你在方法中声明变量，你隐式地赋予了它方法作用域。具有方法作用域的变量仅在方法调用的生命周期内存在。类似地，当你声明类的成员变量时，你隐式地赋予了它对象作用域。具有对象作用域的变量存在于声明它们的类实例或对象的生命周期内。如果你将变量声明为静态的（使用 `static` 关键字），你隐式地赋予了它类作用域。JVM 在第一次加载声明类时创建类变量，并且仅在类卸载时（通常在 JVM 关闭时）销毁它们。
+
 以下代码说明了不同的 Java 作用域：
 
 ```java
@@ -2074,8 +2160,6 @@ public class ScopeExample {
 ### JSP 声明中的方法
 
 所有 Java 方法都具有类作用域或对象作用域。这意味着你必须将它们声明为静态或非静态。你可以访问静态方法，即使
-
-
 
 ### 高级Java特性声明
 
@@ -2126,6 +2210,7 @@ InnerClass(4)
 使用JSP声明时，你应该特别注意几点。
 
 JSP声明生成具有对象或类作用域的Java代码。
+
 JSP声明只能访问对象或类作用域中的变量。它们不能引用像*JspWriter*对象这样的隐式对象，这些对象具有方法作用域，仅在*_jspService*方法中可用。因此，以下代码片段会导致编译错误：
 
 ```
@@ -2148,11 +2233,13 @@ JSP声明只能访问对象或类作用域中的变量。它们不能引用像*J
 
 # 专家问答
 
-> **问题：** 考虑第2模块中描述的页面指令和extends属性。使用extends属性在自定义基类中声明方法与直接使用JSP声明在JSP页面中声明方法有什么区别？
+> **问题：** 考虑第2模块中描述的页面指令和extends属性。使用extends属性在自定基类中声明方法与直接使用JSP声明在JSP页面中声明方法有什么区别？
 
-**回答：** 当你为JavaServer Pages创建自定义基类时，任何JSP页面都可以通过使用页面指令的extends属性来扩展它并利用其中声明的方法。另一方面，通过定义自己的基类，你可以绕过供应商提供的内置基类。这有时可能有用，但通常这样做并不明智。供应商可以在其提供的基类中内置各种优化，如果你使用自己的基类，这些优化就会丧失。
+**回答：** 当你为JavaServer Pages创建自定基类时，任何JSP页面都可以通过使用页面指令的extends属性来扩展它并利用其中声明的方法。另一方面，通过定义自己的基类，你可以绕过供应商提供的内置基类。这有时可能有用，但通常这样做并不明智。供应商可以在其提供的基类中内置各种优化，如果你使用自己的基类，这些优化就会丧失。
+
 如果你直接使用JSP声明在JSP页面中声明方法，只有该JSP页面可以使用这些方法。JSP声明可以为特定的JSP页面提供一种声明实用方法（和内部类）的便捷方式。
-JSP动作和自定义标签库比使用自定义基类或JSP声明提供了更优雅的方法。我们在模块5和6中解释这些技术。
+
+JSP动作和自定义标签库比使用自定基类或JSP声明提供了更优雅的方法。我们在模块5和6中解释这些技术。
 
 ### **JSP声明必须在变量使用前声明。**
 
@@ -2191,7 +2278,7 @@ The value of x is <%= x %>
 
 ### **同步在JSP声明中声明的变量，或使用页面指令将isThreadSafe属性设置为false。**
 
-正如你所看到的，JSP声明中的变量具有对象或类作用域。JavaServer Pages作为servlet运行，servlet默认是多线程的。当你不将*isThreadSafe*属性设置为*false*时，多个客户端可能会共享同一个servlet实例并同时访问其成员变量。这些线程可能通过执行不同步的成员变量修改而互相踩踏。让我们看一个例子：
+正如你所看到的，JSP声令中的变量具有对象或类作用域。JavaServer Pages作为servlet运行，servlet默认是多线程的。当你不将*isThreadSafe*属性设置为*false*时，多个客户端可能会共享同一个servlet实例并同时访问其成员变量。这些线程可能通过执行不同步的成员变量修改而互相踩踏。让我们看一个例子：
 
 ```
 <%! Inventory inventory = new Inventory(); %>  ← JSP声明
@@ -2248,6 +2335,7 @@ The value of x is <%= x %>
 ```
 
 我们在这个更复杂的例子中使用了括号。在JSP表达式中，与在每种现代编程语言中一样，括号决定了求值顺序。在这种情况下，我们首先计算子表达式(1+2)。然后我们将结果乘以4。
+
 编程语言还为运算符定义了求值顺序。彻底理解求值顺序有时可以让你省略括号。例如，以下代码片段求值结果为9：
 
 ```
@@ -2263,7 +2351,8 @@ The value of x is <%= x %>
 然而，当括号让你的意图如此清晰时，何必费心省略它们呢？
 
 > **提示**
-你应该总是使用括号来显式地表示表达式的求值优先级。记住，代码是你的第一种文档形式。
+>
+>你应该总是使用括号来显式地表示表达式的求值优先级。记住，代码是你的第一种文档形式。
 
 表达式可以包含变量和方法调用。例如，此代码使用了前面描述的factorial方法，其求值结果为12：
 
@@ -2319,7 +2408,10 @@ out.print(factorial(5));
 -   你可以在JSP表达式中使用哪些类型的Java表达式？
 -   JSP容器何时计算JSP表达式？
 
+
+
 -   你可以在JSP表达式中使用任何合法的Java表达式。`JspWriter` 对象会将所有这些Java表达式强制转换为 `String` 并将结果打印到响应缓冲区。
+
 -   容器在请求时计算JSP表达式。
 
 # JSP脚本片段
@@ -2460,7 +2552,7 @@ JSP脚本片段也支持*迭代*，包括 `for` 循环、`while` 循环和 `do/w
 </TABLE>
 ```
 
-此代码创建了一个包含一列七行的HTML表格。每个单元格显示一个带有单元格行号的标签。它包含两个脚本片段：
+此代码创建了一个包含一列七行的HTML表格。每个单元显示一个带有单元格行号的标签。它包含两个脚本片段：
 
 ```
 <% for (int i =0; i < 7; i++) { %>
@@ -2472,13 +2564,12 @@ JSP脚本片段也支持*迭代*，包括 `for` 循环、`while` 循环和 `do/w
 <% } %>
 ```
 
-
-
 ## 脚本中的高级 Java 特性
 
 JSP 脚本可以声明高级的 Java 构造，如局部内部类和匿名内部类。内部类是作为其他类的成员、在语句块内部局部定义，或在表达式内部匿名定义的类。在 JSP 脚本中显式声明的内部类是局部内部类，因为它们出现在 `_jspService` 方法内部，因此对该方法是局部的。在 JSP 脚本内的实例创建表达式（new 表达式）中声明的内部类是匿名内部类（也称为匿名类）。有关内部类的更多信息，请参阅 http://java.sun.com/products/jdk/1.1/docs/guide/innerclasses/index.html。
 
 第二个脚本只是右花括号字符（}）。以这种方式使用构造，可以轻松生成动态表格。
+
 JSP 脚本也可以插入其他 Java 迭代构造，即 `while` 和 `do/while` 语句。例如，这是我们用 `while` 循环（而非 `for` 循环）编码的 JSP 片段：
 
 ```
@@ -2557,7 +2648,9 @@ for (int i = 0; i < anonFileList.length; i++) {
 ### 一分钟练习
 
 - 你能将任何合法的 Java 代码片段插入 JSP 脚本中吗？
+
 - 在 JSP 脚本中声明的变量的作用域是什么？
+
 - JSP 脚本何时执行？
 
 ## 脚本中的异常
@@ -2588,7 +2681,9 @@ catch (Exception ex) {
 默认情况下，Tomcat 使用的 `handlePageException` 方法会显示堆栈转储。在模块 2 中，你了解了一个页面指令属性，它允许你修改此默认行为。如果你设置了 `errorPage` 属性，`handlePageException` 方法会将控制权转发给你指定为该属性值的 HTML 或 JSP 页面。
 
 - 不。JSP 脚本只能包含你可以合法地包含在方法中的 Java 代码。
+
 - 在 JSP 脚本中声明的变量具有方法作用域或更小的作用域。
+
 - JSP 容器在请求时执行 JSP 脚本。
 
 ## 关于 JSP 脚本的更多信息
@@ -2609,8 +2704,6 @@ catch (Exception ex) {
 
 当你混合 Java 和 HTML 时，你可能会模糊程序逻辑。JavaServer Pages 经常被提及的一个优点是，它们允许你将 HTML 从 servlet 代码中分离出来，从而减少由大量 print 语句引起的混淆。然而，向 JSP 页面添加过多的 Java 代码可能会造成同样多的混淆。大量使用 `if/else` 和 `switch` 语句等 Java 构造，即使是纯粹的 Java 程序也可能变得模糊不清。将 HTML 标签和静态文本穿插到这些构造中，情况可能会变得更糟。相反，你应该尝试将大部分 Java 代码从 JSP 页面中分离出来，并将其封装在辅助 JavaBeans 中。（我们在模块 5 和 6 中描述了这种封装技术。）
 
-
-
 ![](img/7a40f8957e7c3eb68dbb9f8ab3cef54d_123_0.png)
 
 ### 项目 3-1：脚本元素
@@ -2618,8 +2711,11 @@ catch (Exception ex) {
 本项目展示了在 JSP 页面中使用所有三种脚本元素。项目要求你展示一个家庭费用报告。JSP 页面动态显示一个家庭费用列表，每项费用包含以下信息：
 
 - 日期
+
 - 类别
+
 - 描述
+
 - 金额
 
 你的目标是生成一个格式良好的 HTML 表格来呈现这些费用。
@@ -2627,11 +2723,17 @@ catch (Exception ex) {
 ### 逐步操作
 
 1. 从 http://www.osborne.com 下载本项目的 Java 文件。
+
 2. 编译 Java 文件 Expense.java 和 ExpenseReport.java。请注意，这些 Java 文件属于一个名为 scripting 的包。
+
 3. 在你的 Tomcat 安装目录的 Book 上下文下，创建目录层级结构 WEB-INF/classes/scripting。
+
 4. 将步骤 2 中生成的类文件移动到 %TOMCAT_HOME%/webapps/Book/WEB-INF/classes/scripting 目录下。JSP 容器会自动加载给定应用上下文中位于 WEB-INF/classes 子目录下的所有类文件。由于你的所有 Java 文件都在 scripting 包中，请在 WEB-INF/classes 下创建 scripting 子目录，并将类文件放入此目录。
+
 5. 快速查看这两个 Java 文件，以了解它们的用途。这些 Java 文件仅用于提供动态内容。Expense.java 中的 Expense 类是一个 JavaBean，包含单个家庭费用的所有信息。ExpenseReport.java 中的 ExpenseReport 类维护着一月份所有费用的静态列表。你在本项目中的目标是在 JSP 页面中展示此费用列表，形成你的报告。
+
 6. 在 %TOMCAT_HOME%/webapps/Book/jsp 下创建一个名为 ExpenseReport.jsp 的空 JSP 页面文件。
+
 7. 使用 page 指令导入你可能需要的类，开始编写 JSP 页面。首先，导入你刚刚构建的 Java 文件。此外，导入 JDK 的 java.util 包。按如下所示输入第一行：
 
 ```
@@ -2734,7 +2836,7 @@ catch (Exception ex) {
 </HTML>
 ```
 
-17. 保存你的文件，并使用以下 URL 在 Web 浏览器中加载它：http://localhost:8080/Book/jsp/ExpenseReport.jsp。访问此 URL 时请确保 Tomcat 正在运行。你应该会看到一个类似于图 3-1 的页面。
+17. 保存你的文件，并使用以下 URL 在 Web 浏览器中加载它：http://localhost:8080/Book/jsp/ExpenseReport.jsp。访此 URL 时请确保 Tomcat 正在运行。你应该会看到一个类似于图 3-1 的页面。
 
 ![](img/7a40f8957e7c3eb68dbb9f8ab3cef54d_126_0.png)
 
@@ -2813,7 +2915,9 @@ This page was accessed: <%= counter.getNumTimes(); %>.
 ## 本模块目标
 
 - 熟悉各种隐式 JSP 对象
+
 - 理解隐式对象所代表的 Java 类
+
 - 理解如何在 JavaServer Pages 中使用隐式对象
 
 在 Java servlet 和 JSP 容器上下文中编写 Web 应用程序的优势之一是，这些容器为应用程序提供服务。JavaServer Pages 通过隐式对象将这些服务暴露给 JSP 页面开发人员使用。
@@ -2823,18 +2927,20 @@ JSP 1.1 规范要求 JSP 脚本语言支持一组通用的 *隐式* 对象。这
 在 JSP 1.1 中，由于唯一的 JSP 脚本语言是 Java，每个隐式对象都映射到特定的 Java 类或接口。在我们的讨论中，我们或多或少会互换使用变量名和对象类型。表 4-1 列出了隐式对象及其 Java 类型。
 
 | 变量名 | Java 类型 | 描述 | JSP 作用域 |
+
 |---|---|---|---|
+
 | *request* | *javax.servlet.ServletRequest* 的一个协议相关的子类型；对于 HTTP 协议，是 *javax.servlet.HttpServletRequest* | 提供预解析的 HTTP 请求 | request |
+
 | *response* | *javax.servlet.ServletResponse* 的一个协议相关的子类型；对于 HTTP 协议，是 *javax.servlet.HttpServletResponse* | 封装 HTTP 响应 | page |
-| *pageContext* | *javax.servlet.jsp.PageContext* | 封装供应商特定的功能；提供便捷方法来从多个作用域访问信息并检索其他隐式对象；提供 *forward*、*include* 和 *handlePageException* 方法 | page |
+
+| *pageContext* | *javax.servlet.jsp.PageContext* | 封装供应商特定的功能；提供便捷方法来从多个作用域访信息并检索其他隐式对象；提供 *forward*、*include* 和 *handlePageException* 方法 | page |
 
 表 4-1 JavaServer Pages 中可用的隐式对象
 
-
-
 ## The request 变量
 
-`request` 变量提供了对客户端请求中提供信息的访问。Java servlet 容器将此信息打包为一个对象，其协议相关的子类型是 *javax.servlet.ServletRequest*。就我们的目的而言，协议是 HTTP，因此默认对象的类型是 *javax.servlet.HttpServletRequest*。它具有请求作用域，这意味着 servlet 容器在请求时创建它，并在请求完成时销毁它。这也意味着同一个请求对象可供处理给定 HTTP 请求的所有 JavaServer Pages 使用。
+`request` 变量提供了对客户端请求中提供信息的访问。Java servlet 容器将此信息打包为一个对象，其协议相关的子类型是 *javax.servlet.ServletRequest*。就我们的目的而言，协议是 HTTP，因此默认对象的类型是 *javax.servlet.HttpServletRequest*。它具有请求作用域，这意味着 servlet 容器在请时创建它，并在请求完成时销毁它。这也意味着同一个请求对象可供处理给定 HTTP 请求的所有 JavaServer Pages 使用。
 
 *request* 隐式变量是生成 servlet 的 `_jspService` 方法的形式参数。以下代码片段摘自 Tomcat JSP 容器生成的 servlet，展示了该参数：
 
@@ -2849,11 +2955,17 @@ public void _jspService(HttpServletRequest request,
 *request* 变量通过其引用的 *HttpServletRequest* 对象，向 JavaServer Pages 提供以下类型的服务：
 
 - 访问请求参数
+
 - 管理请求作用域中的属性
+
 - 检索 Cookie
+
 - 访问请求头
+
 - 访问请求行元素
+
 - 访问安全信息
+
 - 访问国际化信息
 
 ### 访问请求参数
@@ -2884,7 +2996,9 @@ for (int i = 0; i < paramValues.length; i++) {
 如果您使用 URI 查询字符串 x=5&y=joe&y=larry 访问包含上述片段的 JSP 页面，您的浏览器将显示以下结果：
 
 **Parameters in this request:**
+
 Parameter: x Values: 5
+
 Parameter: y Values: joe larry
 
 您使用参数在 Web 工作流中捕获和在页面间传递用户输入。通常，您从 HTML 表单中 POST 这些数据。考虑以下 HTML 片段：
@@ -2931,17 +3045,16 @@ Servlet 容器自动从查询字符串和表单数据中提取参数，并将它
 ```
 <% java.util.Date date = (java.util.Date)
 	request.getAttribute("Current Date"); %>
-Current Date is: <%= date %>
-```
-
-输出如下所示：
-
 Current Date is: Sun Feb 11 21:12:13 EST 2001
 
 | 方法签名 | 用途 |
+
 | --- | --- |
-| `String getParameter(String parameterName)` | 以 *String* 形式返回请求参数的值，如果参数不存在则返回 null |
+
+| `String getParameter(String parameterName)` | 以 *String* 形式返回请请求参数的值，如果参数不存在则返回 null |
+
 | `java.util.Enumeration getParameterNames()` | 返回一个包含此请求中包含的参数名称的 *String* 对象枚举 |
+
 | `String[] getParameterValues(String parameterName)` | 返回一个包含给定请求参数所有值的 *String* 对象数组，如果参数不存在则返回 null |
 
 表 4-2 访问请求参数的方法
@@ -2959,10 +3072,15 @@ Current Date is: Sun Feb 11 21:12:13 EST 2001
 正如我们在模块 1 中描述的，HTTP 请求包含头。`HttpServletRequest` 对象提供了访问 HTTP 头中发送的信息的方法。
 
 | 方法签名 | 用途 |
+
 |---|---|
+
 | `Object getAttribute (String name)` | 以对象形式返回命名属性的值，如果不存在给定名称的属性则返回 null |
+
 | `java.util.Enumeration getAttributeNames()` | 返回一个包含此请求可用属性名称的枚举 |
+
 | `void removeAttribute (String attributeName)` | 从此请求中移除一个属性 |
+
 | `void setAttribute(String name, Object object)` | 在此请求中存储一个属性；servlet 容器在请求之间重置属性 |
 
 表 4-3 管理请求属性的方法
@@ -2970,17 +3088,22 @@ Current Date is: Sun Feb 11 21:12:13 EST 2001
 ---
 
 | 变量名 | Java 类型 | 描述 | JSP 作用域 |
+
 | :--- | :--- | :--- | :--- |
-| session | javax.servlet.http.HttpSession | 提供跨多个服务请求跟踪客户端的机制 | session |
+
+| session | javax.servlet.http.HttpSession | 提供跨多个服务请跟踪客户端的机制 | session |
+
 | application | javax.servlet.ServletContext | 提供一组方法来访问 Web 服务器信息并写入消息到 servlet 日志文件 | application |
+
 | out | javax.servlet.jsp.JspWriter | 封装写入 HTTP 响应缓冲区的手段 | page |
+
 | config | javax.servlet.ServletConfig | 为 JSP 页面提供初始化参数并访问 *ServletContext* | page |
+
 | page | javax.servlet.jsp.HttpJspPage | 页面主体中“this”的同义词 | page |
+
 | exception | java.lang.Throwable | 传递给错误页面的未捕获 *Throwable* | page |
 
 表 4-1 JavaServer Pages 中可用的隐式对象（续）
-
-
 
 ### 访问请求行元素
 
@@ -2996,12 +3119,19 @@ Current Date is: Sun Feb 11 21:12:13 EST 2001
 ```
 
 | 方法签名 | 用途 |
+
 | :--- | :--- |
+
 | `String getMethod()` | 返回发起此请求的 HTTP 方法的名称；例如，`GET` 或 `POST` |
+
 | `String getRequestURI()` | 返回 HTTP 请求第一行中，协议名称与查询字符串之间的请求 URI 部分 |
+
 | `String getContextPath()` | 返回请求 URI 中指示请求的应用程序上下文的部分 |
+
 | `String getServletPath()` | 返回请求 URI 中指定 servlet 或 JSP 页面的部分 |
+
 | `String getPathInfo()` | 返回与 URL 相关的所有额外路径信息，这些信息位于 servlet 路径之后、查询字符串之前 |
+
 | `String getQueryString()` | 返回 URI 中路径部分之后的查询字符串 |
 
 **表 4-5** 请求行方法
@@ -3009,10 +3139,15 @@ Current Date is: Sun Feb 11 21:12:13 EST 2001
 当使用 URL `http://localhost:8080/Book/jsp/requestPathRequest.jsp?name=hello` 访问该 JSP 页面时，输出如下：
 
 **Request Method:** GET
+
 **Request URI:** `/Book/jsp/requestPathRequest.jsp`
+
 **Servlet Path:** `/jsp/requestPathRequest.jsp`
+
 **Context Path:** `/Book`
+
 **Path Info:** null
+
 **Query String:** name=hello
 
 这对应于以下请求行：
@@ -3044,41 +3179,61 @@ GET /Book/jsp/requestPathRequest.jsp?name=hello
 包含此片段的 JSP 页面的示例运行产生以下输出：
 
 **Headers in this request:**
+
 **Header 1:** User-Agent Mozilla/4.0 (compatible; MSIE 5.5; Windows NT 5.0)
+
 **Header 2:** Cookie JSESSIONID=xalkx8qnu1
+
 **Header 3:** Accept */*
+
 **Header 4:** Host wsolney.bellatlantic.net:8080
+
 **Header 5:** Accept-Encoding gzip, deflate
+
 **Header 6:** Accept-Language en-us
+
 **Header 7:** Referer http://wsolney.bellatlantic.net:8080/Book/jsp
+
 **Header 8:** Connection Keep-Alive
 
 | 方法签名 | 用途 |
+
 |---|---|
+
 | `java.util.Enumeration getHeaderNames()` | 返回一个包含所有当前请求标头名称的 `String` 对象枚举 |
+
 | `java.util.Enumeration getHeaders(String headerName)` | 返回一个包含指定名称标头所有值的 `String` 对象枚举 |
+
 | `String getHeader(String headerName)` | 以 `String` 形式返回指定标头的值 |
+
 | `int getIntHeader(String headerName)` | 以整数形式返回指定标头的值 |
+
 | `long getDateHeader(String headerName)` | 以 `long` 形式返回指定标头的值，表示一个日期 |
 
 **表 4-4** 访问请求标头的方法
 
 ### 访问安全信息
 
-*request* 变量提供了对安全属性的访问。例如，以下这行使用 *request* 变量来确定当前请求是否使用了安全协议（如安全 HTTP (HTTPS)）：
+*request* 变量提供了对安全属性的访问。例如，以下这行使用 *request* 变量来确定当前请请求是否使用了安全协议（如安全 HTTP (HTTPS)）：
 
 ```
 Uses secure protocol? <%= request.isSecure() %>
 ```
 
 > **注意**
+
 > HTTPS 是一种支持浏览器和支持的 Web 服务器之间传输加密信息的通信协议。HTTPS 协议的基础是用于加密的安全套接字层 (SSL)。如果请求使用了 SSL 证书，servlet 容器必须以 *java.security.cert.X509Certificate* 对象数组的形式提供对此证书的访问。你通过一个名为 *javax.servlet.request.X509Certificate* 的特殊属性从请求中检索此数组。
 
 | 方法签名 | 用途 |
+
 |---|---|
+
 | `boolean isSecure()` | 返回 `true` 或 `false`，指示此请求是否使用了安全协议（如 HTTPS） |
+
 | `boolean isRequestedSessionIdFromCookie()` | 一个 `boolean` 值，指示会话是否使用 cookie 来管理会话 ID |
+
 | `boolean isRequestedSessionIdFromURL()` | 一个 `boolean` 值，指示会话是否使用 URL 重写来管理会话 ID |
+
 | `boolean isRequestedSessionIdValid()` | 检查请求的会话 ID 是否有效 |
 
 **表 4-6** 访问安全信息的方法
@@ -3103,13 +3258,17 @@ Uses secure protocol? <%= request.isSecure() %>
 ```
 
 在我们的计算机上，客户端请求在 HTTP 头中发送 `en-us`（美国英语）作为区域设置，输出为
+
     Hello! How are you?
 
 表 4-7 显示了从请求访问国际化信息的方法。
 
 | 方法签名 | 用途 |
+
 | :--- | :--- |
+
 | `java.util.Locale getLocale()` | 根据 Accept-Language 头，返回客户端愿意接受内容的首选 Locale |
+
 | `java.util.Enumeration getLocales()` | 返回一个 Locale 对象枚举，按首选项递减顺序（从首选区域设置开始）列出根据 Accept-Language 头客户端可接受的所有区域设置 |
 
 **表 4-7** 国际化方法
@@ -3117,9 +3276,13 @@ Uses secure protocol? <%= request.isSecure() %>
 # 1分钟速查
 
 - *request* 隐式对象的来源是什么？
+
 - 如何使用 *request* 变量检索请求参数？
+
 - 如何在请求作用域中存储对象？
+
 - 如何检索请求作用域中的属性？
+
 - 如何判断你的应用程序是否正在使用安全协议？
 
 ## response 变量
@@ -3127,12 +3290,14 @@ Uses secure protocol? <%= request.isSecure() %>
 *response* 变量封装了从 JSP 页面返回给客户端的所有信息。它指向一个隐式对象，该对象是 *javax.servlet.ServletResponse* 的协议相关子类型。在 HTTP 协议中，隐式对象的类型为 *javax.servlet.http.HttpServletResponse*。如模块 1 所述，HTTP 响应由消息头和可选的消息体组成。*HttpServletResponse* 对象提供了一个优雅的 Java 接口来设置 HTTP 响应的组件。
 
 - *request* 对象是生成的 servlet 中 *\_jspService* 方法的参数。
+
 - 你使用 request 变量首先检索参数名称，然后检索每个参数的值。
+
 - 你使用 *request.setAttribute(String name, Object value)*。
+
 - 你使用 *request.getAttribute(String name)*。
+
 - 你调用 *request.isSecure()*。
-
-
 
 *HttpServletResponse* 对象具有 *page* 作用域，这意味着它仅在 JSP 页面内有效。一旦 *_jspService* 方法返回，响应就会超出作用域。与 *request* 变量类似，*response* 变量是生成的 servlet 的 *_jspService* 方法的一个形式参数。以下代码片段取自 Tomcat 容器生成的 servlet，展示了这个参数。
 
@@ -3147,7 +3312,9 @@ public void _jspService(HttpServletRequest request,
 *response* 对象提供以下三种服务：
 
 - 输出缓冲
+
 - 设置响应头
+
 - 重定向资源
 
 让我们详细看看每一个。
@@ -3188,6 +3355,7 @@ out.println("After setBufferSize()<BR>");
 如果你修改了默认缓冲区大小（8K），你应该养成在写入任何输出（无论是静态 HTML 还是动态内容）之前设置缓冲区大小的习惯。
 
 较大的缓冲区允许你在向客户端发送任何内容之前写入更多内容，从而减少网络写入次数。较小的缓冲区减少了服务器内存负载，并允许客户端更快地开始接收数据，但它增加了网络写入次数。
+
 任何写入客户端的内容都称为 *已提交*。这可以通过 *isCommitted* 方法来确定，该方法返回 true 或 false。*flushBuffer* 方法立即刷新缓冲区中的当前内容并将其发送给客户端。*reset* 方法移除当前缓冲区内容。如果响应缓冲区已经提交，你不能调用此方法。以下示例 JSP 片段演示了缓冲：
 
 ```
@@ -3211,14 +3379,21 @@ Is the output committed? true
 ```
 
 如你所见，默认的响应缓冲区大小是 8K。我们的 JSP 页面在刷新之前没有提交响应，因为输出缓冲区中尚未积累 8K 的数据。这意味着当我们第一次调用 isCommitted 方法时，即使我们已经写入了一些输出，也没有任何内容被提交。当我们显式刷新缓冲区时，我们将其内容发送给客户端（即使缓冲区未满）。这立即提交了响应缓冲区，正如我们接下来调用 isCommitted 方法时所看到的那样。
+
 response 变量提供的缓冲区方法列在表 4-8 中。
 
 | 方法签名 | 用途 |
+
 | :--- | :--- |
+
 | `int getBufferSize()` | 返回用于响应的实际缓冲区大小；如果未使用缓冲，此方法返回 0 |
-| `void setBufferSize(int size)` | 设置响应体的首选缓冲区大小 |
+
+| `void setBufferSize(int size)` | 设置响应体的首选缓冲区大色 |
+
 | `boolean isCommitted()` | 返回一个布尔值，指示响应是否已提交；已提交的响应已写入其状态码和头 |
+
 | `void reset()` | 清除缓冲区中存在的所有数据，并清除状态码和头 |
+
 | `void flushBuffer()` | 强制将缓冲区中的任何内容写入客户端 |
 
 **表 4-8** 管理响应缓冲区的方法
@@ -3232,29 +3407,45 @@ JSP 页面可以使用 response 隐式变量为 HTTP 响应设置头。例如，
 ```
 
 > **提示**
+
 你必须在向客户端发送任何内容之前设置头。容器会忽略在响应提交后设置的头。
 
 与 servlet 相比，在 JavaServer Pages 中设置响应内容类型的能力有些受限，因为 JSP 容器会自动使用 pageContext.getOut 方法检索 JspWriter。JSP 规范要求 JSP 容器在生成的 servlet 中为 JSP 页面提供 JspWriter 类作为 out 变量。由于这个 JspWriter 是对从 response 检索到的 PrintWriter 的包装，JSP 容器会自动检索 PrintWriter。PrintWriter 对象只能打印字符编码的输出流，因此只有可以写为字符数据的内容类型才能在响应上设置。
 
 > **专家问答**
+
 >
+
 > **问：** 自动检索 `JspWriter` 对象是否意味着你不能使用 JSP 页面来流式传输二进制数据？
+
 >
+
 > **答：** `HttpServletResponse` 对象提供了两种不同的机制来向客户端发送输出。`getWriter` 方法返回一个 `PrintWriter` 对象，可以将字符文本发送给客户端。`getOutputStream` 方法返回一个 `ServletOutputStream`，可以向客户端写入二进制数据。对于给定的响应，你只能使用一种机制。如果你尝试对同一响应使用两者，你将得到一个 `IllegalStateException`。为了流式传输二进制数据，你必须使用 `ServletOutputStream`。因为 JSP 容器在 `_jspService` 方法中自动检索 `PrintWriter`，如果你尝试在你的 JSP 页面中检索 `ServletOutputStream`，你将收到一个 `IllegalStateException`。结果是你不能从 JSP 页面流式传输二进制数据。
 
 表 4-9 显示了头设置方法。
 
 | 方法签名 | 用途 |
+
 | :--- | :--- |
+
 | `void addHeader(String name, String value)` | 添加一个具有给定名称和值的响应头。 |
+
 | `void setHeader(String name, String value)` | 设置一个具有给定名称和值的响应头。如果该头已被设置，新值会覆盖之前的值。 |
+
 | `void addDateHeader(String name, long date)` | 添加一个具有给定名称和日期值的响应头。日期以自 epoch 以来的毫秒数指定。 |
+
 | `void setDateHeader(String name, long date)` | 设置一个具有给定名称和日期值的响应头。如果该头已被设置，新值会覆盖之前的值。 |
+
 | `void addIntHeader(String name, int value)` | 添加一个具有给定名称和整数值的响应头。 |
+
 | `void setIntHeader(String name, int value)` | 设置一个具有给定名称和整数值的响应头。如果该头已被设置，新值会覆盖之前的值。 |
+
 | `boolean containsHeader(String name)` | 返回一个布尔值，指示命名的响应头是否已被设置。 |
+
 | `void setContentType(String type)` | 用于设置响应的内容类型头。 |
+
 | `void setContentLength(int length)` | 用于设置响应的内容长度头。 |
+
 | `void setLocale(java.util.Locale locale)` | 用于设置响应的区域设置头。 |
 
 **表 4-9** 设置响应头的方法
@@ -3272,6 +3463,7 @@ JSP 页面可以使用 `response` 隐式变量中可用的 `sendRedirect` 方法
 适当的头部和内容正文将客户端重定向到这个新 URL。JSP 容器将相对路径转换为完全限定的 URL。
 
 > **提示**
+
 > 此方法会导致第二次客户端请求，从而清除所有请求参数。这意味着重置向页面必须在 URL 中为新页面重新设置参数。
 
 JSP 页面也可以使用 *response* 隐式变量的 *sendError* 方法来指示错误情况。此方法接受一个错误代码和一个可选的错误消息，这些内容会在内容正文中返回给客户端。例如，查看以下 JSP 脚本：
@@ -3290,9 +3482,13 @@ JSP 页面也可以使用 *response* 隐式变量的 *sendError* 方法来指示
 表 4-10 列出了资源重定向方法。
 
 | 方法签名 | 用途 |
+
 | :--- | :--- |
+
 | void sendError(int sc, String msg) | 使用指定的状态码和描述性消息向客户端发送错误响应 |
+
 | void sendError(int sc) | 使用指定的状态码向客户端发送错误响应 |
+
 | void sendRedirect(String location) | 使用指定的重定向位置 URL 向客户端发送重定向响应。该 URL 可以是相对路径 |
 
 表 4-10 用于重定向请求的方法
@@ -3304,15 +3500,23 @@ JSP 页面也可以使用 *response* 隐式变量的 *sendError* 方法来指示
 #### 逐步说明
 
 1.  从 `http://www.osborne.com` 下载本项目的文件。
+
 2.  将文件 `StreamRequest.html` 放置在 `%TOMCAT_HOME%/webapps/Book` 下。
+
 3.  查看 `StreamRequest.html` 的内容。它包含一个基本的 HTML 表单，其中有两个输入文本元素，分别用于请求要流式传输的文件名和可选的 MIME 类型。仅当客户端浏览器需要特殊处理文件内容时，才需要 MIME 类型。表单末尾有两个标准的操作按钮，用于重置和提交表单。名为 `StreamResponse.jsp` 的 JSP 页面处理表单的提交。这是你应该编写的文件。
+
 4.  启动 Tomcat JSP 容器。
+
 5.  启动客户端浏览器并加载 HTML 文件 `StreamRequest.html`。为此输入 URL `http://localhost:8080/Book/StreamRequest.html`。你应该会看到如图 4-3 所示的页面。
 
 - `response` 对象是生成的 servlet 的 `_jspService` 方法的一个参数。
+
 - 不是，因为 JSP 容器会自动为 `out` 变量分配一个 `JspWriter`，它只能写入字符数据。
+
 - 输出缓冲可以减少网络写入次数，从而提高整体性能。
+
 - 你使用 `response.setBufferSize(int sizeInbytes)`。
+
 - 你在异常情况下使用 `sendRedirect`；例如，当页面位置发生变化时。
 
 ![](img/7a40f8957e7c3eb68dbb9f8ab3cef54d_150_0.png)
@@ -3406,8 +3610,11 @@ out = pageContext.getOut();
 当 JSP 容器启动时，在初始化阶段，它通常会注册自己的 *JspFactory* 对象实现。在翻译阶段，JSP 容器遵循以下步骤：
 
 -   在生成的 servlet 的 `_jspService` 方法开始处，使用静态方法 *JspFactory.getDefaultFactory* 检索 *JspFactory* 的供应商相关实现。
+
 -   工厂对象的 *getPageContext* 方法初始化并返回一个供应商相关的 *PageContext* 对象。
+
 -   servlet 使用该对象检索其他多个具有混合作用域的隐式对象，包括 *ServletContext* 对象、*ServletConfig* 对象、*HttpSession* 对象和 *JspWriter* 对象。
+
 -   servlet 将这些对象中的每一个分配给一个局部变量，JSP 作者可以在表达式、脚本小程序和 JSP 动作中使用这些变量（我们将在模块 5 和 6 中描述动作）。
 
 使用 *pageContext* 检索的大多数隐式对象都是自定义实现，提供供应商特定的优化或功能。JSP 1.1 规范特别提到了 *JspWriter* 对象 *out* 作为优化的候选对象。
@@ -3417,8 +3624,11 @@ out = pageContext.getOut();
 *PageContext* 对象提供四种服务：
 
 -   访问多个作用域
+
 -   访问隐式对象
+
 -   管理嵌套作用域
+
 -   转发和包含服务
 
 ### 访问多个作用域
@@ -3447,15 +3657,25 @@ CustomContext myContext = (CustomContext)
 表 4-11 列出了用于访问不同作用域的各种 PageContext 方法。
 
 | 方法签名 | 用途 |
+
 |---|---|
+
 | Object getAttribute(String name) | 从页面作用域返回指定名称的对象 |
+
 | Object getAttribute(String name, int scope) | 从指定作用域返回指定名称的对象 |
+
 | Object findAttribute(String name) | 返回指定名称的对象，按照以下顺序搜索不同作用域：页面、请求、会话和应用 |
+
 | java.util.Enumeration getAttributeNamesInScope(int scope) | 返回给定作用域中所有命名对象 |
+
 | int getAttributesScope(String name) | 返回表示指定名称对象作用域的常量 |
+
 | void removeAttribute(String name) | 从页面作用域中移除指定名称的对象 |
+
 | void removeAttribute(String name, int scope) | 从给定作用域中移除指定名称的对象 |
+
 | void setAttribute(String name, Object object) | 在页面作用域中注册指定名称的对象 |
+
 | void setAttribute(String name, Object object, int scope) | 在给定作用域中注册指定名称的对象 |
 
 表 4-11 访问多个作用域
@@ -3465,14 +3685,23 @@ CustomContext myContext = (CustomContext)
 如前所述，*PageContext* 对象提供了对其他隐式对象的访问。表 4-12 列出了返回其他隐式对象的 *PageContext* 方法。
 
 | 方法签名 | 用途 |
+
 | :--- | :--- |
+
 | javax.servlet.jsp.JspWriter getOut() | 返回 *out* 变量的当前值 |
+
 | Exception getException() | 返回 *exception* 变量的当前值 |
+
 | Object getPage() | 返回 *page* 变量（*this*）的当前值 |
+
 | javax.servlet.ServletRequest getRequest() | 返回 *request* 变量的当前值 |
+
 | javax.servlet.ServletResponse getResponse() | 返回 *response* 变量的当前值 |
+
 | javax.servlet.http.HttpSession getSession() | 返回 *session* 变量的当前值 |
+
 | javax.servlet.ServletConfig getServletConfig() | 返回当前的 *config* 变量 |
+
 | javax.servlet.ServletContext getServletContext() | 返回当前的 *application* 变量 |
 
 表 4-12 检索其他隐式对象的方法
@@ -3484,8 +3713,11 @@ CustomContext myContext = (CustomContext)
 由于 JSP 容器会生成处理不同作用域缓冲区的代码，因此作为 JSP 开发者，你通常不需要使用支持此功能的 *PageContext* 方法。表 4-13 列出了这些方法签名。
 
 | 方法签名 | 用途 |
+
 | :--- | :--- |
+
 | javax.servlet.jsp.JspWriter popBody() | 返回由匹配的 *pushBody* 保存的先前 *JspWriter*，并更新页面作用域属性命名空间中 *out* 变量的值 |
+
 | javax.servlet.jsp.tagext.BodyContent pushBody() | 返回一个新的 *BodyContent* 对象，保存当前的 *JspWriter*，并更新页面作用域属性命名空间中 *out* 变量的值 |
 
 表 4-13 管理嵌套作用域的方法
@@ -3511,9 +3743,13 @@ CustomContext myContext = (CustomContext)
 最后，*PageContext* 对象支持将异常重定向到错误页面。通常，JSP 容器会自动处理此操作，因为生成的 servlet 中的 `_jspService` 方法会捕获所有异常，并将异常处理重定向到 `pageContext.handlePageException`。表 4-14 列出了相关的方法签名。
 
 | 方法签名 | 用途 |
+
 | :--- | :--- |
+
 | `void forward(String relativeUrlPath)` | 将控制权转发到另一个页面 |
+
 | `void include(String relativeUrlPath)` | 在当前页面中包含另一个 JSP 页面 |
+
 | `void handlePageException(java.lang.Exception e)` | 将异常定向到由页面指令的 errorPage 属性指定的错误页面 |
 
 表 4-14 转发和包含方法
@@ -3521,13 +3757,19 @@ CustomContext myContext = (CustomContext)
 ### 一分钟快速复习
 
 - *pageContext* 隐式对象的来源是什么？
+
 - *pageContext* 可以检索哪些隐式对象？
+
 - *pageContext* 对象可以管理哪些属性作用域？
+
 - *pageContext* 变量提供了哪些方法来将控制权传递给另一个 JSP 页面？
 
 - *pageContext* 变量是通过在生成的 servlet 的 `_jspService` 方法中调用一个工厂方法设置的。
+
 - *pageContext* 对象可以检索所有其他隐式对象，包括 *request*、*response*、*session*、*application*、*out*、*config*、*page* 和 *exception* 变量。
-- *pageContext* 可以管理 *page*、*request*、*session* 和 *application* 作用域中的属性。
+
+- *pageContext* 可以管理 *page*、*request*、*session* 和 *application* 作用域中的属属性。
+
 - *pageContext* 变量同时支持 *forward* 和 *include* 方法。
 
 ## *session* 变量
@@ -3535,6 +3777,8 @@ CustomContext myContext = (CustomContext)
 *session* 变量指的是 `javax.servlet.http.HttpSession` 对象，它封装了与客户端会话相关的所有信息。正如我们在模块 1 中解释的，HTTP 在设计上是无状态的。Servlet 和 JavaServer Pages 通过提供多种支持会话跟踪的机制来增强这种无状态架构。这些机制（在后续章节中简要解释）允许多个客户端请求共享相同的服务器状态信息。
 
 ### URL 重写
+
+
 
 URL 重写会将会话数据添加到参与给定会话的每个请求的每个 URL 路径末尾。然后，Servlet 容器从 URL 中提取此会话数据，并将请求与正确的会话关联起来。
 
@@ -3544,18 +3788,20 @@ URL 重写会将会话数据添加到参与给定会话的每个请求的每个 
 
 ### SSL 会话
 
-安全套接字层技术（用于 HTTPS 协议）基于数字证书握手提供一次性的*主密钥*。Servlet 和 JavaServer Pages 使用此密钥来维护会话身份，并对消息进行加密和解密。
+安全套接字层技术（用于 HTTPS 协议）基于数字证书握手提供一次性的`主密钥`。Servlet 和 JavaServer Pages 使用此密钥来维护会话身份，并对消息进行加密和解密。
 
 *注意*
+
 我们将在模块 8 中介绍 JSP 安全编程。
 
 ### session 服务
 
-当 JSP 页面参与会话时，*session* 变量提供了对 `javax.servlet.http.HttpSession` 对象的访问。客户端必须明确地*加入*会话才能参与会话跟踪。JSP 页面默认会这样做。然而，正如我们在模块 2 中提到的，你可以使用页面指令中的 session 属性来禁用对客户端会话的参与。如果你的 JSP 页面不需要会话信息，通常应该这样做。*session* 隐式变量具有会话作用域。这意味着参与同一会话的任何 JSP 页面都可以访问相同的 *session* 隐式变量。当 Servlet 容器终止客户端会话时，它将超出作用域。你应该同步对 *session* 对象的访问。
+当 JSP 页面参与会话时，`session` 变量提供了对 `javax.servlet.http.HttpSession` 对象的访问。客户端必须明确地*加入*会话才能参与会话跟踪。JSP 页面默认会这样做。然而，正如我们在模块 2 中提到的，你可以使用页面指令中的 session 属性来禁用对客户端会话的参与。如果你的 JSP 页面不需要会话信息，通常应该这样做。*session* 隐式变量具有会话作用域。这意味着参与同一会话的任何 JSP 页面都可以访问相同的 *session* 隐式变量。当 Servlet 容器终止客户端会话时，它将超出作用域。你应该同步对 *session* 对象的访问。
 
 在多线程环境中，因为多个请求线程可能同时修改它。*HttpSession* 对象提供以下服务：
 
 - 属性绑定
+
 - 会话超时管理
 
 ### 属性绑定
@@ -3577,9 +3823,11 @@ JSP 页面可以将任何对象绑定为会话属性。*HttpSession* 对象使�
 在 Servlet 和 JSP 架构中，确保客户端会话终止的唯一方法是使用超时。这是因为 Web 客户端在不活跃时不会明确通知服务器。为了清理存储在 *HttpSession* 对象中的客户端资源，Servlet 容器会设置一个超时窗口。当不活跃期超过该窗口时，容器会使 *HttpSession* 对象无效并解除其所有属性的绑定。
 
 > **提示**
+
 > 默认超时时间因供应商而异。Tomcat 的默认超时时间为 30 分钟。要确定 JSP 容器的默认超时时间，可以创建并加载一个包含以下表达式的 JSP 页面：`<%=session.getMaxInactiveInterval()%>`。
 
 *getMaxInactiveInterval* 方法返回会话当前的不活跃间隔。你可以使用 *setMaxInactiveInterval* 方法修改当前的不活跃间隔。便捷方法 *getLastAccessedTime* 返回在当前请求之前会话最后一次被访问的时间。
+
 表 4-16 列出了可通过 *session* 隐式变量调用的所有有用方法。
 
 | 方法签名 | 用途 |
@@ -3603,11 +3851,15 @@ JSP 页面可以将任何对象绑定为会话属性。*HttpSession* 对象使�
 # 一分钟速查
 
 - 管理会话身份的三种不同方式是什么？
+
 - 会话属性与请求属性有何不同？
+
 - Servlet 容器如何移除会话对象？
 
 - 会话跟踪的三种机制是 URL 重写、Cookie 和使用安全套接字的安全 HTTP。
+
 - 会话属性在同一客户端的多个请求之间维护状态，而请求属性仅对特定请求可用。
+
 - Servlet 容器设置一个超时时间。当时间到期时，它会使会话对象无效并解除 *session* 对象所有属性的绑定。
 
 ### 项目 4-2：URL 重定向和 URL 包含
@@ -3617,9 +3869,13 @@ JSP 页面可以将任何对象绑定为会话属性。*HttpSession* 对象使�
 ### 分步指南
 
 1.  从 `http://www.osborne.com` 下载此项目的文件。
+
 2.  将文件 `startPage.html`、`HN.html`、`SP.html`、`PT.html`、`errorName.html` 和 `errorChoice.html` 放入目录 `%TOMCAT_HOME%/webapps/Book`。
+
 3.  查看 `startPage.html`。该页面展示了一个新闻服务，其中包含一个有两个输入元素的 HTML 表单。第一个请求用户名。第二个是一个选择元素，请求新闻主题。`startPage.html` 中选择元素的每个选项都包含编码值 `HN`、`PT` 或 `SP` 之一，这些值指定要包含在响应中的 HTML 文件（`HN.html`、`PT.html` 或 `SP.html`）。在页面末尾，有两个操作按钮用于重置和提交表单。表单的提交由 JSP 页面 `redirect.jsp` 处理，这正是你将编写的页面。
+
 4.  启动 Tomcat JSP 容器（如果尚未运行）。
+
 5.  加载 URL：`http://localhost:8080/Book/startPage.html`。你应该会看到一个如图 4-4 所示的页面。
 
 ![](img/7a40f8957e7c3eb68dbb9f8ab3cef54d_162_0.png)
@@ -3628,7 +3884,7 @@ JSP 页面可以将任何对象绑定为会话属性。*HttpSession* 对象使�
 
 6.  在 `%TOMCAT_HOME%/webapps/Book` 下创建一个空文件 `redirect.jsp`。
 
-7.  首先要做的检索用户输入。输入以下使用 request 隐式对象检索提交表单参数（用户名和主题选择）的 JSP 脚本段。
+7.  首要任务是检索用户输入。输入以下使用 request 隐式对象检索提交表单参数（用户名和主题选择）的 JSP 脚本段。
 
 ```
 <%
@@ -3674,13 +3930,12 @@ pageContext.include(choice + ".html");
 
 JSP 页面中的所有数据都使用由隐式变量 out 引用的 javax.servlet.jsp.JspWriter 对象写入。JspWriter 模拟 java.io.PrintWriter 的行为，不同之处在于它在发生 I/O 错误时，其所有打印方法都会抛出 java.io.IOException。如果 JSP 页面是缓冲的（默认行为），JspWriter 对象还模拟 java.io.BufferedWriter。你可以启用或禁用
 
-
-
 ### 外部服务
 
 *JspWriter* 对象提供的两个服务是
 
 - 管理响应缓冲
+
 - 写入内容
 
 让我们详细看看每一项。
@@ -3795,6 +4050,7 @@ The exception stack trace is: <BR>
 ### 一分钟速记
 
 - `out.clear` 和 `out.flush` 有什么区别？
+
 - 什么时候应该使用 `out` 变量？
 
 ## *application* 变量
@@ -3807,15 +4063,15 @@ The exception stack trace is: <BR>
 </Context>
 ```
 
-这些行告诉 Tomcat 将所有以 /Book 开头的请求（*上下文路径*）映射到以 `http://<server-host>/webapps/Book` 开头的绝对路径。此外，Tomcat（以及所有其他 servlet 容器）会将映射到此路径的每个 servlet 请求路由到单个 *ServletContext* 实例。
+这些行告诉 Tomcat 将所有以 /Book 开头的请求（*上下文路径*）映射到以 `http://<server-host>/webapps/Book` 开头的绝对路径。此外，Tomcat（以及所有其他 servlet 容器）会将映射到此路径的每个 servlet 请路由到单个 *ServletContext* 实例。
 
 > **注意**
+
 > Servlet 规范 v.2.2 断言，在单个 Java 虚拟机（JVM）内，每个应用程序只能有一个 *ServletContext* 实例。Web 应用程序可以是可分布的（即，托管在多台物理机器、Web 服务器或 JVM 上），在这种情况下，将会有多个 *ServletContext* 来处理相同的应用程序上下文。
 
 - *clear* 方法清除写入输出缓冲区的所有内容，而 *flush* 方法将其写入客户端。
+
 - *out* 变量在脚本中很有用，也有助于调试。
-
-
 
 ### *out* 变量提供的打印方法
 
@@ -3837,17 +4093,21 @@ The exception stack trace is: <BR>
 | `void println(float x)` | 将相关类型打印到输出流，然后插入一个行分隔符字符串。行分隔符字符串由系统属性 `line.separator` 定义，不一定是一个换行符 (`'\n'`) |
 | `void println(double x)` | 将相关类型打印到输出流，然后插入一个行分隔符字符串。行分隔符字符串由系统属性 `line.separator` 定义，不一定是一个换行符 (`'\n'`) |
 | `void println(char[] x)` | 将相关类型打印到输出流，然后插入一个行分隔符字符串。行分隔符字符串由系统属性 `line.separator` 定义，不一定是一个换行符 (`'\n'`) |
-| `void println(String x)` | 将相关类型打印到输出流，然后插入一个行分隔符字符串。行分隔符字符串由系统属性 `line.separator` 定义，不一定是一个换行符 (`'\n'`) |
+| `void println(String x)` | 将相关类型打印到输出流，然后插入一个行分隔符字符串。行分隔符字符串由系统属性 `line.separator` 定义，不一定是一个换行符 (`'\n'') |
 | `void println(Object x)` | 打印一个对象，然后插入一个新行 |
 
 # 应用服务
 
 `ServletContext` 对象提供五项服务：
 
-- 访问应用程序初始化参数
+- 访问应用程初始化参数
+
 - 管理应用程序上下文属性
+
 - 支持资源抽象
+
 - *RequestDispatcher* 方法
+
 - 实用工具方法
 
 # 访问初始化参数
@@ -3919,7 +4179,7 @@ ServletContext 对象还提供了删除属性和列出所有属性名称的方�
 
 # 支持资源抽象
 
-*ServletContext* 对象支持基于相对 URL 直接访问静态文档层次结构中的 Web 资源。您可以通过使用 *getResource* 或 *getResourceAsStream* 方法来实现。当您想要读取一个资源并需要知道其完整路径时，这可能很有用。其思想似乎是为资源定义一个抽象接口。这允许 servlet 和 JSP 容器供应商实现类似于 Java 类加载器的高级搜索机制。根据他们的目标，servlet 和 JSP 容器供应商可以支持从 JAR 文件中读取 URL，或者他们可以将您提供的相对 URL 映射到另一个 Web 服务器、数据库服务器或 Enterprise JavaBeans 服务。然而，Tomcat 只是将相对路径附加到应用程序的上下文根，这与 *getRealPath* 方法类似。以下代码使用 *getResource* 和 *getRealPath* 打印相同的路径：
+*ServletContext* 对象支持基于相对 URL 直接访问静态文档层次结构中的 Web 资源。您可以通过使用 *getResource* 或 *getResourceAsStream* 方法来实现。当您想要读取一个资源并需要知道其完整路径时，这可能很有用。其思想似乎是为资源定一个抽象接口。这允许 servlet 和 JSP 容器供应商实现类似于 Java 类加载器的高级搜索机制。根据他们的目标，servlet 和 JSP 容器供应商可以支持从 JAR 文件中读取 URL，或者他们可以将您提供的相对 URL 映射到另一个 Web 服务器、数据库服务器或 Enterprise JavaBeans 服务。然而，Tomcat 只是将相对路径附加到应用程序的上下文根，这与 *getRealPath* 方法类似。以下代码使用 *getResource* 和 *getRealPath* 打印相同的路径：
 
 ```
 <% URL url =
@@ -3944,8 +4204,6 @@ InputStream in = application.getResourceAsStream("/");
 ```
 
 表 4-21 列出了管理资源的方法签名。
-
-
 
 ## 表 4-21 管理资源
 
@@ -4076,7 +4334,7 @@ rd.include(request, response);
 | `void log(String message)` | 将消息记录到 servlet 日志文件 |
 | `void log(String message, Throwable throwable)` | 将消息和堆栈跟踪记录到 servlet 日志文件 |
 | `String getMimeType(String file)` | 返回指定文件的 MIME 类型。例如，文本文件将返回 `text/plain`。MIME 类型由 servlet 容器的配置决定，并可能在 Web 应用程序部署描述符（`web.xml` 文件）中指定 |
-| `String getRealPath(String virtualPath)` | 返回一个包含给定虚拟路径对应的真实文件系统路径的 `String` |
+| `String getRealPath(String virtualPath)` | 返回一个包含给定虚括路径对应的真实文件系统路径的 `String` |
 | `String getServerInfo()` | 返回一个包含 servlet 运行所在的 servlet 容器信息的字符串。这至少包括容器名称和版本号 |
 | `int getMajorVersion()` | 返回 Java servlet 容器的主版本号。对于支持 2.2 版本的容器，此方法返回 2 |
 | `int getMinorVersion()` | 返回 Java servlet 容器的次版本号。对于支持 2.2 版本的容器，此方法返回 2 |
@@ -4086,16 +4344,20 @@ rd.include(request, response);
 ## 1 分钟速查
 
 - JSP 页面如何检索应用程序初始化值？
+
 - 如何在应用程序作用域中缓存对象？
+
 - *application* 对象提供了哪些方法来获取调度器？
+
 - 如何将消息记录到 servlet 日志文件？
 
 - 首先，JSP 页面调用 `application.getInitParameterNames`。然后，为每个参数名称调用 `application.getInitParameter`。
+
 - 通过调用 `application.setAttribute` 在应用程序作用域中缓存对象。
+
 - application 隐式对象提供了 `getNamedDispatcher` 和 `getRequestDispatcher`。
+
 - 通过调用 `application.log(String message)` 或 `application.log(String message, Throwable ex)` 将消息记录到 servlet 日志文件。
-
-
 
 # *config* 变量
 
@@ -4116,7 +4378,7 @@ while (e.hasMoreElements()) {
 <% } %><BR>
 ```
 
-你可以在应用程序的 `web.xml` 文件中为此 JSP 页面分配一个逻辑名称。分配可能如下所示：
+你可以在应用程的 `web.xml` 文件中为此 JSP 页面分配一个逻辑名称。分配可能如下所示：
 
 ```
 <servlet>
@@ -4139,23 +4401,27 @@ while (e.hasMoreElements()) {
 ```
 
 在此 `web.xml` 片段中，我们指定将使用 URL `/config` 来访问 `config` JSP 页面。现在，当我们访问 JSP 页面时，得到以下结果：
+
 Parameter: host Value: madeline
+
 表 4-24 列出了 `ServletConfig` 对象的方法签名。
 
 ## 1 分钟速查
 
 - `config` 变量的主要用途是什么？
+
 - 如何命名 JSP 页面？
 
 # `page` 变量
 
-`page` 变量是一个隐式变量，可在 JSP 脚本片段和表达式中使用，它对应于处理当前请求的 JSP 页面实现类的实例。正如我们在模块 2 中看到的，JSP 页面实现类在 JSP 页面首次执行时会自动生成。当脚本语言为 Java 时，`page` 变量仅仅是 `this` 引用的同义词。
+`page` 变量是一个隐式变量，可在 JSP 脚本片段和表达式中使用，它对应于处理当前请请求的 JSP 页面实现类的实例。正如我们在模块 2 中看到的，JSP 页面实现类在 JSP 页面首次执行时会自动生成。当脚本语言为 Java 时，`page` 变量仅仅是 `this` 引用的同义词。
 
 ## page 服务
 
 `page` 隐式变量提供两类服务：
 
 - 契约服务
+
 - 访问 servlet 信息
 
 ## 契约服务
@@ -4163,6 +4429,7 @@ Parameter: host Value: madeline
 正如我们在模块 2 中所解释的，页面实现类必须实现 `javax.servlet.jsp.HttpJspPage` 接口，以满足 JSP 容器和 JSP 页面作者之间的契约。该接口主要定义了 JSP 容器会调用的契约方法 `jspInit`、`_jspService` 和 `jspDestroy`。这些方法对 JSP 页面作者是不可用的。
 
 `config` 变量的主要用途是检索命名的 JavaServer Pages 的初始化值。
+
 你命名 JSP 页面的方式与命名 Servlet 相同。你在应用程序的 `web.xml` 文件中使用 `<servlet>` 元素来命名 JSP 页面。
 
 ## 表 4-24 config 变量提供的方法
@@ -4177,7 +4444,9 @@ Parameter: host Value: madeline
 ## 访问 Servlet 信息
 
 `HttpJspPage` 接口扩展了 `JspPage`，而 `JspPage` 又扩展了 `javax.servlet.Servlet` 接口。这提供了一些有用的功能，如 `getServletConfig` 和 `getServletInfo`，JSP 页面作者可以通过 `page` 隐式变量调用这些方法。
+
 表 4-25 显示了这些方法签名。
+
 `page` 隐式变量通常不被 JSP 页面作者使用。
 
 ## 表 4-25 page 中的有用方法
@@ -4232,10 +4501,12 @@ Parameter: host Value: madeline
 ## 本模块目标
 
 - 理解 JSP 动作
+
 - 学习标准动作
+
 - 有效使用标准动作
 
-在模块 2 和 3 中，我们描述了如何使用 JSP 指令、声明、表达式和脚本片段在 JavaServer Pages 中嵌入 Java 代码。在模块 4 中，我们描述了隐式对象，它们使你能够直接访问 Java servlet 和 JSP 类，你可以在声明、表达式和脚本片段中使用它们。有人将这种在 JavaServer Pages 中嵌入 Java 代码的能力描绘为与纯 servlet 编程相比在生成动态网页方面的根本优势。然而，我们已经提出，将大量 Java 代码段嵌入 JavaServer Pages 的复杂应用程序所产生的代码，与打印大量静态 HTML 的 servlet 一样令人困惑。JSP 页面中静态 HTML 和 Java 的整体混合，并不比 servlet 中 Java 和 Java 打印语句的整体混合更好。需要将 Web 功能更清晰地封装在 Web 组件中。JSP 动作通过将静态 HTML 和 Java 代码移出 JSP 页面，并用声明性标签替换它们来鼓励这种封装。
+在模块 2 和 3 中，我们描述了如何使用 JSP 指令、声明、表达式和脚本片段在 JavaServer Pages 中嵌入 Java 代码。在模块 4 中，我们描述了隐式对象，它们使你能够直接访问 Java servlet 和 JSP 类，你可以在声明、表达式和脚本片段中使用它们。有人将这种在 JavaServer Pages 中嵌入 Java 代码的能力描绘为与纯 servlet 编程相比在生成动态网页方面的根本优势。然而，我们已经提出，将大量 Java 代码段嵌入 JavaServer Pages 的复杂应用程序所产生的代码，与打印大量静态 HTML 的 servlet 一样令人困惑。JSP 页面中静态 HTML 和 Java 的整体混合，并不比 servlet 中 Java 和 Java 打印语句的整体混合更好。需要将 Web 功能更清晰地封装在 Web 组件中。JSP 动作通过将静态 HTML和 Java 代码移出 JSP 页面，并用声明性标签替换它们来鼓励这种封装。
 
 ## JSP 动作
 
@@ -4250,7 +4521,7 @@ JSP 动作将代码处理器与特殊的 JSP 标签关联起来。这些标签�
 
 ### 标准动作与自定义动作
 
-JSP 规范要求所有符合规范的 JSP 容器支持一套标准的 JSP 动作，以及开发自定义动作（标签库）的机制。我们在本模块中描述标准动作，在模块 6 中描述自定义动作。所有标准动作都使用保留的前缀 "jsp."。表 5-1 列出了 JSP 1.1 规范要求的全套标准动作。
+JSP 规范要求所有符合规范的 JSP 容器支持一套标准的 JSP 动作，以及开发自定义动作（标签库）的机制。我们在本模块中描述标准动作，在模坖 6 中描述自定义动作。所有标准动作都使用保留的前缀 "jsp."。表 5-1 列出了 JSP 1.1 规范要求的全套标准动作。
 
 ## 标准动作
 
@@ -4263,7 +4534,7 @@ JSP 规范要求所有符合规范的 JSP 容器支持一套标准的 JSP 动作
 | `<jsp:forward>` | 将客户端请求转发到HTML文件、JSP文件或servlet进行处理 |
 | `<jsp:param>` | 为其他JSP动作提供名称/值信息 |
 | `<jsp:plugin>` | 向浏览器下载插件软件，并生成特定于浏览器的标签以执行applet或bean |
-| `<jsp:params>` | 由`<jsp:plugin>`使用，用于封装一组`<jsp:param>`标签 |
+| `<jsp:params>` | 由`<jsp:plugin>`使用，用于封装一组`<jsp:param>`标筙 |
 | `<jsp:fallback>` | 由`<jsp:plugin>`使用，在插件加载失败时提供备用HTML响应 |
 
 表5-1 JSP 1.1中的标准动作
@@ -4335,6 +4606,7 @@ attribute-name='<%= scriptlet-expr %>'
 表5-2 接受JSP表达式的标准动作的属性
 
 - 在同一翻译单元（即JSP页面）中，您不能对两个不同的id使用相同的名称。
+
 - 该名称通常用于存储一个Java对象，该对象可以通过`pageContext`变量使用该名称访问，并在声明作用域中暴露一个同名的变量。
 
 例如，考虑`<jsp:useBean>`动作。一个典型的用法可能如下所示：
@@ -4363,8 +4635,11 @@ attribute-name='<%= scriptlet-expr %>'
 `scope`属性对符合标准的JSP容器也具有特殊含义。回顾一下，JavaServer Pages可以参与四种不同的作用域和生命周期：
 
 - **页面**：可从`PageContext`对象访问并共享其生命周期
+
 - **请求**：可从`HttpServletRequest`对象访问并共享其生命周期
+
 - **会话**：可从`HttpSession`对象访问并共享其生命周期
+
 - **应用**：可从*ServletContext*对象访问并共享其生命周期
 
 当您将`scope="page|request|session|application"`属性/值对与id属性结合使用时，您将一个命名空间和生命周期与具有指定id的对象关联起来。
@@ -4374,8 +4649,11 @@ attribute-name='<%= scriptlet-expr %>'
 ### 一分钟练习
 
 - 什么是JSP动作？
+
 - JSP 1.1规范支持哪些类型的动作？
+
 - 标签属性的目的是什么？
+
 - 哪些标签属性对JSP容器具有特殊含义？
 
 ## `<jsp:useBean>`动作
@@ -4393,8 +4671,11 @@ typeSpec />
 ```
 
 typeSpec ::= class="className" |
+
 class="className" type="typeName" |
+
 beanName="beanName" type="typeName" |
+
 type="typeName"
 
 `<jsp:useBean>`动作也可以包含*标签主体*。例如，您可能希望插入`<jsp:setProperty>`动作来初始化JavaBean。如果标签有主体，其语法为：
@@ -4408,8 +4689,11 @@ type="typeName"
 ```
 
 - JSP动作将Java处理程序与XML标签关联。JSP容器在处理标签时调用该处理程序。
-- JSP 1.1规范支持标准和自定义标签。标准标签都使用“jsp”前缀。
+
+- JSP 1.1规范支持标准和自定�标签。标准标签都使用“jsp”前缀。
+
 - 标签属性初始化并向标签处理程序提供参数。
+
 - id和scope属性对JSP容器具有特殊含义。
 
 ### 属性和使用规则
@@ -4426,11 +4710,9 @@ type="typeName"
 | scope | 对象的作用域。默认是页面作用域 |
 | class | 定义JavaBean实现的（Java）类的全限定名。如果未指定type属性，则必须指定class属性。如果指定了beanName属性，则不能指定class属性 |
 | beanName | java.beans.Beans.instantiate()所需的JavaBean名称。也就是说，它必须是"a.b.c"形式或"a/b/c.ser."形式。如果指定了class属性，则不能指定beanName属性 |
-| type | 脚本变量的类型。这可以与对象相同，是对象的超类，或对象实现的Java接口。如果未指定class属性，则必须指定type属性 |
+| type | 脚本变量的类型。这可以与对象相同，是对象的超类，或对象实现的Java接口。如果未指班class属性，则必须指定type属性 |
 
 表5-3 `<jsp:useBean>`动作的属性
-
-
 
 ### 使用 `<jsp:useBean>`
 
@@ -4537,13 +4819,17 @@ public interface StringProperty {
 但是，如果你这样做，你就只能使用 `getStringProperty` 方法，因为 `getIntProperty` 方法未在 `StringProperty` 接口中声明。
 
 > **专家问答**
+
 > **问：** 为什么你会想要为 `<jsp:useBean>` 声明一个与 JavaBean 不同类的 `type` 属性？
-> **答：** 一个公认的良好软件设计原则是尽可能将实现细节保持为私有。这是所谓的 *信息隐藏* 的一个方面。当你为辅助 JavaBean 定义一个接口并要求 Bean 的客户端与该接口进行交互时，你就将客户端与接口的任何特定实现隔离开来——你隐藏了实现的细节。通过在接口定义中强制执行这样的软件契约，你的实现可以更改，或者你的 JSP 页面可以根据请求时的条件使用多个不同的实现，而无需更改 JSP 页面或进行自定义编码。
+
+> **答：** 一个公认的良好软件设计原则是尽可能将实现细节保持为私有。这是所谓的 *信息隐藏* 的一个方面。当你为辅助 JavaBean 定一个接口并要求 Bean 的客户端与该接口进行交互时，你就将客户端与接口的任何特定实现隔离开来——你隐藏了实现的细节。通过在接口定义中强制执行这样的软件契约，你的实现可以更改，或者你的 JSP 页面可以根据请求时的条件使用多个不同的实现，而无需更改 JSP 页面或进行自定义编码。
 
 #### 1 分钟演练
 
 - `<jsp:useBean>` 操作的目的是什么？
+
 - `<jsp:useBean>` 标签的形式有哪些？
+
 - `<jsp:useBean>` 操作是否总是创建所需 Bean 的实例？
 
 ## `<jsp:setProperty>` 操作
@@ -4573,7 +4859,9 @@ public interface StringProperty {
 JSP 容器使用标准的 Java 内省机制来发现属性、属性名称、属性类型以及 getter 和 setter 方法。使用 Java 内省意味着命名约定至关重要。如果你将属性名称指定为 "intProperty"，那么 JavaBean 必须支持名为 "setIntProperty" 的属性设置方法。
 
 - `<jsp:useBean>` 操作将 JavaBean 与脚本变量、一个 id 和一个 JSP 作用域关联起来。
+
 - `<jsp:useBean>` 标签可以在有标签体或无标签体的情况下使用。
+
 - 不。`<jsp:useBean>` 操作可用于为之前（可能在另一个 JSP 页面中）创建的 Bean 实例提供一个本地名称和脚本变量。
 
 `<jsp:setProperty>` 标签的语法是：
@@ -4594,7 +4882,9 @@ propertyValue::= string|JSP expression
 表 5-4 列出了你可以提供给 `<jsp:setProperty>` 标签的属性集。
 
 > **问：** 是否必须使用 `<jsp:useBean>` 操作来定义 `<jsp:setProperty>` 标签所指的 JavaBean？
+
 >
+
 > **答：** JSP 1.1 规范建议这样做，但 Tomcat JSP 容器实现并未强制执行。Tomcat 仅要求命名的 Bean 实例作为 *PageContext* 对象的属性存在。换句话说，使用 Tomcat 时，你可以使用 `<jsp:setProperty>` 标签来设置存储在当前 *PageContext* 对象中的任何 JavaBean 的属性。例如，以下代码与使用 `<jsp:useBean>` 操作具有相同的效果：
 
 ```jsp
@@ -4612,8 +4902,6 @@ propertyValue::= string|JSP expression
                  value="42"
 />
 ```
-
-
 
 **属性**
 
@@ -4634,7 +4922,7 @@ propertyValue::= string|JSP expression
 
 ### 使用 HTTP 请求参数分配属性值
 
-通常，请求参数来自 Web 表单。考虑以下简单的 HTML 表单，它设置了两个名为 "intProperty" 和 "stringProperty" 的参数：
+通常，请请求参数来自 Web 表单。考虑以下简单的 HTML 表单，它设置了两个名为 "intProperty" 和 "stringProperty" 的参数：
 
 ```
 <FORM METHOD=GET ACTION="/Book/jsp/setProperty.jsp">
@@ -4718,6 +5006,7 @@ propertyValue::= string|JSP expression
 能够将 JSP 表达式的结果赋给属性，为 `<jsp:setProperty>` 动作增加了两个强大的功能：
 
 - 在请求时计算值的能力。
+
 - 将任何 Java 类型赋给属性的能力。
 
 例如，假设我们想要将当前日期和时间赋给一个属性。如果你为 *HelperBean* 添加一个新的字符串属性，那么你可以像这样计算并将当前日期和时间存储为 *String*：
@@ -4740,7 +5029,9 @@ propertyValue::= string|JSP expression
 
 ## `<jsp:getProperty>` 动作
 
-与设置 JavaBean 属性的 `<jsp:setProperty>` 动作相对应，`<jsp:getProperty>` 动作从 JavaBean 获取属性，将其转换为 *String*，并放入输出缓冲区。转换为 *String* 的方式与 JSP 表达式中的方式相同。这意味着该标签对对象类型调用 `toString` 方法，并直接转换基本类型。`<jsp:getProperty>` 动作的语法是：
+
+
+与设置 JavaBean 属性的 `<jsp:setProperty>` 动作相对应，`<jsp:getProperty>` 动作从 JavaBean 获取属性，将其转换为 `String`，并放入输出缓冲区。转换为 `String` 的方式与 JSP 表达式中的方式相同。这意味着该标签对对象类型调用 `toString` 方法，并直接转换基本类型。`<jsp:getProperty>` 动作的语法是：
 
 ```
 <jsp:getProperty name="name"
@@ -4751,14 +5042,10 @@ propertyValue::= string|JSP expression
 
 表 5-6 列出了 `<jsp:getProperty>` 标签的属性。
 
-模块 5：标准动作 179
-
 | 属性 | 使用规则 |
 | :--- | :--- |
 | name | 由 `<jsp:useBean>` 标签定义的 JavaBean 实例的名称。该 Bean 实例必须包含此属性，并且必须在设置任何属性之前使用 `<jsp:useBean>` 标签声明该 Bean。 |
 | property | 你想要打印其值的 Bean 属性的名称。 |
-
-表 5-6 `<jsp:getProperty>` 动作的属性
 
 ### 使用 `<jsp:getProperty>`
 
@@ -4791,7 +5078,7 @@ The value of stringProperty is:
 
 `<jsp:include>` 动作允许你将静态 HTML、servlet 的输出以及其他 JavaServer Pages 的输出包含到当前 JSP 页面中。你使用相对 URL 来指定这些资源，如我们在模块 2 中描述的那样。被包含的 JSP 页面可以写入 *JspWriter* 对象（*out*），但不能设置头信息或调用任何影响响应头的方法（与使用 *RequestDispatcher* 对象包含 servlet 时施加的约束相同）。例如，你不能调用 *setCookie* 等方法。
 
-如果页面输出是缓冲的，那么在包含资源之前会刷新输出缓冲区。在处理完被包含的资源后，请求处理在调用的 JSP 页面中继续。
+如果页面输出是缓冲的，那么在包含资源之前会刷新输出缓冲区。在处理完被包含的资源后，请请求处理在调用的 JSP 页面中继续。
 
 `<jsp:include>` 动作有两种形式。最简单的形式在包含之前不设置任何参数。其语法是：
 
@@ -4810,13 +5097,10 @@ The value of stringProperty is:
 两种形式都需要使用 `flush` 属性，即使 JSP 1.1 规范仅支持将 `true` 作为此属性的值。
 
 > **注意**
-
 JSP 1.2 规范移除了此限制。
 
 - `<jsp:setProperty>` 和 `<jsp:getProperty>` 动作用于管理使用 `<jsp:useBean>` 创建和声明的 JavaBean 实例的属性设置和获取。
 - `<jsp:setProperty>` 和 `<jsp:getProperty>` 动作不需要了解 Java。
-
-
 
 # 专家问答
 
@@ -4828,9 +5112,14 @@ JSP 1.2 规范移除了此限制。
 
 表 5-7 列出了 `<jsp:include>` 标签的属性。
 
+| 属性 | 使用规则 |
+| :--- | :--- |
+| page | 指定要包含资源的相对 URL。该 URL 可以是 JSP 表达式计算的结果。 |
+| flush | 在 JSP 1.1 中，这是一个必须设置为 `true` 的强制属性。 |
+
 ### 使用 `<jsp:include>`
 
-`<jsp:include>` 动作提供了一种将大型 JavaServer Pages 分解为更小片段的简单方法。这种分解带来了几个好处，其中之一就是能够为网站创建布局模板。例如，你可以使用 HTML 表格定义一个页面模板，其中每个单元格的内容都由一个 `<jsp:include>` 动作提供。考虑这个简单的例子：
+`<jsp:include>` 动作提供了一种将大型 JavaServer Pages 分解为更小片段的简单方法。这种分解带来了几个好处，其中之一就是能够为网站创建布局模板。例如，你可以使用 HTML 表格定义一个页面模板，其中每个单元的内容都由一个 `<jsp:include>` 动作提供。考虑这个简单的例子：
 
 ```
 <TABLE BORDER="2">
@@ -4867,14 +5156,12 @@ JSP 1.2 规范移除了此限制。
 
 区别在于，在我们的第二个示例中，任何 JSP 页面都可以通过指定请求参数的值来重用该模板。
 
-> 请注意，我们使用了 `<jsp:param>` 动作来定义 *Cell1* 和 *Cell2* 变量的值。此动作将这些参数添加到被包含 JSP 页面的请求参数中。这就是为什么我们可以使用 *request* 隐式对象来检索它们的值。
+> 请注意，我们使用了 `<jsp:param>` 动作来定义 *Cell1* 和 *Cell2* 变量的值。此动作将这些参数添加到被包含 JSP 页面的请请求参数中。这就是为什么我们可以使用 *request* 隐式对象来检索它们的值。
 
 | 属性 | 使用规则 |
 | :--- | :--- |
 | page | 指定要包含资源的相对 URL。该 URL 可以是 JSP 表达式计算的结果。 |
 | flush | 在 JSP 1.1 中，这是一个必须设置为 `true` 的强制属性。 |
-
-**表 5-7** `<jsp:include>` 动作的属性
 
 ## `<jsp:forward>` 动作
 
@@ -4900,8 +5187,6 @@ JSP 1.2 规范移除了此限制。
 | :--- | :--- |
 | page | 指定要转发到的资源的相对 URL。该 URL 可以是 JSP 表达式计算的结果。 |
 
-**表 5-8** `<jsp:forward>` 动作的属性
-
 ### 使用 `<jsp:forward>`
 
 为什么要使用这个动作？因为它似乎只是将你发送到另一个页面，而没有向输出缓冲区写入任何内容。事实上，如果你尝试写入任何内容，并且页面是未缓冲的，或者在执行 `<jsp:forward>` 动作之前缓冲区已被刷新，JSP 容器将抛出 `IllegalStateException`。
@@ -4913,7 +5198,6 @@ JSP 1.2 规范移除了此限制。
 - `<jsp:include>` 和 `<jsp:forward>` 在处理范围上有什么区别？
 - 在使用 `<jsp:include>` 动作之前，你能写入内容吗？
 - 在使用 `<jsp:forward>` 动作之前，你能写入内容吗？
-
 - `<jsp:include>` 动作将处理权返回给调用 JSP 页面；`<jsp:forward>` 动作则不会。
 - 是的。你可以在使用 `<jsp:include>` 动作之前和之后将输出刷新到响应缓冲区。
 - 不可以。如果你在使用 `<jsp:forward>` 动作之前尝试向响应缓冲区写入内容，它将抛出 `IllegalStateException`。
@@ -4941,8 +5225,6 @@ JSP 1.2 规范移除了此限制。
 | name | 参数名称。 |
 | value | 参数值。 |
 
-**表 5-9** `<jsp:param>` 动作的属性
-
 ## 项目 5-1：一个简单的购物车
 
 本项目向你展示如何使用我们描述的一些 JSP 动作来构建在线购物车的一些元素。这些页面显示一个杂货商品列表，并计算你所选商品的费用。
@@ -4950,17 +5232,11 @@ JSP 1.2 规范移除了此限制。
 ### 分步指南
 
 1. 从 http://www.osborne.com 下载本项目的文件。
-
 2. 编译文件 CartItem.java。
-
 3. 将步骤 2 中创建的类文件移动到 %TOMCAT_HOME%/webapps/Book/WEB-INF/classes 目录。
-
 4. 查看 CartItem.java。它的目的是存储商品名称、购买数量以及商品价格。
-
 5. 将下载的 JSP 和 HTML 文件移动到 %TOMCAT_HOME%/webapps/Book/jsp 目录。
-
 6. 查看 ShoppingCartTemplate.jsp。这个 JSP 页面为 ShoppingCart.jsp 和 ResultPage.jsp 提供了标准格式。该格式包括一个头部页面、一个购物车商品表格和一个标准页脚。
-
 7. 它首先导入 Java 类 CartItem：
 
 ```
@@ -5050,8 +5326,6 @@ JSP 1.2 规范移除了此限制。
 </CENTER>
 ```
 
-
-
 10. 最后，ShoppingCartTemplate.jsp 使用 `<jsp:include>` 动作插入一个标准页脚：
 
 ```
@@ -5118,7 +5392,7 @@ JSP 1.2 规范移除了此限制。
 <% item1.setNumItems(Integer.parseInt(request.getParameter("item1"))); %>
 ```
 
-17. 最后，在使用 `<jsp:param>` 动作提供请求参数的同时，将控制权转发给模板：
+17. 最后，在使用 `<jsp:param>` 动作提供请请求参数的同时，将控制权转发给模板：
 
 ```
 <%-- forward control to the template --%>
@@ -5184,7 +5458,9 @@ JSP 1.2 规范移除了此限制。
 ## `<jsp:plugin>` 动作
 
 `<jsp:plugin>` 动作支持生成 HTML，以在 JSP 页面中包含 Java 小程序。它还会插入一个用于下载 JavaSoft Java 小程序插件软件的 URL（如果需要），该软件允许小程序在浏览器内运行。
+
 `<jsp:plugin>` 标签会被替换为适当的 HTML `<object>` 或 HTML `<embed>` 标签，并写入响应输出流。
+
 `<jsp:plugin>` 动作的语法如下：
 
 ```
@@ -5225,13 +5501,11 @@ JSP 1.2 规范移除了此限制。
 | hspace | 与 HTML 4.0 规范中小程序的定义相同。对象与周围文本之间的空白大小 |
 | jreversion | 标识组件所需的 Java 运行时环境 (JRE) 的规范版本号。（默认值为 "1.1"） |
 | name | 与 HTML 4.0 规范中小程序的定义相同。此 Java 对象实例的唯一名称。允许此对象与其他对象共享信息 |
-| vspace | 与 HTML 4.0 规范中小程序的定义相同。对象与周围文本之间的垂直空白 |
+| vspace | 与 HTML 4.0 规范中小程序的定义相�。对象与周围文本之间的垂直空白 |
 | title | 与 HTML 4.0 规范中小程序的定义相同。IE（不是 Netscape）使用的对象标题 |
 | width | 与 HTML 4.0 规范中小程序的定义相同。定义小程序显示区域的高度 |
 | nspluginurl | 可以下载用于 Netscape Navigator 的 JRE 插件的 URL。默认 URL 取决于实现 |
 | iepluginurl | 可以下载用于 Internet Explorer (IE) 的 JRE 插件的 URL。默认 URL 取决于实现 |
-
-
 
 # 将小程序映射到 <jsp:plugin>
 
@@ -5381,7 +5655,7 @@ JSP 1.2 规范移除了此限制。
 本模块目标
 
 - 理解自定义标签的价值
-- 了解自定义标签的工作原理
+- 了解自定�标签的工作原理
 - 知道如何实现自定义标签
 - 将一组自定义标签打包成一个标签库
 
@@ -5470,8 +5744,6 @@ JSP 1.2 规范移除了此限制。
 <%
 ```
 
-
-
 ```
 float balance = principal;
 float interest = 0;
@@ -5507,37 +5779,64 @@ for(int i=1; i<=years; i++) {
 现在考虑一个由不同的JSP页面处理的相同问题，TaglibInterestCalc.jsp，它产生完全相同的结果：
 
 ```
+
 <%@taglib uri="/interest-taglib" prefix="sample" %>
+
 <HTML>
+
 <HEAD><TITLE> Interest Results </TITLE> </HEAD>
+
 <BODY>
+
 <sample:readInterestType/>
+
 <H2> <%= interestType %> Interest Results </H2>
+
 <TABLE CELLSPACING="0" CELLPADDING="3" BORDER="1">
+
 <TR>
+
     <TD> <B>Year</B> </TD>
+
     <TD> <B>Principal</B> </TD>
+
     <TD> <B>Interest</B> </TD>
+
     <TD> <B>Cumulative Balance</B> </TD>
+
 </TR>
+
 <sample:calcInterest yearName="numYear"
+
                     principalName="principal"
+
                     interestName="interest"
+
                     balanceName="balance" >
+
     <TR>
+
         <TD> <%= numYear %> </TD>
+
         <TD> <%= principal %> </TD>
+
         <TD> <%= interest %> </TD>
+
         <TD> <%= balance %> </TD>
+
     </TR>
+
 </sample:calcInterest>
+
 </BODY>
+
 </HTML>
+
 ```
 
 有几个地方使这个JSP页面与前一个不同。最明显的区别是，除了JSP表达式之外，这个JSP页面没有Java代码。因此，它也比前一个JSP页面小得多。
 
-其次，这个JSP页面顶部有一个taglib指令。taglib指令标识JSP页面使用的标签库，并为每个库的标签关联一个命名空间前缀。（我们在模块2中描述了taglib指令）。interest-taglib支持两个自定义标签：<sample:readInterestType> 和 <sample:calcInterest>。
+其次，这个JSP页面顶部有一个taglib指令。taglib指令标识JSP页面使用的标签库，并为每个库的标签关联一个命名空间前缀。（我们在模块2中描述了taglib指令）。interest-taglib支持两个自定�标签：<sample:readInterestType> 和 <sample:calcInterest>。
 
 第一个标签体为空，第二个包含一个HTML表格行。我们的JSP页面Java代码很少，是因为我们将它隐藏在这两个操作的实现后面。
 
@@ -5563,18 +5862,20 @@ for(int i=1; i<=years; i++) {
 - 自定义操作的定义（即标签）
 - taglib指令
 - 标签库描述符
-- 标签处理器
+- 标签处理程序
 
 ### 标签库格式
 
 自定义标签与我们在模块5中描述的标准操作具有相同的两种可能格式。格式如下：
 
 ```
+
 <prefix:tagName [attr="value"]*> tagBody </prefix:tagName>
 
 <prefix:tagName [attr="value"]* /> 或
 
 <prefix:tagName [attr="value"]* ></prefix:tagName>
+
 ```
 
 第一种格式是带有标签体的操作。标签体包括开始标签和结束标签之间的所有文本。第二种格式是不带标签体的操作。你可以通过使用后跟立即结束标签的开始标签，或使用以斜杠-闭角括号（/ >）字符序列结尾的单个标签来指定空标签体。
@@ -5589,14 +5890,20 @@ for(int i=1; i<=years; i++) {
 JSP页面中的taglib指令告知JSP容器该JSP页面使用一个标签库，该库由URI唯一标识，并关联一个前缀来区分库中操作的使用。下面是taglib指令的语法，摘录自模块2：
 
 ```
+
 <%@
+
     taglib
+
     uri="URI To Tag Library"
+
     prefix="tag prefix"
+
 %>
+
 ```
 
-URI指定了标签库描述符的位置，该描述符定义了标签库支持的自定义标签。prefix属性指定了这些自定义标签的标签前缀。
+URI指定了标签库描述符的位置，该描述符定义了标签库支持的自定�标签。prefix属性指定了这些自定义标签的标签前缀。
 
 ### 标签库描述符
 
@@ -5643,51 +5950,97 @@ XML的细节和DTD的定义超出了本书的范围。你应该注意的基本�
 下面是描述我们在计算器 JSP 中使用的 `interest-taglib` 的 TLD：
 
 ```xml
+
 <?xml version="1.0" encoding="ISO-8859-1" ?>
+
 <!DOCTYPE taglib PUBLIC
+
   "-//Sun Microsystems, Inc.//DTD JSP Tag Library 1.1//EN"
+
   "http://java.sun.com/j2ee/dtds/web-jsptaglibrary_1_1.dtd">
+
 <taglib>
+
   <tlibversion>1.0</tlibversion>
+
   <jspversion>1.1</jspversion>
+
   <shortname></shortname>
+
   <tag>
+
     <name>readInterestType</name>
+
     <tagclass>sample.ReadRequestTag</tagclass>
+
     <teiclass>sample.ReadRequestTEI</teiclass>
+
     <bodycontent>empty</bodycontent>
+
     <info>Extracts request parameters</info>
+
   </tag>
+
   <tag>
+
     <name>calcInterest</name>
+
     <tagclass>sample.InterestCalcTag</tagclass>
+
     <teiclass>sample.InterestCalcTEI</teiclass>
+
     <bodycontent>JSP</bodycontent>
+
     <info>
+
         Iterative tag that calculates interest (compound or simple)
+
     </info>
+
     <attribute>
+
         <name>yearName</name>
+
         <required>true</required>
+
         <rtexprvalue>false</rtexprvalue>
+
     </attribute>
+
     <attribute>
+
         <name>principalName</name>
+
         <required>true</required>
+
         <rtexprvalue>false</rtexprvalue>
+
     </attribute>
+
     <attribute>
+
         <name>interestName</name>
+
         <required>true</required>
+
         <rtexprvalue>false</rtexprvalue>
+
     </attribute>
+
     <attribute>
+
         <name>balanceName</name>
+
         <required>true</required>
+
         <rtexprvalue>false</rtexprvalue>
+
     </attribute>
+
   </tag>
+
 </taglib>
+
 ```
 
 以下是关于此 TLD 您应该注意的要点：
@@ -5697,13 +6050,13 @@ XML的细节和DTD的定义超出了本书的范围。你应该注意的基本�
 - 3. TLD 在 `<teiclass>` 开始标签和 `</teiclass>` 结束标签之间声明其他 Java 类。这些类是 `TagExtraInfo` 类，您使用它们为 JSP 页面定义额外的脚本变量。
 - 4. TLD 为 `readInterestType` 操作声明了一个 `empty` 体。相比之下，它为 `calcInterest` 操作声明了一个体。您在 `<bodycontent>` 开始标签和 `</bodycontent>` 结束标签之间声明标签体的使用。
 - 5. TLD 为 `calcInterest` 操作定义了四个属性：`yearName`、`principalName`、`interestName` 和 `balanceName`。TLD 声明了所有这些属性，并指明您不能以请求时 JSP 表达式的形式提供它们的值。您在 `<attribute>` 开始标签和 `</attribute>` 结束标签之间定义属性。
-- 6. 标签属性定义需要一个由三个额外标签组成的标签体：`<name>`、`<required>` 和 `<rtexprvalue>`。它们分别指定了属性的名称、属性是必需还是可选，以及 JSP 页面是否可以以 JSP 表达式的形式提供属性值。
+- 6. 标签属性定需要一个由三个额外标签组成的标签体：`<name>`、`<required>` 和 `<rtexprvalue>`。它们分别指定了属性的名称、属性是必需还是可选，以及 JSP 页面是否可以以 JSP 表达式的形式提供属性值。
 
 ![](img/7a40f8957e7c3eb68dbb9f8ab3cef54d_235_0.png)
 
 ### 1 分钟练习
 
-- 标签库中的四个要素是什么？
+- 标签库的四个要素是什么？
 - 自定义操作的两种形式有什么区别？
 - `taglib` 指令的目的是什么？
 - 标签库描述符的目的是什么？
@@ -5713,11 +6066,11 @@ XML的细节和DTD的定义超出了本书的范围。你应该注意的基本�
 - 标签库的四个要素是标签、`taglib` 指令、标签库描述符和标签处理程序。
 - 一种格式包含体，另一种不包含。
 - `taglib` 指令告知 JSP 容器此 JSP 页面使用由 URI 标识的标签库。
-- 标签库描述符描述了标签库中的自定义标签。
+- 标签库描述符描述了标签库中的自定�标签。
 
 ## 标签处理程序
 
-标签处理程序实现了 JSP 操作的编程行为。您在标签库描述符中使用 `<tagclass>` 元素为自定义标签指定标签处理程序。当 JSP 脚本语言是 Java 时，标签处理程序是一个实现 Java 接口的 JavaBean 组件。Java 接口强制了 JSP 容器和处理程序之间的运行时协议。您可以使用以下两个 Java 接口之一来定义标签处理程序：
+标签处理程序实现了 JSP 操作的编程行为。您在标签库描述符中使用 `<tagclass>` 元素为自定�标签指定标签处理程序。当 JSP 脚本语言是 Java 时，标签处理程序是一个实现 Java 接口的 JavaBean 组件。Java 接口强制了 JSP 容器和处理程序之间的运行时协议。您可以使用以下两个 Java 接口之一来定义标签处理程序：
 
 - `javax.servlet.jsp.tagext.Tag` 定义了不关心操作其体的简单标签处理程序的协议。
 - `javax.servlet.jsp.tagext.BodyTag` 扩展了 `javax.servlet.jsp.tagext.Tag`，使标签处理程序可以访问标签体。
@@ -5739,29 +6092,50 @@ JSP 容器必须用某些属性初始化所有标签处理程序。容器使用 
 
 ### 标签属性
 
-自定义操作的开始标签可以包含形式为 `attr="value"` 的属性赋值。属性通过在标签处理程序上初始化自定义属性来定制操作的行为。例如，在我们的 `<sample:calcInterest>` 操作中，我们公开了四个属性：`yearName`、`principalName`、`interestName` 和 `balanceName`。我们使用 `<attribute>` 元素在标签库描述符中指定了这些属性，如下所示。
+自定义操作的开始标签可以包含形式为 `attr="value"` 的属性赋值。属性通过在标签处理程序上初始化自定�属性来定制操作的行为。例如，在我们的 `<sample:calcInterest>` 操作中，我们公开了四个属性：`yearName`、`principalName`、`interestName` 和 `balanceName`。我们使用 `<attribute>` 元素在标签库描述符中指定了这些属性，如下所示。
 
 ```xml
+
 <attribute>
+
     <name>yearName</name>
+
     <required>true</required>
+
     <rtexprvalue>false</rtexprvalue>
+
 </attribute>
+
 <attribute>
+
     <name>principalName</name>
+
     <required>true</required>
+
     <rtexprvalue>false</rtexprvalue>
+
 </attribute>
+
 <attribute>
+
     <name>interestName</name>
+
     <required>true</required>
+
     <rtexprvalue>false</rtexprvalue>
+
 </attribute>
+
 <attribute>
+
     <name>balanceName</name>
+
     <required>true</required>
+
     <rtexprvalue>false</rtexprvalue>
+
 </attribute>
+
 ```
 
 ![](img/7a40f8957e7c3eb68dbb9f8ab3cef54d_237_0.png)
@@ -5769,18 +6143,31 @@ JSP 容器必须用某些属性初始化所有标签处理程序。容器使用 
 标签处理程序必须为 TLD 中定义的每个属性定义一个 JavaBean 属性。这意味着它们必须提供符合 JavaBean 命名要求的属性设置方法。例如，标签处理程序必须提供一个 `setBalanceName` 方法来匹配 TLD 属性 `balanceName`。当 JSP 容器在 JSP 页面中遇到开始标签时，会自动调用设置方法。以下代码片段显示了我们的标签处理程序中的这些设置方法：
 
 ```java
+
 public void setPrincipalName(String principalName) {
+
     this.principalName = principalName;
+
 }
+
 public void setInterestName(String interestName) {
+
     this.interestName = interestName;
+
 }
+
 public void setYearName(String yearName) {
+
     this.yearName = yearName;
+
 }
+
 public void setBalanceName(String balanceName) {
+
     this.balanceName = balanceName;
+
 }
+
 ```
 
 标签处理程序属性可以是任何 Java 类型。如果您使用 `String`（`HttpServletRequest` 参数或 `String` 常量）提供属性的值，则该属性必须是表 6-2 中列出的类型之一。转换列说明了 JSP 容器如何将 `String` 值转换为适当的类型。
@@ -5803,16 +6190,23 @@ public void setBalanceName(String balanceName) {
 如果你使用 JSP 表达式提供属性值，JSP 容器会在请求时计算其类型，并且不会从 *String* 类型自动转换。JSP 表达式中返回值的类型应与标签处理器中属性的类型相匹配。例如，考虑以下操作：
 
 ```
+
 <% java.util.Map items = Cart.getItems(); %>
+
 <sample:purchase cart="<%= items %>" />
+
 ```
 
 在此示例中，自定义操作有一个名为 *cart* 的属性，其值类型为 *java.util.Map*。这意味着该操作的标签处理器应具有如下所示的 setter 方法：
 
 ```
+
 public void setCart(java.util.Map map) {
+
     this.map = map;
+
 }
+
 ```
 
 # 专家问答
@@ -5822,45 +6216,80 @@ public void setCart(java.util.Map map) {
 **答：** 规范没有要求特定的顺序，但 Tomcat 会按照你在标签库描述符（TLD）中指定的顺序来计算属性，*而不是*你提供给自定义操作的顺序。如果你的标签依赖于属性顺序，你必须考虑这一点。例如，考虑这个指定简单迭代器标签的 TLD 片段：
 
 ```
+
 <tag>
+
     <name>for</name>
+
     <tagclass>sample.ForTag</tagclass>
+
     <teiclass>sample.ForTagTEI</teiclass>
+
     <bodycontent>JSP</bodycontent>
+
     <info> A simple iteration tag </info>
+
     <attribute>
+
         <name>counter</name>
+
         <required>true</required>
+
         <rtexprvalue>false</rtexprvalue>
+
     </attribute>
+
     <attribute>
+
         <name>initial</name>
+
         <required>false</required>
+
         <rtexprvalue>false</rtexprvalue>
+
     </attribute>
+
     <attribute>
+
         <name>final</name>
+
         <required>false</required>
+
         <rtexprvalue>false</rtexprvalue>
+
     </attribute>
+
     <attribute>
+
         <name>increment</name>
+
         <required>false</required>
+
         <rtexprvalue>false</rtexprvalue>
+
     </attribute>
+
 </tag>
+
 ```
 
 TLD 指定了属性顺序为：`counter`、`initial`、`final` 和 `increment`。现在考虑我们标签处理器代码中可能的验证步骤：
 
 ```
+
 public void setIncrement(int increment) throws JspTagException {
+
     if (((initialVal < finalVal) && (increment < 0)) ||
+
         ((initialVal > finalVal) && (increment > 0)))
+
         throw new JspTagException("Infinite Loop!");
+
     this.increment = increment;
+
 }
-```
+
+
 
 这段验证代码检查是否存在无限循环。它期望 `initial` 和 `final` 属性在 `increment` 属性之前设置。如果我们没有在 TLD 中按正确的顺序指定它们，这个条件检查将产生无效的结果。实际上，你的标签应避免依赖于 JSP 容器的此类特性。当你引入它们时，你利用的是规范未强制要求的实现决策。这意味着你的代码本质上是不可移植的，即使在同一容器的不同版本之间也是如此。
 
@@ -5901,14 +6330,14 @@ JSP 页面生成的 servlet 首先调用 `Tag` 接口的属性 setter 方法来�
 
 **表 6-3** `Tag` 接口中的方法
 
-不计算其标签体（如果存在）的标签处理器从其 *doStartTag* 方法返回 SKIP_BODY。允许标签体但不操作它的标签处理器从其 *doStartTag* 方法返回 EVAL_BODY_INCLUDE。此类标签处理器必须实现 *Tag* 接口，不能实现 *BodyTag* 接口。如果标签处理器打算操作其标签体，则从其 *doStartTag* 方法返回 EVAL_BODY_TAG。此类标签处理器必须实现 *BodyTag* 接口。在此方法结束时，一些新的脚本变量可能对 JSP 页面可用，具体取决于可选的 *TagExtraInfo* 类的存在和行为。
+不计算其标签体（如果存在）的标签处理器从其 *doStartTag* 方法返回 `SKIP_BODY`。允许标签体但不操作它的标签处理器从其 *doStartTag* 方法返回 `EVAL_BODY_INCLUDE`。此类标签处理器必须实现 *Tag* 接口，不能实现 *BodyTag* 接口。如果标签处理器打算操作其标签体，则从其 *doStartTag* 方法返回 `EVAL_BODY_TAG`。此类标签处理器必须实现 *BodyTag* 接口。在此方法结束时，一些新的脚本变量可能对 JSP 页面可用，具体取决于可选的 *TagExtraInfo* 类的存在和行为。
 
 *doStartTag* 方法可能抛出 *JspException* 以指示错误。
 
-**doEndTag 方法** 生成的 servlet 在跳过或处理标签体后调用 *doEndTag* 方法。如果标签有体，并且标签的 *doStartTag* 方法返回 EVAL_BODY_TAG，此时生成的 servlet 将已处理标签体。此方法的返回值指示生成的 servlet 是否应评估 JSP 页面的其余部分。可能的值是：
+**doEndTag 方法** 生成的 servlet 在跳过或处理标签体后调用 *doEndTag* 方法。如果标签有体，并且标签的 *doStartTag* 方法返回 `EVAL_BODY_TAG`，此时生成的 servlet 将已处理标签体。此方法的返回值指示生成的 servlet 是否应评估 JSP 页面的其余部分。可能的值是：
 
-- EVAL_PAGE 继续评估 JSP 页面的其余部分。
-- SKIP_PAGE 跳过 JSP 页面的其余部分以完成请求。
+- `EVAL_PAGE` 继续评估 JSP 页面的其余部分。
+- `SKIP_PAGE` 跳过 JSP 页面的其余部分以完成请求。
 
 在此方法结束时，一些新的脚本变量可能对 JSP 页面可用，具体取决于可选的 *TagExtraInfo* 类的存在和行为。
 
@@ -5916,11 +6345,9 @@ JSP 页面生成的 servlet 首先调用 `Tag` 接口的属性 setter 方法来�
 
 **release 方法** 生成的 servlet 在所有标签处理器调用完成后调用 *release* 方法。标签处理器应使用此方法释放其可能持有的任何资源。例如，它应在此方法中释放任何数据库或套接字连接。
 
-**TagSupport 基类** *javax.servlet.jsp.tagext.TagSupport* 是一个实用基类，它简化了新标签处理器的开发。它实现了 *Tag* 接口，并为基本属性提供了便捷的 getter 和 setter 方法。它将 *PageContext* 作为数据成员 *pageContext* 可用，并定义了具有空主体和默认返回值的 *doStartTag* 和 *doEndTag* 方法。*doStartTag* 方法返回 SKIP_BODY，*doEndTag* 返回 EVAL_PAGE。标签处理器子类可以用自己的行为覆盖这些方法。
+**TagSupport 基类** *javax.servlet.jsp.tagext.TagSupport* 是一个实用基类，它简化了新标签处理器的开发。它实现了 *Tag* 接口，并为基本属性提供了便捷的 getter 和 setter 方法。它将 *PageContext* 作为数据成员 *pageContext* 可用，并定义了具有空主体和默认返回值的 *doStartTag* 和 *doEndTag* 方法。*doStartTag* 方法返回 `SKIP_BODY`，*doEndTag* 返回 `EVAL_PAGE`。标签处理器子类可以用自己的行为覆盖这些方法。
 
 表 6-4 列出了 *TagSupport* 基类提供的最有用的方法。
-
-
 
 | 方法签名 | 用途 |
 |---|---|
@@ -5962,15 +6389,19 @@ JSP 容器对待实现 `BodyTag` 的标签处理器与实现 `Tag` 的标签处�
 **BodyContent 类**
 `javax.servlet.jsp.tagext.BodyContent` 类是 `JspWriter` 的子类，用于在自定义动作中处理标签体。正如我们在模块 4 中解释的，`PageContext` 维护一个 `BodyContent` 对象栈，每个对象代表一个动作的标签体。当处理进入给定嵌套级别时，JSP 页面的生成 servlet 使用 `pushBody` 方法在栈上压入一个新的 `BodyContent` 对象。当处理离开给定嵌套级别时，它调用 `PageContext` 对象上的 `popBody` 方法以检索先前的 `BodyContent` 对象。最后，它调用 `popBody` 以检索原始的 `JspWriter` 对象。考虑以下嵌套标签的示例：
 
-```
 <sample:top>  <!-- top 的 BodyContent -->
+
     <sample:nested_level_1>  <!-- nested_level_1 的 BodyContent -->
+
         <sample:nested_level_2>  <!-- nested_level_2 的 BodyContent -->
+
             普通文本
+
         </sample:nested_level_2>
+
     </sample:nested_level_1>
+
 </sample:top>
-```
 
 这种标签嵌套需要三个 `BodyContent` 对象，每个对象代表给定嵌套级别的标签体。
 
@@ -6017,8 +6448,6 @@ JSP 容器对待实现 `BodyTag` 的标签处理器与实现 `Tag` 的标签处�
 -   生成的 servlet 在每次处理标签体后循环调用 `doAfterBody` 方法，直到它返回 `SKIP_BODY`。
 -   `BodyContent` 对象具有一个“无界”缓冲区。
 
-
-
 ## 标签处理器的生命周期
 
 在了解了两种标签处理器接口的细节之后，我们来探讨两种类型标签的生命周期。图6-4展示了一个简单*Tag*处理器（不处理其主体）和一个*BodyTag*处理器（操作其主体）的生成servlet调用序列。
@@ -6033,7 +6462,7 @@ JSP 容器对待实现 `BodyTag` 的标签处理器与实现 `Tag` 的标签处�
 6.  如果返回值是`EVAL_BODY_TAG`，生成的servlet将使用*pushBody*方法创建一个新的*BodyContent*对象，并使用*setBodyContent*方法将其设置在标签处理器上。
 7.  接下来，servlet调用*doInitBody*方法。
 8.  生成的servlet使用*BodyContent*对象处理标签体。处理完标签体后，它调用*doAfterBody*方法。
-9.  如果*doAfterBody*方法返回`EVAL_BODY_TAG`，处理将返回步骤8。（这允许标签处理器重复修改标签体。）
+9.  如果*doAfterBody*方法返回`EVAL_BODY_TAG`，处理将返回步骤8。（这允标签处理器重复修改标签体。）
 10. 生成的servlet调用*popBody*方法。
 11. 生成的servlet调用*doEndTag*方法。
 12. 如果`doEndTag`返回`SKIP_PAGE`，生成的servlet将忽略当前JSP页面的其余部分（即，在调用当前标签处理器的`release`方法后，生成的servlet立即从其`_jspService`方法返回）。
@@ -6044,68 +6473,101 @@ JSP 1.1规范指出，JSP页面可以为多次调用的自定义操作重用标�
 
 ### 创建与初始化
 
-```
 Handler th = new Handler();
 
 th.setPageContext(pageContext);
+
 th.setParent(parent);
 
 th.setAttribute1(value_1);
+
 ...
+
 th.setAttributen(value_n);
-```
 
 ### 简单标签处理器
 
-```
 try {
+
     int handleBody = th.doStartTag();
+
     if(handleBody== EVAL_BODY_INCLUDE) {
+
         /* 评估标签体 */
+
     }
+
     int handlePage = th.doEndTag();
+
     if(handlePage == SKIP_PAGE) {
+
         return;
+
     }
 
     ... /*可能重用 */
+
 }
+
 finally {
+
     th.release();
+
 }
-```
 
 ### Body标签处理器
 
-```
 try {
+
     int handleBody = th.doStartTag();
+
     if(handleBody== EVAL_BODY_TAG) {
+
         try {
+
             BodyContent bc = pageContent.pushBody();
+
             th.setBodyContent(bc);
+
             th.doInitBody();
+
             do{
+
                 /* 评估标签体 */
+
                 handleBody = th.doAfterBody();
+
             }
+
             while(handleBody== EVAL_BODY_TAG);
+
         }
+
         finally {
+
             pageContent.popBody();
+
         }
+
         int handlePage = th.doEndTag();
+
         if(handlePage == SKIP_PAGE) {
+
             return;
+
         }
 
         ... /*可能重用 */
+
     }
+
 }
+
 finally {
+
     th.release();
+
 }
-```
 
 图6-4 Tag和BodyTag处理器的调用序列
 
@@ -6131,53 +6593,77 @@ finally {
 
 正如我们在模块5中通过`<jsp:useBean>`操作所看到的，脚本变量的名称通常使用JSP容器在翻译时处理的静态值来定义。当JSP容器在其`TagExtraInfo`类上调用`getVariableInfo`方法时，它会传递一个`javax.servlet.jsp.tagext.TagData`对象，该对象持有它在翻译时可以识别的[属性，值]对。在我们的示例中，我们的自定义操作指定了四个脚本变量，其名称作为属性提供给我们的操作，如下所示：
 
-```
 <sample:calcInterest yearName="numYear"
+
                    principalName="principal"
+
                    interestName="interest"
+
                    balanceName="balance" >
-```
 
 JSP容器使用`TagData`实例将这些属性及其值提供给我们的`TagExtraInfo`类。
 
 `getVariableInfo`方法返回一个`javax.servlet.jsp.tagext.VariableInfo`对象数组。每个这样的对象通过提供其名称、类型、变量是否是新的以及其作用域来描述一个脚本变量。以下是我们自定义操作的`TagExtraInfo`类：
 
-```
 public class InterestCalcTEI extends TagExtraInfo {
+
     public VariableInfo[] getVariableInfo(TagData data) {
+
         VariableInfo info1 = new
+
             VariableInfo(
+
                 data.getAttributeString("yearName"),
+
                 "String",
+
                 true,
+
                 VariableInfo.NESTED);
 
         VariableInfo info2 = new
+
             VariableInfo(
+
                 data.getAttributeString("principalName"),
+
                 "String",
+
                 true,
+
                 VariableInfo.NESTED);
 
         VariableInfo info3 = new
+
             VariableInfo(
+
                 data.getAttributeString("interestName"),
+
                 "String",
+
                 true,
+
                 VariableInfo.NESTED);
 
         VariableInfo info4 = new
+
             VariableInfo(
+
                 data.getAttributeString("balanceName"),
+
                 "String",
+
                 true,
+
                 VariableInfo.NESTED);
 
         VariableInfo [] info = { info1, info2, info3, info4 };
+
         return info;
+
     }
+
 }
-```
 
 我们的*InterestCalcTEI*类定义了四个脚本变量。*VariableInfo*构造函数的第一个参数提供属性名称。您使用传递到*getVariableInfo*方法的*TagData*对象检索命名属性的值。
 
@@ -6191,8 +6677,6 @@ public class InterestCalcTEI extends TagExtraInfo {
 
 我们所有的变量都具有`VariableInfo.NESTED`作用域。图6-5说明了这三种作用域。
 
-
-
 # **图 6-5** 脚本变量的作用域
 
 `TagExtraInfo` 类也会验证自定义操作中指定的属性。JSP 容器在翻译时间调用 `isValid` 方法。如果 `isValid` 方法返回 `false`，则会导致翻译时间错误。与 `getVariableInfo` 方法类似，`isValid` 方法接收一个 `TagData` 实例，该实例包含所有翻译时间属性的值。这允许该方法验证这些值。表 6-8 展示了 JSP 容器在翻译时间调用的 `TagExtraInfo` 中的两个方法。
@@ -6203,12 +6687,13 @@ public class InterestCalcTEI extends TagExtraInfo {
 
 我们的自定义操作 `<sample:calcInterest>` 定义了四个脚本变量，名称分别为：*numYear*、*principal*、*interest* 和 *balance*。因此，我们的标签处理器必须创建这些变量并使用 *PageContext* 对象将它们存储起来。以下代码片段展示了如何存储它们：
 
-```
 pageContext.setAttribute("numYear", *value*);
+
 pageContext.setAttribute("principal", *value*);
+
 pageContext.setAttribute("interest", *value*);
+
 pageContext.setAttribute("balance", *value*);
-```
 
 设置这些属性的代码位置取决于脚本变量的作用域。作用域指明哪些方法*可能*影响脚本变量的值，从而定义了标签处理器何时可以设置脚本变量的值。表 6-9 描述了设置这些属性的正确时机。
 
@@ -6218,24 +6703,29 @@ pageContext.setAttribute("balance", *value*);
 
 **答案：** 你可以将自定义操作的属性值指定为静态字符串值或请求时 JSP 表达式。TLD 会指定一个操作是否可以接受请求时 JSP 表达式。如果属性只接受静态值，你应该在翻译时验证一次属性，而不是在每次请求时验证，因为这样更高效。你可以通过为自定义操作提供一个 *TagExtraInfo* 类并定义其上的 *isValid* 方法来实现翻译时验证。当 JSP 页面被 JSP 容器翻译以生成页面实现 servlet 时，会调用此方法。该方法可以访问一个 *TagData* 对象，该对象封装了所有翻译时的 [属性, 值] 对。例如，以下代码片段展示了一个自定义操作的 *TagExtraInfo* 类，该操作期望属性 "isRequired" 的值为两个值之一：`true` 或 `false`：
 
-```java
 public class MyActionTEI extends TagExtraInfo {
+
     public boolean isValid(TagData data) {
+
         String val = data.getAttributeString("isRequired");
+
         return val.equals("true") || val.equals("false");
+
     }
+
 }
-```
 
 如果属性可以接受请求时 JSP 表达式作为值，那么你必须在每次请求时验证它。你可以通过在标签处理器中验证值并在出现验证错误时抛出 `javax.servlet.jsp.JspTagException` 来实现这一点。例如，以下代码片段展示了属性 name 的一个 setter 方法。此代码要求属性的值为 "cosmo" 或 "kramer" 之一：
 
-```java
 public void setName(String name) throws JspTagException {
+
     if(!name.equals("cosmo") && !name.equals("kramer"))
+
         throw new JspTagException("Name has to be cosmo or kramer!");
+
     this.name = name;
+
 }
-```
 
 | 方法签名 | 描述 |
 | --- | --- |
@@ -6266,11 +6756,11 @@ public void setName(String name) throws JspTagException {
 
 JSP 规范提倡一种定义隐式对象的特定风格。它建议构建一个标签库，并添加一个名为 `<prefix:defineObjects />` 的操作来定义所需的隐式对象。如此设置的 JSP 页面可能如下所示：
 
-```jsp
 <%@ taglib prefix="mySetup" uri="*relativeURL*" %>
+
 <mySetup:defineObjects />
+
 ... 开始使用定义的隐式对象 ...
-```
 
 规范进一步指出，此约定不需要新的机制，并且使对象对自定义操作的依赖性非常明确。
 
@@ -6280,7 +6770,7 @@ JSP 规范提倡一种定义隐式对象的特定风格。它建议构建一个�
 
 # 项目 6-1：定义隐式对象
 
-本项目说明了如何构建一个自定义操作。我们的目标是创建一个类似于标准 `<jsp:useBean>` 操作但更简单的操作。我们使用自定义操作来定义几个我们明确命名和指定类型的脚本变量。
+本项目说明了如何构建一个自定义操作。我们的目标是创建一个类似于标准 `<jsp:useBean>` 操作但更简单的操作。我们使用自定操作来定义几个我们明确命名和指定类型的脚本变量。
 
 ### 分步指南
 
@@ -6288,64 +6778,99 @@ JSP 规范提倡一种定义隐式对象的特定风格。它建议构建一个�
 2.  将 JSP 文件 DefineVars.jsp 移动到 %TOMCAT_HOME%/webapps/Book/jsp 目录下。
 3.  查看 DefineVars.jsp。我们在此复制它：
 
-```jsp
 <%@page import="java.util.*, define.*" %>
+
 <%@taglib uri="/taglib" prefix="tls" %>
 
 <tls:defineVariable name="leader" type="String" />
+
 <tls:defineVariable name="independenceDate" type="Date" />
+
 <tls:defineVariable name="PI" type="Double" />
 
 <TABLE WIDTH=400 CELLSPACING="0" CELLPADDING="3" BORDER="1">
+
 <TR>
+
   <TD WIDTH=40%> <B> Leader </B> </TD>
+
   <TD> <%= leader %> </TD>
+
 </TR>
+
 <TR>
+
   <TD WIDTH=40%> <B> Independence Date </B> </TD>
+
   <TD> <%= independenceDate %> </TD>
+
 </TR>
+
 <TR>
+
   <TD WIDTH=40%> <B> PI </B> </TD>
+
   <TD> <%= PI %> </TD>
+
 </TR>
+
 </TABLE>
-```
 
 该 JSP 页面使用页面指令导入相关的类。然后它使用 taglib 指令导入一个标签库，其位置就是 `/taglib`。字符串 "tls" 将作为该标签库中所有操作的前缀。接着是三次调用自定义操作 `defineVariable`。此标签有两个属性，即脚本变量的名称和类型。标签处理完毕后，JSP 页面可以访问三个隐式变量：一个名为 "leader" 的字符串、一个名为 "independenceDate" 的 Java 日期对象和一个名为 "PI" 的 Java Double 对象。我们使用 JSP 表达式在 HTML 表格中打印这些变量的值。我们在这个项目中的目标是编写标签处理器和其他相关实体，使这个 JSP 页面能够工作。
 
-
-
 ## 4. 创建名为 `defineVar.tld` 的文件，内容如下：
 
-```xml
 <?xml version="1.0" encoding="ISO-8859-1" ?>
+
 <!DOCTYPE taglib PUBLIC
+
   "-//Sun Microsystems, Inc.//DTD JSP Tag Library 1.1//EN"
+
   "http://java.sun.com/j2ee/dtds/web-jsptaglibrary_1_1.dtd">
+
 <taglib>
+
     <tlibversion>1.0</tlibversion>
+
     <jspversion>1.1</jspversion>
+
     <shortname></shortname>
+
     <tag>
+
         <name>defineVariable</name>
+
         <tagclass>define.DefineVarTag</tagclass>
+
         <teiclass>define.DefineVarTEI</teiclass>
+
         <bodycontent>empty</bodycontent>
+
         <info> 一个定义脚本变量的自定义标签 </info>
+
         <attribute>
+
             <name>name</name>
+
             <required>true</required>
+
             <rtexprvalue>false</rtexprvalue>
+
         </attribute>
+
         <attribute>
+
             <name>type</name>
+
             <required>true</required>
+
             <rtexprvalue>false</rtexprvalue>
+
         </attribute>
+
     </tag>
+
 </taglib>
-```
 
 该 TLD 描述了名为 "defineVariable" 的自定义标签，其标签处理器为 Java 类 `define.DefineVarTag`，TagExtraInfo 类为 `define.DefineVarTEI`。该标签要求有一个空主体，并接受两个属性：`name` 和 `type`。这两个属性都是必需的。
 
@@ -6353,89 +6878,113 @@ JSP 规范提倡一种定义隐式对象的特定风格。它建议构建一个�
 
 ## 6. 在位于 `%TOMCAT_HOME%/webapps/Book/WEB-INF` 的 `web.xml` 文件中，添加以下 XML 片段：
 
-```xml
 <taglib>
+
     <taglib-uri>/taglib</taglib-uri>
+
     <taglib-location>/WEB-INF/define_var.tld</taglib-location>
+
 </taglib>
-```
 
 此 XML 片段告知 JSP 容器，存在一个可以通过 URI "/taglib" 定位的标签库。该标签库的实际位置相对于当前应用程序上下文的根目录（%TOMCAT_HOME%/webapps/Book）。我们将在附录 C 中介绍 Web 应用程序的部署和打包。
 
 ## 7. 现在，我们需要编写 *TagExtraInfo* 类，以告知 JSP 容器我们的自定义动作创建的脚本变量。创建一个名为 `DefineVarTEI.java` 的文件。首先导入相关的类。
 
-```java
 package define;
+
 import javax.servlet.jsp.tagext.*;
-```
 
 ## 8. 按如下方式定义该类：
 
-```java
 public class DefineVarTEI extends TagExtraInfo {
+
     public VariableInfo[] getVariableInfo(TagData data) {
+
         VariableInfo info1
+
             = new VariableInfo(data.getAttributeString("name"),
+
                                data.getAttributeString("type"),
+
                                true,
+
                                VariableInfo.AT_END);
+
         VariableInfo [] info = { info1 };
+
         return info;
+
     }
+
 }
-```
 
 我们的类继承自 *TagExtraInfo*，并定义了 *getVariableInfo* 方法，该方法描述了由此自定义动作创建的每个脚本变量。我们的自定义动作每次调用只定义一个脚本变量，尽管该变量在每次调用时具有不同的名称和类型。因此，*getVariableInfo* 方法只返回一个 *VariableInfo* 对象。你可以从 *TagData* 中检索 name 和 type 属性的值，*TagData* 封装了所有翻译时的属性值。我们指定的范围 *VariableInfo.AT_END* 表示 JSP 页面可以在处理完此自定义动作的结束标签后使用该变量。
 
 ## 9. 最后，我们需要编写标签处理器。创建一个名为 `DefineVarTag.java` 的 Java 文件。首先导入相关的类。
 
-```java
 package define;
+
 import javax.servlet.jsp.*;
+
 import javax.servlet.jsp.tagext.*;
+
 import java.io.*;
+
 import java.util.Calendar;
+
 import java.util.Date;
-```
 
 ## 10. 由于我们的自定义动作将有一个空主体，我们的标签处理器可以直接继承 *TagSupport*。因此，添加以下代码行：
 
-```java
 public class DefineVarTag extends TagSupport {
-```
 
 ## 11. 为我们的自定义动作的每个属性定义成员变量，并按如下方式为它们定义 JavaBeans setter 方法：
 
-```java
 private String name = null;
+
 private String type = null;
 
 public void setName(String name) {
+
     this.name = name;
+
 }
+
 public void setType(String type) {
+
     this.type = type;
+
 }
-```
 
 ## 12. 由于我们将脚本变量定义为具有 *VariableInfo.AT_END* 的作用域，我们的脚本变量需要在标签处理器的 *doEndTag* 方法之后可用。因此，按如下方式定义 *doEndTag*：
 
-```java
 public int doEndTag() throws JspException {
+
     if(name.equals("leader"))
+
         pageContext.setAttribute(name, "Mahatma Gandhi");
+
     else if(name.equals("independenceDate"))
+
         pageContext.setAttribute(name, constructDate());
+
     else if(name.equals("PI"))
+
         pageContext.setAttribute(name, new Double(3.1415));
+
     return EVAL_PAGE;
+
 }
+
 private Date constructDate() {
+
     Calendar c = Calendar.getInstance();
+
     c.set(1947, 7, 15);
+
     return c.getTime();
+
 }
-```
 
 由于我们在 JSP 页面中使用不同的名称三次调用了自定义动作，因此需要根据名称创建不同的脚本变量，并将其存储在 *PageContext* 对象中。这三个变量也具有不同的类型。我们可以对 type 属性进行额外的检查，以确保我们创建的变量具有正确的类型。
 
@@ -6462,10 +7011,9 @@ private Date constructDate() {
 
 在动作之间交换数据最流行的机制是为数据对象分配一个名称。也就是说，一个动作创建、命名并存储对象在一个共享数据区域，而第二个动作使用名称来检索该对象。例如，在下面的 JSP 页面片段中，第一个动作 `<x:foo>` 创建一个对象并将其命名为 "myObject"。然后 `<x:bar>` 动作使用其名称访问同一个对象：
 
-```xml
 <x:foo id="myObject" />
+
 <x:bar ref="myObject" />
-```
 
 通过显式地按名称标识对象，两个动作宣告了它们之间的协作。正如我们之前看到的，JSP 容器将名称与实际对象之间的映射维护为共享数据空间（通常是当前的 `PageContext` 对象）中的一个属性。`<x:foo>` 动作调用 `pageContext` 变量提供的 `setAttribute` 方法，将对象存储在名称 "myObject" 下。然后 `<x:bar>` 动作使用 `getAttribute` 方法检索该对象。
 
@@ -6475,51 +7023,62 @@ private Date constructDate() {
 
 第二种方法使用对象作用域来共享数据。例如，考虑以下代码片段：
 
-```xml
 <x:foo>
+
     <x:bar />
+
 </x:foo>
-```
 
 在此片段中，`<x:bar />` 动作嵌套在 `<x:foo>` 动作内。请记住，所有标签处理器至少共享两个基本属性：当前的 `pageContext` 和父标签处理器。因此，`<x:foo>` 动作可以创建一个对象并提供访问方法。然后 `<x:bar />` 动作可以访问其父级并调用访问器方法来请求该对象。
 让我们看一个具体的例子。考虑以下代码片段：
 
-```xml
 <sample:account number="34404">
+
     <sample:withdraw amount="500" />
+
 </sample:account>
-```
 
 以下是 `<sample:account>` 动作的标签处理器：
 
-```java
 public class AccountTag extends BodyTagSupport {
+
     private int account = 0;
+
     public void setNumber(int number) {
+
         account = number;
+
     }
+
     public int getNumber() {
+
         return account;
+
     }
+
 }
-```
-
-
 
 `<sample:account>`标签处理器会存储账户号码，并通过*getNumber*方法提供访问。`<sample:withdraw>`动作的标签处理器可以这样提取该账户号码：
 
-```java
 public class WithdrawTag extends TagSupport {
+
     private int amount = 0;
+
     public void setAmount(int amt) {
+
         amount = amt;
+
     }
+
     public int doStartTag() {
+
         AccountTag parent_tag = (AccountTag)getParent();
+
         int acctNumber = parent_tag.getNumber();
+
     }
+
 }
-```
 
 *WithdrawTag*使用*Tag*接口中的*getParent*方法来获取外层的标签处理器，并直接从中请求账户号码。
 工具类*TagSupport*提供了两个有用的设施，以支持动作之间的这种隐式通信：
@@ -6553,49 +7112,77 @@ public class WithdrawTag extends TagSupport {
 
 查看文件 `template.jsp`。该文件内容如下：
 
-```jsp
 <%@ taglib uri="/template" prefix="template" %>
+
 <HTML>
+
 <HEAD><TITLE>
+
     <template:get name="title" default="Hello" direct="true" />
+
 </TITLE></HEAD>
+
 <BODY>
+
     <TABLE WIDTH=650 BORDER=0>
+
     <TR>
+
         <TD COLSPAN=2>
+
             <template:get name="header" default="header.html" />
+
         </TD>
+
     </TR>
+
     <TR>
+
         <TD>
+
             <TABLE WIDTH=650 BORDER=1>
+
             <TR>
+
                 <TD WIDTH=15%>
+
                     <template:get name="sidebar" default="Sidebar.html" />
+
                 </TD>
+
                 <TD WIDTH=85%>
+
                     <template:get name="main" default="Main.html" />
+
                 </TD>
+
             </TR>
+
             </TABLE>
+
         </TD>
+
     </TR>
+
     </TABLE>
+
 </BODY>
+
 </HTML>
-```
 
 该JSP页面生成了如图6-7所示的布局。页面上有四个动态元素，代表页面上的四个不同区域：标题、页头、侧边栏和主内容区。每个区域使用自定义动作`<template:get>`来包含一个Web资源。你使用属性`name`来标识包含的资源。你也可以使用属性`default`指定一个默认值。当值是一个`String`常量（例如，标题）时，你通过将属性`direct`设置为`true`来指示这一点。否则，该值指定一个文件（JSP页面或HTML页面）。
 
 4. 查看文件 `instance1.jsp`。其内容如下：
 
-```jsp
 <%@ taglib uri="/template" prefix="template" %>
+
 <template:insert name="template.jsp">
+
     <template:put name="title" value="Inventory" />
+
     <template:put name="main" value="Inventory.html" />
+
 </template:insert>
-```
 
 此JSP页面使用 `template.jsp` 定义其布局。它使用了两个自定义标签，`<template:put>` 和 `<template:insert>`，前者嵌套在后者内部。它将字符串 "Inventory" 分配给标题，并将JSP文件 `Inventory.html` 插入到主内容区。其余元素插入默认值。
 
@@ -6603,13 +7190,15 @@ public class WithdrawTag extends TagSupport {
 
 5. 现在查看文件 `instance2.jsp`。其内容如下：
 
-```jsp
 <%@ taglib uri="/template" prefix="template" %>
+
 <template:insert name="template.jsp">
+
     <template:put name="title" value="Checkout" />
+
     <template:put name="main" value="Checkout.html" />
+
 </template:insert>
-```
 
 此JSP页面也使用 `template.jsp` 定义其布局。这次，我们的JSP页面将字符串 "Checkout" 分配给标题，同时将HTML文件 `Checkout.html` 插入到主内容区。其余元素插入默认值。
 
@@ -6619,52 +7208,93 @@ public class WithdrawTag extends TagSupport {
 
 按顺序查看标签处理器，首先从 `<template:get>` 动作的处理器开始。代码如下所示：
 
-```java
 package template;
+
 import javax.servlet.*;
+
 import javax.servlet.jsp.*;
+
 import javax.servlet.jsp.tagext.*;
+
 import java.io.*;
+
 public class GetTag extends TagSupport {
+
     private String name = null;
+
     private String deflt = null;
+
     private boolean isDirect = false;
+
     public void setName(String name) {
+
         this.name = name;
+
     }
+
     public void setDefault(String deflt) {
+
         this.deflt = deflt;
+
     }
+
     public void setDirect(boolean isdirect) {
+
         this.isDirect = isdirect;
+
     }
+
     public int doEndTag() throws JspException {
+
         String value =
+
             (String)pageContext.getAttribute(name,
+
                                            PageContext.REQUEST_SCOPE);
+
         if(value == null) {
+
             value = deflt;
+
         }
+
         try {
+
             if (isDirect == true) {
+
                 // 将值作为直接输出写入JspWriter
+
                 pageContext.getOut().print(value);
+
             }
+
             else {
+
                 // 将值视为需要包含的资源
+
                 pageContext.include(value);
+
             }
+
         }
+
         catch(IOException ioe) {
+
             throw new JspTagException("Get Tag: " + ioe);
+
         }
+
         catch(ServletException se) {
+
             throw new JspTagException("Get Tag: " + se);
+
         }
+
         return EVAL_PAGE;
+
     }
+
 }
-```
 
 `<template:get>` 动作不需要标签体，因此它继承了`TagSupport`工具类。它为属性定义了setter方法：`name`、`default`和`direct`。属性`name`表示模板中动态元素的名称。属性`default`表示其默认值。属性`direct`表示该元素是代表一个用于直接输出的`String`，还是一个需要被包含的资源。
 
@@ -6672,73 +7302,119 @@ public class GetTag extends TagSupport {
 
 **8.** 现在，让我们查看 `<template:put>` 动作的标签处理器。代码如下：
 
-```java
 package template;
+
 import javax.servlet.jsp.*;
+
 import javax.servlet.jsp.tagext.*;
+
 import java.io.*;
+
 public class PutTag extends TagSupport {
+
     private String name = null;
+
     private String value = null;
+
     public void setName(String name) {
+
         this.name = name;
+
     }
+
     public void setValue(String value) {
+
         this.value = value;
+
     }
+
     public int doEndTag() throws JspException {
+
         InsertTag parent = (InsertTag)getParent();
+
         parent.setEntry(name, value);
+
         return EVAL_PAGE;
+
     }
+
 }
-```
-
-
 
 此标签处理器同样扩展了 `TagSupport`，因为它不需要标签体。随后，它为两个属性 `name` 和 `value` 定义了 setter 方法。接着，它定义了 `doEndTag` 方法，在该方法中，它获取其父标签（恰好是 `InsertTag`），并通过 `setEntry` 方法将 `name` 和 `value` 的值发送给父标签。（这说明了基于隐式语法作用域的 action 之间的通信。）
 
 9.  最后，这是 `<template:insert>` 的标签处理器：
 
-```
 package template;
+
 import javax.servlet.*;
+
 import javax.servlet.jsp.*;
+
 import javax.servlet.jsp.tagext.*;
+
 import java.io.*;
+
 import java.util.*;
+
 public class InsertTag extends BodyTagSupport {
+
     private String name = null;
+
     private Map entries = new HashMap();
 
     public void setName(String name) {
+
         this.name = name;
+
     }
+
     public int doAfterBody() throws JspException {
+
         Iterator iter = entries.keySet().iterator();
 
         // Set the template inputs as variables in pageContext
+
         while(iter.hasNext()) {
+
             String name = (String)iter.next();
+
             String value = (String)entries.get(name);
+
             pageContext.setAttribute(name, value, PageContext.REQUEST_SCOPE);
+
         }
+
         try {
+
             pageContext.forward(name);
+
         }
+
         catch(IOException ioe) {
+
             throw new JspTagException("Insert Tag: " + ioe);
+
         }
+
         catch(ServletException se) {
+
             throw new JspTagException("Insert Tag: " + se);
+
         }
+
         return SKIP_BODY;
+
     }
+
     public void setEntry(String name, String value) {
+
         entries.put(name, value);
+
     }
+
 }
-```
+
+
 
 `<template:insert>` action 包含标签体并需要对其进行操作。因此，其标签处理器扩展了 `BodyTagSupport` 工具类。它使用 `setName` 方法存储模板文件名（设置为属性 `name` 的值）。它还为模板设置的每个动态属性维护一个包含 [name, value] 对的 `HashMap`。
 
@@ -6810,7 +7486,7 @@ public class InsertTag extends BodyTagSupport {
 
 # 应用程序开发中的模式
 
-分析模式是相对较新的应用程序开发工具。所谓的“四人帮”（GoF）著作——Gamma、Helm、Johnson 和 Vlissides 所著的《设计模式：可复用面向对象软件的基础》（Addison-Wesley 出版公司，1995 年）是基于模式开发的权威指南。其重要性在于它首次在一本书中命名、分类并解释了一系列基本的面向对象软件设计模式。然而，“模式”一词及其在软件中的应用早于“四人帮”著作，并且具有多样化的根源。早期的 Smalltalk 社区和建筑设计师克里斯托弗·亚历山大（Christopher Alexander）的思想（Alexander、Ishikawa、Silverstein、Jacobson、Fikadahl-King 和 Angel 所著的《模式语言》，牛津大学出版社，1977 年）尤为重要。这个概念自 1990 年代初以来在各种群体中得到了广泛传播。
+分析模式是相对较新的应用程序开发工具。所谓的“四人帮”（GoF）著作——Gamma、Helm、Johnson 和 Vlissides 所著的《设计模式：可复用面向对象软件的基础》（Addison-Wesley 出版公司，1995 年）是基于模式开发的权威指南。其重要性在于它首次在一本书中命名、分类并解释了一系列基本的面向对象软件设模式。然而，“模式”一词及其在软件中的应用早于“四人帮”著作，并且具有多样化的根源。早期的 Smalltalk 社区和建筑设计师克里斯托弗·亚历山大（Christopher Alexander）的思想（Alexander、Ishikawa、Silverstein、Jacobson、Fikadahl-King 和 Angel 所著的《模式语言》，牛津大学出版社，1977 年）尤为重要。这个概念自 1990 年代初以来在各种群体中得到了广泛传播。
 
 # 模式的概念
 
@@ -6842,7 +7518,7 @@ public class InsertTag extends BodyTagSupport {
 
 模式促进了关于解决方案的讨论，因为模式暗示了问题情境。如果你将一个模式应用到你的问题上，你就有效地表达了你对该问题的分析。其他人可以就此分析与你辩论，而这场辩论可以进一步阐明问题。
 
-通过有意识地使用模式（你可能是无意识地这样做，但这不那么有益），你可以丰富你可用的解决方案库。这可以加速你在未来项目中识别合适软件解决方案的能力。
+通过有意识的使用模式（你可能是无意识地这样做，但这不那么有益），你可以丰富你可用的解决方案库。这可以加速你在未来项目中识别合适软件解决方案的能力。
 
 模式将开发者社群的智慧规范化。当你恰当地应用模式时，你会有安全感，知道其他开发者会认同这个解决方案。这减少了采用不优雅、不灵活或不正确解决方案的可能性。
 
@@ -6871,7 +7547,7 @@ public class InsertTag extends BodyTagSupport {
 
 *物理架构*定义了应用程序运行的硬件和网络基础设施。每个软件应用都依赖于一个物理架构。例如，一个应用可能需要运行特定 Web 浏览器的客户端机器、一台 Web 服务器机器和一台数据库机器。此外，可能还有网络布线和硬盘要求。应用的硬件和网络需求规范以及这些硬件组件之间的具体交互，就是我们所说的物理架构。
 
-*系统架构*定义了应用程序运行的软件基础设施。每个软件应用都预设了这样一个基础设施。例如，你通常必须考虑网络协议和操作系统才能部署应用。有时你必须将应用与其他应用集成。多个应用的集成也是系统架构的一部分。
+*系统架构*定义了应用程运行的软件基础设施。每个软件应用都预设了这样一个基础设施。例如，你通常必须考虑网络协议和操作系统才能部署应用。有时你必须将应用与其他应用集成。多个应用的集成也是系统架构的一部分。
 
 *数据库架构*定义了应用的数据模型。为任何给定的应用数据建模有许多不同的方式，数据库供应商提供不同的功能来支持这些定义。你可以将数据库架构归入应用软件架构（我们的下一个主题），因为它们位于系统和物理架构之上，并且应用开发者通常定义它们。我们将它们分开，是因为应用数据和可能实现数据表示的基础数据模型之间存在逻辑上的区别。例如，如果你使用 XML 实现数据模型，你的模型将具有与使用关系数据库实现的模型截然不同的架构。同样，关系数据库的架构也将与对象数据库的架构显著不同。
 
@@ -6899,7 +7575,7 @@ public class InsertTag extends BodyTagSupport {
 
 ### 两层架构
 
-*两层*架构将表示层和领域逻辑与数据访问逻辑分离。数据库应用程序和简单的 Web 应用程序，就像所有客户端-服务器系统一样，都说明了两层架构。许多现代交互式应用程序都展示了两层架构，这主要是因为数据共享的重要性。图 7-1 复制了我们在模块 1 中用于描述客户端-服务器架构的图表。
+*两层*架构将表示层和领域逻辑与数据访问逻辑分离。数据库应用程序和简单的 Web 应用程序，就像所有客户端-服务器系统一样，都说明了两层架构。许多现代交互式应用程序都展示了两层架构，这主要是因为数据共享的重要性。图 7-1 复制了我们在模块 1 中用用于描述客户端-服务器架构的图表。
 
 当共享数据以及数据的集中控制和维护是重要需求时（对于大多数业务应用程序来说确实如此），两层架构优于单层架构。它们还有一个优势，即相对容易理解和实现。但两层应用程序也有其缺点。
 
@@ -6931,7 +7607,7 @@ public class InsertTag extends BodyTagSupport {
 
 ### 回答：
 
-简短的回答是不！在所有其他条件相同的情况下，三层架构比单层或两层架构具有更好的可伸缩性和灵活性。但存在许多权衡。三层架构需要额外的网络层，这会降低性能并使支持和故障排除更加复杂。实现三层架构需要更高的复杂性。正如我们在模块1中所描述的，网络从来不是完全透明的，因此在三层架构中，延迟和可靠性问题变得更加麻烦。
+简短的回答是不！在所有其他条件相同的情况下，三层架构比单层或两层架构具有更好的可伸缩性和灵活性。但存在许多权衡。三层架构需要额的网络层，这会降低性能并使支持和故障排除更加复杂。实现三层架构需要更高的复杂性。正如我们在模块1中所描述的，网络从来不是完全透明的，因此在三层架构中，延迟和可靠性问题变得更加麻烦。
 结果是，你最好将某些应用程序建模为单层或两层应用程序。例如，桌面实用程序从来不需要三层。当设计为两层应用程序而不是三层时，工作组应用程序通常响应更快、更直观。另一方面，互联网应用程序几乎总是采用三层而不是两层更好。互联网应用程序永远无法准确预测其潜在负载。在这种情况下，你最好谨慎行事，编程实现最大的可伸缩性和灵活性。
 
 ## 拆分表示层
@@ -6990,7 +7666,7 @@ Web浏览器运行插件COM组件和Java小程序的能力意味着你*可以*�
 -   **结构型模式** – 对象组合方式的抽象
 -   **行为型模式** – 对象间通信的抽象
 
-这种分类很有用，因为它有助于理解一组对象在应用程序中所扮演的角色。
+这种分类很有用，因为它有助于理解一组对象在应用程所扮演的角色。
 
 *创建型*模式适用于应用程序使用某些对象来创建其他对象的常见方式。*结构型*模式适用于应用程序从较小的对象或对象系统组合成较大的软件对象和对象系统的方式。*行为型*模式既适用于对象的组合，也适用于应用程序通信和协作的方式。在第二部分描述应用程序的布局时，我们将介绍相关的模式以及它们如何融入这个分类体系。
 
@@ -7008,7 +7684,7 @@ Web浏览器运行插件COM组件和Java小程序的能力意味着你*可以*�
 
 图7-6展示了模型-视图-控制器（MVC）模式，它将应用程序划分为独立的数据管理（模型）、表现（视图）和控制组件。
 
-MVC模式是大多数现代图形用户界面的基础。你也可以将MVC模式应用于Web应用程序。这种划分清晰地分离了控制逻辑、数据管理和表现。因此，它促进了各个组件的独立演进和重用。它还使得更好地利用中介者、命令、策略和桥接等其他模式成为可能。JavaServer Pages最适合实现Web应用程序的表现部分。JavaBeans封装了为网站提供内容的服务，并简化了架构组件之间的数据传递。Servlets最适合作为控制器和中介者，负责路由用户请求和应用程序消息、更新应用程序数据以及驱动应用程序工作流。
+MVC模式是大多数现代图形用户界面的基础。你也可以将MVC模式应用于Web应用程序。这种划分清晰地分离了控制逻辑、数据管理和表现。因此，它促进了各个组件的独立演进和重用。它还使得更好地利用中介者、命令、策略和桥接等其他模式成为可能。JavaServer Pages最适合实现Web应用程序的表现部分。JavaBeans封装了为网站提供内容的服务，并简化了架构组件之间的数据传递。Servlets最适合作为控制器和中介者，负责路由用户请请求和应用程序消息、更新应用程序数据以及驱动应用程序工作流。
 
 MVC模式自然地映射到多层架构模式。图7-7展示了双层架构通常如何将MVC模式的控制部分映射到表现领域。当Servlets实现控制逻辑时，这是一个自然的映射，因为Servlets通常位于表现层。然而，有时三层架构会将部分或全部控制逻辑映射到中间层或业务逻辑层。图7-8展示了这种映射。
 
@@ -7035,7 +7711,7 @@ MVC模式自然地映射到多层架构模式。图7-7展示了双层架构通�
 > **提示**
 > 你可能做过X Window编程或以其他方式使用过函数回调。函数回调是命令模式的过程式等价物。
 
-你也可以将命令模式应用于Web应用程序和窗口菜单。菜单选择和Web应用程序请求之间存在类比。正如菜单选择可以启动窗口或重绘现有窗口一样，浏览器也使用HTTP请求来启动新窗口或显示新页面。在MVC架构中，Servlet通常充当Web页面之间这种移动的路由器。你可以编写自定义的Web应用程序，只需硬编码应用程序的页面流程。在这种情况下，你将决策逻辑嵌入到控制Servlet中。图7-11展示了一个基于MVC的Web架构，其中决策逻辑嵌入在控制Servlet中。
+你也可以将命令模式应用于Web应用程序和窗口菜单。菜单选择和Web应用程序请求之间存在类比。正如菜单选择可以启动窗口或重绘现有窗口一样，浏览器也使用HTTP请请求来启动新窗口或显示新页面。在MVC架构中，Servlet通常充当Web页面之间这种移动的路由器。你可以编写自定义的Web应用程序，只需硬编码应用程序的页面流程。在这种情况下，你将决策逻辑嵌入到控制Servlet中。图7-11展示了一个基于MVC的Web架构，其中决策逻辑嵌入在控制Servlet中。
 
 如果你永远不需要更改应用程序的控制逻辑或显示的页面，硬编码是可行的。但是，假设你必须更改控制逻辑或显示的JavaServer Pages，甚至更改JavaServer Pages的路径。在这种方法下，你必须重新编译和重新部署Servlet，因为它将所有这些元素都编译到Servlet中。命令模式帮助你将行为与控制逻辑分离。图7-12展示了如何做到这一点。
 
@@ -7079,7 +7755,7 @@ JSP架构中的控制Servlet本质上是应用程序Web流程的一个路由器�
 
 **答：** 命令模式将一个Web URL封装为对应的操作令牌（条件）。配置文件可以提供URL列表及其关联的操作令牌。类似地，特定的策略模式可以在运行时根据配置文件的设置进行加载。最后，桥接模式依赖于加载具体的实现。你可以在配置文件中指定正确的实现类。
 
-- GoF识别出创建型、结构型和行为型模式。
+- GoF识别出创建型、结构型和行为型模。
 - MVC模式将软件对象划分为三种角色：控制器、视图和模型。控制器负责路由消息，视图负责管理呈现，模型负责管理应用程序状态。
 - 是的，这很容易。例如，一个两层架构通常将控制器和视图映射到表示层，将模型映射到数据层。
 - 其他重要的软件模式包括：中介者、命令、策略和桥接。
@@ -7103,13 +7779,21 @@ JSP架构中的控制Servlet本质上是应用程序Web流程的一个路由器�
 9. 将 `web.xml` 文件移动到 `WEB-INF` 子目录中。
 
 ```xml
+
 <Context path="/gallery"
+
     docBase="webapps/gallery"
+
     crossContext="true"
+
     debug="0"
+
     reloadable="true"
+
     trusted="false" >
+
 </Context>
+
 ```
 
 10. 在 `WEB-INF` 下创建子目录 `tlds` 和 `classes`。
@@ -7118,34 +7802,49 @@ JSP架构中的控制Servlet本质上是应用程序Web流程的一个路由器�
 13. 请特别注意名为 "COMMAND" 且值为 "GET_IMAGES" 的隐藏输入元素：
 
 ```html
+
 <INPUT TYPE=hidden NAME="COMMAND" VALUE="GET_IMAGES">
+
 ```
 
 此元素确保当你提交此表单时，Servlet控制器将调用由标签 `GET_IMAGES` 标识的命令。
 14. 表单的操作（action）命名为 `/gallery/Controller`，这实际上映射到Java Servlet类 `gallery.ControllerServlet`。我们在 `web.xml` 文件中使用 `<servlet>` 和 `<servlet-mapping>` 标签来建立此映射。首先我们使用 `<servlet>` 标签：
 
 ```xml
+
 <servlet>
+
     <servlet-name>Controller</servlet-name>
+
     <servlet-class>gallery.ControllerServlet</servlet-class>
+
 </servlet>
+
 ```
 
 然后我们使用 `<servlet-mapping>` 标签：
 
 ```xml
+
 <servlet-mapping>
+
     <servlet-name>Controller</servlet-name>
+
     <url-pattern>/Controller</url-pattern>
+
 </servlet-mapping>
+
 ```
 
 请注意，Web应用DTD要求所有 `<servlet>` 标签必须归组，所有 `<servlet-mapping>` 标签归组，所有 `<taglib>` 标签归组。这些标签在 `web.xml` 文件中还必须按此顺序出现：`<servlet>`、`<servlet-mapping>` 和 `<taglib>`。
 15. 现在，让我们检查 `ControllerServlet`。顾名思义，这个Servlet在MVC模式中充当控制器。控制器负责路由用户请求并驱动应用程序工作流。以下是 `ControllerServlet` 类：
 
 ```java
+
 public class ControllerServlet extends HttpServlet {
+
     private Map commands = new HashMap();
+
 ```
 
 
@@ -7157,96 +7856,157 @@ public class ControllerServlet extends HttpServlet {
 -   它创建 `Inventory` 类，并使用库存根目录以及用于图像目录的 URL 根目录对其进行初始化。
 -   它建立了命令对象 `GetImagesCommand`，该对象实现了 `Command` 接口，作为命令字符串 `"GET_IMAGES"` 的处理程序。对于命令字符串，可以有任意数量的此类命令处理程序。在“现实世界”的设置中，你可能会通过读取配置文件来建立这种映射，从而消除任何硬编码的依赖关系。
 
-## 18. 当你提交 HTML 表单时，Servlet 容器会将控制权转移给 `ControllerServlet` 的 `doPost` 方法。`doPost` 方法从请求中检索命令字符串（如前所述，该命令字符串先前通过 HTML 文件中的隐藏 `INPUT` 元素建立）。然后，它使用命令字符串从其映射表中检索适当的命令对象，并调用命令对象上的处理程序方法。此设置同时演示了中介者模式和命令模式。控制器 Servlet 实现了中介者模式，在元素之间路由请求。源（HTML 文件）仅向中介者发送消息（命令字符串），而不必担心谁正在处理该消息。请注意，我们的路由算法非常通用，我们不需要替换它（使用策略模式）来适应新的应用程序。目标 `GetImagesCommand` 是命令模式的实现。
+## 18. 当你提交 HTML 表面时，Servlet 容器会将控制权转移给 `ControllerServlet` 的 `doPost` 方法。`doPost` 方法从请求中检索命令字符串（如前所述，该命令字符串先前通过 HTML 文件中的隐藏 `INPUT` 元素建立）。然后，它使用命令字符串从其映射表中检索适当的命令对象，并调用命令对象上的处理程序方法。此设置同时演示了中介者模式和命令模式。控制器 Servlet 实现了中介者模式，在元素之间路由请求。源（HTML 文件）仅向中介者发送消息（命令字符串），而不必担心谁正在处理该消息。请注意，我们的路由算法非常通用，我们不需要替换它（使用策略模式）来适应新的应用程序。目标 `GetImagesCommand` 是命令模式的实现。
 
 ## 19. 我们将 `GetImagesCommand` 实现为内部类（因此它可以访问 `Inventory` 对象）。这完全可以是一个单独的类。`handle` 方法检索请求参数，并将选定的目录名称发送给模型（`Inventory`）以检索其图像。`Inventory` 对象返回一个指向图像列表的 `java.util.Iterator`。该迭代器存储在请求中，并发送到 URL `/galleryViewer`，该 URL 在 MVC 模式中充当视图。此 URL 映射到 JSP 页面文件 `GalleryLayout.jsp`。我们在 `web.xml` 文件中使用以下 XML 片段建立此映射以设置 Servlet 名称：
 
 ```xml
+
 <servlet>
+
     <servlet-name>galleryViewer</servlet-name>
+
     <jsp-file>/jsp/GalleryLayout.jsp</jsp-file>
+
 </servlet>
+
 ```
 
 然后我们使用以下 XML 片段将名称映射到相对 URL：
 
 ```xml
+
 <servlet-mapping>
+
     <servlet-name>galleryViewer</servlet-name>
+
     <url-pattern>/galleryViewer</url-pattern>
+
 </servlet-mapping>
+
 ```
 
 ## 20. 让我们检查 `Inventory` 类：
 
 ```java
+
 public class Inventory {
+
     private String inventoryDirRoot = null;
+
     private String inventoryURLRoot = null;
 
     public Inventory(String inventoryDirRoot,
+
                      String inventoryURLRoot) {
+
         this.inventoryDirRoot = inventoryDirRoot;
+
         this.inventoryURLRoot = inventoryURLRoot;
+
     }
 
     public Iterator getImagesFor(String catalog) {
+
         File dir = new File(inventoryDirRoot + "/" +
+
                            catalog);
+
         String[] fileList = dir.list(new ImageFilter());
+
         if((fileList != null) && (fileList.length > 0)) {
+
             List l = new ArrayList();
+
             for(int i=0; i<fileList.length; i++) {
+
                 l.add(new ImageItem(inventoryURLRoot +
+
                         catalog + "/" +
+
                         fileList[i], fileList[i]));
+
             }
+
             return l.iterator();
+
         }
+
         return null;
+
     }
 
     class ImageFilter implements FilenameFilter {
+
         public boolean accept(File dir, String name) {
+
             return(((name.toLowerCase()).endsWith(".jpg")) ||
+
                    ((name.toLowerCase()).endsWith(".gif")));
+
         }
+
     }
+
 }
+
 ```
 
-## 21. `Inventory` 类在我们的 MVC 模式中充当模型。它将目录名称映射到其物理位置并从中检索图像。在我们的简单应用程序中，图像来自应用程序上下文中的一个命名目录。在现实世界的设置中，它们可以存储在数据库中，并由中间层应用程序服务器保护。
+## 21. `Inventory` 类在我们的 MVC 模式中充当模型。它将目录名称映射到其物理位置并从中检索图像。在我们的简单应用程序中，图像来自应用程序上下文中的一个命名目录。在现实世界的设置中，它们可以存储在数据库中，并由中间层应用程序服务器保抲。
 
 ## 22. `getImagesFor` 方法检索某个目录的图像，将它们存储在 `java.util.ArrayList` 中，并返回一个指向它的迭代器。它检查库存根目录的内容，仅过滤扩展名为 `.gif` 和 `.jpg` 的文件。内部类 `ImageFilter` 执行过滤。仅当 `ImageFilter` 对某个文件返回 true 时，`getImagesFor` 方法才会返回该目录中的文件。`ImageFilter` 及其在目录列表中的应用是策略模式的一个示例。
 
 ## 23. 这是 JSP 页面文件 `GalleryLayout.jsp`，它在我们的 MVC 模式中充当视图：
 
 ```jsp
+
 <%@ page import="gallery.GalleryLayout" %>
+
 <%@ page import="java.util.Iterator" %>
+
 <%@ taglib uri="galleryLayout-taglib" prefix="gallery" %>
+
 <HTML>
+
 <HEAD><TITLE>Image Reader and Layout Test</TITLE></HEAD>
+
 <BODY bgcolor="white" >
+
 <FONT color="black" >
+
 <%-- Layout the images in a gallery view --%>
+
 <%
+
 String itemsPerRow =
+
     (String)request.getAttribute("ITEMS_PER_ROW");
+
 Iterator iterator =
+
     (Iterator)request.getAttribute("IMAGES");
+
 %>
+
 <gallery:layout
+
     images='<%= iterator %>'
+
     itemsPerRow='<%= itemsPerRow %>'
+
     width="5"
+
     borderWidth="10"
+
     />
+
 </BODY>
+
 </HTML>
+
 ```
 
-## 24. 如你所见，我们将图库视图实现为自定义标签 `<gallery:layout>`。我们传递表示目录图像列表的 `Iterator` 以及用户选择的每行项目数。（我们将此自定义标签的详细信息留作读者的练习。）
+## 24. 如你所见，我们将图库视图实现为自定�标签 `<gallery:layout>`。我们传递表示目录图像列表的 `Iterator` 以及用户选择的每行项目数。（我们将此自定义标签的详细信息留作读者的练习。）
 
 ## 25. 编译所有 Java 源文件——`GalleryLayout.java`、`GalleryItem.java`、`ImageItem.java`、`ControllerServlet.java`、`Command.java` 和 `Inventory.java`——并将类文件放在 `%TOMCAT_HOME%/webapps/gallery/WEB-INF/classes` 目录下。
 
@@ -7349,11 +8109,9 @@ Iterator iterator =
 
 您也可以将安全视为组织成不同的*安全策略域*或*领域*。安全策略域是任何由共同安全策略控制的功能或资源的分组。此类领域的边界通常难以辨别，因为它们可能重叠。根据所需的安全级别，您可以将域聚集成“信任环”。不同的“信任环”可以在同一技术域（即使用相同的技术机制）中进行管理。图8-1显示了应用程序通过这种聚类进入低、中、高安全领域的过程。
 
-“信任环”模型背后的理念是，当用户从聚集在安全性较低环中的安全领域移动到聚集在安全性较高环中的安全领域时，他们*应该*满足额外的安全要求（通常包括额外的登录）。同一个环内的领域大致共享相同的安全要求。当用户使用仅对安全性较低环内领域有效的安全凭证，访问到需要更高安全性的环内领域时，就会发生安全*违规*。
+“信任环”模型背后的理念是，当用户从聚集在安全性较低环中的安全领域移动到聚集在安全性较高环中的安全领域时，他们*应该*满足额外的安全要求（通常包括额的登录）。同一个环内的领域大致共享相同的安全要求。当用户使用仅对安全性较低环内领域有效的安全凭证，访问到需要更高安全性的环内领域时，就会发生安全*违规*。
 
 例如，数据库访问通常是一个具有高安全要求的领域。相比之下，操作系统的目录和文件结构通常具有较低的安全要求。通常，应用程序会登录到数据库
-
-
 
 ### 图 8-1 “信任环”
 
@@ -7367,7 +8125,7 @@ Iterator iterator =
 
 #### 注意
 
-术语 “DMZ” 代表 “非军事区”。在网络架构中，它指的是在受保护的网络（即受防火墙保护的网络）和外部网络（即互联网）之间添加的一个网络，以提供额外的安全层。它的另一个名称是*边界网络*。
+术语 “DMZ” 代表 “非军事区”。在网络架构中，它指的是在受保护的网络（即受防火墙保护的网络）和外部网络（即互联网）之间添加一个网络，以提供额外的安全层。它的另一个名称是*边界网络*。
 
 在这个网络架构中，路由器将完全不可信的互联网与 DMZ 分隔开，而网络防火墙则将 DMZ 网络与企业内部网络分隔开。所有网络流量必须通过路由器才能到达 DMZ，并通过防火墙才能到达企业内部网络。
 
@@ -7393,7 +8151,7 @@ Iterator iterator =
 
 ### 完整性
 
-消息完整性指的是应用程序确认从用户发送的消息在传输过程中未被修改的过程。如果你可以在传输过程中修改消息，那么你就可以欺骗收件人做出不恰当的安全决策。想象一下，你可以访问某人与其在线经纪商之间的互联网通信。通过拦截一条消息并修改回复，你可以诱骗一个人提供他的社会安全号码（SSN）或信用卡信息。图 8-4 说明了这个问题。它显示一个 Web 浏览器正在向一个欺骗站点请求一个网页。欺骗站点然后从真实站点请求该页面。真实站点返回所请求的页面。欺骗者重写该页面并将其返回给 Web 浏览器。在整个过程中，用户从未意识到欺骗者正在为了自己的目的而操纵信息。
+消息完整性指的是应用程序确认从用户发送的消息在传输过程中未被修改的过程。如果你可以在传输过程中修改消息，那么你就可以欺骗收件人做出不恰当的安全决策。想象一下，你可以访某人与其在线经纪商之间的互联网通信。通过拦截一条消息并修改回复，你可以诱骗一个人提供他的社会安全号码（SSN）或信用卡信息。图 8-4 说明了这个问题。它显示一个 Web 浏览器正在向一个欺骗站点请求一个网页。欺骗站点然后从真实站点请求该页面。真实站点返回所请求的页面。欺骗者重写该页面并将其返回给 Web 浏览器。在整个过程中，用户从未意识到欺骗者正在为了自己的目的而操纵信息。
 
 保证消息完整性的最佳方法是在消息中存储加密的*消息摘要*。消息摘要使用哈希算法（即一种为每个二进制输入生成二进制签名的方法）。这样的哈希必须具有几个特征：
 
@@ -7432,7 +8190,7 @@ Iterator iterator =
 - 什么是“拒绝服务攻击”？
 - 为什么可能要审计用户活动？
 
-- 术语“授权”指的是应用程序对功能或资源实施访问控制的过程。
+- 术语“授权”指的是应用程序对功能或资源实施访控制的过程。
 - 术语“消息完整性”指的是应用程序对用户消息在从用户传输过程中未经任何修改的信心。
 - 术语“机密性”指的是应用程序对在用户消息从用户传输到应用程序期间无人检查该消息的信心。
 - 拒绝服务攻击试图用大量用户消息淹没应用程序，使其无法响应（即变得不可用）。
@@ -7454,7 +8212,7 @@ LDAP 身份验证和基于证书的身份验证对许多现代应用程序具有
 
 LDAP 服务器实现了轻量级目录访问协议（LDAP）以提供通用目录服务。LDAP 服务器将信息存储为树结构中的条目。对象类定义每个条目的类型，包括必需和可选属性。一个*可分辨名称*（DN）唯一标识每个条目。DN 的格式由条目的标签加上到树根的路径组成。图 8-5 展示了一个 LDAP 目录。
 
-图 8-5 显示了三个 LDAP 对象类：*国家*、*组织*和*个人*。*国家*条目位于 LDAP 层次结构的第一级。这些条目有一个必需的属性 `c`（国家）。*组织*条目位于层次结构的第二级。这些条目有一个必需的属性 `o`（组织）。*个人*条目位于层次结构的叶节点。这些条目有两个必需的属性：`cn`（通用名称）和 `sn`（姓氏）。它们还有一个可选属性 UID（用户 ID）。应用程序向 LDAP 服务器提供身份验证信息以检索像 UID 这样的应用属性。
+图 8-5 显示了三个 LDAP 对象类：*国家、*组织*和*个人*。*国家*条目位于 LDAP 层次结构的第一级。这些条目有一个必需的属性 `c`（国家）。*组织*条目位于层次结构的第二级。这些条目有一个必需的属性 `o`（组织）。*个人*条目位于层次结构的叶节点。这些条目有两个必需的属性：`cn`（通用名称）和 `sn`（姓氏）。它们还有一个可选属性 UID（用户 ID）。应用程序向 LDAP 服务器提供身份验证信息以检索像 UID 这样的应用属性。
 
 ![](img/7a40f8957e7c3eb68dbb9f8ab3cef54d_323_0.png)
 
@@ -7474,10 +8232,10 @@ X.509 证书存储实体的身份并通过使用实体的私钥加密某些数�
 
 图 8-6 基于数字证书的身份验证
 
-证书需要证书颁发机构（CA）来担保证书中存储的身份信息。其思想是，此类机构具有法律责任，使其关于证书的证词具有可信度。任何人都可以自立为证书颁发机构，因此整个方案取决于机构的声誉。这实际上意味着，公钥方案中的密钥管理问题已从密钥的管理转移到公钥的管理。
+证书需要证书颁发机构（CA）来担保证书中存储的身份信息。其思想是，此类机构具有法律责任，使其关于证书的证词具有可信度。任何人都可以自立为证书颁发机构，因此整个方案取决于机构的声誉。这实际上意味着，公钥方案中的密�管理问题已从密钥的管理转移到公钥的管理。
 
 > **注意**
-一些比较知名的证书颁发机构是 Verisign 和 Entrust。你可以使用 Java 2 附带的 **keytool** 实用程序为自己设置证书颁发机构以用于开发目的。
+一些比较知名的证书颁发机构是 Verisign和Entrust。你可以使用 Java 2 附带的 **keytool** 实用程序为自己设置证书颁发机构以用于开发目的。
 
 目前 Web 浏览器是安全证书最知名的使用者。它们使用这些证书来启用安全套接字层（SSL）协议。Web 站点也使用证书向浏览器用户标识自身。Java 程序员可以通过使用 java.security.cert 包并将此包中定义的抽象类的实现从供应商处购买，来将基于证书的身份验证嵌入应用程序中。
 
@@ -7499,14 +8257,19 @@ X.509 证书存储实体的身份并通过使用实体的私钥加密某些数�
 在质询-响应协商中，客户端首先请求访问特定资源。如果该资源的访问受到控制，安全机制会拦截此请求并返回授权错误。例如，当使用基本认证时，服务器可能会返回类似于以下内容的HTTP响应头（模块1）：
 
 ```
+
 HTTP/1.1 401 Unauthorized
+
 WWW-Authenticate: Basic realm="wsolney"
-```
-
-此时，浏览器将显示一个对话框，用户必须在其中输入凭据信息。然后客户端可以在请求头中使用base64编码返回凭据来响应授权凭据。以下是一个示例：
 
 ```
+
+此时，浏览器会显示一个对话框，用户必须在其中输入凭据信息。然后客户端可以在请求头中使用base64编码返回凭据来响应授权凭据。以下是一个示例：
+
+```
+
 Authorization: Basic base64-encoding-of(username:password)
+
 ```
 
 如果客户端提供了足够的凭据，安全机制将允许该请求。如果没有，安全机制将返回另一个授权错误。如果认证成功，浏览器通常会缓存认证信息，这样客户端在会话期间就无需再次提供此认证信息。
@@ -7552,7 +8315,7 @@ Base64编码是一种数据编组形式，*不是*加密形式。它实现了数
 4.  创建一个组文件并将用户添加到组中。
 5.  配置服务器以使用基本认证以及该域的密码和组文件。
 
-Apache的*域*只是一组在共同访问控制下的命名Web资源。这些域符合我们对安全域的定义——由共同安全策略控制的任何功能或资源分组。Apache配置文档建议您*不要*将密码和组文件放在文档根目录（浏览网站的起始点）下。如果将它们放在文档根目录下，用户可以在他们的Web浏览器中查看它们，从而危及这些文件的安全性。
+Apache的*域*只是一组在共同访问控制下的命名Web资源。这些域符合我们对安全域的定义——由共同安全策略控制的任何功能或资源的分组。Apache配置文档建议您*不要*将密码和组文件放在文档根目录（浏览网站的起始点）下。如果将它们放在文档根目录下，用户可以在他们的Web浏览器中查看它们，从而危及这些文件的安全性。
 
 在Apache Server Version 1.3中，在Windows平台上，密码文件记录的格式是：
 
@@ -7561,48 +8324,78 @@ Apache的*域*只是一组在共同访问控制下的命名Web资源。这些域
 在Windows平台上，默认情况下，用户名和密码都必须是明文（未加密的）ASCII字符串。这是因为Apache将明文认证（mod_auth）静态编译到服务器中。您可以通过切换到Apache的bin目录并在控制台窗口中输入以下命令来确认此默认行为：
 
 ```
+
 \>Apache.exe -l
+
 ```
 
 执行此操作后，您应该会看到以下输出：
 
 ```
+
 Compiled-in modules:
+
   http_core.c
+
   mod_so.c
+
   mod_mime.c
+
   mod_access.c
+
   mod_auth.c
+
   mod_negotiation.c
+
   mod_include.c
+
   mod_autoindex.c
+
   mod_dir.c
+
   mod_cgi.c
+
   mod_userdir.c
+
   mod_alias.c
+
   mod_env.c
+
   mod_log_config.c
+
   mod_asis.c
+
   mod_imap.c
+
   mod_actions.c
+
   mod_setenvif.c
+
   mod_isapi.c
+
 ```
 
 如果您想使用密码加密，您必须通过配置httpd.conf来加载适当的模块以启用它。以下是相关片段的列表（格式已更改以适应页面）：
 
 ```
+
 #LoadModule anon_auth_module modules/ApacheModuleAuthAnon.dll
+
 #LoadModule dbm_auth_module modules/ApacheModuleAuthDBM.dll
+
 #LoadModule digest_auth_module modules/ApacheModuleAuthDigest.dll
+
 ```
 
 如您所见，Apache支持匿名用户认证（anon_auth_module），也支持使用DBM数据库文件格式（使用crypt加密）或Berkeley DB格式（dbm_auth_module）的密码文件进行认证。最后，它还支持摘要认证（digest_auth_module）。如果您使用任何这些替代形式的认证，您必须使用htpasswd工具并带有适当的选项来创建密码文件。此外，每个模块的Apache指令是不同的。我们将使用默认方式——明文密码认证——来描述Apache配置。
 以下是Windows上Apache密码文件的一个示例：
 
 ```
+
 Gary:welcome
+
 Bartee:goodbye
+
 ```
 
 
@@ -7633,17 +8426,29 @@ Tomcat Servlet 容器中的基本认证需要三个步骤：
 **配置用户、密码和角色** Tomcat 安装包提供了一些用户和角色来支持其示例。在默认的 `tomcat-users.xml` 文件中，你可以找到这个 `<tomcat-users>` 块（格式有所调整）：
 
 ```
+
 <tomcat-users>
+
   <user name="tomcat" password="tomcat"
+
         roles="tomcat"
+
   />
+
   <user name="role1"
+
         password="tomcat" roles="role1"
+
   />
+
   <user name="both"  password="tomcat"
+
         roles="tomcat,role1"
+
   />
+
 </tomcat-users>
+
 ```
 
 这个 `<tomcat-users>` 块定义了三个用户：“tomcat”、“role1”和“both”。这三个用户共享相同的密码“tomcat”。第一个用户属于“tomcat”角色，第二个用户属于“role1”角色，第三个用户同时属于这两个角色。
@@ -7651,38 +8456,65 @@ Tomcat Servlet 容器中的基本认证需要三个步骤：
 **配置 `<security-constraint>` 块** 添加用户后，你必须在应用程序的 `web.xml` 文件中配置一个 `<security-constraint>` 块。Tomcat 提供了一个配置了安全性的示例应用程序。你可以在 `%TOMCAT_HOME%\webapps\examples` 中找到它。如果你查看该应用程序的 `web.xml` 文件（在其 `WEB-INF` 目录中），你会找到这个 `<security-constraint>` 块（格式有所调整）：
 
 ```
+
 <security-constraint>
+
   <web-resource-collection> <!-- 指定要保护的资源 -->
+
     <web-resource-name>受保护区域
+
     </web-resource-name>
-    <!-- 定义要保护的与上下文相关的 URL
+
+    <!-- 定要保护的与上下文相关的 URL
+
     -->
+
     <url-pattern>/jsp/security/protected/*</url-pattern> <!-- 受保护的页面 -->
+
   </web-resource-collection>
+
   <!-- 如果你列出了 HTTP 方法，那么只有这些方法会受到保护
+
   -->
+
   <http-method>DELETE</http-method>
+
   <http-method>GET</http-method>
+
   <http-method>POST</http-method>
+
   <http-method>PUT</http-method>
+
 </web-resource-collection>
+
 <auth-constraint>
+
   <!-- 任何具有以下列出角色的用户都可以访问此区域
+
   -->
+
   <role-name>tomcat</role-name>
+
   <role-name>role1</role-name>
+
 </auth-constraint>
+
 </security-constraint>
+
 ```
 
 这个 `<security-constraint>` 块使用两个子元素配置了示例应用程序上下文：`<web-resource-collection>` 和 `<auth-constraint>`。第一个子元素指定了受保护的资源；第二个子元素指定了可以访问受保护资源的用户角色。
 
-`web.xml` 文件的 DTD 支持第三个子元素：`<user-data-constraint>`。`<user-data-constraint>` 子元素指定了客户端和服务器之间协议的安全约束。例如，考虑以下 XML 片段：
+`web.xml` 文件的 DTD 支持第三个子元素：`<user-data-constraint>`。`<user-data-constraint>` 子元器指定了客户端和服务器之间协议的安全约束。例如，考虑以下 XML 片段：
 
 ```
+
 <user-data-constraint>
+
   <transport-guarantee>INTEGRAL</transport-guarantee>
+
 </user-data-constraint>
+
 ```
 
 此片段要求请求的传输协议必须保证其完整性。这意味着浏览器必须以无法在传输过程中被篡改的方式提交请求。其他值可以是 NONE 和 CONFIDENTIAL。NONE 值是默认值，不对请求传输施加任何约束。CONFIDENTIAL 值要求请求传输保证在传输过程中无法被读取。实际上，INTEGRAL 和 CONFIDENTIAL 值意味着使用 SSL 作为请求传输协议。
@@ -7690,11 +8522,17 @@ Tomcat Servlet 容器中的基本认证需要三个步骤：
 **配置 `<login-config>` 块** 最后，你必须为你的应用程序配置一个 `<login-config>` 块。再次查看 Tomcat 示例应用程序的 `web.xml` 文件。你可以找到一个类似这样的 `<login-config>` 块：
 
 ```
+
 <login-config>
+
     <auth-method>BASIC</auth-method>
+
     <realm-name>示例基本认证区域
+
     </realm-name>
+
 </login-config>
+
 ```
 
 `<auth-method>` 标签指定了 Servlet 和 JavaServer Pages 的认证方式，其作用类似于 `AuthType` 指令对 Apache Web 服务器进行认证配置。Tomcat 支持此标签的四个有效值：
@@ -7711,11 +8549,17 @@ Tomcat Servlet 容器中的基本认证需要三个步骤：
 Servlet 容器的摘要认证工作方式类似于 Apache Web 服务器中的摘要认证。你配置 Tomcat 的摘要认证就像配置基本认证一样，只是你需要为 `<auth-method>` 标签提供一个不同的值。摘要认证的 `<login-config>` 块如下所示：
 
 ```
+
 <login-config>
+
     <auth-method>Digest</auth-method>
+
     <realm-name>示例基本认证区域
+
     </realm-name>
+
 </login-config>
+
 ```
 
 Servlet 容器无需实现摘要认证即可符合 J2EE 标准，尽管规范推荐支持该认证方式。
@@ -7733,33 +8577,51 @@ Servlet 规范要求所有符合规范的 J2EE Servlet 容器都必须支持 HTT
 基于表单的认证允许你向 Servlet 认证机制提供自定义的登录页面。如果我们回到 %TOMCAT_HOME%\webapps\examples 中的示例安全应用程序，我们可以在 web.xml 文件中看到以下 XML 片段（格式已更改）：
 
 ```
+
 <login-config>
+
     <auth-method>FORM</auth-method>
+
     <realm-name>Example Form-Based Authentication Area</realm-name>
+
     <form-login-config>
+
         <form-login-page>/jsp/security/login/login.jsp</form-login-page>
+
         <form-error-page>/jsp/security/login/error.jsp</form-error-page>
+
     </form-login-config>
+
 </login-config>
-```
+
+
+
 
 如片段所示，基于表单的认证在 `<login-config>` 块中增加了一个用于登录页面和错误页面的规范。
 
-Servlet 规范为登录表单提供了具体说明。登录表单的 method 必须是 POST，其 action 必须是 `j_security_check`。该表单还必须包含一个名为 `j_username` 的用户名字段和一个名为 `j_password` 的密码字段。以下是 Tomcat 安全示例提供的页面（$TOMCAT_HOME/webapps/examples/jsp/security/login/login.jsp）：
+Servlet 规范为登录表单提供了具体说明。登录表单的 method 必须是 POST，其 action 必须是 `j_security_check`。该表单还必须包含一个名为 `j_username` 的用户名字段和一个名为 `j_password` 的密码字段。以下是 Tomcat 安全示例提供的页面（`$TOMCAT_HOME/webapps/examples/jsp/security/login/login.jsp`）：
 
 ```
 <HTML>
+
 <BODY>
+
 <H>Login page for examples</H1>
 
 <FORM METHOD="POST" ACTION="j_security_check" >
+
 Username: <INPUT TYPE="text" NAME="j_username"><br>
+
 Password: <INPUT TYPE="password" NAME="j_password"><br>
+
 <br>
+
 <INPUT TYPE="submit" VALUE="login" NAME="j_security_check">
+
 </FORM>
 
 </BODY>
+
 </HTML>
 ```
 
@@ -7781,14 +8643,19 @@ Servlet 规范还规定了使用基于表单的认证时必须发生的步骤。
 
 ```
 <html>
+
 <head>
+
 <title>Login Error</title>
+
 </head>
+
 <body bgcolor=white>
 
 Login error -- please try <a href="login.jsp">again</a>.
 
 </body>
+
 </html>
 ```
 
@@ -7821,7 +8688,7 @@ Tomcat 中的安全处理器通过扩展 `org.apache.tomcat.core.BaseInterceptor
 -   public int authenticate( Request req, Response response )
 -   public int authorize( Request req, Response response, String roles[] )
 
-安全拦截器的作用是在将 HTTP 请求转发到所请求的资源之前对其进行认证（即它拦截该请求）。图 8-11 显示了此拦截器架构。
+安全拦截器的作用是在将 HTTP 请务转发到所请求的资源之前对其进行认证（即它拦截该请求）。图 8-11 显示了此拦截器架构。
 
 正如我们之前在本模块中描述的，Tomcat 的默认安全处理器使用 `%TOMCAT_HOME%\conf\tomcat-users` 文件来指定用户、密码和角色。在任何类型的生产环境中，不使用 Tomcat 提供的默认安全处理有几个原因。首先，它在文件系统上以明文形式存储密码。其次，当用户数量增长时，简单的文本文件难以管理。第三，默认处理器在内存中缓存认证数据库，不必要地消耗了宝贵的资源。为了加强 Tomcat 安全机制，你必须使用其他安全拦截器。
 
@@ -7834,39 +8701,58 @@ Tomcat 本身提供了一个替代安全拦截器：*org.apache.tomcat.request.J
 这第二个拦截器允许你使用数据库而不是文本文件来认证和授权资源请求。在 Tomcat 的 `server.xml` 文件中，你必须注释掉默认的 realm 并添加配置 JDBC realm 的行。以下是指定默认拦截器的配置行：
 
 ```
+
 <!-- Check permissions using the simple
+
     xml file. You can plug more advanced
+
     authentication modules.
+
 -->
+
 <RequestInterceptor
+
     className="org.apache.tomcat.request.SimpleRealm"
+
     debug="0" />
+
 ```
 
 要使用适用于 MySQL 的 JDBC 拦截器，你应该注释掉这些行并添加以下行：
 
 ```
+
 <RequestInterceptor
+
     className="org.apache.tomcat.request.JDBCRealm" <!-- 拦截器类名
+
     debug="99"
+
     driverName="org.gjt.mm.mysql.Driver" <!-- MySQL 驱动程序
+
     connectionURL="jdbc:mysql://localhost/authority"
+
     connectionName="tomcat" <!-- Tomcat MySQL 登录名
+
     connectionPassword="tomcat" <!-- Tomcat MySQL 密码
+
     userTable="users" <!--
+
     userNameCol="user_name"
+
     userCredCol="user_pass" <!-- MySQL 表和列名
+
     userRoleTable="user_roles"
+
     roleNameCol="role_name" /> <!--
+
 ```
 
 ![图：JDBCRealm 配置](img/7a40f8957e7c3eb68dbb9f8ab3cef54d_342_0.png)
 
 ### 项目 8-1：自定义 Tomcat 安全拦截器
 
-Tomcat 拦截器实现了网络编程中的一个常见模式——请求拦截器模式。拦截器背后的思想是，它们可以在运行时加载，以扩展或自定义功能，而无需修改或
-
-重新编译现有代码。它们通常充当过滤器来限定请求，要么修改请求，要么出于安全原因拒绝请求。有时拦截器仅跟踪请求活动，但通常它们会强制执行某种策略选择。拦截器的工作方式类似于回调。你注册你的拦截器，然后在容器运行时操作的特定时刻，容器会调用拦截器的方法。
+Tomcat 拦截器实现了网络编程中的一个常见模式——请求拦截器模式。拦截器背后的思想是，它们可以在运行时加载，以扩展或自定功能，而无需修改或重新编译现有代码。它们通常充当过滤器来限定请求，要么修改请求，要么出于安全原因拒绝请求。有时拦截器仅跟踪请求活动，但通常它们会强制执行某种策略选择。拦截器的工作方式类似于回调。你注册你的拦截器，然后在容器运行时操作的特定时刻，容器会调用拦截器的方法。
 
 Tomcat安全拦截器对Web资源的请求进行身份验证和授权。在本项目中，我们将逐步开发一个自定义的安全拦截器。
 
@@ -7876,43 +8762,66 @@ Tomcat安全拦截器对Web资源的请求进行身份验证和授权。在本�
 2.  将 `interceptor.war` 移动到 `%TOMCAT_HOME%\webapps`。
 3.  使用 **jar.exe** 工具解压拦截器应用程序：
     ```
+
     \>jar.exe xvf interceptor.war
+
     ```
 4.  你现在应该能看到 `%TOMCAT_HOME%\webapps\interceptor` 目录。切换到 `%TOMCAT_HOME%\webapps\interceptor\WEB-INF\src` 目录，并编译文件 `CustomRealm.java`。请确保将 `servlet.jar` 和 `webserver.jar` 包含在你的 CLASSPATH 中。
     ```
+
     \>set CLASSPATH=%CLASSPATH%;%TOMCAT_HOME%\lib\servlet.jar
+
     \>set CLASSPATH=%CLASSPATH%;%TOMCAT_HOME%\lib\webserver.jar
+
     \>javac.exe CustomRealm.java
+
     ```
 5.  将生成的类文件 (`CustomRealm.class`) 移动到 `%TOMCAT_HOME%\classes`。(你可能需要创建这个目录。)
 6.  编辑 `%TOMCAT_HOME%\conf\server.xml`。注释掉以下几行：
     ```
+
     <RequestInterceptor
+
        className="org.apache.tomcat.request.SimpleRealm"
+
        debug="0" />
+
     ```
 7.  这些行现在应该看起来像这样：
     ```
+
     <!--
+
     <RequestInterceptor
+
        className="org.apache.tomcat.request.SimpleRealm"
+
        debug="0" />
+
     ```
 8.  紧接着你注释掉的行，添加以下内容：
     ```
+
     <!-- 使用 CustomRealm 检查权限 -->
+
     <RequestInterceptor
+
         className="CustomRealm"
+
     />
+
     ```
 9.  这些更改将 Tomcat 配置为使用 *CustomRealm* 进行身份验证和授权，而不是使用 *org.apache.tomcat.request.SimpleRealm*。
 10. 现在你必须在 `web.xml` 文件中添加一些角色。切换目录到 `%TOMCAT_HOME%\webapps\interceptor\WEB-INF` 并编辑你找到的 `web.xml` 文件。
 11. 在 `web.xml` 的 `<auth-constraint>` 块中，考虑以下几行：
     ```
+
     <role-name>administrator</role-name>
+
     <role-name>family</role-name>
+
     ```
-12. 通过这些行，我们为所有匹配模式 "/jsp/app/*" 的请求添加了基于角色的访问控制。我们还定义了所需的角色为 "administrator" 和 "family"。
+12. 通过这些行，我们为所有匹配模式 "/jsp/app/*" 的请请求添加了基于角色的访问控制。我们还定义了所需的角色为 "administrator" 和 "family"。
 13. 启动 Tomcat 并输入 URL：
     `http://localhost:8080/interceptor/jsp/app/jsptest.jsp`。
 14. 你现在应该能看到图 8-12 所示的网页。
@@ -7922,19 +8831,29 @@ Tomcat安全拦截器对Web资源的请求进行身份验证和授权。在本�
 18. 为什么需要你登录？当你请求 URL `http://localhost:8080/interceptor/jsp/app/jsptest.jsp` 时，*CustomRealm* 安全拦截器将你的请求重定向到登录页面。当你输入了有效的用户名和密码后，容器才最终交付了请求的页面。
 19. 为什么容器要保护该页面？容器保护它是因为拦截器应用程序的 web.xml 文件指定了对其进行保护。以下是显示如何指定保护的 web.xml 片段：
     ```
+
     <web-resource-collection>
+
         <web-resource-name>Protected Area
+
         </web-resource-name>
 
         <!-- 定义受保护的 URL -->
+
         <url-pattern>/jsp/app/*</url-pattern>
 
         <!-- 定义受保护的 HTTP 方法 -->
+
         <http-method>DELETE</http-method>
+
         <http-method>GET</http-method>
+
         <http-method>POST</http-method>
+
         <http-method>PUT</http-method>
+
     </web-resource-collection>
+
     ```
 
 项目 8-1 介绍了 Tomcat 安全拦截器的概念。此类拦截器提供了一种向应用程序提供基于 servlet 容器的自定义登录页面的方法。现在，在项目 8-2 中，我们将扩展这些技术。
@@ -7953,7 +8872,9 @@ Tomcat安全拦截器对Web资源的请求进行身份验证和授权。在本�
 2.  将 `security.war` 移动到 `%TOMCAT_HOME%\webapps`。
 3.  解压 WAR 文件：
     ```
+
     \>jar.exe xvf security.war
+
     ```
 4.  你应该会看到 `security` 目录，其中包含安全应用程序的所有文件。
 5.  重启 Tomcat。
@@ -7980,33 +8901,57 @@ Tomcat安全拦截器对Web资源的请求进行身份验证和授权。在本�
 我们的登录页面没有什么特别复杂的地方。我们展示了一张家庭照片和一个从 Tomcat 示例派生的登录表单。以下是代码：
 
 ```html
+
 <HTML>
+
 <BODY BACKGROUND="../../images/bluepaper.gif">
+
 <TITLE>JSP: A Beginner's Guide ---
+
   The Family Center Login Page
+
 </TITLE>
+
 <CENTER>
+
 <H2>JSP: A Beginner's Guide --- Family Center</H2>
+
 <IMG src="../../images/Family.jpg">
+
 <H1>Login please!</H1>
+
 <FORM METHOD="POST" ACTION="j_security_check" >
+
   Username:<INPUT TYPE="text" NAME="j_username"><BR>
+
   Password:<INPUT TYPE="password"
+
            NAME="j_password"><BR><BR>
+
   <INPUT TYPE="submit" VALUE="login"
+
          NAME="j_security_check">
+
 </FORM>
+
 </CENTER>
+
 </BODY>
+
 </HTML>
+
 ```
 
 我们的登录错误页面 (`error.jsp`) 只是在 `Family.jpg` 图片之后添加了一个错误图片。因此该 HTML 片段看起来像这样：
 
 ```html
+
 <IMG src="../../../images/Family.jpg">
+
 <BR>
+
 <IMG src = "../../../images/LoginError.jpg">
+
 ```
 
 #### web.xml 文件
@@ -8014,29 +8959,46 @@ Tomcat安全拦截器对Web资源的请求进行身份验证和授权。在本�
 `web.xml` 文件指定了 `%TOMCAT_HOME\webapps\security\jsp` 下每个页面的访问控制。它还只指定了两个角色：`administrator` 和 `family`。(最终，我们希望 `family` 角色能授予所有家庭成员对该网站的 `read` 访问权限。管理员角色还应授予 `write` 访问权限。然而，我们必须将此编码到 `CustomRealm` 中，除了我们在 Osborne 网站上发布的最终版家庭中心外，我们不会这样做。) 这是 `web.xml` 文件。注意我们将我们的安全域命名为“家庭中心”：
 
 ```xml
+
 <?xml version="1.0" encoding="ISO-8859-1"?>
+
 <!DOCTYPE web-app
+
    PUBLIC "-//Sun Microsystems, Inc.//DTD
+
    Web Application 2.2//EN"
+
    "http://java.sun.com/j2ee/dtds/web-app_2_2.dtd">
 
 <web-app>
+
     <security-constraint>
+
         <web-resource-collection>
+
             <web-resource-name>Protected Area
+
             </web-resource-name>
+
             <!-- 定义要保护的相对于上下文的 URL -->
+
             <url-pattern>/jsp/app/*</url-pattern>
+
             <!-- 如果你列出了 HTTP 方法，则只有这些方法受到保护 -->
+
             <http-method>DELETE</http-method>
+
             <http-method>GET</http-method>
+
             <http-method>POST</http-method>
+
             <http-method>PUT</http-method>
+
         </web-resource-collection>
+
         <auth-constraint>
+
 ```
-
-
 
 #### CustomRealm 安全拦截器
 
@@ -8047,15 +9009,25 @@ Tomcat安全拦截器对Web资源的请求进行身份验证和授权。在本�
 `setContextManager` 方法的目的是存储对 Tomcat 的 `org.apache.tomcat.core.ContextManager` 对象实例的本地引用。该对象是进入 Tomcat servlet 容器的主要入口点。它充当执行控制器和应用程序上下文以及已安装拦截器（包括安全拦截器）的管理器。它负责指导请求处理，包括请求解析、服务方法调用和日志记录。以下是我们的 `setContextManager` 代码：
 
 ```java
+
 /**
+
  * Store a local reference to the ContextManager
+
  */
+
 public void setContextManager(ContextManager contextManager)
+
 {
+
     super.setContextManager(contextManager);
+
     this.contextManager = contextManager;
+
     System.out.println("CustomRealm.setContextManager()");
+
 }
+
 ```
 
 #### contextInit 方法
@@ -8063,44 +9035,83 @@ public void setContextManager(ContextManager contextManager)
 我们拦截器中的 `contextInit` 方法的目的是初始化认证和授权信息。我们将暂时“硬编码”一些信息（在第 10 模块中，我们将展示如何使用数据库来避免硬编码这些值）。以下是我们的代码，添加了两个家庭，每个家庭有两个成员：
 
 ```java
+
 /**
+
  * Initialize authentication and authorization
+
  * information for CustomRealm.
+
  */
+
 public void contextInit(Context ctx)
+
     throws TomcatException
+
 {
+
     if (!inited)
+
     {
+
         inited = true; // do it only once
+
         /*
+
          * set up roles database
+
          */
+
         userRoles = new HashMap();
+
         userRoles.put(GARY_BOLLINGER,
+
                       ADMINISTATOR);
+
         userRoles.put(BHARATHI_NATARAJAN,
+
                       ADMINISTATOR);
+
         userRoles.put(MARY_BOLLINGER,
+
                       FAMILY);
+
         userRoles.put(SANDY_NATARAJAN,
+
                       FAMILY);
+
         /*
+
          * set up password database
+
          */
+
         userPasswords = new HashMap();
+
         userPasswords.put(GARY_BOLLINGER,
+
                          GARY_PASSWORD);
+
         userPasswords.put(BHARATHI_NATARAJAN,
+
                          BHARATHI_PASSWORD);
+
         userPasswords.put(MARY_BOLLINGER,
+
                          MARY_PASSWORD);
+
         userPasswords.put(SANDY_NATARAJAN,
+
                          SANDY_PASSWORD);
+
         System.out.println(
+
             "CustomRealm.contextInit()");
+
     }
+
 }
+
 ```
 
 #### contextShutdown 方法
@@ -8108,14 +9119,23 @@ public void contextInit(Context ctx)
 `contextShutdown` 方法的目的是在 Tomcat 关闭之前释放我们拦截器使用的任何资源。我们的安全拦截器不需要释放任何资源。代码如下：
 
 ```java
+
 /**
+
  * release any resources before Tomcat shuts down
+
  */
+
 public void contextShutdown(Context ctx)
+
     throws org.apache.tomcat.core.TomcatException
+
 {
+
     super.contextShutdown(ctx);
+
 }
+
 ```
 
 #### authenticate 方法
@@ -8123,43 +9143,77 @@ public void contextShutdown(Context ctx)
 `authenticate` 方法的目的是根据用户身份批准或拒绝访问应用程序。这是执行应用程序最重要的安全功能——限制未授权用户访问的方法。让我们更仔细地研究这个方法。以下是带注释的代码：
 
 ```java
+
 /**
+
  * Use CustomRealm to authenticate user.
+
  */
+
 public int authenticate(Request req,
+
     Response response)
+
 {
+
     int authValue = NOT_AUTHORIZED; //401 indicates error
 
     // extract login credentials from login.jsp
+
     HttpSession session = req.getSession(false);
+
     if (session == null)
+
         return authValue; // not OK since no session
+
     String username =
+
         (String)session.getAttribute("j_username");
+
     String password =
+
         (String)session.getAttribute("j_password");
 
     // authenticate the username and password
+
     if (username != null && password != null)
+
     {
+
         String userPwd =
+
             (String)userPasswords.get(username);
+
         if ((userPwd != null) &&
+
                 (userPwd.equals(password)))
+
         {
+
             System.out.println(
+
                 "CustomRealm.authenticate(" +
+
                 username + ")");
+
             // set remote user name in request
+
             req.setRemoteUser(username);
+
             req.setUserPrincipal(
+
                 new SimplePrincipal(username));
+
             authValue = OK; // 0 says authenticated
+
         }
+
     }
+
     return authValue;
+
 }
+
 ```
 
 #### authorize 方法
@@ -8167,38 +9221,67 @@ public int authenticate(Request req,
 `authorize` 方法的目的是根据用户角色批准或拒绝访问应用程序资源。我们在这里硬编码了一些角色，但与用户名和密码的情况一样，我们将在第 10 模块中用数据库实现替换它。这里的算法是获取用户角色，然后将其与我们为当前资源（作为角色数组传入 `authorize`）定义的角色进行比较。如果匹配，用户就有访问权限。代码如下：
 
 ```java
+
 /**
+
  * Use CustomRealm to authorize user.
+
  */
+
 public int authorize(Request req,
+
                     Response response,
+
                     String roles[])
+
 {
+
     int authValue = NOT_AUTHORIZED; // 401
 
     // we stored username in authenticate
+
     String username = req.getRemoteUser();
+
     if (username != null)
+
     {
+
         String role = (String)userRoles.get(username);
+
         if (role != null)
+
         {
+
             System.out.println(
+
                 "CustomRealm.authorize(" +
+
                 username + ", " + role + ")");
 
             for (int i = 0;
+
                  authValue != OK && i < roles.length; i++)
+
             {
+
                 if (role.equals(roles[i]))
+
                 {
+
                     authValue = OK; // 0 says authorized
+
                 }
+
             }
+
         }
+
     }
+
     return authValue;
+
 }
+
 ```
 
 #### server.xml 配置文件
@@ -8225,7 +9308,7 @@ public int authorize(Request req,
 ### 本模块的目标
 
 - 理解 MVC 架构中控制器的职责
-- 理解 Web 应用程序中的流程控制
+- 理解 Web 应用程中的流程控制
 - 学习构建可配置流程控制架构的技术
 
 
@@ -8240,7 +9323,7 @@ JavaServer Pages 有助于简化动态 Web 应用程序的开发，但 Web 应�
 
 控制器对象封装了 Web 应用程序的控制逻辑。其职责包括：
 
--   接收用户请求和应用程序消息
+-   接收用户请和应用程序消息
 -   创建和获取管理数据并对其调用服务的模型
 -   驱动 Web 应用程序的工作流（web-flow）
 
@@ -8274,7 +9357,7 @@ Web 应用程序，与任何其他需要用户交互的应用程序一样，具�
 
 **答案：** 命令对象当然可以直接与实现进行通信。但这种设置有几个缺点。如果我们想扩展模型的服务，那么我们必须为模型的每个具体实现复制此扩展。此外，没有模型抽象会迫使所有客户端意识到细粒度的实现服务，而不是更高层次的抽象。
 
-话虽如此，我们应该注意，在某些情况下模型抽象是多余的。假设抽象接口和实现接口本质上相同，并且很少需要扩展模型服务。相反，人们只希望提供模型的不同实现。在这种情况下，您可以消除模型抽象，将其与客户端合并。这是桥接模式最简单的形式。
+话虽如此，我们应该注意，在某些情况下模型抽象是多余的。假设抽象接口和实现接口本质相同，并且很少需要扩展模型服务。相反，人们只希望提供模型的不同实现。在这种情况下，您可以消除模型抽象，将其与客户端合并。这是桥接模式最简单的形式。
 
 **问题：** 如果您可以消除模型抽象，结果与策略模式有何不同？
 
@@ -8400,40 +9483,75 @@ Web 应用程序，与任何其他需要用户交互的应用程序一样，具�
 让我们考虑一个向用户展示股票交易页面的示例。以下是 HTML 页面：
 
 ```
+
 <HTML>
+
 <HEAD><TITLE>Stock Transaction</TITLE></HEAD>
+
 <BODY>
+
 <H1> Buy/Sell </H1>
+
 <FORM METHOD=POST ACTION="/Book/Broker">
+
 <TABLE>
+
     <TR>
+
         <TD> Enter ticker: </TD>
+
         <TD> <INPUT TYPE=text LENGTH=5 NAME="ticker"> </TD>
+
     </TR>
+
     <TR>
+
         <TD> Number of Shares: </TD>
+
         <TD> <INPUT TYPE=text LENGTH=3 NAME="numShares"> </TD>
+
     </TR>
+
     <TR>
+
         <TD> Share Price: </TD>
+
         <TD> <INPUT TYPE=text LENGTH=5 NAME="price"> </TD>
+
     </TR>
+
 </TABLE>
+
 <HR>
+
 <TABLE BORDER=1>
+
 <TR>
+
 <TD> <INPUT TYPE=hidden NAME="Buy" VALUE="/jsp/Buy.jsp">
+
     <INPUT TYPE=submit NAME="action" VALUE="Buy"> </TD>
+
 <TD> <INPUT TYPE=hidden NAME="Sell" VALUE="/jsp/Sell.jsp">
+
     <INPUT TYPE=submit NAME="action" VALUE="Sell"> </TD>
+
 <TD> <INPUT TYPE=hidden NAME="Cancel" VALUE="/jsp/Cancel.jsp">
+
     <INPUT TYPE=submit NAME="action" VALUE="Cancel"> </TD>
+
 <TD> <INPUT TYPE=reset VALUE="Reset"> </TD>
+
 </TR>
+
 </TABLE>
+
 </FORM>
+
 </BODY>
+
 </HTML>
+
 ```
 
 该页面呈现一个简单的表单，包含用于输入股票代码、股数和股价的元素。用户被要求输入这三个元素并做出提交选择。用户可以买入、卖出或取消交易。图 9-11 展示了该页面。
@@ -8447,39 +9565,65 @@ Web 应用程序，与任何其他需要用户交互的应用程序一样，具�
 该页面的所有提交都由我们通过 URL `/Book/Broker` 标识的控制器 servlet 处理。以下是我们控制器 servlet 的源代码：
 
 ```
+
 package simple;
 
 import javax.servlet.*;
+
 import javax.servlet.http.*;
+
 import java.io.IOException;
 
 public class BrokerServlet extends HttpServlet {
+
     // Forward http get calls to http post handler.
+
     public void doGet(HttpServletRequest request,
+
                       HttpServletResponse response)
+
             throws ServletException, IOException {
+
         doPost(request, response);
+
     }
+
     // Handle requests.
+
     public void doPost(HttpServletRequest request,
+
                        HttpServletResponse response)
+
             throws ServletException, IOException {
 
         RequestDispatcher rd = null;
+
         // Get action requested from request.
+
         String action =
+
                 request.getParameter("action");
+
         // Get next page associated with action also
+
         // from request.
+
         String JSP = request.getParameter(action);
+
         rd = request.getRequestDispatcher(JSP);
 
         // Route request to appropriate JSP page.
+
         if (rd != null) {
+
             rd.forward(request, response);
+
         }
+
     }
+
 }
+
 ```
 
 为了在 Web 工作流中定位下一个页面，servlet 检索 “action” 参数的值。这给了它隐藏输入元素的名称，该元素的值标识了 Web 流程中的下一个页面（或阶段）。
@@ -8489,19 +9633,31 @@ public class BrokerServlet extends HttpServlet {
 我们可以从 HTML 页面中移除指定下一阶段的隐藏输入元素，并将此知识放入控制器 servlet 中，使用类似于以下片段的代码：
 
 ```
+
 RequestDispatcher rd = null;
+
 // Get action requested from request.
+
 String action = request.getParameter("action");
 
 if (action.equals("Buy")) {
+
     rd = request.getRequestDispatcher("/jsp/Buy.jsp");
+
 }
+
 else if (action.equals("Sell")) {
+
     rd = request.getRequestDispatcher("/jsp/Sell.jsp");
+
 }
+
 else if (action.equals("Cancel")) {
+
     rd = request.getRequestDispatcher("/jsp/Cancel.jsp");
+
 }
+
 ```
 
 虽然这样的代码将通信通道集中到了我们的控制器 servlet 中，但这显然不是一个好的解决方案。它将目的地硬编码到了我们的 servlet 中，并且对于 Web 工作流中的每个新阶段，都必须插入一个新的 `if-else` 代码块。
@@ -8509,82 +9665,141 @@ else if (action.equals("Cancel")) {
 第三种实现方案从属性文件中读取操作和阶段（目的地）之间的映射关系。
 
 ```
+
 package simple;
+
 import javax.servlet.*;
+
 import javax.servlet.http.*;
+
 import java.io.IOException;
+
 import java.util.Properties;
 
 public class BrokerServlet extends HttpServlet {
+
     private static final String MAPPINGS_FILE = "/WEB-INF/config.properties";
+
     private Properties properties = new Properties();
 
     public void init(ServletConfig config)
+
                         throws ServletException {
+
         super.init(config);
+
         try {
+
             properties.load(
+
                 config.getServletContext().getResourceAsStream(
+
                     MAPPINGS_FILE));
+
         }
+
         catch(IOException ioexp) {
+
             System.err.println(
+
                 "Unable to load property file: " + ioexp);
+
             throw new ServletException(ioexp);
+
         }
+
     }
 
     // Forward http get calls to http post handler.
+
     public void doGet(HttpServletRequest request,
+
                        HttpServletResponse response)
+
         throws ServletException, IOException {
+
         doPost(request, response);
+
     }
 
     // Handle requests.
+
     public void doPost(HttpServletRequest request,
+
                         HttpServletResponse response)
+
         throws ServletException, IOException {
 
         RequestDispatcher rd = null;
+
         // Get action requested from request.
+
         String action = request.getParameter("action");
+
         // Get next URL for action from properties file
+
         String nextURL = properties.getProperty(action);
+
         // Route request to next destination in workflow.
+
         if(nextURL != null) {
+
             rd = request.getRequestDispatcher(nextURL);
+
             rd.forward(request, response);
+
         }
+
     }
+
 }
+
 ```
 
 我们的控制器 servlet 在其 *init* 方法中从属性文件加载属性。对于此示例，该属性文件应位于应用程序上下文的 `/WEB-INF/config.properties` 下。以下是该属性文件的内容：
 
 ```
+
 # Mapping of actions to destinations
+
 Buy=/jsp/Buy.jsp
+
 Sell=/jsp/Sell.jsp
+
 Cancel=/jsp/Cancel.jsp
+
 ```
 
 我们 servlet 中的 *doPost* 方法检索参数 “action” 的值。然后，它在属性文件中查找该操作对应的目标 URL 并转发到该 URL。假设我们在 `/jsp` 子目录下放置一个名为 `Buy.jsp` 的文件，内容如下：
 
 ```
+
 <HTML>
+
 <BODY>
+
 <%
+
     String ticker = request.getParameter("ticker");
+
     int numShares =
+
         Integer.parseInt(request.getParameter("numShares"));
+
     float price =
+
         Float.parseFloat(request.getParameter("price"));
+
 %>
+
 <H3> Bought <%= numShares %> shares of
+
      <%= ticker %> at $<%= price %> </H3>
+
 </BODY>
+
 </HTML>
+
 ```
 
 当我们在 StockTransaction.html 页面上选择“Buy”按钮时，我们将得到如图 9-12 所示的页面。请注意图 9-12 浏览器中显示的 URL。该 URL 为 http://localhost:8080/Book/Broker。它并未显示最终目的地 `Buy.jsp`。这是因为，从浏览器的角度来看，当我们提交 HTML 表单时，目的地是 `/Book/Broker`，我们将其映射到了我们的控制器 servlet。我们隐藏了我们的 servlet 将控制权转发到 `/jsp/Buy.jsp` 的事实。通过向客户端隐藏实际的页面目的地，您可以帮助保护它们免受恶意或恶意访问。
@@ -8615,7 +9830,9 @@ Cancel=/jsp/Cancel.jsp
 5.  使用 mysql 工具以 bookUser 身份登录 MySQL，命令语法如下：
 
 ```
+
 %> mysql -u bookUser -p
+
 ```
 
 系统将提示输入密码。输入密码即可登录。您应该会看到提示符变为 `mysql>`。
@@ -8623,7 +9840,9 @@ Cancel=/jsp/Cancel.jsp
 6.  运行脚本 schmFamily_Center.sql，语法如下：
 
 ```
+
 mysql> source E:/family_center/sql/schmFamily_Center.sql
+
 ```
 
 请务必将路径修改为存储此脚本的位置。此脚本创建一个名为 family_center 的数据库，并在其中创建模式。模式是一组表及其关系。模式的详细信息将在模块 10 中解释，对于本项目并不重要。
@@ -8631,7 +9850,9 @@ mysql> source E:/family_center/sql/schmFamily_Center.sql
 7.  接下来运行脚本 loadFamily_Center.sql，语法如下：
 
 ```
+
 mysql> source E:/family_center/sql/loadFamily_Center.sql
+
 ```
 
 请务必将路径修改为存储此脚本的位置。此脚本用示例数据（家庭成员及其地址）填充数据库。
@@ -8639,9 +9860,13 @@ mysql> source E:/family_center/sql/loadFamily_Center.sql
 8.  通过输入 **quit** 退出 mysql 工具，如下所示：
 
 ```
+
 mysql> quit
+
 Bye
+
 %
+
 ```
 
 9.  数据库创建完成！
@@ -8657,13 +9882,17 @@ Bye
 2.  从命令提示符进入此目录，如下所示：
 
 ```
+
 %> cd %TOMCAT_HOME%\webapps\Family_Center
+
 ```
 
 3.  从该目录解压为此项目下载的 WAR 文件 `Family_Center.war`。重要的是您必须在此目录内运行 JAR 命令。
 
 ```
+
 %> jar xvf Family_Center.war *
+
 ```
 
 4.  此命令将解包我们家庭中心应用程序的所有文件，创建 HTML 文件、JSP 文件、图像等的目录结构。
@@ -8671,54 +9900,89 @@ Bye
 5.  在 `%TOMCAT_HOME%\bin\server.xml` 文件中为家庭中心应用程序创建一个 Servlet 上下文元素，如下所示：
 
 ```
+
 <Context path="/Family_Center"
+
            docBase="webapps/Family_Center"
+
            crossContext="true"
+
            debug="0"
+
            reloadable="true"
+
            trusted="false" >
+
 </Context>
+
 ```
 
 此 Context 元素指定我们的家庭中心应用程序将位于 URL 根目录下：http://localhost:8080/Family_Center。检查位于我们最近解压的 Web 应用程序中 WEB-INF\src 目录下的源文件 com\jspbg\db\DB.java。此文件建立与 MySQL 数据库的程序化连接。内容如下：
 
 ```
+
 package com.jspbg.db;
 
 import java.sql.DriverManager;
+
 import java.sql.SQLException;
+
 import java.sql.Connection;
 
 public class DB {
+
     public static void registerDriver() {
+
         try {
+
             Class.forName("org.gjt.mm.mysql.Driver").
+
                                   newInstance();
+
         }
+
         catch (Exception exp) {
+
             exp.printStackTrace();
+
         }
+
     }
+
     public static Connection getConnection() throws SQLException {
+
         Connection c = null;
+
         String url = "jdbc:mysql://localhost/Family_Center";
+
         String args = "?user=bookUser&password=bookPasswd";
+
         c = DriverManager.getConnection(url + args);
+
         return c;
+
     }
 
     public static void releaseConnection(Connection c) throws
+
 SQLException {
+
         if(c != null)
+
             c.close();
+
     }
+
 }
+
 ```
 
 请注意，您必须在 JVM 中注册 JDBC 驱动程序，然后才能使用它进行任何操作。这是在 registerDriver 函数中完成的。getConnection 和 releaseConnection 方法获取和释放访问我们数据库的 JDBC 连接。请特别注意前面列表中以粗体显示的行。函数 *DriverManager.getConnection* 接受一个 URL 并返回与我们数据库的连接。请将 URL 字符串中的用户名和密码替换为您的数据库用户名和密码（例如，`bookUser` 和 `bookPasswd`）。重新编译此 Java 文件，确保将 JDBC 驱动程序放在您的 `%CLASSPATH%` 中，并如图所示创建 JAR 文件。
 
 ```
+
 jar cvf DBAccess.jar com/jspbg/db/DB.class
+
 ```
 
 **注意**
@@ -8749,8 +10013,6 @@ Tomcat 的启动脚本会自动将位于 `%TOMCAT_HOME%\lib` 下的所有 JAR �
 
 11. 出于本项目的目的，我们将重点关注控制器 Servlet 中的代码。此项目，与股票交易示例一样，使用了一个
 
-
-
 ### 360 JSP：入门指南
 
 ![](img/7a40f8957e7c3eb68dbb9f8ab3cef54d_383_0.png)
@@ -8764,51 +10026,97 @@ Tomcat 的启动脚本会自动将位于 `%TOMCAT_HOME%\lib` 下的所有 JAR �
 配置文件 `actions.xml` 用于建立操作（action）与阶段（stage）或目标（destination）之间的关系。然而，该文件是 XML 格式。我们来看看它的内容：
 
 ```xml
+
 <?xml version="1.0" ?>
+
 <!DOCTYPE actions [
+
 <!ELEMENT actions (action*)>
+
 <!ELEMENT action (command|url)>
+
 <!ATTLIST action
+
     name CDATA #REQUIRED>
+
 <!ELEMENT command (#PCDATA)>
+
 <!ELEMENT url (#PCDATA)>
+
 <!ATTLIST command
+
     model CDATA #REQUIRED>
+
 ]>
+
 <actions>
+
     <action name="EAB">
+
         <url>/AddressBook</url>
+
     </action>
+
     <action name="SFN">
+
         <command model="AddressBookManager">
+
             com.jspbg.webflow.FirstNameSearchCommand
+
         </command>
+
     </action>
+
     <action name="SLN">
+
         <command model="AddressBookManager">
+
             com.jspbg.webflow.LastNameSearchCommand
+
         </command>
+
     </action>
+
     <action name="SFNI">
+
         <command model="AddressBookManager">
+
             com.jspbg.webflow.FirstNameIndexCommand
+
         </command>
+
     </action>
+
     <action name="SLNI">
+
         <command model="AddressBookManager">
+
             com.jspbg.webflow.LastNameIndexCommand
+
         </command>
+
     </action>
+
     <action name="SABR">
+
         <url>/AddressBookResults</url>
+
     </action>
+
     <action name="SZR">
+
         <url>/ZeroResults</url>
+
     </action>
+
     <action name="SERR">
+
         <url>/Error</url>
+
     </action>
+
 </actions>
+
 ```
 
 该文件在根 `actions` 元素内包含多个 `action` 元素。每个 `action` 元素代表 Web 工作流中的一个操作。操作由 `name` 属性标识。`action` 元素的内容包含该操作的下一个阶段。该阶段可以是一个 `url` 元素，表示一个 Web 资源；也可以是一个 `command` 元素，表示一个命令对象。每个 `command` 元素可以包含一个可选的 `model` 属性，用于标识命令打算使用的模型。控制器 Servlet 加载此文件中的数据，并用它来驱动工作流。例如，如果操作是 "EAB"（代表进入通讯录），则控制器 Servlet 查找名为 "EAB" 的 `action` 元素。目标是一个 URL，因此控制器直接将控制权转发到指定的相对 URL：`/AddressBook`。如果操作是 "SLN"（代表按姓氏搜索），则控制器查找名为 "SLN" 的 `action` 元素。目标是一个命令对象。控制器实例化命令对象 `com.jspbg.webflow.LastNameSearchCommand`，检索由名称 "AddressBookManager" 标识的模型，将其设置在命令对象上，并调用该命令。
@@ -8820,133 +10128,180 @@ Tomcat 的启动脚本会自动将位于 `%TOMCAT_HOME%\lib` 下的所有 JAR �
 12. 控制器 Servlet（名为 *com.jspbg.servlet.DispatcherServlet*）如下所示：
 
 ```java
+
 public class DispatcherServlet extends HttpServlet {
+
     private static final String ACTIONS_XML = "ACTIONS_XML";
 
     // Static strings for model-names.
+
     private static final String ADDRESS_BOOK_MGR = "AddressBookManager";
 
     /* parser that interprets the actions
+
        XML that maps actions to commands or URLs.
+
      */
+
     private ActionParser actionParser = null;
 
     // A HashMap of all model components
+
     private ModelFactory modelFactory = null;
 
     public void init(ServletConfig config)
+
             throws ServletException {
+
         // init parent
+
         super.init(config);
 
         // register JDBC driver. Required only once.
+
         DB.registerDriver();
 
         // initialize action parser for web-flow logic
+
         initializeActionParser(config);
 
         // create model factory.
+
         initializeModelFactory(config);
+
     }
 
     private void initializeActionParser(ServletConfig config)
+
             throws ServletException {
+
         ServletContext ctxt = config.getServletContext();
 
         // Retrieve actions XML file
+
         String actionsXMLName =
+
             config.getInitParameter(ACTIONS_XML);
+
         String actionsXmlFile =
+
             ctxt.getRealPath(actionsXMLName);
-        try {
-            // Construct parser on XML file
-            actionParser = new ActionParser(actionsXmlFile);
-        }
-        catch(ParseException pex) {
-            throw new ServletException(pex.getMessage());
-        }
-    }
 
-    public void initializeModelFactory(ServletConfig config)
-        throws ServletException {
-        Map models = new HashMap();
-        models.put(ADDRESS_BOOK_MGR,
-                   config.getInitParameter(ADDRESS_BOOK_MGR));
-        modelFactory = new ModelFactory(models);
-    }
 
-    public void doGet(HttpServletRequest req,
-                     HttpServletResponse res)
-        throws ServletException, IOException {
-        doPost(req, res);
-    }
 
-    public void doPost(HttpServletRequest req,
-                     HttpServletResponse res)
-        throws ServletException, IOException {
-        String action = req.getParameter("action");
-        try {
-            String nextStage = null;
-            // While next stage is a Command, retrieve the
-            // model component for the command, and invoke
-            // the command.
-            while((nextStage =
-                    actionParser.getCommand(action)) != null) {
-                Model model = null;
-                String modelName = actionParser.getModel(action);
-                // create model if there is one associated
-                // with current action
-                if(modelName != null) {
-                    model = modelFactory.makeModel(modelName);
-                }
+try {
 
-                // forward control to the command
-                action = forwardToCommand(nextStage, model, req,
-                                         res);
+    // Construct parser on XML file
+
+    actionParser = new ActionParser(actionsXmlFile);
+
+} catch(ParseException pex) {
+
+    throw new ServletException(pex.getMessage());
+
+}
+
+public void initializeModelFactory(ServletConfig config) throws ServletException {
+
+    Map models = new HashMap();
+
+    models.put(ADDRESS_BOOK_MGR, config.getInitParameter(ADDRESS_BOOK_MGR));
+
+    modelFactory = new ModelFactory(models);
+
+}
+
+public void doGet(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
+
+    doPost(req, res);
+
+}
+
+public void doPost(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
+
+    String action = req.getParameter("action");
+
+    try {
+
+        String nextStage = null;
+
+        // While next stage is a Command, retrieve the model component for the command, and invoke the command.
+
+        while((nextStage = actionParser.getCommand(action)) != null) {
+
+            Model model = null;
+
+            String modelName = actionParser.getModel(action);
+
+            // create model if there is one associated with current action
+
+            if(modelName != null) {
+
+                model = modelFactory.makeModel(modelName);
+
             }
 
-            // If the next stage is a URL, forward control
-            // to the URL
-            nextStage = actionParser.getURL(action);
-            if(nextStage != null) {
-                forwardToURL(nextStage, req, res);
-            }
-            else {
-                throw new ServletException(
-                    "No known destination for action: " + action);
-            }
+            // forward control to the command
+
+            action = forwardToCommand(nextStage, model, req, res);
+
         }
-        catch(ParseException pex) {
-            throw new ServletException(pex);
+
+        // If the next stage is a URL, forward control to the URL
+
+        nextStage = actionParser.getURL(action);
+
+        if(nextStage != null) {
+
+            forwardToURL(nextStage, req, res);
+
+        } else {
+
+            throw new ServletException("No known destination for action: " + action);
+
         }
-        catch(ServiceException sex) {
-            throw new ServletException(sex);
-        }
+
+    } catch(ParseException pex) {
+
+        throw new ServletException(pex);
+
+    } catch(ServiceException sex) {
+
+        throw new ServletException(sex);
 
     }
 
-    private void forwardToURL(String url,
-                              HttpServletRequest req,
-                              HttpServletResponse res)
-        throws ServletException, IOException {
-        RequestDispatcher rd = req.getRequestDispatcher(url);
-        rd.forward(req, res);
+}
+
+private void forwardToURL(String url, HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
+
+    RequestDispatcher rd = req.getRequestDispatcher(url);
+
+    rd.forward(req, res);
+
+}
+
+private String forwardToCommand(String command, Model model, HttpServletRequest req, HttpServletResponse res) throws ServletException {
+
+    try {
+
+        // instantiate command object
+
+        Command c = (Command)Class.forName(command).newInstance();
+
+        // set model component on command object
+
+        c.setModel(model);
+
+    } catch(Exception e) {
+
+        throw new ServletException(e);
+
     }
 
-    private String forwardToCommand(String command,
-                                    Model model,
-                                    HttpServletRequest req,
-                                    HttpServletResponse res)
-        throws ServletException {
-        try {
-            // instantiate command object
-            Command c =
-                (Command)Class.forName(command).newInstance();
+    return c.execute(req, res);
 
-            // set model component on command object
-            c.setModel(model);
-        }
-```
+}
 
 我们的控制器 Servlet 使用一个名为 `com.jspbg.webflow.ActionParser` 的 Java 类来解析 `actions.xml` 文件。它还使用名为 `com.jspbg.model.ModelFactory` 的 Java 类来创建或定位模型元素。两者都在 Servlet 的 `init` 方法中初始化。`doGet` 方法只是委托给 `doPost` 方法。这确保了我们的 Servlet 将统一处理 GET 和 POST 请求。`doPost` 方法从请求中检索 "action" 参数。然后，它使用 `ActionParser` 查看映射到该操作的目标是否为 URL。如果是，Servlet 使用 `forwardToURL` 方法转发到指定的 URL。如果目标是一个命令对象，则检索其关联的模型名称。然后控制器使用 `ModelFactory` 创建模型。接着，控制权转移给 `forwardToCommand` 方法，在那里命令被实例化，模型被设置，然后命令被执行。
 
@@ -8954,79 +10309,112 @@ public class DispatcherServlet extends HttpServlet {
 
 ```java
 public interface Command {
+
     // action: search first name
+
     public static final String SFN = "SFN";
+
     // action: search last name
+
     public static final String SLN = "SLN";
+
     // action: search first name index
-```
 
+    public static final String SFNI = "SFNI";
 
+    // 动作：搜索姓氏索引
 
-public static final String SFNI = "SFNI";
-// 动作：搜索姓氏索引
-public static final String SLNI = "SLNI";
-// 动作：显示地址簿结果
-public static final String SABR = "SABR";
-// 动作：显示零结果
-public static final String SZR = "SZR";
-// 动作：显示错误
-public static final String SERR = "SERR";
+    public static final String SLNI = "SLNI";
 
-public String execute(HttpServletRequest req,
-                      HttpServletResponse res)
-            throws ServletException;
+    // 动作：显示地址簿结果
 
-public void setModel(Model m);
+    public static final String SABR = "SABR";
+
+    // 动作：显示零结果
+
+    public static final String SZR = "SZR";
+
+    // 动作：显示错误
+
+    public static final String SERR = "SERR";
+
+    public String execute(HttpServletRequest req, HttpServletResponse res) throws ServletException;
+
+    public void setModel(Model m);
 }
+```
 
 该命令接口定义了两个方法。方法*execute*调用命令。方法*setModel*将请求的模型存储在命令中。Web应用中的每个动作在此接口中也被定义为一个静态最终*字符串*。
 
 ### 14. 让我们来研究姓氏搜索的命令对象。类*com.jspbg.webflow.LastNameSearchCommand*继承自*com.jspbg.webflow.SearchCommand*。所以我们先来研究它。
 
-```
+```java
 public abstract class SearchCommand implements Command {
+
     protected AddressBookManager addressBookManager = null;
 
     public void setModel(Model m) {
+
         addressBookManager = (AddressBookManager)m;
+
     }
 
     /**
+
      * Template execute method that is used by multiple
+
      * sub-classes of this abstract command object.
+
      */
-    public String execute(HttpServletRequest req,
-                          HttpServletResponse res)
-            throws ServletException {
+
+    public String execute(HttpServletRequest req, HttpServletResponse res) throws ServletException {
+
         String search_str = req.getParameter("SS");
 
         RequestDispatcher rd = null;
+
         try {
+
             // retrieve the households that match the search string.
+
             List households = getHouseholds(search_str);
 
             // if there are no entries that match, return
+
             // 'show zero results' action.
+
             if ((households == null) || (households.size() == 0)) {
+
                 return Command.SZR;
+
             }
 
             // set the results on the request and return
+
             // the action 'show the address book results'
+
             request.setAttribute("Results", households);
+
             return Command.SABR;
+
         } catch (ServiceException sexp) {
+
             // set the service exception with the request
+
             // and return the action 'show error'
+
             req.setAttribute("Service Exception", sexp);
+
             return Command.SERR;
+
         }
+
     }
 
     // abstract method that sub-classes override
-    public abstract List getHouseholds(String searchString)
-                    throws ServiceException;
+
+    public abstract List getHouseholds(String searchString) throws ServiceException;
+
 }
 ```
 
@@ -9034,28 +10422,29 @@ public abstract class SearchCommand implements Command {
 
 ### 15. `LastNameSearchCommand`类仅提供`getHouseholds`方法。它通过向`AddressBookManager`请求基于姓氏的所有住户来实现这一点。
 
-```
-public class LastNameSearchCommand
-    extends SearchCommand {
-    public List getHouseholds(String searchString)
-            throws ServiceException {
-        return addressBookManager.getHouseholdsByLastName
-                (searchString);
+```java
+public class LastNameSearchCommand extends SearchCommand {
+
+    public List getHouseholds(String searchString) throws ServiceException {
+
+        return addressBookManager.getHouseholdsByLastName(searchString);
+
     }
+
 }
 ```
 
 ### 16. `com.jspbg.model.AddressBookManager`模型接口如下所示：
 
-```
+```java
 public interface AddressBookManager extends Model {
-    public List getHouseholdsByLastName(String lastName)
-            throws ServiceException;
-    public List getHouseholdsByFirstName(String firstName)
-            throws ServiceException;
-    public List getHouseholdsByIndex(String indexAlphabet,
-                                     boolean isFirstName)
-            throws ServiceException;
+
+    public List getHouseholdsByLastName(String lastName) throws ServiceException;
+
+    public List getHouseholdsByFirstName(String firstName) throws ServiceException;
+
+    public List getHouseholdsByIndex(String indexAlphabet, boolean isFirstName) throws ServiceException;
+
 }
 ```
 
@@ -9063,26 +10452,38 @@ public interface AddressBookManager extends Model {
 
 ### 17. 我们Web应用程序的最后一个元素由实际的Web资源以及每个资源为参与此流程控制框架必须提交的内容组成。我们在这里展示一个`Entrance.html`文件片段作为示例：
 
-```
+```html
 <script language="javascript">
-function submitEntranceForm(val)
-{
+
+function submitEntranceForm(val) {
+
     document.entrance.action.value = val;
+
     document.entrance.submit();
+
 }
+
 </script>
 
-<FORM METHOD="POST" NAME="entrance"
-      ACTION="/Family_Center/Dispatcher">
+<FORM METHOD="POST" NAME="entrance" ACTION="/Family_Center/Dispatcher">
+
     <INPUT TYPE=hidden NAME="action">
+
     <TABLE CELLPADDING=2 CELLSPACING=5 BORDER=1>
+
         <TR>
+
             <TD> <B> Address Book </B> </TD>
+
             <TD>
-                <INPUT TYPE=button VALUE="GO"
-                       onMouseDown="submitEntranceForm('EAB');">
+
+                <INPUT TYPE=button VALUE="GO" onMouseDown="submitEntranceForm('EAB');">
+
             </TD>
+
         </TR>
+
+</FORM>
 ```
 
 地址簿的按钮元素使用了一个JavaScript函数*submitEntranceForm*，并传递了一个动作字符串“EAB”。该函数只是将此值设置为名为“action”的隐藏表单输入元素的值，并提交表单。我们的分发器servlet处理表单提交。
@@ -9106,14 +10507,21 @@ function submitEntranceForm(val)
 
 不多做详细介绍，让我们研究Struts中的一个示例流程控制元素，作为我们项目中解决方案的对比替代方案。
 
-```
+```xml
 <action path="/editSubscription"
+
     type="org.apache.struts.webapp.example.EditSubscriptionAction"
+
     name="subscriptionForm"
+
     scope="request"
+
     validate="false">
+
     <forward name="failure" path="/mainMenu.jsp"/>
+
     <forward name="success" path="/subscription.jsp"/>
+
 </action>
 ```
 
@@ -9121,17 +10529,17 @@ function submitEntranceForm(val)
 
 在调用`perform`方法之前，控制器servlet会尝试在请求作用域中查找名为“subscriptionForm”的表单JavaBean。如果找不到，它会实例化表单Bean。接下来显示的表单Bean元素（也在配置文件中指定）将名称映射到一个JavaBean。
 
-```
+```xml
 <form-bean name="subscriptionForm"
+
     type="org.apache.struts.webapp.example.SubscriptionForm"
+
 />
 ```
 
 然后，此表单Bean根据由JavaBean内省建立的属性方法签名，使用请求中的参数进行填充。然后表单Bean在`perform`方法中被发送给动作对象。这个预处理步骤使动作对象无需从请求中解析元素。
 
 `action`元素内的两个`forward`元素表示命令对象可以根据“成功”或“失败”逻辑名称（动作）转发控制权的两个目的地。逻辑名称可以有任意多个。
-
-
 
 所有这些元素都指定在一个特殊的 Struts 配置 XML 文件中，该文件作为名为 "config" 的初始化参数传递给控制器 servlet。
 
@@ -9168,7 +10576,7 @@ function submitEntranceForm(val)
 - 所有流控机制有什么共同点？
 
 - 通过从配置文件（如 Java 属性文件或特殊配置的 XML 文件）读取 Web 应用程序中的各个阶段，可以建立动态流控。
-- Struts 是由 Apache 软件基金会下的 Jakarta 项目开发的模型-视图-控制器实现框架。它包括各种工具，可用于轻松构建 Web 应用程序中的模型、视图和控制器组件。
+- Struts 是由 Apache 软件基金会下的 Jakarta 项目开发的模型-视图-控制器实现框架。它包括各种工具，可用于轻松构建 Web 应用程中的模型、视图和控制器组件。
 - 所有流控机制都涉及将 Web 应用程序中的操作映射到由 servlet 控制的阶段（或目标）。
 
 ## 掌握检查
@@ -9178,8 +10586,11 @@ function submitEntranceForm(val)
 2.  考虑以下模型接口并解释错误之处：
 
 ```
+
 public boolean isCreditApproved(HttpServletRequest request);
+
 public void debitCreditCard(HttpSession session);
+
 ```
 
 3.  在 Web 应用程序中存储 Web 流信息的常见格式是什么，为什么？
@@ -9213,20 +10624,18 @@ public void debitCreditCard(HttpSession session);
 
 那么，您可能在何时以及为何集成外部内容源？您在以下情况下集成外部内容源：
 
-- 为了可靠地组织和管理非常大量的内容
+- 为了可靠的组织和管理非常大量的内容
 - 为了集中、保护和共享信息
 - 为了向应用程序提供动态内容
 - 为了访问遗留信息系统
 
 ### 管理大量内容
 
-当需求不大时，文件系统的内容存储效果很好。然而，随着本地磁盘上内容量的增加，查找任何给定内容变得困难。为了组织这些内容，大多数计算机用户创建自定义目录方案。例如，许多计算机用户创建一个特殊的 "Pkgs" 目录，并将应用程序安装到其中。Windows 实际上默认创建此类目录，包括：`My Documents`、`My Download Files` 和 `Program Files`。
+当需求不大时，文件系统的内容存储效果很好。然而，随着本地磁盘上内容量的增加，查找任何给定内容变得困难。为了组织这些内容，大多数计算机用户创建自定目录方案。例如，许多计算机用户创建一个特殊的 "Pkgs" 目录，并将应用程序安装到其中。Windows 实际上默认创建此类目录，包括：`My Documents`、`My Download Files` 和 `Program Files`。
 
 这种自定义方案在公司环境中很快就会失败。一方面，很难预测您可能希望如何访问您产生的内容。您存储在 `/Presentations` 目录还是 `/DesignMeetings` 目录中的那个 PowerPoint 演示文稿？您是否在每个目录中都有两个略有不同的副本？哪个版本是正确的版本？您给它起了什么文件名？
 
 另一个问题是所需的存储量。有一句格言（也许是自然法则），无论您将磁盘做得多大，您都会填满它。查找内容和提供足够的磁盘空间是一对双胞胎
-
-
 
 ### 集中化、保护与共享内容
 
@@ -9302,7 +10711,7 @@ CCI定义了应用程序组件的客户端API，从而标准化了对多个不�
 
 [内容]外部内容源可以通过启用用于标记、跟踪和组织内容的*索引和编目结构*来帮助缓解这些问题。“编目结构”一词起源于图书馆学。图书目录和内容目录之间的类比非常贴切。这两种目录都提供关于内容的信息——元数据。图书馆目录提供关于书籍和图书馆其他资产的信息，特别是包括位置信息。内容目录提供关于数字内容的信息，包括该内容的存储位置。
 
-像Lycos这样的互联网搜索引擎和像Yahoo这样的网络目录提供了熟悉的内容目录示例。搜索引擎构建一个单词和短语的索引（一种动态目录），并将其映射到包含这些单词和短语的网页。网络目录创建一个术语或主题的层次结构，并将网站映射到其中。两者都提供了一种组织内容的方法，从而简化了查找内容的过程。
+像Lycos这样的互联网搜索引擎和像Yahoo这样的网�目录提供了熟悉的内容目录示例。搜索引擎构建一个单词和短语的索引（一种动态目录），并将其映射到包含这些单词和短语的网页。网络目录创建一个术语或主题的层次结构，并将网站映射到其中。两者都提供了一种组织内容的方法，从而简化了查找内容的过程。
 
 
 
@@ -9332,7 +10741,7 @@ CCI定义了应用程序组件的客户端API，从而标准化了对多个不�
 
 **1分钟速查答案：**
 
-- 集成外部数据源的四个原因是：组织和管理大量数据；集中、保护和共享信息；提供动态内容；以及提供对遗留内容源的访问。
+- 集成外部数据源的四个原因是：组织和管理大量数据；集中、保抚和共享信息；提供动态内容；以及提供对遗留内容源的访问。
 - 目录结构标记、跟踪和组织内容。
 - Java支持JDBC数据库API和J2EE连接器架构用于EIS集成。
 - EIS是*企业信息系统*，例如SAP R/3和PeopleSoft。
@@ -9350,15 +10759,25 @@ JDBC API提供三个核心服务：
 连接服务包括注册JDBC驱动程序、连接数据库和断开数据库连接。在使用JDBC驱动程序之前，必须先向JDBC运行时框架注册它。JDBC框架支持多种方式，但最简单的注册方式是使用Java方法`Class.forName`。例如，以下是如何注册MySQL驱动程序（注意MySQL驱动程序类是`org.gjt.mm.mysql.Driver`）：
 
 ```java
+
 public static void registerDriver() {
+
     try {
+
         Class.forName(
+
             "org.gjt.mm.mysql.Driver"); // <-- MySQL JDBC驱动程序类
+
     }
+
     catch (Exception excp) {
+
         excp.printStackTrace();
+
     }
+
 }
+
 ```
 
 这段代码有效是因为JDBC规范要求JDBC驱动程序在静态初始化器中注册自身。虽然简单，但这种方法还有一个优点：你可以从属性文件中加载类名，这提供了一种简单的方式来切换数据库——只需更换JDBC驱动程序即可。
@@ -9373,45 +10792,66 @@ public static void registerDriver() {
 一旦驱动程序注册成功，你必须检索到数据源的连接。*DriverManager*充当*连接工厂*，返回它找到的第一个满足连接协议的已注册JDBC驱动程序的实例。如果找不到，它会抛出*SQLException*。JDBC框架提供了一些方法来建立连接，但最简单的方法只需要指定一个URL、一个用户名和一个密码。数据库URL的通用格式是：
 
 ```
+
 jdbc:subprotocol:subname
+
 ```
 
 JDBC驱动程序之间连接协议唯一不同的部分是连接URL的具体格式。对于MySQL，具体格式是：
 
 ```
+
 jdbc:mysql://server-host/database-name
+
 ```
 
 以下是我们为Family Center应用程序建立连接的代码：
 
 ```java
+
 public static Connection getConnection() throws SQLException {
+
     String url = "jdbc:mysql://localhost/Family_Center";
+
     String username = "bookUser";
+
     String password = "bookPassword";
+
     Connection conn =
+
         DriverManager.getConnection(url,
+
                                     username,
+
                                     password);
+
     return conn;
+
 }
+
 ```
 
 一旦你使用完JDBC连接，必须关闭它。以下是执行这个简单操作的代码：
 
 ```java
+
 public static void releaseConnection(Connection conn)
+
     throws SQLException {
+
     if (conn != null)
+
         conn.close();
+
 }
+
 ```
 
 # 专家问答
 
 **问：** 什么是"连接工厂"？
 
-**答：** 工厂是另一种常见的软件设计模式。工厂提供一种创建对象的方法（本例中是连接对象）。通常，在像JDBC这样的API框架中，你使用工厂是为了将创建*什么*对象的责任推迟给工厂，从而将此责任从框架中移除。工厂模式的一个变体使用*参数化*工厂方法。这仅仅意味着工厂的*create*方法接受一个参数，该参数指定要创建的对象类型。所有由工厂创建的对象共享一个公共接口，但在实现上有所不同。
+**答：** 工厂是另一种常见的软件设计模式。工厂提供一种创建对象的方法（本例中是连连接对象）。通常，在像JDBC这样的API框架中，你使用工厂是为了将创建*什么*对象的责任推迟给工厂，从而将此责任从框架中移除。工厂模式的一个变体使用*参数化*工厂方法。这仅仅意味着工厂的*create*方法接受一个参数，该参数指指定要创建的对象类型。所有由工厂创建的对象共享一个公共接口，但在实现上有所不同。
 
 JDBC使用参数化工厂方法，以便它可以同时支持不同的JDBC驱动程序，但向应用程序呈现相同的接口。JDBC工厂方法是：*DriverManager.getConnection*。你向此方法传入一个URL，该URL定义用于创建连接对象的驱动程序。每个JDBC连接对象都必须实现标准的JDBC *Connection*接口。
 
@@ -9425,65 +10865,109 @@ JDBC使用参数化工厂方法，以便它可以同时支持不同的JDBC驱动
 以下是使用*DatabaseMetaData*提供的一些方法（还有许多其他方法）从MySQL数据库检索一些信息的示例代码：
 
 ```java
+
 import java.sql.DriverManager;
+
 import java.sql.Connection;
+
 import java.sql.DatabaseMetaData;
 
 public class DBMetaData {
 
     // 注册MySQL驱动程序
+
     static {
+
         try {
+
             Class.forName("org.gjt.mm.mysql.Driver").
+
                     newInstance();
+
         } catch(Exception exp) {
+
             System.out.println(exp.getMessage());
+
         }
+
     }
 
     public static void list() {
+
         Connection conn = null;
+
         try {
+
             conn = DriverManager.getConnection(
+
                     "jdbc:mysql://localhost/Family_Center",
+
                     "bookUser", "bookPasswd");
+
             DatabaseMetaData metaData = conn.getMetaData();
 
             // 数据库产品名称
+
             System.out.println("Product Name: " +
+
                 metaData.getDatabaseProductName());
 
             // 数据库产品版本
+
             System.out.println("Product Version: " +
+
                 metaData.getDatabaseProductVersion());
 
             // 是否支持批量更新？
+
             System.out.println(
+
                 "Supports Batch Updates: " +
+
                 metaData.supportsBatchUpdates());
 
             // 是否支持多个结果集？
+
             System.out.println(
+
                 "Supports multiple result sets: " +
+
                 metaData.supportsMultipleResultSets());
+
         }
+
         catch (Exception exp) {
+
             System.out.println(exp.getMessage());
+
         }
+
         finally {
+
             try {
+
                 conn.close();
+
             }
+
             catch (Exception exp) {
+
                 System.out.println(exp.getMessage());
+
             }
+
         }
+
     }
 
     public static void main(String[] args) {
+
         DBMetaData.list();
+
     }
+
 }
+
 ```
 
 
@@ -9511,12 +10995,19 @@ JDBC 2.0 规范包含了 ANSI/ISO SQL 标准 SQL3（也称为 SQL99）最新草�
 以下代码示例展示了如何对数据库执行一个简单的查询：
 
 ```java
+
 Statement stmt = conn.createStatement();
+
 ResultSet rs = stmt.executeQuery("SELECT ID FROM MEMBER");
+
 while (rs.next())
+
 {
+
     System.out.println("ID: " + rs.getInt(1));
+
 }
+
 ```
 
 如代码示例所示，JDBC 的基本使用只需要几个非常简单的步骤：
@@ -9528,17 +11019,29 @@ while (rs.next())
 通常，您希望能够参数化对数据库的调用，以便可以重用同一个 Statement。例如，您可能想要根据安全 ID 检索每个用户的有效角色。查询对每个用户都是相同的，除了每个用户唯一的 ID 值。您希望重用 Statement，但为每个用户替换相应的 ID 值。JDBC 通过 `java.sql.PreparedStatement`（派生自 `java.sql.Statement`）支持参数化查询。`PreparedStatement` 准备一个包含问号字符 (?) 的 SQL 字符串，以表示参数化值。以下是一些展示如何使用 `PreparedStatement` 的代码：
 
 ```java
+
 String sql = "SELECT USERNAME FROM " +
+
                "MEMBER WHERE ID = ?";
+
 PreparedStatement ps = conn.prepareStatement(sql);
+
 for (int i = 1; i < 5; i++)
+
 {
+
     ps.setInt(1, i);
+
     rs = ps.executeQuery();
+
     if (rs.first())
+
         System.out.println("Username: " +
+
             rs.getString(1));
+
 }
+
 ```
 
 使用 `PreparedStatement` 几乎与使用 `Statement` 一样简单。它只需要以下几个简单的步骤：
@@ -9569,21 +11072,33 @@ JDBC 还支持使用 `java.sql.ResultSet` 对象进行结果处理。`ResultSet`
 向前和向后滚动是 JDBC 2.0 的一项新功能。为了能够滚动，您必须在创建 `PreparedStatement` 时向驱动程序发送标志。以下是此类语句的示例：
 
 ```java
+
 PreparedStatement ps =
+
     conn.prepareStatement(sql_query,
+
                           ResultSet.TYPE_SCROLL_INSENSITIVE,
+
                           ResultSet.CONCUR_READ_ONLY);
+
 ```
 
 JDBC 2.0 还允许您使用 `ResultSet` 本身来更新数据源（例如数据库表）中的值。例如，如果 MySQL 支持此功能，以下代码将更新我们 Family_Center 数据库中 `MEMBER` 表的 `ResultSet` 查询第二行的 `FIRST_NAME` 字段：
 
 ```java
+
 // 将游标移动到 rs 的第二行
+
 rs.absolute(2);
+
 // 更新第 2 行的 FIRST_NAME 列
+
 rs.updateString("FIRST_NAME", "Ralph");
+
 // 更新数据源中的行
+
 updateRow();
+
 ```
 
 > **注意**
@@ -9591,17 +11106,26 @@ MySQL 不支持 `ResultSet` 更新。JDBC 2.0 规范使可更新结果集成为�
 
 您可以将 `ResultSet` 视为查询返回数据的表格表示。因此，如果您的 SQL 请求了两个字段 `ID` 和 `USERNAME`，结果集将表示一个包含名为“ID”和“USERNAME”的两列以及与返回结果值数量相对应的零行或多行数据的表。`ResultSet` 维护一个游标（一个指示当前行的标记），指向其表中的行。您通过要求 `ResultSet` 对象移动其游标来遍历表。例如，您通过调用 `ResultSet` 对象上的 `next` 方法来检索下一个结果记录（下一行）。
 
-类似地，您通过调用 `previous` 方法来请求前一个记录。您通过调用适当的数据检索方法并传递列索引或列名称作为参数，从 `ResultSet` 中检索列值。我们在前面的代码清单中已经看到了这一点。这是一个稍微复杂一些的例子：
+类似的，您通过调用 `previous` 方法来请求前一个记录。您通过调用适当的数据检索方法并传递列索引或列名称作为参数，从 `ResultSet` 中检索列值。我们在前面的代码清单中已经看到了这一点。这是一个稍微复杂一些的例子：
 
 ```java
+
 // 打印当前行的值。
+
 rs = stmt.executeQuery("SELECT a, b, c FROM Table1");
+
 while (rs.next()) {
+
     int aVal = rs.getInt("a");
+
     String bVal = rs.getString(2);
+
     float cVal = rs.getFloat("c");
+
     System.out.println("ROW = " + aVal + " " + bVal + " " + cVal);
+
 }
+
 ```
 
 表 10-1 显示了列值的检索方法如何映射到最常见的数据库类型。
@@ -9639,7 +11163,7 @@ while (rs.next()) {
 | BLOB | getBlob() |
 | CLOB | getClob() |
 
-虽然它不支持完整的 SQL99 草案标准，但 JDBC 2.0 支持的功能远超 JDBC 1.0。特别值得关注的是，它支持 JDBC 1.0 中没有的两种内置数据类型：
+虽然它不支持完整的 SQL99 草案标标准，但 JDBC 2.0 支持的功能远超 JDBC 1.0。特别值得关注的是，它支持 JDBC 1.0 中没有的两种内置数据类型：
 
 - 二进制大对象 - BLOB
 - 字符大对象 - CLOB
@@ -9668,22 +11192,39 @@ JDBC 2.0 中其他重要功能包括：
 您可以将 JDBC 调用直接嵌入 JavaServer Pages。例如，以下 JSP 代码片段访问我们的 Family_Center 数据库以显示所有有效用户：
 
 ```
+
 <% Class.forName(
+
         "org.gjt.mm.mysql.Driver").newInstance();
+
     String url = 
+
         "jdbc:mysql://localhost/Family_Center";
+
     Connection conn = DriverManager.getConnection(url);
+
     String sql = "SELECT FIRST_NAME, LAST_NAME " +
+
                  "FROM MEMBER";
+
     Statement stmt = conn.createStatement();
+
     ResultSet rs = stmt.executeQuery(sql);
+
     while (rs.next())
+
     {
+
         out.println(rs.getString(1) + " " +
+
                     rs.getString(2));
+
     }
+
 %>
+
 <BR>
+
 ```
 
 - 4 类 JDBC 驱动程序提供 100% 纯 Java 实现，将 JDBC 调用直接映射到目标数据库的协议。
@@ -9694,14 +11235,21 @@ JDBC 2.0 中其他重要功能包括：
 - `java.sql.ResultSet` 对象表示从 JDBC 查询返回的表格结果。
 
 ```
+
 <%
+
 }
+
 stmt.close();
+
 rs.close();
+
 conn.close();
+
 %>
 
 <!-- 关闭连接 -->
+
 ```
 
 在 JavaServer Pages 中嵌入 JDBC 代码可能不是一个好主意。一方面，JDBC 代码比大多数 Java 代码更难阅读和维护。另一方面，您可能希望使用诸如准备好的语句池之类的技术。如果您将 JDBC 代码嵌入 JavaServer Pages，这些技术将变得异常困难。如果您将数据库访问代码抽象到辅助 JavaBean 或自定义操作中，可以为您自己和其他可能重用您页面的 JSP 开发者简化许多工作。
@@ -9718,26 +11266,43 @@ conn.close();
 这四种类型的标签对应于核心 JDBC 服务。以下是使用 DBTags 版本的我们之前的示例，列出家庭中心的有效用户：
 
 ```
+
 <%@ taglib uri="dbtags-taglib" prefix="sql" %>
+
 <sql:connection id="conn">
+
   <sql:url>jdbc:mysql://localhost/Family_Center</sql:url>
+
   <sql:driver>org.gjt.mm.mysql.Driver</sql:driver>
+
 </sql:connection>
 
 <!-- 注册驱动程序并建立连接 -->
+
 ```
 
 ```
+
 <sql:statement id="stmt" conn="conn">
+
     <sql:query>
+
         SELECT FIRST_NAME, LAST_NAME from MEMBER
+
     </sql:query>
+
     <sql:resultSet id="rs">
+
         <sql:getColumn position="1"/>
+
         <sql:getColumn position="2"/><BR>
+
     </sql:resultSet>
+
 </sql:statement>
+
 <sql:closeConnection conn="conn"/>
+
 ```
 
 ![](img/7a40f8957e7c3eb68dbb9f8ab3cef54d_423_0.png)
@@ -9766,61 +11331,75 @@ conn.close();
 
 ### 逐步操作
 
-1. 从 `http://www.osborne.com` 下载本项目的文件。
-2. 在 `%TOMCAT_HOME%\webapps` 下创建一个名为 `database` 的目录。
-3. 将 `database.war` 文件移动到 `%TOMCAT_HOME%\webapps`。
-4. 进入 database 子目录，并使用 `jar.exe` 工具解压数据库应用程序，如下所示：
+1.  从 `http://www.osborne.com` 下载本项目的文件。
+2.  在 `%TOMCAT_HOME%\webapps` 下创建一个名为 `database` 的目录。
+3.  将 `database.war` 文件移动到 `%TOMCAT_HOME%\webapps`。
+4.  进入 database 子目录，并使用 `jar.exe` 工具解压数据库应用程序，如下所示：
 
 ```
+
 cd %TOMCAT_HOME%\webapps\database
+
 jar.exe xvf ..\database.war
+
 ```
 
 - 您应该避免在 JavaServer Pages 中嵌入 JDBC 代码。此类代码难以阅读，并且使得诸如语句池之类的事情变得异常困难。
 - 位于 Apache.org 的 Jakarta 小组开发并维护 DBTags 标签库。DBTags 标签库的目的是提供一组标签，用于在 JSP 页面中嵌入数据库访问。
 - 当您最终可能重构应用程序以添加数据库访问层（也许使用 EJB 组件）时，您应该避免使用像 DBTags 这样的数据库标签库。
 
-5. 您应该看到一个 \jsp 目录（包含 DoMemberEdit.jsp）、一个 \html 目录（包含 MemberEditForm.html）和一个 \WEB-INF 目录（包含 web.xml 文件以及 \lib 和 \tlds 目录）。
+5.  您应该看到一个 \jsp 目录（包含 DoMemberEdit.jsp）、一个 \html 目录（包含 MemberEditForm.html）和一个 \WEB-INF 目录（包含 web.xml 文件以及 \lib 和 \tlds 目录）。
 
-6. 现在从 Apache 网站下载 Apache DBTags 二进制发行版：http://jakarta.apache.org/builds/jakarta-taglibs/nightly/projects/dbtags/。选择最新的 Windows 发行版（即，以 .zip 结尾的最高版本号）。
+6.  现在从 Apache 网站下载 Apache DBTags 二进制发行版：http://jakarta.apache.org/builds/jakarta-taglibs/nightly/projects/dbtags/。选择最新的 Windows 发行版（即，以 .zip 结尾的最高版本号）。
 
-7. 使用您的 ZIP 工具将 DBTags 发行版解压到临时目录。
+7.  使用您的 ZIP 工具将 DBTags 发行版解压到临时目录。
 
-8. 更改目录到：<your-temporary-directory>\jakarta-taglibs\dbtags。
+8.  更改目录到：<your-temporary-directory>\jakarta-taglibs\dbtags。
 
-9. 将 DBTags.jar 移动到：%TOMCAT_HOME%\webapps\database\WEB-INF\lib：
+9.  将 DBTags.jar 移动到：%TOMCAT_HOME%\webapps\database\WEB-INF\lib：
 
 ```
+
 temp>move dbtags.jar %TOMCAT_HOME%\webapps\database\WEB-INF\lib
-```
-
-10. 将 dbtags.tld 复制到：%TOMCAT_HOME%\webapps\database\WEB-INF\tlds：
 
 ```
+
+10.  将 dbtags.tld 复制到：%TOMCAT_HOME%\webapps\database\WEB-INF\tlds：
+
+```
+
 temp>copy dbtags.tld %TOMCAT_HOME%\webapps\database\WEB-INF\tlds
-```
-
-11. 更改目录到：%TOMCAT_HOME%\webapps\database\WEB-INF。
-
-12. 查看 web.xml 文件并考虑 <taglib> 块。此块定义了我们必须在 JSP 页面中嵌入的 URL，以使用 DBTags 标签库。我们希望为 Apache.org 的标签库署名；因此，我们将其包含在我们的 URI 中。
 
 ```
+
+11.  更改目录到：%TOMCAT_HOME%\webapps\database\WEB-INF。
+
+12.  查看 web.xml 文件并考虑 <taglib> 块。此块定义了我们必须在 JSP 页面中嵌入的 URL，以使用 DBTags 标签库。我们希望为 Apache.org 的标签库署名；因此，我们将其包含在我们的 URI 中。
+
+```
+
 <taglib>
+
     <taglib-uri>jakarta.apache.org/taglibs/dbtags</taglib-uri>
+
     <taglib-location>/WEB-INF/tlds/dbtags.tld</taglib-location>
+
 </taglib>
+
 ```
 
-13. 更改目录到：%TOMCAT_HOME%\webapps\database\jsp。
-
-
+13.  更改目录到：%TOMCAT_HOME%\webapps\database\jsp。
 
 14.  查看文件：DoMemberEdit.jsp。这是向Family_Center数据库的MEMBER表添加记录的完整代码清单。注意我们使用了一个`taglib`指令（模块2）来指定使用`DBTags`标签库：
 
 ```jsp
+
 <%@ taglib
+
     uri="jakarta.apache.org/taglibs/dbtags"
+
     prefix="sql" %>
+
 ```
 
 15.  该页面包含三个部分：建立连接、插入表行和关闭连接。每个部分使用其自己的`DBTags`标签集。你可以在DBTags发行版中找到其教程。该教程描述了每个受支持的标签及其用法。
@@ -9834,7 +11413,9 @@ temp>copy dbtags.tld %TOMCAT_HOME%\webapps\database\WEB-INF\tlds
 19.  启动Tomcat并在浏览器中输入以下URL（你应该会看到一个类似图10-3的网页）：
 
 ```
+
 http://localhost:8080/database/html/EditMemberForm.html.
+
 ```
 
 20.  在表单中添加一些值，然后点击“添加记录”按钮。如果插入成功，你应该会看到一个类似图10-4的网页。
@@ -9936,7 +11517,7 @@ http://localhost:8080/database/html/EditMemberForm.html.
 
 关系定义了两个实体实例之间的关联。例如，一个成员是某个住户的*成员*。这种关联并不意味着方向性，因为描述`member_of`关系的另一种方式是将其描述为`has_member`。这是描述同一关系的两种方式，我们可以互换使用它们。关系具有基数。基数指的是关系中可能存在的实体实例数量。例如，`has_member`关系可以将许多成员实体实例关联到一个住户实体实例。这意味着该关系具有一对多的基数。也存在一对一和多对多的基数。通常，图表使用“乌鸦脚”（三叉线）来表示关系的“多”端。
 
-关系需要唯一的键来标识实体实例。为了方便和性能，你通常可能会像添加属性一样为实例添加唯一的数值键。键也可以是一个或多个共同唯一标识一个实体实例的属性。在Family Center数据模型中，我们为每个实体分配一个唯一的数字标识符，并使用该标识符来建立关系。图10-7展示了定义关系后的Family Center数据模型（为了清晰起见，我们显示了关系标签）。
+关系需要唯一的键来标识实体实�。为了方便和性能，你通常可能会像添加属性一样为实例添加唯一的数值键。键也可以是一个或多个共同唯一标识一个实体实例的属性。在Family Center数据模型中，我们为每个实体分配一个唯一的数字标识符，并使用该标识符来建立关系。图10-7展示了定义关系后的Family Center数据模型（为了清晰起见，我们显示了关系标签）。
 
 ![](img/7a40f8957e7c3eb68dbb9f8ab3cef54d_431_0.png)
 
@@ -9977,17 +11558,20 @@ http://localhost:8080/database/html/EditMemberForm.html.
 3.  进入 `Family_Center` 子目录，并使用 **jar.exe** 工具解压缩修改后的 `Family_Center` 应用程序：
 
 ```
-\> cd %TOMCAT_HOME%\webapps\Family_Center
-\> jar xvf ..\family_center.war
-```
 
-4.  重启 Tomcat 并使用 URL http://localhost:8080/Family_Center 访问我们的家庭中心应用。
-5.  家庭中心不会显示你在项目 9-1 中看到的 `Entrance.html`，而是自动将你重定向到 URL：http://localhost:8080/Family_Center/jsp/secure/login/login.jsp，如图 10-8 所示。
-6.  输入一个示例用户名和密码。例如，输入：`jerry` 和 `jerry`。（你可以在家庭中心 MySQL 数据库的 `MEMBER` 表中找到示例用户名和密码。）这将为你登录，并将控制权转发到你应该在项目 9-1 中认识的 `Entrance.html` 页面。登录页面使用分配给家庭中心数据库中给定登录名的值进行身份验证、授权和角色检查。
+\> cd %TOMCAT_HOME%\webapps\Family_Center
+
+\> jar xvf ..\family_center.war
+
+
+
+4. 重启 Tomcat 并使用 URL `http://localhost:8080/Family_Center` 访问我们的家庭中心应用。
+5. 家庭中心不会显示你在项目 9-1 中看到的 `Entrance.html`，而是自动将你重定向到 URL：`http://localhost:8080/Family_Center/jsp/secure/login/login.jsp`，如图 10-8 所示。
+6. 输入一个示例用户名和密码。例如，输入：`jerry` 和 `jerry`。（你可以在家庭中心 MySQL 数据库的 `MEMBER` 表中找到示例用户名和密码。）这将为你登录，并将控制权转发到你应该在项目 9-1 中认识的 `Entrance.html` 页面。登录页面使用分配给家庭中心数据库中给定登录名的值进行身份验证、授权和角色检查。
 
 **图 10-8** 家庭中心应用的登录页面
 
-你已成功将安全性集成到我们的家庭中心应用中。接下来的部分将解释安全实现的设计和代码。你可以从以下地址下载家庭中心应用的最终版本：http://www.osborne.com。
+你已成功将安全性集成到我们的家庭中心应用中。接下来的部分将解释安全实现的设计和代码。你可以从以下地址下载家庭中心应用的最终版本：`http://www.osborne.com`。
 
 > ## 专家问答
 >
@@ -10024,14 +11608,21 @@ http://localhost:8080/database/html/EditMemberForm.html.
 
 ```
 package com.jspbg.model;
+
 import java.util.List;
+
 import com.jspbg.data.Member;
 
 public interface SecurityRealm {
+
     public String getMemberID(String username, String password)
+
         throws ServiceException;
+
     public String[] getRoles(String id)
+
         throws ServiceException;
+
 }
 ```
 
@@ -10041,13 +11632,21 @@ public interface SecurityRealm {
 
 ```
 public static final String ID_QUERY =
+
     new String("SELECT ID FROM MEMBER WHERE " +
+
         "USERNAME = ? " +
+
         "AND PASSWORD = ?");
+
 public static final String ROLES_QUERY =
+
     new String("SELECT t2.NAME FROM MEMBER t1," +
+
         "MEMBER_ROLE t2 WHERE " +
+
         "t1.MEMBER_ROLE_ID = t2.ID AND " +
+
         "t1.ID = ?");
 ```
 
@@ -10061,84 +11660,151 @@ public static final String ROLES_QUERY =
 package com.jspbg.model;
 
 import java.sql.Connection;
+
 import java.sql.PreparedStatement;
+
 import java.sql.ResultSet;
+
 import java.sql.SQLException;
+
 import com.jspbg.data.Member;
+
 import com.jspbg.db.DB;
 
 public class SecurityRealmImpl
+
     implements SecurityRealm
+
 {
+
     static
+
     {
+
         DB.registerDriver();
+
     }
+
     public String getMemberID(String username,
+
                               String password)
+
         throws ServiceException
+
     {
+
         String memberID = null;
+
         PreparedStatement ps = null;
+
         ResultSet rs = null;
+
         Connection conn = null;
 
         try
+
         {
+
             conn = DB.getConnection();
+
             ps = conn.prepareStatement(SQLConstants.ID_QUERY);
+
             ps.setString(1, username);
+
             ps.setString(2, password);
 
             rs = ps.executeQuery();
+
             if (rs.first())
+
             {
+
                 memberID = Integer.toString(rs.getInt(1));
+
             }
+
         }
+
         catch(SQLException sexp)
+
         {
+
             throw new ServiceException(
+
                 "Unable to retrieve ID. Reason: " +
+
                 sexp.getMessage());
+
         }
+
         finally
+
         {
+
             try
+
             {
+
                 if(ps != null) ps.close();
+
                 if(rs != null) rs.close();
+
                 DB.releaseConnection(conn);
+
             }
+
             catch (SQLException sexp) {}
+
         }
+
         return memberID;
+
     }
 
     public String[] getRoles(String id)
+
         throws ServiceException
+
     {
+
         String[] roles = null;
+
         PreparedStatement ps = null;
+
         ResultSet rs = null;
+
         Connection conn = null;
 
         try
+
         {
+
             conn = DB.getConnection();
+
             ps = conn.prepareStatement(
+
                 SQLConstants.ROLES_QUERY,
+
                 ResultSet.TYPE_SCROLL_INSENSITIVE,
+
                 ResultSet.CONCUR_READ_ONLY);
+
             ps.setInt(1, Integer.valueOf(id).intValue());
+
             rs = ps.executeQuery();
 
             if (rs.last())
+
             {
+
                 int count = rs.getRow();
+
                 roles = new String[count];
+
                 rs.first();
+
             }
+
 ```
 
 // 注册 JDBC 驱动程序
@@ -10162,32 +11828,59 @@ public class SecurityRealmImpl
 
 
 ```java
+
 for (int i = 0; i < count; i++)
+
 {
+
     roles[i] = rs.getString(1);
+
     rs.next();
+
 }
+
 }
+
 }
+
 catch(SQLException sexp)
+
 {
+
     throw new ServiceException(
+
         "无法检索角色。原因：" +
+
         sexp.getMessage());
+
 }
+
 finally
+
 {
+
     try
+
     {
+
         if(ps != null) ps.close();
+
         if(rs != null) rs.close();
+
         DB.releaseConnection(conn);
+
     }
+
     catch (SQLException sexp) {}
+
 }
+
 return roles;
+
 }
+
 }
+
 ```
 
 我们使用JDBC实现了SecurityRealm接口要求的两种方法，但同样可以轻松地使用文件系统或LDAP来实现。我们确保如果发生错误，会将异常映射到与实现无关的ServiceException类。
@@ -10195,10 +11888,15 @@ return roles;
 我们的下一步是使用我们的桥接器重新实现CustomRealm（来自模块8）。我们首先添加一个新属性`implementation`，代表安全实现类：
 
 ```
+
 public void setImplementation(String implementation)
+
 {
+
     this.implementation = implementation;
+
 }
+
 ```
 
 我们很快会解释这个属性是如何被设置的。
@@ -10206,99 +11904,177 @@ public void setImplementation(String implementation)
 然后我们重新实现*ContextInit*方法：
 
 ```
+
 public void contextInit(Context ctx)
+
     throws TomcatException
+
 {
+
     if (!inited)
+
     {
+
         try
+
         {
+
             secMgr = (SecurityRealm)
+
                 Class.forName(implementation).newInstance();
+
             inited = true; // 只执行一次
+
         }
+
         exception handling code
+
     }
+
 }
+
 ```
 
 在这个初始化方法中，我们使用添加的*implementation*属性来实例化安全实现。
 接下来，我们必须重新实现*authenticate*和*authorize*。以下是新的*authenticate*方法：
 
 ```
+
 public int authenticate(Request req,
+
                        Response response)
+
 {
+
     int authValue = NOT_AUTHORIZED; //401
 
     // 提取登录凭证
+
     HttpSession session = req.getSession(false);
+
     if (session == null) return authValue;
 
     String username = (String)
+
         session.getAttribute("j_username");
+
     String password = (String)
+
         session.getAttribute("j_password");
 
     /*
+
      * 验证用户名和密码
+
      */
+
     if (username != null && password != null)
+
     {
+
         String id = null;
+
         try
+
         {
+
             id = secMgr.getMemberID(username, password);
+
             if (id != null)
+
             {
+
                 req.setRemoteUser(id);
+
                 req.setUserPrincipal(new SimplePrincipal(id));
+
                 authValue = OK; // 0
+
             }
+
         }
+
         exception handling
+
     }
+
     return authValue;
+
 }
+
 ```
 
 在这个新的实现中，如果`getMemberID`返回了一个id，那么用户就被认证了。
 以下是authorize的新实现：
 
 ```
+
 public int authorize(Request req,
+
                      Response response,
+
                      String roles[])
+
 {
+
     int authValue = NOT_AUTHORIZED;
+
     try
+
     {
+
         String id = req.getRemoteUser();
+
         if (id != null)
+
         {
+
             String[] allRoles = secMgr.getRoles(id);
+
             if (allRoles != null)
+
             {
+
                 int ilen = allRoles.length;
+
                 for (int i = 0; authValue != OK &&
+
                             i < ilen; i++)
+
                 {
+
                     int jlen = roles.length;
+
                     for (int j = 0; authValue != OK &&
+
                                 j < jlen; j++)
+
                     {
+
                         if (allRoles[i].equals(roles[j]))
+
                         {
+
                             authValue = OK;
+
                         }
+
                     }
+
                 }
+
             }
+
         }
+
     }
+
     exception handling
+
     return authValue;
+
 }
+
 ```
 
 `authorize`方法调用我们安全实现中的`getRoles`方法来检索分配给给定用户的所有角色。然后，它将这些角色与当前资源授权的角色（传递给`authorize`方法）进行比较。如果存在匹配项，则允许用户访问该资源。
@@ -10306,11 +12082,17 @@ public int authorize(Request req,
 接下来，我们必须在`CustomRealm`中设置`implementation`属性。Tomcat使用Java反射来解析您在server.xml中为拦截器提供的任何属性，并调用相应的setter方法。这是我们修改后的用于`CustomRealm`的server.xml配置：
 
 ```
+
 <RequestInterceptor
+
     className="com.jspbg.interceptor.CustomRealm"
+
     implementation="com.jspbg.model.SecurityRealmImpl"
+
     debug="2"
+
 />
+
 ```
 
 请注意，我们提供了实现类的完整类名。我们只需指定一个不同的`SecurityRealm`接口实现，就可以简单地替换此安全处理程序。
@@ -10318,26 +12100,45 @@ public int authorize(Request req,
 最后，我们必须在我们的web.xml文件中添加必要的安全元素以进行基于表单的身份验证。`security-constraint`块如下所示：
 
 ```
+
 <!-- Security entries -->
+
 <security-constraint>
+
     <web-resource-collection>
+
         <web-resource-name>Protected Area</web-resource-name>
+
         <!-- 定义要保护的上下文相对URL -->
+
         <url-pattern>/html/*</url-pattern>
+
         <!-- 如果你列出了http方法，那么只有这些方法受到保护 -->
+
         <http-method>DELETE</http-method>
+
         <http-method>GET</http-method>
+
         <http-method>POST</http-method>
+
         <http-method>PUT</http-method>
+
     </web-resource-collection>
 
     <auth-constraint>
+
         <!-- 任何具有列出角色之一的用户都可以访问此区域 -->
+
         <role-name>administrator</role-name>
+
         <role-name>family</role-name>
+
         <role-name>guest</role-name>
+
     </auth-constraint>
+
 </security-constraint>
+
 ```
 
 受保护区域由URL模式"/html/*"标识，我们的欢迎页面`Entrance.html`就位于此处。`auth-constraint`块指定了访问此Web应用程序的用户的有效角色。此列表必须与我们在MySQL数据库的`MEMBER_ROLES`表中建立的角色名称匹配。
@@ -10345,21 +12146,634 @@ public int authorize(Request req,
 接下来的`login-config`块指定了当访问此Web应用程序中的受保护区域时应自动加载的登录表单页面。当登录身份验证或授权失败时，将加载错误页面。
 
 ```
+
 <!-- 基于表单的登录 -->
+
 <login-config>
+
     <auth-method>FORM</auth-method>
+
     <realm-name>
+
         Example Form-Based Authentication Area
+
     </realm-name>
+
     <form-login-config>
+
         <form-login-page>
+
             /jsp/secure/login/login.jsp
+
         </form-login-page>
+
         <form-error-page>
+
             /jsp/secure/login/loginError.jsp
+
         </form-error-page>
+
     </form-login-config>
+
 </login-config>
+
+```
+
+### 家庭中心数据访问方法
+
+家庭中心数据访问方法的目标是创建一个封装层，以便我们可以轻松替换模型的任何给定实现。应该可以“插入”新的实现，而无需重新编码模型的任何部分。
+
+### 桥接模式
+
+回顾我们在模块 7 和 9 中关于桥接模式的讨论。正如我们所说，桥接模式将抽象接口与其解耦实现。除其他优点外，它还将客户端与任何特定平台或专有方法签名隔离开来。这种隔离正是我们家庭中心所需要的。让我们看看我们如何为安全性和地址簿实现它。
+
+### 使用数据库实现我们的 CustomRealm
+
+回顾模块 8 中我们为 Tomcat 硬编码实现的自定义安全域。我们希望修改实现，使其可以使用数据库。但我们将来可能希望集成一个 LDAP 目录来控制对家庭中心的访问。为了构建这种灵活性和可扩展性，我们必须使用桥接模式将安全接口与任何给定的实现解耦。我们首先定义接口。
+
+我们的接口必须支持两个功能：
+
+- 使用登录名和密码检索安全身份
+- 检索分配给给定用户的所有角色
+
+以下是此接口的 Java 定义：
+
+```
+
+package com.jspbg.model;
+
+import java.util.List;
+
+import com.jspbg.data.Member;
+
+public interface SecurityRealm {
+
+    public String getMemberID(String username, String password)
+
+        throws ServiceException;
+
+    public String[] getRoles(String id)
+
+        throws ServiceException;
+
+}
+
+```
+
+请注意，此定义没有暗示任何关于 JDBC 实现的内容。你可以使用任何支持方法签名的实现。
+
+接下来，我们必须创建一个 JDBC 实现。我们首先在 `SQLConstants.java` 中将 SQL 字符串声明为静态最终变量：
+
+```
+
+public static final String ID_QUERY =
+
+    new String("SELECT ID FROM MEMBER WHERE " +
+
+        "USERNAME = ? " +
+
+        "AND PASSWORD = ?");
+
+public static final String ROLES_QUERY =
+
+    new String("SELECT t2.NAME FROM MEMBER t1," +
+
+        "MEMBER_ROLE t2 WHERE " +
+
+        "t1.MEMBER_ROLE_ID = t2.ID AND " +
+
+        "t1.ID = ?");
+
+```
+
+注意 "?" 字符，它表明我们将使用预处理语句。
+
+我们将这些声明为静态最终变量，因为我们反复重用它们但从不更改它们。
+
+以下是接口的实际 JDBC 实现：
+
+```
+
+package com.jspbg.model;
+
+import java.sql.Connection;
+
+import java.sql.PreparedStatement;
+
+import java.sql.ResultSet;
+
+import java.sql.SQLException;
+
+import com.jspbg.data.Member;
+
+import com.jspbg.db.DB;
+
+public class SecurityRealmImpl
+
+    implements SecurityRealm
+
+{
+
+    static
+
+    {
+
+        DB.registerDriver();
+
+    }
+
+    public String getMemberID(String username,
+
+                              String password)
+
+        throws ServiceException
+
+    {
+
+        String memberID = null;
+
+        PreparedStatement ps = null;
+
+        ResultSet rs = null;
+
+        Connection conn = null;
+
+        try
+
+        {
+
+            conn = DB.getConnection();
+
+            ps = conn.prepareStatement(SQLConstants.ID_QUERY);
+
+            ps.setString(1, username);
+
+            ps.setString(2, password);
+
+            rs = ps.executeQuery();
+
+            if (rs.first())
+
+            {
+
+                memberID = Integer.toString(rs.getInt(1));
+
+            }
+
+        }
+
+        catch(SQLException sexp)
+
+        {
+
+            throw new ServiceException(
+
+                "Unable to retrieve ID. Reason: " +
+
+                sexp.getMessage());
+
+        }
+
+        finally
+
+        {
+
+            try
+
+            {
+
+                if(ps != null) ps.close();
+
+                if(rs != null) rs.close();
+
+                DB.releaseConnection(conn);
+
+            }
+
+            catch (SQLException sexp) {}
+
+        }
+
+        return memberID;
+
+    }
+
+    public String[] getRoles(String id)
+
+        throws ServiceException
+
+    {
+
+        String[] roles = null;
+
+        PreparedStatement ps = null;
+
+        ResultSet rs = null;
+
+        Connection conn = null;
+
+        try
+
+        {
+
+            conn = DB.getConnection();
+
+            ps = conn.prepareStatement(
+
+                SQLConstants.ROLES_QUERY,
+
+                ResultSet.TYPE_SCROLL_INSENSITIVE,
+
+                ResultSet.CONCUR_READ_ONLY);
+
+            ps.setInt(1, Integer.valueOf(id).intValue());
+
+            rs = ps.executeQuery();
+
+            if (rs.last())
+
+            {
+
+                int count = rs.getRow();
+
+                roles = new String[count];
+
+                rs.first();
+
+            }
+
+```
+
+// 注册 JDBC 驱动程序
+
+// 创建 PreparedStatement
+
+// 设置匹配的用户名和密码
+
+// 执行查询并检索安全 ID
+
+// 如果发生 SQLException 则重新抛出为 ServiceException
+
+// 关闭所有资源
+
+// 创建返回可滚动 ResultSet 的 PreparedStatement
+
+// 设置匹配的 id 值
+
+// 滚动到最后一行并获取计数
+
+
+
+```java
+
+for (int i = 0; i < count; i++)
+
+{
+
+    roles[i] = rs.getString(1);
+
+    rs.next();
+
+}
+
+}
+
+}
+
+catch(SQLException sexp)
+
+{
+
+    throw new ServiceException(
+
+        "无法检索角色。原因：" +
+
+        sexp.getMessage());
+
+}
+
+finally
+
+{
+
+    try
+
+    {
+
+        if(ps != null) ps.close();
+
+        if(rs != null) rs.close();
+
+        DB.releaseConnection(conn);
+
+    }
+
+    catch (SQLException sexp) {}
+
+}
+
+return roles;
+
+}
+
+}
+
+```
+
+我们使用JDBC实现了SecurityRealm接口要求的两种方法，但同样可以轻松地使用文件系统或LDAP来实现。我们确保如果发生错误，会将异常映射到与实现无关的ServiceException类。
+
+我们的下一步是使用我们的桥接器重新实现CustomRealm（来自模块8）。我们首先添加一个新属性`implementation`，代表安全实现类：
+
+```
+
+public void setImplementation(String implementation)
+
+{
+
+    this.implementation = implementation;
+
+}
+
+```
+
+我们很快会解释这个属性是如何被设置的。
+
+然后我们重新实现*ContextInit*方法：
+
+```
+
+public void contextInit(Context ctx)
+
+    throws TomcatException
+
+{
+
+    if (!inited)
+
+    {
+
+        try
+
+        {
+
+            secMgr = (SecurityRealm)
+
+                Class.forName(implementation).newInstance();
+
+            inited = true; // 只执行一次
+
+        }
+
+        exception handling code
+
+    }
+
+}
+
+```
+
+在这个初始化方法中，我们使用添加的*implementation*属性来实例化安全实现。
+接下来，我们必须重新实现*authenticate*和*authorize*。以下是新的*authenticate*方法：
+
+```
+
+public int authenticate(Request req,
+
+                       Response response)
+
+{
+
+    int authValue = NOT_AUTHORIZED; //401
+
+    // 提取登录凭证
+
+    HttpSession session = req.getSession(false);
+
+    if (session == null) return authValue;
+
+    String username = (String)
+
+        session.getAttribute("j_username");
+
+    String password = (String)
+
+        session.getAttribute("j_password");
+
+    /*
+
+     * 验证用户名和密码
+
+     */
+
+    if (username != null && password != null)
+
+    {
+
+        String id = null;
+
+        try
+
+        {
+
+            id = secMgr.getMemberID(username, password);
+
+            if (id != null)
+
+            {
+
+                req.setRemoteUser(id);
+
+                req.setUserPrincipal(new SimplePrincipal(id));
+
+                authValue = OK; // 0
+
+            }
+
+        }
+
+        exception handling
+
+    }
+
+    return authValue;
+
+}
+
+```
+
+在这个新的实现中，如果`getMemberID`返回了一个id，那么用户就被认证了。
+以下是authorize的新实现：
+
+```
+
+public int authorize(Request req,
+
+                     Response response,
+
+                     String roles[])
+
+{
+
+    int authValue = NOT_AUTHORIZED;
+
+    try
+
+    {
+
+        String id = req.getRemoteUser();
+
+        if (id != null)
+
+        {
+
+            String[] allRoles = secMgr.getRoles(id);
+
+            if (allRoles != null)
+
+            {
+
+                int ilen = allRoles.length;
+
+                for (int i = 0; authValue != OK &&
+
+                            i < ilen; i++)
+
+                {
+
+                    int jlen = roles.length;
+
+                    for (int j = 0; authValue != OK &&
+
+                                j < jlen; j++)
+
+                    {
+
+                        if (allRoles[i].equals(roles[j]))
+
+                        {
+
+                            authValue = OK;
+
+                        }
+
+                    }
+
+                }
+
+            }
+
+        }
+
+    }
+
+    exception handling
+
+    return authValue;
+
+}
+
+```
+
+`authorize`方法调用我们安全实现中的`getRoles`方法来检索分配给给定用户的所有角色。然后，它将这些角色与当前资源授权的角色（传递给`authorize`方法）进行比较。如果存在匹配项，则允许用户访问该资源。
+
+接下来，我们必须在`CustomRealm`中设置`implementation`属性。Tomcat使用Java反射来解析您在server.xml中为拦截器提供的任何属性，并调用相应的setter方法。这是我们修改后的用于`CustomRealm`的server.xml配置：
+
+```
+
+<RequestInterceptor
+
+    className="com.jspbg.interceptor.CustomRealm"
+
+    implementation="com.jspbg.model.SecurityRealmImpl"
+
+    debug="2"
+
+/>
+
+```
+
+请注意，我们提供了实现类的完整类名。我们只需指定一个不同的`SecurityRealm`接口实现，就可以简单地替换此安全处理程序。
+
+最后，我们必须在我们的web.xml文件中添加必要的安全元素以进行基于表单的身份验证。`security-constraint`块如下所示：
+
+```
+
+<!-- Security entries -->
+
+<security-constraint>
+
+    <web-resource-collection>
+
+        <web-resource-name>Protected Area</web-resource-name>
+
+        <!-- 定义要保护的上下文相对URL -->
+
+        <url-pattern>/html/*</url-pattern>
+
+        <!-- 如果你列出了http方法，那么只有这些方法受到保护 -->
+
+        <http-method>DELETE</http-method>
+
+        <http-method>GET</http-method>
+
+        <http-method>POST</http-method>
+
+        <http-method>PUT</http-method>
+
+    </web-resource-collection>
+
+    <auth-constraint>
+
+        <!-- 任何具有列出角色之一的用户都可以访问此区域 -->
+
+        <role-name>administrator</role-name>
+
+        <role-name>family</role-name>
+
+        <role-name>guest</role-name>
+
+    </auth-constraint>
+
+</security-constraint>
+
+```
+
+受保护区域由URL模式"/html/*"标识，我们的欢迎页面`Entrance.html`就位于此处。`auth-constraint`块指定了访问此Web应用程序的用户的有效角色。此列表必须与我们在MySQL数据库的`MEMBER_ROLES`表中建立的角色名称匹配。
+
+接下来的`login-config`块指定了当访问此Web应用程序中的受保护区域时应自动加载的登录表单页面。当登录身份验证或授权失败时，将加载错误页面。
+
+```
+
+<!-- 基于表单的登录 -->
+
+<login-config>
+
+    <auth-method>FORM</auth-method>
+
+    <realm-name>
+
+        Example Form-Based Authentication Area
+
+    </realm-name>
+
+    <form-login-config>
+
+        <form-login-page>
+
+            /jsp/secure/login/login.jsp
+
+        </form-login-page>
+
+        <form-error-page>
+
+            /jsp/secure/login/loginError.jsp
+
+        </form-error-page>
+
+    </form-login-config>
+
+</login-config>
+
 ```
 
 ### 通讯录模型
@@ -10369,9 +12783,13 @@ public int authorize(Request req,
 回想一下模块9中的控制器Servlet（`com.jspbg.servlet.DispatcherServlet`）。这个Servlet管理我们家庭中心的web流。它还初始化家庭中心的模型。它首先声明支持家庭中心功能的模型的逻辑名称：
 
 ```
+
 // 模型名称的静态字符串。
+
 private static final String ADDRESS_BOOK_MGR =
+
     "AddressBookManager";
+
 ```
 
 在本次讨论中，我们重点关注ADDRESS_BOOK_MGR。用于事件处理和留言板的其他管理器工作方式类似。您可以从http://www.osborne.com网站下载最终版本。
@@ -10379,44 +12797,67 @@ private static final String ADDRESS_BOOK_MGR =
 接下来，在`DispatcherServlet`的`init`方法中，我们初始化控制器策略（动作解析器）和模型工厂：
 
 ```
+
 public void init(ServletConfig config)
+
     throws ServletException {
 
     //初始化父类
+
     super.init(config);
 
     // 注册JDBC驱动程序。只需执行一次。
+
     DB.registerDriver();
 
     // 为控制器逻辑初始化动作解析器。
+
     initializeActionParser(config);
 
     // 创建模型工厂
+
     initializeModelFactory(config);
+
 }
+
 ```
 
 以下是模型工厂的初始化方法：
 
 ```
+
 public void initializeModelFactory(ServletConfig config)
+
     throws ServletException {
+
     Map models = new HashMap();
+
     models.put(ADDRESS_BOOK_MGR,
+
         config.getInitParameter(ADDRESS_BOOK_MGR));
+
     modelFactory = new ModelFactory(models);
+
 }
+
 ```
 
 首先要注意的是，我们使用在应用程序上下文的web.xml中指定的初始化参数来配置模型（分配实现模型的具体Java类）。以下是执行此配置的web.xml片段：
 
 ```
+
 <init-param>
+
     <param-name>AddressBookManager</param-name>
+
     <param-value>
+
         com.jspbg.model.AddressBookManagerImpl
+
     </param-value>
+
 </init-param>
+
 ```
 
 
@@ -10424,64 +12865,107 @@ public void initializeModelFactory(ServletConfig config)
 初始化模型之后，我们创建了一个 *ModelFactory*，并将初始化好的模型传入。以下是 *ModelFactory* 类的代码：
 
 ```
+
 public class ModelFactory {
+
     private Map modelNamesToImplNames = null;
+
     private Map modelNamesToImplObjects = new HashMap();
 
     public ModelFactory(Map modelNamesToImplNames)
+
     {
+
         this.modelNamesToImplNames = modelNamesToImplNames;
+
     }
 
     public synchronized Model makeModel(String modelName)
+
         throws ServiceException
+
     {
+
         /*
+
             通过模型名称
+
             获取实现类对象
+
         */
+
         Model m = (Model)
+
             modelNamesToImplObjects.get(modelName);
+
         if(m == null) {
+
             /* 获取实现类名称 */
+
             String implName = (String)
+
                 modelNamesToImplNames.get(modelName);
+
             if(implName != null) {
+
                 try {
+
                     // 实例化实现类
+
                     m = (Model)Class.forName(implName).
+
                         newInstance();
 
                     // 将其插入列表以供将来使用。
+
                     modelNamesToImplObjects.put(modelName, m);
+
                 }
+
                 // 异常处理
+
             }
+
         }
 
         return m;
+
     }
+
 }
-```
-
-*ModelFactory* 在首次请求时创建模型实例。以下是重现自模块9的调用该工厂的Servlet逻辑：
 
 ```
+
+*ModelFactory* 在首次请请求时创建模型实例。以下是重现自模块9的调用该工厂的Servlet逻辑：
+
+```
+
 // 当下一阶段是命令时，获取该命令的
+
 // 模型组件，并调用该命令。
+
 while((nextStage = 
+
         actionParser.getCommand(state)) != null) {
+
     Model model = null;
+
     String modelName = actionParser.getModel(state);
 
     // 如果当前动作关联了模型，则创建模型
+
     if(modelName != null) {
+
         model = modelFactory.makeModel(modelName);
+
     }
 
     // 将控制权转发给命令
+
     state = forwardToCommand(nextStage, model, req, res);
+
 }
+
 ```
 
 如你所见，Servlet从 *ModelFactory* 请求一个模型，然后将其转发给命令对象。
@@ -10489,22 +12973,35 @@ while((nextStage =
 关于这种模型管理架构，需要注意的一点是，模型是完全“可插拔”且可替换的。具体实现由给定应用程序上下文的web.xml文件决定。我们使用的具体实现是：*AddressBookManagerImpl*。我们使用Java接口 *AddressBookManager* 来定义此实现的接口。只要模型实现了 *AddressBookManager* 接口，不同的应用程序上下文就可以实现不同的模型，而无需对 *DispatcherServlet* 和MVC支持类进行任何重新编码。以下是 *AddressBookManager* 接口：
 
 ```
+
 public interface AddressBookManager extends Model {
+
     public List getHouseholdsByLastName(String lastName)
+
             throws ServiceException;
+
     public List getHouseholdsByFirstName(String firstName)
+
             throws ServiceException;
+
     public List getHouseholdsByIndex(String indexAlphabet,
+
             boolean isFirstName)
+
             throws ServiceException;
+
 }
+
 ```
 
 另一点需要注意的是，我们的通讯录实现了一种比我们的安全拦截器更强的桥接模式变体。DispatcherServlet并不持有对AddressBookManager接口的直接引用。相反，它持有对Model接口的引用。以下是该接口：
 
 ```
+
 public interface Model {
+
 }
+
 ```
 
 这个Model接口是完全空的，AddressBookManager接口仅仅是扩展了它，我们模型的其他接口（EventManager和MessageBoardManager）也是如此。这使得Servlet可以在家庭中心中使用各种不同的模型，而无需关心它具体使用的是哪个模型。然而，Model接口为我们的DispatcherServlet定义了要求。大门是敞开的，可以扩展Model接口，或者独立于特定的模型接口将其作为Java类来实现。如果我们这样做，AddressBookManager接口就无法再扩展Model接口了。相反，Model类可能持有对AddressBookManager的引用，并将某些调用委托给它。
@@ -10542,10 +13039,10 @@ public interface Model {
 
 2.  列出三种使网络透明性难以实现的计算机网络特性。
     - **延迟** 请求传播到服务器以及响应传播到客户端所需的时间
-    - **可靠性** 获得请求响应的可能性
+    - **可靠性** 获得请请求响应的可能性
     - **并发性** 服务器对客户端请求的执行顺序
 
-3.  列出两种HTTP请求类型。
+3.  列出两种HTTP请请求类型。
     最重要的两种HTTP请求类型是GET和POST。GET从远程服务器检索指定的Web资源。它在请求URI中发送信息。POST向远程服务器发送并接收数据。与GET不同，POST将数据作为特殊的内容消息附加在请求的末尾发送。
 
 4.  解释为什么标准的Web浏览器/Web服务器架构无法为许多现代Web应用提供足够的基础。
@@ -10561,17 +13058,23 @@ public interface Model {
 
 1.  这个注释声明有什么问题？
     ```
+
     <!-- This variable stores the JSP page context. --!>
+
     ```
     输出注释以 `<!--` 开头，以 `-->` 结尾（没有 `"!"`）。
     更正后的注释是：
     ```
+
     <!-- This variable stores the JSP page context. -->
+
     ```
 
 2.  这个注释声明有什么问题？
     ```
+
     <%-- This page was forwarded from <%= sourcePage %>. --%>
+
     ```
     JSP容器不会将隐藏注释之间的任何内容发送给客户端的响应。JSP表达式 `<%= sourcePage %>` 不应该放在隐藏注释内，因为它永远不会被客户端看到。
 
@@ -10580,8 +13083,11 @@ public interface Model {
 
 4.  这些页面指令导入了哪些包？
     ```
+
     <%@ page import="java.util.Vector" errorPage="/myError.jsp" %>
+
     <%@ page import="com.mycorp.classes.*, java.util.*, java.text.*" %>
+
     ```
     这些页面指令导入了以下包：
     - java.util
@@ -10590,8 +13096,11 @@ public interface Model {
 
 5.  此处显示的JSP页面声明是否有问题？
     ```
+
     <%@ page import="java.util.Hashtable" "errorPage=/myError.jsp" %>
+
     <%@ page errorPage="/myError.jsp" %>
+
     ```
 
 
@@ -10605,12 +13114,14 @@ public interface Model {
 7.  这个taglib指令有效吗？
 
     ```
+
     <%@ taglib uri="http://www.mywebsite.com/mytags" prefix="" %>
+
     ```
 
     该taglib指令无效，因为`prefix`是一个空字符串。在taglib指令中使用时，必须提供一个非空前缀字符串。你还必须确保该前缀字符串在该JSP页面内是唯一的。
 
-8.  你是否必须在JSP页面中使用自定义标签之前，先指定其taglib指令？
+8.  你是否必须在JSP页面中使用自定�标签之前，先指定其taglib指令？
 
     是的，你必须在由该指令声明的标签库中的任何自定义标签出现之前，指定taglib指令。
 
@@ -10619,12 +13130,19 @@ public interface Model {
 1.  你能发现以下JSP声明中的问题吗？
 
     ```
+
     <%!
+
         public String foo() {
+
             String val = request.getParameter("MyVal");
+
             return val;
+
         }
+
     %>
+
     ```
 
     JSP声明只能访问对象或类作用域中的变量。它们无法访问具有方法作用域的隐式对象，例如`HttpServletRequest`对象`request`。
@@ -10632,7 +13150,9 @@ public interface Model {
 2.  这个JSP声明说明了什么问题？
 
     ```
+
     <%! String request = "my request"; %>
+
     ```
 
     声明的变量*request*与JSP脚本片段和表达式中可用的隐式*HttpServletRequest*对象*request*同名。声明的变量具有对象作用域，而隐式变量具有方法作用域。在Java中，具有方法作用域的变量在方法中总是优先于同名的具有对象或类作用域的变量。因此，隐式变量*request*完全隐藏了声明的*String*变量*request*。这可能不是JSP页面开发者想要的效果。
@@ -10640,7 +13160,9 @@ public interface Model {
 3.  以下JSP表达式有问题吗？
 
     ```
+
     This page was accessed: <%= counter.getNumTimes(); %>.
+
     ```
 
     你不应该在JSP表达式内的Java表达式后面加分号。
@@ -10648,11 +13170,17 @@ public interface Model {
 4.  你在以下JSP片段中看到了什么令人担忧的问题？
 
     ```
+
     <%! Basket basket; %>
+
     <%
+
         basket = (Basket)session.getAttribute("BASKET");
+
         if(basket.full()) {
+
     %>
+
     ```
 
     JSP声明创建了变量*basket*，赋予其对象作用域。JSP脚本片段在请求时的*_jspService*方法中为这个变量赋值。除非你序列化对这个JSP页面的所有访问（使用页面指令中的*isThreadSafe*属性），否则多个线程可能同时修改*basket*，从而可能破坏变量的值。
@@ -10662,33 +13190,53 @@ public interface Model {
     有两种方法可以避免问题4中的情况。你可以通过将*basket*的声明包含在JSP脚本片段中来声明其为方法作用域，如下所示：
 
     ```
+
     <%
+
         Basket basket = (Basket)session.getAttribute("BASKET");
+
         if(basket.full()) {
+
     %>
+
     ```
 
     或者你可以同步*basket*，如下所示：
 
     ```
+
     <%! Basket basket; %>
+
     <%
+
         synchronized(this) {
+
             basket = (Basket)session.getAttribute("BASKET");
+
             if(basket.full()) {
+
     %>
+
     ....
+
     <% } %>
+
     ```
 
 6.  以下脚本片段有问题吗？
 
     ```
+
     <%
+
         if(basket.isEmpty()) {
+
             return basket;
+
         }
+
     %>
+
     ```
 
     JSP脚本片段不能返回任何值，因为它会被翻译成翻译后servlet的`_jspService`方法内的代码片段。这个`_jspService`方法返回`void`。
@@ -10696,13 +13244,21 @@ public interface Model {
 7.  考虑以下脚本片段。你看到它的声明方式有什么问题吗？
 
     ```
+
     <%
+
         class LocalClass {
+
             public String getName() {
+
                 return request.getParameter("Name");
+
             }
+
         }
+
     %>
+
     ```
 
     前面的类定义会被翻译成此JSP页面对应的翻译后servlet的`_jspService`方法中的一个局部内部类。Java方法中局部内部类的一个标准限制是，它们只能访问你声明为`final`的局部变量。我们内部类中的方法`getName`访问了隐式变量`request`。这个变量没有被声明为`final`，因此此脚本会抛出翻译时错误。
@@ -10710,16 +13266,23 @@ public interface Model {
 8.  以下脚本片段会按预期工作吗？
 
     ```
+
     <% if(time.before9AM() || time.after6PM()) %>
+
         Sorry, our office hours are <%= officeHours %>
+
     ```
 
     当你在条件语句中混合Java代码和HTML时，必须将条件块括在大括号内。这是因为我们条件块中看似单条语句的部分实际上在翻译后的servlet中会被翻译成多条语句。因此，正确的语法应该是：
 
     ```
+
     <% if(time.before9AM() || time.after6PM()) { %>
+
         Sorry, our office hours are <%= officeHours %>
+
     <% } %>
+
     ```
 
 ## 模块4：隐式对象
@@ -10750,7 +13313,7 @@ public interface Model {
 
 4.  **为什么JSP容器提供一个工厂方法来创建pageContext对象？**
 
-    PageContext类是抽象的，因此JSP容器供应商必须扩展它。你使用PageContext子类提供的方法来检索其他隐式对象。其意图是让容器供应商提供PageContext对象的自定义实现，该实现返回其他隐式对象的优化版本。工厂方法（一种创建型设计模式）使容器供应商能够返回其自定义的PageContext类实现。
+    PageContext类是抽象的，因此JSP容器供应商必须扩展它。你使用PageContext子类提供的方法来检索其他隐式对象。其意图是让容器供应商提供PageContext对象的自定义实现，该实返其他隐式对象的优化版本。工厂方法（一种创建型设计模式）使容器供应商能够返回其自定义的PageContext类实现。
 
 5.  **为什么JavaServer Pages无法流式传输二进制内容？**
 
@@ -10784,38 +13347,64 @@ public interface Model {
 
 1.  在这个`<jsp:useBean>`的用法中，错误是什么？
     ```
+
     <jsp:useBean id="myHelperBean"
+
                   scope="session"
+
                   type="StringProperty" >
+
     <jsp:setProperty name="myHelperBean"
+
                   property="stringProperty"
+
                   value="The String Property" />
+
     The String property value is:
+
         <jsp:getProperty name="myHelperBean"
+
                          property="stringProperty"/>
+
     ```
     `<jsp:useBean>`操作体要么需要为空，要么应该用结束标签`</jsp:useBean>`包裹其主体。在示例中，如果我们考虑`<jsp:setProperty>`标准操作位于`<jsp:useBean>`操作的主体内，那么正确的语法应该是：
     ```
+
     <jsp:useBean id="myHelperBean"
+
                   scope="session"
+
                   type="StringProperty" >
+
         <jsp:setProperty name="myHelperBean"
+
                       property="stringProperty"
+
                       value="The String Property" />
+
     </jsp:useBean>
+
     The String property value is:
+
         <jsp:getProperty name="myHelperBean"
+
                          property="stringProperty"/>
+
     ```
     （注意加粗的结束标签。）
 
 2.  如何使用请求参数为助手JavaBean设置*String*类型的登录名属性？
     假设你将该属性命名为"stringProperty"，请求参数命名为"loginName"，你可以这样使用`<jsp:setProperty>`标准操作：
     ```
+
     <jsp:setProperty name="myHelperBean"
+
                       property="stringProperty"
+
                       param="loginName"
+
     />
+
     ```
 
 3.  使用`<jsp:setProperty>`操作可以初始化的Java属性类型有什么限制？
@@ -10836,21 +13425,35 @@ public interface Model {
 6.  如何使用`<jsp:include>`操作创建JSP页面模板？
     你可以从一个JSP页面（比如`pageTemplate.jsp`）构建页面布局模板，该模板使用`<jsp:include>`操作来处理模板的参数化部分。你从请求参数中检索这些`<jsp:include>`操作的页面。下面是一个示例：
     ```
+
     <TABLE BORDER="2">
+
       <TR><TD>
+
         <jsp:include page='<%= request.getParameter("Cell1") %>' flush="true" />
+
       </TD></TR>
+
       <TR><TD>
+
         <jsp:include page='<%= request.getParameter("Cell2") %>' flush="true" />
+
       </TD></TR>
+
     </TABLE>
+
     ```
     有两个参数化部分："Cell1"和"Cell2"。可以有许多此模板的实例化，其中Cell1和Cell2具有不同的值。下面是一个示例：
     ```
+
     <jsp:include page="pageTemplate.jsp" flush="true" >
+
       <jsp:param name="Cell1" value="Cell1.jsp" />
+
       <jsp:param name="Cell2" value="Cell2.jsp" />
+
     </jsp:include>
+
     ```
 
 7.  `<jsp:plugin>`的哪些属性直接映射到HTML标签？
@@ -10883,16 +13486,22 @@ public interface Model {
     -   `javax.servlet.jsp.tagext.BodyTag`接口，定义了打算访问其标签主体的标签处理器的协议。
 
 4.  标签处理器能否在其`doAfterBody`方法中调用`pageContext.include`方法？
-    `doAfterBody`方法在`BodyTag`处理器内的每次主体评估后被调用。每个带主体的自定义标签都与一个`BodyContent`对象关联。这个`BodyContent`对象是`JspWriter`的一个子类，是一个用于处理主体评估的“无界”缓冲区。`BodyContent`对象不能被刷新，因为没有后备流将其内容发送到客户端。JSP页面将每个嵌套自定义标签的`BodyContent`对象推送到由`pageContext`对象维护的堆栈中。连接到客户端的`JspWriter`是此堆栈底部的项。只有在所有嵌套标签主体被评估后才可见。`pageContext.include`会导致`JspWriter`自动刷新。但在`doAfterBody`方法内部，堆栈顶部的`JspWriter`是一个不能被刷新的`BodyContent`对象。因此，在`doAfterBody`方法内部调用`pageContext.include`方法是非法的。
+    `doAfterBody`方法在`BodyTag`处理器内的每次主体评估后被调用。每个带主体的自定�标签都与一个`BodyContent`对象关联。这个`BodyContent`对象是`JspWriter`的一个子类，是一个用于处理主体评估的“无界”缓冲区。`BodyContent`对象不能被刷新，因为没有后备流将其内容发送到客户端。JSP页面将每个嵌套自定义标签的`BodyContent`对象推送到由`pageContext`对象维护的堆栈中。连接到客户端的`JspWriter`是此堆栈底部的项。只有在所有嵌套标签主体被评估后才可见。`pageContext.include`会导致`JspWriter`自动刷新。但在`doAfterBody`方法内部，堆栈顶部的`JspWriter`是一个不能被刷新的`BodyContent`对象。因此，在`doAfterBody`方法内部调用`pageContext.include`方法是非法的。
 
-5.  标签库开发者如何指定可以使用JSP表达式提供标签属性的值？
+5.  标签库开发者如何指定可以使用JSP表达式提供标签属的值？
     标签库描述符中的`<attribute>`元素有一个可选的子元素`<rtexprvalue>`。此元素中的值为`true`表示该属性可以接受JSP表达式作为其值。示例如下：
     ```
+
     <attribute>
+
         <name>myAttribute</name>
+
         <required>true</required>
+
         <rtexprvalue>true</rtexprvalue>
+
     </attribute>
+
     ```
 
 6.  `BodyContent`对象的作用是什么？
@@ -10916,13 +13525,21 @@ public interface Model {
 标签处理类由描述自定义操作的 `<tag>` 元素中的 `<tagclass>` 子元素指定。这里有一个示例：
 
 ```
+
 <tag>
+
     <name>readInterestType</name>
+
     <tagclass>sample.ReadRequestTag</tagclass>
+
     <teiclass>sample.ReadRequestTEI</teiclass>
+
     <bodycontent>empty</bodycontent>
+
     <info> Extracts request parameters </info>
+
 </tag>
+
 ```
 
 ### 11. *Tag* 接口中 *release* 方法的作用是什么？
@@ -10938,11 +13555,17 @@ public interface Model {
 标签库描述符中的 `<attribute>` 元素有一个可选的子元素 `<required>`。该元素内的值为 `false` 则声明此属性是可选的。这里有一个示例：
 
 ```
+
 <attribute>
+
     <name>myAttribute</name>
+
     <required>false</required>
+
     <rtexprvalue>true</rtexprvalue>
+
 </attribute>
+
 ```
 
 # 模块 7：JSP 架构
@@ -10965,7 +13588,7 @@ public interface Model {
 
 -   **物理架构**：定义应用程序运行所基于的硬件和网络基础设施。
 -   **系统架构**：定义应用程序运行所在的软件基础设施。
--   **数据库架构**：定义应用程序的数据模型。
+-   **数据库架构**：定义应用程序的数据模。
 -   **应用软件架构**：定义应用程序的软件元素以及它们之间的数据流。
 
 ## 5. 三层架构相比两层架构有哪些优势？在哪些情况下这些优势很重要？
@@ -10982,7 +13605,7 @@ MVC 模式将 Web 应用程序清晰地划分为独立的数据管理（模型�
 
 ## 8. 为什么 Web 应用程序设计者要引入命令模式？
 
-*命令*模式将操作（行为）包装在一个对象中，这样你就可以将其注册由不同的对象执行。在 Web 应用程序中，命令模式帮助你将行为与控制逻辑分开，从而允许在不改变控制逻辑的情况下独立修改行为。通过对所执行的操作进行封装，它使操作易于互换。它还实现了模型与调用模型服务的应用程序环境之间的分离，从而使模型在其他应用程序环境中可重用。
+*命令*模式将操作（行为）包装在一个对象中，这样你就可以将其注册由不同的对象执行。在 Web 应用程序中，命令模式帮助你将行为与控制逻辑分开，从而允许在不改变控制逻辑的情况下独立修改行为。通过对所执行的操作进行封装，它使操作易于互换。它还实现了模型与调用模型服务的应用程环境之间的分离，从而使模型在其他应用程序环境中可重用。
 
 ## 9. 桥接模式的目的是什么？为什么它对 Web 应用程序设计者很重要？
 
@@ -11009,9 +13632,13 @@ MVC 模式将 Web 应用程序清晰地划分为独立的数据管理（模型�
 你使用 `%TOMCAT_HOME%\conf\` 目录下 `server.xml` 文件中的 `<RequestInterceptor>` 元素来配置安全域。以下是 Tomcat 的默认域规范：
 
 ```
+
 <RequestInterceptor
+
     className="org.apache.tomcat.request.SimpleRealm"
+
     debug="0" />
+
 ```
 
 ## 4. 在 Apache Web 服务器中，你在哪里配置安全域？
@@ -11019,13 +13646,21 @@ MVC 模式将 Web 应用程序清晰地划分为独立的数据管理（模型�
 在 Apache 中，你使用 `httpd.conf` 文件中的 `<Directory>` 块指令来配置安全域。这里有一个示例：
 
 ```
+
 <Directory "E:/Apache/htdocs/controlled/wsolney">
+
     AuthType Basic
+
     AuthName "wsolney"
+
     AuthGroupFile "E:/Apache/login/wsolney/groups"
+
     AuthUserFile "E:/Apache/login/wsolney/users"
+
     require valid-user
+
 </Directory>
+
 ```
 
 
@@ -11039,8 +13674,11 @@ MVC 模式将 Web 应用程序清晰地划分为独立的数据管理（模型�
 - 2. 考虑以下模型接口并解释问题所在：
 
 ```java
+
 public boolean isCreditApproved(HttpServletRequest request);
+
 public void debitCreditCard(HttpSession session);
+
 ```
 
 这些模型方法感知`HttpServletRequest`和`HttpSession`对象。这将它们与HTTP环境不可分割地绑定在一起，使其无法在任何其他环境中使用。
@@ -11081,33 +13719,58 @@ LDAP服务将其信息作为条目存储在其存储库的树结构中。
 
 9. 在Tomcat中，你在哪里定义角色的访问控制？
 
-位于`%TOMCAT_HOME%\conf`下的文件`tomcat-users.xml`定义了用户和角色。你的Web应用程序在其部署描述符中，在标识受保护区域时，可以指定用户访问该区域时应属于的角色。这是通过使用`<auth-constraint>`元素完成的。这里显示了一个示例：
+位于`%TOMCAT_HOME%\conf`下的文件`tomcat-users.xml`定义了用户和角色。你的Web应用程序在其部署描述符中，在标识受保护区域时，可以指用户访问该区域时应属于的角色。这是通过使用`<auth-constraint>`元素完成的。这里显示了一个示例：
 
 ```xml
+
 <security-constraint>
+
     <web-resource-collection>
+
         <web-resource-name>Protected Area
+
         </web-resource-name>
+
         <!-- Define the context-relative URL(s)
+
              to be protected
+
         -->
+
         <url-pattern>/jsp/security/protected/*</url-pattern>
+
         <!-- If you list http methods, only
+
              those methods are protected
+
         -->
+
         <http-method>DELETE</http-method>
+
         <http-method>GET</http-method>
+
         <http-method>POST</http-method>
+
         <http-method>PUT</http-method>
+
     </web-resource-collection>
+
     <auth-constraint>
+
         <!-- Anyone with one of the listed
+
              roles may access this area
+
         -->
+
         <role-name>tomcat</role-name>
+
         <role-name>role1</role-name>
+
     </auth-constraint>
+
 </security-constraint>
+
 ```
 
 10. 什么是*证书颁发机构*？它在安全架构中扮演什么角色？
@@ -11205,7 +13868,7 @@ JDBC提供的主要服务是：
 
 JavaServer Pages 提供了一种服务器技术，用于生成动态 Web 页面。与 servlet 一样，它们扩展了 Web 服务器的功能。一些流行的 Web 服务器包括 Apache、Microsoft IIS 和 Sun Microsystems iPlanet。这些工业级服务器提供了支持高可扩展性和提升性能的功能。为了支持 servlet 和 JavaServer Pages，这类 Web 服务器依赖于称为 *servlet 和 JSP 容器* 的特殊应用程序。
 
-容器是特殊的 Java 类，当请求的资源是 servlet 或 JSP 页面时，Web 服务器会将 HTTP 请求定向到这些类。此类容器管理一个或多个 Java 虚拟机（JVM）来执行 servlet 和 JavaServer Pages。一些容器（例如 Tomcat）支持独立和混合配置。支持独立配置意味着容器同时提供 Web 服务器以及 servlet 和 JSP 容器。我们本书的所有项目都假设使用这种独立配置下的 Tomcat。
+容器是特殊的 Java 类，当请请求的资源是 servlet 或 JSP 页面时，Web 服务器会将 HTTP 请求定向到这些类。此类容器管理一个或多个 Java 虚拟机（JVM）来执行 servlet 和 JavaServer Pages。一些容器（例如 Tomcat）支持独立和混合配置。支持独立配置意味着容器同时提供 Web 服务器以及 servlet 和 JSP 容器。我们本书的所有项目都假设使用这种独立配置下的 Tomcat。
 
 Web 服务器最适合处理静态资源，而 servlet 和 JSP 容器最适合处理 servlet 和 JavaServer Pages。这意味着混合配置可以提高响应时间和可扩展性。在混合配置中，Web 服务器通过适配器将对 servlet 和 JavaServer Pages 的请求重定向到 servlet 容器。您无需设置此混合配置来完成本书的项目，但可以这样做。图 B-1 展示了混合配置。
 
@@ -11230,34 +13893,54 @@ Apache HTTP 服务器是最知名的 Apache 项目。Apache Web 服务器目前�
 1.  将下载的文件解压到 Tomcat 主目录下。该目录的内容应如下所示：
 
 ```
+
 E:\Pkgs\tomcat\jakarta-tomcat-3.2.1>dir
+
  Volume in drive E is CHACHU
+
  Volume Serial Number is 1321-17F0
+
  Directory of E:\Pkgs\tomcat\jakarta-tomcat-3.2.1
 
 12/16/2000  07:33p        <DIR>          .
+
 12/16/2000  07:33p        <DIR>          ..
+
+
+
+
 12/12/2000  01:36p                 2,811 LICENSE
+
 12/12/2000  01:39p        <DIR>          webapps
+
 12/12/2000  01:36p        <DIR>          conf
+
 12/12/2000  01:36p    <DIR>          doc
+
 12/12/2000  01:37p    <DIR>          lib
+
 12/12/2000  01:36p    <DIR>          bin
+
 12/12/2000  01:36p    <DIR>          src
+
 12/12/2000  01:36p    <DIR>          logs
+
 12/16/2000  07:45p    <DIR>          work
+
               1 File(s)      2,811 bytes
+
              10 Dir(s)  5,683,662,848 bytes free
+
 ```
 
 以下是一些重要的子目录：
 
-- **bin** 用于启动和关闭（`startup.bat`、`shutdown.bat`）servlet 容器的批处理脚本
-- **logs** 容器的运行时日志
-- **conf** 配置文件，包括主配置文件：`server.xml`
-- **webapps** Web 应用程序部署目录
-- **work** 中间文件（例如，从 JSP 页面编译的 servlet）
-- **doc** 关于 Tomcat 的通用文档，例如用户指南
+- `bin` 用于启动和关闭（`startup.bat`、`shutdown.bat`）servlet 容器的批处理脚本
+- `logs` 容器的运行时日志
+- `conf` 配置文件，包括主配置文件：`server.xml`
+- `webapps` Web 应用程序部署目录
+- `work` 中间文件（例如，从 JSP 页面编译的 servlet）
+- `doc` 关于 Tomcat 的通用文档，例如用户指南
 
 2.  创建一个名为 `TOMCAT_HOME` 的新环境变量，并将其指向 Tomcat 主目录（在本练习示例中为 `E:\pkgs\tomcat\jakarta-tomcat-3.2.1`）。
 
@@ -11273,8 +13956,11 @@ E:\Pkgs\tomcat\jakarta-tomcat-3.2.1>dir
 您使用位于 `%TOMCAT_HOME%\bin` 中的 `startup.bat` 启动 Tomcat。因此，转到 `%TOMCAT_HOME%\bin` 并像这样调用批处理脚本：
 
 ```
+
 E:\>cd pkgs\tomcat\jakarta-tomcat-3.2.1\bin
+
 E:\pkgs\tomcat\jakarta-tomcat-3.2.1> startup
+
 ```
 
 您应该会看到一个控制台窗口弹出，上面显示几条消息，如图 B-2 所示。
@@ -11311,7 +13997,7 @@ E:\pkgs\tomcat\jakarta-tomcat-3.2.1> startup
 Web 应用程序（webapp）部署约定使用标准的目录结构，您可以从中创建 Web 应用程序归档（WAR）文件。您可以使用 Java 实用程序 `jar.exe` 将部署的目录结构 *打包成一个 jar 文件*。以下是此目录结构的特点：
 
 1.  您将所有 Web 应用程序文件存储在根目录下。此根目录也用作该 webapp 的文档根目录。
-2.  您将所有应用程序文件（例如，JavaServer Pages、HTML 页面和图像）直接存储在应用程序根目录下。通常，您会为每种资源类型创建子目录。
+2.  您将所有应用程文件（例如，JavaServer Pages、HTML 页面和图像）直接存储在应用程序根目录下。通常，您会为每种资源类型创建子目录。
 3.  根目录下必须有一个名为“WEB-INF”的特殊目录，其中包含用于将应用程序文件绑定在一起的信息。规范要求您不能将 `WEB-INF` 目录中的任何文件作为资源提供给客户端请求。表 B-1 显示了规范中列出的 `WEB-INF` 目录内容：
 
 | WEB-INF 内容 | 描述 |
@@ -11338,8 +14024,11 @@ Web 应用程序（webapp）部署约定使用标准的目录结构，您可以�
 你可以使用标准的 Java 归档工具，将一个 Web 应用程序目录结构的内容打包成 Web 归档格式（WAR）文件。以下是使用我们在上一节中展示的目录结构完成此操作的简单命令：
 
 ```
+
 %> cd E:\pkgs\tomcat\jakarta-tomcat-3.2.1\webapps\eCommerce
+
 %> jar cvf ../eCommerce.war *
+
 ```
 
 ### Web 应用程序部署描述符
@@ -11347,34 +14036,63 @@ Web 应用程序（webapp）部署约定使用标准的目录结构，您可以�
 在部署 Web 应用程序之前，必须将部署描述符（Web.xml）放置到该应用程序的 WEB-INF 目录中。此文件将 Web 应用程序的所有组件绑定在一起。Servlet 2.2 规范提供了创建部署描述符的详细信息。让我们看一个简单的例子：
 
 ```xml
+
 <!DOCTYPE Web-app PUBLIC "-//Sun Microsystems, Inc.//DTD Web
+
 Application 2.2//EN"
+
 http://java.sun.com/j2ee/dtds/Web-app_2_2.dtd>
+
 <web-app>
+
   <display-name>My E-Commerce Web site</display-name>
+
   <servlet>
+
     <servlet-name>Customer</servlet-name>
+
     <servlet-class>myClasses.CustomerServlet</servlet-class>
+
     <init-param>
+
         <param-name>catalog</param-name>
+
         <param-value>Spring</param-value>
+
     </init-param>
+
   </servlet>
+
   <servlet-mapping>
+
     <servlet-name>Customer</servlet-name>
+
     <url-pattern>/customer/*</url-pattern>
+
   </servlet-mapping>
+
   <session-config>
+
     <session-timeout>30</session-timeout>
+
   </session-config>
+
   <welcome-file-list>
+
     <welcome-file>welcome.html</welcome-file>
+
   </welcome-file-list>
+
   <error-page>
+
     <error-code>404</error-code>
+
     <location>/404.html</location>
+
   </error-page>
+
 </web-app>
+
 ```
 
 这个简单的部署描述符说明了以下要点：
@@ -11394,17 +14112,25 @@ http://java.sun.com/j2ee/dtds/Web-app_2_2.dtd>
 Tomcat 将一个应用程序上下文（`ServletContext` 对象）与每个 Web 应用程序关联。应用程序上下文将一个相对 URL 映射到一个物理根目录。你可以在 Tomcat 中使用位于 `%TOMCAT_HOME%\conf` 的 `server.xml` 文件中的 `<Context>` 元素来定义应用程序上下文。例如，以下 `<Context>` 元素将相对 URL "/Book" 与物理位置 `%TOMCAT_HOME%\webapps\Book` 关联起来。
 
 ```xml
+
 <Context path="/Book"
+
           docBase="webapps/Book">
+
 </Context>
+
 ```
 
 你应该在 `server.xml` 的 `<ContextManager>` 元素内声明此元素。你也可以为 `docBase` 属性指定绝对路径。这是一个例子：
 
 ```xml
+
 <Context path="/somewhere"
+
          docBase="D:\somewhere" >
+
 </Context>
+
 ```
 
 ### 安装 Apache
@@ -11422,42 +14148,72 @@ Tomcat 将一个应用程序上下文（`ServletContext` 对象）与每个 Web 
 安装后，你的 Apache 根目录可能如下所示：
 
 ```
+
 E:\Pkgs\apache>dir
+
 Volume in drive E is CHACHU
+
 Volume Serial Number is 1321-17F0
+
 Directory of E:\Pkgs\apache
 
 04/28/2001  03:20p       <DIR>          .
+
 04/28/2001  03:20p       <DIR>          ..
+
 04/28/2001  03:58p       <DIR>          cgi-bin
+
 04/28/2001  03:58p       <DIR>          conf
+
 04/28/2001  03:58p       <DIR>          bin
+
 04/28/2001  03:58p       <DIR>          htdocs
+
 04/28/2001  03:58p       <DIR>          icons
+
 04/28/2001  03:58p       <DIR>          include
+
 04/28/2001  03:58p       <DIR>          lib
+
 04/28/2001  03:58p       <DIR>          libexec
+
 04/28/2001  03:58p       <DIR>          logs
+
 04/28/2001  03:58p       <DIR>          modules
+
 04/28/2001  03:58p       <DIR>          proxy
+
 02/28/2001  12:33p        20,480 Apache.exe
+
 02/28/2001  12:33p       323,584 ApacheCore.dll
+
 02/16/2001  10:11a        14,567 ABOUT_APACHE
+
 02/26/2001  10:59a         5,651 Announcement
+
 06/05/2000  01:28p        41,421 KEYS
+
 01/15/2001  10:26a         2,885 LICENSE
+
 12/15/2000  09:04a         4,202 README-WIN.TXT
+
 11/06/2000  11:57a         1,342 WARNING-WIN.TXT
+
 02/28/2001  12:32p        20,480 Win9xConHook.dll
+
 02/28/2001  12:33p        40,960 xmlparse.dll
+
 02/28/2001  12:33p        73,728 xmltok.dll
+
         12 File(s)     2,375,100 bytes
+
         13 Dir(s)  4,292,317,184 bytes free
+
 ```
 
 ![](img/7a40f8957e7c3eb68dbb9f8ab3cef54d_486_0.png)
 
-Apache.exe 是可执行文件，ApacheCore.dll 是主要库。以下是一些重要的子目录：
+Apache.exe 是可执文件，ApacheCore.dll 是主要库。以下是一些重要的子目录：
 
 - *conf* 配置文件
 - *logs* 运行时日志
@@ -11466,7 +14222,7 @@ Apache.exe 是可执行文件，ApacheCore.dll 是主要库。以下是一些重
 
 ### 连接 Apache 和 Tomcat
 
-一个企业网站可能应该使用 Tomcat 作为 Servlet/JSP 插件，来配合一个工业级的 Web 服务器（如 Apache）使用。这意味着 Web 服务器首先处理所有请求，然后将 Servlet 和 JSP 请求转发给 Tomcat。
+一个企业网站可能应该使用 Tomcat 作为 Servlet/JSP 插件，来配合一个工业级的 Web 服务器（如 Apache）使用。这意味着 Web 服务器首先处理所有请求，然后将 Servlet 和 JSP 请转发给 Tomcat。
 
 我们已经看到 Servlet 和 JavaServer Pages 在 Servlet 容器中有一个关联的 Web 应用程序上下文。每个应用程序上下文由一个 *ServletContext* 对象表示，并且每个上下文都有一个相对于网站根 URL 的 URL 路径。因此，我们的配置应确保，每当我们通过其相对 URL 访问我们的 Web 应用程序时，Web 服务器都能识别出这是 Servlet 容器应该处理的内容，并将请求转发给 Servlet 容器。让我们看看如何配置 Apache 来进行这种映射。我们将使用我们之前描述的 Web 应用程序。我们的 Web 应用程序包含以下组件：
 
@@ -11498,12 +14254,16 @@ Apache-Tomcat连接器指南（`%TOMCAT_HOME%\doc\tomcat-apache-howto.html`）�
 
 ### 为我们的应用程序定义上下文
 
-正如我们之前看到的，为了让Tomcat处理请求，我们需要为Web应用程序定义一个上下文。我们通过在文件 `%TOMCAT_HOME%\conf\server.xml` 中定义一个 `<Context>` 元素来实现这一点。具体操作如下：
+正如我们之前看到的，为了让Tomcat处理请请求，我们需要为Web应用程序定义一个上下文。我们通过在文件 `%TOMCAT_HOME%\conf\server.xml` 中定义一个 `<Context>` 元素来实现这一点。具体操作如下：
 
 ```
+
 <Context path="/eCommerce"
+
            docBase="webapps/eCommerce">
+
 </Context>
+
 ```
 
 此元素声明，所有以 `/eCommerce` 开头的资源都应映射到 `%TOMCAT_HOME%\webapps\eCommerce`。
@@ -11514,13 +14274,21 @@ Apache-Tomcat连接器指南（`%TOMCAT_HOME%\doc\tomcat-apache-howto.html`）�
 `server.xml` 中的AJP连接器元素是Tomcat用于与Apache通信的机制。你必须将以下代码添加到 `%TOMCAT_HOME%\conf\server.xml` 中：
 
 ```
+
 <Connector
+
     className="org.apache.tomcat.service.PoolTcpConnector">
+
     <Parameter name="handler"
+
         value="org.apache.tomcat.service.connector.Ajp13ConnectionHandler"
+
     />
+
     <Parameter name="port" value="8009" />
+
 </Connector>
+
 ```
 
 AJPv13是Tomcat支持的最新协议。Apache也支持一个名为 "AJPv12" 的旧协议，其处理器使用端口8007。Apache推荐使用AJPv13，因为它更快，并且支持安全HTTP（HTTPS）请求。
@@ -11536,20 +14304,31 @@ Tomcat工作线程是代表Web服务器执行servlet和JavaServer Pages的Tomcat
 以下是 `workers.properties` 文件的一个示例片段：
 
 ```
+
 workers.tomcat_home=e:\pkgs\tomcat\jakarta-tomcat-3.2.1
+
 workers.java_home=e:\pkgs\jdk1.3
+
 ps=\
+
 worker.list=ajp12, ajp13
+
 ```
 
 ```
+
 worker.ajp12.port=8007
+
 worker.ajp12.host=localhost
+
 worker.ajp12.type=ajp12
 
 worker.ajp13.port=8009
+
 worker.ajp13.host=localhost
+
 worker.ajp13.type=ajp13
+
 ```
 
 该片段定义了两个工作线程：ajp12和ajp13，以及各自的属性。这些属性指定了每个工作线程的主机、端口以及它们使用的Apache协议。ajp12工作线程使用AJPv12协议，ajp13工作线程使用AJPv13协议。
@@ -11579,7 +14358,9 @@ mod_jk适配器更新，并且被Apache软件基金会推荐。此适配器有DL
 因为我们使用的是 `mod_jk` 适配器，我们关注第二个文件。此文件补充了Apache主配置文件（`httpd.conf`），包含了使Apache能够识别Tomcat的必要指令。为了将这些指令添加到Apache的配置中，我们必须编辑Apache主目录下的 `conf/httpd.conf` 文件。我们在文件末尾添加以下行：
 
 ```
+
 include E:/pkgs/tomcat/jakarta-tomcat-3.2.1/conf/mod_jk.conf-auto
+
 ```
 
 > **提示**
@@ -11634,27 +14415,33 @@ MySQL在世界各地也有许多镜像站点——即复制主站链接和页面
 
 ## 安装MySQL
 
-下载MySQL的二进制发行版后，必须将其解压到临时下载目录中。请遵循以下步骤。（这些步骤假设您将安装到c:\目录。）
+下载MySQL的二进制发行版后，必须将其解压到临时下载目录中。请遵�以下步骤。（这些步骤假设您将安装到c:\目录。）
 
 1. 在Windows中，使用WinZip或PKZIP解压缩文件。
 2. 解压发行版后，使用Windows资源管理器在安装目录中找到SETUP.EXE文件。双击它。
-3. 按照安装程序的说明操作，但不要将部署目录从C:\mysql更改。
+3. 按照安装程序的说明操作，但不要将部署目从C:\mysql更改。
 4. 运行安装程序后，打开命令提示符窗口。如果当前不在C:驱动器，请切换到C:驱动器：
 
 ```
+
 E:\>C:
+
 ```
 
 5. 切换到MySQL的bin目录：
 
 ```
+
 C:\>cd mysql\bin
+
 ```
 
 6. 在服务控制管理器中将守护进程程序安装为Windows服务：
 
 ```
+
 C:\mysql\bin\>mysqld -install
+
 ```
 
 7. 要完成MySQL数据库引擎的配置，请启动服务控制管理器。在Windows 2000中，选择“开始”菜单 | “设置” | “控制面板”。然后双击“管理工具”。
@@ -11691,22 +14478,31 @@ mysqladmin工具是MySQL的主要管理工具。除了许多其他功能外，�
 MySQL应该正在运行，但在安装数据库引擎后测试其是否正常运行是个好主意。要测试MySQL，请在命令提示符窗口中运行以下命令：
 
 ```
+
 C:\mysql\bin>mysqladmin ping
+
 ```
 
 您应该看到类似这样的行：
 
 ```
+
 mysqld is alive
+
 ```
 
 如果服务未运行，您可能会看到类似这样的响应（以及其他一些消息）：
 
 ```
+
 mysqladmin: connect to server at 'localhost' failed
+
 error: 'Can't connect to MySQL server on 'localhost' (10061)'
+
 Check that mysqld is running on localhost and that the port is 3306.
+
 You can check this by doing 'telnet localhost 3306'
+
 ```
 
 如果看到此信息，请返回服务控制管理器，打开MySql的属性对话框，然后单击“启动”按钮。
@@ -11716,13 +14512,17 @@ You can check this by doing 'telnet localhost 3306'
 MySQL数据库实例是表的集合。MySQL附带一个名为MySQL的默认数据库实例。要创建其他数据库实例，请运行mysqladmin工具：
 
 ```
+
 C:\mysql\bin>mysqladmin create DATABASENAME
+
 ```
 
 同样，要销毁数据库实例，请使用mysqladmin：
 
 ```
+
 C:\mysql\bin>mysqladmin drop DATABASENAME
+
 ```
 
 > **注意**
@@ -11733,7 +14533,9 @@ C:\mysql\bin>mysqladmin drop DATABASENAME
 要获取mysqladmin命令的帮助，请输入：
 
 ```
+
 C:\mysql\bin>mysqladmin -?
+
 ```
 
 ## MySQL结构化查询语言
@@ -11757,13 +14559,17 @@ SQL定义了对表格数据的查询。下表是定义采购订单的此类表�
 1.  以 root 用户身份登录数据库。在 Windows NT 和 Windows 2000 中，root 用户对所有数据库拥有完全权限。登录命令如下：
 
 ```
+
 C:\mysql\bin>mysql -u root
+
 ```
 
 2.  执行标准的 SQL2 insert 语句，向 mysql.user 表中添加一条记录（注意，不要像我们这里为了格式化显示那样将 SQL 命令拆分成多行）：
 
 ```
+
 mysql>INSERT INTO mysql.user (Host, User, Select_priv, Insert_priv, Update_priv, Delete_priv, Create_priv, Drop_priv) VALUES ('localhost', 'SampleUser', 'Y', 'Y', 'Y', 'Y', 'Y', 'Y');
+
 ```
 
 此 SQL 语句添加了一个新用户，登录名为 SampleUser，密码为空，并拥有执行 SQL 查询、插入、更新、删除以及创建和删除表的权限。
@@ -11771,19 +14577,25 @@ mysql>INSERT INTO mysql.user (Host, User, Select_priv, Insert_priv, Update_priv,
 3.  最后，您可以为 SampleUser 添加密码，执行类似以下的 SQL：
 
 ```
+
 mysql>update mysql.user set Password=PASSWORD('foo') where user='SampleUser';
+
 ```
 
 4.  要使此密码更改生效，请输入：
 
 ```
+
 mysql>flush privileges;
+
 ```
 
 5.  要从控制台以新用户身份登录，请输入：
 
 ```
+
 %>mysql -u NewUser -p
+
 ```
 
 并在提示时输入密码。
@@ -11795,24 +14607,28 @@ mysql>flush privileges;
 MySQL 支持标准的 SQL2 建表语法。例如，以下命令创建了一个名为 MYSQL.ORDERS 的 MySQL 表，包含两个列——OWNERID 和 ITEMDESIRED：
 
 ```
+
 mysql>CREATE TABLE MYSQL.ORDERS (OWNERID INTEGER NOT NULL, ITEMDESIRED CHAR(40) NOT NULL);
+
 ```
 
 合法的 MySQL 列类型包括多种数值类型、日期和时间类型，以及众多字符串类型（包括二进制大对象（BLOB）数据）。MySQL 也支持标准的 SQL2 插入语句。例如，以下命令向 MYSQL.ORDERS 表中插入一条记录：
 
 ```
+
 mysql>INSERT INTO MYSQL.ORDERS (OWNERID, ITEMDESIRED) VALUES (1010, 'Red Parka');
-```
+
+
 
 ## MySQL 文档
 
-我们在本附录中的意图是涵盖足以支持模块 10 需求的 MySQL 数据库管理知识，该模块中我们将使用数据库来实现示例应用程序的一部分。那些需要或希望更深入了解的读者，可以在 Yarger、Reese 和 King 所著的《MySQL & mSQL》（O'Reilly & Associates, Inc.: Sebastopol, CA. 1999）中找到相关内容。此外，MySQL 网站提供手册和其他文献，包括其他书籍的列表。最后，在您的安装目录中，可以在 file://c:/mysql/docs/manual_toc.html 找到文档。
+我们在本附录中的意图是涵盖足以支持模块 10 需求的 MySQL 数据库管理知识，该模块中我们将使用数据库来实现示例应用程序的一部分。那些需要或希望更深入了解的读者，可以在 Yarger、Reese 和 King 所著的《MySQL & mSQL》（O'Reilly & Associates, Inc.: Sebastopol, CA. 1999）中找到相关内容。此外，MySQL 网站提供手册和其他文献，包括其他书籍的列表。最后，在您的安装目录中，可以在 `file://c:/mysql/docs/manual_toc.html` 找到文档。
 
 ## 附录 D
 
 ### JSP 1.2 中的新特性
 
-在本附录中，我们将介绍和描述 JSP 1.1 和 JSP 1.2 之间预期的变化。Sun 已经发布了 JavaServer Pages 1.2 规范（JSP 1.2）的“提议最终草案”。（您可以在 http://jcp.org/aboutJava/communityprocess/first/jsr053/index.html 找到它。）这个提议最终草案最终将成为正式的最终发布版。Jakarta Tomcat 项目已经在其 4.0 beta 版本（http://jakarta.apache.org/builds/jakarta-tomcat-4.0/release）中开始实现它，以预期最终发布版的到来。
+在本附录中，我们将介绍和描述 JSP 1.1 和 JSP 1.2 之间预期的变化。Sun 已经发布了 JavaServer Pages 1.2 规范（JSP 1.2）的“提议最终草案”。（您可以在 `http://jcp.org/aboutJava/communityprocess/first/jsr053/index.html` 找到它。）这个提议最终草案最终将成为正式的最终发布版。Jakarta Tomcat 项目已经在其 4.0 beta 版本（`http://jakarta.apache.org/builds/jakarta-tomcat-4.0/release`）中开始实现它，以预期最终发布版的到来。
 
 JSP 1.2 中指定的主要变化包括：
 
@@ -11834,7 +14650,7 @@ JSP 1.2 中指定的主要变化包括：
 
 JSP 页面编译成一个实现 `javax.servlet.Servlet` 接口的 Java 实现类。不足为奇，JSP 规范与特定的 Servlet 规范紧密相关。JSP 1.1 规范依赖于 Servlet 2.2 规范；现在 JSP 1.2 规范依赖于 Servlet 2.3 规范（与 JSP 1.2 一样，处于“提议最终草案”形式）。
 
-Servlet 2.3 规范带来的最大变化是支持过滤器和生命周期事件（http://www.javaworld.com/javaworld/jw-01-2001/jw-0126-servletapi_p.html）。过滤器是“可插拔的”前置和后置处理器，它们在请求到达 Servlet 之前修改请求，或者在响应离开 Servlet 时修改响应。您可以使用过滤器执行身份验证（也许可以替换我们在模块 8 中介绍的 CustomRealm 拦截器）。您还可以执行自动日志记录、使用 XSL 将 XML 转换为 HTML、图像转换，以及许多其他在 Servlet 2.2 容器中不易完成的功能。
+Servlet 2.3 规范带来的最大变化是支持过滤器和生命周期事件（`http://www.javaworld.com/javaworld/jw-01-2001/jw-0126-servletapi_p.html`）。过滤器是“可插拔的”前置和后置处理器，它们在请求到达 Servlet 之前修改请求，或者在响应离开 Servlet 时修改响应。您可以使用过滤器执行身份验证（也许可以替换我们在模块 8 中介绍的 CustomRealm 拦截器）。您还可以执行自动日志记录、使用 XSL 将 XML 转换为 HTML、图像转换，以及许多其他在 Servlet 2.2 容器中不易完成的功能。
 
 Servlet 2.3 规范还引入了生命周期事件。当 Servlet 容器初始化或销毁一个 ServletContext 对象，或者当您向 ServletContext 对象或 HttpSession 对象添加属性时，就会发生生命周期事件。Servlet 2.3 容器将支持为此类事件注册监听器。每当发生此类事件时，容器会通知注册的监听器，并根据监听器类型提供对 ServletContext 或 HttpSession 的访问。此类监听器提供了一种便捷的集中方式，用于执行诸如将上下文或会话信息与数据库或 EJB 服务同步之类的事情。
 
@@ -11843,7 +14659,7 @@ Servlet 2.3 规范还引入了生命周期事件。当 Servlet 容器初始化�
 JSP 1.2 规范完成了 JSP 1.1 规范开始的将 JavaServer Pages 映射到 XML 的工作。符合 JSP 1.2 的工具和容器必须同时支持文档的标准 JSP 视图及其等效的 XML 视图。规范提到了 JavaServer Pages 的 XML 视图提供的几个优势：
 
 - 内容可以在 XML 编辑器中创作并直接传递给 JSP 容器
-- JavaServer Pages 可以针对有效页面集的描述进行验证
+- JavaServer Pages 可以针对有效页面集的描述进行验验证
 - JavaServer Pages 可以由感知 XML 的工具进行操作
 - JavaServer Pages 可以使用 XML 转换技术（如 XSLT）从文本表示生成
 - JavaServer Pages 可以自动生成，也许是通过序列化 Java 对象
@@ -11854,7 +14670,7 @@ JSP 1.2 规范列出了验证 JSP 文档的三个原因，如表 D-1 所示。
 
 | 原因 | 描述 |
 | :--- | :--- |
-| 请求时语义 | 一个子元素可能需要来自封闭标签的数据 |
+| 请求时语义 | 一个子元素可能需要来自封闭标标签的数据 |
 | 支持创作工具 | 工具可能需要元素的排序 |
 | 方法学约束 | 开发团队可能希望约束某些功能的使用 |
 
@@ -11901,13 +14717,11 @@ JSP 1.2 规范还在 `Tag` 和 `BodyTag` 接口旁边添加了 `IterationTag` �
 | variable | 零个或多个隐式脚本变量的定义 |
 | example | 可选的用法示例 |
 
-
-
-## 对页面创作的改进支持
+### 对页面创作的改进支持
 
 对页面创作的支持是新版 JSP 1.2 规范的一个重要主题。JSP 1.1 规范强调了"便于手工创作"对于 JavaServer Pages 初期采用的重要性。在保留原有标签的同时，JSP 1.2 规范更强调创作工具而非手工创作。对页面 XML 视图的日益重视反映了这一转变，支持工具显示的特殊标签以及对 JavaServer Pages 验证的更加强调也体现了这一点。
 
-## 更好的本地化支持
+### 更好的本地化支持
 
 与 JSP 1.1 规范不同，JSP 1.2 规范包含了一个关于本地化问题的章节。在该章节中，它提到了两种交付本地化页面的常见方法，但未对其中任何一种表示偏好：
 
@@ -11916,11 +14730,11 @@ JSP 1.2 规范还在 `Tag` 和 `BodyTag` 接口旁边添加了 `IterationTag` �
 
 它指出，标准标签库的 Java 规范请求（JSR-052）最终将解决本地化页面的交付问题（`http://jcp.org/jsr/detail/52.jsp`）。JSP 1.2 规范还在 JSP 1.1 的页面指令属性列表中增加了 `pageEncoding` 属性。这个新属性允许你为页面指定字符编码。默认字符编码是 ISO-8859-1（即 Latin-1）。你可以指定互联网号码分配机构（IANA: `http://www.iana.org/assignments/character-sets`）所描述的任何有效编码。
 
-## 修正"包含前刷新"问题
+### 修正"包含前刷新"问题
 
 在 JSP 1.1 中，`<jsp:include>` 标签的 `flush` 属性是必需的，并且必须设置为 `true`（模块 5）。JSP 1.2 使该属性变为可选，并支持 `false` 值。实际上，在 JSP 1.2 中，默认值是 `false`。`<jsp:include>` 标签的一个目标是为页面如何向客户端写入内容提供完全的自由。这在 JSP 1.1 中是不可能的。通过修正这一限制，JSP 2 提供了预期的自由。
 
-## 向后兼容性
+### 向后兼容性
 
 尽管有这些更改，JSP 开发者应该会发现过渡到新规范相对简单。JSP 1.2 容器被要求同时支持 JSP 1.1 标签库描述符格式和 JSP 1.2 格式。此外，大多数标准标签和标签属性保持不变，且具有相同的语义。
 
@@ -11957,7 +14771,7 @@ JSP 1.2 规范还在 `Tag` 和 `BodyTag` 接口旁边添加了 `IterationTag` �
 ### A
 - 绝对路径
     - 相对 URL 的绝对路径，55-56，60
-    - URI 请求，13
+    - URI 请请求，13
 - 抽象接口，与实现解耦，274-276
 - Accept-Language HTTP 头，通过其访问国际化信息，117-119
 - ACL（访问控制列表），用于实现授权，294
@@ -12072,651 +14886,362 @@ JSP 1.2 规范还在 `Tag` 和 `BodyTag` 接口旁边添加了 `IterationTag` �
     - 扩展，25-29
 - 浏览器扩展，31
 
-
-
-## 索引
-
-浏览器插件，26，29
-
-浏览器技术，作用与限制，30
-
-*buffer* 页面指令属性，66
-
-缓冲区大小默认值，121-122，126
-
-响应服务缓冲，120-122
-
-缓冲区，检索当前状态，141
-
-内置标签库，70-72
-
-家庭中心应用程序数据模型中的公告板，其实体类型，406
-
-业务逻辑层，将控制逻辑映射到，269-270
-
-Buy.jsp 文件，353-354
-
-byte 或 Byte
-
-从HTTP请求参数进行属性赋值，177
-
-字符串转换的*tag*属性，216
-
-## C
-
-CA（证书颁发机构），302
-
-家庭中心应用程序数据模型中的日历，其实体类型，406
-
-家庭中心应用程序数据模型中关系的基数，409
-
-*CartItem.java* 文件，185
-
-目录结构，与外部内容源结合使用，380
-
-J2EE连接器架构中的CCI（通用客户端接口），383-384
-
-基于证书的认证，300-303
-
-CGI（通用网关接口），31-32
-
-基于链的工作流表，375
-
-质询-响应安全机制，303-304
-
-CHAR数据库类型，ResultSet对应方法，396
-
-char 或 Character
-
-从HTTP请求参数进行属性赋值，177
-
-字符串转换的*tag*属性，216
-
-电子商务工作流的结账页面状态转换，343-344
-
-Checkout.html 文件，242-250
-
-*Children.jsp* 文件，与include指令结合使用，58
-
-*class* 属性，与 `<jsp:useBean>` 动作结合使用，167
-
-*class* 作用域，赋值给变量，82，83
-
-*Class.forName 方法*，用于注册JDBC驱动，387-388
-
-*clear()* 方法，管理响应缓冲，141
-
-*clearBuffer()* 方法，管理响应缓冲区，141
-
-客户端-服务器架构，4-5，8
-
-客户端Web编程，23-25，30
-
-CLOB数据库类型，ResultSet对应方法，397
-
-`<jsp:plugin>` 动作的 *code* 属性，191
-
-代码块，结合注释使用，50-54
-
-`<jsp:plugin>` 动作的 *codebase* 属性，191
-
-静态包含的内聚性，59
-
-冒号（:），与Apache组文件结合使用，308
-
-COM（组件对象模型），36
-
-*com\jspbg\db\DB.java* 源文件，357
-
-*com.jspbg.model.AddressBookManager* 模型接口，370
-
-*com.jspbg.servlet.DispatcherServlet* 控制器servlet，364-367
-
-*com.jspbg.webflow.ActionParser* Java类，367
-
-*com.jspbg.webflow.Command* 接口，367-368
-
-命令对象
-
-在控制器和模型之间进行协调，338
-
-在模型交互中的作用，339-340
-
-Web应用程序架构中的命令模式，271-273
-
-*Command.java* 文件，277-284
-
-注释，50-54
-
-已提交内容与输出缓冲，121-122
-
-LDAP中的 *Common name* (cn) 属性，299-300
-
-*com.myclasses* 包与页面指令，62
-
-声明中的编译错误纠正，84
-
-并发性，对网络透明性的影响，5-6
-
-脚本程序中的条件语句，92-94
-
-Tomcat 中的 *conf* 子目录，455
-
-机密性，在网络安全中的作用，297
-
-*config* 隐式变量，109，145-146
-
-*config.jsp* 示例页面，155-156
-
-JDBC中的连接服务，387-389
-
-J2EE的连接器架构，382-384
-
-容器，44-49，47
-
-与 *errorPage* 页面指令属性结合使用，67-68
-
-以及Web服务器，452-453
-
-容器与页面，使用include指令的限制，58-59
-
-内容
-
-通过外部内容源集中管理，380-381
-
-通过外部内容源管理，379-380
-
-通过外部内容源保障安全，380-381
-
-通过外部内容源共享，380-381
-
-使用输出服务编写，141-145
-
-内容绑定，使用include指令时的限制，59
-
-*contentType* 页面指令属性，69
-
-上下文属性，通过ServletContext对象访问，147-148
-
-上下文元素，添加到server.xml，60
-
-相对URL的上下文相对路径，56-57，60
-
-*contextInit* 方法
-
-通过CustomRealm安全拦截器重写，329-330
-
-为CustomRealm接口重新实现，418
-
-*contextShutdown* 方法，通过CustomRealm安全拦截器重写，330
-
-容器与应用程序之间的契约，44，64-65
-
-契约式页面服务，156-157
-
-控制器对象，职责，336
-
-控制器servlet
-
-在股票交易页面示例中的作用，350-351
-
-用于家庭中心应用程序通讯录模型，421-422
-
-控制器servlet，职责，346-347
-
-控制器
-
-作为流程控制中的中介，345-346
-
-在流程控制中的作用，345
-
-ControllerServlet.java 文件，277-284
-
-Cookies
-
-通过会话变量设置，134-135
-
-通过请求隐式对象检索，114
-
-LDAP中的Country (c) 对象类，299-300
-
-耦合度，33
-
-CR-LF字符序列
-
-在消息头中，17
-
-在HTTP消息头中，14
-
-在HTTP请求行中，9
-
-在HTTP响应状态行中，15-16
-
-创建型模式，267
-
-电子商务工作流的Credit Checked状态转换，344
-
-CSS（层叠样式表），28
-
-自定义基类，在其中声明方法，85
-
-自定义JSP动作与标准动作对比，162-163
-
-自定义标签。参见标签库
-
-CustomRealm接口，实现，414-421
-
-CustomRealm安全拦截器，328-332
-
-CustomRealm.java 文件，319-325，411
-
-## D
-
-DAM（数字资产管理）系统，381
-
-数据模型，对象类型，405
-
-数据对象，为在动作之间交换数据而分配名称，239-240
-
-数据层，260
-
-数据库架构，259-260
-
-数据库调用，JDBC支持，392
-
-数据库特性，通过JDBC识别，390-391
-
-数据库实例，在MySQL中创建和销毁，476
-
-数据库查询示例，393
-
-数据库类型，ResultSet方法映射，396
-
-数据库URL，通用格式，388
-
-DatabaseMetaData方法，390-391
-
-DATE数据库类型，ResultSet对应方法，397
-
-DBTags标签库，399-400
-
-DDL（数据定义语言）更新，JDBC支持，392
-
-DECIMAL数据库类型，ResultSet对应方法，396
-
-声明，49，77，81-87
-
-高级Java特性，83-84
-
-特性，84-87
-
-方法，82-83
-
-目的，76
-
-可用作用域，84
-
-与脚本变量对比，98-99
-
-与方法结合使用，85
-
-DefineVar文件，234
-
-拒绝服务，298
-
-部署描述符，放置在WEB-INF目录中，459-461
-
-目标文档，4
-
-开发模式，256-258
-
-DHTML（动态HTML），28，29
-
-摘要认证，303-305，313
-
-数字内容，381
-
-指令，54-60
-
-DispatcherServlet.java 文件，411
-
-DLL（动态链接库），26
-
-DML（数据操作语言）更新，JDBC支持，392
-
-DMZ（非军事区），在网络架构中的作用，292-293
-
-DN（可分辨名称），格式，299-300
-
-do/while循环，在脚本程序中用于迭代，94-95
-
-BodyTag接口的doAfterBody方法，222
-
-Tomcat中的doc子目录，455
-
-文档根目录，TLD，208
-
-文档，结合注释使用，53-54
-
-Tag接口的doEndTag方法，220
-
-BodyTag接口的doInitBody方法，222
-
-DOM（文档对象模型），28
-
-领域层，260
-
-Jakarta DBTags项目中的DoMemberEdit.jsp文件，403
-
-doPost方法，与控制器servlet结合使用，353
-
-Tag接口的doStartTag方法，219-220
-
-DOUBLE数据库类型，ResultSet对应方法，396
-
-double 或 Double
-
-从HTTP请求参数进行属性赋值，177
-
-字符串转换的tag属性，216
-
-双引号（"），用于标签属性，163
-
-JDBC架构中的驱动程序，386-387
-
-DSO（动态共享对象）格式的共享库，26
-
-TLD文件的DTD（文档类型定义），207
-
-动态内容，通过外部内容源提供，381-382
-
-## E
-
-电子商务示例工作流，341-343
-
-EAB（进入通讯录）动作，363，371
-
-回显HTTP协议项目，18-23
-
-ECMA（欧洲计算机制造商协会），27
-
-EIS（企业信息系统），382
-
-空字符串（" "），请求参数值为，176
-
-*Enter.html* 文件，277
-
-HTTP中的实体头，14
-
-HTTP响应中的实体头，16
-
-家庭中心应用程序数据模型中的实体类型，405-408
-
-*Entrance.html* 文件，370
-
-等号（=）字符
-
-与表达式结合使用，76
-
-与GET方法结合使用，10
-
-*errorChoice.html* 文件，137-140
-
-*error.jsp* 文件，319，325，327
-
-*errorName.html* 文件，137
-
-*errorPage* 页面指令属性，67-68
-
-*errorTesting.jsp* 文件，69-70
-
-*errPage.jsp* 文件，69-70
-
-doStartTag方法的EVAL_BODY_INCLUDE返回值，219-220
-
-doStartTag方法的EVAL_BODY_TAG返回值，219-220
-
-doEndTag方法的EVAL_PAGE值，220
-
-求值优先级，88
-
-通讯录搜索项目中的*event.txt*文件，354-371
-
-*exception* 隐式变量，109
-
-*exception* 对象，与ServletRequest对象结合使用，69
-
-*exception* 变量，157-160
-
-脚本程序中的异常，97-98
-
-感叹号（!），用于声明，76
-
-*executeBatch* 方法，使用建议，392
-
-JDBC中Statement对象的执行方法，392
-
-*Expense.java* 文件，100-103
-
-*ExpenseReport.java* 文件，100-103
-
-*ExpenseReport.jsp* 文件，100-103
-
-表达式，49，77，87-92
-
-与 <jsp:getProperty> 动作对比，179
-
-用于赋值属性值，177-178
-
-目的，76
-
-在脚本程序中，92
-
-用于指定属性，164
-
-*extends* 页面指令属性，63
-
-外部内容源的作用，378-385
-
-外部网关程序与CGI，31
-
-*factorial()* 方法，与表达式结合使用，88
-
-工厂，388-389
-
-家庭中心应用程序，285-286
-
-其通讯录搜索页面，360
-
-其通讯录搜索结果，361
-
-创建通讯录搜索页面，354-371
-
-数据访问方式，413-425
-
-其数据模型，405-410
-
-建立连接，388-389
-
-其无结果页面，363
-
-其安全领域，327-328
-
-其欢迎页面，359
-
-通讯录搜索项目中的*Family_Center.jar*文件，354
-
-*Family_Center.jarSecurityRealm.java*文件，411
-
-通讯录搜索项目中的*Family_Center.war*文件，354-371
-
-*Family.jpg*文件，411
-
-胖客户端，30
-
-*findAncestorWithClass* 静态方法，与TagSupport工具类结合使用，241
-
-有限状态机，341
-
-Mark Fischetti 谈论万维网，4
-
-FLOAT数据库类型，ResultSet对应方法，396
-
-float 或 Float
-
-从HTTP请求参数进行属性赋值，177
-
-字符串转换的tag属性，216
-
-流程控制
-
-缺失，345
-
-管理Web应用程序，339-347
-
-简单类型，348-354
-
-与阶段转换对比，344
-
-在Struts MVC框架中，373-374
-
-类型，345
-
-*flush* 属性，与 `<jsp:include>` 动作结合使用，180-181
-
-*flush()* 方法
-
-与out变量结合使用，141
-
-与RequestDispatcher()方法结合使用，151
-
-*flushBuffer* 方法，121
-
-刷新输出缓冲区，151
-
-*footer.html* 文件，185-190
-
-for循环，在脚本程序中用于迭代，94-95
-
-基于表单的认证，314-317
-
-表单
-
-使用参数和请求服务，111-112
-
-使用请求参数，175-176
-
-转发和包含方法，135
-
-
-
-## JSP：初学者指南
-
-正斜杠（/），在用于Tomcat的Apache配置中使用，468
-使用PageContext对象进行转发控制，133
-ftp://ftp.NCSA.uiuc.edu/ URI，12
-FTP（文件传输协议），4
-
-JSP源页面中的隐藏注释，52-53
-高可用性，isThreadSafe页面指令属性对其的影响，68
-HN.html文件，137-140
-地址簿搜索项目中的household.txt文件，354
-如何注释，50, 54
-<jsp:plugin>动作的hspace属性，191
-HTML 4.0控件，24
-HTML表单利息计算器，200-201
-HTML（超文本标记语言），4
-与JSP对比，44
-
-## G
-
-画廊查看器项目，277-284
-HTTP响应中的通用头，16
-HTTP中的通用消息头，14
-HTTP请求的GET方法，10, 17
-get()方法，映射到SQL数据库类型，396-397
-GET请求和CGI，31
-getAttribute()方法，136
-getCookies方法，与请求隐式对象一起使用，114
-getLastAccessedTime()方法，与会话一起使用，137
-getLocale()方法，访问国际化信息，117-119
-getMaxInactiveInterval()方法，与会话一起使用，137
-getNamedDispatcher()方法，150
-getOutputStream方法，123
-getParent方法和运行时堆栈，241
-getRealPath()方法，打印路径，149
-getRemaining()方法，检索缓冲区的当前状态，141
-getRequestDispatcher()方法，150-152
-getResource()方法
-打印路径，149
-与资源抽象，148-150
-getResourceAsStream()方法和资源抽象，148-150
-GetTag.java文件，242-250
-getWriter方法，123
-Struts MVC框架中的global-forwards元素，374
-GoF（四人帮）设计模式书籍，256-257
-杂货店乔的示例模板，249-250
-
-使用out变量打印HTML语句，143-144
-http://localhost:8989，1:23
-http://www.w3c.org/ URI，12
-HTTP/1.1规范，4, 14
-HTTP（超文本传输协议），4
-其中的消息体，14
-其中的消息头，14
-其中的请求方法，10-14
-HTTP协议版本
-在请求行中，14
-在状态行中，16
-HTTP请求参数，175-177
-HTTP请求，9-14
-HTTP响应，15-17
-HTTP服务器的无状态性，8
-为页面指定的HTTP会话，65
-HTTPEcho.java程序，18
-HTTPS客户端认证，314
-HTTPS通信协议，117
-HttpServletRequest对象，110, 120
-HttpSession对象，66, 136
-
-## H
-
-Tomcat中的handlePageException方法，98
-硬编码绑定和include指令，59
-哈希算法，与消息摘要一起使用，296-297
-header.html文件，57, 185-190, 242-250
-<jsp:plugin>动作的height属性，191
-浏览器的辅助应用程序，25-26
-HelperBean示例
-与<jsp:setProperty>动作一起使用，173-178
-与<jsp:useBean>动作一起使用，170-172
-隐藏注释，49
-
-## I
-
-id属性，164-165, 167
-URI的标识符定义，11-13
-IDE（集成开发环境），99
-<jsp:plugin>动作的iepluginurl属性，191
-IETF（互联网工程任务组），13
-scriptlet中的if/else语句，92-94
-IllegalStateException，123
-与输出缓冲，120-121
-使用RequestDispatcher()方法导致的结果，151
-ImageItem.java文件，277-284
-实现属性，添加到CustomRealm接口，417, 420
-隐式对象定义项目，234-238
-隐式对象
-通过PageContext对象访问，132
-定义约定，233-238
-定义，108
-检索，132
-import页面指令属性，65, 72
-
-## 索引
-
-495
-
+### C
+- CA（证书颁发机构），302
+- 家庭中心应用程序数据模型中的日历，其实体类型，406
+- 家庭中心应用程序数据模型中关系的基数，409
+- *CartItem.java* 文件，185
+- 目录结构，与外部内容源结合使用，380
+- J2EE连接器架构中的CCI（通用客户端接口），383-384
+- 基于证书的认证，300-303
+- CGI（通用网关接口），31-32
+- 基于链的工作流表，375
+- 质询-响应安全机制，303-304
+- CHAR数据库类型，ResultSet对应方法，396
+- char 或 Character
+    - 从HTTP请求参数进行属性赋值，177
+    - 字符串转换的*tag*属性，216
+- 电子商务工作流的结账页面状态转换，343-344
+- Checkout.html 文件，242-250
+- *Children.jsp* 文件，与include指令结合使用，58
+- *class* 属性，与 `<jsp:useBean>` 动作结合使用，167
+- *class* 作用域，赋值给变量，82，83
+- *Class.forName 方法*，用于注册JDBC驱动，387-388
+- *clear()* 方法，管理响应缓冲，141
+- *clearBuffer()* 方法，管理响应缓冲区，141
+- 客户端-服务器架构，4-5，8
+- 客户端Web编程，23-25，30
+- CLOB数据库类型，ResultSet对应方法，397
+- `<jsp:plugin>` 动作的 *code* 属性，191
+- 代码块，结合注释使用，50-54
+- `<jsp:plugin>` 动作的 *codebase* 属性，191
+- 静态包含的内聚性，59
+- 冒号（:），与Apache组文件结合使用，308
+- COM（组件对象模型），36
+- *com\jspbg\db\DB.java* 源文件，357
+- *com.jspbg.model.AddressBookManager* 模型接口，370
+- *com.jspbg.servlet.DispatcherServlet* 控制器servlet，364-367
+- *com.jspbg.webflow.ActionParser* Java类，367
+- *com.jspbg.webflow.Command* 接口，367-368
+- 命令对象
+    - 在控制器和模型之间进行协调，338
+    - 在模型交互中的作用，339-340
+    - Web应用程序架构中的命令模式，271-273
+- *Command.java* 文件，277-284
+- 注释，50-54
+- 已提交内容与输出缓冲，121-122
+- LDAP中的 *Common name* (cn) 属性，299-300
+- *com.myclasses* 包与页面指令，62
+- 声明中的编译错误纠正，84
+- 并发性，对网络透明性的影响，5-6
+- 脚本程序中的条件语句，92-94
+- Tomcat 中的 *conf* 子目录，455
+- 机密性，在网络安全中的作用，297
+- *config* 隐式变量，109，145-146
+- *config.jsp* 示例页面，155-156
+- JDBC中的连接服务，387-389
+- J2EE的连接器架构，382-384
+- 容器，44-49，47
+- 与 *errorPage* 页面指令属性结合使用，67-68
+- 以及Web服务器，452-453
+- 容器与页面，使用include指令的限制，58-59
+- 内容
+    - 通过外部内容源集中管理，380-381
+    - 通过外部内容源管理，379-380
+    - 通过外部内容源保障安全，380-381
+    - 通过外部内容源共享，380-381
+    - 使用输出服务编写，141-145
+- 内容绑定，使用include指令时的限制，59
+- *contentType* 页面指令属性，69
+- 上下文属性，通过ServletContext对象访问，147-148
+- 上下文元素，添加到server.xml，60
+- 相对URL的上下文相对路径，56-57，60
+- *contextInit* 方法
+    - 通过CustomRealm安全拦截器重写，329-330
+    - 为CustomRealm接口重新实现，418
+- *contextShutdown* 方法，通过CustomRealm安全拦截器重写，330
+- 容器与应用程序之间的契约，44，64-65
+- 契约式页面服务，156-157
+- 控制器对象，职责，336
+- 控制器servlet
+    - 在股票交易页面示例中的作用，350-351
+    - 用于家庭中心应用程序通讯录模型，421-422
+- 控制器servlet，职责，346-347
+- 控制器
+    - 作为流程控制中的中介，345-346
+    - 在流程控制中的作用，345
+- ControllerServlet.java 文件，277-284
+- Cookies
+    - 通过会话变量设置，134-135
+    - 通过请求隐式对象检索，114
+- LDAP中的Country (c) 对象类，299-300
+- 耦合度，33
+- CR-LF字符序列
+    - 在消息头中，17
+    - 在HTTP消息头中，14
+    - 在HTTP请求行中，9
+    - 在HTTP响应状态行中，15-16
+- 创建型模式，267
+- 电子商务工作流的Credit Checked状态转换，344
+- CSS（层叠样式表），28
+- 自定义基类，在其中声明方法，85
+- 自定义JSP动作与标准动作对比，162-163
+- 自定标签。参见标签库
+- CustomRealm接口，实现，414-421
+- CustomRealm安全拦截器，328-332
+- CustomRealm.java 文件，319-325，411
+
+### D
+- DAM（数字资产管理）系统，381
+- 数据模型，对象类型，405
+- 数据对象，为在动作之间交换数据而分配名称，239-240
+- 数据层，260
+- 数据库架构，259-260
+- 数据库调用，JDBC支持，392
+- 数据库特性，通过JDBC识别，390-391
+- 数据库实例，在MySQL中创建和销毁，476
+- 数据库查询示例，393
+- 数据库类型，ResultSet方法映射，396
+- 数据库URL，通用格式，388
+- DatabaseMetaData方法，390-391
+- DATE数据库类型，ResultSet对应方法，397
+- DBTags标签库，399-400
+- DDL（数据定义语言）更新，JDBC支持，392
+- DECIMAL数据库类型，ResultSet对应方法，396
+- 声明，49，77，81-87
+- 高级Java特性，83-84
+- 特性，84-87
+- 方法，82-83
+- 目的，76
+- 可用作用域，84
+- 与脚本变量对比，98-99
+- 与方法结合使用，85
+- DefineVar文件，234
+- 拒绝服务，298
+- 部署描述符，放置在WEB-INF目录中，459-461
+- 目标文档，4
+- 开发模式，256-258
+- DHTML（动态HTML），28，29
+- 摘要认证，303-305，313
+- 数字内容，381
+- 指令，54-60
+- DispatcherServlet.java 文件，411
+- DLL（动态链接库），26
+- DML（数据操作语言）更新，JDBC支持，392
+- DMZ（非军事区），在网经架构中的作用，292-293
+- DN（可分辨名称），格式，299-300
+- do/while循环，在脚本程序中用于迭代，94-95
+- BodyTag接口的doAfterBody方法，222
+- Tomcat中的doc子目录，455
+- 文档根目录，TLD，208
+- 文档，结合注释使用，53-54
+- Tag接口的doEndTag方法，220
+- BodyTag接口的doInitBody方法，222
+- DOM（文档对象模型），28
+- 领域层，260
+- Jakarta DBTags项目中的DoMemberEdit.jsp文件，403
+- doPost方法，与控制器servlet结合使用，353
+- Tag接口的doStartTag方法，219-220
+- DOUBLE数据库类型，ResultSet对应方法，396
+- double 或 Double
+    - 从HTTP请求参数进行属性赋值，177
+    - 字符串转换的tag属性，216
+- 双引号（"），用于标签属性，163
+- JDBC架构中的驱动程序，386-387
+- DSO（动态共享对象）格式的共享库，26
+- TLD文件的DTD（文档类型定义），207
+- 动态内容，通过外部内容源提供，381-382
+
+### E
+- 电子商务示例工作流，341-343
+- EAB（进入通讯录）动作，363，371
+- 回显HTTP协议项目，18-23
+- ECMA（欧洲计算机制造商协会），27
+- EIS（企业信息系统），382
+- 空字符串（" "），请求参数值为，176
+- *Enter.html* 文件，277
+- HTTP中的实体头，14
+- HTTP响应中的实体头，16
+- 家庭中心应用程序数据模型中的实体类型，405-408
+- *Entrance.html* 文件，370
+- 等号（=）字符
+    - 与表达式一起使用，76
+    - 与GET方法一起使用，10
+- *errorChoice.html* 文件，137-140
+- *error.jsp* 文件，319，325，327
+- *errorName.html* 文件，137
+- *errorPage* 页面指令属性，67-68
+- *errorTesting.jsp* 文件，69-70
+- *errPage.jsp* 文件，69-70
+- doStartTag方法的EVAL_BODY_INCLUDE返回值，219-220
+- doStartTag方法的EVAL_BODY_TAG返回值，219-220
+- doEndTag方法的EVAL_PAGE值，220
+- 求值优先级，88
+- 通讯录搜索项目中的*event.txt*文件，354-371
+- *exception* 隐式变量，109
+- *exception* 对象，与ServletRequest对象结合使用，69
+- *exception* 变量，157-160
+- 脚本程序中的异常，97-98
+- 感叹号（!），用于声明，76
+- *executeBatch* 方法，使用建议，392
+- JDBC中Statement对象的执行方法，392
+- *Expense.java* 文件，100-103
+- *ExpenseReport.java* 文件，100-103
+- *ExpenseReport.jsp* 文件，100-103
+- 表达式，49，77，87-92
+- 与 <jsp:getProperty> 动作对比，179
+- 用于赋值属性值，177-178
+- 目的，76
+- 在脚本程序中，92
+- 用于指定属性，164
+- *extends* 页面指令属性，63
+- 外部内容源的作用，378-385
+- 外部网关程序与CGI，31-32
+- *factorial()* 方法，与表达式一起使用，88
+- 工厂，388-389
+- 家庭中心应用程序，285-286
+- 其通讯录搜索页面，360
+- 其通讯录搜索结果，361
+- 创建通讯录搜索页面，354-371
+- 数据访问方式，413-425
+- 其数据模型，405-410
+- 建立连接，388-389
+- 其无结果页面，363
+- 其安全领域，327-328
+- 其欢迎页面，359
+- 通讯录搜索项目中的*Family_Center.jar*文件，354
+- *Family_Center.jarSecurityRealm.java*文件，411
+- 通讯录搜索项目中的*Family_Center.war*文件，354-371
+- *Family.jpg*文件，411
+- 胖客户端，30
+- *findAncestorWithClass* 静态方法，与TagSupport工具类结合使用，241
+- 有限状态机，341
+- Mark Fischetti 谈论万维网，4
+- FLOAT数据库类型，ResultSet对应方法，396
+- float 或 Float
+    - 从HTTP请求参数进行属性赋值，177
+    - 字符串转换的tag属性，216
+- 流程控制
+    - 缺失，345
+    - 管理Web应用程序，339-347
+    - 简单类型，348-354
+    - 与阶段转换对比，344
+    - 在Struts MVC框架中，373-374
+- 类型，345
+- *flush* 属性，与 `<jsp:include>` 动作结合使用，180-181
+- *flush()* 方法
+    - 与out变量结合使用，141
+    - 与RequestDispatcher()方法结合使用，151
+- *flushBuffer* 方法，121
+- 刷新输出缓冲区，151
+- *footer.html* 文件，185-190
+- for循环，在脚本程序中用于迭代，94-95
+- 基于表单的认证，314-317
+- 表单
+    - 使用参数和请求服务，111-112
+    - 使用请求参数，175-176
+- 转发和包含方法，135
+
+### F
+- JSP：初学者指南
+- 正斜杠（/），在用于Tomcat的Apache配置中使用，468
+- 使用PageContext对象进行转发控制，133
+- ftp://ftp.NCSA.uiuc.edu/ URI，12
+- FTP（文件传输协议），4
+- JSP源页面中的隐藏注释，52-53
+- 高可用性，isThreadSafe页面指令属性对其的影响，68
+- HN.html文件，137-140
+- 地址簿搜索项目中的household.txt文件，354
+- 如何注释，50, 54
+- <jsp:plugin>动作的hspace属性，191
+- HTML 4.0控件，24
+- HTML表单利息计算器，200-201
+- HTML（超文本标记语言），4
+- 与JSP对比，44
+
+### G
+- 画廊查看器项目，277-284
+- HTTP响应中的通用头，16
+- HTTP中的通用消息头，14
+- HTTP请求的GET方法，10, 17
+- get()方法，映射到SQL数据库类型，396-397
+- GET请求和CGI，31
+- getAttribute()方法，136
+- getCookies方法，与请求隐式对象一起使用，114
+- getLastAccessedTime()方法，与会话一起使用，137
+- getLocale()方法，访问国际化信息，117-119
+- getMaxInactiveInterval()方法，与会话一起使用，137
+- getNamedDispatcher()方法，150
+- getOutputStream方法，123
+- getParent方法和运行时堆栈，241
+- getRealPath()方法，打印路径，149
+- getRemaining()方法，检索缓冲区的当前状态，141
+- getRequestDispatcher()方法，150-152
+- getResource()方法
+    - 打印路径，149
+    - 与资源抽象，148-150
+- getResourceAsStream()方法和资源抽象，148-150
+- GetTag.java文件，242-250
+- getWriter方法，123
+- Struts MVC框架中的global-forwards元素，374
+- GoF（四人帮）设计模式书籍，256-257
+- 杂货店乔的示例模板，249-250
+- 使用out变量打印HTML语句，143-144
+- http://localhost:8989，1:23
+- http://www.w3c.org/ URI，12
+- HTTP/1.1规范，4, 14
+- HTTP（超文本传输协议），4
+- 其中的消息体，14
+- 其中的消息头，14
+- 其中的请求方法，10-14
+- HTTP协议版本
+    - 在请请求行中，14
+    - 在状态行中，16
+- HTTP请求参数，175-177
+- HTTP请求，9-14
+- HTTP响应，15-17
+- HTTP服务器的无状态性，8
+- 为页面指定的HTTP会话，65
+- HTTPEcho.java程序，18
+- HTTPS客户端认证，314
+- HTTPS通信协协议，117
+- HttpServletRequest对象，110, 120
+- HttpSession对象，66, 136
+
+### H
+- Tomcat中的handlePageException方法，98
+- 硬编码绑定和include指令，59
+- 哈希算法，与消息摘要一起使用，296-297
+- header.html文件，57, 185-190, 242-250
+- <jsp:plugin>动作的height属性，191
+- 浏览器的辅助应用程序，25-26
+- HelperBean示例
+    - 与<jsp:setProperty>动作一起使用，173-178
+    - 与<jsp:useBean>动作一起使用，170-172
+- 隐藏注释，49
+
+### I
+- id属性，164-165, 167
+- URI的标识符定义，11-13
+- IDE（集成开发环境），99
+- <jsp:plugin>动作的iepluginurl属性，191
+- IETF（互联网工程任务组），13
+- scriptlet中的if/else语句，92-94
+- IllegalStateException，123
+- 与输出缓冲，120-121
+- 使用RequestDispatcher()方法导致的结果，151
+- ImageItem.java文件，277-284
+- 实现属性，添加到CustomRealm接口，417, 420
+- 隐式对象定义项目，234-238
+- 隐式对象
+    - 通过PageContext对象访问，132
+    - 定义约定，233-238
+    - 定义，108
+    - 检索，132
+- import页面指令属性，65, 72
+
+### 索引
+- 495
 - *include*指令，49, 55-62
 - *includeTest.jsp*文件，60-62
 - 索引结构，与外部内容源一起使用，380
@@ -12762,7 +15287,6 @@ import页面指令属性，65, 72
 - iPlanet，34-35
 - IPSEC（互联网协议安全）标准，317
 - ISAPI（互联网服务应用程序编程接口），35, 39
-
 - *isCommitted*方法和输出缓冲，121-122
 - *isErrorPage*页面指令属性，69
 - ISO（国际标准化组织），477
@@ -12771,8 +15295,7 @@ import页面指令属性，65, 72
     - 与变量一起使用，86
 - scriptlet中的迭代，94-95
 
-## J
-
+### J
 - J2EE连接器架构，382-384
 - J2EE（Java 2企业版），34, 38, 44-49
 - Jakarta数据库访问标签库，399-405
@@ -12806,341 +15329,347 @@ import页面指令属性，65, 72
 - *config*变量的*java.util.Enumeration getInitParameterNames()*方法，157
 - *Tag Support*基类的*java.util.Enumeration getValues()*方法，221
 - *java.util.Enumeration getAttributeNames()*方法，管理请求属性，114
+- **496 | JSP：初学者指南**
+- *java.util.Enumeration getHeaderNames()*方法，用于访问请求头，116
+- *java.util.Enumeration getHeaders()*方法，用于访问请求头，116
+- *java.util.Enumeration getInitParameterNames()*方法，与应用上下文初始化参数一起使用，148
+- *java.util.Map*类型，与标签处理器一起使用，216-217
+- *javax.servlet.http.Cookie[] getCookies()* getCookies方法签名，114
+- *javax.servlet.http.HttpSession getSession()*方法，检索隐式对象，132
+- *javax.servlet.HttpServletRequest*对象，109
+- *javax.servlet.jsp.JspWriter getOut()*方法检索隐式对象，132
+- *javax.servlet.jsp.JspWriter popBody()*方法，管理嵌套作用域，133
+- *javax.servlet.jsp.PageContext*对象，129
+- *javax.servlet.jsp.tagext.BodyContent*类，222
+- *javax.servlet.jsp.tagext.BodyContent pushBody()*方法，管理嵌套作用域，133
+- *javax.servlet.jsp.tagext.BodyTag*接口，213, 221-224
+- *javax.servlet.jsp.tagext.Tag*接口
+    - 定义标签处理器，213
+    - 标签处理器类，208
+- *javax.servlet.jsp.tagext.Tag*接口，与标签处理器一起使用，219
+- *javax.servlet.jsp.tagext.TagExtraInfo*抽象类，227-230
+- *javax.servlet.jsp.tagext.TagSupport*实用基类，220-221
+- *javax.servlet.RequestDispatcher getNamedDispatcher()*方法，153
+- *javax.servlet.RequestDispatcher getRequestDispatcher()*方法，153
+- *javax.servlet.ServletConfig getServletConfig()*方法，132
+- *page*变量的*javax.servlet.ServletConfig getServletConfig()*方法，157
+- *javax.servlet.ServletConfig*对象，通过config变量访问，155-156
+- *javax.servlet.ServletContext getServletContext()*，132
+- *javax.servlet.ServletContext*接口，47
+- *javax.servlet.ServletContext*对象，通过application变量访问，145-154
+- *javax.servlet.ServletRequest getRequest()*方法，检索隐式对象，132
+- *javax.servlet.ServletResponse getResponse()*方法，检索隐式对象，132
+- JDBC 2.0标准扩展API，382
+- JDBC架构，385-387
+- JDBC数据访问API，385-401
+- JDBC驱动程序
+    - 为MySQL下载，473-474
+    - 为MySQL安装，475
+    - URL，473
+    - 为CustomRealm接口创建JDBC实现，414-417
+- MySQL的JDBC拦截器，319
+- JDBC（Java数据库连接）
+    - 和JSP，398-400
+    - 滚动，395
+    - 更新数据源值，395
+- JDK 1.3，下载，454
+- JNDI（Java命名和目录服务），384
+- <jsp:plugin>动作的jrevision属性，191
+- JScript，27, 34
+- <jsp:>动作，163-164
+- JSP动作，49
+- 内置标签库，72
+- 自定义其行为，213-216
+- 与标签库交换数据，239-242
+- 实现其编程行为，212-217
+- TLD，208
+- 类型，162-163
+- JSP架构，36-37
+- JSP注释，50-54
+- JSP构造，48
+- JSP容器，44-49, 47
+- 与标签处理器的协议，213-214
+- 使用errorPage页面指令属性，67-68
+- JSP声明。*参见声明*
+- JSP指令，54-60
+- JSP表达式。*参见表达式*
+- <jsp:include>动作与<jsp:forward>动作对比，182-183
+- <jsp:setProperty>动作，173-178
+- jsp/InterestCalc.jsp页面，202-203
+- JSP（JavaServer Pages），34
+- 与HTML对比，44
+- 和JDBC API，398-400
+- 预编译，45
+- 请求服务，110-119
+- 和servlets，38-39
+- 在其中指定页面指令，62
+- 阶段，45-46
+- 状态，47
+- JSP页面
+    - 使用<jsp:include>动作分解为更小的部分，181-182
+    - 确定其可重入性，67
+    - 其元素，49
+    - jsp/InterestCalc.jsp，202-203
+    - 命名，156
+    - 在其他JSP页面内，57-58
+    - 作为异常目标，69
+    - TaglibInterestCalc.jsp，204-205
+    - 标准动作的jsp前缀，162-163
 
-**496 | JSP：初学者指南**
+### K
+- keytool 工具，302
 
-*java.util.Enumeration getHeaderNames()*方法，用于访问请求头，116
-*java.util.Enumeration getHeaders()*方法，用于访问请求头，116
-*java.util.Enumeration getInitParameterNames()*方法，与应用上下文初始化参数一起使用，148
-*java.util.Map*类型，与标签处理器一起使用，216-217
-*javax.servlet.http.Cookie[] getCookies()* getCookies方法签名，114
-*javax.servlet.http.HttpSession getSession()*方法，检索隐式对象，132
-*javax.servlet.HttpServletRequest*对象，109
-*javax.servlet.jsp.JspWriter getOut()*方法检索隐式对象，132
-*javax.servlet.jsp.JspWriter popBody()*方法，管理嵌套作用域，133
-*javax.servlet.jsp.PageContext*对象，129
-*javax.servlet.jsp.tagext.BodyContent*类，222
-*javax.servlet.jsp.tagext.BodyContent pushBody()*方法，管理嵌套作用域，133
-*javax.servlet.jsp.tagext.BodyTag*接口，213, 221-224
-*javax.servlet.jsp.tagext.Tag*接口
-定义标签处理器，213
-标签处理器类，208
-*javax.servlet.jsp.tagext.Tag*接口，与标签处理器一起使用，219
-*javax.servlet.jsp.tagext.TagExtraInfo*抽象类，227-230
-*javax.servlet.jsp.tagext.TagSupport*实用基类，220-221
-*javax.servlet.RequestDispatcher getNamedDispatcher()*方法，153
-*javax.servlet.RequestDispatcher getRequestDispatcher()*方法，153
-*javax.servlet.ServletConfig getServletConfig()*方法，132
-*page*变量的*javax.servlet.ServletConfig getServletConfig()*方法，157
-*javax.servlet.ServletConfig*对象，通过config变量访问，155-156
-*javax.servlet.ServletContext getServletContext()*，132
-*javax.servlet.ServletContext*接口，47
-*javax.servlet.ServletContext*对象，通过application变量访问，145-154
-*javax.servlet.ServletRequest getRequest()*方法，检索隐式对象，132
-*javax.servlet.ServletResponse getResponse()*方法，检索隐式对象，132
-JDBC 2.0标准扩展API，382
-JDBC架构，385-387
-JDBC数据访问API，385-401
-JDBC驱动程序
-为MySQL下载，473-474
-为MySQL安装，475
-URL，473
-为CustomRealm接口创建JDBC实现，414-417
-MySQL的JDBC拦截器，319
-JDBC（Java数据库连接）
-和JSP，398-400
-滚动，395
-更新数据源值，395
-JDK 1.3，下载，454
-JNDI（Java命名和目录服务），384
-<jsp:plugin>动作的jrevision属性，191
-JScript，27, 34
-<jsp:>动作，163-164
-JSP动作，49
-内置标签库，72
-自定义其行为，213-216
-与标签库交换数据，239-242
-实现其编程行为，212-217
-TLD，208
-类型，162-163
-JSP架构，36-37
-JSP注释，50-54
-JSP构造，48
-JSP容器，44-49, 47
-与标签处理器的协议，213-214
-使用errorPage页面指令属性，67-68
-JSP声明。*参见声明*
-JSP指令，54-60
-JSP表达式。*参见表达式*
-<jsp:include>动作与<jsp:forward>动作对比，182-183
-<jsp:setProperty>动作，173-178
-jsp/InterestCalc.jsp页面，202-203
-JSP（JavaServer Pages），34
-与HTML对比，44
-和JDBC API，398-400
-预编译，45
-请求服务，110-119
-和servlets，38-39
-在其中指定页面指令，62
-阶段，45-46
-状态，47
-JSP页面
-使用<jsp:include>动作分解为更小的部分，181-182
-确定其可重入性，67
-其元素，49
-jsp/InterestCalc.jsp，202-203
-命名，156
-在其他JSP页面内，57-58
-TaglibInterestCalc.jsp，204-205
-作为异常目标，69
-标准动作的jsp前缀，162-163
+### L
+- language 页面指令属性，63
+- Family Center 应用程序中姓氏搜索的命令对象，368-369
+- 延迟，对网络透明性的影响，5-6
+- LDAP（轻量级目录访问协议）认证，299-300
+- 遗留信息
+    - 通过外部内容源访问，382-384
+    - 以 HTML 视图形式呈现，31
+- line.separator 属性，与 out 变量配合使用，141-142
+- 字面值，89
+- LiveScript，27
+- 通讯录搜索项目中的 loadFamily_Center.sql 文件，354-371
+- 脚本小程序中的局部内部类，96
+- 脚本小程序声明中的局部变量，91
+- login-config 块，加载，421
 
+### M
+- mailto:aboll@bell.net URI，12
+- Main.html 文件，242-250
+- majorError.jsp 文件，68
+- Web 应用程序架构中的中介者模式，270-271
+- 通讯录搜索项目中的 member_role.txt 文件，354-371
+- Jakarta DBTags 项目中的 MemberEditForm.html 文件，402
+- 通讯录搜索项目中的 Member.txt 文件，354-371
+- 菜单小程序插入项目，193-195
+- HTTP 中的消息体，14, 17
+- 消息摘要，加密，296
+- HTTP 中的消息头，14, 16-17
+- 消息完整性，在网络安全中的作用，295-297
+- 通讯录搜索项目中的 messageboard.txt 文件，354-371
+- 消息，记录到 Servlet 日志文件，154
+- 方法作用域
+    - 赋值给变量，82
+    - 生成 Java 代码，98
+- 方法
+    - 在声明中，82-83
+    - 声明，85
+    - 可用的作用域，84
+- MIME（多用途互联网邮件扩展），10, 26
+- MiniSQL 与 MySQL，472
+- MySQL 的镜像站点，访问，472
+- mm.MySQL JDBC 驱动程序，392
+- mod 适配器，为 Tomcat Servlet 容器安装，467
+- Model 工厂，为 Family Center 应用程序通讯录初始化，422-424
+- 模型，设计交互，339-340
+- 模块和 include 指令，55
+- Richard Morin 谈 Java Applets，28
+- .msi 文件，为 Apache 执行，462
+- Multipart/form-data 编码标准和 POST 方法，11
+- MVC（模型-视图-控制器）模式在 Web 应用程序架构中，268-270, 337
+- MySQL
+    - 向 MySQL 添加记录，479
+    - 向 MySQL 添加用户，478
+    - MySQL 的管理，475-479
+    - 在 MySQL 中创建和销毁数据库实例，476
+    - 使用 MySQL 创建表，479
+    - 下载 MySQL，472-473
+    - 下载 MySQL 的 JDBC 驱动程序，473-474
+    - 错误消息，476
+    - 安装 MySQL，474-475
+    - 与 MiniSQL 相比，472
+    - 对 insert 语句的支持，479
+    - MySQL 的 URL，472
+- 注册 MySQL 驱动程序，387-388
+- MySQL 引擎，ping 操作，476
+- MySQL，使用 JDBC 拦截器，319
+- mysqladmin 工具，476-477
 
+### N
+- '\n'（换行符）字符，与 out 变量配合使用，141-142
+- 名称和值信息，通过 <jsp:param> 动作提供，184
+- name 属性，163
+    - <jsp:getProperty> 动作的，179
+    - <jsp:param> 动作的，184
+    - <jsp:plugin> 动作的，191
+    - <jsp:setProperty> 动作的，175
+- name TLD，208-209, 212
+- NAS（网络附加存储），集中化，380
+- Natarajan_Family.jsp 文件，323-325
+- 嵌套作用域，使用 PageContext 对象管理，132-133
+- 脚本变量的嵌套作用域，230, 233
+- 相对 URL 的网络路径，55-56
+- Internet 网络架构，293
+- 网络目录服务，在协作认证中的作用，299
+- 网络透明性，5-6, 8
+- 换行符（'\n'）字符，与 out 变量配合使用，141-142
+- news:comp.lang.java URI，12
+- NFS（网络文件系统），在网络安全中的作用，293-294
+- NSAPI（Netscape 应用程序编程接口），35, 39
+- <jsp:plugin> 动作的 nspluginurl 属性，191
+- NUMERIC 数据库类型，对应的 ResultSet 方法，396
 
-## K
+### O
+- +   value 属性
+-   `<jsp:param>` 动作的，184
+-   `<jsp:setProperty>` 动作的，175
+- VARBINARY 数据库类型，对应的 ResultSet 方法，397
+- VARCHAR SQL 数据库类型，对应的 ResultSet 方法，396
+- VariableInfo[ ] getVariableInfo() TagExtraInfo 类的方法，230
+- 变量
+    - 相关建议，86
+    - 和声明，85
+    - 在声明中，82
+    - 在脚本小程序中声明，91
+    - 可用的作用域，84
+    - 使用先于声明，86
+- VBScript，27-28
+- Virata 公司，网址，304
+- Visual Basic 控件，24
+- void clearBody() BodyContent 对象的方法，与 Tag 接口配合使用，224
+- void doInitBody() BodyTag 接口的方法，221
+- void flushBuffer() 方法，用它管理响应缓冲，123
+- void forward() 方法，135
+- void handlePageException() 方法，135
+- void include() 方法，135
+- void log() 实用方法，154
+- void() 方法
+    - 用于重定向请求，125
+    - 用于请求头，124
+    - 与 out 变量配合使用，142
+- void print() out 变量的打印方法，146
+- void printStackTrace() exception 变量的方法，158
+- void release() Tag 接口的方法，219
+- void removeAttribute() 方法，136
+    - 用于访问多个作用域，131-132
+    - 用于管理请求属性，114
+    - 与 application 属性配合使用，149
+- void removeValue() TagSupport 基类的方法，221
+- void reset() 方法，用它管理响应缓冲，123
+- void setAttribute() 方法，136
+    - 用于访问多个作用域，132
+    - 用于管理请求属性，114
+    - 与 application 属性配合使用，149
+- void setBodyContent() BodyTag 接口的方法，221
+- void setBufferSize() 方法，用它管理响应缓冲，123
+- void setPageContext() Tag 接口的方法，219
+- void setParent() Tag 接口的方法，219
+- void setValue() TagSupport 基类的方法，221
 
-keytool 工具，302
+### P
+- page 属性
+    - <jsp:forward> 动作的，184
+    - <jsp:include> 动作的，181-182
+- page 指令，49, 62-63, 65-70
+- page 隐式变量，109
+- 相对 URL 的页面相对路径，56-57, 60
+- page 作用域
+    - 对于 JSP 容器，46
+    - 和生命周期，165
+- page 变量，156-157
+- PageContext 默认标签处理器，213
+- pageContext 隐式变量，108, 129-134
+- pageContext.include 方法与 <jsp:include> 动作，181
+- 页面
+    - 使用 <jsp:include> 动作分解成更小的部分，181-182
+    - 确定可重入性，67
+    - 页面的元素，49
+    - jsp/InterestCalc.jsp，202-203
+    - 命名，156
+    - 在其他 JSP 页面内，57-58
+    - 作为异常目标，69
+- <jsp:setProperty> 动作的 param 属性，175
+- 参数化工厂，389
+- 请求中的参数，打印和显示，110-112
+- 指定 Servlet 的父类，63-65
+- 父默认标签处理器，213
+- 括号（()），与表达式配合使用，88
+- Parent.jsp 文件，与 include 指令配合使用，58
+- 密码加密，与 Apache 配合使用，306-308
+- 密码，为基本的 Tomcat 认证配置，311
+- 路径，使用 getResource() 和 getRealPath() 方法打印，149
+- 模式
+    - 在应用程开发中，256-258
+    - 模式的实用性，258
+- Family Center 应用程序数据模型中的相册，实体类型，406
+- 物理架构，259
+- 可插拔架构和桥接模式，275
+- 加号（+），与 GET 方法配合使用，10
+- URL 中的端口限定符，12
+- POST 方法，17
+    - 其中的消息体，14
+    - 与 HTTP 请求配合使用，10-13
+- POST 请求和 CGI，32
+- 预编译协议，45
+- JDBC 中的 PreparedStatement 示例，393-394
+- 表示层，260，分割，264-265
+- 一元表达式，89
+- print() 方法，与 JspWriter 对象配合使用，141-142
+- out 变量的打印方法，146
+- printStackTrace() 方法与 out 变量，144
+- PrintWriter 方法，123
+- PrintWriter 对象
+    - 使用 buffer 页面指令属性，66
+    - 用于设置响应头，122
+- property 属性
+    - <jsp:getProperty> 动作的，179
+    - <jsp:setProperty> 动作的，175
+- 属性值，在 JavaBeans 中设置，173-178
+- 协议，4
+- ps 值，为 Tomcat 与 Apache 的连接定义，466
+- PT.html 文件，137
+- 公钥方案，301
+- Tag Support 基类的 Public Tag getParent() 方法，221
+- PutTag.java 文件，242
 
-## L
+### Q
+- 查询，JDBC 对查询的支持，392
+- QUERY_STRING 变量和 CGI，31-32
+- 问号（?）
+    - 与 GET 方法配合使用，10
+    - 与声明为静态 final 的 SQL 字符串配合使用，414-415
 
-language 页面指令属性，63
-Family Center 应用程序中姓氏搜索的命令对象，368-369
-延迟，对网络透明性的影响，5-6
-LDAP（轻量级目录访问协议）认证，299-300
-遗留信息
-- 通过外部内容源访问，382-384
-- 以 HTML 视图形式呈现，31
-line.separator 属性，与 out 变量配合使用，141-142
-字面值，89
-LiveScript，27
-通讯录搜索项目中的 loadFamily_Center.sql 文件，354-371
-脚本小程序中的局部内部类，96
-脚本小程序声明中的局部变量，91
-login-config 块，加载，421
+### R
+- REAL 数据库类型，对应的 ResultSet 方法，396
+- 安全域，291-294, 306
+- HTTP 响应中的原因短语，16
+- 记录，向 MySQL 添加，479
+- 重定向请求，方法，125
+- redirect.jsp 文件，137-140
+- 可重入代码，确定，67
+- Internet Explorer 中的刷新命令，10
+- 关系数据库，解释，477
+- Family Center 应用程序数据模型中的关系，408-410
+- 相对 URL 的相对路径，55-56, 60
+- 相对 URL
+    - 使用相对 URL 标识 JSP 资源，60-62
+    - 和 include 指令，55
+- Tag 接口的 release 方法，220, 227
+- 可靠性，对网络透明性的影响，5-6
+- removeAttribute() 方法，使用会话解绑，136
+- 存储库，在 Family Center 应用程序中的作用，286
+- 请求属性，相关方法，114
+- 请求分发方法，153
+- 请求头
+    - 使用请求隐式对象访问，114-115
+    - 相关方法，116, 124
+- HTTP 中的请求头，14
+- request 隐式对象，108, 109-119
+- HTTP 中的请求行，9-14, 115-117
+- request 对象，与 <jsp:include> 动作配合使用，183
+- 请求参数，使用方法访访问，113
+- request 作用域
+    - 对于 JSP 容器，47
+    - 和生命周期，165
+    - 在请求作用域中检索属性，119
+    - 在请求作用域中存储对象，119
+- 页面的请求时间，发生时间，90
+- 请求 URI，11-13
+- RequestDispatcher() 方法和 ServletContext 对象，150-154
 
-## M
-
-mailto:aboll@bell.net URI，12
-Main.html 文件，242-250
-majorError.jsp 文件，68
-Web 应用程序架构中的中介者模式，270-271
-通讯录搜索项目中的 member_role.txt 文件，354-371
-Jakarta DBTags 项目中的 MemberEditForm.html 文件，402
-通讯录搜索项目中的 Member.txt 文件，354-371
-菜单小程序插入项目，193-195
-HTTP 中的消息体，14, 17
-消息摘要，加密，296
-HTTP 中的消息头，14, 16-17
-消息完整性，在网络安全中的作用，295-297
-通讯录搜索项目中的 messageboard.txt 文件，354-371
-消息，记录到 Servlet 日志文件，154
-方法作用域
-- 赋值给变量，82
-- 生成 Java 代码，98
-方法
-- 在声明中，82-83
-- 声明，85
-- 可用的作用域，84
-MIME（多用途互联网邮件扩展），10, 26
-MiniSQL 与 MySQL，472
-MySQL 的镜像站点，访问，472
-mm.MySQL JDBC 驱动程序，392
-mod 适配器，为 Tomcat Servlet 容器安装，467
-
-Model 工厂，为 Family Center 应用程序通讯录初始化，422-424
-模型，设计交互，339-340
-模块和 include 指令，55
-Richard Morin 谈 Java Applets，28
-.msi 文件，为 Apache 执行，462
-Multipart/form-data 编码标准和 POST 方法，11
-MVC（模型-视图-控制器）模式在 Web 应用程序架构中，268-270, 337
-MySQL
-- 向 MySQL 添加记录，479
-- 向 MySQL 添加用户，478
-- MySQL 的管理，475-479
-- 在 MySQL 中创建和销毁数据库实例，476
-- 使用 MySQL 创建表，479
-- 下载 MySQL，472-473
-- 下载 MySQL 的 JDBC 驱动程序，473-474
-- 错误消息，476
-- 安装 MySQL，474-475
-- 与 MiniSQL 相比，472
-- 对 insert 语句的支持，479
-- MySQL 的 URL，472
-注册 MySQL 驱动程序，387-388
-MySQL 引擎，ping 操作，476
-MySQL，使用 JDBC 拦截器，319
-mysqladmin 工具，476-477
-
-## N
-
-'\n'（换行符）字符，与 out 变量配合使用，141-142
-名称和值信息，通过 <jsp:param> 动作提供，184
-name 属性，163
-- <jsp:getProperty> 动作的，179
-- <jsp:param> 动作的，184
-- <jsp:plugin> 动作的，191
-- <jsp:setProperty> 动作的，175
-name TLD，208-209, 212
-NAS（网络附加存储），集中化，380
-Natarajan_Family.jsp 文件，323-325
-嵌套作用域，使用 PageContext 对象管理，132-133
-脚本变量的嵌套作用域，230, 233
-相对 URL 的网络路径，55-56
-Internet 网络架构，293
-网络目录服务，在协作认证中的作用，299
-网络透明性，5-6, 8
-换行符（'\n'）字符，与 out 变量配合使用，141-142
-news:comp.lang.java URI，12
-NFS（网络文件系统），在网络安全中的作用，293-294
-NSAPI（Netscape 应用程序编程接口），35, 39
-<jsp:plugin> 动作的 nspluginurl 属性，191
-NUMERIC 数据库类型，对应的 ResultSet 方法，396
-
-## O
-
-Oak，29
-Object findAttribute() 方法，通过多个作用域访问，131
-Object getAttribute() 方法，136, 266
-- 通过多个作用域访问，131
-- 使用该方法管理请求属性，114
-- 与应用程序属性配合使用，149
-Object getPage() 方法，获取隐式对象，132
-Tag Support 基类的 Object getValue() 方法，221
-面向对象的软件设计模式，267-276
-对象作用域，赋值给变量，82
-对象作用域，使用对象作用域共享数据，240-241
-对象
-- 使用作用域访问，46-47
-- 在应用程序作用域中缓存，154
-- 存储在请求作用域中，119
-运算符，定义求值顺序，88
-LDAP 中的组织（o）对象类，299-300
-org.apache.tomcat.request.JDBCRealm 安全拦截器，318
-out 隐式变量，109, 140-145
-out.clear() 方法与 out.flush() 方法，145
-out.flush() 方法，与 RequestDispatcher() 方法配合使用，151
-输出缓冲响应服务，120-122, 126
-输出注释，49, 53-54
-
-## P
-
-page 属性
-- <jsp:forward> 动作的，184
-- <jsp:include> 动作的，181-182
-page 指令，49, 62-63, 65-70
-page 隐式变量，109
-相对 URL 的页面相对路径，56-57, 60
-page 作用域
-- 对于 JSP 容器，46
-- 和生命周期，165
-page 变量，156-157
-PageContext 默认标签处理器，213
-pageContext 隐式变量，108, 129-134
-pageContext.include 方法与 <jsp:include> 动作，181
-页面
-- 使用 <jsp:include> 动作分解成更小的部分，181-182
-- 确定可重入性，67
-- 页面的元素，49
-- jsp/InterestCalc.jsp，202-203
-- 命名，156
-- 在其他 JSP 页面内，57-58
-- 作为异常目标，69
-<jsp:setProperty> 动作的 param 属性，175
-参数化工厂，389
-请求中的参数，打印和显示，110-112
-指定 Servlet 的父类，63-65
-父默认标签处理器，213
-括号（()），与表达式配合使用，88
-Parent.jsp 文件，与 include 指令配合使用，58
-密码加密，与 Apache 配合使用，306-308
-密码，为基本的 Tomcat 认证配置，311
-路径，使用 getResource() 和 getRealPath() 方法打印，149
-模式
-- 在应用程序开发中，256-258
-- 模式的实用性，258
-Family Center 应用程序数据模型中的相册，实体类型，406
-物理架构，259
-可插拔架构和桥接模式，275
-加号（+），与 GET 方法配合使用，10
-URL 中的端口限定符，12
-POST 方法，17
-- 其中的消息体，14
-- 与 HTTP 请求配合使用，10-13
-POST 请求和 CGI，32
-预编译协议，45
-JDBC 中的 PreparedStatement 示例，393-394
-表示层，260，分割，264-265
-一元表达式，89
-print() 方法，与 JspWriter 对象配合使用，141-142
-out 变量的打印方法，146
-printStackTrace() 方法与 out 变量，144
-PrintWriter 方法，123
-PrintWriter 对象
-- 使用 buffer 页面指令属性，66
-- 用于设置响应头，122
-property 属性
-- <jsp:getProperty> 动作的，179
-- <jsp:setProperty> 动作的，175
-属性值，在 JavaBeans 中设置，173-178
-协议，4
-ps 值，为 Tomcat 与 Apache 的连接定义，466
-PT.html 文件，137
-公钥方案，301
-Tag Support 基类的 Public Tag getParent() 方法，221
-PutTag.java 文件，242
-
-## Q
-
-查询，JDBC 对查询的支持，392
-QUERY_STRING 变量和 CGI，31-32
-问号（?）
-- 与 GET 方法配合使用，10
-- 与声明为静态 final 的 SQL 字符串配合使用，414-415
-
-## R
-
-REAL 数据库类型，对应的 ResultSet 方法，396
-安全域，291-294, 306
-HTTP 响应中的原因短语，16
-记录，向 MySQL 添加，479
-重定向请求，方法，125
-redirect.jsp 文件，137-140
-可重入代码，确定，67
-Internet Explorer 中的刷新命令，10
-关系数据库，解释，477
-Family Center 应用程序数据模型中的关系，408-410
-相对 URL 的相对路径，55-56, 60
-相对 URL
-- 使用相对 URL 标识 JSP 资源，60-62
-- 和 include 指令，55
-Tag 接口的 release 方法，220, 227
-可靠性，对网络透明性的影响，5-6
-removeAttribute() 方法，使用会话解绑，136
-存储库，在 Family Center 应用程序中的作用，286
-请求属性，相关方法，114
-请求分发方法，153
-请求头
-- 使用请求隐式对象访问，114-115
-- 相关方法，116, 124
-HTTP 中的请求头，14
-request 隐式对象，108, 109-119
-HTTP 中的请求行，9-14, 115-117
-request 对象，与 <jsp:include> 动作配合使用，183
-请求参数，使用方法访问，113
-request 作用域
-- 对于 JSP 容器，47
-- 和生命周期，165
-- 在请求作用域中检索属性，119
-- 在请求作用域中存储对象，119
-页面的请求时间，发生时间，90
-请求 URI，11-13
-RequestDispatcher() 方法和 ServletContext 对象，150-154
-
-
-
-## T
-
+### T
 -   表格，使用MySQL创建，479
 -   标签属性
     -   用于初始化动作，163-164，166
@@ -13209,8 +15738,7 @@ RequestDispatcher() 方法和 ServletContext 对象，150-154
     -   <jsp:plugin>动作的，191
     -   与<jsp:useBean>动作一起使用，167
 
-## U
-
+### U
 -   URI的统一定义，11-13
 -   关系中的唯一键，409
 -   URI规范，11
@@ -13240,290 +15768,247 @@ RequestDispatcher() 方法和 ServletContext 对象，150-154
     -   为基本的Tomcat认证配置，311
 -   ServletContext对象的实用方法，153-154
 
-
-
-## V
-
-+   value 属性
+### V
+-   +   value 属性
 -   `<jsp:param>` 动作的，184
 -   `<jsp:setProperty>` 动作的，175
-VARBINARY 数据库类型，对应的 ResultSet 方法，397
-VARCHAR SQL 数据库类型，对应的 ResultSet 方法，396
-VariableInfo[ ] getVariableInfo() TagExtraInfo 类的方法，230
-变量
--   相关建议，86
--   和声明，85
--   在声明中，82
--   在脚本小程序中声明，91
--   可用的作用域，84
--   使用先于声明，86
-VBScript，27-28
-Virata 公司，网址，304
-Visual Basic 控件，24
-void clearBody() BodyContent 对象的方法，与 Tag 接口配合使用，224
-void doInitBody() BodyTag 接口的方法，221
-void flushBuffer() 方法，用它管理响应缓冲，123
-void forward() 方法，135
-void handlePageException() 方法，135
-void include() 方法，135
-void log() 实用方法，154
-void() 方法
--   用于重定向请求，125
--   用于请求头，124
--   与 out 变量配合使用，142
-void print() out 变量的打印方法，146
-void printStackTrace() exception 变量的方法，158
-void release() Tag 接口的方法，219
-void removeAttribute() 方法，136
--   用于访问多个作用域，131-132
--   用于管理请求属性，114
--   与 application 属性配合使用，149
-void removeValue() TagSupport 基类的方法，221
-void reset() 方法，用它管理响应缓冲，123
-void setAttribute() 方法，136
--   用于访问多个作用域，132
--   用于管理请求属性，114
--   与 application 属性配合使用，149
-void setBodyContent() BodyTag 接口的方法，221
-void setBufferSize() 方法，用它管理响应缓冲，123
-void setPageContext() Tag 接口的方法，219
-void setParent() Tag 接口的方法，219
-void setValue() TagSupport 基类的方法，221
+-   VARBINARY 数据库类型，对应的 ResultSet 方法，397
+-   VARCHAR SQL 数据库类型，对应的 ResultSet 方法，396
+-   VariableInfo[ ] getVariableInfo() TagExtraInfo 类的方法，230
+-   变量
+    -   相关建议，86
+    -   和声声明，85
+    -   在声明中，82
+    -   在脚本小程序中声明，91
+    -   可用的作用域，84
+    -   使用先于声明，86
+-   VBScript，27-28
+-   Virata 公司，网址，304
+-   Visual Basic 控件，24
+-   void clearBody() BodyContent 对象的方法，与 Tag 接口配合使用，224
+-   void doInitBody() BodyTag 接口的方法，221
+-   void flushBuffer() 方法，用它管理响应缓冲，123
+-   void forward() 方法，135
+-   void handlePageException() 方法，135
+-   void include() 方法，135
+-   void log() 实用方法，154
+-   void() 方法
+    -   用于重定向请求，125
+    -   用于请求头，124
+    -   与 out 变量配合使用，142
+-   void print() out 变量的打印方法，146
+-   void printStackTrace() exception 变量的方法，158
+-   void release() Tag 接口的方法，219
+-   void removeAttribute() 方法，136
+    -   用于访问多个作用域，131-132
+    -   用于管理请求属性，114
+    -   与 application 属性配合使用，149
+-   void removeValue() TagSupport 基类的方法，221
+-   void reset() 方法，用它管理响应缓冲，123
+-   void setAttribute() 方法，136
+    -   用于访问多个作用域，132
+    -   用于管理请求属性，114
+    -   与 application 属性配合使用，149
+-   void setBodyContent() BodyTag 接口的方法，221
+-   void setBufferSize() 方法，用它管理响应缓冲，123
+-   void setPageContext() Tag 接口的方法，219
+-   void setParent() Tag 接口的方法，219
+-   void setValue() TagSupport 基类的方法，221
 
-## W
+### W
+-   +   void writeOut() BodyContent 对象的方法，与 Tag 接口配合使用，224
+-   vspace `<jsp:plugin>` 动作的属性，191
+-   W3C（万维网联盟），4
+-   WAR 目录结构，458-459
+-   WAR 文件，创建，459
+-   WAR 格式与 Web 应用，456-461
+-   WAR（Web 归档）拦截器，下载，320
+-   Web 应用部署描述符，459-461
+-   Web 应用
+-       架构，264-267
+-       管理工作流和流程控制，339-347
+-       在 Tomcat 中，461
+-       与 WAR 格式，456-461
+-   Web 认证，299-309
+-   Web-flow，在 Family Center 应用中的作用，286
+-   WEB-INF 目录，内容，458
+-   基于 Web 服务器的认证，303-305
+-   Web 服务器
+-       和容器，452-453
+-       扩展，34-38
+-       从中检索 Web 资源，10
+-       向其发送信息，10，11
+-       有状态类型，7
+-   Tomcat 中的 webapps 子目录，455
+-   web.xml 部署描述符，71
+-   web.xml 文件，233-238, 242-250
+-       与自定义 Tomcat 安全拦截器项目，319-323
+-       与 Gallery Viewer 项目，277-284
+-       在 Jakarta DBTags 项目中，402
+-       与 Tomcat 的登录页面项目，323-325
+-       在 Tomcat 安全拦截器项目中的作用，327-328
+-       在 Family Center 应用的 Security 项目中，411
+-   while 循环，在脚本小程序中用于迭代，94-95
+-   Why 注释，50，54
+-   width `<jsp:plugin>` 动作的属性，191
+-   Tomcat 中的 work 子目录，455
+-   worker 值，为 Tomcat 与 Apache 的连接定义，466-467
+-   工作流
+-       链，375
+-       Web 应用的管理，339-347
+-       Address Book Search 项目的工作流图，372
+-       工作流表示例，344
 
-+   void writeOut() BodyContent 对象的方法，与 Tag 接口配合使用，224
-vspace `<jsp:plugin>` 动作的属性，191
-W3C（万维网联盟），4
-WAR 目录结构，458-459
-WAR 文件，创建，459
-WAR 格式与 Web 应用，456-461
-WAR（Web 归档）拦截器，下载，320
-Web 应用部署描述符，459-461
-Web 应用
--   架构，264-267
--   管理工作流和流程控制，339-347
--   在 Tomcat 中，461
--   与 WAR 格式，456-461
-Web 认证，299-309
-Web-flow，在 Family Center 应用中的作用，286
-WEB-INF 目录，内容，458
-基于 Web 服务器的认证，303-305
-Web 服务器
--   和容器，452-453
--   扩展，34-38
--   从中检索 Web 资源，10
--   向其发送信息，10，11
--   有状态类型，7
-Tomcat 中的 webapps 子目录，455
-web.xml 部署描述符，71
-web.xml 文件，233-238, 242-250
--   与自定义 Tomcat 安全拦截器项目，319-323
--   与 Gallery Viewer 项目，277-284
--   在 Jakarta DBTags 项目中，402
--   与 Tomcat 的登录页面项目，323-325
--   在 Tomcat 安全拦截器项目中的作用，327-328
--   在 Family Center 应用的 Security 项目中，411
-while 循环，在脚本小程序中用于迭代，94-95
-Why 注释，50，54
-width `<jsp:plugin>` 动作的属性，191
-Tomcat 中的 work 子目录，455
-worker 值，为 Tomcat 与 Apache 的连接定义，466-467
-工作流
--   链，375
--   Web 应用的管理，339-347
-Address Book Search 项目的工作流图，372
-工作流表示例，344
+### X
+-   +   X.509 安全证书，300-301
 
-## X
+### 国际联系方式
+-   澳大利亚
+-       McGraw-Hill Book Company Australia Pty. Ltd.
+-       电话 +61-2-9417-9899
+-       传真 +61-2-9417-5687
+-       http://www.mcgraw-hill.com.au
+-       books-it_sydney@mcgraw-hill.com
+-   新加坡（服务亚洲）
+-       McGraw-Hill Book Company
+-       电话 +65-863-1580
+-       传真 +65-862-3354
+-       http://www.mcgraw-hill.com.sg
+-       mghasia@mcgraw-hill.com
+-   加拿大
+-       McGraw-Hill Ryerson Ltd.
+-       电话 +905-430-5000
+-       传真 +905-430-5020
+-       http://www.mcgrawhill.ca
+-   南非
+-       McGraw-Hill South Africa
+-       电话 +27-11-622-7512
+-       传真 +27-11-622-9045
+-       robyn_swanepoel@mcgraw-hill.com
+-   希腊、中东、
+-   北非
+-       McGraw-Hill Hellas
+-       电话 +30-1-656-0990-3-4
+-       传真 +30-1-654-5525
+-   英国和欧洲
+-       （不包括南欧）
+-       McGraw-Hill Education Europe
+-       电话 +44-1-628-502500
+-       传ra +44-1-628-770224
+-       http://www.mcgraw-hill.co.uk
+-       computing_neurope@mcgraw-hill.com
+-   墨西哥（同时服务拉丁美洲）
+-       McGraw-Hill Interamericana Editores S.A. de C.V.
+-       电话 +525-117-1583
+-       传真 +525-117-1589
+-       http://www.mcgraw-hill.com.mx
+-       fernando_castellanos@mcgraw-hill.com
+-   所有其他咨询请联系：
+-       Osborne/McGraw-Hill
+-       电话 +1-510-549-6600
+-       传真 +1-510-883-7600
+-       http://www.osborne.com
+-       omg_international@mcgraw-hill.com
 
-+   X.509 安全证书，300-301
+### Apache 软件许可协议
+-   Apache 软件许可协议，版本 1.1
+-   版权所有 © 1999 Apache 软件基金会。保留所有权利。
+-   在遵守以下条件的前提下，允许以源代码和二进制形式重新分发和使用，无论是否经过修改：
+-       1. 源代码的重新分发必须保留上述版权声明、此条件列表以及以下免责声明。
+-       2. 二进制形式的重新分发必须在分发提供的文档和/或其他材料中复制上述版权声明、此条件列表以及以下免责声明。
+-       3. 随重新分发一起提供的最终用户文档（如有）必须包含以下致谢：
+-           > "本产品包含由 Apache 软件基金会 (http://www.apache.org/) 开发的软件。"
+-           或者，此致谢可以出现在软件本身中，如果并且无论何时此类第三方致谢通常出现。
+-       4. 未经事先书面许可，不得使用 "The Jakarta Project"、"Tomcat" 和 "Apache Software Foundation" 的名称来认可或推广源自此软件的产品。如需书面许可，请联系 apache@apache.org。
+-       5. 未经 Apache 软件基金会事先书面许可，不得将源自此软件的产品称为 "Apache"，也不得在其名称中出现 "Apache"。
+-   > 本软件按 "原样" 提供，任何明示或暗示的保证，包括但不限于对适销性和特定目的适用性的暗示保证，均予以否认。在任何情况下，Apache 软件基金会或其贡献者均不对任何直接、间接、附带、特殊、惩戒性或后果性损害（包括但不限于替代商品或服务的采购；使用、数据或利润的损失；或业务中断）承担责任，无论此类损害是如何引起的，也无论基于任何责任理论，无论是合同、严格责任还是侵权（包括疏忽或其他），均因使用本软件而产生，即使已被告知发生此类损害的可能性。
+-   =====================================
+-   本软件由代表 Apache 软件基金会的许多个人自愿贡献而成。有关 Apache 软件基金会的更多信息，请访问 <http://www.apache.org/>。
 
-## 国际联系方式
+### 现在你可以通过 Osborne 的入门指南学习所有主要的开发语言
 
-澳大利亚
-McGraw-Hill Book Company Australia Pty. Ltd.
-电话 +61-2-9417-9899
-传真 +61-2-9417-5687
-http://www.mcgraw-hill.com.au
-books-it_sydney@mcgraw-hill.com
+### 突破语言障碍
+-   ![](img/7a40f8957e7c3eb68dbb9f8ab3cef54d_529_0.png)
+-   ![](img/7a40f8957e7c3eb68dbb9f8ab3cef54d_529_1.png)
+-   ![](img/7a40f8957e7c3eb68dbb9f8ab3cef54d_529_2.png)
+-   SQL：入门指南
+-       FORREST HOULLETTE, 博士
+-       0-07-213096-2
+-   JAVA 2：入门指南
+-       HERB SCHILDT
+-       0-07-212742-2
+-   HTML：入门指南
+-       WENDY WILLARD
+-       0-07-213026-1
+-   ![](img/7a40f8957e7c3eb68dbb9f8ab3cef54d_529_3.png)
+-   ![](img/7a40f8957e7c3eb68dbb9f8ab3cef54d_529_4.png)
+-   ![](img/7a40f8957e7c3eb68dbb9f8ab3cef54d_529_5.png)
+-   JAVASCRIPT：入门指南
+-       JOHN POLLOCK
+-       0-07-213140-3
+-   PERL：入门指南
+-       R. ALLEN WYKE &
+-       DONALD B. THOMAS
+-       0-07-212957-3
+-   XML：入门指南
+-       DAVE MERCER
+-       0-07-212740-6
+-   ASP 3.0：
+-       入门指南
+-       D. MERCER
+-       0-07-212741-4
+-   LINUX 编程：
+-       入门指南
+-       R. PETERSEN
+-       0-07-212743-0
+-   WEB 设计：
+-       入门指南
+-       W. WILLARD
+-       0-07-213390-2
+-   FRONTPAGE 2002：
+-       入门指南
+-       K. CHINNATHAMB
+-       0-07-213491-7
+-   JSP：
+-       入门指南
+-       G. BOLLINGER & B. NATARAJAN
+-       0-07-213319-8
+-   PHP4：
+-       入门指南
+-       W. MCCARTY
+-       0-07-213371-6
+-   您可以在各地的实体书店和在线零售商处购买 Osborne/McGraw-Hill 的书籍。
+-   ![](img/7a40f8957e7c3eb68dbb9f8ab3cef54d_529_6.png)
 
-新加坡（服务亚洲）
-McGraw-Hill Book Company
-电话 +65-863-1580
-传真 +65-862-3354
-http://www.mcgraw-hill.com.sg
-mghasia@mcgraw-hill.com
+### 初级程序员必备技能
 
-加拿大
-McGraw-Hill Ryerson Ltd.
-电话 +905-430-5000
-传真 +905-430-5020
-http://www.mcgrawhill.ca
+### JSP™ 初学者指南
+-   学习使用 JavaServer Pages 为网页提供动态内容。这本理想的服务器端脚本语言入门书，**《JSP：初学者指南》** 首先涵盖了基础知识，如 JSP 语法、脚本元素、隐式对象和标签库。然后，你将学习如何构建稳健的 JSP 架构、创建实际的 Web 应用程序、实施应用程序安全措施，以及将数据库集成到你的 JSP 架构中。通过这本自定进度、循序渐进的学习解决方案，立即开始使用 JSP。
 
-南非
-McGraw-Hill South Africa
-电话 +27-11-622-7512
-传真 +27-11-622-9045
-robyn_swanepoel@mcgraw-hill.com
+### 本初学者指南旨在实现轻松学习：
+-   **模块**——每个编程概念都分为逻辑模块（章节），非常适合个性化学习
+-   **目标**——每个模块开头都列出了你在模块结束时将掌握的具体编程技能
+-   **专家问答**——贯穿全书的问答部分包含了额外信息和有趣的评论
+-   **1分钟快速测验**——快速自我评估部分
+-   **带注释的语法**——示例代码带有注释，指向所说明的特定技术
+-   **项目**——每个模块都包含编码练习，应用你所学的内容
+-   **精通检查**——模块结束时的复习，使用简答题、选择题、填空题和编码问题
 
-希腊、中东、
-北非
-McGraw-Hill Hellas
-电话 +30-1-656-0990-3-4
-传真 +30-1-654-5525
+### 关于作者：
+-   加里·博林格是 Artesia Technologies 的首席产品架构师兼联合创始人。他是多篇发表在《JavaPro》和《JavaReport》杂志上的文章的作者。
+-   巴拉蒂·纳塔拉扬是 Artesia Technologies 的首席工程师，并合著了发表在《JavaPro》和《JavaReport》杂志上的文章。
 
-英国和欧洲
-（不包括南欧）
-McGraw-Hill Education Europe
-电话 +44-1-628-502500
-传真 +44-1-628-770224
-http://www.mcgraw-hill.co.uk
-computing_neurope@mcgraw-hill.com
+### BookTech
+-   原价 29.99 现价 14.99
 
-墨西哥（同时服务拉丁美洲）
-McGraw-Hill Interamericana Editores S.A. de C.V.
-电话 +525-117-1583
-传真 +525-117-1589
-http://www.mcgraw-hill.com.mx
-fernando_castellanos@mcgraw-hill.com
+### OSBORNE
+-   信息时代必读书籍
+-   McGraw-Hill Companies 旗下分部
+-   美国售价 29.99 美元 www.osborne.com
 
-所有其他咨询请联系：
-Osborne/McGraw-Hill
-电话 +1-510-549-6600
-传真 +1-510-883-7600
-http://www.osborne.com
-omg_international@mcgraw-hill.com
-
-## Apache 软件许可协议
-
-Apache 软件许可协议，版本 1.1
-版权所有 © 1999 Apache 软件基金会。保留所有权利。
-在遵守以下条件的前提下，允许以源代码和二进制形式重新分发和使用，无论是否经过修改：
-
-1. 源代码的重新分发必须保留上述版权声明、此条件列表以及以下免责声明。
-2. 二进制形式的重新分发必须在分发提供的文档和/或其他材料中复制上述版权声明、此条件列表以及以下免责声明。
-3. 随重新分发一起提供的最终用户文档（如有）必须包含以下致谢：
-
-    > "本产品包含由 Apache 软件基金会 (http://www.apache.org/) 开发的软件。"
-
-    或者，此致谢可以出现在软件本身中，如果并且无论何时此类第三方致谢通常出现。
-4. 未经事先书面许可，不得使用 "The Jakarta Project"、"Tomcat" 和 "Apache Software Foundation" 的名称来认可或推广源自此软件的产品。如需书面许可，请联系 apache@apache.org。
-5. 未经 Apache 软件基金会事先书面许可，不得将源自此软件的产品称为 "Apache"，也不得在其名称中出现 "Apache"。
-
-> 本软件按 "原样" 提供，任何明示或暗示的保证，包括但不限于对适销性和特定目的适用性的暗示保证，均予以否认。在任何情况下，Apache 软件基金会或其贡献者均不对任何直接、间接、附带、特殊、惩戒性或后果性损害（包括但不限于替代商品或服务的采购；使用、数据或利润的损失；或业务中断）承担责任，无论此类损害是如何引起的，也无论基于任何责任理论，无论是合同、严格责任还是侵权（包括疏忽或其他），均因使用本软件而产生，即使已被告知发生此类损害的可能性。
-
-=====================================
-本软件由代表 Apache 软件基金会的许多个人自愿贡献而成。有关 Apache 软件基金会的更多信息，请访问 <http://www.apache.org/>。
-
-现在你可以通过 Osborne 的入门指南学习所有主要的开发语言
-
-## 突破语言障碍
-
-![](img/7a40f8957e7c3eb68dbb9f8ab3cef54d_529_0.png)
-
-![](img/7a40f8957e7c3eb68dbb9f8ab3cef54d_529_1.png)
-
-![](img/7a40f8957e7c3eb68dbb9f8ab3cef54d_529_2.png)
-
-SQL：入门指南
-FORREST HOULLETTE, 博士
-0-07-213096-2
-
-JAVA 2：入门指南
-HERB SCHILDT
-0-07-212742-2
-
-HTML：入门指南
-WENDY WILLARD
-0-07-213026-1
-
-![](img/7a40f8957e7c3eb68dbb9f8ab3cef54d_529_3.png)
-
-![](img/7a40f8957e7c3eb68dbb9f8ab3cef54d_529_4.png)
-
-![](img/7a40f8957e7c3eb68dbb9f8ab3cef54d_529_5.png)
-
-JAVASCRIPT：入门指南
-JOHN POLLOCK
-0-07-213140-3
-
-PERL：入门指南
-R. ALLEN WYKE &
-DONALD B. THOMAS
-0-07-212957-3
-
-XML：入门指南
-DAVE MERCER
-0-07-212740-6
-
-ASP 3.0：
-入门指南
-D. MERCER
-0-07-212741-4
-
-LINUX 编程：
-入门指南
-R. PETERSEN
-0-07-212743-0
-
-WEB 设计：
-入门指南
-W. WILLARD
-0-07-213390-2
-
-FRONTPAGE 2002：
-入门指南
-K. CHINNATHAMB
-0-07-213491-7
-
-JSP：
-入门指南
-G. BOLLINGER & B. NATARAJAN
-0-07-213319-8
-
-PHP4：
-入门指南
-W. MCCARTY
-0-07-213371-6
-
-您可以在各地的实体书店和在线零售商处购买 Osborne/McGraw-Hill 的书籍。
-
-![](img/7a40f8957e7c3eb68dbb9f8ab3cef54d_529_6.png)
-
-
-
-## 初级程序员必备技能
-
-## JSP™ 初学者指南
-
-学习使用 JavaServer Pages 为网页提供动态内容。这本理想的服务器端脚本语言入门书，**《JSP：初学者指南》** 首先涵盖了基础知识，如 JSP 语法、脚本元素、隐式对象和标签库。然后，你将学习如何构建稳健的 JSP 架构、创建实际的 Web 应用程序、实施应用程序安全措施，以及将数据库集成到你的 JSP 架构中。通过这本自定进度、循序渐进的学习解决方案，立即开始使用 JSP。
-
-## 本初学者指南旨在实现轻松学习：
-
-- **模块**——每个编程概念都分为逻辑模块（章节），非常适合个性化学习
-- **目标**——每个模块开头都列出了你在模块结束时将掌握的具体编程技能
-- **专家问答**——贯穿全书的问答部分包含了额外信息和有趣的评论
-- **1分钟快速测验**——快速自我评估部分
-- **带注释的语法**——示例代码带有注释，指向所说明的特定技术
-- **项目**——每个模块都包含编码练习，应用你所学的内容
-- **精通检查**——模块结束时的复习，使用简答题、选择题、填空题和编码问题
-
-**关于作者：**
-加里·博林格是 Artesia Technologies 的首席产品架构师兼联合创始人。他是多篇发表在《JavaPro》和《JavaReport》杂志上的文章的作者。
-巴拉蒂·纳塔拉扬是 Artesia Technologies 的首席工程师，并合著了发表在《JavaPro》和《JavaReport》杂志上的文章。
-
-BookTech
-原价 29.99 现价 14.99
-
-OSBORNE
-信息时代必读书籍
-McGraw-Hill Companies 旗下分部
-美国售价 29.99 美元 www.osborne.com
-
-编程/JSP
-ISBN 0-07-213319-8
-9780072133196
-90000.
-05/04/2017 16:34-2
-22
+### 编程/JSP
+-   ISBN 0-07-213319-8
+-   9780072133196
+-   90000.
+-   05/04/2017 16:34-2
+-   22

@@ -1,22 +1,15 @@
+
 # JavaScript Native Interface：构建具有原生性能的跨平台应用
-
-
-
-
-
-
 
 ![](img/bda9545f10e8303b87afef4dd62e47e9_0_0.png)
 
-
-
 版权 © 2024 版权所有
 
-保留所有权利。未经出版者明确书面许可，不得对本书或其任何部分以任何方式进行复制或使用，但书评中的简短引用除外。如需许可，请向以下地址联系出版者“JavaScript Native Interface for React Native”。
+保留所有权利。未经出版者明确书面许可，不得对本书或其任何部分以任何方式进行复制或使用，但书评中的简短引用除外。如需许可，请向以下地址联系出版者"JavaScript Native Interface for React Native"。
 
 books@backupbrain.co
 
-# 所有代码示例均采用 ISC 许可证授权
+## 所有代码示例均采用 ISC 许可证授权
 
 托管地址：github.com/backupbrain/javascript-native-interface-book
 
@@ -24,9 +17,9 @@ Copyright 2022 Tony Gaitaitzis
 
 许可出于任何目的（无论收费）使用、复制、修改和/或分发本软件，前提是所有副本中均包含上述版权声明和本许可声明。
 
-软件按“原样”提供，作者对本软件不承担任何保证，包括但不限于对**销性**和**适用性**的所有暗示保证。在任何情况下，作者对因合同行为、过失或其他侵权诉讼，由于使用或执行本软件而引起的因使用、数据或利润损失而导致的任何特殊、直接、间接或后果性损害或任何损害均不承担责任。
+软件按"原样"提供，作者对本软件不承担任何保证，包括但不限于对**销性**和**适用性**的所有暗示保证。在任何情况下，作者对因合同行为、过失或其他侵权诉讼，由于使用或执行本软件而引起的因使用、数据或利润损失而导致的任何特殊、直接、间接或后果性损害或任何损害均不承担责任。
 
-# 献辞
+## 献辞
 
 献 Christofer，感谢你激励我解决问题
 
@@ -73,13 +66,11 @@ JavaScript Native Interface 代码的编写必须确保函数和数据类型与 
 
 本书将引导你如何设置 React Native 项目以使用 JSI，以及如何在 JSI 中实现常见的函数类型，包括接收或返回数组和复杂对象类型、Promise 以及多线程函数。
 
-# 1
-
-# 什么是 JavaScript Native Interface
+# 1. 什么是 JavaScript Native Interface
 
 JavaScript Interface (JSI) 是 Facebook 提供的一种轻量级通用 API，用于在 C++ 代码中与 JavaScript 数据类型和函数进行交互。在 React Native 的背景下引入的 JSI 提供了一种从 JavaScript 直接调用 C++ 函数以及反之的方法。
 
-在引入 JSI 之前，React Native 使用“原生桥接”（Native Bridge）功能，这要求开发者使用设备的原生语言编写原生代码，例如 iOS 上的 Swift 或 Android 上的 Java 或Kotlin。因此想要原生应用性能的 React Native 开发者需要为同一功能维护两个代码库。JSI 通过允许开发者仅维护一个高性能代码库解决了这个问题。
+在引入 JSI 之前，React Native 使用"原生桥接"（Native Bridge）功能，这要求开发者使用设备的原生语言编写原生代码，例如 iOS 上的 Swift 或 Android 上的 Java 或 Kotlin。因此想要原生应用性能的 React Native 开发者需要为同一功能维护两个代码库。JSI 通过允许开发者仅维护一个高性能代码库解决了这个问题。
 
 虽然 JSI 经常通过维护高性能的 C++ 代码来实现高性能代码，但值得注意的是，JSI 是 React Native 架构的一部分，旨在提高性能。
 
@@ -88,8 +79,6 @@ JavaScript Interface (JSI) 是 Facebook 提供的一种轻量级通用 API，用
 JavaScript Native Interface 代码的编写必须确保函数和数据类型与 JavaScript 类型系统兼容，并且这些函数必须正确导出到 JavaScript 环境中。
 
 本书将引导你如何设置 React Native 项目以使用 JSI，以及如何在 JSI 中实现常见的函数类型，包括接收或返回数组和复杂对象类型、Promise 以及多线程函数。
-
-
 
 模块或库。它的作用是定义 JSI 函数并将其挂载到 JavaScript 全局上下文。
 
@@ -102,6 +91,7 @@ void installMyJsiModule(Runtime &runtime) {
 > 示例 1.1: JSI 模块的主函数
 
 在这个安装函数内部，你必须创建一系列你希望在 React Native 项目中使用的自定义函数。
+
 你通过创建一个如下所示的新类型 `facebook::jsi::Function` 对象来实现这一点：
 
 ```cpp
@@ -114,12 +104,12 @@ Function myFunctionRef = Function::createHostFunction(...);
 
 | 参数 | 说明 |
 | --- | --- |
-| Runtime | React Native 执行环境 |
-| PropNameId | 在 TypeScript 中看到的函数名 |
-| unsigned int | 函数拥有的参数数量 |
+| `Runtime` | React Native 执行环境 |
+| `PropNameId` | 在 TypeScript 中看到的函数名 |
+| `unsigned int` | 函数拥有的参数数量 |
 | Lambda function | 将由 JavaScript 执行的函数 |
 
-表 1.1: Function::createHostFunction 的顶层参数
+表 1.1: `Function::createHostFunction` 的顶层参数
 
 Lambda（或回调函数）是在从 TypeScript 调用 JSI 函数时实际执行的内容。该函数的实际类型为 `facebook::jsi::HostFunction`，这就是为什么我们所讨论的函数被称为 `createFromHostFunction()`。
 
@@ -131,11 +121,11 @@ Lambda 函数接收三个参数：
 
 | 参数 | 说明 |
 | --- | --- |
-| Runtime | React Native 执行环境 |
-| Value* | 指向 Value 数组第一个元素的指针 |
-| size_t | 传递给函数的参数数量 |
+| `Runtime` | React Native 执行环境 |
+| `Value*` | 指向 `Value` 数组第一个元素的指针 |
+| `size_t` | 传递给函数的参数数量 |
 
-表 1.2: Function 对象中 lambda 函数的参数
+表 1.2: `Function` 对象中 lambda 函数的参数
 
 假设我们要创建一个名为 `myFunctionName()` 且接收两个参数的 JSI 函数。它可以定义如下所示：
 
@@ -157,7 +147,7 @@ void installExampleJSILibrary(Runtime &runtime) {
 
 > 示例 1.3: 定义 JSI 函数。
 
-你可以将 `installExampleJsiLibrary()` 函数get为类似于类，向软件的其他部分暴露方法。不同的是 `installExampleJsiLibrary()` 内部定义的函数是独立的函数，不需要实例化。`installExampleJsiLibrary()` 是一个定义其他函数的而非类。
+你可以将 `installExampleJsiLibrary()` 函数理解为类似于类，向软件的其他部分暴露方法。不同的是 `installExampleJsiLibrary()` 内部定义的函数是独立的函数，不需要实例化。`installExampleJsiLibrary()` 是一个定义其他函数的而非类。
 
 尽管这是用 C++ 编写，但如果你是 TypeScript 开发者，将 C++ 理解为像这段 TypeScript 代码那样工作可能会有所帮助：
 
@@ -186,15 +176,15 @@ void installExampleJsiLibrary(Runtime&runtime) {
 
 表 1.5: 将宿函数连接到 React Native 全局上下文
 
-# JSI Global.setProperty() 方法接收三个参数：
+## JSI Global.setProperty() 方法接收三个参数：
 
 | 参数 | 说明 |
 | --- | --- |
-| Runtime | React Native 执行环境 |
-| string* | 函数名 |
-| Function* | 指向 facebook::jsi::Function 的指针 |
+| `Runtime` | React Native 执行环境 |
+| `string*` | 函数名 |
+| `Function*` | 指向 `facebook::jsi::Function` 的指针 |
 
-表 1.3: Global.setProperty() 函数参数
+表 1.3: `Global.setProperty()` 函数参数
 
 这两个步骤共同将在 React Native 全局作用域中暴露一个具有以下方法签名的 `myFunction()` 函数：
 
@@ -218,9 +208,7 @@ const myFunction = (param1: any, param2: any) => {
 
 # 2. 环境搭建
 
-## 2.1
-
-# 准备你的环境
+## 2.1 准备你的环境
 
 每个开发项目都需要自己的工具。React Native 需要自己的工具，例如代码编辑器、编译器和像 Node.js 这样的 JavaScript 解释器。
 
@@ -242,9 +230,6 @@ const myFunction = (param1: any, param2: any) => {
     - Ruby
     - CocoaPods
 
-
-
-
 下载完成后，在文件资源管理器中双击安装文件运行它，并按照屏幕上的指示操作。
 
 ### 在 Linux 上安装
@@ -254,7 +239,6 @@ const myFunction = (param1: any, param2: any) => {
 例如，Ubuntu 和 Debian 系统上的高级软件包工具 (APT)：
 
 ```
-Console
 sudo apt update
 sudo apt install nodejs npm
 ```
@@ -264,7 +248,6 @@ sudo apt install nodejs npm
 Fedora 和 RedHat Enterprise Linux 系统使用 Dandified YUM 包管理器：
 
 ```
-Console
 sudo dnf install nodejs
 ```
 
@@ -273,7 +256,6 @@ sudo dnf install nodejs
 无论什么情况下，一旦安装了 Node.js，请通过从命令行运行它确保它工作正常并且是一个有用的版本：
 
 ```
-Console
 node --version
 ```
 
@@ -282,7 +264,6 @@ node --version
 Node.js 的响应应类似于下面的文本：
 
 ```
-Console
 v18.4.0
 ```
 
@@ -309,7 +290,6 @@ CMake 是一种跨平台的开源软件，用于自动自动化其他软件的�
 如果你正在使用 HomeBrew，可以使用 brew 命令安装 CMake：
 
 ```
-Console
 brew install cmake
 ```
 
@@ -318,7 +298,6 @@ brew install cmake
 或者，你可以从 CMake 网站 cmake.org 下载并安装最新版本。对于大多数用户来说，将是 macOS 10.13 用户磁盘镜像 (dmg)。下载完成后，你可以双击安装镜像，然后在终端（Terminal）中运行以下命令：
 
 ```
-Console
 sudo "/Applications/CMake.app/Contents/bin/cmake-gui" --install
 ```
 
@@ -350,7 +329,6 @@ sudo apt install cmake
 Fedora 和 RedHat Enterprise Linux 系统使用 Dandified YUM 包管理器：
 
 ```
-Console
 sudo dnf install cmake
 ```
 
@@ -359,7 +337,6 @@ sudo dnf install cmake
 无论什么情况下，一旦安装了 CMake，请通过从命令行运行它确保它工作正常：
 
 ```
-Console
 cmake --version
 ```
 
@@ -368,19 +345,15 @@ cmake --version
 CMake 的响应应类似于下面的文本：
 
 ```
-Console
 cmake version 3.28.0
 ```
 
 > 由 Kitware 维护和支持的 CMake 套件
 
-
-
-
 最后，我们可以创建一个头文件，将 `MySiNampampse::installExampleJsiLibrary()` 函数暴露给宿主平台的语言，例如 Android 的 Java 或 iOS 的 Swift：
 
 ```cpp
-cpp/exampleJsiLibrary.h
+// cpp/exampleJsiLibrary.h
 #ifndef __MY_JSI_LIBRARY
 #define __MY_JSI_LIBRARY
 
@@ -404,9 +377,7 @@ namespace MySiNampampse {
 
 我们定义相同的命名空间并编写函数定义，以便调用函数可以检查参数和返回类型是否正确。我们将这些内容封装在条件定义中，这样如果头文件被多个文件包含，就不会重复定义同一个函数。
 
-# 3
-
-## 集成到项目中
+# 3. 集成到项目中
 
 将 JavaScript Native Interface (JSI) 集成到 React Native 项目中可能有些棘手。它要求编译器能够正确找到并构建 JSI 代码，并且原生代码（例如 Swift 或 Java）能够定位、加载并执行生成的二进制文件，同时确保相应的函数被正确地暴露给 React Native 环境。
 
@@ -416,7 +387,7 @@ namespace MySiNampampse {
 
 ## Android
 
-得益于 Java，Android 长期以来一直具有从 Java 虚拟机加载并运行 C++ 代码的能力。这一特性被称为“Java Native Interface (JNI)”，它允许我们在 Android 应用程序启动时运行 C++ 代码。
+得益于 Java，Android 长期以来一直具有从 Java 虚拟机加载并运行 C++ 代码的能力。这一特性被称为"Java Native Interface (JNI)"，它允许我们在 Android 应用程序启动时运行 C++ 代码。
 
 当然，实现这一操作相当复杂，因为它需要配置 C 编译器、在 Java 和 C++ 之间创建接口、创建几个 Java 类，并在应用生命周期的特定时刻执行特定函数。
 
@@ -435,7 +406,7 @@ namespace MySiNampampse {
 将此文件命名为 `cpp-adapter.cpp`：
 
 ```cpp
-cpp-adapter.cpp
+// cpp-adapter.cpp
 ```
 
 图 1.2：命名新文件
@@ -489,7 +460,7 @@ jsiNamespace::installExampleJsiLibrary(runtime);
 将所有内容整合在一起，我们可以看到为 Android 完成的 JNI 桥接：
 
 ```cpp
-cpp-adapter.cpp
+// cpp-adapter.cpp
 #include <jni.h>
 #include <jsi/jsi.h>
 #include "exampleJsiLibrary.h"
@@ -556,7 +527,7 @@ public void installLib(JavaScriptContext context) {
 该类继承 `ReactContextBaseModule`，加载编译后的库，然后从 `exampleJsiLibrary.cpp` 执行 `exampleJsiLibrary()`。
 
 ```java
-SimpleJsiModule.java
+// SimpleJsiModule.java
 package com.reactnativesimsi;
 
 import android.annotation.NonNull;
@@ -632,12 +603,8 @@ public void installLib(JavaScriptContext context) {
       - SimpleJsiModule.java
       - SimpleJsiModulePackage.java
 
-
-
-
-
 ```java
-SimpleJsiModulePackage.java
+// SimpleJsiModulePackage.java
 package com.reactnativesimplejsi;
 import android.util.Log;
 import androidx.annotation.NonNull;
@@ -680,7 +647,7 @@ public class SimpleJsiModulePackage implements ReactPackage {
 重要的是，我们必须包含我们的 `cpp` 文件夹以及任何与 JavaScript Native Interface 相关的内容。由于 `android`、`cpp` 和 `node_modules` 相对于根目录处于同一级，我们可以这样告诉 CMake 包含这些文件夹：
 
 ```
-android/CMakeLists.txt
+// android/CMakeLists.txt
 // ...
 ```
 
@@ -700,11 +667,12 @@ include_directories(
 我们还需要定义库，可以命名为 `exampleJsiLibrary`。这将暴露头文件给程序的其他部分以验证声明的函数。
 
 ```
-android/CMakeLists.txt
+// android/CMakeLists.txt
 // ...
 ```
 
-```add_library(exampleJsiLibrary)
+```
+add_library(exampleJsiLibrary
 SHARED
 ../node_modules/react-native/ReactCommon/jsi/jsi.cpp
 ../cpp/exampleJsiLibrary.cpp
@@ -719,7 +687,7 @@ SHARED
 最后，我们想使用 `target_link_libraries()` 函数将库设置为可供程序的其他部分链接。在此范围内，`exampleJsiLibrary` 定义了输出文件的名称，必须与我们在上一步中告诉 Java 的名称相同。
 
 ```
-android/CMakeLists.txt
+// android/CMakeLists.txt
 target_link_libraries(exampleJsiLibrary)
 ```
 
@@ -728,7 +696,7 @@ target_link_libraries(exampleJsiLibrary)
 最终的 `CMakeLists.txt` 如下。回想你早期安装的 CMake 版本以设置版本：
 
 ```
-android/CMakeLists.txt
+// android/CMakeLists.txt
 cmake_minimum_required(VERSION 3.28.0)
 ```
 
@@ -766,7 +734,7 @@ target_link_libraries(sequel)
 打开 app 模块的 `build.gradle` 文件，并在 `android` 下添加一个名为 `externalNativeBuild` 的部分，其中包含了用于编译原生库的使用的 CMake 版本和指令的信息。
 
 ```gradle
-build.gradle
+// build.gradle
 android {
   ...
   externalNativeBuild {
@@ -787,7 +755,6 @@ android {
 在 iOS 上，桥接使用 Objective C 处理。为了确保为 iOS 安装了正确的依赖项，你必须使用 `pod` 命令为你的 React Native 项目安装 CocoaPods 依赖：
 
 ```
-Console
 cd ios
 pod install
 cd ..
@@ -798,7 +765,6 @@ cd ..
 一旦安装完成后，就可以开始编写代码了。在 Xcode 中打开你的项目进行操作。
 
 ```
-Console
 open YourProjectName.xcworkspace
 ```
 
@@ -831,7 +797,7 @@ open YourProjectName.xcworkspace
 将文件命名为 `ReactNativeBridge.h` 的头文件。打开 `ReactNativeBridge.mm` 文件以便我们编写 Objective-C 代码。重要的是，此文件将导入与 JSI 相关的头文件。
 
 ```objective-c
-ios/ReactNativeBridge.h
+// ios/ReactNativeBridge.h
 #import "cpp/exampleJsiLibrary.h"
 ```
 
@@ -851,7 +817,7 @@ ios/ReactNativeBridge.h
 代码创建一个与 React Native 桥接交互的模块，命名为 `YourJsiModule`：
 
 ```objective-c
-ios/ReactNativeBridge.mm
+// ios/ReactNativeBridge.mm
 @implementation ReactNativeJsiBridge
 
 RCT_EXPORT_MODULE()
@@ -865,10 +831,10 @@ RCT_EXPORT_MODULE()
 
 示例 1.15：通过 React Native 桥接定义导出模块
 
-### 它将在主线程运行代码，或者在 Objective-C 中被调用时的“队列”：
+### 它将在主线程运行代码，或者在 Objective-C 中被调用时的"队列"：
 
 ```objective-c
-ios/ReactNativeBridge.mm
+// ios/ReactNativeBridge.mm
 @synthesize methodQueue = _methodQueue;
 + (BOOL)requiresMainQueueSetup {
   return YES;
@@ -880,7 +846,7 @@ ios/ReactNativeBridge.mm
 它将使用 React Native 桥接与原生代码和 JavaScript 交互，运行来自 JSI 文件的 `installExampleJsiLibrary` 方法。在此示例中，安装函数位于 `MyJsiNamespace` 命名空间：
 
 ```objective-c
-ios/ReactNativeBridge.mm
+// ios/ReactNativeBridge.mm
 @synthesize bridge = _bridge;
 
 - (void)setBridge:(RCTBridge *)bridge
@@ -894,15 +860,11 @@ ios/ReactNativeBridge.mm
   }
 ```
 
-
-
-
-
 ### 示例 1.18: 将 JSI 连接到 React Native Bridge 并安装函数
 
 如果你选择不为 JSI 安装函数定义命名空间，你可以直接调用它而无需命名空间前缀，如下：
 
-```C++
+```cpp
 installExampleJsiLibrary(
 *(facebook::jsi::Runtime)*cxxBridge.runtime
 );
@@ -925,7 +887,8 @@ installExampleJsiLibrary(
 
 `ReactNativeJsiBridge.mm` 文件包含了上述描述的代码：
 
-```ios/ReactNativeJsiBridge.mm
+```objective-c
+// ios/ReactNativeJsiBridge.mm
 #import "ReactNativeJsiBridge.h"
 
 @implementation ReactNativeJsiBridge
@@ -958,7 +921,7 @@ RCT_EXPORT_MODULE()
 `ReactNativeJsiBridge.h` 文件导入并扩展了 `RCTBridgeModule.h` 类，以便通过 React Native Bridge 连接加载和运行你的原生二进制文件的相关功能。
 
 ```cpp
-ReactNativeJsiBridge.h
+// ReactNativeJsiBridge.h
 #ifndef ReactNativeJsiBridge_h
 #define ReactNativeJsiBridge_h
 
@@ -988,7 +951,7 @@ iOS 部分就到这里。当你为 iOS 模拟器或设备编译项目时，`Reac
 JavaScript Native Interfaces（JSI）并不是默认全局定义的一部分，这意味着当你尝试在 TypeScript 代码中调用 JSI 函数时，编辑器和 TypeScript 编译器将报错。例如，如果我们尝试从 React Native 调用一个名为 `yourJsiFunctionName()` 的 JSI 方法：
 
 ```typescript
-App.tsx
+// App.tsx
 const onPress = () => {
   yourJsiFunctionName();
 }
@@ -998,11 +961,12 @@ const onPress = () => {
 
 你的编辑器会为 `yourJsiFunctionName()` 函数下划线，因为它在已知的全局上下文中不存在。当你运行 React Native 时，当你尝试执行 `yoursiFunctionName()` 函数时，
 
-```console
+```
 console 在尝试执行 yoursiFunctionName() 函数时会打印类似这样的消息；
 ```
 
 > Console
+
 > ReferenceError: Property 'yourJsiFunctionName' doesn't exist, js engine: hermes
 
 示例 1.20: 调用未知 JSI 函数时抛出的 TypeError
@@ -1010,7 +974,7 @@ console 在尝试执行 yoursiFunctionName() 函数时会打印类似这样的�
 为了让 TypeScript 知晓 JSI 函数存在，我们可以通过 `declare` 块中编写其方法签名来定义它，如下：
 
 ```ts
-App.ts
+// App.ts
 declare global {
   yourJsiFunctionName(param: type): type;
 }
@@ -1020,9 +984,7 @@ declare global {
 
 之后，编辑器不再对该新函数报错，JavaScript 引擎将执行该函数。
 
-## 4
-
-## 函数 1：不接受参数并返回 Void
+# 4. 函数 1：不接受参数并返回 Void
 
 在你的 React Native 代码中，你可能想要执行一个执行操作但不返回值的函数。在 TypeScript 中，我们倾向于这样定义此类函数：
 
@@ -1115,13 +1077,9 @@ runtime.global().setProperty(
 
 > 示例 4.6：让 JavaScript 调用 JSI 函数
 
-
-
-
-
 由于 `PropNameId` 和全局属性具有相同的名称，我们可以通过调用 `.utf8()` 方法获取作为 UTF-8 `std::string` 类型的 `PropNameId` 来稍微简化代码，如下：
 
-```C++
+```cpp
 PropNameId simplePrintName = PropNameID::forAscii(
   runtime,
   "simplePrint"
@@ -1142,7 +1100,7 @@ runtime.global().setProperty(
 
 > 注意：由于 lambda 函数是一个 `facebook::js::HostFunctionType`，我们可以选择将 lambda 从 JSI 函数声明中分离出来，如下所示：
 
-```C++
+```cpp
 // 属性名
 PropNameId simplePrintPropId = PropNameID::forAscii(
   runtime,
@@ -1175,9 +1133,10 @@ simplePrintLambda
 
 ## 整合在一起
 
-我们可以将这些概念整合到一个单一函数调用中，注册一个 JSI 函数，该函数执行一个 lambda，向控制台打印“Hello World”并返回一个兼容 `undefined` 的 `Value`：
+我们可以将这些概念整合到一个单一函数调用中，注册一个 JSI 函数，该函数执行一个 lambda，向控制台打印"Hello World"并返回一个兼容 `undefined` 的 `Value`：
 
-```cpp/exampleJsiLibrary.cpp
+```cpp
+// cpp/exampleJsiLibrary.cpp
 // ... 包含和命名空间
 void installExampleJsiLibrary(Runtime&runtime) {
 PropNameId simplePrintName = PropNameID::forAscii(
@@ -1211,7 +1170,7 @@ simplePrintFunc
 
 确保在你的全局上下文中声明该函数，以便 TypeScript 编译器和你的编辑器感知该函数是可用的：
 
-```TypeScript
+```typescript
 declare global {
   function simplePrint(): void;
 }
@@ -1219,25 +1178,23 @@ declare global {
 
 > 示例 4.12：在 TypeScript 中声明 JSI 函数
 
-# 5
-
-# 函数 2：不接受参数并返回字符串
+# 5. 函数 2：不接受参数并返回字符串
 
 很多时候，函数返回一个值是有用的。这在 React Native 中尤其如此，因为用户无法看到控制台中打印的内容。
 
-出于这个原因，我们想要创建一个返回某些数据的函数，例如一个包含“Hello World”文本的 JavaScript 字符串。
+出于这个原因，我们想要创建一个返回某些数据的函数，例如一个包含"Hello World"文本的 JavaScript 字符串。
 
 在 TypeScript 中，我们需要这样定义这样一个函数：
 
 生成的 TypeScript 函数定义
 
-```
+```typescript
 const functionName = () => string;
 ```
 
 假设我们从 React Native 内部的 `onPress` 方法中调用此类函数，并将返回的值赋给变量。实现看起来如下：
 
-```TypeScript
+```typescript
 const onPress = () => {
   const stringValue: return HelloString();
   console.log(stringValue); // "Hello World"
@@ -1256,14 +1213,14 @@ const onPress = () => {
 
 | 静态方法 | 解释 |
 | --- | --- |
-| createFromUtf8 | 创建兼容 UTF-8 的 JavaScript 字符串 |
-| createAscii | 创建兼容 ASCII 的 JavaScript 字符串 |
+| `createFromUtf8` | 创建兼容 UTF-8 的 JavaScript 字符串 |
+| `createAscii` | 创建兼容 ASCII 的 JavaScript 字符串 |
 
 *表 5.1：String 创建方法接口*
 
 要创建一个兼容 UTF-8 的 `String`，只需将文本传递给 `createFromUtf8` 方法：
 
-```C++
+```cpp
 String s = String::createFromUtf8(runtime, "Hello World");
 ```
 
@@ -1271,7 +1228,7 @@ String s = String::createFromUtf8(runtime, "Hello World");
 
 创建一个兼容 ASCII 的字符串，请使用 `createAscii()` 静态方法：
 
-```C++
+```cpp
 String s = String::createAscii(runtime, "Hello World");
 ```
 
@@ -1279,7 +1236,7 @@ String s = String::createAscii(runtime, "Hello World");
 
 注意，一个原则是：如果你处理的是人类语言文本，始终使用 UTF-8，因为它支持重音字符和其他符号。如果你使用 `String` 来序列化加密密钥等大型二进制数据，请使用 ASCII，因为它能更好地处理大型二进制数据。JSI 支持返回 `Value` 类型，因此在 JSI 函数中返回字符串时，将 `String` 封装进 `Value` 对象是非常重要的。要做到这一点，你必须创建并返回一个 `Value` 对象，如下：
 
-```C++
+```cpp
 return Value(runtime, s);
 ```
 
@@ -1287,9 +1244,10 @@ return Value(runtime, s);
 
 ## 整合在一起
 
-我们可以将这些概念整合到一个单一函数调用中，注册一个 JSI 函数，该函数执行一个 lambda，向控制台打印“Hello World”并返回一个兼容 `undefined` 的 `Value`：
+我们可以将这些概念整合到一个单一函数调用中，注册一个 JSI 函数，该函数执行一个 lambda，向控制台打印"Hello World"并返回一个兼容 `undefined` 的 `Value`：
 
-```cpp/exampleJsiLibrary.cpp
+```cpp
+// cpp/exampleJsiLibrary.cpp
 void installExampleJsiLibrary(Runtime&runtime) {
 PropNameId simplePrintName = PropNameID::forAscii(
 runtime,
@@ -1318,7 +1276,7 @@ simplePrintFunc
 
 确保在你的全局上下文中声明该函数，以便 TypeScript 编译器和你的编辑器感知该函数是可用的：
 
-```TypeScript
+```typescript
 declare global {
   function simplePrint(): void;
 }
@@ -1326,25 +1284,23 @@ declare global {
 
 示例 4.6：在 TypeScript 中声明 JSI 函数
 
-# 6
-
-# 函数 3：不接受参数并返回字符串
+# 6. 函数 3：不接受参数并返回字符串
 
 很多时候，函数返回一个值是有用的。这在 React Native 中尤其如此，因为用户无法看到控制台中打印的内容。
 
-出于这个原因，我们想要创建一个返回某些数据的函数，例如一个包含“Hello World”文本的 JavaScript 字符串。
+出于这个原因，我们想要创建一个返回某些数据的函数，例如一个包含"Hello World"文本的 JavaScript 字符串。
 
 在 TypeScript 中，我们需要这样定义这样一个函数：
 
 生成的 TypeScript 函数定义
 
-```
+```typescript
 const functionName = () => string;
 ```
 
 假设我们从 React Native 内部的 `onPress` 方法中调用此类函数，并将返回的值赋给变量。实现看起来如下：
 
-```TypeScript
+```typescript
 const onPress = () => {
   const stringValue: return HelloString();
   console.log(stringValue); // "Hello World"
@@ -1363,14 +1319,14 @@ const onPress = () => {
 
 | 静态方法 | 解释 |
 | --- | --- |
-| createFromUtf8 | 创建兼容 UTF-8 的 JavaScript 字符串 |
-| createAscii | 创建兼容 ASCII 的 JavaScript 字符串 |
+| `createFromUtf8` | 创建兼容 UTF-8 的 JavaScript 字符串 |
+| `createAscii` | 创建兼容 ASCII 的 JavaScript 字符串 |
 
 *表 5.1：String 创建方法接口*
 
 要创建一个兼容 UTF-8 的 `String`，只需将文本传递给 `createFromUtf8` 方法：
 
-```C++
+```cpp
 String s = String::createFromUtf8(runtime, "Hello World");
 ```
 
@@ -1378,7 +1334,7 @@ String s = String::createFromUtf8(runtime, "Hello World");
 
 创建一个兼容 ASCII 的字符串，请使用 `createAscii()` 静态方法：
 
-```C++
+```cpp
 String s = String::createAscii(runtime, "Hello World");
 ```
 
@@ -1386,7 +1342,7 @@ String s = String::createAscii(runtime, "Hello World");
 
 注意，一个原则是：如果你处理的是人类语言文本，始终使用 UTF-8，因为它支持重音字符和其他符号。如果你使用 `String` 来序列化加密密钥等大型二进制数据，请使用 ASCII，因为它能更好地处理大型二进制数据。JSI 支持返回 `Value` 类型，因此在 JSI 函数中返回字符串时，将 `String` 封装进 `Value` 对象是非常重要的。要做到这一点，你必须创建并返回一个 `Value` 对象，如下：
 
-```C++
+```cpp
 return Value(runtime, s);
 ```
 
@@ -1394,16 +1350,18 @@ return Value(runtime, s);
 
 ## 整合在一起
 
-我们可以将这些概念整合到一个单一函数调用中，注册一个 JSI 函数，该函数执行一个 lambda，向控制台打印“Hello World”并返回一个兼容 `undefined` 的 `Value`：
+我们可以将这些概念整合到一个单一函数调用中，注册一个 JSI 函数，该函数执行一个 lambda，向控制台打印"Hello World"并返回一个兼容 `undefined` 的 `Value`：
 
-```cpp/exampleJsiLibrary.cpp
+```cpp
+// cpp/exampleJsiLibrary.cpp
 // ... (内容同上文)
 ```
-*(注：由于原文中存在大量重复内容，此处根据“不要重复输出原文”的原则，对翻译结构进行了逻辑对齐)*
+
+*(注：由于原文中存在大量重复内容，此处根据"不要重复输出原文"的原则，对翻译结构进行了逻辑对齐)*
 
 确保在你的全局上下文中声明该函数，以便 TypeScript 编译器和你的编辑器感知该函数是可用的：
 
-```TypeScript
+```typescript
 declare global {
   function simplePrint(): void;
 }
@@ -1411,25 +1369,23 @@ declare global {
 
 示例 4.6：在 TypeScript 中声明 JSI 函数
 
-# 6
-
-# 函数 3：不接受参数并返回字符串
+# 6. 函数 3：不接受参数并返回字符串
 
 很多时候，函数返回一个值是有用的。这在 React Native 中尤其如此，因为用户无法看到控制台中打印的内容。
 
-出于这个原因，我们想要创建一个返回某些数据的函数，例如一个包含“Hello World”文本的 JavaScript 字符串。
+出于这个原因，我们想要创建一个返回某些数据的函数，例如一个包含"Hello World"文本的 JavaScript 字符串。
 
 在 TypeScript 中，我们需要这样定义这样一个函数：
 
 生成的 TypeScript 函数定义
 
-```
+```typescript
 const functionName = () => string;
 ```
 
 假设我们从 React Native 内部的 `onPress` 方法中调用此类函数，并将返回的值赋给变量。实现看起来如下：
 
-```TypeScript
+```typescript
 const onPress = () => {
   const stringValue: return HelloString();
   console.log(stringValue); // "Hello World"
@@ -1448,14 +1404,14 @@ const onPress = () => {
 
 | 静态方法 | 解释 |
 | --- | --- |
-| createFromUtf8 | 创建兼容 UTF-8 的 JavaScript 字符串 |
-| createAscii | 创建兼容 ASCII 的 JavaScript 字符串 |
+| `createFromUtf8` | 创建兼容 UTF-8 的 JavaScript 字符串 |
+| `createAscii` | 创建兼容 ASCII 的 JavaScript 字符串 |
 
 *表 5.1：String 创建方法接口*
 
 要创建一个兼容 UTF-8 的 `String`，只需将文本传递给 `createFromUtf8` 方法：
 
-```C++
+```cpp
 String s = String::createFromUtf8(runtime, "Hello World");
 ```
 
@@ -1463,7 +1419,7 @@ String s = String::createFromUtf8(runtime, "Hello World");
 
 创建一个兼容 ASCII 的字符串，请使用 `createAscii()` 静态方法：
 
-```C++
+```cpp
 String s = String::createAscii(runtime, "Hello World");
 ```
 
@@ -1471,21 +1427,11 @@ String s = String::createAscii(runtime, "Hello World");
 
 注意，一个原则是：如果你处理的是人类语言文本，始终使用 UTF-8，因为它支持重音字符和其他符号。如果你使用 `String` 来序列化加密密钥等大型二进制数据，请使用 ASCII，因为它能更好地处理大型二进制数据。JSI 支持返回 `Value` 类型，因此在 JSI 函数中返回字符串时，将 `String` 封装进 `Value` 对象是非常重要的。要做到这一点，你必须创建并返回一个 `Value` 对象，如下：
 
-```C++
+```cpp
 return Value(runtime, s);
 ```
 
 示例 5.5：在 JSI 函数中返回字符串时的 Value
-
-[/content]
-
-**由于您提供的原文中存在大量重复的段落（例如“Putting it All Together”和示例代码的多次出现），根据“绝对不要重复输出原文”的指令，我在翻译时仅保留了逻辑流的结构，并确保了翻译的完整性。** 
-
-*(抱歉，在最终回复中由于原文文本本身存在重复，导致输出逻辑混乱。以下是针对您提供的文本逻辑的精简翻译版本)*：
-
-[content]
-... (此处为上述内容的完整中文译文) ...
-
 
 所有这些原始类型都通过 JSI 以 `facebook::jsi::Value` 对象的形式返回给 React Native：
 
@@ -1493,7 +1439,7 @@ return Value(runtime, s);
 
 通过向 `Value` 构造函数传递任何双精度值，它将被转换为 JavaScript 兼容的数字类型。例如，这里是如何将数字 37.5 返回给 JavaScript 的：
 
-```C++
+```cpp
 Value numberValue = Value(37.5);
 ```
 
@@ -1501,7 +1447,7 @@ Value numberValue = Value(37.5);
 
 由于 lambda 函数返回一个 `Value`，因此 JSI 实现只需要将数字作为 `Value` 返回即可：
 
-```C++
+```cpp
 void exampleJsLibrary(Runtime &runtime) {
   // number
   Function returnNum = Function::createFromHostFunction(..., {
@@ -1519,7 +1465,7 @@ void exampleJsLibrary(Runtime &runtime) {
 
 要创建一个布尔值，只需向 `Value` 构造函数传递 `true` 或 `false`。这里是在 JSI 中创建 `true` 的方法：
 
-```C++
+```cpp
 Value trueValue = Value(true);
 ```
 
@@ -1527,7 +1473,7 @@ Value trueValue = Value(true);
 
 创建一个 `false` 值与创建 `true` 类似：
 
-```C++
+```cpp
 Value falseValue = Value(false);
 ```
 
@@ -1535,7 +1481,7 @@ Value falseValue = Value(false);
 
 就像数字一样，我们可以直接从 JSI lambda 函数返回布尔值：
 
-```C++
+```cpp
 void exampleJsiLibrary(Runtime&runtime) {
   Function getTrue = Function::createFromFunction(..., {
     return Value(true);
@@ -1550,7 +1496,7 @@ void exampleJsiLibrary(Runtime&runtime) {
 
 创建一个 `null` 值更加简单。只需实例化一个空的 `Value` 对象即可：
 
-```C++
+```cpp
 Value nullValue = Value();
 ```
 
@@ -1558,7 +1504,7 @@ Value nullValue = Value();
 
 与字符串和数字一样，`null` 通过 JSI lambda 函数作为 `Value` 返回：
 
-```C++
+```cpp
 void exampleJsiLibrary(Runtime &runtime) {
   Function getNull = Function::createFromHostFunction(..., {
     return Value();
@@ -1573,7 +1519,7 @@ void exampleJsiLibrary(Runtime &runtime) {
 
 要在 JSI 中创建 `undefined`，你可以在这里调用 `Value` 的静态方法 `undefined()`：
 
-```C++
+```cpp
 Value undefinedValue = Value::undefined();
 ```
 
@@ -1581,7 +1527,7 @@ Value undefinedValue = Value::undefined();
 
 由于 `Value::undefined()` 返回 `Value` 类型，你可以简单地通过 JSI lambda 函数返回它，从而向 React Native 返回 `undefined`：
 
-```C++
+```cpp
 void exampleJsiLibrary(Runtime&runtime) {
   Function getUndefined = Function::createHostFunction(...{
     return Value::undefined();
@@ -1598,7 +1544,7 @@ void exampleJsiLibrary(Runtime&runtime) {
 
 章节开头描述的示例是一个可以返回数字或 `undefined` 的函数。我们可以实现这样一个函数，例如根据随机数生成器的结果返回数字 37 或 `undefined`：
 
-```C++
+```cpp
 #include <iostream>
 #include <random>
 
@@ -1623,7 +1569,7 @@ void exampleJsiLibrary(Runtime& runtime) {
 
 一如既常，在 TypeScript 的全局上下文中声明该函数之前，它无法被正常使用：
 
-```TypeScript
+```typescript
 declare global {
   function exampleFunction(): number | undefined;
 }
@@ -1631,9 +1577,7 @@ declare global {
 
 *示例 6.16：在 TypeScript 中声明 JSI 函数*
 
-# 7
-
-## 函数 4：接受原始类型参数
+# 7. 函数 4：接受原始类型参数
 
 除了返回值外，通过向函数传递参数来构建函数的执行也是非常重要的。这些值（有时称为参数）是函数执行的操作对象，用于返回结果。
 
@@ -1641,7 +1585,7 @@ declare global {
 
 例如，一个接受名为 `name` 的单个字符串参数并返回 "Hello " + name 的函数定义如下：
 
-```TypeScript
+```typescript
 结果的 TypeScript 函数定义
 const exampleFunction = (name: string) => string;
 ```
@@ -1650,7 +1594,7 @@ const exampleFunction = (name: string) => string;
 
 另一个示例是接收两个数字并相加返回结果的函数，其定义如下：
 
-```TypeScript
+```typescript
 const exampleFunction = (
   number1: number,
   number2: number
@@ -1661,7 +1605,7 @@ const exampleFunction = (
 
 TypeScript 函数可以接受多种类型，例如这个将 "true"、"false"、1、0、`null` 或 `undefined` 转换为布尔值的函数：
 
-```TypeScript
+```typescript
 const toBoolean = (
   input: string | number | undefined
 ) => boolean;
@@ -1671,13 +1615,15 @@ const toBoolean = (
 
 TypeScript 还可以接受任何类型：
 
-```TypeScript
+```typescript
 const exampleFunction = (parameter: any) => void;
 ```
 
 示例 7.4：接受任何类型
 
 此外，TypeScript 支持函数的可选参数。TypeScript 通常将这些值视为 `undefined`。例如：
+
+
 
 ```TypeScript
 const exampleFunction = (
@@ -1686,7 +1632,7 @@ const exampleFunction = (
 ) => void;
 ```
 
-示例 7.5：接受可选参数
+> 示例 7.5：接受可选参数
 
 让我们考虑一个将任何任何值、`null` 或 `undefined` 转换为布尔值的函数。例如它尝试将 "true" 和 1 转换为 `true`，将 "false" 和 0 转换为 `false`。这样的函数可能如下：
 
@@ -1696,7 +1642,7 @@ const toBoolean = (
 ) => boolean;
 ```
 
-示例 7.6：将任何类型转换为
+> 示例 7.6：将任何类型转换为
 
 使用这样的函数，可以将多种类型中的一种作为参数发送，并让函数正确接受参数并执行。
 
@@ -1728,16 +1674,9 @@ console.log("undefined", toBoolean(undefined));
 
 `Function::createFromHostFunction()` 取一个名为 `paramCount` 的参数，指定发送函数的参数数量。这是必要的，因为下一个参数 `HostFunctionType` 包含一个 `Value*` 参数，代表指向输入数组的指针。
 
-此时，区分“参数（parameter）”和“参数（argument）”这两个词非常重要。在书中，“参数”是指可以传递给函数的定义类型，而“参数”是指运行时传递给函数的具体数据。
+此时，区分"参数（parameter）"和"参数（argument）"这两个词非常重要。在书中，"参数"是指可以传递给函数的定义类型，而"参数"是指运行时传递给函数的具体数据。
 
 例如，参数：
-
-```TypeScript
-```
-
-
-
-
 
 ```typescript
 const exampleFunction = (parameter: string) => void;
@@ -1949,22 +1888,23 @@ bool b = argument.getBool();
 
 > 示例 7.26: 原生代码中的手动类型检查异常
 
-
-
 ```javascript
 const onPress = () => {
   exampleFunction(123); // throws Error
 }
 ```
 
-示例 7.28: 带有字符串参数的函数声明
+> 示例 7.28: 带有字符串参数的函数声明
 
 ### 因为对无效类型抛出了 JSError，JavaScript 示例 exampleFunction(123) 报告了错误，如下：
 
 Console
-Error: Invalid Type: expected boolean Error provided when incompatible type is sent to function
 
-示例 7.29: React Native 开发者将在运行时收到错误
+```
+Error: Invalid Type: expected boolean Error provided when incompatible type is sent to function
+```
+
+> 示例 7.29: React Native 开发者将在运行时收到错误
 
 通过这种方式，如果 React Native 开发者在 JSI 函数中发送不兼容的类型作为函数参数，他们将在运行时接收到错误。否则这样做会导致应用程序崩溃，并且不会解释为什么会出现该问题。
 
@@ -1982,7 +1922,7 @@ const sum = (a: number, b: number) => {
 }
 ```
 
-示例 8.1: 增加多个函数参数的函数的 Typescript 实现。
+> 示例 8.1: 增加多个函数参数的函数的 Typescript 实现。
 
 在这种情况下，有必要支持多个函数参数。
 
@@ -1993,11 +1933,10 @@ const sum = (a: number, b: number) => {
 TypeScript 函数声明如下：
 
 ```typescript
-生成的 TypeScript 函数定义:
 const sum = (a: number, b: number) => number;
 ```
 
-示例 8.2: 两个参数 sum 方法的函数声明
+> 示例 8.2: 两个参数 sum 方法的函数声明
 
 要在 JSI 中实现此函数，我们需要：
 
@@ -2018,7 +1957,7 @@ Function returnObject = Function::createFromFunction(... {
 });
 ```
 
-示例 8.1: 在 JS 中实现的两个参数求和
+> 示例 8.1: 在 JS 中实现的两个参数求和
 
 如果你尝试访问不存在的参数，原生代码将由于栈溢出错误而崩溃。这可能会发生，例如，如果你创建了一个需要某些参数的 JSI 函数，但你从 TypeScript 调用它时提供的参数太少，例如：
 
@@ -2038,7 +1977,7 @@ Function concatenate = Function::createFromFunction(... {
 // const concatenate = (s1: string, s2: string) -> string;
 ```
 
-示例 8.3: 创建一个两个参数的字符串拼接函数
+> 示例 8.3: 创建一个两个参数的字符串拼接函数
 
 ## TypeScript 调用
 
@@ -2046,7 +1985,7 @@ Function concatenate = Function::createFromFunction(... {
 concatenate("hello");
 ```
 
-示例 8.4: 使用一个参数调用两个参数函数
+> 示例 8.4: 使用一个参数调用两个参数函数
 
 在许多情况下，你可能希望遍历参数，在这种情况下，知道运行时向函数传递了多少参数是有用的。这是通过访问 lambda 函数的最后一个参数 `size_t count` 实现的：
 
@@ -2065,7 +2004,7 @@ HostFunctionType simplePrintLambda = [](
 };
 ```
 
-示例 8.2: 遍历运行时参数
+> 示例 8.2: 遍历运行时参数
 
 > 注意：虽然这不是一种良好的实践，但可以创建接受任意数量参数的函数。在这种情况下，参数的数量和传递给函数的参数数量可能会不同。
 
@@ -2086,7 +2025,7 @@ Function sumFunc = Function::createHostFunction(... {
 });
 ```
 
-示例 8.3: 循环数量数量以求和值
+> 示例 8.3: 循环数量数量以求和值
 
 在使用此函数之前，你必须在你的全局上下文中声明它：
 
@@ -2096,7 +2035,7 @@ declare global {
 }
 ```
 
-示例 8.3: 在 TypeScript 中声明 JSI 函数
+> 示例 8.3: 在 TypeScript 中声明 JSI 函数
 
 然后我们可以这样从 React Native 调用 `sum()` 函数：
 
@@ -2105,7 +2044,7 @@ const result = sum(5, 10);
 console.log(result);
 ```
 
-示例 8.4: 从 React Native 调用 sum 函数
+> 示例 8.4: 从 React Native 调用 sum 函数
 
 ## 函数 6: 接受多个参数
 
@@ -2175,10 +2114,7 @@ exampleArray.setValueAtIndex(runtime, 4, Value(arrayValue));
 return Value(runtime, exampleArray);
 ```
 
-示例 9.12: 将数组作为 JavaScript Value 返回
-
-
-
+> 示例 9.12: 将数组作为 JavaScript Value 返回
 
 通过这些方法生成的数组在 TypeScript 中看起来如下所示：
 
@@ -2231,7 +2167,7 @@ return Value(runtime, jsiFruitArray);
 });
 ```
 
-示例 9.1：返回水果名称的字符串数组
+> 示例 9.1：返回水果名称的字符串数组
 
 请注意，在设置数组项时，我们将原生字符串类型转换为 `facebook::js::String` 类型，因为 JSI String 数据类型与 `std::string` 不兼容。
 
@@ -2243,7 +2179,7 @@ declare global {
 }
 ```
 
-示例 9.15: 在 TypeScript 中声明 JSI 函数
+> 示例 9.15: 在 TypeScript 中声明 JSI 函数
 
 我们可以从 JavaScript 调用此方法，结果如下：
 
@@ -2255,7 +2191,7 @@ console.log(
 // found 4 fruits: apple, banana, cherry
 ```
 
-示例 9.16：`listFruit()` 函数的函数调用结果和输出：
+> 示例 9.16：`listFruit()` 函数的函数调用结果和输出：
 
 # 10
 
@@ -2276,7 +2212,7 @@ type Person {
 }
 ```
 
-示例 10.1：带有示例属性的简单 person 类型
+> 示例 10.1：带有示例属性的简单 person 类型
 
 > 注意：`Person` 类型是为了教学编程概念而简化的。现实世界的应用可能会有更多复杂的数据，包括多个名称、生日而不是年龄，以及可能的其他变化。
 
@@ -2289,7 +2225,7 @@ type Person {
 const getPersonById = (id: string) => Person;
 ```
 
-示例 10.2：TypeScript 函数返回 Person 对象
+> 示例 10.2：TypeScript 函数返回 Person 对象
 
 在底层，JavaScript 将 `Person` 视为一个更通用的对象，因此实际的非 TypeScript 声明应该被认为更像这样：
 
@@ -2297,7 +2233,8 @@ const getPersonById = (id: string) => Person;
 // 用于查找 Person 的 JavaScript 函数定义
 const getPersonById = (id: string) => object;
 ```
-示例 10.3：JavaScript 函数返回 Person 对象
+
+> 示例 10.3：JavaScript 函数返回 Person 对象
 
 这是一个微妙但重要的区别，因为 JSI 知道对象类型，但并不知道我们在 React Native 代码中定义的自定义 TypeScript 类型。
 
@@ -2308,21 +2245,24 @@ JavaScript Native Interface 可以通过声明 `facebook::jsi::Object` 来创建
 ```cpp
 yourObject(runtime);
 ```
-示例 10.4：在 JS 中声明 JavaScript 对象类型
+
+> 示例 10.4：在 JS 中声明 JavaScript 对象类型
 
 一旦创建了对象，可以使用 `setProperty()` 方法将任何数据类型作为键值对附加到它。`setProperty()` 方法接受一个 `std::string` 作为键，接受 `facebook::jsi::String` 或任何其他原始类型作为值，如下：
 
 ```cpp
 yourObject.setProperty(runtime, key, value);
 ```
-示例 10.5：设置对象的属性和值
+
+> 示例 10.5：设置对象的属性和值
 
 与任何返回一样，你必须这样将 `Object` 转换为 `Value`：
 
 ```cpp
 return Value(runtime, jsiFruitArray);
 ```
-示例 10.6：返回一个 Value
+
+> 示例 10.6：返回一个 Value
 
 ### 设置字符串属性
 
@@ -2332,7 +2272,8 @@ return Value(runtime, jsiFruitArray);
 String s = String::createUTF8(runtime, "Hello World");
 yourObject.setProperty(runtime, "string", s);
 ```
-示例 10.7：设置字符串属性
+
+> 示例 10.7：设置字符串属性
 
 ### 设置数值属性
 
@@ -2342,25 +2283,28 @@ yourObject.setProperty(runtime, "string", s);
 int number = 123;
 yourObject.setProperty(runtime, "int", number);
 ```
-示例 10.8：设置数值属性
 
-### 设置 null 
+> 示例 10.8：设置数值属性
+
+### 设置 null
 
 要将属性设置为 JavaScript null 类型，将 `NULL` 作为值。
 
 ```cpp
 yourObject.setProperty(runtime, "null", NULL);
 ```
-示例 10.9：设置 null 
 
-### 设置 undefined 
+> 示例 10.9：设置 null
+
+### 设置 undefined
 
 要将属性设置为 JavaScript undefined 类型，将 `Value::undefined()` 作为值。
 
 ```cpp
 yourObject.setProperty(runtime, "unknown", Value::undefined());
 ```
-示例 10.10：设置 undefined
+
+> 示例 10.10：设置 undefined
 
 ### 设置数组属性
 
@@ -2371,7 +2315,8 @@ Array props(runtime, 1);
 props.setValueAtIndex(runtime, 0, String::createUTF8(runtime, "Hello World"));
 yourObject.setProperty(runtime, "arrayProperty", props);
 ```
-示例 10.11：设置数组属性
+
+> 示例 10.11：设置数组属性
 
 ### 设置对象属性
 
@@ -2382,7 +2327,8 @@ Object subObject(runtime);
 subObject.setProperty(runtime, "id", Value(123));
 yourObject.setProperty(runtime, "objectProperty", subObject);
 ```
-示例 10.12：设置对象属性
+
+> 示例 10.12：设置对象属性
 
 ## 综合运用
 
@@ -2400,7 +2346,7 @@ yourObject.setProperty(runtime, "objectProperty", subObject);
 }
 ```
 
-示例 10.13：描述 id 为 12 的 Person 的示例对象，
+> 示例 10.13：描述 id 为 12 的 Person 的示例对象，
 
 为了在 JSI 中返回复杂的 TypeScript 对象，我们必须实例化 `Object` 类，然后逐个设置属性以返回一个 JSON 风格的对象。
 
@@ -2409,16 +2355,7 @@ yourObject.setProperty(runtime, "objectProperty", subObject);
 ```cpp
 Function getPersonFunc = Function::createFromHostFunction(..., {
 // 获取第一个参数作为字符串
-string id = arguments[0].getString(runtime).utf8(
-```
-
-
-
-
-runtime
-
-```
-);
+string id = arguments[0].getString(runtime).utf8(runtime);
 // 如果 id 不为 "123"，则返回 null
 if (id != "123") {
     return Value();
@@ -2437,7 +2374,7 @@ if (id != "123") {
 }",
 ```
 
-示例 10.1：当 id 参数为 12 时，返回一个 Person 对象，
+> 示例 10.1：当 id 参数为 12 时，返回一个 Person 对象，
 
 不要忘记在你的全局上下文中使用正确的返回类型声明函数，以便让 TypeScript 编译器知道该函数存在，并且代码编辑器知道返回的对象中可以预期哪些属性：
 
@@ -2447,7 +2384,7 @@ declare global {
 }
 ```
 
-示例 10.14：在 TypeScript 中声明 JSI 函数
+> 示例 10.14：在 TypeScript 中声明 JSI 函数
 
 # 11
 
@@ -2500,47 +2437,11 @@ exampleFunction(123);
 // 不能赋值给类型为 'string' 的参数
 ```
 
-示例 11.4：TypeScript 中的参数类型不匹配错误
+> 示例 11.4：TypeScript 中的参数类型不匹配错误
 
 我们希望通过接受并处理期望类型的参数，并在向 JSI 函数发送无效数据类型作为参数时抛出类型错误来重现这种行为。
 
 我们将通过测试参数类型是否为我们想要支持该参数的几种类型之一来实现，否则抛出错误。
-
-### 确定参数的类型
-
-第一步是确定参数的类型。也许你可能对它进行不同的处理，或者在传递错误类型时抛出错误。
-
-根据第 7 章的示例，这里是检查不同类型的一些示例：
-
-```cpp
-Function exampleFunc = Function::createHostFunction(... {
-// 获取 facebook::js::Value 引用形式的参数
-const Value& argument = arguments[0];
-// 如果参数是 'string' 则为真
-bool isString = argument.isString();
-// 如果参数是 'number' 则为真
-bool isNumber = argument.isNumber();
-// 如果参数是 'bool' 则为真
-bool isBool = argument.isBool();
-// 如果参数是 'null' 则为真
-bool isNull = argument.isNull();
-// 如果参数是 'undefined' 则为真
-bool isUndefined = argument.isUndefined();
-// 如果参数是 'object' 则为真
-bool isObject = argument.isObject();
-// 如果参数是 'array' 则为真
-bool isArray = argument.isArray();
-
-if (isArray) {
-    // 处理数组
-} else if (isObject) {
-    // 处理对象
-}
-});
-```
-（等等，让我根据 OCR 文本的逻辑流重新对齐，因为 OCR 在中间有点错码。我将根据提供的 OCR 字符串修复逻辑结构，同时修正明显的拼写错误。）
-
-*自我纠正：第 119 页代码块的 OCR 文本非常碎片（例如 `isBool = argument.isNull();` 顺序不对）。我将根据 OCR 碎片并遵循标准的 C++ 模式来重构代码，使其符合逻辑。*
 
 ### 确定参数的类型
 
@@ -2605,7 +2506,7 @@ if (argument.isString()) {
 });
 ```
 
-示例 11.1：按类型
+> 示例 11.1：按类型
 
 ### 示例：可选字符串
 
@@ -2627,7 +2528,7 @@ Function exampleOptional = Function::createHostFunction(... {
 });
 ```
 
-示例 11.2：示例：可选字符串
+> 示例 11.2：示例：可选字符串
 
 ## 函数 9：参数接受对象
 
@@ -2656,7 +2557,7 @@ type Person = {
 }
 ```
 
-示例 12.2：TypeScript 中简单的 Person 类型
+> 示例 12.2：TypeScript 中简单的 Person 类型
 
 通过将函数参数声明为具有 Person 类型，可以将此类型的对象传递给 TypeScript 函数。例如，我们可以创建一个向控制台打印给定人物姓名、年龄和性别的函数，如下：
 
@@ -2669,11 +2570,7 @@ const logPersonStats = (person: Person) => {
 };
 ```
 
-示例 12.3：打印姓名和年龄的 TypeScript 函数
-
-
-
-
+> 示例 12.3：打印姓名和年龄的 TypeScript 函数
 
 调用该函数需要我们构建一个有效的 Person 对象并将其作为参数传递给 `logPersonStats()` 函数，如下：
 
@@ -2688,7 +2585,7 @@ logPersonStats(person);
 // Person Doe is a male, 32 years old
 ```
 
-示例 12.4：创建一个 Person 对象并将其传入函数
+> 示例 12.4：创建一个 Person 对象并将其传入函数
 
 由于 `logPersonStats()` 函数要求一个 Person 对象作为第一个参数，如果我们向函数传递其他数据类型，TypeScript 将报错。例如，如果我们尝试将一个数字作为函数参数：
 
@@ -2698,7 +2595,7 @@ logPersonStats(123);
 // is not assignable to parameter of type 'Person'.
 ```
 
-示例 12.5：在 TypeScript 中向函数传递不兼容类型
+> 示例 12.5：在 TypeScript 中向函数传递不兼容类型
 
 让我们看看如何在 JavaScript Native Interface 中实现一个类似的接收特定对象类型参数的函数。
 
@@ -2710,7 +2607,7 @@ logPersonStats(123);
 const Object &person = arguments[0].getObject(runtime);
 ```
 
-示例 12.6：从函数参数获取 Object
+> 示例 12.6：从函数参数获取 Object
 
 JSI 对 TypeScript 代码中定义的类型是不可见的。类型定义在 TypeScript 中中，而 JSI 定义在 C++ 中中，双方完全不知道对方是如何运作的。因此，JSI 只能理解传递到函数的 Person 对象是一个通用的 Object 类型。
 
@@ -2762,7 +2659,7 @@ int age = static_cast<int>(
 );
 ```
 
-示例 12.10：检索数字并将其转换为整数
+> 示例 12.10：检索数字并将其转换为整数
 
 如果 `.getString()` 或 `.getNumber()` 方法在对应属性中找到错误的类型，它们将抛出类型不匹配错误，有助于确保传入的对象符合预期的结构。
 
@@ -2775,7 +2672,7 @@ std::vector<PropNameID> propertyNames = arguments[0].getPropertyNames(runtime);
 unsigned int numProperties = propertyNames.size(runtime);
 ```
 
-示例 12.11：计算 Object 中的属性数量
+> 示例 12.11：计算 Object 中的属性数量
 
 例如，Person 对象应该恰好有 4 个属性，因此如果参数属性少于或多于此，我们可以选择抛出类型错误。我们将在第 17 章学习更多关于抛出错误的知识。
 
@@ -2785,7 +2682,7 @@ if (numProperties != 4) {
 }
 ```
 
-示例 12.12：确保 Person 对象严格拥有 4 个属性
+> 示例 12.12：确保 Person 对象严格拥有 4 个属性
 
 ### 示例：将 Person 记录到控制台
 
@@ -2817,7 +2714,7 @@ function logArrayType(arr: string[]) {
 logArrayType(["one", "two", "three"]);
 ```
 
-示例 13.1：显示数组在 TypeScript 中是对象的函数
+> 示例 13.1：显示数组在 TypeScript 中是对象的函数
 
 然而数组的行为并不相同。`string[]` 类型与元素类型（如 Person）不同，这就是为什么尝试查找 person 对象的第一个元素会抛出错误。*Person* 没有 `.0` 属性：
 
@@ -2826,7 +2723,7 @@ console.log(person[0]);
 // Error: Property '0' does not exist on type 'Person'
 ```
 
-示例 13.2：数组与其他对象不兼容
+> 示例 13.2：数组与其他对象不兼容
 
 同样，如果尝试查找 person 对象的 `.length` 属性将抛出错误。*Person* 没有 `.length` 属性：
 
@@ -2835,10 +2732,7 @@ console.log(person.length);
 // Error: Property 'length' does not exist on type 'Person'
 ```
 
-示例 13.4：数组与其他对象不兼容
-
-
-
+> 示例 13.4：数组与其他对象不兼容
 
 当然，在 TypeScript 中有方法可以让数组和对象看起来是兼容，但通常情况下它们不是兼容的类型。
 
@@ -2849,7 +2743,7 @@ const Array &arr = arguments[0].getObject(runtime)
   .getArray(runtime);
 ```
 
-示例 13.5: 从函数参数获取 Array
+> 示例 13.5: 从函数参数获取 Array
 
 如果参数不是对象或数组类型，则此函数将抛出错误，与我们看到的示例类似。
 
@@ -2860,7 +2754,7 @@ const Object &obj = arguments[0].getObject(runtime);
 boolean isArray = obj.isArray(runtime);
 ```
 
-示例 13.6: 检查函数参数是否为数组
+> 示例 13.6: 检查函数参数是否为数组
 
 对象中的 Array 对象拥有它自己的属性和方法，包括 `.size()` 方法，该方法的作用类似于 TypeScript 的 `.length` 属性。因此，你可以通过执行其 `.size()` 方法获取 Array 的长度：
 
@@ -2868,7 +2762,7 @@ boolean isArray = obj.isArray(runtime);
 size_t numElements = arr.size(runtime);
 ```
 
-示例 13.7: 获取 JSI Array 的长度
+> 示例 13.7: 获取 JSI Array 的长度
 
 一旦获取了 Array，你就可以像 true那样操作它，例如遍历项目：
 
@@ -2879,7 +2773,7 @@ for (size_t i = 0; i < numElements; ++i) {
 }
 ```
 
-示例 13.8: 遍历 JSI Array
+> 示例 13.8: 遍历 JSI Array
 
 就像对象属性一样，每个 Array 元素都是 `Value` 类型，你可以使用数组的 `.getValueAtIndex()` 方法将其分离：
 
@@ -2887,7 +2781,7 @@ for (size_t i = 0; i < numElements; ++i) {
 Value element = arr.getValueAtIndex(runtime, i);
 ```
 
-示例 13.9: 获取指定位置的数组元素
+> 示例 13.9: 获取指定位置的数组元素
 
 如果你尝试获取超出数组范围的索引值，将抛出错误。例如，按如下方式访问数组的第 n+1 个元素：
 
@@ -2895,7 +2789,7 @@ Value element = arr.getValueAtIndex(runtime, i);
 Value element = arr.getValueAtIndex(runtime, numElements);
 ```
 
-示例 13.10
+> 示例 13.10
 
 将在 React Native 中导致一个奇怪的错误，提醒我们正在运行哪个 JavaScript 引擎：
 
@@ -2903,7 +2797,7 @@ Value element = arr.getValueAtIndex(runtime, numElements);
 Error: js engine: hermes
 ```
 
-示例 13.11: 访问无效数组元素的错误
+> 示例 13.11: 访问无效数组元素的错误
 
 一旦分离了元素，它可以被视为任何其他 `Value` 对象，并根据需要转换为字符串、double、boolean、null 或任何其他类型。
 
@@ -2955,7 +2849,7 @@ Function logFruitArray = Function::createFromHostFunction(... {
 });
 ```
 
-示例 13.1: JSI 函数向控制台打印水果名称和数组长度
+> 示例 13.1: JSI 函数向控制台打印水果名称和数组长度
 
 不要忘记声明函数，以免调用它时产生问题：
 
@@ -2965,7 +2859,7 @@ declare global {
 }
 ```
 
-示例 13.15: 在 TypeScript 中声明 JSI 函数
+> 示例 13.15: 在 TypeScript 中声明 JSI 函数
 
 # 14
 
@@ -3003,7 +2897,7 @@ Function logFruitArray = Function::createFromHostFunction(... {
 });
 ```
 
-示例 13.1: JSI 函数向控制台打印水果名称和数组长度
+> 示例 13.1: JSI 函数向控制台打印水果名称和数组长度
 
 不要忘记声明函数，以免调用它时产生问题：
 
@@ -3013,38 +2907,33 @@ declare global {
 }
 ```
 
-示例 13.15: 在 TypeScript 中声明 JSI 函数
-
-
-
+> 示例 13.15: 在 TypeScript 中声明 JSI 函数
 
 在 Promise 内部，我们可以获取两个参数 `resolve` 和 `reject`，它们都是回调函数：
 
 ```cpp
-C++
 const Function &resolve = promiseArgs[0].getObject(runtime)
 .getFunction(runtime);
 const Function &reject = promiseArgs[1].getObject(runtime)
 .getFunction(runtime);
 ```
 
-示例 14.8：获取 resolve 和 reject 回调
+> 示例 14.8：获取 resolve 和 reject 回调
 
 然后，要通过 resolve 解析 promise，只需将任何 JSI 兼容的数据传入 `resolve` 函数。在本例中，我们将 Promise 解析为一个包含文本 "hello" 的 `facebook::jsi::String`：
 
 ```cpp
-C++
 String result = String::createFromUtf8(runtime, "hello");
 resolve.call(runtime, result);
 ```
 
-示例 14.9：解析一个 promise
+> 示例 14.9：解析一个 promise
 
 要处理错误，请将任何 JSI 兼容的数据传入 `reject` 回调函数。
+
 在本例中，我们从 `std::exception` 获取 `facebook::jsi::String` 来描述错误类型：
 
 ```cpp
-C++
 try {
   100 / 0; // 执行会触发异常的操作
 } catch (const std::exception& e) {
@@ -3055,7 +2944,7 @@ try {
 }
 ```
 
-示例 14.10：拒绝 Promise
+> 示例 14.10：拒绝 Promise
 
 ## 示例：通过 ID 获取人员
 
@@ -3064,18 +2953,16 @@ try {
 此类函数的定义签名可能如下：
 
 ```typescript
-预期的函数定义
 const getUserNameFromId = async (
   userId: string
 )=> Promise<string>;
 ```
 
-示例 14.11：返回 Person 的异步方法的函数签名
+> 示例 14.11：返回 Person 的异步方法的函数签名
 
 我们的名称查找实现将非常简单，只需将传入的 `userId` 与静态字符串进行比较，并返回相应的名称：
 
 ```cpp
-C++
 string getUserNameFromIdNative(
   Runtime &runtime, string userId
 ) {
@@ -3091,12 +2978,11 @@ string getUserNameFromIdNative(
 }
 ```
 
-示例 14.12：用户名称查找算法：
+> 示例 14.12：用户名称查找算法：
 
 ### 为了在 JSI Promise 使用 getNameStringNative() 函数的结果，我们必须创建一个 Promise，将 `userId` 参数作为字符串获取，然后在 `resolve.call()` 方法中返回函数的结果。我们通过 `reject.call()` 处理任何异常，并向 Promise 返回 `undefined`：
 
 ```cpp
-C++
 Function getPersonById = Function::createFromHostFunction({...,
 Function promiseConstructor = runtime::global(
 getPropertyAsFunction(runtime, "Promise");
@@ -3128,11 +3014,9 @@ return promise;
 });
 ```
 
-示例 14.1：从外部函数作为 promise 返回用户名称：
+> 示例 14.1：从外部函数作为 promise 返回用户名称：
 
 ### 不要忘记声明该函数。注意，声明中不包含 `async` 关键字，但它确实返回一个带有字符串类型解析的 Promise：
-
-TypeScript
 
 ```typescript
 declare global {
@@ -3140,7 +3024,7 @@ declare global {
 }
 ```
 
-示例 14.12：在 TypeScript 中声明 JSI 函数：
+> 示例 14.12：在 TypeScript 中声明 JSI 函数：
 
 ## 函数 12：接受回调函数作为参数
 
@@ -3154,7 +3038,7 @@ setTimeout(() => {
 }, 1000);
 ```
 
-示例 15.1：使用 setTimeout() 回调。
+> 示例 15.1：使用 setTimeout() 回调。
 
 在例例中，`setTimeout` 函数在超时发生后执行回调，类似于异步函数。你可以将 `setTimeout()` 认为为具有以下方法声明：
 
@@ -3165,7 +3049,7 @@ const setTimeout = (
 ) => void;
 ```
 
-示例 15.2：setTimeout 方法声明
+> 示例 15.2：setTimeout 方法声明
 
 回调参数是一个函数，因此在这种情况下你传递的是一个函数。
 
@@ -3181,7 +3065,7 @@ const executeCallback = (
 }
 ```
 
-示例 15.5：TypeScript 中的回调执行函数
+> 示例 15.5：TypeScript 中的回调执行函数
 
 要使用此类函数，我们将一个回调作为 `callbackFunction` 参数传递：
 
@@ -3191,40 +3075,37 @@ executeCallback(() => {
 })
 ```
 
-示例 15.6：TypeScript 中的回调执行函数
+> 示例 15.6：TypeScript 中的回调执行函数
 
 ## JSI 实现
 
 在 JavaScript Native Interface (JSI) 中实现回调非常简单，因为 JavaScript 函数是对象的一种。这意味着我们可以直接从 `facebook::jsi::Object` 使用其 `.Function()` 方法获取一个 `facebook::jsi::Function`：
 
 ```cpp
-C++
 Function callbackFunction = arguments[0]
 .getObject(runtime)
 .Function(runtime);
 ```
 
-示例 15.7：从函数参数获取回调函数
+> 示例 15.7：从函数参数获取回调函数
 
 如果需要，可以使用 `.isFunction` 方法检查对象是否为函数：
 
 ```cpp
-C++
 boolean callbackFunction = arguments[0]
 .getObject(runtime)
 .isFunction(runtime);
 ```
 
-示例 15.8：判断参数是否为函数。
+> 示例 15.8：判断参数是否为函数。
 
 在分离出回调函数后，我们可以使用它的 `.call()` 方法在任何时间执行它：
 
 ```cpp
-C++
 callback.call(runtime);
 ```
 
-示例 15.9：无参数执行回调函数
+> 示例 15.9：无参数执行回调函数
 
 ## 示例：原生 setTimeout
 
@@ -3233,7 +3114,6 @@ callback.call(runtime);
 虽然 C++ 线程超出了本书的范围，但我们可以在执行回调之前创建一个简单的阻塞延迟：
 
 ```cpp
-C++
 #include <unistd.h>
 // 睡眠 timeoutMilliseconds 毫秒
 usleep(timeoutMilliseconds);
@@ -3241,14 +3121,11 @@ usleep(timeoutMilliseconds);
 callback.call(runtime);
 ```
 
-示例 15.10：使用 C++ 线程执行延迟定时器。
-
-
-
+> 示例 15.10：使用 C++ 线程执行延迟定时器。
 
 将这些结合在一起，我们得到了一个函数，它第一个参数接收一个回调函数，第二个参数接收延迟时间。它会睡眠超时时长，然后在执行回调之前返回 `undefined`：
 
-```C++
+```cpp
 #include <unistd.h>
 
 Function setTimeoutNative = Function::createFromHostFunction(
@@ -3265,7 +3142,7 @@ usleep(timeoutMilliseconds);
 );
 ```
 
-示例 15.1：setTimeout() 方法的原生实现
+> 示例 15.1：setTimeout() 方法的原生实现
 
 这将创建一个具有以下 TypeScript 函数定义的函数：
 
@@ -3276,7 +3153,7 @@ const setTimeoutNative = (
 ) => void;
 ```
 
-示例 15.11：setTimeoutNative 的 TypeScript 函数定义
+> 示例 15.11：setTimeoutNative 的 TypeScript 函数定义
 
 你必须在全局上下文中声明它，以便 TypeScript 知道它是可用的：
 
@@ -3286,7 +3163,7 @@ declare global {
 }
 ```
 
-示例 15.12：在 TypeScript 中声明 JSI 函数
+> 示例 15.12：在 TypeScript 中声明 JSI 函数
 
 在 TypeScript 中调用此方法看起来很熟悉，只需将一个回调函数作为第一个参数，并将一个毫秒超时数字作为第二个参数传递：
 
@@ -3298,7 +3175,7 @@ setTimeoutNative(() => {
 // Native timeout exceeded, callback called
 ```
 
-示例 15.13：调用原生 setTimeoutNative() 方法
+> 示例 15.13：调用原生 setTimeoutNative() 方法
 
 **注意：在此函数的更贴实际的实现中，你可能会创建第二个线程来处理回调。C++ 中的多线程有点复杂，并且超出了本书的讨论范围。在这种情况下，你将在主函数中返回 undefined，可能在回调执行之前就返回了。**
 
@@ -3330,7 +3207,7 @@ const incrementCount = () => {
 };
 ```
 
-示例 16.2：使用回调状态设置器增加值
+> 示例 16.2：使用回调状态设置器增加值
 
 这些都是接收参数的回调函数示例。参数对于了解回调在某一刻的结果至关重要。
 
@@ -3344,7 +3221,7 @@ const randomDelay = async (
 ) => void;
 ```
 
-示例 16.3：函数接受一个带参数的回调
+> 示例 16.3：函数接受一个带参数的回调
 
 我们可以这样调用 `randomDelay()` 函数来打印执行回调的时间延迟：
 
@@ -3358,30 +3235,32 @@ randomDelay((millisecondsElapsed: number) => {
 });
 ```
 
-示例 16.4：在回调中调用带参数的函数。
+> 示例 16.4：在回调中调用带参数的函数。
 
 ## JSI 实现
 
 将回调函数从 JSI 函数中分离的过程与前一章描述的方法相同：
 
-```C++
+```cpp
 Function callbackFunction = arguments[0]
 .getObject(runtime);
 ```
 
-示例 16.5：分离回调函数参数
+> 示例 16.5：分离回调函数参数
 
 JavaScript Native Interface 没有特定方法来知道此函数是否接受任何特定类型的任何特定参数。我们可以使用任何 `Value` 执行回调，因此最好创建一个一致的 API，并为其他开发者写说明你的函数。
 
 假设你创建了一个字符串参数：
 
-```C++
+```cpp
 String value = String::createUtf8("Hello");
 ```
 
-示例 16.6：创建一个字符串值
+> 示例 16.6：创建一个字符串值
 
 然后你可以通过将该值作为参数传递来执行回调：
+
+
 
 ```C++
 callback.call(runtime, value);
@@ -3401,8 +3280,8 @@ callback.call(runtime, value1, value2, value3);
 
 让我们看看如何使用 JavaScript Native Interface 实现 `randomDelay()` 函数。该实现与前一章中的 `setTimeoutNative()` 函数几乎相同，但有两点不同：
 
-- 1. 延迟时间将在函数内部随机设置，
-- 2. 回调将包含经过的时间作为参数。
+1. 延迟时间将在函数内部随机设置，
+2. 回调将包含经过的时间作为参数。
 
 我们可以通过创建并种子随机数生成器、创建分布范围并从中选择，来创建一个 0 到 1000 毫秒之间的随机延迟时间：
 
@@ -3424,7 +3303,7 @@ callback.call(runtime, Value(timeoutMilliseconds));
 
 > 示例 16.10：带参数执行回调
 
-如果你需要传递多个参数，可以像这样使用 Values 数组：
+如果你需要传递多个参数，可以像这样使用 `Values` 数组：
 
 ```C++
 Value callbackArguments[] = { Value(1), Value(2), Value(3) };
@@ -3449,9 +3328,9 @@ Function randomDelay = Function::createFromHostFunction(
 );
 ```
 
-示例 16.1：setTimeout() 方法的原生实现
+示例 16.1：`setTimeout()` 方法的原生实现
 
-这将创建一个具有以下 TypeScript 函数定义的函数：
+这将创建一个具有以下 `TypeScript` 函数定义的函数：
 
 ```TypeScript
 const randomDelay = (
@@ -3459,7 +3338,7 @@ const randomDelay = (
 ) => void;
 ```
 
-> 示例 16.12：randomDelay() 的 TypeScript 函数定义
+> 示例 16.12：`randomDelay()` 的 `TypeScript` 函数定义
 
 当然，`global` 中的函数声明略有不同：
 
@@ -3471,9 +3350,9 @@ declare global {
 }
 ```
 
-> 示例 16.13：在 TypeScript 中声明 JSI 函数
+> 示例 16.13：在 `TypeScript` 中声明 `JSI` 函数
 
-在 TypeScript 中调用此方法看起来很熟悉，只需将一个回调函数作为参数，并将毫秒超时数字作为回调的参数传递：
+在 `TypeScript` 中调用此方法看起来很熟悉，只需将一个回调函数作为参数，并将毫秒超时数字作为回调的参数传递：
 
 ```typescript
 randomDelay((millisecondsElapsed: number) => {
@@ -3483,7 +3362,7 @@ randomDelay((millisecondsElapsed: number) => {
 });
 ```
 
-> 示例 16.14：调用原生 randomDelay() 函数
+> 示例 16.14：调用原生 `randomDelay()` 函数
 
 为了清晰起见，你也可以单独定义回调响应，并通过名称作为参数传递给 `randomDelay()` 函数：
 
@@ -3496,23 +3375,19 @@ const randomDelayCallback = (millisecondsElapsed: number) => {
 randomDelay(randomDelayCallback);
 ```
 
-> 示例 16.15：调用 randomDelay() 函数的另一种方法
-
-
-
-
+> 示例 16.15：调用 `randomDelay()` 函数的另一种方法
 
 # 17
 
 ## 函数 14: 抛出错误 (Throws Errors)
 
-在 TypeScript 中，当出现问题时，抛出错误通常是非常用的。
+在 `TypeScript` 中，当出现问题时，抛出错误通常是非常用的。
 
 通常情况下，你应该假设你的代码可能会失败，而错误提供了一种诊断失败方式、原因以及何地失败的便捷方法。错误允许开发者解释代码中发生了什么类型的问题，并说明生成的堆栈跟踪（stack trace）中导致错误或受错误影响的每一行代码。
 
-因此，抛出错误很有用，特别是在编写跨越语言边界的代码时。JSI 函数对 TypeScript 来说本质上是不透明的，这意味着如果不抛出描述性的错误，可能无法知道 JSI 函数是如何失败、为什么失败、甚至不知道是否失败了。
+因此，抛出错误很有用，特别是在编写跨越语言边界的代码时。`JSI` 函数对 `TypeScript` 来说本质上是不透明的，这意味着如果不抛出描述性的错误，可能无法知道 `JSI` 函数是如何失败、为什么失败、甚至不知道是否失败了。
 
-在 TypeScript 中，我们可以像这样抛出一个 Error：
+在 `TypeScript` 中，我们可以像这样抛出一个 `Error`：
 
 ```typescript
 const throwErrorFunction = () => {
@@ -3520,7 +3395,7 @@ const throwErrorFunction = () => {
 }
 ```
 
-> 示例 17.1：在 TypeScript 中抛出错误
+> 示例 17.1：在 `TypeScript` 中抛出错误
 
 此错误可以在代码的后续部分被捕获。一个完善程序会使用回退程序处理错误，或在用户界面中显示可操作的信息，但在调试期间，查看堆栈跟踪是有帮助的：
 
@@ -3550,7 +3425,7 @@ at main(/src/main.ts:18:5)
 
 如你所见，错误信息和堆栈跟踪可以告诉开发者发生了什么问题，通过查看涉及错误的每一行代码，他们找到了错误的源头。
 
-TypeScript 的函数声明遗憾地不支持描述潜在的 Error，但它们可以使用 JSDoc 注释来描述，这是 JavaScript 中编写代码注释的标准：
+`TypeScript` 的函数声明遗憾地不支持描述潜在的 `Error`，但它们可以使用 `JSDoc` 注释来描述，这是 `JavaScript` 中编写代码注释的标准：
 
 ```typescript
 // 结果对应的 TypeScript 函数定义
@@ -3567,7 +3442,7 @@ const toNumber = (input: string) => number;
 
 ## JSI 实现
 
-在 JavaScript Native Interface（JavaScript原生接口）中，有一个 `facebook::jsi::Error` 对象，它在构造期间期间接收一个 `std::string` 作为参数。
+在 `JavaScript` Native Interface（`JavaScript`原生接口）中，有一个 `facebook::jsi::Error` 对象，它在构造期间期间接收一个 `std::string` 作为参数。
 
 ```cpp
 error = JSError(
@@ -3576,9 +3451,9 @@ error = JSError(
 );
 ```
 
-> 示例 17.5：在 JS 中创建兼容 JavaScript 的错误
+> 示例 17.5：在 JS 中创建兼容 `JavaScript` 的错误
 
-将错误传回 TypeScript 有两种方法。一种方法是使用 `runtime.throwException()` 函数：
+将错误传回 `TypeScript` 有两种方法。一种方法是使用 `runtime.throwException()` 函数：
 
 ```cpp
 runtime.throwException(JSError(
@@ -3587,7 +3462,7 @@ runtime.throwException(JSError(
 ));
 ```
 
-> 示例 17.6：使用 throwException() 函数抛出错误
+> 示例 17.6：使用 `throwException()` 函数抛出错误
 
 ### 另一种方法是简单地抛出它，就像处理任何其他原生异常一样：
 
@@ -3598,9 +3473,9 @@ throw JSError(
 );
 ```
 
-> 示例 17.7：抛出 JavaScript 错误
+> 示例 17.7：抛出 `JavaScript` 错误
 
-如果我们正在捕获原生错误，可以使用 `exception.what()` 方法在创建 JSError 时获取异常描述，例如：
+如果我们正在捕获原生错误，可以使用 `exception.what()` 方法在创建 `JSError` 时获取异常描述，例如：
 
 ```cpp
 try {
@@ -3613,11 +3488,11 @@ try {
 }
 ```
 
-> 示例 17.9：将原生异常转换为 JSError
+> 示例 17.9：将原生异常转换为 `JSError`
 
 ### 示例：字符串转数字函数
 
-在章节早些描述的 `stringToNumber()` 函数中，我们尝试将字符串转换为数字，如果结果不是有效的数字或转换过程中出现其他其他问题，则抛出一个 Error。
+在章节早些描述的 `stringToNumber()` 函数中，我们尝试将字符串转换为数字，如果结果不是有效的数字或转换过程中出现其他其他问题，则抛出一个 `Error`。
 
 ```cpp
 Function stringToNumber = Function::createHostFunction(...{
@@ -3639,9 +3514,9 @@ Function stringToNumber = Function::createHostFunction(...{
 });
 ```
 
-> 示例 17.1：实现抛出 Error 的函数
+> 示例 17.1：实现抛出 `Error` 的函数
 
-在 TypeScript 中没有办法声明一个函数可以抛出错误，因此我们只能定义函数名、参数和返回值。
+在 `TypeScript` 中没有办法声明一个函数可以抛出错误，因此我们只能定义函数名、参数和返回值。
 
 ```typescript
 function toNumber(input: string): number;
@@ -3663,48 +3538,44 @@ try {
 
 # 附录 I：JSI 类型
 
-- **Array**：列表或集合
-- **Boolean**：单比特值，真或假
-- **Null**：空赋值
-- **Function**：可调用的代码单元
-- **Number**：数值
-- **Object**：包含命名值的数据结构
-- **Promise**：可以处理回调的对象的
-- **String**：包含字符序列的对象
-- **Undefined**：未赋值的值
-- **Value**：通用类型
+- `Array`：列表或集合
+- `Boolean`：单比特值，真或假
+- `Null`：空赋值
+- `Function`：可调用的代码单元
+- `Number`：数值
+- `Object`：包含命名值的数据结构
+- `Promise`：可以处理回调的对象的
+- `String`：包含字符序列的对象
+- `Undefined`：未赋值的值
+- `Value`：通用类型
 
 # 附录 II：术语表
 
-- **ASCII**：一种使用 8 位 ASCII 编码的字符方案。通常用于表示文字母 (a-z 和 A-Z) 和数字 0-9。
-- **Argument**：在运行时传递函数的数据。
-- **Array**：线性数据集合。
-- **Callback**：作为参数传递给另一个函数，以便在一段时间后或事件触发后被调用。
-- **Java**：具有复杂的对象处理和类型检查的字节码编译语言。
-- **JSDoc**：JavaScript 中一种块注释的标准风格。
-- **Java Native Interface JNI**：Java 的一种可以执行二进制代码的功能。
-- **JavaScript**：发明用于编写网页的语言，现在运行在桌面和移动设备上。
-- **JavaScript Native Interface (JSI)**：React Native JavaScript 的一种可以执行二进制代码的功能。
-- **Lambda**：由另一个函数调用的匿名函数。
-- **Object**：包含值的数据结构。
-- **Parameter**：进入函数的预期参数。
-- **Pointer**：数组、对象或其他数据结构所在的内存地址。
-- **React**：用于构建网页的 JavaScript 框架。
-- **React Native**：使用 TypeScript 或 JavaScript 编写的跨平台移动和桌面应用开发语言
-- **Reference**：将对象或数组等结构化数据传递给函数的方式，可以直接访问对象。
-- **Thread**：代码的顺序执行。
-- **TypeScript**：JavaScript 的扩展，为变量和函数增加了类型提示和验证。
-- **UTF-8**：一种使用 8 位 ASCII 编码表示文字 (a-z 和 A-Z) 和数字 0-9，但使用 16 位编码表示重音字符和外语言符号的字符编码。
-
-
-
-
+- `ASCII`：一种使用 8 位 ASCII 编码的字符方案。通常用于表示文字母 (a-z 和 A-Z) 和数字 0-9。
+- `Argument`：在运行时传递函数的数据。
+- `Array`：线性数据集合。
+- `Callback`：作为参数传递给另一个函数，以便在一段时间后或事件触发后被调用。
+- `Java`：具有复杂的对象处理和类型检查的字节码编译语言。
+- `JSDoc`：`JavaScript` 中一种块注释的标准风格。
+- `Java Native Interface JNI`：`Java` 的一种可以执行二进制代码的功能。
+- `JavaScript`：发明用于编写网页的语言，现在运行在桌面和移动设备上。
+- `JavaScript Native Interface (JSI)`：`React Native` `JavaScript` 的一种可以执行二进制代码的功能。
+- `Lambda`：由另一个函数调用的匿名函数。
+- `Object`：包含值的数据结构。
+- `Parameter`：进入函数的预期参数。
+- `Pointer`：数组、对象或其他数据结构所在的内存地址。
+- `React`：用于构建网页的 `JavaScript` 框架。
+- `React Native`：使用 `TypeScript` 或 `JavaScript` 编写的跨平台移动和桌面应用开发语言
+- `Reference`：将对象或数组等结构化数据传递给函数的方式，可以直接访问对象。
+- `Thread`：代码的顺序执行。
+- `TypeScript`：`JavaScript` 的扩展，为变量和函数增加了类型提示和验证。
+- `UTF-8`：一种使用 8 位 ASCII 编码表示文字 (a-z 和 A-Z) 和数字 0-9，但使用 16 位编码表示重音字符和外语言符号的字符编码。
 
 ## 关于作者
 
 ![](img/bda9545f10e8303b87afef4dd62e47e9_174_0.png)
 
-Tony 是 react-native-libsodium 项目和 PKT 区块链的开源贡献者。好奇心驱使他想要开放并理解他所接触的一切切，以便将这些理解分享给他人。
+Tony 是 `react-native-libsodium` 项目和 PKT 区块链的开源贡献者。好奇心驱使他想要开放并理解他所接触的一切切，以便将这些理解分享给他人。
 
 他有两个真正的爱好：品牌建设和发明。
 
@@ -3716,13 +3587,13 @@ Tony 是 react-native-libsodium 项目和 PKT 区块链的开源贡献者。好�
 
 ## 关于本书
 
-在移动开发中，可移植代码与快速执行之间存在权衡。React Native 的一项名为 JavaScript Native Interface (JSI) 的新功能消除了这种权衡，允许开发者编写可移植代码，这些代码在原生设备上以二进制代码的形式执行。
+在移动开发中，可移植代码与快速执行之间存在权衡。`React Native` 的一项名为 `JavaScript` Native Interface (`JSI`) 的新功能消除了这种权衡，允许开发者编写可移植代码，这些代码在原生设备上以二进制代码的形式执行。
 
 ## 你将学会
 
-本书将教你如何编写 JSI 代码，以便你可以编写“一次编写，到处运行”且感觉像原生代码编写的移动应用程序。
+本书将教你如何编写 `JSI` 代码，以便你可以编写"一次编写，到处运行"且感觉像原生代码编写的移动应用程序。
 
-你将学习如何在 MacOS、Windows 和 Linux 上设置 JSI 项目。它将教你如何注册原生函数，以及如何接受任何类型的参数并返回任何类型的值。重要的是，这还包括处理对象、数组、回调函数和承诺。
+你将学习如何在 `MacOS`、`Windows` 和 `Linux` 上设置 `JSI` 项目。它将教你如何注册原生函数，以及如何接受任何类型的参数并返回任何类型的值。重要的是，这还包括处理对象、数组、回调函数和承诺。
 
 ## 本书适合读者
 
@@ -3730,12 +3601,13 @@ Tony 是 react-native-libsodium 项目和 PKT 区块链的开源贡献者。好�
 
 ## 相关书籍
 
-如果你想学习如何实现 REST API、如何在使用 REST API 时正确使用 HTTP 动词、JSON 数据结构、URIs 和 HTTP 错误代码，请参阅我的书籍《Learn REST APIs》。
+如果你想学习如何实现 `REST API`、如何在使用 `REST API` 时正确使用 `HTTP` 动词、`JSON` 数据结构、`URIs` 和 `HTTP` 错误代码，请参阅我的书籍《Learn REST APIs》。
 
 电子书 ISBN: 978-1-999381178-3
+
 平装本 ISBN: 978-1-989775-00-4
 
-backupbrain.co/titles/learn-rest-apis
+`backupbrain.co/titles/learn-rest-apis`
 
 ![](img/bda9545f10e8303b87afef4dd62e47e9_176_0.png)
 
@@ -3743,14 +3615,14 @@ backupbrain.co/titles/learn-rest-apis
 
 如果你想学习如何创建超安全的登录工作流，使用用户的永远永远离开其设备，请参阅我的书籍《OPAQUE》。
 
-backupbrain.co/titles/opaque
+`backupbrain.co/titles/opaque`
 
 电子书 ISBN: 978-1-989775-17-2
+
 平装本 ISBN: 978-1-989775-16-5
 
 ![](img/bda9545f10e8303b87afef4dd62e47e9_176_2.png)
 
 ![](img/bda9545f10e8303b87afef4dd62e47e9_176_3.png)
 
-1. Rousavy, Marc, et al. "Mrousavy/React-Native-Mmkv: ⚡ React Native 最快的键/值存储。比 AsyncStorage 快 30 倍！StorageBenchmark, 11 Jan. 2024, github.com/mrousavy/StorageBenchmark.
-
+1. Rousavy, Marc, et al. "Mrousavy/React-Native-Mmkv: ⚡ `React Native` 最快的键/值存储。比 `AsyncStorage` 快 30 倍！`StorageBenchmark`, 11 Jan. 2024, `github.com/mrousavy/StorageBenchmark`.

@@ -1,32 +1,9 @@
+
 # JavaScript 编程技巧与技巧指南
 
+## 介绍
 
-
-![](img/cover.jpg)
-
-
-––––––––
-
-![image](img/scene_break.png)
-
-
-
-
-
-
-
-
-
-
-| ![image](img/chapter_title_corner_decoration_left.png) |  | ![image](img/chapter_title_corner_decoration_right.png) |
-
-![image](img/chapter_title_above.png)
-
-# 介绍
-
-![image](img/chapter_title_below.png)
-
-JavaScript 是一种广泛使用的编程语言，是 Web 程序员生活和编程技能不可或缺的一部分。它是使网页具有交互性和动态的基础；它被用于创建表单、调查和测验，并经常用于轻量级编程。
+`JavaScript` 是一种广泛使用的编程语言，是 Web 程序员生活和编程技能不可或缺的一部分。它是使网页具有交互性和动态的基础；它被用于创建表单、调查和测验，并经常用于轻量级编程。
 
 它是从基础的 Internet Explorer 到先进的 Google Chrome 和 Safari 等所有主要浏览器中使用的常用的计算机语言。大多数计算机在安装系统时已经安装了 `JavaScript`，因此可以确保来自世界的访问者都能查看你在互联网上的内容、软件和计算机程序。
 
@@ -40,7 +17,7 @@ JavaScript 是一种广泛使用的编程语言，是 Web 程序员生活和编�
 
 然而，这本书将为你提供大量的技巧和策略，帮助你成为一名更优秀的程序员，并更高效地使用 `JavaScript`。
 
-## JavaScript 简史
+### JavaScript 简史
 
 回到 20 世纪 90 年代，当世界网仍处于发展阶段时，所有网页都是静态的——用户与网站之间没有交互。你看到的完全就是设置好的。
 
@@ -58,7 +35,7 @@ JavaScript 是一种广泛使用的编程语言，是 Web 程序员生活和编�
 
 它听起来也酷得多。
 
-## JavaScript 的重要性
+### JavaScript 的重要性
 
 理解 `JavaScript` 如何使用，就是理解开发网页时其他编程语言的基础作用。
 
@@ -80,23 +57,10 @@ JavaScript 是一种广泛使用的编程语言，是 Web 程序员生活和编�
 - 在用户输入信息时验证表单中的每个字段，而不是填完整个表单并在提交后才告诉用户拼写错误。
 - 让你的页面具有比表单之外的更多交互方式。
 - 为页面添加动画，吸引对特定部分的注意力或使网站更易用。
-
-
-
-
-
 - 在网页上加载更新、更重的图像和脚本
 - 帮助你提升访问者的体验
 
-| ![image](img/chapter_title_corner_decoration_left.png) |  | ![image](img/chapter_title_corner_decoration_right.png) |
-
-![image](img/chapter_title_above.png)
-
-# 第一章：
-
-![image](img/chapter_title_below.png)
-
-## 帮助你快速学习 JavaScript 的简单技巧
+## 第一章：帮助你快速学习 JavaScript 的简单技巧
 
 通常，在学习 JavaScript 或任何编码技能的道路上，人们往往会遇到以下问题：
 
@@ -109,13 +73,9 @@ JavaScript 是一种广泛使用的编程语言，是 Web 程序员生活和编�
 
 ### 技巧 1：为你想要学习的内容制定路线图
 
-面对现实吧——有许多框架可以使用，新手新手总是处于“该从哪一个开始”的十字路口。与其研究从哪个框架开始，克服这一问题的最好方法之一就是为你需要了解的知识制定学习路线图。
+面对现实吧——有许多框架可以使用，新手总是处于“该从哪一个开始”的十字路口。与其研究从哪个框架开始，克服这一问题的最好方法之一就是为你需要了解的知识制定学习路线图。
 
 例如，如果你想成为一名前端开发者，那么你的路线图可能如下：
-
-––––––––
-
-![image](img/scene_break.png)
 
 ![image](img/image017.png)
 
@@ -140,21 +100,13 @@ JavaScript 是一种广泛使用的编程语言，是 Web 程序员生活和编�
 
 ### 技巧 4：划分你的时间
 
-等一下，通过通过学习和练习你的编码技能，你会发现随着学习新内容的深入，记忆和吸收它们会变得容易得多。这个过程看起来可能很长，但熟能生工。
+通过学习和练习你的编码技能，你会发现随着学习新内容的深入，记忆和吸收它们会变得容易得多。这个过程看起来可能很长，但熟能生工。
 
 ### 技巧 5：给自己留出时间
 
 ### 技巧 6：用通俗易懂的语言编写
 
-
-
-
-
 ![image](http://oscarotero.com/jquery/)
-
-––––––––
-
-![image](img/scene_break.png)
 
 [STEAMFEED HTML 与 JavaScript 快捷键备查表](http://www.steamfeed.com/html-and-javascript-cheat-sheet-for-site-designers/)
 
@@ -174,19 +126,13 @@ SteamFeed 的优秀们制作了一份非常棒的备查表，将 HTML 代码和 
 
 ![image](img/image002.jpg)
 
-| ![image](img/chapter_title_corner_decoration_left.png) |  | ![image](img/chapter_title_corner_decoration_right.png) |
-
-![image](img/chapter_title_above.png)
-
-# 第三章：设计和构建自己的 JavaScript 库的技巧与窍门
-
-![image](img/chapter_title_below.png)
+## 第三章：设计和构建自己的 JavaScript 库的技巧与窍门
 
 你说 JavaScript 库吗？
 
 不，它并不包含书籍。但是，它包含了封装的代码，网页设计师、开发者和程序员可以在项目中使用这些代码，从而节省时间和精力。换句话说，当你想要将相同的代码应用到不同的网站和程序以实现相同的效果时，你不需要重复发明轮。
 
-## 什么是 JavaScript 库？
+### 什么是 JavaScript 库？
 
 以下是 JavaScript 库的几个显著特征：
 
@@ -196,7 +142,7 @@ SteamFeed 的优秀们制作了一份非常棒的备查表，将 HTML 代码和 
 
 在本章中，我们将讨论为什么你应该构建 JavaScript 库，以及如何用最简单的方法构建它们。
 
-## 为什么要构建自己的 JavaScript 库？
+### 为什么要构建自己的 JavaScript 库？
 
 首先，它对程序员和网页开发者来说都非常方便，特别是当你编写和开发大量的程序、网站和 Web 应用程序时。拥有一个现有代码的库会让你的工作变得更容易并节省时间，因为你不需要不断地从硬盘中某个模糊的文件夹里翻找旧项目。你只需要从库中提取它们即可。你有一个方便的地方来存储所有的代码；你有一个地方来拆分所有的应用程序，并将它们都保持在一个更容易维护的位置。
 
@@ -208,7 +154,7 @@ SteamFeed 的优秀们制作了一份非常棒的备查表，将 HTML 代码和 
 
 但对于大多数开发者或编码员来说，拥有自己的库是一种爱好；这种爱好使他们能够编写多个代码、帮助他人并对过程做出贡献。
 
-## 你的目标和工作范围
+### 你的目标和工作范围
 
 在你开始编写代码之前，你需要明确你对这个库的目标是什么。这有助于帮助你专注于你遇到的问题，以及如何使用你的库来解决它们。
 
@@ -218,7 +164,7 @@ SteamFeed 的优秀们制作了一份非常棒的备查表，将 HTML 代码和 
 
 在第一章中，我们讨论了创建路线图。你库的这个路线图将是你开始任何其他代码开发时会使用的技术之一。
 
-### 你的库的路线图：
+#### 你的库的路线图：
 
 - 列出你想要在库中的功能
 - 让这些功能保持最少且实用
@@ -226,15 +172,11 @@ SteamFeed 的优秀们制作了一份非常棒的备查表，将 HTML 代码和 
 
 你通过路线图所做的是为每个功能设定目标，本质上是将你的项目拆分成可管理的规模，使其更容易完成，并且创建过程会变得有趣得多。它还会让你保持清醒和专注。
 
-––––––––
-
-![image](img/scene_break.png)
-
-## 你的库 API 设计
+### 你的库 API 设计
 
 在创建库时，把自己想象成终端用户。通过把自己放在用户的位置，你朝着以用户为中心的设计努力。
 
-### 测试你的 API
+#### 测试你的 API
 
 测试你的 `API` 质量的最佳方法是将其用于你的项目。你可以做是用你的代码替换它，看看结果是否涵盖了你想要的功能。
 
@@ -263,15 +205,11 @@ engine.setComment('Hello World');
 userAgent.toString();
 ```
 
-––––––––
-
-![image](img/scene_break.png)
-
 根据你的库的复杂程度，你还需要考虑结构化。这种的方法是利用设计模式来构建你的库，并克服过程中可能遇到的任何技术问题。
 
 结构化还减少了在库添加新功能时重新对齐大部分部分的风险。
 
-## 灵活性与自定义
+### 灵活性与自定义
 
 大多数 JavaScript 库的一个酷酷之处在于其灵活性。然而，许多开发者在决定哪些可以自定义哪些不能自定义时会遇到问题。其中就有 `chart.js` 和 `D3.js`。
 
@@ -279,10 +217,9 @@ userAgent.toString();
 
 你有三种方法可以让你的用户控制你的库：
 
-1-� 配置
-2-� 暴露公共方法
-3-� 回调与事件
-
+1. 配置
+2. 暴露公共方法
+3. 回调与事件
 
 库的配置通常在项目初始化阶段完成，但某些库也允许你在运行时进行设置。这些配置通常仅限于简单的问题，因为更改这些设置只会更新这些值以供后续使用。
 
@@ -290,36 +227,20 @@ userAgent.toString();
 
 ```javascript
 // 在初始化时配置
-
 var userAgent = new UserAgent({
-
   commentSeparator: ';'
 });
 
 // 使用公共方法进行运行时配置
-
 userAgent.setOption('commentSeparator', '-');
 
 // 使用公共属性进行运行时配置
-
 userAgent.commentSeparator = '-';
 ```
 
-––––––––
-
-![image](img/scene_break.png)
-
 某些方法被刻意暴露出来以便与实例交互（getter），例如从实例中检索数据或向实例中写入数据（setter），以及执行某些操作。
 
-––––––––
-
-![image](img/scene_break.png)
-
 代码：
-
-––––––––
-
-![image](img/scene_break.png)
 
 ```javascript
 var userAgent = new UserAgent;
@@ -356,10 +277,6 @@ userAgent.on('product.add', function onProductAdd(e, product) {
 });
 ```
 
-––––––––
-
-![image](img/scene_break.png)
-
 你还可以允许用户扩展你自己的库。为了实现这一点，你需要公开你的公共方法或属性，以便用户对其填充，例如 Angular 模块。
 
 代码：
@@ -368,17 +285,9 @@ userAgent.on('product.add', function onProductAdd(e, product) {
 (angular.module('myModule')) and jQuery’s fn(jQuery.fn.myPlugin)
 ```
 
-––––––––
-
-![image](img/scene_break.png)
-
 你也可以对上述操作都不做，允许用户通过它的命名空间访问你的库。
 
 代码：
-
-––––––––
-
-![image](img/scene_break.png)
 
 ```javascript
 // AngryUserAgent 模块
@@ -418,15 +327,11 @@ var userAgent = new UserAgent;
 userAgent.toString();
 ```
 
-––––––––
-
-![image](img/scene_break.png)
-
 在这种情况下，允许用户访问库的命名空间也意味着你对插件和扩展的定义控制力更小。
 
 为了让扩展遵循某些约定，你需要编写文档。
 
-### 测试
+#### 测试
 
 对于测试驱动开发，大纲是必不可少的。换句话说，这是在你编写实际库之前，以测试的形式写下功能和标准的时间。
 
@@ -436,9 +341,8 @@ userAgent.toString();
 
 你可以使用的其他测试框架还有：
 
-[使用 Mocha 和 Chai 测试你的 JavaScript](http://www.sitepoint.com/unit-test-javascript-mocha-chai/) 由 Jani Hartikainen 编写，你可以在 Mocha 中编写单元测试。
-
-[使用 Jasmine、Travis 和 Karma 测试 JavaScript](http://www.sitepoint.com/testing-javascript-jasmine-travis-karma/) 由 Tim Evko 编写，向你展示如何与另一个名为 Jasmine 的框架协调地设置测试流水线。
+- [使用 Mocha 和 Chai 测试你的 JavaScript](http://www.sitepoint.com/unit-test-javascript-mocha-chai/) 由 Jani Hartikainen 编写，你可以在 Mocha 中编写单元测试。
+- [使用 Jasmine、Travis 和 Karma 测试 JavaScript](http://www.sitepoint.com/testing-javascript-jasmine-travis-karma/) 由 Tim Evko 编写，向你展示如何与另一个名为 Jasmine 的框架协调地设置测试流水线。
 
 下面是 Tim Severien 提供的另一个你可以尝试的大纲。他为他的库使用了 Jasmine 测试，看起来像这样：
 
@@ -465,25 +369,21 @@ describe('Basic usage', function () {
 });
 ```
 
+`API` 文档是文档中不可或缺的一部分，因为它会告诉用户具体如何使用你的库。其他很好的补充内容还有示例和教程。这可能会花费一些时间，因此你可以在库开发的过程中进行这些。
 
-
-
-
-API 文档是文档中不可或缺的一部分，因为它会告诉用户具体如何使用你的库。其他很好的补充内容还有示例和教程。这可能会花费一些时间，因此你可以在库开发的过程中进行这些。
-
-## 元任务 (Meta-tasks)
+### 元任务 (Meta-tasks)
 
 用户还可能想要对你的库进行更改，这通常以贡献的形式出现，但某些人可能想要仅供私下使用的自定义构建。对于这些用户，你可以包含关于元任务的文档，其中包含构建库、运行测试、生成、转换或下载数据的命令列表。
 
-## 贡献 (Contribution)
+### 贡献 (Contribution)
 
 贡献是非常棒的，尤其是当你开源你的库时。你可以添加的另一个文档是引导贡献者解释向库提交贡献的步骤，以及在提交贡献之前应该满足哪些标准。这将使你的审核过程更容易接受能够积极升级和增强你的库的贡献。
 
-## 许可证 (License)
+### 许可证 (License)
 
 许可证同样重要。包含许可证，以便每个人都知道哪些材料受版权保护。[ChooseALicense.com](http://choosealicense.com/) 是一个在没有法律顾问的情况下获取许可证的优秀资源。将你选择的许可证以文本格式保存为项目根目录下的 `LICENSE.txt` 文件。
 
-## 向 Git 仓库中添加版本/发布
+### 向 Git 仓库中添加版本/发布
 
 版本控制对于一个良好的库来说是必要的。目前的版本命名标准是通过 `SemVer`，即 [Semantic Versioning](http://semver.org/)（语义化）的写。该版本由三个数字组成，表示主版本、次版本和补丁的不同更改。如果你有 git 仓库，也可以添加版本号。考虑你仓库的快照或 `Tags`。要创建一个标签，打开终端并执行以下操作：
 
@@ -497,14 +397,14 @@ git tag -a v1.2.0 -m "Awesome Library v1.2.0"
 
 例如，GitHub 提供了你所有版本的综合视图，以及每个版本的下载链接。
 
-### 发布到公共仓库
+#### 发布到公共仓库
 
-### npm
+##### npm
 
 大多数编程语言都配备了包管理器，或者它们至少有一个第三方包管理器，允许用户拉取特定编程语言的特定库。例如，PHP 的管理器是 [Composer](http://www.sitepoint.com/mastering-composer-tips-tricks/)，Ruby on Rails 的是 [RubyGems](https://rubygems.org/)。对于像 Node.js 这样的独立 JavaScript 引擎，你有 [npm](https://www.npmjs.com/)。默认情况下，你的 `npm` 包将公开可用。你也可以选择发布以下：
 
 - [私有包](https://www.npmjs.com/npm/private-packages)
-- [设置私有仓库](https://docs.npmjs.com/misc/registry#can-i-run-my-own-private-registry) 
+- [设置私有仓库](https://docs.npmjs.com/misc/registry#can-i-run-my-own-private-registry)
 - [完全避免发布](https://docs.npmjs.com/misc/registry#i-dont-want-my-package-published-in-the-official-registry-its-private)
 
 然而，如果你决定发布你的包，那么你需要一个 `package.json` 文件。你可以手动执行此操作，或使用交互式向导完成。要启动此向导，首先输入：
@@ -523,15 +423,11 @@ npm publish
 
 大喜！你已成功发布了你的 `npm` 包。
 
-### Bower
+##### Bower
 
 另一个名为 Bower 的实用包管理器几年前出现了。这是一个专为网页设计的包管理器。在这里，你可以找到所有主要的前端资源。唯一的是，如果你的库被设置为兼容浏览器，那么使用 Bower 发布你的包将会从中获益。
 
 `npm` 包主要用于 JavaScript，许多前端包仍然在使用 npm，但 Bower 从根本上说仍然流行，所以也去使用 Bower 发布吧。
-
-––––––––
-
-![image](img/scene_break.png)
 
 要生成 `bower.json` 文件，输入：
 
@@ -545,44 +441,28 @@ bower init
 bower register awesomelib [https://github.com/you/awesomelib]
 ```
 
-––––––––
-
-![image](img/scene_break.png)
-
 现在，你的库可以供大家在他们的 Node 项目或网页上使用了！
 
-# 结论
+## 结论
 
 记住，你的代码开发就是库。确保你的库解决了问题，它是方便易用的，最重要的是它是稳定的。这将确保你和许多使用它的开发者都能感到开心。
 
 上面解释的任务可以很容易自动化，例如运行测试和创建标签、更新版本以及发布你的包。
 
-| ![image](img/chapter_title_corner_decoration_left.png) |  | ![image](img/chapter_title_corner_decoration_right.png) |
-
-![image](img/chapter_title_above.png)
-
-# 第 4 章：
-
-![image](img/chapter_title_below.png)
-
-# JavaScript 技巧与窍门
+## 第 4 章：JavaScript 技巧与窍门
 
 保持与记忆
 
 在本章中，我们将介绍一些与提高 JavaScript 技能和增强代码写作相关的短小实用技巧。
 
-| 使用 === 代替 == | `==`（或 `!=`）运算符在需要时会执行自动类型转换。`===`（或 `!==`）运算符不会执行任何转换。 |
+| 使用 `===` 代替 `==` | `==`（或 `!=`）运算符在需要时会执行自动类型转换。`===`（或 `!==`）运算符不会执行任何转换。 |
 | :--- | :--- |
-| charAt() 简写 | 实现这一点，你可以利用 `eval()` 函数，但括号表示法比评估要简单得多：`"myString"[0]; // 返回 'm'` |
+| `charAt()` 简写 | 实现这一点，你可以利用 `eval()` 函数，但括号表示法比评估要简单得多：`"myString"[0]; // 返回 'm'` |
 | 字符串转换为数字 | 最快且最简单的 ([jsPerf](https://jsperf.com/number-vs-parseint-vs-plus/29)) 方法是使用 `+`（加）运算符。`var one = '1'; var numberOne = +one; // 数字 1` 你也可以使用 `-`（减）运算符，它会将值转换为数字并取反。`var one = '1'; var negativeNumberOne = -one; // 数字 -1` |
 | 真假值转换为布尔 | 你可以使用 `!!` 将真值或假值转换为布尔值。`!!"" // false !!0 // false !!null // false !!NaN // false!!"hello" // true !!1 // true !![] // true` |
-| 使用 JSON.Stringify | 假设有一个具有“prop1”、“prop2”、“prop3”的对象。可以向 `stringify` 传递额外的参数以选择性地将对象的属性写入字符串，例如：`var obj = {'prop1': 'value1','prop2': 'value2','prop3': 'value3'}; var selectedProperties = ['prop1', 'prop2']; var str = JSON.stringify(obj, selectedProperties); // str {"prop1":"value1","prop2":"value2"}` `str` 将仅包含所选属性的信息。我们也可以传递函数。`function selectedProperties(key, val) { 第一个 val 将是整个对象，如果 key 为空字符串则 (!key) {return val;} 如果 (key === 'prop1' || key === 'prop2') {return val;} return;}` 最后一个可选参数是修改它将对象写入字符串的方式。`var str = JSON.stringify(obj, selectedProperties, '\t\t'); /* str 输出在每行都有双制表符。{"prop1": "value1","prop2": "value2"}*/` |
+| 使用 `JSON.Stringify` | 假设有一个具有“prop1”、“prop2”、“prop3”的对象。可以向 `stringify` 传递额外的参数以选择性地将对象的属性写入字符串，例如：`var obj = {'prop1': 'value1','prop2': 'value2','prop3': 'value3'}; var selectedProperties = ['prop1', 'prop2']; var str = JSON.stringify(obj, selectedProperties); // str {"prop1":"value1","prop2":"value2"}` `str` 将仅包含所选属性的信息。我们也可以传递函数。`function selectedProperties(key, val) { 第一个 val 将是整个对象，如果 key 为空字符串则 (!key) {return val;} 如果 (key === 'prop1' || key === 'prop2') {return val;} return;}` 最后一个可选参数是修改它将对象写入字符串的方式。`var str = JSON.stringify(obj, selectedProperties, '\t\t'); /* str 输出在每行都有双制表符。{"prop1": "value1","prop2": "value2"}*/` |
 
-
-
-
-
-## 数组与单元素的单一处理方法
+### 数组与单元素的单一处理方法
 
 与其编写单独的方法来处理数组和单个元素参数，你也可以编写函数使其能够同时处理这两者。你只需要先将所有内容合并到一个数组中。`Array.concat` 可以接受数组或单个元素。
 
@@ -602,7 +482,7 @@ printUpperCase("cactus"); // => CACTUS
 printUpperCase(["cactus", "bear", "potato"]); // => CACTUS, BEAR, POTATO
 ```
 
-## 测量 JavaScript 代码块的性能
+### 测量 JavaScript 代码块的性能
 
 为了快速测量 JavaScript 代码块的性能，我们可以使用控制台函数，如 [console.time(label)](https://developer.chrome.com/devtools/docs/console-api#consoletimabel) 和 [console.timeEnd(label)](https://developer.chrome.com/devtools/docs/console-api#consoletimeendlabel)
 
@@ -615,7 +495,7 @@ for (i = 0; i < len; i++) {
 console.timeEnd("Array initialize"); // 输出: Array initialize: 0.711ms
 ```
 
-## 提升 (Hoisting)
+### 提升 (Hoisting)
 
 提升将帮助你管理函数作用域。变量声明和函数会被提升到顶部，而变量的定义则不会。
 
@@ -642,9 +522,7 @@ var functionVar = function(){
 }
 ```
 
-# 第 5 章：
-
-## 未来需要掌握的 JavaScript 技能
+## 第 5 章：未来需要掌握的 JavaScript 技能
 
 无论你是否喜欢，作为一名程序员或 Web 或 App 开发者，你都需要学习 JavaScript。它被认为是未来的计算机语言，仅仅是因为它是 Web 和 App 开发不可或缺的一部分。
 
@@ -654,7 +532,7 @@ var functionVar = function(){
 
 那么，程序员未来应该关注 JavaScript 开发的哪些趋势？在本章中，我们将看看编程语言世界中将变得流行的各种事物。
 
-## React & Redux
+### React & Redux
 
 在 2015 年，React 获得了关注，特别是当 2014 年结束时，越来越多的程序员开始抱怨 `AngularJS` 框架。`Angular 2` 将无法与 `Angular 1` 同时运行的消息传出，让 Angular 社区的境地更加糟糕。React 在 2016 年填补了这一空白。
 
@@ -670,27 +548,23 @@ var functionVar = function(){
 
 尽管有通用的渲染以及 `React` 及其虚拟 DOM 的广受赞誉，程序员们在项目中使用它时仍然非常谨慎。尽管如此，越来越多的人开始使用 `Redux` 并发现它让运行在 JavaScript 上的应用测试和调试变得简单得多。从那时起，`Redux` 从 Flux 脱颖而出成为真正的赢。`React` 和 `Redux` 绝对是 2016 年最热门的趋势，而且看起来在 2017 年也不会消失，就前端“框架”而言。
 
-## 其他关注的框架
+### 其他关注的框架
 
 其他框架可能会进入这一领域，虽然它们并不完全对等，但这里是对现有框架的总体概述。再次，事情可能会随技术而改变。今年不理想的在明年可能会变成顶尖的。
 
-### Angular2
+#### Angular2
 
 许多非技术公司将研究 Angular 2，特别是使用微软框架的企业。`Angular 2` 是由 Google 和微软合作开发的，旨在让 JavaScript 语言更易管理。去年微软积极推行 .NET，因为它开源了许多元素，并努力让微软工具对开发者可用。重写后，团队希望解决 `Angular 1` 应用的任何升级问题，到目前为止性能非常出色。`Angular2` 的开发是为了支持 Web 组件，根据 Google 的说法，它是 Web 开发的未来。尽管 Angular 团队投入精力帮助开发者正确从 `Angular 1` 迁移到 `Angular 2`，`Angular` 社区对 Angular 的发展方向持有不同意见。这种重写也让 `React` 得以发展和成熟，随着其社区日益增长。由于由于，程序员怀疑 `Angular 2` 会像 `Angular 1` 那样成功。然而，正如上面提到的，技术可能会变化，所以 `Angular 2` 在 2017 年可能有增长空间。`Angular2` 仍然被认为是 React 应用的替代方案。
 
-### Meteor
+#### Meteor
 
 另一个值得关注的趋势是 Meteor，它一直拥有稳定的下载量和 GitHub Star。它与 `React` 和 `Angular` 集成良好，并具有许多巧妙的功能。作为一个轻量级的全栈 JavaScript 框架，开发者发现 Meteor 框架非常好用。Meteor 一直作为实用的初学者框架，也非常适合原型制作。
-
-
-
-
 
 Meteor 没能取得主流成功的原因是随着时间推移不断出现的隐藏复杂性，特别是在涉及生产环境时。Meteor 尽管募集了大量资金，但它并没有像 `React` 和 `AngularJS` 那样拥有庞大工程师团队领先科技企业支持。尽管 `AngularJS` 有很多问题，但它有 Google 支撑；相比之下，Meteor 被认为一种投资风险，因为它是一个兼顾后端和前端开发的框架。为了充分利用部署的便利性，Meteor 还需要进行托管。
 
 目前 Meteor 不理想的另一点是，许多开发者并不喜欢 `MongoDB`，而 Mongo 正恰是 Meteor 的默认数据库。在 2017 年，Meteor 可能仍然仅仅是一个不错的选择，因为更多开发者可能会在等待更可靠的证据，证明 Meteor 可用于大型、更复杂的应用程序开发。不言说，Meteor 在未来的 2016 年甚至 2017 年可能仍将保持小众地位。大多数专业开发者将等待任何关于它能开发大型、复杂应用的证据。
 
-## ES6 终于到来
+### ES6 终于到来
 
 JavaScript 开发者在 2016 年及未来的 2017 年要做的事情之一，是确保他们所有的应用都符合 ES2015 标准。但与其他许多技术应用和编程语言的复杂问题一样，我们面临着 `Babel` 与 `TypeScript` 问题。
 
@@ -718,11 +592,9 @@ JavaScript 开发者在 2016 年及未来的 2017 年要做的事情之一，是
 
 这表明静态类型 JavaScript 是一个活跃且不断增长的趋势，即使是 JavaScript 的否定者也会认可，而 `TypeScript` 是最可靠的解决方案。
 
-## 函数式编程走向主流
+### 函数式编程走向主流
 
 许多函数式编程平台已经进入主流编程，但最近，“函数式编程模型”引起了大量关注，特别是随着复杂 Web 应用的兴。
-
-![image](img/scene_break.png)
 
 ![`s3.amazonaws.com/codementor_content/2016-May/hn-fp.png`](img/image013.png)
 
@@ -732,7 +604,7 @@ JavaScript 开发者在 2016 年及未来的 2017 年要做的事情之一，是
 
 因此，`React`+`Redux` 方案对于那些习惯面向对象编程的人来说，是最受青的入门级解决方案。换句话说，`React` 只需要开发者对 UI 采用函数式方法，而 `Redux` 主要是一个鼓励使用实用方法处理数据的系统。其他事情都通过 OOP 风格完成。
 
-## RxJS
+### RxJS
 
 但对于那些仍然想坚持完全函数式响应式编程（被认为是“真正的” FRP）并且仍然想使用 JavaScript 的人，`RxJS` 是一个必须学习的技能。`RxJS` 是 JavaScript 的响应式扩展，可以取代 `Flux` 架构。对于简单的小应用，这可能大得其实，但事实上，它为通过复杂处理流的 Web 应用构建了强大的基础。
 
@@ -742,17 +614,13 @@ Netflix 使用 `RxJS`，而 `Angular2` 也依赖 `RxJS`。由微软开发的 `Rx
 
 ![`s3.amazonaws.com/codementor_content/2016-May/frp_gtrend.png`](img/image022.png)
 
-![image](img/scene_break.png)
-
 开发者选择替代 `RxJS` 使用的一些兼容语言是 `ClojureScript` 和 `Elm`。然而，所有程序的增长和人气与 `Redux`+`React` 相比都相形见绌。
 
 ![`s3.amazonaws.com/codementor_content/2016-May/frp_with_redux.png`](img/image023.png)
 
-![image](img/scene_break.png)
-
 事实考虑到函数式编程如何完美解决现代 Web 开发中的问题，人们必须承认函数式编程范式及其等概念将作为 JavaScript 开发者需要掌握和学习的技能生存。
 
-## 桌面框架对决：Nw.js vs. Electron
+### 桌面框架对决：Nw.js vs. Electron
 
 如今许多数据需要从各种平台（如桌面和移动端）同步数据。然而，许多服务大多数作为 Web 应用启动，然后被转换为桌面应用以增强用户体验。这样做是因为 Web 应用开发要快得多且更于更新。此外，用户也可以立即尝试 Web 应用，而无需安装其他任何东西。
 
@@ -762,16 +630,13 @@ Netflix 使用 `RxJS`，而 `Angular2` 也依赖 `RxJS`。由微软开发的 `Rx
 
 ![nwjs vs electron](img/image004.png)
 
-
-
-
 尽管 Nw.js 出现得早得多并被认为更老，但看起来 Electron 正在以爆炸性的速度增长，而 nw.js 则在以单调的线性速度增长。
 
 ![nw.js vs electron](img/image005.png)
 
 虽然 Electron 还很新，但它已经被 Slack、微软（Visual Studio Code）、WordPress 和 Sencha 等多家成熟机构使用。但由于 Electron 易易用性，其网络和社区增长得非常快。这股热潮可能会持续到 2017 年，从而使 Electron 成为桌面和 Web 应用开发的首选框架。
 
-## 移动应用框架对决：React Native vs Ionic
+### 移动应用框架对决：React Native vs Ionic
 
 当 React Native 出世时，人们预测它将接管市场，并利用 Web 技术规划移动开发的路线，因为它可以用于开发原生跨平台应用。那么 2017 年是 React Native 的年吗？通过这张图表，可能会产生一些预期：
 
@@ -791,7 +656,7 @@ Netflix 使用 `RxJS`，而 `Angular2` 也依赖 `RxJS`。由微软开发的 `Rx
 
 对职位招聘的快速搜索显示，至少有 75 份招聘正在寻找具备 Ionic 技能的开发者，而 65 份招聘正在寻找具备 React 技能的开发者。这表明对 React Native 的熟悉度正日益激增，这可能会对 2017 年之后任何新颖的开发者提供巨大的推动力。
 
-## Web API 的未来：GraphQL vs REST
+### Web API 的未来：GraphQL vs REST
 
 在 Facebook 提到他们将开源 GraphQL 后不久，许多 JavaScript 开发者在 2016 年早期就跟上了这一热潮，尤其是考虑到 Facebook 在开源项目方面已变为了 JavaScript 界的“苹果公司”。
 
@@ -803,17 +668,11 @@ GraphQL 旨在取代 REST APIs，但考虑到 REST APIs 是多么无处不在，
 
 GraphQL 与 REST APIs 配合得很好，但它绝对不会像某些开发者认为的那样取代 REST。更进一步的是，GraphQL 相对较新，且与 Facebook Relay 关联，因此程序员和开发者在其他地方没有足够的可以掌握该技能的学习资源或最佳实践。尽管如此，尽管 GraphQL 现在有很强的炒作，但 2017 年对于它成为主流仍然为过早。
 
-## JavaScript 趋势总结
+### JavaScript 趋势总结
 
 结论是，JavaScript 社区移动和变化非常快，跟上任何即将到来的趋势并与主流技术保持一致，这意味着更多的支持、相关性和资源。根据本章讨论的趋势，JavaScript 开发者应该让自己配备 Redux & React，以及其他熟悉的函数式编程语言，如 `TypeScript`。不仅如此，拥有 React Native 和 Electron 的经验无疑将为未来的程序员求职时提供更多推动力和信誉。
 
-| ![image](img/chapter_title_corner_decoration_left.png) |  | ![image](img/chapter_title_corner_decoration_right.png) |
-
-![image](img/chapter_title_above.png)
-
-# 结论
-
-![image](img/chapter_title_below.png)
+## 结论
 
 感谢你看到《JavaScript：使用 JavaScript 编程的技巧与窍门》。希望这本书能够具有启发性，并能为你提供实现目标所需的所有工具，无论你的目标是什么。
 
@@ -823,7 +682,7 @@ GraphQL 与 REST APIs 配合得很好，但它绝对不会像某些开发者认�
 
 感谢并祝你好运！
 
-## 关于作者
+### 关于作者
 
 Charlie Masterson 是一位计算机程序员和讲师，他开发过多个应用程序和计算机程序。
 

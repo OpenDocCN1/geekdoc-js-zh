@@ -1,12 +1,13 @@
+
 # 13.16 Net 模块和 DNS 模块
+
+## 服务器端 Socket 接口
 
 net 模块用于底层的网络通信。
 
-*   服务器端 Socket 接口
-*   客户端 Socket 接口
-*   DNS 模块
-
-## 服务器端 Socket 接口
+- 服务器端 Socket 接口
+- 客户端 Socket 接口
+- DNS 模块
 
 下面代码打开一个服务器端 Socket 接口，用来接受客户端的数据。
 
@@ -43,7 +44,7 @@ server.listen(serverPort, function() {
 });
 ```
 
-上面代码中，createServer 方法建立了一个服务端，一旦收到客户端发送的数据，就发出回应，同时还监听客户端是否中断通信。最后，listen 方法打开服务端。
+上面代码中，`createServer` 方法建立了一个服务端，一旦收到客户端发送的数据，就发出回应，同时还监听客户端是否中断通信。最后，`listen` 方法打开服务端。
 
 ## 客户端 Socket 接口
 
@@ -80,7 +81,7 @@ client.on('end', function() {
 
 ## DNS 模块
 
-DNS 模块用于解析域名。resolve4 方法用于 IPv4 环境，resolve6 方法用于 IPv6 环境，lookup 方法在以上两种环境都可以使用，返回 IP 地址（address）和当前环境（IPv4 或 IPv6）。
+DNS 模块用于解析域名。`resolve4` 方法用于 IPv4 环境，`resolve6` 方法用于 IPv6 环境，`lookup` 方法在以上两种环境都可以使用，返回 IP 地址（address）和当前环境（IPv4 或 IPv6）。
 
 ```js
 var dns = require('dns');

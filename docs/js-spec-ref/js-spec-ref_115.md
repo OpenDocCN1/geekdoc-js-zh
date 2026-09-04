@@ -1,3 +1,4 @@
+
 # 13.18 Koa 框架
 
 Koa 是一个类似于 Express 的 Web 开发框架，开发人员也是同一组人，但是使用了 Generator 函数，进行了架构的重新设计。也就是说，Koa 的原理和内部结构很像 Express，但是语法和内部结构进行了升级。
@@ -202,7 +203,7 @@ function *noop(){}
 
 ## 路由
 
-可以通过`this.path`属性，判断用户请求的路径，从而起到路由作用。
+可以通过`this.path`属性，判断用户请请求的路径，从而起到路由作用。
 
 ```js
 app.use(function* (next) {
@@ -588,7 +589,7 @@ Request 对象表示 HTTP 请求。
 
 （4）this.request.path
 
-返回 HTTP 请求的路径，该属性可读写。
+返回 HTTP 请请求的路径，该属性可读写。
 
 （5）this.request.href
 

@@ -1,8 +1,5 @@
-# 9.2 有限状态机
 
-*   概述
-*   Javascript Finite State Machine 函数库
-*   参考链接
+# 9.2 有限状态机
 
 ## 概述
 
@@ -60,7 +57,7 @@ var menu = {
 
 下面介绍一个有限状态机的函数库[Javascript Finite State Machine](https://github.com/jakesgordon/javascript-state-machine)。这个库非常好懂，可以帮助我们加深理解，而且功能一点都不弱。
 
-该库提供一个全局对象 StateMachine，使用该对象的 create 方法，可以生成有限状态机的实例。
+该库提供一个全局对象 `StateMachine`，使用该对象的 `create` 方法，可以生成有限状态机的实例。
 
 ```js
 var fsm = StateMachine.create();
@@ -83,35 +80,35 @@ var fsm = StateMachine.create({
 });
 ```
 
-交通信号灯的初始状态（initial）为 green，events 属性是触发状态改变的各种事件，比如 warn 事件使得 green 状态变成 yellow 状态，stop 事件使得 yellow 状态变成 red 状态等等。
+交通信号灯的初始状态（`initial`）为 `green`，`events` 属性是触发状态改变的各种事件，比如 `warn` 事件使得 `green` 状态变成 `yellow` 状态，`stop` 事件使得 `yellow` 状态变成 `red` 状态等等。
 
 生成实例以后，就可以随时查询当前状态。
 
-*   fsm.current ：返回当前状态。
-*   fsm.is(s) ：返回一个布尔值，表示状态 s 是否为当前状态。
-*   fsm.can(e) ：返回一个布尔值，表示事件 e 是否能在当前状态触发。
-*   fsm.cannot(e) ：返回一个布尔值，表示事件 e 是否不能在当前状态触发。
+*   `fsm.current` ：返回当前状态。
+*   `fsm.is(s)` ：返回一个布尔值，表示状态 `s` 是否为当前状态。
+*   `fsm.can(e)` ：返回一个布尔值，表示事件 `e` 是否能在当前状态触发。
+*   `fsm.cannot(e)` ：返回一个布尔值，表示事件 `e` 是否不能在当前状态触发。
 
-Javascript Finite State Machine 允许为每个事件指定两个回调函数，以 warn 事件为例：
+Javascript Finite State Machine 允许为每个事件指定两个回调函数，以 `warn` 事件为例：
 
-*   onbefore**warn**：在 warn 事件发生之前触发。
-*   onafter**warn**（可简写成 onwarn） ：在 warn 事件发生之后触发。
+*   `onbeforewarn` ：在 `warn` 事件发生之前触发。
+*   `onafterwarn`（可简写成 `onwarn`） ：在 `warn` 事件发生之后触发。
 
-同时，它也允许为每个状态指定两个回调函数，以 green 状态为例：
+同时，它也允许为每个状态指定两个回调函数，以 `green` 状态为例：
 
-*   onleave**green** ：在离开 green 状态时触发。
-*   onenter**green**（可简写成 ongreen） ：在进入 green 状态时触发。
+*   `onleavestate`：在离开 `green` 状态时触发。
+*   `onenterstate`（可简写成 `ongreen`） ：在进入 `green` 状态时触发。
 
-假定 warn 事件使得状态从 green 变为 yellow，上面四类回调函数的发生顺序如下：onbefore**warn** → onleave**green** → onenter**yellow** → onafter**warn**。
+假定 `warn` 事件使得状态从 `green` 变为 `yellow`，上面四类回调函数的发生顺序如下：`onbeforewarn` → `onleavestate` → `onenterstate` → `onafterwarn`。
 
 除了为每个事件和状态单独指定回调函数，还可以为所有的事件和状态指定通用的回调函数。
 
-*   onbeforeevent ：任一事件发生之前触发。
-*   onleavestate ：离开任一状态时触发。
-*   onenterstate ：进入任一状态时触发。
-*   onafterevent ：任一事件结束后触发。
+*   `onbeforeevent` ：任一事件发生之前触发。
+*   `onleavestate` ：离开任一状态时触发。
+*   `onenterstate` ：进入任一状态时触发。
+*   `onafterevent` ：任一事件结束后触发。
 
-如果事件的回调函数里面有异步操作（比如与服务器进行 Ajax 通信），这时我们可能希望等到异步操作结束，再发生状态改变。这就要用到 transition 方法。
+如果事件的回调函数里面有异步操作（比如与服务器进行 Ajax 通信），这时我们可能希望等到异步操作结束，再发生状态改变。这就要用到 `transition` 方法。
 
 ```js
 fsm.onleavegreen = function(){
@@ -122,7 +119,7 @@ fsm.onleavegreen = function(){
 };
 ```
 
-上面代码的回调函数里面，有一个异步操作（light.fadeOut）。如果不希望状态立即改变，就要让回调函数返回 StateMachine.ASYNC，表示状态暂时不改变；等到异步操作结束，再调用 transition 方法，使得状态发生改变。
+上面代码的回调函数里面，有一个异步操作（`light.fadeOut`）。如果不希望状态立即改变，就要让回调函数返回 `StateMachine.ASYNC`，表示状态暂时不改变；等到异步操作结束，再调用 `transition` 方法，使得状态发生改变。
 
 Javascript Finite State Machine 还允许指定错误处理函数，当发生了当前状态不可能发生的事件时自动触发。
 
@@ -136,7 +133,7 @@ var fsm = StateMachine.create({
 });
 ```
 
-比如，当前状态是 green，理论上这时只可能发生 warn 事件。要是这时发生了 stop 事件，就会触发上面的错误处理函数。
+比如，当前状态是 `green`，理论上这时只可能发生 `warn` 事件。要是这时发生了 `stop` 事件，就会触发上面的错误处理函数。
 
 Javascript Finite State Machine 的基本用法就是上面这些，更详细的介绍可以参见它的[主页](https://github.com/jakesgordon/javascript-state-machine)。
 

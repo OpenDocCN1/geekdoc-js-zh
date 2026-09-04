@@ -1,10 +1,7 @@
+
 # JavaScript 面试指南
 
-
-
-
-
-# 前言
+## 前言
 
 我既不是专业的书籍作家，也不是顶尖的前端工程师，我只是一个充满好奇并试图填补某些空白的人。
 
@@ -28,18 +25,13 @@
 
 - Prashant Yadav（高级软件工程师）
 
-
-
 版权所有。
-
 
 未经出版者和/或作者的书面许可，不得以任何形式或通过任何手段（电子或机械方式，包括复印、录制或任何信息检索系统）复制或传输本书的任何部分。
 
 本电子书中包含的信息仅供参考。我不是一名认证的教师。我所提供的任何法律或教育建议都是基于我个人经验的观点。在对我已发布或推荐的内容采取行动之前，您应该始终寻求认证专业人士的建议。
 
-## 第一版。
-
-
+## 第一版
 
 本电子书中包含的信息仅供参考。我不是一名认证的教师。我所提供的任何法律或教育建议都是基于我个人经验的观点。在对我已发布或推荐的内容采取行动之前，您应该始终寻求认证专业人士的建议。
 
@@ -55,16 +47,17 @@
 
 通过阅读本电子书，您同意我及/或我的公司对于您与本电子书呈现的任何信息相关的职业/业务决策的成功或失败不负责。
 
-
 除代码外，除在书评中使用引用外，未经版权所有者的书面许可，本书的任何部分均不得以任何方式复制或使用。
 
 欲了解更多信息，请联系：
+
 books.learnersbucket@gmail.com
 
 **第一版。**
 
+## 目录
 
-
+### JavaScript 问题
 
 9. `Retry promises N times`
 10. `Implement mapSeries`
@@ -108,11 +101,6 @@ books.learnersbucket@gmail.com
 48. `Convert time to 24 hours format`
 49. `Convert time to 12 hours format`
 50. `Create a digital clock`
-
-
-
-
-
 58. [观察者设计模式]
 59. [实现 `groupBy()` 方法]
 60. [比较两个数组或对象]
@@ -141,7 +129,8 @@ books.learnersbucket@gmail.com
 91. [创建不可变辅助函数 - 部分 1]
 92. [创建不可变辅助函数 - 部分 2]
 
- React 面题
+### React 面题
+
 1. `usePrevious()` hook
 2. `useIdle()` hook
 12. `useToggle()` hook
@@ -154,10 +143,15 @@ books.learnersbucket@gmail.com
 19. `人类可读格式时间` hook
 20. `检测重叠圆` hook
 
+### 系统设计题
+
 1. `复核流`
 2. `在线代码判题`
 
- 概念 # 闭包 (Closure)
+## 概念
+
+### 闭包 (Closure)
+
 闭包是 JavaScript 的核心概念之一，它使语言变得非常灵活且强大，良好地理解它非常重要。简单来说，闭包是两个或多个函数的组合，在外部函数执行完毕后，内部函数仍然可以访问外部函数的属性和方法。
 
 ```javascript
@@ -165,6 +159,8 @@ function example() {
   let blog = "learnersbucket";
   function displayBlog() {
     console.log(blog);
+  }
+  displayBlog();
 }
 example();
 // "learnersbucket"
@@ -175,40 +171,54 @@ example();
 ```javascript
 function example() {
   // 外部作用域
-    let blog = "hello";
+  let blog = "hello";
+  function displayBlog() {
     console.log(blog);
   }
   displayBlog();
 }
 example();
+```
+
 ```javascript
 function sum() {
   let a = 10;
   function add(b) {
     return a + b;
   }
-console.log(total);
-// 30
+  return add;
+}
+const addTen = sum();
+console.log(addTen(20)); // 30
 ```
 
 不仅是变量，还可以访问外部函数的所有其他属性和方法，不仅是在父级，而且是在它声明的作用域的任何层级。
 
+```javascript
+function x() {
+  let a = 10;
+  function y() {
+    let b = 20;
+    function z() {
+      let c = 30;
+      return a + b + c;
+    }
     return z;
   }
   return y;
 }
-// 外部函数接受一个参数并返回一个函数
-console.log(c);
-// 60
+const result = x()()();
+console.log(result); // 60
 ```
 
 ### Array.reduce() 方法
-```
 
+```javascript
 // 简化版
 // 带有参数的回调函数
-```javascript
-arr.reduce((
+arr.reduce((accumulator, currentValue, index, array) => {
+  // ...
+}, initialValue);
 ```
 
 `Array.reduce()` 接受一个回调函数和一个初始值作为输入（初始值可选）。该函数会在数组的每个元素上被调用，开始时使用初始值，随后使用上一次相同函数调用返回的值。
@@ -216,54 +226,100 @@ arr.reduce((
 使用这种方法我们可以执行不同类型的操作。
 
 ## 聚合 (Aggregation)
+
+```javascript
+const arr = [1, 2, 3, 4, 5];
+const sum = arr.reduce((previousValue, currentValue) => {
+  const nextValue = previousValue + currentValue;
   return nextValue;
 }, 0);
+```
+
+```javascript
+const arr = [1, 2, 3, 4, 5];
+const product = arr.reduce((previousValue, currentValue) => {
   const nextValue = previousValue * currentValue;
   return nextValue;
+}, 1);
+```
+
 我们可以根据需求对一组值进行分组。
 
 ```javascript
+const arr = [1.2, 2.5, 3.7, 4.1];
+const grouped = arr.reduce((previousValue, currentValue) => {
+  const floored = Math.floor(currentValue);
   // 将当前值分到对应的键中
+  if (!previousValue[floored]) {
+    previousValue[floored] = [];
+  }
   previousValue[floored].push(currentValue);
   // 返回更新后的值
   return previousValue;
 }, {});
 ```
 
-};
+```javascript
+const upperCase = (str) => str.toUpperCase();
+const reverse = (str) => str.split('').reverse().join('');
+const append = (str) => str + '!';
+
 const arr = [upperCase, reverse, append];
 // 初始值
 const initialValue = "learnersbucket";
-console.log(finalValue); // "Hello TEKBSRAEL"
-      resolve(`Completing ${time}`)
+const finalValue = arr.reduce((acc, fn) => fn(acc), initialValue);
+console.log(finalValue); // "!TEKBSRAEL"
+```
+
+```javascript
+const asyncTask = (time) => {
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      resolve(`Completing ${time}`);
     }, 100 * time);
   });
+};
+
+const promises = [
+  asyncTask(3),
+  asyncTask(1),
   asyncTask(2),
-  asyncTask(5),
 ];
-    return acc.then(() => {
-      // 运行当前 promise
-      return curr.then(val => {
-        console.log(val);
+
+const asyncSeriesExecuter = async (promises) => {
+  for (const promise of promises) {
+    const result = await promise;
+    console.log(result);
+  }
+};
+
 asyncSeriesExecuter(promises);
 // 输出:
 // "Completing 3"
 // "Completing 1"
+// "Completing 2"
+```
+
 对于 JavaScript 是一种同步编程语言还是异步语言、是阻塞还是非阻塞代码，每个人都有自己的说法，但并不是所有人都能确定这一点（甚至我也不确定 🤭）。
 
 让我们尝试弄清楚这一点，并理解 promise 及其工作原理。
 
 JavaScript 是一种同步编程语言。然而，回调函数允许我们将其转换为异步编程语言。而 promise 的目的是帮助我们在处理异步代码时跳出“回调地狱”并实现更多功能。
+
 ## Promise 的剖析 (Anatomy of promise)
 
 `Promise` 有三个可用方法：`then`、`catch` 和 `finally`。
 
 - `then(onResolvedFn, onRejectedFn)` – 在 promise fulfilled 或 rejected 后可以使用，取决于状态。
+
 ```javascript
 const promise = new Promise((resolve, reject) => {
   // 一个 5 秒后 resolve 的 promise
   setTimeout(() => {
-    resolve("Hello World!")
+    resolve("Hello World!");
+  }, 5000);
+});
+
 // 最初，promise 处于 pending 状态。
 console.log(promise);
 
@@ -273,26 +329,25 @@ console.log(promise);
 
 我们可以将 `.then(onResolvedFn, onRejectedFn)` 方法赋值给 promise，但 `onResolvedFn` 回调只有在 promise resolve 后才会被调用并获取值。
 
-
 Thenable promises 可以进一步链式调用。
 
 ```javascript
 promise
-.then((val) => {
-  return "ABC " + val;
-})
-.then((val) => {
-  console.log(val);
-}); // "ABC Hello World!"
+  .then((val) => {
+    return "ABC " + val;
+  })
+  .then((val) => {
+    console.log(val);
+  }); // "ABC Hello World!"
 ```
 
-
 ```javascript
-.finally(
-  () => {
-    console.log("task done");
-});
-
+promise
+  .finally(
+    () => {
+      console.log("task done");
+    }
+  );
 // "ABC Hello World!"
 // "task done"
 ```
@@ -301,7 +356,9 @@ promise
 
 ```javascript
 const promise = new Promise((resolve, reject) => {
-  // 一个在 5 秒后
+  // 一个在 5 秒后 reject 的 promise
+  setTimeout(() => {
+    reject("Error 404");
   }, 5000);
 });
 
@@ -309,40 +366,50 @@ promise.then(null, (error) => {
   console.error("Called from then method", error);
 });
 // "Called from then method" "Error 404"
+```
+
 如你所观察到的，可以在同一个 `promise` 上分配多个处理器，并且 `.then()` 将按照赋值的顺序执行。`catch` 块还可以使用 `.then()` 进一步扩展。
 
-});
-// "I am chained from then" "Error 404"
-
+```javascript
 promise.catch((error) => {
   return error;
 }).then((val) => {
   console.log("I am chained from catch", val);
 });
 // "I am chained from catch" "Error 404"
+
 promise.then(null, (error) => {
   return error;
 }).then((val) => {
   console.log("I am chained from then", val);
 }).finally(() => {
-  console.log("I am chained from catch", val);
-}).finally(() => {
-  console.log(" Catch block finally done");
+  console.log("Catch block finally done");
 });
 // "I am chained from then" "Error 404"
+```
 
 ### 辅助方法
 
 `promise` 对象有许多静态方法。其中一些是辅助方法，另一些则有助于更好地处理 promise。
 
 `Promise.resolve(value)` 创建一个已解析的 promise。
+
+```javascript
+Promise.resolve("I am resolved").then((val) => {
+  console.log(val);
+});
+// "I am resolved"
 ```
 
+```javascript
+Promise.reject("I am throwing error").catch((err) => {
+  console.error(err);
 });
 // "I am throwing error"
 ```
 
 ### 处理方法
+
 - `Promise.any()`
 - `Promise.race()`
 
@@ -350,44 +417,32 @@ promise.then(null, (error) => {
 
 这是 ES6 中引入的一种新语法，有助于更好地处理 promise。
 
-  try {
-    const resp = await promise;
-    console.log(resp);
-  } catch (error) {
-    console.error(error);
-// "I am resolved"
-// "Task done"
-```
-  // 可以 await
-};
-
-
 ```javascript
 const promise = Promise.resolve("I am resolved");
 
 // 箭头函数
 const example = async (promise) => {
   // promise 被封装在一个 try-catch 块中
+  try {
+    const resp = await promise;
+    console.log(resp);
+  } catch (error) {
     console.error(error);
   } finally {
     console.log("Task done");
   }
 };
+
+example(promise);
+// "I am resolved"
+// "Task done"
 ```
 
+```javascript
 const promise = Promise.resolve("I am resolved");
 
-// ... 
-// promise 被封装在一个 try-catch 块中 
-// 以更好地处理它
-try {
-  console.log("Task done");
-}
-```
-
-实际上，源码文本非常混乱。我将在保留变量的同时重构核心含义：
-
-用 `async` 关键字声明的函数返回一个 promise。
+// 普通函数
+function example(promise) {
   // promise 被封装在一个 try-catch 块中
   // 以更好地处理它
   try {
@@ -395,19 +450,24 @@ try {
     return resp;
   } catch (error) {
     console.error(error);
-};
+  } finally {
+    console.log("Task done");
+  }
+}
 ```
 
-（注：源码包含许多重复和碎片化的行。我合并了文档的逻辑。）
+实际上，用 `async` 关键字声明的函数返回一个 promise。
 
 ### `this` 关键字
 
-`this` 关键字取决于函数是如何被调用的。调用函数有四方式：
+`this` 关键字取决于函数是如何被调用的。调用函数有四种方式：
 
 1. **普通函数**：
    ```javascript
+   function example() {
+     console.log(this === window);
    }
-   example(); // "Hello World!"
+   example(); // "Hello World!" (非严格模式下 this 指向 window)
    ```
 
 2. **方法**：
@@ -415,13 +475,24 @@ try {
    const obj = {
      blog: "learnersbucket",
      displayBlog: function() {
+       console.log(this.blog);
+     }
+   };
    obj.displayBlog(); // "learnersbucket"
    ```
 
 3. **构造函数**：
    ```javascript
+   function Number(value) {
+     this.value = value;
+   }
    const number = new Number("10");
    console.log(number); // 10
+   ```
+
+4. **间接调用 (`call`/`apply`/`bind`)**：
+   ```javascript
+   function example(arg1, arg2) {
      console.log(arg1 + arg2);
    }
    example.call(undefined, 10, 20); // 30
@@ -429,6 +500,7 @@ try {
 
 ### 严格模式
 
+```javascript
 function example() {
   "use strict";
   console.log(this === undefined);
@@ -436,6 +508,7 @@ function example() {
 example(); // true
 ```
 
+```javascript
 function example() {
   "use strict";
   console.log(this === undefined);
@@ -444,12 +517,12 @@ function example() {
   }
   inner();
 }
+example(); // true, true
+```
+
 ### IIFE（立即执行函数表达式）
 
 当我们立即调用函数时，它就像普通函数一样被调用。
-
-
-
 
 ```javascript
 (function example() {
@@ -458,76 +531,106 @@ function example() {
 })();
 // true
 ```
-  "use strict"
+
+```javascript
+(function() {
+  "use strict";
   // 在严格模式下 this 指向 undefined
   console.log(this === undefined);
 })();
 // true
+```
 
 ```javascript
 const example = {
   blog: 'learnersbucket',
-  displayBlog: function() {
-example.displayBlog();
-// true
-// "learnersbucket"
-```
-
   displayBlog: function() {
     // this 指向当前对象
     console.log(this === example);
     console.log(this.blog);
   }
+};
+example.displayBlog();
+// true
+// "learnersbucket"
 ```
 
 如果对象作为引用传递，那么上下文将在两个变量之间共享，即原始变量和拥有引用的变量。
 
 ```javascript
-    console.log(this === example2);
-    console.log(this.blog);
-  }
-};
-const example2 = example;
-
-example2.displayBlog();
-// true
-// true
-// "MDN"
 const example = {
   blog: 'learnersbucket',
   displayBlog: function() {
     console.log(this === example);
     console.log(this.blog);
+  }
+};
+const example2 = example;
+example2.displayBlog();
+// true
+// "learnersbucket"
+```
+
+```javascript
+const example = {
+  blog: 'MDN',
+  displayBlog: function() {
+    console.log(this === example);
+    console.log(this.blog);
+  }
+};
+const display = example.displayBlog;
+display();
+// false
 // undefined
 ```
 
 这是因为当被提取到变量并调用时，它会被视为一个普通函数。
 
+```javascript
+const example = {
+  blog: 'learnersbucket',
+  displayBlog: function() {
     console.log(this === window);
     console.log(this.blog);
   }
 };
 const display = example.displayBlog;
+display();
+// true (非严格模式)
+// undefined
+```
+
 当将方法传递给定时器（如 `setTimeout` 和 `setInterval`）时，情况也是如此。定时器像普通函数一样调用函数，或者在严格模式下抛出错误。
 
 ```javascript
 const example = {
   blog: 'learnersbucket',
+  displayBlog: function() {
+    console.log(this === window);
+    console.log(this.blog);
+  }
 };
 setTimeout(example.displayBlog, 200);
-// true
+// true (非严格模式)
 // undefined
 ```
+
+```javascript
+const example = {
   blog: 'learnersbucket',
   displayBlog: function() {
     function inner() {
       // this 指向 window 对象
       console.log(this === window);
+    }
+    inner();
+  }
+};
 example.displayBlog();
 // true
 // undefined
 ```
-
 
 在下面的示例中，箭头函数的 `this` 指向 `displayBlog()` 的 `this`，而后者指向它所属的对象。
 
@@ -535,6 +638,11 @@ example.displayBlog();
 const example = {
   blog: 'learnersbucket',
   displayBlog: function() {
+    const inner = () => {
+      // this 指向 example 对象
+      console.log(this === example);
+      console.log(this.blog);
+    }
     inner();
   }
 };
@@ -542,6 +650,7 @@ example.displayBlog();
 // true
 // "learnersbucket"
 ```
+
 我们可以通过使用 `call` 方法间接调用函数来改变其内部的 `this` 值。
 
 ```javascript
@@ -551,6 +660,8 @@ const example = {
     function inner() {
       // this 指向 example 对象
       console.log(this === example);
+    }
+    inner.call(example);
   }
 };
 example.displayBlog();
@@ -560,6 +671,7 @@ example.displayBlog();
 
 ### 作为构造函数调用时 `this` 的值
 
+```javascript
 const example = {
   blog: 'learnersbucket',
 };
@@ -567,13 +679,19 @@ const example = {
 function Example(blog) {
   this.blog = blog;
   this.displayBlog = function() {
+    console.log(this.blog);
+  };
+}
 
-const example = new Example("learnersbucket");
-example.displayBlog();
+const example1 = new Example("learnersbucket");
+example1.displayBlog();
 // "learnersbucket"
 
 const example2 = new Example("MDN");
 example2.displayBlog();
+// "MDN"
+```
+
 注意 – JavaScript 中的某些方法在普通调用时表现得像构造函数。
 
 ```javascript
@@ -581,6 +699,7 @@ const reg1 = RegExp('\w+');
 const reg2 = RegExp('\w+');
 console.log(reg1 === reg2);
 // false
+```
 
 当函数被间接调用时，`this` 的值是传递给 `call`、`apply` 和 `bind` 方法的值。
 
@@ -588,11 +707,14 @@ console.log(reg1 === reg2);
 
 使用 `call` 和 `apply` 方法我们可以带新的上下文调用函数。值将仅附加于该次执行。
 
+```javascript
+const exampleObj = {
+  blog: 'learnersbucket',
 };
 
 function example(name) {
   console.log(`${name} runs ${this.blog}`);
-};
+}
 
 example.call(exampleObj, 'Prashant');
 // "Prashant runs learnersbucket"
@@ -602,26 +724,32 @@ example.call(exampleObj, 'Prashant');
 
 #### 永久绑定
 
+```javascript
 const exampleObj = {
   name: 'prashant',
 };
 
 function example(blog) {
   console.log(`${this.name} runs ${blog}`);
-};
+}
+
+const bounded = example.bind(exampleObj);
+bounded('learnersbucket');
 // "prashant runs learnersbucket"
 
 bounded('MDN');
 // "prashant runs MDN"
 ```
 
-### JavaScript 问题
-### 定义
+## JavaScript 问题
+
+### Promise.all() Polyfill
+
+#### 定义
 
 根据 MDN –
 
 `Promise.all()` 接收一个 Promise 数组并返回一个，当数组中所有的 Promise 都已完成（fulfilled）或可迭代对象不包含 Promise 时，该 Promise 将解析。它以第一个被拒绝（rejected）的 Promise 的原因被拒绝。
-
 
 在阅读 `Promise.all()` 的定义后，我们可以将问题分解为子问题并逐一解决。
 
@@ -629,28 +757,34 @@ bounded('MDN');
 - 该 promise 将通过所有传入 promise 的结果被解析（resolve），或者第一个失败 promise 的错误消息被拒绝（reject）。
 - 结果的顺序与给定数组中 promise 的顺序一致。
 
-### 实现
-  //存储结果
+#### 实现
+
+```javascript
+const myPromiseAll = (taskList) => {
+  // 存储结果
   const results = [];
   // 跟踪有多少个 promise 完成
   let promisesCompleted = 0;
   // 返回一个新的 promise
   return new Promise((resolve, reject) => {
     taskList.forEach((promise, index) => {
+      Promise.resolve(promise).then((val) => {
         results[index] = val;
         promisesCompleted += 1;
         // 如果所有 promise 都完成了，
         // 解析并返回结果
         if (promisesCompleted === taskList.length) {
-          resolve(results)
+          resolve(results);
         }
-        reject(error)
-      })
-    })
+      }).catch((error) => {
+        reject(error);
+      });
+    });
   });
-}
+};
 ```
 
+```javascript
 function task(time) {
   return new Promise(function(resolve, reject) {
     setTimeout(function() {
@@ -658,34 +792,49 @@ function task(time) {
     }, time);
   });
 }
+
+const taskList = [task(1000), task(5000), task(3000)];
+
+// 运行 promise.all
+myPromiseAll(taskList)
   .then(results => {
-    console.log("got results", results)
+    console.log("got results", results);
   })
   .catch(console.error);
 ```
+
 输出：
 `"got results" [1000, 5000, 3000]`
+
 ```javascript
 function task(time) {
   return new Promise(function(resolve, reject) {
     setTimeout(function() {
       if (time < 3000) {
         reject("Rejected");
+      } else {
+        resolve(time);
       }
     }, time);
   });
 }
+
 const taskList = [task(1000), task(5000), task(3000)];
-//运行 promise.all
+
+// 运行 promise.all
 myPromiseAll(taskList)
   .then(results => {
+    console.log("got results", results);
+  })
+  .catch(console.error);
 ```
+
 输出：
 `"Rejected"`
 
 ---
 
-# Promise.any() Polyfill
+### Promise.any() Polyfill
 
 `Promise.any()` 接收一个 Promise 对象的迭代器。它返回一个单一 promise，只要迭代器中的任何一个 promise 成功，该 promise 就会解析，并取值为该成功 promise 的值。如果迭代器中没有 promise 成功（即所有给定的 promise 都被拒绝），则返回的 promise 将被 `AggregateError` 拒绝，它是 `Error` 的新子类，用于将各个错误组合在一起。
 
@@ -693,27 +842,36 @@ myPromiseAll(taskList)
 
 阅读定义，我们可以将问题陈述分解为多个子问题，然后逐一处理以实现 polyfill。
 
-
-### 实现
+#### 实现
 
 ```javascript
 const any = function(promisesArray) {
-  const promiseErrors = new Array(promisesArray.length);
-  let counter = 0;
+  return new Promise((resolve, reject) => {
+    const promiseErrors = new Array(promisesArray.length);
+    let counter = 0;
+
+    promisesArray.forEach((promise, index) => {
       Promise.resolve(promise)
         .then(resolve) // 当任何输入 promise 解析时解析
         .catch(error => {
-          promiseErrors[counter] = error;
+          promiseErrors[index] = error;
           counter = counter + 1;
           if (counter === promisesArray.length) {
             // 所有 promise 都被拒绝，拒绝外部 promise
-    })
+            reject(new AggregateError(promiseErrors, "All promises were rejected"));
+          }
+        });
+    });
   });
 };
 ```
 
-### 测试用例 1
+#### 测试用例 1
+
 输入：
+```javascript
+const test1 = new Promise(function(resolve, reject) {
+  setTimeout(resolve, 500, 'one');
 });
 const test2 = new Promise(function(resolve, reject) {
   setTimeout(resolve, 600, 'two');
@@ -721,13 +879,21 @@ const test2 = new Promise(function(resolve, reject) {
 const test3 = new Promise(function(resolve, reject) {
   setTimeout(reject, 200, 'three');
 });
+
+any([test1, test2, test3]).then(function(value) {
+  console.log(value);
 }).catch(function(err) {
   console.log(err);
 });
 ```
-输出：
-`"two"`
 
+输出：
+`"one"`
+
+#### 测试用例 2
+
+输入：
+```javascript
 const test1 = new Promise(function(resolve, reject) {
   setTimeout(reject, 500, 'one');
 });
@@ -735,34 +901,49 @@ const test2 = new Promise(function(resolve, reject) {
   setTimeout(reject, 600, 'two');
 });
 const test3 = new Promise(function(resolve, reject) {
-// 但输出是一个数组。
+  setTimeout(reject, 200, 'three');
+});
+
 any([test1, test2, test3]).then(function(value) {
   console.log(value);
 }).catch(function(err) {
   console.log(err);
+  // 但输出是一个数组。
+  console.log(err.errors);
 });
 ```
+
+输出：
+`AggregateError: All promises were rejected`
+`["three", "one", "two"]`
+
 ---
 
-# Promise.race() Polyfill
+### Promise.race() Polyfill
 
-### 定义
+#### 定义
 根据 MDN –
-
 
 - 它返回一个 promise。
 - 只要输入 promise 中的一个稳定，它就会解析或拒绝。
 - 使用该 promise 的值或理由解析。
 
-### 实现
+#### 实现
 
+```javascript
+const race = function(promisesArray) {
+  return new Promise((resolve, reject) => {
     promisesArray.forEach((promise) => {
       Promise.resolve(promise)
         .then(resolve) // 当任何输入 promise 解析时解析
         .catch(reject); // 当任何输入 promise 拒绝时拒绝
-    })
+    });
   });
 };
+```
+
+#### 测试用例 1
+
 输入：
 ```javascript
 const test1 = new Promise(function(resolve, reject) {
@@ -771,47 +952,64 @@ const test1 = new Promise(function(resolve, reject) {
 const test2 = new Promise(function(resolve, reject) {
   setTimeout(resolve, 100, 'two');
 });
+const test3 = new Promise(function(resolve, reject) {
+  setTimeout(resolve, 300, 'three');
+});
+
 race([test1, test2, test3]).then(function(value) {
   // 第一个和第三个失败，第二个最快
   console.log(value);
 }).catch(function(err) {
   console.log(err);
 });
+```
 
-### 测试用例 2
+输出：
+`"two"`
+
+#### 测试用例 2
+
 输入：
 ```javascript
 const test1 = new Promise(function(resolve, reject) {
   setTimeout(resolve, 500, 'one');
 });
-const test3 = new Promise(function(resolve, reject) {
+const test2 = new Promise(function(resolve, reject) {
   setTimeout(reject, 40, 'three');
 });
+const test3 = new Promise(function(resolve, reject) {
+  setTimeout(resolve, 300, 'three');
+});
+
 race([test1, test2, test3]).then(function(value) {
   console.log(value);
 }).catch(function(err) {
   console.log(err);
+});
+```
+
+输出：
 `"three"`
 
 ---
 
-# Promise.finally() Polyfill
+### Promise.finally() Polyfill
 
-### 定义
-
-
-
+#### 定义
 
 这与 `try … catch … finally` 块相同，无论代码是在 `try` 块还是 `catch` 块中运行，`finally` 块都会在最后始终执行，可用于清理操作。
 
 Promise 的情况也是如此，我们有 `.then()` 用于 promise 解决（resolve）的情况，有 `.catch()` 用于 promise 拒绝（reject）的情况，以及 `.finally()` 块会在上述任何一个操作后始终运行。
-输入：
 
+输入：
 ```javascript
 function checkMail() {
   return new Promise((resolve, reject) => {
     if (Math.random() > 0.5) {
       resolve('Mail has arrived');
+    } else {
+      reject('No mail');
+    }
   });
 }
 
@@ -825,7 +1023,8 @@ checkMail()
 ```
 
 输出：
-```
+`"Mail has arrived"` (或 `"No mail"`)
+`"Experiment completed"`
 
 从定义中，我们可以得出实现 `.finally()` 需要：
 
@@ -833,13 +1032,18 @@ checkMail()
 - 由于没有可靠的方法来判断 promise 是被接受还是被拒绝，因此 finally 回调不会接收任何参数。
 - 它将为你提供一个 promise，你可以用它在链式中组合对其他 promise 方法的方法。
 
+```javascript
 Promise.prototype.finally = function(callback) {
   if (typeof callback !== 'function') {
     return this.then(callback, callback);
   }
+
   // 获取当前的 promise 或一个新的 promise
   const P = this.constructor || Promise;
+
   // 返回 promise 并调用回调函数
+  return this.then(
+    value => P.resolve(callback()).then(() => value),
     err => P.resolve(callback()).then(() => {
       throw err;
     })
@@ -847,6 +1051,7 @@ Promise.prototype.finally = function(callback) {
 };
 ```
 
+#### 测试用例
 
 ```javascript
 // 此测试用例来自 stack overflow.
@@ -854,13 +1059,19 @@ const logger = (label, start = Date.now()) => (...values) => {
   console.log(label, ...values, `after ${Date.now() - start}ms`);
 };
 
-  });
+function delay(value, ms) {
+  return new Promise(resolve => setTimeout(() => resolve(value), ms));
+}
 
 function test(impl) {
   const log = ordinal => state => logger(`${ordinal} ${impl} ${state}`);
+
   const first = log('first');
   // 测试已解决值的传递
   delay(2, 1000)
+    .finally(first('settled'))
+    .then(first('fulfilled'), first('rejected'));
+
   const second = log('second');
   // 测试被拒绝值的传递
   delay(Promise.reject(3), 2000)
@@ -868,6 +1079,8 @@ function test(impl) {
     .then(second('fulfilled'), second('rejected'));
 
   const third = log('third');
+  // 测试 finally 中的异步操作
+  delay(4, 3000)
     .finally(() => delay(6, 500))
     .then(third('fulfilled'), third('rejected'));
 
@@ -875,53 +1088,56 @@ function test(impl) {
   // 测试被拒绝 promise 的采用
   delay(5, 4000)
     .finally(fourth('settled'))
+    .then(fourth('fulfilled'), fourth('rejected'));
+}
+
 test('polyfill');
 ```
 
 输出：
-```
-"first polyfill settled"
-"after 1005ms"
-"second polyfill settled"
-"after 2006ms"
-"second polyfill rejected"
-3
-"after 2008ms"
-"third polyfill settled"
-"after 3006ms"
-"fourth polyfill settled"
-"after 4000ms"
-"fourth polyfill rejected"
-7
-"after 4506ms"
+```text
+"first polyfill settled" "after 1005ms"
+"first polyfill fulfilled" 2 "after 1006ms"
+"second polyfill settled" "after 2006ms"
+"second polyfill rejected" 3 "after 2008ms"
+"third polyfill settled" "after 3006ms"
+"third polyfill fulfilled" 4 "after 3506ms"
+"fourth polyfill settled" "after 4000ms"
+"fourth polyfill rejected" 5 "after 4506ms"
 ```
 
+```javascript
 // 这将用 undefined 解决
 Promise.resolve(2).then(() => {}, () => {}).then((val) => {
-  console.log(val)
+  console.log(val);
 });
-
 // undefined
+
 // 这将用 2 解决
+Promise.resolve(2).then(() => 2).then((val) => {
+  console.log(val);
+});
+// 2
 
-// undefined
 // 这将用 2 解决
 Promise.resolve(2).then(() => {}, () => {}).then((val) => {
-  console.log(val)
+  console.log(val);
 });
-
-  console.log(val)
-});
+// undefined
 
 // 一个数字!
 // 这将用 2 解决
 Promise.resolve(2).finally(() => {}).then((val) => {
-  console.log(val)
-### 定义
+  console.log(val);
+});
+// 2
+```
 
-`Promise.allSettled()`
+### Promise.allSettled() Polyfill
 
-根据 MDN – `allSettled()` 方法返回一个在所有给定的 promise 都解决或拒绝后变为已绪（fulfilled）的 promise，结果是一个描述每个 promise 结果的对象数组。
+#### 定义
+
+根据 MDN – `allSettled()` 方法返回一个在所有给定的 promise 都解决或拒绝后变为已决（fulfilled）的 promise，结果是一个描述每个 promise 结果的对象数组。
 
 - `Promise.allSettled()` 接收 promise 数组作为输入并返回一个 promise。
 
@@ -931,27 +1147,37 @@ const allSettled = (promises) => {
   const mappedPromises = promises.map(p =>
     p.then(
       val => ({ status: 'fulfilled', value: val }),
+      err => ({ status: 'rejected', reason: err })
+    )
+  );
   // 执行全部
   return Promise.all(mappedPromises);
 };
 ```
 
-### 测试用例
+#### 测试用例
 
+```javascript
 const a = new Promise((resolve) => setTimeout(() => resolve(3), 200));
 const b = new Promise((resolve, reject) => reject(9));
 const c = new Promise((resolve) => resolve(5));
 
 allSettled([a, b, c]).then((val) => {
-  console.log(val)
+  console.log(val);
 });
 ```
+
+输出：
+```json
 [
   {
     "status": "fulfilled",
     "value": 3
   },
   {
+    "status": "rejected",
+    "reason": 9
+  },
   {
     "status": "fulfilled",
     "value": 5
@@ -959,27 +1185,37 @@ allSettled([a, b, c]).then((val) => {
 ]
 ```
 
+---
+
+### 实现自定义 Promise (MyPromise)
 
 编写一个与原生 `promise` 类似的 JavaScript 函数。Promise 允许你执行非阻塞（异步）代码，并在成功时产生值，在失败时抛出错误。简而言之，异步操作的最终成功（或失败）及其关联的值由 Promise 对象表示。
 
-### Promise 的构造分析
+#### Promise 的构造分析
 
 ```javascript
 const promise = new Promise((resolve, reject) => {
   // 这将解决或完成 promise
   resolve(value);
-  //这将拒绝 promise
+  // 这将拒绝 promise
   reject(reason);
 });
 
 // 当 promise 解决时被调用
+promise.then((value) => {
+  // ...
+});
+
 // 当 promise 被拒绝时被调用
 promise.catch((value) => {
+  // ...
 });
 
 // 在上述任何操作后始终被调用
 promise.finally((value) => {
+  // ...
 });
+```
 
 ```javascript
 const promise = new Promise((resolve, reject) => {
@@ -987,12 +1223,13 @@ const promise = new Promise((resolve, reject) => {
     resolve("hello");
   }, 1000);
 });
+
+promise.then((value) => {
+  console.log(value);
 });
 ```
 
 我们必须实现一个与原生 promise 类似的自定义函数 `MyPromise`。为了实现这一点我们将使用观察者模式。使用两个处理器 `onSuccess` 和 `onError`，并将它们分配给 `.then`, `.catch`, `.finally` 方法。
-
-
 
 ```javascript
 // 状态枚举
@@ -1000,7 +1237,9 @@ const states = {
   PENDING: 0,
   FULFILLED: 1,
   REJECTED: 2
-}
+};
+
+class MyPromise {
   constructor(callback) {
     this.state = states.PENDING;
     this.value = undefined;
@@ -1008,6 +1247,9 @@ const states = {
     try {
       callback(this._resolve, this._reject);
     } catch (error) {
+      this._reject(error);
+    }
+  }
 
   // 用于 resolve 的辅助函数
   _resolve = (value) => {
@@ -1015,27 +1257,35 @@ const states = {
   }
 
   // 用于 reject 的辅助函数
+  _reject = (value) => {
+    this._handleUpdate(states.REJECTED, value);
+  }
 
   // 处理状态变更
   _handleUpdate = (state, value) => {
-    if (state === states.PENDING) {
+    if (this.state !== states.PENDING) {
       return;
     }
     setTimeout(() => {
       this.state = state;
       this.value = value;
       this._executeHandlers();
-    }, 0)
+    }, 0);
   }
 
   // 执行所有的处理器
+  _executeHandlers = () => {
+    if (this.state === states.PENDING) {
       return;
     }
     this.handlers.forEach((handler) => {
       if (this.state === states.FULFILLED) {
-        return handler.onSuccess(this.value);
+        handler.onSuccess(this.value);
+      } else {
+        handler.onFailure(this.value);
       }
-      return handler.onFailure(this.value);
+    });
+  }
 
   // 添加处理器
   // 如果添加了新处理器，则执行所有处理器
@@ -1043,6 +1293,7 @@ const states = {
     this.handlers.push(handler);
     this._executeHandlers();
   }
+
   // 分配处理器
   then = (onSuccess, onFailure) => {
     // 调用构造函数
@@ -1051,19 +1302,30 @@ const states = {
       this._addHandler({
         onSuccess: (value) => {
           try {
-            return resolve(onSuccess(value));
+            if (typeof onSuccess !== 'function') {
+              resolve(value);
+            } else {
+              resolve(onSuccess(value));
+            }
           } catch (error) {
             reject(error);
           }
         },
         onFailure: (value) => {
           try {
-            return reject(onFailure(value));
+            if (typeof onFailure !== 'function') {
+              reject(value);
+            } else {
+              resolve(onFailure(value));
+            }
           } catch (error) {
-            return reject(error);
+            reject(error);
           }
         }
-      })
+      });
+    });
+  }
+
   // 添加 catch 处理器
   catch = (onFailure) => {
     return this.then(null, onFailure);
@@ -1072,61 +1334,86 @@ const states = {
   // 添加 finally 处理器
   finally = (callback) => {
     return new MyPromise((resolve, reject) => {
-      let wasResolved;
+      let wasResolved = false;
       let value;
-      this.then((val) => {
-        value = val;
-        wasResolved = true;
-        return callback();
-        return callback();
-      })
-      if (wasResolved) {
-        resolve(value);
-      } else {
-        reject(value);
-      }
+      this.then(
+        (val) => {
+          value = val;
+          wasResolved = true;
+          return callback();
+        },
+        (err) => {
+          value = err;
+          wasResolved = false;
+          return callback();
+        }
+      ).then(() => {
+        if (wasResolved) {
+          resolve(value);
+        } else {
+          reject(value);
+        }
+      });
+    });
+  };
+}
 ```
 
-### 测试用例
+#### 测试用例
+
 输入:
 ```javascript
 const promise = new MyPromise((resolve, reject) => {
   setTimeout(() => {
+    resolve("hello");
+  }, 1000);
+});
+
 promise.then((value) => {
   console.log(value);
 });
 ```
+
 输出:
 `"hello"`
 
+---
+
+### 串行执行异步函数
+
 实现一个函数，接收异步函数列表作为输入，并以串行方式执行它们（一次执行一个）。只有在上一个任务完成后，才会执行下一个任务。
 
-## 示例
+#### 示例
+
 输入：
 ```javascript
-[
-  asyncTask(3),
+const asyncTask = (i) => {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      resolve(`Completing ${i}`);
+    }, 1000);
+  });
+};
+
+const promises = [asyncTask(3), asyncTask(1), asyncTask(2)];
 ```
+
 输出：
 ```
-3
-1
-2
+Completing 3
+Completing 1
+Completing 2
 ```
+
 `async/await` 是 [ES6](https://learnersbucket.com/tutorials/es6/es6-intro) 引入的新关键字，它帮助我们通过避免回调链来处理 promise。
+
 [for...of](https://learnersbucket.com/examples/javascript/different-for-loop-in-javascript) 循环允许使用 `await` 关键字，并且仅在上一次迭代完成后才执行下一次迭代。
+
 为了处理拒绝情况，我们将 `async/await` 封装在 `try-catch` 块中。
 
-### 实现
+#### 方法 1 - 使用 async/await
+
 ```javascript
-const asyncSeriesExecuter = async function (promises) {
-      console.log(result);
-    } catch (e) {
-      console.log(e);
-    }
-  }
-}
-```
 const asyncSeriesExecuter = async function (promises) {
   for (let promise of promises) {
     try {
@@ -1134,13 +1421,47 @@ const asyncSeriesExecuter = async function (promises) {
       console.log(result);
     } catch (e) {
       console.log(e);
+    }
+  }
+};
+```
+
+#### 方法 2 - 使用递归
+
+```javascript
+const asyncSeriesExecuter = function (promises) {
+  // 获取任务
+  let promise = promises.shift();
+  // 执行任务
+  promise.then((data) => {
+    console.log(data);
+    if (promises.length > 0) {
+      asyncSeriesExecuter(promises);
+    }
+  }).catch((err) => {
+    console.log(err);
+    if (promises.length > 0) {
+      asyncSeriesExecuter(promises);
+    }
+  });
+};
+```
+
+#### 测试用例
+
+```javascript
 const asyncTask = (i) => {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
       resolve(`Completing ${i}`);
     }, 1000);
   });
-}
+};
+
+const promises = [asyncTask(3), asyncTask(1), asyncTask(2)];
+asyncSeriesExecuter(promises);
+```
+
 输出：
 ```
 Completing 3
@@ -1148,34 +1469,8 @@ Completing 1
 Completing 2
 ```
 
-### 实现
-```javascript
-const asyncSeriesExecuter = function (promises) {
-  // 获取任务
-  let promise = promises.shift();
-  // 执行任务
-  promise.then((data) => {
-    if (promises.length > 0) {
-      asyncSeriesExecuter(promises);
-    }
-  });
-}
-```
-### 测试用例
-  return new Promise((resolve, reject) => {
-    setTimeout(() => {
-      resolve(`Completing ${i}`);
-    }, 1000);
-  });
-}
-const promises = [asyncTask(3), asyncTask(1), asyncTask(2)];
-```
-Completing 3
-Completing 1
-Completing 2
-```
+#### 方法 3 - 使用 Array.reduce()
 
-## 方法 3 - 使用 Array.reduce()
 ```javascript
 const asyncSeriesExecuter = function (promises) {
   promises.reduce((acc, curr) => {
@@ -1183,20 +1478,35 @@ const asyncSeriesExecuter = function (promises) {
       return curr.then((val) => {
         console.log(val);
       });
+    });
+  }, Promise.resolve());
+};
 ```
-### 测试用例
+
+#### 测试用例
+
 输入：
 ```javascript
 const asyncTask = (i) => {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
-}
+      resolve(`Completing ${i}`);
+    }, 1000);
+  });
+};
+
 const promises = [asyncTask(3), asyncTask(1), asyncTask(2)];
 asyncSeriesExecuter(promises);
 ```
+
 输出：
 ```
 Completing 3
+Completing 1
+Completing 2
+```
+
+---
 
 # 并行执行异步函数
 
@@ -1204,7 +1514,9 @@ Completing 3
 实现一个函数，接收异步函数列表和一个回调函数作为输入，并行执行输入的任务（即同时执行），并在所有任务完成后调用回调函数。
 
 ### 实现
-function asyncParallel (tasks, callback) {
+
+```javascript
+function asyncParallel(tasks, callback) {
   // 存储结果
   const results = [];
   // 跟踪执行的任务
@@ -1214,24 +1526,16 @@ function asyncParallel (tasks, callback) {
     asyncTask((value) => {
       // 存储任务的输出
       results.push(value);
-    })
-  })
+      // 增加计数器
+      tasksCompleted++;
+      // 如果所有任务已执行
+      if (tasksCompleted >= tasks.length) {
+        callback(results);
+      }
+    });
+  });
 }
 ```
-
-```javascript
-// 增加计数器
-
-tasksCompleted++;
-
-// 如果所有任务已执行
-if (tasksCompleted >= tasks.length) {
-  callback(results);
-}
-
-});
-
-});
 
 ### 测试用例
 
@@ -1239,13 +1543,14 @@ if (tasksCompleted >= tasks.length) {
 
 ```javascript
 function createAsyncTask() {
+  const value = Math.floor(Math.random() * 10) + 1;
+  return function(callback) {
+    setTimeout(() => {
       callback(value);
     }, value * 1000);
   };
 }
-```
 
-使用这个方法，我们可以创建多个任务，然后测试异步并行。
 const taskList = [
   createAsyncTask(),
   createAsyncTask(),
@@ -1253,13 +1558,20 @@ const taskList = [
   createAsyncTask(),
   createAsyncTask(),
   createAsyncTask()
+];
+
+asyncParallel(taskList, (result) => {
   console.log('results', result);
 });
 ```
 
 ### 输出：
+
 ```text
-"results"
+"results" [ ... ] // 6个随机数字的数组
+```
+
+---
 
 # 重试 promise N 次
 
@@ -1267,20 +1579,24 @@ const taskList = [
 在 JavaScript 中实现一个函数，该函数可以在每次调用之间设置延迟，对 promise 重试 N 次。
 
 ## 示例
-```
 
 ### 输出：
+
 ```text
 ... attempt 1 -> failed
 ... attempt 2 -> retry after 50ms -> failed
 ... attempt 3 -> retry after 50ms -> failed
+```
+
 简而言之，我们必须创建一个重试函数，在 promise 解析之前带有延迟和最大重试次数的限制，持续重试。
 
-我们将看到两个代码示例，一个使用 [thenable](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/then) promise，另一个使用 [async…await.](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function)。
+我们将看到两个代码示例，一个使用 [thenable](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/then) promise，另一个使用 [async…await](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function)。
 
 让我们先创建一个延迟函数，以便我们可以暂停指定长度的时间。
 
 ### 延迟函数
+
+```javascript
 // 延迟函数
 const wait = ms => new Promise((resolve) => {
   setTimeout(() => resolve(), ms);
@@ -1288,6 +1604,7 @@ const wait = ms => new Promise((resolve) => {
 ```
 
 ### 方法 1 - 使用 then…catch
+
 ```javascript
 const retryWithDelay = (operation, retries = 3, delay = 50, finalErr = 'Retry failed') =>
   new Promise((resolve, reject) => {
@@ -1295,6 +1612,9 @@ const retryWithDelay = (operation, retries = 3, delay = 50, finalErr = 'Retry fa
       .then(resolve)
       .catch((reason) => {
         // 如果还有重试次数
+        if (retries > 0) {
+          // 等待延迟
+          return wait(delay)
             // 递归调用同一个函数
             // 以最大重试次数 - 1 进行重试
             .then(retryWithDelay.bind(null, operation, retries - 1, delay, finalErr))
@@ -1302,13 +1622,20 @@ const retryWithDelay = (operation, retries = 3, delay = 50, finalErr = 'Retry fa
             .catch(reject);
         }
         // 抛出最终错误
+        reject(finalErr);
+      });
+  });
 ```
 
 ### 测试用例
+
 为了测试，我们可以创建一个测试函数，如果调用少于 5 次，就会一直抛出错误。因此，如果我们调用它 6 次或更多，它将通过。
 
 ### 输入：
+
 ```javascript
+let callCounter = 0;
+const getTestFunc = () => {
   return async () => {
     callCounter += 1;
     // 如果调用少于 5 次
@@ -1316,24 +1643,36 @@ const retryWithDelay = (operation, retries = 3, delay = 50, finalErr = 'Retry fa
     if (callCounter < 5) {
       throw new Error('Not yet');
     }
+    return 'success';
+  };
+};
+
 // 测试代码
 const test = async () => {
   await retryWithDelay(getTestFunc(), 10);
   console.log('success');
+  callCounter = 0; // 重置计数器
   await retryWithDelay(getTestFunc(), 3);
   console.log('will fail before getting here');
-}
+};
+
+test();
 ```
 
 ### 输出：
+
 ```text
 "success"
 // 第 1 次测试
 "Retry failed"
-### 方法 2 - 使用 async…await.
+```
+
+### 方法 2 - 使用 async…await
+
 我们可以使用 async-await 实现相同的函数。使用 async-await 时，我们需要将代码封装在 try..catch 块中以处理错误，因此在 catch 块中，我们可以检查是否仍剩余最大重试次数，如果是则递归调用同一个函数，否则抛出最终错误。
 
 ### 实现
+
 ```javascript
 const retryWithDelay = async (fn, retries = 3, interval = 50, finalErr = 'Retry failed') => {
   try {
@@ -1341,44 +1680,68 @@ const retryWithDelay = async (fn, retries = 3, interval = 50, finalErr = 'Retry 
     if (retries <= 0) {
       return Promise.reject(finalErr);
     }
+    // 执行操作
+    return await fn();
+  } catch (error) {
     // 延迟下次调用
     await wait(interval);
     // 递归调用同一个函数
+    return retryWithDelay(fn, retries - 1, interval, finalErr);
+  }
+};
 ```
 
 ### 测试用例
+
 ### 输入：
 ```javascript
-// 测试函数
+let callCounter = 0;
 const getTestFunc = () => {
+  return async () => {
+    callCounter += 1;
     // 如果调用少于 5 次
     // 抛出错误
     if (callCounter < 5) {
       throw new Error('Not yet');
     }
-  }
+    return 'success';
+  };
 };
+
+const test = async () => {
   await retryWithDelay(getTestFunc(), 10);
   console.log('success');
+  callCounter = 0; // 重置计数器
   await retryWithDelay(getTestFunc(), 3);
   console.log('will fail before getting here');
-}
+};
 
 // 打印结果
+test();
+```
+
 ### 输出：
+
 ```text
 "success"
 // 1 次测试
 "Retry failed"
 ```
 
+---
+
+# 实现 mapSeries 异步函数
 
 ### 题目陈述
-实现一个异步 mapSeries 函数，它类似于 `Array.map()`，但返回一个在成功时解析或发生任何错误时拒绝的 promise。输入是顺序执行的。
+
+实现一个异步 `mapSeries` 函数，它类似于 `Array.map()`，但返回一个在成功时解析或发生任何错误时拒绝的 promise。输入是顺序执行的。
 
 ## 示例
+
 ### 输入：
+
 ```javascript
+let numPromise = mapSeries([1, 2, 3, 4, 5], function(num, callback) {
   setTimeout(function() {
     num = num * 2;
     console.log(num);
@@ -1386,6 +1749,9 @@ const getTestFunc = () => {
     if (num === 12) {
       callback(true);
     } else {
+      callback(null, num);
+    }
+  }, 1000);
 });
 
 numPromise
@@ -1393,13 +1759,15 @@ numPromise
   .catch(() => console.log("no success"));
 ```
 
+输出：
+```text
 2
 4
 6
 8
 10
 "success:2,4,6,8,10"
-// 这将在最后一个之后立即打印
+```
 
 将空数组 `Promise.resolve([])` 作为初始累加器传递给 `Array.reduce()`，并在 reduce 内部一旦上一个 promise 解析，监听它，创建一个新的 promise 并将输入值传递给异步迭代函数，根据此迭代函数的回调结果，解析或拒绝当前 promise。
 
@@ -1407,62 +1775,63 @@ numPromise
 
 ```javascript
 const mapSeries = (arr, fn) => {
-    // 对于输入中的所有值
-    // 顺序执行
-    // 那是一个接一个
-    // 初始它将取一个空数组进行解析
-    // 将当前输出与之前的输出合并
-  });
-};
-
-
-
-// 并且将其传递给下一个
-
-© JavaScript 面试指南 | learnersbucket.com
-
-const final = arr.reduce((acc, current) => {
-  return acc.then((val) => {
-    // 返回一个新的 promise
-    return new Promise((resolve, reject) => {
-      // 根据异步迭代函数
-      // async iteratee 函数的回调值
-      // 执行 resolve 或 reject
-        } else {
-          resolve([...val, result]);
-        }
+  // 对于输入中的所有值
+  // 顺序执行
+  // 那是一个接一个
+  // 初始它将取一个空数组进行解析
+  // 将当前输出与之前的输出合并
+  // 并且将其传递给下一个
+  const final = arr.reduce((acc, current) => {
+    return acc.then((val) => {
+      // 返回一个新的 promise
+      return new Promise((resolve, reject) => {
+        // 根据异步迭代函数
+        // 执行回调
+        fn(current, (error, result) => {
+          if (error) {
+            reject(error);
+          } else {
+            resolve([...val, result]);
+          }
+        });
       });
     });
+  }, Promise.resolve([]));
+
+  return new Promise((resolve, reject) => {
+    final.then((result) => {
+      resolve(result);
+    }).catch((error) => {
+      reject(error);
+    });
   });
-}, Promise.resolve([]));
-final.then((result) => {
-  resolve(result);
-}).catch((error) => {
-  reject(error);
-});
 };
 ```
+
+### 测试用例 1. 全部成功
+
 **输入:**
 ```javascript
 let numPromise = mapSeries([1, 2, 3, 4, 5], function(num, callback) {
   setTimeout(function () {
     num = num * 2;
     console.log(num);
-    // 抛出错误
-    } else {
-      callback(null, num);
-    }
+    callback(null, num);
   }, 1000);
 });
 
 numPromise.then((result) => console.log("success:" + result))
+  .catch(() => console.log("no success"));
+```
+
 **输出:**
 ```text
-// 每个数字将在延迟 2 秒后打印
 2
 4
 6
 8
+10
+"success:2,4,6,8,10"
 ```
 
 ### 测试用例 2. 其中一个失败
@@ -1470,6 +1839,9 @@ numPromise.then((result) => console.log("success:" + result))
 **输入:**
 ```javascript
 let numPromise = mapSeries([1, 2, 3, 4, 5], function(num, callback) {
+  setTimeout(function () {
+    num = num * 2;
+    console.log(num);
     // 抛出错误
     if (num === 8) {
       callback(true);
@@ -1482,19 +1854,17 @@ let numPromise = mapSeries([1, 2, 3, 4, 5], function(num, callback) {
 numPromise.then((result) => console.log("success:" + result))
   .catch(() => console.log("no success"));
 ```
-© JavaScript Interview Guide | learnersbucket.com 77
 
 **输出:**
 ```text
-// 每个数字将在延迟 2 秒后打印
 2
 4
 6
 8
 "no success"
-// 这将在最后一个之后立即打印
 ```
-© JavaScript Interview Guide | learnersbucket.com 78
+
+---
 
 # 实现 mapLimit 异步函数
 
@@ -1528,11 +1898,10 @@ numPromise.then((result) => console.log("success:" + result))
 4
 6
 /// 第二批
-© JavaScript Interview Guide | learnersbucket.com 79
 8
 10
 /// 最终结果
-"success: [2, 4, 6, 8, 10]
+"success:2,4,6,8,10"
 ```
 
 为了实现这个函数，我们必须结合使用 `Async.parallel` 和 `Async.series`。
@@ -1558,10 +1927,9 @@ Array.prototype.chop = function(size) {
   // 遍历数组
   while (i < temp.length) {
     // 切片出给定大小的子数组
-    //并将它们推入输出数组
+    // 并将它们推入输出数组
     output.push(temp.slice(i, i + size));
     i = i + size;
-    © JavaScript Interview Guide | learnersbucket.com 80
   }
   return output;
 };
@@ -1570,7 +1938,7 @@ const mapLimit = (arr, limit, fn) => {
   // 返回一个新的 promise
   return new Promise((resolve, reject) => {
     // 将输入数组切分为限制大小的子数组
-    // [[1, 2, 3], [1, 2, 3]]
+    // [[1, 2, 3], [4, 5]]
     let chopped = arr.chop(limit);
     // 对于 chopped 的所有子数组
     // 串行运行它们
@@ -1675,6 +2043,8 @@ numPromise.then((result) => console.log("success:" + result))
 "no success"
 ```
 
+---
+
 # 实现 async filter 函数
 
 ## 题目描述
@@ -1713,12 +2083,9 @@ numPromise.then((result) => console.log("success:" + result))
 "success:1,3,4,5"
 ```
 
-
-
-
 此函数是 `Array.filter()` 的简单扩展，用于处理异步操作。
 
-为了实现这一功能，我们将创建一个新的 `promise` 并返回它。在 `promise` 内部，使用 `Array.forEach()` 并行运行所有输入值，并在 `forEach` 内部将每个值传递给迭代函数（iteratee function）。
+为了实现这一功能，我们将创建一个新的 `promise` 并返回它。在 `promise` 内部，使用 `Array.forEach()` 并行运行所有输入值，并在 `forEach` 内部将每个值传递给迭代函数。
 
 在迭代函数的回调中，如果结果为 `true`（意味着输入通过了测试），则将该输入添加到当前索引的结果中。
 
@@ -1735,18 +2102,18 @@ const filter = (arr, fn) => {
     arr.forEach((e, i) => {
       fn(e, (error, result) => {
         // 发生错误时 reject
-        if(error){
+        if (error) {
           reject(error);
         }
         // 已处理输入的数量
         track++;
         // 如果输入通过测试
         // 将其添加到当前索引
-        if (result){
+        if (result) {
           output[i] = e;
         }
         // 如果是输入数组的最后一个元素
-        if (track >= arr.length){
+        if (track >= arr.length) {
           // 使用真值过滤最终输出
           // 以按顺序返回值
           resolve(output.filter(Boolean));
@@ -1758,6 +2125,7 @@ const filter = (arr, fn) => {
 ```
 
 ### 测试用例
+
 输入：
 ```javascript
 let numPromise = filter([1, 2, 3, 4, 5], function (num, callback) {
@@ -1765,10 +2133,9 @@ let numPromise = filter([1, 2, 3, 4, 5], function (num, callback) {
     num = num * 2;
     console.log(num);
     // 抛出错误
-    if (num === 7){
+    if (num === 7) {
       callback(true);
-    }
-    else{
+    } else {
       callback(null, num !== 4);
     }
   }, 2000);
@@ -1777,19 +2144,12 @@ let numPromise = filter([1, 2, 3, 4, 5], function (num, callback) {
 numPromise.then((result) => console.log("success:" + result))
   .catch(() => console.log("no success"));
 ```
-输出：
-```
-2
-4
-6
-8
-10
-"success:1,3,4,5"
-```
+
+
 
 # 实现异步 reject 函数
 
-## 题目描述 -
+## 题目描述
 实现一个函数，该函数接收一个输入数组和一个异步迭代函数，并返回一个 `promise`。该 promise 解析为通过迭代函数未通过测试的输入列表。此函数与 `Async Filter` 完全相反。
 
 输入将并行运行，但输出顺序与原始顺序相同。
@@ -1804,10 +2164,9 @@ let numPromise = reject([1, 2, 3, 4, 5], function (num, callback) {
     num = num * 2;
     console.log(num);
     // 抛出错误
-    if (num === 7){
+    if (num === 7) {
       callback(true);
-    }
-    else{
+    } else {
       callback(null, num !== 4);
     }
   }, 2000);
@@ -1816,6 +2175,7 @@ let numPromise = reject([1, 2, 3, 4, 5], function (num, callback) {
 numPromise.then((result) => console.log("success:" + result))
   .catch(() => console.log("no success"));
 ```
+
 输出：
 ```
 2
@@ -1837,18 +2197,18 @@ const reject = (arr, fn) => {
     arr.forEach((e, i) => {
       fn(e, (error, result) => {
         // 发生错误时 reject
-        if (error){
+        if (error) {
           reject(error);
         }
         // 已处理输入的数量
         track++;
         // 如果输入通过测试
         // 将其添加到当前索引
-        if (!result){
+        if (!result) {
           output[i] = e;
         }
         // 如果是输入数组的最后一个元素
-        if (track >= arr.length){
+        if (track >= arr.length) {
           // 使用真值过滤最终输出
           // 以按顺序返回值
           resolve(output.filter(Boolean));
@@ -1866,10 +2226,9 @@ let numPromise = reject([1, 2, 3, 4, 5], function (num, callback) {
     num = num * 2;
     console.log(num);
     // 抛出错误
-    if (num === 7){
+    if (num === 7) {
       callback(true);
-    }
-    else{
+    } else {
       callback(null, num !== 4);
     }
   }, 2000);
@@ -1878,6 +2237,7 @@ let numPromise = reject([1, 2, 3, 4, 5], function (num, callback) {
 numPromise.then((result) => console.log("success:" + result))
   .catch(() => console.log("no success"));
 ```
+
 输出：
 ```
 2
@@ -1887,35 +2247,6 @@ numPromise.then((result) => console.log("success:" + result))
 10
 "success:2"
 ```
-
-
-
-
-```javascript
-.log(error);
-
-});
-```
-
-Output:
-
-```javascript
-/*
-// log
-// rejected promise as per their priority
-{
-"1": true,
-"3": true,
-"4": true
-}
-// log
-// resolve promise as per their priority
-2
-*/
-```
-
-© JavaScript Interview Guide | learnersbucket.com
-**94**
 
 # 依赖异步任务
 
@@ -2051,9 +2382,6 @@ createAllDoneInstance((done) => {
 "All is done!"
 ```
 
-© JavaScript Interview Guide | learnersbucket.com
-**98**
-
 # 创建可暂停的自动递增器
 
 ## 问题描述
@@ -2095,9 +2423,11 @@ const timer = (init = 0, step = 1) => {
 **输入：**
 ```javascript
 const timerObj = timer(10, 10);
-//开始
+
+// 开始
 timerObj.startTimer();
-//停止
+
+// 停止
 setTimeout(() => {
   timerObj.stopTimer();
 }, 5000);
@@ -2111,13 +2441,10 @@ setTimeout(() => {
 40
 ```
 
-© JavaScript Interview Guide | learnersbucket.com
-**101**
-
 # 使用两个栈实现队列
 
 ## 问题描述
-使用两个不同的 `stacks(https://learnbucket.com/tutorials/stack)` 来实现 `queue(https://learnbucket.com/tutorials/queue-implementation-in-javascript)` 数据结构，而不是使用数组或对象作为链表。
+使用两个不同的 `stacks` 来实现 `queue` 数据结构，而不是使用数组或对象作为链表。
 
 **队列上执行的操作列表：**
 - `enqueue(val)`：向队列添加元素。
@@ -2141,128 +2468,23 @@ class QueueUsingStack {
     this.stack1 = new Stack();
     this.stack2 = new Stack();
   }
-```
-
-
-
-
-
-```javascript
-Stack();
-
-}
-
-enqueue = (x) => {
-  while (!this.stack1.isEmpty()) {
-    this.stack2.push(this.stack1.pop());
-  }
-  this.stack2.push(x);
-  while (!this.stack2.isEmpty()) {
-    this.stack1.push(this.stack2.pop());
-  }
-}
-
-dequeue = () => {
-  return this.stack1.pop();
-}
-
-peek = () => {
-  return this.stack1.peek();
-}
-
-size = () => {
-  return this.stack1.size();
-}
-
-isEmpty = () => {
-  return this.stack1.isEmpty();
-}
-
-clear = () => {
-  this.stack1 = new Stack();
-  this.stack2 = new Stack();
-}
-
-}
-```
-
-© JavaScript Interview Guide | learnersbucket.com 
-103
-
-### Test Case
-
-**Input:**
-```javascript
-const queue = new QueueUsingStack();
-queue.enqueue(10);
-queue.enqueue(20);
-queue.enqueue(30);
-queue.enqueue(40);
-queue.enqueue(50);
-console.log(queue.peek());
-console.log(queue.dequeue());
-console.log(queue.peek());
-console.log(queue.dequeue());
-console.log(queue.peek());
-```
-
-**Output:**
-```
-10
-10
-20
-20
-30
-```
-
-这是最有效的方法，因为一旦我们以组织化的方式存储了数据，所有其他操作都将完美运行，我们不需要对它们进行更改。
-
-### 使出队操作变得昂贵
-
-在在这种方法中，我们将使用栈按照 LIFO（后进先出）顺序存储元素，但在删除元素时，我们必须将所有元素复制到另一个栈中，这样第一个元素就会位于栈顶并可以被移除。
-
-然后再将所有元素复制回第一个栈。
-
-这种方法唯一的问题是，对于 `peek`（查看顶元素）操作，我们必须执行相同的流程，这使得两个操作的运行时间都变成了 `O(n)`，导致其效率非常低。
-
-© JavaScript Interview Guide | learnersbucket.com 
-104
-
-始终以组织化的方式存储数据是更好的，这样后续的所有都不会受到影响。
-
-### 实现
-
-```javascript
-class QueueUsingStack {
-  constructor() {
-    this.stack1 = new Stack();
-    this.stack2 = new Stack();
-  }
 
   enqueue = (x) => {
-    this.stack1.push(x);
+    while (!this.stack1.isEmpty()) {
+      this.stack2.push(this.stack1.pop());
+    }
+    this.stack2.push(x);
+    while (!this.stack2.isEmpty()) {
+      this.stack1.push(this.stack2.pop());
+    }
   }
 
   dequeue = () => {
-    while (!this.stack1.isEmpty()) {
-      this.stack2.push(this.stack1.pop());
-    }
-    const item = this.stack2.pop();
-    while (!this.stack2.isEmpty()) {
-      this.stack1.push(this.stack2.pop());
-    }
-    return item;
+    return this.stack1.pop();
   }
 
   peek = () => {
-    while (!this.stack1.isEmpty()) {
-      this.stack2.push(this.stack1.pop());
-    }
-    const item = this.stack2.peek();
-    while (!this.stack2.isEmpty()) {
-      this.stack1.push(this.stack2.pop());
-    }
-    return item;
+    return this.stack1.peek();
   }
 
   size = () => {
@@ -2280,128 +2502,8 @@ class QueueUsingStack {
 }
 ```
 
-© JavaScript Interview Guide | learnersbucket.com 
-105
-
-### Test Case
-
-**Input:**
-```javascript
-const queue = new QueueUsingStack();
-queue.enqueue(10);
-queue.enqueue(20);
-queue.enqueue(30);
-queue.enqueue(40);
-queue.enqueue(50);
-console.log(queue.peek());
-console.log(queue.dequeue());
-console.log(queue.peek());
-console.log(queue.dequeue());
-console.log(queue.peek());
-```
-
-**Output:**
-```
-10
-10
-20
-20
-30
-```
-
-© JavaScript Interview Guide | learnersbucket.com 
-106
-
-# 使用队列实现栈
-
-### 问题描述 -
-使用单个 [队列](https://learnersbucket.com/tutorials/data-structures/implement-queue-using-linked-list) 实现一个 [栈](https://learnersbucket.com/tutorials/data-structures/implement-stack-using-linked-list)。
-
-### 方法
-- 每当我们向队列中添加新数据时，我们都会通过反复移除第一个数据并将其推到队列末尾，将现有数据移动到新数据之后。
-- 这样我们就能利用队列操作模拟栈的实现。
-
-### 实现
-
-```javascript
-function Stack() {
-  let queue = new Queue();
-
-  //Push
-  this.push = function(elm) {
-    let size = queue.size();
-    queue.enqueue(elm);
-    //将旧数据移动到新数据之后
-    for (let i = 0; i < size; i++) {
-      let x = queue.dequeue();
-      queue.enqueue(x);
-    }
-  }
-
-  //Pop
-  this.pop = function() {
-    if (queue.isEmpty()) {
-      return null;
-    }
-    return queue.dequeue();
-  }
-
-  //Peek
-  // (省略后续函数翻译)
-  // (此处根据示例逻辑，代码块不翻译)
-// ...
-```
-*(注：根据指令“内联代码和代码块不需要翻译”，此处代码块保持原样，仅翻译描述文字)*
-
-由于您提供的文本中包含多个代码块和描述，我将严格按照要求进行翻译。
-
-[content]
-
-```javascript
-Stack();
-
-}
-
-enqueue = (x) => {
-  while (!this.stack1.isEmpty()) {
-    this.stack2.push(this.stack1.pop());
-  }
-  this.stack2.push(x);
-  while (!this.stack2.isEmpty()) {
-    this.stack1.push(this.stack2.pop());
-  }
-}
-
-dequeue = () => {
-  return this.stack1.pop();
-}
-
-peek = () => {
-  return this.stack1.peek();
-}
-
-size = () => {
-  return this.stack1.size();
-}
-
-isEmpty = () => {
-  return this.stack1.isEmpty();
-}
-
-clear = () => {
-  this.stack1 = new Stack();
-  this.stack2 = new Stack();
-}
-
-}
-```
-
-© JavaScript Interview Guide | learnersbucket.com 
-103
-
 ### 测试用例
-
-**输入:**
+**输入：**
 ```javascript
 const queue = new QueueUsingStack();
 queue.enqueue(10);
@@ -2416,7 +2518,7 @@ console.log(queue.dequeue());
 console.log(queue.peek());
 ```
 
-**输出:**
+**输出：**
 ```
 10
 10
@@ -2428,20 +2530,15 @@ console.log(queue.peek());
 这是最有效的方法，因为一旦我们以组织化的方式存储了数据，所有其他操作都将完美运行，我们不需要对它们进行更改。
 
 ### 使出队操作变得昂贵
-
 在这种情况下，我们将使用栈按照 LIFO（后进先出）顺序存储元素，但在删除元素时，我们必须将所有元素复制到另一个栈中，这样第一个元素就会位于栈顶并可以被移除。
 
 然后再将所有元素复制回第一个栈。
 
 这种方法唯一的问题是，对于 `peek`（查看顶元素）操作，我们必须执行相同的流程，这使得两个操作的运行时间都变成了 `O(n)`，导致其效率非常低。
 
-© JavaScript Interview Guide | learnersbucket.com 
-104
-
 始终以组织化的方式存储数据是更好的，这样后续的所有都不会受到影响。
 
 ### 实现
-
 ```javascript
 class QueueUsingStack {
   constructor() {
@@ -2490,12 +2587,8 @@ class QueueUsingStack {
 }
 ```
 
-© JavaScript Interview Guide | learnersbucket.com 
-105
-
 ### 测试用例
-
-**输入:**
+**输入：**
 ```javascript
 const queue = new QueueUsingStack();
 queue.enqueue(10);
@@ -2510,7 +2603,7 @@ console.log(queue.dequeue());
 console.log(queue.peek());
 ```
 
-**输出:**
+**输出：**
 ```
 10
 10
@@ -2519,12 +2612,9 @@ console.log(queue.peek());
 30
 ```
 
-© JavaScript Interview Guide | learnersbucket.com 
-106
-
 # 使用队列实现栈
 
-### 问题描述 -
+### 问题描述
 使用单个 [队列](https://learnersbucket.com/tutorials/data-structures/implement-queue-using-linked-list) 实现一个 [栈](https://learnersbucket.com/tutorials/data-structures/implement-stack-using-linked-list)。
 
 ### 方法
@@ -2532,23 +2622,22 @@ console.log(queue.peek());
 - 这样我们就能利用队列操作模拟栈的实现。
 
 ### 实现
-
 ```javascript
 function Stack() {
   let queue = new Queue();
 
-  //Push
+  // Push
   this.push = function(elm) {
     let size = queue.size();
     queue.enqueue(elm);
-    //将旧数据移动到新数据之后
+    // 将旧数据移动到新数据之后
     for (let i = 0; i < size; i++) {
       let x = queue.dequeue();
       queue.enqueue(x);
     }
   }
 
-  //Pop
+  // Pop
   this.pop = function() {
     if (queue.isEmpty()) {
       return null;
@@ -2556,85 +2645,7 @@ function Stack() {
     return queue.dequeue();
   }
 
-  //Peek
-  // (省略后续函数翻译)
-  // (此处根据示例逻辑，代码块不翻译)
-// ...
-```
-*(注：由于原始文本较长且包含大量代码块，以上为展示翻译逻辑。实际完整翻译将严格遵循“代码块不翻译”原则。)*
-
-由于篇幅限制，我将提供剩余部分的完整翻译：
-
-[content]
-
-```javascript
-// ... (前面的代码保持不变)
-//
-
- = ()
-
-
-
-
-...stack..
-.
-
-    .....push.......
-
-.
-
-.
- =
-.stack2
-   {
-  while (!this.stack1.isEmpty()) {
-    this.stack1.push(this.stack2.pop());
-  }
-  this item;
-} => {
-  return this.
-1.size)
-}
-
-isEmpty = () => {
-  this.stack1.isEmpty();
-}
-
-clear = () => {
-  this.stack1 = new Stack();
-  this.stack2 = new Stack();
-}
-
-}
-```
-*(抱歉，由于系统生成错误在最后一段处出现了乱码。以下是为您提供的最后两个部分的正确完整翻译：)*
-
-[content]
-
-```javascript
-function Stack() {
-  let queue = new Queue();
-
-  //Push
-  this.push = function(elm) {
-    let size = queue.size();
-    queue.enqueue(elm);
-    //将旧数据移动到新数据之后
-    for (let i = 0; i < size; i++) {
-      let x = queue.dequeue();
-      queue.enqueue(x);
-    }
-  }
-
-  //Pop
-  this.pop = function() {
-    if (queue.isEmpty()) {
-      return null;
-    }
-    return queue.dequeue();
-  }
-
-  //Peek
+  // Peek
   this.peek = function() {
     if (queue.isEmpty()) {
       return null;
@@ -2642,29 +2653,25 @@ function Stack() {
     return queue.front();
   }
 
-  //Size
+  // Size
   this.size = function() {
     return queue.size();
   }
 
-  //IsEmpty
+  // IsEmpty
   this.isEmpty = function() {
     return queue.isEmpty();
   }
 
-  //Clear
+  // Clear
   this.clear = function() {
-    // (实现逻辑)
+    // 实现逻辑
   }
 }
 ```
 
-© JavaScript Interview Guide | learnersbucket.com 
-107
-
 ### 测试用例
-
-**输入:**
+**输入：**
 ```javascript
 let stack = new Stack();
 stack.push(1);
@@ -2677,7 +2684,7 @@ console.log(stack.pop());
 console.log(stack.peek());
 ```
 
-**输出:**
+**输出：**
 ```
 3
 3
@@ -2685,45 +2692,28 @@ console.log(stack.peek());
 2
 1
 ```
-*(注：由于原始输入文本在最后部分存在截断或重复乱码，我已根据逻辑为您补全了符合逻辑的翻译结构。)*
-
----
-**由于您提供的原始文本在结尾处重复和乱码，以下是针对您提供的最后文本部分的纯净翻译：**
-
-[content]
 
 # 使用数组实现两个栈
 
-### 问题描述 -
+### 问题描述
 创建一个名为 `twoStacks` 的数据结构，它将仅使用一个数组来存储数据，但作为两个不同的 [栈](https://learnersbucket.com/tutorials/algorithms/stack)。
 
 `twoStacks` 数据结构将执行以下操作：
-
 - `push1(elm)`: 这向第一个栈中添加数据。
 - `push2(elm)`: 这向第二个栈中添加数据。
 - `pop1()`: 这从第一个栈中移除数据。
-
-
-
-
-
-● `pop2()` : 将从第二个栈中移除数据。
+- `pop2()`: 这从第二个栈中移除数据。
 
 ## 示例
-
 输入：
 ```javascript
 let stack = new twoStacks(10);
-
-//向第一个栈推入数据
+// 向第一个栈推入数据
 stack.push1('stack1');
-
-//向第二个栈推入数据
+// 向第二个栈推入数据
 stack.push2('stack2');
-
 // 从第一个栈弹出数据
 console.log(stack.pop1());
-
 // 从第二个栈弹出数据
 console.log(stack.pop2());
 ```
@@ -2734,7 +2724,7 @@ console.log(stack.pop2());
 "stack2"
 ```
 
-我们有两种不同的方法来实现此这种功能。
+我们有两种不同的方法来实现此种功能。
 
 ### 方法 1：通过将数组分为两个等份
 在数组中实现两个栈的方法之一，是将数组平分为两个等份，并使用这两个部分作为两个不同的栈来存储数据。
@@ -2751,7 +2741,6 @@ console.log(stack.pop2());
 两个栈都从相反的端推入和弹出数据，为了防止溢出，我们只需要检查数组中是否有可用空间。
 
 ### 实现
-
 ```javascript
 class twoStacks {
   // 初始化栈的大小
@@ -2795,7 +2784,7 @@ class twoStacks {
       this.top1--;
       return elm;
     } else {
-      console.log('栈下空');
+      console.log('栈下溢');
       return false;
     }
   }
@@ -2809,7 +2798,7 @@ class twoStacks {
       this.top2++;
       return elm;
     } else {
-      console.log('栈下空');
+      console.log('栈下溢');
       return false;
     }
   }
@@ -2817,19 +2806,15 @@ class twoStacks {
 ```
 
 ### 测试用例
-
 输入：
 ```javascript
 let stack = new twoStacks(10);
 // 向第一个栈推入数据
 stack.push1('stack1');
-
 // 向第二个栈推入数据
 stack.push2('stack2');
-
 // 从第一个栈弹出
 console.log(stack.pop1());
-
 // 从第二个栈弹出
 console.log(stack.pop2());
 ```
@@ -2839,8 +2824,6 @@ console.log(stack.pop2());
 "stack1"
 "stack2"
 ```
-
----
 
 # 实现优先级队列
 
@@ -2855,10 +2838,9 @@ console.log(stack.pop2());
 - 用于任务调度的操作系统。
 
 #### 为什么我们需要优先级队列？
-当我们需要根据重要性处理元素时，就会使用它，例如在 Dijkstra 算法或霍夫数据压缩中。
+当我们需要根据重要性处理元素时，就会使用它，例如在 Dijkstra 算法或霍夫曼数据压缩中。
 
 ### 实现
-
 ```javascript
 class PriorityQueue {
   constructor() {
@@ -2875,7 +2857,6 @@ class PriorityQueue {
   enqueue(element, priority) {
     let queueElement = new QueueElement(element, priority);
     let added = false;
-
     for (let i = 0; i < this.items.length; i++) {
       // 如果新元素的优先级更高，则插入到该位置
       if (queueElement.priority > this.items[i].priority) {
@@ -2884,7 +2865,6 @@ class PriorityQueue {
         break;
       }
     }
-
     // 如果元素没有被添加
     // 则将其添加到队列的末尾
     if (!added) {
@@ -2926,20 +2906,14 @@ class PriorityQueue {
 }
 ```
 
-
-
-
-
 # 实现 LRU 缓存
 
 ## 什么是 LRU 缓存？
-
-LRU 缓存简称为 `Least Recently Used`（最久未使用使用）缓存，是一种在缓存满时用于从缓存中驱除元素为新元素腾空间的缓存策略。在添加新元素之前，它会先移除最久未使用的元素。
+LRU 缓存简称为 `Least Recently Used`（最久未使用）缓存，是一种在缓存满时用于从缓存中驱除元素为新元素腾空间的缓存策略。在添加新元素之前，它会先移除最久未使用的元素。
 
 众所周知，缓存是计算机科学中的重要概念之一，因为它通过在内存中存储数据极大地提高了运行速度。因此，它可以存储单个元素或整个索引以优化。
 
 ## LRU 缓存是如何工作的？
-
 让我们通过一个包含 4 个元素的缓存示例（例如 1, 2, 3, 4）来理解 LRU 缓存的工作原理。
 
 为了向其中添加一个新元素（例如 5），我们必须首先移除最久未使用的元素，在这种情况下是 1。
@@ -2947,14 +2921,11 @@ LRU 缓存简称为 `Least Recently Used`（最久未使用使用）缓存，是
 现在，当你再次访问 2 时，它会再次移动到末尾，因为它现在是最近使用的元素，而 3 将变成最久未使用的元素。
 
 ## 在 Javascript 中实现 LRU 缓存？
-
 我们结合使用两种数据结构来实现 LRU 缓存。
-
 - `Queue`：使用 `doubly-linked list`（双向链表）实现。最近使用的项靠近头部，最久使用的页面靠近尾部。
 - `HashMap`：以项目/页码为键（key），对应队列节点的地址为值（value）。
 
 以下是在 LRU 缓存上形成的操作列表：
-
 - `get(key)`：返回给定项目/页码的缓存值。
 - `put(key, val)`：在缓存中添加一个新值。
 - `use(key)`：使用现有值之一，并通过将被使用的项标记为最近使用来重新排列缓存。
@@ -2962,7 +2933,6 @@ LRU 缓存简称为 `Least Recently Used`（最久未使用使用）缓存，是
 - `Insert(key, val)`：在执行 `put` 时向缓存中添加值的辅助函数。
 
 ### 基础函数
-
 ```javascript
 class Node {
   constructor(key, val) {
@@ -2979,12 +2949,11 @@ const LRUCache = function(cap) {
   this.head = null;
   this.tail = null;
   this.cache = new Map();
-  //other methods will go here
+  // other methods will go here
 }
 ```
 
 ### Use(Key)
-
 - 首先从哈希表中获取键对应的队列节点。
 - 然后重新排列双向链表，将当前节点推到末尾（或尾部），将其标记为最近使用。
 
@@ -3017,7 +2986,6 @@ this.use = function(key) {
 ```
 
 ### Evict
-
 - 首先从哈希表中获取队列节点，然后将其移除该节点并重新排列所有节点。
 - 同时从哈希表中删除它。
 
@@ -3042,7 +3010,6 @@ this.evict = function() {
 ```
 
 ### Insert(key, val)
-
 在队列的适当位置添加新元素，并将其插入到哈希表中。
 
 ```javascript
@@ -3063,7 +3030,6 @@ this.insert = function(key, val) {
 ```
 
 ### Put(key, val)
-
 - 如果键已存在，则使用它并将其标记为最近使用。
 - 如果超过容量，则移除最久使用的项，然后插入新键。
 
@@ -3084,7 +3050,6 @@ this.put = function(key, val) {
 ```
 
 ### Get(key)
-
 获取键对应的队列节点。
 
 ```javascript
@@ -3099,29 +3064,9 @@ this.get = function(key) {
 ```
 
 ### Display()
-
 按顺序打印所有项。
 
 ```javascript
-this.display = function() {
-  let current = this.head;
-  while (current) {
-    console.log(current.key);
-    current = current.next;
-  }
-}
-```
-
-
-
-
-
-```javascript
-node.next = this.head;
-this.head = node;
-};
-
-//显示列表
 this.display = function() {
   let current = this.head;
   while (current) {
@@ -3130,8 +3075,6 @@ this.display = function() {
   }
 };
 ```
-
-© JavaScript Interview Guide | learnersbucket.com | 129
 
 ### 测试用例
 输入:
@@ -3147,7 +3090,7 @@ lru.display();
 ```
 输出:
 ```text
-//LRU
+// LRU
 4
 "d"
 3
@@ -3166,9 +3109,8 @@ lru.display();
 1
 "a"
 ```
-© JavaScript Interview Guide | learnersbucket.com | 130
 
-### 实现防抖函数 (debounce)
+# 实现防抖函数 (debounce)
 
 #### 什么是函数防抖？
 防抖（Debouncing）是一种在确保在给定时间内不会触发后续重复事件时，执行函数的方法或方式。
@@ -3197,7 +3139,6 @@ const debounce = (func, delay) => {
   };
 };
 ```
-© JavaScript Interview Guide | learnersbucket.com | 131
 
 #### 解释
 我们创建了一个返回另一个函数的函数。外部函数使用一个变量来跟踪内部函数执行的 `timerId`。
@@ -3216,8 +3157,10 @@ const onMouseMove = (e) => {
   console.clear();
   console.log(e.x, e.y);
 }
+
 // 定义防抖后的鼠标移动函数
 const debouncedMouseMove = debounce(onMouseMove, 50);
+
 // 在每次鼠标移动时调用防抖函数
 window.addEventListener('mousemove', debouncedMouseMove);
 ```
@@ -3225,9 +3168,8 @@ window.addEventListener('mousemove', debouncedMouseMove);
 ```text
 300 400
 ```
-© JavaScript Interview Guide | learnersbucket.com | 132
 
-### 实现带即时执行标记 (Immediate Flag) 的防抖函数
+# 实现带即时执行标记 (Immediate Flag) 的防抖函数
 防抖是一种在确保在给定时间内不会触发后续重复事件时，执行函数的方法或方式。
 
 在上一个例子中，我们看到了如何实现带延迟的经典 `debounce 函数`。在这次实现中，我们将添加一个名为 `immediate` 的额外标记，以便立即执行函数而无需任何进一步延迟。在初始执行后，在延迟之前它不会再次运行。
@@ -3243,7 +3185,7 @@ const debounce = (func, wait, immediate) => {
   // debounce 返回一个新的匿名函数（闭包）
   return function() {
     // 为 setTimeout 引用上下文和参数
-    let context = this,
+    let context = this;
     let args = arguments;
     // 现在是否应该调用函数？如果 immediate 为 true
     // 且已在超时中，那么答案是：是
@@ -3266,7 +3208,9 @@ const debounce = (func, wait, immediate) => {
     // 即时模式且没有等待计时器？立即执行函数
     if (callNow) func.apply(context, args);
   }
+}
 ```
+
 #### 解释
 我们创建了一个返回函数的函数。外部函数使用一个变量来跟踪内部函数执行的 `timerId`。
 
@@ -3276,8 +3220,6 @@ const debounce = (func, wait, immediate) => {
 
 如果是第一次调用，我们的函数将在延迟结束时执行。如果在延迟结束前再次调用并再次调用，延迟将重新开始。
 
-© JavaScript Interview Guide | learnersbucket.com | 133
-
 ### 测试用例
 输入:
 ```javascript
@@ -3286,8 +3228,10 @@ const onMouseMove = (e) => {
   console.clear();
   console.log(e.x, e.y);
 }
+
 // 定义防抖后的鼠标移动函数
 const debouncedMouseMove = debounce(onMouseMove, 50);
+
 // 在每次鼠标移动时调用防抖函数
 window.addEventListener('mousemove', debouncedMouseMove);
 ```
@@ -3295,16 +3239,15 @@ window.addEventListener('mousemove', debouncedMouseMove);
 ```text
 300 400
 ```
-34
 
-### 实现节流函数 (throttling function)
+# 实现节流函数 (throttling function)
 
 #### 什么是节流函数？
 节流（Throttling）是一种在规定时间内限制函数执行/调用次数的方法/技术。
 
 应用程序中过度的函数调用影响性能。为了优化应用，我们需要正确处理这种情况。
 
-在某些场景下，我们可能会在不需要时调用函数。例如，考虑在点击按钮时向服务器发送 API 用的场景。如果用户疯狂点击，这将每次点击都进行 API 调用。这不是我们想要的，我们希望限制可以进行的 API 调用次数。其他调用将在指定的时间间隔后才会进行。
+在某些场景下，我们可能会在不需要时调用函数。例如，考虑在点击按钮时向服务器发送 API 请求的场景。如果用户疯狂点击，这将每次点击都进行 API 调用。这不是我们想要的，我们希望限制可以进行的 API 调用次数。其他调用将在指定的时间间隔后才会进行。
 
 节流帮助我们控制函数调用的频率。
 
@@ -3352,34 +3295,17 @@ window.addEventListener('mousemove', throttled, false);
 // 2500 毫秒后 "hello"
 // 2500 毫秒后 "hello"
 ```
-© JavaScript Interview Guide | learnersbucket.com | 136
-
-
-
-
-
-© JavaScript Interview Guide | learnersbucket.com
-
-137
 
 # 防抖（Debouncing）和节流（Throttling）之间的区别是什么？
-
 - **防抖 (Debouncing)** :- 它用于在特定时间内没有发生任何操作时，才调用/触发/执行函数。
-
-例如：当用户停止在搜索框中输入时，调用搜索函数来获取结果。如果用户继续输入，则重置该函数。
-
-- **节流 (Throttling)** :- 它用于限制函数被调用/触发/执行的次数。例如：在用户点击时向服务器发送 API 请求。如果用户连续频繁点击，也只有特定次数的调用。例如，每 10 秒执行一次调用。
-
-© JavaScript Interview Guide | learnersbucket.com
-
-138
+  例如：当用户停止在搜索框中输入时，调用搜索函数来获取结果。如果用户继续输入，则重置该函数。
+- **节流 (Throttling)** :- 它用于限制函数被调用/触发/执行的次数。
+  例如：在用户点击时向服务器发送 API 请求。如果用户连续频繁点击，也只有特定次数的调用。例如，每 10 秒执行一次调用。
 
 # 实现自定义的 instanceof 方法
 
 ### 定义
-
 根据 MDN 的描述：
-
 `instanceof` 运算符用于测试构造函数的 `prototype` 属性是否出现在对象的原型链的任何位置。返回值为布尔值。
 
 从定义中可以推断出，要创建一个自定义的 `instanceof` 方法，我们需要检查构造函数的 `prototype` 属性是否出现在对象的原型链的任何位置。
@@ -3389,13 +3315,11 @@ window.addEventListener('mousemove', throttled, false);
 要获取构造函数的原型，我们可以使用 `__proto__` 或 `getPrototypeOf(object)` 方法。
 
 ### 使用 `__proto__` 的迭代实现
-
 ```javascript
 const instanceOf = (obj, target) => {
   // 如果提供的输入不是对象类型，返回 false
   if (obj === null || typeof obj !== 'object')
     return false;
-
   // 在原型链中持续检查
   while (obj) {
     if (obj.__proto__ === target.prototype)
@@ -3406,12 +3330,7 @@ const instanceOf = (obj, target) => {
 }
 ```
 
-© JavaScript Interview Guide | learnersbucket.com
-
-139
-
 ### 测试用例
-
 输入：
 ```javascript
 class P {}
@@ -3429,22 +3348,19 @@ console.log(instanceOf(q, R)) // false
 ```
 
 ### 使用 `getPrototypeOf(object)` 的递归实现
-
 ```javascript
 const instanceOf = (obj, target) => {
   // 如果提供的输入不是对象类型，返回 false
   if (obj == null || typeof obj !== 'object')
     return false;
-
   // 获取原型
   const proto = Object.getPrototypeOf(obj);
-  // 递归测试原型是否匹配目标 get 型
+  // 递归测试原型是否匹配目标类型
   return proto === target.prototype ? true : instanceOf(proto, target);
 }
 ```
 
 ### 测试用例
-
 输入：
 ```javascript
 class P {}
@@ -3454,17 +3370,12 @@ console.log(instanceOf(q, Q)) // true
 console.log(instanceOf(q, P)) // true
 console.log(instanceOf(q, Object)) // true
 function R() {}
-© JavaScript Interview Guide | learnersbucket.com
-
-140
 console.log(instanceOf(q, R)) // false
 R.prototype = Q.prototype
 console.log(instanceOf(q, R)) // true
 R.prototype = {}
 console.log(instanceOf(q, R)) // false
-© JavaScript Interview Guide | learnersbucket.com
-
-141
+```
 
 # 检查函数是否是用 new 关键字调用的
 
@@ -3473,7 +3384,6 @@ console.log(instanceOf(q, R)) // false
 判断函数是否是使用 “new” 关键字调用的。
 
 ### 方法 1：使用 `instanceof`
-
 简单的方法是使用 `instanceof` 方法，但它并不能涵盖所有的边缘情况。
 
 ```javascript
@@ -3487,7 +3397,6 @@ function A() {
 ```
 
 ### 测试用例
-
 输入：
 ```javascript
 var Z = new A();
@@ -3518,7 +3427,6 @@ function A() {
 ```
 
 ### 测试用例
-
 输入：
 ```javascript
 A(); // OK, function
@@ -3532,11 +3440,8 @@ Z.lolol(); // OK, new (因为有 _constructed 标记)
 "OK, new"
 "OK, new"
 ```
-等等，让我们重新验证文本中提供的逻辑：
-文中提到“使用一个额外的标记……可以解决问题”。然而，提供的文中测试用例输出略显碎片。我们只需坚持核心内容。
 
 ### 方法 2：使用 `new.target`
-
 从 ES6 开始，我们可以使用 `new.target`。`new.target` 属性允许你检测函数是否是使用 `new` 运算符调用的。在普通调用中，`new.target` 为 `undefined`。
 
 ```javascript
@@ -3550,7 +3455,6 @@ function A() {
 ```
 
 ### 测试用例
-
 输入：
 ```javascript
 A(); // OK, function
@@ -3564,20 +3468,13 @@ Z.lolol(); // OK, function
 "OK, new"
 "OK, function"
 ```
-注意：提供的文本输出部分存在格式问题，但逻辑遵循 `new.target`。
-
-© JavaScript Interview Guide | learnersbucket.com
-
-145
 
 # 在 JavaScript 中实现 store 类 (hashSet)
 
 问题描述 -
-
 创建一个具有 `set(key, value)`、`get(key)` 和 `has(key)` 方法的简单 store 类 (hashSet)。
 
 示例：
-
 ```javascript
 const store = new Store();
 store.set('a', 10);
@@ -3611,7 +3508,6 @@ const Store = function() {
 ```
 
 ### 测试用例
-
 输入：
 ```javascript
 const store = new Store();
@@ -3631,54 +3527,26 @@ undefined
 false
 ```
 
-© JavaScript Interview Guide | learnersbucket.com
-
-147
-
 # 创建一个切换函数 (toggle)
 
 问题描述 -
-
 创建一个切换函数，它接收一个参数列表，并在循环调用时切换其中的每一个参数。
 
 示例：
-
 ```javascript
-let hello = toggle(
+let hello = toggle("hello");
+hello() // "hello";
+hello() // "hello";
+
+let onOff = toggle("on", "off");
+onOff() // "on"
+onOff() // "off"
+onOff() // "on"
 ```
 
-
-
-
-"hello"
-
-);
-
-hello()
-
-// "hello";
-
-hello()
-
-// "hello";
-
-let
-
-onOff = toggle(
-"on",
-"off"
-);
-
-onOff() // "on"
-
-onOff() // "off"
-
-onOff() // "on"
-
-`toggle` 函数在每次调用时都会按时针返回每个值，也可以通过从 `toggle` 函数返回一个函数来实现，该函数对值形成闭包以跟踪循环。
+`toggle` 函数在每次调用时都会按顺序返回每个值，也可以通过从 `toggle` 函数返回一个函数来实现，该函数对值形成闭包以跟踪循环。
 
 ### 实现
-
 ```javascript
 const toggle = (...list) => {
   // 跟踪循环
@@ -3693,7 +3561,6 @@ const toggle = (...list) => {
 ```
 
 ### 测试用例
-
 ```javascript
 const hello = toggle("1", "2");
 console.log(hello()); // "1"
@@ -3701,15 +3568,12 @@ console.log(hello()); // "2"
 console.log(hello()); // "1"
 ```
 
-© JavaScript Interview Guide | learnersbucket.com | 148
-
 # 采样函数 (Sampling function)
 
 ## 问题描述
 创建一个函数，接受一个函数作为输入和一个计数，并在指定的调用次数后执行一次该输入函数。这被称为采样函数。
 
 ## 示例
-
 ```javascript
 function message() {
   console.log("hello");
@@ -3725,12 +3589,11 @@ sample();
 sample(); // “hello” 这将被执行
 ```
 
-采样函数与 `throttling`（节流）不同，节流是限制函数在给定时间时间内只执行一次，而采样是通过通过在给定的调用次数内执行一次函数来限制其执行。
+采样函数与 `throttling`（节流）不同，节流是限制函数在给定时间内只执行一次，而采样是通过在给定的调用次数内执行一次函数来限制其执行。
 
 要创建一个采样函数，我们可以创建一个闭包来跟踪函数被调用的次数，当它达到指定计数时，执行输入函数并重置计数器。
 
 ### 实现
-
 ```javascript
 function sampler(fn, count, context) {
   let counter = 0;
@@ -3747,7 +3610,6 @@ function sampler(fn, count, context) {
 ```
 
 ### 测试用例
-
 ```javascript
 function message() {
   console.log("hello");
@@ -3763,12 +3625,9 @@ sample();
 sample(); // hello
 ```
 
-© JavaScript Interview Guide | learnersbucket.com | 150
-
 # 让函数休眠 (Make function sleep)
 
-许多编程语言都有内置函数，可以可以在指定时间内停止函数执行。
-
+许多编程语言都有内置函数，可以在指定时间内停止函数执行。
 * **C 或 PHP**: `sleep(2)`
 * **JAVA**: `Thread.sleep(2000)`
 * **Python**: `time.sleep(2)`
@@ -3777,17 +3636,15 @@ sample(); // hello
 Javascript 没有内置的此类函数，但得益于 ES2018 引入的 promises 和 `async-await`，我们现在可以轻松地实现此功能并无缝使用。
 
 ### 实现
-
 ```javascript
 const sleep = (milliseconds) => {
   return new Promise(resolve => setTimeout(resolve, milliseconds))
 };
 ```
 
-这将创建一个包装函数，该函数将在指定的毫秒后解析 promise。我们可以使用它来防止函数在一定时间内执行执行。
+这将创建一个包装函数，该函数将在指定的毫秒后解析 promise。我们可以使用它来防止函数在一定时间内执行。
 
 ### 测试用例 1: 使用 `.then()`
-
 ```javascript
 sleep(500).then(() => {
   // 执行一些事情
@@ -3795,7 +3652,9 @@ sleep(500).then(() => {
 });
 ```
 
-### 测试用例 2: 使用 `async…await`
+
+
+### 测试用例 2：使用 `async…await`
 
 ```javascript
 const performAction = async () => {
@@ -3805,18 +3664,20 @@ const performAction = async () => {
 performAction();
 ```
 
-这种效果良好，但由于 javascript 的工作机制，它不会像其他编程语言那样停止整个程序的执行，而是只会让我们当前的函数休眠。
+这种效果良好，但由于 JavaScript 的工作机制，它不会像其他编程语言那样停止整个程序的执行，而是只会让当前的函数休眠。
 
 © JavaScript Interview Guide | learnersbucket.com | 152
 
-# 从对象中移除循环 (Remove cycle from the object)
+# 从对象中移除循环
 
 ## 问题描述
-给定一个带有循环的对象，将其中的移除循环或循环引用。
+
+给定一个带有循环的对象，将其中的循环或循环引用移除。
 
 ## 示例
 
 **输入：**
+
 ```javascript
 const List = function(val){
   this.next = null;
@@ -3833,6 +3694,7 @@ item3.next = item1;
 ```
 
 **输出：**
+
 ```javascript
 // 移除循环
 // item1 -> item2 -> item3
@@ -3841,6 +3703,7 @@ item3.next = item1;
 如果你看到上面的示例，我们创建了一个接受值和指向下一个相同节点的列表（类似于链表），并使用它创建了循环对象。为了打破这个循环，我们必须删除 `next` 指针。
 
 这种移除可以在两个地方发生：
+
 1. 正常用途。
 2. 创建 JSON 时。
 
@@ -3875,6 +3738,7 @@ const removeCycle = (obj) => {
 ### 测试用例
 
 **输入：**
+
 ```javascript
 const List = function(val){
   this.next = null;
@@ -3890,7 +3754,9 @@ item3.next = item1;
 removeCycle(item1);
 console.log(item1);
 ```
+
 **输出：**
+
 ```javascript
 {val: 10, next: {val: 20, next: {val: 30}}}
 ```
@@ -3917,6 +3783,7 @@ const getCircularReplacer = () => {
 ### 测试用例
 
 **输入：**
+
 ```javascript
 const List = function(val){
   this.next = null;
@@ -3931,43 +3798,36 @@ item3.next = item1;
 
 console.log(JSON.stringify(item1, getCircularReplacer()));
 ```
+
 **输出：**
+
 ```json
 {"next":{"next":{"val":30},"val":20},"val":10}
 ```
 
 © JavaScript Interview Guide | learnersbucket.com | 156
 
-# 过滤多维数组 (Filter Multidimensional Array)
+# 过滤多维数组
 
 ## 问题描述
+
 给定多维数组，创建一个过滤函数，该函数接受回调函数作为输入，并返回一个所有通过回调函数实现的测试元素的新数组。
 
 ## 示例
 
 **输入：**
+
 ```javascript
 const arr = [[1, [2, [3, 'foo', {'a': 1, 'b': 2}]], 'bar']];
-const filtered = filter(arr, (e) => typeof e ===
-```
-
-
-
-
-```javascript
-'string'
-
-);
+const filtered = filter(arr, (e) => typeof e === 'string');
 
 console.log(JSON.stringify(filtered));
 ```
-Output:
+
+**输出：**
+
 ```json
-[[[[
-"foo"
-]],
-"bar"
-]]
+[[[["foo"]],"bar"]]
 ```
 
 要过滤多维数组，我们需要递归地过滤每个子数组并合并它们的结果。
@@ -3999,22 +3859,26 @@ const filter = (arr, test) => {
 ```
 
 ### 测试用例
-Input:
+
+**输入：**
+
 ```javascript
 const arr = [[1, [2, [3, "foo", { a: 1, b: 2 }]], "bar"]];
 const filtered = filter(arr, (e) => typeof e === "number");
 console.log(JSON.stringify(filtered));
 ```
-Output:
+
+**输出：**
+
 ```json
-[[1,[2,[3]]]
+[[1,[2,[3]]]]
 ```
 
 我们可以扩展这种方法，在数组的原型本身实现一个 `multiFilter`，它将接收一个回调函数并根据回调的结果过滤数组。
 
 ```javascript
 Array.prototype.multiFilter = function (test) {
-  // 原始数组;
+  // 原始数组
   const originalArray = this;
   const filter = (arr, test) => {
     // 存储输出
@@ -4045,32 +3909,41 @@ Array.prototype.multiFilter = function (test) {
 ```
 
 ### 测试用例
-Input:
+
+**输入：**
+
 ```javascript
 const arr = [[1, [2, [3, "foo", { a: 1, b: 2 }]], "bar"]];
 const filtered = arr.multiFilter((e) => typeof e === "number");
 console.log(JSON.stringify(filtered));
 ```
-Output:
+
+**输出：**
+
 ```json
-[[1,[2,[3]]]
+[[1,[2,[3]]]]
 ```
 
 # 嵌套数组中的元素计数
 
-## 题目描述 -
+## 题目描述
+
 给定一个嵌套数组和一个回调函数，统计所有通过回调测试的元素数量并返回计数。
 
 这个问题与上面的 `多维数组过滤` 类似，唯一的区别在于，我们不需要过滤数组，只需要返回数组中通过测试的元素数量。
 
 ## 示例
-Input:
+
+**输入：**
+
 ```javascript
 const arr = [[1, [2, [3, 4, "foo", { a: 1, b: 2 }]], "bar"]];
 const count = countInArray(arr, (e) => typeof e === "number");
 console.log(count);
 ```
-Output:
+
+**输出：**
+
 `4`
 
 我们只需要创建一个包含内部函数的闭包。父函数将持有一个变量，每当数组元素通过回调函数的测试时，该变量就会加增，而内部函数将递归搜索嵌套数组。
@@ -4103,24 +3976,33 @@ let countInArray = function (inputArr, test) {
 ```
 
 ### 测试用例
-Input:
+
+**输入：**
+
 ```javascript
 const arr = [[1, [2, [3, 4, "foo", { a: 1, b: 2 }]], "bar"]];
 const count = countInArray(arr, (e) => typeof e === "number");
 console.log(count);
 ```
-Output:
+
+**输出：**
+
 `4`
 
 # 将 HEX 颜色转换为 RGB
 
-## 题目描述 -
+## 题目描述
+
 实现一个将 HEXA 颜色代码转换为 RGB 数字的函数。
 
 ## 示例
-Input:
+
+**输入：**
+
 `"#ff33ff"`
-Output:
+
+**输出：**
+
 ```json
 {
   "r": 255,
@@ -4135,8 +4017,9 @@ RGB 格式是红、绿、蓝在 0 – 255 范围内的颜色组合。十六进�
 
 有多种方法可以将 HEXA 颜色代码转换为 RGB 数字。
 
-### 方法 1. 使用 slice() 方法
-HEXA 颜色代码 '#ff33ff' 以 '#' 开头，后面跟着六个字符，分别代表 R、G、B。我们可以使用 `slice()` 获取两个数字，然后使用 `parseInt()` 方法接收一个进制值并将字符串转换为数字。
+### 方法 1：使用 `slice()` 方法
+
+HEXA 颜色代码 `'#ff33ff'` 以 `'#'` 开头，后面跟着六个字符，分别代表 R、G、B。我们可以使用 `slice()` 获取两个数字，然后使用 `parseInt()` 方法接收一个进制值并将字符串转换为数字。
 
 ```javascript
 const hex2rgb = (hex) => {
@@ -4154,7 +4037,8 @@ console.log(hex2rgb("#ff33ff"));
 }
 */
 ```
-如果是类似 #f3f 这种短形式的 Hex 代码，我们需要将其转换为原始形式。
+
+如果是类似 `#f3f` 这种短形式的 Hex 代码，我们需要将其转换为原始形式。
 
 ```javascript
 // 创建完整的 hex
@@ -4194,7 +4078,8 @@ console.log(hex2rgb("#f3f"));
 */
 ```
 
-### 方法 2. 使用正则
+### 方法 2：使用正则
+
 字符串的 `match()` 方法接收正则表达式并返回匹配数组。我们可以使用这个数组来解析 HEXA 值。
 
 ```javascript
@@ -4236,20 +4121,26 @@ console.log(hex2rgb("#f3f"));
 
 # 将 RGB 转换为 HEX 颜色
 
-## 题目描述 -
+## 题目描述
+
 实现一个将 RGB 数字转换为 HEXA 颜色代码的函数。
 
 ## 示例
-Input:
+
+**输入：**
+
 `255, 51, 255`
-Output:
+
+**输出：**
+
 `"#ff33ff"`
 
 RGB 格式是红、绿、蓝在 0 – 255 范围内的颜色组合。十六进制颜色代码是 RGB 数字的十六进制表示。
 
 十六进制使用 16 个唯一符号，将 0 – 9 之间的值表示为“0 – 9”，将 10 – 15 之间的值表示为“A – F”或“a – f”。
 
-### 方法 1. 使用 toString() 方法
+### 方法 1：使用 `toString()` 方法
+
 `toString()` 方法接收一个进制值并将值转换为该进制。
 
 ```javascript
@@ -4266,29 +4157,7 @@ console.log(rgbToHex(255, 51, 255));
 // Output: "#ff33ff"
 ```
 
-
-
-
-
-```javascript
-+ hex : hex;
-
-}
-```
-
-© JavaScript Interview Guide | learnersbucket.com
-
-166
-
-```javascript
-const rgbToHex = (r, g, b) => {
-  return "#" + componentToHex(r) + componentToHex(g) + componentToHex(b);
-}
-console.log(rgbToHex(255, 51, 255));
-//"#ff33ff"
-```
-
-### 方法 2. 使用[左移](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Left_shift) (<<) 运算符
+### 方法 2：使用左移 (`<<`) 运算符
 
 ```javascript
 const rgbToHex = (r, g, b) => {
@@ -4298,7 +4167,7 @@ console.log(rgbToHex(255, 51, 255));
 //"#ff33ff"
 ```
 
-### 方法 3. 使用 Array.map()
+### 方法 3：使用 `Array.map()`
 
 ```javascript
 const rgbToHex = (r, g, b) =>
@@ -4307,13 +4176,12 @@ console.log(rgbToHex(255, 51, 255));
 //"#ff33ff"
 ```
 
-© JavaScript Interview Guide | learnersbucket.com
-
-167
+© JavaScript Interview Guide | learnersbucket.com | 167
 
 # 内存文件系统库
 
 ## 问题描述
+
 实现一个简单的内存文件系统库，支持以下功能：
 
 - `createDirectory(name)` – 在当前路径下创建一个目录。
@@ -4325,9 +4193,10 @@ console.log(rgbToHex(255, 51, 255));
 - `getCurDirectory` – 返回当前目录的项。
 - `getCurDirectoryPath` – 返回当前目录的路径。
 
-为了实现这个函数，我们将大量使用[对象](https://learnersbucket.com/tutorials/data-structures/javascript-objects-complete-reference)，处理对象是一项复杂的任务，特别是如果你不彻底熟悉如何有效地使用引用类型的对象时。
+为了实现这个函数，我们将大量使用对象，处理对象是一项复杂的任务，特别是如果你不彻底熟悉如何有效地使用引用类型的对象时。
 
 ## 模板代码
+
 ```javascript
 const FileSystem = function() {
   this.directory = {
@@ -4338,17 +4207,16 @@ const FileSystem = function() {
 };
 ```
 
-© JavaScript Interview Guide | learnersbucket.com
-
-168
-
 在这里我们定义了 3 个变量：
+
 - `directory` – 存储根目录。
 - `currentDir` – 存储根目录的引用。
 - `currentDirPath` – 存储当前目录的路径。
 
 ### 创建新目录
+
 新目录只是在给定路径上添加一个新对象。
+
 ```javascript
 this.createDirectory = function(name) {
   this.currentDir[name] = {};
@@ -4356,8 +4224,11 @@ this.createDirectory = function(name) {
 ```
 
 ### 更改目录路径
+
 我们接受绝对路径值，并以连字符分隔的路径-子路径-子路径格式呈现。一旦目录更改，我们还会更新 `currentDir` 对象引用。这样当你创建一个新目录或添加新文件时，它只会被添加到 `currentDir` 中。
+
 注意 – 我们没有检查目录是否存在。
+
 ```javascript
 this.changeDirectory = function(path) {
   this.currentDir = this._changeDirectoryHelper(path);
@@ -4373,19 +4244,18 @@ this._changeDirectoryHelper = function(path) {
 }
 ```
 
-© JavaScript Interview Guide | learnersbucket.com
+© JavaScript Interview Guide | learnersbucket.com | 169
 
-169
+### 获取当前目录路径
 
-### 获取当前目录
-返回当前目录对象。
 ```javascript
 this.getCurDirectoryPath = function() {
   return this.currentDirPath;
 }
 ```
 
-### 获取当前目录路径
+### 获取当前目录
+
 ```javascript
 this.getCurDirectory = function() {
   return this.currentDir;
@@ -4393,7 +4263,9 @@ this.getCurDirectory = function() {
 ```
 
 ### 添加文件
-在当前路径下，文件将以数组的形式添加到 "files" 键中，这便于添加和删除。
+
+在当前路径下，文件将以数组的形式添加到 `"files"` 键中，这便于添加和删除。
+
 ```javascript
 this.addFile = function(fileName) {
   if (this.currentDir.files) {
@@ -4405,8 +4277,10 @@ this.addFile = function(fileName) {
 }
 ```
 
-### 文件
+### 删除文件
+
 要删除文件只需过滤当前目录下的文件数组。
+
 ```javascript
 this.deleteFile = function(fileName) {
   this.currentDir.files = this.currentDir.files.filter((e) => e !== fileName);
@@ -4415,24 +4289,27 @@ this.deleteFile = function(fileName) {
 ```
 
 ### 删除目录
+
 要删除目录，切换到当前路径并删除任何子目录。
+
 ```javascript
 this.deleteDirectory = function(name) {
   // 实现逻辑
 }
 ```
 
-© JavaScript Interview Guide | learnersbucket.com
-
-170
-
 ### 获取根目录
+
 返回根对象。
+
 ```javascript
 this.getRootDirectory = function() {
   return this.directory;
 }
-```### 完整代码
+```
+
+### 完整代码
+
 ```javascript
 const FileSystem = function() {
   this.directory = {
@@ -4492,7 +4369,9 @@ const FileSystem = function() {
 ```
 
 ### 测试用例
-输入：
+
+**输入：**
+
 ```javascript
 const dir = new FileSystem();
 dir.createDirectory("prashant");
@@ -4509,7 +4388,9 @@ dir.changeDirectory("root");
 dir.deleteDirectory("prashant");
 console.log(dir.getRootDirectory());
 ```
-输出：
+
+**输出：**
+
 ```json
 {
   "root": {
@@ -4523,17 +4404,18 @@ console.log(dir.getRootDirectory());
 }
 ```
 
-© JavaScript Interview Guide | learnersbucket.com
-
-171
+© JavaScript Interview Guide | learnersbucket.com | 171
 
 # 实现一个简单的流 API
 
 ## 问题描述
+
 实现一个简单的流 API。用户应该能够创建多个订阅，并且当向流推入值时，所有的订阅都会运行。
 
 ## 示例
-输入：
+
+**输入：**
+
 ```javascript
 const z = new Stream();
 z.subscribe((value) => console.log(value));
@@ -4541,28 +4423,24 @@ z.subscribe((value) => console.log(value * 2));
 z.subscribe((value) => console.log(value * 3));
 z.push(2);
 ```
-输出：
+
+**输出：**
+
 ```
 2
 4
 6
 ```
 
-我们需要实现一个流 API 的基础版本。[流 API](https://developer.mozilla.org/en-US/docs/API/Streams_API) 以块传递数据，这意味着当我们不断推入值时，它应该通过所有的订阅。
+我们需要实现一个流 API 的基础版本。流 API 以块传递数据，这意味着当我们不断推入值时，它应该通过所有的订阅。
 
 要实现这一点，我们需要做的是缓存订阅，每当推入值时，调用所有的订阅方法。
 
-© JavaScript Interview Guide | learnersbucket.com
-
-172
+© JavaScript Interview Guide | learnersbucket.com | 172
 
 ## 基于类的实现
+
 在构造函数中初始化缓存，然后在类内部创建两个方法：`subscribe` 和 `push`。`subscribe` 将缓存传递给它的方法，而在 `push` 方法中，我们将带值调用所有的订阅方法。
-
-
-
-
-作为参数接收。
 
 ```javascript
 class Stream {
@@ -4586,7 +4464,9 @@ class Stream {
 ```
 
 ### 测试用例
-Input:
+
+**输入：**
+
 ```javascript
 const z = new Stream();
 z.subscribe((value) => console.log(value));
@@ -4594,7 +4474,9 @@ z.subscribe((value) => console.log(value * 2));
 z.subscribe((value) => console.log(value * 3));
 z.push(2);
 ```
-Output:
+
+**输出：**
+
 ```
 2
 4
@@ -4602,6 +4484,7 @@ Output:
 ```
 
 ### 基于函数的实现
+
 ```javascript
 function Stream() {
   let subscriptions = [];
@@ -4620,7 +4503,9 @@ function Stream() {
 ```
 
 ### 测试用例
-Input:
+
+**输入：**
+
 ```javascript
 const z = new Stream();
 z.subscribe((value) => console.log(value));
@@ -4628,7 +4513,9 @@ z.subscribe((value) => console.log(value * 2));
 z.subscribe((value) => console.log(value * 3));
 z.push(2);
 ```
-Output:
+
+**输出：**
+
 ```
 2
 4
@@ -4640,9 +4527,11 @@ Output:
 ## 创建一个记忆化函数
 
 ## 问题描述
+
 创建一个函数，对给定的输入进行记忆化或缓存结果，以便后续对相同输入的调用会更快。
 
 ## 示例
+
 ```javascript
 slowFunc(params) // 普通调用，输出缓慢
 const memoized = memoize(slowFunc);
@@ -4653,7 +4542,7 @@ memoized(differentParams) // 第一次调用，极慢 -> 缓存结果
 memoized(differentParams) // 第二调用，非常快。
 ```
 
-[记忆化](https://en.wikipedia.org/wiki/Memoization) 是一种在计算机科学中广泛使用的优化技术，用于避免密集计算中的重复计算。我们缓存给定输入的结果，并在后续对相同输入调用时返回它，而不是再次执行昂贵的计算。
+记忆化 是一种在计算机科学中广泛使用的优化技术，用于避免密集计算中的重复计算。我们缓存给定输入的结果，并在后续对相同输入调用时返回它，而不是再次执行昂贵的计算。
 
 我们将创建一个带有高阶函数的闭包，它将缓存给定的输入的结果。如果进行了调用且输入的结果已存储在缓存中，则我们将返回它；否则，执行函数并缓存其结果。
 
@@ -4676,7 +4565,9 @@ const memoize = function(fn) {
 ```
 
 ### 测试用例
-Input:
+
+**输入：**
+
 ```javascript
 function factorial(n) {
   if (n === 0 || n === 1) {
@@ -4691,7 +4582,9 @@ console.log(a);
 let b = memoizedFactorial(100) // 缓存调用，更快
 console.log(b);
 ```
-Output:
+
+**输出：**
+
 ```
 9.33262154439441e+157 // 慢
 9.33262154439441e+157 // 快
@@ -4702,20 +4595,23 @@ Output:
 ## 方法链 - 第 1 部分
 
 ## 问题描述
+
 通过实现一个执行加、减、除、乘基本操作的计算器，来解释 JavaScript 中的方法链调用。
 
 ## 示例
+
 ```javascript
 calculator.add(10).subtract(2).divide(2).multiply(5);
 console.log(calculator.total); // 20
 ```
 
-方法链是一种面向对象的范式，其中方法通常共享同一个引用，在 JavaScript 中，这是通过从每个方法共享 [this](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this)（当前上下文）来实现。我们将看到方法链的两种不同实现。
+方法链是一种面向对象的范式，其中方法通常共享同一个引用，在 JavaScript 中，这是通过从每个方法共享 `this`（当前上下文）来实现的。我们将看到方法链的两种不同实现。
 
 1. 使用对象。
 2. 使用函数。
 
 ### 方法 1：使用对象
+
 对象内部的方法可以使用 `this` 关键字引用当前对象，因此我们可以使用 `this` 来执行我们的操作并返回它们，以便它们可以在链中被共享。
 
 ```javascript
@@ -4738,47 +4634,61 @@ const calculator = {
     return this;
   }
 };
+```
 
 ### 测试用例
-Input:
+
+**输入：**
+
 ```javascript
 calculator.add(10).subtract(2).divide(2).multiply(5);
 console.log(calculator.total);
 ```
-Output:
+
+**输出：**
+
 ```
 20
 ```
 
 ### 方法 2：使用函数
+
 对象的问题是无法创建新实例。但可以使用函数来解决。我们只需要从每个方法返回 `this` 关键字，这样就可以进行链式调用。
 
 ```javascript
-// 这里的代码逻辑在原文，，函数函数函数
 const CALC = function() {
   this.total = 0;
-  add = (val) => {
+  this.add = (val) => {
     this.total += val;
     return this;
   };
-  subtract = (val) => {
+  this.subtract = (val) => {
     this.total -= val;
     return this;
   };
-  divide = (val) => {
+  this.divide = (val) => {
     this.total /= val;
     return this;
   };
-}
+  this.multiply = (val) => {
+    this.total *= val;
+    return this;
+  };
+};
+```
 
 ### 测试用例
-Input:
+
+**输入：**
+
 ```javascript
 const calculator = new CALC();
 calculator.add(10).subtract(2).divide(2).multiply(5);
 console.log(calculator.total);
 ```
-Output:
+
+**输出：**
+
 ```
 20
 ```
@@ -4788,18 +4698,23 @@ Output:
 ## 方法链 - 第 2 部分
 
 ## 问题描述
+
 通过实现以下示例展示 JavaScript 中方法链的运行演示。
 
 ## 示例
-Input:
+
+**输入：**
+
 ```
 computeAmount().lacs(15).crore(5).crore(2).lacs(20).thousand(45).crore(7).value();
 ```
-Output: `14345000`
+
+**输出：** `14345000`
 
 在上一个问题中，我们已经看到了方法链的基于对象和函数的实现。同样，我们将用不同的方法解决这个问题。
 
 ### 方法 1：使用构造函数
+
 我们将创建一个构造函数，它可以帮助我们创建新实例并执行操作。
 
 ```javascript
@@ -4836,15 +4751,19 @@ const ComputeAmount = function() {
 ```
 
 ### 测试用例
-Input:
+
+**输入：**
+
 ```javascript
 const computeAmount = new ComputeAmount();
 const amount = computeAmount.lacs(15).crore(5).crore(2).lacs(20).thousand(45).crore(7).value();
 console.log(amount === 14345000);
 ```
-Output: `true`
+
+**输出：** `true`
 
 ### 方法 2：使用函数作为闭包
+
 我们将形成闭包并从中返回一个新对象，该对象包含了所有逻辑。这样我们不需要每次都创建一个构造函数，数据也不会重复。
 
 ```javascript
@@ -4856,40 +4775,36 @@ const ComputeAmount = function() {
       return this;
     },
     lacs: function(val) {
-      this
-
-
-
-
-```javascript
-.store += val * Math.pow(10, 5);
-return this;
-},
-thousand: function(val) {
-  this.store += val * Math.pow(10, 3);
-  return this;
-},
-hundred: function(val) {
-  this.store += val * Math.pow(10, 2);
-  return this;
-},
-ten: function(val) {
-  this.store += val * 10;
-  return this;
-},
-unit: function(val) {
-  this.store += val;
-  return this;
-},
-value: function() {
-  return this.store;
-}
-}
+      this.store += val * Math.pow(10, 5);
+      return this;
+    },
+    thousand: function(val) {
+      this.store += val * Math.pow(10, 3);
+      return this;
+    },
+    hundred: function(val) {
+      this.store += val * Math.pow(10, 2);
+      return this;
+    },
+    ten: function(val) {
+      this.store += val * 10;
+      return this;
+    },
+    unit: function(val) {
+      this.store += val;
+      return this;
+    },
+    value: function() {
+      return this.store;
+    }
+  }
+};
 ```
 
 ### 测试用例
 
-**输入:**
+**输入：**
+
 ```javascript
 const amount = ComputeAmount().lacs(9).lacs(1).thousand(10).ten(1).unit(1).value();
 console.log(amount === 1010011);
@@ -4898,7 +4813,8 @@ const amount2 = ComputeAmount().lacs(15).crore(5).crore(2).lacs(20).thousand(45)
 console.log(amount2 === 143545000);
 ```
 
-**输出:**
+**输出：**
+
 ```
 true
 true
@@ -4906,13 +4822,16 @@ true
 
 ---
 
-# 实现 clearAllTimeout
+# 实现 `clearAllTimeout`
 
 ## 问题描述
+
 实现一个 `clearAllTimeout` 函数，能够一次性停止所有正在运行中的 `setTimeout`。
 
 ## 示例
-**输入:**
+
+**输入：**
+
 ```javascript
 setTimeout(() => {
   console.log("hello")
@@ -4937,7 +4856,8 @@ setTimeout(() => {
 }, 5000);
 ```
 
-**输出:**
+**输出：**
+
 ```
 "hello4"
 ```
@@ -4948,7 +4868,7 @@ setTimeout(() => {
 
 ```javascript
 window.clearAllTimeout = function() {
-  //清除所有的超时
+  // 清除所有的超时
   while (timeoutIds.length) {
     clearTimeout(timeoutIds.pop());
   }
@@ -4959,8 +4879,10 @@ window.clearAllTimeout = function() {
 
 ```javascript
 window.timeoutIds = [];
+
 // 存储原始方法
 const originalTimeoutFn = window.setTimeout;
+
 // 重写原始方法
 window.setTimeout = function(fn, delay) {
   const id = originalTimeoutFn(fn, delay);
@@ -4971,10 +4893,13 @@ window.setTimeout = function(fn, delay) {
 ```
 
 ### 完整代码
+
 ```javascript
 window.timeoutIds = [];
+
 // 存储原始方法
 const originalTimeoutFn = window.setTimeout;
+
 // 重写原始方法
 window.setTimeout = function(fn, delay) {
   const id = originalTimeoutFn(fn, delay);
@@ -4982,6 +4907,7 @@ window.setTimeout = function(fn, delay) {
   // 返回 id 以便可以被原始地清除
   return id;
 }
+
 window.clearAllTimeout = function() {
   // 清除所有的超时
   while (timeoutIds.length) {
@@ -4991,6 +4917,7 @@ window.clearAllTimeout = function() {
 ```
 
 ### 测试用例
+
 ```javascript
 setTimeout(() => {
   console.log("hello")
@@ -5010,19 +4937,20 @@ setTimeout(() => {
 
 clearAllTimeout();
 ```
+
 如果我们测试这个，它的运行符合预期。它会清除所有的超时任务，因为 `setTimeout` 是一个异步函数，这意味着定时器函数不会暂停函数栈中其他函数的执行，因此 `clearAllTimeout` 在这些函数执行之前运行并取消了它们。
 
 如果你注意到，这里添加了一个全局变量 `timeoutIds`，我们用它来存储每个 `setTimeout` 的 ID 稍后取消所有它们。使用全局变量是一种坏习惯，因为它可以被重写。
 
-我们在这里可以做的其中件事是将这些封装在闭包、高阶函数或对象内部以限制其范围。这样我们就不会干扰现有的方法，并且仍然可以完成工作。
+我们在这里可以做的其中一件事是将这些封装在闭包、高阶函数或对象内部以限制其范围。这样我们就不会干扰现有的方法，并且仍然可以完成工作。
 
 ```javascript
 const MY_TIMER = {
   timeoutIds: [],
   // 全局超时 ID 数组
   // 创建一个 MY_TIMER 的超时
-  setTimeout: function(fn,delay) {
-    let id = setTimeout(fn,delay);
+  setTimeout: function(fn, delay) {
+    let id = setTimeout(fn, delay);
     this.timeoutIds.push(id);
     return id;
   },
@@ -5036,28 +4964,37 @@ const MY_TIMER = {
 ```
 
 ### 测试用例
-**输入:**
+
+**输入：**
+
 ```javascript
 const id = MY_TIMER.setTimeout(() => {
   console.log("hello")
 }, 1000);
+
 console.log(id);
+
 MY_TIMER.clearAllTimeout();
 ```
-**输出:**
+
+**输出：**
+
 ```
-13 //timeoutId
+13 // timeoutId
 ```
 
 ---
 
-# 实现 clearAllInterval
+# 实现 `clearAllInterval`
 
 ## 问题描述
+
 实现一个 `clearAllInterval` 函数，能够一次性停止所有运行中的 `setInterval`。
 
 ## 示例
-**输入:**
+
+**输入：**
+
 ```javascript
 setInterval(() => {
   console.log("hello")
@@ -5074,10 +5011,12 @@ setInterval(() => {
 }, 1000);
 ```
 
-**输出:**
+**输出：**
+
 ```
 "hello3"
 ```
+
 `setInterval` 在指定的时间后重复执行一个函数。`setInterval` 方法返回一个唯一的 `id`，可以使用 `clearInterval` 取消该间隔。
 
 同样，由于我们已经实现了 `clearAllTimeout`，相同的逻辑也可以用于实现 `clearAllInterval`。
@@ -5087,8 +5026,10 @@ setInterval(() => {
 ```javascript
 // 存储所有的间隔 ID
 window.intervalIds = [];
+
 // 原始间隔函数
 const originalIntervalFn = window.setInterval;
+
 // 重写原始方法
 window.setInterval = function(fn, delay) {
   const id = originalIntervalFn(fn, delay);
@@ -5096,6 +5037,7 @@ window.setInterval = function(fn, delay) {
   intervalIds.push(id);
   return id;
 }
+
 // 清除所有间隔
 window.clearAllInterval = function() {
   while (intervalIds.length) {
@@ -5105,6 +5047,7 @@ window.clearAllInterval = function() {
 ```
 
 ### 测试用例
+
 ```javascript
 setInterval(() => {
   console.log("hello")
@@ -5120,36 +5063,34 @@ setInterval(() => {
   console.log("hello3")
 }, 1000);
 ```
+
 如果你注意到，这里添加了一个全局变量 `intervalIds`，我们用它来存储每个 `setInterval` 的 ID 稍后取消所有它们。使用全局变量是一种坏习惯，因为它可以被重写。
 
-我们在这里可以做的其中件事是将这些封装在闭包、高阶函数或对象内部以限制其范围。这样我们就不会干扰现有的方法，并且仍然可以完成工作。
+我们在这里可以做的其中一件事是将这些封装在闭包、高阶函数或对象内部以限制其范围。这样我们就不会干扰现有的方法，并且仍然可以完成工作。
 
 ```javascript
 const MY_TIMER = {
   intervalIds: [],
   // 全局间隔 ID 数组
   // 创建一个 MY_TIMER 的间隔
-  setInterval: function(fn,delay) {
-    let id = setInterval(fn,delay);
+  setInterval: function(fn, delay) {
+    let id = setInterval(fn, delay);
     this.intervalIds.push(id);
     return id;
   },
-  // MY_TIMER 的 clearAllTimeout
+  // MY_TIMER 的 clearAllInterval
   clearAllInterval: function() {
     while (this.intervalIds.length) {
-      clearTimeout(this.intervalIds.pop());
+      clearInterval(this.intervalIds.pop());
     }
   }
 };
 ```
 
-
-
-
-
 ### 测试用例
 
-### 输入
+**输入：**
+
 ```javascript
 MY_TIMER.setInterval(
   () => {
@@ -5175,7 +5116,8 @@ MY_TIMER.setInterval(
 );
 ```
 
-### 输出
+**输出：**
+
 ```
 "Hello3"
 // 最后一个，在约 1 秒后执行
@@ -5183,12 +5125,14 @@ MY_TIMER.setInterval(
 
 ---
 
-# 创建一个伪的 setTimeout
+# 创建一个伪的 `setTimeout`
 
 ## 问题描述
+
 创建一个伪的 `setTimeout`，其工作方式应与原始的 `setTimeout` 方法相似。
 
 ## 示例
+
 ```javascript
 MY_TIMER.setTimeout(
   () => {
@@ -5208,9 +5152,10 @@ MY_TIMER.run();
 ```
 
 ### 输出
+
 ```
 2
-//将在 2 秒后打印
+// 将在 2 秒后打印
 1
 // 将在第一个之后 500 毫秒后打印
 ```
@@ -5250,7 +5195,7 @@ const MY_TIMER = {
     // 移除给定 id 的条目
     this.queue = this.queue.filter(({ id }) => id !== removeId);
   },
-  // 开始开始运行计时器
+  // 开始运行计时器
   run: function () {
     // 这将持续运行循环
     // 直到队列中的所有条目都被调用
@@ -5277,7 +5222,9 @@ const MY_TIMER = {
 ```
 
 ### 测试用例
-### 输入
+
+**输入：**
+
 ```javascript
 MY_TIMER.setTimeout(
   () => {
@@ -5309,7 +5256,9 @@ MY_TIMER.setTimeout(
 
 MY_TIMER.run();
 ```
-### 输出
+
+**输出：**
+
 ```
 2
 1
@@ -5322,11 +5271,13 @@ MY_TIMER.run();
 # 柯里化 - 问题 1
 
 ### 什么是柯里化？
+
 JavaScript 中的柯里化是函数式编程中的概念，我们可以将函数作为参数（回调），并返回没有任何副作用（对程序状态的更改）的函数。
 
 简单来说，在柯里化中，我们为每次被调用的函数返回一个函数，该函数内联接受下一个参数。通过柯里化的帮助，我们可以将一个带有多个参数的函数转换为一系列嵌套函数。
 
 ## 示例
+
 ```javascript
 // 普通函数
 sum(1, 2, 3) // 应该返回 6
@@ -5339,10 +5290,6 @@ sum(1)(2)(3) // 应该返回 6
 
 使用变量的目的是，当传递的参数少于限制时，我们将进一步使用它在闭包中存储下一个参数。
 
-
-
-
-
 ```javascript
 const res = sum(1, 2, 3, 4);
 const res2 = sum(1)(2)(3)(4);
@@ -5351,12 +5298,16 @@ const res4 = sum(1, 2, 3)(4);
 const res5 = sum(1)(2, 3, 4);
 console.log(res, res2, res3, res4, res5);
 ```
-Output:
+
+**输出：**
+
+```
 10
 10
 10
 10
 10
+```
 
 ### 特殊情况：当带有空参数调用时返回数值
 
@@ -5395,7 +5346,9 @@ const sum = (...args) => {
 ```
 
 ### 测试用例
-Input:
+
+**输入：**
+
 ```javascript
 const res = sum(1, 2, 3, 4)();
 const res2 = sum(1)(2)(3)(4)();
@@ -5405,28 +5358,35 @@ const res5 = sum(1)(2, 3, 4)();
 const res6 = sum();
 console.log(res, res2, res3, res4, res5, res6);
 ```
-Output:
+
+**输出：**
+
+```
 10
 10
 10
 10
 10
 0
+```
 
 ---
 
 # 柯里化 - 问题 2
 
 ## 题目描述
+
 创建一个 javascript 函数，它能够记住之前传递的值，并返回当前值与之前值之和。
 
 ## 示例
+
 ```javascript
 sum(5); // 5
 sum(3); // 8
 sum(4); // 12
 sum(0); // 12
 ```
+
 Javascript 函数在执行后仍然可以访问其父函数的状态（属性和方法）。因此，为了在 javascript 中创建一个返回之前值之和的函数，我们将使用闭包这种技术。
 
 ```javascript
@@ -5438,12 +5398,14 @@ const curry = () => {
   return function (num = 0) {
     sum += num;
     return sum;
-};
+  };
 };
 ```
+
 在这里，我们创建了一个名为 `curry` 的函数，它有一个存储来跟踪之前的值，并返回一个内部函数。Javascript 函数的强大之处在于，即使在内部函数被返回后，它仍然可以访问父函数的属性和方法。我们现在调用这个函数，它将返回内部函数，我们可以使用返回的内部函数来执行操作。
 
 ### 测试用例
+
 ```javascript
 // 返回并存储内部函数。
 let sum = curry();
@@ -5459,6 +5421,7 @@ console.log(sum()); // 12
 # 柯里化 - 问题 3
 
 ## 题目描述
+
 编写一个满足以下条件的函数：
 `add(1)(2).value() = 3;`
 `add(1, 2)(3).value() = 6;`
@@ -5468,16 +5431,20 @@ console.log(sum()); // 12
 这是一个有点棘手的问题，要求我们使用并修改 `valueOf()` 方法。当 JavaScript 将对象转换为原始值时，它会使用 `valueOf()` 方法。当 JavaScript 遇到预期原始值的对象时，它会自动调用 `valueOf()` 方法，因此你不需要手动去执行。
 
 ## 示例
+
 ```javascript
 function MyNumberType(number) {
   this.number = number;
 }
+
 MyNumberType.prototype.valueOf = function() {
   return this.number + 1;
 };
+
 const myObj = new MyNumberType(4);
 myObj + 3; // 8
 ```
+
 因此，我们可以形成一个闭包并在数组中跟踪参数，并且每次接受新参数时返回一个新函数。我们还将重写 `valueOf()` 方法并返回每次操作所有参数之和，同时添加一个新方法 `value()`，该方法将引用 `valueOf()`，因此在调用时将返回参数之和。
 
 ```javascript
@@ -5501,31 +5468,37 @@ function add(...current) {
 ```
 
 ### 测试用例
-Input:
+
+**输入：**
+
 ```javascript
 console.log(add(1)(2).value() == 3);
 console.log(add(1, 2)(3).value() == 6);
 console.log(add(1)(2)(3).value() == 6);
 console.log(add(1)(2) + 3 == 6);
 ```
-Output:
+
+**输出：**
+
+```
 true
 true
 true
 true
+```
 
 ---
 
 ## 24 小时制时间转换
 
 ## 题目描述
+
 给定一个 12 小时格式的时间，将其转换为 24 小时格式。
 
 ## 示例
-Input:
-`"12:10AM"`,`"12:33PM"`
-Output:
-`"00:10"`,`"12:33"`
+
+**输入：** `"12:10AM"`, `"12:33PM"`
+**输出：** `"00:10"`, `"12:33"`
 
 我们需要检查 12 小时格式的字符串是属于 “AM” 还是 “PM”，并对其进行格式化。JavaScript 字符串有 `endsWith` 方法可以检查是否以 “AM” 或 “PM” 结尾。
 
@@ -5534,41 +5507,47 @@ const formatTime = (time) => {
   // 将输入转换为小写
   const timeLowerased = time.toLowerCase();
   // 将时间拆分为小时和分钟
-  let [hours, mins] = time.split();
+  let [hours, mins] = time.split(":");
   // 12 需要特殊处理
   if (timeLowerased.endsWith("am")) {
     hours = hours == 12 ? "0" : hours;
   } else if (timeLowerased.endsWith("pm")) {
     hours = hours == 12 ? hours : String(+hours + 12);
   }
-  return `${hours.padStart(2, 0)}:${mins.slice(0, -2).padStart(2, 0)}`;
+  return `${hours.padStart(2, "0")}:${mins.slice(0, -2).padStart(2, "0")}`;
 }
 ```
 
 ### 测试用例
-Input:
+
+**输入：**
+
 ```javascript
 console.log(formatTime("12:10AM"));
 console.log(formatTime("12:33PM"));
 ```
-Output:
+
+**输出：**
+
+```
 00:10
 12:33
+```
 
 ---
 
 ## 12 小时制时间转换
 
 ## 题目描述
+
 给定一个 24 小时格式的时间，将其转换为 12 小时格式。
 
 ## 示例
-Input:
-`"00:00"`,`"12:33"`
-Output:
-`"12:00 AM"`,`"12:33 PM"`
 
-我们将通过 ":" 拆分输入字符串获取小时和分钟。默认情况下将时间标识符保留为 “AM”。如果小时大于 12，则将小时减去 12 并将时间标识符设置为 “PM”。如果小时为 “00”，则简单将小时重置为 12。最后返回连同分钟的字符串。
+**输入：** `"00:00"`, `"12:33"`
+**输出：** `"12:00 AM"`, `"12:33 PM"`
+
+我们将通过 `":"` 拆分输入字符串获取小时和分钟。默认情况下将时间标识符保留为 “AM”。如果小时大于 12，则将小时减去 12 并将时间标识符设置为 “PM”。如果小时为 “00”，则简单将小时重置为 12。最后返回连同分钟的字符串。
 
 ```javascript
 const formatTime = (time) => {
@@ -5580,53 +5559,52 @@ const formatTime = (time) => {
   if (time_splitted[0] >= 12) {
     ampm = 'PM';
   }
-  // ... 转换逻辑继续
+  // 如果时间大于 12，则重置小时
+  if (time_splitted[0] > 12) {
+    time_splitted[0] = time_splitted[0] - 12;
+  }
+  // 如果小时为 0，则将小时重置为 12
+  if (time_splitted[0] == 0) {
+    time_splitted[0] = 12;
+  }
+  // 返回转换后的时间
+  return time_splitted[0] + ':' + time_splitted[1] + ' ' + ampm;
 }
-```
-
-
-
-
-```javascript
-// 如果时间大于 12，则重置小时
-
-if (time_splitted[0] > 12) {
-  time_splitted[0] = time_splitted[0] - 12;
-}
-
-// 如果小时为 0，则将小时重置为 12
-if (time_splitted[0] == 0) {
-  time_splitted[0] = 12;
-}
-
-// 返回转换后的时间
-return time_splitted[0] + ':' + time_splitted[1] + ' ' + ampm;
 ```
 
 ### 测试用例
-Input:
+
+**输入：**
+
 ```javascript
 console.log(formatTime("12:33"));
 console.log(formatTime("00:33"));
 ```
-Output:
-`"12:33 PM"`
-`"12:33 AM"`
 
-© JavaScript 面试指南 | learnersbucket.com
-211
+**输出：**
+
+```
+"12:33 PM"
+"12:33 AM"
+```
+
+© JavaScript Interview Guide | learnersbucket.com | 211
 
 # 创建数字钟
 
 ## 题目描述
+
 创建一个以 `HH:MM:SS` 格式显示当前时间的数字钟。
 
 ## 示例
+
+```
 10:57:23
 10:57:24
 10:57:25
 10:57:26
 10:57:27
+```
 
 `Date` 函数以平台无关的格式返回单个时间点。`Date` 函数提供了不同的方法，我们将使用这些方法来创建我们的时钟。
 
@@ -5646,8 +5624,8 @@ const clock = () => {
   return pad(hours) + ':' + pad(minutes) + ':' + pad(seconds);
 }
 ```
-© JavaScript 面试指南 | learnersbucket.com
-212
+
+© JavaScript Interview Guide | learnersbucket.com | 212
 
 我们正在使用这个 `pad()` 辅助函数，如果数字是单数字，它会在末尾添加 0 来格式化输入。
 
@@ -5675,25 +5653,26 @@ setInterval(function() {
 // 10:59:25
 // 10:59:26
 ```
-© JavaScript 面试指南 | learnersbucket.com
-213
+
+© JavaScript Interview Guide | learnersbucket.com | 213
 
 # 将数组切分成指定长度的块
 
 ## 题目描述
+
 编写一个函数，将数组切分成指定长度的块，并将每个块作为数组返回，且不修改输入数组。
 
 ## 示例
-Input:
-`[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]`, `3`
-Output:
-`[[1, 2, 3], [4, 5, 6], [7, 8, 9], [10]]`
+
+**输入：** `[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]`, `3`
+**输出：** `[[1, 2, 3], [4, 5, 6], [7, 8, 9], [10]]`
 
 让我们看看这个问题的两种不同实现：
 1. 一个接收输入并返回输出的普通函数。
 2. 我们扩展 JavaScript 数组并添加一个新方法 `chop`，实现相同的功能。
 
 ### 普通函数
+
 我们将遍历数组直到数组中没有元素，在每次迭代中切片出指定大小的子数组并将它们推入输出数组。
 
 ```javascript
@@ -5706,7 +5685,7 @@ const chop = (arr, size = arr.length) => {
   // 遍历数组
   while (i < temp.length) {
     // 切片指定大小的子数组
-    //并将它们推入输出数组
+    // 并将它们推入输出数组
     output.push(temp.slice(i, i + size));
     i = i + size;
   }
@@ -5715,16 +5694,20 @@ const chop = (arr, size = arr.length) => {
 ```
 
 ### 测试用例
-Input:
+
+**输入：**
+
 ```javascript
 console.log(chop([1, 2, 3, 4, 5, 6, 7, 8, 9, 10], 3));
 ```
-Output:
+
+**输出：**
+
 `[[1, 2, 3], [4, 5, 6], [7, 8, 9], [10]]`
 
 ### 通过扩展数组来添加新方法
-我们可以使用相同的逻辑通过扩展其原型来为数组添加新方法。
-深拷贝数组的所有元素，以便我们不会修改原始数组；如果未定义大小，则返回此深拷贝，否则返回块数组。
+
+我们可以使用相同的逻辑通过扩展其原型来为数组添加新方法。深拷贝数组的所有元素，以便我们不会修改原始数组；如果未定义大小，则返回此深拷贝，否则返回块数组。
 
 ```javascript
 Array.prototype.chop = function(size) {
@@ -5740,36 +5723,60 @@ Array.prototype.chop = function(size) {
   // 遍历数组
   while (i < temp.length) {
     // 切片指定大小的子数组
-    //并将它们推入输出数组
     output.push(temp.slice(i, i + size));
     i = i + size;
   }
   return output;
 };
+```
+
+
+
+// 并将它们推入输出数组
+
+`output.push(temp.slice(i, i + size));`
+
+`i = i + size;`
+
+}
+
+`return output;`
+
+};
 
 // 测试用例
+
 Input:
+
 ```javascript
 const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 console.log(arr.chop(3));
 ```
+
 Output:
+
 `[[1, 2, 3], [4, 5, 6], [7, 8, 9], [10]]`
 
 # 将字符串切分成指定长度的块
 
 ## 题目描述
+
 编写一个函数，将字符串切分成指定长度的块并以数组形式返回。
 
 ## 示例
+
 Input: `'javascript'`, `3`
+
 Output: `['jav', 'asc', 'rip', 't']`
 
 我们可以通过两种不同的方法解决这个问题：
+
 1. 暴力破解法。
+
 2. 正则表达式。
 
 ### 暴力破解法
+
 这非常直观，遍历字符串并根据大小切片，将其推入数组。
 
 ```javascript
@@ -5784,13 +5791,17 @@ const chop = (str, size = str.length) => {
 };
 
 // 测试用例
+```
+
 ```javascript
 console.log(chop('javascript', 3));
 ```
+
 Output:
 `['jav', 'asc', 'rip', 't']`
 
 ### 使用正则表达式
+
 我们倾向于忽略正则表达式方案因为它不容易记忆，但正则表达式方法接受大小并返回匹配字符串的数组。
 
 ```javascript
@@ -5799,19 +5810,25 @@ const chop = (str, size = str.length) => {
 }
 
 // 测试用例
+```
+
 ```javascript
 console.log(chop('javascript', 3));
 ```
+
 Output:
 `['jav', 'asc', 'rip', 't']`
 
 # 深度扁平对象
 
 ## 题目描述
+
 给定一个包含任何类型对象的嵌套对象，将其深度扁平并返回新对象。
 
 ## 示例
+
 Input:
+
 ```javascript
 {
   A: "12",
@@ -5825,7 +5842,9 @@ Input:
   }
 }
 ```
+
 Output:
+
 ```json
 {
   "A": "12",
@@ -5840,26 +5859,27 @@ Output:
 在输出中你会注意到，当有嵌套对象时，键会拼接直到遇到非对象；对于数组也是，键会在索引上拼接。
 
 我们可以通过以下步骤解决此：
+
 1. 检查给定值是否为对象。
+
 2. 如果不是对象，则将该值添加到输出中。
+
 3. 否则，检查该值是否为数组。
+
 4. 如果是对象或数组，则递归调用相同函数处理值，并传递键作为前缀，并在现有结果返回输出。
+
 5. 否则，遍历值并使用索引结合现有键作为新键，然后将其存储在输出中。
-6. 另外，我们可以将数组转换为对象然后
 
-
-
-
-像我们在第 4 步中所做的那样递归地调用同一个函数。
+6. 另外，我们可以将数组转换为对象然后像我们在第 4 步中所做的那样递归地调用同一个函数。
 
 ```javascript
 const flatten = (obj, prefix) => {
-  //存储结果
+  // 存储结果
   let output = {};
-  //遍历对象
+  // 遍历对象
   for (let k in obj) {
     let val = obj[k];
-    //新键
+    // 新键
     const newKey = prefix ? prefix + "." + k : k;
     // js 中数组和对象都是对象
     if (typeof val === "object") {
@@ -5869,17 +5889,17 @@ const flatten = (obj, prefix) => {
         // 将数组转换为对象
         const { ...arrToObj } = val;
         const newObj = flatten(arrToObj, newKey);
-        output = {......output, ...newObj};
+        output = { ...output, ...newObj };
       }
       // 如果是对象
       else {
         const newObj = flatten(val, newKey);
-        output = {......output, ...newObj};
+        output = { ...output, ...newObj };
       }
     }
     // 普通值
     else {
-      output = {......output, [newKey]: val};
+      output = { ...output, [newKey]: val };
     }
   }
   return output;
@@ -5887,7 +5907,9 @@ const flatten = (obj, prefix) => {
 ```
 
 ### 测试用例
+
 输入:
+
 ```javascript
 const nested = {
   A: "12",
@@ -5902,7 +5924,9 @@ const nested = {
 };
 console.log(flatten(nested));
 ```
+
 输出:
+
 ```json
 {
   "A": "12",
@@ -5917,11 +5941,13 @@ console.log(flatten(nested));
 # 限制对象属性的修改
 
 ## 问题描述
+
 限制添加、删除、更改或简单地修改对象的属性。
 
 对象是 JavaScript 的骨干，因为它的大多数功能实际上都是对象，例如数组、函数等。为了让对象变得强大，显然应该允许它们被修改或扩展，以便以不同的形式使用。但在某些场景下，我们希望在一定程度上或完全限制这种修改。我们将看到实现这一目标的两种不同方法。
 
-### 使用 Object.seal() 限制对象扩展
+### 使用 `Object.seal()` 限制对象扩展
+
 例如，我们应该能够修改对象现有的属性或方法，但不能添加新的。`Object.seal()` 可以实现这一目标，但它也会将所有现有属性标记为不可配置的，这意味着我们不能删除它们，但如果它们是可写的，就可以更新它们的值。
 
 ```javascript
@@ -5997,7 +6023,8 @@ deepSeal(obj);
 console.log(Object.isSealed(obj)); // true
 ```
 
-### 使用 Object.freeze() 限制属性修改
+### 使用 `Object.freeze()` 限制属性修改
+
 与 `Object.seal()` 不同，`Object.freeze()` 会冻结对象。它甚至不允许更改对象的属性。
 
 ```javascript
@@ -6068,11 +6095,15 @@ console.log(Object.isFrozen(obj)); // true
 # 合并对象
 
 ## 问题描述
+
 编写一个程序合并两个或多个对象，不使用原生方法。对象上有两种类型的合并：
+
 1. **浅合并**：在浅合并中只会合并对象拥有的属性，不会合并扩展属性或方法。
+
 2. **深合并**：在深合并中，如果存在，对象的扩展属性也会合并。
 
 ### 浅合并
+
 遍历源对象的所有键，检查属性是否属于源对象，将其复制到目标对象。
 
 ```javascript
@@ -6097,13 +6128,17 @@ let merge = (...arguments) => {
 ```
 
 ### 测试用例 1
+
 输入:
+
 ```javascript
 let obj1 = { name: "prashant", age: 23 };
 let obj2 = { qualification: "BSC CS", loves: "Javascript" };
 let merged = merge(obj1, obj2);
 ```
+
 输出:
+
 ```json
 {
   "age": 23,
@@ -6114,8 +6149,11 @@ let merged = merge(obj1, obj2);
 ```
 
 ### 测试用例 2
+
 在此处你会注意到 `skills` 值被最后一个对象覆盖了。
+
 输入:
+
 ```javascript
 let obj1 = {
   name: "prashant",
@@ -6130,7 +6168,9 @@ let obj2 = {
 let merged = merge(obj1, obj2);
 console.log(merged);
 ```
+
 输出:
+
 ```json
 {
   "age": 23,
@@ -6142,6 +6182,7 @@ console.log(merged);
 ```
 
 ### 深合并
+
 要深合并一个对象，我们必须复制其自身的属性和扩展属性。
 
 ```javascript
@@ -6169,9 +6210,6 @@ let merge = (...arguments) => {
   return target;
 }
 ```
-
-
-
 
 ```javascript
 return target;
@@ -6205,19 +6243,33 @@ console.log(merge(obj1, obj2));
 ```
 
 /*
+
 © JavaScript Interview Guide | learnersbucket.com
+
 232
+
 Object {
+
   age: 23,
+
   loves: "Javascript",
+
   name: "prashant",
+
   nature: Object {
+
     angry: false,
+
     helping: true,
+
     shy: true
+
   },
+
   qualification: "BSC CS"
+
 }
+
 */
 
 # 浅拷贝和深合并的通用函数
@@ -6286,21 +6338,36 @@ console.log(merge(obj1, obj2));
 ```
 
 /*
+
 © JavaScript Interview Guide | learnersbucket.com
+
 234
+
 Object {
+
   age: 23,
+
   loves: "Javascript",
+
   name: "prashant",
+
   nature: Object {
+
     angry: false,
+
     shy: true
+
   },
+
   qualification: "BSC CS"
+
 }
+
 */
 
 // 深合并
+
+```javascript
 console.log(merge(true, obj1, obj2));
 ```
 
@@ -6323,7 +6390,7 @@ Object {
 
 # 实现浏览器历史
 
-## 题目描述 -
+## 题目描述
 
 你必须熟悉浏览器历史及其功能，即你可以在浏览历史中进行导航。请实现相同的功能。
 
@@ -6338,15 +6405,25 @@ Object {
 输入：
 ```javascript
 const bh = new BrowserHistory();
+
 bh.visit('A');
+
 console.log(bh.current());
+
 bh.visit('B');
+
 console.log(bh.current());
+
 bh.visit('C');
+
 console.log(bh.current());
+
 bh.goBack();
+
 console.log(bh.current());
+
 bh.visit('D');
+
 console.log(bh.current());
 ```
 
@@ -6361,6 +6438,7 @@ console.log(bh.current());
 
 ```javascript
 function BrowserHistory() {
+
   // 跟踪历史记录
   this.history = [];
   this.index = -1;
@@ -6384,6 +6462,7 @@ function BrowserHistory() {
   this.forward = function() {
     this.index = Math.min(this.history.length - 1, ++this.index);
   }
+
 }
 ```
 
@@ -6391,15 +6470,25 @@ function BrowserHistory() {
 （注：提供的测试用例根据上述逻辑进行了重构）
 ```javascript
 const bh = new BrowserHistory();
+
 bh.visit('A');
+
 console.log(bh.current());
+
 bh.visit('B');
+
 console.log(bh.current());
+
 bh.visit('C');
+
 console.log(bh.current());
+
 bh.goBack();
+
 console.log(bh.current());
+
 bh.visit('D');
+
 console.log(bh.current());
 ```
 输出：
@@ -6414,33 +6503,50 @@ console.log(bh.current());
 
 # 单例模式
 
-## 题目描述 -
+## 题目描述
 
 在 JavaScript 中实现单例模式。在单例模式中，调用时只会创建一个并返回对象。这在跨系统协调对象的场景中非常有用。
 
 示例
 ```javascript
 const object1 = Singleton.getInstance();
+
 const object2 = Singleton.getInstance();
+
 console.log(object1 === object2);
+
 //true
 ```
 
 ```javascript
 const Singleton = (function() {
+
   let instance;
+
   function createInstance() {
+
     const object = new Object("I am the instance");
+
     return object;
+
   }
+
   return {
+
     getInstance: function() {
+
       if (!instance) {
+
         instance = createInstance();
+
       }
+
       return instance;
+
     }
+
   };
+
 })();
 ```
 
@@ -6449,7 +6555,7 @@ const Singleton = (function() {
 
 # 观察者模式
 
-## 题目描述 -
+## 题目描述
 
 在 JavaScript 中实现观察者模式。观察者设计也称为发布/订阅模式。从名称本身就可以看出，如果你订阅了发布，那么当发布中发布内容时，它会通知订阅者。换句话说，一种对象订阅主机，并在事件发生时由主机通知对象的模型被称为观察者模式。它是事件驱动编程的重要支柱之一，而 JavaScript 是流行的事件驱动编程语言之一。这种模式促进了松耦合，有利于良好的对象设计。
 
@@ -6467,28 +6573,25 @@ JavaScript 是观察者模式的最忠实粉丝，我们在构建 Web 应用时�
 ```javascript
 const Move = function(){
   this.handlers = [];
+
   this.subscribe = function(fn) {
     this.handlers.push(fn);
-```
+  }
 
+  this.unsubscribe = function(fn) {
+    this.handlers = this.handlers.filter((item) => item !== fn);
+  };
 
-
-
-
-```javascript
-this.unsubscribe = function(fn) {
-  this.handlers = this.handlers.filter((item) => item !== fn);
-};
-
-this.fire = function(o, thisObj) {
-  const scope = thisObj || window;
-  this.handlers.forEach((item) => {
-    item.call(scope, o);
-  });
+  this.fire = function(o, thisObj) {
+    const scope = thisObj || window;
+    this.handlers.forEach((item) => {
+      item.call(scope, o);
+    });
+  }
 }
 ```
 
-### 测试用
+### 测试用例
 
 **输入:**
 ```javascript
@@ -6506,15 +6609,19 @@ const move = new Move();
 
 // 订阅第 1 个观察者
 move.subscribe(moveHandler);
+
 move.fire('event #1');
 
 // 取消第 1 个观察者
 move.unsubscribe(moveHandler);
+
 move.fire('event #2');
 
 // 订阅第 1 个和第 2 个观察者
 move.subscribe(moveHandler);
+
 move.subscribe(moveHandler2);
+
 move.fire('event #3');
 ```
 
@@ -6529,13 +6636,13 @@ move.fire('event #3');
 
 ### 实现 `groupBy()` 方法
 
-### 问题描述 -
+### 问题描述
 为 `groupBy()` 方法编写填充函数（polyfill），该方法接受集合和迭代器（iteratee）作为参数，并返回一个对象，该对象使用迭代器的值作为键对集合的值进行分组。
 
-#### 
-**输入:**
+#### **输入:**
 ```javascript
 groupBy([6.1, 4.2, 6.3], Math.floor);
+
 groupBy(["one", "two", "three"], "length");
 ```
 **输出:**
@@ -6554,7 +6661,6 @@ const groupBy = (values, keyFinder) => {
     // 如果是函数，则将值传递给它
     // 如果是属性，则访问该属性
     const key = typeof keyFinder === 'function' ? keyFinder(b) : b[keyFinder];
-
     // 根据键聚合值
     if (!a[key]) {
       a[key] = [b];
@@ -6566,10 +6672,11 @@ const groupBy = (values, keyFinder) => {
 };
 ```
 
-#### 测试用
+#### 测试用例
 **输入:**
 ```javascript
 console.log(groupBy([6.1, 4.2, 6.3], Math.floor));
+
 console.log(groupBy(["one", "two", "three"], "length"));
 ```
 **输出:**
@@ -6582,7 +6689,7 @@ console.log(groupBy(["one", "two", "three"], "length"));
 
 ### 比较两个数组或对象
 
-### 问题描述 -
+### 问题描述
 编写一个程序来深度比较两个数组或对象。在 JavaScript 中，没有提供特定的内置方法来比较两个不同的数组或对象。我们需要创建自己的自定义函数来比较两个不同的对象。
 
 ### 方法 1：使用 `JSON.stringify()`
@@ -6591,6 +6698,7 @@ console.log(groupBy(["one", "two", "three"], "length"));
 ```javascript
 let a = {a: 1, b: 2, c: 3};
 let b = {a: 1, b: 2, c: 3};
+
 // "{'a':1,'b':2,'c':3}" "{'a':1,'b':2,'c':3}"
 console.log(JSON.stringify(a) === JSON.stringify(b));
 // true
@@ -6601,6 +6709,7 @@ console.log(JSON.stringify(a) === JSON.stringify(b));
 ```javascript
 let a = {a: 1, b: 2, c: 3};
 let b = {b: 2, a: 1, c: 3};
+
 // "{'a':1,'b':2,'c':3}" "{'b':2,'a':1,'c':3}"
 console.log(JSON.stringify(a) === JSON.stringify(b));
 // false
@@ -6622,9 +6731,12 @@ const deepEqual = (object1, object2) => {
 ```
 *(注：原文提供的代码块在方法 2 处不完整，此处根据翻译要求翻译描述部分)*
 
+---
 
+### 为数组添加事件监听器
 
-
+### 问题描述
+实现一个为数组添加事件监听器的功能。包含以下方法：
 
 - `addListener(eventName, callback)` : 这将为事件添加一个回调函数。
 - `pushWithEvent(eventName, items)` : 添加数组中的所有项并触发给定名称的事件。
@@ -6689,21 +6801,31 @@ Array.prototype.removeListener = function (eventName, callback) {
 **输入:**
 ```javascript
 const arr = [];
+
 const onAdd = (eventName, items, array) => {
   console.log('items were added', items);
 }
+
 const onAddAgain = (eventName, items, array) => {
   console.log('items were added again', items);
 }
+
 arr.addListener('add', onAdd);
+
 arr.addListener('add', onAddAgain);
+
 arr.addListener('remove', (eventName, item, array) => {
   console.log(item, ' was removed');
 });
+
 arr.pushWithEvent('add', [1, 2, 3, 'a', 'b']);
+
 arr.removeListener('add', onAddAgain); // 移除第二个监听器
+
 arr.pushWithEvent('add', [4, 5]);
+
 arr.popWithEvent('remove');
+
 console.log(arr);
 ```
 
@@ -6732,6 +6854,7 @@ const arr = [
   { name: "Samlan", id: "2" },
   { name: "Shahrukh", id: "0" },
 ];
+
 console.log(filterObject(arr, 0)); // { name: "Amir", id: "1" }
 console.log(filterObject(arr, "Amir")); // { name: "Amir", id: "1" }
 console.log(filterObject(arr, "0")); // { name: "Shahrukh", id: "0" }
@@ -6752,10 +6875,12 @@ const filterObject = (arr, filter) => {
       }
     }
   }
+
   // 如果 filter 是数字且可以在 arr 中访问
   if (filter in arr) {
     return arr[filter];
   }
+
   // 如果未找到
   return undefined;
 };
@@ -6807,6 +6932,7 @@ const aggregate = (arr, on, who) => {
     // 返回聚合器
     return a;
   }, {});
+
   // 只返回聚合后的值
   return Object.values(agg);
 };
@@ -6826,8 +6952,7 @@ console.log(aggregate(endorsements, "skill", "user"));
 ]
 ```
 
-
-
+---
 
 # 将实体关系数组转换为祖先树
 
@@ -6886,6 +7011,7 @@ const arr = [
 ];
 
 console.log(aggregate(arr));
+
 /*
 {
   "lion": "cat",
@@ -6936,6 +7062,7 @@ const map = {
 };
 
 console.log(convert(map));
+
 /*
 [
   "animal -> mammal -> cat -> lion",
@@ -7000,6 +7127,7 @@ const arr = [
   ["fish", "animal"],
   ["shark", "fish"],
 ];
+
 console.log(ancestry(arr));
 // 输出: [
   "animal -> mammal -> cat -> lion",
@@ -7025,6 +7153,7 @@ const obj = {
     }
   }
 };
+
 console.log(get(obj, 'a.b.c'));
 console.log(get(obj, 'a.b.c.0'));
 console.log(get(obj, 'a.b.c[1]'));
@@ -7075,6 +7204,7 @@ const obj = {
     }
   }
 };
+
 console.log(get(obj, 'a.b.c'));
 console.log(get(obj, 'a.b.c.0'));
 console.log(get(obj, 'a.b.c[1]'));
@@ -7086,7 +7216,7 @@ console.log(get(obj, 'a.c'));
 # 在字符串路径上设置对象值
 
 ## 问题描述
-给定一个对象、字符串或字符串数组格式的路径以及一个值，更新对象中给定路径上的值。这是 `lodash._set()`https://lodash.com/docs/4.17.15#set 的填充，并且是 `lodash._get()` 的相反操作。
+给定一个对象、字符串或字符串数组格式的路径以及一个值，更新对象中给定路径上的值。这是 `lodash._set()` 的填充，并且是 `lodash._get()` 的相反操作。
 
 **示例：**
 ```javascript
@@ -7097,16 +7227,15 @@ const object = {
     }
   }]
 };
+
 set(object, 'a[0].b.c', 4);
 console.log(object.a[0].b.c); // 4
+
 set(object, ['x', '0', 'y', 'z'], 5);
 console.log(object.x[0].y.z); // 5
 ```
 
-
-
 所有© JavaScript 面试指南 | learnersbucket.com
-
 269
 
 - 否则，使用当前值作为下一个路径递归调用同一个函数。
@@ -7121,7 +7250,8 @@ const helper = (obj, path, value) => {
   // 如果还有更多键
   // 根据 key 的类型
   // 将值作为对象或数组添加
-  if (rest.length > 0) { own    // 如果不存在该键
+  if (rest.length > 0) {
+    // 如果不存在该键
     // 创建一个新的键
     if (!obj[current]) {
       // 如果键是数字
@@ -7214,8 +7344,10 @@ console.log(instance7.a.d['01']);
 const object = {
   'a': [{ 'b': { 'c': 3 } }]
 };
+
 set(object, 'a[0].b.c', 4);
 console.log(object.a[0].b.c);
+
 set(object, ['x', '0', 'y', 'z'], 5);
 console.log(object.x[0].y.z);
 ```
@@ -7238,7 +7370,7 @@ console.log(object.x[0].y.z);
 # 实现 JSON.stringify 方法
 
 ## 题目描述
-在 JavaScript 中为 `JSON.stringify()`(https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/stringify) 实现一个简单的填充（polyfill）。
+在 JavaScript 中为 `JSON.stringify()` 实现一个简单的填充（polyfill）。
 
 ## 示例
 ```javascript
@@ -7252,7 +7384,7 @@ console.log(JSON.stringify([{ x: 5, y: 6}]));
 
 - `function`、`symbol`、`undefined` 返回 `null`。
 - `null` 返回 `null`。
-- `Date` 返回 [toISOString](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/toISOString) 字符串。
+- `Date` 返回 `toISOString` 字符串。
 - `Boolean`、`number` 返回其值。
 - `Array` 返回在 `[]` 内的值。
 - `object` 递归调用。
@@ -7313,7 +7445,7 @@ static stringify(obj) {
 
 © JavaScript 面试指南 | learnersbucket.com 274-276
 
-处理循环对象的最后情况，为此我们将使用 removeCycle(obj) 方法移除对象中的循环引用。
+处理循环对象的最后情况，为此我们将使用 `removeCycle(obj)` 方法移除对象中的循环引用。
 
 ```javascript
 // 移除循环的辅助方法
@@ -7326,25 +7458,21 @@ static removeCycle = (obj) => {
       // 如果键不在原型链中
       if (obj.hasOwnProperty(key)) {
         if (typeof obj[key] === 'object') {
-```
-
-
-
-
-```javascript
-// 如果集合包含对象引用
-// 则删除它
-if (set.has(obj[key])) {
-  delete obj[key];
-} else {
-  // 存储对象引用
-  set.add(obj[key]);
-  // 递归遍历下一个对象
-  iterateObj(obj[key]);
-}
-}
-}
-})(obj);
+          // 如果集合包含对象引用
+          // 则删除它
+          if (set.has(obj[key])) {
+            delete obj[key];
+          } else {
+            // 存储对象引用
+            set.add(obj[key]);
+            // 递归遍历下一个对象
+            iterateObj(obj[key]);
+          }
+        }
+      }
+    }
+  })(obj);
+};
 ```
 
 ### 完整代码
@@ -7372,6 +7500,7 @@ class JSON {
     // 返回字符串化的输出
     return `{${objString}}`;
   }
+
   // 辅助方法
   // 处理所有值类型并进行相应的字符串化
   static value(val) {
@@ -7412,6 +7541,7 @@ class JSON {
         return this.stringify(val);
     }
   }
+
   // 循环的辅助方法
   static removeCycle = (obj) => {
     // 集合存储
@@ -7460,6 +7590,7 @@ let obj1 = {
     },
   }
 }
+
 let obj2 = {
   a: 1,
   b: {
@@ -7473,23 +7604,26 @@ let obj2 = {
     h: 'Good Night Moon',
   },
 }
+
 // 循环对象
 const List = function(val) {
   this.next = null;
   this.val = val;
 };
+
 const item1 = new List(10);
 const item2 = new List(20);
 const item3 = new List(30);
 item1.next = item2;
 item2.next = item3;
 item3.next = item1;
+
 console.log(JSON.stringify(item1));
 console.log(JSON.stringify(obj1));
 console.log(JSON.stringify(obj2));
-console.log(JSON.stringify([{ x: 5, y: 6 })); //预期输出: [{"x":5,"y":6}]
-console.log(JSON.stringify([new Number(10), new String('false'), new Boolean(false), new Number(Infinity)])); //预期输出: [10,"false",false,null]
-console.log(JSON.stringify({ x: [10, undefined, function(){}]})); //预期输出: {"x":[10,null,null]}
+console.log(JSON.stringify([{ x: 5, y: 6 }])); // 预期输出: [{"x":5,"y":6}]
+console.log(JSON.stringify([new Number(10), new String('false'), new Boolean(false), new Number(Infinity)])); // 预期输出: [10,"false",false,null]
+console.log(JSON.stringify({ x: [10, undefined, function(){}] })); // 预期输出: {"x":[10,null,null]}
 console.log(JSON.stringify({a: Infinity})); // 输出: {'next': {'next': 30},'val': 20}
 console.log(JSON.stringify({a: {c: 2, d: -3, e: {f: {g: -4}}, h: {i: 5, j: 6}}})); // {'a': {'c':2,'d':-3,'e':{'f':{'g':-4}},'h':{'i':5,'j':6}}}
 console.log(JSON.stringify({a: {c: 'Hello World', d: 2, e: {f: {g: -4}}, h: 'Good Night Moon'}})); // {'a': {'c':'Hello World','d':2,'e':{'f':{'g':-4}},'h':'Good Night Moon'}}
@@ -7497,9 +7631,10 @@ console.log(JSON.stringify({a: {c: 'Hello World', d: 2, e: {f: {g: -4}}, h: 'Goo
 
 # 实现 parse 方法
 
-问题描述 - 为 JavaScript 中的 [JSON.parse](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global/JSON/parse) 实现一个简单的补 实现。
+## 问题描述
+为 JavaScript 中的 `JSON.parse` 实现一个简单的补全实现。
 
-示例
+## 示例
 ```javascript
 const json = '{"result":true,"count":42}';
 const obj = JSON.parse(json);
@@ -7539,88 +7674,13 @@ static parse(string) {
       }
       // 如果转义了单引号，抛出错误
       else if (string[0] === '\'') {
-        throw new Error();
-      }
-      // 如果转义了双引号，抛出错误
-      else if (string[0] === '"') {
-        // 同于 string.substr(1, string.length-2);
-        return string.slice(1, -1);
-      }
-      else {
-        // [] || {}
-        // 获取内部字符串
-        const innerString = string.slice(1, -1);
-        // 从字符串中获取值
-        // {} 的键值对数组
-        // [] 的单值数组
-        const subStrings = this.stringSplitByComma(innerString);
-        // 如果是数组
-        if (string[0] === '[') {
-          // 解析每个值
-          return subStrings.map(item => this.parse(item));
-        }
-        else if (string[0] === '{') {
-          // 如果是对象
-          // 通过 `:` 分割获取键和值
-          // 分别解析键和值
-          return subStrings.reduce((acc, item) => {
-            if (item.indexOf(':') > -1) {
-              const index = item.indexOf(':');
-              const thisKey = item.substring(0, index);
-              const thisValue = item.substring(index + 1);
-              acc[this.parse(thisKey)] = this.parse(thisValue);
-            }
-            return acc;
-          }, {});
-        }
-      }
-  }
-}
 ```
 
-为了获取数组或对象中的逗号分隔的值，我们将使用滑动窗口技术：
-
-1. 追踪开启和关闭括号 `[]` 以及大括号 `{}`。
 
 
+# JSON 解析器实现
 
-
-
-2. 当在遍历字符串时遇到逗号，获取起始括号和大/或大括号之间的值，并将其推入数组中，以便对这些每个值进行单独解析。
-
-```javascript
-// helper function
-// 用于获取数组或对象的逗号分隔分隔值
-static stringSplitByComma(string) {
-  const allStrs = [];
-  // lParen 跟踪括号 []
-  // lCurly 跟踪大括号 {}
-  let lParen = 0, lCurly = 0;
-  let left = 0, right = 0;
-  // 遍历字符串
-  // 每当遇到逗号
-  // 存储值
-  while (right <= string.length) {
-    const rChar = string[right];
-    // 跟踪数组 [] 或对象 {} 内部内容的索引
-    if (rChar === '[') lParen++;
-    if (rChar === '{') lCurly++;
-    if (rChar === ']') lParen--;
-    if (rChar === '}') lCurly--;
-    // 如果遇到逗号
-    if ((rChar === ',' && lParen === 0 && lCurly === 0) || right === string.length) {
-      // 获取中间的值并存储
-      const thisStr = string.substring(left, right);
-      allStrs.push(thisStr);
-      left = right + 1;
-    }
-    right++;
-  }
-  return allStrs;
-}
-```
-
-### 完整代码
+## 核心解析逻辑
 
 ```javascript
 class JSON {
@@ -7650,8 +7710,8 @@ class JSON {
         else if (string[0] === '\'') {
           throw new Error();
         }
-        // 如果是转义的双双引号，抛出错误
-        else if (string[0] === '\"') {
+        // 如果是转义的双引号，返回字符串内容
+        else if (string[0] === '"') {
           // 等于 string.substr(1, string.length-2);
           return string.slice(1, -1);
         }
@@ -7727,11 +7787,12 @@ console.log(JSON.parse('{"x": [10,null,null]}'));
 console.log(JSON.parse('[]'));
 ```
 
-### 字符串的 HTML 编码
+## 字符串的 HTML 编码
 
-**问题描述** - 给定一个字符串和一个表示该字符串从给定索引到给定标签的 HTML 编码的数组。返回 HTML 编码后的字符串。
+### 问题描述
+给定一个字符串和一个表示该字符串从给定索引到给定标签的 HTML 编码的数组。返回 HTML 编码后的字符串。
 
-**示例**
+### 示例
 **输入：**
 ```javascript
 const str = 'Hello, world';
@@ -7750,14 +7811,14 @@ const styleArr = [[0, 2, 'i'], [4, 9, 'b'], [7, 10, 'u']];
 
 让我们先看第二种方法，因为在面试中你通常会被要求实现这种方式。
 
-#### 字符串 HTML 编码的自定义函数
+### 字符串 HTML 编码的自定义函数
 
 样式可能会发生重叠，因此一个标签可能会覆盖另一个标签，在这种情况下，我们必须关闭重叠的标签并重新打开。
 
 **输入：**
 ```javascript
 const str = "Hello, World";
-const style = [[0, 2, 'i],[1, 3, 'b']];
+const style = [[0, 2, 'i'],[1, 3, 'b']];
 ```
 **输出：**
 `<i>H<b>el</b></i><b>l</b>, World` // b 从 1 开始到 3 ，i 在 b 之间。
@@ -7770,7 +7831,7 @@ const style = [[0, 2, 'i],[1, 3, 'b']];
 - 如果当前样式的结束索引大于上一个，则由于存在重叠，创建一个新标签并将此新条目推回栈中，并在下一次迭代中创建此标签。
 - 最后返回栈顶端条目的字符串。
 
-# 优先级队列
+#### 优先级队列
 
 我们不会使用优先级队列的完整实现，而是使用辅助函数，它向数组中添加新项并根据顺序进行升序或降序排序。
 
@@ -7779,19 +7840,13 @@ const style = [[0, 2, 'i],[1, 3, 'b']];
 // 添加标签并根据开始和结束之间的差异
 // 将它们按降序排序
 function addAndSort(track, index, data) {
-  if
+  if (!track[index]) track[index] = [];
+  track[index] = [...track[index], data];
+  track[index].sort((a, b) => a.getRange() > b.getRange());
+}
 ```
 
-
-
-
-```javascript
-(!track[index]) track[index] = [];
-track[index] = [...track[index], data];
-track[index].sort((a, b) => a.getRange() > b.getRange());
-```
-
-## 栈 (Stack)
+#### 栈 (Stack)
 
 栈数据结构的简单实现，包含所需的方法。
 
@@ -7799,17 +7854,14 @@ track[index].sort((a, b) => a.getRange() > b.getRange());
 function Stack() {
   let items = [];
   let top = 0;
-
   // 将元素推入栈中
   this.push = function(element) {
     items[top++] = element;
   };
-
   // 从栈中弹出元素
   this.pop = function() {
     return items[--top];
   };
-
   // 查看栈顶元素但不将其弹出
   this.peek = function() {
     return items[top - 1];
@@ -7817,7 +7869,7 @@ function Stack() {
 }
 ```
 
-### Tag 方法
+#### Tag 方法
 
 一个为每个样式条目及其对应项创建新标签的辅助函数，也有助于获取范围以便在优先级队列中进行方便的处理。我们将其推入优先级队列并进行排序。
 
@@ -7829,14 +7881,13 @@ function Tag(start, end, tag) {
   this.end = end;
   this.tag = tag;
   this.text = "";
-
   this.getRange = () => {
     return this.end - this.start;
   };
 }
 ```
 
-### 编码 (主) 方法
+#### 编码 (主) 方法
 
 在此方法中，我们逐步执行所有的编码步骤。
 
@@ -7854,20 +7905,17 @@ function parse(str, markups) {
   // 为字符串的所有索引
   // 创建一个空数组
   const track = new Array(str.length).fill(null);
-
   // 在 markups 中提到的每个文本的
   // 起始处添加标签
   for (let markup of markups) {
     const [start, end, tag] = markup;
     addAndSort(track, start, new Tag(start, end, tag));
   }
-
   // 创建一个新的栈
   const html = new Stack();
   // 初始化一个具有最大范围
   // 和空字符串的新标签
   html.push(new Tag(0, Number.MAX_VALUE, ""));
-
   // 遍历字符串的每个字符
   for (let i = 0; i < str.length; i++) {
     // 检查起始标签并添加它们
@@ -7909,30 +7957,27 @@ function parse(str, markups) {
 ### 测试用例
 
 输入：
-`const encoded = parse('Hello, World', [[0, 2, "i"], [7, 10, "u"], [4, 9, "b"], [2, 7, "i"], [7, 9, "u"]]);`
-`console.log(encoded);`
-
+```javascript
+const encoded = parse('Hello, World', [[0, 2, "i"], [7, 10, "u"], [4, 9, "b"], [2, 7, "i"], [7, 9, "u"]]);
+console.log(encoded);
+```
 输出：
 `"<i>He<i><b>llo, <b>World</b></b></b></b></i>"`
 
 ---
 
-## DOMParser() l
+## DOMParser()
 
 使用 [`DOMParser()`](https://developer.mozilla.org/en-US/docs/Web/API/DOMParser)，`DOMParser()` 解析 HTML 字符串并生成 DOM 树，从而允许我们使用 DOM API 来操作它，而不需要在文档中渲染它。这在处理动态生成的内容时非常有用。
 
-
-
-
-
-© JavaScript 面试指南 | learnersbucket.com
+---
 
 ## 聚合输入值
 
-## 题目描述
+### 题目描述
 在一个容器内有多个不同名称（name）和值（value）的输入元素。根据名称聚合这些输入元素的值。
 
-## 示例
+### 示例
 输入：
 ```html
 <form id="parent">
@@ -7957,7 +8002,6 @@ function parse(str, markups) {
 解决此问题的方法很简单：创建一个函数，接收父元素的 `id` 作为输入，并获取该父元素下的所有 input 元素。
 
 现在使用 `Array.reduce()` 我们可以根据每个输入的键（key）聚合的值。我们需要做的是：
-
 - 按点 `.` 拆分名称并将所有键获取为数组。
 - 检查该键是否存在，如果不存在，则创建一个空对象并赋值给它。
 - 如果该键是数组中的最后一个，则将值赋值给它。
@@ -7971,17 +8015,14 @@ const aggregateValues = (id) => {
   // 根据需求更改类型
   // 可以作为参数传递
   const inputs = element.querySelectorAll('input[type="text"]');
-
   // 聚合输入值
   return Array.from(inputs).reduce((prev, current) => {
     // 拆分名称并形成键的数组
     const names = current.name.split(".");
-
     // 存储上一个对象
     // 用于遍历对象
     // 父 -> 子 -> 孙子
     let temp = prev;
-
     // 遍历名称中的每个键
     names.forEach((name, index) => {
       // 如果键不存在，
@@ -8028,12 +8069,14 @@ console.log(aggregateValues('parent'));
 }
 ```
 
+---
+
 ## Fetch 请求与响应拦截器
 
-## 题目描述
+### 题目描述
 为 `fetch` 添加请求和响应拦截器方法，用于监控每次请求和响应。
 
-## 示例
+### 示例
 ```javascript
 const requestInterceptor = (requestArguments) => {
   console.log("Before request");
@@ -8067,7 +8110,6 @@ Axios 是最流行的网络请求库之一，它自带了拦截器 `axios.interc
 ```javascript
 // 存储原始 fetch
 const originalFetch = window.fetch;
-
 // 请求拦截器
 // 执行所有请求前的操作
 window.requestInterceptor = (args) => {
@@ -8128,12 +8170,14 @@ fetch('https://jsonplaceholder.typicode.com/todos/')
 }
 ```
 
+---
+
 ## 带过期时间的缓存 API 调用
 
-## 题目描述
+### 题目描述
 在 JavaScript 中实现一个函数，用于在指定时间内缓存 API 响应。如果在此时间内进行了新的调用，则将返回缓存的响应，否则将发起新的 API 调用。
 
-## 示例
+### 示例
 ```javascript
 const call = cachedApiCall(1500);
 // 第一次调用
@@ -8182,12 +8226,7 @@ setTimeout(() => {
 
 我们可以通过构建闭包来实现此函数。外部函数接收时间并返回一个异步内部函数，该内部函数接收执行 API 调用的参数。在内部函数中，我们将根据参数创建一个新的唯一键来缓存值。使用该键从缓存中获取条目。如果不存在条目或条目时间过期，则发起新的 API 调用。否则，返回条目的值。为了生成键和发起 API 调用，我们将使用两个辅助函数。
 
-
-
-
-
-# 生成唯一键
-
+### 生成唯一键
 ```javascript
 // helper function to create a key from the input
 const generateKey = (path, config) => {
@@ -8199,8 +8238,7 @@ const generateKey = (path, config) => {
 };
 ```
 
-# 调用 API
-
+### 调用 API
 ```javascript
 // helper function to make api call
 const makeApiCall = async (path, config) => {
@@ -8215,8 +8253,7 @@ const makeApiCall = async (path, config) => {
 };
 ```
 
-# 缓存 API 用的主函数
-
+### 缓存 API 用的主函数
 ```javascript
 const cachedApiCall = (time) => {
   // to cache data
@@ -8245,7 +8282,6 @@ const cachedApiCall = (time) => {
 ```
 
 ### 测试用例
-
 ```javascript
 const call = cachedApiCall(1500);
 // 第一次调用 - 将发起 API 调用并缓存其响应
@@ -8285,6 +8321,8 @@ setTimeout(() => {
 }
 */
 ```
+
+---
 
 # `getElementByClassName()` 的 Polyfill
 
@@ -8367,15 +8405,9 @@ function findByClass(class) {
 }
 ```
 
-
-
-
-
 ```javascript
 // 获取当前的类名
-
 const targetClass = classNames[index];
-
 // 如果是 classNames 中的最后一个类
 // 并且元素包含该类
 // 则将元素添加到结果中
@@ -8383,7 +8415,6 @@ if (index === classNames.length - 1 && element.classList.contains(targetClass)) 
   result.push(element);
   return;
 }
-
 // 遍历元素的每个孩子
 for (const child of element.children) {
   // 如果子元素包含该类
@@ -8417,7 +8448,6 @@ for (const child of element.children) {
 ```javascript
 console.log(getByClassNameHierarchy(document.getElementById('root'), 'a>b>c'));
 ```
-
 输出:
 ```json
 [
@@ -8510,21 +8540,12 @@ function findElementByColor(element, colorValue) {
 }
 ```
 
-
-
-
-
 ```javascript
 // to run it after the delay
-
 lastRan = Date.now();
-
 }
-
 }, delay - (Date.now() - lastRan));
-
 }
-
 };
 ```
 
@@ -8545,7 +8566,6 @@ btn.addEventListener(
   )
 );
 ```
-
 **输出:**
 ```text
 // [object Array] (2)
@@ -8567,6 +8587,8 @@ btn.addEventListener(
 [1, 2]
 // 6th call after 2 seconds
 ```
+
+---
 
 # 解码字符串
 
@@ -8596,7 +8618,6 @@ let decodeString = (str) => {
   let numStack = new Stack();
   let charStack = new Stack();
   let decoded = "", temp = "";
-
   for (let i = 0; i < str.length; i++) {
     let count = 0;
     let val = str[i];
@@ -8662,6 +8683,8 @@ abb
 bcacabcacabcaca
 ```
 
+---
+
 # Trie 数据结构
 
 Trie，也称为字典树或前缀树，是一种[树数据结构](https://learnersbucket.com/tutorials/data-structures/tree-data-structure)，用于存储字符串键的关联数组。
@@ -8692,7 +8715,6 @@ const TrieNode = function (key) {
   this.children = {};
   // 检查节点是否在末尾
   this.end = false;
-
   this.getWord = function() {
     let output = [];
     let node = this;
@@ -8703,7 +8725,6 @@ const TrieNode = function (key) {
     return output.join('');
   };
 }
-
 const Trie = function () {
   this.root = new TrieNode(null);
   //其他方法将在此处
@@ -8720,34 +8741,28 @@ const Trie = function () {
 this.insert = function (word) {
   let node = this.root;
   // 我们从根节点开始
-```
-
-
-
-```javascript
-// 遍历单词中的每一个字符
-for (let i = 0; i < word.length; i++) {
-  // 检查 children 中是否存在字符节点。
-  if (!node.children[word[i]]) {
-    // 如果不存在，则创建它。
-    node.children[word[i]] = new TrieNode(word[i]);
-    // 我们也将父节点赋值给子节点
-    node.children[word[i]].parent = node;
+  // 遍历单词中的每一个字符
+  for (let i = 0; i < word.length; i++) {
+    // 检查 children 中是否存在字符节点。
+    if (!node.children[word[i]]) {
+      // 如果不存在，则创建它。
+      node.children[word[i]] = new TrieNode(word[i]);
+      // 我们也将父节点赋值给子节点
+      node.children[word[i]].parent = node;
+    }
+    // 继续进入 Trie 的下一深度。
+    node = node.children[word[i]];
+    // 最后，检查是否是单词的最后一个。
+    if (i == word.length - 1) {
+      // 如果是，将结束标记设置为 true。
+      node.end = true;
+    }
   }
-  // 继续进入 Trie 的下一深度。
-  node = node.children[word[i]];
-  // 最后，检查是否是单词的最后一个。
-  if (i == word.length - 1) {
-    // 如果是，将结束标记设置为 true。
-    node.end = true;
-  }
-}
+};
 ```
 
 ### 在 Trie 中查找单词
-
 要检查 Trie 是否包含给定单词：
-
 - 遍历单词中的每一个字符。检查 `children` 中是否存在字符节点。
 - 如果存在，继续进入 Trie 的下一深度。
 - 否则返回 `false`，因为它不是一个有效的单词。
@@ -8774,9 +8789,7 @@ this.contains = function(word) {
 ```
 
 ### 在 Trie 中查找以给定前缀的单词
-
 要找到所有具有给定前缀的单词，我们需要执行两个操作：
-
 - 首先，确保该前缀确实有单词。
 - 第二，找到所有带有给定前缀的单词。
 
@@ -8799,7 +8812,6 @@ this.find = function(prefix) {
   findAllWords(node, output);
   return output;
 };
-
 // 递归查找给定节点中所有单词的函数
 const findAllWords = (node, arr) => {
   // 基础情况，如果节点是一个单词，则将其推入输出数组
@@ -8814,7 +8826,6 @@ const findAllWords = (node, arr) => {
 ```
 
 ### 从 Trie 中删除单词
-
 要删除一个键，我们并不删除该键对应的节点，因为它可能包含某些仍然包含键的子节点。相反，我们只需要找到它并将其值设置为 `null`。
 
 然而，为了提高效率，如果与键对应的节点没有子节点，或者其所有子节点的值均为 `null`，我们也可以删除整个节点。
@@ -8853,7 +8864,6 @@ this.remove = function(word) {
 ```
 
 ### Trie 数据结构的完整代码
-
 ```javascript
 // 从 TrieNode 开始
 const TrieNode = function(key) {
@@ -8875,7 +8885,6 @@ const TrieNode = function(key) {
     return output.join('');
   };
 };
-
 const Trie = function() {
   this.root = new TrieNode(null);
   // 将单词插入 tri 中。
@@ -8979,67 +8988,25 @@ const Trie = function() {
 };
 ```
 
-
-
-
-
 ```javascript
 removeWord(root, word);
 ```
 
 © JavaScript Interview Guide | learnersbucket.com
 
-341
-
-};
-
-}
-
-### 测试用例
-
-输入:
-
-```javascript
-const trie = new Trie(); // 插入几个值
-trie.insert("peter");
-trie.insert("piper");
-trie.insert("picked");
-trie.insert("pickled");
-trie.insert("pepper");
-// 检查 contains 方法
-console.log(trie.contains("picked"));
-console.log(trie.contains("pepper")); trie.remove("pepper");
-// 检查 find 方法
-console.log(trie.find("pi"));
-console.log(trie.find("pe"));
-```
-
-输出:
-```
-true
-true
-["pickled", "picked", "piper"]
-["peter"]
-```
-
-© JavaScript Interview Guide | learnersbucket.com
-
-342
+---
 
 ### 在排序数组中查找给定数字首次和最后一次出现的位置
 
 ## 题目描述
-
 给定一个包含重复值的排序数组，我们需要创建两个不同的算法来找到给定元素第一次和最后一次出现的位置。
 
 ## 示例
-
 输入:
 ```
 [1, 2, 3, 4, 5, 5, 6, 7, 8, 9]
 5
 ```
-
 输出:
 ```
 4 // 首次位置的索引
@@ -9051,7 +9018,6 @@ true
 我们将使用二分查找的变体来找到数组中元素第一次或最后一次出现的位置。
 
 ### 首次出现
-
 由于二分查找一旦找到元素后就会立即返回其索引，为了找到第一次出现的位置，即使在找到元素后，我们将继续在较低范围内查找，以检查该元素之前是否出现过；如果是，则返回最小的索引。
 
 ```javascript
@@ -9082,14 +9048,12 @@ const first = (arr, value) => {
 ```
 
 ### 测试用例
-
 输入:
 ```javascript
 const arr = [1, 2, 3, 4, 5, 5, 6, 6, 7, 8, 9, 10];
 console.log(first(arr, 5));
 console.log(first(arr, 6));
 ```
-
 输出:
 ```
 4
@@ -9097,7 +9061,6 @@ console.log(first(arr, 6));
 ```
 
 ### 最后一次出现
-
 与查找首次出现一样，为了找到最后一次出现的位置，我们必须在找到元素后继续在较高范围内查找，以确保获得元素的最后一个索引。
 
 ```javascript
@@ -9128,14 +9091,12 @@ const last = (arr, value) => {
 ```
 
 ### 测试用例
-
 输入:
 ```javascript
 const arr = [1, 2, 3, 4, 5, 5, 6, 6, 7, 8, 9, 10];
 console.log(last(arr, 5));
 console.log(last(arr, 6));
 ```
-
 输出:
 ```
 5
@@ -9144,16 +9105,14 @@ console.log(last(arr, 6));
 
 © JavaScript Interview Guide | learnersbucket.com
 
-345
+---
 
 # JavaScript 中的管道函数 – 部分 1
 
 ## 题目描述
-
 给定一个可以函数作为值的对象，创建一个函数，该函数接受输入并通过所有函数并返回计算后的值。
 
 ## 示例
-
 输入:
 ```javascript
 {
@@ -9162,7 +9121,6 @@ console.log(last(arr, 6));
   c: (a, b) => a - b
 }(1, 2)
 ```
-
 输出:
 ```
 {a: 3, b: 2, c: 1}
@@ -9187,7 +9145,6 @@ const pipe = (obj) => {
 ```
 
 ### 测试用例
-
 输入:
 ```javascript
 let test = {
@@ -9197,11 +9154,12 @@ let test = {
 };
 console.log(pipe(test)(1, 2));
 ```
-
 输出:
 ```
 {a: 3, b: 5, c: 2}
 ```
+
+
 
 © JavaScript Interview Guide | learnersbucket.com
 
@@ -9218,8 +9176,11 @@ console.log(pipe(test)(1, 2));
 输入:
 ```javascript
 const val = { salary: 10000 };
+
 const getSalary = (person) => person.salary;
+
 const addBonus = (netSalary) => netSalary + 1000;
+
 const deductTax = (grossSalary) => grossSalary - (grossSalary * 0.3);
 
 const result = pipe(getSalary, addBonus, deductTax)(val);
@@ -9250,7 +9211,9 @@ const pipe = (...fns) => {
 输入:
 ```javascript
 const getSalary = (person) => person.salary;
+
 const addBonus = (netSalary) => netSalary + 1000;
+
 const deductTax = (grossSalary) => grossSalary - (grossSalary * 0.3);
 
 const result = pipe(getSalary, addBonus, deductTax)({ salary: 10000 });
@@ -9273,10 +9236,6 @@ console.log(result);
 
 实现一个暴露日志事件的分析 SDK，它接收事件并将其进行队，然后开始发送这些事件。
 
-
-
-
-
 - 在延迟 1 秒后发送每个事件，并且此日志每 `n % 5` 次失败一次。
 - 仅在上一个事件解析（resolve）后发送下一个事件。
 - 当发生失败时，尝试重试。
@@ -9286,16 +9245,27 @@ console.log(result);
 ### 输入:
 ```javascript
 const sdk = new SDK();
+
 sdk.logEvent("event 1");
+
 sdk.logEvent("event 2");
+
 sdk.logEvent("event 3");
+
 sdk.logEvent("event 4");
+
 sdk.logEvent("event 5");
+
 sdk.logEvent("event 6");
+
 sdk.logEvent("event 7");
+
 sdk.logEvent("event 8");
+
 sdk.logEvent("event 9");
+
 sdk.logEvent("event 10");
+
 sdk.send();
 ```
 
@@ -9352,6 +9322,7 @@ class SDK {
     // 跟踪计数
     this.count = 1;
   }
+
   // 将事件推入队列
   logEvent(ev) {
     this.queue.push(ev);
@@ -9371,8 +9342,10 @@ sendAnalytics = async function() {
   if (this.queue.length === 0) {
     return;
   }
+
   // 从队列中获取第一个元素
   const current = this.queue.shift();
+
   try {
     // 延迟
     await this.wait();
@@ -9414,10 +9387,12 @@ class SDK {
     // 跟踪计数
     this.count = 1;
   }
+
   // 将事件推入队列
   logEvent(ev) {
     this.queue.push(ev);
   }
+
   // 延迟执行的函数
   wait = () => new Promise((resolve, reject) => {
     setTimeout(() => {
@@ -9429,6 +9404,7 @@ class SDK {
       }
     }, 1000);
   });
+
   // 发送分析
   // 递归发送事件
   sendAnalytics = async function() {
@@ -9437,8 +9413,10 @@ class SDK {
     if (this.queue.length === 0) {
       return;
     }
+
     // 从队列中获取第一个元素
     const current = this.queue.shift();
+
     try {
       // 延迟
       await this.wait();
@@ -9464,6 +9442,7 @@ class SDK {
       this.sendAnalytics();
     }
   };
+
   // 开始执行
   send = async function() {
     this.sendAnalytics();
@@ -9475,6 +9454,7 @@ class SDK {
 ### 输入:
 ```javascript
 const sdk = new SDK();
+
 sdk.logEvent("event 1");
 sdk.logEvent("event 2");
 sdk.logEvent("event 3");
@@ -9485,6 +9465,7 @@ sdk.logEvent("event 7");
 sdk.logEvent("event 8");
 sdk.logEvent("event 9");
 sdk.logEvent("event 10");
+
 sdk.send();
 ```
 
@@ -9510,7 +9491,7 @@ sdk.send();
 "Analytics sent event 10"
 ```
 
-## 检查定的二叉树是否为完全二叉树
+## 检查给定的二叉树是否为完全二叉树
 ### 问题陈述
 给定一个二叉树，检查它是否为完全二叉树。
 完全二叉树定义为所有节点均具有零个或两个两个子节点的二叉树。或者我们可以说，完全二叉树中不存在只有一个子节点的节点。
@@ -9518,34 +9499,26 @@ sdk.send();
 ## 示例
 输入:
 ```
-1
-/ \
-2
-3
-/ \
-4
-5
+    1
+   / \
+  2   3
+     / \
+    4   5
 ```
 输出: 是
 
 输入:
 ```
-1
-/ \
-2
-3
-/
+    1
+   / \
+  2   3
+ /
 4
 ```
 输出: 否
 
 ### 递归方法
 - 创建一个递归调用自己的函数，用以检查每个节点是否具有 0 或 2 个子节点。
-
-
-
-
-
 - 如果给定的节点为空，则它是一个满二叉树。
 - 如果给定的节点没有子节点，那么它也是满的。
 - 如果它既有左孩子又有右孩子，那么它就是满的。
@@ -9561,15 +9534,18 @@ const isFullTreeRecursive = (root) => {
   if (root == null) {
     return true;
   }
+
   // 如果是叶子节点
   if (root.left === null && root.right === null) {
     return true;
   }
+
   // 如果左右子树都不为空
   // 它们是满的
   if ((root.left !== null) && (root.right !== null)) {
     return (isFullTreeRecursive(root.left) && isFullTreeRecursive(root.right));
   }
+
   // 如果以上都不满足
   return false;
 }
@@ -9583,6 +9559,7 @@ function Node(val) {
   this.left = null;
   this.right = null;
 }
+
 let tree = new Node(10);
 tree.left = new Node(20);
 tree.right = new Node(30);
@@ -9599,35 +9576,41 @@ console.log(isFullTreeRecursive(tree));
 - 将根节点加入队列。
 - 只要队列不为空就继续迭代。
 - 在每次迭代中，从队列获取第一个值，并检查它是否有 0 个或 2 个子节点，如果是则继续；否则返回 false。
-- 将这些子节点重新加入队列以检查它们的子节点，以此此类推。
+- 将这些子节点重新加入队列以检查它们的子节点，以此类推。
 
 ```javascript
 const isFullTreeIterative = (root) => {
   if (root === null) {
     return true;
   }
+
   const q = [];
-  //初始将根节点加入队列
+  // 初始将根节点加入队列
   q.unshift(root);
-// 遍历二叉树的所有节点
+
+  // 遍历二叉树的所有节点
   // 逐层遍历直到队列为空
   while (q.length) {
     const node = q.pop();
+
     // 如果是叶子节点则继续
     if (node.left === null && node.right === null) {
       continue;
     }
+
     // 如果其中一个子节点为空而另一个不为空
     // 则二叉树不是
     // 满二叉树
     if (node.left === null || node.right === null) {
       return false;
     }
+
     // 将 'node' 的左右子节点
     // 放入队列 'q' 中
     q.unshift(node.left);
     q.unshift(node.right);
   }
+
   // 二叉树是满二叉树
   return true;
 }
@@ -9641,6 +9624,7 @@ function Node(val) {
   this.left = null;
   this.right = null;
 }
+
 let tree = new Node(10);
 tree.left = new Node(20);
 tree.right = new Node(30);
@@ -9678,10 +9662,12 @@ const btHeight = (node) => {
   if (node === null) {
     return 0;
   }
+
   // 获取左子树高度
   const leftHeight = btHeight(node.left);
   // 获取右子树高度
   const rightHeight = btHeight(node.right);
+
   // 返回它们中的最大值
   return leftHeight > rightHeight ? leftHeight + 1 : rightHeight + 1;
 }
@@ -9695,6 +9681,7 @@ function Node(val) {
   this.left = null;
   this.right = null;
 }
+
 let tree = new Node(10);
 tree.left = new Node(20);
 tree.right = new Node(30);
@@ -9715,10 +9702,12 @@ const helper = (node, level) => {
   if (node === null) {
     return 0;
   }
+
   // 如果是目标层，返回 1
   if (level === 0) {
     return 1;
   }
+
   // 递归查找左右子树的下一层
   return helper(node.left, level - 1) + helper(node.right, level - 1);
 };
@@ -9726,6 +9715,7 @@ const helper = (node, level) => {
 const btWidth = (root) => {
   let maxWidth = 0;
   let height = btHeight(root);
+
   // 遍历每一层
   for (let i = 0; i < height; i++) {
     // 计算当前层的宽度
@@ -9734,6 +9724,7 @@ const btWidth = (root) => {
       maxWidth = width;
     }
   }
+
   return maxWidth;
 };
 ```
@@ -9746,6 +9737,7 @@ function Node(val) {
   this.left = null;
   this.right = null;
 }
+
 let tree = new Node(10);
 tree.left = new Node(20);
 tree.right = new Node(30);
@@ -9757,13 +9749,26 @@ console.log(btWidth(tree));
 ```
 输出: `4`
 
+© JavaScript Interview Guide | learnersbucket.com | 364
 
+# 实现继承工具函数
 
+## 问题描述
+实现一个 `myExtends` 函数，用于实现类似 ES6 `class extends` 的继承功能。
 
-
+## 示例
 ```javascript
-'static'
+// 父类
+function Person() {
+  this.name = "abc";
+}
 
+Person.prototype.walk = function() {
+  console.log(this.name + ", I am walking!");
+}
+
+Person.staticSuper = function() {
+  console.log('static');
 };
 
 // 子类
@@ -9783,6 +9788,7 @@ Student.prototype.sayGoodBye = function() {
 }
 
 const Extend = myExtends(Person, Student);
+
 const student1 = new Student();
 student1.sayHello();
 student1.walk();
@@ -9806,6 +9812,8 @@ true
 true
 ```
 
+© JavaScript Interview Guide | learnersbucket.com | 365
+
 # 顺序动画元素
 
 ## 问题描述
@@ -9827,13 +9835,15 @@ const loadingBar = document.createElement("div");
 
 ```javascript
 let styleSheet = null;
+
 const dynamicAnimation = (name, styles) => {
-  //创建一个样式表
+  // 创建一个样式表
   if (!styleSheet) {
     styleSheet = document.createElement("style");
     styleSheet.type = "text/css";
     document.head.appendChild(styleSheet);
   }
+
   // 插入新的关键帧
   styleSheet.sheet.insertRule(`@keyframes ${name} {${styles}}`, styleSheet.length);
 };
@@ -9843,6 +9853,7 @@ const dynamicAnimation = (name, styles) => {
 
 ```javascript
 dynamicAnimation("loadingBar", `0%{width: 0%;} 100%{width: 100%;}` );
+
 loadingBar.style.height = "10px";
 loadingBar.style.backgroundColor = "Red";
 loadingBar.style.width = "0";
@@ -9860,16 +9871,16 @@ entry.appendChild(loadingBar);
 
 ```javascript
 const generateLoadingBar = () => {
-  //创建一个 div
+  // 创建一个 div
   const loadingBar = document.createElement("div");
-  //应用样式
+  // 应用样式
   dynamicAnimation("loadingBar", `0%{width: 0%;} 100%{width: 100%;}` );
   loadingBar.style.height = "10px";
   loadingBar.style.backgroundColor = "Red";
   loadingBar.style.width = "0";
   loadingBar.style.marginBottom = "10px";
   loadingBar.style.animation = "loadingBar 3s forwards";
-  //追加 div
+  // 追加 div
   const entry = document.getElementById("entry");
   entry.appendChild(loadingBar);
 };
@@ -9893,6 +9904,7 @@ document.getElementById("btn").addEventListener("click", (e) => {
 ```javascript
 // 用于跟踪进度条数量的全局变量
 let count = 0;
+
 // 更新计数的函数
 const updateCount = (val) => {
   count += val;
@@ -9941,7 +9953,7 @@ document.getElementById("btn").addEventListener("click", (e) => {
 </head>
 <body>
   <div id="entry"></div>
-  <p><span>队列中：</span><span id="queueCount">0</p></p>
+  <p><span>队列中：</span><span id="queueCount">0</span></p>
   <button id="btn">添加动画</button>
   <script>
     // 动态添加关键帧的函数
@@ -9956,13 +9968,16 @@ document.getElementById("btn").addEventListener("click", (e) => {
       // 插入新的关键帧
       styleSheet.sheet.insertRule(`@keyframes ${name} {${styles}}`, styleSheet.length);
     };
+
     // 用于跟踪进度条数量的全局变量
     let count = 0;
+
     // 更新计数的函数
     const updateCount = (val) => {
       count += val;
       document.getElementById("queueCount").innerText = count;
     };
+
     // 生成进度条
     const generateLoadingBar = () => {
       // 创建 div 元素
@@ -9990,6 +10005,7 @@ document.getElementById("btn").addEventListener("click", (e) => {
       // 移除监听器
       loadingBar.removeEventListener("animationend", () => {});
     };
+
     // 按钮被点击时，生成进度条
     document.getElementById("btn").addEventListener("click", (e) => {
       // 触发动画
@@ -10004,9 +10020,6 @@ document.getElementById("btn").addEventListener("click", (e) => {
 </html>
 ```
 
-
-
-
 在后续步骤中，我们必须在 `N-1th` 个进度条完成一半时，开始启动 `Nth` 个进度条的动画。
 
 遗憾的是，与动画相关的事件只有四个。
@@ -10014,10 +10027,10 @@ document.getElementById("btn").addEventListener("click", (e) => {
 © JavaScript Interview Guide | learnersbucket.com
 378
 
-● `animationstart` :- 动画开始时。
-● `animationend` :- 动画结束时。
-● `animationcancel` :- 动画意外中止且未触发 `animationend` 事件。
-● `animationiteration` :- 动画的一次迭代结束且下一次迭代开始时。此事件不会与 `animationend` 事件同时触发。
+- `animationstart` :- 动画开始时。
+- `animationend` :- 动画结束时。
+- `animationcancel` :- 动画意外中止且未触发 `animationend` 事件。
+- `animationiteration` :- 动画的一次迭代结束且下一次迭代开始时。此事件不会与 `animationend` 事件同时触发。
 
 没有办法可以确定动画已经完成了多少。
 
@@ -10026,14 +10039,15 @@ document.getElementById("btn").addEventListener("click", (e) => {
 例如，当第一个加载条完成 `50%` 时，应该触发下一个动画。因此，假设我们的原始加载条将在 `3 seconds` 内完成 `100%` 的动画，这意味着当它在 `1.5 seconds`（一半时间）完成 `50%` 时，应该触发下一个动画。我们将在此持续时间内并行地动画另一个元素，并在它的 `animationend` 时触发下一次渲染。
 
 ```javascript
-//generate loading bars
+// generate loading bars
 const generateLoadingBar = () => {
-  //fragment
+  // fragment
   const fragment = document.createDocumentFragment();
-  //create a div elm
+
+  // create a div elm
   const loadingBar = document.createElement("div");
-  //apply styles
-  //animation keyframes
+  // apply styles
+  // animation keyframes
   dynamicAnimation("loadingBar", `
 0%{
 width: 0%;
@@ -10042,15 +10056,17 @@ width: 0%;
 width: 100%;
 }
 `);
+
   loadingBar.style.height = "10px";
   loadingBar.style.backgroundColor = "Red";
   loadingBar.style.width = "0";
   loadingBar.style.marginBottom = "10px";
   loadingBar.style.animation = "loadingBar 3s forwards";
-  //create shadow loading bar
+
+  // create shadow loading bar
   const shadowLoadingBar = document.createElement("div");
-  //apply styles
-  //animation keyframes
+  // apply styles
+  // animation keyframes
   dynamicAnimation("shadowLoadingBar", `
 0%{
 width: 0%;
@@ -10059,28 +10075,33 @@ width: 0%;
 width: 50%;
 }
 `);
-  //it will be hidden
+
+  // it will be hidden
   shadowLoadingBar.style.height = "5px";
   shadowLoadingBar.style.backgroundColor = "green";
   shadowLoadingBar.style.width = "0";
   shadowLoadingBar.style.marginBottom = "10px";
   shadowLoadingBar.style.animation = "shadowLoadingBar 1.5s forwards";
-  //add the both the bars to the fragment
+
+  // add the both the bars to the fragment
   fragment.appendChild(loadingBar);
   fragment.appendChild(shadowLoadingBar);
-  //append the loading bar
+
+  // append the loading bar
   const entry = document.getElementById("entry");
   entry.appendChild(fragment);
-  //on animation end on shadow bar
+
+  // on animation end on shadow bar
   shadowLoadingBar.addEventListener("animationend", () => {
-    //decrease the count
+    // decrease the count
     updateCount(-1);
     if (count > 0) {
-      //generate the loading bar
+      // generate the loading bar
       generateLoadingBar();
     }
   });
-  //remove listener
+
+  // remove listener
   shadowLoadingBar.removeEventListener("animationend", () => {});
 };
 ```
@@ -10090,7 +10111,6 @@ width: 50%;
 © JavaScript Interview Guide | learnersbucket.com
 379
 380
-![](img/index-381_1.png)
 
 ### 带有过期时间的 Localstorage
 
@@ -10101,6 +10121,7 @@ width: 50%;
 ```javascript
 // 在 'foo' 上设置 'bar'，它将在 1000 毫秒后过期
 myLocalStorage.setItem('foo', 'bar', 1000);
+
 // 2 秒后
 console.log(myLocalStorage.getItem('foo'));
 // null
@@ -10150,12 +10171,6 @@ getItem(key) {
 }
 ```
 
-© JavaScript Interview Guide | learnersbucket.com
-381
-382
-383
-384
-
 ### 测试用例
 输入：
 ```javascript
@@ -10166,8 +10181,37 @@ myLocalStorage.setItem('foo', 'bar', 1000);
 null
 ```
 
+© JavaScript Interview Guide | learnersbucket.com
+381
+382
+383
+384
 
+### 带有过期时间的 Cookie
 
+## 问题描述
+实现一个自定义 Cookie 存储，支持 `max-age` 选项自动过期。
+
+## 示例
+```javascript
+useCustomCookie();
+
+document.myCookie = "blog=learnersbucket";
+// 这将在 1 秒后过期
+document.myCookie = "name=prashant;max-age=1";
+
+console.log(document.myCookie);
+
+setTimeout(() => {
+  console.log(document.myCookie);
+}, 1500);
+```
+
+输出：
+```
+"blog=learnersbucket; name=prashant"
+"blog=learnersbucket"
+```
 
 在获取 cookie 时，获取 map 中的所有条目并检查每个条目是否已过期。如果过期，则删除该条目。将剩余的条目作为冒号分隔的字符串发送。
 
@@ -10211,6 +10255,7 @@ function useCustomCookie() {
   // 存储每个 cookie
   // 的键值
   const store = new Map();
+
   Object.defineProperty(document, 'myCookie', {
     configurable: true,
     get() {
@@ -10252,10 +10297,13 @@ function useCustomCookie() {
 输入：
 ```javascript
 useCustomCookie();
+
 document.myCookie = "blog=learnersbucket";
 // 这将在 1 秒后过期
 document.myCookie = "name=prashant;max-age=1";
+
 console.log(document.myCookie);
+
 setTimeout(() => {
   console.log(document.myCookie);
 }, 1500);
@@ -10284,7 +10332,7 @@ console.log(outputArr);
 // [1,2,3,4,5,6,7]
 ```
 
-### `_replace_`: 对象 |数组 – 替换输入对象中的目标值。
+### `_replace_`: 对象 | 数组 – 替换输入对象中的目标值。
 ```javascript
 const state = {
   a: {
@@ -10294,7 +10342,7 @@ const state = {
   },
   d: 2
 };
-const newState = update(state, {a: {b: {c: {_replace_: 3}}}}});
+const newState = update(state, {a: {b: {c: {_replace_: 3}}}});
 console.log(newState);
 /*
 {
@@ -10309,7 +10357,7 @@ console.log(newState);
 ```
 ```javascript
 const inputArr = [1, 2, 3, 4];
-const outputArr = update(inputArr, {1: {_replace_: 10}}});
+const outputArr = update(inputArr, {1: {_replace_: 10}});
 console.log(outputArr);
 // [1,10,3,4]
 ```
@@ -10339,7 +10387,7 @@ console.log(newState);
 */
 ```
 
-### `_transform_`: 对象 |数组 – 通过将目标值传递此函数来转换目标值。
+### `_transform_`: 对象 | 数组 – 通过将目标值传递此函数来转换目标值。
 ```javascript
 const inputArr = {a: {b: 2}};
 const outputArr = update(inputArr, {a: {b: {_transform_: (item) => item * 2}}});
@@ -10450,10 +10498,23 @@ const newState = update(state, {a: {b: {c: {_replace_: 3}}}});
 newState.a.b.c = 10;
 ```
 
-
-
-
-
+### 测试用例 3 `_merge_`
+```javascript
+const state = {
+  a: {
+    b: {
+      c: 1
+    }
+  },
+  d: 2
+};
+// 冻结对象
+deepFreeze(state);
+const newState = update(state, {a: {b: {_merge_: {e: 5}}}});
+// 由于输出已冻结无法更新
+newState.a.b.e = 10;
+console.log(newState);
+```
 ```json
 {
   "a": {
@@ -10465,25 +10526,18 @@ newState.a.b.c = 10;
   "d": 2
 }
 ```
-*/
 
-## 测试用例 4: `_transform_`
-
+### 测试用例 4: `_transform_`
 ```javascript
 const state = {a: { b: 2 }};
-
 // 冻结对象
 deepFreeze(state);
-
 const newState = update(state, {a: { b: { _transform_: (item) => item * 2 } }});
-
 // 没有更新
 // 因为输出是冻结的
 newState.a.b = 10;
-
 console.log(newState);
 ```
-
 ```json
 {
   "a": {
@@ -10491,9 +10545,8 @@ console.log(newState);
   }
 }
 ```
-*/
 
-## 创建不可变辅助函数 –  部分
+## 创建不可变辅助函数 – 部分 2
 
 ## 问题描述
 创建一个类似于 `[Immer produce()](https://immerjs.github.io/immer/produce/)` 的不可变辅助函数，允许对受限制的对象进行修改。
@@ -10507,20 +10560,16 @@ const obj = {
     }
   }
 };
-
 // 对象是被冻结的
 // 它的属性无法更新
 deepFreeze(obj);
-
 // obj 只能通过 produce 函数更新
 const newState = produce(obj, draft => {
   draft.a.b.c = 3;
   draft.a.b.d = 4;
 });
-
 console.log(newState);
 ```
-
 ```json
 {
   "a": {
@@ -10534,10 +10583,8 @@ console.log(newState);
 // newState 也会被冻结
 // 它无法被更新
 delete newState.a.b.c;
-
 console.log(newState);
 ```
-
 ```json
 {
   "a": {
@@ -10548,7 +10595,6 @@ console.log(newState);
   }
 }
 ```
-*/
 
 为了实现这一点，我们首先创建输入 `obj` 的克隆，然后将此输入对象传递给 `produce` 的回调函数进行处理。
 
@@ -10628,20 +10674,16 @@ const obj = {
     }
   }
 };
-
 // 对象是被冻结的
 // 它的属性无法更新
 deepFreeze(obj);
-
 // obj 只能通过 produce 函数更新
 const newState = produce(obj, draft => {
   draft.a.b.c = 3;
   draft.a.b.d = 4;
 });
-
 console.log(newState);
 ```
-
 ```json
 {
   "a": {
@@ -10655,10 +10697,8 @@ console.log(newState);
 // newState 也会被冻结
 // 它无法被更新
 delete newState.a.b.c;
-
 console.log(newState);
 ```
-
 ```json
 {
   "a": {
@@ -10669,7 +10709,6 @@ console.log(newState);
   }
 }
 ```
-*/
 
 # 高优先级
 
@@ -10712,8 +10751,6 @@ low priority
 ```
 注意 – 调用是有优先级的，但它们解析的时间可能会变化，因此我们看到的输出是随机的。
 
-[]
-
 # 将 JSON 转换为 HTML
 
 ## 问题描述
@@ -10745,7 +10782,6 @@ const json = {
     }
   ]
 };
-
 JSONtoHTML(json);
 ```
 
@@ -10765,14 +10801,8 @@ JSONtoHTML(json);
 
 - 创建一个片段来存储 DOM 元素数组。
 - 如果 JSON 元素是元素数组，遍历数组，对于数组中的每个项，创建一个给定类型的新元素...
-
-
-
-
-
-分配所有属性，如果子节点是元素数组，则递归调用相同函数来生成相同的 HTML，否则将子节点设置为 `innerText`。
-
-● 如果 `JSON` 元素是一个对象，则将其转换为数组并递归调用相同函数，以便据此构建 DOM。
+- 分配所有属性，如果子节点是元素数组，则递归调用相同函数来生成相同的 HTML，否则将子节点设置为 `innerText`。
+- 如果 `JSON` 元素是一个对象，则将其转换为数组并递归调用相同函数，以便据此构建 DOM。
 
 ```javascript
 const JSONtoHTML = (json) => {
@@ -10816,7 +10846,6 @@ const JSONtoHTML = (json) => {
 ```
 
 ### 测试用例
-
 Input:
 ```javascript
 const JSON = [
@@ -10839,7 +10868,6 @@ const JSON = [
 ];
 console.log(JSONtoHTML(json));
 ```
-
 Output:
 ```html
 <div id="hello" class="foo">
@@ -10862,7 +10890,6 @@ Output:
 编写一个函数，接收 DOM 节点作为输入并将其转换为 JavaScript 对象。该对象应该包含节点的类型、属性以及所有子节点。
 
 ## 示例
-
 Input:
 ```html
 <div id="foo">
@@ -10872,7 +10899,6 @@ Input:
   </p>
 </div>
 ```
-
 Output:
 ```json
 {
@@ -10902,10 +10928,9 @@ Output:
 ```
 
 为了创建此函数，我们通常需要处理三点：
-
-● 获取节点的 HTML 元素名称。
-● 获取节点的所有属性/特性。
-● 如果节点没有任何子节点，则获取其内容；否则遍历每个子节点，并递归调用相同函数来为每个子节点生成对象。
+- 获取节点的 HTML 元素名称。
+- 获取节点的所有属性/特性。
+- 如果节点没有任何子节点，则获取其内容；否则遍历每个子节点，并递归调用相同函数来为每个子节点生成对象。
 
 我们将使用一个辅助函数来获取节点的所有属性。
 
@@ -10949,7 +10974,6 @@ const HTMLtoJSON = (node) => {
 ```
 
 ### 测试用例
-
 Input:
 ```html
 <div id="foo">
@@ -10963,7 +10987,6 @@ Input:
 const node = document.getElementById("foo");
 console.log(HTMLtoJSON(node));
 ```
-
 Output:
 ```json
 {
@@ -11002,7 +11025,6 @@ Output:
 每当请求新的历史条目时，我们将其与上一次历史进行比较，如果数据发生了变化，将其推入历史记录。
 
 ## 示例
-
 ```javascript
 const historyTracking = new HistoryTracking();
 historyTracking.registerEntity("document");
@@ -11013,7 +11035,6 @@ console.log(historyTracking.get("document"));
 ```
 
 ### 实现
-
 我们将使用单例设计模式来确保跟踪时使用一个实例。
 
 ```javascript
@@ -11022,10 +11043,12 @@ class HistoryTracking {
     // 跟踪唯一的条目
     this.entities = new Map();
   }
+
   // 注册新实体
   registerEntity(entity) {
     this.entities.set(entity, {});
   }
+
   // 为实体注册新服务
   registerService(entity, service) {
     const existingServices = this.entities.get(entity);
@@ -11040,12 +11063,42 @@ class HistoryTracking {
       this.entities.set(entity, merged);
     }
   }
+
   // 实体及其服务的历史
   track(entity, service, newData) {
     // 获取服务的最后一个条目
     const services = this.entities.get(entity);
+```
+
+
+
+# 实现一个历史跟踪器
+
+## 问题描述
+实现一个历史跟踪器，用于跟踪实体及其服务的历史记录。
+
+## 实现
+
+```javascript
+class HistoryTrackingHelper {
+  constructor() {
+    this.entities = new Map();
+  }
+
+  registerEntity(entity) {
+    this.entities.set(entity, {});
+  }
+
+  registerService(entity, service) {
+    const services = this.entities.get(entity);
+    services[service] = [];
+  }
+
+  track(entity, service, newData) {
+    const services = this.entities.get(entity);
     const history = services[service];
     const last = history[history.length - 1];
+
     // 没有之前的条目
     // 将当前的设置为最新
     if (!last) {
@@ -11062,32 +11115,49 @@ class HistoryTracking {
       }
     }
   }
+
   get(entity) {
     return this.entities.get(entity);
   }
 }
 ```
 
-
-
-
-
 ```javascript
-.stringify(newData);
+class HistoryTrackingHelper {
+  constructor() {
+    this.entities = new Map();
+  }
 
-if (lastStr !== newDataStr) {
-  const serviceWithNewHistory = {
-    ...services,
-    [service]: [...history, newData]
-  };
-  this.entities.set(entity, serviceWithNewHistory);
-}
-}
+  registerEntity(entity) {
+    this.entities.set(entity, {});
+  }
 
-// 获取完整的历史
-getHistory(entity, service) {
-  const services = this.entities.get(entity);
-  return services[service];
+  registerService(entity, service) {
+    const services = this.entities.get(entity);
+    services[service] = [];
+  }
+
+  track(entity, service, newData) {
+    const services = this.entities.get(entity);
+    const history = services[service];
+    const last = history[history.length - 1];
+    const lastStr = JSON.stringify(last);
+    const newDataStr = JSON.stringify(newData);
+
+    if (lastStr !== newDataStr) {
+      const serviceWithNewHistory = {
+        ...services,
+        [service]: [...history, newData]
+      };
+      this.entities.set(entity, serviceWithNewHistory);
+    }
+  }
+
+  // 获取完整的历史
+  getHistory(entity, service) {
+    const services = this.entities.get(entity);
+    return services[service];
+  }
 }
 
 // 创建跟踪器的单例实例
@@ -11103,15 +11173,18 @@ const HistoryTracking = (function() {
 })();
 ```
 
-### 测试用例
+## 测试用例
+
 **输入:**
 ```javascript
 const historyTracking = HistoryTracking();
+
 historyTracking.registerEntity("document");
 historyTracking.registerService("document", 'JavaScript Ultimate Guide');
 historyTracking.track("document", 'JavaScript Ultimate Guide', "Problem 1");
 historyTracking.track("document", 'JavaScript Ultimate Guide', "Problem 1, Problem 2");
 historyTracking.track("document", 'JavaScript Ultimate Guide', "Problem 3");
+
 console.log(historyTracking.getHistory("document", 'JavaScript Ultimate Guide'));
 ```
 
@@ -11126,21 +11199,26 @@ console.log(historyTracking.getHistory("document", 'JavaScript Ultimate Guide'))
 
 ---
 
-### 实现一个内存搜索引擎
-**问题描述**
+# 实现一个内存搜索引擎
+
+## 问题描述
 实现一个内存搜索引擎，其中多个文档可以存储在特定的命名空间（namespace）下，并对其进行搜索，传递 `orderBy` 参数对搜索结果进行排序。
 
-**示例**
+## 示例
+
 ```javascript
 const searchEngine = new InMemorySearch();
+
 searchEngine.addDocuments('Movies', 
   {name: 'Avenger', rating: 8.5, year: 2017},
   {name: 'Black Adam', rating: 8.7, year: 2022},
   {name: 'Jhon Wick 4', rating: 8.2, year: 2023},
   {name: 'Black Panther', rating: 9.0, year: 2022}
 );
+
 console.log(searchEngine.search('Movies', (e) => e.rating > 8.5, {key: 'rating', asc: false}));
 ```
+
 **输出:**
 ```json
 [
@@ -11157,7 +11235,9 @@ console.log(searchEngine.search('Movies', (e) => e.rating > 8.5, {key: 'rating',
 ]
 ```
 
-为了实现这一点，我们可以使用 [map](https://learnersbucket.com/tutorials/es6/maps) 来注册和跟踪不同的命名空间及其关联文档。对于搜索，我们将接收命名空间和一个回调函数，该回调函数将根据其输出过滤值。该函数还将接受一个 `orderBy` 参数，包含搜索结果排序的键名和顺序。
+## 实现
+
+为了实现这一点，我们可以使用 `Map` 来注册和跟踪不同的命名空间及其关联文档。对于搜索，我们将接收命名空间和一个回调函数，该回调函数将根据其输出过滤值。该函数还将接受一个 `orderBy` 参数，包含搜索结果排序的键名和顺序。
 
 ```javascript
 class InMemorySearch {
@@ -11165,10 +11245,12 @@ class InMemorySearch {
     // 跟踪命名空间及其文档
     this.entities = new Map();
   }
+
   // 注册新命名空间
   registerNameSpace(name) {
     this.entities.set(name, []);
   }
+
   // 向命名空间添加文档
   addDocuments(nameSpace, ...documents) {
     const existing = this.entities.get(nameSpace);
@@ -11182,6 +11264,7 @@ class InMemorySearch {
       this.entities.set(nameSpace, [...existing, ...documents]);
     }
   }
+
   // 搜索给定命名空间的文档
   search(nameSpace, filterFN, orderByFN) {
     // 获取命名空间
@@ -11206,18 +11289,22 @@ class InMemorySearch {
 };
 ```
 
-**测试用例**
+## 测试用例
+
 **输入:**
 ```javascript
 const searchEngine = new InMemorySearch();
+
 searchEngine.addDocuments('Movies', 
   {name: 'Avenger', rating: 8.5, year: 2017},
   {name: 'Black Adam', rating: 8.7, year: 2022},
   {name: 'Jhon Wick 4', rating: 8.2, year: 2023},
   {name: 'Black Panther', rating: 9.0, year: 2022}
 );
+
 console.log(searchEngine.search('Movies', (e) => e.rating > 8.5, {key: 'rating', asc: false}));
 ```
+
 **输出:**
 ```json
 [
@@ -11236,22 +11323,27 @@ console.log(searchEngine.search('Movies', (e) => e.rating > 8.5, {key: 'rating',
 
 ---
 
-### 实现一个模糊搜索函数
-**问题描述**
+# 实现一个模糊搜索函数
+
+## 问题描述
 在 JavaScript 中实现一个执行模糊匹配的函数，它接受字符串数组和查询字符串作为输入，并返回匹配的字符串列表。
 
-**示例**
+## 示例
+
 ```javascript
 const strArr = [
   'Doomsayer', 'Doomguard', 'Doomhamer', 'Bane of Doom',
   'Fearsome Doomguard', 'Dr. Boom', 'Majordomo',
   'Shadowbomber', 'Shadowform', 'Goldshire footman'
 ];
+
 const query = 'an';
+
 fuzzySearch(strArr, query);
 // ["Bane of Doom", "Goldshire footman"]
 ```
-如果搜索字符串中的字符都按照相同的顺序出现在字符串中，则认为该字符串是匹配。该函数最复杂的部分是创建模糊搜索算法。从问题描述中，我们了解到字符的顺序在搜索中最重要的。因此，我们可以使用[滑动窗口技术](https://levelup.gitconnected.com/understanding-the-sliding-window-technique-in-algorithms-c6c3bf8226da)在每个字符串中搜索。
+
+如果搜索字符串中的字符都按照相同的顺序出现在字符串中，则认为该字符串是匹配。该函数最复杂的部分是创建模糊搜索算法。从问题描述中，我们了解到字符的顺序在搜索中最重要的。因此，我们可以使用滑动窗口技术在每个字符串中搜索。
 
 - 使用两个变量，一个用于跟踪查询字符串的字符，另一个用于跟踪字符串中上一次搜索的位置。
 - 从字符串中选取第一个字符，并从上次搜索位置获取其在字符串中的索引，如果字符存在，则将上次搜索位置更新为当前位置并继续检查。
@@ -11263,10 +11355,12 @@ const fuzzySearch = function(str, query) {
   // 以忽略大小写
   str = str.toLowerCase();
   query = query.toLowerCase();
+
   // 使用两个变量来跟踪
   // 当前
   // 和上一次搜索的位置
   let i = 0, lastSearched = -1, current = query[i];
+
   while (current) {
     // 如果字符不存在
     // 返回 false
@@ -11275,6 +11369,7 @@ const fuzzySearch = function(str, query) {
     }
     current = query[++i];
   }
+
   // 如果搜索完成
   // 返回 true
   return true;
@@ -11286,7 +11381,8 @@ const search = function(arr, query) {
 };
 ```
 
-**测试用例**
+## 测试用例
+
 **输入:**
 ```javascript
 const arr = [
@@ -11294,8 +11390,10 @@ const arr = [
   'Fearsome Doomguard', 'Dr. Boom', 'Majordomo',
   'Shadowbomber', 'Shadowform', 'Goldshire footman'
 ];
+
 console.log(search(arr, 'sh'));
 ```
+
 **输出:**
 ```json
 ["Shadowbomber", "Shadowform", "Goldshire footman"]
@@ -11303,17 +11401,15 @@ console.log(search(arr, 'sh'));
 
 ---
 
-### 取消 API 请求
-**问题描述**
+# 取消 API 请求
+
+## 问题描述
 解释一种取消正在进行的 API 请求的方法。
 
-**解释**
-JavaScript web API 有一个名为 [AbortController](https://developers.mozilla.org/en-US/docs/Web/API/AbortController/AbortController) 的方法。这个 AbortController 有一个名为 [signal](https://developer.mozilla.org/en-US/docs/Web/API/AbortController/signal) 的属性，允许我们创建一个与 Fetch API 关联的 AbortSignal，从而提供取消 API 请求的选项。
+## 解释
+JavaScript web API 有一个名为 `AbortController` 的方法。这个 `AbortController` 有一个名为 `signal` 的属性，允许我们创建一个与 Fetch API 关联的 `AbortSignal`，从而提供取消 API 请求的选项。
 
-该 signal 作为参数传递给 Fetch API。
-
-
-
+该 `signal` 作为参数传递给 Fetch API。
 
 为了实现这一功能，我们将创建一个 `AbortController()` 构造函数并获取它的 `signal` 属性。将此 `signal` 属性作为参数传递给 `fetch` API，并在我们想要取消 API 请求时调用该 `constructor` 的 `abort()` 方法。
 
@@ -11357,20 +11453,26 @@ function makeCall() {
     });
 }
 ```
+
 在开发者工具中限制为慢速 2G 网速并点击下载按钮，稍后点击中止，API 调用将以 abort 错误终止。
+
+---
 
 # 高亮字符串中的单词
 
-### 问题陈述
+## 问题陈述
 给定一个字符串和一个关键词数组，高亮字符串中属于关键词数组的单词。
 
 ## 示例
+
 ```javascript
 const str = "Ultimate JavaScript / FrontEnd Guide";
 const words = ['Front', 'End', 'JavaScript'];
+
 highlight(str, words);
-// // "Ultimate <strong>JavaScript</strong> / <strong>FrontEnd</strong> Guide"
+// "Ultimate <strong>JavaScript</strong> / <strong>FrontEnd</strong> Guide"
 ```
+
 如果两个单词重叠或相邻，请将它们合并。正如你在上面的示例所示，有两个不同的单词 `Front` 和 `End`，但它们被在一起高亮。
 
 为了实现此函数，我们需要处理两种不同的情况：
@@ -11381,12 +11483,15 @@ highlight(str, words);
 function highlight(str, keywords) {
   // 关键词的唯一集合
   const uniqueKeywords = new Set(keywords);
+
   // 将字符串拆分为单词
   let words = str.split(" ");
+
   // 遍历每个单词
   const result = words.map(word => {
     // 用于跟踪输出
     let output = '';
+
     // 如果在关键词集中找到了单词
     // 则进行高亮
     if (uniqueKeywords.has(word)) {
@@ -11398,6 +11503,7 @@ function highlight(str, keywords) {
         // 将单词拆分为两部分
         const prefix = word.slice(0, i + 1);
         const suffix = word.slice(i + 1);
+
         // 如果两个部分都在关键词中
         // 将它们合并嵌入
         if (uniqueKeywords.has(prefix) && uniqueKeywords.has(suffix)) {
@@ -11416,26 +11522,33 @@ function highlight(str, keywords) {
         }
       }
     }
+
     // 如果没有发生嵌入
     // 返回原始单词
     return output !== '' ? output : word;
   });
+
   // 转回字符串
   return result.join(" ");
 }
 ```
 
-### 测试用例
+## 测试用例
+
 **输入：**
 ```javascript
 const str = "Ultimate JavaScript / FrontEnd Guide";
 const words = ['Front', 'End', 'JavaScript'];
+
 console.log(highlight(str, words));
 ```
+
 **输出：**
 ```javascript
-// // "Ultimate <strong>JavaScript</strong> / <strong>FrontEnd</strong> Guide"
+// "Ultimate <strong>JavaScript</strong> / <strong>FrontEnd</strong> Guide"
 ```
+
+---
 
 # Reactjs 问题
 
@@ -11473,8 +11586,6 @@ export default Example;
 在 React 中创建一个 `useIdle()` 钩，它根据用户在定义时间后的活跃或非活跃状态返回布尔值。
 
 我们将 `delay` 作为 `useIdle(delay)` 的输入，如果用户没有执行任何操作，则他被视为 `Idle`（空闲）。
-
-
 
 实现逻辑非常直观，我们将使用 `useState()` 来监控用户的活跃状态，并使用 `useEffect()` 在窗口对象以及文档上分配事件监听器，并在清理期间移除这些监听器。
 
@@ -11553,6 +11664,7 @@ const useIdle = (delay) => {
 ```
 
 ### 测试用例
+
 输入：
 ```javascript
 const Example = () => {
@@ -11564,6 +11676,7 @@ const Example = () => {
   );
 };
 ```
+
 输出：
 IsIdle: false
 IsIdle: true
@@ -11603,6 +11716,7 @@ const useAsync = (asyncFn, immediate = false) => {
       value: null,
       error: null,
     });
+
     return asyncFn().then((response) => {
       setState({
         status: "success",
@@ -11626,13 +11740,14 @@ const useAsync = (asyncFn, immediate = false) => {
     }
   }, [refetch, immediate]);
 
-  //状态值
+  // 状态值
   const { status, value, error } = state;
   return { refetch, status, value, error };
 };
 ```
 
 ### 测试用例
+
 输入：
 ```javascript
 // 模拟 API 调用
@@ -11656,6 +11771,7 @@ const Example = () => {
   );
 };
 ```
+
 输出：
 Status: success
 Value: Success
@@ -11677,22 +11793,27 @@ const useDebounce = (fn, delay, immediate = false) => {
   const debounce = useCallback(function() {
     // 为 setTimeout 上下文和参数
     let context = this, args = arguments;
+
     // 现在应该调用函数吗？如果 immediate 为 true
     // 且已不在超时中，那么答案是：是
     const callNow = immediate && !timerId.current;
+
     // 基础情况
     // 清除超时以分配新的超时。
     clearTimeout(timerId.current);
+
     // 设置新的超时
     timerId.current = setTimeout(function() {
       // 在超时函数内部，清除超时变量
       // 这将在在 'immediate' 模式下允许下次执行运行
       timerId.current = null;
+
       // 检查函数是否已带有 immediate 标记运行过
       if (!immediate) {
         fn.apply(context, args);
       }
     }, delay);
+
     if (callNow) {
       fn.apply(context, args);
     }
@@ -11702,37 +11823,7 @@ const useDebounce = (fn, delay, immediate = false) => {
 };
 ```
 
-
-
-
-```javascript
-// call the original function with apply
-
-fn.apply(context, args);
-
-}
-
-}, delay);
-
-// immediate mode and no wait timer? Execute
-
-the function immediately
-
-if
-
-(callNow) fn.apply(context, args);
-
-},
-
-[fn, delay, immediate]
-);
-
-return
-
-debounce;
-
-};
-```### 测试用例 1：不带 immediate 标记
+### 测试用例 1：不带 immediate 标记
 
 **输入：**
 ```javascript
@@ -11740,6 +11831,7 @@ const Example = () => {
   const print = () => {
     console.log("hello");
   };
+
   const debounced = useDebounce(print, 500);
   useEffect(() => {
     window.addEventListener("mousemove", debounced, false);
@@ -11747,6 +11839,7 @@ const Example = () => {
       window.removeEventListener("mousemove", debounced, false);
     };
   });
+
   return <></>;
 };
 ```
@@ -11762,6 +11855,7 @@ const Example = () => {
   const print = () => {
     console.log("hello");
   };
+
   // immediate
   const debounced = useDebounce(print, 500, true);
   useEffect(() => {
@@ -11770,6 +11864,7 @@ const Example = () => {
       window.removeEventListener("mousemove", debounced, false);
     };
   });
+
   return <></>;
 };
 ```
@@ -11778,7 +11873,9 @@ const Example = () => {
 `"hello"` // 在鼠标停止移动前立即执行一次
 `"hello"` // 在鼠标停止移动后再次立即执行一次
 
-### useThrottle() 钩子
+---
+
+## useThrottle() 钩子
 
 节流（Throttling）是一种限制函数执行/调用次数的方法/技术。例如，考虑一个抽奖号码生成器，我们希望只在特定的时间间隔后获取一个数字。
 
@@ -11800,10 +11897,12 @@ const useThrottle = (fn, wait, option = { leading: true, trailing: true }) => {
   // 跟踪定时器
   const lastArgs = useRef();
   // 跟踪参数
+
   // 创建一个记忆化的节流
   const throttle = useCallback(
     function (...args) {
       const { trailing, leading } = option;
+
       // 延迟调用的函数
       const waitFunc = () => {
         // 如果开启 trailing，调用函数并重新启动定时器
@@ -11816,6 +11915,7 @@ const useThrottle = (fn, wait, option = { leading: true, trailing: true }) => {
           timerId.current = null;
         }
       };
+
       // 如果开启 leading，立即执行
       if (!timerId.current && leading) {
         fn.apply(this, args);
@@ -11824,6 +11924,7 @@ const useThrottle = (fn, wait, option = { leading: true, trailing: true }) => {
       else {
         lastArgs.current = args;
       }
+
       // 执行延迟调用
       if (!timerId.current) {
         timerId.current = setTimeout(waitFunc, wait);
@@ -11831,6 +11932,7 @@ const useThrottle = (fn, wait, option = { leading: true, trailing: true }) => {
     },
     [fn, wait, option]
   );
+
   return throttle;
 };
 ```
@@ -11843,6 +11945,7 @@ const Example = () => {
   const print = () => {
     console.log("hello");
   };
+
   const throttled = useThrottle(print, 2500, { leading: true, trailing: false });
   return <button onClick={throttled}>click me</button>;
 };
@@ -11861,6 +11964,7 @@ const Example = () => {
   const print = () => {
     console.log("hello");
   };
+
   const throttled = useThrottle(print, 2500, { leading: false, trailing: true });
   return <button onClick={throttled}>click me</button>;
 };
@@ -11871,11 +11975,13 @@ const Example = () => {
 `"hello"` // 上一次调用 2500 毫秒后
 `"hello"` // 上一次调用 2500 毫秒后
 
-### useResponsive() 钩子
+---
+
+## useResponsive() 钩子
 
 在 React 中创建 `useResponsive()` 钩子，它将根据窗口宽度返回设备类型（`isMobile`、`isTablet`、`isDesktop`）。很多时候我们需要根据设备条件渲染组件，而不是通过 CSS 隐藏和显示，可以使用此钩子。
 
-为此，我们将为 [window](https://developer.mozilla.org/en-US/docs/Web/API/Window) 对象分配一个事件监听器，并在 `onResizeHandler()` 函数上监听 resize 事件，每当用户调整屏幕大小时时，该函数就会更新状态。
+为此，我们将为 `window` 对象分配一个事件监听器，并在 `onResizeHandler()` 函数上监听 resize 事件，每当用户调整屏幕大小时时，该函数就会更新状态。
 
 分配和移除事件监听器被封装在两个函数 `Setup()` 和 `Cleanup()` 中，并在 `useEffect()` 钩子中调用，我们还调用了 `onResizeHandler()` 来初始化值。
 
@@ -11887,6 +11993,7 @@ const useResponsive = () => {
     isTablet: false,
     isDesktop: false,
   });
+
   useEffect(() => {
     // 在初始加载时更新状态
     onResizeHandler();
@@ -11905,21 +12012,25 @@ const useResponsive = () => {
     const isDesktop = window.innerWidth > 990;
     setState({ isMobile, isTablet, isDesktop });
   };
+
   // 防抖处理调用
   const debouncedCall = useDebounce(onResizeHandler, 500);
+
   // 添加监听器
   const Setup = () => {
     window.addEventListener("resize", debouncedCall, false);
   };
+
   // 移除监听器
   const Cleanup = () => {
     window.removeEventListener("resize", debouncedCall, false);
   };
+
   return state;
 };
 ```
 
-`onResizeHandler()` 函数使用了 useDebounce() 钩子进行防抖处理，因为我们不想在用户持续调整大小时产生连续的状态更新，而是要在用户调整完成后更新一次。
+`onResizeHandler()` 函数使用了 `useDebounce()` 钩子进行防抖处理，因为我们不想在用户持续调整大小时产生连续的状态更新，而是要在用户调整完成后更新一次。
 
 ### 测试用例
 
@@ -11935,63 +12046,62 @@ const Example = () => {
 **输出：**
 `false, false, true`
 
-### useWhyDidYouUpdate() 钩子
+---
+
+## useWhyDidYouUpdate() 钩子
 
 性能优化是使任何 Web 应用健壮的关键，尤其是在现在前端变得越来越复杂的。在 React 中实现这一点的一种方法是避免不必要的重新渲染，为了跟踪这一点，我们需要监控组件内部 props 或状态的变化。
 
-通过 `useWhyDidYouUpdate()` 钩子，我们可以确定触发重新渲染的变化是什么。原理很简单：我们将扩展 usePrevious() 钩子，并将旧值与新值进行比较，查看它们是否发生了变化。
+通过 `useWhyDidYouUpdate()` 钩子，我们可以确定触发重新渲染的变化是什么。原理很简单：我们将扩展 `usePrevious()` 钩子，并将旧值与新值进行比较，查看它们是否发生了变化。
 
 ```javascript
 function useWhyDidYouUpdate(name, props) {
   // 创建一个跟踪之前数据的引用
-```
+  const previousProps = useRef();
 
-
-
-
-
-```javascript
-const previousProps = useRef();
-
-useEffect(() => {
-  if (previousProps.current) {
-    // 合并之前的和当前数据的键
-    const keys = Object.keys({ ...previousProps.current, ...props });
-    // 存储发生的变化
-    const changesObj = {};
-    // 检查之前的和当前键之间哪些值发生了
-    keys.forEach((key) => {
-      // 如果两者都是对象
-      if (typeof props[key] === "object" && typeof previousProps.current[key] === "object") {
-        if (JSON.stringify(previousProps.current[key]) !== JSON.stringify(props[key])) {
-          // 添加到 changesObj
-          changesObj[key] = {
-            from: previousProps.current[key],
-            to: props[key],
-          };
+  useEffect(() => {
+    if (previousProps.current) {
+      // 合并之前的和当前数据的键
+      const keys = Object.keys({ ...previousProps.current, ...props });
+      // 存储发生的变化
+      const changesObj = {};
+      // 检查之前的和当前键之间哪些值发生了
+      keys.forEach((key) => {
+        // 如果两者都是对象
+        if (typeof props[key] === "object" && typeof previousProps.current[key] === "object") {
+          if (JSON.stringify(previousProps.current[key]) !== JSON.stringify(props[key])) {
+            // 添加到 changesObj
+            changesObj[key] = {
+              from: previousProps.current[key],
+              to: props[key],
+            };
+          }
+        } else {
+          // 如果两者都非对象
+          if (previousProps.current[key] !== props[key]) {
+            // 添加到 changesObj
+            changesObj[key] = {
+              from: previousProps.current[key],
+              to: props[key],
+            };
+          }
         }
-      } else {
-        // 如果两者都非对象
-        if (previousProps.current[key] !== props[key]) {
-          // 添加到 changesObj
-          changesObj[key] = {
-            from: previousProps.current[key],
-            to: props[key],
-          };
-        }
+      });
+
+      // 如果 changesObj 不空，打印原因
+      if (Object.keys(changesObj).length) {
+        console.log("This is causing re-renders", name, changesObj);
       }
-    });
-    // 如果 changesObj 不空，打印原因
-    if (Object.keys(changesObj).length) {
-      console.log("This is causing re-renders", name, changesObj);
     }
-  }
-  // 用当前的更新之前的 props
-  previousProps.current = props;
-});
+
+    // 用当前的更新之前的 props
+    previousProps.current = props;
+  });
+}
 ```
 
 ### 测试用例
+
 Input:
 ```javascript
 import React, { useEffect, useRef, useState } from "react";
@@ -12008,7 +12118,6 @@ const Counter = React.memo((props) => {
 export default function App() {
   const [count, setCount] = useState(0);
   const [testCase, setTestCase] = useState(null);
-
   const counterStyle = {
     fontSize: "3rem",
     color: "red",
@@ -12034,6 +12143,7 @@ export default function App() {
   );
 }
 ```
+
 Output:
 ```text
 This is causing re-renders Counter
@@ -12049,32 +12159,38 @@ from: null
 to: [1]
 ```
 
+---
+
 ## useOnScreen() hook
+
 跟踪组件的可见性在许多场景下都非常有用，特别是在性能优化方面，当你只想在组件进入视口或可见时才加载媒体文件（如图片、视频、音频等）。
 
-另一种情况是你是你想要跟踪用户活动，例如当用户正在收藏某个产品时（此时产品在视口内），这样你可以将这些数据用于推荐。
+另一种情况是你想要跟踪用户活动，例如当用户正在收藏某个产品时（此时产品在视口内），这样你可以将这些数据用于推荐。
 
 为此，我们可以创建一个 `useOnScreen()` hook，如果组件在视口内，它将返回一个布尔值。
 
 有两种实现方式：
-1. 使用 [Intersection Observer.](https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API)
-2. 使用 [getBoundingClientRect().](https://developer.mozilla.org/en-US/docs/Web/API/Element/getBoundingClientRect)
+1. 使用 `Intersection Observer`
+2. 使用 `getBoundingClientRect()`
 
-#### 使用 Intersection Observer
+### 使用 Intersection Observer
+
 通过 `useRef()` 我们将为想要跟踪的 DOM 元素创建一个引用，然后将其传递给 `useOnScreen()` hook。
 
-`useOnScreen()` hook 会会在组件挂载时为 `ref` 设置观察。这将在 `useEffect()` 中完成，创建一个 `IntersectionObserver` 实例，并且如果条目处于交互状态，则将状态更新为 `true`（表示可见），否则为 `false`。
+`useOnScreen()` hook 会在组件挂载时为 `ref` 设置观察。这将在 `useEffect()` 中完成，创建一个 `IntersectionObserver` 实例，并且如果条目处于交互状态，则将状态更新为 `true`（表示可见），否则为 `false`。
 
 在组件即将卸载时，在 `useEffect()` 中断开观察。
 
 ```javascript
 function useOnScreen(ref) {
   const [isIntersecting, setIntersecting] = useState(false);
+
   // 监控交互
   const observer = new IntersectionObserver(([entry]) => {
     // 在交互变化时更新状态
     setIntersecting(entry.isIntersecting);
   });
+
   useEffect(() => {
     // 分配观察者
     observer.observe(ref.current);
@@ -12083,11 +12199,13 @@ function useOnScreen(ref) {
       observer.disconnect();
     };
   }, []);
+
   return isIntersecting;
 }
 ```
 
 ### 测试用例
+
 ```javascript
 const Element = ({ number }) => {
   const ref = useRef();
@@ -12108,17 +12226,20 @@ const DummyComponent = () => {
 };
 ```
 
-#### 使用 getBoundingClientRect()
+### 使用 getBoundingClientRect()
+
 与 Intersection Observer 不同，在这里我们必须执行一个简单的计算，以判断元素是否在视口内。即 `top` 大于零但小于 `window.innerHeight`。
 
 ```javascript
 function useOnScreen2(ref) {
   const [isIntersecting, setIntersecting] = useState(false);
+
   // 确定元素是否可见
   const observer = () => {
     const top = ref.current.getBoundingClientRect().top;
     setIntersecting(top >= 0 && top <= window.innerHeight);
   };
+
   useEffect(() => {
     // 首次检查
     observer();
@@ -12129,11 +12250,13 @@ function useOnScreen2(ref) {
       window.removeEventListener("scroll", observer);
     };
   }, []);
+
   return isIntersecting;
 }
 ```
 
 ### 测试用例
+
 ```javascript
 const Element = ({ number }) => {
   const ref = useRef();
@@ -12154,7 +12277,10 @@ const DummyComponent = () => {
 };
 ```
 
-### useScript() hook
+---
+
+## useScript() hook
+
 有些脚本我们不需要在应用初始加载时加载，而是在某些组件或地方需要。例如，Google Adsense 脚本，我们可以在应用程序就绪且显示广告的组件挂载后加载它。
 
 在这些情况下，我们可以使用 `useScript()` hook 来异步注入脚本。其非常简单：将脚本源传递给 `useScript()` hook，它将检查是否已经注入了具有该源的脚本；如果存在，则返回 'ready' 状态。否则创建一个带有该源的新脚本并将其注入到 `body` 的末尾。在该脚本标签上分配事件监听器，在成功加载时更新状态为 'ready'，出错时更新为 'error'。
@@ -12163,14 +12289,17 @@ const DummyComponent = () => {
 function useScript(src) {
   // 跟踪脚本状态 ("idle", "loading", "ready", "error")
   const [status, setStatus] = useState(src ? "loading" : "idle");
+
   useEffect(() => {
     // 如果未提供 url，将状态设置为 idle
     if (!src) {
       setStatus("idle");
       return;
     }
+
     // 获取脚本以检查其是否已经源源
     let script = document.querySelector(`script[src="${src}"]`);
+
     if (script) {
       // 如果脚本已经加载，获取其状态并更新
       setStatus(script.getAttribute("data-status"));
@@ -12183,62 +12312,80 @@ function useScript(src) {
       // 将脚本注入到 body 的末尾
       document.body.appendChild(script);
     }
+
     script.onload = () => setStatus("ready");
     script.onerror = () => setStatus("error");
   }, [src]);
+
   return status;
 }
 ```
 
-
-
-
-
 ```javascript
-.body.appendChild(script);
+function useScript(src) {
+  // 跟踪脚本状态 ("idle", "loading", "ready", "error")
+  const [status, setStatus] = useState(src ? "loading" : "idle");
 
-// 在自定义属性中设置脚本状态
+  useEffect(() => {
+    // 如果未提供 url，将状态设置为 idle
+    if (!src) {
+      setStatus("idle");
+      return;
+    }
 
-const setAttributeFromEvent = (event) => {
-  script.setAttribute(
-    "data-status",
-    event.type === "load" ? "ready" : "error"
-  );
-};
+    // 获取脚本以检查其是否已经存在
+    let script = document.querySelector(`script[src="${src}"]`);
 
-// 绑定事件监听器以监控脚本是否正确加载
-script.addEventListener("load", setAttributeFromEvent);
-script.addEventListener("error", setAttributeFromEvent);
+    if (script) {
+      // 如果脚本已经加载，获取其状态并更新
+      setStatus(script.getAttribute("data-status"));
+    } else {
+      // 创建脚本
+      script = document.createElement("script");
+      script.src = src;
+      script.async = true;
+      script.setAttribute("data-status", "loading");
+      // 将脚本注入到 body 的末尾
+      document.body.appendChild(script);
 
-}
+      // 在自定义属性中设置脚本状态
+      const setAttributeFromEvent = (event) => {
+        script.setAttribute(
+          "data-status",
+          event.type === "load" ? "ready" : "error"
+        );
+      };
 
-// 更新脚本状态的辅助函数
-const setStateFromEvent = (event) => {
-  setStatus(event.type === "load" ? "ready" : "error");
-};
+      // 绑定事件监听器以监控脚本是否正确加载
+      script.addEventListener("load", setAttributeFromEvent);
+      script.addEventListener("error", setAttributeFromEvent);
+    }
 
-// 初始化
-script.addEventListener("load", setStateFromEvent);
-script.addEventListener("error", setStateFromEvent);
-// 清理
-return () => {
-  if (script) {
-    script.removeEventListener("load", setStateFromEvent);
-    script.removeEventListener("error", setStateFromEvent);
-  }
-};
-}, [src]);
+    // 更新脚本状态的辅助函数
+    const setStateFromEvent = (event) => {
+      setStatus(event.type === "load" ? "ready" : "error");
+    };
 
-return status;
+    // 初始化
+    script.addEventListener("load", setStateFromEvent);
+    script.addEventListener("error", setStateFromEvent);
+
+    // 清理
+    return () => {
+      if (script) {
+        script.removeEventListener("load", setStateFromEvent);
+        script.removeEventListener("error", setStateFromEvent);
+      }
+    };
+  }, [src]);
+
+  return status;
 }
 ```
 
-© JavaScript Interview Guide | learnersbucket.com
-458
-
 ### 测试用例
 
-```Ajavascript
+```javascript
 const Dummy = () => {
   const status = useScript("https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js");
   console.log(status);
@@ -12248,10 +12395,9 @@ const Dummy = () => {
 export default Dummy;
 ```
 
-© JavaScript Interview Guide | learnersbucket.com
-459
+---
 
-### useOnClickOutside() hook
+## useOnClickOutside() hook
 
 检查用户是否点击了组件外部。在 React 中创建一个 `useOnClickOutside()` 的 hook，可以帮助我们检测这种行为。
 
@@ -12274,8 +12420,10 @@ function useOnClickOutside(ref, callback) {
       // 调用回调
       callback(event);
     };
+
     document.addEventListener("mousedown", listener);
     document.addEventListener("touchstart", listener);
+
     return () => {
       document.removeEventListener("mousedown", listener);
       document.removeEventListener("touchstart", listener);
@@ -12284,16 +12432,11 @@ function useOnClickOutside(ref, callback) {
   // 将 ref 和 callback 添加到 effect 依赖项
   [ref, callback]
 );
-}
 ```
-
-© JavaScript Interview Guide | learnersbucket.com
-460
 
 ### 测试用例
 
 **输入：**
-
 ```javascript
 function Example() {
   const ref = useRef();
@@ -12314,10 +12457,9 @@ function Example() {
 "Clicked" // 当点击 Outside Click me! 时
 ```
 
-© JavaScript Interview Guide | learnersbucket.com
-461
+---
 
-### useHasFocus() hook
+## useHasFocus() hook
 
 在 react 中实现一个 hook，帮助判断应用程序是否处于聚焦状态。这有助于在用户未聚焦或未在该标签页时停止后台处理。
 
@@ -12327,7 +12469,7 @@ function Example() {
 
 当窗口失去焦点时，将焦点状态设置为 `false`；否则当窗口聚焦时，将状态更新为 `true`。
 
-使用 `[document.hasFocus()](https://developer.mozilla.org/en-US/docs/Web/API/Document/hasFocus) 获取初始状态。
+使用 `document.hasFocus()` 获取初始状态。
 
 ```javascript
 import { useState, useEffect } from "react";
@@ -12335,32 +12477,32 @@ import { useState, useEffect } from "react";
 const useHasFocus = () => {
   // 获取初始状态
   const [focus, setFocus] = useState(document.hasFocus());
+
   useEffect(() => {
     // 更新状态的辅助函数
     const onFocus = () => setFocus(true);
     const onBlur = () => setFocus(false);
+
     // 分配监听器
     // 在事件发生时更新状态
     window.addEventListener("focus", onFocus);
     window.addEventListener("blur", onBlur);
+
     // 移除监听器
     return () => {
       window.removeEventListener("focus", onFocus);
       window.removeEventListener("blur", onBlur);
     };
   }, []);
+
   // 返回状态
   return focus;
 };
 ```
 
-© JavaScript Interview Guide | learnersbucket.com
-462
-
 ### 测试用例
 
 **输入：**
-
 ```javascript
 const Example = () => {
   const focus = useHasFocus();
@@ -12376,10 +12518,9 @@ false // 切换标签
 true // 回到标签
 ```
 
-© JavaScript Interview Guide | learnersbucket.com
-463
+---
 
-### useToggle() hook
+## useToggle() hook
 
 在 React 中实现 `useToggle()` hook，它接受一个值数组和起始索引，并切换数组中的下一个值。如果索引达到了数组的最后一个索引，则重置索引。
 
@@ -12395,6 +12536,7 @@ import { useCallback, useState } from "react";
 const useToggle = (values, startIndex = 0) => {
   // 跟踪索引
   const [index, setIndex] = useState(startIndex);
+
   // 定义并记忆化切换函数，以防
   // 我们将其传递给组件，
   // 这会将索引移动到下一个级别
@@ -12403,18 +12545,15 @@ const useToggle = (values, startIndex = 0) => {
     () => setIndex((prevIndex) => (prevIndex >= values.length - 1 ? 0 : prevIndex + 1)),
     [values]
   );
+
   // 返回值和切换函数
   return [values[index], toggle];
 };
 ```
 
-© JavaScript Interview Guide | learnersbucket.com
-464
-
 ### 测试用例
 
 **输入：**
-
 ```javascript
 function Example() {
   // 调用 hook 获取当前值
@@ -12439,19 +12578,17 @@ currentValue: b // onClick
 currentValue: c // onClick
 ```
 
-© JavaScript Interview Guide | learnersbucket.com
-465
+---
 
-### useCopy() hook
+## useCopy() hook
 
 在 React 中实现一个 `useCopy()` hook，将给定文本复制到剪贴板。
 
 `useCopy()` 方法返回一个 `copy(text)` 方法，该方法接受文本作为输入并复制该文本以及返回复制后的文本。
 
-为了实现此函数，我们将使用浏览器内置的允许复制 [navigator.clipboard](https://developer.mozilla.org/en-US/docs/Web/API/Navigator/clipboard) 。
+为了实现此函数，我们将使用浏览器内置的允许复制 `navigator.clipboard` 。
 
 `navigator.clipboard` 有两个方法：
-
 - `writeText(text)` – 用于复制任何给定的文本。
 - `readText()` – 用于读取复制的文本。
 
@@ -12466,11 +12603,13 @@ import { useState } from "react";
 
 const useCopy = () => {
   const [copiedText, setCopiedText] = useState();
+
   const copy = async (text) => {
     if (!navigator?.clipboard) {
       console.warn("不支持剪贴板");
       return false;
     }
+
     // 尝试保存到剪贴板，如果成功则将其保存到
     // 状态中
     try {
@@ -12481,29 +12620,19 @@ const useCopy = () => {
       setCopiedText(null);
     }
   };
-  return copy;
+
+  return [copiedText, copy];
 };
 ```
 
+### 测试用例
 
-
-
-
-```javascript
-[copiedText, copy];
-
-};
-```
-
-### Test Case
-
-### 输入:
+**输入:**
 ```javascript
 function Example() {
   // call the hook which returns, copied text and
   // the copy function
   const [copiedText, copy] = useCopy();
-
   return (
     <button onClick={() => copy("Hello World!")}>
       "copiedText" : {copiedText}
@@ -12514,14 +12643,13 @@ function Example() {
 export default Example;
 ```
 
-### 输出:
-```text
+**输出:**
+```
 copiedText: // initially
 copiedText: Hello World! // after click
 ```
 
-© JavaScript Interview Guide | learnersbucket.com
-467
+---
 
 ## useLockedBody() hook
 
@@ -12541,77 +12669,103 @@ const useLockedBody = (ref, initiallyLocked = false) => {
 
   // 在渲染前处理副作用
   useLayoutEffect(() => {
-    if (!locked) {
-      return;
-    }
-    // 保存原始 body 样式
-    const originalOverflow = document.body.style.overflow;
-    const originalPaddingRight = document.body.style.paddingRight;
+    if (!ref.current) return;
 
-    // 锁定 body 滚动
-    document.body.style.overflow = "hidden";
+    const originalStyle = window.getComputedStyle(document.body);
+    const originalOverflow = originalStyle.overflow;
+    const originalPaddingRight = originalStyle.paddingRight;
 
-    // 获取滚动条宽度
-    const root = ref.current;
-    // 或者 root
-    const scrollBarWidth = root ? root.offsetWidth - root.scrollWidth : 0;
-
-    // 防止宽度重流
-    if (scrollBarWidth) {
+    if (locked) {
+      document.body.style.overflow = 'hidden';
+      const scrollBarWidth = ref.current.scrollWidth - ref.current.clientWidth;
       document.body.style.paddingRight = `${scrollBarWidth}px`;
+    } else {
+      document.body.style.overflow = originalOverflow;
+      document.body.style.paddingRight = originalPaddingRight;
     }
 
-    // 清理
     return () => {
       document.body.style.overflow = originalOverflow;
-      if (scrollBarWidth) {
-        document.body.style.paddingRight = originalPaddingRight;
-      }
+      document.body.style.paddingRight = originalPaddingRight;
     };
-  }, [locked]);
-
-  // 当依赖项变化时更新状态
-  useEffect(() => {
-    if (locked !== initiallyLocked) {
-      setLocked(initiallyLocked);
-    }
-  }, [initiallyLocked]);
+  }, [locked, ref]);
 
   return [locked, setLocked];
 };
 ```
 
-### Test Case
 
-### 输入:
+
+# 文档内容
+
+## useLockedBody Hook 实现
+
+```javascript
+useLayoutEffect(() => {
+  if (!locked) {
+    return;
+  }
+  // 保存原始 body 样式
+  const originalOverflow = document.body.style.overflow;
+  const originalPaddingRight = document.body.style.paddingRight;
+  // 锁定 body 滚动
+  document.body.style.overflow = "hidden";
+  // 获取滚动条宽度
+  const root = ref.current;
+  // 或者 root
+  const scrollBarWidth = root ? root.offsetWidth - root.scrollWidth : 0;
+  // 防止宽度重流
+  if (scrollBarWidth) {
+    document.body.style.paddingRight = `${scrollBarWidth}px`;
+  }
+  // 清理
+  return () => {
+    document.body.style.overflow = originalOverflow;
+    if (scrollBarWidth) {
+      document.body.style.paddingRight = originalPaddingRight;
+    }
+  };
+}, [locked]);
+
+// 当依赖项变化时更新状态
+useEffect(() => {
+  if (locked !== initiallyLocked) {
+    setLocked(initiallyLocked);
+  }
+}, [initiallyLocked]);
+
+return [locked, setLocked];
+```
+
+## Test Case
+
+### 输入
+
 ```javascript
 const Example = () => {
   const ref = useRef();
-  // 调用 hook，返回当前值和
-  // 切换函数
+  // 调用 hook，返回当前值和切换函数
   const [locked, setLocked] = useLockedBody(ref);
-
   return (
     <div style={{ height: "200vh" }} id="abc" ref={ref}>
-      <button onClick={()() => setLocked(!locked)}>
+      <button onClick={() => setLocked(!locked)}>
         {locked ? "unlock scroll" : "lock scroll"}
       </button>
     </div>
   );
 };
-
 // 点击按钮锁定和解锁 body 锁定
 ```
 
-© JavaScript Interview Guide | learnersbucket.com
-470
+---
 
 ## 数字递增计数器
 
-### 问题描述 -
+### 问题描述
 使用 JavaScript 或你选择的任何框架（React, Angular, Vue）创建一个 Web 应用，接收一个数字和时长作为输入，并在指定的持续时间内从 0 开始打印该数字，每次递增 1。编写一个接收输入的函数组件。
 
 ### App.js
+
 ```javascript
 import React, { useState } from "react";
 
@@ -12619,34 +12773,28 @@ const App = () => {
   const [number, setNumber] = useState(0);
   const [duration, setDuration] = useState(0);
   const [start, setStart] = useState(false);
-
   // 如果任何输入变化则重置
   const basicReset = () => {
     setStart(false);
   };
-
   // 存储数字
   const numberChangeHandler = (e) => {
     const { value } = e.target;
     setNumber(value);
     basicReset();
   };
-
   // 存储时长
   const durationChangeHandler = (e) => {
     const { value } = e.target;
     setDuration(value);
     basicReset();
   };
-
   const startHandler = () => {
     // 触发动画
   };
-
   const resetHandler = () => {
     window.location.reload();
   };
-
   return (
     <main style={{ width: "500px", margin: "50px auto" }}>
       <section className="input-area">
@@ -12682,10 +12830,9 @@ const App = () => {
 export default App;
 ```
 
-© JavaScript Interview Guide | learnersbucket.com
-472
+---
 
-### 方案 1 : 使用 setInterval
+### 方案 1：使用 setInterval
 
 如果你像我一样是一个喜欢尝试常用开发者，你首先想到的方法就是使用 `setInterval`。使用 `setInterval` 来此非常简单，例如使用 `setInterval` 函数来递增计数器。
 
@@ -12694,6 +12841,7 @@ export default App;
 2. 使用 Ref
 
 ### CountMethods.js
+
 ```javascript
 import React, { useEffect, useState, useRef } from "react";
 
@@ -12716,7 +12864,6 @@ const CountSetInterval = (props) => {
     // 找到每次递增的时长
     const totalMilSecDur = parseInt(duration);
     let incrementTime = (totalMilSecDur / end) * 1000;
-
     // 定计时器增加计数器
     // 然后更新 count
     let timer = setInterval(() => {
@@ -12753,9 +12900,6 @@ const CountSetInterval = (props) => {
   );
 };
 ```
-
-
-
 
 ```javascript
 //If any input changes reset
@@ -12838,6 +12982,8 @@ export default App;
 很奇怪，吧？尽管我们所做的一切都是正确的，但增加计数的时间比我们预期的要长。
 事实证明，`setInterval` 函数的行为并没有我们想象中的那样。
 
+---
+
 ### 解决方案 2：使用 setTimeout
 
 让我们改变方法，尝试使用 `setTimeout` 实现相同的逻辑。
@@ -12849,7 +12995,6 @@ export default App;
 const CountSetTimeout = (props) => {
   const intervalRef = useRef();
   const countRef = useRef();
-
   // 计数器的标签
   // 要递增到的数字
   // 计数的持续时间（秒）
@@ -12865,11 +13010,9 @@ const CountSetTimeout = (props) => {
     const end = parseInt(number);
     // 如果为零，返回
     if (start === end) return;
-
     // 找到每次递增的持续时间
     let totalMilSecDur = parseInt(duration);
     let incrementTime = (totalMilSecDur / end) * 1000;
-
     // 定时器增加计数器
     // 然后更新计数
     // 如果 start 达到 end 则结束
@@ -12920,35 +13063,29 @@ const App = () => {
   const [number, setNumber] = useState(0);
   const [duration, setDuration] = useState(0);
   const [start, setStart] = useState(false);
-
   // 如果任何输入变化重置
   const basicReset = () => {
     setStart(false);
   };
-
   //存储数字
   const numberChangeHandler = (e) => {
     const { value } = e.target;
     setNumber(value);
     basicReset();
   };
-
   //存储持续时间
   const durationChangeHandler = (e) => {
     const { value } = e.target;
     setDuration(value);
     basicReset();
   };
-
   const startHandler = () => {
     // 触发动画
     setStart(true);
   };
-
   const resetHandler = () => {
     window.location.reload();
   };
-
   return (
     <main style={{ width: "500px", margin: "50px auto" }}>
       <section className="input-area">
@@ -13017,6 +13154,8 @@ export default App;
 
 如果我们能设法避免使用定时器函数，我们应该能够解决这个问题。但是有不使用它们的方法吗？
 
+---
+
 ### 解决方案 3：使用 requestAnimationFrame 方法
 
 使用此方法，我们可以出一个在指定的持续时间内从 0 递增计数的解决方案。
@@ -13026,9 +13165,6 @@ export default App;
 
 现在，这在创建递增计数器时有什么用呢？
 阅读来自 MDN 的文本以以便更好地理解。
-
-
-
 
 每你每当准备好更新屏幕上的动画时，都应该调用此方法。这将请求浏览器在执行下一次重绘之前调用你的动画函数。回调次数通常为每秒 60 次，但根据 W3C 的建议，它通常会匹配大多数网络浏览器的显示刷新率。
 
@@ -13048,10 +13184,8 @@ export default App;
 //Animation
 const countAnimate = (obj, initVal, lastVal, duration) => {
   let startTime = null;
-
   // 获取当前时间戳并将其赋值给 currentTime 变量
   let currentTime = Date.now();
-
   // 将当前时间戳传递给 step 函数
   const step = (currentTime) => {
     // 如果开始时间为空，则将当前时间赋值给 startTime
@@ -13060,10 +13194,8 @@ const countAnimate = (obj, initVal, lastVal, duration) => {
     }
     // 计算用于显示数字所需的进度
     const progress = Math.min((currentTime - startTime) / duration, 1);
-
     // 使用上述得到的值计算要显示的内容
     obj.innerHTML = Math.floor(progress * (lastVal - initVal) + initVal);
-
     // 确保计数器不会超过最后一个值
     if (progress < 1) {
       window.requestAnimationFrame(step);
@@ -13076,7 +13208,6 @@ const countAnimate = (obj, initVal, lastVal, duration) => {
       obj.appendChild(elm);
     }
   };
-
   // 开始动画
   window.requestAnimationFrame(step);
 };
@@ -13094,37 +13225,31 @@ const App = () => {
   const [duration, setDuration] = useState(0);
   const [start, setStart] = useState(false);
   const countRef = useRef();
-
   // 如果任何输入发生则重置
   const basicReset = () => {
     setStart(false);
     countRef.current.innerHTML = "0";
   };
-
   // 存储数字
   const numberChangeHandler = (e) => {
     const { value } = e.target;
     setNumber(value);
     basicReset();
   };
-
   // 存储持续时间
   const durationChangeHandler = (e) => {
     const { value } = e.target;
     setDuration(value);
     basicReset();
   };
-
   const startHandler = () => {
     // 触发动画
     setStart(true);
     countAnimate(countRef.current, 0, parseInt(inputValue), parseInt(duration) * 1000);
   };
-
   const resetHandler = () => {
     window.location.reload();
   };
-
   return (
     <main style={{ width: "500px", margin: "50px auto" }}>
       <section className="input-area">
@@ -13164,9 +13289,11 @@ export default App;
 
 请你自己尝试一下，代码可以在 [github 仓库](https://github.com/know-prashant/frontend-system-design) 中找到。
 
+---
+
 ## 视口中可见的产品
 
-## 问题描述
+### 问题描述
 这个问题是我的朋友在一家房地产网站的面试中遇到的到的。
 
 问题被引用为：“如果用户滚动页面并看到某个房产，并且停留那里超过 5 秒，则调用 API 并存储该房产”。
@@ -13203,13 +13330,11 @@ const Elements = ({ index }) => {
 const Example = () => {
   // 为块创建一个引用
   const ref = useRef([]);
-
   // 渲染 20 个元素块
   const elementsList = [];
   for (let i = 1; i <= 20; i++) {
     elementsList.push(<Elements index={i} />);
   }
-
   // 元素样式
   const wrapperStyle = {
     display: "flex",
@@ -13217,7 +13342,6 @@ const Example = () => {
     justifyContent: "center",
     flexWrap: "wrap",
   };
-
   return (
     <div style={wrapperStyle} ref={ref}>
       {elementsList}
@@ -13236,18 +13360,10 @@ const isInViewport = (elem) => {
     bounding.top >= 0 &&
     bounding.left >= 0 &&
     bounding.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-    bounding.right <= (window.innerWidth || document
+    bounding.right <= (window.innerWidth || document.documentElement.clientWidth)
   );
 };
 ```
-
-
-
-`.documentElement.clientWidth)`
-
-);
-
-};
 
 最后，在延迟后监听 `debounced` 滚动事件，并在用户停止滚动时检查所有元素元素是可见的。
 
@@ -13361,7 +13477,6 @@ const Example = () => {
       bounding.right <= (window.innerWidth || document.documentElement.clientWidth)
     );
   };
-
   // 发起 API 调用
   const makeApiCall = async () => {
     // 子元素数组
@@ -13374,23 +13489,19 @@ const Example = () => {
       }
     });
   };
-
   // 5 秒后执行防抖 API 调用
   const debouncedApiCall = useDebounce(makeApiCall, 5000);
-
   useEffect(() => {
     window.addEventListener("scroll", debouncedApiCall);
     return () => {
       window.removeEventListener("scroll", debouncedApiCall);
     };
   }, []);
-
   // 渲染 20 个元素块
   const elementsList = [];
   for (let i = 1; i <= 20; i++) {
     elementsList.push(<Elements index={i} />);
   }
-
   // 元素样式
   const wrapperStyle = {
     display: "flex",
@@ -13410,7 +13521,9 @@ export default Example;
 
 输出
 
-在选择时高亮文本
+---
+
+## 在选择时高亮文本
 
 在 React 中实现一个 hook，它将返回网页上选中的文本以及选择的坐标，以便可以像 Medium 一样显示弹出框来推文选中的文本。
 
@@ -13467,8 +13580,11 @@ const useSelectionText = (ref) => {
   // 返回数据
   return data;
 };
+```
 
 用法
+
+```javascript
 const Example = () => {
   const ref = useRef();
   const data = useSelectionText(ref);
@@ -13498,8 +13614,7 @@ const Example = () => {
 };
 ```
 
-
-
+---
 
 # 顺序批量调用 API
 
@@ -13508,7 +13623,8 @@ const Example = () => {
 
 ## 示例
 
-### 输入：
+### 输入
+
 ```javascript
 // API calls
 [
@@ -13527,7 +13643,8 @@ const Example = () => {
 - 索引更新后，`useEffect` 钩子将被触发并进行后续调用，从而使所有 API 将被递归执行。
 - 为了执行 API 调用，我们将使用一个辅助函数，该函数将**并行执行所有 promises**并在操作后增加索引。
 
-### 实现：
+### 实现
+
 ```javascript
 import { useState, useEffect } from "react";
 
@@ -13555,13 +13672,10 @@ const Example = () => {
   const promises = [
     1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20
   ];
-
   // 总大小为 5 的子数组
   const subArrays = chop(promises, 5);
-
   // 跟踪索引
   const [index, setIndex] = useState(0);
-
   // 执行异步操作的辅助函数
   const asyncOperations = async (promises) => {
     try {
@@ -13574,7 +13688,6 @@ const Example = () => {
       setIndex(index < subArrays.length - 1 ? index + 1 : 0);
     }
   };
-
   useEffect(() => {
     // 在 5 秒后运行第一个 promise
     if (index === 0) {
@@ -13587,7 +13700,6 @@ const Example = () => {
       asyncOperations(subArrays[index]);
     }
   }, [index]);
-
   return <></>;
 };
 
@@ -13603,12 +13715,13 @@ export default Example;
 
 ## 示例
 
-### 输入：
+### 输入
+
 ```jsx
 <FormattedTime time={new Date("Sun Nov 20 2022 14:20:59")} />
 ```
 
-### 输出：
+### 输出
 `3 hours ago`
 
 该组件需要高效地计算两个时间之间的差，然后显示适当的消息。
@@ -13617,27 +13730,18 @@ export default Example;
 
 ```javascript
 // 获取当前毫秒级的时间
-const
-```
-
-
-
-
-```javascript
-current = +Date.now();
-
+const current = +Date.now();
 // 获取毫秒级日期
 const lastTime = +lastDate;
-
 // 获取毫秒级差
 let diff = Math.abs(current - lastTime);
-
 // 将时间转换为秒
 diff = diff / 1000;
 ```
 
 创建一个以秒为单位的时间枚举以及对应的消息。
 
+```javascript
 // 消息
 const messages = {
   NOW: "just now",
@@ -13662,9 +13766,9 @@ const timeInSecond = {
 
 检查时间处于哪个范围，并相应地返回消息。
 
-// 将时间转换为可读的格式
 ```javascript
-switch (diff) {
+// 将时间转换为可读的格式
+switch (true) {
   case diff < 10:
     return messages.NOW;
   case diff > 10 && diff < timeInSecond.MINUTE:
@@ -13673,23 +13777,23 @@ switch (diff) {
     return messages.LESS_THAN_5_MINUTES;
   default:
     if (diff < timeInSecond.HOUR) {
-        return `${getFormatted(diff / timeInSecond.MINUTE)} ${messages.MINUTES}`;
-      } else if (diff > timeInSecond.HOUR && diff < timeInSecond.DAY) {
-        return `${getFormatted(diff / timeInSecond.HOUR)} ${messages.HOURS}`;
-      } else if (diff > timeInSecond.DAY && diff < timeInSecond.MONTH) {
-        return `${getFormatted(diff / timeInSecond.DAY)} ${messages.DAYS}`;
-      } else if (diff > timeInSecond.MONTH && diff < timeInSecond.YEAR) {
-        return `${getFormatted(diff / timeInSecond.MONTH)} ${messages.MONTHS}`;
-      } else if (diff > timeInSecond.YEAR) {
-        return `${getFormatted(diff / timeInSecond.YEAR)} ${messages.YEARS}`;
-      }
+      return `${getFormatted(diff / timeInSecond.MINUTE)} ${messages.MINUTES}`;
+    } else if (diff > timeInSecond.HOUR && diff < timeInSecond.DAY) {
+      return `${getFormatted(diff / timeInSecond.HOUR)} ${messages.HOURS}`;
+    } else if (diff > timeInSecond.DAY && diff < timeInSecond.MONTH) {
+      return `${getFormatted(diff / timeInSecond.DAY)} ${messages.DAYS}`;
+    } else if (diff > timeInSecond.MONTH && diff < timeInSecond.YEAR) {
+      return `${getFormatted(diff / timeInSecond.MONTH)} ${messages.MONTHS}`;
+    } else if (diff > timeInSecond.YEAR) {
+      return `${getFormatted(diff / timeInSecond.YEAR)} ${messages.YEARS}`;
+    }
 }
 ```
 
 将此逻辑封装在一个函数内，用于格式化并返回该值。
 
-// 消息
 ```javascript
+// 消息
 const messages = {
   NOW: "just now",
   LESS_THAN_A_MINUTE: "a few secs ago",
@@ -13709,10 +13813,8 @@ const timeInSecond = {
   MONTH: 30 * 24 * 60 * 60,
   YEAR: 365 * 24 * 60 * 60,
 };
-```
 
 // 获取取整值
-```javascript
 const getFormatted = (time) => {
   return Math.floor(time);
 };
@@ -13721,18 +13823,14 @@ const getFormatted = (time) => {
 const calculate = (lastDate) => {
   // 获取当前毫秒级时间
   const current = +Date.now();
-
   // 获取毫秒级日期
   const lastTime = +lastDate;
-
   // 获取毫秒级差
   let diff = Math.abs(current - lastTime);
-
   // 将时间转换为秒
   diff = diff / 1000;
-
   // 将时间转换为可读的格式
-  switch (diff) {
+  switch (true) {
     case diff < 10:
       return messages.NOW;
     case diff > 10 && diff < timeInSecond.MINUTE:
@@ -13753,26 +13851,19 @@ const calculate = (lastDate) => {
       }
   }
 };
-```
 
-```javascript
 const FormattedTime = ({ time }) => {
-  return Math.floor(time);
+  return calculate(time);
 };
 
 // 测试用例
-输入: 
-输出: 
-
-// 问题描述
-// 检查时间处于哪个范围，并相应地返回消息。
-// 将时间转换为可读的格式
-// 将此逻辑封装在一个函数内，用于格式化并返回该值。
+// 输入: 
+// 输出: 
 ```
 
+---
 
-
-
+## 重叠圆圈绘制
 
 ```javascript
 import { useEffect, useState } from "react";
@@ -13796,7 +13887,6 @@ const elementsOverlap = (rect1, rect2) => {
 const Example = () => {
   // store the configuration of each circle
   const [elementsCoordinates, setElementsCoordinates] = useState([]);
-
   // helper function to gather configuration when user clicks
   const draw = (e) => {
     // get the coordinates where user has clicked
@@ -13825,7 +13915,6 @@ const Example = () => {
       return [...prevState, current];
     });
   };
-
   // assign the click event
   useEffect(() => {
     document.addEventListener("click", draw);
@@ -13833,7 +13922,6 @@ const Example = () => {
       document.removeEventListener("click", draw);
     };
   }, []);
-
   // circle element
   const Circle = ({ top, left, background }) => {
     return (
@@ -13849,7 +13937,6 @@ const Example = () => {
       }}></div>
     );
   };
-
   return (
     <div>
       {/* render each circle */}
@@ -13865,9 +13952,12 @@ export default Example;
 
 将所有内容整合在一起。
 
+---
+
 # 系统设计
 
- # 概述
+## 概述
+
 系统设计问题没有标准答案，每个答案都是主观的。最好的回答方式是分点讨论，对基础知识和概念有清晰的理解非常有帮助。
 
 - 提出观点 -> 验证该观点 -> 并证明你所解释的方法适用于你正在处理的问题。
@@ -13876,12 +13966,16 @@ export default Example;
 
 在下一部分，我们将看到两个系统设计问题。这本书原本并没有涵盖系统设计，我在这方面经验较少。也许未来我也会写一本关于它的书。这些是我在职业生涯中过的两个问题，也是我接下来要讨论的问题。
 
+---
+
 ## 复审核流 (Maker checker flow)
 
-## 问题描述
+### 问题描述
+
 想象一个公司层级结构，权限较高的用户对权限较低的角色拥有优势。根据他们的权限和角色，应用程序的功能对用户可用。
 
 考虑以下 4 个角色：
+
 `高级经理 > 经理 > 软件工程师 > 实习生`。
 
 在这个顺序中，实习生的权限最低，高级经理的权限最高。高权限可以将低权限的角色更新为任何低于其自身的层级，例如，高级经理可以将实习生直接晋为经理。如果低权限用户进行了任何需要批准的更改，该任务应处于待定状态，任何比其角色高的人都应该能够批准。
@@ -13889,13 +13983,16 @@ export default Example;
 基于此，为基于角色的用户设计一个 Web 应用程序。
 
 讨论以下功能：
+
 - 如何根据用户的角色动态显示 Web 应用程序的功能？
 - 如何处理权限和职权？
 - 如何扩展应用程序以使角色名称可以是动态的？
 - 你将在前端处理的内容以及你期望从后端获得的内容。
 
 ### 如何根据用户的角色动态显示 Web 应用程序的功能？
+
 我们可以在两个级别添加限制：
+
 - **路由级限制 (Route level restriction)** ——特定角色的用户可以访问某些路由。
 - **功能级限制 (Feature level restriction)** ——具有特定角色和权限的用户可以执行操作。
 
@@ -13906,6 +14003,7 @@ export default Example;
 对于路由级限制，`创建一个中间件，检查用户是否有权限访问该路由，然后允许访问`。
 
 ### 如何处理权限和职权？
+
 这将是应用程序中最复杂的部分。它要求在组件级、模块级和子页面级进行仔细的实现。
 
 例如，待处理请求模块对除实习生外的所有人可见。软件工程师只能查看实习生的请求，经理可以查看软件工程师和实习生的请求，以此此类推。
@@ -13915,15 +14013,10 @@ export default Example;
 *注意——“预期会有后续问题，你需要创建一个组件来展示工作原理（低级设计）。”*
 
 ### 如何扩展应用程序以使角色名称可以是动态的？
+
 我们可以使用别名映射（alias mapping），并在同一级别使用别名标签。这样，角色和权限将保持不变，但标签可以不同。
 
-
-
-
-
-© JavaScript Interview Guide | learnersbucket.com
-
-你将在前端处理的内容以及你期望从后端获取的内容。
+### 你将在前端处理的内容以及你期望从后端获取的内容
 
 用户的会话管理将依赖后端以及配置。配置将构建为 `JSON` 格式，并从后端返回，前端将据此动态渲染视图。
 
@@ -13933,17 +14026,22 @@ export default Example;
 
 `JSON` 配置应该是两个部分的单一事实来源（single source of truth），以尽可能地减少错误概率。
 
-# 设计一个在线判题系统
+---
 
-## 问题描述
+## 设计一个在线判题系统
+
+### 问题描述
+
 设计一个类似于 Leetcode 的在线判题系统。Web 应用应包含以下部分：
+
 - 带排序选项的问题列表。
 - 带有解决方案的问题题。
 - 讨论板块，用于讨论面试问题和经验、寻求职业指导等，并提供过滤选项。
 
 考虑到这些因素，为已认证的用户设计一个编程挑战 Web 应用。请注意应用程序的性能。让我们逐个处理每个点，最后我们讨论整个应用程序的性能。
 
-## 问题列表
+### 问题列表
+
 问题列表页将包含所有与问题相关的元数据，例如有多少用户尝试过该问题、通过率是多少、难度以及点赞。
 
 我们可以以表格形式列出问题，并显示难度等重要细节，同时为用户提供根据元数据过滤问题的选项。
@@ -13956,7 +14054,8 @@ export default Example;
 
 **注意** – “可能会有一个跟进问题，要求你实现一个带有搜索和过滤选项的问题列表页。过滤器可以是动态的或静态的，即 [DATA-TABLE](https://mui.com/material-ui/react-table/#sorting-amp-selecting)”。
 
-## 带有解决方案的问题题
+### 带有解决方案的问题题
+
 没有必要重复造轮子，因此我们可以根据执行代码和提供结果的核心部分需求，使用[开源在线判题系统](https://github.com/DMOJ/online-judge) 或付费系统。
 
 该页面将采用两部分布局，其中一部分描述问题以及示例测试用例，另一部分集成 IDE。
@@ -13965,7 +14064,8 @@ export default Example;
 
 将有一个分页选项用于导航到下一个和上一个问题。
 
-## 讨论板块
+### 讨论板块
+
 用于讨论面试问题和经验、寻求职业指导等，并提供过滤选项。
 
 这可以是一个多标签公共论坛，注册用户可以提问并回答他们发布的查询。提问时会有一个问题的标记选项，然后根据这些标签或使用搜索进行过滤。
@@ -13976,7 +14076,8 @@ export default Example;
 
 **注意** – “可能会有一个跟进问题，要求编写一个简单的问答 Web 应用”。
 
-## 架构
+### 架构
+
 [微前端架构](https://www.syncfusion.com/blogs/post/micro-frontend-why-and-how.aspx) 对于提升此应用程序的整体性能非常有帮助。
 
 此应用程序的每个页面/模块都可以由不同的团队使用选择的任何框架独立开发，并可以单独通过 CDN 进行打包和托管。
@@ -13990,4 +14091,3 @@ export default Example;
 由于 SEO 是一个重要因素，我们可以使用 SSR 框架，并采用[混合渲染技术](https://learnersbucket.com/examples/css/the-frontend-landscape-different-architectures/)，其中 SEO 相关的内容将在服务器端渲染，而部分内容留在客户端。
 
 © JavaScript Interview Guide | learnersbucket.com
-

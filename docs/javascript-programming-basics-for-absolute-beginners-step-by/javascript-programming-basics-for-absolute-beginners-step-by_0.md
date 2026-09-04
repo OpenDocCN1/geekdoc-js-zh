@@ -1,17 +1,5 @@
+
 # JavaScript：绝对初学者编程基础指南（循步渐进 JavaScript 第 1 册）
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 # 引言
 
@@ -28,9 +16,6 @@
 作为一种高级程序，JavaScript 是动态的、无类型的且解释型的。在你通常在网上看到的所有内容中，是用 JavaScript 或另外两种技术创建的。许多主流浏览器、电子邮件服务器和网站都运行在 JavaScript 代码上。
 
 JavaScript 包含原型的一等函数，这使其成为一种多范式语言。
-
-
-
 
 JavaScript 实际上并不是 HTML 代码。在你编写 JavaScript 代码时，你需要允许浏览器理解你正在向 HTML 中输入 JavaScript。JavaScript 的函数是 `<script>`。`<script type = “text/javascript”> <script>` 函数将允许页面确切知道 JavaScript 代码从哪里开始到哪里结束。
 
@@ -91,8 +76,11 @@ Enjoy your stay…<br>
 ```
 
 输出：
+
 Hello!!!
+
 Welcome to my world!!!
+
 Enjoy your stay…
 
 文本将写入它在 HTML 代码中所在的位置。许多 HTML 标签是用 `document.write` 编写的。
@@ -141,7 +129,7 @@ document.write(result) ;
 
 ## 弹出窗口
 
-使用 JavaScript 时你会得到三个弹出框：警告框（alert）、确认框（confirm）和提示框（prompt）。
+使用 JavaScript 时你会得到三个弹出框：警告框（`alert`）、确认框（`confirm`）和提示框（`prompt`）。
 
 ### Alert（警告）
 
@@ -149,7 +137,7 @@ document.write(result) ;
 
 ### Confirm（确认）
 
-此框用于确认你的文本。你需要点击“ok”或“cancel”。你将被强制接受某些东西。点击“ok”时，值为 true。点击“cancel”时，值将为 false。
+此框用于确认你的文本。你需要点击“ok”或“cancel”。你将被强制接受某些东西。点击“ok”时，值为 `true`。点击“cancel”时，值将为 `false`。
 
 ## 示例
 
@@ -322,9 +310,6 @@ lastname = “Johnson”;
 
 ## 字符集
 
-
-
-
 JavaScript 包含一组 Unicode 字符集。大部分字符、标点符号和符号将由 Unicode 覆盖。
 
 # JavaScript 变量
@@ -489,7 +474,7 @@ Document.getElementById(“demo”). innerHTML = toCelsius;
 Var x = toCelsius(77);
 ```
 
- JavaScript 决策
+# JavaScript 决策
 
 有不同的语句用于决策。
 
@@ -607,9 +592,6 @@ Var b = 4;
 If (a > b)
 {
 ```
-
-
-
 
 ```javascript
 Document.write(“a is greater than b”);
@@ -858,10 +840,6 @@ Public class SwitchDemoFallThrough {
     }
     If (futureMonths.isEmpty()) {
 ```
-
-
-
-
 
 ```java
 System.out.println (“Invalid month number”) ;
@@ -1277,10 +1255,6 @@ Class ContinueDemo {
 }
 ```
 
-
-
-
-
 ```java
 for (int I = 0; I < max; I++) {
     // 只对 p’s 感
@@ -1388,7 +1362,9 @@ document.write (“Hello Universe”)
 ```
 
 这段代码的结果将是：
+
 Hello Universe.
+
 This is web page body
 
 ## Body 和 Head 部分中的代码 (Code in the Body and Head Sections)
@@ -1448,7 +1424,7 @@ function sayHello() {
 }
 ```
 
-## Cookies
+# Cookies
 
 Cookies 是你用于存储在计算机上的数据。网站通过这种方式获取信息。
 
@@ -1501,10 +1477,6 @@ function setCookie(cname, cvalue, exdays) {
     var expires = “expires=” + d.toUTCString();
 }
 ```
-
-
-
-
 
 `document.cookie = cname + “=” + cvalue + “;” + expires + “;path=/”;`
 
@@ -1649,15 +1621,12 @@ Function checkCookie() {
 # 技巧与窍门
 
 ## 从不同数组追加元素
+
 更好的选项是通过代码使用原生 JavaScript 排序函数来实现随机排序。
 
 ## 字符串修剪函数
 
 JavaScript 和其他编程语言中经典的修剪函数，用于移除字符串中 JavaScript 不会发生的空白字符，以便可以附加到字符串对象上。现代 JavaScript 引擎使用了原生的 `trim()` 函数。
-
-
-
-
 
 ## 验证给定参数是否为数组
 
@@ -1698,6 +1667,7 @@ JavaScript 和其他编程语言中经典的修剪函数，用于移除字符串
 `Return val*val`
 
 `)) ;
+
 //squares 将等于 [1, 4, 9]`
 
 ## 将数字舍入到小数位
@@ -1776,6 +1746,7 @@ For (initialization; condition; increment)
 ```
 
 循环语句只有在以下情况下才能执行：
+
 - 语句和控制进入第二步。
 - 执行等式且条件为真。如果值为假，则将执行语句，然后终止循环。
 - 执行开头的表达式。这将初始化一个或多个不同的循环，因为它们在通过语法时允许来自各种复杂性和程度的表达式。
@@ -1798,6 +1769,7 @@ Document.write("</tr>");
 Document.write("</table>");
 </script>
 ```
+
 *(注：原文示例中的 HTML 结构存在未闭合标签，翻译时保持了逻辑并微调了可读性)*
 
 `For` 循环将一直执行直到条件返回假。语法与每种编程语言相同。
@@ -1851,10 +1823,6 @@ For (i=0; i<=10; i++) {
 }
 </script>
 ```
-
-
-
-
 
 ```javascript
 Document.write(“<p><b>使用 continue 语句的示例： </b><p>”);
@@ -1945,11 +1913,17 @@ Document.write(linebreak);
 ```
 
 你的输出将会是：
+
 a = 43
+
 b = 23
+
 c = 34
+
 b = 3
+
 ++a = 35
+
 --b = 8
 
 ## 比较
@@ -2007,11 +1981,17 @@ Document.write(linebreak);
 ```
 
 此示例的输出将会是：
+
 a == b = false
+
 a < b = true
+
 a > b = false
+
 a != b = true
+
 a >= b = false
+
 a <= b = true
 
 ## 逻辑
@@ -2057,9 +2037,18 @@ Document.write(linebreak);
 ```
 
 上述示例的结果为：
+
+
+
+# JavaScript 运算符与打印功能
+
+## 逻辑运算
+
+```
 a && b = false
 a || b = true
 !a = false
+```
 
 ## 位运算
 
@@ -2075,182 +2064,193 @@ a || b = true
 ```html
 <html>
 <body>
-<script type = “text/javascript”>
-<! - -
-Var a = 2; // 二进制为 10
-Var b = 3; // 二进制为 11
-Var linebreak = “<br />”;
+<script type="text/javascript">
+<!--
+var a = 2; // 二进制为 10
+var b = 3; // 二进制为 11
+var linebreak = "<br />";
 
-Document.write(a & b = “);
-Result = (a & b);
-Document.write(result);
-Document.write(linebreak);
+document.write("a & b = ");
+result = (a & b);
+document.write(result);
+document.write(linebreak);
 
-Document.write(a | b = “);
-Result = (a | b);
-Document.write(result);
-Document.write(linebreak);
+document.write("a | b = ");
+result = (a | b);
+document.write(result);
+document.write(linebreak);
 
-Document.write(a ^ b = “);
-Result = (a ^ b);
-Document.write(result);
-Document.write(linebreak);
+document.write("a ^ b = ");
+result = (a ^ b);
+document.write(result);
+document.write(linebreak);
 
-Document.write(~b = “);
-Result = (~b);
-Document.write(result);
-Document.write(linebreak);
+document.write("~b = ");
+result = (~b);
+document.write(result);
+document.write(linebreak);
 
-Document.write(a << b = “);
-Result = (a << b);
-Document.write(result);
-Document.write(linebreak);
+document.write("a << b = ");
+result = (a << b);
+document.write(result);
+document.write(linebreak);
 
-Document.write(a >> b = “);
-Result = (a >> b);
-Document.write(result);
-Document.write(linebreak);
+document.write("a >> b = ");
+result = (a >> b);
+document.write(result);
+document.write(linebreak);
+// -->
 </script>
 </body>
 </html>
 ```
 
 结果：
+
+```
 a & b = 2
 a | b = 3
 a ^ b = 1
 ~b = -4
 a << b = 16
 a >> b = 0
+```
 
-## 赋值
+## 赋值运算符
 
-* 赋值：将右侧的值赋值给左侧。
-* 加法赋值：将右操作数加到左侧，然后赋值给左侧。
-* 减法赋值：从左侧减去右侧的值并赋值给左侧。
-* 乘法赋值：将操作数相乘后将结果赋值给左侧。
-* 除法赋值：将左侧除以右侧并将结果赋值给左侧。
-* 取模赋值：对两个操作数取模并将结果赋值给左侧。
+* 赋值（`=`）：将右侧的值赋值给左侧。
+* 加法赋值（`+=`）：将右操作数加到左侧，然后赋值给左侧。
+* 减法赋值（`-=`）：从左侧减去右侧的值并赋值给左侧。
+* 乘法赋值（`*=`）：将操作数相乘后将结果赋值给左侧。
+* 除法赋值（`/=`）：将左侧除以右侧并将结果赋值给左侧。
+* 取模赋值（`%=`）：对两个操作数取模并将结果赋值给左侧。
 * 位赋值运算符变为 `<<=`、`>>=`、`&=`、`|=` 和 `^=`。
 
 ## 示例
 
 ```html
 <html>
-<body
-<script type = “text/javascript”>
-<! - -
-Var a = 33;
-Var b = 10;
-Var linebreak = “<br />”;
+<body>
+<script type="text/javascript">
+<!--
+var a = 33;
+var b = 10;
+var linebreak = "<br />";
 
-Document.write(“a 的值变为 (a = b) => ”);
-Result = (a = b);
-Document.write(result);
-Document.write(linebreak);
+document.write("Value of a => (a = b) => ");
+result = (a = b);
+document.write(result);
+document.write(linebreak);
 
-Document.write(“a += b => ”);
-Result = (a += b);
-Document.write(result);
-Document.write(linebreak);
+document.write("Value of a => (a += b) => ");
+result = (a += b);
+document.write(result);
+document.write(linebreak);
 
-Document.write(“a *= b => ”);
-Result = (a *= b);
-Document.write(result);
-Document.write(linebreak);
+document.write("Value of a => (a -= b) => ");
+result = (a -= b);
+document.write(result);
+document.write(linebreak);
+
+document.write("Value of a => (a *= b) => ");
+result = (a *= b);
+document.write(result);
+document.write(linebreak);
+
+document.write("Value of a => (a /= b) => ");
+result = (a /= b);
+document.write(result);
+document.write(linebreak);
+
+document.write("Value of a => (a %= b) => ");
+result = (a %= b);
+document.write(result);
+document.write(linebreak);
+// -->
+</script>
+</body>
+</html>
 ```
 
+输出：
 
-
-
-
-```javascript
-Result = (a /= b);
-Document.write(result);
-Document.write(linebreak);
-Document.write (“Value of a => (a %= b) => “);
-Result = (a %= b);
-Document.write(result);
-Document.write(linebreak);
+```
+Value of a => (a = b) => 10
+Value of a => (a += b) => 20
+Value of a => (a -= b) => 10
+Value of a => (a *= b) => 100
+Value of a => (a /= b) => 10
+Value of a => (a %= b) => 0
 ```
 
-输出:
-```
-Value of a => (a =b) = 10
-Value of a => (a += b) = 20
-Value of a => (a -=b) = 10
-Value of a => (a *= b) = 100
-Value of a => ( a /= b) = 10
-Value of a => (a %= b) = 0
-```
+## 条件运算符（三元运算符）
 
-## 条件判断
-
-- 条件运算符会在语句执行之前对表达式进行求值以得到真或假值，具体的执行语句取决于求值的结果。
-- 如果条件为真，则语句的值将是 x；如果不是，则你将移动到另一个语句。
+* 条件运算符会在语句执行之前对表达式进行求值以得到真或假值，具体的执行语句取决于求值的结果。
+* 语法：`condition ? valueIfTrue : valueIfFalse`。如果条件为真，则表达式的值为 `valueIfTrue`；否则为 `valueIfFalse`。
 
 ## 示例
 
 ```html
 <html>
 <body>
-<script type = “text/javascript”>
-<! - -
-Var a = 10;
-Var b = 20;
-Var linebreak = “<br />”;
-Document.write (“ ((a >b) ? 100 : 200) => “);
-Result = (a > b) ? 100 : 200;
-Document.write(result);
-Document.write(linebreak);
-Document.write (“ (( a < b) ? 100 : 200) => “);
-Result = (a < b) ? 100 : 200;
-Document.write(result);
-Document.write(linebreak);
-// - - >
+<script type="text/javascript">
+<!--
+var a = 10;
+var b = 20;
+var linebreak = "<br />";
+document.write("((a > b) ? 100 : 200) => ");
+result = (a > b) ? 100 : 200;
+document.write(result);
+document.write(linebreak);
+document.write("((a < b) ? 100 : 200) => ");
+result = (a < b) ? 100 : 200;
+document.write(result);
+document.write(linebreak);
+// -->
 </script>
 </body>
 </html>
 ```
 
 结果如下：
+
 ```
-(( a > ) ? 100 : 200 => 200
-((a < b) ? 100 : 200 => 100
+((a > b) ? 100 : 200) => 200
+((a < b) ? 100 : 200) => 100
 ```
 
-## Typeof
+## typeof 运算符
 
-- `Typeof` 运算符是一一元运算符。它位于单个操作数之前。操作数可以是任何类型。
-- 结果将变成一个字符串，显示所使用的数据类型。
-- 只有当根据求值结果为真或假时，`Typeof` 运算符才会评估字符串、数字和布尔值。
-- 使用 `typeof` 运算符返回的值：`Number = number`、`Object = object`、`Null = object`、`String = string`、`Function = function`、`Undefined = undefined`。
+* `typeof` 运算符是一元运算符。它位于单个操作数之前。操作数可以是任何类型。
+* 结果将变成一个字符串，显示所使用的数据类型。
+* 使用 `typeof` 运算符返回的值：`Number` 返回 `"number"`、`Object` 返回 `"object"`、`Null` 返回 `"object"`、`String` 返回 `"string"`、`Function` 返回 `"function"`、`Undefined` 返回 `"undefined"`。
 
 ## 示例
 
 ```html
 <html>
 <body>
-<script type “text/javascript”>
-<! - -
-Var a = 10
-Var b = “String”;
-Var linebreak = “<br />”;
-Result = (typeof b == “string” ? “B is String” : “B is Numeric”);
-Document.write( “Result => “);
-Document.write(result);
-Document.write(linebreak);
-Result = (typeof a == “string” ? “A is String” : “A is Numeric”);
-Document.write(“result => “);
-Document.write(result);
-Document.write(linebreak);
-// - ->
+<script type="text/javascript">
+<!--
+var a = 10;
+var b = "String";
+var linebreak = "<br />";
+result = (typeof b == "string" ? "B is String" : "B is Numeric");
+document.write("Result => ");
+document.write(result);
+document.write(linebreak);
+result = (typeof a == "string" ? "A is String" : "A is Numeric");
+document.write("Result => ");
+document.write(result);
+document.write(linebreak);
+// -->
 </script>
 </body>
 </html>
 ```
 
 结果：
+
 ```
 Result => B is String
 Result => A is Numeric
@@ -2258,34 +2258,35 @@ Result => A is Numeric
 
 # 使用 JavaScript 打印页面
 
-你可能需要一个允许将页面内容打印到实际打印机的按钮。JavaScript 有一个可以实现此点的函数。`window.print()` 函数将打印你当前查看的任何页面。此函数也被认为是一个 `onclick` 事件。
+你可能需要一个允许将页面内容打印到实际打印机的按钮。JavaScript 有一个可以实现此点的函数：`window.print()`。该函数将打印你当前查看的任何页面，也常被用作 `onclick` 事件的处理程序。
 
 ## 示例
 
 ```html
 <html>
 <head>
-<script type = “text/javascript”>
-<! - -
-// - - >
+<script type="text/javascript">
+<!--
+// -->
 </script>
 </head>
 <body>
 <form>
-<input type = “button” value = “Print” onclick = “window.print()” />
+<input type="button" value="Print" onclick="window.print()" />
 </form>
 </body>
 </html>
 ```
 
-这可以帮助你获取你正在查看内容的打印副本，但当你想要打印页面时，并不建议使用它。有一个打印友好的页面，它不会包含通常出现在网页侧边缘的广告等图像。
+这可以帮助你获取你正在查看内容的打印副本，但当你想要打印页面时，并不建议仅依赖此方法。最好有一个打印友好的页面，它不会包含通常出现在网页侧边缘的广告等图像。
 
 为了使页面适用于打印，你需要：
-- 复制页面上的文本，且不包含任何你不想要的图片。
-- 如果你不需要额外的副本，则需要使用适当的注释制作可打印的文本。
-- `<! – PRINT STARTS HERE - - > <! - - PRINT ENDS HERE - - >`
 
-如果这些步骤不起，请使用浏览器上的工具栏打印页面。文件路径为 `file – print – okay`
+* 复制页面上的文本，且不包含任何你不想要的图片。
+* 如果你不需要额外的副本，则需要使用适当的注释制作可打印的文本。
+* 使用注释标记打印区域：`<!-- PRINT STARTS HERE -->` 和 `<!-- PRINT ENDS HERE -->`。
+
+如果这些步骤不起作用，请使用浏览器上的工具栏打印页面（菜单路径：`File` -> `Print` -> `OK`）。
 
 # 结论
 
@@ -2303,11 +2304,10 @@ Result => A is Numeric
 
 Nathan Clark 是一位经验丰富的程序员，在软件行业拥有近 20 年的经验。
 
-他拥有省理工学院（MIT）的硕士学位，曾在美国领先的软件公司工作，并积累了大量的软件设计和开发知识。
+他拥有麻省理工学院（MIT）的硕士学位，曾在美国领先的软件公司工作，并积累了大量的软件设计和开发知识。
 
 Nathan 和他的妻子 Sarah 在 2009 年创立了自己的开发公司，以便能够承担更具挑战性和创造性的项目。如今，他们为全球的高端客户提供服务。
 
 Nathan 喜欢通过他的书籍系列分享编程知识，为客户开发创新的软件解决方案，并在空闲时间观看经典科幻电影。
 
 若想从专家那里学习编程，请关注商店或网上 Nathan 的其他书籍。
-

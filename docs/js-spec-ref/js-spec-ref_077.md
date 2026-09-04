@@ -1,24 +1,5 @@
+
 # 9.1 Promise 对象
-
-*   JavaScript 的异步执行
-    *   概述
-    *   回调函数
-    *   事件监听
-    *   发布/订阅
-    *   异步操作的流程控制
-        *   串行执行
-        *   并行执行
-        *   并行与串行的结合
-    *   Promise 对象
-        *   简介
-        *   Promise 接口
-        *   用法辨析
-        *   Promises 对象的实现
-        *   实例：Ajax 操作
-        *   小结
-    *   参考链接
-
-Promise 是 JavaScript 异步操作解决方案。介绍 Promise 之前，先对异步操作做一个详细介绍。
 
 ## JavaScript 的异步执行
 
@@ -32,7 +13,7 @@ JavaScript 语言本身并不慢，慢的是读写外部数据，比如等待 Aj
 
 为了解决这个问题，Javascript 语言将任务的执行模式分成两种：同步（Synchronous）和异步（Asynchronous）。"同步模式"就是传统做法，后一个任务等待前一个任务结束，然后再执行，程序的执行顺序与任务的排列顺序是一致的、同步的。这往往用于一些简单的、快速的、不涉及读写的操作。
 
-"异步模式"则完全不同，每一个任务分成两段，第一段代码包含对外部数据的请求，第二段代码被写成一个回调函数，包含了对外部数据的处理。第一段代码执行完，不是立刻执行第二段代码，而是将程序的执行权交给第二个任务。等到外部数据返回了，再由系统通知执行第二段代码。所以，程序的执行顺序与任务的排列顺序是不一致的、异步的。
+"异步模式"则完全不同，每一个任务分成两段，第一段代码包含对外部数据的请请求，第二段代码被写成一个回调函数，包含了对外部数据的处理。第一段代码执行完，不是立刻执行第二段代码，而是将程序的执行权交给第二个任务。等到外部数据返回了，再由系统通知执行第二段代码。所以，程序的执行顺序与任务的排列顺序是不一致的、异步的。
 
 以下总结了"异步模式"编程的几种方法，理解它们可以让你写出结构更合理、性能更出色、维护更方便的 JavaScript 程序。
 
@@ -40,15 +21,14 @@ JavaScript 语言本身并不慢，慢的是读写外部数据，比如等待 Aj
 
 回调函数是异步编程最基本的方法。
 
-假定有两个函数 f1 和 f2，后者等待前者的执行结果。
+假定有两个函数 `f1` 和 `f2`，后者等待前者的执行结果。
 
 ```js
 f1();
-
 f2();
 ```
 
-如果 f1 是一个很耗时的任务，可以考虑改写 f1，把 f2 写成 f1 的回调函数。
+如果 `f1` 是一个很耗时的任务，可以考虑改写 `f1`，把 `f2` 写成 `f1` 的回调函数。
 
 ```js
 function f1(callback){
@@ -65,7 +45,7 @@ function f1(callback){
 f1(f2);
 ```
 
-采用这种方式，我们把同步操作变成了异步操作，f1 不会堵塞程序运行，相当于先执行程序的主要逻辑，将耗时的操作推迟执行。
+采用这种方式，我们把同步操作变成了异步操作，`f1` 不会堵塞程序运行，相当于先执行程序的主要逻辑，将耗时的操作推迟执行。
 
 回调函数的优点是简单、容易理解和部署，缺点是不利于代码的阅读和维护，各个部分之间高度[耦合](http://en.wikipedia.org/wiki/Coupling_(computer_programming))（Coupling），使得程序结构混乱、流程难以追踪（尤其是回调函数嵌套的情况），而且每个任务只能指定一个回调函数。
 
@@ -73,13 +53,13 @@ f1(f2);
 
 另一种思路是采用事件驱动模式。任务的执行不取决于代码的顺序，而取决于某个事件是否发生。
 
-还是以 f1 和 f2 为例。首先，为 f1 绑定一个事件（这里采用的 jQuery 的[写法](http://api.jquery.com/on/)）。
+还是以 `f1` 和 `f2` 为例。首先，为 `f1` 绑定一个事件（这里采用的 jQuery 的[写法](http://api.jquery.com/on/)）。
 
 ```js
 f1.on('done', f2);
 ```
 
-上面这行代码的意思是，当 f1 发生 done 事件，就执行 f2。然后，对 f1 进行改写：
+上面这行代码的意思是，当 `f1` 发生 `done` 事件，就执行 `f2`。然后，对 `f1` 进行改写：
 
 ```js
 function f1(){
@@ -90,7 +70,7 @@ function f1(){
 }
 ```
 
-f1.trigger('done')表示，执行完成后，立即触发 done 事件，从而开始执行 f2。
+`f1.trigger('done')`表示，执行完成后，立即触发 `done` 事件，从而开始执行 `f2`。
 
 这种方法的优点是比较容易理解，可以绑定多个事件，每个事件可以指定多个回调函数，而且可以"[去耦合](http://en.wikipedia.org/wiki/Decoupling)"（Decoupling），有利于实现模块化。缺点是整个程序都要变成事件驱动型，运行流程会变得很不清晰。
 
@@ -100,13 +80,13 @@ f1.trigger('done')表示，执行完成后，立即触发 done 事件，从而�
 
 这个模式有多种[实现](http://msdn.microsoft.com/en-us/magazine/hh201955.aspx)，下面采用的是 Ben Alman 的[Tiny Pub/Sub](https://gist.github.com/661855)，这是 jQuery 的一个插件。
 
-首先，f2 向"信号中心"jQuery 订阅"done"信号。
+首先，`f2` 向"信号中心"jQuery 订阅"done"信号。
 
 ```js
 jQuery.subscribe("done", f2);
 ```
 
-然后，f1 进行如下改写：
+然后，`f1` 进行如下改写：
 
 ```js
 function f1(){
@@ -117,9 +97,9 @@ function f1(){
 }
 ```
 
-jQuery.publish("done")的意思是，f1 执行完成后，向"信号中心"jQuery 发布"done"信号，从而引发 f2 的执行。
+`jQuery.publish("done")`的意思是，`f1` 执行完成后，向"信号中心"jQuery 发布"done"信号，从而引发 `f2` 的执行。
 
-f2 完成执行后，也可以取消订阅（unsubscribe）。
+`f2` 完成执行后，也可以取消订阅（unsubscribe）。
 
 ```js
 jQuery.unsubscribe("done", f2);
@@ -138,9 +118,9 @@ function async(arg, callback) {
 }
 ```
 
-上面代码的 async 函数是一个异步任务，非常耗时，每次执行需要 1 秒才能完成，然后再调用回调函数。
+上面代码的 `async` 函数是一个异步任务，非常耗时，每次执行需要 1 秒才能完成，然后再调用回调函数。
 
-如果有 6 个这样的异步任务，需要全部完成后，才能执行下一步的 final 函数。
+如果有 6 个这样的异步任务，需要全部完成后，才能执行下一步的 `final` 函数。
 
 ```js
 function final(value) {
@@ -186,11 +166,11 @@ function series(item) {
 series(items.shift());
 ```
 
-上面代码中，函数 series 就是串行函数，它会依次执行异步任务，所有任务都完成后，才会执行 final 函数。items 数组保存每一个异步任务的参数，results 数组保存每一个异步任务的运行结果。
+上面代码中，函数 `series` 就是串行函数，它会依次执行异步任务，所有任务都完成后，才会执行 `final` 函数。`items` 数组保存每一个异步任务的参数，`results` 数组保存每一个异步任务的运行结果。
 
 ### 并行执行
 
-流程控制函数也可以是并行执行，即所有异步任务同时执行，等到全部完成以后，才执行 final 函数。
+流程控制函数也可以是并行执行，即所有异步任务同时执行，等到全部完成以后，才执行 `final` 函数。
 
 ```js
 var items = [ 1, 2, 3, 4, 5, 6 ];
@@ -206,13 +186,13 @@ items.forEach(function(item) {
 });
 ```
 
-上面代码中，forEach 方法会同时发起 6 个异步任务，等到它们全部完成以后，才会执行 final 函数。
+上面代码中，`forEach` 方法会同时发起 6 个异步任务，等到它们全部完成以后，才会执行 `final` 函数。
 
 并行执行的好处是效率较高，比起串行执行一次只能执行一个任务，较为节约时间。但是问题在于如果并行的任务较多，很容易耗尽系统资源，拖慢运行速度。因此有了第三种流程控制方式。
 
 ### 并行与串行的结合
 
-所谓并行与串行的结合，就是设置一个门槛，每次最多只能并行执行 n 个异步任务。这样就避免了过分占用系统资源。
+所谓并行与串行的结合，就是设置一个门槛，每次最多只能并行执行 `n` 个异步任务。这样就避免了过分占用系统资源。
 
 ```js
 var items = [ 1, 2, 3, 4, 5, 6 ];
@@ -239,7 +219,7 @@ function launcher() {
 launcher();
 ```
 
-上面代码中，最多只能同时运行两个异步任务。变量 running 记录当前正在运行的任务数，只要低于门槛值，就再启动一个新的任务，如果等于 0，就表示所有任务都执行完了，这时就执行 final 函数。
+上面代码中，最多只能同时运行两个异步任务。变量 `running` 记录当前正在运行的任务数，只要低于门槛值，就再启动一个新的任务，如果等于 0，就表示所有任务都执行完了，这时就执行 `final` 函数。
 
 ## Promise 对象
 
@@ -249,7 +229,7 @@ Promises 对象是 CommonJS 工作组提出的一种规范，目的是为异步�
 
 那么，什么是 Promises？首先，它是一个对象，也就是说与其他 JavaScript 对象的用法，没有什么两样；其次，它起到代理作用（proxy），使得异步操作具备同步操作（synchronous code）的接口，即充当异步操作与回调函数之间的中介，使得程序具备正常的同步运行的流程，回调函数不必再一层层包裹起来。
 
-简单说，它的思想是，每一个异步任务立刻返回一个 Promise 对象，由于是立刻返回，所以可以采用同步操作的流程。这个 Promises 对象有一个 then 方法，允许指定回调函数，在异步任务完成后调用。比如，f1 的回调函数 f2,可以写成：
+简单说，它的思想是，每一个异步任务立刻返回一个 Promise 对象，由于是立刻返回，所以可以采用同步操作的流程。这个 Promises 对象有一个 `then` 方法，允许指定回调函数，在异步任务完成后调用。比如，`f1` 的回调函数 `f2`，可以写成：
 
 ```js
 (new Promise(f1)).then(f2);
@@ -293,9 +273,10 @@ Promises 原本只是社区提出的一个构想，一些外部函数库率先�
 Promise 对象的运行结果，最终只有两种。
 
 *   得到一个值，状态变为 fulfilled
+
 *   抛出一个错误，状态变为 rejected
 
-promise 对象的 then 方法用来添加回调函数。它可以接受两个回调函数，第一个是操作成功（fulfilled）时的回调函数，第二个是操作失败（rejected）时的回调函数（可以不提供）。一旦状态改变，就调用相应的回调函数。
+promise 对象的 `then` 方法用来添加回调函数。它可以接受两个回调函数，第一个是操作成功（fulfilled）时的回调函数，第二个是操作失败（rejected）时的回调函数（可以不提供）。一旦状态改变，就调用相应的回调函数。
 
 ```js
 (new Promise(step1))
@@ -305,9 +286,9 @@ promise 对象的 then 方法用来添加回调函数。它可以接受两个回
 .then(console.log, console.error);
 ```
 
-再来看上面的代码就很清楚，step1 是一个耗时很长的异步任务，然后使用 then 方法，依次绑定了三个 step1 操作成功后的回调函数 step2、step3、step4，最后再用 then 方法绑定两个回调函数：操作成功时的回调函数 console.log，操作失败时的回调函数 console.error。
+再来看上面的代码就很清楚，`step1` 是一个耗时很长的异步任务，然后使用 `then` 方法，依次绑定了三个 `step1` 操作成功后的回调函数 `step2`、`step3`、`step4`，最后再用 `then` 方法绑定两个回调函数：操作成功时的回调函数 `console.log`，操作失败时的回调函数 `console.error`。
 
-console.log 和 console.error 这两个最后的回调函数，用法上有一点重要的区别。console.log 只显示回调函数 step4 的返回值，而 console.error 可以显示 step2、step3、step4 之中任何一个发生的错误。也就是说，假定 step2 操作失败，抛出一个错误，这时 step3 和 step4 都不会再运行了，promises 对象开始寻找接下来的第一个错误回调函数，在上面代码中是 console.error。所以，结论就是 Promises 对象的错误有传递性。
+`console.log` 和 `console.error` 这两个最后的回调函数，用法上有一点重要的区别。`console.log` 只显示回调函数 `step4` 的返回值，而 `console.error` 可以显示 `step2`、`step3`、`step4` 之中任何一个发生的错误。也就是说，假定 `step2` 操作失败，抛出一个错误，这时 `step3` 和 `step4` 都不会再运行了，promises 对象开始寻找接下来的第一个错误回调函数，在上面代码中是 `console.error`。所以，结论就是 Promises 对象的错误有传递性。
 
 换言之，上面的代码等同于下面的形式。
 
@@ -323,11 +304,11 @@ try {
 }
 ```
 
-上面代码表示，try 部分任何一步的错误，都会被 catch 部分捕获，并导致整个 Promise 操作的停止。
+上面代码表示，`try` 部分任何一步的错误，都会被 `catch` 部分捕获，并导致整个 Promise 操作的停止。
 
 ### 用法辨析
 
-Promise 的用法，简单说就是一句话：使用 then 方法添加回调函数。但是，不同的写法有一些细微的差别，请看下面四种写法，它们的差别在哪里？
+Promise 的用法，简单说就是一句话：使用 `then` 方法添加回调函数。但是，不同的写法有一些细微的差别，请看下面四种写法，它们的差别在哪里？
 
 ```js
 // 写法一
@@ -347,9 +328,9 @@ doSomething().then(doSomethingElse());
 doSomething().then(doSomethingElse);
 ```
 
-为了便于解释，上面四种写法都再用 then 方法接一个回调函数。
+为了便于解释，上面四种写法都再用 `then` 方法接一个回调函数。
 
-写法一的 finalHandler 回调函数的参数，是 doSomethingElse 函数的运行结果。
+写法一的 `finalHandler` 回调函数的参数，是 `doSomethingElse` 函数的运行结果。
 
 ```js
 doSomething().then(function () {
@@ -357,7 +338,7 @@ doSomething().then(function () {
 }).then(finalHandler);
 ```
 
-写法二的 finalHandler 回调函数的参数，是 undefined。
+写法二的 `finalHandler` 回调函数的参数，是 `undefined`。
 
 ```js
 doSomething().then(function () {
@@ -365,14 +346,14 @@ doSomething().then(function () {
 }).then(finalHandler);
 ```
 
-写法三的 finalHandler 回调函数的参数，是 doSomethingElse 函数返回的回调函数的运行结果。
+写法三的 `finalHandler` 回调函数的参数，是 `doSomethingElse` 函数返回的回调函数的运行结果。
 
 ```js
 doSomething().then(doSomethingElse())
   .then(finalHandler);
 ```
 
-写法四与写法一只有一个差别，那就是 doSomethingElse 会接收到`doSomething()`返回的结果。
+写法四与写法一只有一个差别，那就是 `doSomethingElse` 会接收到`doSomething()`返回的结果。
 
 ```js
 doSomething().then(doSomethingElse)
@@ -392,9 +373,9 @@ var Promise = function () {
 };
 ```
 
-上面代码表示，Promise 的实例对象的 state 属性默认为“未完成”状态（pending），还有一个 thenables 属性指向一个数组，用来存放 then 方法生成的内部对象。
+上面代码表示，Promise 的实例对象的 `state` 属性默认为“未完成”状态（pending），还有一个 `thenables` 属性指向一个数组，用来存放 `then` 方法生成的内部对象。
 
-接下来，部署实例对象的 resolve 方法，该方法用来将实例对象的状态从“未完成”变为“已完成”。
+接下来，部署实例对象的 `resolve` 方法，该方法用来将实例对象的状态从“未完成”变为“已完成”。
 
 ```js
 Promise.prototype.resolve = function (value) {
@@ -407,9 +388,9 @@ Promise.prototype.resolve = function (value) {
 }
 ```
 
-上面代码除了改变实例的状态，还将异步任务的返回值存入实例对象的 value 属性，然后调用内部方法 _handleThen，最后返回实例对象本身。
+上面代码除了改变实例的状态，还将异步任务的返回值存入实例对象的 `value` 属性，然后调用内部方法 `_handleThen`，最后返回实例对象本身。
 
-类似地，部署实例对象的 reject 方法。
+类似地，部署实例对象的 `reject` 方法。
 
 ```js
 Promise.prototype.reject = function (reason) {
@@ -422,7 +403,7 @@ Promise.prototype.reject = function (reason) {
 };
 ```
 
-然后，部署实例对象的 then 方法。它接受两个参数，分别是异步任务成功时的回调函数（onFulfilled）和出错时的回调函数（onRejected）。为了可以部署链式操作，它必须返回一个新的 Promise 对象。
+然后，部署实例对象的 `then` 方法。它接受两个参数，分别是异步任务成功时的回调函数（onFulfilled）和出错时的回调函数（onRejected）。为了可以部署链式操作，它必须返回一个新的 Promise 对象。
 
 ```js
 Promise.prototype.then = function (onFulfilled, onRejected) {
@@ -449,9 +430,9 @@ Promise.prototype.then = function (onFulfilled, onRejected) {
 }
 ```
 
-上面代码首先定义了一个内部变量 thenable 对象，将 then 方法的两个参数都加入这个对象的属性。然后，检查当前状态，如果不等于“未完成”，则在当前操作结束后，立即调用 _handleThen 方法。接着，在 thenable 对象的 promise 属性上生成一个新的 Promise 对象，并在稍后返回这个对象。最后，将 thenable 对象加入实例对象的 thenables 数组。
+上面代码首先定义了一个内部变量 `thenable` 对象，将 `then` 方法的两个参数都加入这个对象的属性。然后，检查当前状态，如果不等于“未完成”，则在当前操作结束后，立即调用 `_handleThen` 方法。接着，在 `thenable` 对象的 `promise` 属性上生成一个新的 Promise 对象，并在稍后返回这个对象。最后，将 `thenable` 对象加入实例对象的 `thenables` 数组。
 
-下一步就要部署内部方法 _handleThen，它用来处理通过 then 方法绑定的回调函数。
+下一步就要部署内部方法 `_handleThen`，它用来处理通过 `then` 方法绑定的回调函数。
 
 ```js
 Promise.prototype._handleThen = function () {
@@ -472,9 +453,9 @@ Promise.prototype._handleThen = function () {
 }
 ```
 
-上面代码的逻辑是这样的：如果实例对象的状态是“未完成”，就返回，否则检查 thenables 属性是否有值。如果有值，表明里面储存了需要执行的回调函数，则依次运行回调函数。运行完成后，清空 thenables 属性。
+上面代码的逻辑是这样的：如果实例对象的状态是“未完成”，就返回，否则检查 `thenables` 属性是否有值。如果有值，表明里面储存了需要执行的回调函数，则依次运行回调函数。运行完成后，清空 `thenables` 属性。
 
-之所以把回调函数的执行放在 try...catch 结构中，是因为一旦出错，就会自动执行 catch 代码块，从而可以运行下一个 Promise 实例对象的 reject 方法，这使得调用 reject 方法变得很简单。下面是 try 代码块中的代码。
+之所以把回调函数的执行放在 `try...catch` 结构中，是因为一旦出错，就会自动执行 `catch` 代码块，从而可以运行下一个 Promise 实例对象的 `reject` 方法，这使得调用 `reject` 方法变得很简单。下面是 `try` 代码块中的代码。
 
 ```js
 try {
@@ -504,9 +485,9 @@ try {
 }
 ```
 
-上面代码首先根据实例对象的状态，分别调用 fulfill 或 reject 回调函数，并传入相应的参数，并将返回值存入 returnVal 变量。然后再去改变 this.thenables[i].promise 对象的状态，触发下一个 Promise 对象的 resolve 或者 reject 方法。
+上面代码首先根据实例对象的状态，分别调用 `fulfill` 或 `reject` 回调函数，并传入相应的参数，并将返回值存入 `returnVal` 变量。然后再去改变 `this.thenables[i].promise` 对象的状态，触发下一个 Promise 对象的 `resolve` 或者 `reject` 方法。
 
-针对 returnedVal 的判断，目的是如果 returnedVal 是一个 Promise 对象，那么后面的回调函数都要改为绑定在它上面。
+针对 `returnedVal` 的判断，目的是如果 `returnedVal` 是一个 Promise 对象，那么后面的回调函数都要改为绑定在它上面。
 
 最后，由于我们写的是供调用的函数库，需要将构造函数输出。
 
@@ -575,7 +556,7 @@ function search(term) {
 search("Hello World").then(f1, f2);
 ```
 
-用了 Promises 以后，回调函数就可以用 then 方法加载。
+用了 Promises 以后，回调函数就可以用 `then` 方法加载。
 
 ### 小结
 
@@ -588,9 +569,15 @@ Promises 的优点在于，让回调函数变成了规范的链式写法，程�
 ## 参考链接
 
 *   Sebastian Porto, [Asynchronous JS: Callbacks, Listeners, Control Flow Libs and Promises](http://sporto.github.com/blog/2012/12/09/callbacks-listeners-promises/)
+
 *   Rhys Brett-Bowen, [Promises/A+ - understanding the spec through implementation](http://modernjavascript.blogspot.com/2013/08/promisesa-understanding-by-doing.html)
+
 *   Matt Podwysocki, Amanda Silver, [Asynchronous Programming in JavaScript with “Promises”](http://blogs.msdn.com/b/ie/archive/2011/09/11/asynchronous-programming-in-javascript-with-promises.aspx)
+
 *   Marc Harter, [Promise A+ Implementation](https://gist.github.com//wavded/5692344)
+
 *   Bryan Klimt, [What’s so great about JavaScript Promises?](http://blog.parse.com/2013/01/29/whats-so-great-about-javascript-promises/)
+
 *   Jake Archibald, [JavaScript Promises There and back again](http://www.html5rocks.com/en/tutorials/es6/promises/)
+
 *   Mikito Takada, [7\. Control flow, Mixu's Node book](http://book.mixu.net/node/ch7.html)

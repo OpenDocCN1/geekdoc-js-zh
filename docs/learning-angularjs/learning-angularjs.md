@@ -1,3 +1,4 @@
+
 # AngularJS 入门指南
 
 本书提供了一本学习 AngularJS 的实用指南，涵盖了从基础到更高级概念的所有内容。它旨在帮助你理解并使用 AngularJS 构建现代 Web 应用程序。
@@ -22,8 +23,6 @@
 
 ![](img/ddb4ab3804c2b28b9554bf0661b46fe1_3_1.png)
 
-
-
 # 索引
 
 ## 关于作者
@@ -33,6 +32,7 @@
 ## 献词
 
 献给 D！
+
 A 和 F
 
 ## 致谢
@@ -52,8 +52,11 @@ A 和 F
 **电子邮件:** feedback@developers-library.info
 
 **邮寄地址:** 读者反馈
+
 Addison-Wesley Developer's Library
+
 800 East 96th Street
+
 Indianapolis, IN 46240 USA
 
 ## 读者服务
@@ -104,46 +107,44 @@ Indianapolis, IN 46240 USA
 
 AngularJS 是由 Google 开发的一个客户端框架。它是用 JavaScript 编写的，并包含一个名为 jQuery lite 的精简版 jQuery 库。AngularJS 背后的整个理念是提供一个框架，使得使用 MVC 框架轻松实现设计良好、结构清晰的网页和应用程序。
 
-
-
 ### AngularJS
 
 AngularJS 提供了在浏览器中处理用户输入、在客户端操作数据以及控制元素在浏览器视图中显示方式的所有功能。以下是 AngularJS 提供的一些优势：
 
--   **数据绑定：** AngularJS 使用其强大的作用域机制，提供了一种非常简洁的方法将数据绑定到 HTML 元素。
--   **可扩展性：** AngularJS 架构使你能够轻松扩展该语言的几乎所有方面，以提供你自己的自定义实现。
--   **简洁性：** AngularJS 强制你编写简洁、逻辑清晰的代码。
--   **可重用代码：** 可扩展性与简洁代码的结合，使得在 AngularJS 中编写可重用代码变得非常容易。实际上，当你在创建自定义服务时，该语言通常会强制你这样做。
--   **支持：** Google 对这个项目投入巨大，这使其在其他类似项目失败的地方具有了优势。
--   **兼容性：** AngularJS 基于 JavaScript，并与 jQuery 有着密切的关系。这使得将 AngularJS 集成到你的环境中，并在 AngularJS 框架的结构内重用你现有代码的片段变得更加容易。
+- **数据绑定：** AngularJS 使用其强大的作用域机制，提供了一种非常简洁的方法将数据绑定到 HTML 元素。
+- **可扩展性：** AngularJS 架构使你能够轻松扩展该语言的几乎所有方面，以提供你自己的自定义实现。
+- **简洁性：** AngularJS 强制你编写简洁、逻辑清晰的代码。
+- **可重用代码：** 可扩展性与简洁代码的结合，使得在 AngularJS 中编写可重用代码变得非常容易。实际上，当你在创建自定义服务时，该语言通常会强制你这样做。
+- **支持：** Google 对这个项目投入巨大，这使其在其他类似项目失败的地方具有了优势。
+- **兼容性：** AngularJS 基于 JavaScript，并与 jQuery 有着密切的关系。这使得将 AngularJS 集成到你的环境中，并在 AngularJS 框架的结构内重用你现有代码的片段变得更加容易。
 
 ### 本书是如何组织的？
 
 本书分为 11 章和一个附录：
 
-第 1 章，“跳入 JavaScript”，提供了一些 JavaScript 入门知识，以防你不熟悉 JavaScript。本章还会引导你完成设置开发环境的过程，该环境包含一个 Node.js 服务器，你可以用它来跟随一些示例操作。即使你熟悉 JavaScript，也应该至少浏览一下本章的前几节，以便创建开发环境。
+**第 1 章，“跳入 JavaScript”**，提供了一些 JavaScript 入门知识，以防你不熟悉 JavaScript。本章还会引导你完成设置开发环境的过程，该环境包含一个 Node.js 服务器，你可以用它来跟随一些示例操作。即使你熟悉 JavaScript，也应该至少浏览一下本章的前几节，以便创建开发环境。
 
-第 2 章，“AngularJS 入门”，涵盖了 AngularJS 框架的基础知识。你将学习 AngularJS 的组织方式以及如何设计 AngularJS 应用程序。
+**第 2 章，“AngularJS 入门”**，涵盖了 AngularJS 框架的基础知识。你将学习 AngularJS 的组织方式以及如何设计 AngularJS 应用程序。
 
-第 3 章，“理解 AngularJS 应用程序动态”，涵盖了 AngularJS 应用程序的基本结构。你将学习如何定义模块以及依赖注入在 AngularJS 中是如何工作的。
+**第 3 章，“理解 AngularJS 应用程序动态”**，涵盖了 AngularJS 应用程序的基本结构。你将学习如何定义模块以及依赖注入在 AngularJS 中是如何工作的。
 
-第 4 章，“将作用域实现为数据模型”，涵盖了 AngularJS 中称为“作用域”的数据模型与其他 AngularJS 组件之间的关系。你还将学习作用域层次结构是如何工作的。
+**第 4 章，“将作用域实现为数据模型”**，涵盖了 AngularJS 中称为“作用域”的数据模型与其他 AngularJS 组件之间的关系。你还将学习作用域层次结构是如何工作的。
 
-第 5 章，“使用 AngularJS 模板创建视图”，涵盖了 AngularJS 模板的结构。你将学习如何向模板中添加反映模型中数据的元素，以及如何在将元素渲染到浏览器视图时使用过滤器自动格式化它们。
+**第 5 章，“使用 AngularJS 模板创建视图”**，涵盖了 AngularJS 模板的结构。你将学习如何向模板中添加反映模型中数据的元素，以及如何在将元素渲染到浏览器视图时使用过滤器自动格式化它们。
 
-第 6 章，“在 AngularJS 视图中实现指令”，涵盖了 AngularJS 的内置指令。你将学习如何以各种方式实现指令，从将简单的 JavaScript 数组转换为多个 HTML 元素，到直接将网页上的元素绑定到作用域模型。你还将学习如何在控制器中处理鼠标和键盘事件。
+**第 6 章，“在 AngularJS 视图中实现指令”**，涵盖了 AngularJS 的内置指令。你将学习如何以各种方式实现指令，从将简单的 JavaScript 数组转换为多个 HTML 元素，到直接将网页上的元素绑定到作用域模型。你还将学习如何在控制器中处理鼠标和键盘事件。
 
-第 7 章，“创建你自己的自定义指令以扩展 HTML”，涵盖了创建自定义 AngularJS 指令。你将学习如何构建能够增强现有 HTML 元素行为的指令，以及如何创建能为用户提供出色交互的全新 HTML 元素。
+**第 7 章，“创建你自己的自定义指令以扩展 HTML”**，涵盖了创建自定义 AngularJS 指令。你将学习如何构建能够增强现有 HTML 元素行为的指令，以及如何创建能为用户提供出色交互的全新 HTML 元素。
 
-第 8 章，“使用事件与模型中的数据交互”，涵盖了你将遇到的事件类型以及如何管理它们。你将学习如何创建和处理你自己的自定义事件。本章还涵盖了监视作用域模型中的值并在它们发生变化时采取行动。
+**第 8 章，“使用事件与模型中的数据交互”**，涵盖了你将遇到的事件类型以及如何管理它们。你将学习如何创建和处理你自己的自定义事件。本章还涵盖了监视作用域模型中的值并在它们发生变化时采取行动。
 
-第 9 章，“在 Web 应用程序中实现 AngularJS 服务”，涵盖了 AngularJS 提供的内置服务。这些服务使你能够使用 HTTP 请求与 Web 服务器通信、与浏览器交互，并实现网页上元素的动画效果。
+**第 9 章，“在 Web 应用程序中实现 AngularJS 服务”**，涵盖了 AngularJS 提供的内置服务。这些服务使你能够使用 HTTP 请求与 Web 服务器通信、与浏览器交互，并实现网页上元素的动画效果。
 
-第 10 章，“创建你自己的自定义 AngularJS 服务”，涵盖了 AngularJS 中可用于创建你自己的自定义服务的机制。自定义服务是使功能可重用的好方法，因为你可以轻松地将自定义服务提供的功能注入到多个应用程序中。
+**第 10 章，“创建你自己的自定义 AngularJS 服务”**，涵盖了 AngularJS 中可用于创建你自己的自定义服务的机制。自定义服务是使功能可重用的好方法，因为你可以轻松地将自定义服务提供的功能注入到多个应用程序中。
 
-第 11 章，“以 AngularJS 方式创建丰富的 Web 应用程序组件”，涵盖了使用 AngularJS 机制构建丰富交互性的页面元素。本章某种程度上是对所有其他章节的回顾。你将学习如何使用 AngularJS 构建可展开/可折叠的元素、拖放功能、可缩放图像、选项卡式面板和星级评分。
+**第 11 章，“以 AngularJS 方式创建丰富的 Web 应用程序组件”**，涵盖了使用 AngularJS 机制构建丰富交互性的页面元素。本章某种程度上是对所有其他章节的回顾。你将学习如何使用 AngularJS 构建可展开/可折叠的元素、拖放功能、可缩放图像、选项卡式面板和星级评分。
 
-附录 A，“测试 AngularJS 应用程序”，讨论了 AngularJS 中的单元测试和端到端测试。本附录为你在设计测试时提供了一些简单的指引，以及一些指向额外资源的链接。
+**附录 A，“测试 AngularJS 应用程序”**，讨论了 AngularJS 中的单元测试和端到端测试。本附录为你在设计测试时提供了一些简单的指引，以及一些指向额外资源的链接。
 
 ### 获取代码示例
 
@@ -167,9 +168,9 @@ AngularJS 依赖 JavaScript 和 jQuery 的轻量级版本来提供客户端应�
 
 为了有效地使用 JavaScript 构建 AngularJS 应用程序，你的开发环境需要包含以下组件：
 
--   **编辑器：** 编辑器只是为了让你能够创建构建 AngularJS 应用程序所需的 JavaScript、HTML 和 CSS 文件。市场上有很多编辑器，所以选择一个你熟悉的。我通常使用 Eclipse，因为它往往具有我需要的所有功能。
--   **Web 服务器：** Web 服务器需要能够提供静态的 HTML、CSS 和 JavaScript 文件，以及能够提供至少一些服务器端脚本来处理来自 AngularJS 应用程序的 HTTP 请求。对于大多数基本设置，你可以让 Web 服务器在你的开发机器上运行。
--   **浏览器：** 你需要的最后一个组件是一个 Web 浏览器来测试和尝试你的应用程序。在大多数情况下，JavaScript 和 AngularJS 应用程序在主要浏览器上的运行方式是相同的。然而，也有一些功能在不同浏览器之间的表现并不相同。在你的客户将使用的主要浏览器中测试你的应用程序，以确保它在所有浏览器中都能正常工作，始终是一个好主意。
+- **编辑器：** 编辑器只是为了让你能够创建构建 AngularJS 应用程序所需的 JavaScript、HTML 和 CSS 文件。市场上有很多编辑器，所以选择一个你熟悉的。我通常使用 Eclipse，因为它往往具有我需要的所有功能。
+- **Web 服务器：** Web 服务器需要能够提供静态的 HTML、CSS 和 JavaScript 文件，以及能够提供至少一些服务器端脚本来处理来自 AngularJS 应用程序的 HTTP 请求。对于大多数基本设置，你可以让 Web 服务器在你的开发机器上运行。
+- **浏览器：** 你需要的最后一个组件是一个 Web 浏览器来测试和尝试你的应用程序。在大多数情况下，JavaScript 和 AngularJS 应用程序在主要浏览器上的运行方式是相同的。然而，也有一些功能在不同浏览器之间的表现并不相同。在你的客户将使用的主要浏览器中测试你的应用程序，以确保它在所有浏览器中都能正常工作，始终是一个好主意。
 
 要设置你的开发环境，首先选择一个支持 JavaScript、HTML 和 CSS 的你喜欢的编辑器。然后选择一个好的 Web 浏览器。在本书中，我使用了 Eclipse 和 Chrome 作为我的编辑器和浏览器（然而，示例在 Firefox 和较新版本的 Internet Explorer 中也能运行）。
 
@@ -181,14 +182,17 @@ Node.js 是一个基于 Google Chrome 的 V8 引擎的 JavaScript 平台，使�
 
 要安装和使用 Node.js，你需要执行以下步骤：
 
-1.  转到以下 URL 并单击“INSTALL”。这会将可安装的软件包下载到你的系统。对于 Windows 系统，你会得到一个 .MSI 文件；对于 Mac 系统，你会得到一个 .PKG 文件；对于 Linux 系统，你可以获得一个 .tar.gz 文件。
-    http://nodejs.org
-2.  安装软件包。对于 Windows 和 Mac，只需安装软件包文件。对于 Linux，请转到以下位置获取使用包管理器安装的说明。
-    https://github.com/joyent/node/wiki/Installing-Node.js-via-package-manager
-3.  打开终端或控制台窗口。
-4.  键入 `node` 以启动 Node.js JavaScript shell，你应该会看到一个 `>` 提示符。Node.js shell 提供了在底层 JavaScript 引擎上直接执行 JavaScript 命令的功能。
+1. 转到以下 URL 并单击“INSTALL”。这会将可安装的软件包下载到你的系统。对于 Windows 系统，你会得到一个 .MSI 文件；对于 Mac 系统，你会得到一个 .PKG 文件；对于 Linux 系统，你可以获得一个 .tar.gz 文件。
 
+   http://nodejs.org
 
+2. 安装软件包。对于 Windows 和 Mac，只需安装软件包文件。对于 Linux，请转到以下位置获取使用包管理器安装的说明。
+
+   https://github.com/joyent/node/wiki/Installing-Node.js-via-package-manager
+
+3. 打开终端或控制台窗口。
+
+4. 键入 `node` 以启动 Node.js JavaScript shell，你应该会看到一个 `>` 提示符。Node.js shell 提供了在底层 JavaScript 引擎上直接执行 JavaScript 命令的功能。
 
 #### 使用 Node.js 运行 JavaScript
 
@@ -197,15 +201,19 @@ Node.js 让我喜爱的一点是运行和测试 JavaScript 代码非常便捷。
 使用 Node.js 运行 JavaScript 的第一种方法是直接在 Node.js shell 中键入 JavaScript 代码。这就是你在上一节中用于在屏幕上打印 `Hello` 的方法。需要注意的一点是，当你在 Node.js shell 中执行命令时，这些命令的结果也会随输出一起显示。如果执行的语句不返回结果，则会显示 `undefined` 这个词。这就是为什么你在 `Hello` 之后也看到了 `undefined` 被打印出来。
 
 使用 Node.js 运行 JavaScript 的第二种方法是创建一个 JavaScript 文件，然后从控制台提示符执行它。例如，你也可以创建一个名为 `hello.js` 的文件，内容如下：
+
 `console.log("Hello");`
 
 然后你可以使用以下命令从控制台提示符运行该 JavaScript 文件：
+
 `node hello.js`
 
 这假设 `hello.js` 位于控制台的当前位置。如果 JavaScript 文件位于其他位置，你需要指定该文件的路径。例如：
+
 `node path_to_file/hello.js`
 
 使用 Node.js 运行 JavaScript 的最终方法是使用 `require()` 方法，可以从 Node.js shell 中使用，也可以在从命令行执行的 JavaScript 文件中使用。`require()` 方法将加载并执行一个 JavaScript 文件。这使你能够从外部 JavaScript 文件导入功能。例如：
+
 `require("path_to_file/hello.js");`
 
 #### 使用 Node.js 创建 Express Web 服务器
@@ -217,23 +225,31 @@ Express 就是这些模块之一。Express 模块提供了一个易于实现的 
 解释 Node.js 模块和 Express 的最简单方法就是让你使用 Node.js 和 Eclipse 构建自己的 Web 服务器。在接下来的练习中，你将构建一个 Node.js/Express Web 服务器，并用它来提供静态 HTML、CSS 和图像文件。这将使你熟悉完成本书其余示例所需的基础知识。
 
 > 注意
-本书及所有示例的图像和代码文件可以从 Github 上的代码存档下载。
+>
+> 本书及所有示例的图像和代码文件可以从 Github 上的代码存档下载。
 
 使用以下步骤构建并测试一个能够支持静态文件和服务器端脚本的 Node.js/Express Web 服务器：
 
-1.  创建一个项目文件夹，你将用于本书中的示例。
-2.  从控制台提示符，导航到该文件夹并执行以下命令。此命令将为 Node.js 安装 Express 模块版本 4.6.1 到一个名为 node_modules 的子文件夹中：
-    `npm install express@4.6.1`
-3.  现在执行以下命令为 Node.js 安装 body-parser 模块。此模块使得解析 HTTP GET 和 POST 请求中的查询参数和请求体成为可能。此命令将为 Node.js 安装 body-parser 模块版本 1.6.5 到一个名为 node_modules 的子文件夹中：
-    `npm install body-parser@1.6.5`
-4.  在项目目录的根目录中创建一个名为 server.js 的文件，将清单 1.1 的内容放入其中并保存。
-5.  在项目区域中创建一个名为 ch01/welcome.html 的 HTML 文件，将清单 1.2 的内容放入其中，然后保存文件。
-6.  在项目区域中创建一个名为 ch01/css/welcome.css 的文件，将清单 1.3 的内容放入其中并保存。
-7.  将本书代码存档中 /images 文件夹下的 welcome.png 文件复制到项目区域中的 images/welcome.png 位置，或使用你自己的名为 welcome.png 的文件替代。
-8.  在项目文件夹中的控制台提示符下，使用以下命令启动 Node.js/Express 服务器：
-    `node server.js`
-9.  从 Web 浏览器访问以下地址以访问服务器。生成的网页如图 1.1 所示。
-    `localhost/ch01/welcome.html`
+1. 创建一个项目文件夹，你将用于本书中的示例。
+2. 从控制台提示符，导航到该文件夹并执行以下命令。此命令将为 Node.js 安装 Express 模块版本 4.6.1 到一个名为 node_modules 的子文件夹中：
+
+   `npm install express@4.6.1`
+
+3. 现在执行以下命令为 Node.js 安装 body-parser 模块。此模块使得解析 HTTP GET 和 POST 请求中的查询参数和请求体成为可能。此命令将为 Node.js 安装 body-parser 模块版本 1.6.5 到一个名为 node_modules 的子文件夹中：
+
+   `npm install body-parser@1.6.5`
+
+4. 在项目目录的根目录中创建一个名为 server.js 的文件，将清单 1.1 的内容放入其中并保存。
+5. 在项目区域中创建一个名为 ch01/welcome.html 的 HTML 文件，将清单 1.2 的内容放入其中，然后保存文件。
+6. 在项目区域中创建一个名为 ch01/css/welcome.css 的文件，将清单 1.3 的内容放入其中并保存。
+7. 将本书代码存档中 /images 文件夹下的 welcome.png 文件复制到项目区域中的 images/welcome.png 位置，或使用你自己的名为 welcome.png 的文件替代。
+8. 在项目文件夹中的控制台提示符下，使用以下命令启动 Node.js/Express 服务器：
+
+   `node server.js`
+
+9. 从 Web 浏览器访问以下地址以访问服务器。生成的网页如图 1.1 所示。
+
+   `localhost/ch01/welcome.html`
 
 ```
 清单 1.1 server.js: 创建一个基本的 Node.js/Express Web 服务器
@@ -290,14 +306,19 @@ var myData;
 ```
 
 你也可以在同一行中为变量赋值。例如，以下代码行创建了一个变量 `myString` 并为其赋值 "Some Text"：
+
 `var myString = "Some Text";`
 
 这单行代码与下面两行代码做的事情相同：
+
 `var myString;`
+
 `myString = "Some Text";`
 
 声明变量后，你可以使用其名称为变量赋值并访问变量的值。例如，以下代码将一个字符串存储到 `myString` 变量中，然后在为 `newString` 变量赋值时使用它：
+
 `var myString = "Some Text";`
+
 `var newString = myString + " Some More Text";`
 
 你应该给变量起描述性的名称，以便你以后知道它们存储了什么数据，并且可以更容易地在程序中使用它们。变量名必须以字母、$ 或 _ 开头，并且不能包含空格。此外，变量名区分大小写，因此 `myString` 与 `MyString` 不同。
@@ -306,39 +327,46 @@ var myData;
 
 JavaScript 使用数据类型来确定如何处理分配给变量的数据。变量类型决定了可以对该变量执行哪些操作，例如循环或执行。以下列表描述了你在本书中最常使用的变量类型：
 
--   **String:** 此数据类型将字符数据存储为字符串。字符数据通过单引号或双引号指定。引号中包含的所有数据都将分配给字符串变量。例如：
-    `var myString = 'Some Text';`
-    `var anotherString = 'Some More Text';`
--   **Number:** 此数据类型将数据存储为数值。数字在计数、计算和比较中很有用。以下是一些示例：
-    `var myInteger = 1;`
-    `var cost = 1.33;`
--   **Boolean:** 此数据类型存储一个单独的位，该位为真或假。布尔值通常用作标志。例如，你可以在一些代码开始时将变量设置为 `false`，然后在完成时检查它，以查看代码执行是否到达了某个特定位置。以下示例定义了 `true` 和 `false` 变量：
-    `var yes = true;`
-    `var no = false;`
+- **String:** 此数据类型将字符数据存储为字符串。字符数据通过单引号或双引号指定。引号中包含的所有数据都将分配给字符串变量。例如：
 
+  `var myString = 'Some Text';`
 
+  `var anotherString = 'Some More Text';`
 
-## 第1章 踢入JavaScript世界
+- **Number:** 此数据类型将数据存储为数值。数字在计数、计算和比较中很有用。以下是一些示例：
 
-数组：索引数组是一系列独立的数据项，全部存储在单个变量名下。可以通过零基索引使用`array[index]`语法访问数组中的元素。以下是创建简单数组并访问第一个元素（索引为0）的示例：
-```
-var arr = ["one", "two", "three"];
-var first = arr[0];
-```
+  `var myInteger = 1;`
 
-对象字面量：JavaScript支持创建和使用对象字面量的功能，这类似于Java、C#和Python中的字典。使用对象字面量时，可以通过`object.property`语法访问对象中的值和函数。以下示例展示如何创建和访问对象字面量的属性：
-```
-var obj = {"name": "Brad", "occupation": "Hacker", "age": "Unknown"};
-var name = obj.name;
-```
+  `var cost = 1.33;`
 
-空值：有时你需要存储变量但没有合适的值，可能是因为该值尚未创建或不再使用。此时可以将变量设为`null`。使用`null`比赋值0或空字符串(`""`)更好，因为那些可能是变量的有效值。通过将变量赋值为`null`，你可以表示“无值”，并在代码中检查`null`状态：
-```
-var newVar = null;
-```
+- **Boolean:** 此数据类型存储一个单独的位，该位为真或假。布尔值通常用作标志。例如，你可以在一些代码开始时将变量设置为 `false`，然后在完成时检查它，以查看代码执行是否到达了某个特定位置。以下示例定义了 `true` 和 `false` 变量：
+
+  `var yes = true;`
+
+  `var no = false;`
+
+- **Array:** 索引数组是一系列独立的数据项，全部存储在单个变量名下。可以通过零基索引使用 `array[index]` 语法访问数组中的元素。以下是创建简单数组并访问第一个元素（索引为 0）的示例：
+
+  ```
+  var arr = ["one", "two", "three"];
+  var first = arr[0];
+  ```
+
+- **Object:** JavaScript 支持创建和使用对象字面量的功能，这类似于 Java、C# 和 Python 中的字典。使用对象字面量时，可以通过 `object.property` 语法访问对象中的值和函数。以下示例展示如何创建和访问对象字面量的属性：
+
+  ```
+  var obj = {"name": "Brad", "occupation": "Hacker", "age": "Unknown"};
+  var name = obj.name;
+  ```
+
+- **Null:** 有时你需要存储变量但没有合适的值，可能是因为该值尚未创建或不再使用。此时可以将变量设为 `null`。使用 `null` 比赋值 0 或空字符串 (`""`) 更好，因为那些可能是变量的有效值。通过将变量赋值为 `null`，你可以表示“无值”，并在代码中检查 `null` 状态：
+
+  `var newVar = null;`
 
 > **注意**
-> JavaScript是无类型语言。你不需要在脚本中指定变量的数据类型，解释器会自动确定变量的正确数据类型。此外，可以将一种类型的变量赋值给不同类型的值。例如，以下代码先定义字符串变量，再将其赋值为整数类型：
+>
+> JavaScript 是无类型语言。你不需要在脚本中指定变量的数据类型，解释器会自动确定变量的正确数据类型。此外，可以将一种类型的变量赋值给不同类型的值。例如，以下代码先定义字符串变量，再将其赋值为整数类型：
+>
 > ```
 > var id = "testID";
 > id = 1;
@@ -346,15 +374,15 @@ var newVar = null;
 
 ### 使用运算符
 
-JavaScript运算符允许你修改变量的值。你已经熟悉用于赋值的`=`运算符。JavaScript提供多种运算符，分为两类：算术运算符和赋值运算符。
+JavaScript 运算符允许你修改变量的值。你已经熟悉用于赋值的 `=` 运算符。JavaScript 提供多种运算符，分为两类：算术运算符和赋值运算符。
 
 #### 算术运算符
 
-算术运算符用于在变量和直接值之间执行运算。表1.1列出了算术运算及其结果。
+算术运算符用于在变量和直接值之间执行运算。表 1.1 列出了算术运算及其结果。
 
-表1.1 JavaScript算术运算符（初始值y=4）
+**表 1.1 JavaScript 算术运算符（初始值 y=4）**
 
-| 运算符 | 描述 | 示例 | 结果x |
+| 运算符 | 描述 | 示例 | 结果 x |
 | :--- | :--- | :--- | :--- |
 | + | 加法 | x=y+5 | 9 |
 | | | x=y+"5" | "45" |
@@ -369,15 +397,16 @@ JavaScript运算符允许你修改变量的值。你已经熟悉用于赋值的`
 | % | 取模（除法余数） | x=y%3 | 1 |
 
 > **注意**
-> `+`运算符也可用于连接字符串或混合字符串与数值。它能快速拼接字符串，也能将数字数据添加到输出字符串中。表1.1显示，当数值与字符串相加时，数值会转换为字符串，然后两个字符串被拼接。
+>
+> `+` 运算符也可用于连接字符串或混合字符串与数值。它能快速拼接字符串，也能将数字数据添加到输出字符串中。表 1.1 显示，当数值与字符串相加时，数值会转换为字符串，然后两个字符串被拼接。
 
 #### 赋值运算符
 
-赋值运算符用于给变量赋值。除了`=`运算符，还有几种形式可以在赋值时操作数据。表1.2列出了赋值运算及其结果。
+赋值运算符用于给变量赋值。除了 `=` 运算符，还有几种形式可以在赋值时操作数据。表 1.2 列出了赋值运算及其结果。
 
-表1.2 JavaScript赋值运算符（初始值x=10）
+**表 1.2 JavaScript 赋值运算符（初始值 x=10）**
 
-| 运算符 | 示例 | 等效算术运算 | 结果x |
+| 运算符 | 示例 | 等效算术运算 | 结果 x |
 | :--- | :--- | :--- | :--- |
 | = | x=5 | x=5 | 5 |
 | += | x+=5 | x=x+5 | 15 |
@@ -388,15 +417,15 @@ JavaScript运算符允许你修改变量的值。你已经熟悉用于赋值的`
 
 #### 应用比较和条件运算符
 
-使用条件语句是为应用程序添加逻辑的方法，使得特定代码仅在正确条件下执行。这通过将比较逻辑应用于变量值来实现。以下章节描述JavaScript中的比较运算及其在条件语句中的应用。
+使用条件语句是为应用程序添加逻辑的方法，使得特定代码仅在正确条件下执行。这通过将比较逻辑应用于变量值来实现。以下章节描述 JavaScript 中的比较运算及其在条件语句中的应用。
 
 #### 比较运算符
 
-比较运算符对两部分数据进行评估，若评估正确则返回*true*，否则返回*false*。比较运算符将运算符左侧的值与右侧的值进行比较。
+比较运算符对两部分数据进行评估，若评估正确则返回 `true`，否则返回 `false`。比较运算符将运算符左侧的值与右侧的值进行比较。
 
-表1.3列出了比较运算符及其示例。
+表 1.3 列出了比较运算符及其示例。
 
-表1.3 JavaScript比较运算符（初始值x=10）
+**表 1.3 JavaScript 比较运算符（初始值 x=10）**
 
 | 运算符 | 描述 | 示例 | 结果 |
 | :--- | :--- | :--- | :--- |
@@ -412,9 +441,9 @@ JavaScript运算符允许你修改变量的值。你已经熟悉用于赋值的`
 | < | 小于 | x<5 | false |
 | <= | 小于等于 | x<=10 | true |
 
-可以使用逻辑运算符和标准括号链接多个比较。表1.4列出了逻辑运算符及其用法。
+可以使用逻辑运算符和标准括号链接多个比较。表 1.4 列出了逻辑运算符及其用法。
 
-表1.4 JavaScript逻辑运算符（初始值x=10，y=5）
+**表 1.4 JavaScript 逻辑运算符（初始值 x=10，y=5）**
 
 | 运算符 | 描述 | 示例 | 结果 |
 | :--- | :--- | :--- | :--- |
@@ -428,9 +457,9 @@ JavaScript运算符允许你修改变量的值。你已经熟悉用于赋值的`
 | | | ((x<y \|\| x>=10) && y>=5) | true |
 | | | (!(x==y) && y>=10) | false |
 
-### 使用if语句
+### 使用 if 语句
 
-if语句允许你根据比较结果分离代码执行。以下代码在`()`中放入条件运算符，在`{}`中放入条件为真时执行的代码：
+`if` 语句允许你根据比较结果分离代码执行。以下代码在 `()` 中放入条件运算符，在 `{}` 中放入条件为真时执行的代码：
 
 ```
 if(x==5){
@@ -438,7 +467,7 @@ if(x==5){
 }
 ```
 
-除了在if语句块内执行代码，你还可以指定一个else块，仅在条件为假时执行。例如：
+除了在 `if` 语句块内执行代码，你还可以指定一个 `else` 块，仅在条件为假时执行。例如：
 
 ```
 if(x==5){
@@ -448,7 +477,7 @@ if(x==5){
 }
 ```
 
-你还可以链接if语句。为此，在else语句后添加条件语句，如下例：
+你还可以链接 `if` 语句。为此，在 `else` 语句后添加条件语句，如下例：
 
 ```
 if(x<5){
@@ -460,11 +489,11 @@ if(x<5){
 }
 ```
 
-### 实现switch语句
+### 实现 switch 语句
 
-另一种条件逻辑是switch语句。switch语句允许你评估一次表达式，然后根据值执行多个代码段之一。
+另一种条件逻辑是 `switch` 语句。`switch` 语句允许你评估一次表达式，然后根据值执行多个代码段之一。
 
-switch语句的语法如下：
+`switch` 语句的语法如下：
 
 ```
 switch(expression){
@@ -479,22 +508,23 @@ switch(expression){
 }
 ```
 
-工作流程：`switch`语句完全评估表达式并获取值。该值可以是字符串、数字、布尔值甚至对象。然后将`switch`表达式与每个`case`语句指定的值进行比较。如果值匹配，则执行该`case`语句中的代码。如果没有匹配值，则执行默认代码。
+工作流程：`switch` 语句完全评估表达式并获取值。该值可以是字符串、数字、布尔值甚至对象。然后将 `switch` 表达式与每个 `case` 语句指定的值进行比较。如果值匹配，则执行该 `case` 语句中的代码。如果没有匹配值，则执行默认代码。
 
 > **注意**
-> 通常每个`case`语句末尾都包含`break`命令，表示跳出`switch`语句。如果没有找到`break`，代码将继续执行下一个`case`语句。
+>
+> 通常每个 `case` 语句末尾都包含 `break` 命令，表示跳出 `switch` 语句。如果没有找到 `break`，代码将继续执行下一个 `case` 语句。
 
 ### 实现循环
 
 循环是多次执行相同代码段的手段。当需要对数组或对象集合重复执行相同任务时，这非常有用。
 
-JavaScript提供执行`for`和`while`循环的功能。以下章节描述如何在JavaScript中实现循环。
+JavaScript 提供执行 `for` 和 `while` 循环的功能。以下章节描述如何在 JavaScript 中实现循环。
 
-#### while循环
+#### while 循环
 
-JavaScript中最基本的循环类型是`while`循环。`while`循环测试一个表达式，并继续执行其`{}`括号中的代码，直到表达式求值为`false`。
+JavaScript 中最基本的循环类型是 `while` 循环。`while` 循环测试一个表达式，并继续执行其 `{}` 括号中的代码，直到表达式求值为 `false`。
 
-例如，以下`while`循环执行直到`i`等于5：
+例如，以下 `while` 循环执行直到 `i` 等于 5：
 
 ```
 var i = 1;
@@ -503,8 +533,6 @@ while (i<5){
     i++;
 }
 ```
-
-
 
 #### do/while 循环
 
@@ -524,12 +552,14 @@ do {
 控制台输出如下：
 
 It's Monday
+
 It's Tuesday
+
 It's Wednesday
 
 #### for 循环
 
-JavaScript 的 for 循环允许你通过使用 for 语句来执行代码特定的次数，该语句在一个执行块中组合了三条语句。语法如下：
+JavaScript 的 `for` 循环允许你通过使用 `for` 语句来执行代码特定的次数，该语句在一个执行块中组合了三条语句。语法如下：
 
 ```
 for (assignment; condition; update;) {
@@ -537,10 +567,10 @@ for (assignment; condition; update;) {
 }
 ```
 
-for 语句在执行循环时使用以下三条语句：
+`for` 语句在执行循环时使用以下三条语句：
 
 - **assignment（初始化）：** 这在循环开始前执行一次，之后不再执行。用于初始化将在循环中用作条件的变量。
-- **condition（条件）：** 这个表达式在循环的每次迭代前都会被求值。如果表达式求值为 true，则执行循环；否则，for 循环执行结束。
+- **condition（条件）：** 这个表达式在循环的每次迭代前都会被求值。如果表达式求值为 true，则执行循环；否则，`for` 循环执行结束。
 - **update（更新）：** 这在每次迭代中执行，在循环中的代码执行之后。这通常用于递增在条件中使用的计数器。
 
 以下示例说明了一个 `for` 循环以及一个循环嵌套在另一个循环中的情况：
@@ -580,13 +610,15 @@ for (var idx in days) {
 
 请注意，变量 `idx` 在每次循环迭代中都会调整，从数组的起始索引到最后一个索引。结果输出如下：
 
-```
 It's Monday
+
 It's Tuesday
+
 It's Wednesday
+
 It's Thursday
+
 It's Friday
-```
 
 #### 中断循环
 
@@ -608,6 +640,7 @@ for (var idx in days) {
 当值为 `Wednesday` 时，循环执行完全停止：
 
 It's Monday
+
 It's Tuesday
 
 此示例显示了当日期为 Wednesday 时使用 `continue`：
@@ -624,8 +657,11 @@ for (var idx in days) {
 请注意，由于 `continue` 语句，`Wednesday` 的输出没有执行，但循环执行确实完成了：
 
 It's Monday
+
 It's Tuesday
+
 It's Thursday
+
 It's Friday
 
 ### 创建函数
@@ -642,15 +678,13 @@ function myFunction() {
 }
 ```
 
-要执行 myFunction() 中的代码，你只需将以下行添加到主 JavaScript 中或另一个函数内：
+要执行 `myFunction()` 中的代码，你只需将以下行添加到主 JavaScript 中或另一个函数内：
 
-```
-myFunction();
-```
+`myFunction();`
 
 #### 将变量传递给函数
 
-通常你需要将特定值传递给函数，函数在执行其代码时会使用这些值。你以逗号分隔的形式将值传递给函数。函数定义需要在 () 中包含与传入数量匹配的变量名列表。例如，以下函数接受两个参数 name 和 city，并使用它们构建输出字符串：
+通常你需要将特定值传递给函数，函数在执行其代码时会使用这些值。你以逗号分隔的形式将值传递给函数。函数定义需要在 `()` 中包含与传入数量匹配的变量名列表。例如，以下函数接受两个参数 `name` 和 `city`，并使用它们构建输出字符串：
 
 ```
 function greeting(name, city) {
@@ -659,7 +693,7 @@ function greeting(name, city) {
 }
 ```
 
-要调用 greeting() 函数，你需要传入一个 name 值和一个 city 值。值可以是直接值或先前定义的变量。为了说明这一点，以下代码使用 name 变量和 city 的直接字符串执行 greeting() 函数：
+要调用 `greeting()` 函数，你需要传入一个 `name` 值和一个 `city` 值。值可以是直接值或先前定义的变量。为了说明这一点，以下代码使用 `name` 变量和 `city` 的直接字符串执行 `greeting()` 函数：
 
 ```
 var name = "Brad";
@@ -722,8 +756,6 @@ console.log( doCalc(5, 10, function(n1, n2) { return n1 * n2; }) );
 
 你大概可以看出，使用匿名函数的优点在于你不需要一个在代码其他地方不会用到的正式定义。因此，匿名函数使 JavaScript 代码更简洁、更易读。
 
-
-
 ### 理解变量作用域
 
 当你开始在 JavaScript 应用程序中添加条件、函数和循环后，你需要理解变量作用域。变量作用域旨在确定当前执行代码行上特定变量名的值。
@@ -732,7 +764,7 @@ JavaScript 允许你定义全局版本和局部版本的变量。全局版本在
 
 为了更好地理解变量作用域，请考虑清单 1.4 中的代码。
 
-清单 1.4 在 JavaScript 中定义全局和局部变量
+**清单 1.4 在 JavaScript 中定义全局和局部变量**
 
 ```
 01 var myVar = 1;
@@ -761,9 +793,7 @@ JavaScript 还提供了一个相当不错的面向对象编程结构，供你创
 
 要使用 JavaScript 对象，你必须首先创建该对象的一个实例。你可以通过将 `new` 关键字与对象构造函数名称一起使用来创建对象实例。例如，要创建一个 `Number` 对象，你可以使用以下代码行：
 
-```
-var x = new Number("5");
-```
+`var x = new Number("5");`
 
 对象语法非常直接：你使用对象名称，然后是一个点，再然后是属性或方法名称。例如，以下代码行获取并设置名为 `myObj` 的对象的 `name` 属性：
 
@@ -832,9 +862,7 @@ var user = new User("Brad", "Dayley");
 
 这些方法的最终结果与你拥有一个属性可以通过点表示法引用的对象基本相同，如下所示：
 
-```
-console.log(user.getName());
-```
+`console.log(user.getName());`
 
 #### 使用原型对象模式
 
@@ -860,13 +888,11 @@ UserP.prototype = {
 
 `String` 对象是 JavaScript 中迄今为止最常用的对象。当你定义一个具有字符串数据类型的变量时，JavaScript 会自动为你创建一个 `String` 对象。例如：
 
-```
-var myStr = "Teach Yourself jQuery & JavaScript in 24 Hours";
-```
+`var myStr = "Teach Yourself jQuery & JavaScript in 24 Hours";`
 
 创建字符串时，有几个特殊字符不能直接添加到字符串中。对于这些字符，JavaScript 提供了一组转义码，如表 1.5 所列。
 
-#### 表 1.5 字符串对象转义码
+**表 1.5 字符串对象转义码**
 
 | 转义码 | 描述 | 示例 | 输出字符串 |
 |---|---|---|---|
@@ -881,13 +907,11 @@ var myStr = "Teach Yourself jQuery & JavaScript in 24 Hours";
 
 要确定字符串的长度，你可以使用 `String` 对象的 `length` 属性，如本例所示：
 
-```
-var numOfChars = myStr.length;
-```
+`var numOfChars = myStr.length;`
 
 `String` 对象有几个函数，使你能够以各种方式访问和操作字符串。字符串操作方法在表 1.6 中描述。
 
-#### 表 1.6 操作字符串对象的方法
+**表 1.6 操作字符串对象的方法**
 
 | 方法 | 描述 |
 | :--- | :--- |
@@ -908,13 +932,11 @@ var numOfChars = myStr.length;
 | `toUpperCase()` | 将字符串转换为大写。 |
 | `valueOf()` | 返回原始字符串值。 |
 
-
-
-为了帮助您开始使用`String`对象提供的功能，以下部分将介绍一些可使用`String`对象方法完成的常见任务。
+为了帮助您开始使用 `String` 对象提供的功能，以下部分将介绍一些可使用 `String` 对象方法完成的常见任务。
 
 #### 合并字符串
 
-您可以通过使用`+`运算符或对第一个字符串使用`concat()`函数来合并多个字符串。例如，在以下代码中，`sentence1`和`sentence2`的结果将是相同的：
+您可以通过使用 `+` 运算符或对第一个字符串使用 `concat()` 函数来合并多个字符串。例如，在以下代码中，`sentence1` 和 `sentence2` 的结果将是相同的：
 
 ```
 var word1 = "Today ";
@@ -927,7 +949,7 @@ var sentence2 = word1.concat(word2, word3, word4);
 
 #### 在字符串中搜索子字符串
 
-要确定一个字符串是否是另一个字符串的子字符串，可以使用`indexOf()`方法。例如，以下代码仅在字符串包含`think`一词时才将其写入控制台：
+要确定一个字符串是否是另一个字符串的子字符串，可以使用 `indexOf()` 方法。例如，以下代码仅在字符串包含 `think` 一词时才将其写入控制台：
 
 ```
 var myStr = "I think, therefore I am.";
@@ -938,7 +960,7 @@ if (myStr.indexOf("think") != -1){
 
 #### 替换字符串中的单词
 
-另一个常见的`String`对象任务是将一个子字符串替换为另一个。要替换字符串中的单词或短语，您可以使用`replace()`方法。以下代码将文本`"<username>"`替换为变量`username`的值：
+另一个常见的 `String` 对象任务是将一个子字符串替换为另一个。要替换字符串中的单词或短语，您可以使用 `replace()` 方法。以下代码将文本 `"<username>"` 替换为变量 `username` 的值：
 
 ```
 var username = "Brad";
@@ -946,9 +968,9 @@ var output = "<username> please enter your password: ";
 output.replace("<username>", username);
 ```
 
-## 将字符串分割成数组
+#### 将字符串分割成数组
 
-字符串的一项非常常见的任务是使用分隔符字符将其分割成数组。例如，以下代码使用`split()`方法，以`":"`作为分隔符，将一个时间字符串分割成其基本部分组成的数组：
+字符串的一项非常常见的任务是使用分隔符字符将其分割成数组。例如，以下代码使用 `split()` 方法，以 `":"` 作为分隔符，将一个时间字符串分割成其基本部分组成的数组：
 
 ```
 var t = "12:10:36";
@@ -960,7 +982,7 @@ var second = tArr[2];
 
 ### 处理数组
 
-数组对象提供了一种存储和处理一组其他对象的方法。数组可以存储数字、字符串或其他 JavaScript 对象。有几种方法可以创建 JavaScript 数组。例如，以下语句创建了同一个数组的三个相同版本：
+`Array` 对象提供了一种存储和处理一组其他对象的方法。数组可以存储数字、字符串或其他 JavaScript 对象。有几种方法可以创建 JavaScript 数组。例如，以下语句创建了同一个数组的三个相同版本：
 
 ```
 var arr = ["one", "two", "three"];
@@ -978,9 +1000,7 @@ arr3.push("three");
 
 要确定数组中的元素数量，可以使用 `Array` 对象的 `length` 属性，如本例所示：
 
-```
-var numOfItems = arr.length;
-```
+`var numOfItems = arr.length;`
 
 数组遵循从零开始的索引，这意味着第一个项目位于索引 0，依此类推。例如，在以下代码中，变量 `first` 的值将是 `Monday`，变量 `last` 的值将是 `Friday`：
 
@@ -996,26 +1016,26 @@ var last = week[week.length-1];
 
 | 方法 | 描述 |
 | :--- | :--- |
-| concat(arr1, arr2, ...) | 返回数组和作为参数传递的数组的合并副本。 |
-| indexOf(value) | 返回值在数组中的第一个索引，如果未找到该项目则返回 -1。 |
-| join(separator) | 将数组的所有元素用分隔符连接成一个字符串。如果未指定分隔符，则使用逗号。 |
-| lastIndexOf(value) | 返回值在数组中的最后一个索引，如果未找到该值则返回 -1。 |
-| pop() | 从数组中移除最后一个元素并返回该元素。 |
-| push(item1, item2, ...) | 在数组末尾添加一个或多个新元素并返回新长度。 |
-| reverse() | 反转数组中所有元素的顺序。 |
-| shift() | 移除数组的第一个元素并返回该元素。 |
-| slice(start, end) | 返回起始和结束索引之间的元素。 |
-| sort(sortFunction) | 对数组的元素进行排序。`sortFunction` 是可选的。 |
-| splice(index, count, item1, item2...) | 在指定的索引处，移除 `count` 个元素，然后在索引处插入作为参数传递的任何可选项目。 |
-| toString() | 返回数组的字符串形式。 |
-| unshift() | 在数组开头添加新元素并返回新长度。 |
-| valueOf() | 返回 `Array` 对象的原始值。 |
+| `concat(arr1, arr2, ...)` | 返回数组和作为参数传递的数组的合并副本。 |
+| `indexOf(value)` | 返回值在数组中的第一个索引，如果未找到该项目则返回 -1。 |
+| `join(separator)` | 将数组的所有元素用分隔符连接成一个字符串。如果未指定分隔符，则使用逗号。 |
+| `lastIndexOf(value)` | 返回值在数组中的最后一个索引，如果未找到该值则返回 -1。 |
+| `pop()` | 从数组中移除最后一个元素并返回该元素。 |
+| `push(item1, item2, ...)` | 在数组末尾添加一个或多个新元素并返回新长度。 |
+| `reverse()` | 反转数组中所有元素的顺序。 |
+| `shift()` | 移除数组的第一个元素并返回该元素。 |
+| `slice(start, end)` | 返回起始和结束索引之间的元素。 |
+| `sort(sortFunction)` | 对数组的元素进行排序。`sortFunction` 是可选的。 |
+| `splice(index, count, item1, item2...)` | 在指定的索引处，移除 `count` 个元素，然后在索引处插入作为参数传递的任何可选项目。 |
+| `toString()` | 返回数组的字符串形式。 |
+| `unshift()` | 在数组开头添加新元素并返回新长度。 |
+| `valueOf()` | 返回 `Array` 对象的原始值。 |
 
-为了帮助您开始使用`Array`对象提供的功能，以下部分将介绍一些可使用`Array`对象方法完成的常见任务。
+为了帮助您开始使用 `Array` 对象提供的功能，以下部分将介绍一些可使用 `Array` 对象方法完成的常见任务。
 
 #### 合并数组
 
-您可以使用`concat()`方法（但不能使用`+`方法）将数组合并为单个数组。在以下代码中，变量`arr3`包含`arr1`元素的字符串表示形式加上`arr2`元素的字符串表示形式。而以下代码中的变量`arr4`是一个包含`arr1`和`arr2`合并元素的数组：
+您可以使用 `concat()` 方法（但不能使用 `+` 方法）将数组合并为单个数组。在以下代码中，变量 `arr3` 包含 `arr1` 元素的字符串表示形式加上 `arr2` 元素的字符串表示形式。而以下代码中的变量 `arr4` 是一个包含 `arr1` 和 `arr2` 合并元素的数组：
 
 ```
 var arr1 = [1,2,3];
@@ -1025,6 +1045,7 @@ var arr4 = arr1.concat(arr2);
 ```
 
 > **注意**
+>
 > 您可以合并一个数字数组和一个字符串数组。数组中的每个项目将保留其自身的对象类型。但是，在使用数组中的项目时，您需要跟踪包含多种数据类型的数组，以避免出现问题。
 
 #### 遍历数组
@@ -1085,7 +1106,7 @@ function message(day){
 
 JavaScript 编码的一个重要部分是为可能出现问题的实例添加错误处理。默认情况下，如果由于 JavaScript 中的某个问题导致代码异常，脚本将失败并且不会完成加载。这通常不是期望的行为。事实上，这常常是灾难性的行为。为了防止这些大问题，您应该将代码包装在 `try/catch` 块中。
 
-## try/catch 块
+#### try/catch 块
 
 要防止您的代码完全崩溃，请使用 `try/catch` 块，它可以处理代码内部的问题。如果 JavaScript 在执行 `try` 块中的代码时遇到错误，它将跳转并执行 `catch` 部分，而不是停止整个脚本。如果没有发生错误，则整个 `try` 块将被执行，而 `catch` 块不会被执行。
 
@@ -1099,17 +1120,15 @@ try {
 }
 ```
 
-
-
 #### 抛出你自己的错误
 
-请注意，`catch`语句接受一个`err`参数，这是一个错误对象。该错误对象提供了`message`属性，用于提供错误描述。错误对象还提供了一个`name`属性，该属性是所抛出错误类型的名称。
+请注意，`catch` 语句接受一个 `err` 参数，这是一个错误对象。该错误对象提供了 `message` 属性，用于提供错误描述。错误对象还提供了一个 `name` 属性，该属性是所抛出错误类型的名称。
 
 之前的代码会产生一个异常和以下消息：
 
 `ReferenceError: "badVarName is not defined" occurred when assigning x.`
 
-你也可以通过使用`throw`语句来抛出你自己的错误。以下代码说明了如何在函数中添加`throw`语句来抛出错误，即使脚本错误没有发生。函数`sqrRoot()`接受一个参数`x`。然后它测试`x`以验证其是否为正数，并返回一个包含`x`平方根的字符串。如果`x`不是正数，则抛出相应的错误，并且`catch`块返回该错误：
+你也可以通过使用 `throw` 语句来抛出你自己的错误。以下代码说明了如何在函数中添加 `throw` 语句来抛出错误，即使脚本错误没有发生。函数 `sqrRoot()` 接受一个参数 `x`。然后它测试 `x` 以验证其是否为正数，并返回一个包含 `x` 平方根的字符串。如果 `x` 不是正数，则抛出相应的错误，并且 `catch` 块返回该错误：
 
 ```
 function sqrRoot(x) {
@@ -1132,18 +1151,21 @@ function writeIt() {
 writeIt();
 ```
 
-以下是控制台输出，显示了根据传递给`sqrRoot()`函数的输入而抛出的不同错误：
+以下是控制台输出，显示了根据传递给 `sqrRoot()` 函数的输入而抛出的不同错误：
 
 `Can't Square Root Strings`
+
 `Can't Square Root Nothing`
+
 `sqrt(4) = 2`
+
 `Sorry No Imagination`
 
 #### 使用 Finally
 
-异常处理中的另一个有价值工具是`finally`关键字。你可以将此关键字添加到`try`/`catch`块的末尾。在`try`/`catch`块执行之后，无论是否发生错误并被捕获，或者`try`块是否完全执行，`finally`块总会被执行。
+异常处理中的另一个有价值工具是 `finally` 关键字。你可以将此关键字添加到 `try`/`catch` 块的末尾。在 `try`/`catch` 块执行之后，无论是否发生错误并被捕获，或者 `try` 块是否完全执行，`finally` 块总会被执行。
 
-以下是在网页中使用`finally`块的示例：
+以下是在网页中使用 `finally` 块的示例：
 
 ```
 function testTryCatch(value){
@@ -1164,9 +1186,9 @@ function testTryCatch(value){
 
 ## 总结
 
-理解JavaScript对于能够在Node.js、MongoDB、Express和AngularJS环境中工作至关重要。本章讨论了足够多的基本JavaScript语言语法，以便你能够掌握本书其余部分的概念。你学习了如何创建对象、如何使用函数以及如何处理字符串和数组。你还学习了如何将错误处理应用于你的脚本，这在Node.js环境中至关重要。
+理解 JavaScript 对于能够在 Node.js、MongoDB、Express 和 AngularJS 环境中工作至关重要。本章讨论了足够多的基本 JavaScript 语言语法，以便你能够掌握本书其余部分的概念。你学习了如何创建对象、如何使用函数以及如何处理字符串和数组。你还学习了如何将错误处理应用于你的脚本，这在 Node.js 环境中至关重要。
 
-# 2 AngularJS 入门
+# 第 2 章 AngularJS 入门
 
 AngularJS 是一个 JavaScript 框架，它提供了一种非常结构化的方法来创建网站和 Web 应用程序。本质上，AngularJS 是一个构建在轻量级 jQuery 版本之上的 JavaScript 库——这种组合使 AngularJS 能够同时提供 JavaScript 和 jQuery 的最佳特性，并强制执行一个结构化的模型-视图-控制器（MVC）框架。
 
@@ -1182,15 +1204,15 @@ AngularJS 是一个建立在 JavaScript 和轻量级 jQuery 版本之上的 MVC 
 
 AngularJS 提供的所有功能，你都可以使用 JavaScript 和 jQuery 自己实现，或者你甚至可以尝试使用另一个 MVC JavaScript 框架。然而，AngularJS 具有大量功能，并且 AngularJS 框架的设计使其易于以正确的方式实现 MVC。以下是一些选择 AngularJS 的理由：
 
--   AngularJS 框架强制正确实现 MVC，并且也使得易于正确实现 MVC。
--   AngularJS HTML 模板的声明式风格使得 HTML 的意图更直观，并且使 HTML 更易于维护。
--   AngularJS 的模型部分是基本的 JavaScript 对象，使其易于操作、访问和实现。
--   AngularJS 使用声明式方法通过在 HTML 声明与其背后的 JavaScript 功能之间建立直接链接来扩展 HTML 的功能。
--   AngularJS 提供了一个非常简单和灵活的过滤器接口，使你能够在数据从模型传递到视图时轻松地格式化数据。
--   AngularJS 应用程序往往使用传统 JavaScript 应用程序代码的一小部分，因为你只需要关注逻辑，而不需要关注所有小细节，例如数据绑定。
--   AngularJS 比传统方法需要少得多的文档对象模型（DOM）操作，并引导你在应用程序的正确位置进行操作。基于呈现数据设计应用程序比基于 DOM 操作设计更容易。
--   AngularJS 提供了几个内置服务，并使你能够以结构化和可重用的方式实现自己的服务。这使你的代码更易于维护和测试。
--   由于 AngularJS 框架中职责的清晰分离，很容易测试你的应用程序，甚至可以使用测试驱动的方法来开发它们。
+- AngularJS 框架强制正确实现 MVC，并且也使得易于正确实现 MVC。
+- AngularJS HTML 模板的声明式风格使得 HTML 的意图更直观，并且使 HTML 更易于维护。
+- AngularJS 的模型部分是基本的 JavaScript 对象，使其易于操作、访问和实现。
+- AngularJS 使用声明式方法通过在 HTML 声明与其背后的 JavaScript 功能之间建立直接链接来扩展 HTML 的功能。
+- AngularJS 提供了一个非常简单和灵活的过滤器接口，使你能够在数据从模型传递到视图时轻松地格式化数据。
+- AngularJS 应用程序往往使用传统 JavaScript 应用程序代码的一小部分，因为你只需要关注逻辑，而不需要关注所有小细节，例如数据绑定。
+- AngularJS 比传统方法需要少得多的文档对象模型（DOM）操作，并引导你在应用程序的正确位置进行操作。基于呈现数据设计应用程序比基于 DOM 操作设计更容易。
+- AngularJS 提供了几个内置服务，并使你能够以结构化和可重用的方式实现自己的服务。这使你的代码更易于维护和测试。
+- 由于 AngularJS 框架中职责的清晰分离，很容易测试你的应用程序，甚至可以使用测试驱动的方法来开发它们。
 
 ## 理解 AngularJS
 
@@ -1220,11 +1242,11 @@ HTML 网页基于 DOM，其中每个 HTML 元素都由一个 DOM 对象表示。
 
 AngularJS 引入了一个新概念，将包含指令的模板与后台的 JavaScript 代码结合起来，以扩展 HTML 的能力。指令有两个部分。第一部分是添加到 HTML 模板中的额外属性、元素和 CSS 类。第二部分是扩展 DOM 正常行为的 JavaScript 代码。
 
+
+
 使用指令的好处是，可视元素的预期逻辑由 HTML 模板表示，因此易于跟踪，而不会隐藏在大量 JavaScript 代码中。AngularJS 最好的特性之一是，内置的 AngularJS 指令处理了大部分必要的 DOM 操作功能，你需要这些功能将作用域中的数据直接绑定到视图中的 HTML 元素。
 
 你也可以创建自己的 AngularJS 指令来实现 Web 应用程序中需要的任何必要的自定义功能。事实上，你应该使用自己的自定义指令来处理 Web 应用程序所需的任何直接 DOM 操作。
-
-
 
 ## 第2章 AngularJS入门
 
@@ -1240,7 +1262,7 @@ AngularJS通过实现控制器来完善MVC框架。控制器通过设置作用�
 
 ### 数据绑定
 
-AngularJS最出色的功能之一是其内置的数据绑定。数据绑定是将模型中的数据与网页上显示的内容链接起来的过程。AngularJS提供了一个非常简洁的接口，用于将模型数据链接到网页中的元素。
+AngularJS最出色的功能之一是其内置的数据绑�。数据绑�是将模型中的数据与网页上显示的内容链接起来的过程。AngularJS提供了一个非常简洁的接口，用于将模型数据链接到网页中的元素。
 
 在AngularJS中，数据绑定是双向的：当网页上的数据发生变化时，模型会更新；当模型中的数据发生变化时，网页会自动更新。这样，模型始终是向用户呈现的数据的唯一来源，而视图仅仅是模型的一种投影。
 
@@ -1254,7 +1276,7 @@ AngularJS最出色的功能之一是其内置的数据绑定。数据绑定是�
 
 依赖注入是一个代码组件定义对其他组件依赖的过程。当代码初始化时，依赖组件会在该组件内变得可用。AngularJS应用程序大量使用了依赖注入。
 
-依赖注入的一个常见用途是使用服务。例如，如果你正在定义一个需要通过HTTP请求访问Web服务器的模块，你可以将HTTP服务注入到该模块中，这样该模块的代码就可以使用其功能。此外，一个AngularJS模块通过依赖关系使用另一个模块的功能。
+依赖注入的一个常见用途是使用服务。例如，如果你正在定义一个需要通过HTTP请请求访问Web服务器的模块，你可以将HTTP服务注入到该模块中，这样该模块的代码就可以使用其功能。此外，一个AngularJS模块通过依赖关系使用另一个模块的功能。
 
 ### 编译器
 
@@ -1274,7 +1296,7 @@ AngularJS生命周期的第一个阶段是引导阶段，它发生在AngularJS J
 
 AngularJS生命周期的第二个阶段是HTML编译阶段。最初加载网页时，浏览器中加载的是静态形式的DOM。在编译阶段，静态DOM会被代表AngularJS视图的动态DOM所替换。
 
-此阶段包含两个部分：遍历静态DOM并收集所有指令，然后将指令与AngularJS内置库或自定义指令代码中的相应JavaScript功能链接起来。指令与作用域结合，以产生动态或活动的视图。
+此阶段包含两个部分：遍历静态DOM并收集所有指令，然后将指令与AngularJS内置库或自定�指令代码中的相应JavaScript功能链接起来。指令与作用域结合，以产生动态或活动的视图。
 
 #### 运行时数据绑定阶段
 
@@ -1289,10 +1311,15 @@ AngularJS的表现与传统的数据绑定方法不同。传统方法将模板�
 以下是实现AngularJS时需要遵循的一些规则：
 
 -   视图作为应用程序的正式呈现结构。在视图的HTML模板中，将任何呈现逻辑表示为指令。
+
 -   如果你需要执行任何DOM操作，请在内置或自定义的指令JavaScript代码中进行——而不是在其他地方。
+
 -   将任何可重用的任务实现为服务，并通过依赖注入将它们添加到模块中。
+
 -   确保作用域反映模型的当前状态，并且是视图消费数据的唯一来源。
+
 -   确保控制器代码仅用于增强作用域数据，而不包含任何业务逻辑。
+
 -   在模块命名空间内定义控制器，而不是全局定义。这确保了你的应用程序可以轻松打包，并防止全局命名空间被污染。
 
 ### 将AngularJS与现有JavaScript和jQuery集成
@@ -1304,11 +1331,17 @@ AngularJS的表现与传统的数据绑定方法不同。传统方法将模板�
 以下步骤建议了一种将AngularJS集成到现有JavaScript和jQuery应用程序中的方法：
 
 1.  从头开始编写至少一个使用模型、自定义HTML指令、服务和控制器的小型AngularJS应用程序。换句话说，在这个应用程序中，确保你实际理解了AngularJS的职责分离。
+
 2.  识别代码中的模型部分。具体来说，尝试将增强模型中模型数据的代码分离为控制器函数，将访问后端模型数据的代码分离为服务。
-3.  识别在视图中操作DOM元素的代码。尝试将DOM操作代码分离到定义良好的自定义指令组件中，并为其提供HTML指令。同时，识别出任何AngularJS已经提供内置支持的指令。
+
+3.  识别在视图中操作DOM元素的代码。尝试将DOM操作代码分离到定义良好的自定�指令组件中，并为其提供HTML指令。同时，识别出任何AngularJS已经提供内置支持的指令。
+
 4.  识别其他基于任务的函数，并将它们分离到服务中。
+
 5.  将指令和控制器隔离到模块中，以组织你的代码。
+
 6.  使用依赖注入将你的服务和模块适当地链接起来。
+
 7.  更新HTML模板以使用新的指令。
 
 显然，在某些情况下，大量甚至完全使用现有代码是没有意义的。然而，通过执行上述步骤，你将深入到使用AngularJS实施项目的设计阶段，然后可以做出明智的决定。
@@ -1318,8 +1351,6 @@ AngularJS的表现与传统的数据绑定方法不同。传统方法将模板�
 AngularJS是一个客户端JavaScript库，这意味着要在你的环境中实现AngularJS，你唯一需要做的就是提供一种方法，让客户端通过在HTML模板中使用`<script>`标签来获取`angular.js`库文件。
 
 提供`angular.js`库的最简单方法是使用内容分发网络（CDN），它提供了一个从第三方下载库的URL。这种方法的缺点是你必须依赖第三方来提供库，如果客户端无法连接到该第三方URL，你的应用程序将无法工作。例如，以下`<script>`标签从Google APIs CDN加载`angular.js`库：
-
-
 
 提供`angular.js`库的另一种方法是从AngularJS网站（http://angularjs.org）下载，然后使用你自己的Web服务器将文件提供给客户端。这种方法需要更多努力，并且会在你的Web服务器上占用额外带宽；不过，如果你想更精确地控制客户端获取库的方式，这可能是个更好的选择。
 
@@ -1367,24 +1398,43 @@ angular.forEach(objArr, function(value, key){
 **表2.1 AngularJS提供的实用全局API工具函数**
 
 | 工具函数 | 描述 |
+
 | --- | --- |
+
 | copy(src, [dst]) | 创建src对象或数组的深拷贝。如果提供了dst参数，它将被源对象的深拷贝完全覆盖。 |
+
 | element(element) | 将指定的DOM元素作为jQuery元素返回。如果你在加载AngularJS之前加载了jQuery，则该对象是完整的jQuery对象；否则，它只是jQuery对象的子集，使用AngularJS内置的jQuery精简版。表2.2列出了AngularJS中可用的jQuery精简版方法。 |
+
 | equals(o1, o2) | 比较o1和o2，如果它们通过===比较，则返回true。 |
+
 | extend(dst, src) | 将src对象的所有属性复制到dst对象。 |
-| forEach(obj, iterator, [context]) | 遍历obj集合（可以是对象或数组）中的每个对象。iterator指定要调用的函数，语法如下：function(value, key)。context参数指定一个JavaScript对象作为上下文，在forEach循环内通过this关键字访问。 |
+
+| forEach(obj, iterator, [context]) | 遍历obj集合（可以是对象或数组）中的每个对象。iterator指定要调用的函数，语法如下：function(value, key)。context参数指定一个JavaScript对象作为上下点，在forEach循环内通过this关键字访问。 |
+
 | fromJson(json) | 从JSON字符串返回一个JavaScript对象。 |
+
 | toJson(obj) | 将JavaScript对象obj转换为JSON字符串形式。 |
+
 | isArray(value) | 如果传入的value参数是Array对象，则返回true。 |
+
 | isDate(value) | 如果传入的value参数是Date对象，则返回true。 |
+
 | isDefined(value) | 如果传入的value参数是一个已定义的对象，则返回true。 |
+
 | isElement(value) | 如果传入的value参数是DOM元素对象或jQuery元素对象，则返回true。 |
+
 | isFunction(value) | 如果传入的`value`参数是JavaScript函数，则返回`true`。 |
+
 | isNumber(value) | 如果传入的`value`参数是数字，则返回`true`。 |
+
 | isObject(value) | 如果传入的`value`参数是JavaScript对象，则返回`true`。 |
+
 | isString(value) | 如果传入的`value`参数是`String`对象，则返回`true`。 |
+
 | isUndefined(value) | 如果传入的`value`参数未定义，则返回`true`。 |
+
 | lowercase(string) | 返回`string`参数的小写版本。 |
+
 | uppercase(string) | 返回`string`参数的大写版本。 |
 
 ## 创建一个基础的AngularJS应用
@@ -1394,9 +1444,13 @@ angular.forEach(objArr, function(value, key){
 在此示例中，假设你已按照第1章“迈入JavaScript世界”中的描述创建了一个基础的Node.js Web服务器。本例的文件夹结构如下。后续章节的示例将有类似的代码结构，只是章节文件夹会更改：
 
 - `./server.js`：提供静态内容的Node.js服务器。
+
 - `./images`：包含所有章节示例中使用的图片。
+
 - `./ch01`：包含本章示例所用的HTML文件。
+
 - `./ch01/js`：包含本章示例所需的JavaScript。
+
 - `./ch01/css`：包含本章示例所需的CSS。
 
 在server.js Web服务器运行后，下一步是实现一个AngularJS HTML模板，例如清单2.1中的`first.html`，以及一个AngularJS JavaScript模块，例如清单2.2中的`first.js`。
@@ -1539,51 +1593,93 @@ jQuery lite 本质上是 jQuery 的精简版，它直接内置于 AngularJS 中�
 #### 表 2.2 jQuery Lite 支持的 jQuery 方法
 
 | jQuery 方法 | 在 jQuery Lite 中的限制（如有） |
+
 | :--- | :--- |
+
 | addClass() | |
+
 | after() | |
+
 | append() | |
+
 | attr() | |
+
 | bind() | 不支持命名空间、选择器或 eventData。 |
+
 | children() | 不支持选择器。 |
+
 | clone() | |
+
 | contents() | |
+
 | css() | |
+
 | data() | |
+
 | detach() | |
+
 | empty() | |
+
 | eq() | |
+
 | find() | 仅限于按标签名查找。 |
+
 | hasClass() | |
+
 | html() | |
+
 | text() | 不支持选择器。 |
+
 | on() | 不支持命名空间、选择器或 eventData。 |
+
 | off() | 不支持命名空间或选择器。 |
+
 | one() | 不支持命名空间或选择器。 |
+
 | parent() | 不支持选择器。 |
+
 | prepend() | |
+
 | prop() | |
+
 | ready() | |
+
 | remove() | |
+
 | removeAttr() | |
+
 | removeClass() | |
+
 | removeData() | |
+
 | replaceWith() | |
+
 | toggleClass() | |
+
 | triggerHandler() | 向处理程序传递一个虚拟事件对象。 |
+
 | unbind() | 不支持命名空间。 |
+
 | val() | |
+
 | wrap() | |
 
 #### 表 2.3 添加到 jQuery Lite 对象的方法和事件
 
 | 方法/事件 | 描述 |
+
 | :--- | :--- |
+
 | `$destroy` | AngularJS 拦截所有 jQuery 或 jQuery lite 的 DOM 销毁调用，并在所有被移除的 DOM 节点上触发此事件。可用于在 DOM 元素被移除前清理任何第三方绑定。 |
+
 | `controller(name)` | 返回当前元素或其父元素的 `controller` 对象。如果未指定名称，则返回与 `ngController` 指令关联的控制器。如果提供 `name` 作为指令名称，则返回此指令的控制器。 |
+
 | `injector()` | 返回当前元素或其父元素的 `injector` 对象。 |
+
 | `scope()` | 返回当前元素或其父元素的 `scope` 对象。 |
+
 | `isolateScope()` | 如果直接附加了作用域，则返回一个 `isolate scope` 对象。仅对包含启动新隔离作用域的指令的元素有效。 |
+
 | `inheritedData()` | 功能与 jQuery 的 `data()` 方法相同，但会向上遍历 DOM 直到找到值或到达顶级父元素。 |
 
 ### 直接访问 jQuery 或 jQuery Lite
@@ -1634,8 +1730,6 @@ $scope.clicked = function(event){
 
 请注意，需要使用 `angular.element()` 方法将 `target` DOM 对象转换为 jQuery 对象。
 
-
-
 ## 总结
 
 AngularJS 是一个 JavaScript 库框架，它为创建网站和 Web 应用程序提供了一种非常结构化的方法。AngularJS 将 Web 应用程序组织成一种非常清晰的、类似 MVC 的架构。AngularJS 的作用域为应用程序的数据模型提供了上下文绑定，并由基本的 JavaScript 对象构成。AngularJS 利用带有指令的模板来扩展 HTML 的功能，使你能够实现完全自定义的 HTML 组件。
@@ -1652,17 +1746,17 @@ AngularJS 是一个 JavaScript 库框架，它为创建网站和 Web 应用程�
 
 ### 查看模块和依赖注入
 
-当你开始编写 AngularJS 应用程序时，理解 AngularJS 世界中模块和依赖注入的基础知识至关重要。对某些人来说，这似乎是一个难以掌握和正确实施的概念，尤其是那些来自更开放、随心所欲的 JavaScript 背景的人。
+当你开始编写 AngularJS 应用程时，理解 AngularJS 世界中模块和依赖注入的基础知识至关重要。对某些人来说，这似乎是一个难以掌握和正确实施的概念，尤其是那些来自更开放、随心所欲的 JavaScript 背景的人。
 
 本节向你介绍 AngularJS 模块和依赖注入背后的概念。了解模块如何利用依赖注入来访问其他模块中的功能，将使你在 AngularJS 框架内实现代码变得更加容易。
 
-#### 理解模块
+#### 理解模坖
 
 AngularJS 模块是容器，使你能够将代码划分为简洁、清晰、可重用的块。模块本身不提供直接功能，但它们包含其他对象的实例，这些对象提供功能，例如控制器、过滤器、服务和动画。
 
-你通过定义模块提供的对象来构建一个模块。然后，通过依赖注入将模块链接在一起，你构建了一个完整的应用程序。
+你通过定义模坖提供的对象来构建一个模坖。然后，通过依赖注入将模坖链接在一起，你构建了一个完整的应用程序。
 
-AngularJS 建立在模块原则之上。AngularJS 提供的大部分功能都内置在一个名为 `ng` 的模块中，该模块包含了本书中使用的大部分指令和服务。
+AngularJS 建立在模坖原则之上。AngularJS 提供的大部分功能都内置在一个名为 `ng` 的模坖中，该模坖包含了本书中使用的大部分指令和服务。
 
 ### 依赖注入
 
@@ -1672,23 +1766,23 @@ AngularJS 依赖注入的思想是定义一个依赖对象并将其动态注入�
 
 ## 提供者
 
-提供者本质上是如何创建具有所有必要功能的对象实例的定义。提供者应作为 AngularJS 模块的一部分来定义。模块向注入器服务注册提供者。在 AngularJS 应用程序中，只会创建一个提供者对象的实例。
+提供者本质上是如何创建具有所有必要功能的对象实例的定义。提供者应作为 AngularJS 模坖的一部分来定义。模坖向注入器服务注册提供者。在 AngularJS 应用程序中，只会创建一个提供者对象的实例。
 
 #### 注入器
 
 注入器服务负责跟踪提供者对象的实例。为每个注册了提供者的服务创建一个注入器服务实例。当对提供者对象发出依赖请求时，注入器服务首先检查该实例是否已存在于注入器缓存中。如果是，则使用该实例。如果在缓存中未找到实例，则使用提供者定义创建一个新实例，将其存储在缓存中，然后返回。
 
-### 定义 AngularJS 模块对象
+### 定义 AngularJS 模坖对象
 
-创建 AngularJS 模块是一个简单的过程，涉及调用 `angular.module()` 方法。此方法创建一个 `Module` 对象的实例，将其注册到注入器服务，然后返回新创建的 `Module` 对象的实例，你可以使用该实例来实现提供者功能。`angular.module()` 方法使用以下语法：
+创建 AngularJS 模坖是一个简单的过程，涉及调用 `angular.module()` 方法。此方法创建一个 `Module` 对象的实例，将其注册到注入器服务，然后返回新创建的 `Module` 对象的实例，你可以使用该实例来实现提供者功能。`angular.module()` 方法使用以下语法：
 
 `angular.module(name, [requires], [configFn])`
 
-`name` 参数是模块在注入器服务中注册的名称。`requires` 参数是一个数组，包含为此模块使用而添加到注入器服务的模块名称。如果你需要另一个模块的功能，需要在 `requires` 列表中添加它。默认情况下，`ng` 模块会自动添加到每个实例化的模块中，因此你无需在列表中显式指定 `ng` 即可访问 AngularJS 提供者。
+`name` 参数是模坖在注入器服务中注册的名称。`requires` 参数是一个数组，包含为此模坖使用而添加到注入器服务的模坖名称。如果你需要另一个模坖的功能，需要在 `requires` 列表中添加它。默认情况下，`ng` 模坖会自动添加到每个实例化的模坖中，因此你无需在列表中显式指定 `ng` 即可访问 AngularJS 提供者。
 
-所有依赖项的实例都会自动注入到模块实例中。依赖项可以是模块、服务以及在注入器服务中注册的任何其他对象。`configFn` 参数是另一个在模块配置阶段调用的函数。配置函数将在下一节中描述。
+所有依赖项的实例都会自动注入到模坖实例中。依赖项可以是模坖、服务以及在注入器服务中注册的任何其他对象。`configFn` 参数是另一个在模坖配置阶段调用的函数。配置函数将在下一节中描述。
 
-以下是一个创建 AngularJS 模块并依赖于 `$window` 和 `$http` 服务的示例。该定义还包括一个配置函数，该函数添加了一个名为 `myValue` 的值提供者：
+以下是一个创建 AngularJS 模坖并依赖于 `$window` 和 `$http` 服务的示例。该定义还包括一个配置函数，该函数添加了一个名为 `myValue` 的值提供者：
 
 ```javascript
 var myModule = angular.module('myModule', ['$window', '$http'], function(){
@@ -1708,19 +1802,22 @@ var myModule2 = angular.module('myModule', []);
 var myModule3 = angular.module('myModule');
 ```
 
-### 在 AngularJS 模块中创建提供者
+### 在 AngularJS 模坖中创建提供者
 
 AngularJS 为各种对象和服务提供了一些内置提供者。例如，`$window` 服务有一个提供者，该提供者构建 AngularJS 服务对象，使你能够与 JavaScript 中底层的 `Window` 对象进行交互。除了这些提供者之外，你还可以创建自己的提供者，以便将功能注入到 AngularJS 应用程序组件中。
 
-`Module` 对象提供了几个辅助方法，用于添加提供者，作为使用 `config()` 方法的替代方案。这些方法更容易使用，在你的代码中也更清晰。你可以将两种类型的提供者对象添加到 AngularJS 模块中。这些方法中的每一个都接受两个参数：将向依赖注入器注册的名称，以及定义如何构建特定对象的提供者函数。以下各节将更详细地描述这些方法。
+`Module` 对象提供了几个辅助方法，用于添加提供者，作为使用 `config()` 方法的替代方案。这些方法更容易使用，在你的代码中也更清晰。你可以将两种类型的提供者对象添加到 AngularJS 模坖中。这些方法中的每一个都接受两个参数：将向依赖注入器注册的名称，以及定义如何构建特定对象的提供者函数。以下各节将更详细地描述这些方法。
 
 #### 专用的 AngularJS 对象提供者
 
-`Module` 对象提供特殊的构造方法，用于为你需要在模块中实现的 AngularJS 对象添加提供者。这些专用方法使你能够为以下类型的对象添加定义：
+`Module` 对象提供特殊的构造方法，用于为你需要在模坖中实现的 AngularJS 对象添加提供者。这些专用方法使你能够为以下类型的对象添加定义：
 
 - `animation(name, animationFactory)`
+
 - `controller(name, controllerFactory)`
+
 - `filter(name, filterFactory)`
+
 - `directive(name, directiveFactory)`
 
 这些方法之所以是专用的，是因为 AngularJS 为这些提供者方法定义了相应的 `animation`、`controller`、`filter` 和 `directive` 对象。
@@ -1734,18 +1831,19 @@ mod.controller('myController', function($scope) {
 });
 ```
 
-创建了一个名为 `mod` 的简单模块，然后调用 `controller()` 方法并传入 `myController` 以及一个 `controllerFactory` 函数。`controllerFactory` 函数接受 `$scope` 变量作为参数。这是因为 AngularJS 有一个内置的控制器对象，并且知道所有控制器对象必须接收一个作用域对象作为第一个参数。
+创建了一个名为 `mod` 的简单模坖，然后调用 `controller()` 方法并传入 `myController` 以及一个 `controllerFactory` 函数。`controllerFactory` 函数接受 `$scope` 变量作为参数。这是因为 AngularJS 有一个内置的控制器对象，并且知道所有控制器对象必须接收一个作用域对象作为第一个参数。
 
 #### 服务提供者
 
 服务提供者是一个独特的提供者类别，因为最终的提供者对象没有特定的格式。相反，提供者充当提供功能的服务。AngularJS 提供了一些特定的创建方法来构建服务，并通过以下方法暴露它们：
 
 - `value(name, object)`：这是所有提供者中最基本的一种。`object` 参数被简单地赋值给 `name`，因此注入器中 `name` 值和 `object` 值之间存在直接对应关系。
+
 - `constant(name, object)`：这与 `value()` 方法类似，但值不可更改。此外，`constant()` 方法在其他提供者方法之前应用。
+
 - `factory(name, factoryFunction)`：此方法使用 `factoryFunction` 参数来构建一个对象，该对象将由注入器提供。
+
 - `service(name, serviceFactory)`：此方法向提供者对象添加了实现更面向对象方法的概念。AngularJS 的许多内置功能都是通过服务提供者提供的。
-
-
 
 **提供者**（*名称*，*providerFactory*）：此方法是所有其他方法的核心。虽然它提供了最全面的功能，但由于其他方法更简单，因此并不常用。
 
@@ -1758,13 +1856,13 @@ mod.value('counter', 0);
 mod.value('image', {name:'box.jpg', height:12, width:20});
 ```
 
-首先创建了一个名为 `mod` 的简单模块，然后定义了 `constant()` 和两个 `value()` 提供者。这些方法中定义的值被注册在 `myMod` 模块的注入器服务器中，之后可以通过名称来访问它们。
+首先创建了一个名为 `mod` 的简单模坖，然后定义了 `constant()` 和两个 `value()` 提供者。这些方法中定义的值被注册在 `myMod` 模坖的注入器服务器中，之后可以通过名称来访问它们。
 
 ### 实现提供者和依赖注入
 
-在定义了模块和相应的提供者之后，你可以将该模块作为依赖项添加到其他模块、控制器以及各种其他 AngularJS 对象中。你可以设置依赖提供者的对象的 `$inject` 属性的值。`$inject` 属性包含一个应注入其中的提供者名称的数组。
+在定义了模坖和相应的提供者之后，你可以将该模坖作为依赖项添加到其他模坖、控制器以及各种其他 AngularJS 对象中。你可以设置依赖提供者的对象的 `$inject` 属性的值。`$inject` 属性包含一个应注入其中的提供者名称的数组。
 
-例如，以下代码定义了一个接受 `$scope` 和 `appMsg` 参数的基础控制器。然后，将 `$inject` 属性设置为一个包含 `$scope`（这是提供访问作用域功能的 AngularJS 作用域服务）和自定义 `appMsg` 的数组。`$scope` 和 `appMsg` 都被注入到 `myController` 函数中：
+例如，以下代码定义了一个接受 `$scope` 和 `appMsg` 参数的基础控制器。然后，将 `$inject` 属性设置为一个包含 `$scope`（这是提供访问作用域功能的 AngularJS 作用域服务）和自定� `appMsg` 的数组。`$scope` 和 `appMsg` 都被注入到 `myController` 函数中：
 
 ```
 var myController = function($scope, appMsg) {
@@ -1794,7 +1892,7 @@ myApp.controller('controllerA', ['$scope', 'appMsg', function($scope, appMsg) {
 
 清单 3.1 展示了一个非常基础的例子，它使用依赖注入将 `$scope` 和 `$window` 服务的功能注入到 AngularJS 控制器中。清单 3.1 中定义的 AngularJS 应用非常简单。第 2 行定义了一个基础控制器，并使用依赖注入注入了 `$scope` 和 `$window` 服务，然后在第 3 行和第 4 行使用 `$window` 服务来显示一个包含存储在 `$scope` 中的消息的警告弹窗。
 
-清单 3.2 展示了使用清单 3.1 中定义的 myApp 模块并实现 `controllerA` 视图的 HTML 页面。图 3.1 显示了生成的网页和警告消息。
+清单 3.2 展示了使用清单 3.1 中定义的 myApp 模块并实现 `controllerA` 视频的 HTML 页面。图 3.1 显示了生成的网页和警告消息。
 
 ```
 清单 3.1  inject_builtin.js：在控制器中实现内置服务的依赖注入
@@ -1829,15 +1927,15 @@ myApp.controller('controllerA', ['$scope', 'appMsg', function($scope, appMsg) {
 
 #### 实现自定义提供者并将其注入到控制器中
 
-清单 3.3 展示了如何通过两个模块实现依赖注入，每个模块都有一个值提供者和一个控制器。第 2 行和第 8 行添加了值提供者。第 3 行和第 9 行使用依赖注入将值提供者注入到每个模块的控制器中。
+清单 3.3 展示了如何通过两个模坖实现依赖注入，每个模坖都有一个值提供者和一个控制器。第 2 行和第 8 行添加了值提供者。第 3 行和第 9 行使用依赖注入将值提供者注入到每个模坖的控制器中。
 
-注意第 6 行中 `myApp` 模块的定义在其依赖项列表中包含了 `myMod` 模块。这会将 `myMod`（包括其内部的 `controllerB` 功能）注入进来。
+注意第 6 行中 `myApp` 模坖的定义在其依赖项列表中包含了 `myMod` 模坖。这会将 `myMod`（包括其内部的 `controllerB` 功能）注入进来。
 
-清单 3.4 展示了将 `myApp` 模块作为 AngularJS 应用程序的 HTML 代码。注意它同时使用了 `controllerA` 和 `controllerB` 控制器。它们之所以可以使用，是因为 `myMod` 模块已被注入到 `myApp` 模块中。图 3.2 显示了生成的网页，其中每个模块的控制器显示了不同的消息。
+清单 3.4 展示了将 `myApp` 模坖作为 AngularJS 应用程序的 HTML 代码。注意它同时使用了 `controllerA` 和 `controllerB` 控制器。它们之所以可以使用，是因为 `myMod` 模坖已被注入到 `myApp` 模块中。图 3.2 显示了生成的网页，其中每个模块的控制器显示了不同的消息。
 
 60 第3章 理解AngularJS应用动态
 
-#### 清单 3.3 inject_custom.js：在控制器和模块定义中实现依赖注入
+#### 清单 3.3 inject_custom.js：在控制器和模坖定义中实现依赖注入
 
 ```
 01 var myMod = angular.module('myMod', []);
@@ -1854,7 +1952,7 @@ myApp.controller('controllerA', ['$scope', 'appMsg', function($scope, appMsg) {
 12 }]);
 ```
 
-#### 清单 3.4 inject_custom.html：使用HTML代码实现一个依赖于另一个模块的AngularJS模块
+#### 清单 3.4 inject_custom.html：使用HTML代码实现一个依赖于另一个模坖的AngularJS模坖
 
 ```
 01 <!doctype html>
@@ -1879,15 +1977,15 @@ myApp.controller('controllerA', ['$scope', 'appMsg', function($scope, appMsg) {
 
 ![](img/ddb4ab3804c2b28b9554bf0661b46fe1_76_0.png)
 
-图 3.2  实现依赖注入，为模块和控制器提供额外功能。
+图 3.2  实现依赖注入，为模坖和控制器提供额外功能。
 
-### 将配置块和运行块应用于模块
+### 将配置块和运行块应用于模坖
 
-既然你已经理解了模块和依赖注入之间的关系，你需要了解实现 AngularJS 模块的过程。AngularJS 模块的实现分为两个阶段：配置阶段和运行阶段。以下部分将讨论这些阶段以及向 AngularJS 模块添加提供者的基本过程。
+既然你已经理解了模坖和依赖注入之间的关系，你需要了解实现 AngularJS 模坖的过程。AngularJS 模坖的实现分为两个阶段：配置阶段和运行阶段。以下部分将讨论这些阶段以及向 AngularJS 模坖添加提供者的基本过程。
 
 #### 添加配置块
 
-AngularJS 模块配置阶段在模块定义时执行。在此阶段，所有提供者都会在依赖注入器中注册。你应该只在配置块内放置配置和提供者代码。
+AngularJS 模坖配置阶段在模坖定义时执行。在此阶段，所有提供者都会在依赖注入器中注册。你应该只在配置块内放置配置和提供者代码。
 
 你通过调用 `Module` 对象实例上的 `config()` 方法来实现配置块，使用以下语法：
 
@@ -1911,7 +2009,7 @@ var myModule = angular.module('myModule', []).
 
 #### 添加运行块
 
-在配置块全部执行完毕后，AngularJS 模块的运行阶段就可以执行了。在此阶段，你可以实现任何必要的代码来实例化模块。你不能在运行块中实现任何提供者代码，因为此时整个模块应该已经配置完毕并注册到了依赖注入器中。
+在配置块全部执行完毕后，AngularJS 模坖的运行阶段就可以执行了。在此阶段，你可以实现任何必要的代码来实例化模坖。你不能在运行块中实现任何提供者代码，因为此时整个模坖应该已经配置完毕并注册到了依赖注入器中。
 
 运行块是放置需要在应用程序根级别执行的事件处理程序（例如，身份验证处理程序）的绝佳位置。
 
@@ -1939,9 +2037,10 @@ myModule.run(function(startTime) {
 
 在第9-11行实现了 `run()` 方法。请注意，它接受在配置阶段创建的 `configTime` 和 `runTime` 实例，并将 `runTime` 的值更新为当前时间。然后在第12-16行实现了一个控制器，在作用域中设置了 `configTime` 和 `runTime` 的值。
 
-清单 3.6 展示了实现 `myApp` 模块并显示 `configTime` 和 `runTime` 值的 HTML。你可以看到注入的延迟导致这两个值的时间不同。图 3.3 展示了生成的网页。
+清单 3.6 展示了实现 `myApp` 模坖并显示 `configTime` 和 `runTime` 值的 HTML。你可以看到注入的延迟导致这两个值的时间不同。图 3.3 展示了生成的网页。
 
-**清单 3.5 config_run_blocks.js：在 AngularJS 模块中实现配置块和运行块**
+**清单 3.5 config_run_blocks.js：在 AngularJS 模坖中实现配置块和运行块**
+
 ```javascript
 var myModule = angular.module('myApp', []);
 myModule.config(function($provide) {
@@ -1961,7 +2060,8 @@ myModule.controller('controllerA', ['$scope', 'configTime', 'runTime',
 }]);
 ```
 
-**清单 3.6 config_run_blocks.html：使用 HTML 代码显示在 AngularJS 模块的配置块和运行块中生成的 configTime 和 runTime 值**
+**清单 3.6 config_run_blocks.html：使用 HTML 代码显示在 AngularJS 模坖的配置块和运行块中生成的 configTime 和 runTime 值**
+
 ```html
 <!doctype html>
 <html ng-app="myApp">
@@ -1984,17 +2084,18 @@ myModule.controller('controllerA', ['$scope', 'configTime', 'runTime',
 ```
 
 ![图 3.3](img/ddb4ab3804c2b28b9554bf0661b46fe1_79_0.png)
+
 图 3.3 实现了配置块和运行块，设置并利用 JavaScript 的 Date 对象来显示各自的执行时间。
 
 ## 总结
 
-依赖注入使你能够定义可以注入到其他 AngularJS 组件中的提供者功能。提供者功能包含在模块内部，并向注入器服务注册。提供者定义了如何构建该功能，以便当另一个组件定义了对某个提供者的依赖时，可以创建并注入该提供者对象的一个实例。
+依赖注入使你能够定义可以注入到其他 AngularJS 组件中的提供者功能。提供者功能包含在模坖内部，并向注入器服务注册。提供者定义了如何构建该功能，以便当另一个组件定义了对某个提供者的依赖时，可以创建并注入该提供者对象的一个实例。
 
-AngularJS 提供了相当健壮的依赖注入模型，使你能够定义不同类型的服务提供者。使用依赖注入而非全局定义使你的代码更具模块化且更易于维护。在本章中，你了解了依赖注入模型，并看到了如何在模块和控制器组件中实现它。
+AngularJS 提供了相当健壮的依赖注入模型，使你能够定义不同类型的服务提供者。使用依赖注入而非全局定义使你的代码更具模块化且更易于维护。在本章中，你了解了依赖注入模型，并看到了如何在模坖和控制器组件中实现它。
 
 ## 将作用域作为数据模型来实现
 
-AngularJS 应用程序中最重要的方面之一是作用域。作用域不仅提供模型中表示的数据，还绑定了 AngularJS 应用程序的所有其他组件，例如模块、控制器、服务和模板。本章解释了作用域与其他 AngularJS 组件之间的关系。
+AngularJS 应用程序中最重要的方面之一是作用域。作用域不仅提供模型中表示的数据，还绑定了 AngularJS 应用程序的所有其他组件，例如模坖、控制器、服务和模板。本章解释了作用域与其他 AngularJS 组件之间的关系。
 
 作用域提供了绑定机制，使得当模型数据发生变化时，DOM 元素和其他代码能够得到更新。在本章中，你将了解根作用域和子作用域。你还将了解作用域层次结构以及如何实现它们。
 
@@ -2006,7 +2107,7 @@ AngularJS 应用程序中最重要的方面之一是作用域。作用域不仅�
 
 #### 根作用域与应用程序之间的关系
 
-当应用程序启动时，会创建一个根作用域。根作用域在应用程序级别存储数据，你可以通过使用 `$rootScope` 服务来访问它。根作用域数据应在模块的 `run()` 块中初始化，但也可以在模块的组件中访问。为了说明这一点，以下代码在根作用域级别定义了一个值，然后在控制器中访问它：
+当应用程序启动时，会创建一个根作用域。根作用域在应用程序级别存储数据，你可以通过使用 `$rootScope` 服务来访问它。根作用域数据应在模坖的 `run()` 块中初始化，但也可以在模坖的组件中访问。为了说明这一点，以下代码在根作用域级别定义了一个值，然后在控制器中访问它：
 
 ```javascript
 angular.module('myApp', [])
@@ -2023,7 +2124,7 @@ angular.module('myApp', [])
 
 #### 作用域与控制器之间的关系
 
-控制器是旨在通过扩展作用域来提供业务逻辑的代码片段。你通过使用应用程序模型对象的 `controller()` 方法来创建控制器。此函数将控制器注册为模块中的提供者，但不会创建控制器的实例。该实例的创建发生在 AngularJS 模板中链接 `ng-controller` 指令时。
+控制器是旨在通过扩展作用域来提供业务逻辑的代码片段。你通过使用应用程序模型对象的 `controller()` 方法来创建控制器。此函数将控制器注册为模坖中的提供者，但不会创建控制器的实例。该实例的创建发生在 AngularJS 模板中链接 `ng-controller` 指令时。
 
 `controller()` 方法接受控制器名称作为第一个参数，依赖数组作为第二个参数。例如，以下代码定义了一个控制器，该控制器使用依赖注入来访问名为 `start` 的值提供者：
 
@@ -2042,6 +2143,7 @@ angular.module('myApp', []).
 清单 4.1 展示了如何实现一个控制器，该控制器利用依赖注入、初始化一些值，并使用 `inc()`、`dec()` 和 `calcDiff()` 函数实现基本的业务逻辑。请注意第5-8行，几个值被存储在作用域变量 `start`、`current`、`difference` 和 `change` 中。这些值随后在 `inc()`、`dec()` 和 `calcDiff()` 函数中被操作。
 
 **清单 4.1 scope_controller.js：实现一个使用依赖注入、初始化作用域值并实现业务逻辑的基本控制器**
+
 ```javascript
 angular.module('myApp', []).
   value('start', 200).
@@ -2068,6 +2170,7 @@ angular.module('myApp', []).
 清单 4.2 展示了一个基本的 AngularJS HTML 模板，它提供了视图以查看和操作存储在作用域中的值。图 4.1 展示了正在运行的网页。你可以设置增减值，然后点击 +/- 按钮来递减当前值，并看到作用域中的差值变化。
 
 **清单 4.2 scope_controller.html：允许你动态查看基于增量和减量值变化的视图中数据的 HTML 模板**
+
 ```html
 <!doctype html>
 <html ng-app="myApp">
@@ -2087,8 +2190,6 @@ angular.module('myApp', []).
   </body>
 </html>
 ```
-
-
 
 ## 第4章 将作用域实现为数据模型
 
@@ -2116,10 +2217,12 @@ angular.module('myApp', []).
 <input type="number" ng-model="valueA" />
 ```
 
-你可以使用`{{expression}}`语法将作用域属性甚至函数添加到模板中的表达式中。括号内的代码会被求值，结果显示在渲染后的视图中。例如，如果一个作用域包含名为`valueA`和`valueB`的属性，你可以在模板的表达式中像这样引用这些属性：
+你可以使用`{{expression}}`语法将作用域属性甚至函数添到模板中的表达式中。括号内的代码会被求值，结果显示在渲染后的视图中。例如，如果一个作用域包含名为`valueA`和`valueB`的属性，你可以在模板的表达式中像这样引用这些属性：
+
 `{{valueA + valueB}}`
 
 你也可以在模板中定义AngularJS指令时使用作用域属性和函数。例如，`ng-click`指令将浏览器点击事件绑定到名为`addValues()`的作用域函数，并传递作用域中`valueA`和`valueB`属性的值：
+
 `<span ng-click="addValues(valueA, valueB)">Add Values{{valueA}} & {{valueB}}</span>`
 
 请注意，在这段代码中，`{{}}`括号是必需的。然而，在`addValues()`函数调用中它们不是必需的。这是因为`ng-click`和其他AngularJS指令会自动作为表达式进行求值。
@@ -2180,7 +2283,9 @@ angular.module('myApp', []).
 通常，用于AngularJS应用的数据来自后端数据源，例如数据库。在这种情况下，作用域仍然是AngularJS应用数据的权威来源。在与来自服务器端的数据交互时，你应该遵循以下规则：
 
 - 通过第9章“在Web应用中实现AngularJS服务”中讨论的AngularJS服务访问来自数据库或其他后端源的数据。这包括读取和更新数据。
+
 - 确保从服务器读取的数据更新作用域，从而更新视图。避免直接从数据库操作HTML值的诱惑，这可能导致作用域与视图不同步。
+
 - 同样地，将对数据库或其他后端源所做的更改反映在作用域中。你可以通过先更新作用域，然后使用服务更新数据库来实现这一点，或者你可以先更新数据库，然后使用数据库的结果在作用域中重新填充相应的值。
 
 ### 作用域的生命周期
@@ -2190,9 +2295,13 @@ angular.module('myApp', []).
 作用域数据经历以下生命周期阶段：
 
 1.  创建
+
 2.  监视器注册
+
 3.  模型变更
+
 4.  变更观察
+
 5.  作用域销毁
 
 这些生命周期阶段将在接下来的部分中描述。
@@ -2202,6 +2311,7 @@ angular.module('myApp', []).
 创建阶段发生在作用域初始化时。引导应用会创建根作用域。当遇到`ng-controller`或`ng-repeat`指令时，链接模板会创建子作用域。
 
 同样在创建阶段，会创建一个与浏览器事件循环交互的摘要循环。摘要循环负责将模型的更改更新到DOM元素，以及执行所有注册的监视器函数。虽然你永远不需要手动执行摘要循环，但你可以通过对作用域执行`$digest()`方法来实现。例如，以下代码会求值所有异步更改，然后在作用域上执行监视函数：
+
 `$scope.$digest()`
 
 #### 监视器注册阶段
@@ -2222,25 +2332,24 @@ $scope.$watch('name', function(newValue, oldValue) {
 
 #### 模型变更阶段
 
-模型变更阶段发生在作用域中的数据发生更改时。当你的AngularJS代码发生更改时，一个名为`$apply()`的作用域函数会更新模型，并调用`$digest()`函数来更新DOM和监视器。这就是在你的AngularJS控制器中或由`$http`、`$timeout`和`$interval`服务所做的更改会自动更新到DOM中的方式。
+模型变更阶段发生在作用域中的数据发生更改时。当你的AngularJS代码发生更改时，一个名为`$apply()`的作用域函数会更新模型，并调用`$digest()`函数来更新DOM和监视器。这就是在你的AngularJS控制器中或由`$http`、`$timeout`和$interval`服务所做的更改会自动更新到DOM中的方式。
 
 你应该始终尝试在AngularJS控制器或这些服务内部对作用域进行更改。然而，如果你必须在AngularJS领域之外对作用域进行更改，你需要对作用域调用`scope.$apply()`以强制模型和DOM正确更新。`$apply()`方法接受一个表达式作为唯一参数。该表达式被求值并返回，然后调用`$digest()`方法来更新DOM和监视器。
 
 #### 变更观察阶段
 
-变更观察阶段发生在摘要循环、`$apply()`调用或手动执行`$digest()`方法时。当`$digest()`执行时，它会求值所有监视器以查找更改。如果某个值已更改，`$digest()`会调用`$watch`监听器并更新DOM。
+变更观察阶段发生在摘要循环、`$apply()`调用或手动执行`$digest()`方法时。当`$digest()`执行时，它会求值所有监视器以查找更改。如果某个值已更改，`$digest()`会调用$watch监听器并更新DOM。
 
 #### 作用域销毁阶段
 
-`$destroy()`方法将作用域从浏览器内存中移除。当不再需要子作用域时，AngularJS库会自动调用此方法。`$destroy()`方法会停止`$digest()`调用并移除监视器，从而允许浏览器垃圾回收器回收内存。
-
-
+`$destroy()`方法将作用域从浏览器内存中移除。当不再需要子作用域时，AngularJS库会自动调用此方法。`$destroy()`方法会停止$digest()调用并移除监视器，从而允许浏览器垃圾回收器回收内存。
 
 ### 实现作用域层次结构
 
 作用域的一大特点是它们按层次结构组织。这种层次结构有助于你保持作用域的组织性，并与其代表的视图上下文相关。在 AngularJS 模块级别存在一个根作用域，然后子作用域可以在子组件（如控制器或指令）中实现。子作用域可以相互嵌套，形成一个层次结构。
 
 > **注意**
+
 > `$digest()` 方法使用作用域层次结构将作用域变更传播到相应的监视器和 DOM 元素。
 
 作用域层次结构根据 AngularJS 模板中 `ng-controller` 语句的位置自动创建。例如，以下模板代码定义了两个 `<div>` 元素，它们创建了作为同级的控制器实例：
@@ -2297,6 +2406,8 @@ angular.module('myApp', []).
 
 **代码清单 4.6** **scope_hierarchy.html**：实现控制器层次结构并从多个作用域级别渲染结果的 HTML 模板代码
 
+
+
 ```html
 <!doctype html>
 <html ng-app="myApp">
@@ -2329,8 +2440,6 @@ angular.module('myApp', []).
 
 图 4.3 实现了一个控制器层次结构，该结构从多个作用域级别渲染结果。
 
-76 第 4 章 将作用域实现为数据模型
-
 ## 总结
 
 作用域是 AngularJS 应用程序中数据的权威来源。作用域与模板视图、控制器、模块和服务有直接关系，并充当将应用程序绑定在一起的粘合剂。作用域还充当数据库或其他服务器端数据源的表示。
@@ -2339,25 +2448,25 @@ angular.module('myApp', []).
 
 作用域被组织成层次结构，根作用域在应用程序级别定义。每个控制器的实例也会获得一个子作用域的实例。从子作用域中，你可以访问存储在父作用域层次结构中的数据。
 
-## 使用 AngularJS 模板创建视图
+# 使用 AngularJS 模板创建视图
 
 AngularJS 模板提供了一个框架，用于向用户表示应用程序视图。AngularJS 模板包含表达式、过滤器和指令，它们为 DOM 元素定义了额外的功能和行为。这些模板建立在普通 HTML 之上，通过添加额外的元素和属性来扩展 HTML 的功能。
 
 本章重点介绍 AngularJS 模板，以及表达式和过滤器。表达式使你可以在模板中的 HTML 代码旁实现类似 JavaScript 的代码。过滤器使你可以在显示数据值之前对其进行修改——例如，格式化文本。
 
-### 理解模板
+## 理解模板
 
 AngularJS 模板非常直观，但功能强大且易于扩展。模板基于标准 HTML 文档，但通过三个额外组件扩展了 HTML 功能：
 
 - **表达式**：表达式是在作用域上下文中求值的类似 JavaScript 的代码片段。表达式用 `{{}}` 括号表示。表达式的结果被添加到编译后的 HTML 网页中。表达式可以放置在普通 HTML 文本中或属性的值中，如下所示：
+
   `<p>{{1+2}}</p>`
+
   `href="/myPage.html/{{hash}}"`
 
 - **过滤器**：过滤器转换放置在网页上的数据的外观。例如，过滤器可以将作用域中的数字转换为货币字符串或时间字符串。
 
 - **指令**：指令是 HTML 元素内的新 HTML 元素名称或属性名称。它们添加和修改 HTML 元素的行为，为 AngularJS 应用程序提供数据绑定、事件处理和其他支持。
-
-## 第 5 章 使用 AngularJS 模板创建视图
 
 以下代码片段展示了实现指令、表达式和过滤器的示例。`ng-model="msg"` 属性是一个指令，它将 `<input>` 元素的值绑定到作用域中的 `msg`。`{{}}` 括号中的代码是一个应用了大写过滤器的表达式：
 
@@ -2384,7 +2493,7 @@ x-ng:model
 ng_model
 ```
 
-### 使用表达式
+## 使用表达式
 
 使用表达式是在 AngularJS 视图中表示来自作用域的数据的最简单方式。表达式是括号内封装的代码块：`{{expression}}`。AngularJS 编译器将表达式编译成 HTML 元素，以便显示表达式的结果。例如，看以下表达式：
 
@@ -2402,9 +2511,7 @@ OneTwo
 
 表达式绑定到数据模型，这带来了两大好处。首先，你可以在表达式中使用在作用域中定义的属性名和函数。其次，因为表达式绑定到作用域，所以当作用域中的数据发生变化时，表达式也会随之变化。例如，假设作用域包含以下值：
 
-
-
-#### 使用基本表达式
+### 使用基本表达式
 
 在本次练习中，你将有机会了解 AngularJS 表达式如何处理字符串和数字的渲染。本练习的目的是说明 AngularJS 如何评估包含字符串、数字以及基本数学运算符的表达式。
 
@@ -2414,50 +2521,50 @@ OneTwo
 
 图 5.1 展示了渲染后的网页。请注意，数字和字符串是直接渲染到最终视图中的。将字符串和数字相加使你能够构建渲染到视图中的文本字符串。另外请注意，使用比较运算符会向视图渲染单词 `true` 或 `false`。
 
-```
-清单 5.1  expressions_basic.js：包含空控制器的基础 AngularJS 应用代码
+#### 清单 5.1 expressions_basic.js：包含空控制器的基础 AngularJS 应用代码
 
-01 angular.module('myApp', [])
-02   .controller('myController', function($scope) {
-03   });
+```javascript
+angular.module('myApp', [])
+  .controller('myController', function($scope) {
+  });
 ```
 
-```
-清单 5.2  expressions_basic.html：将基础字符串、数字和简单数学运算应用于 AngularJS 模板
+#### 清单 5.2 expressions_basic.html：将基础字符串、数字和简单数学运算应用于 AngularJS 模板
 
-01 <!doctype html>
-02 <html ng-app="myApp">
-03 <head>
-04   <title>AngularJS Expressions</title>
-05   <style>
-06     p{margin:0px;}
-07     p:after{color:red;}
-08   </style>
-09 </head>
-10 <body>
-11   <div ng-controller="myController">
-12     <h1>Expressions</h1>
-13     Number:<br>
-14     {{5}}<hr>
-15     String:<br>
-16     {{'My String'}}<hr>
-17     Adding two strings together:<br>
-18     {{'String1' + ' ' + 'String2'}}<hr>
-19     Adding two numbers together:<br>
-20     {{5+5}}<hr>
-21     Adding strings and numbers together:<br>
-22     {{5 + '+' + 5 + '='}}{{5+5}}<hr>
-23     Comparing two numbers with each other:<br>
-24     {{5===5}}<hr>
-25   <script src="http://code.angularjs.org/1.3.0/angular.min.js"></script>
-26   <script src="js/expressions_basic.js"></script>
-27 </body>
-28 </html>
+```html
+<!doctype html>
+<html ng-app="myApp">
+<head>
+  <title>AngularJS Expressions</title>
+  <style>
+    p{margin:0px;}
+    p:after{color:red;}
+  </style>
+</head>
+<body>
+  <div ng-controller="myController">
+    <h1>Expressions</h1>
+    Number:<br>
+    {{5}}<hr>
+    String:<br>
+    {{'My String'}}<hr>
+    Adding two strings together:<br>
+    {{'String1' + ' ' + 'String2'}}<hr>
+    Adding two numbers together:<br>
+    {{5+5}}<hr>
+    Adding strings and numbers together:<br>
+    {{5 + '+' + 5 + '='}}{{5+5}}<hr>
+    Comparing two numbers with each other:<br>
+    {{5===5}}<hr>
+  <script src="http://code.angularjs.org/1.3.0/angular.min.js"></script>
+  <script src="js/expressions_basic.js"></script>
+</body>
+</html>
 ```
 
 ![](img/ddb4ab3804c2b28b9554bf0661b46fe1_96_0.png)
 
-#### 在表达式中与作用域交互
+### 在表达式中与作用域交互
 
 在你了解了一些基础的 AngularJS 表达式之后，让我们来看看如何在 AngularJS 表达式中与作用域进行交互。在前面的示例中，所有表达式的输入都来自显式的字符串或数字。这个示例阐释了 AngularJS 表达式真正强大的地方，即来自于与模型的交互。
 
@@ -2471,68 +2578,64 @@ OneTwo
 
 `<a ng-click="setValues('Fast', newVehicle)">`
 
-最后需要注意的是，即使没有显式地用 `{}}` 括号包裹，赋给 HTML 元素的 AngularJS 属性的值也会作为 AngularJS 表达式进行求值。
+最后需要注意的是，即使没有显式地用 `{{}}` 括号包裹，赋给 HTML 元素的 AngularJS 属性的值也会作为 AngularJS 表达式进行求值。
 
 图 5.2 展示了基于这些表达式渲染出的网页。请注意，当页面上的链接被点击时，相应的函数调用会调整作用域，从而改变前面讨论的表达式的渲染方式。
 
-##### 清单 5.3 expressions_scope.js：构建 AngularJS 表达式可用的作用域
+#### 清单 5.3 expressions_scope.js：构建 AngularJS 表达式可用的作用域
 
-```
-01 angular.module('myApp', [])
-02   .controller('myController', function($scope) {
-03     $scope.speed = 'Slow';
-04     $scope.vehicle = 'Train';
-05     $scope.newSpeed = 'Hypersonic';
-06     $scope.newVehicle = 'Plane';
-07     $scope.upper = function(aString){
-08       return angular.uppercase(aString);
-09     };
-10     $scope.lower = function(aString){
-11       return angular.lowercase(aString);
-12     };
-13     $scope.setValues = function(speed, vehicle){
-14       $scope.speed = speed;
-15       $scope.vehicle = vehicle;
-16     };
-17 });
-```
-
-##### 清单 5.4 expressions_scope.html：使用多种表达式方式与作用域模型数据交互的 AngularJS 模板
-
-```
-01 <!doctype html>
-02 <html ng-app="myApp">
-03 <head>
-04     <title>AngularJS Expressions</title>
-05     <style>
-06         a{color: blue; text-decoration: underline; cursor: pointer}
-07     </style>
-08 </head>
-09 <body>
-10     <div ng-controller="myController">
-11         Directly accessing variables in the scope:<br>
-12         {{speed}} {{vehicle}}<hr>
-13         Adding variables in the scope:<br>
-14         {{speed + ' ' + vehicle}}<hr>
-15         Calling function in the scope:<br>
-16         {{lower(speed)}} {{upper('Jeep')}}<hr>
-17         <a ng-click="setValues('Fast', newVehicle)">
-18             Click to change to Fast {{newVehicle}}</a><hr>
-19         <a ng-click="setValues(newSpeed, 'Rocket')">
-20             Click to change to {{newSpeed}} Rocket</a><hr>
-21         <a ng-click="vehicle='Car'">
-22             Click to change the vehicle to a Car</a><hr>
-23         <a ng-click="vehicle='Enhanced ' + vehicle">
-24             Click to Enhance Vehicle</a><hr>
-25     <script src="http://code.angularjs.org/1.3.0/angular.min.js"></script>
-26     <script src="js/expressions_scope.js"></script>
-27 </body>
-28 </html>
+```javascript
+angular.module('myApp', [])
+  .controller('myController', function($scope) {
+    $scope.speed = 'Slow';
+    $scope.vehicle = 'Train';
+    $scope.newSpeed = 'Hypersonic';
+    $scope.newVehicle = 'Plane';
+    $scope.upper = function(aString){
+      return angular.uppercase(aString);
+    };
+    $scope.lower = function(aString){
+      return angular.lowercase(aString);
+    };
+    $scope.setValues = function(speed, vehicle){
+      $scope.speed = speed;
+      $scope.vehicle = vehicle;
+    };
+  });
 ```
 
+#### 清单 5.4 expressions_scope.html：使用多种表达式方式与作用域模型数据交互的 AngularJS 模板
 
-
-## 第五章 使用 AngularJS 模板创建视图
+```html
+<!doctype html>
+<html ng-app="myApp">
+<head>
+    <title>AngularJS Expressions</title>
+    <style>
+        a{color: blue; text-decoration: underline; cursor: pointer}
+    </style>
+</head>
+<body>
+    <div ng-controller="myController">
+        Directly accessing variables in the scope:<br>
+        {{speed}} {{vehicle}}<hr>
+        Adding variables in the scope:<br>
+        {{speed + ' ' + vehicle}}<hr>
+        Calling function in the scope:<br>
+        {{lower(speed)}} {{upper('Jeep')}}<hr>
+        <a ng-click="setValues('Fast', newVehicle)">
+            Click to change to Fast {{newVehicle}}</a><hr>
+        <a ng-click="setValues(newSpeed, 'Rocket')">
+            Click to change to {{newSpeed}} Rocket</a><hr>
+        <a ng-click="vehicle='Car'">
+            Click to change the vehicle to a Car</a><hr>
+        <a ng-click="vehicle='Enhanced ' + vehicle">
+            Click to Enhance Vehicle</a><hr>
+    <script src="http://code.angularjs.org/1.3.0/angular.min.js"></script>
+    <script src="js/expressions_scope.js"></script>
+</body>
+</html>
+```
 
 ![](img/ddb4ab3804c2b28b9554bf0661b46fe1_99_0.png)
 
@@ -2548,47 +2651,47 @@ OneTwo
 
 图 5.3 展示了渲染后的 AngularJS 网页。请注意，随着链接的被点击，数组会发生调整，并且表达式会被重新计算。
 
-**清单 5.5 expressions_javascript.js：构建一个包含数组和 Math 对象的作用域，供 AngularJS 表达式使用**
+#### 清单 5.5 expressions_javascript.js：构建一个包含数组和 Math 对象的作用域，供 AngularJS 表达式使用
 
-```
-01 angular.module('myApp', [])
-02   .controller('myController', function($scope) {
-03     $scope.Math = window.Math;
-04     $scope.myArr = [1];
-05     $scope.removedArr = [];
-06   });
+```javascript
+angular.module('myApp', [])
+  .controller('myController', function($scope) {
+    $scope.Math = window.Math;
+    $scope.myArr = [1];
+    $scope.removedArr = [];
+  });
 ```
 
-**清单 5.6 expressions_javascript.html：一个 AngularJS 模板，它使用以各种方式包含数组和 Math 逻辑的表达式来与作用域模型中的数据交互**
+#### 清单 5.6 expressions_javascript.html：一个 AngularJS 模板，它使用以各种方式包含数组和 Math 逻辑的表达式来与作用域模型中的数据交互
 
-```
-01 <!doctype html>
-02 <html ng-app="myApp">
-03   <head>
-04     <title>AngularJS Expressions</title>
-05     <style>
-06       a{color: blue; text-decoration: underline; cursor: pointer}
-07     </style>
-08   </head>
-09   <body>
-10     <div ng-controller="myController">
-11       <h1>Expressions</h1>
-12       Array:<br>
-13       {{myArr}}<hr>
-14       Elements removed from array:<br>
-15 {{removedArr}}<hr>
-16 <a ng-click="myArr.push(Math.floor(Math.random()*100 + 1))">
-17 Click to append a value to the array</a><hr>
-18 <a ng-click="removedArr.push(myArr.shift())">
-19 Click to remove the first value from the array</a><hr>
-20 Size of Array:<br>
-21 {{myArr.length}}<hr>
-22 Max number removed from the array:<br>
-23 {{Math.max.apply(Math, removedArr)}}<hr>
-24 <script src="http://code.angularjs.org/1.3.0/angular.min.js"></script>
-25 <script src="js/expressions_javascript.js"></script>
-26 </body>
-27 </html>
+```html
+<!doctype html>
+<html ng-app="myApp">
+  <head>
+    <title>AngularJS Expressions</title>
+    <style>
+      a{color: blue; text-decoration: underline; cursor: pointer}
+    </style>
+  </head>
+  <body>
+    <div ng-controller="myController">
+      <h1>Expressions</h1>
+      Array:<br>
+      {{myArr}}<hr>
+      Elements removed from array:<br>
+      {{removedArr}}<hr>
+      <a ng-click="myArr.push(Math.floor(Math.random()*100 + 1))">
+      Click to append a value to the array</a><hr>
+      <a ng-click="removedArr.push(myArr.shift())">
+      Click to remove the first value from the array</a><hr>
+      Size of Array:<br>
+      {{myArr.length}}<hr>
+      Max number removed from the array:<br>
+      {{Math.max.apply(Math, removedArr)}}<hr>
+    <script src="http://code.angularjs.org/1.3.0/angular.min.js"></script>
+    <script src="js/expressions_javascript.js"></script>
+  </body>
+</html>
 ```
 
 多次点击追加按钮
@@ -2603,7 +2706,7 @@ OneTwo
 
 图 5.3 使用应用了 JavaScript 数组和 Math 运算的 AngularJS 表达式来与作用域数据交互。
 
-### 使用过滤器
+## 使用过滤器
 
 AngularJS 的一个强大功能是能够实现过滤器。过滤器是一种提供程序，它介入表达式解析器并修改表达式的结果以用于视图中的显示——例如，用于格式化时间或货币值。
 
@@ -2625,9 +2728,9 @@ AngularJS 的一个强大功能是能够实现过滤器。过滤器是一种提�
 {{ expression | filter:parameter1:parameter2 }}
 ```
 
-此外，你可以通过依赖注入将过滤器（提供程序）添加到控制器和服务中。过滤器提供程序的名称是过滤器名称加上 Filter。例如，货币过滤器提供程序名为 currencyFilter。过滤器提供程序充当一个函数，表达式作为第一个参数，其后是任何额外的参数。以下代码定义了一个注入 currencyFilter 并使用它来格式化结果的控制器。请注意，currencyFilter 被添加到控制器的依赖注入中，并作为一个函数被调用：
+此外，你可以通过依赖注入将过滤器（提供程序）添加到控制器和服务中。过滤器提供程序的名称是过滤器名称加上 Filter。例如，货币过滤器提供程序名为 `currencyFilter`。过滤器提供程序充当一个函数，表达式作为第一个参数，其后是任何额外的参数。以下代码定义了一个注入 `currencyFilter` 并使用它来格式化结果的控制器。请注意，`currencyFilter` 被添加到控制器的依赖注入中，并作为一个函数被调用：
 
-```
+```javascript
 controller('myController', ['$scope', 'currencyFilter',
     function($scope, myCurrencyFilter){
         $scope.getCurrencyValue = function(value){
@@ -2636,11 +2739,11 @@ controller('myController', ['$scope', 'currencyFilter',
 }]);
 ```
 
-#### 使用内置过滤器
+### 使用内置过滤器
 
 AngularJS 提供了几种类型的过滤器，使你能够轻松格式化 AngularJS 模板中的字符串、对象和数组。表 5.1 列出了 AngularJS 提供的内置过滤器。
 
-**表 5.1 修改 AngularJS 模板中表达式的过滤器**
+#### 表 5.1 修改 AngularJS 模板中表达式的过滤器
 
 | 过滤器 | 描述 |
 | :--- | :--- |
@@ -2689,137 +2792,141 @@ AngularJS 提供了几种类型的过滤器，使你能够轻松格式化 Angula
 - `mediumTime`：'h:mm:ss a'
 - `shortTime`：'h:mm a'
 
-清单5.7和5.8展示了如何在AngularJS中实现一些基本过滤器。清单5.7实现了一个包含JSONObj、word和days属性的控制器。清单5.8在模板表达式中直接实现了number、currency、date、json、limitTo、uppercase和lowercase过滤器。图5.4展示了这些清单的输出结果。
+清单 5.7 和 5.8 展示了如何在 AngularJS 中实现一些基本过滤器。清单 5.7 实现了一个包含 `JSONObj`、`word` 和 `days` 属性的控制器。清单 5.8 在模板表达式中直接实现了 `number`、`currency`、`date`、`json`、`limitTo`、`uppercase` 和 `lowercase` 过滤器。图 5.4 展示了这些清单的输出结果。
 
-```
-清单5.7  filters.js：构建AngularJS过滤器可用的作用域
-01 angular.module('myApp', [])
-02   .controller('myController', function($scope) {
-03     $scope.currentDate = new Date();
-04     $scope.JSONObj = { title: "myTitle" };
-05     $scope.word="Supercalifragilisticexpialidocious";
-06     $scope.days=['Monday', 'Tuesday', 'Wednesday',
-07                  'Thursday', 'Friday'];
-08   });
-```
+#### 清单 5.7 filters.js：构建 AngularJS 过滤器可用的作用域
 
-```
-清单5.8  filters.html：实现各种过滤器以修改渲染视图中显示数据的AngularJS模板
-01 <!doctype html>
-02 <html ng-app="myApp">
-03   <head>
-04     <title>AngularJS Filters</title>
-05   </head>
-06   <body>
-07     <div ng-controller="myController">
-08       <h2>Basic Filters</h2>
-09       Number: {{123.45678|number:3}}<br>
-10       Currency: {{123.45678|currency:"$"}}<br>
-11       Date: {{ currentDate | date:'yyyy-MM-dd HH:mm:ss Z'}}<br>
-12       JSON: {{ JSONObj | json }}<br>
-13       Limit Array: {{ days | limitTo:3 }}<br>
-14       Limit String: {{ word | limitTo:9 }}<br>
-15       Uppercase: {{ word | uppercase | limitTo:9 }}<br>
-16       Lowercase: {{ word | lowercase | limitTo:9 }}
-17       <script src="http://code.angularjs.org/1.3.0/angular.min.js"></script>
-18       <script src="js/filters.js"></script>
-19     </body>
-20   </html>
+```javascript
+angular.module('myApp', [])
+  .controller('myController', function($scope) {
+    $scope.currentDate = new Date();
+    $scope.JSONObj = { title: "myTitle" };
+    $scope.word="Supercalifragilisticexpialidocious";
+    $scope.days=['Monday', 'Tuesday', 'Wednesday',
+                 'Thursday', 'Friday'];
+  });
 ```
 
-图5.4 使用AngularJS过滤器在显示数据之前对其进行修改。
+#### 清单 5.8 filters.html：实现各种过滤器以修改渲染视图中显示数据的 AngularJS 模板
 
-#### 使用过滤器实现排序和过滤
-
-过滤器非常常见的一个用途是对使用JavaScript数组通过`ng-repeat`指令构建的动态元素进行排序或过滤。本节提供了一个实现`orderBy`过滤器的示例，该过滤器生成一个表格，该表格可以按列排序，并通过`<input>`元素的字符串进行过滤。
-
-清单5.9实现了一个控制器，该控制器定义了`$scope.planes`数组作为作用域中的输入数据。由于您不想在排序和过滤时修改实际的模型数据，因此第12行添加了`$scope.filteredPlanes`属性来存储过滤后的数组。
-
-注意，第13行设置了`$scope.reverse`值以跟踪排序方向。然后第14行设置了`$scope.column`值以跟踪`planes`数组中对象的哪个属性名称用于排序。第15-16行定义了`setSort()`函数，用于更新`column`和`reverse`的值。
-
-第19行定义了`$scope.filterString`属性，用于过滤要包含在`filteredPlanes`中的对象。第20-23行定义了`setFilter()`函数，该函数调用`filterFilter()`提供程序将`filteredPlanes`中的项目限制为与`filterString`模糊匹配的项目。第2和3行将`filterFilter`提供程序注入到控制器中。
-
-清单5.10实现了一个模板，其中包含一个绑定到filterString值的文本`<input>`和一个在点击时调用setFilter()的按钮`<input>`。
-
-注意，在第14-16行中，表头应用ng-click指令来调用setSort()以设置排序列。第18-23行使用ng-repeat指令实现了表格的行。注意，ng-repeat指令使用orderBy过滤器来指定由setSort()函数设置的列名和reverse值。图5.5展示了生成的网页。
-
-##### 清单5.9 filter_sort.js：构建AngularJS可用的作用域，然后进行排序和过滤
-
-```
-01 angular.module('myApp', [])
-02   .controller('myController', ['$scope', 'filterFilter',
-03                          function($scope, filterFilter) {
-04      $scope.planes = [
-05        {make: 'Boeing', model: '777', capacity: 440},
-06        {make: 'Boeing', model: '747', capacity: 700},
-07        {make: 'Airbus', model: 'A380', capacity: 850},
-08        {make: 'Airbus', model: 'A340', capacity: 420},
-09        {make: 'McDonnell Douglas', model: 'DC10', capacity: 380},
-10        {make: 'McDonnell Douglas', model: 'MD11', capacity: 410},
-11        {make: 'Lockheed', model: 'L1011', capacity: 380}];
-12      $scope.filteredPlanes = $scope.planes;
-13      $scope.reverse = true;
-14      $scope.column = 'make';
-15      $scope.setSort = function(column){
-16        $scope.column = column;
-17        $scope.reverse = !$scope.reverse;
-18      };
-19      $scope.filterString = '';
-20      $scope.setFilter = function(value){
-21        $scope.filteredPlanes =
-22          filterFilter($scope.planes, $scope.filterString);
-23      };
-24 }]);
+```html
+<!doctype html>
+<html ng-app="myApp">
+  <head>
+    <title>AngularJS Filters</title>
+  </head>
+  <body>
+    <div ng-controller="myController">
+      <h2>Basic Filters</h2>
+      Number: {{123.45678|number:3}}<br>
+      Currency: {{123.45678|currency:"$"}}<br>
+      Date: {{ currentDate | date:'yyyy-MM-dd HH:mm:ss Z'}}<br>
+      JSON: {{ JSONObj | json }}<br>
+      Limit Array: {{ days | limitTo:3 }}<br>
+      Limit String: {{ word | limitTo:9 }}<br>
+      Uppercase: {{ word | uppercase | limitTo:9 }}<br>
+      Lowercase: {{ word | lowercase | limitTo:9 }}
+      <script src="http://code.angularjs.org/1.3.0/angular.min.js"></script>
+      <script src="js/filters.js"></script>
+    </body>
+  </html>
 ```
 
-##### 清单5.10 filter_sort.html：实现filter和orderBy过滤器以对表格视图中的项目进行排序和过滤的AngularJS模板
+![](img/ddb4ab3804c2b28b9554bf0661b46fe1_101_0.png)
 
+图 5.4 使用 AngularJS 过滤器在显示数据之前对其进行修改。
+
+### 使用过滤器实现排序和过滤
+
+过滤器非常常见的一个用途是对使用 JavaScript 数组通过 `ng-repeat` 指令构建的动态元素进行排序或过滤。本节提供了一个实现 `orderBy` 过滤器的示例，该过滤器生成一个表格，该表格可以按列排序，并通过 `<input>` 元素的字符串进行过滤。
+
+清单 5.9 实现了一个控制器，该控制器定义了 `$scope.planes` 数组作为作用域中的输入数据。由于您不想在排序和过滤时修改实际的模型数据，因此第 12 行添加了 `$scope.filteredPlanes` 属性来存储过滤后的数组。
+
+注意，第 13 行设置了 `$scope.reverse` 值以跟踪排序方向。然后第 14 行设置了 `$scope.column` 值以跟踪 `planes` 数组中对象的哪个属性名称用于排序。第 15-16 行定义了 `setSort()` 函数，用于更新 `column` 和 `reverse` 的值。
+
+第 19 行定义了 `$scope.filterString` 属性，用于过滤要包含在 `filteredPlanes` 中的对象。第 20-23 行定义了 `setFilter()` 函数，该函数调用 `filterFilter()` 提供程序将 `filteredPlanes` 中的项目限制为与 `filterString` 模糊匹配的项目。第 2 和 3 行将 `filterFilter` 提供程序注入到控制器中。
+
+清单 5.10 实现了一个模板，其中包含一个绑定到 `filterString` 值的文本 `<input>` 和一个在点击时调用 `setFilter()` 的按钮 `<input>`。
+
+注意，在第 14-16 行中，表头应用 `ng-click` 指令来调用 `setSort()` 以设置排序列。第 18-23 行使用 `ng-repeat` 指令实现了表格的行。注意，`ng-repeat` 指令使用 `orderBy` 过滤器来指定由 `setSort()` 函数设置的列名和 `reverse` 值。图 5.5 展示了生成的网页。
+
+#### 清单 5.9 filter_sort.js：构建 AngularJS 可用的作用域，然后进行排序和过滤
+
+```javascript
+angular.module('myApp', [])
+  .controller('myController', ['$scope', 'filterFilter',
+                       function($scope, filterFilter) {
+      $scope.planes = [
+        {make: 'Boeing', model: '777', capacity: 440},
+        {make: 'Boeing', model: '747', capacity: 700},
+        {make: 'Airbus', model: 'A380', capacity: 850},
+        {make: 'Airbus', model: 'A340', capacity: 420},
+        {make: 'McDonnell Douglas', model: 'DC10', capacity: 380},
+        {make: 'McDonnell Douglas', model: 'MD11', capacity: 410},
+        {make: 'Lockheed', model: 'L1011', capacity: 380}];
+      $scope.filteredPlanes = $scope.planes;
+      $scope.reverse = true;
+      $scope.column = 'make';
+      $scope.setSort = function(column){
+        $scope.column = column;
+        $scope.reverse = !$scope.reverse;
+      };
+      $scope.filterString = '';
+      $scope.setFilter = function(value){
+        $scope.filteredPlanes =
+          filterFilter($scope.planes, $scope.filterString);
+      };
+  }]);
 ```
-01 <!doctype html>
-02 <html ng-app="myApp">
-03     <head>
-04         <title>AngularJS Sorting and Filtering</title>
-05         <style>
-06             table{text-align:right;}
-07             td,th{padding:3px;}
-08             th{cursor:pointer;}
-09         </style>
-10     </head>
-11     <body>
-12         <div ng-controller="myController">
-13             <h2>Sorting and Filtering</h2>
-14             <input type="text" ng-model="filterString">
-15             <input type="button" ng-click="setFilter()" value="Filter">
-16             <table>
-17                 <tr>
-18                     <th ng-click="setSort('make')">Make</th>
-19                     <th ng-click="setSort('model')">Model</th>
-20                     <th ng-click="setSort('capacity')">Capacity</th>
-21                 </tr>
-22                 <tr ng-repeat=
-23                     "plane in filteredPlanes | orderBy:column:reverse">
-24                     <td>{{plane.make}}</td>
-25                     <td>{{plane.model}}</td>
-26                     <td>{{plane.capacity}}</td>
-27                 </tr>
-28             </table>
-29             <script src="http://code.angularjs.org/1.3.0/angular.min.js"></script>
-30             <script src="js/filter_sort.js"></script>
-31         </body>
-32 </html>
+
+#### 清单 5.10 filter_sort.html：实现 filter 和 orderBy 过滤器以对表格视图中的项目进行排序和过滤的 AngularJS 模板
+
+```html
+<!doctype html>
+<html ng-app="myApp">
+    <head>
+        <title>AngularJS Sorting and Filtering</title>
+        <style>
+            table{text-align:right;}
+            td,th{padding:3px;}
+            th{cursor:pointer;}
+        </style>
+    </head>
+    <body>
+        <div ng-controller="myController">
+            <h2>Sorting and Filtering</h2>
+            <input type="text" ng-model="filterString">
+            <input type="button" ng-click="setFilter()" value="Filter">
+            <table>
+                <tr>
+                    <th ng-click="setSort('make')">Make</th>
+                    <th ng-click="setSort('model')">Model</th>
+                    <th ng-click="setSort('capacity')">Capacity</th>
+                </tr>
+                <tr ng-repeat=
+                    "plane in filteredPlanes | orderBy:column:reverse">
+                    <td>{{plane.make}}</td>
+                    <td>{{plane.model}}</td>
+                    <td>{{plane.capacity}}</td>
+                </tr>
+            </table>
+            <script src="http://code.angularjs.org/1.3.0/angular.min.js"></script>
+            <script src="js/filter_sort.js"></script>
+        </body>
+</html>
 ```
 
-94 第5章 使用AngularJS模板创建视图
+![](img/ddb4ab3804c2b28b9554bf0661b46fe1_101_0.png)
 
-图5.5 使用AngularJS过滤器在AngularJS视图中过滤和排序表格中的项目。
+图 5.5 使用 AngularJS 过滤器在 AngularJS 视图中过滤和排序表格中的项目。
 
-#### 创建自定义过滤器
+### 创建自定义过滤器
 
-AngularJS允许您创建自己的自定义过滤器提供程序，然后将其用于表达式、控制器和服务中，就像使用内置过滤器一样。AngularJS提供了`filter()`方法来创建过滤器提供程序，并将其注册到依赖注入器服务器。
+AngularJS 允许您创建自己的自定义过滤器提供程序，然后将其用于表达式、控制器和服务中，就像使用内置过滤器一样。AngularJS 提供了 `filter()` 方法来创建过滤器提供程序，并将其注册到依赖注入器服务器。
 
-`filter()`方法接受过滤器的名称作为第一个参数，函数作为第二个参数。过滤器函数应接受表达式输入作为第一个参数，其后是任何附加参数。例如：
+`filter()` 方法接受过滤器的名称作为第一个参数，函数作为第二个参数。过滤器函数应接受表达式输入作为第一个参数，其后是任何附加参数。例如：
 
-```
+```javascript
 filter('myFilter', function(){
   return function(input, param1, param2){
     return <<modified input>>;
@@ -2829,56 +2936,53 @@ filter('myFilter', function(){
 
 在过滤器函数内部，您可以以任何喜欢的方式更改输入值。过滤器函数返回的任何值都将作为表达式结果返回。
 
-清单5.11和5.12创建了一个自定义过滤器函数，该函数审查字符串中的单词，并允许将替换值作为可选参数。清单5.11在第2-11行实现了`censor`过滤器提供程序。然后在第12-20行，控制器通过依赖注入添加了`censorFilter`提供程序。第17-19行中的`filterText()`函数利用`censorFilter`提供程序审查文本并将其替换为`<<censored>>`。
+清单 5.11 和 5.12 创建了一个自定义过滤器函数，该函数审查字符串中的单词，并允许将替换值作为可选参数。清单 5.11 在第 2-11 行实现了 `censor` 过滤器提供程序。然后在第 12-20 行，控制器通过依赖注入添加了 `censorFilter` 提供程序。第 17-19 行中的 `filterText()` 函数利用 `censorFilter` 提供程序审查文本并将其替换为 `<<censored>>`。
 
-清单5.12中的代码实现了一个模板，该模板以多种方式使用过滤器，包括基于点击事件调用`filterText()`。注意，第9行传递给censor过滤器的值来自作用域中的变量`censorText`。图5.6展示了这些清单的输出。
+清单 5.12 中的代码实现了一个模板，该模板以多种方式使用过滤器，包括基于点击事件调用 `filterText()`。注意，第 9 行传递给 censor 过滤器的值来自作用域中的变量 `censorText`。图 5.6 展示了这些清单的输出。
 
-##### 清单5.11 filter_customer.js：在AngularJS中实现自定义过滤器提供程序
+#### 清单 5.11 filter_customer.js：在 AngularJS 中实现自定义过滤器提供程序
 
+```javascript
+angular.module('myApp', [])
+  .filter('censor', function() {
+    return function(input, replacement) {
+      var cWords = ['bad', 'evil', 'dark'];
+      var out = input;
+      for(var i=0; i<cWords.length; i++){
+        out = out.replace(cWords[i], replacement);
+      }
+      return out;
+    };
+  })
+  .controller('myController', ['$scope', 'censorFilter',
+                    function($scope, myCensorFilter) {
+    $scope.censorText = "****";
+    $scope.phrase="This is a bad phrase.";
+    $scope.txt = "Click to filter out dark and evil.";
+    $scope.filterText = function(){
+      $scope.txt = myCensorFilter($scope.txt, '<<censored>>');
+    };
+  }]);
 ```
-01 angular.module('myApp', [])
-02   .filter('censor', function() {
-03     return function(input, replacement) {
-04       var cWords = ['bad', 'evil', 'dark'];
-05       var out = input;
-06       for(var i=0; i<cWords.length; i++){
-07         out = out.replace(cWords[i], replacement);
-08       }
-09       return out;
-10     };
-11   })
-12   .controller('myController', ['$scope', 'censorFilter',
-13                     function($scope, myCensorFilter) {
-14     $scope.censorText = "****";
-15     $scope.phrase="This is a bad phrase.";
-16     $scope.txt = "Click to filter out dark and evil.";
-17     $scope.filterText = function(){
-18       $scope.txt = myCensorFilter($scope.txt, '<<censored>>');
-19     };
-20   }]);
-```
 
+#### 清单 5.12 filter_custom.html：一个使用自定义过滤器的 AngularJS 模板
 
-
-## 96 第五章 使用 AngularJS 模板创建视图
-
-```
-清单 5.12 filter_custom.html：一个使用自定义过滤器的 AngularJS 模板
-01 <!doctype html>
-02 <html ng-app="myApp">
-03   <head>
-04     <title>AngularJS 自定义过滤器</title>
-05   </head>
-06   <body>
-07     <div ng-controller="myController">
-08       <h2>排序与过滤</h2>
-09       {{phrase | censor:censorText}}<br>
-10       {{"This is some bad, dark, evil text." | censor:"happy"}}
-11       <p ng-click="filterText()">{{txt}}</p>
-12       <script src="http://code.angularjs.org/1.3.0/angular.min.js"></script>
-13       <script src="js/filter_custom.js"></script>
-14   </body>
-15 </html>
+```html
+<!doctype html>
+<html ng-app="myApp">
+  <head>
+    <title>AngularJS 自定义过滤器</title>
+  </head>
+  <body>
+    <div ng-controller="myController">
+      <h2>排序与过滤</h2>
+      {{phrase | censor:censorText}}<br>
+      {{"This is some bad, dark, evil text." | censor:"happy"}}
+      <p ng-click="filterText()">{{txt}}</p>
+      <script src="http://code.angularjs.org/1.3.0/angular.min.js"></script>
+      <script src="js/filter_custom.js"></script>
+  </body>
+</html>
 ```
 
 ## 总结
@@ -2887,19 +2991,19 @@ AngularJS 模板实现简单，却功能强大且应用广泛。本章讨论了 
 
 过滤器充当表达式的修饰器，使你能够为特定目的格式化表达式的结果。AngularJS 提供了多个内置过滤器，例如用于货币和日期格式化的过滤器。你也可以创建自己的自定义过滤器，在将数据渲染到页面之前应用任何你想要的格式化或修改。你通过依赖注入将过滤器作为提供者注入到注入器服务中，从而可以在控制器和模板内部访问它们。这意味着你也可以在 JavaScript 代码中访问过滤器。
 
-## 在 AngularJS 视图中实现指令
+# 在 AngularJS 视图中实现指令
 
 AngularJS 最强大的功能之一是指令。指令扩展了 HTML 的行为，使你能够创建具有应用程序特定功能的自定义 HTML 元素、属性和类。AngularJS 提供了多个内置指令。事实上，AngularJS 库的大部分内容就是由内置指令构成的。这些指令提供了与表单元素交互、将作用域中的数据绑定到视图以及与浏览器事件交互的能力。
 
 本章讨论了内置指令以及如何在 AngularJS 模板中实现它们。你将学习如何在 AngularJS 模板中应用这些指令，并在后端控制器中支持它们，从而快速将渲染后的视图转变为交互式应用程序。
 
-### 理解指令
+## 理解指令
 
 指令是 AngularJS 模板标记和配套 JavaScript 代码的组合。AngularJS 指令标记可以是 HTML 属性、元素名称或 CSS 类。JavaScript 指令代码定义了 HTML 元素的模板数据和行为。
 
 AngularJS 编译器遍历模板 DOM 并编译所有指令。然后，它通过将指令与一个作用域相结合来链接指令，从而生成一个新的实时视图。实时视图包含指令中定义的 DOM 元素和功能。
 
-### 使用内置指令
+## 使用内置指令
 
 你需要在 HTML 元素中实现的大多数 AngularJS 功能都由内置指令提供。这些指令由库提供，在 AngularJS JavaScript 库加载后即可使用。
 
@@ -2912,13 +3016,13 @@ AngularJS 编译器遍历模板 DOM 并编译所有指令。然后，它通过�
 
 以下每个部分都包含一个表格，列出了相关指令及其基本描述。你无需现在就理解所有这些指令；这些表格更多是作为参考。后续章节将提供使用其中许多指令的示例代码。
 
-#### 支持 AngularJS 功能的指令
+### 支持 AngularJS 功能的指令
 
 有几个指令为 AngularJS 功能提供支持。这些指令的功能从引导应用程序到确保 AngularJS 所需的布尔表达式在 DOM 中得到保留，不一而足。
 
 表 6.1 列出了这些指令，并描述了每个指令的行为和用法。
 
-**表 6.1 支持 AngularJS 模板功能的指令**
+#### 表 6.1 支持 AngularJS 模板功能的指令
 
 | 指令 | 描述 |
 | :--- | :--- |
@@ -2926,38 +3030,31 @@ AngularJS 编译器遍历模板 DOM 并编译所有指令。然后，它通过�
 | `ngCloak` | 当元素中存在此属性时，该元素在 AngularJS 模板完全编译之前不会显示。否则，将显示元素包含模板代码的原始形式。 |
 | `ngController` | 此指令将控制器附加到视图中的此元素以创建新的作用域，如前面章节所述。例如：`<div ng-controller="myController">` |
 | `ngHref` | 这是一个你可以用来替代 `href` 属性的选项。如果你包含像 `{{hash}}` 这样的模板语法，用户可能在表达式求值之前点击链接，从而导致链接可能失效。 |
-| **ngInclude** | 此指令自动从服务器获取、编译并包含外部 HTML 片段。使用它是包含来自服务器端脚本的部分 HTML 数据的好方法。例如：`<div ng-include="/info/sidebar.html">` |
-| **ngList** | 此指令将作用域中的 `Array` 对象转换为分隔符分隔的字符串。（逗号是默认分隔符。）例如，如果作用域包含一个名为 `items` 的数组，以下 `<input>` 中显示的值将是 `item1, item2, item3,...`：`<input ng-model="items" ng-list=",">` |
-| **ngNonBindable** | 当指令存在于元素中时，AngularJS 在编译期间不会编译或绑定该元素的内容。如果你尝试在元素中显示代码，这很有用。例如：`<p ng-non-bindable>表达式语法：{{exp}}</p>` |
-| **ngOpen** | 浏览器不需要保留元素的布尔属性。如果存在此属性，则为 `true`。此指令使你能够通过测试属性是否存在来保留元素的 `true`/`false` 状态。例如，以下基于作用域中的 `open` 值应用 `ngOpen`：`<details ng-open="open">` |
-| **ngPluralize** | 此指令使你能够根据 AngularJS 捆绑的 `en-US` 本地化规则显示消息。你可以通过添加 `count` 和 `when` 属性来配置 `ngPluralize`，如下所示：`<p ng-pluralize count="itemCount" when="{'0': 'Cart is empty.', 'one': 'Purchase 1 item.', 'other': 'Purchase {{itemCount}} items.'}">` |
-| **ngReadonly** | 类似于 `ngOpen`，但用于 `readonly` 布尔值。例如，以下基于作用域中的 `notChangeable` 值应用 `ngReadonly`：`<input type="text" ng-readonly="notChangeable">` |
-| **ngRequired** | 此指令类似于 `ngOpen`，但用于表单中 `<input>` 元素的 `required` 布尔值。例如，以下基于作用域中的 `required` 值应用 `ngRequired`：`<input type="text" ng-required="required">` |
-| **ngSelected** | 此指令类似于 `ngOpen`，但用于 `selected` 布尔值。例如，以下基于作用域中的 `selected` 值应用 `ngSelected`：`<option id="optionA" ng-selected="selected"> 选项 A </option>` |
+| `ngInclude` | 此指令自动从服务器获取、编译并包含外部 HTML 片段。使用它是包含来自服务器端脚本的部分 HTML 数据的好方法。例如：`<div ng-include="/info/sidebar.html">` |
+| `ngList` | 此指令将作用域中的 `Array` 对象转换为分隔符分隔的字符串。（逗号是默认分隔符。）例如，如果作用域包含一个名为 `items` 的数组，以下 `<input>` 中显示的值将是 `item1, item2, item3,...`：`<input ng-model="items" ng-list=",">` |
+| `ngNonBindable` | 当指令存在于元素中时，AngularJS 在编译期间不会编译或绑定该元素的内容。如果你尝试在元素中显示代码，这很有用。例如：`<p ng-non-bindable>表达式语法：{{exp}}</p>` |
+| `ngOpen` | 浏览器不需要保留元素的布尔属性。如果存在此属性，则为 `true`。此指令使你能够通过测试属性是否存在来保留元素的 `true`/`false` 状态。例如，以下基于作用域中的 `open` 值应用 `ngOpen`：`<details ng-open="open">` |
+| `ngPluralize` | 此指令使你能够根据 AngularJS 捆绑的 `en-US` 本地化规则显示消息。你可以通过添加 `count` 和 `when` 属性来配置 `ngPluralize`，如下所示：`<p ng-pluralize count="itemCount" when="{'0': 'Cart is empty.', 'one': 'Purchase 1 item.', 'other': 'Purchase {{itemCount}} items.'}">` |
+| `ngReadonly` | 类似于 `ngOpen`，但用于 `readonly` 布尔值。例如，以下基于作用域中的 `notChangeable` 值应用 `ngReadonly`：`<input type="text" ng-readonly="notChangeable">` |
+| `ngRequired` | 此指令类似于 `ngOpen`，但用于表单中 `<input>` 元素的 `required` 布尔值。例如，以下基于作用域中的 `required` 值应用 `ngRequired`：`<input type="text" ng-required="required">` |
+| `ngSelected` | 此指令类似于 `ngOpen`，但用于 `selected` 布尔值。例如，以下基于作用域中的 `selected` 值应用 `ngSelected`：`<option id="optionA" ng-selected="selected"> 选项 A </option>` |
+| `ngSrc` | 如果你包含像 `{{username}}` 这样的模板语法，可以使用此指令替代 `src` 属性（该属性在表达式求值前是无效的）。例如：`<img ng-src="/images/{{username}}/test.jpg" />` |
+| `ngSrcset` | 你可以使用此指令替代 `srcset` 属性（该属性在表达式求值前是无效的）。例如：`<img ng-srcset="/images/{{username}}/test.jpg 2x" />` |
+| `ngTransclude` | 此指令将元素标记为使用 transclude 选项来包裹其他元素的指令的 transclude 点。 |
+| `ngView` | 此指令将当前路由的渲染模板包含到主布局文件中。路由将在第 9 章讨论。 |
+| `script` | 此指令加载带有 `next/ng-template` 的 `script` 标签的内容，以便 `ngInclude`、`ngView` 或其他模板指令可以使用它。 |
 
+表 6.1 中的指令在代码的不同部分以不同方式使用。你已经在之前的示例中见过其中一些，比如 `ngApp` 和 `ngController`。有些指令相当直观，例如在模板中实现 `<img>` 元素时使用 `ng-src` 代替 `src`。其他的将在后续章节的各种示例中使用。
 
+我确实想在此时给你一个使用 `ngInclude` 指令的示例。这个小指令使用简单，可用于多种目的，特别是当你尝试将 AngularJS 引入现有系统时。在本例中，我们将使用 `ngInclude` 通过从服务器加载不同的部分 HTML 文件来切换基本网页顶部的横幅栏。
 
-## 第6章 在AngularJS视图中实现指令
+清单 6.1 中的代码实现了一个非常基本的 AngularJS 控制器，它将一个 HTML 文件名存储在名为 `titleBar` 的变量中。清单 6.2 中的代码实现了一个 AngularJS 模板，该模板顶部包含几个链接用于切换页面，以及第 24 行的一个 `<div>` 元素，该元素使用 `ng-include` 将 div 的内容更改为 `titleBar` 指定的文件。
 
-| 指令 | 描述 |
-| :--- | :--- |
-| `ngSrc` | 如果你包含像`{{username}}`这样的模板语法，可以使用此指令替代`src`属性（该属性在表达式求值前是无效的）。例如：`<img ng-src="/images/{{username}}/test.jpg" />` |
-| `ngSrcset` | 你可以使用此指令替代`srcset`属性（该属性在表达式求值前是无效的）。例如：`<img ng-srcset="/images/{{username}}/test.jpg 2x" />` |
-| `ngTransclude` | 此指令将元素标记为使用transclude选项来包裹其他元素的指令的transclude点。 |
-| `ngView` | 此指令将当前路由的渲染模板包含到主布局文件中。路由将在第9章讨论。 |
-| `script` | 此指令加载带有`next/ng-template`的`script`标签的内容，以便`ngInclude`、`ngView`或其他模板指令可以使用它。 |
+标题栏的不同版本位于清单 6.3 和 6.4 所示的文件中。基本上，这些文件只包含一个 `<p>` 元素，该元素被分配了 `large` 或 `small` 类。类定义位于清单 6.2 的 `<style>` 元素中。
 
-表6.1中的指令在代码的不同部分以不同方式使用。你已经在之前的示例中见过其中一些，比如`ngApp`和`ngController`。有些指令相当直观，例如在模板中实现`<img>`元素时使用`ng-src`代替`src`。其他的将在后续章节的各种示例中使用。
+图 6.1 显示了两个标题横幅。当点击链接切换横幅时，原始 `<div>` 元素的内容将被加载的新 HTML 文件替换。
 
-我确实想在此时给你一个使用`ngInclude`指令的示例。这个小指令使用简单，可用于多种目的，特别是当你尝试将AngularJS引入现有系统时。在本例中，我们将使用`ngInclude`通过从服务器加载不同的部分HTML文件来切换基本网页顶部的横幅栏。
-
-清单6.1中的代码实现了一个非常基本的AngularJS控制器，它将一个HTML文件名存储在名为`titleBar`的变量中。清单6.2中的代码实现了一个AngularJS模板，该模板顶部包含几个链接用于切换页面，以及第24行的一个`<div>`元素，该元素使用`ng-include`将div的内容更改为`titleBar`指定的文件。
-
-标题栏的不同版本位于清单6.3和6.4所示的文件中。基本上，这些文件只包含一个`<p>`元素，该元素被分配了`large`或`small`类。类定义位于清单6.2的`<style>`元素中。
-
-图6.1显示了两个标题横幅。当点击链接切换横幅时，原始`<div>`元素的内容将被加载的新HTML文件替换。
-
-### 清单6.1 directive_angular_include.js：实现一个将标题元素的HTML文件名存储在作用域中的控制器
+#### 清单 6.1 directive_angular_include.js：实现一个将标题元素的 HTML 文件名存储在作用域中的控制器
 
 ```javascript
 angular.module('myApp', []).
@@ -2966,7 +3063,7 @@ angular.module('myApp', []).
 });
 ```
 
-### 清单6.2 directive_angular_include.html：一个使用ng-include指令通过在两个HTML文件之间切换来更改页面标题栏的AngularJS模板
+#### 清单 6.2 directive_angular_include.html：一个使用 ng-include 指令通过在两个 HTML 文件之间切换来更改页面标题栏的 AngularJS 模板
 
 ```html
 <!doctype html>
@@ -3000,7 +3097,7 @@ angular.module('myApp', []).
 </html>
 ```
 
-### 清单6.3 small_title.html：包含小版本标题的部分HTML文件
+#### 清单 6.3 small_title.html：包含小版本标题的部分 HTML 文件
 
 ```html
 <p class="small">
@@ -3008,7 +3105,7 @@ angular.module('myApp', []).
 </p>
 ```
 
-### 清单6.4 large_title.html：包含大版本标题的部分HTML文件
+#### 清单 6.4 large_title.html：包含大版本标题的部分 HTML 文件
 
 ```html
 <p class="large">
@@ -3016,36 +3113,38 @@ angular.module('myApp', []).
 </p>
 ```
 
-图6.1 使用ng-include指令通过使用不同的HTML部分文件动态更改视图。
+![](img/ddb4ab3804c2b28b9554bf0661b46fe1_123_0.png)
+
+图 6.1 使用 ng-include 指令通过使用不同的 HTML 部分文件动态更改视图。
 
 ### 扩展表单元素的指令
 
-AngularJS与表单元素高度集成，为应用中的表单元素提供数据绑定和事件绑定。为了以正确的方式提供AngularJS功能，表单元素在编译时会被扩展。
+AngularJS 与表单元素高度集成，为应用中的表单元素提供数据绑定和事件绑定。为了以正确的方式提供 AngularJS 功能，表单元素在编译时会被扩展。
 
-表6.2列出了AngularJS扩展的表单元素。
+表 6.2 列出了 AngularJS 扩展的表单元素。
 
-#### 表6.2 扩展表单元素以支持AngularJS模板功能的指令
+#### 表 6.2 扩展表单元素以支持 AngularJS 模板功能的指令
 
 | 指令 | 描述 |
 | :--- | :--- |
-| `a` | 此指令修改默认行为，以在`href`属性为空时阻止默认操作。这使你能够通过使用`ngClick`或其他事件指令创建操作链接。例如：`<a href="" ng-click="doSomething()">Click me</a>` |
-| `input.email` | 此指令与`input`相同。 |
-| `input.number` | 此指令除了已提供给`input`的属性外，还添加了以下额外的AngularJS属性：<br>- `min`：设置`min`验证错误量。<br>- `max`：设置`max`验证错误量。 |
-| `input.radio` | 此指令除了已提供给`input`的属性外，还添加了以下额外的AngularJS属性：<br>- `value`：在元素被选中时设置作用域中的值。 |
-| `input.text` | 此指令与`input`相同。 |
-| `input.url` | 此指令与`input`相同。 |
-| `input.date` | 此指令为日期输入元素添加日期验证和转换。作用域模型中的值也必须是JavaScript `Date`对象。此指令除了已提供给`input`的属性外，还添加了以下额外的AngularJS属性：<br>- `min`：设置`min`日期验证错误量。<br>- `max`：设置`max`日期验证错误量。 |
-| `input.dateTimeLocal` | 此指令与`input.date`相同，只是格式必须输入为有效的ISO-8601本地日期时间格式（yyyy-MM-ddTHH:mm）。例如：`2014-11-28T12:37` |
-| `input.month` | 此指令与`input.date`相同，只是格式必须输入为有效的ISO-8601月份格式（yyyy-MM）。例如：`2014-11` |
-| `input.time` | 此指令与`input.date`相同，只是格式必须输入为有效的ISO-8601时间格式（HH:mm）。例如：`12:37` |
-| `input.week` | 此指令与`input.date`相同，只是格式必须输入为有效的ISO-8601周格式（yyyy-W##）。例如：`2014-W02` |
-| `select` | 此指令向`<select>`元素添加了额外的`ngOptions`指令。 |
-| `ngOptions` | 此指令使你能够基于迭代表达式添加选项。如果作用域中的数据源是数组，请使用以下表达式为ngOptions设置`<select>`中每个`<option>`元素的label、name和value属性：<br> `label for value in array` <br> `select as label for value in array` <br> `label group by group for value in array` <br> `select as label group by group for value in array track by trackexpr` <br><br> 如果作用域中ngOptions的源是JavaScript对象，请使用以下表达式语法：<br> `label for (key, value) in object` <br> `select as label for (key, value) in object` <br> `label group by group for (key, value) in object` <br> `select as label group by group for (key, value) in object` <br><br> 例如：<br> `<select ng-model="color" ng-options="c.name for c in colors">` <br> `    <option value="">-- choose color --</option>` <br> `</select>` |
-| `textarea` | 此指令与`input`相同。 |
+| `a` | 此指令修改默认行为，以在 `href` 属性为空时阻止默认操作。这使你能够通过使用 `ngClick` 或其他事件指令创建操作链接。例如：`<a href="" ng-click="doSomething()">Click me</a>` |
+| `input.email` | 此指令与 `input` 相同。 |
+| `input.number` | 此指令除了已提供给 `input` 的属性外，还添加了以下额外的 AngularJS 属性：<br>- `min`：设置 `min` 验证错误量。<br>- `max`：设置 `max` 验证错误量。 |
+| `input.radio` | 此指令除了已提供给 `input` 的属性外，还添加了以下额外的 AngularJS 属性：<br>- `value`：在元素被选中时设置作用域中的值。 |
+| `input.text` | 此指令与 `input` 相同。 |
+| `input.url` | 此指令与 `input` 相同。 |
+| `input.date` | 此指令为日期输入元素添加日期验证和转换。作用域模型中的值也必须是 JavaScript `Date` 对象。此指令除了已提供给 `input` 的属性外，还添加了以下额外的 AngularJS 属性：<br>- `min`：设置 `min` 日期验证错误量。<br>- `max`：设置 `max` 日期验证错误量。 |
+| `input.dateTimeLocal` | 此指令与 `input.date` 相同，只是格式必须输入为有效的 ISO-8601 本地日期时间格式（yyyy-MM-ddTHH:mm）。例如：`2014-11-28T12:37` |
+| `input.month` | 此指令与 `input.date` 相同，只是格式必须输入为有效的 ISO-8601 月份格式（yyyy-MM）。例如：`2014-11` |
+| `input.time` | 此指令与 `input.date` 相同，只是格式必须输入为有效的 ISO-8601 时间格式（HH:mm）。例如：`12:37` |
+| `input.week` | 此指令与 `input.date` 相同，只是格式必须输入为有效的 ISO-8601 周格式（yyyy-W##）。例如：`2014-W02` |
+| `select` | 此指令向 `<select>` 元素添加了额外的 `ngOptions` 指令。 |
+| `ngOptions` | 此指令使你能够基于迭代表达式添加选项。如果作用域中的数据源是数组，请使用以下表达式为 ngOptions 设置 `<select>` 中每个 `<option>` 元素的 label、name 和 value 属性：<br> `label for value in array` <br> `select as label for value in array` <br> `label group by group for value in array` <br> `select as label group by group for value in array track by trackexpr` <br><br> 如果作用域中 ngOptions 的源是 JavaScript 对象，请使用以下表达式语法：<br> `label for (key, value) in object` <br> `select as label for (key, value) in object` <br> `label group by group for (key, value) in object` <br> `select as label group by group for (key, value) in object` <br><br> 例如：<br> `<select ng-model="color" ng-options="c.name for c in colors">` <br> `    <option value="">-- choose color --</option>` <br> `</select>` |
+| `textarea` | 此指令与 `input` 相同。 |
 
-清单6.5和6.6实现了一些基本的AngularJS表单元素与作用域的集成。清单6.5初始化作用域。清单6.6实现了几个常见的表单组件，包括文本框、复选框、单选按钮和select元素，以说明它们在模板中如何定义以及如何与作用域中的数据交互。图6.2显示了生成的网页。
+清单 6.5 和 6.6 实现了一些基本的 AngularJS 表单元素与作用域的集成。清单 6.5 初始化作用域。清单 6.6 实现了几个常见的表单组件，包括文本框、复选框、单选按钮和 select 元素，以说明它们在模板中如何定义以及如何与作用域中的数据交互。图 6.2 显示了生成的网页。
 
-#### 清单6.5 directive_form.js：为表单指令实现一个控制器
+#### 清单 6.5 directive_form.js：为表单指令实现一个控制器
 
 ```javascript
 angular.module('myApp', []).
@@ -3062,121 +3161,115 @@ angular.module('myApp', []).
     });
 ```
 
+#### 清单 6.6 directive_form.html：一个实现了多种不同表单元素指令的 AngularJS 模板
 
-
-## 第6章 在AngularJS视图中实现指令
-
-### 代码清单6.6 directive_form.html：一个实现了多种不同表单元素指令的AngularJS模板
-
-```
-01 <!doctype html>
-02 <html ng-app="myApp">
-03 <head>
-04   <title>AngularJS Form Directives</title>
-05 </head>
-06 <body>
-07   <div ng-controller="myController">
-08     <h2>Forms Directives</h2>
-09     <input type="text" ng-model="someText"> {{someText}}<hr>
-10     <input type="checkbox" ng-model="cbValue"
-11           ng-true-value="AWESOME" ng-false-value="BUMMER">
-12     Checkbox: {{cbValue}}<hr>
-13     <input type="radio"
-14       ng-model="cameraName" value="Canon"> Canon<br/>
-15     <input type="radio"
-16       ng-model="cameraName" value="Nikon"> Nikon<br/>
-17     Selected Camera: {{cameraName}} <hr>
-18     <select ng-model="camera"
-19       ng-options="c.model group by c.make for c in cameras">
-20     </select>
-21     {{camera|json}}
-22   <script src="http://code.angularjs.org/1.3.0/angular.min.js"></script>
-23   <script src="js/directive_form.js"></script>
-24 </body>
-25 </html>
+```html
+<!doctype html>
+<html ng-app="myApp">
+<head>
+  <title>AngularJS Form Directives</title>
+</head>
+<body>
+  <div ng-controller="myController">
+    <h2>Forms Directives</h2>
+    <input type="text" ng-model="someText"> {{someText}}<hr>
+    <input type="checkbox" ng-model="cbValue"
+          ng-true-value="AWESOME" ng-false-value="BUMMER">
+    Checkbox: {{cbValue}}<hr>
+    <input type="radio"
+      ng-model="cameraName" value="Canon"> Canon<br/>
+    <input type="radio"
+      ng-model="cameraName" value="Nikon"> Nikon<br/>
+    Selected Camera: {{cameraName}} <hr>
+    <select ng-model="camera"
+      ng-options="c.model group by c.make for c in cameras">
+    </select>
+    {{camera|json}}
+  <script src="http://code.angularjs.org/1.3.0/angular.min.js"></script>
+  <script src="js/directive_form.js"></script>
+</body>
+</html>
 ```
 
 ![](img/ddb4ab3804c2b28b9554bf0661b46fe1_123_0.png)
 
-图6.2 在AngularJS模板视图中实现表单指令元素。
+图 6.2 在 AngularJS 模板视图中实现表单指令元素。
 
 ### 将模型绑定到页面元素的指令
 
-AngularJS模板使你能够将作用域中的数据直接绑定到HTML元素中显示的内容。你可以通过多种方式将数据绑定到视图，包括以下几种：
+AngularJS 模板使你能够将作用域中的数据直接绑定到 HTML 元素中显示的内容。你可以通过多种方式将数据绑定到视图，包括以下几种：
 
-- **值**：你可以直接在作用域中表示表单元素的值。例如，文本输入可以是作用域中的一个`String`变量，而复选框则由一个`Boolean`值表示。
-- **HTML**：你可以通过使用类似`<p>{{myTitle}}</p>`这样的表达式，在元素的HTML输出中表示作用域中的数据值。
-- **属性**：HTML元素属性的值可以通过在定义中使用表达式来反映作用域中的数据，例如：`<a ng-href="/{{hash}}/index.html">{{hash}}</a>`。
-- **可见性**：元素的可见性可以反映在视图的作用域中。例如，当基于作用域的表达式为`true`时，元素可见；否则，它不可见。
-- **存在性**：你可以根据作用域中的值，从编译后的DOM中省略元素。
+- **值**：你可以直接在作用域中表示表单元素的值。例如，文本输入可以是作用域中的一个 `String` 变量，而复选框则由一个 `Boolean` 值表示。
+- **HTML**：你可以通过使用类似 `<p>{{myTitle}}</p>` 这样的表达式，在元素的 HTML 输出中表示作用域中的数据值。
+- **属性**：HTML 元素属性的值可以通过在定义中使用表达式来反映作用域中的数据，例如：`<a ng-href="/{{hash}}/index.html">{{hash}}</a>`。
+- **可见性**：元素的可见性可以反映在视图的作用域中。例如，当基于作用域的表达式为 `true` 时，元素可见；否则，它不可见。
+- **存在性**：你可以根据作用域中的值，从编译后的 DOM 中省略元素。
 
-表6.3列出了将作用域中的数据直接绑定到视图元素的指令。
+表 6.3 列出了将作用域中的数据直接绑定到视图元素的指令。
 
-#### 表6.3 将作用域中的数据绑定到HTML元素的值、表达式、可见性和存在性的指令
+#### 表 6.3 将作用域中的数据绑定到 HTML 元素的值、表达式、可见性和存在性的指令
 
 | 指令 | 描述 |
 | :--- | :--- |
-| ngBind | 此指令告诉AngularJS用给定表达式的值替换HTML元素的文本内容，并在作用域中的值发生变化时更新文本内容。例如：`<span ng-bind="titleString"></span>` |
-| ngBindHtml | 此指令告诉AngularJS用给定表达式的值替换HTML元素的innerHTML内容，并在作用域中的值发生变化时更新innerHTML内容。例如：`<div ng-bind-html="someHTML"></div>` |
-| ngBindTemplate | 此指令与ngBind类似，不同之处在于表达式可以包含多个`{{}}`表达式块。例如：`<span ng-bind-template="{{aValue}} and {{anotherValue}}"></span>` |
-| ngClass | 此指令通过数据绑定一个表示要添加的类的表达式，来动态设置元素的CSS类。当表达式的值发生变化时，元素的CSS类会自动更新。例如：`<p ng-class="myPStyles"></p>` |
-| ngClassEven | 此指令与`ngClass`相同，不同之处在于它与`ngRepeat`配合使用，仅将类更改应用于集合中索引为偶数的元素。例如：`<li ng-repeat="item in items"><span ng-class-even="evenRowClass">{{item}}</span></li>` |
-| ngClassOdd | 此指令与`ngClass`相同，不同之处在于它与`ngRepeat`配合使用，仅将类更改应用于集合中索引为奇数的元素。例如：`<li ng-repeat="item in items"><span ng-class-odd="oddRowClass">{{item}}</span></li>` |
-| ngDisabled | 如果表达式求值为`true`，此指令会禁用按钮元素。 |
-| ngHide | 此指令根据提供的表达式显示或隐藏HTML元素，使用AngularJS中提供的`.ng-hide` CSS类。如果作用域中的表达式求值为`false`，则显示该元素；否则，它被隐藏。例如：`<div ng-hide="myValue"></div>` |
-| ngShow | 此指令与`ngHide`相反：如果作用域中的表达式求值为`true`，则显示该元素；否则，它被隐藏。例如：`<div ng-show="myValue"></div>` |
-| ngIf | 此指令根据表达式删除或重新创建DOM树的一部分。这与`show`或`hide`不同，因为HTML根本不会出现在DOM中。例如：`<div ng-if="present"> </div>` |
-| ngModel | 此指令将`<input>`、`<select>`或`<textarea>`元素的值绑定到作用域模型中的一个值。当用户更改元素的值时，作用域中的值会自动更改，反之亦然。例如：`<input type="text" ng-model="myString">` |
-| ngRepeat | 此指令使你能够根据作用域中的数组添加多个HTML元素。这对于列表、表格和菜单非常有用。`ngRepeat`使用`item in collections`风格的迭代语法。为创建的每个单独HTML元素都会创建一个新的作用域。在循环生成HTML元素期间，以下变量在作用域中可见：<br>    - `$index`：基于0的迭代器索引，第一个元素为0。<br>    - `$first`：一个布尔值，如果这是第一个元素则为`true`。<br>    - `$middle`：一个布尔值，如果这不是第一个或最后一个元素则为`true`。<br>    - `$last`：一个布尔值，如果这是最后一个元素则为`true`。<br>    - `$even`：一个布尔值，如果迭代器是偶数则为`true`。<br>    - `$odd`：一个布尔值，如果迭代器是奇数则为`true`。<br>    <br>    例如，以下代码根据具有`firstname`属性的用户数组进行迭代并构建一系列`<li>`元素：<br>    `<li ng-repeat="user in users">`<br>    `{{$index}}: {{user.firstname}}</li>` |
-| ngInit | 此指令与`ngRepeat`一起使用，在迭代期间初始化一个值。例如：<br>    `<div ng-repeat="user in users" ng-init="offset=21">`<br>    `{{$index+offset}}: {{user.firstname}}</div>` |
-| ngStyle | 此指令使你能够根据作用域中的一个对象动态设置样式，其中属性名和值与CSS属性匹配。例如：<br>    `<span ng-style="myStyle">Stylized Text</span>` |
-| ngSwitch | 此指令使你能够根据作用域表达式，动态交换编译模板中包含的DOM元素。以下是用于多个元素的语法示例：<br>    `<div ng-switch="myLocation">`<br>    `<div ng-switch-when="home">Home Info</div>`<br>    `<div ng-switch-when="work">Work Info</div>`<br>    `<div ng-switch-default>Default Info</div>`<br>    `</div>` |
-| ngValue | 此指令将`input[select]`或`input[radio]`的选定值绑定到`ngModel`中指定的表达式。例如：<br>    `<div ng-repeat="pizza in pizzas"`<br>    `<input type="radio" name="pizza"`<br>    `ng-model="myPizza" ng-value="pizza" id="{{pizza}}" >`<br>    `</div>` |
+| `ngBind` | 此指令告诉 AngularJS 用给定表达式的值替换 HTML 元素的文本内容，并在作用域中的值发生变化时更新文本内容。例如：`<span ng-bind="titleString"></span>` |
+| `ngBindHtml` | 此指令告诉 AngularJS 用给定表达式的值替换 HTML 元素的 innerHTML 内容，并在作用域中的值发生变化时更新 innerHTML 内容。例如：`<div ng-bind-html="someHTML"></div>` |
+| `ngBindTemplate` | 此指令与 `ngBind` 类似，不同之处在于表达式可以包含多个 `{{}}` 表达式块。例如：`<span ng-bind-template="{{aValue}} and {{anotherValue}}"></span>` |
+| `ngClass` | 此指令通过数据绑定一个表示要添加的类的表达式，来动态设置元素的 CSS 类。当表达式的值发生变化时，元素的 CSS 类会自动更新。例如：`<p ng-class="myPStyles"></p>` |
+| `ngClassEven` | 此指令与 `ngClass` 相同，不同之处在于它与 `ngRepeat` 配合使用，仅将类更改应用于集合中索引为偶数的元素。例如：`<li ng-repeat="item in items"><span ng-class-even="evenRowClass">{{item}}</span></li>` |
+| `ngClassOdd` | 此指令与 `ngClass` 相同，不同之处在于它与 `ngRepeat` 配合使用，仅将类更改应用于集合中索引为奇数的元素。例如：`<li ng-repeat="item in items"><span ng-class-odd="oddRowClass">{{item}}</span></li>` |
+| `ngDisabled` | 如果表达式求值为 `true`，此指令会禁用按钮元素。 |
+| `ngHide` | 此指令根据提供的表达式显示或隐藏 HTML 元素，使用 AngularJS 中提供的 `.ng-hide` CSS 类。如果作用域中的表达式求值为 `false`，则显示该元素；否则，它被隐藏。例如：`<div ng-hide="myValue"></div>` |
+| `ngShow` | 此指令与 `ngHide` 相反：如果作用域中的表达式求值为 `true`，则显示该元素；否则，它被隐藏。例如：`<div ng-show="myValue"></div>` |
+| `ngIf` | 此指令根据表达式删除或重新创建 DOM 树的一部分。这与 `show` 或 `hide` 不同，因为 HTML 根本不会出现在 DOM 中。例如：`<div ng-if="present"> </div>` |
+| `ngModel` | 此指令将 `<input>`、`<select>` 或 `<textarea>` 元素的值绑定到作用域模型中的一个值。当用户更改元素的值时，作用域中的值会自动更改，反之亦然。例如：`<input type="text" ng-model="myString">` |
+| `ngRepeat` | 此指令使你能够根据作用域中的数组添加多个 HTML 元素。这对于列表、表格和菜单非常有用。`ngRepeat` 使用 `item in collections` 风格的迭代语法。为创建的每个单独 HTML 元素都会创建一个新的作用域。在循环生成 HTML 元素期间，以下变量在作用域中可见：<br>    - `$index`：基于 0 的迭代器索引，第一个元素为 0。<br>    - `$first`：一个布尔值，如果这是第一个元素则为 `true`。<br>    - `$middle`：一个布尔值，如果这不是第一个或最后一个元素则为 `true`。<br>    - `$last`：一个布尔值，如果这是最后一个元素则为 `true`。<br>    - `$even`：一个布尔值，如果迭代器是偶数则为 `true`。<br>    - `$odd`：一个布尔值，如果迭代器是奇数则为 `true`。<br>    <br>    例如，以下代码根据具有 `firstname` 属性的用户数组进行迭代并构建一系列 `<li>` 元素：<br>    `<li ng-repeat="user in users">`<br>    `{{$index}}: {{user.firstname}}</li>` |
+| `ngInit` | 此指令与 `ngRepeat` 一起使用，在迭代期间初始化一个值。例如：<br>    `<div ng-repeat="user in users" ng-init="offset=21">`<br>    `{{$index+offset}}: {{user.firstname}}</div>` |
+| `ngStyle` | 此指令使你能够根据作用域中的一个对象动态设置样式，其中属性名和值与 CSS 属性匹配。例如：<br>    `<span ng-style="myStyle">Stylized Text</span>` |
+| `ngSwitch` | 此指令使你能够根据作用域表达式，动态交换编译模板中包含的 DOM 元素。以下是用于多个元素的语法示例：<br>    `<div ng-switch="myLocation">`<br>    `<div ng-switch-when="home">Home Info</div>`<br>    `<div ng-switch-when="work">Work Info</div>`<br>    `<div ng-switch-default>Default Info</div>`<br>    `</div>` |
+| `ngValue` | 此指令将 `input[select]` 或 `input[radio]` 的选定值绑定到 `ngModel` 中指定的表达式。例如：<br>    `<div ng-repeat="pizza in pizzas"`<br>    `<input type="radio" name="pizza"`<br>    `ng-model="myPizza" ng-value="pizza" id="{{pizza}}" >`<br>    `</div>` |
 
-代码清单6.7和6.8提供了一些基本AngularJS绑定指令的示例。代码清单6.7初始化了作用域的值，包括第4行的`myStyle`对象。代码清单6.8在模板中提供了绑定指令的实际实现。
+代码清单 6.7 和 6.8 提供了一些基本 AngularJS 绑定指令的示例。代码清单 6.7 初始化了作用域的值，包括第 4 行的 `myStyle` 对象。代码清单 6.8 在模板中提供了绑定指令的实际实现。
 
-除了少数例外，代码清单6.8中的模板代码都很直接。第15行和第16行将单选按钮`<input>`绑定到作用域中的`myStyle['background-color']`属性。这展示了如何处理不允许使用通常的点表示法（例如`myStyle.color`）的样式名称。还要注意，单选按钮的值是使用`ng-value`从`ng-repeat`作用域中设置的，以获取颜色值。
+除了少数例外，代码清单 6.8 中的模板代码都很直接。第 15 行和第 16 行将单选按钮 `<input>` 绑定到作用域中的 `myStyle['background-color']` 属性。这展示了如何处理不允许使用通常的点表示法（例如 `myStyle.color`）的样式名称。还要注意，单选按钮的值是使用 `ng-value` 从 `ng-repeat` 作用域中设置的，以获取颜色值。
 
-还要注意，当使用`ng-class-even`设置类名时，类名`even`需要放在单引号中，因为它是一个字符串。图6.3显示了生成的网页。
+还要注意，当使用 `ng-class-even` 设置类名时，类名 `even` 需要放在单引号中，因为它是一个字符串。图 6.3 显示了生成的网页。
 
-#### 代码清单6.7 directive_bind.js：实现一个带有作用域模型的控制器以支持数据绑定指令
+#### 清单 6.7 directive_bind.js：实现一个带有作用域模型的控制器以支持数据绑定指令
 
-```
-01 angular.module('myApp', []).
-02     controller('myController', function($scope) {
-03         $scope.colors=['red','green','blue'];
-04         $scope.myStyle = { "background-color": 'blue' };
-05         $scope.days=['Monday', 'Tuesday', 'Wednesday',
-06                     'Thursday', 'Friday'];
-07         $scope.msg="Dynamic Message from the model";
-08     });
-```
-
-#### 代码清单6.8 directive_bind.html：一个实现了多种不同数据绑定指令的AngularJS模板
-
-```
-01 <!doctype html>
-02 <html ng-app="myApp">
-03 <head>
-04     <title>AngularJS Data Binding Directives</title>
-05     <style>
-06         .even{background-color:lightgrey;}
-07         .rect{display:inline-block; height:40px; width:100px;}
-08     </style>
-09 </head>
-10 <body>
-11     <div ng-controller="myController">
-12         <h2>Data Binding Directives</h2>
-13         <label ng-repeat="color in colors">
-14             {{color}}
-15             <input type="radio" ng-model="myStyle['background-color']"
-16                 ng-value="color" id="{{color}}" name="mColor">
-17         </label>
-18         <span class="rect" ng-style="myStyle"></span><hr>
-19         <li ng-repeat="day in days">
+```javascript
+angular.module('myApp', []).
+    controller('myController', function($scope) {
+        $scope.colors=['red','green','blue'];
+        $scope.myStyle = { "background-color": 'blue' };
+        $scope.days=['Monday', 'Tuesday', 'Wednesday',
+                    'Thursday', 'Friday'];
+        $scope.msg="Dynamic Message from the model";
+    });
 ```
 
+#### 清单 6.8 directive_bind.html：一个实现了多种不同数据绑定指令的 AngularJS 模板
 
+```html
+<!doctype html>
+<html ng-app="myApp">
+<head>
+    <title>AngularJS Data Binding Directives</title>
+    <style>
+        .even{background-color:lightgrey;}
+        .rect{display:inline-block; height:40px; width:100px;}
+    </style>
+</head>
+<body>
+    <div ng-controller="myController">
+        <h2>Data Binding Directives</h2>
+        <label ng-repeat="color in colors">
+            {{color}}
+            <input type="radio" ng-model="myStyle['background-color']"
+                ng-value="color" id="{{color}}" name="mColor">
+        </label>
+        <span class="rect" ng-style="myStyle"></span><hr>
+        <li ng-repeat="day in days">
+```
 
 ### 将页面事件绑定到控制器的指令
 
@@ -3184,7 +3277,7 @@ AngularJS 模板允许你将浏览器事件绑定到控制器代码。这意味�
 
 表 6.4 列出了将页面和设备事件绑定到 AngularJS 模型的指令。这些指令中的每一个都允许你指定一个表达式，通常是在作用域中定义的函数，如第 5 章“使用 AngularJS 模板创建视图”中所讨论的。例如，以下是作用域中一个名为 `setTitle` 的函数：
 
-```
+```javascript
 $scope.setTitle = function(title){
     $scope.title = title;
 };
@@ -3192,35 +3285,33 @@ $scope.setTitle = function(title){
 
 你可以通过使用以下 `ng-click` 指令，将作用域中的 `setTitle()` 函数直接绑定到视图中的输入按钮：
 
-```
-<input type="button" ng-click="setTitle('New Title')">
-```
+`<input type="button" ng-click="setTitle('New Title')">`
 
 #### 表 6.4 将页面/设备事件绑定到 AngularJS 模型功能的指令
 
 | 指令 | 描述 |
 | --- | --- |
-| ngBlur | 在触发 blur 事件时评估一个表达式。 |
-| ngChange | 在表单元素的值发生更改时评估一个表达式。 |
-| ngChecked | 在复选框或单选按钮元素被选中时评估一个表达式。 |
-| ngClick | 在鼠标点击时评估一个表达式。 |
-| ngCopy | 在触发复制事件时评估一个表达式。 |
-| ngCut | 在触发剪切事件时评估一个表达式。 |
-| ngDblclick | 在鼠标双击时评估一个表达式。 |
-| ngFocus | 在元素获得焦点触发 focus 事件时评估一个表达式。 |
-| ngKeydown | 在按下键盘按键时评估一个表达式。 |
-| ngKeypress | 在按下并释放键盘按键时评估一个表达式。 |
-| ngKeyup | 在释放键盘按键时评估一个表达式。 |
-| ngMousedown | 在按下鼠标按键时评估一个表达式。 |
-| ngMouseenter | 在鼠标进入元素时评估一个表达式。 |
-| ngMouseleave | 在鼠标离开元素时评估一个表达式。 |
-| ngMousemove | 在鼠标光标移动时评估一个表达式。 |
-| ngMouseover | 在鼠标悬停在元素上时评估一个表达式。 |
-| ngMouseup | 在释放鼠标按键时评估一个表达式。 |
-| ngPaste | 在触发粘贴事件时评估一个表达式。 |
-| ngSubmit | 阻止默认的表单提交操作（该操作会向服务器发送请求），转而评估指定的表达式。 |
-| ngSwipeLeft | 在触发向左滑动事件时评估一个表达式。 |
-| ngSwipeRight | 在触发向右滑动事件时评估一个表达式。 |
+| `ngBlur` | 在触发 blur 事件时评估一个表达式。 |
+| `ngChange` | 在表单元素的值发生更改时评估一个表达式。 |
+| `ngChecked` | 在复选框或单选按钮元素被选中时评估一个表达式。 |
+| `ngClick` | 在鼠标点击时评估一个表达式。 |
+| `ngCopy` | 在触发复制事件时评估一个表达式。 |
+| `ngCut` | 在触发剪切事件时评估一个表达式。 |
+| `ngDblclick` | 在鼠标双击时评估一个表达式。 |
+| `ngFocus` | 在元素获得焦点触发 focus 事件时评估一个表达式。 |
+| `ngKeydown` | 在按下键盘按键时评估一个表达式。 |
+| `ngKeypress` | 在按下并释放键盘按键时评估一个表达式。 |
+| `ngKeyup` | 在释放键盘按键时评估一个表达式。 |
+| `ngMousedown` | 在按下鼠标按键时评估一个表达式。 |
+| `ngMouseenter` | 在鼠标进入元素时评估一个表达式。 |
+| `ngMouseleave` | 在鼠标离开元素时评估一个表达式。 |
+| `ngMousemove` | 在鼠标光标移动时评估一个表达式。 |
+| `ngMouseover` | 在鼠标悬停在元素上时评估一个表达式。 |
+| `ngMouseup` | 在释放鼠标按键时评估一个表达式。 |
+| `ngPaste` | 在触发粘贴事件时评估一个表达式。 |
+| `ngSubmit` | 阻止默认的表单提交操作（该操作会向服务器发送请求），转而评估指定的表达式。 |
+| `ngSwipeLeft` | 在触发向左滑动事件时评估一个表达式。 |
+| `ngSwipeRight` | 在触发向右滑动事件时评估一个表达式。 |
 
 你可以使用 `$event` 关键字将 JavaScript `Event` 对象传递给事件表达式。这使你可以访问有关事件的信息，以及停止事件传播和通常对 JavaScript `Event` 对象进行的所有其他操作。例如，以下 `ng-click` 指令将鼠标点击事件传递给 `myClick()` 处理函数：
 
@@ -3236,7 +3327,9 @@ AngularJS 的 `ngBlur` 和 `ngFocus` 指令对于跟踪表单元素何时获得�
 
 代码清单 6.10 是一个 AngularJS 模板，它实现了两个 `<input>` 元素，并将 `focusGained()` 和 `focusLost()` 处理程序分配给 `ng-focus` 和 `ng-blur` 属性。图 6.4 展示了这个基本示例的运行效果。请注意，当你点击一个输入元素时，存储在 `inputData` 中的值被设置为空字符串，而当你离开该输入元素时，该值会被更新。
 
-#### 代码清单 6.9 directive_focus_events.js: 实现一个带有作用域数据和事件处理程序的控制器，以支持来自视图的失焦和聚焦事件
+#### 清单 6.9 directive_focus_events.js: 实现一个带有作用域数据和事件处理程序的控制器，以支持来自视图的失焦和聚焦事件
+
+
 
 ```
 01 angular.module('myApp', []).
@@ -3288,8 +3381,6 @@ AngularJS 的 `ngBlur` 和 `ngFocus` 指令对于跟踪表单元素何时获得�
 代码清单 6.11 中的代码实现了一个控制器，它为按键按下和释放事件提供模型和键盘处理函数。`storedString` 变量用于在用户在输入框中键入时按下回车键时存储文本输入的值。`keyInfo` 变量存储最后按下的键的 `keyCode`，而 `keyStrokes` 数组记录之前按下按键的 `keyCodes`。在 `keyPressed()` 函数内部，我们检查 `keyCode` 是否为 13（即表示按下了回车键），如果是，我们记录 `storedString` 并重置其他变量。
 
 代码清单 6.12 是 AngularJS 模板，它将 `ng-keydown` 和 `ng-keyup` 指令分配给一个 `<input>` 元素。当 `ng-keydown` 触发时，`keyState` 变量在
-
-
 
 # 第六章 在 AngularJS 视图中实现指令
 
@@ -3356,7 +3447,7 @@ AngularJS 的 `ngBlur` 和 `ngFocus` 指令对于跟踪表单元素何时获得�
 
 ### 在 AngularJS 元素中处理鼠标事件
 
-AngularJS 提供了多个鼠标事件指令，使你能够轻松地为 AngularJS 应用添加鼠标交互功能。你最常用的鼠标事件指令是 `ngClick`，用于处理鼠标点击。然而，你还有其他几个鼠标事件指令，它们对于创建丰富的交互式组件非常有用。清单 6.13 和 6.14 中的代码展示了 `ngClick`、`ngMouseenter`、`ngMouseleave`、`ngMousedown`、`ngMouseup` 和 `ngMouseMove` 指令的用法。
+AngularJS 提供了多个鼠天事件指令，使你能够轻松地为 AngularJS 应用添加鼠标交互功能。你最常用的鼠标事件指令是 `ngClick`，用于处理鼠标点击。然而，你还有其他几个鼠标事件指令，它们对于创建丰富的交互式组件非常有用。清单 6.13 和 6.14 中的代码展示了 `ngClick`、`ngMouseenter`、`ngMouseleave`、`ngMousedown`、`ngMouseup` 和 `ngMouseMove` 指令的用法。
 
 清单 6.13 中的代码实现了一个控制器，它提供了模型以及 `mouseClick()` 和 `mouseMove()` 处理器函数，用于处理点击和鼠标移动事件。鼠标在元素上移动时的实时位置信息存储在 `mouseInfo` 结构中。每次在元素上点击鼠标时，点击位置都会存储在 `lastClickInfo` 中。
 
@@ -3429,7 +3520,7 @@ AngularJS 指令扩展了 HTML 的行为。你可以将指令作为 HTML 元素�
 
 ## 创建你自己的自定义指令以扩展 HTML
 
-与 AngularJS 的许多其他功能一样，你可以通过创建自己的自定义指令来扩展指令功能。自定义指令使你能够通过自行实现元素的行为来扩展 HTML 的功能。如果你有需要操作 DOM 的代码，你应该通过使用自定义指令来实现这一点。与内置指令一样，自定义指令提供了与表单元素交互、将作用域中的数据绑定到视图，以及与浏览器事件交互的能力。
+与 AngularJS 的许多其他功能一样，你可以通过创建自己的自定义指令来扩展指令功能。自定�指令使你能够通过自行实现元素的行为来扩展 HTML 的功能。如果你有需要操作 DOM 的代码，你应该通过使用自定义指令来实现这一点。与内置指令一样，自定义指令提供了与表单元素交互、将作用域中的数据绑定到视图，以及与浏览器事件交互的能力。
 
 本章讨论了自定义指令的设计和实现。你还将有机会看到几个扩展 HTML 能力的自定义指令的基本示例。
 
@@ -3448,33 +3539,50 @@ angular.module('myApp', []).
 
 表 7.1 提供了你可以应用于指令定义返回对象的属性列表，例如上述代码中返回的 `template`。
 
-
-
 ## 7.1 创建自定义指令以扩展HTML
 
 表 7.1 定义了AngularJS指令功能的指令定义属性
+
 | 属性 | 描述 |
+
 |---|---|
+
 | `template` | 允许你定义插入到指令元素中的AngularJS模板文本。 |
+
 | `templateUrl` | 与`template`相同，不同之处在于你指定服务器上的URL，并且部分模板会被下载并插入到指令的元素中。 |
+
 | `restrict` | 允许你指定指令是应用于HTML元素、属性还是两者兼有。 |
+
 | `type` | 设置为一个表示标记使用的文档类型的字符串。这对于具有非HTML根节点的模板很有用，例如SVG或MathML。默认值是`html`。<br>- `html`：所有根模板节点都是HTML，不需要包装。根节点也可以是顶级元素，如`<svg>`或`<math>`。<br>- `svg`：模板仅包含SVG内容，在处理前必须包装在`<svg>`节点中。<br>- `math`：模板仅包含MathML内容，在处理前必须包装在`<math>`节点中。 |
+
 | `multiElement` | 告诉编译器收集具有属性`directive-name-start`和`directive-name-end`的节点之间的DOM节点，并将它们作为指令元素分组在一起。你应该仅在非严格行为性的指令（如`ngClick`）上使用此选项，并且这些指令不操作或替换子节点（如`ngInclude`）。 |
+
 | `priority` | 指定此指令的优先级编号。指令根据其优先级按顺序编译，从最高优先级值的指令开始。前向链接函数按相同顺序执行，从最高优先级开始，但后向链接函数从最低优先级的指令开始反向执行。 |
+
 | `terminal` | 这是一个布尔值，告诉编译器停止并且不编译优先级编号较低的指令。任何优先级编号低于设置为`true`的`terminal`的指令都不会被编译。 |
+
 | `transclude` | 允许你指定指令是否可以访问内部作用域之外的作用域。这使你可以在指令编译和链接时，将元素的内容包装到一个新生成的元素中。 |
+
 | `scope` | 允许你为指令定义作用域。该作用域可以共享父作用域、从中继承，或者拥有自己的隔离作用域。 |
+
 | `compile` | 允许你指定一个可以访问DOM元素属性的编译函数。编译函数使你能够定义可以与AngularJS模板DOM交互和操作的前向链接和后向链接函数。 |
 
 理解自定义指令定义
 
 | 属性 | 描述 |
+
 |---|---|
+
 | link | 类似于编译函数，但也提供对作用域的访问。只有在编译函数不存在时，链接函数才会执行。从链接函数中，你可以注册DOM事件监听器以及操作DOM。链接函数在模板被克隆后执行。通常你应该将大部分模板逻辑放在链接函数中。 |
-| controller | 允许你在指令中定义一个控制器来管理指令的作用域和视图。 |
+
+| controller | 允许你在指令中定义一个控制器来管理指令的作用域和视界。 |
+
 | controllerAs | 指定控制器的别名，以便可以在指令模板中引用它。指令需要为此配置定义一个作用域。当指令用作组件时，此选项很有用。 |
+
 | bindToController | 当为组件使用隔离作用域并使用`controllerAs`时，`bindToController`允许组件将其属性绑定到控制器，而不是作用域。当控制器实例化时，隔离作用域绑定的初始值已经可用。 |
+
 | require | 允许你指定实现此指令所需的其他指令。那些指令的提供程序必须可用，才能创建此指令的实例。 |
+
 | template | 允许你定义插入到指令元素中的AngularJS模板文本。 |
 
 以下各节将更详细地讨论指令选项。
@@ -3519,13 +3627,21 @@ directive('myDirective', function() {
 你可以将指令作为HTML元素、属性或两者兼有来应用。`restrict`属性使你能够限制自定义指令的应用方式。`restrict`属性可以设置为以下值：
 
 - **A**：作为属性名应用。例如：
+
   `<div my-directive="expression"></div>`
+
 - **E**：作为元素名应用。例如：
+
   `<my-directive></my-directive>`
+
 - **C**：作为类应用。例如：
+
   `<div class="my-directive: expression;"></div>`
+
 - **M**：作为注释应用。例如：
+
   `<!-- directive: my-directive expression -->`
+
 - **AEC**：作为属性、元素或类名应用。你也可以使用其他组合，如AE或AC。
 
 例如，你可以将以下指令作为属性或元素应用：
@@ -3586,8 +3702,6 @@ directive('myDirective', function() {
 ```
 
 你也可以使用`require`选项要求多个控制器，在这种情况下，一个控制器数组会传递给`link()`函数。例如：
-
-
 
 ## 128 第七章 创建自定义指令以扩展HTML
 
@@ -3651,7 +3765,9 @@ directive('myDirective', function() {
 使用这段代码，指令将拥有一个完全空的隔离作用域。然而，你可能仍然希望将外部作用域中的一些项映射到指令的内部作用域。你可以使用以下前缀来修饰属性名，以使局部作用域变量在指令的作用域中可用：
 
 - **@**：将一个局部作用域字符串绑定到DOM属性的值。该属性的值将在指令作用域内部可用。
+
 - **=**：在局部 `scope` 属性和指令作用域属性之间创建双向绑定。
+
 - **&**：将局部作用域中的函数绑定到指令作用域。
 
 如果前缀后面没有属性名，则使用指令属性的名称。例如：
@@ -3700,6 +3816,7 @@ angular.module('myApp', []).
 你可以将 `transclude` 选项设置为以下值：
 
 - **true**：插入指令的内容。
+
 - **'element'**：插入整个元素，包括在较低优先级定义的任何指令。
 
 你还必须在指令模板内部的元素中包含 `ngTransclude` 指令。以下是一个实现 `transclude` 的示例，展示了如何从 `myDirective` 指令模板中访问控制器作用域中的 `title` 变量：
@@ -3806,13 +3923,14 @@ directive('myDirective', function() {
 
 编译函数与链接函数非常相似，有一个主要优势，但也有一些缺点。其优势，也是使用编译函数的主要原因，是性能。编译方法在编译模板时只执行一次，而链接函数在每次元素链接时都会执行，例如，当你在 `ng-repeat` 循环中应用多个指令或当模型发生变化时。如果你进行大量的DOM操作，这可能是一个很大的问题。
 
-
-
 这些是 `compile` 函数的局限性：
 
 -   任何操作都是在克隆发生之前应用的。这意味着当自定义指令在 `ng-repeat` 内部使用时，任何 DOM 操作都将应用于生成的*所有*自定义指令。
+
 -   `compile()` 方法无法处理在自身模板或 `compile()` 函数中递归使用自身的指令，因为这会导致无限循环。
+
 -   `compile()` 方法无法访问 `scope`。
+
 -   `transclude` 函数已被弃用并从 `compile` 函数中移除，因此你无法链接到被包含的元素。
 
 `compile()` 方法的语法与 `link()` 方法的语法非常相似。你可以指定一个单独的 postlink 函数，如下所示：
@@ -3846,19 +3964,19 @@ directive('myDirective', function() {
 
 ### 实现自定义指令
 
-你可以定义的自定义指令类型实际上是无限的，这使得 AngularJS 具有极强的可扩展性。自定义指令是 AngularJS 中最复杂、也最难真正理解的部分。最好的入门方式是向你展示一些自定义指令的示例，让你感受一下如何实现它们以及它们如何相互交互。
+你可以定义的自定�指令类型实际上是无限的，这使得 AngularJS 具有极强的可扩展性。自定义指令是 AngularJS 中最复杂、也最难真正理解的部分。最好的入门方式是向你展示一些自定义指令的示例，让你感受一下如何实现它们以及它们如何相互交互。
 
 ### 在自定义指令中操作 DOM
 
-在自定义指令中执行的最常见的任务之一就是操作 DOM。这应该是你的 AngularJS 应用中实际操作 DOM 的唯一地方。在这个练习中，我们构建一个基本的自定义指令，该指令在其包含的元素周围应用一个带有标题和页脚的方框。这个例子非常基础，让你有机会了解如何使用 AngularJS 中的一些机制，例如将值设置为自定义指令的属性。
+在自定�指令中执行的最常见的任务之一就是操作 DOM。这应该是你的 AngularJS 应用中实际操作 DOM 的唯一地方。在这个练习中，我们构建一个基本的自定�指令，该指令在其包含的元素周围应用一个带有标题和页脚的方框。这个例子非常基础，让你有机会了解如何使用 AngularJS 中的一些机制，例如将值设置为自定�指令的属性。
 
-清单 7.1 中的代码创建了一个简单的应用程序，其中包含一个只有作用域变量 `title` 的控制器。然后代码定义了一个启用包含（transclusion）、将自定义指令限制为仅元素名称、并定义一个接受参数 `title` 和 `bwidth`（作为字符串）的独立作用域的指令。该示例还定义了一个 `template`，它添加了标题栏和一个 `<div ng-transclude>` 来存储自定义指令的被包含内容。
+清单 7.1 中的代码创建了一个简单的应用程序，其中包含一个只有作用域变量 `title` 的控制器。然后代码定义了一个启用包含（transclusion）、将自定�指令限制为仅元素名称、并定义一个接受参数 `title` 和 `bwidth`（作为字符串）的独立作用域的指令。该示例还定义了一个 `template`，它添加了标题栏和一个 `<div ng-transclude>` 来存储自定�指令的被包含内容。
 
 `link()` 函数使用 `append` 来追加一个页脚元素。这也可以在 `template` 中完成；但是，我想说明它也可以在 `link()` 函数中完成。还要注意，页脚元素的文本来自父作用域的标题值，使用的是 `scope.$parent.title`。`link` 函数还添加了一个 `border`，并根据作用域中的 `bwidth` 值设置 `display` 和 `width` 值。
 
-清单 7.2 中的代码实现了一个 AngularJS 模板，该模板设置了一些 CSS 样式，然后添加了清单 7.1 中定义的 `<mybox>` 自定义指令。注意，指令的内容从字符串到图像再到段落各不相同。结果显示在图 7.1 中。注意，`bwidth` 属性的大小决定了方框的宽度，并且所有元素都被相同类型的方框包围。
+清单 7.2 中的代码实现了一个 AngularJS 模板，该模板设置了一些 CSS 样式，然后添加了清单 7.1 中定义的 `<mybox>` 自定�指令。注意，指令的内容从字符串到图像再到段落各不相同。结果显示在图 7.1 中。注意，`bwidth` 属性的大小决定了方框的宽度，并且所有元素都被相同类型的方框包围。
 
-#### 清单 7.1 `directive_custom_dom.js`：实现操作 DOM 的自定义指令
+#### 清单 7.1 `directive_custom_dom.js`：实现操作 DOM 的自定�指令
 
 ```
 01 angular.module('myApp', [])
@@ -3882,7 +4000,7 @@ directive('myDirective', function() {
 19   });
 ```
 
-#### 清单 7.2 `directive_custom_dom.html`：使用操作 DOM 的自定义指令的 AngularJS 模板
+#### 清单 7.2 `directive_custom_dom.html`：使用操作 DOM 的自定�指令的 AngularJS 模板
 
 ```
 01 <!doctype html>
@@ -3916,7 +4034,7 @@ directive('myDirective', function() {
 29 </html>
 ```
 
-![图 7.1 在 AngularJS 模板视图中实现操作 DOM 元素的自定义指令。](img/ddb4ab3804c2b28b9554bf0661b46fe1_151_0.png)
+![图 7.1 在 AngularJS 模板视图中实现操作 DOM 元素的自定�指令。](img/ddb4ab3804c2b28b9554bf0661b46fe1_151_0.png)
 
 ### 在自定义指令中实现事件处理程序
 
@@ -3926,7 +4044,7 @@ directive('myDirective', function() {
 
 清单 7.3 中的代码实现了两个指令。第一个指令名为 `zoomit`。注意，在 link 函数内部，该指令监听 `mousedown`、`mouseup`、`mouseleave` 和 `mousemove` 事件。当按下鼠标按钮时，`dragging` 变量被设置为 true，当释放鼠标或鼠标离开元素时，`dragging` 被设置为 false。还要注意，在 `mousedown` 中，默认的事件行为被 `event.preventDefault()` 抑制。这是为了在拖动时消除与默认浏览器行为的任何交互冲突。
 
-在 `mousemove` 处理程序中，我们确定鼠标的位置移动，并相应地增加或减少图像大小。注意，由于加载了完整版本的 jQuery，我们能够使用 `width()` 和 `height()` 函数来获取和设置图像的大小。
+在 `mousemove` 处理程序中，我们确定鼠的位置移动，并相应地增加或减少图像大小。注意，由于加载了完整版本的 jQuery，我们能够使用 `width()` 和 `height()` 函数来获取和设置图像的大小。
 
 `fadeit` 指令与 `zoomit` 指令非常相似，只是图像的 `opacity` 值被更改了。
 
@@ -3960,16 +4078,9 @@ directive('myDirective', function() {
 23             adjustment = 1.1;
 24           } else if ( elem.width() > 100){
 25             adjustment = .9;
-```
-
-
-
-# 第7章 创建自定义指令以扩展HTML
-
-```javascript
-26 }
-27 //需要完整的jQuery库
-28 if(adjustment){
+26           }
+27           //需要完整的jQuery库
+28           if(adjustment){
 29   elem.width(elem.width()*adjustment);
 30   elem.height(elem.height()*adjustment);
 31 }
@@ -3977,7 +4088,7 @@ directive('myDirective', function() {
 33 }
 34 });
 35 }
-36 };
+36 });
 37 })
 38 .directive('fadeit', function() {
 39   return {
@@ -4125,9 +4236,9 @@ directive('myDirective', function() {
 23     </my-photo>
 24   </my-photos>
 25   <script src="http://code.angularjs.org/1.3.0/angular.min.js"></script>
-26   <script src="js/directive_custom_photos.js"></script>
-27 </body>
-28 </html>
+26   <script src="js/directive_custom_photos.js"></27>
+28 </body>
+29 </html>
 ```
 
 ## 清单7.7  my\_photos.html：一个为myPhotos自定义指令提供根元素的部分AngularJS模板
@@ -4163,8 +4274,6 @@ AngularJS最强大的特性之一就是能够创建自己的自定义指令。�
 ### 用户交互事件
 
 你已经接触过用户交互事件。这些包括鼠标和键盘事件，以及其他事件，如 `focus` 和 `blur` 事件。通常，你会在两个地方实现用户事件的交互。一个是使用ng事件指令，
-
-
 
 ### 添加 `$watches` 以跟踪作用域变化事件
 
@@ -4207,7 +4316,7 @@ $scope.$watch('score', function(newValue, oldValue) {
 });
 ```
 
-#### 使用 `$watchGroup` 跟踪多个作用域变量
+#### 使用 `$watchGroup` 跟踨多个作用域变量
 
 AngularJS 还提供了使用 `$watchGroup` 方法监视表达式数组的功能。`$watchGroup` 方法的工作原理与 `$watch` 相同，只是第一个参数是要监视的表达式数组。`listener` 将接收到一个包含被监视变量的新值和旧值的数组。例如，如果你想监视变量 `score` 和 `time`，你可以使用这个：
 
@@ -4311,13 +4420,11 @@ $scope.$watchCollection('scores', function(newValue, oldValue) {
 
 ### 发射和广播自定义事件
 
-作用域的一个强大功能是在作用域层次结构中发射和广播事件。事件使你能够向作用域的不同层级发送通知，告知某个事件已经发生。事件可以是你选择的任何内容，例如值已更改或达到阈值。这在许多情况下都非常有用，例如让子作用域知道父作用域中的值已更改，反之亦然。
+作用域的一个强大功能是在作用域层级中发射和广播事件。事件使你能够向作用域的不同层级发送通知，告知某个事件已经发生。事件可以是你选择的任何内容，例如值已更改或达到阈值。这在许多情况下都非常有用，例如让子作用域知道父作用域中的值已更改，反之亦然。
 
-#### 向父作用域层次结构发射自定义事件
+#### 向父作用域层级发射自定义事件
 
-要从一个作用域发射事件，你使用 $emit() 方法。此方法通过父作用域层次结构向上发送事件。任何已注册监听该事件的祖先作用域……
-
-
+要从一个作用域发射事件，你使用 $emit() 方法。此方法通过父作用域层级向上发送事件。任何已注册监听该事件的祖先作用域……
 
 #### 向子作用域层级广播自定义事件
 
@@ -4334,10 +4441,15 @@ $scope.$watchCollection('scores', function(newValue, oldValue) {
 *listener* 参数是一个函数，它接受事件作为第一个参数，以及由 `$emit()` 或 `$broadcast()` 方法传递的任何参数作为后续参数。事件对象具有以下属性：
 
 -   **targetScope**：调用 `$emit()` 或 `$broadcast()` 的作用域。
+
 -   **currentScope**：当前正在处理事件的作用域。
+
 -   **name**：事件的名称。
+
 -   **stopPropagation()**：一个阻止事件在作用域层级中向上或向上传播的函数。
--   **preventDefault()**：一个阻止浏览器事件默认行为但只执行你自己的自定义代码的函数。
+
+-   **preventDefault()**：一个阻止浏览器事件默认行为但只执行你自己的自定�代码的函数。
+
 -   **defaultPrevented**：一个布尔值，如果调用了 `event.preventDefault()`，则为 `true`。
 
 #### 在嵌套控制器中实现自定义事件
@@ -4347,7 +4459,9 @@ $scope.$watchCollection('scores', function(newValue, oldValue) {
 同样在清单 8.3 中，`changeName()` 函数更改 `currentName` 值，然后广播一个 `CharacterChanged` 事件。`CharacterChanged` 事件在第 26-28 行中处理，使用 `$on()` 方法，并设置作用域中的 `currentInfo` 值，这将更新页面元素。
 
 请注意，清单 8.3 的第 6 行使用了 `this` 关键字来访问 `name` 属性。`name` 属性实际上来自一个动态子作用域，该作用域是因为使用了清单 8.4 中以下指令生成多个元素而创建的。可以从作用域中的 `changeName()` 方法通过使用 `this` 关键字访问子作用域：
+
 `ng-repeat="name in names"`
+
 `ng-click="changeName()"`
 
 清单 8.3 的第 9-14 行实现了一个处理 `CharacterDeleted` 事件的处理器，该事件从 `names` 属性中移除角色名称。第 27 行的子控制器通过 `$broadcast()` 广播此事件。
@@ -4355,6 +4469,8 @@ $scope.$watchCollection('scores', function(newValue, oldValue) {
 清单 8.4 中的 AngularJS 模板代码实现了嵌套的 `ng-controller` 语句，这生成了作用域层级并显示角色的作用域值。此代码还包括一些非常基本的 CSS 样式，使 span 看起来像按钮并在页面上定位元素。图 8.2 显示了生成的网页。当你点击一个角色名称时，会显示有关该角色的信息，当你点击“删除”按钮时，该角色将从按钮和“信息”部分中删除。
 
 **清单 8.3** scope_events.js：在作用域层级中实现 $emit() 和 $broadcast() 事件
+
+
 
 ```javascript
 01 angular.module('myApp', []);
@@ -4392,7 +4508,7 @@ $scope.$watchCollection('scores', function(newValue, oldValue) {
 33    });
 ```
 
-**清单 8.4** scope_events.html：为清单 8.3 控制器渲染作用域层次结构的 HTML 模板代码
+**清单 8.4** `scope_events.html`：为清单 8.3 控制器渲染作用域层次结构的 HTML 模板代码
 
 ```html
 01 <!doctype html>
@@ -4447,7 +4563,7 @@ $scope.$watchCollection('scores', function(newValue, oldValue) {
 
 ![在子控制器中点击删除会从父控制器中移除角色](img/ddb4ab3804c2b28b9554bf0661b46fe1_169_1.png)
 
-图 8.2 使用 $broadcast() 和 $emit() 通过作用域层级发送更改和删除事件。
+图 8.2 使用 `$broadcast()` 和 `$emit()` 通过作用域层级发送更改和删除事件。
 
 ## 总结
 
@@ -4457,11 +4573,9 @@ $scope.$watchCollection('scores', function(newValue, oldValue) {
 
 作用域被组织成层级结构，根作用域在应用程序级别定义。每个控制器实例也会获得一个子作用域的实例。在本章中，你学习了如何从作用域内部发出或广播事件，然后实现监听这些事件并在触发时执行的处理器。
 
-
-
 ## 在Web应用中实现AngularJS服务
 
-AngularJS功能最基本的组件之一是服务。服务为应用程序提供基于任务的功能。可以将服务视为执行一个或多个相关任务的可重用代码块。AngularJS提供了若干内置服务，同时也允许你创建自定义服务。
+AngularJS功能最基本的组件之一是服务。服务为应用程提供基于任务的功能。可以将服务视为执行一个或多个相关任务的可重用代码块。AngularJS提供了若干内置服务，同时也允许你创建自定义服务。
 
 本章介绍AngularJS服务。你将有机会了解并实现一些内置服务，例如用于Web服务器通信的`$http`、用于存储和检索浏览器Cookie的`$cookieStore`，以及提供动画功能的`$animate`。
 
@@ -4472,6 +4586,7 @@ AngularJS服务是单例对象，这意味着只会创建一个实例。服务�
 服务为可重用功能提供了一个容器，AngularJS应用程序可以方便地使用这些功能。服务通过AngularJS中的依赖注入机制进行定义和注册。这使你能够将服务注入到模块、控制器和其他服务中。
 
 > 注意
+
 第3章“理解AngularJS应用动态”讨论了依赖注入。如果你还没有阅读那一章，在继续本章之前应该先阅读。
 
 ### 使用内置服务
@@ -4483,32 +4598,59 @@ AngularJS提供了若干内置服务。这些服务会自动注册到依赖注�
 #### 表9.1 AngularJS内置的常用服务
 
 | 服务 | 描述 |
+
 | :--- | :--- |
+
 | `$anchorScroll` | 提供滚动到基于HTML5规范中定义的规则、由`$location.hash()`指定的页面锚点的功能。 |
+
 | `$animate` | 提供动画钩子，用于连接基于CSS和JavaScript的动画。 |
+
 | `$cacheFactory` | 提供将键/值对放入对象缓存的功能，以便其他使用相同服务的代码组件后续可以检索它们。 |
+
 | `$compile` | 提供将HTML字符串或DOM对象编译为模板，并生成可将作用域和模板连接在一起的模板函数的功能。 |
+
 | `$cookies` | 提供对浏览器Cookie的读写访问。 |
+
 | `$document` | 指定对浏览器`window.document`元素的jQuery包装引用。 |
+
 | `$exceptionHandler` | 指定一个处理程序，用于委托处理AngularJS表达式中未捕获的异常。 |
-| `$http` | 提供简单易用的功能，用于向Web服务器或其他服务发送HTTP请求。 |
+
+| `$http` | 提供简单易用的功能，用于向Web服务器或其他服务发送HTTP请请求。 |
+
 | `$interpolate` | 将带有标记的字符串编译为插值函数。 |
+
 | `$interval` | 提供对浏览器`window.setInterval`功能的访问。 |
+
 | `$locale` | 提供被各种AngularJS组件使用的本地化规则。 |
+
 | `$location` | 提供与浏览器`window.location`对象交互的功能。 |
+
 | `$log` | 提供简单的日志服务。 |
+
 | `$parse` | 将AngularJS表达式字符串解析为JavaScript函数。 |
+
 | `$q` | 提供promise/延迟实现服务。 |
+
 | `$resource` | 使你能够创建一个可以与RESTful服务器端数据源交互的对象。 |
+
 | `$rootElement` | 提供对AngularJS应用中根元素的访问。 |
+
 | `$rootScope` | 提供对AngularJS应用根作用域的访问。 |
+
 | `$route` | 通过监视`$location.url()`并将路径映射到现有路由定义，为控制器和视图提供深度链接URL支持。 |
+
 | `$routeParams` | 提供一项服务，使你能够检索路由中的当前参数集。 |
+
 | `$sanitize` | 提供一项服务，可用于通过将HTML解析为标记来净化输入。 |
+
 | `$sce` | 在处理来自不可信源的数据时，提供严格的上下文转义功能。 |
+
 | `$swipe` | 提供一项服务，使实现设备滑动类型的指令更容易。 |
+
 | `$templateCache` | 提供从Web服务器读取模板到缓存中以供后续使用的功能。 |
+
 | `$timeout` | 提供对浏览器`window.setTimeout`功能的访问。 |
+
 | `$window` | 指定对浏览器窗口元素的jQuery包装引用。 |
 
 ### 使用 $http 服务发送HTTP GET和PUT请求
@@ -4518,16 +4660,22 @@ AngularJS提供了若干内置服务。这些服务会自动注册到依赖注�
 使用`$http`服务有两种方式。最简单的是使用以下与标准HTTP请求对应的内置快捷方法之一：
 
 - delete(url, [config])
+
 - get(url, [config])
+
 - head(url, [config])
+
 - jsonp(url, [config])
+
 - post(url, data, [config])
+
 - put(url, data, [config])
+
 - patch(url, data, [config])
 
 ### 配置 $http 请求
 
-在这些方法中，`url`参数是Web请求的URL。可选的`config`参数是一个JavaScript对象，用于指定实现请求时使用的选项。表9.2列出了你可以在`config`参数中设置的属性。
+在这些方法中，`url`参数是Web请求的URL。可选的`config`参数是一个JavaScript对象，用于指定实现请请求时使用的选项。表9.2列出了你可以在`config`参数中设置的属性。
 
 你也可以通过直接向`$http(config)`方法发送`config`参数来指定请求、URL和数据。例如，以下两行代码完全相同：
 
@@ -4539,19 +4687,33 @@ $http({method: 'GET', url:'/myUrl'});
 #### 表9.2 可在 $http 服务请求的 config 参数中定义的属性
 
 | 属性 | 描述 |
+
 | :--- | :--- |
+
 | method | HTTP方法，例如GET或POST。 |
+
 | url | 正在请求的资源的URL。 |
+
 | params | 要发送的参数。这可以是格式为?key1=value1&key2=value2&...的字符串，也可以是一个对象，在这种情况下它会被转换为JSON字符串。 |
+
 | data | 作为请求消息数据发送的数据。默认情况下，数据以JSON格式发送到服务器。 |
+
 | headers | 随请求一起发送的头信息。你可以指定一个对象，其属性是要发送的头名称。如果对象中的某个属性值为null，则不会发送该头。 |
+
 | xsrfHeaderName | 用于填充XSRF令牌的HTTP头的名称。 |
+
 | xsrfCookieName | 包含XSRF令牌的Cookie的名称。 |
+
 | transformRequest | 用于转换/序列化请求头和主体的函数。该函数接受主体数据作为第一个参数，以及一个按名称获取头信息的getter函数作为第二个参数。例如：function(data, getHeader) |
+
 | transformResponse | 用于转换/反序列化响应头和主体的函数。该函数接受主体数据作为第一个参数，以及一个按名称获取头信息的getter函数作为第二个参数。例如：function(data, getHeader) |
+
 | cache | 一个布尔值，当为true时，表示使用默认的$http缓存来缓存GET响应；否则，如果使用`$cacheFactory`构建了缓存实例，则使用该缓存进行缓存。如果为false且没有构建`$cacheFactory`，则响应不会被缓存。 |
+
 | timeout | 超时时间（以毫秒为单位），超时后应中止请求。 |
+
 | `withCredentials` | 一个布尔值，当为`true`时，表示在XHR对象上设置了`withCredentials`标志。 |
+
 | `responseType` | 期望的响应类型，例如`json`或`text`。 |
 
 ### 实现 `$http` 响应回调函数
@@ -4559,8 +4721,11 @@ $http({method: 'GET', url:'/myUrl'});
 当你使用`$http`对象调用请求方法时，你会得到一个带有promise方法`success()`和`error()`的对象。你可以向这些方法传递一个回调函数，该函数在请求成功或失败时被调用。这些方法接受以下参数：
 
 - `data`：响应数据。
+
 - `status`：响应状态。
+
 - `header`：响应头。
+
 - `config`：请求配置。
 
 以下是在`get()`请求上实现`success()`和`error()`方法的一个简单示例：
@@ -4581,14 +4746,16 @@ $http({method: 'GET', url: '/myUrl'}).
 
 清单9.1实现的Node.js Web服务器处理GET路由`/reset/data`和POST路由`/buy/item`。如果某物品的数量为零，`/buy/item`路由会返回一个HTTP错误。前几行代码只是设置Node.js服务器。如果你不完全理解那里发生了什么，也不用担心。`initStore()`函数初始化产品及物品数量。在第17行，GET路由`/reset/data`被初始化，并将商店对象作为JSON返回。在第21行，POST路由被初始化。该路由递减物品数量并返回商店数据（通常它不需要返回完整数据，但在这个简单示例中，这样做使代码更简洁）。如果物品缺货，则返回400错误。
 
-
-
 ## 第9章 在Web应用中实现AngularJS服务
 
 注意
+
 如果你正在运行普通的server.js HTTP服务器，在启动清单9.1中的service_server.js之前，你需要先将其停止。此外，你还需要将清单9.1中的service_server.js文件放置在清单9.2中的service_http.html的父文件夹中，以便在Node.js静态路由中路径能够正确匹配。目录结构应类似于这样：
+
 ./service_server.js
+
 ./ch09/service_http.html
+
 ./ch09/js/service_http.js
 
 ### 清单9.1 service_server.js：实现支持AngularJS控制器GET和POST路由的Express服务器
@@ -4771,7 +4938,7 @@ $cookies.appCookie = 'New Value';
 
 `$cookieStore`服务提供了`get()`、`put()`和`remove()`函数，用于获取、设置和移除cookie。`$cookieStore`服务的一个很好的特性是，它在设置值之前会将JavaScript对象值序列化为JSON字符串，然后在获取时将其反序列化回对象。
 
-要使用`$cookie`和`$cookieStore`服务，你需要做三件事。首先，在模板中，在`angular.js`之后但在`application.js`之前加载`angular-cookies.js`库。例如：
+要使用`$cookie`和$cookieStore服务，你需要做三件事。首先，在模板中，在`angular.js`之后但在`application.js`之前加载`angular-cookies.js`库。例如：
 
 ```html
 <script src="http://code.angularjs.org/1.3.0/angular.min.js"></script>
@@ -4779,22 +4946,24 @@ $cookies.appCookie = 'New Value';
 ```
 
 > 注意
+
 你也可以从AngularJS网站 http://code.angularjs.org/<version>/ 下载`angular-cookies.js`文件，其中`<version>`是你正在使用的AngularJS版本。根据你使用的AngularJS版本，你可能还需要下载`angular-cookies.min.js.map`文件。
-
-
 
 ## 第9章 在Web应用中实现AngularJS服务
 
 其次，你需要在应用程序的模块定义中，将ngCookies添加到依赖列表中。例如：
+
 `var app = angular.module('myApp', ['ngCookies']);`
 
-第三，你需要将`$cookies`或`$cookieStore`服务注入到你的控制器中。例如：
+第三，你需要将`$cookies`或$cookieStore服务注入到你的控制器中。例如：
+
 `app.controller('myController', ['$scope', '$cookieStore', function($scope, cookieStore) {`
+
 `}]);`
 
-代码清单9.5和9.6展示了如何使用`$cookie`服务来获取和设置Cookie。代码清单9.5在应用中加载了ngCookies，将`$cookieStore`注入到控制器中，然后使用`get()`、`put()`和`remove()`方法来与名为`myAppCookie`的Cookie进行交互。
+代码清单9.5和9.6展示了如何使用$cookie服务来获取和设置Cookie。代码清单9.5在应用中加载了ngCookies，将$cookieStore注入到控制器中，然后使用get()、put()和remove()方法来与名为myAppCookie的Cookie进行交互。
 
-代码清单9.6实现了一组单选按钮，这些按钮与模型中的`favCookie`值绑定，并使用`ng-change`在按钮值改变时调用`setCookie()`函数。图9.2展示了最终生成的网页效果。
+代码清单9.6实现了一组单选按钮，这些按钮与模型中的favCookie值绑定，并使用ng-change在按钮值改变时调用setCookie()函数。图9.2展示了最终生成的网页效果。
 
 ```
 var app = angular.module('myApp', ['ngCookies']);
@@ -4836,13 +5005,13 @@ app.controller('myController', ['$scope', '$cookieStore', function($scope, cooki
 
 ![](img/ddb4ab3804c2b28b9554bf0661b46fe1_183_0.png)
 
-图9.2 实现`$cookieStore`服务，使AngularJS控制器能够与浏览器Cookie进行交互。
+图9.2 实现$cookieStore服务，使AngularJS控制器能够与浏览器Cookie进行交互。
 
-### 使用`$interval`和`$timeout`服务实现计时器
+### 使用$interval和$timeout服务实现计时器
 
-AngularJS的`$interval`和`$timeout`服务使你能够将代码执行延迟一段时间。这些服务与JavaScript的`setInterval`和`setTimeout`功能类似，但它们是在AngularJS框架内工作的。
+AngularJS的$interval和$timeout服务使你能够将代码执行延迟一段时间。这些服务与JavaScript的setInterval和setTimeout功能类似，但它们是在AngularJS框架内工作的。
 
-`$interval`和`$timeout`服务使用以下语法：
+$interval和$timeout服务使用以下语法：
 
 ```
 $interval(callback, delay, [count], [invokeApply]);
@@ -4852,11 +5021,14 @@ $timeout(callback, delay, [invokeApply]);
 参数说明如下：
 
 -   **callback**：当延迟时间到期时执行的函数。
--   **delay**：指定回调函数执行前等待的毫秒数。
--   **count**：表示重复执行间隔的次数。
--   **invokeApply**：是一个布尔值，如果设置为`true`，会导致函数仅在AngularJS事件循环的`$apply()`块内执行。默认值为`true`。
 
-当你调用`$interval()`和`$timeout()`方法时，它们会返回一个promise对象，你可以用它来取消超时或间隔。要取消一个现有的`$timeout`或`$interval`，请调用`cancel()`方法。例如：
+-   **delay**：指定回调函数执行前等待的毫秒数。
+
+-   **count**：表示重复执行间隔的次数。
+
+-   **invokeApply**：是一个布尔值，如果设置为true，会导致函数仅在AngularJS事件循环的$apply()块内执行。默认值为true。
+
+当你调用$interval()和$timeout()方法时，它们会返回一个promise对象，你可以用它来取消超时或间隔。要取消一个现有的$timeout或$interval，请调用cancel()方法。例如：
 
 ```
 var myInterval = $interval(function(){$scope.seconds++;}, 1000, 10, true);
@@ -4864,7 +5036,7 @@ var myInterval = $interval(function(){$scope.seconds++;}, 1000, 10, true);
 $interval.cancel(myInterval);
 ```
 
-如果你通过`$timeout`或`$interval`创建了超时或间隔，那么在作用域或元素指令被销毁时，你必须使用`cancel()`显式地销毁它们。最简单的方法是为`$destroy`事件添加一个监听器。例如：
+如果你通过$timeout或$interval创建了超时或间隔，那么在作用域或元素指令被销毁时，你必须使用cancel()显式地销毁它们。最简单的方法是为$destroy事件添加一个监听器。例如：
 
 ```
 $scope.$on('$destroy', function(){
@@ -4872,49 +5044,71 @@ $scope.$on('$destroy', function(){
 });
 ```
 
-### 使用`$animate`服务
+### 使用$animate服务
 
-`$animate`服务提供了动画检测钩子，你可以在执行`enter`（进入）、`leave`（离开）和`move`（移动）DOM操作，以及`addClass`和`removeClass`操作时使用它们。你可以通过CSS类名或JavaScript中的`$animate`服务来使用这些钩子。
+$animate服务提供了动画检测钩子，你可以在执行enter（进入）、leave（离开）和move（移动）DOM操作，以及addClass和removeClass操作时使用它们。你可以通过CSS类名或JavaScript中的$animate服务来使用这些钩子。
 
 要实现动画，你需要为想要动画化的元素添加一个支持动画的指令。表9.3列出了支持动画的指令以及它们支持的动画事件类型。
 
 #### 表9.3 支持动画的AngularJS指令
 
 | 指令 | 描述 |
+
 | :--- | :--- |
-| ngRepeat | 支持`enter`、`leave`和`move`事件。 |
-| ngView | 支持`enter`和`leave`事件。 |
-| ngInclude | 支持`enter`和`leave`事件。 |
-| ngSwitch | 支持`enter`和`leave`事件。 |
-| ngIf | 支持`enter`和`leave`事件。 |
-| ngClass | 支持`addClass`和`removeClass`事件。 |
-| ngShow | 支持`addClass`和`removeClass`事件。 |
-| ngHide | 支持`addClass`和`removeClass`事件。 |
+
+| ngRepeat | 支持enter、leave和move事件。 |
+
+| ngView | 支持enter和leave事件。 |
+
+| ngInclude | 支持enter和leave事件。 |
+
+| ngSwitch | 支持enter和leave事件。 |
+
+| ngIf | 支持enter和leave事件。 |
+
+| ngClass | 支持addClass和removeClass事件。 |
+
+| ngShow | 支持addClass和removeClass事件。 |
+
+| ngHide | 支持addClass和removeClass事件。 |
 
 ### 在CSS中实现动画
 
-要在CSS中实现动画，你需要在想要动画化的元素中包含`ngClass`指令。AngularJS使用`ngClass`的值作为根名称，用于在动画过程中添加和移除到该元素的其他CSS类。
+要在CSS中实现动画，你需要在想要动画化的元素中包含ngClass指令。AngularJS使用ngClass的值作为根名称，用于在动画过程中添加和移除到该元素的其他CSS类。
 
-当一个定义了`ngClass`指令的元素上触发事件时，就会调用动画事件。表9.4列出了在动画过程中添加和移除的附加类。
+当一个定义了ngClass指令的元素上触发事件时，就会调用动画事件。表9.4列出了在动画过程中添加和移除的附加类。
 
 #### 表9.4 用于动画的附加CSS类
 
 | 类名 | 描述 |
+
 |---|---|
+
 | ng-animate | 当事件触发时添加。 |
+
 | ng-animate-active | 当动画开始并触发CSS过渡时添加。 |
-| <super>-ng-move | 当`move`事件触发时添加。 |
+
+| <super>-ng-move | 当move事件触发时添加。 |
+
 | <super>-ng-move-active | 当移动动画开始并触发CSS过渡时添加。 |
-| <super>-ng-leave | 当`leave`事件触发时添加。 |
+
+| <super>-ng-leave | 当leave事件触发时添加。 |
+
 | <super>-ng-leave-active | 当离开动画开始并触发CSS过渡时添加。 |
-| <super>-ng-enter | 当`enter`事件触发时添加。 |
+
+| <super>-ng-enter | 当enter事件触发时添加。 |
+
 | <super>-ng-enter-active | 当进入动画开始并触发CSS过渡时添加。 |
-| <super>-ng-add | 当`addClass`事件触发时添加。 |
+
+| <super>-ng-add | 当addClass事件触发时添加。 |
+
 | <super>-ng-add-active | 当添加类动画开始并触发CSS过渡时添加。 |
-| <super>-ng-remove | 当`removeClass`事件触发时添加。 |
+
+| <super>-ng-remove | 当removeClass事件触发时添加。 |
+
 | <super>-ng-remove-active | 当移除类动画开始并触发CSS过渡时添加。 |
 
-要实现基于CSS的动画，你只需要为表9.4中列出的附加类添加适当的CSS过渡代码。为了说明这一点，以下代码片段为一个名为`.img-fade`的用户自定义类实现了添加和移除类的过渡效果，该动画将图像的`opacity`在2秒内更改为`.1`：
+要实现基于CSS的动画，你只需要为表9.4中列出的附加类添加适当的CSS过渡代码。为了说明这一点，以下代码片段为一个名为.img-fade的用户自定义类实现了添加和移除类的过渡效果，该动画将图像的opacity在2秒内更改为.1：
 
 ```
 .img-fade-add, .img-fade-remove {
@@ -4929,40 +5123,39 @@ $scope.$on('$destroy', function(){
 }
 ```
 
-请注意，过渡被添加到了`.img-fade-add`和`.img-fade-remove`类上，但实际的类定义被应用到了`.img-fade`上。你还需要类定义`.img-fade-add.img-fade-add-active`来设置过渡的结束状态。
+请注意，过渡被添加到了.img-fade-add和.img-fade-remove类上，但实际的类定义被应用到了.img-fade上。你还需要类定义.img-fade-add.img-fade-add-active来设置过渡的结束状态。
 
 ### 在JavaScript中实现动画
 
 实现AngularJS的CSS动画非常简单，但你也可以使用jQuery在JavaScript中实现动画。JavaScript动画可以更直接地控制你的动画。此外，JavaScript动画不需要浏览器支持CSS3。
 
-要在JavaScript中实现动画，你需要在加载`angular.js`库之前，在你的模板中包含jQuery库。例如：
+要在JavaScript中实现动画，你需要在加载angular.js库之前，在你的模板中包含jQuery库。例如：
 
 ```
 <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 ```
 
 > **注意**
+
 如果你想利用jQuery动画的全部功能，就需要包含完整的jQuery库。如果你确实决定包含jQuery库，请确保它在HTML代码中是在AngularJS库之前加载的。
 
-你还需要在你的应用程序`Module`对象定义中包含`ngAnimate`依赖。例如：
+你还需要在你的应用程序Module对象定义中包含ngAnimate依赖。例如：
 
 ```
 var app = angular.module('myApp', ['ngAnimate']);
 ```
 
-然后，你可以使用`Module`对象上的`animate()`方法来实现动画。`animate()`方法返回一个对象，该对象提供了用于处理`enter`、`leave`、`move`、`addClass`和`removeClass`事件的函数。这些函数的第一个参数是要动画化的元素。然后，你可以使用jQuery的`animate()`方法来为元素设置动画。
-
-
+然后，你可以使用Module对象上的animate()方法来实现动画。animate()方法返回一个对象，该对象提供了用于处理enter、leave、move、addClass和removeClass事件的函数。这些函数的第一个参数是要动画化的元素。然后，你可以使用jQuery的animate()方法来为元素设置动画。
 
 ## 第9章 在Web应用中实现AngularJS服务
 
-jQuery的`animate()`方法使用以下语法，其中`cssProperties`是CSS属性更改的对象，`duration`以毫秒为单位，`easing`是缓动方法，`callback`是动画完成时要执行的函数：
+jQuery的animate()方法使用以下语法，其中cssProperties是CSS属性更改的对象，duration以毫秒为单位，easing是缓动方法，callback是动画完成时要执行的函数：
 
 ```
 animate(cssProperties, [duration], [easing], [callback])
 ```
 
-例如，以下代码通过将`opacity`设置为0来为元素添加`fadeClass`类的动画效果：
+例如，以下代码通过将opacity设置为0来为元素添加fadeClass类的动画效果：
 
 ```
 app.animation('.fadeClass', function() {
@@ -4978,13 +5171,13 @@ app.animation('.fadeClass', function() {
 
 清单9.7、9.8和9.9实现了一个基本动画示例，该示例使用JavaScript方法为图像应用淡入淡出动画，并使用CSS过渡动画来调整图像大小。
 
-清单9.7包含了AngularJS控制器和动画代码。请注意，同一个类`.fadeOut`通过钩入`addClass`和`removeClass`事件，同时应用于淡入和淡出动画。
+清单9.7包含了AngularJS控制器和动画代码。请注意，同一个类.fadeOut通过钩入addClass和removeClass事件，同时应用于淡入和淡出动画。
 
-清单9.8实现了支持该动画的AngularJS模板。请注意，第5行加载jQuery库以支持JavaScript动画代码。此外，第6行加载了`animate.css`脚本，该脚本包含清单9.9中所示的过渡动画。按钮只需添加和移除相应的类即可触发动画。
+清单9.8实现了支持该动画的AngularJS模板。请注意，第5行加载jQuery库以支持JavaScript动画代码。此外，第6行加载了animate.css脚本，该脚本包含清单9.9中所示的过渡动画。按钮只需添加和移除相应的类即可触发动画。
 
 清单9.9提供了在动画过程中实现添加和移除类时所需的过渡CSS定义。图9.3展示了效果。
 
-#### 清单9.7 service_animate.js：实现使用`$animation`服务的jQuery动画的AngularJS控制器
+#### 清单9.7 service_animate.js：实现使用$animation服务的jQuery动画的AngularJS控制器
 
 ```
 01 var app = angular.module('myApp', ['ngAnimate']);
@@ -5038,7 +5231,8 @@ app.animation('.fadeClass', function() {
 ```
 
 注意
-你也可以从AngularJS网站 http:// code.angularjs.org/<version>/ 下载`angular-animate.js`文件，其中`<version>`是你使用的AngularJS版本。根据你使用的AngularJS版本，你可能还需要下载`angular-animate.min.js.map`文件。
+
+你也可以从AngularJS网站 http:// code.angularjs.org/<version>/ 下载angular-animate.js文件，其中<version>是你使用的AngularJS版本。根据你使用的AngularJS版本，你可能还需要下载angular-animate.min.js.map文件。
 
 #### 清单9.9 animate.css：为AngularJS动画代码中不同类阶段提供过渡效果的CSS代码
 
@@ -5062,13 +5256,13 @@ app.animation('.fadeClass', function() {
 
 ![](img/ddb4ab3804c2b28b9554bf0661b46fe1_190_0.png)
 
-图9.3 在CSS和JavaScript中同时实现`$animation`服务，以对图像的淡入淡出和大小调整进行动画处理。
+图9.3 在CSS和JavaScript中同时实现$animation服务，以对图像的淡入淡出和大小调整进行动画处理。
 
-### 使用`$location`服务
+### 使用$location服务
 
-`$location`服务是对JavaScript `window.location`对象的封装。这使得URL在你的AngularJS应用中可访问。你不仅可以获取关于URL的信息，还可以修改它，用新URL更改位置或导航到特定的哈希标签。
+$location服务是对JavaScript window.location对象的封装。这使得URL在你的AngularJS应用中可访问。你不仅可以获取关于URL的信息，还可以修改它，用新URL更改位置或导航到特定的哈希标签。
 
-要将`$location`服务添加到控制器或服务中，你只需使用标准的依赖注入方法注入它。例如：
+要将$location服务添加到控制器或服务中，你只需使用标准的依赖注入方法注入它。例如：
 
 ```
 app.controller('myController', ['$scope', '$location',
@@ -5077,25 +5271,35 @@ app.controller('myController', ['$scope', '$location',
     }]);
 ```
 
-表9.5列出了可以在`$location`服务上调用的方法，并描述了它们的实现。
+表9.5列出了可以在$location服务上调用的方法，并描述了它们的实现。
 
-**表9.5 AngularJS `$location`服务对象上可用的方法**
+**表9.5 AngularJS $location服务对象上可用的方法**
 
 | 方法 | 描述 |
+
 | :--- | :--- |
-| `absUrl()` | 返回传递给浏览器的完整URL。 |
-| `url([url])` | 如果不带参数调用，则返回传递给浏览器的URL，例如：<br>`location.url()`<br><br>向`url()`方法添加`url`参数将为位置设置当前的相对URL。例如：<br><br>`location.url('/new/path?new=query')` |
-| `protocol()` | 返回当前URL中使用的协议。 |
-| `host()` | 返回当前URL中使用的主机。 |
-| `port()` | 返回当前URL中使用的端口。 |
-| `path([path])` | 如果不传递参数，则返回当前URL中使用的协议，例如：<br>`location.path()`<br><br>向`path()`方法添加`path`参数将为位置设置当前的相对路径。例如：<br><br>`location.path('/new/path')` |
-| `search([search], [paramValue])` | 如果不向`search()`函数传递`search`或`paramValue`参数，则返回一个包含作为URL一部分传递的查询参数的JavaScript对象，例如：`location.search()`<br><br>如果你传递了`search`和`paramValue`参数，那么URL中由`search`指定的参数的值将更改为由`paramValue`指定的值。例如：<br><br>`location.search("param1", "newValue")` |
-| `hash()` | 返回当前URL中使用的哈希标签。 |
-| `replace()` | 当你在`$location`服务对象上调用此方法时，所有后续对位置的更改将替换历史记录，而不是添加一条新记录。 |
 
-清单9.10和9.11中的代码实现了一个简单的示例，展示了如何使用`$location`服务来访问和更改传递给浏览器的URL中的元素。清单9.10中的代码实现了一个控制器，该控制器注入了`$location`服务。`updateLocationInfo()`函数从`$location`服务获取`url`、`absUrl`、`host`、`protocol`、`path`、`search`和`hash`值。`changePath()`、`changeHash()`和`changeSearch()`函数更改位置中的`path`、`hash`和`search`值，然后用新值更新作用域。
+| absUrl() | 返回传递给浏览器的完整URL。 |
 
-清单9.11中的代码实现了一个AngularJS模板，用于显示捕获的`$location`服务信息，并提供用于更改`path`、`hash`和`search`属性的链接。图9.4展示了运行中的网页。请注意，当点击链接时，`path`、`hash`和`search`值会发生变化。
+| url([url]) | 如果不带参数调用，则返回传递给浏览器的URL，例如：<br>`location.url()`<br><br>向url()方法添加url参数将为位置设置当前的相对URL。例如：<br><br>`location.url('/new/path?new=query')` |
+
+| protocol() | 返回当前URL中使用的协议。 |
+
+| host() | 返回当前URL中使用的主机。 |
+
+| port() | 返回当前URL中使用的端口。 |
+
+| path([path]) | 如果不传递参数，则返回当前URL中使用的协议，例如：<br>`location.path()`<br><br>向path()方法添加path参数将为位置设置当前的相对路径。例如：<br><br>`location.path('/new/path')` |
+
+| search([search], [paramValue]) | 如果不向search()函数传递search或paramValue参数，则返回一个包含作为URL一部分传递的查询参数的JavaScript对象，例如：`location.search()`<br><br>如果你传递了search和paramValue参数，那么URL中由search指定的参数的值将更改为由paramValue指定的值。例如：<br><br>`location.search("param1", "newValue")` |
+
+| hash() | 返回当前URL中使用的哈希标签。 |
+
+| replace() | 当你在$location服务对象上调用此方法时，所有后续对位置的更改将替换历史记录，而不是添加一条新记录。 |
+
+清单9.10和9.11中的代码实现了一个简单的示例，展示了如何使用$location服务来访问和更改传递给浏览器的URL中的元素。清单9.10中的代码实现了一个控制器，该控制器注入了$location服务。updateLocationInfo()函数从$location服务获取url、absUrl、host、protocol、path、search和hash值。changePath()、changeHash()和changeSearch()函数更改位置中的path、hash和search值，然后用新值更新作用域。
+
+清单9.11中的代码实现了一个AngularJS模板，用于显示捕获的$location服务信息，并提供用于更改path、search和hash属性的链接。图9.4展示了运行中的网页。请注意，当点击链接时，path、hash和search值会发生变化。
 
 #### 清单9.10 service_location.js：实现控制器以从$location服务收集信息并提供更改path、search和hash值功能的AngularJS应用
 
@@ -5109,16 +5313,9 @@ app.controller('myController', ['$scope', '$location',
 07     $scope.host = location.host();
 08     $scope.port = location.port();
 09     $scope.protocol = location.protocol();
-```
-
-
-
-## 第178页 第9章 在Web应用中实现AngularJS服务
-
-```
-10 $scope.path = location.path();
-11 $scope.search = location.search();
-12 $scope.hash = location.hash();
+10   $scope.path = location.path();
+11   $scope.search = location.search();
+12   $scope.hash = location.hash();
 13 };
 14 $scope.changePath = function(){
 15   location.path("/new/path");
@@ -5133,10 +5330,10 @@ app.controller('myController', ['$scope', '$location',
 24   $scope.updateLocationInfo();
 25 };
 26 $scope.updateLocationInfo();
-27 }));
+27 }});
 ```
 
-**代码清单 9.11** *service\_location.html: 一个AngularJS模板，用于显示从 `$location` 服务收集的信息，并提供修改 path、search 和 hash 值的链接*
+**代码清单 9.11** *service_location.html: 一个AngularJS模板，用于显示从 $location 服务收集的信息，并提供修改 path、search 和 hash 值的链接*
 
 ```
 01 <!doctype html>
@@ -5176,19 +5373,19 @@ app.controller('myController', ['$scope', '$location',
 
 点击链接会更新URL和位置值。
 
-图 9.4 在AngularJS应用中实现 `$location` 服务以与浏览器位置进行交互。
+图 9.4 在AngularJS应用中实现 $location 服务以与浏览器位置进行交互。
 
 ### 使用 $q 服务提供延迟响应
 
-AngularJS提供的一个非常有用的服务是 `$q` 服务。`$q` 服务是一种 promise/deferred（承诺/延迟）响应实现。由于并非所有服务都能立即响应请求，因此需要将响应延迟到服务准备好响应为止。这就是 `$q` 服务的用武之地。其核心思想是，你可以发起一个请求，但你不会直接得到响应，而是会得到一个服务将进行响应的承诺。然后，请求的应用程序可以分配一个回调函数，该函数在延迟的请求成功完成或失败时执行。
+AngularJS提供的一个非常有用的服务是 $q 服务。$q 服务是一种 promise/deferred（承诺/延迟）响应实现。由于并非所有服务都能立即响应请求，因此需要将响应延迟到服务准备好响应为止。这就是 $q 服务的用武之地。其核心思想是，你可以发起一个请求，但你不会直接得到响应，而是会得到一个服务将进行响应的承诺。然后，请求的应用程序可以分配一个回调函数，该函数在延迟的请求成功完成或失败时执行。
 
-要使用 `$q` 服务实现延迟响应，首先需要使用以下语法创建一个延迟对象：
+要使用 $q 服务实现延迟响应，首先需要使用以下语法创建一个延迟对象：
 
 ```
 var deferred = $q.defer();
 ```
 
-创建延迟对象后，你可以通过访问 `promise` 属性来传递这个承诺。例如，下面这行代码将承诺返回给调用应用程序：
+创建延迟对象后，你可以通过访问 promise 属性来传递这个承诺。例如，下面这行代码将承诺返回给调用应用程序：
 
 ```
 function makeDeferredRequest(){
@@ -5197,13 +5394,13 @@ function makeDeferredRequest(){
 }
 ```
 
-然后，请求的应用程序可以调用 promise 对象的 `then()` 方法，使用以下语法注册 `successCallback`（成功回调）、`errorCallback`（错误回调）和 `notifyCallback`（通知回调）函数：
+然后，请求的应用程序可以调用 promise 对象的 then() 方法，使用以下语法注册 successCallback（成功回调）、errorCallback（错误回调）和 notifyCallback（通知回调）函数：
 
 ```
 promise.then(successCallback, [errorCallback], [notifyCallback])
 ```
 
-下面展示了 `then()` 函数的一个示例实现：
+下面展示了 then() 函数的一个示例实现：
 
 ```
 var promise = makeDeferredRequest();
@@ -5225,24 +5422,28 @@ promise.then(
 **表 9.6 $q 服务的延迟对象上可用的方法**
 
 | 方法 | 描述 |
-| :--- | :--- |
-| `$resolve(value)` | 在 promise 对象上执行 `successCallback` 函数，并将指定的 `value` 传递给它。 |
-| `$reject(reason)` | 在 promise 对象上执行 `errorCallback` 函数，并将指定的 `reason` 传递给它。 |
-| `$notify(value)` | 在 promise 对象上执行 `notifyCallback` 函数，并将指定的 `value` 传递给它。 |
 
-第10章“创建你自己的自定义AngularJS服务”中的“实现数据库访问服务”一节，展示了使用 `$q` 服务处理对远程数据库请求的延迟响应的一个好例子。
+| :--- | :--- |
+
+| $resolve(value) | 在 promise 对象上执行 successCallback 函数，并将指定的 value 传递给它。 |
+
+| $reject(reason) | 在 promise 对象上执行 errorCallback 函数，并将指定的 reason 传递给它。 |
+
+| $notify(value) | 在 promise 对象上执行 notifyCallback 函数，并将指定的 value 传递给它。 |
+
+第10章“创建你自己的自定义AngularJS服务”中的“实现数据库访问服务”一节，展示了使用 $q 服务处理对远程数据库请求的延迟响应的一个好例子。
 
 ## 总结
 
-AngularJS 服务是你可以注册到依赖注入器的单例对象；控制器和其他 AngularJS 组件，包括其他服务，都可以使用它们。AngularJS 以服务的形式提供了大量的后端功能，例如 `$http`，它使你能够轻松地将 Web 服务器通信集成到你的 AngularJS 应用程序中。
+AngularJS 服务是你可以注册到依赖注入器的单例对象；控制器和其他 AngularJS 组件，包括其他服务，都可以使用它们。AngularJS 以服务的形式提供了大量的后端功能，例如 $http，它使你能够轻松地将 Web 服务器通信集成到你的 AngularJS 应用程序中。
 
-在本章中，你还了解了几种内置服务，如 `$cookieStore`、`$q`、`$window`、`$location`、`$animate` 和 `$cacheFactory`。这些以及其他 AngularJS 服务可用于轻松地将功能注入到你的控制器、指令和自定义服务中。
+在本章中，你还了解了几种内置服务，如 $cookieStore、$q、$window、$location、$animate 和 $cacheFactory。这些以及其他 AngularJS 服务可用于轻松地将功能注入到你的控制器、指令和自定义服务中。
 
 # 第10章 创建你自己的自定义AngularJS服务
 
 AngularJS 在内置服务中提供了很多功能；然而，你也需要能够实现自己的自定义服务来提供你自己的特定功能。当你需要为你的应用程序提供基于任务的功能时，你应该实现一个自定义服务。
 
-在实现自定义服务时，你需要将服务视为执行一个或多个相关任务的可重用代码块。然后你可以设计并将它们分组到自定义模块中，这些模块可以被多个不同的 AngularJS 应用程序轻松使用。
+在实现自定服务时，你需要将服务视为执行一个或多个相关任务的可重用代码块。然后你可以设计并将它们分组到自定义模块中，这些模块可以被多个不同的 AngularJS 应用程序轻松使用。
 
 本章介绍了 AngularJS 自定义服务。然后，本章提供了几个自定义 AngularJS 服务实现的示例，以便你更清楚地了解如何设计和构建自己的服务。
 
@@ -5250,11 +5451,11 @@ AngularJS 在内置服务中提供了很多功能；然而，你也需要能够�
 
 AngularJS 允许你创建自己的自定义服务，为需要该功能的 AngularJS 组件提供功能。正如你在上一章中所看到的，内置的 AngularJS 服务为 AngularJS 应用程序提供了各种各样的功能。使用自定义服务，你可以以多种方式自定义、增强和扩展该功能。
 
-在你的代码中，你可能主要会实现四种类型的服务：`value`（值）、`constant`（常量）、`factory`（工厂）和 `service`（服务）。以下各节将介绍这些服务。
+在你的代码中，你可能主要会实现四种类型的服务：value（值）、constant（常量）、factory（工厂）和 service（服务）。以下各节将介绍这些服务。
 
 ### 定义 value 服务
 
-你使用非常简单的 `value` 服务来定义一个单一的值，你可以将其作为服务提供者进行注入。`value` 方法使用以下语法，其中 `name` 是服务名称，`object` 是你想提供的任何 JavaScript 对象：
+你使用非常简单的 value 服务来定义一个单一的值，你可以将其作为服务提供者进行注入。value 方法使用以下语法，其中 name 是服务名称，object 是你想提供的任何 JavaScript 对象：
 
 `value(name, object)`
 
@@ -5267,7 +5468,7 @@ app.value('myValue', {color:'blue', value:'17'});
 
 ### 定义 constant 服务
 
-`constant` 服务基本上与 `value` 服务相同，不同之处在于 `constant` 服务在构建模块对象的配置阶段可用，而 `value` 服务则不可用。`constant` 方法使用以下语法，其中 `name` 是服务名称，`object` 是你想提供的任何 JavaScript 对象：
+constant 服务基本上与 value 服务相同，不同之处在于 constant 服务在构建模块对象的配置阶段可用，而 value 服务则不可用。constant 方法使用以下语法，其中 name 是服务名称，object 是你想提供的任何 JavaScript 对象：
 
 `constant(name, object)`
 
@@ -5280,11 +5481,11 @@ app.constant('myConst', "Constant String");
 
 ### 使用工厂提供者构建 factory 服务
 
-`factory` 方法提供了将功能实现到服务中的能力。它也可以依赖于其他服务提供者，使你能够构建模块化的代码。`factory` 方法使用以下语法，其中 `name` 是服务名称，`factoryProvider` 是一个构建工厂服务的提供者函数：
+factory 方法提供了将功能实现到服务中的能力。它也可以依赖于其他服务提供者，使你能够构建模块化的代码。factory 方法使用以下语法，其中 name 是服务名称，factoryProvider 是一个构建工厂服务的提供者函数：
 
 `factory(name, factoryProvider)`
 
-你可以用其他服务来注入 `factory` 方法，它返回一个具有适当功能的服务对象。该功能可以是一个复杂的 JavaScript 服务、一个值或一个简单的函数。例如，以下代码实现了一个 `factory` 服务，该服务返回一个将两个数相加的函数：
+你可以用其他服务来注入 factory 方法，它返回一个具有适当功能的服务对象。该功能可以是一个复杂的 JavaScript 服务、一个值或一个简单的函数。例如，以下代码实现了一个 factory 服务，该服务返回一个将两个数相加的函数：
 
 ```
 var app = angular.module('myApp', []);
@@ -5296,11 +5497,11 @@ app.factory('multiplier', ['myConst', function (myConst) {
 
 ### 使用对象定义 service 服务
 
-`service` 方法提供了将功能实现到服务中的能力。然而，`service` 方法的工作方式与 `factory` 方法略有不同。`service` 方法接受一个构造函数作为第二个参数，并使用它来创建对象的新实例。`service` 方法使用以下语法，其中 `name` 是服务名称，`constructor` 是一个构造函数：
+service 方法提供了将功能实现到服务中的能力。然而，service 方法的工作方式与 factory 方法略有不同。service 方法接受一个构造函数作为第二个参数，并使用它来创建对象的新实例。service 方法使用以下语法，其中 name 是服务名称，constructor 是一个构造函数：
 
 `service(name, constructor)`
 
-该服务方法同样可以接受依赖注入。以下代码实现了一个基础的服务方法，提供了`add()`函数和`multiply()`函数：
+该服务方法同样可以接受依赖注入。以下代码实现了一个基础的服务方法，提供了add()函数和multiply()函数：
 
 ```
 var app = angular.module('myApp', []);
@@ -5311,7 +5512,8 @@ function ConstMathObj(myConst) {
 }
 app.service('constMath', ['myConst', ConstMathObj] );
 ```
-请注意，`ConstMathObj`构造函数首先被创建，然后`service()`方法调用它，并通过依赖注入将`myConst`服务插入其中。
+
+请注意，ConstMathObj构造函数首先被创建，然后service()方法调用它，并通过依赖注入将myConst服务插入其中。
 
 ## 将自定义服务集成到你的AngularJS应用中
 
@@ -5321,19 +5523,19 @@ app.service('constMath', ['myConst', ConstMathObj] );
 
 ### 实现一个使用全部四种类型服务的简单应用
 
-在这个示例中，你将构建`constant`、`value`、`factory`和`service`服务。目的是提供机会看看每种类型如何实现，以及在你的应用中使用多种类型服务的视角。
+在这个示例中，你将构建constant、value、factory和service服务。目的是提供机会看看每种类型如何实现，以及在你的应用中使用多种类型服务的视角。
 
-清单10.1中的代码展示了将`value`、`constant`、`factory`和`service`服务集成到单个模块中的示例。该示例非常基础且易于理解。请注意，`censorWords`和`repString`被注入到工厂和服务定义中并在其中使用。
+清单10.1中的代码展示了将value、constant、factory和service服务集成到单个模块中的示例。该示例非常基础且易于理解。请注意，censorWords和repString被注入到工厂和服务定义中并在其中使用。
 
 第4-13行实现了一个工厂服务，该服务返回一个审查字符串的函数。请注意，第26行直接调用该工厂来审查字符串。
 
-第14-25行实现了一个`service`服务，首先定义了`CensorObj`对象构造函数，然后在第26行向应用注册该服务。`CensorObj`对象定义了两个函数：`censor()`，用于审查字符串中的词语；以及`censoredWords()`，用于返回将被审查的词语。
+第14-25行实现了一个service服务，首先定义了CensorObj对象构造函数，然后在第26行向应用注册该服务。CensorObj对象定义了两个函数：censor()，用于审查字符串中的词语；以及censoredWords()，用于返回将被审查的词语。
 
-在第27和28行，`censorS`和`censorF`服务被注入到一个控制器中。该控制器随后可以通过在第34行直接调用`censorF()`以及在第35行调用`censorS.censor()`来使用自定义服务。
+在第27和28行，censorS和censorF服务被注入到一个控制器中。该控制器随后可以通过在第34行直接调用censorF()以及在第35行调用censorS.censor()来使用自定义服务。
 
-清单10.2中的代码实现了一个AngularJS模板，用于显示被审查的词语并提供一个文本输入框以输入短语。该短语会显示两次，一次由`censorF`审查，一次由`censorS`审查。图10.1展示了运行中的AngularJS应用。
+清单10.2中的代码实现了一个AngularJS模板，用于显示被审查的词语并提供一个文本输入框以输入短语。该短语会显示两次，一次由censorF审查，一次由censorS审查。图10.1展示了运行中的AngularJS应用。
 
-**清单10.1 `service_custom_censor.js`：在AngularJS控制器中实现和使用多种自定义服务**
+**清单10.1 service_custom_censor.js**：在AngularJS控制器中实现和使用多种自定义服务
 
 ```
 01 var app = angular.module('myApp', []);
@@ -5375,7 +5577,7 @@ app.service('constMath', ['myConst', ConstMathObj] );
 37 }]);
 ```
 
-### 清单10.2 **service_custom_sensor.html**：展示AngularJS控制器中多种自定义服务交互的模板
+### 清单10.2 service_custom_sensor.html：展示AngularJS控制器中多种自定义服务交互的模板
 
 ```
 01 <!doctype html>
@@ -5416,7 +5618,9 @@ app.service('constMath', ['myConst', ConstMathObj] );
 
 在这个示例中，你将构建一个简单的时间服务，为不同的城市生成本地时间对象。然后，在AngularJS模板中，你将在多个控制器中使用该时间服务。目的是给你一个机会看看重用一个AngularJS服务是多么容易。
 
-清单10.3中的代码使用函数`TimeObj()`来生成服务对象，实现了一个名为`TimeService`的自定义服务。`TimeObj`中的代码简单地定义了一个城市列表及其时区偏移量，并提供了`getTZDate()`函数以返回特定城市的JavaScript Date对象。`getCities()`函数创建一个包含所代表城市的数组并返回它。
+清单10.3中的代码使用函数TimeObj()来生成服务对象，实现了一个名为TimeService的自定义服务。TimeObj中的代码简单地定义了一个城市列表及其时区偏移量，并提供了getTZDate()函数以返回特定城市的JavaScript Date对象。getCities()函数创建一个包含所代表城市的数组并返回它。
+
+
 
 请注意，应用中添加了几个控制器，包括`LAController`、`NYController`、`LondonController`和`TimeController`。这些控制器被注入了`TimeService`服务，并使用它来设置某个城市的当前时间，或者在`TimeController`的情况下，设置所有城市的时间。
 
@@ -5426,7 +5630,7 @@ app.service('constMath', ['myConst', ConstMathObj] );
 
 ### 清单10.3 service_custom_time.js：在多个控制器中实现和使用自定义AngularJS服务
 
-```
+```javascript
 01 var app = angular.module('myApp', []);
 02 function TimeObj() {
 03   var cities = { 'Los Angeles': -8,
@@ -5454,8 +5658,6 @@ app.service('constMath', ['myConst', ConstMathObj] );
 25 app.service('TimeService', [TimeObj]);
 26 app.controller('LAController', ['$scope', 'TimeService',
 ```
-
-
 
 ## 190 第10章 创建你自己的自定义AngularJS服务
 
@@ -5542,17 +5744,25 @@ app.controller('TimeController', ['$scope', 'TimeService',
 清单 10.5 实现了Node.js Web服务器，该服务器处理以下GET和POST路由，以获取和设置用户对象以及表数据数组，模拟对远程数据库服务的请求：
 
 - `/get/user`：一个GET路由，返回用户对象的JSON版本。
+
 - `/get/data`：一个GET路由，返回表数据数组的JSON版本。
+
 - `/set/user`：一个POST路由，在请求体中接受一个用户对象，并更新服务器上的对象以模拟存储用户对象。
+
 - `/set/data`：一个POST路由，在请求体中接受一个对象数组，并更新`data`变量以模拟存储数据库数据。通常，你不会一次性存储所有表数据，但为了本例的简便性，这里就是这样处理的。
 
 你不必过多关注清单10.5中的代码，除了理解它提供的路由，以便你能跟上清单10.6、10.7和10.8中定义的AngularJS应用程序中的交互。该服务器非常基础，不处理错误，只是动态生成数据以模拟数据库。
 
 > 注意
+
 > 如果`server.js` HTTP服务器正在运行，你需要在启动清单10.5中的`service_server.js`之前停止它。此外，你需要将清单10.5中的`service_db_server.js`文件放在清单10.6中的`service_db_access.html`的父文件夹中，以便在Node.js静态路由中路径能正确匹配。结构应类似于：
+
 > ./service_db_server.js
+
 > ./ch10/service_custom_db.html
+
 > ./ch09/js/service_custom_db_access.js
+
 > ./ch09/js/service_custom_db.js
 
 ### 清单 10.5 service_db_server.js：实现一个支持GET和POST路由的Node.js Express服务器，为AngularJS控制器模拟数据库服务
@@ -5619,7 +5829,7 @@ app.listen(80);
 
 清单10.6中的代码实现了一个名为`dbAccess`的模块和一个名为`DBService`的自定义服务。创建服务对象的`DBAccessObj()`函数提供了`getUserData()`和`updateUser()`方法，用于使用`$http`请求从服务器检索和更新用户对象。`getData`和`updateData()`方法为表数据提供了类似的功能。注意`$q`服务是如何用于延迟响应`$http`请求的，因为请求不会立即返回。
 
-清单10.7中的代码实现了应用模块。注意第1行将`dbAccess`模块注入到`myApp`模块中，以提供对`DBService`服务的访问。`DBService`在第2行被注入到控制器中，然后在第6、12、18和23行被用于调用服务器以获取和设置数据，并将其赋值给作用域中的`$scope.userInfo`和`$scope.data`值。注意`$q`服务`then()`函数是如何用于处理延迟响应的。为了简便，这里只实现了`successCallback`函数。通常，你也希望同时实现一个`errorCallback`函数。
+清单10.7中的代码实现了应用模块。注意第1行将`dbAccess`模块注入到`myApp`模块中，以提供对`DBService`服务的访问。`DBService`在第2行被注入到控制器中，然后在第6、12、18和23行被用于调用服务器以获取和设置数据，并将其赋值给作用域中的`$scope.userInfo`和$`scope.data`值。注意`$q`服务`then()`函数是如何用于处理延迟响应的。为了简便，这里只实现了`successCallback`函数。通常，你也希望同时实现一个`errorCallback`函数。
 
 清单10.8中的代码实现了一个AngularJS模板，该模板在文本输入框中显示用户信息，并将值直接绑定到作用域。还有两个输入按钮，分别调用`updateUser()`以更新服务器上的用户信息，以及`getUser()`以从服务器刷新作用域数据。类似地，有两个输入按钮调用`updateData()`和`getData()`，为从模型更新和刷新表数据提供相同的功能。
 
@@ -5643,8 +5853,6 @@ function DBAccessObj($http, $q) {
     $http.post('/set/user', { userData: userInfo}).
       success(function(response, status, headers, config) {
 ```
-
-
 
 ## 第10章 创建您自己的自定义 AngularJS 服务
 
@@ -5773,7 +5981,7 @@ function DBAccessObj($http, $q) {
 
 AngularJS 自定义服务是您可以注册到依赖注入器的单例对象。一旦它们被注册到依赖注入器，控制器、指令和其他 AngularJS 组件，包括其他服务，就可以使用它们。AngularJS 提供了几种创建自定义服务的方法，复杂程度各不相同。`value` 和 `constant` 方法创建简单服务。而 `factory` 和 `service` 方法则使您能够创建更为复杂的服务。
 
-本章重点介绍了当您需要为应用程序提供基于任务的功能时，可用于实现自己的自定义 AngularJS 服务的工具。您学习了四种自定义 AngularJS 服务的方法或类型，包括 `value`、`constant`、`factory` 和 `service`。
+本章重点介绍了当您需要为应用程提供基于任务的功能时，可用于实现自己的自定义 AngularJS 服务的工具。您学习了四种自定义 AngularJS 服务的方法或类型，包括 `value`、`constant`、`factory` 和 `service`。
 
 本章展示了如何实现每种类型的自定义 AngularJS 服务的示例。您还看到了一个在多个控制器中实现自定义 AngularJS 服务的示例。本章的最后一个示例向您展示了如何实现一个独立的自定义 AngularJS 服务，该服务使用 `$http` 与服务器交互，以及如何将其注入并在另一个模块中使用。
 
@@ -5794,18 +6002,24 @@ AngularJS 自定义服务是您可以注册到依赖注入器的单例对象。�
 此示例的文件夹结构如下：
 
 -   `./server.js`：提供静态项目文件的 Node.js Web 服务器。
+
 -   `./images`：包含示例中使用图像的文件夹。
+
 -   `./ch11`：项目文件夹。
+
 -   `./ch11/tabbable.html`：项目的 AngularJS 模板。
+
 -   `./ch11/tabs.html`：选项卡组的 AngularJS 部分模板。
+
 -   `./ch11/panel.html`：选项卡组中每个单独面板的 AngularJS 部分模板。
+
 -   `./ch11/js/tabbable.js`：支持自定义选项卡指令的 AngularJS 应用程序。
 
 清单 11.1 中的代码展示了定义 `myTabs` 和 `myPane` 两个指令的 `tabbable.js` AngularJS 应用程序。请注意，模板内部使用的 HTML 来自使用指令定义中 `templateUrl` 选项的部分文件。另请注意，使用了 `transclude` 选项，它使我们能够将 `myPane` 元素的内容保留在 AngularJS 模板中。
 
 两个指令之间的通信是通过在 `myPane` 的定义中要求 `myTabs` 指令来实现的。这导致定义在 `myTabs` 中的控制器被传递到 `myPane` 的链接函数中。请注意，在第 30 行，我们能够调用 `addPane()` 将 `myPane` 指令的作用域添加到 `myTabs` 指令中的列表中。可见的选项卡是使用 `myTabs` 控制器函数中的 `select()` 方法更改的。
 
-**清单 11.1** `tabbable.js`：一个 AngularJS 应用程序，定义了两个可以嵌套的自定义指令，以提供选项卡式面板视图。
+**清单 11.1** `tabbable.js`：一个 AngularJS 应用程序，定义了两个可以嵌套的自定指令，以提供选项卡式面板视图。
 
 ```javascript
 01 var app = angular.module('myApp', []);
@@ -5847,8 +6061,6 @@ AngularJS 自定义服务是您可以注册到依赖注入器的单例对象。�
 37   };
 38 });
 ```
-
-
 
 **清单 11.2** tabs.html: 包含构建选项卡容器模板代码的 AngularJS 部分模板
 
@@ -5937,9 +6149,13 @@ AngularJS 自定义服务是您可以注册到依赖注入器的单例对象。�
 本示例的文件夹结构如下：
 
 - ./server.js: 提供静态项目文件的 Node.js Web 服务器。
+
 - ./images: 包含示例中使用的图片的文件夹。
+
 - ./ch11: 项目文件夹。
+
 - ./ch11/dragdrop.html: 项目的 AngularJS 模板。
+
 - ./ch11/js/dragdrop.js: 支持自定义拖放指令的 AngularJS 应用。
 
 清单 11.5 中的代码包含了 `dragdrop.js` 应用，它定义了两个新的自定义 AngularJS 指令：`dragit` 和 `dropit`。注意，在父作用域中定义了 `dragStatus` 和 `dropStatus` 变量；这些变量在自定义指令中更新。这是可能的，因为指令中没有定义隔离作用域，所以它们共享父控制器作用域。
@@ -6048,8 +6264,6 @@ app.controller('myController', function($scope) {
         span{
 ```
 
-
-
 ### HTML5 拖放组件
 
 ```html
@@ -6082,17 +6296,22 @@ app.controller('myController', function($scope) {
 
 ### 为图像添加缩放视图字段
 
-在这个示例中，你将使用一个自定义的 AngularJS 指令来替换 `<img>` 元素，并提供一个自动的缩放视图字段，该字段显示在页面图像的旁边。当你点击图像时，缩放视图字段将更新为图像的放大局部。
+在这个示例中，你将使用一个自定义的 AngularJS 指令来替换 `<img>` 元素，并提供一个自动的缩放视视字段，该字段显示在页面图像的旁边。当你点击图像时，缩放视图字段将更新为图像的放大局部。
 
 这个练习的目的是向你展示 AngularJS 自定义指令如何通过具有丰富功能集的新元素来扩展 HTML。这个例子也再次说明了何时你需要使用完整版的 jQuery 而不是 jQuery lite 来获取图像的大小和鼠标在图像内的位置。
 
 这个示例的文件夹结构如下：
 
 - `./server.js`：提供静态项目文件的 Node.js Web 服务器。
+
 - `./images`：包含示例中使用的图像的文件夹。
+
 - `./ch11`：项目文件夹。
+
 - `./ch11/zooming.html`：项目的 AngularJS 模板。
+
 - `./ch11/zoomit.html`：包含图像和缩放视图字段元素定义的 AngularJS 部分模板。
+
 - `./ch11/js/zooming.js`：支持自定义标签指令的 AngularJS 应用程序。
 
 清单 11.7 中的代码实现了 `zooming.js` AngularJS 应用程序，该程序定义了一个名为 `zoomit` 的自定义 AngularJS 指令。`zoomit` 指令仅限于元素，使用 `restrict: 'E'`。还要注意，模板定义中的 `src` 属性被注入到作用域中。
@@ -6190,18 +6409,24 @@ app.controller('myController', function($scope) {
 
 ### 实现可展开和可折叠元素
 
-在这个示例中，你将使用自定义 AngularJS 指令来构建网页上可以展开和收缩的元素。每个元素顶部都有一个标题和一个展开/折叠按钮。当点击折叠按钮时，元素的内容将被隐藏。当点击展开按钮时，内容将再次显示。
+在这个示例中，你将使用自定� AngularJS 指令来构建网页上可以展开和收缩的元素。每个元素顶部都有一个标题和一个展开/折叠按钮。当点击折叠按钮时，元素的内容将被隐藏。当点击展开按钮时，内容将再次显示。
 
 这个练习的目的是巩固实现相互嵌套并相互通信的自定义 AngularJS 指令。在这个例子中，你还将看到作用域如何从控制器中隔离出来，但在展开容器和容器内的项目之间共享。
 
 这个示例的文件夹结构如下：
 
 - `./server.js`：提供静态项目文件的 Node.js Web 服务器。
+
 - `./images`：包含示例中使用的图像的文件夹。
+
 - `./ch11`：项目文件夹。
+
 - `./ch11/expand.html`：项目的 AngularJS 模板，实现自定义的可展开指令。
+
 - `./ch11/expand_list.html`：可展开元素指令的 AngularJS 部分模板。
+
 - `./ch11/expand_item.html`：可展开元素中每个单独项目的 AngularJS 部分模板。
+
 - `./ch11/js/expand.js`：支持可展开元素指令的 AngularJS 应用程序。
 
 清单 11.10 中的代码包含了 `expand.js` AngularJS 应用程序，该程序定义了 `expandList` 和 `expandItem` 自定义 AngularJS 指令。使用了 transclude 选项来保留模板中定义的内容。
@@ -6211,8 +6436,6 @@ app.controller('myController', function($scope) {
 `expandItem` 指令需要 `expandList` 指令来提供对 `expandList` 指令作用域中 `addItem()` 函数的访问。注意 `myStyle` 属性用于构建一个样式对象，该对象将设置为展开列表中项目的 `ng-style`。
 
 展开和折叠的工作方式是：在清单 11.11 所示的模板中，使用 `ng-hide` 将 `myHide` 值绑定到展开列表中的每个项目。`expandList` 作用域中的 `items` 属性提供了每个添加的 `expandItem` 元素的作用域列表。然后当展开/折叠按钮被点击时，在 `collapse()` 函数中，只需在每个项目的作用域中将 `myHide` 值设置为 `true` 或 `false`，就可以显示或隐藏展开元素中的项目。
-
-
 
 #### 代码清单 11.10 expand.js：实现 expandList 和 expandItem 自定义指令以提供可展开/可折叠元素的 AngularJS 应用
 
@@ -6358,7 +6581,7 @@ angular.module('myApp', [])
     </expand-item>
   </expand-list>
   <hr>
-  <expand-list title="混合列表" exwidth="300px">
+  <expand-list title="混合列列表" exwidth="300px">
     <expand-item>文本项</expand-item>
     <expand-item><p>我思故我在。</p></expand-item>
     <expand-item>
@@ -6397,9 +6620,13 @@ angular.module('myApp', [])
 本示例的文件夹结构如下：
 
 -   ./server.js：提供静态项目文件的 Node.js Web 服务器。
+
 -   ./images：包含示例中使用的图片的文件夹。
+
 -   ./ch11：项目文件夹。
+
 -   ./ch11/rating.html：项目的 AngularJS 模板，为元素实现简单的星级评分。
+
 -   ./ch11/js/rating.js：定义支持星级评分元素的 AngularJS 应用。
 
 代码清单 11.14 中的代码实现了 `rating.js` AngularJS 应用。请注意，使用的数据来自 `$scope.items`。这些数据可以来自服务、数据库或其他来源。数组 `$scope.stars` 在模板中用于在网页上显示星星。控制器代码中唯一需要的函数是 `adjustRating`，当用户通过点击星星来更改评分时会调用此函数。
@@ -6435,8 +6662,6 @@ angular.module('myApp', [])
 
 代码清单 11.15 中的代码实现了一个 AngularJS 模板，该模板遍历作用域中的 `items` 数组，并构建出包含描述和星级评分的图片元素。请注意，要构建星星列表，需要在作用域中的 `stars` 数组上使用 `ng-repeat`。
 
-
-
 另请注意，在第31行中，要设置显示实心星或空星，`ng-class`属性是根据项目评分是否大于星索引来设置的。`ng-click`属性用于将每个星星上的鼠标点击事件绑定到作用域中的`adjustRating()`函数，以设置此项目的评分。
 
 最终生成的网页如图11.5所示。请注意，随着星星被点击，显示的评分和星星也会相应变化。
@@ -6463,7 +6688,7 @@ angular.module('myApp', [])
 17         background-image: url("/images/empty.png");
 18         background-repeat: no-repeat;
 19       }
-20     </style>
+20     </style
 21   </head>
 22   <body>
 23     <h2>带评分的图像</h2>
@@ -6493,7 +6718,7 @@ angular.module('myApp', [])
 
 AngularJS 通过使用包含内置和自定义指令的模板，提供了许多扩展 HTML 能力的工具。在本章中，你看到了几种不同的方法，可以轻松而有结构地将丰富的交互元素实现到你的网页中。
 
-在本章中，你还了解了一些自定义指令。选项卡面板和可展开/可折叠示例展示了如何实现相互嵌套并彼此交互的指令。拖放示例展示了与 HTML5 拖放事件交互的一种方式，以及如何在控制器和自定义指令之间共享作用域。星级评分示例展示了如何仅使用 AngularJS 作用域、控制器和模板来构建交互性。缩放视图字段示例展示了如何将 HTML `<img>` 元素的概念扩展为包含额外缩放元素的元素，该缩放元素可以与图像中的鼠标点击交互。
+在本章中，你还了解了一些自定义指令。选项卡面板和可展开/可折叠示例展示了如何实现相互嵌套并彼此交互的指令。拖放示例展示了与 HTML5 拖放事件交互的一种方式，以及如何在控制器和自定�指令之间共享作用域。星级评分示例展示了如何仅使用 AngularJS 作用域、控制器和模板来构建交互性。缩放视图字段示例展示了如何将 HTML `<img>` 元素的概念扩展为包含额外缩放元素的元素，该缩放元素可以与图像中的鼠标点击交互。
 
 本书到此结束。我希望你像我一样喜欢学习 AngularJS。我热爱 AngularJS，因为它使得编写结构化代码变得容易，无需太多复杂性。使用 AngularJS，一切都有其位置，无论是作为视图、指令、控制器、服务，还是数据模型的一部分。阅读本书后，你应该对 AngularJS 框架有了很好的理解，这样你就可以自信地开始编写自己的 AngularJS 应用程序。祝你编码愉快！
 
@@ -6509,7 +6734,11 @@ AngularJS 通过使用包含内置和自定义指令的模板，提供了许多�
 
 这些都是非常实际和重要的考虑因素，你需要根据它们做出决定。话虽如此，AngularJS 团体似乎倾向于将 Jasmine 作为他们的单元测试框架。这是有道理的。Jasmine 似乎是那种提供大量功能而不妨碍测试的框架。事实上，对于端到端测试，你将需要使用 Protractor，它使用 Jasmine 语法进行测试。
 
-你应该花一些时间评估你决定的框架，因为你可能会使用它一段时间。你可以在维基百科上获得更知名的 JavaScript 测试框架列表：http://en.wikipedia.org/wiki/List_of_unit_testing_frameworks#JavaScript。
+
+
+# 附录 A 测试 AngularJS 应用
+
+你应该花一些时间评估你决定的框架，因为你可能会使用它一段时间。你可以在维基百科上获得更知名的 JavaScript 测试框架列表：`http://en.wikipedia.org/wiki/List_of_unit_testing_frameworks#JavaScript`。
 
 在决定测试平台之后，你需要了解如何实现各种测试概念，例如测试前准备工作、测试后清理以及模拟对象和服务，以便本附录的其余部分更有意义。
 
@@ -6519,7 +6748,7 @@ AngularJS 应用程序的单元测试与其他框架的单元测试非常相似�
 
 我在这里提供的许多信息也可以在 AngularJS 文档中找到。我在这里添加了 AngularJS 单元测试文档的 URL，以提供一些额外的思考：
 
-https://docs.angularjs.org/guide/unit-testing
+`https://docs.angularjs.org/guide/unit-testing`
 
 ### 依赖项和单元测试
 
@@ -6600,14 +6829,12 @@ function MyClass() {
 
 ```javascript
 var savedRegistry = global.serviceRegistry;
-//创建新的 global.serviceRegistry
+// 创建新的 global.serviceRegistry
 global.serviceRegistry.set('MyService', function MockMyService() {});
 var myClass = new MyClass();
 myClass.doSomething();
 global.serviceRegistry = savedRegistry;
 ```
-
-
 
 ### 将依赖作为参数传递
 
@@ -6615,7 +6842,7 @@ global.serviceRegistry = savedRegistry;
 
 现在，考虑以下函数，并假设 `myService` 是一个通常通过参数传入的服务实例：
 
-```
+```javascript
 function MyClass() {
     this.doSomething = function(myService) {
         var data = myService.getSomething();
@@ -6625,7 +6852,7 @@ function MyClass() {
 
 要控制 `MyService`，你只需要执行以下操作：
 
-```
+```javascript
 var mockedService = function MockMyService() {};
 var myClass = new MyClass();
 myClass.doSomething(mockedService);
@@ -6637,7 +6864,7 @@ AngularJS 使得测试与控制器作用域绑定的 HTML 元素变得非常简�
 
 考虑一个网页，其中包含一个单独的文本 `<input>` 元素，你有一个后端函数来测试它，验证它不为空且字符数少于 10 个。
 
-```
+```html
 <body>
     Data: <input type="text" />
 </body>
@@ -6645,7 +6872,7 @@ AngularJS 使得测试与控制器作用域绑定的 HTML 元素变得非常简�
 
 后端代码大概如下所示：
 
-```
+```javascript
 function InputCtrl() {
     var input = $('input');
     var val = input.val();
@@ -6661,7 +6888,7 @@ function InputCtrl() {
 
 要测试这个，你需要实际创建输入元素并将其注入到网页中，类似如下：
 
-```
+```javascript
 var input = $('<input type="text"/>');
 $('body').html('<div>')
     .find('div')
@@ -6675,7 +6902,7 @@ $('body').empty();
 
 仔细想想，涉及的输入越多，这就会变得极其混乱。在 AngularJS 中，如果输入的值绑定到作用域，则会简单得多。下面展示了 AngularJS 控制器的定义，其中文本输入的值绑定到 `$scope.inStr`：
 
-```
+```javascript
 function InputCtrl($scope){
     $scope.inStr = '';
     $scope.verify = function(){
@@ -6690,7 +6917,7 @@ function InputCtrl($scope){
 
 现在测试可以看起来像下面这样：
 
-```
+```javascript
 var $scope = {};
 var mc = $controller('InputCtrl', { $scope: $scope });
 $scope.inStr = 'abc';
@@ -6704,7 +6931,7 @@ expect(result).toEqual(true);
 
 如果你保持自定义过滤器的简单性，在 AngularJS 中测试它们会非常简单。为了说明这一点，考虑以下自定义过滤器和测试：
 
-```
+```javascript
 myModule.filter('nospace', function() {
     return function(text){
         return text.replace(' ', '');
@@ -6712,7 +6939,7 @@ myModule.filter('nospace', function() {
 });
 ```
 
-```
+```javascript
 var nospace = $filter('nospace');
 expect(nospace('my words')).toEqual('mywords');
 ```
@@ -6725,13 +6952,13 @@ expect(nospace('my words')).toEqual('mywords');
 
 为了说明这一点，考虑模板中的以下自定义指令 `two-plus-two`：
 
-```
+```html
 <two-plus-two></two-plus-two>
 ```
 
 该指令的控制器代码如下所示：
 
-```
+```javascript
 var app = angular.module('myApp', []);
 app.directive('twoPlusTwo', function () {
     return {
@@ -6744,7 +6971,7 @@ app.directive('twoPlusTwo', function () {
 
 为了说明如何测试控制器，我需要选择一个测试框架。以下示例展示了 Jasmine 测试来测试自定义指令的功能。注意 `myApp` 模块、`$compile` 和 `$rootScope` 是如何通过 `beforeEach()` 注入到每个测试中的，以及如何使用 `$compile` 和 `$digest` 来编译和渲染元素并求值表达式。
 
-```
+```javascript
 describe('Unit testing addition', function() {
     var $compile;
     var $rootScope;
@@ -6767,7 +6994,7 @@ describe('Unit testing addition', function() {
 
 我知道这很难一下子理解，所以这里是当使用 `transclude: true` 时的过程。这是编译前的元素：
 
-```
+```html
 <div transclude-directive>
   "transcluded content"
 </div>
@@ -6775,13 +7002,13 @@ describe('Unit testing addition', function() {
 
 这是转换提取后的元素：
 
-```
+```html
 <div transclude-directive></div>
 ```
 
 现在编译后：
 
-```
+```html
 <div transclude-directive>
   "template content"
   <span ng-transclude>"transcluded content"</span>
@@ -6790,7 +7017,7 @@ describe('Unit testing addition', function() {
 
 如果你使用的是 `transclude: 'element'`，过程是这样的。编译器从 DOM 中移除指令的整个元素，并用一个注释节点替换它。然后，编译器将指令的模板作为注释节点的兄弟节点附加：
 
-```
+```html
 <div element-transclude>
   "transclude content"
 </div>
@@ -6798,13 +7025,13 @@ describe('Unit testing addition', function() {
 
 转换提取后：
 
-```
+```html
 <!-- elementTransclude -->
 ```
 
 编译后：
 
-```
+```html
 <!-- elementTransclude -->
 <div element-transclude>
   "template content"
@@ -6814,9 +7041,7 @@ describe('Unit testing addition', function() {
 
 指出这一点的原因是，你需要以不同的方式处理使用 'element' 转换的指令的测试。当你在 DOM 片段的根元素上定义指令时，`$compile` 将返回注释节点，你将失去访问模板和转换内容的能力。这在以下测试片段中显示：
 
-230 附录 A 测试 AngularJS 应用
-
-```
+```javascript
 var node = $compile('<div element-transclude></div>')($rootScope);
 expect(node[0].nodeType).toEqual(node.COMMENT_NODE);
 expect(node[1]).toBeUndefined();
@@ -6824,7 +7049,7 @@ expect(node[1]).toBeUndefined();
 
 处理这个问题的方法是，确保当自定义指令使用 `transclude: 'element'` 参数时，你将转换指令包装在另一个元素（如 `<div>`）中。例如：
 
-```
+```javascript
 var node = $compile('<div><div element-transclude></div></div>')($rootScope);
 var contents = node.contents();
 expect(contents[0].nodeType).toEqual(node.COMMENT_NODE);
@@ -6836,7 +7061,8 @@ expect(contents[1].nodeType).toEqual(node.ELEMENT_NODE);
 AngularJS 团队在这方面有点回避。他们的建议是，如果你使用的是通过 `templateUrl` 参数使用外部模板的自定义 AngularJS 指令，那么使用像 `karma-ng-html2js-preprocessor` 这样的工具来预编译 HTML 模板，从而避免在测试期间通过 HTTP 加载它们。
 
 你可以从这里获取 `karma-ng-html2js-preprocessor`：
-https://github.com/karma-runner/karma-ng-html2js-preprocessor
+
+`https://github.com/karma-runner/karma-ng-html2js-preprocessor`
 
 ## 理解 AngularJS 端到端测试
 
@@ -6848,21 +7074,19 @@ AngularJS 团队创建了一个名为 Protractor 的工具，使你能够实现 
 
 使用 Protractor 进行端到端测试的想法是，你可以使用 Jasmine 代码在测试环境中设置某些内容，然后使用 WebDriver 通过 Web 浏览器向应用程序提供输入，然后验证结果。
 
-
-
 端到端测试会因环境、设计、技术及其他变量而有很大差异，因此本附录中不会深入探讨。不过，我建议您在决定尝试于 AngularJS 应用程序中实施端到端编程时，查阅以下链接：
 
-- https://docs.angularjs.org/guide/e2e-testing
-- https://github.com/angular/protractor/blob/master/docs/getting-started.md
-- https://code.google.com/p/selenium/wiki/GettingStarted
+- `https://docs.angularjs.org/guide/e2e-testing`
+- `https://github.com/angular/protractor/blob/master/docs/getting-started.md`
+- `https://code.google.com/p/selenium/wiki/GettingStarted`
 
 # 索引
 
 ## A
 
-- absUrl() 方法，176
+- `absUrl()` 方法，176
 - 直接访问 jQuery/jQuery lite，49-50
-- addClass() 方法，48
+- `addClass()` 方法，48
 - 添加
     - 配置块到模块，61-62
     - 控制器到模板，46
@@ -6870,13 +7094,13 @@ AngularJS 团队创建了一个名为 Protractor 的工具，使你能够实现 
     - 运行块到模块，62
 - 加法运算符，12
 - 一个指令，104
-- after() 方法，48
-- $anchorScroll 服务，158
+- `after()` 方法，48
+- `$anchorScroll` 服务，158
 - And 运算符，14
-- angular-animate.js 库，174
-- angular-cookies.js 库，166
+- `angular-animate.js` 库，174
+- `angular-cookies.js` 库，166
 - AngularJS
-    - angular.js 库文件，提供，41-42
+    - `angular.js` 库文件，提供，41-42
     - 应用程序。参见 应用程序
     - 优点，3，35-36
     - 编译器，定义，39
@@ -6899,29 +7123,29 @@ AngularJS 团队创建了一个名为 Protractor 的工具，使你能够实现 
     - 服务，定义，38
     - 模板，37
     - 网站，42
-- angular.js 库文件
+- `angular.js` 库文件
     - 引导 HTML 文档，42
     - 加载，45
     - 提供，41-42
-- angular.module() 方法，54-55
-- animate() 方法，171
-- $animate 服务，158，169-172
+- `angular.module()` 方法，54-55
+- `animate()` 方法，171
+- `$animate` 服务，158，169-172
     - 动画示例，172
     - 用于动画的指令，169
     - 实现
         - 在 CSS 中，170-171
         - 在 JavaScript 中，171-172
-- animate.css 列表，174
+- `animate.css` 列表，174
 - 动画
     - 用于动画的指令，169-170
     - 示例，172
     - 实现
         - 在 CSS 中，170-171
         - 在 JavaScript 中，171-172
-- animation() 方法，56
+- `animation()` 方法，56
 - 匿名函数，21
 - API，全局，列表，42-44
-- append() 方法，48
+- `append()` 方法，48
 - 在指令中追加元素，204-206
 - 应用程序
     - 直接访问 jQuery，49-50
@@ -6930,7 +7154,7 @@ AngularJS 团队创建了一个名为 Protractor 的工具，使你能够实现 
         - 定义根元素，45
         - 文件夹结构，44
         - 实现作用域，46
-        - 加载 angular.js 库，45
+        - 加载 `angular.js` 库，45
     - 拖放元素示例，204-206
     - 可展开/可折叠元素示例，212-215
     - 模块。参见 模块
@@ -6942,7 +7166,7 @@ AngularJS 团队创建了一个名为 Protractor 的工具，使你能够实现 
         - 评估平台，223
         - 单元测试，224-230
     - 缩放视图字段示例，208-210
-- $apply() 方法，72
+- `$apply()` 方法，72
 - 算术运算符，列表，12-13
 - 数组数据类型，12
 - 数组
@@ -6956,20 +7180,20 @@ AngularJS 团队创建了一个名为 Protractor 的工具，使你能够实现 
     - 搜索项，30
     - 将字符串分割成数组，27
 - 赋值运算符，列表，13
-- attr() 方法，48
+- `attr()` 方法，48
 
 ## B
 
 - 后端服务器数据，作用域与，71
-- bind() 方法，48
+- `bind()` 方法，48
 - 数据绑定。参见 数据绑定
-- bindToController 属性，123
-- blur 事件，115
+- `bindToController` 属性，123
+- `blur` 事件，115
 - 布尔数据类型，11
 - 引导阶段（AngularJS 生命周期），39
 - 引导 HTML 文档，42
-- break 关键字，16，18-19
-- $broadcast() 方法，151
+- `break` 关键字，16，18-19
+- `$broadcast()` 方法，151
 - 广播自定义事件，151
 - 浏览器警报，实现，166
 - 浏览器事件，145
@@ -6977,77 +7201,77 @@ AngularJS 团队创建了一个名为 Protractor 的工具，使你能够实现 
 - 内置指令。参见 指令，内置指令
 - 内置过滤器，87-90
 - 内置服务
-    - $anchorScroll，158
-    - $animate，158，169-172
+    - `$anchorScroll`，158
+    - `$animate`，158，169-172
         - 动画示例，172
         - 用于动画的指令，169
         - 在 CSS 中实现，170-171
         - 在 JavaScript 中实现，171-172
-    - $cacheFactory，158，165
-    - $compile，158
-    - $cookie，166-167
-    - $cookies，158
-    - $cookieStore，166-167
-    - $document，158
-    - $exceptionHandler，158
-    - $http，158-163
+    - `$cacheFactory`，158，165
+    - `$compile`，158
+    - `$cookie`，166-167
+    - `$cookies`，158
+    - `$cookieStore`，166-167
+    - `$document`，158
+    - `$exceptionHandler`，158
+    - `$http`，158-163
         - 配置，160
         - HTTP 服务器实现与访问，161-163
         - 响应回调函数，161
         - 快捷方法，159
-    - $interpolate，158
-    - $interval，158，168-169
+    - `$interpolate`，158
+    - `$interval`，158，168-169
     - 列表，158
-    - $locale，158
-    - $location，158，176-177
-    - $log，158
-    - $parse，158
-    - $q，158，180-181
-    - $resource，158
-    - $rootElement，158
-    - $rootScope，158
-    - $route，158
-    - $routeParams，158
-    - $sanitize，158
-    - $sce，158
-    - $swipe，158
-    - $templateCache，158
-    - $timeout，158，168-169
+    - `$locale`，158
+    - `$location`，158，176-177
+    - `$log`，158
+    - `$parse`，158
+    - `$q`，158，180-181
+    - `$resource`，158
+    - `$rootElement`，158
+    - `$rootScope`，158
+    - `$route`，158
+    - `$routeParams`，158
+    - `$sanitize`，158
+    - `$sce`，158
+    - `$swipe`，158
+    - `$templateCache`，158
+    - `$timeout`，158，168-169
         - 与自定义服务一起使用，192-194
-    - $window，158，166
+    - `$window`，158，166
 
 ## C
 
-- cache 属性，160
-- $cacheFactory 服务，158，165
-- case 语句，15-16
+- `cache` 属性，160
+- `$cacheFactory` 服务，158，165
+- `case` 语句，15-16
 - CDN（内容分发网络），41
-- charAt() 方法，26
-- charCodeAt() 方法，26
+- `charAt()` 方法，26
+- `charCodeAt()` 方法，26
 - 子作用域
     - 向子作用域广播事件，151
     - 控制器与子作用域，66
     - 在作用域层次结构中，73
-- children() 方法，48
-- clone() 方法，48
+- `children()` 方法，48
+- `clone()` 方法，48
 - 代码列表。参见 列表
 - 可折叠/可展开元素示例应用程序，212-215
 - 组合数组，29。另见 连接字符串
 - 比较运算符，列表，14-15
 - 编译阶段（AngularJS 生命周期），39
-- compile() 函数，132-133
-- compile 属性，123
-- $compile 服务，158
+- `compile()` 函数，132-133
+- `compile` 属性，123
+- `$compile` 服务，158
 - 编译器，定义，39
-- concat() 方法
+- `concat()` 方法
     - 数组，28-29
     - 字符串，26-27
 - 连接字符串，13，27。另见 组合数组
 - 条件语句
-    - if 语句，15
-    - switch 语句，15-16
-- config_run_blocks.html 列表，63
-- config_run_blocks.js 列表，63
+    - `if` 语句，15
+    - `switch` 语句，15-16
+- `config_run_blocks.html` 列表，63
+- `config_run_blocks.js` 列表，63
 - 配置块
     - 添加，61-62
     - 实现，62-63
@@ -7055,17 +7279,13 @@ AngularJS 团队创建了一个名为 Protractor 的工具，使你能够实现 
     - 添加配置块，61-62
     - 实现配置块，62-63
 - 配置
-    - $http 服务，160
+    - `$http` 服务，160
     - Node.js，6-7
     - 为自定义指令配置作用域，128-130
-- constant() 方法，56
-- constant 服务，184-186
+- `constant()` 方法，56
+- `constant` 服务，184-186
 - 内容分发网络（CDN），41
-- contents() 方法，48
-- continue 关键字，19
-- controller() 方法，49，56，66
-- controller 属性，123，127-128
-- controllerAs 属性，123
+- `contents()` 方法，48
 - 控制器
     - 向指令添加控制器，127-128
     - 添加到模板，46
@@ -7078,25 +7298,25 @@ AngularJS 团队创建了一个名为 Protractor 的工具，使你能够实现 
     - 作用域与控制器，66-67
     - 单元测试，226-227
 - 将数组转换为字符串，30
-- $cookie 服务，166-167
+- `$cookie` 服务，166-167
 - cookies，166-167
-- $cookies 服务，158
-- $cookieStore 服务，166-167
-- copy() 全局 API，43
+- `$cookies` 服务，158
+- `$cookieStore` 服务，166-167
+- `copy()` 全局 API，43
 - 创建阶段（作用域），71-72
 - CSS，动画在 CSS 中，170-171
-- css() 方法，48
-- currency[:symbol] 过滤器，87
+- `css()` 方法，48
+- `currency[:symbol]` 过滤器，87
 - 自定义指令
     - 向指令添加控制器，127-128
     - 配置作用域，128-130
     - 定义视图模板，124-126
     - 定义，123
-    - directive() 方法，123
+    - `directive()` 方法，123
     - DOM 操作
-        - 使用 compile() 函数，132-133
+        - 使用 `compile()` 函数，132-133
         - 示例，134
-        - 使用 link() 函数，130-132
+        - 使用 `link()` 函数，130-132
     - 拖放元素示例，204-206
     - 事件处理器，136-137
     - 扩展 HTML，208-210
@@ -7117,14 +7337,14 @@ AngularJS 团队创建了一个名为 Protractor 的工具，使你能够实现 
     - 单元测试，227-228
 - 自定义对象，定义，23-24
 - 自定义服务
-    - constant 服务，184
+    - `constant` 服务，184
     - 数据库访问服务示例，192-194
-    - factory 服务，184
+    - `factory` 服务，184
     - 实现示例，185-186
-    - service 服务，184-185
+    - `service` 服务，184-185
     - 时间服务示例，188-189
     - 类型，183
-    - value 服务，183-184
+    - `value` 服务，183-184
 - 数据绑定
     - 定义，38
     - 与指令一起，109-112
@@ -7132,7 +7352,7 @@ AngularJS 团队创建了一个名为 Protractor 的工具，使你能够实现 
     - 在运行时阶段（AngularJS 生命周期），40
     - 星级评分示例应用程序，217-219
     - 测试控制器，226-227
-- data() 方法，48
+- `data()` 方法，48
 - 数据模型，作用域作为数据模型，65
     - 后端服务器数据，71
     - 控制器与数据模型，66-67
@@ -7141,10 +7361,10 @@ AngularJS 团队创建了一个名为 Protractor 的工具，使你能够实现 
     - 根作用域，65-66
     - 作用域层次结构，73
     - 模板与数据模型，68-69
-- data 属性，160
+- `data` 属性，160
 - 数据类型，列表，11-12
 - 数据库访问服务示例，192-194
-- date[:format] 过滤器，87
+- `date[:format]` 过滤器，87
 - 递减运算符，12
 - 延迟响应，180-181
 - 定义
@@ -7164,25 +7384,17 @@ AngularJS 团队创建了一个名为 Protractor 的工具，使你能够实现 
     - 过滤器与依赖注入，87
     - 实现，57-58
     - 注入器，54
-
-
-
-### 依赖注入
-
-- 提供者，54
-- 注入控制器，58-59
-
-运行阶段（模块）
-- 添加运行块，62
-- 实现运行块，62-63
-
-- 服务，157
-- 单元测试与，224-226
-    - 全局查找，225
-    - `new` 运算符，224-225
-    - 传递的参数，226
-    - 注册表请求，225-226
-
+    - 提供者，54
+    - 注入控制器，58-59
+    - 运行阶段（模块）
+        - 添加运行块，62
+        - 实现运行块，62-63
+    - 服务，157
+    - 单元测试与，224-226
+        - 全局查找，225
+        - `new` 运算符，224-225
+        - 传递的参数，226
+        - 注册表请求，225-226
 - `$destroy` 事件，49
 - `$destroy()` 方法，72
 - `detach()` 方法，48
@@ -7208,121 +7420,112 @@ AngularJS 团队创建了一个名为 Protractor 的工具，使你能够实现 
 - `directive_keyboard_events.js` 清单，118
 - `directive_mouse_events.html` 清单，121
 - `directive_mouse_events.js` 清单，120
-
-指令
-- 用于动画，169-170
-
-内置指令
-- `a`，104
-- 将数据绑定到页面元素，109-112
-- 将事件绑定到控制器，113-120
-- `event`，113
-- 扩展表单元素，104-105
-- `input`，104
-- `input.checkbox`，104
-- `input.date`，104
-- `input.dateTimeLocal`，104
-- `input.email`，104
-- `input.month`，104
-- `input.number`，104
-- `input.radio`，104
-- `input.text`，104
-- `input.time`，104
-- `input.url`，104
-- `input.week`，104
-- `ng-app`，37，42，45，100
-- `ng-bind`，109
-- `ng-bind-html`，109
-- `ng-bind-template`，109
-- `ng-blur`，114-115
-- `ng-change`，114
-- `ng-checked`，114
-- `ng-class`，109
-- `ng-class-even`，109
-- `ng-class-odd`，109
-- `ng-click`，69，114，120
-- `ng-cloak`，100
-- `ng-controller`，66，100
-- `ng-copy`，114
-- `ng-cut`，114
-- `ng-dblclick`，114
-- `ng-disabled`，109
-- `ng-focus`，114-115
-- `ng-form`，104
-- `ng-hide`，109
-- `ng-href`，100
-- `ng-if`，109
-- `ng-include`，100，102
-- `ng-init`，109
-- `ng-keydown`，114，117-118
-- `ng-keypress`，114
-- `ng-keyup`，114，117-118
-- `ng-list`，100
-- `ng-model`，68，109
-- `ng-mousedown`，114，120
-- `ng-mouseenter`，114，120
-- `ng-mouseleave`，114，120
-- `ng-mousemove`，114，120
-- `ng-mouseover`，114
-- `ng-mouseup`，114，120
-- `ng-non-bindable`，100
-- `ng-open`，100
-- `ng-options`，104
-- `ng-paste`，114
-- `ng-pluralize`，100
-- `ng-readonly`，100
-- `ng-repeat`，109
-- `ng-required`，100
-- `ng-selected`，100
-- `ng-show`，109
-- `ng-src`，100
-- `ng-srcset`，100
-- `ng-style`，109
-- `ng-submit`，114
-- `ng-swipe-left`，114
-- `ng-swipe-right`，114
-- `ng-switch`，109
-- `ng-transclude`，100，130
-- `ng-value`，109
-- `ng-view`，100
-- `script`，100
-- `select`，104
-- 支持功能，100-102
-- `textarea`，104
-
-自定义指令
-- 为指令添加控制器，127-128
-- 配置作用域，128-130
-- 定义视图模板，124-126
-- 指令定义，127
-- `directive()` 方法，123
-- DOM 操作示例，134
-- 使用 `compile()` 函数进行 DOM 操作，132-133
-- 使用 `link()` 函数进行 DOM 操作，130-132
-- 拖放元素示例，204-206
-- 事件处理器，136-137
-- 扩展 HTML，208-210
-- 嵌套指令，140-141，199-202，212-215
-- 属性，123
-- 限制行为，126-127
-- 编译包含元素，130
-- 单元测试，228-230
-
-- 指令定义，37，77，99
-- 用户交互事件，145-146
-
-**除法运算符，12**
-
-**`$document` 服务，158**
-
-**DOM 操作，37**
-- 使用 `compile()` 函数，132-133
-- 使用自定义指令，134
-- 使用 `link()` 函数，130-132
-
-**`do/while` 循环，17**
-
-拖放元素示例应用程序，204-206
+- 指令
+    - 用于动画，169-170
+    - 内置指令
+        - `a`，104
+        - 将数据绑定到页面元素，109-112
+        - 将事件绑定到控制器，113-120
+        - `event`，113
+        - 扩展表单元素，104-105
+        - `input`，104
+        - `input.checkbox`，104
+        - `input.date`，104
+        - `input.dateTimeLocal`，104
+        - `input.email`，104
+        - `input.month`，104
+        - `input.number`，104
+        - `input.radio`，104
+        - `input.text`，104
+        - `input.time`，104
+        - `input.url`，104
+        - `input.week`，104
+        - `ng-app`，37，42，45，100
+        - `ng-bind`，109
+        - `ng-bind-html`，109
+        - `ng-bind-template`，109
+        - `ng-blur`，114-115
+        - `ng-change`，114
+        - `ng-checked`，114
+        - `ng-class`，109
+        - `ng-class-even`，109
+        - `ng-class-odd`，109
+        - `ng-click`，69，114，120
+        - `ng-cloak`，100
+        - `ng-controller`，66，100
+        - `ng-copy`，114
+        - `ng-cut`，114
+        - `ng-dblclick`，114
+        - `ng-disabled`，109
+        - `ng-focus`，114-115
+        - `ng-form`，104
+        - `ng-hide`，109
+        - `ng-href`，100
+        - `ng-if`，109
+        - `ng-include`，100，102
+        - `ng-init`，109
+        - `ng-keydown`，114，117-118
+        - `ng-keypress`，114
+        - `ng-keyup`，114，117-118
+        - `ng-list`，100
+        - `ng-model`，68，109
+        - `ng-mousedown`，114，120
+        - `ng-mouseenter`，114，120
+        - `ng-mouseleave`，114，120
+        - `ng-mousemove`，114，120
+        - `ng-mouseover`，114
+        - `ng-mouseup`，114，120
+        - `ng-non-bindable`，100
+        - `ng-open`，100
+        - `ng-options`，104
+        - `ng-paste`，114
+        - `ng-pluralize`，100
+        - `ng-readonly`，100
+        - `ng-repeat`，109
+        - `ng-required`，100
+        - `ng-selected`，100
+        - `ng-show`，109
+        - `ng-src`，100
+        - `ng-srcset`，100
+        - `ng-style`，109
+        - `ng-submit`，114
+        - `ng-swipe-left`，114
+        - `ng-swipe-right`，114
+        - `ng-switch`，109
+        - `ng-transclude`，100，130
+        - `ng-value`，109
+        - `ng-view`，100
+        - `script`，100
+        - `select`，104
+        - 支持功能，100-102
+        - `textarea`，104
+    - 自定义指令
+        - 为指令添加控制器，127-128
+        - 配置作用域，128-130
+        - 定义视图模板，124-126
+        - 指令定义，127
+        - `directive()` 方法，123
+        - DOM 操作示例，134
+        - 使用 `compile()` 函数进行 DOM 操作，132-133
+        - 使用 `link()` 函数进行 DOM 操作，130-132
+        - 拖放元素示例，204-206
+        - 事件处理器，136-137
+        - 扩展 HTML，208-210
+        - 嵌套指令，140-141，199-202，212-215
+        - 属性，123
+        - 限制行为，126-127
+        - 编译包含元素，130
+        - 单元测试，228-230
+        - 指令定义，37，77，99
+        - 用户交互事件，145-146
+- 除法运算符，12
+- `$document` 服务，158
+- DOM 操作，37
+    - 使用 `compile()` 函数，132-133
+    - 使用自定义指令，134
+    - 使用 `link()` 函数，130-132
+- `do/while` 循环，17
+- 拖放元素示例应用程序，204-206
 - `dragdrop.html` 清单，206
 - `dragdrop.js` 清单，204
 - 在嵌套控制器中实现，151-152
@@ -7330,7 +7533,7 @@ AngularJS 团队创建了一个名为 Protractor 的工具，使你能够实现 
 - HTML5 拖放事件，204-206
 - 作用域变化事件，146
 
-# E
+## E
 
 - 在控制器中实现，148
 - 编辑器的用途，5
@@ -7342,9 +7545,9 @@ AngularJS 团队创建了一个名为 Protractor 的工具，使你能够实现 
 - `$emit()` 方法，150-151
 - 用户交互事件，145-146
 - 发出自定义事件，150-151
-- 示例代码清单。参见清单
+- 示例代码清单。参见 清单
 - `empty()` 方法，48
-- 异常处理。参见错误处理
+- 异常处理。参见 错误处理
 - 端到端测试，230-231
 - `$exceptionHandler` 服务，158
 - `eq()` 方法，48
@@ -7365,37 +7568,24 @@ AngularJS 团队创建了一个名为 Protractor 的工具，使你能够实现 
 - 表达式
     - 评估测试平台，223
     - 基本表达式，79-80
-- `event` 指令，113
     - 在数据模型中，78-79
-- 事件处理器
     - 定义，38，77
-    - 在自定义指令中，136-137
-    - 过滤器在事件中，87
-    - 用于自定义事件，151
-    - JavaScript 在事件中，85
+    - 过滤器在表达式中，87
+    - JavaScript 在表达式中，85
     - 定位，145
     - 作用域交互，81-82
 - `$event` 关键字，115
-    - `expressions_basic.html` 清单，80
 - 事件
-    - `expressions_basic.js` 清单，80
     - 绑定到控制器，113-120
-    - `expressions_javascript.html` 清单，85
     - 浏览器事件，145
-    - `expressions_javascript.js` 清单，85
     - 自定义事件，150
-    - `expressions_scope.html` 清单，83
     - 广播，151
-    - `expressions_scope.js` 清单，82
     - 发出，150-151
-    - `extend()` 全局 API，43
     - 使用监听器处理，151
-
-扩展
-- 使用指令扩展表单元素，104-105
-- HTML，208-210
+- 扩展
+    - 使用指令扩展表单元素，104-105
+    - HTML，208-210
 - 外部模板，测试自定义指令，230
-
 - `function` 关键字，19
 - 函数
     - 匿名函数，21
@@ -7405,7 +7595,7 @@ AngularJS 团队创建了一个名为 Protractor 的工具，使你能够实现 
     - 传递值给函数，20
     - 从函数返回值，20-21
 
-# F
+## F
 
 - `factory()` 方法，56
 - `factory` 服务，184，185-186
@@ -7436,7 +7626,7 @@ AngularJS 团队创建了一个名为 Protractor 的工具，使你能够实现 
 - `fromCharCode()` 方法，26
 - `fromJson()` 全局 API，43
 
-# G
+## G
 
 - 全局 API 列表，42-44
 - 全局查找，22
@@ -7444,7 +7634,7 @@ AngularJS 团队创建了一个名为 Protractor 的工具，使你能够实现 
 - 大于运算符，14
 - 大于或等于运算符，14
 
-# H
+## H
 
 - `hasClass()` 方法，48
 - `hash()` 方法，176
@@ -7462,9 +7652,7 @@ AngularJS 团队创建了一个名为 Protractor 的工具，使你能够实现 
     - 响应回调函数，161
     - 快捷方法，159
     - 与自定义服务一起使用，192-194
-
-242
-集成开发环境（IDE）设置，5-6
+- 集成开发环境（IDE）设置，5-6
 - `if` 语句，15
 - 图像，缩放视图字段示例应用程序，208-210
 - 递增运算符，12
@@ -7478,7 +7666,7 @@ AngularJS 团队创建了一个名为 Protractor 的工具，使你能够实现 
 - `inject_builtn.js` 清单，58
 - `inject_custom.html` 清单，60
 - `inject_custom.js` 清单，60
-- 注入。参见依赖注入
+- 注入。参见 依赖注入
 - `injector()` 方法，49
 - 注入器定义，54
 - `input` 指令，104
@@ -7511,7 +7699,7 @@ AngularJS 团队创建了一个名为 Protractor 的工具，使你能够实现 
 - `isUndefined()` 全局 API，43
 - 遍历数组，30
 
-# J
+## J
 
 - Jasmine，223
 - JavaScript
@@ -7533,1139 +7721,772 @@ AngularJS 团队创建了一个名为 Protractor 的工具，使你能够实现 
         - 抛出错误，32
         - `try/catch` 块，31-32
     - 表达式，AngularJS 表达式与 JavaScript 表达式，79
-
-
-
-函数
-
-- 匿名函数，21
-- 定义，19-20
-- 定义，19
-- 传递值给函数，20
-- 从函数返回值，20-21
-
-与 AngularJS 集成，40-41
-
-循环
-
-- 定义，16
-- do/while 循环，17
-- for/in 循环，18
-- for 循环，17-18
-- 中断循环，18-19
-- while 循环，16-17
-
-Node.js
-
-- 构建 Express Web 服务器，8-10
-- 在 Node.js 上运行代码，7
-- 设置，6-7
-
-对象
-
-- 定义自定义对象，23-24
-- 定义，22
-- 原型继承，24-25
-- 语法，23
-
-运算符
-
-- 算术运算符，12-13
-- 赋值运算符，13
-- 比较运算符，14
-- 定义，12
-- if 语句，15
-- 逻辑运算符，14
-- switch 语句，15-16
-
-字符串
-
-- 连接，27
-- 定义，25
-- 转义代码，25
-- 长度，26
-- 方法，26
-- 替换字符串中的词，27
-- 搜索子字符串，27
-- 分割成数组，27
-
-测试。*参见* 应用程序，测试
-
-变量
-
-- 定义，10-11
-- 作用域，22
-
-**join() 方法，28，30**
-
-## jQuery
-
-- 直接访问，49-50
-- 动画，171-172
-- 完整版本使用示例，208-210
-- 与 AngularJS 集成，40-41
-- jQuery lite 与 jQuery 的比较，40-41
-
-## jQuery lite
-
-- 直接访问，49-50
-- 定义，48
-- jQuery 与 jQuery lite 的比较，40-41
-- 方法，48-49
-
-**json 过滤器，87**
+    - 函数
+        - 匿名函数，21
+        - 定义，19-20
+        - 定义，19
+        - 传递值给函数，20
+        - 从函数返回值，20-21
+    - 与 AngularJS 集成，40-41
+    - 循环
+        - 定义，16
+        - `do/while` 循环，17
+        - `for/in` 循环，18
+        - `for` 循环，17-18
+        - 中断循环，18-19
+        - `while` 循环，16-17
+    - Node.js
+        - 构建 Express Web 服务器，8-10
+        - 在 Node.js 上运行代码，7
+        - 设置，6-7
+    - 对象
+        - 定义自定义对象，23-24
+        - 定义，22
+        - 原型继承，24-25
+        - 语法，23
+    - 运算符
+        - 算术运算符，12-13
+        - 赋值运算符，13
+        - 比较运算符，14
+        - 定义，12
+        - `if` 语句，15
+        - 逻辑运算符，14
+        - `switch` 语句，15-16
+    - 字符串
+        - 连接，27
+        - 定义，25
+        - 转义代码，25
+        - 长度，26
+        - 方法，26
+        - 替换字符串中的词，27
+        - 搜索子字符串，27
+        - 分割成数组，27
+    - 测试。*参见* 应用程序，测试
+    - 变量
+        - 定义，10-11
+        - 作用域，22
+- `join()` 方法，28，30
+- jQuery
+    - 直接访问，49-50
+    - 动画，171-172
+    - 完整版本使用示例，208-210
+    - 与 AngularJS 集成，40-41
+    - jQuery lite 与 jQuery 的比较，40-41
+- jQuery lite
+    - 直接访问，49-50
+    - 定义，48
+    - jQuery 与 jQuery lite 的比较，40-41
+    - 方法，48-49
+- `json` 过滤器，87
 
 ## K
 
-**键盘事件，117-118**
-
-**关键字**
-
-- break，16，18-19
-- continue，19
-- finally，32-33
-- function，19
-- new，23
-- return，20-21
-- var，10
+- 键盘事件，117-118
+- 关键字
+    - `break`，16，18-19
+    - `continue`，19
+    - `finally`，32-33
+    - `function`，19
+    - `new`，23
+    - `return`，20-21
+    - `var`，10
 
 ## L
 
-large_title.html 列表，104
-
-**lastIndexOf() 方法**
-
-- 数组，28
-- 字符串，26
-
-## length
-
-- 数组的长度，28
-- 字符串的长度，26
-
+- `large_title.html` 清单，104
+- `lastIndexOf()` 方法
+    - 数组，28
+    - 字符串，26
+- `length`
+    - 数组的长度，28
+    - 字符串的长度，26
 - 小于运算符，14
-
 - 小于或等于运算符，14
-
 - 生命周期阶段
-  - AngularJS，39-40
-  - 作用域，71-72
-
-- limitTo:limit 过滤器，87
-
-- link() 函数，130-132
-
-- link 属性，123
-
+    - AngularJS，39-40
+    - 作用域，71-72
+- `limitTo:limit` 过滤器，87
+- `link()` 函数，130-132
+- `link` 属性，123
 - 监听器，处理自定义事件，151
-
 - 列表
-  - animate.css，174
-  - config_run_blocks.html，63
-  - config_run_blocks.js，63
-  - 在 JavaScript 中定义全局和局部变量，22
-  - directive_angular_include.html，103
-  - directive_angular_include.js，103
-  - directive_bind.html，112
-  - directive_bind.js，112
-  - directive_custom_dom.html，135
-  - directive_custom_dom.js，134
-  - directive_custom_photos.js，141
-  - directive_custom_zoom.html，139
-  - directive_custom_zoom.js，137
-  - directive_custom.html，142
-  - directive_focus_events.html，116
-  - directive_focus_events.js，116
-  - directive_form.html，108
-  - directive_form.js，105
-  - directive_keyboard_events.html，118
-  - directive_keyboard_events.js，118
-  - directive_mouse_events.html，121
-  - directive_mouse_events.js，120
-  - dragdrop.html，206
-  - dragdrop.js，204
-  - expand_item.html，214
-  - expand_list.html，214
-  - expand.html，215
-  - expand.js，213
-  - expressions_basic.html，80
-  - expressions_basic.js，80
-  - expressions_javascript.html，85
-  - expressions_javascript.js，85
-  - expressions_scope.html，83
-  - expressions_scope.js，82
-  - filter_customer.js，95
-  - filter_custom.html，96
-  - filter_sort.html，93
-  - filter_sort.js，92
-  - filters.html，90
-  - filters.js，90
-  - first.html，47
-  - first.js，47
-  - inject_builtin.html，58
-  - inject_builtin.js，58
-  - inject_custom.html，60
-  - inject_custom.js，60
-  - large_title.html，104
-  - my_photos.html，143
-  - pane.html，201
-  - rating.html，219
-  - rating.js，218
-  - scope_controller.html，67
-  - scope_controller.js，67
-  - scope_events.html，153
-  - scope_events.js，152
-  - scope_hierarchy.html，74
-  - scope_hierarchy.js，74
-  - scope_template.html，70
-  - scope_template.js，69
-  - scope_watch.html，149
-  - scope_watch.js，148
-  - server.js，9
-  - service_animate.html，173
-  - service_animate.js，172
-  - service_cache.js，165
-  - service_cookie.html，167
-  - service_cookie.js，167
-  - service_custom_censor.html，187
-  - service_custom_censor.js，186
-  - service_custom_db_access.js，194
-  - service_custom_db.html，196
-  - service_custom_db.js，195
-  - service_custom_time.html，190
-  - service_custom_time.js，189
-  - service_db_server.js，192
-  - service_http.html，164
-  - service_http.js，163
-  - service_location.html，178
-  - service_location.js，177
-  - service_server.js，162
-  - small_title.html，104
-  - tabbable.html，202
-  - tabbable.js，200
-  - tabs.html，201
-  - welcome.css，9
-  - welcome.html，9
-  - zooming.html，210
-  - zooming.js，209
-  - zoomit.html，210
-
-## 加载
-
-- angular.js 库文件，45
-- 模块，45
-
-## 局部变量作用域，22
-
-## $locale 服务，158
-
-## $location 服务，158，176-177
-
-## $log 服务，158
-
-## 逻辑运算符列表，14
-
-## 循环
-
-- 定义，16
-- do/while 循环，17
-- for/in 循环，18
-- for 循环，17-18
-- 中断循环，18-19
-- while 循环，16-17
-
-## lowercase 过滤器，87
-
-## lowercase() 全局 API，43
+    - `animate.css`，174
+    - `config_run_blocks.html`，63
+    - `config_run_blocks.js`，63
+    - 在 JavaScript 中定义全局和局部变量，22
+    - `directive_angular_include.html`，103
+    - `directive_angular_include.js`，103
+    - `directive_bind.html`，112
+    - `directive_bind.js`，112
+    - `directive_custom_dom.html`，135
+    - `directive_custom_dom.js`，134
+    - `directive_custom_photos.js`，141
+    - `directive_custom_zoom.html`，139
+    - `directive_custom_zoom.js`，137
+    - `directive_custom.html`，142
+    - `directive_focus_events.html`，116
+    - `directive_focus_events.js`，116
+    - `directive_form.html`，108
+    - `directive_form.js`，105
+    - `directive_keyboard_events.html`，118
+    - `directive_keyboard_events.js`，118
+    - `directive_mouse_events.html`，121
+    - `directive_mouse_events.js`，120
+    - `dragdrop.html`，206
+    - `dragdrop.js`，204
+    - `expand_item.html`，214
+    - `expand_list.html`，214
+    - `expand.html`，215
+    - `expand.js`，213
+    - `expressions_basic.html`，80
+    - `expressions_basic.js`，80
+    - `expressions_javascript.html`，85
+    - `expressions_javascript.js`，85
+    - `expressions_scope.html`，83
+    - `expressions_scope.js`，82
+    - `filter_customer.js`，95
+    - `filter_custom.html`，96
+    - `filter_sort.html`，93
+    - `filter_sort.js`，92
+    - `filters.html`，90
+    - `filters.js`，90
+    - `first.html`，47
+    - `first.js`，47
+    - `inject_builtin.html`，58
+    - `inject_builtin.js`，58
+    - `inject_custom.html`，60
+    - `inject_custom.js`，60
+    - `large_title.html`，104
+    - `my_photos.html`，143
+    - `pane.html`，201
+    - `rating.html`，219
+    - `rating.js`，218
+    - `scope_controller.html`，67
+    - `scope_controller.js`，67
+    - `scope_events.html`，153
+    - `scope_events.js`，152
+    - `scope_hierarchy.html`，74
+    - `scope_hierarchy.js`，74
+    - `scope_template.html`，70
+    - `scope_template.js`，69
+    - `scope_watch.html`，149
+    - `scope_watch.js`，148
+    - `server.js`，9
+    - `service_animate.html`，173
+    - `service_animate.js`，172
+    - `service_cache.js`，165
+    - `service_cookie.html`，167
+    - `service_cookie.js`，167
+    - `service_custom_censor.html`，187
+    - `service_custom_censor.js`，186
+    - `service_custom_db_access.js`，194
+    - `service_custom_db.html`，196
+    - `service_custom_db.js`，195
+    - `service_db_server.js`，192
+    - `service_http.html`，164
+    - `service_http.js`，163
+    - `service_location.html`，178
+    - `service_location.js`，177
+    - `service_server.js`，162
+    - `small_title.html`，104
+    - `tabbable.html`，202
+    - `tabbable.js`，200
+    - `tabs.html`，201
+    - `welcome.css`，9
+    - `welcome.html`，9
+    - `zooming.html`，210
+    - `zooming.js`，209
+    - `zoomit.html`，210
+- 加载
+    - `angular.js` 库文件，45
+    - 模块，45
+- 局部变量作用域，22
+- `$locale` 服务，158
+- `$location` 服务，158，176-177
+- `$log` 服务，158
+- 逻辑运算符列表，14
+- 循环
+    - 定义，16
+    - `do/while` 循环，17
+    - `for/in` 循环，18
+    - `for` 循环，17-18
+    - 中断循环，18-19
+    - `while` 循环，16-17
+- `lowercase` 过滤器，87
+- `lowercase()` 全局 API，43
 
 ## M
 
-## match() 方法，26
-
-## message 属性，32
-
-## method 属性，160
-
-## 方法
-
-- 数组方法，28-29
-- 延迟响应方法，180-181
-- 定义，23
-- $http 服务方法，159
-- jQuery lite 中的方法，48-49
-- $location 服务方法，176-177
-- 字符串方法，26
-
-## 模型变更阶段（作用域），72
-
-## 模块
-
-- 添加依赖，57-58
-- 配置阶段
-  - 添加配置块，61-62
-  - 实现配置块，62-63
-- 创建提供者
-  - 服务提供者，56-57
-  - 专用提供者，56
-- 定义，54-55
-- 定义，37，53-54
-- 加载，45
-- 运行阶段
-  - 添加运行块，62
-  - 实现运行块，62-63
-
+- `match()` 方法，26
+- `message` 属性，32
+- `method` 属性，160
+- 方法
+    - 数组方法，28-29
+    - 延迟响应方法，180-181
+    - 定义，23
+    - `$http` 服务方法，159
+    - jQuery lite 中的方法，48-49
+    - `$location` 服务方法，176-177
+    - 字符串方法，26
+- 模型变更阶段（作用域），72
+- 模块
+    - 添加依赖，57-58
+    - 配置阶段
+        - 添加配置块，61-62
+        - 实现配置块，62-63
+    - 创建提供者
+        - 服务提供者，56-57
+        - 专用提供者，56
+    - 定义，54-55
+    - 定义，37，53-54
+    - 加载，45
+    - 运行阶段
+        - 添加运行块，62
+        - 实现运行块，62-63
 - 取模运算符，12
 - 鼠标事件，120
-- multiElement 属性，123
+- `multiElement` 属性，123
 - 乘法运算符，12
 - 变更观察阶段（作用域），72
 - MVC（模型-视图-控制器）模型，36
-- my_photos.html 列表，143
+- `my_photos.html` 清单，143
 
 ## N
 
-- name 属性，32
+- `name` 属性，32
 - 嵌套控制器，实现自定义事件，151-152
 - 嵌套指令，140-141，199-202，212-215
-- new 关键字，23
-- new 运算符，224-225
-
-- ng-app 指令，37，42，45，100
-- ng-bind 指令，109
-- ng-bind-html 指令，109
-- ng-bind-template 指令，109
-- ng-blur 指令，114-115
-- ng-change 指令，114
-- ng-checked 指令，114
-- ng-class 指令，109，169-170
-- ng-class-even 指令，109
-- ng-class-odd 指令，109
-- ng-click 指令，69，114，120
-- ng-cloak 指令，100
-- ng-controller 指令，66，100
-- ng-copy 指令，114
-- ng-cut 指令，114
-- ng-dblclick 指令，114
-- ng-disabled 指令，109
-- ng-focus 指令，114-115
-- ng-form 指令，104
-- ng-hide 指令，109，169
-- ng-href 指令，100
-- ng-if 指令，109，169
-- ng-include 指令，100，102，169
-- ng-init 指令，109
-- ng-keydown 指令，114，117-118
-- ng-keypress 指令，114
-- ng-keyup 指令，114，117-118
-- ng-list 指令，100
-- ng-model 指令，68，109
-- ng-mousedown 指令，114，120
-- ng-mouseenter 指令，114，120
-- ng-mouseleave 指令，114，120
-- ng-mousemove 指令，114，120
-- ng-mouseover 指令，114
-- ng-mouseup 指令，114，120
-- ng-non-bindable 指令，100
-- ng-open 指令，100
-- ng-options 指令，104
-- ng-paste 指令，114
-- ng-pluralize 指令，100
-- ng-readonly 指令，100
-- ng-repeat 指令，109，169
-- ng-required 指令，100
-- ng-selected 指令，100
-- ng-show 指令，109，169
-- ng-src 指令，100
-- ng-srcset 指令，100
-- ng-style 指令，109
-- ng-submit 指令，114
-- ng-swipe-left 指令，114
-- ng-swipe-right 指令，114
-- ng-switch 指令，109，169
-- ng-transclude 指令，100，130
-- ng-value 指令，109
-- ng-view 指令，100，169
-
-**Node.js**
-
-- 构建 Express Web 服务器，8-10
-- 在 Node.js 上运行 JavaScript 代码，7
-- 设置，6-7
-
-规范化，78
-
-不等于运算符，14
-
-非运算符，14
-
-$notify() 方法，180
-
-null 数据类型，12
-
-number 数据类型，11
-
-number[:fraction] 过滤器，87
-
-基本表达式中的数字，79-80
+- `new` 关键字，23
+- `new` 运算符，224-225
+- `ng-app` 指令，37，42，45，100
+- `ng-bind` 指令，109
+- `ng-bind-html` 指令，109
+- `ng-bind-template` 指令，109
+- `ng-blur` 指令，114-115
+- `ng-change` 指令，114
+- `ng-checked` 指令，114
+- `ng-class` 指令，109，169-170
+- `ng-class-even` 指令，109
+- `ng-class-odd` 指令，109
+- `ng-click` 指令，69，114，120
+- `ng-cloak` 指令，100
+- `ng-controller` 指令，66，100
+- `ng-copy` 指令，114
+- `ng-cut` 指令，114
+- `ng-dblclick` 指令，114
+- `ng-disabled` 指令，109
+- `ng-focus` 指令，114-115
+- `ng-form` 指令，104
+- `ng-hide` 指令，109，169
+- `ng-href` 指令，100
+- `ng-if` 指令，109，169
+- `ng-include` 指令，100，102，169
+- `ng-init` 指令，109
+- `ng-keydown` 指令，114，117-118
+- `ng-keypress` 指令，114
+- `ng-keyup` 指令，114，117-118
+- `ng-list` 指令，100
+- `ng-model` 指令，68，109
+- `ng-mousedown` 指令，114，120
+- `ng-mouseenter` 指令，114，120
+- `ng-mouseleave` 指令，114，120
+- `ng-mousemove` 指令，114，120
+- `ng-mouseover` 指令，114
+- `ng-mouseup` 指令，114，120
+- `ng-non-bindable` 指令，100
+- `ng-open` 指令，100
+- `ng-options` 指令，104
+- `ng-paste` 指令，114
+- `ng-pluralize` 指令，100
+- `ng-readonly` 指令，100
+- `ng-repeat` 指令，109，169
+- `ng-required` 指令，100
+- `ng-selected` 指令，100
+- `ng-show` 指令，109，169
+- `ng-src` 指令，100
+- `ng-srcset` 指令，100
+- `ng-style` 指令，109
+- `ng-submit` 指令，114
+- `ng-swipe-left` 指令，114
+- `ng-swipe-right` 指令，114
+- `ng-switch` 指令，109，169
+- `ng-transclude` 指令，100，130
+- `ng-value` 指令，109
+- `ng-view` 指令，100，169
+- Node.js
+    - 构建 Express Web 服务器，8-10
+    - 在 Node.js 上运行 JavaScript 代码，7
+    - 设置，6-7
+- 规范化，78
+- 不等于运算符，14
+- 非运算符，14
+- `$notify()` 方法，180
+- `null` 数据类型，12
+- `number` 数据类型，11
+- `number[:fraction]` 过滤器，87
+- 基本表达式中的数字，79-80
 
 ## O
 
-对象字面量数据类型，12
-
-对象
-
-- 数组
-  - 添加/删除项，30
-  - 组合，29
-  - 转换为字符串，30
-  - 定义，28
-  - 迭代，30
-  - 长度，28
-  - 方法，28
-  - 搜索项，30
-- 定义自定义对象，23-24
-- 定义，22
-
-DOM 对象。*参见* DOM 操作
-
-错误处理
-
-- finally 关键字，32-33
-- 抛出错误，32
-- try/catch 块，31-32
-
-模块，定义，54-55
-
-属性，跟踪，147
-
-原型继承，24-25
-
-字符串
-
-- 连接，27
-- 定义，25
-- 转义代码，25
-- 长度，26
-- 方法，26
-- 替换字符串中的词，27
-- 搜索子字符串，27
-- 分割成数组，27
-- 语法，23
-
-off() 方法，48
-
-one() 方法，48
-
-$on() 方法，151
-
-on() 方法，48
-
-运算符
-
-- 算术运算符，12-13
-- 赋值运算符，13
-- 比较运算符，14
-- 定义，12
-- if 语句，15
-- 逻辑运算符，14
-- switch 语句，15-16
-
-orderBy:exp:reverse 过滤器，87
-
-使用过滤器排序，91-92
-
-或运算符，14
+- 对象字面量数据类型，12
+- 对象
+    - 数组
+        - 添加/删除项，30
+        - 组合，29
+        - 转换为字符串，30
+        - 定义，28
+        - 迭代，30
+        - 长度，28
+        - 方法，28
+        - 搜索项，30
+    - 定义自定义对象，23-24
+    - 定义，22
+    - DOM 对象。*参见* DOM 操作
+    - 错误处理
+        - `finally` 关键字，32-33
+        - 抛出错误，32
+        - `try/catch` 块，31-32
+    - 模块，定义，54-55
+    - 属性，跟踪，147
+    - 原型继承，24-25
+    - 字符串
+        - 连接，27
+        - 定义，25
+        - 转义代码，25
+        - 长度，26
+        - 方法，26
+        - 替换字符串中的词，27
+        - 搜索子字符串，27
+        - 分割成数组，27
+        - 语法，23
+- `off()` 方法，48
+- `one()` 方法，48
+- `$on()` 方法，151
+- `on()` 方法，48
+- 运算符
+    - 算术运算符，12-13
+    - 赋值运算符，13
+    - 比较运算符，14
+    - 定义，12
+    - `if` 语句，15
+    - 逻辑运算符，14
+    - `switch` 语句，15-16
+- `orderBy:exp:reverse` 过滤器，87
+- 使用过滤器排序，91-92
+- 或运算符，14
 
 ## P
 
-pane.html 列表，201
-
-参数，将依赖作为参数传递，226
-
-params 属性，160
-
-parent() 方法，48
-
-父作用域，向父作用域发送事件，150-151
-
-$parse 服务，158
-
-传递
-
-- 将依赖作为参数传递，226
-- 将变量传递给函数，20
-
-
-
-## path() 方法
-
-- path() 方法，176
-- pop() 方法，28
-- port() 方法，176
+- `pane.html` 清单，201
+- 参数，将依赖作为参数传递，226
+- `params` 属性，160
+- `parent()` 方法，48
+- 父作用域，向父作用域发送事件，150-151
+- `$parse` 服务，158
+- 传递
+    - 将依赖作为参数传递，226
+    - 将变量传递给函数，20
+- `path()` 方法，176
+- `pop()` 方法，28
+- `port()` 方法，176
 - 定位事件处理器，145
-- prepend() 方法，48
-- priority 属性，123
-- prop() 方法，48
-
-## 属性
-
-- 自定义指令，123-125
-- 定义，23
-- $http 服务，160-161
-- 追踪，147
-
-## protocol() 方法
-
-- protocol() 方法，176
-
-## 原型对象
-
+- `prepend()` 方法，48
+- `priority` 属性，123
+- `prop()` 方法，48
+- 属性
+    - 自定义指令，123-125
+    - 定义，23
+    - `$http` 服务，160-161
+    - 追踪，147
+- `protocol()` 方法，176
 - 原型对象，24-25
-
-## Protractor
-
 - Protractor，223，230
-
-## provider() 方法
-
-- provider() 方法，57
-
-## 提供者
-
-- 创建
-  - 服务提供者，56-57
-  - 专用提供者，56
-- 定义，54
-- 实现，57-58
-- 注入到控制器，58-59
-
-## push() 方法
-
-- push() 方法，28
-
-## $q 服务
-
-- $q 服务，158，180-181
-- 与自定义服务一起使用，192-194
+- `provider()` 方法，57
+- 提供者
+    - 创建
+        - 服务提供者，56-57
+        - 专用提供者，56
+    - 定义，54
+    - 实现，57-58
+    - 注入到控制器，58-59
+- `push()` 方法，28
+- `$q` 服务，158，180-181
+    - 与自定义服务一起使用，192-194
 
 ## R
 
-- rating.html 清单，219
-- rating.js 清单，218
+- `rating.html` 清单，219
+- `rating.js` 清单，218
 - 评分示例应用程序，217-219
-- ready() 方法，48
+- `ready()` 方法，48
 - 注册请求，225-226
-- $reject() 方法，180
-- remove() 方法，48
-- removeAttr() 方法，48
-- removeClass() 方法，48
-- removeData() 方法，48
+- `$reject()` 方法，180
+- `remove()` 方法，48
+- `removeAttr()` 方法，48
+- `removeClass()` 方法，48
+- `removeData()` 方法，48
 - 从数组中移除项目，30
-- replace() 方法，26-27，176
-- replaceWith() 方法，48
+- `replace()` 方法，26-27，176
+- `replaceWith()` 方法，48
 - 替换字符串中的单词，27
-- require() 方法，7
-- require 属性，123
-- $resolve() 方法，180
-- $resource 服务，158
+- `require()` 方法，7
+- `require` 属性，123
+- `$resolve()` 方法，180
+- `$resource` 服务，158
 - 响应回调函数，$http 服务，161
-- responseType 属性，160
+- `responseType` 属性，160
 - 职责分离，40
-- restrict 属性，123，126-127
-- return 关键字，20-21
+- `restrict` 属性，123，126-127
+- `return` 关键字，20-21
 - 从函数返回变量，20-21
 - 自定义服务的可重用性，188-189
-- reverse() 方法，28
+- `reverse()` 方法，28
 - 根元素，定义，45
 - 根作用域，应用程序和，65-66
-- $rootElement 服务，158
-- $rootScope 服务，158
-- $route 服务，158
-- $routeParams 服务，158
-
-## 运行块
-
-- 添加，62
-- 实现，62-63
-
-## 运行阶段（模块）
-
-- 添加运行块，62
-- 实现运行块，62-63
-
-## 在 Node.js 上运行 JavaScript
-
+- `$rootElement` 服务，158
+- `$rootScope` 服务，158
+- `$route` 服务，158
+- `$routeParams` 服务，158
+- 运行块
+    - 添加，62
+    - 实现，62-63
+- 运行阶段（模块）
+    - 添加运行块，62
+    - 实现运行块，62-63
 - 在 Node.js 上运行 JavaScript，7
-
-## 运行时阶段（AngularJS 生命周期）
-
 - 运行时阶段（AngularJS 生命周期），40
 
 ## S
 
-- 示例代码清单。请参阅清单
-- $sanitize 服务，158
-- $sce 服务，158
-
-## 作用域变更事件
-
-- 在控制器中实现，148
-  - $watch() 方法，146-147
-  - $watchCollection() 方法，147
-  - $watchGroup() 方法，147
-
-## 作用域销毁阶段（作用域）
-
+- 示例代码清单。请参阅 清单
+- `$sanitize` 服务，158
+- `$sce` 服务，158
+- 作用域变更事件
+    - 在控制器中实现，148
+    - `$watch()` 方法，146-147
+    - `$watchCollection()` 方法，147
+    - `$watchGroup()` 方法，147
 - 作用域销毁阶段（作用域），72
-
-## scope() 方法
-
-- scope() 方法，49
-
-## scope 属性
-
-- scope 属性，123，128-130
-
-## scope_controller.html 清单
-
-- scope_controller.html 清单，67
-
-## scope_controller.js 清单
-
-- scope_controller.js 清单，67
-
-## scope_events.html 清单
-
-- scope_events.html 清单，153
-
-## scope_events.js 清单
-
-- scope_events.js 清单，152
-
-## scope_hierarchy.html 清单
-
-- scope_hierarchy.html 清单，74
-
-## scope_hierarchy.js 清单
-
-- scope_hierarchy.js 清单，74
-
-## scope_template.html 清单
-
-- scope_template.html 清单，70
-
-## scope_template.js 清单
-
-- scope_template.js 清单，69
-
-## scope_watch.html 清单
-
-- scope_watch.html 清单，149
-
-## scope_watch.js 清单
-
-- scope_watch.js 清单，148
-
-## 作用域
-
-- 在 AngularJS 中
-  - 定义，37
-  - 实现，46
-- 为自定义指令配置，128-130
-- 自定义事件，150
-  - 广播，151
-  - 派发，150-151
-  - 使用监听器处理，151
-  - 在嵌套控制器中实现，151-152
-- 作为数据模型，65
-  - 后端服务器数据，71
-  - 控制器和，66-67
-  - 表达式和，78-79，81-82
-  - 生命周期阶段，71-72
-  - 根作用域，65-66
-  - 作用域层次结构，73
-  - 模板和，68-69
-- 对象属性，追踪，147
-- 共享，212-215
-- 测试控制器，226-227
-- 变量的，22
-  - 追踪，146-147
-
-## script 指令
-
-- script 指令，100
-
-## search() 方法
-
-- search() 方法，26，176
-
-## 搜索
-
-- 数组中的项目，30
-- 字符串中的子串，27
-
-## select 指令
-
-- select 指令，104
-
-## 职责分离
-
+- `scope()` 方法，49
+- `scope` 属性，123，128-130
+- `scope_controller.html` 清单，67
+- `scope_controller.js` 清单，67
+- `scope_events.html` 清单，153
+- `scope_events.js` 清单，152
+- `scope_hierarchy.html` 清单，74
+- `scope_hierarchy.js` 清单，74
+- `scope_template.html` 清单，70
+- `scope_template.js` 清单，69
+- `scope_watch.html` 清单，149
+- `scope_watch.js` 清单，148
+- 作用域
+    - 在 AngularJS 中
+        - 定义，37
+        - 实现，46
+    - 为自定义指令配置，128-130
+    - 自定义事件，150
+        - 广播，151
+        - 派发，150-151
+        - 使用监听器处理，151
+        - 在嵌套控制器中实现，151-152
+    - 作为数据模型，65
+        - 后端服务器数据，71
+        - 控制器和，66-67
+        - 表达式和，78-79，81-82
+        - 生命周期阶段，71-72
+        - 根作用域，65-66
+        - 作用域层次结构，73
+        - 模板和，68-69
+    - 对象属性，追踪，147
+    - 共享，212-215
+    - 测试控制器，226-227
+    - 变量的，22
+        - 追踪，146-147
+- `script` 指令，100
+- `search()` 方法，26，176
+- 搜索
+    - 数组中的项目，30
+    - 字符串中的子串，27
+- `select` 指令，104
 - 职责分离，40
-
-## 服务器数据，作用域和
-
 - 服务器数据，作用域和，71
-
-## server.js 清单
-
-- server.js 清单，9
-
-## 服务器。请参阅 Web 服务器
-
-## service() 方法
-
-- service() 方法，56
-
-## 服务提供者，创建
-
+- `server.js` 清单，9
+- 服务器。参见 Web 服务器
+- `service()` 方法，56
 - 服务提供者，创建，56-57
-
-## 服务服务，184-185
-
-- 实现示例，185-186
-
-## service_animate.html 清单
-
-- service_animate.html 清单，173
-
-## service_animate.js 清单
-
-- service_animate.js 清单，172
-
-## service_cache.js 清单
-
-- service_cache.js 清单，165
-
-## service_cookie.html 清单
-
-- service_cookie.html 清单，167
-
-## service_cookie.js 清单
-
-- service_cookie.js 清单，167
-
-## service_custom_censor.html 清单
-
-- service_custom_censor.html 清单，187
-
-## service_custom_censor.js 清单
-
-- service_custom_censor.js 清单，186
-
-## service_custom_db_access.js 清单
-
-- service_custom_db_access.js 清单，194
-
-## service_custom_db.html 清单
-
-- service_custom_db.html 清单，196
-
-## service_custom_db.js 清单
-
-- service_custom_db.js 清单，195
-
-## service_custom_time.html 清单
-
-- service_custom_time.html 清单，190
-
-## service_custom_time.js 清单
-
-- service_custom_time.js 清单，189
-
-## service_db_server.js 清单
-
-- service_db_server.js 清单，192
-
-## service_http.html 清单
-
-- service_http.html 清单，164
-
-## service_http.js 清单
-
-- service_http.js 清单，163
-
-## service_location.html 清单
-
-- service_location.html 清单，178
-
-## service_location.js 清单
-
-- service_location.js 清单，177
-
-## service_server.js 清单
-
-- service_server.js 清单，162
-
-## 服务
-
-### 内置服务
-
-- $anchorScroll，158
-- $animate，158，169-172
-- $cacheFactory，158，165
-- $compile，158
-- $cookie，166-167
-- $cookies，158
-- $cookieStore，166-167
-- $document，158
-- $exceptionHandler，158
-- $http，158-163
-- $interpolate，158
-- $interval，158，168-169
-- 列表，158
-- $locale，158
-- $location，158，176-177
-- $log，158
-- $parse，158
-- $q，158，180-181
-- $resource，158
-- $rootScope，158
-- $route，158
-- $routeParams，158
-- $sanitize，158
-- $sce，158
-- $swipe，158
-- $templateCache，158
-- $timeout，158，168-169
-- 与自定义服务一起使用，192-194
-- $window，158，166
-
-### 自定义服务
-
-- 常量服务，184
-- 数据库访问服务示例，192-194
-- 工厂服务，184
-- 实现示例，185-186
-- 服务服务，184-185
-- 时间服务示例，188-189
-- 类型，183
-- 值服务，183-184
-- 定义，38，157
-- 共享作用域，212-215
-
-## shift() 方法
-
-- shift() 方法，28
-
-## slice() 方法
-
-- 数组，28
-- 字符串，26
-
-## small_title.html 清单
-
-- small_title.html 清单，104
-
-## sort() 方法
-
-- sort() 方法，28
-
-## 使用过滤器排序
-
+- `service` 服务，184-185
+    - 实现示例，185-186
+- `service_animate.html` 清单，173
+- `service_animate.js` 清单，172
+- `service_cache.js` 清单，165
+- `service_cookie.html` 清单，167
+- `service_cookie.js` 清单，167
+- `service_custom_censor.html` 清单，187
+- `service_custom_censor.js` 清单，186
+- `service_custom_db_access.js` 清单，194
+- `service_custom_db.html` 清单，196
+- `service_custom_db.js` 清单，195
+- `service_custom_time.html` 清单，190
+- `service_custom_time.js` 清单，189
+- `service_db_server.js` 清单，192
+- `service_http.html` 清单，164
+- `service_http.js` 清单，163
+- `service_location.html` 清单，178
+- `service_location.js` 清单，177
+- `service_server.js` 清单，162
+- 服务
+    - 内置服务
+        - `$anchorScroll`，158
+        - `$animate`，158，169-172
+        - `$cacheFactory`，158，165
+        - `$compile`，158
+        - `$cookie`，166-167
+        - `$cookies`，158
+        - `$cookieStore`，166-167
+        - `$document`，158
+        - `$exceptionHandler`，158
+        - `$http`，158-163
+        - `$interpolate`，158
+        - `$interval`，158，168-169
+        - 列表，158
+        - `$locale`，158
+        - `$location`，158，176-177
+        - `$log`，158
+        - `$parse`，158
+        - `$q`，158，180-181
+        - `$resource`，158
+        - `$rootScope`，158
+        - `$route`，158
+        - `$routeParams`，158
+        - `$sanitize`，158
+        - `$sce`，158
+        - `$swipe`，158
+        - `$templateCache`，158
+        - `$timeout`，158，168-169
+            - 与自定义服务一起使用，192-194
+        - `$window`，158，166
+    - 自定义服务
+        - `constant` 服务，184
+        - 数据库访问服务示例，192-194
+        - `factory` 服务，184
+        - 实现示例，185-186
+        - `service` 服务，184-185
+        - 时间服务示例，188-189
+        - 类型，183
+        - `value` 服务，183-184
+    - 定义，38，157
+    - 共享作用域，212-215
+- `shift()` 方法，28
+- `slice()` 方法
+    - 数组，28
+    - 字符串，26
+- `small_title.html` 清单，104
+- `sort()` 方法，28
 - 使用过滤器排序，91-92
-
-## 专用提供者，创建
-
 - 专用提供者，创建，56
-
-## splice() 方法
-
-- splice() 方法，28
-
-## split() 方法
-
-- split() 方法，26-27
-
-## 将字符串分割成数组
-
+- `splice()` 方法，28
+- `split()` 方法，26-27
 - 将字符串分割成数组，27
-
-## 星级评分示例应用程序
-
 - 星级评分示例应用程序，217-219
-
-## 字符串数据类型
-
 - 字符串数据类型，11
-
-## 字符串
-
-- 在基本表达式中，79-80
-- 连接，13，27
-- 将数组转换为，30
-- 定义，25
-- 转义码，25
-- 长度，26
-- 方法，26
-- 替换单词，27
-- 搜索子串，27
-- 分割成数组，27
-- substr() 方法，26
-- substring() 方法，26
+- 字符串
+    - 在基本表达式中，79-80
+    - 连接，13，27
+    - 将数组转换为，30
+    - 定义，25
+    - 转义码，25
+    - 长度，26
+    - 方法，26
+    - 替换单词，27
+    - 搜索子串，27
+    - 分割成数组，27
+- `substr()` 方法，26
+- `substring()` 方法，26
 - 子串，搜索，27
-
-## 减法运算符
-
 - 减法运算符，12
-
-## $swipe 服务
-
-- $swipe 服务，158
-
-## switch 语句
-
-- switch 语句，15-16
+- `$swipe` 服务，158
+- `switch` 语句，15-16
 
 ## T
 
-- tabbable.html 清单，202
-- tabbable.js 清单，200
+- `tabbable.html` 清单，202
+- `tabbable.js` 清单，200
 - 带选项卡视图的示例应用程序，199-202
-- tabs.html 清单，201
-- template 属性，123-124
-- $templateCache 服务，158
-
-## 模板
-
-- 添加控制器，46
-- 组成部分，77-78
-- 使用自定义指令定义，124-126
-- 定义，77
-- 指令支持，100-102
-- 表达式，78-79
-  - 基本表达式，79-80
-  - JavaScript，85
-  - 作用域交互，81-82
-- 外部模板，测试自定义指令，230
-- 过滤器，87
-  - 内置过滤器，87-90
-  - 自定义过滤器，94-95
-  - 使用过滤器进行排序和过滤，91-92
-- 作用域和，68-69
-- 星级评分示例应用程序，217-219
-
-## templateUrl 属性
-
-- templateUrl 属性，123，126
-
-## terminal 属性
-
-- terminal 属性，123
-
-## 测试
-
-- 应用程序，223
-  - 端到端测试，230-231
-  - 评估平台，223
-  - 单元测试，224-230
-- 在 Node.js 上测试 JavaScript，7
-
-## text() 方法
-
-- text() 方法，48
-
-## textarea 指令
-
-- textarea 指令，104
-
-## throw 语句
-
-- throw 语句，32
-
-## 抛出错误
-
+- `tabs.html` 清单，201
+- `template` 属性，123-124
+- `$templateCache` 服务，158
+- 模板
+    - 添加控制器，46
+    - 组成部分，77-78
+    - 使用自定义指令定义，124-126
+    - 定义，77
+    - 指令支持，100-102
+    - 表达式，78-79
+        - 基本表达式，79-80
+        - JavaScript，85
+        - 作用域交互，81-82
+    - 外部模板，测试自定义指令，230
+    - 过滤器，87
+        - 内置过滤器，87-90
+        - 自定义过滤器，94-95
+        - 使用过滤器进行排序和过滤，91-92
+    - 作用域和，68-69
+    - 星级评分示例应用程序，217-219
+- `templateUrl` 属性，123，126
+- `terminal` 属性，123
+- 测试
+    - 应用程序，223
+        - 端到端测试，230-231
+        - 评估平台，223
+        - 单元测试，224-230
+    - 在 Node.js 上测试 JavaScript，7
+- `text()` 方法，48
+- `textarea` 指令，104
+- `throw` 语句，32
 - 抛出错误，32
-
-## 时间服务示例
-
 - 时间服务示例，188-189
-
-## timeout 属性
-
-- timeout 属性，160
-
-## $timeout 服务
-
-- $timeout 服务，158，168-169
+- `timeout` 属性，160
+- `$timeout` 服务，158，168-169
 - 计时器，168-169
-
-## toggleClass() 方法
-
-- toggleClass() 方法，48
-
-## toJson() 全局 API
-
-- toJson() 全局 API，43
-
-## toLowerCase() 方法
-
-- toLowerCase() 方法，26
-
-## toString() 方法
-
-- toString() 方法，28
-
-## toUpperCase() 方法
-
-- toUpperCase() 方法，26
-
-## transclude 属性
-
-- transclude 属性，123-124，130
-
-## 嵌入，测试自定义指令
-
+- `toggleClass()` 方法，48
+- `toJson()` 全局 API，43
+- `toLowerCase()` 方法，26
+- `toString()` 方法，28
+- `toUpperCase()` 方法，26
+- `transclude` 属性，123-124，130
 - 嵌入，测试自定义指令，229-230
-
-## transformRequest 属性
-
-- transformRequest 属性，160
-
-## transformResponse 属性
-
-- transformResponse 属性，160
-
-## triggerHandler() 方法
-
-- triggerHandler() 方法，48
-
-## try/catch 块
-
-- try/catch 块，31-32
-
-## type 属性
-
-- type 属性，123
+- `transformRequest` 属性，160
+- `transformResponse` 属性，160
+- `triggerHandler()` 方法，48
+- `try/catch` 块，31-32
+- `type` 属性，123
 
 ## U
 
-- unbind() 方法，48
+- `unbind()` 方法，48
 - 单元测试，224-230
-  - 控制器，226-227
-  - 自定义指令，228
-    - 使用外部模板，230
-    - 使用嵌入，229-230
-  - 依赖注入和，224-226
-    - 全局查找，225
-    - new 运算符，224-225
-    - 传递参数，226
-    - 注册请求，225-226
-  - 过滤器，227-228
-- unshift() 方法，28
-- uppercase 过滤器，87
-- uppercase() 全局 API，43
-- url() 方法，176
-- url 属性，160
+    - 控制器，226-227
+    - 自定义指令，228
+        - 使用外部模板，230
+        - 使用嵌入，229-230
+    - 依赖注入和，224-226
+        - 全局查找，225
+        - `new` 运算符，224-225
+        - 传递参数，226
+        - 注册请求，225-226
+    - 过滤器，227-228
+- `unshift()` 方法，28
+- `uppercase` 过滤器，87
+- `uppercase()` 全局 API，43
+- `url()` 方法，176
+- `url` 属性，160
 - 用户交互事件，145-146
 
 ## W
 
-- $watch() 方法，72，146-148
-- $watchCollection() 方法，147-148
+- `$watch()` 方法，72，146-148
+- `$watchCollection()` 方法，147-148
 - 监视器注册阶段（作用域），72
-- $watchGroup() 方法，147-148
-
-## Web 浏览器
-
-- 警报，实现，166
-- Cookies，166-167
-- 事件，145
-- 用途，6
-
-## Web 服务器
-
-- Express Web 服务器，构建，8-10
-- 用途，6
-
-## WebDriver
-
+- `$watchGroup()` 方法，147-148
+- Web 浏览器
+    - 警报，实现，166
+    - Cookies，166-167
+    - 事件，145
+    - 用途，6
+- Web 服务器
+    - Express Web 服务器，构建，8-10
+    - 用途，6
 - WebDriver，230
-
-## 网站，AngularJS
-
 - 网站，AngularJS，42
+- `welcome.css` 清单，9
+- `welcome.html` 清单，9
 
-## welcome.css 清单
 
-- welcome.css 清单，9
 
-## welcome.html 清单
-
-- welcome.html 清单，9
+- `welcome.html` 清单，9
 
 ## while 循环
 
-- while 循环，16-17
+- `while` 循环，16-17
 
-## $window 服务
+## `$window` 服务
 
-- $window 服务，158，166
+- `$window` 服务，158，166
 
-## withCredentials 属性
+## `withCredentials` 属性
 
-- withCredentials 属性，160
+- `withCredentials` 属性，160
 
 ## 单词，替换字符串中的
 
 - 单词，替换字符串中的，27
 
-## wrap() 方法
+## `wrap()` 方法
 
-- wrap() 方法，48
+- `wrap()` 方法，48
 
 ## V
 
-- val() 方法，48
-- value() 方法，56
+- `val()` 方法，48
+
+- `value()` 方法，56
+
 - 值服务，183-184
+
   - 实现示例，185-186
-- valueOf() 方法
+
+- `valueOf()` 方法
+
   - 数组，28
+
   - 字符串，26
+
 - 值
+
   - 传递给函数，20
+
   - 从函数返回，20-21
-- var 关键字，10
+
+- `var` 关键字，10
 
 ## 变量
 
 - 数据类型，列表，11-12
+
 - 定义，10-11
+
 - 在表达式中，81-82
+
 - 传递给函数，20
+
 - 从函数返回，20-21
+
 - 作用域，22
+
   - 追踪，146-147
 
 ## X–Y
 
-- xsrfCookieName 属性，160
-- xsrfHeaderName 属性，160
+- `xsrfCookieName` 属性，160
+
+- `xsrfHeaderName` 属性，160
 
 ## Z
 
 - 缩放视图字段示例应用程序，208-210
-- zooming.html 清单，210
-- zooming.js 清单，209
-- zoomit.html 清单，210
 
+- `zooming.html` 清单，210
 
+- `zooming.js` 清单，209
+
+- `zoomit.html` 清单，210
 
 # 构建基于 JavaScript 的 Web 应用程序权威指南：从服务器到浏览器
 
 这是一本为希望将这三种技术整合为完整解决方案的 Web 程序员准备的完整指南。学习如何使用 Node.js 和 MongoDB 构建更具扩展性、高性能的站点，如何利用 AngularJS 创新的 MVC 方法来构建更高效的页面和应用程序，以及如何综合运用三者来提供出色的下一代 Web 解决方案。
 
 提供纸质版和电子书版本。
+
 电子书格式包括 EPUB、MOBI 和 PDF。
 
 ISBN-13: 978-0-321-99578-0
@@ -8680,13 +8501,14 @@ ISBN-13: 978-0-133-92920-1
 
 注册您拥有的 Addison-Wesley、Exam Cram、Prentice Hall、Que 和 Sams 产品，即可解锁丰厚福利。
 
-要开始注册流程，只需访问 **informit.com/register** 登录或创建一个帐户。
+要开始注册流程，只需访问 `informit.com/register` 登录或创建一个帐户。
 
 然后，您将被提示输入产品背面的 10 位或 13 位 ISBN 码。
 
 注册产品可解锁以下福利：
 
 - 访问补充内容，包括额外章节、源代码或项目文件。
+
 - 下次购买时可使用的优惠券。
 
 注册福利因产品而异。福利将列在您帐户页面的“已注册产品”下。
@@ -8703,17 +8525,21 @@ InformIT 是培生集团的一个品牌，也是全球领先技术出版商的�
 
 正在寻找关于新技术的书籍、电子书或培训视频？寻求及时且相关的信息和教程。想要获取专家意见、建议和技巧？**InformIT 有解决方案。**
 
-- 订阅各种月度通讯，了解新书发布和特别促销活动。访问 **informit.com/newsletters**。
-- 从 **informit.com/podcasts** 获取专家的免费播客。
-- 在 **informit.com/articles** 阅读最新的作者文章和章节样本。
-- 访问 Safari Books Online 数字图书馆中的数千本书籍和视频。**safari.informit.com**。
-- 从 **informit.com/blogs** 的专家博客获取建议和技巧。
+- 订阅各种月度通讯，了解新书发布和特别促销活动。访问 `informit.com/newsletters`。
 
-访问 **informit.com**，了解您获取最热门技术内容的所有方式。
+- 从 `informit.com/podcasts` 获取专家的免费播客。
+
+- 在 `informit.com/articles` 阅读最新的作者文章和章节样本。
+
+- 访问 Safari Books Online 数字图书馆中的数千本书籍和视频。**safari.informit.com**。
+
+- 从 `informit.com/blogs` 的专家博客获取建议和技巧。
+
+访问 `informit.com`，了解您获取最热门技术内容的所有方式。
 
 # 您是 IT 圈子的一员吗？
 
-通过 RSS 订阅、Facebook、Twitter、YouTube 等方式与培生的作者和编辑建立联系！访问 **informit.com/socialconnect**。
+通过 RSS 订阅、Facebook、Twitter、YouTube 等方式与培生的作者和编辑建立联系！访问 `informit.com/socialconnect`。
 
 编程 / Web 开发
 
@@ -8730,26 +8556,37 @@ AngularJS 是 Web 开发领域中最令人兴奋和最具创新性的新兴技�
 # 内容涵盖
 
 - 了解 AngularJS 的组织方式，并学习设计 AngularJS 应用程序的最佳实践
+
 - 了解如何定义模块和利用依赖注入
+
 - 使用内置指令快速构建 AngularJS 模板，以增强用户体验
+
 - 将 UI 元素绑定到您的数据模型，以便模型和 UI 的更改自动同步发生
+
 - 定义扩展 HTML 的自定义 AngularJS 指令
+
 - 实现可缩放的图像、可扩展的列表和其他丰富的 UI 组件
+
 - 实现与 Web 服务器交互的客户端服务
+
 - 构建动态浏览器视图以提供更丰富的用户交互
-- 创建可轻松重用的自定义服务
+
+- 创建可轻松重用的自定服务
+
 - 为 AngularJS 应用程序设计单元测试和端到端测试
 
-在 informit.com/register 注册您的书籍，以便在更新、下载和更正可用时便捷地获取。
+在 `informit.com/register` 注册您的书籍，以便在更新、下载和更正可用时便捷地获取。
 
 BRAD DAYLEY 是一位拥有超过 20 年企业应用程序和 Web 界面开发经验的高级软件工程师。他曾使用 JavaScript、jQuery、AngularJS 及相关技术来设计和实现从应用程序服务器到复杂的 2.0 Web 界面的广泛应用程序和服务。他的著作包括《Node.js、MongoDB 和 AngularJS Web 开发》、《Sams 24 小时自学 MongoDB NoSQL》、《Sams 24 小时自学 jQuery 和 JavaScript》以及《jQuery 和 JavaScript 短语手册》。
 
-informit.com/learningseries | informit.com/aw
+`informit.com/learningseries` | `informit.com/aw`
 
 ISBN-13: 978-0-13-403454-6
+
 ISBN-10: 0-13-403454-6
 
 封面设计：Chuti Prasertsith
+
 封面图片：Traffic Analyzer/Getty Images
 
 内文印刷于再生纸上

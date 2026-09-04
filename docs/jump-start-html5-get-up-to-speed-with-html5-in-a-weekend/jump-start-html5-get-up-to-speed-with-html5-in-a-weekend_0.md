@@ -1,31 +1,21 @@
+
 # HTML5 快速上手：在周末内精通 HTML5
-
-
 
 ![](img/cover.png)
 
-
-
 ![SitePoint®](img/sitepoint-logo.png)
-
-
-
-# 
 
 作者： Tiffany B. Brown, Kerry Butters 和 Sandeep Panda
 
-
 产品经理：Simon Mackie
+
 技术编辑：Craig Buckler
+
 英文编辑：Paul Fitzpatrick
+
 封面设计：Alex Walker
 
-
-
-
-
 ![SitePoint®](img/sitepoint-logo.png)
-
 
 ***
 
@@ -68,10 +58,6 @@ HTML5 还改进了现有元素。通过新的输入类型，我们不需要 Java
 ## 谁应该读这本书
 
 虽然这本书是为 HTML5 初学者设计的，但它并不是完全全面的。因此，我们假设读者已经有一些 HTML 知识。如果你是 Web 开发的完全新手，SitePoint 的 [**Build Your Own Website using HTML and CSS**](http://www.sitepoint.com/store/build-your-own-website-the-right-way-using-html-css-3rd-edition/) 可能更适合你。
-
-
-
-
 
 随着本书的进展，我们将处理一些更高级的主题，例如 API 和离线应用程序。为了学习这些章节，你应该熟悉 HTML 以及 JavaScript 基础和文档对象模型（`DOM`）。你不需要对 JavaScript 有深入了解。尽管如此，你应该理解事件处理、JavaScript 数据类型以及如 `while` 循环和 `if-else` 条件语句等控制结构。不过，我们将保持脚本示例的简单，并逐行对其进行解释。如果你对 JavaScript 不熟悉，可能喜欢阅读 Kevin Yank 编写的 SitePoint 的 *[Simply JavaScript](http://www.sitepoint.com/store/simply-javascript/)* 作为入门。[Mozilla 开发者网络](https://developer.mozilla.org/en-US/) 也为 JavaScript 和 `DOM` 提供了极的学习资源和文档。
 
@@ -140,7 +126,7 @@ URL.open("http://www.sitepoint.com/responsive-web-design-real-user-
 
 ### 注意：咳，打扰一下……
 
-注意（Notes）是与主题相关但并非至关重要的补充。将它们看作额外的信息碎片。
+注意（Notes）是与主题相关但并非至关重要的补充。将它们看作额的信息碎片。
 
 ### 重要：确保你始终……
 
@@ -189,7 +175,9 @@ SitePoint 论坛，用于在遇到任何棘手的 Web 问题寻求帮助。
 简单的答案是它是 HTML 的最新版本。但这并没有告诉我们太多信息。具体来说，HTML5：
 
 *   定义了一种解析算法，用于生成一致的 `DOM`（文档对象模型）树，即使对于模糊或低质量的标记也是如此
+
 *   添加了新元素支持多媒体和 Web 应用程序
+
 *   重新定义了现有 HTML 元素的规则和语义
 
 通过 HTML5，我们现在可以在 HTML 文档中原生嵌入音频和视频。可以使用内联 `SVG`（可缩矢量图形）标记。我们可以构建更健壮的表单体验，带有原生错误检查。我们可以使用 `canvas` 元素创建游戏、图表和动画。文档可以使用跨文档消息进行通信。换句话说，HTML5 更多是一个应用程序平台，而不仅仅是一种标记语言。
@@ -202,14 +190,11 @@ HTML 起根于*标准通用标记语言*，或 SGML。将 SGML 想象为一组�
 
 HTML，或 `HyperText Markup Language`（超文本标记语言），最初是 SGML 的应用。HTML 创建于 20 世纪 90 年代初，是描述超文本文档结构的标准方法。“超文本”简单意味着文本“包含指向其他文本的链接”且[不受线性的限制](http://www.w3.org/WhatIs.html)。
 
-通过描述文档的结构，我们将其与外观或其呈现给终端用户的方式解耦。这使得共享和分发变得更容易。相关的超文本传输协议（HTTP）使得在互联网上共享文档变得简单。
+通过描述文档的结结构，我们将其与外观或其呈现给终端用户的方式解耦。这使得共享和分发变得更容易。相关的超文本传输协议（HTTP）使得在互联网上共享文档变得简单。
 
 ### HTML：早期阶段
 
 “HTML 1”定义了一种简单的、基于标签的语法来解释文档结构——非常基础的文档结构。段落（p`）和列表项（li`）元素不需要结束标签。[最早版本](http://info.cern.ch/hypertext/WWW/MarkUp/MarkUp.html) 甚至不包含 `img` 或 `table` 元素。图像支持是在规范的 [1.2 版本](http://www.w3.org/MarkUp/draft-ietf-iiir-html-01.txt) 中添加的。
-
-
-
 
 HTML 语法在 [版本 2.0](http://www.w3.org/MarkUp/html-spec/) 中仅发生了细微变化。现在我们可以为 `p` 和 `li` 等元素使用结束标签，但这些结束标签是可选的。然而，从 HTML 2.0 到 HTML 3.2 的过渡标志着一次巨大的飞跃。
 
@@ -218,7 +203,9 @@ HTML 语法在 [版本 2.0](http://www.w3.org/MarkUp/html-spec/) 中仅发生了
 然而，大多数网页最终都停在了 HTML 4 上。随着 HTML 4 的出现，我们可以通过选择文档类型（doctype）来告诉浏览器如何解析我们的文档。HTML 4 提供了三种选项：
 
 * Transitional（过渡型）：允许废弃的 HTML 3.2 元素与 HTML 4 混合使用
+
 * Strict（严格型）：仅允许 HTML 4 元素
+
 * Frameset（框架集）：允许使用 `frame` 元素将多个文档嵌入一个文档中
 
 然而，HTML 1 到 4 版本并没有提供关于如何解析 HTML 的清晰规则。
@@ -254,7 +241,9 @@ DOM 是 Web 如此出色的补充，其他浏览器很快跟进。但并非每�
 然而，applets 和插件面临着三个主要问题：
 
 1. 没有插件（或 applet 环境）的用户无法看到内容。
+
 2. Applets 和插件扩大了基于互联网的安全漏洞面。
+
 3. 它们是商业产品，需要开发者支付许可费。
 
 此外，插件和 applet 有时会导致宿主环境——浏览器变慢或崩溃。
@@ -262,12 +251,15 @@ DOM 是 Web 如此出色的补充，其他浏览器很快跟进。但并非每�
 因此，我们在 Web 上面临这样一个场景：
 
 * 浏览器没有按照相同的规则解析 HTML。
+
 * 新的标记语言相比 HTML 并没有多少明显的优势，但增加了实现的开销。
+
 * 插件和 applet 提供了额外功能，但为浏览器带来了安全和稳定性问题，为开发者带来了许可成本。
 
 这些正是 HTML5 解决的问题：
 
 * 它整合了 XHTML 和 XForms 引入的功能和语法。
+
 * 它几乎消除了对插件的需求以及它们可能带来的稳定性和安全性问题。
 
 ## HTML5 不是什么
@@ -292,16 +284,13 @@ Web 超文本应用技术工作小组 (`WHATWG`) 和万维网联盟 (`W3C`) 都�
 
 每个 HTML 文档由元素组成，而元素由标签表示。标签是字符序列，用于标记元素的不同部分的开始和/或结束。
 
-
-
-
 所有标签都以左向角括号（`<`）开头，并右向角括号（`>`）结束。每个元素都有一个`start tag`（或`opening tag`），它以`<`开头，后面跟着元素名称（或其缩写）。元素名称后面可以跟着一个`attribute`（或一系列属性），用于描述该元素实例的预期行为。你可以使用 `=` 号为属性设置一个显式值。然而，某些属性是空的。如果存在空属性，则该属性值为 `true`。让我们来看一个使用 `input` 元素的示例。
 
 ```
 <input type="text" name="first_name" disabled>
 ```
 
-在这里，`type`、`name` 和 `disabled` 都是属性。前两个有显式值，但 `disabled` 是空的。某些元素允许空属性，这些通常是那些原本可能接受真/假值的元素。棘手的地方在于：空属性的值是 `true` 还是 `false` 取决于属性是否存在，而无论其设置的值如何。换句话说，`disabled="true"` 和 `disabled="false"` 都会禁用输入控件。
+在这里，`type`、`name` 和 `disabled` 都是属性。前两个有显式值，但 `disabled` 是空的。某些元素允空属性，这些通常是那些原本可能接受真/假值的元素。棘手的地方在于：空属性的值是 `true` 还是 `false` 取决于属性是否存在，而无论其设置的值如何。换句话说，`disabled="true"` 和 `disabled="false"` 都会禁用输入控件。
 
 大多数元素还有一个闭合标签。闭合标签也以`<` 开头，但后面紧跟的不是元素名称，而是一个正斜杠（`/`）。然后是元素名称和右角括号或`>`。然而，某些元素被称为 `void elements`（空元素）。这些元素不能包含内容，因此没有闭合标签。上面显示的 `input` 元素就是一个空元素示例。
 
@@ -353,12 +342,19 @@ HTML5 有两种 `parsing modes`（解析模式）或语法：HTML 和 XML。区�
 如果是作为 `text/html` 提供的，则适用以下规则：
 
 *   每个元素并不需要起始标签。
+
 *   每个元素并不需要结束标签。
+
 *   只有 `void elements`（如 `br`、`img` 和 `link`）可以使用 `/>` 进行为“自闭合”。
+
 *   标签和属性不区分大小写。
+
 *   属性不需要加引号。
+
 *   某些属性可以是空的（如 `checked` 和 `disabled`）。
+
 *   特殊字符或实体不需要转义。
+
 *   文档必须包含 HTML5 DOCTYPE。
 
 ### HTML 语法
@@ -403,7 +399,7 @@ HTML5 有两种 `parsing modes`（解析模式）或语法：HTML 和 XML。区�
 
 理想情况下，验证你的文本编辑器以“无 BOM”的 UTF-8 编码保存文档，并使用 Unix/Linux 行结束。
 
-我们的 `head` 元素还包含了文档标题（`<title>Hi</title>`）。在大多数浏览器中，`title` 标签之间的文本显示在浏览器窗口或标签的顶部。
+我们的 `head` 元素还包含了文档标题（`<title>Hi</title>`）。在大多数浏览器中，`title` 标签之间的文本显示在浏览器窗口或标标签的顶部。
 
 HTML 中的 `Comments`（注释）是在浏览器中不渲染的文本。它们只能在源代码中查看，通常用于给自己或同事留下关于文档的注释。某些生成 HTML 代码的程序也可能包含注释。注释可能出现在 HTML 文档的任何地方。每个注释都必须以 `<!--` 开头并以 `-->` 结束。
 
@@ -415,10 +411,7 @@ HTML 中的 `Comments`（注释）是在浏览器中不渲染的文本。它们�
 
 ### 加引号还是不加引号：HTML5 中的属性
 
-在示例中，我们的属性值是不加引号的。在我们的 `hi.html` 示例中，我们使用了引号。这在 HTML5 中都是有效的，并且你可以使用双引号（")或单引号（'）。
-
-
-
+在示例中，我们的属性值是不加引号的。在我们的 `hi.html` 示例中，我们使用了引号。这在 HTML5 中都是有效的，并且你可以使用双引号（"）或单引号（'）。
 
 请注意未加引号的属性值。对于单个单词的数值，不加引号是可以的。然而，由空格分隔的值列表必须包含在引号内。否则，解析器将把第一个值解释为属性的值，而将后续值视为空属性。请考虑以下代码段：
 
@@ -461,11 +454,17 @@ HTML5 也可以使用更严格的类 XML 语法来编写。你可能在第 1 章
 以下规则适用于 "XHTML5"：
 
 * 所有元素必须有开始标签。
+
 * 带有开始标签的非空元素必须有结束标签（例如 `p` 和 `li`）。
+
 * 任何元素都可以使用 `/>` 进行“自闭合”。
+
 * 标签和属性区分大小写，通常使用小写。
+
 * 属性值*必须*包含在引号内。
+
 * 禁止使用空属性（`checked` 必须是 `checked="checked"` 或 `checked="true"`）。
+
 * 特殊字符必须使用字符实体进行转义。
 
 我们的 `html` 开始标签还需要一个 `xmlns`（XML 命名空间）属性。如果我们重写上面的文档以使用 XML 语法，它看起来像下面的示例所示：
@@ -497,7 +496,7 @@ HTML5 也可以使用更严格的类 XML 语法来编写。你可能在第 1 章
 
 ### 注意：配置你的服务器
 
-为了让你的 Web 服务器或应用程序发送 `Content-type: application/xml+xhtml` 响应头，它必须配置为如此操作。如果你使用 Web 托管，很有可能你的 Web 托管已经为 .xhtml 扩展的文件此类设置。在这里，你只需要将 `hi.html` 重命名为 `hi.xhtml`。如果不起，请查阅你的 Web 服务器文档。
+为了让你的 Web 服务器或应用程发送 `Content-type: application/xml+xhtml` 响应头，它必须配置为如此操作。如果你使用 Web 托管，很有可能你的 Web 托管已经为 .xhtml 扩展的文件此类设置。在这里，你只需要将 `hi.html` 重命名为 `hi.xhtml`。如果不起，请查阅你的 Web 服务器文档。
 
 你可能已经意识到，XML 解析规则更加挑剔。使用 `text/html` MIME 类型及其宽松的 HTML 语法要简单得多。
 
@@ -543,9 +542,6 @@ HTML5 增加了几个元素，提供了将单个文档拆分为多个内容块�
 然而，HTML5 专门为此种目的增加了元素：`header`、`nav` 和 `footer`。
 
 `header` 元素作为文档段内容的页眉。`footer` 元素作为文档段的页脚。注意，我说的是*段*而不是*文档*或*页面*。某些元素被视为分节元素。它们将文档分为若干部分或块。这些元素之一当然是新的 `section` 元素。其他分节元素包括 `body`、`article`、`aside`，以及 `nav`。
-
-
-
 
 ```html
 <header>
@@ -619,7 +615,7 @@ HTML5 增加了几个元素，提供了将单个文档拆分为多个内容块�
     <p>
       国家鸡类组织是一个关注鸡类环境正义的倡导团体。
     </p>
-  </div>
+  </div
 
   <p>
     伦敦 -- 国家鸡类组织的年轻领袖 Henny Penny 宣布，天空将在下周内崩塌。反对者批评了 Penny，认为橡果更可能是威胁。
@@ -648,10 +644,6 @@ HTML5 增加了几个元素，提供了将单个文档拆分为多个内容块�
 ```
 
 然而，我们保留了 `id` 属性。这使得它更容易与页面上的其他 `footer` 元素区分开来。
-
-
-
-
 
 这些新元素的目的是提供一种标准化的方式来描述文档结构。HTML 的本质是一种用于交换和重用文档的语言。使用这些结构化元素意味着同一个文档可以发布为网页，同时为电子书阅读器分发，而无需在混乱的任意 `div` 元素和 `id` 属性中筛选。
 
@@ -731,6 +723,7 @@ HTML5 还引入了 `section` 元素，用于定义文档中既不是页眉、页
 新的分节元素并不是 HTML5 中引入的唯一相关文档元素。在本章，我们将查看以下元素：
 
 *   `figure` 和 `figcaption` 用于定义插图、图表和图解
+
 *   `main` 用于显式定义文档内容的主要部分
 
 ### `figure` 和 `figcaption`
@@ -776,6 +769,7 @@ HTML5 还引入了 `section` 元素，用于定义文档中既不是页眉、页
 意乎情情，`main` 应该用于明确文档或应用程序的主要部分。通过文档的“主要部分”，我们指的是以下内容：
 
 *   文档或应用程序特有的
+
 *   不包含跨站点共享的元素，例如全局页眉或页脚
 
 截至为止，只有 Chrome 26+、Firefox 21+ 和 Opera 15+ 支持 `main` 元素。Internet Explorer 和 Safari 应该在未来的发布中获得支持。
@@ -783,10 +777,6 @@ HTML5 还引入了 `section` 元素，用于定义文档中既不是页眉、页
 `main` 的用例是什么？某些浏览器（如 Safari 和 Android 版 Firefox）提供了“阅读模式”，可以剥离页眉、页脚和广告。这些浏览器目前使用启发式算法（一种有理依据的推断）来确定文档的主要内容。使用 `main` 可以让浏览器明确它应该关注页面的哪部分。浏览器还可以将 `main` 元素作为无障碍功能的钩子，例如跳过导航的功能。
 
 让我们最后看一眼我们的新闻文章标记，这次包含了 `main` 元素。
-
-
-
-
 
 ```html
 <!DOCTYPE html>
@@ -864,7 +854,7 @@ HTML5 还引入了 `section` 元素，用于定义文档中既不是页眉、页
 
   <footer>
     <ul>
-      <li><a href="#">联系我们</a></li>
+      <li><a href="#">联系我们</a></li
       <li><a href="#">使用条款</a></li>
       <li><a href="#">隐私政策</a></li>
     </ul>
@@ -891,10 +881,15 @@ HTML5 表单相比之前的 HTML 版本有了质的飞跃。我们现在拥有�
 理解 HTML5 表单最好的方法是动手构建一个。让我们尝试构建一个表单，为上一章节的 HTML5 新闻报网站收集故事稿建议。我们需要通过表单收集以下信息：
 
 *   姓名
+
 *   居住城市
+
 *   电子邮件地址
+
 *   电话号码
+
 *   可以进一步了解更多信息的 URL（如果有的话）
+
 *   具体的故事想法
 
 至少，我们希望要求用户提供名字、电子邮件地址和他们的故事想法。
@@ -904,6 +899,7 @@ HTML5 表单相比之前的 HTML 版本有了质的飞跃。我们现在拥有�
 要构建我们的 HTML 表单，我们需要从一个起始 `form` 元素标签开始。因为我们需要将此表单提交给服务器端的处理脚本，所以我们需要包含两个属性。
 
 *   `action`:脚本的 URL
+
 *   `method`:要使用的 HTTP 请求方法，有时是 `GET`，但通常是 `POST`
 
 由于信息可能很长，我们将使用 `POST` 而不是 `GET`。`GET` 更适合短短的键值对，例如搜索框。其他 HTTP 方法，如 `PUT`、`HEAD` 或 `DELETE` 同样适用。
@@ -919,8 +915,11 @@ HTML5 表单相比之前的 HTML 版本有了质的飞跃。我们现在拥有�
 `input` 元素是最常用于创建控件的。input 标签通常包含以下属性：
 
 *   `name`:字段的名称
+
 *   `type`:输入的类型
+
 *   `id`:字段的唯一标识符
+
 *   `value`:设置默认值
 
 在这些属性中，只有 `name` 是表单发送数据所必需的。`type` 属性大约有十几种可能的值，我们将在本章涵盖其中大部分。默认值是 `text`。
@@ -965,10 +964,6 @@ HTML5 相比之前的版本的一个巨大改进是原生的表单验证。通�
 
 `required` 属性是空属性的一个示例。它的存在与否决定该值是否被设置。
 
-
-
-
-
 当用户提交表单时，如果 `your_name` 字段为空，Chrome、Opera 和 Internet Explorer 10+ 将阻止提交并提醒用户，如图图 4.1 所示。不需要 DOM 脚本。
 
 ![Chrome 中的表单提交错误消息](img/requiredfielderrormessagechrome.png)
@@ -982,6 +977,7 @@ HTML5 相比之前的版本的一个巨大改进是原生的表单验证。通�
 你可能想使用 CSS 在视觉上指示哪些字段是必填的，哪些不是。我们可以使用两个 CSS 选择器来定位必填字段。
 
 1. 使用属性选择器 `[required]`。
+
 2. 使用 `:required` 伪类。
 
 `:required` 伪类是一个 [CSS 选择器，级别 4](http://www.w3.org/TR/selectors4/) 选择器，但主流浏览器的最新版本都支持它。CSS 4 选择器还增加了 `:optional` 伪类，我们可以用它来定位非必填的输入字段。
@@ -1037,9 +1033,10 @@ input[required], input:required
 
 图 4.2. Firefox Mobile 中的 tel 输入类型
 
-虽然 `tel` 没有为我们提供自动验证，但我们可以使用两个属性来规范用户输入：
+虽然 `tel` 没有为我们提供自动验验证，但我们可以使用两个属性来规范用户输入：
 
 - `placeholder`，为用户提供关于该字段期望格式的“提示”。
+
 - `pattern`，设置一个正则表达式模式，浏览器可以使用该模式来验证输入。
 
 我们想象的报社总部在美国，并拥有美国的受众。我们将在属性值中反映这一点。
@@ -1080,10 +1077,6 @@ input[required], input:required
 ```
 
 我们还添加了占位符文本，作为对用户的提示，说明我们希望他们告诉什么。总之，你的表单应该如下所示：
-
-
-
-
 
 ```
 <form action="./script" method="POST">
@@ -1161,7 +1154,9 @@ PHP 要求具有多个值的表单键使用方括号数组语法。如果你正�
 我们还可以使用 `accept` 属性在浏览器中限制可以上传的文件。`accept` 的值可以是以下任意一个：
 
 * `audio/*`, `video/*`, `image/*`
+
 * 有效的 MIME 类型，如 `image/png` 或 `text/plain`
+
 * 以 `.` 开头的文件扩展
 
 你可以包含多个 `accept` 值；用逗号分隔它们。让我们更新表单字段以仅接受 MP3 和 Ogg Vorbis 文件。
@@ -1207,7 +1202,7 @@ accept=".mp3,.ogv">
 </datalist>
 ```
 
-现在我们可以使用 `list` 属性将其与 `input` 字段关联。
+现在我们可以使用 `list` 局将其与 `input` 字段关联。
 
 ```
 <p>
@@ -1230,14 +1225,23 @@ accept=".mp3,.ogv">
 在本章中我们已经讨论了几种类型，在本节中我们还将介绍另外几种。
 
 * `search`
+
 * `range`
+
 * `number`
+
 * `color`
+
 * `datetime`
+
 * `datetime-local`
+
 * `date`
+
 * `month`
+
 * `week`
+
 * `time`
 
 除了 `range` 之外，可以通过测试 `type` 属性来确定浏览器是否支持某种类型。如果浏览器不支持 `range`，则 `type` 属性将默认为 `text`。例如，考虑以下范围输入：
@@ -1272,19 +1276,17 @@ var hasRange = function( elID ){
 
 图 4.5. 范围输入类型
 
+
+
 默认情况下，范围类型的上下边界是 0 和 100。通过设置 `min` 和 `max` 属性可以更改此。你还可以像下面这样使用 `step` 属性来控制滑块位置的平滑度和精度：
 
-```
+```html
 <input type="range" value="" min="0" max="100" step="10">
 ```
 
 每当用户移动此范围输入控件上的滑块时，范围将在 0 到 100 之间增加或减少 10。你还可以通过将 `datalist` 元素与 `range` 输入关联来控制精度。在支持的浏览器中，每个选项将沿范围宽度渲染为一个“缺口”——到目前为止，Chrome 和 Opera 15 支持此功能。
 
 遗憾的是，Internet Explorer 9 及旧版本、以及 Firefox 22 及旧版本不支持 range。在这些浏览器中，表单控件将是文本框而不是范围元素。
-
-
-
-
 
 # `input type="number"`
 
@@ -1304,7 +1306,7 @@ var hasRange = function( elID ){
 
 例如，当 `step="0.5"` 时，`1.5` 和 `9` 都是有效值，但 `8.1` 不是。然而，当 `step=".01"` 时，`8.1`、`1.5` 和 `9` 都是有效值，`3.14` 也是如此。某种程度上，你可以使用 `step` 属性来控制数字的浮点精度。
 
-```
+```html
 <!-- 数字增加 0.5 -->
 <input type="number" name="num" value="" step=".5">
 
@@ -1350,13 +1352,13 @@ HTML5 最大的变化可能是它的多媒体能力。HTML5 带来了原生的�
 
 我们将在本章稍后部分讨论跨浏览器支持。首先，让我们看看在网页上添加视频所需的最少条件：一个 `video` 标签和一个 `src` 属性。
 
-```
+```html
 <video src="path_to/file.video"></video>
 ```
 
 在 HTML5 中，该闭合标签是必须。如果你使用的是 XHTML 语法，可以将其自闭合，例如 `<video src="path_to/file.video" />`。`audio` 元素几乎相同。只需要开启的 `audio` 标签、一个 `src` 属性和一个闭合的 `</audio>` 标签。
 
-```
+```html
 <audio src="path_to/file.audio"></audio>
 ```
 
@@ -1364,7 +1366,7 @@ HTML5 最大的变化可能是它的多媒体能力。HTML5 带来了原生的�
 
 ## 添加控件
 
-遗憾的是，如图 5.1”所示，我们上面的代码片段除了添加媒体文件外，什么也没做。我们无法播放视频，因为它会停留在第一帧。我们甚至不知道页面上有音频。
+遗憾的是，如图 5.1 所示，我们上面的代码片段除了添加媒体文件外，什么也没做。我们无法播放视频，因为它会停留在第一帧。我们甚至不知道页面上有音频。
 
 ![没有控制控件的 Firefox 视频示例，来自 Blender Foundation 的图片](img/videocontrols.png)
 
@@ -1372,7 +1374,7 @@ HTML5 最大的变化可能是它的多媒体能力。HTML5 带来了原生的�
 
 我们需要一些控件：也许是播放按钮和一个可拖动的进度条。我们可能还需要一个显示已播放内容的计时器以及音量控制。幸运的是，浏览器内置了这些功能。我们可以通过添加 `controls` 属性来激活它们。
 
-```
+```html
 <video src="path_to/file.video" controls>
 ```
 
@@ -1388,7 +1390,7 @@ HTML5 最大的变化可能是它的多媒体能力。HTML5 带来了原生的�
 
 也许我们想使用一段短视频作为背景元素。我们可能想创建一个“艺术装置”体验，让视频自动播放并循环。这不是问题。我们可以通过在视频或音频标签上添加 `autoplay` 和 `loop` 属性来实现。
 
-```
+```html
 <video src="path_to/file.video" autoplay loop></video>
 
 <audio src="path_to/file.audio" autoplay loop></audio>
@@ -1400,13 +1402,9 @@ HTML5 最大的变化可能是它的多媒体能力。HTML5 带来了原生的�
 
 某些音频和视频听起来可能非常糟糕，或者只是令人尴尬。帮你的观众忙：使用 `muted` 属性静音自动播放的媒体。
 
-```
+```html
 <video src="annoying.video" autoplay loop muted></video>
 ```
-
-
-
-
 
 ## 仅视频属性
 
@@ -1422,7 +1420,7 @@ HTML5 最大的变化可能是它的多媒体能力。HTML5 带来了原生的�
 
 要添加海报图，请添加 `poster` 属性。将其其值设置为图像的路径。大多数图像格式都可以用于海报图，尽管 Internet Explorer 有时处理 SVG 文件时会遇到困难。
 
-```
+```html
 <video src="path_to_file.video" poster="path_to_poster_image.jpg">
 </video>
 ```
@@ -1516,10 +1514,6 @@ Mozilla 和 Opera 反对 H.264 和 MPEG-3 主要是因为那些版税。相反�
 在多个源上使用 `preload=none` 可能会防止 Safari 下载正确的文件。Safari 6.0.5 在 `preload=none` 时将忽略第一个以外的任何文件。即使用户点击播放，Safari 也不会加载另一个视频源。通过列出 Safari 兼容的源来避免这种情况。否则，将 `preload` 的值设置为 `metadata` 或 `auto`。
 
 每个浏览器将下载它能够播放的第一个可用文件。
-
-
-
-
 
 在我们开始讨论 HTML5 的多媒体元素之前，让我们先聊聊准备媒体文件。虽然我们现在可以在大多数浏览器中使用原生的 HTML5 元素，但我们（尚）无法在每个浏览器中使用相同的文件。我们在介绍中提到过这一点，但进行更详细的解释是必要的。我已经尽力公正地描述了这一点。
 
@@ -1625,17 +1619,13 @@ ffmpeg -i tracy-sings.mov tracy-sings.webm
 ffmpeg -i tracy-sings.mov -vf scale=-1:720 tracy-sings-720p.webm
 ```
 
-
-
-
-
 这里的新之处是使用了 `-vf` 标志，它是一个表示我们想要使用过滤器的标志。后面紧跟着我们的过滤器名称（`scale`）以及我们期望的比例（宽:高）。虽然我们可以指定两个维度，但在这里我们使用了 `-1` 代替。这告诉 `FFmpeg` 我们希望在缩放时保持纵横比。与我们之前的示例一样，命令的最后部分是输出文件名和扩展名。
 
 ### 使用 FFmpeg 生成海报图片
 
 FFmpeg 不限于媒体转换。我们还可以用它来从视频文件中提取帧。当我们讨论如何为视频添加封面图时，这会非常有用。基本命令遵循以下模式：
 
-```
+```bash
 ffmpeg -ss 30 -t 2 -i /path/to/input.file -r 1 
 /path/to/output-%02d.jpg
 ```
@@ -1674,7 +1664,7 @@ Miro Video Converter 和 `FFmpeg` 非常适合你想要自己托管的音频和�
 
 在网页上添加音频非常简单。使用 `<audio>` 标签即可。它至少需要一个 `src` 属性，即媒体文件的路径和名称。音频元素还需要一个结束标签 `</audio>`。使用你的文本编辑器创建一个新的 HTML 文件，并添加下面的代码段，更改 `src` 的值指向你的媒体文件。将其保存为 audio.html，然后在浏览器中打开。
 
-```
+```html
 <audio src="/path/to/media.file"></audio>
 ```
 
@@ -1682,7 +1672,7 @@ Miro Video Converter 和 `FFmpeg` 非常适合你想要自己托管的音频和�
 
 为了向用户展示播放器界面，我们需要添加 `controls` 属性。
 
-```
+```html
 <audio src="/path/to/media.file" controls></audio>
 ```
 
@@ -1706,13 +1696,13 @@ Miro Video Converter 和 `FFmpeg` 非常适合你想要自己托管的音频和�
 
 我们可以通过添加 `autoplay` 属性在媒体加载时立即播放。与 `controls` 一样，`autoplay` 是一个空属性。
 
-```
+```html
 <audio src="/path/to/media.file" autoplay></audio>
 ```
 
 在你的 audio.html 文件中将 `controls` 替换为 `autoplay` 并刷新页面。注意我们的音频立即播放，但也注意到没有停止播放的方法。如果我们想让用户控制此媒体，我们需要包含两者，如下：
 
-```
+```html
 <audio src="/path/to/media.file" autoplay controls></audio>
 ```
 
@@ -1722,7 +1712,7 @@ Miro Video Converter 和 `FFmpeg` 非常适合你想要自己托管的音频和�
 
 也许你想使用一些环境音频为你的网站营造氛围。在这种情况下，你可能希望媒体自动重复，无需用户干预。这就是 `loop` 属性派上用场的地方。存在时，媒体将在结束时“回溯”并从头开始。
 
-```
+```html
 <audio src="/path/to/media.file" autoplay controls loop></audio>
 ```
 
@@ -1730,13 +1720,9 @@ Miro Video Converter 和 `FFmpeg` 非常适合你想要自己托管的音频和�
 
 HTML5 提供了通过 `muted` 属性静音媒体文件输出的能力。媒体文件仍会被下载。进度条和时间将继续更新。但浏览器不会输出任何声音。
 
-```
+```html
 <audio src="/path/to/media.file" controls muted></audio>
 ```
-
-
-
-
 
 虽然对于音频文件来说这可能毫无意义，但对于视频来说就更有意义了。例如，视频广告仍然可以在视觉上吸引用户的注意力，而不会产生声音的额外干扰。再次注意，`muted` 是空属性。对于 XHTML 语法，你需要使用 `muted=""` 或 `muted="muted"` 来代之。
 
@@ -1748,7 +1734,7 @@ HTML5 提供了通过 `muted` 属性静音媒体文件输出的能力。媒体�
 
 这些每一个请求都会对服务器产生额外需求。无论用户是否听音频或观看视频文件，部分请求都会发生。好消息是，我们可以如如下所示通过 `preload` 属性来引导这种行为。
 
-```
+```html
 <audio src="/path/to/media.file" controls muted preload="auto">
 </audio>
 ```
@@ -1795,7 +1781,7 @@ HTML5 提供了通过 `muted` 属性静音媒体文件输出的能力。媒体�
 
 我们可以通过在 `<audio>` 和 `</audio>` 标签之间添加回退内容来解决这个问题，如下所示。
 
-```
+```html
  <audio src="/path/to/media.file" controls>
    哦不！您的浏览器不支持 HTML5 音频。
    如果可以，请升级您的浏览器。
@@ -1810,11 +1796,11 @@ HTML5 提供了通过 `muted` 属性静音媒体文件输出的能力。媒体�
 
 ## 多媒体：使用原生 HTML5 视频
 
-在 HTML 文档中添加视频与添加音频一样简单：使用 `<video>` 标签。与 `audio` 一样，`video` 元素需要一个结束标签（</video>`）和一个 `src` 属性。
+在 HTML 文档中添加视频与添加音频一样简单：使用 `<video>` 标签。与 `audio` 一样，`video` 元素需要一个结束标签（`</video>`）和一个 `src` 属性。
 
 创建一个新的 HTML 文档并添加下面的代码，将 `src` 的值指向你选择的媒体文件。将其保存为 video.html，并在浏览器中打开该文件。
 
-```
+```html
 <video src="/path/to/media.file"></video>
 ```
 
@@ -1826,17 +1812,13 @@ HTML5 提供了通过 `muted` 属性静音媒体文件输出的能力。媒体�
 
 为了启用控制，我们需要添加一个 `controls` 属性，如下所示。
 
-```
+```html
  <video src="/path/to/media.file" controls></video>
 ```
 
 与 `audio` 元素一样，这将为视频添加一个播放器用户界面，使用户可以播放、暂停、进度和调整音量。视频控制看起来与其音频控制大致相同。它们通常有一个用于进入和退出全屏播放的额外控制，在大多数浏览器中，一个控制开关可以切换字幕和说明。播放器的外观取决于浏览器，并不是每个浏览器都能轻松地重样式这些控件。
 
 ## 设置视频尺寸
-
-
-
-
 
 所有的视频文件都具有 `intrinsic`（固有）的宽度和高度。固有尺寸是文件的“自然”或默认高度和宽度。例如，一个视频文件的宽度为 640 像素，高度为 480 像素。然而，我们可以使用 `width` 和 `height` 属性告诉浏览器在我们的文档布局中限制视频播放器的大小。例如所示。
 
@@ -1923,7 +1905,6 @@ video {
 封面图像具有固有尺寸，就像视频文件一样。最初，`video` 元素的尺寸将匹配封面图像的宽高。一旦浏览器知道了视频的尺寸，它就会调整元素的大小以匹配。为了防止这种情况，请：
 
 1. 确保你的封面图像与视频具有相同的宽高；或
-
 2. 使用属性或 CSS 为 `video` 元素指定高度和宽度。
 
 几乎任何图像格式都适用于封面，包括 SVG。大多数浏览器会将图像限制在视频元素的尺寸内（如果已设置），如果没有设置，则会扩展到 SVG 文件的大小。
@@ -1942,10 +1923,6 @@ Internet Explorer 则恰恰相反。当视频元素缺少高度和宽度时，�
 
 ### 到目前为止我们学到的内容
 
-
-
-
-
 到本书为止，我们已经介绍了 `audio` 和 `video` 元素，以及它们的大部分重要属性。但你可能注意到，你的 `audio` 和 `video` 示例并不是在所有浏览器中都能工作。例如，如果你使用了 `MP3` 和 `M4V` 文件，你的示例在 Opera 16 中就无法运行。
 
 正如我们在第 6 章 中讨论过的样，浏览器厂商尚未同意支持一种标准的文件格式。这意味着我们需要提供多种格式的媒体文件。但当 `video` 和 `audio` 元素只支持单个 `src` 属性时，我们如何做到呢？
@@ -1962,7 +1939,7 @@ Internet Explorer 则恰恰相反。当视频元素缺少高度和宽度时，�
 
 `source` 元素允许我们为多媒体元素指定多个备用媒体文件。它不是一个独立的元素；必须作为 `audio` 或 `video` 元素的子使用。将你的 `source` 标签放置在 `audio` 或 `video` 元素的开始和结束标签之间。
 
-```
+```html
 <video controls>
   <source src="/path/to/video.h264.m4v">
   <source src="/path/to/video.webm">
@@ -1984,7 +1961,7 @@ Safari 7 不再受此 bug 的困扰。
 
 使用 `type` 属性指定 MIME 类型将防止浏览器对每个 `source` 元素运行格式兼容性检查。这对于该过程失效的浏览器来说尤为重要。浏览器将不再执行“下载-检查-重复”的序列，而是使用 `type` 属性来选择它能够播放的文件。让我们为上面的 `<source>` 元素添加 `type` 属性。
 
-```
+```html
 <video controls>
   <source src="/path/to/video.h264.m4v" type="video/mp4">
   <source src="/path/to/video.webm" type="video/webm">
@@ -1995,7 +1972,7 @@ Safari 7 不再受此 bug 的困扰。
 
 你可能还想指定用于编码媒体文件的编码器。大多数文件格式实际上只是各种编码格式的容器。例如，一个 Ogg 音频文件实际上可能是使用 Vorbis、FLAC 或 Speex 编码器编码的。包含编码器是可选的，它可以为浏览器提供更具体的信息。要包含编码器，请在 `type` 属性的值中添加 `codec` 参数。
 
-```
+```html
 <source src="/path/to/video.ogv" 
 type="video/ogg; codecs='theora, vorbis'">
 ```
@@ -2024,7 +2001,7 @@ type="video/ogg; codecs='theora, vorbis'">
 
 在这里，我们使用两个不同的文件提供相同的视频内容：为能够纳该分辨率的屏幕提供 1080p 视频，为容纳较低分辨率的屏幕提供 720p 视频。
 
-```
+```html
 <video controls>
   <source src="/path/to/video.1080p.m4v" type="video/mp4" 
   media="screen and (device-aspect-ratio: 1920/1080)">
@@ -2036,9 +2013,6 @@ type="video/ogg; codecs='theora, vorbis'">
   media="screen and (device-aspect-ratio: 1280/720)">
 </video>
 ```
-
-
-
 
 在这种情况下，只有当用户拥有兼容 HD 的设备时，浏览器才会下载支持的视频文件。值得注意的是，`media` 属性仅适用于 `source` 元素。将其添加到 `video` 或 `audio` 标签中将不起作用。
 
@@ -2091,7 +2065,7 @@ Firefox 对 `track` 的支持仍在进行中。尚未完全支持。但是，在
 
 要使用 `track` 元素，将其放在起始 `<video>` 标签和结束 `</video>` 标签之间，如下所示。
 
-```
+```html
 <video src="/path/to/media.file" controls>
   <track src="/path/to/tracktext.vtt" srclang="en">
 </video>
@@ -2099,7 +2073,7 @@ Firefox 对 `track` 的支持仍在进行中。尚未完全支持。但是，在
 
 如果你使用的是 `source` 元素，请将你的 `track` 标签或标签放在 `source` 标签之后。
 
-```
+```html
 <video src="/path/to/media.file" controls>
   <source src="/path/to/media.m4v" kind="video/mp4">
   <source src="/path/to/media.webm" kind="video/webm">
@@ -2123,7 +2097,7 @@ Firefox 对 `track` 的支持仍在进行中。尚未完全支持。但是，在
 *   `chapters`：用于导航资源，类似于你在 DVD 菜单中可能会找到的内容
 *   `metadata`：关于视频的数据，旨在供脚本或机器读取
 
-在这五种类型中，除了 `metadata` 之外，所有的都对用户可见。`descriptions` 类型的轨道会被合成成音频，用户将听到而不是看到。字幕和说明都覆盖在视频文件上。对于说明，用户界面可能包含一个闭路字幕按钮，允许用户开启或关闭字幕（图 10.1"）。
+在这五种类型中，除了 `metadata` 之外，所有的都对用户可见。`descriptions` 类型的轨道会被合成成音频，用户将听到而不是看到。字幕和说明都覆盖在视频文件上。对于说明，用户界面可能包含一个闭路字幕按钮，允许用户开启或关闭字幕（图 10.1）。
 
 ![Chrome 32 中启用字幕的视频示例。取自 Nina Paley 的 "Sita Sings the Blues" 视频截图，(sitasingtheblues.com)](img/track-cc-button-chrome.png)
 
@@ -2134,10 +2108,6 @@ Firefox 对 `track` 的支持仍在进行中。尚未完全支持。但是，在
 如果你不设置 `kind` 属性，你的轨道将被视为 `subtitles` 轨道。这是元素的默认状态。当类型为 `subtitles` 时——无论是显式的还是隐式的——你*必须*包含一个 `srclang` 属性。没有 `srclang` 属性，字幕将无法工作。
 
 ### 使用多个 `track` 元素
-
-
-
-
 
 虽然使用多个 `track` 元素是完全有效的，但并非所有浏览器都完美支持这种做法。目前为止，Internet Explorer 10+ 和 Safari 7 是唯一支持多个 `track` 元素的浏览器。这两个浏览器都为用户提供了一个菜单，允许其选择想要使用的文本轨道。
 
@@ -2159,19 +2129,19 @@ Firefox 对 `track` 的支持仍在进行中。尚未完全支持。但是，在
 
 图 10.3. 在 iOS 7 的 Safari 中为字幕或说明选择语言。来自 Nina Paley 的《Sita Sings the Blues》视频截图 (sitasingstheblues.com)
 
-例如，Safari for iOS 7 在全屏模式下查看视频时会为用户提供一个字幕菜单（图 10.3")，上方）。它使用 `srclang` 的值来设置菜单中的语言选项。
+例如，Safari for iOS 7 在全屏模式下查看视频时会为用户提供一个字幕菜单（图 10.3），上方）。它使用 `srclang` 的值来设置菜单中的语言选项。
 
 ![默认情况下，Internet Explorer 中的轨道没有标题。来自 Nina Paley 的《Sita Sings the Blues》视频截图 (sitasingstheblues.com)](img/track-captions-ie10.png)
 
 图 10.4. 默认情况下，Internet Explorer 中的轨道没有标题。来自 Nina Paley 的《Sita Sings the Blues》视频截图 (sitasingstheblues.com)
 
-然而，Internet Explorer 并非如此。在 Internet Explorer 10+ 中（图 10.4")，上方），封闭字幕菜单中列出的轨道默认是没有标题的。为了修复这个问题，我们需要为每个轨道添加 `label` 属性。截至出版时，其他浏览器尚不支持多个 `track` 元素。
+然而，Internet Explorer 并非如此。在 Internet Explorer 10+ 中（图 10.4），上方），封闭字幕菜单中列出的轨道默认是没有标题的。为了修复这个问题，我们需要为每个轨道添加 `label` 属性。截至出版时，其他浏览器尚不支持多个 `track` 元素。
 
 ## 为你的轨道标记
 
 `label` 属性是不是不言自喻的。它定义了浏览器在向用户展示轨道时可以使用的名称或标题。
 
-```
+```html
 <video src="/path/to/media.file" controls>
 	<track src="/path/to/en-us.vtt" srclang="en-US" 
 	label="English - USA">
@@ -2182,7 +2152,7 @@ Firefox 对 `track` 的支持仍在进行中。尚未完全支持。但是，在
 </video>
 ```
 
-如果没有 `label` 属性，Internet Explorer 会为轨道元素提供没有帮助的默认标题，正如我们在图 3 中看到的。。如果包含了该属性，Internet Explorer 将在字幕选择菜单中使用 `label` 属性的值（图 10.5")）。
+如果没有 `label` 属性，Internet Explorer 会为轨道元素提供没有帮助的默认标题，正如我们在图 3 中看到的。。如果包含了该属性，Internet Explorer 将在字幕选择菜单中使用 `label` 属性的值（图 10.5）。
 
 ![当轨道具有 label 属性时，标签值成为字幕选项的名称。来自 Nina Paley 的《Sita Sings the Blues》视频截图 (sitasingstheblues.com)](img/track-captions-ie10-with-labels.png)
 
@@ -2223,10 +2193,6 @@ WebVTT 文件由一系列提示组成。每个提示由时间范围和一个字�
 ```
 00:00:30.000 --> 00:00:45.400
 ```
-
-
-
-
 
 每个时间范围后面都跟着组成提示（cue）的文本。最简单的提示是纯文本，且提示可以跨多行，如下所示（对话源自电影《Sita Sings the Blues》，sitasingstheblues.com）。
 
@@ -2312,7 +2278,7 @@ And I think it's Ayodhya.</v>
 
 图 10.7. Internet Explorer 11 中未样化的字幕。来自 Nina Paley 的电影《Sita Sings the Blues》截图 (sitasingstheblues.com)
 
-字幕和说明在大多数浏览器中以白色无衬线字体文本显示。Internet Explorer ([图 10.7"))）了文本阴影以提高可读性。Chrome、Safari 和 Opera 使用黑色背景。它们始终位于视频底部，并在屏幕上居中。
+字幕和说明在大多数浏览器中以白色无衬线字体文本显示。Internet Explorer ([图 10.7]) 了文本阴影以提高可读性。Chrome、Safari 和 Opera 使用黑色背景。它们始终位于视频底部，并在屏幕上居中。
 
 尽管 WebVTT 提供了字幕对齐和放置的语法，但浏览器厂商尚未实现它。目前，我们对原生字幕的外观及其在屏幕上的放置位置控制有限。
 
@@ -2336,7 +2302,7 @@ And I think it's Ayodhya.</v>
 
 让我们来看一个设置 `::cue` 伪元素的示例。在这里 `::cue` 是我们的选择器，我们正在使用 `font` 简写属性使我们的字幕文本加粗。
 
-```
+```css
 ::cue {
     font: bold 18px / 1.5 sans-serif;
 }
@@ -2350,17 +2316,13 @@ And I think it's Ayodhya.</v>
 
 然而，这并不是我们能做的全部。`::cue` 伪元素也像函数一样，接受单个参数。此参数必须是一个或多个 CSS 选择器，例如类名或元素。回想我们在上面对话片段中使用的标记。
 
-```
+
+
 WEBVTT
 
-0:07:11.500 --> 0:07:13.000 
+0:07:11.500 --> 0:07:13.000
 <v Man1>The 14th century was recently</v>
 <v Woman>I know but ...</v>
-```
-
-
-
-
 
 每个 HTML 元素都有一个 DOM 脚本接口。接口是脚本语言可用的属性、常量、事件和方法的组。某些元素（如 `p`）具有简单的接口，没有多少属性适用于 `p` 元素。而其他元素如 `audio` 和 `video` 元素则拥有强大的接口，允许我们与元素的每个状态进行交互并控制。
 
@@ -2406,7 +2368,7 @@ function function_to_invoke(event){
 
 ```html
 <!DOCTYPE html>
-<<html>
+<html>
   <head>
     <meta charset="utf-8">
     <title>
@@ -2414,7 +2376,7 @@ function function_to_invoke(event){
     </title>            
     <link rel="stylesheet" type="text/css" href="video.css">
   </head>
-  <body        
+  <body>       
     <div id="video_wrapper">
       <video preload="metadata">
          <source src="./video_file.mp4" type="video/mp4">
@@ -2422,12 +2384,12 @@ function function_to_invoke(event){
       </video>
       <div id="video_time">
         <progress value="0" id="playback"></progress>
-        <span id="elapsed"></</span> <span id="duration"></</span>
-      </</div>
+        <span id="elapsed"></span> <span id="duration"></span>
+      </div>
       <div id="video_seek"> 
         <label for="seek">Seek</label>
-    <input type="range" id="seek" title="seek" 
-    min="0" value="0" max="0">
+        <input type="range" id="seek" title="seek" 
+        min="0" value="0" max="0">
       </div>
       <div id="video_controls">
         <button type="button" id="play">Play</button>
@@ -2436,7 +2398,7 @@ function function_to_invoke(event){
         </button>
         <label for="volume">Volume</label>
         <input type="range" id="volume" title="volume" 
-    min="0" max="1" step="0.1" value="1">                
+        min="0" max="1" step="0.1" value="1">                
       </div>
     </div>
     <script type="text/javascript" src="video.js"></script> 
@@ -2465,10 +2427,6 @@ var video = document.getElementById('my_video');
 ## 3 步：播放和暂停视频
 
 你对播放器想要做的绝大多数操作就是，*播放*视频文件。你可能还想暂停它来接电话，或者在老板面前隐藏你的偷懒。`HTMLVideoElement` 对象有两个自言易懂的方法来完成这些任务：`play()` 和 `pause()`。每当调用 `play()` 方法时，播放将开始或恢复。当调用 `pause()` 方法时，播放将暂停。
-
-
-
-
 
 我们将确保这些方法在用户请求时被调用。播放和暂停按钮已经是我们标记的一部分了，所以现在我们只需要为每个按钮添加一个事件监听器。首先，让我们将按钮引用为变量：
 
@@ -2632,10 +2590,6 @@ function clickhandler(event){
 }
 ```
 
-
-
-
-
 当用户点击播放时，此函数还将更改 `preload` 的值，提醒浏览器它应该限制下载速度。然而，请记住，这些只是提示；浏览器的行为是不保证的。
 
 ## 结语
@@ -2677,11 +2631,8 @@ Canvas 可用于绘制形状（如矩形、正方形和圆形），或者在 HTM
 在我们开始玩转 canvas 之前，需要考虑的几点：
 
 *   最好为每个 canvas 分配一个唯一的 `id` 属性，这样你的脚本就可以直接引用它。该页面上的其他元素不应使用相同的 ID。
-
 *   当未应用样式时，容器或 canvas 元素将是透明的，没有边框，因此它看起来像一个透明的矩形框。默认宽度为 300 像素，默认高度为 150 像素。
-
 *   在理想的世界里，每个人都会使用最新的浏览器。但事实并非如此，他们并没有这样做。这意味着通常需要告诉浏览器在不支持 `canvas` 时应该如何表现。
-
 *   如果你习惯于使用 `img` 元素，你会知道它不需要闭合标签 `</img>`。相反，`canvas` 需要闭合，所以你应该始终在容器代码的结尾包含 `</canvas>`。
 
 此时还值得提到，canvas 使用坐标、路径和渐变。这些内容在你第一次遇到它们时可能有些令人生畏，往往会让准开发者大叫着“数学！”四而逃命。但没必要担心——你很快就会掌握的。
@@ -2706,7 +2657,7 @@ WebGL 允许在浏览器窗口内渲染 3D 图形，并可以使用 JavaScript �
 首先，让我们看看如何创建一个 canvas 文档。正如本书前面提到的，`canvas` 元素本身如下：
 
 ```
-<canvas id="MyCanvas" width="300" height="150"></canvas
+<canvas id="MyCanvas" width="300" height="150"></canvas>
 ```
 
 ## HTML5 Canvas 模板
@@ -2751,8 +2702,6 @@ WebGL 允许在浏览器窗口内渲染 3D 图形，并可以使用 JavaScript �
 ctx.fillStyle="#0000FF";
 ctx.fillRect(0,0,300,150);
 ```
-
-
 
 这绘制了一个填充整个画布区域的蓝色矩形。`fillRect` 方法需要绘制矩形的左上角 x 和 y 坐标，然后是它的宽度和高度。上面的代码创建了一个 300x150px 的矩形，其左上角位于坐标 0,0，并用当前的 `fillStyle` 填充，在此例中，它是实蓝色（`#0000FF`）——参见图 13.1。`fillStyle` 可以是颜色、渐变或图案。
 
@@ -2936,9 +2885,6 @@ canvas.height = window.innerHeight;
 
 这改变了画布框的大小，而不是像素维度；坐标系保持不变。
 
-
-
-
 在本短章节中，我们将学习如何编写代码，告诉浏览器在不支持 `canvas` 渲染时应该如何处理。
 
 ## 创建替代内容
@@ -2971,7 +2917,7 @@ function supports_canvas() {
 ```javascript
 var canvas = document.createElement("MyCanvas");
 if (!canvas.getContext || !canvas.getContext("2d")) {
-    alert("抱歉 - 不支持 canvas.");
+    alert("抱歉 - 不支持 canvas.")
 }
 else {
     // 开始绘制
@@ -3069,10 +3015,6 @@ ctx.fillRect(0,0,300,150);
 
 结果所示图 15.3。
 
-
-
-
-
 为了将视频绘制到 `canvas` 上，你需要为视频的 `onplay` 事件添加一个处理程序，该程序会复制当前的视频帧。
 
 ```
@@ -3169,41 +3111,56 @@ stroke="black" stroke-width="1" fill="red"/>
 除了圆，通过在 `svg` 块内添加适当的标签创建其他形状也是简单的事情：
 
 * **line**（直线）——创建一个简单的直线
+
     ```html
     <line x1="25" y1="150" x2="300" y2="150" 
     stroke="#F00" stroke-width="5" />
     ```
+
     ![一条线](img/Lines.png)
+
     图 17.1. 直线
 
 * **polyline**（折线）——定义由多个线条定义构建的形状
+
     ```html
     <polyline points="0,40 40,40 40,80 80,80 80,120 120,120 120,160"
     stroke="#F00" stroke-width="5" fill="#FFF" />
     ```
+
     ![一条折线](img/Polylines.png)
+
     图 17.2. 折线
 
 * **rect**（矩形）——创建一个矩形
+
     ```html
     <rect width="300" height="100" fill="#F00" />
     ```
+
     ![一个矩形](img/rectangles.png)
+
     图 17.3. 矩形
 
 * **ellipse**（椭圆）——创建一个椭圆
+
     ```html
     <ellipse cx="300" cy="80" rx="100" ry="50" fill="#F00"/>
     ```
+
     ![椭圆](img/ellipses.png)
+
     图 17.4. 圆
 
 * **polygon**（多边形）——创建一个多边形
+
     ```html
     <polygon points="200,10 250,190 160,210"
     stroke="#000" stroke-width="1" fill="#F00" />
     ```
+
     ![一个（多边形）三角形](img/Polygontriangle.png)
+
     图 17.5. （多边形）三角形
 
 多边形在 `points` 属性中定义了一系列 x 和 y 坐标。这允许你创建具有任意边数的复杂形状。
@@ -3212,10 +3169,13 @@ stroke="black" stroke-width="1" fill="red"/>
 <polygon points="100,10 40,180 190,60 10,60 160,10" 
 stroke="#000" stroke-width="1" fill="pink" />
 ```
+
 ![一个星形](img/Polygon.png)
+
 图 17.6. 星形
 
 * **path**（路径）——允许定义任意路径
+
 `path`元素允许你使用特殊命令创建绘制。这些可以是大写或小写，适用于绝对和相对定位。它看起来很复杂，有很多选项，请参考[此 SitePoint 教程](http://www.sitepoint.com/svg-path/) 获取更多信息。
 
 所有上面的形状都可以使用 `path` 创建。下面的代码使用 `path` 创建了一个分段圆，正如你在图 17.7 中所示，这对于创建饼图和类似的图形是完美的。
@@ -3226,7 +3186,9 @@ fill="pink" stroke="red" stroke-width="3"/>
 <path d="M275,175 v-150 a150,150 0 0,0 -150,150 z"
 fill="purple" stroke="red" stroke-width="3"/>
 ```
+
 ![路径](img/Paths.png)
+
 图 17.7. 路径
 
 ## 渐变与模式
@@ -3247,9 +3209,6 @@ fill="purple" stroke="red" stroke-width="3"/>
 <!-- 在圆中使用渐变 -->
 <circle cx="100" cy="100" r="100" fill="url(#MyGradient)" />
 ```
-
-
-
 
 现在在浏览器中打开它，你会发现现在有了一个蓝黄相间的圆圈。要将其变为径向渐变，只需使用 `radialGradient` 标签即可：
 
@@ -3455,10 +3414,6 @@ stroke-width="6" fill="none" />
 
 以下代码提供了三个三次贝塞尔曲线示例：
 
-
-
-
-
 ```html
 <!DOCTYPE html>
 <html>
@@ -3546,7 +3501,7 @@ stroke="red" stroke-width="5" fill="none"/>
 
 # 第 20 章
 
-Canvas & SVG: SVG 过滤器效果
+## Canvas & SVG: SVG 过滤器效果
 
 你可以在 SVG 中使用**过滤器效果**。如果你使用任何图形设计或照片处理包，那么你几乎肯定以前遇到过过滤器。SVG 中的过滤器包括：
 
@@ -3637,10 +3592,6 @@ Canvas & SVG: SVG 过滤器效果
 
 过滤器可以帮助创建出的效果。例如，如果我们对上面应用 `feGaussianBlur`，你就可以模糊背景图像以创建某种 3D 的效果。
 
-
-
-
-
 ### 注意：展望未来
 
 SVG 过滤器技术将引入 CSS3，因此你将能够对任何 HTML 元素应用效果。
@@ -3678,7 +3629,7 @@ SVG 过滤器技术将引入 CSS3，因此你将能够对任何 HTML 元素应�
 * 可以缩放到任何尺寸且不损失的图像
 * 受益于使用 `DOM` 方法附加事件和操作对象的项目
 * 在服务器端创建图像的项目
-* 对可访问性和 SEO 关重要的项目
+* 对可访问性和 SEO 关键的项目
 
 `Canvas` 适用于：
 
@@ -3764,11 +3715,9 @@ window.addEventListener('online', onlineHandler);
 
 `navigator.onLine` 的缺点是：它是不可靠的。此外，它的工作方式取决于浏览器和操作系统系统。
 
+
+
 Chrome、Safari、Opera 15+ 和 Internet Explorer 9+ 可以检测用户何时丢失网络连接。丢失或关闭 Wi-Fi 连接将会在这些浏览器中触发 `offline` 事件。重新连接将触发 `online` 事件。如果连接到互联网，`navigator.onLine` 的值为 `true`，否则为 `false`。
-
-
-
-
 
 Opera 12（及旧版本）完全不会触发 `online` 或 `offline` 事件。然而，当用户断开网络时，它会向 `navigator.onLine` 返回 `false`，在连接时返回 `true`。
 
@@ -3804,7 +3753,7 @@ var xhrerrorhandler = function(errorEvent){
 
 我们将为这两个事件使用同一个函数，因为我们想在两种情况下都执行相同的任务。该函数将每个表单字段名称保存为 `localStorage` 的键（key），并将每个字段对应的值保存为 `localStorage` 的值（value）。
 
-接下来，让我们定义提交事件处理器。此函数将创建 XHR 请求，监控其是否失败，并添加我们的错误处理器：
+接下来，让我们定义提交事件处理器。此函数将创建 XHR 请请求，监控其是否失败，并添加我们的错误处理器：
 
 ```
 submithandler = function(submitEvent){
@@ -3863,7 +3812,7 @@ var xhronloadhandler = function(loadEvent){
 
 # 第 23 章：离线应用：应用程序缓存
 
-应用程序缓存（简称 AppCache）提供了一种本地保存应用程序资源的方法，以便在没有互联网连接的情况下使用它们。它特别适用于由 JavaScript 驱动并使用 `localStorage` 和 `IndexedDB` 等本地数据存储的“单页”应用程序。
+应用程序缓存（简称 AppCache）提供了一种本地保存应用程资源的方法，以便在没有互联网连接的情况下使用它们。它特别适用于由 JavaScript 驱动并使用 `localStorage` 和 `IndexedDB` 等本地数据存储的“单页”应用程序。
 
 AppCache 由两部分组成：称为 *manifest*（清单）的文本文件，以及用于脚本和帮助管理更新的 DOM 接口。在本章结束时，你将了解如何编写缓存清单文件、如何管理更新，以及使用此 API 时需要注意的一些方面。
 
@@ -3889,8 +3838,11 @@ css/style.css
 `CACHE:` 行是一个节头部。总共有四个定义的节头部：
 
 *   `CACHE:` 明确哪些文件应该存储在本地
+
 *   `NETWORK:` 明确说明哪些 URL 应该始终检索
+
 *   `FALLBACK:` 指定当 URL 不可用时应该显示哪个本地可用文件
+
 *   `SETTINGS:` 定义缓存设置
 
 ### 使用 `CACHE:` 节头部将文件保存到本地
@@ -3906,10 +3858,6 @@ css/style.css
 ```
 
 在这种情况下，`js/todolist.js` 和 `css/style.css` 将被本地缓存，因为它们遵循了我们的 `CACHE:` 节头部。链接到我们清单的页面也会被缓存，尽管我们没有明确说明它应该被保存。
-
-
-
-
 
 在这些示例中，我们使用的是相对 URL。我们也可以跨源缓存资源，但细节会稍微复杂一些。在最近版本的 Firefox 中，当它们共享相同的方案或协议（`HTTP` 或 `HTTPS`）时，你可以跨源缓存资源。例如，你可以将 `http://sitepoint.com` 的资源缓存到 `http://example.com` 上。你也可以将 `https://secure.ourcontentdeliverynetwork.com` 的资源缓存到 `https://thisisasecureurl.com` 上。在这些情况下，协议是相同的。你不能做的是通过 HTTP 缓存 HTTPS URL，反之亦然。当前版本的 IE、Safari、Chrome 和 Opera 允许无论方案如何进行跨源缓存。将 `http://sitepoint.com` 的资源缓存到 `https://thisisasecureurl.com` 是可以运行的。然而，这种行为可能会改变，因为它不符合规范。不要依赖它。尽管如此在写本文时，Chrome Canary ― 版本 33 ― 不允许从 HTTP 到 HTTPS 的跨源请求，反之亦然。
 
@@ -3930,7 +3878,7 @@ sync.cgi
 
 任何对 `sync.cgi` 的请求将通过网络发出。如果用户离线，该请求将失败。
 
-你还可以在网络部分使用通配符——或 `*` 字符。这告诉浏览器使用网络来获取任何在 `CACHE:` 部分中未显式列出的资源。部分路径配合通配符同样有效。
+你还可以在网�部分使用通配符——或 `*` 字符。这告诉浏览器使用网络来获取任何在 `CACHE:` 部分中未显式列出的资源。部分路径配合通配符同样有效。
 
 ### 为不可用的 URL 指定替代内容
 
@@ -3993,6 +3941,7 @@ NETWORK:
 如所述，AppCache 默认使用本地文件副本。这产生了更快速响应的用户界面，但也产生了两个初看之下*非常*令人困惑的问题：
 
 *   未缓存的资源在缓存页面上不会加载，即使在在线状态下也是
+
 *   更新资源不会更新缓存
 
 没错：无论是否有新文件版本，即使使用户连接到网络，浏览器都会使用本地存储的文件。
@@ -4032,10 +3981,6 @@ var hasAppCache = window.applicationCache === undefined;
 如果你打算使用多个 HTML5 特性，可能也想尝试 [Modernizr](http://modernizr.com/) 来检查所有特性。
 
 除非你的应用程序通过编程与缓存交互，否则没有必要使用 JavaScript 测试 AppCache 支持。在不支持 Application Cache 的浏览器中，manifest 属性将被忽略。
-
-
-
-
 
 既然我们已经讨论了 Application Cache 的语法以及它的一些特性，现在让我们聊聊它的 JavaScript API。虽然 AppCache 在没有 API 的情况下运行得很好，但你可以使用此 API 为应用程序的加载过程创建自定义的用户界面。创建这样的用户界面需要理解事件序列，并掌握一些 JavaScript。
 
@@ -4187,8 +4132,6 @@ var updatereadyhandler = function(){
 applicationCache.addEventListener('updateready',updatereadyhandler);
 ```
 
-
-
 另一方面，使用 `sessionStorage` 存储的数据仅在浏览上下文有效时才存在。通常这意味着一旦用户关闭浏览器窗口或标签页，我们就会丢失 `sessionStorage` 数据。然而，在允许用户保存浏览会话的浏览器中，它可能会持续存在。
 
 在本章中，我们将讨论 Web 相比于 Cookie 的的一些优势。然后我们将讨论如何使用 Web Storage API 并查看其的一些局限性。
@@ -4198,10 +4141,12 @@ applicationCache.addEventListener('updateready',updatereadyhandler);
 使用 `localStorage` 或 `sessionStorage` 代替 Cookie 主要有三个原因：
 
 * HTTP 请求性能
+
 * 数据存储容量
+
 * 针对跨站脚本攻击提供更好的保护
 
-Cookie 会包含在每个指向服务器的请求中，这增加了每个请求的大小和持续时间。使用较小的 Cookie 有帮助，但使用 `localStorage` 和 `sessionStorage` 帮助最大。数据存储在本地，并仅在请求时发送。
+Cookie 会包含在每个指向服务器的请请求中，这增加了每个请求的大小和持续时间。使用较小的 Cookie 有帮助，但使用 `localStorage` 和 `sessionStorage` 帮助最大。数据存储在本地，并仅在请求时发送。
 
 使用 Web 存储的另一个优势是你可以存储更多数据。现代浏览器对每个域限制存储 50 个 Cookie。按照每个 Cookie 4 字节计算，在某些浏览器开始删除 Cookie 之前，我们可以安全地存储约 200KB 的数据。不，我们无法控制哪些数据被删除。另一方面，Web 存储的限制从 Safari 和 Android 的约 2.5MB 到大多数其他浏览器的约 5MB 不等。我们可以通过键删除数据。
 
@@ -4266,10 +4211,6 @@ if( typeof window.localStorage == 'undefined' ){
 </body>
 </html>
 ```
-
-
-
-
 
 如果键已经存在，使用 `setItem` 将覆盖旧值而不是创建新记录。对于我们的待办事项列表来说，这正是我们需要的。为了防止您的键值被覆盖，请在保存项目之前检查该键是否存在。
 
@@ -4424,14 +4365,14 @@ window.addEventListener('storage', storagehandler);
 
 我们的回调函数将接收一个 `StorageEvent` 对象作为参数。`StorageEvent` 对象包含了所有对象通用的属性，以及五个特定于其类型的属性：
 
-
-
-
-
 - `key`:包含保存到存储区域的键名
+
 - `oldValue`:包含该键的旧值，如果是第一次设置具有该键的项，则为 `null`
+
 - `newValue`:包含操作期间添加的新值
+
 - `url`:包含引发此项更改的页面 URL
+
 - `storageArea`:指示受更新影响的存储对象―`localStorage` 或 `sessionsStorage`
 
 通过这些属性，你可以更新界面或向用户通报操作状态。在这种情况下，我们将使用 `location.reload()` 静默地刷新其他标签页/窗口中的页面。
@@ -4546,11 +4487,10 @@ Web 存储（`localStorage` 和 `sessionStorage`）对于像待办事项这样�
 遗憾的是，这听起来并不简单。浏览器在支持客户端数据库方面分为三个阵营：
 
 - 同时支持 IndexedDB 和 Web SQL (Chrome, Opera 15+)
+
 - 仅支持 IndexedDB (Firefox, Internet Explorer 10+)
+
 - 仅支持 Web SQL (Safari)
-
-
-
 
 如果你计划支持移动浏览器，那么 IndexedDB 可能并不是一个可行的选择。iOS 上的 Safari 和 Opera Mobile 11-12 仅支持 Web SQL；旧版本的 Android 和 Blackberry 浏览器也是如此。
 
@@ -4623,7 +4563,7 @@ IndexedDB 有两个 API：同步和异步。在同步 API 中，方法会在操�
 </html>
 ```
 
-这为我们提供了一个非常简单的界面，由两个表单字段和一个“保存条目”的按钮组成，如图 25.2 所示。我们还添加了一个视图，在我们保存完最新的条目后显示所有条目。该应用程序的生产级版本可能会有更多屏幕，但对于这个演示来说足够了。
+这为我们提供了一个非常简单的界面，由两个表单字段和一个“保存条目”按钮组成，如图 25.2 所示。我们还添加了一个视图，在我们保存完最新的条目后显示所有条目。该应用程序的生产级版本可能会有更多屏幕，但对于这个演示来说足够了。
 
 ![在 Firefox 中所示的简单日志界面](img/journal-ui.png)
 
@@ -4655,9 +4595,6 @@ idb.onsuccess = function(successEvent){
 与所有的 DOM 事件一样，我们的 `successEvent` 对象包含一个 `target` 属性。在这种情况下，目标是我们的 `open` 请求事务。`target` 属性也是一个对象，包含一个 `result` 属性，它是我们事务的结果。在这种情况下，`result` 的值就是我们的数据库。
 
 这是一个非常重要的理解要点。*每个事务都需要一个 `onsuccess` 处理器*。该事务的结果始终是目标对象的子属性，而它是事件对象的属性（`event.target.result`）。
-
-
-
 
 现在我们已经将全局变量 `databaseObj` 设置为我们的数据库对象，就可以使用 `databaseObj` 来执行事务了。
 
@@ -4699,6 +4636,7 @@ idb.onerror = function(event){
 至少，`createObjectStore` 需要一个名称参数。它必须是一个字符串，但该字符串不能包含任何空格。第二个参数是可选的，但它必须是一个 `dictionary`（字典）。字典是具有定义属性和值的对象。对于 `createObjectStore`，这些属性和值如下：
 
 *   `autoIncrement`: 必须为 `true` 或 `false`；为存储中的每条记录自动生成键和索引。默认值为 `false`。
+
 *   `keyPath`: 指定使用哪个对象的属性作为存储中每条记录的索引。默认值为 `null`。使命名的字段成为必填字段。
 
 在这里，我们选择设置 `keyPath`。这意味着我们添加到数据库的每个对象都需要包含一个 `entrydate` 属性，且 `entrydate` 属性的值将成为我们的键。
@@ -4706,10 +4644,6 @@ idb.onerror = function(event){
 你不必设置 `autoIncrement` 或 `keyPath`。可以在不设置它们的情况下添加我们的对象存储。如果你选择不设置其中任何，则*必须*为存储的每条记录设置一个键。我们将在下一节讨论这一点。
 
 注意，我们没有在 `onupgradeneeded` 回调中使用我们的 `databaseObj` 变量？这是因为 `onupgradeneeded` 回调是在版本更改时触发的。
-
-
-
-
 
 与任何事务一样，第一步是创建一个事务对象。接下来，选择商店。最后，使用 `openCursor` 方法打开一个 `cursor`（游标）。游标是由范围记录组成的对象。它是一种允许我们遍历记录集合的特殊机制：
 
@@ -4753,7 +4687,7 @@ function showAllEntries(){
 
 键范围是通过 `IDBKeyRange` 对象创建的。`IDBKeyRange` 是所谓的 `static` 对象，它的工作方式与 `Math()` 对象类似。正如同你会直接输入 `Math.round()` 而不是 `var m = new Math()` 一样，对于 `IDBKeyRange`，你必须始终使用 `IDBKeyRange.methodName()`。
 
-在这个示例中，我们仅使用 `lowerBound` 方法设置了一个下边界。它的值应该是我们想要检索的最低键值。在这种情况下，我们将使用 `0`，因为我们想要检索对象存储中的所有记录，从第一条开始：
+在这个示例中的，我们仅使用 `lowerBound` 方法设置了一个下边界。它的值应该是我们想要检索的最低键值。在这种情况下，我们将使用 `0`，因为我们想要检索对象存储中的所有记录，从第一条开始：
 
 ```javascript
 objectstore.openCursor(IDBKeyRange.lowerBound(0));
@@ -4844,9 +4778,6 @@ indexedDB.deleteDatabase('myIDB');
 
 当然，你也可以访问 [Learnable.com](https://learnable.com/) 或 [SitePoint.com](http://www.sitepoint.com/) 来获取 Web 技术的最新动态。
 
-
-
-
 在本章中，我们将快速游览 HTML5 API 的世界。我将概述书中将讨论的 API，以及你读完本书后将学到的内容。本章将不会涉及任何代码实现，而是会为每个 API 提供一个快速概览，以便你对将要学习的内容有一个清晰的认识。
 
 某些 HTML5 API 仍然非常新，并不是每个浏览器的每个版本都支持它们，在创建 HTML5 应用时你需要记住这一点。每当你准备使用任何 HTML5 API 时，检查浏览器对该 API 的支持情况总是个好主意。我们将在本章的最后一节查看如何操作。
@@ -4856,19 +4787,28 @@ indexedDB.deleteDatabase('myIDB');
 由于这是一本短书，无法涵盖每一个 API。某些 API 已经在 SitePoint 的 Jump Start HTML5 系列的其他书中涵盖了。在本书中，我们将重点介绍五个重要的 JavaScript API，你可以使用它们来创建非常酷的 Web 应用。（是的，使用原生的 HTML5 和 JavaScript 构建的 Web 应用！这有多酷吗？）所以，让我们来看看我们要讨论的内容：
 
 *   **Web Workers API**：想过为 Web 引入多线程吗？你是否想过在不影响主 JavaScript 线程的情况下在后台执行某些持续任务？如果是这样，可能是时候让你熟悉 Web Workers API 了，因为它专为此目的而设计。
+
     *   **正式定义：** `Workers API` 用于在后台线程中运行脚本，该线程与主线程并行运行。换句话说，你可以在后台执行计算密集型任务或实现长轮询，而你的主 UI 线程将不受影响。
+
 *   **Geolocation API**：这个新 API 仅让你知道用户在哪里。它让你能够找到用户的位置——即使他们在移动中也是如此。此外，你可以根据他们的位置为他们提供定制化的选择（也许是附近的不错咖啡馆或剧院），或者在地图上标记他们的位置。
+
     *   **正式定义：** `Geolocation API` 让你的应用程序通过简单的 JavaScript 接收用户的当前地理位置。
+
 *   **Server-sent Events API**：Facebook 向你的动态墙推送新更新的方式非常棒，不是吗？在引入服务器发送事件（Sent Events，简称 SSE）之前，这种功能是使用长轮询实现的。但有了全新的 SSE，服务器可以在新更新可用时自动将更新推送到网页上。你可以在脚本中访问这些更新并通知你的用户。
+
     *   **正式定义：** `Server-sent Events API` 让你的客户端在不需要长轮询的情况下接收服务器的推送通知。
-*   **WebSocket API**：这个 API 帮助你构建允许客户端和服务器之间双向通信的应用。`WebSocket API` 的经典用例是聊天应用程序，客户端向服务器发送消息，服务器进行处理并回复！
+
+*   **WebSocket API**：这个 API 帮助你构建允客户端和服务器之间双向通信的应用。`WebSocket API` 的经典用例是聊天应用程序，客户端向服务器发送消息，服务器进行处理并回复！
+
     *   **正式定义：** 该 API 实现了客户端与服务器之间低延迟、全双工的单字连接。
+
 *   **Cross-document Messaging API**：由于可怕的 CSRF 攻击，来自不同域的文档通常不允许相互通信。但有了这个新的跨文档消息 API，来自不同源的文档可以相互通信，同时仍然能够防止 CSRF 攻击。
+
     *   **正式定义：** 该 API 引入了一种消息系统，允许文档之间进行通信——无论源域如何——且不会产生 CSRF 问题。
 
 ### 注意事项：跨站请求伪造 (CSRF)
 
-CSRF 是一种攻击类型，它欺骗终端用户在不知情的情况下在 Web 应用程序上执行敏感操作。通常，网站只验证请求是否来自已验证身份用户的浏览器，但并不验证已验证的用户本人是否在发送请求。这就是 CSRF 攻击的常见原因。
+CSRF 是一种攻击类型，它欺骗终端用户在不知情的情况下在 Web 应用程序上执行敏感操作。通常，网站只验请求是否来自已验证身份用户的浏览器，但并不验证已验证的用户本人是否在发送请求。这就是 CSRF 攻击的常见原因。
 
 要了解更多关于 CSRF 攻击的信息，请访问 [Open Web Application Security Project](https://www.owasp.org/index.php/Cross-Site_Request_Forgery_(CSRF))。
 
@@ -4903,33 +4843,33 @@ else{
 
 你可以看到，在启用了 Web Worker 的浏览器中，`window` 对象中有一个名为 `Worker` 的属性。
 
-类似的技术也可以用于检测对其他特性的支持。我们在检查每个 API 的细节时将查看如何检测每个特性。
 
-### Modernizr
 
-如果有一个统一的接口来检查对每个 API 的支持，那不是很好吗？正好有一个开源 JavaScript 库可以帮助检测 HTML5 特性：[Modernizr.](http://modernizr.com/)
+# 类似的技术也可以用于检测对其他特性的支持
 
-使用 Modernizr 只需下载并将并将代码添加到 `<head>` 元素中：
+我们在检查每个 API 的细节时将查看如何检测每个特性。
 
-```
-<script type="text/javascript" src="modernizr.min.js">
+## Modernizr
+
+如果有一个统一的接口来检查对每个 API 的支持，那不是很好吗？正好有一个开源 JavaScript 库可以帮助检测 HTML5 特性：[Modernizr](http://modernizr.com/)。
+
+使用 Modernizr 只需下载并将代码添加到 `<head>` 元素中：
+
+```html
+<script type="text/javascript" src="modernizr.min.js"></script>
 ```
 
 ### 注意事项：始终将 Modernizr 放在你的 `<head>` 中
 
-
-
-
-只需确保将 Modernizr 脚本加载到 `<head>` 区域即可。这是因为 `HTML5 Shiv`（用于在 IE9 之前的浏览器中启用 HTML5 元素的样式设置）必须在 body 加载之前执行。此外，如果你使用了 Modernizr 特定的 CSS 类，如果脚本没有加载在 `<head>` 中，可能会遇到 [FOUC（无样式内容闪烁)](http://en.wikipedia.org/wiki/Flash_of_unstyled_content)。
+只需确保将 Modernizr 脚本加载到 `<head>` 区域即可。这是因为 `HTML5 Shiv`（用于在 IE9 之前的浏览器中启用 HTML5 元素的样式设置）必须在 body 加载之前执行。此外，如果你使用了 Modernizr 特定的 CSS 类，如果脚本没有加载在 `<head>` 中，可能会遇到 [FOUC（无样式内容闪烁）](http://en.wikipedia.org/wiki/Flash_of_unstyled_content)。
 
 现在，假设你想检测浏览器对 Web Workers 的支持。以下代码片段可以完成此操作：
 
-```
-if(Modernizr.webworkers){
-    //继续后续操作
-}
-else{
-    //不支持 web workers
+```javascript
+if (Modernizr.webworkers) {
+    // 继续后续操作
+} else {
+    // 不支持 web workers
 }
 ```
 
@@ -4939,7 +4879,7 @@ else{
 
 要创建 HTML5 应用，你实际上只需要你喜欢的文本编辑器和浏览器。但为了使用某些 API，如服务器发送事件（Server-sent Events）和 WebSocket，你需要一个服务器。因此，我要求你在机器上安装 [WAMP](http://www.wampserver.com/en/) 或 [XAMPP](http://www.apachefriends.org/en/xampp.html)，以便我们能够轻松创建一个本地服务器来尝试各种功能。如果你已经搭建好了服务器，就可以开始了。
 
-在本章中，我们讨论了书中涵盖的 API 列表，并学习了如何检测浏览器对每个 HTML5 特的支持。我们还简要讨论了每个 API 的用途，并最后搭建了开发环境。
+在本章中，我们讨论了书中涵盖的 API 列表，并学习了如何检测浏览器对每个 HTML5 特性的支持。我们还简要讨论了每个 API 的用途，并最后搭建了开发环境。
 
 我知道你已经等不及要大干一场了。既然你已经了解了所有基础知识，让我们开始 HTML5 API 世界之旅，Web Workers 是第一个访问的地方。
 
@@ -4965,10 +4905,10 @@ Web Workers 有两种：专用线程（dedicated workers）和共享线程（sha
 
 在继续之前，我只想确保你已经检测了浏览器对 Web Workers 的支持。在上一章中，我展示了一个使用原生 JavaScript 和 Modernizr 检测 Web Workers 支持的示例，所以我们在这里跳过重复部分。
 
-要使用 Web Workers，你只需要调用 `Worker` 构造函数并传递 Worker 脚本的 URI 即可
+要使用 Web Workers，你只需要调用 `Worker` 构造函数并传递 Worker 脚本的 URI 即可：
 
-```
-var worker=new Worker('myworker.js');
+```javascript
+var worker = new Worker('myworker.js');
 ```
 
 ### 注意：Worker 脚本路径
@@ -4977,7 +4917,7 @@ var worker=new Worker('myworker.js');
 
 这里，`myworker.js` 是需要在后台执行的 Worker 脚本。要与 Worker 通信，你只需要在 `worker` 对象上调用 `postMessage` 并传递消息（如果有）：
 
-```
+```javascript
 // 在不带任何消息的情况下启动 worker
 worker.postMessage();
 
@@ -4987,24 +4927,24 @@ worker.postMessage('嘿，你准备好开始工作了吗？');
 
 但通信不必是单向的。我们的 Worker 也可以回复！为了接收从 Worker 发送的消息，我们在 `worker` 对象上附加一个事件监听器，如下：
 
-```
+```javascript
 // 注册回调函数
-worker.addEventListener('message',function(e){
-  alert('收到来自 worker 的消息，'+e.data);
-},false);
+worker.addEventListener('message', function(e) {
+  alert('收到来自 worker 的消息，' + e.data);
+}, false);
 ```
 
 处理函数还会接收一个 `message` 事件对象。该对象有一个名为 `data` 的属性，包含了发送的实际消息。因此在上面的代码中，我们访问了 `e.data` 属性来检索由 Worker 发送的数据。
 
 那么在主脚本中作为参数传递给 `postMessage()` 的消息会发生什么呢？嗯，它会被传递到 Worker 脚本，在 Worker 端可以通过注册相同的事件监听器来获取。以下代码片段显示了如何操作：
 
-*myworker.js*
+**myworker.js**
 
-```
+```javascript
 // 从 worker 发送
-self.addEventListener('message',function(e){
+self.addEventListener('message', function(e) {
   postMessage('我按照你说的做了！');
-},false);
+}, false);
 ```
 
 ### 警告：Workers 是沙箱化的
@@ -5013,49 +4953,49 @@ Workers 运行在沙箱环境中。这意味着它们无法访问普通脚本可
 
 发生错误时，`onerror` 回调会被调用。以下回调应在父脚本中注册：
 
-```
+```javascript
 // 注册 error 回调
-worker.addEventListener('error',function(e) {
+worker.addEventListener('error', function(e) {
   console.log(
-    '错误发生在 '+e.filename+' 行 '+e.lineno
+    '错误发生在 ' + e.filename + ' 行 ' + e.lineno
   );
-},false);
+}, false);
 ```
 
 ### 传递 JSON 数据
 
 Web Workers 只能传递一个参数；但是，该参数可以是包含多个项目的复杂对象。让我们修改代码来传递 JSON 数据：
 
-*parentScript.js*
+**parentScript.js**
 
 ```javascript
-var worker=new Worker('myworker.js');
+var worker = new Worker('myworker.js');
 
-worker.addEventListener('message',function(e){
-  alert('收到来自 '+e.data.answerer+' 的回答：'+e.data.answer);
-},false);
+worker.addEventListener('message', function(e) {
+  alert('收到来自 ' + e.data.answerer + ' 的回答：' + e.data.answer);
+}, false);
 
-worker.postMessage({'question':'你好吗？','askedBy':'父脚本'});
+worker.postMessage({'question': '你好吗？', 'askedBy': '父脚本'});
 ```
 
-*myworker.js*
+**myworker.js**
 
 ```javascript
 self.addEventListener('message', function(e) {
 
   console.log(
     '问题：' + e.data.question + 
-    '问者：'+e.data.askedBy
+    '问者：' + e.data.askedBy
    );
 
   self.postMessage(
     {
       'answer': '挺不错的！',
-      'answerer':'Worker'
+      'answerer': 'Worker'
     }
   );
 
-},false);
+}, false);
 ```
 
 ### 注意：Worker 数据是复制的
@@ -5067,18 +5007,10 @@ self.addEventListener('message', function(e) {
 如之前提到的，Workers 运行在沙箱环境中。它们的特性包括：
 
 *   对 `navigator` 和 `location` 对象的只读访问
-
-*   `setTimeout`/setInterval` 函数以及 `XMLHttpRequest` 对象，与主线程一样
-
+*   `setTimeout`、`setInterval` 函数以及 `XMLHttpRequest` 对象，与主线程一样
 *   创建和启动子 Worker
-
 *   通过 `importScripts()` 函数导入其他脚本
-
 *   利用 AppCache 的能力
-
-
-
-
 
 ### 注意：为什么 Workers 无法访问 DOM
 
@@ -5092,15 +5024,15 @@ self.addEventListener('message', function(e) {
 
 每个人都喜欢随手处理事情。由于 Web Workers 运行在独立的上下文中，`Worker` 构造函数期望一个指定运行外部脚本文件的 URI。但如果你想做得非常快，可以通过 `blobs` 动态创建内联 Workers。看下面的代码：
 
-```
+```javascript
 var blob = new Blob(["onmessage = function(e) {
 self.postMessage(e.data); });
 
 var worker = new Worker(window.URL.createObjectURL(blob));
 
 worker.addEventListener('message', function(e){
-  alert('Got same Message: '+e.data+' from worker');
-},false);
+  alert('Got same Message: ' + e.data + ' from worker');
+}, false);
 
 worker.postMessage('Good Morning Worker!!');
 ```
@@ -5111,11 +5043,11 @@ worker.postMessage('Good Morning Worker!!');
 
 在下面的示例中，我们在父 HTML 页面本身中编写 Worker。一旦 Worker 启动，它将每秒执行一次函数并将当前时间返回给主线程。主线程随后将用时间更新 `div`（记得我们讨论过更新 DOM 吗？）：
 
-`parentPage.html`
+**parentPage.html**
 
-```
+```html
 <!DOCTYPE html>
-<html
+<html>
 <head>
 <!-- 
   以下脚本不会被 JavaScript 引擎解析，
@@ -5129,7 +5061,7 @@ worker.postMessage('Good Morning Worker!!');
 
   function getTime(){
     var d = new Date();
-    return d.getHours()+":"+d.getMinutes()+":"+d.getSeconds();
+    return d.getHours() + ":" + d.getMinutes() + ":" + d.getSeconds();
   }
 
 </script>
@@ -5139,17 +5071,17 @@ worker.postMessage('Good Morning Worker!!');
     [document.querySelector("#jsworker").textContent]
   );
 
-  var worker=new Worker(window.URL.createObjectURL(blobURI));
+  var worker = new Worker(window.URL.createObjectURL(blobURI));
 
-  worker.addEventListener('message',function(e){
-    document.getElementById('currTime').textContent=e.data;
-  },false);
+  worker.addEventListener('message', function(e){
+    document.getElementById('currTime').textContent = e.data;
+  }, false);
 
   worker.postMessage();
 </script>
 </head>
 <body>
-<div id="currTime"></</div>
+<div id="currTime"></div>
 </body>
 </html>
 ```
@@ -5158,7 +5090,7 @@ worker.postMessage('Good Morning Worker!!');
 
 如果你正在创建许多 blob URL，在完成后释放它们是一个良好的习惯（我建议避免创建过多的 blob URL）：
 
-```
+```javascript
 window.URL.revokeObjectURL(blobURI); // 释放资源
 ```
 
@@ -5170,12 +5102,12 @@ window.URL.revokeObjectURL(blobURI); // 释放资源
 
 你的 Workers 可以访问 `importScripts()` 函数，让它们能够轻松导入外部脚本。下面的代码显示了如何这样做：
 
-```
+```javascript
 // 导入单个脚本
 importScripts('external.js');
 
 // 导入 2 个脚本文件
-importScripts('external1.js','external2.js');
+importScripts('external1.js', 'external2.js');
 ```
 
 ### 注意：URI 相对于 Worker
@@ -5206,12 +5138,12 @@ Web Workers 因其多线程特性为你提供了巨大的性能提升。所有�
 
 以下是一些你可以尝试实现的用例：
 
-- 在后台进行[轮轮](http://techoctave.com/c7/posts/60-simple-long-polling-example-with-javascript-and-jquery) 并通知用户有新更新
+- 在后台进行[轮询](http://techoctave.com/c7/posts/60-simple-long-polling-example-with-javascript-and-jquery) 并通知用户有新更新
 - 预取并缓存内容
 - 在后台执行计算密集型任务和长时间循环
 - 一个在后台持续运行的拼写检查器
 
-# 第 28 章
+# 第 28 章：API：Geolocation API
 
 Geolocation API 提供了一种获取用户精确位置的简单方法。例如，你可以创建一个根据用户的当前位置为其提供个性化建议的应用程序。你还可以在地图上绘制他们的位置以显示导航详情。
 
@@ -5221,57 +5153,53 @@ Geolocation API 提供了一种获取用户精确位置的简单方法。例如�
 
 在使用该 API 之前，让我们先确保浏览器支持它：
 
-```
+```javascript
 if (navigator.geolocation) {
   // 执行一些很棒的事情
-}
-else {
+} else {
   // 提供备用内容
 }
 ```
 
 可以通过 `Modernizr` 实现相同的检查：
 
-```
+```javascript
 if (Modernizr.geolocation) {
   // 执行一些很棒的事情
-}
-else {
+} else {
   // 提供备用内容
 }
 ```
 
 使用以下代码获取用户的实际位置：
 
+```javascript
+navigator.geolocation.getCurrentPosition(
+  success_callback,
+  error_callback
+);
 
+function success_callback(position) {
+  console.log("Hey, there you are at Longitude:" +
+    position.coords.longitude + " and latitude:" +
+    position.coords.latitude);
+}
 
-
-
-```
-navigator.geolocation.getCurrentPosition
-(success_callback,error_callback);
-
- function success_callback(position) {
-      console.log("Hey, there you are at Longitude:"
-      +position.coords.longitude+"and latitude:"
-      +position.coords.latitude);
- }
-
- function error_callback(error) {
-    var msg="";
-     switch(error.code){
-        case 1:
-            msg="Permission denied by user"; 
-            break;
-        case 2:
-            msg="Position unavailable";
-            break;
-        case 3:
-            msg="Request Timed out";
-            break;
-    }
-    console.log("Oh snap!! Error logged: "+msg);
- } 
+function error_callback(error) {
+  var msg = "";
+  switch (error.code) {
+    case 1:
+      msg = "Permission denied by user";
+      break;
+    case 2:
+      msg = "Position unavailable";
+      break;
+    case 3:
+      msg = "Request Timed out";
+      break;
+  }
+  console.log("Oh snap!! Error logged: " + msg);
+}
 ```
 
 `getCurrentPosition()` 函数在本质上是异步的。这意味着该函数会立即返回，并尝试异步获取用户的位置。一旦检索到位置信息，就会执行成功回调函数。一个 `position` 对象也会传递给回调函数。与用户当前位置相关的所有数据都封装在该对象中。
@@ -5295,14 +5223,14 @@ navigator.geolocation.getCurrentPosition
 
 1. `enableHighAccuracy`: 如果将其设置为 `true`，它将指示托管设备提供尽可能的位置细节。如果设备是智能手机，它可能会使用 GPS 提供高精度的信息。
 2. `timeout`: 这本质上表示你想要等待多少毫秒来获取位置。例如，如果你将值设置为 5,000 毫秒，而应用在该间隔内无法检测到用户的当前位置，它将报错并失败。
-3. `maximumAge`: 此属性指示你是否希望设备缓存最后已知的位置。假设设备在下午 5:00 检测到用户的当前位置。一分钟后（下午 5:01），你的应用再次调用 `getCurrentPosition()` 并并将 `maximumAge` 设置为 100,000（意味着 100 秒）。由于设备知道用户 60 秒前在哪里，而这小于 `maximumAge` 属性的值，它将返回那个最后已知的位置。如果你对之前已知的位置满意，而不是为当前位置发送新请求，那么这很有用（在很多情况下可以节省电量）。这就像是在说：“嘿设备，给我你的当前位置，我不介意这个位置是 x 毫秒之前的。”注意，值为 `0` 表示不进行缓存。
+3. `maximumAge`: 此属性指示你是否希望设备缓存最后已知的位置。假设设备在下午 5:00 检测到用户的当前位置。一分钟后（下午 5:01），你的应用再次调用 `getCurrentPosition()` 并将 `maximumAge` 设置为 100,000（意味着 100 秒）。由于设备知道用户 60 秒前在哪里，而这小于 `maximumAge` 属性的值，它将返回那个最后已知的位置。如果你对之前已知的位置满意，而不是为当前位置发送新请求，那么这很有用（在很多情况下可以节省电量）。这就像是在说：“嘿设备，给我你的当前位置，我不介意这个位置是 x 毫秒之前的。”注意，值为 `0` 表示不进行缓存。
 
 以下代码段演示了如何使用 `PositionOptions`：
 
-```
+```javascript
 navigator.geolocation.getCurrentPosition(
-  success_callback, 
-  error_callback, 
+  success_callback,
+  error_callback,
   {enableHighAccuracy: true, timeout: 35000, maximumAge: 60000}
 );
 ```
@@ -5311,33 +5239,34 @@ navigator.geolocation.getCurrentPosition(
 
 如果你想持续监控用户的位置，`getCurrentPosition()` 将无法满足需求；相反，你应该使用 `watchPosition()`。这两个函数具有相同的签名，但工作方式有所不同。
 
-对于 `watchPosition()`，每当用户的位置发生时，就会调用成功回调函数。是的，就是这么棒！如果你的应用需要在用户移动时在地图上绘制其位置，这是实现的最佳方法。你甚至不需要担心位置何时变化。API 会为你处理这些，并在适当的时间执行你的回调。
+对于 `watchPosition()`，每当用户的位置发生变化时，就会调用成功回调函数。是的，就是这么棒！如果你的应用需要在用户移动时在地图上绘制其位置，这是实现的最佳方法。你甚至不需要担心位置何时变化。API 会为你处理这些，并在适当的时间执行你的回调。
 
 以下代码演示了 `watchPosition()` 的用法：
 
-```
+```javascript
 var watchId;
+
 function startWatchingPosition() {
-  watchId=navigator.geolocation.watchPosition(plotPosition);
+  watchId = navigator.geolocation.watchPosition(plotPosition);
 }
 
-function plotPosition(position){
+function plotPosition(position) {
   console.log(
-    'got position: Latitude='+
-    position.coords.latitude+
-    ', longitude='+
+    'got position: Latitude=' +
+    position.coords.latitude +
+    ', longitude=' +
     position.coords.longitude
   );
 
   // 你在地图上更新位置的代码
 }
 
-function stopWatchingPosition(){
-  navigator.geolocation.clearPosition(watchId);
+function stopWatchingPosition() {
+  navigator.geolocation.clearWatch(watchId);
 }
 ```
 
-在这里，回调函数 `plotPosition()` 每每次获取到新位置时被调用。注意 `watchPosition()` 函数返回一个数字，你可以将其存储并在稍后使用 `clearPosition()` 停止监控；它的工作方式非常类似于 `setInterval()` 和 `clearInterval()`。
+在这里，回调函数 `plotPosition()` 每次获取到新位置时被调用。注意 `watchPosition()` 函数返回一个数字，你可以将其存储并在稍后使用 `clearWatch()` 停止监控；它的工作方式非常类似于 `setInterval()` 和 `clearInterval()`。
 
 ### 提示：快速移动的用户
 
@@ -5345,7 +5274,7 @@ function stopWatchingPosition(){
 
 ## 地位的准确性
 
-地理位的准确性可能对你的应用很重要。正如所讨论的，你始终可以通过 `PositionOptions.enableHighAccuracy` 来启用高位置准确度。但这只是提示设备多消耗一点功率以返回更准确的位置。设备可能会默默忽略它。在许多情况下，检索到的位置可能不够准确，甚至可能是错误的。有时用户可能对检索到的位置并不感兴趣。在这些情况下，你可能希望允许用户覆盖位置。
+地理位置的准确性可能对你的应用很重要。正如所讨论的，你始终可以通过 `PositionOptions.enableHighAccuracy` 来启用高位置准确度。但这只是提示设备多消耗一点功率以返回更准确的位置。设备可能会默默忽略它。在许多情况下，检索到的位置可能不够准确，甚至可能是错误的。有时用户可能对检索到的位置并不感兴趣。在这些情况下，你可能希望允许用户覆盖位置。
 
 ## 结论
 
@@ -5358,10 +5287,9 @@ Geolocation API 是对于想要构建能够向用户提供实时反馈的酷炫�
 * 检测用户的位置并显示附近的剧院。
 * 让你的用户在不同地点打卡并将这些地点绘制在地图上，稍后向他们展示当天去过的地方。
 
+# 第 29 章：API：服务器发送事件
 
-
-
-在进一步移动之前，理解此 API 的需求非常重要。为了解释这一点，让我先问你一个问题：你会如何设计一个在有新数据时持续更新浏览器的应用程序？嗯，你总是可以通过 `setInterval()`/`setTimeout()` 使用传统的轮询方法。在这种情况下，回调会在指定的时间间隔后执行，轮服务器是否有可用数据。如果数据可用，页面将异步更新新内容。
+在进一步移动之前，理解此 API 的需求非常重要。为了解释这一点，让我先问你一个问题：你会如何设计一个在有新数据时持续更新浏览器的应用程序？嗯，你总是可以通过 `setInterval()`/`setTimeout()` 使用传统的轮询方法。在这种情况下，回调会在指定的时间间隔后执行，轮询服务器是否有可用数据。如果数据可用，页面将异步更新新内容。
 
 这种方法的主要问题在于产生 HTTP 请求的开销。通过 SSE，服务器可以通过单向连接向浏览器推送更新。而且即使连接断开，客户端也可以自动与服务器重新连接并继续更新。
 
@@ -5373,14 +5301,13 @@ Geolocation API 是对于想要构建能够向用户提供实时反馈的酷炫�
 
 这里是使用 SSE 的示例代码：
 
-```
+```javascript
 if (!!window.EventSource) {
-  var eventsource=new EventSource('source.php');
-  eventsource.addEventListener('message',function(event) {
+  var eventsource = new EventSource('source.php');
+  eventsource.addEventListener('message', function(event) {
     document.getElementById("container").innerHTML = event.data;
   }, false);
-}
-else{
+} else {
     // 回退到轮询
 }
 ```
@@ -5389,11 +5316,10 @@ else{
 
 注意我们在检查浏览器对 SSE 的支持。可以使用 Modernizr 实现：
 
-```
+```javascript
 if (Modernizr.eventsource) {
   // 继续
-}
-else{
+} else {
   // 回退到轮询
 }
 ```
@@ -5402,16 +5328,16 @@ else{
 
 然后你可以为 `eventsource` 对象附加事件监听器。当服务器向浏览器推送数据时，会触发 `message` 事件。回调接收 `event` 对象，其 `data` 属性包含了来自服务器的数据。一旦获取了数据，你就可以执行诸如实时更新页面部分等任务。
 
-你可以如下感知感知连接打开和错误发生的情况：
+你可以如下感知连接打开和错误发生的情况：
 
-```
+```javascript
 eventsource.addEventListener('open', function(event) {
   // 源已打开
-},false);
+}, false);
 
 eventsource.addEventListener('error', function(event) {
   // 糟糕！！发生了错误
-},false);
+}, false);
 ```
 
 ## `EventStream` 格式
@@ -5437,7 +5363,7 @@ data: 现在第二行 \n\n
 
 接收此流后，客户端的 `event.data` 将包含由 `\n` 分隔的所有行。你可以如下所示从流中移除这些换行符：
 
-```
+```javascript
 console.log(e.data.split('\n').join(' '));
 ```
 
@@ -5468,7 +5394,7 @@ id: 100\n
 data: 嘿，你最近怎么样？\n\n
 ```
 
-事件 `id` 是有益的，因为浏览器会跟踪最后一个触发的事件。这个 `id` 成为事件的唯一标识符。在任何连接断开的情况下，当浏览器重新连接到服务器时，它会在请求中包含 HTTP 头 `Last-Event-Id`。在服务器端，你可以检查 `Last-Event-Id` 头是否存在。如果存在，你可以尝试只向浏览器发送 `event id` 大于 `Last-Event-Id` 头值值的事件。通过这种方式，浏览器可以消费错过的事件。
+事件 `id` 是有益的，因为浏览器会跟踪最后一个触发的事件。这个 `id` 成为事件的唯一标识符。在任何连接断开的情况下，当浏览器重新连接到服务器时，它会在请求中包含 HTTP 头 `Last-Event-Id`。在服务器端，你可以检查 `Last-Event-Id` 头是否存在。如果存在，你可以尝试只向浏览器发送 `event id` 大于 `Last-Event-Id` 头值的事件。通过这种方式，浏览器可以消费错过的事件。
 
 ## 创建你自己的事件
 
@@ -5486,16 +5412,16 @@ data: 某些其他 \n\n
 客户端 JavaScript：
 
 ```javascript
-var eventsource=new EventSource('source.php');
+var eventsource = new EventSource('source.php');
 
 // 自定义事件
-eventsource.addEventListener('score',function(e) {
+eventsource.addEventListener('score', function(e) {
   // 你的逻辑
   console.log(e.data);
 }, false);
 
 // 另一个自定义事件
-eventsource.addEventListener('other',function(e) {
+eventsource.addEventListener('other', function(e) {
   // 另一种方式
   console.log(e.data);
 }, false);
@@ -5519,14 +5445,14 @@ data: 常用的数据 \n\n
 我们几乎总是会到达这一部分；当资源不再需要时，释放它们更好。那么，如何关闭事件流呢？编写以下代码你将不再从源接收更新：
 
 ```javascript
-eventsource.close(); //关闭事件流
+eventsource.close(); // 关闭事件流
 ```
 
 ## 示例事件源
 
 最后，怎么样？创建一个简单的 `EventSource`，它会随机获取一个笑话并推送到我们的 HTML 页面。这是一个用于推送新数据的简单 PHP 脚本：
 
-*source.php*
+**source.php**
 
 ```php
 <?php
@@ -5536,9 +5462,9 @@ ob_implicit_flush(true);
 ob_end_flush();
 while (true) {
   sleep(2);
-  $curl=curl_init('http://api.icndb.com/jokes/random');
+  $curl = curl_init('http://api.icndb.com/jokes/random');
   curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
-  $result=curl_exec($curl);
+  $result = curl_exec($curl);
   echo "data:$result\n\n";
 }
 ?>
@@ -5546,39 +5472,34 @@ while (true) {
 
 ### 注意：关于 PHP 脚本的一些说明
 
-
-
-
-
 来自 API 的数据是 JSON 格式的。SSE 要求你在数据前面加上 `data:`，并用 `\n\n` 标记结束。如果你漏掉了这些点，`EventSource` 将无法正常工作，并且请记住也要注意请求头（headers）。循环的原因是为了保持连接开启。如果没有循环，浏览器将在五秒左右尝试打开一个新连接。
 
-由于我们在 PHP 脚本中持续循环，脚本的执行时间可能会超过 PHP 的 `max_execution_time`。你还可能因为 Apache 用户连接限制而遇到问题。对于这类实时应用，`Node.js` 等技术可能是是更好的选择。
+由于我们在 PHP 脚本中持续循环，脚本的执行时间可能会超过 PHP 的 `max_execution_time`。你还可能因为 Apache 用户连接限制而遇到问题。对于这类实时应用，`Node.js` 等技术可能是更好的选择。
 
 这里是显示数据的 HTML 页面：
 
-`jokes.html`
+**jokes.html**
 
-```
+```html
 <!DOCTYPE html>
 <html>
 <head>
 <title>一个随机笑话网站</title>
 <script>
-if(typeof(EventSource)!=="undefined"){
-  var eventsource=new EventSource('source.php');
+if (typeof(EventSource) !== "undefined") {
+  var eventsource = new EventSource('source.php');
   eventsource.addEventListener('message', function(event) {
     document.getElementById("container").innerHTML = 
     JSON.parse(event.data).value.joke + '<br/>' +
     document.getElementById("container").innerHTML;
-  },false);
+  }, false);
+} else {
+  console.log("No EventSource");
 }
-else console.log("No EventSource");
 </script>
 </head>
 <body>
-
   <div id="container"></div>
-
 </body>
 </html>
 ```
@@ -5589,7 +5510,7 @@ else console.log("No EventSource");
 
 你需要特别注意以下几点：
 
-- 从服务器发送头部 `Content-Type: text/event-stream` 的头部
+- 从服务器发送头部 `Content-Type: text/event-stream`
 - 分别用 `data:` 和 `\n\n` 标记内容的开始和结束
 - 注意同源策略（same-origin policies）
 
@@ -5601,11 +5522,9 @@ else console.log("No EventSource");
 - 借助 Twitter API 读取并显示最新的推文。
 - 使用 Flickr API 获取随机照片并更新页面。
 
-Mozilla 开发者网络提供了一个[学习更多 SSE 的良好资源。](https://developer.mozilla.org/en-US/docs/Server-sent_events)在这里，你还可以找到一些演示应用以及针对旧浏览器的补丁程序（polyfills）。
+Mozilla 开发者网络提供了一个[学习更多 SSE 的良好资源](https://developer.mozilla.org/en-US/docs/Server-sent_events)。在这里，你还可以找到一些演示应用以及针对旧浏览器的补丁程序（polyfills）。
 
-# 第 30 章
-
-## APIs：WebSocket API
+# 第 30 章：API：WebSocket API
 
 我认为 WebSockets 是 HTML5 中提供的最酷的 API 之一。当你希望客户端通过持久连接与服务器通信时，WebSocket API 的真实优势就会显现出来。这意味着一旦连接建立，服务器和客户端就可以随时互相发送消息。客户端以前向服务器发送消息并等待服务器响应的日子已经过去了。显然，WebSocket 消除了对长轮询的需求！如果你想创建一个客户端和服务器持续通信的实时应用，这个 API 非常有用。例如，你可以使用 WebSocket 构建聊天系统、多玩家 HTML5 游戏以及类似的应用。
 
@@ -5627,9 +5546,9 @@ WebSockets 和 SSE 可以实现类似的任务，但它们是不同的。在 SSE
 
 首先，让我们看看如何使用 JavaScript API 连接到简单的 WebSocket 服务器。之后，我将向你展示如何创建自己的 WebSocket 服务器并让其他人与你连接。
 
-```
+```javascript
 // 测试浏览器是否支持该 API
-if('WebSocket' in window) {
+if ('WebSocket' in window) {
 
   var socket = new WebSocket('ws://echo.websocket.org');
 
@@ -5657,20 +5576,19 @@ if('WebSocket' in window) {
     console.log('An Error Occurred ' + err);
   };
 
-}
-else {
+} else {
   // 没有 WebSocket
+}
 ```
 
 ### 注意：使用 Modernizr
 
 使用 Modernizr，我们可以这样检查对 WebSocket 的支持：
 
-```
+```javascript
 if (Modernizr.websockets) {
   // 继续
-}
-else{
+} else {
   // 没有 WebSocket
 }
 ```
@@ -5695,9 +5613,9 @@ else{
 
 你也可以向服务器发送二进制数据。以下程序将 `canvas` 画的图像发送到示例 WebSocket：
 
-```
+```javascript
 // 你需要创建这个 socket
-var connection=new WebSocket('ws://localhost:8080');
+var connection = new WebSocket('ws://localhost:8080');
 
 connection.onopen = function() {
 
@@ -5722,19 +5640,15 @@ connection.onopen = function() {
 
 ## 示例服务器实现
 
-
-
-
-
 这里是适用于不同服务器端语言的几种 WebSocket 实现。你可以根据你喜欢的语言选择相应的库：
 
 * PHP: [Ratchet](http://socketo.me/)
 * Node.js: [Socket.IO](https://github.com/learnboost/socket.io)
 * Java: [jWebSocket](http://jwebsocket.org/)
 
-关于服务器端库的完整概述，[Andrea Faulds 维护了一份详细列表。](http://ajf.me/websocket/#libs)
+关于服务器端库的完整概述，[Andrea Faulds 维护了一份详细列表](http://ajf.me/websocket/#libs)。
 
-在本短书中，详细讨论这些库中的每一个都是超出范围范围的。但无论采用哪种实现方式，它们都提供了一个简单的 API，你可以通过它与客户端进行交互。例如，它们都提供了一个处理函数来接收来自浏览器的消息，你也可以与客户端进行回传。我鼓励你为你喜爱的语言找一个库并尝试运行一下。
+在本短书中，详细讨论这些库中的每一个都是超出范围的。但无论采用哪种实现方式，它们都提供了一个简单的 API，你可以通过它与客户端进行交互。例如，它们都提供了一个处理函数来接收来自浏览器的消息，你也可以与客户端进行回传。我鼓励你为你喜爱的语言找一个库并尝试运行一下。
 
 我在 SitePoint.com 上写了一篇[关于 WebSockets 的详细教程](http://www.sitepoint.com/introduction-to-the-html5-websockets-api/)。在那个教程中，我展示了如何使用 `jWebSocket` 实现一个启用 WebSockets 的服务器，并让其他人连接它。
 
@@ -5754,7 +5668,7 @@ connection.onopen = function() {
 
 # 第 31 章：API：跨文档消息传递 API (Cross-document Messaging API)
 
-HTML5 中的 `Cross-document Messaging API` 使两个文档能够相互交互，而无需直接暴露 DOM。想象一下以下场景：你的网页中有一个由不同网站托管的 iframe。如果你尝试从该 iframe 中读取某些数据，浏览器会非常不悦并可能抛出安全异常。它防止 DOM 被第三方文档操作，从而阻止了潜在的攻击，如 [CSRF](http://en.wikipedia.org/wiki/Cross-site_request_for_gery) 或 [跨站脚本 (XSS)。](http://en.wikipedia.org/wiki/Cross-site_scripting) 但 `Cross-document Messaging API` 从不直接暴露 DOM。相反，它允许 HTML 页面通过 `message` 事件向其他文档发送消息。
+HTML5 中的 `Cross-document Messaging API` 使两个文档能够相互交互，而无需直接暴露 DOM。想象一下以下场景：你的网页中有一个由不同网站托管的 iframe。如果你尝试从该 iframe 中读取某些数据，浏览器会非常不悦并可能抛出安全异常。它防止 DOM 被第三方文档操作，从而阻止了潜在的攻击，如 [CSRF](http://en.wikipedia.org/wiki/Cross-site_request_forgery) 或 [跨站脚本 (XSS)](http://en.wikipedia.org/wiki/Cross-site_scripting)。但 `Cross-document Messaging API` 从不直接暴露 DOM。相反，它允许 HTML 页面通过 `message` 事件向其他文档发送消息。
 
 `Cross-document Messaging API` 对于创建组件并允许它们与第三方网站通信非常有用。例如，假设你有一个提供广告的页面，并且允许用户将此页面嵌入他们的网站中。在这种情况下，你可以通过 `Cross-document Messaging API` 让用户个性化广告或修改广告类型。客户端可以向你的页面发送消息，你也可以接收这些消息。
 
@@ -5775,11 +5689,11 @@ HTML5 中的 `Cross-document Messaging API` 使两个文档能够相互交互，
 
 代码看起来如下：
 
-```
+```javascript
 targetWindow.postMessage(message, targetOrigin);
 ```
 
-你应该注意，`targetWindow` 指向你想要发送消息的 `window`。它可能是你刚刚通过调用 `window.open()` 打开的句，，也可以是某些 iframe 的 `contentWindow` 属性。
+你应该注意，`targetWindow` 指向你想要发送消息的 `window`。它可能是你刚刚通过调用 `window.open()` 打开的窗口，也可以是某些 iframe 的 `contentWindow` 属性。
 
 ### 注意：对已打开窗口的引用
 
@@ -5789,7 +5703,7 @@ targetWindow.postMessage(message, targetOrigin);
 
 这是父页面中 iframe 引用的页面：
 
-*child.html*
+**child.html**
 
 ```html
 <!DOCTYPE html>
@@ -5810,30 +5724,7 @@ targetWindow.postMessage(message, targetOrigin);
 
 到目前为止一切顺利！现在让我们看看我们的父页面：
 
-*parent.html*
-
-```html
-<!DOCTYPE html>
-<html>
-<head>
-<title>父文档</title>
-</head>
-<body>
-    <iframe
-      src="child.html"
-      height="500" width="500">
-    </iframe>
-</body>
-</html>
-```
-
-当你打开父页面时，你可以看到来自 `child.html` 的图片。目前，`parent.html` 和 `child.html` 都在同一个服务器（`localhost`）上。但理想情况下它们应该在不同的服务器上。
-
-但我们不想一直给用户显示静态图片，而是刷新 iframe。如果我们通过点击父页面上的按钮让 `child.html` 刷新图片就好了。
-
-让我们从向父页面添加一个按钮开始。我们编写一个响应点击事件并向 `child.html` 发送消息的函数。
-
-*parent.html*
+**parent.html**
 
 ```html
 <!DOCTYPE html>
@@ -5859,10 +5750,9 @@ targetWindow.postMessage(message, targetOrigin);
         if (window.postMessage) {
             document.getElementById('iframe').
             contentWindow.postMessage(
-              Math.random()*1000, 'http://localhost'
+              Math.random() * 1000, 'http://localhost'
             );
-        }
-        else {
+        } else {
             console.log('不支持 postMessage()');
         }
       }
@@ -5876,17 +5766,13 @@ targetWindow.postMessage(message, targetOrigin);
 
 如果你使用 `Modernizr` 来检查浏览器兼容性，请检查 `Modernizr.postmessage` 属性。
 
-
-
-
-
 ### 提示：targetOrigin
 
 将 `targetOrigin` 视为告诉浏览器消息可以发送到哪个源的方式。你也可以将 `"*"` 作为 `targetOrigin`。正如你可能猜到的，`*` 是一个通配符，表示消息可以发送到任何源的文档。但使用通配符意味着通过允许消息发送到任何源来削弱你的安全系统。我建议将精确的源作为第二个参数传递给 `postMessage()`，而不是使用通配符。
 
 现在我们需要在 `child.html` 中接收消息并采取适当的操作。以下是修改后的 `child.html`：
 
-`child.html`
+**child.html**
 
 ```html
 <!DOCTYPE html>
@@ -5952,9 +5838,8 @@ targetWindow.postMessage(message, targetOrigin);
 虽然无法详细涵盖该 API 的每一个细节，但本章为你提供了一个基础。你现在应该能够自己进行各种实验了。为了进一步阅读，我强烈推荐以下资源：
 
 * [Mozilla 开发者网络 (MDN)](https://developer.mozilla.org/en-US/docs/Web/API/Window.postMessage)
-* [W3C 规范。](http://www.w3.org/TR/webmessaging/)
+* [W3C 规范](http://www.w3.org/TR/webmessaging/)
 
 到此，我们对五个最重要且实用的 HTML5 API 的之旅结束了。希望你发现这本书是对这些强大技术的实用介绍。请去查看我在每一章末尾分享的示例项目想法；我也鼓励你发挥创意，思考一些其他良好的用例。
 
 祝编码愉快！
-

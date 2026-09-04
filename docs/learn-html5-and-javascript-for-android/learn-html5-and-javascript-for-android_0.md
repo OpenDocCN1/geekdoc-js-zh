@@ -1,6 +1,5 @@
+
 # Android HTML5 和 JavaScript 学习指南
-
-
 
 ![](img/cover.jpeg)
 
@@ -13,59 +12,68 @@
 ![Image 4](img/index-1_4.png)
 
 ![Image 5](img/index-1_5.png)
+
 ![Image 6](img/index-1_6.png)
+
 ![Image 7](img/index-1_7.png)
+
 ![Image 8](img/index-1_8.png)
+
 ![Image 9](img/index-1_9.png)
+
 ![Image 10](img/index-1_10.png)
+
 ![Image 11](img/index-1_11.png)
-
-
-
-
-
-
-
-
 
 *为了方便起见，Apress 将部分前言材料放在索引之后。请使用“书签”和“目录简介”链接来访问它们。*
 
-
 ## 引言
+
 欢迎学习 *Learn HTML5 and JavaScript for Android*。本书将介绍 HTML5、JavaScript 和 CSS3，帮助你为 Android 平台和浏览器制作极佳应用所需的必备技能。
 
 作者 Gavin Williams 将一步步引导你创建移动端 Web 应用。你把所学的 HTML5、CSS3 和 JavaScript 技能立即付诸实践，获得宝贵的一手经验，这些经验将有助于你为 Android 智能手机、平板电脑和其他带有浏览器的设备开发你自己的 Android 版 Web 应用。
 
 本书将向你展示如何：
+
 - 使用 HTML5 和 CSS3 让你的 Web 应用外观精美且运行流畅
+
 - 使用 JavaScript 生成更丰富的应用程序，能够响应各种事件
+
 - 采用并使用 Android 封装器 API
+
 - 通过 Canvas、Video 和 Audio 等 HTML5 API 为用户创建深层次的体验
+
 - 逐个案例、分层地为你的 Android 设备和目标受众构建 Web 应用
 
 翻开 *Learn HTML5 and JavaScript for Android*，获取构建在 Android 设备及其浏览器上运行的响应式、动态且趣味的 HTML5 和 JavaScript Web 应用所需的技能。
 
 ### 本书适合人群
+
 本书适用于任何具有 Web 开发或原生移动应用开发经验，并希望掌握移动 Web 的人。
 
 ### 本书结构
+
 本书分为九章。
+
 - **第 1 章：入门**：本章将引导你搭建环境。
+
 - **第 2 章：为 Android 创建 Web 应用简介**：本章将带你了解移动 Web 的历史以及它与桌面 Web 站的区别。它将通过几个现有移动 Web 站的案例，说明如何改进或更改它们以提升用户体验。
+
 - **第 3 章：HTML5 和 第 4 章：使用 HTML5 开始你的项目**：这些章节将介绍一些专门针对移动端的 HTML5 标签。本章还将教你如何使用 HTML5 嵌入视频和音频。完成 HTML5 章后，工作将带你构建 Web 应用的 HTML 基础。
+
 - **第 5 章：移动端 CSS3 和 第 6 章：奠定 CSS3 基础**：这些章节将向你展示一些 CSS3 移动兼容特性，如变换、动画、阴影和圆角。你还将学习使用 CSS3 预处理器 `SASS`。工作将带你使用 `SASS` 和最佳实践样式你的移动 Web 应用。
+
 - **第 7 章：移动端 JavaScript 和 第 8 章：JavaScript：模型、视图与控制器**：这些章节将教你如何使用 JavaScript 增强你的移动应用程序。本章不涉及 `jQuery`、`Sencha` 或 `jQuery Mobile` 等库。JavaScript 简介章节将教你如何使用原生 JavaScript 构建基础框架，并与画布和音频交互。工作将带你通过添加分页功能和通过 `JSONP` 与第三方 API 通信来增强 Web 应用。
+
 - **第 9 章：测试和部署你的移动端 Web 应用**：本章将向你如何使用 `QUnit` 测试应用，并使用 `Capistrano` 部署应用。
 
 ### 下载代码
+
 本书所示示例的代码可以在 Apress 网站 `www.apress.com` 获取。可以在书籍信息页的“Source Code/Downloads”标签下找到该链接。该标签位于“Related Titles”部分下方。
 
 ### 联系作者
+
 如果你有任何问题或建议——或者发现了认为我应该知道的错误——可以通过 `gavin@justanotherdeveloper.co.uk` 联系作者，或在 Twitter 上关注 `@fishrodgavin`。
-
-
-
-
 
 [或访问 http://www.justanotherdeveloper.com.](http://www.justanotherdeveloper.com)
 
@@ -82,7 +90,9 @@
 当时的移动网站仅仅是 `WAP` 时代在黑白移动手机（如 `Motorola V50`）上使用的 `无线标记语言` (`WML`) 页面，只不过增添了一抹色彩。从那时起并没有发生太大变化，大多数移动网站仍然保留了从上到下的相同线性信息流，而且交互性不强。这种设计风格有三个原因：
 
 1. `WAP/GPRS` 和 `EDGE` 都是缓慢的协议，无法处理文件密集型网站，因此设计和内容受到限制，以便快速传送网站及其信息。
+
 2. 旧手机的分辨率和宽高比非常糟糕，以至于你几乎无法在屏幕上放任何任何内容。
+
 3. 传统上使用方向键或按键在移动网站上导航。上下滚动似乎比左右滚动更自然。
 
 我们现在不再依赖于使用硬件控制按钮来浏览移动设备上的内容。随着每一款新款平板电脑和手机的发布，屏幕的尺寸、质量、分辨率、`像素密度/PPI` 和色彩深度不断增加。我们看到桌面浏览器引擎（如 `WebKit` 和 `Geko`）被引入到网络浏览器中，例如我们移动设备上的 `Mobile Safari`、`Android Browser` 和 `Firefox`。这帮助了开发者制作出惊艳的移动网站，它们在现在流行的 `Android` 和 `iOS` 手机和平板设备上视觉和感受都保持一致。
@@ -102,15 +112,18 @@
 与其他操作系统不同，Android 遭受着所谓的“碎片化”问题。设备碎片化由某些因素引起：
 
 - `加速度`
+
 - `GPS`
+
 - `陀螺仪`
+
 - `屏幕分辨率`
+
 - `像素密度 (PPI)`
+
 - `CPU`
+
 - `RAM`
-
-
-
 
 Aptana 基于 `Eclipse`，因此可以支持大多数（如果不是全部）`Eclipse` 插件；它将管理你的虚拟 Android 测试环境、执行代码补全、验证你的代码并为你部署。
 
@@ -130,7 +143,7 @@ Aptana 基于 `Eclipse`，因此可以支持大多数（如果不是全部）`Ec
 
 ## Android SDK
 
-Android SDK 将允许你创建虚拟 Android 环境，以便不同的硬件配置和 SDK/OS 版本进行开发。有一个 `Eclipse` 插件允许你从 Aptana 内部管理、创建和配置虚拟 Android 设备，并启动它们。
+Android SDK 将允你创建虚拟 Android 环境，以便不同的硬件配置和 SDK/OS 版本进行开发。有一个 `Eclipse` 插件允许你从 Aptana 内部管理、创建和配置虚拟 Android 设备，并启动它们。
 
 在安装 `ADT` 之前，你需要在 Aptana 中启用 `Eclipse Helios Update Site`。它包含了 `Eclipse` 的 `Android ADT` 插件的依赖项。
 
@@ -163,7 +176,9 @@ Android SDK 将允许你创建虚拟 Android 环境，以便不同的硬件配�
 **图 1-4.** *Aptana 中新的 Android 菜单*
 
 进入 `Android SDK Manager`。你将看到一个需要下载的 `SDKs` 列表，如图 1-5 所示。确保勾选了以下选项：
+
 - Google APIs by Google Inc.
+
 - SDK Platform by Samsung Electronics
 
 **图 1-5.** *Android SDK Manager*
@@ -176,17 +191,18 @@ Android SDK 将允许你创建虚拟 Android 环境，以便不同的硬件配�
 
 现在 `ADT` 已安装，你可以安装所有的 `SDKs` 来测试你的 Android Web 应用程序。`Android ADT` 可以在 `Window` 菜单底部找到，如图 1-4 所示。
 
-
-
 在这里，你将了解到受众如何影响你设计和布局移动端网站，如何确定内容的优先级，以及为你的目标受众提供最佳功能。
 
 ## Web 应用与原生应用
+
 如果你在决定开发纯原生应用、混合应用还是纯 Web 应用之间犹豫不决，那么本节将将带你了解每种解决方案的优缺点。
 
 ## 第一行代码：Hello World
+
 最后这一节将带你介绍应用程序的构建模块，例如设置用于自动部署的 `ANT`，构建并压缩 `SASS/CSS` 文件以及 `JavaScript`。
 
 ## 移动 Web 有何不同？
+
 为 3.654 亿永久在线用户的潜在受众提供服务，使得移动 Web 成为最令人兴奋的开发平台之一。
 
 为桌面环境创建 Web 应用程序可能是很有趣。然而，用户受限于单一指向设备和键盘与你的工作进行交互。移动 Web 带来了一个全新的可能世界。移动设备是交互式元素的空白画布，用户只需通过触摸即可进行交互。作为开发者，你可以通过接管整个屏幕并让他们沉浸在你的移动 Web 应用的世界中，从而与用户创造出更加亲密的体验。
@@ -194,6 +210,7 @@ Android SDK 将允许你创建虚拟 Android 环境，以便不同的硬件配�
 遗憾的是，尽管移动 Web 带来了许多现实世界的优势，但在平台不断发展的过程中，你将面临与桌面环境中相同的开发和用户体验障碍。
 
 ## 对象/特性检测
+
 移动 Web 上开发者可用的 API 碎片化问题可能会成为一个问题。修复跨浏览器 API 差异的最常用解决方案是使用 `JavaScript` 检测浏览器或设备，并根据所使用的浏览器提供不同的样式表或执行特定的 `JavaScript` 代码。这种方法被称为用户代理（UA）嗅探或浏览器嗅探。列出的列表 2-1 显示了一个常见的 UA 嗅探脚本。
 
 **列表 2-1.** 用于 UA 嗅探的 JavaScript 代码
@@ -266,28 +283,28 @@ messageInst.sendSMS();
 从列表 2-3 可以看到，无论浏览能力如何，我们都可以使用对象检测来确保用户无论设备如何都能获得相同或相似的体验。使用 `JavaScript` 检测这些特殊特性很容易。但测试 CSS3 或 HTML5 特性并提供向后兼容性呢？名为 `Modernizr` 的 JavaScript 库可以帮助实现这一点。它使用相同的对象检测方法来检测用户的 HTML/CSS/JavaScript 能力。它通过向 `HTML` 标签添加类来修改 `DOM`，从而为你的 CSS 和 JavaScript 特性检测提供钩子。图 2-1 显示了其在 haz.io 应用。将在第七章详细介绍。
 
 ## 屏幕尺寸与像素密度
-在开发移动 Web 应用时，你可能希望创建一个在平板设备和移动设备上具有相同功能的应用程序，但呈现不同的视图或布局以利用额外的空间或方向。媒体查询可以帮助实现这一点。通过结合媒体查询和弹性设计，你可以产生响应于用户显示的视图，而不是检测用户的设备类型并为其提供视图。这被称为响应式 Web 设计。
+
+在开发移动 Web 应用时，你可能希望创建一个在平板设备和移动设备上具有相同功能的应用程序，但呈现不同的视图或布局以利用额的空间或方向。媒体查询可以帮助实现这一点。通过结合媒体查询和弹性设计，你可以产生响应于用户显示的视图，而不是检测用户的设备类型并为其提供视图。这被称为响应式 Web 设计。
 
 这种开发方法比根据用户使用的设备类型决定他们如何查看你的网站要优雅得多。相反，你关注的是可用的空间和像素密度。
 
 像素密度概念允许物理尺寸相同的移动设备根据每英寸像素数量的不同而具有不同的分辨率。Android 设备分为三种像素密度类别：
 
 - 低
+
 - 中
+
 - 高
 
 这对你的移动 Web 应用有什么影响？当你制作图像时
 
-
-
-
 对于普通网站，你会生成单张图像，它不会缩放且无法适用于所有屏幕类型，因为布局会随图像本身缩放以适应固定宽度或弹性布局。
 
-对于移动端网页，你通常会创建一个移动应用程序来适应整个视口，并且无论设备的像素密度如何，其尺寸都将保持相同。
+对于移动端网页，你通常会创建一个移动应用程来适应整个视口，并且无论设备的像素密度如何，其尺寸都将保持相同。
 
 例如，如果你为低像素密度屏幕制作了一个宽度为 500 px 的图像，它在高密度屏幕上显示将会更小。这是因为 500 px 在高密度屏幕上占据的空间没有在低密度屏幕上那么大。
 
-移动浏览器解决此问题的方案是根据目标密度来放大或缩小图像。例如，如果你为中等密度屏幕开发应用程序，浏览器将在低密度屏幕上缩小图像，并在高密度屏幕上放大图像。这会导致在向任一方向缩放时产生开销，并且在放大图像时会出现像素化，缩小图像时可能会出现失真。
+移动浏览器解决此问题的方案是根据目标密度来放大或缩小图像。例如，如果你为中等密度屏开发应用程序，浏览器将在低密度屏幕上缩小图像，并在高密度屏幕上放大图像。这会导致在向任一方向缩放时产生开销，并且在放大图像时会出现像素化，缩小图像时可能会出现失真。
 
 为了解决这个问题，我们既可以专门为高密度屏幕创建应用程序，又允许移动端缩小图像。这在 CPU/GPU 消耗网络活动方面可能是非常昂贵的。这两个因素都会影响渲染时间，并可能因为下载不必要的资源而影响用户的钱包。或者，我们可以使用媒体查询来确保为正确的显示类型传递正确的内容。为了做到这一点，你必须将视口元标签的 `target-densitydpi` 属性设置为 `device-dpi`，并使用媒体查询导入特定像素密度的样式表，如列表 2-4 所示。
 
@@ -309,8 +326,11 @@ messageInst.sendSMS();
 ```
 
 如列表 2-4 所示，每种显示类型的像素比例如下：
+
 * 低密度：0.75
+
 * 中密度：1.0
+
 * 高密度：1.5
 
 我们使用通用的移动端样式表，以便在设备不匹配任何像素比例时提供回退图像（fallback images）。然后，我们使用每个像素密度类别的样式表来覆盖图像。
@@ -326,8 +346,11 @@ messageInst.sendSMS();
 记住，你可以在这些规则的基础上进行构建，而不必受限于这些规则。只要你能让用户打开你的移动 Web 应用程序，玩几分钟，并立即说“我懂了”，你就完成了你的工作。
 
 移动 Web 应用程序有很多种分类，但大多数属于以下几类：
+
 * 任务驱动型
+
 * 社交型
+
 * 娱乐型
 
 ### 任务驱动型
@@ -339,30 +362,34 @@ messageInst.sendSMS();
 要记住的一点是，如果用户无法通过你的应用程序在最短时间内完成任务，他们就会关闭你的浏览器窗口，并寻找另一个可以更快完成相同任务的窗口。
 
 对于任务驱动型应用程序，有两个基本信息可以帮助用户更快地完成任务：
+
 * 用户在哪里？
+
 * 他们正在使用什么设备？
 
 这两个关键信息对于你的应用程序来说是很容易获取的，了解它们将产生巨大差异。发现用户的物理位置以及他们在做什么，将帮助你预判他们访问你的移动 Web 应用程序时将要做。
 
 例如，如果你正在创建一个行程规划器，有几点关于用户的特征你应该考虑：
+
 * 用户在哪里？他们的连接是否受限（例如 3G 或）。
+
 * 用户是否正在移动中？他们是否有时间用拇指输入数据来填写表单？
 
 这些因素不仅影响你如何展示交互元素（如输入表单），还影响你如何编写代码以减少用户完成任务所付出的努力。
 
 #### 图 2-2. *TFL 移动网站用户路径*
 
-在图 2-2 中你可以 TFL 行程规划器的移动网站。上面的用户路径描述了一个最坏的情况。该用户正在移动中，容易产生数据输入错误。结果是用户必须通过两次页面加载并填写更多表单才能完成任务。增加两个额外的页面来帮助用户进行验证又有什么问题呢？两个额外的页面意味着在 3G 网络下将产生 4 秒以上的加载时间。你还必须考虑到用户处理页面并做出响应的时间。
+在图 2-2 中你可以 TFL 行程规划器的移动网站。上面的用户路径描述了一个最坏的情况。该用户正在移动中，容易产生数据输入错误。结果是用户必须通过两次页面加载并填写更多表单才能完成任务。增加两个额外的页面来帮助用户进行验证又有什么问题呢？两个额的页面意味着在 3G 网络下将产生 4 秒以上的加载时间。你还必须考虑到用户处理页面并做出响应的时间。
 
 #### 我们如何改进 TFL 移动网站？
+
 * 增加反馈循环。当用户输入出发地/目的地时，通过自动补全为他们提供建议。他们可以选择适合自己的建议来预填充行程规划器的表单字段。
+
 * 我们可以使用用户的当前位置作为行程起点或终点的建议。
+
 * 如果我们使用本地存储，还可以向用户建议最近的目的地列表。例如，如果我们知道他们刚刚规划了去某地的行程，那么当他们再次打开移动 Web 应用程序时，很有可能想知道如何回去。
 
 #### 图 2-3. *BUSit 移动网站用户路径*
-
-
-
 
 图 2-3 展示了 `busitlondon.co.uk` 的一个良好示例。首次启动移动 Web 应用时，它将尝试为您查找当前的当前位置。
 
@@ -379,12 +406,14 @@ messageInst.sendSMS();
 社交媒体应用的主要目标通常有三点：
 
 - 用户访问是为了消费内容。
+
 - 用户访问是为了贡献内容。
+
 - 用户访问是为了参与。
 
 这三条基本规则支撑了当今存在的几乎每一个社交移动应用。如果用户不贡献内容，就没有任何内容供其他用户消费和参与。
 
-仅仅因为用户在社交移动 Web 应用上花费的时间更多，并不意味着完成任务（如分享内容）的路径应该与任务型应用有任何不同。应该考虑到用户的情况。它应该既易于分享内容，又易于消费内容。
+仅仅因为用户在社交移动 Web 应上花费的时间更多，并不意味着完成任务（如分享内容）的路径应该与任务型应用有任何不同。应该考虑到用户的情况。它应该既易于分享内容，又易于消费内容。
 
 例如，`Twitter` 和 `Facebook` 在功能集方面是相径径的，但这两个应用在移动 Web 上的主要目标都是让用户轻松地消费、贡献和参与。
 
@@ -409,13 +438,18 @@ messageInst.sendSMS();
 有几个因素可以帮助你决定创建移动 Web 应用还是原生应用：
 
 - 你是否已经知道如何为目标平台开发
+
 - 你的应用程序是否依赖网络连接或存储在线的某些动态数据
+
 - 你的应用程序依赖什么类型的设备功能（例如 `GPS`、`加速度计`、`陀螺仪`、`通讯录`、`日历`、密集 `CPU/GPU` 操作）
+
 - 你的项目现在或将来是否有将功能移植到其他平台的空间（例如 `iOS`、`Blackberry`、`Windows Phone`、桌面）
+
 - 你发布应用程序的频率，以及你如何处理用户不在设备上更新你的应用程序
+
 - 时间和预算
 
-如果你已经如何使用 Web 标准开发，移动 Web 应用可能是最佳解决方案。但如果你已经可以为目标平台进行开发，那么制作原生应用可能会更有优势。然而，这会略微关闭制作可在其他平台上运行的应用的大门，除非你使用如 `Marmalade` 等跨平台应用框架，否则同一个应用需要为所有平台重新创建。
+如果你已经如何使用 Web 标准开发，移动 Web 应用可能是最佳解决方案。但如果你已经可以为目标平台进行开发，那么制作原生应用可能会更有优势。然而，这会略微关闭制作可在其他平台上运行的应用的大门，除却你使用如 `Marmalade` 等跨平台应用框架，否则同一个应用需要为所有平台重新创建。
 
 创建移动 Web 应用可以在转换为原生之前，在所有平台上测试或原型化你的应用程序的一种成本效益方法。通过分析，你可以看到应该针对哪些平台使用原生应用。通过用户研究，你可以看到创建一个具有平台特定功能的原生应用是否对你的用户有利。
 
@@ -437,9 +471,6 @@ messageInst.sendSMS();
 
 然而，还有第三种选择。多种手机 Web 应用程序框架（如 `PhoneGap`、`Appcelerator` 和 `Rhomobile`）允许你使用 `XHTML/JavaScript` 和 `CSS` 构建应用程序，但利用可能仅适用于原生 Web 应用的 `APIs`。
 
-
-
-
 这些框架为你提供了一个视图，让你可以在其中开发应用，并通过使用 JavaScript 作为两者之间的桥梁，提供指向移动端 API 的代理。图 2-6 显示了多种手机 Web 应用程序框架的结构。
 
 ![Image 24](img/index-34_1.jpg)
@@ -448,7 +479,7 @@ messageInst.sendSMS();
 
 **图 2-6.** 多种手机 Web 应用程序框架的结构
 
-我们知道在某个时刻，移动 Web 浏览器将提供与第三方应用程序交互，并利用移动设备的硬件（如 CPU/GPU 和摄像头）。因此，继续为浏览器开发是有意义的。然而，手机 Web 应用程序框架有助于将原生应用程序可用的 API 和服务引入 Web 应用程序。
+我们知道在某个时刻，移动 Web 浏览器将提供与第三方应用程交互，并利用移动设备的硬件（如 CPU/GPU 和摄像头）。因此，继续为浏览器开发是有意义的。然而，手机 Web 应用程序框架有助于将原生应用程序可用的 API 和服务引入 Web 应用程序。
 
 通过这种方式构建应用程序，你可以实现一次编写并部署一个功能有限的移动 Web 应用。然后，你可以在手机 Web 应用程序框架内通过对象/功能检测，将该应用作为原生应用进行渐进增强。这让你兼得两者的优势。
 
@@ -515,7 +546,7 @@ messageInst.sendSMS();
 <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=no; target-densitydpi=device-dpi;"/>
 ```
 
-第一个 `meta` 标签指定了文档内使用的字符集。这通常应该是 `UTF-8`，它将涵盖大多数语言字符。
+第一个 `meta` 标�标签指定了文档内使用的字符集。这通常应该是 `UTF-8`，它将涵盖大多数语言字符。
 
 第二个 `meta` 标签专门用于控制移动网站上的布局或视口（viewport）。通过这个 `meta` 标签，我们可以使用 `width` 属性将页面宽度设置为视口（浏览器屏幕的可视区域）相同、更小或更大。
 
@@ -552,13 +583,21 @@ messageInst.sendSMS();
 当 AVD 窗口出现时，点击右侧的 `new`。在创建新的 Android 虚拟设备 (AVD) 对框中，使用以下参数：
 
 - `Name`: `My-Test`
+
 - `Target`: `Android 4.0 --- API Level 14`
+
 - `SD Card`: `Size: 100 MiB`
+
 - `Snapshot`: `Enabled`
+
 - `Skin`: `Built-in: WVGA800`
+
 - `Hardware`:
+
     - `Abstracted LCD density`: `240`
+
     - `Max VM application heap size`: `24`
+
     - `Device ram size`: `1024`
 
 在设置所有选项后，点击 `Create AVD` 按钮。你的新 AVD 将出现在 Android 设备管理器中。选择它并点击 `Start`。
@@ -566,9 +605,6 @@ messageInst.sendSMS();
 AVD 以启动和运行极其缓慢而闻名。虽然有替代方案，但本书将不会涵盖它们。几分钟后，你应该有一个运行中的虚拟 Android 设备。
 
 点击互联网图标启动浏览器。
-
-
-
 
 现在你需要将应用程序部署到你的 Web 服务器上。在第 3 章中，你将了解到更多关于自动部署应用程序的知识，但现在你可以使用 Aptana 将项目导出到相应的文件夹。进入 `File  Export`。在导出对话框中，选择 `General  File System` 并点击 `Next`。
 
@@ -604,7 +640,7 @@ AVD 以启动和运行极其缓慢而闻名。虽然有替代方案，但本书�
 
 如图 3-1 所示，iPhone 和 Android 的两个应用看起来非常相似。抛开 UI 带来的若干特定平台增强功能不谈，它们实际上是同一个应用程序。
 
-**注意：** 使用诸如 `PhoneGap` 等多手机 Web 应用程序框架构建 Web 应用并将其推向各种应用市场并没有问题。这增加了你应用程序的曝光率，并让用户更容易获取。通过这种方式制作应用程序，当 App Store 的条款和条件发生不利于你的变化时也能为你提供即时的解决方案。
+**注意：** 使用诸如 `PhoneGap` 等多手机 Web 应用程序框架构建 Web 应�并将其推向各种应用市场并没有问题。这增加了你应用程序的曝光率，并让用户更容易获取。通过这种方式制作应用程序，当 App Store 的条款和条件发生不利于你的变化时也能为你提供即时的解决方案。
 
 ![Image 28](img/index-42_1.jpg)
 
@@ -621,8 +657,6 @@ AVD 以启动和运行极其缓慢而闻名。虽然有替代方案，但本书�
 HTML5 相比 HTML4 有了巨大的飞跃。它引入了新的标签，如 `video`、`audio`、`canvas`、`svg`、`article`、`aside`、`details`、`figure`、`figcaption`、`header`、`mark`、`output`、`progress`、`time`、`video` 和 `section`。
 
 本章将深入探讨如何使用这些新特性创建更好的移动 Web 应用。你还将学习新的 API，如 `geolocation`、`storage`、`web workers` 和 `web sockets`。
-
-
 
 正如你从列表 3-2 中看到的，这种标记并没有真正的明显结构。有很多带有关联类（classes）的 `div` 标签；然而，创建这样一个像这样的文档并没有真正的标准。
 
@@ -721,12 +755,19 @@ HTML5 相比 HTML4 有了巨大的飞跃。它引入了新的标签，如 `video
 **表格 3-1。** *HTML5 音频属性*
 
 | 属性 | 值 | 描述 |
+
 | :--- | :--- | :--- |
-| src | — | 用于指定单个音频文件，而不是使用 `<source />` 标签。 |
+
+| src | — | 用于指指定单个音频文件，而不是使用 `<source />` 标签。 |
+
 | preload | none \| metadata \| auto | 用于指定是否预加载音频文件。建议设置为 none 或 metadata。这将防止浏览器在用户不知情的情况下下载整个音频文件。 |
+
 | autoplay | autoplay | 用于告诉浏览器自动播放音频文件。如果你不想让音频自动播放，请不要添加此元素。 |
+
 | loop | loop | 用于指定音频是否连续循环。此属性不接受数字。如果你想让音频循环特定次数，可以使用 JavaScript 音频 API 实现。 |
+
 | muted | muted | 将静音音频。注意，在 Android 浏览器中似乎不支持此项。 |
+
 | controls | controls | 用于告诉浏览器是否渲染默认控制控件。如果你为自己的音频播放器制作了 UI，这会非常有用。 |
 
 # 第 3 章：HTML5
@@ -740,17 +781,22 @@ HTML5 相比 HTML4 有了巨大的飞跃。它引入了新的标签，如 `video
 **表格 3-2。** *支持的 HTML5 音频格式*
 
 | 格式 | Mime 类型 | 文件扩展名 |
+
 | :--- | :--- | :--- |
+
 | OGG | audio/ogg | .ogg |
+
 | MP3 | audio/mpeg | .mp3 |
+
 | WAV | audio/wav | .wav |
+
 | 3GP | audio/3gp | .3gp |
+
 | MP4 | audio/m4a | .m4a |
+
 | AAC | audio/aac | .aac |
+
 | WMA | audio/x-msw | .wma |
-
-
-
 
 列表 3-10 显示了如何在 HTML4 中实现相同的功能。
 
@@ -766,6 +812,7 @@ HTML5 相比 HTML4 有了巨大的飞跃。它引入了新的标签，如 `video
 ![Image 33](img/index-54_1.png)
 
 # 第 3 章：HTML5
+
 50
 
 **图 3-6.** *带有 <footer /> 元素的文档结构*
@@ -822,6 +869,7 @@ HTML5 相比 HTML4 有了巨大的飞跃。它引入了新的标签，如 `video
 列表 3-13 显示了如何在 HTML5 中使用 `<hgroup />`，列表 3-14 显示你可能如何在 HTML4 中对标题分组。
 
 # 第 3 章：HTML5
+
 52
 
 **列表 3-13.** *使用 Hgroup 在 HTML5 中定义页头*
@@ -907,6 +955,7 @@ background: yellow;
 ```
 
 # 第 3 章：HTML5
+
 53 到 57
 
 ## Section 元素
@@ -953,10 +1002,6 @@ background: yellow;
 </section>
 ```
 
-
-
-
-
 # HTML5
 
 `<video />` 元素可用于在页面嵌入视频。我将在本章稍后的“使用 HTML5 嵌入视频”部分介绍这一内容。
@@ -968,15 +1013,25 @@ background: yellow;
 **表 3-3.** *HTML5 视频属性*
 
 | 属性 | 值 | 描述 |
+
 | :--- | :--- | :--- |
+
 | `src` | — | 用于指定单个视频文件，而不是使用 `<source />` 标签。 |
+
 | `preload` | `none \| metadata \| auto` | 用于指定是否预加载视频文件。建议将其设置为 `none` 或 `metadata`。这可以防止浏览器在用户不知的情况下下载整个视频文件。 |
+
 | `autoplay` | `autoplay` | 用于告诉浏览器自动播放视频文件。如果你不想让视频自动播放，请不要添加此元素。 |
+
 | `loop` | `loop` | 用于指定视频是否连续循环。此属性不接受数字。如果你想音频循环特定次数，可以使用 JavaScript 视频 API 实现。 |
+
 | `muted` | `muted` | 这将静音音频。注意，这在 Android 浏览器中似乎不受支持。 |
+
 | `controls` | `controls` | 用于告诉浏览器是否渲染默认控件。如果你为自己的视频播放器制作了 UI，这会非常有用。 |
+
 | `height` | `像素单位的高度` | 指定视频元素的初始高度。 |
+
 | `width` | `像素单位的宽度` | 指定视频元素的初始宽度。 |
+
 | `poster` | `海报图 URL` | 这是视频播放前在视频图像 `tag` 标签内使用的图像路径。 |
 
 `<video />` 元素目前还支持大多数流行的视频容器和编码器。表 3-4 显示了 Android 浏览器目前支持的格式和 MIME 类型。如何为这些格式编码将在本章稍后介绍。
@@ -984,12 +1039,19 @@ background: yellow;
 **表 3-4.** *HTML5 视频支持的格式*
 
 | 容器 | 扩展名 | MIME | 备注 |
+
 | :--- | :--- | :--- | :--- |
+
 | MPEG-1 | `.mpg, .mpeg, .mpv` | `video/mpeg` | — |
+
 | MP4 | `.mp4` | `video/mp4` | — |
+
 | OGG | `.ogv, .ogg` | `application/ogg` | — |
+
 | WebM | `.webm` | `video/webm` | 仅在 Android 4 (Ice Cream Sandwich) 中支持 |
+
 | MKV | `.mkv` | `video/x-matroska` | — |
+
 | Windows Media | `.wmv` | `video/x-ms-wmv` | — |
 
 ## 在 HTML5 中处理多媒体
@@ -999,8 +1061,11 @@ background: yellow;
 在为移动网站添加视频时，有几点是你需要考虑的。遗憾的是，这并不是为特定的文件扩展名或格式编码视频音频那么简单。在为 HTML5 编码视频音频时，有四点是你应该考虑的：
 
 - 设备支持的容器
+
 - 设备上支持的编码器和解码器
+
 - 最终视频和音频的质量
+
 - 最终视频和音频的文件大小
 
 为了播放视频，你需要使用目标设备可以理解并播放的编码器对视频音频进行编码。
@@ -1022,8 +1087,11 @@ background: yellow;
 **表 3-5.** *HTML5 建议视频容器和编码器组合*
 
 | 容器 | 编码器 | 音频编码器 | MIME |
+
 | :--- | :--- | :--- | :--- |
+
 | MP4 | H.264 (Baseline) | AAC | `video/mp4` |
+
 | WebM | VP8 | Vorbis | `video/webm` |
 
 Android 文档还根据质量建议了以下分辨率，见表 3-6。
@@ -1031,9 +1099,13 @@ Android 文档还根据质量建议了以下分辨率，见表 3-6。
 **表 3-6.** *HTML5 建议分辨率*
 
 | 质量 | 分辨率 | 每秒帧 (FPS) |
+
 | :--- | :--- | :--- |
+
 | SD (低质量) | 176 × 144px | 12 |
+
 | SD (高质量) | 480 × 360px | 30 |
+
 | HD (并非所有设备) | 1280 × 720px | 30 |
 
 表 3-7 显示了安卓音频容器和编码器。
@@ -1041,8 +1113,11 @@ Android 文档还根据质量建议了以下分辨率，见表 3-6。
 **表 3-7.** *HTML5 建议音频容器和编码器组合*
 
 | 容器 | 编码器 | MIME |
+
 | :--- | :--- | :--- |
+
 | MP3 | MP3 | `audio/mpeg` |
+
 | OGG | Vorbis | `application/ogg` |
 
 支持这些容器和编码器应该能够满足所有 Android 设备，而无需进行大量的编码和测试。
@@ -1054,10 +1129,6 @@ Android 文档还根据质量建议了以下分辨率，见表 3-6。
 ### 托管解决方案
 
 托管解决方案对于按需编码，以及如果你希望将大量网站流量转移到另一个服务器来说是完美的。这些托管解决方案中最简单用的是 `bitsontherun.com`，虽然
-
-
-
-
 
 `encoding.com` 和 `zencoder.com` 提供了更多关于视频编码的控制，如图 3-7 所示。
 
@@ -1142,6 +1213,7 @@ h
 随后你将看到一个与图 3-12 所示类似的“Create new template”（创建新模板）对话框。确保已设置以下设置：
 
 - Name: `HTML5 MP4`
+
 - Format: `MP4 (H.264/AAC)`
 
 点击。
@@ -1151,28 +1223,37 @@ h
 类似于图 3-13 所示的“properties”页面将呈现在你面前。确保设置了以下选项：
 
 - Automate: Automatically apply this template to new videos
-- Target Width: `480`
-- Upscaling: Always build this template, even if the original is smaller
-- Video Quality: Good
-- Audio Quality: Good
-- Watermark: No
 
-点击 `。
+- Target Width: `480`
+
+- Upscaling: Always build this template, even if the original is smaller
+
+- Video Quality: Good
+
+- Audio Quality: Good
+
+- Watermark: No
 
 点击 `Save`（保存）。
 
 你将需要为 `WebM` 重复此过程。在“Create new template”对话框中输入以下信息：
 
 - Name: `HTML5 WebM`
+
 - Format: `WebM (VP8/Vorbis)`
 
 在“properties”页面上输入以下信息：
 
 - Automate: Automatically apply this template to new videos
+
 - Target Width: `480`
+
 - Upscaling: Always build this template, even if the original is smaller
+
 - Video Quality: Good
+
 - Audio Quality: Good
+
 - Watermark: No
 
 点击 `Save`。
@@ -1209,9 +1290,6 @@ Flash 的出现解决了大部分这些问题。通过只需要一个插件就�
 
 后来智能手机的出现让移动端 Flash 变成了一场噩梦。它需要大量的 CPU，这会消耗手机电池。
 
-
-
-
 就像吸血鬼一样。Flash 在几乎任何便携设备上的情况也是如此，它会消耗大量的 CPU 资源，这不仅影响了机器的性能，还会影响由于 CPU 散热和供电带来的电池消耗。时至今日，Flash 在 Mac 上仍然消耗大量的 CPU 资源。
 
 此外，开发者在制作 Flash 内容时，往往并没有考虑手机终端。因此，当你在手机上观看针对桌面设备设计的视频时，你通常会得到一个 500 MB 的高清视频，而该视频并没有针对你的手机进行优化。这对于用户的钱包也有影响，因为每月 500 MB 的流量计划在几分钟内就会被一个视频耗尽。
@@ -1226,22 +1304,30 @@ HTML5 规范的新特性还包括在视频源中支持媒体查询（media queri
 
 **注意：** HTML5 规范中确实存在视频媒体查询，但目前似乎还没有任何浏览器支持它。
 
-在 HTML5 中嵌入视频相对简单。你使用 `video` 标签并指定视频的 `width` 和 `height` 属性。然后，你可以为视频指定 `poster`（海报）帧。封面帧是视频中的单幅静态图像，你可以在用户点击播放按钮之前将其显示给他们。
+在 HTML5 中嵌入视频相对简单。你使用 `video` 标签并指指定视频的 `width` 和 `height` 属性。然后，你可以为视频指定 `poster`（海报）帧。封面帧是视频中的单幅静态图像，你可以在用户点击播放按钮之前将其显示给他们。
 
 在 Aptana 中创建一个名为 `tutorials` 的新文件夹，并在其中创建一个名为 `video` 的文件夹。此文件夹将用于本次练习。在 `video` 文件夹中，创建一个 `media` 文件夹。将你从 Bits on Run 编码并下载的视频和封面图像文件拷贝到 `media` 文件夹，并将其重命名如下：
 
 - `video.webm`
+
 - `video.mp4`
+
 - `poster.jpg`
 
 在 `video` 文件夹中创建一个名为 `index.html` 的新文件。你的文件夹结构应该如下：
 
 - `tutorials`
+
 - `video`
+
 - `media`
+
     - `video.webm`
+
     - `video.mp4`
+
     - `poster.jpg`
+
 - `index.html`
 
 在 Aptana 中打开 `index.html` 并输入列表 3-23 中的 HTML 代码。
@@ -1268,6 +1354,8 @@ HTML5 规范的新特性还包括在视频源中支持媒体查询（media queri
 </html>
 ```
 
+
+
 保存并导出你的视频。在 Android 浏览器中打开该文件。URL 应该是 `http://<你的电脑 IP 地址>/tutorials/video/media/`。你应该看到一个与图 3-17 类似的屏幕。
 
 ![Image 44](img/index-76_1.jpg)
@@ -1283,6 +1371,7 @@ HTML5 规范的新特性还包括在视频源中支持媒体查询（media queri
 为移动 Web 编码音频时适用相同的规则：
 
 - 确保文件大小很小。
+
 - 确保最终音频的质量足以通过耳机和小型扬声器听到。
 
 与视频编码一样，你需要在质量和文件大小之间找到平衡点。与用户必须同时关注质量和文件大小的视频不同，音频用户主要是在听音频，因此音频质量至关重要。这意味着必须更加小心地确保每个轨道都经过转码和压缩。
@@ -1294,8 +1383,11 @@ HTML5 规范的新特性还包括在视频源中支持媒体查询（media queri
 使用 `Audacity` 编码音频是一个非常简单的过程。为了本示例，你需要下载一个未压缩的音频文件，因此前往 SoundCloud (`www.soundcloud.com`)。在 SoundCloud 上搜索你喜欢的任何音乐轨道，并确保如图 3-18 所示选择以下选项：
 
 - 未压缩文件
+
 - 轨道应为：可下载
+
 - 仅搜索 Creative Commons 许可的轨道
+
 - 它们应该是：可商用
 
 ![Image 45](img/index-78_1.jpg)
@@ -1309,13 +1401,12 @@ HTML5 规范的新特性还包括在视频源中支持媒体查询（media queri
 **表 3-8。音频平均下载时间**
 
 | 连接类型 | 平均下载速度 | 平均下载时间（每 MB） |
+
 | :--- | :--- | :--- |
+
 | 3G | 4 Mbps | 2 秒 |
+
 | HSDPA | 1 Mbps | 8 秒 |
-
-
-
-
 
 本书使用的示例轨道是一个 `WAV` 文件，其设置如下：大小 86.1 MB，时长 4:59，平均每分钟 18.75 MB。该轨道在每种格式下的目标文件大小将在 4 到 5 MB 之间。
 
@@ -1326,6 +1417,7 @@ HTML5 规范的新特性还包括在视频源中支持媒体查询（media queri
 ![Image 46](img/index-79_1.jpg)
 
 # 第 3 章：HTML5
+
 75
 
 **图 3-19. Audacity 的警告对话框**
@@ -1335,9 +1427,11 @@ HTML5 规范的新特性还包括在视频源中支持媒体查询（media queri
 你现在可以将音频文件导出为 `OGG Vorbis` 音频文件。转到 `File -> Export`。在格式下，选择“Ogg Vorbis Files”，并点击选择右侧的“Options…”按钮。
 
 ![Image 47](img/index-80_1.jpg)
+
 ![Image 48](img/index-80_2.jpg)
 
 # 第 3 章：HTML5
+
 76
 
 **图 3-20 轨道的波形**
@@ -1351,6 +1445,7 @@ HTML5 规范的新特性还包括在视频源中支持媒体查询（media queri
 ![Image 49](img/index-81_1.jpg)
 
 # 第 3 章：HTML5
+
 77
 
 ## 编码 MP3
@@ -1370,14 +1465,21 @@ HTML5 规范的新特性还包括在视频源中支持媒体查询（media queri
 在 HTML5 中嵌入音频的过程与嵌入视频类似。你使用 `audio` 标签并指定多个源，让浏览器选择正确的源。
 
 # 第 3 章：HTML5
+
 78
 
 在 `tutorials` 文件夹创建一个名为 `audio` 的新文件夹，然后在 `audio` 文件夹中创建一个名为 `media` 的新文件夹，并创建一个名为 `index.html` 的新文件。将转换后的音频文件复制到 `media` 文件夹并将它们重命名为 `audio.ogg` 和 `audio.mpg`。你的你的文件夹结构看起来如下：
+
 - tutorials
+
 - audio
+
     - media
+
         - audio.mp3
+
         - audio.ogg
+
     - index.html
 
 打开 `index.html` 文件并使用列表 3-24 中的代码。
@@ -1406,6 +1508,7 @@ HTML5 规范的新特性还包括在视频源中支持媒体查询（media queri
 ![Image 50](img/index-83_1.jpg)
 
 # 第 3 章：HTML5
+
 79
 
 ```html
@@ -1415,6 +1518,7 @@ HTML5 规范的新特性还包括在视频源中支持媒体查询（media queri
 ![Image 50](img/index-83_1.jpg)
 
 # 第 3 章：HTML5
+
 79
 
 **图 3-23. HTML5 中的音频**
@@ -1426,6 +1530,7 @@ HTML5 规范的新特性还包括在视频源中支持媒体查询（media queri
 ![Image 51](img/index-84_1.jpg)
 
 # 第 3 章：HTML5
+
 80
 
 **图 3-24. 移动端（左）和桌面端（右）表单**
@@ -1435,21 +1540,33 @@ HTML5 规范的新特性还包括在视频源中支持媒体查询（media queri
 根据所需的字段类型和数据，可以使用不同的输入类型。表 3-9 显示 HTML5 字段类型在 Android 浏览器中的支持情况。
 
 | 字段类型 | 支持 |
+
 | :--- | :--- |
+
 | color | no |
+
 | datalist | no |
+
 | date | no |
+
 | datetime | no |
+
 | email | yes |
+
 | number | yes |
+
 | range | no |
+
 | search | no |
+
 | tel | yes |
+
 | url | no |
 
 **表 3-9. Android 浏览器支持的字段类型**
 
 # 第 3 章：HTML5
+
 81
 
 所示，Android 浏览器目前支持的字段类型只有 `email`、`number` 和 `tel`。其他字段类型应该在未来的某个时刻实现。你可以现在实现它们并绕过不支持的问题，但在支持最终到来后可能会遇到问题。
@@ -1488,10 +1605,6 @@ HTML5 规范的新特性还包括在视频源中支持媒体查询（media queri
 </html>
 ```
 
-
-
-
-
 # 第 3 章：HTML5
 
 这是一个标准的 HTML5 表单。你可能会注意到，某些字段上有一个名为 `placeholder` 的属性。`placeholder` 属性允许你为表单输入显示实用的示例文本，帮助用户确定他们需要在表单字段中输入什么。当用户点击以填充表单字段时，`placeholder` 文本将会消失。
@@ -1501,6 +1614,7 @@ HTML5 规范的新特性还包括在视频源中支持媒体查询（media queri
 **图 3-25。** 数字（左）、电话（中）和电子邮件（右）的键盘布局。在你的手机浏览器中加载新网页进行测试。
 
 ## 总结
+
 到此，Android 的 HTML5 学习宣告结束。通过本章，你应该已经获得了许多关于为网页和移动网络编码视频和音频的知识。你现在应该对编码媒体的不同方式有了基本的了解，并且知道你并不需要一台强大的机器来编码媒体，只需要一个快速的互联网连接即可。
 
 本章带你学习了 Android 浏览器目前支持的所有新 HTML5 元素以及如何有效地使用它们。希望这一章能为你书中后续的内容做好准备，因为我们将开始更详细地探索交互性。HTML 本身提供了基础，我们在书中后续将使用 CSS 进行展示，使用 JavaScript 进行交互，并在基础上进行构建。
@@ -1514,36 +1628,47 @@ HTML5 规范的新特性还包括在视频源中支持媒体查询（media queri
 # 第 4 章：启动你的项目
 
 ## 使用 HTML5
+
 HTML 为任何网络项目提供了一个良好的起点。它本质上为你提供了一个骨架，以便你使用 CSS（视觉样式）和 JavaScript（交互性）增强网页。对于书中的三个工作坊（HTML5、CSS 和 JavaScript），你将逐步增强一个名为 `MoMemo` 的移动 Web 应用。`MoMemo` 将利用以下 HTML/HTML5 特性：
 
 * Canvas
+
 * JavaScript APIs
+
 * CSS3 过渡
+
 * 媒体查询
+
 * HTML5 视频/音频
+
 * 离线存储
 
 在本章中，你将学习三种不同的网页布局方法，取决于你正在制作的移动 Web 应用类型。你还将开始在 HTML 中为 `MoMemo` 应用创建框架。在此之前，你将学习如何将移动应用从想法、需求收集、信息架构（IA），最后在 HTML5 中进行编码。你还将简要介绍应用程序缓存，该功能允许你指定哪些元素缓存在用户的移动设备上，以及在没有网络连接时如何退回到不应缓存的文件。
 
 ## 分页策略
+
 在 HTML 中创建页面的三种主要方法：
 
 * 标准 HTML：创建标准的 HTML 页面并链接到它们
+
 * 单页 Ajax：使用单个页面并使用 AJAX 加载后续页面
+
 * 单页容器：使用单个页面作为容器，将多个页面放在 `<div />` 容器中，并使用 JavaScript 在之间切换
 
 每种方法都有其优缺点。例如，一个具有许多页面和资源（图像、CSS、JavaScript）的移动 Web 应用在使用单页容器方法时可能会遇到性能问题，因为所有资源和页面都会在首次加载页面时被加载。因此，Ajax 或标准 HTML 方法可能提供更好的性能和加载速度。
 
-对于小型应用程序和原型设计，单页容器方法可能是首选。CSS3/JavaScript 可以处理页面之间的动画过渡，而且由于资源数量可能很小，它对页面加载不会产生很大影响。这可能是更优的，因为终端用户不需要等待通过 Ajax 或标准 HTML 方法加载页面。这创建了更像 App 的体验。
+对于小型应用程序和原型设计，单页容器方法可能是首选。CSS3/JavaScript 可以处理页面之间的动画过渡，而且由于资源数量可能很小，它对页面加载不会产生很大影响。这可能是更优的，因为终端用户不需要等待通过 Ajax 或标标准 HTML 方法加载页面。这创建了更像 App 的体验。
 
 对于更简单的应用程序，标准 HTML 方法可能是首选。然而，页面之间的动画可能变得不切实际，而且在页面间进行导航时，页面和资源的加载会有短暂的等待时间。
 
 **注意：** 为了完成本章的练习，请在你的 Aptana 项目中创建一个名为 `exercises` 的新文件夹，并在其中创建一个名为 `chapter4` 的文件夹。我们将在示例中将其称为“章节文件夹”。
 
 ### 使用标准 HTML 进行分页
+
 创建标准 HTML 分页的方法非常简单。首先，在项目中的 `chapter folder` 中创建一个名为 `standard` 的新文件夹，并创建两个基础的移动友好网页，命名为 `index.html` 和 `index2.html`，如列表 4-1 所示。
 
 **列表 4-1。** 基础 HTML 移动网页
+
 ```html
 <!DOCTYPE html>
 <html lang="en-GB" dir="ltr">
@@ -1556,26 +1681,33 @@ HTML 为任何网络项目提供了一个良好的起点。它本质上为你提
 </body>
 </html>
 ```
+
 这里没什么特别的，正如第 1 章解释的那样，我们设置了 `charset` 和 `viewport` 标记以确保页面能够相应比例并防止用户用手指缩放。我们还为了起见设置了页面标题。在 `index.html` 的主体创建一个链接和标题，如列表 4-2 所示。
 
 **列表 4-2。** 在 index.html 中创建链接
+
 ```html
 <h1>Page 1</h1>
 <a href="./index2.html">Page 2</a>
 ```
+
 在 `index2.html` 的主体中创建另一个返回上一个页面的链接，如列表 4-3 所示。
 
 **列表 4-3。** 在 index2.html 中返回 index.html
+
 ```html
 <h1>Page 2</h1>
 <a href="./index.html">Page 1</a>
 ```
+
 在你的手机浏览器中加载并测试。就是如此。链接到其他 HTML 页面并没有特别之处。
 
 ### 使用单页 Ajax 进行分页
+
 使用单页 Ajax 创建移动应用需要更多的思考和努力。Ajax 允许从用户所在的当前网页之外的文件或页面中动态拉取内容。这可以使应用程序更具扩展性，因为你不需要将多个页面放在单个页面中。相反，你可以在需要时拉取它们。这样做的好处是当用户移动页面时可以使用 CSS3 应用动画。列表 4-4 显示了通过 Ajax 加载 HTML 页面的基础知识。
 
 **列表 4-4。** 使用 Ajax 加载 HTML
+
 ```html
 <div id="container">
 <div id="card">
@@ -1596,10 +1728,6 @@ function bindLinks(){
 * 这将在查询选择器的上下文中调用 forEach。
 * 如果你熟悉 jQuery，它等同于
 ```
-
-
-
-
 
 ```javascript
 $('#container a[data-method="xhr"]).each(...);
@@ -1646,9 +1774,9 @@ function loadCard(path){
    * 创建一个 GET 请求（可以是 POST 或 GET）。POST
    * 请求用于发送大量数据；GET 请求应被
    * 用于使用基于参数的 URI 从服务器获取信息。
-   * 第三个参数将请求设置为异步。
+   * 第三个参数将请请求设置为异步。
    * 将其设置为 false 或不包含它将阻塞 UI 
-   * 并阻止用户与应用程序交互。这不会 
+   * 并阻止用户与应用程交互。这不会 
    * 立即发送请求。你必须调用 xhr.send()。
    */
   xhr.open("GET", path, true);
@@ -1657,7 +1785,7 @@ function loadCard(path){
    * 状态可以通过 this.readyState 确定。在
    * 此实例中，它是 event。不同的状态为：
    *
-   * DONE – 请求完成
+   * DONE – 请请求完成
    * LOADING – 请求加载中
    * HEADERS_RECIEVED – 头部已加载但请求体未加载
    * OPENED – open 方法已被调用
@@ -1799,7 +1927,7 @@ bindLinks();
 </div>
 ```
 
-这创建了一个容器来存放卡片。在容器内部，有一个包含标题和链接的基础卡片。HTML5 允许我们使用数据属性在标记中设置自定义属性。
+这创建了一个容器来存放卡片。在容器内部，有一个包含标题和链接的基础卡片。HTML5 允许我们使用数据属性在标记中设置自定属性。
 
 接下来，你必须使用下面的代码将所有链接绑定到 JavaScript 方法：
 
@@ -1816,14 +1944,14 @@ function bindLinks(){
 }
 ```
 
-
-
-
 在查询返回的 `NodeList` 上下文中，使用对象的 `forEach` 方法。`forEach` 方法接受一个回调函数作为第一个参数。
 
 该回调函数还接受以下三个参数：
+
 - 当前正在迭代的元素
+
 - 当前元素在数组中的索引
+
 - 实际数组
 
 你只需要当前元素，以便在回调函数中使用它；该元素被命名为 `el`。
@@ -1861,10 +1989,15 @@ function loadCard(path){
 ```
 
 该函数的第一行实例化了一个新的 `XMLHttpRequest` (`xhr`) 对象。第二行设置了 `xhr` 请求。`open` 方法接受以下五个参数：
+
 - 方法：`GET`、`POST`
+
 - URL
+
 - 异步：`true`、`false`（默认为 `true`，并在调用 `send` 方法后将继续运行 JavaScript。如果设置为 `false`，它将在运行 `send` 方法后冻结浏览器直到请求完成）
+
 - 用户（如果请求受 HTTP 用户名和密码保护，你可以在此处输入用户名）
+
 - 密码（如果请求受 HTTP 用户名和密码保护，你可以在此处输入密码）
 
 调用 `open` 不会导致 Ajax 请求。第四行设置了 `onreadystatechange` 事件的处理器。
@@ -1887,7 +2020,7 @@ function loadCard(path){
 */
 body, html, #deck {
   height: 100%; /** 将文档高度设置为视口的 100% **/
-  overflow: hidden; **/ 设置使所有流到外部的内容被隐藏 **/
+  overflow: hidden; /** 设置使所有流到外部的内容被隐藏 **/
   margin: 0; /** body 的外边距通常不为 0，因此这移除了任何外边距 **/
   position: realtive; /** 卡片将相对于 deck 定位 **/
 }
@@ -1896,7 +2029,7 @@ body, html, #deck {
 * deck 内部的卡片样式
 */
 #deck .card {
-  overflow: auto; /** 如果内容过多，这允许用户进行滚动 **/
+  overflow: auto; /** 如果内容过多，这允用户进行滚动 **/
   height: 100%; /** 将卡片高度设置为 100% **/
   position: absolute; /** 允许卡片进行绝对定位 **/
   left: -100%; /** 将默认位置设置为屏幕外（隐藏） **/
@@ -1910,9 +2043,6 @@ body, html, #deck {
   left: 0; /** 将卡片移回视图 **/
 }
 ```
-
-
-
 
 如你从这段代码中看到的，卡片的 id 被设置为 `card-index`。
 
@@ -2015,25 +2145,34 @@ document.querySelectorAll(to)[0].classList.add('active');
 下一步是定义有助于满足应用程序主要目标的必须具备的功能。MoSCoW 法（必须有、应该有、可以有、不包含）是定义应用功能和特性良好方法。
 
 - **必须有（Must have）**：
+
     - 允许用户从个人列表中快速添加和删除电影
+
     - 允许用户查看列表中的电影
+
 - **应该有（Should have）**：
-    - 在用户输入时提供电影建议列表
+
+    - 在用户输入时提供电影建议列列表
+
     - 显示电影信息，包括简介、发行日期、演员表
+
 - **可以有（Could have）**：
+
     - 允许用户查看电影预告片
+
     - 允许用户播放电影音频片段
+
     - 允许用户将添加到列表的项目分享到社交网络
+
     - 在查看备忘录时显示用户最近的电影院地图
+
 - **不包含（Won’t have）**：
+
     - 在电影上映时向用户发送通知
+
     - 允许用户在观看后对电影评分
+
     - 允许用户邀请其他用户去电影院看电影
-
-
-
-
-
 
 104
 
@@ -2185,16 +2324,13 @@ MoMemo 应用程序的 UI 围绕屏幕顶部的搜索栏。图 4-5 和图 4-6 �
 
 电影搜索与添加
 
-
-
-
-
 随着电影列表（Movie List）功能的实现，现在是时候处理搜索和添加电影的任务了。可以通过两种方式之一完成。
 
 *   用户搜索电影并显示出一个列表。用户从该列表中点击电影，这将他们带到电影信息（Movie Info）屏幕。从该屏幕，用户可以将电影添加到列表中并返回到电影列表。
+
 *   第二种方案是向用户提供建议，允许他们点击适合自己的建议，并点击添加按钮。用户可以在稍后的某天查看电影信息。
 
-这两种方案都没有错，但最优方案仍然取决于用户搜索电影时所处的场景。为了回答这个问题，你需要重新参考项目的 MoSCoW 需求。其中一个必须有（must-have）的需求是“允许用户快速地向其个人列表中添加和删除电影”。用户很可能会打开应用程序、搜索电影、添加它、关闭应用程序，并在稍后更详细地查看电影列表。根据此，图 4-9 和图 4-10 显示了平板电脑和手机上的搜索功能样式。
+这两种方案都没有错，但最优方案仍然取决于用户搜索电影时所处的场景。为了回答这个问题，你需要重新参考项目的 MoSCoW 需求。其中一个必须有（must-have）的需求是“允许用户快速地向其个人列表中添加和删除电影”。用户很可能会打开应用程序、搜索电影、添加它、关闭应用程序，并在稍后更详绒地查看电影列表。根据此，图 4-9 和图 4-10 显示了平板电脑和手机上的搜索功能样式。
 
 ![Image 61](img/index-114_1.png)
 
@@ -2215,6 +2351,7 @@ MoMemo 应用程序最后部分是电影信息部分。它包含几个子功能�
 为了解决这个问题，你可以将所有内容放在同一个视图中，但在竖屏设备上允许用户横向滚动内容以利用垂直空间，并在横屏下正常滚动。图 4-11 和图 4-12 显示了应该如何呈现这些。
 
 ![Image 63](img/index-116_1.jpg)
+
 ![Image 64](img/index-116_2.jpg)
 
 **图 4-11.** 竖屏手机设备上的电影信息
@@ -2249,7 +2386,7 @@ MoMemo 应用程序最后部分是电影信息部分。它包含几个子功能�
 </section>
 ```
 
-列表 4-16 显示了演员表块。根据设计，演员列表在块块内应该是滚动的；然而，头部应该始终保持在顶部。此块还显示了列表将标准化，以减少 CSS 中的冗余。
+列表 4-16 显示了演员表块。根据设计，演员列表在块块内应该是滚动的；然而，头部应该始保持在顶部。此块还显示了列表将标准化，以减少 CSS 中的冗余。
 
 **列表 4-16.** 演员表块
 
@@ -2332,9 +2469,6 @@ MoMemo 应用程序最后部分是电影信息部分。它包含几个子功能�
 
 通过本章，你应该已经了如何在移动 Web 应用中管理分页，以及根据项目需求选择合适的分页策略。你应该还理解如何开始构建应用程序——从想法到需求，从信息架构/线框到编写 HTML 基础代码，以及设备的方向和屏幕尺寸如何影响你对应用程序的设计。
 
-
-
-
 在第 5 章中，你将接下来学习 CSS 如何改变你对移动 Web 应用的样式、动画处理和性能优化，以及 SASS 如何帮助组织你的 CSS 规则并生成结构化的 CSS 文件。
 
 # 第 5 章：用于移动端的 CSS3
@@ -2350,8 +2484,11 @@ MoMemo 应用程序最后部分是电影信息部分。它包含几个子功能�
 在编写本文时，许多 CSS3 属性（如 `border-radius` 和 `opacity`）已经标准化。然而，浏览器厂商可以开发新 CSS 属性的自己的实现。为了避免语法差异引起的冲突，尚未标准化的新 CSS 属性通常会有一个厂商前缀（vendor prefix）。例如，在 `border-radius` 标准化之前，在 CSS3 中有几种声明方式：
 
 - `-moz-border-radius`
+
 - `-o-border-radius`
+
 - `-webkit-border-radius`
+
 - `border-radius`
 
 如你所见，列表中的最后一个声明是现在的标准版本，而厂商特定的实现带有前缀：基于 Gecko 的浏览器（Firefox）使用 `-moz-`，Opera 使用 `-o-`，基于 Webkit 的浏览器（Chrome、Android 浏览器、Dolphin）使用 `-webkit-`。
@@ -2428,6 +2565,7 @@ border-radius: 50px;
 background-color: blue;
 }
 ```
+
 （注：此处原文代码块似乎遗漏了 transition 属性内容，根据下文推断应包含 transition 声明，此处按原文处理）
 
 为了让过渡生效，你需要动态添加 `second-position` 类。你可以使用 JavaScript。以下脚本将查找类名为 `test` 的元素并添加 `second-position` 类。
@@ -2448,10 +2586,15 @@ document.getElementsByClassName('test')[0].classList.add('second-position');
 **表 5-1.** CSS 过渡属性
 
 | 属性 | 描述 | 值/选项 |
+
 | :--- | :--- | :--- |
+
 | `-moz-|-o-|-webkit-transition-property` | 要制作动画的 CSS 属性 | all, width, height, opacity 等 |
+
 | `-moz-|-o-|-webkit-transition-duration` | 过渡的持续时间 | *X s 秒；默认为 0 |
+
 | `-moz-|-o-|-webkit-transition-timing-function` | 使用的时间函数 | linear, ease, ease-in, ease-out, ease-in-out, cubic-function bezier |
+
 | `-moz-|-o-|-webkit-transition-delay` | 延迟过渡的秒数 | *X s |
 
 例如，你可能在颜色过渡开始五秒后开始过渡左位置，并平滑淡出。在这种情况下，你将使用以下代码。
@@ -2478,10 +2621,7 @@ transition: left 5s ease-out 5s, background-color 5s ease 0s;
 
 有时，你可能对动画有更多的控制需求。例如，
 
-
-
-
-如果你可以从一个位置移动到另一个位置，同时在动画的特定点更改某些 CSS 属性，那不是很好吗？这被称为关键帧（keyframing）。如果你有 Flash 动画经验，你会对它更熟悉，即为在 Flash 时间轴上对对象进行重大更改，并在它们之间创建补间动画（tweens）。现在 CSS 中也支持关键帧。一如既往，在编写时这些属性是特定厂商的，因此请使用所有可用的厂商前缀以确保兼容性。在演示中，你将让屏幕上的圆形移动并让它跳动。
+如果你可以从一个位置移动到另一个位置，同时在动画的特定点更改某些 CSS 属性，那不是很好吗？这被称为关键帧（keyframing）。如果你有 Flash 动画经验，你会对它更熟悉，即为在 Flash 时间轴上对对象进行重大更改，并在它们之间创建补间动画（tweens）。现在 CSS 中也支持关键帧。一如既往，在编写时这些属性是特定厂商的，因此请使用所有可用的厂商前缀以确保兼容性。在演示中，你将让屏上的圆形移动并让它跳动。
 
 在深入创建跳动球动画之前，请看图 5-3 所示的预期动画。
 
@@ -2543,13 +2683,21 @@ animation: bouncyball 2s ease-in-out;
 **表 5-2.** *CSS 动画属性*
 
 | 属性 | 说明 | 数值/选项 |
+
 | :--- | :--- | :--- |
+
 | `[-moz-|-webkit-]animation` | 应用于元素的动画名称 | name |
+
 | `[-moz-|-webkit-]animation` | 动画的持续时间 *X* 秒 | duration |
+
 | `[-moz-|-webkit-]animation` | 使用的时间函数；linear, ease, ease-in, ease-out, ease-in-out, cubic-bezier | timing-function (默认为 ease) |
+
 | `[-moz-|-webkit-]animation` | 转换延迟的秒数 *X* | delay |
+
 | `[-moz-|-webkit-]animation` | 动画重复的次数；默认为 1 | iteration-count (整数) |
+
 | `[-moz-|-webkit-]animation` | 告诉动画是正常、交替还是不在交替周期中反向播放动画；例如，如果你指定 animation-iteration-count 为 2，则动画将在第二次迭代时反向播放 | direction |
+
 | `[-moz-|-webkit-]animation` | 指定正在运行或暂停的动画是否正在播放；可以使用 JavaScript 修改 | play-state |
 
 当你在设备上加载动画时，它应该会自动播放。这并不是一个非常流畅的跳动球，但这仅仅是为了证明 CSS 是一个非常强大的动画工具，只需少少努力。你还可以使用 `JavaScript` 动态编写 CSS 动画。对于更复杂的动画，还有 HTML5 Canvas。
@@ -2561,8 +2709,6 @@ animation: bouncyball 2s ease-in-out;
 你还将学习如何使用几种新的边框框样式元素，例如 `border-radius`（它允许你在不需要额外标记或 JavaScript 的情况下为元素创建圆角框）、`box-shadow` 和 `border-image`。
 
 你还将学习如何创建 CSS 渐变...（注：原文此处似乎不完整，已按样翻译）
-
-
 
 Android 浏览器在编写此时，仅支持 `TTF` 和 `SVG` 字体，这是目前两种最大的且未压缩的字体格式。其他格式包括 `EOT` 和 `WOFF`。在声明 `@font-face` 时，包含所有字体格式以支持其他浏览器，并且当 Android 浏览器开始支持其他格式时，它们可以在无需更改代码的情况下加载。顺序应该按大小喜好排列（最小在前），因为 Android 浏览器将选择第一个可用的格式使用。万一 Android 设备已经包含了你想在设备上使用的字体，你可以：
 
@@ -2662,21 +2808,21 @@ h1 {
 
 ## 选择器
 
-选择器允许你使用 CSS 对 DOM 元素应用样式。通常有两种类型的选择器：普通的 CSS 类、、元素和 ID 选择器，例如 `.elementclass`、`#elementid` 和 `element`。还有伪类器，例如 `:link`、`:visited`、`:hover` 和 `:active`。
+
+
+# 选择器
+
+选择器允许你使用 CSS 对 DOM 元素应用样式。通常有两种类型的选择器：普通的 CSS 类、元素和 ID 选择器，例如 `.elementclass`、`#elementid` 和 `element`。还有伪类选择器，例如 `:link`、`:visited`、`:hover` 和 `:active`。
 
 CSS3 引入了几个新选择器，允许你根据属性值、输入状态以及元素在 DOM 中的位置来选择元素。
 
-### 有用的表单选择器
+## 有用的表单选择器
 
 表单选择器将允许你根据状态或类型对表单输入应用样式。在 CSS3 之前，你需要手动为文本、复选框、单选按钮和提交字段以及按钮分配类，因为没有明确的方法为这些字段应用样式。这是因为它们都是 `<input />` 元素，所以任何为输入元素创建全局样式的尝试都会让所有类型的字段样式完全相同。
 
 有了 CSS3，你现在可以使用新的属性选择器对特定的输入类型应用样式。表 5-3 给出了属性选择器的格式。
 
-# 第 5 章：用于移动端的 CSS3
-
-133
-
-**表 5-3.** 属性选择器
+### 表 5-3. 属性选择器
 
 | 选择器 | 描述 |
 | :--- | :--- |
@@ -2684,10 +2830,6 @@ CSS3 引入了几个新选择器，允许你根据属性值、输入状态以及
 | `element[attribute*="value"]` | 匹配属性包含 value 的元素并应用样式。 |
 | `element[attribute^="value"]` | 匹配属性以 value 开头的元素并应用样式。 |
 | `element[attribute$="value"]` | 匹配属性以 value 结尾的元素并应用样式。 |
-
-# 第 5 章：用于移动端的 CSS3
-
-134
 
 ## 替换 JavaScript 的有用选择器
 
@@ -2701,7 +2843,7 @@ ul li:last-child {
 
 你也可以用同样的方法选择任何元素的第 n 个孩子。使用 `:nth-child`、`:nth-last-child`、`:nth-of-type` 和 `:nth-last-of-type`，你可以根据子索引和子类型进行选择，如表 5-5 所示。
 
-**表 5-5.** nth 选择器
+### 表 5-5. nth 选择器
 
 | 选择器 | 描述 |
 | :--- | :--- |
@@ -2710,8 +2852,9 @@ ul li:last-child {
 | `:nth-of-type(index)` | 选择位于父元素指定索引处的同类型元素。 |
 | `:nth-last-of-type(index)` | 选择从父元素末尾开始位于指定索引处的同类型元素。 |
 
+# 第 5 章：用于移动端的 CSS3
 
-
+## 渐变
 
 创建根据屏幕尺寸和方向进行缩放的渐变背景。CSS3 渐变目前是特定厂商的。每个厂商似乎都有自己自己的生成 CSS3 渐变的方法。本节将重点介绍 WebKit 的实现。
 
@@ -2719,9 +2862,9 @@ ul li:last-child {
 
 线性渐变将从屏幕的一侧流向另一侧，而径向渐变将从一个中心点向外散发，如图 5-8 所示。
 
-**图 5-8。** *线性（左）和径向（右）渐变*
+**图 5-8.** 线性（左）和径向（右）渐变
 
-## 线性渐变
+### 线性渐变
 
 线性渐变具有以下语法，必须使用 `background` 属性作为背景应用。
 
@@ -2741,12 +2884,9 @@ ul li:last-child {
 
 ![Image 74](img/index-139_1.jpg)
 
-第 5 章：移动 CSS3
-136
-
 图 5-9 显示了此代码段的结果。
 
-**图 5-9。** *以左下角为起始点的线性渐变*
+**图 5-9.** 以左下角为起始点的线性渐变
 
 你也可以用角度指定渐变的起始点。例如，将起始点设置为 `45deg` 将产生将起始点设置为 `bottom left` 相同的结果。
 
@@ -2766,12 +2906,9 @@ ul li:last-child {
 
 ![Image 75](img/index-140_1.jpg)
 
-第 5 章：移动 CSS3
-137
+**图 5-10.** 使用 CSS3 渐变创建爱尔兰旗
 
-**图 5-10。** *使用 CSS3 渐变创建爱尔兰旗*
-
-CSS3 渐变还支持颜色停止点（color stops）。颜色停止点允许你指定渐变沿渐变线在哪里停止。例如，你可以使用停止点在 CSS3 中不使用任何渐变就创建一个真实的爱尔兰旗。为了实现这一点，你需要指定绿色在元素的 `33%`（三分之一）处停止，然后白色从 `33%` 处开始并在 `33%` 处停止。这将在绿色和白色之间创建一条立即的颜色线，而不是渐变。从这里开始，你将使用另一种白色并指定在屏幕的 `66%` 处停止；最后是橙色，它将在 `666%` 处停止，创建另一条颜色线。
+CSS3 渐变还支持颜色停止点（color stops）。颜色停止点允许你指定渐变沿渐变线在哪里停止。例如，你可以使用停止点在 CSS3 中不使用任何渐变就创建一个真实的爱尔兰旗。为了实现这一点，你需要指定绿色在元素的 `33%`（三分之一）处停止，然后白色从 `33%` 处开始并在 `33%` 处停止。这将在绿色和白色之间创建一条立即的颜色线，而不是渐变。从这里开始，你将使用另一种白色并指定在屏幕的 `66%` 处停止；最后是橙色，它将在 `66%` 处停止，创建另一条颜色线。
 
 代码看起来类似于下面，你可以在图 5-11 中看到结果。
 
@@ -2783,18 +2920,15 @@ CSS3 渐变还支持颜色停止点（color stops）。颜色停止点允许你�
 
 ![Image 76](img/index-141_1.png)
 
-第 5 章：移动 CSS3
-138
+**图 5-11.** 使用 CSS3 渐变颜色停止点创建爱尔兰旗
 
-**图 5-11。** *使用 CSS3 渐变颜色停止点创建爱尔兰旗*
-
-## 径向渐变
+### 径向渐变
 
 径向渐变比线性渐变稍微复杂。你可以指定渐变的位置从哪里开始以及它的形状。径向渐变具有以下语法。
 
 ```css
 .box {
-  background: -webkit-radial-gradient(center, [circle|elipse] [closest-side|closest-corner|farthest-side|farthest-corner|contain|cover], start-color, stop-color);
+  background: -webkit-radial-gradient(center, [circle|ellipse] [closest-side|closest-corner|farthest-side|farthest-corner|contain|cover], start-color, stop-color);
 }
 ```
 
@@ -2811,10 +2945,7 @@ CSS3 渐变还支持颜色停止点（color stops）。颜色停止点允许你�
 ![Image 77](img/index-142_1.jpg)
 ![Image 78](img/index-142_2.jpg)
 
-第 5 章：移动 CSS3
-139
-
-**图 5-12。** *带有径向渐变的日本旗*
+**图 5-12.** 带有径向渐变的日本旗
 
 你可以使用线性渐变示例中相同的颜色停止技术来移除径向渐变上的渐变并创建一个圆圆。你可以使用以下代码来实现这一点，图 5-13 显示了结果。
 
@@ -2824,18 +2955,15 @@ CSS3 渐变还支持颜色停止点（color stops）。颜色停止点允许你�
 }
 ```
 
-**图 5-13。** *移除了径向渐变的日本旗*
+**图 5-13.** 移除了径向渐变的日本旗
 
-第 5 章：移动 CSS3
-140
+## 框
 
-## 框 (Borders)
+在 CSS3 中，你现在可以指定圆角的位置从哪里开始以及它的形状。
 
-在 CSS3，你现在可以指定圆角的位置从哪里开始以及它的形状。
+### 圆角
 
-### 圆角 (border-radius)
-
-在 CSS3 中，你可以使用 `border-radius` 和 `box-shadow` 来应用新的框样式。`border-radius` 允许你创建圆角。`border-radius` 允许你创建圆角。`border-radius` 允许你创建圆角。`border-radius` 允许你创建圆角。`border-radius` 允许你创建圆角。`border-radius` 允许你创建圆角。`border-radius` 允许你创建圆角。`border-radius` 允许你创建圆角。`border-radius` 允许你创建圆角。`border-radius` 允许你创建圆角。`border-radius` 允许你创建圆角。`border-radius` 允许你创建圆角。`border-radius` 允许你创建圆角。`border-radius` 允许你创建圆角。`border-radius` 允许你创建圆角。`border-radius` 允许你创建圆角。`border-radius` 允许你创建圆角。`border-radius` 允许你创建圆角。`border-radius` 允许你创建圆角。`border-radius` 允许你创建圆角。`border-radius` 允许你创建圆角。`border-radius` 允许你创建圆角。`border-radius` 允许你创建圆角。`border-radius` 允许你创建圆角。`border-radius` 允许你创建圆角。`border-radius` 允许你创建圆角。`border-radius` 允许你创建圆角。`border-radius` 允许你创建圆角。`border-radius` 允许你创建圆角。`border-radius` 允许你创建圆角。`border-radius` 允许你创建圆角。`border-radius` 允许你创建圆角。`border-radius` 允许你创建圆角。`border-radius` 允许你创建圆角。`border-radius` 允许你创建圆角。`border-radius` 允许你创建圆角。`border-radius` 允许你创建圆角。`border-radius` 允许你创建圆角。`border-radius` 允许你创建圆角。`border-radius` 允许你创建圆角。`border-radius` 允许你创建圆角。`border-radius` 允许你创建圆角。`border-radius` 允许你创建圆角。`border-radius` 允许你创建圆角。`border-radius` 允许你创建圆角。`border-radius` 允许你创建圆角。`border-radius` 允许你创建圆角。`border-radius` 允许你创建圆角。`border-radius` 允许你创建圆角。`border-radius` 允许你创建圆角。`border-radius` 允许你创建圆角。`border-radius` 允许你创建圆角。`border-radius` 允许你创建圆角。`border-radius` 允许你创建圆角。`border-radius` 允许你创建圆角。`border-radius` 允许你创建圆角。`border-radius` 允许你创建圆角。`border-radius` 允许你创建圆角。`border-radius` 允许你创建圆角。`border-radius` 允许你创建圆角。`border-radius` 允许你创建圆角。`border-radius` 允许你创建圆角。`border-radius` 允许你创建圆角。`border-radius` 允许你创建圆角。`border-radius` 允许你创建圆角。`border-radius` 允许你创建圆角。`border-radius` 允许你创建圆角。`border-radius` 允许你创建圆角。`border-radius` 允许你创建圆角。`border-radius` 允许你创建圆角。`border-radius` 允许你创建圆角。`border-radius` 允许你创建圆角。`border-radius` 允许你创建圆角。`border-radius` 允许你创建圆角。`border-radius` 允许你创建圆角。`border-radius` 允许你创建圆角。`border-radius` 允许你创建圆角。`border-radius` 允许你创建圆角。`border-radius` 允许你创建圆角。`border-radius` 允许你创建圆角。`border-radius` 允许你创建圆角。`border-radius` 允许你创建圆角。`border-radius` 允许你创建圆角。`border-radius` 允许你创建圆角。`border-radius` 允许你创建圆角。`border-radius` 允许你创建圆角。`border-radius` 允许你创建圆角。`border-radius` 允许你创建圆角。`border-radius` 允许你创建圆角。`border-radius` 允许你创建圆角。`border-radius` 允许你创建圆角。`border-radius` 允许你创建圆角。`border-radius` 允许你创建圆角。`border-radius` 允许你创建圆角。`border-radius` 允许你创建圆角。`border-radius` 允许你创建圆角。`border-radius` 允许你创建圆角。`border-radius` 允许你创建圆角。`border-radius` 允许你创建圆角。`border-radius` 允许你创建圆角。`border-radius` 允许你创建圆角。`border-radius` 允许你创建圆角。`border-radius` 允许你创建圆角。`border-radius` 允许你创建圆角。`border-radius` 允许你创建圆角。`border-radius` 允许你创建圆角。`border-radius` 允许你创建圆角。`border-radius` 允许你创建圆角。`border-radius` 允许你创建圆角。`border-radius` 允许你创建圆角。`border-radius` 允许你创建圆角。`border-radius` 允许你创建圆角。`border-radius` 允许你创建圆角。`border-radius` 允许你创建圆角。`border-radius` 允许你创建圆角。`border-radius` 允许你创建圆角。`border-radius` 允许你创建圆角。`border-radius` 允许你创建圆角。`border-radius` 允许你创建圆角。`border-radius` 允许你创建圆角。`border-radius` 允许你创建圆角。`border-radius` 允许你创建圆角。`border-radius` 允许你创建圆角。`border-radius` 允许你创建圆角。`border-radius` 允许你创建圆角。`border-radius` 允许你创建圆角。`border-radius` 允许你创建圆角。`border-radius` 允许你创建圆角。`border-radius` 允许你创建圆角。`border-radius` 允许你创建圆角。`border-radius` 允许你创建圆角。`border-radius` 允许你创建圆角。`border-radius` 允许你创建圆角。`border-radius` 允许你创建圆角。`border-radius` 允许你创建圆角。`border-radius` 允许你创建圆角。`border-radius` 允许你创建圆角。`border-radius` 允许你创建圆角。`border-radius` 允许你创建圆角。`border-radius` 允许你创建圆角。`border-radius` 允许你创建圆角。`border-radius` 允许你创建圆角。`border-radius` 允许你创建圆角。`border-radius` 允许你创建圆角。`border-radius` 允许你创建圆角。`border-radius` 允许你创建圆角。`border-radius` 允许你创建圆角。`border-radius` 允许你创建圆角。`border-radius` 允许你创建圆角。`border-radius` 允许你创建圆角。`border-radius` 允许你创建圆角。`border-radius` 允许你创建圆角。`border-radius` 允许你创建圆角。`border-radius` 允许你创建圆角。`border-radius` 允许你创建圆角。`border-radius` 允许你创建圆角。`border-radius` 允许你创建圆角。`border-radius` 允许你创建圆角。`border-radius` 允许你创建圆角。`border-radius` 允许你创建圆角。`border-radius` 允许你创建圆角。`border-radius` 允许你 圆角。`border-radius` 允许你 圆 。`border-radius` 允许你 圆 。`border-radius` 允许  圆 。`---radius    9 圆。``-border-radius 允许   圆 。`-border-radiusradius   圆 。`-border-radius 允许   圆 。。`-border-radius 允许   圆 。``-border-radius 允许   圆 。`-border-radiusradius   圆  。`---radius 允许     。`---radiusradius     。``-border-radius    圆 。`----radius 允许    。``---radius     。。`---radius     。` 使用 `border-radius: 10px`。以下代码将产生类似效果：
+在 CSS3 中，你可以使用 `border-radius` 和 `box-shadow` 来应用新的框样式。`border-radius` 允许你创建圆角。使用 `border-radius: 10px`。以下代码将产生类似效果：
 
 ```css
 .box {
@@ -2845,12 +2973,9 @@ CSS3 渐变还支持颜色停止点（color stops）。颜色停止点允许你�
 
 ![Image 79](img/index-144_png)
 
-第 5 章：移动 CSS3
-141
+**图 5-14.** 圆角
 
-**图 5-14。** *圆角*
-
-### 阴影 (box-shadow)
+### 阴影
 
 `box-shadow` 属性与 `text-shadow` 相同，如果你指定了负偏移值，阴影将渲染在屏幕的左侧和上方。`box-shadow` 具有以下格式：
 
@@ -2862,22 +2987,20 @@ CSS3 渐变还支持颜色停止点（color stops）。颜色停止点允许你�
 .box {
   width: 100px;
   height: 100px;
-  border: 1px solid #00000;
-  box-shadow: 10px 10px 20px 5px #00000;
+  border: 1px solid #000000;
+  box-shadow: 10px 10px 20px 5px #000000;
 }
 ```
 
+## 媒体查询
 
+`[max-|min-]device-aspect-ratio` cm（用于打印）的宽高比，像素设备屏幕比例（基于 `device-width`、`device-height`）
 
-
-
-`[max-|min-]device-aspect-` cm（用于打印）的宽高比，像素设备屏幕比例（基于 `device-width`、`device-height`）
-
-`[max-|min-]device-pixel-ratio` 设备的像素比例；它可以用于为高像素密度设备引入 `[max-|min-]-moz-device-pixel-ratio` 高分辨率图像；该属性也可能是 `-o-[max-|min-]device-vendor specific pixel-ratio` `-webkit-[max-|min-]device-pixel-ratio`
+`[max-|min-]device-pixel-ratio` 设备的像素比例；它可以用于为高像素密度设备引入高分辨率图像；该属性也可能是 `-moz-device-pixel-ratio`、`-o-device-pixel-ratio`、`-webkit-device-pixel-ratio`
 
 ## 响应式网页设计
 
-创建媒体查询（media queries）的理念并不一定是为了针对特定设备构建媒体查询（例如，不是专门针对平板电脑或手机），而是为了适应特定的屏幕尺寸并调整内容以适应它。
+创建媒体查询的理念并不一定是为了针对特定设备构建媒体查询（例如，不是专门针对平板电脑或手机），而是为了适应特定的屏幕尺寸并调整内容以适应它。
 
 通过这种方式，你可以确保 CSS 应用于可用空间而不是目标设备。我们将其称为响应式网页设计。
 
@@ -2886,12 +3009,13 @@ Daniel Vane 的网站 (`http://danielvane.com/`) 展示了响应式网页设计�
 ![Image 81](img/index-147_1.jpg)
 ![Image 82](img/index-147_2.jpg)
 
-**图 5-16.** 横屏下的 Daniel Vane 响应式网站（左侧为平板，右侧为手机）。**图 5-17.** 竖屏下的 Daniel Vane 响应式网站（左侧为平板，右侧为手机）。
+**图 5-16.** 横屏下的 Daniel Vane 响应式网站（左侧为平板，右侧为手机）。
+**图 5-17.** 竖屏下的 Daniel Vane 响应式网站（左侧为平板，右侧为手机）。
 
 Andy Clarke 和 Keith Clark 设计了一组媒体查询，你可以用来针对逐渐变大的显示器。其后的想法是使用颜色和字体对最小屏幕尺寸进行样式设计，然后按照特定的屏幕增量逐步增强网站，直到达到超过 `992px` 的屏幕尺寸。这组媒体查询还包含一个针对高像素密度显示器的媒体查询。
 
-<!-- 用于所有浏览器 -->
 ```html
+<!-- 用于所有浏览器 -->
 <link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" media="print" href="css/print.css">
 <!-- 用于逐渐变大的显示器 -->
@@ -2905,7 +3029,7 @@ Andy Clarke 和 Keith Clark 设计了一组媒体查询，你可以用来针对�
 
 你应该检查他们的 GitHub 项目以获取这组规则的更新，项目地址为 `https://github.com/malarkey/320andup/`。
 
-## CSS 预处理器 (SASS)
+# CSS 预处理器 (SASS)
 
 如果你过去有 CSS 经验，就会知道它的某些局限性。例如，你无法定义影响 CSS 呈现方式的变量，无法复用代码元素。随着应用程序的增长，在 CSS 中生成并维护很长的继承链也可能是非常痛苦的，如下代码所示，一个元素内部有多个元素需要相似的样式。
 
@@ -2939,11 +3063,11 @@ Syntactically Awesome Stylesheets (SASS) 通过使用嵌套、变量、混合器
 
 你还将学习 SASS 如何消除整个样式表中使用相似 CSS 样式的大量重复工作，并为面向对象的 CSS 铺道路。
 
-### 嵌套
+## 嵌套
 
 嵌套允许你将 CSS 样式嵌套在彼此内部。例如，前面的 CSS 看起来如下：
 
-```css
+```scss
 .block {
   /** 在此处设置 block 样式 **/
   h1.heading {
@@ -2963,7 +3087,7 @@ Syntactically Awesome Stylesheets (SASS) 通过使用嵌套、变量、混合器
 
 这段代码要容易维护得多。如果你需要添加更多元素，只需要添加以下 SCSS 格式：
 
-```css
+```scss
 .block {
   /** 在此处设置 block 样式 **/
   h1.heading {
@@ -2981,7 +3105,7 @@ Syntactically Awesome Stylesheets (SASS) 通过使用嵌套、变量、混合器
 }
 ```
 
-### 编译
+## 编译
 
 前面的代码需要编译成 CSS 浏览器才能理解。你不需要直接将 SASS 文件链接到 HTML 文档中；相反，你链接的是生成的 CSS 文件。你可以使用 Aptana Studio 的内置工具直接编译 SASS 文件。
 
@@ -2989,7 +3113,7 @@ Syntactically Awesome Stylesheets (SASS) 通过使用嵌套、变量、混合器
 
 要在 Aptana Studio 中编译 SASS 文件，请在项目中的任何位置创建一个名为 `mobile.scss` 的新文件（完成后可以删除它），并添加以下代码：
 
-```css
+```scss
 .test {
   background: #000000;
 }
@@ -2998,9 +3122,9 @@ Syntactically Awesome Stylesheets (SASS) 通过使用嵌套、变量、混合器
 }
 ```
 
-点击 `Commands Sass Compile`。这将在 SCSS 文件相同的位置生成一个新的 CSS 文件。你需要刷新资源管理器才能看到新文件。编译 SASS 的快捷键是 `cmd + shift + r`（Windows 和 Linux 上为 `CTRL + Shift + r`）。当出现图 5-18 所示的对话框时按 `1`。
+点击 `Commands > Sass > Compile`。这将在 SCSS 文件相同的位置生成一个新的 CSS 文件。你需要刷新资源管理器才能看到新文件。编译 SASS 的快捷键是 `Cmd + Shift + R`（Windows 和 Linux 上为 `Ctrl + Shift + R`）。当出现图 5-18 所示的对话框时按 `1`。
 
-**图 5-18.** 使用 cmd + shift + r 命令编译 SASS
+**图 5-18.** 使用 Cmd + Shift + R 命令编译 SASS
 
 当新 CSS 文件出现后，打开它。你应该看到以下代码：
 
@@ -3012,21 +3136,17 @@ Syntactically Awesome Stylesheets (SASS) 通过使用嵌套、变量、混合器
 }
 ```
 
-### 部分文件 (Partials)
+## 部分文件
 
 大型 SASS 文件可能会变得难以维护且滚动非常长！在 Aptana Studio 中，你可以使用代码折叠来显示和隐藏 SASS 样式以便浏览，如图 5-19 所示。
 
 ![Image 84](img/index-152.jpg)
 
-**图 5-19. Aptana 中 SCSS 文件的代码折叠**
+**图 5-19.** Aptana 中 SCSS 文件的代码折叠
 
 虽然这种方式很方便，但 SASS 也支持使用与普通 CSS 相同的 `@import` 语法从外部 SASS 文件导入部分样式表。SASS 实现与普通样式表实现之间的区别在于，SASS 在编译时引入文件，而不是通过 HTTP 请求逐个加载普通 CSS 文件中的所有文件。这为在编译时导入特定对象或区域的部分文件提供了范围。
 
 以下代码展示了一个示例。
-
-
-
-
 
 ```scss
 /** mobile.scss **/
@@ -3038,15 +3158,13 @@ Syntactically Awesome Stylesheets (SASS) 通过使用嵌套、变量、混合器
 /** partials/_tablet.scss **/
 
 .test-tablet {
-  background: url('../themes/mytheme/common/logo.png') no-repeat top left
-  #FFFFFF;
+  background: url('../themes/mytheme/common/logo.png') no-repeat top left #FFFFFF;
 }
 
 /** partials/_phone.scss **/
 
 .test-phone {
-  background: url('../themes/mytheme/common/logo.png') no-repeat top left
-  #FFFFFF;
+  background: url('../themes/mytheme/common/logo.png') no-repeat top left #FFFFFF;
 }
 ```
 
@@ -3059,9 +3177,7 @@ Syntactically Awesome Stylesheets (SASS) 通过使用嵌套、变量、混合器
   background: url("../themes/mytheme/common/logo.png") no-repeat top left white; }
 ```
 
-# 第 5 章：用于移动端的 CSS3
-
-从这个示例可以看出，每个部分文件的文件名应该以 `_`（下划线）为开头，并且 `import` 中的引用应该包含相对文件夹和部分名称，但不需要包含 `_` 前缀或 SCSS 文件名。你可能会注意到 SASS 在编译后的 CSS 中将 `#FFFFF` 转换为 `white`。
+从这个示例可以看出，每个部分文件的文件名应该以 `_`（下划线）为开头，并且 `import` 中的引用应该包含相对文件夹和部分名称，但不需要包含 `_` 前缀或 SCSS 文件名。你可能会注意到 SASS 在编译后的 CSS 中将 `#FFFFFF` 转换为 `white`。
 
 ## 变量与插值
 
@@ -3085,23 +3201,20 @@ $color: #000000;
 /** partials/_tablet.scss **/
 
 .test-tablet {
-  background: url('../themes/#{$theme}/common/logo.png') no-repeat top left
-  $color;
+  background: url('../themes/#{$theme}/common/logo.png') no-repeat top left $color;
 }
 
 /** partials/_phone.scss **/
 
 .test-phone {
-  background: url('../themes/#{$theme}/common/logo.png') no-repeat top left
-  $color;
+  background: url('../themes/#{$theme}/common/logo.png') no-repeat top left $color;
 }
 ```
 
 正如你在 `mobile.scss` 中看到的，你定义了一个字符串为 `"bentley"` 的主题变量。接着在下一行定义了黑色。然后使用 `@import` 导入这些部分。在每个部分内部，你会发现 `background` 声明已按如下修改。
 
 ```css
-background: url('../themes/#{$theme}/common/logo.png') no-repeat top left
-$color;
+background: url('../themes/#{$theme}/common/logo.png') no-repeat top left $color;
 ```
 
 向 SASS 文件添加变量的方法有两种。要将变量作为 CSS 字符串的一部分（例如背景图像路径）添加，你使用以下语法：
@@ -3119,17 +3232,11 @@ SASS 最受欢迎的功能之一是 Mixin。Mixin 允许你在一个地方定义
 ```css
 .myelement {
   background: rgb(206,220,231);
-  background: -moz-linear-gradient(-45deg, rgba(206,220,231,1) 0%,
-  rgba(89,106,114,1) 100%);
-  background: -webkit-gradient(linear, left top, right bottom,
-  color-stop(0%,rgba(206,220,231,1)),
-  color-stop(100%,rgba(89,106,114,1)));
-  background: -o-linear-gradient(-45deg, rgba(206,220,231,1) 0%,
-  rgba(89,106,114,1) 100%);
-  background: -ms-linear-gradient(-45deg, rgba(206,220,231,1) 0%,
-  rgba(89,106,114,1) 100%);
-  background: linear-gradient(-45deg, rgba(206,220,231,1) 0%,
-  rgba(89,106,114,1) 100%);
+  background: -moz-linear-gradient(-45deg, rgba(206,220,231,1) 0%, rgba(89,106,114,1) 100%);
+  background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,rgba(206,220,231,1)), color-stop(100%,rgba(89,106,114,1)));
+  background: -o-linear-gradient(-45deg, rgba(206,220,231,1) 0%, rgba(89,106,114,1) 100%);
+  background: -ms-linear-gradient(-45deg, rgba(206,220,231,1) 0%, rgba(89,106,114,1) 100%);
+  background: linear-gradient(-45deg, rgba(206,220,231,1) 0%, rgba(89,106,114,1) 100%);
 }
 ```
 
@@ -3138,20 +3245,11 @@ SASS 最受欢迎的功能之一是 Mixin。Mixin 允许你在一个地方定义
 ```css
 .myelement, .mysecondelement {
   background: rgb(206,220,231);
-  background: -moz-linear-gradient(-45deg, rgba(206,220,231,1) 0%,
-  rgba(89,106,114,1) 100%);
-  background: -webkit-gradient(linear, left top, right bottom,
-  color-stop(0%,rgba(206,220,231,1)),
-  color-stop(100%,rgba(89,106,114,1)));
-  background: -o-linear-gradient(-45deg,
-  rgba(206,220,231,1) 0%,
-  rgba(89,106,114,1) 100%);
-  background: -ms-linear-gradient(-45deg,
-  rgba(206,220,231,1) 0%,
-  rgba(89,106,114,1) 100%);
-  background: linear-gradient(-45deg,
-  rgba(206,220,231,1) 0%,
-  rgba(89,106,114,1) 100%);
+  background: -moz-linear-gradient(-45deg, rgba(206,220,231,1) 0%, rgba(89,106,114,1) 100%);
+  background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,rgba(206,220,231,1)), color-stop(100%,rgba(89,106,114,1)));
+  background: -o-linear-gradient(-45deg, rgba(206,220,231,1) 0%, rgba(89,106,114,1) 100%);
+  background: -ms-linear-gradient(-45deg, rgba(206,220,231,1) 0%, rgba(89,106,114,1) 100%);
+  background: linear-gradient(-45deg, rgba(206,220,231,1) 0%, rgba(89,106,114,1) 100%);
 }
 ```
 
@@ -3160,21 +3258,11 @@ SASS 最受欢迎的功能之一是 Mixin。Mixin 允许你在一个地方定义
 ```scss
 @mixin specialgradient {
   background: rgb(206,220,231);
-  background: -moz-linear-gradient(-45deg,
-  rgba(206,220,231,1) 0%,
-  rgba(89,106,114,1) 100%);
-  background: -webkit-gradient(linear, left top, right bottom,
-  color-stop(0%,rgba(206,220,231,1)),
-  color-stop(100%,rgba(89,106,114,1)));
-  background: -o-linear-gradient(-45deg,
-  rgba(206,220,231,1) 0%,
-  rgba(89,106,114,1) 100%);
-  background: -ms-linear-gradient(-45deg,
-  rgba(206,220,231,1) 0%,
-  rgba(89,106,114,1) 100%);
-  background: linear-gradient(-45deg,
-  rgba(206,220,231,1) 0%,
-  rgba(89,106,114,1) 100%);
+  background: -moz-linear-gradient(-45deg, rgba(206,220,231,1) 0%, rgba(89,106,114,1) 100%);
+  background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,rgba(206,220,231,1)), color-stop(100%,rgba(89,106,114,1)));
+  background: -o-linear-gradient(-45deg, rgba(206,220,231,1) 0%, rgba(89,106,114,1) 100%);
+  background: -ms-linear-gradient(-45deg, rgba(206,220,231,1) 0%, rgba(89,106,114,1) 100%);
+  background: linear-gradient(-45deg, rgba(206,220,231,1) 0%, rgba(89,106,114,1) 100%);
 }
 
 #my-first-element {
@@ -3194,10 +3282,9 @@ SASS 最受欢迎的功能之一是 Mixin。Mixin 允许你在一个地方定义
 @mixin gradient($start, $stop, $degrees) {
   background: rgba($start, 1);
   background: -moz-linear-gradient($degrees, $start 0%, $stop 100%);
-  background: -webkit-gradient(linear, left top, right bottom,
-  color-stop(0%, $start), color-stop(100%, $stop));
-  background: -o-linear-gradient($degrees, $start 0%,$stop 100%);
-  background: -ms-linear-gradient($degrees, $start 0% $stop 100%);
+  background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, $start), color-stop(100%, $stop));
+  background: -o-linear-gradient($degrees, $start 0%, $stop 100%);
+  background: -ms-linear-gradient($degrees, $start 0%, $stop 100%);
   background: linear-gradient($degrees, $start 0%, $stop 100%);
 }
 
@@ -3216,40 +3303,25 @@ SASS 最受欢迎的功能之一是 Mixin。Mixin 允许你在一个地方定义
 #my-first-element {
   background: #cedce7;
   background: -moz-linear-gradient(-45deg, rgba(206,220,231,0.5) 0%, #596a72 100%);
-  background: -webkit-gradient(linear, left top, right bottom,
-  color-stop(0%, rgba(206,220,231,0.5)), color-stop(100%, #596a72));
+  background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, rgba(206,220,231,0.5)), color-stop(100%, #596a72));
   background: -o-linear-gradient(-45deg, rgba(206,220,231,0.5) 0%, #596a72 100%);
-  background: -ms-linear-gradient(-45deg, rgba(206,220,231,0.5) 0% #596a72 100%);
+  background: -ms-linear-gradient(-45deg, rgba(206,220,231,0.5) 0%, #596a72 100%);
+  background: linear-gradient(-45deg, rgba(206, 220, 231, 0.5) 0%, #596a72 100%); 
 }
-```
-
-
-
-
-
-```css
-background: linear-gradient(-45deg, rgba(206, 220, 231, 0.5) 0%, #596a72 100%); }
 
 #my-second-element {
   background: #cedce7;
   background: -moz-linear-gradient(-45deg, #cedce7 0%, #596a72 100%);
+  background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, #cedce7), color-stop(100%, #596a72));
+  background: -o-linear-gradient(-45deg, #cedce7 0%, #596a72 100%);
+  background: -ms-linear-gradient(-45deg, #cedce7 0%, #596a72 100%);
+  background: linear-gradient(-45deg, #cedce7 0%, #596a72 100%); 
 }
-```
-
-# 第 5 章：移动端 CSS3
-
-154
-
-```css
-background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, #cedce7), color-stop(100%, #596a72));
-background: -o-linear-gradient(-45deg, #cedce7 0%, #596a72 100%);
-background: -ms-linear-gradient(-45deg, #cedce7 0% #596a72 100%);
-background: linear-gradient(-45deg, #cedce7 0%, #596a72 100%); }
 ```
 
 注意观察 `#my-first-element` 中的 CSS，第一个描述符中的背景颜色是普通的十六进制颜色，而其余部分是 RGBA 颜色。此外，尽管在 mixin 调用中使用了 RGBA 设置了停止颜色，但它仍然是十六进制颜色，因为透明度被设置为 1，而起始颜色被设为 0.5。SASS 将选择最高效的方式来输出你的颜色。
 
-## 选择器继承 (Selector Inheritance)
+## 选择器继承
 
 当然，在整个 SASS 文件中使用 mixins 是极具诱惑力的，尽管生成的 CSS 可能完全相同。选择器继承允许你在放置在 SASS 文件其他位置的规则中重用相同的 CSS 规则。例如，在 CSS 中你可以使用以下代码。
 
@@ -3261,7 +3333,7 @@ background: linear-gradient(-45deg, #cedce7 0%, #596a72 100%); }
 
 虽然这种方法很高效，但很容易丢失哪些 CSS 规则与一组规则相关联。你可能必须在文档中处处寻找那组规则以及与它关联的元素、类和 ID。更令人困惑的是，样式可能位于不同的 CSS 文件中。
 
-选择器继承有助于克服这个问题。选择器继承允许你生成与上面所示相同的代码，但方式要对开发人员友好友好得多。
+选择器继承有助于克服这个问题。选择器继承允许你生成与上面所示相同的代码，但方式要对开发人员友好得多。
 
 使用 mixins 部分的示例，你可以定义一种渐变，并在 SASS 文件中任何相关的规则地方使用它，而不会导致生成的渐变在 CSS 文件中生成多次。
 
@@ -3278,21 +3350,19 @@ background: linear-gradient(-45deg, #cedce7 0%, #596a72 100%); }
 
 如你所见，除了圆角框外，`.sidebar-block` 与 `.block` 规则相似。生成的 CSS 如下。
 
-第 5 章：移动端 CSS3
-
-155
-
 ```css
 .block, .sidebar-block {
   background: #cedce7;
   background: -moz-linear-gradient(-45deg, rgba(206, 220, 231, 0.5) 0%, #596a72 100%);
   background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, rgba(206, 220, 231, 0.5)), color-stop(100%, #596a72));
   background: -o-linear-gradient(-45deg, rgba(206, 220, 231, 0.5) 0%, #596a72 100%);
-  background: -ms-linear-gradient(-45deg, rgba(206, 220, 231, 0.5) 0% #596a72 100%);
-  background: linear-gradient(-45deg, rgba(206, 220, 231, 0.5) 0%, #596a72 100%); }
+  background: -ms-linear-gradient(-45deg, rgba(206, 220, 231, 0.5) 0%, #596a72 100%);
+  background: linear-gradient(-45deg, rgba(206, 220, 231, 0.5) 0%, #596a72 100%); 
+}
 
 .sidebar-block {
-  border-radius: 10px; }
+  border-radius: 10px; 
+}
 ```
 
 你可以看到，`.sidebar-block` 与 `.block` 规则相似，除了圆角边框。
@@ -3326,26 +3396,24 @@ background: linear-gradient(-45deg, #cedce7 0%, #596a72 100%); }
   background: -moz-linear-gradient(-45deg, rgba(206, 220, 231, 0.5) 0%, #596a72 100%);
   background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, rgba(206, 220, 231, 0.5)), color-stop(100%, #596a72));
   background: -o-linear-gradient(-45deg, rgba(206, 220, 231, 0.5) 0%, #596a72 100%);
-  background: -ms-linear-gradient(-45deg, rgba(206, 220, 231, 0.5) 0% #596a72 100%);
-  background: linear-gradient(-45deg, rgba(206, 220, 231, 0.5) 0%, #596a72 100%); }
+  background: -ms-linear-gradient(-45deg, rgba(206, 220, 231, 0.5) 0%, #596a72 100%);
+  background: linear-gradient(-45deg, rgba(206, 220, 231, 0.5) 0%, #596a72 100%); 
+}
 
 .sidebar-block {
-  border-radius: 10px; }
+  border-radius: 10px; 
+}
 ```
 
- 总结
+# 第 6 章：奠定 CSS3 基础
+
+## 总结
 
 通过本章，你应该掌握了 CSS3 的一些新特性以及如何使用它们。
 
-
-
-
-
 ![Image 86](img/index-162_1.jpg)
 
-# 第 6 章：奠 CSS3 基础
-
-159
+## 创建 SASS 文件结构
 
 在编译 `mobile.scss` 文件之前，你将需要创建相应的 SASS 文件。
 
@@ -3362,32 +3430,27 @@ background: linear-gradient(-45deg, #cedce7 0%, #596a72 100%); }
 
 你需要创建图 6-2 所示的空文件。
 
-**图 6-2。** *SASS 部分文件*
+**图 6-2.** SASS 部分文件
 
 你会注意到有一个名为 `_reset.scss` 的文件。如果你熟悉 Eric Meyer 的重置 CSS 文件，那么重置样式表用于为跨浏览器的 CSS 样式创建一个公平的运行环境。这是因为浏览器对某些元素（如不同的外边距、内边距和字体大小）可能会有不同的默认样式。重置样式表为最常用的 HTML 元素设置了新的可预测默认值。请注意，某些样式表（特别是 Eric Meyer 的）会重置字体，使其完全没有样式，这很有用，但你必须记住，对于具有默认字体样式的元素（如 `<pre />`），它们将具有 `<body />` 相同的字体族。
 
-# 第 6 章：奠 CSS3 基础
-
-160
-
 在 `mixins` 文件夹中，你会看到几个看起来像应该是 CSS 属性的文件，例如 `_animation.scss` 和 `_gradient.scss`。这些文件的存在是为了通过混合入（mixins）创建属性的通用版本，从而避免某些厂商特定的 CSS 污染主 SASS 文件。你可以开始向这些文件中添加内容了。
+
+### 创建 Mixins 文件
 
 打开空的 `_animations.scss` 文件。这个混合入将用于创建动画并将其应用到所有厂商。如果创建了新的厂商特定动画属性，可以在一个地方添加它，而不是在你的 SASS 文件中多处添加。将以下代码添加到已打开的文件。
 
 ```scss
 @mixin animation ($values) {
-animation:
-$values;
--moz-animation:
-$values;
--webkit-animation:
-$values;
+  animation: $values;
+  -moz-animation: $values;
+  -webkit-animation: $values;
 }
 ```
 
 如你所见，它仅仅充当基于标准的、Mozilla 和 webkit 动画属性的代理，接收一组属性并将它们传递给厂商特定的动画属性。保存并关闭文件。
 
-打开空的 `_box-sizing.scss` 文件。这个混合入提供了对盒盒模型（box-sizing）的支持。CSS 弹性布局中最令人沮丧的问题之一是，当一个元素设置为 100% 宽（父元素的宽度）并带有内边距时，浏览器通常会将内边距添加到元素的宽度中，即使宽度指定为 100% 也是如此，因此结果是你的元素会因为你添加的内边距而过度延伸，有时会将元素略微推出屏幕或超出其父元素。`box-sizing` 属性通过以下方式帮助解决这个问题：
+打开空的 `_box-sizing.scss` 文件。这个混合入提供了对盒模型（box-sizing）的支持。CSS 弹性布局中最令人沮丧的问题之一是，当一个元素设置为 100% 宽（父元素的宽度）并带有内边距时，浏览器通常会将内边距添加到元素的宽度中，即使宽度指定为 100% 也是如此，因此结果是你的元素会因为你添加的内边距而过度延伸，有时会将元素略微推出屏幕或超出其父元素。`box-sizing` 属性通过以下方式帮助解决这个问题：
 
 * 使用 `content-box` 值时，从元素的宽度和高度中排除任何内边距、外边距或边框
 * 使用 `padding-box` 值时，将任何内边距包含在元素的宽度和高度中
@@ -3395,9 +3458,9 @@ $values;
 
 ```scss
 @mixin box-sizing ($value) {
--moz-box-sizing: $value;
--webkit-box-sizing: $value;
-box-sizing: $value;
+  -moz-box-sizing: $value;
+  -webkit-box-sizing: $value;
+  box-sizing: $value;
 }
 ```
 
@@ -3405,25 +3468,20 @@ box-sizing: $value;
 
 最后，打开 `_gradient.scss` 文件并将其添加以下代码。
 
-# 第 6 章：奠 CSS3 基础
-
-161
-
 ```scss
 @mixin gradient($start, $stop, $degrees) {
-background: rgba($start, 1);
-background: -moz-linear-gradient($degrees, $start 0%, $stop 100%);
-background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,
-$start), color-stop(100%, $stop));
-background: -o-linear-gradient($degrees, $start 0%,$stop 100%);
-background: -ms-linear-gradient($degrees, $start 0% $stop 100%);
-background: linear-gradient($degrees, $start 0%, $stop 100%);
+  background: rgba($start, 1);
+  background: -moz-linear-gradient($degrees, $start 0%, $stop 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, $start), color-stop(100%, $stop));
+  background: -o-linear-gradient($degrees, $start 0%, $stop 100%);
+  background: -ms-linear-gradient($degrees, $start 0%, $stop 100%);
+  background: linear-gradient($degrees, $start 0%, $stop 100%);
 }
 ```
 
 你可能在上一章中见过这个混合入。它仅仅是为厂商特定的渐变代码创建 CSS 渐变。它比其他混合入稍微复杂，因为在编写时，每个厂商都有自己的 CSS 渐变实现，这使得接受单个值并将其传递给厂商属性变得不可能。
 
- 创建部分文件
+### 创建部分文件
 
 创建混合入后，现在是创建部分文件了。如前所述，部分文件将有助于将 CSS 的不同部分分离到不同的文件中，而不会通过在普通 CSS 文件中使用传统的 `@import` 来影响终端用户（这对加载时间有很大影响）。
 
@@ -3431,17 +3489,9 @@ background: linear-gradient($degrees, $start 0%, $stop 100%);
 
 你不需要手动在该 SASS 文件中输入以下代码，可以从 Eric Meyer 的网站 `http://meyerweb.com/eric/thoughts/2011/01/03/reset-revisited/` 复制。
 
-# 第 6 章：奠 CSS3 基础
+打开 `_typography.scss` 文件。此文件将控制应用程序内的字体排版。
 
-162
-
-...（内容保持逻辑） ...
-
-# 第 6 章：奠 CSS3 基础
-
-163
-
-```css
+```scss
 body {
   font-size: 0.75em;
   font-family: Arial, sans-serif;
@@ -3459,82 +3509,73 @@ h2 { font-size: 1.5em; }
 h1 { font-size: 1.9em; }
 ```
 
-你使用 em 而不是像素作为字体大小。将 body 的字体设置为 0.75em 等同于 12px，如上面的代码段所示，此处字体声明为 em。1em 等同于浏览器的默认字体大小，即 16px。要计算 10px 在 em 中是多少，你需要使用 10 / 16，结果等于 0.625，因此 10px 为 0.625em。em 很有用，因为值是相对的。例如，如果你将一个 div 的字体大小设置为 0.75em (12px)，然后将该元素内的任何元素设置为 1em，那么该字体大小将相对于父元素的字体大小。因此，子元素中的 1em 变成了父元素的 0.75em。尝试弄出 em 的字体大小可能是一场噩梦，
-
-
-
-
-
-[http://riddle.pl/emcalc/] 有一个解决方案，允许你构建一个基于像素单位的字体大小 DOM 树，该 Web 应用将为你将它们转换为 em，并考虑父元素的字体大小。
+你使用 em 而不是像素作为字体大小。将 body 的字体设置为 0.75em 等同于 12px，如上面的代码段所示，此处字体声明为 em。1em 等同于浏览器的默认字体大小，即 16px。要计算 10px 在 em 中是多少，你需要使用 10 / 16，结果等于 0.625，因此 10px 为 0.625em。em 很有用，因为值是相对的。例如，如果你将一个 div 的字体大小设置为 0.75em (12px)，然后将该元素内的任何元素设置为 1em，那么该字体大小将相对于父元素的字体大小。因此，子元素中的 1em 变成了父元素的 0.75em。尝试弄出 em 的字体大小可能是一场噩梦，`http://riddle.pl/emcalc/` 有一个解决方案，允许你构建一个基于像素单位的字体大小 DOM 树，该 Web 应用将为你将它们转换为 em，并考虑父元素的字体大小。
 
 保存并关闭 `_typography.scss` 文件。打开 `_layout.scss` 文件。`_layout.scss` 文件将控制应用程序内元素的定位、尺寸、颜色和整体布局。
 
 第一要工作是为应用程序的 `body`、`html`、`#shoe` 和 `.deck` 元素设置样式。你在顶部对这些元素设置样式，以便在样式表的后部分对其进行覆盖。
 
-```css
+```scss
 body, html, #shoe, .deck {
-height: 100%;
-width: 100%;
-overflow: hidden;
-margin: 0px;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  margin: 0px;
 }
 ```
 
 如你所见，高度和宽度已设置为 100%，以便跨越整个屏幕的宽高。添加 `overflow: hidden;` 是为了让任何溢出元素的内容被截断且不影响布局；为了保险起见，还添加了 0px 的外边距以防止元素之间出现任何间隙。
 
-# 第 6 章：奠定 CSS3 基础
-
 下一步的工作是为 `#card-movie_search_results` 卡片设置样式。在搜索时，卡片应该显示在页面所有元素之上。你可以通过设置 `z-index` 来实现这一点。`z-index` 决定了元素在元素堆栈中的位置。设置一个高数值通常会将元素置于堆栈顶部。本例中使用了 50。
 
-```css
+```scss
 /**
 * 单个卡片样式
 */
 #card-movie_search_results {
-z-index: 50;
+  z-index: 50;
 }
 ```
 
 下一步是设置 deck 和卡片的样式。如你所见，这里使用了 SASS 嵌套将不同的卡片状态嵌套在 deck 内部。当 SASS 文件渲染时，将生成相应的 CSS。你希望将 deck 的位置设置为 `relative`（相对）。这允许 deck 内部的绝对定位的卡片相对于父级 deck 进行定位，而不是相对于整个视口。
 
-```css
+```scss
 /**
 * Deck 样式
 */
 .deck {
-position: relative;
+  position: relative;
 }
 ```
 
 你现在也需要为任何带有 `.card` 类的元素设置样式。每张卡片的宽度和高度应与 deck 相同，但位置应位于屏幕之外，以便用户最初无法看到它。当给任何 `.card` 元素添加 `.active` 类时，它应该被带回视野。这可以通过将初始左位置设置为负值来实现，该值等同于卡片的宽度，在本例中为 -100%。当你想要将卡片带回视野时，为 `.active` 样式设置了 0px 的位置。
 
-```css
+```scss
 /**
 * Deck 样式
 */
 .deck {
-position: relative;
+  position: relative;
 }
 .card {
-height: 100%;
-width: 100%;
-left: -100%;
-position: absolute;
+  height: 100%;
+  width: 100%;
+  left: -100%;
+  position: absolute;
 }
 .card.active {
-left: 0px;
-}
+  left: 0px;
 }
 ```
 
 接下来要设置的元素是状态栏（screen bars）。状态栏将位于屏幕的顶部和底部。这些需要以统一的方式设置样式，以便用户能够轻松找到它们。如下所示，使用了渐变混合（mixin）来为该元素的背景创建一个 CSS3 渐变。
 
-```css
+```scss
 /**
 * 头部任务栏样式
 */
 .screenbar {
-@include gradient(#7D9DCE, #ABC1E1, 90deg);
+  @include gradient(#7D9DCE, #ABC1E1, 90deg);
 }
 ```
 
@@ -3542,60 +3583,57 @@ left: 0px;
 
 从下面的代码可以看出，你将任务栏的字体颜色设置为白色，并将 `overflow` 设置为隐藏（hidden），以便它能包裹任何浮动元素。任务栏还有 10px 的内边距和底部的红色边框。
 
-```css
+```scss
 header#taskbar {
-color: #FFFFFF;
-overflow: hidden;
-padding: 10px;
-border-bottom: 1px solid #BF2628;
+  color: #FFFFFF;
+  overflow: hidden;
+  padding: 10px;
+  border-bottom: 1px solid #BF2628;
 }
 ```
 
 你现在可能想为应用程序的品牌/Logo 设置样式。为了实现这一点，你可以使用一个 `header` (`h1`) 元素，然后使用图像替换技术来显示 Logo。这可以通过将 `h1` 的宽度和高度设置为与 Logo 相同的宽高来实现，将 `text-indent` 属性设置为一个很大的任意负值，使文本定位在屏幕外——在本例中使用了 -10000px。最后，将 Logo 的背景设置为 Logo 图片。`h1` 元素也浮动到任务栏的左侧，以便搜索表单占据剩余空间。
 
-```css
+```scss
 header#taskbar {
-...
-h1.branding {
-margin: 0px;
-float: left;
-width: 73px;
-height: 32px;
-text-indent: -10000px;
-overflow: hidden;
-background: url('../img/momemo.png') no-repeat top left;
-}
+  ...
+  h1.branding {
+    margin: 0px;
+    float: left;
+    width: 73px;
+    height: 32px;
+    text-indent: -10000px;
+    overflow: hidden;
+    background: url('../img/momemo.png') no-repeat top left;
+  }
 }
 ```
 
 下一步工作是设置清除搜索链接。你使用与之前相同的图像替换技术来替换清除搜索链接。这次按钮浮动在右侧并隐藏，以确保它不显示。
 
-```css
+```scss
 header#taskbar {
-...
-h1.branding {
-...
-}
-.clear-search {
-float: right;
-width: 35px;
-height: 35px;
-display: none;
-overflow: hidden;
-text-indent: -10000px;
-background: url('../img/clear.png') 50% 50%;
-}
+  ...
+  h1.branding {
+    ...
+  }
+  .clear-search {
+    float: right;
+    width: 35px;
+    height: 35px;
+    display: none;
+    overflow: hidden;
+    text-indent: -10000px;
+    background: url('../img/clear.png') 50% 50%;
+  }
 }
 ```
 
 最后添加到 `_layout.scss` 的内容是 `searchactive` 覆盖。当你向 `header#taskbar` 添加该 CSS 类时，它将防止搜索按钮掉到新的一行。
 
-
-
-
 以下代码仅对搜索字段进行样式处理。如你所见，`background-size` 在这里首次使用。`background-size` 属性允许你指定背景的大小，可以是像素，也可以是背景所添加元素的百分比。
 
-```css
+```scss
 input.search {
   padding-left: 30px;
   background: url('../img/search.png') 5px 50% no-repeat transparent;
@@ -3611,7 +3649,7 @@ input.search {
 
 以下样式使用了特定厂商的伪类。`-webkit-input-placeholder` 和 `-moz-placeholder` 允许你对输入元素上使用的占位符文本进行样式设置。例如，在蓝色背景上搜索框的背景是透明的，因此默认的灰色几乎可见。文本需要是白色，所以占位符伪类允许你自定义占位符文本的呈现方式。
 
-```css
+```scss
 input.search::-webkit-input-placeholder, input.search::-moz-placeholder {
   color: rgba(255, 255, 255, 0.5);
 }
@@ -3619,15 +3657,15 @@ input.search::-webkit-input-placeholder, input.search::-moz-placeholder {
 
 虽然在 Android 4 上不会立即显示，但下面的样式会在后台搜索电影时在搜索框中加载加载。
 
-```css
+```scss
 input.search.loading {
   background-image: url('../img/loading.gif');
 }
 ```
 
-你的最终 SASS 文件应该看起来像下面的代码。
+你的最终 `_forms.scss` 文件应该看起来像下面的代码。
 
-```sass
+```scss
 input, select, textarea, button {
   @include box-sizing(border-box);
 }
@@ -3666,7 +3704,7 @@ input.search.loading {
 
 保存并关闭你的文件。最后，你需要打开 `_highres.scss` 文件。此文件将仅用于替换高分辨率器上的任何图形，以便它们看起来清晰。向文件中添加以下代码。
 
-```css
+```scss
 header#taskbar {
   h1.branding {
     background-image: url('../img/highres/momemo.png');
@@ -3681,17 +3719,17 @@ header#taskbar {
 ![Image 88](img/index-174_2.jpg)
 ![Image 89](img/index-174_3.jpg)
 
-**图 6-3. 高密度显示器上的高分辨率图像（下）与低分辨率图像（上）**
+**图 6-3.** 高密度显示器上的高分辨率图像（下）与低分辨率图像（上）
 
 ### 在 Aptana 中自动编译 Sass
 
 到目前为止，你还没有在 Aptana Studio 中编译过任何 SASS。在上一章节中，你了解了如何使用 SASS 内置的 SASS 编译器命令来编译 SASS 文件。每当你想要修改 SASS 文件时，这可能会变得非常麻烦。你可以通过使用 SASS 命令行自动编译 SASS 文件来绕过这个问题。为了做到这一点，在 Aptana Studio 的 App Explorer 中点击你的应用程序文件夹，然后点击 Commands 图标，它看起来像齿轮，如图 6-4 所示。
 
-**图 6-4. 命令菜单**
+**图 6-4.** 命令菜单
 
 点击 Open Terminal 菜单项。这将打开一个类似于图 6-5 的终端视图。
 
-**图 6-5. 终端视图**
+**图 6-5.** 终端视图
 
 ![Image 90](img/index-175_1.jpg)
 ![Image 91](img/index-175_2.jpg)
@@ -3704,11 +3742,13 @@ sass --watch css/*.scss
 
 这将查找你的 SASS 文件中的任何更改。你应该会看到类似于图 6-6 的内容。
 
-**图 6-6. sass --watch 输出**
+**图 6-6.** sass --watch 输出
 
-**图 6-7. 使用 CSS 的 Momemo****
+**图 6-7.** 使用 CSS 的 Momemo
 
-### 面对象 JavaScript
+# 第 7 章：用于移动端的 JavaScript
+
+## 面向对象 JavaScript
 
 JavaScript 是处理和响应移动网站用户交互的极佳语言。与为桌面网页编写 JavaScript 的方式类似，你也可以在移动端使用相同的设计模式和编写方法。你可以通过两种方式编写 JavaScript。其中一种方法是过程式的，如下代码所示。
 
@@ -3736,19 +3776,11 @@ myworld.say('Hello');
 * 面向对象的方法允许对代码进行扩展。
 * 面向对象的方法可以更有组织性。
 * 面向对象的方法允许封装，这意味着对象内部的变量或属性可以是公共的或私有的。
-* 面向对象的方法允许你将对象传递给其他对象。这通常被对象对象依赖。
+* 面向对象的方法允许你将对象传递给其他对象。这通常被称为对象依赖。
 
-**注意：** 在 Java、Objective-C 和 PHP 等类语言中
+**注意：** 在 Java、Objective-C 和 PHP 等类语言中，类（Class）在通过 `new ClassName` 实例化之前是一个对象。对象（Object）是类在实例化后的一个实例。
 
-
-
-
-
-类（Class）在通过 `new ClassName` 实例化之前是一个对象。
-
-对象（Object）是类在实例化后的一个实例。
-
-JavaScript 拥有创建对象的内置方法，遗憾的是，它原生并不完全支持封装、继承、抽象和接口。你可能需要创建自己的方法和实践来来实现这些功能。JavaScript 也是一种基于对象的语言，因此尽管你觉得是在创建类，但实际上你是在代码中创建结构，让你的对象从中形成形态。
+JavaScript 拥有创建对象的内置方法，遗憾的是，它原生并不完全支持封装、继承、抽象和接口。你可能需要创建自己的方法和实践来实现这些功能。JavaScript 也是一种基于对象的语言，因此尽管你觉得是在创建类，但实际上你是在代码中创建结构，让你的对象从中形成形态。
 
 ```javascript
 var World = function(_name){
@@ -3766,7 +3798,7 @@ venus.greet('Dan');
 
 从上面的示例中，你可以看到在 JavaScript 中，创建一个对象像创建一个函数一样简单。通过使用函数的参数，你创建了一个所谓的 `constructor`（构造函数）。构造函数是一种在实例化时向对象传递参数的方法。这些参数通常用于将变量赋值给对象内部的属性。
 
-在普通的面向对象编程中，属性可以被声明为公共或私有。在 JavaScript 中，属性没有此类此类声明。因此，属性既可以是实例变量（私有），也可以是公共属性（公共）。在此实例中，`name` 属性是一个实例变量，这意味着你无法从对象外部（例如通过 `venus.name`）访问它。这通常被称为封装。对象的属性是一个变量，可以通过对象作用域内部的 `this.propertyname` 访问，也可以在对象外部通过 `object.propertyname` 访问。例如，如果你尝试从对象外部访问 `name` 实例变量，你将得到输出 `undefined`。
+在普通的面向对象编程中，属性可以被声明为公共或私有。在 JavaScript 中，属性没有此类声明。因此，属性既可以是实例变量（私有），也可以是公共属性（公共）。在此实例中，`name` 属性是一个实例变量，这意味着你无法从对象外部（例如通过 `venus.name`）访问它。这通常被称为封装。对象的属性是一个变量，可以通过对象作用域内部的 `this.propertyname` 访问，也可以在对象外部通过 `object.propertyname` 访问。例如，如果你尝试从对象外部访问 `name` 实例变量，你将得到输出 `undefined`。
 
 你还可以创建对象方法，这些函数可以通过对象内部的 `this` 访问，也可以在对象外部通过赋值给实例化对象的变量来访问。使用之前的示例，`this.greet` 是一个公共对象方法，可以在对象外部被访问。
 
@@ -3791,22 +3823,22 @@ app.world = function(_name){
 
 除了设计模式和面向对象之外，JavaScript 是一种事件驱动的语言。这意味着在应用程序某部分触发的事件可以在运行时触发应用程序完全不同部分的代码。在最简单的形式中，事件可以通过用户交互来触发。在移动端，这通常表现为触摸事件，用户通过手指通过浏览器与你的应用程序交互。浏览器注册该事件，然后将事件及其信息（例如事件源自元素）传递给应用程序中的任何订阅者。对于桌面环境，这些被称为鼠标事件。
 
-### 处理触摸事件
+## 处理触摸事件
 
 JavaScript 在处理桌面端事件方面并不逊色，移动端也是如此。事件可以由用户级事件（如触摸和拖拽）组成，也可以由设备级事件（如方向变化或设备位置变化）组成。最基本的事件是用户级事件。它们可以在任何 DOM 元素上进行跟踪。对于移动设备，有四个主要的触摸事件：
 
-- `touchstart`
-- `touchend`
-- `touchmove`
-- `touchcancel`
+* `touchstart`
+* `touchend`
+* `touchmove`
+* `touchcancel`
 
-当用户触摸屏幕上的元素时，会触发 `touchstart` 事件。当用户在触摸屏幕上的元素后抬起手指时，会触发 `touchend` 事件。`touchmove` 事件会跟踪用户的移动并在每次移动时触发事件。当用户通过移动目标边界并释放屏幕取消触摸事件时，会触发 `touchcancel` 事件。这个事件似乎不可。
+当用户触摸屏幕上的元素时，会触发 `touchstart` 事件。当用户在触摸屏幕上的元素后抬起手指时，会触发 `touchend` 事件。`touchmove` 事件会跟踪用户的移动并在每次移动时触发事件。当用户通过移动目标边界并释放屏幕取消触摸事件时，会触发 `touchcancel` 事件。这个事件似乎不可用。
 
 为了响应事件，你必须使用 `element.addEventListener(event, callbackfunction)` 为它们创建事件监听器。该方法接收事件名称（如 `touchstart`、`touchend` 等）和回调函数。有时，你可能希望防止事件的默认操作。例如，如果你在链接上添加事件监听器，你可能不希望在点击时打开新页面。要实现这一点，你必须为回调函数添加一个名为 `e` 的参数，并在函数末尾调用 `e.preventDefault()`。这还将防止元素滚动并干扰 `touchmove` 事件，如下代码片段所示。
 
 ```html
 <div id="touch-plane" style="width: 100%; height: 100%; background: #000000; color: #FFFFFF;">
-<span id="coordinates">x: 0 y: 0</span> - <span id="touching">not touching</span>
+  <span id="coordinates">x: 0 y: 0</span> - <span id="touching">not touching</span>
 </div>
 ```
 
@@ -3827,14 +3859,9 @@ document.getElementById('touch-plane').addEventListener('touchend', function(e){
 </script>
 ```
 
-
-
-
 这段代码将屏幕填充为黑色，并用白色文字显示用户手指的当前坐标以及用户是否正在触摸屏幕。你可以通过访问传递给 `touchmove` 事件监听器的事件中的 `touches` 列表来获取当前坐标。你可以从列表中获取第一个触摸点，并使用 `clientX` 和 `clientY` 来获取 X 和 Y 坐标，如下：
 
-```
-e.touches[0].clientX, e.touches[0].clientY
-```
+`e.touches[0].clientX, e.touches[0].clientY`
 
 如你所见，你可以通过调用以下代码来防止文档滚动：
 
@@ -3842,15 +3869,13 @@ e.touches[0].clientX, e.touches[0].clientY
 e.preventDefault();
 ```
 
-另外两个事件监听器 `touchstart` 和 `touchend` 会用户触摸屏幕和抬起手指时被调用。
+另外两个事件监听器 `touchstart` 和 `touchend` 会在用户触摸屏幕和抬起手指时被调用。
 
-**图 7-1. 检测触摸和移动**
+**图 7-1.** 检测触摸和移动
 
-# 第 7 章：用于移动端的 JavaScript
+## 获取用户位置
 
-### 获取用户位置
-
-当你知道用户需要在应用程序中输入他们的当前位置时，获取用户的位置将非常方便。这对于寻找寻找和搜索他们周围的物品（如活动、地点和其他人）很有用。
+当你知道用户需要在应用程序中输入他们的当前位置时，获取用户的位置将非常方便。这对于寻找和搜索他们周围的物品（如活动、地点和其他人）很有用。
 
 位置 API 非常简单，它利用了移动设备内置的 GPS 芯片。
 
@@ -3864,9 +3889,9 @@ var showCurrentPosition = function(position){
 
 这是一个在移动设备获取用户位置后会被调用的函数。传递回调函数的参数是一个扩展了 `Coordinates` 接口的对象，具有表 7-1 所示的属性。
 
-**表 7-1. Coordinates 对象属性**
+### 表 7-1. Coordinates 对象属性
 
-| 属性 |  |
+| 属性 | 描述 |
 | :--- | :--- |
 | `Coordinates.timestamp` | 获取位置的时间 |
 | `Coordinates.coords` | 坐标对象 |
@@ -3876,7 +3901,10 @@ var showCurrentPosition = function(position){
 | `Coordinates.coords.heading` | 设备的航向，或以度为单位的方向。如果无法确定航向，该属性的值为 null |
 | `Coordinates.coords.latitude` | 以十进制度表示的设备纬度 |
 | `Coordinates.coords.longitude` | 以十进制度表示的设备经度 |
-| `Coordinates.coords.speed` | 水平移动速度（米/秒）；如果无法确定，则返回 null |
+
+
+
+| `Coordinates.coords.speed` | 水平移动速度（米/秒）；如果无法确定，则返回 `null` |
 
 若要获取设备的坐标，查询设备用户位置的简单用例如下：
 
@@ -3905,11 +3933,17 @@ navigator.geolocation.getCurrentPosition(showCurrentPosition, handleLocationErro
 **表 7-2. PositionError 属性和常量**
 
 | 属性/常量 | 说明 |
+
 | :--- | :--- |
+
 | `PositionError.code` | 错误返回的代码；使用以下常量来确定错误代码 |
+
 | `PositionError.PERMISSION_DENIED` | 用户拒绝了获取权限的请求 |
+
 | `PositionError.POSITION_UNAVAILABLE` | 由于其他设备问题无法确定位置 |
+
 | `PositionError.TIMEOUT` | 由于请求超时，无法确定位置 |
+
 | `PositionError.message` | 错误的详细消息 |
 
 你应该使用 `PositionError` 常量 `PERMISSION_DENIED`、`POSITION_UNAVAILABLE` 和 `TIMEOUT` 来妥善处理错误，而不是依赖错误消息或将错误代码与硬编码的整数进行比较。下一个代码示例显示了如何使用 `handleLocationError` 函数和 `switch` 语句处理错误。
@@ -3973,8 +4007,6 @@ navigator.geolocation.getCurrentPosition(showCurrentPosition, handleLocationErro
 
 HTML5 Canvas 允许你使用 JavaScript 绘制矢量形状。HTML5 Canvas 元素本身不提供很多功能，但它提供了一个供你绘制对象的基础。你可以把它想象成设备上的白板。下一个练习将引导你如何创建画布、如何使用 JavaScript 开始绘制基础形状，以及如何让它们动起来。
 
-
-
 首先，在本章节文件夹内创建一个名为 `canvas` 的新文件夹。在 `canvas` 目录根目录下创建一个 `js` 文件夹，其中包含一个名为 `canvas.js` 的新 JavaScript 文件和一个 `index.html` 文件，其内容如下：
 
 ```html
@@ -4008,15 +4040,23 @@ CHAPTER 7: JavaScript for Mobile
 在这个示例中，你需要两个对象：`track` 对象（用于模拟实际的音频轨道）和一个 `playButton` 对象（用于控制显示轨道进度以及播放/暂停轨道）。`track` 对象应该负责以下工作：
 
 - 跟踪轨道的总长度
+
 - 维护轨道的当前状态（播放/暂停/停止）
+
 - 如果轨道正在播放，则维护轨道的当前时间
+
 - 播放、暂停和停止轨道
 
 此示例中的 `playButton` 对象将负责以下工作：
+
 - 绘制绘制播放按钮
+
 - 显示播放进度
+
 - 显示轨道的播放状态
+
 - 通过显示播放或停止符号来表示轨道的状态
+
 - 通过移动播放头来表示轨道的播放进度
 
 灵感来自如图 7-4 所示的 iTunes 播放控制，你将创建一个类似的东西。
@@ -4024,7 +4064,9 @@ CHAPTER 7: JavaScript for Mobile
 ![Image 95](img/index-190_1.jpg)
 
 CHAPTER 7: JavaScript for Mobile
+
 188
+
 **图 7-4.iTunes 预览播放控制**
 
 首先，在你的 `canvas.js` 文件中创建这两个对象，如下代码段所示：
@@ -4058,6 +4100,7 @@ this.state = {
 接下来，你在 `track` 类的作用域内定义几个变量，如下代码段所示：
 
 CHAPTER 7: JavaScript for Mobile
+
 189
 
 ```javascript
@@ -4072,7 +4115,7 @@ updateInterval = 1000 / 30;
 }
 ```
 
-在 JavaScript 中，你可以通过逗号分隔变量在单行内声明多个变量。这在移动设备上同样有效。
+在 JavaScript 中，你可以通过逗号分隔变量在单行内声令多个变量。这在移动设备上同样有效。
 
 你的第一个变量 `length` 将通过乘以 1000，将传递给类的轨道长度从秒转换为毫秒。你还将 `currentTime` 设置为 0，并声明了一个名为 `interval` 的变量。`interval` 变量负责持有定义的间隔的引用，以反复调整轨道的计时。
 
@@ -4081,9 +4124,6 @@ updateInterval = 1000 / 30;
 然后你声明了应用程序的当前状态，并将其默认状态设置为 `this.state.STOPPED`。
 
 最后，你创建了一个名为 `updateInterval` 的新变量，用于设置每秒更新时间的次数。例如，如果你想每秒更新 500 次间隔，则可以将 `updateInterval` 设置为 `updateInterval = 1000 / 500`。
-
-
-
 
 ```javascript
 this.stop = function(){
@@ -4236,18 +4276,14 @@ app.playButton = function(id, track){
 **表 7-3.** *fillRect 方法参数*
 
 | 参数 | 说明 |
+
 | :--- | :--- |
-| x | 相对于画布放置放置矩形左上角 x 坐标 |
-| y | |
 
+| x | 相对于画布放置放置矩形左上角 x 坐相对于画布宽度的位置 |
 
+| y | 矩形左上角 y 坐标相对于画布宽度的位置 |
 
-
-
-# 矩形左上角 y 坐标相对于画布宽度的位置
-
-矩形的宽度
-矩形的高度
+| 矩形的宽度 | 矩形的高度 |
 
 要绘制一个 20px × 20px 的简单矩形，你会使用以下代码：
 
@@ -4298,24 +4334,34 @@ app.playButton = function(id, track){
 ### 表 7-4 基础 2D Context 属性
 
 | 属性 | 描述 |
+
 | :--- | :--- |
+
 | `context.fillStyle` | 设置绘制形状的填充颜色。可以使用十六进制（`#000000`）、RGB 颜色（`rgb(0,0,0)`）或带透明道的颜色（`rgba(0,0,0,0.5)`）的实色。 |
+
 | `context.lineWidth` | 将设置此后绘制的任何线条的宽度。值可以是双点数，例如 `1.5`。 |
+
 | `context.lineCap` | 将设置任何线条的端点样式。有效值为 `butt`、`round` 和 `square`。 |
+
 | `context.strokeStyle` | 这是上下文的描边样式。它设置设置此后绘制的任何线条的颜色。可以使用十六进制（`#000000`）、RGB 颜色（`rgb(0,0,0)`）或带透明道的颜色（`rgba(0,0,0,0.5)`）的实色。 |
 
 ### 表 7-5 基础 2D Context 方法
 
 | 方法 | 描述 |
+
 | :--- | :--- |
-| `context.fillRect(x, y, width, height)` | 将创建一个具有指定属性的矩形。 |
+
+| `context.fillRect(x, y, width, height)` | 将创建一个具有指属性的矩形。 |
+
 | `context.strokeRect(x, y, width, height)` | 将创建一个没有填充但具有指定属性描边的矩形。 |
+
 | `context.clearRect(x, y, width, height)` | 将绘制一个具有指定属性的“白色”矩形。 |
+
 | `context.arc(x, y, center, start angle, end angle, anticlockwise)` | 将使用指定属性绘制弧。起始和结束角度以弧度定义。`anticlockwise` 是一个布尔值，用于指定绘制圆弧的方向。 |
 
 ### 绘制播放图标
 
-播放按钮稍微复杂一些。要绘制播放按钮，你需要使用路径。为了绘制路径，你使用 `moveTo` 和 `lineTo` 方法。这些方法允许你移动到某点而不画线，并在纸上绘制新形状之前移动画线。
+播放按钮稍微复杂一些。要绘制播放按钮，你需要使用路径。为了绘制路径，你使用 `moveTo` 和 `lineTo` 方法。这些方法允许你移动到某点而不画线，并在纸上画一个新形状之前移动画线。
 
 ```javascript
 app.playButton = function(id, track){
@@ -4342,787 +4388,8 @@ app.playButton = function(id, track){
 
 *(注：此处由于原文提供的代码块逻辑与描述有出入，翻译已严格遵循“不翻译代码块”原则，保留代码结构，仅对描述性文字进行翻译。)*
 
-[/content] 
 
-*(抱歉，由于您提供的原文文本在结尾处出现了截断，我根据您提供的完整内容进行了翻译。如果原文在 `of the` 处停止了，请提供完整文本以获得更准确的结尾翻译。)*
 
-**更正：** 发现您提供的待翻译文本在最后 `requires complete redraw of the` 处截断了。以下是基于您提供的**所有文本内容**的完整翻译：
-
-[content]
-
-# 矩形左上角 y 坐标相对于画布宽度的位置
-
-矩形的宽度
-矩形的高度
-
-要绘制一个 20px × 20px 的简单矩形，你会使用以下代码：
-
-```javascript
-context.fillStyle = '#000000';
-context.fillRect(0, 0, 20, 20);
-```
-
-这将产生一个与图 7-6 所示类似的矩形。
-
-![Image 97](img/index-200_1.jpg)
-
-**图 7-6.** *一个 20px × 20px 的矩形*
-
-`context.fillStyle` 将将任何新闭合形状（如矩形或圆形）的填充颜色设置为黑色或 `#000000`。
-
-在用于播放按钮上绘制停止符号矩形的代码中，你需要考虑停止符号相对于画布的位置。你希望将停止符号直接放置在画布中央。为了让停止符号居中，你需要计算停止符号左上角的 `x` 和 `y` 偏移量。为了计算这一点，你需要将画布的宽度和高度减半以得到偏移量。然后，你可以从形状的中心减去画布的中心得到 `x` 和 `y` 坐标。这种方法实际上是将要绘制形状的中心与画布的中心对齐。
-
-以下代码将根据画布本身的大小将停止图标在画布居中。
-
-```javascript
-app.playButton = function(id, track){
-  ...
-  this.drawStop = function(){
-    var width = 20,
-    height = 20,
-    x = canvas.center.x - (width / 2),
-    y = canvas.center.y - (height / 2);
-    context.beginPath();
-    context.fillStyle = '#A0A0A0';
-    context.fillRect(x, y, width, height);
-  };
-}
-```
-
-如你所示，你将停止图标的 `width` 和 `height` 声明为 `20`以便后续引用。你还通过获取画布中心 x 坐标减去矩形宽度的一半来计算 `x` 坐标。这将使停止图标水平居中。
-
-接下来，`y` 坐标的设置类似，通过将画布的高度（其中心）减半并减去停止图标高度的一半来设置。这会将停止图标垂直放置在画布中心，如图 7-7 所示。将这两个计算结合起来将使停止图标在画布内完全居中。
-
-![Image 98](img/index-202_1.jpg)
-
-**图 7-7.** *沿 x 轴和 y 轴居中停止图标*
-
-在开始 Canvas 中绘制新形状之前，调用 `context.beginPath()` 是一个好习惯。这会在上下文中创建一个新路径供你开始绘制。这相当于在纸上画一个新形状之前将笔抬离开纸。
-
-接下来，你需要设置即将绘制的形状的 `fillStyle`。2D 上下文 API 有几种绘制方法。API 最基本的方法和属性如表 7-4 和表 7-5 所示。
-
-### 表 7-4 基础 2D Context 属性
-
-| 属性 | 描述 |
-| :--- | :--- |
-| `context.fillStyle` | 设置绘制形状的填充颜色。可以使用十六进制（`#000000`）、RGB 颜色（`rgb(0,0,0)`）或带透明道的颜色（`rgba(0,0,0,0.5)`）的实色。 |
-| `context.lineWidth` | 将设置此后绘制的任何线条的宽度。值可以是双点数，例如 `1.5`。 |
-| `context.lineCap` | 将设置任何线条的端点样式。有效值为 `butt`、`round` 和 `square`。 |
-| `context.strokeStyle` | 这是上下文的描边样式。它设置设置此后绘制的任何线条的颜色。可以使用十六进制（`#000000`）、RGB 颜色（`rgb(0,0,0)`）或带透明道的颜色（`rgba(0,0,0,0.5)`）的实色。 |
-
-### 表 7-5 基础 2D Context 方法
-
-| 方法 | 描述 |
-| :--- | :--- |
-| `context.fillRect(x, y, width, height)` | 将创建一个具有指定属性的矩形。 |
-| `context.strokeRect(x, y, width, height)` | 将创建一个没有填充但具有指定属性描边的矩形。 |
-| `context.clearRect(x, y, width, height)` | 将绘制一个具有指定属性的“白色”矩形。 |
-| `context.arc(x, y, center, start angle, end angle, anticlockwise)` | 将使用指定属性绘制弧。起始和结束角度以弧度定义。`anticlockwise` 是一个布尔值，用于指定绘制圆弧的方向。 |
-
-### 绘制播放图标
-
-播放按钮稍微复杂一些。要绘制播放按钮，你需要使用路径。为了绘制路径，你使用 `moveTo` 和 `lineTo` 方法。这些方法允许你移动到某点而不画线，并在纸上画一个新形状之前移动画线。
-
-```javascript
-app.playButton = function(id, track){
-  ...
-  this.drawPlay = function(){
-    var width = 20,
-    height = 20,
-    x = canvas.center.x - (width / 2),
-    y = canvas.center.y - (height / 2);
-    context.beginPath();
-    context.moveTo(x, y);
-    context.lineTo(x + width, y);
-    context.lineTo(x, y + height);
-    context.closePath();
-    context.fillStyle = '#A0A0A0';
-    context.fill();
-  };
-}
-```
-*(注：由于您提供的待翻译文本中“Drawing the Play Icon”部分的描述与代码块内容不匹配，翻译严格遵循“不翻译代码块”原则，仅翻译了描述文字。)*
-
-*(此处为我重复的逻辑说明，请忽略，以下为最终的纯净翻译输出：)*
-
-[/content] 
-
-*(对歉，上方由于系统逻辑出现了重复输出，请重新查看下方。**发现您提供的待翻译文本在最后 `requires complete redraw of the` 处截断了。以下是基于您提供的**所有文本内容**的最终纯净翻译：)**
-
-[content]
-
-# 矩形左上角 y 坐标相对于画布宽度的位置
-
-矩形的宽度
-矩形的高度
-
-要绘制一个 20px × 20px 的简单矩形，你会使用以下代码：
-
-```javascript
-context.fillStyle = '#000000';
-context.fillRect(0, 0, 20, 20);
-```
-
-这将产生一个与图 7-6 所示类似的矩形。
-
-![Image 97](img/index-200_1.jpg)
-
-**图 7-6.** *一个 20px × 20px 的矩形*
-
-`context.fillStyle` 将将任何新闭合形状（如矩形或圆形）的填充颜色设置为黑色或 `#000000`。
-
-在用于播放按钮上绘制停止符号矩形的代码中，你需要考虑停止符号相对于画布的位置。你希望将停止符号直接放置在画布中央。为了让停止符号居中，你需要计算停止符号左上角的 `x` 和 `y` 偏移量。为了计算这一点，你需要将画布的宽度和高度减半以得到偏移量。然后，你可以从形状的中心减去画布的中心得到 `x` 和 `y` 坐标。这种方法实际上是将要绘制形状的中心与画布的中心对齐。
-
-以下代码将根据画布本身的大小将停止图标在画布居中。
-
-```javascript
-app.playButton = function(id, track){
-  ...
-  this.drawStop = function(){
-    var width = 20,
-    height = 20,
-    x = canvas.center.x - (width / 2),
-    y = canvas.center.y - (height / 2);
-    context.beginPath();
-    context.fillStyle = '#A0A0A0';
-    context.fillRect(x, y, width, height);
-  };
-}
-```
-
-如你所示，你将停止图标的 `width` 和 `height` 声明为 `20`以便后续引用。你还通过获取画布中心 x 坐标减去矩形宽度的一半来计算 `x` 坐标。这将使停止图标水平居中。
-
-接下来，`y` 坐标的设置类似，通过将画布的高度（其中心）减半并减去停止图标高度的一半来设置。这会将停止图标垂直放置在画布中心，如图 7-7 所示。将这两个计算结合起来将使停止图标在画布内完全居中。
-
-![Image 98](img/index-202_1.jpg)
-
-**图 7-7.** *沿 x 轴和 y 轴居中停止图标*
-
-在开始 Canvas 中绘制新形状之前，调用 `context.beginPath()` 是一个好习惯。这会在上下文中创建一个新路径供你开始绘制。这相当于在纸上画一个新形状之前将笔抬离开纸。
-
-接下来，你需要设置即将绘制的形状的 `fillStyle`。2D 上下文 API 有几种绘制方法。API 最基本的方法和属性如表 7-4 和表 7-5 所示。
-
-### 表 7-4 基础 2D Context 属性
-
-| 属性 | 描述 |
-| :--- | :--- |
-| `context.fillStyle` | 设置绘制形状的填充颜色。可以使用十六进制（`#000000`）、RGB 颜色（`rgb(0,0,0)`）或带透明道的颜色（`rgba(0,0,0,0.5)`）的实色。 |
-| `context.lineWidth` | 将设置此后绘制的任何线条的宽度。值可以是双点数，例如 `1.5`。 |
-| `context.lineCap` | 将设置任何线条的端点样式。有效值为 `butt`、`round` 和 `square`。 |
-| `context.strokeStyle` | 这是上下文的描边样式。它设置设置此后绘制的任何线条的颜色。可以使用十六进制（`#000000`）、RGB 颜色（`rgb(0,0,0)`）或带透明道的颜色（`rgba(0,0,0,0.5)`）的实色。 |
-
-### 表 7-5 基础 2D Context 方法
-
-| 方法 | 描述 |
-| :--- | :--- |
-| `context.fillRect(x, y, width, height)` | 将创建一个具有指定属性的矩形。 |
-| `context.strokeRect(x, y, width, height)` | 将创建一个没有填充但具有指定属性描边的矩形。 |
-| `context.clearRect(x, y, width, height)` | 将绘制一个具有指定属性的“白色”矩形。 |
-| `context.arc(x, y, center, start angle, end angle, anticlockwise)` | 将使用指定属性绘制弧。起始和结束角度以弧度定义。`anticlockwise` 是一个布尔值，用于指定绘制圆弧的方向。 |
-
-### 绘制播放图标
-
-播放按钮稍微复杂一些。要绘制播放按钮，你需要使用路径。为了绘制路径，你使用 `moveTo` 和 `lineTo` 方法。这些方法允许你移动到某点而不画线，并在纸上画一个新形状之前移动画线。
-
-```javascript
-app.playButton = function(id, track){
-  ...
-  this.drawPlay = function(){
-    var width = 20,
-    height = 20,
-    x = canvas.center.x - (width / 2),
-    y = canvas.center.y - (height / 2);
-    context.beginPath();
-    context.moveTo(x, y);
-    context.lineTo(x + width, y);
-    context.lineTo(x, y + height);
-    context.closePath();
-    context.fillStyle = '#A0A0A0';
-    context.fill();
-  };
-}
-```
-*(注：由于您提供的待翻译文本中“Drawing the Play Icon”部分的描述与代码块内容不匹配，翻译严格遵循“不翻译代码块”原则，仅翻译了描述文字。)*
-
-Canvas 的问题在于你无法对每个形状进行动画处理。移动或动画 Canvas 元素需要完全重绘整个
-
-
-
-
-在 Canvas 中实现动画需要通过 JavaScript 跟踪每个对象的状态，并在每次调用 `draw` 时对其进行渲染。这是一个漫长且耗力的过程，但通过正确的实现，可以减少时间消耗。
-
-为了跟踪音轨的进度，你首先需要计算出它当前进度的百分比。
-
-# 第 7 章：移动端 JavaScript
-
-```javascript
-app.playButton = function(id, track){
-  ...
-  this.draw = function(){
-    var percentage = 100 - ((track.getCurrentTime() / track.getLength())
-    * 100);
-  };
-}
-```
-
-其计算方法简单为 `(当前时间 / 长度) * 100`。这将为你提供一个 1 到 100 之间的可预测数字。你需要返回一个百分比，其中 100% 代表轨道开始，0% 代表轨道结束。为了实现这一点，你只需要从 `100` 中减去已播放的百分比，即可得到剩余的百分比。
-
-下一步是根据剩余轨道的百分比（`percentage`）计算播放头的角度。你知道 `2 * π (PI)` 的结果将等于圆周的弧度角度。`0 * π (PI)` 将导致 `0`，从而产生一个空圆。
-
-```javascript
-app.playButton = function(id, track){
-  ...
-  this.draw = function(){
-    var percentage = 100 - ((track.getCurrentTime() / track.getLength()) *
-    100);
-    var endradians = (percentage * (2 / 100)) * Math.PI;
-  };
-}
-```
-
-图 7-10 显示了 `PI` 计算的显著位置。
-
-![图像 101](img/index-208_1.jpg)
-
-**图 7-10.** *n π 弧度*
-
-如你所示，`0` 从圆的正右侧开始，而 `2` 也产生相同的位置。如果你将弧的起始位置设置为 `0`，结束位置设置为 `2 * PI`，结果将无所产出，因为 `0°` 角度会导致圆圆没有周长。
-
-你将定期重绘画布，因此在每次重绘时都需要清除画布，以防止在新的形状下方显示之前的上下文形状。这可以通过调用 `context.clearRect(0, 0, canvas width, canvas height);` 实现。这本质上是在整个画布上绘制一个透明的矩形。你不需要担心矩形绘制后内存或形状的存在，因为内存中只保留当前的上下文。
-
-```javascript
-app.playButton = function(id, track){
-  ...
-  this.draw = function(){
-    var percentage = 100 - ((track.getCurrentTime() / track.getLength()) *
-    100);
-    var endradians = (percentage * (2 / 100)) * Math.PI;
-    context.clearRect(0, 0, canvas.dimensions.width,
-    canvas.dimensions.height);
-  };
-}
-```
-
-下一步是绘制作为播放按钮背景的圆。通过绘制一个完整的圆并将其填充黑色来实现这一目标。
-
-```javascript
-app.playButton = function(id, track){
-  ...
-  this.draw = function(){
-    var percentage = 100 - ((track.getCurrentTime() / track.getLength()) *
-    100);
-    var endradians = (percentage * (2 / 100)) * Math.PI;
-    context.clearRect(0, 0, canvas.dimensions.width,
-    canvas.dimensions.height);
-    /**
-    * 绘制播放按钮
-    */
-    context.beginPath();
-    context.fillStyle = '#00000';
-    context.arc(canvas.center.x, canvas.center.y,
-    canvas.center.x - 10, 0, 2 * Math.PI, false);
-    context.fill();
-  };
-}
-```
-
-下一步是绘制一个没有填充的圆并对其应用 `stroke`（描边），以提供随着播放头移动而显露出的的背景。
-
-```javascript
-app.playButton = function(id, track){
-  ...
-  this.draw = function(){
-    var percentage = 100 - ((track.getCurrentTime() / track.getLength()) *
-    100);
-    var endradians = (percentage * (2 / 100)) * Math.PI;
-    context.clearRect(0, 0, canvas.dimensions.width,
-    canvas.dimensions.height);
-    /**
-    * 绘制播放按钮
-    */
-    context.beginPath();
-    context.fillStyle = '#00000';
-    context.arc(canvas.center.x, canvas.center.y,
-    canvas.center.x - 10, 0, 2 * Math.PI);
-    context.fill();
-    /**
-    * 绘制播放头的背景
-    */
-    context.beginPath();
-    context.lineWidth = 5;
-    context.strokeStyle = "#FFFFFF";
-    context.arc(canvas.center.x, canvas.center.y,
-    canvas.center.x - 20, 0, 2 * Math.PI);
-    context.stroke();
-  };
-}
-```
-
-最后，是根据轨道的当前播放位置绘制播放头。这段代码与播放头背景的代码相同，不同之处结束角度设置为代码中之前声明的 `endradians`，以代表轨道的进度。
-
-```javascript
-app.playButton = function(id, track){
-  ...
-  this.draw = function(){
-    var percentage = 100 - ((track.getCurrentTime() / track.getLength()) *
-    100);
-    var endradians = (percentage * (2 / 100)) * Math.PI;
-    context.clearRect(0, 0, canvas.dimensions.width,
-    canvas.dimensions.height);
-    /**
-    * 绘制播放按钮背景
-    */
-    context.beginPath();
-    context.fillStyle = '#00000';
-    context.arc(canvas.center.x, canvas.center.y,
-    canvas.center.x - 10, 0, 2 * Math.PI);
-    context.fill();
-    /**
-    * 绘制播放头的背景
-    */
-    context.beginPath();
-    context.lineWidth = 5;
-    context.strokeStyle = "#FFFFFF";
-    context.arc(canvas.center.x, canvas.center.y,
-    canvas.center.x - 20, 0, 2 * Math.PI);
-    context.stroke();
-    /**
-    * 绘制播放头
-    */
-    context.beginPath();
-    context.lineWidth = 5;
-    context.strokeStyle = "#FFFFFF";
-    context.arc(canvas.center.x, canvas.center.y,
-    canvas.center.x - 20, 0, endradians);
-    context.stroke();
-  };
-}
-```
-
-
-
-
-```javascript
-};
-
-this.drawStop = function(){
-  var width = 20,
-  height = 20,
-  x = canvas.center.x - (width / 2),
-  y = canvas.center.y - (height / 2);
-  context.beginPath();
-  context.fillStyle = '#A0A0A0';
-  context.fillRect(x, y, width, height);
-};
-
-this.drawPlay = function(){
-  var width = 20,
-  height = 20,
-  x = canvas.center.x - (width / 2),
-  y = canvas.center.y - (height / 2);
-  context.beginPath();
-  context.moveTo(x, y);
-  context.lineTo(x + width, y + (height / 2));
-  context.lineTo(x, (y + height))
-  context.fillStyle = '#A0A0A0';
-  context.fill();
-};
-
-this.draw = function(){
-  // 根据歌曲当前时间和和总时间
-  // 绘制进度条
-  var percentage = 100 - ((track.getCurrentTime() / track.getLength()) * 100);
-  var endradians = (percentage * (2 / 100)) * Math.PI;
-  context.clearRect(0, 0, canvas.dimensions.width, canvas.dimensions.height);
-  context.beginPath();
-  context.fillStyle = '#000000';
-  context.arc(canvas.center.x, canvas.center.y, canvas.center.x - 10, 0, 2 * Math.PI);
-  context.fill();
-  context.beginPath();
-  context.arc(canvas.center.x, canvas.center.y, canvas.center.x - 20, 0, 2 * Math.PI);
-  context.lineWidth = 5;
-  context.strokeStyle = "#FFFFFF";
-  context.stroke();
-  context.beginPath();
-  context.arc(canvas.center.x, canvas.center.y, canvas.center.x - 20, 0, endradians);
-  context.lineWidth = 5;
-  context.strokeStyle = "#A8A8A8";
-  context.stroke();
-  switch(track.getState()){
-    case track.state.PAUSED:
-    case track.state.STOPPED:
-      this.drawPlay();
-      break;
-    case track.state.PLAYING:
-      this.drawStop();
-      break;
-  }
-};
-
-canvas.addEventListener('touchend', function(e){
-  _self.togglePlay();
-  e.preventDefault();
-});
-
-this.draw();
-};
-```
-
-**图 7-11.** *最终播放按钮*
-
-### 存储数据
-
-传统上，为了在移动 Web 应用程序中持久化数据（例如用户名），你会会将这些信息存储在 `cookie` 中。Cookie 的问题在于，虽然它们非常适合存储少量数据，但对于大量数据（例如 `JavaScript` 对象），它们很快就会变得难以管理。不过当你希望存储应用程序的当前状态时，这种方法是完美的，这样当用户返回时，他们可以从上次离开的地方继续，就像原生应用程序一样。
-
-遗憾的是，`local storage` 不支持存储对象，只支持字符串值。
-
-你可以使用 `JSON.stringify` 将对象转换为字符串，并使用 `JSON.parse` 将它们转换回对象。
-
-使用 `local storage` 存储数据，只需使用 `localStorage` API。这些 API 由表 7-6 所示的属性和方法组成。
-
-**表 7-6.** *本地存储方法与属性*
-
-| API 方法 | 说明 |
-| :--- | :--- |
-| `localStorage.clear()` | 清除本地存储中的所有数据 |
-| `localStorage.setItem(key, value)` | 在本地存储中设置键值对 |
-| `localStorage.getItem(key)` | 根据键从本地存储中获取项目 |
-| `localStorage.key(0)` | 根据索引值从本地存储中获取项目；可以通过调用 `localStorage.key(localStorage.length)` 获取本地存储中的最后一个项目 |
-| `localStorage.removeItem(key)` | 根据键从本地存储中移除项目 |
-| `localStorage.length` | 返回本地存储中的项目数量 |
-
-例如，如果你想存储一个包含用户名、电子邮件地址和联系电话的对象，你可以创建如下内容的内容：
-
-```javascript
-var user = {name: "John Seagate", email: "john.seagate@hello.com", contactNumber: "012345678910"}
-localStorage.setItem('user', JSON.stringify(user));
-```
-
-要检索该项目，你可以使用以下代码：
-```javascript
-var user = JSON.parse(localStorage.getItem('user'));
-```
-
-# 用于移动端的 JavaScript 库
-
-`JavaScript` 库可以帮助完成任何前端开发中的繁重工作。它们可以帮助为从 `DOM` 操作到包罗百代的任何功能提供一致的 API。本章将使用三个库作为示例。
-
-* `XUI`
-* `jQuery Mobile`
-* `Sencha Touch`
-
-**图 7-12.** *jQuery Mobile（左侧）和 Sencha Touch（右侧）*
-
-## XUI
-
-`XUI` 专为移动端设计，并提供了类似于 `jQuery` 的语法和轻量级的 `DOM` 操作。它具有类似于 `jQuery` 的插件架构，因此你可以根据需要扩展 `XUI`。`XUI` 提供了一种更复杂且功能齐全的方法论。
-
-## jQuery Mobile
-
-`jQuery Mobile` 和 `Sencha Touch` 都是重量级库；然而，你最终创建的是基于 `jQuery mobile` 或 `Sencha` 思维的应用。`jQuery Mobile` 可以帮助你快速原型并皮肤。
-
-## Sencha Touch
-
-`Sencha Touch` 提供了许多增强和组件，包括通过代理离线存储数据的功能。它为任何功能提供一致的 API。
-
-## 通用考量
-
-### 文件大小
-
-确保任何库都具有较小的占用是非常重要的。遗憾的是，某些移动运营商不提供无限流量套餐，因此确保访问你的网站不会对用户的钱包产生巨大影响。同样必须记住，尽管 `3G` 和 `LTE` 提供了较高的数据速度，但并非所有用户都能访问 `3G` 或 `LTE`。这会影响加载时间，因为一个 500KB 的库加上整个应用程序图像和 `CSS` 资源通过 `3G/LTE` 下载需要几秒钟；在 `EDGE` 上可能需要长时间。因此，请考虑最低标准，在这种情况下是 `EDGE`。
-
-### 文件数量
-
-在目前，移动浏览器可以发起的请求数量有限。这意味着如果你有很多资源需要下载到浏览器，这会影响加载时间。通过确保你使用的 JavaScript 库提供以下内容可以克服这个问题：
-
-* 源代码的压缩和合并版本
-* 用于图标和按钮等元素的精灵图
-* 库的 CDN（内容分发网络）托管版本
-
-### 活跃
-
-你应该检查该库最近更新是什么时候，以及多久发布一次新版本（发布周期）。这对你的开发有影响，如果你是一个热于跟进错误修复和重大版本发布的人，你可能会发现自己不断根据最新版本更新代码；更糟糕的是，如果该库被遗弃且不再维护，这意味着你必须学习一个新的库，或者维护那个被遗弃的库。
-
-### CSS3 支持
-
-许多库现在正在更新代码，以利用 GPU 对 `CSS3` 动画和过渡支持的增强。
-
-
-
-
-检查你的库，以确保它支持或有关于 CSS3 过渡和动画的路线图，而非 JavaScript 动画和过渡。这将为你的应用程序提供性能增强。
-
-## 总结
-
-通过本章，你应该对 JavaScript 通用以及移动带给你的新功能有更深入的理解。
-
-你应该能够区分过程式 JavaScript 和面向对象 JavaScript 之间的区别，并理解将对象互相传递比在全局命名空间调用函数好得多的概念和原则。
-
-你还应该对 JavaScript 中的作用域有简要了解，以及如何通过闭包和使用 `_self = this` 在对象之间维持作用域。
-
-你还应该对如何在 JavaScript 中处理触控事件有简要了解，并意识到通过这一点，你可以开发出丰富丰富的应用程序。
-
-本章详细介绍了 Canvas。你应该理解 HTML5 Canvas 的工作原理，以及上下文（context）和绘图 API 背后的思想，例如 `arc`、`fillRect`，以及样式 API，如 `lineStyle` 和 `fillStyle`。
-
-# 第 8 章：JavaScript：模型、视图与控制器
-
-有很多开发设计模式。其中一种非常脱颖而出且可以应用于几乎所有编程语言的模式是 MVC（模型-视图-控制器）。MVC 将应用程序应该如何结构划分为不同的责任层。
-
-作为开发者，我们非常常见的情况是直接跳进去开始做一个项目，而并不真正理解该项目最终将如何演变或增长。例如，我们使用 Ajax 从外部资源获取数据，然后简单地在同一个代码块的 HTML 中渲染这些数据。当你想要在应用程序的另一个部分使用相同的 HTML，但为了不同的目的并使用不同的数据源时，会发生什么？最快的方法是复制粘贴代码并修改变量。
-
-当你开始以这种方式为你的应用程序堆载更多功能时，它看起来可能更像是用果冻和巧克力构建的应用程序，而不是代码和逻辑。虽然这听起来很美味，但点在于，如果你从一开始就按照这种构建应用程序，使其以后可以轻松扩展，那么将来添加更多功能将花费更少的时间和金。
-
-实现这一点的部分是对应用程序的某些方面进行标准化或创建规则。这可能会让代码编写起来更长，但对于你以外的其他开发者更容易维护。通过采用 MVC，你采用了一种易于理解的工作方法。你的技能水平不应该决定你是否应该学习设计模式。你可以以任何喜欢的方式实现 MVC；然而，本章将向你展示在 JavaScript 中使用 MVC 的方法。
-
-通过本章，你将学习如何创建和实现自己的 MVC 框架。你将学习模型是什么，以及它们如何作为应用程序的命脉。你将学习控制器如何帮助绑定和管理应用程序中的事件，以及如何构建可重复的视图。
-
-**注意：** 在开始之前，你需要一个 Rotten Tomatoes 开发者账户。要创建一个帐户，请访问 `http://developer.rottentomatoes.com` 并按照步骤创建开发者账户并获取 API 密钥。
-
-## 清理你的代码
-
-在开始为本章编写任何代码之前，你需要清理为第 4 章创建的应用程序根目录下的 `index.html`。
-
-大部分 HTML（如收藏列表和电影预览列表）现在将使用 JavaScript 生成。我们在本章将涵盖很多内容；为了详细关注所有这些问题，寻找电影院和播放音频轨道将从最终功能列表中移除。
-
-打开 `index.html` 并确保你的 HTML 看起来如下所示。
-
-```html
-<!DOCTYPE html>
-<html lang="en-GB" dir="ltr">
-<head>
-<meta charset="UTF-8" />
-<meta name="viewport" content=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0; target-densitydpi=device-dpi;"/>
-<title>Mo Memo</title>
-<link rel="stylesheet" type="text/css" href="css/mobile.css" />
-<link rel="apple-touch-icon-precomposed" href="img/home-screen-icon.png">
-</head>
-<body>
-<div id="shoe">
-<!-- Begin Taskbar -->
-<header id="taskbar" class="screenbar">
-<h1 class="branding">Mo Memo</h1>
-<!-- Taskbar Search form -->
-<form method="post" id="add-movie" class="horizontal">
-<input type="text" class="full-width search" name="query" placeholder="enter your movie name&hellip;" />
-</form>
-</header>
-<!-- End Taskbar -->
-<!-- Begin Movie List Deck -->
-<div class="deck">
-<div class="card active" id="card-favorite_list"></</div>
-<div class="card" id="card-movie_search_results"></</div>
-<div class="card" id="card-movie_info"></</div>
-</</div>
-<!-- End Movie List Deck -->
-</div>
-</body>
-</html>
-```
-
-正如你从前面的代码中看到的，`<div />` 的 ID 和类有几处更改。单个卡片的内容也已被删去。这是因为在本章中，你将学习如何在 JavaScript 中创建可重用的 HTML 片段，称为“视图（views）”。这允许你将视图保持在应用程序主代码之外，并放在其独立的可维护文件中。
-
-## MVC 与 JavaScript 基础
-
-JavaScript 基于 ECMAScript 标准。我们在 20 世纪末见证了 JavaScript 普及的眷顾，当时 webdynamic.com 帮助将 JavaScript 推向了前沿。
-
-然后，就像几年前 Web 2.0 是流行 Web 技术（如 Ajax、JavaScript 和 HTML）和概念（包括 API、RSS、社交媒体以及大规模内容生产与消费）的集合的术语一样，DHTML 是利用 JavaScript、DOM 操作和 CSS（例如，在网页上制作漂浮的雪花）的术语。
-
-很快，JavaScript 变得非常流行，并且在具有 Java 和 C/C++ 等语言的企业软件开发经验的严肃开发人员手中，JavaScript 成熟了。然而，浏览器在实现上是不一致的；JavaScript 开发者经常痛苦，因为知道其他浏览器对 Ajax/XMLHttpRequest 的实现与当时流行的 Internet Explorer 完全不同。即使是绑定事件或选择元素等简单任务也很麻烦，因为你需要为 Internet Explorer 编写一套，再为其他浏览器编写一套。
-
-我们后来获得了如 MooTools、DoJo、jQuery 和 YUI 等库来为我们分担许多繁重工作。例如，与其编写几行代码来创建一个兼容 Internet Explorer 和 Firefox 的 Ajax 请求，你可以使用 jQuery 一次性涵盖两者，如下：
-
-```javascript
-$.ajax('/my/data/provider.json');
-```
-
-不幸的是，这给我们留下了一群新开发者，他们有理由认为 jQuery、DoJo、MooTools 或 YUI 才是真正的 JavaScript。过程式 JavaScript 与库代码混合成为常态，而在 `$(document).ready(function(){});` 中充斥意大利面代码对于不断增长的 Web 应用程序来说将变得难以维护。
-
-
-
-
-这些工具非常奇且强大，但你很容易依赖它们，而不理解它们究竟是如何运作的，以及为什么在移动端上应该或不应该使用其中某一个。如果你主要使用 `jQuery`，那太棒了。自 2007 年（1.1 版本）以来，我作为一个开发者一直在使用 `jQuery`，从 2005 年开始使用 `script.aculo.us`（尽管我不愿承认）。然而，我是先学习 `JavaScript` 的，并且在使用它们之前，我已经研究过 `jQuery` 和 `script.aculo.us` 的代码。
-
-这在移动端更为重要，因为库中找到大部分代码在你的移动 Web 应用中几乎不会被用到。至少，你可能会用到 DOM 选择器、遍历、事件绑定和 `Ajax`，这些只占了库代码的一小部分。尽管如此，在一个已经在供需平衡上挣扎扎的网络上下载整个工具包是不明智的。
-
-![Image 104](img/index-224_1.jpg)
-
-# 第 8 章：JavaScript：模型、视图与控制器
-
-相反，有时自己编写一个微型的 `JavaScript` 库或框架实际上会更有利。你永远不会因为太像新手而无法学习如何这样做；事实上，现在就养成习惯其实更好。
-
-框架简单来说就是处理代码的方法、标准或实践。你创建框架是为了将应用程序的关键部分分离出来，以便在应用程序增长时更易于管理。框架还管理数据在应用程序中的流转方式。你将主要看到 `JavaScript` 对象从一个方法传递到另一个方法以进行展示。这些对象通常代表某种形式的实体，被称为模型（models）。
-
-模型通常会被传递给一个方法或函数，然后由其将其显示给用户。在 `MVC` 中，处理和操作模型以展示的方法被称为控制器（controller），而生成包含模型的 HTML 代码被称为视图（view）。图 8-1 显示了 `MVC` 框架的结构。
-
-**图 8-1.** JavaScript 的 MVC 图
-
-## 模型 (The Model)
-
-`MVC` 中的 `M` 代表模型（Model）。模型是应用程序决定如何处理不同类型数据的部分。模型就是一个简单的 `JavaScript` 对象，可以代表某种实体。例如，你可能会为应用程序中的用户创建一个模型，如下所示：
-
-```javascript
-var user = function user(){}
-```
-
-**提示：** 你会注意到我命名了该函数，并将其赋值给一个变量。这本质上创建了一个命名函数，而不是匿名函数。这在许多情况下非常有用，例如调试，因为你可以在栈跟踪中看到方法名。
-
-用户通常会有属性，如姓名、密码和宠物。最好的做法是使用实例变量（只能从对象/模型内部访问的变量）创建这些属性，然后创建特有的访问器（getters）和设置（setters）来修改或检索这些值。这允许你围绕这些属性创建规则。例如，你可以为 `password` 创建一个 setter，接收明文密码，然后在对象内部对该值进行加密。通过省略 getter，你还可以防止其他代码从用户对象中获取用户的密码。接下来的代码展示了用户模型的演变。
-
-```javascript
-var user = function user(name, password, pet){
-  var _name = null,
-  _password = null,
-  _pet = null,
-  _self = this;
-  this.setName(name);
-  this.setPassword(password);
-  this.setPet(pet);
-  name = null;
-  password = null;
-  pet = null;
-}
-
-/**
-* 返回用户的姓名
- */
-this.getName = function(){
-  return _name;
-}
-
-/**
-* 设置姓名
- */
-this.setName = function(name){
-  _name = name;
-}
-
-/**
-* 设置密码
- */
-this.setPassword = function(password){
-  _password = password;
-}
-
-/**
-* 获取密码
- */
-this.getPassword = function(){
-  return _password;
-}
-
-/**
-* 设置宠物
- */
-this.setPet = function(pet){
-  _pet = pet;
-}
-
-/**
-* 获取宠物
- */
-this.getPet = function(){
-  return _pet;
-}
-```
-
-你可以看到，创建一个模型模型是合理的。在在用户用户用户，，管理 `pets` 数组中在在宠物宠物。。在整个 `pets` 数组中。在在。。。。在。在在在在在在在在，在。在在。在在在。在 `，， ` ` ` 方法来清理 `。``。 ` ` ` ` ` ` `。。。 ` ` ``` 方式如下：
-
-```javascript
-var user = function user(name, password){
-  _name = null,
-  _password = null,
-  _pets = [], // 默认值现在是数组而不是 null
-  _self = this;
-  this.setName(name);
-  this.setPassword(password);
-  // favoritePet 不是构造函数的一部分了，所以不需要设置
-  name = null;
-  password = null;
-
-/**
-* 现在既然你可以有多个宠物，将它添加到
-* 构造函数就有意义了
-*/
-this.addPet = function(pet){
-  // 在添加到宠物数组之前可以添加对象验证
-  _pets.push(pet);
-}
-
-/**
-* 从数组中根据特定索引获取宠物
- */
-this.getPet = function(index){
-  return _pets[index];
-}
-
-/**
-* 从数组中移除宠物
- */
-this.removePet = function(index){
-  /**
-  * Splice 可以从数组中删除项。它接受一个起始索引
-  * 要删除的数量
-  */
-  _pets.splice(index, 1);
-}
-```
-
-你可能想进一步允许用户拥有多个宠物。你可以通过在 `user` 模型中创建一个数组来实现。你需要几个新方法来管理 `pets` 数组：
-
-- `addPet` 向 `pets` 数组添加单个宠物。
-- `getPet` 根据特定索引从数组获取单个宠物。
-- `removePet` 使用索引从数组中移除单个宠物。
-- `setPets` 使用数组设置 `pets` 数组，覆盖现有的 `pets` 数组。
-- `gets` 获取分配给用户对象的所有宠物。
-
-`user` 对象的更改如下：
-
-
-
-
-
-```javascript
-using _pets = [];
-
-_pets.length = 0;
-
-/**
-* 与其用新数组完全替换 pets 数组，
-* 每只宠物都应该通过 addPet 方法进行相同的验证。
-* 与其重复任何验证代码，更合理的方法是使用 for 循环
-* 为每只宠物调用 addPet 方法。
-*/
-for(var i = 0; i < pets.length; i++){
-_self.addPet(pets[i]);
-}
-
-}
-
-/**
-* 获取 pets 数组
- */
-this.getPets = function(){
-return _pets;
-}
-}
-```
-
-从前面的代码中看到，大多数方法都是自言易懂的，`setPets` 方法除外。从 `setPets` 的代码中你可以看到，你必须先使用 `_pets.length = 0` 清空 pets 数组。然而，虽然这比使用 `_pets = [];` 为 `_pets` 变量分配一个新空数组要慢，但它只是简单地移除数组的所有元素，而不是创建一个新的空数组。我们没有将传递给方法的 pets 数组赋值给 pets 对象中的 `_pets` 数组，而是遍历新数组中的每只宠物并调用 `addPet` 方法。此此是为了确保任何新宠物都能通过用于向用户对象添加宠物的相同代码，这些代码可能包含验证或修改每个宠物对象。为了利用新代码，你可以编写类似下面的 JavaScript 代码的代码。
-
-```javascript
-var user = new user('Suzanne', 'password');
-var pet1 = new pet('Jack', 'dog');
-var pet2 = new pet('Snoop', 'dog');
-user.appPet(pet1);
-user.addPet(pet2);
-var message = user.name + ' has ' + user.getPets().length + ' pets. ' +
-user.name + ' has';
-for(var i = 0; i < user.getPets().length; i++){
-message += ' a ' user.getPet(i).getType() + ' called ' +
-user.getPet(i).getName();
-}
-alert(message);
-```
 
 这应该输出类似于“Suzanne has 2 pets. She has a dog called Jack a dog called Snoop”的内容。
 
@@ -5173,11 +4440,17 @@ var app = app || {};
 app.model = app.model || {};
 
 /**
+
 * 视频内部使用的视频源
+
 * 实例化后你必须将此对象添加到视频
+
 * @param {String} url
+
 * @param {app.type.format} format
+
 */
+
 app.model.videosource = function appModelVideoSource(url, format){
 
 // 你的实现在这里
@@ -5187,10 +4460,6 @@ app.model.videosource = function appModelVideoSource(url, format){
 
 你可以看到，模型的声明方式与 pets 模型相似，只是你对所有模型都使用了 `app.model` 命名空间。
 
-
-
-
-
 构造函数接收视频的 URL，以及一种可以是 `webm`、`ogv`、`mp4` 等格式。
 
 接下来要做的工作是声明实例变量。回顾一下，实例变量是只存在于对象实例范围内的变量。在实例外部，无法访问或修改实例变量，除非为该实例变量创建了 getter（get 器）或 setter（Setter）。
@@ -5199,12 +4468,19 @@ app.model.videosource = function appModelVideoSource(url, format){
 
 ```javascript
 app.model.videosource = function appModelVideoSource(url, format){
+
   /**
+
   * 视频源的实例变量
+
   */
+
   var _url,
+
   _format,
+
   _self = this;
+
 }
 ```
 
@@ -5218,16 +4494,27 @@ app.model.videosource = function appModelVideoSource(url, format){
 
 ```javascript
 app.model.videosource = function appModelVideoSource(url, format){
+
   ...
+
   /**
+
   * 使用构造函数的参数设置实例变量
+
   */
+
   this.init = function(){
+
     this.setUrl(url);
+
     this.setFormat(format);
+
   }
+
   // 插入 getters 和 setters
+
   this.init();
+
 }
 ```
 
@@ -5249,38 +4536,71 @@ app.model.videosource = function appModelVideoSource(url, format){
 
 ```javascript
 app.model.videosource = function appModelVideoSource(url, format){
+
   ...
+
   /**
+
   * Getters 和 setters
+
   */
+
   /**
+
   * 获取源的 url
+
   * @return {String}
+
   */
+
   this.getUrl = function(){
+
     return _url;
+
   }
+
   /**
+
   * 设置源的 url
+
   * @param {String}
+
   */
+
   this.setUrl = function(url){
+
     _url = url;
+
   }
+
   /**
+
   * 获取格式
+
   * @return {String}
+
   */
+
   this.getFormat = function(){
+
     return _format;
+
   }
+
   /**
+
   * 设置格式
+
   * @param {String}
+
   */
+
   this.setFormat = function(format){
+
     _format = format;
+
   }
+
 }
 ```
 
@@ -5290,7 +4610,9 @@ app.model.videosource = function appModelVideoSource(url, format){
 
 ```javascript
 app.model.videosource = function appModelVideoSource(url, format){
+
   ...
+
 }
 ```
 
@@ -5300,48 +4622,85 @@ app.model.videosource = function appModelVideoSource(url, format){
 
 ```javascript
 app.model.video = function appModelVideoSource(url, format){
+
   /**
+
   * 视频的实例变量
+
   */
+
   var _title,
+
   _length,
+
   _posterframe,
+
   _sources = [],
+
   _self = this;
+
 }
 ```
 
 ```javascript
 /**
+
  * 获取所有源
+
  * @return {Array}
+
  */
+
 this.getSources = function(){
+
   return _sources;
 }
+
 /**
+
  * 使用数组设置所有源
+
  * @param {Array}
+
  */
+
 this.setSources = function(sources){
+
   /**
+
    * 清空源数组
+
    */
+
   _sources.length = 0;
+
   /**
+
    * 与其一次性设置所有源，
+
    * 使用 addSource 方法，它可以在添加到对象之前
+
    * 处理任何验证
+
    */
+
   for(var i = 0; i < sources.length; i++){
+
     _self.addSource(sources[i]);
+
   }
 }
+
 /**
+
  * 将源添加到源数组中
+
  * @param {app.model.videosource} source
+
  */
+
 this.addSource = function(source){
+
   _sources.push(source);
 }
 ```
@@ -5352,25 +4711,36 @@ this.addSource = function(source){
 
 ```javascript
 /**
+
  * 设置以毫秒为单位的视频长度
+
  * @param {Integer} length
+
  */
+
 this.setLength = function(length){
+
   /**
+
    * 在这里使用 parseInt 只是确保长度
+
    * 是整数。如果不是，它将返回 NaN。
+
    * isNaN 方法将检查该值
+
    * 是否不是数字。
+
    */
+
   _length = parseInt(length);
+
   if(isNaN(_length)){
+
     _length = 0;
+
   }
 }
 ```
-
-
-
 
 你现在可以完成 Video 模型，它的 own 应该如下。
 
@@ -5380,126 +4750,225 @@ var app = app || {};
 app.model = app.model || {};
 
 /**
+
 * 与电影关联的视频
+
 * 你必须添加视频源才能播放视频
+
 * @param {String} title 标题
+
 * @param {Integer} length 长度
+
 * @param {String} posterframe 海报帧
+
 */
+
 app.model.video = function appModelVideo(title, length, posterframe){
+
   /**
+
   * 视频的实例变量
+
   */
+
   var _title,
+
   _length,
+
   _posterframe,
+
   _sources = [],
+
   _self = this;
 
   /**
+
   * 使用构造函数的参数设置实例变量
+
   */
+
   this.init = function(){
+
     this.setTitle(title);
+
     this.setLength(length);
+
     this.setPosterframe(posterframe);
+
   }
 
   /**
+
   * getter 和 setter
+
   */
+
   /**
-  * 获取视频标题
+
+  * 获取视频标ITLE
+
   * @return {String}
+
   */
+
   this.getTitle = function(){
+
     return _title;
+
   }
 
   /**
+
   * 设置视频标题
+
   * @param {String} title
+
   */
+
   this.setTitle = function(title){
+
     _title = title;
+
   }
 
   /**
+
   * 获取以毫秒为单位的视频长度
+
   * @return {Integer}
+
   */
+
   this.getLength = function(){
+
     return _length;
+
   }
 
   /**
+
   * 设置以毫秒为单位的视频长度
+
   * @param {Integer} length
+
   */
+
   this.setLength = function(length){
+
     /**
+
     * 使用使用 parseInt 确保长度
+
     * 是整数。如果不是，它将返回
+
     * NaN。isNaN 方法将检查
+
     * 该值是否不是数字。
+
     */
+
     _length = parseInt(length);
+
     if(isNaN(_length)){
+
       _length = 0;
+
     }
+
   }
 
   /**
+
   * 获取用于在 POSH 中嵌入视频的所有视频源
+
   * @return {Array}
+
   */
+
   this.getSources = function(){
+
     return _sources;
+
   }
 
   /**
+
   * 使用数组设置所有视频源
+
   * @param {Array} sources
+
   */
+
   this.setSources = function(sources){
+
     _sources.length = 0;
+
     /**
+
     * 与其一次性设置所有源，
+
     * 你使用 addSource 方法，它可以在
+
     * 将每个源添加到对象之前
+
     * 处理任何验证。
+
     */
+
     for(var i = 0; i < sources.length; i++){
+
       _self.addSource(sources[i]);
+
     }
+
   }
 
   /**
+
   * 获取特定索引处的源
+
   * @param {Integer} index 索引
+
   * @return {app.model.videosource} 源
+
   */
+
   this.getSource = function(index){
+
     return _sources[index];
+
   }
 
   /**
+
   * 删除特定索引处的源
+
   * @param {Integer} index 索引
+
   */
+
   this.removeSource = function(index){
+
     _sources.splice(index, 1);
+
   }
 
   /**
+
   * 向 sources 数组添加源
+
   * @param {app.model.videosource} source 源
+
   */
+
   this.addSource = function(source){
+
     _sources.push(source);
+
   }
 
   this.init();
+
 }
 ```
 
@@ -5517,64 +4986,111 @@ var app = app || {};
 app.model = app.model || {};
 
 /**
+
 * 演员对象处理电影的演员
+
 * 演员应该只出现在完整的电影列表中
+
 * @param {String} name 姓名
+
 * @param {String} role 角色
+
 */
+
 app.model.actor = function appModelActor(name, role){
+
   /**
+
   * 演员的实例变量
+
   */
+
   var _name,
+
   _role,
+
   _self = this;
 
   /**
+
   * 使用构造函数的参数设置实例变量
+
   */
+
   this.init = function(){
+
     this.setName(name);
+
     this.setRole(role);
+
   }
 
   /**
+
   * getter 和 setter
+
   */
+
   /**
+
   * 返回演员的全名
+
   * @return {String}
+
   */
+
   this.getName = function(){
+
     return _name;
+
   }
 
   /**
+
   * 设置演员的全名
+
   * @param {String} name 姓名
+
   */
+
   this.setName = function(name){
+
     _name = name;
+
   }
 
   /**
+
   * 获取演员与关联电影的
+
   * 角色
+
   * @return {String}
+
   */
+
   this.getRole = function(){
+
     return _role;
+
   }
 
   /**
+
   * 设置演员在关联电影中的* 角色
+
   * @param {String} role 角色
+
   */
+
   this.setRole = function(role){
+
     _role = role;
+
   }
 
   this.init();
+
 }
 ```
 
@@ -5592,29 +5108,53 @@ var app = app || {};
 app.model = app.model || {};
 
 /**
+
 * 用于应用程序中电影的模型
+
 *
+
 * @alias app.model.movie
+
 * @constructor
+
 * @param {String} title 标题
+
 * @param {String} rtid ID
+
 * @param {String} posterframe 海报帧
+
 * @param {String} synopsis 简介
+
 */
+
 app.model.movie = function appModelMovie(title, rtid, posterframe, synopsis) {
+
   /**
+
   * 电影的实例变量
+
   */
+
   var _title,
+
   _rtid,
+
   _posterframe,
+
   _synopsis,
+
   _releaseDate,
+
   _videos = [],
+
   _actors = [],
+
   _rating,
+
   _favorite = false,
+
   _self = this;
+
 }
 ```
 
@@ -5644,31 +5184,44 @@ var app = app || {};
 app.utility = app.utility || {};
 
 /**
+
 * Validator 对象具有静态方法
+
 * 用于方便验证值
+
 */
+
 app.utility.validator = {}
 ```
 
 有了验证工具类，我们就可以开始创建验证方法了。
 
-
-
 第一个简单的验证方法是检查一个值是否为空。在验证器中创建一个名为 `isEmpty` 的新方法，如下面的代码所示。
 
 ```javascript
 app.utility.validator = {
+
   /**
+
    * 检查一个值是否为空
+
    * 如果为空则返回 true，否则返回 false
+
    * @param {String|Object} value
+
    * @return {Bool}
+
    */
+
   isEmpty: function(value){
+
     return false;
+
   }
+
 }
 ```
+
 第 8 章节：JavaScript：模型、视图与控制器
 245
 
@@ -5678,20 +5231,34 @@ app.utility.validator = {
 
 ```javascript
 app.utility.validator = {
+
   /**
+
    * 检查一个值是否为空
+
    * 如果为空则返回 true，否则返回 false
+
    * @param {String|Object} value
+
    * @return {Bool}
+
    */
+
   isEmpty: function(value){
+
     if(value == '' || value == null || value === false){
+
       return true;
+
     }
+
     return false;
+
   }
+
 }
 ```
+
 从前面的实现中你可以看到，如果值为空字符串、`null` 或 `false`，则条件语句将返回 `true`。
 
 **注意：** 如你所见，我使用了 `===` 来将值与 `false` 进行比较。`==` 比较是松散的比较。例如，`0 == false` 将返回 `true`。`0` 并不一定是一个空值，因此使用 `0 === false` 将返回 `false`，因为 `0` 和 `false` 是两个完全不同的类型。
@@ -5705,54 +5272,97 @@ isTypeOf
 
 ```javascript
 app.utility.validator = {
+
   ...
+
   /**
+
    * 检查一个值是否为对象类型
+
    * 如果是则返回 true，否则返回 false
+
    * @param {Object} value
+
    * @param {Object} type
+
    * @return {Bool}
+
    */
+
   isTypeOf: function(value, type){
+
     if(value instanceof type){
+
       return true;
+
     }
+
     return false;
+
   }
+
 }
 ```
+
 这很棒，但当你想要检查布尔值、字符串和数字等原始类型时会发生什么？仅仅为了检查这些类型创建一个新方法会令人困惑且有些困恼。为了解决这个问题，你可以使用 `typeof` 运算符。它会检查变量的类型。由于字符串、数字和布尔值是原始类型，你可以通过允许类型参数接受字符串来检查这些类型。要做到这一点，只需添加以下代码。
 
 ```javascript
 app.utility.validator = {
+
   ...
+
   /**
+
    * 检查一个值是否为对象类型
+
    * 如果是则返回 true，否则返回 false
+
    * @param {Object} value
+
    * @param {Object} type
+
    * @return {Bool}
+
    */
+
   isTypeOf: function(value, type){
+
     // 首先检查类型是否为字符串
+
     if(typeof type == "string"){
+
       // 如果是，我们可能正在检查一个原始类型
+
       if(typeof value == type){
+
         return true;
+
       }
+
     } else {
+
       // 我们正在处理对象比较
+
       if(value instanceof type){
+
         return true;
+
       }
+
       第 8 章节：JavaScript：模型、视图与控制器
+
 247
+
     }
+
     return false;
+
   }
+
 }
 ```
-从前面的代码中可以看出，主要的更改是 `isTypeOf` 方法检查 `type` 参数是否为字符串类型。如果它是字符串，则假设你想要检查原始类型；否则，你正在检查对象类型。如果原始类型与你要求的类型相同，它将返回 `true`。
+
+从前面的代码中可以看出，主要的更改是 `isTypeOf` 方法检查 `type` 参数是否为字符串类型。如果它是字符串，则假设你想要检查一个原始类型；否则，你正在检查对象类型。如果原始类型与你要求的类型相同，它将返回 `true`。
 
 这绝非不是一个万无一失的解决方案。目前有许多库可以进行更好的类型检查。其核心思想是，当你开始需要更多验证技术时，可以根据需要随时向验证对象中添加内容。如果你创建的验证方法不完全符合特定的边缘情况，你可以进行调整以补偿。有了这些措施，我们现在可以根据 UML 类图在模型的访问器方法中强制执行类型检查。
 
@@ -5775,17 +5385,17 @@ app.utility.validator = {
 if(true !== false){
   throw "不等于 false"
 }
+
 // 抛出对象
 if(true !== false){
   throw {
     message: "不等于 false",
-第 8 章节：JavaScript：模型、视图与控制器
-248
     type: "validation_exception",
     code: 1000
   }
 }
 ```
+
 如果你想知道抛出了什么类型的异常，下一步是捕获抛出的异常。为了测试这一点，你可以将条件语句封装在一个函数中并在 `try/catch` 块中调用它，以展示它在现实情况下的如何工作。
 
 ```javascript
@@ -5805,75 +5415,110 @@ try {
   alert(e.message);
 }
 ```
+
 如果你尝试这段代码，你会发现异常被抛出了，`e.message` 将为你获取消息并将其显示。重要的是，异常应该只在你的代码块中没有其他处理方式时才使用。
 
 ### 强化模型
 
 下一节将带你通过强化模型，使得设置器在传递错误类型的值时抛出异常。为了方便阅读，省略了读取。
 
-新的验证规则（在下面的代码中**加粗**）简单地检查类型。如果值不是特定类型，它将抛出验证异常并跳出方法。这防止了实例变量被无效值设置。
+新的验化规则（在下面的代码中**加粗**）简单地检查类型。如果值不是特定类型，它将抛出验证异常并跳出方法。这防止了实例变量被无效值设置。
 
 此外，为了方便，`app.utility.validator` 对象已赋值给 `validator` 变量。这使得访问验证方法变得更容易，而无需不断输入极长的命名空间。因为它是一个实例变量，所以特权方法也可以访问。
 
 ```javascript
 app.model.videosource = function appModelVideoSource(url, format){
+
   /**
+
    * 视频源的实例变量
+
    */
+
   var _url,
+
       _format,
+
       _self = this,
+
       validator = app.utility.validator;
 
   ...
 
   /**
+
    * 设置视频源的 url
+
    * @param {String} url
+
    */
+
   this.setUrl = function(url){
+
     // 检查值是否为原始字符串类型
+
     if(!validator.isTypeOf(url, "string")){
+
       throw {
+
         message: "videosource 模型中的 url 属性需要
+
         'string' 类型",
+
         type: "validation_exception"
+
       }
+
     }
+
     return;
+
   }
+
 }
 ```
-
-
-
 
 ```javascript
 _url = url;
 
-}
-
 ...
 
 /**
+
 * 设置视频源的 mime 类型
+
 * @param {app.type.format} format
+
 */
+
 this.setFormat = function(format){
+
   // 检查值是否为 app.type.format
+
   if(!validator.isTypeOf(format, app.type.format)){
+
     throw {
+
       // 第 8 章：JavaScript：模型、视图和控制器
+
       // 250
+
       message: "videosource 模型中的 format 属性需要一个 'app.type.format' 类型",
+
       type: "validation_exception"
+
     }
+
     return;
+
   }
+
   _format = format;
+
 }
 
 this.init();
+
 }
 ```
 
@@ -5883,7 +5528,7 @@ this.init();
 
 JavaScript 目前可用的类型非常棒。然而，有时你可能会发现处于这样一种情况：你想要向模型传递一个结构化对象，而该对象本身并不一定是一个模型。这些通常被称为类型（types），并在整个应用程序中具有相同的结构。例如，你可能想创建一个新的位置类型来存储位置信息，并以一种可预测的方式检索它。
 
-从模型的注释中，你会看到应用程序中有两种自定义类型：`format` 和 `releaseDate`。`format` 仅允许你存储视频格式，以便于获取 mime 类型、文件格式（如 `mp4`、`webm` 等）以及用于引用的格式名称。`releaseDate` 类型则简单地存储电影的院映日期和 DVD 发映日期。
+从模型的注释中，你会看到应用程序中有两种自定类型：`format` 和 `releaseDate`。`format` 仅允许你存储视频格式，以便于获取 mime 类型、文件格式（如 `mp4`、`webm` 等）以及用于引用的格式名称。`releaseDate` 类型则简单地存储电影的院映日期和 DVD 发映日期。
 
 要创建新类型，只需在 `js/app/type` 目录下创建两个名为 `format.js` 和 `releaseDate.js` 的新文件。（如果该目录不存在，你应该创建它。）
 
@@ -5891,85 +5536,149 @@ JavaScript 目前可用的类型非常棒。然而，有时你可能会发现处
 
 ```javascript
 var app = app || {};
+
 app.type = app.type || {};
 
 /**
+
 * 媒体类型，可用于
+
 * 定义对象的 mime 类型
+
 * @param {String} name
+
 * 第 8 章：JavaScript：模型、视图和控制器
+
 * 251
+
 * @param {String} format
+
 * @param {String} mime
+
 */
+
 app.type.format = function(name, format, mime){
+
   /**
+
   * 媒体的实例变量
+
   */
+
   var _name,
+
   _format,
+
   _mime,
+
   _self = this;
 
   /**
+
   * 使用构造函数的参数设置实例变量
+
   */
+
   this.setName(name);
+
   this.setFormat(format);
+
   this.setMime(mime);
 
   /**
+
   * 获取器和设置器
+
   */
+
   /**
+
   * 获取媒体类型的名称
+
   * @return {String}
+
   */
+
   this.getName = function(){
+
     return _name;
+
   }
 
   /**
+
   * 设置媒体类型的名称
+
   * @param {String} name
+
   */
+
   this.setName = function(name){
+
     _name = name;
+
   }
 
   /**
+
   * 获取媒体的格式（例如 webm, ogv）
+
   * @return {String}
+
   */
+
   this.getFormat = function(){
+
     return _format;
+
   }
 
   /**
+
   * 第 8 章：JavaScript：模型、视图和控制器
+
   * 252
+
   * 设置媒体的格式
+
   * @param {String} format
+
   */
+
   this.setFormat = function(format){
+
     _format = format;
+
   }
 
   /**
+
   * 获取媒体的 mime 类型
+
   * @return {String}
+
   */
+
   this.getMime = function(){
+
     return _mime;
+
   }
 
   /**
+
   * 设置媒体的 mime 类型
+
   * @param {String} mime
+
   */
+
   this.setMime = function(mime){
+
     _mime = mime;
+
   }
+
 }
 ```
 
@@ -5977,56 +5686,95 @@ app.type.format = function(name, format, mime){
 
 ```javascript
 var app = app || {};
+
 app.type = app.type || {};
 
 /**
+
 * 电影发行日期
+
 * 构造函数接收院映日期和 DVD 发映日期
+
 * @param {Date} cinema
+
 * @param {Date} dvd
+
 */
+
 app.type.releaseDate = function(cinema, dvd){
+
   /**
+
   * 发行日期实例变量
+
   */
+
   var _dvd,
+
   _cinema;
 
   /**
-  * 使用设置器设置实例变量
+
+  * 使用设置器设置实�变量
+
   * 第 8 章：JavaScript：模型、视图和控制器
+
   * 253
+
   */
+
   this.setDvd(_dvd);
+
   this.setCinema(_cinema);
 
   /**
+
   * 获取 DVD 发映日期
+
   */
+
   this.getDvd = function(){
+
     return _dvd;
+
   }
 
   /**
+
   * 设置 DVD 发映日期
+
   */
+
   this.setDvd = function(dvd){
+
     _dvd = dvd;
+
   }
 
   /**
+
   * 获取院映日期
+
   */
+
   this.getCinema = function(){
+
     return _cinema;
+
   }
 
   /**
+
   * 设置院映日期
+
   */
+
   this.setCinema = function(cinema){
+
     _cinema = cinema;
+
   }
+
 }
 ```
 
@@ -6050,33 +5798,57 @@ app.type.releaseDate = function(cinema, dvd){
 
 ```javascript
 var app = app || {};
+
 app.utility = app.utility || {};
 
 app.utility.deck = (function(){
+
   // 将所有卡片在局部作用域内
+
   var _cards = document.getElementsByClassName('card');
 
   // 返回一个对象
+
   return {
+
     // 通过添加 active 类显示卡片
+
     showCard: function(id){
+
       document.getElementById(id).classList.add('active');
+
     },
+
     // 通过移除 active 类隐藏卡片
+
     hideCard: function(id){
+
       document.getElementById(id).classList.remove('active');
+
     },
+
     /*
+
     * 通过遍历列表列表并移除 active 类来隐藏所有卡片
+
     */
+
     hideAllCards: function(){
+
       for(var i = 0; i < _cards.length; i++){
+
         // 第 8 章：JavaScript：模型、视图和控制器
+
         // 255
+
         _cards[i].classList.remove('active');
+
       }
+
     }
+
   }
+
 })();
 ```
 
@@ -6086,11 +5858,17 @@ app.utility.deck = (function(){
 
 ```javascript
 var myObject = (function(){
+
   return {
+
     sayHi: function(){
+
       alert('Hi!');
+
     }
+
   }
+
 })();
 ```
 
@@ -6100,15 +5878,11 @@ var myObject = (function(){
 myObject.sayHi();
 ```
 
-
-
-
 有时你可能需要从你自己的外部 Web 服务拉取数据。为了实现这一点，你通常会使用 `Ajax`。如果另一个服务器支持跨源资源共享（CORS），你将能够发送远程 Ajax 请求。遗憾的是，并不是所有的 Web 服务都支持此。
 
 为了解决这个问题，某些 Web 服务支持 `JSONP`。`JSONP` 允许你向 Web 服务发送一个回调参数。通常，你会在 JSON 请求的一部分中接收到一个 JSON 对象，如下所示。
 
 # 第 8 章：JavaScript：模型、视图与控制器
-
 ```json
 {
   " name": " Dave",
@@ -6116,7 +5890,7 @@ myObject.sayHi();
 }
 ```
 
-使用 `JSONP` 时，由于创建请求的方法，这些数据变得无法访问。在 `Ajax` 请求中，你发送请求并创建一个回调方法作为事件监听器。而在 `JSONP` 中，你实际上是将请求作为 `<script />` 嵌入到 Web 页面中。作为脚本的一部分，你将追加一个回调方法。
+使用 `JSONP` 时，由于创建请请求的方法，这些数据变得无法访问。在 `Ajax` 请求中，你发送请请求并创建一个回调方法作为事件监听器。而在 `JSONP` 中，你实际上是将请求作为 `<script />` 嵌入到 Web 页面中。作为脚本的一部分，你将追加一个回调方法。
 
 生成的 HTML 看起来如代码片段所示：
 
@@ -6137,45 +5911,75 @@ showProfile({
 
 ```javascript
 var app = app || {};
+
 app.utility = app.utility || {};
+
 app.utility.jsonp = function(url, callbackmethod){
+
   /**
+
    * 创建一个新的 _src 变量，将回调参数追加到 url
+
    */
+
   var _src = url + '&callback=' + callbackmethod;
 
   /**
+
    * 创建脚本元素
+
    */
+
   var _script = document.createElement('script');
 
   /**
+
    * 将脚本元素的源设置为与上面指定的相同
+
    */
+
   _script.src = _src;
 
   /**
+
    * 为了防止脚本阻塞其他请求，尽可能
+
    * 异步加载它
+
    */
+
   _script.async = "async";
 
   /**
+
    * 一旦脚本加载完成，函数将执行，
+
    * 脚本标签可以从文档头中移除
+
    */
+
   _script.onload = _script.onreadystatechange = function(load){
+
     var script = document.head.removeChild(load.target);
+
     script = null;
+
   }
 
   /**
+
    * 这个特权方法将通过将脚本追加到
+
    * DOM 来发送请求
+
    */
+
   this.send = function(){
+
     document.head.appendChild(_script);
+
   }
+
 }
 ```
 
@@ -6183,6 +5987,7 @@ app.utility.jsonp = function(url, callbackmethod){
 
 ```javascript
 var request = new app.utility.jsonp("http://myservice.com/staff/101/", "showProfile");
+
 request.send();
 ```
 
@@ -6196,54 +6001,95 @@ request.send();
 
 ```javascript
 var app = app || {};
+
 app.utility = app.utility || {};
+
 app.utility.layout = (function(){
+
   /**
+
    * 此方法将调整所有卡片（decks）的高度
+
    * 以为顶部任务栏留出空间，
+
    * 任务栏的高度是不可预测的
+
    */
+
   var fixdeckheight = function(){
+
     /**
+
      * 首先遍历每个卡片
+
      */
+
     [].forEach.call(document.getElementsByClassName('deck'), function(el){
+
       /**
+
        * 通过从文档主体的高度中减去
+
        * 任务栏的高度设置卡片的高度
+
        */
+
       el.style.height = (document.body.offsetHeight – document.getElementById('taskbar').offsetHeight) + 'px';
+
     });
+
   };
 
   /**
+
    * 创建超时变量，因为在某些浏览器中
+
    * 新尺寸可能需要一些时间来更新
+
    */
+
   var timeout;
 
   /**
+
    * 为窗口添加事件监听器，这样当
+
    * 它被调整大同时，它将清除超时
+
    */
+
   window.addEventListener('resize', function(){
+
     /**
+
      * 为了防止脚本阻塞其他请求，尽可能
+
      * 异步加载它
+
      */
+
     clearTimeout(timeout);
 
     /**
+
      * 一旦脚本加载完成，函数将执行，
+
      * 脚本标签可以从文档头中移除
+
      */
+
     timeout = setTimeout(function(){
+
       fixdeckheight();
+
     }, 100);
+
   });
 
   // 第一次调用 fixdeckheight
+
   fixdeckheight();
+
 })();
 ```
 
@@ -6255,34 +6101,47 @@ app.utility.layout = (function(){
 
 ```javascript
 var view = function(name){
+
   /**
+
    * 创建根元素。这允许你使用 innerHTML
+
    * 添加内容，这样你就不需要为大量的 HTML
+
    * 块手动创建 DOM 元素
+
    */
+
   var _rootElement = document.createElement('div');
 
   /**
+
    * 你可以在这里向根元素添加内容。如你所见，
+
    * 不是拼接很长的字符串，而是使用数组。
+
    * 这比长字符串更整洁、更易读。.join('') 用于
+
    * 将数组合并为没有空格的字符串。
+
    */
+
   _rootElement.innerHTML = [
+
     '<p>Hello, my name is ', name, '</p>'
+
   ].join('');
 
   this.render = function(){
+
     return _rootElement;
+
   }
+
 }
 ```
 
 如你所示，构造函数接受一个名为 `name` 的参数。你可以有任何数量的参数，然后在视图本身中使用它们。第二行创建一个元素并将其赋值给实例变量 `_rootElement`。这很有用，因为对于添加到根元素中的任何新元素，都不需要 DOM 解析器来遍历 DOM。
-
-
-
-
 
 `join('')` 用于将数组合并为字符串，以便 `innerHTML` 接收它。
 
@@ -6314,28 +6173,49 @@ var app = app || {};
 app.view = app.view || {};
 
 /**
+
 * 为电影列表项创建一个新视图
+
 * @param {app.model.movie} movie
+
 */
+
 app.view.movielistitem = function(movie){
+
   var _movie = movie,
+
   _rootElement = document.createElement('li');
+
   _rootElement.innerHTML = [
+
     '<a data-controller="movies" data-action="find'
+
     data-params="{&quot;id&quot;: &quot;', movie.getRtid() ,'&quot;}"
+
     class="more" href="movie/view/", movie.getRtid() ,'">',
+
     '<div class="preview-image">',
+
     '<img src="', movie.getPosterframe(), '" alt="',
+
     movie.getTitle(), '" height="82" />',
+
     '</div>',
+
     '<h2>', movie.getTitle(), '</h2>',
+
     '<p>', movie.getSynopsis(), '</p>',
+
     '</a>'
+
   ].join('');
 
   this.render = function(){
+
     return _rootElement;
+
   }
+
 }
 ```
 
@@ -6363,25 +6243,41 @@ var app = app || {};
 app.view = app.view || {};
 
 /**
-* 根据搜索结果创建新视图
+
+* 根据搜索结果创建新视视图
+
 * @param {Array} results
+
 */
+
 app.view.movielist = function(results){
+
   var _results = results,
+
   _rootElement;
+
   // 创建根 UL 元素
+
   _rootElement = document.createElement('ul');
+
   _rootElement.classList.add('list');
+
   _rootElement.classList.add('movie-list');
 
   for(var i = 0; i < results.length; i++){
+
     var itemView = new app.view.movielistitem(results[i]);
+
     _rootElement.appendChild(itemView.render());
+
   }
 
   this.render = function(){
+
     return _rootElement;
+
   }
+
 }
 ```
 
@@ -6389,7 +6285,9 @@ app.view.movielist = function(results){
 
 ```javascript
 _rootElement = document.createElement('ul');
+
 _rootElement.classList.add('list');
+
 _rootElement.classList.add('movie-list');
 ```
 
@@ -6397,8 +6295,11 @@ _rootElement.classList.add('movie-list');
 
 ```javascript
 for(var i = 0; i < results.length; i++){
+
   var itemView = new app.view.movielistitem(results[i]);
+
   _rootElement.appendChild(itemView.render());
+
 }
 ```
 
@@ -6416,39 +6317,51 @@ var app = app || {};
 app.view = app.view || {};
 
 /**
+
 * 为电影列表项创建一个新视图
+
 * @param {app.model.movie} movie
+
 */
+
 app.view.movie = function(movie){
+
   var _rootElement = document.createElement('div');
+
   _rootElement.innerHTML = [].join('');
 
   this.render = function(){
+
     return _rootElement;
+
   }
+
 }
 ```
-
-
 
 你可以看到，根元素是一个 `div`。应该创建的第一部分是电影视图的头部。它包含了海报帧、电影标题、从收藏中移除电影的按钮以及电影发布日期。然而，有一个限制，因为添加太多块和无限滚动会让用户感到很痛苦。
 
 ```javascript
 _rootElement.innerHTML = [
+
 '<header class="movie-header">',
+
 '<img src="' + movie.getPosterframe() + '" alt="' + movie.getTitle() + '" class="poster" width="100%" />',
+
 '<hgroup class="movie-title">',
+
 // ... 头部其余部分
+
 // data-params=\'{"id": "' + movie.getRtid() + '\', "title": "' + escape(movie.getTitle()) + '\', "synopsis": "' + escape(movie.getSynopsis()) + '\', "posterframe": "' + movie.getPosterframe() + '"}\'
+
 // ...
+
 '</hgroup>',
+
 '</header>',
+
 ].join('');
 ```
-
-
-
-
 
 接下来要创建的是电影内容区块。这些区块包含了电影信息，例如简介、演员表和视频。
 
@@ -6462,26 +6375,47 @@ _rootElement.innerHTML = [
 ...
 
 '<div class="movie-content">',
+
 '<div class="block-container span-three">',
+
 '<section class="block" id="block-synopsis">',
+
 '<div class="content">',
+
 '<p>', movie.getSynopsis() ,'</p>',
+
 '</div>',
+
 '</section>',
+
 '<section class="block" id="block-cast">',
+
 '<div class="content">',
+
 '<h3>Cast List</h3>',
+
 '<ul class="list"></ul>',
+
 '</div>',
+
 '</section>',
+
 '<section class="block" id="block-video">',
+
 '<div class="content">',
+
 '<h3>Video Clips</h3>',
+
 '<ul class="list grid"></ul>',
+
 '</div>',
+
 '</section>',
+
 '</div>',
+
 '</div>',
+
 ].join(‘’);
 
 ...
@@ -6502,12 +6436,14 @@ _rootElement.innerHTML = [
 ...
 
 '<footer class="footer screenbar">',
+
 '<a class="back" href="/" data-controller="favorites" data-action="list">my favorites</a>',
+
 '</footer>'
+
 ].join('');
 
 ...
-
 }
 ```
 
@@ -6523,15 +6459,18 @@ app.view.movie = function(movie){
 if(movie.isFavorite()){
 
 var _favoriteButton = _rootElement.querySelector('a.btn-favorite');
+
 _favoriteButton.setAttribute('data-action', 'remove');
+
 _favoriteButton.classList.remove('add');
+
 _favoriteButton.classList.add('remove');
+
 _favoriteButton.textContent = 'un-favorite';
 
 }
 
 ...
-
 }
 ```
 
@@ -6545,11 +6484,15 @@ app.view.movie = function(movie){
 for(var i = 0; i < movie.getActors().length; i++){
 
 var actor = movie.getActor(i);
+
 var element = document.createElement('li');
+
 element.innerHTML = [
 
 '<p>', actor.getName(), '<br />',
+
 '<em>', actor.getRole(), '</em></p>'
+
 ].join('');
 
 _rootElement.querySelector('#block-cast ul.list').appendChild(element);
@@ -6557,7 +6500,6 @@ _rootElement.querySelector('#block-cast ul.list').appendChild(element);
 }
 
 ...
-
 }
 ```
 
@@ -6567,7 +6509,7 @@ _rootElement.querySelector('#block-cast ul.list').appendChild(element);
 
 与其他 MVC 框架不同，JavaScript 中的控制器并不非要分配给路由或 URI/URL。在本书中，控制器也可以分配给事件。控制器管理数据在应用程序中的流转，将这些信息传递给视图，然后负责使用 DOM 操作将其渲染回用户。控制器还负责处理用户事件。在我之前尝试为 JavaScript 创建 MVC 框架时，事件是在控制器之外处理的，这导致了代码变得混乱。常见事件（例如绑定到链接以触发控制器操作）应该在一个地方处理；然而，其他独特事件（例如表单事件）应该由控制器本身绑定。虽然有更高效的方法来实现此，但对于本书所开发的应用程序而言，这样做是有意义的。其他替代方案包括使用一个名为 `Sammy.js` 的库，它可以基于哈希锚（hashbangs，例如 `index.html#/mypage`）创建 RESTful URL。`Sammy` 可以获取这些 URL 并根据路由规则执行 JavaScript。如果你想了解更多关于 `Sammy.js` 的信息，请访问 `http://sammyjs.org`。
 
-控制器的构建非常简单；它只是一个带有特权方法的对象，这些方法作为事件动作。控制器可以与应用程序中的特定实体相关联。在 `MoMemo` 中，有一个控制器来管理电影，另一个控制器来管理你的收藏。
+控制器的构建非常简单；它只是一个带有特权方法的对象，这些方法作为事件动作。控制器可以与应用程中的特定实体相关联。在 `MoMemo` 中，有一个控制器来管理电影，另一个控制器来管理你的收藏。
 
 ## 引导程序（Bootstrap）
 
@@ -6577,6 +6519,7 @@ _rootElement.querySelector('#block-cast ul.list').appendChild(element);
 
 ```javascript
 var app = app || {};
+
 app.bootstrap = (function(){
 
 })();
@@ -6586,17 +6529,27 @@ app.bootstrap = (function(){
 
 ```javascript
 var app = app || {};
+
 app.bootstrap = (function(){
 
 /**
+
 * 创建控制器对象
+
 * 你显式声明了电影和收藏
+
 * 控制器
+
 */
+
 var _controller = {
+
 movies: null,
+
 favorites: null
+
 }
+
 })();
 ```
 
@@ -6606,8 +6559,11 @@ favorites: null
 
 ```javascript
 var app = app || {};
+
 app.bootstrap = (function(){
+
 ...
+
 ```
 
 当你触碰屏幕上的某个项目时，事件监听器并不一定返回你点击的链接；它更有可能返回链接内部的元素。为了实现这一点，你需要向上遍历 DOM 树。这将目标赋值为当前目标的父元素。
@@ -6616,24 +6572,35 @@ app.bootstrap = (function(){
 document.addEventListener("click", function(event){
 
 var target = event.target;
+
 /**
+
 * 从目标向上遍历 DOM 树，直到
+
 * 找到包裹该目标的链接
+
 */
+
 while(target.nodeName !== "A" && target.getAttribute('data-controller')
+
 == null && target.getAttribute('data-action') == null){
 
 // 我们到达了 body 元素，停止！
+
 if(target.parentNode.nodeName == 'HTML'){
 
 target = null;
 
 break;
+
 }
 
 // 将 target.parentNode 赋值给 target 变量
+
 target = target.parentNode;
+
 }
+
 });
 ```
 
@@ -6641,23 +6608,29 @@ target = target.parentNode;
 
 ```javascript
 var app = app || {};
+
 app.bootstrap = (function(){
+
 ...
+
 if(target){
 
 /**
+
 * 你已经有了目标链接，所以现在阻止
+
 * 链接继续跳转是有意义的
+
 * 这将允许任何 JavaScript 静默失败！
+
 */
+
 event.preventDefault();
+
 }
+
 })();
 ```
-
-
-
-
 
 ```javascript
 // 从元素中获取 controller、action 和 params
@@ -6685,26 +6658,37 @@ app.bootstrap = (function(){
 ...
 
 /**
+
 * 如果存在 target，则处理链接动作
+
 */
+
 if(target){
 
 ...
 
 /*
+
 * 检查 controller 是否存在
+
 * bootstrap 中，以及 action 是否可用
+
 */
+
 if(typeof _controller[controller] === 'undefined'
+
 || typeof _controller[controller][action] === 'undefined'){
 
 // 如果它们不存在，则抛出异常
+
 throw "Action " + action + " for controller " + controller + " doesn't appear to exist";
 
 return;
 
 }
+
 }
+
 ...
 
 })();
@@ -6730,30 +6714,45 @@ app.bootstrap = (function(){
 ...
 
 /**
+
 * 如果存在 target，则处理链接动作
+
 */
+
 if(target){
 
 ...
 
 // 检查 params 是否存在
+
 if(params){
+
 try {
+
 // 如果存在，则将其解析为 JSON
+
 params = JSON.parse(params);
 
 } catch (e) {
 
 /*
+
 * 如果发生解析异常，则将
+
 * params 设置为 null
+
 */
+
 params = null;
+
 return;
+
 }
 
 }
+
 }
+
 ...
 
 })();
@@ -6769,18 +6768,27 @@ app.bootstrap = (function(){
 ...
 
 /**
+
 * 如果存在 target，则处理链接动作
+
 */
+
 if(target){
 
 ...
 
 /**
+
 * 在 target 的上下文中执行 controller。
+
 * 这允许你从 controller action 访问
+
 * 原始元素。同时从 data-params
+
 * 属性中传递参数。
+
 */
+
 _controller[controller][action].call(target, params);
 
 }
@@ -6798,14 +6806,23 @@ app.bootstrap = (function(){
 ...
 
 /**
+
 * 通过检查 favorites 节点是否存在
+
 * 来设置本地存储
+
 */
+
 if(!localStorage.getItem('favorites')){
+
 // 如果不存在，创建一个空数组并将其赋值给存储
+
 var favorites = [];
+
 localStorage.favorites = JSON.stringify(favorites);
+
 }
+
 })();
 ```
 
@@ -6821,72 +6838,115 @@ app.bootstrap = (function(){
 return {
 
 /**
+
 * 为 controller 创建一个访问器，
+
 * 它接受 controller 命名空间的
+
 * 字符串表示
+
 */
+
 getController: function(name){
+
 /**
+
 * 使用 . 字符将字符串拆分成数组
+
 */
+
 var parts = name.split('.');
+
 /**
+
 * 最初将返回的 controller 设置为 null
+
 */
+
 var returnController = null;
 
 /**
+
 * 如果部分数量大于 0
+
 */
+
 if(parts.length > 0){
+
 /**
+
 * 将返回 controller 设置为父对象
+
 */
+
 returnController = _controller;
 
 /**
+
 * 遍历每个部分，逐渐将 action
+
 * 赋值给 return controller
+
 */
+
 for(var i = 0; i < parts.length; i++){
+
 returnController = returnController[parts[i]];
+
 }
+
 }
 
 /**
+
 * 返回 controller
+
 */
+
 return returnController;
+
 },
 
 /**
+
 * 初始化所有的 controller。你可能不想
+
 * 自动这样做，因此可以使用 `initScripts` 方法来执行它。
+
 */
+
 initScripts: function(){
+
 _controller.movies = new app.controller.movies();
+
 _controller.favorites = new app.controller.favorites();
+
 _controller.favorites.list();
+
 }
+
 }
 
 })();
 ```
 
-
-
-
-
 ```javascript
 returnController = _controller;
 
 /**
+
 * 遍历每个部分，逐渐将操作分配给
+
 * 返回控制器
+
 */
+
 for(var i = 0; i < parts.length; i++){
+
   returnController = returnController[parts[i]];
+
 }
+
 }
 ```
 
@@ -6894,25 +6954,38 @@ for(var i = 0; i < parts.length; i++){
 
 ```javascript
 /**
+
 * 返回控制器
+
 */
+
 return returnController;
 
 },
 
 /**
+
 * 初始化所有控制器。你可能不想自动执行
+
 * 这一点，因此你可以使用 initScripts 方法执行它。
+
 */
+
 initScripts: function(){
+
   _controller.movies = new app.controller.movies();
+
   _controller.favorites = new app.controller.favorites();
+
   _controller.favorites.list();
+
 }
+
 }
 
 })();
-```
+
+
 
 ## 电影控制器 (The Movies Controller)
 
@@ -6922,10 +6995,15 @@ initScripts: function(){
 
 ```javascript
 var app = app || {};
+
 app.controller = app.controller || {};
+
 app.controller.movies = function(){
+
   this.init = function(){}
+
   this.init();
+
 }
 ```
 
@@ -6942,16 +7020,27 @@ app.controller.movies = function(){
 
 ```javascript
 var app = app || {};
+
 app.controller = app.controller || {};
+
 app.controller.movies = function(){
+
   var _self = this,
+
   _searchfield = document.querySelector('#add-movie input[name="query"]'), _searchform = document.getElementById('add-movie'),
+
   _searchresultscard = document.getElementById('card-movie_search_results'),
+
   _searchTimeout,
+
   _viewScrolls = [],
+
   _searchScroll = null;
+
   this.init = function(){}
+
   this.init();
+
 }
 ```
 
@@ -6961,15 +7050,25 @@ app.controller.movies = function(){
 
 ```javascript
 var app = app || {};
+
 app.controller = app.controller || {};
+
 app.controller.movies = function(){
+
   ...
+
   /**
+
   * 绑定搜索表单
+
   */
+
   this.bindSearchForm = function(){
+
   }
+
   ...
+
 }
 ```
 
@@ -6977,25 +7076,45 @@ app.controller.movies = function(){
 
 ```javascript
 var app = app || {};
+
 app.controller = app.controller || {};
+
 app.controller.movies = function(){
+
   ...
+
   /**
+
   * 绑定搜索表单
+
   */
+
   this.bindSearchForm = function(){
+
     /**
+
     * 在这里你使用 focus 事件监听器为搜索字段
+
     * 添加事件监听器。如果有值，则显示
+
     * 结果。
+
     */
+
     _searchfield.addEventListener('focus', function(){
+
       if(this.value.length > 0){
+
         app.utility.deck.showCard('card-movie_search_results');
+
       }
+
     });
+
   }
+
   ...
+
 }
 ```
 
@@ -7003,25 +7122,45 @@ app.controller.movies = function(){
 
 ```javascript
 var app = app || {};
+
 app.controller = app.controller || {};
+
 app.controller.movies = function(){
+
   ...
+
   /**
+
   * 为表单的提交添加事件监听器。
+
   * 这将防止表单被提交
+
   * 并发送到另一个页面。相反，我们捕获
+
   * 事件并触发搜索操作。
+
   */
+
   _searchform.addEventListener('submit', function(e){
+
     e.preventDefault();
+
     // 清除 _searchTimeout 超时
+
     clearTimeout(_searchTimeout);
+
     var value = _searchfield.value;
+
     if(value.length > 0){
+
       _self.search(value);
+
     }
+
   });
+
   ...
+
 }
 ```
 
@@ -7029,33 +7168,61 @@ app.controller.movies = function(){
 
 ```javascript
 var app = app || {};
+
 app.controller = app.controller || {};
+
 app.controller.movies = function(){
+
   ...
+
   _searchfield.addEventListener('input', function(){
+
     /**
+
     * 这是输入字段的值
+
     */
+
     var value = this.value;
+
     /**
+
     * 这将清除搜索超时
+
     */
+
     clearTimeout(_searchTimeout);
+
     /**
+
     * 你不希望在每次按键后
+
     * 立即运行搜索。这将设置一个 1 秒的超时
+
     * 在调用搜索函数之前。
+
     */
+
     if(value.length > 0){
+
       document.getElementById('taskbar').classList.add('searchactive');
+
     } else {
+
       document.getElementById('taskbar').classList.remove('searchactive');
+
     }
+
     _searchTimeout = setTimeout(function(){
+
       _self.search(value);
+
     }, 1000);
+
   });
+
   ...
+
 }
 ```
 
@@ -7063,57 +7230,109 @@ app.controller.movies = function(){
 
 ```javascript
 /**
+
 * 绑定搜索表单
+
 */
+
 this.bindSearchForm = function(){
+
   /**
+
   * 在这里你使用 focus 事件监听器为搜索字段
+
   * 添加事件监听器。如果有值，则显示
+
   * 结果。
+
   */
+
   _searchfield.addEventListener('focus', function(){
+
     if(this.value.length > 0){
+
       app.utility.deck.showCard('card-movie_search_results');
+
     }
+
   });
+
   /**
+
   * 为表单的提交添加事件监听器。
+
   * 这将防止表单被提交
+
   * 并发送到另一个页面。相反，我们捕获
+
   * 事件并触发搜索操作。
+
   */
+
   _searchform.addEventListener('submit', function(e){
+
     e.preventDefault();
+
     // 清除 _searchTimeout 超时
+
     clearTimeout(_searchTimeout);
+
     var value = _searchfield.value;
+
     if(value.length > 0){
+
       _self.search(value);
+
     }
+
   });
+
   _searchfield.addEventListener('input', function(){
+
     /**
+
     * 这是输入字段的值
+
     */
+
     var value = this.value;
+
     /**
+
     * 这将清除搜索超时
+
     */
+
     clearTimeout(_searchTimeout);
+
     /**
+
     * 你不希望在每次按键后
+
     * 立即运行搜索。这将设置一个 1 秒的超时
+
     * (1000 ms) 在调用搜索函数之前。
+
     */
+
     if(value.length > 0){
+
       document.getElementById('taskbar').classList.add('searchactive');
+
     } else {
+
       document.getElementById('taskbar').classList.remove('searchactive');
+
     }
+
     _searchTimeout = setTimeout(function(){
+
       _self.search(value);
+
     }, 1000);
+
   });
+
 }
 ```
 
@@ -7123,40 +7342,67 @@ this.bindSearchForm = function(){
 
 ```javascript
 var app = app || {};
+
 app.controller = app.controller || {};
+
 app.controller.movies = function(){
+
   ...
+
   this.search = function(query){
+
     // 检查查询长度是否大于 0 个字符
+
     if(query.length > 0){
+
       /*
+
       * 对查询进行编码以便通过 URL
+
       * 传递
+
       */
+
       query = encodeURIComponent(query);
+
       /**
+
       * 创建一个新的 JSONP 请求
+
       */
+
       var jsonp = new app.utility.jsonp(
+
         ['http://api.rottentomatoes.com/api/public/v1.0/movies.json?apikey=YOURAPIKEY&q=' + query, 
+
         'app.bootstrap.getController("movies").showSearchResults'
-      );
+
+      ]);
+
       /**
+
       * 发送请求
+
       */
+
       jsonp.send();
+
       /**
+
       * 为搜索字段添加加载 类
+
       */
+
       _searchfield.classList.add('loading');
+
     }
+
   }
+
   ...
+
 }
 ```
-
-
-
 
 你需要将 JSONP 请求 URI 中的 `YOURAPIKEY` 替换为你的 Rotten Tomatoes API 密钥。如你所见，你使用引导程序获取电影控制器并在结果加载后执行 `showSearchResults`。
 
@@ -7184,36 +7430,55 @@ app.controller.movies = function(){
 ...
 
 /**
+
 * 在搜索结果卡片中显示搜索结果
+
 */
+
 this.showSearchResults = function(rtresults){
 
 /**
+
 * 这是 Rotten Tomatoes API 数据。
+
 * 下面的代码将处理返回的数据
+
 * 并将其转换为应用程序
+
 * 可以理解的模型。
+
 * 你可以将这些 API 调用封装到
+
 * 独立的库中，但目前将它们
+
 * 放在控制器中就足够。
+
 */
+
 // 首先，创建一个空数组来存放结果
+
 var results = [];
 
 // 接下来，遍历 Rotten Tomatoes 的结果
+
 for(var i = 0; i < rtresults.movies.length; i++){
 
 var rtmovie = rtresults.movies[i];
 
 // 为每个结果创建一个新的电影对象
+
 var title = rtmovie.title || '', rtid = rtmovie.id, posterframe =
+
 rtmovie.posters.original || '', synopsis = rtmovie.synopsis || '';
 
 results.push(new app.model.movie(title, rtid, posterframe, synopsis));
+
 }
 
 // 使用数据创建视图
+
 var view = new app.view.movielist(results);
+
 ```
 
 ## 第 8 章：JavaScript：模型、视图和控制器
@@ -7221,30 +7486,41 @@ var view = new app.view.movielist(results);
 285
 
 ```javascript
+
 // 设置搜索结果 div 的内容
+
 _searchresultscard.innerHTML = '';
 
 _searchresultscard.appendChild(view.render());
 
 // 控制页面需要由它自己的工具或类来处理
+
 _searchresultscard.classList.add('active');
+
 _searchfield.classList.remove('loading');
 
 results = null;
 
 // 检查搜索滚动是否为空
+
 if(_searchScroll !== null){
 
 // 如果不是，则销毁它
+
 _searchScroll.destroy();
+
 _searchScroll = null;
+
 }
 
 // 为结果卡片初始化搜索滚动
+
 _searchScroll = new iScroll(_searchresultscard);
+
 }
 
 ...
+
 }
 ```
 
@@ -7266,11 +7542,15 @@ app.controller.movies = function(){
 this.find = function(data){
 
 // 检查 ID 是否存在操作参数/数据中
+
 if(typeof data.id === 'undefined'){
 
 throw "向视图控制器的 find 操作未提供 ID";
+
 return;
+
 }
+
 ```
 
 ## 第 8 章：JavaScript：模型、视图和控制器
@@ -7278,47 +7558,73 @@ return;
 286
 
 ```javascript
-// 创建一个新的 JSONP 请求
+
+// 创建一个新的 JSONP 请请求
+
 var jsonp = new app.utility.jsonp(
+
 ['http://api.rottentomatoes.com/api/public/v1.0/movies/' + data.id + '.json?apikey=YOURAPIKEY,
+
 'app.bootstrap.getController("movies").view');
 
 // 发送请求
+
 jsonp.send();
+
 }
 
 this.view = function(rtresult){
 
 // 检查是否返回了对象
+
 if(!app.utility.validator.isTypeOf(reresult, 'object')){
 
 // 如果不是对象，不显示电影
+
 return;
+
 }
 
 // 创建一个新的电影对象
+
 var movie = new app.model.movie(rtresult.title,
+
 rtresult.id, rtresult.posters.original, rtresult.synopsis),
+
 // 获取电影信息卡片
+
 viewcard = document.getElementById('card-movie_info');
 
 /**
+
 * 设置 DVD 和电影上映日期
+
 */
+
 var releaseDate = new app.type.releaseDate(
+
 new Date(rtresult.release_dates.theater),
+
 new Date(rtresult.release_dates.dvd));
+
 movie.setReleaseDate(releaseDate);
 
 /**
+
 * 设置电影评分
+
 */
+
 movie.setRating(rtresult.mpaa_rating);
 
 /**
+
 * 通过遍历收藏 localStorage 对象
+
 * 检查电影是否在用户的收藏夹中
+
 */
+
 var _favorites = JSON.parse(localStorage);
 
 for(var i = 0; i < _favorites.length; i++){
@@ -7420,10 +7726,6 @@ var app = app || {};
 
 app.controller = app.controller || {};
 
-## 第 8 章：JavaScript：模型、视图和控制器
-
-289
-
 app.controller.favorites = function(){
 
 var _listScroll = null;
@@ -7461,7 +7763,6 @@ this.list = function(){
 ```
 
 接下来你需要做的是从 `localStorage` 获取收藏。正如你在引导文件中所见，你创建了一个空的收藏 `localStorage` 属性以及一个空数组。这将允许你获取应用程序的收藏，而无需检查该属性是否存在，然后在整个代码中创建它。你可能需要创建一个
-
 
 用于存储数据的 `localStorage` 工具函数；这部分不会在书中进行介绍，因为你只会在应用程序中的三个地方存储和检索 `localStorage` 属性。
 
@@ -7547,7 +7848,7 @@ _favorite.id, _favorite.posterframe, unescape(_favorite.synopsis)))
 
 如你从代码中看到的，`unescape` 方法用于转义每个收藏属性中使用的字符。这是因为 `add` 方法会对每个属性值进行转义，以便该对象可以存储在 `localStorage` 中。
 
-下一步是根据电影数组创建一个电影视图。
+下一步是根据电影数组创建一个电影视view。
 
 ```javascript
 var app = app || {};
@@ -7858,9 +8159,6 @@ this.textContent = '收藏';
 
 我们将从设置电影列表开始，因为它是用户交互的第一个元素。
 
-
-
-
 电影列表将用于 `MoMemo` 应用程序中的两个地方。其中一个位于搜索结果中，另一个位于主屏幕的收藏列表中。由于有两个列表，你可能希望对它们进行不同的样式化处理。
 
 # 第 8 章：JavaScript：模型、视图与控制器
@@ -7999,9 +8297,6 @@ _rootElement.classList.add('movie-list');
 
 电影视图与电影列表视图略有不同，因为它稍微复杂一点。（注：原文此处开始大量重复，此处已按意译处理）。
 
-
-
-
 刷新你的移动浏览器，通过搜索电影并点击它来查看。它现在看起来应该像图 8-5。
 
 **图 8-5。** *电影头部*
@@ -8074,7 +8369,7 @@ $blocks: 3;
 
 **图 8-6。** *电影块样式设置*
 
-你需要为头部动画创建关键帧。这一切只是让海报图像反复上下移动。我们使用百分比是为了这样根据屏幕的大小，图像将按比例进行移动。将以下代码添加到你的 SASS 文件中。
+你需要为头部动画创建关锠帧。这一切只是让海报图像反复上下移动。我们使用百分比是为了这样根据屏幕的大小，图像将按比例进行移动。将以下代码添加到你的 SASS 文件中。
 
 ```scss
 @keyframes posteranimation {
@@ -8137,9 +8432,6 @@ $blocks: 3;
 <script src="js/app/bootstrap.js"></script>
 ```
 
-
-
-
 <!-- 加载应用的 JavaScript -->
 
 ```html
@@ -8200,36 +8492,14 @@ sass ./css/*.scss ./css/mobile.min.css --style compress
 打开你在第 4 章创建的 `momemo.cache` 文件。我们知道应用程序文件（如图像、JavaScript 文件和 CSS）需要缓存，因此更新 `momemo.cache` 以使得以下文件被缓存：
 
 - `index.html`
+
 - `css/mobile.min.css`
+
 - `js/app.min.css`
+
 - `img/`
 
 你的清单文件现在应该看起来像下面的代码：
-
-```text
-CACHE MANIFEST
-# 我们将使这些文件可缓存
-CACHE:
-index.html
-css/mobile.min.css
-js/app.min.js
-img/highres/momemo.png
-img/lowres/momemo.png
-img/back.png
-img/clear.png
-img/loading.gif
-img/search.png
-```
-
-你可以看到，每个需要缓存的文件都已显式地指定了。遗憾的是，你不能使用通配符，因为浏览器缓存会在页面加载之前缓存清单文件中的所有文件。它不知道你的服务器上存在哪些文件，所以使用通配符 `*` 将没有任何效果。
-
-我们缓存的是压缩后的 CSS 和 JS 文件，而不是未压缩的 JavaScript 和 CSS 文件。这可以防止在开发需要更改文件时感到沮丧，这样你就不需要手动更改清单文件来引入更改的文件。
-
-通过缓存清单，你还可以指定哪些文件需要网络连接。我们绝对希望 Rotten Tomatoes 的 `API` 拥有最新数据。
-
-# 第 8 章：JavaScript：模型、视图与控制器
-
-要做到这一点，你必须在清单文件的 `NETWORK` 定义下放置文件的 URL 或位置。你的清单文件应该像下面所示：
 
 ```text
 CACHE MANIFEST
@@ -8250,13 +8520,10 @@ NETWORK:
 http://api.rottentatoes.com/
 ```
 
-
-
-
-
 你甚至可以打开 JavaScript 控制台并输入 JavaScript 代码，这些代码会直接影响手机上的页面，如图 8-11 和 8-12 所示。
 
 ![Image 117](img/index-316_1.jpg)
+
 ![Image 118](img/index-316_2.jpg)
 
 # 第 8 章：JavaScript：模型、视图与控制器
@@ -8304,7 +8571,9 @@ http://api.rottentatoes.com/
 版本控制管理是持续集成的核心。到目前，有多种 `SCM` 实现，包括以下：
 
 * `Git`
+
 * `SVN` (Apache Subversion)
+
 * `Mercurial`
 
 `SCM` 提供了一种存储源文件版本的方法。`SCM` 通过在初始提交/保存时存储原始文件来实现。随后，`SCM` 仅存储后续提交中每个文件之间的更改/差异。这节省了磁盘空间和带宽，因为除非文件是新的，否则不需要每次提交都保存整个文件。
@@ -8315,7 +8584,7 @@ http://api.rottentatoes.com/
 
 在使用过 `Git` 和 `SVN` 后，`Git` 是我首选的 `SCM`，因为它只在根目录下存储单一的 `.git` 文件夹，可以轻松删除；相比之下，`SVN` 会在项目的每个文件夹中存储 `.svn` 文件夹，删除它们可能变得非常痛苦。
 
-目前有两种类型的 `SCM`：集中式和分布式。集中式系统将所有代码存储在中央服务器上。当开发者进行提交时，更改在服务器上合并，而不是在开发机器上。`SVN` 是一个集中式 `SCM` 系统。分布式系统没有中央服务器。提交可以在任何开发者的机器上进行。如果开发者想共享他的代码，另一个开发者可以将其仓库克隆到自己的机器上。
+目前有两种类的 `SCM`：集中式和分布式。集中式系统将所有代码存储在中央服务器上。当开发者进行提交时，更改在服务器上合并，而不是在开发机器上。`SVN` 是一个集中式 `SCM` 系统。分布式系统没有中央服务器。提交可以在任何开发者的机器上进行。如果开发者想共享他的代码，另一个开发者可以将其仓库克隆到自己的机器上。
 
 `Git` 是一个分布式 `SCM` 系统。通常，`Git` 仓库有一个主远程仓库，所有开发者都在那里推送和拉取更改。像 Git 等系统的优势是，你可以在没有网络的情况下进行项目，但仍然向本地仓库提交更改。一旦有了网络，你就可以拉取并合并任何更改，进行测试，然后将更改推送到远程仓库。这对于你有中央构建系统非常有帮助。
 
@@ -8327,10 +8596,6 @@ http://api.rottentatoes.com/
 
 分支只是主分支的一个副本或快照，这样新功能就不会干扰生产就绪的代码。通常，主分支会定期合并到新分支。这样做是为了确保主库的更改与分支中的功能更改兼容。当新分支中的功能实现并测试后，它将合并到主分支，准备投入生产。
 
-
-
-
-
 一个 `tag` 简单来说是你项目主分支的一个重要快照，你将其保留以备将来参考。这些通常是你的项目的重大版本。如果其他开发者不断在主分支上工作，而你又想进行一次可行的部署，这就会非常有用。
 
 # 第 9 章：测试和部署你的移动 Web 应用
@@ -8339,7 +8604,7 @@ http://api.rottentatoes.com/
 
 测试移动 Web 应用是新 Web 开发者开发中最容易被忽视的方面之一。大多数新的移动 Web 开发者简单地在移动设备上加载网站，然后通过操作来查看它是否正常工作。随着你添加更多功能，这可能会变得非常费力，而且你并不知道代码内部到底发生了什么。当你开始编写更多的面向对象代码时，你会看到应用程序的复杂性在增加（以一种组织的方式）。你可以根据输入的内容和预期的输出，对每个代码单元进行测试。
 
-例如，在之前的章节中，你接触了创建模型来在应用程序中存储数据。你展示的完整性和应用程序背后的逻辑实际上取决于这些模型如何通过 `getters`、`setters` 以及其他基于模型的方法接收和输出数据。你可以围绕每个代码单元，根据输入和预期的返回结果编写测试套件。这种测试方法被称为 `unit testing`（单元测试）。`Unit testing` 允许你测试应用程序中的每个方法。你为项目的每个方面编写的单元测试越多，你就越应该相信应用程序将会正常工作。这被称为 `code coverage`（代码覆盖率）。请记住，单元测试只会覆盖你代码的一定比例，你的目标应该是至少达到 80% 的 `code coverage`。
+例如，在之前的章节中，你接触了创建模型来在应用程序中存储数据。你展示的完整性和应用程序背后的逻辑实际上取决于这些模型如何通过 `getters`、`setters` 以及其他基于模型的方法接收和输出数据。你可以围绕每个代码单元，根据输入和预期的返回结果编写测试套件。这种测试方法被称为 `unit testing`（单元测试）。`Unit testing` 允许你测试应用程中的每个方法。你为项目的每个方面编写的单元测试越多，你就越应该相信应用程序将会正常工作。这被称为 `code coverage`（代码覆盖率）。请记住，单元测试只会覆盖你代码的一定比例，你的目标应该是至少达到 80% 的 `code coverage`。
 
 通过创建单元测试，你可以一次性运行一系列测试，针对每一个目标 浏览器。这应该让你有信心你的代码正按预期工作。当发布新浏览器或新浏览器版本时，这特别有帮助，因为你可以通过在其中运行单元测试来确保你的 `JavaScript` 代码与新浏览器兼容。
 
@@ -8355,7 +8620,7 @@ http://api.rottentatoes.com/
 
 将所有这些应用程序和实践结合在一起的胶水是良好的持续集成环境。持续集成环境会检测应用程序代码的变化，并自动构建和部署它，同时执行其他任务。这意味着你可以专注于生产世界级的 Web 应用程序并将重复性的部署和测试任务留给持续集成服务器。
 
-本书选择的持续集成服务器是 Atlassian 的 `Bamboo`。选择此产品是因为它易于安装、拥有许多插件、设置简单，并且与 Atlassian 其他流行的软件开发工具兼容，如 `JIRA`、`Crucible` 和 `FishEye`。
+本书选择的持续集成服务器是 Atlassian的 `Bamboo`。选择此产品是因为它易于安装、拥有许多插件、设置简单，并且与 Atlassian 其他流行的软件开发工具兼容，如 `JIRA`、`Crucible` 和 `FishEye`。
 
 ## 你的第一个持续集成项目
 
@@ -8401,19 +8666,22 @@ http://api.rottentatoes.com/
 表 9-1. *HTML 测试元素*
 
 | 元素 | 描述 |
+
 | :--- | :--- |
+
 | qunit-header | 测试套件的标题或标题 |
+
 | qunit-banner | 根据单元测试的状态改变颜色（绿色表示通过，红色表示失败） |
+
 | qunit-testrunner-toolbar | 包含允许显示或隐藏测试的控件 |
+
 | qunit-userAgent | 显示当前测试的浏览器信息 |
+
 | qunit-tests | 在运行后包含通过或失败的测试列表 |
+
 | qunit-fixture | 如果在任何测试中需要操作 DOM，则使用此元素 |
 
-
-
-
-
-你需要在移动网络浏览器中运行测试。为了实现这一点，必须先配置 Aptana，使其内部服务器绑定到计算机的 IP 地址，而不是其本地 IP 地址 `127.0.0.1`。执行此操作，请前往 Aptana Studio 3 ➤ `Preferences` ➤ `Aptana Studio` ➤ `Web Servers` ➤ `Built-in`。你将看到一个屏幕和一个下拉菜单，允许你选择内部 Web 服务器应该绑定的 IP 地址，如图 9-1 所示。
+你需要在移动网络浏览器中运行测试。为了实现这一点，必须先配置 Aptana，使其内部服务器绑定到计算机的 IP 地址，而不是其本地 IP 地址 `127.0.0.1`。执行此操作，请前往 Aptana Studio 3 ➤ `Preferences` ➤ `Aptana Studio` ➤ `Web Servers` ➤ `Built-in`。你将看到一个屏幕和一个下拉菜允许你选择内部 Web 服务器应该绑定的 IP 地址，如图 9-1 所示。
 
 ![Image 119](img/index-325_1.jpg)
 
@@ -8435,7 +8703,7 @@ http://api.rottentatoes.com/
 
 325
 
-如果 `calculator.html`尚未打开，请在 Aptana Studio 中打开它。单元测试简单地运行几个断言，检查方法或属性的输出值是否与基于可预测输入的预期值。本章中的计算器示例非常简单，因为很容易预测出 `1+1` 应该始终等于 `2`。没有额外的变量会影响预期结果，因此 `2` 应该始终是预期结果。当结果不是 `2` 时，你就知道应用程序在某处出了问题。
+如果 `calculator.html`尚未打开，请在 Aptana Studio 中打开它。单元测试简单地运行几个断言，检查方法或属性的输出值是否与基于可预测输入的预期值。本章中的计算器示例非常简单，因为很容易预测出 `1+1` 应该始终等于 `2`。没有额的变量会影响预期结果，因此 `2` 应该始终是预期结果。当结果不是 `2` 时，你就知道应用程序在某处出了问题。
 
 在 `calculator.html` 中，在闭合的 `body` 标签之前创建一个新的 `script` 标签。
 
@@ -8456,17 +8724,25 @@ http://api.rottentatoes.com/
 在 `script` 标签内，你可以开始编写第一组单元测试。虽然计算器代码还没有编写，但你已经开始通过单元测试规定代码中应该存在哪些方法和属性，以及它们应该如何行为。一个基础计算器应该执行以下操作：
 
 * 加法
+
 * 减法
+
 * 除法
+
 * 乘法
 
 计算器通常会取一个初始值来执行这些方法，并在每个方法上返回一个结果。你还能够清除计算器。基于此基础，应该实现以下方法：
 
 * `add`
+
 * `subtract`
+
 * `divide`
+
 * `multiply`
+
 * `clear`
+
 * `getResult`
 
 然后你可以将对应用程序的这些描述转换为单元测试。
@@ -8502,7 +8778,7 @@ operation');
 });
 ```
 
-如你所见，测试方法是 `QUnit` 的一部分，接受一个描述和一个回调函数。当测试执行时，会调用回调函数并执行测试。在测试内部，你可以看到几个方法。`expect()` 指定了测试内将运行多少个断言。你还实例化了 `calculator` 类，以便在测试中使用它。每个测试按创建创建的变量都会被销毁，且不能在另一个测试中使用。然而，它们可以在测试内的任何断言中使用。最后，`equal()` 是一个断言。断言简单地接收一个结果并检查产生或返回的值是否与预期值匹配。在此例中，`equal` 断言检查新计算器是否以 10 作为初始结果。
+如你所见，测试方法是 `QUnit` 的一部分，接受一个描述和一个回调函当测试执行时，会调用回调函数并执行测试。在测试内部，你可以看到几个方法。`expect()` 指定了测试内将运行多少个断言。你还实例化了 `calculator` 类，以便在测试中使用它。每个测试按创建创建的变量都会被销毁，且不能在另一个测试中使用。然而，它们可以在测试内的任何断言中使用。最后，`equal()` 是一个断言。断言简单地接收一个结果并检查产生或返回的值是否与预期值匹配。在此例中，`equal` 断言检查新计算器是否以 10 作为初始结果。
 
 单元测试就此结束。有多种断言可用。请参表 9-2 的重要断言列表。
 
@@ -8513,13 +8789,20 @@ operation');
 **表 9-2.** QUnit 断言
 
 | 断言描述 | 描述 |
+
 | :--- | :--- |
+
 | `ok( *state*, *message*)` | 检查一个值 (`state`) 是否为真；如果为真，则断言通过。 |
+
 | `equal( *actual*, *expected*, *message*)` | 检查实际值是否等于预期值。 |
+
 | `notEqual( *actual*, *expected*, *message*)` | 检查实际值是否不等于预期值。 |
+
 | `deepEqual( *actual*, *expected*, *message*)` | 检查实际值是否等于预期值。当你想要比较实例化对象及其值时，此断言特别有用。 |
-| `strictEqual( *actual*, *expected*, *message*)` | 检查实际值是否等于预期值。此断言特别有用。 |
-| `raises( *block*, *expected*, *message*)` | 检查块内执行的代码是否抛出异常，以及该异常是否匹配预期值。 |
+
+| `strictEqual( *actual`, *expected*, *message*)` | 检查实际值是否等于预期值。此断言特别有用。 |
+
+| `raises( *block`, *expected`, *message*)` | 检查块内执行的代码是否抛出异常，以及该异常是否匹配预期值。 |
 
 ![Image 121](img/index-329_1.jpg)
 
@@ -8549,10 +8832,6 @@ expect(2);
 * 创建一个新的计算器实例并设置初始值为 10
 */
 ```
-
-
-
-
 
 ```javascript
 var calculator = new app.calculator(10);
@@ -8639,6 +8918,8 @@ equal(calculator.getResult(), 20, '10 * 2 should equal 20');
 
 由于本节的重点是创建单元测试，因此不会对计算器的 JavaScript 代码进行详细解释。代码注释应该能帮助你稍微一下。
 
+
+
 ```javascript
 var app = app || {};
 
@@ -8712,8 +8993,11 @@ return _result;
 ![Image 124]
 
 如图 9-5 所示，有四个主要的框：Commit 提交框（顶部）、Unstaged 未暂存框（左下）、Commit Message 提交信息框（底部中间）和 Staged 已暂存框（右下）。Commit 框显示了 Unstaged 框中选中文件与仓库中当前版本之间的差异。Unstaged 框显示了自上次提交以来所有更改的文件。文件有三种状态：
+
 - 白色：新文件
+
 - 红色：已删除文件
+
 - 绿色：已更改文件
 
 提交信息框允许你添加提交信息；每次提交都需要添加添加提交信息。Staged 框显示了将随当前提交一起提交的所有文件。为了提交文件，你必须将它们从 Unstaged 框移动到 Staged 框。通常情况下，你会想要提交所有的文件。点击 Unstaged 框旁边的 `>>` 按钮。这将自动移动所有文件到 Staged 框。输入提交信息并点击按钮。这将所有更改提交到本地仓库。
@@ -8730,18 +9014,18 @@ return _result;
 
 文件现在已提交到本地仓库，现在是时候将其推送到远程仓库了。即使你只是为了自己开发一个项目，使用远程仓库也是个好习惯。这样做的主要原因是，如果你的电脑出了问题，你不仅拥有项目的备份，还有你之前所有提交和更改的备份。
 
-
-
-
 首先，前往 github.com 注册一个免费账户，并创建一个名为 `ci` 的公共仓库。按照说明为你的本地机器设置 Git SSH 密钥。
 
 - Mac: [http://help.github.com/mac-set-up-git/]
+
 - Windows: [http://help.github.com/win-set-up-git/]
+
 - Linux: [http://help.github.com/linux-set-up-git/]
 
 在设置好 SSH 密钥并尝试通过终端登录 github.com 成功完成测试后，返回你在 github.com 上的项目页面。你应该能看到类似于图 9-8 的内容。
 
 ![Image 126](img/index-337_1.jpg)
+
 ![Image 127](img/index-337_2.jpg)
 
 # 第 9 章：测试和部署你的移动 Web 应用
@@ -8757,6 +9041,7 @@ return _result;
 **图 9-9.** 添加远程仓库
 
 ![Image 128](img/index-338_1.jpg)
+
 ![Image 129](img/index-338_2.jpg)
 
 # 第 9 章：测试和部署你的移动 Web 应用
@@ -8796,15 +9081,17 @@ Capistrano 是一个部署平台，有助于消除一些重复的部署任务。
 Capistrano 是一个 Ruby gem。要安装它，从 App Explorer 访问 `Commands` ➤ `Open Terminal`。一个终端窗口将在窗口右侧打开。输入以下命令安装 Capistrano、Capistrano Rsync With Remote Cache 和 Capistrano Multistage：
 
 - Windows: `gem install capistrano capistrano_rsync_with_remote_cache capistrano-ext`
+
 - Mac/Linux: `sudo gem install capistrano capistrano_rsync_with_remote_cache capistrano-ext`
 
 在 Capistrano 和所有需要的 gem 安装完成后，你现在可以对项目进行 `capify` 操作了。返回 App Explorer，确保没有选中/高亮任何项目，然后前往 `Commands` ➤ `Open Terminal`。一个终端窗口将打开，如图 9-12 所示。
 
 **图 9-12.** 终端窗口
 
-这将确保任何运行的命令都将在项目根目录下运行。要验证这一点，请确保图 9-12 中显示了 `ci`。
+这将确保任何运行的命令都将在项目根目下运行。要验证这一点，请确保图 9-12 中显示了 `ci`。
 
 ![Image 131](img/index-340_1.jpg)
+
 ![Image 132](img/index-340_2.jpg)
 
 # 第 9 章：测试和部署你的移动 Web 应用
@@ -8822,8 +9109,6 @@ Capistrano 是一个 Ruby gem。要安装它，从 App Explorer 访问 `Commands
 为了使用 Capistrano，你需要创建一组配置文件。Capistrano 可以自动完成这些。在本节中，你将专注于如何使用 Capistrano 将你的应用程序部署到生产环境。
 
 为了使用 Capistrano，你需要创建一组配置文件。Capistrano 可以自动完成这些。在本节中，你将专注于如何使用 Capistrano 将你的应用程序部署到生产环境。
-
-
 
 位于底部，然后按住 `Shift + I`（插入）。到达底部后，将公钥粘贴到文件中，如图 9-19 所示。
 
@@ -8960,13 +9245,11 @@ role :db, { domain } # Rails 迁移在此运行
 set :keep_releases, 5 # 告诉 capistrano 保留多少版本
 ```
 
-
-
 `set :domain, "ci.fishrod.co.uk"` # 应用程序的域名。上一行代码设置了应用程序的域名，它将用于登录服务器。
 
 `set :deploy_to, "~/application/"` # 部署应用程序的路径
 
-`:deploy_to` 设置应用程序部署到远程服务器上的路径。在本例中，SSH 用户的 Web 路径位于用户目录，因此使用了 `~`。如果你的 Web 路径在其他地方，你应该使用该路径。例如，在大多数空白服务器上，它将存在于 `/var/www/application/` 下。首先，你需要在服务器上创建应用程序文件夹。
+`:deploy_to` 设置应用程部署到远程服务器上的路径。在本例中，SSH 用户的 Web 路径位于用户目录，因此使用了 `~`。如果你的 Web 路径在其他地方，你应该使用该路径。例如，在大多数空白服务器上，它将存在于 `/var/www/application/` 下。首先，你需要在服务器上创建应用程序文件夹。
 
 ![Image 142](img/index-348_1.jpg)
 
@@ -9040,7 +9323,7 @@ ln -s application/current/ public_html
 
 `http://yourdomain*/js/tests/calculator.html`
 
-如你所见，Capistrano 是一个强大的工具。它不仅可以用于部署，还可以用于在不直接登录服务器的情况下在远程服务器上运行命令。这对于重新编译 SASS 文件或合并和压缩 JavaScript 文件非常有用。Capistrano 更棒的一点是，由于它是从命令行运行的，因此它可以集成到如 Hudson 或 Bamboo 之类的持续集成服务器中。
+如你所见，Capistrano 是一个强大的工具。它不仅可以用于部署，还可以用于在不直接登录服务器的情况下在远程服务器上运行命令。这对于重新编译 SASS 文件或合并和压缩 JavaScript 文件非常有用。Capistrano 更棒的一点是，由于它是从命命令行运行的，因此它可以集成到如 Hudson 或 Bamboo 之类的持续集成服务器中。
 
 ## 总结
 
@@ -9048,11 +9331,7 @@ ln -s application/current/ public_html
 
 尽管这本书本书没有介绍如何实现持续集成服务器，但这是一个值得追求的主题，即使是作为一个独立开发者也是如此。当你有最后时刻的代码更改时，你可以确信当你提交代码后，一旦它到达生产环境，它已经经过了充分测试。你也可以确信，由于自动化的存在，如果它第一次成功部署了，它应该再次成功、再次、再成功，除非你破坏了应用程序的某些元素。在这种情况下，你失败的测试将指出哪部分代码运行不符合预期。
 
-仅通过这一章，你就应该真正掌握如何使用 QUnit 创建 JavaScript 单元测试的基础。市面上还有其他更先进的测试产品，例如 Test Swarm ([`github.com/jquery/testswarm) 和 Jasmine`](https://github.com/jquery/testswarm)。
-
-
-
-
+仅通过这一章，你就应该真正掌握如何使用 QUnit 创建 JavaScript 单元测试的基础。市面上还有其他更先进的测试产品，例如 Test Swarm ([`github.com/jquery/testswarm) 和 Jasmine`](https://github.com/jquery/testswarm).
 
 ```javascript
 /**
@@ -9469,646 +9748,1144 @@ form#add-movie {
 # 索引
 
 **A**
+
 - advantages, 28
+
 - Actor model, 240–24, 2
+
 - factors, 27, 28
+
 - add method, 291
+
 - multiple phone structure, 30
+
 - addPet method, 229
+
 - Twitter native and mobile web
+
 - Ajax/XMLHttpRequest, 222
+
 - application, 29
+
 - Android, 13, 3, 6
+
 - Apache, 10, 11
+
 - audience, 14
+
 - `app.utility.validator`, 249
+
 - entertainment-based
+
 - appendChild method, 263
+
 - applications, 27
+
 - Aptana, 5, 6
+
 - social application, 26, 2, 7
+
 - `<article />` element
+
 - task based applications (see HTML4, 42)
+
 - Task-based mobile web
+
 - mobile web site document, 39, 40
+
 - applications)
+
 - nest information, 39
+
 - Eclipse Helios Update Site, 6
-
-
-
-
 
 # 索引
 
 - 结构, 39–41
+
 - Hello World, 代码, 14
+
 - `<aside />` 元素
+
 - Aptana 的新 Web 项目
+
 - HTML4, 44
+
 - 向导, 31
+
 - 结构, 43, 44
+
 - HTML 源代码, 32
+
 - Audacity
+
 - meta 元素, 33
+
 - 平均下载时间, 74
+
 - 测试, 34, 35
+
 - MP3, 77
-- title 和 link 标签, 34
+
+- title 和 link 标筘, 34
+
 - OGG 格式, 74–76
+
 - viewport meta 标签定义
+
 - SoundCloud, 73, 74
+
 - 33
+
 - `<audio />` 元素
+
 - XHTML 1.1 vs HTML5 文档类型
+
 - Android 4 Ice Cream Sandwich,
+
 - 声明, 32
+
 - 46
+
 - JavaScript APIs, 13
+
 - 属性, 46
+
 - 移动端网页（参见 Mobile web）
-- Audio 标签, 45
+
+- Audio 标筘, 45
+
 - SDK
+
 - 3gp 版本, 45
+
 - ADT 启动屏幕, 7
+
 - 媒体格式, 47
+
 - Android SDK Manager, 8
+
 - 音频优化
+
 - Aptana, Android 菜单, 7, 8
+
 - audacity
+
 - Web 应用 vs 原生应用, 14
+
 - 平均下载时间, 74
+
 - 音频优化, audacity（续）
+
 - 主主目录, 340
+
 - MP3, 77
+
 - 无密码 SSH, 343
+
 - OGG, 74–76
+
 - `production.rb`, 346
-- SoundCloud, 73, 74
+
 - 公钥, 341, 3, 42
+
 - 无损与有损压缩
+
 - `public_html`, 347
+
 - 73
+
 - `public_html` 符号链接, 349
+
 - 规则, 72
+
 - PuTTy 应用, 340
+
 - 仓库变量, 344
 
 ### B
+
 - `rsync_with_remote_cache`, 345
+
 - Bootstrap
+
 - Ruby 安装, 338
+
 - `bootstrap.js` 文件, 267
+
 - `:scm` 变量, 345
+
 - 点击事件监听器, 268
+
 - `.ssh` 目录, 340, 341
+
 -控制器动作, 269
+
 - `.ssh` 文件夹, 342, 343
+
 - OSX 终端, 339
+
 - 控制器与动作, 终端窗口, 338
+
 - `:use_sudo`, 347
+
 - `_controller` 变量, 267
+
 - `/var/www` 目录, 347
+
 - 坏链, 270
+
 - yourdomain, 349
+
 - DOM 树, 268
+
 - Android 版 Chrome
+
 - 完整的 Bootstrap 代码, 274–277
+
 - Android 4+, 312
+
 - `get method`, 273
+
 - Chrome alert, 315
+
 - `init method`, 274
+
 - Chrome 页面调试
+
 - JSON 对象, 271
+
 - 选择, 313
+
 - 本地存储变量, 272
+
 - 调试控制台, 313
+
 - 属性访问, 271
+
 - 高亮元素, 314
+
 - `while loop`, 268
+
 - JavaScript 控制台, 315
+
 - 浏览器嗅探脚本, 15
+
 - 持续集成
+
 - Aptana Studio 3
+
 - 应用与测试, 321
 
 ### C
+
 - App Explorer, 334
+
 - 回调方法, 256
+
 - 内置服务器设置
+
 - `<canvas />` 元素, 47, 324
+
 - Capistrano
+
 - 计算器代码, 331–333, 32
+
 - App Explorer, 339
+
 - `calculator.html`, 322, 323, 325
+
 - `authorized_keys` 文件, 341
+
 - Capistrano（参见 Capistrano）
+
 - capify 输出, 339
+
 - 颜色方案
+
 - 配置选项, 345, 346
+
 - 已暂存/未暂存文件, 335
+
 - `default_stage` 变量集, 344
+
 - 调试, 328–331
+
 - `deploy.rb` 文件, 343
+
 - 默认 GitHub 页面
+
 - `:setup output`, 347, 348, 336
+
 - `:deploy_to sets`, 346
+
 - `equal() 断言`, 326
+
 - 文档根, 347
+
 - `expect()`, 326
+
 - 最终输出, 348
+
 - 单元测试失败, 328
+
 - Firefox, 324
+
 - Git 提交窗口, 333
+
 - Daniel 网站, 143
+
 - Git SSH 密钥, 335
+
 - HTML 测试, 323
+
 - 大显示器, 144
+
 - `http://docs.jquery.com/QUnit` 属性, 142, 328
+
 - 响应式网页设计, 143
+
 - 初始化 Git 仓库, 333
+
 - nth 选择器, 134
+
 - `js`, 321
+
 - 伪类器, 133
+
 - 新远程命令, 径向渐变, 138–139, 337
+
 - Syntactically Awesome 通过的单元测试, 332
+
 - 样式表 (SASS)
+
 - QUnit 断言, 327
+
 - 编译, 147
+
 - QUnit 单元测试, 322
+
 - mixins, 151–154, 54
+
 - 远程仓库, 335, 336
+
 - 嵌套, 146–147, 150
+
 - 远程 URI 框, 337
+
 - 局部, 148–150
+
 - `script 标签`, 325, 3, 26
+
 - 选择器继承, 154–157, 56
+
 - 已暂存更改, 334
+
 - 变量与插值
+
 - 服务器, 321, 150–153, 1
+
 - 源码控制管理
+
 - 文字阴影与描边
+
 - 分支与标签, 319, 131–135, 2
+
 - Git/SVN, 318
+
 - 过渡
+
 - 测试
+
 - 颜色过渡, 123
+
 - Capistrano, 321
 
-
-
-
-
 ### CSS
+
 - 圆形渲染, 121](#index_split_001.html_p124)
 
 ### FTP
+
 - 320
 
 ### div
+
 - 元素创建, 120](#index_split_001.html_p123)
+
 - 单位测试, 320](#index_split_003.html_p321)
 
 ### JavaScript
+
 - 122
+
 - 控制器函数, 267](#index_split_002.html_p268)
+
 - 新属性, 121, 122
 
 ### 跨域资源共享
+
 - 简写方法, 123
+
 - (CORS), 255
 
 ### 样式创建
+
 - 创建, 121](#index_split_001.html_p124)
 
 ### CSS3
+
 - 测试类, 122](#index_split_001.html_p125)
+
 - 动画, 124–126,](#index_split_001.html_p127) 254
+
 - 测试元素代码, 122](#index_split_001.html_p125)
+
 - 属性选择器, 133](#index_split_001.html_p136)
+
 - 厂商特定属性, 119–
+
 - 圆角, 140–141
+
 - 120
+
 - 阴影, 141–142
 
 ### @font-face
+
 ### D
+
 - 文件大小, 129](#index_split_001.html_p132)
+
 - Date 对象, 264](#index_split_002.html_p265)
+
 - Google 中的字体负载
+
 - 抽片管理器, 254–2](#index_split_002.html_p255)55
+
 - Chrome, Android, 130](#index_split_001.html_p133)
+
 - div, 264](#index_split_002.html_p265)
+
 - Google 字体字体, 129](#index_split_001.html_p132)
+
 - Hello World 网页字体, 127,](#index_split_001.html_p130)
+
 - 128
 
 ### E
+
 - 新字体声明, 130](#index_split_001.html_p133)
+
 - ECMAScript, 221](#index_split_002.html_p222)
+
 - 字体类型, 127](#index_split_001.html_p130)
+
 - `e.message`, 248](#index_split_002.html_p249)
+
 - 线性渐变, 135–138](#index_split_001.html_p138)
 
 # 索引
+
 366
 
 ### F
+
 - `<aside />` 元素
+
 - Facebook touch 和 Twitter 移动
+
 - HTML4, 44
+
 - 网站, 26,](#index_split_000.html_p30) 27
+
 - 结构, 43,](#index_split_000.html_p47) 44
+
 - 喜爱的电影, 260](#index_split_002.html_p261)
+
 - `<audio />` 元素
+
 - 收藏控制器
+
 - Android 4](#index_split_000.html_p9) 冰淇淋
+
 - 添加收藏, 293–2](#index_split_002.html_p294)94
+
 - 明治, 46
+
 - `favorite.js` 文件, 288](#index_split_002.html_p289)
+
 - 属性, 46](#index_split_000.html_p50)
+
 - 列出收藏
-- Audio 标签, 45](#index_split_000.html_p49)
+
+- Audio 标筘, 45](#index_split_000.html_p49)
+
 - 空的 localStorage 属性,
-- 3gp 版本, 45](#index_split_000.html_p49)
+
 - 289, 290
+
 - 媒体格式, 47](#index_split_000.html_p51)
+
 - 最终代码, 292–293](#index_split_002.html_p293)
-- `<canvas />` 元素, 47](#index_split_001.html_p51)
+
 - 滚动对象, 291,](#index_split_002.html_p292)
+
 - 元素, 39](#index_split_000.html_p43)
+
 - 292
+
 - `<figure />` 和 `<figcaption />`
+
 - 动作, 289](#index_split_002.html_p290)
+
 - 元素, 48](#index_split_000.html_p52)
+
 - 循环, 290](#index_split_002.html_p291)
+
 - `<footer />` 元素, 49](#index_split_000.html_p53)
+
 - 电影视图, 291](#index_split_002.html_p292)
+
 - `<header />` 元素, 50,](#index_split_000.html_p54) 51
+
 - 移除收藏, 294–2](#index_split_002.html_p295) 95
+
 - `<hgroup />` 元素, 51,](#index_split_000.html_p255) 52
+
 - `<figure />` 和 `<figcaption />`
+
 - HTML4/XHTML1.1, 38](#index_split_000.html_p42)
+
 - 元素, 48](#index_split_000.html_p52)
+
 - `<mark />` 元素, 52](#index_split_000.html_p56)
+
 - 文件传输协议 (FTP), 320](#index_split_003.html_p321)
+
 - 移动表单
+
 - `fixdeckheight`, 259](#index_split_002.html_p260)
+
 - `<footer />` 元素, 49](#index_split_000.html_p53)
+
 - 移动和和桌面, 79,](#index_split_000.html_p83) 80
+
 - 格式, 250](#index_split_002.html_p251)
+
 - 数据类型, 80–](#index_split_000.html_p84) 82
+
 - MoMemo, 85](#index_split_000.html_p88)
 
 ### application
+
 - 定义, 100,](#index_split_000.html_p103)
 
 ### G
+
 - 101
+
 - `getController` 方法, 273](#index_split_002.html_p274)
+
 - 永恒项目综合症, 101](#index_split_000.html_p104)
 
 ### H
+
 - 主要功能, 102](#index_split_000.html_p105)
+
 - 硬件控制, 2](#index_split_000.html_p7)
+
 - 次要功能, 103](#index_split_000.html_p106)
+
 - hashbangs, 267](#index_split_002.html_p268)
+
 - 值功能, 103](#index_split_000.html_p106)
+
 - `<header />` 元素, 50,](#index_split_000.html_p54) 51
+
 - 电影列表创建
+
 - `<hgroup />` 元素, 51,](#index_split_000.html_p255) 52
+
 - 应用清单属性,
+
 - HTML 移动端网页, 87](#index_split_000.html_p90)
+
 - 117
+
 - HTML5, 83](#index_split_000.html_p87)
+
 - `bootstrap.js` 文件, 107](#index_split_000.html_p110)
+
 - android 和 iOS 网页应用, 37,](#index_split_000.html_p41) 38
+
 - 缓存清单文件, 118](#index_split_001.html_p121)
+
 - `<article />` 元素
+
 - 投放块, 114](#index_split_000.html_p114)
+
 - HTML4, 42](#index_split_000.html_p46)
+
 - 距离块, 116](#index_split_001.html_p119)
+
 - 移动网页文档, 39,](#index_split_000.html_p43)
+
 - 竖屏移动设备, 105,](#index_split_000.html_p108) 106
+
 - header 代码, 108](#index_split_000.html_p111)
+
 - 信息, 39](#index_split_000.html_p43)
+
 - 横屏平板设备, 105](#index_split_000.html_p108)
+
 - 结构, 39–](#index_split_000.html_p43) 41
+
 - 横屏平板设备, 信息, 112,](#index_split_000.html_p115) 113
 
 # 索引
+
 367
+
 - 列表页, 110](#index_split_000.html_p113)
+
 - 电影信息头部, 114](#index_split_000.html_p117)
+
 - 电影列表卡, 109](#index_split_000.html_p112)
+
 - 无样式的任务栏, 109](#index_split_000.html_p112)
+
 - 竖屏移动设备, 信息, 12,](#index_split_000.html_p115) 13
 
 ### I
+
 - IE6, 312](#index_split_003.html_p313)
+
 - samsung galaxy tab, 117](#index_split_001.html_p120)
+
 - `innerHTML`, 260](#index_split_002.html_p261)
+
 - 搜索并添加, 110–11](#index_split_000.html_p113) 2
+
 - `instanceof`, 245](#index_split_002.html_p246)
+
 - 原声块, 115, 116](#index_split_000.html_p118)
 
 ### 集成开发环境
+
 - 摘要块, 114](#index_split_000.html_p117)
+
 - `(IDE)`, 5](#index_split_000.html_p10)
+
 - UI 型图, 106](#index_split_000.html_p109)
+
 - `iScroll`, 285](#index_split_002.html_p286)
+
 - 视频块, 115](#index_split_000.html_p118)
+
 - `isEmpty`, 244–](#index_split_002.html_p245) 245
+
 - 多媒体
+
 - `isTypeOf`, 245–](#index_split_002.html_p246) 247
+
 - 音频嵌入, 77–79](#index_split_000.html_p81)
+
 - 容器和编码器组合, 60,](#index_split_000.html_p64) 61
 
 ### J, K
+
 - 编码器和解码器, 59](#index_split_000.html_p63)
+
 - JavaScript MVC. 参见 Model View
+
 - 移动网页（查看 Mobile web）
+
 - 控制器 (MVC)
+
 - 分辨率, 60](#index_split_000.html_p64)
+
 - JavaScript 对象表示
+
 - 视频比特率, 59](#index_split_000.html_p63)
+
 - 填充 (JSON), 255–257](#index_split_002.html_p256)
+
 - 视频嵌入（参见 Video jQuery, 222](#index_split_002.html_p223)
+
 - `JSON.parse()` 方法, 271](#index_split_002.html_p272)
+
 - Vorbis 音频代码, 60](#index_split_000.html_p64)
+
 - VP8 视频解码器, 60](#index_split_000.html_p64)
 
 ### L
+
 - `<nav />` 元素, 52,](#index_split_000.html_p256) 53
+
 - `_listScroll` 变量, 289](#index_split_002.html_p290)
-
-
-
-
 
 # 索引 368
 
 ## A
+
 - 应用工具
+
 - 跨站请求, `255–25`, `7`
+
 - SMS API, `16`
 
 ### L
+
 - `loadCard` 函数, `94, 95`
+
 - 分页策略
+
 - `localhost:922[2, 313]`
+
 - 优势与
+
 - `localStorage`, `272,`, `288`
+
 - 劣势, `86`
+
 - 单页 Ajax 创建, `86`
 
 ### M
+
 - 单页容器创建
+
 - Mac OS X Linux, `5` (参见单页容器元素，`52`，创建)
+
 - Miro 视频转换器, `63, 6`, `4`
+
 - 标准 HTML 页面创建
+
 - 移动 Web, `86, 87`
+
 - 音频优化
+
 - `<section>` 元素, `55,`, `56`
+
 - audacity (参见 Audacity)
+
 - `<time>` 元素, `56`
+
 - 无损与有损压缩, `73`
+
 - `<video>` 元素 `72`
+
 - UI 创建, `104, 105`
 
 ### D
+
 - Android 4, `57`
+
 - 对象/特性检测
+
 - 属性, `57`
+
 - haz.io 操作, `17`
+
 - 支持的格式, `58`
+
 - 消息委托, `16`
+
 - 移动 Web, 对象/特性检测 (续)
+
 - 幻牌管理器, `254–255`
+
 - UA 嗅探脚本, `15`
+
 - `JSONP`, `255–2`, `57`
+
 - 现实世界的优势, `15`
+
 - 布局与调整大小, `257–2`, `59`
+
 - 屏幕尺寸与像素密度,缓存, `310–3`, `12`
+
 - 清理 `index.html`, `220–2`, `21`
 
 ## V / 视频优化
+
 - 视频优化
+
 - 合并, `308–309`
+
 - “添加新模板”按钮，控制器, `65`
+
 - bootstrap (参见 Bootstrap)
+
 - bitsontherun.com, 账号
+
 - 收藏 (参见 收藏选项，`65`, true)
-- “创建新模板”对话框, `66`
+
+- “创建新模板”对话桂, `66`
+
 - 电影 (参见 Movies controller)
+
 - HTML 更新, `306–308`
+
 - 桌面解决方案, `63,`, `64`
+
 - 代码压缩/压缩, `309`
+
 - 托管解决方案, `61–63`
+
 - `model` (参见 Model)
+
 - “模板属性”页面，MVC 和 JavaScript, `221–`, `66, 67`
+
 - `MVC` 图, `223`
+
 - “上传新视频”按钮, `67, 68` (参见 Styling)
+
 - 移动 Web 开发者, `2`
+
 - 描述, `250`
+
 - 移动端网站，`format.js` 代码, `250–2`, `52`
+
 - `releaseDate.js` 代码, `252–2`, `53`
+
 -  Actor 模型, `240–24`
+
 - 类图, `229–230` (参见 View)
+
 - `Memo`, `230,`, `231,`, `242,`, `261,`, `295`
+
 - 电影模型, `242–24`
+
 - 电影列表项视图, `261–`, `262`
+
 - 用户模型中的宠物数组, `226–`
+
 - 电影列表视图, `262–26`, `229`
+
 - 电影模型, `242–24`
+
 - 宠物模型, `225`
+
 - 电影搜索结果, `260`
+
 - UML 关联类型, `230–231`
+
 - 电影视图
+
 - 用户模型, `224–225`
+
 - 演员列表, `266`
+
 - 验证, `243–250`
+
 - 页脚导航按钮, `265`
+
 - 错误处理, `247–248`
+
 - 页头部, `264`
-- `isEmpty`, `244–`, `245`
+
+- `isEmpty`, 244–, `245`
+
 - 电影内容块, `265`
-- `isTypeOf`, `245–`, `247`
+
+- `isTypeOf`, 245–, `247`
+
 - 对象布局代码, `263`
+
 - 对象创建, `244`
-- `POSH`, `265`
-- 增强模型, `248–`, `250`
-- 用户喜喜欢的电影, `266`
-- 异常, `247–248`
+
+- `POSH`, 265
+
+- 增强模型, 248–, 250
+
+- 用户喜喜欢的电影, 266
+
+- 异常, 247–248
+
 - Movies controller
-- 提示, `243`
-- 实例, `277`, `278`
-- `movies.js` 文件, `277`
-- 视频模型, `235–24`
-- 搜索操作, `282–83`
-- 视频源模型, `231–35`
+
+- 提示, 243
+
+- 实例, 277, 278
+
+- `movies.js` 文件, 277
+
+- 视频模型, 235–24
+
+- 搜索操作, 282–83
+
+- 视频源模型, 231–35
+
 - `Model` 视图 (MVC)
-- 事件监听器, `278`
-- 完整代码, `281–282`
-- `rootElement` 变量, `260`
-- 搜索查询, `279`
+
+- 事件监听器, 278
+
+- 完整代码, 281–282
+
+- `rootElement` 变量, 260
+
+- 搜索查诨, 279
+
 - Rotten Tomatoes API (参见 Movies controller)
-- 提交, `279`, `280`
-- 显示结果, `283`
-- 视频代码, `285–286`
-- `Sammy.js`, `267`
+
+- 提交, 279, 280
+
+- 显示结果, 283
+
+- 视频代码, 285–286
+
+- `Sammy.js`, 267
+
 - 多媒体
-- 搜索输出, `280`
-- 音频嵌入, `77–79`
-- `<section>` 元素, `55,`, `56`
+
+- 搜索输出, 280
+
+- 音频嵌入, 77–79
+
+- `<section>` 元素, 55,`, 56`
+
 - 容器与编码器
-- `setCardContent` 方法, `94`
-- 组合, `60,`, `61`
-- `setPets` 方法, `228`
-- 编码器与解码器, `59`
-- `showProfile` 函数, `256`
+
+- `setCardContent` 方法, 94
+
+- 组合, 60,`, 61`
+
+- `setPets` 方法, 228
+
+- 编码器与解码器, 59
+
+- `showProfile` 函数, 256
+
 - 移动 Web (参见 移动 Web)
+
 - 单页 Ajax
-- 分辨率, `60`
-- 回调函数, `94`
-- 视频比特, `59`
-- 事件监听函数, `94`
-- HTML 加载, `88–93`
+
+- 分辨率, 60
+
+- 回调函数, 94
+
+- 视频比特, 59
+
+- 事件监听函数, 94
+
+- HTML 加载, 88–93
+
 - 嵌入 (参见 视频嵌入)
-- JavaScript 方法, `93`
-- Vorbis 音频代码, `60`
-- `loadCard` 函数, `94, 95`
-- VP8 视频解码器, `60`
-- `XML/JSON`, `93`
-- 多重性, `231`
-- XMLHttpRequest (xhr) 对象, `95`
+
+- JavaScript 方法, 93
+
+- Vorbis 音频代码, 60
+
+- `loadCard` 函数, 94, 95
+
+- VP8 视频解码器, 60
+
+- `XML/JSON`, 93
+
+- 多重性, 231
+
+- XMLHttpRequest (xhr) 对象, 95
+
 - 单页容器创建
 
 ## **N**
-- 卡片激活, `98, 9`, `9`
 
-
-
-
+- 卡片激活, 98, 9`, 9`
 
 # 为安卓学习 HTML5 和 JavaScript
 
 ## 目录
 
 ### `nav` 元素
+
 - CSS 文件
+
 - 幻灯、卡片加载
 
 ### O
+
 - `goToCard` 方法
+
 - OGG
+
 - JavaScript
+
 - 跟踪波形
+
 - `JSON/XML`
+
 - Vorbis 导出选项
 
 ### 源代码管理 (SCM)
+
 - 警告对话框
+
 - 分支与标记
+
 - `onload` 事件监听器
+
 - Git/SVN
 
 ### `output` 元素
+
 - 样式
+
 - 电影列表
+
 - 最终代码
 
 ### P, Q
+
 - 最终搜索结果视图
+
 - 参数
+
 - 全局样式
+
 - `parseInt` 方法
+
 - SASS 样式
 
 ### POSH
+
 - `SASS/CSS` 样式
+
 - 电影列表项视图
+
 - 电影视图
+
 - `view`
+
 - 最终电影信息页
+
 - 头部关键帧创建
 
 ### R
+
 - 动画
+
 - `releaseDate.format`
+
 - 电影块和内容
+
 - `揭露模块模式`
+
 - 样式
 
 ### 样式、电影视图 (*续*)
+
 - 最终代码
+
 - 电影头部样式
+
 - 实例变量
+
 - setter 实现
 
 ### T
+
 - `video.js` 创建
+
 - 基于任务的移动 Web 应用程序
+
 - 视频优化
+
 - BUSit 移动网站
+
 - “添加新模板”按钮
+
 - 行程规划器
+
 - `bitsontherun.com` 账户
+
 - TFL 移动网站
+
 - 选项
+
 - 用户任务性能
+
 - “创建新模板”对话框
+
 - `this.bindSearch()`
+
 - 桌面解决方案
+
 - `this.render`
+
 - 托管解决方案-`time` 元素
+
 - `bitsontherun.com`
+
 - 类型提示
+
 - `encoding.com`
+
 - “模板属性”页
 
 ### U
+
 - “上传新视频”按钮
+
 - `unescape` 方法
+
 - 用户代理 (UA) 探测脚本
-- 视频源模型
+
+- 视�源模型
 
 ### V, W, X
+
 - getters 和 setters
+
 - 原生搜索
+
 - 实例变量声明
+
 - `video` 元素
+
 - Android 4
+
 - 实例化方法创建、属性
+
 - 支持的格式
+
 - `videosource.js` 文件创建
 
 ### 视图 (View)
+
 - 安卓浏览器
+
 - 示例
+
 - `Aptana`
+
 - 电影列表项视图
+
 - CPU 性能
+
 - 电影列表视图
+
 - 基于 Flash 的内容
-- 电影视图
+
+- 电影视视图
+
 - `WebM/44`
 
 ### 视频模型
+
 ### Y, Z
+
 - 访问器 (accessors)
+
 - `YOURAPIKEY`
 
 ## 版权信息
 
 **Learn HTML5 and JavaScript for Android**
+
 Copyright © 2012 Gavin Williams
 
 本作品受版权保护。出版者保留所有权利，无论材料整体还是部分，特别是翻译、重印、插图重用、朗诵、广播、在微胶片或其他任何其他物理方式上的复制，以及传输或信息存储和检索、电子适配、计算机软件，或通过目前已知或此后开发的类似或不同方法。本法律保留的豁免适用于评论或学术分析相关的简短摘录，或专门为了在计算机系统上输入和执行而提供的、供作品购买者专用的材料。本出版物或其部分的复制仅在出版者所在地现行版本版权法的规定允许，且必须始终获得 Springer 的使用许可。可以通过版权许可中心的 RightsLink 获取使用许可。违反者将根据相应的版权法受到起诉。
-
-
-
-
 
 编辑：Vanessa Moore
 
@@ -10126,7 +10903,7 @@ Copyright © 2012 Gavin Williams
 
 有关翻译的信息，请发送电子邮件至 rights@apress.com，或或访问 [www.apress.com.](http://www.apress.com)
 
-Apress 以及 ED 友人的书籍可以根据学术、企业或促销目的批量购买。大多数书目也提供 eBook 版本和许可。更多信息，请参阅我们的[特种批量销售–电子书许可](http://www.apress.com/bulk-sales) 网页。
+Apress 以及 ED 友人的书籍可以根据学术、企业或促销目的批量购买。大多数书目也提供 eBook 版本和许可。更更多信息，请参阅我们的[特种批量销售–电子书许可](http://www.apress.com/bulk-sales) 网页。
 
 作者在本文中提到的任何源代码或其他补充材料均可在以下处获取：
 
@@ -10194,83 +10971,100 @@ ii
 
 ### <article /> ............................................................................................................................ 39
 
-### <aside />.............................................................................................................................................................. 43
 
-v
+
+### <aside />
 
 目录
 
 <audio /> ............................................................................................................................................................. 45
-
 <canvas /> ........................................................................................................................................................... 47
-
 <figure /> 和 <figcaption />.............................................................................................................................................. 48
-
 <footer />............................................................................................................................................................. 49
-
 <header /> ........................................................................................................................................................... 50
-
 <hgroup /> ........................................................................................................................................................... 51
-
 <mark /> .............................................................................................................................................................. 52
-
 <nav />........................................................................................................................................................................ 52
 
-
-
-
-
 ## 在 HTML5 中处理多媒体
+
 ## 为移动 Web 优化视频
+
 ### 使用 HTML5 嵌入视频
+
 ## 为移动 Web 优化音频
+
 ## 使用 HTML5 嵌入音频
 
 # HTML5 移动表单
+
 ## 针对不同数据类型的字段
 
 ## 总结
 
 # 第 4 章：使用 HTML5 启动项目
+
 ## 分页策略
+
 ### 使用标准 HTML 分页
+
 ### 使用单页 Ajax 分页
+
 ### 使用单页容器分页
+
 ## 创建应用
+
 ### 规划 MoMemo
+
 ### 创建 UI 和 HTML
+
 ### 创建电影列表
 
 ## 总结
 
 # 第 5 章：移动端 CSS3
+
 ## 厂商特定属性
+
 ## CSS 动画与过渡
+
 ### 过渡
+
 ### 动画
+
 ## 新 CSS3 特性
+
 ### `@font-face`
+
 ### `text-shadow` 和 `text-stroke`
+
 ## 选择器
+
 ### 渐变
+
 ### 边框
+
 ### CSS 媒体查询
+
 ## CSS 预处理器 (SASS)
+
 ### 嵌套
+
 ### 编译
+
 ### 局部文件 (Partials)
+
 ## 变量与插值
+
 ### 混合入 (Mixins)
+
 ### 选择器继承
 
 ## 总结
 
 # 第 6 章：奠定 CSS3 基础
+
 ## 组织结构
-
-
-
-
 
 # 创建局部 (161)
 
@@ -10287,8 +11081,11 @@ v
 ### 获取用户位置 (181)
 
 ### 使用 Canvas 绘图 (186)
+
 ### 绘制停止图标 (197)
+
 ### 绘制播放图标 (202)
+
 ### 绘制播放头 (204)
 
 ### 存储数据 (213)
@@ -10296,8 +11093,11 @@ v
 ## 移动端 JavaScript 库 (214)
 
 ### 文件大小 (216)
+
 ### 文件数量 (216)
+
 ### 活跃度 (216)
+
 ### CSS3 支持 (217)
 
 ## 总结 (217)
@@ -10307,47 +11107,65 @@ v
 ## 清理你的代码 (220)
 
 ## MVC 和 JavaScript 入门 (221)
+
 ### 模型 (Model) (224)
+
 #### 视频源模型 (231)
+
 #### 视频模型 (235)
+
 #### 演员模型 (Actor Model) (240)
+
 #### 电影模型 (243)
 
 ### 验证 (244)
+
 #### 在模型上应用验证 (248)
+
 #### 抛出与处理异常 (248)
 
 ### 强化模型 (250)
+
 #### 创建新类型 (251)
+
 #### 应用工具类 (254)
+
 ### 管理队列 (255)
+
 ### 发送跨站请求 (256)
+
 ### 控制布局与处理缩放 (259)
 
 ## 视图 (View) (260)
+
 ### 电影列表项视图 (262)
+
 ### 电影列表视图 (263)
+
 ### 电影视图 (264)
 
 ### Bootstrap 与控制器 (268)
+
 #### Bootstrap 初始化 (268)
+
 #### 电影控制器 (278)
+
 #### 收藏控制器 (289)
 
 ## 内容样式化 (296)
+
 ### 电影列表样式化 (296)
-
-
-
-
 
 # 样式化电影视图 [301]
 
 # 整合一切 [307]
 
 ## 合并、压缩与缓存 [309]
+
 ### 合并 [309]
+
 ### 压缩 [310]
+
 ### 缓存 [311] 
 
 ## 使用 Android 版 Chrome 进行调试 [313]
@@ -10357,24 +11175,35 @@ v
 # 第 9 章：测试和部署你的移动 Web 应用 [317]
 
 ## 源码管理 [318]
+
 ### 分支与标签 [319]
+
 ### 测试 [320]
+
 ## 部署你的应用程序 [320]
+
 ### 持续集成服务器 [321]
+
 ### 你的持续集成项目 [321]
+
 ### 编写你的第一个单元测试 [322]
+
 ### 使用 Git 和 GitHub [332]
+
 ### 熟悉 Capistrano [338]
 
 ## 总结 [349]
 
 # 附录 [351]
+
 ### 代码列表 A-1 [351]
+
 ### 代码列表 A-2 [356]
 
 # 索引 [363]
 
 ## 关于作者
+
 **Gavin Williams** 从 14 岁就开始 Web 行业工作，当时他首选的编辑器是 `Microsoft Front Page` 或 `Notepad`。他主要使用 `HTML`、`PHP` 和 `CSS` 工作。在完成计算机认证以及其他几项 A-level 后，他在进入大学前休息了一年，在 `Agency.com`担任 Web 开发人员。在这里，他服务过 `IKEA`、`英国航空`、`Channel 5` 和宝洁等等客户。
 
 随后，他进入大学学习交互媒体制作，在那里产生了对移动端和移动 Web 的热爱。他凭借 `WiDrive` 获得了英国交互媒体奖，这是一种仅使用 `iPhone` 即可通过 `WiFi` 控制的遥控汽车。不久后，他与大学的好友之一 Siobhan Bentley 一起创立了 `Fishrod Interactive`，为 `British Sky Broadcasting`、`WWE`、`Johnson & Johnson` 以及其他一些小型公司开发移动网站、应用程序和交互式装置，例如 `Soulcialize`（一家位于伦敦水晶宫的纸杯蛋糕公司）和 `Streetfit.tv`（一家街舞健身公司）。
@@ -10382,201 +11211,361 @@ v
 Gavin Williams 是一位全能型开发者，喜欢学习新技术并将其推向极致。好奇心是他的弱点，因为他很容易被开发世界中的新奇事物所分散注意力。
 
 ## 关于技术评审员
+
 **James Graham** 于 1989 年毕业于德克萨斯农工大学，获得电子科学学士学位，专攻电信方向。在校期间，他的文章发表在国际通信协会 1988 年的 `ICA Communique` 上（《快速数据包交换：理论与性能概述》）。他的工作经验包括：在伊利诺伊州芝加哥的 `Amoco Corporation` `Network Design Group` 担任助理网络工程师；在佛罗里达州福特沃尔顿滩的 `Tybrin Corporation` 担任高级网络工程师；以及在`第 16 特种作战翼`担任情报系统分析师。
 
 # 文档大纲
+
 * 封面
+
 * 目录概览
+
 * 目录
+
 * 关于作者
+
 * 关于技术评审员
+
 * 引言
+
     * 本书的读者
+
     * 本书的结构
+
     * 下载代码
+
     * 联系作者
+
 * 入门
+
     * 选择测试设备
+
     * 设置开发环境
+
         * Aptana
+
         * Android SDK
+
         * SASS
+
         * Apache
+
     * 总结
+
 * 创建 Android 移动 Web 应用简介
+
     * 移动 Web 有何不同？
+
         * 对象/功能检测
+
         * 屏幕尺寸与像素密度
+
     * 迎合你的观众
+
         * 任务型
+
         * 社交
+
         * 娱乐
+
     * Web 应用与原生应用
+
     * 第一行代码：Hello World
+
         * 设置
+
         * HTML
+
         * 测试
-
-
-
-
 
 ## 总结
 
 # HTML5
+
 ## 新新特性
+
 ### `<article />`
+
 ### `<aside />`
+
 ### `<audio />`
+
 ### `<canvas />`
+
 ### `<figure />` 和 `<figcaption />`
+
 ### `<footer />`
+
 ### `<header />`
+
 ### `<hgroup />`
+
 ### `<mark />`
+
 ### `<nav />`
+
 ### `<output />`
+
 ### `<section />`
+
 ### `<time />`
+
 ### `<video />`
+
 ## 在 HTML5 中处理多媒体
+
 ## 为移动 Web 优化视频
+
 ### 使用 HTML5 嵌入视频
+
 ## 为移动 Web 优化音频
+
 ### 使用 HTML5 嵌入音频
+
 ## HTML5 移动表单
+
 ### 不同数据类型的字段
+
 ## 总结
 
 # 使用 HTML5 开始你的项目
+
 ## 分页策略
+
 ### 使用标准 HTML 分页
+
 ### 使用单页 Ajax 分页
+
 ### 使用单页容器分页
+
 ## 创建应用
+
 ### 规划 MoMemo
+
 ### 创建 UI 和 HTML
+
 ### 创建电影列表
+
 ## 总结
 
 ## 移动端 CSS3
+
 ## 厂商属性
+
 ## CSS 动画与过渡
+
 ### 过渡
+
 ### 动画
+
 ## 新 CSS3 特性
+
 ### `@font-face`
+
 ### `text-shadow` 和 `text-stroke`
+
 ## 选择器
+
 ### 渐变
+
 ### 边框
+
 ## CSS 媒体查询
+
 ## CSS 预处理器 (SASS)
+
 ### 嵌套
+
 ### 编译
+
 ### 部分文件
+
 ## 变量与插值
+
 ### Mixins
+
 ### 选择器继承
+
 ## 总结
+
 ## 奠定 CSS3 基础
+
 ## 组织结构
+
 ## 创建部分文件
+
 ### 在 Aptana 中自动编译 Sass
+
 ## 总结
 
 # 移动端 JavaScript
+
 ## 面对象 JavaScript
+
 ## 事件处理
+
 ### 获取用户位置
+
 ## 使用 Canvas 绘制
+
 ### 绘制停止图标
+
 ### 绘制播放图标
+
 ### 绘制指针
+
 ### 存储数据
+
 ## 移动端 JavaScript 库
+
 ### 文件大小
+
 ### 文件数量
+
 ### 活跃
+
 ### CSS3 支持
+
 ## 总结
 
 # JavaScript：模型、视图与控制器 (MVC)
+
 ## 清理代码
+
 ## MVC 与 JavaScript 入门
+
 ## 模型
+
 ### 视频源模型
+
 ### 视频模型
+
 ###  Actor 模型
+
 ### 电影模型
+
 ### 验证
+
 ## 在模型中应用验证
+
 ### 抛出与处理异常
+
 ### 强化模型
+
 ### 创建新类型
+
 ## 应用工具
+
 ### 管理牌组
+
 ### 发送跨站请求
+
 ### 控制布局与处理大小调整
-## 视图
+
+## 视View
+
 ### 电影列表项视图
+
 ### 电影列表视图
+
 ### 电影视图
+
 ## Bootstrap 与控制器
+
 ### Bootstrap 初始化
+
 ### 电影控制器
+
 ## 收藏控制器
+
 ## 内容样式化
+
 ### 电影列表样式化
+
 ### 电影视图样式化
+
 ## 整合一切
+
 ## 合并、极压缩与缓存
+
 ### 合并
+
 ### 极压缩
+
 ### 缓存
+
 ## 使用 Chrome 调试
+
 ## 总结
 
 # 测试与部署你的移动应用
+
 ## 源码管理
+
 ### 分支与标签
+
 ## 测试
+
 ## 部署你的应用
+
 ## 持续集成服务器
+
 ## 你的持续集成项目
+
 ## 编写你的第一个单元测试
+
 ### 使用 `Git` 和 `GitHub`
+
 ### 熟悉 `Capistrano`
+
 ## 总结
 
 # 附录
+
 ### 代码列表 A-1
+
 ### 代码列表 A-2
 
 # 索引
+
 ### A
+
 ### B
+
 ### C
+
 ### D
+
 ### E
+
 ### F
+
 ### G
+
 ### H
+
 ### I
+
 ### J, K
+
 ### L
 
-
-
-
-
 * M
+
 * N
+
 * O
+
 * P, Q
+
 * R
+
 * S
+
 * T
+
 * U
+
 * V, W, X
+
 * Y, Z

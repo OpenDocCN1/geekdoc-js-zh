@@ -1,3 +1,4 @@
+
 # JavaScript 设计模式：优化代码结构以实现健壮且可扩展的JS应用程序
 
 ## 引言
@@ -14,11 +15,9 @@
 
 设计模式主要分为三类，每类侧重于软件设计的特定维度：
 
-创建型模式：这类模式关注类实例和对象的创建方式。它们为不同场景下的对象创建提供了灵活的解决方案。
-
-结构型模式：结构型模式处理类和对象的组合，以形成更大的结构。它们有助于在系统各部分之间建立高效且灵活的关系。
-
-行为型模式：这类模式关注对象之间的交互以及它们如何相互通信。它们有助于定义工作流程和协作行为。
+- **创建型模式**：这类模式关注类实例和对象的创建方式。它们为不同场景下的对象创建提供了灵活的解决方案。
+- **结构型模式**：结构型模式处理类和对象的组合，以形成更大的结构。它们有助于在系统各部分之间建立高效且灵活的关系。
+- **行为型模式**：这类模式关注对象之间的交互以及它们如何相互通信。它们有助于定义工作流程和协作行为。
 
 ## 创建型设计模式
 
@@ -26,25 +25,21 @@
 
 以下是 JavaScript 中最常见的创建型设计模式：
 
-工厂方法：提供一个创建对象的接口，允许子类更改将要创建的对象的类型。当需要灵活且可适应的创建逻辑时，它非常有用。
-
-抽象工厂：提供一个创建相关或依赖对象家族的接口，而无需指定它们的具体类。这促进了一致且兼容的对象的创建。
-
-建造者：用于逐步构建一个对象。它允许通过增量指定对象的类型和内容来创建复杂对象。
-
-原型：专注于通过复制现有对象（称为原型）来创建新对象。当通过复制现有对象比从头构建更高效时，它非常有用。
-
-单例：确保一个类只有一个实例，并提供对该实例的全局访问点。当需要单个类实例来协调整个系统的操作时使用。
+- **工厂方法**：提供一个创建对象的接口，允许子类更改将要创建的对象的类型。当需要灵活且可适应的创建逻辑时，它非常有用。
+- **抽象工厂**：提供一个创建相关或依赖对象家族的接口，而无需指定它们的具体类。这促进了一致且兼容的对象的创建。
+- **建造者**：用于逐步构建一个对象。它允许通过增量指定对象的类型和内容来创建复杂对象。
+- **原型**：专注于通过复制现有对象（称为原型）来创建新对象。当通过复制现有对象比从头构建更高效时，它非常有用。
+- **单例**：确保一个类只有一个实例，并提供对该实例的全局访问点。当需要单个类实例来协调整个系统的操作时使用。
 
 ### 工厂方法
 
 工厂方法设计模式是一种软件设计技术，它依赖于通过公共接口创建特定子类型的对象。该模式通过使用一个包含具体方法和抽象方法的抽象创建者类来实现。具体方法处理对象创建，而抽象方法由具体子类实现。根据所使用的子类，可以获得特定的行为。
 
-示例：为了更好地理解工厂方法，让我们考虑一个与在二维平面中创建点相关的具体示例。假设我们正在开发一个需要处理笛卡尔坐标和极坐标点的应用程序。
+**示例**：为了更好地理解工厂方法，让我们考虑一个与在二维平面中创建点相关的具体示例。假设我们正在开发一个需要处理笛卡尔坐标和极坐标点的应用程序。
 
 首先，我们创建一个名为 `Point` 的类，表示平面中的一个点。该类有一个接受 `x` 和 `y` 坐标的构造函数，以及一个返回点可读表示（格式为 (`x`, `y`)）的 `toString()` 方法。
 
-步骤 1：定义表示平面中点的 `Point` 类：
+**步骤 1**：定义表示平面中点的 `Point` 类：
 
 ```javascript
 // Point class representing a point in the plane
@@ -62,7 +57,7 @@ class Point {
 
 在此步骤中，我们创建了 `Point` 类，其构造函数接受 `x` 和 `y` 坐标，并有一个 `toString()` 方法来获取点的可读表示。
 
-步骤 2：在 `PointFactory` 类中实现工厂方法：
+**步骤 2**：在 `PointFactory` 类中实现工厂方法：
 
 ```javascript
 // PointFactory class implementing the Factory Method
@@ -80,7 +75,7 @@ class PointFactory {
 
 在此步骤中，我们创建了实现工厂方法的 `PointFactory` 类。该类包含两个静态方法：`createCartesianPoint` 和 `createPolarPoint`。第一个方法创建笛卡尔坐标的点，第二个方法创建极坐标的点。
 
-步骤 3：使用工厂方法的示例：
+**步骤 3**：使用工厂方法的示例：
 
 ```javascript
 // Example of using the Factory Method
@@ -90,7 +85,7 @@ const polarPoint = PointFactory.createPolarPoint(5, Math.PI / 2);
 
 在此步骤中，我们使用 `PointFactory` 创建了两个点。一个使用 `createCartesianPoint` 以笛卡尔坐标创建，另一个使用 `createPolarPoint` 以极坐标创建。
 
-步骤 4：打印创建的点：
+**步骤 4**：打印创建的点：
 
 ```javascript
 // Printing the created points
@@ -100,7 +95,7 @@ console.log("Polar Point:", polarPoint.toString()); // Polar Point: (6.123233995
 
 在最后一步中，我们打印了创建的点以验证结果。
 
-最终代码：
+**最终代码**：
 
 ```javascript
 // Point class representing a point in the plane
@@ -109,55 +104,30 @@ class Point {
     this.x = x;
     this.y = y;
   }
-```
-
-
-
-
-
-```javascript
-// Method to obtain a readable representation of the point 
-
-toString() {
-
-return `(${this.x}, ${this.y})`;
-
+  // Method to obtain a readable representation of the point
+  toString() {
+    return `(${this.x}, ${this.y})`;
+  }
 }
 
-}
-
-// PointFactory class implementing the Factory Method 
-
+// PointFactory class implementing the Factory Method
 class PointFactory {
-
-// Method to create a point in Cartesian coordinates 
-
-static createCartesianPoint(x, y) {
-
-return new Point(x, y);
-
+  // Method to create a point in Cartesian coordinates
+  static createCartesianPoint(x, y) {
+    return new Point(x, y);
+  }
+  // Method to create a point in polar coordinates
+  static createPolarPoint(rho, theta) {
+    return new Point(rho * Math.cos(theta), rho * Math.sin(theta));
+  }
 }
 
-// Method to create a point in polar coordinates 
+// Example of using the Factory Method
+const cartesianPoint = PointFactory.createCartesianPoint(5, 6);
+const polarPoint = PointFactory.createPolarPoint(5, Math.PI / 2);
 
-static createPolarPoint(rho, theta) {
-
-return new Point(rho * Math.cos(theta), rho * Math.sin(theta));
-
-}
-
-}
-
-// Example of using the Factory Method 
-
-const cartesianPoint = PointFactory.createCartesianPoint(5, 6); 
-
-const polarPoint = PointFactory.createPolarPoint(5, Math.PI / 2); 
-
-// Printing the created points 
-
-console.log("Cartesian Point:", cartesianPoint.toString()); // Cartesian Point: (5, 6) 
-
+// Printing the created points
+console.log("Cartesian Point:", cartesianPoint.toString()); // Cartesian Point: (5, 6)
 console.log("Polar Point:", polarPoint.toString()); // Polar Point: (6.123233995736766e-17, 5)
 ```
 
@@ -165,179 +135,116 @@ console.log("Polar Point:", polarPoint.toString()); // Polar Point: (6.123233995
 
 在软件设计中，抽象工厂设计模式是一种用于创建相关对象族或组的技术，而无需指定它们的具体类。该模式提供了一种封装一组共享共同主题的独立工厂的方法，而无需了解将要创建的对象的具体类的细节。这促进了一致且模块化的对象创建，使代码管理和扩展更加容易。
 
-示例：为了更好地理解抽象工厂模式，让我们考虑一个与准备饮料（如茶和咖啡）相关的示例。
+**示例**：为了更好地理解抽象工厂模式，让我们考虑一个与准备饮料（如茶和咖啡）相关的示例。
 
-步骤 1：我们定义基类和子类来表示饮料，在本例中为`Beverage`、`Tea`和`Coffee`。
+**步骤 1**：我们定义基类和子类来表示饮料，在本例中为 `Beverage`、`Tea` 和 `Coffee`。
 
 ```javascript
 class Beverage {
-
-consume() {
-
-// Abstract method, to be implemented in subclasses
-
+  consume() {
+    // Abstract method, to be implemented in subclasses
+  }
 }
 
+class Tea extends Beverage {
+  consume() {
+    console.log('This is Tea');
+  }
 }
 
-class Tea extends Beverage { 
-
-consume() {
-
-console.log('This is Tea');
-
-}
-
-}
-
-class Coffee extends Beverage { 
-
-consume() {
-
-console.log('This is Coffee');
-
-}
-
+class Coffee extends Beverage {
+  consume() {
+    console.log('This is Coffee');
+  }
 }
 ```
 
-步骤 2：我们定义基工厂类（`BeverageFactory`）和工厂子类（`TeaFactory`和`CoffeeFactory`），它们将用于创建特定的饮料。
+**步骤 2**：我们定义基工厂类（`BeverageFactory`）和工厂子类（`TeaFactory` 和 `CoffeeFactory`），它们将用于创建特定的饮料。
 
 ```javascript
 class BeverageFactory {
-
-prepare(amount) {
-
-// Abstract method, to be implemented in subclasses
-
+  prepare(amount) {
+    // Abstract method, to be implemented in subclasses
+  }
 }
 
+class TeaFactory extends BeverageFactory {
+  makeTea() {
+    console.log('Tea is prepared');
+    return new Tea();
+  }
 }
 
-class TeaFactory extends BeverageFactory { 
-
-makeTea() {
-
-console.log('Tea is prepared');
-
-return new Tea();
-
-}
-
-}
-
-class CoffeeFactory extends BeverageFactory { 
-
-makeCoffee() {
-
-console.log('Coffee is prepared');
-
-return new Coffee();
-
-}
-
+class CoffeeFactory extends BeverageFactory {
+  makeCoffee() {
+    console.log('Coffee is prepared');
+    return new Coffee();
+  }
 }
 ```
 
-步骤 3：在这一步中，我们创建一个茶工厂实例（`teaBeverageFactory`），用它来创建一杯茶饮料（`tea`），最后消费这杯茶饮料，产生预期的控制台输出。
+**步骤 3**：在这一步中，我们创建一个茶工厂实例（`teaBeverageFactory`），用它来创建一杯茶饮料（`tea`），最后消费这杯茶饮料，产生预期的控制台输出。
 
 ```javascript
-let teaBeverageFactory = new TeaFactory(); // Create a tea factory 
-
-let tea = teaBeverageFactory.makeTea(); // Use the factory to create a tea beverage 
-
-tea.consume(); // Consume the tea beverage 
+let teaBeverageFactory = new TeaFactory(); // Create a tea factory
+let tea = teaBeverageFactory.makeTea(); // Use the factory to create a tea beverage
+tea.consume(); // Consume the tea beverage
 
 // Expected Output:
-
-// Tea is prepared 
-
+// Tea is prepared
 // This is Tea
 ```
 
-最终代码：
+**最终代码**：
 
 ```javascript
-// Definition of base classes and subclasses 
-
+// Definition of base classes and subclasses
 class Beverage {
-
-consume() {
-
-// Abstract method, to be implemented in subclasses
-
+  consume() {
+    // Abstract method, to be implemented in subclasses
+  }
 }
 
+class Tea extends Beverage {
+  consume() {
+    console.log('This is Tea');
+  }
 }
 
-class Tea extends Beverage { 
-
-consume() {
-
-console.log('This is Tea');
-
+class Coffee extends Beverage {
+  consume() {
+    console.log('This is Coffee');
+  }
 }
 
-}
-
-class Coffee extends Beverage { 
-
-consume() {
-
-console.log('This is Coffee');
-
-}
-
-}
-
-// Definition of the base factory class and factory subclasses 
-
+// Definition of the base factory class and factory subclasses
 class BeverageFactory {
-
-prepare(amount) {
-
-// Abstract method, to be implemented in subclasses
-
+  prepare(amount) {
+    // Abstract method, to be implemented in subclasses
+  }
 }
 
-}   
-
-class TeaFactory extends BeverageFactory { 
-
-makeTea() {
-
-console.log('Tea is prepared');
-
-return new Tea();
-
+class TeaFactory extends BeverageFactory {
+  makeTea() {
+    console.log('Tea is prepared');
+    return new Tea();
+  }
 }
 
+class CoffeeFactory extends BeverageFactory {
+  makeCoffee() {
+    console.log('Coffee is prepared');
+    return new Coffee();
+  }
 }
 
-class CoffeeFactory extends BeverageFactory { 
-
-makeCoffee() {
-
-console.log('Coffee is prepared');
-
-return new Coffee();
-
-}
-
-}
-
-// Example of usage 
-
-let teaBeverageFactory = new TeaFactory(); // Create a tea factory 
-
-let tea = teaBeverageFactory.makeTea(); // Use the factory to create a tea beverage 
-
-tea.consume(); // Consume the tea beverage 
+// Example of usage
+let teaBeverageFactory = new TeaFactory(); // Create a tea factory
+let tea = teaBeverageFactory.makeTea(); // Use the factory to create a tea beverage
+tea.consume(); // Consume the tea beverage
 
 // Expected Output:
-
-// Tea is prepared 
-
+// Tea is prepared
 // This is Tea
 ```
 
@@ -347,51 +254,38 @@ tea.consume(); // Consume the tea beverage
 
 构造器模式是一种设计模式，旨在为面向对象编程中的各种对象创建问题提供灵活的解决方案。
 
-示例：让我们使用一个`Person`类的示例来存储个人信息。
+**示例**：让我们使用一个 `Person` 类的示例来存储个人信息。
 
-步骤 1. 定义`Person`类：在这一步中，我们定义`Person`类，这是我们希望以结构化方式构建的类。`Person`类有几个属性，如`addressStreet`、`postalCode`、`city`、`companyName`、`position`和`annualIncome`，用于存储个人信息。它还有一个`toString()`方法，返回个人信息的可读字符串表示。
+**步骤 1**：定义 `Person` 类：在这一步中，我们定义 `Person` 类，这是我们希望以结构化方式构建的类。`Person` 类有几个属性，如 `addressStreet`、`postalCode`、`city`、`companyName`、`position` 和 `annualIncome`，用于存储个人信息。它还有一个 `toString()` 方法，返回个人信息的可读字符串表示。
 
 ```javascript
 class Person {
+  constructor() {
+    this.addressStreet = this.postalCode = this.city = "";
+    this.companyName = this.position = "";
+    this.annualIncome = 0;
+  }
 
-constructor() {
-
-this.addressStreet = this.postalCode = this.city = "";
-
-this.companyName = this.position = "";
-
-this.annualIncome = 0;
-
-}
-
-toString() {
-
-return (
-
-`Person lives at
-
-${this.addressStreet}, ${this.city}, ${this.postalCode}
-
-and works at ${this.companyName} as
-
-${this.position} earning ${this.annualIncome}`
-
-);
-
-}
-
+  toString() {
+    return (
+      `Person lives at
+      ${this.addressStreet}, ${this.city}, ${this.postalCode}
+      and works at ${this.companyName} as
+      ${this.position} earning ${this.annualIncome}`
+    );
+  }
 }
 ```
 
-在这一步中，我们创建了`Person`类，其中包含一个初始化属性的构造函数和一个用于获取人员可读表示的`toString()`方法。
+在这一步中，我们创建了 `Person` 类，其中包含一个初始化属性的构造函数和一个用于获取人员可读表示的 `toString()` 方法。
 
-步骤 2. 创建建造者：在这一步中，我们创建三个相关的建造者：`PersonBuilder`、`WorkPersonBuilder`和`AddressPersonBuilder`。
+**步骤 2**：创建建造者：在这一步中，我们创建三个相关的建造者：`PersonBuilder`、`WorkPersonBuilder` 和 `AddressPersonBuilder`。
 
-`PersonBuilder`：这是用于构建`Person`对象的主要建造者。它有两个方法`lives`和`works`，用于指定人员的地址和工作。`build()`方法完成构建并返回构建好的`Person`对象。
+- `PersonBuilder`：这是用于构建 `Person` 对象的主要建造者。它有两个方法 `lives` 和 `works`，用于指定人员的地址和工作。`build()` 方法完成构建并返回构建好的 `Person` 对象。
+- `WorkPersonBuilder`：继承自 `PersonBuilder`，用于指定人员的工作。它有 `at`、`asA` 和 `earning` 等方法，用于定义公司名称、职位和年收入。
+- `AddressPersonBuilder`：同样继承自 `PersonBuilder`，用于指定人员的地址。它有 `at`、`withPostcode` 和 `in` 等方法，用于定义地址、邮政编码和城市。
 
-`WorkPersonBuilder`：继承自`PersonBuilder`，用于指定人员的工作。它有`at`、`asA`和`earning`等方法，用于定义公司名称、职位和年收入。
 
-`AddressPersonBuilder`：同样继承自`PersonBuilder`，用于指定人员的地址。它有`at`、`withPostcode`和`in`等方法，用于定义地址、邮政编码和城市。
 
 ```javascript
 class PersonBuilder {
@@ -559,11 +453,7 @@ ${this.position} earning ${this.annualIncome}`
 }
 ```
 
-
-
-
-
-```
+```javascript
 // Base class PersonBuilder to build Person objects
 
 class PersonBuilder {
@@ -713,9 +603,9 @@ Engineer earning 80000
 
 示例：我们将以汽车为例。
 
-步骤 1：定义 `Car` 类（原型）
+步骤 1：定义`Car`类（原型）
 
-```
+```javascript
 class Car {
 
 constructor(name, model) {
@@ -733,7 +623,7 @@ this.model = model;
 
 步骤 2：设置汽车名称的方法
 
-```
+```javascript
 // Method to set the car's name
 setCarName(name) {
 this.name = name;
@@ -743,7 +633,7 @@ console.log(`Car name adjusted to: ${this.name}`);
 
 步骤 3：克隆汽车的方法（创建副本）
 
-```
+```javascript
 // Method to clone the car (create a copy)
 clone() {
 // Create a new Car instance with the same attributes
@@ -753,7 +643,7 @@ return new Car(this.name, this.model);
 
 步骤 4：使用原型模式
 
-```
+```javascript
 // Using the Prototype Pattern
 const originalCar = new Car('Audi', 'A3');
 // Clone the original car to create a new instance
@@ -763,7 +653,7 @@ clonedCar.setCarName('BMW');
 
 步骤 5：验证两辆汽车是否不同
 
-```
+```javascript
 // Verify that the cars are different
 console.log('Original Car:', originalCar.name, originalCar.model);
 console.log('Cloned Car:', clonedCar.name, clonedCar.model);
@@ -773,7 +663,7 @@ console.log('Cloned Car:', clonedCar.name, clonedCar.model);
 
 最终代码：
 
-```
+```javascript
 // Definition of the Car Class (Prototype)
 class Car {
 constructor(name, model) {
@@ -815,7 +705,7 @@ console.log('Cloned Car:', clonedCar.name, clonedCar.model);
 
 步骤 1：单例类定义：
 
-```
+```javascript
 class Singleton {
 constructor() {
 // ...
@@ -826,41 +716,41 @@ constructor() {
 
 步骤 2：检查该类的实例是否已存在：
 
-```
+```javascript
 const instance = this.constructor.instance;
 if (instance) {
 return instance;
 }
 ```
 
-在此步骤中，在 `Singleton` 类的构造函数中，我们通过 `this.constructor.instance` 检查该类的实例是否已存在。如果实例已存在，则返回该实例，而不是创建新实例。
+在此步骤中，在`Singleton`类的构造函数中，我们通过`this.constructor.instance`检查该类的实例是否已存在。如果实例已存在，则返回该实例，而不是创建新实例。
 
-步骤 3：创建 `Singleton` 类的实例：
+步骤 3：创建`Singleton`类的实例：
 
-```
+```javascript
 let s1 = new Singleton();
 let s2 = new Singleton();
 ```
 
-在此步骤中，我们创建 `Singleton` 类的两个实例 `s1` 和 `s2`。
+在此步骤中，我们创建`Singleton`类的两个实例`s1`和`s2`。
 
-步骤 4：检查 `s1` 和 `s2` 是否为同一实例：
+步骤 4：检查`s1`和`s2`是否为同一实例：
 
-```
+```javascript
 console.log('Are they the same? ' + (s1 === s2));
 ```
 
-这里，我们通过 `(s1 === s2)` 检查 `s1` 和 `s2` 是否为同一实例，并在控制台显示结果。
+这里，我们通过`(s1 === s2)`检查`s1`和`s2`是否为同一实例，并在控制台显示结果。
 
-步骤 5：调用 `say()` 方法：在最后一步中，我们调用 `s1` 实例的 `say()` 方法，该方法将在控制台打印 "Saying..."。
+步骤 5：调用`say()`方法：在最后一步中，我们调用`s1`实例的`say()`方法，该方法将在控制台打印 "Saying..."。
 
-```
+```javascript
 s1.say();
 ```
 
-最终代码：在最后一步中，我们调用 `s1` 实例的 `say()` 方法，该方法将在控制台打印 "Saying..."。
+最终代码：在最后一步中，我们调用`s1`实例的`say()`方法，该方法将在控制台打印 "Saying..."。
 
-```
+```javascript
 // Singleton class definition
 class Singleton {
 constructor() {
@@ -904,11 +794,7 @@ s1.say();
 - **装饰器模式**：动态地向现有对象添加功能，而不修改其结构。当希望灵活地扩展对象功能时非常有用。
 - **外观模式**：为子系统中的一组接口提供简化接口。通过提供更友好的接口，使复杂系统的使用更加容易。
 - **享元模式**：通过尽可能多地与相似对象共享数据，最小化内存或磁盘存储的使用。当需要高效管理大量对象时非常有用。
-
-
-
-
-**代理**：为另一个对象提供替代或占位符以控制对其的访问。可用于添加额外功能，如访问控制或懒加载。
+- **代理模式**：为另一个对象提供替代或占位符以控制对其的访问。可用于添加额外功能，如访问控制或懒加载。
 
 ### 适配器
 
@@ -916,7 +802,9 @@ s1.say();
 
 示例：
 
-1. 不兼容接口的定义：在此示例中，我们有两个计算器接口：`Calculator1`（旧版）和 `Calculator2`（新版）。
+1. 不兼容接口的定义：在此示例中，我们有两个计算器接口：`Calculator1`（旧版）和`Calculator2`（新版）。
+
+
 
 ```javascript
 class Calculator1 {
@@ -947,7 +835,7 @@ class Calculator2 {
 }
 ```
 
-2. 创建适配器：我们创建一个 `CalcAdapter` 类，它将作为两个计算器接口之间的适配器。适配器包装新接口（`Calculator2`），并提供所需操作的方法。
+2. 创建适配器：我们创建一个`CalcAdapter`类，它将作为两个计算器接口之间的适配器。适配器包装新接口（`Calculator2`），并提供所需操作的方法。
 
 ```javascript
 class CalcAdapter {
@@ -965,7 +853,7 @@ class CalcAdapter {
 }
 ```
 
-3. 使用适配器：现在，我们可以使用 `CalcAdapter` 对新接口（`Calculator2`）执行操作，而无需修改其代码。这使得从旧计算器过渡到新计算器更加容易。
+3. 使用适配器：现在，我们可以使用`CalcAdapter`对新接口（`Calculator2`）执行操作，而无需修改其代码。这使得从旧计算器过渡到新计算器更加容易。
 
 ```javascript
 // 创建适配器实例
@@ -1033,9 +921,9 @@ console.log(calculatorAdapter.operations(10, 55, 'add')); // 65
 
 示例：
 
-在此示例中，我们将创建用于渲染几何形状的类。我们将使用两个渲染器类：`VectorRenderer` 和 `RasterRenderer`。然后，我们将创建一个抽象类 `Shape` 和一个继承自 `Shape` 的 `Circle` 类。桥接模式的关键在于 `Shape` 持有一个对渲染器的引用，并将渲染任务委托给具体的渲染器。
+在此示例中，我们将创建用于渲染几何形状的类。我们将使用两个渲染器类：`VectorRenderer`和`RasterRenderer`。然后，我们将创建一个抽象类`Shape`和一个继承自`Shape`的`Circle`类。桥接模式的关键在于`Shape`持有一个对渲染器的引用，并将渲染任务委托给具体的渲染器。
 
-步骤 1. 渲染器类的定义：在此步骤中，我们创建 `VectorRenderer` 和 `RasterRenderer` 类，代表不同的渲染方法。
+步骤 1. 渲染器类的定义：在此步骤中，我们创建`VectorRenderer`和`RasterRenderer`类，代表不同的渲染方法。
 
 ```javascript
 class VectorRenderer {
@@ -1051,7 +939,7 @@ class RasterRenderer {
 }
 ```
 
-步骤 2. 抽象类 `Shape` 的定义：在此步骤中，我们创建抽象类 `Shape`，它将作为我们的抽象。该类有一个 `renderer` 属性，它是对我们将用于绘制形状的渲染器的引用。
+步骤 2. 抽象类`Shape`的定义：在此步骤中，我们创建抽象类`Shape`，它将作为我们的抽象。该类有一个`renderer`属性，它是对我们将用于绘制形状的渲染器的引用。
 
 ```javascript
 class Shape {
@@ -1061,7 +949,7 @@ class Shape {
 }
 ```
 
-步骤 3. `Circle` 类的定义：在此步骤中，我们创建继承自 `Shape` 的 `Circle` 类。`Circle` 类有一个 `radius` 属性，表示圆的半径。
+步骤 3. `Circle`类的定义：在此步骤中，我们创建继承自`Shape`的`Circle`类。`Circle`类有一个`radius`属性，表示圆的半径。
 
 ```javascript
 class Circle extends Shape {
@@ -1072,7 +960,7 @@ class Circle extends Shape {
 }
 ```
 
-步骤 4. `draw` 方法的实现：在 `Circle` 类中，我们实现 `draw` 方法。该方法通过 `this.renderer` 引用将渲染任务委托给具体的渲染器（`VectorRenderer` 或 `RasterRenderer`）。
+步骤 4. `draw`方法的实现：在`Circle`类中，我们实现`draw`方法。该方法通过`this.renderer`引用将渲染任务委托给具体的渲染器（`VectorRenderer`或`RasterRenderer`）。
 
 ```javascript
 draw() {
@@ -1080,7 +968,7 @@ draw() {
 }
 ```
 
-步骤 5. 创建渲染器和圆的实例：在此步骤中，我们创建渲染器类 `VectorRenderer` 和 `RasterRenderer` 的实例。然后，我们创建一个名为 `circle` 的 `Circle` 实例，并为其提供向量渲染器和半径为 5。
+步骤 5. 创建渲染器和圆的实例：在此步骤中，我们创建渲染器类`VectorRenderer`和`RasterRenderer`的实例。然后，我们创建一个名为`circle`的`Circle`实例，并为其提供向量渲染器和半径为 5。
 
 ```javascript
 let raster = new RasterRenderer();
@@ -1088,14 +976,14 @@ let vector = new VectorRenderer();
 let circle = new Circle(vector, 5);
 ```
 
-步骤 6. 绘制圆并改变其大小：我们在 `circle` 实例上调用 `draw` 方法，从而打印出向量渲染器对应的消息。然后，我们通过调用 `resize` 方法改变圆的大小，将其半径加倍。
+步骤 6. 绘制圆并改变其大小：我们在`circle`实例上调用`draw`方法，从而打印出向量渲染器对应的消息。然后，我们通过调用`resize`方法改变圆的大小，将其半径加倍。
 
 ```javascript
 circle.draw();
 circle.resize(2);
 ```
 
-步骤 7. 大小改变后绘制圆：我们再次在 `circle` 实例上调用 `draw` 方法，从而打印出大小改变后的更新消息。
+步骤 7. 大小改变后绘制圆：我们再次在`circle`实例上调用`draw`方法，从而打印出大小改变后的更新消息。
 
 ```javascript
 circle.draw();
@@ -1164,7 +1052,7 @@ circle.draw();
 
 示例：
 
-1. 类的定义：在此示例中，我们创建两个类：`Employee` 表示单个员工，`EmployeeGroup` 表示员工组。
+1. 类的定义：在此示例中，我们创建两个类：`Employee`表示单个员工，`EmployeeGroup`表示员工组。
 
 ```javascript
 class Employee {
@@ -1193,12 +1081,9 @@ class EmployeeGroup {
 }
 ```
 
+2. 创建员工和组：我们创建单个员工的实例，然后将它们分组到`EmployeeGroup`中。
 
-
-
-2. 创建员工和组：我们创建单个员工的实例，然后将它们分组到 `EmployeeGroup` 中。
-
-```
+```javascript
 // Creating individual employees
 let hernando = new Employee("Hernando", "Developer");
 let albert = new Employee("Albert", "Developer");
@@ -1206,24 +1091,16 @@ let albert = new Employee("Albert", "Developer");
 let developerGroup = new EmployeeGroup("Developers", [hernando, albert]);
 ```
 
-```
-// Creating individual employees
-let hernando = new Employee("Hernando", "Developer");
-let albert = new Employee("Albert", "Developer");
-// Creating an employee group and adding individual employees
-let developerGroup = new EmployeeGroup("Developers", [hernando, albert]);
-```
+3. 打印层次结构：我们使用`print()`方法显示层次结构，其中包含单个员工和员工组。
 
-3. 打印层次结构：我们使用 `print()` 方法显示层次结构，其中包含单个员工和员工组。
-
-```
+```javascript
 // Print the hierarchical structure
 developerGroup.print();
 ```
 
 最终代码：
 
-```
+```javascript
 class Employee {
 constructor(name, role) {
 this.name = name;
@@ -1267,9 +1144,9 @@ developerGroup.print();
 
 示例：
 
-1. 类定义：在此示例中，我们创建 `Form` 类作为基类，`Circle` 作为我们想要装饰的具体形状。我们还创建了一个名为 `ColoredShape` 的类，它充当装饰器，为形状添加颜色。
+1. 类定义：在此示例中，我们创建`Form`类作为基类，`Circle`作为我们想要装饰的具体形状。我们还创建了一个名为`ColoredShape`的类，它充当装饰器，为形状添加颜色。
 
-```
+```javascript
 class Form {
 constructor(color) {
 this.color = color;
@@ -1301,7 +1178,9 @@ return `${this.shape.toString()}, colored ${this.color}`;
 }
 ```
 
-2. 使用装饰器：我们创建一个基础圆形的实例，然后使用 `ColoredShape` 类将该圆形装饰为红色。
+2. 使用装饰器：我们创建一个基础圆形的实例，然后使用`ColoredShape`类将该圆形装饰为红色。
+
+
 
 ```
 // Create a base circle
@@ -1360,9 +1239,9 @@ console.log(redCircle.toString()); // Output: A circle of radius 2, colored red
 
 外观模式是面向对象编程中常用的软件设计模式。类似于建筑中的外观，外观是一个对象，它作为前端接口，屏蔽了更复杂的底层或结构代码。它提供了一个简化的接口来访问一组相关的子系统或类，使得与系统的交互更加容易，而无需了解内部细节。
 
-示例：在此示例中，我们将使用外观模式模拟计算机的操作。计算机由各种组件组成，如 CPU、内存和硬盘。`ComputerFacade` 将简化与这些组件的交互。
+示例：在此示例中，我们将使用外观模式模拟计算机的操作。计算机由各种组件组成，如`CPU`、内存和硬盘。`ComputerFacade`将简化与这些组件的交互。
 
-我们定义计算机组件的类：`CPU`、`Memory` 和 `HardDrive`。这些类具有执行各种操作的方法，例如冻结 CPU、将数据加载到内存以及从硬盘读取数据。
+我们定义计算机组件的类：`CPU`、`Memory`和`HardDrive`。这些类具有执行各种操作的方法，例如冻结`CPU`、将数据加载到内存以及从硬盘读取数据。
 
 ```
 class CPU {
@@ -1380,7 +1259,7 @@ read(lba, size) { console.log("Read from LBA " + lba + " with size " + size) }
 }
 ```
 
-我们创建 `ComputerFacade`，它提供了一个简化的接口来与计算机组件交互。在 `start()` 方法中，组件被一致地使用，并屏蔽了复杂的细节。
+我们创建`ComputerFacade`，它提供了一个简化的接口来与计算机组件交互。在`start()`方法中，组件被一致地使用，并屏蔽了复杂的细节。
 
 ```
 class ComputerFacade {
@@ -1398,7 +1277,7 @@ this.processor.execute();
 }
 ```
 
-最后，我们创建一个 `ComputerFacade` 实例，并使用其 `start()` 方法模拟计算机的启动过程。
+最后，我们创建一个`ComputerFacade`实例，并使用其`start()`方法模拟计算机的启动过程。
 
 ```
 let computer = new ComputerFacade();
@@ -1453,15 +1332,11 @@ computer.start();
 
 ### 享元
 
-
-
-
-
 享元模式用于在创建相似对象时通过尽可能多地共享数据来最小化内存使用。这意味着，与其创建多个具有相同数据的对象实例，不如使用一个共享实例来表示这些公共数据。这显著减少了内存使用量，尤其是在处理大量相似对象时。
 
 示例：
 
-步骤 1\. 定义 `User` 和 `User2` 类：在此步骤中，我们定义了两个类：`User` 和 `User2`。第一个类表示一个带有全名的简单用户，而第二个类实现了享元模式，通过共享相似的全名来减少内存使用。
+步骤 1\. 定义`User`和`User2`类：在此步骤中，我们定义了两个类：`User`和`User2`。第一个类表示一个带有全名的简单用户，而第二个类实现了享元模式，通过共享相似的全名来减少内存使用。
 
 ```
 // 定义 User 类
@@ -1488,7 +1363,7 @@ class User2 {
 User2.strings = [];
 ```
 
-步骤 2\. 辅助函数：在此步骤中，我们创建了两个辅助函数：`getRandomInteger` 用于获取随机整数，`getRandomText` 用于生成随机文本字符串。
+步骤 2\. 辅助函数：在此步骤中，我们创建了两个辅助函数：`getRandomInteger`用于获取随机整数，`getRandomText`用于生成随机文本字符串。
 
 ```
 // 辅助函数
@@ -1504,7 +1379,7 @@ function getRandomText() {
 }
 ```
 
-步骤 3\. 创建随机姓名：在此步骤中，我们创建了两个数组 `names` 和 `lastNames`，其中包含随机生成的名字和姓氏，用于创建用户。
+步骤 3\. 创建随机姓名：在此步骤中，我们创建了两个数组`names`和`lastNames`，其中包含随机生成的名字和姓氏，用于创建用户。
 
 ```
 // 创建随机姓名
@@ -1515,7 +1390,7 @@ for (let i = 0; i < 100; ++i) {
 }
 ```
 
-步骤 4\. 创建用户：在此步骤中，我们创建了两个数组 `users` 和 `users2`，用于存放创建的用户。我们遍历 `names` 和 `lastNames` 数组，分别创建 10,000 个未使用享元模式和使用享元模式的用户。
+步骤 4\. 创建用户：在此步骤中，我们创建了两个数组`users`和`users2`，用于存放创建的用户。我们遍历`names`和`lastNames`数组，分别创建 10,000 个未使用享元模式和使用享元模式的用户。
 
 ```
 let users = [];
@@ -1530,7 +1405,7 @@ for (let name of names) {
 }
 ```
 
-步骤 5\. 内存使用对比：在此步骤中，我们使用 `JSON.stringify` 对比未使用享元模式的用户和使用享元模式的用户的内存使用情况。并将结果打印到控制台。
+步骤 5\. 内存使用对比：在此步骤中，我们使用`JSON.stringify`对比未使用享元模式的用户和使用享元模式的用户的内存使用情况。并将结果打印到控制台。
 
 ```
 // 内存使用对比
@@ -1607,7 +1482,9 @@ console.log(`10,000 users with Flyweight occupy ~${users2Length} characters`); /
 
 示例：
 
-让我们想象一个名为 `Percentage` 的代理对象示例，用于表示百分比。该代理允许操作百分比值并对其执行数学运算。
+让我们想象一个名为`Percentage`的代理对象示例，用于表示百分比。该代理允许操作百分比值并对其执行数学运算。
+
+
 
 ```
 class Percentage {
@@ -1638,25 +1515,16 @@ console.log(`5% of 50 is ${50 * percentageFive}`); // 输出: "5% of 50 is 2.5"
 
 以下是 JavaScript 中最常见的行为型设计模式：
 
-责任链模式：允许多个对象处理一个请求，而发送者无需知道哪个对象将处理它。
-
-命令模式：将请求封装为一个对象，从而允许客户端用操作来参数化对象、对请求进行排队、记录请求以及支持可撤销的操作。
-
-迭代器模式：提供一种顺序访问集合元素的方法，而无需暴露其底层表示。
-
-中介者模式：定义一个对象，该对象封装了系统中对象之间如何进行通信，通过防止对象显式地相互引用来促进松耦合。
-
-备忘录模式：允许捕获并外部化对象的内部状态，以便之后可以将对象恢复到此状态。
-
-观察者模式：定义对象之间的一对多依赖关系，使得当一个对象改变状态时，其所有依赖者都会自动收到通知并更新。
-
-访问者模式：表示要对对象结构中的元素执行的操作，允许在不改变元素类的前提下定义新的操作。
-
-策略模式：定义一系列算法，将每个算法封装起来，并使它们可以互换，从而让算法可以独立于使用它的客户端而变化。
-
-状态模式：允许一个对象在其内部状态改变时改变其行为，通常实现为有限状态机。
-
-模板方法模式：定义一个操作中的算法骨架，但允许子类在不改变算法结构的情况下重新定义算法的某些部分。
+- **责任链模式**：允许多个对象处理一个请求，而发送者无需知道哪个对象将处理它。
+- **命令模式**：将请求封装为一个对象，从而允许客户端用操作来参数化对象、对请求进行排队、记录请求以及支持可撤销的操作。
+- **迭代器模式**：提供一种顺序访问集合元素的方法，而无需暴露其底层表示。
+- **中介者模式**：定义一个对象，该对象封装了系统中对象之间如何进行通信，通过防止对象显式地相互引用来促进松耦合。
+- **备忘录模式**：允许捕获并外部化对象的内部状态，以便之后可以将对象恢复到此状态。
+- **观察者模式**：定义对象之间的一对多依赖关系，使得当一个对象改变状态时，其所有依赖者都会自动收到通知并更新。
+- **访问者模式**：表示要对对象结构中的元素执行的操作，允许在不改变元素类的前提下定义新的操作。
+- **策略模式**：定义一系列算法，将每个算法封装起来，并使它们可以互换，从而让算法可以独立于使用它的客户端而变化。
+- **状态模式**：允许一个对象在其内部状态改变时改变其行为，通常实现为有限状态机。
+- **模板方法模式**：定义一个操作中的算法骨架，但允许子类在不改变算法结构的情况下重新定义算法的某些部分。
 
 ### 责任链模式
 
@@ -1664,14 +1532,11 @@ console.log(`5% of 50 is ${50 * percentageFive}`); // 输出: "5% of 50 is 2.5"
 
 在面向对象设计中，责任链模式是一种设计模式，由命令对象的源和一系列处理对象组成。
 
-示例：
-
-
-
+**示例：**
 
 让我们以一个包含生物的游戏为例。该生物在达到特定条件时会提升其防御和攻击力。它会形成一个链，攻击和防御值会随之增减。
 
-步骤 1\. 关键类与责任链模式的定义：在此步骤中，我们定义主要类，包括 `Creature` 和 `CreatureModifier`，以及具体的修饰器类。
+**步骤 1\. 关键类与责任链模式的定义**：在此步骤中，我们定义主要类，包括 `Creature` 和 `CreatureModifier`，以及具体的修饰器类。
 
 ```javascript
 class Creature {
@@ -1700,7 +1565,7 @@ class CreatureModifier {
 }
 ```
 
-步骤 2\. 具体修饰器的实现：我们创建具体的修饰器，例如 `NoBonusesModifier`、`DoubleAttackModifier` 和 `IncreaseDefenseModifier`。
+**步骤 2\. 具体修饰器的实现**：我们创建具体的修饰器，例如 `NoBonusesModifier`、`DoubleAttackModifier` 和 `IncreaseDefenseModifier`。
 
 ```javascript
 class NoBonusesModifier extends CreatureModifier {
@@ -1737,7 +1602,7 @@ class IncreaseDefenseModifier extends CreatureModifier {
 }
 ```
 
-步骤 3\. 使用责任链模式：在此步骤中，我们创建一个 `Creature` 实例，然后创建一个修饰器责任链并将其应用于该生物。
+**步骤 3\. 使用责任链模式**：在此步骤中，我们创建一个 `Creature` 实例，然后创建一个修饰器责任链并将其应用于该生物。
 
 ```javascript
 let pikachu = new Creature("Pikachu", 1, 1);
@@ -1753,7 +1618,7 @@ console.log(pikachu.toString());
 
 最终代码整合了所有步骤，并展示了执行后的预期输出。
 
-最终代码：
+**最终代码：**
 
 ```javascript
 class Creature {
@@ -1839,11 +1704,11 @@ console.log(pikachu.toString());
 
 在面向对象编程中，命令模式是一种行为设计模式，它使用对象来封装执行某个操作或触发某个事件所需的所有信息。这些信息包括方法名、拥有该方法的对象以及方法的参数值。
 
-示例：
+**示例：**
 
 我们以一个简单的银行账户为例，在该账户上执行存款或取款一定金额的指令。
 
-步骤 1\. `BankAccount` 类的定义：在此步骤中，我们定义 `BankAccount` 类，它代表一个银行账户，包含存款、取款和获取余额的方法。
+**步骤 1\. `BankAccount` 类的定义**：在此步骤中，我们定义 `BankAccount` 类，它代表一个银行账户，包含存款、取款和获取余额的方法。
 
 ```javascript
 class BankAccount {
@@ -1870,7 +1735,7 @@ class BankAccount {
 BankAccount.overdraftLimit = -500;
 ```
 
-步骤 2\. 创建命令：在此步骤中，我们创建一个枚举 `Action` 来表示存款和取款操作，然后定义 `BankAccountCommand` 类，该类封装了一个操作及其金额。
+**步骤 2\. 创建命令**：在此步骤中，我们创建一个枚举 `Action` 来表示存款和取款操作，然后定义 `BankAccountCommand` 类，该类封装了一个操作及其金额。
 
 ```javascript
 let Action = Object.freeze({
@@ -1907,7 +1772,7 @@ class BankAccountCommand {
 }
 ```
 
-步骤 3\. 使用命令模式：在此步骤中，我们创建一个 `BankAccount` 实例和一个存款命令，然后执行该命令并撤销它。
+**步骤 3\. 使用命令模式**：在此步骤中，我们创建一个 `BankAccount` 实例和一个存款命令，然后执行该命令并撤销它。
 
 ```javascript
 let bankAccount = new BankAccount(100);
@@ -1920,7 +1785,9 @@ console.log(bankAccount.toString()); // 余额：100
 
 这段代码演示了命令模式如何将请求封装为对象，从而轻松执行和撤销操作。
 
-最终代码：
+**最终代码：**
+
+
 
 ```javascript
 class BankAccount {
@@ -1987,25 +1854,19 @@ cmd.undo(); // 撤销存款 50
 console.log(bankAccount.toString()); // 余额：100
 ```
 
-### 迭代器
-
-
-
-
-
-### 迭代器
+## 迭代器
 
 `Iterator` 在不暴露对象底层表示的情况下访问其元素。
 
 在面向对象编程中，迭代器模式是一种设计模式，其中迭代器用于遍历容器并访问容器的元素。
 
-#### `Thing` 类的定义
+### `Thing` 类的定义
 
 首先，我们定义一个名为 `Thing` 的类，它有两个属性 `a` 和 `b`。
 
-##### 步骤 1：定义 `Thing` 类及其 `a` 和 `b` 属性。
+#### 步骤 1：定义 `Thing` 类及其 `a` 和 `b` 属性。
 
-```
+```javascript
 class Thing {
   constructor() {
     this.a = 11;
@@ -2015,9 +1876,9 @@ class Thing {
 }
 ```
 
-##### 步骤 2：实现 `Symbol.iterator` 方法以遍历 `Thing` 类的 `a` 和 `b` 属性。
+#### 步骤 2：实现 `Symbol.iterator` 方法以遍历 `Thing` 类的 `a` 和 `b` 属性。
 
-```
+```javascript
 class Thing {
   // ...
   [Symbol.iterator]() {
@@ -2036,9 +1897,9 @@ class Thing {
 }
 ```
 
-##### 步骤 3：实现 `backwards` 属性以逆序遍历属性。
+#### 步骤 3：实现 `backwards` 属性以逆序遍历属性。
 
-```
+```javascript
 class Thing {
   // ...
   get backwards() {
@@ -2058,77 +1919,57 @@ class Thing {
 }
 ```
 
-```
-class Thing {
-  // ...
-  get backwards() {
-    let i = 0;
-    let self = this;
-    return {
-      next: function() {
-        return {
-          done: i > 1,
-          value: self[i++ === 0 ? 'b' : 'a']
-        };
-      },
-      [Symbol.iterator]: function() { return this; }
-    };
-  }
-  // 其余代码
-}
-```
+#### 步骤 4：创建一个包含数字元素的数组 `values`。
 
-##### 步骤 4：创建一个包含数字元素的数组 `values`。
-
-```
+```javascript
 let values = [100, 200, 300];
 ```
 
-##### 步骤 5：使用 `for...in` 循环遍历 `values` 数组。
+#### 步骤 5：使用 `for...in` 循环遍历 `values` 数组。
 
-```
+```javascript
 for (let i in values) {
   console.log(`Element at position ${i} is ${values[i]}`);
 }
 ```
 
-##### 步骤 6：使用另一个 `for...in` 循环遍历一个对象（不推荐）。
+#### 步骤 6：使用另一个 `for...in` 循环遍历一个对象（不推荐）。
 
-```
+```javascript
 for (let v in values) {
   console.log(`The value is ${v}`);
 }
 ```
 
-##### 步骤 7：创建 `Thing` 类的一个实例 `thing`。
+#### 步骤 7：创建 `Thing` 类的一个实例 `thing`。
 
-```
+```javascript
 let thing = new Thing();
 ```
 
-##### 步骤 8：使用 `for...of` 循环遍历 `thing` 的属性。
+#### 步骤 8：使用 `for...of` 循环遍历 `thing` 的属性。
 
-```
+```javascript
 console.log("Iterating over 'a' and 'b':");
 for (let element of thing) {
   console.log(`${element}`);
 }
 ```
 
-##### 步骤 9：使用另一个 `for...of` 循环逆序遍历。
+#### 步骤 9：使用另一个 `for...of` 循环逆序遍历。
 
-```
+```javascript
 console.log("Iterating in reverse order:");
 for (let element of thing.backwards) {
   console.log(`${element}`);
 }
 ```
 
-#### 最终代码
+### 最终代码
 
 我们将以数组为例，打印数组的值，然后使用迭代器逆序打印其值。
 
-```
+```javascript
 // 定义一个名为 'Thing' 的类
 class Thing {
   constructor() {
@@ -2204,7 +2045,7 @@ for (let element of thing.backwards) {
 // 11
 ```
 
-### 中介者
+## 中介者
 
 中介者模式添加一个第三方对象来控制两个对象之间的交互。它允许类之间的灵活耦合，因为它是唯一详细了解其方法的类。
 
@@ -2212,11 +2053,11 @@ for (let element of thing.backwards) {
 
 我们将使用一个人在聊天室中的示例。在这里，聊天室充当两个相互通信的人之间的中介者。
 
-#### 示例
+### 示例
 
-##### 步骤 1. `Person` 类的定义，表示聊天室中的人：
+#### 步骤 1. `Person` 类的定义，表示聊天室中的人：
 
-```
+```javascript
 class Person {
   constructor(name, chatRoom) {
     this.name = name;         // 人的名字
@@ -2235,9 +2076,9 @@ class Person {
 }
 ```
 
-##### 步骤 2. `ChatRoom` 类的定义，充当中介者：
+#### 步骤 2. `ChatRoom` 类的定义，充当中介者：
 
-```
+```javascript
 class ChatRoom {
   constructor() {
     this.people = []; // 存储聊天室中的人
@@ -2260,45 +2101,45 @@ class ChatRoom {
 }
 ```
 
-##### 步骤 3. 创建一个聊天室（`ChatRoom`）：
+#### 步骤 3. 创建一个聊天室（`ChatRoom`）：
 
-```
+```javascript
 const chatRoom = new ChatRoom();
 ```
 
-##### 步骤 4. 创建人并将他们加入聊天室：
+#### 步骤 4. 创建人并将他们加入聊天室：
 
-```
+```javascript
 const john = new Person("John", chatRoom);
 const tony = new Person("Tony", chatRoom);
 chatRoom.joinPerson(john);
 chatRoom.joinPerson(tony);
 ```
 
-##### 步骤 5. John 在聊天室中发送一条消息：
+#### 步骤 5. John 在聊天室中发送一条消息：
 
-```
+```javascript
 john.say("Hello, everyone!");
 ```
 
-##### 步骤 6. 创建新的人并将其加入聊天室：
+#### 步骤 6. 创建新的人并将其加入聊天室：
 
-```
+```javascript
 const doe = new Person("Doe", chatRoom);
 chatRoom.joinPerson(doe);
 ```
 
-##### 步骤 7. Doe 在聊天室中发送一条消息：
+#### 步骤 7. Doe 在聊天室中发送一条消息：
 
-```
+```javascript
 doe.say("Hi, everyone!");
 ```
 
 每当有人发送消息时，聊天室负责将该消息分发给房间中的所有其他人。
 
-#### 最终代码
+### 最终代码
 
-```
+```javascript
 // Person 类的定义，表示聊天室中的人
 class Person {
   constructor(name, chatRoom) {
@@ -2347,15 +2188,11 @@ const john = new Person("John", chatRoom);
 const tony = new Person("Tony", chatRoom);
 ```
 
-
-
-
-
 `chatRoom.joinPerson(john);`
 
 `chatRoom.joinPerson(tony);`
 
-```
+```javascript
 // John sends a message in the chat room
 john.say("Hello, everyone!");
 
@@ -2367,17 +2204,19 @@ chatRoom.joinPerson(doe);
 doe.say("Hi, everyone!");
 ```
 
-### 备忘录模式
+## 备忘录模式
 
 备忘录模式允许将对象恢复到其先前的状态。
 
+
+
 备忘录模式是一种软件设计模式，它提供了将对象恢复到先前状态的能力。它通过三个对象来实现：发起人、看护人和备忘录。
 
-示例：
+## 示例
 
 让我们以银行账户为例，其中我们存储了先前的状态，并具备撤销功能。
 
-步骤 1. 定义备忘录类：
+### 步骤 1. 定义备忘录类
 
 ```
 class Memento {
@@ -2387,9 +2226,9 @@ class Memento {
 }
 ```
 
-在这一步中，我们创建了 `Memento` 类，它将用于存储银行账户在某一时刻的状态。
+在这一步中，我们创建了`Memento`类，它将用于存储银行账户在某一时刻的状态。
 
-步骤 2. 定义 `BankAccount` 类：
+### 步骤 2. 定义`BankAccount`类
 
 ```
 class BankAccount {
@@ -2412,9 +2251,9 @@ class BankAccount {
 }
 ```
 
-这里，我们创建了 `BankAccount` 类，它代表一个银行账户，具备存款、以 `Memento` 形式保存状态以及恢复先前状态的能力。
+这里，我们创建了`BankAccount`类，它代表一个银行账户，具备存款、以`Memento`形式保存状态以及恢复先前状态的能力。
 
-步骤 3. 定义 `Caretaker` 类：
+### 步骤 3. 定义`Caretaker`类
 
 ```
 class Caretaker {
@@ -2432,9 +2271,9 @@ class Caretaker {
 }
 ```
 
-`Caretaker` 类负责将 `Memento` 存储在一个列表中，以便在需要时恢复先前状态。
+`Caretaker`类负责将`Memento`存储在一个列表中，以便在需要时恢复先前状态。
 
-步骤 4. 使用备忘录模式：
+### 步骤 4. 使用备忘录模式
 
 ```
 // Create an instance of BankAccount
@@ -2456,9 +2295,9 @@ bankAccount.restore(caretaker.getMemento(1));
 console.log(bankAccount.toString()); // Balance: 175
 ```
 
-在这一步中，我们创建了一个 `BankAccount` 实例和一个 `Caretaker`。然后，我们向银行账户存款，并使用 `Caretaker` 将状态保存为 `Memento`。最后，我们使用 `Memento` 恢复银行账户的先前状态，并验证结果余额。
+在这一步中，我们创建了一个`BankAccount`实例和一个`Caretaker`。然后，我们向银行账户存款，并使用`Caretaker`将状态保存为`Memento`。最后，我们使用`Memento`恢复银行账户的先前状态，并验证结果余额。
 
-最终代码：
+### 最终代码
 
 ```
 class Memento {
@@ -2519,19 +2358,19 @@ bankAccount.restore(caretaker.getMemento(1));
 console.log(bankAccount.toString()); // Balance: 175
 ```
 
-### 观察者模式
+## 观察者模式
 
 允许多个观察者对象监视一个事件。
 
 观察者模式是一种软件设计模式，其中一个对象（称为主题）维护其依赖项（称为观察者）的列表，并在状态发生变化时自动通知它们，通常是通过调用它们的方法之一。
 
-示例：
+### 示例
 
 让我们以一个人为例，如果人生病了，就会显示通知。
 
-步骤 1. 定义类和观察者模式：在这一步中，我们定义了三个关键类：`Event`、`GetSick` 和 `Person`。`Event` 类代表一个可观察的事件，包含订阅、取消订阅和通知观察者的逻辑。
+#### 步骤 1. 定义类和观察者模式
 
-`GetSick` 类是一个特定的事件，包含事件发生地点的信息。`Person` 类是可观察的主题，它可以“生病”，并在发生时通知观察者。
+在这一步中，我们定义了三个关键类：`Event`、`GetSick`和`Person`。`Event`类代表一个可观察的事件，包含订阅、取消订阅和通知观察者的逻辑。`GetSick`类是一个特定的事件，包含事件发生地点的信息。`Person`类是可观察的主题，它可以“生病”，并在发生时通知观察者。
 
 ```
 // Event class representing an observable event
@@ -2579,9 +2418,11 @@ class Person {
 }
 ```
 
-步骤 2. 使用观察者模式：在这一步中，我们创建了一个 `Person` 实例，然后使用 `Event` 类的 `subscribe` 方法订阅了一个观察者到“生病”事件。接着，我们通过调用 `catchCold` 方法模拟了人生病两次。之后，我们使用 `unsubscribe` 方法取消订阅观察者。最后，我们再次调用 `catchCold` 方法，但已取消订阅的观察者不再接收通知。
+#### 步骤 2. 使用观察者模式
 
-这种模式允许多个观察者监视一个事件（本例中为生病），而 `Person` 类无需知道观察者是谁或它们如何响应事件。
+在这一步中，我们创建了一个`Person`实例，然后使用`Event`类的`subscribe`方法订阅了一个观察者到“生病”事件。接着，我们通过调用`catchCold`方法模拟了人生病两次。之后，我们使用`unsubscribe`方法取消订阅观察者。最后，我们再次调用`catchCold`方法，但已取消订阅的观察者不再接收通知。
+
+这种模式允许多个观察者监视一个事件（本例中为生病），而`Person`类无需知道观察者是谁或它们如何响应事件。
 
 ```
 // Create an instance of the person
@@ -2603,7 +2444,7 @@ person.getSick.unsubscribe(sub);
 person.catchCold();
 ```
 
-最终代码：
+#### 最终代码
 
 ```
 // Definition of classes and the Observer Pattern
@@ -2655,10 +2496,6 @@ class Person {
 // Using the Observer Pattern
 ```
 
-
-
-
-
 ```javascript
 // Create an instance of the person
 let person = new Person("Route ABC");
@@ -2675,60 +2512,68 @@ person.getSick.unsubscribe(sub);
 person.catchCold();
 ```
 
-### 访问者模式
+## 访问者模式
 
 在不修改对象的情况下为其添加操作。
 
 访问者设计模式是一种将算法与其操作的对象结构分离的方法。这种分离的一个实际结果是能够在不修改现有对象结构的情况下为其添加新操作。
 
-示例：
+### 示例
 
 让我们以`NumericExpression`类为例，它返回给定表达式的结果。
 
-1. NumericExpression 类：这个类表示一个带有值的简单数值表达式。
+#### 1. `NumericExpression`类
 
-    ```javascript
-    class NumericExpression {
-      constructor(value) {
-        this.value = value;
-      }
-      print(buffer) {
-        buffer.push(this.value.toString());
-      }
-    }
-    ```
+这个类表示一个带有值的简单数值表达式。
 
-2. SumExpression 类：这个类表示一个求和表达式，它接受两个数值表达式（左和右）并将它们相加。
+```javascript
+class NumericExpression {
+  constructor(value) {
+    this.value = value;
+  }
+  print(buffer) {
+    buffer.push(this.value.toString());
+  }
+}
+```
 
-    ```javascript
-    class SumExpression {
-      constructor(left, right) {
-        this.left = left;
-        this.right = right;
-      }
-      print(buffer) {
-        buffer.push('(');
-        this.left.print(buffer);
-        buffer.push('+');
-        this.right.print(buffer);
-        buffer.push(')');
-      }
-    }
-    ```
+#### 2. `SumExpression`类
 
-3. 使用访问者模式：接下来，你使用`NumericExpression`和`SumExpression`类的实例创建一个表示“5 + (1 + 9)”的组合表达式。
+这个类表示一个求和表达式，它接受两个数值表达式（左和右）并将它们相加。
 
-    ```javascript
-    let e = new SumExpression(
-        new NumericExpression(5),
-        new SumExpression(
-            new NumericExpression(1),
-            new NumericExpression(9)
-        )
-    );
-    ```
+```javascript
+class SumExpression {
+  constructor(left, right) {
+    this.left = left;
+    this.right = right;
+  }
+  print(buffer) {
+    buffer.push('(');
+    this.left.print(buffer);
+    buffer.push('+');
+    this.right.print(buffer);
+    buffer.push(')');
+  }
+}
+```
 
-打印表达式：最后，你使用`print()`方法获取表达式的可读表示，并将其存储在缓冲区中。
+#### 3. 使用访问者模式
+
+接下来，你使用`NumericExpression`和`SumExpression`类的实例创建一个表示“5 + (1 + 9)”的组合表达式。
+
+```javascript
+let e = new SumExpression(
+    new NumericExpression(5),
+    new SumExpression(
+        new NumericExpression(1),
+        new NumericExpression(9)
+    )
+);
+```
+
+#### 打印表达式
+
+最后，你使用`print()`方法获取表达式的可读表示，并将其存储在缓冲区中。
 
 ```javascript
 let buffer = [];
@@ -2738,7 +2583,9 @@ console.log(buffer.join('')); // Output: (5+(1+9))
 
 这个示例说明了访问者设计模式如何允许你向复杂对象添加打印操作，而无需修改其内部结构。这使得代码更加灵活和可扩展，便于未来添加操作，同时不影响现有类。
 
-最终代码：
+#### 最终代码
+
+
 
 ```javascript
 class NumericExpression {
@@ -2780,13 +2627,13 @@ console.log(buffer.join('')); // Expected Output: (5+(1+9))
 
 预期输出是`(5+(1+9))`，这是使用访问者模式打印“5 + (1 + 9)”表达式后的表示。这段代码演示了访问者模式如何允许在不修改内部结构的情况下向复杂对象添加打印操作。
 
-### 策略模式
+## 策略模式
 
 允许在特定情况下选择一种算法。
 
 策略模式是一种行为型软件设计模式，允许在运行时选择算法。代码不是直接实现单个算法，而是在运行时接收指令，从一系列算法中选择使用哪一个。
 
-示例：
+### 示例
 
 让我们举一个例子，我们有一个文本处理器，它会根据选择的策略（HTML 或 Markdown）显示数据。
 
@@ -2826,7 +2673,7 @@ console.log(buffer.join('')); // Expected Output: (5+(1+9))
     }
     ```
 
-4. TextProcessor 类：创建了一个`TextProcessor`类，它接受一个输出格式，并根据所选格式使用特定的列表策略。
+4. `TextProcessor`类：创建了一个`TextProcessor`类，它接受一个输出格式，并根据所选格式使用特定的列表策略。
 
     ```javascript
     class TextProcessor {
@@ -2873,7 +2720,7 @@ console.log(buffer.join('')); // Expected Output: (5+(1+9))
     console.log(textProcessor.toString());
     ```
 
-最终代码：
+### 最终代码
 
 ```javascript
 // Enumeration of output formats
@@ -2966,9 +2813,6 @@ textProcessor.appendList(["one", "two", "three"]);
 console.log("\\nHTML Format Output:");
 ```
 
-
-
-
 `console.log(textProcessor.toString());`
 
 预期输出为 HTML 格式：
@@ -2983,19 +2827,19 @@ console.log("\\nHTML Format Output:");
 
 这段代码演示了如何使用策略设计模式在运行时轻松切换不同的输出格式策略（Markdown 和 HTML）。
 
-### 状态模式
+## 状态模式
 
 当对象的内部状态改变时，修改其行为。
 
 状态模式是一种行为型软件设计模式，它允许对象在其内部状态改变时改变其行为。该模式与有限状态机的概念密切相关。
 
-示例：
+### 示例
 
 以电灯开关为例，打开或关闭开关会改变其状态。
 
 这是“状态”设计模式的一个示例，它允许对象在其内部状态改变时改变其行为。以下是带有注释的代码，解释了每一步：
 
-步骤 1：我们创建两个状态类 `OnState` 和 `OffState`，它们继承自基类 `State`。每个状态类定义了开关在该特定状态下应如何表现。
+步骤 1：我们创建两个状态类`OnState`和`OffState`，它们继承自基类`State`。每个状态类定义了开关在该特定状态下应如何表现。
 
 ```javascript
 class OnState extends State {
@@ -3021,7 +2865,7 @@ class OffState extends State {
 }
 ```
 
-步骤 2：我们创建 `Switch` 类，它包含一个内部状态以及 `turnOn()` 和 `turnOff()` 方法来改变状态。我们将开关初始化为关闭状态。
+步骤 2：我们创建`Switch`类，它包含一个内部状态以及`turnOn()`和`turnOff()`方法来改变状态。我们将开关初始化为关闭状态。
 
 ```javascript
 class Switch {
@@ -3037,7 +2881,7 @@ class Switch {
 }
 ```
 
-步骤 3：我们创建抽象基类 `State`，它定义了 `turnOn()` 和 `turnOff()` 方法。具体状态类必须实现这些方法。
+步骤 3：我们创建抽象基类`State`，它定义了`turnOn()`和`turnOff()`方法。具体状态类必须实现这些方法。
 
 ```javascript
 class State {
@@ -3053,7 +2897,7 @@ class State {
 }
 ```
 
-步骤 4：我们创建 `Switch` 类的一个实例，并测试其方法来改变灯的状态。首先，我们打开灯，然后关闭灯。
+步骤 4：我们创建`Switch`类的一个实例，并测试其方法来改变灯的状态。首先，我们打开灯，然后关闭灯。
 
 ```javascript
 let lightSwitch = new Switch();
@@ -3063,7 +2907,7 @@ lightSwitch.turnOff();
 
 这个示例演示了“状态”设计模式如何允许一个对象（本例中为电灯开关）根据其内部状态（开或关）改变其行为。每个状态在具体状态类中定义了自己的行为。
 
-最终代码：
+### 最终代码
 
 ```javascript
 // 创建两个状态类
@@ -3121,17 +2965,19 @@ lightSwitch.turnOn(); // 打开灯
 lightSwitch.turnOff(); // 关闭灯
 ```
 
-### 模板方法模式
+## 模板方法模式
 
 将算法的骨架定义为抽象类，指定其执行方式。
 
 模板方法是超类（通常是抽象超类）中的一个方法，它通过一系列高层步骤定义了操作的骨架。
 
-示例：
+### 示例
 
-以国际象棋游戏为例。模板方法设计模式是一种设计模式，它在超类中定义算法的骨架，但允许子类在不改变整体结构的情况下实现算法的某些步骤。以下是逐步代码：
+以国际象棋游戏为例。模板方法设计模式是一种设计模式，它在超类中定义算法的骨架，但允许子类在不改变整体结构的情况下实现算法的某些步骤。
 
-步骤 1：我们创建基类 `Game`，它将作为游戏的骨架，并定义游戏的总体流程。
+
+
+步骤 1：我们创建基类`Game`，它将作为游戏的骨架，并定义游戏的总体流程。
 
 ```javascript
 class Game {
@@ -3153,7 +2999,7 @@ class Game {
 }
 ```
 
-步骤 2：我们创建继承自 `Game` 的 `Chess` 类，并自定义国际象棋游戏的特定细节，例如玩家数量和最大回合数。
+步骤 2：我们创建继承自`Game`的`Chess`类，并自定义国际象棋游戏的特定细节，例如玩家数量和最大回合数。
 
 ```javascript
 class Chess extends Game {
@@ -3179,14 +3025,14 @@ class Chess extends Game {
 }
 ```
 
-步骤 3：我们创建 `Chess` 类的一个实例，并通过调用 `execute` 方法执行游戏。
+步骤 3：我们创建`Chess`类的一个实例，并通过调用`execute`方法执行游戏。
 
 ```javascript
 let chess = new Chess();
 chess.execute();
 ```
 
-这个示例演示了模板方法设计模式如何用于在基类 `Game` 中定义游戏的总体流程，以及如何在 `Chess` 类中自定义具体的游戏细节。
+这个示例演示了模板方法设计模式如何用于在基类`Game`中定义游戏的总体流程，以及如何在`Chess`类中自定义具体的游戏细节。
 
 最终代码：
 
@@ -3257,5 +3103,4 @@ chess.execute();
 
 了解更多，请访问
 
-www.hernandoabella.com
-
+`www.hernandoabella.com`

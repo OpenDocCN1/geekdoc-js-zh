@@ -1,20 +1,21 @@
+
 # Decorators
 
-# 介绍
+## 介绍
 
-随着 TypeScript 和 ES6 里引入了类，现在在一些场景下我们会需要额外的特性,用来支持标注或修改类及其成员。 Decorators 提供了一种在类的声明和成员上使用元编程语法添加标注的方式。 Javascript 里的 Decorators 目前处在[建议征集的第一阶段](https://github.com/wycats/javascript-decorators/blob/master/README.md)，在 TypeScript 里做为实验性特性已经提供了支持。
+随着 TypeScript 和 ES6 里引入了类，现在在一些场景下我们会需要额外的特性，用来支持标注或修改类及其成员。Decorators 提供了一种在类的声明和成员上使用元编程语法添加标注的方式。JavaScript 里的 Decorators 目前处在[建议征集的第一阶段](https://github.com/wycats/javascript-decorators/blob/master/README.md)，在 TypeScript 里作为实验性特性已经提供了支持。
 
-> 注意  Decorators 是实验性的特性，在未来的版本中可能会发生改变。
+> 注意 Decorators 是实验性的特性，在未来的版本中可能会发生改变。
 
 若要启用实验性的 decorator，你必须启用`experimentalDecorators`编译器选项，在命令行中或在`tsconfig.json`：
 
-**命令行**:
+**命令行**：
 
 ```js
-tsc --target ES5 --experimentalDecorators 
+tsc --target ES5 --experimentalDecorators
 ```
 
-**tsconfig.json**:
+**tsconfig.json**：
 
 ```js
 {
@@ -22,63 +23,63 @@ tsc --target ES5 --experimentalDecorators
         "target": "ES5",
         "experimentalDecorators": true
     }
-} 
+}
 ```
 
-# Decorators （后文译作装饰器）
+## Decorators（后文译作装饰器）
 
-*装饰器*是一种特殊类型的声明，它能够被附加到类声明，方法，访问符，属性，或 参数上。 装饰器利用`@expression`这种方式，`expression`求值后必须为一个函数，它使用被装饰的声明信息在运行时被调用。
+`装饰器`是一种特殊类型的声明，它能够被附加到类声明、方法、访问符、属性或参数上。装饰器利用`@expression`这种方式，`expression`求值后必须为一个函数，它使用被装饰的声明信息在运行时被调用。
 
 例如，有一个`@sealed`装饰器，我们会这样定义`sealed`函数：
 
 ```js
 function sealed(target) {
     // do something with "target" ...
-} 
+}
 ```
 
-> 注意  下面类装饰器小节里有一个更加详细的例子。
+> 注意 下面类装饰器小节里有一个更加详细的例子。
 
-## 装饰器工厂
+### 装饰器工厂
 
-如果我们想自定义装饰器是如何作用于声明的，我们得写一个装饰器工厂函数。 *装饰器工厂*就是一个简单的函数，它返回一个表达式，以供装饰器在运行时调用。
+如果我们想自定义装饰器是如何作用于声明的，我们得写一个装饰器工厂函数。`装饰器工厂`就是一个简单的函数，它返回一个表达式，以供装饰器在运行时调用。
 
-我们可以通过下面的方式来写一个装饰器工厂
+我们可以通过下面的方式来写一个装饰器工厂：
 
 ```js
 function color(value: string) { // 这是一个装饰器工厂
     return function (target) { //  这是装饰器
         // do something with "target" and "value"...
     }
-} 
+}
 ```
 
-> 注意  下面方法装饰器小节里有一个更加详细的例子。
+> 注意 下面方法装饰器小节里有一个更加详细的例子。
 
-## 装饰器组合
+### 装饰器组合
 
 多个装饰器可以同时应用到一个声明上，就像下面的示例：
 
-*   写在同一行上：
+* 写在同一行上：
 
     ```js
-    @f @g x 
+    @f @g x
     ```
 
-*   写在多行上：
+* 写在多行上：
 
     ```js
     @f
     @g
-    x 
+    x
     ```
 
-当多个装饰器应用于一个声明上，它们求值方式与[复合函数](http://en.wikipedia.org/wiki/Function_composition)相似。在这个模型下，当复合*f*和*g*时，复合的结果(*f* ∘ *g*)(*x*)等同于*f*(*g*(*x*))。
+当多个装饰器应用于一个声明上，它们求值方式与[复合函数](http://en.wikipedia.org/wiki/Function_composition)相似。在这个模型下，当复合`f`和`g`时，复合的结果`(f ∘ g)(x)`等同于`f(g(x))`。
 
 同样的，在 TypeScript 里，当多个装饰器应用在一个声明上时会进行如下步骤的操作：
 
-1.  由上至下依次对装饰器表达式求值。
-2.  求值的结果会被当作函数，由下至上依次调用。
+1. 由上至下依次对装饰器表达式求值。
+2. 求值的结果会被当作函数，由下至上依次调用。
 
 如果我们使用装饰器工厂的话，可以通过下面的例子来观察它们求值的顺序：
 
@@ -101,7 +102,7 @@ class C {
     @f()
     @g()
     method() {}
-} 
+}
 ```
 
 在控制台里会打印出如下结果：
@@ -110,27 +111,27 @@ class C {
 f(): evaluated
 g(): evaluated
 g(): called
-f(): called 
+f(): called
 ```
 
-## 装饰器求值
+### 装饰器求值
 
 类中不同声明上的装饰器将按以下规定的顺序应用：
 
-1.  *参数装饰器*，其次是*方法*，*访问符*，或*属性装饰器*应用到每个实例成员。
-2.  *参数装饰器*，其次是*方法*，*访问符*，或*属性装饰器*应用到每个静态成员。
-3.  *参数装饰器*应用到构造函数。
-4.  *类装饰器*应用到类。
+1. `参数装饰器`，其次是`方法`、`访问符`或`属性装饰器`应用到每个实例成员。
+2. `参数装饰器`，其次是`方法`、`访问符`或`属性装饰器`应用到每个静态成员。
+3. `参数装饰器`应用到构造函数。
+4. `类装饰器`应用到类。
 
-## 类装饰器
+### 类装饰器
 
-*类装饰器*在类声明之前被声明（紧贴着类声明）。 类装饰器应用于类构造函数，可以用来监视，修改或替换类定义。 类装饰器不能用在声明文件中(`.d.ts`)，也不能用在任何外部上下文中（比如`declare`的类）。
+`类装饰器`在类声明之前被声明（紧贴着类声明）。类装饰器应用于类构造函数，可以用来监视、修改或替换类定义。类装饰器不能用在声明文件中(`.d.ts`)，也不能用在任何外部上下文中（比如`declare`的类）。
 
 类装饰器表达式会在运行时当作函数被调用，类的构造函数作为其唯一的参数。
 
 如果类装饰器返回一个值，它会使用提供的构造函数来替换类的声明。
 
-> 注意  如果你要返回一个新的构造函数，你必须注意处理好原来的原型链。 在运行时的装饰器调用逻辑中*不会*为你做这些。
+> 注意 如果你要返回一个新的构造函数，你必须注意处理好原来的原型链。在运行时的装饰器调用逻辑中不会为你做这些。
 
 下面是使用类装饰器(`@sealed`)的例子，应用到`Greeter`类：
 
@@ -144,35 +145,35 @@ class Greeter {
     greet() {
         return "Hello, " + this.greeting;
     }
-} 
+}
 ```
 
-我们可以这样定义`@sealed`装饰器
+我们可以这样定义`@sealed`装饰器：
 
 ```js
 function sealed(constructor: Function) {
     Object.seal(constructor);
     Object.seal(constructor.prototype);
-} 
+}
 ```
 
-当`@sealed`被执行的时候，它将密封此类的构造函数和原型。(注：参见[Object.seal](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Object/seal))
+当`@sealed`被执行的时候，它将密封此类的构造函数和原型。（注：参见[Object.seal](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Object/seal)）
 
-## 方法装饰器
+### 方法装饰器
 
-*方法装饰器*声明在一个方法的声明之前（紧贴着方法声明）。 它会被应用到方法的*属性描述符*上，可以用来监视，修改或者替换方法定义。 方法装饰器不能用在声明文件(`.d.ts`)，重载或者任何外部上下文（比如`declare`的类）中。
+`方法装饰器`声明在一个方法的声明之前（紧贴着方法声明）。它会被应用到方法的`属性描述符`上，可以用来监视、修改或者替换方法定义。方法装饰器不能用在声明文件(`.d.ts`)、重载或者任何外部上下文（比如`declare`的类）中。
 
 方法装饰器表达式会在运行时当作函数被调用，传入下列 3 个参数：
 
-1.  对于静态成员来说是类的构造函数，对于实例成员是类的原型对象。
-2.  成员的名字。
-3.  成员的*属性描述符*。
+1. 对于静态成员来说是类的构造函数，对于实例成员是类的原型对象。
+2. 成员的名字。
+3. 成员的`属性描述符`。
 
-> 注意  如果代码输出目标版本小于`ES5`，*Property Descriptor*将会是`undefined`。
+> 注意 如果代码输出目标版本小于`ES5`，`Property Descriptor`将会是`undefined`。
 
-如果方法装饰器返回一个值，它会被用作方法的*属性描述符*。
+如果方法装饰器返回一个值，它会被用作方法的`属性描述符`。
 
-> 注意  如果代码输出目标版本小于`ES5`返回值会被忽略。
+> 注意 如果代码输出目标版本小于`ES5`，返回值会被忽略。
 
 下面是一个方法装饰器（`@enumerable`）的例子，应用于`Greeter`类的方法上：
 
@@ -187,7 +188,7 @@ class Greeter {
     greet() {
         return "Hello, " + this.greeting;
     }
-} 
+}
 ```
 
 我们可以用下面的函数声明来定义`@enumerable`装饰器：
@@ -197,28 +198,28 @@ function enumerable(value: boolean) {
     return function (target: any, propertyKey: string, descriptor: PropertyDescriptor) {
         descriptor.enumerable = value;
     };
-} 
+}
 ```
 
-这里的`@enumerable(false)`是一个装饰器工厂。 当装饰器`@enumerable(false)`被调用时，它会修改属性描述符的`enumerable`属性。
+这里的`@enumerable(false)`是一个装饰器工厂。当装饰器`@enumerable(false)`被调用时，它会修改属性描述符的`enumerable`属性。
 
-## 访问符装饰器
+### 访问符装饰器
 
-*访问符装饰器*声明在一个访问符的声明之前（紧贴着访问符声明）。 访问符装饰器应用于访问符的*属性描述符*并且可以用来监视，修改或替换一个访问符的定义。 访问符装饰器不能用在声明文件中（.d.ts），或者任何外部上下文（比如`declare`的类）里。
+`访问符装饰器`声明在一个访问符的声明之前（紧贴着访问符声明）。访问符装饰器应用于访问符的`属性描述符`，并且可以用来监视、修改或替换一个访问符的定义。访问符装饰器不能用在声明文件中（`.d.ts`），或者任何外部上下文（比如`declare`的类）里。
 
-> 注意  TypeScript 不允许同时装饰一个成员的`get`和`set`访问符。相反，所有装饰的成员必须被应用到文档顺序指定的第一个访问符。这是因为，装饰器应用于一个*属性描述符*，它联合了`get`和`set`访问符，而不是分开声明的。
+> 注意 TypeScript 不允许同时装饰一个成员的`get`和`set`访问符。相反，所有装饰的成员必须被应用到文档顺序指定的第一个访问符。这是因为，装饰器应用于一个`属性描述符`，它联合了`get`和`set`访问符，而不是分开声明的。
 
 访问符装饰器表达式会在运行时当作函数被调用，传入下列 3 个参数：
 
-1.  对于静态成员来说是类的构造函数，对于实例成员是类的原型对象。
-2.  成员的名字。
-3.  成员的*属性描述符*。
+1. 对于静态成员来说是类的构造函数，对于实例成员是类的原型对象。
+2. 成员的名字。
+3. 成员的`属性描述符`。
 
-> 注意  如果代码输出目标版本小于`ES5`，*Property Descriptor*将会是`undefined`。
+> 注意 如果代码输出目标版本小于`ES5`，`Property Descriptor`将会是`undefined`。
 
-如果访问符装饰器返回一个值，它会被用作方法的*属性描述符*。
+如果访问符装饰器返回一个值，它会被用作方法的`属性描述符`。
 
-> 注意  如果代码输出目标版本小于`ES5`返回值会被忽略。
+> 注意 如果代码输出目标版本小于`ES5`，返回值会被忽略。
 
 下面是使用了访问符装饰器（`@configurable`）的例子，应用于`Point`类的成员上：
 
@@ -236,7 +237,7 @@ class Point {
 
     @configurable(false)
     get y() { return this._y; }
-} 
+}
 ```
 
 我们可以通过如下函数声明来定义`@configurable`装饰器：
@@ -246,25 +247,25 @@ function configurable(value: boolean) {
     return function (target: any, propertyKey: string, descriptor: PropertyDescriptor) {
         descriptor.configurable = value;
     };
-} 
+}
 ```
 
-## 属性装饰器
+### 属性装饰器
 
-*属性装饰器*声明在一个属性声明之前（紧贴着属性声明）。 属性装饰器不能用在声明文件中（.d.ts），或者任何外部上下文（比如`declare`的类）里。
+`属性装饰器`声明在一个属性声明之前（紧贴着属性声明）。属性装饰器不能用在声明文件中（`.d.ts`），或者任何外部上下文（比如`declare`的类）里。
 
 属性装饰器表达式会在运行时当作函数被调用，传入下列 2 个参数：
 
-1.  对于静态成员来说是类的构造函数，对于实例成员是类的原型对象。
-2.  成员的名字。
+1. 对于静态成员来说是类的构造函数，对于实例成员是类的原型对象。
+2. 成员的名字。
 
-> 注意  *属性描述符*不会做为参数传入属性装饰器，这与 TypeScript 是如何初始化属性装饰器的有关。 因为目前没有办法在定义一个原型对象的成员时描述一个实例属性，并且没办法监视或修改一个属性的初始化方法。 因此，属性描述符只能用来监视类中是否声明了某个名字的属性。
+> 注意 `属性描述符`不会作为参数传入属性装饰器，这与 TypeScript 是如何初始化属性装饰器的有关。因为目前没有办法在定义一个原型对象的成员时描述一个实例属性，并且没办法监视或修改一个属性的初始化方法。因此，属性描述符只能用来监视类中是否声明了某个名字的属性。
 
-如果属性装饰器返回一个值，它会被用作方法的*属性描述符*。
+如果属性装饰器返回一个值，它会被用作方法的`属性描述符`。
 
-> 注意  如果代码输出目标版本小于`ES5`，返回值会被忽略。
+> 注意 如果代码输出目标版本小于`ES5`，返回值会被忽略。
 
-如果访问符装饰器返回一个值，它会被用作方法的*属性描述符*。
+如果访问符装饰器返回一个值，它会被用作方法的`属性描述符`。
 
 我们可以用它来记录这个属性的元数据，如下例所示：
 
@@ -280,7 +281,7 @@ class Greeter {
         let formatString = getFormat(this, "greeting");
         return formatString.replace("%s", this.greeting);
     }
-} 
+}
 ```
 
 然后定义`@format`装饰器和`getFormat`函数：
@@ -296,24 +297,24 @@ function format(formatString: string) {
 
 function getFormat(target: any, propertyKey: string) {
     return Reflect.getMetadata(formatMetadataKey, target, propertyKey);
-} 
+}
 ```
 
-这个 `@format("Hello, %s")` 装饰器是个 装饰器工厂。 当`@format("Hello, %s")`被调用时，它添加一条这个属性的元数据，通过`reflect-metadata`库里的`Reflect.metadata`函数。 当`getFormat`被调用时，它读取格式的元数据。
+这个`@format("Hello, %s")`装饰器是个装饰器工厂。当装饰器`@format("Hello, %s")`被调用时，它添加一条这个属性的元数据，通过`reflect-metadata`库里的`Reflect.metadata`函数。当`getFormat`被调用时，它读取格式的元数据。
 
-> 注意  这个例子需要使用`reflect-metadata`库。 查看元数据了解`reflect-metadata`库更详细的信息。
+> 注意 这个例子需要使用`reflect-metadata`库。查看元数据了解`reflect-metadata`库更详细的信息。
 
-## 参数装饰器
+### 参数装饰器
 
-*参数装饰器*声明在一个参数声明之前（紧贴着参数声明）。 参数装饰器应用于类构造函数或方法声明。 参数装饰器不能用在声明文件（.d.ts），重载或其它外部上下文（比如`declare`的类）里。
+`参数装饰器`声明在一个参数声明之前（紧贴着参数声明）。参数装饰器应用于类构造函数或方法声明。参数装饰器不能用在声明文件（`.d.ts`）、重载或其它外部上下文（比如`declare`的类）里。
 
 参数装饰器表达式会在运行时当作函数被调用，传入下列 3 个参数：
 
-1.  对于静态成员来说是类的构造函数，对于实例成员是类的原型对象。
-2.  成员的名字。
-3.  参数在函数参数列表中的索引。
+1. 对于静态成员来说是类的构造函数，对于实例成员是类的原型对象。
+2. 成员的名字。
+3. 参数在函数参数列表中的索引。
 
-> 注意  参数装饰器只能用来监视一个方法的参数是否被传入。
+> 注意 参数装饰器只能用来监视一个方法的参数是否被传入。
 
 参数装饰器的返回值会被忽略。
 
@@ -331,10 +332,10 @@ class Greeter {
     greet(@required name: string) {
         return "Hello " + name + ", " + this.greeting;
     }
-} 
+}
 ```
 
-然后我们使用下面的函数定义 `@required` 和 `@validate` 装饰器：
+然后我们使用下面的函数定义`@required`和`@validate`装饰器：
 
 ```js
 import "reflect-metadata";
@@ -361,32 +362,34 @@ function validate(target: any, propertyName: string, descriptor: TypedPropertyDe
 
         return method.apply(this, arguments);
     }
-} 
+}
 ```
 
-`@required`装饰器添加了元数据实体把参数标记为必须的。 `@validate`装饰器把`greet`方法包裹在一个函数里在调用原先的函数前验证函数参数。
 
-> 注意  这个例子使用了`reflect-metadata`库。 查看元数据了解`reflect-metadata`库的更多信息。
+
+`@required`装饰器添加了元数据实体，把参数标记为必须的。`@validate`装饰器把`greet`方法包裹在一个函数里，在调用原先的函数前验证函数参数。
+
+> 注意：这个例子使用了`reflect-metadata`库。查看元数据了解`reflect-metadata`库的更多信息。
 
 ## 元数据
 
-一些例子使用了`reflect-metadata`库来支持[实验性的 metadata API](https://github.com/rbuckton/ReflectDecorators)。 这个库还不是 ECMAScript (JavaScript)标准的一部分。 然而，当装饰器被 ECMAScript 官方标准采纳后，这些扩展也将被推荐给 ECMAScript 以采纳。
+一些例子使用了`reflect-metadata`库来支持[实验性的 metadata API](https://github.com/rbuckton/ReflectDecorators)。这个库还不是 ECMAScript（JavaScript）标准的一部分。然而，当装饰器被 ECMAScript 官方标准采纳后，这些扩展也将被推荐给 ECMAScript 以采纳。
 
 你可以通过 npm 安装这个库：
 
 ```js
-npm i reflect-metadata --save 
+npm i reflect-metadata --save
 ```
 
-TypeScript 支持为带有装饰器的声明生成元数据。 你需要在命令行或`tsconfig.json`里启用`emitDecoratorMetadata`编译器选项。
+TypeScript 支持为带有装饰器的声明生成元数据。你需要在命令行或`tsconfig.json`里启用`emitDecoratorMetadata`编译器选项。
 
-**Command Line**:
+**Command Line**：
 
 ```js
-tsc --target ES5 --experimentalDecorators --emitDecoratorMetadata 
+tsc --target ES5 --experimentalDecorators --emitDecoratorMetadata
 ```
 
-**tsconfig.json**:
+**tsconfig.json**：
 
 ```js
 {
@@ -395,7 +398,7 @@ tsc --target ES5 --experimentalDecorators --emitDecoratorMetadata
         "experimentalDecorators": true,
         "emitDecoratorMetadata": true
     }
-} 
+}
 ```
 
 当启用后，只要`reflect-metadata`库被引入了，设计阶段额外的信息可以在运行时使用。
@@ -431,10 +434,10 @@ function validate<T>(target: any, propertyKey: string, descriptor: TypedProperty
             throw new TypeError("Invalid type.");
         }
     }
-} 
+}
 ```
 
-TypeScript 编译器可以通过`@Reflect.metadata`装饰器注入设计阶段的类型信息。 你可以认为它相当于下面的 TypeScript：
+TypeScript 编译器可以通过`@Reflect.metadata`装饰器注入设计阶段的类型信息。你可以认为它相当于下面的 TypeScript：
 
 ```js
 class Line {
@@ -450,7 +453,7 @@ class Line {
     @Reflect.metadata("design:type", Point)
     set p1(value: Point) { this._p1 = value; }
     get p1() { return this._p1; }
-} 
+}
 ```
 
-> 注意  装饰器元数据是个实验性的特性并且可能在以后的版本中发生破坏性的改变（breaking changes）。
+> 注意：装饰器元数据是个实验性的特性并且可能在以后的版本中发生破坏性的改变（breaking changes）。

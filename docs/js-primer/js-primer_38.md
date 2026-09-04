@@ -1,3 +1,4 @@
+
 # 用例：Ajax 通信
 
 > 原文：[`jsprimer.net/use-case/ajaxapp/`](https://jsprimer.net/use-case/ajaxapp/)
@@ -6,26 +7,24 @@
 
 应用程序需满足以下要求：
 
-+   可以在文本框中输入 GitHub 的用户 ID
++ 可以在文本框中输入 GitHub 的用户 ID
++ 根据输入的 GitHub 用户 ID 获取用户信息
++ 在应用程序中显示获取的用户信息
 
-+   根据输入的 GitHub 用户 ID 获取用户信息
+## 目录
 
-+   在应用程序中显示获取的用户信息
+### 入口点
 
-## *目录*
+创建应用程序中最先调用的入口点。
 
-*### *入口点*
+### HTTP 通信
 
-*创建应用程序中最先调用的入口点。
+使用 Web 标准的 `Fetch API` 进行 HTTP 通信，并调用 GitHub 的 API。
 
-### *HTTP 通信*
+### 显示数据
 
-*使用 Web 标准的 Fetch API 进行 HTTP 通信，并调用 GitHub 的 API。
+使用 `Fetch API` 获取数据，构建 HTML 并在浏览器上显示。
 
-### *显示数据*
+### 利用 Promise
 
-*使用 Fetch API 获取数据，构建 HTML 并在浏览器上显示。
-
-### *利用 Promise*
-
-*利用 Promise，整理源代码并处理错误。*****
+利用 `Promise`，整理源代码并处理错误。

@@ -1,19 +1,11 @@
-# Deno 现代 Web 开发：使用 Svelte、React 和 GraphQL 现代现代 JavaScript 和 TypeScript 代码
 
-
+# Deno 现代 Web 开发：使用 Svelte、React 和 GraphQL 现代 JavaScript 和 TypeScript 代码
 
 ![](img/cover.jpg)
-![image](img/cover.jpg)
-
 
 ![](img/line.jpg)
-
-
-![](img/line.jpg)
-
 
 ![](img/logo.jpg)
-
 
 版权 © 2023 BPB Online
 
@@ -23,20 +15,18 @@
 
 BPB Online 已努力通过正确使用大写字母提供书中提到的所有公司和产品的商标信息。然而，BPB Online 无法保证这些信息的准确性。
 
-- **群组产品经理**:Marianne Conor
-- **出版产品经理**:Eva Brawn
-- **高级编辑**:Connell
-- **内容开发编辑**:Melissa Monroe
-- **技术编辑**:Anne Stokes
-- **文字编辑**:Joe Austin
-- **语言支持编辑**:Justin Baldwin
-- **项目协调员**:Tyler Horan
-- **校对员**:Khloe Styles
-- **索引员**:V. Krishnamurthy
-- **制作设计员**:Malcolm D'Souza
-- **营销协调员**:Kristen Kramer
-
-
+- **群组产品经理**: Marianne Conor
+- **出版产品经理**: Eva Brawn
+- **高级编辑**: Connell
+- **内容开发编辑**: Melissa Monroe
+- **技术编辑**: Anne Stokes
+- **文字编辑**: Joe Austin
+- **语言支持编辑**: Justin Baldwin
+- **项目协调员**: Tyler Horan
+- **校对员**: Khloe Styles
+- **索引员**: V. Krishnamurthy
+- **制作设计员**: Malcolm D'Souza
+- **营销协调员**: Kristen Kramer
 
 # 献给
 
@@ -63,30 +53,34 @@ BPB Online 已努力通过正确使用大写字母提供书中提到的所有公
 本书分为 **9 章**。将涵盖 Deno 简介、TypeScript 简介、使用 React 创建 Web 应用、GraphQL 简介、创建 GraphQL API 服务器、创建 Svelte 应用等。详情列如下：
 
 - **第一章** 将介绍 `Deno` 是什么、为什么由 `Node.js`（流行的 JavaScript 运行时）的作者引入 `Deno`、`Deno` 与 `Node` 之间的差异等。将列出 `Deno` 的特性，解释创建 `Deno` 使用的不同技术。还将提供关于什么是 JavaScript 运行时以及什么是 JavaScript 引擎的信息。
+
 - **第二章** 将介绍什么是 `TypeScript`、`TypeScript` 的优势、`TypeScript` 的特性等。它还将为 JavaScript 开发者解释 `TypeScript` 的基础知识。并提供有关如何设置 `TypeScript` 的详细信息。
+
 - **第三章** 将提供如何安装 `Deno` 的详细信息。还将列出一些开发所需的常用开发者工具，如 `VS Code`、`Terminal` 等。
+
 - **第四章** 将涵盖 `Deno` 生态系统的详细信息。`Deno` 生态系统包括 `Deno CLI` 细节，如环境变量、子命令、如何传递参数、文件监听器、权限标志、权限白名单等。还将列出 `Deno` 运行时 API，如 `Web APIs`、`Global APIs` 等。作为生态系统组成部分的 `Deno` 模块分为两类：标准库和第三方模块。还将列出模块注册中心，如 Deno 自己的站点 `deno.land/x` 和 `nest.land`。
+
 - **第五章** 将介绍 `Aleph.js`，一个用于 `Deno` 的全栈 React 框架。它将列出页面、路由等概念。简要介绍使用 `GET`、`POST`、`DELETE` 等 API 创建 `Todos` 应用。
+
 - **第六章** 将继续开发 `Todos` 应用并涵盖 UI 实现。它将提供如何使用样式组件库创建 React 组件的详细信息。提供 `Button`、`Input` 等基础组件的代码。
+
 - **第七章** 将介绍 GraphQL 并提供精确获取、单端点等特性的细节。还将列出 `Type`、`Input`、`Mutation`、`Resolver` 等核心概念。随后引入 `oak` 模块以及 `oak-graphql`，将用于实现 GraphQL 服务器。
+
 - **第八章** 将涵盖使用 `oak, oak-graphql` 创建电话簿应用的 GraphQL 实现。将提供如何创建 git 仓库、使用 `trex` 作为包管理器以及使用 `velocaptor` 作为脚本运行器的详细信息。还将提供使用 ORM 进行数据库设置和认证的代码。
+
 - **第九章** 将介绍富有前景的 JavaScript 框架或编译器 `Svelte`。`Snel` 是一个使用 `Deno` 创建 Svelte 应用的模块。它将涵盖 `Snel` 和 `snel-carbon`（UI 组件模块）的设置过程。随后提供为应用设置公私有路由的代码。以及 Svelte 组件。
 
 # 彩色图片
 
-请点击链接下载本书的***彩色图片***：
+请点击链接下载本书的彩色图片：
 
-# [`rebrand.ly/nbyzlk9`](https://rebrand.ly/nbyzlk9)
+[`rebrand.ly/nbyzlk9`](https://rebrand.ly/nbyzlk9)
 
-我们在丰富的书籍和视频目录中 **[`github.com/bpbpublications`](https://github.com/bpbpublications)** 提供了代码包。去看看吧！
+我们在丰富的书籍和视频目录中 [`github.com/bpbpublications`](https://github.com/bpbpublications) 提供了代码包。去看看吧！
 
+你知道吗？BPB 为所有出版的书籍都提供了 eBook 版本，并提供 PDF 和 ePub 文件。您可以在 [`www.bpbonline.com`](http://www.bpbonline.com) 升级到 eBook 版本，作为纸质书客户，您有权获得 eBook 副本折扣。请通过 `business@bpbonline.com` 与我们联系获取更多详情。
 
-
-
-
-你知道吗？BPB 为所有出版的书籍都提供了 eBook 版本，并提供 PDF 和 ePub 文件。您可以在 `[www.bpbonline.com](http://www.bpbonline.com)` 升级到 eBook 版本，作为纸质书客户，您有权获得 eBook 副本折扣。请通过 `business@bpbonline.com` 与我们联系获取更多详情。
-
-在 `[www.bpbonline.com](http://www.bpbonline.com)`，您还可以阅读免费技术文章合集，订阅一系列免费新闻邮件，并接收 BPB 书籍和 eBook 的独家折扣和优惠。
+在 [`www.bpbonline.com`](http://www.bpbonline.com)，您还可以阅读免费技术文章合集，订阅一系列免费新闻邮件，并接收 BPB 书籍和 eBook 的独家折扣和优惠。
 
 # 盗版
 
@@ -94,23 +88,23 @@ BPB Online 已努力通过正确使用大写字母提供书中提到的所有公
 
 # 如果您兴趣成为作者
 
-如果您在某个领域拥有专长，并且对编写或为书籍贡献感兴趣，请访问 `[www.bpbonline.com.](http://www.bpbonline.com/)`。我们与成千上万像您这样的开发者和技术专业人员合作过，帮助他们将见解分享给全球技术社区。您可以进行通用申请、申请我们正在招募作者的特定热点，或提交自己的想法。
+如果您在某个领域拥有专长，并且对编写或为书籍贡献感兴趣，请访问 [`www.bpbonline.com`](http://www.bpbonline.com/)。我们与成千上万像您这样的开发者和技术专业人员合作过，帮助他们将见解分享给全球技术社区。您可以进行通用申请、申请我们正在招募作者的特定热点，或提交自己的想法。
 
 # 评论
 
 请留下评价。在您阅读并使用此书后，为什么不在您购买的网站上留下评价呢？潜在的读者就可以查看并利用您的无偏意见来做出购买决策。我们 BPB 可以了解您对我们产品的看法，我们的作者也可以看到您对书籍的反馈。谢谢！
 
-有关关于 BPB 的更多信息，请访问 `[www.bpbonline.com.](http://www.bpbonline.com/)`。
+有关关于 BPB 的更多信息，请访问 [`www.bpbonline.com`](http://www.bpbonline.com/)。
 
-# 第一章 (#toc.xhtml_c01)
+# 第一章
 
-# Deno 之陆 (#toc.xhtml_c01)
+## Deno 之陆
 
-### 引言 (#toc.xhtml_s1a)
+### 引言
 
-在 `Node` 运行时成功十年后，其创建者 `Ryan Dahl` 提出了另一种令人兴奋的技术，称为 `Deno`。它也是一个像 `Node` 一样的运行时，但与 `Node` 相比更加安全，并提供了许多改进和现代功能。Dahl 在 2018 年的 `JSCONF EU` 演讲中通过名为“我对 Node.js 遗憾的 10 件事”（****https://www.youtube.com/watch?v=M3BM9TB-8yA**） de 宣布了 `Deno`，震撼了开发领域。从那时起，`Deno`一直是软件行业的一个兴奋的话题。
+在 `Node` 运行时成功十年后，其创建者 `Ryan Dahl` 提出了另一种令人兴奋的技术，称为 `Deno`。它也是一个像 `Node` 一样的运行时，但与 `Node` 相比更加安全，并提供了许多改进和现代功能。Dahl 在 2018 年的 `JSCONF EU` 演讲中通过名为“我对 Node.js 遗憾的 10 件事”（https://www.youtube.com/watch?v=M3BM9TB-8yA） 宣布了 `Deno`，震撼了开发领域。从那时起，`Deno` 一直是软件行业的一个兴奋的话题。
 
-### 结构 (#toc.xhtml_s2a)
+### 结构
 
 在本章中，我们将涵盖以下主题：
 
@@ -122,13 +116,13 @@ BPB Online 已努力通过正确使用大写字母提供书中提到的所有公
 *   什么是 JavaScript 引擎？
 *   什么是 JavaScript 运行时？
 
-### 目标 (#toc.xhtml_s3a)
+### 目标
 
 学习本章后，你将熟悉 `Deno` 的主要特性及其内部架构。你还将理解使用 `Deno` 的原因。
 
-### 介绍 Deno (#toc.xhtml_s4a)
+### 介绍 Deno
 
-在 `Node` 运行时成功十年后，其创建者 `Ryan Dahl` 提出了另一种令人兴奋的技术，称为 `Deno`。它也是一个像 `Node` 一样的运行时，但与 `Node` 相比更加安全，并提供了许多改进和现代功能。Dahl 在 2018 年的 `JSCONF EU` 演讲中通过名为“我对 Node.js 遗憾的 10 件事”（****https://www.youtube.com/watch?v=M3BM9TB-8yA**） 宣布了 `Deno`，震撼了开发领域。从那时起，`Deno`一直是软件行业的一个兴奋的话题。
+在 `Node` 运行时成功十年后，其创建者 `Ryan Dahl` 提出了另一种令人兴奋的技术，称为 `Deno`。它也是一个像 `Node` 一样的运行时，但与 `Node` 相比更加安全，并提供了许多改进和现代功能。Dahl 在 2018 年的 `JSCONF EU` 演讲中通过名为“我对 Node.js 遗憾的 10 件事”（https://www.youtube.com/watch?v=M3BM9TB-8yA） 宣布了 `Deno`，震撼了开发领域。从那时起，`Deno` 一直是软件行业的一个兴奋的话题。
 
 *   Node 革命
 *   Deno 与 Node 的比较
@@ -136,58 +130,52 @@ BPB Online 已努力通过正确使用大写字母提供书中提到的所有公
 *   Deno 基础栈
 *   什么是 JavaScript 引擎？
 *   什么是 JavaScript 运行时？
-
 *   内置安全性
 *   内置工具
 *   TypeScript 支持
 *   ES 模块
 *   顶层 await (Top-level await)
 
-### Node 革命 (#toc.xhtml_s5a)
+### Node 革命
 
-在 `Node` 运行时成功十年后，其创建者 `Ryan Dahl` 提出了另一种令人兴奋的技术，称为 `Deno`。它也是一个像 `Node` 一样的运行时，但与 `Node` 相比更加安全，并提供了许多改进和现代功能。Dahl 在 2018 年的 `JSCONF EU` 演讲中通过名为“我对 Node.js 遗憾的 10 件事”（****https://www.youtube.com/watch?v=M3BM9TB-8yA**） 宣布了 `Deno`，震撼了开发领域。从那时起，`Deno`一直是软件行业的一个兴奋的话题。
+在 `Node` 运行时成功十年后，其创建者 `Ryan Dahl` 提出了另一种令人兴奋的技术，称为 `Deno`。它也是一个像 `Node` 一样的运行时，但与 `Node` 相比更加安全，并提供了许多改进和现代功能。Dahl 在 2018 年的 `JSCONF EU` 演讲中通过名为“我对 Node.js 遗憾的 10 件事”（https://www.youtube.com/watch?v=M3BM9TB-8yA） 宣布了 `Deno`，震撼了开发领域。从那时起，`Deno` 一直是软件行业的一个兴奋的话题。
 
-### 无处处 JavaScript
+#### 无处处 JavaScript
 
-在 `Node` 运行时成功十年后，其创建者 `Ryan Dahl` 提出了另一种令人兴奋的技术，称为 `Deno`。它也是一个像 `Node` 一样的运行时，但与 `Node` 相比更加安全，并提供了许多改进和现代功能。Dahl 在 2018 年的 `JSCONF EU` 演讲中通过名为“我对 Node.js 遗憾的 10 件事”（****https://www.youtube.com/watch?v=M3BM9TB-8yA**） 宣布了 `Deno`，震撼了开发领域。从那时起，`Deno`一直是软件行业的一个兴奋的话题。
+在 `Node` 运行时成功十年后，其创建者 `Ryan Dahl` 提出了另一种令人兴奋的技术，称为 `Deno`。它也是一个像 `Node` 一样的运行时，但与 `Node` 相比更加安全，并提供了许多改进和现代功能。Dahl 在 2018 年的 `JSCONF EU` 演讲中通过名为“我对 Node.js 遗憾的 10 件事”（https://www.youtube.com/watch?v=M3BM9TB-8yA） 宣布了 `Deno`，震撼了开发领域。从那时起，`Deno` 一直是软件行业的一个兴奋的话题。
 
-### 异步与事件驱动架构
+#### 异步与事件驱动架构
 
-在 `Node` 运行时成功十年后，其创建者 `Ryan Dahl` 提出了另一种令人兴奋的技术，称为 `Deno`。它也是一个像 `Node` 一样的运行时，但与 `Node` 相比更加安全，并提供了许多改进和现代功能。Dahl 在 2018 年的 `JSCONF EU` 演讲中通过名为“我对 Node.js 遗憾的 10 件事”（****https://www.youtube.com/watch?v=M3BM9TB-8yA**） 宣布了 `Deno`，震撼了开发领域。从那时起，`Deno`一直是软件行业的一个兴奋的话题。
+在 `Node` 运行时成功十年后，其创建者 `Ryan Dahl` 提出了另一种令人兴奋的技术，称为 `Deno`。它也是一个像 `Node` 一样的运行时，但与 `Node` 相比更加安全，并提供了许多改进和现代功能。Dahl 在 2018 年的 `JSCONF EU` 演讲中通过名为“我对 Node.js 遗憾的 10 件事”（https://www.youtube.com/watch?v=M3BM9TB-8yA） 宣布了 `Deno`，震撼了开发领域。从那时起，`Deno` 一直是软件行业的一个兴奋的话题。
 
-### 开源与跨平台
+#### 开源与跨平台
 
-在 `Node` 运行时成功十年后，其创建者 `Ryan Dahl` 提出了另一种令人兴奋的技术，称为 `Deno`。它也是一个像 `Node` 一样的运行时，但与 `Node` 相比更加安全，并提供了许多改进和现代功能。Dahl 在 2018 年的 `JSCONF EU` 演讲中通过名为“我对 Node.js 遗憾的 10 件事”（****https://www.youtube.com/watch?v=M3BM9TB-8yA**） 宣布了 `Deno`，震撼了开发领域。从那时起，`Deno`一直是软件行业的一个兴奋的话题。
+在 `Node` 运行时成功十年后，其创建者 `Ryan Dahl` 提出了另一种令人兴奋的技术，称为 `Deno`。它也是一个像 `Node` 一样的运行时，但与 `Node` 相比更加安全，并提供了许多改进和现代功能。Dahl 在 2018 年的 `JSCONF EU` 演讲中通过名为“我对 Node.js 遗憾的 10 件事”（https://www.youtube.com/watch?v=M3BM9TB-8yA） 宣布了 `Deno`，震撼了开发领域。从那时起，`Deno` 一直是软件行业的一个兴奋的话题。
 
-### 高性能
+#### 高性能
 
-在 `Node` 运行时成功十年后，其创建者 `Ryan Dahl` 提出了另一种令人兴奋的技术，称为 `Deno`。它也是一个像 `Node` 一样的运行时，但与 `Node` 相比更加安全，并提供了许多改进和现代功能。Dahl 在 2018 年的 `JSCONF EU` 演讲中通过名为“我对 Node.js 遗憾的 10 件事”（****https://www.youtube.com/watch?v=M3BM9TB-8yA**） 宣布了 `Deno`，震撼了开发领域。从那时起，`Deno`一直是软件行业的一个兴奋的话题。
+在 `Node` 运行时成功十年后，其创建者 `Ryan Dahl` 提出了另一种令人兴奋的技术，称为 `Deno`。它也是一个像 `Node` 一样的运行时，但与 `Node` 相比更加安全，并提供了许多改进和现代功能。Dahl 在 2018 年的 `JSCONF EU` 演讲中通过名为“我对 Node.js 遗憾的 10 件事”（https://www.youtube.com/watch?v=M3BM9TB-8yA） 宣布了 `Deno`，震撼了开发领域。从那时起，`Deno` 一直是软件行业的一个兴奋的话题。
 
-### 用于处理依赖的 Node 包管理器 (npm)
+#### 用于处理依赖的 Node 包管理器 (npm)
 
-在 `Node` 运行时成功十年后，其创建者 `Ryan Dahl` 提出了另一种令人兴奋的技术，称为 `Deno`。它也是一个像 `Node` 一样的运行时，但与 `Node` 相比更加安全，并提供了许多改进和现代功能。Dahl 在 2018 年的 `JSCONF EU` 演讲中通过名为“我对 Node.js 遗憾的 10 件事”（****https://www.youtube.com/watch?v=M3BM9TB-8yA**） 宣布了 `Deno`，震撼了开发领域。从那时起，`Deno`一直是软件行业的一个兴奋的话题。
+在 `Node` 运行时成功十年后，其创建者 `Ryan Dahl` 提出了另一种令人兴奋的技术，称为 `Deno`。它也是一个像 `Node` 一样的运行时，但与 `Node` 相比更加安全，并提供了许多改进和现代功能。Dahl 在 2018 年的 `JSCONF EU` 演讲中通过名为“我对 Node.js 遗憾的 10 件事”（https://www.youtube.com/watch?v=M3BM9TB-8yA） 宣布了 `Deno`，震撼了开发领域。从那时起，`Deno` 一直是软件行业的一个兴奋的话题。
 
-### 事件循环 (#toc.xhtml_s6a)
+### 事件循环
 
-在 `Node` 运行时成功十年后，其创建者 `Ryan Dahl` 提出了另一种令人兴奋的技术，称为 `Deno`。它也是一个像 `Node` 一样的运行时，但与 `Node` 相比更加安全，并提供了许多改进和现代功能。Dahl 在 2018 年的 `JSCONF EU` 演讲中通过名为“我对 Node.js 遗憾的 10 件事”（****https://www.youtube.com/watch?v=M3BM9TB-8yA**） 宣布了 `Deno`，震撼了开发领域。从那时起，`Deno`一直是软件行业的一个兴奋的话题。
+在 `Node` 运行时成功十年后，其创建者 `Ryan Dahl` 提出了另一种令人兴奋的技术，称为 `Deno`。它也是一个像 `Node` 一样的运行时，但与 `Node` 相比更加安全，并提供了许多改进和现代功能。Dahl 在 2018 年的 `JSCONF EU` 演讲中通过名为“我对 Node.js 遗憾的 10 件事”（https://www.youtube.com/watch?v=M3BM9TB-8yA） 宣布了 `Deno`，震撼了开发领域。从那时起，`Deno` 一直是软件行业的一个兴奋的话题。
 
-### Deno 与 Node 的比较 (#toc.xhtml_s7a)
+### Deno 与 Node 的比较
 
-在 `Node` 运行时成功十年后，其创建者 `Ryan Dahl` 提出了另一种令人兴奋的技术，称为 `Deno`。它也是一个像 `Node` 一样的运行时，但与 `Node` 相比更加安全，并提供了许多改进和现代功能。Dahl 在 2018 年的 `JSCONF EU` 演讲中通过名为“我对 Node.js 遗憾的 10 件事”（****https://www.youtube.com/watch?v=M3BM9TB-8yA**） 宣布了 `Deno`，震撼了开发领域。从那时起，`Deno`一直是软件行业的一个兴奋的话题。
+在 `Node` 运行时成功十年后，其创建者 `Ryan Dahl` 提出了另一种令人兴奋的技术，称为 `Deno`。它也是一个像 `Node` 一样的运行时，但与 `Node` 相比更加安全，并提供了许多改进和现代功能。Dahl 在 2018 年的 `JSCONF EU` 演讲中通过名为“我对 Node.js 遗憾的 10 件事”（https://www.youtube.com/watch?v=M3BM9TB-8yA） 宣布了 `Deno`，震撼了开发领域。从那时起，`Deno` 一直是软件行业的一个兴奋的话题。
 
 | **特性** | **Node** | **Deno** |
-
-
-
-
-
-| 构建语言 | C++ | Rust |
 | :--- | :--- | :--- |
+| 构建语言 | C++ | Rust |
 | JavaScript 引擎 | V8 (C++ 绑定和后端) | V8 (Rust 绑定和后端) |
 | 事件循环 | libuv | tokio |
 | TypeScript 支持 | 需要安装 | 开箱即用 |
 | 包管理器 | Npm (中心化) | 无包管理器 (去中心化) |
-| 导入系统 | CommonJS (`require()`) | ES  (`import`) |
+| 导入系统 | CommonJS (`require()`) | ES (`import`) |
 | 安全性 | 默认完全访问 | 默认无访问 |
 | package.json | 使用 | 不使用 |
 
@@ -218,13 +206,13 @@ Deno 的创建使用了一些坚实的技术，这增加了它成功的概率。
 - 使用 Rust 编写
 - 使用 Tokio（用 Rust 编写的异步运行时）用于事件线程管理
 
-### Google 开发的 V8 引擎
+#### Google 开发的 V8 引擎
 
 一个由 Google 使用 C++ 构建的开源 JavaScript 引擎。它将 JavaScript 代码（由 Deno 传递）转换为字节码/机器码。Deno 开箱即用支持 TypeScript，因此我们也可以提供 TypeScript 代码，Deno 将其编译为 JavaScript。它执行 JavaScript 代码，并通过 Deno 团队为 V8 引擎编写的 Rust 绑定 `rusty_v8` 将 Deno API 相关代码（Rust 代码）传递给 Rust 后端。
 
-解释器 (`Ignition`）和编译器 (`TurboFan`）的结合使得 V8 生成运行极快的优化机器码。
+解释器 (`Ignition`) 和编译器 (`TurboFan`) 的结合使得 V8 生成运行极快的优化机器码。
 
-### Rust
+#### Rust
 
 自 2016 年以来，Rust 在每次 StackOverflow 调查中一直是“最受喜爱”语言（连续五年）。它是一种系统编程语言，能够对底层细节进行控制。它提供了内存安全、线程安全和类型系统。由于这些以及许多其他特性，Rust 在过去五年的 StackOverflow 调查中是最受喜爱和最期待的语言。
 
@@ -235,6 +223,7 @@ Deno 的创建使用了一些坚实的技术，这增加了它成功的概率。
 - 没有 NULL 指针，只有 options（选项）
 
 使用者：
+
 - Amazon—firecracker
 - Google—Fuchsia
 - Facebook—Mononoke
@@ -242,7 +231,7 @@ Deno 的创建使用了一些坚实的技术，这增加了它成功的概率。
 
 Deno 后端包含文件系统、网络和环境访问，并用 Rust 编写。异步 i/o 绑定由 tokio 库处理。
 
-### Tokio I/O 库
+#### Tokio I/O 库
 
 它用于用 Rust 编写异步应用程序。它是一个事件驱动、非阻塞 i/o 平台。它使用线程池和工作线程在后台执行操作。
 
@@ -266,9 +255,11 @@ JavaScript 引擎用于将 JavaScript/TypeScript 代码转换为字节码（解�
 在 JavaScript 引擎中，代码被解析为标记（tokens），用于用于生成抽象语法树（AST）。解释器使用该树生成字节码。剖析器（profiler）监控字节码，如果有优化空间，则将其传递给编译器。编译器输出优化的机器码，运行速度比字节码更快。
 
 **解释器：**
+
 解释器逐行翻译代码。它提供字节码作为输出。解释器开始编码的速度非常快，但不提供任何优化。
 
 **编译器：**
+
 编译器一次性翻译整个代码。编译器具有分析整个程序并对其优化空间。它输出优化的机器码。由于需要遍历整个程序，编译器分析和优化代码需要更长时间。
 
 JavaScript 引擎结合了解释器和编译器的功能。通过这样，我们得到了运行更快的优化代码。这种编译器被称为“JIT 编译器”。
@@ -278,44 +269,46 @@ JavaScript 引擎结合了解释器和编译器的功能。通过这样，我们
 JavaScript 运行时是一个环境，结合了 JavaScript 引擎（Deno 中的 V8）、用底层语言编写的 API 后端（Deno 中的 Rust）、持续监控调用栈的回调队列和事件循环。
 
 **内存堆：**
+
 JavaScript 代码传递给 V8 引擎，它存储代码中的变量和函数。
 
 **调用栈：**
+
 它存储代码中调用的函数。它按照后进先（LIFO）原则运行。它始终指向当前运行的函数。一旦函数返回或传递给 Deno API，它就会弹出函数并执行栈中的上一个函数。
 
 **Deno API：**
+
 当 Deno 检测到与 i/o、网络等相关的代码时，它将代码传递给用 Rust 编写的 API 后端。它使用 `rusty_v8` 绑定将代码传递给后端。
 
 **Tokio：**
+
 它是一个事件驱动的异步 i/o 平台。Deno API 将代码传递给 tokio。它使用线程池和工作线程在后台执行操作并传递到回调队列。
 
 **回调队列：**
+
 按照先进先出（FIFO）原则运行。它存储 Tokio 传递的所有完成函数。它等待调用栈为空。
 
 **事件循环：**
+
 它持续监控调用栈和回调队列。如果调用栈为空且回调队列中有函数，它将函数传递到调用栈上进行执行。
 
 ### 总结
 
-我们在 Deno 世界的之旅从这一章开始。我们学习了 Deno 和 Node 的历史，比较了 Deno 和 Node，并列出了 Deno 的特性。我们还涵盖了构建 Deno 的栈，即 *V8* JavaScript 引擎、*Tokio* 事件循环以及用 Rust 编写的 Deno API 后端。最后，我们涵盖了 JavaScript 引擎和 JavaScript 运行时架构，这些虽然强制性的，但为我们理解什么是 Deno 以及它如何在后台执行操作提供了坚实的基础。
-
-
-
-
+我们在 Deno 世界的之旅从这一章开始。我们学习了 Deno 和 Node 的历史，比较了 Deno 和 Node，并列出了 Deno 的特性。我们还涵盖了构建 Deno 的栈，即 `V8` JavaScript 引擎、`Tokio` 事件循环以及用 Rust 编写的 Deno API 后端。最后，我们涵盖了 JavaScript 引擎和 JavaScript 运行时架构，这些虽然强制性的，但为我们理解什么是 Deno 以及它如何在后台执行操作提供了坚实的基础。
 
 虽然本章涵盖了 Deno 的主要特性，但 TypeScript 是 Deno 领域中一个需要重点介绍的重要部分。开箱即用的 TypeScript 支持是 Deno 的一项主要特性，学习 TypeScript 需要整章专门的章节来介绍基础知识。因此，我们将在接下来的章节中学习 `TypeScript`，因为在本书中我们将一直使用 `TypeScript` 进行编程。
 
 既然你已经来到了这里，显然你对学习 Deno 很有兴趣并感到兴奋。Deno 有许多令人兴奋且现代的功能，我们将在全书中学习这些功能。
 
-# 第二章](#toc.xhtml_c02)
+# 第二章
 
-## TypeScript 简介](#toc.xhtml_c02)
+## TypeScript 简介
 
-### 简介](#toc.xhtml_s16a)
+### 简介
 
-开箱即用的 TypeScript 支持是 Deno 运行时提供的一项令人兴奋的功能。TypeScript 一一直是大型应用程序的热门选择，并被行业快速采用。它在 2020 年 Stack Overflow 开发者调查的[最受喜爱语言](https://insights.stackoverflow.com/survey/2020#most-loved-dreaded-and-wanted)部分中排名第二（[`insights.stackoverflow.com/survey/2020`](https://insights.stackoverflow.com/survey/2020)）。
+开箱即用的 TypeScript 支持是 Deno 运行时提供的一项令人兴奋的功能。TypeScript 一直是大型应用程序的热门选择，并被行业快速采用。它在 2020 年 Stack Overflow 开发者调查的[最受喜爱语言](https://insights.stackoverflow.com/survey/2020#most-loved-dreaded-and-wanted)部分中排名第二（[`insights.stackoverflow.com/survey/2020`](https://insights.stackoverflow.com/survey/2020)）。
 
-### 结构](#toc.xhtml_s17a)
+### 结构
 
 在本章中，我们将涵盖以下主题：
 
@@ -336,11 +329,11 @@ JavaScript 代码传递给 V8 引擎，它存储代码中的变量和函数。
 *   强类型与弱类型
 *   TypeScript 配置
 
-### 目标](#toc.xhtml_s18a)
+### 目标
 
 本章将帮助你熟悉 TypeScript 基础以及如何使用 TypeScript 开发 Deno 应用。本章还将帮助你理解静态类型检查的优缺点以及 TypeScript 提供的优势。
 
-### 介绍 TypeScript](#toc.xhtml_s19a)
+### 介绍 TypeScript
 
 TypeScript 由 `Anders Hejlsberg` 于 2012 年公开发布，是一个非常流行且开源的 JavaScript 超集。它为 JavaScript 代码添加了静态类型定义。它由微软开发和维护。TypeScript 提供类型安全、类型推断、类型断言等许多功能，包括将 ES Next 特性引入 JavaScript。请查看以下截图：
 
@@ -348,7 +341,7 @@ TypeScript 由 `Anders Hejlsberg` 于 2012 年公开发布，是一个非常流�
 
 **图 2.1:** TypeScript
 
-### TypeScript 的优势](#toc.xhtml_s20a)
+### TypeScript 的优势
 
 JavaScript 在我们的行业中非常流行并被广泛。但在使用 JavaScript 开发大型应用程序时，它的动态特性使得许多类型相关的错误和 bug 在开发阶段通过，只有在运行时才能被捕获。运行时调试比编译调试要糟糕得多。
 
@@ -356,7 +349,7 @@ JavaScript 在我们的行业中非常流行并被广泛。但在使用 JavaScri
 
 引入 TypeScript 是为了给 JavaScript 添加类型。TypeScript 代码通过 TypeScript 编译器或 babel 译器转换为 JavaScript。TypeScript 允许`静态类型检查`，它可以在不运行代码的情况下检测代码中的错误，即在编译时。它保留了 JavaScript 的运行时行为，这意味着代码的运行方式将保持一致。保持相同的运行时行为是 TypeScript 的核心特性之一。
 
-### TypeScript 特性](#toc.xhtml_s21a)
+### TypeScript 特性
 
 TypeScript 提供了许多 ES-Next 功能，以及有助于开发大型应用程序的功能。我们将列出 TypeScript 的一些主要特性。
 
@@ -374,11 +367,11 @@ TypeScript 提供了许多 ES-Next 功能，以及有助于开发大型应用程
 *   语言服务
 *   与 JavaScript 相同的运行时行为
 
-### TypeScript 基础](#toc.xhtml_s22a)
+### TypeScript 基础
 
 作为 JavaScript 的超集，TypeScript 对开发者来说很容易上手。假设你熟悉 JavaScript，我们将学习 TypeScript 中包含的额外类型。
 
-### 基本类型](#toc.xhtml_s23a)
+#### 基本类型
 
 在本节中，我们将介绍常用的数据类型。在 Deno 开发的大部分时间内，我们都会使用它们。
 
@@ -397,7 +390,7 @@ TypeScript 提供了许多 ES-Next 功能，以及有助于开发大型应用程
 *   **Void (空)**：作为不返回值的返回类型。
 *   **Object (对象)**：表示非原始类型。
 
-### 接口 (Interfaces](#toc.xhtml_s24a)
+#### 接口 (Interfaces)
 
 接口用于定义实体或对象的形状。它描述了对象应该拥有的属性。
 
@@ -415,7 +408,7 @@ const person: IPerson = {
 
 在前面的示例中，`IPerson`（注意大写的 I 表示接口）定义了对象 `person` 必须具备的形状。因此，属性 `place`会导致编译器错误，因为它在 `IPerson` 中不存在。
 
-### 可选属性](#toc.xhtml_s25a)
+##### 可选属性
 
 在许多情况下，我们需要提供一个可选的字段。在接口中，可以使用 `?` 符号使字段变为可选。
 
@@ -433,7 +426,7 @@ const person = { name: "name1" };
 printProfile(person);
 ```
 
-### 只读属性](#toc.xhtml_s26a)
+##### 只读属性
 
 在属性前的 `readonly` 关键字表示我们希望属性在创建后是不可变的。
 
@@ -450,14 +443,11 @@ const person: IPerson = {
 
 person.name = "you";
 // person.age = 25; // 不能给 age 赋值，因为它是只读属性
+```
 
-### 类型别名 (Type aliases](#toc.xhtml_s27a)
+#### 类型别名 (Type aliases)
 
 类型别名的工作方式与接口类似。接口用于定义对象的形状，而类型别名可以为原始类型提供名称。它们也可以用于联合类型。
-
-
-
-
 
 ```typescript
 type myInt = number; // type 为原始类型 number 提供了新名称 myInt
@@ -471,17 +461,19 @@ let myId: myInt = 11; // 这里 myInt 代表 number 类型
 let id: number = 11;
 ```
 
-## 联合类型 (Unions)
+#### 联合类型 (Unions)
+
 ```typescript
 type unionId = number | string; // 联合类型
 ```
 
 ```typescript
 let myUnionId: unionId = 25; // number
-myUnionId = “1a2b”; // string
+myUnionId = "1a2b"; // string
 ```
 
 #### 与接口（interfaces）功能相似
+
 ```typescript
 type PersonType = {
   firstName: string;
@@ -489,13 +481,13 @@ type PersonType = {
 };
 
 const person: PersonType = {
-  firstName: “first”,
-  lastName: “last”,
-  // place: “unknown”, // 错误：类型 IPerson 中不存在 place
+  firstName: "first",
+  lastName: "last",
+  // place: "unknown", // 错误：类型 IPerson 中不存在 place
 };
 ```
 
-## 接口 (Interfaces) 与 类型别名 (type aliases)
+#### 接口 (Interfaces) 与 类型别名 (type aliases)
 
 TypeScript 允许接口合并（Interface merging），而类型别名的合并会导致编译错误。
 
@@ -504,12 +496,12 @@ interface IPerson {
   name: string;
 }
 
-interface Iperson {
-  // 将 place 合并到现有的 Iperson 中
+interface IPerson {
+  // 将 place 合并到现有的 IPerson 中
   place: string;
 }
 
-const person: Iperson = { name: “Name1”, place: “space” };
+const person: IPerson = { name: "Name1", place: "space" };
 ```
 
 ```typescript
@@ -521,20 +513,24 @@ type PersonType = {
 //   // 错误：重复的标识符 ‘PersonType’
 //   place: string;
 // };
-// const person1: PersonType = { name: “name2”, place: “time” }; // 不 place
 
-## 类型推断 (Type inference)
+// const person1: PersonType = { name: "name2", place: "time" }; // 不 place
+```
+
+#### 类型推断 (Type inference)
 
 TypeScript 有两种处理类型推断的方法。当我们显式地提供类型时，它被称为“显式类型 (Explicit typing)”；当 TypeScript 使用赋值的值*隐式地*推断类型时，它被称为“隐式类型 (Implicit typing)”。
 
-### 显式类型
+##### 显式类型
+
 每当我们显式地为变量提供类型时，就称为显式类型。
 
 ```typescript
 let myId: number = 25;  // 显式类型为 number
 ```
 
-#### 隐式类型
+##### 隐式类型
+
 即使没有通过初始赋值值、函数参数默认值或函数返回类型显式指定类型，TypeScript 也会推断变量的数据类型。这被称为隐式类型或类型推断。
 
 如果没有给 `isAllowed` 变量显式标注 `false`，TypeScript 根据 `false` 值判断出数据类型为 `boolean`。
@@ -547,49 +543,54 @@ let isAllowed = false; // 隐式类型
 // isAllowed = 25; // TS2322 [ERROR]: 类型与类型 ‘boolean’。
 ```
 
-如果在声明时未提供值，则推断为 `any` 类型。此行为可以通过在 `tsconfig.json` 中设置 `“noImplicitAny”: true;`get 来禁用。
+如果在声明时未提供值，则推断为 `any` 类型。此行为可以通过在 `tsconfig.json` 中设置 `“noImplicitAny”: true;` 来禁用。
 
 ```typescript
 let anyVar; // 推断为 ‘any’ 类型
 anyVar = 2.3;
 anyVar = false;
-anyVar = “I’m any”;
+anyVar = "I'm any";
 ```
 
-## 类型断言 (Type assertions)
+#### 类型断言 (Type assertions)
 
 类型断言用于覆盖编译器推断的类型。类型断言可以通过两种方式定义：
 
-### `as` 语法
+##### `as` 语法
+
 ```typescript
-const word: unknown = “abcdefg”;
+const word: unknown = "abcdefg";
 // const charCount: number = word.length; // 错误: TS2571 [ERROR]: 对象类型为 ‘unknown’。
 const charCount: number = (word as string).length;
 ```
 
-### 尖括号 <> 语法
+##### 尖括号 <> 语法
+
 ```typescript
-const word: unknown = “abcdefg”;
+const word: unknown = "abcdefg";
 // const charCount: number = word.length; // 错误: TS2571 [ERROR]: 对象类型为 ‘unknown’。
 const charCount: number = (<string>word).length;
 ```
 
-## 联合类型 (Unions)
+#### 联合类型 (Unions)
+
 在联合类型中，变量可以持有两种或多种类型的值。联合类型用竖线或管道符号 `|`符号表示。
 
 ```typescript
 let myNum: number = 24;
-// myNum = “id2234”; // 错误: TS2322 [ERROR]: 类型 ‘string’ 不能赋值给类型 ‘number’。
+// myNum = "id2234"; // 错误: TS2322 [ERROR]: 类型 ‘string’ 不能赋值给类型 ‘number’。
 let myId: string | number = 25; // myId 可以接受 string 或 number。
-myId = “id234”; // 接受 string
+myId = "id234"; // 接受 string
 ```
+
 ```typescript
 type myIdType = string | number;
 let myId1: myIdType = 53;
-myId1 = “id234”;
+myId1 = "id234";
 ```
 
-## 交叉类型 (Intersections)
+#### 交叉类型 (Intersections)
+
 交叉类型通过组合两个不同类型的所有属性和方法来创建。使用符号 `&` 来创建交叉类型。
 
 ```typescript
@@ -609,7 +610,7 @@ const printMe = (person: PersonType): PersonType => {
 };
 
 const user: PersonType = {
-  name: “name1”,
+  name: "name1",
   age: 25,
   employeeId: 555,
 };
@@ -617,17 +618,20 @@ const result = printMe(user);
 console.log(result);
 ```
 
-## 类 (Classes)
+#### 类 (Classes)
+
 TypeScript 允许通过类来实现一种面向对象的编程方法。在 `OOP` 术语中，类是用于创建实例或对象的蓝图。通常情况下，一个类可以包含以下内容：
 
 * `constructor()`：每当要创建类的实例时都会被调用。
 * `fields`：变量或属性。
 * `method`：函数
 
-### 修饰符 (Modifiers)
+##### 修饰符 (Modifiers)
+
 修饰符是类字段的访问控制器。有三种修饰符：`public`、`private` 和 `protected`，用于字段和方法。
 
-#### public
+###### public
+
 这是默认修饰符，允许在类外部访问字段/方法。
 
 ```typescript
@@ -643,13 +647,14 @@ class Person {
     console.log(this.name, this.age);
   }
 }
-const person = new Person(“me”, 99); // 调用构造函数，name=”me” 和 age=99
+const person = new Person("me", 99); // 调用构造函数，name="me" 和 age=99
 person.printMe();
 console.log(person.age); // 属性可以在类外部访问
 ```
 
-#### private
-不允许在类外部访问字段/方法。子类无法访问私有属性。它通过 private 关键字或 ECMAScript 的 `hash)` 修饰符定义。
+###### private
+
+不允许在类外部访问字段/方法。子类无法访问私有属性。它通过 private 关键字或 ECMAScript 的 `#` 修饰符定义。
 
 ```typescript
 class Person {
@@ -665,7 +670,7 @@ class Person {
     console.log(this.name, this.age, this.#isActive);
   }
 }
-const person = new Person(“me”, 99);
+const person = new Person("me", 99);
 person.printMe();
 console.log(person.name);
 /**
@@ -678,14 +683,15 @@ console.log(person.name);
 // console.log(person.#isActive);
 ```
 
-#### protected
+###### protected
+
 不允许在类外部访问字段/方法，但子类可以访问其字段。
 
 ```typescript
 class Person {
   name: string;
   protected age: number; // 受保护的字段
-  constructor(name: string = “unnamed”, age: number = 0) {
+  constructor(name: string = "unnamed", age: number = 0) {
     this.name = name;
     this.age = age;
   }
@@ -705,12 +711,8 @@ class User extends Person {
     console.log(this.age); // Person 类的保护字段 age 可供子类访问
   }
 }
-const user = new User(1, “me”, 99);
+const user = new User(1, "me", 99);
 ```
-
-
-
-
 
 ```typescript
 user.printMe();
@@ -722,7 +724,7 @@ user.printMe();
 // console.log(user.age);
 ```
 
-### Getter 和 Setter
+##### Getter 和 Setter
 
 正如我们在修饰符部分所看到的，`private` 和 `protected` 字段/方法无法在类外部访问。在某些情况下，我们需要访问它们。在这种情况下，Getters 和 Setters 会非常有帮助。
 
@@ -774,7 +776,7 @@ person.Is_active = false;
 console.log(person.Is_active);
 ```
 
-### 静态 (Static)
+##### 静态 (Static)
 
 它用于定义属于类而不是属于实例的属性。这意味着静态字段对于所有类实例都保持不变。在我们希望所有实例共享一个字段的副本时，这种场景非常有用。在下面的示例中，我们使用 `static instanceCount` 来计算 `Person` 对象实例的数量。
 
@@ -807,7 +809,7 @@ person2.printMe();
 person2.printTotalPersons(); // instanceCount = 2;
 ```
 
-### 抽象 (Abstract)
+##### 抽象 (Abstract)
 
 抽象类是一个常见的基类（例如，`Person`），具有基本结构，可以被其他类继承（例如，`Employee`、`Employer`）。
 
@@ -838,7 +840,7 @@ employer.printMe();
 
 ### 静态类型与动态类型
 
-在编写应用程序时，我们遇到遇到属于静态或动态类型系统的语言。静态类型在编译时提供类型安全，但在开发过程中花费更多时间，而动态类型允许我们更快地编写代码，但可能会出现只有在运行时才能发现的错误和 Bug。
+在编写应用程序时，我们遇到属于静态或动态类型系统的语言。静态类型在编译时提供类型安全，但在开发过程中花费更多时间，而动态类型允许我们更快地编写代码，但可能会出现只有在运行时才能发现的错误和 Bug。
 
 ```typescript
 // 静态类型 (TypeScript)
@@ -858,18 +860,20 @@ id1 = "132"; // 更改类型
 | 数据类型 | 需要显式指定 | 不需要显式指定数据类型 |
 | 类型检查 | 在编译时 | 在运行时 |
 | 类型更改 | 不允许 | 允许 |
-| 语言 | C, C++ |
+| 语言 | C, C++ | JavaScript |
 
 ### 强类型与弱类型
 
 强类型意味着不允许隐式类型转换，而弱类型意味着类型转换可以隐式进行。
 
-### 强类型 (Python)
+#### 强类型 (Python)
+
 ```python
 id = 34 + "sfs" // 错误：不支持的运算符类型：‘int’ 和 ‘str’
 ```
 
-### 弱类型 (JavaScript)
+#### 弱类型 (JavaScript)
+
 ```javascript
 let id = 34 + "abc"; // 因为类型转换结果 "34abc"
 ```
@@ -886,13 +890,16 @@ let id = 34 + "abc"; // 因为类型转换结果 "34abc"
 
 **注意：确保你已安装 node 和 npm。**
 
-`npm install -g typescript`
+```bash
+npm install -g typescript
+```
 
 完成后，运行以下命令检查是否已安装 TypeScript：
 
-`tsc --version`
-
-`tsc --help`
+```bash
+tsc --version
+tsc --help
+```
 
 ### tsconfig.json
 
@@ -900,17 +907,13 @@ let id = 34 + "abc"; // 因为类型转换结果 "34abc"
 
 ### 总结
 
-TypeScript 是 JavaScript 受受认可和接受的超集，提供了类型安全。它在行业的流行是 Deno 将其作为主要语言的原因之一。
+TypeScript 是 JavaScript 受认可和接受的超集，提供了类型安全。它在行业的流行是 Deno 将其作为主要语言的原因之一。
 
 我们在本中涵盖了 TypeScript 的基础，在整个过程中还有很多可以学习的内容，因为 TypeScript 是我们 Deno 编程的首选语言。
 
 同时，你可以随时在 TS Playground 中尝试不同的 TypeScript 功能：[`www.typescriptlang.org/play/`](https://www.typescriptlang.org/play/)。
 
 通过本章，我们的基础部分（Deno, TypeScript）已经完成，我们将在接下来的章节开始 Deno 实战编程，届时我们将设置 Deno 并了解基础 Deno 命令。
-
-
-
-
 
 在本节中，我们现在准备好运行 Deno 的实践体验了。在开始之前，我们需要为 Deno 配置开发环境。编码或编程只是软件工程的主要方面之一。还涉及其他主要因素，这些因素使我们能够在预计的时间内工程化并交付交付良好的软件应用程序。
 
@@ -976,15 +979,21 @@ brew install deno
 
 运行以下命令检查是否安装了 Deno：
 
-`deno --version`
+```bash
+deno --version
+```
 
 可以通过运行以下命令升级 Deno：
 
-`deno upgrade`
+```bash
+deno upgrade
+```
 
 可以通过运行以下命令将 Deno 升级到特定版本：
 
-`deno upgrade --version 1.5.3`
+```bash
+deno upgrade --version 1.5.3
+```
 
 ## 开发工具
 
@@ -1060,6 +1069,8 @@ Docker 是基于容器的软件开发平台，将整个应用程序作为一个�
 
 ### Silver Searcher
 
+这是一个免费开源的命令行工具，用于从终端快速搜索代码。请查看 [`github.com/ggreer/the_silver_searcher`](https://github.com/ggreer/the_silver_searcher) 获取安装说明。该工具对于在 Deno 开发过程中从终端进行快速代码搜索非常有帮助。
+
 ### Docker Compose
 
 Docker Compose 是由 Docker 团队开发的工具，用于将多个 docker 容器组合作为单个服务运行。我们将用于在 `docker-compose.yml` 文件中定义多个服务/容器。然后我们可以使用单个命令通过 YAML 配置运行所有定义的服务。
@@ -1067,12 +1078,6 @@ Docker Compose 是由 Docker 团队开发的工具，用于将多个 docker 容�
 `安装 docker-compose`
 
 [`docs.docker.com/compose/install/`](https://docs.docker.com/compose/install/)
-
-
-
-
-
-这是一个免费开源的命令行工具，用于从终端快速搜索代码。请查看 [`github.com/ggreer/the_silver_searcher`](https://github.com/ggreer/the_silver_searcher) 获取安装说明。该工具对于在 Deno 开发过程中从终端进行快速代码搜索非常有帮助。
 
 ## 数据库
 
@@ -1091,11 +1096,15 @@ PostgreSQL（也称为 `postgres`）是一个免费开源的`关系型数据库�
 MongoDB 是一个开源 NoSQL 数据库系统，使用类似 JSON 的文档来存储数据。在 Deno 项目中使用 MongoDB 有两种方式，如下：
 
 1. **本地安装 MongoDB**
+
    这将在你的机器上安装 MongoDB，可以在 Deno 应用本地开发期间作为数据库使用。
+
    [`docs.mongodb.com/manual/installation/`](https://docs.mongodb.com/manual/installation/)
 
 2. **MongoDB Atlas**
+
    这是一种云端数据库服务，让我们可以在不进行本地安装的情况下使用 MongoDB 服务。它有一个免费层级计划，我们将将其作为 Deno 项目的数据库。你可以注册并开始使用 MongoDB Atlas。
+
    [`www.mongodb.com/cloud/atlas`](https://www.mongodb.com/cloud/atlas)
 
 ## Redis
@@ -1103,6 +1112,7 @@ MongoDB 是一个开源 NoSQL 数据库系统，使用类似 JSON 的文档来�
 远程字典服务器（`Redis`）是一个开源的内存数据库，以键值对（key-value）格式存储数据。我们可以通过遵循 [`redis.io/topics/quickstart`](https://redis.io/topics/quickstart) 上的指令在本地尝试它。
 
 Redis docker 镜像：
+
 [`hub.docker.com/_/redis`](https://hub.docker.com/_/redis)
 
 ## Heroku
@@ -1110,9 +1120,11 @@ Redis docker 镜像：
 它是一个`平台即服务`（`PAAS`），用于免费部署使用不同编程语言编写的应用程序。
 
 ### 注册 Heroku
+
 [`www.heroku.com/home`](https://www.heroku.com/home)
 
 ### Heroku CLI
+
 [`devcenter.heroku.com/articles/heroku-cli#download-and-install`](https://devcenter.heroku.com/articles/heroku-cli#download-and-install)
 
 ## Tmux
@@ -1126,6 +1138,7 @@ Redis docker 镜像：
 ## 番茄工作法
 
 这是一种时间管理技术，将工作分解为 `Pomodoro`（意大利语中意为“西红柿”）的时间间隔，随后是短/长休息。它帮助我们把工作拆分成更小的任务，并针对每个任务处理若干个番茄钟/Pomodoro。它对许多开发者（包括我自己）都很有益，因此它进入了本章。你可以从官方网站了解更多信息：
+
 [`francescocirillo.com/pages/pomodoro-technique`](https://francescocirillo.com/pages/pomodoro-technique)
 
 | 术语 | 长度 |
@@ -1196,70 +1209,40 @@ Deno 子命令用于执行各种操作，如运行程序、格式化代码、安
 
 * **help**: 用于打印通用帮助信息或指定子命令的帮助信息。
 
-    ```
-    deno help # 列出子命令、选项、环境变量
-    ```
+```bash
+deno help # 列出子命令、选项、环境变量
+```
 
-    ```
-    deno help run # 打印 run 命令的帮助信息
-    ```
-
-
-
-
+```bash
+deno help run # 打印 run 命令的帮助信息
+```
 
 *   `run`: 它通过以下任意方式执行提供的 Deno 程序：
-
     *   filename：
-
         1. `deno run welcome.ts # 执行本地 welcome.ts 文件`
-
     *   url：
-
         1. `deno run https://deno.land/std@0.79.0/examples/welcome.ts`
-
     *   stdin：
-
         1. `cat welcome.ts | deno run -`
-
 *   `install`: 将 Deno 脚本安装为 `DENO_INSTALL_ROOT` 指定目录下的可执行文件。
-
     1. `# 将 denon（文件监听器）安装为可执行文件`
-
     2. `deno install -qAf https://deno.land/x/denon@2.4.5/denon.ts`
-
 *   `fmt`: TypeScript/Javascript 代码格式化工具。
-
     1. `deno fmt # 递归格式化当前目录下所有文件`
-
 *   `doc`: 打印提供的源文件（模块）的文档
-
 *   `eval`: 在终端评估 Javascript 代码
-
-    1. `deno eval “console.log(Deno.args)” deno land`
-
-    2. `# 输出: [“deno”, “land”]`
-
+    1. `deno eval "console.log(Deno.args)" deno land`
+    2. `# 输出: ["deno", "land"]`
 *   `test`: 使用内置测试运行器运行测试。符合 `{*_,*.,}test.{js,mjs,ts,jsx,tsx}`模式的文件将被考虑。支持过滤、覆盖率、快速失败（fail-fast）等选项。
-
 *   `cache`: 下载并编译模块，并将所有依赖项保存在本地缓存中而不运行代码。
-
     1. `deno cache https://deno.land/std/http/file_server.ts`
-
 *   `bundle`: 将单个 JavaScript 文件与其所有依赖打包。
-
 *   `completions`: 将 Deno shell 补全脚本输出到提供的源文件中。
-
     1. `# 在 oh-my-zsh 中作为插件安装 Deno 补全`
-
     2. `mkdir ~/.oh-my-zsh/custom/plugins/deno`
-
     3. `deno completions zsh > ~/.oh-my-zsh/custom/plugins/deno/_deno`
-
     4. `# 在 ~/.zshrc 插件中添加 deno`
-
     5. `plugins=(… deno) // … 代表其他插件`
-
 *   `compile`: 将提供的脚本编译为自包含的可执行文件。
 
 ### 传递参数
@@ -1273,7 +1256,6 @@ Deno 子命令用于执行各种操作，如运行程序、格式化代码、安
 我们可以使用前面的格式运行带参数的 Deno 脚本。在项目文件夹（如 `home/my/work/deno/passing-arguments`）中创建一个名为 `args.ts` 的文件，内容如下：
 
 1. `// args.ts`
-
 2. `console.log(Deno.args);`
 
 上面的代码简单记录了 Deno 运行时变量 `Deno.args`，它是提供的参数的数组。如果没有提供参数，则记录一个空数组 `[]`，如图 4.1 所示：
@@ -1282,23 +1264,22 @@ Deno 子命令用于执行各种操作，如运行程序、格式化代码、安
 
 **图 4.1:** 传递参数
 
-现在我们将向 `args.ts` 文件传递两个参数 `deno` 和 `land`。如图 4.1 所示，运行以下代码后控制台应记录 `[“deno”, “land”]`：
+现在我们将向 `args.ts` 文件传递两个参数 `deno` 和 `land`。如图 4.1 所示，运行以下代码后控制台应记录 `["deno", "land"]`：
 
 1. `deno run args.ts deno land`
+2. `# 输出: ["deno", "land"]`
 
-2. `# 输出: [“deno”, “land”]`
-
-上面的代码带两个额外参数 `deno` 和 `land` 运行 `args.ts` 文件。由于 Deno 将文件名之后之后用空格分隔的所有条目都视为参数，这些条目通过 `Deno.args` 变量提供给 `args.ts` 文件。
+上面的代码带两个额外参数 `deno` 和 `land` 运行 `args.ts` 文件。由于 Deno 将文件名之后用空格分隔的所有条目都视为参数，这些条目通过 `Deno.args` 变量提供给 `args.ts` 文件。
 
 **注意：标志不应在脚本名称之后传递，因为它们会被视为参数。**
 
 在 `args.ts` 脚本之前传递的 `--allow-net` 标志被视为一个`标志 (flag)`，如下代码所示：
 
-1. `deno run --allow-net args.ts deno land # Args [“deno”, “land”]. allow-net is a flag.`
+1. `deno run --allow-net args.ts deno land # Args ["deno", "land"]. allow-net is a flag.`
 
 在 `args.ts` 脚本之后传递的 `--allow-net` 标志被视为一个**参数 (argument)**，如下代码所示：
 
-1. `deno run args.ts name --allow-net # Args[“name”, “--allow-net”]. Allow-net is not a flag`
+1. `deno run args.ts name --allow-net # Args["name", "--allow-net"]. Allow-net is not a flag`
 
 ### 文件监听
 
@@ -1326,10 +1307,6 @@ deno run --watch index.ts
 deno run --allow-net --allow-read=config.json index.ts
 ```
 
-
-
-
-
 1. `# 只允许读取 ‘args1.ts’, ‘args2.ts’ 文件`
 2. `$ deno run --allow-read=args1.ts,args2.ts allow-read-list_example.ts`
 
@@ -1347,7 +1324,15 @@ Deno 专注于使用现有的 Web 标准 API，而不是创建新的 API。Deno 
 | `addEventListener` | 在全局作用范围内添加事件监听器。 |
 | `removeEventListener` | 从全局作用范围内移除由 `addEventListener` 函数添加的 `eventListener`。 |
 | `Alert` | 标准提示函数，显示提示消息并等待按下 Enter 键。 |
+
+
+
+# Deno 生态系统
+
+## Web APIs
+
 | `setInterval` | 在指定的间隔后反复调用提供的函数，直到使用 `clearInterval` 函数将其清除。 |
+| :--- | :--- |
 | `clearInterval` | 取消由 `setInterval` 启动的操作。 |
 | `setTimeout` | 在指定的时间段后调用函数。 |
 | `clearTimeout` | 取消由 `setTimeout` 启动的延迟操作。 |
@@ -1359,13 +1344,11 @@ Deno 专注于使用现有的 Web 标准 API，而不是创建新的 API。Deno 
 
 **表 4.2:** Web APIs
 
-### Deno 全局 APIs
+## Deno 全局 APIs
 
-所有非 Web 标准 API 都通过 Deno 全局命名空间可用。用于 i/o（`Deno.readFile`, `Deno.writeFile`）和网络（`Deno.listen`, `Deno.connect`）的 API 在此命名空间可用。
+所有非 Web 标准 API 都通过 Deno 全局命名空间可用。用于 i/o（`Deno.readFile`、`Deno.writeFile`）和网络（`Deno.listen`、`Deno.connect`）的 API 在此命名空间可用。
 
-注意，许多函数都有同步版本。
-
-例如，`create` 函数有一个同步方法 `createSync`。
+注意，许多函数都有同步版本。例如，`create` 函数有一个同步方法 `createSync`。
 
 我们将在下表中列出 Web APIs 及其同步版本（如果可用）：
 
@@ -1383,7 +1366,7 @@ Deno 专注于使用现有的 Web 标准 API，而不是创建新的 API。Deno 
 | `create` | `createSync` | 如果不存在则创建文件，或截断现有文件。 |
 | `mkdir` | `mkdirSync` | 使用提供的字符串路径创建新目录。 |
 | `readDir` | `readDirSync` | 读取提供路径下的目录并返回 `Deno.dirEntry` 可迭代对象。如果路径不是目录则抛出错误。 |
-| `readFile` | `readFileSync` | 将文件读取为字节数组。可以使用 TextDecoder 将字节转换为字符串。如果路径包含目录，则返回空数组。 |
+| `readFile` | `readFileSync` | 将文件读取为字节数组。可以使用 `TextDecoder` 将字节转换为字符串。如果路径包含目录，则返回空数组。 |
 | `readTextFile` | `readTextFileSync` | 读取 utf8 编码字符串读取文件。如果路径包含目录则抛出错误。 |
 | `remove` | `removeSync` | 移除提供路径下的文件或目录。对于提供的路径抛出错误。 |
 | `rename` | `renameSync` | 重命名文件或目录。 |
@@ -1394,7 +1377,7 @@ Deno 专注于使用现有的 Web 标准 API，而不是创建新的 API。Deno 
 
 **表 4.3:** Deno APIs
 
-### 变量
+## 变量
 
 Deno 为各种应用程序提供了变量。下表列出了主要变量：
 
@@ -1402,7 +1385,7 @@ Deno 为各种应用程序提供了变量。下表列出了主要变量：
 | :--- | :--- |
 | `args` | 返回参数数组 |
 | `build` | 提供系统相关信息，如 `os`。 |
-| `env` | 通过 `get`, `set`, `keys`, `values`, `delete` 提供环境变量。 |
+| `env` | 通过 `get`、`set`、`keys`、`values`、`delete` 提供环境变量。 |
 | `mainModule` | 返回入口模块的 URL |
 | `pid` | 返回当前进程 ID |
 | `stdin` | `stdin`（标准输入）的句柄 |
@@ -1412,7 +1395,7 @@ Deno 为各种应用程序提供了变量。下表列出了主要变量：
 
 **表 4.4:** Deno 变量
 
-### 类
+## 类
 
 Deno 运行时有许多不同用途的类。我们将在后续项目中使用 `Request` 和 `Response` 类。以下列表包含主要类及其描述：
 
@@ -1421,7 +1404,7 @@ Deno 运行时有许多不同用途的类。我们将在后续项目中使用 `R
 | `Blob` | 包含原始不可变数据的类对象。 |
 | `Event` | 代表 DOM 事件的类。包含 `target` 属性、`PreventDefault()` 方法等。 |
 | `File` | 提供文件相关信息，如 `lastModified`、`name`、`type`、`size` 等。它继承自 `Blob` 类。 |
-| `FormData` | 以键值对格式表示表单字段。提供 `get`, `set`, `keys`, `values`, `entries` 等方法。 |
+| `FormData` | 以键值对格式表示表单字段。提供 `get`、`set`、`keys`、`values`、`entries` 等方法。 |
 | `Headers` | 以对象格式表示头部相关数据。 |
 | `Location` | 通过 `globalThis.location` 提供链接对象的位置/URL。 |
 | `Request` | 代表请求相关信息 |
@@ -1429,22 +1412,17 @@ Deno 运行时有许多不同用途的类。我们将在后续项目中使用 `R
 | `TextEncoder` | 提供 utf8 编码功能，用于将字符串编码为字节数组。 |
 | `TextDecoder` | 提供解码函数，将字节数组解码为字符串。 |
 | `URL` | 提供创建对象 URL 所需的静态方法的对象。 |
-
-
-
-
-
 | `WebSocket` | 提供创建和管理 WebSocket 连接以及发送和接收数据的 API |
 
 **表 4.5:** Deno 类
 
-### Deno 模块
+## Deno 模块
 
 如果没有模块（标准库和第三方模块），运行时生态系统将是不完整的。事实上，Node.js 的流行归功于 npm 提供的大量第三方模块。Deno 提供了两种模块：标准库和第三方模块。我们将在接下来的章节中检查这两种模块。
 
 ### 标准库
 
-Deno 标准库是标准模块的集合，灵感来源于 Go 语言的标准库。所有标准模块都经过 Deno 核心团队审核，且不包含外部依赖。这些模块可以在 `[`deno.land/std`](https://deno.land/std)` 获得。我们在下表中列出了它们：
+Deno 标准库是标准模块的集合，灵感来源于 Go 语言的标准库。所有标准模块都经过 Deno 核心团队审核，且不包含外部依赖。这些模块可以在 [`deno.land/std`](https://deno.land/std) 获得。我们在下表中列出了它们：
 
 | 模块 | 描述 |
 | :--- | :--- |
@@ -1457,7 +1435,7 @@ Deno 标准库是标准模块的集合，灵感来源于 Go 语言的标准库�
 | `Fmt` | 提供类似 `printf` 的 I/O 格式化函数。 |
 | `Fs` | 提供文件系统操作的辅助函数。提供 `emptyDir`、`ensureDir`、`exists`、`move`、`copy`、`walk` 等函数。该模块目前是不稳定的，因此在使用时需要使用 `--unstable` 标记。 |
 | `Hash` | 用于创建支持大量算法的哈希值。 |
-| `http` | 有用于创建 HTTP Web 服务器。它还包含一个通过 HTTP 服务本地文件的文件服务器函数。
+| `http` | 有用于创建 HTTP Web 服务器。它还包含一个通过 HTTP 服务本地文件的文件服务器函数。 |
 | `Io` | 提供类似 `Reader`、`Writer`、`Streams` 等函数。 |
 | `Log` | 带有日志级别的日志器模块。 |
 | `Mime` | 用于处理多部分表单数据。 |
@@ -1488,8 +1466,6 @@ Deno 1.0 于 2020 年 5 月发布。从那时起已有许多用于不同目的�
 | `Webview` | 创建桌面 GUI 应用的跨平台模块。 |
 | `Denodb` | 支持 MySQL、PostgreSQL、MongoDB、MariaDB 和 SQLite 数据库的 ORM。 |
 | `Trex` | 类似于 NPM 的模块管理器，符合 Deno 的哲学。它使用 `import_map.json` 作为根。 |
-| `Webview` | 创建桌面 GUI 应用的跨平台模块。 |
-| `Denodb` | 用于 Deno 的类模块模块管理器。 |
 | `ts` | 用于 Deno 的 TypeScript 模块。 |
 | `Postgres` | 类似 PostgreSQL 的驱动程序。 |
 | `Redis` | Redis 客户端。 |
@@ -1533,9 +1509,6 @@ Deno 1.0 于 2020 年 5 月发布。从那时起已有许多用于不同目的�
 | `postcss` | Postcss 模块。 |
 | `oak_middleware` | 中间件集合。 |
 
-
-
-
 模块注册表是托管 Deno 的地方。就像 Node 中的 `npm` 一样，Deno 也有几个使用区块链等现代功能构建的模块注册表。
 
 在列出 Deno 的标准模块和第三方模块之后，我们将检查 Deno 可用的主要模块注册表：
@@ -1549,7 +1522,7 @@ Deno 1.0 于 2020 年 5 月发布。从那时起已有许多用于不同目的�
 | `jspm` | 一个将 `npm` 包转换为 ES 模块的模块 CDN。 |
 | `Web` | 托管在互联网（例如 GitHub）上的任何 ECMAScript 模块都可以 Deno 支持的 ESM import 使用。 |
 
-**表 4.8：** Deno 模块注册表
+**表 4.8:** Deno 模块注册表
 
 ### deps.ts 中的中心依赖
 
@@ -1557,29 +1530,29 @@ Deno 1.0 于 2020 年 5 月发布。从那时起已有许多用于不同目的�
 
 在接下来的代码中，我们从 `deps.ts` 文件中导入所有的依赖 URL 并将其导出以供整个项目使用。我们从第三方大小处理模块导入了 `titleCase` 函数，该函数会返回每个单词首字母大写的标题格式。我们还从 Deno 标准库的测试模块导入了 `assertEquals` 函数。
 
-```
+```typescript
 // deps.ts
-1. import titleCase from "https://deno.land/x/case@v2.1.0/titleCase.ts";
-2. import { assertEquals } from "https://deno.land/std@0.97.0/testing/asserts.ts";
-4. export { titleCase, assertEquals };
+import titleCase from "https://deno.land/x/case@v2.1.0/titleCase.ts";
+import { assertEquals } from "https://deno.land/std@0.97.0/testing/asserts.ts";
+export { titleCase, assertEquals };
 ```
 
 现在我们将在 `hello.ts` 文件中从 `deps.ts` 文件导入模块，如下代码所示：
 
 ```typescript
 // hello.ts
-1. import { titleCase, assertEquals } from "./deps.ts";
-3. console.log(titleCase("hello world"));
-4. assertEquals("hello", "helloz");
+import { titleCase, assertEquals } from "./deps.ts";
+console.log(titleCase("hello world"));
+assertEquals("hello", "helloz");
 ```
 
 前面的代码输出了标题格式为 `"Hello World"` 的字符串 `"hello world"`，并且 `assertEquals` 函数因为实际值（`"hello"`）和预期值（`"helloz"`）不等而抛出 `AssertionError`，如图所示：
 
 ![](img/Figure-4.2.jpg)
 
-**图 4.2：** deps.ts 示例
+**图 4.2:** deps.ts 示例
 
-### 结论
+## 结论
 
 我们现在结束关于 Deno 生态系统的章节。它概述了 Deno 生态系统的各个部分，如运行时 API、CLI、标准模块和第三方模块、模块注册表等。作为行业中的一项新技术，Deno 生态系统正在以快速速度进化。我们可能会看到 Deno 社区提出新的令人兴奋的想法和实现，就像他们一直以来所做的那样。
 
@@ -1603,7 +1576,6 @@ Deno 1.0 于 2020 年 5 月发布。从那时起已有许多用于不同目的�
         * 页面
         * 路由
         * API
-* Todos 应用 API 实现
 
 ### 目标
 
@@ -1611,7 +1583,7 @@ Deno 1.0 于 2020 年 5 月发布。从那时起已有许多用于不同目的�
 
 ### 引入 Aleph.js
 
-Aleph.js 是一个受 Next.js 启发的全栈框架。它使用 ES 模块语法，不需要 Webpack 或或其他绑定器。它仅重新打包更改的模块，并通过热更新（`HMR`）立即在浏览器中更新。Aleph.js 可以使用以下命令安装：
+Aleph.js 是一个受 Next.js 启发的全栈框架。它使用 ES 模块语法，不需要 Webpack 或其他绑定器。它仅重新打包更改的模块，并通过热更新（`HMR`）立即在浏览器中更新。Aleph.js 可以使用以下命令安装：
 
 ```bash
 deno install -A -n aleph https://deno.land/x/cli.ts
@@ -1628,7 +1600,7 @@ Aleph.js 是一个功能丰富的框架，提供了服务端渲染、静态站�
 * 零配置
 * 映射的使用
 * 带有 Fast Refresh 的 HMR
-* 通过 useDeno hook 在组件中访问 Deno 
+* 通过 `useDeno` hook 在组件中访问 Deno
 
 ### 命令行界面
 
@@ -1658,29 +1630,26 @@ aleph dev // 以开发模式运行应用
 
 ![](img/Figure-5.1.jpg)
 
-**图 5.1：** Aleph.js 示例应用
+**图 5.1:** Aleph.js 示例应用
 
 ### 概念
 
 使用 aleph 开发全栈应用需要学习的三个基本概念。我们将使用这些概念来创建页面、基于文件名的路由以及 API。
 
-### 页面
-
-
-
+#### 页面
 
 在 `/pages` 文件夹下，任何扩展名为 `*.js`、`*.jsx`、`*.ts`、`*.tsx` 和 `*.mjs` 且包含默认导出 React 组件的文件都被视为页面。由于 `aleph.js` 支持基于文件名的路由，每个页面将根据文件名关联到相应的路由。
 
-### 示例：
+##### 示例
 
 如果我们按照如下代码，创建一个具有默认导出 React 组件的 `pages/hello.tsx` 文件，那么我们就可以通过 `http://localhost:8080/hello` 访问该页面，如 *图 5.2* 所示。
 
 ```tsx
 // pages/hello.tsx
-import React from “react”;
+import React from "react";
 
 export default function Hello() {
-return “Hello Deno!”;
+  return "Hello Deno!";
 }
 ```
 
@@ -1690,7 +1659,7 @@ return “Hello Deno!”;
 
 每个页面都会被**预渲染**，这意味着页面的 HTML 会提前生成，从而获得更好的性能和 SEO。Aleph.js 还支持**水合（hydration）**过程，当浏览器加载页面时，会运行与 HTML 相关的 JavaScript 代码，使其具有完全交互性。
 
-### 路由
+#### 路由
 
 Aleph.js 支持基于文件系统的路由。它会自动将名为 `index` 的文件路由到目录根节点。同时也支持通过**括号**语法 `[]` 或 **$** 符号前缀来实现**动态路由**。
 
@@ -1708,12 +1677,12 @@ pages/hello/$name.tsx => pages/hello/buddy
 
 ```tsx
 // pages/hello/$name.tsx
-import React from “react”;
-import { useRouter } from “https://deno.land/x/aleph/framework/react/mod.ts”;
+import React from "react";
+import { useRouter } from "https://deno.land/x/aleph/framework/react/mod.ts";
 
 export default function Hello() {
-const { params } = useRouter();
-return `Hello ${params.name}!`;
+  const { params } = useRouter();
+  return `Hello ${params.name}!`;
 }
 ```
 
@@ -1732,12 +1701,12 @@ pages/places/[place].ts => pages/places/munich
 
 ```tsx
 // pages/places/[place].tsx
-import React from “react”;
-import { useRouter } from “https://deno.land/x/aleph/framework/react/mod.ts”;
+import React from "react";
+import { useRouter } from "https://deno.land/x/aleph/framework/react/mod.ts";
 
 export default function Places() {
-const { params } = useRouter();
-return <h1>{`${params.place} is a wonderful place!`}</h1>;
+  const { params } = useRouter();
+  return <h1>{`${params.place} is a wonderful place!`}</h1>;
 }
 ```
 
@@ -1753,12 +1722,12 @@ pages/users/[username]/account.tsx => pages/users/user1/account
 
 ```tsx
 // pages/users/[username]/account.tsx
-import React from “react”;
-import { useRouter } from “https://deno.land/x/aleph/framework/react/mod.ts”;
+import React from "react";
+import { useRouter } from "https://deno.land/x/aleph/framework/react/mod.ts";
 
 export default function UserAccount() {
-const { params } = useRouter();
-return <h1>{`${params.username}’s account.`}</h1>;
+  const { params } = useRouter();
+  return <h1>{`${params.username}'s account.`}</h1>;
 }
 ```
 
@@ -1766,22 +1735,22 @@ return <h1>{`${params.username}’s account.`}</h1>;
 
 **图 5.5:** 嵌套路由
 
-### 应用程序接口 (API)
+#### 应用程序接口 (API)
 
 与页面类似，`api/` 文件夹下任何扩展名为 `*.ts`、`*.js`、`*.mjs` 且内部默认导出函数的文件都会映射到 `/api/*` 并被视为 API 端点。导出的函数类型将为 `APIHandler`。
 
 ```ts
 // api/users/index.ts
-import type { APIHandler} from “aleph/types.d.ts”;
+import type { APIHandler } from "aleph/types.d.ts";
 
 const users = [
-  { id: 1, name: “abc”, place: “Munich” },
+  { id: 1, name: "abc", place: "Munich" },
 ];
 
 export default function handler(req: APIHandler) {
   // ...
 }
-```（等待，根据提供的文本重新对齐逻辑）
+```
 
 ![](img/Figure-5.6.jpg)
 
@@ -1791,11 +1760,10 @@ export default function handler(req: APIHandler) {
 
 ```ts
 // api/users/index.ts
-index.ts
-import type { APIHandler} from “aleph/types.d.ts”;
+import type { APIHandler } from "aleph/types.d.ts";
 
-export default function handler({response}: APIHandler) {
-  response.json({ message: “Aleph!” });
+export default function handler({ response }: APIHandler) {
+  response.json({ message: "Aleph!" });
 }
 ```
 
@@ -1826,21 +1794,21 @@ cd app
 
 ```ts
 // api/todos/index.ts
-import type { APIHandler} from “aleph/types.d.ts”;
+import type { APIHandler } from "aleph/types.d.ts";
 
 const todos = [
-  { id: 1, title: “todo1” },
-  { id: 2, title: “todo2” },
+  { id: 1, title: "todo1" },
+  { id: 2, title: "todo2" },
 ];
 
-export default function handler({request, response}: APIHandler) {
+export default function handler({ request, response }: APIHandler) {
   switch (request.method) {
-    case “GET”:
+    case "GET":
       response.json(todos);
       break;
     default:
       response.status = 405;
-      response.json({ message: “Action not allowed” });
+      response.json({ message: "Action not allowed" });
       break;
   }
 }
@@ -1850,28 +1818,24 @@ export default function handler({request, response}: APIHandler) {
 
 **图 5.10:** GET/api/todos 端点
 
-
-
-
-
 它将响应 `GET` 方法的所有现有 todo（见图 5.10），如果请求的操作在 switch 语句中没有定义，它将返回 `405` Method Not Allowed 代码（见图 5.11）。`break` 会跳过后续的情况，并确保只执行匹配的 case 代码。
 
 ![](img/Figure-5.11.jpg)
 
-**图 5.11：** 未定义动作 405 错误
+**图 5.11:** 未定义动作 405 错误
 
-### [POST]
+### POST
 
 我们现在将实现添加 todo 的 `CREATE (POST)` 动作。
 
 ```javascript
-…
-export const handler: APIHandler = async ({request, response}) => {
+...
+export const handler: APIHandler = async ({ request, response }) => {
   switch (request.method) {
-    case “GET”:
+    case "GET":
       response.json(todos);
       break;
-    case “POST”:
+    case "POST":
       let body;
       try {
         body = await request.json();
@@ -1884,7 +1848,7 @@ export const handler: APIHandler = async ({request, response}) => {
       if (!title) {
         response.status = 400;
         response.json({
-          message: “title not provided”,
+          message: "title not provided",
         });
         break;
       }
@@ -1899,47 +1863,43 @@ export const handler: APIHandler = async ({request, response}) => {
       response.json(todo);
       break;
     default:
-      …
+      ...
 ```
 
 我们正在使用 `request.json()` 方法解码请求体，该方法将请求体解析为 JSON。如果 JSON 无效或不存在，或者未提供 title，将返回 `400` 代码并带有错误消息。我们正在使用 `toLowerCase()` 函数来获取小写的 todo 标题。这将帮助我们使用 `find` 方法找到具有相同标题的现有 Todo。如果没有找到现有 todo，将创建一个新的 todo 并将其添加到 Todos 列表中。`id` 属性使用了最后一个 todo 项目的 `id`（最后一个 Todo id + 1）。然后将使用 `response.json` 函数返回 Todo（现有的或创建的）。现在，尝试添加一个 todo，如图 5.12 所示。
 
 ![](img/Figure-5.12.jpg)
 
-**图 5.12：** POST `api/todos` API 端点
+**图 5.12:** POST `api/todos` API 端点
 
 `GET api/todos` 端点应该包含新创建的 Todo，如图 5.13 所示。
 
 ![](img/Figure-5.13.jpg)
 
-**图 5.13：** GET api/todos 中新创建的 Todo
+**图 5.13:** GET api/todos 中新创建的 Todo
 
 现在，通过按下 `Ctrl` + `c` 关闭服务器，并使用 `aleph dev` 命令重新启动。你将看不到新创建的 Todo。这是因为我们没有将数据保存到文件或数据库。为了持久化数据，我们将在 `db` 文件夹中创建一个包含以下 JSON 数据的 `todos.json` 文件。
 
 ```json
 // db/todos.json
 [
-  { “id”: 1, “title”: “todo1” },
-  { “id”: 2, “title”: “todo2” }
+  { "id": 1, "title": "todo1" },
+  { "id": 2, "title": "todo2" }
 ]
 ```
 
 保存的 todos 随后可以使用 `lib/read_todos.ts` 文件创建的 `readTodos` 工具函数检索。我们正在使用 `Deno.readFileSync` 函数同步读取文本，然后使用 `JSON.parse` 解析 JSON。
 
 ```typescript
-lib/read_todos.ts
+// lib/read_todos.ts
 const readTodos = () => JSON.parse(Deno.readFileSync("db/todos.json"));
 export default readTodos;
 ```
 
-
-
-
-
 ```javascript
     response.status = 400;
     response.json({
-      error: “title not provided”,
+      error: "title not provided",
     });
     break;
   }
@@ -1951,25 +1911,25 @@ todos.forEach((_todo: ITodo) => {
 writeTodos(todos);
 response.json(todo);
 break;
-case “DELETE”:
+case "DELETE":
   const _todos = todos.filter((_todo: ITodo) => _todo.id !== id);
   writeTodos(_todos);
-  response.json({ message: “Deleted” });
+  response.json({ message: "Deleted" });
   break;
 default:
   response.status = 405;
-  response.json({ message: “Action not allowed” });
+  response.json({ message: "Action not allowed" });
   break;
 }
 } else {
-…
+...
 ```
 
 对于 `GET` 方法，我们简单地返回匹配的 Todo。这个 `GET` 方法与 `index.ts` 文件中的方法不同。它仅提供单个 todo（通过提供的 `id` 派生），而 `index.ts` 中的 `GET` 提供了所有 todo 的列表/数组。
 
 对于 `DELETE`，我们从 todos 中过滤掉匹配的 Todo，然后使用 `writeTodos` 函数将更新后的 todos 写入 `todos.json` 文件。
 
-对于 `PATCH`，初始代码与 `index.ts` 文件中的 `POST` 方法类似。我们从 `readBody(“json”)` 提供的 JSON 中获取更新后的标题。然后使用 `forEach`，我们只更新 todos 数据中匹配的 Todo。随后使用 `writeTodos` 函数将更新后的 Todos 保存到文件中，并返回更新后的 Todo。
+对于 `PATCH`，初始代码与 `index.ts` 文件中的 `POST` 方法类似。我们从 `readBody("json")` 提供的 JSON 中获取更新后的标题。然后使用 `forEach`，我们只更新 todos 数据中匹配的 Todo。随后使用 `writeTodos` 函数将更新后的 Todos 保存到文件中，并返回更新后的 Todo。
 
 ### 结论
 
@@ -2008,13 +1968,13 @@ default:
 Styled components 是一个 React 库，允许我们创建具有组件级作用域的 css 样式的组件。我们将使用该库来创建如 `Button`、`Text`、`Card` 等组件。从上一节初始化的终端切换到 `todos-app` 文件夹。要安装 styled-components，我们将使用以下 `trex` 命令：
 
 ```bash
-trex -c styled=”https://esm.sh/styled-components@5.3.1”
+trex -c styled="https://esm.sh/styled-components@5.3.1"
 ```
 
 安装完成后，我们将在 `StyledComponents.tsx` 文件中创建各种组件。每个组件的代码如下：
 
 ```typescript
-import styled, { css } from “styled”
+import styled, { css } from "styled-components";
 
 export const Card = styled.div`
     display: flex;
@@ -2025,7 +1985,7 @@ export const Card = styled.div`
     justify-content: space-between;
     align-items: center;
     max-width: 600px;
-    margin: “auto”;
+    margin: auto;
 `
 
 export const Text = styled.span`
@@ -2041,8 +2001,8 @@ export const Text = styled.span`
 
 export const Button = styled.button`
     /* 根据 primary prop 调整颜色 */
-    background: ${props => props.primary ? “palevioletred” : “white”};
-    color: ${props => props.primary ? “white” : “palevioletred”};
+    background: ${props => props.primary ? "palevioletred" : "white"};
+    color: ${props => props.primary ? "white" : "palevioletred"};
     font-size: 1em;
     margin: 1em;
     padding: 0.25em 1em;
@@ -2071,16 +2031,15 @@ export const Input = styled.input`
 `
 
 export const Checkbox = styled.input`
-    type: “checkbox”;
+    type: "checkbox";
     color: red;
     margin-left: 10px;
 `
 
-export const Header1 = styled.h1
-``
+export const Header1 = styled.h1``
 ```
 
-在前面的代码中，我们使用 `styled` 和来自 `styled` 组件的 `css` 来化如 `Card`、`Button`、`Text` 等组件。每个组件随后导出并在项目中使用。我们通过这种方法创建了自己的库。
+在前面的代码中，我们使用 `styled` 和来自 `styled-components` 组件的 `css` 来化如 `Card`、`Button`、`Text` 等组件。每个组件随后导出并在项目中使用。我们通过这种方法创建了自己的库。
 
 我们向某些组件传递函数。这些函数根据 props 设置值。我们使用 `Text` 和 `Input` 组件中的 `completed` 属性来调整颜色和装饰线。我们使用 `Button` 组件中的 `primary` 标记来调整颜色。
 
@@ -2089,8 +2048,8 @@ export const Header1 = styled.h1
 现在我们将在 `TodoDetails` 和 `TodoList` 组件中使用自定义样式组件。我们将首先在 `pages/index.tsx` 文件中添加 `TodoList` 组件，它是我们项目的入口，如下：
 
 ```typescript
-import React from ‘react’
-import TodoList from “components/TodoList.tsx”
+import React from 'react'
+import TodoList from "components/TodoList.tsx"
 export default function Home() {
   return <TodoList />
 }
@@ -2098,18 +2057,18 @@ export default function Home() {
 
 将在下一节检查 `TodoList` 组件的详情。
 
-### TodoList
+#### TodoList
 
 此组件用于添加新的 Todo 并列出有的 Todos。我们将使用 `StyledComponents.tsx` 文件中的自定义组件。API 调用将通过 `axiod` 模块完成。该文件的代码如下：
 
 ```typescript
 // components/TodoList.tsx
-import React from ‘react’
-import { useDeno } from “https://deno.land/x/aleph/framework/react/mod.ts”;
-import axiod from “axiod”;
+import React from 'react'
+import { useDeno } from "https://deno.land/x/aleph/framework/react/mod.ts";
+import axiod from "axiod";
 import TodoDetails from "./TodoDetails.tsx";
 import { Button, Card, Input, Header1 } from "./StyledComponents.tsx";
-import readTodos from “../lib/read_todos.ts”;
+import readTodos from "../lib/read_todos.ts";
 export default function Page() {
   const _todos = useDeno(async () => {
     return await readTodos();
@@ -2118,7 +2077,7 @@ export default function Page() {
   const [todoInput, setTodoInput] = React.useState("");
 
   const getTodos = () => {
-    axiod.get(/api/todos”).then((res) => {
+    axiod.get("/api/todos").then((res) => {
       console.log(res);
       setTodos(res.data);
     }).catch((err) => {
@@ -2128,39 +2087,33 @@ export default function Page() {
 
   const addTodo = () => {
     if (!todoInput) {
-```
-
-
-
-
-```javascript
-30.      alert("Please enter a todo text");
-31.      return;
-32.    }
-33.    axiod.post("/api/todos", { title: todoInput }).then((res) => {
-34.        console.log(res);
-35.        getTodos();
-36.        alert("Todo added successfully");
-37.    }).catch((err) => {
-38.        console.log(err);
-39.        alert("Error adding todo");
-40.    });
-41.  };
-42.  return (
-43.    <>
-44      <Header1>Todos</Header1>
-45      <Card>
-46          <Input
+      alert("Please enter a todo text");
+      return;
+    }
+    axiod.post("/api/todos", { title: todoInput }).then((res) => {
+        console.log(res);
+        getTodos();
+        alert("Todo added successfully");
+    }).catch((err) => {
+        console.log(err);
+        alert("Error adding todo");
+    });
+  };
+  return (
+    <>
+      <Header1>Todos</Header1>
+      <Card>
+          <Input
               placeholder="Add Todo"
               value={todoInput}
               onChange={(e) => setTodoInput(e.target.value)}
             />
-47          <Button primary onClick={addTodo}>+</Button>
-48      </Card>
-49      {todos.map((todo: any) => <TodoDetails key={todo.id} getTodos={getTodos} todo={todo} />)}
-50.    </>
-51.  );
-52. }
+          <Button primary onClick={addTodo}>+</Button>
+      </Card>
+      {todos.map((todo: any) => <TodoDetails key={todo.id} getTodos={getTodos} todo={todo} />)}
+    </>
+  );
+}
 ```
 
 在前面的代码中，我们导入了自定义组件、`axiod` 模块和 `readTodos` 函数。我们还导入了 `useDeno` 函数，它允许在组件中使用 Deno 运行时。我们从它的 JSON 文件中获取 Todos。状态 `todos` 用于存储 Todo 列表，而 `todoInput` 则用于存储添加 Todo 文本框的输入内容。
@@ -2173,79 +2126,88 @@ export default function Page() {
 
 ![](img/Figure-6.1.jpg)
 
-**图 6.1：** TodoList 组件
+**图 6.1:** TodoList 组件
 
-### TodoDetails
+#### TodoDetails
 
 我们将使用此组件来渲染每个添加的 `todo` 元素。我们将提供两个操作，即保存（Save）和删除（Delete）。我们还将使用一个 `checkbox` 元素来标记 Todo 为已完成。该组件的代码写在 `TodoDetails.tsx` 文件中，如下：
 
 ```typescript
 // components/TodoDetails.tsx
-3. import React from "react";
-4. import { Button, Card, Checkbox, Input, Text } from "./StyledComponents.tsx";
-5. import axiod from "axiod";
-7. interface ITodo {
-8.   id: number;
-9.   title: string;
-10.  completed: boolean;
-11. }
-13. interface IProps {
-14.  todo: ITodo;
-15.  getTodos: () => void;
-16. }
-18. function TodoDetails(props: IProps) {
-19.  const { todo, getTodos } = props;
-20.  const [isCompleted, setIsCompleted] = React.useState(todo.completed);
-21.  const [todoText, setTodoText] = React.useState(todo.title);
-23.  const editTodo = () => {
-24.    if (!todoText) {
-25.      alert("Please enter a text");
-26.      return;
-27.    }
-28.    axiod.patch(`/api/todos/${todo.id}`, {
-29.      title: todoText,
-30.      completed: isCompleted,
-31.    }).then((res) => {
-32.      console.log(res);
-33.      alert("Todo updated successfully");
-34.    }).catch((err) => {
-35.      console.log(err);
-36.      alert("Error updating todo");
-37.      setTodoText(todo.title);
-38.    });
-39.  };
-40.  const deleteTodo = () => {
-41.    axiod.delete(`/api/todos/${todo.id}`, { title: todoText }).then((res) => {
-42.      console.log(res);
-43.      alert("Todo deleted successfully");
-44.      getTodos();
-45.    }).catch((err) => {
-46.      console.log(err);
-47.      alert("Error deleting todo");
-48.    });
-49.  };
-50.  return (
-52.    <Card>
-53.      <Checkbox
-54.        type="checkbox"
-55.        defaultChecked={isCompleted}
-56.        onChange={() => setIsCompleted(!isCompleted)}
-57.      />
-58.      <Input
-59.        completed={isCompleted}
-60.        value={todoText}
-61.        onChange={(e) => setTodoText(e.target.value)}
-62.        disabled={isCompleted}
-63.      />
-64.      <Button primary onClick={editTodo}>Save</Button>
-65.      <Button onClick={deleteTodo}>Delete</Button>
-66.    </Card>
-67.  );
-68. }
-71. export default TodoDetails;
+import React from "react";
+import { Button, Card, Checkbox, Input, Text } from "./StyledComponents.tsx";
+import axiod from "axiod";
+
+interface ITodo {
+  id: number;
+  title: string;
+  completed: boolean;
+}
+
+interface IProps {
+  todo: ITodo;
+  getTodos: () => void;
+}
+
+function TodoDetails(props: IProps) {
+  const { todo, getTodos } = props;
+  const [isCompleted, setIsCompleted] = React.useState(todo.completed);
+  const [todoText, setTodoText] = React.useState(todo.title);
+
+  const editTodo = () => {
+    if (!todoText) {
+      alert("Please enter a text");
+      return;
+    }
+    axiod.patch(`/api/todos/${todo.id}`, {
+      title: todoText,
+      completed: isCompleted,
+    }).then((res) => {
+      console.log(res);
+      alert("Todo updated successfully");
+    }).catch((err) => {
+      console.log(err);
+      alert("Error updating todo");
+      setTodoText(todo.title);
+    });
+  };
+
+  const deleteTodo = () => {
+    axiod.delete(`/api/todos/${todo.id}`, { title: todoText }).then((res) => {
+      console.log(res);
+      alert("Todo deleted successfully");
+      getTodos();
+    }).catch((err) => {
+      console.log(err);
+      alert("Error deleting todo");
+    });
+  };
+
+  return (
+    <Card>
+      <Checkbox
+        type="checkbox"
+        defaultChecked={isCompleted}
+        onChange={() => setIsCompleted(!isCompleted)}
+      />
+      <Input
+        completed={isCompleted}
+        value={todoText}
+        onChange={(e) => setTodoText(e.target.value)}
+        disabled={isCompleted}
+      />
+      <Button primary onClick={editTodo}>Save</Button>
+      <Button onClick={deleteTodo}>Delete</Button>
+    </Card>
+  );
+}
+
+export default TodoDetails;
 ```
 
+# 第 7 章
 
+## GraphQL 简介
 
 在本章中，我们将学习核心 `Graph Query Language`（`GraphQL`）概念及其特性。在涵盖了基础知识后，我们将在接下来的章节中利用这些概念为 `Phonebook` 应用创建一个 API 服务器（`GraphQL`）。我们还将介绍 `Oak Web` 框架和 `Oak GraphQL`。两者都将在后续章节中用于 GraphQL API 服务器的实现。
 
@@ -2253,23 +2215,21 @@ export default function Page() {
 
 在本章中，我们将涵盖以下主题：
 
-*   GraphQL 简介
-    *   特性
-        *   精确获取
-        *   单一 API 端点
-        *   验证与类型检查
-        *   片段 (Fragments)
-        *   自动生成的 API 文档
-    *   核心概念
-        *   Schema（模式）
-            *   类型 (Type)
-            *   输入 (Input)
-            *   查询 (Query)
-            *   变更 (Mutation)
-            *   关系 (Relationship)
-        *   Resolver（Resolver）
-*   引入 Oak 框架
-*   引入 Oak-GraphQL
+* GraphQL 简介
+    * 特性
+        * 精确获取
+        * 单一 API 端点
+        * 验证与类型检查
+        * 片段 (Fragments)
+        * 自动生成的 API 文档
+    * 核心概念
+        * Schema（模式）
+            * 类型 (Type)
+            * 输入 (Input)
+            * 查询 (Query)
+            * 变更 (Mutation)
+            * 关系 (Relationship)
+        * Resolver（解析器）
 
 ### 目标
 
@@ -2277,17 +2237,17 @@ export default function Page() {
 
 ### 引入 GraphQL
 
-GraphQL 是由 Facebook 开发并在 2015 年发布的开源 API 查询语言。它允许客户端控制解析后的数据结构，而不是 REST 中固定的数据结构。通过这种方式，客户端可以仅`query` 所需精确数据。它还允许 `mutations`（写入或更改数据）和 `subscriptions`（订阅数据更新）。许多大型组织如 Facebook、GitHub、Coursera 和 Pinterest 等都在使用它。
+GraphQL 是由 Facebook 开发并在 2015 年发布的开源 API 查询语言。它允许客户端控制解析后的数据结构，而不是 REST 中固定的数据结构。通过这种方式，客户端可以仅 `query` 所需精确数据。它还允许 `mutations`（写入或更改数据）和 `subscriptions`（订阅数据更新）。许多大型组织如 Facebook、GitHub、Coursera 和 Pinterest 等都在使用它。
 
 ### 特性
 
-GraphQL 允许客户端在单个请求中跨多个资源`查询或更改数据`。它创建了一个单一入口或 API 端点 POST `/graphql` 来查询或更改数据。GraphQL 提供的解析数据格式与请求查询的格式相同。其他 GraphQL 特性将详细说明如下。
+GraphQL 允许客户端在单个请求中跨多个资源 `查询或更改数据`。它创建了一个单一入口或 API 端点 POST `/graphql` 来查询或更改数据。GraphQL 提供的解析数据格式与请求查询的格式相同。其他 GraphQL 特性将详细说明如下。
 
-### 精确获取
+#### 精确获取
 
 通过允许仅获取所需的数据，GraphQL 解决了数据相关问题，即客户端获取了多于所需的数据（过度获取）或少于所需的数据（获取不足）。
 
-### 单一 API 端点
+#### 单一 API 端点
 
 与 REST 不同，GraphQL 始终有一个单一的端点 `/graphql (POST)`，客户端可以使用它来获取 schema 中定义的任何数据，因为 GraphQL 使用通过请求体传递的 `query` 来解析请求。
 
@@ -2303,7 +2263,7 @@ GraphQL 允许客户端在单个请求中跨多个资源`查询或更改数据`�
 
 **图 7.2:** 获取 Todos
 
-如`[图 7.1]`和`[7.2]`所示，GraphQL 允许通过单一 API 端点使用`query 操作`来获取 `users` 和 `todos`。
+如 *[图 7.1]* 和 *[图 7.2]* 所示，GraphQL 允许通过单一 API 端点使用 `query 操作` 来获取 `users` 和 `todos`。
 
 我们甚至可以在单个请求中获取 `users` 和 `todos`。这是 GraphQL 一个非常强大的特性，允许客户端在单个请求中获取所有所需数据，这对于网络较慢的设备极其有用。
 
@@ -2313,9 +2273,9 @@ GraphQL 允许客户端在单个请求中跨多个资源`查询或更改数据`�
 
 **图 7.3:** 获取用户和 Todos
 
-### 验证与类型检查
+#### 验证与类型检查
 
-GraphQL 使用`type system` 来验证查询。客户端可以在发送请求之前检查哪些字段是可选（带有字段类型），以及查询是否有效。
+GraphQL 使用 `type system` 来验证查询。客户端可以在发送请求之前检查哪些字段是可选（带有字段类型），以及查询是否有效。
 
 *[图 7.4]* 展示了针对 `todos` 的验证和类型检查概念，其中 schema 中未定义 `someField` 字段：
 
@@ -2323,7 +2283,7 @@ GraphQL 使用`type system` 来验证查询。客户端可以在发送请求之�
 
 **图 7.4:** 验证
 
-### 片段 (Fragments)
+#### 片段 (Fragments)
 
 GraphQL 允许编写可重用的代码 `fragment`，该片段可以在多个查询之间使用。我们可以创建一个片段来替换重复的代码单元，使查询更整洁、更具可读性。
 
@@ -2331,25 +2291,23 @@ GraphQL 允许编写可重用的代码 `fragment`，该片段可以在多个查�
 
 ![](img/Figure-7.5.jpg)
 
-![](img/Figure-7.5.jpg)
-
 **图 7.5:** 重复的代码单元
 
-我们将把重复的代码单元移动到 `todoData` 片段中，并在两个查询中使用扩展运算符（`…`）使用它。
+我们将把重复的代码单元移动到 `todoData` 片段中，并在两个查询中使用扩展运算符（`...`）使用它。
 
 *[图 7.6]* 展示了使用 `fragment` 获取 `todos` 和 `userData`。
 
-### 自动生成的 API 文档
+#### 自动生成的 API 文档
 
-GraphQL 为*queries*和*mutations*生成 API 文档。*图 7.7* 显示了 `todo` 的自动生成文档。如果我们把 `user` 改为 `Int`，文档将反映此变化。
+GraphQL 为 *queries* 和 *mutations* 生成 API 文档。*图 7.7* 显示了 `todo` 的自动生成文档。如果我们把 `user` 改为 `Int`，文档将反映此变化。
 
 ### 核心概念
 
 GraphQL 提供了一个解析请求的 `Resolver`，以及用于读取数据的 `query`、用于写入数据的 `mutations` 和用于实时数据的 `subscription`。
 
-### Schema
+#### Schema
 
-`type system` 是客户端和服务器之间的约，定义了数据的形状。它定义了描述实体或字段的 `types`。GraphQL 使用 Schema 定义语言 (SDL) 来定义 schema。一个示例应用定义如下：
+`type system` 是客户端和服务器之间的约定，定义了数据的形状。它定义了描述实体或字段的 `types`。GraphQL 使用 Schema 定义语言 (SDL) 来定义 schema。一个示例应用定义如下：
 
 ```graphql
 type User {
@@ -2386,7 +2344,7 @@ type Mutation {
 }
 ```
 
-此 schema 也可以通过 GraphQL Playground 查看，如`[图 7.9]`所示。
+此 schema 也可以通过 GraphQL Playground 查看，如 *[图 7.9]* 所示。
 
 ![](img/Figure-7.9.jpg)
 
@@ -2394,38 +2352,35 @@ type Mutation {
 
 解释上述 schema 中使用的各种关键字（`type` 和 `input`）：
 
-### Type
+##### Type
 
-Type 用于定义解析查询的形状。图 7.9 所示的 schema 定义了两个对象类型 `User` 和 `Todo`。`User` 类型定义了字段 `userId`、`name` 和 `todos`（`Todo` 对象数组）。`Todo` 类型定义了字段 `todoId`、`title` 和 `user`（类型为 `User`）。这两个对象类型都被 `Query` 类型用于以返回相应的数据。
+Type 用于定义解析查询的形状。 *[图 7.9]* 所示的 schema 定义了两个对象类型 `User` 和 `Todo`。`User` 类型定义了字段 `userId`、`name` 和 `todos`（`Todo` 对象数组）。`Todo` 类型定义了字段 `todoId`、`title` 和 `user`（类型为 `User`）。这两个对象类型都被 `Query` 类型用于以返回相应的数据。
 
-### Input
+##### Input
 
 Input 用于定义变更的数据结构。
 
-
-
-
 Input 用于定义在 `mutation` 过程中客户端输入的形状。它定义了两个 `input types`（输入类型）：`UserInput` 和 `TodoInput`。`UserInput` 接受一个 `name` 参数，而 `TodoInput` 接受 `title` 和 `userId` 参数。这两个输入类型都用于通过 `mutation` 类型创建或更新相应的实体。
 
-### Query
+##### Query
 
 定义由客户端执行的 `read` 操作的入口。query 中定义了四个字段：`todos`、`todo`、`users` 和 `user`。`todos` 和 `users` 字段不接受参数并返回对应类型的数组。`todo` 和 `user` 字段接受实体的 `id` 并返回对应类型的实体。
 
-### Mutation
+##### Mutation
 
 定义由客户端执行的 `write` 操作的入口。该类型中定义了 `addTodo` 和 `addUser` 字段。`addTodo` 接受类型为 `TodoInput` 的参数并返回 `Todo` 类型的数据，而 `addUser` 接受类型为 `UserInput` 的参数并返回 `User` 类型的数据。
 
-### Relationship
+##### Relationship
 
-Todos schema 定义了 `User` 类型和 `Todo` 类型之间的“一对多”关系。这意味着每个 `Todo` 拥有`一个`用户，而每个 `user` 拥有`多个` Todo。
+Todos schema 定义了 `User` 类型和 `Todo` 类型之间的“一对多”关系。这意味着每个 `Todo` 拥有 `一个` 用户，而每个 `user` 拥有 `多个` Todo。
 
-如`[图 7.10]`所示，GraphQL 赋予了客户端活性，可以在单个查询中获取所有与用户相关的 Todos。
+如 *[图 7.10]* 所示，GraphQL 赋予了客户端能力，可以在单个查询中获取所有与用户相关的 Todos。
 
 ![](img/Figure-7.10.jpg)
 
 **图 7.10:** 关系
 
-### Resolver
+#### Resolver
 
 Resolver 是一个函数，通过为 schema 中的单个字段填充数据来解析 `query` 或 `mutation`。以下代码演示了为之前定义的 schema 使用 `resolvers`：
 
@@ -2525,7 +2480,7 @@ import {
   applyGraphQL,
   gql,
   GQLError,
-}
+} from "https://deno.land/x/oak_graphql/mod.ts";
 
 const types = gql`
   type Query {
@@ -2543,7 +2498,7 @@ const resolvers = {
 };
 
 const GraphQLService = await applyGraphQL<Router>({
-  Router, // 同于 Router:
+  Router,
   typeDefs: types,
   resolvers: resolvers,
 });
@@ -2555,11 +2510,7 @@ console.log("Server listening on http://localhost:8080/graphql");
 await app.listen({ port: 8000 });
 ```
 
-如果我们使用命令 `deno run --allow-net oak_graphql_server.ts` 运行上述代码，并在 URL `http://localhost:8080/graphql` 中查询 `{ hello(name: “ABC”) }`，我们应该看到如 `[图 7.11]` 所示的结果如下：
-
-
-
-
+如果我们使用命令 `deno run --allow-net oak_graphql_server.ts` 运行上述代码，并在 URL `http://localhost:8080/graphql` 中查询 `{ hello(name: "ABC") }`，我们应该看到如 *[图 7.11]* 所示的结果如下：
 
 ![](img/Figure-7.11.jpg)
 
@@ -2577,37 +2528,37 @@ await app.listen({ port: 8000 });
 
 ### 引言
 
-在本章中，我们将实现**图形查询语言**（**GraphQL 应用程序接口**服务器。我们之前学习的 GraphQL 基础将在本章用于 API 实现。我们将使用之前介绍的 `oak` 和 `oak-graphql` 模块来实现 API 服务器。
+在本章中，我们将实现 **图形查询语言**（**GraphQL** 应用程序接口）服务器。我们之前学习的 GraphQL 基础将在本章用于 API 实现。我们将使用之前介绍的 `oak` 和 `oak-graphql` 模块来实现 API 服务器。
 
 ### 结构
 
 在本章中，我们将涵盖以下主题：
 
-*   初始化设置
-    *   使用 `git` 进行版本控制
-    *   使用 `Trex` 作为包管理器
-    *   使用 `Velociraptor` 作为脚本运行器
-*   `Oak GraphQL` 服务器设置
-*   模式 (Schema)
-*   解析器 (Resolvers)
-*   `DenoDB` 设置
-    *   数据库 (DB)
-        *   `ElephantSQL PostgreSQL` 设置
-    *   模型 (Models)
-        *   `User`
-        *   `Contact`
-    *   控制器 (Controllers)
-*   身份验证
+* 初始化设置
+    * 使用 `git` 进行版本控制
+    * 使用 `Trex` 作为包管理器
+    * 使用 `Velociraptor` 作为脚本运行器
+* `Oak GraphQL` 服务器设置
+* 模式 (Schema)
+* 解析器 (Resolvers)
+* `DenoDB` 设置
+    * 数据库 (DB)
+        * `ElephantSQL PostgreSQL` 设置
+    * 模型 (Models)
+        * `User`
+        * `Contact`
+    * 控制器 (Controllers)
+* 身份验证
 
 ### 目标
 
-完成本章后，你将能够使用 `Oak` 和 `Oak-GraphQL` 模块创建 GraphQL API 服务器。你将学习使用 `denodb` 模块通过**对象关系映射 (ORM)** 连接到 MySQL、PostgreSQL、NoSQL 等数据库。你还将学习使用 `djwt` 模块通过 **JSON Web 令牌 (JWT)** 验证用户身份。你也将学习使用 `trex` 和 `velociraptor` 模块设置 Deno 服务器项目。
+完成本章后，你将能够使用 `Oak` 和 `Oak-GraphQL` 模块创建 GraphQL API 服务器。你将学习使用 `denodb` 模块通过 **对象关系映射 (ORM)** 连接到 MySQL、PostgreSQL、NoSQL 等数据库。你还将学习使用 `djwt` 模块通过 **JSON Web 令牌 (JWT)** 验证用户身份。你也将学习使用 `trex` 和 `velociraptor` 模块设置 Deno 服务器项目。
 
 ### 初始化设置
 
 我们将通过初始化 git 仓库开始编写代码。然后我们将安装 `oak` 和 `oak-graphql` 模块来创建 Web 服务器。我们将使用 `trex` 包管理模块来安装这些模块。
 
-### 使用 git 进行版本控制
+#### 使用 git 进行版本控制
 
 *[图 8.1]* 显示了 git 仓库初始化、安装 `trex` 模块以及使用 `trex` 模块安装 `oak` 和 `oak-graphql`。
 
@@ -2615,9 +2566,9 @@ await app.listen({ port: 8000 });
 
 **图 8.1:** 初始化设置
 
-### Trex 作为包管理器
+#### Trex 作为包管理器
 
-Trex 缓存已安装的包并将其添加到 `import_map.json` 文件中。[图 8.2]* 显示了 `import_map.json` 文件中已安装模块列表（`oak`、`oak-graphql`）。
+Trex 缓存已安装的包并将其添加到 `import_map.json` 文件中。*[图 8.2]* 显示了 `import_map.json` 文件中已安装模块列表（`oak`、`oak-graphql`）。
 
 ![](img/Figure-8.2.jpg)
 
@@ -2625,9 +2576,9 @@ Trex 缓存已安装的包并将其添加到 `import_map.json` 文件中。[图 
 
 已安装的模块可以通过以下方式访问：
 
-1.  `import { Application } from “oak”;`
+1. `import { Application } from "oak";`
 
-### Velociraptor 作为脚本运行器
+#### Velociraptor 作为脚本运行器
 
 在 `src` 文件夹中创建一个名为 `mod.ts` 文件，代码如下：
 
@@ -2672,13 +2623,15 @@ import { Application, Router } from "oak";
 import { gql, GQLError } from "oak-graphql";
 ```
 
-我们将通过拥有 `mod.ts`（主文件）、`middlewares.ts`（GraphQL 中间件）、`schema.ts`（GraphQL 模式/类型定义）和 `resolvers.ts`（GraphQL 解析器）文件来构建项目。[图 8.5]* 显示了项目结构：
+我们将通过拥有 `mod.ts`（主文件）、`middlewares.ts`（GraphQL 中间件）、`schema.ts`（GraphQL 模式/类型定义）和 `resolvers.ts`（GraphQL 解析器）文件来构建项目。*[图 8.5]* 显示了项目结构：
 
 ![](img/Figure-8.5.jpg)
 
 **图 8.5:** 项目结构
 
 我们将逐个编写每个文件的代码，从 `mod.ts` 文件开始如下：
+
+
 
 ```javascript
 // src/mod.ts
@@ -2690,7 +2643,7 @@ console.log("Server listening on http://localhost:8080/graphql");
 await app.listen({ port: 8080 });
 ```
 
-在前面的代码中，我们正在创建一个带有名为 `GraphQLService` 的 de 间件的 oak 服务器，可以通过 `/graphql` 路由访问。
+在前面的代码中，我们正在创建一个带有名为 `GraphQLService` 的中间件的 oak 服务器，可以通过 `/graphql` 路由访问。
 
 ```javascript
 // src/schema.ts
@@ -2717,7 +2670,7 @@ export const resolvers = {
 };
 ```
 
-我们需要更新 `scripts.yaml` 文件以 `import_map` 文件路径和权限。更新后的文件具有如下代码：
+我们需要更新 `scripts.yaml` 文件以包含 `import_map` 文件路径和权限。更新后的文件具有如下代码：
 
 ```yaml
 ## scripts.yaml
@@ -2732,7 +2685,7 @@ scripts:
     watch: true
 ```
 
-在前面的代码中，`imap` 指向 `import_map` 文件路径，`unstable` 标志允许执行不 Deno 功能，`allow` 包含了网络访问。我们为 `dev` 命令添加了 `cmd`（执行命令）、`desc`（描述）和 `watch`（文件监听）字段。
+在前面的代码中，`imap` 指向 `import_map` 文件路径，`unstable` 标志允许执行不稳定 Deno 功能，`allow` 包含了网络访问。我们为 `dev` 命令添加了 `cmd`（执行命令）、`desc`（描述）和 `watch`（文件监听）字段。
 
 ### 模式 (Schema)
 
@@ -2750,96 +2703,135 @@ export const types = gql`
   }
   type Contact {
     contactId: String!
+    name: String!
+    phone: String
+    email: String
+    address: String
+    user: User!
+  }
+  type Login {
+    token: String!
+  }
+  input RegisterUserInput {
+    name: String!
+    email: String!
+    password: String!
+  }
+  input LoginUserInput {
+    email: String!
+    password: String!
+  }
+  input UpdateUserInput {
+    name: String
+  }
+  input CreateContactInput {
+    name: String!
+    phone: String
+    email: String
+    address: String
+  }
+  input UpdateContactInput {
+    contactId: String!
+    name: String
+    phone: String
+    email: String
+    address: String
+  }
+  type Query {
+    user: User
+    contacts: [Contact]
+    contact(contactId: String!): Contact
+    login(user: LoginUserInput): Login
+  }
+  type Mutation {
+    registerUser(user: RegisterUserInput!): User
+    deleteUser: Boolean
+    updateUser(user: UpdateUserInput!): Boolean
+    addContact(contact: CreateContactInput!): Contact
+    deleteContact(contactId: String!): Boolean
+    updateContact(contact: UpdateContactInput!): Boolean
   }
 `;
 ```
 
-
-
-
-
-```graphql
-  name: String!
-  phone: String
-  email: String
-  address: String
-  user: User!
-}
-type Login {
-  token: String!
-}
-input RegisterUserInput {
-  name: String!
-  email: String!
-  password: String!
-}
-input LoginUserInput {
-  email: String!
-  password: String!
-}
-input UpdateUserInput {
-  name: String
-}
-input CreateContactInput {
-  name: String!
-  phone: String
-  email: String
-  address: String
-}
-input UpdateContactInput {
-  contactId: String!
-  name: String
-  phone: String
-  email: String
-  address: String
-}
-type Query {
-  user: User
-  contacts: [Contact]
-  contact(contactId: String!): Contact
-  login(user: LoginUserInput): Login
-}
-type Mutation {
-  registerUser(user: RegisterUserInput!): User
-  deleteUser: Boolean
-  updateUser(user: UpdateUserInput!): Boolean
-  addContact(contact: CreateContactInput!): Contact
-  deleteContact(contactId: String!): Boolean
-  updateContact(contact: UpdateContactInput!): Boolean
-}
-```
-
-
-
-
-
 ```javascript
-71.  if (contactId) return updateContact(contactId, contactData);
-72.  },
-73.  },
-74.  User: {
-75.    name: (parent: any, args: any, context: any, info: any) => {
-76.      return parent.name;
-77.    },
-78.    contacts: async (parent: any, args: any, context: any, info: any) => {
-79.      const contacts = await resolvers.Query.contacts(
-80.        parent,
-81.        {},
-82.        context,
-83.        info
-84.      );
-85.      return contacts;
-86.    },
-87.  },
-88.  Contact: {
-89.    name: (parent: any, args: any, context: any, info: any) => {
-90.      return parent.name;
-91.    },
-92.    user: async (parent: any, args: any, context: any, info: any) => {
-93.      return await userLoader.load(parent.userId);
-94.    },
-95.  },
-96. };
+// src/resolvers.ts (部分)
+import { GQLError } from "oak_graphql";
+import { getUser, getUserByEmail, createUser, deleteUser, updateUser } from "./controllers.ts";
+import { getContactsByUserId, getContact, createContact, deleteContact, updateContact, userLoader } from "./controllers.ts";
+
+export const resolvers = {
+  Query: {
+    user: async (parent: any, args: any, context: any, info: any) => {
+      if (!context?.userId) throw new GQLError("Unauthorized");
+      return await getUser(context.userId);
+    },
+    contacts: async (parent: any, args: any, context: any, info: any) => {
+      if (!context?.userId) throw new GQLError("Unauthorized");
+      return await getContactsByUserId(context.userId);
+    },
+    contact: async (parent: any, { contactId }: any, context: any, info: any) => {
+      if (!context?.userId) throw new GQLError("Unauthorized");
+      return await getContact(contactId);
+    },
+    login: async (parent: any, { user }: any, context: any, info: any) => {
+      const existingUser = await getUserByEmail(user.email);
+      if (!existingUser) throw new GQLError("User not found");
+      return await authenticate(existingUser, user.password);
+    },
+  },
+  Mutation: {
+    registerUser: async (parent: any, { user }: any, context: any, info: any) => {
+      return await createUser(user.name, user.email, user.password);
+    },
+    deleteUser: async (parent: any, args: any, context: any, info: any) => {
+      if (!context?.userId) throw new GQLError("Unauthorized");
+      await deleteUser(context.userId);
+      return true;
+    },
+    updateUser: async (parent: any, { user }: any, context: any, info: any) => {
+      if (!context?.userId) throw new GQLError("Unauthorized");
+      await updateUser(context.userId, user);
+      return true;
+    },
+    addContact: async (parent: any, { contact }: any, context: any, info: any) => {
+      if (!context?.userId) throw new GQLError("Unauthorized");
+      return await createContact(contact, context.userId);
+    },
+    deleteContact: async (parent: any, { contactId }: any, context: any, info: any) => {
+      if (!context?.userId) throw new GQLError("Unauthorized");
+      await deleteContact(contactId);
+      return true;
+    },
+    updateContact: async (parent: any, { contact }: any, context: any, info: any) => {
+      if (!context?.userId) throw new GQLError("Unauthorized");
+      const contactId = contact.contactId;
+      if (contactId) return await updateContact(contactId, contact);
+    },
+  },
+  User: {
+    name: (parent: any, args: any, context: any, info: any) => {
+      return parent.name;
+    },
+    contacts: async (parent: any, args: any, context: any, info: any) => {
+      const contacts = await resolvers.Query.contacts(
+        parent,
+        {},
+        context,
+        info
+      );
+      return contacts;
+    },
+  },
+  Contact: {
+    name: (parent: any, args: any, context: any, info: any) => {
+      return parent.name;
+    },
+    user: async (parent: any, args: any, context: any, info: any) => {
+      return await userLoader.load(parent.userId);
+    },
+  },
+};
 ```
 
 我们的解析器（resolvers）代码基于上一章节的解析器代码。我们定义了 `Query`、`Mutation`、`User` 和 `Contact` 对象，每个对象包含解析器。`Query` 对象包含 `user`、`contacts`、`contact` 和 `login` 解析器。`Mutation` 包含 `registerUser`、`updateUser`、`deleteUser`、`addContact`、`updateContact` 和 `deleteContact` 解析器。其他对象 `User` 和 `Contact` 用于解析相应类型的内部字段（名称等）。数据可以从各种来源获取。每个解析器函数都接受可选参数 `parent`、`args`、`context` 和 `info`，这些在上一章节中已经解释过。
@@ -2858,20 +2850,24 @@ type Mutation {
 
 我们将使用 `ElephantSQL` 设置一个 PostgreSQL 数据库。访问 [`www.elephantsql.com/`](https://www.elephantsql.com/) 并使用你的账户登录/注册。完成后，我们需要创建一个名为 `phonebook` 的实例，并选择 `tiny turtle (free)` 计划。打开创建的实例，并复制 `Details` 部分提到的 `URL`。我们将在 `.env` 文件中如下设置名为 `DATABASE_URL` 的环境变量：
 
-1. `// .env`
-2. `// 将以下 url 替换为 elephantsql url`
-3. `DATABASE_URL=postgres://deno_admin:deno_admin@localhost:5432/deno_db`
+```text
+// .env
+// 将以下 url 替换为 elephantsql url
+DATABASE_URL=postgres://deno_admin:deno_admin@localhost:5432/deno_db
+```
 
 现在，为了在代码中访问 `DATABASE_URL`，我们将在 `scripts.yaml` 文件中带有 `.env` 文件的 `envFile` 标记：
 
-1. `# scripts.yaml`
-2. `…`
-3. `allow:`
-4. `  - net`
-5. `  - env`
-6. `  envFile:`
-7. `  - .env`
-8. `…`
+```yaml
+# scripts.yaml
+…
+allow:
+  - net
+  - env
+  envFile:
+  - .env
+…
+```
 
 使用 `deno add -c https://deno.land/x/denodb/mod.ts` 安装 `denodb`，并在 `db.ts` 文件中使用 `PostgresConnector` 连接数据库 URL：
 
@@ -2965,13 +2961,7 @@ interface IContact {
   email: string;
   address: string;
 }
-```
 
-
-
-
-
-```typescript
 export const getUser = async (userId: string) => {
   return await User.find(userId);
 };
@@ -3049,7 +3039,7 @@ trex -c dataloader=https://esm.sh/dataloader@2.0.0/index.js
 此外，我们在 `createUser` 函数中使用由 `scrypt` 模块提供的 `hash` 函数对密码进行哈希处理（将密码转换为另一个字符串）。我们将使用以下命令安装 `scrypt` 模块：
 
 ```bash
-trex i -c https://deno.land/x/denOBodb/mod.ts
+trex i -c https://deno.land/x/denodb/mod.ts
 ```
 
 # 认证
@@ -3143,10 +3133,7 @@ export const GraphQLService = await applyGraphQL<Router>({
 });
 ```
 
-
-
-
-最后，我们将在应用中添加 `oakcors` 中间件以启用`跨源资源共享 (CORS)`，允许其他域名访问此服务器上的资源。我们还将使用 `PORT` 环境变量来设置服务器端口。修改后，我们的 `mod.ts` 文件将包含代码：
+最后，我们将在应用中添加 `oakcors` 中间件以启用跨源资源共享 (CORS)，允许其他域名访问此服务器上的资源。我们还将使用 `PORT` 环境变量来设置服务器端口。修改后，我们的 `mod.ts` 文件将包含代码：
 
 ```typescript
 import { Application } from "oak";
@@ -3305,11 +3292,10 @@ Snel 包含了 Svelte Routing 来创建路由。我们将使用它创建名为�
 </style>
 ```
 
-在前面的代码中，我们用 `Route` 组件替换了 main 元素（代表主体主体内容的 HTML 元素）中的代码。这样我们的应用程序就会根据路由地址渲染每个页面。让我们在 `routes/index.svelte` 文件中实现路由：
+在前面的代码中，我们用 `Route` 组件替换了 main 元素（代表主体内容的 HTML 元素）中的代码。这样我们的应用程序就会根据路由地址渲染每个页面。让我们在 `routes/index.svelte` 文件中实现路由：
 
 ```svelte
 <script>
-  // 
   import Router from "svelte-routing/Router";
   import Route from "svelte-routing/Route";
 
@@ -3332,14 +3318,12 @@ Snel 包含了 Svelte Routing 来创建路由。我们将使用它创建名为�
 </Router>
 ```
 
-
-
-
 ```svelte
-import Column from "snel-carbon/components/Grid/Column.svelte";
+<script>
+  import Column from "snel-carbon/components/Grid/Column.svelte";
 
-// Components
-import Layout from "@/components/Layout.svelte";
+  // Components
+  import Layout from "@/components/Layout.svelte";
 </script>
 
 <Router>
@@ -3460,6 +3444,7 @@ import Layout from "@/components/Layout.svelte";
 此路由与 `Login` 路由相似，有少数变化。`Register.svelte` 的实现如下：
 
 ```svelte
+// Register.svelte
 <script>
   import { navigate } from "svelte-routing";
   import Form from "snel-carbon/components/Form";
@@ -3490,37 +3475,30 @@ import Layout from "@/components/Layout.svelte";
         .then((res) => {
           if (res.data.errors) {
             errors = res.data.errors;
-```
-
-
-
-
-
-```javascript
-errors = res.data.errors;
-}
-if (res.data.data.registerUser?.name) {
-  alert(`user ${res.data.data.registerUser.name} registered`);
-  navigate("/contacts", {
-    replace: false,
-    state: { accessToken: res.data.data.login },
-  });
-})
-.catch((err) => {
-  console.log(`err`, err);
-});
-} else {
-  alert("Passwords do not match");
-};
+          }
+          if (res.data.data.registerUser?.name) {
+            alert(`user ${res.data.data.registerUser.name} registered`);
+            navigate("/contacts", {
+              replace: false,
+              state: { accessToken: res.data.data.login },
+            });
+          }
+        })
+        .catch((err) => {
+          console.log(`err`, err);
+        })
+        .finally(() => {
+          loading = false;
+        });
+    } else {
+      alert("Passwords do not match");
+    }
+  };
 </script>
-```
 
-```html
 {#each errors as error}
   <InlineNotification type="error" title={error.message} />
 {/each}
-```
-
 <Tile>
   <Form on:submit={handleSubmit}>
     <TextInput
@@ -3555,88 +3533,117 @@ if (res.data.data.registerUser?.name) {
       size="sm"
     />
     {#if loading}
-      <Loading />
+      <InlineLoading />
     {:else}
       <Button type="submit" size="small">Register</Button>
     {/if}
   </Form>
 </Tile>
+```
 
 正如我们看到的，上面的代码与 `Login.svelte` 有许多相似之处。我们添加了两个绑定到输入组件（`TextInput`、`PasswordInput`）的额外状态 `name` 和 `confirmPassword`。在 `handleSubmit` 函数中，我们使用了 `mutation` 而不是 `query`，因为我们正在后端创建一个新用户。图 9.5 显示了带有姓名、邮箱、密码字段的注册路由。
 
 ### Home (首页)
+
 这将是身份验证用户的首页。它将包含一个导航到 `contacts` 路径的 `Link` 组件。该路由的代码如下：
 
-```javascript
-import Link from "svelte-routing";
+```svelte
+// Home.svelte
+<script>
+  import Link from "svelte-routing";
+</script>
+
 <h1>Home</h1>
 <Link to="contacts">Contacts</Link>
 ```
+
 图 9.6 显示了带有用于 `Contacts` 路由的 `Link` 组件的首页路由。
 
 ### NotFound (未找到)
+
 每当用户打开不存在的路径地址时，此路由将被渲染。我们为此目的使用了星号（`*`）。该路由的代码如下：
 
-```javascript
-import Link from "svelte-routing";
-<h2>Page Found</h2>
-Go back to <Link="/">Home</Link>
+```svelte
+// NotFound.svelte
+<script>
+  import Link from "svelte-routing";
+</script>
+
+<h2>Page Not Found</h2>
+Go back to <Link to="/">Home</Link>
 <style>
   h2 {
     color: red;
   }
 </style>
 ```
-上面的代码是一个简单的页面，带有 `Page Found` 消息和指向主页页的 `Link`。图 9.7 显示了为未定义路径渲染的 `NotFound` 组件。
+
+上面的代码是一个简单的页面，带有 `Page Not Found` 消息和指向主页的 `Link`。图 9.7 显示了为未定义路径渲染的 `NotFound` 组件。
 
 ### Private route (私有路由)
+
 虽然 Login 和 Register 是公共路由（不需要身份验证），但 Home 和 Contacts 是私有路由，应该仅供身份验证用户访问。我们将通过使用 `PrivateRoute`（一个自定义路由）而不是普通的 `Route` 来保护这些页面。私有路由的代码如下：
 
-```javascript
-import Route from "svelte-routing/Route";
-import PrivateRouteGuard from "./PrivateRouteGuard.svelte";
-export let path;
+```svelte
+// PrivateRoute.svelte
+<script>
+  import Route from "svelte-routing/Route";
+  import PrivateRouteGuard from "./PrivateRouteGuard.svelte";
+  export let path;
+</script>
+
 <Route {path}>
   <PrivateRouteGuard>
     <slot />
   </PrivateRouteGuard>
 </Route>
 ```
+
 在上面的代码中，我们使用 `Route` 组件作为包装器。我们向它传递 `path` 属性，这是一个路由地址。`slot` 元素就是将被渲染的组件。我们使用 `PrivateRouteGuard` 组件将其封装起来。`PrivateRouteGuard` 的代码如下：
 
-```javascript
-import { onMount } from "svelte";
-import { navigate } from "svelte-routing";
-import { accessToken } from "../utils/stores.ts";
+```svelte
+// PrivateRouteGuard.svelte
+<script>
+  import { onMount } from "svelte";
+  import { navigate } from "svelte-routing";
+  import { accessToken } from "../utils/stores.ts";
 
-onMount(() => {
-  console.log("Mounting...");
-  if (!$accessToken) {
-    navigate("/login", {
-      replace: false,
-    });
-  }
-});
+  onMount(() => {
+    console.log("Mounting...");
+    if (!$accessToken) {
+      navigate("/login", {
+        replace: false,
+      });
+    }
+  });
+</script>
+
 {#if $accessToken}
   <slot />
 {/if}
 ```
 
-`PrivateRouteGuard` 使用在挂载时调用的 `onMount` 函数。它检查 `accessToken` 的值。如果 `accessToken` 为 `null`，它将跳转到 `login` 路由，否则将渲染子组件。此路由所有用户可用，并列出用户所有的联系人。联系人的代码如下：
+`PrivateRouteGuard` 使用在挂载时调用的 `onMount` 函数。它检查 `accessToken` 的值。如果 `accessToken` 为 `null`，它将跳转到 `login` 路由，否则将渲染子组件。
 
-```javascript
-import { onMount } from "svelte";
-import Modal from "svelte-carbon/Modal";
-import axios from "https://deno.land/x/axios/mod.ts";
-import ContactForm from "../components/ContactForm.svelte";
-import ContactTable from "../components/ContactTable.svelte";
-let showForm = false;
-let contacts = [];
-const accessToken = localStorage.getItem("accessToken");
-let editContact = null;
-const getContacts = () => {
-  console.log("fetching contacts...");
-  const query = `
+### Contacts (联系人)
+
+此路由所有用户可用，并列出用户所有的联系人。联系人的代码如下：
+
+```svelte
+// Contacts.svelte
+<script>
+  import { onMount } from "svelte";
+  import Modal from "snel-carbon/components/Modal";
+  import axiod from "https://deno.land/x/axiod/mod.ts";
+  import ContactForm from "../components/ContactForm.svelte";
+  import ContactTable from "../components/ContactTable.svelte";
+  let showForm = false;
+  let contacts = [];
+  const accessToken = localStorage.getItem("accessToken");
+  let editContact = null;
+  const getContacts = () => {
+    console.log("fetching contacts...");
+    const query = `
     contacts {
       contactId
       name
@@ -3645,69 +3652,59 @@ const getContacts = () => {
       address
     }
   `;
-  axios
-    .post("http://localhost:8080/graphql",
-      query,
-      {
-        headers: { Authorization: `Bearer ${accessToken}` },
-      }
-    )
-    .then((res) => {
-      console.log(`res`, res);
-      if (res.data.errors) {
-        for (let error of res.data.errors) {
-          alert(error.message);
+    axiod
+      .post("http://localhost:8080/graphql",
+        { query },
+        {
+          headers: { Authorization: `Bearer ${accessToken}` },
         }
-      } else {
-        // console.log(`res.data.data.login`, res.data.data.login);
-        if (res.data.data?.contacts) {
-          contacts = res.data.data.contacts;
+      )
+      .then((res) => {
+        console.log(`res`, res);
+        if (res.data.errors) {
+          for (let error of res.data.errors) {
+            alert(error.message);
+          }
+        } else {
+          if (res.data.data?.contacts) {
+            contacts = res.data.data.contacts;
+          }
         }
-      }
-    })
-    .catch((err) => {
-      console.log(`err`, err);
-    });
-  console.log("fetched");
-};
-const deleteContact = (contactId) => {
-  const query = `
+      })
+      .catch((err) => {
+        console.log(`err`, err);
+      });
+    console.log("fetched");
+  };
+  const deleteContact = (contactId) => {
+    const query = `
     mutation {
       deleteContact(contactId:"${contactId}")
     }
   `;
-  axios
-    .post("http://localhost:8080/graphql",
-      query,
-      {
-        headers: { Authorization: `Bearer ${accessToken}` },
-      }
-    )
-    .then((res) => {
-      console.log(`res`, res);
-      if (res.data.errors) {
-        for (let error of res.data.errors) {
-          alert(error.message);
+    axiod
+      .post("http://localhost:8080/graphql",
+        { query },
+        {
+          headers: { Authorization: `Bearer ${accessToken}` },
         }
-      } else {
-        getContacts();
-      }
-    });
-};
-```
-
-
-
-
-
-```javascript
+      )
+      .then((res) => {
+        console.log(`res`, res);
+        if (res.data.errors) {
+          for (let error of res.data.errors) {
+            alert(error.message);
+          }
+        } else {
+          getContacts();
+        }
       })
-    .catch((err) => {
+      .catch((err) => {
         console.log(`err`, err);
-    });
+      });
   };
   onMount(async () => {
-    console.log("Mounting…”);
+    console.log("Mounting…");
     await getContacts();
   });
   const resetForm = () => {
@@ -3719,11 +3716,12 @@ const deleteContact = (contactId) => {
     editContact = event.detail.contact;
   };
 </script>
+
 {#if showForm}
   <Modal
     bind:open={showForm}
     preventCloseOnClickOutside
-    modalHeading={`${editContact ? “编辑” : “添加”} 联系人`}
+    modalHeading={`${editContact ? "编辑" : "添加"} 联系人`}
   >
     <ContactForm
       on:resetForm={resetForm}
@@ -3745,17 +3743,18 @@ const deleteContact = (contactId) => {
 />
 ```
 
-上述代码渲染了两个组件，分别是 `ContactForm` 和 `ContactTable`。来自 `snel-carbon` 的 `Modal` 组件用于在模态视图中显示 `ContactForm`。它定义了三个状态：`showContact`、`contacts` 和 `editContact`。`showContact` 是一个布尔标记，用于显示或隐藏 `ContactForm` 模态框。`contacts` 是联系人数组。这些联系人是通过 `getContacts` 函数获取的，该函数使用 `axios` 向 GraphQL API 服务器发送网络请求。它会在组件挂载时通过 `onMount` 函数被调用一次。我们还定义了 `deleteContact` 函数，向服务器发送删除联系人的请求。为了用户身份验证，我们为每个请求都设置了带有 `accessToken` 的 `Authorization` 头部。`resetForm` 函数用于在表单关闭或提交时重置表单字段。`handleEdit` 函数用于将选定的实体设置为 `editContact`。随后，`editContact` 数据将传递给表单进行编辑。让我们详细检查 `ContactForm` 和 `ContactTable` 组件。
+上述代码渲染了两个组件，分别是 `ContactForm` 和 `ContactTable`。来自 `snel-carbon` 的 `Modal` 组件用于在模态视图中显示 `ContactForm`。它定义了三个状态：`showContact`、`contacts` 和 `editContact`。`showContact` 是一个布尔标记，用于显示或隐藏 `ContactForm` 模态框。`contacts` 是联系人数组。这些联系人是通过 `getContacts` 函数获取的，该函数使用 `axiod` 向 GraphQL API 服务器发送网络请求。它会在组件挂载时通过 `onMount` 函数被调用一次。我们还定义了 `deleteContact` 函数，向服务器发送删除联系人的请求。为了用户身份验证，我们为每个请求都设置了带有 `accessToken` 的 `Authorization` 头部。`resetForm` 函数用于在表单关闭或提交时重置表单字段。`handleEdit` 函数用于将选定的实体设置为 `editContact`。随后，`editContact` 数据将传递给表单进行编辑。让我们详细检查 `ContactForm` 和 `ContactTable` 组件。
 
 ## ContactTable
 
 我们将在 `ContactTable.svelte` 文件中使用 `snel-carbon` 组件以表格格式显示所有联系人。我们还将在表格中提供了“创建”、“删除”和“编辑”操作。该组件的代码如下：
 
 ```svelte
+// ContactTable.svelte
 <script>
   import { createEventDispatcher } from "svelte";
   import DataTable from "snel-carbon/components/DataTable";
-  import Toolbar from "snel-carbon/components/DataTable/svelte";
+  import Toolbar from "snel-carbon/components/DataTable/Toolbar.svelte";
   import ToolbarContent from "snel-carbon/components/DataTable/ToolbarContent.svelte";
   import OverflowMenu from "snel-carbon/components/OverflowMenu.svelte";
   import OverflowMenuItem from "snel-carbon/components/OverflowMenu/OverflowMenuItem.svelte";
@@ -3772,6 +3771,7 @@ const deleteContact = (contactId) => {
     });
   }
 </script>
+
 <DataTable
   title="联系人"
   sortable
@@ -3802,7 +3802,8 @@ const deleteContact = (contactId) => {
           on:click={() => {
             dispatch("edit", { contact: row });
           }}
-        ><Edit16 />
+        >
+          <Edit16 />
         </OverflowMenuItem>
         <OverflowMenuItem
           danger
@@ -3810,6 +3811,8 @@ const deleteContact = (contactId) => {
             dispatch("deleteContact", { contactId: row.contactId });
           }}
         >
+          <Delete16 />
+        </OverflowMenuItem>
       </OverflowMenu>
     {/if}
   </span>
@@ -3820,69 +3823,80 @@ const deleteContact = (contactId) => {
 
 `DataTable` 组件每列都需要一个 `id` 字段。我们传递了带有键和值的 `headers`。`contacts` 被传递为 `rows`。在 `DataTable` 中，我们使用了带有 `ToolbarContent` 的 `Toolbar` 以及一个允许添加新联系人的 `Button`。我们使用 `slot="cell"` 来识别溢出单元格并渲染 `OverflowMenu` 或普通值。在 `OverflowMenu` 内部，我们通过分带数据的 `edit` 或 `deleteContact` 事件来处理点击操作。父组件将相应地处理这些事件。
 
+## ContactForm
 
-
+我们将在 `ContactForm.svelte` 文件中使用 `snel-carbon` 组件创建联系人表单。该组件的代码如下：
 
 ```svelte
-import { accessToken } from "../utils/stores.ts";
-import { createEventDispatcher } from "svelte";
+// ContactForm.svelte
+<script>
+  import { accessToken } from "../utils/stores.ts";
+  import { createEventDispatcher } from "svelte";
+  import Form from "snel-carbon/components/Form";
+  import Tile from "snel-carbon/components/Tile";
+  import TextInput from "snel-carbon/components/TextInput/TextInput.svelte";
+  import TextArea from "snel-carbon/components/TextArea";
+  import Button from "snel-carbon/components/Button";
+  import InlineLoading from "snel-carbon/components/InlineLoading";
+  import axiod from "https://deno.land/x/axiod/mod.ts";
 
-const initialContact = {
-  name: "",
-  email: "",
-  phone: "",
-  address: "",
-};
+  const initialContact = {
+    name: "",
+    email: "",
+    phone: "",
+    address: "",
+  };
 
-const dispatch = createEventDispatcher();
-export let editContact;
-$: contact = editContact || initialContact;
-let loading = false;
-const handleSubmit = () => {
-  loading = true;
-  const addQuery = `
+  const dispatch = createEventDispatcher();
+  export let editContact;
+  $: contact = editContact || initialContact;
+  let loading = false;
+  const handleSubmit = () => {
+    loading = true;
+    const addQuery = `
     mutation {
       addContact(contact: {name: "${contact.name}", email: "${contact.email}", phone: "${contact.phone}", address: "${contact.address}"}){
         name
       }
     }
   `;
-  const updateQuery = `
+    const updateQuery = `
     mutation {
       updateContact(contact: {contactId: "${contact?.contactId}", name: "${contact.name}", email: "${contact.email}", phone: "${contact.phone}", address: "${contact.address}"})
     }
   `;
-  const query = editContact ? updateQuery : addQuery;
-  axiod
-    .post(
-      "http://localhost:8080/graphql",
-      { query },
-      {
-        headers: { Authorization: `Bearer ${$accessToken}` },
-      }
-    )
-    .then((res) => {
-      console.log(`res`, res);
-      if (res.data.errors) {
-        for (let error of res.data.errors) {
-          alert(error.message);
+    const query = editContact ? updateQuery : addQuery;
+    axiod
+      .post(
+        "http://localhost:8080/graphql",
+        { query },
+        {
+          headers: { Authorization: `Bearer ${$accessToken}` },
         }
-      } else {
-        contact = initialContact;
-        dispatch("contactSaved", {
-          showForm: false,
-          editContact: null,
-        });
-      }
-    })
-    .catch((err) => {
-      console.log(`err`, err);
-    })
-    .finally(() => {
-      loading = false;
-    });
-};
+      )
+      .then((res) => {
+        console.log(`res`, res);
+        if (res.data.errors) {
+          for (let error of res.data.errors) {
+            alert(error.message);
+          }
+        } else {
+          contact = initialContact;
+          dispatch("contactSaved", {
+            showForm: false,
+            editContact: null,
+          });
+        }
+      })
+      .catch((err) => {
+        console.log(`err`, err);
+      })
+      .finally(() => {
+        loading = false;
+      });
+  };
 </script>
+
 <Tile>
   <Form on:submit={handleSubmit}>
     <TextInput bind:value={contact.name} required label="Name" placeholder="Enter Name" size="sm" />
@@ -3898,21 +3912,23 @@ const handleSubmit = () => {
           dispatch("resetForm");
         }}
         size="small"
-        kind="danger">Cancel</Button>
-      >
+        kind="danger"
+      >Cancel</Button>
     {/if}
   </Form>
 </Tile>
 ```
 
-在上面的代码中，我们从 `svelte-carbon` 导入了 `Tile`、`Form`、`TextInput`、`PasswordInput`,`Button` 组件。`Tile` 用于表单的卡片布局。`Form` 用于处理邮箱、数字等验证和提交。`TextInput` 是姓名、邮箱（`type="email"`）、电话（`type="number"`）的输入字段。`Button` 用于关闭表单并将字段值设为空，或使用 `type="submit"`。
+在上面的代码中，我们从 `snel-carbon` 导入了 `Tile`、`Form`、`TextInput`、`TextArea`、`Button` 组件。`Tile` 用于表单的卡片布局。`Form` 用于处理邮箱、数字等验证和提交。`TextInput` 是姓名、邮箱（`type="email"`）、电话（`type="number"`）的输入字段。`Button` 用于关闭表单并将字段值设为空，或使用 `type="submit"`。
 
 ![Figure 9.10](img/Figure-9.10.jpg)
+
 **图 9.10:** 用于新联系人的 ContactForm
 
 在 `script` 部分，我们使用 `initialContact` 对象在新建或表单单关闭时将所有字段设为空。`editContact` 属性用于识别新联系人应该使用 `initialContact`（空值），还是应该使用 `editContact`（现有表单值）。响应式变量 `contact` 被设置为 `editContact` 的值。`handleSubmit` 函数包含两个查询：`addQuery`（创建联系人）和 `updateQuery`（更新联系人）。同样使用 `editContact` 来选择查询。然后，我们带有 `Authorization` 头部对选定的查询发送网络请求。
 
 ![Figure 9.11](img/Figure-9.11.jpg)
+
 **图 9.11:** 用于现有联系人的 ContactForm
 
 ### 布局
@@ -3920,15 +3936,17 @@ const handleSubmit = () => {
 在本节中，我们将使用 `svelte-carbon` 的 `Header` 和 `Sidebar` 组件创建一个布局。这将允许我们在 `Header` 中提供应用标题，并在 `Sidebar` 中添加登录/注销按钮。我们将在 `Layout.svelte` 中编写如下布局相关代码：
 
 ```svelte
+// Layout.svelte
 <script>
-import Header from "svelte-carbon/components/UIShell/Header.svelte";
-import SideNav from "svelte-carbon/components/UIShell/SideNav.svelte";
-import SideNavItems from "svelte-carbon/components/UIShell/SideNavItems.svelte";
-import Authentication from "./Authentication.svelte";
-let theme = "g10";
-$: document.documentElement.setAttribute("theme", theme);
-let isNavOpen = false;
+  import Header from "svelte-carbon/components/UIShell/Header.svelte";
+  import SideNav from "svelte-carbon/components/UIShell/SideNav.svelte";
+  import SideNavItems from "svelte-carbon/components/UIShell/SideNavItems.svelte";
+  import Authentication from "./Authentication.svelte";
+  let theme = "g10";
+  $: document.documentElement.setAttribute("theme", theme);
+  let isNavOpen = false;
 </script>
+
 <Header
   company="Phonebook"
   platformName="App"
@@ -3944,23 +3962,25 @@ let isNavOpen = false;
 
 在前面的代码中，我们从 `svelte-carbon` 导入了 `Header`、`SideNav` 和 `SideNavItems`。`Header` 将位于应用的顶部，而 `SideNav` 将用于侧边栏，其中 `SideNavItems` 包含 `login`、`register` 等操作。我们将主题设置为 `g10`，这是一种灰色主题。文档中还有其他可用主题。
 
-### Header
+#### Header
 
 我们为该组件提供了几个属性。`company` 属性用于为应用设置标题（Phonebook）。`platformName`（App）是副标题。我们使用状态 `isNavOpen` 来显示/隐藏侧边栏。`persistentHamburgerMenu` 属性用于显示打开/关闭侧边栏的汉堡按钮。
 
-### SideNav
+#### SideNav
 
 我们配合 `SideNavItems` 使用它显示 `Login`、`Register` 和 `Logout` 按钮。我们的逻辑将为未授权的用户显示 `Login` 和 `Register` 按钮，为已授权的用户显示 `Logout` 按钮。该逻辑写在 `Authentication.svelte` 文件中如下：
 
 ```svelte
+// Authentication.svelte
 <script>
-import Button from "svelte-carbon/components/Button";
-import ButtonSet from "svelte-carbon/components/Button/ButtonSet.svelte";
-import Link from "svelte-routing/Link.svelte";
-import { accessToken } from "../utils/stores.ts";
-import Login16 from "svelte-carbon/icons/Login16";
-import Logout16 from "svelte-carbon/icons/Logout16";
+  import Button from "svelte-carbon/components/Button";
+  import ButtonSet from "svelte-carbon/components/Button/ButtonSet.svelte";
+  import Link from "svelte-routing/Link.svelte";
+  import { accessToken } from "../utils/stores.ts";
+  import Login16 from "svelte-carbon/icons/Login16";
+  import Logout16 from "svelte-carbon/icons/Logout16";
 </script>
+
 <div class="auth-container">
   <ButtonSet stacked>
     {#if !$accessToken}
@@ -3973,7 +3993,6 @@ import Logout16 from "svelte-carbon/icons/Logout16";
     {:else}
       <Link to="/">
 ```
-
 
 
 
@@ -3991,7 +4010,7 @@ import Logout16 from "svelte-carbon/icons/Logout16";
 </Link>
 {/if}
 </ButtonSet>
-</div
+</div>
 ```
 
 <style>
@@ -4016,7 +4035,7 @@ import Logout16 from "svelte-carbon/icons/Logout16";
 
 ### 索引
 
-### A
+#### A
 - Aleph.js [66]
 - 应用程序接口 (API) [71], [72]
 - 命令行接口 (CLI) [67]
@@ -4025,7 +4044,7 @@ import Logout16 from "svelte-carbon/icons/Logout16";
 - 路由 [69]-[71]
 - 参数 [47], [48]
 
-### B
+#### B
 - 基础类型, TypeScript [14]
 - 抽象 [29]
 - 类 [22]
@@ -4043,7 +4062,7 @@ import Logout16 from "svelte-carbon/icons/Logout16";
 - 联合类型 [20]
 - 打包命令 [46]
 
-### C
+#### C
 - 缓存命令 [46]
 - 类 [22]
 - 实体 [22]
@@ -4056,7 +4075,7 @@ import Logout16 from "svelte-carbon/icons/Logout16";
 - 带有工具栏的 ContactTable [168]
 - 跨域共享 (CORS) [141]
 
-### D
+#### D
 - 数据库 [39]
 - MongoDB Atlas [39]
 - PostgreSQL [39]
@@ -4121,19 +4140,19 @@ import Logout16 from "svelte-carbon/icons/Logout16";
 - 动态路由 [69]
 - 动态类型对比静态类型 [30]
 
-### E
+#### E
 - Electron.js [3]
 - 环境变量 [45]
 - eval 命令 [46]
 - 事件循环 [4]
 - 显式类型 [19]
 
-### F
+#### F
 - 文件监听 [49]
-- 先先出 (FIFO) 原则 [10]
+- 先进先出 (FIFO) 原则 [10]
 - fmt 命令 [46]
 
-### G
+#### G
 - Git [37]
 - GitHub [37]
 - GraphQL [100]
@@ -4146,25 +4165,21 @@ import Logout16 from "svelte-carbon/icons/Logout16";
 - 单 API 端点 [101], [102]
 - 验证与类型检查 [102]
 
-### H
+#### H
 - help 命令 [45]
 - Heroku [40]
 - 热模块替换 (HMR) [66]
 - 水合过程 [69]
 
-### I
+#### I
 - 隐式类型 [19]
 - 安装命令 [46]
 - 解释器 [8]
 
-### J
+#### J
 - JavaScript 引擎 [7]
 
-
-
-
-
-## C
+#### C
 - `编译器` 8
 - `解释器` 8
 - `JavaScript 运行时` 9
@@ -4177,14 +4192,14 @@ import Logout16 from "svelte-carbon/icons/Logout16";
 - `tokio` 9
 - `JSON Web Token (JWT)` 137
 
-## L
+#### L
 - 后进先出 (LIFO) 原则 9
 - 布局, `PhoneBook App` 174, 175
 - `header` 175
 - `SideNav` 175, 177
 - `libuv 事件循环` 3, 4
 
-## M
+#### M
 - `修饰符` 22
 - `private` 23
 - `protected` 24
@@ -4196,7 +4211,7 @@ import Logout16 from "svelte-carbon/icons/Logout16";
 - `URL` 39
 - `变异` 100
 
-## N
+#### N
 - `嵌套路由` 71
 - `Node` 3
 - `异步和事件驱动架构` 3
@@ -4204,7 +4219,7 @@ import Logout16 from "svelte-carbon/icons/Logout16";
 - `性能` 4
 - 对比, `Deno` 4
 
-## O
+#### O
 - `Oak` 111
 - `Oak-GraphQL 中间件` 112-114
 - `Oak GraphQL 服务器设置` 118-121
@@ -4212,7 +4227,7 @@ import Logout16 from "svelte-carbon/icons/Logout16";
 - `开源` 3, 4
 - `OverflowMenu` 168
 
-## P
+#### P
 - `页面`, `Aleph.js` 68, 69
 - `权限标志位` 49
 - `权限允许名单` 50
@@ -4240,10 +4255,10 @@ import Logout16 from "svelte-carbon/icons/Logout16";
 - `预渲染` 69
 - `Profiler` 8
 
-## Q
+#### Q
 - `查询` 100
 
-## R
+#### R
 - `React.js` 3
 - `React Native` 3
 - `关系数据库系统 (RDBMS)` 39
@@ -4264,7 +4279,7 @@ import Logout16 from "svelte-carbon/icons/Logout16";
 - `运行命令` 46
 - `Rust` 6, 7
 
-## S
+#### S
 - `模式定义语言 (SDL)` 105
 - `Schema, PhoneBook App` 121, 123
 - `contact type` 124
@@ -4274,7 +4289,6 @@ import Logout16 from "svelte-carbon/icons/Logout16";
 - `Mutation type` 125
 - `Query type` 125
 - `RegisterUser 输入` 124
-- `resolvers` 125, 129, 130
 - `UpdateContact 输入` 125
 - `UpdateUser` 124
 - `user type` 123
@@ -4304,7 +4318,7 @@ import Logout16 from "svelte-carbon/icons/Logout16";
 - `subscriptions` 100
 - `Svelte routing` 147
 
-## T
+#### T
 - `tokio/O library` 7
 - `tsconfig.json` 32
 - `TypeScript` 11, 12
@@ -4317,12 +4331,12 @@ import Logout16 from "svelte-carbon/icons/Logout16";
 - `tsconfig.json` 32
 - `type system` 102
 
-## U
+#### U
 - `UI implementation`
 - `Todos App` 87
 - `PhoneBook App` 143
 
-## V
+#### V
 - `V8 engine, by Google` 6
 - `V8 JavaScript engine` 8
 - `variables` 54, 55
@@ -4330,9 +4344,8 @@ import Logout16 from "svelte-carbon/icons/Logout16";
 - `VS Code` 37
 - `extensions` 37
 
-## W
+#### W
 - `Web APIs` 51, 52
 
-## Z
+#### Z
 - `zsh + oh my zsh` 36
-

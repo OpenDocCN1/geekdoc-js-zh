@@ -1,8 +1,5 @@
+
 # JavaScript：初学者指南：今天开始编码
-
-
-
-
 
 ## 前言
 
@@ -10,29 +7,13 @@
 
 本书将帮助你理解什么是 JavaScript、它的重要性，以及你如何利用这些知识为你的网站创建自己的脚本。
 
-与其他编程语言不同，JavaScript 是网站基础元素中至关重要的一部分。
-
-这种特定的语言甚至全球网（WWW）中的巨头（如 Google、Yahoo 和 Bing）都在使用。这就是 JavaScript 的多么重要。
+与其他编程语言不同，JavaScript 是网站基础元素中至关重要的一部分。这种特定的语言甚至全球网（WWW）中的巨头（如 Google、Yahoo 和 Bing）都在使用。这就是 JavaScript 的多么重要。
 
 我知道作为一名初学者，你可能在理解计算机语言方面遇到困难，因此我以简单的方式呈现了课程。我也包含了一些图片，让你能够直观地看到代码并更好地记住它们。
 
-此外，我希望你在学习这种新而有趣的语言时能获得乐趣。
+此外，我希望你在学习这种新而有趣的语言时能获得乐趣。谁知道呢？未来你可能会设计出属于自己的网站。
 
-谁知道呢？未来你可能会设计出属于自己的网站。
-
-因此，让我们开始学习吧。
-
-再次感谢下载这本书，希望你读得愉快！
-
-
-
-
-
-
-
-
-
-
+因此，让我们开始学习吧。再次感谢下载这本书，希望你读得愉快！
 
 ## 第 1 章：JavaScript 简介
 
@@ -40,7 +21,7 @@
 
 ### 什么是 JavaScript？
 
-JavaScript 是一种网络开发者和计算机程序员结合 HTML 和 CSS 使用的计算机语言，用于创建和开发交互式网站。它仅用于网页目的，如果你计划建立自己的网站，学习 JavaScript 是一个很好的开始。
+JavaScript 是一种网络开发者和计算机程序员结合 `HTML` 和 `CSS` 使用的计算机语言，用于创建和开发交互式网站。它仅用于网页目的，如果你计划建立自己的网站，学习 JavaScript 是一个很好的开始。
 
 尽管如此，即使你不是专业的程序员，你也可以学习如何使用这种基础语言。你需要的只是渴望学习一门新语言。
 
@@ -52,23 +33,25 @@ JavaScript 命令、语言或程序指令被称为语句。这些语句必须遵
 
 JavaScript 语句可以由关键字、值、运算符、表达式和注释组成。
 
-### 以下是 JavaScript 的其他用途。你可以：
+### JavaScript 的其他用途
 
-- 1. 通过简单、动态且响应式的界面提高用户体验。
-- 2. 解决浏览器问题。
-- 3. 允许用户离线工作。
-- 4. 让用户快速从网站加载内容。
-- 5. 创建弹出窗口或警报，以最大化用户在你网站/博客上的浏览体验。
-- 6. 允许用户提供反馈。
-- 7. 通知用户其输入或请求中的错误。
-- 8. 让用户在活动中获得即时反馈。例如当用户在线填写表单时。使用 JavaScript，用户将能够知道自己是否填写得正确。
-- 9. 允许用户与你的网站进行交互。
-- 10. 制作网站中的元素以获得更好的用户体验。
-- 11. 与 Java、HTML 和 CSS 等其他网络技术创建一致的界面。
-- 12. 在任何浏览器中使用 JavaScript。
-- 13. 通过操作网站的元素创建动态网站。
+你可以：
 
-注意：务必确保用户有权跳过弹出窗口，因为某些用户在浏览时不希望受到干扰。
+1. 通过简单、动态且响应式的界面提高用户体验。
+2. 解决浏览器问题。
+3. 允许用户离线工作。
+4. 让用户快速从网站加载内容。
+5. 创建弹出窗口或警报，以最大化用户在你网站/博客上的浏览体验。
+6. 允许用户提供反馈。
+7. 通知用户其输入或请求中的错误。
+8. 让用户在活动中获得即时反馈。例如当用户在线填写表单时。使用 JavaScript，用户将能够知道自己是否填写得正确。
+9. 允许用户与你的网站进行交互。
+10. 制作网站中的元素以获得更好的用户体验。
+11. 与 Java、HTML 和 CSS 等其他网络技术创建一致的界面。
+12. 在任何浏览器中使用 JavaScript。
+13. 通过操作网站的元素创建动态网站。
+
+> **注意：** 务必确保用户有权跳过弹出窗口，因为某些用户在浏览时不希望受到干扰。
 
 如果你学习过其他计算机语言（如 Python、Java、CSS 和 HTML），你将很快发现程序之间存在相似之处。你所要做的就是联系这些相似之处，与其他语言一起工作，并处理它们之间的差异。
 
@@ -76,102 +59,76 @@ JavaScript 语句可以由关键字、值、运算符、表达式和注释组成
 
 作为一名初学者，你必须学会如何正确设置和使用控制台。Google Chrome 提供了一个可以让你免费练习 JavaScript (JS) 的控制台。
 
-以下是步骤：
+### 步骤
 
-- 1. 下载并安装 Google Chrome
+1. **下载并安装 Google Chrome**
+   你可以从官方网站 (`www.google.com/chrome`) 下载 Google Chrome。它将作为你的浏览器。你不仅可以将其作为控制台，它还能提供更网页浏览。下载后，你现在可以安装了。最好使用台式电脑或笔记本电脑。网站本身提供了下载和安装说明，因此你在这一步上不会遇到困难。
 
-你可以从官方网站 (www.google.com/chrome) 下载 Google Chrome。它将作为你的浏览器。你不仅可以将其作为控制台，它还能提供更网页浏览。下载后，你现在可以安装了。最好使用台式电脑或笔记本电脑。网站本身提供了下载和安装说明，因此你在这一步上不会遇到困难。
+2. **点击 Google Chrome 页面右上角的（棕黄色圆圈）**
+   这将显示几个选项。
 
-- 2. 点击 Google Chrome 页面右上角的（棕黄色圆圈）。
+3. **点击“更多工具”**
 
-这将显示几个选项。
+4. **点击“开发者工具”**
+   点击“控制台”。这将显示带有 `>` 符号的控制台面板。这就是你输入 JavaScript 的地方。
 
-请见下一张图片：
+   ![](img/43ccb0e44db8b6abc2a9e33555ca4da1_8_0.png)
 
+   这里是该图片的详细视图：
 
+   ![](img/43ccb0e44db8b6abc2a9e33555ca4da1_8_1.png)
 
+5. **点击“控制台”**
+   这将显示控制台面板，你可以在这里输入代码。你可以放大你想要的视图。还有一些按键/按钮可以用于删除或编辑你的条目。
 
+   ![](img/43ccb0e44db8b6abc2a9e33555ca4da1_9_0.png)
 
-3. 点击“更多工具”，
+6. **你现在可以开始使用控制台**
+   在空白的控制台中探索 JavaScript 语言。
 
-4. 点击“开发者工具”。点击“控制台”。
+### 打开“控制台”的快捷方法
 
-这将显示带有 `>` 符号的控制台面板。这就是你输入 JavaScript 的地方。见下方图片：
+**方法一：通过 `about:blank`**
 
-![](img/43ccb0e44db8b6abc2a9e33555ca4da1_8_0.png)
-
-这里是该图片的详细视图：
-
-![](img/43ccb0e44db8b6abc2a9e33555ca4da1_8_1.png)
-
-- 5. 点击“控制台”。
-
-这将显示控制台面板，你可以在这里输入代码。你可以放大你想要的视图。还有一些按键/按钮可以用于删除或编辑你的条目。
-
-见下方图片。
-
-![](img/43ccb0e44db8b6abc2a9e33555ca4da1_9_0.png)
-
-6. 你现在可以开始使用控制台
-
-在空白的控制台中探索 JavaScript 语言。
-
-打开“控制台”有一种快捷方法。
-
-- 1. 在你的设备上下载并安装 Google Chrome。
-2. 在 URL 地址栏中（这是你找到 http://... 的地方），输入 `about:blank`，不要加引号。
+1. 在你的设备上下载并安装 Google Chrome。
+2. 在 URL 地址栏中（这是你找到 `http://...` 的地方），输入 `about:blank`，不要加引号。
 3. 按回车键将出现一个完全空白的页面。
 
-见下方图片：
+**方法二：快捷键**
 
-### 打开“控制台”的快捷命令：
+- **Windows/Linux：** 使用快捷命令 `Ctrl + Shift + J` 来打开控制台。
+- **Mozilla Firefox：** 按 `F12`，然后选择“控制台”。
+- **Mac：** 使用命令 `Alt + J`。
 
-你也可以使用快捷命令 `Ctrl + Shift + J` 来打开控制台。
-对于 Mozilla，你可以在电脑键盘上按 `F12`，然后选择“控制台”。
-对于 Mac 用户，你可以使用命令 `Alt + J`。
+接下来，点击右上角的小正方形或圆形。这将显示菜单，就像长方法一样，选择“更多工具”，然后选择“开发者工具”。
 
-- 接下来，点击右上角的小正方形或圆形。
-
-这将显示菜单，就像长方法一样，选择“更多工具”，然后选择“开发者工具”。
-
-见下一张图片
-
-选择“更多工具”，然后选择“开发者工具”。
-
-会出现另一个框。点击“控制台”，即可输入你的 JavaScript 语言。
-
-见下一张图片
+选择“更多工具”，然后选择“开发者工具”。会出现另一个框。点击“控制台”，即可输入你的 JavaScript 语言。
 
 ![](img/43ccb0e44db8b6abc2a9e33555ca4da1_11_0.png)
 
-- 6. 你现在可以登录（使用 `console.log () `），并在“控制台”上开始输入和练习你的 JavaScript。你可以探索 JavaScript 代码，并观察符号和标记如何影响你的代码。我们将在后面的章节中进行练习，所以请先不要急。
+7. **你现在可以登录（使用 `console.log()`），并在“控制台”上开始输入和练习你的 JavaScript。** 你可以探索 JavaScript 代码，并观察符号和标记如何影响你的代码。我们将在后面的章节中进行练习，所以请先不要急。
 
-- 7. 你还可以点击“控制台”右上角的“保留日志”（Preserve log），以便在你编写代码时保留你的消息。但你可能更喜欢不保留日志。这取决于你。
+8. **你还可以点击“控制台”右上角的“保留日志”（Preserve log），以便在你编写代码时保留你的消息。** 但你可能更喜欢不保留日志。这取决于你。
 
-- 8. 你可以通过右键点击并选择滚动条上的“另存为”（Save as）选项来保存消息。
+9. **你可以通过右键点击并选择滚动条上的“另存为”（Save as）选项来保存消息。**
 
-见下一张图片：
-
-![](img/43ccb0e44db8b6abc2a9e33555ca4da1_13_0.png)
+   ![](img/43ccb0e44db8b6abc2a9e33555ca4da1_13_0.png)
 
 现在，你可以开始编写代码了！
 
-## 第3章：设置 Mozilla 控制台
+## 第 3 章：设置 Mozilla 控制台
 
 如上一章提到的，你可以通过按键盘上的 `F12` 来访问 Mozilla 上的控制台。这将显示你的开发者工具，你可以在其中选择“控制台”。
-假设你在 Mozilla“控制台”中创建了一个 alert。见下方图片：
+
+假设你在 Mozilla“控制台”中创建了一个 alert。
 
 ![](img/43ccb0e44db8b6abc2a9e33555ca4da1_14_0.png)
 
-假设你想创建一个 alert。
+### 示例
 
-示例：
-
-```
+```javascript
 alert("It is my first time to use JavaScript.");
 ```
-
-见下一张图片：
 
 ![](img/43ccb0e44db8b6abc2a9e33555ca4da1_15_0.png)
 
@@ -181,453 +138,177 @@ alert("It is my first time to use JavaScript.");
 
 但如果你提交了错误，例如没有使用匹配的引号，“控制台”会快速检测到。
 
-见下一张图片：
-
 ![](img/43ccb0e44db8b6abc2a9e33555ca4da1_16_0.png)
 
-错误被指示出来，你有选项了解更多信息。当你点击[了解更多](Learn More)时，链接将带你进入一个解释你的代码到底出了问题的页面。
+错误被指示出来，你有选项了解更多信息。当你点击“了解更多”时，链接将带你进入一个解释你的代码到底出了问题的页面。
 
 在这个特定的示例中，错误是因为引号不匹配（起始引号是单引号，而结束引号是双引号）。你可以据此纠正你的错误。
 
-## 第4章：JavaScript 基础
+## 第 4 章：JavaScript 基础
 
 有一些你应该记住的 JavaScript 基础规则。随着章节的进行，我们将学习它们，让我们先建立最重要的基础基石。
 
-- 1. 创建 JavaScript 程序时使用 Unicode 字符集。
+1. **创建 JavaScript 程序时使用 Unicode 字符集。**
+   Unicode 字符集包含了大多数通用字符、标点符号和符号。因此，你可以轻松地在编写程序语句中使用它们来创建 JavaScript 代码。
 
-Unicode 字符集包含了大多数通用字符、标点符号和符号。因此，你可以轻松地在编写程序语句中使用它们来创建 JavaScript 代码。
+2. **你可以在每个语句后添加分号 `;`。**
+   如果你不确定是否要添加，最好的选择是添加。你可以在每个语句后添加分号。在某些情况下，浏览器即使没有分号也能识别 JavaScript 代码，但最好添加分号，以确保该语句被任何浏览器正确执行。这并不是“必须”的，但只是为了万无一失。
 
-- 2. 你可以在每个语句后添加分号 `;`。
+   **示例：**
+   ```javascript
+   alert("My name is Jekyll.");
+   ```
 
-如果你不确定是否要添加，最好的选择是添加。你可以在每个语句后添加分号。
+3. **你可以使用单引号或双引号表示字符串。**
+   单引号或双引号都可以用于字符串。但你必须确保，如果你在字符串之前使用单引号，那么在字符串之后也必须使用单引号。双引号也是如此。你将在第 13 到第 21 章中了解更多关于字符串的内容。
 
-在某些情况下，浏览器即使没有分号也能识别 JavaScript 代码，但最好添加分号，以确保该语句被任何浏览器正确执行。这并不是“必须”的，但只是为了万无一失。
+   **字符串示例：**
+   ```text
+   'My name is Jekyll.'
+   "My name is Jekyll."
+   ```
 
-示例：
+4. **有三种原始数据类型。**
+   这些是数字（`1, 21.50, 3.4...`）、字符串（`"My name is Jekyll."`）和布尔（`true` 或 `false`）。
 
-```
-alert("My name is Jekyll.");
-```
+5. **所有数字都是浮点值。**
+   与其他语言不同，JavaScript 不区分整数（整数字）和浮点值（带有小数点的数字），因为对于 JavaScript 来说，所有数字都是浮点值。
 
-- 3. 你可以使用单引号或双引号表示字符串。
+6. **注意 JavaScript 使用 `-` 符号和连字符进行减法，而不是用于连接单词。**
+   **示例：** 这些无法被 JavaScript 识别。
+   ```text
+   student-number
+   student-name
+   employee-name
+   patients-name
+   ```
 
-单引号或双引号都可以用于字符串。但你必须确保，如果你在字符串之前使用单引号，那么在字符串之后也必须使用单引号。双引号也是如此。你将在第 13 到第 21 章中了解更多关于字符串的内容。
+7. **你可以在命名变量时使用驼峰命名法（camel case）。**
+   驼峰命名法可以通过连接两个单词来实现，第一个单词的首字母用小写，第二个单词的首字母用大写。
 
-字符串示例：
+   **示例：**
+   ```text
+   studentNumber
+   studentName
+   employeeName
+   patientsName
+   ```
+   你也可以使用下划线来分隔名称，但很少使用。
 
-'My name is Jekyll.'
+   **示例：**
+   ```text
+   Student_Number
+   Student_Name
+   Employee_Name
+   Patients_Name
+   ```
 
-"My name is Jekyll."
+8. **你可以在运算符之间添加或不添加空格。**
+   尽管 JavaScript 不在意空格，但使用空格更利于可读性。
 
-- 4. 有三种原始数据类型。
+   **示例：**
+   ```javascript
+   var number = 7;
+   // 或
+   var number=7;
+   ```
+   注意在第一个示例中，数学运算符和数字之间有空格。在第二段代码中，数学运算符 (`=`) 和数字之间没有空格。
 
-这些是数字（1, 21.50, 3.4...）、字符串（“My name is Jekyll.”）和布尔（true 或 false）。
+9. **“对象”（Object）是 JavaScript 中至关重要的柱。**
+   这是因为对象包含了文档、数组以及许多在对象中才能找到。它们有属性和方法。更多将在后续章节讨论。
 
-- 5. 所有数字都是浮点值。
+10. **你可以将 JavaScript 添加到 HTML 页面的 `<head>` 或 `<body>` 部分。**
+    然而，你必须使用 `<script>` 标签；起始 `<script>` 和结束 `</script>` 标签。你的代码必须插入在这些起始和结束标签之间。JavaScript 也可以放在外部文件中。需要时，可以通过你的 HTML 文件进行访问。这将导致网站加载更快，并更易于读取、识别和维护 HTML 和 JavaScript 代码。示例将在后续章节中给出。
 
-与其他语言不同，JavaScript 不区分整数（整数字）和浮点值（带有小数点的数字），因为对于 JavaScript 来说，所有数字都是浮点值。
+11. **代码行的理想长度为 80 个字符。**
+    这是为了便于编码和阅读。如果你无法避免，且语句超过 80 个字符，那么你必须选择在运算符后断行。
 
-- 6. 注意 JavaScript 使用 (−) 符号和连字符进行减法，而不是用于连接单词。
+12. **JavaScript 标识符的首字符必须是字母。**
+    它也可以美元符号 `$` 和下划线 `_`，但不能是数字。标识符用于命名关键字、变量、标签和函数。
 
-示例：这些无法被 JavaScript 识别。
+13. **值有两种类型。**
+    在 JavaScript 语法中，有两种类型的值：“变量”（variable）和“固定值”（fixed）。变量值正如其名，具有可变的（不定的）值；这正是为什么它们被称为变量。相反，固定值是保持不变不改变的值。它们也被称为字面量（literals）。
 
-```
-student-number
-student-name
-employee-name
-patients-name
-```
+14. **JavaScript 中的标识符对大小写敏感。**
+    在使用标识符时要小心，因为在小写和大写之间进行转换时可能会出现错误。
 
-- 7. 你可以在命名变量时使用驼峰命名法（camel case）。
+    **示例：**
+    ```javascript
+    idNumber is different from idnumber
+    ```
+    关键字 `var` 是区分大小写的，但 `VAR` 或 `Var` 则不是。请始终使用 `var`。每次输入或执行代码时，请检查大小写。
 
-驼峰命名法可以通过连接两个单词来实现，第一个单词的首字母用小写，第二个单词的首字母用大写。
+15. **网页浏览器可以在 HTML 中执行 JavaScript 命令。**
+    如前所述，JavaScript 无法独立存在；它必须与 HTML 或 CSS 一起运行。你可以将 JavaScript 插入 HTML 中，或者创建一个从 HTML 到你 JavaScript 的链接。请注意，JavaScript 语句是网页浏览器必须执行的命令或指令。一个 JavaScript 程序可以包含各种语句，并按照你编写的顺序等待执行。
 
-示例：
+16. **你可以在一行内编写多个语句。**
+    你可以这样做，但要确保每个语句都用分号隔开。
 
-```
-studentNumber
-studentName
-employeeName
-patientsName
-```
-
-你也可以使用下划线来分隔名称，但很少使用。
-
-### 示例：
-
-- Student_Number
-Student_Name
-Employee_Name
-Patients_Name
-
-- 8. 你可以在运算符之间添加或不添加空格。
-
-尽管 JavaScript 不在意空格，但使用空格更利于可读性。
-
-### 示例：
-
-```
-var number = 7;
-or var number=7;
-```
-
-注意在第一个示例中，数学运算符和数字之间有空格。在第二段代码中，数学运算符 (=) 和数字之间没有空格。
-
-- 9. “对象”（Object）是 JavaScript 中至关重要的柱。
-
-这是因为对象包含了文档、数组以及许多在对象中才能找到。它们有属性和方法。更多将在后续章节讨论。
-
-- 10. 你可以将 JavaScript 添加到 HTML 页面的 <head> 或 <body> 部分。
-
-然而，你必须使用 <script> 标签；起始 <script> 和结束 </script> 标签。
-
-你的代码必须插入在这些起始和结束标签之间。
-
-JavaScript 也可以放在外部文件中。需要时，可以通过你的 HTML 文件进行访问。
-
-这将导致网站加载更快，并更易于读取、识别和维护 HTML 和 JavaScript 代码。
-
-示例将在后续章节中给出。
-
-- 11. 代码行的理想长度为 80 个字符。
-
-这是为了便于编码和阅读。如果你无法避免，且语句超过 80 个字符，那么你必须选择在运算符后断行。
-
-- 12. JavaScript 标识符的首字符必须是字母。
-
-它也可以美元符号 $ 和下划线 _，但不能是数字。标识符用于命名关键字、变量、标签和函数。
-
-- 13. 值有两种类型。
-
-在 JavaScript 语法中，有两种类型的值：“变量”（variable）和“固定值”（fixed）。变量值正如其名，具有可变的（不定的）值；这正是为什么它们被称为变量。
-
-相反，固定值是保持不变不改变的值。它们也被称为字面量（literals）。
-
-- 14. JavaScript 中的标识符对大小写敏感。
-
-在使用标识符时要小心，因为在小写和大写之间进行转换时可能会出现错误。
-
-### 示例：
-
-```
-idNumber is different from idnumber
-```
-
-
-
-
-关键字 'var' 是区分内容的，但 'VAR' 或 'Var' 则不是。请始终使用 'var'。每次输入或执行代码时，请检查大小写。
-
-- 15. **网页浏览器可以在 HTML 中执行 JavaScript 命令。**
-
-如前所述，JavaScript 无法独立存在；它必须与 HTML 或 CSS 一起运行。你可以将 JavaScript 插入 HTML 中，或者创建一个从 HTML 到你 JavaScript 的链接。
-
-请注意，JavaScript 语句是网页浏览器必须执行的命令或指令。
-
-一个 JavaScript 程序可以包含各种语句，并按照你编写的顺序等待执行。
-
-- 16. **你可以在一行内编写多个语句。**
-
-你可以这样做，但要确保每个语句都用分号隔开。
-
-### 示例：
-
-```
-x = 2; y = 3; z = x + y;
-```
+    **示例：**
+    ```javascript
+    x = 2; y = 3; z = x + y;
+    ```
 
 这些是 JavaScript 编程语言最基础的规则。随着你继续阅读，你会发现 JavaScript 远比这里提到的丰富。
 
 ## 第 5 章：JavaScript 中的重要术语
 
-每种计算机语言都有自己的重要术语和关键字。JavaScript 例外。JavaScript 中的关键字被视为保留字。
+每种计算机语言都有自己的重要术语和关键字。JavaScript 也不例外。JavaScript 中的关键字被视为保留字。这是因为你不能使用这些关键字来命名变量。你必须了解这些关键字，以便正确地编写代码。
 
-这是因为你不能使用这些关键字来命名变量。你必须了解这些关键字，以便正确地编写代码。
+1. `var` - 它声明一个变量。
+2. `debugger` - 它停止 JavaScript 语句的执行，并可以访问调试函数。
+3. `function` - 定义一个函数。
+4. `break` - 结束循环或 switch 语句。
+5. `for` - 表示一个循环。
+6. `continue` - 在退出循环后继续执行顶部的语句。
+7. `if...else` - 表示当 `if` 语句为真且 `else` 语句为假时将执行的语句块。
+8. `try...catch` - 处理语句块的错误修正。
+9. `do...while` - 只要条件为真，它就会执行并重复语句块。
+10. `switch` - 它根据各种情况指示语句块的执行。
+11. `return` - 它允许退出函数。
+12. `loop` - 使用某些关键字对函数进行重复。
 
-- 1. var - 它声明一个变量。
-- 2. debugger - 它停止 JavaScript 语句的执行，并可以访问调试函数。
-- 3. function - 结束循环或 switch 语句。
-- 4. break - 它表示当条件为真将执行的语句块。
-- 5. for - 它表示一个函数。
-- 6. continue - 在退出循环后继续执行顶部的语句。
-- 7. if...else - 表示当 'if' 语句为真且 -else 语句为假时将执行的语句块。
-- 8. try.catch - 处理语句块的错误修正。
-- 9. do/while - 只要条件为真，它就会执行并重复语句块。
-- 10. switch - 它根据各种情况指示语句块的执行。
-- 11. return - 它允许退出函数。
-- 12. loop - 使用某些关键字对函数进行重复。
+### 其他术语
 
-其他术语：
+1. **foo** - 代表 foobar, bar, fubar 或 qux。Foobars 是元语法变量，计算机编程中名称的占位符。你可以用它获取变量的属性值，而不是使用索引。它在访问变量中的元素值非常有用。
 
-- 1. foo - 代表 foobar, bar, fubar 或 qux。Foobars 是元语法变量，计算机编程中名称的占位符。
+   **示例：**
+   ```javascript
+   Apparel = {type: "dress", color: "red"};
+   // Object {type: "dress", color: "red"}
+   var apparel = {foo: "apparel"};
+   var valueFromArrayIndex = apparel[foo];
+   var valueFromProperty = apparel.foo;
+   // undefined
+   ```
 
-你可以用它获取变量的属性值，而不是使用索引。它在访问变量中的元素值非常有用。
+2. **`push()` 函数** 是向数组中添加元素的另一种方法。
 
-见下面的图：
+   **示例：**
+   ```javascript
+   var students = new Array('Damien', 'Lucy', 'Mona', 'Andrew');
+   students.push('Tom');
+   ```
 
-```
-Apparel={type: "dress", color: "red"};
-Object {type: "dress", color: "red"}
-var apparel = {foo: "apparel"};
-var valueFromArrayIndex = apparel[foo];
-var valueFromProperty = apparel.foo;
-undefined
-```
+   如果你想查看你的额外元素是否已添加，可以使用命令：
+   ```javascript
+   document.write(students);
+   ```
+   这将返回此数据。
 
-- 2. push 函数是向数组中添加元素的另一种方法。
-
-示例：
-
-```
-var students = new Array('Damien', 'Lucy', 'Mona', 'Andrew');
-students.push('Tom');
-```
-
-如果你想查看你的额外元素是否已添加，可以使用命令：
-
-```
-document.write(students);
-```
-
-这将返回此数据。
-
-看下一张图片：
-
-Damien, Lucy, Mona, Andrew, Tom top
-
-```
-var students = new Array('Damien', 'Lucy', 'Mona', 'Andrew'); undefined students.push('Tom');
-// <- 5
-document.write(students);
-```
+   看下一张图片：
+   ```text
+   Damien, Lucy, Mona, Andrew, Tom top
+   var students = new Array('Damien', 'Lucy', 'Mona', 'Andrew'); undefined students.push('Tom');
+   // <- 5
+   document.write(students);
+   ```
 
 ### 使用 JavaScript 关键字的注意事项
 
 - 你可以使用 4 个空格缩进你的代码块。
 - 大多数代码块用于函数。
-- 记住在代码块时使用花括号 { }。代码块是花括号内的语句组。
-
-## 第 6 章：JavaScript 代码的注释
-
-尽管在其他章节中简要提到了注释，但我想讨论 JavaScript 的注释样式。这个简单的操作将为初学者提供更轻松的学习体验，因为他们可以在 JavaScript 代码中任何需要的地方编写笔记，而不会破坏代码。这将方便脚本编写者回回可能需要的某些数据。
-
-### 注释方法
-
-### 使用双斜杠 //
-
-当你想要写注释，以免忘记代码中的某项内容时，只需在注释前添加 // 符号即可。
-
-此符号通常用于单行注释。
-
-示例：
-
-```
-var patients = [
-  "Elsa", //你可以在数组中创建数组。（这是一个注释）。
-  "Ana",
-  "Lily",
-  "Leo"
-]; //此符号表示语句已结束。（这是一个注释。）
-```
-
-注意：浏览器不会执行注释。
-
-### 使用 /* */
-
-当你有有多行注释时使用它。只需在注释前添加 /*，在注释后添加 */ 即可。
-
-### 示例：
-
-```
-var patients = {
-  'Elsa', /*你可以在数组中创建数组。添加相关的元素，
-  'Ana'    如年龄、性别、状态和其他相关信息到
-  'Lily'   这些元素中的任何一个.*/
-  'Leo'
-  //此符号表示语句已结束。（这是一个注释。）
-};
-```
-
-见下面的图：
-
-![](img/43ccb0e44db8b6abc2a9e33555ca4da1_26_0.png)
-[/content] -> (注：原文中有多处 `/*` 误写，已根据逻辑修正翻译如下)
-
-```
-当你有有多行注释时使用它。只需在注释前添加 /*，在注释后添加 */ 即可。
-
-```
-```
-- 1. 这里的 // 符号。代码。
-```
-```：
-```：
-- 2. 这里的 // 符号。代码。
-```
-当你有有多行注释时使用它。只需在注释前添加 /*，在注释后添加 */ 即可。
-
-```
-```：
-```：
-- 1. 这里的 // 符号。代码。
-```
-```：
-```：
-- 2. 这里的 // 符号。代码。
-```
-```：
-```：
-- 1. 这里的 // 符号。代码。
-```
-```：
-```：
-- 2. 这里的 // 符号。代码。
-```
-```：
-```：
-- 1. 这里的 // 符号。代码。
-```
-```：
-```：
-- 2. 这里的 // 符号。代码。
-```
-```：
-```：
-- 1. 这里的 // 符号。代码。
-```
-```：
-```：
-- 2. 这里的 // 符号。代码。
-```
-```：
-```：
-- 1. 这里的 // 符号。代码。
-```
-```：
-```：
-- 2. 这里的 // 
-。代码。
-```
-```：
-```：
-- 1. 这里的 // 
-。代码。
-```
-```：
-```：
-- 2. 这里的 // 符号。代码。
-```
-```：
-```：
-- 1. 这里的 // 符号。代码。
-```
-```：
-```：
-- 2. 这里的 // 符号。代码。
-```
-```：
-```：
-- 1. 这里的 // 符号。代码。
-```
-```：
-```：
-- 2. 这里的 // 符号。代码。
-(系统自动生成错误，抱歉，由于原文中存在大量的 `/*` 符号错误和重复，我将重新为你提供一份完整、准确的翻译。)
-
-**以下是基于你提供的原始文本的正确翻译：**
-
-[content]
-
-关键字 'var' 是区分内容的，但 'VAR' 或 'Var' 则不是。请始终使用 'var'。每次输入或执行代码时，请检查大小写。
-
-- 15. **网页浏览器可以在 HTML 中执行 JavaScript 命令。**
-
-如前所述，JavaScript 无法独立存在；它必须与 HTML 或 CSS 一起运行。你可以将 JavaScript 插入 HTML 中，或者创建一个从 HTML 到你 JavaScript 的链接。
-
-请注意，JavaScript 语句是网页浏览器必须执行的命令或指令。
-
-一个 JavaScript 程序可以包含各种语句，并按照你编写的顺序等待执行。
-
-- 16. **你可以在一行内编写多个语句。**
-
-你可以这样做，但要确保每个语句都用分号隔开。
-
-### 示例：
-
-```
-x = 2; y = 3; z = x + y;
-```
-
-这些是 JavaScript 编程语言最基础的规则。随着你继续阅读，你会发现 JavaScript 远比这里提到的丰富。
-
-## 第 5 章：JavaScript 中的重要术语
-
-每种计算机语言都有自己的重要术语和关键字。JavaScript 例外。JavaScript 中的关键字被视为保留字。
-
-这是因为你不能使用这些关键字来命名变量。你必须了解这些关键字，以便正确地编写代码。
-
-- 1. var - 它声明一个变量。
-- 2. debugger - 它停止 JavaScript 语句的执行，并访问调试函数。
-- 3. function - 结束循环或 switch 语句。
-- 4. break - 它表示当条件为真将执行的语句块。
-- 5. for - 它表示一个函数。
-- 6. continue - 在退出循环后继续执行顶部的语句。
-- 7. if...else - 表示当 'if' 语句为真且 -else 语句为假时执行的语句块。
-- 8. try.catch - 处理语句块的错误修正。
-- 9. do/while - 只要条件为真，它就会执行并重复语句块。
-- 10. switch - 它根据各种情况指示语句块的执行。
-- 11. return - 它允许退出函数。
-- 12. loop - 使用某些关键字对函数进行重复。
-
-其他术语：
-
-- 1. foo - 代表 foobar, bar, fubar 或 qux。Foobars 是元语法变量，计算机编程中名称的占位符。
-
-你可以用它获取变量的属性值，而不是使用索引。它在访问变量中的元素值非常有用。
-
-见下面的图：
-
-```
-Apparel={type: "dress", color: "red"};
-Object {type: "dress", color: "red"}
-var apparel = {foo: "apparel"};
-var valueFromArrayIndex = apparel[foo];
-var valueFromProperty = apparel.foo;
-undefined
-```
-
-- 2. push 函数是向数组中添加元素的另一种方法。
-
-示例：
-
-```
-var students = new Array('Damien', 'Lucy', 'Mona', 'Andrew');
-students.push('Tom');
-```
-
-如果你想查看你的额外元素是否已添加，可以使用命令：
-
-```
-document.write(students);
-```
-
-这将返回此数据。
-
-看下一张图片：
-
-Damien, Lucy, Mona, Andrew, Tom top
-
-```
-var students = new Array('Damien', 'Lucy', 'Mona', 'Andrew'); undefined students.push('Tom');
-// <- 5
-document.write(students);
-```
-
-### 使用 JavaScript 关键字的注意事项
-
-- 你可以使用 4 个空格缩进你的代码块。
-- 大多数代码块用于函数。
-- 记住在代码块时使用花括号 { }。代码块是花括号内的语句组。
+- 记住在代码块时使用花括号 `{ }`。代码块是花括号内的语句组。
 
 ## 第 6 章：JavaScript 代码的注释
 
@@ -635,15 +316,12 @@ document.write(students);
 
 ### 注释方法
 
-### 使用双斜杠 //
+#### 使用双斜杠 `//`
 
-当你想要写注释，以免忘记代码中的某项内容时，只需在注释前添加 // 符号即可。
+当你想要写注释，以免忘记代码中的某项内容时，只需在注释前添加 `//` 符号即可。此符号通常用于单行注释。
 
-此符号通常用于单行注释。
-
-示例：
-
-```
+**示例：**
+```javascript
 var patients = [
   "Elsa", //你可以在数组中创建数组。（这是一个注释）。
   "Ana",
@@ -651,16 +329,14 @@ var patients = [
   "Leo"
 ]; //此符号表示语句已结束。（这是一个注释。）
 ```
+> **注意：** 浏览器不会执行注释。
 
-注意：浏览器不会执行注释。
+#### 使用 `/* */`
 
-### 使用 /* */
+当你有多行注释时使用它。只需在注释前添加 `/*`，在注释后添加 `*/` 即可。
 
-当你有有多行注释时使用它。只需在注释前添加 /*，在注释后添加 /* 即可。 （注：原文示例中多处 `*/` 误写为 `/*`，翻译时已修正为正确的 `*/`）
-
-### 示例：
-
-```
+**示例：**
+```javascript
 var patients = {
   'Elsa', /*你可以在数组中创建数组。添加相关的元素，
   'Ana'    如年龄、性别、状态和其他相关信息到
@@ -670,15 +346,7 @@ var patients = {
 };
 ```
 
-见下面的图：
-
 ![](img/43ccb0e44db8b6abc2a9e33555ca4da1_26_0.png)
-
-(注：由于提供的原始文本中存在多处 Markdown 语法错误如 `*/` 误写为 `/*`，翻译时已根据语意进行了修正以确保输出格式正确。)
-
-
-
-
 
 ## 第 8 章：JavaScript 函数
 
@@ -692,10 +360,9 @@ var patients = {
 
 这用于声明一个函数。你可以通过使用关键字 `function` 来声明一个函数。声明函数的通用公式为：
 
-```
-function functionName(argument1, argument2, argument3...)
-{
-  要执行的语句/多个语句;
+```javascript
+function functionName(argument1, argument2, argument3...) {
+  // 要执行的语句/多个语句;
 }
 ```
 
@@ -703,12 +370,11 @@ function functionName(argument1, argument2, argument3...)
 
 ```html
 <script type="text/javascript">
-<!---
-function functionName(argument1, argument2, argument3...)
-{
-  要执行的语句/多个语句;
+<!--
+function functionName(argument1, argument2, argument3...) {
+  // 要执行的语句/多个语句;
 }
--->
+//-->
 </script>
 ```
 
@@ -717,25 +383,23 @@ function functionName(argument1, argument2, argument3...)
 ```html
 <script type="text/javascript">
 <!--
-  functionName(argument1, argument2, argument3...)
-{
-  要执行的语句/多个语句;
-}
+  functionName(argument1, argument2, argument3...) {
+  // 要执行的语句/多个语句;
+  }
 -->
 </script>
 ```
 
-示例 1：
+#### 示例 1
 
 假设你想创建一个计算两个数字之和的函数。你首先需要给你的函数命名。对于这个函数，我想给它命名为 `gettingSum`。
 
-functionName = gettingSum
+`functionName = gettingSum`
 
-所以，你可以这样创建你的函数 (gettingSum)：
+所以，你可以这样创建你的函数 (`gettingSum`)：
 
 ```javascript
-function gettingSum (x, y)
-{
+function gettingSum (x, y) {
   return (x+y);
 }
 ```
@@ -744,15 +408,14 @@ function gettingSum (x, y)
 
 查看下一图：
 
-### 示例 2
+#### 示例 2
 
 ![](img/43ccb0e44db8b6abc2a9e33555ca4da1_33_0.png)
 
 这是一个在你的网页上问候访问者的函数。
 
 ```javascript
-function greetings()
-{
+function greetings() {
   document.write('Welcome to my page!');
 }
 ```
@@ -763,11 +426,10 @@ function greetings()
 
 这段 JavaScript 代码将在你的屏幕上显示你的问候。
 
-### 示例 3
+#### 示例 3
 
 ```javascript
-function amAlert()
-{
+function amAlert() {
   prompt("How are you this morning?");
 }
 ```
@@ -776,8 +438,7 @@ function amAlert()
 
 ```html
 <script type="text/javascript">
-function amAlert()
-{
+function amAlert() {
   prompt("How are you this morning?");
 }
 </script>
@@ -785,24 +446,21 @@ function amAlert()
 
 查看下图：
 
-| 文件 编辑 格式 视图 帮助 |
-|---|---|---|---|
-| <script type="text/javascript">function amAlert() { prompt("How are you this morning?"); }</script> | | |
+| 文件 | 编辑 | 格式 | 视图 | 帮助 |
+|---|---|---|---|---|
+| `<script type="text/javascript">function amAlert() { prompt("How are you this morning?"); }</script>` | | | | |
 
 如何将这些函数插入你的 HTML 代码中？将在第 36 章讨论，该章节将解释如何将 JavaScript 代码插入 HTML 代码中。
 
-### 示例 4
+#### 示例 4
 
 你可以使用函数创建系列 alert。例如，你创建了一个可以反映当前用户内心想法的 alert。你可以通过这段代码创建函数：
 
 ```javascript
-function knowingYou(x)
-{}
-```
-
-```javascript
-alert("I dream of " + x);
+function knowingYou(x) {
+  alert("I dream of " + x);
 }
+
 knowingYou("you");
 knowingYou("Paris");
 knowingYou("being in love");
@@ -826,18 +484,17 @@ knowingYou("being in love");
 
 现在你可以在需要使用它时调用这个 `knowingYou` 函数了。看到了吗？JavaScript 在网页上为我们开发交互的小惊喜是有多棒。
 
-### 提示：
+### 提示
 
 - 函数可以被多次利用，只要你在使用之前先定义了它们。这会很快，因为你只需要定义一次。
 - 函数后面总是跟着括号和/或大括号。
-- 参数（Arguments）与参数（parameters）相同。参数是包含在函数定义中的名称。
+- 参数与形参相同。参数是包含在函数定义中的名称。
 - 值将在语句执行后成为返回值。
 - 函数具有原型（Prototype）属性。
 - 在浏览器“调用”（使用）并执行函数之前，你必须先定义它。
 - 你可以通过在 HTML 代码的 body 部分中创建按钮来调用函数。这是通过在 JavaScript 代码之外创建一个“表单”（form）来输入按钮来实现的。
 
-### 示例：
-
+**示例：**
 ```html
 <form>
   <input type="button" value="press me " onclick="amAlert()">
@@ -862,14 +519,14 @@ knowingYou("being in love");
 
 关键字 `var` 用于声明变量，而等号 (`=`) 用于定义变量的值。
 
-### 示例 1：
+#### 示例 1
 
 ```javascript
 var x;
 x = 1;
 ```
 
-### 示例 2：
+#### 示例 2
 
 ```javascript
 var carOwners;
@@ -878,16 +535,13 @@ carOwners = "Rachel Newsome", "Luke Tell", "Sarah Colton";
 
 ### 变量在哪里？
 
-carOwners 是变量名。
-
-carOwners 是变量的值。查看下图：
+`carOwners` 是变量名。`carOwners` 是变量的值。查看下图：
 
 ![](img/43ccb0e44db8b6abc2a9e33555ca4da1_40_0.png)
 
 现在你可以通过它的名称使用变量。假设你想使用 `document.write` 打印或显示：
 
-示例：
-
+**示例：**
 ```javascript
 document.write(carOwners);
 ```
@@ -900,7 +554,7 @@ document.write(carOwners);
 
 ### 变量初始化
 
-这是向变量存储值的过程。你可以在创建后进行，也可以在以后需要时进行。索引 (0, 1, 3...) 将赋值给每个变量，以便访问它们。通常，变量被初始化为 `undefined`。
+这是向变量存储值的过程。你可以在创建后进行，也可以在以后需要时进行。索引 (`0, 1, 3...`) 将赋值给每个变量，以便访问它们。通常，变量被初始化为 `undefined`。
 
 一旦变量被声明，就不允许再次声明同名变量。
 
@@ -915,33 +569,27 @@ document.write(carOwners);
 - 给变量赋值时，请使用等号 (`=`)。你的值可以是字符串、数字或其他数据类型。
 - 重要的是记住，左侧是变量名，右侧是变量的值。交换它们将导致错误。
 
-示例：
-
+**示例：**
 ```javascript
 var studentName = "Fritzgerald";
 ```
-
 输出或返回值将是："Fritzgerald"。查看下图：
 
 ![](img/43ccb0e44db8b6abc2a9e33555ca4da1_42_0.png)
 
 你也可以这样做：
-
 ```javascript
 var studentName;
 studentName = "Fritzgerald";
 ```
-
 查看下图：
 
 ![](img/43ccb0e44db8b6abc2a9e33555ca4da1_42_1.png)
 
 - 正如提到的，双单词变量的命名应遵循驼峰命名法（第一个单词小写，第二个单词的首字母大写）。
 
-
-示例：
-
-```
+**示例：**
+```text
 studentsNames previousDate
 studentName petName
 patientsName homeAddress
@@ -949,40 +597,31 @@ firstName schoolID
 lastName homeViewers
 idNumber lateShow
 ```
-
-如果你浏览这些名称，你会发现你可以按照任何想要的方式为变量命名。
-
-然而，使用一个你容易记住的名字更好，因为名称描述了你变量的内容。
-
-如果你把汽车的数据命名为 `lastDate`，那将会很困惑，对吧？
+如果你浏览这些名称，你会发现你可以按照任何想要的方式为变量命名。然而，使用一个你容易记住的名字更好，因为名称描述了你变量的内容。如果你把汽车的数据命名为 `lastDate`，那将会很困惑，对吧？
 
 - 对于变量的赋值值，你可以使用大写字母或小写字母，取决于你的喜好。但要确保字符串被包含在匹配的引号中。
 
-示例：
-
-```
+**示例：**
+```javascript
 var patientsName;
 patientsName = "Luke Walker";
 ```
 
-- 你可以在每个变量后使用逗号，在一条语句中声明变量。
+- 你可以在每个变量后使用逗号，在一条语句中声明变量。仅在变量名之前使用关键字。这通常用于数组变量。
 
-仅在变量名之前使用关键字。这通常用于数组变量。
-
-示例：
-
-```
+**示例：**
+```javascript
 var studentsNames;
 studentsNames = ["Fritzgerald", "Walker", "Dixon", "Palmer"];
 ```
-
-查看下一张图片
+查看下一张图片：
 
 ![](img/43ccb0e44db8b6abc2a9e33555ca4da1_44_0.png)
 
 你可能想实验一下看看它在网页上的显示效果。你可以使用代码：
-
+```javascript
 document.write(studentsNames);
+```
 
 ### 访问变量
 
@@ -992,35 +631,31 @@ document.write(studentsNames);
 
 ![](img/43ccb0e44db8b6abc2a9e33555ca4da1_44_1.png)
 
-`document.write` 命令将在网页上写入变量 'studentsNames' 的内容。查看下图：
+`document.write` 命令将在网页上写入变量 `studentsNames` 的内容。
 
-### Fritzgerald, Walker, Dixon, Palmer
-
-```
+```text
+Fritzgerald, Walker, Dixon, Palmer
 var students
 undefined
 studentsName
 ["Fritzger"
 ```
-
-当然，如果你愿意，可以使用多行来创建你的代码。这取决于你的喜好。
-
-关于多行代码的示例将在第 29 到 34 章中详细讨论，主题是——数组。
+当然，如果你愿意，可以使用多行来创建你的代码。这取决于你的喜好。关于多行代码的示例将在第 29 到 34 章中详细讨论，主题是——数组。
 
 函数——可以允许你只写一次代码并使用多次。
 
-变量的基本数据类型（将在它们各自的章节中逐一讨论）。
+### 变量的基本数据类型（将在它们各自的章节中逐一讨论）
 
-- 1. 数字 (Numbers)
-- 2. 字符串 (Strings)
-- 3. 布尔值 (Booleans)
-- 4. 对象 (Objects)——数组属于此类
+1. 数字 (Numbers)
+2. 字符串 (Strings)
+3. 布尔值 (Booleans)
+4. 对象 (Objects)——数组属于此类
 
-提记：
+### 提记
 
-JavaScript 的变量和函数是区分大小写的。因此，你必须在整个代码中遵守相同的大小（大写或小写）。
+JavaScript 的变量和函数是区分大小写的。因此，你必须在整个代码中遵守相同的大小写（大写或小写）。
 
-"studentName" 与 "studentname" 是不同的。当你使用与你输入的大写名称不同的小写名称时，你将收到一个错误。
+`"studentName"` 与 `"studentname"` 是不同的。当你使用与你输入的大写名称不同的小写名称时，你将收到一个错误。
 
 JavaScript 的数字长度通常为 16 位，以便浏览器能够正确执行数字代码。
 
@@ -1030,21 +665,17 @@ JavaScript 的数字长度通常为 16 位，以便浏览器能够正确执行�
 
 ### 1. 数字 (Numbers)
 
-在 JavaScript 中，通常所有数字都被 true视为 64 位浮点数。当小数点后没有值时，该数字将呈现为整数。
+在 JavaScript 中，通常所有数字都被视为 64 位浮点数。当小数点后没有值时，该数字将呈现为整数。JavaScript 和其他计算机语言基于 IEEE 754 浮点算术标准。
 
-JavaScript 和其他计算机语言基于 IEEE 754 浮点算术标准。
+**浮点数的示例：**
+- `4.5`
+- `9.16`
+- `6.0`
 
-浮点数的示例：
-
-- 4.5
-- 9.16
-- 6.0
-
-整数的示例：
-
-- 9.000
-- 6.000
-- 2
+**整数的示例：**
+- `9.000`
+- `6.000`
+- `2`
 
 ### 2. 字符串 (Strings)
 
@@ -1052,31 +683,28 @@ JavaScript 和其他计算机语言基于 IEEE 754 浮点算术标准。
 
 ### 3. 布尔值 (Boolean)
 
-这些数据类型表示 'true'（真）或 'false'（假）。通过使用布尔值，你可以发现 JavaScript 表达式是 'true' 还是 'false'。'true' 返回通常从具有真值的表达式获得。相比之下，'false' 返回从不具有真值的表达式获得。
+这些数据类型表示 `true`（真）或 `false`（假）。通过使用布尔值，你可以发现 JavaScript 表达式是 `true` 还是 `false`。`true` 返回通常从具有真值的表达式获得。相比之下，`false` 返回从不具有真值的表达式获得。
 
 ### 4. 对象 (Objects)
 
 对象在意义上包含了所有数据类型，因为数字、布尔值和字符串都可以是对象。如数组、正则表达式和日期等数据都是对象。对象包含许多值并具有属性。因此，它们是命名值对容器。这种“名称:值”值对被称为属性（property）。它们可以是各种不同数据的集合。
 
-示例：
+**示例：**
+- `student: "Johnson"`
+- `country: "Sweden"`
+- `street: "Reed Avenue"`
 
-- student: "Johnson"
-- country: "Sweden"
-- street: "Reed Avenue"
-
-示例：
-
-```
+**示例：**
+```javascript
 var students = {firstName: "Lena", lastName: "Dean"};
 ```
-
 查看下图：
 
 ![](img/43ccb0e44db8b6abc2a9e33555ca4da1_50_0.png)
 
-它们通常以 'name:value' 对的形式表示。注意每对之间的冒号，以及每对后的逗号。属性值在引号中，整个语句在括号中。你可以在下一章以及关于数组的章节中了解关于对象的知识。由于变量的数据类型在各个章节中讨论，当你发现它们在 JavaScript 编码中的重要作用时，你将了解更多变量。
+它们通常以 `name:value` 对的形式表示。注意每对之间的冒号，以及每对后的逗号。属性值在引号中，整个语句在括号中。你可以在下一章以及关于数组的章节中了解关于对象的知识。由于变量的数据类型在各个章节中讨论，当你发现它们在 JavaScript 编码中的重要作用时，你将了解更多变量。
 
-## 第 11 章：使用原型 (Using Prototypes)
+## 第 11 章：使用原型
 
 你有时会听到脚本人员谈论 JavaScript 中的原型（Prototypes），你可能会好奇它们是什么。请继续阅读。
 
@@ -1086,17 +714,17 @@ var students = {firstName: "Lena", lastName: "Dean"};
 
 与可扩展属性和类一起，原型是对象的属性之一。
 
-正如提到的，你可以使用 name:"values" 值对来创建对象。让我们创建一个学生的对象：
+正如提到的，你可以使用 `name:"values"` 值对来创建对象。让我们创建一个学生的对象：
 
-示例 1：
+#### 示例 1
 
-```
+```javascript
 var student1 = {firstName: "Daniel", lastName: "Johnson", gender: "male"};
 ```
 
-示例 2：
+#### 示例 2
 
-```
+```javascript
 var student2 = Object.create(new Object());
 student2.firstName = 'Daniel';
 student2.lastName = 'Johnson';
@@ -1117,13 +745,14 @@ student2.lastName = 'Johnson';
 student2.gender = 'male';
 ```
 
-现在，在下一个示例中，使用以下程序/代码/语句调用了 'function student'：
+现在，在下一个示例中，使用以下程序/代码/语句调用了 `function student`：
 
 ```javascript
 function student(lastName, gender) {
   this.lastname = lastName;
   this.gender = gender;
 }
+
 student.prototype.gender = "male";
 // "male"
 var student3 = new student("lastName", "gender");
@@ -1133,39 +762,15 @@ var student3 = new student("lastName", "gender");
 
 ### 两种通用原型
 
-- 1. 函数的原型（Prototype 属性）
+#### 1. 函数的原型（Prototype 属性）
 
-### 特殊值
+这些原型（Prototypes）可以基于对象的实例，作为函数构造函数创建新对象。请记住，Prototype 属性默认是空的。这也称为基于原型的继承（Prototype-based inheritance），因为它可以从父原型函数中继承属性。
 
-### 特殊数值
+#### 2. 对象的原型（Prototype 属性）
 
-- NaN (不是数字) 错误在浏览器无法解析数字时，或当操作失败时出现。
-- Infinity 是数字无法表示其数量时出现的一种错误。当你将数字除以零时也会出现该错误。
-- NaN 和 Infinity 很少出现，所以不要对这些特殊值感到困惑。
-- Null 是当浏览器无法返回值时获得的。
+这些原型是对象所自继承的这些实例。这意味着每个对象都有一个“父”对象，它从该对象继承了属性。因此，它可以访问对象的属性。父对象包含在 `__proto__` 这个“伪”属性中。这些对象从 `Object.prototype` “继承”了所有属性。
 
-### 访问变量
-
-### 引用
-
-### 赋值
-
-
-
-
-这些原型（Prototypes）可以基于对象的实例，作为函数构造函数创建新对象。请记住，Prototype 属性默认是空的。
-
-这也称为基于原型的继承（Prototype-based inheritance），因为它可以从父原型函数中继承属性。
-
-### 2. 对象的原型（Prototype 属性）
-
-这些原型是对象所自继承的这些实例。这意味着每个对象都有一个“父”对象，它从该对象继承了属性。
-
-因此，它可以访问对象的属性。父对象包含在 `__proto__` 这个“伪”属性中。
-
-这些对象从 `Object.prototype` “继承”了所有属性。
-
-### 这里有一些一些示例，以便你更好地理解。
+### 示例
 
 ```javascript
 function Apparel() {
@@ -1173,7 +778,6 @@ function Apparel() {
   this.isFashion = true;
 }
 ```
-
 查看下一图：
 
 ```javascript
@@ -1181,26 +785,25 @@ function Apparel () {
   this.store = "Walden"
   this.isFashion = true;
 }
-undefined
+// undefined
 ```
 
+```javascript
 Apparel.prototype.showNameAndColor = function () {
-
   console.log("Walk the ramp with me," + this.name + " and my color is " + this.store);
-
 }
-
+```
 查看下方图：
 
-- > Apparel.prototype.showNameAndColor = function () {
+```text
+> Apparel.prototype.showNameAndColor = function () {
   console.log('Walk the ramp with me,' + this.name + ' and my color is ' + this.store);
-
-- > function () {
+}
+// > function () {
   console.log('Walk the ramp with me,' + this.name + ' and my color is ' + this.store);
+```
 
-我知道这看起来可能很复杂，但可以这样理解：它是从一个对象原型产生出一个函数原型。最后一个原型经过一系列处理后，从“父”原型（第一个函数 – `function Apparel`）创建了一个新对象。
-
-注意添加属性（如名称和颜色）的过程。
+我知道这看起来可能很复杂，但可以这样理解：它是从一个对象原型产生出一个函数原型。最后一个原型经过一系列处理后，从“父”原型（第一个函数 – `function Apparel`）创建了一个新对象。注意添加属性（如名称和颜色）的过程。
 
 一个更简单的例子是这样的：
 
@@ -1209,7 +812,6 @@ function Apparel (type) {
   this.type = type;
 }
 ```
-
 这是父函数，你的原型将源于这里。
 
 查看下方图：
@@ -1218,24 +820,19 @@ function Apparel (type) {
 
 正如我们所见，每个函数都有一个 Prototype 属性，Apparel 函数也有。
 
-让我们尝试向 apparel 的函数属性添加属性。我们添加的属性是 'fashionable'。
+让我们尝试向 apparel 的函数属性添加属性。我们添加的属性是 `fashionable`。
 
-当我们创建一个新变量 'cotton' 时，这个新变量等于 Apparel 原型。这就是当执行语句（按下 Enter 键）时，它返回值 'true'的原因。
-
-这意味着 cotton 也是 'fashionable'，这是 Apparel 原型的属性。
-
-新变量（cotton）继承了父函数和 Apparel 原型的属性。
+当我们创建一个新变量 `cotton` 时，这个新变量等于 Apparel 原型。这就是当执行语句（按下 Enter 键）时，它返回值 `true` 的原因。这意味着 cotton 也是 `fashionable`，这是 Apparel 原型的属性。新变量（cotton）继承了父函数和 Apparel 原型的属性。
 
 ```javascript
 Apparel.prototype.fashionable = 'apparel';
-"apparel"
+// "apparel"
 var cotton = new Apparel('cotton');
-undefined
+// undefined
 cotton.__proto__ == Apparel.prototype
-true
+// true
 ```
-
-注意：紫色的字母是按下 Enter 键后的返回值。所有代码都是如此。返回值包含在某些 JavaScript 语句中，所以请留意它们。
+> **注意：** 紫色的字母是按下 Enter 键后的返回值。所有代码都是如此。返回值包含在某些 JavaScript 语句中，所以请留意它们。
 
 查看下方图：
 
@@ -1243,7 +840,7 @@ true
 
 希望这有助于你理解原型的功能。
 
-提示：
+### 提示
 
 - 在 JavaScript 中，所有函数都有原型。
 - `__proto__` 单词由两个下划线符号 + proto + 两个下划线组成。
@@ -1253,7 +850,7 @@ true
 
 JavaScript 有自己组织良好的程序流。语句的执行顺序通常从程序/脚本/代码的顶部向下开始。但是——这是在第一条语句没有必须执行的其他动作/命令的情况下。
 
-例如，使用函数 'prompt' 时，浏览器必须等待用户与 prompt 交互，然后才能执行下一个命令。
+例如，使用函数 `prompt` 时，浏览器必须等待用户与 prompt 交互，然后才能执行下一个命令。
 
 函数主要控制程序的流向。某些函数可能会将流转向到不同的方向。一个函数可以引导另一个函数，从而减慢流速。
 
@@ -1266,7 +863,6 @@ document.write('This is the length of my string: ' + length);
 ```
 
 程序流可能是：
-
 - 输入新变量
 - 测量字符串的长度
 - 在屏幕上写入“This is the length of my string...”的返回值。
@@ -1275,19 +871,17 @@ document.write('This is the length of my string: ' + length);
 
 流程控制控制 JavaScript 程序的流程。流程控制有两种类型：
 
-- 1. 循环类型
+### 1. 循环类型
 
-这些通过动作的迭代、重复或连续性或代码执行来表示。它利用了 for, for-in, while, do-while。这将在第32章关于循环的话题中讨论。
+这些通过动作的迭代、重复或连续性或代码执行来表示。它利用了 `for`, `for-in`, `while`, `do-while`。这将在第 32 章关于循环的话题中讨论。
 
-同样，循环的 'break' 和 'continue' 可以影响程序流。Break 停止并终止循环，而 continue 允许循环继续其动作。
+同样，循环的 `break` 和 `continue` 可以影响程序流。`break` 停止并终止循环，而 `continue` 允许循环继续其动作。
 
-### 示例：
-
+**示例：**
 ```javascript
-for (number=0;number<10;number++)
-if (number==6) break; else document.write(number+'<br>');
+for (number=0; number<10; number++)
+  if (number==6) break; else document.write(number+'<br>');
 ```
-
 查看下方图：
 
 ![](img/43ccb0e44db8b6abc2a9e33555ca4da1_58_0.png)
@@ -1300,24 +894,23 @@ if (number==6) break; else document.write(number+'<br>');
 <html>
 <head>
 <script>
-for (number=0;number<10;number++)
-if (number==6) break; else document.write(number+'<br>');
+for (number=0; number<10; number++)
+  if (number==6) break; else document.write(number+'<br>');
 </script>
 </head>
 </html>
 ```
-
 查看下方图：
 
 | 文件 | 编辑 | 格式 | 查看 | 帮助 |
 |---|---|---|---|---|
-| <html><br><head><br><title>Break</title><br><script><br>for (number=0;number<10;number++)<br>if (number==6) break; else document.write(number+'<br>');<br></script></head></html> | | | |
+| `<html><br><head><br><title>Break</title><br><script><br>for (number=0;number<10;number++)<br>if (number==6) break; else document.write(number+'<br>');<br></script></head></html>` | | | | |
 
-### 决策类型
+### 2. 决策类型
 
-在这种类型中，程序根据条件流。这些语句使用了 'if', 'else-if', 'else' 用于 while/do-while。
+在这种类型中，程序根据条件流。这些语句使用了 `if`, `else-if`, `else` 用于 `while`/`do-while`。
 
-'if' 语句是最简单的。
+`if` 语句是最简单的。
 
 ```javascript
 if (condition) {
@@ -1327,77 +920,54 @@ if (condition) {
 
 循环和决策控制的区别在于循环具有持续动作，而决策控制只执行一次。
 
-## 第13 章：创建字符串
+## 第 13 章：创建字符串
 
 字符串是什么？它们在 JavaScript 中的作用是什么？我们必须学习字符串，因为它们是代码的重要部分。
 
 ### 什么是字符串？
 
-字符串是一个单词、一组单词或文本，被包含在引号 (' ') 或双引号 ("") 内部。你可以通过关键字 'var' 存储它们。
+字符串是一个单词、一组单词或文本，被包含在引号 (`' '`) 或双引号 (`""`) 内部。你可以通过关键字 `var` 存储它们。
 
-示例：这些示例以斜体显示，以便你可以立即识别它们。
+**示例：**
 
-- > alert ("My name is Jekyll")
-  示例中的字符串是="My name is Jekyll"
-
-- > var name="Jekyll"
-  第二个示例中的字符串是="Jekyll"
+- `alert ("My name is Jekyll")` -> 示例中的字符串是 `"My name is Jekyll"`
+- `var name="Jekyll"` -> 第二个示例中的字符串是 `"Jekyll"`
 
 注意双引号可以用单引号替换，仍然被称为字符串。
 
-示例：使用相同的示例，我们得出了单引号的示例：
+**示例：使用相同的示例，我们得出了单引号的示例：**
 
-- > alert ('My name is Jekyll.')
-  示例中的字符串是='My name is Jekyll.'
+- `alert ('My name is Jekyll.')` -> 示例中的字符串是 `'My name is Jekyll.'`
+- `var name='Jekyll'` -> 第二个示例中的字符串是 `'Jekyll'`
 
-- > var name='Jekyll'
-  第二个示例中的字符串是='Jekyll'
+### 字符串的用途
 
-### 字符串的用途：
+#### 1. 字符串可以使用 `alert` 创建警告。
 
-- 1. 字符串可以使用 'alert' 创建警告。
-
-示例：
-
+**示例：**
 ```javascript
 alert ("Hello, enjoy your stay here.")
 ```
 
-### 注意：
+> **注意：** `alert` 通常是一个供用户阅读的弹出窗口。你现在可以使用你的 Mozilla 或 Google Chrome ‘Console’ 测试你的代码是否工作。你可能想清除之前的输入条目，可以通过点击控制台上部分的符号来实现。在 'Console' 中，输入 `alert("Hello, enjoy your stay here.")`。查看上面的示例。在你按下 'enter' 后，弹出窗口或警告将显示你输入的字符串。有些程序员使用关键字 `window.alert`。在本书中，我们将使用形式形式 `alert`。
 
-alert 通常是一个供用户阅读的弹出窗口。你现在可以使用你的 Mozilla 或 Google Chrome ‘Console’ 测试你的代码是否工作。
-
-你可能想清除之前的输入条目，可以通过点击控制台上部分的符号来实现。
-
-在 'Console' 中，输入 'alert("Hello, enjoy your stay here.")'。查看上面的示例。在你按下 'enter' 后，弹出窗口或警告将显示你输入的字符串。
-
-有些程序员使用关键字 'window.alert'。在本书中，我们将使用形式形式 alert。
-
-- 2. 你可以切割你的字符串并组合创建新的。
+#### 2. 你可以切割你的字符串并组合创建新的。
 
 旧的字符串没有被删除，但你可以从之前的字符串创建一个新的。
 
-### 示例：
+**示例：**
 
 你有这两个字符串：尝试在你的 Google Chrome 控制台输入它们：
 
 ```javascript
 mystring1="My name is Jekyll.",
-```
-
-```javascript
 mystring2="I am twenty years old.",
 ```
-
-
-
 查看下方图片：
 
 ![](img/43ccb0e44db8b6abc2a9e33555ca4da1_62_0.png)
 
-你想合并你的字符串，特别是“Jekyll”和“twenty years old”这两个单词。
-
-你的代码如下：
+你想合并你的字符串，特别是“Jekyll”和“twenty years old”这两个单词。你的代码如下：
 
 ```javascript
 alert("Jekyll." + " twenty years old.");
@@ -1414,19 +984,16 @@ mystring2 = ( "I am twenty years old." );
 // "I am twenty years old."
 alert ("Jekyll," + " twenty years old.");
 ```
-
 ![](img/43ccb0e44db8b6abc2a9e33555ca4da1_63_0.png)
 
-3. 你可以在一行内创建两个警框。
+#### 3. 你可以在一行内创建两个警框。
 
 用分号隔开第一个警框，以表示它已经结束，并且你正在创建一个新的：
 
-示例：
-
+**示例：**
 ```javascript
 alert('Good morning!'); alert('How are you today?');
 ```
-
 查看下方图片：
 
 ```javascript
@@ -1445,85 +1012,67 @@ alert('Good morning!'); alert('How are you today?');
 
 ![](img/43ccb0e44db8b6abc2a9e33555ca4da1_65_0.png)
 
-提示：
+### 提示
 
 - 使用匹配的双引号或单引号包裹你的单词字符串。
-- 如果旧字符串中单词前面有单词，请在单词前添加一个空格；如果旧字符串后面后面后面单词，请在单词后添加一个空格。
+- 如果旧字符串中单词前面有单词，请在单词前添加一个空格；如果旧字符串后面后面单词，请在单词后添加一个空格。
 - 添加分号来表示语句/命令/代码已结束。
-- 在某些浏览器中，当你必须添加带有引号的单词时，在单引号前使用反斜杠 \，或者在双引号前以及闭合的双引号之前使用反斜杠。
+- 在某些浏览器中，当你必须添加带有引号的单词时，在单引号前使用反斜杠 `\`，或者在双引号前以及闭合的双引号之前使用反斜杠。
 
-示例 1：
-
+**示例 1：**
 ```javascript
 var message1 = "I don't want to come.";
 ```
-
 无论你是像上面的示例语句那样创建代码，还是像下面的示例语句那样编写语句，Mozilla 和 Google Chrome 都会执行它们，并产生正确的结果/返回数据。
 
 ```javascript
 var message1 = "I don't want to come."
 ```
 
-### 示例 2
-
+**示例 2：**
 ```javascript
-var message2 = "Never mention the "neopoliticians" because this is dangerous.";
+var message2 = "Never mention the \"neopoliticians\" because this is dangerous.";
 ```
-
 在某些浏览器中，为了为上述语句正确创建代码，请这样编写你的代码：
 
 ```javascript
 var message2 = "Never mention the \"neopoliticians\" because this is dangerous."
 ```
-
 查看后续图片：斜杠不会显示。
 
 ![](img/43ccb0e44db8b6abc2a9e33555ca4da1_66_0.png)
 
-- 反斜杠 \ 也用于分割文本字符串中的代码行。然而，你不能使用相同的符号来分割代码行。
+- 反斜杠 `\` 也用于分割文本字符串中的代码行。然而，你不能使用相同的符号来分割代码行。尽管并不是所有的浏览器都识别这个符号，因此你可能想使用加号 (`+`) 来添加你的字符串。
 
-尽管并不是所有的浏览器都识别这个符号，因此你可能想使用加号 ( + ) 来添加你的字符串。
-
-### 示例：
-
+**示例：**
 ```javascript
 alert('I am excited to learn about JavaScript\. It is so interesting.');
 ```
-
 查看后续图片：
 
 ![](img/43ccb0e44db8b6abc2a9e33555ca4da1_67_0.png)
 
-### 提示：
+### 提示
 
 - 在你的 Chrome 和 Mozilla 的 JavaScript 中不需要反斜杠，因为即使文本中带有引号，浏览器也会执行字符串的代码。
 - 反斜杠更多地用于 JavaScript 代码的注释以及阻止代码的执行。
 
 ## 第 14 章：查找和替换字符串
 
-如果你想的话，可以查找一个字符串并替换它。你只需要使用正确的方法。此过程的关键字是：
+如果你想的话，可以查找一个字符串并替换它。你只需要使用正确的方法。此过程的关键字是：`string.replace(searchvalue, newvalue)`。
 
-`string.replace(searchvalue, newvalue).`
-
-示例：
-
+**示例：**
 ```javascript
 var str = 'He went to Okinawa yesterday.';
 var set = str.replace(/Okinawa/g, 'Seoul');
 ```
-
 ![](img/43ccb0e44db8b6abc2a9e33555ca4da1_68_0.png)
 
-注意 'Okinawa' 被替换为 'Seoul'。替换单词后的小 'g' 代表 'global'（全局）。
-
-浏览器可以是局部的也可以是全局的。建议使用全局的以防止错误。
-你可以通过 'function' 和 'return' 关键字返回替换后的文本或单词。
+注意 `Okinawa` 被替换为 `Seoul`。替换单词后的小 `g` 代表 `global`（全局）。浏览器可以是局部的也可以是全局的。建议使用全局的以防止错误。你可以通过 `function` 和 `return` 关键字返回替换后的文本或单词。
 
 ## 第 15 章：字符串拼接
 
-你可以将字符串或字符串的部分相互拼接（合并）。你可以通过加号 (+) 运算符来拼接字符串。假设你有这个原始 alert 语句：
-
-“My name is Jekyll.”
+你可以将字符串或字符串的部分相互拼接（合并）。你可以通过加号 (`+`) 运算符来拼接字符串。假设你有这个原始 alert 语句：“My name is Jekyll.”
 
 查看下方图片：
 
@@ -1556,228 +1105,114 @@ alert("My name is " + username);
 ```javascript
 alert("My name is " + username);
 ```
-
 ![](img/43ccb0e44db8b6abc2a9e33555ca4da1_71_0.png)
-
-
-
-
-```javascript
-res = str.slice(2,7);
-```
-
-那么，对于代码 `res = str.slice(2,6)`，结果为什么是 “is” 呢？
-
-这是因为分配给字符串的位置如下（从 2 到 5）：
-
-### 分配的位置：
-
-```
-I=0
-t=1
-blank space=2 /这里是你想要开始切片的地方。
-i=3
-s=4
-blank space=5 //这里就是你想要结束切片的地方。因此你的结果是“is”（一个空格，'is' 以及另一个空格）。
-m=6 //这个不包含在内；它用于指示切片的结束。
-y=7
-space = 8
-t=9
-i=10
-m=11
-e=11
-space = 12
-...以此此类推。希望你已经理解了其中的含义。
-```
-
-不要担心，随着学习的学习，你会学会使用这些 JavaScript 语法。
-
-### 示例 2：
-
-```javascript
-str = 'It is my first time to use JavaScript.';
-res = str.slice(1,4);
-```
-
-分配的位置是相同的；只有“结束”位置变了。在上面的代码中，它表示起始位置是子字符串/位置 1，结束位置是子字符串/位置 3。
-
-结果是：
-
-```javascript
-res = "t i"
-```
-
-为什么得到这个结果？
-观察下方字符分配的位置。这与第一个示例相似。不同的是，切片的结束位置是 4。所以，结果将显示 1 到 3。
-
-```
-l=0
-t=1 //这里是你想要开始切片的地方
-blank space=2
-i=3 //这里就是你想要结束切片的地方。
-s=4
-blank space=5
-m=6
-y=7
-space = 8
-
-...以此此类推。
-```
-
-回顾分配的位置，你会发现位置 1 等于 “t”，而 1 到 3 之间的字符是：一个空格，然后是 ‘i’。
-
-因此，提取的结果是：
-
-```javascript
-res = 't i’
-```
-
-如果你想切片剩余的所有字符，那么指示切片的结束是可选的。
-假设你想提取从位置 4 开始到字符串末尾的字符。你的代码如下：
-
-```javascript
-str = 'It is my first time to use JavaScript.';
-res = str.slice(4);
-```
-
-结果将显示第 4 个字符以及字符串中剩余的所有字符。
-
-如果你回到我们之前讨论过的字符位置，“s” 的索引是 4。
-
-因此，你将从 "s" 开始提取到字符串末尾。因此，结果是：
-
-"s my first time to use JavaScript."
-
-查看下一图：
-
-![](img/43ccb0e44db8b6abc2a9e33555ca4da1_79_0.png)
-
-要仅提取字符串的第一个字符，你可以使用这段代码：
-
-```javascript
-str = 'It is my first time to use JavaScript.';
-res = str.slice(0, 1);
-```
-
-结果将是：
-
-'I'。
-
-查看下面的图片：此来自 Mozilla。
-
-```javascript
-str = 'It is my first time to use JavaScript.';
-res = str.slice(0, 1);
-"I";
-```
-
-如果你想提取整个字符串，请使用这些关键字：
-
-res = str.slice(0);
-
-因此，你的最终代码将是：
-
-str = 'It is my first time to use JavaScript.';
-res = str.slice(0);
-
-结果将是：
-
-> “It is my first time to use JavaScript.”
-
-查看下面的图片：
-
-![](img/43ccb0e44db8b6abc2a9e33555ca4da1_81_0.png)
-
-### 提醒：
-
-- 再次强调，你可以对字符串使用单引号或双引号。我必须反复强调这一点，因为我大部分的错误都源于这些引号。
-- 我交替使用它们，因为有时控制台接受双引号，但有时又不接受。
-- 即使你的代码是正确的，如果你仍然获得错误，可能是因为引号的问题。
-- 将你正在使用的类型改为另一种类型。如果你正在使用双引号，请切换到单引号，反之亦然。
-- 你可以探索 Mozilla 和 Chrome，并使用你最熟悉的浏览器。在这本书中，我同时在 Google 和 Mozilla 上工作。你可以选择你自己的浏览器；你是老板。
 
 ## 第 18 章：字符串的转换
 
 学习如何将你的数据转换为字符串对你来说是一个额外的优势。秘诀在于知道使用哪些关键字以及如何正确编写代码。
 
 **此操作的通用代码：**
-String(object);
+`String(object);`
 
-### 1. 将数字转换为字符串：
+### 1. 将数字转换为字符串
 
 ```javascript
 var myNumber = 10;
 var myString = myNumber.toString();
 ```
-
-尽管在下面的代码没有没有关键字 'var'，但浏览器（Chrome）仍然能够识别该脚本。问题是，数据无法被存储。
+尽管在下面的代码没有关键字 `var`，但浏览器（Chrome）仍然能够识别该脚本。问题是，数据无法被存储。
 
 查看下面的图片：
 
 ![](img/43ccb0e44db8b6abc2a9e33555ca4da1_82_0.png)
 
 你也可以使用这段代码：
-
 ```javascript
 myNumber = 10;
 myString = String(myNumber);
 ```
+这两段代码将为你提供相同的结果 - `"10"`。
 
-这两段代码将为你提供相同的结果 -"10"。
-
-### 2. 将字符串转换为小写或大写：
+### 2. 将字符串转换为小写或大写
 
 是的，你可以通过正确的代码快速完成这一点。
 
-### 示例：
-
+**示例：**
 ```javascript
 var myString1 = "I enjoy writing my JavaScript codes."
 var myString2 = myString1.toUpperCase();
 ```
-
 ![](img/43ccb0e44db8b6abc2a9e33555ca4da1_83_0.png)
 
 你也可以通过此语句将字符串转换为本地区域大写：
-
 ```javascript
 myString3 = myString1.toLocaleUpperCase();
 ```
-
 查看下面的图片（最后一行）：
 
+```text
 myString1 = 'I enjoy writing my JavaScript codes.';
-
 "I enjoy writing my JavaScript codes."
-
 myString2 = myString1.toUpperCase();
-
 "I ENJOY WRITING MY JAVASCRIPT CODES."
-
 myString3 = myString1.toLocaleUpperCase();
-
 "I ENJOY WRITING MY JAVASCRIPT CODES."
-
-当不确定 Locale 的 JavaScript 能力时，由于浏览器的差异，结果可能不同。但通常情况下，当你使用 `toUpperCase()` 时，结果是一致的。当你对 Locale 的 JavaScript 能力感到困惑时，请注意，在某些浏览器中，它可能表现不同。但在大多数情况下，使用 `toLocaleUpperCase()` 的结果是可靠的。当你对 Locale 的 JavaScript 能力感到困惑时，请注意，在某些浏览器中，它可能表现不同。但在大多数情况下，使用 `toLocaleUpperCase()` 的结果是可靠的。当你对 Locale 的 JavaScript 能力感到困惑时，请注意，在某些浏览器中，它可能表现不同。但在大多数情况下，使用 `toLocaleUpperCase()` 的结果是可靠的。当你对 Locale 的 JavaScript 能力感到困惑时，请注意，在某些浏览器中，它可能表现不同。但在大多数情况下，使用 `toLocaleUpperCase()` 的结果是可靠的。当你对 Locale 的 JavaScript 能力感到困惑时，请注意，在某些浏览器中，它可能表现不同。但在大多数情况下，使用 `toLocaleUpperCase()` 的结果是可靠的。当你对 Locale 的 JavaScript 能力感到困惑时，请注意，在某些浏览器中，它可能表现不同。但在大多数情况下，使用 `toLocaleUpperCase()` 的结果是可靠的。当你对 Locale 的 JavaScript 能力感到困惑时，请注意，在某些浏览器中，它可能表现不同。但在大多数情况下，使用 `toLocaleUpperCase()` 的结果是可靠的。当你对 Locale 的 JavaScript 能力感到困惑时，请注意，在某些浏览器中，它可能表现不同。但在大多数情况下，使用 `toLocaleUpperCase()` 的结果是可靠的。当你对 Locale 的 JavaScript 能力感到困惑时，请注意，在某些浏览器中，它可能表现不同。但在大多数情况下，使用 `toLocaleUpperCase()` 的结果是可靠的。当你对 Locale 的 JavaScript 能力感到困惑时，请注意，在某些浏览器中，它可能表现不同。但在大多数情况下，使用 `toLocaleUpperCase()` 的结果是可靠的。
+```
+当不确定 Locale 的 JavaScript 能力时，由于浏览器的差异，结果可能不同。但通常情况下，当你使用 `toUpperCase()` 时，结果是一致的。
 
 ### 3. 将字符串转换为小写
 
 将字符串转换为小写，这与将其转换为大写相似。
 
+**示例：**
+```javascript
+myString1 = 'I enjoy writing my JavaScript codes.';
+myString2 = myString1.toLowerCase();
+myString3 = myString1.toLocaleLowerCase();
+```
+当你按下 'Enter' 时，结果就会显示：
+
+使用 `toLowerCase()` 时，结果如下：
+```javascript
+myString1 = 'I enjoy writing my JavaScript codes.';
+myString2 = myString1.toLowerCase();
+myString3 = myString1.toLocaleLowerCase();
+```
+按下 'Enter' 后，控制台显示的结果：
+> “i enjoy writing my codes.”
+
+所有的大写字母都转换为小写了。
+
+查看下一图：
+
+![](img/43ccb0e44db8b6abc2a9e33555ca4da1_86_0.png)
+
+当使用 Locale 时，它产生了相同的结果：
+> "i enjoy writing my codes."
+
+查看下面的图片：第 5 行和第 6 行
+
+![](img/43ccb0e44db8b6abc2a9e33555ca4da1_86_1.png)
+
+这些简单的指令对高级程序员来说可能微不足道，但对于初学者来说，我知道这对你有多困难。这就像在走路之前先学爬。所以，我以简单的方式呈现了它们。但是，加油！如果你坚持坚持下去，你可以学到更多。
+
+请注意，与上一个例子一样，代码中并没有使用关键字 `var`。由于它们没有被保存，所以这方面没有问题。但在这些示例中我包含了关键字 `var`，因为你的浏览器可能需要它。如果你使用了它但浏览器返回了错误，那么你可以将其删除。学习的一部分就是犯错并从错误中学习，对吧吗？
+
+现在，让我们来看另一个例子。
+
 ## 第 19 章：确定字符串值的开头
 
 最常用的字符串方法在之前的章节中解释过了。这里是你在编写 JavaScript 代码时可能需要的其他方法。
 
-- startsWith() – 该功能的作用是判断字符串是否以指定的字符开头。如果不是，结果将显示 'false'。
+- `startsWith()` – 该功能的作用是判断字符串是否以指定的字符开头。如果不是，结果将显示 `false`。
 
 假设你想判断字符串是否以 “I” 开头，你可以写这样的 JavaScript 代码：
 
-示例：
-
+**示例：**
 ```javascript
-var res = myString1.startsWith (“I”); str.startsWith ('I');
+var res = myString1.startsWith (“I”); 
+str.startsWith ('I');
 ```
-
 由于我已经在代码的前早部分为我的字符串分配了值，即 `myString1 = 'I enjoy writing my JavaScript codes.'`，所以我能够迅速获得结果。
 
 查看下面的图片：（来自 Mozilla）
@@ -1788,293 +1223,192 @@ var res = myString1.startsWith (“I”); str.startsWith ('I');
 
 当你按下 'Enter' 时，结果就会显示：
 
-### 将字符串转换为小写：
-
 ```javascript
-myString1 = 'I enjoy writing my JavaScript codes.';
-myString2 = myString1.toLowerCase();
-myString3 = myString1.toLocaleLowerCase();
-```
-
-当你按下 'Enter' 时，结果就会显示：
-
-使用 `toLowerCase()` 时，结果如下：
-
-```javascript
-myString1 = 'I enjoy writing my JavaScript codes.';
-myString2 = myString1.toLowerCase();
-myString3 = myString1.toLocaleLowerCase();
-```
-
-按下 'Enter' 后，控制台显示的结果：
-
-> “i enjoy writing my codes.”
-
-所有的大写字母都转换为小写了。
-
-查看下一图：
-
-![](img/43ccb0e44db8b6abc2a9e33555ca4da1_86_0.png)
-
-当使用 Locale 时，它产生了相同的结果：
-
-> "i enjoy writing my codes."
-
-查看下面的图片：第 5 行和第 6 行
-
-![](img/43ccb0e44db8b6abc2a9e33555ca4da1_86_1.png)
-
-这些简单的指令对高级程序员来说可能微不足道，但对于初学者来说，我知道这对你有多困难。这就像在走路之前先学爬。所以，我以简单的方式呈现了它们。
-
-但是，加油！如果你坚持坚持下去，你可以学到更多。
-
-
-
-
-
-请注意，与上一个例子一样，代码中并没有使用关键字 'var'。由于它们没有被保存，所以这方面没有问题。
-
-但在这些示例中我包含了关键字 'var's，因为你的浏览器可能需要它。
-
-如果你使用了它但浏览器返回了错误，那么你可以将其删除。学习的一部分就是犯错并从错误中学习，对吧吗？
-
-现在，让我们来看另一个例子。
-
-```
 var res = myString1.startsWith('M');
 ```
-
 查看下图：
 
 ![](img/43ccb0e44db8b6abc2a9e33555ca4da1_89_0.png)
 
-根据 myString1 的值，得到的结果是 'false'，它的值是 'I enjoy writing my JavaScript codes.'。
+根据 `myString1` 的值，得到的结果是 `false`，它的值是 `I enjoy writing my JavaScript codes.`。
 
 注意，你也可以这样写代码：
-
-```
+```javascript
 var res = str.startsWith();
 ```
 
 ### 示例：（来自 Chrome）
 
-```
+```javascript
 res = str.startsWith('M')
-Uncaught ReferenceError: str is not defined(...)
+// Uncaught ReferenceError: str is not defined(...)
 ```
-
-在上面的图片中，我获得了一个错误返回，因为我的 'str' 没有定义。
+在上面的图片中，我获得了一个错误返回，因为我的 `str` 没有定义。
 
 如果你遇到了这种情况，那么你必须先给你的字符串赋值。
 
 假设你给字符串赋值了这个值：
-
-```
+```javascript
 var str = 'It is wonderful to be alive!';
 ```
-
-你必须将其输入到你的 'Console'（控制台）中，这样你或用户以后就可以它。
+你必须将其输入到你的 'Console'（控制台）中，这样你或用户以后就可以使用它。
 
 查看下一张图片：
-
-```
+```javascript
 str = 'It is wonderful to be alive!'
-"It is wonderful to be alive!"
+// "It is wonderful to be alive!"
 ```
+现在，你或用户可以使用它用于 `res = str.startsWith();` 方法。
 
-现在，你或用户可以使用它用于 res = str.startsWithWith(); 方法。
-
-### 示例：
-
-```
+**示例：**
+```javascript
 var str = 'It is wonderful to be alive!';
 ```
-
 这将返回：
+> "It is wonderful to be alive!"
 
-"It is wonderful to be alive!"
-
-```
+```javascript
 var res= str.startsWith('M');
 ```
-
 这将返回：
+> false
 
-false
-
-```
+```javascript
 var res = str.startsWith('I');
 ```
-
 这将返回：
-
-true
+> true
 
 查看下一张图片：
 
 ![](img/43ccb0e44db8b6abc2a9e33555ca4da1_91_0.png)
 
 该语句也可以这样表述：
-
-```
+```javascript
 var res = string.startsWith(searchValue, start);
 ```
 
-### 参数说明：
+### 参数说明
 
-searchValue 是要搜索的字符/字符串
-start = 指明从哪个位置开始搜索。这是可选的，如果你想搜索整个字符串，可以省略。
+- `searchValue` 是要搜索的字符/字符串
+- `start` = 指明从哪个位置开始搜索。这是可选的，如果你想搜索整个字符串，可以省略。
 
-### 示例 1：
+#### 示例 1
 
-```
+```javascript
 var res = str.startsWith('I',4);
 ```
+布尔结果为：`false`
+这是因为 `str` 的值（`It is wonderful to be alive!`，从位置 4 开始）并不以 `I` 开头。注意：位置 4 开头的是 `s`。
 
-布尔结果为：
+#### 示例 2
 
-false
-
-这是因为 'str' 的值（'It is wonderful to be alive!'，从位置 4 开始）并不以 'I' 开头。注意：位置 4 开头的是 's'。
-
-### 示例 2：
-
-```
+```javascript
 var res = str.startsWith('is', 3);
 ```
-
 查看下图：
 
 ![](img/43ccb0e44db8b6abc2a9e33555ca4da1_92_0.png)
 
-返回值为 'true'，因为 'is' 是字符串中的第 3 个值。
+返回值为 `true`，因为 `is` 是字符串中的第 3 个值。
 
-记住，如果没有指定 start 值，整个字符串将包含包含在布尔（true 或 false）返回中。
+记住，如果没有指定 `start` 值，整个字符串将包含在布尔（`true` 或 `false`）返回中。
 
 ## 第 20 章：搜索字符串
 
-你可以使用以下语句在字符串中搜索正则表达式或指定值：
-search() 或 string.search(searchValue)
+你可以使用以下语句在字符串中搜索正则表达式或指定值：`search()` 或 `string.search(searchValue)`。这将返回指定值的位置。搜索值将是一个正则表达式（RegExp）。
 
-这将返回指定值的位置。搜索值将是一个正则表达式（RegExp）。
-
-示例：
-
-```
+**示例：**
+```javascript
 var myString1 = 'I enjoy writing my Javascript codes.';
 var res = myString1.search('my');
 ```
-
 让我们使用之前示例中的相同值并输入它们：
 
 ![](img/43ccb0e44db8b6abc2a9e33555ca4da1_93_0.png)
 
 现在让我们使用我们的搜索语句：
-
-```
+```javascript
 var res = myString1.search('my');
 ```
-
 结果是 16。
 
 查看下图：
 
 ![](img/43ccb0e44db8b6abc2a9e33555ca4da1_94_0.png)
 
-这是因为 'my' 在字符串中的索引是 16。记住从 0 开始计数，并包含空格。
+这是因为 `my` 在字符串中的索引是 16。记住从 0 开始计数，并包含空格。
 
-### 示例 2：
+### 示例 2
 
-```
+```javascript
 var str = 'It is wonderful to be alive!';
 res = str.search('a');
 ```
-
 结果将是 22，表示指定字符的位置。
+
 查看下一张图片：
 
 ![](img/43ccb0e44db8b6abc2a9e33555ca4da1_94_1.png)
 
-### 提醒：
+### 提醒
 
 - 字符串可以是任何内容，从数字到文本。
 - 在执行命令之前，必须先为字符串值赋值。
 - 在此示例中，我逐条编写了语句并按‘Enter’，所以结果（棕色的单词和蓝色的数字）出现在图片中 JavaScript 语句之间。
-- 只要你定义了字符串，就可以使用 string.search()。
-- 如果没有识别到匹配项，结果将返回值 (-1)。
-- 以防你没有注意到：Mozilla 的输入区域位于‘Console’的底部。它是一条带有两个箭头 >> 的白色窄条，指示了你应该从哪里开始输入。
-- Chrome 则提供了整个‘Console’ 供你输入。
-- 如果搜索区分大小写，请在代码用字母 ‘i’ 标明。
+- 只要你定义了字符串，就可以使用 `string.search()`。
+- 如果没有识别到匹配项，结果将返回值 `-1`。
+- 以防你没有注意到：Mozilla 的输入区域位于‘Console’的底部。它是一条带有两个箭头 `>>` 的白色窄条，指示了你应该从哪里开始输入。Chrome 则提供了整个‘Console’ 供你输入。
+- 如果搜索区分大小写，请在代码用字母 `i` 标明。
 
-示例：
-
-```
+**示例：**
+```javascript
 var res = myList1.search(/my/i);
 ```
-
 这将返回值 16。
 
 查看下图：
-
-```
+```javascript
 myString1.search(/my/i);
-16
+// 16
 ```
-
-如前所述，字符串 myString1 已经分配了值，这就是为什么浏览器没有返回错误。
+如前所述，字符串 `myString1` 已经分配了值，这就是为什么浏览器没有返回错误。
 
 ## 第 21 章：重复字符串
 
-可以使用正确的 JavaScript 语句/代码按照你需要的次数重复字符串。
-你可以通过这种语法来实现：
+可以使用正确的 JavaScript 语句/代码按照你需要的次数重复字符串。你可以通过这种语法来实现：
 
-```
+```javascript
 string.repeat(count) or str.repeat(count)
 ```
 
-其中：
 
-Count 是你想要重复字符串的次数。
-
-示例：
-
-```
-var myString1 = 'I enjoy writing my codes.';
-```
-
-查看下图：
-
-![](img/43ccb0e44db8b6abc2a9e33555ca4da1_97_0.png)
 
 ## 第 22 章：JavaScript 和数学运算符
 
-JavaScript 中可以使用一些常用的运算符。别担心，最常用或最基础的运算符就是你小学时期就熟悉的那些。
+JavaScript 中可以使用一些常用的运算符。最常用或最基础的运算符就是你小学时期就熟悉的那些。
 
-基础运算符
+### 基础运算符
 
-- + 用于数字相加，以及字符串——充当连接运算符
-- * 用于乘法
-- - 用于减法
-- / 除法
-- % 用于余数 - 这是一个模运算运算符。它给出答案的余数，而不是除法的结果。当一个数字被另一个数字整除时，它返回值 0。
-- ++ 递增——这递增地将整数值增加。
-- -- 递减——这递减地将整数值减少。
+- `+` 用于数字相加，以及字符串——充当连接运算符
+- `*` 用于乘法
+- `-` 用于减法
+- `/` 除法
+- `%` 用于余数 - 这是一个模运算运算符。它给出答案的余数，而不是除法的结果。当一个数字被另一个数字整除时，它返回值 0。
+- `++` 递增——这递增地将整数值增加。
+- `--` 递减——这递减地将整数值减少。
 
 你的 JavaScript 控制台也可以作为你的计算器。JavaScript 会观察数学表达式，识别表达式中的符号。值是表达式中的数字。你可以通过引用字母来保存你的表达式。
 
-加法示例：
+#### 加法示例
 
-在你的控制台上输入 `6 + 4`，当你按下'Enter'时，答案 10 就会出现。
+在你的控制台上输入 `6 + 4`，当你按下 Enter 时，答案 10 就会出现。
 
-在你的控制台上输入 `1234 + 4567`，当你按下'Enter'时，答案 5801 就会出现。
-
-
-
-
+在你的控制台上输入 `1234 + 4567`，当你按下 Enter 时，答案 5801 就会出现。
 
 ![](img/43ccb0e44db8b6abc2a9e33555ca4da1_102_0.png)
 
-乘法示例：
+#### 乘法示例
 
 - 在你的控制台中输入 `723 * 137` 并按“回车键”，将出现答案 99051。
 - 在你的控制台中输入 `3190 * 287` 并按“回车键”，将出现答案 91530。
@@ -2083,7 +1417,7 @@ JavaScript 中可以使用一些常用的运算符。别担心，最常用或最
 
 ![](img/43ccb0e44db8b6abc2a9e33555ca4da1_102_1.png)
 
-减法和乘法示例：
+#### 减法和乘法示例
 
 查看下方图片：
 
@@ -2114,7 +1448,7 @@ JavaScript 中可以使用一些常用的运算符。别担心，最常用或最
 119505.6666666667
 ```
 
-在上述问题中，由于 `(456*786)` 和 `(235-134)` 被包含在括号内，它们会被计算。。是括号内结果的相加，最后是除以 3。这会给你最终答案：119505.6666666667
+在上述问题中，由于 `(456*786)` 和 `(235-134)` 被包含在括号内，它们会被计算。是括号内结果的相加，最后是除以 3。这会给你最终答案：119505.6666666667
 
 JavaScript 控制台将按照数学顺序 PEMDAS（括号、指数、乘法、除法、加法和减法）解决问题。因此，你可以通过将它们包含在括号内来指示 JavaScript 你想要求解的顺序。如果你不指定，JavaScript 将先计算指数，然后是乘法，接着是除法，最后是加法。
 
@@ -2148,7 +1482,7 @@ var commonNumber + 4;
 commonNumber = 6;
 anotherNumber = 4;
 finalNumber = commonNumber + anotherNumber;
-anotherNumber = finalNumber-commonNumber;
+anotherNumber = finalNumber - commonNumber;
 ```
 
 查看后续图片：
@@ -2161,7 +1495,7 @@ anotherNumber = finalNumber-commonNumber;
 var commonNumber = 6;
 var anotherNumber = 4;
 var finalNumber = commonNumber + anotherNumber;
-var anotherNumber = finalNumber-commonNumber;
+var anotherNumber = finalNumber - commonNumber;
 ```
 
 你也可以将你的语句转换为 alert。
@@ -2179,56 +1513,61 @@ alert(commonNumber + anotherNumber);
 
 不要忘记，如果数字包含在匹配的引号内，它们将被视为字符串；因此，在语句执行期间会被视为字符串。
 
-## 第23 章：表达式中的其他运算符
+## 第 23 章：表达式中的其他运算符
 
 JavaScript 中包含了你必须知道的其他数学运算符。
 
-- 1. 使用 `++` 符号。
+### 1. 使用 `++` 符号
+
 ```
 num++;
 ```
+
 `++` 符号表示变量上加 1。
+
 查看下方图片：
 
 ![](img/43ccb0e44db8b6abc2a9e33555ca4da1_109.png)
 
-- 2. 使用 `--`。
+### 2. 使用 `--`
+
 这是 `num++` 的相反操作。它从变量的值中减 1。
+
 查看下方图片：
 
 ![](img/43ccb0e44db8b6abc2a9e33555ca4da1_110.png)
 
 注意：“表达式”仅适用于数学。表达式也可以适用于值的组合，例如数字和字符串。当你在控制台中输入数字时，它会自动响应并进行计算。如果你不想发生这种情况，请将数字转换为字符串。
 
-### 赋值运算符：
+### 赋值运算符
 
 | 运算符 | 示例 | 等效于 |
 | :--- | :--- | :--- |
-| = (简单赋值) | c = a | 变量 c 分配了 a 的值 |
-| += (加赋值) | b += a | b = b + a |
-| -= (减赋值) | b -= a | b = b - a |
-| /= (除赋值) | b /= a | b = b / a |
-| *= (乘赋值) | b *= a | b = b * a |
-| % (取模/取模赋值) | b %= a | b = b % a |
+| `=` (简单赋值) | `c = a` | 变量 c 分配了 a 的值 |
+| `+=` (加赋值) | `b += a` | `b = b + a` |
+| `-=` (减赋值) | `b -= a` | `b = b - a` |
+| `/=` (除赋值) | `b /= a` | `b = b / a` |
+| `*=` (乘赋值) | `b *= a` | `b = b * a` |
+| `%=` (取模/取模赋值) | `b %= a` | `b = b % a` |
 
 ### 类型运算符
 
-- 1. `instanceof` 运算符当对象是该构造的实例时返回 `true`。
-- 2. `typeof` 返回变量的类型。
+- `instanceof` 运算符当对象是该构造的实例时返回 `true`。
+- `typeof` 返回变量的类型。
 
 ### 比较和逻辑运算符
 
-- 1. == 等于
-- 2. === 值和类型相等
-- 3. > 大于
-- 4. >= 大于等于
-- 5. < 小于
-- 6. <= 小于等于
-- 7. != 不等于
-- 8. !== 不相等
-- 9. ? 三元运算符
+- `==` 等于
+- `===` 值和类型相等
+- `>` 大于
+- `>=` 大于等于
+- `<` 小于
+- `<=` 小于等于
+- `!=` 不等于
+- `!==` 不相等
+- `?` 三元运算符
 
-## 第24 章：创建和显示日期
+## 第 24 章：创建和显示日期
 
 在 JavaScript 中，你可以在页面上创建并显示日期和时间。你可以以字符串形式创建日期：
 
@@ -2281,10 +1620,6 @@ var summer2022 = new Date(2022, 4, 12, 20, 0);
 - 如果日期参数包含在匹配的引号内，它们被视为字符串。
 - 对于整数，不需要引号。
 
-
-
-
-
 ## 第 25 章：Date 对象方法
 
 当你成为一名成熟的 Web 开发人员和程序员时，学习如何使用方法来操作日期时间元素将非常有帮助。梦想是免费的，所以为什么不梦想得大大一些呢？毕竟，成为一名高级脚本编写是从初学者开始的。
@@ -2292,9 +1627,11 @@ var summer2022 = new Date(2022, 4, 12, 20, 0);
 ### 1. 'get' 方法
 
 该方法用于“获取”日期对象的值。代码如下：
+
 `var dateObjectName.getParameter();`
 
 示例：
+
 `var summer2022.getMonth();`
 
 返回的数据将是 2，因为在 JavaScript 中，3 月是 2。
@@ -2317,10 +1654,9 @@ var summer2022 = new Date(2022, 4, 12, 20, 0);
 
 ```
 summer2022 = new Date("March 15, 2022");
-< Mar 15 2022 00:00:00 GMT+ (
-  Standard Time)
+< Mar 15 2022 00:00:00 GMT+ (Standard Time)
 summer2022.getMonth();
- function getMonth() { [native code] }
+function getMonth() { [native code] }
 summer2022.getMonth();
 < 2
 summer2022.getFullYear();
@@ -2342,7 +1678,7 @@ summer2022.getUTCFullYear();
 var dateObjectName.setParameter();
 ```
 
-### 示例：
+#### 示例
 
 假设你创建了一个新的日期对象：
 
@@ -2358,7 +1694,7 @@ var newYear = ("January 1, 2017");
 newYear.setMonth();
 ```
 
-### 示例：
+#### 示例
 
 我想将月份设置为 2 月；我的代码将是：
 
@@ -2407,6 +1743,7 @@ document.write(newYear);
 ### 3. 'to' 方法
 
 该方法用于获取日期对象的字符串值。通用代码为：
+
 `var dateObjectName.toParameter();`
 
 示例：
@@ -2448,6 +1785,7 @@ var lastYear = new Date("October 20, 2019");
 我们已经创建了 `lastYear` 作为新的 `dateObjectName`，值为 "October 20, 2019"。
 
 现在，我们可以从新的日期对象中访问 UTC、GMT 和 JSON 时间版本。
+
 查看下方执行或运行代码后的返回图片。在你的“Console”上，你只需要按回车键即可。
 
 ![](img/43ccb0e44db8b6abc2a9e33555ca4da1_122_0.png)
@@ -2460,9 +1798,9 @@ Prompt 用于与用户交互。Prompt 与 alert（警告框）类似，但它们
 
 示例：
 
-- 1. question = prompt("What is your
-- 2. defaultAnswer = "college";
-- 3. if (defaultAnswer) ...
+1. `question = prompt("What is your`
+2. `defaultAnswer = "college";`
+3. `if (defaultAnswer) ...`
 
 查看下方图片：
 
@@ -2506,10 +1844,6 @@ if (x === 'table salt') {
 ```
 
 ![](img/43ccb0e44db8b6abc2a9e33555ca4da1_129_0.png)
-
-
-
-
 
 提示：
 
@@ -2564,26 +1898,21 @@ else
 statement 2}
 ```
 
-**示例 1：**
+### 示例 1
 
 此脚本用于第 37 章中的图片切换。
 
-```
+```html
 <script type = "text/javascript">
 var imageCloud =['pic1.jpg', 'pic2.jpg'];
 var pics = new Array();
-
 for (var a in imageCloud) {
   pics[a] = new image();
   pics[a].src = imageClouds[a];
   var onPicImg = 0;
 }
-
 function swapImage (elemId) {
   switch (elemId) {
-```
-
-```
 if(onPicImg1 ==0) {
   onPicImg1 = 1;
 } else if (onPicImg1 ==1) {
@@ -2601,14 +1930,11 @@ if(onPicImg1 ==0) {
 
 这里有一个更简单的例子（让我们利用上一章的 'if' 示例）。
 
-示例 2：
+### 示例 2
 
 ```
 var x = prompt('What is the common name of sodium chloride?');
 if (x ==='table salt') {
-```
-
-```
 alert ('Correct!');
 }
 else {
@@ -2737,7 +2063,7 @@ var placesToSee = [
 
 见下面的图：
 
-![](img/43ccb0e44db8b6abc2a9e33555ca4da1_142_0.png
+![](img/43ccb0e44db8b6abc2a9e33555ca4da1_142_0.png)
 
 创建数组的通用语法是：
 
@@ -2763,9 +2089,9 @@ var name = arrayName[index number]
 
 数组元素或值的索引从 0 开始。
 
-因此，在 'places' 中，0 索引分配给 'Seoul'；1 对应 'Bangkok'；2 对应 'Venice'；3 对应 'Cheyenne'以此此类推。
+因此，在 'places' 中，0 索引分配给 'Seoul'；1 对应 'Bangkok'；2 对应 'Venice'；3 对应 'Cheyenne'以此类推。
 
-### 示例：
+#### 示例
 
 如果你想访问 'Cheyenne'你的语句应该是：
 
@@ -2776,14 +2102,11 @@ var res = places[3];
 见图片最后一行的结果：
 
 ```
-Array [ "Seoul", "Bangkok", "Venice",
-"Cheyenne", "New York" ]
+Array [ "Seoul", "Bangkok", "Venice", "Cheyenne", "New York" ]
 luckyNumbers = [7, 9, 13];
 Array [ 7, 9, 13 ]
-favories = ['ice cream', 'chocolates',
-'cakes', 'fruits'];
-Array [ 'ice cream', 'chocolates',
-'cakes', 'fruits' ]
+favories = ['ice cream', 'chocolates', 'cakes', 'fruits'];
+Array [ 'ice cream', 'chocolates', 'cakes', 'fruits' ]
 res = places[3];
 "Cheyenne"
 ```
@@ -2806,8 +2129,6 @@ arrayName[index];
 这段代码将返回值“chocolates”。
 
 见下面的图：
-
-
 
 ```javascript
 favorites = ['ice cream', 'chocolate', 'cake', 'fruits'];
@@ -2848,11 +2169,8 @@ Document.write(patients[3]);
 所以，你数组中值的索引是：
 
 'Elsa' = 0
-
 'Ana' = 1
-
 'Lily' = 2
-
 'Leo' = 3
 
 在编写语句时要小心，因为可能会返回错误，如下图所示的错误。缺少了右括号 ) 符号。
@@ -2874,7 +2192,7 @@ Document.write(patients[3]);
 
 这是因为学习计算机语言需要重复和练习。你必须不断练习才能完善这项技能。
 
-## 第30章：测量数组
+## 第 30 章：测量数组
 
 知道如何测量你的数组是有用的。程序员和 Web 开发人员通常测量数组的长度（length）属性。当你以后决定创建自己的交互式网站时，你会需要它。
 
@@ -2884,7 +2202,7 @@ Document.write(patients[3]);
 arrayName.length;
 ```
 
-示例 1：
+### 示例 1
 
 ```javascript
 var patients = ["Elsa", "Ana", "Lily", "Leo"];
@@ -2898,7 +2216,7 @@ patients.length;
 
 ![](img/43ccb0e44db8b6abc2a9e33555ca4da1_148_0.png)
 
-示例 2：
+### 示例 2
 
 ```javascript
 var students = ["Thompson", "Lyndon", "Cruise", "Trump", "Clinton"];
@@ -2909,7 +2227,7 @@ students.length;
 
 ![](img/43ccb0e44db8b6abc2a9e33555ca4da1_149_0.png)
 
-### 提示：
+### 提示
 
 - 你必须先输入或识别你的‘patients’数组。这意味着在测量长度之前，你需要先将‘patients’的元素输入‘Console’并按‘Enter’键。
 - 如果你获得错误返回/报告，你可以识别错误是什么内容。
@@ -2918,7 +2236,7 @@ students.length;
 这是学习过程的一部分，你探索得越多，学得越多。
 学习让你拥有犯错的权利。但不要反反复复地犯同样的错误，那不再是学习了。
 
-## 第31章：分割数组
+## 第 31 章：分割数组
 
 可以使用关键字 'splice' 对数组进行分割。'Splice' 的意思是从你的数组中移除元素。你可以移除你不需要的元素，同时保持数组的完整性。
 
@@ -2945,7 +2263,7 @@ students.splice(0,2);
 0 – 你想要开始的索引
 2 – 你想要移除的元素数量
 
-因此，在代码中，students.splice(0,2); 表示你想从“Thompson”开始并移除 2 个元素。
+因此，在代码中，`students.splice(0,2);` 表示你想从“Thompson”开始并移除 2 个元素。
 
 见下方图片：
 
@@ -2969,9 +2287,9 @@ students.splice(0,2);
 Name = 0
 Gender = 1
 
-因此，代码 students.splice(0,2) 显示了 ["Thompson", "male"]。
+因此，代码 `students.splice(0,2)` 显示了 ["Thompson", "male"]。
 
-## 第32章：循环数组
+## 第 32 章：循环数组
 
 你也可以对数组进行循环。循环按照你需要的次数重复数组。循环在维护记录和数据方面非常有用。
 
@@ -3112,13 +2430,13 @@ do {
 
 你可以根据自己的偏好更改数组名称，只要确保整个代码中使用的名称是正确且一致的。字母 ‘t' 只是我的偏好。
 
-## 第33章：多维数组和二维数组
+## 第 33 章：多维数组和二维数组
 
 多维或二维数组表示涉及两个或多个索引，因为会有多个或两个数组被利用。总而言之，会有嵌套数组，或者数组中的数组。
 
 我们将使用简单数组中的第一个示例来演示二维或多维数组。我们之前使用了单引号，但这次开始使用双引号，向你展示它们在 JavaScript 代码中均有效。
 
-### 如果是我们的简单数组：
+### 如果是我们的简单数组
 
 ```javascript
 var patients = ["Elsa", "Ana", "Lily", "Leo"];
@@ -3128,7 +2446,7 @@ var patients = ["Elsa", "Ana", "Lily", "Leo"];
 
 你应该正确地编写语句，以便轻松地在数组中创建数组。
 
-### 示例：
+### 示例
 
 ```javascript
 var patients = [
@@ -3138,8 +2456,6 @@ var patients = [
   "Leo"
 ];
 ```
-
-
 
 ["Elsa", "married", 30, "Chicago", "idiopathic anemia"],
 ["Ana", "single", 18, "Laramie", "viral hepatitis"],
@@ -3162,7 +2478,7 @@ document.write(patients[][0]);
 
 不要忘记默认的规则，即所有索引都从 0, 1, 2, 3 等以此类推开始。
 
-### 来自我们上一个数组的示例：
+### 来自我们上一个数组的示例
 
 ```javascript
 var patients = [
@@ -3187,7 +2503,7 @@ document.write(patients[0][4]);
 
 其中：
 
-- [0] – 表示你 patients 数组中的第一个索引，该索引是‘Elsa’，第二个括号 [4] 表示索引 4，即 Elsa 的疾病——‘特发性贫血’。
+- `[0]` – 表示你 patients 数组中的第一个索引，该索引是‘Elsa’，第二个括号 `[4]` 表示索引 4，即 Elsa 的疾病——‘特发性贫血’。
 
 此语句 `document.write(patients[0][4]);` 将会在你的网页上写入“特发性贫血”。
 
@@ -3254,10 +2570,10 @@ patients = [
 
 `document.write(patients[0][5][0]);`
 
-### 其中：
+### 其中
 
 - patients – 数组名
-- [0] – Elsa 的索引数字
+- `[0]` – Elsa 的索引数字
 
 索引：
 
@@ -3271,12 +2587,13 @@ patients = [
 ```javascript
 var patients = ['Elsa', 'Ana', 'Lily', 'Leo'];
 ```
+
 索引：0 1 2 3
 
-- [5] – 描述疾病 ‘Elsa’,‘married’, 30，‘Chicago’,‘idiopathic anemia’ ['mild']，‘iron’的数组索引
+- `[5]` – 描述疾病 ‘Elsa’,‘married’, 30，‘Chicago’,‘idiopathic anemia’ ['mild']，‘iron’的数组索引
 索引：0 1 2 3 4 5
 
-- [0] – 第五个数组‘mild’‘iron’的元素索引数字
+- `[0]` – 第五个数组‘mild’‘iron’的元素索引数字
 索引：0 1
 
 第三个括号的索引为：
@@ -3325,9 +2642,9 @@ var patients = [
 其中：
 
 - patients = 数组名
-- [0] – Elsa 的索引数字
-- [5] – 严重程度和治疗的索引
-- [1] – 治疗的索引
+- `[0]` – Elsa 的索引数字
+- `[5]` – 严重程度和治疗的索引
+- `[1]` – 治疗的索引
 - ‘proper nutrition’ – 要更改的文本
 
 当你将治疗从‘iron’更改为‘proper nutrition’时可以使用此代码：
@@ -3358,26 +2675,22 @@ JavaScript 可以找到网页内容中的元素并通过 DOM 通过 API（应用
 
 这些是你对 HTML 元素的操作。元素包含在段落中。
 
-### 示例：
+#### 示例
 
 ```javascript
 document.getElementById(id)
 ```
 
-一旦你开始输入 document.get...其余选项将下拉菜单中，你可以从中选择。
+一旦你开始输入 `document.get...` 其余选项将下拉菜单中，你可以从中选择。
 
 不要忘记在结尾添加括号，指定你想要交互或修改的元素，以及分号，表示语句结束。
 
+### 其他方法有
 
-
-
-
-### 其他方法有：
-
-- Element.removeAttribute(attribute);
-- element.setAttribute(attribute, value);
-- element.innerHTML;
-- element.style;
+- `Element.removeAttribute(attribute);`
+- `element.setAttribute(attribute, value);`
+- `element.innerHTML;`
+- `element.style;`
 
 ### DOM 属性
 
@@ -3399,7 +2712,7 @@ document.getElementById(id)
 
 所以，我将展示页面最基础的 HTML 代码，仅用于展示你在哪里以及如何插入你的 JavaScript 代码。
 
-- 1. 在 HTML 中，有起始标签和结束标签。
+1. 在 HTML 中，有起始标签和结束标签。
 
 每当你打开一个元素、值或数据时，都有对应的打开和关闭的标签。起始标签被包含在箭头，或者说大于和小于符号 `<>` 之中。结束标签使用斜杠配合箭头来表示它是结束标签 `</>`。
 
@@ -3410,7 +2723,7 @@ document.getElementById(id)
 </script>
 ```
 
-- 2. 基础的 HTML 代码如下：
+2. 基础的 HTML 代码如下：
 
 ```html
 <html>
@@ -3425,7 +2738,7 @@ document.getElementById(id)
 
 由于你可以将 JavaScript 插入到 HTML 的 `<body>` 或 `<head>` 中，你可以这样操作：
 
-### 在何处插入你的 JavaScript 代码：
+### 在何处插入你的 JavaScript 代码
 
 ```html
 <html>
@@ -3469,7 +2782,7 @@ document.getElementById(id)
 
 注意，HTML 代码的所有元素都有起始标签和结束标签。
 
-### 3. 插入一个‘Prompt（提示框）’。
+### 3. 插入一个‘Prompt（提示框）’
 
 如果你决定插入一个‘Prompt’，你所做的就是将代码插入到 ‘script’ 标签所在的地方：
 
@@ -3493,7 +2806,7 @@ console.log(welcome);
 
 ![](img/43ccb0e44db8b6abc2a9e33555ca4da1_174_0.png)
 
-- 4. 你可能也想用这种方法：
+### 4. 你可能也想用这种方法
 
 ```html
 <html>
@@ -3529,7 +2842,7 @@ document.getElementById("demo").innerHTML="Hello World!";
 
 在维护你网站良好的外观的同时，你可能需要操作和切换图片。你可以通过以下方法实现：
 
-使用 getElementById();
+使用 `getElementById()`;
 
 你可以通过使用插入/嵌入到 HTML 代码中的 JavaScript 代码来更改或切换图片。
 
@@ -3573,7 +2886,7 @@ document.getElementById("demo").innerHTML="Hello World!";
 
 注意与我们之前使用的 HTML 代码之间的区别。你可以看到：
 
-<!DOCTYPE html><html><head> 和 <script type="text/javascript">
+`<!DOCTYPE html><html><head>` 和 `<script type="text/javascript">`
 
 这与 `<script>` 标签的开头相同，即 `<script>`。
 
@@ -3595,9 +2908,6 @@ function changeImage(imageID, fileName) {
 
 然而，这些图片必须具有相同的尺寸。
 
-
-
-
 ```javascript
 nameOfWindow.close();
 ```
@@ -3610,7 +2920,7 @@ amazingWorld.close();
 
 访问其他页面的全局帧和全局变量仍有更复杂的代码，但你可以在 JavaScript 高级课程中学习所有这些内容。如果我们现在就开始学习，你可能会忘记基础代码并在过程中感到困惑。
 
-### 注意：
+### 注意
 
 - 高（height）、宽（width）、顶（top）、左（left）元素用数字表示。
 - 不同的窗口栏（工具栏、滚动条、菜单栏、标题栏）、位置（location）、状态（status）和可调整（resizable）元素用布尔值（yes 或 no）表示。
@@ -3654,7 +2964,6 @@ var sheet =
 document.createElement('style')
 sheet.innerHTML = "div{border: 3px navy blue; background color: yellow};"
 document.body.appendChild(sheet);
-
 <style>div{border: 3px navy blue; background color: yellow;}</style>
 ```
 
@@ -3692,7 +3001,7 @@ CSS 本身是一种不同的语言，所以你可能想在另一本书中学习�
 
 ## 第 40 章：测试弹出拦截器
 
-通过 JavaScript，你可以测试弹出拦截器。你可以创建一个 'if – else' 语句，并将其插入 HTML 代码的 <head> 部分。见下例：
+通过 JavaScript，你可以测试弹出拦截器。你可以创建一个 'if – else' 语句，并将其插入 HTML 代码的 `<head>` 部分。见下例：
 
 ```html
 <!DOCTYPE html>
@@ -3701,9 +3010,7 @@ CSS 本身是一种不同的语言，所以你可能想在另一本书中学习�
 <script>
 function checkPopup() {
   var windowName = 'jsBeginner';
-
   var winCheck = window.open('/popup-page.php, jsBeginner',height=350,width=540,left=24,top=24,menubar=no,resizable=no,scrollbars=no);
-
   if(!winCheck) {
     alert('请禁用弹出拦截器并再次点击“打开”。');
   } else {
@@ -3711,7 +3018,6 @@ function checkPopup() {
     alert('感谢访问。未检测到弹出拦截器。');
   }
 }
-
 window.onload = checkPopup;
 </script>
 </head>
@@ -3757,66 +3063,63 @@ window.onload = checkPopup;
 
 JavaScript 错误是不可避免的。
 
-
-
-
 ## 第 42 章：JavaScript 编码者的重要提示
 
 为了帮助你享受作为 JavaScript 编码者的新角色，这里是你必须遵循的重要提示总结：
 
-- 1. 相信你自己
+1. **相信你自己**
 
 如果你不相信自己，你就无法完成任何简单的任务。如果你熟悉那句名言：“信念可以移山”，那么现在是运用它的时候了。大脑是你开发技能的强大工具。每天尝试给自己打气，相信你可以做到，而且你确实可以。
 
-- 2. 按照自己的节奏学习。
+2. **按照自己的节奏学习。**
 
 学习不是一场赛跑，所以请按照自己的节奏学习。你可以阅读一两个章节，并在继续之前理解它们。如果你在这个过程中感到困倦，那么务必睡个午觉。这就是通过书本学习的优势。
 
-- 3. 让学习变得有趣。
+3. **让学习变得有趣。**
 
 学习是有趣的。抛弃那种在学习困难内容时必须皱眉苦脸的念头吧。在阅读章节时保持微笑，热情地欢迎新技术。写代码时可以听听柔和的音乐。你可以尝试各种语句，并在执行它们或按下“回车”键时，观察返回值中发生了什么。
 
-- 4. 不要害怕失败。
+4. **不要害怕失败。**
 
 失败是胜利的一部分。如果你没有尝过失败的滋味，如何能感激胜利？感谢你的失败，因为它们是你通往成功的垫脚石。
 
-- 5. 定期回顾章节。
+5. **定期回顾章节。**
 
 每当你忘记任何信息时，都可以随时回顾章节。你不应该死记硬背，而是应该理解这些信息，这样你就不需要记忆它们。
 
-- 6. 愿意探索。
+6. **愿意探索。**
 
 探索其他语言和应用，如 Python、HTML、CSS 和 JAVA，因为这些都是相互关联的。当然，你的知识将变得更加丰富。
 
-- 7. 工事好做（条路多一条）。
+7. **工事好做（条路多一条）。**
 
 如果你发现某个程序有其他编写代码的方法，请准备好学习它。JavaScript 是一种动态语言，随着技术的不断发展，预计也将随时代演进。
 
-- 8. 适应你浏览器的能力。
+8. **适应你浏览器的能力。**
 
 浏览器会帮助你编写语句，所以要和它友好。了解它的能力和局限性，并绕过这些限制。对于 JavaScript 编码，我推荐 Google Chrome 和 Mozilla。
 
-- 9. 括号是给数组的。
+9. **括号是给数组的。**
 
 这是你应该记住的一个重要事实。如果你不为数组使用括号，它们将不会被识别为数组。代码最初可能是有效的，但随后的语句将站不住脚。
 
-- 10. 引号是给字符串的。
+10. **引号是给字符串的。**
 
 引号可以用于数组内部元素以及其他用途。但指示文本或一组文本为字符串的唯一特征，是单词前后的引号。
 
-- 11. 分号是给语句的。
+11. **分号是给语句的。**
 
 如果你写完了语句，始终务必加上分号。如果你在写数组，双检你是否在语句后添加了分号。对于某些浏览器来说，分号可能是可选的，但谨慎行事总是有好处的。
 
-- 12. JavaScript 与 JAVA 不同。
+12. **JavaScript 与 JAVA 不同。**
 
 JAVA 与 JavaScript 没有任何关系。它们是不同的东西。
 
-- 13. 多学习一些 HTML。
+13. **多学习一些 HTML。**
 
 如果你还没有学习过 HTML，请继续学习 JavaScript 并转向 HTML。这是因为 HTML 是 JavaScript 的永恒宿主。它们之间强大且不可避免的关系将持续很长时间。因此，也请学习 HTML。
 
-- 14. 继续获取知识。
+14. **继续获取知识。**
 
 计算机语言非常广博，学习永无止境。养成阅读关于 JavaScript 新信息的习惯。
 
@@ -3844,10 +3147,10 @@ JAVA 与 JavaScript 没有任何关系。它们是不同的东西。
 
 编写以下内容的 JavaScript 代码：
 
-- 1. 在你的网页上显示一个欢迎访问者的提示框。
+1. 在你的网页上显示一个欢迎访问者的提示框。
 2. 一个显示：“你今天好吗？”的提示框。
 3. 一个包含美国旅游景点的数组。
-4. 你对第 3 题答案的维维数组。
+4. 你对第 3 题答案的多维数组。
 5. 获取并显示你第 3 题答案中索引为 3 的值。
 6. 显示你回答此测验时的时间。
 7. 定义一个名为‘employees’的变量并定义该变量。
@@ -3882,9 +3185,9 @@ JAVA 与 JavaScript 没有任何关系。它们是不同的东西。
 
 **说明：**编写以下内容的 JavaScript 代码：
 
-- 1. 在你的网页上显示一个欢迎访问者的提示框。
+### 1. 在你的网页上显示一个欢迎访问者的提示框。
 
-alert("Hello, welcome website!");
+`alert("Hello, welcome website!");`
 
 这段 JavaScript 代码随后插入 `<script>` 和 `</script>` 之间，位于页面 HTML 的 `<head>` 或 `<body>` 中。
 
@@ -3918,19 +3221,18 @@ alert("Hello, welcome website!");
 
 但要确保你的函数单词是小写的 'alert'；你的字符串在匹配的引号内；并且整个字符串被包含在左右括号中。
 
-- 2. 显示为 "你今天好吗？”的提示框。
+### 2. 显示为 "你今天好吗？”的提示框。
 
-prompt('How are you today?');
+`prompt('How are you today?');`
 
 提示：
 
 你可以使用双引号或单引号包围你的字符串，只要它们是匹配的。引号不匹配会导致错误。
 
-- 3. 一个包含美国旅游景点的数组。
+### 3. 一个包含美国旅游景点的数组。
 
 ```javascript
 var touristPlacesUs;
-
 touristPlacesUs = ['Hollywood', 'Statue of Liberty', 'Grand Canyon', 'Walt Disney World', 'Golden Gate Bridge'];
 ```
 
@@ -3939,11 +3241,10 @@ touristPlacesUs = ['Hollywood', 'Statue of Liberty', 'Grand Canyon', 'Walt Disne
 ```javascript
 var touristPlacesUs;
 touristPlacesUs = ['Hollywood', 'Statue of Liberty', 'Grand Canyon', 'Walt Disney World', 'Golden Gate Bridge'];
-
 Array [ "Hollywood", "Statue of Liberty", "Grand Canyon", "Walt Disney World", "Golden Gate Bridge" ]
 ```
 
-4. 你对第 3 题答案的多维数组。
+### 4. 你对第 3 题答案的多维数组。
 
 ```javascript
 var touristPlacesUs;
@@ -3956,8 +3257,6 @@ touristPlacesUs = [
 ];
 ```
 
-
-
 ```javascript
 var touristPlacesUs = [
   "Hollywood", "actors", "actresses",
@@ -3969,15 +3268,17 @@ var touristPlacesUs = [
 // [Array[3], Array[3], Array[3], Array[3], Array[3]]
 ```
 
-5. 获取并显示你第 3 题中索引为 3 的值。
-document.write(touristPlacesUs[3]);
+### 5. 获取并显示你第 3 题中索引为 3 的值。
+
+`document.write(touristPlacesUs[3]);`
 
 查看下方图片：
 
 ![](img/43ccb0e44db8b6abc2a9e33555ca4da1_201_0.png)
 
-6. 将你第 3 题答案中的索引 2 的改为“Yellowstone National Park”。
-touristPlacesUs[2] = 'Yellowstone National Park';
+### 6. 将你第 3 题答案中的索引 2 的改为“Yellowstone National Park”。
+
+`touristPlacesUs[2] = 'Yellowstone National Park';`
 
 查看下方图片：
 
@@ -3999,7 +3300,7 @@ touristPlaces[2] = 'Yellowstone National Park';
 
 你可以使用以下代码显示更改，以检查数据是否已改为 Yellowstone National Park：
 
-document.write(touristPlacesUs);
+`document.write(touristPlacesUs);`
 
 当你执行或按下 'Enter' 键时，数组的值将出现在页面上。查看下方图片：
 
@@ -4007,7 +3308,7 @@ document.write(touristPlacesUs);
 
 确实，“'Yellowstone National Park'现在已包含在列表中。
 
-- 7. 显示你回答此测验时的日期和时间。
+### 7. 显示你回答此测验时的日期和时间。
 
 ```javascript
 var today = new Date();
@@ -4016,7 +3317,7 @@ document.write(today);
 
 这将在你的网页上显示日期和时间。
 
-- 8. 创建名为 'employees' 的变量并定义该变量；
+### 8. 创建名为 'employees' 的变量并定义该变量；
 
 ```javascript
 var employees;
@@ -4027,18 +3328,23 @@ employees = ["Callaghan", "Denton", "Statham"];
 
 ![](img/43ccb0e44db8b6abc2a9e33555ca4da1_203_0.png)
 
-- 9. 使用 JavaScript 'Console' 解 10^{15} 表达式。
+### 9. 使用 JavaScript 'Console' 解 10^{15} 表达式。
 
 ```javascript
 10**15
 ```
+
+
 
 查看下方图片：
 
 ![](img/43ccb0e44db8b6abc2a9e33555ca4da1_203_1.png)
 
 10. 打印或显示你第 8 题答案的结果。
+
+```
 document.write(employees);
+```
 
 查看下方图片：
 
@@ -4050,30 +3356,28 @@ document.write(employees);
 
 | A 列 | B 列 |
 | --- | --- |
-| 1. _G_ 数据的容器 | A. 程序/代码 |
-| 2. _K_ 真或假值数据 | B. (= |
-| 3. _J_ 包围字符串的符号 | C. 括号 |
-| 4. _C_ 包围数组的符号 | D. 逗号 |
-| 5. _I_ 表示相等值的符号 | E. var |
-| 6. _B_ 赋值符号 | F. 语句 |
-| 7. _H_ 表示语句结束 | G. 变量 |
-| 8. _D_ 分隔不同的值 | H. 分号 |
-| 9. _E_ 变量的关键字 | I. (=) |
-| 10. _A_ 一组 JavaScript 语句 | J. 引号 |
-| | K. 布 |
-| | L. VAR |
+| 1. `G` 数据的容器 | A. 程序/代码 |
+| 2. `K` 真或假值数据 | B. `=` |
+| 3. `J` 包围字符串的符号 | C. 括号 |
+| 4. `C` 包围数组的符号 | D. 逗号 |
+| 5. `I` 表示相等值的符号 | E. `var` |
+| 6. `B` 赋值符号 | F. 语句 |
+| 7. `H` 表示语句结束 | H. 分号 |
+| 8. `D` 分隔不同的值 | I. `==` |
+| 9. `E` 变量的关键字 | J. 引号 |
+| 10. `A` 一组 JavaScript 语句 | K. 布尔值 |
+| | L. `VAR` |
 | | M. 字符串 |
-| | N. <=> |
+| | N. `<=>` |
 
 ## 结论
 
 你现在掌握了关于 JavaScript 的基础知识，这将有助于你进入更高级的课程。
 
-此外，你将能够自己编写简单的 JavaScript 代码。尝试在你的 Google Chrome 和 Mozilla ‘Console’ 中操作，并实验你的代码以发现你可以做什么。
+此外，你将能够自己编写简单的 JavaScript 代码。尝试在你的 Google Chrome 和 Mozilla “Console” 中操作，并实验你的代码以发现你可以做什么。
 
 显然，这本书对于高级学习者来说还有未讨论的困难主题，例如“电子邮件、文本字段以及网页用户其他数据的表单验证”，以及关于 JavaScript 的深度主题。但无疑，你已经学习了基础知识。
 
 最终，你必须接受一个巨大的挑战：创建你自己的网页并使用你从书中学到的所有代码。
 
 现在开始编码吧，玩得开心！
-

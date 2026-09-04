@@ -1,45 +1,33 @@
+
 # Bootstrap 快速上手：在周末内精通 Bootstrap
-
-
 
 ![](img/cover.png)
 
-
-
 ![SitePoint®](img/sitepoint-logo.png)
-
-
-
 
 作者 Syed Fazle Rahman
 
-
 产品经理：Simon Mackie
+
 技术编辑：Ivaylo Gerchev
+
 英文编辑：Kelly Steele
+
 封面设计：Alex Walker
-
-
 
 ## 免责声明
 
-
-
-
 ![SitePoint®](img/sitepoint-logo.png)
-
-
-
 
 ***
 
 ## 关于 Syed Fazle Rahman
 
-Syed Fazle Rahman 是一位 Web 开发人员和博客作者，拥有四多年的自由职业经验。他的专长包括 HTML5、CSS3、Less、JavaScript、jQuery 和 Ember.js。他目前正致力于智能手机和智能电视的混合应用程序。
+Syed Fazle Rahman 是一位 Web 开发人员和博客作者，拥有四多年的自由职业经验。他的专长包括 `HTML5`、`CSS3`、`Less`、`JavaScript`、`jQuery` 和 `Ember.js`。他目前正致力于智能手机和智能电视的混合应用程序。
 
 ## 关于 SitePoint
 
-SitePoint 专注于为 Web 专业人士出版有趣、实用且易于理解的内容。访问 [`www.sitepoint.com/`](http://www.sitepoint.com/) 访问我们的博客、书籍、时通讯、文章和社区论坛。你可以在那里找到关于 JavaScript、PHP、Ruby、移动开发、设计等大量信息。
+SitePoint 专注于为 Web 专业人士出版有趣、实用且易于理解的内容。访问 [`www.sitepoint.com/`](http://www.sitepoint.com/) 访问我们的博客、书籍、时通讯、文章和社区论坛。你可以在那里找到关于 `JavaScript`、`PHP`、`Ruby`、移动开发、设计等大量信息。
 
 ## 关于 Jump Start（快速上手）
 
@@ -53,7 +41,7 @@ Jump Start 系列书籍为您提供对 Web 开发语言和技术的快速且实�
 
 从零开始构建现代、专业的网站需要花费大量的时间和精力。今天的网站需要是响应式的、移动优先的、设计精美的且快速的。Bootstrap 通过提供大量的 HTML 组件和网格系统帮助设计师和开发人员，让创建专业的响应式模板变得轻而易举，并可以大幅缩短开发时间。
 
-Bootstrap 对所有人都有用，但对于初学者开发者来说，它是一个福音。创建复杂的 Web 组件所需的复杂 CSS 和 JavaScript 已经预写好了。只需要一些 HTML 标记即可让它们运行。经验丰富的开发者可以利用 Bootstrap 提供的许多自定义选项，包括对 Less 和 Sass 的支持。
+Bootstrap 对所有人都有用，但对于初学者开发者来说，它是一个福音。创建复杂的 Web 组件所需的复杂 CSS 和 JavaScript 已经预写好了。只需要一些 HTML 标记即可让它们运行。经验丰富的开发者可以利用 Bootstrap 提供的许多自定义选项，包括对 `Less` 和 `Sass` 的支持。
 
 在本书中，我试图提供一份 Bootstrap 框架的完整指南。我们将涵盖如何在不需要掌握高级 Web 开发技术的情况下构建美的响应式网站。我们将讨论 Bootstrap 开箱提供的各种实用 CSS 组件和 JavaScript 插件。我们涵盖自定义 Bootstrap 外观和感的各种方法，以生成完全独特的设计。
 
@@ -61,7 +49,7 @@ Bootstrap 对所有人都有用，但对于初学者开发者来说，它是一�
 
 ## 谁应该读这本书
 
-本书适合初级到中级的 Web 设计师和开发人员。假设读者已具有 HTML 和 CSS 经验，具备一些 JavaScript 知识会有帮助。
+本书适合初级到中级的 Web 设计师和开发人员。假设读者已具有 `HTML` 和 `CSS` 经验，具备一些 `JavaScript` 知识会有帮助。
 
 ## 使用的约定
 
@@ -164,21 +152,17 @@ SitePoint 论坛，用于寻求任何棘手 Web 问题的帮助。
 
 深入浅出地接触 Bootstrap
 
-
-
-
-
 在本章中，我们将学习 Bootstrap 的基础知识，并理解它如何加速 Web 开发流程。我们将首先简要回顾 CSS 框架的历史，然后解释“响应式网页设计”（`Responsive Web Design`，简称 `RWD`）这一术语。最后，我们将学习如何设置一个新的 Bootstrap 项目，并使用它创建我们的第一个基础网页项目。
 
 ## 什么是 Bootstrap？
 
-Bootstrap 是一个前端框架，帮助开发者快速启动 Web 开发流程。对于从 `Java` 或 `PHP` 等硬核服务器端编程语言转向前端开发的开发者来说，可能会发现掌握 CSS 和 JavaScript 非常困难；然而，通过 Bootstrap，他们只需要专注于编写正确的 HTML，将复杂的 CSS 和 JavaScript 留给 Bootstrap 即可。
+Bootstrap 是一个前端框架，帮助开发者快速启动 Web 开发流程。对于从 `Java` 或 `PHP` 等硬核服务器端编程语言转向前端开发的开发者来说，可能会发现掌握 `CSS` 和 `JavaScript` 非常困难；然而，通过 Bootstrap，他们只需要专注于编写正确的 `HTML`，将复杂的 `CSS` 和 `JavaScript` 留给 Bootstrap 即可。
 
 Bootstrap 不仅对新手 Web 开发者有用。随着本书的进行，你会发现 Bootstrap 也能为专家级程序员带来益处。
 
 ## 它为什么存在？
 
-想象一下，你必须设计一个具有吸引人的导航栏、时尚的按钮、精美的排版、文本和图像占位符、大尺寸图片轮播器等的网站——但你并不是前端开发专家。但是，如果这些功能已经为你写好了代码，你只需要写一点 HTML 就可以使用它们呢？这就是 Bootstrap。
+想象一下，你必须设计一个具有吸引人的导航栏、时尚的按钮、精美的排版、文本和图像占位符、大尺寸图片轮播器等的网站——但你并不是前端开发专家。但是，如果这些功能已经为你写好了代码，你只需要写一点 `HTML` 就可以使用它们呢？这就是 Bootstrap。
 
 所有需要的 CSS 类和 JavaScript 代码已经包含在 Bootstrap 安装包中了。例如，使用类 `btn` 配合链接（`<a></a>`）元素将使它们看起来像如图 1.1 所示的按钮。此外，在链接上使用 `btn-primary` 类将使其变成一个深蓝色按钮：
 
@@ -196,15 +180,15 @@ Visit Google
 
 ## 它能如何帮助我？
 
-正如我提到的，Bootstrap 是新手设计师的加分项，但并不限于新手。专家也可以将 Bootstrap 的代码作为基础来创建新东西。Bootstrap 允许你通过使用 [Less](http://lesscss.org/) 和 [Sass](http://sass-lang.com/) 来自定义其样式。熟悉这些技术的开发者可以完全修改 Bootstrap 的默认外观和感受。自定义 Bootstrap 有多种方法，我们将在后面的章节 中介绍这些方法。
+正如我提到的，Bootstrap 是新手设计师的加分项，但并不限于新手。专家也可以将 Bootstrap 的代码作为基础来创建新东西。Bootstrap 允许你通过使用 [`Less`](http://lesscss.org/) 和 [`Sass`](http://sass-lang.com/) 来自定义其样式。熟悉这些技术的开发者可以完全修改 Bootstrap 的默认外观和感受。自定义 Bootstrap 有多种方法，我们将在后面的章节 中介绍这些方法。
 
 ## CSS 框架的历史
 
-这一切始于 2006-07 年左右如 [YUI](http://yuilibrary.com/)（雅虎用户界面库）和 [Blueprint](http://www.blueprintcss.org/) 等 CSS 框架的流行。它们带来了许多基础资源，如 CSS 重置（CSS reset）、字体、网格、动画效果、按钮等。开发者开始意识到，这些框架对于处理开发网站时所需的许多繁燥重复任务非常有用，而且它们的使用可以极大地缩短开发周周期。
+这一切始于 2006-07 年左右如 [`YUI`](http://yuilibrary.com/)（雅虎用户界面库）和 [`Blueprint`](http://www.blueprintcss.org/) 等 CSS 框架的流行。它们带来了许多基础资源，如 CSS 重置（CSS reset）、字体、网格、动画效果、按钮等。开发者开始意识到，这些框架对于处理开发网站时所需的许多繁燥重复任务非常有用，而且它们的使用可以极大地缩短开发周周期。
 
-在这些基础 CSS 框架之后，是一代“全功能”前端框架，例如 Bootstrap，它将 JavaScript 也引入其中。Bootstrap 将常用的 CSS 和 JavaScript 组件组合在一起，满足了许多基本的开发需求，例如创建轮播图、制作弹出效果和下拉菜单。
+在这些基础 CSS 框架之后，是一代“全功能”前端框架，例如 Bootstrap，它将 `JavaScript` 也引入其中。Bootstrap 将常用的 CSS 和 JavaScript 组件组合在一起，满足了许多基本的开发需求，例如创建轮播图、制作弹出效果和下拉菜单。
 
-Bootstrap 封装了许多可以轻松用于网站项目的实用组件。它为每个组件都使用标准的 HTML 标记。通过 Bootstrap，开发者只需专注于编写框架可以理解并相应渲染的正确 HTML 标记即可。
+Bootstrap 封装了许多可以轻松用于网站项目的实用组件。它为每个组件都使用标准的 `HTML` 标记。通过 Bootstrap，开发者只需专注于编写框架可以理解并相应渲染的正确 `HTML` 标记即可。
 
 ### CSS 原型的需求
 
@@ -232,7 +216,7 @@ Bootstrap 1.0.0 于 2011 年发布，仅包含 CSS 和 HTML 组件。直到 Boot
 
 如果你想查看 Bootstrap 的完整历程，[查看 GitHub 上的历史发布](https://github.com/twbs/bootstrap/releases)。它还显示了每个版本所做的更改。
 
-今天，Bootstrap 有庞大的全球开发者社区在 GitHub 上为其代码库做出贡献。在 Stack Overflow 社区也有活跃讨论，标签如 [bootstrap](http://stackoverflow.com/tagged/bootstrap)、[twitter-bootstrap](http://stackoverflow.com/tagged/twitter-bootstrap) 和 [twitter-bootstrap-3](http://stackoverflow.com/tagged/twitter-bootstrap-3)。
+今天，Bootstrap 有庞大的全球开发者社区在 GitHub 上为其代码库做出贡献。在 Stack Overflow 社区也有活跃讨论，标签如 [`bootstrap`](http://stackoverflow.com/tagged/bootstrap)、[`twitter-bootstrap`](http://stackoverflow.com/tagged/twitter-bootstrap) 和 [`twitter-bootstrap-3`](http://stackoverflow.com/tagged/twitter-bootstrap-3)。
 
 Bootstrap 已成为今天最受青的技术之一。如果你是一名全栈开发者，它是必不可少的，正如来自 Indeed.com 的图 1.2 截图所示。
 
@@ -252,10 +236,6 @@ Bootstrap 已成为今天最受青的技术之一。如果你是一名全栈开�
 * [Yahoo 的 Pure](http://purecss.io/)
 
 ## 谁在使用 Bootstrap？
-
-
-
-
 
 在采用某项技术之前，查看基于该技术的真实项目是非常值得的。这有助于我们清楚地了解使用该特定技术可以实现什么。以下是一些借助 Bootstrap 创建的真实网站项目示例：
 
@@ -403,8 +383,6 @@ Bootstrap 需要 jQuery 才能使其 JavaScript 组件工作。访问 [jquery.co
 代码中的 `initial-scale=1` 意味着将其缩放为 100%。
 
 现在我们的 `index.html` 应该像这样：
-
-
 
 ```
 <!DOCTYPE html>
@@ -580,10 +558,6 @@ Bootstrap 建议我们将所有的行和列放在一个容器（container）中�
 
 为了让列更加清晰，让我们为每一列分配一个背景颜色。我们将在项目的 CSS 文件夹创建一个名为 `styles.css` 的新 CSS 文件。这不是一个标准文件名，你可以随意命名。接下来，我们将在 `index.html` 中通过 `head` 元素内的 `link` 元素链接此文件：
 
-
-
-
-
 ```
 <link href="css/styles.css" rel="stylesheet">
 ```
@@ -709,10 +683,6 @@ Bootstrap 建议我们将所有的行和列放在一个容器（container）中�
 在这个设计中，我们看到页眉看起来与桌面模式相同。下方的文章现在包含在双列布局中而不是三列。接下来，我们需要在移动设备上查看同一个网站。移动端显示的线框图如图 2.8 所示。
 
 ![移动端显示时网站的线框图](img/ch2wireframe-mobile.png)
-
-
-
-
 
 ```html
 <div class="container">
@@ -888,10 +858,6 @@ aliqua. </p>
 与平板一样，手机也可以横屏和平竖屏模式查看。移动设备的横屏视图利用小尺寸显示器（**屏幕宽度 ≥ 768px**），我们已经使用 `col-sm-*` 类处理过了。移动设备的竖屏视图采用超小尺寸显示器（**屏幕宽度 < 768px**）。
 
 根据移动设备的线框图，我们必须创建一个单列布局。我希望你已经知道如何在上述代码中实现它。对于超小屏幕，我们必须使用带有 `col-xs` 前缀的类。在这里，我们希望每个博客文章列占据所有的 12 个 Bootstrap 列，这样每行只有一个博客文章。我们的类将是 `col-xs-12`，让我们继续将此类添加到我们的代码中：
-
-
-
-
 
 ```html
 <div class="container">
@@ -1101,10 +1067,6 @@ href="css/bootstrap.css">
 </div>
 ```
 
-
-
-
-
 在代码中，`col-xs-9` 列被向右推了三列，因此它向右移动了。`col-xs-3` 列也被向左拉了九列。因此，在浏览器中查看时，它们似乎交换了原始位置。
 
 根据屏幕尺寸，`push` 和 `pull` 类有几种变体：
@@ -1117,15 +1079,19 @@ href="css/bootstrap.css">
 你可以根据想要 `pull` 或 `push` 的列数，将 `*` 替换为 1 到 12 之间的整数。
 
 ## 总结
+
 你可以使用 Bootstrap 的网格系统创建几乎任何种类型的网站布局。如果使用得当，你就可以设计出一个可以在几乎任何设备上运行的精美且响应式的网站。嵌套、偏移和重新排序等功能也使其更加强大。有关 Bootstrap 网格系统的更多文档，请参考 `http://getbootstrap.com/#grid`。
 
 # 第 3 章：探索组件本身
+
 在本章中，我们将开始使用 Bootstrap 中最实用的 HTML 组件。按钮、页眉、导航菜单和评论系统等组件在网站上非常常见。通过这些组件，Bootstrap 帮助我们快速轻松地为网站添加此类功能。
 
 ## 页面组件
+
 页面组件构成了页面的基本结构。页面组件的示例包括页眉、显示重要信息的突出面板（panels）、嵌套评论、图像缩略图和堆叠链接列表。这些都是流行的组件，从零开始开发需要很长时间。在本节中，我们将重点关注使用 Bootstrap 推荐的标记和类来创建可重用的 HTML 组件。
 
 ### 页头
+
 给页面一个标题或题目并不是难事。任何人都可以使用 `<h1>` 标签在网页上显示标题；然而，要用默认样式整齐地显示标题、在周围留出适当间距并在旁边带一个小副标题可能会花费意想不到的时间。幸运的是，Bootstrap 创建了一个作为页头的 HTML 组件，为我们处理了所有这些任务。在查看页头标记之前，我们先设置整个过程中将使用的项目。
 
 首先，复制 Bootstrap 文件夹的内容并将其粘贴到名为 `Chapter_3` 的新文件夹中。打开 `index.html` 文件并移除 `<body>` 标签内部存在的 `<h1>` 标签。现在，让我们添加页头的标记：
@@ -1139,6 +1105,7 @@ href="css/bootstrap.css">
 每当你想使用 `<h1>` 标签作为页面标题时，都可以将其封装在具有 `page-header` 类的 `<div>` 元素中，以创建一个页头。现在，让我们在浏览器中查看 `index.html`。它看起来应该像图 3.1 (#ch03.html_header "Figure 3.1. 一个基础页头")。
 
 ![一个页头](img/ch3Image1.png)
+
 图 3.1. 一个基础页头
 
 如你所见，页头组件除了为 `<h1>` 添加了一个细灰框外，没有添加任何额外的样式。它只带有添加副标题的样式，我们很快就会看到。在这里看到的一个小问题是页头贴住了浏览器的左边框。这是因为我们还没有为页面的所有内容定义一个容器（container）。所以，让我们创建一个全局容器：
@@ -1160,6 +1127,7 @@ href="css/bootstrap.css">
 ```
 
 结果可以在图 3.2 中看到 (#ch03.html_header "Figure 3.2. 容器中的页头")。![容器中的页头](img/ch3Image2.png)
+
 图 3.2. 容器中的页头
 
 如果你想在页面标题旁边添加副标题，可以将其放在我们之前使用的同一个 `<h1>` 标签内。确保将副标题封装在 `<small>` 标签中，如下所示：
@@ -1173,9 +1141,11 @@ href="css/bootstrap.css">
 ```
 
 效果可以在图 3.3 中看到 (#ch03.html_header "Figure 3.3. 带有副标题的页头")。![带有副标题的页头](img/ch3Image3.png)
+
 图 3.3. 带有副标题的页头
 
 ### 面板 (Panels)
+
 面板用于在带有圆角的框框内显示文本或图像。以下是创建面板的方法以及它在图 3.4 中的样子 (#ch03.html_panelbasic "Figure 3.4. 一个面板")：
 
 ```
@@ -1194,6 +1164,7 @@ href="css/bootstrap.css">
 ```
 
 ![一个面板](img/ch3Image4.png)
+
 图 3.4. 一个面板
 
 如你所示，面板 `<div>` 被分为三个部分：`panel-heading`、`panel-body` 和 `panel-footer`。这些面板部分每一个都是可选的。面板带有多种颜色选项。在之前的代码中，我通过 `panel-default` 类使用了默认颜色。你也可以使用其他类来表示不同的颜色：
@@ -1205,6 +1176,7 @@ href="css/bootstrap.css">
 * `panel-danger` 用于红色
 
 ### 媒体对象 (Media Object)
+
 媒体对象用于创建应包含左对齐或右对齐媒体（图像、视频或音频）以及某些文本内容的组件。它最适合创建诸如评论区、显示推文或显示带有产品详情的功能。
 
 为你的网站设计评论区可能是一项棘的任务。你需要仔细设计一些支持嵌套评论的可重用 HTML 标记。Bootstrap 的媒体对象非常有用，因为你可以非常轻松地创建多层嵌套评论。
@@ -1222,10 +1194,6 @@ href="css/bootstrap.css">
     </div>
 </div>
 ```
-
-
-
-
 
 ```
 <div class="media">
@@ -1321,6 +1289,7 @@ work!</h4>
     </div>
 </a
 ```
+
 ```
 
 如果你为页面上的每个缩略图都应用标题，它将产生与图 3.8 相似的结果。
@@ -1332,14 +1301,23 @@ work!</h4>
 你还可以为每个缩略图添加一些摘要和一个“阅读更多”按钮，以链接到网站中的不同页面。为此，我们首先需要将带有 `thumbnail` 类的链接元素替换为 `<div>` 元素。然后我们在 `caption` `<div>` 内部使用 `<p>` 添加摘要，并在同一个 `caption` `<div>` 内部添加一个带有“阅读更多”锚点以及 `btn` 和 `btn-primary` 类的链接。在进行这些更改后，我们文章缩略图的最终标记如下：
 
 ```
+
 <div class="thumbnail">
+
     <img src="images/microsoft.png">
+
     <div class="caption">
+
         <h3>Microsoft</h3>
+
         <p>Lorem ipsum dolor sit amet, consectetur ...</p>
+
         <p><a href="#" class="btn btn-primary">阅读更多</a></p>
+
     </div>
+
 </div>
+
 ```
 
 上述代码将产生与图 3.9 相似的结果。
@@ -1353,10 +1331,15 @@ work!</h4>
 尽管如此，列表组可以做的事情不仅仅是构建简单的列表。如果你想创建一个每个项目都包含某些文本内容以及标题的列表，可以使用以下代码：
 
 ```
+
 <a href="#" class="list-group-item">
+
     <h4 class="list-group-item-heading">项目标题</h4>
+
     <p class="list-group-item-text">Lorem ipsum dolor sit ...</p>
+
 </a
+
 ```
 
 我们还可以通过在 `list-group-item` 基础上添加 `list-group-item-*` 类为每个项目应用不同的颜色。它们如下：
@@ -1369,7 +1352,9 @@ work!</h4>
 例如，在下面的列表的 `list-group-item` 类中添加 `list-group-item-success` 将使其它变为浅绿色：
 
 ```
+
 <li class="list-group-item list-group-item-success">收件箱</li
+
 ```
 
 ### 列表组 (List Group)
@@ -1379,7 +1364,9 @@ work!</h4>
 我们还可以使用徽章（badge）组件在每个项目旁边显示一个数字。我们稍后会学习更多关于徽章的知识，但现在你可以添加以下代码段：
 
 ```
+
 <span class="badge">14</span>
+
 ```
 
 所以我们更新后的列表现在看起来像图 3.11。
@@ -1395,7 +1382,9 @@ work!</h4>
 我们还可以使用徽章（badge）组件在每个项目旁边显示一个数字。我们稍后会学习更多关于徽章的知识，但现在你可以添加以下代码段：
 
 ```
+
 <span class="badge">14</span>
+
 ```
 
 
@@ -1407,12 +1396,18 @@ work!</h4>
 我们如下创建类似标签的导航链接：
 
 ```
+
 <ul class="nav nav-tabs">
+
     <li class="active"><a href="#">About</a></li>
+
     <li><a href="#">Activity</a></li>
+
     <li><a href="#">Liked Pages</a></li>
+
 </ul
-```
+
+
 
 这是它们外观的截图（图 3.13）。
 
@@ -1422,14 +1417,14 @@ work!</h4>
 
 `nav` 类是标签和药丸共有的。我们添加了 `nav-tabs` 类使我们的导航栏看起来像标签页。
 
-我们通过这种方式创建类似药丸的导航链接（并在 图 3.14 中如所示）：
+我们通过这种方式创建类似药丸的导航链接（并在图 3.14 中如所示）：
 
-```
+```html
 <ul class="nav nav-pills">
     <li class="active"><a href="#">About</a></li>
     <li><a href="#">Activity</a></li>
     <li><a href="#">Liked Pages</a></li>
-</ul
+</ul>
 ```
 
 ![药丸式导航](img/ch3Image14-1.png)
@@ -1440,12 +1435,12 @@ work!</h4>
 
 我们还可以通过给它附加额外的类 `nav-stacked` 来将这些药丸垂直堆叠：
 
-```
+```html
 <ul class="nav nav-pills nav-stacked">
     <li class="active"><a href="#">About</a></li>
     <li><a href="#">Activity</a></li>
     <li><a href="#">Liked Pages</a></li>
-</ul
+</ul>
 ```
 
 图 3.15 显示了一些垂直堆叠的药丸导航。
@@ -1454,9 +1449,9 @@ work!</h4>
 
 图 3.15. 堆叠式药丸式导航
 
-## 导航栏 (Navbar)
+## 导航栏
 
-`Navbar` 是 Bootstrap 最有趣的组件之一。初级开发者经常认为构建导航栏是网站开发中最令人畏畏的任务之一。它带来了许多挑战，例如确保与页眉（header）以及正文部分的正确对齐。在导航栏内正确对齐链接、搜索栏和下拉菜单会使工作变得更加。
+`Navbar` 是 Bootstrap 最有趣的组件之一。初级开发者经常认为构建导航栏是网站开发中最令人畏惧的任务之一。它带来了许多挑战，例如确保与页眉以及正文部分的正确对齐。在导航栏内正确对齐链接、搜索栏和下拉菜单会使工作变得更加复杂。
 
 Bootstrap 让创建导航栏变得非常简单。它提供了各种选项来构建所有类型的响应式导航栏，这些导航栏在屏幕尺寸较小时会自动折叠。
 
@@ -1464,24 +1459,23 @@ Bootstrap 让创建导航栏变得非常简单。它提供了各种选项来构�
 
 首先，我们将构建一个 `div` 元素，带有两个类：`navbar` 和 `navbar-default`。这些类对 Bootstrap 来说非常重要，因为它们标识了在何处应用导航栏的样式和效果：
 
-```
+```html
 <div class="navbar navbar-default">
-</div
+</div>
 ```
 
 接下来，我们在这个 `navbar` 元素内部使用带有类 `container-fluid` 的 `div`。这将包裹导航栏的所有内容并在内部创建一个全宽容器：
 
-```
+```html
 <div class="navbar navbar-default">
     <div class="container-fluid">
-
     </div>
-</div
+</div>
 ```
 
 现在，让我们开始在导航栏内部插入其他元素。首先，我们将放置一个带有类 `navbar-header` 的 `div`。这将用于网站品牌，例如显示网站名称或 Logo。我们还会在 `navbar-header` 元素内部放置一个隐藏按钮，该按钮仅在导航栏折叠的较小屏幕上可见。此隐藏按钮稍后用于在小屏幕上展开折叠的菜单：
 
-```
+```html
 <div class="navbar navbar-default">
     <div class="container-fluid">
         <div class="navbar-header">
@@ -1493,19 +1487,19 @@ data-toggle="collapse" data-target="#mynavbar-content">
           </button>
           <a class="navbar-brand" href="#">SitePoint</a>
         </div>
-    </>
-</div
+    </div>
+</div>
 ```
 
 在代码中，我们放置了一个带有类 `navbar-toggle` 的按钮，Bootstrap 用它来激活导航栏的切换行为。它应该有两个自定义数据属性：`data-toggle` 和 `data-target`。`data-toggle` 告诉脚本在点击按钮时做什么，而 `data-target` 告诉在点击时切换哪部分内容。在这里，`data-target` 属性持有的是我们尚未定义的部分的 id。当点击按钮时，该部分将被切换。按钮内部的 `span` 元素用于显示图标。
 
-我们还定义了一个带有类 `navbar-brand` 的 `a` 元素，它承载了我们网站的名称。此时，让我们看看代码在浏览器中渲染的结果，如 图 3.16 所示。
+我们还定义了一个带有类 `navbar-brand` 的 `a` 元素，它承载了我们网站的名称。此时，让我们看看代码在浏览器中渲染的结果，如图 3.16 所示。
 
 ![导航栏](img/ch3Image15.png)
 
 图 3.16. 导航栏
 
-尝试缩小浏览器窗口。你应该看到在导航栏折叠的较小屏幕上显示隐藏按钮，如 图 3.17 所示。
+尝试缩小浏览器窗口。你应该看到在导航栏折叠的较小屏幕上显示隐藏按钮，如图 3.17 所示。
 
 ![导航栏显示](img/ch3Image16.png)
 
@@ -1513,7 +1507,7 @@ data-toggle="collapse" data-target="#mynavbar-content">
 
 接下来，我们将创建 `navbar-header` 的兄弟 `div`，它包含我们要放在导航栏内部的内容。我们将给这个元素两个类：`collapse` 和 `navbar-collapse`。正如按钮的 `data-toggle` 属性所示，代码现在看起来如下：
 
-```
+```html
 <div class="navbar navbar-default">
     <div class="container-fluid">
         <div class="navbar-header">
@@ -1525,17 +1519,15 @@ data-toggle="collapse" data-target="#mynavbar-content">
           </button>
           <a class="navbar-brand" href="#">SitePoint</a>
         </div>
-
         <div class="collapse navbar-collapse" id="mynavbar-content">
-
         </div>
     </div>
-</div
+</div>
 ```
 
-现在让我们开始向 `navbar-collapse` 元素填充我们要放入导航栏的链接组。我们在这里使用带有 `nav` 和 `navbar-nav`  `ul` 元素。这些类用于将链接与导航栏正确对齐：
+现在让我们开始向 `navbar-collapse` 元素填充我们要放入导航栏的链接组。我们在这里使用带有 `nav` 和 `navbar-nav` 类的 `ul` 元素。这些类用于将链接与导航栏正确对齐：
 
-```
+```html
 <div class="navbar navbar-default">
     <div class="container-fluid">
         <div class="navbar-header">
@@ -1547,7 +1539,6 @@ data-toggle="collapse" data-target="#mynavbar-content">
           </button>
           <a class="navbar-brand" href="#">SitePoint</a>
         </div>
-
         <div class="collapse navbar-collapse" id="mynavbar-content">
             <ul class="nav navbar-nav">
                 <li class="active"><a href="#">Home</a></li>
@@ -1558,31 +1549,28 @@ data-toggle="collapse" data-target="#mynavbar-content">
             </ul>
         </div>
     </div>
-</div
+</div>
 ```
 
-我们最终带有链接的导航栏应该像 图 3.18 所示。
+我们最终带有链接的导航栏应该像图 3.18 所示。
 
 ![最终导航栏](img/ch3Image17.png)
 
 图 3.18. 最终导航栏
 
-
-
-
-在本章的后后部分，我们将看到如何在 Bootstrap 中设计表单。你可以直接将该表单放在 `navbar-collapse` 元素中，以便显示在导航栏内部。
+在本章的后续部分，我们将看到如何在 Bootstrap 中设计表单。你可以直接将该表单放在 `navbar-collapse` 元素中，以便显示在导航栏内部。
 
 下拉菜单是我们今天看到的任何导航栏的另一个重要组件。你可以按照如下方法将 `navbar-nav` 列表中的一个 `li` 元素转换为下拉菜单：
 
-```
+```html
 <li class="dropdown">
     <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-↵关于 <b class="caret"></b></a>
+关于 <b class="caret"></b></a>
     <ul class="dropdown-menu">
         <li><a href="#">董事会成员</a></li>
         <li><a href="#">开发团队</a></li>
         <li><a href="#">设计团队</a></li>
-        <li><li class="divider"></li>
+        <li class="divider"></li>
         <li><a href="#">投资者</a></li>
         <li><a href="#">股东</a></li>
     </ul>
@@ -1599,7 +1587,7 @@ data-toggle="collapse" data-target="#mynavbar-content">
 
 `Breadcrumbs`（面包屑）用于显示当前页面在网站层次结构中的位置。Bootstrap 的面包屑组件标记非常简单，可以放在网站的任何地方：
 
-```
+```html
 <ol class="breadcrumb">
   <li><a href="#">首页</a></li>
   <li><a href="#">关于</a></li>
@@ -1623,9 +1611,9 @@ data-toggle="collapse" data-target="#mynavbar-content">
 
 要显示标签，你需要向 `span` 和 `i` 等内联 HTML 元素添加 `label` 类。在这里，我们将使用一个 `span` 在 `h3` 元素旁边显示标签：
 
-```
+```html
 <h3>快速上手 Bootstrap <span class="label label-default">新
-↵</span></h3>
+</span></h3>
 ```
 
 图 3.22 显示了它的样子。
@@ -1647,7 +1635,7 @@ data-toggle="collapse" data-target="#mynavbar-content">
 
 你可以轻松地在 Bootstrap 中创建按钮。你只需要向 `a`、`button` 或 `input` 元素添加 `btn` 类，即可将其转换为 Bootstrap 中精美的加粗按钮：
 
-```
+```html
 <a href="#" class="btn btn-primary">点击这里</a>
 ```
 
@@ -1674,18 +1662,15 @@ data-toggle="collapse" data-target="#mynavbar-content">
 
 以下是它们的一些用法示例：
 
-```
+```html
 <button type="button" class="btn btn-primary btn-lg">大按钮
-↵</button>
-
+</button>
 <button type="button" class="btn btn-primary">默认按钮
-↵</button>
-
+</button>
 <button type="button" class="btn btn-primary btn-sm">小 
-↵按钮</button>
-
+按钮</button>
 <button type="button" class="btn btn-primary btn-xs">极小 
-↵按钮</button>
+按钮</button>
 ```
 
 还有一些可用的按钮辅助类：
@@ -1698,13 +1683,13 @@ data-toggle="collapse" data-target="#mynavbar-content">
 
 `Glyphicons` 用于显示小图标。它们是轻量级的字体图标，而不是图像。使用 glyphicon 代替小图像有许多优势，包括：
 
-* 减少了对小图像或精灵图（sprites）的多次请求
+* 减少了对小图像或精灵图的多次请求
 * 因为它们是字体图标，可以使用 CSS 属性随时更改它们的颜色和大小
-* 它们在各种显示器上看起来都清晰锐
+* 它们在各种显示器上看起来都清晰锐利
 
 要使用 glyphicons，你需要使用如下标记：
 
-```
+```html
 <span class="glyphicon glyphicon-heart"> </span>
 ```
 
@@ -1712,11 +1697,11 @@ data-toggle="collapse" data-target="#mynavbar-content">
 
 Glyphicon 图标是由名为 Jan Kovařík 的自由开发者设计的，而不是由 Bootstrap 开发人员。尽管大多数图标不是免费的，但 Kovařík 向 Bootstrap 团队捐赠了一组图标。你可以在他的网站上找到更多字体图标，[glyphicons.com.](http://glyphicons.com)
 
-### 容器 (Wells)
+### 容器
 
 Wells 是一种实用的组件，它将内容封装在一个灰色背景的圆角框内，为内容提供内凹效果。它们可以用于在长文本内容中突出重要事实，例如，博客应用程序中的作者简介框：
 
-```
+```html
 <div class="well">
     <p>Lorem ipsum dolor sit amet, consectetur ... </p>
 </div>
@@ -1734,7 +1719,7 @@ Wells 是一种实用的组件，它将内容封装在一个灰色背景的圆�
 2. 大间距：同时使用 `well` 和 `well-lg` 类。
 3. 小间距：同时使用 `well` 和 `well-sm` 类。
 
-### 徽章 (Badges)
+### 徽章
 
 Badges 与我们已经讨论过的标签类似，但有一个主要区别：标签是矩形的，而徽章更圆。徽章主要用于显示诸如未读项目、通知等数字，而不是文本。
 
@@ -1742,15 +1727,15 @@ Badges 是自折叠组件，这意味着当 badge 内部没有内容时，它在
 
 badge 组件的标记如下：
 
-```
+```html
 <span class="badge">23</span>
 ```
 
 更自定义的 badge 用法是：
 
-```
+```html
 <a href="#" class="btn btn-primary btn-lg">收件箱 
-↵<span class="badge">23</span></a>
+<span class="badge">23</span></a>
 ```
 
 你可以在图 3.25 中看到输出。
@@ -1767,20 +1752,16 @@ Bootstrap 允许你在几分钟内创建各种类型的表单。你还可以使�
 
 ### 基础表单
 
-
-
-
-
 要构建一个表单，我们需要一个带有 `form` 类的 `form` 元素：
 
-```
+```html
 <form class="form">
 </form>
 ```
 
-对于每个标签（label）和输入字段，我们需要一个带有 `form-group` 类的 `div` 元素。让我们创建一个询问访问者姓名的输入字段：
+对于每个标签和输入字段，我们需要一个带有 `form-group` 类的 `div` 元素。让我们创建一个询问访问者姓名的输入字段：
 
-```
+```html
 <form class="form">
     <div class="form-group">
         <label for="nameField">Name</label>
@@ -1796,34 +1777,30 @@ Bootstrap 允许你在几分钟内创建各种类型的表单。你还可以使�
 
 图 3.26. 基础表单
 
-让我们在表单中填充电子邮件、电话和文本区域（textarea）字段，最后添加一个提交按钮。完整的标记和截图如图 3.27 所示：
+让我们在表单中填充电子邮件、电话和文本区域字段，最后添加一个提交按钮。完整的标记和截图如图 3.27 所示：
 
-```
+```html
 <form class="form">
     <div class="form-group">
         <label for="nameField">Name</label>
         <input type="text" class="form-control" id="nameField" 
         placeholder="Your Name" />
     </div>
-
     <div class="form-group">
         <label for="emailField">Email</label>
         <input type="email" class="form-control" id="emailField" 
         placeholder="Your Email" />
     </div>
-
     <div class="form-group">
         <label for="phoneField">Phone</label>
         <input type="text" class="form-control" id="phoneField" 
         placeholder="Your Phone Number" />
     </div>
-
     <div class="form-group">
         <label for="descField">Description</label>
         <textarea class="form-control" id="descField" placeholder="
         Your Comments"></textarea>
     </div>
-
     <button type="submit" class="btn btn-primary">Submit</button> 
     <button type="reset" class="btn btn-default">Reset</button>
 </form>
@@ -1833,11 +1810,11 @@ Bootstrap 允许你在几分钟内创建各种类型的表单。你还可以使�
 
 图 3.27. 添加了字段的表单
 
-### 水平表单 (Horizontal Forms)
+### 水平表单
 
 在之前的表单中，我们将标签显示在上方，然后是输入字段。假设我们想将标签显示在输入字段的侧边。那么我们可以在表单元素内部使用 Bootstrap 的网格系统，如下：
 
-```
+```html
 <form class="form-horizontal">
     <div class="form-group">
         <label for="nameField" class="col-xs-2">Name</label>
@@ -1846,7 +1823,6 @@ Bootstrap 允许你在几分钟内创建各种类型的表单。你还可以使�
             placeholder="Your Name" />
         </div>
     </div>
-
     <div class="form-group">
         <label for="emailField" class="col-xs-2">Email</label>
         <div class="col-xs-10">
@@ -1854,7 +1830,6 @@ Bootstrap 允许你在几分钟内创建各种类型的表单。你还可以使�
             placeholder="Your Email" />
         </div>
     </div>
-
     <div class="form-group">
         <label for="phoneField" class="col-xs-2">Phone</label>
         <div class="col-xs-10">
@@ -1862,7 +1837,6 @@ Bootstrap 允许你在几分钟内创建各种类型的表单。你还可以使�
             placeholder="Your Phone Number" />
         </div>
     </div>
-
     <div class="form-group">
         <label for="descField" class="col-xs-2">Description</label>
         <div class="col-xs-10">
@@ -1870,11 +1844,9 @@ Bootstrap 允许你在几分钟内创建各种类型的表单。你还可以使�
             placeholder="Your Comments"></textarea>
         </div>
     </div>
-
     <div class="col-xs-10 col-xs-offset-2">
         <button type="submit" class="btn btn-primary">Submit</button> <button type="reset" class="btn btn-default">Reset</button>
     </div>
-
 </form>
 ```
 
@@ -1886,22 +1858,20 @@ Bootstrap 允许你在几分钟内创建各种类型的表单。你还可以使�
 
 在代码中，根据 Bootstrap 的规则，我们将表单的类从 `form` 更改为 `form-horizontal`。然后给 `label` 元素添加了 `col-xs-2` 类，使其跨越两个 Bootstrap 列。接下来，我们通过 `col-xs-10` 类将输入字段封装在一个 `div` 中，该 `div` 跨越十个 Bootstrap 列。
 
-### 内联表单 (Inline Form)
+### 内联表单
 
 我们还可以创建元素位于单行内的表单。例如是登录表单，其中用户名和密码字段并列放置。内联表单的标记如下：
 
-```
+```html
 <form class="form-inline">
     <div class="form-group">
         <label for="email">Email</label>
         <input type="text" class="form-control" id="email" placeholder="Email">
     </div>
-
     <div class="form-group">
         <label for="password">Password</label>
         <input type="password" class="form-control" id="password" placeholder="Password">
     </div>
-
     <div class="form-group">
         <button type="submit" class="btn btn-primary">Sign in</button>
     </div>
@@ -1914,11 +1884,11 @@ Bootstrap 允许你在几分钟内创建各种类型的表单。你还可以使�
 
 图 3.29. 内联表单
 
-### 表单中的辅助类 (Helper Classes in Forms)
+### 表单中的辅助类
 
-Bootstrap 提供了几个额外的“辅助”（helper）类来帮助显示表单。如果你使用 `disabled` 属性来禁用输入，Bootstrap 已经为其定义了样式。例如，这段代码：
+Bootstrap 提供了几个额外的“辅助”类来帮助显示表单。如果你使用 `disabled` 属性来禁用输入，Bootstrap 已经为其定义了样式。例如，这段代码：
 
-```
+```html
 <input class="form-control" type="text" 
 placeholder="Disabled input..." disabled>
 ```
@@ -1931,15 +1901,13 @@ placeholder="Disabled input..." disabled>
 
 Bootstrap 还为输入元素提供了三种验证状态：
 
-1.  `has-success`
-
-2.  `has-error`
-
-3.  `has-warning`
+1. `has-success`
+2. `has-error`
+3. `has-warning`
 
 这里是验证状态用法的示例：
 
-```
+```html
 <div class="form-group has-success">
     <label class="control-label" for="inputField">
     Input with success</label>
@@ -1949,17 +1917,16 @@ Bootstrap 还为输入元素提供了三种验证状态：
 
 应用 `has-success` 将标签文本和边框变为绿色。同样，`has-warning` 将使用暗褐色，而 `has-danger` 将使用深红色。这些 `has-` 类型的类只会应用于带有 `form-control`、`control-label` 和 `help-block` 类的元素。如果你想在用户向输入字段输入无效值时显示某些自定义文本，请使用带有 `help-block` 类的 `span` 元素。`help-block` 将出现在相应的输入字段下方。
 
-### 控件尺寸 (Control Sizing)
+### 控件尺寸
 
-你可以使用 Bootstrap 的**控件尺寸**（control sizing）类来改变输入元素的高度：
+你可以使用 Bootstrap 的控件尺寸类来改变输入元素的高度：
 
-*   `input-lg` 用于制作比默认尺寸更大的输入元素。
-
-*   `input-sm` 用于比默认尺寸更小的输入元素。
+* `input-lg` 用于制作比默认尺寸更大的输入元素。
+* `input-sm` 用于比默认尺寸更小的输入元素。
 
 这里是它们的一些使用示例：
 
-```
+```html
 <input class="form-control input-lg" type="text" 
 placeholder="Larger Input Field">
 <input class="form-control" type="text" 
@@ -1967,8 +1934,6 @@ placeholder="Default Input Field">
 <input class="form-control input-sm" type="text" 
 placeholder="Smaller Input Field">
 ```
-
-
 
 这将导致如图 3.31 所示的输出。
 
@@ -1978,19 +1943,19 @@ placeholder="Smaller Input Field">
 
 ## 总结
 
-在本章中，我们学习了一系列开箱即用的可复 Bootstrap 组件。正如你所看到的，Bootstrap 提供了许多不同的组件，起初你可能会发现很难记住这么多不同类型的类；但是，当你遇到困难时，可以随时参考[文档来获取帮助](http://getbootstrap.com/components)。
+在本章中，我们学习了一系列开箱即用的可复用 Bootstrap 组件。正如你所看到的，Bootstrap 提供了许多不同的组件，起初你可能会发现很难记住这么多不同类型的类；但是，当你遇到困难时，可以随时参考[文档来获取帮助](http://getbootstrap.com/components)。
 
-# 第 4 章## 趣玩与获益的 Bootstrap 插件
+# 第 4 章 趣玩与获益的 Bootstrap 插件
 
-JavaScript 是 Web 端*事实上的*脚本语言。精美的图片幻灯片、下拉菜单和弹出框（popovers）只是通过 JavaScript 结合 CSS 创建的流行网站功能的几个例子。在本章中，我们将查看 Bootstrap 3 为我们提供的一些开箱即用的 JavaScript 插件，使我们能够轻松创建此类高级网站功能。
+JavaScript 是 Web 端事实上的脚本语言。精美的图片幻灯片、下拉菜单和弹出框只是通过 JavaScript 结合 CSS 创建的流行网站功能的几个例子。在本章中，我们将查看 Bootstrap 3 为我们提供的一些开箱即用的 JavaScript 插件，使我们能够轻松创建此类高级网站功能。
 
 使用 Bootstrap 的 JavaScript 插件有两种不同的方法。第一种方法完全不需要 JavaScript。你只需要遵循推荐的 HTML 标记即可使用它们。另一种方法则需要一些 JavaScript 知识来初始化和自定义插件。我们将讨论使用插件的两种方法，你可以决定哪种最适合你。
 
-我们在本章中使用的所有插件都包含在 `bootstrap.js` 或 `bootstrap.min.js` 中。如果你遵循了第 1 章，中下载 Bootstrap 的说明，你应该会在项目的 `/js` 文件夹中找到 `bootstrap.js`。
+我们在本章中使用的所有插件都包含在 `bootstrap.js` 或 `bootstrap.min.js` 中。如果你遵循了第 1 章中下载 Bootstrap 的说明，你应该会在项目的 `/js` 文件夹中找到 `bootstrap.js`。
 
-在继续之前，让我们为本章设置一个新项目。我们将使用在第 1 章，中创建的相同文件夹 `Bootstrap_demos`。复制此文件夹中的所有文件并粘贴到名为 `Chapter 4` 的新文件夹中。使用文本编辑器打开 `index.html`。将 `<title>` 标签内的文本改为“Bootstrap Plugins”。接下来，从 `<body>` 中移除 `<h1>` 标签。最后，`index.html` 文件应该如下所示：
+在继续之前，让我们为本章设置一个新项目。我们将使用在第 1 章中创建的相同文件夹 `Bootstrap_demos`。复制此文件夹中的所有文件并粘贴到名为 `Chapter 4` 的新文件夹中。使用文本编辑器打开 `index.html`。将 `<title>` 标签内的文本改为“Bootstrap Plugins”。接下来，从 `<body>` 中移除 `<h1>` 标签。最后，`index.html` 文件应该如下所示：
 
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -1998,24 +1963,20 @@ JavaScript 是 Web 端*事实上的*脚本语言。精美的图片幻灯片、�
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, 
 initial-scale=1">
-
     <title>Bootstrap Plugins</title>
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/
 3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/
 1.4.2/respond.min.js"></script>
     <![endif]-->
-
   </head>
   <body>
-
       <script src="js/jquery.js"></script>
     <script src="js/bootstrap.js"></script>
   </body>
-</</html>
+</html>
 ```
 
 ## 扩展功能
@@ -2026,7 +1987,7 @@ initial-scale=1">
 
 创建下拉菜单的标记如下：
 
-```
+```html
 <div class="dropdown">
     <a data-toggle="dropdown" data-target="#" 
 href="http://www.google.com">
@@ -2038,16 +1999,16 @@ href="http://www.google.com">
         <li><a href="#">Link 3</a></li>
         <li><a href="#">Link 4</a></li>
     </ul>
-<//div>
+</div>
 ```
 
 每个下拉菜单都应该包含两个重要的元素：一个 `<a>` 元素和一个 `<ul>` 元素。在这里，`<ul>` 元素默认是隐藏的，`<a>` 元素用于切换下拉菜单。`<a>` 元素有两个必要的 `data-*` 属性：`data-toggle` 和 `data-target`。`data-toggle` 属性告诉 Bootstrap 在每次点击链接元素时激活该链接的下拉效果。另一方面，`data-target` 属性用于防止点击链接时页面重定向。在这里提供 `href` 属性是没有必要的，因为它会被忽略。此链接元素应该包含一些锚点文本，例如“Dropdown”，以及一个向下箭头图标，该图标是使用 `caret` 类生成的。
 
-### 注意：Caret 是字体图标（Glyphicon）吗？
+#### 注意：Caret 是字体图标吗？
 
 `caret` 类不是一个 glyphicon 类。Bootstrap 为 `caret` 类编写了特殊的 CSS 样式，以生成这个向下箭头图标。如果你想学习他们是如何做到的，打开 `bootstrap.css` 文件并搜索 `.caret`。你也可以使用 glyphicon 代替这个箭头：
 
-```
+```html
 <span class="glyphicon-chevron-down"></span>
 ```
 
@@ -2057,11 +2018,11 @@ href="http://www.google.com">
 
 图 4.1. 简单的下拉菜单
 
-让我们在上一章中创建的标签和菜单上使用下拉插件。这里是胶囊菜单（pills menu）的标记：
+让我们在上一章中创建的标签和菜单上使用下拉插件。这里是胶囊菜单的标记：
 
-```
+```html
 <ul class="nav-pills">
-  <li class="active"><a href="#">Home</a></a></li>
+  <li class="active"><a href="#">Home</a></li>
   <li class="dropdown">
         <a data-toggle="dropdown" data-target="#" 
 href="http://www.google.com">
@@ -2090,20 +2051,16 @@ href="http://www.google.com">
 
 Bootstrap 的下拉插件也可以使用 JavaScript 使用。与其提供 `data-*` 等自定义属性，你可以使用 JavaScript 对象来传递此类信息。Bootstrap 使用 jQuery 库处理所有与 JavaScript 相关的操作。因此，导入 `jquery.js` 对于在 Bootstrap 中使用 JavaScript 自定义至关重要。通过 jQuery 触发下拉插件，你需要使用 `dropdown()` 方法：
 
-```
+```javascript
 $().dropdown('toggle');
 ```
 
 我们可以使用此方法在每次页面加载时，将下拉菜单的状态从关闭切换到打开。例如，如果我们创建下拉菜单的代码段如下：
 
-
-
-
-
-```
+```html
 <div class="dropdown" id="myDropdown">
     <a class="myDropdownHandle" data-toggle="dropdown" 
-↵data-target="#" href="#">
+data-target="#" href="#">
         Dropdown <span class="caret"></span>
     </a>
     <ul class="dropdown-menu">
@@ -2117,7 +2074,7 @@ $().dropdown('toggle');
 
 你需要在 jQuery 的 `ready()` 方法中调用 `dropdown()` 方法：
 
-```
+```javascript
 <script type="text/javascript">
     $(document).ready(function(){
         $('.myDropdownHandle').dropdown('toggle');
@@ -2129,16 +2086,16 @@ $().dropdown('toggle');
 
 Bootstrap 提供了绑定到下拉插件上的各种事件。它们是：
 
-- `show.bs.dropdown`: 该事件在句柄被点击时立即触发；下拉句柄收到了打开隐藏菜单的请求
-- `shown.bs.dropdown`: 该事件在菜单显示后触发
-- `hide.bs.dropdown`: 该事件在关闭菜单之前立即触发
-- `hidden.bs.dropdown`: 该事件在菜单关闭时触发
+* `show.bs.dropdown`：该事件在句柄被点击时立即触发；下拉句柄收到了打开隐藏菜单的请求
+* `shown.bs.dropdown`：该事件在菜单显示后触发
+* `hide.bs.dropdown`：该事件在关闭菜单之前立即触发
+* `hidden.bs.dropdown`：该事件在菜单关闭时触发
 
-`show` 和 `hide` 事件发生在完成请求正之前，而 `shown` 和 `hidden` 事件则在请求完成后发生。在这里，请求是打开和关闭下拉菜单。
+`show` 和 `hide` 事件发生在完成请求之前，而 `shown` 和 `hidden` 事件则在请求完成后发生。在这里，请求是打开和关闭下拉菜单。
 
 让我向你展示一个演示，解释如何使用这些事件。我写了以下 jQuery 代码段，目标是针对下拉插件的所有状态，并在每个事件触发时打印一条语句：
 
-```
+```javascript
 $('#myDropdown').on('show.bs.dropdown', function () {
    console.log("Opening dropdown..");
 });
@@ -2170,30 +2127,27 @@ $('#myDropdown').on('hidden.bs.dropdown', function () {
 
 最后，带有上述事件的 `index.html` 应该如下：
 
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
     <title>Bootstrap Plugins</title>
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/
-↵html5shiv.js"></script>
+html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/
-↵respond.min.js"></script>
+respond.min.js"></script>
     <![endif]-->
-
   </head>
   <body>
         <div class="container">
             <div class="dropdown" id="myDropdown">
                 <a class="myDropdownHandle" data-toggle="dropdown" 
-↵data-target="#" href="#">
+data-target="#" href="#">
                     Dropdown <span class="caret"></span>
                 </a>
                 <ul class="dropdown-menu">
@@ -2202,39 +2156,33 @@ $('#myDropdown').on('hidden.bs.dropdown', function () {
                     <li><a href="#">Link 3</a></li>
                     <li><a href="#">Link 4</a></li>
                 </ul>
-            </div
+            </div>
         </div>
-
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.js"></script>
     <script type="text/javascript">
         $(document).ready(function(){
-
             $('#myDropdown').on('show.bs.dropdown', function () {
                console.log("Opening dropdown..");
             });
-
             $('#myDropdown').on('shown.bs.dropdown', function () {
                console.log("Dropdown opened..");
             });
-
             $('#myDropdown').on('hide.bs.dropdown', function () {
                console.log("Hiding dropdown..");
             });
-
             $('#myDropdown').on('hidden.bs.dropdown', function () {
                console.log("Dropdown hidden..");
             });
-
         });
     </script>
-  </</body>>
+  </body>
 </html>
 ```
 
 当下拉菜单中的链接根据来自的数据动态填充数据时，你会发现这些事件极其有用。在这些情况下，你可以在 `show.bs.dropdown` 事件上向服务器发送 Ajax 请求，并在下拉菜单显示之前填充它。
 
-### 警报消息 (Alert Messages)
+### 警报消息
 
 Bootstrap 自带了一个非常有用的组件，用于在我们网站的不同部分显示警报消息；你可以使用它们来显示成功消息、警告消息、失败消息或信息消息。这些消息可能会让访客感到困扰，因此它们应该添加关闭功能，让访客能够隐藏它们。
 
@@ -2242,13 +2190,13 @@ Bootstrap 自带了一个非常有用的组件，用于在我们网站的不同�
 
 以下是“成功”警报消息的标记：
 
-```
+```html
 <div class="alert alert-success">
     Amount has been transferred successfully.
 </div>
 ```
 
-每个警报都应该带有 `alert` 类。它还应该有一个额外的上下文类，例如 `alert-success`。对于警报消息，有四个目自见明的上下文类：
+每个警报都应该带有 `alert` 类。它还应该有一个额外的上下文类，例如 `alert-success`。对于警报消息，有四个不言自明的上下文类：
 
 1. `alert-success`
 2. `alert-info`
@@ -2263,7 +2211,7 @@ Bootstrap 自带了一个非常有用的组件，用于在我们网站的不同�
 
 可关闭的警报框的标记以及它在图 4.6 在屏幕上的显示如下：
 
-```
+```html
 <div class="alert alert-success alert-dismissable">
     <button type="button" class="close" data-dismiss="alert">
 &times;</button>
@@ -2277,11 +2225,11 @@ Bootstrap 自带了一个非常有用的组件，用于在我们网站的不同�
 
 要创建一个可关闭的警报消息，我们需要向警报框添加类 `alert-dismissable`。接下来，我们需要一个在点击时关闭警报消息的按钮。该按钮应该具有 `data-dismiss` 属性，它告诉 Bootstrap 在点击时关闭组件。Bootstrap 通过 `close` 类的帮助将此按钮定位在警报框的右上角。关闭按钮上的关闭操作是 Bootstrap 使用 JavaScript 添加的，并通过 `data-dismiss` 属性进行捕获。
 
-### 提示：在警报中使用链接
+#### 提示：在警报中使用链接
 
 如果你想在警报中放置链接，你需要为 `a` 元素添加类 `alert-link`。这提供了一个与警报框颜色匹配的链接颜色：
 
-```
+```html
 <div class="alert alert-success alert-dismissable">
     <button type="button" class="close" data-dismiss=
 "alert">&times;</button>
@@ -2294,22 +2242,18 @@ href="#" class="alert-link">account page</a>.
 
 你也可以使用 jQuery 中的 Bootstrap `alert()` 方法来关闭警报消息：
 
-```
+```javascript
 $(".alert").alert('close');
 ```
 
 警报消息有两个与之关联的事件：
 
-1. `close.bs.alert`: 在关闭警报框之前立即触发
-2. `closed.bs.alert`: 在警报框关闭后触发
+1. `close.bs.alert`：在关闭警报框之前立即触发
+2. `closed.bs.alert`：在警报框关闭后触发
 
 以下是使用上述事件的示例：
 
-
-
-
-
-```
+```javascript
 $('.alert').on('close.bs.alert', function () {
    console.log("Closing alert..");
 });
@@ -2323,11 +2267,11 @@ $('.alert').on('closed.bs.alert', function () {
 
 我们在上一节中学习了如何创建各种类型的按钮。在这里，我们将看到如何在不同场景下使用它们，并使用 Bootstrap 的 JavaScript 插件更改它们的状态。
 
-Bootstrap 按钮有两个状态：`active`（激活）和 `inactive`（未激活）。激活状态有一个名为 `active` 的类，但未激活状态没有对应的类。相反，你可以使用以下标记创建一个简单的按钮，并在在这两个状态之间切换：
+Bootstrap 按钮有两个状态：`active` 和 `inactive`。激活状态有一个名为 `active` 的类，但未激活状态没有对应的类。相反，你可以使用以下标记创建一个简单的按钮，并在在这两个状态之间切换：
 
-```
+```html
 <button type="button" class="btn btn-lg btn-default" 
-↵data-toggle="button">切换我！</button>
+data-toggle="button">切换我！</button>
 ```
 
 在代码中，我使用 `btn`、`btn-lg` 和 `btn-default` 类创建了一个大灰色按钮。它目前处于未激活状态。当用户点击它时，Bootstrap 会为按钮添加一个额外的 `active` 类。
@@ -2340,21 +2284,17 @@ Bootstrap 按钮有两个状态：`active`（激活）和 `inactive`（未激活
 
 使用 CSS 设置复选框和单选按钮可能是复杂的。Bootstrap 有重新设计它们的方法；它将一组复选框或单选按钮转换为一组并排的 Bootstrap 按钮。让我们示例标记，结果如图 4.8 所示：
 
-```
+```html
 <div class="btn-group" data-toggle="buttons">
-
-    <label class="btn btn-default"
+    <label class="btn btn-default">
         <input type="checkbox"> 选项 1
     </label>
-
     <label class="btn btn-default">
         <input type="checkbox"> 选项 2
     </label>
-
     <label class="btn btn-default">
         <input type="checkbox"> 选项 3
     </label>
-
 </div>
 ```
 
@@ -2364,27 +2304,23 @@ Bootstrap 按钮有两个状态：`active`（激活）和 `inactive`（未激活
 
 你可以在图 4.8 中看到 Bootstrap 彻底改变了复选框的显示。它们现在以一组 Bootstrap 按钮的形式出现。由于是复选框，我能够勾选选项 1 和选项 3。要创建这组复选框，你需要一个类为 `btn-group` 的父 `div`。它还应该有一个值为 `buttons` 的 `data-toggle` 属性。所有 `checkbox` 的 `input` 元素都应该封装在 `label` 元素内部。这些标签必须具有 Bootstrap 的按钮类。在这种情况下，我选择了灰色的按钮。
 
-### 提示：多颜色复选框
+#### 提示：多颜色复选框
 
 你可以通过混合 Bootstrap 的按钮类（例如 `btn-primary`、`btn-info` 等）在按钮组中创建多种颜色的按钮。
 
 你还可以创建一个单选按钮组，其中只有一个按钮可以被选中。这里是标记，结果如图 4.9 所示：
 
-```
+```html
 <div class="btn-group" data-toggle="buttons">
-
     <label class="btn btn-info">
         <input type="radio" name="options"> 选项 1
     </label>
-
     <label class="btn btn-info">
         <input type="radio" name="options"> 选项 2
     </label>
-
     <label class="btn btn-info">
         <input type="radio" name="options"> 选项 3
     </label>
-
 </div>
 ```
 
@@ -2396,22 +2332,22 @@ Bootstrap 按钮有两个状态：`active`（激活）和 `inactive`（未激活
 
 ### 使用 JavaScript 的按钮
 
-Bootstrap 带有 `button()` 方法，可以通过 jQuery 切换按钮的状态。你可以如下如下使用它：
+Bootstrap 带有 `button()` 方法，可以通过 jQuery 切换按钮的状态。你可以如下使用它：
 
-```
+```javascript
 $("mybutton").button('toggle');
 ```
 
-你还可以将按钮更改为 `loading`（加载）状态。在此状态下，按钮将保持禁用，但你需要使用按钮元素中的 `data-loading-text` 属性定义额外的加载文本：
+你还可以将按钮更改为 `loading` 状态。在此状态下，按钮将保持禁用，但你需要使用按钮元素中的 `data-loading-text` 属性定义额外的加载文本：
 
-```
+```html
 <button id="myLoadingButton" type="button" class="btn btn-primary" 
-↵data-loading-text="加载中...">加载数据</button>
+data-loading-text="加载中...">加载数据</button>
 ```
 
 让我们在点击按钮时使用 jQuery 将按钮状态更改为 `loading`：
 
-```
+```javascript
 $('#myLoadingButton').click(function () {
     $(this).button('loading');
 });
@@ -2423,13 +2359,13 @@ $('#myLoadingButton').click(function () {
 
 基本上，这是一个双组件插件；它由导航栏和内容区域组成。内容区域分为若干部分，每个部分都有 ID。让我们先构建一个导航栏。这里是标记：
 
-```
+```html
 <nav id="navbarExample" class="navbar navbar-default" 
-↵role="navigation">
+role="navigation">
   <div class="container-fluid">
     <div class="navbar-header">
       <button class="navbar-toggle" type="button" 
-↵data-toggle="collapse" data-target=".navbarLinks">
+data-toggle="collapse" data-target=".navbarLinks">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -2452,32 +2388,23 @@ $('#myLoadingButton').click(function () {
 
 内容部分的标记如下：
 
-```
+```html
 <div data-spy="scroll" data-target="#navbarExample" data-offset="0" 
-↵class="scrollspy-example">
-
+class="scrollspy-example">
     <h4 id="home">首页</h4>
     <p>Lorem ipsum dolor sit amet, consectetur  ... </p>
-
     <h4 id="about">关于</h4>
     <p>Lorem ipsum dolor sit amet, consectetur  ... </p>
-
     <h4 id="contact">联系我们</h4>
     <p>Lorem ipsum dolor sit amet, consectetur  ... </p>
-
     <h4 id="map">地图</h4>
     <p>Lorem ipsum dolor sit amet, consectetur  ... </p>
-
 </div>
 ```
 
 ### ScrollSpy
 
 ScrollSpy 是现代最流行的插件之一。它根据当前显示的区域高亮导航栏中的菜单项。当用户开始滚动页面时，导航栏中相应的链接将根据视图中的区域进行高亮。
-
-
-
-
 
 内容部分由四对 `<h4>` 和 `<p>` 标签组成。每个 `<h4>` 元素都有一个唯一的 ID，与上述导航栏的内部链接相匹配。为了使 `ScrollSpy` 正常工作，你应该为内容部分添加两个自定义数据属性：`data-spy` 和 `data-target`。
 
@@ -2495,17 +2422,14 @@ ScrollSpy 是现代最流行的插件之一。它根据当前显示的区域高�
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, 
 initial-scale=1">
-
     <title>Bootstrap Plugins</title>
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/
 3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/
 1.4.2/respond.min.js"></script>
     <![endif]-->
-
     <style type="text/css">
         .scrollspy-example{
           position:relative;
@@ -2513,9 +2437,8 @@ initial-scale=1">
           margin-top:10px;
           overflow:auto}
     </style>
-
   </head>
-  <body><body>
+  <body>
   <div class="container">
     <nav id="navbarExample" class="navbar navbar-default" 
 role="navigation">
@@ -2541,29 +2464,23 @@ data-toggle="collapse" data-target=".navbarLinks">
     </nav>
     <div data-spy="scroll" data-target="#navbarExample" 
 data-offset="0" class="scrollspy-example">
-
         <h4 id="Home">Home</h4>
         <p>Lorem ipsum dolor sit amet, consectetur ... </p>
-
         <h4 id="about">About</h4>
         <p>Lorem ipsum dolor sit amet, consectetur ... </p>
-
         <h4 id="contact">Contact Us</h4>
         <p>Lorem ipsum dolor sit amet, consectetur ... </p>
-
         <h4 id="map">Map</h4>
         <p>Lorem ipsum dolor sit amet, consectetur ... </p>
-
     </div>
-  </</div>
-
+  </div>
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.js"></script>
   </body>
 </html>
 ```
 
-在 图 4.10 中，你可以看到我已经滚动到了“About”部分，导航栏中的“About”链接被高亮显示。
+在图 4.10 中，你可以看到我已经滚动到了“About”部分，导航栏中的“About”链接被高亮显示。
 
 ![Using ScrollSpy](img/ch4Image10.png)
 
@@ -2581,9 +2498,40 @@ $('.scrollspy-example').scrollspy({ target: '#navbarExample' });
 
 另一个重要的参数是 `refresh` 字符串。如果你对 DOM 进行了操作（例如从 ScrollSpy 区域添加或删除元素），你需要调用 `scrollspy("refresh")` 方法。这将帮助 ScrollSpy 重新计算滚动区域的高度，该高度可能因为 DOM 的添加和删除而发生变化。
 
+### 标签页
 
+标签页是组织内容的另一种流行方式。Bootstrap 的标签页插件允许你在单个页面中创建多个标签页，并通过点击标签页标题来切换内容。
 
+创建标签页的标记如下：
 
+```html
+<ul class="nav nav-tabs">
+  <li class="active"><a href="#home" data-toggle="tab">首页</a></li>
+  <li><a href="#profile" data-toggle="tab">个人资料</a></li>
+  <li><a href="#messages" data-toggle="tab">消息</a></li>
+  <li><a href="#settings" data-toggle="tab">设置</a></li>
+</ul>
+
+<div class="tab-content">
+  <div class="tab-pane active" id="home">首页内容...</div>
+  <div class="tab-pane" id="profile">个人资料内容...</div>
+  <div class="tab-pane" id="messages">消息内容...</div>
+  <div class="tab-pane" id="settings">设置内容...</div>
+</div>
+```
+
+标签页插件通过 `data-toggle="tab"` 属性激活。每个标签页链接的 `href` 属性对应内容区域的 `id`。
+
+#### 标签页事件
+
+Bootstrap 为标签页插件提供了以下事件：
+
+* `show.bs.tab`：在标签页显示之前触发
+* `shown.bs.tab`：在标签页显示后触发
+* `hide.bs.tab`：在标签页隐藏之前触发
+* `hidden.bs.tab`：在标签页隐藏后触发
+
+使用示例：
 
 ```javascript
 $('.nav-tabs li a').on('show.bs.tab', function () {
@@ -2595,15 +2543,15 @@ $('.nav-tabs li a').on('shown.bs.tab', function () {
 });
 ```
 
-### 折叠面板 (Collapse)
+### 折叠面板
 
-`collapse` 插件在 Web 上通常被称为“手风琴”（accordion）插件。它包含多个垂直堆叠的标签页，但一次只能打开一个标签页。图 4.12 显示了折叠插件的截图。
+`collapse` 插件在 Web 上通常被称为“手风琴”插件。它包含多个垂直堆叠的标签页，但一次只能打开一个标签页。图 4.12 显示了折叠插件的截图。
 
 ![折叠插件](img/ch4Image12-1.png)
 
 图 4.12. 折叠插件
 
-在 Bootstrap 中，`collapse` 是通过在单个容器中包含多个面板组件来创建的。我们在上一章中学习了如何创建一个面板。我们也知道面板有两个组件：`panel-heading`（面板头部）和 `panel-body`（面板主体）。
+在 Bootstrap 中，`collapse` 是通过在单个容器中包含多个面板组件来创建的。我们在上一章中学习了如何创建一个面板。我们也知道面板有两个组件：`panel-heading` 和 `panel-body`。
 
 要创建一个折叠面板，我们需要一组放在容器内的面板。该容器是使用带有 `panel-group` 类的 `div` 元素创建的。它还应该有一个关联的 ID。
 
@@ -2616,9 +2564,7 @@ $('.nav-tabs li a').on('shown.bs.tab', function () {
 
 ```html
 <div class="panel-group" id="accordion">
-
     <div class="panel panel-default">
-
         <div class="panel-heading">
             <h4 class="panel-title">
                 <a data-toggle="collapse" data-parent="#accordion" 
@@ -2626,16 +2572,13 @@ $('.nav-tabs li a').on('shown.bs.tab', function () {
                 可折叠组项目 #1
                 </a>
             </h4>
-        </</div>
-
+        </div>
         <div id="collapseOne" class="panel-collapse collapse in">
             <div class="panel-body">
             Lorem ipsum dolor sit ...
             </div>
         </div>
-
-    </div
-
+    </div>
 </div>
 ```
 
@@ -2645,11 +2588,10 @@ $('.nav-tabs li a').on('shown.bs.tab', function () {
 
 与 `panel-body` 未封装在任何 `div` 的普通面板不同，在这里为了实现折叠效果，这是强制性的。这个包装元素应该具有 `panel-collapse`、`collapse` 和 `in` 类。`collapse` 类用于隐藏内容，而 `collapse` 和 `in` 的组合则显示内容。因此，第一个包装器同时具有 `collapse` 和 `in` 类，其余所有包装器应只有 `collapse` 类。`panel-collapse` 类用于 Bootstrap 的 JavaScript 识别该包装器。
 
-重复相同的标记语言以创建多个标签页。以下标记显示了一个具有三个垂直堆叠标签页的折叠插件，结果如图图 4.13 所示：
+重复相同的标记语言以创建多个标签页。以下标记显示了一个具有三个垂直堆叠标签页的折叠插件，结果如图 4.13 所示：
 
 ```html
 <div class="panel-group" id="accordion">
-
       <!-- 面板 1 -->
       <div class="panel panel-default">
         <div class="panel-heading">
@@ -2665,7 +2607,6 @@ $('.nav-tabs li a').on('shown.bs.tab', function () {
                 Lorem ipsum dolor sit amet, consectetur ...
             </div>
       </div>
-
       <!-- 面板 2 -->
       <div class="panel panel-default">
         <div class="panel-heading">
@@ -2682,7 +2623,6 @@ $('.nav-tabs li a').on('shown.bs.tab', function () {
             </div>
         </div>
       </div>
-
       <!-- 面板 3 -->
       <div class="panel panel-default">
         <div class="panel-heading">
@@ -2721,7 +2661,7 @@ $('.collapse').collapse({
 
 在代码段中，我传递了一个具有 `toggle` 属性且值为 `false` 的匿名对象。这将强制所有标签页在其他标签页打开时保持打开状态。请亲自尝试一下。
 
-如图图 4.14 所示，你可以看到所有标签同时打开了。
+如图 4.14 所示，你可以看到所有标签同时打开了。
 
 ![我们的折叠面板中所有标签都打开](img/ch4Image15.png)
 
@@ -2760,6 +2700,8 @@ $('.collapse').on('hidden.bs.collapse', function () {
 });
 ```
 
+
+
 ### 提示框 (Tooltip)
 
 Bootstrap 的 `tooltip` 是一种当鼠标悬停在网站组件上时出现的小浮动消息。它通常用于显示特定组件的帮助文本。
@@ -2770,18 +2712,14 @@ Bootstrap 的提示框使用 CSS 创建并通过 JavaScript 触发。与今天�
 
 ```html
 <button type="button" class="btn btn-default" data-toggle="tooltip" 
-data-placement="bottom" title="I am a Bootstrap button">Who am I?
-</button>
+data-placement="bottom" title="I am a Bootstrap button">Who am I?</button>
 ```
-
-
-
 
 你需要添加一个值为 `tooltip` 的 `data-toggle` 属性，一个包含你想显示在提示中的文本的 `title` 属性，以及一个 `data-placement` 属性。`data-placement` 属性接受以下四个值之一：`top`、`bottom`、`left` 和 `right`。顾其名，`data-placement` 属性定义了提示相对于父组件的位置。
 
 让我们在浏览器中查看这个按钮吧。你会发现它无法工作；当鼠标悬停在按钮上时，没有提示出现。由于性能考虑，Bootstrap 中的提示框需要通过 jQuery 手动初始化。因此，让我们在 body 中所有的 `<script>` 标签之后添加以下脚本：
 
-```
+```html
 <script type="text/javascript">
   $(document).ready(function(){
     $('.tooltipButton').tooltip();
@@ -2793,7 +2731,7 @@ data-placement="bottom" title="I am a Bootstrap button">Who am I?
 
 我们还需要修改按钮的 HTML 代码并为它添加 `tooltipButton` 类：
 
-```
+```html
 <button type="button" class="btn btn-default tooltipButton" 
 data-toggle="tooltip" data-placement="bottom" 
 title="I am a Bootstrap button">Who am I?</button>
@@ -2811,11 +2749,10 @@ title="I am a Bootstrap button">Who am I?</button>
 
 该方法接受一个包含各种可选属性的对象，用于更改提示框的通用行为：
 
-```
+```javascript
 var options = {
-    animation : true;
+    animation: true
 };
-
 $(".tooltipButton").tooltip(options);
 ```
 
@@ -2826,14 +2763,14 @@ $(".tooltipButton").tooltip(options);
 - `html`: 此属性接收一个布尔值。如果将其设置为 `true`，则 `title` 属性中的内容将被解析为 HTML。否则，它将原样显示。
 - `placement`: 此属性接收五个字符串值：`top`、`bottom`、`left`、`right` 和 `auto`。它定义了提示相对于组件的位置。如果设置为 `auto`，提示框将自动定位。
 - `selector`: 这是 Bootstrap 提供的特殊选项。如果你在父容器上调用了 `tooltip()` 方法，你可能想过滤掉提示框应该作用的子元素，可以通过此选项来实现。你可以提供如 `a`、`a[href='hello.html']` 或 `button[class='tooltipbuttons']` 等值。
-- `title`: 如果你在 HTML 标记中未使用自定义属性 `data-title`，则可以通过此选项传递提示标题。它接收一个字符串值，例如 `title: "This is a button".`。
+- `title`: 如果你在 HTML 标记中未使用自定义属性 `data-title`，则可以通过此选项传递提示标题。它接收一个字符串值，例如 `title: "This is a button"`。
 - `trigger`: 所有提示都通过悬停在组件上显示。使用此选项可以覆盖默认行为。该选项可以的值有：`click`、`focus`、`hover` 和 `manual`。你也可以用空格组合这些值；例如 `click hover`、`hover focus` 等。
 - `delay`: 如果你不希望提示框立即出现，请使用此属性设置延迟时间（毫秒为单位）。
 - `container`: 使用此属性将提示框附加到特定元素（如 `body`）。这可以防止提示框在窗口缩放时偏离触发元素。
 
 除了接受选项对象外，`tooltip()` 方法还接受几个预定义的字符串值。这些字符串映射到提示框的自定义行为；例如：
 
-```
+```javascript
 $('.tooltipButton').tooltip('show');
 ```
 
@@ -2853,7 +2790,7 @@ $('.tooltipButton').tooltip('show');
 
 以下是它们的使用方法：
 
-```
+```javascript
 $('.tooltipButton').on('show.bs.tooltip', function () {
   console.log("Showing tooltip..");
 });
@@ -2883,7 +2820,7 @@ $('.tooltipButton').on('hidden.bs.tooltip', function () {
 
 让我们在按钮的点击事件上触发弹出框。实现此目的标记为：
 
-```
+```html
 <button type="button" class="btn btn-danger" data-toggle="popover" 
 data-placement="bottom" data-content="Lorem Ipsum." 
 title="This is a demo popover">Click Me!</button>
@@ -2893,8 +2830,8 @@ title="This is a demo popover">Click Me!</button>
 
 与提示框一样，弹出框也需要手动初始化。你可以使用以下脚本：
 
-```
-<script type="text/javascript"
+```html
+<script type="text/javascript">
   $(document).ready(function(){
      $('.popoverButton').popover();
   });
@@ -2909,29 +2846,25 @@ title="This is a demo popover">Click Me!</button>
 
 ### 使用 JavaScript 的弹出框
 
-Bootstrap 提供了 `popover()` 方法来自定义弹出框插件的默认行为。它接受一个选项对象，就像提示框插件之前之前之前提示框插件的所有选项属性也适用于弹出框插件。
+Bootstrap 提供了 `popover()` 方法来自定义弹出框插件的默认行为。它接受一个选项对象，就像提示框插件之前提示框插件的所有选项属性也适用于弹出框插件。
 
 例如：
 
-```
+```javascript
 var options = {
     animation: true,
     placement: "right"
 };
-
 $('.popoverButton').popover(options);
 ```
 
 弹出框插件还接受一组预定义的字符串，这些字符串映射到弹出框的某些行为；例如：
 
-```
+```javascript
 $('.popoverButton').popover("show");
 ```
 
 就像提示框插件一样，我们有一组相同的预定义字符串来更改弹出框的状态。传递 `show` 字符串时，弹出框将变为可见。其他可用的字符串有：`hide`、`toggle` 和 `destroy`。
-
-
-
 
 弹出窗（Popovers）还带有与工具提示（tooltip）插件非常类似的自定义事件。与弹出窗相关的事件有：
 
@@ -2974,7 +2907,7 @@ Carousel 是一个响应式幻灯片插件，而 modal 是一个类似于灯箱�
 
 ```html
 <div id="bestCarsCarousel" class="carousel slide" data-ride="carousel">
-    <!-- 指器 -->
+    <!-- 指示器 -->
     <ol class="carousel-indicators">
         <li data-target="#bestCarsCarousel" data-slide-to="0" class="active"></li>
         <li data-target="#bestCarsCarousel" data-slide-to="1"></li>
@@ -3020,7 +2953,7 @@ Carousel 是一个响应式幻灯片插件，而 modal 是一个类似于灯箱�
 
 要创建一个轮播图指示器（Indicator），你必须定义一个类为 `carousel-indicators` 的有序列表。`li` 元素的数量取决于你想拥有的幻片数量。每个 `li` 元素都应该有一个 `data-target` 属性，其中包含轮播图容器的 ID。它还应该有一个 `data-slide-to` 属性，其中包含它指向的特定幻片的序列号。
 
-接下来，我们构建轮播图的核心——幻片（slides）。首先，我们为所有幻片创建一个包装元素。这将一个类为 `carousel-inner` 的 `div`。每张幻片由一个类为 `item` 的 `div` 元素定义。每个项目都必须有一张性图片和可选的文本数据。此图片将作为该特定幻片项目的背景。对于每张图片，我们可以添加相关的说明和一些额外的文本数据。这些说明被一个类为 `carousel-caption` 的 `div` 元素封装。可以使用任何 HTML 标题标签来插入说明：`<h1>`、`<h2>`、`<h3>` 等。对于相关文本，你可以使用 `<p>` 标签。
+接下来，我们构建轮播图的核心——幻片（slides）。首先，我们为所有幻片创建一个包装元素。这将一个类为 `carousel-inner` 的 `div`。每张幻片由一个类为 `item` 的 `div` 元素定义。每个项目都必须有一张图片和可选的文本数据。此图片将作为该特定幻片项目的背景。对于每张图片，我们可以添加相关的说明和一些额外的文本数据。这些说明被一个类为 `carousel-caption` 的 `div` 元素封装。可以使用任何 HTML 标题标签来插入说明：`<h1>`、`<h2>`、`<h3>` 等。对于相关文本，你可以使用 `<p>` 标签。
 
 对每张幻片重复相同的 `item` 标记。在您完成所有幻片的创建后，我们将构建一个用于导航轮播图内容的控制器部分（controls）。
 
@@ -3038,7 +2971,6 @@ var options = {
     pause: 'hover',
     wrap: true
 };
-
 $('#bestCarsCarousel').carousel(options);
 ```
 
@@ -3073,9 +3005,6 @@ $('#bestCarsCarousel').on('slid.bs.carousel', function () {
 
 **模态框 (Modals)** 是网页中隐藏的 HTML 元素，在触发时从屏幕顶部向下滑动。它是用于显示对话提示（如警告和确认框）的最佳插件之一。你还可以使用它来展示更大版本的图片、显示长长的条款和条件列表，或者显示注册/登录表单。
 
-
-
-
 使用 Bootstrap 3，模态框（modals）已经变得响应式。这意味着即使在较小的屏幕上，它们也有良好的显示和运行效果。让我们创建一个模态框：
 
 ```html
@@ -3101,11 +3030,11 @@ $('#bestCarsCarousel').on('slid.bs.carousel', function () {
 </div>
 ```
 
-每个模态框都应该有一个一个类名为 `modal` 的容器。为了给模态框添加淡入效果，我们需要在同一个容器上添加 `fade` 类。接下来，我们定义一个类名为 `modal-dialog` 的 `div` 元素。它负责控制模态框的大小。默认情况下，它会根据屏幕的大小调整尺寸。稍后我们将看到如何通过向 `modal-dialog` 添加额外的类来更改模态框的大小。在模态对话框内部，我们将创建一个包装元素，用于封装模态框的各个子部分。该包装元素应该有一个名为 `modal-content` 的类。
+每个模态框都应该有一个类名为 `modal` 的容器。为了给模态框添加淡入效果，我们需要在同一个容器上添加 `fade` 类。接下来，我们定义一个类名为 `modal-dialog` 的 `div` 元素。它负责控制模态框的大小。默认情况下，它会根据屏幕的大小调整尺寸。稍后我们将看到如何通过向 `modal-dialog` 添加额外的类来更改模态框的大小。在模态对话框内部，我们将创建一个包装元素，用于封装模态框的各个子部分。该包装元素应该有一个名为 `modal-content` 的类。
 
 模态框的子部分包括头部（header）、主体（body）和页脚（footer）。头部和页脚是可选的。要创建一个模态框头部，你需要一个类名为 `modal-header` 的 `div` 元素。在里面你可以模态标题和模态关闭图标。模态标题使用类名为 `modal-title` 的 `h4` 元素给出。这里的关闭图标是一个封装在 `button` 元素周围的乘法（x）符号。此按钮应该具有 `close` 类，以便它对齐到模态框头部的左上角。添加 `data-dismiss` 属性可以允许按钮在点击时关闭模态框。
 
-对于主体，我们需要一个类名为 `modal-body` 的 `div`。你可以在此元素放入放入任何内容。你甚至可以使用 Bootstrap 的网格系统在内部合理组织内容。
+对于主体，我们需要一个类名为 `modal-body` 的 `div`。你可以在此元素放入任何内容。你甚至可以使用 Bootstrap 的网格系统在内部合理组织内容。
 
 最后，为了创建模态框页脚，我们定义一个类名为 `modal-footer` 的 `div` 元素。模态框页脚内部的内容默认右对齐。
 
@@ -3117,7 +3046,7 @@ $('#bestCarsCarousel').on('slid.bs.carousel', function () {
 </button>
 ```
 
-在代码代码中，我使用按钮组件来触发模态框。它应该有一个 `data-target` 属性，告诉 Bootstrap 应该触发哪个模态框，因为网站中可能有多个模态框。我们还需要定义 `data-toggle` 属性来确定点击时触发什么操作。
+在代码中，我使用按钮组件来触发模态框。它应该有一个 `data-target` 属性，告诉 Bootstrap 应该触发哪个模态框，因为网站中可能有多个模态框。我们还需要定义 `data-toggle` 属性来确定点击时触发什么操作。
 
 现在我们已经准备好使用我们的模态框了。去点击按钮，查看浏览器中淡入的模态框，如图 4.19 所示。
 
@@ -3147,7 +3076,6 @@ var options = {
     show: true,
     remote: false
 }
-
 $("#myModal").modal(options);
 ```
 
@@ -3197,7 +3125,7 @@ $('#myModal').on('hidden.bs.modal', function () {
 
 Bootstrap 的许多组件和插件都有自己的默认样式。为了给它们注入个性化色彩，你需要替换它们的 CSS 规则并定义你自己的。
 
-在第一章， 中，我与你分享了一些基于 Bootstrap 构建的流行网站。它们都自定义了 Bootstrap 的 CSS，使它们的模板看起来独特且美丽。
+在第一章中，我与你分享了一些基于 Bootstrap 构建的流行网站。它们都自定义了 Bootstrap 的 CSS，使它们的模板看起来独特且美丽。
 
 在本章中，我们将讨论可以用来完全自定义 Bootstrap 默认样式的各种方法，并分析哪种方法更优以及为什么。最后，我们将尝试理解 Bootstrap 的 CSS 是如何编写的，使其成为高度响应式的框架。
 
@@ -3207,10 +3135,6 @@ Bootstrap 的许多组件和插件都有自己的默认样式。为了给它们�
 
 ### 注意：什么是 Less？
 
-
-
-
-
 [Less](http://lesscss.org) 是一种 CSS 处理器，它扩展了 CSS 的功能，添加了变量、混合宏（mixins）、函数等编程特性。它使 CSS 保持模块化、可维护和可扩展。Less 文件会被编译并生成 CSS 文件，然后你可以在项目中使用这些文件。
 
 如果你使用 Ruby 工作，[Sass](http://sass-lang.com) 是 Less 的替代方案。它也是 Bootstrap 支持的一种 CSS 处理器；然而，我们不会在书中介绍 Sass 的自定义。
@@ -3219,9 +3143,9 @@ Bootstrap 默认包附带的样式表是普通的 CSS 文件。如果你使用�
 
 直接修改 CSS 文件有很多缺点。其中一些重要的缺点包括：
 
-*   更改是不可逆的。你将不再记得原始的 CSS 属性及其值，因此你无法恢复到原始的 Bootstrap 样式。
-*   你对任何选择器所做的更改都可能破坏 Bootstrap 的响应式布局。
-*   调试变得非常困难；你需要理解 CSS 继承链才能找到父级选择器。
+* 更改是不可逆的。你将不再记得原始的 CSS 属性及其值，因此你无法恢复到原始的 Bootstrap 样式。
+* 你对任何选择器所做的更改都可能破坏 Bootstrap 的响应式布局。
+* 调试变得非常困难；你需要理解 CSS 继承链才能找到父级选择器。
 
 在我们开始自定义之前，让我们先设置本章将要使用的项目。一如既常，我们将使用在第 1 章 中创建的 `Bootstrap_demos` 项目。将所有内容复制到名为 `Chapter_5` 的新文件夹中。打开 `index.html`并将页面标题更改为“Customizing Bootstrap”。现在从 body 中移除 `<h1>` 标签。
 
@@ -3231,14 +3155,14 @@ Bootstrap 默认包附带的样式表是普通的 CSS 文件。如果你使用�
 
 首先，我们在 `/css` 文件夹内创建一个名为 `app.css`（或你喜欢的名称）的新文件。然后我们打开 `index.html` 并链接到这个新的 CSS 文件。该新 CSS 文件的链接应该包含在 Bootstrap CSS 文件的链接下方：
 
-```
+```html
 <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 <link rel="stylesheet" type="text/css" href="css/app.css">
 ```
 
 让我们添加一个 Bootstrap 按钮，如图 5.1 所示。我们将用它来展示如何对其默认设计进行更改：
 
-```
+```html
 <div class="container">
     <a href="#" class="btn btn-primary btn-lg">Big Fat Button</a>
 </div>
@@ -3250,10 +3174,10 @@ Bootstrap 默认包附带的样式表是普通的 CSS 文件。如果你使用�
 
 现在我们将执行以下操作来自定义此按钮：
 
-*   移除按钮的圆角
-*   修改内边距（padding）大小
-*   调整字体大小
-*   更改背景颜色
+* 移除按钮的圆角
+* 修改内边距（padding）大小
+* 调整字体大小
+* 更改背景颜色
 
 让我们开发者工具检查按钮。我们将使用 Chrome，如图 5.2 所示，但你也可以使用任何类似的工具，例如 Firefox 中的 Firebug。`padding`、`font-size` 和 `border-radius` 等属性来自 `btn` 类，而 `background` 属性通过 `btn-primary` 类应用。要修改它们，我们需要在 CSS 文件 `app.css` 中使用相同的选择器来覆盖这些属性。
 
@@ -3263,13 +3187,12 @@ Bootstrap 默认包附带的样式表是普通的 CSS 文件。如果你使用�
 
 打开 app.css 并添加以下 CSS：
 
-```
+```css
 .btn{
     border-radius: 0; 
     padding: 5px 10px;
     font-size: 16px;
 }
-
 .btn-primary{
     background: #63AEF0;
 }
@@ -3295,57 +3218,53 @@ Less 文件位于名为 `less` 的文件夹中。在这里，你会发现许多�
 
 Bootstrap 中使用的所有变量和混合宏都存在两个不同的文件中：
 
-1.  `variables.less` 包含了 Bootstrap 中使用的所有标准颜色、默认响应式宽度值、默认内边距和边距值。如果你想进行任何此类更改，需要处理此文件。
-2.  `mixins.less` 包含了用于生成厂商前缀以及动态计算网格宽度、占位符、按钮大小等的混合宏。
+1. `variables.less` 包含了 Bootstrap 中使用的所有标准颜色、默认响应式宽度值、默认内边距和边距值。如果你想进行任何此类更改，需要处理此文件。
+2. `mixins.less` 包含了用于生成厂商前缀以及动态计算网格宽度、占位符、按钮大小等的混合宏。
 
 #### 重置文件
 
 有两个重置文件用于清除浏览器的默认设置：
 
-1.  `normalize.less` 清除了许多浏览器的默认设置，如字体族、字体大小、内边距和外边距、标题标签默认值、表单元素样式等。
-2.  `print.less` 包含了用于打印支持的媒体查询。
+1. `normalize.less` 清除了许多浏览器的默认设置，如字体族、字体大小、内边距和外边距、标题标签默认值、表单元素样式等。
+2. `print.less` 包含了用于打印支持的媒体查询。
 
 #### 核心文件
 
 有七个核心 .less 文件：
 
-*   `scaffolding.less` 包含了所有图片的辅助类（如 `.img-responsive` 和 `.img-circle`）、链接元素各种状态的样式、水平线、用于屏幕阅读器的样式等。
-*   `type.less` 是一个排版文件，包含了标题标签、段落标签以及其他内容相关的辅助类（如 `.lead`、`.text-muted` 等）的各种样式。
-*   `code.less` 包含了用于设置网页上显示的任何代码样式的 CSS 属性。
-*   `grid.less` 涉及应用于 Bootstrap 网格系统的所有 CSS 值。
-*   `tables.less` 具有装饰 `<table>` 元素的样式。它还定义了表格的各种辅助类，如 `.table-condensed`、`.table-bordered` 等。
-*   `forms.less` 美化表单元素，如文本字段、图例、复选框、单选按钮等。
-*   `buttons.less` 包含了各种类型 Bootstrap 按钮的样式。所有与按钮相关的类都定义在这里。
+* `scaffolding.less` 包含了所有图片的辅助类（如 `.img-responsive` 和 `.img-circle`）、链接元素各种状态的样式、水平线、用于屏幕阅读器的样式等。
+* `type.less` 是一个排版文件，包含了标题标签、段落标签以及其他内容相关的辅助类（如 `.lead`、`.text-muted` 等）的各种样式。
+* `code.less` 包含了用于设置网页上显示的任何代码样式的 CSS 属性。
+* `grid.less` 涉及应用于 Bootstrap 网格系统的所有 CSS 值。
+* `tables.less` 具有装饰 `<table>` 元素的样式。它还定义了表格的各种辅助类，如 `.table-condensed`、`.table-bordered` 等。
+* `forms.less` 美化表单元素，如文本字段、图例、复选框、单选按钮等。
+* `buttons.less` 包含了各种类型 Bootstrap 按钮的样式。所有与按钮相关的类都定义在这里。
 
 #### 组件文件
 
 Bootstrap 中有 21 个组件文件。在前章中介绍的每个组件都有它们自己的 .less 文件。与组件相关的所有 CSS 定义都可以在其 .less 文件找到。
 
-*   `component-animations.less`
-*   `glyphicons.less`
-*   `dropdowns.less`
-*   `button-groups.less`
-*   `input-groups.less`
-*   `navs.less`
-*   `navbar.less`
-*   `breadcrumbs.less`
-*   `pagination.less`
-*   `pager.less`
-*   `labels.less`
-*   `badges.less`
-*   `jumbotron.less`
-*   `thumbnails.less`
-*   `alerts.less`
-*   `progress-bars.less`
-*   `media.less`
-*   `list-group.less`
-*   `panels.less`
-*   `wells.less`
-*   `close.less`
-
-
-
-
+* `component-animations.less`
+* `glyphicons.less`
+* `dropdowns.less`
+* `button-groups.less`
+* `input-groups.less`
+* `navs.less`
+* `navbar.less`
+* `breadcrumbs.less`
+* `pagination.less`
+* `pager.less`
+* `labels.less`
+* `badges.less`
+* `jumbotron.less`
+* `thumbnails.less`
+* `alerts.less`
+* `progress-bars.less`
+* `media.less`
+* `list-group.less`
+* `panels.less`
+* `wells.less`
+* `close.less`
 
 列表中还有一个文件，它本身并不是一个组件，即 `close.less`。它包含了用于模态框（modals）、警报（alerts）和其他元素关闭此特定组件的按钮 CSS 规则。
 
@@ -3373,13 +3292,13 @@ Bootstrap 中有 21 个组件文件。在前章中介绍的每个组件都有它
 
 模态框的圆角是通过 `modal-content` 类应用的。让我们在 `modals.less` 中找到这个选择器。它看起来应该是这样的：
 
-```
+```less
 // Actual modal
 .modal-content {
   position: relative;
   background-color: @modal-content-bg;
   border: 1px solid @modal-content-fallback-border-color; 
-↵//old browsers fallback (ie8 etc)
+//old browsers fallback (ie8 etc)
   border: 1px solid @modal-content-border-color;
   border-radius: @border-radius-large;
   .box-shadow(0 3px 9px rgba(0,0,0,.5));
@@ -3391,13 +3310,13 @@ Bootstrap 中有 21 个组件文件。在前章中介绍的每个组件都有它
 
 从代码中，我们可以看到圆角来自 `border-radius` 属性，其值是在 `variables.less` 中初始化的 Less 变量。让我们注释掉这一行来移除圆角：
 
-```
+```less
 // Actual modal
 .modal-content {
   position: relative;
   background-color: @modal-content-bg;
   border: 1px solid @modal-content-fallback-border-color; 
-↵//old browsers fallback (ie8 etc)
+//old browsers fallback (ie8 etc)
   border: 1px solid @modal-content-border-color;
 //  border-radius: @border-radius-large;
   .box-shadow(0 3px 9px rgba(0,0,0,.5));
@@ -3407,15 +3326,15 @@ Bootstrap 中有 21 个组件文件。在前章中介绍的每个组件都有它
 }
 ```
 
-现在，我们必须减少阴影量。分析代码，我们可以看到 `.box-shdow()` mixin 负责生成 CSS 中的阴影属性。该 mixin 定义在 `mixins.less` 文件中，阴影值作为值传递给该 mixin。让我们根据需求更改此值。阴影量由值中的第三个数字定义，它作为参数传递——目前是 9px。让我们将这个数字减少到 2px。因此，我们的选择器现在看起来应该是这样：
+现在，我们必须减少阴影量。分析代码，我们可以看到 `.box-shadow()` mixin 负责生成 CSS 中的阴影属性。该 mixin 定义在 `mixins.less` 文件中，阴影值作为值传递给该 mixin。让我们根据需求更改此值。阴影量由值中的第三个数字定义，它作为参数传递——目前是 9px。让我们将这个数字减少到 2px。因此，我们的选择器现在看起来应该是这样：
 
-```
+```less
 // Actual modal
 .modal-content {
   position: relative;
   background-color: @modal-content-bg;
   border: 1px solid @modal-content-fallback-border-color; 
-↵//old browsers fallback (ie8 etc)
+//old browsers fallback (ie8 etc)
   border: 1px solid @modal-content-border-color;
   border-radius: @border-radius-large;
   .box-shadow(0 3px 2px rgba(0,0,0,.5));
@@ -3427,7 +3346,7 @@ Bootstrap 中有 21 个组件文件。在前章中介绍的每个组件都有它
 
 我们还需要更改其中一个媒体查询中的 `box-shadow` 值，这会覆盖之前的更改。我们很快就会学习媒体查询。但现在，你需要理解 Bootstrap 对不同尺寸的设备有不同的 CSS 规则。所以，让我们在 `modals.less` 中找到以下媒体查询：
 
-```
+```less
 // Scale up the modal
 @media (min-width: @screen-sm-min) {
   // 为更大的视口自动设置模态框宽度
@@ -3438,7 +3357,6 @@ Bootstrap 中有 21 个组件文件。在前章中介绍的每个组件都有它
   .modal-content {
     .box-shadow(0 5px 15px rgba(0,0,0,.5));
   }
-
   // Modal sizes
   .modal-sm { width: @modal-sm; }
 }
@@ -3457,7 +3375,6 @@ Bootstrap 中有 21 个组件文件。在前章中介绍的每个组件都有它
   .modal-content {
     .box-shadow(0 5px 2px rgba(0,0,0,.5));
   }
-
   // Modal sizes
   .modal-sm { width: @modal-sm; }
 }
@@ -3465,23 +3382,21 @@ Bootstrap 中有 21 个组件文件。在前章中介绍的每个组件都有它
 
 现在我们来更改模态框的背景颜色。我们将使用 `variables.less` 中预定义的变量 `@brand-info` 作为模态框的背景颜色。该变量初始化为 `#5bc0de`，这是一种浅蓝色。对于文本颜色，让我们使用变量 `@body-bg`，它在同一个文件中被设置为 `#fff`。修改后的 `modal-content` 选择器现在看起来像：
 
-```
+```less
 // Actual modal
 .modal-content {
   position: relative;
   background-color: @modal-content-bg;
   border: 1px solid @modal-content-fallback-border-color; 
-↵//old browsers fallback (ie8 etc)
+//old browsers fallback (ie8 etc)
   border: 1px solid @modal-content-border-color;
   border-radius: @border-radius-large;
   .box-shadow(0 3px 9px rgba(0,0,0,.5));
   background-clip: padding-box;
   // Remove focus outline from opened modal
   outline: 0;
-
   background: @brand-info;
   color: @body-bg;
-
 }
 ```
 
@@ -3489,7 +3404,7 @@ Bootstrap 中有 21 个组件文件。在前章中介绍的每个组件都有它
 
 我们将此 `modal-background` 的背景颜色从黑色改为白色：
 
-```
+```less
 // Modal background
 .modal-backdrop {
   position: fixed;
@@ -3519,22 +3434,19 @@ Bootstrap 中有 21 个组件文件。在前章中介绍的每个组件都有它
 
 如果你安装了 Node，可以使用 Node 的包管理器安装 `less` 编译器：
 
-```
+```bash
 $ npm install -g less
 ```
 
 一旦安装了 `less`，使用以下命令将 `bootstrap.less` 编译为 `bootstrap.css`。你必须在命令行中导航到 `/less` 文件夹，然后输入此命令：
 
-```
+```bash
 $ lessc bootstrap.less > bootstrap.css
 ```
 
 ### 使用第三方软件
 
-有很多用于编写和编译 Less 代码的 GUI 应用程序。一些流行的选项包括 [Crunch!](http://crunchapp.net/)、[SimpLESS,](http://wearekiss.com/simpless) 和 [Mixture.](http://mixture.io/)。
-
-
-
+有很多用于编写和编译 Less 代码的 GUI 应用程序。一些流行的选项包括 [Crunch!](http://crunchapp.net/)、[SimpLESS](http://wearekiss.com/simpless) 和 [Mixture](http://mixture.io/)。
 
 取消某个特定组件可能会同时取消依赖于它的其他组件。例如，在自定义页面中取消 `Forms`（表单）将自动取消 `Input groups`（输入组）和 `Navbar`（导航栏）。因此，在进行选择时需要小心！
 
@@ -3544,7 +3456,7 @@ $ lessc bootstrap.less > bootstrap.css
 
 如果你想自定义 Bootstrap 的响应式网格系统，理解媒体查询非常重要。让我们来看一个简单的媒体查询：
 
-```
+```css
 @media all and (min-width: 699px){
     h1{
         display: none;
@@ -3558,7 +3470,7 @@ $ lessc bootstrap.less > bootstrap.css
 
 Bootstrap 为各种设备尺寸定义了许多媒体查询以创建一个高度响应的框架。这里是 Bootstrap CSS 文件中的片段：
 
-```
+```css
 @media (min-width: 768px) {
   .container {
     width: 750px;
@@ -3590,7 +3502,7 @@ Bootstrap 为各种设备尺寸定义了许多媒体查询以创建一个高度�
 
 #### 使用压缩后的 Bootstrap CSS 文件
 
-正如上一章 所述，Bootstrap 允许开发者在开发模板时仅选择实际需要的组件。这减少了主 Bootstrap CSS 文件（`bootstrap.css`）的总体。一旦网站准备好，我们可以通过其压缩版本（`bootstrap.min.css`）进一步缩小此 CSS 文件的大小。
+正如上一章所述，Bootstrap 允许开发者在开发模板时仅选择实际需要的组件。这减少了主 Bootstrap CSS 文件（`bootstrap.css`）的总体。一旦网站准备好，我们可以通过其压缩版本（`bootstrap.min.css`）进一步缩小此 CSS 文件的大小。
 
 #### 使用 Less 移除未使用的 Bootstrap 组件
 
@@ -3598,7 +3510,7 @@ Bootstrap 为各种设备尺寸定义了许多媒体查询以创建一个高度�
 
 例如，为了避免使用 Bootstrap 的标签（labels）、徽章（badges）和进度条（progress bars），你可以注释 `bootstrap.less` 文件中的以下行：
 
-```
+```less
 @import "labels.less";
 @import "badges.less";
 @import "progress-bars.less";
@@ -3606,7 +3518,7 @@ Bootstrap 为各种设备尺寸定义了许多媒体查询以创建一个高度�
 
 假设你不想使用任何 Bootstrap 的 JavaScript 插件。通过注释掉 `bootstrap.less` 中的以下行来移除与它们相关的所有 CSS 规则以完全排除它们：
 
-```
+```less
 // Components w/ JavaScript
 @import "modals.less";
 @import "tooltip.less";
@@ -3616,7 +3528,7 @@ Bootstrap 为各种设备尺寸定义了许多媒体查询以创建一个高度�
 
 你还可以移除内置 Bootstrap 包的默认字体图标（glyphicons）。首先，你需要删除 fonts 文件夹中所有的 `glyphicon-*` 字体文件。然后注释 `bootstrap.less` 文件中的以下导入语句：
 
-```
+```less
 @import "glyphicons.less";
 ```
 
@@ -3630,7 +3542,7 @@ Bootstrap 为各种设备尺寸定义了许多媒体查询以创建一个高度�
 
 让我们首先将所有 CSS 文件合并为一个名为 `application.css` 的主文件。可以使用 CSS 的 `@import` 语句如下所示：
 
-```
+```css
 @import url("bootstrap.min.css");
 @import url("myCSSFile1.css");
 @import url("myCSSFile2.css");
@@ -3642,23 +3554,20 @@ Bootstrap 为各种设备尺寸定义了许多媒体查询以创建一个高度�
 
 接下来，在终端中运行 `recess` 命令：
 
-```
+```bash
 recess path/to/application.css --compress > 
-↵path/to/application.min.css
+path/to/application.min.css
 ```
 
 这将在相同文件夹创建一个名为 `application.min.css` 的新 CSS 文件。这个新 CSS 文件的大小比原始分离的文件小得多。
 
 ### 优化 JavaScript
 
-优化 JavaScript 文件与优化 CSS 文件同样重要。Bootstrap 提供了灵活的选项，可以移除我们在项目中不需要的任何 JavaScript 插件。这极极有助于减少主 JavaScript 文件 `bootstrap.js` 的大小。
+优化 JavaScript 文件与优化 CSS 文件同样重要。Bootstrap 提供了灵活的选项，可以移除我们在项目中不需要的任何 JavaScript 插件。这极有助于减少主 JavaScript 文件 `bootstrap.js` 的大小。
 
 #### 使用压缩后的 Bootstrap JavaScript 文件
 
-如果你希望能够使用所有的 Bootstrap JavaScript 插件，在项目项目生产环境时，应该包含压缩文件 `bootstrap.min.js` 而不是 `bootstrap.js`。
-
-
-
+如果你希望能够使用所有的 Bootstrap JavaScript 插件，在项目生产环境时，应该包含压缩文件 `bootstrap.min.js` 而不是 `bootstrap.js`。
 
 就像我们处理 CSS 组件一样，你可以前往 Bootstrap 的自定义页面，在下载之前取消勾选任何你不需要 JavaScript 插件。这是从 Bootstrap 中移除不需要的 JavaScript 插件最简单的方法。
 
@@ -3676,14 +3585,14 @@ Bootstrap 还为它的每个 JavaScript 插件都提供了单独的 `.js` 文件
 
 这是一个示例：
 
-```
+```bash
 $ ./compressjs.sh jquery.min.js bootstrap.min.js 
-↵myCustomJavaScript.js
+myCustomJavaScript.js
 ```
 
 此命令将编译所有的 JavaScript 文件并在单个 `.js` 文件中输出。它会给压缩后的文件一个随机名称并告诉你文件名。如果你有许多 JavaScript 文件，可以将它们放在同一个文件夹中，并按如下方式一起编译：
 
-```
+```bash
 $ ./compressjs.sh scripts/*.js
 ```
 
@@ -3695,9 +3604,9 @@ $ ./compressjs.sh scripts/*.js
 
 ### 优化图片
 
-通常是图片导致网页加载缓慢缓慢。想象一种情况：我们需要显示一张分辨率为 500px x 500px 的图像，但我们拥有一张分辨率为 2000px x 2000px 的图像。我们可以使用 Bootstrap 的辅助类 `img-responsive` 将较大的图像适应到 500px x 500px 的 div 中；然而，虽然辅助类帮助正确显示了图像，但它并没有实际上缩小图片的文件大小。遗憾的是，Bootstrap 缺乏修复此问题的工具。
+通常是图片导致网页加载缓慢。想象一种情况：我们需要显示一张分辨率为 500px x 500px 的图像，但我们拥有一张分辨率为 2000px x 2000px 的图像。我们可以使用 Bootstrap 的辅助类 `img-responsive` 将较大的图像适应到 500px x 500px 的 div 中；然而，虽然辅助类帮助正确显示了图像，但它并没有实际上缩小图片的文件大小。遗憾的是，Bootstrap 缺乏修复此问题的工具。
 
-有几种服务器端工具可以识别特定图片的请求类型，并在提供之前调整图片大小。我一直在使用的一些工具包括 [Adaptive Images](http://adaptive-images.com/) 和 [TimThumb，](http://www.binarymoon.co.uk/projects/timthumb/)，但我不会在书中介绍它们，因为它们是服务器端工具。可以在它们的官方网上找到安装和使用说明。
+有几种服务器端工具可以识别特定图片的请求类型，并在提供之前调整图片大小。我一直在使用的一些工具包括 [Adaptive Images](http://adaptive-images.com/) 和 [TimThumb](http://www.binarymoon.co.uk/projects/timthumb/)，但我不会在书中介绍它们，因为它们是服务器端工具。可以在它们的官方网上找到安装和使用说明。
 
 ## 避免常见陷阱
 
@@ -3705,44 +3614,36 @@ $ ./compressjs.sh scripts/*.js
 
 然而，Bootstrap 开发者在开发响应式网站时经常会陷入一些常见的陷阱。这些问题会导致你的网站在较小设备上运行缓慢且无响应，因此请注意：
 
-*   **为特定设备使用不同的 HTML 标记**：新开发者经常利用 Bootstrap 的响应式实用程序功能（如 `hidden-sm` 和 `visible-sm`）来切换网站上各种组件的显示。他们在一个文档中编写不同版本的 HTML 标记，然后使用这些辅助类根据浏览器窗口的大小来切换组件的显示。通过这样做，他们忘记了 HTML 页面的总尺寸在增加，这会减慢渲染过程。因此，建议使用 Bootstrap 的网格系统在所有尺寸的浏览器中动态调整相同 HTML 标记的大小。
+* **为特定设备使用不同的 HTML 标记**：新开发者经常利用 Bootstrap 的响应式实用程序功能（如 `hidden-sm` 和 `visible-sm`）来切换网站上各种组件的显示。他们在一个文档中编写不同版本的 HTML 标记，然后使用这些辅助类根据浏览器窗口的大小来切换组件的显示。通过这样做，他们忘记了 HTML 页面的总尺寸在增加，这会减慢渲染过程。因此，建议使用 Bootstrap 的网格系统在所有尺寸的浏览器中动态调整相同 HTML 标记的大小。
 
-*   **在目标为 IE8 及以下版本的应用程序中使用 Bootstrap**：我见过一些大型组织仍然兼容 Internet Explorer 8 及以下版本。虽然 Bootstrap 确实为 IE8 提供了支持，但有一些 CSS3 属性在其中无法工作，例如 `border-radius` 和 `box-shadows`。因此，如果你的目标用户是 IE8 及更低版本，建议避免使用 Bootstrap。事实上，你绝对不应该在目标群体为 IE7 及以下版本的应用程序中使用 Bootstrap 3。
+* **在目标为 IE8 及以下版本的应用程序中使用 Bootstrap**：我见过一些大型组织仍然兼容 Internet Explorer 8 及以下版本。虽然 Bootstrap 确实为 IE8 提供了支持，但有一些 CSS3 属性在其中无法工作，例如 `border-radius` 和 `box-shadows`。因此，如果你的目标用户是 IE8 及更低版本，建议避免使用 Bootstrap。事实上，你绝对不应该在目标群体为 IE7 及以下版本的应用程序中使用 Bootstrap 3。
 
-*   **使用 Bootstrap 构建混合移动应用**：你应该避免使用 Bootstrap 创建使用 Web 技术开发并转移植到移动平台的混合应用。Bootstrap 对于此类应用来说可能太重了。你反而可以使用 [Ratchet 框架，](http://goratchet.com)，它是专门为创建移动应用而开发的。Ratchet 出自同一个 Bootstrap 团队，你可以在 SitePoint 上了解更多信息。](http://www.sitepoint.com/prototype-mobile-apps-easily-ratchet/)
+* **使用 Bootstrap 构建混合移动应用**：你应该避免使用 Bootstrap 创建使用 Web 技术开发并转移植到移动平台的混合应用。Bootstrap 对于此类应用来说可能太重了。你反而可以使用 [Ratchet 框架](http://goratchet.com)，它是专门为创建移动应用而开发的。Ratchet 出自同一个 Bootstrap 团队，你可以在 SitePoint 上了解更多信息。
 
 Bootstrap 团队通过修复已知问题和添加新功能来不断发布新版本。你也可以查看 Bootstrap 的官方 issues 页面，以跟踪[Bootstrap 3 当前的已知问题](https://github.com/twbs/bootstrap/issues)。
 
 ## 接下来该做什么
 
-俗话说，“熟熟能生巧。”你对 Bootstrap 练习得越多，对设计的控制力就越强。练习的一种方法是尝试使用 Bootstrap 重现流行响应式网站的设计。以下是一个你可以从中获取灵感的网站列表：
+俗话说，“熟能生巧。”你对 Bootstrap 练习得越多，对设计的控制力就越强。练习的一种方法是尝试使用 Bootstrap 重现流行响应式网站的设计。以下是一个你可以从中获取灵感的网站列表：
 
-*   [Hudson's Bay Company](http://www3.hbc.com/)
-*   [Dribbble](http://dribbble.com/)
-*   [Google+](http://plus.google.com)
-*   [Pinterest](http://www.pinterest.com)
-*   [Zurb](http://www.zurb.com)
-*   [Sony](http://www.sony.com)
-*   [Microsoft](http://www.microsoft.com)
-*   [Bootstrap](http://getbootstrap.com)
+* [Hudson's Bay Company](http://www3.hbc.com/)
+* [Dribbble](http://dribbble.com/)
+* [Google+](http://plus.google.com)
+* [Pinterest](http://www.pinterest.com)
+* [Zurb](http://www.zurb.com)
+* [Sony](http://www.sony.com)
+* [Microsoft](http://www.microsoft.com)
+* [Bootstrap](http://getbootstrap.com)
 
 我们在书中已经查看了一些内置的 Bootstrap 插件，但研究一些可提供的第三方 Bootstrap 插件也是值得的，因为它们可以为你的网站添加强大的功能。以下是一些最流行的选择：
 
-*   [FuelUX](https://github.com/ExactTarget/fuelux/tree/3.0.0-wip) 添加了各种流行功能，如日期选择器、复选框、组合框、加载器、药丸框和树形。
-
-*   [Jasny Bootstrap](http://jasny.github.io/bootstrap/) 引入了一些 Bootstrap 3 中未涵盖的重要功能。例如，off canvas（从屏幕侧面滑出的菜单，类似于移动设备应用）、行链接（将表格行转换为可点击链接）、输入掩码（强制用户按特定格式输入数据）以及文件输入（一种时尚的文件输入字段）。
-
-*   [Bootstrap Lightbox](http://www.jasonbutz.info/bootstrap-lightbox/) 为 Bootstrap 添加了灯箱功能。
-
-*   [Bootstrap Image Gallery](http://blueimp.github.io/Bootstrap-Image-Gallery/)) 为 Bootstrap 提供了一个功能齐全、即插用的图库。
-
-*   [Bootstrap Notifications](http://goodybag.github.io/bootstrap-notify/) 赋予在屏幕任何地方显示漂亮通知的能力。
-
-*   [Bootstrap Markdown](http://toopay.github.io/bootstrap-markdown/) 在 Bootstrap 中提供了 Markdown 编辑工具。
-
-*   [Bootstrap Colorpicker](http://www.eyecon.ro/bootstrap-colorpicker/) 添加了颜色选择器组件。
-
-*   [Bootstrap Star Rating](http://plugins.krajee.com/star-rating) 提供星级评分工具。
+* [FuelUX](https://github.com/ExactTarget/fuelux/tree/3.0.0-wip) 添加了各种流行功能，如日期选择器、复选框、组合框、加载器、药丸框和树形。
+* [Jasny Bootstrap](http://jasny.github.io/bootstrap/) 引入了一些 Bootstrap 3 中未涵盖的重要功能。例如，off canvas（从屏幕侧面滑出的菜单，类似于移动设备应用）、行链接（将表格行转换为可点击链接）、输入掩码（强制用户按特定格式输入数据）以及文件输入（一种时尚的文件输入字段）。
+* [Bootstrap Lightbox](http://www.jasonbutz.info/bootstrap-lightbox/) 为 Bootstrap 添加了灯箱功能。
+* [Bootstrap Image Gallery](http://blueimp.github.io/Bootstrap-Image-Gallery/) 为 Bootstrap 提供了一个功能齐全、即插用的图库。
+* [Bootstrap Notifications](http://goodybag.github.io/bootstrap-notify/) 赋予在屏幕任何地方显示漂亮通知的能力。
+* [Bootstrap Markdown](http://toopay.github.io/bootstrap-markdown/) 在 Bootstrap 中提供了 Markdown 编辑工具。
+* [Bootstrap Colorpicker](http://www.eyecon.ro/bootstrap-colorpicker/) 添加了颜色选择器组件。
+* [Bootstrap Star Rating](http://plugins.krajee.com/star-rating) 提供星级评分工具。
 
 你应该在未来的项目中尝试 Bootstrap，以感受它所承诺的快速开发环境。你也可以关注 SitePoint 上的 Bootstrap 教程来探索更多。加油，Bootstrap 吧！
-

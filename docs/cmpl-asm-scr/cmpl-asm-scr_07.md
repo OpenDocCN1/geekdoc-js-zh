@@ -1,3 +1,4 @@
+
 # 第六章：第一次遍历：解析器
 
 > 原文：[`keleshev.com/compiling-to-assembly-from-scratch/06-first-pass-the-parser`](https://keleshev.com/compiling-to-assembly-from-scratch/06-first-pass-the-parser)
@@ -10,7 +11,7 @@
 
 ## 空白和注释
 
-首先，让我们定义空白和注释的解析器，我们将它们统称为 *ignored*。（当一个解析器被分割成词法分析和解析器时，空白和注释通常在词法分析级别完成。）
+首先，让我们定义空白和注释的解析器，我们将它们统称为 `ignored`。（当一个解析器被分割成词法分析和解析器时，空白和注释通常在词法分析级别完成。）
 
 ```js
 let whitespace = regexp(/[ \n\r\t]+/y);
@@ -79,7 +80,7 @@ let NUMBER =
  new Number(parseInt(digits, 10)));
 ```
 
-我们将`[0-9]+`标记映射到使用`parseInt` JavaScript 内置函数将数字转换为 JavaScript 数字，该函数接受一个字符串和一个基数（十进制为 10）。然后我们从这个字符串构造一个`Number` AST 节点。
+我们将 `[0-9]+` 标记映射到使用 `parseInt` JavaScript 内置函数将数字转换为 JavaScript 数字，该函数接受一个字符串和一个基数（十进制为 10）。然后我们从这个字符串构造一个 `Number` AST 节点。
 
 标识符以字母或下划线开头，后跟一定数量的字母、数字和下划线。换句话说，它们不能以数字开头。
 
@@ -87,7 +88,7 @@ let NUMBER =
 let ID = token(/[a-zA-Z_][a-zA-Z0-9_]*/y);
 ```
 
-在某些情况下，仅为了解析标识符的字符串值，对我们来说是有用的，但有时更方便的是生成 AST 节点。这就是为什么我们创建了一个别名`id`，它与`ID`相同，但不是产生一个字符串，而是产生一个 AST 节点`Id`。
+在某些情况下，仅为了解析标识符的字符串值，对我们来说是有用的，但有时更方便的是生成 AST 节点。这就是为什么我们创建了一个别名 `id`，它与 `ID` 相同，但不是产生一个字符串，而是产生一个 AST 节点 `Id`。
 
 ```js
 let id = ID.map((x) => new Id(x));
@@ -110,13 +111,13 @@ let ASSIGN = token(/=/y).map((_) => Assign);
 
 ## 语法
 
-我们的基础编译器的语法分为两部分：*表达式*和*语句*。JavaScript（以及 TypeScript）对区分这两者相对宽松。一般来说，表达式是产生值的构造，例如`1 + 2`，而语句是具有影响但不会产生值的操作，例如`while`循环。
+我们的基础编译器的语法分为两部分：*表达式*和*语句*。JavaScript（以及 TypeScript）对区分这两者相对宽松。一般来说，表达式是产生值的构造，例如 `1 + 2`，而语句是具有影响但不会产生值的操作，例如 `while` 循环。
 
 ## 表达式解析器
 
 我们将首先构建一个用于单个表达式的解析器。以下是基线语言中表达式的语法。
 
-```js
+```text
 args <- (expression (COMMA expression)*)?
 call <- ID LEFT_PAREN args RIGHT_PAREN
 atom <- call / ID / NUMBER
@@ -128,13 +129,13 @@ comparison <- sum ((EQUAL / NOT_EQUAL) sum)*
 expression <- comparison
 ```
 
-它包括如`==`、`!=`、`+`、`-`、`*`、`/`、一元否定`!x`、标识符、整数数字和函数调用等中缀操作。
+它包括如 `==`、`!=`、`+`、`-`、`*`、`/`、一元否定 `!x`、标识符、整数数字和函数调用等中缀操作。
 
-表达式规则被分成几个层次，以便处理运算符优先级。`expression`本身只是一个`comparison`的别名。`comparison`规则表示具有最低优先级的运算符：`==`和`!=`。`comparison`本身是由具有更高优先级的`sum`构建的，其中运算符有`+`和`-`。`sum`反过来又是由具有最高优先级的`product`规则构建的，这些规则是中缀运算符中的最高优先级：`*`和`/`。这些又是由表示一元运算符的`unary`构建的，其中我们只有否定：`!`。否定在我们的所有运算符中具有最高的优先级。它是建立在称为`atom`的规则之上的。`atom`规则表示那些“原子”的规则，或者由于它们的结构不需要优先级。例如，`ID`和`NUMBER`是单个词素，所以不适用优先级，而`call`和括号表达式有明确的分隔符，所以也不适用优先级。`args`规则被提取出来以简化`call`规则。
+表达式规则被分成几个层次，以便处理运算符优先级。`expression` 本身只是一个 `comparison` 的别名。`comparison` 规则表示具有最低优先级的运算符：`==` 和 `!=`。`comparison` 本身是由具有更高优先级的 `sum` 构建的，其中运算符有 `+` 和 `-`。`sum` 反过来又是由具有最高优先级的 `product` 规则构建的，这些规则是中缀运算符中的最高优先级：`*` 和 `/`。这些又是由表示一元运算符的 `unary` 构建的，其中我们只有否定：`!`。否定在我们的所有运算符中具有最高的优先级。它是建立在称为 `atom` 的规则之上的。`atom` 规则表示那些“原子”的规则，或者由于它们的结构不需要优先级。例如，`ID` 和 `NUMBER` 是单个词素，所以不适用优先级，而 `call` 和括号表达式有明确的分隔符，所以也不适用优先级。`args` 规则被提取出来以简化 `call` 规则。
 
 这种通过增加优先级来构建解析器的过程有时被比作给绳子添加珠子。
 
-你可能注意到，最低级别的规则，如`atom`和`call`（通过`args`）都回指`expression`。这意味着我们的语法是**递归的**。这为构建这个语法的解析器创造了一个小问题。虽然 JavaScript 允许递归函数，但不允许递归值。其他语言允许所谓的`let-rec`绑定，但 JavaScript 不允许。我们处理这个问题的方法是首先将`expression`定义为`error`解析器：
+你可能注意到，最低级别的规则，如 `atom` 和 `call`（通过 `args`）都回指 `expression`。这意味着我们的语法是**递归的**。这为构建这个语法的解析器创造了一个小问题。虽然 JavaScript 允许递归函数，但不允许递归值。其他语言允许所谓的 `let-rec` 绑定，但 JavaScript 不允许。我们处理这个问题的方法是首先将 `expression` 定义为 `error` 解析器：
 
 ```js
 let expression: Parser<AST> =
@@ -142,7 +143,7 @@ let expression: Parser<AST> =
  "Expression parser used before definition");
 ```
 
-现在，我们可以在构建我们的解析器时自由使用它。然而，我们必须记住在定义`comparison`之后和在使用它之前，就地更改这个解析器：
+现在，我们可以在构建我们的解析器时自由使用它。然而，我们必须记住在定义 `comparison` 之后和在使用它之前，就地更改这个解析器：
 
 ```js
 expression.parse = comparison.parse;
@@ -150,14 +151,14 @@ expression.parse = comparison.parse;
 
 ## 调用解析器
 
-我们需要通过首先实现`args`来实现`call`。
+我们需要通过首先实现 `args` 来实现 `call`。
 
-```js
+```text
 args <- (expression (COMMA expression)*)?
 call <- ID LEFT_PAREN args RIGHT_PAREN
 ```
 
-将`args`机械地转换为解析器，我们得到：
+将 `args` 机械地转换为解析器，我们得到：
 
 ```js
 // args <- (expression (COMMA expression)*)?
@@ -166,9 +167,9 @@ let args =
  expression.and(zeroOrMore(COMMA.and(expression))))
 ```
 
-就像在`Call` AST 节点的情况一样，我们将其称为`args`而不是`arguments`，因为`arguments`是一个特殊的 JavaScript 对象，我们不希望与之冲突。
+就像在 `Call` AST 节点的情况一样，我们将其称为 `args` 而不是 `arguments`，因为 `arguments` 是一个特殊的 JavaScript 对象，我们不希望与之冲突。
 
-我们希望这个解析器返回一些有用的东西，比如 AST 节点的数组。`maybe`组合器在不匹配时返回`null`，但我们需要一个空数组，所以让我们用`.or(constant([]))`来替换它。我们需要绑定第一个表达式，然后绑定其余的表达式，然后将它们连接起来。通过这样做，我们最终得到以下内容：
+我们希望这个解析器返回一些有用的东西，比如 AST 节点的数组。`maybe` 组合器在不匹配时返回 `null`，但我们需要一个空数组，所以让我们用 `.or(constant([]))` 来替换它。我们需要绑定第一个表达式，然后绑定其余的表达式，然后将它们连接起来。通过这样做，我们最终得到以下内容：
 
 ```js
 // args <- (expression (COMMA expression)*)?
@@ -178,9 +179,9 @@ let args: Parser<Array<AST>> =
  constant([arg, ...args]))).or(constant([]))
 ```
 
-表达式`zeroOrMore(COMMA.and(expression))`方便地忽略了逗号，并产生一个 AST 节点的数组。
+表达式 `zeroOrMore(COMMA.and(expression))` 方便地忽略了逗号，并产生一个 AST 节点的数组。
 
-现在，从语法中机械地实现`call`，我们得到：
+现在，从语法中机械地实现 `call`，我们得到：
 
 ```js
 // call <- ID LEFT_PAREN args RIGHT_PAREN
@@ -188,7 +189,7 @@ let call =
  ID.and(LEFT_PAREN.and(args.and(RIGHT_PAREN)))
 ```
 
-我们将`ID`（表示被调用者的名称）和`args`绑定来构建一个`Call`节点：
+我们将 `ID`（表示被调用者的名称）和 `args` 绑定来构建一个 `Call` 节点：
 
 ```js
 // call <- ID LEFT_PAREN args RIGHT_PAREN
@@ -201,7 +202,7 @@ let call: Parser<AST> =
 
 ## 原子
 
-下一个解析器是`atom`。为了确保它产生 AST，我们需要使用`id`规则而不是`ID`。我们还绑定`expression`以提取其值。
+下一个解析器是 `atom`。为了确保它产生 AST，我们需要使用 `id` 规则而不是 `ID`。我们还绑定 `expression` 以提取其值。
 
 ```js
 // atom <- call / ID / NUMBER
@@ -212,11 +213,11 @@ let atom: Parser<AST> =
  RIGHT_PAREN.and(constant(e))));
 ```
 
-选择项的顺序很重要。如果规则从`ID / call`开始，那么`call`将永远不会匹配，因为`call`本身以`ID`开头。
+选择项的顺序很重要。如果规则从 `ID / call` 开始，那么 `call` 将永远不会匹配，因为 `call` 本身以 `ID` 开头。
 
 ## 一元运算符
 
-对于一元解析器，我们绑定`NOT?`和`atom`。如果存在`NOT`运算符，我们构建`Not` AST 节点，否则，我们产生底层节点。
+对于一元解析器，我们绑定 `NOT?` 和 `atom`。如果存在 `NOT` 运算符，我们构建 `Not` AST 节点，否则，我们产生底层节点。
 
 ```js
 // unary <- NOT? atom
@@ -225,21 +226,21 @@ let unary: Parser<AST> =
  atom.map((term) => not ? new Not(term) : term));
 ```
 
-我们已经将`atom`的值绑定到名称`term`上，当绑定表达式或语句时，我们将使用它作为通用的短语。
+我们已经将 `atom` 的值绑定到名称 `term` 上，当绑定表达式或语句时，我们将使用它作为通用的短语。
 
 ## 中缀运算符
 
 中缀运算符都是类似地构建的，低优先级规则建立在高优先级规则之上。
 
-```js
+```text
 product <- unary ((STAR / SLASH) unary)*
 sum <- product ((PLUS / MINUS) product)*
 comparison <- sum ((EQUAL / NOT_EQUAL) sum)*
 ```
 
-你可能记得我们确保了运算符规则解析器产生相应的 AST 节点的类。例如，`EQUAL`标记产生`Equal`类。我们将使用这个属性。
+你可能记得我们确保了运算符规则解析器产生相应的 AST 节点的类。例如，`EQUAL` 标记产生 `Equal` 类。我们将使用这个属性。
 
-我们将首先从`product`解析器开始。直观的机械翻译给我们：
+我们将首先从 `product` 解析器开始。直观的机械翻译给我们：
 
 ```js
 // product <- unary ((STAR / SLASH) unary)*
@@ -247,11 +248,11 @@ let product =
  unary.and(zeroOrMore(STAR.or(SLASH).and(unary)));
 ```
 
-绑定第一个`一元`操作符很简单。然而，从所有这些中构建嵌套的 AST 结构并不容易。
+绑定第一个 `一元` 操作符很简单。然而，从所有这些中构建嵌套的 AST 结构并不容易。
 
-我们可以将`(STAR / SLASH) unary`映射到一个中间数据结构`{operator, term}`，这是一个由`STAR / SLASH`和`unary`值构成的配对。这样，我们得到一个操作符-术语对的数组。我们绑定`unary`并调用它的值`first`。
+我们可以将 `(STAR / SLASH) unary` 映射到一个中间数据结构 `{operator, term}`，这是一个由 `STAR / SLASH` 和 `unary` 值构成的配对。这样，我们得到一个操作符-术语对的数组。我们绑定 `unary` 并调用它的值 `first`。
 
-例如，如果我们正在解析字符串`"x * y / z"`，那么`first`将是`new Id("x")`，而`operatorTerms`将是一个如下的数组：
+例如，如果我们正在解析字符串 `"x * y / z"`，那么 `first` 将是 `new Id("x")`，而 `operatorTerms` 将是一个如下的数组：
 
 ```js
 [
@@ -268,7 +269,7 @@ new Divide(
  new Id("z"))
 ```
 
-结果表明`array.reduce`正是可以完成这个任务的方法！以下是相应的代码：
+结果表明 `array.reduce` 正是可以完成这个任务的方法！以下是相应的代码：
 
 ```js
 // product <- unary ((STAR / SLASH) unary)*
@@ -281,7 +282,7 @@ let product =
  new operator(left, term), first)));
 ```
 
-真的很复杂！幸运的是，这是我们将会遇到的最复杂的规则。更好的是，我们可以将这个重复的模式提取到另一个解析器组合器中，并再次使用它。我们将这个组合器称为`infix`：
+真的很复杂！幸运的是，这是我们将会遇到的最复杂的规则。更好的是，我们可以将这个重复的模式提取到另一个解析器组合器中，并再次使用它。我们将这个组合器称为 `infix`：
 
 ```js
 let infix = (operatorParser, termParser) =>
@@ -293,7 +294,9 @@ let infix = (operatorParser, termParser) =>
  new operator(left, term), term)));
 ```
 
-我们将`product`规则改为一个接受两个参数的函数：`operatorParser`和`termParser`。我们将`unary`替换为`termParser`，将`STAR.or(SLASH)`替换为`operatorParser`。现在我们有一个可重用的组合器，我们可以不仅用于`product`，还可以用于`sum`和`comparison`。
+我们将 `product` 规则改为一个接受两个参数的函数：`operatorParser` 和 `termParser`。我们将 `unary` 替换为 `termParser`，将 `STAR.or(SLASH)` 替换为 `operatorParser`。现在我们有一个可重用的组合器，我们可以不仅用于 `product`，还可以用于 `sum` 和 `comparison`。
+
+
 
 ```js
 // product <- unary ((STAR / SLASH) unary)*
@@ -552,10 +555,10 @@ let result = parser.parseStringToCompletion(source);
 console.assert(result.equals(expected));
 ```
 
-* * *
+---
 
 解析器现在已经完成，我们的编译器的第一遍也完成了。
 
 下一章：第七章\. ARM 汇编编程
 
-* * *
+---

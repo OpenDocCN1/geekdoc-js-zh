@@ -1,12 +1,10 @@
-# Powerhell：精通 PowerShell (Windows Powershell 5, PowerShell 脚本编写、命令行、Javascript、C++, SQL)
 
-
+# PowerShell：精通 PowerShell (Windows Powershell 5, PowerShell 脚本编写、命令行、Javascript、C++, SQL)
 
 ![](img/cover.jpeg)
 
-
-
 ## 目录
+
 - 引言
 - 第 1 章：什么是 PowerShell？
 - 第 2 章：PowerShell 命令
@@ -37,6 +35,7 @@
 市场上有许多关于这个主题的书，再次感谢你选择这一本！我们尽了努力确保它包含尽可能多的有用信息，请尽情享受！
 
 # 第 1 章
+
 ## 什么是 PowerShell？
 
 到目前，你已经购买了这本书并想要深入研究其内容，开始使用功能强大的 PowerShell。然而，在考虑深入研究内容最核心的部分之前，我们必须先讨论一些基本问题。
@@ -45,7 +44,7 @@
 
 那么，什么是 PowerShell 呢？本质上，PowerShell 是微软开发的一个工具，旨在让人们通过命令行和一些编程知识来处理配置并自动化任务。最近，PowerShell 也已适用于其他操作系统。
 
-PowerShell 还包含一种内置的脚本语言。这种脚本语言允许你构建小型程序，以自动化计算机上不同的任务。这种脚本能力赋予了 PowerShell 许多著名功能，并使其成为你需要执行的所有自动化任务的完美选择。
+PowerShell 还包含一种内置的脚本语言。这种脚本语言允你构建小型程序，以自动化计算机上不同的任务。这种脚本能力赋予了 PowerShell 许多著名功能，并使其成为你需要执行的所有自动化任务的完美选择。
 
 我想，到目前为止，我还没有完全清楚 PowerShell 是什么。我现在就解决这个问题。你看，在发布的每一个 Windows 版本中，用户都有一种方法通过命令行与工具直接交互。这些界面方法被专门称为 shell（壳）。通过使用 shell，你可以直接向计算机输入命令，这将让你能够轻松地完成某些事情，或者以以前所未过的控制水平来操作。传统的 shell 有一种名为 `batch` 的脚本语言，在 Windows、Linux 或 Mac 等大多数命令行界面中通用的。`batch` 文件是基础脚本，可以运行以自动执行预先写好的命令行中的某些任务。
 
@@ -58,9 +57,6 @@ PowerShell 还包含一种内置的脚本语言。这种脚本语言允许你构
 在 `Windows Script Host` 相对失败后，微软决定他们需要转变方向，开始为用户提供一种管理命令行的新方法；一种能让 shell 真正具有价值的统一方式。大约是在那时，被称为 `Monad` 或 `Microsoft Shell`（微软壳）的 shell 开始问世。这些想法最早在 2002 年夏天就开始发表了。
 
 `Monad` 是非常棒的，因为它完全是不同的东西。`Monad` 带来了一个极具扩展性的命令行——也就是说，你可以轻松地为其添加内容并使其执行你需要的任何任务——也就是说，在某种意义上，它是全功能的。我所指的“全功能”是指 `Monad` 承诺能够执行大量不同的行政职责。
-
-
-
 
 `Monad` 首次公开发于 2005 年夏天，并在随后的那年里进行了多次更新。2006 年，微软推出并宣布 `Monad` 将更名为 `Windows PowerShell`。这在该项目的信誉度方面是一个巨大的推动，因为它使其成为了系统管理和通用信息技术工作的主要工具。`PowerShell` 暗示了比 `Monad` 大得多的东西——`PowerShell` 暗示了力量。
 
@@ -106,64 +102,73 @@ Get-Help Get-Command
 
 -   `Clear-Host` - 这个命令在 Windows 上被称为 `cls`，在 `Linux` 和 `Mac` 等 `Unix` 系统上被称为 `clear`，如果你不想完整输入 `Clear-Host`，可以输入其中任何一个。这个命令只是清除控制台并给你一个空白的画布。
 
-
-
-
-
 ### `Copy-Item`
+
 - 此命令正如其名称一样，直观易懂。在 Windows 命令行中，此命令被称为 `copy`，而在 Unix Shell 中，它被称为 `cp`。这两个术语都可以作为别名，`cpi` 一词也是如此。此命令允许你指定一个文件或目录，以及一个目标位置。使用该命令后，文件或目录将被复制到目标位置。这对于某些操作非常有用，例如为重要文件制作备份。
 
 ### `Move-Item`
+
 此命令在 Windows 命令行中被称为 `move`，在 Unix Shell 中被称为 `mv`。该命令在功能上与 `copy` 命令相似。然而，它不是留下当前的文件和目录并创建它们的副本，而是将它们完全移动，它们将不再存在于当前位置。
 
 ### `Remove-Item`
+
 此命令有许多名称，所以让我逐一列举一下可以使用的名称吧。在旧的 Windows 命令行中，此命令被称为 `del`、`erase`、`rmdir` 和 `rd`。在 Unix Shell 中，该命令被称为 `rmdir` 和 `rm`。此命令的别名包含了上述所有名称，此外还有一个名称：`ri`。因此，你可以通过 `del`、`erase`、`rmdir`、`rd`、`rm` 和 `ri` 来调用此命令。如果你以前从未被告知过，你需要对这个命令极其小心，因为它非常、非常强大。如果你不小心，可能会意外执行类似系统性删除整个硬盘的操作，那可不好好玩。使用此命令时要谨慎，诚实地说，随着你对它的了解，我建议你在运行 Linux 发行版的虚拟机中使用 Unix Shell 进行练习，这样就不会造成任何实际损坏。这个命令非常臭名昭著，所以我现在给你警告：如果你不小心，可能会用它出大错。
 
 ### `Rename-Item`
+
 此命令非常直观。它允许你重命名文件或目录。它也被别名 `mi`、`ren` 和 `mv` 所知。
 
 ### `Get-Location`
+
 此命令是另一个完全如其描述的命令——发现规律了吗？在旧的 Windows 命令行中，这被称为 `cd`，而在 Unix Shell 中被称为 `pwd`。这两者都可以作为别名使用，`gl` 一词也是如此。此命令的作用仅仅是列出当前的工作目录。
 
 ### `Push-Location`
+
 这个稍微复杂一点。它允许你在栈上保留一个运行中的目录列表。如果你不知道计算机科学中什么是栈（stack），栈本质上是一个可以用新值更新的数据列表。当你添加一个新值时，该值也必须是第一个被取的。如果你有值 `3`、`1` 和 `6`，并且你想添加值 `8`，那么你的栈看起来像这样：`3, 1, 6, 8`。这几秒后会更有意义，但它本质上是在存储位置而不是某个任意数值。无论在 Unix 还是 Windows 上，此命令一直被称为 `pushd`，而 PowerShell 使用的就是这个别名。
 
 ### `Pop-Location`
+
 这是 `push-location` 命令的对应项。它会将你的工作目录更改为最近添加到栈中的目录——可以说是从栈中“弹出”那个值。所以记住：你推入（push），然后弹出（pop）。这会将目录从栈中移除，所以如果你想让它留在那里，就必须再次添加到栈中。在 Windows 和 Unix 上，该命令一直是 `popd`，这也是 PowerShell 使用的命令。
 
 ### `Set-Location`
+
 这绝对是通过命令行及任何类型的命令行 Shell 导航计算机最重要的命令之一。我真的无法强调这个命令的重要性有多大——它本质上是命令行导航的终极手段，知道如何正确使用它至关重要。它允许你更改硬盘上的位置。你可以输入硬盘上的某个特定位置（例如目录地址），或者直接命名你当前所在目录内的某个目录。（如果你不确定你所在的文件夹里具体有哪些目录，请确保你使用 `Get-ChildItem` 命令来列出这些目录。）在 Windows 和 Unix 命令行中，此命令一直被称为 `cd`。在 Windows 中也可以通过 `chdir` 一词进行引用。这两个术语都可以作为 `Get-ChildItem` 命令的别名。不过，如果你愿意，也可以使用 `sl` 一词。
 
 ### `Tee-Object`
+
 这与高尔夫球（golf）没有任何关系，如果你认为有，那你就太笨了。相反，此命令将给定的输入发送到文件或值，然后将其发送到管道（pipeline）。有时——但并非总是——这仅仅意味着输出流，即它将在你的命令行窗口中打印。然而，如果管道中还有下一个命令，它也可以传递给该命令。它的别名简单就是 `tee`，它对 Windows 来说是相对新的（在旧版本的命令行 Shell 中不存在）。
 
 ### `Write-Output`
+
 此命令的作用正如它听起来的一样。它将给定的输出写入输出流（通常是控制台窗口）。该术语的别名有来自 Windows 和 Unix 命令行 Shell 的 `echo` 以及 `write`。
 
 ### `Get-Process`
+
 此命令的作用几乎正如它描述的一样。它列出当前运行的所有进程（并在需要时杀死它们）？这也非常有用。在 Unix Shell 中，此命令被称为 `ps`，而在 Windows 中它被称为 `tasklist`。这两者都可以工作，`gps` 也是如此。
 
 ### `Stop-Process`
+
 这就是我在上一段落中提到的命令。面对现实，有时程序会完全停止或不符合预期，或者你正在尝试连接一个被阻塞的端口，这时 `Stop-Process` 就派上用场了。此命令一直被称为 `kill`，这个名称也作为别名存在。你也可以使用 `spps` 作为别名。
 
 ### `Select-String`
+
 这将给定文件或输入流中的字符串（如果你不知道字符串是什么，将在下一节介绍）返回到管道，通常是到输出流。它将返回字符串所在的整行，因此如果我在一个包含大量随机单词的文件上对 `pack` 进行字符串搜索，它不仅会返回 `pack`，还会返回 `backpack`、`unpack`、`repack` 等。此命令的唯一别名是 `sls`。
 
 ### `Set-Variable`
+
 此命令允许你创建变量或更改其值。（更多内容见下一节。）别名简单为 `sv` 和 `set`。
 
 ### `Get-Member`
+
 这是一个非常重要的命令，它允许你查看给定对象中的方法（methods）和值（values）。这现在可能没意义，但之后你会明白的。记住这个，你需要它的。
 
 ### `Invoke-WebRequest`
+
 这一个将从互联网抓取数据并发送到管道。在 Unix Shell 中，此命令历史上被称为 `wget` 和 `curl`。在旧的 Windows 命令行中，该命令从未存在过。此命令的别名有 `curl`、`wget` 和 `iwr`。
 
 当然，这远不是所有的命令。这些只是你刚开始最可能用到的最相关、最重要的命令。
 
 正如我之前所说，如果你想要一个更完整的列表，你还可以使用 `get-command` 命令来获取列表，并对任何你不完全理解的命令使用 `get-help`。
-
-
-
 
 然而，这些只是基础。我们甚至还没有开始谈论函数。
 
@@ -203,7 +208,7 @@ PowerShell 中的一切都是一个对象，确切地说，是一个 `.NET` 对�
 
 对你来说，作为一个（可能是）新程序员以及一个（可能是）PowerShell 新手，这可能可能没有太大意义。实际上，它可能完全无法理解。但没关系 - 稍后你就明白了。我们只需要继续讨论这个话题，并从最基础的开始。
 
-我们需要讨论的第一件事是为什么创建脚本文件是必要的。通过创建脚本文件，你允许自己自动化许多原本无法实现的事情。你还允许某些事情的执行方式与简单打开 PowerShell 然后输入命令不同。
+我们需要讨论的第一件事是为什么创建脚本文件是必要的。通过创建脚本文件，你允许自己自动化许多原本无法实现的事情。你还允某些事情的执行方式与简单打开 PowerShell 然后输入命令不同。
 
 这使得与批处理文件（batch files）略有不同。例如，在典型的命令行外壳的批处理文件中，你只需输入你平时会输入的命令即可。当然，有某些如 `GOTO` 之类的关键字可以使批处理文件多做一点，但它们在任何想象力范围内都不一定算复杂，特别是与像 PowerShell 脚本语言如此庞大的语言相比。
 
@@ -218,9 +223,6 @@ PowerShell 中的一切都是一个对象，确切地说，是一个 `.NET` 对�
 你可以使用你喜欢的任何文本编辑器，真的。即使是记事本也可以。我个人觉得我必须推荐 `Atom.io`，因为它是一个非常强大的文本编辑器。它的理由有很多。第一个是它是完全免费的。第二个是它是扩展的 - 你可以获取很多插件让你的生活和编程变得更容易。第三是考虑到它是免费的，它看起来真的很漂亮，而且运行得非常出色。我无法对 Atom 给出更热烈的评价语了。然而，如果你愿意，你甚至可以使用 `Emacs`、`Vim`、`Notepad++` 或 `Sublime Text`。只要它能生成纯文本文件即可。
 
 现在我们需要讨论实际的程序逻辑。我想进入这一切最简单的方法就是从制作我们的第一个程序开始。打开你的文本编辑器。接下来，在其中编写以下内容：
-
-
-
 
 ## PowerShell 基础
 
@@ -255,17 +257,29 @@ Set-ExecutionPolicy RemoteSigned
 作为参考，这里是 PowerShell 脚本中主要的数值类型：
 
 | 名称 | 描述 |
+
 | :--- | :--- |
+
 | Array (数组) | 组合在一起的不同值的集合 |
+
 | Bool (布尔) | 一种非真即假的数据类型 |
+
 | DateTime (日期/时间) | 存储有关日期和时间信息的数据类型 |
+
 | Float (浮点数) | 存储小数的数据类型，在计算机科学中称为浮点数 |
+
 | Guid (全局唯一标识符) | 存储全局唯一 ID 的类型 |
+
 | HashTable (哈希表) | 类似于字典（如果你用过任何 Python 或 Java 的话）。它是一个连接到值的键表。它们以某种内在的方式连接——每个键都链接到一个特定的值 |
+
 | Int (整数) | 整数——本质上是全数字 |
-| PsObject (PowerShell 对象) | 自定义的 PowerShell 对象 |
+
+| PsObject (PowerShell 对象) | 自定的 PowerShell 对象 |
+
 | Regex (正则表达式) | 存储正则表达式 |
+
 | ScriptBlock (脚本块) | 这种类型的数据内部包含一个脚本 |
+
 | String (字符串) | 一种由多个连接在一起的文本组成的数据类型，如“Hello”或“你好？” |
 
 在编程中，每一个持有值的实体都有其特定的数据类型。值存储在被称为变量（variables）的实体中。变量是允许你随意保留和更改值而不会丢失它们的东西。这样，你就不需要重复输入相同的内容，也不需要手动在程序中完成所有的数学计算。
@@ -340,9 +354,6 @@ Write-Output “The remainder is $varThree”
 
 布尔值的概念非常简单。布尔简单地指代给定事物的真或假。这意味着一个布尔值可以为真或假，取决于各种条件，但它永远只可能是真或假之一。
 
-
-
-
 PowerShell 的布尔值设置非常、非常简单。在很多方面，它让人想起 C 时代的旧式布尔处理方式，当时布尔值字面上量就是 1 或 0，1 表示真（true），0 表示假（false）。在某些情况下，这仍然是事实。例如，如果你检查字符串“false”在布尔意义上是否真的为假，它将是为真，因为其拥有一个非 0 的值（因为它是一个非空字符串）。如你所见，它有点反复无常。然而，其底层的逻辑非常简单。此外，PowerShell 为 `$true` 和 `$false` 预定义了变量，当你尝试判断某个值是否为真时，它会自动定义这些值。
 
 现在，我们要开始讨论布尔比较，或者布尔表达式。通过这些表达式，你可以比较一个值和另一个值，并对该陈述是否真实做出合理的判断。在 PowerShell 中，这实际上像许多事情一样非常简单。
@@ -352,21 +363,37 @@ PowerShell 的布尔值设置非常、非常简单。在很多方面，它让人
 PowerShell 中有许多不同的比较运算符。它们都有自己独特的用途，并且在某些情况下是比较的最佳选择。以下是比较运算符及其含义。
 
 | 运算符 |  |
+
 | :--- | :--- |
+
 | `-eq` | 检查两个值是否相等。 |
+
 | `-ne` | 检查两个值是否不等。 |
+
 | `-gt` | 检查左侧值是否大于右侧。 |
+
 | `-lt` | 检查左侧值是否小于右侧。 |
+
 | `-ge` | 检查左侧大于或等于右侧。 |
+
 | `-le` | 检查左侧小于或等于右侧。 |
+
 | `-like` | 检查是否存在文本匹配。 |
+
 | | “Meep”-like “*ep”）将为真。 |
+
 | `-notlike` | 检查是否存在文本通配符匹配。 |
+
 | `-match` | 检查一个字符串是否匹配另一个字符串的部分。 |
+
 | `-notmatch` | match 的反反。 |
+
 | `-contains` | 检查某个值集合是否包含特定的值。 |
+
 | `-notcontains` | contains 的反反。 |
+
 | `-in` | 检查一个值是否在另一个值集合中。 |
+
 | `-notin` | 检查一个值是否不在给定的值集合中。 |
 
 如你所见，这里的想法相对简单。你所做的只是比较两个（或多个）值，并评估某事是否为真。
@@ -398,7 +425,7 @@ if ($apples -eq 1) {
 }
 ```
 
-然而，你可能会发现这缺乏细微的差别。毕竟，如果我们没有苹果呢？如果我们有两个苹果，或者一个苹果也没有？显然，我们不能对所有这些情况说同样的话，因为语法将是不正确的！那是完全不可想象的。所以显然，我们必须考虑到这些情况。这就是 `elseif` 和 `else` 语句派上用场的地方。它们附加到你的 `if` 语句上。注意，对于逻辑控制流，这两者都不是必需，但它们确实可以帮助你在程序中做出决策。它们允许当事情不满足第一个条件时，更紧密地控制发生的情况。
+然而，你可能会发现这缺乏细微的差别。毕竟，如果我们没有苹果呢？如果我们有两个苹果，或者一个苹果也没有？显然，我们不能对所有这些情况说同样的话，因为语法将是不正确的！那是完全不可想象的。所以显然，我们必须考虑到这些情况。这就是 `elseif` 和 `else` 语句派上用场的地方。它们附加到你的 `if` 语句上。注意，对于逻辑控制流，这两者都不是必需，但它们确实可以帮助你在程序中做出决策。它们允许当事情不满足第一个条件时，更紧密控制发生的情况。
 
 如果你只有一个 `if` 和 `else` 语句，那么 `if` 语句中的条件将被测试；如果它是真的，将执行 `if` 语句中的内容。如果它不是真的，将执行 `else` 语句中的内容。`else if` 语句仅允许你在已经在测试的任何基础上额外测试另一个条件；如果第一个条件失败，它将移动到 `else if` 语句提到的第二个条件。
 
@@ -416,7 +443,7 @@ if ($apples -eq 1) {
 
 到此为止，你已经知道了条件语句的基础知识。现在我们需要讨论控制流的另一个主要方面：循环。
 
-我们将讨论的第一个循环是 `for` 循环。`for` 循环旨在让用户迭代一个集合直到满足某个条件。条件在定义 `for` 循环时定义。`for` 循环有三个部分：初始化、结束条件和增量步。
+我们将讨论的第一个循环是 `for` 循循环。`for` 循环旨在让用户迭代一个集合直到满足某个条件。条件在定义 `for` 循环时定义。`for` 循环有三个部分：初始化、结束条件和增量步。
 
 假设我们想从 1 计数到 10。（请记住 `++` 和 `--` 分别表示“增加一”或“减少一”。）这大致是 `for` 循环的样子：
 
@@ -457,9 +484,6 @@ While ($i -le 10) {
     $i++
 }
 ```
-
-
-
 
 现在，在循环内部，我们必须打印 `i` 的当前值，当然，我们还需要每次循环都增加 `i` 的值。否则，`i` 将保持不变，循环也就无法终止。
 
@@ -523,50 +547,85 @@ Get-Process | Get-Member
 然后按回车。结果将类似于：
 
 | Name | MemberType | Definition |
+
 | :--- | :--- | :--- |
+
 | Handles | AliasProperty | Handles = Handlecount |
+
 | Name | AliasProperty | Name = ProcessName |
+
 | NPM | AliasProperty | NPM = NonpagedSystemMemory64 |
+
 | PM | AliasProperty | PM = PagedMemorySize64 |
+
 | SI | AliasProperty | SI = SessionId |
+
 | VM | AliasProperty | VM = VirtualMemorySize64 |
+
 | WS | AliasProperty | WS = WorkingSet64 |
+
 | Disposed | Event | System.EventHandler Disposed(System.Object, Sy... |
+
 | ErrorDataReceived | Event | System.Diagnostics.DataReceivedEventHandler Er... |
+
 | Exited | Event | System.EventHandler Exited(System.Object, Syst... |
+
 | OutputDataReceived | Event | System.Diagnostics.DataReceivedEventHandler Ou... |
+
 | BeginErrorReadLine | Method | void BeginErrorReadLine() |
+
 | BeginOutputReadLine | Method | void BeginOutputReadLine() |
+
 | CancelErrorRead | Method | void CancelErrorRead() |
+
 | CancelOutputRead | Method | void CancelOutputRead() |
+
 | Close | Method | void Close() |
+
 | CloseMainWindow | Method | bool CloseMainWindow() |
+
 | CreateObjRef | Method | System.Runtime.Remoting.ObjRef CreateObjRef(ty... |
+
 | Dispose | Method | void Dispose(), void IDisposable.Dispose() |
+
 | Equals | Method | bool Equals(System.Object obj) |
+
 | GetHashCode | Method | int GetHashCode() |
+
 | GetLifetimeService | Method | System.Object GetLifetimeService() |
+
 | GetType | Method | type GetType() |
+
 | InitializeLifetimeService | Method | System.Object InitializeLifetimeService() |
+
 | Kill | Method | void Kill() |
+
 | Refresh | Method | void Refresh() |
+
 | Start | Method | bool Start() |
+
 | ToString | Method | string ToString() |
 
-
-
-
-
 | WaitForExit | Method | `bool WaitForExit(int milliseconds), void WaitF...` |
+
 | :--- | :--- | :--- |
+
 | WaitForInputIdle | Method | `bool WaitForInputIdle(int milliseconds), bool ...` |
+
 | __NounName | NoteProperty | `string __NounName=Process` |
+
 | BasePriority | Property | `int BasePriority {get;}` |
+
 | Container | Property | `System.ComponentModel.IContainer Container {get;}` |
+
 | EnableRaisingEvents | Property | `bool EnableRaisingEvents {get;set;}` |
+
 | ExitCode | Property | `int ExitCode {get;}` |
+
 | ExitTime | Property | `datetime ExitTime {get;}` |
+
 | Handle | Property | `System.IntPtr Handle {get;}` |
+
 | [...] | | |
 
 正如你所看到的，这些信息非常多——但这仍然远低于我们使用 `Get-Member` 方法时返回的值的一半。因此，我们可以推断，技术上我们有很多可以进行排序的项目。但让我们通过运行“Get-Process”来查看实际相关的信息。
@@ -574,25 +633,45 @@ Get-Process | Get-Member
 在我的情况下，返回的列表大致如下：
 
 | Handles | NPM(K) | PM(K) | WS(K) | CPU(s) | Id | SI | ProcessName |
+
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+
 | 260 | 24 | 10016 | 16964 | 280.23 | 4868 | 1 | A6100 |
+
 | 331 | 27 | 6028 | 16352 | 3.22 | 3128 | 0 | AgentSvc |
+
 | 195 | 20 | 3448 | 10636 | 30.19 | 2896 | 0 | AppleMobileDeviceService |
+
 | 287 | 17 | 10192 | 19108 | 1.38 | 10712 | 1 | ApplicationFrameHost |
+
 | 790 | 14 | 15924 | 16992 | 189.20 | 13564 | 0 | audiodg |
+
 | 257 | 19 | 4840 | 15764 | 5.59 | 7336 | 1 | BrccMCtl |
+
 | 183 | 14 | 2128 | 11012 | 0.16 | 9208 | 1 | BrMfcWnd |
+
 | 195 | 14 | 2504 | 9320 | 0.17 | 7688 | 1 | BrMfimon |
+
 | 329 | 15 | 3960 | 15248 | 0.30 | 6740 | 1 | browser_broker |
+
 | 3444 | 116 | 344248 | 214400 | 2,025.42 | 2712 | 1 | chrome |
+
 | 92 | 8 | 1432 | 524 | 0.94 | 7216 | 0 | conhost |
+
 | 718 | 25 | 2748 | 9148 | 104.48 | 340 | 1 | csrss |
+
 | 145 | 11 | 1876 | 6472 | 0.11 | 2932 | 0 | dirmngr |
+
 | 416 | 64 | 112724 | 92668 | 101.88 | 11528 | 1 | Discord |
+
 | 163 | 9 | 2716 | 9600 | 0.66 | 14880 | 1 | dllhost |
+
 | 602 | 43 | 77564 | 42544 | 2,435.56 | 1304 | 1 | dwm |
+
 | 142 | 12 | 3028 | 9448 | 0.78 | 8852 | 1 | E_YATINBE |
+
 | 233 | 21 | 2936 | 11200 | 0.36 | 8752 | 1 | EEventManager |
+
 | [...] | | | | | | | |
 
 显然，这个列表已经大幅简化了，但你可以获取其中包含的基本信息。基本上，列表中的进程是根据程序使用的句柄数、非分页内存、分页内存、工作集大小、CPU 使用率、虚拟 ID 和会话 ID（SI）等项目进行过滤的。
@@ -611,9 +690,6 @@ Where-Object { condition }
 Get-Process | Where-Object {$_.SessionId -eq 1}
 ```
 
-
-
-
 然后将其传递到管道中的 `Format-List` 词小句：
 
 ```powershell
@@ -629,33 +705,57 @@ Get-Process | Where-Object {$_.SessionId -eq 1} | Format-List -Property name,ID,
 这将产生以下结果：
 
 | Name | : A6100 |
+
 | Id | : 4868 |
+
 | StartTime | : 5/31/2017 7:51:44 PM |
+
 | Name | : ApplicationFrameHost |
+
 | Id | : 10712 |
+
 | StartTime | : 5/31/2017 8:34:03 PM |
+
 | Name | : BrccMCtl |
+
 | Id | : 7336 |
+
 | StartTime | : 5/31/2017 7:52:31 PM |
+
 | Name | : BrMfcWnd |
+
 | Id | : 9208 |
+
 | StartTime | : 5/31/2017 7:52:30 PM |
 
 表格的格式化方法完全相同，但使用的是 `Format-Table` 词小句。如果我们输入 `Format-Table` 而不是 `Format-List`，将产生如下结果：
 
 | Name | Id | StartTime |
+
 | ---- | -- | --------- |
+
 | A6100 | 4868 | 5/31/2017 7:51:44 PM |
+
 | ApplicationFrameHost | 10712 | 5/31/2017 8:34:03 PM |
+
 | BrccMCtl | 7336 | 5/31/2017 7:52:31 PM |
+
 | BrMfcWnd | 9208 | 5/31/2017 7:52:30 PM |
+
 | BrMfimon | 688 | 5/31/2017 7:52:31 PM |
+
 | browser_broker | 6740 | 5/31/2017 8:34:04 PM |
+
 | chrome | 2712 | 5/31/2017 7:54:16 PM |
+
 | conhost | 5220 | 5/31/2017 7:51:41 PM |
+
 | csrss | 340 | 5/31/2017 7:48:48 PM |
+
 | Discord | 11528 | 5/31/2017 9:17:38 PM |
+
 | dllhost | 14880 | 5/31/2017 8:27:16 PM |
+
 | dwm | 1304 | 5/31/2017 7:48:50 PM |
 
 到此为止，你已经知道了如何在 PowerShell 中对信息集进行排序、过滤和格式化，这是一个非常实用的功能，我确定你会乐意学到它的。
@@ -667,13 +767,21 @@ Get-Process | Where-Object {$_.SessionId -eq 1} | Format-List -Property name,ID,
 涉及 PowerShell 的术语可能会让人有点困惑。事实上，你可能就像迷失在由不同计算机术语组成的“字母汤”中一样。别担心！在这里，我尝试汇总了书中书中重要重要术语，这样你就能准确理解你所看到的内容，以防你需要回去重新阅读某些内容。
 
 | 术语 | 含义 |
+
 | :--- | :--- |
+
 | Cmdlet (词小句) | 在 PowerShell 中执行的各种命令的名称。始终返回一个对象。 |
+
 | Directory (目录) | “文件夹”的另一种术语。 |
+
 | Method (方法或函数) | 以相同方式执行操作的代码，可能接受参数也可能不接受。 |
+
 | .NET Framework | PowerShell 以及 VB.Net 和 C# 均构建的框架。 |
+
 | Object (对象) | 类的实例；具有方法和属性等内在性质的东西。 |
+
 | Property (属性) | 存储有值的东西——想想汽车的颜色、汽车的轮胎数量等。这些都是汽车的属性。 |
+
 | Working Directory (工作目录) | 你当前驱动器所在的文件夹。 |
 
 # 结语

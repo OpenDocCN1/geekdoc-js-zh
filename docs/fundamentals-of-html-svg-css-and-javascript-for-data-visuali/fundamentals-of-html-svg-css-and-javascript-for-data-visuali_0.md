@@ -1,6 +1,7 @@
+
 # 数据可视化的 HTML、SVG、CSS 和 JavaScript 基础
 
-# 1 引言
+## 1 引言
 
 欢迎！本书面向对数据可视化感兴趣的读者，涵盖 HTML、SVG、CSS 和 JavaScript 的基础知识。如果你处理数据，可能大部分时间都在使用 Excel、R 或 Python。你可能会被要求在 Python Jupyter notebook 中创建图表，或使用 R 的 Shiny 或 Python 的 Dash 创建仪表板。这些图表通常是用 HTML、SVG、CSS 和 JavaScript 构建的，当你需要深入探索时，对这些语言的良好理解会很有帮助。
 
@@ -10,67 +11,67 @@
 
 本书绝不是 HTML、SVG、CSS 和 JavaScript 的全面教程。要做到这一点，你需要一本更厚的书。请将本书视为一份最低限度的知识清单，适用于希望处理基于 Web 的数据可视化的人。如果你想理解我的其他数据可视化书籍（例如《D3 从入门到精通》），你绝对需要理解本书的内容。
 
-## 1.1 环境搭建
+### 1.1 环境搭建
 
 为了快速上手，我建议使用 [CodePen](https://codepen.io/) 来查看和试验代码示例（见下一节）。在本书末尾的“工具与设置”章节中，我将展示如何设置工具，以便你可以在本地编写代码（文件存储在你的计算机上，而不是 CodePen 上）。这需要一些时间来设置，但如果你对 Web 开发变得更加认真，我推荐这种方法。
 
-## 1.2 CodePen
+### 1.2 CodePen
 
 [CodePen](https://codepen.io/) 是一个网站，让你无需设置任何工具即可试验 HTML、SVG、CSS 和 JavaScript。
 
 ![](img/16bd52866cd98207c7c894c118bbd54e.png)
 
-这就是 CodePen。你可以在 https://codepen.io/createwithdata/pen/VwvpzOg 访问此示例。
+这就是 CodePen。你可以在 <https://codepen.io/createwithdata/pen/VwvpzOg> 访问此示例。
 
-在书中的关键位置，会有一个指向 CodePen “笔”的链接，其中包含代码示例。如果你访问该链接，就可以查看并试验代码。我鼓励你多玩玩 CodePen 示例——你几乎不会破坏任何东西，通过实验学习非常有效。
+在书中的关键位置，会有一个指向 CodePen“笔”的链接，其中包含代码示例。如果你访问该链接，就可以查看并试验代码。我鼓励你多玩玩 CodePen 示例——你几乎不会破坏任何东西，通过实验学习非常有效。
 
 你可以自由编辑本书中的 CodePen 示例，你的更改不会影响原始示例。如果你想保留更改，请点击 Fork（在页面底部）并创建一个 CodePen 账户（或登录）。通过点击页面顶部的 Save 按钮保存你的工作。
 
-## 1.3 保持联系
+### 1.3 保持联系
 
 我喜欢与读者保持联系。最好的方式之一是通过我的邮件列表。我会偶尔发送包含与实现数据可视化相关的有用信息（例如使用 JavaScript 或其他工具）的消息。还会有我其他书籍的折扣码。你可以[在此处](https://mailchi.mp/085e79e8fd7c/create-with-data-newsletter)注册。
 
-## 1.4 翻译者
+### 1.4 翻译者
 
-如果你有兴趣将《用于数据可视化的 HTML、SVG、CSS 和 JavaScript 基础》翻译成其他语言，请通过 info@createwithdata.com 联系我，我很乐意进一步讨论。
+如果你有兴趣将《用于数据可视化的 HTML、SVG、CSS 和 JavaScript 基础》翻译成其他语言，请通过 `info@createwithdata.com` 联系我，我很乐意进一步讨论。
 
-# 2 Web 语言：HTML、SVG、CSS 和 JavaScript
+## 2 Web 语言：HTML、SVG、CSS 和 JavaScript
 
-大多数网站和 Web 应用程序（包括数据可视化）都由 4 种语言构建：**HTML**、**SVG**、**CSS** 和 **JavaScript**。
+大多数网站和 Web 应用程序（包括数据可视化）都由 4 种语言构建：`HTML`、`SVG`、`CSS` 和 `JavaScript`。
 
-HTML 代表超文本标记语言，描述网页的**内容**。
+`HTML` 代表超文本标记语言，描述网页的内容。
 
-SVG 代表可缩放矢量图形，描述**形状**，例如圆形、线条和矩形。它常用于数据可视化（描述条形、线条、圆形、坐标轴、图例等）。
+`SVG` 代表可缩放矢量图形，描述形状，例如圆形、线条和矩形。它常用于数据可视化（描述条形、线条、圆形、坐标轴、图例等）。
 
-CSS 代表层叠样式表，描述 HTML 和 SVG 元素的**样式**（例如字体粗细、颜色或大小）和**位置**。
+`CSS` 代表层叠样式表，描述 HTML 和 SVG 元素的样式（例如字体粗细、颜色或大小）和位置。
 
-JavaScript 是一种编程语言，可以**操作** HTML 和 SVG，进行通用**计算**（例如数据处理）并处理**交互**。
+`JavaScript` 是一种编程语言，可以操作 HTML 和 SVG，进行通用计算（例如数据处理）并处理交互。
 
 我们将在接下来的章节中逐一介绍这些内容。
 
-# 3 HTML
+## 3 HTML
 
-HTML 是一种定义网页**内容**的语言。它使用元素来定义标题、段落、图像、链接等。例如，一个段落元素看起来像这样：
+HTML 是一种定义网页内容的语言。它使用元素来定义标题、段落、图像、链接等。例如，一个段落元素看起来像这样：
 
-```
+```html
 <p>这是一个段落文本。</p>
 ```
 
-段落元素由一个**开始标签** `<p>`、一些**内容**和一个**结束标签** `</p>` 组成。标签通常成对出现。开始标签看起来像 `<p>`，结束标签看起来像 `</p>`。
+段落元素由一个开始标签 `<p>`、一些内容和一个结束标签 `</p>` 组成。标签通常成对出现。开始标签看起来像 `<p>`，结束标签看起来像 `</p>`。
 
 当 Web 浏览器加载 HTML 文档时，它会根据元素类型（段落、标题、图像等）绘制每个元素。例如，上面的段落元素在 Web 浏览器中渲染时看起来像这样：
 
 ![](img/bd2b66aaf5793ed7fb6769887aeb954c.png)
 
-在 Web 浏览器中渲染的段落 `<p>` 元素
+在 Web 浏览器中渲染的段落 `<p>` 元素。
 
 HTML 元素有很多，但只需少数几个就能完成很多工作。本章介绍五个常见元素：标题、列表、图像、`div` 元素和 `svg` 元素。（在可视化数据时，这五个元素通常就足够了。）
 
-## 3.1 标题
+### 3.1 标题
 
 标题元素用于标题。有六个级别，从大（`<h1>`）到小（`<h6>`）。
 
-```
+```html
 <h1>主标题</h1>
 <h2>副标题</h2>
 <h3>三级标题</h3>
@@ -83,13 +84,13 @@ HTML 元素有很多，但只需少数几个就能完成很多工作。本章介
 
 ![](img/842934fa7c3b7a8c7ff897a7d13bb3a1.png)
 
-在 Web 浏览器中渲染的标题元素 `<h1>` 到 `<h6>`
+在 Web 浏览器中渲染的标题元素 `<h1>` 到 `<h6>`。
 
-## 3.2 列表
+### 3.2 列表
 
 列表元素 `<ul>` 用于表示项目列表。每个项目由列表项元素 `<li>` 表示，并嵌套在 `<ul>` 元素内：
 
-```
+```html
 <ul>
   <li>列表项一</li>
   <li>列表项二</li>
@@ -100,15 +101,15 @@ HTML 元素有很多，但只需少数几个就能完成很多工作。本章介
 
 ![](img/c98f89915d42064563c9f2ccf1eb1b8a.png)
 
-在 Web 浏览器中渲染的列表元素 `<ul>` 和 `<li>`
+在 Web 浏览器中渲染的列表元素 `<ul>` 和 `<li>`。
 
-## 3.3 图像
+### 3.3 图像
 
-可以使用 `<img>` 元素将图像添加到 HTML 文档中。`<img>` 元素需要一个名为 `src` 的**属性**，用于指定图像的 URL。
+可以使用 `<img>` 元素将图像添加到 HTML 文档中。`<img>` 元素需要一个名为 `src` 的属性，用于指定图像的 URL。
 
 图像元素没有结束标签。下面是一个图像元素，显示位于 `https://picsum.photos/id/127/300/200.jpg` 的图像：
 
-```
+```html
 <img src="https://picsum.photos/id/127/300/200.jpg">
 ```
 
@@ -116,30 +117,27 @@ HTML 元素有很多，但只需少数几个就能完成很多工作。本章介
 
 ![](img/bd967b4e4ad159da03d87bd9e9dc23fd.png)
 
-在 Web 浏览器中渲染的图像元素 `<img>`
+在 Web 浏览器中渲染的图像元素 `<img>`。
 
 通常，你的图像文件会与源代码放在一起。例如，你可能有一个名为 `images` 的目录，其中包含图像文件 `my-image.jpg`。在这种情况下，你应该这样写：
 
-```
+```html
 <img src="images/my-image.jpg">
 ```
 
-
-
-
 默认情况下，图像以其原始尺寸显示。你可以使用 `width`（或 `height`）属性设置图像的显示宽度（或高度）。让我们将上一张图像的宽度设置为 200 像素：
 
-```
+```html
 <img width="200px" src="images/my-image.jpg">
 ```
 
 我们将在 CSS 章节中介绍测量单位（例如 `px`）。
 
-## 3.4 `<div>` 元素
+### 3.4 `<div>` 元素
 
 `<div>` 元素是一个通用元素，常用于分组和组织内容。当其他元素都不合适时，它也是一个很好的后备元素。下面是一个使用 `<div>` 元素构建网页结构的示例：
 
-```
+```html
 <div>
   <h1>主标题</h1>
   <h2>副标题</h2>
@@ -159,37 +157,37 @@ HTML 元素有很多，但只需少数几个就能完成很多工作。本章介
 
 ![](img/8d76a2ccf46fd6f7ea23fce904abfb73.png)
 
-通用 `<div>` 元素在网页浏览器中的渲染效果
+通用 `<div>` 元素在网页浏览器中的渲染效果。
 
 试着将每个 HTML 元素与输出的每一行对应起来。
 
-## 3.5 `<svg>` 元素
+### 3.5 `<svg>` 元素
 
 当你想在页面中包含 SVG 时，使用 `<svg>` 元素。SVG 代表可缩放矢量图形（Scalable Vector Graphics），是一种描述形状（如线条、圆形和矩形）的语言（参见 SVG 章节）。`<svg>` 元素充当 SVG 形状的容器。例如，要在网页中添加一个圆形，你可以使用：
 
-```
+```html
 <svg width="800" height="600">
   <circle r="100"></circle>
 </svg>
 ```
 
-在 `<svg>` 元素内部有两个**属性**：`width` 和 `height`。它们与 `<img>` 元素中的 `width` 和 `height` 属性类似。
+在 `<svg>` 元素内部有两个属性：`width` 和 `height`。它们与 `<img>` 元素中的 `width` 和 `height` 属性类似。
 
 指定 SVG 元素的大小（使用 `width` 和 `height` 属性）非常重要，因为其默认尺寸非常小，并且形状会被裁剪到 SVG 的边界内。
 
 SVG 将在 SVG 章节中更深入地介绍。
 
-## 3.6 总结
+### 3.6 总结
 
 还有许多其他 HTML 元素，但在可视化数据时，本节介绍的元素是最常见的。
 
 你可以在 [`developer.mozilla.org/en-US/docs/Web/HTML/Element`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element) 查看 HTML 元素的完整列表。
 
-## 3.7 练习
+### 3.7 练习
 
 下面是一些包含本章大部分元素的 HTML：
 
-```
+```html
 <div>
   <h1>主标题</h1>
   <h2>副标题</h2>
@@ -213,19 +211,14 @@ SVG 将在 SVG 章节中更深入地介绍。
 
 尝试以下操作：
 
-1.  更改标题内的文本。
+1. 更改标题内的文本。
+2. 将 `<h4>` 和 `</h4>` 标签改为 `<h4>` 和 `</h4>`。
+3. 添加一个包含一些文本的新段落。
+4. 将图像 URL 改为 `https://picsum.photos/id/104/384/216`。
+5. 将图像的宽度改为 150 像素。
+6. 添加另一个列表项。
 
-2.  将 `<h4>` 和 `</h4>` 标签改为 `<h4>` 和 `</h4>`。
-
-3.  添加一个包含一些文本的新段落。
-
-4.  将图像 URL 改为 `https://picsum.photos/id/104/384/216`
-
-5.  将图像的宽度改为 150 像素。
-
-6.  添加另一个列表项。
-
-# 4 SVG
+## 4 SVG
 
 SVG（可缩放矢量图形）是一种描述形状的语言。它的结构与 HTML 类似，但描述的是形状而非文本。在可视化数据时，最常见的 SVG 元素有：
 
@@ -240,7 +233,7 @@ SVG（可缩放矢量图形）是一种描述形状的语言。它的结构与 H
 
 每个元素需要多个属性来定义其位置和大小。我们在 HTML 章节中看到，属性看起来像 `name="value"`，并插入到开始标签内。例如：
 
-```
+```html
 <svg width="800" height="600">
   <circle r="100"></circle>
 </svg>
@@ -248,33 +241,33 @@ SVG（可缩放矢量图形）是一种描述形状的语言。它的结构与 H
 
 在上面的代码片段中，`<svg>` 元素有两个属性 `width` 和 `height`，`<circle>` 元素有一个属性 `r`，其值为 `100`。稍后我们会看到 `r` 属性指定了圆的半径。
 
-## 4.1 将 SVG 添加到网页
+### 4.1 将 SVG 添加到网页
 
 SVG 形状元素可以通过将它们包含在 `<svg>` 元素内来添加到 HTML 文档中。例如：
 
-```
+```html
 <h3>这里有一些形状：</h3>
 
 <svg width="800" height="600">
   <circle r="100"></circle>
-  <line x1="10" y1="10" x2="100" y2="10"></line> 
+  <line x1="10" y1="10" x2="100" y2="10"></line>
 </svg>
 
 <p>上面是一个圆形和一条线条。</p>
 ```
 
-## 4.2 SVG 元素
+### 4.2 SVG 元素
 
-### 4.2.1 线条
+#### 4.2.1 线条
 
 `<line>` 元素表示直线。它有 4 个属性：
 
-*   `x1` 和 `y1` 定义线条的起点
-*   `x2` 和 `y2` 定义线条的终点
+- `x1` 和 `y1` 定义线条的起点。
+- `x2` 和 `y2` 定义线条的终点。
 
 例如：
 
-```
+```html
 <svg width="800" height="100">
   <line x1="50" y1="50" x2="200" y2="50"></line>
 </svg>
@@ -284,18 +277,18 @@ SVG 形状元素可以通过将它们包含在 `<svg>` 元素内来添加到 HTM
 
 ![](img/0f7e66f6a0c9e74d4c39d63e32080531.png)
 
-一个 `<line>` 元素（`<svg>` 元素以灰色轮廓表示）
+一个 `<line>` 元素（`<svg>` 元素以灰色轮廓表示）。
 
-### 4.2.2 矩形
+#### 4.2.2 矩形
 
 `<rect>` 元素定义矩形，有 4 个属性：
 
-*   `x` 和 `y` 定义左上角位置
-*   `width` 和 `height`
+- `x` 和 `y` 定义左上角位置。
+- `width` 和 `height` 定义矩形的宽度和高度。
 
 例如：
 
-```
+```html
 <svg width="800" height="150">
   <rect x="50" y="50" width="200" height="50"></rect>
 </svg>
@@ -305,18 +298,18 @@ SVG 形状元素可以通过将它们包含在 `<svg>` 元素内来添加到 HTM
 
 ![](img/0b00275bef9811eba831ded2f38a2e71.png)
 
-一个 `<rect>` 元素
+一个 `<rect>` 元素。
 
-### 4.2.3 圆形
+#### 4.2.3 圆形
 
 `<circle>` 元素有 3 个属性：
 
-*   `cx` 和 `cy` 定义圆心
-*   `r` 定义半径
+- `cx` 和 `cy` 定义圆心。
+- `r` 定义半径。
 
 例如：
 
-```
+```html
 <svg width="800" height="150">
   <circle cx="100" cy="75" r="50"></circle>
 </svg>
@@ -326,15 +319,15 @@ SVG 形状元素可以通过将它们包含在 `<svg>` 元素内来添加到 HTM
 
 ![](img/a903dac8725a3e3e595983ca2ee24003.png)
 
-一个圆心在 (100,75)、半径为 50 的 `<circle>` 元素
+一个圆心在 (100,75)、半径为 50 的 `<circle>` 元素。
 
-### 4.2.4 文本
+#### 4.2.4 文本
 
 `<text>` 元素有 2 个属性 `x` 和 `y`，定义文本的左下角。
 
 与大多数 SVG 元素不同，`<text>` 元素在开始和结束标签之间有内容：
 
-```
+```html
 <svg width="800" height="100">
   <text x="50" y="50">一些 SVG 文本</text>
 </svg>
@@ -344,13 +337,13 @@ SVG 形状元素可以通过将它们包含在 `<svg>` 元素内来添加到 HTM
 
 ![](img/0cbee3579876266ec846058c0407e3a5.png)
 
-一个左下角在 (100,50) 的 `<text>` 元素
+一个左下角在 (100,50) 的 `<text>` 元素。
 
-### 4.2.5 组
+#### 4.2.5 组
 
 `<g>` 元素用于分组 SVG 元素，当对象由多个元素组成时特别有用。它们有点像 HTML 的 `<div>` 元素。例如，一个带有文本标签的圆形可以表示为：
 
-```
+```html
 <svg width="800" height="600">
   <g>
     <circle cx="50" cy="50" r="20"></circle>
@@ -363,13 +356,13 @@ SVG 形状元素可以通过将它们包含在 `<svg>` 元素内来添加到 HTM
 
 ![](img/21f9c866b1124600f3c3266a253d3e29.png)
 
-一个包含两个元素的 `<g>` 元素
+一个包含两个元素的 `<g>` 元素。
 
-### 4.2.6 路径
+#### 4.2.6 路径
 
 `<path>` 元素有一个单独的属性 `d`，其中包含一系列绘图命令：
 
-```
+```html
 <svg width="800" height="100">
   <path d="M20,20 l200,0 l0,50 z"></path>
 </svg>
@@ -377,30 +370,28 @@ SVG 形状元素可以通过将它们包含在 `<svg>` 元素内来添加到 HTM
 
 在此示例中，使用了三个命令：
 
-*   `M` 表示移动到指定坐标
-*   `l` 表示从当前位置绘制相对线条
-*   `z` 表示闭合形状
+- `M` 表示移动到指定坐标。
+- `l` 表示从当前位置绘制相对线条。
+- `z` 表示闭合形状。
 
 因此：
 
-*   `M20,20` 表示移动到坐标 `20,20`
-*   `l200,0` 表示向右绘制一条 `200` 像素的线条
-*   `l0,50` 表示向下绘制一条 `50` 像素的线条
-*   `z` 表示闭合形状
+- `M20,20` 表示移动到坐标 `20,20`。
+- `l200,0` 表示向右绘制一条 `200` 像素的线条。
+- `l0,50` 表示向下绘制一条 `50` 像素的线条。
+- `z` 表示闭合形状。
 
 渲染效果如下：
 
 ![](img/71929891d09771adec546a417e46434d.png)
 
-一个 `<path>` 元素
+一个 `<path>` 元素。
 
 如果你想了解更多关于路径命令的信息，请访问 [`developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/Paths`](https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/Paths)。
 
-### 4.2.7 练习
+#### 4.2.7 练习
 
 下面是一些包含本章大部分元素的 SVG：
-
-
 
 
 
@@ -418,7 +409,7 @@ SVG 形状元素可以通过将它们包含在 `<svg>` 元素内来添加到 HTM
 
 ![](img/d3e97ea9e32a9b7452cbdac3052eb599.png)
 
-SVG 形状
+## SVG 形状
 
 尝试以下操作：
 
@@ -581,7 +572,7 @@ SVG 变换包括 `translate`、`rotate`、`scale`、`skewX` 和 `skewY`。在本
 
 旋转并平移后的坐标系
 
-坐标系先 1) 绕原点旋转 45 度，然后 2) 沿旋转后的 x 轴方向平移 100 像素。（仅应用旋转变换的坐标系以浅色显示。）
+坐标系先 1) 绕原点旋转 45 度，然后 2) 沿旋转后的 `x` 轴方向平移 100 像素。（仅应用旋转变换的坐标系以浅色显示。）
 
 ## 4.4 练习
 
@@ -665,11 +656,6 @@ h1 {
 | --- | --- | --- |
 | `px` | 像素 | `12px` |
 | `rem` | 相对于网页的默认字体大小 | `1.5rem` |
-
-
-
-
-
 | `%` | 元素父级值的百分比 | `50%` |
 | `vw` | 视口宽度的百分比 | `25vw` |
 | `vh` | 视口高度的百分比 | `100vh` |
@@ -716,13 +702,13 @@ HTML 元素的一些最常见属性如下：
 
 以下是 HTML：
 
-```
+```html
 <p>这是一个段落元素。</p>
 ```
 
 以及 CSS：
 
-```
+```css
 p {
   font-size: 1rem;
   color: #335C67;
@@ -744,17 +730,12 @@ p {
 
 尝试以下操作：
 
-1.  编辑某些属性值（例如，你可以更改一些颜色）。
-
-2.  添加一条规则来更改 `<p>` 元素的不透明度。
-
-3.  增加/减少 margin 和/或 padding，观察它们之间的关系。
-
-4.  增加边框宽度。
-
-5.  减小元素宽度。
-
-6.  在 HTML 中添加另一个 `<p>` 元素，并在结果面板中观察其显示效果。
+1. 编辑某些属性值（例如，你可以更改一些颜色）。
+2. 添加一条规则来更改 `<p>` 元素的不透明度。
+3. 增加/减少 margin 和/或 padding，观察它们之间的关系。
+4. 增加边框宽度。
+5. 减小元素宽度。
+6. 在 HTML 中添加另一个 `<p>` 元素，并在结果面板中观察其显示效果。
 
 ### 5.3.3 SVG 的 CSS 属性
 
@@ -765,15 +746,19 @@ p {
 | `fill` | 形状的内部颜色 | `red`, `#FF595E`, `rgb(255, 100, 255)`, `none` | [更多](https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/Fills_and_Strokes) |
 | `stroke` | 形状轮廓的颜色 | `red`, `#FF595E`, `rgb(255, 100, 255)`, `none` | [更多](https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/Fills_and_Strokes) |
 | `stroke-width` | 形状轮廓的宽度 | `1px`, `0.5px` | [更多](https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/Fills_and_Strokes) |
-| `opacity` | 形状的不透明度 | `0`（透明）, `0.5`（半透明）, `1`（不透明） | [更多](https://developer.mozilla.org/docs/Web/CSS/opacity) |
-| `font-size` | 文本大小 | `12px`, `1.5rem` | [更多](https://developer.mozilla.org/en-US/docs/Web/CSS/font-size) |
-| `font-family` | 字体族 | `Helvetica`, `Verdana`, `sans-serif`, `serif` | [更多](https://developer.mozilla.org/en-US/docs/Web/CSS/font-family) |
-| `font-weight` | 字体粗细 | `lighter`, `normal`, `bold` | [更多](https://developer.mozilla.org/en-US/docs/Web/CSS/font-weight) |
-| `text-anchor` | 文本元素的水平对齐方式 | `start`, `middle`, `end` | [更多](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/text-anchor) |
+
+
+
+| `opacity` | 形状的不透明度 | `0`（透明）、`0.5`（半透明）、`1`（不透明） | [更多](https://developer.mozilla.org/docs/Web/CSS/opacity) |
+| --- | --- | --- | --- |
+| `font-size` | 文本大小 | `12px`、`1.5rem` | [更多](https://developer.mozilla.org/en-US/docs/Web/CSS/font-size) |
+| `font-family` | 字体族 | `Helvetica`、`Verdana`、`sans-serif`、`serif` | [更多](https://developer.mozilla.org/en-US/docs/Web/CSS/font-family) |
+| `font-weight` | 字体粗细 | `lighter`、`normal`、`bold` | [更多](https://developer.mozilla.org/en-US/docs/Web/CSS/font-weight) |
+| `text-anchor` | 文本元素的水平对齐方式 | `start`、`middle`、`end` | [更多](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/text-anchor) |
 
 例如，以下是 SVG：
 
-```
+```html
 <svg width="400" height="200">
   <g transform="translate(100, 75)">
     <circle r="50"></circle>
@@ -784,7 +769,7 @@ p {
 
 以及 CSS：
 
-```
+```css
 circle {
   fill: #9E2A2B;
 }
@@ -804,21 +789,20 @@ text {
 
 第一条规则设置了圆形的颜色，第二条规则样式化了文本元素。文本元素的字体族、颜色和水平对齐方式均已设置。
 
-导航至 [`codepen.io/createwithdata/pen/YzeWeyY`](https://codepen.io/createwithdata/pen/YzeWeyY) 在 CodePen 中查看此示例。
+导航至[`codepen.io/createwithdata/pen/YzeWeyY`](https://codepen.io/createwithdata/pen/YzeWeyY)在 CodePen 中查看此示例。
 
 ### 5.3.4 练习
 
 尝试以下操作：
 
-1.  将圆形的透明度设置为 `0.5`。
-
-2.  增大标签的字体大小。
+1. 将圆形的透明度设置为`0.5`。
+2. 增大标签的字体大小。
 
 ### 5.3.5 规则覆盖
 
 如果多个 CSS 声明应用于同一元素，则后面的声明优先级更高。例如以下两条规则：
 
-```
+```css
 p {
   font-size: 10px;
 }
@@ -828,13 +812,13 @@ p {
 }
 ```
 
-结果 `p` 元素的字体大小为 `1.5rem`。（第一条规则被第二条覆盖。）
+结果`p`元素的字体大小为`1.5rem`。（第一条规则被第二条覆盖。）
 
 ### 5.3.6 示例
 
 让我们看一个更高级的示例。假设你有以下 HTML：
 
-```
+```html
 <h1>主标题</h1>
 <h2>副标题</h2>
 
@@ -852,7 +836,7 @@ p {
 
 以及以下 CSS：
 
-```
+```css
 body {
   font-family: serif;
 }
@@ -877,11 +861,11 @@ rect {
 }
 ```
 
-（你可以在 CodePen 上查看此示例，地址为 [`codepen.io/createwithdata/pen/LYVvBEg`](https://codepen.io/createwithdata/pen/LYVvBEg)。）
+（你可以在 CodePen 上查看此示例，地址为[`codepen.io/createwithdata/pen/LYVvBEg`](https://codepen.io/createwithdata/pen/LYVvBEg)。）
 
-第一条规则的选择器是 `body`。`body` 元素代表所有内容，因此该规则将所有元素的字体族设置为 `serif`。下一条规则设置了 `h2` 元素的颜色和字体族。此 `font-family` 声明覆盖了前一条规则的 `font-family` 声明。
+第一条规则的选择器是`body`。`body`元素代表所有内容，因此该规则将所有元素的字体族设置为`serif`。下一条规则设置了`h2`元素的颜色和字体族。此`font-family`声明覆盖了前一条规则的`font-family`声明。
 
-接下来是一条设置 `p` 元素颜色的规则。然后我们设置了 `circle` 元素的 `fill`，以及 `rect` 元素的 `fill`、`stroke` 和 `stroke-width`。结果如下：
+接下来是一条设置`p`元素颜色的规则。然后我们设置了`circle`元素的`fill`，以及`rect`元素的`fill`、`stroke`和`stroke-width`。结果如下：
 
 ![](img/ccedb05dfcea48b8fef2ee529b81c29e.png)
 
@@ -889,39 +873,35 @@ CSS 应用于多个 HTML 和 SVG 元素
 
 ## 5.4 更多 CSS 选择器
 
-
-
-
-
 上一节展示了如何使用 CSS 为 HTML 和 SVG 元素设置样式。你看到了 CSS 规则如何应用于特定类型的元素。例如：
 
-```
+```css
 p {
   color: #333;
 }
 ```
 
-设置了所有 `<p>` 元素的颜色。但是，如果你的网页包含大量 `<p>` 元素，而你只想为**其中一部分**设置样式，该怎么办？
+设置了所有`<p>`元素的颜色。但是，如果你的网页包含大量`<p>`元素，而你只想为其中一部分设置样式，该怎么办？
 
 你可以通过以下方法让 CSS 选择器更具体：
 
-*   在 HTML 和 SVG 元素上添加类（class）和 ID
-*   后代选择器
-*   伪类
+- 在 HTML 和 SVG 元素上添加类（class）和 ID
+- 后代选择器
+- 伪类
 
 这些方法涵盖了大多数需要定位特定元素的情况。让我们逐一了解。
 
 ### 5.4.1 类与 ID
 
-HTML 和 SVG 中有两个属性 `id` 和 `class`，可以让你标记页面中的特定元素。这样你就可以添加针对这些元素的 CSS 规则。`id` 属性用于需要定位单个元素的情况，而 `class` 属性用于需要定位多个元素的情况。
+HTML 和 SVG 中有两个属性`id`和`class`，可以让你标记页面中的特定元素。这样你就可以添加针对这些元素的 CSS 规则。`id`属性用于需要定位单个元素的情况，而`class`属性用于需要定位多个元素的情况。
 
-#### 5.4.1.1 id
+#### 5.4.1.1 `id`
 
-`id` 属性允许你标记单个元素，以便在其他地方（通常是 CSS 或 JavaScript）引用它。例如，你可能有一个需要应用某些 CSS 的主菜单。
+`id`属性允许你标记单个元素，以便在其他地方（通常是 CSS 或 JavaScript）引用它。例如，你可能有一个需要应用某些 CSS 的主菜单。
 
-让我们创建一个简单的菜单，并添加一个值为 `main-menu` 的 `id` 属性：
+让我们创建一个简单的菜单，并添加一个值为`main-menu`的`id`属性：
 
-```
+```html
 <div id="main-menu">
   <div>Home</div>
   <div>About</div>
@@ -930,11 +910,11 @@ HTML 和 SVG 中有两个属性 `id` 和 `class`，可以让你标记页面中�
 </div>
 ```
 
-你可以为多个元素添加 id，但每个 id 值必须是唯一的。换句话说：两个元素不应具有相同的 id。
+你可以为多个元素添加`id`，但每个`id`值必须是唯一的。换句话说：两个元素不应具有相同的`id`。
 
-在 CSS 中，要选择带有 id 的元素，请使用 `#` 后跟 id 值：
+在 CSS 中，要选择带有`id`的元素，请使用`#`后跟`id`值：
 
-```
+```css
 #main-menu {
   margin: 1rem;
 }
@@ -942,11 +922,11 @@ HTML 和 SVG 中有两个属性 `id` 和 `class`，可以让你标记页面中�
 
 这为菜单添加了外边距。
 
-#### 5.4.1.2 class
+#### 5.4.1.2 `class`
 
-`class` 属性用于标记**多个** HTML 和 SVG 元素。例如：
+`class`属性用于标记多个 HTML 和 SVG 元素。例如：
 
-```
+```html
 <div id="main-menu">
   <div class="item">Home</div>
   <div class="item">About</div>
@@ -955,11 +935,11 @@ HTML 和 SVG 中有两个属性 `id` 和 `class`，可以让你标记页面中�
 </div>
 ```
 
-每个菜单项都被赋予了一个值为 `item` 的 class 属性。class 属性可以有多个值（用空格分隔）。例如，第三个菜单项的 class 属性有两个值：`item` 和 `selected`。这表明这个特定的 `div` 元素是列表中的一个项，并且已被选中。
+每个菜单项都被赋予了一个值为`item`的 class 属性。class 属性可以有多个值（用空格分隔）。例如，第三个菜单项的 class 属性有两个值：`item`和`selected`。这表明这个特定的`div`元素是列表中的一个项，并且已被选中。
 
-在 CSS 中，可以通过在元素类型后添加一个**点**后跟**类名**来选择具有给定类值的元素：
+在 CSS 中，可以通过在元素类型后添加一个点后跟类名来选择具有给定类值的元素：
 
-```
+```css
 div.item {
   border: 1px solid #aaa;
   padding: 1rem;
@@ -972,16 +952,16 @@ div.selected {
 
 这意味着：
 
-*   为每个类值为 `item` 的 `div` 元素添加内边距和边框
-*   设置类值为 `selected` 的 `div` 元素的背景颜色
+- 为每个类值为`item`的`div`元素添加内边距和边框
+- 设置类值为`selected`的`div`元素的背景颜色
 
-你也可以省略元素名称，选择所有具有给定类值的元素，无论其类型如何。例如，`.item` 选择所有类值为 `item` 的元素。
+你也可以省略元素名称，选择所有具有给定类值的元素，无论其类型如何。例如，`.item`选择所有类值为`item`的元素。
 
 ### 5.4.2 练习
 
 这是一个使用 HTML 和 CSS 构建的简单菜单。HTML 如下：
 
-```
+```html
 <div id="main-menu">
   <div class="item">Home</div>
   <div class="item">About</div>
@@ -992,7 +972,7 @@ div.selected {
 
 CSS 如下：
 
-```
+```css
 #main-menu {
   margin: 1rem;
   width: 15rem;
@@ -1014,19 +994,19 @@ div.selected {
 
 一个用 HTML 和 CSS 构建的菜单，第二个项被选中。
 
-你可以在 CodePen 上查看此示例：[`codepen.io/createwithdata/pen/VwQjQpX`](https://codepen.io/createwithdata/pen/VwQjQpX)
+你可以在 CodePen 上查看此示例：[`codepen.io/createwithdata/pen/VwQjQpX`](https://codepen.io/createwithdata/pen/VwQjQpX)。
 
 探索代码并尝试以下操作：
 
-1.  更改选中项的背景颜色。
-2.  更改选中项的字体颜色。
-3.  更改选中的菜单项。
+1. 更改选中项的背景颜色。
+2. 更改选中项的字体颜色。
+3. 更改选中的菜单项。
 
 ### 5.4.3 后代选择器
 
 另一种使用 CSS 选择特定元素的方法是使用后代选择器。它由两个或多个选择器组成，用空格分隔，允许你选择作为其他元素后代的元素。例如，如果你有以下 HTML：
 
-```
+```html
 <div id="main-menu">
   <div>Home</div>
   <div>Posts</div>
@@ -1036,35 +1016,36 @@ div.selected {
 </div>
 ```
 
-你可以使用选择器 `#main-menu div` 为 `#main-menu` 元素内的 `div` 元素设置样式。例如：
+你可以使用选择器`#main-menu div`为`#main-menu`元素内的`div`元素设置样式。例如：
 
-```
+```css
 #main-menu div {
   padding: 1rem;
 }
 ```
 
-这意味着选择所有作为 `#main-menu` 元素后代的 `div` 元素。菜单外部的 `div` 元素不会被选中。
+这意味着选择所有作为`#main-menu`元素后代的`div`元素。菜单外部的`div`元素不会被选中。
 
 后代选择器是一种非常常见的工具，与数据可视化相关的示例包括：
 
-```
+```css
 .bar-chart .bar {
   fill: blue;
 }
+
 .chart .legend .label {
   font-family: sans-serif;
   font-size: 0.75rem;
 }
 ```
 
-第一个选择器 `.bar-chart .bar` 选择嵌套在类为 `.bar-chart` 的元素内部、类为 `bar` 的元素（即条形图的条形）。
+第一个选择器`.bar-chart .bar`选择嵌套在类为`.bar-chart`的元素内部、类为`bar`的元素（即条形图的条形）。
 
-第二个选择器 `.chart .legend .label` 选择嵌套在类为 `legend` 的元素内部、而该类又嵌套在类为 `chart` 的元素内部、类为 `label` 的元素（即图表图例标签）。
+第二个选择器`.chart .legend .label`选择嵌套在类为`legend`的元素内部、而该类又嵌套在类为`chart`的元素内部、类为`label`的元素（即图表图例标签）。
 
 后代选择器很方便，因为它们允许你根据元素的嵌套结构来选择元素。例如，你可以使用后代选择器重新创建之前的菜单示例。HTML 如下：
 
-```
+```html
 <div id="main-menu">
   <div>Home</div>
   <div>About</div>
@@ -1077,7 +1058,7 @@ div.selected {
 
 CSS 如下：
 
-```
+```css
 #main-menu {
   margin: 1rem;
   width: 15rem;
@@ -1093,25 +1074,25 @@ CSS 如下：
 }
 ```
 
-注意，我们可以从每个菜单项中移除 `class="item"` 属性。我们不再使用 `div.item` 来设置菜单项样式，而是使用 `#main-menu div`。这简化了 HTML，使其更易于阅读和维护。
+注意，我们可以从每个菜单项中移除`class="item"`属性。我们不再使用`div.item`来设置菜单项样式，而是使用`#main-menu div`。这简化了 HTML，使其更易于阅读和维护。
 
-导航至 [`codepen.io/createwithdata/pen/BaYzYZb`](https://codepen.io/createwithdata/pen/BaYzYZb) 在 CodePen 中查看此示例。
+导航至[`codepen.io/createwithdata/pen/BaYzYZb`](https://codepen.io/createwithdata/pen/BaYzYZb)在 CodePen 中查看此示例。
 
 ### 5.4.4 伪类
 
 伪类修改选择器的行为。它们由冒号（`:`）后跟伪类名称组成：
 
-```
+```css
 p:hover {
   background-color: yellow;
 }
 ```
 
-上述代码在鼠标悬停时将 `<p>` 元素的背景颜色更改为黄色。
+上述代码在鼠标悬停时将`<p>`元素的背景颜色更改为黄色。
 
 构建数据可视化时常用的伪类包括：
 
-| **伪类** | **描述** |
+| 伪类 | 描述 |
 | --- | --- |
 | `:hover` | 当元素被悬停时选择该元素 |
 | `:first-child` | 选择一组兄弟元素中的第一个兄弟元素。（兄弟元素是嵌套在同一父元素下的相邻元素。） |
@@ -1119,7 +1100,7 @@ p:hover {
 
 以下是使用伪类为第一个项（现在代表菜单标题）和悬停项设置样式的菜单示例。HTML 如下：
 
-```
+```html
 <div id="main-menu">
   <div>Main</div>
   <div>About</div>
@@ -1130,7 +1111,7 @@ p:hover {
 
 CSS 如下：
 
-```
+```css
 #main-menu {
   margin: 1rem;
   width: 15rem;
@@ -1158,35 +1139,31 @@ CSS 如下：
 
 使用伪类为第一个项设置样式
 
-通过使用 `:first-child` 伪类，`#main-menu` 中的第一个 `div` 被加粗。当任何项被悬停时，由于 `:hover` 伪类，背景颜色会发生变化。（实际上你不会这样实现菜单，所以这个示例仅作为教学工具。）
+通过使用`:first-child`伪类，`#main-menu`中的第一个`div`被加粗。当任何项被悬停时，由于`:hover`伪类，背景颜色会发生变化。（实际上你不会这样实现菜单，所以这个示例仅作为教学工具。）
 
-导航至 [`codepen.io/createwithdata/pen/MWQeQvy`](https://codepen.io/createwithdata/pen/MWQeQvy) 在 CodePen 中查看此示例。
+导航至[`codepen.io/createwithdata/pen/MWQeQvy`](https://codepen.io/createwithdata/pen/MWQeQvy)在 CodePen 中查看此示例。
 
 ### 5.4.5 分组选择器
 
 你可以通过用逗号分隔选择器，将同一组声明应用于多个选择器。例如，给定以下 HTML：
 
-
-
-
-
-```
+```html
 <h1>主标题</h1>
 <h2>副标题</h2>
 <h6>小标题</h6>
 ```
 
-以下 CSS 将所有标题元素的字体粗细设置为 `lighter`：
+以下 CSS 将所有标题元素的字体粗细设置为`lighter`：
 
-```
+```css
 h1, h2, h3, h4, h5, h6 {
   font-weight: lighter;
 }
 ```
 
-导航至 [`codepen.io/createwithdata/pen/jOPoMBK`](https://codepen.io/createwithdata/pen/jOPoMBK) 在 CodePen 中查看此示例。
+导航至[`codepen.io/createwithdata/pen/jOPoMBK`](https://codepen.io/createwithdata/pen/jOPoMBK)在 CodePen 中查看此示例。
 
-作为练习，尝试从 CSS 规则中移除 `h1` 选择器，并观察效果。
+作为练习，尝试从 CSS 规则中移除`h1`选择器，并观察效果。
 
 ## 5.5 用于 HTML 布局的 CSS
 
@@ -1202,11 +1179,11 @@ CSS 也用于排列 HTML 元素。例如，你可能希望页面顶部有一个�
 
 ### 5.5.1 块级元素与内联元素
 
-从布局角度来看，HTML 元素可分为两类：**块级**元素和**内联**元素。
+从布局角度来看，HTML 元素可分为两类：块级元素和内联元素。
 
-块级元素彼此上下排列，内联元素则并排排列。例如，如果你有几个 `<div>` 元素：
+块级元素彼此上下排列，内联元素则并排排列。例如，如果你有几个`<div>`元素：
 
-```
+```html
 <div>1</div>
 <div>2</div>
 <div>3</div>
@@ -1225,25 +1202,27 @@ CSS 也用于排列 HTML 元素。例如，你可能希望页面顶部有一个�
 
 内联元素
 
+
+
 在本书涵盖的元素中，标题（`<h1>` - `<h6>`）、列表 `<ul>` 和 `<div>` 元素（默认情况下）是块级元素，而 `<img>` 和 `<svg>` 元素（默认情况下）是内联元素。你也可以使用 `display` CSS 属性设置元素是块级还是内联。要将元素设置为块级显示，请使用：
 
-```
+```css
 display: block;
 ```
 
 要将元素设置为内联显示，请使用：
 
-```
+```css
 display: inline;
 ```
 
-`display` 的另一个值是 `inline-block`，它使元素并排排列，**并且**允许使用 `width` 和 `height` 属性设置其宽度和高度。（我很少使用 `display: inline;`，但在并排排列 `<div>` 元素时偶尔会使用 `display: inline-block;`。）
+`display` 的另一个值是 `inline-block`，它使元素并排排列，并且允许使用 `width` 和 `height` 属性设置其宽度和高度。（我很少使用 `display: inline;`，但在并排排列 `<div>` 元素时偶尔会使用 `display: inline-block;`。）
 
 ### 5.5.2 Flexbox
 
-CSS Flexbox 模型允许你指定项目如何**在其父元素内排列**。例如，从以下 HTML 开始：
+CSS Flexbox 模型允许你指定项目如何在其父元素内排列。例如，从以下 HTML 开始：
 
-```
+```html
 <div id="container">
   <div class="item">一</div>
   <div class="item">二</div>
@@ -1254,7 +1233,7 @@ CSS Flexbox 模型允许你指定项目如何**在其父元素内排列**。例�
 
 以及以下 CSS：
 
-```
+```css
 .item {
   padding: 1rem;
   margin: 0.25rem;
@@ -1272,7 +1251,7 @@ Flexbox 允许你在容器及其子元素（或“项目”）上指定属性，
 
 要使元素成为弹性容器，请将其 `display` 属性设置为 `flex`：
 
-```
+```css
 #container {
   display: flex;
 }
@@ -1282,7 +1261,7 @@ Flexbox 允许你在容器及其子元素（或“项目”）上指定属性，
 
 ![](img/8d20342c81156bb9e5eaa7aca69f455b.png)
 
-启用了 flex 的容器元素（灰色显示）
+启用了 `flex` 的容器元素（灰色显示）
 
 现在，你可以在容器和/或项目上设置属性，以确定项目的排列方式。以下是容器最常用的属性和值：
 
@@ -1297,7 +1276,7 @@ Flexbox 允许你在容器及其子元素（或“项目”）上指定属性，
 
 例如，如果我们将 `justify-content` 设置为 `space-between`：
 
-```
+```css
 #container {
   display: flex;
   justify-content: space-between;
@@ -1318,7 +1297,7 @@ Flexbox 允许你在容器及其子元素（或“项目”）上指定属性，
 
 你还可以将弹性容器相互嵌套。例如，你可以使用这种方法构建一个基本的页眉栏。以下是 HTML：
 
-```
+```html
 <div id="header">
   <div id="title">我的网站</div>
   <div id="menu">
@@ -1331,7 +1310,7 @@ Flexbox 允许你在容器及其子元素（或“项目”）上指定属性，
 
 CSS 如下：
 
-```
+```css
 body {
   margin: 0;
   font-family: sans-serif;
@@ -1372,15 +1351,10 @@ body {
 
 JavaScript 是 Web 的编程语言。它内置于大多数 Web 浏览器中，可以：
 
-*   **添加**、**修改**和**删除** HTML 和 SVG 元素
-*   处理**交互性**（例如，鼠标点击）
-*   **获取**数据和其他资源
-
-
-
-
-
-*   执行通用**计算**（例如数据处理）
+- 添加、修改和删除 HTML 和 SVG 元素
+- 处理交互性（例如，鼠标点击）
+- 获取数据和其他资源
+- 执行通用计算（例如数据处理）
 
 基于网页的数据可视化，尤其是交互式的，很可能使用 JavaScript。
 
@@ -1388,35 +1362,35 @@ JavaScript 最初是一种在网站上很少使用的语言（通常用于处理
 
 诸如 [D3](https://d3js.org/)、[Leaflet](https://leafletjs.com/) 和 [Chart.js](https://www.chartjs.org/) 之类的库都是用 JavaScript 编写的，为构建数据可视化提供了有用的功能。
 
-接下来的两节将介绍 JavaScript 的基础知识，即**变量**和**类型**。后续章节将介绍**运算符**、**条件语句**、**迭代**和**函数**。
+接下来的两节将介绍 JavaScript 的基础知识，即变量和类型。后续章节将介绍运算符、条件语句、迭代和函数。
 
 为了实验和练习 JavaScript，我推荐使用 [jsconsole](https://jsconsole.com/) 网站。它允许你输入 JavaScript 代码并立即求值。（如果你更有经验，可以使用浏览器的[调试控制台](https://developers.google.com/web/tools/chrome-devtools/console#javascript)或 Node。）
 
 当你看到本节中的示例代码时，偶尔会看到 `//` 后跟一个值：
 
-```
+```javascript
 10 + 5;  // 15
 ```
 
-该值表示代码返回的值。（如果你在 jsconsole 中输入 `10 + 5` 并按回车，它会在下一行显示结果 `15`。）
+该值表示代码返回的值。（如果你在 `jsconsole` 中输入 `10 + 5` 并按回车，它会在下一行显示结果 `15`。）
 
 ## 6.1 JavaScript 变量
 
-如果你有一个值（例如一些文本或数字），你可以使用**变量**来指向该数据。实际上，你是在给数据贴上一个标签，以便在代码的其他地方引用它。在 JavaScript 中，变量在使用前必须**声明**。通常使用 `let` 关键字来完成：
+如果你有一个值（例如一些文本或数字），你可以使用变量来指向该数据。实际上，你是在给数据贴上一个标签，以便在代码的其他地方引用它。在 JavaScript 中，变量在使用前必须声明。通常使用 `let` 关键字来完成：
 
-```
+```javascript
 let myMessage;
 ```
 
 你可以将一个值（例如数字或字符串）赋给变量。下面是如何将字符串（一段用引号括起来的文本）赋给变量 `myMessage`：
 
-```
+```javascript
 myMessage = "Hello world!";
 ```
 
 你也可以将数字赋给变量：
 
-```
+```javascript
 let a = 10;
 let b = 20;
 ```
@@ -1427,7 +1401,7 @@ let b = 20;
 
 让我们将表达式 `a + b` 赋给一个新变量 `c`：
 
-```
+```javascript
 let c = a + b;
 c;  // 30
 ```
@@ -1438,16 +1412,16 @@ c;  // 30
 
 打开 [jsconsole](https://jsconsole.com/) 并输入以下内容：
 
-```
+```javascript
 let a = 10;
 let b = 20;
 ```
 
 现在输入 `a` 并按回车键。你看到了什么？
 
-jsconsole 对 `a` 求值并输出结果 `10`。现在输入：
+`jsconsole` 对 `a` 求值并输出结果 `10`。现在输入：
 
-```
+```javascript
 let c = a + b;
 ```
 
@@ -1457,11 +1431,11 @@ let c = a + b;
 
 JavaScript 中最常见的数据类型有：
 
-*   字符串（例如 `"Hello world"`）
-*   数字（例如 `1234`、`10.567`、`1.23e2`）
-*   布尔值（`true` 和 `false`）
-*   数组（值的列表）
-*   对象（键值对的列表）
+- 字符串（例如 `"Hello world"`）
+- 数字（例如 `1234`、`10.567`、`1.23e2`）
+- 布尔值（`true` 和 `false`）
+- 数组（值的列表）
+- 对象（键值对的列表）
 
 以上类型足以构建数据可视化。本节我们将介绍字符串、数字和布尔值。数组和对象有单独的章节。
 
@@ -1469,20 +1443,20 @@ JavaScript 中最常见的数据类型有：
 
 字符串表示文本。文本用单引号（`'`）或双引号（`"`）括起来：
 
-```
+```javascript
 'A JavaScript string'
 "A string enclosed in double quotes"
 ```
 
 如果你的文本包含单引号，则使用双引号将其括起来（反之亦然）：
 
-```
+```javascript
 "Bob's learning to code in JavaScript"
 ```
 
 你可以使用 `+` 运算符将字符串拼接在一起：
 
-```
+```javascript
 let firstName = "Jolene";
 let lastName = "Smith";
 let fullName = firstName + " " + lastName;
@@ -1491,19 +1465,19 @@ fullName;  // "Jolene Smith"
 
 在以下示例中，我们有一个变量 `a`，其值为 `"This is a string"`：
 
-```
+```javascript
 let a = "This is a string";
 ```
 
 你可以使用 `.length` 获取字符串的长度：
 
-```
+```javascript
 a.length;  // 16
 ```
 
 你可以使用方括号获取字符串中的第 `n` 个字符：
 
-```
+```javascript
 a[0];  // "T"
 a[2];  // "i"
 ```
@@ -1512,7 +1486,7 @@ a[2];  // "i"
 
 可以使用 `split(s)` 在字符串 `s` 出现的位置拆分字符串。例如，让我们按单个空格字符拆分字符串：
 
-```
+```javascript
 a.split(' ');  // ["This", "is", "a", "string"]
 ```
 
@@ -1520,13 +1494,13 @@ a.split(' ');  // ["This", "is", "a", "string"]
 
 你可以使用 `toUpperCase()` 计算字符串的大写版本：
 
-```
+```javascript
 a.toUpperCase();  // "THIS IS A STRING"
 ```
 
 注意，这不会改变（或修改）字符串。它只是返回一个新字符串，而 `a` 的值仍然是 `"This is a string"`。要使变量 `a` 变为大写，你可以将 `a.toUpperCase()` 的输出赋给 `a`：
 
-```
+```javascript
 a = a.toUpperCase();
 a;  // "THIS IS A STRING"
 ```
@@ -1537,7 +1511,7 @@ a;  // "THIS IS A STRING"
 
 你可以使用 `parseFloat` 将包含数字的字符串转换为数字。例如：
 
-```
+```javascript
 parseFloat('123.456');  // 123.456
 parseFloat('5432');     // 5432
 parseFloat('abc');      // NaN (not a number)
@@ -1552,7 +1526,7 @@ parseFloat('');         // NaN
 
 打开 [jsconsole](https://jsconsole.com/) 并输入以下内容：
 
-```
+```javascript
 a = "This is a string";
 a.length;
 a[2];
@@ -1562,7 +1536,7 @@ a.toUpperCase();
 
 检查你的输出是否类似于：
 
-```
+```text
 16
 "i"
 ["This", "is", "a", "string"]
@@ -1573,21 +1547,21 @@ a.toUpperCase();
 
 JavaScript 有一种数字类型用于表示数字。可以表示整数（整数）和小数：
 
-```
+```javascript
 let a = 123;
 let b = 123.456;
 ```
 
 数学运算符 `+`（加法）、`-`（减法）、`*`（乘法）和 `/`（除法）可以应用于数字：
 
-```
+```javascript
 let c = 123 + 456;
 let d = 3 * 123;
 ```
 
 可以使用括号来强制优先级：
 
-```
+```javascript
 (10 + 20) * 2;  // 60
 10 + (20 * 2);  // 50
 ```
@@ -1596,7 +1570,7 @@ let d = 3 * 123;
 
 以下示例使用一个值为 `123.456` 的变量 `n`：
 
-```
+```javascript
 let n = 123.456;
 ```
 
@@ -1604,7 +1578,7 @@ let n = 123.456;
 
 `round` 返回最接近的整数，`floor` 向下舍入，`ceil` 向上舍入：
 
-```
+```javascript
 Math.round(n);  // 123
 Math.floor(n);  // 123
 Math.ceil(n);   // 124
@@ -1612,13 +1586,13 @@ Math.ceil(n);   // 124
 
 你可以使用 `toString()` 获取数字的字符串表示：
 
-```
+```javascript
 n.toString();  // "123.456"
 ```
 
 你可以使用 `Math.sqrt()` 获取数字的平方根：
 
-```
+```javascript
 Math.sqrt(100);  // 10
 ```
 
@@ -1626,7 +1600,7 @@ Math.sqrt(100);  // 10
 
 打开 [jsconsole](https://jsconsole.com/) 并输入以下内容：
 
-```
+```javascript
 let n = 123.456;
 Math.round(n);
 n.toString();
@@ -1635,7 +1609,7 @@ Math.sqrt(100);
 
 你的输出值应为：
 
-```
+```text
 123
 "123.456"
 10
@@ -1645,7 +1619,7 @@ Math.sqrt(100);
 
 布尔类型可以有两个值：`true` 和 `false`：
 
-```
+```javascript
 var learningCSS = true;
 var learningJavaScript = true;
 var learningPython = false;
@@ -1655,9 +1629,9 @@ var learningPython = false;
 
 ## 6.3 JavaScript 数组
 
-数组表示**值的列表**。每个值可以是任何类型，甚至可以是数组！数组是处理数据时使用的基本数据结构之一。（你将在对象部分看到，通常使用数组来表示数据表。）数组由**方括号**表示，每个值之间用**逗号**分隔。以下是 4 个不同的数组：
+数组表示值的列表。每个值可以是任何类型，甚至可以是数组！数组是处理数据时使用的基本数据结构之一。（你将在对象部分看到，通常使用数组来表示数据表。）数组由方括号表示，每个值之间用逗号分隔。以下是 4 个不同的数组：
 
-```
+```javascript
 [ 10, 20, 30 ]                      // 数字数组
 [ "An", "array", "of", "strings" ]  // 字符串数组
 [ [ 10, 20 ], [ 30, 40 ] ]          // 数组的数组
@@ -1668,25 +1642,23 @@ var learningPython = false;
 
 你可以通过在数组后面写 `[i]` 来访问数组中的第 `i` 项：
 
-```
+```javascript
 let a = [ "An", "array", "of", "strings" ];
 a[0];  // "An"
 a[2];  // "of"
 ```
 
-
-
-
-
 数组的索引从 `0` 开始。因此，数组中的第一个元素通过 `[0]` 引用。对于嵌套数组，例如：
 
-```
-let a = [ [ 10, 20 ], [ 30, 40 ] ];
+
+
+```javascript
+let a = [[10, 20], [30, 40]];
 ```
 
 你可以通过串联方括号来访问这些值：
 
-```
+```javascript
 a[0];     // [10, 20]
 a[0][1];  // 20
 ```
@@ -1699,15 +1671,15 @@ a[0][1];  // 20
 
 在下表中，使用了以下变量：
 
-```
-let a = [ 10, 20, 30 ];
-let b = [ 40, 50, 60 ];
-let c = [ "An", "array", "with", "text" ];
+```javascript
+let a = [10, 20, 30];
+let b = [40, 50, 60];
+let c = ["An", "array", "with", "text"];
 ```
 
 有用的数组操作包括：
 
-| **操作** | **示例** | **结果** |
+| 操作 | 示例 | 结果 |
 | --- | --- | --- |
 | 获取数组长度 | `a.length` | `3` |
 | 对数组排序 | `c.sort()` | `c` 现在为 `["An", "array", "text", "with"]` |
@@ -1722,7 +1694,7 @@ let c = [ "An", "array", "with", "text" ];
 
 对数字数组进行排序时要小心。以下示例：
 
-```
+```javascript
 let d = [11, 10, 9];
 d.sort();
 ```
@@ -1739,7 +1711,7 @@ JavaScript 的另一个怪癖是，上述某些操作会改变原始数组，而
 
 打开 [jsconsole](https://jsconsole.com/) 并输入以下内容：
 
-```
+```javascript
 let a = [10, 20, 30];
 a.length;
 a.reverse();
@@ -1755,28 +1727,28 @@ a;
 
 JavaScript 对象是**名称-值对**的**（无序）列表**。例如：
 
-```
+```javascript
 let carrot = {
   foodGroup: "vegetable",
   color: "orange"
-}
+};
 ```
 
 每个名称-值对称为一个**属性**。每个属性都有一个**名称**（例如 `foodGroup`、`color`、`id`、`height`、`data`）和一个**值**。值可以是任何类型（包括数组或对象）。你可以使用点号后跟属性名来访问属性：
 
-```
+```javascript
 carrot.foodGroup;  // "vegetable"
 ```
 
 对象的属性也可以通过用方括号括起来的属性名（表示为字符串）来访问：
 
-```
+```javascript
 carrot["foodGroup"];  // "vegetable"
 ```
 
 方括号表示法的优点是可以使用变量作为属性名：
 
-```
+```javascript
 let day = "Tuesday";
 
 let data = {
@@ -1792,7 +1764,7 @@ data[day];  // 30
 
 属性值可以是任何类型。这是一个包含数组的对象：
 
-```
+```javascript
 let data = {
   Monday: [10, 30, 20],
   Tuesday: [50, 20, 30],
@@ -1802,12 +1774,12 @@ let data = {
 };
 
 data.Tuesday;    // [50, 20, 30]
-data.Tuesday[1]  // 20
+data.Tuesday[1]; // 20
 ```
 
 你也可以有对象数组。这是数据可视化中**非常**常见的结构：
 
-```
+```javascript
 let data = [
   {
     name: "Spain",
@@ -1827,7 +1799,7 @@ data[1].capital;  // "Beijing"
 
 给定一个对象，例如：
 
-```
+```javascript
 let vegetable = {
   name: "carrot",
   color: "orange"
@@ -1836,7 +1808,7 @@ let vegetable = {
 
 你可以使用以下表示法设置属性：
 
-```
+```javascript
 vegetable.name = "broccoli";
 vegetable.color = "green";
 vegetable.name;  // "broccoli"
@@ -1844,13 +1816,13 @@ vegetable.name;  // "broccoli"
 
 即使属性不存在，你也可以使用上述表示法：
 
-```
+```javascript
 vegetable.family = "Brassica";
 ```
 
 要获取对象属性名称的列表，请使用：
 
-```
+```javascript
 Object.keys(vegetable);  // ["name", "color", "family"]
 ```
 
@@ -1860,37 +1832,37 @@ Object.keys(vegetable);  // ["name", "color", "family"]
 
 打开 [jsconsole](https://jsconsole.com/) 并创建以下对象：
 
-```
+```javascript
 let carrot = {
   foodGroup: "vegetable",
   color: "orange"
-}
+};
 ```
 
-使用 `shift` + `return` 而不是仅按 `return` 来在单个语句中插入新行。或者点击 [此处](https://jsconsole.com/?let%20carrot%20%3D%20%7B%0A%20%20foodGroup%3A%20%22vegetable%22%2C%0A%20%20color%3A%20%22orange%22%0A%7D) 打开预填充的控制台。
+使用 `shift` + `return` 而不是仅按 `return` 来在单个语句中插入新行。或者点击[此处](https://jsconsole.com/?let%20carrot%20%3D%20%7B%0A%20%20foodGroup%3A%20%22vegetable%22%2C%0A%20%20color%3A%20%22orange%22%0A%7D)打开预填充的控制台。
 
 输入以下内容：
 
-```
+```javascript
 carrot.color;
 ```
 
 检查是否返回字符串 `"orange"`。现在通过输入以下内容将颜色更改为 `purple`：
 
-```
+```javascript
 carrot.color = "purple";
 ```
 
 通过输入以下内容检查颜色是否已更改：
 
-```
+```javascript
 carrot.color;
 ```
 
 这应该输出 `"purple"`。你也可以通过输入以下内容查看对象：
 
-```
-carrot
+```javascript
+carrot;
 ```
 
 现在向对象添加一个名为 `price` 的新属性，值为 `15`，并检查它是否已添加。
@@ -1903,26 +1875,26 @@ JavaScript 运算符接受一个或两个值，并计算出一个新值。
 
 在下表中，定义了以下变量：
 
-```
+```javascript
 let a = 1;
 let b = 2;
 ```
 
 最常见的运算符有：
 
-| **运算符** | **描述** | **示例** | **计算结果** |
+| 运算符 | 描述 | 示例 | 计算结果 |
 | --- | --- | --- | --- |
-| `+` | 将两个数字相加或连接两个字符串 | `1 + 2`, `"abc" + "def"`, `a + b` | `3`, `"abcdef"`, `3` |
+| `+` | 将两个数字相加或连接两个字符串 | `1 + 2`、`"abc" + "def"`、`a + b` | `3`、`"abcdef"`、`3` |
 | `-` | 两个数字相减 | `3 - 2` | `1` |
 | `*` | 两个数字相乘 | `2 * 8` | `16` |
 | `/` | 两个数字相除 | `10 / 5` | `2` |
 | `%` | 计算除法的余数 | `11 / 5` | `1` |
 | `!` | 反转布尔值 | `!true` | `false` |
-| `>`, `>=`, `<`, `<=` | 大于、大于等于、小于、小于等于 | `5 < 6`, `5 < 5`, `5 <= 5`, `"a" > "b"`, `"abc" < "def"`, `a > b` | `true`, `false`, `true`, `false`, `true`, `false` |
-| `===` | 等于 | `10 === 10`, `"dogs" === "cats"`, `a === b` | `true`, `false`, `false` |
-| `!==` | 不等于 | `10 !== 10`, `"dogs" !== "cats"` | `false`, `true` |
+| `>`、`>=`、`<`、`<=` | 大于、大于等于、小于、小于等于 | `5 < 6`、`5 < 5`、`5 <= 5`、`"a" > "b"`、`"abc" < "def"`、`a > b` | `true`、`false`、`true`、`false`、`true`、`false` |
+| `===` | 等于 | `10 === 10`、`"dogs" === "cats"`、`a === b` | `true`、`false`、`false` |
+| `!==` | 不等于 | `10 !== 10`、`"dogs" !== "cats"` | `false`、`true` |
 | `&&` | 逻辑与（如果两个表达式都为 `true`，则结果为 `true`） | `2 > 1 && 3 > 2` | `true` |
-| `\&#124;` | 逻辑或（如果任一表达式为 `true`，则结果为 `true`） | `1 > 2 \&#124; 2 > 3` | `false` |
+| `\|` | 逻辑或（如果任一表达式为 `true`，则结果为 `true`） | `1 > 2 \| 2 > 3` | `false` |
 
 注意，相等运算符是三个等号 `===`。此运算符检查两个表达式是否完全相等。还有一个类似的运算符 `==`，它不那么严格。通常我建议使用 `===`。
 
@@ -1930,7 +1902,7 @@ let b = 2;
 
 有一个称为三元运算符的运算符值得特别提及。三元运算符根据第三个表达式的值来计算两个表达式之一：
 
-```
+```javascript
 let a = 10;
 let b = 20;
 let result = a > b ? "a is bigger than b" : "a is not bigger than b";
@@ -1943,7 +1915,7 @@ result;     // 输出 "a is not bigger than b"
 
 递增 `++` 运算符接受一个数值变量并将其递增：
 
-```
+```javascript
 let a = 10;
 a++;
 a;  // 11
@@ -1951,7 +1923,7 @@ a;  // 11
 
 它基本上是以下内容的简写：
 
-```
+```javascript
 a = a + 1;
 ```
 
@@ -1959,34 +1931,26 @@ a = a + 1;
 
 ### 6.5.3 练习
 
-
-
-
-
 打开 [jsconsole](https://jsconsole.com/) 并定义两个变量：
 
-```
+```javascript
 let a = 10;
 let b = 20;
 ```
 
 编写表达式以完成以下操作：
 
-1.  将 `a` 和 `b` 相加。
-
-2.  将 `a` 和 `b` 相乘。
-
-3.  检查 `a` 是否大于 `b`。
-
-4.  检查 `a` 是否等于 `b`。
-
-5.  检查 `a` 是否等于 `10`。
+1. 将 `a` 和 `b` 相加。
+2. 将 `a` 和 `b` 相乘。
+3. 检查 `a` 是否大于 `b`。
+4. 检查 `a` 是否等于 `b`。
+5. 检查 `a` 是否等于 `10`。
 
 #### 6.5.3.1 答案
 
 你的表达式应类似于：
 
-```
+```javascript
 a + b;     // 30
 a * b;     // 200
 a > b;     // false
@@ -2002,7 +1966,7 @@ a === 10;  // true
 
 最广为人知的条件语句是 `if`。其形式如下：
 
-```
+```javascript
 let answer;
 
 if (a > b) {
@@ -2014,7 +1978,7 @@ if (a > b) {
 
 你可以添加一个 `else` 块，当 `if` 表达式为 `false` 时执行：
 
-```
+```javascript
 let answer;
 
 if (a > b) {
@@ -2026,7 +1990,7 @@ if (a > b) {
 
 你还可以将多个 `else` 和 `if` 语句串联起来：
 
-```
+```javascript
 let food = {
   name: "banana",
   type: "fruit"
@@ -2047,7 +2011,7 @@ if (food.type === "fruit") {
 
 `switch` 语句根据表达式的值执行不同的代码块：
 
-```
+```javascript
 let food = {
   name: "banana",
   type: "fruit"
@@ -2055,7 +2019,7 @@ let food = {
 
 let answer;
 
-switch(food.type) {
+switch (food.type) {
   case "fruit":
     answer = "It's a fruit!";
     break;
@@ -2072,13 +2036,13 @@ switch(food.type) {
 
 你也可以将多个 `case` 语句组合在一起：
 
-```
+```javascript
 var food = {
   name: "banana",
   type: "fruit"
 };
 
-switch(food.type) {
+switch (food.type) {
   case "fruit":
   case "vegetable":
     alert("It's a fruit or a vegetable!");
@@ -2093,7 +2057,7 @@ switch(food.type) {
 
 函数允许你将代码封装起来，以便在代码中的任何位置多次调用。例如，假设你需要将一些数字加倍。你可以这样做：
 
-```
+```javascript
 let a = 10;
 let b = 20;
 let doubleA = a * 2;
@@ -2102,7 +2066,7 @@ let doubleB = b * 2;
 
 如果操作比将数字加倍更复杂，这种方法会变得难以管理。另一种方法是定义一个函数，该函数接收一个数字并返回该数字的两倍：
 
-```
+```javascript
 function double(x) {
   return 2 * x;
 }
@@ -2110,7 +2074,7 @@ function double(x) {
 
 现在我们可以这样做：
 
-```
+```javascript
 let a = 10;
 let b = 20;
 let doubleA = double(a);
@@ -2119,25 +2083,23 @@ let doubleB = double(b);
 
 这种方法有几个优点：
 
-*   代码的意图更清晰（即更具表现力）
-
-*   如果重复的操作发生变化，你只需更新一处代码
-
-*   该函数可以在其他地方重用
+- 代码的意图更清晰（即更具表现力）。
+- 如果重复的操作发生变化，你只需更新一处代码。
+- 该函数可以在其他地方重用。
 
 ### 6.7.1 定义函数
 
 函数允许代码被重用。它们使用 `function` 关键字定义：
 
-```
+```javascript
 function sayHello() {
-  console.log('Hello');  // console.log 允许你将值打印到控制台
+  console.log("Hello");  // console.log 允许你将值打印到控制台
 }
 ```
 
 函数通常有一个名称。在上面的例子中，函数名是 `sayHello`。你在函数名后面放置一对括号。函数体（调用函数时执行的代码）放在花括号之间。要调用函数，你写出函数名后跟括号：
 
-```
+```javascript
 sayHello();
 ```
 
@@ -2145,7 +2107,7 @@ sayHello();
 
 函数可以返回一个值。下面是一个返回字符串的函数：
 
-```
+```javascript
 function getName() {
   return "Paris";
 }
@@ -2153,23 +2115,23 @@ function getName() {
 
 如果你调用 `getName`，它会运行函数的代码并返回 `return` 关键字后的表达式：
 
-```
+```javascript
 getName();  // "Paris"
 ```
 
 函数的返回值是一个表达式，因此你可以将其赋值给一个变量：
 
-```
+```javascript
 var name = getName();
 name;  // "Paris"
 ```
 
 并在 `if` 语句中使用它：
 
-```
+```javascript
 let message;
 
-if(getName() === "Paris") {
+if (getName() === "Paris") {
   message = "You're in France!";
 }
 
@@ -2178,9 +2140,11 @@ message;  // "You're in France!"
 
 ### 6.7.3 函数参数
 
+
+
 你可以定义传递给函数的参数列表。例如，让我们定义一个将名字和姓氏连接起来的函数（中间加空格）：
 
-```
+```javascript
 function joinNames(firstName, lastName) {
   var joinedName = firstName + " " + lastName;
 
@@ -2188,20 +2152,20 @@ function joinNames(firstName, lastName) {
 }
 ```
 
-这个函数在其圆括号内有一个**参数**列表（`firstName` 和 `lastName`）。它们在函数体内充当变量。当函数被调用时，一个**实参**列表被放在圆括号内：
+这个函数在其圆括号内有一个参数列表（`firstName` 和 `lastName`）。它们在函数体内充当变量。当函数被调用时，一个实参列表被放在圆括号内：
 
-```
+```javascript
 var fullName = joinNames("Ana", "Matronic");
 fullName;  // "Ana Matronic"
 ```
 
-当 `joinNames` 函数执行时，每个实参被赋值给函数的参数。在上面的例子中，当函数执行时，`firstName` 是 `Ana`，`lastName` 是 `Matronic`。
+当`joinNames`函数执行时，每个实参被赋值给函数的参数。在上面的例子中，当函数执行时，`firstName`是`Ana`，`lastName`是`Matronic`。
 
 ### 6.7.4 练习
 
-创建一个名为 `add10` 的函数，该函数将一个数字加上 `10`。通过传入实参 `50` 调用该函数来测试：
+创建一个名为`add10`的函数，该函数将一个数字加上`10`。通过传入实参`50`调用该函数来测试：
 
-```
+```javascript
 add10(50);
 ```
 
@@ -2211,37 +2175,33 @@ add10(50);
 
 本节涵盖以下迭代类型：
 
-*   `for` 循环
-
-*   `forEach`
-
-*   `map`
+- `for`循环
+- `forEach`
+- `map`
 
 这三种迭代类型涵盖了可视化数据时的大多数情况。
 
-### 6.8.1 `for` 循环
+### 6.8.1 `for`循环
 
-`for` 循环允许你多次执行一段代码：
+`for`循环允许你多次执行一段代码：
 
-```
+```javascript
 for (let i = 0; i < 3; i++) {
   console.log(i);
 }
 ```
 
-`for` 语句包含三个表达式：
+`for`语句包含三个表达式：
 
-*   第一个是初始化表达式，通常将计数器变量初始化为零。
+- 第一个是初始化表达式，通常将计数器变量初始化为零。
+- 第二个是在每次迭代前求值的表达式。如果求值为`true`，则循环继续；如果为`false`，则循环停止。
+- 第三个表达式在每次迭代后求值。通常计数器会递增。
 
-*   第二个是在每次迭代前求值的表达式。如果求值为 `true`，则循环继续；如果为 `false`，则循环停止。
+在上面的代码中，`for`循环体（`console.log(i)`）在`i`小于 3 时执行。输出将是三个数字：0、1 和 2。
 
-*   第三个表达式在每次迭代后求值。通常计数器会递增。
+当你明确知道要迭代多少次时，`for`循环非常有用。例如，如果你想创建一个包含 5 个元素的数组，可以这样做：
 
-在上面的代码中，`for` 循环体（`console.log(i)`）在 `i` 小于 3 时执行。输出将是三个数字：0、1 和 2。
-
-当你明确知道要迭代多少次时，`for` 循环非常有用。例如，如果你想创建一个包含 5 个元素的数组，可以这样做：
-
-```
+```javascript
 let numItems = 5;
 let data = [];
 
@@ -2250,17 +2210,17 @@ for (let i = 0; i < numItems; i++) {
 }
 ```
 
-循环结束后，`data` 为：
+循环结束后，`data`为：
 
-```
+```javascript
 ["Item-0", "Item-1", "Item-2", "Item-3", "Item-4"]
 ```
 
-### 6.8.2 forEach
+### 6.8.2 `forEach`
 
-给定一个数组，`forEach` 会遍历数组的每个元素。你向 `forEach` 提供一个函数，该函数会为每个数组元素调用一次。每次调用函数时，数组元素会被传入函数：
+给定一个数组，`forEach`会遍历数组的每个元素。你向`forEach`提供一个函数，该函数会为每个数组元素调用一次。每次调用函数时，数组元素会被传入函数：
 
-```
+```javascript
 let data = [10, 50, 40, 30, 20];
 
 data.forEach(function(d) {
@@ -2268,17 +2228,13 @@ data.forEach(function(d) {
 });
 ```
 
-在这个例子中，函数为每个数组元素调用一次。第一次调用时，数组的第一个元素 `10` 被传入函数。第二次调用时，数组的第二个元素 `20` 被传入，依此类推。在这个实例中，函数总共被调用了五次。
+在这个例子中，函数为每个数组元素调用一次。第一次调用时，数组的第一个元素`10`被传入函数。第二次调用时，数组的第二个元素`20`被传入，依此类推。在这个实例中，函数总共被调用了五次。
 
-
-
-
-
-请注意，该函数没有名称。这是一个 `匿名函数` 的示例。这些函数是“即时”定义的，通常不会在代码的其他地方被调用。它们将在 JavaScript 函数（进阶）章节中介绍。
+请注意，该函数没有名称。这是一个`匿名函数`的示例。这些函数是“即时”定义的，通常不会在代码的其他地方被调用。它们将在 JavaScript 函数（进阶）章节中介绍。
 
 你可以使用命名函数重写上述代码：
 
-```
+```javascript
 let data = [10, 50, 40, 30, 20];
 
 function output(message) {
@@ -2290,9 +2246,9 @@ data.forEach(output);
 
 这样写更冗长，但确实允许函数在其他地方被复用。
 
-在遍历数组时，你也可以使用 `for` 循环：
+在遍历数组时，你也可以使用`for`循环：
 
-```
+```javascript
 var data = [10, 50, 40, 30, 20];
 
 for (let i = 0; i < data.length; i++) {
@@ -2300,15 +2256,15 @@ for (let i = 0; i < data.length; i++) {
 }
 ```
 
-不过，如果可能的话，我建议使用 `forEach`，因为它更具表现力。（“表现力”指的是代码的意图对其他开发者来说更清晰。）
+不过，如果可能的话，我建议使用`forEach`，因为它更具表现力。（“表现力”指的是代码的意图对其他开发者来说更清晰。）
 
-### 6.8.3 map
+### 6.8.3 `map`
 
-`map` 语句接收一个数组，并返回一个长度相同的新数组。新数组的每个元素都由原始数组中对应的元素计算得出。一个函数决定了新值如何计算。
+`map`语句接收一个数组，并返回一个长度相同的新数组。新数组的每个元素都由原始数组中对应的元素计算得出。一个函数决定了新值如何计算。
 
-下面是一个示例，其中 `map` 用于遍历 `data`，并输出一个新数组，其中每个元素都翻倍：
+下面是一个示例，其中`map`用于遍历`data`，并输出一个新数组，其中每个元素都翻倍：
 
-```
+```javascript
 let data = [10, 50, 40, 30, 20];
 
 let doubled = data.map(function(d) {
@@ -2318,11 +2274,11 @@ let doubled = data.map(function(d) {
 doubled;  // [20, 100, 80, 60, 40]
 ```
 
-对于 `data` 中的每个元素，都会调用该函数。第一个元素 `10` 被传入函数，函数返回 `10 * 2`，这个值会被赋给新数组的第一个元素。第二次调用时传入 `50`，返回 `50 * 2` 并添加到新数组，以此类推。
+对于`data`中的每个元素，都会调用该函数。第一个元素`10`被传入函数，函数返回`10 * 2`，这个值会被赋给新数组的第一个元素。第二次调用时传入`50`，返回`50 * 2`并添加到新数组，以此类推。
 
-`map` 在处理数据时非常常见。例如，给定以下数据：
+`map`在处理数据时非常常见。例如，给定以下数据：
 
-```
+```javascript
 let data = [
   {
     name: "Anna",
@@ -2335,11 +2291,11 @@ let data = [
 ];
 ```
 
-我们可能希望将 `name` 属性转换为大写，并将 `value` 属性从字符串转换为数字。
+我们可能希望将`name`属性转换为大写，并将`value`属性从字符串转换为数字。
 
-首先编写一个函数，该函数接收一个对象（包含 `name` 和 `value` 属性），并返回一个包含两个转换后属性的新对象：
+首先编写一个函数，该函数接收一个对象（包含`name`和`value`属性），并返回一个包含两个转换后属性的新对象：
 
-```
+```javascript
 function convert(d) {
   let newObject = {
     name: d.name.toUpperCase(),
@@ -2350,15 +2306,15 @@ function convert(d) {
 }
 ```
 
-现在使用 `map` 创建一个新数组：
+现在使用`map`创建一个新数组：
 
-```
+```javascript
 let converted = data.map(convert);
 ```
 
-`converted` 将如下所示：
+`converted`将如下所示：
 
-```
+```javascript
 [
   {
     name: "ANNA",
@@ -2373,7 +2329,7 @@ let converted = data.map(convert);
 
 上面的示例可以使用匿名函数重写：
 
-```
+```javascript
 let converted = data.map(function(d) {
   let newObject = {
     name: d.name.toUpperCase(),
@@ -2388,31 +2344,30 @@ let converted = data.map(function(d) {
 
 打开 [jsconsole](https://jsconsole.com/) 并创建一个数字数组：
 
-```
+```javascript
 let a = [10, 20, 30, 40, 50];
 ```
 
 尝试以下操作：
 
-1.  使用 `forEach` 遍历数组，输出每个数字的平方。（使用 `console.log` 输出数字。）
+1. 使用`forEach`遍历数组，输出每个数字的平方。（使用`console.log`输出数字。）
+2. 使用`map`创建一个数组，其中包含`a`中每个元素的平方。
 
-2.  使用 `map` 创建一个数组，其中包含 `a` 中每个元素的平方。
-
-请记住，在 jsconsole 中，使用 `shift` + `return` 可以在单个语句中创建新行。
+请记住，在 jsconsole 中，使用`shift` + `return`可以在单个语句中创建新行。
 
 #### 6.8.4.1 答案
 
-使用 `forEach` 输出每个数字的平方：
+使用`forEach`输出每个数字的平方：
 
-```
+```javascript
 a.forEach(function(d) {
   console.log(d * d);
 });
 ```
 
-使用 `map` 创建一个包含 `a` 中每个元素平方的数组：
+使用`map`创建一个包含`a`中每个元素平方的数组：
 
-```
+```javascript
 let squared = a.map(function(d) {
   return d * d;
 });
@@ -2426,15 +2381,15 @@ squared;     // [100, 400, 900, 1600, 2500]
 
 函数通常有一个名称：
 
-```
+```javascript
 function addTen(x) {
   return x + 10;
 }
 ```
 
-这使得它们可以在程序的任何地方被调用。然而，在使用 `forEach` 或 `map`（参见迭代章节）时，使用 `匿名函数` 通常更方便。这是一个没有名称的函数，作为 `forEach` 或 `map` 的第一个参数定义。因此，与其这样写：
+这使得它们可以在程序的任何地方被调用。然而，在使用`forEach`或`map`（参见迭代章节）时，使用`匿名函数`通常更方便。这是一个没有名称的函数，作为`forEach`或`map`的第一个参数定义。因此，与其这样写：
 
-```
+```javascript
 let data = [10, 50, 40, 30, 20];
 
 function output(message) {
@@ -2446,7 +2401,7 @@ data.forEach(output);
 
 你可以这样写：
 
-```
+```javascript
 let data = [10, 50, 40, 30, 20];
 
 data.forEach(function(message) {
@@ -2458,9 +2413,9 @@ data.forEach(function(message) {
 
 ### 6.9.2 纯函数
 
-纯函数是没有 `副作用` 的函数。副作用是指函数外部发生的变化。例如：
+纯函数是没有`副作用`的函数。副作用是指函数外部发生的变化。例如：
 
-```
+```javascript
 let outside = 10;
 
 function doSomething() {
@@ -2468,9 +2423,9 @@ function doSomething() {
 }
 ```
 
-调用 `doSomething` 会导致变量 `outside` 发生变化。这被认为是一种副作用。纯函数（没有副作用）的示例如下：
+调用`doSomething`会导致变量`outside`发生变化。这被认为是一种副作用。纯函数（没有副作用）的示例如下：
 
-```
+```javascript
 let outside = 10;
 
 function doSomething() {
@@ -2486,7 +2441,7 @@ outside = doSomething();
 
 JavaScript 函数的行为类似于对象。这意味着你可以对函数执行任何可以对对象执行的操作。例如，你可以将函数赋值给一个变量：
 
-```
+```javascript
 let getANumber = function() {
   return 10;
 }
@@ -2496,7 +2451,7 @@ getANumber();
 
 上面的代码等同于：
 
-```
+```javascript
 function getANumber() {
   return 10;
 }
@@ -2506,7 +2461,7 @@ getANumber();
 
 你可以将函数添加到对象中：
 
-```
+```javascript
 let myFunctions = {
   add: function(a, b) {
     return a + b;
@@ -2524,7 +2479,7 @@ myFunctions.subtract(20, 10);  // 10
 
 你也可以将函数作为参数传入其他函数：
 
-```
+```javascript
 function add(a, b) {
   return a + b;
 }
@@ -2543,17 +2498,15 @@ getValue(10, 20, multiply);     // 200
 
 这里我们定义了三个函数：
 
-*   `add` 接收两个数字并返回它们的和
+- `add`接收两个数字并返回它们的和
+- `multiply`接收两个数字并返回它们的乘积
+- `getValue`接收两个数字和一个函数
 
-*   `multiply` 接收两个数字并返回它们的乘积
+当第一次调用`getValue`时，`add`函数被传入并赋值给`operation`参数。因此，当`operation`被调用时（在`getValue`内部），`add`被执行。
 
-*   `getValue` 接收两个数字和一个函数
+在第二次调用`getValue`时，`multiply`函数被传入，这意味着`operation`的值是`multiply`。因此，当`operation`被调用时，`multiply`被执行。
 
-当第一次调用 `getValue` 时，`add` 函数被传入并赋值给 `operation` 参数。因此，当 `operation` 被调用时（在 `getValue` 内部），`add` 被执行。
-
-在第二次调用 `getValue` 时，`multiply` 函数被传入，这意味着 `operation` 的值是 `multiply`。因此，当 `operation` 被调用时，`multiply` 被执行。
-
-导航到 [`codepen.io/createwithdata/pen/abvJmPY`](https://codepen.io/createwithdata/pen/abvJmPY) 在 CodePen 中查看此示例
+导航到 [`codepen.io/createwithdata/pen/abvJmPY`](https://codepen.io/createwithdata/pen/abvJmPY) 在 CodePen 中查看此示例。
 
 花点时间理解这个示例。这是相当高级的 JavaScript，但在使用 D3 时，函数经常被传入其他函数。
 
@@ -2567,14 +2520,9 @@ getValue(10, 20, multiply);     // 200
 
 Web 开发所需的工具包括：
 
-*   **代码编辑器**
-
-*   **Web 浏览器**
-
-*   **Web 服务器**（如果你不加载数据，则不是那么重要）
-
-
-
+- **代码编辑器**
+- **Web 浏览器**
+- **Web 服务器**（如果你不加载数据，则不是那么重要）
 
 你也可以在这个列表中添加一个**终端模拟器**。终端模拟器允许你通过文本命令与操作系统交互，例如 MacOS 上的“终端”和 Windows 上的“命令提示符”。即使没有终端模拟器，你也可以完成本书中的所有内容，因此本书不会涉及它们。如果你想了解更多，建议在网上搜索“命令行教程”。
 
@@ -2582,31 +2530,31 @@ Web 开发所需的工具包括：
 
 代码编辑器是一种桌面应用程序，允许你编辑 HTML、CSS 和 JavaScript 文件。你可以使用简单的应用程序，如 Windows 上的“记事本”和 Mac 上的“文本编辑”。重要的是这些编辑器要以纯文本模式工作，以免插入额外字符。不过，我推荐使用专门的代码编辑器，例如 [Brackets](http://brackets.io/) 或 [Visual Studio Code](https://code.visualstudio.com/)。这两款都是免费且跨平台的。使用专用代码编辑器的优势包括：
 
-*   你可以将应用程序视为一个项目，从而更轻松地打开和导航
-*   语法高亮（代码根据其是关键字、变量等而显示不同颜色）
-*   众多插件（包括 Web 服务器！）让你的编码生活更轻松
+- 你可以将应用程序视为一个项目，从而更轻松地打开和导航
+- 语法高亮（代码根据其是关键字、变量等而显示不同颜色）
+- 众多插件（包括 Web 服务器！）让你的编码生活更轻松
 
 ### 7.1.2 网页浏览器
 
-建议使用现代网页浏览器进行 Web 开发，例如 Chrome、Firefox、Safari 或 Edge。《用数据创造》系列书籍假定你使用的是 **Chrome**。无论你选择哪种浏览器，大部分内容都适用，但如果使用调试工具，可能会存在差异，因为这些工具因浏览器而异。
+建议使用现代网页浏览器进行 Web 开发，例如 Chrome、Firefox、Safari 或 Edge。《用数据创造》系列书籍假定你使用的是**Chrome**。无论你选择哪种浏览器，大部分内容都适用，但如果使用调试工具，可能会存在差异，因为这些工具因浏览器而异。
 
 ### 7.1.3 网页服务器
 
-网页服务器通常根据网页浏览器的请求返回（或“提供”）HTML、CSS 和 JavaScript 文件。例如，如果你在浏览器中输入 `createwithdata.com`，浏览器会连接到一个网页服务器，并请求构成该网站的文件。网页服务器通过将请求的文件发送回浏览器来响应。
+网页服务器通常根据网页浏览器的请求返回（或“提供”）HTML、CSS 和 JavaScript 文件。例如，如果你在浏览器中输入`createwithdata.com`，浏览器会连接到一个网页服务器，并请求构成该网站的文件。网页服务器通过将请求的文件发送回浏览器来响应。
 
 当你在自己的计算机上创建网站时，不一定需要运行自己的网页服务器。（你可以在大多数网页浏览器中直接打开 HTML 文件。）但是，如果你需要从 Web 应用程序内部发出请求（这在基于 Web 的数据可视化中很常见），你将需要自己的本地网页服务器。（这是由于网页浏览器的安全限制。）如果你是一位经验丰富的开发者，并且能够轻松设置本地网页服务器，请随意跳过。
 
 运行本地网页服务器的选项（从最简单的开始）包括：
 
-*   Brackets 编辑器的内置网页服务器
-*   Visual Studio Code 插件
-*   Python、Ruby、PHP 或 Node 服务器
+- Brackets 编辑器的内置网页服务器
+- Visual Studio Code 插件
+- Python、Ruby、PHP 或 Node 服务器
 
 另一个我尚未亲自探索的选项是 [Servez](https://greggman.github.io/servez/)，它是一个基于 GUI 的简单网页服务器。
 
 #### 7.1.3.1 Brackets 网页服务器
 
-[Brackets](http://brackets.io/) 内置了网页服务器，因此这是目前最简单的选项。这个[视频](https://youtu.be/KJXdvaY9lTA?t=122)给出了很好的演示。如果你是代码编辑器新手，我推荐使用 Brackets。
+[Brackets](http://brackets.io/)内置了网页服务器，因此这是目前最简单的选项。这个[视频](https://youtu.be/KJXdvaY9lTA?t=122)给出了很好的演示。如果你是代码编辑器新手，我推荐使用 Brackets。
 
 #### 7.1.3.2 VS Code Live Server
 
@@ -2614,45 +2562,39 @@ Visual Studio Code 有一个名为 [Live Server](https://marketplace.visualstudi
 
 安装 Live Server：
 
-*   从菜单栏中选择“查看”，然后选择“命令面板...”
+- 从菜单栏中选择“查看”，然后选择“命令面板...”
 
-![](img/d717b39536c6d8db2b2de77247886680.png)
+![在 VS Code 中打开命令面板](img/d717b39536c6d8db2b2de77247886680.png)
 
-在 VS Code 中打开命令面板
+- 输入“extension”并选择“扩展：安装扩展”
 
-*   输入“extension”并选择“扩展：安装扩展”
+![选择“扩展：安装扩展”](img/758fc48409e013f521b425ce750d31e1.png)
 
-![](img/758fc48409e013f521b425ce750d31e1.png)
+- 在扩展搜索框中搜索“live server”（作者为 Ritwick Dey），然后点击“安装”
 
-选择“扩展：安装扩展”
+![搜索“live server”](img/a1d14e404fc8f56eec28c40e0dfd2567.png)
 
-*   在扩展搜索框中搜索“live server”（作者为 Ritwick Dey），然后点击“安装”
+- 打开包含你代码的目录
 
-![](img/a1d14e404fc8f56eec28c40e0dfd2567.png)
+![打开包含你代码的目录](img/a4466b2227af9203170369748abdee9f.png)
 
-搜索“live server”
+- 点击底部栏中的**Go Live**按钮
 
-*   打开包含你代码的目录
 
-![](img/a4466b2227af9203170369748abdee9f.png)
-
-打开包含你代码的目录
-
-*   点击底部栏中的 **Go Live** 按钮
 
 ![](img/7639d9be85c152e9a18293484e41967d.png)
 
-点击 Go Live 按钮
+点击`Go Live`按钮。
 
-你的网页浏览器应该会打开你的 Web 应用程序。如果没有，请打开网页浏览器并访问 `localhost:5500`。（如果“服务器已启动”消息中显示的不是 5500 而是其他端口号，请使用该端口号。）更详细的说明请参见[此处](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)。
+你的网页浏览器应该会打开你的 Web 应用程序。如果没有，请打开网页浏览器并访问`localhost:5500`。（如果“服务器已启动”消息中显示的不是 5500 而是其他端口号，请使用该端口号。）更详细的说明请参见[此处](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)。
 
 ![](img/e7600c7555f3ff521f83a1b460d49485.png)
 
-服务器已启动
+服务器已启动。
 
 #### 7.1.3.3 Python、Ruby、PHP、Node
 
-如果你是 Python、Ruby 或 PHP 开发者，可以使用该语言内置的网页服务器。这里有一些有用的说明[在此](https://gist.github.com/willurd/5720255)。MacOS 包含 Python 和 Ruby，因此如果你是 Mac 用户，可以使用其中之一。如果你是使用 Node 的 JavaScript 开发者，可以使用 [http-server](https://www.npmjs.com/package/http-server)。
+如果你是 Python、Ruby 或 PHP 开发者，可以使用该语言内置的网页服务器。这里有一些有用的说明[在此](https://gist.github.com/willurd/5720255)。MacOS 包含 Python 和 Ruby，因此如果你是 Mac 用户，可以使用其中之一。如果你是使用 Node 的 JavaScript 开发者，可以使用`http-server`。
 
 ## 7.2 示例设置
 
@@ -2660,22 +2602,22 @@ Visual Studio Code 有一个名为 [Live Server](https://marketplace.visualstudi
 
 步骤如下：
 
-*   **为你的项目创建一个目录**
-*   选择并安装一个**代码编辑器**
-*   创建一个简单的 **HTML** 文件
-*   启动并运行一个本地 **网页服务器**
-*   添加 **CSS** 和 **JavaScript** 文件
+- **为你的项目创建一个目录**
+- 选择并安装一个**代码编辑器**
+- 创建一个简单的 **HTML** 文件
+- 启动并运行一个本地 **网页服务器**
+- 添加 **CSS** 和 **JavaScript** 文件
 
 我们将使用 VS Code 及其 Live Server 扩展。如果你习惯使用其他编辑器和网页服务器，请随意使用。
 
 ### 7.2.1 创建项目目录
 
-使用文件资源管理器（Windows）或访达（Mac）创建一个将包含你项目的目录（或文件夹）。将其命名为 `my_website`（或类似名称）。如果你计划有多个项目，你可能希望将其放在另一个名为 `coding_projects`（或类似名称）的目录中。
+使用文件资源管理器（Windows）或访达（Mac）创建一个将包含你项目的目录（或文件夹）。将其命名为`my_website`（或类似名称）。如果你计划有多个项目，你可能希望将其放在另一个名为`coding_projects`（或类似名称）的目录中。
 
 ### 7.2.2 安装代码编辑器
 
-1. 从[此处](https://code.visualstudio.com/)下载 VS Code 并安装
-2. 运行 VS Code
+1. 从[此处](https://code.visualstudio.com/)下载 VS Code 并安装。
+2. 运行 VS Code。
 
 ### 7.2.3 创建一个最小的 HTML 文件
 
@@ -2683,7 +2625,7 @@ Visual Studio Code 有一个名为 [Live Server](https://marketplace.visualstudi
 
 以下代码是尽可能短且有效的 HTML 文档。它作为新网页的良好起点。将其复制并粘贴到你的新文档中。
 
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -2699,9 +2641,9 @@ Visual Studio Code 有一个名为 [Live Server](https://marketplace.visualstudi
 
 `index.html`
 
-通常你只需要更改标题（在 `<title>` 标签之间）和内容（在 `<body>` 标签之间）。
+通常你只需要更改标题（在`<title>`标签之间）和内容（在`<body>`标签之间）。
 
-从“文件”菜单中选择“保存”，导航到你的项目目录，将文件命名为 `index.html`，然后点击“保存”。（将文件命名为 `index.html` 很重要。）文件保存后，你应该会在侧边栏中看到 `index.html` 出现。
+从“文件”菜单中选择“保存”，导航到你的项目目录，将文件命名为`index.html`，然后点击“保存”。（将文件命名为`index.html`很重要。）文件保存后，你应该会在侧边栏中看到`index.html`出现。
 
 ### 7.2.4 安装 Live Server 扩展
 
@@ -2709,17 +2651,17 @@ Visual Studio Code 有一个名为 [Live Server](https://marketplace.visualstudi
 
 ### 7.2.5 启动服务器
 
-如果尚未操作，请从“文件”菜单中选择“打开文件夹...”，然后选择你的 `my_website` 目录。你应该会看到新目录出现在侧边栏中。现在点击底部栏中出现的 **Go Live** 按钮。
+如果尚未操作，请从“文件”菜单中选择“打开文件夹...”，然后选择你的`my_website`目录。你应该会看到新目录出现在侧边栏中。现在点击底部栏中出现的`Go Live`按钮。
 
 ![](img/8dc438bb3ddde54df5c5ca1458b88a29.png)
 
-在 VS Code 中点击 Go Live 按钮
+在 VS Code 中点击`Go Live`按钮。
 
-确保你的浏览器指向 `localhost:5500`（使用底部栏中显示的端口号）。
+确保你的浏览器指向`localhost:5500`（使用底部栏中显示的端口号）。
 
 ![](img/dee9aa4bc88e5e8d643c872b93f92954.png)
 
-服务器已启动消息（显示活动端口号）
+服务器已启动消息（显示活动端口号）。
 
 现在你的页面应该在网页浏览器中可见（它应该显示“你好！”）。尝试编辑你的 HTML 文件，保存它，然后刷新浏览器。你所做的更改应该可见。
 
@@ -2727,18 +2669,14 @@ Visual Studio Code 有一个名为 [Live Server](https://marketplace.visualstudi
 
 在本节中，你将向网页添加一个 CSS 文件和一个 JavaScript 文件。向网页添加文件通常有两个步骤：
 
-*   创建文件并保存（CSS 文件扩展名为 `.css`，JavaScript 文件扩展名为 `.js`）
-*   在 `index.html` 文件中包含该文件
+- 创建文件并保存（CSS 文件扩展名为`.css`，JavaScript 文件扩展名为`.js`）。
+- 在`index.html`文件中包含该文件。
 
 #### 7.2.6.1 添加 CSS 文件
 
-
-
-
-
 从**文件**菜单中选择**新建**，并将以下 CSS 代码添加到新文件中：
 
-```
+```css
 h1 {
   color: orange;
 }
@@ -2746,18 +2684,18 @@ h1 {
 
 `style.css`
 
-从**文件**菜单中选择**保存**，当对话框出现时，在你的项目目录中创建一个名为 `css` 的新目录。进入 `css` 目录，然后将新文件保存为 `style.css`。你的目标目录结构如下：
+从**文件**菜单中选择**保存**，当对话框出现时，在你的项目目录中创建一个名为`css`的新目录。进入`css`目录，然后将新文件保存为`style.css`。你的目标目录结构如下：
 
-```
+```text
 my_website
   css
     style.css
   index.html
 ```
 
-现在你需要在 `index.html` 中链接你的 CSS 文件。点击左侧边栏中的 `index.html` 开始编辑你的 HTML 文件。添加包含 `<link>` 标签的行（如下高亮所示）：
+现在你需要在`index.html`中链接你的 CSS 文件。点击左侧边栏中的`index.html`开始编辑你的 HTML 文件。添加包含`<link>`标签的行（如下高亮所示）：
 
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -2774,21 +2712,21 @@ my_website
 
 `index.html`
 
-保存 `index.html` 并检查你的浏览器（你可能需要刷新页面）。标题现在应该是**橙色**。
+保存`index.html`并检查你的浏览器（你可能需要刷新页面）。标题现在应该是**橙色**。
 
 #### 7.2.6.2 添加一个 JavaScript 文件
 
 从**文件**菜单中选择**新建**，并将以下 JavaScript 代码添加到新文件中：
 
-```
- alert("Hello!");
+```javascript
+alert("Hello!");
 ```
 
 `main.js`
 
-从**文件**菜单中选择**保存**，当对话框出现时，在你的项目目录中创建一个名为 `src` 的新目录。进入 `src` 目录，然后将新文件保存为 `main.js`。你的目标目录结构如下：
+从**文件**菜单中选择**保存**，当对话框出现时，在你的项目目录中创建一个名为`src`的新目录。进入`src`目录，然后将新文件保存为`main.js`。你的目标目录结构如下：
 
-```
+```text
 my_website
   css
     style.css
@@ -2797,9 +2735,9 @@ my_website
   index.html
 ```
 
-现在你需要在 `index.html` 中添加一个指向 JavaScript 文件的链接。点击左侧边栏中的 `index.html` 开始编辑你的 HTML 文件。添加包含 `<script>` 标签的行（如下高亮所示）：
+现在你需要在`index.html`中添加一个指向 JavaScript 文件的链接。点击左侧边栏中的`index.html`开始编辑你的 HTML 文件。添加包含`<script>`标签的行（如下高亮所示）：
 
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -2817,17 +2755,14 @@ my_website
 
 `index.html`
 
-保存 `index.html` 并检查你的浏览器（你可能需要刷新页面）。应该会弹出一个显示“Hello!”的提示框。
+保存`index.html`并检查你的浏览器（你可能需要刷新页面）。应该会弹出一个显示“Hello!”的提示框。
 
 ### 7.2.7 总结
 
 本节展示了如何设置一个包含以下组件的 Web 开发环境：
 
-*   一个代码编辑器
-
-*   一个 Web 浏览器
-
-*   一个本地 Web 服务器
+- 一个代码编辑器
+- 一个 Web 浏览器
+- 一个本地 Web 服务器
 
 你学习了如何创建一个由 HTML 文件、CSS 文件和 JavaScript 文件组成的简单网站。这是大多数 Web 应用程序和基于 Web 的数据可视化的基础。
-

@@ -1,89 +1,38 @@
+
 # 可维护的 JavaScript
 
-
-
-
-
-
 ![](img/b5952fb0eafff982c42c2013b569fa4e_0_0.png)
-
-
 
 在单人开发时，你可能对编写代码有自己的想法，但团队开发要求所有人使用相同的方法。通过书中的 JavaScript 实践——包括代码风格、编程技巧和自动化——你将学习如何编写团队成员可以轻松理解、适应和扩展的可维护代码。
 
 > “这本书是编写面向未来的 JavaScript 的不可或缺的指南，特别是在团队环境中。”
-—Ryan Grove
+>
+> —Ryan Grove
 
 作者 Nicholas Zakas 在担任 Yahoo! 前端首席负责人期间，在完成了从单兵黑客到团队协作者的蜕变后，总结了这套实践规范。他还包含了其他行业权威推荐的规则。使用这些技巧和技术，帮助你的团队摆脱个人偏好，并在更高水平上运行。
 
 > “Nicholas 成功地将他 10 多年的经验精华浓缩在 200 页易于阅读的内容。这是我希望每位开发者和计算机学生都能尽早阅读的书。无论你的经验水平如何，这本书的每一页都会让你成为一名更好的开发者，一个让人合作起来很愉快的开发者。”
-—Lea Verou
+>
+> —Lea Verou
 
 - 为你的团队建立特定的代码规范
-- 使用 ESLint 和 JHint 等工具让你的团队按正轨运行
+- 使用 `ESLint` 和 `JSHint` 等工具让你的团队按正轨运行
 - 采用风格指南（如基础格式化），帮助你的团队生成统一的代码
 - 应用多项编程实践来解决问题并提高代码质量
 - 使用各种工具创建一个自动化的 JavaScript 构建系统
-- 使用 YUI Test、Selenium Driver 等工具集成基于浏览器的 JavaScript 测试
+- 使用 `YUI Test`、`Selenium Driver` 等工具集成基于浏览器的 JavaScript 测试
 
 Nicholas C. Zakas 是一位前端顾问、作者和演讲师。他曾在 Yahoo! 工作了近五年，曾任 Yahoo! 首页的前端负责人，也是 YUI 库的贡献者。他是《High Performance JavaScript》（O'Reilly 出版）和《Professional JavaScript for Web Developers》（Wrox 出版）的作者。
 
-
-
-
 ![](img/b5952fb0eafff982c42c2013b569fa4e_1_0.png)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 136581
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 - 存储配置数据 93
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 # 引言
 
-Web 开发专业化是一段艰难的历程，因为我们的起点迥异。即使是那些进入 Yahoo! 等大公司的人，最初也都是独立摸索的。也许你曾是小公司里的“大人物”，可以随心所欲。当大公司开始利用这种未被发现的资源时，它将许多黑客带入了企业环境，在那里他们面临着各种。不再是战斗中的单兵士兵，所有这些自学、自驱动的人必须学会如何在团队环境中工作。
+Web 开发专业化是一段艰难的历程，因为我们的起点迥异。即使是那些进入 Yahoo! 等大公司的人，最初也都是独立摸索的。也许你曾是小公司里的“大人物”，可以随心所欲。当大公司开始利用这种未被发现的资源时，它将许多黑客带入了企业环境，在那里他们面临着各种挑战。不再是战斗中的单兵士兵，所有这些自学、自驱动的人必须学会如何在团队环境中工作。
 
 我学习 JavaScript 的方式就像 90 年代末的许多人一样：自学。因为那时资源非常匮乏。我像许多其他开发者一样，通过探索 Internet Explorer 和 Netscape Navigator 的复杂之处来学习。我不断实验、理论、再次实验，直到弄清楚它们是如何运作的。幸运的是，这种好奇心和勤奋转化成了我的第一工作。
 
@@ -91,23 +40,22 @@ Web 开发专业化是一段艰难的历程，因为我们的起点迥异。即�
 
 在那五年里，我精炼了我的技艺。我想出了许多符合自己工作流的方法。我不需要担心别人怎么看我，因为没有人有足够的知识来审查代码或修复我写的东西。
 
-在职业生涯的第六年，我换了工作，进入了一个要求每个人对项目各个方面做出贡献的团队。由于无法专注于 JavaScript 和 Web 开发，我发现自己大部分时间都在编写服务器端代码和 SQL 查询。与此同时，传统的后端开发人员也被要求编写代码。这段经历真的让我大开眼界：
-
+在职业生涯的第六年，我换了工作，进入了一个要求每个人对项目各个方面做出贡献的团队。由于无法专注于 JavaScript 和 Web 开发，我发现自己大部分时间都在编写服务器端代码和 SQL 查询。与此同时，传统的后端开发人员也被要求编写前端代码。这段经历真的让我大开眼界：
 
 我以前写代码的方式与团队中其他人的方式不同，这是一个问题。我很快意识到，为了在团队中发挥更大的效率，我必须开始像团队中其他成员那样写代码。2006 年当我加入 Yahoo! 时，我加入的第一个团队比我以前过的任何团队都要大得多。有大量东西需要学习。新技术和新工具每天都在向我介绍。我感到心不从心，并听之任命地花时间学习这个环境，并从同事那里尽可能地吸收知识。
 
-几个月后，我开始发现问题。我习惯了用不同的方式写代码，而这导致了 Bug 的产生。我的经理注意到这一点，某一天将我拉到一边说，他希望由我领导清理我们的开发工作。得此，我在前端团队工作的成功使我被选为 2008 年 Yahoo! 首页重设计的前端负责人。这项任务测试了我的组织能力和代码质量水平，因为我有两多点时间来完成它。
+几个月后，我开始发现问题。我习惯了用不同的方式写代码，而这导致了 Bug 的产生。我的经理注意到这一点，某一天将我拉到一边说，他希望由我领导清理我们的开发工作。得此，我在前端团队工作的成功使我被选为 2008 年 Yahoo! 首页重设计的前端负责人。这项任务测试了我的组织能力和代码质量水平，因为我只有两个月时间来完成它。
 
 开发者往往不理解的一个残酷事实是：我们大部分时间都花在维护代码上。打开文本编辑器从零开始编写代码的情况非常罕见。以可维护的方式编写代码，可以让你和其他人轻松地接上代码中断的地方。
 
-本书是 JavaScript 代码规范的汇与讨论。最流行的代码规范文档之一《Java 代码规范》（Code Conventions for Java）列出了代码规范之所以重要的以下原因：
+本书是 JavaScript 代码规范的汇编与讨论。最流行的代码规范文档之一《Java 代码规范》列出了代码规范之所以重要的以下原因：
 
 - 软件生命周期内 80% 的成本都花在了维护上。
 - 几乎没有任何软件是由原作者维护整个生命周期的。
 - 代码规范提高了软件的可读性，让工程师能够更快、更彻底地理解代码。
 - 如果你将源代码作为产品发布，你需要确保它像你创建的其他任何产品一样经过良好封装且保持整洁。
 
-这种推理在今天依然正确。书中讨论的规范都旨在帮助你和你的团队以最有效的方式编写 JavaScript。因为你正在读这本书，你可能工作在一个许多工程师编写同一份代码的环境中。成为团队的一员意味着要做出对你个人可能不是最好，但对整个团队最好的决策。这有时意味着要牺牲你的偏好、想法和自尊。你作为回报获得的是一个能够成就伟大事业的高效团队，我希望这本书能在这条道路上为你为你提供帮助。
+这种推理在今天依然正确。书中讨论的规范都旨在帮助你和你的团队以最有效的方式编写 JavaScript。因为你正在读这本书，你可能工作在一个许多工程师编写同一份代码的环境中。成为团队的一员意味着要做出对你个人可能不是最好，但对整个团队最好的决策。这有时意味着要牺牲你的偏好、想法和自尊。你作为回报获得的是一个能够成就伟大事业的高效团队，我希望这本书能在这条道路上为你提供帮助。
 
 ## 前言
 
@@ -115,32 +63,35 @@ Web 开发专业化是一段艰难的历程，因为我们的起点迥异。即�
 
 本书使用了以下排版规范：
 
-*斜体*（Italic）表示新术语、URL、电子邮件地址和文件扩展名。
+*斜体* 表示新术语、URL、电子邮件地址和文件扩展名。
 
-*等宽*（Constant width）用于程序列表，以及段落内引用程序元素，如变量或函数名、数据库、数据类型、环境变量和关键字。
+`等宽` 用于程序列表，以及段落内引用程序元素，如变量或函数名、数据库、数据类型、环境变量和关键字。
 
-*等宽粗体*（Constant width bold）显示用户应逐字输入的命令或其他文本。
+`等宽粗体` 显示用户应逐字输入的命令或其他文本。
 
-*等宽斜体*（Constant width italic）显示应替换为用户提供的值或由上下文决定的文本。
+`等宽斜体` 显示应替换为用户提供的值或由上下文决定的文本。
 
 ![](img/b5952fb0eafff82c42c2013569fa4e_14_0.png)
+
 此图标表示提示、建议或一般注释。
 
 ![](img/b5952fb0eafff82c42c2013569fa4e_14_1.png)
+
 此图标表示警告或注意。
 
 ### 使用代码示例
 
-本书的目的是帮助你完成工作。通常情况下，你可以在程序和文档中使用书中的代码。除非你要复制书中大部分代码，否则不需要联系我们获得许可。例如，编写一个使用了书书中几段代码的程序是不需要许可的。销售或分发 O'Reilly 书的示例 CD-ROM 是需要许可的。通过引用本书和示例代码来回答问题是不需要许可的。将书中大量的示例代码整合到你的产品文档中则需要许可。
+本书的目的是帮助你完成工作。通常情况下，你可以在程序和文档中使用书中的代码。除非你要复制书中大部分代码，否则不需要联系我们获得许可。例如，编写一个使用了书中几段代码的程序是不需要许可的。销售或分发 O'Reilly 书的示例 CD-ROM 是需要许可的。通过引用本书和示例代码来回答问题是不需要许可的。将书中大量的示例代码整合到你的产品文档中则需要许可。
 
-我们感谢但并不要求署名。署名通常包括标题、作者、出版者和 ISBN。例如：Maintainable JavaScript by Nicholas Zakas (O’Reilly). Copyright 2012 Nicholas Zakas, 978-1-449-32768-2。
+我们感谢但并不要求署名。署名通常包括标题、作者、出版者和 ISBN。例如：`Maintainable JavaScript by Nicholas Zakas (O’Reilly). Copyright 2012 Nicholas Zakas, 978-1-449-32768-2`。
 
-如果你在合理使用之外或根据上述许可范围使用任何代码示例，请随时通过 permissions@oreilly.com 与我们联系。
+如果你在合理使用之外或根据上述许可范围使用任何代码示例，请随时通过 `permissions@oreilly.com` 与我们联系。
 
 ### Safari Books Online
 
 ![](img/b5952fb0eafff82c42c2013569fa4e_15_0.png)
-Safari Books Online (www.safarookonline.com) 是一个按需数字图书馆，提供全球技术和业务领域学习领袖提供的书籍和视频领域的专家内容。
+
+Safari Books Online (`www.safarookonline.com`) 是一个按需数字图书馆，提供全球技术和业务领域学习领袖提供的书籍和视频领域的专家内容。
 
 技术专业人士、软件开发人员、网页设计师以及商务和创意人员将 Safari Books Online 作为他们研究、解决问题、学习和认证培训的主要资源。
 
@@ -150,33 +101,31 @@ Safari Books Online 为组织、政府机构和个人提供一系列产品组合
 
 请将关于本书的意见和问题寄给出版者：
 
-
 我们有一个这本书的网页，列出了错误、示例和任何额外信息。你可以通过以下地址访问该页面：
 
 ```
 http://oreil.ly/maintainable_js
 ```
 
-
-
 如需对本书有任何意见或技术问题，请发送邮件至：
-bookquestions@oreilly.com
 
-有关我们书籍、课程、会议和新闻的更多信息，请访问我们的网站：http://www.oreilly.com。
+`bookquestions@oreilly.com`
 
-在 Facebook 上关注我们：http://facebook.com/oreilly
+有关我们书籍、课程、会议和新闻的更多信息，请访问我们的网站：`http://www.oreilly.com`。
 
-在 Twitter 上关注我们：http://twitter.com/oreillyymedia
+在 Facebook 上关注我们：`http://facebook.com/oreilly`
 
-在 YouTube 上观看我们的视频：http://www.youtube.com/oreillyymedia
-# 第一部分
-# 风格指南
+在 Twitter 上关注我们：`http://twitter.com/oreillyymedia`
+
+在 YouTube 上观看我们的视频：`http://www.youtube.com/oreillyymedia`
+
+# 第一部分：风格指南
+
 > “程序的设计是为了供人类阅读的，只是顺便为了让计算机执行。”——唐纳德·克努斯
 
 当一个团队首次聚集在一起时，每个人都会带着他们对代码应该如何编写的观点。毕竟，每个团队成员都来自不同的背景。有些人可能来自过单人作坊，在那里他们可以随心所欲；另一些人可能来自不同的团队，那些团队有他们喜欢（或讨厌）的特定方法。每个人对应该如何编写代码都有意见，而且这通常符合他们个人的编写习惯。建立风格指南应该尽可能在过程中尽早进行。
 
-“风格指南”（style guidelines）和“代码规范”（code conventions）这两个术语经常互用。风格指南是旨在规范文件内代码布局的一种代码规范。代码规范还可以包括编程实践、文件和目录布局以及注释。本书实际上是对 JavaScript 代码规范的收集和讨论。
-
+“风格指南”和“代码规范”这两个术语经常互用。风格指南是旨在规范文件内代码布局的一种代码规范。代码规范还可以包括编程实践、文件和目录布局以及注释。本书实际上是对 JavaScript 代码规范的收集和讨论。
 
 确定风格指南的过程通常比预期的要长。当你每天花费几个小时写代码时，每个人都有自己的意见——程序员都希望以自己舒服的方式写代码。这需要团队内部的某种妥协以及一位强有力的领导者来推动对话。一旦建立，风格指南允许团队以高得多的水平工作，因为所有代码看起来都是一样的。
 
@@ -189,29 +138,28 @@ bookquestions@oreilly.com
 
 风格指南是个人化的东西，必须在团队内部制定才能生效。本书的这一部分列出了开发你的 JavaScript 代码的推荐领域。在某些情况下，无法告诉你某项指南比另一项更好，因为某些指南仅仅是偏好问题。与其试图将我的偏好强加于你，本章重点强调了风格指南中应该涵盖的重要方面。我个人的 JavaScript 代码指南包含在附录 A 中。
 
+开发编码指南已经足够困难了——而执行它们则是另一回事。在团队中达成共识并进行代码审查可以让你走部分路，但每个人偶尔都会出错。工具可以帮助大家保持在正轨。对于风格指南，有两个非常有用的工具：`JSLint` 和 `JSHint`。
 
-开发编码指南已经足够困难了——而执行它们则是另一回事。在团队中达成共识并进行代码审查可以让你走部分路，但每个人偶尔都会出错。工具可以帮助大家保持在正轨。对于风格指南，有两个非常有用的工具：JSLint 和 JSHint。
-
-JSLint 由 Douglas Crockford 编写，是一个用于 JavaScript 的通用质量检查工具。它最初只是一个寻找常见 JavaScript 模式的简单实用程序。多年来，它已经演变成一个不仅能发现潜在错误，还能对你的代码中的风格问题发出警告的工具。
+`JSLint` 由 Douglas Crockford 编写，是一个用于 JavaScript 的通用质量检查工具。它最初只是一个寻找常见 JavaScript 模式的简单实用程序。多年来，它已经演变成一个不仅能发现潜在错误，还能对你的代码中的风格问题发出警告的工具。
 
 - 《JavaScript 风格元素，第一部分》涵盖了基础模式和语法。
 - 《JavaScript 风格元素，第二部分》涵盖了常见的 JavaScript 惯用法。
 
-JSLint 现在整合了更多 Crockford 的风格偏好，而且通常无法关闭这些设置。因此，JSLint 是一个很好的工具——只要你认同 Crockford 的风格指南。
+`JSLint` 现在整合了更多 Crockford 的风格偏好，而且通常无法关闭这些设置。因此，`JSLint` 是一个很好的工具——只要你认同 Crockford 的风格指南。
 
-JSHint 是 JSLint 的一个分支，由 Anton Kovalov 维护。JSHint 的目标是为 JavaScript 提供一个更具定制性的代码质量和风格指南工具。除了语法错误外，可以关闭 JSHint 中几乎所有的警告，允许你完全自定义接收到的有关代码的消息。
+`JSHint` 是 `JSLint` 的一个分支，由 Anton Kovalov 维护。`JSHint` 的目标是为 JavaScript 提供一个更具定制性的代码质量和风格指南工具。除了语法错误外，可以关闭 `JSHint` 中几乎所有的警告，允许你完全自定义接收到的有关代码的消息。
 
-Kovalyov 鼓励通过 GitHub 上的源代码仓库参与对 JSHint 的开发和贡献。
+Kovalyov 鼓励通过 GitHub 上的源代码仓库参与对 `JSHint` 的开发和贡献。
 
 将这些工具之一集成到你的构建过程中，是开始执行代码规范以及捕获 JavaScript 代码中潜在错误的好方法。
 
-
 风格指南的核心是基础格式化规则。这些规则规范了代码在高层面的编写方式。类似于学校里教写作时使用的横线纸，基础格式化规则引导开发者按照特定的风格编写代码。这些规则通常包含你可能没有考虑过的语法信息，但每一部分对于创建一段连贯的代码都是至关重要的。
 
+## 缩进
 
 关于你的 JavaScript 风格指南（实际上也是关于大多数语言的指南）要做的第一个决策是如何处理缩进。这是一个争论可以持续数小时的话题；缩进几乎是软件工程师最接近“宗教”的东西。然而，尽早建立缩进指南是非常重要的，否则开发者在开始工作前就会陷入“对每个文件都重新发明一遍”的经典问题。考虑一个看起来这样的文件（为了演示，特意更改了缩进）：
 
-```
+```javascript
 if (wl && wl.length) {
   for (i = 0, l = wl.length; i < l; ++++) {
     p = wl[i];
@@ -224,9 +172,9 @@ nY.mix(r(p), s[p]);
 }
 ```
 
-仅仅看这段代码是很困难的。缩进是不均匀的，所以看起来 `else` 适用于第一行的 `if` 语句。然而仔细检查发现 `else` 实际上适用于第 5 行的 `if` 语句。最可能的罪祸首是来自几个不同开发者的缩进风格的混合。这正是缩进指南存在的原因。经过正确缩进后，这段代码变得容易理解了：
+仅仅看这段代码是很困难的。缩进是不均匀的，所以看起来 `else` 适用于第一行的 `if` 语句。然而仔细检查发现 `else` 实际上适用于第 5 行的 `if` 语句。最可能的罪魁祸首是来自几个不同开发者的缩进风格的混合。这正是缩进指南存在的原因。经过正确缩进后，这段代码变得容易理解了：
 
-```
+```javascript
 if (wl && wl.length) {
   for (i = 0, l = wl.length; i < l; i++) {
     p = wl[i];
@@ -236,7 +184,6 @@ if (wl && wl.length) {
     } else if (ov || !(p in r)) {
       r[p] = s[p];
     }
-    }
   }
 }
 ```
@@ -244,10 +191,6 @@ if (wl && wl.length) {
 确保正确的缩进是第一步——这段特定的代码还有其他维护问题将在本章稍后讨论。
 
 就像风格指南一样，对于如何在代码中实现缩进并没有统一共识。有两种流派：
-
-
-
-
 
 尽管有些人认为一种缩进方法优于另一种，但归结底都是团队内部的偏好问题。作为参考，以下是来自各种风格指南的缩进建议：
 
@@ -260,16 +203,20 @@ if (wl && wl.length) {
 我建议每个缩进级别使用四个空格。如果你决定让 Tab 键插入空格，许多文本编辑器的默认设置就是这一层级。我发现，两个空格对于我的眼睛来说没有足够的区分度。
 
 虽然选择制表符还是空格是一种偏好，但尽量不要混合使用它们是非常重要的。这样做会导致糟糕的文件布局，并需要编写不整洁的代码，正如本节中的第一个示例所示。
+
+## 分号
+
 JavaScript 有趣且最令人困惑的方面之一是语句可以使用换行符或分号来终止。这打破了 C++ 和 Java 等其他 C 类语言的传统，这些语言要求分号。因此，以下两个示例都是有效的 JavaScript。
 
-```
+```javascript
 // 有效
 var name = "Nicholas"
 function sayName() {
   alert(name);
+}
 ```
 
-```
+```javascript
 var name = "Nicholas"
 function sayName() {
   alert(name)
@@ -278,19 +225,22 @@ function sayName() {
 
 JavaScript 中省略分号是因为一种被称为“自动分号插入（ASI）”的机制。ASI 会在代码中寻找适当放置分号的地方，如果没有找到，就会插入一个。在许多情况下，ASI 的猜测是正确的，不会出现问题。然而，ASI 的规则复杂且难以记忆，这就是为什么我建议使用分号。考虑以下内容：
 
+```javascript
 // 原始代码
 function getData() {
-  return {
+  return
+  {
     title: "Maintainable JavaScript",
     author: "Nicholas C. Zakas"
   }
 }
 ```
 
-```
+```javascript
 // 解析器看到的方式
 function getData() {
-  return {
+  return;
+  {
     title: "Maintainable JavaScript",
     author: "Nicholas C. Zakas"
   };
@@ -299,7 +249,7 @@ function getData() {
 
 在这个示例中，函数 `getData()` 旨在返回一个包含某些数据的对象。`return` 之后的换行导致了分号的插入，导致函数返回 `undefined`。通过将左大括号移动到 `return` 所在的行，可以修复该函数。
 
-```
+```javascript
 // 即使没有分号也能正常工作
 function getData() {
   return {
@@ -311,216 +261,48 @@ function getData() {
 
 在某些场景下可能会应用 ASI，我发现限制 ASI 的使用有助于减少错误。这些错误通常由于误解了 ASI 的工作原理，并假设分号会在该插入的地方插入，但实际上并没有插入。我发现，许多开发者（尤其是缺乏经验的开发者）使用分号比省略分号更易胜任。
 
-Douglas Crockford 的《JavaScript 编程语言代码规范》（以下简称“Crockford 代码规范”）、jQuery Core 风格指南、Google JavaScript 风格指南以及 Dojo 风格指南都建议使用分号。JSLint 和 JSHint 在默认情况下会在缺少分号时发出警告。
+Douglas Crockford 的《JavaScript 编程语言代码规范》（以下简称“Crockford 代码规范”）、jQuery Core 风格指南、Google JavaScript 风格指南以及 Dojo 风格指南都建议使用分号。`JSLint` 和 `JSHint` 在默认情况下会在缺少分号时发出警告。
 
+## 换行
 
 与缩进主题紧密相关的是行长度。开发者发现，如果代码行长到需要水平滚动，工作起来就会很困难。即使使用今天的大型显示器，保持合理的行长度也能提高开发者的效率。许多语言的代码规范文档规定，代码行不应超过 80 个字符。这个长度源于一个时代，当时的文本编辑器显示文本最大只有 80 列，因此较长的行要么以意想不到的方式折行，要么超出编辑器的侧边。今天的文本编辑器比 20 年前的先进得多，但 80 字符行仍然流行。以下是一些常见的行长度建议：
 
-
 JavaScript 风格指南中较少提到行长度，但 Crockford 代码规范规定行长度为 80 个字符。我也倾向于将行长度保持在 80 个字符。
-
 
 当一行达到最大字符长度时，必须手动将其拆分为两级。换行通常在运算符之后进行，下一行缩进两个级别。例如（缩进为四个空格）：
 
-```
+```javascript
 // 运算符后换行，下一行缩进两个级别
 callFunction(document, element, window, "some string value", true, 123,
-navigator);
+  navigator);
 ```
 
-```
+```javascript
 // 错误：下一行仅缩进一个级别
 callFunction(document, element, window, "some string value", true, 123,
 navigator);
 ```
 
-```
+```javascript
 // 错误：在运算符前换行
-callFunction(document, element, window, "some string value", true, 123,
-navigator);
+callFunction(document, element, window, "some string value", true, 123
+, navigator);
 ```
 
 在这个示例中，逗号是一个运算符，应该放在前一行的末尾。这种放置方式很重要，因为 ASI 机制在某些情况下可能会在行尾关闭语句。通过始终以运算符结束，ASI 就不会介入并引入可能的错误。
 
 语句也应该使用相同的换行模式：
 
-```
-if (isLeap) {
-  // ... 逻辑
-}
-```
-（注：此处原文示例代码不完整，根据上下文推断为逻辑结构）
-
-```
-if (isLeap) {
-  return true;
-}
-```
-（注：此处原文示例代码不完整，根据上下文推断为逻辑结构）
-
-if (isLeap) {
-  return false;
-}
-```
-（注：此处原文示例代码不完整，根据上下文推断为逻辑结构）
-
-```javascript
-if (isLeap) {
-  doSomething();
-}
-```
-（注：此处原文示例代码不完整，根据上下文推断为逻辑结构）
-
-```javascript
-if (isLeap) {
-  doSomething();
-}
-```
-（注：此处原文示例代码不完整，根据上下文推断为逻辑结构）
-
-```javascript
-if (isLeap) {
-  doSomething();
-}
-```
-（注：此处原文示例代码不完整，根据上下文推断为逻辑结构）
-
-```javascript
-if (isLeap) {
-  doSomething();
-}
-```
-（注：此处原文示例代码不完整，根据上下文推断为逻辑结构）
-
-```javascript
-if (isLeap) {
-  doSomething();
-}
-```
-（注：此处原文示例代码不完整，根据上下文推断为逻辑结构）
-
-```javascript
-if (isLeap) {
-  return true;
-}
-```
-（注：此处原文示例代码不完整，根据上下文推断为逻辑结构）
-
-```javascript
-if (isLeap) {
-  return false;
-}
-```
-（注：此处原文示例代码不完整，根据上下文推断为逻辑结构）
-
-```javascript
-if (isLeap) {
-  doSomething();
-}
-```
-（注：此处原文示例代码不完整，根据上下文推断为逻辑结构）
-
-```javascript
-if (isLeap) {
-  doSomething();
-}
-```
-（注：此处原文示例代码不完整，根据上下文推断为逻辑结构）
-
-```javascript
-if (isLeap) {
-  doSomething();
-}
-```
-（注：此处原文示例代码不完整，根据上下文推断为逻辑结构）
-
-```javascript
-if (isLeap) {
-  doSomething();
-}
-```
-（注：此处原文示例代码不完整，根据上下文推断为逻辑结构）
-
-```javascript
-if (isLeap) {
-  doSomething();
-}
-```
-（注：此处原文示例代码不完整，根据上下文推断为逻辑结构）
-
-```javascript
-if (isLeap) {
-  doSomething();
-}
-```
-（注：此处原文示例代码不完整，根据上下文推断为逻辑结构）
-
-```javascript
-if (isLeap) {
-  doSomething();
-}
-```
-（注：此处原文示例代码不完整，根据上下文推断为逻辑结构）
-
-```javascript
-if (isLeap) {
-  doSomething();
-}
-```
-（注：此处原文示例代码不完整，根据上下文推断为逻辑结构）
-
-```javascript
-if (isLeap) {
-  doSomething();
-}
-```
-（注：此处原文示例代码不完整，根据上下文推断为逻辑结构）
-
-（注：由于提供的文本在 Line Breaking 之后出现了大量重复或截断的示例块，翻译已根据“不要重复输出原文”的原则，仅翻译了核心逻辑部分。）
-
-例如，在 `if` 语句的条件处断行：
-
 ```javascript
 if (isLeap &&
   otherCondition) {
-  // ...
+  doSomething();
 }
 ```
 
 这种放置方式很重要，因为 ASI 机制在某些情况下可能会在行尾关闭语句。通过始终以运算符结束，ASI 就不会介入并引入可能的错误。
 
-相同的换行模式也应适用于语句：
-
-```javascript
-if (isLeap &&
-  otherCondition) {
-  doSomething();
-}
-```
-
-（注：原文文本在结尾处存在大量逻辑重复的占位符，翻译已按要求进行处理。）
-
-
-```javascript
-// Good
-var count = 10;
-var myName = "Nicholas";
-var found = true;
-
-// Bad: Easily confused with functions
-var getCount = 10;
-var isFound = true;
-
-// Good
-function getName() {
-  return my;
-}
-
-// Bad: Easily confused with variable
-function theName() {
-  return my;
-}
-```
+## 命名
 
 变量的命名既是一门艺术也是一门科学，但通常情况下，你应该尝试让变量名尽可能短以传达意思。尝试让变量名指示其值的数据类型。例如，`count`、`length` 和 `size` 等名称暗示数据类型为数字，而 `name`、`title` 和 `message` 等名称暗示数据类型为字符串。`i`、`j` 和 `k` 等单字符变量名通常保留用于循环使用。使用暗示数据类型的名称会让他人以及你自己更容易理解代码。
 
@@ -556,7 +338,7 @@ if (getName() === "Nicholas") {
 
 jQuery 显然没有遵循这种函数命名约定，部分原因由于方法在 jQuery 中的使用方式，因为许多方法既充当 getter 又充当 setter。例如，`attr("body")` 返回类属性的值，而 `attr("body").attr("class", "selected")` 则设置类属性的值。尽管如此，我仍然建议在函数名中使用这些约定。
 
-
+## 常量
 
 ```javascript
 var MAX_COUNT = 10;
@@ -575,6 +357,7 @@ if (count < MAX_COUNT) {
 
 Google JavaScript 风格指南、SproutCore 风格指南和 Dojo 风格指南规定常量应该以这种方式格式（Dojo 风格指南也允许常量指定为大驼命名法；参见该章节）。
 
+## 构造函数
 
 JavaScript 构造函数只是通过 `new` 操作符创建对象的函数。该语言包含许多内置构造，如 `Object` 和 `RegExp`，开发者可以添加自己的构造函数来创建新类型。按照其他命名约定，构造函数遵循原生语言，因此构造函数使用大驼命名法（Pascal case）。
 
@@ -585,15 +368,11 @@ JavaScript 构造函数只是通过 `new` 操作符创建对象的函数。该�
 function Person(name) {
   this.name = name;
 }
-```
 
-```javascript
 Person.prototype.sayName = function() {
   alert(this.name);
 }
-```
 
-```javascript
 var me = new Person("Nicholas");
 ```
 
@@ -606,11 +385,13 @@ var you = getPerson("Michael");
 
 在这里，第 1 行应该让你一眼看出问题，但根据此处已列出的约定，第 2 行看起来没问题。
 
-Crockford 代码规范、Google JavaScript 风格指南和 Dojo 风格指南都推荐这种做法。如果发现构造函数没有初始大写字母，或者在没有使用 `new` 操作符的情况下使用构造函数，JSLint 将发出警告。只有当你添加了特殊的 `newcap` 选项时，JHint 会在发现构造函数没有初始大写字母时警告。
+Crockford 代码规范、Google JavaScript 风格指南和 Dojo 风格指南都推荐这种做法。如果发现构造函数没有初始大写字母，或者在没有使用 `new` 操作符的情况下使用构造函数，`JSLint` 将发出警告。只有当你添加了特殊的 `newcap` 选项时，`JSHint` 会在发现构造函数没有初始大写字母时警告。
 
+## 字面量
 
 JavaScript 有几种原始字面量类型：字符串、数字、布尔值、`null` 和 `undefined`。还有对象字面量和数组字面量。在这些中，只有布尔值在使用上是自明其懂的。所有其他类型都需要对应该如何使用进行一些思考。
 
+### 字符串
 
 字符串在 JavaScript 中的独特之处在于它们可以使用双引号或单引号来指示。例如：
 
@@ -640,10 +421,11 @@ named Brady.";
 
 ```javascript
 // Good
-var longString = "Here's the story, of a man " + 
+var longString = "Here's the story, of a man " +
 "named Brady.";
 ```
 
+### 数字
 
 数字类型在 JavaScript 是唯一的，因为所有类型的数字——整数和浮点数都存储在相同的数据类型中。数字还有几种字面量格式来表示各种数值格式。大多数格式都可以使用，但有些非常有问题：
 
@@ -663,30 +445,30 @@ var price = 10.000;
 var price = 10.;
 ```
 
-字面量 | 15
-
-
-
-
-
-```
+```javascript
 // 错误的进制：前导小数点
 var price = .1;
+```
 
+```javascript
 // 错误：八进制（基数8）已弃用
 var num = 010;
+```
 
+```javascript
 var num = 0xA2;
+```
 
+```javascript
 // E 计数法
 var num = 1e23;
 ```
 
-两种存在问题的格式是悬挂的小数点（例如 `10.`）和前导小数点（例如 `.1`）。每种格式都有相同的问题：很难判断小数点前或后的数值省略是否是刻意的。这很可能是开发者写错了数值。在小数点前后都包含数字以避免任何混乱是一个好主意。这两种格式在 Dojo 风格指南（Dojo Style Guide）中被明确禁止。JSLint 和 JSHint 在发现其中一种模式时都会发出警告。
+两种存在问题的格式是悬挂的小数点（例如 `10.`）和前导小数点（例如 `.1`）。每种格式都有相同的问题：很难判断小数点前或后的数值省略是否是刻意的。这很可能是开发者写错了数值。在小数点前后都包含数字以避免任何混乱是一个好主意。这两种格式在 Dojo 风格指南中被明确禁止。`JSLint` 和 `JSHint` 在发现其中一种模式时都会发出警告。
 
-最后一个有问题的数值格式是八进制格式。JavaScript 对八进制的支持一直是错误和困惑的根源。字面量 `010` 并不代表 `10`；它代表八进制中的 `8`。大多数开发者并不熟悉八进制格式，很少理由使用它，因此最好的方法是在代码中禁用八进制字面量。尽管在任何流行的风格指南中都没有提到，但 JSLint 和 JSHint 在遇到八进制字面量时都会发出警告。
+最后一个有问题的数值格式是八进制格式。JavaScript 对八进制的支持一直是错误和困惑的根源。字面量 `010` 并不代表 `10`；它代表八进制中的 `8`。大多数开发者并不熟悉八进制格式，很少理由使用它，因此最好的方法是在代码中禁用八进制字面量。尽管在任何流行的风格指南中都没有提到，但 `JSLint` 和 `JSHint` 在遇到八进制字面量时都会发出警告。
 
-## Null
+### Null
 
 特殊的 `null` 经常被误解并与 `undefined` 混淆。这个值应该只在少数情况下使用：
 
@@ -697,39 +479,41 @@ var num = 1e23;
 
 在某些情况下不应使用 `null`：
 
-- 不要使用 `null` 来测试是否提供了了参数。
+- 不要使用 `null` 来测试是否提供了参数。
 - 不要使用未初始化的变量作为 `null` 的值。
 
 以下是一些示例：
 
-```
+```javascript
 // 正确
 var person = null;
 
 // 正确
 function getPerson() {
-if (condition) {
+  if (condition) {
     return new Person("Nicholas");
-} else {
+  } else {
     return null;
+  }
 }
 
 // 正确
 var person = getPerson();
 if (person != null) {
-    doSomething();
+  doSomething();
 }
+
 // 错误：针对未初始化的变量进行测试
 var person;
-if (person != null { {
-    doSomething();
+if (person != null) {
+  doSomething();
 }
 
 // 错误：测试是否传递了参数
 function doSomething(arg1, arg2, arg3, arg4) {
-    if (arg4 != null) {
-        doSomethingElse();
-    }
+  if (arg4 != null) {
+    doSomethingElse();
+  }
 }
 ```
 
@@ -737,11 +521,11 @@ function doSomething(arg1, arg2, arg3, arg4) {
 
 关于 `null` 陷阱的详细讨论见第 8 章。
 
-## Undefined
+### Undefined
 
 特殊的值 `undefined` 经常与 `null` 混淆。困惑的部分之一是 `null == undefined` 为真。然而，这两个值的用途非常不同。未初始化的变量其初始值为 `undefined`，这本质上意味着该变量正在等待赋予一个真实值。例如：
 
-```
+```javascript
 // 错误
 var person;
 console.log(person === undefined); //true
@@ -749,14 +533,14 @@ console.log(person === undefined); //true
 
 尽管这种方法有效，但我建议在代码中避免使用 `undefined`。这个值经常与 `typeof` 运算符对某个值返回字符串 `"undefined"` 混淆。事实上，这种行为非常困惑，因为 `typeof` 对于值为 `undefined` 的变量和未声明的变量都会返回字符串 `"undefined"`。例如：
 
-```
+```javascript
 // foo 未声明
 var person; // "undefined"
 console.log(typeof person); // "undefined"
 console.log(typeof foo);
 ```
 
-在例例中，`person` 和 `foo` 均导致 `typeof` 返回 `"undefined"`，尽管它们在其他所有方面的行为非常不同（在语句中使用 `foo` 会导致错误，但使用 `person` 则不会）。
+在例子中，`person` 和 `foo` 均导致 `typeof` 返回 `"undefined"`，尽管它们在其他所有方面的行为非常不同（在语句中使用 `foo` 会导致错误，但使用 `person` 则不会）。
 
 通过避免使用特殊值 `undefined`，你有效地将 `typeof "undefined"` 的含义保留在单一情况中：即变量尚未声明。如果你正在使用一个后续可能可能被赋值对象值的变量，请将其初始化为 `null`：
 
@@ -768,11 +552,11 @@ console.log(person === null); //true
 
 初始将变量设置为 `null` 表明你对该变量的意图；它应该显式包含一个对象。`typeof` 运算符对 `null` 值返回 `"object"`，因此它可以与 `undefined` 区分开来。
 
-## 对象字面量
+### 对象字面量
 
 对象字面量是创建具有特定属性的新对象的流行方式，而不是显式地创建 `Object` 的新实例然后添加属性。例如，这种模式很少被使用：
 
-```
+```javascript
 // 错误
 var book = new Object();
 book.title = "Maintainable JavaScript";
@@ -793,11 +577,11 @@ var book = {
 
 这种格式在开源 JavaScript 代码中最为常见。虽然没有常见的记录，但 Google JavaScript 风格指南建议使用这种格式。Crockford 的代码规范建议使用对象字面量而非 `Object` 构造函数，但没有指定特定的格式。
 
-## 数组字面量
+### 数组字面量
 
 数组字面量与对象字面量一样，是 JavaScript 中定义数组的一种更紧凑的方式。像示例所示那样显式使用 `Array` 构造函数通常是不被鼓励的：
 
-```
+```javascript
 // 错误
 var colors = new Array("red", "green", "blue");
 var numbers = new Array(1, 2, 3, 4);
@@ -813,31 +597,27 @@ var numbers = [ 1, 2, 3, 4 ];
 
 这种模式在 JavaScript 中被广泛使用且常见。Google JavaScript 风格指南和 Crockford 的代码规范也推荐。
 
-# 第二 章
-
-## 注释
+# 第 2 章：注释
 
 注释通常是编码中最不受欢迎的部分。它们与文档非常接近，这是任何开发者都不想花时间做的事情。然而，注释对于代码的整体可维护性至关重要。打开一个没有任何注释的文件可能看起来是一场有趣的冒险，但当有截止日期要面对时，这项任务就会变成折磨。编写得当的注释有助于讲述代码的故事，允许其他开发者在进入代码部分时不需要了解开头。风格指南并不总是涵盖注释样式，但我认为它们重要到值得专门讨论。
 
 JavaScript 支持两种类型的注释：单行注释和多行注释。
 
-### 单行注释
+## 单行注释
 
-单行注释通过两个斜杠并在行尾创建：// 单行注释
+单行注释通过两个斜杠并在行尾创建：`// 单行注释`
 
 许多人喜欢在两个斜杠后留一个空格以区分注释文本。单行注释有三种用法：
 
 - 独占一行，解释随后的行。该行之前应该有一个空行。注释应与后续行相同的缩进级别。
-
 - 作为代码行末尾的注释。代码和注释之间应至少有一个缩进级别。注释不应超过最大行长度。如果超过，则将注释移动到代码上方。
-
 - 用于注释掉大量代码（许多编辑器可以自动注释多行）。
 
 单行注释不应连续使用，除非你正在注释大量代码。当需要长注释文本时应使用多行注释。
 
 以下是一些示例：
 
-```
+```javascript
 // 正确
 if (condition) {
     // 如果你在这里，说明所有的安全检查都通过了
@@ -878,108 +658,102 @@ if (condition) {
 }
 ```
 
-
-
-
-
-### 多行注释
+## 多行注释
 
 多行注释可以跨越多行。它们以 `/*` 开始并以 `*/` 结束。多行注释并不要求跨越多行；这完全取决于你的选择。以下是所有有效的多行注释：
 
-```
+```javascript
 /* 我的注释 */
 ```
 
-```
+```javascript
 /* 另一个注释。
 这占据了两个行。 */
 ```
 
-```
+```javascript
 /*
 又是另一个注释。
 它也占据了第二行。
 */
 ```
 
-尽管由于所有这些注释在技术上都是有效的，但我更倾向于 Java 风格的多行注释模式。Java 风格是至少包含三行：第一行是 `/*`，后续是若干行以 `*` 开头的行（该 `*` 与前一行的 `*` 对齐），最后一行是 `* /`。生成的注释看起来如下：
+尽管由于所有这些注释在技术上都是有效的，但我更倾向于 Java 风格的多行注释模式。Java 风格是至少包含三行：第一行是 `/*`，后续是若干行以 `*` 开头的行（该 `*` 与前一行的 `*` 对齐），最后一行是 `*/`。生成的注释看起来如下：
 
-```
+```javascript
 /*
-  * 又是另一个注释。
-  * 也占据了第二行。
-  */
+ * 又是另一个注释。
+ * 也占据了第二行。
+ */
 ```
 
 结果是注释更具可读性，并且视觉上左侧与星号对齐。像 NetBeans 和 Eclipse 这样的 IDE 会自动为你插入这些前星号。
 
 多行注释总是紧跟在它们所描述的代码之前。与单行注释相比，多行注释前面应该有一个空行，并且应该与被描述的代码处于相同的缩进级别。这里是一些示例：
 
-```
+```javascript
 // 好
 if (condition) {
   /*
-    * 如果你到了这里，
-    * 那么所有安全检查都通过了
-  */
+   * 如果你到了这里，
+   * 那么所有安全检查都通过了
+   */
   allowed();
 }
 ```
 
-```
+```javascript
 // 错误：注释前没有空行
 if (condition) {
   /*
-    * 如果你到了这里，
-    * 那么所有安全检查都通过了
+   * 如果你到了这里，
+   * 那么所有安全检查都通过了
+   */
+  allowed();
+}
+```
+
+```javascript
+// 错误：星号后缺少空格
+if (condition) {
+  /*
+  *if你到了这里，
+  *then所有安全检查都通过了
   */
   allowed();
 }
 ```
 
-```
-// 错误：星号后缺少空格
-if (condition) {
-
-/*
-*if你到了这里，
-*then所有安全检查都通过了
-*/
-allowed();
-}
-
+```javascript
 // 错误：缩进错误
 if (condition) {
-
-/*
-* 如果你到了这里，
-* 那么所有安全检查都通过了
-*/
-allowed();
+  /*
+  * 如果你到了这里，
+  * 那么所有安全检查都通过了
+  */
+  allowed();
 }
 ```
 
-```
+```javascript
 // 错误：不要使用多行注释作为行尾注释
 var result = something + somethingElse; /*somethingElse 永远不会为空*/
 ```
 
-### 使用注释
+## 使用注释
 
 何时编写注释是一个在开发者中总是引起激烈讨论的话题。通用的指导建议是：当某些内容不明时不注释，当从代码本身显而易见时不要注释。例如，这个示例中的注释没有为代码增加任何理解：
 
-```
+```javascript
 // 错误
-
 // 初始化 count
 var count = 10;
 ```
 
 从代码中可以看出 `count` 正在初始化。该注释没有添加任何价值。相反，如果值 `10` 有某些你无法通过查看代码就获知的特殊意义，那么注释将会非常有用：
 
-```
+```javascript
 // 好
-
 // 修改这个值将会下雨青蛙
 var count = 10;
 ```
@@ -992,9 +766,8 @@ var count = 10;
 
 难以理解的代码应该始终编写注释。根据代码的功能，你可能使用一个多行注释、几个单行注释或两者的结合。它们的关键是让其他人对代码的目的产生理解。例如，这里是 YUI 库中 `Y.mix()` 方法的一些代码：
 
-```
+```javascript
 // 好
-
 if (mode) {
   /*
    * 在模式 2（原型到原型和对象）中，我们递归
@@ -1015,7 +788,7 @@ if (mode) {
   /*
    * 如果 supplier 或 receiver 实际上没有
    * prototype 属性，那么我们可能会得到一个未定义的
-   * 或 to。如果发生这种情况，我们将中止并返回 receiver。
+   * from 或 to。如果发生这种情况，我们将中止并返回 receiver。
    */
   if (!from || !to) {
     return receiver;
@@ -1032,99 +805,14 @@ if (mode) {
 
 编写注释的另一个良好时机是代码可能出错时。团队经常被那些好心的开发者困扰，他们发现某些看起来有问题的代码并修复了它。如果代码本身不是问题的根源，那么“修复”实际上创建了一个需要追踪的问题。每当你编写可能在其他开发者看来是错误的代码时，请确保包含注释。
 
-这里是来自的另一个示例：
+这里是来自 YUI 的另一个示例：
 
-```
-while (element &&(element = element[axis])) { // 注意：赋值
-if (all || element[TAG_NAME]) &&
-  (fn || element))) {
-  return element;
-}
-```
-
-### 浏览器特定的 Hack
-
-团队经常被好心的开发者困扰，他们发现某些看起来有问题的代码并修复了它。如果代码本身不是问题的根源，那么“修复”实际上创建了一个需要追踪的问题。每当你编写可能在其他开发者看来是错误的代码时，请确保包含注释。
-
-这里是来自的另一个示例：
-
-```
-while (element &&(element = element[axis])) { // 注意：赋值
-if (all || element[TAG_NAME]) &&
-  (fn || element))) {
-  return element;
-}
-```
-
-### 浏览器特定的 Hack
-
-团队经常被好心的开发者困扰，他们发现某些看起来有问题的代码并修复了它。如果代码本身不是问题的根源，那么“修复”实际上创建了一个需要追踪的问题。每当你编写可能在其他开发者看来是错误的代码时，请确保包含注释。
-
-这里是来自的另一个示例：
-
-```
-while (element &&(element = element[axis])) { // 注意：赋值
-if (all || element[TAG_NAME]) &&
-  (fn || element))) {
-  return element;
-}
-```
-
-### 浏览器特定的 Hack
-
-团队经常被好心的开发者困扰，他们发现某些看起来有问题的代码并修复了它。如果代码本身不是问题的根源，那么“修复”实际上创建了一个需要追踪的问题。每当你编写可能在其他开发者看来是错误的代码时，请确保包含注释。
-
-这里是来自的另一个示例：
-
-```
-while (element &&(element = element[axis])) { // 注意：赋值
-if (all || element[TAG_NAME]) &&
-  (fn || element))) {
-  return element;
-}
-```
-
-### 浏览器特定的 Hack
-
-团队经常被好心的开发者困扰，他们发现某些看起来有问题的代码并修复了它。如果代码本身不是问题的根源，那么“修复”实际上创建了一个需要追踪的问题。每当你编写可能在其他开发者看来是错误的代码时，请确保包含注释。
-
-这里是来自的另一个示例：
-
-```
-while (element &&(element = element[axis])) { // 注意：赋值
-if (all || element[TAG_NAME]) &&
-  (fn || element))) {
-  return element;
-}
-```
-
-### 浏览器特定的 Hack
-
-团队经常被好心的开发者困扰，他们发现某些看起来有问题的代码并修复了它。如果代码本身不是问题的根源，那么“修复”实际上创建了一个需要追踪的问题。每当你编写可能在其他开发者看来是错误的代码时，请确保包含注释。
-
-这里是来自的另一个示例：
-
-```
-while (element &&(element = element[axis])) { // 注意：赋值
-if (all || element[TAG_NAME]) &&
-  (fn || element))) {
-  return element;
-}
-```
-
-*(注：由于输入文本中存在大量重复的段落，此处已根据指令“不要重复输出原文”的逻辑进行了去重处理，仅保留了核心内容的翻译。)*
-
-### 潜在的作者错误
-
-每当你编写可能在其他开发者看来是错误的代码时，请确保包含注释。
-
-这里是来自的另一个示例：
-
-```
-while (element &&(element = element[axis])) { // 注意：赋值
-if (all || element[TAG_NAME]) &&
-  (fn || element))) {
-  return element;
+```javascript
+while (element && (element = element[axis])) { // 注意：赋值
+  if (all || element[TAG_NAME]) &&
+    (fn || element)) {
+    return element;
+  }
 }
 ```
 
@@ -1136,13 +824,13 @@ if (all || element[TAG_NAME]) &&
 
 文档注释并不是 JavaScript 的一部分，但它们是一种非常常见的做法。文档注释有许多形式，但最流行的是匹配 JavaDoc 格式的形式：带有额外星号的多行注释 (`/**`)，后面是描述，然后是使用 `@` 符号指示的一个多个属性。这里是来自 YUI 的示例：
 
-```
+```javascript
 /**
-返回一个包含所有提供对象的属性的新对象。后一个对象的属性将覆盖早期对象的属性。
-传入单个对象将创建它的浅拷贝。对于深拷贝，请使用 clone()。
-@param {Object} 一个或多个合并的对象。
-@return {Object} 合并后的对象。
-*/
+ * 返回一个包含所有提供对象的属性的新对象。后一个对象的属性将覆盖早期对象的属性。
+ * 传入单个对象将创建它的浅拷贝。对于深拷贝，请使用 clone()。
+ * @param {Object} 一个或多个合并的对象。
+ * @return {Object} 合并后的对象。
+ */
 Y.merge = function () {
   var args = arguments,
   i = 0,
@@ -1160,8 +848,6 @@ YUI 库使用自己的工具 YUIDoc 从这些注释生成文档。然而，其�
 
 强烈建议你在编写 JavaScript 时使用文档生成器。注释的格式必须匹配你使用的工具，但 JavaDoc 风格的文档注释被许多文档生成器良好支持。使用文档注释时，你应该确保记录以下内容：
 
-
-
 ### 所有方法
 
 务必包含方法的描述、预期的参数以及可能的返回值。
@@ -1176,41 +862,39 @@ YUI 库使用自己的工具 YUIDoc 从这些注释生成文档。然而，其�
 
 当然，具体的注释格式以及如何使用注释，最终将取决于你选择的文档生成器。
 
-# 第 3 章
+# 第 3 章：语句与表达式
 
-## 语句与表达式
+在 JavaScript 中，`if` 和 `for` 等语句可以有两种用法：使用大括号包含多行内容，或者不使用大括号包含单行内容。例如：
 
-在 JavaScript 中，`if` 和 `for` 等语句可以有两种用法：使用使用大括号包含多行内容，或者不使用大括号包含单行内容。例如：
-
-```
+```javascript
 // 不良，尽管技术上是有效的 JavaScript
 if(condition)
-doSomething();
+  doSomething();
 ```
 
-```
+```javascript
 // 不良，尽管技术上是有效的 JavaScript
 if(condition)
-doSomething();
+  doSomething();
 ```
 
-```
+```javascript
 // 好
 if (condition) {
   doSomething();
 }
 ```
 
-```
+```javascript
 // 不良，尽管技术上是有效的 JavaScript
 if (condition) { doSomething(); }
 ```
 
-前两种使用不带括号的 `if` 语句的形式，在 Crockford 的代码规范、jQuery 核心风格指南、SproutCore 风格指南以及 Dojo 风格指南中是被明确禁止的。省略大括号在 JSLint 和 JSHint 中默认也会产生警告。
+前两种使用不带括号的 `if` 语句的形式，在 Crockford 的代码规范、jQuery 核心风格指南、SproutCore 风格指南以及 Dojo 风格指南中是被明确禁止的。省略大括号在 `JSLint` 和 `JSHint` 中默认也会产生警告。
 
 绝大多数的 JavaScript 开发者一致认为，块语句应该始终使用大括号，并且始终占据多行而不是单行。这是因为不包含大括号会产生混淆。考虑以下情况：
 
-```
+```javascript
 if (condition)
   doSomething();
   doSomethingElse();
@@ -1218,7 +902,7 @@ if (condition)
 
 很难判断这里的错误是缩进错误（此处无法知道最后一行是否不应该缩进），还是因为第 2 行和第 3 行都需要在 `if` 语句内部执行。添加大括号会让错误更容易发现。这里是另外两个带有错误的示例：
 
-```
+```javascript
 if (condition) {
     doSomething();
 }
@@ -1232,17 +916,17 @@ if (condition) {
 
 所有的块语句都应该使用大括号，包括：
 
-- * if
-- * for
-- * while
-- * do...while
-- * try...catch...finally
+- `if`
+- `for`
+- `while`
+- `do...while`
+- `try...catch...finally`
 
-### 大括号对齐
+## 大括号对齐
 
 与块语句相关的第二个主题是大括号的对齐。大括号对齐主要有两种风格。第一种是将左大括号与块语句的开始置在同一行，如例所示：
 
-```
+```javascript
 if (condition) {
     doSomething();
 } else {
@@ -1254,7 +938,7 @@ JavaScript 从 Java 处继承了这种风格，Java 的《Java 编程语言代�
 
 第二种大括号对齐风格是将左大括号放在块语句开始的下一行，如例所示：
 
-```
+```javascript
 if (condition)
 {
     doSomething();
@@ -1266,12 +950,12 @@ if (condition)
 
 这种风格由 C# 流行起来，因为 Visual Studio 强制执行了这种对齐。目前没有主要的 JavaScript 指南推荐这种风格，Google JavaScript 风格由于担心自动分号插入错误而明确禁止它。我的建议是使用这种精确的大括号格式。
 
-### 块语句间距
+## 块语句间距
 
 块语句第一行的间距也是一种偏好问题。块语句间距有三种主要风格。第一种是在语句名、左括号和左大括号之间不留空格：
 
-```
-if(condition)
+```javascript
+if(condition){
   doSomething();
 }
 ```
@@ -1280,7 +964,7 @@ if(condition)
 
 第二种风格是在左括号之前和右括号之后留有一个空格，例如：
 
-```
+```javascript
 if (condition) {
   doSomething();
 }
@@ -1290,7 +974,7 @@ if (condition) {
 
 第三种风格在左括号之后和右括号之前添加空格，如下所示：
 
-```
+```javascript
 if ( condition ) {
   doSomething();
 }
@@ -1300,17 +984,17 @@ if ( condition ) {
 
 我更倾向于第二种风格，它是第一种和第三种风格之间很好的折中。
 
-### switch 语句
+## switch 语句
 
 开发者对 `switch` 语句往往有一种爱恨交织的情感。关于如何使用和格式化 `switch` 语句存在不同的观点。这种差异部分源于 `switch` 语句的血统——它起源于 C，通过 Java 进入 JavaScript，但并没有完全相同的语法。
 
 尽管语法相似，JavaScript 的 `switch` 语句的行为与其他语言不同：可以使用任何类型的值，并且除非使用 `break` 或类似的语句，否则 `case` 将穿透到下一个。
 
-## 缩进
+### 缩进
 
 `switch` 语句的缩进是一个争议点。许多人使用 Java 风格，如下：
 
-```
+```javascript
 switch (condition) {
     case "first":
         code();
@@ -1333,7 +1017,7 @@ switch (condition) {
 
 尽管事实确实如此，但 Crockford 的代码规范和 Dojo 风格指南建议略有不同的格式：
 
-```
+```javascript
 switch (condition) {
   case "first":
     code();
@@ -1349,17 +1033,17 @@ switch (condition) {
 }
 ```
 
-这种格式与前一种格式的主要区别是 `case` 关键字与 `switch` 关键字对齐。同样注意，语句内部没有空行。JSLint 默认期望这种缩进，如果 `case` 未与 `switch` 对齐则会警告。此选项可以通过“Tolerate messy space”（容忍混乱空格）选项开启或关闭。JSLint 在包含额外空行时不会警告。
+这种格式与前一种格式的主要区别是 `case` 关键字与 `switch` 关键字对齐。同样注意，语句内部没有空行。`JSLint` 默认期望这种缩进，如果 `case` 未与 `switch` 对齐则会警告。此选项可以通过“Tolerate messy space”（容忍混乱空格）选项开启或关闭。`JSLint` 在包含额外空行时不会警告。
 
 与其他风格的其他方面一样，这种选择完全取决于个人偏好。
 
-### 穿透（Falling Through）
+### 穿透
 
-另一个热门的争议点是从一个 `case` 穿透到另一个是否是可以接受的做法。在 `case` 结尾遗漏 `break` 是一个非常常见的 Bug 来源，因为 Douglas Crockford 认为每个 `case` 都应该以 `break`、`return` 或 `throw` 结束，没有任何例外。JSLint 在一个 `case` 穿透到另一个时会发出警告。
+另一个热门的争议点是从一个 `case` 穿透到另一个是否是可以接受的做法。在 `case` 结尾遗漏 `break` 是一个非常常见的 Bug 来源，因为 Douglas Crockford 认为每个 `case` 都应该以 `break`、`return` 或 `throw` 结束，没有任何例外。`JSLint` 在一个 `case` 穿透到另一个时会发出警告。
 
 我同意那些认为穿透是可以接受的编程方法，只要它被明确指示，如下：
 
-```
+```javascript
 switch (condition) {
   // 明显的穿透
   case "first":
@@ -1374,21 +1058,17 @@ switch (condition) {
 }
 ```
 
-这个 `switch` 语句有两个明显的穿透。第一个 `case` 穿透到第二个，这被认为是可以接受的（即使对于 JSLint 也是如此），因为对于第一个 `case` 没有需要执行的语句，且两个 `case` 之间没有额外的行。
+这个 `switch` 语句有两个明显的穿透。第一个 `case` 穿透到第二个，这被认为是可以接受的（即使对于 `JSLint` 也是如此），因为对于第一个 `case` 没有需要执行的语句，且两个 `case` 之间没有额外的行。
 
 第二个实例是 `case "third"`，它穿透到了 `default` 处理程序。这种穿透通过注释指示了开发者意图。在代码中，显然该 `case` 是故意穿透的，而不是错误。
 
-
-
-
-
-Crockford 的代码编码规范完全禁止在 `switch` 语句中使用穿透（fall-throughs）。jQuery 核心风格指南提到他们的代码中使用了穿透，而 Dojo 风格指南则提供了一个带有穿透注释的示例。我的建议是允许穿透，只要使用注释来表明这种穿透是有意为。
+Crockford 的代码编码规范完全禁止在 `switch` 语句中使用穿透。jQuery 核心风格指南提到他们的代码中使用了穿透，而 Dojo 风格指南则提供了一个带有穿透注释的示例。我的建议是允许穿透，只要使用注释来表明这种穿透是有意为。
 
 ### default
 
 关于 `switch` 的另一个争论点是是否需要 `default` 分支。有些人认为，即使默认操作是什么都不做，也应该始终包含一个 `default`，例如：
 
-```
+```javascript
 switch(condition) {
     case "first":
         // code
@@ -1405,7 +1085,7 @@ switch(condition) {
 
 我更倾向于在没有默认操作时省略 `default`，并使用注释对其进行标注，例所示：
 
-```
+```javascript
 switch(condition) {
     case "first":
         // code
@@ -1419,17 +1099,17 @@ switch(condition) {
 
 这样，代码作者的意图就很明确，即没有默认操作，而且通过不包含额外的必要语法节省了一些字节。
 
-### The with Statement
+## with 语句
 
 `with` 语句改变了容器上下文解释变量的方式。它允许像访问局部变量和函数一样访问特定对象的属性和方法，而完全省略对象标识符。`with` 的目的是减少开发者在连续使用多个对象成员时需要输入的字符量。例如：
 
-```
+```javascript
 var book = {
   title: "Maintainable JavaScript",
   author: "Nicholas C. Zakas"
 };
 
-var message = "The book is {}
+var message = "The book is ";
 
 with (book) {
   message += title + " by " + author;
@@ -1440,13 +1120,13 @@ with (book) {
 
 `with` 语句在严格模式下实际上是被禁止的，会导致语法错误，这表明 ECMAScript 委员会认为 `with` 不应再被使用。Crockford 代码编码规范和 Google JavaScript 风格指南都劝不要使用 `with`。我强烈建议避免 `with` 语句，因为它阻止了你轻松地对代码应用严格模式（这是我推荐的做法）。
 
-### The for Loop
+## for 循环
 
 `for` 循环有两种类型：JavaScript 从 C 和 Java 继承而来的传统的 `for` 循环，以及用于遍历对象属性的 `for-in` 循环。这两个循环虽然相似，但用途非常不同。传统的 `for` 循环通常用于遍历数组的成员，例如：
 
-```
-var values = [ 1, 2, 3, 4, 5, 6, 7 ];
- i, len;
+```javascript
+var values = [ 1, 2, 3, 4, 5, 6, 7 ],
+    i, len;
 
 for (i=0, len=values.length; i < len; i++) {
   process(values[i]);
@@ -1455,9 +1135,9 @@ for (i=0, len=values.length; i < len; i++) {
 
 有两种方法可以修改循环的执行方式（`return` 或 `throw` 语句外）。第一种是使用 `break` 语句。使用 `break` 会循环立即退出，即使循环没有完成所有迭代也不会继续运行。对于 `values`：
 
-```
+```javascript
 var values = [ 1, 2, 3, 4, 5, 6, 7 ],
-i, len;
+    i, len;
 
 for(i=0, len=values.length; i < len; i++) {
   if (i == 2) {
@@ -1471,9 +1151,9 @@ for(i=0, len=values.length; i < len; i++) {
 
 修改循环执行的第二种方法是通过使用 `continue`。`continue` 语句会立即退出当前循环；但循环将继续下一次迭代。这是一个示例：
 
-```
+```javascript
 var values = [ 1, 2, 3, 4, 5, 6, 7 ],
-i, len;
+    i, len;
 
 for(i=0, len=values.length; i < len; i++) {
   if (i == 2) {
@@ -1487,9 +1167,9 @@ for(i=0, len=values.length; i < len; i++) {
 
 Crockford 代码编码规范禁止使用 `continue`。他的主张是使用 `continue` 的代码更难读。例如，上一个示例可以重写为：
 
-```
+```javascript
 var values = [ 1, 2, 3, 4, 5, 6, 7 ],
-i, len;
+    i, len;
 
 for(i=0, len=values.length; i < len; i++) {
   if (i != 2) {
@@ -1498,20 +1178,18 @@ for(i=0, len=values.length; i < len; i++) {
 }
 ```
 
-### The for-in Loop
+## for-in 循环
 
 `for-in` 循环用于遍历对象的属性。问题是很难区分哪些属性是自有的，哪些是继承的。这种混淆的影响远超开发者，JavaScript 引擎和代码压缩工具由于担心猜测错误，被迫跳过对这部分的优化。`for-in` 循环在严格模式下实际上是被禁止的，会导致语法错误，这表明 ECMAScript 委员会认为它不应再被使用。Crockford 代码编码规范和 Google JavaScript 风格指南都劝不要使用 `for-in`。我强烈建议避免 `for-in` 循环，因为它阻止了你轻松地对代码应用严格模式（这是我推荐的做法）。
 
-
-
+## 变量声明
 
 这两个 `var` 语句被提升到函数的顶部；初始化在之后发生。当第 6 行使用该变量时，其变量值是特殊值 `undefined`，因此 `result` 变为 `NaN`（不是数字）。在此之后，该值才最终被赋值为 10。
 
 开发者容易忽略变量声明提升的一个区域是 `for` 语句，在其中变量是作为初始化的一部分被声明的：
 
-```
+```javascript
 function doSomethingWithItems(items) {
-
   for (var i=0, len=items.length; i < len; i++) {
     doSomething(items[i]);
   }
@@ -1520,11 +1198,9 @@ function doSomethingWithItems(items) {
 
 在 ECMAScript 5 之前的 JavaScript 中没有块作用级变量声明的概念，因此这段代码实际上等同于以下代码：
 
-```
+```javascript
 function doSomethingWithItems(items) {
-
   var i, len;
-
   for (i=0, len=items.length; i < len; i++) {
     doSomething(items[i]);
   }
@@ -1535,9 +1211,8 @@ function doSomethingWithItems(items) {
 
 我的建议是将局部变量定义为函数的第一条语句。这种方法在《Crockford 代码规范》、《SproutCore 风格指南》以及《Dojo 风格指南》中均被推荐：
 
-```
+```javascript
 function doSomethingWithItems(items) {
-
   var i, len;
   var value = 10;
   var result = value + 10;
@@ -1550,11 +1225,11 @@ function doSomethingWithItems(items) {
 
 Crockford 进一步建议在函数顶部使用单个 `var` 语句：
 
-```
+```javascript
 function doSomethingWithItems(items) {
   var i, len,
-  value = 10,
-  result = value + 10;
+      value = 10,
+      result = value + 10;
 
   for (i=0, len=items.length; i < len; i++) {
     doSomething(items[i]);
@@ -1566,11 +1241,11 @@ Dojo 风格指南仅在变量之间相互相关时才允许合并 `var` 语句�
 
 我的个人偏好是将所有的 `var` 语句合并，每行一个初始化变量。对于未初始化的变量，它们应该出现在最后，如下例所示：
 
-```
+```javascript
 var value = 10,
-result = value + 10,
-i,
-len;
+    result = value + 10,
+    i,
+    len;
 
 for (i=0, len=items.length; i < len; i++) {
   doSomething(items[i]);
@@ -1583,10 +1258,10 @@ for (i=0, len=items.length; i < len; i++) {
 
 函数声明和变量声明一样，会被 JavaScript 引擎提升。因此，你可以在声明函数之前在代码中使用该函数：
 
-- 错误
+```javascript
+// 错误
 doSomething();
 
-```
 function doSomething() {
   alert("Hello world!");
 }
@@ -1594,162 +1269,7 @@ function doSomething() {
 
 这种方法之所以奏效，是因为 JavaScript 引擎解释代码的方式就像如下所示：
 
-- 错误
-
-```
-function doSomething() {
-  alert("Hello world!");
-}
-
-doSomething();
-```
-
-由于这种行为，建议在使用 JavaScript 函数之前始终对其其进行声明。这种设计出现在《Crockford 代码规范》中。Crockford 还建议将函数紧跟在包含它的函数的变量声明之后，如下：
-
-```
-function doSomethingWithItems(items) {
-
-var i, len,
-  value = 10,
-  result = value + 10;
-
-function doSomething(item) {
-  // 执行某些操作
-}
-
-for (i=0, len=items.length; i < len; i++) {
-  doSomething(items[i]);
-}
-}
-```
-
-由于这种行为，建议在使用 JavaScript 函数之前始终进行声明。这种设计出现在《Crockford 代码规范》中。Crockford 还建议将函数放在包含函数内部变量声明的之后，如：
-
 ```javascript
-function doSomethingWithItems(items) {
-
-var i, len,
-  value = 10,
-  result = value + 10;
-
-function doSomething(item) {
-  // 执行某些操作
-}
-
-for (i=0, len=items.length; i < len; i++) {
-  doSomething(items[i]);
-}
-}
-```
-
-（ 注意：在函数内部的变量声明之后放置函数
-```）
-```
-（注：原文此处似乎存在逻辑重复，翻译已根据上下文对齐）
-
-由于这种行为，建议在使用 JavaScript 函数之前始终对其进行声明。这种设计出现在《Crockford 代码规范》中。Crockford 还建议将函数放在包含函数内部变量声明的之后，如：
-
-```javascript
-function doSomethingWithItems(items) {
-
-var i, len,
-  value = 10,
-  result = value + 10;
-
-function doSomething(item) {
-  // 执行某些操作
-}
-
-for (i=0, len=items.length; i < len; i++) {
-  doSomething(items[i]);
-}
-}
-```
-
-由于这种行为，建议在使用 JavaScript 函数之前始终对其进行声明。这种设计出现在《Crockford 代码规范》中。Crockford 还建议将函数放在包含函数内部变量声明的之后，如：
-
-```javascript
-function doSomethingWithItems(items) {
-
-var i, len,
-  value = 10,
-  result = value + 10;
-
-function doSomething(item) {
-  // 执行某些操作
-}
-
-for (i=0, len=items.length; i < len; i++) {
-  doSomething(items[i]);
-}
-}
-```
-
-（注：由于原文后部分出现了多处重复的段落，译文已针对核心逻辑进行了对齐）
-
-由于这种行为，建议在使用 JavaScript 函数之前始终对其进行声明。这种设计出现在《Crockford 代码规范》中。Crockford 还建议将函数放在包含函数内部变量声明的之后，如：
-
-```javascript
-function doSomethingWithItems(items) {
-
-var i, len,
-  value = 10,
-  result = value + 10;
-
-function doSomething(item) {
-  // 执行某些操作
-}
-
-for (i=0, len=items.length; i < len; i++) {
-  doSomething(items[i]);
-}
-}
-```
-
-（由于原文中存在大量重复的文本块，作为文档工程师，我确保了翻译的准确性）
-
-由于这种行为，建议在使用 JavaScript 函数之前始终对其进行声明。这种设计出现在《Crockford 代码规范》中。Crockford 还建议将函数放在包含函数内部变量声明的之后，如：
-
-```javascript
-function doSomethingWithItems(items) {
-
-var i, len,
-  value = 10,
-  result = value + 10;
-
-function doSomething(item) {
-  // 执行某些操作
-}
-
-for (i=0, len=items.length; i < len; i++) {
-  doSomething(items[i]);
-}
-}
-```
-
-（注：原文提供的文本在“Function Declarations”之后出现了多次内容重复，译文已严格遵循“不要重复输出原文”的原则，仅保留核心逻辑的翻译）
-
----
-
-**纠正说明**：由于你提供的英文文本从 `Function Declarations` 开始之后出现了大量完全重复段落，为了符合“**不要重复输出原文**”的指令，我在译文中仅翻译了不重复的部分。以下是完整的逻辑译文：
-
-[content]
-## 函数声明
-
-函数声明和变量声明一样，会被 JavaScript 引擎提升。因此，你可以在声明函数之前在代码中使用该函数：
-
-- 错误
-doSomething();
-
-```
-function doSomething() {
-  alert("Hello world!");
-}
-```
-
-这种方法之所以奏效，是因为 JavaScript 引擎解释代码的方式就像如下所示：
-
-- 错误
 function doSomething() {
   alert("Hello world!");
 }
@@ -1761,36 +1281,30 @@ doSomething();
 
 ```javascript
 function doSomethingWithItems(items) {
+  var i, len,
+      value = 10,
+      result = value + 10;
 
-var i, len,
-  value = 10,
-  result = value + 10;
+  function doSomething(item) {
+    // 执行某些操作
+  }
 
-function doSomething(item) {
-  // 执行某些操作
-}
-
-for (i=0, len=items.length; i < len; i++) {
-  doSomething(items[i]);
-}
+  for (i=0, len=items.length; i < len; i++) {
+    doSomething(items[i]);
+  }
 }
 ```
 
-（注：原文后续重复段落已根据指令要求过滤）
-[/content]
 
----
 
-**抱歉，我发现你提供的原始文本在 `Function Declarations` 之后存在大量完全重复的粘贴内容。为了遵守“**不要重复输出**”的规则，我没有在译文中重复这些内容。以下是针对文本中**非重复部分**完整翻译：
+# 变量声明提升
 
-[content]
 这两个 `var` 语句被提升到函数的顶部；初始化在之后发生。当第 6 行使用该变量时，其变量值是特殊值 `undefined`，因此 `result` 变为 `NaN`（不是数字）。在此之后，该值才最终被赋值为 10。
 
 开发者容易忽略变量声明提升的一个区域是 `for` 语句，在其中变量是作为初始化的一部分被声明的：
 
-```
+```javascript
 function doSomethingWithItems(items) {
-
   for (var i=0, len=items.length; i < len; i++) {
     doSomething(items[i]);
   }
@@ -1799,11 +1313,9 @@ function doSomethingWithItems(items) {
 
 在 ECMAScript 5 之前的 JavaScript 中没有块作用级变量声明的概念，因此这段代码实际上等同于以下代码：
 
-```
+```javascript
 function doSomethingWithItems(items) {
-
   var i, len;
-
   for (i=0, len=items.length; i < len; i++) {
     doSomething(items[i]);
   }
@@ -1814,13 +1326,11 @@ function doSomethingWithItems(items) {
 
 我的建议是将局部变量定义为函数的第一条语句。这种方法在《Crockford 代码规范》、《SproutCore 风格指南》以及《Dojo 风格指南》中均被推荐：
 
-```
+```javascript
 function doSomethingWithItems(items) {
-
   var i, len;
   var value = 10;
   var result = value + 10;
-
   for (i=0, len=items.length; i < len; i++) {
     doSomething(items[i]);
   }
@@ -1829,12 +1339,11 @@ function doSomethingWithItems(items) {
 
 Crockford 进一步建议在函数顶部使用单个 `var` 语句：
 
-```
+```javascript
 function doSomethingWithItems(items) {
   var i, len,
-  value = 10,
-  result = value + 10;
-
+      value = 10,
+      result = value + 10;
   for (i=0, len=items.length; i < len; i++) {
     doSomething(items[i]);
   }
@@ -1845,12 +1354,11 @@ Dojo 风格指南仅在变量之间相互相关时才允许合并 `var` 语句�
 
 我的个人偏好是将所有的 `var` 语句合并，每行一个初始化变量。对于未初始化的变量，它们应该出现在最后，如下例所示：
 
-```
+```javascript
 var value = 10,
-result = value + 10,
-i,
-len;
-
+    result = value + 10,
+    i,
+    len;
 for (i=0, len=items.length; i < len; i++) {
   doSomething(items[i]);
 }
@@ -1862,10 +1370,10 @@ for (i=0, len=items.length; i < len; i++) {
 
 函数声明和变量声明一样，会被 JavaScript 引擎提升。因此，你可以在声明函数之前在代码中使用该函数：
 
-- 错误
+```javascript
+// 错误示例
 doSomething();
 
-```
 function doSomething() {
   alert("Hello world!");
 }
@@ -1873,7 +1381,7 @@ function doSomething() {
 
 这种方法之所以奏效，是因为 JavaScript 引擎解释代码的方式就像如下所示：
 
-- 错误
+```javascript
 function doSomething() {
   alert("Hello world!");
 }
@@ -1885,23 +1393,21 @@ doSomething();
 
 ```javascript
 function doSomethingWithItems(items) {
+  var i, len,
+      value = 10,
+      result = value + 10;
 
-var i, len,
-  value = 10,
-  result = value + 10;
+  function doSomething(item) {
+    // 执行某些操作
+  }
 
-function doSomething(item) {
-  // 执行某些操作
-}
-
-for (i=0, len=items.length; i < len; i++) {
-  doSomething(items[i]);
-}
+  for (i=0, len=items.length; i < len; i++) {
+    doSomething(items[i]);
+  }
 }
 ```
 
-
-
+# 严格模式
 
 ```javascript
 // Good
@@ -1911,7 +1417,7 @@ function doSomething() {
 }
 ```
 
-如果你想让严格模式应用到多个函数，而又不需要多次编写 "use strict"，可以使用立即调用函数表达式：
+如果你想让严格模式应用到多个函数，而又不需要多次编写 `"use strict"`，可以使用立即调用函数表达式：
 
 ```javascript
 // Good
@@ -1928,17 +1434,17 @@ function doSomething() {
 })();
 ```
 
-在这个示例中，`doSomething()` 和 `doSomethingElse()` 均在严格模式下运行，因为它们被包含在一个已经指定了 "use strict" 的立即调用函数中。
+在这个示例中，`doSomething()` 和 `doSomethingElse()` 均在严格模式下运行，因为它们被包含在一个已经指定了 `"use strict"` 的立即调用函数中。
 
-当 "use strict" 在函数外部时，JSLint 和 JSHint 都会发出警告。它们都期望所有函数默认都指定了 "use strict"；这在两个工具中都可以关闭。我建议尽可能在任何地方使用严格模式以限制常见的错误。
+当 `"use strict"` 在函数外部时，JSLint 和 JSHint 都会发出警告。它们都期望所有函数默认都指定了 `"use strict"`；这在两个工具中都可以关闭。我建议尽可能在任何地方使用严格模式以限制常见的错误。
 
-## 等性 (Equality)
+# 等性 (Equality)
 
 由于类型转换（type coercion），JavaScript 中的等性比较变得非常复杂。类型转换会将特定类型的变量自动转换为另一种类型，以便特定的操作能够成功，这可能会导致意想不到的结果。
 
-类型转换发生的主要区域之一是使用等性运算符 `==` 和 `!=`。当比较的两个值不是相同的数据类型时，这两个运算符会引起转换；如果类型相同，则不会发生转换。在许多情况下，这段代码的行为可能与你的预期。
+类型转换发生的主要区域之一是使用等性运算符 `==` 和 `!=`。当比较的两个值不是相同的数据类型时，这两个运算符会引起转换；如果类型相同，则不会发生转换。在许多情况下，这段代码的行为可能与你的预期不符。
 
-如果你将数字与字符串进行比较，字符串会先转换为数字，然后进行比较。示例示例：
+如果你将数字与字符串进行比较，字符串会先转换为数字，然后进行比较。示例：
 
 ```javascript
 // 数字 5 和字符串 "5"
@@ -1965,21 +1471,21 @@ console.log(0 == false); // true
 console.log(2 == true); // false
 ```
 
-如果其中一个值是对象而另一个不是，则会调用对象的 `valueOf()` 方法来获取一个用于比较的值。如果 `valueOf()` 未定义，则会代调用 `toString()`。之后，比较将继续遵循之前讨论过的关于混合类型的规则。例如：
+如果其中一个值是对象而另一个不是，则会调用对象的 `valueOf()` 方法来获取一个用于比较的值。如果 `valueOf()` 未定义，则会调用 `toString()`。之后，比较将继续遵循之前讨论过的关于混合类型的规则。例如：
 
 ```javascript
 var object = {
   toString: function() {
-    return "019"
+    return "0x19"
   }
 };
 
 console.log(object == 25); // true
 ```
 
-该对象被认为等于数字 25，因为 `toString()` 方法返回了十六进制字符串 "019"，它在与 25 比较之前被转换成了数字。
+该对象被认为等于数字 25，因为 `toString()` 方法返回了十六进制字符串 `"0x19"`，它在与 25 比较之前被转换成了数字。
 
-最后一次类型转换发生在 `null` 和 `undefined` 之间。这两个特殊值仅仅根据 ECMAScript 标准的字面意思就认为认为是等的：
+最后一次类型转换发生在 `null` 和 `undefined` 之间。这两个特殊值仅仅根据 ECMAScript 标准的字面意思就认为是相等的：
 
 ```javascript
 console.log(null == undefined); // true
@@ -1999,35 +1505,20 @@ console.log(25 === "0x19"); // false
 
 ```javascript
 // 数字 1 和 true
-console.log(1 == true);
-console.log(1 === true);
-```
-
-```javascript
-// true
-// false
+console.log(1 == true); // true
+console.log(1 === true); // false
 ```
 
 ```javascript
 // 数字 0 和 false
-console.log(0 == false);
-console.log(0 === false);
-```
-
-```javascript
-// true
-// false
+console.log(0 == false); // true
+console.log(0 === false); // false
 ```
 
 ```javascript
 // 数字 2 和 true
-console.log(2 == true);
-console.log(2 === true);
-```
-
-```javascript
-// false
-// false
+console.log(2 == true); // false
+console.log(2 === true); // false
 ```
 
 ```javascript
@@ -2040,48 +1531,31 @@ var object = {
 
 ```javascript
 // 一个对象和 25
-console.log(object == 25);
-console.log(object === 25);
-```
-
-```javascript
-// true
-// false
+console.log(object == 25); // true
+console.log(object === 25); // false
 ```
 
 ```javascript
 // Null 和 undefined
-console.log(null == undefined);
-console.log(null === undefined);
+console.log(null == undefined); // true
+console.log(null === undefined); // false
 ```
 
-```javascript
-// true
-// false
-```
-
-Crockford 的代码规范、jQuery 风格指南以及 SproutCore 风格指南建议使用 `==` 和 `!=`。Crockford 建议一直使用，但特别是针对与假值进行比较（会被转换为假值的值，例如 0、空字符串、`null` 和 `undefined`）。jQuery 风格指南警告在使用 `==` 与 `null` 进行比较时，如果你的意图是同时测试 `null` 和 `undefined` 时。我建议无例外地一直使用 `==` 和 `!=`。
+Crockford 的代码规范、jQuery 风格指南以及 SproutCore 风格指南建议使用 `===` 和 `!==`。Crockford 建议一直使用，但特别是针对与假值进行比较（会被转换为假值的值，例如 0、空字符串、`null` 和 `undefined`）。jQuery 风格指南警告在使用 `==` 与 `null` 进行比较时，如果你的意图是同时测试 `null` 和 `undefined` 时。我建议无例外地一直使用 `===` 和 `!==`。
 
 JSLint 默认对所有对 `==` 和 `!=` 的使用发出警告。JSHint 警告在使用 `==` 和 `!=` 比较假值时。你可以通过 `eqeq` 选项关闭对 `==` 和 `!=` 的警告。
 
+# 第二部分：编程实践
 
+> “构建软件设计有两种方法：一种是让它变得简单到至于显然没有缺陷，另一种方法是让它变得复杂到至于没有显见的缺陷。” —— C.A.R. Hoare，1980 年 ACM 图灵奖获奖演讲
 
-
-
-# 第二部分
-
-# 编程实践
-
-> “构建软件设计有两种方法：一种是让它变得简单到至于显然没有缺陷，另一种方法是让它变得复杂到至于没有显见的缺陷。” —— C.A.R. Hoare，1980 年 ACM 灵灵奖获奖演讲
-
-本书的第一部分涵盖了 JavaScript 的风格指南。风格指南旨在让代码无论由谁编写，看起来都是同一个风格的。而风格指南没有涵盖的是如何解决常见问题。这正是编程大显用场的地方。编程实践是另一种类型的代码规范。如果说风格指南关注的是代码的外观，那么编程实践关注的就是代码的结果。你可以将编程实践比作食谱——它们帮助开发者以某种方式编写代码，使得最终结果是可预知的。如果你曾经用过设计模式，例如模型-视图-控制器（MVC）中的观察者模式，那么你已经熟悉编程实践了。设计模式是解决与软件组织特定问题的编程实践。
+本书的第一部分涵盖了 JavaScript 的风格指南。风格指南旨在让代码无论由谁编写，看起来都是同一个风格的。而风格指南没有涵盖的是如何解决常见问题。这正是编程实践大显用场的地方。编程实践是另一种类型的代码规范。如果说风格指南关注的是代码的外观，那么编程实践关注的就是代码的结果。你可以将编程实践比作食谱——它们帮助开发者以某种方式编写代码，使得最终结果是可预知的。如果你曾经用过设计模式，例如模型-视图-控制器（MVC）中的观察者模式，那么你已经熟悉编程实践了。设计模式是解决与软件组织特定问题的编程实践。
 
 本节中的编程实践涵盖了非常微小的问题。这些实践可能被某些人认为是设计模式，但大多数是提高代码整体质量的简单技巧。
 
 ESLint 和 JSHint 除了样式问题外，还包含了一些针对编程实践的警告。强烈建议在 JavaScript 开发中使用这些工具之一，以标记出隐藏且难以发现的问题。
 
-# 第 5 章
-UI 层的松耦合
+# 第 5 章：UI 层的松耦合
 
 在 Web 开发中，用户界面（UI）由三个共同工作的独立层定义：
 
@@ -2092,19 +1566,17 @@ UI 层的松耦合
 这些 UI 层通常被描绘为 HTML 位于底部，CSS 和 JavaScript 层位于上方，如图 5-1 所示。
 
 | JavaScript |
-| ----------- |
-| CSS |
-| HTML |
+| ---------- |
+| CSS        |
+| HTML       |
 
 图 5-1. Web 用户界面的层
 
 但实际上，CSS 和 JavaScript 的关系更像是兄弟，而不是 JavaScript 对 CSS 的依赖。完全可以有一个只有 HTML 和 CSS 而没有 JavaScript 的页面，也可以有一个只有 HTML 和 JavaScript 而没有 CSS 的页面。我更倾向于将这三层之间的关系认为如图 5-2 所示。
 
-认为 CSS 和 JavaScript 在整个 Web 用户界面中具有同等地位，可以提供更多的可能性并消除依赖。例如，JavaScript 不应该依赖 CSS 来正常运行——它应该能够独立于 CSS 运行，即使两者之间存在某些交互。
-
-| CSS | JavaScript |
-| ----- | ----------- |
-| HTML | |
+| CSS        | JavaScript |
+| ---------- | ---------- |
+| HTML       |            |
 
 图 5-2. 更新后的 Web 用户界面层
 
@@ -2126,45 +1598,37 @@ Web UI 的每一层都是一个更大型系统的一部分，必须进行维护�
 
 Internet Explorer 8 及更早版本中有一个让一些人喜爱而许多人讨厌的功能：CSS 表达式允许你将 JavaScript 直接插入到 CSS 中，直接在 CSS 代码内部执行计算或其他功能。例如，以下代码将元素的宽度设置为与浏览器宽度匹配：
 
-```
-/* 坏的示例 * */
+```css
+/* 坏的示例 */
 .box {
   width: expression(document.body.offsetWidth + "px");
 }
 ```
 
-CSS 表达式被封装在特殊的 `expression()` 函数中，该函数接受任何 JavaScript 代码。浏览器会频繁重新评估 CSS 表达式，这被认为对性能是有利的，甚至在 Steve Souders 的书籍《高性能网站》中被列为需要规避的内容（规则 7：避免 CSS 表达式）。
+CSS 表达式被封装在特殊的 `expression()` 函数中，该函数接受任何 JavaScript 代码。浏览器会频繁重新评估 CSS 表达式，这被认为对性能是有害的，甚至在 Steve Souders 的书籍《高性能网站》中被列为需要规避的内容（规则 7：避免 CSS 表达式）。
 
-除了性能问题外，在 CSS 中嵌入 JavaScript 是一场维护噩梦，我曾亲身经历过。2005 年，我被分配修复一个 JavaScript Bug，从开始开始我就一直在与之斗争。它只出现在 Internet Explorer 中，并且只在浏览器窗口缩放几次时发生。在那个时代，Internet Explorer 最好的 JavaScript 调试器是 Visual Studio，但它未能找到问题的根源。我花了一整天设置断点并插入 `alert()` 语句来弄清楚发生了什么。
+除了性能问题外，在 CSS 中嵌入 JavaScript 是一场维护噩梦，我曾亲身经历过。2005 年，我被分配修复一个 JavaScript Bug，从一开始我就一直在与之斗争。它只出现在 Internet Explorer 中，并且只在浏览器窗口缩放几次时发生。在那个时代，Internet Explorer 最好的 JavaScript 调试器是 Visual Studio，但它未能找到问题的根源。我花了一整天设置断点并插入 `alert()` 语句来弄清楚发生了什么。
 
 到当天结束时，我接受了我最喜欢的调试方法：系统地删除代码。我一个文件一个文件地移除 JavaScript，直到删除了页面上所有的 JavaScript。Bug 仍然在那里。我不置信地看着我的电脑。页面上没有任何 JavaScript 却出现了一个 JavaScript 错误——这怎么可能？
 
-直到今天，我仍然不是什么最终让我去查看 CSS 的。在那个时刻，我不确定自己在寻找什么。我从 CSS 的顶部开始，缓慢向下滚动，看是否有任何东西跳入视线。最后，我看到了问题所在的 CSS 表达式。当我移除它时，JavaScript 错误消失了。
+直到今天，我仍然不确定是什么最终让我去查看 CSS 的。在那个时刻，我不确定自己在寻找什么。我从 CSS 的顶部开始，缓慢向下滚动，看是否有任何东西跳入视线。最后，我看到了问题所在的 CSS 表达式。当我移除它时，JavaScript 错误消失了。
 
 正是这段经历导致了我在本章制定规则。我花了一整天时间在 JavaScript 中寻找一个 JavaScript Bug，而它实际上在 CSS 中。实际错误并不难解决，但在我（理应）不会发现它的地方追踪它是极其耗时的。
 
-幸运的是，Internet Explorer 9 删除了对 CSS 表达式的支持，但旧版本的 Internet Explorer 仍在全球范围内使用。尽管这样做诱人
-
-将 JavaScript 移出 CSS | 55
-
-
-
-
-
-使用 CSS 表达式来弥补这些旧版浏览器的一些缺失功能，请克制这种冲动，为你节省大量的精力。将 JavaScript 排除在 CSS 之外。
+幸运的是，Internet Explorer 9 删除了对 CSS 表达式的支持，但旧版本的 Internet Explorer 仍在全球范围内使用。尽管这样做诱人，请克制这种冲动，为你节省大量的精力。将 JavaScript 排除在 CSS 之外。
 
 ### 保持 CSS 离开 JavaScript
 
-在 CSS 和 JavaScript 之间保持这种洁洁分离有时具有挑战性。这两种语言协同工作，因此在 JavaScript 中操作样式数据是非常诱人的。编写样式更改的最常用方法是通过使用任何 DOM 元素上的 `style` 属性。`style` 属性是一个对象，包含了允许你读取和更改 CSS 属性的属性。例如，你可以像这样更改元素的文本颜色：
+在 CSS 和 JavaScript 之间保持这种清晰分离有时具有挑战性。这两种语言协同工作，因此在 JavaScript 中操作样式数据是非常诱人的。编写样式更改的最常用方法是通过使用任何 DOM 元素上的 `style` 属性。`style` 属性是一个对象，包含了允许你读取和更改 CSS 属性的属性。例如，你可以像这样更改元素的文本颜色：
 
-```
+```javascript
 // 错误
 element.style.color = "red";
 ```
 
 实际上，使用大块代码样式来更改多个属性是非常常见的现象，例如：
 
-```
+```javascript
 // 错误
 element.style.color = "red";
 element.style.left = "10px";
@@ -2176,12 +1640,12 @@ element.style.visibility = "visible";
 
 开发者使用的另一种方法是通过 `cssText` 属性设置整个 CSS 字符串，如下例所示：
 
-```
+```javascript
 // 错误
 element.style.cssText = "color: red; left: 10px; top: 100px; visibility: hidden";
 ```
 
-保持 CSS 离开 JavaScript 意味着所有的样式信息仍然仍然存在于 CSS 中。当 JavaScript 需要更改元素的样式时，最好的方法是操作 CSS 类。例如，为了在页面上显示一个对话框，可以在你的 CSS 中定义这样一个类：
+保持 CSS 离开 JavaScript 意味着所有的样式信息仍然存在于 CSS 中。当 JavaScript 需要更改元素的样式时，最好的方法是操作 CSS 类。例如，为了在页面上显示一个对话框，可以在你的 CSS 中定义这样一个类：
 
 ```css
 .reveal {
@@ -2196,7 +1660,7 @@ element.style.cssText = "color: red; left: 10px; top: 100px; visibility: hidden"
 
 ```javascript
 // 良好 - 原生
-element.className += "reveal";
+element.className += " reveal";
 
 // 良好 - HTML5
 element.classList.add("reveal");
@@ -2236,9 +1700,7 @@ dojo.addClass(element, "reveal");
 function doSomething() {
   // 代码
 }
-```
 
-```javascript
 var btn = document.getElementById('action-btn');
 btn.addEventListener("click", doSomething, false);
 ```
@@ -2248,7 +1710,7 @@ btn.addEventListener("click", doSomething, false);
 Internet Explorer 8 及更早版本不支持 `addEventListener()`，因此你可能需要一个函数来规范化差异：
 
 ```javascript
-function addlistener(target, type, handler) {
+function addListener(target, type, handler) {
   if (target.addEventListener) {
     target.addEventListener(type, handler, false);
   } else if (target.attachEvent) {
@@ -2265,11 +1727,9 @@ function addlistener(target, type, handler) {
 function doSomething() {
   // 代码
 }
-```
 
-```javascript
 var btn = document.getElementById('action-btn');
-addlistener(btn, "click", doSomething);
+addListener(btn, "click", doSomething);
 ```
 
 如果你在使用 JavaScript 库，你应该使用库的方法为元素添加事件处理程序。以下是一些流行库的常见示例：
@@ -2286,7 +1746,7 @@ $("#action-btn").on("click", doSomething);
 
 ```javascript
 // Dojo
-var btn = do.byId("action-btn");
+var btn = dojo.byId("action-btn");
 dojo.connect(btn, "click", doSomething);
 ```
 
@@ -2313,8 +1773,6 @@ var div = document.getElementById("my-div");
 div.innerHTML = "<h3></h3><p>无效的电子邮件地址。</p>";
 ```
 
-
-
 在浏览器的检查器中查看 DOM 树，然后查看页面的 HTML 源以寻找差异。当 JavaScript 执行的不仅仅是 DOM 操作时，追踪这些问题就会变得更加棘手。
 
 这种方法的第二个问题是可维护性。如果你需要更改文本或标记，你希望能够只去一个地方：即管理 HTML 的地方。这可能在 PHP 代码中、JSP 文件中或像 Mustache 或 Handlebars 模板中。无论使用何种机制，你都将所有的标记保留在一个位置，以便于更新。嵌入在 JavaScript 中的标记并不便于修改，因为它们是意料之外的。如果大多数标记都在模板文件目录中，你为什么会想到进入 JavaScript 去修改标记呢？
@@ -2323,7 +1781,7 @@ div.innerHTML = "<h3></h3><p>无效的电子邮件地址。</p>";
 
 由于 Web 应用本质上是动态的，且 JavaScript 经常用于在页面生命期间更改 UI，因此使用 JavaScript 在页面上插入或操作标记是绝对必要的。有几种方法可以以松耦合的方式实现这一点。
 
-### 替代方案 #1：从服务器加载
+#### 替代方案 #1：从服务器加载
 
 第一种是复制模板并使用 `XMLHttpRequest` 对象获取额外的标记。这种方法对于单页应用程序比多页应用程序更方便。例如，点击一个应该弹出新对话框的链接看起来像这样：
 
@@ -2361,13 +1819,15 @@ function loadDialog(name, onclick) {
 
 当你需要向页面注入大量 HTML 时，使用远程调用来注入标记也是很有用的。出于性能考虑，在内存或 DOM 中保留大量未使用的标记通常不是一个好主意。对于较小的标记块，你可能想要考虑客户端模板。
 
-### 替代方案 #2：简单的客户端模板
+#### 替代方案 #2：简单的客户端模板
 
 客户端模板是带有槽的标记片段，这些槽必须由 JavaScript 填充才能完成。例如，一个添加到列表的模板可能像这样：
 
-- `<li><a href="%s"></a></li>`
+```html
+<li><a href="%s"></a></li>
+```
 
-该模板具有 %s 占位符，用于插入文本的区域（这与 C 语言中的 `sprintf()` 格式相同）。其目的是让 JavaScript 在将结果注入 DOM 之前将这些占位符替换为真实数据。以下是使用它的函数：
+该模板具有 `%s` 占位符，用于插入文本的区域（这与 C 语言中的 `sprintf()` 格式相同）。其目的是让 JavaScript 在将结果注入 DOM 之前将这些占位符替换为真实数据。以下是使用它的函数：
 
 ```javascript
 function sprintf(text) {
@@ -2376,9 +1836,7 @@ function sprintf(text) {
     return (i < args.length) ? args[i++] : "";
   });
 }
-```
 
-```javascript
 // usage
 var result = sprintf(templateText, "item/4");
 ```
@@ -2386,15 +1844,17 @@ var result = sprintf(templateText, "item/4");
 将模板文本获取到 JavaScript 中是任何脚本的重要部分。自然地，你不希望模板文本嵌入在其中的程度超过标记嵌入那里的。模板通常作为其他标记定义在相应区域，并通过将它们直接嵌入 HTML 页面来使 JavaScript 可以访问，这有两种实现方式。第一种是将模板作为 HTML 注释包含。注释与元素和文本一样的 DOM 节点，因此可以使用 JavaScript 进行查询并提取其内容。例如：
 
 ```html
-<ul id="mylistist">
-<!--<li id="item%s"><a href="%s"></a></li>
+<ul id="mylist">
+<!--
+<li id="item%s"><a href="%s"></a></li>
+-->
   <li><a href="item/1">First item</a></li>
   <li><a href="item/2">Second item</a></li>
   <li><a href="item/3">Third item</a></li>
-</</ul>
+</ul>
 ```
 
-注释被放置在其使用的正确语文中，就像它是将被使用的列表的第一个子元素一样。以下 JavaScript 从注释中检索模板文本：
+注释被放置在其使用的正确语境中，就像它是将被使用的列表的第一个子元素一样。以下 JavaScript 从注释中检索模板文本：
 
 ```javascript
 var mylist = document.getElementById("mylist");
@@ -2404,7 +1864,7 @@ var templateText = mylist.firstChild.nodeValue;
 一旦检索了模板，就需要对其进行格式化并插入到 DOM 中。这一切通过以下函数完成：
 
 ```javascript
-function additem(url, text) {
+function addItem(url, text) {
   var mylist = document.getElementById("mylist"),
       templateText = mylist.firstChild.nodeValue,
       result = sprintf(templateText, url, text),
@@ -2446,7 +1906,7 @@ div.innerHTML = result;
 mylist.appendChild(div.firstChild);
 ```
 
-### 替代方案 #3：复杂的客户端模板
+#### 替代方案 #3：复杂的客户端模板
 
 前一节使用的模板格式非常简单，没有进行任何转义。对于更健壮的模板，你可能想要考虑像 Handlebars 这样的解决方案。Handlebars 是一种为与浏览器中的 JavaScript 而设计的客户端模板系统。
 
@@ -2464,7 +1924,7 @@ Handlebars 模板中的占位符是命名的，以便与 JavaScript 中的命名
 </script>
 ```
 
-要使用模板，你必须在页面上包含 Handlebars JavaScript 库，这创建一个全局变量 Handlebars 来编译模板：
+要使用模板，你必须在页面上包含 Handlebars JavaScript 库，这创建一个全局变量 `Handlebars` 来编译模板：
 
 ```javascript
 var script = document.getElementById("list-item"),
@@ -2472,7 +1932,7 @@ var script = document.getElementById("list-item"),
     template = Handlebars.compile(templateText);
 ```
 
-变量 `template` 现在包含一个函数，该函数在执行时返回一个格式化后的字符串。你只需要传递一个包含 name 和 url 属性的对象：
+变量 `template` 现在包含一个函数，该函数在执行时返回一个格式化后的字符串。你只需要传递一个包含 `name` 和 `url` 属性的对象：
 
 ```javascript
 var result = template({
@@ -2483,7 +1943,7 @@ var result = template({
 
 将它们合并成一个函数：
 
-```
+```javascript
 function addItem(url, text) {
   var mylist = document.getElementById("mylist");
   script = document.getElementById("list-item");
@@ -2504,19 +1964,19 @@ addItem("/item/4", "Fourth item");
 
 这个示例并没有真正展示 Handlebars 的灵活性。除了简单的占位符替换外，Handlebars 还允许你在模板中加入简单的逻辑和循环。
 
-假设你想渲染整个列表而不是单个项目，但你只想在确实有项目需要渲染时才执行此操作。你可以创建一个如下所示的 Handlebars 模板
+假设你想渲染整个列表而不是单个项目，但你只想在确实有项目需要渲染时才执行此操作。你可以创建一个如下所示的 Handlebars 模板：
 
-```
+```html
 {{#if items}}
 <ul>
-  {{each items}}
+  {{#each items}}
   <li><a href="{{url}}">{{text}}</a></li>
   {{/each}}
 </ul>
 {{/if}}
 ```
 
-{{#if}} 块辅助器可以防止在 items 数组至少包含一个元素的情况下渲染其包含的标记。然后 {{#each}} 块辅助器会遍历数组中的每个元素。因此，在下面的示例中，你将模板编译为函数并传入一个带有 items 属性的对象：
+`{{#if}}` 块辅助器可以防止在 `items` 数组至少包含一个元素的情况下渲染其包含的标记。然后 `{{#each}}` 块辅助器会遍历数组中的每个元素。因此，在下面的示例中，你将模板编译为函数并传入一个带有 `items` 属性的对象：
 
 ```javascript
 // 返回一个空字符串
@@ -2526,29 +1986,29 @@ var result = template({
 
 // 返回包含两个项目的列表的 HTML
 var result = template({
-  {
-    text: "First item",
-    url: "/item/1"
-  },
-  {
-    text: "Second item",
-    url: "/item/2"
-  }
+  items: [
+    {
+      text: "First item",
+      url: "/item/1"
+    },
+    {
+      text: "Second item",
+      url: "/item/2"
+    }
+  ]
 });
 ```
 
 Handlebars 还有其他的块辅助器——它们都旨在为 JavaScript 带来强大的模板功能。
 
-# 第 6 章
+# 第 6 章：避免全局变量
 
-## 避免全局变量
+JavaScript 执行环境在很多方面都是独特的。其中一种方式就是全局变量和函数的使用。事实上，默认的 JavaScript 执行环境是由脚本执行开始时可用的各种全局变量定义的。所有这些变量都被认为定义在全局对象（global object）上，这是一个代表脚本最外层上下文的神秘对象。
 
-JavaScript 执行环境在很多方面都是独特的。其中一种方式就是全局变量和函数的使用。事实上，默认的 JavaScript 执行环境是由脚本执行开始时可用的各种全局变量定义的。所有这些变量都被认为定义在全局对象（global object）上，这是一个代表脚本最外上下文的神秘对象。
-
-在浏览器中，window 对象通常被重载为全局对象，因此在全局作用域中声明任何变量或函数都会成为窗口对象的属性。例如：
+在浏览器中，`window` 对象通常被重载为全局对象，因此在全局作用域中声明任何变量或函数都会成为窗口对象的属性。例如：
 
 ```javascript
-var color = "red"
+var color = "red";
 
 function say() {
   alert(color);
@@ -2558,9 +2018,9 @@ console.log(window.color); // "red"
 console.log(typeof say); // "function"
 ```
 
-在此代码中，全局变量 color 和全局函数 say 都被添加为了窗口对象的属性，尽管它们并没有被显式设置这样做。
+在此代码中，全局变量 `color` 和全局函数 `say` 都被添加为了窗口对象的属性，尽管它们并没有被显式设置这样做。
 
-### 全局变量的问题
+## 全局变量的问题
 
 创建全局变量被认为是一种不好的做法，在团队开发环境中特别有问题。全局变量会为后续代码引入许多复杂的维护问题。全局变量越多，由于意外引入错误的可能性就越大。
 
@@ -2568,7 +2028,7 @@ console.log(typeof say); // "function"
 
 随着脚本中全局变量和函数数量的增加，命名冲突的风险也随之增加。最容易维护的代码是所有变量都在局部定义的代码。
 
-例如，考虑上一个示例中的 say() 函数。它依赖全局变量 color 才能正常运行。如果 say() 定义在单独的文件中，将很难追踪：
+例如，考虑上一个示例中的 `say()` 函数。它依赖全局变量 `color` 才能正常运行。如果 `say()` 定义在单独的文件中，将很难追踪：
 
 ```javascript
 function sayColor() {
@@ -2576,11 +2036,11 @@ function sayColor() {
 }
 ```
 
-此外，如果 color 被定义在多个地方，say() 的结果将取决于该函数如何被使用。全局环境是由原生 JavaScript 对象定义的，通过将你自己的名称添加到该作用域，你面临着与即将原生 API 发生冲突的风险。
+此外，如果 `color` 被定义在多个地方，`say()` 的结果将取决于该函数如何被使用。全局环境是由原生 JavaScript 对象定义的，通过将你自己的名称添加到该作用域，你面临着与原生 API 发生冲突的风险。
 
 ### 代码脆弱性
 
-依赖全局变量的函数与环境紧密耦合。如果环境发生变化，函数很可能会崩溃。在上一个示例中，如果全局变量 color 不存在，say() 方法将抛出错误。此外，全局变量可以在任何时候被任何函数更改，使得其值的可靠性非常低下。如果 color 作为参数传入，这个版本的函数要易于维护得多：
+依赖全局变量的函数与环境紧密耦合。如果环境发生变化，函数很可能会崩溃。在上一个示例中，如果全局变量 `color` 不存在，`say()` 方法将抛出错误。此外，全局变量可以在任何时候被任何函数更改，使得其值的可靠性非常低下。如果 `color` 作为参数传入，这个版本的函数要易于维护得多：
 
 ```javascript
 function sayColor(color) {
@@ -2596,7 +2056,11 @@ function sayColor(color) {
 
 任何依赖全局变量的函数都要求你在测试该函数时重建整个全局环境。实际上，这意味着你不仅在一个全局环境中管理更改，而且在两个全局环境（生产和测试）中管理。这增加了保持它们同步的成本，并且开启了一个难以理顺的维护噩梦。
 
-确保你的函数不依赖全局变量可以提高代码的可测试性。当然，你的函数可以依赖于 JavaScript 原生的全局变量，如 Date、Array。你的函数可以始终假设全局变量会存在。但不要让你的函数依赖于你为了引入引入引入的全局变量。。 最隐蔽的部分之一是意外创建全局变量的能力。当你给一个之前在语句中定义的变量赋值时，JavaScript 会自动创建一个全局变量。例如：
+确保你的函数不依赖全局变量可以提高代码的可测试性。当然，你的函数可以依赖于 JavaScript 原生的全局变量，如 `Date`、`Array`。你的函数可以始终假设全局变量会存在。但不要让你的函数依赖于你为了引入引入引入的全局变量。
+
+### 意外全局变量
+
+JavaScript 最隐蔽的部分之一是意外创建全局变量的能力。当你给一个之前未在语句中定义的变量赋值时，JavaScript 会自动创建一个全局变量。例如：
 
 ```javascript
 function something() {
@@ -2605,11 +2069,11 @@ function something() {
 }
 ```
 
-这段代码代表了意外引入全局变量的常见错误。作者可能想用一个 var 语句声明两个变量，但不小心在第一个变量后使用了分号而不是逗号。结果是 title 是一个全局变量。
+这段代码代表了意外引入全局变量的常见错误。作者可能想用一个 `var` 语句声明两个变量，但不小心在第一个变量后使用了分号而不是逗号。结果是 `title` 是一个全局变量。
 
-当你尝试创建一个与全局变量同名的局部变量时，问题会变得更加严重。例如，一个名为 count 的全局变量会被上一个示例中的局部 count 遮蔽。函数随后只能访问局部 count，除非显式地使用 window.count 访问全局变量。这种安排是可以接受的。
+当你尝试创建一个与全局变量同名的局部变量时，问题会变得更加严重。例如，一个名为 `count` 的全局变量会被上一个示例中的局部 `count` 遮蔽。函数随后只能访问局部 `count`，除非显式地使用 `window.count` 访问全局变量。这种安排是可以接受的。
 
-意外遗漏 var 语句可能意味着你在不知情的情况下更改了现有全局变量的值。考虑以下内容
+意外遗漏 `var` 语句可能意味着你在不知情的情况下更改了现有全局变量的值。考虑以下内容：
 
 ```javascript
 function doSomething() {
@@ -2618,35 +2082,32 @@ function doSomething() {
 }
 ```
 
-在这个示例中，错误更加离谱，因为 name 实际上是 window 的默认属性。window.name 属性经常用于帧或 iframe，当链接的目标是显示在帧或标签页中时，更改可能会影响链接的导航。
+在这个示例中，错误更加离谱，因为 `name` 实际上是 `window` 的默认属性。`window.name` 属性经常用于帧或 iframe，当链接的目标是显示在帧或标签页中时，更改可能会影响链接的导航。
 
-一个好的经验规则是始终使用 var 来定义变量，即使它们是全局的。这样在某些情况下比遗漏 var 要不容易出错。
+一个好的经验规则是始终使用 `var` 来定义变量，即使它们是全局的。这样在某些情况下比遗漏 `var` 要不容易出错。
 
 ### 避免意外全局变量
 
-JavaScript 默认不会在你意外创建全局变量时警告你。这时像 JLint 和 JSHint 这样的工具会在给一个未声明的变量赋值时警告你。例如：
+JavaScript 默认不会在你意外创建全局变量时警告你。这时像 JSLint 和 JSHint 这样的工具会在给一个未声明的变量赋值时警告你。例如：
 
 ```javascript
 foo = 10;
 ```
 
-JLint 和 JSHint 都会发出“foo 未定义”的警告，让你知道 foo 从未通过语句声明过。
+JSLint 和 JSHint 都会发出“foo 未定义”的警告，让你知道 `foo` 从未通过语句声明过。
 
-JLint 和 JSHint 也足够智能察察到你正在意外更改某些全局变量的值。在覆盖 name 值的示例中，JLint 和 JSHint 警告该变量是只读的。事实上，该变量并不是只读；但应该被视为只读，因为更改原生全局几乎会导致错误。
+JSLint 和 JSHint 也足够智能察觉到你正在意外更改某些全局变量的值。在覆盖 `name` 值的示例中，JSLint 和 JSHint 警告该变量是只读的。事实上，该变量并不是只读；但应该被视为只读，因为更改原生全局几乎会导致错误。
 
-严格模式改变了解析和执行 JavaScript 的某些规则，为这个问题提供了解决方案。通过在函数顶部添加 "use strict"，你指示 JavaScript 引擎应用更严格的错误处理和语法检查。这些变化之一是能够检测对未声明变量的赋值。例如：
+严格模式改变了解析和执行 JavaScript 的某些规则，为这个问题提供了解决方案。通过在函数顶部添加 `"use strict"`，你指示 JavaScript 引擎应用更严格的错误处理和语法检查。这些变化之一是能够检测对未声明变量的赋值。例如：
 
 ```javascript
-"use strict"
+"use strict";
 foo = 10;
 ```
 
-如果你尝试在支持严格模式的环境（Internet Explorer 10+、Firefox 4+、Safari 5.1+、Opera 12+ 或 Chrome）中编码，将抛出一个 ReferenceError，信息为“foo 未定义”。
+如果你尝试在支持严格模式的环境（Internet Explorer 10+、Firefox 4+、Safari 5.1+、Opera 12+ 或 Chrome）中编码，将抛出一个 `ReferenceError`，信息为“foo 未定义”。
 
-开启严格模式会改变许多 JavaScript 行为，因此在处理旧代码时要谨慎使用。对于新代码，最好始终使用 var 来避免意外全局变量，这也是严格模式可以捕获的其他常见编程错误。
-
-
-
+开启严格模式会改变许多 JavaScript 行为，因此在处理旧代码时要谨慎使用。对于新代码，最好始终使用 `var` 来避免意外全局变量，这也是严格模式可以捕获的其他常见编程错误。
 
 ### 单一全局方法 (The One-Global Approach)
 
@@ -2655,19 +2116,17 @@ foo = 10;
 所有流行的 JavaScript 库都使用了单一全局方法：
 
 - YUI 定义了一个单一的全局对象。
-- jQuery 实际上定义了两个全局变量：$ 和 jQuery。后者仅在与同样包含 $ 的其他库在页面中使用时为了兼容性而添加。
+- jQuery 实际上定义了两个全局变量：`$` 和 `jQuery`。后者仅在与同样包含 `$` 的其他库在页面中使用时为了兼容性而添加。
 - Closure 库定义了一个单一的全局对象。
 
-单一全局方法的核心思想是创建一个名称唯一的全局变量（该名称不太会被原生 API 使用），然后将你的所有功能挂载到该全局变量上。与其创建多个全局变量，每个全局变量每个变为一个全局对象的属性。例如，假设我想拥有这本书中的每一章。代码可能看起来如下：
+单一全局方法的核心思想是创建一个名称唯一的全局变量（该名称不太会被原生 API 使用），然后将你的所有功能挂载到该全局变量上。与其创建多个全局变量，不如让每个功能成为一个全局对象的属性。例如，假设我想拥有这本书中的每一章。代码可能看起来如下：
 
-```
+```javascript
 function Book(title) {
   this.title = title;
   this.page = 1;
 }
-```
 
-```
 Book.prototype.turnPage = function(direction) {
   this.page += direction;
 };
@@ -2677,13 +2136,11 @@ var Chapter2 = new Book("Basic Formatting");
 var Chapter3 = new Book("Comments");
 ```
 
-这段代码创建了四个全局变量：Book、Chapter1、Chapter2 和 Chapter3。单一全局方法是创建一个单一的全局变量并将它们每一个挂载其上：
+这段代码创建了四个全局变量：`Book`、`Chapter1`、`Chapter2` 和 `Chapter3`。单一全局方法是创建一个单一的全局变量并将它们每一个挂载其上：
 
-```
+```javascript
 var MaintainableJS = {};
-```
 
-```
 MaintainableJS.Book = function(title) {
   this.title = title;
   this.page = 1;
@@ -2691,30 +2148,27 @@ MaintainableJS.Book = function(title) {
 
 MaintainableJS.Book.prototype.turnPage = function(direction) {
   this.page += direction;
-}
-
+};
 
 MaintainableJS.Chapter1 = new MaintainableJS.Book("Introduction to Style Guidelines");
 MaintainableJS.Chapter2 = new MaintainableJS.Book("Basic Formatting");
 MaintainableJS.Chapter3 = new MaintainableJS.Book("Comments");
 ```
 
-这段代码只有一个全局变量 MaintainableJS，所有其他信息都挂载在上面。只要大家都意识到这个单一全局变量，就可以轻松地继续向它添加属性并避免全局污染。
+这段代码只有一个全局变量 `MaintainableJS`，所有其他信息都挂载在上面。只要大家都意识到这个单一全局变量，就可以轻松地继续向它添加属性并避免全局污染。
 
-### 命名空间 (Namespaces)
+## 命名空间 (Namespaces)
 
-你也可以开始轮询你的全局变量。大多数使用全局方法的项目也有命名空间的概念。命名空间简单地通过全局对象上的单个属性对功能进行逻辑分组。例如，YUI 的设置几乎完全是使用命名空间。Y.DOM 下的所有内容都是与 DOM 操作相关的方法，Y.Event 下的所有内容与事件有关，以此此类推。将功能分组到命名空间中为你的单一全局对象带来了秩序，并允许团队成员理解哪些新功能属于哪里，以及应该去哪里查找现有功能。当我在 Yahoo! 工作时，有一个不成文的约定，每个站点都会为 Y 对象添加它自己的命名空间来存放所有功能，My Yahoo 使用了 Y.Mail，这允许团队使用同一份代码而无需担心命名冲突。
+你也可以开始规划你的全局变量。大多数使用全局方法的项目也有命名空间的概念。命名空间简单地通过全局对象上的单个属性对功能进行逻辑分组。例如，YUI 的设置几乎完全是使用命名空间。`Y.DOM` 下的所有内容都是与 DOM 操作相关的方法，`Y.Event` 下的所有内容与事件有关，以此类推。将功能分组到命名空间中为你的单一全局对象带来了秩序，并允许团队成员理解哪些新功能属于哪里，以及应该去哪里查找现有功能。当我在 Yahoo! 工作时，有一个不成文的约定，每个站点都会为 `Y` 对象添加它自己的命名空间来存放所有功能，My Yahoo 使用了 `Y.Mail`，这允许团队使用同一份代码而无需担心命名冲突。
 
 你可以轻松在 JavaScript 中使用对象创建自己的命名空间，例如：
 
-```
+```javascript
 var ZakasBooks = {};
 
 // 此本书的命名空间
 ZakasBooks.MaintainableJavaScript = {};
-```
 
-```
 // 另一本书的命名空间
 ZakasBooks.HighPerformanceJavaScript = {};
 ```
@@ -2723,33 +2177,31 @@ ZakasBooks.HighPerformanceJavaScript = {};
 
 有时每个文件只是在向某个命名空间添加内容；在这种情况下，你可能希望更有把握命名空间已经存在。这时，一个非破坏性地处理命名空间的全局变量就很有用了。实现此点的基本模式是：
 
-```
+```javascript
 var YourGlobal = {
   namespace: function(ns) {
-    var parts = ns.split(".");
-    object = this,
-    i, len;
+    var parts = ns.split("."),
+        object = this,
+        i, len;
+
+    for (i=0, len=parts.length; i < len; i++) {
+      if (!object[parts[i]]) {
+        object[parts[i]] = {};
+      }
+      object = object[parts[i]];
+    }
+
+    return object;
   }
+};
 ```
 
-```
-for (i=0, len=parts.length; i < len; i++) {
-  if (object[parts[i]]) {
-    object[parts[i]] = {};
-  }
-  object = object[parts[i]];
-}
-
-return object;
-}
-```
-
-变量 `YourGlobal` 可以可以是任何名称。重要的部分是 `namespace()` 方法，它根据传入的字符串非破坏性地创建命名空间，并返回命名空间对象的引用。基本用法：
+变量 `YourGlobal` 可以是任何名称。重要的部分是 `namespace()` 方法，它根据传入的字符串非破坏性地创建命名空间，并返回命名空间对象的引用。基本用法：
 
 ```javascript
 /*
  * 同时创建 YourGlobal.Books 和 YourGlobal.MaintainableJavaScript
- * 它们之前都不，因此每个都是从头创建的。
+ * 它们之前都不存在，因此每个都是从头创建的。
  */
 YourGlobal.namespace("Books.MaintainableJavaScript");
 ```
@@ -2759,10 +2211,9 @@ YourGlobal.namespace("Books.MaintainableJavaScript");
 YourGlobal.Books.MaintainableJavaScript.author = "Nicholas C. Zakas";
 ```
 
-- 保持 YourGlobal.Books 不变并向其添加 HighPerformanceJavaScript。
-- 这让 YourGlobal.MaintainableJavaScript 完好无损。
-
-```
+```javascript
+// 保持 YourGlobal.Books 不变并向其添加 HighPerformanceJavaScript。
+// 这让 YourGlobal.MaintainableJavaScript 完好无损。
 YourGlobal.namespace("Books.HighPerformanceJavaScript");
 ```
 
@@ -2781,7 +2232,7 @@ YourGlobal.namespace("Books").Newbook = {};
 - 在代码的其他部分，确保定义一些命名空间约定。它们应该像 YUI 一样用大写字母开头吗？
 - 还是像 Dojo 一样用小写？预先定义这些选择允许团队更有效地使用单一全局方法。
 
-### 模块 (Modules)
+## 模块 (Modules)
 
 开发者另一种增强全局方法的方法是使用模块。模块是一个通用功能单元，它不创建全局变量或命名空间。相反，所有的代码都位于一个函数内部，该函数负责执行任务或发布接口。模块可以可选包含名称和模块依赖列表。
 
@@ -2789,21 +2240,21 @@ YourGlobal.namespace("Books").Newbook = {};
 
 ### YUI 模块
 
-正如你所期的，YUI 模块是你与 JavaScript 库协作创建新模块的方式。模块的概念在 YUI 3 中正式，采用以下格式：
+正如你所期望的，YUI 模块是你与 JavaScript 库协作创建新模块的方式。模块的概念在 YUI 3 中正式，采用以下格式：
 
-```
+```javascript
 YUI.add("module-name", function(Y) {
   // 模块体
-}, { "version", { requires: ["dependency1", "dependency2"] } });
+}, "1.0.0", { requires: ["dependency1", "dependency2"] });
 ```
 
-通过调用 `YUI.add` 添加 YUI 模块，传入模块名称、执行函数（工厂函数）以及的依赖列表。模块体是你放置该模块所有代码的地方。参数 `Y` 是 YUI 的实例，它包含了所有所需的依赖。YUI 的约定是在每个模块内部作为命名空间添加模块功能，例如：
+通过调用 `YUI.add` 添加 YUI 模块，传入模块名称、执行函数（工厂函数）以及依赖列表。模块体是你放置该模块所有代码的地方。参数 `Y` 是 YUI 的实例，它包含了所有所需的依赖。YUI 的约定是在每个模块内部作为命名空间添加模块功能，例如：
 
-```
+```javascript
 YUI.add("my-books", function(Y) {
   // 添加命名空间
   Y.namespace("MaintainableJavaScript").author = "Nicholas C. Zakas";
-}, "1.0.0", { requires: ["dependency1", "dependency2"] } });
+}, "1.0.0", { requires: ["dependency1", "dependency2"] });
 ```
 
 同样，依赖项表示为传入的 `Y` 对象上的命名空间。因此，YUI 实际上将命名空间概念与模块结合，为整体方法提供了活性。
@@ -2816,47 +2267,26 @@ YUI().use("my-books", "another-module", function(Y) {
 });
 ```
 
+这段代码开始加载模块 `"my-books"` 和 `"another-module"`，并确保每个模块的依赖项已完全加载。随后，按照模块指定的顺序执行模块。最后，执行传递给 `YUI().use()` 的回调函数。传入的 `Y` 对象包含了已加载模块对其进行的所有更改，因此你的应用程序代码已准备好执行。
 
-
-
-这段代码开始加载模块 "my-books" 和 "another-module"，并确保每个模块的依赖项已完全加载。随后，按照模块指定的顺序执行 then 模块。最后，执行传递给 `YUI().use()` 的回调函数。传入的 `Y` 对象包含了已加载模块对其进行的所有更改，因此你的应用程序代码已准备好执行。
-
-有关关于 YUI 模块的更多信息，请参阅 http://ylibrary.com/yui/docs/yui 上的文档。
+有关 YUI 模块的更多信息，请参阅 http://yuilibrary.com/yui/docs/yui 上的文档。
 
 ### 异步模块定义 (AMD) 模块
 
 AMD 模块与 YUI 模块有许多共同点。你指定一个模块名称、依赖项以及一个在依赖项加载后执行的函数。这些都匿名传递给全局 `define()` 函数，顺序为：名称、依赖项，然后是工厂函数。AMD 和 YUI 模块的一个主要区别是，每个依赖项都作为独立的参数传递给工厂函数。
 
-```
+```javascript
 define("module-name", [ "dependency1", "dependency2" ],
 function(dependency1, dependency2) {
-
   // 模块主体
-
 });
 ```
 
-因此，每个具名的依赖项在结束时都会创建一个对象并将其传递给工厂函数。通过这种方式，AMD 试图避免跨模块时可能可能的命名空间冲突。AMD 模块并不像 YUI 模块那样创建一个新的命名空间，而是期望从工厂函数返回其公共接口，例如：
+因此，每个具名的依赖项在最后都会创建一个对象并将其传递给工厂函数。通过这种方式，AMD 试图避免跨模块时可能的命名空间冲突。AMD 模块并不像 YUI 模块那样创建一个新的命名空间，而是期望从工厂函数返回其公共接口，例如：
 
-```
+```javascript
 define("my-books", [ "dependency1", "dependency2" ],
 function(dependency1, dependency2) {
-
-var Books = {};
-Books.MaintainableJavaScript = {
-  author: "Nicholas C. Zakas"
-}
-
-return Books;
-});
-```
-
-AMD 模块也可以是匿名的，并完全省略模块名称。其假设是模块加载器可以通过 JavaScript 文件名推导出模块名称。因此，如果你有一个名为 `my-books.js` 的文件，并且你的模块只会通过模块加载器加载，你可以如下所示定义你的模块：
-
-```
-define([ "dependency1", "dependency2" ],
-function(dependency1, dependency2) {
-
   var Books = {};
   Books.MaintainableJavaScript = {
     author: "Nicholas C. Zakas"
@@ -2865,28 +2295,37 @@ function(dependency1, dependency2) {
 });
 ```
 
-AMD 模块在如何定义模块方面有许多选项。更多信息请参阅 https://github.com/amdjs/amdjs-api/wiki/AMD 上的 AMD规范。
+AMD 模块也可以是匿名的，并完全省略模块名称。其假设是模块加载器可以通过 JavaScript 文件名推导出模块名称。因此，如果你有一个名为 `my-books.js` 的文件，并且你的模块只会通过模块加载器加载，你可以如下所示定义你的模块：
 
-使用 AMD 模块，你需要使用兼容的模块加载器。Dojo 的标准模块加载器支持 AMD 模块，因此你可以这样加载模块 "my-books"：
-
+```javascript
+define([ "dependency1", "dependency2" ],
+function(dependency1, dependency2) {
+  var Books = {};
+  Books.MaintainableJavaScript = {
+    author: "Nicholas C. Zakas"
+  };
+  return Books;
+});
 ```
+
+AMD 模块在如何定义模块方面有许多选项。更多信息请参阅 https://github.com/amdjs/amdjs-api/wiki/AMD 上的 AMD 规范。
+
+使用 AMD 模块，你需要使用兼容的模块加载器。Dojo 的标准模块加载器支持 AMD 模块，因此你可以这样加载模块 `"my-books"`：
+
+```javascript
 // 在 Dojo 中加载 AMD 模块
 var books = dojo.require("books.MaintainableJavaScript");
-```
-
-```
 console.log(books.MaintainableJavaScript.author);
 ```
 
-Dojo 也会暴露为一个名为 "dojo" 的 AMD 模块，因此它可以被加载到其他 AMD 模块中。
+Dojo 也会暴露为一个名为 `"dojo"` 的 AMD 模块，因此它可以被加载到其他 AMD 模块中。
 
-另一个模块是 RequireJS。RequireJS 增加了另一个全局函数 `require()`，它负责加载指定的依赖项然后执行回调函数。例如：
+另一个模块加载器是 RequireJS。RequireJS 增加了另一个全局函数 `require()`，它负责加载指定的依赖项然后执行回调函数。例如：
 
-```
+```javascript
 // 使用 RequireJS 加载 AMD 模块
 require(["my-book"], function(books) {
   console.log(books.MaintainableJavaScript.author);
-
 });
 ```
 
@@ -2900,23 +2339,8 @@ RequireJS 模块加载器内置了许多逻辑，使得模块化变得简单。�
 
 书签脚本的独特之处在于，它们不知道页面上会有什么内容，也不希望页面知道它们的存在。结果是需要对脚本进行“零全局”嵌入，这是通过使用立即调用函数表达式（IIFE）并将所有脚本放在函数内部来实现的。例如：
 
-```
+```javascript
 (function(win) {
-
-  var doc = win.document;
-
-  // 在此处声明其他变量
-
-  // 其他代码放在这里
-
-}(window));
-```
-
-这个立即调用函数传递了 `window` 对象，使得脚本不需要直接访问任何全局变量。在函数内部，`doc` 变量持有对 document 对象的引用。只要函数使用 `var` 关键字声明，此脚本就不会导致向页面注入任何全局变量。你还可以通过将函数放入严格模式（针对支持它的浏览器）来进一步避免创建全局变量：
-
-```
-(function(win) {
-
   "use strict";
 
   var doc = win.document;
@@ -2928,17 +2352,19 @@ RequireJS 模块加载器内置了许多逻辑，使得模块化变得简单。�
 }(window));
 ```
 
+这个立即调用函数传递了 `window` 对象，使得脚本不需要直接访问任何全局变量。在函数内部，`doc` 变量持有对 document 对象的引用。只要函数使用 `var` 关键字声明，此脚本就不会导致向页面注入任何全局变量。你还可以通过将函数放入严格模式（针对支持它的浏览器）来进一步避免创建全局变量。
+
 这个包装器现在可以用于不想创建任何全局对象的脚本。如前所述，这种模式的用途有限。任何需要被页面上其他脚本使用的脚本都无法使用零全局方法。在运行时必须被扩展或修改的脚本也无法使用零全局方法。然而，如果你有一个不需要与页面上任何其他脚本交互的小脚本，零全局方法是值得的。
 
-# 第 7 章 事件处理
+# 第 7 章：事件处理
 
 事件处理是 JavaScript 的重要部分。尽管这段代码看起来很简单，但由于它施加的限制，实际上是一种糟糕的模式。大多数开发者熟悉事件对象，它是被传递给处理程序的。在之前的示例中，应用程序逻辑是在特定位置显示弹出窗口。尽管这种操作应该在用户点击元素时发生，但并不总是如此。
 
-### 经典用法
+## 经典用法
 
 在许多情况下，你最终会使用事件。考虑以下代码：
 
-```
+```javascript
 // 错误示例
 function handleClick(event) {
   var popup = document.getElementById("popup");
@@ -2961,10 +2387,9 @@ addEventListener(element, "click");
 
 你应该始终将应用程序逻辑与事件处理代码分离。重构之前示例的第一步是将弹出处理代码移动到自己的函数中，该函数可能会位于你为应用程序定义的全局对象上。事件处理器也应该在同一个全局对象上，因此结果如下：
 
-```
+```javascript
 // 更好 - 分离应用程序逻辑
 var MyApplication = {
-
   handleClick: function(event) {
     this.showPopup(event);
   },
@@ -2976,16 +2401,13 @@ var MyApplication = {
     popup.className = "reveal";
   }
 };
-```
 
-
-```javascript
 addListener(element, "click", function(event) {
   MyApplication.handleClick(event);
 });
 ```
 
-`MyApplication.showPopup()` 方法现在包含了之前事件处理程序中的所有的应用程序逻辑。`MyApplication.handleClick()` 方法现在除了调用 `MyApplication.showPopup()` 之外什么都不做。通过将应用程序逻辑分离出来，更容易从应用程序内的多个点触发功能，而无需依赖于特定事件的触发。但这只是理这段事件处理代码的第一步。
+`MyApplication.showPopup()` 方法现在包含了之前事件处理程序中的所有的应用程序逻辑。`MyApplication.handleClick()` 方法现在除了调用 `MyApplication.showPopup()` 之外什么都不做。通过将应用程序逻辑分离出来，更容易从应用程序内的多个点触发功能，而无需依赖于特定事件的触发。但这只是理顺这段事件处理代码的第一步。
 
 ### 规则 #2：不要传递事件对象
 
@@ -2996,7 +2418,7 @@ addListener(element, "click", function(event) {
 - 方法接口使得人们不清楚哪些数据片段是真正必要的。良好的 API 在其预期和依赖关系上应该是透明的；将事件对象作为参数传递并让你知道它正在对哪些数据做什么。
 - 正因如此，你需要重新创建一个事件对象来测试该方法。因此，你需要确切知道该方法正在使用什么，以便编写适当的测试子集。
 
-这些问题在大规模 Web 应用程序中都是不受取的。缺乏清晰度会导致错误。最佳方法是让事件处理器使用事件对象来处理事件，然后将任何需要的数据传递给应用程序逻辑。例如，`MyApplication.showPopup()` 只需要两个数据：x 坐标和 y 坐标。该方法应该重写为接受这些作为参数：
+这些问题在大规模 Web 应用程序中都是不可取的。缺乏清晰度会导致错误。最佳方法是让事件处理器使用事件对象来处理事件，然后将任何需要的数据传递给应用程序逻辑。例如，`MyApplication.showPopup()` 只需要两个数据：x 坐标和 y 坐标。该方法应该重写为接受这些作为参数：
 
 ```javascript
 // Good
@@ -3009,22 +2431,16 @@ var MyApplication = {
     var popup = document.getElementById("popup");
     popup.style.left = x + "px";
     popup.style.top = y + "px";
+    popup.className = "reveal";
   }
 };
-```
 
-```javascript
-popup.className = "reveal";
-}
-```
-
-```javascript
 addEventListener(element, "click", function(event) {
   MyApplication.handleClick(event); // 这样可以
 });
 ```
 
-在在这段重写的代码中，`MyApplication.handleClick()` 现在将 x 坐标和 y 坐标传递给 `MyApplication.showPopup()`，而不是整个事件对象。现在非常清楚 `MyApplication.showPopup()` 期望输入什么，并且很容易从测试或代码的其他地方直接调用该逻辑，例如：
+在这段重写的代码中，`MyApplication.handleClick()` 现在将 x 坐标和 y 坐标传递给 `MyApplication.showPopup()`，而不是整个事件对象。现在非常清楚 `MyApplication.showPopup()` 期望输入什么，并且很容易从测试或代码的其他地方直接调用该逻辑，例如：
 
 ```javascript
 // Great victory! (巨大的胜利！)
@@ -3036,9 +2452,8 @@ MyApplication.showPopup(10, 10);
 ```javascript
 // Good
 var MyApplication = {
-
   handleClick: function(event) {
-    // 假设支持 DOM  2 事件
+    // 假设支持 DOM 2 事件
     event.preventDefault();
     event.stopPropagation();
 
@@ -3053,9 +2468,7 @@ var MyApplication = {
     popup.className = "reveal";
   }
 };
-```
 
-```javascript
 addEventListener(element, "click", function(event) {
   MyApplication.handleClick(event); // 这样可以
 });
@@ -3063,8 +2476,7 @@ addEventListener(element, "click", function(event) {
 
 在这段代码中，`MyApplication.handleClick()` 是定义的事件处理器，它在将数据传递给应用程序逻辑之前调用了 `event.preventDefault()` 和 `event.stopPropagation()`，这正是事件处理器与应用程序逻辑之间应该工作的方式。由于应用程序逻辑不再依赖于事件，因此很容易在多处使用该逻辑，也便于编写测试。
 
-# 第 8 章
-避免 Null 比较
+# 第 8 章：避免 Null 比较
 
 JavaScript 中一种常见但仍存在问题的模式是将变量与 `null` 进行测试，推测是为了确定该变量是否已填充适当的值。例如：
 
@@ -3087,31 +2499,14 @@ var Controller = {
 
 ## 检测原始值
 
-JavaScript 中有五种原始类型：string、number、boolean、null 和 undefined。如果你期望一个值是字符串、数字、布尔值或 undefined，那么：
+JavaScript 中有五种原始类型：`string`、`number`、`boolean`、`null` 和 `undefined`。如果你期望一个值是字符串、数字、布尔值或 `undefined`，那么：
 
-- 对于字符串，`typeof` 返回 "string"。
-- 对于数字，`typeof` 返回 "number"。
-- 对于布尔值，`typeof` 返回 "boolean"。
-- 对于 undefined，`typeof` 返回 "undefined"。
+- 对于字符串，`typeof` 返回 `"string"`。
+- 对于数字，`typeof` 返回 `"number"`。
+- 对于布尔值，`typeof` 返回 `"boolean"`。
+- 对于 `undefined`，`typeof` 返回 `"undefined"`。
 
-最后一个原始类型 `null`，是 `typeof` 返回 "object" 的类型。
-
-```javascript
-// 如果你测试 null，应该这样做
-var element = document.getElementById("my-div");
-if (element != null) {
-  element.className = "reveal";
-}
-```
-
-不推荐对 `null` 使用 `typeof`。`typeof` 返回 "object" 是一个 bug（bug）。
-
-- 对于字符串，`typeof` 返回 "string"。
-- 对于数字，`typeof` 返回 "number"。
-- 对于布尔值，`typeof` 返回 "boolean"。
-- 对于 undefined，`typeof` 返回 "undefined"。
-
-最后一个原始类型 `null`，是 `typeof` 返回 "object" 的类型。如果未找到元素，`document.getElementById` 完全可能返回 `null`。因为 `null` 是预期结果之一，所以使用 `!=` 测试它它是可以的。
+最后一个原始类型 `null`，是 `typeof` 返回 `"object"` 的类型。
 
 ```javascript
 // 如果你测试 null，应该这样做
@@ -3120,22 +2515,24 @@ if (element != null) {
   element.className = "reveal";
 }
 ```
+
+不推荐对 `null` 使用 `typeof`。`typeof` 返回 `"object"` 是一个 bug。
 
 ## 检测引用值
 
-引用值也被称为对象。在 JavaScript 中，任何不是原始值的值都是引用。有几种内置的引用类型，如 Object、Array、Date 和 Error，仅仅为了给它们命名。`typeof` 运算符对于引用值几乎没有用，因为它对任何类型的对象都返回 "object"：
+引用值也被称为对象。在 JavaScript 中，任何不是原始值的值都是引用。有几种内置的引用类型，如 `Object`、`Array`、`Date` 和 `Error`，仅仅为了给它们命名。`typeof` 运算符对于引用值几乎没有用，因为它对任何类型的对象都返回 `"object"`：
 
 ```javascript
 console.log(typeof {});           // "object"
-console.log(typeof []);          // "object"
-console.log(typeof new Date());     // "object"
-console.log(typeof RegExp(//));  // "object"
+console.log(typeof []);           // "object"
+console.log(typeof new Date());   // "object"
+console.log(typeof /regex/);      // "object"
 ```
 
-使用 `typeof` 处理对象的另一个缺点是它对 `null` 值也返回 "object"。
+使用 `typeof` 处理对象的另一个缺点是它对 `null` 值也返回 `"object"`。
 
 ```javascript
-console.log(typeof null);      // "object"
+console.log(typeof null);         // "object"
 ```
 
 这个怪特性被识别为规范中的一个严重 bug，阻止了使用 `typeof` 准确检测 `null`。`instanceof` 运算符是检测特定引用类型值的最佳方法。`instanceof` 的基本语法为：
@@ -3144,7 +2541,7 @@ console.log(typeof null);      // "object"
 value instanceof constructor
 ```
 
-是一些示例：
+以下是一些示例：
 
 ```javascript
 // 检测 Date
@@ -3162,10 +2559,8 @@ if (value instanceof RegExp) {
 }
 ```
 
-
-
 ```javascript
-// detect an Error
+// 检测 Error
 if (value instanceof Error) {
   throw value;
 }
@@ -3177,22 +2572,20 @@ if (value instanceof Error) {
 var now = new Date();
 
 console.log(now instanceof Object); // true
-console.log(now instanceof Date); // true
+console.log(now instanceof Date);   // true
 ```
 
 由于这种行为，当你期望某个特定类型的对象时，仅使用 `value instanceof Object` 通常是不够的。
 
-`instanceof` 算符也适用于你自定义自定义类型。例如：
+`instanceof` 算符也适用于你自定义类型。例如：
 
 ```javascript
 function Person(name) {
   this.name = name;
 }
-```
 
 var me = new Person("Nicholas");
 
-```javascript
 console.log(me instanceof Object); // true
 console.log(me instanceof Person); // true
 ```
@@ -3205,11 +2598,13 @@ console.log(me instanceof Person); // true
 
 ```javascript
 // true
-frameAPersonInstance instanceof frameAPerson
+frameAPersonInstance instanceof frameAPerson;
 
 // false
-framePersonInstance instanceof frameBPerson
+frameAPersonInstance instanceof frameBPerson;
 ```
+
+
 
 因为每个帧都有自己的 `Person` 拷贝，因此它只被视为该帧中 `Person` 拷贝的实例，尽管这两个定义可能是相同的。
 
@@ -3345,10 +2740,6 @@ if ("related" in object) {
 }
 ```
 
-
-
-
-
 ```javascript
 // 错误：与 null 进行比较
 if (object["related"] != null) {
@@ -3412,9 +2803,13 @@ function toggleSelected(element) {
 这些都被视为配置数据，因为它们是未来可能会更改的硬编码值。以下都是配置数据的示例：
 
 - URL
+
 - 在 UI 中显示的字符串
+
 - 重复的唯一值
+
 - 设置（例如：每页显示数量）
+
 - 任何可能变化的值
 
 关于配置数据需要记住的关键点是：它是会变化的，而你不希望因为某人改变了主页显示信息的意图而去修改你的 JavaScript 源代码。
@@ -3503,10 +2898,6 @@ java -jar props2js-0.1.0.jar --to json --name myfunc
 
 `--to` 选项指定输出格式，可选 "js"json" 或 "json"。`name` 选项指定变量名（针对 "js"）或函数名（针对 "json"）；该选项对于 "json" 被忽略。`--output` 选项指定写入数据的文件。因此，该行读取 Java 属性文件 `source.properties` 并输出带有 `myfunc` 回调函数的 JSONP 到 `result.js` 文件。
 
-
-
-
-
 # 第10章 抛出你自己的错误
 
 在我年轻的时候，编程语言中最令人困惑的部分就是创建错误的能力。对于 Java 中的 *throw* 运算符，我的第一反应是：“好吧，这太蠢了；你为什么要去制造一个错误呢？”错误是我的敌人——是我极力避免的东西——所以这种制造错误的能力似乎是该语言一个既无用又危险的特性。我认为在 JavaScript 中包含相同的运算符是愚蠢的，因为人们从根本上就不理解这门语言。现在，在积累了大量经验后，我非常喜欢抛出我自己的错误。
@@ -3531,7 +2922,7 @@ throw new Error("Something bad happened.");
 
 内置的 Error 类型在所有 JavaScript 实现中都是可用的，它包含错误消息。当你以这种方式抛出错误，且错误没有通过 try-catch 语句捕获时，浏览器会在浏览器控制台中显示消息的值。大多数浏览器现在都有一个控制台，每当发生错误时，错误信息就会输出其中。换句话说，你抛出的任何错误处理方式与你没有抛出的错误相同。
 
-缺乏经验的开发者有时只通过提供一个字符串来抛出错误，如下所示：
+缺乏经验的开发者有时只通过提供一个字符来抛出错误，如下所示：
 
 ```javascript
 // Bad
@@ -3609,22 +3000,23 @@ function addClass(element, className) {
 
 所有所有的 JavaScript 库都应该在公共接口处为已知的错误情况抛出错误。像 jQuery、YUI 和 Dojo 这样的大型库无法预测你何时以及何调用它们的函数。它们的职责是告诉你你正在做愚蠢的事，因为你不应该调试库的代码来弄清楚发生了什么。错误的调用堆栈应该在库的接口处终止，而不是更深。看到一个深度深达 12 个函数的错误是最糟糕的了。
 
-
 深入一个库内部；库的开发者有责任防止这种情况的发生。
 
 私有的 JavaScript 库也是如此。许多 Web 应用都有自己的专有 JavaScript 库，这些库是使用或替代为了名的公共选项构建的。库的目标是让开发者的工作更轻松，这通过提供抽象来隐藏肮脏的实现细节来实现。抛出错误有助于将这些肮脏的实现细节安全地隔离开开发者。
 
 关于抛出错误的一些通用规则：
 
-- 一旦你修复了一个难以调试的错误，请尝试添加一个或两个自定义错误，以便在问题再次发生时帮助你轻松地解决它。
+- 一旦你修复了一个难以调试的错误，请尝试添加一个或两个自定错误，以便在问题再次发生时帮助你轻松地解决它。
+
 - 如果你正在编写代码并心想：“我希望[某事]不要发生——那真的会搞乱这段代码”，那么当该情况发生时请抛出错误。
+
 - 如果你正在编写将由你不认识的人使用的代码，考虑他们可能会错误地使用该函数，并在这些情况下抛出错误。
 
 记住，目标不是防止错误——而是为了在错误发生时使其更容易调试。
 
 ## try-catch 语句
 
-JavaScript 提供了 `try-catch` 语句，能够在错误被浏览器处理之前拦截它们。在 `try` 块中可能导致错误的代码由 `catch` 块中的错误处理。例如：
+JavaScript 提供了 `try-catch` 语句，能够在错误被浏览器处理之前拦截它们。在 `try` 块中可能导致错误的代由 `catch` 块中的错误处理。例如：
 
 ```javascript
 try {
@@ -3652,7 +3044,7 @@ try {
 
 ## 抛出（Throw）还是 try-catch？
 
-通常情况下，开发者很难判断抛出错误还是使用 **try-catch** 捕获错误更合适。如前所述，错误应该只在应用程序堆栈的最深处抛出，这通常意味着 JavaScript 库。任何处理应用程序特定逻辑的代码都应该具备错误处理能力，因此应该捕获从低层组件抛出的错误。
+通常情况下，开发者很难判断抛出错误还是使用 **try-catch** 捕获错误更合适。如前所述，错误应该只在应用程序堆栈的最深处抛出，这通常意味着 JavaScript 库。任何处理应用程特定逻辑的代码都应该具备错误处理能力，因此应该捕获从低层组件抛出的错误。
 
 应用程序逻辑始终知道自己为什么要调用某个函数，因此最适合处理错误。永远不要编写带有空**子句**（clause）的 **try-catch** 语句；你应该以某种方式捕获错误。例如，永远不要这样做：
 
@@ -3671,11 +3063,17 @@ try {
 ECMA-262 规定了七种错误对象类型。这些类型由 JavaScript 引擎在发生各种错误时使用，也可以被创建：
 
 - **Error**: 所有错误的基类型。引擎永远不会实际抛出它。
+
 - **EvalError**: 在执行 `eval()` 代码过程中发生错误时抛出。
+
 - **RangeError**: 当数字超出其范围时抛出——例如，尝试创建一个包含 -20 个元素的数组 (`new Array(-20)`)。这些错误在正常执行期间很少发生。
+
 - **ReferenceError**: 当期望某个对象但不可用时抛出——例如，尝试在 null 引用上调用方法。
+
 - **SyntaxError**: 当传递给 `eval()` 的代码存在语法错误时抛出。
+
 - **TypeError**: 当变量为意外类型时抛出——例如 `new 10` 或在 `true` 中使用 `"prop"`。
+
 - **URIError**: 将格式错误的 URI 字符串传递给 `encodeURI`、`encodeURIComponent`、`decodeURI` 或 `decodeURIComponent` 时抛出。
 
 理解存在不同类型的错误可以更容易处理它们。由于所有错误都继承自 `Error`，因此使用 `instanceof Error` 检查类型不会提供任何有用信息。通过检查更具体的错误类型，你可以获得更健壮的错误处理：
@@ -3733,16 +3131,17 @@ JavaScript 的独特之处在于没有任何神圣不可。默认情况下，你
 
 ## 你拥有什么？
 
-当你的代码创建对象时，你就拥有了该对象。创建对象的代码可能不是你写的，但只要它是你负责维护的代码，你就拥有该对象。例如，YUI 团队拥有 YUI 对象，Dojo 团队拥有 doj 对象。即使定义对象的原始编写者可能不再处理它，相应的团队仍然是这些对象的所有者。
+当你的代码创建对象时，你就拥有了该对象。创建对象的代码可能不是你写的，但只要它是你负责维维护的代码，你就拥有该对象。例如，YUI 团队拥有 YUI 对象，Dojo 团队拥有 doj 对象。即使定义对象的原始编写者可能不再处理它，相应的团队仍然是这些对象的所有者。
 
 当你在项目中使用 JavaScript 库时，你并不会自动成为对象的所有者。在多人项目中，每个人都假设库对象按照文档说明工作。如果你正在使用 YUI 并对 YUI 对象进行修改，你就是在为你的团队设置陷阱。有人会掉进去，并且这会导致问题。记住，如果你的代码没有创建该对象，它就不属于你修改，这包括：
 
 - 原生对象（Object, Array 等）
+
 - DOM 对象（例如 document）
+
 - 浏览器对象模型 (BOM) 对象（例如 window）
+
 - 库对象
-
-
 
 所有这些对象都是项目执行环境的一部分。你可以直接使用这些已提供的组件，也可以创建新功能；你不应该修改已经存在的内容。
 
@@ -3751,7 +3150,9 @@ JavaScript 的独特之处在于没有任何神圣不可。默认情况下，你
 企业级软件需要一个一致且可靠的执行环境来保持可维护性。在其他语言中，你会将现有对象视为供你完成任务的库。在 JavaScript 中，你可能将现有对象视为一个乐场，在其中你可以随心所欲。你应该像对待工具库一样对待现 JavaScript 对象：
 
 -   不要重写方法。
+
 -   不要添加新方法。
+
 -   不要删除现有方法。
 
 当你独自负责一个项目时，这类修改很容易逃脱，因为你了解并预料了它们。但在大型项目中与团队协作时，进行此类更改会导致极大的混乱并浪费大量时间。
@@ -3789,7 +3190,7 @@ document.getElementById = function(id) {
 
 ## 不要添加新方法
 
-在 JavaScript 中，向现有对象添加方法非常简单。你只需要给现有对象分配一个函数使其成为方法，这允许你修改任何种类的对象：
+在 JavaScript 中，向现有对象添加方法非常简单。你只需要给现对象分配一个函数使其成为方法，这允许你修改任何种类的对象：
 
 ```javascript
 // adding method to DOM object
@@ -3821,9 +3222,6 @@ Prototype 的 `document.getElementsByClassName()` 方法返回一个包含指定
 ```javascript
 document.getElementsByClassName("selected").each(function(something){
 ```
-
-
-
 
 对于你拥有的对象，不移除方法实际上也是一种良好的实践。从库或原生对象中移除方法是非常困难的，因为有第三方代码依赖于这些功能。在很多情况下，库和浏览器长期以来都不得不保留带有 Bug 或不完整的方法，因为移除它们会导致无数网站出现错误。
 
@@ -3912,7 +3310,7 @@ function Author(name) {
 Author.prototype = new Person();
 ```
 
-在这段代码中，`Author` 继承自 `Person`。属性 `name` 实际上是由类型管理的，因此 `Person.call(this, name)` 允许 `Person` 构造函数定义该属性。`Person` 构造函数运行在 `this` 上，即 `Author` 对象上。因此，`name` 最终被定义在 `Author` 对象上。
+在这段代码中，`Author` 继承自 `Person`。属性 `name` 实际上是由类型管理的，因此 `Person.call(this, name)` 允� `Person` 构造函数定义该属性。`Person` 构造函数运行在 `this` 上，即 `Author` 对象上。因此，`name` 最终被定义在 `Author` 对象上。
 
 通过基于对象的继承，基于类型的继承在创建对象的方式上提供了灵活性。定义一个类型允许你拥有同一个对象的多个实例，它们都继承自一个共同的超类型。你的新类型应该精确地定义你想使用的属性和方法，这些内容可以与超类型完全不同。
 
@@ -3937,13 +3335,17 @@ DOMWrapper.prototype.remove = function() {
 ```
 
 // 使用
+
 var wrapper = new DOMWrapper(document.getElementById("my-div"));
 
 // 添加一个 CSS 类
+
 wrapper.addClass("selected");
 
 // 移除元素
+
 wrapper.remove();
+
 ```
 
 `DOMWrapper` 期望向构造函数传递一个 DOM 元素。该元素被存储以便引用，并定义了在该元素上运行的方法。`addClass()` 方法为尚未实现 HTML5 `classList` 的元素添加 CSS 类的简单方法。`remove()` 方法封装了从 DOM 中移除的操作，消除了开发者访问元素父节点的需要。
@@ -3957,7 +3359,6 @@ wrapper.remove();
 # 关于填充丁（Polyfills）
 
 JavaScript 填充丁（也称为 shim）在 ECMAScript 5 和 HTML5 特性在浏览器中开始实现时变得流行。填充丁的功能也有良好的定义，并在较新的浏览器中原生实现。例如，ECMAScript 5 为数组增加了 `forEach` 方法。该方法可以使用 ECMAScript 3 实现，因此旧版浏览器可以像使用新浏览器一样使用 `forEach`。填充丁的关键在于它们在不拥有的对象上添加新方法以达到最终目标。我不喜欢填充丁，但我理解人们为什么要使用它们。填充丁比其他类型的对象修改要安全一些，因为原生
-
 
 实现已经存在并且可以直接使用。Polyfill（垫片）仅在原生方法不存在且非原生版本行为与原生方法一致时才添加新方法。
 
@@ -3981,18 +3382,25 @@ ECMAScript 5 引入了几种防止修改对象的方法。理解这一能力非�
 这些锁定操作都包含两个方法：一个执行操作的方法和一个确认操作已执行的方法。对于防止扩展，使用了 `Object.preventExtension()` 和 `Object.isExtensible()`：
 
 ```javascript
+
 var person = {
+
   name: "Nicholas"
+
 };
 
 // 锁定对象
+
 Object.preventExtension(person);
 
 console.log(Object.isExtensible(person)); // false
+
 ```
 
 ```javascript
+
 person.age = 25; // 在非严格模式下会静默失败
+
 ```
 
 在此示例中，person 被锁定了扩展，`Object.isExtensible()` 为 `false`。尝试分配属性或方法将在严格模式下将静默失败。在严格模式下，任何尝试向不可扩展对象添加新属性或方法的尝试都会导致错误。
@@ -4000,18 +3408,27 @@ person.age = 25; // 在非严格模式下会静默失败
 要密封对象，请使用 `Object.seal()`。你可以使用 `Object.isSealed()` 来判断对象是否被密封：
 
 ```javascript
+
 // 锁定对象
+
 Object.seal(person);
+
 ```
 
 ```javascript
+
 console.log(Object.isExtensible(person)); // false
+
 console.log(Object.isSealed(person)); // true
+
 ```
 
 ```javascript
+
 delete person.name; // 在非严格模式下会静默失败
+
 person.age = 25; // 在非严格模式下会静默失败
+
 ```
 
 当对象被密封时，其现有的属性和方法无法删除，因此在严格模式下尝试删除属性或方法会导致错误。密封的对象也是不可扩展的，因此 `Object.isExtensible()` 返回 `false`。
@@ -4019,20 +3436,31 @@ person.age = 25; // 在非严格模式下会静默失败
 要冻结对象，请使用 `Object.freeze()`。你可以使用 `Object.isFrozen()` 判断对象是否被冻结：
 
 ```javascript
+
 // 锁定对象
+
 Object.freeze(person);
+
 ```
 
 ```javascript
+
 console.log(Object.isExtensible(person)); // false
+
 console.log(Object.isSealed(person)); // true
+
 console.log(Object.isFrozen(person)); // true
+
 ```
 
 ```javascript
+
 person.name = "Greg"; // 在非严格模式下会静默失败
+
 person.age = 25; // 在非严格模式下会静默失败
+
 delete person.name; // 在非严格模式下会静默失败
+
 ```
 
 冻结的对象被视为不可扩展且已密封的。
@@ -4049,19 +3477,29 @@ delete person.name; // 在非严格模式下会静默失败
 为了使用更合理的方法处理基于浏览器的条件判断，开发者转向了一种被称为“特性检测”的技术。特性检测的工作原理是通过测试特定的浏览器特性并在其存在时使用它。而不是执行类似下面的操作：
 
 ```javascript
+
 // 错误
+
 if (navigator.userAgent.indexOf("MSIE 7") > -1) {
+
   // do something
+
 }
+
 ```
 
 你应该执行类似下面的操作：
 
 ```javascript
+
 // 正确
+
 if (document.getElementById) {
+
   // do something
+
 }
+
 ```
 
 这两种方法之间存在区别。第一种是通过名称和版本测试特定的浏览器；第二种是测试特定的特性，即 `document.getElementById`。因此，user-agent 嗅探（sniffing）的结果是知道使用的精确浏览器和版本（至少是浏览器报告的版本），而特性检测则是判断给定的对象或方法是否可用。注意，这是两个完全不同的结果。
@@ -4069,21 +3507,31 @@ if (document.getElementById) {
 由于特性检测不依赖于对哪个浏览器的了解，只取决于哪些特性可用，因此确保在新浏览器中的支持轻而易举。例如，在 DOM 尚处于早期，并不是所有浏览器都支持 `document.getElementById()`，因此有很多像这样的代码：
 
 ```javascript
+
 // 正确
+
 function getById(id) {
 
   var element = null;
 
   if (document.getElementById(id)) { // DOM
+
     element = document.getElementById(id);
+
   } else if (document.all) { // IE
+
     element = document.all[id];
+
   } else if (document.layers) { // Netscape <= 4
+
     element = document.layers[id];
+
   }
 
   return element;
+
 }
+
 ```
 
 这是特性检测的一个良好且恰当的用法，因为代码测试了一个特性，如果它存在，就使用它。对 `document.getElementById()` 的测试在前面，因为它是基于标准的解决方案。之后是两个特定浏览器的解决方案。如果这些特性都不可用，该方法将简单地返回 `null`。这个函数最棒的部分在于，当 Internet Explorer 5 和 Netscape 6 发布并支持 `document.getElementById()` 时，这段代码不需要任何更改。
@@ -4097,23 +3545,39 @@ function getById(id) {
 这种相同的方法也被用于浏览器在规范定稿期间实验性实现的尖端特性。例如，`requestAnimationFrame()` 方法在 2011 年底接近定稿，当时有几个浏览器已经实现了它们带有厂商前缀的版本。针对 `requestAnimationFrame()` 的正确特性检测看起来如下：
 
 ```javascript
+
 // 正确
+
 function setAnimationFrame(callback) {
 
   if (window.requestAnimationFrame(callback)) { // standard
+
     return window.requestAnimationFrame(callback);
+
   } else if (window.mozRequestAnimationFrame(callback)) { // Firefox
+
     return window.mozRequestAnimationFrame(callback);
+
   } else if (window.webkitRequestAnimationFrame(callback)) { // WebKit
+
     return window.webkitRequestAnimationFrame(callback);
+
   } else if (window.oRequestAnimationFrame(callback)) { // Opera
+
     return window.oRequestAnimationFrame(callback);
+
   } else if (window.msRequestAnimationFrame(callback)) { // IE
+
     return window.msRequestAnimationFrame(callback);
+
   } else {
+
     return setTimeout(callback, 0);
+
   }
+
 }
+
 ```
 
 这段代码开始寻找标准的 `requestAnimationFrame()` 方法，只有在未找到时，它才会继续寻找特定浏览器的实现。对于没有支持的浏览器，最后的选项是使用 `setTimeout()` 代替之。再次，即使在浏览器切换到使用基于标准的实现后，这段代码也不需要更新。
@@ -4123,21 +3587,31 @@ function setAnimationFrame(callback) {
 特性检测的一种不恰当用法被称为“特性推断”。特性推断试图在仅验证了一个特性存在后，使用多个特性。一个特性的存在是通过另一个特性的存在来推断出来的。问题当然是，推断是一种假设而非事实，这可能导致维护问题。例如，这里有一些使用特性推断的代码：
 
 ```javascript
+
 // 错误 - 使用特性推断
+
 function getById(id) {
 
   var element = null;
 
   if (document.getElementsByTagName) { // DOM
+
     element = document.ActiveXObject(id);
+
   } else if (window.ActiveXObject) { // IE
+
     element = document.all[id];
+
   } else {
+
     element = document.layers[id]; // Netscape <= 4
+
   }
 
   return element;
+
 }
+
 ```
 
 这个函数是特性推断最糟糕的。这里进行了几种推断：
@@ -4154,12 +3628,19 @@ function getById(id) {
 在某个地方，许多 Web 开发者混淆了 user-agent 检测和特性检测的区别。代码开始编写得类似于：
 
 ```javascript
+
 // 错误
+
 if (document.all) { // IE
+
     id = document.uniqueID;
+
   } else {
+
     id = Math.random();
+
   }
+
 ```
 
 这段代码的问题在于，对 `document.all` 的测试被用作对 Internet Explorer 的隐含检查。使用 `document.uniqueID` 是安全的。这种错误的暗示会导致代码崩溃。
@@ -4167,39 +3648,55 @@ if (document.all) { // IE
 作为更清晰的陈述，开发者开始将
 
 ```javascript
+
 var isIE = navigator.userAgent.indexOf("MSIE") > -1;
+
 ```
 
 替换为如下代码：
 
 ```javascript
+
 // 
+
 var isIE = !!document.all;
+
 ```
 
-这样做产生了对“不要使用 user-agent 检测”的误解。你不是在寻找特定的浏览器，而是在寻找一个特性并试图推断它是特定的浏览器，这非常糟糕。这被称为浏览器推断，是一种非常糟糕的实践。
+这样做产生了对“不要使用 user-agent 检测”的误解。你不是在寻找特定的浏览器，而是在寻�一个特性并试图推断它是特定的浏览器，这非常糟糕。这被称为浏览器推断，是一种非常糟糕的实践。
 
 在某个地方，开发者意识到 `document.all` 并不是判断浏览器是否为 Internet Explorer 的最佳方法。之前的代码被更具体的代码替换，例如：
 
 ```javascript
+
 var isIE = !!document.all && document.uniqueID;
+
 ```
 
 这种方法陷入了编程中的“过度聪明”。以下代码片段来自 MooTools 1.1.2：
 
 ```javascript
+
 // from MooTools 1.1.2
+
 if (window.ActiveXObject)
+
   window.ie = window[window.XMLHttpRequest ? 'ie7' : 'ie6'] = true;
+
 else if (document.childNodes && !document.all && !navigator.taintedEnabled)
+
 ```
 
 
 
 ```javascript
+
 window.webkit = window[window.xpath : 'webkit420' : 'webkit419'] = true;
+
 else if (document.getBoxObjectFor != null || window.mozInnerScreen != null)
+
     window.gecko = true;
+
 ```
 
 这段代码尝试通过浏览器推断来确定使用的是哪种浏览器。这段代码存在几个问题：
@@ -4268,7 +3765,7 @@ MooTools 通过选择基于特征的浏览器检测将自己和用户推向了�
 
 ### 保留测试代码
 
-你的 JavaScript 测试代码也应该提交到源代码控制中，并位于可预测的位置。这让开发者很容易注意到测试缺失。
+你的 JavaScript 测试代码也应该提交到源代码控制中，并位于可预浏的位置。这让开发者很容易注意到测试缺失。
 
 如果你正在工作的 JavaScript 是大型网站或 Web 应用程序的一部分，而不是独立的 JavaScript 项目，文件和目录结构会有所不同。整体目录结构通常由所使用的服务器端框架决定。尽管整体目录结构因项目而异，但你无疑会专门用于 JavaScript 的子目录。这个子目录可以被称为 `scripts` 或 `javascript`，但几乎总有一个专门用于 JavaScript 文件的目录。在该目录中，有几种常见的布局。
 
@@ -4287,7 +3784,7 @@ CSS Lint 是我制作的一个项目，使用了这种方法的变体。参见�
 ![](img/b5952fb0eafff982c42c2013b569fa4e_146_0.png)
 图 13-1. CSS Lint 目录结构
 
-jQuery使用了这种布局的一种形式。唯一的区别是 jQuery 将所有源文件直接放入 `src` 目录中，而不是为每个文件设置子目录。子目录留给核心功能的扩展和资源。`test` 目录包含与与其测试的源文件同名的文件。`src/ajax.js` 由 `test/ajax.js` 进行测试（参见图 13-2）。
+jQuery使用了这种布局的一种形式。唯一的区别是 jQuery 将所有源文件直接放入 `src` 目录中，而不是为每个文件设置子目录。子目留给核心功能的扩展和资源。`test` 目录包含与与其测试的源文件同名的文件。`src/ajax.js` 由 `test/ajax.js` 进行测试（参见图 13-2）。
 
 Dojo 使用了类似于 jQuery 的形式。Dojo 的巨大区别在于没有顶层的 `src` 目录。相反，顶层包含源文件作为扩展的子目录，以及核心功能的资源。有一个顶层的 `tests` 目录，镜像了顶层本身的布局，因此 `date.js` 由 `tests/date.js` 进行测试（参见图 13-3）。
 
@@ -4321,20 +3818,26 @@ Ant 运行需要 Java，请确保你的系统中已安装 Java。如果你使用
 
 ## 构建文件
 
-Ant 的主文件是 `build.xml`。Ant 运行时会在当前目录查找此文件，因此最好将 `build.xml` 放在项目的根目录下。Ant 构建系统有三个基本部分：
+Ant 的主文件是 `build.xml`。Ant 运行时会在当前目查找此文件，因此最好将 `build.xml` 放在项目的根目录下。Ant 构建系统有三个基本部分：
 
-- Task：过程中的单个步骤，例如运行程序或复制文件
+- Task：过程中的单个步骤，例如运程或复制文件
 - Target：按顺序排列的任务命名分组
 - Project：所有任务的命名容器
 
 构建系统的每个部分都由 XML 元素表示。这是一个示例 `build.xml` 文件：
 
 ```xml
+
 <project name="maintainable" default="hello">
+
   <target name="hello">
+
     <echo>Hello world!</echo>
+
   </target>
+
 </project>
+
 ```
 
 每个 `build.xml` 文件从 `<project>` 元素开始。`name` 属性是必需的并唯一标识该项目。`default` 属性指定了未提供目标时执行的 target。
@@ -4344,13 +3847,17 @@ Ant 的主文件是 `build.xml`。Ant 运行时会在当前目录查找此文件
 一旦你有了 `build.xml` 文件，在目录中打开命令提示符并输入：
 
 ```
+
 ant
+
 ```
 
 默认情况下，Ant 会读取 `build.xml` 文件和 `<project>` 的 `default` 属性来确定执行哪个 target。如果你使用上例中的 `build.xml` 文件运行 ant，你将执行 `hello` target。你可以可选地在命令行上指定要运行的 target：
 
 ```
+
 ant hello
+
 ```
 
 当命令行指定了 target 名称后，Ant 不再使用默认 target。
@@ -4360,15 +3867,21 @@ ant hello
 
 
 ```xml
+
 Buildfile: /home/nicholas/tmp/build.xml
+
 ```
 
 ```
+
 hello:
+
 [echo] Hello world!
 
 BUILD SUCCESSFUL
+
 Total time: 0 seconds
+
 ```
 
 输出的第一行始终显示你正在使用的构建文件。之后，你将看到由一系列正在执行的任务列表列出的正在执行的目标。任务名称包含在方括号中；任何输出内容都显示在右侧。你还会看到一条全大字母的消息，指示构建是否成功，随后是构建所需的时间。这些项目对于确定构建错误的原因都非常有帮助。
@@ -4378,31 +3891,47 @@ Total time: 0 seconds
 每个目标都可以可选地指定依赖项——即在执行当前目标之前必须运行并成功的目标。依赖项使用 `depends` 属性指定，该属性是一个由逗号分隔的有序列表，按顺序优先执行的目标。这是一个示例：
 
 ```xml
+
 <project name="maintainablejs" default="hello">
+
   <target name="hello">
+
     <echo>Hello world!</echo>
+
   </target>
+
   <target name="goodbye" depends="hello">
+
     <echo>Goodbye!</echo>
+
   </target>
+
 </project>
+
 ```
 
 在这个 `build.xml` 文件中，`goodbye` 目标依赖于 `hello` 目标。因此，运行 `ant goodbye` 会产生输出：
 
 ```xml
+
 Buildfile: /home/nicholas/tmp/build.xml
+
 ```
 
 ```
+
 hello:
+
 [echo] Hello world!
 
 goodbye:
+
 [echo] Goodbye!
 
 BUILD SUCCESSFUL
+
 Total time: 0 seconds
+
 ```
 
 你可以从输出看出 `hello` 目标在 `goodbye` 目标之前执行，并且两者都成功了。
@@ -4414,9 +3943,13 @@ Total time: 0 seconds
 Ant 属性类似于 JavaScript 中的变量，因为它们是通用的数据容器，可以在构建脚本的执行过程中进行更改和操作。属性使用 `<property>` 元素定义：
 
 ```xml
+
 <project name="maintainablejs">
+
   <property name="version" value="0.1.0" />
+
 </project>
+
 ```
 
 每个 `<property>` 元素都需要 `name` 和 `value` 属性。你稍后可以使用 `$(version)` 来引用该属性，例如：
@@ -4434,27 +3967,35 @@ total time: 0 seconds
 当你任何需要将属性值插入任务中时，都可以使用 `${}` 语法。属性也可以定义在 Java 属性文件中并直接加载到 Ant 中。例如，假设有一个包含以下内容的 `build.properties` 属性文件：
 
 ```properties
+
 version = 0.1.0
+
 copyright = Copyright 2012 Nicholas C. Zakas. All rights reserved.
+
 ```
 
 你可以通过 `<loadproperties>` 元素并使用 `srcfile` 属性指定文件名，将这些属性导入 Ant 脚本：
 
 ```xml
+
 <project name="maintainablejs" default="version">
-  <loadproperties srcfile="build.properties" />
-  <target name="version">
-    <echo>Version is ${version}</echo>
-  </target>
+
+
+
+<loadproperties srcfile="build.properties" />
+
+<target name="version">
+  <echo>Version is ${version}</echo>
+</target>
+
 </project>
-```
 
 使用 `<loadproperties>` 加载的属性的访问方式与在 `build.xml` 中显式定义的相同。对于大量属性，或需要在 Ant 脚本之间共享的属性，最好将它们放在一个单独的 Java 属性文件中。
 
 至少，最好声明几个可以在整个项目范围内使用的属性，例如：
 
-- src.dir: 源代码根目录
-- build.dir: 编译后的文件应该存放的位置
+- `src.dir`: 源代码根目录
+- `build.dir`: 编译后的文件应该存放的位置
 
 在本书的其余部分中，你将看到这些属性在 Ant 任务中使用。请确保在你的项目中适当地定义它们。
 
@@ -4490,7 +4031,7 @@ Buildr (https://github.com/nzakas/buildr) 是一个旨在用更简单的 JavaScr
 <fileset dir="src" includes="**/*.js" excludes="**test.js"/>
 ```
 
-这排除了以 -test.js 结尾的 JavaScript 文件。`<filelist>` 任务的工作原理类似，但必须显式列出要包含的文件。`<filelist>` 期望一个 `dir` 属性，`files` 属性包含一个逗号分隔的文件列表。例如：
+这排除了以 `-test.js` 结尾的 JavaScript 文件。`<filelist>` 任务的工作原理类似，但必须显式列出要包含的文件。`<filelist>` 期望一个 `dir` 属性，`files` 属性包含一个逗号分隔的文件列表。例如：
 
 ```xml
 <filelist dir="./src" files="core.js"/>
@@ -4500,7 +4041,7 @@ Buildr (https://github.com/nzakas/buildr) 是一个旨在用更简单的 JavaScr
 
 ## 任务 (The Task)
 
-`<apply>` 任务用于文件集合执行命令行工具。JSHint 用 JavaScript 编写的，你需要使用 Rhino 命令行引擎来执行它。从 http://www.mozilla.org/rhino 下载并将 `js.jar` 文件放置在你的依赖文件夹 (lib.dir) 中。
+`<apply>` 任务用于文件集合执行命令行工具。JSHint 用 JavaScript 编写的，你需要使用 Rhino 命令行引擎来执行它。从 http://www.mozilla.org/rhino 下载并将 `js.jar` 文件放置在你的依赖文件夹 (`lib.dir`) 中。
 
 在命令行中运行 JSHint，输入以下内容：
 
@@ -4522,9 +4063,9 @@ java
 ```
 
 - 要执行的程序，由 `<apply>` 的 `executable` 属性指定（对于 java）
-- js.jar / jshint.js：主 JSHint 文件，由 `<arg>` 的 `path` 属性表示
-- curly=true,noempty-true：选项，由 `<arg>` 的 `line` 属性表示
-- core/core.js要验证的文件，由 `<arg>` 的 `path` 属性表示
+- `js.jar` / `jshint.js`：主 JSHint 文件，由 `<arg>` 的 `path` 属性表示
+- `curly=true,noempty-true`：选项，由 `<arg>` 的 `line` 属性表示
+- `core/core.js`：要验证的文件，由 `<arg>` 的 `path` 属性表示
 
 给定，我们将 `<validate>` 为该工具创建一个 Ant 骨架：
 
@@ -4538,8 +4079,6 @@ java
   </apply>
 </target>
 ```
-
-
 
 ```xml
 />
@@ -4671,15 +4210,11 @@ Buildr 还允许你使用过滤器来决定合并哪些文件：
 concat(dir: "src", target: "build/app.js", include: "**/*.js")
 ```
 
-
-
-
-
 # 页眉与页脚
 
-<concat> 任务还具有一个实用的功能，可以在生成文件的开头或结尾添加纯文本。此功能允许向文件中插入你在其他情况下可能无法获取的信息。例如，我倾向于在文件中插入构建时间，以便我能够轻松追踪错误。为了做到这一点，我首先在文件顶部定义了一个 <timestamp> 元素：
+`<concat>` 任务还具有一个实用的功能，可以在生成文件的开头或结尾添加纯文本。此功能允许向文件中插入你在其他情况下可能无法获取的信息。例如，我倾向于在文件中插入构建时间，以便我能够轻松追踪错误。为了做到这一点，我首先在文件顶部定义了一个 `<timestamp>` 元素：
 
-```
+```xml
 <timestamp>
   <format property="build.time"
     pattern="MMMM d, yyyy hh:mm:ss"
@@ -4687,9 +4222,9 @@ concat(dir: "src", target: "build/app.js", include: "**/*.js")
 </timestamp>
 ```
 
-当 Ant 执行 build.xml 文件时，这段代码会创建一个时间戳。生成的日期字符串被存储在名为 `build.time` 的属性中。`pattern` 属性用于日期/时间格式化。我可以使用 <header> 元素将此信息添加到构建后的文件中：
+当 Ant 执行 `build.xml` 文件时，这段代码会创建一个时间戳。生成的日期字符串被存储在名为 `build.time` 的属性中。`pattern` 属性用于日期/时间格式化。我可以使用 `<header>` 元素将此信息添加到构建后的文件中：
 
-```
+```xml
 <target name="concatenate">
   <concat destfile="${build.dir}/build.js" fixlastline="yes" eol="lf">
     <header><!-- Build Time: ${build.time} */</header>
@@ -4703,9 +4238,9 @@ concat(dir: "src", target: "build/app.js", include: "**/*.js")
 
 > /* Build Time: May 25, 2012 03:20:45 */
 
-还有一个 <footer> 元素可以用于在文件底部添加额外的文本。例如，此版本的 concatenate 将构建时间放在了底部：
+还有一个 `<footer>` 元素可以用于在文件底部添加额外的文本。例如，此版本的 concatenate 将构建时间放在了底部：
 
-```
+```xml
 <target name="concatenate">
   <concat destfile="${build.dir}/build.js" fixlastline="yes" eol="lf">
     <fileslist dir="${src.dir}" files="first.js,second.js" />
@@ -4715,21 +4250,21 @@ concat(dir: "src", target: "build/app.js", include: "**/*.js")
 </target>
 ```
 
-你可以同时使用 <header> 和 <footer>，或者一次只使用其中一个。
+你可以同时使用 `<header>` 和 `<footer>`，或者一次只使用其中一个。
 
 # 文件烘焙（Baking Files）
 
 “烘焙”是指在认为文件准备好部署之前，对其进行的最后处理。很多时候，这一步涉及向文件中添加额外的文本或将现有文本替换为其他内容。如上例所示，插入构建时间就是一种烘焙。其他常见任务包括自动包含许可信息和插入版本信息。这两者都可以使用 Ant 非常方便地完成。
 
-许多项目在源代码控制的某处包含一个许可证文件。许可证文件是单独的，因为它可能会独立于代码发生变化。在将文件推送到生产环境之前，自动在文件顶部插入许可证信息是非常用的。你可能可以使用 <filelist> 元素来插入许可证文件，但这意味着许可证文件必须是 JavaScript 的属性格式。简单得多的方法让许可证文件保持为纯文本，并使用 <loadfile> 任务在其周围添加注释：
+许多项目在源代码控制的某处包含一个许可证文件。许可证文件是单独的，因为它可能会独立于代码发生变化。在将文件推送到生产环境之前，自动在文件顶部插入许可证信息是非常用的。你可能可以使用 `<filelist>` 元素来插入许可证文件，但这意味着许可证文件必须是 JavaScript 的属性格式。简单得多的方法让许可证文件保持为纯文本，并使用 `<loadfile>` 任务在其周围添加注释：
 
-```
+```xml
 <loadfile property="srcfile" file="license.txt" />
 ```
 
-这段代码加载了 `license.txt` 并将其存储在一个属性中。一旦它进入属性，你就可以使用 <header> 元素将该文本作为注释插入：
+这段代码加载了 `license.txt` 并将其存储在一个属性中。一旦它进入属性，你就可以使用 `<header>` 元素将该文本作为注释插入：
 
-```
+```xml
 <target name="concat">
 <concat destfile="${build.dir}/build.js" fixlastline="yes" eol="lf">
   <header trimleading="yes"/>
@@ -4744,29 +4279,29 @@ concat(dir: "src", target: "build/app.js", include: "**/*.js")
 </target>
 ```
 
-许可证是以多行 JavaScript 注释插入的，该注释的第一个字符是感叹号，这告诉代码编写人员（参见第 17 章）该注释是重要的，不应被删除。<header> 元素还将 `trimleading` 设置为 "yes"。该属性指定了应该删除 <header> 内部每行的空白字符。这样一来，最终文件中所有的文本都将在第一列对齐。
+许可证是以多行 JavaScript 注释插入的，该注释的第一个字符是感叹号，这告诉代码编写人员（参见第 17 章）该注释是重要的，不应被删除。`<header>` 元素还将 `trimleading` 设置为 "yes"。该属性指定了应该删除 `<header>` 内部每行的空白字符。这样一来，最终文件中所有的文本都将在第一列对齐。
 
-在某些文件中进行烘焙的另一部分，使用 <replaceregex> 任务可以非常容易实现。该任务会系统地遍历任意数量的文件，并使用正则表达式替换值。例如，我倾向于在源文件中使用令牌 `@VERSION@` 来指示应该应该插入版本号的位置。例如，你可能在 JavaScript 文件中有这样的内容：
+在某些文件中进行烘焙的另一部分，使用 `<replaceregex>` 任务可以非常容易实现。该任务会系统地遍历任意数量的文件，并使用正则表达式替换值。例如，我倾向于在源文件中使用令牌 `@VERSION@` 来指示应该应该插入版本号的位置。例如，你可能在 JavaScript 文件中有这样的内容：
 
-```
+```javascript
 var MyProject = {
   version: "@VERSION@"
 };
 ```
 
-你可以使用以下代码将 @VERSION@ 替换为实际的版本号：
+你可以使用以下代码将 `@VERSION@` 替换为实际的版本号：
 
-```
+```xml
 <replaceregexp match="@VERSION@" replace="${version}" flags="g" byline="true">
   <fileset dir="${build.dir}" includes="**/*" />
 </replaceregexp>
 ```
 
-replaceregexp 任务获取 `match` 属性中的正则表达式，并替换 `replace` 属性中的文本。正则表达式标志 g、i 和 m 通过 `flags` 属性指定，而 `byline` 则表示正则表达式匹配是否仅针对单行。然后，你可以指定任何需要进行此替换的文件。
+`replaceregexp` 任务获取 `match` 属性中的正则表达式，并替换 `replace` 属性中的文本。正则表达式标志 g、i 和 m 通过 `flags` 属性指定，而 `byline` 则表示正则表达式匹配是否仅针对单行。然后，你可以指定任何需要进行此替换的文件。
 
-由于 replaceregexp 不会创建文件，因此在下面的示例中在构建文件上运行它是安全的：
+由于 `replaceregexp` 不会创建文件，因此在下面的示例中在构建文件上运行它是安全的：
 
-```
+```xml
 <target name="concatenate">
   <concat destfile="${build.dir}/build.js" fixlastline="yes" eol="lf">
     <fileslist dir="${src.dir}" files="first.js,second.js" />
@@ -4775,13 +4310,13 @@ replaceregexp 任务获取 `match` 属性中的正则表达式，并替换 `repl
 </target>
 ```
 
-```
+```xml
 <replaceregexp match="@VERSION@" replace="${version}" flags="g" byline="true">
   <fileset dir="${build.dir}" includes="**/*" />
 </replaceregexp>
 ```
 
-等等，replaceregexp 将所有构建文件中的 @VERSION@ 替换为版本属性的值。虽然这里的替换是在 concatenate 目标中进行的，但你可能也想要一个名为 bake 的目标：
+等等，`replaceregexp` 将所有构建文件中的 `@VERSION@` 替换为版本属性的值。虽然这里的替换是在 `concatenate` 目标中进行的，但你可能也想要一个名为 `bake` 的目标：
 
 ```xml
 <target name="bake">
@@ -4791,40 +4326,42 @@ replaceregexp 任务获取 `match` 属性中的正则表达式，并替换 `repl
 </target>
 ```
 
-将烘焙步骤分离出来在不涉及 <concat> 任务且并不总是构建过程需要的情况下是合理的。
+将烘焙步骤分离出来在不涉及 `<concat>` 任务且并不总是构建过程需要的情况下是合理的。
 
-# 第17 章
+# 第 17 章
 
 ## 压缩与压缩
 
-一旦你对构建文件进行了验证、合并和烘焙，现在是让这些文件尽可能小了。这一步通过两个过程完成：压缩（Minification）和压缩（Compression）。压缩是指消除空白、移除注释并对文件进行某些处理使其尽可能小的过程。压缩使用特定的压缩方法（如 gzip）进一步缩小文件。压缩文件和压缩文件之间的区别在于，压缩文件仍然是纯文本，可以像往常一样编辑和加载（尽管格式被移除会有些麻烦），而压缩文件是无法读取的，必须解压缩才能在网页中使用。现在的浏览器会自动解压缩收到的带有 Content-Encoding: gzip 响应头的任何压缩文件。
+一旦你对构建文件进行了验证、合并和烘焙，现在是让这些文件尽可能小了。这一步通过两个过程完成：压缩（Minification）和压缩（Compression）。压缩是指消除空白、移除注释并对文件进行某些处理使其尽可能小的过程。压缩使用特定的压缩方法（如 gzip）进一步缩小文件。压缩文件和压缩文件之间的区别在于，压缩文件仍然是纯文本，可以像往常一样编辑和加载（尽管格式被移除会有些麻烦），而压缩文件是无法读取的，必须解压缩才能在网页中使用。现在的浏览器会自动解压缩收到的带有 `Content-Encoding: gzip` 响应头的任何压缩文件。
 
 压缩 JavaScript 文件并不复杂，但如果你使用不安全的过程，可能会导致错误或无效语法。因此，最好使用在进行更改之前实际解析 JavaScript 的压缩器。解析器知道什么是有效语法，并可以轻松创建有效语法。三个最流行的解析压缩器有：
 
-- YUI Compressor：通常被认为是普及解析器压缩器而非基于正则表达式的压缩器的功臣。YUI Compressor 最初由 Julien Comte 编写（现在由 YUI 团队维护）；它移除注释和多余空白，并将局部变量名替换为单字符或双字符名称以节省更多空间。YUI Compressor 将语法和运行安全视为首要任务，因此在可能发生错误的情况下会关闭变量替换（例如使用 eval()）。下载地址 http://yuilibibrary.com/projects/yicompress/
+- **YUI Compressor**：通常被认为是普及解析器压缩器而非基于正则表达式的压缩器的功臣。YUI Compressor 最初由 Julien Comte 编写（现在由 YUI 团队维护）；它移除注释和多余空白，并将局部变量名替换为单字符或双字符名称以节省更多空间。YUI Compressor 将语法和运行安全视为首要任务，因此在可能发生错误的情况下会关闭变量替换（例如使用 `eval()`）。下载地址 http://yuilibrary.com/projects/yicompress/
 
+### Closure Compiler
 
-
-
-## Closure Compiler
 一个基于解析器的最小化工具，它尝试让你的代码尽可能小。Closure Compiler 由 Google 工程师编写并维护；它会移除注释和额外的空格，并执行变量替换，还会检查你的代码以寻找优化方法。例如，它可以检测出某个函数未被使用并将其删除。它还能检测出某个函数仅被使用了一次并将其内联。因此，Closure Compiler 最适合一次性对所有的 JavaScript 代码使用。从 http://code.google.com/closure/compiler/ 下载。
 
-UglifyJS
+### UglifyJS
+
 UglifyJS 被誉为第一个基于 NodeJs 的 JavaScript 最小化工具，它使用基于 JavaScript 的解析器用 JavaScript 编写。由 Mihai Bazon 编写的 UglifyJS 会移除注释和空格、替换变量名、合并 `var` 语句并在在此过程中进行优化。从 https://github.com/mishou/uglifyjs 下载或使用 npm 安装。
 
 具体使用哪种最小化工具取决于个人喜好。有些人倾向于 YUI Compressor，因为它倾向于确保生成的代码不包含错误并进行简单的优化。另一些人倾向于 Closure Compiler，因为它倾向于生成比 YUI Compressor 更小的文件。还有一些人倾向于 UglifyJS，因为它不依赖 Java，且产生的语法错误比 Closure Compiler 少，同时还能产生尽可能小的结果。
 
 ## 使用 YUI Compressor 进行最小化
 
-YUI Compressor 以可执行的 JAR 文件形式提供，应该应该放置于你项目的依赖文件夹中（在示例中，此文件夹被称为 *lib.dir*）。它有几个命令行选项，但最重要的需要了解的是：
+YUI Compressor 以可执行的 JAR 文件形式提供，应该应该放置于你项目的依赖文件夹中（在示例中，此文件夹被称为 `lib.dir`）。它有几个命令行选项，但最重要的需要了解的是：
 
 ```
 --disable-optimizations
 关闭微优化，例如将 obj["prop"] 更改为 obj.prop
+
 --line-break <column>
 指定在指定的列处换行，而不是创建单行输出
+
 --nomunge
 关闭本地变量名替换
+
 --preserve-semi
 关闭对不必要分号的移除
 ```
@@ -4834,31 +4371,27 @@ YUI Compressor 以可执行的 JAR 文件形式提供，应该应该放置于你
 ```
 src.dir = ./src
 lib.dir = ./lib
-```
 
-```
 yuicompressor = ${lib.dir}/yuicompressor.jar
-```
 
-```
 yuicompressor.options = --preserve-semi
 ```
 
 接下来，创建一个用于最小化的目标（target）。为了验证，首先查看命令行语法是有帮助的。在命令行上运行 YUI Compressor，输入以下内容：
 
-```
+```bash
 java -jar yuicompressor.jar [options] [file] -o [outputfile]
 ```
 
 例如：
 
-```
+```bash
 java -jar yuicompressor.jar --preserve-semi core/core.js -o core/core-min.js
 ```
 
-该命令在 core/core.js 上运行 YUI Compressor 并将结果输出到 core-min.js。在最小化文件时，在文件名后添加 -min 是一种常见做法，此操作也是如此。<apply> 任务再次是使用的那个，这里是它的：
+该命令在 `core/core.js` 上运行 YUI Compressor 并将结果输出到 `core-min.js`。在最小化文件时，在文件名后添加 `-min` 是一种常见做法，此操作也是如此。`<apply>` 任务再次是使用的那个，这里是它的：
 
-```
+```xml
 <target name="minify">
   <apply executable="java" failonerror="true">
     <fileset dir="${build.dir}" includes="*.js"/>
@@ -4873,61 +4406,56 @@ java -jar yuicompressor.jar --preserve-semi core/core.js -o core/core-min.js
 </target>
 ```
 
-这与书中早之前的 validate 目标非常相似。通过将可执行文件指定为 java，表示该命令应在 build 目录中的所有 JavaScript 文件上运行。这些文件被逐一读取并放置在 <srcfile/> 的位置。下一行使用 <mapper> 任务来翻译文件名。它获取 <srcfile/> 并在文件名后添加 -min。因此，core.js 变成了 core-min.js，这个值被用于替换 <targetfile/> 元素。其余的 <arg> 元素是一言自明的。
+这与书中早之前的 `validate` 目标非常相似。通过将可执行文件指定为 `java`，表示该命令应在 `build` 目录中的所有 JavaScript 文件上运行。这些文件被逐一读取并放置在 `<srcfile/>` 的位置。下一行使用 `<mapper>` 任务来翻译文件名。它获取 `<srcfile/>` 并在文件名后添加 `-min`。因此，`core.js` 变成了 `core-min.js`，这个值被用于替换 `<targetfile/>` 元素。其余的 `<arg>` 元素是一言自明的。
 
-minify 任务被设计用于在你将文件构建到 build 目录之后，但在任何目录中都可以轻松地修改。
+`minify` 任务被设计用于在你将文件构建到 `build` 目录之后，但在任何目录中都可以轻松地修改。
 
 YUI Compressor 还包含一个 CSS 最小化工具。如果你将一个 CSS 文件传递给 YUI Compressor，它会自动切换到 CSS 模式。
 
-Buildr 有一个 <uicompressor> 任务封装了所有这些功能。有属性可以启用每个命令行选项（属性名称与命令行选项 -- 相同），以及一个必需的 outdir 属性，指示最小化后的文件应该放置在哪里。这里是一个示例：
+Buildr 有一个 `<yuicompressor>` 任务封装了所有这些功能。有属性可以启用每个命令行选项（属性名称与命令行选项 `--` 相同），以及一个必需的 `outdir` 属性，指示最小化后的文件应该放置在哪里。这里是一个示例：
 
-```
+```xml
 <target name="minify">
-    <uicompressor outdir="${build.dir}" preserve-semi="true">
+    <yuicompressor outdir="${build.dir}" preserve-semi="true">
         <fileset dir="${build.dir}" includes="*.js" />
-    </uicompressor>
+    </yuicompressor>
 </target>
 ```
 
-压缩器任务会自动为所有文件添加 -min 后缀。你可以包含一个或多个元素来一次最小化所有内容。
+压缩器任务会自动为所有文件添加 `-min` 后缀。你可以包含一个或多个元素来一次最小化所有内容。
 
 ## 使用 Closure Compiler 进行最小化
 
-Closure Compiler 是一个可执行的 JAR 文件，需要放在依赖文件夹中。Closure Compiler 比 YUI Compressor 有多得命令行选项，其中许多选项仅供直接操作 Closure JavaScript 库的人使用。最重要的选项是 --compilation_level，它决定了对 JavaScript 文件进行多少程度的处理。选项有：
+Closure Compiler 是一个可执行的 JAR 文件，需要放在依赖文件夹中。Closure Compiler 比 YUI Compressor 有多得命令行选项，其中许多选项仅供直接操作 Closure JavaScript 库的人使用。最重要的选项是 `--compilation_level`，它决定了对 JavaScript 文件进行多少程度的处理。选项有：
 
-WHITESPACE_ONLY
-移除不必要的空格和注释。关闭其他优化。
+- **WHITESPACE_ONLY**：移除不必要的空格和注释。关闭其他优化。
+- **SIMPLE_OPTIMIZATIONS**：Closure 的默认设置。这移除了不必要的变量。
+- **ADVANCED_OPTIMIZATIONS**：谨慎使用，因为这将引入语法错误。
 
-SIMPLE_OPTIMATIONS
-Closure 的默认设置。这移除了不必要的变量。
-
-ADVANCED_OPTIMATIONS
-谨慎使用，因为这将引入语法错误。一旦你决定了使用哪些选项，将它们放在一个 Java 属性文件中，如下所示：
+一旦你决定了使用哪些选项，将它们放在一个 Java 属性文件中，如下所示：
 
 ```
 src.dir = ./src
 lib.dir = ./lib
-```
 
-```
-compilation_level = SIMPLE_OPTIMATIONS
+compilation_level = SIMPLE_OPTIMIZATIONS
 ```
 
 在命令行上运行 Closure Compiler，输入以下内容：
 
-```
+```bash
 java -jar compiler.jar [options] [file] -o [outputfile]
 ```
 
 例如：
 
-```
-java -jar compiler.jar --compilation_level SIMPLE_OPTIMATIONS core/core.js -o core/core-min.js
+```bash
+java -jar compiler.jar --compilation_level SIMPLE_OPTIMIZATIONS core/core.js -o core/core-min.js
 ```
 
-该命令在 core/core.js 上运行 Closure Compiler 并将结果输出到 core-min.js。在最小化文件时，在文件名后添加 -min 是一种常见做法，此操作也是如此。<apply> 任务再次是使用的那个，这里是它的：
+该命令在 `core/core.js` 上运行 Closure Compiler 并将结果输出到 `core-min.js`。在最小化文件时，在文件名后添加 `-min` 是一种常见做法，此操作也是如此。`<apply>` 任务再次是使用的那个，这里是它的：
 
-```
+```xml
 <target name="minify">
   <apply executable="java" failonerror="true">
     <fileset dir="${build.dir}" includes="*.js"/>
@@ -4942,87 +4470,73 @@ java -jar compiler.jar --compilation_level SIMPLE_OPTIMATIONS core/core.js -o co
 </target>
 ```
 
-这与书中早之前的 validate 目标非常相似。通过将可执行文件指定为 java，表示该命令应在 build 目录中的所有 JavaScript 文件上运行。这些文件被逐一读取并放置在 <srcfile/> 的位置。下一行使用 <mapper> 任务来翻译文件名。它获取 <srcfile/> 并在文件名后添加 -min。因此，core.js 变成了 core-min.js，这个值被用于替换 <targetfile/> 元素。其余的 <arg> 元素是一言自明的。
+这与书中早之前的 `validate` 目标非常相似。通过将可执行文件指定为 `java`，表示该命令应在 `build` 目录中的所有 JavaScript 文件上运行。这些文件被逐一读取并放置在 `<srcfile/>` 的位置。下一行使用 `<mapper>` 任务来翻译文件名。它获取 `<srcfile/>` 并在文件名后添加 `-min`。因此，`core.js` 变成了 `core-min.js`，这个值被用于替换 `<targetfile/>` 元素。其余的 `<arg>` 元素是一言自明的。
 
-minify 任务被设计用于在你将文件构建到 build 目录之后，但在任何目录中都可以轻松地修改。
+`minify` 任务被设计用于在你将文件构建到 `build` 目录之后，但在任何目录中都可以轻松地修改。
 
-Buildr 有一个 <uicompressor> 任务封装了所有这些功能。有属性可以启用每个命令行选项（属性名称与命令行选项 -- 相同），以及一个必需的 outdir 属性，指示最小化后的文件应该放置在哪里。这里是一个示例：
+Buildr 有一个 `<closurecompiler>` 任务封装了所有这些功能。有属性可以启用每个命令行选项（属性名称与命令行选项 `--` 相同），以及一个必需的 `outdir` 属性，指示最小化后的文件应该放置在哪里。这里是一个示例：
 
-```
+```xml
 <target name="minify">
-    <uicompressor outdir="${build.dir}" preserve-semi="true">
+    <closurecompiler outdir="${build.dir}" compilation-level="SIMPLE_OPTIMIZATIONS">
         <fileset dir="${build.dir}" includes="*.js" />
-    </uicompressor>
+    </closurecompiler>
 </target>
 ```
 
-压缩器任务会自动为所有文件添加 -min 后缀。你可以包含一个或多个元素来一次最小化所有内容。
+压缩器任务会自动为所有文件添加 `-min` 后缀。你可以包含一个或多个元素来一次最小化所有内容。
 
 ## 使用 UglifyJS 进行最小化
 
 UglifyJS 通常通过 Node.js 包管理器 npm 在命令行中使用。你必须先安装 Node.js 和 npm 才能安装 UglifyJS，可以通过以下命令完成：
 
-```
+```bash
 sudo npm install -g uglify-js
 ```
 
 UglifyJS 命令行界面也有大量的选项，但常用的有：
 
-- --beautify
-  格式化代码而不是最小化
-- --no-mangle
-关闭函数和变量替换
-- --no-mangle-functions
-关闭函数名替换
-- --no-dead-code
-启用移除无效代码
+- `--beautify`：格式化代码而不是最小化
+- `--no-mangle`：关闭函数和变量替换
+- `--no-mangle-functions`：关闭函数名替换
+- `--no-dead-code`：启用移除无效代码
 
 UglifyJS 在命令行上的基本格式为：
 
-```
+```bash
 uglifyjs [options] -o [outputfile] [file]
 ```
 
 例如：
 
-```
+```bash
 uglifyjs --no-mangle-functions -o core-min.js core/core.js core/core.js
 ```
 
-该命令在 core/core.js 上运行 UglifyJS 并结果输出到 core-min.js。原始文件要在所有选项之后。
+该命令在 `core/core.js` 上运行 UglifyJS 并结果输出到 `core-min.js`。原始文件要在所有选项之后。
 
 与其他最小化工具一样，最好将你的首选选项放在一个属性文件中，如下：
 
 ```
 src.dir = .src
 lib.dir = .lib
-```
 
-```
 uglifyjs = uglifyjs
 uglifyjs.options = --no-mangle-functions
 ```
 
-UglifyJS 的目标比其他的要简单一点，因为它是一个独立的可执行文件。不要将 <apply> 的 executable 属性设置为 java，将其设置为 uglifyjs。然后像通常一样传递额外信息：
-
-```
-<target name="uglifyjs" failonerror="true">
-```
-
-```
-<fileset src="${build.dir}" includes="*.js" />
-<mapper type="glob" from="*.js" to="${build.dir}/*.min.js />
-<arg line="${uglifyjs.options}"/>
-```
-
+UglifyJS 的目标比其他的要简单一点，因为它是一个独立的可执行文件。不要将 `<apply>` 的 `executable` 属性设置为 `java`，将其设置为 `uglifyjs`。然后像通常一样传递额外信息：
 
 ```xml
-<arg line="-o"/>
-<targetfile/>
-<srcfile/>
+<target name="uglifyjs" failonerror="true">
+  <fileset src="${build.dir}" includes="*.js" />
+  <mapper type="glob" from="*.js" to="${build.dir}/*.min.js />
+  <arg line="${uglifyjs.options}"/>
+  <arg line="-o"/>
+  <targetfile/>
+  <srcfile/>
 </apply>
-
-<target>
+</target>
 ```
 
 `minify` 目标的基本格式与本章中的其他目标相同，并产生类似的结果。构建目录中的所有文件都会被压缩，并放置在带有 `-min` 后缀的文件中。
@@ -5047,11 +4561,15 @@ JavaScript 文件的压缩是部署前的第一步。第二步是在传输过程
 
 大多数 Web 服务器都能对文件进行运行时压缩。在实践中，这种压缩通常针对文本文件，如 JavaScript、HTML 和 CSS。现代浏览器都支持 HTTP 压缩，并在请求中发送 HTTP Header 以指示支持的压缩类型。例如：
 
+```
 Accept-Encoding: gzip, deflate
+```
 
 当服务器在请求中看到此头部时，它知道浏览器能够解压缩 gzip 或 deflate 压缩的文件。当服务器发送响应时，它会设置一个指示使用的压缩头部，例如：
 
+```
 Content-Encoding: gzip
+```
 
 此头部告诉浏览器响应体是 gzip 压缩的，在使用之前必须解压缩。
 
@@ -5070,7 +4588,7 @@ Internet Explorer 6 及之前的版本在某些情况下存在 HTTP 压缩问题
 `<gzip>` 任务仅对单个文件有效。你指定 `src` 属性为要压缩的文件名，并将 `destfile` 属性为输出文件。例如：
 
 ```xml
-<script src="${build.dir}/build.js" destfile="${build.dir}/build.js.gz"/>
+<gzip src="${build.dir}/build.js" destfile="${build.dir}/build.js.gz"/>
 ```
 
 此任务构建 `build.js` 并结果输出到 `build.js.gz`。如果你只有一个文件需要 gzip，完全可以使用这种方式使用 `<gzip>`。例如：
@@ -5103,13 +4621,11 @@ Internet Explorer 6 及之前的版本在某些情况下存在 HTTP 压缩问题
   <pathconvert pathsep=";" property="compress.jsfiles">
     <fileset dir="${build.dir}" includes="*.js"/>
   </pathconvert>
-
   <script language="javascript"><![CDATA[
   importPackage(java.io);
   // 获取属性
   var files = project.getProperty("compress.jsfiles").split(",");
   var len = files.length;
-
   for (var i=0; i<len; i++) {
     // 创建任务
     var gzip = project.createTask("gzip");
@@ -5120,11 +4636,11 @@ Internet Explorer 6 及之前的版本在某些情况下存在 HTTP 压缩问题
     // 执行
     gzip.perform();
   }
-  </script>
+  ]]></script>
 </target>
 ```
 
-## 第 18 章 #文档 (Documentation)
+# 第 18 章 #文档 (Documentation)
 
 所有的工程师都倾向于写代码而不是写文档，这正是为什么从代码自动生成文档的工具如此流行。这种趋势真正始于 Javadoc（一种自动为 Java 创建文档的工具），并延续到 JavaScript 等其他语言。
 
@@ -5139,39 +4655,36 @@ JSDoc Toolkit 可能是常用的 JavaScript 文档生成器。它是 2011 年发
  * @Namespace 主应用程序对象。
  */
 var MyApplication = {
-/**
- * 将两个数字相加。
- * @param (int) num1 第一个数字。
- * @param (int) num2 第二个数字。
- * @returns (int) 两个数字之和。
- * @static
- */
-add: function (num1, num2) {
-  return num1 + num2;
-}
+  /**
+   * 将两个数字相加。
+   * @param (int) num1 第一个数字。
+   * @param (int) num2 第二个数字。
+   * @returns (int) 两个数字之和。
+   * @static
+   */
+  add: function (num1, num2) {
+    return num1 + num2;
+  }
 }
 ```
 
-
-
-
-在 JSDoc 中，任何没有构造函数可以调用的对象都被视为命名空间（namespace）。因此，MyApplication 是一个命名空间，并通过 `@namespace` 标签后跟描述来此类指示。`MyApplication.add()` 方法有两个参数，由 `@param` 指定，后面跟的是预期的数据类型、参数名称和描述。该方法返回一个值，因此 `@return` 标签指示预期的数据类型并描述了返回值。`@static` 标签表示该方法不需要对象实例即可使用。
+在 JSDoc 中，任何没有构造函数可以调用的对象都被视为命名空间（namespace）。因此，`MyApplication` 是一个命名空间，并通过 `@namespace` 标签后跟描述来此类指示。`MyApplication.add()` 方法有两个参数，由 `@param` 指定，后面跟的是预期的数据类型、参数名称和描述。该方法返回一个值，因此 `@return` 标签指示预期的数据类型并描述了返回值。`@static` 标签表示该方法不需要对象实例即可使用。
 
 当 JSDoc Toolkit 处理 JavaScript 文件时，它会同时查看 JavaScript 代码和文档注释以创建基于 HTML 的文档。有关乎完整的语法信息，请参见 http://code.google.com/jsdoc-toolkit/w/。
 
-JSDoc Toolkit 几乎完全由 JavaScript 编写，并使用自定义的 Rhino 启动文件（jsrun, jar）：
+JSDoc Toolkit 几乎完全由 JavaScript 编写，并使用自定义的 Rhino 启动文件（`jsrun.jar`）：
 
-```
+```bash
 java -jsrun.jar app/run.js [file]* -t[templates] -d[directory] [options]
 ```
 
 `app/run.js` 是 JSDoc toolkit 的主执行文件。你可以传递任何你想要文档化的 JavaScript 文件。`-t` 标志指定要使用的模板（默认情况下，你可以使用 JSDoc Toolkit 自带的模板），`-d` 指定输出目录。
 
-```
+```bash
 java -jsrun.jar app/run.js core/core -t-templates/jsdoc/ -d-/out
 ```
 
-此命令使用 `jsdoc/` 中的模板为 `core/core.js` 创建文档，并将最终的 HTML 文档输出到 `out` 。由于你需要多次使用 JSDoc Toolkit 目录（jsrun.jar、`app/run.js` 以及默认模板），最好将这些信息保留在属性中，如下：
+此命令使用 `jsdoc/` 中的模板为 `core/core.js` 创建文档，并将最终的 HTML 文档输出到 `out` 。由于你需要多次使用 JSDoc Toolkit 目录（`jsrun.jar`、`app/run.js` 以及默认模板），最好将这些信息保留在属性中，如下：
 
 ```
 src.dir = /src
@@ -5185,15 +4698,15 @@ jsdoc.output = ./docs
 
 生成文档的目标如下：
 
-```
+```xml
 <target name="document">
-  <executable="java" failerror="true" parallel="true">
+  <apply executable="java" failonerror="true" parallel="true">
     <fileset dir="${src.dir}" includes="**/*.js" />
     <arg line="${arg.path}" />
     <arg path="${jsdoc.run}" />
     <arg line="-t${jsdoc.templates}" />
     <arg line="-d${jsdoc.output}" />
-  </executable>
+  </apply>
 </target>
 ```
 
@@ -5202,7 +4715,7 @@ jsdoc.output = ./docs
 JSDoc 的 Build 任务是 `<jsdoc>`，并有一个必需的 `outputdir` 属性。此外还有一个可选的 `templates` 属性（如果你不想使用默认值）。
 示例：
 
-```
+```xml
 <target name="document">
   <jsdoc outputdir="${jsdoc.output}">
     <fileset dir="${src.dir}" includes="**/*.js" />
@@ -5212,7 +4725,7 @@ JSDoc 的 Build 任务是 `<jsdoc>`，并有一个必需的 `outputdir` 属性�
 
 此目标的功能与之前的版本相同，但其意图更加直观。
 
-# YUI Doc
+## YUI Doc
 
 YUI Doc 的原始版本是用 Python 编写的，并被 YUI 库使用了多年。最近，创建了一个新的 JavaScript 版本，它能理解相同的语法。这就是用于在 http://yuilibrary.com 上生成文档的工具。该语法与 JSDoc 非常相似，因为它基于 Javadoc 风格的注释。最大的区别在于，YUI Doc 要求你在文档注释中为属性和方法命名，而 JSDoc 能够从 JavaScript 代码中推断出名称。例如：
 
@@ -5223,20 +4736,20 @@ YUI Doc 的原始版本是用 Python 编写的，并被 YUI 库使用了多年�
  * @static
  */
 var MyApplication = {
-/**
- * 将两个数字相加。
- * @param {int} num1 第一个数字。
- * @param {int} num2 第二个数字。
- * @returns {int} 两个数字之和。
- * @method add
- */
-add: function (num1, num2) {
-  return num1 + num2;
-}
+  /**
+   * 将两个数字相加。
+   * @param {int} num1 第一个数字。
+   * @param {int} num2 第二个数字。
+   * @returns {int} 两个数字之和。
+   * @method add
+   */
+  add: function (num1, num2) {
+    return num1 + num2;
+  }
 }
 ```
 
-在 YUI 的术语中，尽管 MyApplication 没有构造函数，但它仍然是一个类。类描述是第一行，`@class MyApplication` 将该对象标识为类。由于没有构造函数，`@static` 标签指示 MyApplication 是一个对象，其所有方法都通过静态访问。`MyApplication.add()` 方法语法与 JSDoc 非常相似，主要区别在于 `@method` 标签指示了方法名。
+在 YUI 的术语中，尽管 `MyApplication` 没有构造函数，但它仍然是一个类。类描述是第一行，`@class MyApplication` 将该对象标识为类。由于没有构造函数，`@static` 标签指示 `MyApplication` 是一个对象，其所有方法都通过静态访问。`MyApplication.add()` 方法语法与 JSDoc 非常相似，主要区别在于 `@method` 标签指示了方法名。
 
 YUI 用 JavaScript 编写并运行在 Node.js 上。你可以通过 npm 安装：
 
@@ -5246,13 +4759,13 @@ sudo npm install -g yuidoc
 
 YUI Doc 的命令行比 JSDoc 更简单：
 
-```
+```bash
 yuidoc [options] [directory]+ -o [directory]
 ```
 
 例如：
 
-```
+```bash
 yuidoc /src -o ./docs
 ```
 
@@ -5270,15 +4783,15 @@ jsdoc.output = ./docs
 
 生成文档的目标如下：
 
-```
+```xml
 <target name="document">
-  <executable="java" failerror="true" parallel="true">
+  <apply executable="java" failonerror="true" parallel="true">
     <fileset dir="${src.dir}" includes="**/*.js" />
     <arg line="${arg.path}" />
     <arg path="${jsdoc.run}" />
     <arg line="-t${jsdoc.templates}" />
     <arg line="-d${jsdoc.output}" />
-  </executable>
+  </apply>
 </target>
 ```
 
@@ -5287,7 +4800,7 @@ jsdoc.output = ./docs
 JSDoc 的 Build 任务是 `<jsdoc>`，并有一个必需的 `outputdir` 属性。此外还有一个可选的 `templates` 属性（如果你不想使用默认值）。
 示例：
 
-```
+```xml
 <target name="document">
   <jsdoc outputdir="${jsdoc.output}">
     <fileset dir="${src.dir}" includes="**/*.js" />
@@ -5297,7 +4810,7 @@ JSDoc 的 Build 任务是 `<jsdoc>`，并有一个必需的 `outputdir` 属性�
 
 此目标的功能与之前的版本相同，但其意图更加直观。
 
-# 第19 章
+# 第 19 章
 
 ## 自动化测试
 
@@ -5315,9 +4828,6 @@ YUI Test 是 YUI 库的单元测试框架。YUI Test 的最新版本不仅仅是
 
 Selenium 是一个可以启动浏览器并在其中运行命令的服务器。最初设计用于 QA 工程师编写功能测试，由于其与浏览器的交互非常简单，Selenium 在 JavaScript 测试中广受欢迎。
 
-
-
-
 ### 设置 Selenium 服务器
 
 YUI Test Selenium Driver 与 Selenium 服务器配合工作，在各种浏览器上运行 JavaScript 测试并返回结果。第一步是设置你的 Selenium 服务器（如果你还没有的话）。Selenium 用 Java 编写的，因此它可以安装在任何安装了 Java 的地方。请从 http://seleniumhq.org/load 下载最新版本的 Selenium 服务器。
@@ -5334,9 +4844,9 @@ java -jar selenium-server-standalone-x.y.z.jar
 
 设置 YUI Test Selenium Driver 有三个步骤：
 
-- 1. 下载最新版本的 YUI Test。
-- 2. 将 `yuitest-selenium-driver.jar` 放置在你的依赖目录中。
-- 3. 将 `selenium-java-client-driver.jar` 从 YUI Test 的 lib 目录复制到 Java 运行环境（JRE）的 `lib/ext` 目录。
+1. 下载最新版本的 YUI Test。
+2. 将 `yuitest-selenium-driver.jar` 放置在你的依赖目录中。
+3. 将 `selenium-java-client-driver.jar` 从 YUI Test 的 lib 目录复制到 Java 运行环境（JRE）的 `lib/ext` 目录。
 
 完成这些步骤后，就可以使用 YUI Test Selenium Driver 运行测试了。
 
@@ -5351,7 +4861,6 @@ YUI Test Selenium Driver 使用 HTML 文件进行测试。即使你的测试是�
 <title>YUI Test</title>
 <!--  YUI Test 库 -->
 <script src="yuitest.js"></script>
-
 <!-- 你的测试文件 -->
 <script src="tests1.js"></script>
 <script src="tests2.js"></script>
@@ -5423,11 +4932,8 @@ java -jar yuitest-selenium-driver.jar --tests tests.xml
 src.dir = ./src
 lib.dir = ./lib
 tests.dir = ./tests
-```
 
-```properties
-yuitestselenium.host ${lib.dir}/yuitest-selenium-driver.jar
-
+yuitestselenium = ${lib.dir}/yuitest-selenium-driver.jar
 yuitestselenium.host = testing.example.com
 yuitestselenium.port = 4444
 yuitestselenium.tests = ${lib.dir}/tests.xml
@@ -5439,20 +4945,16 @@ Ant Target 使用 `<exec>` 任务来运行 YUI Selenium Driver 并传入相关�
 ```xml
 <target name="test">
   <exec executable="java" failonerror="true">
-    arg line="-jar/"
-    arg path="${yuitestselenium}"
-    arg line="--host ${yuitestselenium.host}"
-    arg line="--port ${yuitestselenium.port}"
-    arg line="--tests ${yuitestselenium.tests}"
-    arg line="--browsers ${yuitestselenium.browsers}"
-    arg line="http://www.example.com/tests.html"
+    <arg line="-jar"/>
+    <arg path="${yuitestselenium}"/>
+    <arg line="--host ${yuitestselenium.host}"/>
+    <arg line="--port ${yuitestselenium.port}"/>
+    <arg line="--tests ${yuitestselenium.tests}"/>
+    <arg line="--browsers ${yuitestselenium.browsers}"/>
+    <arg line="http://www.example.com/tests.html"/>
   </exec>
 </target>
 ```
-
-
-
-
 
 ## Ant 目标
 
@@ -5462,7 +4964,6 @@ Ant Target 使用 `<exec>` 任务来运行 YUI Selenium Driver 并传入相关�
 src.dir = ./src
 lib.dir = ./Lib
 tests.dir = ./tests
-
 phantomjs = ${phantomjs}
 phantomjs.driver = ${lib.dir}/phantomjs/examples/run-unit.js
 phantomjs.tests = ${tests}.html
@@ -5470,10 +4971,10 @@ phantomjs.tests = ${tests}.html
 
 由于 PhantomJS 运行器支持一次仅传递一个文件，因此 Ant 目标使用了 `<exec>` 而不是 `<apply>`：
 
-```
+```xml
 <target name="test">
   <exec executable="phantomjs" failonerror="true">
-    <arg path="${phantomjs.driver}">
+    <arg path="${phantomjs.driver}"/>
     <arg path="${tests.dir}/${phantomjs.tests}"/>
   </exec>
 </target>
@@ -5482,7 +4983,7 @@ phantomjs.tests = ${tests}.html
 测试只需向可执行文件传递了两个路径，如果发生错误则失败。
 Buildr 的 `<phantomjs>` 任务允许你使用略有不同的语法执行相同的操作：
 
-```
+```xml
 <target name="test">
   <phantomjs driver="${phantomjs.driver}">
     <fileset dir="${tests.dir}" includes="*.html" />
@@ -5490,13 +4991,13 @@ Buildr 的 `<phantomjs>` 任务允许你使用略有不同的语法执行相同�
 </target>
 ```
 
-`driver` 属性是必需的，它指定了测试时使用的 PhantomJS 驱动。`<phantomjs>` 期望存在一个或多个 `<fileset>`元素元素指定要运行的测试。否则，它的行为类似于上一个目标。
+`driver` 属性是必需的，它指定了测试时使用的 PhantomJS 驱动。`<phantomjs>` 期望存在一个或多个 `<fileset>` 元素指定要运行的测试。否则，它的行为类似于上一个目标。
 
 ## JsTestDriver
 
 JsTestDriver 是由 Google 工程师编写的命令行工具。与 Selenium 和 Yeti 类似，JsTestDriver 与已安装的浏览器配合运行测试。JsTestDriver 也有自己的 JavaScript 测试框架，因此你默认必须使用该库编写测试。它是一个 QUnit 适配器，允许基于 QUnit 的测试通过 JsTestDriver 执行，如果你需要，你也可以编写自己的适配器。
 
-## 安装与用法
+### 安装与用法
 
 JsTestDriver 是用 Java 编写的，因此你必须先下载最新的 JAR 文件并将其放入依赖目录。JsTestDriver 最常用的模式是在开发机器上运行，手动将浏览器连接到 JsTestDriver 服务器。配置信息（包括要执行哪些文件）包含在所示的 YAML 文件中：
 
@@ -5510,21 +5011,19 @@ load:
 
 对于构建系统，JsTestDriver 提供了一个自动启动和停止浏览器同时收集测试结果的命令。其格式如下：
 
-```
-java -jar JsTestDriver.jar --port [port] --browser [browsers] --config [file]
---tests all --output [directory]
+```bash
+java -jar JsTestDriver.jar --port [port] --browser [browsers] --config [file] --tests all --output [directory]
 ```
 
 例如：
 
-```
-java -jar JsTestDriver.jar --port 4224 --browser firefox,iexplore
---config conf/conf.yml --tests all --output /results
+```bash
+java -jar JsTestDriver.jar --port 4224 --browser firefox,iexplore --config conf/conf.yml --tests all --output /results
 ```
 
-该命令在 Firefox 和 Internet Explorer 上运行 conf/conf.yml 中指定的所有测试，并将结果输出到 results 中。`--browser` 选项需要浏览器可执行文件的路径，此示例假设 firefox 和 ieexplore 是可以通过完整路径执行的。
+该命令在 Firefox 和 Internet Explorer 上运行 `conf/conf.yml` 中指定的所有测试，并将结果输出到 `results` 中。`--browser` 选项需要浏览器可执行文件的路径，此示例假设 `firefox` 和 `ieexplore` 是可以通过完整路径执行的。
 
-## Ant 目标
+### Ant 目标
 
 为 JsTestDriver 创建目标需要跟踪几项关键信息：
 
@@ -5532,9 +5031,7 @@ java -jar JsTestDriver.jar --port 4224 --browser firefox,iexplore
 src.dir = ./src
 lib.dir = ./lib
 tests.dir = ./tests
-```
 
-```
 jstdriver = $(lib.dir)/JsTestDriver.jar
 jstestdriver.port = 4224
 jstestdriver.browser = firefox,iexplore
@@ -5544,60 +5041,56 @@ jstestdriver.output = /results
 
 该 Ant 目标与 YUI Selenium Driver 的目标非常相似：
 
-```
+```xml
 <target name="test">
   <exec executable="java" failonerror="true">
     <arg line="-jar"/>
     <arg path="${jstdriver}"/>
+    <arg line="--port ${jstdriver.port}"/>
+    <arg line="--browser ${jstdriver.browser}"/>
+    <arg line="--conf"/>
+    <arg path="${jstdriver.config}"/>
+    <arg line="--tests all"/>
+    <arg path="${jstdriver.output}"/>
   </exec>
-</target>
-```
-
-```
-<arg line="--port ${jstdriver.port}"/>
-<arg line="--browser ${jstdriver.browser}"/>
-<arg line="--conf"/>
-<arg path="${jstdriver.config}"/>
-<arg line="--tests all"/>
-<arg path="${jstdriver.output}"/>
 </target>
 ```
 
 按照目前的配置，此 Ant 目标将在 Firefox 和 Internet Explorer 上运行配置文件中指定的所有测试。
 Buildr 的 `jstdriver` 任务使得使用 JsTestDriver 更加简单。有两个必需属性：`outputdir` 用于结果的位置，`config` 用于配置文件的位置。所有其他命令行选项也以属性的形式存在。以下等同于上一个示例目标：
 
-```
+```xml
 <target name="test">
-<jstdriver config="${jstdriver.config}" 
-outputdir="${jstdriver.output}" 
-tests="all" port="${jstdriver.port}" 
-browser="${jstdriver.browser}"/>
+  <jstdriver config="${jstdriver.config}" 
+             outputdir="${jstdriver.output}" 
+             tests="all" port="${jstdriver.port}" 
+             browser="${jstdriver.browser}"/>
 </target>
 ```
 
 ## 整合在一起
 
-之前关于构建系统的章节重点在于创建构建系统的微小部分，创建一个以后可以轻松组合的工具库。本章侧重于将系统组装成适用于 JavaScript 的端到端解决方案。对于你的最终系统，你可能会有复杂的功能，并可能选择使用一组set的任务（如 Buildr），但仍然有一些所有构建系统都具备的常用功能。
+之前关于构建系统的章节重点在于创建构建系统的微小部分，创建一个以后可以轻松组合的工具库。本章侧重于将系统组装成适用于 JavaScript 的端到端解决方案。对于你的最终系统，你可能会有复杂的功能，并可能选择使用一组 set 的任务（如 Buildr），但仍然有一些所有构建系统都具备的常用功能。
 
 # 缺失的环节
 
 在组装系统之前，还有几个小步骤缺失。第一个是创建构建目录。由于此目录是瞬时的，构建系统负责它的创建。`<mkdir>` 任务可以轻松地处理这一点：
 
-```
+```xml
 <target name="init">
   <mkdir dir="${build.dir}"/>
 </target>
 ```
 
-*init* 目标只做一件事：创建目录。第二个部分是清理构建目录。在构建之间，你想删除所有文件并从头开始。最快的方法是使用 `<delete>` 任务删除构建目录：
+`init` 目标只做一件事：创建目录。第二个部分是清理构建目录。在构建之间，你想删除所有文件并从头开始。最快的方法是使用 `<delete>` 任务删除构建目录：
 
-```
+```xml
 <target name="clean">
   <delete dir="${build.dir}"/>
 </target>
 ```
 
-*clean* 目标删除构建目录，以便确保获得最新的文件。
+`clean` 目标删除构建目录，以便确保获得最新的文件。
 
 ## 规划构建
 
@@ -5617,39 +5110,29 @@ browser="${jstdriver.browser}"/>
 
 你的 `build.xml` 应该始终如下所示：
 
-```
+```xml
 <project name="yourapp" default="build.dev">
-<!-- 导入属性 -->
-<loadproperties src="yourapp.properties" />
-<!-- 在此处定义或导入工具目标 -->
-<!-- 初始化和清理 -->
-<target name="init">
-  <mkdir dir="${build.dir}"/>
-</target>
+  <!-- 导入属性 -->
+  <loadproperties src="yourapp.properties" />
+  <!-- 在此处定义或导入工具目标 -->
+  <!-- 初始化和清理 -->
+  <target name="init">
+    <mkdir dir="${build.dir}"/>
+  </target>
 </project>
 ```
 
-
-
-
-
 ```xml
 <target name="clean">
-<delete dir="${build.dir}"/>
+  <delete dir="${build.dir}"/>
 </target>
-
 <!-- main builds -->
 <target name="build.dev">
 </target>
-
 <target name="build.int">
 </target>
-
 <target name="build.release">
 </target>
-```
-
-```xml
 </project>
 ```
 
@@ -5661,11 +5144,9 @@ browser="${jstdriver.browser}"/>
 
 ```xml
 <project name="yourapp" default="build.dev">
-
-<!-- omitted builds -->
-<target name="build.dev" depends="clean,init,validate,concatenate">
-</target>
-
+  <!-- omitted builds -->
+  <target name="build.dev" depends="clean,init,validate,concatenate">
+  </target>
 </project>
 ```
 
@@ -5679,10 +5160,10 @@ browser="${jstdriver.browser}"/>
 
 ```xml
 <project name="youmyapp" default="build.dev">
-<!-- omitted for clarity -->
-<!-- main builds -->
-<target name="build.int" depends="build.dev,minify,test,document">
-</target>
+  <!-- omitted for clarity -->
+  <!-- main builds -->
+  <target name="build.int" depends="build.dev,minify,test,document">
+  </target>
 </project>
 ```
 
@@ -5696,13 +5177,10 @@ browser="${jstdriver.browser}"/>
 
 ```xml
 <project name="yourapp" default="build.dev">
-
-<!-- omitted for clarity -->
-
-<!-- main builds -->
-<target name="build.release" depends="build.int,bake">
+  <!-- omitted for clarity -->
+  <!-- main builds -->
+  <target name="build.release" depends="build.int,bake">
   </target>
-
 </project>
 ```
 
@@ -5722,35 +5200,30 @@ Jenkins 是最常用的 CI 系统之一。它是一个基于 Java 的 Web 应用
 java -jar jenkins.war
 ```
 
-Jenkins 会启动一个可以通过 http://localhost:8080/ 的服务器。在浏览器访问该位置，即可开始创建任务（jobs）。
+
+
+# Jenkins 与持续集成
+
+Jenkins 会启动一个可以通过 `http://localhost:8080/` 的服务器。在浏览器访问该位置，即可开始创建任务。
 
 任务是执行一系列构建步骤的集合。点击“New Job”链接创建你的第一个任务。下一个页面询问你想要创建什么类型的任务。如果你使用 Ant 作为构建系统，请选择“Free-style project”。创建新任务后，你会被带到配置页面。
 
-配置页面有一些基础选项，但真正有趣的部分在页面后面，即“Build Triggers”（构建触发器）部分。这是你决定构建运行频率的地方。它可以在其他项目完成后触发、根据计划触发或基于提交触发。对于你的主集成构建，你可能希望基于提交触发，因此最后一个选项有效。Poll SCM 意味着 Jenkins 将轮询你的源码系统（如上一节所述）。轮询格式与 Linux 系统上设置 cron 任务相同，@hourly 表示每小时检查一次。
+配置页面有一些基础选项，但真正有趣的部分在页面后面，即“Build Triggers”（构建触发器）部分。这是你决定构建运行频率的地方。它可以在其他项目完成后触发、根据计划触发或基于提交触发。对于你的主集成构建，你可能希望基于提交触发，因此最后一个选项有效。Poll SCM 意味着 Jenkins 将轮询你的源码系统。轮询格式与 Linux 系统上设置 cron 任务相同，`@hourly` 表示每小时检查一次。
 
-| Source Code Management |
-| --- |
-| ☑ CVS |
-| ☐ None |
-| ☐ Subversion |
-| Build Triggers |
-| ☐ Build after other projects are built |
-| ☐ Build periodically |
-| ☑ Poll SCM |
-| Schedule @hourly |
+| Source Code Management | Build Triggers |
+| --- | --- |
+| ☑ CVS | ☐ Build after other projects are built |
+| ☐ None | ☐ Build periodically |
+| ☐ Subversion | ☑ Poll SCM |
+| | Schedule `@hourly` |
 
 图 20-1. Jenkins 构建触发器。
 
-接下来，设置任务执行一个或多个 Ant 目标。为此，点击“Add Step”按钮显示下拉菜单。选择“Invoke Ant”。
-页面上会出现一个新的构建步骤，要求你选择要执行的 Ant 目标（见图 20-2）。
+接下来，设置任务执行一个或多个 Ant 目标。为此，点击“Add Step”按钮显示下拉菜单。选择“Invoke Ant”。页面上会出现一个新的构建步骤，要求你选择要执行的 Ant 目标（见图 20-2）。
 
-如果你配合 Jenkins 使用源码控制，它会自动找到根目录下的 build.xml 文件，因此你只需要指定 Ant 目标名称。例如，如果你正在设置集成构建，在文本框中输入 build.int，如图 20-3 所示。
+如果你配合 Jenkins 使用源码控制，它会自动找到根目录下的 `build.xml` 文件，因此你只需要指定 Ant 目标名称。例如，如果你正在设置集成构建，在文本框中输入 `build.int`，如图 20-3 所示。
 
-如果你项目根目录下没有 build.xml 文件，或者没有配合 Jenkins 使用 Jenkins，请点击“Advanced”按钮并手动指定 build.xml 文件的路径。
-
-
-
-
+如果你项目根目录下没有 `build.xml` 文件，或者没有配合 Jenkins 使用 Jenkins，请点击“Advanced”按钮并手动指定 `build.xml` 文件的路径。
 
 ### 构建
 
@@ -5780,7 +5253,7 @@ Jenkins 会启动一个可以通过 http://localhost:8080/ 的服务器。在浏
 
 ### 收件者
 
-以空格分隔的接收者地址列表。可以引用 SBMAIL 等构建参数。当构建失败、变得不稳定或恢复稳定时，将发送电子邮件。
+以空格分隔的接收者地址列表。可以引用 `SBMAIL` 等构建参数。当构建失败、变得不稳定或恢复稳定时，将发送电子邮件。
 
 - 为每个不稳定的构建发送电子邮件
 - 向导致构建失败的人员发送电子邮件
@@ -5791,25 +5264,25 @@ Jenkins 会启动一个可以通过 http://localhost:8080/ 的服务器。在浏
 
 CI（持续集成）是一个热门领域，新的解决方案不断出现。以下是一些你可能想要考虑的其他 CI 系统：
 
-### Continuum
+#### Continuum
 
-一个用于 CI 的 Apache 项目，设计用于与 Ant 和 Maven 工作。可以在 http://continuum.apache.org 获取。
+一个用于 CI 的 Apache 项目，设计用于与 Ant 和 Maven 工作。可以在 `http://continuum.apache.org` 获取。
 
-### BuildBot
-一个基于 Python 的构建系统，面向工程师。可以在 http://trac.buildbot.net 获取。
+#### BuildBot
 
-### Cruise Control
+一个基于 Python 的构建系统，面向工程师。可以在 `http://trac.buildbot.net` 获取。
 
-另一个基于 Java 的构建系统，作为 Web 运行。还存在 Ruby 和 .NET 端口。可以在 http://cruisecontrol.sourceforge.net 获取。
+#### Cruise Control
 
-### Gradle
+另一个基于 Java 的构建系统，作为 Web 运行。还存在 Ruby 和 .NET 端口。可以在 `http://cruisecontrol.sourceforge.net` 获取。
 
-在 Ant 和 Maven 之上使用基于 Groovy 的语言进行 CI。对于非程序员来说稍微有点困难。可以在 http://www.gradle.org 获取。
+#### Gradle
+
+在 Ant 和 Maven 之上使用基于 Groovy 的语言进行 CI。对于非程序员来说稍微有点困难。可以在 `http://www.gradle.org` 获取。
 
 ![](img/b5952fb0eafff982c42c2013b569fa4e_201_0.png)
 
-# 附录 A
-## JavaScript 指南
+# 附录 A：JavaScript 指南
 
 编程语言风格指南对软件的长期维护性至关重要。本指南基于 Java 语言编码规范和 Douglas Crockford 的 JavaScript 语言编码规范。根据我的个人经验和偏好进行了修改。
 
@@ -5908,8 +5381,6 @@ var num = 010;
 - 初始化一个以后可能作为对象值的变量
 - 与一个已初始化且可能具有或不具有对象的变量进行比较
 
-
-
 ```javascript
 // Good
 doSomething({
@@ -5942,8 +5413,7 @@ doSomething({key1: value1, key2: value2});
 
 ```javascript
 // Good
-if (condition){
-
+if (condition) {
   // 如果你到了这里，说明所有安全检查都通过了
   allowed();
 }
@@ -5951,8 +5421,7 @@ if (condition){
 
 ```javascript
 // Bad: 注释前没有空行
-if (condition){
-
+if (condition) {
 // 如果你到了这里，说明所有安全检查都通过了
   allowed();
 }
@@ -5960,21 +5429,21 @@ if (condition){
 
 ```javascript
 // Bad: 缩进错误
-if (condition){
+if (condition) {
+  // 如果你到了这里，说明所有安全检查都通过了
+  allowed();
+}
+```
 
 ```javascript
-// 如果你到了这里，说明所有安全检查都通过了
-allowed();
-}
-
 // Bad: 这应该是一个多行注释
 // 下面这段代码相当复杂，所以让我来解释一下。
 // 你想要判断条件是否为真
 // 并且只允许用户进入。条件是根据几个不同的函数计算出来的
 // 可能在会话生命周期内发生变化。
 if (condition) {
-    // 如果你到了这里，说明所有安全检查都通过了
-    allowed();
+  // 如果你到了这里，说明所有安全检查都通过了
+  allowed();
 }
 ```
 
@@ -6010,7 +5479,7 @@ var result = something + somethingElse;//somethingElse 永远不会为空
 
 ```javascript
 // Good
-if (condition){
+if (condition) {
 
 /*
  * 如果你到了这里，
@@ -6022,7 +5491,7 @@ if (condition){
 
 ```javascript
 // Bad: 注释前没有空行
-if (condition){
+if (condition) {
 /*
  * 如果你到了这里，
  * 然后所有安全检查都通过了
@@ -6033,7 +5502,7 @@ if (condition){
 
 ```javascript
 // Bad: 星号后缺少空格
-if (condition){
+if (condition) {
 
 /*
  *if你到了这里，
@@ -6045,7 +5514,7 @@ if (condition){
 
 ```javascript
 // Bad: 缩进错误
-if (condition){
+if (condition) {
 
 /*
  * 如果你到了这里，
@@ -6064,15 +5533,11 @@ var result = something + somethingElse; /*somethingElse 永远不会为空*/
 
 注释可以用于为代码段添加额外信息。这些注解的形式为单个单词后跟冒号。接受的注解有：
 
-- TODO: 表示代码尚未完成。应包含关于下一步的信息。
-
-- HACK: 表示代码使用了捷径方法。应包含为什么使用该 hack 的信息。这可能意味着如果能找到更好的解决问题的方法会很好。
-
-- XXX: 表示代码存在问题，应该尽快修复。
-
-- FIXME: 表示代码存在问题，应该很快修复。重要性低于 XXX。
-
-- REVIEW: 表示代码需要审查以进行潜在的更改。
+- `TODO`: 表示代码尚未完成。应包含关于下一步的信息。
+- `HACK`: 表示代码使用了捷径方法。应包含为什么使用该 hack 的信息。这可能意味着如果能找到更好的解决问题的方法会很好。
+- `XXX`: 表示代码存在问题，应该尽快修复。
+- `FIXME`: 表示代码存在问题，应该很快修复。重要性低于 `XXX`。
+- `REVIEW`: 表示代码需要审查以进行潜在的更改。
 
 这些注解可以用于单行或多行注释，并应遵循与普通注释类型相同的格式规则。
 
@@ -6087,12 +5552,12 @@ doSomething();
 ```javascript
 // Good
 /*
-* HACK: 为了兼容 IE 必须这样做。我计划在未来
-* 有更多时间时重新考虑。这可能会
-* 找到让它运行更快的方法。
-*/
+ * HACK: 为了兼容 IE 必须这样做。我计划在未来
+ * 有更多时间时重新考虑。这可能会
+ * 找到让它运行更快的方法。
+ */
 if (condition) {
-  doSomething(); 
+  doSomething();
 }
 ```
 
@@ -6123,7 +5588,7 @@ var count = 10, name = "Nicholas", found = false, empty;
 
 ## 函数声明
 
-函数应在使用之前声明。当函数不是方法时（即未附加到对象上），应使用函数声明格式（而不是函数表达式或 Function 构造函数）。函数名和左括号之间没有空格。右括号和右括号之间应该有一个空格。右括号应与函数关键字在同一行。左括号后面或右括号之前不应有空格。参数之间的逗号后面要有空格，但前面没有。函数体应缩进一级。
+函数应在使用之前声明。当函数不是方法时（即未附加到对象上），应使用函数声明格式（而不是函数表达式或 `Function` 构造函数）。函数名和左括号之间没有空格。右括号和右括号之间应该有一个空格。右括号应与函数关键字在同一行。左括号后面或右括号之前不应有空格。参数之间的逗号后面要有空格，但前面没有。函数体应缩进一级。
 
 ```javascript
 // Good
@@ -6190,20 +5655,6 @@ function outer() {
 }
 ```
 
-
-
-
-
-```javascript
-}
-var count = 10,
-name = "Nicholas",
-found = false,
-empty;
-// code that uses inner())
-}
-```
-
 匿名函数可以用于对象方法的赋值，或作为其他函数的参数。函数关键字与左括号之间不应有空格。
 
 ```javascript
@@ -6225,18 +5676,16 @@ object.method = function () {
 ```javascript
 // Good
 var value = (function() {
-
   // function body
   return {
     message: "Hi"
   }
-}();
+}());
 ```
 
 ```javascript
 // Bad: 函数调用周围没有括号
 var value = function() {
-
   // function body
   return {
     message: "Hi"
@@ -6247,7 +5696,6 @@ var value = function() {
 ```javascript
 // Bad: 括号放置位置不正确
 var value = (function() {
-
   // function body
   return {
     message: "Hi"
@@ -6257,20 +5705,26 @@ var value = (function() {
 
 ## 命名
 
-在命名变量和函数时应小心。名称应限于字母和数字，在某些情况下可以使用下划线字符。不要在任何名称中使用美元符号 ($) 或反斜杠 (\)。
+在命名变量和函数时应小心。名称应限于字母和数字，在某些情况下可以使用下划线字符。不要在任何名称中使用美元符号 (`$`) 或反斜杠 (`\`)。
 
-变量名应采用驼峰命名法（camel case），首字母小写，后续每个单词的首字母大写。变量名的第一个第一个单词应该是名词（而不是动词），以避免与函数混淆。不要在变量名中使用下划线。
+变量名应采用驼峰命名法，首字母小写，后续每个单词的首字母大写。变量名的第一个单词应该是名词（而不是动词），以避免与函数混淆。不要在变量名中使用下划线。
 
 ```javascript
 // Good
 var accountNumber = "8401-1";
+```
 
+```javascript
 // Bad: 大写字母开头
 var AccountNumber = "8401-1";
+```
 
+```javascript
 // Bad: 动词开头
 var getAccountNumber = "8401-1";
+```
 
+```javascript
 // Bad: 使用了下划线
 var account_number = "8401-1";
 ```
@@ -6358,8 +5812,7 @@ var total_COUNT = 10;
 // Good
 var object = {
   _count: 10,
-
-  _getCount: function () {
+  _getCount: function() {
     return this._count;
   }
 }
@@ -6367,14 +5820,12 @@ var object = {
 
 ## 严格模式
 
-严格模式应该只在函数内部使用，永远不要全局全局。
+严格模式应该只在函数内部使用，永远不要全局使用。
 
 ```javascript
 // Bad: 全局严格模式
 "use strict";
-```
 
-```javascript
 function doSomething() {
   // code
 }
@@ -6384,12 +5835,11 @@ function doSomething() {
 // Good
 function doSomething() {
   "use strict";
-
   // code
 }
 ```
 
-如果你想让严格模式适用于多个函数而无需多次编写 "use strict"，请使用立即函数调用：
+如果你想让严格模式适用于多个函数而无需多次编写 `"use strict"`，请使用立即函数调用：
 
 ```javascript
 // Good
@@ -6403,7 +5853,7 @@ function doSomething() {
   function doSomethingElse() {
     // code
   }
-});
+}());
 ```
 
 ## 赋值
@@ -6441,22 +5891,26 @@ var same = (a == b);
 ```javascript
 // Good
 var value = condition ? value1 : value2;
+```
 
+```javascript
 // Bad: 没有赋值，应该是一个 if 语句
 condition ? doSomething() : doSomethingElse();
 ```
 
-## # 语句
+## 语句
 
 ### 简单语句
 
-每行最多包含一条语句。所有简单语句都应以分号 (;) 结尾。
+每行最多包含一条语句。所有简单语句都应以分号 (`;`) 结尾。
 
 ```javascript
 // Good
 count++;
 a = b;
+```
 
+```javascript
 // Bad: 缺少分号
 count++
 a = b
@@ -6471,14 +5925,11 @@ a = b
 switch (value) {
   case 1:
     /* falls through */
-
   case 2:
     doSomething();
     break;
-
   case 3:
     return true;
-
   default:
     throw new Error("This shouldn't happen.");
 }
@@ -6490,11 +5941,11 @@ switch (value) {
 
 ```javascript
 if (condition) {
-
-
+  statements
+}
 ```
 
- switch 语句
+### switch 语句
 
 `switch` 语句类的形式如下：
 
@@ -6502,7 +5953,6 @@ if (condition) {
 switch (expression) {
   case expression:
     statements
-
   default:
     statements
 }
@@ -6524,13 +5974,11 @@ try {
 } catch (variable) {
   statements
 } finally {
+  statements
+}
 ```
 
-
-
-
-
-## 空格 (White Space)
+## 空格
 
 空行通过将逻辑相关的代码段隔离开来提高可读性。
 
@@ -6550,949 +5998,871 @@ try {
 
 - 关键字与其其后的括号之间应用空格分隔。
 - 参数列表中的逗号后面应该有一个空格。
-- 除点 (.) 之外的所有二元运算符都应该与其操作数保持空格。空格永远不应将一元运算符（如一元负号、递增 (++) 和递减 (--)）与其操作数隔开。
+- 除点 (`.`) 之外的所有二元运算符都应该与其操作数保持空格。空格永远不应将一元运算符（如一元负号、递增 (`++`) 和递减 (`--`)）与其操作数隔开。
 - `for` 语句中的表达式之间应该用空格分隔。
 
-## 应当避免的事 (Things to Avoid)
+## 应当避免的事
 
 - 永远不要使用原始包装类型（如 `String`）来创建新对象。
 - 永远不要使用 `eval()`。
-- 永远不要使用 `with` 语句。该语句在严格模式下不可用，并且在未来的 ECMAScript 版本中可能。
+- 永远不要使用 `with` 语句。该语句在严格模式下不可用，并且在未来的 ECMAScript 版本中可能被移除。
 
-# 附录 B (APPENDIX B)
+# 附录 B：JavaScript 工具
 
-## JavaScript 工具
-
-## 构建工具 (Build Tools)
+## 构建工具
 
 虽然许多构建工具并不是 JavaScript 特有的，但它们在管理大型 JavaScript 项目时仍然非常有用：
 
-- Ant: 我首选的 JavaScript 项目构建工具。基于 Java 的构建系统。
-- Buildy: 基于 Node.js 的构建系统，内置支持与 JavaScript 和 CSS 相关的任务。
-- Gmake: 一个较旧的构建工具，在 Unix 爱好者中仍然流行。jQuery 使用了 Gmake。
-- Grunt: 基于 Node.js 的构建系统，内置支持与 JavaScript 相关的任务，如混淆和合并。
-- Jammit: 一个基于 Ruby 的资源打包器，可以处理混淆、验证等功能。
-- Jasy: 基于 Python 的构建系统。
-- Rake: 一个用 Ruby 编写的类似于 Gmake 的工具。使用 Sass（一种流行的 CSS 预处理器）的项目倾向于使用 Rake。
-- Sprockets: 基于 Rack 的构建系统。
+- **Ant**: 我首选的 JavaScript 项目构建工具。基于 Java 的构建系统。
+- **Buildy**: 基于 Node.js 的构建系统，内置支持与 JavaScript 和 CSS 相关的任务。
+- **Gmake**: 一个较旧的构建工具，在 Unix 爱好者中仍然流行。jQuery 使用了 Gmake。
+- **Grunt**: 基于 Node.js 的构建系统，内置支持与 JavaScript 相关的任务，如混淆和合并。
+- **Jammit**: 一个基于 Ruby 的资源打包器，可以处理混淆、验证等功能。
+- **Jasy**: 基于 Python 的构建系统。
+- **Rake**: 一个用 Ruby 编写的类似于 Gmake 的工具。使用 Sass（一种流行的 CSS 预处理器）的项目倾向于使用 Rake。
+- **Sprockets**: 基于 Rack 的构建系统。
 
-## 文档生成器 (Documentation Generators)
+## 文档生成器
 
 文档生成器根据放置在源代码中的注释创建文档：
 
-- Docco: 一种并排显示的文档生成器，在代码旁边显示文档。用 CoffeeScript 编写。
-- Dojo Documentation Tools: Dojo 的官方文档生成器。用 PHP 编写。
-- JoDoc: 使用 Markdown 语法的 JavaScript 文档生成器。用 JavaScript 编写。
-- JSDoc ToolKit: 基于 JavaScript 的文档生成器。最常用的文档生成器之一。
-- Natural Docs: 一个支持多种语言的通用文档生成器。用 Perl 编写。
-- NDoc: PDoc 的 JavaScript 端口。
-- PDoc: Prototype 的官方文档生成器。用 Ruby 编写。
-- YUI Doc: YUI 文档生成器。用 JavaScript 编写。
+- **Docco**: 一种并排显示的文档生成器，在代码旁边显示文档。用 CoffeeScript 编写。
+- **Dojo Documentation Tools**: Dojo 的官方文档生成器。用 PHP 编写。
+- **JoDoc**: 使用 Markdown 语法的 JavaScript 文档生成器。用 JavaScript 编写。
+- **JSDoc ToolKit**: 基于 JavaScript 的文档生成器。最常用的文档生成器之一。
+- **Natural Docs**: 一个支持多种语言的通用文档生成器。用 Perl 编写。
+- **NDoc**: PDoc 的 JavaScript 端口。
+- **PDoc**: Prototype 的官方文档生成器。用 Ruby 编写。
+- **YUI Doc**: YUI 文档生成器。用 JavaScript 编写。
 
-## 代码检查工具 (Linting Tools)
+## 代码检查工具
 
 代码检查工具有助于识别代码中存在问题的风格和模式：
 
-- JSLint: Douglas Crockford 的代码质量工具。
-- JSHint: JSLint 的分支，具有更多可配置选项。
+- **JSLint**: Douglas Crockford 的代码质量工具。
+- **JSHint**: JSLint 的分支，具有更多可配置选项。
 
-## 混淆工具 (Minification Tools)
+## 混淆工具
 
 混淆工具通过移除不必要的注释和空格并执行其他代码优化，使 JavaScript 文件更小。
 
-- Closure Compiler: Google 的基于 JavaScript 的混淆器。
+- **Closure Compiler**: Google 的基于 JavaScript 的混淆器。
+- **UglifyJS**: 一个基于 Node.js 的 JavaScript 混淆器。
+- **YUI Compressor**: 一个基于 Java 的 JavaScript 和 CSS 混淆器。
 
-## UglifyJS
-
-一个基于 Node.js 的 JavaScript 混淆器。
-
-## YUI Compressor
-
-一个基于 Java 的 JavaScript 和 CSS 混淆器。
-
-## 测试工具 (Testing Tools)
+## 测试工具
 
 测试工具允许你编写并执行测试验证代码的行为：
 
-- Jasmine: 一个行为驱动的 JavaScript 测试框架。
-- JsTestDriver: Google 的单元测试框架，包含了自动化浏览器测试。
-- PhantomJS: 一个为测试设计的无头 WebKit 浏览器。默认可以配合 QUnit 和 Jasmine 使用，通过驱动系统与其他配合。
-- QUnit: jQuery 的单元测试框架。
-- Selenium: 一个可以用于浏览器测试的功能测试框架。
-- Yeti: 用于浏览器中 JavaScript 测试的测试平台。
-- YUI Test: YUI 单元测试框架。
+- **Jasmine**: 一个行为驱动的 JavaScript 测试框架。
+- **JsTestDriver**: Google 的单元测试框架，包含了自动化浏览器测试。
+- **PhantomJS**: 一个为测试设计的无头 WebKit 浏览器。默认可以配合 QUnit 和 Jasmine 使用，通过驱动系统与其他配合。
+- **QUnit**: jQuery 的单元测试框架。
+- **Selenium**: 一个可以用于浏览器测试的功能测试框架。
+- **Yeti**: 用于浏览器中 JavaScript 测试的测试平台。
+- **YUI Test**: YUI 单元测试框架。
 
-## Index (Index)
+# 索引
 
-## 符号 (Symbols)
+## 符号
 
-- != 运算符, 45
-- !== 运算符, 46, 84
-- == 运算符, 45
-- === 运算符, 46, 84
+- `!=` 运算符
+- `!==` 运算符
+- `==` 运算符
+- `===` 运算符
 
 ## A
 
-- Adams, Douglas, 125
-- addClass() 方法, 98
-- addListener() 方法, 58
-- removeItem() 方法, 62
-- AMD (Asynchronous Module Definition) 模块, 75–76
-- 匿名函数, 43
+- Adams, Douglas
+- `addClass()` 方法
+- `addListener()` 方法
+- `removeItem()` 方法
+- AMD (Asynchronous Module Definition) 模块
+- 匿名函数
 - Ant 构建工具
-- 关于, 133
-- 烘焙文件, 148–149
-- 构建时压缩, 158
-- build.xml 文件, 133–134
-- 构建项目, 137
-- 合并, 145
-- 创建目录, 157
-- 安装, 133
-- 属性, 136
-- 运行, 134
-- 目标依赖, 135
-- Apache 服务器, 158
-- 应用逻辑, 80
-- <apply> 任务
-- 关于, 140
-- 可执行属性, 156
-- failonerror 属性, 142
-- 并行属性, 141, 163
-- YUI Compressor 和, 153
-- 数组字面量 (array literals)
-- 关于, 19
-- 方括号和, 19
-- 数组对象 (Array object)
-- forEach() 方法, 106, 111
-- isArray() 方法, 88
-- length 属性, 108
-- 数组类型, 85, 88
-- ASI (自动分号插入), 7, 9
-- 异步模块定义 (AMD) 模块, 75–76
+  - 关于
+  - 烘焙文件
+  - 构建时压缩
+  - `build.xml` 文件
+  - 构建项目
+  - 合并
+  - 创建目录
+  - 安装
+  - 属性
+  - 运行
+  - 目标依赖
+- Apache 服务器
+- 应用逻辑
+- `<apply>` 任务
+  - 关于
+  - 可执行属性
+  - `failonerror` 属性
+  - 并行属性
+  - YUI Compressor 和
+- 数组字面量
+  - 关于
+  - 方括号和
+- 数组对象
+  - `forEach()` 方法
+  - `isArray()` 方法
+  - `length` 属性
+- 数组类型
+- ASI (自动分号插入)
+- 异步模块定义 (AMD) 模块
 - 自动化测试
-- 关于, 167
-- JsTestDriver 工具, 173–175
-- PhantomJS 引擎, 172–173
-- Yeti 工具, 171
-- YUI Selenium Server, 167–170
-- 自动分号插入 (ASI), 7, 9
-- 自动化 (automation)
-- 优点和缺点, 125
-- Ant 工具, 133–137
-- 组装文件, 177–184
-- 自动化测试, 167–175
-- 烘焙文件, 148–149
-- 代码验证, 139–143
-- 混淆过程, 157–160
-- 合并, 145–147
-- 文档生成器, 161–165
-- 文件和目录, 127–132
-- 混淆过程, 151–157
+  - 关于
+  - JsTestDriver 工具
+  - PhantomJS 引擎
+  - Yeti 工具
+  - YUI Selenium Server
+- 自动分号插入 (ASI)
+- 自动化
+  - 优点和缺点
+  - Ant 工具
+  - 组装文件
+  - 自动化测试
+  - 烘焙文件
+  - 代码验证
+  - 混淆过程
+  - 合并
+  - 文档生成器
+  - 文件和目录
+  - 混淆过程
 
 ## B
-- 烘焙文件, 148–169
 
-我们欢迎对改进索引的建议。请发送邮件至 index@oreilly.com。
-- 空行 (blank lines)
-- 关于, 204
-- case 语句, 32
-- 多行注释, 23
-- 块语句 (block statements)
-- 括号对齐, 30
-- 大括号和, 29
-- 空间周围, 31
-- BOM (浏览器对象模型), 103
-- 书签, 77
-- 布尔值 (Booleans)
-- 作为原始类型, 48, 83
-- 大括号 (使用 curly braces)
-- break 语句, 35
-- 浏览器检测 (browser detection)
-- 关于, 115
-- 浏览器引用, 120–122
-- 功能检测, 119
-- 用户代理代理检测, 115–122
-- 浏览器对象模型 (BOM), 103
-- 构建工具和, 137
-- 示例, 178
-- Jenkins CI 系统和, 182
-- 运行, 134
-- 目标依赖, 135
-- 构建 CI 系统, 184
-- 构建项目
-- 关于, 137
-- <closure> 任务, 155
-- <gz> 任务, 160
-- <jsdoc> 任务, 163
-- <jshint> 任务, 143
-- <phantomjs> 任务, 173
-- <ugly> 任务, 157
-- <yeti> 任务, 171
-- <uicomprocessor> 任务, 154
-- <yoc> 任务, 165
+- 烘焙文件
 
 ## C
-- 驼峰命名 (camel case), 11
+
+- 驼峰命名
 - case 语句
-- default, 34
-- 穿透, 33
-- 缩进, 32
-- 语句周围的, 32
-- CDN (内容交付网络), 127
-- 关于, 181
-- 构建, 184
-- Continuum, 184
-- Jenkins, 181–183
-- 客户端模板, 61
-- Closure Compiler, 152, 154–155
-- <closure> 任务, 155
-- addListener(function, 58
-- Array.isArray() 方法, 88
-- 使用...注释代码, 192
-- 浏览器特定的钩子, 26, 190
-- 压缩和, 158
-- CSS 表达式, 55
-- 检测函数, 87
-- 错误处理, 96
-- 处理器模板系统, 63
-- 消息属性, 101
-- polyfills 和, 111
-- 防止对象修改, 112
-- <script> 元素和, 62
-- YUI Test Server 和, 169
-- 构建目录, 128, 177
-- 构建系统, 133
-- (另见 Ant 工具)
-- 工具构建, 205
-- CI 系统和, 181
-- 构建计划, 178
-- 构建时压缩, 158–160
-- build.xml 文件, 133–134
-- 构建项目, 137
-- 合并, 145
-- 创建目录, 157
-- 安装, 133
-- 属性, 136
-- 运行， 134
-- 目标依赖, 135
-- Apache 服务器, 158
-- 应用逻辑, 80
-- <apply> 任务
-- 关于, 140
-- 可执行属性, 156
-- failonerror 属性, 142
-- 并行属性, 141, 163
-- YUI Compressor 和, 153
-- 数组字面量 (array literals)
-- 关于, 19
-- 方括号和, 19
-- 数组对象 (Array object)
-- forEach() 方法, 106, 111
-- isArray() 方法, 88
-- length 属性, 108
-- 数组类型, 85, 88
-- ASI (自动分号插入), 7, 9
-- 异步模块定义 (AMD) 模块, 75–76
+  - default
+  - 穿透
+  - 缩进
+  - 语句周围的
+- CDN (内容交付网络)
+- 关于
+- 构建
+- Continuum
+- Jenkins
+- 客户端模板
+- Closure Compiler
+- `<closure>` 任务
+- `addListener(function`
+- `Array.isArray()` 方法
+- 使用...注释代码
+- 浏览器特定的钩子
+- 压缩和
+- CSS 表达式
+- 检测函数
+- 错误处理
+- 处理器模板系统
+- 消息属性
+- polyfills 和
+- 防止对象修改
+- `<script>` 元素和
+- YUI Test Server 和
+- 构建目录
+- 构建系统
+  - (另见 Ant 工具)
+- 工具构建
+- CI 系统和
+- 构建计划
+- 构建时压缩
+- `build.xml` 文件
+- 构建项目
+- 合并
+- 创建目录
+- 安装
+- 属性
+- 运行
+- 目标依赖
+- Apache 服务器
+- 应用逻辑
+- `<apply>` 任务
+  - 关于
+  - 可执行属性
+  - `failonerror` 属性
+  - 并行属性
+  - YUI Compressor 和
+- 数组字面量
+  - 关于
+  - 方括号和
+- 数组对象
+  - `forEach()` 方法
+  - `isArray()` 方法
+  - `length` 属性
+- 数组类型
+- ASI (自动分号插入)
+- 异步模块定义 (AMD) 模块
 - 自动化测试
-- 关于, 167
-- JsTestDriver 工具, 173–175
-- PhantomJS 引擎, 172–173
-- Yeti 工具, 171
-- YUI Selenium Server, 167–170
-- 自动分号插入 (ASI), 7, 9
-- 自动化 (automation)
-- 优点和缺点, 125
-- Ant 工具, 133–137
-- 组装文件, 177–184
-- 自动化测试, 167–175
-- 烘焙文件, 148–149
-- 代码验证, 139–143
-- 混淆过程, 157–160
-- 合并, 145–147
-- 文档生成器, 161–165
-- 文件和目录, 127–132
-- 混淆过程, 151–157
+  - 关于
+  - JsTestDriver 工具
+  - PhantomJS 引擎
+  - Yeti 工具
+  - YUI Selenium Server
+- 自动分号插入 (ASI)
+- 自动化
+  - 优点和缺点
+  - Ant 工具
+  - 组装文件
+  - 自动化测试
+  - 烘焙文件
+  - 代码验证
+  - 混淆过程
+  - 合并
+  - 文档生成器
+  - 文件和目录
+  - 混淆过程
+- 子目录
+- document 对象
+  - `all` 属性
+  - `childNodes` 节点
+  - `getElementsByClassName()` 方法
+  - `getElementsByTagName()` 方法
+  - `unique` 属性
+- document 注释
+- document 生成
+  - 关于
+  - 额外信息
+  - JSDoc 工具包
+- Django 风格指南
+  - 语句间距
+  - 括号对齐
+  - `continue` 语句
+  - 数点点
+  - 默认语句
+  - switch 穿透
+  - 函数调用间距
+  - 缩进级别
+  - 命名规范
+  - 语句终止
+  - 语句和大括号
+  - switch 格式
+  - 变量声明
+- Dojo 工具包
+  - 文件目录结构
+  - 模块加载器
+  - 全局方法
+- DOM 包装器
+  - `addClass()` 方法
+  - `classList` 属性
+  - `remove()` 方法
+- `doSomething()` 函数
+- 鸭子类型
+- 补填充
+- 防止修改
+- 严格模式
+- 类型转换
+- `with` 语句
+- 等价运算符
+- Error 对象
+  - 关于
+  - `message` 属性
+  - 支持类型
+- Error 类型
+- 错误, 抛出（见抛出错误）
+- `eval()`
+  - 关于
+  - 严格模式和
+- `EvalError`
+- 事件处理
+  - 关于
+  - 应用逻辑
+  - `onclick` 属性
+  - 传递事件对象
+  - 使用注意事项
+- 事件对象
+  - 关于
+  - `clientX` 属性
+  - `clientY` 属性
+  - 传递
+- `<exec>` 任务
+- `expression()` 函数
 
+## F
 
+- 外观模式
+- 外面模式
+- 工厂函数
+- 特征检测
+  - 关于
+  - 浏览器推理和
+  - 特性推理和
+  - 使用建议
+- 特征推理
+  - 关于
+  - 使用卡通图
+- 直接结构
+  - 基础布局
+  - 最佳实践
+- `<filelist>` 任务
+  - 烘焙文件
+  - 合并文件
+  - 查找文件
 
+## E
 
-子目录, 129
-document 对象
-all 属性, 119, 120, 121
-childNodes 节点, 85, 104, 107, 119
-getElementsByClassName() 方法, 106
-getElementsByTagName() 方法, 119
-unique 属性, 120
-document 注释, 27, 190
-document 生成
-- 关于, 27, 161
-- 额外信息, 206
-- JSDoc 工具包, 161–163
-
-Django 风格指南
-- 语句间距, 31
-- 括号对齐, 30
-- continue 语句, 36
-- 数点点, 34
-- 默认语句, 34
-- switch 穿透, 34
-- 函数调用间距, 43
-- 缩进级别, 7
-- 命名规范, 11, 13, 14
-- 语句终止, 8
-- 语句和大括号, 29
-- switch 格式, 32
-- 变量声明, 40
-
-Dojo 工具包
-- 文件目录结构, 129
-- 模块加载器, 76
-- 全局方法, 71
-
-DOM 包装器
-- addClass() 方法, 111
-- classList 属性, 111
-- remove() 方法, 111
-- doSomething() 函数, 57
-- 鸭子类型 (duck typing), 88
-- 补填充 (polyfills), 111
-- 防止修改, 112
-- 严格模式, 44, 48
-- 类型转换, 46
-- with 语句, 35
-- 等价运算符, 45–47, 199
-
-Error 对象
-- 关于, 96, 100
-- message 属性, 101
-- 支持类型, 100–102
-
-Error 类型, 85, 96
-错误, 抛出（见抛出错误）
-
-eval()
-- 关于, 47, 204
-- 严格模式和, 48
-- EvalError, 100
-
-事件处理
-- 关于, 79
-- 应用逻辑, 80
-- onclick 属性, 57
-- 传递事件对象, 81–82
-- 使用注意事项, 79
-
-事件对象
-- 关于, 79
-- clientX 属性, 80
-- clientY 属性, 80
-- 传递, 81–82
-- <exec> 任务, 164, 170, 173
-expression() 函数, 55
-
-# F
-
-- 外外观模式 (facade pattern), 110
-- 外面模式 (facades), 110
-- 工厂函数, 74
-
-特征检测
-- 关于, 117–119
-- 浏览器推理和, 120–122
-- 特性推理和, 119
-- 使用建议, 123
-
-特征推理
-- 关于, 119
-- 使用卡通图, 122
-
-直接结构
-- 基础布局, 128–132
-- 最佳实践, 127
-
-<filelist> 任务
-- 烘焙文件, 148
-- 合并文件, 145
-- 查找文件, 139
-
-# E
-
-- <echo> 元素, 134
-- ECMA-262 规范, 100
-
-ECMAScript
-- Array.isArray() 方法, 88
-- 驼峰命名法, 11
-- 函数声明, 42
-- 模块和, 74 文件
-- 烘焙, 148–149
-- 压缩过程, 157–160
-- 合并, 145–147
-- 查找, 139
-- 许可证, 148
-- 最小化过程, 151–157
-
-全局变量和函数
-- 关于, 67
-- 代码脆弱性, 68
-- 意外创建, 69–70
-- 命名冲突, 68
-- 全局方法, 71–76
-- 相关问题, 67–69
-- 测试难度, 69
-
-零全局风格指南
-
-<fileset> 任务
-- 合并文件, 145
-- 转换属性, 159
-- 查找文件, 139, 141
-- <jsint> 任务和, 143
-- <phantomjs> 任务, 173
-- FIXME 注释, 193
-- <footer> 元素, 147
-
-- 数组字面量, 19
-- 语句间距, 31
-- 括号对齐, 30
-- eval() 函数, 48
-- for 循环, 38
-- 函数调用间距, 43
-- 函数声明, 42
-- 缩进级别, 7
-- 多行字符串, 15
-- 命名规范, 11, 13, 14
-- 对象字面量, 18
-- 原始类型, 49
-- 编程实践, 31
-- 语句终止, 8
-- with 语句, 35
-
-for 语句
-- 关于, 35, 21
-- break 语句和, 35
-- continue 语句, 36
-- 大括号和, 30
-- 变量声明, 40
-
-for-in 语句
-- 关于, 37, 38
-- hasOwnProperty() 方法, 37
-
-格式化规则
-- 空行, 10, 204
-- 函数调用间距, 42
-- 缩进级别, 5–7, 185
-- 换行, 9
-- 长度, 8, 185
-- 字面量值, 14–19
-- 命名规范, 11–14
-- 语句终止, 7–8
-- 函数调用, 42
-
-Gradle CI 系统, 184
-<gzip> 任务
-- 关于, 158
-- 文件属性, 158
-- src 属性, 158
-
-- Function 构造函数, 48, 88
-- 函数, 41（见全局变量和函数）
-- 声明, 41–42, 194
-- 定义, 68
-- 工厂, 74
-- 立即调用, 43
-- 命名规范, 11–13, 197
-- new 运算符和, 14
-- with 语句, 35
-
-# H
-
-- HACK 注释, 193
-- Handlebars 模板系统, 63
-- 悬挂数点, 16
-
-<header> 元素
-- 关于, 147
-- 属性, 148
-- Hare, C.R., 51
-
-HTML 层
-- 关于, 33
-- 保持 JavaScript, 57–59
-- 松散耦合, 54
-- 符号, 11
-- 全局对象, 67
-
-# I
-
-- if 语句
-- 关于, 201
-- 大括号和, 30
-
-- 立即函数调用
-- 关于, 43
-- 严格模式, 44
-- in 运算符, 89, 90
+- `<echo>` 元素
+- ECMA-262 规范
+- ECMAScript
+  - `Array.isArray()` 方法
+  - 驼峰命名法
+  - 函数声明
+  - 模块和
+- 文件
+  - 烘焙
+  - 压缩过程
+  - 合并
+  - 查找
+  - 许可证
+  - 最小化过程
+- 全局变量和函数
+  - 关于
+  - 代码脆弱性
+  - 意外创建
+  - 命名冲突
+  - 全局方法
+  - 相关问题
+  - 测试难度
+- 零全局风格指南
+- `<fileset>` 任务
+  - 合并文件
+  - 转换属性
+  - 查找文件
+  - `<jsint>` 任务和
+  - `<phantomjs>` 任务
+- `FIXME` 注释
+- `<footer>` 元素
+- 数组字面量
+- 语句间距
+- 括号对齐
+- `eval()` 函数
+- `for` 循环
+- 函数调用间距
+- 函数声明
 - 缩进级别
-- 关于, 185
-- 换行和, 9
-- 长度, 8, 185
-- 空格, 6
-- 样式引用, 7
-- switch 语句, 32
-- 制表符, 6
+- 多行字符串
+- 命名规范
+- 对象字面量
+- 原始类型
+- 编程实践
+- 语句终止
+- `with` 语句
+- `for` 语句
+  - 关于
+  - `break` 语句和
+  - `continue` 语句
+  - 大括号和
+  - 变量声明
+- `for-in` 语句
+  - 关于
+  - `hasOwnProperty()` 方法
+- 格式化规则
+  - 空行
+  - 函数调用间距
+  - 缩进级别
+  - 换行
+  - 长度
+  - 字面量值
+  - 命名规范
+  - 语句终止
+  - 函数调用
+- Gradle CI 系统
+- `<gzip>` 任务
+  - 关于
+  - 文件属性
+  - `src` 属性
+- `Function` 构造函数
+- 函数
+  - 声明
+  - 定义
+  - 工厂
+  - 立即调用
+  - 命名规范
+  - `new` 运算符和
+  - `with` 语句
 
+## H
+
+- `HACK` 注释
+- Handlebars 模板系统
+- 悬挂数点
+
+## I
+
+- `<header>` 元素
+  - 关于
+  - 属性
+- Hare, C.R.
+- HTML 层
+  - 关于
+  - 保持 JavaScript
+  - 松散耦合
+  - 符号
+  - 全局对象
+
+## J
+
+- `if` 语句
+  - 关于
+  - 大括号和
+- 立即函数调用
+  - 关于
+  - 严格模式
+- `in` 运算符
+- 缩进级别
+  - 关于
+  - 换行和
+  - 长度
+  - 空格
+  - 样式引用
+  - `switch` 语句
+  - 制表符
 - 继承
-- 基于对象的, 108
-- 原型链, 108
-- 基于类型的, 109
-- innerHTML 属性, 62
+  - 基于对象的
+  - 原型链
+  - 基于类型的
+- `innerHTML` 属性
+- Ant 构建工具
+- JsTestDriver 工具
+- PhantomJS 引擎
+- `instanceof` 运算符
+- 集成构建
+- Java 属性
+- JavaScript 层
+  - 关于
+  - 保持 CSS
+  - 保持 HTML
+  - 松散耦合
+- Jenkins CI 系统
+- jQuery
+  - 错误处理
+  - 外面模式和
+  - 文件目录结构
+  - 从服务器加载
+  - 命名规范
+  - 全局方法
+- jQuery 核心风格指南
+  - 语句间距
+  - 括号对齐
+  - 等价运算符
+  - `eval()`
+  - switch 穿透
+  - 函数调用间距
+  - 缩进级别
+  - 字符串引号
+  - 语句终止
+  - 语句和大括号
+- `js` 子子字典
+- `<isdoc>` 任务
+  - 关于
+  - `outparam` 属性
+  - `templates` 属性
+- JSDoc 工具包
+- `<jshint>` 任务
+  - 关于
+  - `options` 属性
+- JSHint 工具
+  - 关于
+  - 意外全局
+  - `continue` 语句
+  - 数点点
+  - 等价运算符
+  - `eval()`
+  - 函数声明
+  - `hasOwn().method`
+  - 整合到构建系统
+  - 命名规范
+  - `newcap` 选项
+  - 八进制数字
+  - 原始类型
+  - 编程实践
+  - 语句终止
+  - 语句和大括号
+  - 严格模式
+- JSLint 工具
+  - 关于
+  - 意外全局
+  - `continue` 语句
+  - 数点点
+  - 等价运算符
+  - `eval()`
+  - 函数声明
+  - `hasOwn().method`
+  - 整合到构建系统
+  - 命名规范
+  - `newcap` 选项
+  - 八进制数字
+  - 原始类型
+  - 编程实践
+  - 语句终止
+  - 语句和大括号
+  - 严格模式
+- `<jestdriver>` 任务
+  - 关于
+  - `config` 属性
+  - `outputdir` 属性
+- JsTestDriver 工具
 
-- Ant 构建工具, 133
-- JsTestDriver 工具, 74
-- PhantomJS 引擎, 172
-- instanceof 运算符, 85–87
-- 集成构建, 178, 180
-- Java 属性, 93
+## M
 
-JavaScript 层
-- 关于, 53
-- 保持 CSS, 56
-- 保持 HTML, 57–59
-- 松散耦合, 54
-Jenkins CI 系统, 181–183
+- `<mapper>` 任务
+- 子目录
+- 方法
+  - 添加
+  - 空行
+  - 命名规范
+  - 覆盖
+  - 移除
+  - 设置为
+  - `with` 语句和
+- 最小化过程
+  - 关于
+  - Closure 编译器
+  - UglifyJS 压缩器
+  - YUI 压缩器
+- 修改对象
+  - 添加方法
+  - 更好的方法
+  - 对象所有权
+  - 覆盖方法
+  - 补填充和
+  - 规则
+- AMD
+- 创建
+- 全局方法
+- YUI
+- deflate 模块
+- 多行注释
+- 多行字符串
+- 前导数点
+- 许可证
+- 格式化规则
+  - 空行
+  - 换行
+  - 长度
+  - 字面量值
+- case 语句
+- `<load>` 任务
+- `<properties>` 元素
+- UI 层松散耦合
+  - 关于
+  - 保持 CSS
+  - 保持 HTML
+  - 保持 JavaScript
 
-jQuery
-- 错误处理, 98
-- 外面模式和, 110
-- 文件目录结构, 129
-- 从服务器加载, 61
-- 命名规范, 13
-- 全局方法, 71
-
-jQuery 核心风格指南
-- 语句间距, 31
-- 括号对齐, 30
-- 等价运算符, 47
-- eval(), 48
-- switch 穿透, 34
-- 函数调用间距, 43
-- 缩进级别, 7
-- 字符串引号, 15
-- 语句终止, 8
-- 语句和大括号, 29
-
-js 子子字典, 129
-<isdoc> 任务
-- 关于, 163
-- outparam 属性, 163
-- templates 属性, 163
-JSDoc 工具包, 27, 161–163
-<jshint> 任务
-- 关于, 143
-- options 属性, 143
-
-JSHint 工具
-- 关于, 2, 206
-- 意外全局, 70
-- continue 语句, 36
-- 数点点, 16
-- 等价运算符, 47
-- eval(), 48
-- 函数声明, 42
-- hasOwn().method, 37
-- 整合到构建系统, 139
-- 命名规范, 14
-- newcap 选项, 14
-- 八进制数字, 16
-- 原始类型, 49
-- 编程实践, 51
-- 语句终止, 8
-- 语句和大括号, 29
-- 严格模式, 45
-
-JSLint 工具
-- 关于, 2, 206
-- 意外全局, 70
-- continue 语句, 36
-- 数点点, 16
-- 等价运算符, 47
-- eval(), 48
-- 函数声明, 42
-- hasOwn().method, 37
-- 整合到构建系统, 139
-- 命名规范, 14
-- newcap 选项, 14
-- 八进制数字, 16
-- 原始类型, 49
-- 编程实践, 51
-- 语句终止, 8
-- 语句和大括号, 29
-- 严格模式, 45
-
-<jestdriver> 任务
-- 关于, 175
-- config 属性, 175
-- outputdir 属性, 175
-JsTestDriver 工具, 173–175
-
-# M
-
-<mapper> 任务, 153
-子目录, 129
-方法
-- 添加, 105–106
-- 空行, 11
-- 命名规范, 12
-- 覆盖, 104
-- 移除, 107
-- 设置为, 107
-- with 语句和, 35
-
-最小化过程
-- 关于, 151–155
-- Closure 编译器, 206
-UglifyJS 压缩器, 152–157
-YUI 压缩器, 151–154
-
-修改对象
-- 添加方法, 105–106
-- 更好的方法, 108–111
-- 对象所有权, 103
-- 覆盖方法, 104
-- 补填充和, 111
-- 规则, 104
-- AMD, 75–76
-- 创建, 74
-- 全局方法, 74–75
-YUI, 74
-deflate 模块, 158
-多行注释, 23, 27, 191
-多行字符串, 15
-
-前导数点, 16
-许可证, 148
-格式化规则
-- 空行, 10, 204
-- 换行, 9
-- 长度, 8, 185
-- 字面量值, 14–19
-case 语句, 32
-<load> 任务, 148
-<properties> 元素, 136
-UI 层松散耦合
-- 关于, 53–55
-- 保持 CSS, 56
-- 保持 HTML, 57–59
-- 保持 JavaScript, 57–59
-
-# N
+## N
 
 - 命名空间
-- 关于, 72
-- 命名冲突, 68
-- 命名规范, 11, 197
-- 构造函数, 13
-- 函数, 11–13
-- new 运算符, 14
-navigator.userAgent 属性, 116
-NodeList 集合类型, 106
-null 特殊值
-- 关于, 16
-- 比较, 83–90
-- 设置, 107
-- 测试, 84
-Number() 转换函数, 46
-数字
-- 关于, 15
-- 数点和, 16
-- 八进制格式, 16
-- 作为原始类型, 48, 83, 186
-typeof 运算符和, 84
-- 数组, 88
-- 函数, 87
-- 引用值, 85–87
-密封, 113
-观察者模式, 51
-八进制数字, 16
-全局方法
-- 关于, 71
-AMD 模块, 75–76
-- 模块, 74–75
-- 命名空间, 72–73
-YUI 模块, 74
-运算符
-- 等价, 45–47, 199
-- 换行和, 9
-- 间距, 187
-- 三元运算符, 199
-覆盖方法, 104
+  - 关于
+  - 命名冲突
+- 命名规范
+- 构造函数
+- 函数
+- `new` 运算符
+- `navigator.userAgent` 属性
+- NodeList 集合类型
+- `null` 特殊值
+  - 关于
+  - 比较
+  - 设置
+  - 测试
+- `Number()` 转换函数
+- 数字
+  - 关于
+  - 数点和
+  - 八进制格式
+  - 作为原始类型
+  - `typeof` 运算符和
+- 数组
+- 函数
+- 引用值
+- 密封
+- 观察者模式
+- 八进制数字
+- 全局方法
+  - 关于
+  - AMD 模块
+  - 模块
+  - 命名空间
+  - YUI 模块
+- 运算符
+  - 等价
+  - 换行和
+  - 间距
+  - 三元运算符
+- 覆盖方法
 
-# P
+## P
 
-- 括号, 43, 188
-解析器, 151–157
-大峰命名法 (Pascal case), 14
-PhantomJS 引擎, 172–173
-<phantom> 任务, 173
-构建计划, 178–181
-补填充 (shims), 111
-原始类型
-- 关于, 48, 186
-- 探测, 83–85
-编程实践
-- 关于, 51
-- 避免全局变量, 67–77
-- 避免 null 比较, 83–90
-- 浏览器检测, 115–125
-- 事件处理, 79–82
-UI 层松散耦合, 53
-修改对象, 103–114
-从代码中分离配置数据, 91–94
-抛出错误, 95–102
-<project> 元素
-
-
-
-
-
-## <property> 元素
-- 关于, 136
-- name 属性, 136
-- value 属性, 136
-- PropsJs 工具, 94
-- 原型继承, 108
-- 原型库, 105
-- setInterval() 函数, 48
-- setTimeout 函数, 48, 119
-- shims (polyfills), 111
-- 单行注释, 21–22, 190
-- Souder, Steve, 55
-- 用于缩进级别的空格, 6
+- 括号
+- 解析器
+- 大峰命名法
+- PhantomJS 引擎
+- `<phantom>` 任务
+- 构建计划
+- 补填充
+- 原始类型
+  - 关于
+  - 探测
+- 编程实践
+  - 关于
+  - 避免全局变量
+  - 避免 `null` 比较
+  - 浏览器检测
+  - 事件处理
+  - UI 层松散耦合
+  - 修改对象
+  - 从代码中分离配置数据
+  - 抛出错误
+- `<project>` 元素
+- `<property>` 元素
+  - 关于
+  - `name` 属性
+  - `value` 属性
+- PropsJs 工具
+- 原型继承
+- 原型库
+- `setInterval()` 函数
+- `setTimeout` 函数
+- `shims` (polyfills)
+- 单行注释
+- Souder, Steve
+- 用于缩进级别的空格
 - 间距规则
-    - 块语句, 31
-    - 函数调用, 42
-    - 运算符, 187
-    - 括号, 188
-    - 空格, 204
+  - 块语句
+  - 函数调用
+  - 运算符
+  - 括号
+  - 空格
 - SproutCore 风格指南
-    - 大括号对齐, 30
-    - 等于运算符, 47
-    - 函数调用, 43
-    - 缩进级别, 7
-    - 命名规范, 11, 13
-    - 语句与大括号, 29
-    - 变量声明, 40
-    - 方括号、数组字面量,以及 19
-    - src 目录, 128, 139, 164
-    - <srcfile> 元素, 153
-    - 语句, 31
-    - （另见特定语句）
-        - 关于, 200
-        - 空行和, 11
-        - 块语句间距, 31
-        - 大括号对齐, 200
-        - 大括号和, 29
-        - 终止, 7
-    - 存储配置数据, 93–94
-- 严格模式 (strict mode)
-    - 关于, 198
-    - 避免意外全局变量, 70
-    - 立即函数调用, 44
-    - 防止对象修改, 114
-    - with 语句和, 35
-- String.toUpperCase() 方法, 49
-- 字符串 (strings)
-    - 关于, 14
-    - 多行, 15
-    - 作为原始类型, 48, 83, 186
-    - 引号和, 15
-    - typeof 运算符和, 84
+  - 大括号对齐
+  - 等于运算符
+  - 函数调用
+  - 缩进级别
+  - 命名规范
+  - 语句与大括号
+  - 变量声明
+  - 方括号、数组字面量,以及
+- `src` 目录
+- `<srcfile>` 元素
+- 语句
+  - （另见特定语句）
+  - 关于
+  - 空行和
+  - 块语句间距
+  - 大括号对齐
+  - 大括号和
+  - 终止
+- 存储配置数据
+- 严格模式
+  - 关于
+  - 避免意外全局变量
+  - 立即函数调用
+  - 防止对象修改
+  - `with` 语句和
+- `String.toUpperCase()` 方法
+- 字符串
+  - 关于
+  - 多行
+  - 作为原始类型
+  - 引号和
+  - `typeof` 运算符和
 - 风格指南
-    - 关于, 1
-    - 基础格式, 5–19
-    - 引号, 15
+  - 关于
+  - 基础格式
+  - 引号
 
 ## Q
-- QUnit 测试, 172
+
+- QUnit 测试
 
 ## R
-- RangeError 对象, 100
-- 引用值 (reference values)
-    - 关于, 85
-    - 检测, 85–87
-    - 检测数组, 88
-- ReferenceError 对象, 70, 100
-- 发布版构建 (release builds), 178, 180
-- <replaceregexp> 任务
-    - 关于, 148
-    - byline 属性, 149
-    - flags 属性, 149
-    - match 属性, 149
-    - replace 属性, 149
-- require() 函数, 76
-- RequireJS 模块加载器, 76
-- return 语句, 200
-- REVIEW 注释, 193
-- Rhino 引擎, 140
-- 运行时理解, 157
+
+- `RangeError` 对象
+- 引用值
+  - 关于
+  - 检测
+  - 检测数组
+- `ReferenceError` 对象
+- 发布版构建
+- `<replaceregexp>` 任务
+  - 关于
+  - `byline` 属性
+  - `flags` 属性
+  - `match` 属性
+  - `replace` 属性
+- `require()` 函数
+- RequireJS 模块加载器
+- `return` 语句
+- `REVIEW` 注释
+- Rhino 引擎
+- 运行时理解
 
 ## S
-- <script> 元素
-    - 在 HTML 中嵌入 JavaScript, 58, 59
-    - language 属性, 158
-    - text 属性, 62
-    - type 属性, 62, 63
-- 脚本 (scripts)
-    - 命名冲突, 68
-    - PhantomJS 引擎支持, 172
-    - 严格模式, 44
-    - 零全局方法, 76
-- 分号 (semicolons)
-    - 用分号终止语句, 78
-    - 变量声明和, 69
-    - 注释, 21–28, 190
-    - 函数, 41–48
-    - 运算符, 45–47
-    - 原始包装类型, 48
-    - 语句与表达式, 29–38
-    - 有用工具, 2
-    - 变量, 39–41
-    - 样式对象, 56
-- switch 语句
-    - 关于, 31, 202
-    - default (默认), 34
-    - 穿透 (falling through), 33
-- indent SyntaxError 对象, 100
-- 类型转换 (type coercion), 45–47
-- 基于类型的继承, 109
-- TypeError 对象, 101
-- typeof 运算符
-    - 基础语法, 88
-    - 检测函数, 87
-    - 检测引用值, 85
-    - null 特殊值和, 18, 85
-    - 原始类型和, 83–85
-    - undefined 特殊值和, 17, 84, 187
+
+- `<script>` 元素
+  - 在 HTML 中嵌入 JavaScript
+  - `language` 属性
+  - `text` 属性
+  - `type` 属性
+- 脚本
+  - 命名冲突
+  - PhantomJS 引擎支持
+  - 严格模式
+  - 零全局方法
+- 分号
+  - 用分号终止语句
+  - 变量声明和
+- 注释
+- 函数
+- 运算符
+- 原始包装类型
+- 语句与表达式
+- 有用工具
+- 变量
+- 样式对象
+- `switch` 语句
+  - 关于
+  - `default` (默认)
+  - 穿透
+- `indent` `SyntaxError` 对象
+- 类型转换
+- 基于类型的继承
+- `TypeError` 对象
+- `typeof` 运算符
+  - 基础语法
+  - 检测函数
+  - 检测引用值
+  - `null` 特殊值和
+  - 原始类型和
+  - `undefined` 特殊值和
 
 ## U
-- + Js 压缩器, 152, 156–157
-- <uglifyjs> 任务
-    - 关于, 157
-    - outputdir 属性, 157
-- UI 层, 53
-- undefined 特殊值
-    - 关于, 17
-    - 作为原始类型, 83, 187
-    - 类型转换和, 46
-    - typeof 运算符和, 17, 84, 187
-- 非官方 Ruby 使用指南, 9
-- URError 对象, 101
-- <url> 元素, 169
+
+- UglifyJS 压缩器
+- `<uglifyjs>` 任务
+  - 关于
+  - `outputdir` 属性
+- UI 层
+- `undefined` 特殊值
+  - 关于
+  - 作为原始类型
+  - 类型转换和
+  - `typeof` 运算符和
+- 非官方 Ruby 使用指南
+- `URError` 对象
+- `<url>` 元素
 - user-agent 检测
-    - 关于, 115–116
-    - 浏览器推断和, 120–122
-    - 使用警告, 122
+  - 关于
+  - 浏览器推断和
+  - 使用警告
 
 ## T
-- + 用于缩进级别的 Tab, 6
-- <target> 元素
-    - depends 属性, 135
-    - name 属性, 134
-- <targetfile> 元素, 153
-- 假设的，客户端的, 61
-- 三元运算符, 199
-- 终止语句, 7
-- 测试目录, 128
-- 测试 (testing)
-    - 自动化, 167–175
-    - 事件处理和, 80
-    - 全局变量和函数, 69
-    - 用于 null 特殊值, 84
-    - 用于 sort(list) 方法, 88
-    - 支持的工具, 207
-    - YUI Test Selenium Server, 以及 168–170
-- <test> 元素, 169
-- tests 子字典, 129
-- throw 运算符（抛出错误）, 95, 96
-- 抛出错误 (throwing errors)
-    - 关于, 95–97
-    - 优点, 97
-    - 决定何时, 97–99
-    - 错误类型, 100–102
-    - 经验法则, 99
-    - try-catch 语句和, 99
-- 时间戳, 147
-- TODO TODO 注释, 192
-- try-catch 语句
-    - 关于, 203
-    - 大括号和, 30
-    - 错误处理和, 96, 99–100
+
+- 用于缩进级别的 Tab
+- `<target>` 元素
+  - `depends` 属性
+  - `name` 属性
+- `<targetfile>` 元素
+- 假设的，客户端的
+- 三元运算符
+- 终止语句
+- 测试目录
+- 测试
+  - 自动化
+  - 事件处理和
+  - 全局变量和函数
+  - 用于 `null` 特殊值
+  - 用于 `sort(list)` 方法
+  - 支持的工具
+  - YUI Test Selenium Server, 以及
+- `<test>` 元素
+- `tests` 子字典
+- `throw` 运算符（抛出错误）
+- 抛出错误
+  - 关于
+  - 优点
+  - 决定何时
+  - 错误类型
+  - 经验法则
+  - `try-catch` 语句和
+- 时间戳
+- `TODO` 注释
+- `try-catch` 语句
+  - 关于
+  - 大括号和
+  - 错误处理和
 
 ## V
-- + 验证 (validation)
-    - <apply> 任务和, 140
-    - 查找文件, 139
-    - 改进, 141–143
-- var 语句
-    - 关于, 39–41
-    - 意外全局变量, 69
-    - 变量声明提升, 40
-    - 变量, 39
-    - （另见全局变量和函数）
-    - 赋值, 19
-    - 避免 null 比较, 83–90
-    - 空行和, 11
-    - 声明, 39–41, 69, 194
-    - 换行和, 10
-    - 命名规范, 11–13, 197
-    - 类型转换和, 45–47
+
+- 验证
+  - `<apply>` 任务和
+  - 查找文件
+  - 改进
+- `var` 语句
+  - 关于
+  - 意外全局变量
+  - 变量声明提升
+- 变量
+  - （另见全局变量和函数）
+  - 赋值
+  - 避免 `null` 比较
+  - 空行和
+  - 声明
+  - 换行和
+  - 命名规范
+  - 类型转换和
 
 ## W
-- while 语句
-    - 关于, 202
-    - 大括号和, 30
-    - 空格, 204
-- window 对象
-    - ActiveXObject 属性, 119, 121
-    - name 属性, 70
-    - 浏览器中的重载, 67
-    - requestAnimationFrame() 方法, 118
-    - XMLHttpRequest 属性, 121
-- with 语句
-    - 关于, 204
-    - 严格模式和, 35
-    - 包装器, 110
-- <yuicompressor> 任务
-    - 关于, 154
-    - outputdir 属性, 154
-- <yuidoc> 任务
-    - 关于, 165
-    - inputdir 属性, 165
-    - outputdir 属性, 165
-- YUIDoc 工具, 27
-- <yuitiselium> 任务, 170
+
+- `while` 语句
+  - 关于
+  - 大括号和
+  - 空格
+- `window` 对象
+  - `ActiveXObject` 属性
+  - `name` 属性
+  - 浏览器中的重载
+  - `requestAnimationFrame()` 方法
+  - `XMLHttpRequest` 属性
+- `with` 语句
+  - 关于
+  - 严格模式和
+  - 包装器
+- `<yuicompressor>` 任务
+  - 关于
+  - `outputdir` 属性
+- `<yuidoc>` 任务
+  - 关于
+  - `inputdir` 属性
+  - `outputdir` 属性
+- YUIDoc 工具
+- `<yuitiselium>` 任务
 
 ## Z
-- Zsev, 88
-- 零全局方法, 76
+
+- Zsev
+- 零全局方法
 
 ## X
-- XMLHttpRequest 对象, 60
-- XXX 注释, 193
+
+- `XMLHttpRequest` 对象
+- `XXX` 注释
 
 ## Y
-- <yeti> 任务, 171
-- Yeti 工具, 74
-- YUI 类
-    - add() 方法, 74
-- YUI
-- YUI Compressor, 151–154
-- YUI Doc, 163–165
-- YUI 模块, 74
-- YUI Test Selenium Server
-    - 关于, 167
-    - 创建 Ant, 170
-    - 使用注意事项, 168–190
 
+- `<yeti>` 任务
+- Yeti 工具
+- YUI 类
+  - `add()` 方法
+- YUI
+- YUI Compressor
+- YUI Doc
+- YUI 模块
+- YUI Test Selenium Server
+  - 关于
+  - 创建 Ant
+  - 使用注意事项

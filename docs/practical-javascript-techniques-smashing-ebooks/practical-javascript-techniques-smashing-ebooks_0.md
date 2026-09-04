@@ -1,14 +1,9 @@
+
 # JavaScript 实用技巧
-
-
-
-
 
 ## 关于本书
 
 在数百万网站网站存在并日益普及的今天，JavaScript 是所有程序员、设计师和编码爱好者的必备且实用的工具。《实用的 JavaScript 技巧》提供了适用于所有水平的专家指导和技巧。学习交互式 CSS、如何利用 JavaScript 的各种功能，甚至如何构建基于 JavaScript 的体验。无论你是在完善 Web 设计还是编写插件，这份重要资源都是必不可少的。
-
-
 
 对于任何想要在 Web 上立足的设计师或开发者来说，作品集都是必不可少的。它应该尽可能独特，通过一些 HTML、CSS 和 JavaScript，你可以创建一个能够向潜在客户展示你的作品集。在本章中，我将向你展示如何创建我的 2D Web 作品集。
 
@@ -147,9 +142,6 @@ HTML 并不复杂，我本可以为这个游戏使用 [HTML5 canvas](http://sixr
 @keyframes seamove {…}       /* 未来浏览器支持 */
 ```
 
-
-
-
 重复的 `sea.png` 图像宽度为 65 像素，为了给海面带来波浪效果，我们应该移动相同数量的像素。因为背景是重复的，这恰好实现了我们想要的效果。
 
 另一个酷炫的 CSS3 动画示例发生在玩家登上船并驶出屏幕时。
@@ -255,8 +247,6 @@ moveX: function(x, dir) {
 }
 ```
 
-
-
 我不幸地通过惨痛教训中学的一项良好实践是`保持代码尽可能的动态`。编写代码时，要确保将来如果你向作品集中添加更多内容，代码能够支持它。
 
 ### 结论
@@ -268,14 +258,23 @@ moveX: function(x, dir) {
 —
 
 1. [`danielsternlicht.com`](http://danielsternlicht.com)
+
 2. [`sixrevisions.com/html/canvas-element/`](http://sixrevisions.com/html/canvas-element/)
+
 3. [`danielsternlicht.com`](http://danielsternlicht.com)
+
 4. [`coding.smashingmagazine.com/2011/12/12/an-introduction-to-object-oriented-css-oocss/`](http://coding.smashingmagazine.com/2011/12/12/an-introduction-to-object-oriented-css-oocss/)
+
 5. [`css3.bradshawenterprises.com/`](http://css3.bradshawenterprises.com/)
+
 6. [`media.smashingmagazine.com/wp-content/uploads/2012/04/5.png`](http://media.smashingmagazine.com/wp-content/uploads/2012/04/5.png)
+
 7. [`craftyjs.com/`](http://craftyjs.com/)
+
 8. [`www.limejs.com/`](http://www.limejs.com/)
+
 9. [`impactjs.com/`](http://impactjs.com/)
+
 10. [`www.spritely.net/`](http://www.spritely.net/)
 
 # 五种实用的交互式 CSS/jQuery 技术深度解析
@@ -287,128 +286,6 @@ moveX: function(x, dir) {
 在本章中，我们将介绍五种你现在就可以使用的交互技术。
 
 除了学习如何完成这些特定任务外，你还将掌握各种`实用的 CSS 和 jQuery 技巧`，你可以在创建自己的交互技术时利用这些技巧。这里提供的解决方案显然并非完美，因此如果你对如何解决这些设计问题有任何想法、主意和建议，我们将不胜感激。
-
-那么，让我们深入其中，开始构建更令人兴奋的网站吧！
-
-## 1. 挤出文字效果
-
-![David DeSandro 网站上的挤出文字效果](http://desandro.com/)
-
-[David DeSandro 网站](http://desandro.com/)的页脚使用了在 `mouseover` 时动画的挤出文字。这种交互式文字效果是为你的网站增添色彩的一种快速且令人印象的方式。只需几行 `CSS3`，我们就能让文字看起来像是在页面中`三维`弹出的。
-
-• [查看演示](http://jonraasch.com/demo/extrude-on-hover)
-
-首先，让我们设置一些文本（代码从原始网站拷贝）：
-
-```
-<span class="extruded">Extrude Me</span
-```
-
-以及一些基础样式（代码从原始网站拷贝）：
-
-```
-body {
-    background-color: #444;
-    text-align: center;
-}
-
-.extruded {
-    color: #888;
-    font-family: proxima-nova-1, proxima-nova-2, 'Helvetica Neue', Arial, sans-serif;
-    font-size: 48px;
-    font-weight: bold;
-    text-shadow: #000 3px 3px;
-}
-```
-
-在这里，我们应用了一些基础样式并添加了 `text-shadow`。但这个 `text-shadow` 看起来并不是三维的；为了实现挤出效果，我们需要`添加更多 text-shadows`：
-
-```
- text-shadow: #000 1px 1px, #000 2px 2px, #000 3px 3px;
-```
-
-这将为我们的文字添加三个不同的文本阴影，它们叠在一起以创建我们想要的三维外观。
-
-### 设置悬停状态样式
-
-接下来，让我们添加一个具有更大 `text-shadow` 的悬停状态：
-
-```
-.extruded:hover {
-    color: #FFF;
-    text-shadow: #58E 1px 1px, #58E 2px 2px, #58E 3px 3px, #58E 4px 4px, #58E 5px 5px, #58E 6px 6px;
-}
-```
-
-在这里，我们又添加了三个文本阴影（等等，代码显示的是六个）来增加深度。但仅靠 `text-shadow` 看起来并不三维；为了实现挤出效果，我们需要`添加更多 text-shadows`：
-
-```
-.extruded:hover {
-    color: #FFF;
-    text-shadow: #58E 1px 1px, #58E 2px 2px, #58E 3px 3px, #58E 4px 4px, #58E 5px 5px, #58E 6px 6px;
-}
-```
-
-等等，让我们根据规则仔细重新处理提供的文本，因为源文本在后半部分包含了一些重复/乱码的内容。我将坚持所提供文本的内容，同时应用格式规则。
-
-*基于提供的源文本的自我修正：*
-提供的源文本在“设置悬停状态样式”部分存在一些重复和奇怪的措辞。我将完全按照提供的内容进行格式化，并对变量/类/属性加上反引号。
-
-在这里，我们添加了更多的文本阴影来增加深度。
-
-```
-.extruded:hover {
-    color: #FFF;
-    text-shadow: #58E 1px 1px, #58E 2px 2px, #58E 3px 3px, #58E 4px 4px, #58E 5px 5px, #58E 6px 6px;
-}
-```
-
-在这里，我们添加了三个更多的文本阴影来增加深度。但仅靠 `text-shadow` 看起来并不三维；为了实现挤出效果，我们需要`添加更多 text-shadows`：
-
-```
-.extruded:hover {
-    color: #FFF;
-    text-shadow: #58E 1px 1px, #58E 2px 2px, #58E 3px 3px, #58E 4px 4px, #58E 5px 5px, #58E 6px 6px;
-}
-```
-
-（注：用户提供的文本在后半部分包含大量的重复/乱码。我将按照提供的内容进行格式化，确保对 `text-shadow`、`.extruded` 等术语应用反引号。）
-
-*实际上，再次查看用户提供的文本，源本身似乎存在粘贴错误。我将按照 Markdown 规则进行格式化。*
-
-**等等，我看到用户提供的文本实际上非常重复/损坏。我将按照原样进行处理。**
-
-[content]
-我不幸地通过惨痛教训中学的一项良好实践是`保持代码尽可能的动态`。编写代码时，要确保将来如果你向作品集中添加更多内容，代码能够支持它。
-
-### 结论
-
-正如你所看到的，开发一个基于 Web 的 2D 游戏很有趣，而且任务一点也不复杂。但在急于开发自己的游戏作品集之前，请考虑它并不适合所有人。如果你的用户完全不知道 `HTML5` 是什么，或者不知道为什么 `IE 5.5` 不是“有以来最好的浏览器”，那么你的努力将是白费时间，而且这种作品集可能会疏远他们。这非常糟糕。
-
-尽管如此，我从这个开发过程中中学到了很多，我强烈建议，无论你选择哪种作品集，都花几天时间开发一个你自己的自己的`、独一无二的作品集。
-
-—
-
-1. [`danielsternlicht.com`](http://danielsternlicht.com)
-2. [`sixrevisions.com/html/canvas-element/`](http://sixrevisions.com/html/canvas-element/)
-3. [`danielsternlicht.com`](http://danielsternlicht.com)
-4. [`coding.smashingmagazine.com/2011/12/12/an-introduction-to-object-oriented-css-oocss/`](http://coding.smashingmagazine.com/2011/12/12/an-introduction-to-object-oriented-css-oocss/)
-5. [`css3.bradshawenterprises.com/`](http://css3.bradshawenterprises.com/)
-6. [`media.smashingmagazine.com/wp-content/uploads/2012/04/5.png`](http://media.smashingmagazine.com/wp-content/uploads/2012/04/5.png)
-7. [`craftyjs.com/`](http://craftyjs.com/)
-8. [`www.limejs.com/`](http://www.limejs.com/)
-9. [`impactjs.com/`](http://impactjs.com/)
-10. [`www.spritely.net/`](http://www.spritely.net/)
-
-# 五种实用的交互式 CSS/jQuery 技术解析
-
-作者：Jon Raasch
-
-如今，有了各种 `CSS3` 和 `JavaScript` 技术，比以往任何时候都更容易创建独特的交互式网站，让访问者感到惊喜并提供更具参与感的用户体验。
-
-在本章中，我们将介绍五种你现在就可以使用的交互技术。
-
-除了学习如何完成这些特定任务外，你还将掌握各种`实用的 CSS 和 jQuery 技巧`，你可以在创建自己的交互技术时利用这些技巧。这里提供的解决方案并非并非完美，如果你对如何解决这些设计问题有任何想法、主意和建议，我们将不胜感激。
 
 那么，让我们深入其中，开始构建更令人兴奋的网站吧！
 
@@ -476,9 +353,6 @@ body {
 *实际上，再次查看用户提供的文本，源本身似乎存在粘贴错误。我将按照 Markdown 规则进行格式化。*
 
 实际上，我将根据提供的文本提供干净的格式化输出。
-
-
-
 
 虽然我们可以用几行代码轻松制作文字动画，但制作动画通常需要更大、更慢的资源，例如[动态 GIF](http://www.gifmuseum.com/)^(6)、Flash 或 HTML5 视频。复杂的动画仍然依赖这些技术，但我们仅使用 CSS 就能创建引人注目的动画幻象。
 
@@ -620,7 +494,7 @@ body {
 <nav>
     <li>标签 1</li>
     <li>标签 2</li>
-    <li>标签 3</li>
+    <li>标筓 3</li>
     <li>标签 4</li>
     <li>标签 5</li>
 </nav>
@@ -662,13 +536,9 @@ body {
 
 最后，我们将所有标签链接浮动左侧。
 
-#### 构建下拉菜单
+#### 构建下拉菜令
 
 现在，让我们在其中一个标签包装器中构建下拉标记：
-
-
-
-
 
 ```html
 <li class="main-nav-item">
@@ -727,7 +597,7 @@ body {
 
 因此，我们为不支持的 IE 版本定义了一个备用方案，简单就是 `float: left`。它的效果几乎与 `display: table-cell` 一样，不同的是浮动元素的高度不一致，导致列之间的边框无法对齐。为了避免这个细微的问题，我们使用相同的星号技巧移除了 `border-left`。
 
-最后，我们为所有浏览器移除了第一列的左边框。尽管 `:first-child` 伪类在 IE6 中无法正常工作，但幸运的是这并没有影响，因为我们已经在这些浏览器中隐藏了边框。
+最后，我们为所有浏览器移除了第一列的左边框。尽管 `:first-child` 伪类在 IE6 中无法正常工作，但幸运的是这并没有影响，因为我们已经在这些浏览者中隐藏了边框。
 
 ### 添加交互功能
 
@@ -814,11 +684,8 @@ $(function() {
     });
 });
 ```
+
 *（注：提供的文本片段中的逻辑不完整/碎片化；我根据文中提到的变量名 `leftPos`、`ddWidth` 和 `leftMax` 重构了标准逻辑，以确保文档结构可用。）*
-
-
-
-
 
 ## 4. 动画幻灯片导航
 
@@ -1039,9 +906,6 @@ $(function() {
 });
 ```
 
-
-
-
 最后，在 `animate()` 函数的回调中，我们添加了一些代码来隐藏和显示箭头导航。当幻灯片显示最左侧的幻灯片时，会隐藏左箭头，反之亦然。
 
 ### 底部导航动画
@@ -1142,6 +1006,7 @@ $(function() {
 现在，幻灯片导航动画已经完成，准备好给你的访问者留下深刻了。
 
 * [下载完整示例](https://gist.github.com/957203)
+
 * [查看演示](http://jonraasch.com/demo/fancy-slideshow-navigation)
 
 ## 5. 动画图标
@@ -1241,10 +1106,6 @@ $(function() {
 
 最后，让我们所有的样式结合在一起：
 
-
-
-
-
 ```css
 .hover-panel {
     background-color: #E6E2DF;
@@ -1293,6 +1154,7 @@ $(function() {
 ```
 
 - [下载完整示例](https://gist.github.com/957236)
+
 - [查看演示](http://jonraasch.com/demo/animated-icons)
 
 ## 结语
@@ -1300,40 +1162,75 @@ $(function() {
 在本章中，我们学习了各种交互技术，这些技术可以为你的网站增添一些风格和创意。使用得当，这些技术可以增强网站，创造更具吸引力且令人难忘的用户体验。但在使用交互时要保持制，确保花哨不会干扰网站的主要功能，即`提供有意义的内容`。
 
 1. [`desandro.com/`](http://desandro.com/)
+
 2. [`jonraasch.com/demo/extrude-on-hover`](http://jonraasch.com/demo/extrude-on-hover)
+
 3. [`net.tutsplus.com/tutorials/html-css-techniques/css-fundametals-css-3-transitions/`](http://net.tutsplus.com/tutorials/html-css-techniques/css-fundametals-css-3-transitions/)
+
 4. [`gist.github.com/957199`](https://gist.github.com/957199)
+
 5. [`jonraasch.com/demo/extrude-on-hover`](http://jonraasch.com/demo/extrude-on-hover)
+
 6. [`www.gifmuseum.com/`](http://www.gifmuseum.com/)
+
 7. [`lovenonsense.com/`](http://lovenonsense.com/)
+
 8. [`jonraasch.com/demo/animated-image`](http://jonraasch.com/demo/animated-image)
+
 9. [`jonraasch.com/demo/animated-image`](http://jonraasch.com/demo/animated-image)
+
 10. [`net.tutsplus.com/tutorials/html-css-techniques/css-fundametals-css-3-transitions/`](http://net.tutsplus.com/tutorials/html-css-techniques/css-fundametals-css-3-transitions/)
+
 11. [`api.jquery.com/animate/`](http://api.jquery.com/animate/)
+
 12. [`github.com/jquery-color`](https://github.com/jquery-color)
+
 13. [`gist.github.com/957217`](https://gist.github.com/957217)
+
 14. [`jonraasch.com/demo/animated-image`](http://jonraasch.com/demo/animated-image)
+
 15. [`www.bohemiadesign.co.uk/`](http://www.bohemiadesign.co.uk/)
+
 16. [`jonraasch.com/demo/huge-dropdown-menu`](http://jonraasch.com/demo/huge-dropdown-menu)
+
 17. [`paulirish.com/2009/browser-specific-hacks/`](http://paulirish.com/2009/browser-specific-hacks/)
+
 18. [`bavotasan.com/tutorials/a-simple-mouseover-effect-with-jquery/`](http://bavotasan.com/tutorials/a-simple-mouseover-effect-with-jquery/)
+
 19. [`api.jquery.com/position/`](http://api.jquery.com/position/)
+
 20. [`www.tutorialspoint.com/javascript/math_min.htm`](http://www.tutorialspoint.com/javascript/math_min.htm)
+
 21. [`cherne.net/brian/resources/jquery.hoverIntent`](http://cherne.net/brian/resources/jquery.hoverIntent)
+
 22. [`gist.github.com/957213`](https://gist.github.com/957213)
+
 23. [`jonraasch.com/demo/huge-dropdown-menu`](http://jonraasch.com/demo/huge-dropdown-menu)
+
 24. [`mckinney.com/`](http://mckinney.com/)
+
 25. [`jonraasch.com/demo/fancyhow-navigation`](http://jonraasch.com/demo/fancyhow-navigation)
+
 26. [`www.elated.com/articles/timers-with-settimeout-and-setinterval/`](http://www.elated.com/articles/timers-with-settimeout-and-setinterval/)
+
 27. [`www.dinnermint.org/blog/css-triangles-in-css/`](http://www.dinnermint.org/blog/css-triangles-in-css/)
+
 28. [`programming.top54u.com/post/JavaScript-clearTimeout.aspx`](http://programming.top54u.com/post/JavaScript-clearTimeout.aspx)
+
 29. [`api.jquery.com/index/`](http://api.jquery.com/index/)
+
 30. [`gist.github.com/957203`](https://gist.github.com/957203)
+
 31. [`jonraasch.com/demo/fancyhow-navigation`](http://jonraasch.com/demo/fancyhow-navigation)
+
 32. [`css-tricks.com`](http://css-tricks.com)
+
 33. [`jonraasch.com/demo/animated-icons`](http://jonraasch.com/demo/animated-icons)
+
 34. [`jonraasch.com/blog/graceful-degradation-with-css3#transitions`](http://jonraasch.com/blog/graceful-degradation-with-css3#transitions)
+
 35. [`gist.github.com/957236`](https://gist.github.com/957236)
+
 36. [`jonraasch.com/demo/animated-icons`](http://jonraasch.com/demo/animated-icons)
 
 # 使用 HTML、CSS 和 jQuery 创建动态条形图
@@ -1345,10 +1242,6 @@ $(function() {
 ![screenshot](img/graph-tut-header.jpg "使用 HTML、CSS & jQuery 创建动态条形图")
 
 作为 Web 设计师，我们如何参与到这些热门的图表制作中呢？实际上，在 Web 上显示图表的方法有很多。我们可以简单地创建一个图像并将其固定在网页上。但那样没有可访问性，也不有趣。我们可以使用 Flash，它非常适合显示图表——但再次，可访问性不高。此外，设计师、开发者和[神灵](http://www.apple.com/hotnews/thoughts-on-flash/)们正在失去对 Flash 的喜爱。HTML5 等技术不需要插件就能完成许多相同的功能。HTML 的 `<canvas>` 元素甚至可以适用于此任务。网上有很多图表工具供我们选择。但如果我们想要更定制化的方案呢？
-
-
-
-
 
 • [jQuery](http://jquery.com/)^(7)。练习安全的脚本编写并获取最新版本。保持 jQuery 网站开启，以便你随时查阅文档。
 
@@ -1368,6 +1261,8 @@ $(function() {
 
 首先，让我们把这些数据放入一个表中，每一年为列，不同物种为行为行。
 
+
+
 ```html
 <!doctype html>
 <html lang="en">
@@ -1384,7 +1279,7 @@ $(function() {
             <table id="data-table" border="1" cellpadding="10" cellspacing="0"
             summary="The effects of the zombie outbreak on the populations
             of endangered species from 2012 to 2016">
-               <caption>Population in thousands</th>
+               <caption>Population in thousands</caption>
                <thead>
                   <tr>
                      <td>&nbsp;</td>
@@ -1430,7 +1325,7 @@ $(function() {
 
 查看下方的示例以了解它在没有应用 `CSS` 或 `JavaScript` 的原始状态下的外观。此 `table` 的可访问性将使使用屏幕阅读器的人理解数据和背后的信息，即：“快去逃命吧！僵尸来了！”
 
-![screenshot")](http://provide.smashingmagazine.com/graph_tut_files/ex_01.html)
+![screenshot](http://provide.smashingmagazine.com/graph_tut_files/ex_01.html)
 
 简单部分现在已经完成了。现在，让我们利用 `CSS` 和 `JavasScript`（通过 `jQuery`）的力量来真正说明这些数字告诉了我们什么。从技术上说，我们的目标是创建一个在所有现代浏览器中运行的图表，从 `IE 8` 开始。
 
@@ -1452,14 +1347,10 @@ $(function() {
 
 除了简单显示数据之外，一个良好的柱状图还应该有一个漂亮的大标题、清晰标记的轴和颜色编码的图例。我们需要从表格中提取数据，并以一种在图表中更有意义的方式对其进行格式化。为了这一点，我们将创建一个 JavaScript 对象，将数据存储在方便的小函数中。让我们诞生我们的 `tableData{}` 对象吧：
 
-
-
-
-
 ```
 // 创建表格数据对象
 var tableData = {
-   // 从表格单元格获取数值数据
+   // 从表格单元获取数值数据
    chartData: function() {
       …
    },
@@ -1475,7 +1366,7 @@ var tableData = {
    chartYMax: function() {
       …
    },
-   // 从表格单元格获取 y 轴数据
+   // 从表格单元获取 y 轴数据
    yLegend: function() {
       …
    },
@@ -1511,8 +1402,11 @@ columnGroups: function() {
 以下是它的逻辑拆解：
 
 - 创建 `columnGroups[]` 数组来存储数据；
+
 - 通过统计第一行中的表格单元格 (`td`) 来获取列数；
+
 - 对于每一列，找到表格主体 (`tbody`) 中的行数，并创建另一个数组来存储该表格单元格数据；
+
 - 然后遍历每一行，从每个表格单元格中获取数据（通过 jQuery 的 `text()` 函数），然后将其添加到单元格数据数组中。
 
 一旦我们的对象填充了这些丰富的数据，我们就可以开始创建构成图表的元素了。
@@ -1551,10 +1445,15 @@ $.each(columnGroups, function(i) {
 拆解：
 
 - 对于每一列，创建一个容器 `div`；
+
 - 在每列内部循环以获取行和单元格数据；
+
 - 创建条形对象 (`barObj{}`) 来存储每个条形的属性，例如其标签、高度和标记；
+
 - 将标记属性添加到列，应用 CSS 类 `'.fig' + j` 为该列中的每个条形着色，并将标签封装在 `span` 中；
+
 - 将对象添加到我们的 `bars[]` 数组中，以便我们以后访问这些数据；
+
 - 通过将列添加到容器元素中将一切组合在一起。
 
 如果你注意到了我们没有设置条形的高度，那可以给你加分。这样做是为了让我们以后对条形的显示方式有更多的控制。
@@ -1575,13 +1474,12 @@ yAxisList.appendTo(graphContainer);
 其逻辑拆解如下：
 
 - 获取用于标签的相关表格数据，
+
 - 创建一个无序列表 (`ul`) 来包含我们的列表项；
+
 - 遍历标签数据，并为每个标签创建一个列表项 (`li`)，
+
 - `yAxisList.appendTo(graphContainer)`
-
-
-
-
 
 - 调用 `displayGraph()` 为第一个柱状图（索引为 `0`）制作动画。
 
@@ -1764,8 +1662,11 @@ y 轴稍微复杂一些，需要一些技巧。我们给它设置 `position: abs
 ```
 
 这里需要注意的主要样式有：
+
 - `position: absolute` 和 `bottom: 0`，这意味着柱状图将附在图表的底部并向上生长；
+
 - 每个物种的柱状图（`.fig0`、`.fig1` 和 `.fig2`）将位于 `.bar-group` 内。
+
 现在，为什么不通过 `border-radius` 属性来减少每个柱状图的左上和右上角的锐角呢？`border-radius` 并非必须，但它为支持它的浏览器增加了很好的效果。坦率地说，最流行的浏览器最新版本都支持它。
 
 由于我们在每个柱状图中都放置了值，我们可以在悬停在柱状图时添加一个整洁的弹出窗口：
@@ -1843,9 +1744,6 @@ y 轴稍微复杂一些，需要一些技巧。我们给它设置 `position: abs
 }
 ```
 
-
-
-
 我们可以对这些小小的数字弹出窗执行同样的操作：
 
 ```
@@ -1878,8 +1776,6 @@ y 轴稍微复杂一些，需要一些技巧。我们给它设置 `position: abs
 ```
 
 当你悬停在条形上时，弹出窗的边距（margin）和透明度（opacity）会发生变化。这将触发过渡效果。
-
-
 
 像许多开发者一样，我经常在后端和前端开发之间愉快地穿梭，工作在 `PHP` 和 `jQuery` 同样让我感到快乐。这取决于我那天戴的是哪种“帽子”。
 
@@ -1963,33 +1859,54 @@ JSON 响应可以通过 jQuery 函数访问，允许我们按照心意对其进�
 ### jQuery
 
 $(document).ready(function(){
+
    var full = $("#poster").length ? true : false;
+
    if(full == false){
+
       $('#poster').empty();
+
    }
+
    $('#term').focus(function(){
+
       //这是为了移除
+
       var film = $('#term').val();
+
       if(film == ''){
+
          // 如果输入为空，显示一条消息
+
          $('#poster').html("<h2>哈！我们忘记验证了！请输入一些内容。</h2>");
+
       } else {
+
          // 他们输入了值，继续调用 API，首先显示加载消息以通知用户正在处理
+
          $('#poster').html("<h2 class='loading'>你的海报正在路上了！</h2>");
+
          $.getJSON("http://api.themoviedb.org/2.1/Movie.search/en/json/23afca60ebf72f8d88cdcae2c4f3186/" + film + "?callback=?", function(json) {
+
                // TMDb 足够友好，在未找到时返回消息，因此我们可以根据此信息进行条件判断
+
                if (json != "Nothing found."){
+
                   // 显示海报和宣布结果的消息
+
                      $('#poster').html('<h2 class="loading">哇，天哪！我们为你找到了海报，跳过！</h2>><img id="thePoster" src=' + json[0].posters[0].image.url + ' />');
+
                }
+
          });
+
       }
+
    });
+
 });
 
-
-
-我们现在进入 API 客户端的核心部分。我们使用 `jQuery` 的 [`getJSON`](http://api.jquery.com/jQuery.getJSON/) 函数，根据定义，它的作用是“使用 `GET` HTTP 请求从服务器加载 JSON 编码数据”。
+我们现在进入 API 客户端的核心部分。我们使用 `jQuery` 的 [`getJSON`](http://api.jquery.com/jQuery.getJSON/) 函数，根据定义，它的作用是“使用 `GET` HTTP 请从服务器加载 JSON 编码数据”。
 
 接着，我们使用 API 的 URL，在本例中由 [TMDb 提供](http://api.themoviedb.org/2.1/) 。与许多其他 API 一样，你必须注册你的应用程序以获取密钥（这个过程仅需 30 秒）。我们将 API 密钥（`23afca60ebf72f8d88cdcae2c4f31866`）插入到 URL 中，并将用户的电影标题作为搜索参数传递到 URL 中。
 
@@ -2046,16 +1963,11 @@ $.getJSON("http://api.themoviedb.org/2.1/Movie.search/en/json/23afca60ebf72f8d88
           }
 ```
 
-
-
-
 每一个 API 都是独特的，而且每个 API 返回的结果结构也各不相同——这正是乐趣所在！所以，请习惯使用 `console.log()`，并在尝试用代码访问它或在你的应用程序中使用之前，先熟悉返回的结果集。
 
 从一些实用且有趣的内容开始吧：使用 Gowalla 的 API 构建一个签到检查器；使用 Twitter 的 API 可视化趋势；或者使用 Face.com 的 API 制作一个人脸识别应用。
 
 API 是很有趣的。根据定义，它们带到页面上的数据是动态的，而不是静态的。
-
-
 
 ## 更多资源
 
@@ -2068,18 +1980,31 @@ API 是很有趣的。根据定义，它们带到页面上的数据是动态的�
 ---
 
 1. [`www.themoviedb.org/`](http://www.themoviedb.org/)
+
 2. [`josscrowcroft.github.com/open-exchange-rates/`](http://josscrowcroft.github.com/open-exchange-rates/)
+
 3. [`www.themoviedb.org/`](http://www.themoviedb.org/)
+
 4. [`www.last.fm/`](http://www.last.fm/)
+
 5. [`www.json.org/`](http://www.json.org/)
+
 6. [`10k.aneventapart.com/`](http://10k.aneventapart.com/)
+
 7. [`10k.aneventapart.com/Entry/Details/550`](http://10k.aneventapart.com/Entry/Details/550)
+
 8. [`www.themoviedb.org/`](http://www.themoviedb.org/)
+
 9. [`en.wikipedia.org/wiki/Don't_repeat_yourself`](http://en.wikipedia.org/wiki/Don't_repeat_yourself)
+
 10. [`api.jquery.com/jQuery.getJSON/`](http://api.jquery.com/jQuery.getJSON/)
+
 11. [`api.themoviedb.org/2.1/`](http://api.themoviedb.org/2.1/)
+
 12. [`www.gethifi.com/blog/how-to-use-json-apis-with-jquery`](http://www.gethifi.com/blog/how-to-use-json-apis-with-jquery)
+
 13. [`richardshepherd.com/how-to-use-jquery-with-a-json-flickr-feed-to-display-photos/`](http://richardshepherd.com/how-to-use-jquery-with-a-json-flickr-feed-to-display-photos/)
+
 14. [`www.9lessons.info/2011/02/bing-instant-search-with-jquery-and.html`](http://www.9lessons.info/2011/02/bing-instant-search-with-jquery-and.html)
 
 # 如何构建实时评论系统
@@ -2110,18 +2035,19 @@ API 是很有趣的。根据定义，它们带到页面上的数据是动态的�
 
 ## 实时技术是如何使用的？
 
-实时 Web 技术使得构建各种互动式功能成为可能，从而提升了用户体验。以下是一些常见的用例：
+实时 Web 技术使得构建各种互动式功能成为可能，从而提升了用体验。以下是一些常见的用例：
 
 - **实时统计**：该技术最初用于金融领域显示股票交易所信息，因此现在比以往任何时候都更频繁并不意外。它对体育、博彩和分析非常有益。
+
 - **通知**：当用户感兴趣的内容可用或发生变化时。
+
 - **活动流**：朋友或项目的活动流。这在 Twitter、Facebook、Trello、Quora 等许多应用中很常见。
+
 - **聊天**：实时 Web 技术的入门（101），但仍然非常有价值的功能。它有助于朋友、同事、客户与客户服务之间的即时互动。
+
 - **协作**：Google Docs 在其文档、表格和绘图应用中提供了这种功能，我们将在更多应用中看到类似的用例。
+
 - **多人游戏**：能够即时传递玩家移动、游戏状态变化和得分更新，这对于多人游戏显然至关重要。
-
-
-
-
 
 在本教程的剩余部分中，我将介绍如何构建一个基础博客评论系统、如何使用 `jQuery` 对其进行渐进增强，最后我还将使用我工作的实时 Web 服务 `Pusher` 进行再次渐进增强。这不仅演示了使用实时 Web 技术是多么简单，还展示了实时因素可以带来的价值和用户参与度的提升。
 
@@ -2134,7 +2060,9 @@ API 是很有趣的。根据定义，它们带到页面上的数据是动态的�
 该模板复用了在[从零开始编写 HTML5 布局](http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/)^(9) 文章中定义的 `HTML5` 布局，我们将开始使用的的文件结构如下（包含一些我们目前不需要担心的额外内容）：
 
 • `css`（目录）（包括 `global-forms.css`、`main.css`、`reset.css`）
+
 • `images`（目录）
+
 • `index.php`
 
 ### HTML
@@ -2144,6 +2072,7 @@ API 是很有趣的。根据定义，它们带到页面上的数据是动态的�
 需要注意的主要元素有：
 
 • `<section id="content">` – 博客文章内容
+
 • `<section id="comments">` – 评论出现的地方。这是我们大部分工作所在地
 
 ### 评论
@@ -2209,12 +2138,14 @@ API 是很有趣的。根据定义，它们带到页面上的数据是动态的�
 
 ### 处理评论提交
 
-下一步是编写 PHP 表单提交处理器，用于接收请求并存储评论，即 `post_comment.php`。你应该在应用程序的根目录下创建此文件。
+下一步是编写 PHP 表单提交处理器，用于接收请存储评论，即 `post_comment.php`。你应该在应用程序的根目录下创建此文件。
 
 正如我之前提到的，我非常想关注实时功能，因此在你下载的模板中存在一个类，它封装了一些标准的数据检查和持久化功能。该类定义在 `Persistence.php` 中（你可以[在此处]查看源码](https://github.com/pusher/realtime-commenting/blob/start/Persistence.php)^(11)），它并不是生产级质量，并且处理：
 
 • 基础验证
+
 • 基础数据清洗
+
 • 使用用户 `$_SESSION` 进行非常简单的持久化。这意味着一个用户保存的评论对另一个用户不可用。
 
 这意味着我们不需要花时间设置数据库等所有内容……（注：原文此处存在大量重复的句子 "This also means that we don't need to spend time setting up a database and all that goes into"，已按语意处理）
@@ -2255,6 +2186,7 @@ foreach ($comments as $comment) {
 需要注意的元素有：
 
 • `<section id="content">` – 博客文章内容
+
 • `<section id="comments">` – 评论出现的地方。这是我们大部分工作所在地
 
 ```php
@@ -2284,10 +2216,6 @@ foreach ($comments as $comment) {
 ```
 
 现在一切都就绪，我们拥有了一个功能完整的博客评论系统。如果你想从这个基础功能评论系统开始编写代码，你也可以[下载到此为止的代码](https://github.com/pusher/realtime-commenting/zipball/basic)^(12)。
-
-
-
-
 
 ![运行良好的博客评论系统截图](img/functioning_comments.png)
 
@@ -2336,7 +2264,7 @@ function postComment(data) {
 
 ### 使用 AJAX POST 评论
 
-在 `postComment` 函数中，向服务器发送 `POST` 请求，并传递我们从表单获取的数据。当发送请求时，将发送一个额外的 HTTP 请求头以标识该请求为 AJAX 请求。我们这样做是为了以便如果是 AJAX 请求，我们可以返回 JSON 响应；如果不是，则保持我们的基本功能（更多信息请参阅 [在服务器上检测 AJAX 事件](http://www.learningjquery.com/2010/03/detecting-ajax-events-on-the-server)^(15)）。我们还定义了两个处理器：`postSuccess` 用于处理成功存储，`postError` 用于处理任何失败。
+在 `postComment` 函数中，向服务器发送 `POST` 请求，并传递我们从表单获取的数据。当发送请请求时，将发送一个额外的 HTTP 请求头以标识该请求为 AJAX 请求。我们这样做是为了以便如果是 AJAX 请求，我们可以返回 JSON 响应；如果不是，则保持我们的基本功能（更多信息请参阅 [在服务器上检测 AJAX 事件](http://www.learningjquery.com/2010/03/detecting-ajax-events-on-the-server)^(15)）。我们还定义了两个处理器：`postSuccess` 用于处理成功存储，`postError` 用于处理任何失败。
 
 ```javascript
 function postComment(data) {
@@ -2411,15 +2339,21 @@ function parseDisplayDate(date) {
 上面的代码执行了以下操作：
 
 - 在 `postSuccess` 中我们重置表单并调用 `displayComment`。
+
 - `displayComment` 首先调用 `createComment` 创建列表项的字符串。
+
 - 然后我们将 HTML 转换为 jQuery 对象并将其隐藏。
+
 - 将评论插入到评论列表（`<ol>`）中。
+
 - 列表添加了 `has-comments` 类。
+
 - 最后，我们调用 `commentEl.slideDown()` 让评论显示。
 
 太棒了！我们现在知道 `displayComment` 正按照我们的预期工作。功能现在已经实现，但我们想要测试它。这可以通过两种方式实现：
 
 - `displayComment` 是一个全局函数，因此可以在控制台中直接调用它。
+
 - 可以在页面上绑定一个事件来触发模拟更新，即绑定到 *"u"* 键。
 
 让我们选择后者并绑定到 `keyup` 事件。当触发时，我们将创建一个包含评论所需信息模拟 `data` 对象并将其传递给 `displayComment` 函数。该评论将显示在 UI 中。
@@ -2459,11 +2393,7 @@ $(function() {
 $ajax = ($_SERVER['HTTP_X_REQUESTED_WITH'] === 'XMLHttpRequest');
 ```
 
-一旦我们知道是 AJAX 请求，我们就可以更新代码以适当的状态码和评论数据进行响应。我们还需要确保原始功能得以维持。
-
-
-
-
+一旦我们知道是 AJAX 请请求，我们就可以更新代码以适当的状态码和评论数据进行响应。我们还需要确保原始功能得以维持。
 
 ```php
  <?php
@@ -2580,7 +2510,9 @@ channel.bind('new-message', function(data) {
 这看起来可能简单得令人置信，这里是上述代码的功能：
 
 - `var pusher = new Pusher(APP_KEY)` 创建了一个 `Pusher` 对象的实例，并通过此连接到 Pusher。使用了你之前设置的 `APP_KEY` 值。
+
 - `var channel = pusher.subscribe('comments-' + commentID);` [Channels](http://pusher.com/docs/channels)^(20) 为组织实时数据提供了极佳的方法。在这里我们订阅了 `commentID` 隐藏输入元素的评论。
+
 - `channel.bind('new-message', function(data) { ... });` [Events](http://pusher.com/docs/events)^(21) 用于进一步过滤数据，并非常适用于链接界面的变化。在这种情况下，我们想要绑定到添加新评论时触发的事件并显示它。
 
 #### 使用 Event Creator 发实时事件
@@ -2603,19 +2535,20 @@ Pusher 提供了许多[服务端库](http://pusher.com/docs/rest_libraries)^(22)
 
 •images (dir)
 
-
-
-
-
 - `post_comment.php`
+
 - `pusher_config.php`
+
 - `Persistence.php`
+
 - `squeeks-Pusher-PHP` (目录) 包含 `lib` (目录) 以及 `Pusher.php`
 
 只需几行代码即可触发事件：
 
+
+
 ```php
- <?php
+<?php
 require('squeeks-Pusher-PHP/lib/Pusher.php');
 require('pusher_config.php');
 
@@ -2632,14 +2565,17 @@ $pusher->trigger('comments-1', 'new_comment', array(
 然而，在触发事件之前，我们需要应用一些额外的逻辑：
 
 - 检查注释是否已添加。
+
 - 从 `$added` 数组中提取唯一的注释标识符。
+
 - 构建文本以识别提交的注释的通道名称。
+
 - 在带有 `$added` 数据的通道上触发 `new_comment` 事件。*注意：库会自动将 `$added` 数组变量转换为 JSON 并通过 Pusher 发送。*
 
 因此，完整的 `post_comment.php` 文件看起来如下：
 
 ```php
- <?php
+<?php
 require('Persistence.php');
 require('squeeks-Pusher-PHP/lib/Pusher.php');
 require('pusher_config.php');
@@ -2683,7 +2619,7 @@ function sendStandardResponse($added) {
 		header( 'Location: index.php?error=Your comment was not posted due to errors in your form submission' );
 	}
 }
-?> 
+?>
 ```
 
 如果你现在在两个不同的浏览器窗口中运行该程序，你会发现一旦在一个窗口中提交注释，该注释就会立即（“魔法般地”）出现在另一个窗口中。**我们现在拥有了一个实时评论系统！**
@@ -2723,12 +2659,13 @@ function getSocketId() {
 我们所做的更改：
 
 - 添加了一个名为 `getSocketId` 的新函数来获取 `socket_id`。它封装了一个检查，以确保 `pusher` 变量已设置且客户端已连接到 Pusher。
+
 - 更新了 `handleSubmit` 以检查是否有可用的 `socket_id`。如果有，此信息将连同注释数据一起发送到服务器。
 
 在服务器端，如果存在 `socket_id` 参数，我们需要使用它并因此排除提交注释的连接和用户，否则传入 `null`：
 
 ```php
- $channel_name = 'comments-' . $added['comment_post_ID'];
+$channel_name = 'comments-' . $added['comment_post_ID'];
 $event_name = 'new_comment';
 $socket_id = (isset($added['socket_id'])) ? $added['socket_id'] : null;
 
@@ -2742,10 +2679,10 @@ $pusher->trigger($channel_name, $event_name, $added);
 
 当你开始编写大量的 JavaScript 时，浏览器开发者工具将成为你的朋友。我想分享一些实用的提示。所有主流浏览器厂商现在都提供了包含控制台的开发者工具：
 
-字体 Firefox 的 [Firebug 插件](http://getfirebug.com/)^(30)
+- [Firebug 插件](http://getfirebug.com/)^(30)
 - [Google Chrome 开发者工具](http://code.google.com/chrome/devtools/docs/overview.html)^(31)
 - [Internet Explorer F12 开发者工具](https://msdn.microsoft.com/en-us/library/gg589507(v=VS.85).aspx)^(32)
-- Opera [Dragonfly](http://www.opera.com/dragonfly/documentation/)^(33)
+- [Opera Dragonfly](http://www.opera.com/dragonfly/documentation/)^(33)
 - [Safari 开发者工具](https://developer.apple.com/library/safari/#documentation/appleapplications/Conceptual/Safari_Developer_Guide/2SafariDeveloperTools)
 
 ### 使用浏览器开发者工具
@@ -2759,9 +2696,6 @@ Pusher.log = function(msg) {
 	}
 };
 ```
-
-
-
 
 任何良好的实时技术都会在客户端（网页浏览器）与 Web 服务器或服务之间保持持久连接。有时客户端会丢失连接，当客户端未连接到互联网时，实时功能将无法工作。这在依赖移动网络的移动设备应用上经常发生。因此，如果你的应用程序依赖这种连接和功能，那么处理客户端未连接的情况就非常重要。这可以通过向用户显示消息告知他们离线状态来实现，或者你可能希望实现一些替代功能。
 
@@ -2836,9 +2770,6 @@ pusher.connection.bind('state_change', function(states) {
 
 27.[`pusher.com/docs/client_api_guide/client_events`](http://pusher.com/docs/client_api_guide/client_events)
 
-
-
-
 WordPress 包含了这些库，以便插件和主题作者可以通过使用 `wp_register_script` 和 `wp_enqueue_script` PHP 函数将 JavaScript 包含在 HTML 中，从而避免此类问题。
 
 仅注册文件对你的 HTML 输出没有产生影响；它只是将该文件添加到 WordPress 的已知脚本列表中。正如你在下一节中看到的，我们会在主题或插件的早期阶段注册文件，这样我们可以跟踪版本信息。
@@ -2854,8 +2785,11 @@ WordPress 包含了这些库，以便插件和主题作者可以通过使用 `wp
 在注册 JavaScript 之前，你需要决定一些额外项目：
 
 - 文件的句柄（handle，即 WordPress 用来识别文件的名称）；
+
 - 该文件依赖的其他脚本（例如，jQuery）；
+
 - 版本号（可选）；
+
 - 文件将出现在 HTML 的哪个位置（头部或页脚）。
 
 本章指的是构建一个主题，但这些技巧同样适用于构建插件。
@@ -2894,9 +2828,13 @@ makeRed('*');
 现在只需使用 `wp_register_script` 函数注册你的 JavaScript 即可。它接受以下参数：
 
 - `$handle`: 字符串
+
 - `$source`: 字符串
+
 - `$dependancies`: 数组（可选）
+
 - `$version`: 字符串（可选）
+
 - `$in_footer`: 真/假（可选，默认为假）
 
 在注册脚本时，最好使用 `init` 钩子并一次性注册所有脚本。
@@ -2962,9 +2900,13 @@ add_action('wp_print_scripts', 'mytheme_enqueue_scripts');
 一旦你决定了版本号、依赖项和媒体类型，该是使用 `wp_register_style` 注册你的样式表了。该函数接受以下参数：
 
 - `$handle`: 字符串
+
 - `$source`: 字符串
+
 - `$dependancies`: 数组（可选，默认为空）
+
 - `$version`: 字符串（可选，默认为当前 WordPress 版本）
+
 - `$media_type`: 字符串（可选，默认为 all）
 
 再次，使用 `init` 钩子注册样式表是最好的。
@@ -3004,10 +2946,6 @@ add_action('init', 'mytheme_register_styles');
 对于 Internet Explorer 8 及以下版本（不包含移动版 IE），我们需要注册另一个样式表副本（使用媒体类型 `all`），并将其封装在条件注释中。
 
 在上面的代码示例中，`/* *keep reading* */` 将被替换为以下内容：
-
-
-
-
 
 ```
 global $wp_styles; 
@@ -3052,7 +2990,7 @@ add_action('wp_print_styles', 'mytheme_enqueue_styles');
 
 ## 这样做意义何？
 
-你可能会疑惑，既然我们可以直接在主题的 `header.php` 中或使用 `wp_head` 钩输出 JavaScript 和样式表，那么费这些额外努力的意义何？
+你可能会疑惑，既然我们可以直接在主题的 `header.php` 中或使用 `wp_head` 驱动输出 JavaScript 和样式表，那么费这些额外努力的意义何？
 
 对于独立主题中的 CSS 来说，这个观点是合理的。这些是额外的工作，没有太大的回报。
 
@@ -3103,7 +3041,9 @@ add_action('wp_print_scripts', 'clienttheme_enqueue_js');
 例如，如果你的归档页使用的 JavaScript 与网站其他部分不同，可能会注册三个文件：
 
 - 基础 JavaScript（注册为 `theme-base`），
+
 - 归档 JavaScript（注册为 `theme-archive`），
+
 - 普通 JavaScript（注册为 `theme-general`）。
 
 同样，基础 JavaScript 没有为网站添加任何内容。相反，它是另外两个文件依赖的一组函数。你可以使用以下代码队列化文件：
@@ -3124,9 +3064,6 @@ add_action('wp_print_scripts', 'mytheme_enqueue_js');
 虽然使用 WordPress 方式 JavaScript 可以避免常用库之间相互冲突的问题，但你可能更倾向于从 Google 服务器提供这些库，而不是自己的服务器。
 
 使用 Jason Penny 的 [Use Google Libraries](http://wordpress.org/extend/plugins/use-google-libraries/) 是做到这一点最简单的方法。该插件会自动保持 jQuery 处于无冲突模式（noConflict mode）。
-
-
-
 
 我上一次遇到这种情况不是在我自己的代码中。而是当 [Christian Heilmann](http://twitter.com/#!/codepo8)^(1) 向我展示了他[当时很新的幻灯片](http://icant.co.uk/talks/koc2011/)^(2，其中有一个很酷的功能，可以切换演示文中单个幻灯片的显示与隐藏。看到它时，我印象非常深刻。但仔细观察后，我发现选框的状态在页面重新加载后并没有保存。因此，某人花费大量时间仔细调整幻灯片，结果不小心按了 F5 或导致浏览器崩溃，然后——砰！——所有的工作都会丢失。Christian 告诉我他已经在考虑将选框状态存储在 `localStorage` 中了。自然地，我们对存储格式进行了无休止的争论。这次争论启发我写了这一章，以深入探索各种方法。
 
@@ -3174,25 +3111,28 @@ add_action('wp_print_scripts', 'mytheme_enqueue_js');
 
 ## 使用位域
 
-之前的方法让你想到了二进制数字吗？不只是你这样。[位域](http://en.wikipedia.org/wiki/Bit_field)^(5) 的概念在其他编程语言中非常流行，但在 JavaScript 中并不常见。简而言之，位域用于将许多布尔值封装到数字布尔表示的**位**中。例如，如果你有八个值（true, false, false, true, false, true, true, false），该数字在二进制中为 10010110；所以十进制为 150，十六进制为 96。这只有 2 个字符而不是 8 个，因此节省了 **75%**。通常，十六进制表示中的 1 位数字对应对应 4 位。（这是因为 `16 = 2`^(`4`）。通常，在 `base2`^(`n`) 系统中，你可以将 `n` 位封装到每个 `base2`^(`n`) 位数字中。）所以，**我们并不是在那 75% 上运气好；它总是如此的**。
-
-
-
+之前的方法让你想到了二进制数字吗？不只是你这样。[位域](http://en.wikipedia.org/wiki/Bit_field)^(5) 的概念在其他编程语言中非常流行，但在 JavaScript 中并不常见。简而言之，位域用于将许多布尔值封装到数字布尔表示的**位**中。例如，如果你有八个值（true, false, false, true, false, true, true, false），该数字在二进中为 10010110；所以十进制为 150，十六进制为 96。这只有 2 个字符而不是 8 个，因此节省了 **75%**。通常，十六进制表示中的 1 位数字对应对应 4 位。（这是因为 `16 = 2`^(`4`）。通常，在 `base2`^(`n`) 系统中，你可以将 `n` 位封装到每个 `base2`^(`n`) 位数字中。）所以，**我们并不是在那 75% 上运气好；它总是如此的**。
 
 # “我想你可能做得有点过头了”
 
-对于某些情况来说，这可能大材小用。但当你想要在任何只能存储字符串的有限空间内存储大量的布尔值时，它绝对非常有用。而且对于经常在网络上传输的数据，任何优化都不算过分。例如，cookie 在每一个请求中都会发送，因此它们应该尽可能越小。另一个用例是在线多人游戏，其响应时间应该是闪电般快速，否则游戏将变得毫无趣味。
+对于某些情况来说，这可能大材小用。但当你想要在任何只能存储字符串的有限空间内存储大量的布尔值时，它绝对非常有用。而且对于经常在网络上传输的数据，任何优化都不算过分。例如，cookie 在每一个请请求中都会发送，因此它们应该尽可能越小。另一个用例是在线多人游戏，其响应时间应该是闪电般快速，否则游戏将变得毫无趣味。
 
 即使这种优化不是你的菜，我仍然希望你觉得其中涉及的思维过程和代码具有启发性。
 
 ---
 
 1. [`twitter.com/#!/codepo8`](http://twitter.com/#!/codepo8)
+
 2. [`icant.co.uk/talks/koc2011/`](http://icant.co.uk/talks/koc2011/)
+
 3. [`jsperf.com/json-vs-split-join-for-simple-arrays`](http://jsperf.com/json-vs-split-join-for-simple-arrays)
+
 4. [`es5.github.com/#x4.3.16`](http://es5.github.com/#x4.3.16)
+
 5. [`en.wikipedia.org/wiki/Bit_field`](http://en.wikipedia.org/wiki/Bit_field)
+
 6. [`en.wikipedia.org/wiki/Base_36`](http://en.wikipedia.org/wiki/Base_36)
+
 7. [`stackoverflow.com/questions/7033639/javascript-split-large-string-in-n-size-chunks`](http://stackoverflow.com/questions/7033639/javascript-split-large-string-in-n-size-chunks)
 
 # 构建 CSS 与 JavaScript 之间的关系
@@ -3207,7 +3147,7 @@ jQuery, Prototype, Node.js, Backbone.js, Mustache 以及成千上万个 JavaScri
 
 *图片来源：[opensourceway](http://www.flickr.com/photos/opensourceway/5755219051/)^(1).* 将 CSS 留在 JavaScript 之外
 
-CSS 可以通过多种不同的选择器挂接到 HTML；这并不是什么新花样。通过使用 ID、类或你想到的任何属性（甚至是自定义属性），你可以轻松地访问并为元素样式。你也可以通过大量的 JavaScript 方法来实现这一点，诚实地说，这只是相同的基本过程，语法不同（这是我 JavaScript 的“顿悟时刻”之一）。能够从 JavaScript 和 CSS 原生访问 HTML，是渐进增强成为如此成功的开发模型的原因之一。它允许一个参考点来指导我们，并在开发项目时提醒我们，不要让“[水流交汇](http://www.youtube.com/watch?v=jyaLZHiJJnE)^(2)”。
+CSS 可以通过多种不同的选择器挂接到 HTML；这并不是什么新花样。通过使用 ID、类或你想到的任何属性（甚至是自定属性），你可以轻松地访问并为元素样式。你也可以通过大量的 JavaScript 方法来实现这一点，诚实地说，这只是相同的基本过程，语法不同（这是我 JavaScript 的“顿悟时刻”之一）。能够从 JavaScript 和 CSS 原生访问 HTML，是渐进增强成为如此成功的开发模型的原因之一。它允许一个参考点来指导我们，并在开发项目时提醒我们，不要让“[水流交汇](http://www.youtube.com/watch?v=jyaLZHiJJnE)^(2)”。
 
 但当你继续使用 JavaScript 并构建具有高度交互元素的应用程序时，不仅要保持 HTML 留在 JavaScript 之外变得困难，要在你向文档注入样式信息之前阻止自己也变得困难。当然，不使用 JavaScript 注入样式的理由绝不是黑即白的（是/否、真/假、0/1）；有很多情况你可能需要渐进地应用样式，例如在拖放界面中，位置信息需要根据光标（或手指）的位置不断更新。
 
@@ -3223,23 +3163,13 @@ CSS 可以通过多种不同的选择器挂接到 HTML；这并不是什么新�
 
 但当你继续使用 JavaScript 并构建具有高度交互元素的应用程序时，不仅要保持 HTML 留在 JavaScript 之外变得困难，要在你向文档注入样式信息之前阻止自己也变得困难。当然，不使用 JavaScript 注入样式的理由绝不是黑即白的（是/否、真/假、0/1）；有很多情况你可能需要渐进地应用样式，例如在拖放界面中，位置信息需要根据光标（或手指）的位置不断更新。
 
-但总的来说，**你可以安全地将所需样式信息存储在 CSS 中**，并将样式作为可重用的类进行引用。这种模型比在 JavaScript 文件中散布 CSS 要灵活得多，并且与将样式信息添加到 HTML 中的模型非常相似。当只只有 HTML 和 CSS 时，我们遵循这种模型，但由于某种原因，一旦加入 JavaScript，这种模型往往就会崩溃。这确实是我们需要关注的。许多前端开发者对拥有整洁的 HTML 感到自豪。它易于处理，对于某些超级极客来说，它甚至可以是艺术。拥有整洁、静态的 HTML 是很好的，但如果你生成的 HTML 充斥着注入的样式和非语义标记，那又有什么用呢？我所说的“生成的 HTML”，是指 HTML 在经过所有插件和额外的 JavaScript 传递、消费并被“吐”出来后的样子。如果拥有整洁 HTML 和分离渐进增强层的第一步是不使用 `style` 属性，那么我必须说第二步是避免编写向你注入 `style` 属性的 JavaScript。清理 HTML
-
-CSS 可以通过多种不同的选择器挂接到 HTML；这并不是什么新花样。通过使用 ID、类或你想到的任何属性（甚至是自定义属性），你可以轻松地访问并为元素样式。你也可以通过大量的 JavaScript 方法来实现这一点，诚实地说，这只是相同的基本过程，语法不同（这是我 JavaScript 的“顿悟时刻”之一）。能够从 JavaScript 和 CSS 原生访问 HTML，是渐进增强成为如此成功的模型的原因之一。它允许一个参考点来指导我们，并在开发项目时提醒我们，不要让“[水流交汇](http://www.youtube.com/watch?v=jyaLZHiJJnE)^(2)”。
-
-但当你继续使用 JavaScript 并构建具有高度交互元素的应用程序时，不仅要保持 HTML 留在 JavaScript 之外变得困难，要在你向文档注入样式信息之前阻止自己也变得困难。当然，不使用 JavaScript 注入样式的理由绝不是黑即白的（是/否、真/假、0/1）；有很多情况你可能需要渐进地应用样式，例如在拖放界面中，位置信息需要根据光标（或手指）的位置不断更新。
-
-但总的来说，**你可以安全地将所需样式信息存储在 CSS 中**，并将样式作为可重用的类进行引用。这种模型比在 JavaScript 文件中散布 CSS 要灵活得多，并且与将样式信息添加到 HTML 中的模型非常相似。当只只有 HTML 和 CSS 时，我们遵循这种模型，但由于某种原因，一旦加入 JavaScript，这种模型往往就会崩溃。这确实是我们需要关注的。许多前端开发者对拥有整洁的 HTML 感到自豪。它易于处理，对于某些超级极客来说，它甚至可以是艺术。拥有整洁、静态的 HTML 是很好的，但如果你生成的 HTML 充斥着注入的样式和非语义标记，那又有什么用呢？我所说的“生成的 HTML”，是指 HTML 在经过所有插件和额外的 JavaScript 传递、消费并被“吐”出来后的样子。如果拥有整洁 HTML 和分离渐进增强层的第一步是不使用 `style` 属性，那么我必须说第二步是避免编写向你注入 `style` 属性的 JavaScript。
+但总的来说，**你可以安全地将所需样式信息存储在 CSS 中**，并将样式作为可重用的类进行引用。这种模型比在 JavaScript 文件中散布 CSS 要灵活得多，并且与将样式信息添加到 HTML 中的模型非常相似。当只只有 HTML 和 CSS 时，我们遵循这种模型，但由于某种原因，一旦加入 JavaScript，这种模型往往就会崩溃。这确实是我们需要关注的。许多前端开发者对拥有整洁的 HTML 感到自豪。它易于处理，对于某些超级极客来说，它甚至可以是艺术。拥有整洁、静态的 HTML 是很好的，但如果你生成的 HTML 充斥着注入的样式和非语义标记，那又有什么用呢？我所说的“生成的 HTML”，是指 HTML 在经过所有插件和额的 JavaScript 传递、消费并被“吐”出来后的样子。如果拥有整洁 HTML 和分离渐进增强层的第一步是不使用 `style` 属性，那么我必须说第二步是避免编写向你注入 `style` 属性的 JavaScript。
 
 Web 与团队环境
 
-
-
-
-
 这是一种我们在 `CSS` 和 `JavaScript` 之间建立通信渠道的方法，让我们可以在利用每种语言的优势的同时，不至于过度使用。在前端建立开发平衡是非常重要的，因为环境是如此脆弱的，我们无法像在后端使用服务器那样控制它。如果用户的浏览器既旧又慢，大多数情况下你根本无法坐下来为它升级（顺便提一下：我祖母确实在使用 `Chrome`）；你所能做的就是拥抱环境的混乱，为最好的情况做准备，并为最坏的情况做计划。
 
-过去曾有人与我争论过，这种在 `JavaScript` 中引用 `CSS` 类的开发风格在团队开发环境中并不良好，因为通常在你深入研究 `JavaScript` 的时候，`CSS` 已经构建完成了，这会导致这些类在混杂中丢失，并在代码中产生大量的不一致性（这与 `DRY` 原则背道而驰）。对于这些人，我想说：隔着隔墙探出头，打开 `AIM`、`GTalk` 或 `Skype`，并告知团队其他成员，这些类专门是为了配合 `JavaScript` 使用的。我知道开发者在 `GIT` 提交信息之外进行沟通的想法听起来像是疯狂，但没事的，我保证。
+过去曾有人与我争论过，这种在 `JavaScript` 中引用 `CSS` 类的开发风格在团队开发环境中并不良好，因为通常在你深入研究 `JavaScript` 的时候，`CSS` 已构建完成了，这会导致这些类在混杂中丢失，并在代码中产生大量的不一致性（这与 `DRY` 原则背道而驰）。对于这些人，我想说：隔着隔墙探出头，打开 `AIM`、`GTalk` 或 `Skype`，并告知团队其他成员，这些类专门是为了配合 `JavaScript` 使用的。我知道开发者在 `GIT` 提交信息之外进行沟通的想法听起来像是疯狂，但没事的，我保证。
 
 ### 使用带有 JavaScript 回退机制的行为 CSS 
 
@@ -3248,6 +3178,7 @@ Web 与团队环境
 对于这个示例，我们将使用：
 
 * [jQuery](http://jquery.com)^(3)
+
 * [Modernizr](http://modernizr.com)^(4)
 
 首先，让我们设置 `body` 元素：
@@ -3280,7 +3211,9 @@ Web 与团队环境
 在添加 `JavaScript` 层之前，让我们花点时间谈谈将要发生的流程：
 
 * 使用 `Modernizr` 检查对 `CSS` 过渡的支持
+
 * 如果是，a) 在按钮上设置点击事件以为 `#cube` 添加“fade-out”类，b) 添加另一个事件监听器来捕获过渡完成的时刻，这样我们就可以控制函数执行时间，从而从 `DOM` 中移除 `#cube`。
+
 * 如果否的，a) 在按钮上设置点击事件，使用 `jQuery` 的 `animate()` 方法手动淡出 `#cube`，b) 执行回调函数以从 `DOM` 中移除 `#cube`。
 
 这个过程将引入一个名为 `transitionend` 的新事件，它将在 `CSS` 过渡结束时执行。供参考，这很神奇。还有一个名为 `animationend` 的伴随事件，它将在 `CSS` 动画结束时执行，用于更复杂的交互。
@@ -3290,7 +3223,7 @@ Web 与团队环境
 ```
 (function () {
 
-   // 设置你的变量
+   // 设置你的变变量
    var elem = document.getElementById('cube'),
        button = document.getElementById('do-it'),
        transitionTimingFunction = 'linear',
@@ -3369,15 +3302,9 @@ function theCallbackFunction (elem) {
 
 你可能会问自己，我们为什么要费这些精力。我们写了大约 60 行 `JavaScript` 来实现 8 行 `jQuery` 就能完成的设计效果。嗯，没有人说过保持代码整洁和坚持渐进式增强是容易的事。事实上，完全忽略它要容易得多。但作为负责任的开发者，我们的责任是以一种易于访问且易于扩展未来的方式构建应用程序。如果你想更进一步，像我一样创建一个无缝的用户体验，那么花费额外时间来完善项目的每一个细节，以创建一个可以优雅降级和渐进式增强的整体体验，是完全值得的。
 
-
-
 使用这种模型还让我们能够充分利用 `CSS` 的其优势，例如响应式设计以及使用断点在不同的屏幕尺寸上重新定义你的交互。如果你专门针对带宽受限的设备，这非常有帮助，因为正如我们所知道的，`CSS` 在下载和执行时间上都比 `JavaScript` 轻量得多。
 
-
-
-
-
-在生产环境中，我们目前使用 `CSS` 动画和过渡效果来实现微交互，例如悬停效果，也许可能是旋转的图形或脉动的绳结。我们已经达到了这样一个阶段：`CSS` 是一门非常强大的语言，在浏览器中表现出色，因此更多地使用它来处理通常使用 `JavaScript` 构建的宏观交互也是完全可以的。如果你正在寻找一种轻量、一致且易于维护，同时又能让你使用最新最强浏览器特体验——那么可能是时候开始修复关系，并加强 `CSS` 与 `JavaScript` 之间的纽带了。正如一位伟人所说：“编写优秀 `JavaScript` 的关键在于知道何时改用 `CSS`。”（是我说的……我这么说的。）
+在生产环境中，我们目前使用 `CSS` 动画和过渡效果来实现微交互，例如悬停效果，也许可能是旋转的图形或脉动的绳结。我们已经达到了这样一个阶段：`CSS` 是一门非常强大的语言，在浏览器中表现出色，因此更多的使用它来处理通常使用 `JavaScript` 构建的宏观交互也是完全可以的。如果你正在寻找一种轻量、一致且易于维护，同时又能让你使用最新最强浏览器特体验——那么可能是时候开始修复关系，并加强 `CSS` 与 `JavaScript` 之间的纽带了。正如一位伟人所说：“编写优秀 `JavaScript` 的关键在于知道何时改用 `CSS`。”（是我说的……我这么说的。）
 
 —
 
@@ -3392,53 +3319,81 @@ function theCallbackFunction (elem) {
 # 关于作者
 
 ### Ben Howdle
+
 Ben Howdle 是一位来自英国伦敦的 `JavaScript Developer`。他白天在 [KashFlow](http://kashflow.com/) 工作，晚上和周末在 [Two Step Media](http://twostepmedia.co.uk/) 忙。一位致力于构建流畅 UI 的 `JavaScript` 专家。
 
 ### Christian Heilmann
+
 一位在英国美丽的伦敦城市为 `Mozilla` 工作的国际 `Developer Evangelist`。你可以在 [Wait-Till-I.com](http://www.wait-till-i.com/) 上找到他，并在 [Twitter 上关注他](http://www.twitter.com/codepo8)。
 
 ### Daniel Sternlicht
+
 Daniel Sternlicht 是一位来自以色列的 `Front End Developer`，对 UX 和 Web 设计充满深厚热情。他擅长 `CSS3`、`HTML5` 和 `JavaScript`。在空闲时间，你会发现他正在探索新的 Web 技术、开发酷炫的 Web 应用并让他的妻子开心 :) [Portfolio](http://danielsternlicht.com/) | [Blog](http://gandtblog.com/) | [Dribbble](http://dribbble.com/fastrd) | [Twitter](http://twitter.com/#!/gandtblog).
 
 ### Derek Mack
+
 Derek Mack 是一位来自澳大利亚墨尔本的设计师。他是 [The Graphic Order](http://dribbble.com/alanvanroemburg) 的成员，他们设计了适用于 iOS 的 [Verbs IM](http://verbs.im/) 以及适用于 iOS 和 Android 的获奖应用 [Aussie Rules Live](http://www.sportsmatemobile.com/)。
 
 ### Jon Raasch
+
 Jon Raasch 是书籍 [Smashing Webkit](http://www.amazon.com/Smashing-WebKit-Magazine-Book/dp/1119999138) 的作者。他是一位自由 [front-end web developer](http://jonraasch.com/) 和 UI 设计师，对 `jQuery`、`CSS3`、`HTML5` 和性能调优有无限的热爱。你可以在 [Twitter](http://twitter.com/jonraasch) 上关注他或 [阅读他的博客](http://jonraasch.com/blog/)。
 
 ### Lea Verou
+
 Lea 在 [W3C](http://w3.org/) 担任 `Developer Advocate`。她对开放 Web 标准有着长期的热情，通过研究使用这些标准的新方法、[博客](http://lea.verou.me/)、[演讲](http://lea.verou.me/speaking)、[写作](http://lea.verou.me/publications)以及编写流行的开源 [projects](http://lea.verou.me/projects/) 来帮助其他开发者。她是 [CSS Working Group](http://www.w3.org/Style/CSS/members.en.php3) 的成员。
 
-
-
-
-
 4. [`www.twitter.com/codepo8`](http://www.twitter.com/codepo8)
-5. [`danielsternlicht.com/`](http://danielsternlicht.com/)
-6. [`gandtblog.com/`](http://gandtblog.com/)
-7. [`dribbble.com/fastrd`](http://dribbble.com/fastrd)
-8. [`twitter.com/#!/gandtblog`](http://twitter.com/#!/gandtblog)
-9. [`dribbble.com/alanvanroemburg`](http://dribbble.com/alanvanroemburg)
-10. [`verbs.im/`](http://verbs.im/)
-11. [`www.sportsmatemobile.com/`](http://www.sportsmatemobile.com/)
-12. [`www.amazon.com/Smashing-WebKit-Magazine-Book/dp/1119999138`](http://www.amazon.com/Smashing-WebKit-Magazine-Book/dp/1119999138)
-13. [`jonraasch.com/`](http://jonraasch.com/)
-14. [`twitter.com/jonraasch`](http://twitter.com/jonraasch/)
-15. [`jonraasch.com/blog/`](http://jonraasch.com/blog/)
-16. [`w3.org/`](http://w3.org/)
-17. [`lea.verou.me/`](http://lea.verou.me/)
-18. [`lea.verou.me/speaking`](http://lea.verou.me/speaking)
-19. [`lea.verou.me/publications`](http://lea.verou.me/publications)
-20. [`lea.verou.me/projects/`](http://lea.verou.me/projects/)
-21. [`www.w3.org/Style/CSS/members.en.php3`](http://www.w3.org/Style/CSS/members.en.php3)
-22. [`lea.verou.me/2010/07/organizing-a-university-course-on-modern-web-development/`](http://lea.verou.me/2010/07/organizing-a-university-course-on-modern-web-development/)
-23. [`soupgiant.com/`](http://soupgiant.com/)
-24. [`peterwilson.cc/`](http://peterwilson.cc/)
-25. [`twitter.com/pwcc/`](http://twitter.com/pwcc/)
-26. [`pusher.com/`](http://pusher.com/)
-27. [`twitter.com/leggetter`](http://twitter.com/leggetter)
-28. [`www.freshtilledsoil.com/#welcome`](http://www.freshtilledsoil.com/#welcome)
-29. [`www.smashingmagazine.com`](http://www.smashingmagazine.com)
-30. [`www.smashingmagazine.com/publishing-policy/`](http://www.smashingmagazine.com/publishing-policy/)
-31. [`www.smashing-media.com`](http://www.smashing-media.com)
 
+5. [`danielsternlicht.com/`](http://danielsternlicht.com/)
+
+6. [`gandtblog.com/`](http://gandtblog.com/)
+
+7. [`dribbble.com/fastrd`](http://dribbble.com/fastrd)
+
+8. [`twitter.com/#!/gandtblog`](http://twitter.com/#!/gandtblog)
+
+9. [`dribbble.com/alanvanroemburg`](http://dribbble.com/alanvanroemburg)
+
+10. [`verbs.im/`](http://verbs.im/)
+
+11. [`www.sportsmatemobile.com/`](http://www.sportsmatemobile.com/)
+
+12. [`www.amazon.com/Smashing-WebKit-Magazine-Book/dp/1119999138`](http://www.amazon.com/Smashing-WebKit-Magazine-Book/dp/1119999138)
+
+13. [`jonraasch.com/`](http://jonraasch.com/)
+
+14. [`twitter.com/jonraasch`](http://twitter.com/jonraasch/)
+
+15. [`jonraasch.com/blog/`](http://jonraasch.com/blog/)
+
+16. [`w3.org/`](http://w3.org/)
+
+17. [`lea.verou.me/`](http://lea.verou.me/)
+
+18. [`lea.verou.me/speaking`](http://lea.verou.me/speaking)
+
+19. [`lea.verou.me/publications`](http://lea.verou.me/publications)
+
+20. [`lea.verou.me/projects/`](http://lea.verou.me/projects/)
+
+21. [`www.w3.org/Style/CSS/members.en.php3`](http://www.w3.org/Style/CSS/members.en.php3)
+
+22. [`lea.verou.me/2010/07/organizing-a-university-course-on-modern-web-development/`](http://lea.verou.me/2010/07/organizing-a-university-course-on-modern-web-development/)
+
+23. [`soupgiant.com/`](http://soupgiant.com/)
+
+24. [`peterwilson.cc/`](http://peterwilson.cc/)
+
+25. [`twitter.com/pwcc/`](http://twitter.com/pwcc/)
+
+26. [`pusher.com/`](http://pusher.com/)
+
+27. [`twitter.com/leggetter`](http://twitter.com/leggetter)
+
+28. [`www.freshtilledsoil.com/#welcome`](http://www.freshtilledsoil.com/#welcome)
+
+29. [`www.smashingmagazine.com`](http://www.smashingmagazine.com)
+
+30. [`www.smashingmagazine.com/publishing-policy/`](http://www.smashingmagazine.com/publishing-policy/)
+
+31. [`www.smashing-media.com`](http://www.smashing-media.com)

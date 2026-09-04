@@ -1,8 +1,10 @@
+
+
 # 第九章：第二部分简介
 
 > 原文：[`keleshev.com/compiling-to-assembly-from-scratch/09-introduction-to-part-2`](https://keleshev.com/compiling-to-assembly-from-scratch/09-introduction-to-part-2)
 
-从头开始编译汇编
+## 从头开始编译汇编
 
 by 弗拉基米尔·凯列舍夫
 
@@ -16,6 +18,7 @@ by 弗拉基米尔·凯列舍夫
 
 然而，在我们探索静态和动态类型之前，我们的语言需要支持多种数据类型。我们将从介绍布尔值、未定义和数组开始。首先，我们将以不安全/无类型的方式介绍它们，然后我们将对它们应用静态/动态处理。
 
-下一章：第十章 基本标量数据类型
+## 下一章：第十章 基本标量数据类型
 
 * * *
+

@@ -1,20 +1,11 @@
+
 # JavaScript 入门指南：从零学习 JavaScript 的完整技巧与手册
 
-
-
 ![](img/Image00004.jpg)
-
-
-
-
-
 
 # 引言
 
 与 `C++`、`Ruby` 和 `Python` 等语言相比，JavaScript 是一种直观且容易上手的编程语言。它是一种不可否认的解释型语言，无疑可以嵌入到 `HTML` 中。它由 `Netscape Communications Corporation`、`Mozilla Foundation` 和 `ECMA International` 创建。`Brendan Eich` 被认为是 JavaScript 编程语言的创造者。
-
-
-
 
 JavaScript 是一种独特的 PC 编程语言。它轻量级，最常被用作网页的一部分，其执行允许客户端内容与服务器通信并创建动态页面。它是一种具有面向对象能力的解释型编程语言。
 
@@ -40,33 +31,30 @@ JavaScript 为程序提供了更多的控制权，而不是完全依赖 Web 服�
 
 通常在其他编程语言中，数字和对象类型是有区别的，但 JavaScript 对数字只识别一种对象类型，因此我在 Mozilla 文档中发现过：“JavaScript 中没有所谓的整数这种类型”。此外，JavaScript 中有一个“undefined”（未定义）值，这是一种模糊类型的估计，表示未初始化的值。通常在其他语言中，未初始化的值等于“invalid”或“nil”。但 JavaScript 不是。
 
-
-
-
--   **对游客的快速反馈**：他们不需要等待页面刷新即可检查自己是否漏掉了某些输入。
--   **扩展的直观性**：你可以制作界面在客户端鼠标悬停其上方或通过控制台启动它们时做出响应。
--   **更华丽的界面**：你可以利用 `JavaScript` 整合直观的分段和滑块等元素，为网站访客提供丰富的界面（Rich Interface）。
--   **速度**：客户端 `JavaScript` 极其快速，因为它倾向于在客户端程序内部即时运行。除非需要外部资源，否则 `JavaScript` 不受到向后端工作线程网络调用的限制。
--   **轻松性**：`JavaScript` 通常易于学习和执行。
--   **无处不在**：`JavaScript` 应用于网络的任何地方。
--   **互操作性**：`JavaScript` 与不同的方言相处良好，可以应用于极其广泛领域。
--   **工作者负载**：作为客户端，减轻了网站服务器的负担。
--   **适应性**：通过 `Node.js` 工作线程使用 `JavaScript` 有许多方法。如果你恰好使用 `Express` 引导了 `Node.js`，使用像 `MongoDB` 这样的报告数据库，并在前端为客户使用 `JavaScript`，那么可以使用 `JavaScript` 从前端到后端构建整个 `JavaScript` 应用。
--   **更新**：自 `ECMAScript 5`（`JavaScript` 依赖的脚本细节）以来，`ECMA International` 致力于每年更新 `JavaScript`。到目前，我们已经在 2017 年获得了 `ES6` 的程序支持，并预计以后将支持 `ES7`。
--   **扩展功能**：开发者可以通过组合 `JavaScript` 代码段用于如 `Greasemonkey` 等外部附加项，来扩展网站页面的实用性。
+- **对游客的快速反馈**：他们不需要等待页面刷新即可检查自己是否漏掉了某些输入。
+- **扩展的直观性**：你可以制作界面在客户端鼠标悬停其上方或通过控制台启动它们时做出响应。
+- **更华丽的界面**：你可以利用 `JavaScript` 整合直观的分段和滑块等元素，为网站访客提供丰富的界面（Rich Interface）。
+- **速度**：客户端 `JavaScript` 极其快速，因为它倾向于在客户端程序内部即时运行。除非需要外部资源，否则 `JavaScript` 不受到向后端工作线程网络调用的限制。
+- **轻松性**：`JavaScript` 通常易于学习和执行。
+- **无处不在**：`JavaScript` 应用于网络的任何地方。
+- **互操作性**：`JavaScript` 与不同的方言相处良好，可以应用于极其广泛领域。
+- **工作者负载**：作为客户端，减轻了网站服务器的负担。
+- **适应性**：通过 `Node.js` 工作线程使用 `JavaScript` 有许多方法。如果你恰好使用 `Express` 引导了 `Node.js`，使用像 `MongoDB` 这样的报告数据库，并在前端为客户使用 `JavaScript`，那么可以使用 `JavaScript` 从前端到后端构建整个 `JavaScript` 应用。
+- **更新**：自 `ECMAScript 5`（`JavaScript` 依赖的脚本细节）以来，`ECMA International` 致力于每年更新 `JavaScript`。到目前，我们已经在 2017 年获得了 `ES6` 的程序支持，并预计以后将支持 `ES7`。
+- **扩展功能**：开发者可以通过组合 `JavaScript` 代码段用于如 `Greasemonkey` 等外部附加项，来扩展网站页面的实用性。
 
 ## JavaScript 的缺点
 
--   **客户端安全**：由于 `JavaScript` 代码在客户端执行，漏洞和疏忽有时会被用于恶意目的。基于此，一些小组决定完全禁用 `JavaScript`。
--   **程序支持**：虽然服务器端的内容始终产生相似的输出，但在某些情况下，不同的程序会以意外的方式解析 `JavaScript` 代码。如今这些差异微乎其微，只要你在每个重要的程序中测试了内容，就不需要担心它。
--   **JavaScript 中的主要问题或缺陷**是代码对所有人都是可见的，任何人都可以看到 `JavaScript` 代码。
--   无论快速 `JavaScript` 解析到何种程度，`JavaScript DOM`（文档对象模型）都是适中的，并且可以与 `HTML` 实现从不快速的交付。如果错误发生在 `JavaScript` 中，可能会停止整个网站的交付。程序对 `JavaScript` 错误非常宽容。
--   `JavaScript` 通常被不同的程序以不同的方式进行解析。这使得阅读和编写跨程序代码变得相当复杂。
--   尽管某些 `HTML` 编辑器支持检查，但它没有像 `C/C++` 编辑器那样的编辑器那样有效。因此，设计师很难区分这些问题。这种持续的转换在数字到整数的更改中需要更长时间。这扩展了运行内容的预期时间并降低了其速度。
+- **客户端安全**：由于 `JavaScript` 代码在客户端执行，漏洞和疏忽有时会被用于恶意目的。基于此，一些小组决定完全禁用 `JavaScript`。
+- **程序支持**：虽然服务器端的内容始终产生相似的输出，但在某些情况下，不同的程序会以意外的方式解析 `JavaScript` 代码。如今这些差异微乎其微，只要你在每个重要的程序中测试了内容，就不需要担心它。
+- **JavaScript 中的主要问题或缺陷**是代码对所有人都是可见的，任何人都可以看到 `JavaScript` 代码。
+- 无论快速 `JavaScript` 解析到何种程度，`JavaScript DOM`（文档对象模型）都是适中的，并且可以与 `HTML` 实现从不快速的交付。如果错误发生在 `JavaScript` 中，可能会停止整个网站的交付。程序对 `JavaScript` 错误非常宽容。
+- `JavaScript` 通常被不同的程序以不同的方式进行解析。这使得阅读和编写跨程序代码变得相当复杂。
+- 尽管某些 `HTML` 编辑器支持检查，但它没有像 `C/C++` 编辑器那样的编辑器那样有效。因此，设计师很难区分这些问题。这种持续的转换在数字到整数的更改中需要更长时间。这扩展了运行内容的预期时间并降低了其速度。
 
 # 第二章
 
-# JavaScript 语法
+## JavaScript 语法
 
 `JavaScript` 的语法是描述一个组织良好的 `JavaScript` 程序的决策安排。
 
@@ -74,7 +62,7 @@ JavaScript 为程序提供了更多的控制权，而不是完全依赖 Web 服�
 
 `JavaScript` 的大部分语法来自 `Java`，但同时也继承自 `Awk` 和 `Perl`，并在其对象模型框架中受到 `Self` 的一些反向影响。
 
-## 基础
+### 基础
 
 `JavaScript` 是大小写敏感的。构造函数的名称以大写字母开头，函数或变量名以小写字母开头并不是意外的。
 
@@ -86,7 +74,7 @@ console.log(a);/5
 console.log(A);/抛出 ReferenceError: A isn't defined
 ```
 
-## 空格与分号
+### 空格与分号
 
 与 `C` 不同，`JavaScript` 源码中的空格会直接影响语义。分号在 `JavaScript` 中结束语句。由于“自动分号插入”（`ASI`），某些在解析时因换行而形成环绕排列的语句将被视为是完整的，就像在换行之前仅嵌入了一个分号一样。一些专家建议显式地提供语句结束的分号，因为这可以减少自动分号插入带来的意外影响。
 
@@ -137,7 +125,7 @@ a = b + c(d + e).foo();
 
 # 第三章
 
-# JavaScript 函数
+## JavaScript 函数
 
 函数是一个带有（可能为空的）边界列表的正方形，通常被赋予一个名称。函数可以使用局部因子。如果你在函数中遗留返回语句，则将返回未定义（undefined）。
 
@@ -152,15 +140,11 @@ function gcd(segmentA, segmentB) {
 console.log(gcd(60, 40));/20
 ```
 
-var mygcd = gcd;/mygcd 是指向与 gcd 相同函数的引用。注意没有括号 ()。
+`var mygcd = gcd;`/mygcd 是指向与 gcd 相同函数的引用。注意没有括号 ()。
 
-console.log(mygcd(60, 40));/20
+`console.log(mygcd(60, 40));`/20
 
 函数是五星抗议，并可能被还原到不同的因子。
-
-
-
-
 
 调用函数时提供的冲突参数（contentions）数量可能与容量定义中的冲突参数数量并不完全对应；如果定义中的具名冲突参数在调用中没有对应的协调冲突参数，则其值将变得模糊（这可以被证实为无效）。在容量内部，同样可以通过 `contentions` 对象获取到`contentions`；这允许访问所有使用列表的冲突参数（例如 `arguments[0]`、`arguments[1]`、... `arguments[n]`），包括超出具名冲突参数数量的参数。（虽然 `contentions` 列表具有 `.length` 属性，但它完全不是 `Array` 的实例；它不具备某些方法，例如 `.cut()`、`.sort()` 等）
 
@@ -172,8 +156,10 @@ work add7(x, y) {
   console.log(x + y + arguments.length);
 };
 ```
-`add7(3);/输出 11`
-`add7(3, 4);/输出 9`
+
+`add7(3);`/输出 11
+
+`add7(3, 4);`/输出 9
 
 原始类型（`number`、`boolean`、`string`）按值传递。对于对象，传递的是该对象的引用。
 
@@ -186,8 +172,10 @@ work foo(p) {
   p.b = arguments[1];
 }
 ```
-`foo(obj1, 3);/完全没有影响 obj1。3 是多余的边界`
-`console.log(obj1.a + " + obj2.b);/组合成 1 + 3`
+
+`foo(obj1, 3);`/完全没有影响 obj1。3 是多余的边界
+
+`console.log(obj1.a + " + obj2.b);`/组合成 1 + 3
 
 函数可以在不同的函数内部声明，并访问外部函数的作用域因素。此外，即使在外部函数退出后，它们也会通过记住外部函数的作用域因素来执行完全终止（闭包）。
 
@@ -204,32 +192,35 @@ foo();
 baz("Fugly");
 bar();/尽管 foo() 已经离开，但输出 Fugly（而不是 fud）。
 console.log(v);/输出 Top
+```
 
 # 第四章
 
-# JavaScript 变量
+## JavaScript 变量
 
 JavaScript 变量本质上是容量区域的名称。JavaScript 中有两种类型的因素：局部变量和全局变量。
 
 在声明 JavaScript 变量（也称为标识符）时有几条原则。
 
-- 名称应以字母（从头到尾）、下划线（`_`）或美元符号（$`$`开头。
+- 名称应以字母（从头到尾）、下划线（`_`）或美元符号（`$`）开头。
 - 在第一个字母之后可以使用数字（0 到 9），例如 `value1`。
 - JavaScript 因素对大小写敏感，例如 `x` 和 `X` 是不同的因素。
 
-## 正确的 JavaScript 变量
+### 正确的 JavaScript 变量
+
 ```javascript
 var x = 10;
 var _value="sonoo";
 ```
 
-## 错误的 JavaScript 因素
+### 错误的 JavaScript 因素
+
 ```javascript
 var 123=30;
 var *aa=320;
 ```
 
-## JavaScript 变量示例
+### JavaScript 变量示例
 
 我们应该看到 JavaScript 变量的简单示例。
 
@@ -245,7 +236,7 @@ document.write(z);
 上述示例的输出
 30
 
-## JavaScript 局部变量
+### JavaScript 局部变量
 
 JavaScript 局部变量在花括号或函数内部声明。它在函数或花括号内部是可。例如：
 
@@ -267,7 +258,7 @@ If(10<13){
 </script>
 ```
 
-## JavaScript 全局变量
+### JavaScript 全局变量
 
 JavaScript 全局变量在函数外部声明，或者通过 `window` 对象声明。它可以从任何函数访问。
 
@@ -294,7 +285,7 @@ work b(){
 </script>
 ```
 
-## 在函数内部声明 JavaScript 全局变量
+### 在函数内部声明 JavaScript 全局变量
 
 要在函数内部声明 JavaScript 全局因素，你需要使用 `window` 对象。例如：
 
@@ -311,7 +302,7 @@ work n(){
 }
 ```
 
-## JavaScript 全局变量的原理
+### JavaScript 全局变量的原理
 
 当你在函数外部声明变量时，它包含在 `window` 对象内部。你也可以通过 `window` 对象访问它。例如：
 
@@ -322,7 +313,7 @@ work a(){
 }
 ```
 
-## JavaScript 数据类型
+### JavaScript 数据类型
 
 JavaScript 提供了多种信息类型来存储各种类型的属性。JavaScript 中有两种信息类型。
 
@@ -336,7 +327,7 @@ var a=40;//持有数字
 var b="Rahul";//持有字符串
 ```
 
-## JavaScript 原始信息类型
+### JavaScript 原始信息类型
 
 JavaScript 中有五种原始信息类型。它们如下：
 
@@ -345,10 +336,10 @@ JavaScript 中有五种原始信息类型。它们如下：
 | String | 代表字符序列，例如 "hi" |
 | Number | 代表数值属性，例如 100 |
 | Boolean | 代表布尔值，假或真 |
-| Undefined | 代表未定义值
+| Undefined | 代表未定义值 |
 | Null | 代表无效，例如完全没有值 |
 
-## JavaScript 非原始信息类型
+### JavaScript 非原始信息类型
 
 非原始信息类型如下：
 
@@ -360,17 +351,17 @@ JavaScript 中有五种原始信息类型。它们如下：
 
 # 第五章
 
-# JavaScript 数组
+## JavaScript 数组
 
 JavaScript 的 `Array` 类是一个全局对象，用于... 数组是具有索引的对象的集合。
 
-## 描述
+### 描述
 
 数组是具有索引的对象的集合。数组是具有索引的对象的集合。数组是具有索引的对象的集合。数组是具有索引的对象的集合。数组是具有索引的对象的集合。
 
 数组可以用于存储、访问、删除任何因素，并且它们是动态的。
 
-## 常用方法
+### 常用方法
 
 1. **创建一个数组**
 ```javascript
@@ -406,7 +397,6 @@ fruits[1] = "blueberry"; // 修改索引 1 的元素
 fruits.forEach(function(item) {
   console.log(item);
 });
-
 for (let fruit of fruits) {
   console.log(fruit);
 }
@@ -424,10 +414,7 @@ let str = "apple,banana,cherry";
 let arr = str.split(","); // 字符串转数组
 ```
 
-
-
-
-## 10. 从文件位置删除元素
+### 10. 从文件位置删除元素
 
 ```javascript
 let vegetables = ['Cabbage', 'Turnip', 'Radish', 'Carrot']
@@ -452,14 +439,14 @@ console.log(removedItems)
 ```
 `["Turnip", "Radish"]`
 
-## 11. 复制数组
+### 11. 复制数组
 
 ```javascript
 let shallowCopy = fruits.slice()
 ```
 `这是创建副本的方法` `["Strawberry", "Mango"]`
 
-## 访问数组组件
+### 访问数组组件
 
 JavaScript 数组是从 0 开始索引的。簇的主要组件位于列表 0，最后一个组件位于记录索引，该索引相当于 `array.length` 属性减 1。
 
@@ -523,7 +510,7 @@ console.log(years['2'] != a long time
 
 # 第六章
 
-# JavaScript 布尔值
+## JavaScript 布尔值
 
 布尔值是 PC 编程语言中常用的原始数据类型。根据定义，布尔值有两个潜在的属性：真或假。
 
@@ -558,7 +545,6 @@ const d = 0
 const e = 1
 const f = 2
 const g = null;
-
 console.log(a || b);
 ```
 `'word'`
@@ -607,7 +593,7 @@ console.log(c && a);
 
 对于 `&&` 运算符，原理类似，但为了使“与”为真，两个操作数都应该是真值。因此，如果两个都是真/真值，它将始终返回后续操作数，否则它将返回假。这就是为什么在第四种情况下得到真，而在最后一种情况下发现发生了什么。
 
-## 布尔对象
+### 布尔对象
 
 同样存在一个 JavaScript 对象可以封装一个值。如果作为 `Boolean()` 传递的值有效，它将被转换为布尔值。
 
@@ -620,11 +606,25 @@ if (x) {
 }
 ```
 
+# 第七章
 
+## JavaScript 对象
 
+JavaScript 中的对象是一种非原始数据类型，用于存储键值对集合和更复杂的实体。对象可以通过多种方式创建。
 
+### 1) 通过对象字面量
 
-我们应该来看直接创建对象的情况。
+创建对象的语法如下：
+
+```javascript
+var emp={id:102,name:"Shyam Kumar",salary:40000}
+document.write(emp.id+" "+emp.name+" "+emp.salary);
+```
+
+上述模型的输出：
+`102 Shyam Kumar 40000`
+
+### 2) 通过 new Object()
 
 ```javascript
 var emp=new Object();
@@ -660,7 +660,7 @@ document.write(e.id+" "+e.name+" "+e.salary);
 
 ### JavaScript 对象中的方法定义
 
-### 我们可以在 JavaScript 对象中定义方法。然而，在定义方法之前，我们需要在能力中添加与方法同名的属性。
+我们可以在 JavaScript 对象中定义方法。然而，在定义方法之前，我们需要在能力中添加与方法同名的属性。
 
 下面给出了在对象中定义方法的示例。
 
@@ -713,7 +713,7 @@ Object 的不同策略如下：
 
 # 第八章
 
-# JavaScript 字符串
+## JavaScript 字符串
 
 JavaScript 字符串是处理字符序列的项。
 
@@ -721,7 +721,7 @@ JavaScript 字符串是处理字符序列的项。
 1. 通过字符串字面量
 2. 通过字符串对象（使用 new 关键字）
 
-## 1) 通过字符串字面量
+### 1) 通过字符串字面量
 
 字符串字面量由语句组成。使用字符串字面量创建字符串的语言结构如下：
 
@@ -736,7 +736,7 @@ var str="This is string strict";
 document.write(str);
 ```
 
-## 2) 通过字符串对象（使用 new 关键字）
+### 2) 通过字符串对象（使用 new 关键字）
 
 使用 new 表达式创建字符串对象的语法如下：
 
@@ -784,7 +784,7 @@ document.write(stringname);
 
 ### 1) JavaScript String charAt(index) 方法
 
-JavaScript  `charAt()` 方法返回指定索引处的字符。
+JavaScript `charAt()` 方法返回指定索引处的字符。
 
 ```javascript
 var str="javascript";
@@ -793,7 +793,7 @@ document.write(str.charAt(2));
 
 ### 2) JavaScript String concat(str) 方法
 
-JavaScript  `concat(str)` 方法连接或合并两个字符串。
+JavaScript `concat(str)` 方法连接或合并两个字符串。
 
 ```javascript
 var s1="javascript ";
@@ -804,7 +804,7 @@ document.write(s3);
 
 ### 3) JavaScript String indexOf(str) 方法
 
-JavaScript  `indexOf(str)` 方法返回给定字符串的首次位置。
+JavaScript `indexOf(str)` 方法返回给定字符串的首次位置。
 
 ```javascript
 var s1="javascript from javatpoint indexof";
@@ -841,21 +841,18 @@ document.write(s2);
 输出：
 `javascript tolowercase model`
 
+### 6) JavaScript String toUpperCase() 方法
 
-
-
+JavaScript `toUpperCase()` 方法将给定字符串转换为大写字母。
 
 ```javascript
+var s1="JavaScript toUpperCase Example;";
 var s2=s1.toUpperCase();
-
 document.write(s2);
-
-</script>
 ```
 
 输出：
-
-JAVASCRIPT TOUPPERCASE EXAMPLE
+`JAVASCRIPT TOUPPERCASE EXAMPLE`
 
 ### 7) JavaScript String slice(beginIndex, endIndex) 方法
 
@@ -863,19 +860,14 @@ JavaScript `String slice(beginIndex, endIndex)` 方法返回字符串从提供�
 
 ```html
 <script>
-
 var s1="abcdefgh";
-
 var s2=s1.slice(2,5);
-
 document.write(s2);
-
 </script>
 ```
 
 输出：
-
-cde
+`cde`
 
 ### 8) JavaScript String trim() 方法
 
@@ -883,35 +875,27 @@ JavaScript `String trim()` 方法移除字符串前后的空白字符。
 
 ```html
 <script>
-
 var s1=" javascript trim ;"
-
 var s2=s1.trim();
-
 document.write(s2);
-
 </script>
 ```
 
 输出：
-
-javascript trim
+`javascript trim`
 
 ### 9) JavaScript String split() 方法
 
 ```html
 <script>
-
 var str="This is JavaTpoint site;"
-
 document.write(str.split(" "));/根据给定字符串分割字符串。
-
 </script>
 ```
 
 # 第九章
 
-# JavaScript 数字
+## JavaScript 数字
 
 在现今的 JavaScript 中有两种类型的数字：
 
@@ -921,7 +905,7 @@ BigInt 数字用于处理任意长度的整数。它们有时是必需的，考�
 
 因此，这里我们将检查标准数字。
 
-## 处理数字的更多方法
+### 处理数字的更多方法
 
 假设我们需要创建一个 10 亿。最直接的方法是：
 
@@ -943,7 +927,6 @@ let billion = 1_000_000_000;
 
 ```javascript
 let billion = 1e9;//10 亿，从事实角度看：1 后面有 9 个零
-
 alert( 7.3e9 );/73 亿（同于 7300000000 或 7_300_000_000）
 ```
 
@@ -977,7 +960,7 @@ let ms = 1e-6;/1 后面减去 6 个零
 
 `1.23e-6 = 1.23/1000000 (=0.00000123)`
 
-## 十进制、二进制和八进制数
+### 十进制、二进制和八进制数
 
 十六进制数在 JavaScript 中主要用于处理颜色、编码字符以及某些其他事情。因此，通常有一种更简单的方法来处理它们：`0x` 后跟数字。
 
@@ -985,7 +968,6 @@ let ms = 1e-6;/1 后面减去 6 个零
 
 ```javascript
 alert( 0xff );/255
-
 alert( 0xFF );/255（相同的，大小写没有影响）
 ```
 
@@ -993,15 +975,13 @@ alert( 0xFF );/255（相同的，大小写没有影响）
 
 ```javascript
 let a = 0b11111111;/相当于 255
-
 let b = 0o377;/八进制的 255
-
 alert( a == b );/确实，两边的数字都是 255
 ```
 
 只有 3 种数字系统有这种支持。对于其他进制系统，我们必须使用 `parseInt` 方法（我们将在本节稍后看到）。
 
-### toString(base)
+#### toString(base)
 
 方法 `num.toString(base)` 返回 `num` 在指定进制下的字符串表示。
 
@@ -1011,7 +991,9 @@ alert( a == b );/确实，两边的数字都是 255
 let num = 255;
 ```
 
+# 第十章
 
+## JavaScript 循环
 
 循环提供了一种快速且基础的方式来处理重复执行的任务。JavaScript 指南的这一部分介绍了 JavaScript 提供的各种循环解释。你可以将循环看作是游戏的机器人版本，在游戏中，你鼓励某人以一种方式走 X 步，然后以另一种方式走 Y 步。例如，“向东走五阶段”这个想法可以这样以循环的形式传递：
 
@@ -1038,7 +1020,7 @@ JavaScript 中提供的循环声明有：
 - `for...of` 解释
 - `for` 声明
 
-## for 声明
+### for 声明
 
 `for` 循环重复执行直到预定义的条件评估为假。JavaScript 的 `for` 循环类似于 Java 和 C 的 `for` 循环。
 
@@ -1054,7 +1036,7 @@ JavaScript 中提供的循环声明有：
 4. 在当前的情况下，执行更新表达式 `incrementExpression`。
 5. 控制返回第 2 步。
 
-## 示例
+#### 示例
 
 在下方的模型中，限制包含一个 `for` 声明，用于计算调查列表中被选中选项的数量（一个允许各种判断的 `<select>` 部分）。`for` 声明报告了变量 `i` 并将其初始化为 `0`。它确保 `i` 不大于 `<select>` 部分中的选项数量，执行随后的 `if` 语句，并在每次循环后将 `i` 增。
 
@@ -1085,14 +1067,13 @@ function howMany(selectObject) {
   }
   return numberSelected;
 }
-
 let btn = document.getElementById('btn');
 btn.addEventListener('click', function() {
   alert('选中的选项数量：' + howMany(document.selectForm.musicTypes));
 });
 ```
 
-## do...while 解释
+### do...while 解释
 
 `do...while` 解释重复执行直到预定的条件评估为假。
 
@@ -1108,7 +1089,7 @@ do {
 
 如果条件为真，声明将再次执行。在每次执行完成时，都会检查条件。当条件为假时，执行停止，控制传递到 `do...while` 之后的语句。
 
-## 示例
+#### 示例
 
 在上面的模型中，`do` 循环至少执行一次，并一直持续直到 `i` 不小于 5。
 
@@ -1120,7 +1101,7 @@ do {
 } while (i < 5);
 ```
 
-## while 解释
+### while 解释
 
 某些语句执行其声明，直到预定的条件评估为真。某些声明如下：
 
@@ -1136,7 +1117,7 @@ while (condition) {
 
 要执行多个声明，请使用大括号语句（`{ ... }`）。
 
-## 示例
+#### 示例
 
 `while` 循环在 `n` 小于 3 时执行语句：
 
@@ -1149,7 +1130,7 @@ while (n < 3) {
 }
 ```
 
-## 命名声明
+### 命名声明
 
 命名给一个语句一个标识符，以便在程序的其他地方引用它。例如，你可以使用命名来感知循环，并随后使用 `break` 或 `continue` 解释来显示程序应该中断循环还是继续。
 
@@ -1162,7 +1143,7 @@ mark:
 
 标记的评估可以是任何不是保留字的 JavaScript 标识符。与之关联的声明可以是任何语句。
 
-## 示例
+#### 示例
 
 在上面的模型中，命名 `markLoop` 感知循环。
 
@@ -1173,12 +1154,13 @@ while (theMark === true) {
 }
 ```
 
+# 第十一章
 
-
+## JavaScript DOM
 
 既然我们已经理解了 DOM 树，就可以开始获取我们的第一个 HTML 组件了。利用 JavaScript DOM 有多种方法可以实现这一点，以下是最常用的方法：
 
-## 通过 ID 获取组件
+### 通过 ID 获取组件
 
 `getElementById()` 方法用于通过其 id 获取单个组件。让我们来看一个模型：
 
@@ -1277,7 +1259,7 @@ document.getElementsByTagName("div").innerHTML = "<h1>Hello World!</h1>"
 你同样可以通过 DOM 修改属性的值。
 
 ```javascript
-document.getElementsByTag("img").src = "test.jpg";
+document.getElementsByTagName("img").src = "test.jpg";
 ```
 
 在这个模型中，我们把所有 `img` 标签的 `src` 修改为 `test.jpg`。
@@ -1293,7 +1275,7 @@ document.getElementById(id).style.property = new style
 现在让我们来看一个模型，我们获取一个组件并将基线改为加粗的深色线：
 
 ```javascript
-document.getElementsByTag("h1").style.borderBottom = "strong 3px #000";
+document.getElementsByTagName("h1").style.borderBottom = "strong 3px #000";
 ```
 
 CSS 属性应该使用驼峰法，而不是普通的 CSS 属性名。在这个模型中，我们使用了 `borderBottom` 而不是 `line base`。
@@ -1312,9 +1294,7 @@ var div = document.createElement('div');
 
 ```javascript
 var newContent = document.createTextNode("Hello World!");
-
 div.appendChild(newContent);
-
 document.body.insertBefore(div, currentDiv);
 ```
 
@@ -1334,11 +1314,8 @@ var elem = document.querySelector('#header'); elem.parentNode.removeChild(elem);
 
 ```javascript
 var div = document.querySelector('#div');
-
 var newDiv = document.createElement('div');
-
 newDiv.innerHTML = "Hi World2"
-
 div.parentNode.replaceChild(newDiv, div);
 ```
 
@@ -1359,6 +1336,10 @@ document.write(Date());
 ```
 
 `write()` 方法还可以接受多个内容，这些内容将按照它们的事件顺序添加到文档中。
+
+# 第十二章
+
+## JavaScript 函数
 
 JavaScript 函数是一段旨在执行特定任务的代码块。
 
@@ -1415,20 +1396,18 @@ function name(parameter1, parameter2, parameter3) {
 
 函数通常会带回一个返回值。返回值会被“返回”给“调用者”：
 
-### 模型
+#### 模型
 
 计算两个数字的结果并返回结果：
 
 ```javascript
 var x = myFunction(4, 3); // 函数被调用，返回值将存储在 x 中
-
 function myFunction(a, b) {
   return a * b; // 函数返回 a 和 b 的结果
 }
 ```
 
 `x` 中的结果将是：
-
 12
 
 ### 为什么使用函数？
@@ -1437,7 +1416,7 @@ function myFunction(a, b) {
 
 你可以使用不同的参数多次使用相同的代码，以交付不同的结果。
 
-### 模型
+#### 模型
 
 将华氏度转换为摄氏度：
 
@@ -1445,7 +1424,6 @@ function myFunction(a, b) {
 function toCelsius(fahrenheit) {
   return (5/9) * (fahrenheit-32);
 }
-
 document.getElementById("demo").innerHTML = toCelsius(77);
 ```
 
@@ -1453,52 +1431,59 @@ document.getElementById("demo").innerHTML = toCelsius(77);
 
 利用上面的模型，`toCelsius` 指的是函数对象，而 `toCelsius()` 指的是函数的结果。
 
-
-
-
-
 不带 `()` 的函数调用将返回函数对象而不是函数结果。
 
-### 模型
+#### 模型
+
 ```javascript
 work toCelsius(fahrenheit) {
   return (5/9) * (fahrenheit-32);
 }
-
 document.getElementById("demo").innerHTML = toCelsius;
 ```
 
 ### 作为变量值的函数
+
 函数可以像你在使用因子（factors）一样，在广泛的配方、任务和估算中使用。
 
-### 模型
+#### 模型
+
 与其使用变量来存储函数返回的估算值：
+
 ```javascript
 var x = toCelsius(77);
 var text = "The temperature is " + x + " Celsius; "
 ```
+
 你可以直接将函数作为变量值使用：
+
 ```javascript
 var text = "The temperature is " + toCelsius(77) + " Celsius";
 ```
+
 在随后的教学练习中，你将获得更多关于函数的深入知识。
 
 ### 局部变量
+
 在 JavaScript 函数内部声明的因子对于该函数是**局部（LOCAL）**的。
 邻近因子必须从函数内部获取。
 
-### 模型
+#### 模型
+
 `/code here` 无法利用
 
-# 第十二章
+# 第十三章
 
-# JavaScript 事件
+## JavaScript 事件
+
 事件是发生在你自定义框架中的活动或场合，框架为你定义了这些事件，以便你在需要时以某种方式对其做出反应。例如，如果客户端选择了网页上的某个点击点，你应该通过显示数据框来响应该活动。在篇文章中，我们将探讨一些涉及事件的重要概念，并观察它们在程序中如何工作。这并不是一次详尽的调查；而是你现阶段需要了解的内容。
 
-## 事件序列
+### 事件序列
+
 如上所述，事件是发生在你正在修改的框架中的活动或事件——当事件发生时，框架会发出（或“触发”）一个信号或类似形式的内容，并提供一个系统，在事件发生时可以采取相应的动作（即运行某些代码）。例如，在机场，当跑道准备就绪时，会向飞行员传递一个信号。这样，飞机就可以安全起飞。
 
 由于 Web 的存在，事件发生在程序窗口内部，并且通常连接到其中的某个特定元素——这可能是单个组件、一组组件、堆叠在当前标签页中的 HTML 文档，或者整个程序窗口。可以发生各种类型的事件，例如：
+
 - 客户端选择了特定组件或将鼠标悬停在特定组件上。
 - 客户端在控制台上按了某个键。
 - 客户端调整程序窗口大小或关闭窗口。
@@ -1513,7 +1498,8 @@ var text = "The temperature is " + toCelsius(77) + " Celsius";
 
 注意：Web 事件不是 JavaScript 核心语言的一部分——它们被描述为程序中包含的 API 特性。
 
-## 示例
+### 示例
+
 我们应该来看一个我们所指内容的简单示例。你已经在很多模型中见过事件和事件监听器的用法，但我们应该回顾一下以巩固理解。在下面的模型中，我们有一个唯一的 `<button>`，当它被按下时，背景色将变为任意颜色：
 
 ```html
@@ -1521,13 +1507,12 @@ var text = "The temperature is " + toCelsius(77) + " Celsius";
 ```
 
 JavaScript 如下：
+
 ```javascript
 const btn = document.querySelector('button');
-
 work random(number) {
   return Math.floor(Math.random() * (number+1));
 }
-
 btn.onclick = work() {
   const rndCol = 'rgb(' + random(255) + ',' + random(255) + ',' + random(255) + ')';
   document.body.style.backgroundColor = rndCol;
@@ -1540,7 +1525,8 @@ btn.onclick = work() {
 
 示例输出如下：
 
-## 它不仅仅是网页
+### 它不仅仅是网页
+
 现在另一个值得引用的点是，事件并不是 JavaScript 特有的——大多数编程语言都具有某种事件模型，但模型的工作方式通常与 JavaScript 的方式不同。事实上，JavaScript 用于网页的事件模型与它在不同环境下的使用的 JavaScript 事件模型有所不同。
 
 例如，`Node.js` 是一个极其流行的 JavaScript 运行时，它允许设计师使用 JavaScript 构建服务器端和工作端应用程序。`Node.js` 事件模型依赖听众来监听事件以及生产者周期性地发布事件——这听起来并不特别，但代码非常独特，使用了诸如 `on()` 的函数来注册事件听众，并使用 `once()` 注册一个运行一次后注销的事件听众。`HTTP` 接口事件文档提供了真实的模型。
@@ -1549,35 +1535,34 @@ btn.onclick = work() {
 
 在学习的现阶段，你不需要理解其他此类环境的任何内容；我们只需要说明事件可以在不同的编程环境中变化。
 
-## 使用 Web 事件的方法
+### 使用 Web 事件的方法
+
 有多种方法向网页添加事件监听器代码，以便其在相关事件触发时运行。在本节中，我们将介绍不同的工具，并讨论你应该使用哪种。
 
-### 事件监听器属性
+#### 事件监听器属性
+
 这些是我们在课程期间经常看到的、用于包含事件监听器代码的属性。回到上面的模型：
+
 ```javascript
 const btn = document.querySelector('button');
-
 btn.onclick = work() {
   const rndCol = 'rgb(' + random(255) + ',' + random(255) + ',' + random(255) + ')';
   document.body.style.backgroundColor = rndCol;
 }
 ```
+
 `onclick` 属性是当前情况下使用的事件监听器属性。它基本上是按钮上的其他可用属性之一（例如 `btn.textContent` 或 `btn.style`），但它是一种特殊的类型——当你将其设置为某些代码时，这些代码会在事件发生在按钮上运行时。
 
 你也可以将属性属性设置为一个命名函数的名称（正如我们在“构建你自己的函数”中发现的那样）。以下代码在任何情况下有效：
+
 ```javascript
 const btn = document.querySelector('button');
-
 work bgChange() {
   const rndCol = 'rgb(' + random(255) + ',' + random(255) + ',' + random(255) + ')';
   document.body.style.backgroundColor = rndCol;
 }
-
 btn.onclick = bgChange;
 ```
-
-
-
 
 有很多可用的事件监听器属性。让我们来分析一下。
 
@@ -1590,15 +1575,15 @@ btn.onclick = bgChange;
 
 某些事件是通用的，几乎可以在任何地方使用（例如 `onclick` 控制器可以到几乎任何组件上），尽管某些事件更具体且仅在特定情况下有用（例如，仅在特定的组件上使用 `onplay` 是很好的）。
 
-# 第十三章
+# 第十四章
 
-### JavaScript Cookies
+## JavaScript Cookies
 
 Cookie 是一种在服务器和客户端之间持久化的数据。网络浏览器在浏览时存储这些数据。
 
- Cookie 包含通常以分号隔离的键值对形式的字符串数据。它保持客户端的状态并在所有网站页面之间记录客户端的数据。
+Cookie 包含通常以分号隔离的键值对形式的字符串数据。它保持客户端的状态并在所有网站页面之间记录客户端的数据。
 
-## Cookie 是如何工作的？
+### Cookie 是如何工作的？
 
 当客户端向服务器发送请求时，该请求的每一个部分都被视为由不同客户端发送的另一个请求。这样，为了识别客户端，我们需要在客户端服务器程序的响应中添加 Cookie。
 
@@ -1606,7 +1591,7 @@ Cookie 是一种在服务器和客户端之间持久化的数据。网络浏览�
 
 ### JavaScript Cookies
 
-## 如何在 JavaScript 中创建 Cookie？
+#### 如何在 JavaScript 中创建 Cookie？
 
 在 JavaScript 中，我们可以利用 `document.cookie` 属性创建、读取、刷新和删除 Cookie。
 
@@ -1616,9 +1601,9 @@ Cookie 是一种在服务器和客户端之间持久化的数据。网络浏览�
 document.cookie="name=value";
 ```
 
-### JavaScript Cookie 示例
+#### JavaScript Cookie 示例
 
-### 示例 1
+##### 示例 1
 
 我们应该看一个设置和获取 Cookie 的指南。
 
@@ -1651,7 +1636,7 @@ alert("Cookie not accessible");
 </html>
 ```
 
-### 示例 2
+##### 示例 2
 
 在这里，我们独立地显示 Cookie 的键值对。
 
@@ -1685,7 +1670,7 @@ alert("Cookie not accessible");
 </html>
 ```
 
-### 示例 3
+##### 示例 3
 
 在这个示例中，我们提供了着色决策并将选定的着色值传递给 Cookie。现在，Cookie 在程序中存储客户端的最后决定。以此类，当刷新网站页面时，客户端的最后决定将出现在屏幕上。
 

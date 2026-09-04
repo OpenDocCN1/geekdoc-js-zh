@@ -1,13 +1,7 @@
+
 # 精通 React Native：初学者指南 (计算机科学大师系列)
 
-
-
-
-
-
-
 ![](img/5b11183a7ad7d0e336e0943bf7238c39_0_0.png)
-
 
 # Sufyan bin Uzayr
 
@@ -17,14 +11,13 @@
 
 *精通 React Native* 帮助读者掌握 React Native 框架，以实现更快速、更健壮的移动应用开发。React Native 是一个开源 JavaScript 框架，允许你使用同一代码库为包括 iOS、Android 和 Web 在内的多个平台创建应用程序。它基于 React 框架构建，并将 React 的强大功能带入移动应用开发。
 
-React Native 是 React 的自然延续。它是一个包含 JavaScript 的移动框架，用于创建接近原生的应用。JSX 是 JavaScript 和类 XML 标记的混合体，用于构建 React Native 应用。React Native 的“桥接”随后会在后台调用 Objective-C（用于 iOS）或 Java（用于 Android）中的原生渲染 API。因此，你的应用看起来和感觉将像任何其他移动应用一样，因为它使用的是真实的移动 UI 组件而不是 Web 视图渲染的。React Native 还为平台 API 提供了 JavaScript 接口，允许你的 React Native 应用使用用户位置手机摄像头等功能。
+React Native 是 React 的自然延续。它是一个包含 JavaScript 的移动框架，用于创建接近原生的应用。`JSX` 是 JavaScript 和类 XML 标记的混合体，用于构建 React Native 应用。React Native 的“桥接”随后会在后台调用 Objective-C（用于 iOS）或 Java（用于 Android）中的原生渲染 API。因此，你的应用看起来和感觉将像任何其他移动应用一样，因为它使用的是真实的移动 UI 组件而不是 Web 视图渲染的。React Native 还为平台 API 提供了 JavaScript 接口，允许你的 React Native 应用使用用户位置、手机摄像头等功能。
 
 如果你的应用侧重于 UI，React Native 是一个极佳的选择，因为它带有丰富的 UI 库。成为一名 React Native 开发者可以让你接触到令人兴奋的尖端项目，这些项目经常整合了增强现实（AR）等创新技术。React Native 开发者的就业机会非常丰富，由于其在初创公司和大型企业中的普及，它无疑是一项值得考虑的技能。
 
 通过*精通 React Native*，学习 React Native 将变得简单，并将无疑地帮助读者提升他们的职业生涯。
 
 《精通计算机科学》系列由 Sufyan bin Uzayr 编辑，他是一位在计算领域拥有十年经验的作家和教育者。
-
 
 **系列编辑：** Sufyan bin Uzayr
 
@@ -46,33 +39,24 @@ React Native 是 React 的自然延续。它是一个包含 JavaScript 的移动
 
 ***Zeba Academy 是一家教育科技初创企业，主要为 STEM 领域的学习者开发课程和内容，并为全球范围的大学和机构提供教育咨询。更多信息请访问 https://zeba.academy***
 
-
-
-
-
-
-
-
-
-
-
-
-
-## 第1章上手 React Native
+## 第1章 上手 React Native
 
 ### 什么是 React Native
-JSX 是 JavaScript 和类 XML 标记的混合体，用于构建 React Native 应用。React Native 的“桥接”随后会在后台调用 Objective-C（用于 iOS）或 Java（用于 Android）中的原生渲染 API。因此，你的应用看起来和感觉将像任何其他移动应用一样，因为它使用的是真实的移动 UI 组件而不是 Web 视图渲染的。React Native 还为平台 API 提供了 JavaScript 接口，允许你的 React Native 应用使用用户位置手机摄像头等功能。
+
+`JSX` 是 JavaScript 和类 XML 标记的混合体，用于构建 React Native 应用。React Native 的“桥接”随后会在后台调用 Objective-C（用于 iOS）或 Java（用于 Android）中的原生渲染 API。因此，你的应用看起来和感觉将像任何其他移动应用一样，因为它使用的是真实的移动 UI 组件而不是 Web 视图渲染的。React Native 还为平台 API 提供了 JavaScript 接口，允许你的 React Native 应用使用用户位置、手机摄像头等功能。
 
 如果你的应用侧重于 UI，React Native 是一个极佳的选择，因为它带有丰富的 UI 库。成为一名 React Native 开发者可以让你接触令人兴奋的尖端项目，这些项目经常整合了增强现实（AR）等创新技术。React Native 开发者的就业机会非常丰富，由于其在初创公司和大型企业中的普及，它无疑是一项值得考虑的技能。
 
 通过*精通 React Native*，学习 React Native 将变得简单，并将无疑地帮助读者提升他们的职业生涯。
 
 ### 先决条件
-安装
+
+### 安装
 
 ### React Native 的历史
 
-### 优化化的各种步骤
+### 优化 React Native 性能的各种步骤
+
 - 系统大小
 - 图片大小
 - 缓存
@@ -83,6 +67,7 @@ JSX 是 JavaScript 和类 XML 标记的混合体，用于构建 React Native 应
 - 屏幕方向
 
 ### 优点
+
 - 社区支持
 - 良好的性能
 - 可复用的高级组件
@@ -92,7 +77,8 @@ JSX 是 JavaScript 和类 XML 标记的混合体，用于构建 React Native 应
 - 日益增长的稳定可靠
 - 库访问
 
-### 原生的优势
+### 缺点
+
 - 不成熟
 - 学习困难
 - 安全性低
@@ -100,13 +86,16 @@ JSX 是 JavaScript 和类 XML 标记的混合体，用于构建 React Native 应
 - 初始化时间
 - 内存管理
 
-## 第2章使用 React Native
+## 第2章 使用 React Native
 
 ### React Native 如何工作？
-React Native 工作流程
-React Native 架构
+
+#### React Native 工作流程
+
+#### React Native 架构
 
 ### React Native 特性
+
 - NPM 仓库支持
 - 代码复用
 - 灵活的语言
@@ -116,596 +105,750 @@ React Native 架构
 - UI 技能
 - React Native 的未来
 
-*平台无关性的进步*
-*桥接的易用性*
+#### 平台无关性的进步
+
+#### 桥接的易用性
 
 ### React Native 组件生命周期阶段
 
 #### 挂载阶段
-- *Constructor()*
-- *static getDerivedStateFromProps()*
-- *render()*
-- *ComponentDidMount()*
+
+- `Constructor()`
+- `static getDerivedStateFromProps()`
+- `render()`
+- `ComponentDidMount()`
 
 #### 更新阶段
-- *static getDerivedStateFromProps()*
-- *shouldComponentUpdate()*
-- *render()*
-- *getSnapshotBeforeUpdate()*
-- *componentDidUpdate()*
+
+- `static getDerivedStateFromProps()`
+- `shouldComponentUpdate()`
+- `render()`
+- `getSnapshotBeforeUpdate()`
+- `componentDidUpdate()`
 
 #### 卸载阶段
-- *componentWillUnmount()*
+
+- `componentWillUnmount()`
 
 #### 错误处理阶段
-- *getDerivedStateFromError()*
-- *componentDidCatch()*
+
+- `getDerivedStateFromError()`
+- `componentDidCatch()`
 
 ### 结论
 
+## 第3章 构建你的第一个应用程序
 
+### 安装 React Native CLI
 
+### 安装 Windows Terminal
 
+#### 安装 Windows Terminal 的方法
 
+### 安装 Git
 
+#### 如何下载 Git?
 
-## 第3 章 ◾ 构建你的第一个应用程序 33
+#### 安装 Git
 
-### 安装 REACT NATIVE CLI 33
+### 安装 Node.js 和 NPM 包管理器
 
-### 安装 Windows Terminal 34 
-*安装 Windows Terminal 的方法* 34
+#### 简介
 
-### 安装 Git 36
-*如何下载 Git?* 36
-*安装 Git* 36
+#### 环境要求
 
-### 安装 Node.js 和 NPM 包管理器 37
-*简介* 37
-*环境要求* 37
-### 在 Windows 系统上安装 Node.js 和 NPM 37
-*什么是 NPM?* 38
-*如何安装或更新 NPM* 38
+### 在 Windows 系统上安装 Node.js 和 NPM
 
-### 安装 React Native CLI 40
+#### 什么是 NPM?
 
-### 安装 Python 40
+#### 如何安装或更新 NPM
 
-### React Native CLI 41
+### 安装 React Native CLI
 
-### 安装 Android JDK 41
-### JAVA_HOME 灵活环境变量 42
+### 安装 Python
 
-### 安装 Android Studio 42
-*Android Studio: https://developer.android.com/studio* 42
-*Android Studio 配置* 42
+### React Native CLI
 
-### 安装 Android SDK 44
-*Android Studio SDK 配置* 44
+### 安装 Android JDK
 
+### JAVA_HOME 环境变量
 
-### 安装 Visual Studio Code (IDE) 45
-*如何下载并安装 Visual Studio Code?* 45
-*如何在 Windows 上安装 Visual Studio Code?* 46
-*为什么使用 React Native?* 46
+### 安装 Android Studio
 
-## 设置你的环境 47
+*Android Studio: https://developer.android.com/studio*
 
-### 运行 React Native 应用程序 48
+#### Android Studio 配置
 
-### 修改你的应用 48
+### 安装 Android SDK
 
-### 探索示例代码 48
+#### Android Studio SDK 配置
 
-## 构建应用 49
+### 安装 Visual Studio Code (IDE)
 
-### 使用 React Native 构建 Android 应用 49
-*第1步：创建空白的 React Native 项目* 49
-*第2步：连接 Android 设备* 50
-*第3步：从 Moviedb API 获取信息* 50
-*第4步：定义 fetchMoviesData 方法* 51
-*第5步：创建生命周期方法 componentDidMount* 51
-*第6步：视图的创建* 51
-*第7步：重构 Return 方法* 52
-*第8步：运行应用* 53
-*结论* 53
+#### 如何下载并安装 Visual Studio Code?
 
-### React Native – 默认应用程序 53
-*Props 和 State 的定义* 54
-*State* 56
-*State 和 Props 的区别* 57
-*使用 State* 57
-*更新 State* 58
+#### 如何在 Windows 上安装 Visual Studio Code?
 
-### 使用 React Native 构建你的第一个应用 59
+#### 为什么使用 React Native?
 
-### 创建应用 60
+## 设置你的环境
 
-### NPM 的开始 60
+### 运行 React Native 应用程序
 
-### 什么是跨平台开发? 61
+### 修改你的应用
 
-### 跨平台开发的特性有哪些? 61
-*大量的监听器* 61
-*代码稳定性* 61
-*可复用代码* 61
-*快速开发* 62
-*降低成本* 62
-*需要额外的技术来确保高性能* 62
+### 探索示例代码
 
-## 本章总结 62
+## 构建应用
 
-## 第4 章 ◾ 用于移动端开发的组件 63
+### 使用 React Native 构建 Android 应用
 
-### 移动端组件 63
+#### 第1步：创建空白的 React Native 项目
 
-### HTML 与原生组件的类比 63
+#### 第2步：连接 Android 设备
 
-### Text 组件 64
+#### 第3步：从 Moviedb API 获取信息
 
-### IMAGE 组件 66
-
-### 处理触摸与手势 67
-
-### 使用 TOUCHABLEHIGHLIGHT 68
-*Touch/PressDemo.js 演示了 TouchableHighlight 的用法* 69
-
-### GESTURESPONDER 节点 70
-### PanResponder 72
-*创建 PanResponder 需要我们传递一组回调函数* 73
-*使用扩展语法挂载 PanResponder* 74
-*Touch/PanDemo.js 解释了 PanResponder 的用法* 74
-
-### 选择一种触摸管理方法 78
-
-### 处理组织类组件 79
-### 使用 ListView 79
-*对于 _renderRow，我们只将合适的数据传递给 <BookItem>* 81
-*在 BookListV2.js 的头部和底部元素中添加 render 方法* 81
-*Bestsellers/BookItem.js* 85
-
-### 使用导航器 (NAVIGATORS) 86
-
-### 其他组织类组件 87
-
-### 平台特定组件 87
-### 仅限 iOS 或 Android 的组件 87
-### 具有平台特定版本的组件 88
-*Switch.ios.js* 88
-*CrossPlatform.js 使用了 <Switch> 组件* 90
-
-### 何时使用平台特定组件 91
-
-### 总结 92
-
-### 结论 92
-
-## 第5 章 ◾ 样式与布局 93
-
-1. 样式非常重要：让它们易于找到 94
-2. 原子化！94
-3. 样式非常重要：让它们易于使用 95
-4. 保持样式靠近 98
-
-### 注意事项 99
-*容器组件 (Container Component)* 100
-*展示性组件 (Presentational Component)* 101
-
-### REACT NATIVE 样式方法 102
-### 样式属性 (Style Props) 102
-
-### REACT NATIVE 应用：Flexbox 架构 102
-### 使用 StyleSheet 103
-### React Native 中的 Styled-Component 105
-### 使用 React Native SVG 绘制特定形状 108
-
-### 组织与继承 112
-### React Native 的样式继承 112
-### 在应用中实现自定义字体 113
-### 创建应用程序 115
-*运行应用程序* 116
-### 输出：布局设计 116
-*布局* 116
-*从 View 开始* 116
-
-### 使用 FLEXBOX 布局 122
-### Flex 122
-### Flex 方向 (Direction) 122
-### 内容对齐 (Justify Content) 123
-### 项目对齐 (Align Items) 124
-### 内容对齐 (Align Content) 124
-### Flex 换行 (Wrap) 125
-### Flex 基础 (Basis)、增长 (Grow) 和收缩 (Shrink) 125
-### 宽度与高度 126
-### 绝对布局与相对布局 126
-
-### 结论 127
-
-## 第6 章 ◾ 平台 API 129
-
-### 平台 APIs 129
-### 什么是 API? 131
-### 完整的 API 131
-
-### 使用定位 (GEOLOCATION) 133
-### 定支持 134
-### 使用 getCurrentPosition 135
-*超时* 135
-*处理错误* 136
-*跟踪位置变化* 137
-### 使用开发者工具 138
-*位置是如何确定的* 139
-*附近位置* 140
-### 使用定位 API 140
-*处理错误与拒绝* 141
-*在地图上显示结果* 142
-*特定位置信息* 142
-
-### GETCURTPOSITION() 方法 – 返回数据 143
-### 定位对象 – 其他方法 143
-### 安装 iOS 144
-### 安装 Android 144
-*变量* 145
-*getCurrentPosition(...)* 146
-*watchPosition(...)* 146
-*clearWatch(...)* 146
-*checkPermissions()* 147
-*requestPermissions(...)* 147
-*接口 (Interfaces)* 147
-*别名 (Aliases)* 148
-### 访问用户的图片和相机 149
-
-### 创建页面 149
-### 添加输入 (INPUT) 149
-### 添加画布 (CANVAS) 150
-### 响应变化 (CHANGE) 150
-### 在画布上绘制 151
-
-### 选项 153
-### 使用 asyncstore 持久化 153
-*导入 AsyncStorage 库* 153
-*持久化数据* 153
-*获取数据* 154
-### 方法 154
-*getItem()* 154
-*setItem()* 154
-*removeItem()* 155
-*mergeItem()* 155
-*clear()* 156
-*getAllKeys()* 157
-*fGetRequests()* 157
-*multiGet()* 157
-*multiSet()* 158
-*multiRemove()* 159
-*multiMerge()* 159
-
-### 结论 162
-
-## 第7 章 ◾ React Native Modules 163
-
-### 模块 (MODULES) 163
-原生模块简介 163
-
-### 使用 NPM 安装 JavaScript 库 164
-什么是 NPM? 164
-如何下载 NPM? 164
-如何使用 NPM 下载包 164
-如何使用 NPM 全局下载包 165
-如何使用包 165
-
-### iOS 原生模块 166
-创建一个日原生模块 166
-设置 166
-*创建原生模块文件* 167
-*模块名称* 167
-*将原生方法导出到 JavaScript* 168
-*同步方法* 169
-*测试你构建的内容* 170
-*在迭代中构建* 171
-*总结* 171
-日日原生模块之外 172
-*更好的原生模块导出* 172
-*参数类型* 173
-*导出常量* 174
-*回调* 175
-*承诺* 178
-*将事件发送到 JavaScript* 179
-*线程* 180
-*依赖注入 181
-*导出 Swift* 182
-*预留方法名* 183
+#### 第4步：定义 `fetchMoviesData` 方法
 
-### 用于 Android 的原生模块 183
-创建一个日原生模块 183
-设置 184
-*创建原生模块文件* 184
-*模块名称* 185
-*将原生方法导出到 JavaScript* 185
-*同步方法* 186
-*注册模块 (Android 特有)* 187
-*测试你构建的内容* 189
-*在迭代中构建* 190
-*总结* 190
-日原生原生模块之外 190
-*更好的原生模块导出* 190
-*参数类型* 192
-*导出常量* 193
-*回调* 194
-*承诺* 196
-*将事件发送到 JavaScript* 198
-*从 startActivityForResult 获取 Activity 结果* 199
-*监听生命周期事件* 201
-*线程* 202
+#### 第5步：创建生命周期方法 `componentDidMount`
 
-### 跨平台原生模块 202
-跨平台应用开发框架的优势有哪些? 203
-代码复用 203
-降低成本和资源 203
-易于部署和维护 203
-更广泛的市场范围 203
-统一设计 203
-结论 204
+#### 第6步：视图的创建
 
+#### 第7步：重构 Return 方法
 
+#### 第8步：运行应用
 
+#### 结论
 
+### React Native – 默认应用程序
 
+#### Props 和 State 的定义
 
-## 第 8 章 ◾ 调试与开发者工具 205 调试与开发者工具 205
+#### State
 
-启用快速刷新 206
+#### State 和 Props 的区别
 
-启用快捷键 206
+#### 使用 State
 
-LogBox 206
+#### 更新 State
 
-*控制台错误与警告* 206
+### 使用 React Native 构建你的第一个应用
 
-*未处理的错误* 206
+### 创建应用
 
-*语法错误* 207
+### NPM 的开始
 
-Chrome 开发者工具 207
+### 什么是跨平台开发?
 
-*使用自定义 JavaScript 调试器进行调试* 207
+### 跨平台开发的特性有哪些?
 
-Safari 开发者工具 208
+- 大量的监听器
+- 代码稳定性
+- 可复用代码
+- 快速开发
+- 降低成本
+- 需要额外的技术来确保高性能
 
-React 开发者工具 208
+## 本章总结
 
-*与 React Native 检查器的集成* 209
+## 第4章 用于移动端开发的组件
 
-*检查组件实例* 209
+### 移动端组件
 
-性能监控器 209
+### HTML 与原生组件的类比
 
-调试应用状态 209
+### Text 组件
 
+### Image 组件
 
-*仅包含原生代码的项目* 210
+### 处理触摸与手势
 
-访问控制台日志 210
+### 使用 `TouchableHighlight`
 
-使用 Chrome 开发者工具在设备上进行调试 210
+*`Touch/PressDemo.js` 演示了 `TouchableHighlight` 的用法*
 
-调试原生代码 211
+### `GestureResponder` 节点
 
-## JAVASCRIPT 调试实践翻译 211
+### `PanResponder`
 
-最佳实践 211
+#### 创建 `PanResponder` 需要我们传递一组回调函数
 
-*格式化以调试* 211
+#### 使用扩展语法挂载 `PanResponder`
 
-调试方法 211
+#### `Touch/PanDemo.js` 解释了 `PanResponder` 的用法
 
-*控制台方法* 211
+### 选择一种触摸管理方法
 
-*使用调试器* 212
+### 处理组织类组件
 
-*断点* 212
+### 使用 `ListView`
 
-*无条件断点* 213
+#### 对于 `_renderRow`，我们只将合适的数据传递给 `<BookItem>`
 
-*使用断点列表* 213
+#### 在 `BookListV2.js` 的头部和底部元素中添加 render 方法
 
-*添加日志点* 213
+#### `Bestsellers/BookItem.js`
 
-*取消断点* 213
+### 使用导航器 (`Navigator`)
 
-*使用监视 (Watches)* 213
+### 其他组织类组件
 
-*使用调用栈* 214
+### 平台特定组件
 
-调试工具 214
+### 仅限 iOS 或 Android 的组件
 
-*Rookout* 214
+### 具有平台特定版本的组件
 
-*NodeJS 调试器* 214
+#### `Switch.ios.js`
 
-*使用代码编辑器* 214
+#### `CrossPlatform.js` 使用了 `<Switch>` 组件
 
-*框架调试工具 (Angular, React, Vue)* 215
+### 何时使用平台特定组件
 
-*JSON 格式化和验证器* 215
+### 总结
 
-*“use strict”模式* 215
+### 结论
 
-## REACT NATIVE 调试工具 215
+## 第5章 样式与布局
 
-React Native 开发者常用的 6 种调试工具 215
+### 1. 样式非常重要：让它们易于找到
 
-*Chrome DevTools* 215
+### 2. 原子化！
 
-*React Developer Tools* 216
+### 3. 样式非常重要：让它们易于使用
 
-*React Native Debugger* 216
+### 4. 保持样式靠近
 
-*Redux DevTools* 217
+### 注意事项
 
-*Nuclide – Atom 插件* 218
+#### 容器组件 (`Container Component`)
 
-*Reactotron* 218
+#### 展示性组件 (`Presentational Component`)
 
-## 超越 JavaScript 的调试 219
+### React Native 样式方法
 
-控制台日志的基础知识 219
+### 样式属性 (`Style Props`)
 
-超越控制台日志基础 220
+### React Native 应用：Flexbox 架构
 
-*console.table()* 220
+### 使用 `StyleSheet`
 
-*console.assert()* 220
+### React Native 中的 `Styled-Component`
 
-*console.trace()* 221
+### 使用 React Native SVG 绘制特定形状
 
-*console.count()* 221
+### 组织与继承
 
-*console.memory* 221
+### React Native 的样式继承
 
-*console.time()* 221
+### 在应用中实现自定义字体
 
-## 结论 221
+### 创建应用程序
 
-## 第 9 章 ◾ 整合一切 223
+#### 运行应用程序
 
-## 闪卡应用 226
+### 输出：布局设计
 
-React Native 闪卡应用 226
+#### 布局
 
-如何安装 226
+#### 从 `View` 开始
 
-如何运行 226
+### 使用 Flexbox 布局
 
-## 数据建模与存储 226
+### Flex
 
-## 在 React Native 本地存储中存储数据示例 227
+### Flex 方向 (`Direction`)
 
-## 使用导航器 (Navigator) 248
+### 内容对齐 (`Justify Content`)
 
-React Navigation 5.0 248
+### 项目对齐 (`Align Items`)
 
-安装 React Navigation 248
+### 内容对齐 (`Align Content`)
 
-React Native Stack Navigator 250
+### Flex 换行 (`Wrap`)
 
-React Native Navigation 示例 250
+### Flex 基础 (`Basis`)、增长 (`Grow`) 和收缩 (`Shrink`)
 
-*使用 Stack Navigator 在屏幕组件之间导航* 250
+### 宽度与高度
 
-*使用 Tab 导航* 254
+### 绝对布局与相对布局
 
-*使用 Drawer 导航* 255
+### 结论
 
-## 结论 259
+## 第6章 平台 API
 
-## 第 10 章 ◾ 部署到 iOS App Store 261
+### 平台 APIs
 
-## 符合开发者规范 262
+### 什么是 API?
 
-## 选择 iOS 编程语言 263
+### 完整的 API
 
-## 调用 API 和库 263
+### 使用定位 (`Geolocation`)
 
-## 扩展到云端 264
+### 定位支持
 
-## 本地测试，全局测试 264
+### 使用 `getCurrentPosition`
 
-## 将您的应用发布到 App Store 265
+#### 超时
 
-为应用创建 Xcode 项目 265
+#### 处理错误
 
-*概述* 265
+#### 跟踪位置变化
 
-*准备配置信息* 266
+### 使用开发者工具
 
-*重要* 266
+#### 位置是如何确定的
 
-*创建项目* 266
+#### 附近位置
 
-*在主窗口管理文件* 267
+### 使用定位 API
 
-## 使用 Testflight 进行 Beta 测试 268
+#### 处理错误与拒绝
 
-Testflight 用于 Beta 测试 268
+#### 在地图上显示结果
 
-Beta 测试的优势 268
+#### 特定位置信息
 
-使用 Testflight 进行 Beta 测试 269
+### `getCurrentPosition()` 方法 – 返回数据
 
-Testflight 的主要功能 269
+### 定位对象 – 其他方法
 
-应用 Beta 测试算法 269
+### 安装 iOS
 
-内部测试员 270
+### 安装 Android
 
-外部测试员和组 270
+#### 变量
 
-*使用电子邮件邀请测试员* 271
+#### `getCurrentPosition(...)`
 
-*使用公共链接邀请测试员* 271
+#### `watchPosition(...)`
 
-*测试信息* 271
+#### `clearWatch(...)`
 
-*获取反馈* 271
+#### `checkPermissions()`
 
-## 提交应用审核 272
+#### `requestPermissions(...)`
 
-代码签名：创建 iOS 分发描述文件和发布证书 272
+#### 接口 (`Interfaces`)
 
-为您的应用创建 App Store Connect 记录 272
+#### 别名 (`Aliases`)
 
-在应用中配置应用的元数据和更多细节 273
+### 访问用户的图片和相机
 
-*针对付费应用* 273
+### 创建页面
 
-*添加新应用* 274
+### 添加输入 (`Input`)
 
-使用 Xcode 归档并上传应用 274
+### 添加画布 (`Canvas`)
 
-Store Connect 记录 275
+### 响应变化 (`Change`)
 
-提交您的应用进行审核 276
+### 在画布上绘制
 
-检查应用状态 277
+### 选项
 
-*需要多久才能通过* 277
+### 使用 `AsyncStorage` 持久化
 
-*如果您的应用被拒绝* 277
+#### 导入 `AsyncStorage` 库
 
-*如果您的应用已通过* 277
+#### 持久化数据
 
-## 总结 277
+#### 获取数据
 
-## 第 11 章 ◾ 部署到 Android 278
+### 方法
 
-## 部署到 Android 279
+#### `getItem()`
 
-## 应用包 (App Bundle) 280
+#### `setItem()`
 
-生成 KeyStore 281
+#### `removeItem()`
 
-## 为应用签名 282
+#### `mergeItem()`
 
-## 上传到 Google Play 283
+#### `clear()`
 
-## 测试应用 284
+#### `getAllKeys()`
 
-## 发布应用 285
+#### `getRequests()` (原文为 `fGetRequests`，推测为笔误，保留原文或修正？此处保留原文 `fGetRequests` 但加反引号)
 
-## 结论 285
+#### `multiGet()`
 
-## 索引 286
+#### `multiSet()`
 
+#### `multiRemove()`
 
+#### `multiMerge()`
 
+### 结论
 
+## 第7章 React Native Modules
+
+### 模块 (`Modules`)
+
+#### 原生模块简介
+
+### 使用 NPM 安装 JavaScript 库
+
+#### 什么是 NPM?
+
+#### 如何下载 NPM?
+
+#### 如何使用 NPM 下载包
+
+#### 如何使用 NPM 全局下载包
+
+#### 如何使用包
+
+### iOS 原生模块
+
+#### 创建一个 iOS 原生模块
+
+#### 设置
+
+##### 创建原生模块文件
+
+##### 模块名称
+
+##### 将原生方法导出到 JavaScript
+
+##### 同步方法
+
+##### 测试你构建的内容
+
+##### 在迭代中构建
+
+##### 总结
+
+#### iOS 原生模块之外
+
+##### 更好的原生模块导出
+
+##### 参数类型
+
+##### 导出常量
+
+##### 回调
+
+##### 承诺
+
+##### 将事件发送到 JavaScript
+
+##### 线程
+
+##### 依赖注入
+
+##### 导出 Swift
+
+##### 预留方法名
+
+### 用于 Android 的原生模块
+
+#### 创建一个 Android 原生模块
+
+#### 设置
+
+##### 创建原生模块文件
+
+##### 模块名称
+
+##### 将原生方法导出到 JavaScript
+
+##### 同步方法
+
+##### 注册模块 (Android 特有)
+
+##### 测试你构建的内容
+
+##### 在迭代中构建
+
+##### 总结
+
+#### Android 原生模块之外
+
+##### 更好的原生模块导出
+
+##### 参数类型
+
+##### 导出常量
+
+##### 回调
+
+##### 承诺
+
+##### 将事件发送到 JavaScript
+
+##### 从 `startActivityForResult` 获取 Activity 结果
+
+##### 监听生命周期事件
+
+##### 线程
+
+### 跨平台原生模块
+
+#### 跨平台应用开发框架的优势有哪些?
+
+- 代码复用
+- 降低成本和资源
+- 易于部署和维护
+- 更广泛的市场范围
+- 统一设计
+
+#### 结论
+
+## 第8章 调试与开发者工具
+
+### 调试与开发者工具
+
+#### 启用快速刷新
+
+#### 启用快捷键
+
+#### LogBox
+
+##### 控制台错误与警告
+
+##### 未处理的错误
+
+##### 语法错误
+
+#### Chrome 开发者工具
+
+##### 使用自定义 JavaScript 调试器进行调试
+
+#### Safari 开发者工具
+
+#### React 开发者工具
+
+##### 与 React Native 检查器的集成
+
+##### 检查组件实例
+
+#### 性能监控器
+
+#### 调试应用状态
+
+##### 仅包含原生代码的项目
+
+#### 访问控制台日志
+
+#### 使用 Chrome 开发者工具在设备上进行调试
+
+#### 调试原生代码
+
+### JavaScript 调试实践翻译
+
+#### 最佳实践
+
+##### 格式化以调试
+
+#### 调试方法
+
+##### 控制台方法
+
+##### 使用调试器
+
+##### 断点
+
+##### 无条件断点
+
+##### 使用断点列表
+
+##### 添加日志点
+
+##### 取消断点
+
+##### 使用监视 (`Watches`)
+
+##### 使用调用栈
+
+#### 调试工具
+
+##### `Rookout`
+
+##### `NodeJS` 调试器
+
+##### 使用代码编辑器
+
+##### 框架调试工具 (Angular, React, Vue)
+
+##### JSON 格式化和验证器
+
+##### `use strict` 模式
+
+## React Native 调试工具
+
+### React Native 开发者常用的 6 种调试工具
+
+#### `Chrome DevTools`
+
+#### `React Developer Tools`
+
+#### `React Native Debugger`
+
+#### `Redux DevTools`
+
+#### `Nuclide` – Atom 插件
+
+#### `Reactotron`
+
+## 超越 JavaScript 的调试
+
+### 控制台日志的基础知识
+
+### 超越控制台日志基础
+
+#### `console.table()`
+
+#### `console.assert()`
+
+#### `console.trace()`
+
+#### `console.count()`
+
+#### `console.memory`
+
+#### `console.time()`
+
+## 结论
+
+## 第9章 整合一切
+
+## 闪卡应用
+
+### React Native 闪卡应用
+
+### 如何安装
+
+### 如何运行
+
+## 数据建模与存储
+
+## 在 React Native 本地存储中存储数据示例
+
+## 使用导航器 (`Navigator`)
+
+### React Navigation 5.0
+
+### 安装 React Navigation
+
+### React Native Stack Navigator
+
+### React Native Navigation 示例
+
+#### 使用 Stack Navigator 在屏幕组件之间导航
+
+#### 使用 Tab 导航
+
+#### 使用 Drawer 导航
+
+## 结论
+
+## 第10章 部署到 iOS App Store
+
+## 符合开发者规范
+
+## 选择 iOS 编程语言
+
+## 调用 API 和库
+
+## 扩展到云端
+
+## 本地测试，全局测试
+
+## 将您的应用发布到 App Store
+
+### 为应用创建 Xcode 项目
+
+#### 概述
+
+#### 准备配置信息
+
+#### 重要
+
+#### 创建项目
+
+#### 在主窗口管理文件
+
+## 使用 Testflight 进行 Beta 测试
+
+### Testflight 用于 Beta 测试
+
+### Beta 测试的优势
+
+### 使用 Testflight 进行 Beta 测试
+
+### Testflight 的主要功能
+
+### 应用 Beta 测试算法
+
+### 内部测试员
+
+### 外部测试员和组
+
+#### 使用电子邮件邀请测试员
+
+#### 使用公共链接邀请测试员
+
+#### 测试信息
+
+#### 获取反馈
+
+## 提交应用审核
+
+### 代码签名：创建 iOS 分发描述文件和发布证书
+
+### 为您的应用创建 App Store Connect 记录
+
+### 在应用中配置应用的元数据和更多细节
+
+#### 针对付费应用
+
+#### 添加新应用
+
+### 使用 Xcode 归档并上传应用
+
+### Store Connect 记录
+
+### 提交您的应用进行审核
+
+### 检查应用状态
+
+#### 需要多久才能通过
+
+#### 如果您的应用被拒绝
+
+#### 如果您的应用已通过
+
+## 总结
+
+## 第11章 部署到 Android
+
+## 部署到 Android
+
+## 应用包 (`App Bundle`)
+
+### 生成 KeyStore
+
+## 为应用签名
+
+## 上传到 Google Play
+
+## 测试应用
+
+## 发布应用
+
+## 结论
+
+## 索引
 
 ## 2 掌握 React Native
 
 React Native 让移动开发在今天如此受欢迎的一些关键特性包括：
 
 - **跨平台支持**：为了改进移动应用程序，你不需要一个专门负责 iOS 和 Android 应用的专家团队。热于构建应用程序的 JavaScript 工程师可以使用 React Native 构建原生应用，而无需为 Android 学习 Kotlin 或 Java，为 iOS 应用学习 Swift 或 Objective-C。你还可以编写一份通用代码，React Native 会负责在 iOS 和 Android 上将其显示出来。
-- **React Native 组件**：React Native 提供了如 View、Text 和 Image 等原生组件，这些组件可以转换为原生的 iOS 或 Android UI。
+
+- **React Native 组件**：React Native 提供了如 `View`、`Text` 和 `Image` 等原生组件，这些组件可以转换为原生的 iOS 或 Android UI。
 
 以下是一个使用原生组件显示文本“Hello World”的简单示例：
 
@@ -713,7 +856,7 @@ React Native 让移动开发在今天如此受欢迎的一些关键特性包括�
 
 ```javascript
 import React from 'react';
-import { Text, View} from 'react-native';
+import { Text, View } from 'react-native';
 
 const App = () => {
   return (
@@ -728,7 +871,7 @@ export default App;
 
 ### JSX
 
-由于 React JS 属于 Web 世界，而 React Native 是为移动应用世界而设计的。React Native 使用 JSX，即用 XML 编码来替代 HTML 和 CSS。JSX 的优点如下：
+由于 React JS 属于 Web 世界，而 React Native 是为移动应用世界而设计的。React Native 使用 `JSX`，即用 XML 编码来替代 HTML 和 CSS。`JSX` 的优点如下：
 
 - 它运行更快，因为它在编译 JavaScript 代码时进行了改进。
 - 它也是安全的，大多数错误在集成期间就能被捕获到。
@@ -748,47 +891,51 @@ Facebook 社区非常活跃，并定期通过跨平台的新更新来更新项�
 
 我们一直在寻找更短的升级周期、更快的反馈时间和更好的应用性能。有很多交互式移动框架，例如 NativeScript、React Native、Ionic、Xamarin、PhoneGap 等。React Native 是 Facebook 开发的一个框架，用于用通用语言 JavaScript 为 iOS 和 Android 创建传统风格的应用。最初，Facebook 开发 React Native 仅支持 iOS。然而，随着其对 Android 操作系统的最新支持，该库现在能够为两个平台提供移动 UI。
 
-*先决条件*
+#### 先决条件
 
-- *HTML*、*CSS* 和 *JS* 的基础知识。
-- *ReactJS* 的基础知识。
-- 系统中应该安装了 NodeJs。
+- `HTML`、`CSS` 和 `JS` 的基础知识。
+- `ReactJS` 的基础知识。
+- 系统中应该安装了 `NodeJs`。
 
-使用 React Native 进行构建效果非常好且非常令人上瘾，但入门可能会很困难。React Native 使用 Node.js（一个 JavaScript 术语）来生成你的 JavaScript 代码。如果你还没有安装 Node.js，是时候安装它了！
+使用 React Native 进行构建效果非常好且非常令人上瘾，但入门可能会很困难。React Native 使用 `Node.js`（一个 JavaScript 运行时）来生成你的 JavaScript 代码。如果你还没有安装 `Node.js`，是时候安装它了！
 
-*安装*
+#### 安装
 
 这里我们使用 Expo CLI 版本，它在你的 React Native 应用中使用起来会简单得多。你应该按照下面的步骤逐一设置你的原生 React 位置。
 
 **第 1 步：** 打开你的终端并使用以下命令。
+
 `npm install -g expo-cli`
 
 **第 2 步：** 现在 Expo CLI 已在全球范围内安装，你可以使用下面的命令创建一个项目文件夹。
-`expo init “projectName"`
+
+`expo init "projectName"`
 
 **第 3 步：** 现在创建一个文件夹并使用下面给出的命令启动服务器：
-`cd “projectFolder"`
+
+`cd "projectFolder"`
+
 `npm start application_name`
 
-### REACT NATIVE 的历史
+### React Native 的历史
 
 Facebook 在 2013 年通过其内部黑客松项目开发了 React Native。随后，它在 2015 年 1 月作为 React.js 公布，并在 2015 年 3 月，Facebook 宣布 React Native 已在 GitHub 上开放可用。React Native 最初是为 iOS 应用设计的。然而，最近它也支持 Android 操作系统。
 
 2012 年，马克·扎克伯格评论道：“我们公司犯的最大错误是对比原生应用对 HTML 赌了更多。”在 Facebook 的移动版本中使用 HTML5 导致了应用不稳定并发生崩溃。2015 年，在经过几个月的开发后，Facebook 发布了第一个版本。React Native 已成为移动应用开发的领先框架之一。在官方 React 网站上，它已成为开发的领先框架之一。
 
-### 优化 REACT NATIVE 性能的各种步骤
+### 优化 React Native 性能的各种步骤
 
 在我们向你展示如何根据 React Native 相关功能解决问题之前，你需要充分理解此库的功能取决于一个高标准的结构。导航控制、动画和标签页数量的增加会减少应用程序中速度的使用。此外，在应用的开发过程中，版本经常被修改，并可能成为性能的瓶颈。
 
-React Native 通过桥（bridge）连接到原生端。React Native 的架构可以分为两类，即 React Native 使用 Java、Swift 或 Objective-C 开发，以及原生使用 JavaScript 创建。因此，我们可以关注这些重要参数来提高性能。
+React Native 通过桥接 (`Bridge`) 连接到原生端。React Native 的架构可以分为两类，即 React Native 使用 Java、Swift 或 Objective-C 开发，以及原生使用 JavaScript 创建。因此，我们可以关注这些重要参数来提高性能。
 
 ### 减少系统大小
 
 JavaScript 框架应用依赖原生组件和第三方库。组件的增加会增加应用大小。
 
-- 所以，如果你必须减小应用大小，你应该使用 ProGuard 并根据设备属性列表升级应用。
+- 所以，如果你必须减小应用大小，你应该使用 `ProGuard` 并根据设备属性列表升级应用。
 - 此外，请关注照片功能和图像。
-- 你还可以采取另一个步骤来减小尺寸，例如将原生部分转换为传统部分，减少 JavaScript 集成时使用的桥的大小。
+- 你还可以采取另一个步骤来减小尺寸，例如将原生部分转换为传统部分，减少 JavaScript 集成时使用的桥接大小。
 - 你也可以通过开源库来检查它们的稳定性。
 - 不要使用主线程传输依赖重型消息的部分。
 
@@ -798,36 +945,28 @@ JavaScript 框架应用依赖原生组件和第三方库。组件的增加会增
 
 - 第一种是使用更小的图像。
 - 第二，与最常用的 JPG 或 JPEG 格式相比，你必须选择 PNG 文件格式来上传图像。
-
-
-
-
-React Native 入门 - **7**
-
-- 然而，将你的图片版本转换为 WebP 格式可能是最佳选择。
-- 这是因为 Web 格式提供了多项优势，例如将下载速度提高高达 28%，并将 iOS 和 Android 的二进制文件大小缩小了 25%。此外，它还让 Code Push 减少了 66%，并让开发者的过渡更加平畅。
+- 然而，将你的图片版本转换为 `WebP` 格式可能是最佳选择。
+- 这是因为 `WebP` 格式提供了多项优势，例如将下载速度提高高达 28%，并将 iOS 和 Android 的二进制文件大小缩小了 25%。此外，它还让 `Code Push` 减少了 66%，并让开发者的过渡更加平畅。
 
 ### 图片缓存
 
-如果你计划提高 React Native 应用的性能，图片缓存被认为是至关的一步。它可以更快地加载照片。然而，React Native 仅支持在 iOS 仓库中存储图片。对于 Android 操作系统，你可以借助 npm 图片存储库的帮助，但它们并不能提供最佳性能。
+如果你计划提高 React Native 应用的性能，图片缓存被认为是至关重要的一步。它可以更快地加载照片。然而，React Native 仅支持在 iOS 仓库中存储图片。对于 Android 操作系统，你可以借助 npm 图片存储库的帮助，但它们并不能提供最佳性能。
 
-否则，你可能会遇到其他一些问题，例如当应用页面更新时，由于无法导入之前上传的图片导致库失败。这被称为缓存未命中（cache miss）。另一个可能影响操作效率的问题是当缓存逻辑运行在应用的 JS 端时。
+否则，你可能会遇到其他一些问题，例如当应用页面更新时，由于无法导入之前上传的图片导致库失败。这被称为缓存未命中 (`cache miss`)。另一个可能影响操作效率的问题是当缓存逻辑运行在应用的 JS 端时。
 
 ### 提高应用发布时间
 
-缩短 React Native 应用的发布应该是开发者的主要目标之一。然而，这涉及任何任务，因为你需要评估每个组件以提高库的性能。因此，如果你在这里寻找想要的结果，你应该关注 `Object.Finalize` 元素，它被认为是降低应用性能的主要障碍。因此，即使使用了细微的结论，在有足够的内存空间后，你仍然必须处理与内存相关的问题或错误。
+缩短 React Native 应用的发布应该是开发者的主要目标之一。然而，这涉及复杂任务，因为你需要评估每个组件以提高库的性能。因此，如果你在这里寻找想要的结果，你应该关注 `Object.finalize` 元素（原文为 `Object.Finalize`，JS 中通常为小写），它被认为是降低应用性能的主要障碍。因此，即使使用了细微的优化，在有足够的内存空间后，你仍然必须处理与内存相关的问题或错误。
 
-毕业生成为障碍的主要原因是它们运行在单线程序列中。因此，如果有几个毕业生需要运行，你可以想象一下在整个过程中它们会耗费多少时间。
+`finalize` 方法成为障碍的主要原因是它们运行在单线程序列中。因此，如果有几个 `finalize` 需要运行，你可以想象一下在整个过程中它们会耗费多少时间。
 
-### JSON 数据升级
+### JSON 数据优化
 
 应用程序搜索服务收到的货物或远程控制的 URL，其目的是发送请求从服务器下载数据。从私有或公共 API 获取的数据通常通过 JSON 方法访问，并嵌入嵌套的集成组件中。
 
-精通 React Native - **8**
+性能通常下降是因为编辑器保留了相同的数据以获得本地离线访问，而 JavaScript 正在逐渐渲染数据。因此，在渲染之前，将原始 JSON 数据转换为简单项目可能是最佳选择。
 
-性能通常下降是因为编辑器保留了相同的数据以获得本地离线访问，而 JavaScript 正在逐渐渲染数据。因此，在捐赠之前，将原始 JSON 数据转换为简单项目可能是最佳选择。
-
-### 如需，则不要提供
+### 按需渲染
 
 强烈建议不要将不同的生命周期与资源结合。这是因为，最初，决定是否可以升级组件是非常重要的，并确保不要用不必要的工作过载组件，这可以降低 JavaScript 线程的 FPS。
 
@@ -835,24 +974,22 @@ React Native 入门 - **7**
 
 人们一直说，内存泄漏已成为 Android 应用的一个主要问题，因为后台运行着一些不希望的进程。
 
-然而，你可以通过滚动不同的列表来修复这个问题，包括 `Virtual List`、`Section List` 和 `Flat List` 等。你不需要使用 `List view`。滚动还有其他优点以及滚动的流畅性。
+然而，你可以通过使用不同的列表来修复这个问题，包括 `VirtualList`、`SectionList` 和 `FlatList` 等。你不需要使用 `ListView`。滚动还有其他优点以及滚动的流畅性。
 
 ### React Native 中的动画
 
-React Native 提供了一个简单的章节来创建动画，并且始终看起来整洁。这可以通过动画库的帮助实现，允许 React Native 工程师授权原生驱动器（native driver）。动画在启动之前发送到传统端。
+React Native 提供了一个简单的 API 来创建动画，并且始终看起来整洁。这可以通过 `Animated` 库的帮助实现，允许 React Native 工程师授权原生驱动器 (`native driver`)。动画在启动之前发送到原生端。
 
-动画也有助于主阻塞 JavaScript 序列的独立使用，因为它提供了无缝动画。以及一些独立的掉落。你可以使用原生驱动器来配置动画。
+动画也有助于主线程阻塞 JavaScript 序列的独立使用，因为它提供了无缝动画。你可以使用 `useNativeDriver` 来配置动画。
 
-### 导航开发
+### 导航优化
 
-导航是应用的骨干；你应该更多地关注改进导航以及在 JavaScript 和原生对象之间带来更好的功能。因此，你可以使用应用中的四个主要路由组件。这些包括 `Navigator`、`iOS Navigator`、`Navigation Experiment` 和 `React Navigation`。
+导航是应用的骨干；你应该更多地关注改进导航以及在 JavaScript 和原生对象之间带来更好的功能。因此，你可以使用应用中的四个主要路由组件。这些包括 `Navigator`、`iOS Navigator`、`NavigationExperimental` 和 `React Navigation`。
 
 - `Navigator` 很少用于原型设计和小型应用程序，不提供相同的原生功能。
-- `IOS Navigator` 广泛用于 iOS 应用。
-- `Navigation experiment` 用于开发基于 GitHub 的待定项目，一些应用也类似地使用它。
+- `iOS Navigator` 广泛用于 iOS 应用。
+- `NavigationExperimental` 用于开发基于 GitHub 的待定项目，一些应用也类似地使用它。
 - 最后，`React Navigation` 提供了流畅无缝的体验，被许多应用使用。
-
- React Native 入门 - **9**
 
 ### 缺乏多线程
 
@@ -862,153 +999,152 @@ React Native 提供了一个简单的章节来创建动画，并且始终看起�
 
 当应用崩溃时，React Native 允许重新加载应用，这使得它能够完成任务。
 
- 屏幕布局
-
-
-
- Native 允许允许，，，，，，它解决了屏幕布局问题。
-
 ### 更好的地图
 
-React Native 的地图也有助于解决问题，由于它提供了无缝动画。你可以 Native驱动器来更新代码。
+React Native 的地图也有助于解决问题，由于它提供了无缝动画。你可以使用 `native driver` 来更新代码。
 
 ### React Native 的优势
 
-React Native 的优势是多且且化的，并确保开发者体验。
+React Native 的优势是多种多样的，并确保开发者体验。
 
-### React Native 的处处
-
-React Native 的 的处有助于构建应用。其中。 如下：
+### React Native 的优势有助于构建应用。其中如下：
 
 1. **原生平台**：提供 Everywhere，在 Android 和 iOS 平台上都能工作。
-2. **JavaScript**：JavaScript 信息用于构建应用。
+2. **JavaScript**：JavaScript 用于构建应用。
 3. **社区**：React Native 社区帮助我们获得所需的一切。
 4. **热更新**：修改代码将立即显示在屏幕上。
 5. **升级时间**：我们需要编写特定的代码，如果我们想要。
-6. **原生组件**：React Native 确保开发者是，因为它是不确定的。
-7. **存在性**：由于 Facebook 开发了这个框架，它的存在性是保留了代码。
-
+6. **原生组件**：React Native 确保开发者是，因为它是不确定的。（原文语义不通，保留原意）
+7. **存在性**：由于 Facebook 开发了这个框架，它的存在性是保留了代码。（原文语义不通，保留原意）
 
 ### 优势
 
 #### 主要优势
 
-React Native 的优势是多且化的，并确保开发者享受独特的体验。
+React Native 的优势是多种多样的，并确保开发者享受独特的体验。
 
 #### 社区支持
 
 作为一个开源框架，React Native 允许整个开发者社区访问文档并提供反馈。
 
-#### 正确的性能
+#### 良好的性能
 
-平台的性能在于使用传统模块进行控制。它与原生 Android 和 iOS 组件工作，并持续生成代码。你可能也接受其他选项，如 `WebView`，但记住，这可能会影响应用的性能。
+平台的性能在于使用原生模块进行控制。它与原生 Android 和 iOS 组件工作，并持续生成代码。你可能也接受其他选项，如 `WebView`，但记住，这可能会影响应用的性能。
 
 #### 可重用代码和高级组件
 
-这有助于减少项目时间和成本，是所有企业和应用开发者的福音。更好的情况是企业已经用 React 编写了请求，在这种情况下开发成本也会降低，因为大部分现有代码可以重用。
+这有助于减少项目时间和成本，是所有企业和应用开发者的福音。更好的情况是企业已经用 React 编写了应用，在这种情况下开发成本也会降低，因为大部分现有代码可以重用。
 
 开源库中的高级功能允许开发者自由访问代码。这些代码已经编写好，工程师将准备使用它们。
-
-React Native 入门 - **11**
 
 ### 实时和热加载的优势
 
 实时加载可以包含并读取代码修改的更改。它在模板中提供了一个新文件，然后自动从头读取应用。
 
-热加载基于热模块替换（HMR），是在初始重加载之后引入的。在保留功能和函数顺序的同时，热加载还有一个额外的优势——在保存更改到文件后，HMR 架构师将继续在所需位置保留更新的文件，而应用程序继续在后台运行。
-
-
-
-
-## 12 深度掌握 React Native
+热加载基于热模块替换 (`HMR`)，是在初始重加载之后引入的。在保留功能和函数顺序的同时，热加载还有一个额外的优势——在保存更改到文件后，`HMR` 架构师将继续在所需位置保留更新的文件，而应用程序继续在后台运行。
 
 ### 高效益解决方案
+
 React Native 提供的可复用收益有助于降低在大规模创建应用的成本。通过该框架，代码无需为 iOS 和 Android 编写不同的版本，甚至可以使用现有的语言进行编码。这使得所有应用开发业务都需要一个小型的本土工程师团队，并能在 React Native 社区的帮助下缩短项目完成时间。
 
 ### 简化的 UI
+
 使用 React Native 技术背后的动力是它确保了简单且无缝的用户交互。该 JavaScript 库更像是一个开源框架而非标准框架。在这一技术的帮助下，开发者可以实现创建应用程序的正确顺序。通常，React Native 构建的应用程序具有响应式 UI、无缝的 UX（体验），并且下载时间更短。
 
 ### 外部插件支持
+
 React Native 的主结构没有特定的组件。为了解决这一缺陷，它确保开发者可以访问第三方插件，例如 JavaScript 模块和原生模块。
 
 ### 模块化架构
-一种流行的软件设计策略，模块化编辑确保将程序功能划分为自由且灵活的块，称为模块。它通过帮助开发者在需要时运行彼此的项目，使应用构建过程变得更加容易。它还改进了生成和接收更新所需的团队协作。React Native 工程师可以从其自然且准确的模块化设计中受益，因为它具有快速改进应用的能力。在处理手机和 Web API 时，模块可以被复用。
+
+一种流行的软件设计策略，模块化编程确保将程序功能划分为自由且灵活的块，称为模块。它通过帮助开发者在需要时运行彼此的项目，使应用构建过程变得更加容易。它还改进了生成和接收更新所需的团队协作。React Native 工程师可以从其自然且准确的模块化设计中受益，因为它具有快速改进应用的能力。在处理手机和 Web API 时，模块可以被复用。
 
 ### 不断增长的稳定性和可靠性
+
 React Native 有助于简化数据绑定，这种方式可以保护父数据并不允许子部分进行修改，从而使应用程序更强大、更可靠。要对某项进行任何更改，工程师需要在系统地应用所有更新之前先更改其状态。此功能将确保只有经过批准的组件才能被更新。
 
 ### 库的访问与即用解决方案
+
 React Native 自带了一系列免费提供的预制解决方案和库，工程师可以访问它们。它的解决方案不仅有助于简化应用构建，还能帮助开发者专注于创建无错误的代码。
 
 现在你已经了解了使用 React Native 的益处，让我们了解更多关于它的缺点。
 
 ## 原生 React Native 开发的缺点
-以下是开发者在选择创建自己的操作系统之前应该注意的 React Native 误用全面列表。
+
+以下是开发者在选择创建自己的操作系统之前应该注意的 React Native 缺点全面列表。
 
 ### 不成熟
-与其较老的 Android 和 iOS 对应相比，React Native 是一门全新的编程语言。React Native 的生命周期尚未被完全探索，这就是为什么它们有时会对应用活动产生负面或不可预测的影响。这里是一些类似的例子：
+
+与其较老的 Android 和 iOS 对应相比，React Native 是一门全新的编程语言（实为框架）。React Native 的生命周期尚未被完全探索，这就是为什么它们有时会对应用活动产生负面或不可预测的影响。这里是一些类似的例子：
 
 1. React Native 框架正在快速演进，每周都会发布新的和更新的更新。因此，应用创建者需要定期更新他们的应用，因为每次更新都引入了许多变化。几个月不更新应用将导致其失效。像 Airbnb 这样的流行应用过去曾为此挑战挣扎。
 2. 工程师还面临着为不符合 React Native 的部分编写额外的原生代码，以及处理需要编写的现有代码的问题。
 3. 有时，React Native 的某些部分不如它们传统的对等物，例如在大量的列表中。与其他提供更好布局的成熟平台相关的组件相比，使用 React Native 使用详细且复杂的列表可能极其困难。
 
 ### 学习难度大
-学习 React Native 可能是极具挑战性的，特别是对于新的应用开发者来说，他们可能会发现使用 JavaScript 语法扩展中的 JSX 创建应用很困难。除了 React Native 之外，应用开发者还必须了解应用的原生代码。React Native 拥有带有原生桥接的库，用于地图、视频等功能，但它需要经验丰富的工程师来处理这三个方面的事务。没有多个平台经验的开发者可能会发现 iOS 和 Android 平台中的某些不一致极其困难。学习曲线非常陡峭，可能会延迟增长。
+
+学习 React Native 可能是极具挑战性的，特别是对于新的应用开发者来说，他们可能会发现使用 JavaScript 语法扩展中的 `JSX` 创建应用很困难。除了 React Native 之外，应用开发者还必须了解应用的原生代码。React Native 拥有带有原生桥接的库，用于地图、视频等功能，但它需要经验丰富的工程师来处理这三个方面的事务。没有多个平台经验的开发者可能会发现 iOS 和 Android 平台中的某些不一致极其困难。学习曲线非常陡峭，可能会延迟增长。
 
 ### 安全性低
+
 React Native 是一个 JavaScript 库和开源框架，因为开发者经常面临保持应用安全的挑战。JavaScript 非常灵活，这导致某些开发者面临着较低的安全标准。如果你正在开发需要额外安全层的应用（例如银行或金融应用），你需要格外小心。否则，恶意代码捕获可能会对应用程序的安全功能造成严重威胁。这就是为什么工程师有时会避免在 React Native 中构建金融应用。
 
 ### 复杂的 UI
-根据许多代码显示，React Native 对于需要复杂触摸、屏幕修改、动画或需要更多交互的应用 true正确选择。除非 React Native 拥有触摸响应系统，否则代码可能继续在具有复杂触摸的屏幕上挣扎，因为 iOS 和 Android 的触摸子系统与其他不同，而使用紧凑的 API 可能是一个挑战。
+
+根据许多代码显示，React Native 对于需要复杂触摸、屏幕修改、动画或需要更多交互的应用不是正确选择。除非 React Native 拥有触摸响应系统，否则代码可能继续在具有复杂触摸的屏幕上挣扎，因为 iOS 和 Android 的触摸子系统与其他不同，而使用紧凑的 API 可能是一个挑战。
 
 ### 初始化时间长
+
 他们在使用 React Native 编码时面临的另一个问题是，在首次专业交付之前，需要很长时间才能开始工作。这个问题即使在高科技设备上也存在，可能是因为 JavaScript 线程通常启动时间过长。
 
 ### 内存管理
-React Native 不适用于计算机应用程序，因为它完全基于 JavaScript。这降低了这些应用程序的性能和速度，而且浮点计数也是以低效的方式处理，使得内存管理变得困难。
+
+React Native 不适用于计算机应用程序，因为它完全基于 JavaScript。这降低了这些应用程序的性能和速度，而且浮点计算也是以低效的方式处理，使得内存管理变得困难。
 
 ### 结论
+
 在本章中，我们学习了什么是 React Native，以及它的优缺点。让我们进入下一章学习更多。
 
-## 第 2 章与 React Native 工作
+## 第2章 与 React Native 工作
+
 ### 本章内容
+
 - React Native 如何工作
 - 渲染生命周期
 - 在 React Native 中创建组件
 
 ### React Native 如何工作？
+
 1. **UI 线程**（也称为主线程）：用于 Android 的原生渲染。
 2. **JS 线程**：JavaScript 线程是使用 JavaScript 代码、进行 API 调用和处理触摸事件的地方。原生更新会在事件循环结束时编译并发布。
-3. **集成更新**：为了保持良好的性能，JS 序列必须在截止之前向 UI 序列发送集成更新。例如，iOS 每秒显示 60 帧，这意味着每 16.67 毫秒有一个新帧。
-4. **原生视图**：例外是完全在 UI 序列中发生的原生视图，例如滚动滚动完全在 UI 序列运行，因此不会被慢 JS 序列阻塞。
-5. **原生模块线程**：有时应用程序需要访问平台 API，这是作为模块序列的一部分发生的。
-6. **渲染线程**：仅对于 Android (5.0)，传统的 React 系列用于生成真实的 OpenGL 命令来映射你的 UI。
+3. **集成更新**：为了保持良好的性能，JS 线程必须在截止之前向 UI 线程发送批量更新。例如，iOS 每秒显示 60 帧，这意味着每 16.67 毫秒有一个新帧。
+4. **原生视图**：例外是完全在 UI 线程中发生的原生视图，例如滚动视图完全在 UI 线程运行，因此不会被慢 JS 线程阻塞。
+5. **原生模块线程**：有时应用程序需要访问平台 API，这是作为模块线程的一部分发生的。
+6. **渲染线程**：仅对于 Android (5.0+)，React Native 用于生成真实的 OpenGL 命令来映射你的 UI。
 
 ### React Native 工作流程
-1. 在应用启动时，主线开始工作并加载 JS。
-2. 如果 JavaScript 代码成功上传，主线程将其发送到另一个 JS 线程，因为当 JS 执行重计算时，它会临时占用线路，UI 字符串不会受到任何影响。
-3. 当 React 开始交付时，协调器（Reconciler）开始“变化”，当它产生新的 DOM（结构）时，会将更改发送到另一个序列（影子线路）。
+
+1. 在应用启动时，主线程开始工作并加载 JS。
+2. 如果 JavaScript 代码成功上传，主线程将其发送到另一个 JS 线程，因为当 JS 执行重计算时，它会临时占用线路，UI 线程不会受到任何影响。
+3. 当 React 开始渲染时，协调器 (`Reconciler`) 开始“diff”，当它产生新的 DOM（结构）时，会将更改发送到另一个线程（影子线程）。
 
 ### React Native 架构
-React Native 的跨平台能力归功于其独特的属性。
 
+React Native 的跨平台能力归功于其独特的架构。
 
+### 使用 React Native
 
-
-
-## 使用 React Native - 17
-
-React Native 构建的一个核心特性是桥接（Bridge）。该应用程序使用 React 库为设备提供应用。简单来说，桥接将 JS 代码转换为原生部分，反之亦然。桥接将 JavaScript 转换为特定领域的对象。它接收 JS 调用，使用 API（Kotlin、Objective C、Java），允许原生应用程序渲染。该过程不会影响用户的自我感知，因为这些异步操作发生在主序列之外。
+React Native 构建的一个核心特性是桥接 (`Bridge`)。该应用程序使用 React 库为设备提供应用。简单来说，桥接将 JS 代码转换为原生部分，反之亦然。桥接将 JavaScript 转换为特定领域的对象。它接收 JS 调用，使用 API（Kotlin、Objective-C、Java），允许原生应用程序渲染。该过程不会影响用户的感知，因为这些异步操作发生在主线程之外。
 
 然而，如果你的应用程序使用了大量的线程和大量的数据，这种结构可能会导致延迟。
 
 ## 开发流程
 
-React Native 基于 React，并使用单一 JavaScript 代码库来在多个平台上复用代码。与 Ionic 以及许多其他平台开发框架不同，React Native 通过招募特定 API 的平台提供传统组件。例如，为了在 iOS 上提供 UI 组件，React Native 使用了 Objective C 或 Swift API。对于 Android 移动应用，它将使用 Java 或 Kotlin。事实上，开发者不需要了解 Objective C 或 Java 即可创建应用程序。
+React Native 基于 React，并使用单一 JavaScript 代码库来在多个平台上复用代码。与 Ionic 以及许多其他平台开发框架不同，React Native 通过调用特定 API 的平台提供原生组件。例如，为了在 iOS 上提供 UI 组件，React Native 使用了 Objective-C 或 Swift API。对于 Android 移动应用，它将使用 Java 或 Kotlin。事实上，开发者不需要了解 Objective-C 或 Java 即可创建应用程序。
 
-React Native 的开发过程在 JavaScript、TypeScript 和 JSX 中进行。工程师还可以使用关键组件（高达 100% 的代码）。
+React Native 的开发过程在 JavaScript、TypeScript 和 `JSX` 中进行。工程师还可以使用关键组件（高达 100% 的代码）。
 
-React Native 的另一个独特之处是它的组件创建指令。取代了 HTML 组件，如 `<div>`、`<span>`、`<a>`、`<p>` 等（React），RN 有某些组件来替代它们：此外，原生分组支持、热重载和大型库等功能使得开发过程对开发者来说更加简单高效。当应用程序准备就绪时，你可以将其连接到云或本地网站以提供存储容量。
+React Native 的另一个独特之处是它的组件创建指令。取代了 HTML 组件，如 `<div>`、`<span>`、`<a>`、`<p>` 等（React），RN 有某些组件来替代它们。此外，原生分组支持、热重载和大型库等功能使得开发过程对开发者来说更加简单高效。当应用程序准备就绪时，你可以将其连接到云或本地网站以提供存储容量。
 
 ### React Native 特性
 
@@ -1016,15 +1152,15 @@ React Native 的另一个独特之处是它的组件创建指令。取代了 HTM
 
 ### NPM 支持
 
-NPM（Node 包管理器）传播了开发原生 React 应用的过程。NPM 是预制库的仓库，工程师可以使用它们来与 React Native 框架协作。这将使开发过程快得多，允许 React Native 开发者从 NPM 库中下载模式。
+`NPM`（Node 包管理器）简化了开发原生 React 应用的过程。`NPM` 是预制库的仓库，工程师可以使用它们来与 React Native 框架协作。这将使开发过程快得多，允许 React Native 开发者从 `NPM` 库中下载模块。
 
 ### 代码复用
 
-这是任何平台开发框架的关键特性。但在 React Native 的情况下，你可以将绝量代码应用到所有不同的平台。这将节省大量时间并降低成本。
+这是任何跨平台开发框架的关键特性。但在 React Native 的情况下，你可以将大量代码应用到所有不同的平台。这将节省大量时间并降低成本。
 
 ### 灵活的语言
 
-语言规划及其灵活性对于框架的运行和成功起着重要作用。当主要语言成为最常见的跨平台开发框架时，学习过程变得更快、更简单。这意味着，如果你想快速创建一个新应用，聘佣经验 React Native 工程师是有意义的。或者，React Native 使用 JavaScript 作为基础并原生支持 TypeScript。这些特性使得 React Native 平台被大量工程师所接触。根据最近的开发者研究，JS 是最流行的语言，大约有 70% 的工程师在使用它。
+语言规划及其灵活性对于框架的运行和成功起着重要作用。当主要语言成为最常见的跨平台开发框架时，学习过程变得更快、更简单。这意味着，如果你想快速创建一个新应用，聘佣经验 React Native 工程师是有意义的。或者，React Native 使用 JavaScript 作为基础并原生支持 `TypeScript`。这些特性使得 React Native 平台被大量工程师所接触。根据最近的开发者研究，JS 是最流行的语言，大约有 70% 的工程师在使用它。
 
 ### 强大的社区
 
@@ -1032,17 +1168,15 @@ React Native 框架在 2015 年发布后很快在全世界工程师中流行。�
 
 ### 支持原生库
 
-另一个让 React Native 与其他平台相比的特性是对原生分组库的支持。与原生库的集成为开发者提供了开箱的解决方案并增加了开发机会。
+另一个让 React Native 与其他平台相比的特性是对原生库的支持。与原生库的集成为开发者提供了开箱即用的解决方案并增加了开发机会。
 
 ### 在移动环境中使用高性能
 
-React Native 从存在的第一天起就在与 iOS 和 Android 等移动平台工作。难怪，它在移动应用程序开发方面具有卓越的性能。React Native 开发者在移动空间使用的代码比其他平台都多，使其成为目前移动应用快的平台。
-
-## 使用 React Native - 19
+React Native 从存在的第一天起就在与 iOS 和 Android 等移动平台工作。难怪，它在移动应用程序开发方面具有卓越的性能。React Native 开发者在移动空间使用的代码比其他平台都多，使其成为目前移动应用最快的平台。
 
 ### HMR（热模块替换）
 
-HMR（热模块替换）允许 React Native 在系统运行时修改、添加和修改模块。结果是，此功能以以下方式告知应用程序开发过程：
+`HMR`（热模块替换）允许 React Native 在系统运行时修改、添加和删除模块。结果是，此功能以以下方式告知应用程序开发过程：
 
 - 通过仅更新修改的代码来节省时间
 - 保持应用程序状态（在重载期间）
@@ -1058,119 +1192,115 @@ React Native 的实时功能让你在更改屏幕上的内容时使其随之改�
 
 Facebook 团队连同开发者社区的所有利益相关者继续开发 React Native 环境。他们可以添加新功能，扩展 React Native 功能，并扩大其多平台能力。毫无疑问，在高性能和背后专业工程师社区的支持下，React Native 将长留并继续出现。目前，React Native 框架以以下方式呈现：
 
-### 桥接模型的发展
+#### 桥接模型的发展
 
-目前，React Native 社区正在复兴 Fabric 项目，这应该最终改变它的现状。它将允许开发者通过同步每个系列来请求 JavaScript。此特性将减少大型序列的加载时间，而不会阻塞响应。
+目前，React Native 社区正在推进 Fabric 项目，这应该最终改变它的架构。它将允许开发者通过同步每个线程来请求 JavaScript。此特性将减少大型线程的加载时间，而不会阻塞响应。
 
-### 平台无关性的进展
+#### 平台无关性的进展
 
-平台无关性是一种旨在创建跨平台应用的特定应用开发哲学。回溯来说，一个好的应用是你编写一次并在跨平台上使用它的应用，而无需额外的代码欺骗。虽然这并不容易，但 React Native 社区正努力使框架能够创建完全不同的应用程序。
+平台无关性是一种旨在创建跨平台应用的特定应用开发哲学。回溯来说，一个好的应用是你编写一次并在跨平台上使用它的应用，而无需额外的代码。虽然这并不容易，但 React Native 社区正努力使框架能够创建完全独立的应用程序。
 
-### 桥接的易用性
+#### 桥接的易用性
 
 React Native 社区开发的下一步是让桥接变得更容易。这将改进原生与 JavaScript 之间的直接交互，并允许创建新的调试工具。
 
-### 异步技能扩展
+#### 异步技能扩展
 
-异步的开发旨在提高 React Native 框架的和谐交付。这反过来将促进合规且一致的数据管理。
+异步的开发旨在提高 React Native 框架的协调交付。这反过来将促进合规且一致的数据管理。
 
-
-
-
-
-使用 React Native ◾ **21**
+### React Native 生命周期
 
 ![](img/5b11183a7ad7d0e336e0943bf7238c39_45_0.png)
 
-**React Native 生命周期周期。**
+**React Native 生命周期。**
 
-1. **挂载 (Mounting)**：在本节中，部分模型创建并安装到 DOM 中。
-2. **更新 (Updating)**：在此阶段，组件被认为已经诞生，并随着最新的更新开始增长。
-3. **卸载 (Unmounting)**：在此阶段，react 的部分将从实际 DOM 中移除。
-4. **错误处理 (Error Handling)**：在分配部分时发生任何错误时都会调用此方法。
+1. **挂载 (`Mounting`)**：在本节中，组件模型创建并安装到 DOM 中。
+2. **更新 (`Updating`)**：在此阶段，组件被认为已经诞生，并随着最新的更新开始增长。
+3. **卸载 (`Unmounting`)**：在此阶段，React 的组件将从实际 DOM 中移除。
+4. **错误处理 (`Error Handling`)**：在渲染组件时发生任何错误时都会调用此方法。
 
 现在让我们讨论定义这些类别的不同方式。
 
-### 挂载阶段 (Mounting Phase)
+### 挂载阶段 (`Mounting Phase`)
 
 以下是将组件模型创建并安装到 DOM 中的某些方法。
 
-- Constructor ()
-- static getDerivedStateFromProps()
-- render ()
-- ComponentDidMount()
+- `Constructor()`
+- `static getDerivedStateFromProps()`
+- `render()`
+- `ComponentDidMount()`
 
-### *Constructor()*
+#### `Constructor()`
 
-它是 React 传统生命周期中第一个被调用的方法。用于以原始形状启动部分。在构造函数中不执行 UI 渲染。它接收 props 作为参数，我们可以以此方式设置状态。
+它是 React 组件生命周期中第一个被调用的方法。用于以原始形状启动组件。在构造函数中不执行 UI 渲染。它接收 `props` 作为参数，我们可以以此方式设置状态。
 
-### *static getDerivedStateFromProps()*
+#### `static getDerivedStateFromProps()`
 
-它在 render 方法之前调用，无论是在首次启动还是下次更新中。它的目的是为了替换 componentWillReceiveProps 方法。我们无法在此方法中更新状态。如果我们想检查状态，必须返回，另一个对立对象也是空的。
+它在 `render` 方法之前调用，无论是在首次启动还是下次更新中。它的目的是为了替换 `componentWillReceiveProps` 方法。我们无法在此方法中直接更新状态（需返回新状态对象）。如果我们想检查状态，必须返回新的状态对象，否则返回 `null`。
 
-### *render()*
+#### `render()`
 
-它是 React 组件中唯一要求的方法。说明在屏幕上应该显示什么。render () 方法是一个纯函数，这意味着它不会改变状态。它在每次被请求时都会返回相同的结果，并且不直接链接到浏览器。
+它是 React 组件中唯一要求的方法。说明在屏幕上应该显示什么。`render()` 方法是一个纯函数，这意味着它不会改变状态。它在每次被请求时都会返回相同的结果，并且不直接链接到浏览器。
 
-### *ComponentDidMount()*
+#### `ComponentDidMount()`
 
-当 React 的原生部分完成供应时会调用此方法。它是从远程存储上传数据并结果更新状态的绝佳位置。这将更新我们手机屏幕的 UI。每当我们对状态进行任何更改并提供 () 所谓的方法时，这些更改将反映在屏幕上。
+当 React 的原生部分完成挂载时会调用此方法。它是从远程存储获取数据并更新状态的绝佳位置。这将更新我们手机屏幕的 UI。每当我们对状态进行任何更改并调用 `setState()` 方法时，这些更改将反映在屏幕上。
 
-### 更新阶段 (Updating Phase)
+### 更新阶段 (`Updating Phase`)
 
-每当状态或 props 发生任何变化时，部分审查过程就会开始。以下是用于更新 React 组件部分的方法。
+每当状态或 `props` 发生任何变化时，组件更新过程就会开始。以下是用于更新 React 组件的方法。
 
-### *Static getDerivedStateFromProps()*
+#### `static getDerivedStateFromProps()`
 
-正如我们上面讨论，当状态或 props 发生任何变化时，都会使用此方法。
+正如我们上面讨论，当状态或 `props` 发生任何变化时，都会使用此方法。
 
-### *shouldComponentUpdate()*
+#### `shouldComponentUpdate()`
 
-它在采用新构建或电路时提交之前使用。此方法的默认值是近似的。此方法在首次渲染或使用 forceUpdate 时不被使用。如果我们希望停止重写以更改状态或 props，我们可以通过 shouldComponentUpdate () 的方式返回 false。
+它在采用新渲染或更新时提交之前使用。此方法的默认值是 `true`。此方法在首次渲染或使用 `forceUpdate` 时不被调用。如果我们希望停止重新渲染以更改状态或 `props`，我们可以通过 `shouldComponentUpdate()` 的方式返回 `false`。
 
-### *render()*
+#### `render()`
 
-每当状态或 props 发生任何变化时，都会再次使用 render 方法。
+每当状态或 `props` 发生任何变化时，都会再次调用 `render` 方法。
 
-### *getSnapshotBeforeUpdate()*
+#### `getSnapshotBeforeUpdate()`
 
-此方法在新发布的输出之前使用。允许我们的组件在被修改之前从 DOM 中检索某些信息。
+此方法在最新渲染输出提交到 DOM 之前调用。允许我们的组件在被修改之前从 DOM 中检索某些信息（如滚动位置）。
 
-### *componentDidUpdate()*
+#### `componentDidUpdate()`
 
-componentDidUpdate () 方法在部分重写完成后立即被使用。需要注意的是，它不会在首次渲染时调用。
+`componentDidUpdate()` 方法在组件更新完成后立即被调用。需要注意的是，它不会在首次渲染时调用。
 
-### 卸载阶段 (Unmounting Phase)
+### 卸载阶段 (`Unmounting Phase`)
 
-### *componentWillUnmount()*
+#### `componentWillUnmount()`
 
-当组件从 DOM 中移除时，使用 componentWillUnmount () 方法。我们可以通过这种方式执行清理任务，例如执行非法操作、取消正在进行的网络请求。
+当组件从 DOM 中移除时，调用 `componentWillUnmount()` 方法。我们可以通过这种方式执行清理任务，例如取消定时器、取消正在进行的网络请求。
 
-## 错误处理阶段 (Error Handling Phase)
+## 错误处理阶段 (`Error Handling Phase`)
 
-当在分配部分后发生任何错误时，将使用下面的方法进入响应错误响应阶段。
+当在渲染组件后发生任何错误时，将使用下面的方法进入错误处理阶段。
 
-- static getDerivedStateFromError()
-- componentDidCatch()
+- `static getDerivedStateFromError()`
+- `componentDidCatch()`
 
-### *getDerivedStateFromError()*
+#### `getDerivedStateFromError()`
 
-当传递过程中发生错误时使用它。它检测错误作为参数并返回用于更新状态的值。
+当渲染过程中发生错误时使用它。它接收错误作为参数并返回用于更新状态的值。
 
-### *componentDidCatch()*
+#### `componentDidCatch()`
 
-如果在谱系上发生任何错误，则请求此方法。它接收两个参数。
+如果在组件树上发生任何错误，则调用此方法。它接收两个参数。
 
 1. **error**: 抛出的错误。
 2. **info**: 一个包含关于哪个组件抛出错误的信息的对象。
 
-## 以传统的响应方式创建组件
+## 以传统的 React 方式创建组件
 
-React Native 拥有在应用开发中运行良好的特性和功能，但 Android 和 iOS 在设计语言上的工作不同。为了同时满足设计语言并让它们看起来都像传统的应用程序，自定义组件在应用开发中起着关键作用。
+React Native 拥有在应用开发中运行良好的特性和功能，但 Android 和 iOS 在设计语言上的工作不同。为了同时满足设计语言并让它们看起来都像原生的应用程序，自定义组件在应用开发中起着关键作用。
 
 让我们从 Android 和 iOS 平台的自定义文本字段开始，它们在设计语言上看起来相似。
 
-**第 1 步：**创建一个自定义部分并指定将自定义我们自定义部分的 props。
+**第 1 步：** 创建一个自定义组件并指定将自定义我们自定义组件的 `props`。
 
 ```javascript
 export default class CustomTextInput extends Component {
@@ -1187,7 +1317,7 @@ export default class CustomTextInput extends Component {
 }
 ```
 
-**第 2 步：** 然后让我们从 render() 方法开始
+**第 2 步：** 然后让我们从 `render()` 方法开始
 
 ```javascript
 import React, { Component } from 'react';
@@ -1236,18 +1366,12 @@ export default class CustomTextInput extends Component {
 }
 ```
 
-
-
-
-## 28 精通 React Native
-
 ### React Native – 函数组件
 
-这是一个简单的基于工作的组件示例，它仅返回“Hello, React Native”。
+这是一个简单的基于函数的组件示例，它仅返回“Hello, React Native”。
 
 ```javascript
 import React from 'react';
-
 import { Text } from 'react-native';
 
 const New = () => {
@@ -1259,15 +1383,15 @@ const New = () => {
 export default New;
 ```
 
-*描述*
+#### 描述
 
-在上面的代码中，我们定义了恢复文本功能的 `functionNew`。请记住，返回函数中的任何部分都作为响应提供。因此，无需在其内部使用 `render()` 方法。
+在上面的代码中，我们定义了返回文本功能的 `New` 函数。请记住，返回函数中的任何组件都作为 React 元素提供。因此，无需在其内部使用 `render()` 方法。
 
-## 宿平台 API
+## 访问平台 API
 
-当你创建移动应用程序时，你自然会想要利用某些平台 API。React Native 让你能够轻松访问手机摄像头、位置和持久存储等功能。这些平台 API 通过包含的模块提供给 React Native，为我们提供了易于用于这些任务的 JavaScript 连接。
+当你创建移动应用程序时，你自然会想要利用某些平台 API。React Native 让你能够轻松访问手机摄像头、位置和持久存储等功能。这些平台 API 通过包含的模块提供给 React Native，为我们提供了易于用于这些任务的 JavaScript 接口。
 
-React Native 并没有绑定默认平台的功能；某些 API 需要编写模块，或者可以使用 React Native 社区编写的模块。我们将在第 7 章中介绍这一过程。文档是测试 API 是否支持的最佳地方。本章涵盖了一些可用的 API。作为我们的示例，我们将从开始对天气系统进行一些更改。我们将为应用程序添加地理位置功能，使其能够检测用户的位置。我们还将为应用添加“内存”，以便它可以记住你之前搜索过的位置。最后，我们将使用相机卷将背景图像转换为用户的照片之一。
+React Native 并没有绑定所有默认平台的功能；某些 API 需要编写原生模块，或者可以使用 React Native 社区编写的模块。我们将在第 7 章中介绍这一过程。文档是测试 API 是否支持的最佳地方。本章涵盖了一些可用的 API。作为我们的示例，我们将从开始对天气应用进行一些更改。我们将为应用程序添加地理位置功能，使其能够检测用户的位置。我们还将为应用添加“内存”，以便它可以记住你之前搜索过的位置。最后，我们将使用相机胶卷将背景图像转换为用户的照片之一。
 
 当你创建一个跨平台应用程序时，你希望尽可能地复用代码。可能会出现代码不同更合理的情况，例如，你可能想为 Android 和 iOS 使用不同的视觉组件。
 
@@ -1276,11 +1400,11 @@ React Native 提供了两种方法来组织代码并按平台分离：
 1. 使用 `Platform` 模块。
 2. 使用特定平台的文件扩展名。
 
-某些组件可能具有仅在一个位置运行的属性。所有这些属性都通过平台标注，并在网站上的它们旁边有一个小徽章。
+某些组件可能具有仅在一个平台运行的属性。所有这些属性都通过平台标注，并在网站上的它们旁边有一个小徽章。
 
-### Platform 模块
+### `Platform` 模块
 
-React Native 提供了一个用于检测应用程序运行平台的平台。你可以使用发现逻辑来使用特定字段的代码。当只有小部分面向特定字段时，使用此选项。
+React Native 提供了一个用于检测应用程序运行平台的模块。你可以使用判断逻辑来使用特定平台的代码。当只有小部分代码面向特定平台时，使用此选项。
 
 ```javascript
 import { Platform, StyleSheet } from 'react-native';
@@ -1290,14 +1414,14 @@ const styles = StyleSheet.create({
 });
 ```
 
-`Platform.OS` 在运行于 iOS 时有效，在运行于 Android 时有效。还有一个 `Platform.select` ('android | traditional | default')，它会为你当前正在工作的字段返回最合适的值。这意味着当你使用手机时，ios 和 android 键将选择你的偏好。如果未指定，将使用 native 键，然后是 default 键。
+`Platform.OS` 在运行于 iOS 时为 `'ios'`，在运行于 Android 时为 `'android'`。还有一个 `Platform.select({ ios, android, default })`，它会为你当前正在工作的平台返回最合适的值。这意味着当你使用手机时，`ios` 和 `android` 键将选择你的偏好。如果未指定，将使用 `native` 键，然后是 `default` 键。
 
 ```javascript
 import { Platform, StyleSheet } from 'react-native';
 
-const sty = StyleSheet.create({
+const styles = StyleSheet.create({
   container: {
-    flex: 2,
+    flex: 1,
     ...Platform.select({
       ios: {
         backgroundColor: 'yellow'
@@ -1314,9 +1438,9 @@ const sty = StyleSheet.create({
 });
 ```
 
-这将导致容器在所有平台上都是灵活的：1，iOS 上为红色背景，Android 上为绿色背景，在某些平台上为蓝色背景。
+这将导致容器在所有平台上 `flex: 1`，iOS 上为黄色背景，Android 上为红色背景，在其他平台上为蓝色背景。
 
-由于它接受有限的内容，你也可以用它来替换特定字段的组件，如下所示：
+由于它接受对象内容，你也可以用它来替换特定平台的组件，如下所示：
 
 ```javascript
 const Component = Platform.select({
@@ -1348,45 +1472,51 @@ if (Platform.Version === 25) {
 
 ### 获取 iOS 版本
 
-对于 iOS，Version 是 `[UIDevice systemVersion]` 的结果，这是一个带有当前操作系统版本的字符串。
+对于 iOS，`Version` 是 `[UIDevice systemVersion]` 的结果，这是一个带有当前操作系统版本的字符串。
 
 ```javascript
 import { Platform } from 'react-native';
 
+// Android 版本检测示例
 if (Platform.Version === 25) {
   console.log('Running on Nougat!');
 }
 
-// （用于 iOS 版本的额外逻辑）
+// iOS 版本检测示例 (Version 为字符串)
+if (Platform.Version === '14.0') {
+  console.log('Running on iOS 14!');
+}
 ```
 
+## 构建你的第一个应用程序
 
+### 方法 1：从微软商店安装 Windows Terminal
 
-构建你的第一个应用程序 ◾ **35**
-
-## 方法 1：从微软商店安装 Windows Terminal
-
-在你的 Windows 电脑上，点击“开始”并打开微软商店（MS）。在微软商店中，点击“搜索”选项并输入 Windows Terminal。选择 Windows Terminal 应用并点击“获取”。
+在你的 Windows 电脑上，点击“开始”并打开微软商店。在微软商店中，点击“搜索”选项并输入 Windows Terminal。选择 Windows Terminal 应用并点击“获取”。
 
 下载 Windows Terminal 不需要登录微软商店。当系统提示你登录时，只需选择“否”，Windows Terminal 就会开始下载并安装。
 
-## 方法 2：使用 PowerShell 安装 Windows Terminal | Chocolatey
+### 方法 2：使用 PowerShell 安装 Windows Terminal | Chocolatey
 
-Chocolatey 是一款高性能的 Windows 自动化管理软件，它将安装程序、可执行文件、压缩包和文本集成到集成的包中。这是一个非常流行的工具，也是许多 PowerShell 用户所用的工具之一。
+`Chocolatey` 是一款高性能的 Windows 软件包管理器，它将安装程序、可执行文件、压缩包和脚本集成到统一的包中。这是一个非常流行的工具，也是许多 PowerShell 用户所用的工具之一。
 
-如果你尚未安装 Chocolatey，可以在 PowerShell 中安装它。以管理员身份运行 PowerShell 并使用以下命令。
+如果你尚未安装 `Chocolatey`，可以在 PowerShell 中安装它。以管理员身份运行 PowerShell 并使用以下命令。
 
-`Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager] :: SecurityProtocol=[System.Net.ServicePointManager] ::SecurityProtocol -bor 3072; iex ((New Object System.Net.WebClient) .DownloadString (‘https://chocolatey.org/install.ps1’))`
+```powershell
+Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
+```
 
-安装 Chocolatey 后，在同一个 PowerShell 窗口中安装 Windows Terminal。
+安装 `Chocolatey` 后，在同一个 PowerShell 窗口中安装 Windows Terminal。
 
-`>>> choco install microsoft-windows-terminal`
+```powershell
+choco install microsoft-windows-terminal
+```
 
 如果你使用上述命令，该工具将下载 Windows Terminal 的最新版本。Windows Terminal 最新版本已下载并安装到你的电脑上。
 
-## 方法 3：从 GitHub 下载并安装 Windows Terminal
+### 方法 3：从 GitHub 下载并安装 Windows Terminal
 
-对于任何可以在微软商店安装 Windows Terminal 的人，你也可以在 GitHub 页面自行下载。在 GitHub Windows Terminal Release 页面上，你可以获得 Windows Terminal 的稳定版和预览版。选择一个稳定的 Windows Terminal 版本并向下滚动到 Assets，下载以 `.msixbundle` 结尾的文件。要在你的电脑上安装 Windows Terminal，右键点击 `Microsoft.WindowsTerminal.msixbundle` 并选择“打开”。
+对于任何无法在微软商店安装 Windows Terminal 的人，你也可以在 GitHub 页面自行下载。在 GitHub Windows Terminal Release 页面上，你可以获得 Windows Terminal 的稳定版和预览版。选择一个稳定的 Windows Terminal 版本并向下滚动到 Assets，下载以 `.msixbundle` 结尾的文件。要在你的电脑上安装 Windows Terminal，右键点击 `Microsoft.WindowsTerminal.msixbundle` 并选择“打开”。
 
 在“安装 Windows Terminal”窗口中，点击“安装”。Terminal 正在安装。安装完成后，工具将启动。
 
@@ -1394,117 +1524,136 @@ Chocolatey 是一款高性能的 Windows 自动化管理软件，它将安装程
 
 要使用 Git，你需要在电脑上安装它。即使你已经安装了 Git，也需要升级到最新版本。你可以将其作为包安装，使用其他安装程序，或从其官方网站下载。
 
-现在问题在于如何下载 Git 安装包。以下是一个缓慢的安装过程，可以帮助你下载并安装 Git。
+现在问题在于如何下载 Git 安装包。以下是一个标准的安装过程，可以帮助你下载并安装 Git。
 
-*如何下载 Git？*
+#### 如何下载 Git？
 
 **步骤 1**：要下载 Git 安装程序，请访问 Git 官网并进入下载页面。下载页面链接为 https://git-scm.com/downloads。点击页面上提供的 Windows 版本的包（版本可以更改）。选择包后，下载将开始。
 
 现在，Git 安装包已下载完成。
 
-*安装 Git*
+#### 安装 Git
 
-**步骤 2**：点击已下载的文件并选择“是”继续。选择“是”后首先开始安装。点击以下内容以继续。
+**步骤 2**：点击已下载的文件并选择“是”继续。选择“是”后首先开始安装。点击“下一步”继续。
 
 **步骤 3**：在默认情况下，此步骤会自动选择组件。你也可以选择你需要的组件。点击“下一步”继续。
 
-**步骤 4**：将选择了 Git 命令行选项。你可以选择你偏好的偏好。点击“下一步”继续。
+**步骤 4**：将选择了 Git 命令行选项。你可以选择你偏好的编辑器。点击“下一步”继续。
 
 **步骤 5**：此步骤中选择了默认的传输后端选项。点击“下一步”继续。
 
 **步骤 6**：选择所需的行结束符选项并点击“下一步”继续。
 
-**步骤 7**：选择你喜欢的模拟器并点击“下一步”继续。
+**步骤 7**：选择你喜欢的终端模拟器并点击“下一步”继续。
 
-**步骤 8**：这是最后一步，提供了一些额外功能，如系统临时备份、验证管理和符号链接。选择这些功能并点击后续选项。
+**步骤 8**：这是最后一步，提供了一些额外功能，如文件系统缓存、凭据管理和符号链接。选择这些功能并点击“安装”选项。
 
-**步骤 9**：此步骤将移除临时文件。因此，Git 安装完成。你现在可以访问 Git Gui 和 Git Bash。
+**步骤 9**：此步骤将完成安装。因此，Git 安装完成。你现在可以访问 Git GUI 和 Git Bash。
 
 它在三个方面有所帮助：
+
 1. 创建新存储库
-2. 克隆现有存档
-3. 打开现有存档
+2. 克隆现有仓库
+3. 打开现有仓库
 
 ### 安装 Node.js 和 NPM 包管理器
 
-*介绍*
+#### 介绍
 
-Node.js 是一个运行环境，它集成了安装程序、可执行文件、压缩包和文本到集成的包中。NPM 是一个流行的工具，它是许多开发者所使用的工具之一。它可以帮助管理项目依赖。
+`Node.js` 是一个 JavaScript 运行时环境。`NPM` 是一个流行的包管理器，它是许多开发者所使用的工具之一。它可以帮助管理项目依赖。
 
-*要求*
+#### 要求
 
-- 拥有管理员权限的用户账户（用于安装 Node.js）
-- Windows 命令行访问权限（使用 NPM）
+- 拥有管理员权限的用户账户（用于安装 `Node.js`）
+- Windows 命令行访问权限（使用 `NPM`）
 
-*在 Windows 上安装 Node.js 和 NPM*
+#### 在 Windows 上安装 Node.js 和 NPM
 
-**步骤 1**：首先，下载 Node.js 安装程序访问 https://nodejs.org/download/。点击页面上提供的 Windows 版本的包作为发布版本。
+**步骤 1**：首先，下载 `Node.js` 安装程序访问 https://nodejs.org/download/。点击页面上提供的 Windows 版本的包作为发布版本。
 
-**步骤 2**：在同一个 PowerShell 窗口中安装 Node.js。使用以下命令安装最新版本：
+**步骤 2**：也可以使用 `Chocolatey` 安装。在同一个 PowerShell 窗口中安装 `Node.js`。使用以下命令安装最新版本：
 
-`>>> choco install nodejs`
+```powershell
+choco install nodejs
+```
 
-安装完成后，在同一个 PowerShell 窗口中安装 NPM：
+安装完成后，在同一个 PowerShell 窗口中安装 `NPM`（通常 `Node.js` 安装包已包含 `NPM`）：
 
-`>>> choco install npm`
+```powershell
+choco install npm
+```
 
-*如何安装或更新 NPM*
+#### 什么是 NPM?
 
-由于 NPM 与 Node.js 集成，你需要安装 Node.js。NPM 推荐的安装方法是使用版本管理器 (NVM)。此版本管理器可以避免 NPM 包的权限和冲突问题。要安装 NPM，请按照其指南操作。
+`NPM` 是 Node.js 的包管理器，用于管理项目依赖。
 
-*如何安装和使用版本管理器 NPM*
+#### 如何安装或更新 NPM
 
-使用 NPM，你可以安装 Node.js 的稳定版本。使用以下命令安装：
+由于 `NPM` 与 `Node.js` 集成，你需要安装 `Node.js`。`NPM` 推荐的安装方法是使用版本管理器 (`NVM`)。此版本管理器可以避免 `NPM` 包的权限和冲突问题。要安装 `NPM`，请按照其指南操作。
 
-`npm install node`
+#### 如何安装和使用版本管理器 NVM
 
-确认 NPM 安装后，检查安装的 NPM 版本：
+使用 `NVM`，你可以安装 `Node.js` 的稳定版本。使用以下命令安装：
 
-`npm -v`
+```bash
+nvm install node
+```
 
-*如何更新 NPM*
+确认 `NPM` 安装后，检查安装的 `NPM` 版本：
 
-在配合 NVM 管理 Node.js 版本时，更新 NPM 版本需要更新 Node.js 版本。要验证你是最新版本的 NPM，使用 NPM 安装命令安装 Node.js：
+```bash
+npm -v
+```
 
-`npm install node`
+#### 如何更新 NPM
 
-如果你想更新 NPM，可以在不更新 Node.js 的情况下使用专用命令：
+在配合 `NVM` 管理 `Node.js` 版本时，更新 `NPM` 版本通常伴随 `Node.js` 更新。要验证你是最新版本的 `NPM`，使用 `NPM` 安装命令安装 `Node.js`：
 
-`npm install-latest-npm`
+```bash
+npm install node
+```
 
+如果你想单独更新 `NPM`，可以在不更新 `Node.js` 的情况下使用专用命令：
 
+```bash
+npm install -g npm@latest
+```
 
-上述命令包含了大于或等于 4.1.0 且小于 4.17.1 的最新可用 Express JS 包。
+上述命令将安装最新可用的 `NPM` 包。
 
-**第 3 步：**确认安装
+**第 3 步：** 确认安装
 
 现在，打开提示符并输入以下内容：
 
+```bash
 C:\Users\PC>node -v
 v14.15.0
+```
 
-程序应该显示你系统上安装的 Node.js 版本。你也可以对 NPM 执行相同的操作：
+程序应该显示你系统上安装的 `Node.js` 版本。你也可以对 `NPM` 执行相同的操作：
 
+```bash
 C:\Users\PC>npm -v
 8.5.3
+```
 
 ### 安装 React Native CLI
 
-现在我们将介绍如何在 Windows 上安装和配置 React Native 开发环境。如果你想了解如何在 Mac 上安装 React Native，请查看下方的博文。你可以使用 Expo CLI 也可以使用 React Native CLI 来改进在 Windows 上的 React Native 应用。
+现在我们将介绍如何在 Windows 上安装和配置 React Native 开发环境。如果你想了解如何在 Mac 上安装 React Native，请查看下方的博文。你可以使用 Expo CLI 也可以使用 React Native CLI 来开发在 Windows 上的 React Native 应用。
 
-Expo CLI 是一个包，它在用 React Native 开发应用时集成了许多原生功能（位置、相机等）。当你第一次使用 Expo CLI 开发传统的 React（此处原文为 reaction，应为应用）时，你会感到非常从容。然而，这个包包含了许多你用到的原生功能，这使得系统构建过程变得更大。此外，如果你想集成一个不包含在 Expo CLI 中的原生功能，将很难实现。因此，我们不建议使用 Expo CLI。本节关于如何安装和配置 React Native CLI。此外，我们还将使用 React Native CLI 创建一个 React Native 项目并测试其有效性。
+Expo CLI 是一个包，它在用 React Native 开发应用时集成了许多原生功能（位置、相机等）。当你第一次使用 Expo CLI 开发 React Native 应用时，你会感到非常从容。然而，这个包包含了许多你用不到的原生功能，这使得系统构建过程变得更大。此外，如果你想集成一个不包含在 Expo CLI 中的原生功能，将很难实现。因此，我们不建议使用 Expo CLI。本节关于如何安装和配置 React Native CLI。此外，我们还将使用 React Native CLI 创建一个 React Native 项目并测试其有效性。
 
-我们需要安装 Nodejs、Watchman、Xcode 等，以便通过原生响应改进应用。让我们如何逐一个安装它们。
+我们需要安装 `Node.js`、`Watchman`、`Xcode` 等，以便通过 React Native 改进应用。让我们逐个安装它们。
 
 ### 安装 Python
 
-React Native 构建系统使用 Python。Mac 基本上安装了 Python，因此不需要此过程，但对于 Windows，这是需要的。以管理员身份运行命令提示符 (cmd)，然后执行下面的 Chocolatey 命令来安装 Python。
+React Native 构建系统使用 Python。Mac 通常预装了 Python，因此不需要此过程，但对于 Windows，这是需要的。以管理员身份运行命令提示符 (`cmd`)，然后执行下面的 Chocolatey 命令来安装 Python。
 
 ```bash
 choco install -y python2
 ```
 
-安装后，我们需要重启电脑以使用 Python。重启后，打开命令提示符 (cmd)，然后执行以下命令检查 Python 是否正确安装。
+安装后，我们需要重启电脑以使用 Python。重启后，打开命令提示符 (`cmd`)，然后执行以下命令检查 Python 是否正确安装。
 
 ```bash
 python --version
@@ -1512,13 +1661,13 @@ python --version
 
 ### React Native CLI
 
-让我们安装 React Native CLI 以通过原生响应改进应用。使用下方的 NPM 命令全局安装 React Native CLI。
+让我们安装 React Native CLI 以通过 React Native 改进应用。使用下方的 NPM 命令全局安装 React Native CLI。
 
 ```bash
 npm install -g react-native-cli
 ```
 
-安装后，下载下方的命令检查 React Native CLI 是否正确安装。
+安装后，执行下方的命令检查 React Native CLI 是否正确安装。
 
 ```bash
 npx react-native --version
@@ -1526,27 +1675,31 @@ npx react-native --version
 
 如果 React Native CLI 安装正确，你可以看到如下的 React Native CLI 版本。
 
+```text
 react-native-cli: 2.0.1
+```
 
 ### 安装 Android JDK
 
-我们需要安装 JDK（Java 开发工具包）来用 React Native 升级 Android 应用。以管理员身份运行命令提示符 (cmd)，然后使用下方的 Chocolatey 命令安装 JDK。
+我们需要安装 JDK（Java 开发工具包）来用 React Native 开发 Android 应用。以管理员身份运行命令提示符 (`cmd`)，然后使用下方的 Chocolatey 命令安装 JDK。
 
 ```bash
-choco insert -y jdk8
+choco install -y openjdk8
 ```
 
-安装后，重启命令提示符 (cmd)，然后执行以下命令检查 Java 是否安装正确。
+安装后，重启命令提示符 (`cmd`)，然后执行以下命令检查 Java 是否安装正确。
 
 ```bash
-Java -version
+java -version
 ```
 
 如果通过安装 JDK 安装 Java，你可以看到下方的 Java 版本。
 
-OpenJDK version “1.8.0_222”
+```text
+OpenJDK version "1.8.0_222"
 OpenJDK Runtime Environment (AdoptOpenJDK) (build 1.8.0_222-b10)
 OpenJDK 64-Bit Server VM (AdoptOpenJDK) (build 25.222-b10, mixed mode)
+```
 
 如果安装了 JDK，则安装了 Java 编译器。执行以下命令检查 Java 编译器是否安装正确。
 
@@ -1554,50 +1707,48 @@ OpenJDK 64-Bit Server VM (AdoptOpenJDK) (build 25.222-b10, mixed mode)
 javac -version
 ```
 
-## JAVA_HOME 灵活环境
+## JAVA_HOME 环境变量
 
-下一步是设置变量 JAVA_HOME 指向输入列表。我们在上一步中标记了安装目录，它位于 C:\Program Files\Java\jdk1.8.0_bxx 文件夹，其中 bxx 是更新数字。按照以下步骤操作：
+下一步是设置环境变量 `JAVA_HOME` 指向安装目录。我们在上一步中安装的目录，它位于 `C:\Program Files\Java\jdk1.8.0_xxx` 文件夹，其中 `xxx` 是更新数字。按照以下步骤操作：
 
 - 进入控制面板 -> 系统（控制面板 -> 系统和安全）
 - 点击高级系统设置
-- 在“高级”选项卡下，选择“用户变量”
-- 在“系统变量”选项卡下（下方窗口中），检查 JAVA_HOME 是否可用。一旦找到，双击它或点击“新建”
-- 输入变量名 = JAVA_HOME & 路径 = C:\Program Files\Java\jdk1.8.0_181\
+- 在“高级”选项卡下，点击“环境变量”
+- 在“系统变量”区域（下方窗口中），检查 `JAVA_HOME` 是否可用。一旦找到，双击它或点击“新建”
+- 输入变量名 = `JAVA_HOME` & 路径 = `C:\Program Files\Java\jdk1.8.0_181\`
 - 完成后点击确定。
 
 ### 安装 Android Studio
 
-我们需要安装 Android Studio 来用 React Native 升级 Android 应用。点击下方的链接进入 Android Studio 官网并下载安装文件。
+我们需要安装 Android Studio 来用 React Native 开发 Android 应用。点击下方的链接进入 Android Studio 官网并下载安装文件。
 
 *Android Studio: https://developer.android.com/studio*
 
 下载完成后，使用安装文件安装 Android Studio。
 
-*Android Studio 配置*
+#### Android Studio 配置
 
-- 使用 Android Studio 安装文件后，你可以看到下方的截图。
-- 点击“Next”按钮进入下一个屏幕。当你进入下一个屏幕时，你可以看到如下所示的“选择组件”界面。选择“Android Device”并点击“Next”按钮进入下一个屏幕。
-- 如果你进入下一个屏幕，你可以看到如下所示的“Android Studio 安装路径”界面。设置安装方法或保留默认，点击“Next”按钮进入下一个屏幕。
-- 当你进入下一个屏幕时，你可以看到如下所示的启动菜单界面。只需点击“Apply”按钮进行安装。
-- 安装完成后，你可以看到下方的屏幕。点击“Next”按钮完成 Android Studio 的安装。
+- 使用 Android Studio 安装文件后，你可以看到欢迎界面。
+- 点击“Next”按钮进入下一个屏幕。当你进入下一个屏幕时，你可以看到“选择组件”界面。选择“Android Virtual Device”并点击“Next”按钮进入下一个屏幕。
+- 如果你进入下一个屏幕，你可以看到“Android Studio 安装路径”界面。设置安装路径或保留默认，点击“Next”按钮进入下一个屏幕。
+- 当你进入下一个屏幕时，你可以看到启动菜单界面。只需点击“Install”按钮进行安装。
+- 安装完成后，你可以看到完成界面。点击“Next”按钮完成 Android Studio 的安装。
 - 当你点击“Next”按钮完成安装时，你会看到该屏幕。勾选“Start Android Studio”并点击“Finish”按钮完成 Android Studio 的安装。
-- 当你点击“Finish”按钮时，你可以看到下方 Android Studio 已完成。选择“Do Not Enter Settings”，然后点击“OK”按钮进入 Android Studio。
-- 当你点击“OK”按钮进入 Android Studio 后，你可以看到下方的 Android Studio 设置向导。点击“Next”按钮进入下一个屏幕。
-- 当你进入下一个屏幕时，你可以看到如下所示的“选择安装类型”界面。选择“Custom”，然后点击“Next”按钮。
-- 当你进入下一个屏幕时，你可以看到如下所示的“选择主题”界面。选择你喜欢的主题，然后点击“Next”按钮。
-- 当你进入下一个屏幕时，你可以看到如下所示的“SDK 组件”界面。选择“Intel x86 HAXM”和“Android Device”，然后点击“Next”按钮。
-- 在下一个屏幕上，你会看到如下所示的模拟器设置。点击“Next”按钮而不进行更改。
+- 当你点击“Finish”按钮时，你可以看到 Android Studio 启动界面。选择“Do Not Import Settings”，然后点击“OK”按钮进入 Android Studio。
+- 当你点击“OK”按钮进入 Android Studio 后，你可以看到 Android Studio 设置向导。点击“Next”按钮进入下一个屏幕。
+- 当你进入下一个屏幕时，你可以看到“选择安装类型”界面。选择“Custom”，然后点击“Next”按钮。
+- 当你进入下一个屏幕时，你可以看到“选择主题”界面。选择你喜欢的主题，然后点击“Next”按钮。
+- 当你进入下一个屏幕时，你可以看到“SDK 组件”界面。选择“Intel x86 HAXM”和“Android Virtual Device”，然后点击“Next”按钮。
+- 在下一个屏幕上，你会看到模拟器设置。点击“Next”按钮而不进行更改。
 - 下一个过程是标准系统的安装，因此无需解释。只需点击“Finish”按钮。
 
 ### 安装 Android SDK
 
-在安装 Android Studio 后，你可以看到下方的 Android Studio 已创建。
+在安装 Android Studio 后，你可以看到 Android Studio 主界面。
 
-### Android SDK
+#### Android SDK 配置
 
-点击右侧面板中的“Configure -> SDK Manager”进入 Android SDK。
-
-*Android SDK 配置*
+点击右侧面板中的“Configure -> SDK Manager”进入 Android SDK 设置。
 
 如果顶部显示如下屏幕，点击右下角的“Show Details”选项。在列表中找到并选择选项。
 
@@ -1605,21 +1756,21 @@ javac -version
 - Google APIs Intel x86 System Image
 - Google APIs Intel x86_64 System Image
 
-当你选择了上述所有选项后，点击右下角的“OK”按钮。
+当你选择了上述所有选项后，点击右下角的“Apply”按钮。
 
 ### 配置 Android Studio 环境变量
 
-Android Studio 安装和调整已完成。现在，我们需要配置环境。右键点击“此电脑”，然后点击如下所示的“属性”菜单。当你点击“属性”菜单时，你可以看到“系统和安全”屏幕。点击左侧菜单中的“高级设置”。当你点击“高级系统设置”菜单时，你可以看到如下所示的系统属性屏幕。点击“高级”选项卡，然后选择“环境变量”按钮。
+Android Studio 安装和调整已完成。现在，我们需要配置环境变量。右键点击“此电脑”，然后点击“属性”菜单。当你点击“属性”菜单时，你可以看到“系统”屏幕。点击左侧菜单中的“高级系统设置”。当你点击“高级系统设置”菜单时，你可以看到系统属性屏幕。点击“高级”选项卡，然后点击“环境变量”按钮。
 
-当你点击用户变量时，你可以看到下方的框。点击“新建”。
-
-当你看到上方的框时，在“变量名”中输入 ANDROID_HOME，并在“变量值”中输入你的 Android Studio SDK 路径。如果你已经添加了 ANDROID_HOME 灵活环境，你需要设置 Android Studio 工具路径。点击用户界面获取你的名称列表以进入对话框。如果你不知道 Android Studio SDK 路径，请使用如下所示的 Android Studio SDK 调试屏幕。你可以在 Android Studio SDK 配置的顶部看到 Android Studio SDK 的位置。
+当你点击“系统变量”下的“新建”时，你可以看到输入框。
 
 
 
-构建你的第一个应用 ◾ 45
+当你看到上方的框时，在“变量名”中输入 `ANDROID_HOME`，并在“变量值”中输入你的 Android Studio SDK 路径。如果你已经添加了 `ANDROID_HOME` 灵活环境，你需要设置 Android Studio 工具路径。点击用户界面获取你的名称列表以进入对话框。如果你不知道 Android Studio SDK 路径，请使用如下所示的 Android Studio SDK 调试屏幕。你可以在 Android Studio SDK 配置的顶部看到 Android Studio SDK 的位置。
 
-在此之后，打开命令提示符 (cmd) 并执行以下命令：
+# 构建你的第一个应用
+
+在此之后，打开命令提示符 (`cmd`) 并执行以下命令：
 
 ```bash
 adb
@@ -1627,63 +1778,61 @@ adb
 
 如果环境变量配置正确，你将看到下面的结果：
 
+```text
 Android Debug Bridge 版本 1.0.41
 版本 29.0.1-5644136
 安装路径 /Users/jeonghean_kim/Library/Android/sdk/platform-tools/adb
+```
 
-### 安装 Visual Studio Code (IDE)
+## 安装 Visual Studio Code (IDE)
 
 在本节中，我们将查看如何在 Windows 和 Mac 操作系统上下载和安装 Visual Studio Code 的步骤。
 
-为了改进每种编程语言，有许多 IDE（集成开发环境）可用。在 JavaScript 中，也有许多 IDE，Visual Studio 编辑器就是其中之一。它是一个轻量且强大的源代码编辑器，可以在你的桌面上运行，并支持 Windows、macOS 和 Linux。Visual Studio Code 内置了对 JavaScript、TypeScript 和 Node.js 的支持。它拥有丰富的扩展生态系统，用于支持其他语言（如 C++、C#、Java、Python、PHP、Go）和运行时（如 .NET 和 Unity）。在 ToolsQA，我们使用 VS Code 进行 Protractor、Cypress、JavaScript 等开发。
+为了改进每种编程语言，有许多 IDE（集成开发环境）可用。在 JavaScript 中，也有许多 IDE，Visual Studio 编辑器就是其中之一。它是一个轻量且强大的源代码编辑器，可以在你的桌面上运行，并支持 Windows、macOS 和 Linux。`Visual Studio Code` 内置了对 JavaScript、TypeScript 和 Node.js 的支持。它拥有丰富的扩展生态系统，用于支持其他语言（如 C++、C#、Java、Python、PHP、Go）和运行时（如 .NET 和 Unity）。在 ToolsQA，我们使用 VS Code 进行 Protractor、Cypress、JavaScript 等开发。
 
 ### 如何下载和安装 Visual Studio Code？
 
-获取并开始使用 Visual Studio Code 非常快速简单。它是一个下载程序，因此你也可以很快完成安装并尝试 VS Code。VS Code 是一个免费的代码编辑器。此外，它可以在 macOS、Linux 和 Windows 操作系统上运行。让我们看看如何在我们使用的不同平台上设置相同的工具。
+获取并开始使用 `Visual Studio Code` 非常快速简单。它是一个下载程序，因此你也可以很快完成安装并尝试 VS Code。`VS Code` 是一个免费的代码编辑器。此外，它可以在 macOS、Linux 和 Windows 操作系统上运行。让我们看看如何在我们使用的不同平台上设置相同的工具。
 
 无论你正在使用哪种操作系统，第一步都是通用的。
 
 #### 下载 Visual Studio Code
 
-你可以在 URL “https://code.visualstudio.com/download” 通过选择合适的字段来下载 Visual Studio code：你可以根据计划为 visual studio code 编辑器下载的 visual 操作系统来点击相应的图标。
+你可以在 URL `https://code.visualstudio.com/download` 通过选择合适的字段来下载 Visual Studio code：你可以根据计划为 visual studio code 编辑器下载的 visual 操作系统来点击相应的图标。
 
-46 ◾ 精通 React Native
+### 如何在 Windows 上安装 Visual Studio Code?
 
-### 如何在 Windows 上安装 Visual Studio Code? 
-
-- 第一，下载适用于 Windows 的 Visual Studio Code 安装程序。下载完成后，使用该安装程序（VSCodeUserSetup-{version}.exe）。这只需要一分钟。
+- 第一，下载适用于 Windows 的 `Visual Studio Code` 安装程序。下载完成后，使用该安装程序（`VSCodeUserSetup-{version}.exe`）。这只需要一分钟。
 - 第二，接受协议并点击“下一步”。
 - 第三，点击“创建桌面图标”以访问桌面，然后点击“下一步”。
 - 之后，点击“安装”按钮。
-- 最后，完成安装后点击“完成”，visual studio code 将打开。
-- 默认情况下，VS Code位于 C:\users\{username}\AppData\Local\Programs\Microsoft VS Code。
-- 安装成功后，让我们进入下一节，了解 Visual Studio Code 编辑器的各种组件。
+- 最后，完成安装后点击“完成”，`visual studio code` 将打开。
+- 默认情况下，`VS Code` 位于 `C:\users\{username}\AppData\Local\Programs\Microsoft VS Code`。
+- 安装成功后，让我们进入下一节，了解 `Visual Studio Code` 编辑器的各种组件。
 
-### 你为什么要使用 React Native？
+## 你为什么要使用 React Native？
 
-是的，除了 React Native 之外还有像 ionic 和 flutter 等方法，但 ionic 用于创建一种混合应用，并不能给我们提供原生感。它只是封装了 JavaScript 的带糖衣的 HTML，而 flutter 的体验比原生的更好，因为不需要桥接与原生对象进行通信，但 flutter 使用 Dart，这也是一种你用来学习以在开发中创建应用的新编程语言。然而，问题在于我们为什么应该使用 React Native 呢？请查看下面列出的点。
+是的，除了 React Native 之外还有像 `ionic` 和 `flutter` 等方法，但 `ionic` 用于创建一种混合应用，并不能给我们提供原生感。它只是封装了 JavaScript 的带糖衣的 HTML，而 `flutter` 的体验比原生的更好，因为不需要桥接与原生对象进行通信，但 `flutter` 使用 `Dart`，这也是一种你用来学习以在开发中创建应用的新编程语言。然而，问题在于我们为什么应该使用 React Native 呢？请查看下面列出的点。
 
 我们涵盖的内容包括：
 
-字体 使用 Node.js 的模块功能进行代码重构
+- 字体 使用 `Node.js` 的模块功能进行代码重构
 - 使用第三方库实现搜索功能
-- 应用 Electron 和 NW.js 的 shell API 来处理使用默认应用程序打开文件
+- 应用 `Electron` 和 `NW.js` 的 `shell` API 来处理使用默认应用程序打开文件
 - 改进应用导航，使桌面应用更易用
 
-构建你的第一个应用 ◾ 47
+本章的主要收获是，通过几百行代码和一些外部文件，你就可以构建一个复制原生桌面应用功能的应用（并且具有相对复杂的功能）。不仅如此，你能够使用像 `lunr.js` 这样的第三方库来提供此功能，并构造代码，使其可以在 Web 应用中使用，并允许从同一源代码构建适用于 Web 和桌面的应用。
 
-本章的主要收获是，通过几百行代码和一些外部文件，你就可以构建一个复制原生桌面应用功能的应用（并且具有相对复杂的功能）。不仅如此，你能够使用像 lunr.js 这样的第三方库来提供此功能，并构造代码，使其可以在 Web 应用中使用，并允许从同一源代码构建适用于 Web 和桌面的应用。
+# 设置你的环境
 
-## 设置你的环境
+此页面将帮助用户安装并构建第一个 React Native 应用。如果你是移动开发的新手，一个简单的上手入门方法是使用 `Expo CLI`。`Expo` 是一组围绕 React Native 构建的工具，尽管它有各种功能，但对我们现在来说，最重要的是它允许你在几分钟内编写一个 React Native 应用。你只需要最新版本的 `Node.js` 以及一个手机或模拟器。如果你想在安装任何工具之前直接在浏览器中尝试 React，可以尝试 `Snack`。
 
-此页面将帮助用户安装并构建第一个 React Native 应用。如果你是移动开发的新手，一个简单的上手入门方法是使用 Expo CLI。Expo 是一组围绕 React Native 构建的工具，尽管它有各种功能，但对我们现在来说，最重要的是它允许你在几分钟内编写一个 React Native 应用。你只需要最新版本的 Node.js 以及一个手机或模拟器。如果你想在安装任何工具之前直接在浏览器中尝试 React，可以尝试 Snack。
-
-一旦你熟悉了移动开发，你可能想使用 React Native CLI。它需要 Xcode 或 Android Studio 才能开始。如果你已经安装了这些工具之一，你可以在几分钟内开始工作。如果没有安装，你应该预计花费大约一小时来重新安装它们。
+一旦你熟悉了移动开发，你可能想使用 `React Native CLI`。它需要 `Xcode` 或 `Android Studio` 才能开始。如果你已经安装了这些工具之一，你可以在几分钟内开始工作。如果没有安装，你应该预计花费大约一小时来重新安装它们。
 
 - Expo CLI 快速上手
 - React Native CLI 快速上手
 
-假设你已安装 Node 12 LTS 或更高版本，你可以使用 NPM 安装 Expo CLI 命令行实用。
+假设你已安装 `Node 12 LTS` 或更高版本，你可以使用 `NPM` 安装 `Expo CLI` 命令行实用。
 
 - NPM
 - Yarn
@@ -1694,16 +1843,8 @@ npm install -g expo-cli
 
 然后运行命令创建一个名为“AwesomeProject”的最新 React Native 项目：
 
-48 ◾ 精通 React Native
-
 - NPM
 - Yarn
-
-```bash
-npm install -g expo-cli
-```
-
-然后运行命令创建一个名为“AwesomeProject”的最新 React Native 项目：
 
 ```bash
 expo init AwesomeProject
@@ -1729,17 +1870,13 @@ npm start
 
 ### 修改你的应用
 
-现在你已经使用了该应用，让我们修复它。在选择的编辑器中打开 App.js，一旦保存更改，应用将自动加载。
+现在你已经使用了该应用，让我们修复它。在选择的编辑器中打开 `App.js`，一旦保存更改，应用将自动加载。
 
 ### 探索示例代码
 
 React Native 正在改变开发领域。这就是为什么我们看到了使用 React Native 的趋势。JavaScript 框架，例如，提供了超出基础开发方法的卓越功能。框架开启了处理与移动开发相关问题的新方法。
 
 React Native 允许你使用提供额外自定义的 API 进行直接调用。React Native 可以很好地构建原生的 Android 和 iOS 应用。这是通过服务器端而不是浏览器端完成的。
-
-49 ◾ 精通原生
-
-在本节中，我们将讨论 React Native 的许多方面，并开发一个名为 notes 的记笔记应用。在构建关键功能时，如获取笔记、保存笔记到设备、查看已保存笔记列表以及在屏幕之间跳转，你将学习改进应用的各种技能。你将有机会超越基础，添加存储图像和地理位置数据的能力。
 
 ## 构建应用
 
@@ -1749,7 +1886,7 @@ React Native 允许你使用提供额外自定义的 API 进行直接调用。Re
 
 ### 使用 React Native 构建 Android 应用
 
-我们的步骤是创建一个空白的 React Native 项目。为了做到，你需要在系统中安装一个用于构建你 Android 应用的 Node。一旦安装了 Node，你现在需要在选择的目录中创建一个项目。
+我们的步骤是创建一个空白的 React Native 项目。为了做到，你需要在系统中安装一个用于构建你 Android 应用的 `Node`。一旦安装了 `Node`，你现在需要在选择的目录中创建一个项目。
 
 ```bash
 npm install -g react-native-cli
@@ -1765,25 +1902,21 @@ react-native init Movies
 
 这将创建一个名为“Movies”的文件夹并在其中包含所需的模块。
 
+由于 React Native 同时用于 iOS 和 Android 应用程序，JavaScript 代码可以在两个文件 `index.ios.js` 和 `index.android.js` 之间进行共享。由于我们正在构建一个 Android 应用程序，我们将使用 `index.android.js`。
 
-
-
-
-## **50** 掌握 React Native
-
-由于 React Native 同时用于 iOS 和 Android 应用程序，JavaScript 代码可以在两个文件 index.ios.js 和 index.android.js 之间进行共享。由于我们正在构建一个 Android 应用程序，我们将使用 index.android.js。
-
-### 第 2 步：连接 Android 设备
+#### 第 2 步：连接 Android 设备
 
 现在是时候将 Android 设备连接到系统了。连接成功后，你需要运行以下命令。
 
->>>react-native run-android
+```bash
+react-native run-android
+```
 
 如果你操作得当，你将在设备上看到一个空白的应用。
 
-### 第 3 步：从 Moviedb API 获取信息
+#### 第 3 步：从 Moviedb API 获取信息
 
-现在是时候设置应用以连接 *themoviedb 数据库*了。要开始，你首先需要获取所需的 API。一旦获取了 API，你就可以开始编写应用代码。Moviester 类应该如下所示。
+现在是时候设置应用以连接 *themoviedb 数据库* 了。要开始，你首先需要获取所需的 API。一旦获取了 API，你就可以开始编写应用代码。`Moviester` 类应该如下所示。
 
 ```javascript
 class Moviester extends Component {
@@ -1805,14 +1938,12 @@ class Moviester extends Component {
 }
 ```
 
-基础代码初始化了 Moviester 模块，但它仍然需要一个构造函数才能有效工作。构造函数也会初始化变量。目前，我们将关注 `moviesData` 数组，因为它将存储所有通过 API 获取的 JSON 数据。
-
-构建你的第一个应用程序 ◾ **51**
+基础代码初始化了 `Moviester` 模块，但它仍然需要一个构造函数才能有效工作。构造函数也会初始化变量。目前，我们将关注 `moviesData` 数组，因为它将存储所有通过 API 获取的 JSON 数据。
 
 ```javascript
   constructor(props) {
     super(props);
-    var ds=new ListView.DataSource({
+    var ds = new ListView.DataSource({
       rowHasChanged: (r1, r2) => r1 !== r2
     });
     this.state = {
@@ -1821,27 +1952,27 @@ class Moviester extends Component {
   }
 ```
 
-### 第 4 步：定义 fetchMoviesData 方法
+#### 第 4 步：定义 fetchMoviesData 方法
 
 现在，我们需要编写该模块来来使用 API 获取数据。为此，我们将使用以下代码。
 
 ```javascript
 fetchMoviesData() {
-  var url='http://api.themoviedb.org/2/movie/now_playing?api_key=API_KEY';
+  var url = 'http://api.themoviedb.org/2/movie/now_playing?api_key=API_KEY';
   fetch(url)
-    .then(response=>response.json())
-    .then(jsonData=> {
+    .then(response => response.json())
+    .then(jsonData => {
       this.setState({
         movieData: this.state.moviesData.cloneWithRows(jsonData.results),
       });
     })
-    .catch(error=> console.log ('Error: '+error));
+    .catch(error => console.log('Error: ' + error));
 }
 ```
 
-### 第 5 步：创建生命周期 componentDidMount 方法
+#### 第 5 步：创建生命周期 componentDidMount 方法
 
-最后，我们创建一个 componentDidMount 方法作为生命周期方法。它将在第一次渲染时执行。
+最后，我们创建一个 `componentDidMount` 方法作为生命周期方法。它将在第一次渲染时执行。
 
 ```javascript
 componentDidMount() {
@@ -1849,14 +1980,13 @@ componentDidMount() {
 }
 ```
 
-### 第 6 步：视图创建
+#### 第 6 步：视图创建
 
 最后几个步骤是创建应用的前端。为了实现，你需要导入一些组件。这些组件将用于为你的 React Native Android 应用创建视图。
 
 ```javascript
 import {
   AppRegistry,
-**52** ◾ 掌握 React Native
   StyleSheet,
   Text,
   View,
@@ -1870,7 +2000,7 @@ import {
 1. **ListView**: 它用于在应用中有效地显示垂直滚动列表。
 2. **Image**: 该组件用于在应用上显示各种类型的图像。它包括静态资源、网络图像、临时本地图像等。
 
-### 第 7 步：重构 Return 方法
+#### 第 7 步：重构 Return 方法
 
 现在我们已经编写了处理应用程序各个方面的其他模块，我们现在需要编辑 `return()` 方法并使其具有可读性。
 
@@ -1886,15 +2016,14 @@ render () {
 }
 ```
 
-我们编写了 `dataSource` 方法的代码，它将通过 API 从 moviedb 获取电影数据。然而，“renderRow” 方法需要每行渲染所需的模板。我们现在将在下方定义它。此外，renderRow 方法应该定义在 Moviester 模块中。
+我们编写了 `dataSource` 方法的代码，它将通过 API 从 moviedb 获取电影数据。然而，“renderRow” 方法需要每行渲染所需的模板。我们现在将在下方定义它。此外，`renderRow` 方法应该定义在 `Moviester` 模块中。
 
 ```javascript
 renderRow(rowData) {
   return (
     <View style={styles.thumb}>
       <Image
-        source={{uri:'PUT URL HERE'}}
-构建你的第一个应用程序 ◾ **53**
+        source={{uri: 'PUT URL HERE'}}
         resizeMode='cover'
         style={styles.img} />
       <Text style={styles.txt}>{rowData.title} (评分: {Math.round(rowData.vote_average * 10) / 10})</Text>
@@ -1905,13 +2034,17 @@ renderRow(rowData) {
 
 你需要正确放置源 URI 以便上述代码正常工作。我们已经准备好让应用按预期运行。然而，我们需要创建一些样式表来给应用一些外观。你可以通过以下代码来实现。
 
-`var styles=StyleSheet.create({"Code part"});`
+```javascript
+var styles = StyleSheet.create({"Code part"});
+```
 
-### 第 8 步：运行应用
+#### 第 8 步：运行应用
 
 这一步是使用以下命令运行应用。
 
->>>  react-native run-android
+```bash
+react-native run-android
+```
 
 这将会在手机/设备上启动你的应用。
 
@@ -1923,7 +2056,7 @@ renderRow(rowData) {
 
 ### React Native – 默认应用程序
 
-如果你双击默认应用，你可以感觉到 app.js 文件看起来如下：
+如果你双击默认应用，你可以感觉到 `app.js` 文件看起来如下：
 
 ```javascript
 import React from 'react';
@@ -1934,7 +2067,6 @@ export default class App extends React.Component {
       <View style={styles.container}>
         <Text>打开 App.js 来开发你的应用！</Text>
         <Text>你所做的更改将自动加载。</Text>
-**54** ◾ 掌握 React Native
         <Text>摇手机打开菜单。</Text>
       </View>
     );
@@ -1942,7 +2074,7 @@ export default class App extends React.Component {
 }
 ```
 
-要显示一条显示“Welcome to World”的普通消息，请删除 CSS 代码并将打印的消息封装在 `<view></view>` 标签内的 `<text></text>` 标签中，如下所示。
+要显示一条显示“Welcome to World”的普通消息，请删除 CSS 代码并将打印的消息封装在 `<View></View>` 标签内的 `<Text></Text>` 标签中，如下所示。
 
 其余代码与 React 应用的基础代码相同。
 
@@ -1958,7 +2090,7 @@ export default class App extends React.Component {
     );
   }
 }
-const styles=StyleSheet.create({
+const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#fff',
@@ -1968,20 +2100,19 @@ const styles=StyleSheet.create({
 });
 ```
 
-React 组件内部的数据由 state 和 props 处理。在本节中，将学习 state。
+React 组件内部的数据由 `state` 和 `props` 处理。在本节中，将学习 `state`。
 
 ## Props 和 State 定义
 
-Props 是 React 组件接收的 JavaScript 对象。它们在组件之间提供数据。为了让类组件接收，可以使用特殊的 React 语法：
+`Props` 是 React 组件接收的 JavaScript 对象。它们在组件之间提供数据。为了让类组件接收，可以使用特殊的 React 语法：
 
 在类部分，你需要将数据传递给另一个组件：
 
-构建你的第一个应用程序 ◾ **55**
 ```javascript
 import React, {Component} from 'react';
 export default class App extends Component {
   render() {
-    const greeting='欢迎来到 React';
+    const greeting = '欢迎来到 React';
     return (
       <div>
         <Greeting greeting={greeting} />
@@ -1997,16 +2128,16 @@ class Greeting extends Component {
 export default App;
 ```
 
-对于函数组件，props 作为参数传递：
+对于函数组件，`props` 作为参数传递：
 
 ```javascript
 import React from 'react';
 function Counter () {
-  const [count, setCount]=React.useState (1);
+  const [count, setCount] = React.useState(1);
   return (
     <div>
       <p>你点击了 {count} 次</p>
-      <button onClick={()  setCount (count+1)}>点击我</button>
+      <button onClick={() => setCount(count + 1)}>点击我</button>
     </div>
   );
 }
@@ -2015,7 +2146,7 @@ export default Counter;
 
 ## State
 
-State 是一个 JavaScript 对象，包含影响组件在特定时刻外观的数据。第二部分是使世界与资源相比的不同之处。世界只是某一时刻的应用画面。用户与应用的所有交互都可能导致默认状态的变化以及整个 UI 的结果。情况在 React 部分的生命周期内变化。状态示例：
+`State` 是一个 JavaScript 对象，包含影响组件在特定时刻外观的数据。第二部分是使世界与资源相比的不同之处。世界只是某一时刻的应用画面。用户与应用的所有交互都可能导致默认状态的变化以及整个 UI 的结果。情况在 React 部分的生命周期内变化。状态示例：
 
 要获取类部分，需要在 React 部分调用类构造器：
 
@@ -2024,7 +2155,7 @@ import React, {Component} from 'react';
 class Button extends Component {
   constructor(resources) {
     super(resources);
-    this.state={counter: 1};
+    this.state = {counter: 1};
   }
   render () {
     return (
@@ -2034,38 +2165,36 @@ class Button extends Component {
 }
 ```
 
-state 可以是布尔、数字、字符单元或更复杂的 JavaScript 对象。
-
-
-
-
-构建你的第一个应用程序 - **57**
+`state` 可以是布尔、数字、字符单元或更复杂的 JavaScript 对象。
 
 ## 有状态组件与无状态组件
-无状态组件（Stateless Component）仅包含 props，不包含状态。此类组件可以与函数关联：它接收一个输入（‘object’ 对象）并返回结果（React 对象）。如果你想表示 props 但该部分不需要连接，则可以使用非标准部分。它们易于使用和测试。
 
-有状态组件（Stateful Component）可以包含 props 但必须拥有状态。该部分拥有自己的状态并可以更改它。当组件位置改变时，它会重新加载。当应用需要响应用户输入和操作时，官方组件大有用。它们通过客户端服务器通信提供灵活的用户交互，并帮助创建交互式页面。
+无状态组件（Stateless Component）仅包含 `props`，不包含状态。此类组件可以与函数关联：它接收一个输入（`object` 对象）并返回结果（React 对象）。如果你想表示 `props` 但该部分不需要连接，则可以使用非标准部分。它们易于使用和测试。
 
-正常工作的部分没有形状，而类部分为世界增加了欺骗性。然而，随着 Hooks 组件的引入，这种情况已经发生了变化。状态是类部分最重要的优势之一，但今天 Hooks 为函数式部分增加了状态管理和生命周期系统，因此它们也可以被称为独立组件。
+有状态组件（Stateful Component）可以包含 `props` 但必须拥有状态。该部分拥有自己的状态并可以更改它。当组件位置改变时，它会重新加载。当应用需要响应用户输入和操作时，官方组件大有用。它们通过客户端服务器通信提供灵活的用户交互，并帮助创建交互式页面。
 
-- 当 props 或条件发生变化时，React 组件会进行重置。来自代码中任何地方的更新都会触发用户界面相应部分的重新部署。
-- Props 和条件是 JS 对象，这意味着它们都包含了我们需要的许多结构和方法。
-- 相同的 props 和状态位置的组合应该产生相同的输出。
+正常工作的部分没有形状，而类部分为世界增加了欺骗性。然而，随着 `Hooks` 组件的引入，这种情况已经发生了变化。状态是类部分最重要的优势之一，但今天 `Hooks` 为函数式部分增加了状态管理和生命周期系统，因此它们也可以被称为独立组件。
 
-*状态与 Props 的区别*
+- 当 `props` 或条件发生变化时，React 组件会进行重置。来自代码中任何地方的更新都会触发用户界面相应部分的重新部署。
+- `Props` 和条件是 JS 对象，这意味着它们都包含了我们需要的许多结构和方法。
+- 相同的 `props` 和状态位置的组合应该产生相同的输出。
 
-状态是可变的，而 props 是不可变的。这意味着状态可以进一步更新，而 props 不能被更新。
+### 状态与 Props 的区别
 
-*使用状态*
-这是我们的根组件。我们正在导入 Home 组件，它将在大部分章节中使用。
+状态是可变的，而 `props` 是不可变的。这意味着状态可以进一步更新，而 `props` 不能被更新。
 
-App.js
+### 使用状态
+
+这是我们的根组件。我们正在导入 `Home` 组件，它将在大部分章节中使用。
+
+`App.js`
+
 ```javascript
 import React from 'react';
 import {StyleSheet, Text, View} from 'react-native';
 
 export default class App extends React.Component {
-  state={
+  state = {
     myState: 'dolor nisi ut aliquip ex ea consequat. Duis aute irure dolor reprehenderit in voluptate velit esse dolore eu fugiat nulla pariatur. sint occaecat cupidatat non, sunt in qui officia deserunt mollit id est laborum. ipsum dolor sit amet, consectetur.'
   }
 
@@ -2079,20 +2208,22 @@ export default class App extends React.Component {
 }
 ```
 
-*更新状态*
+### 更新状态
+
 由于状态是可变的，这意味着我们可以通过添加删除函数 `deleteState` 并使用 `onPress = {this.deleteText}` 事件调用它来更新。
 
-App.js
+`App.js`
+
 ```javascript
 import React, {Component} from 'react'
 import {Text, View} from 'react-native'
 
 class App extends Component {
-  state={
+  state = {
     myState: 'Lorem dolor sit amet, adipisicing elit, sed eiusmod incididunt ut et dolore aliqua. Ut enim ad minim veniam, quis nostrud ullamco laboris nisi ut aliquip ex ea consequat. Duis aute irure in velit esse eu fugiat nulla pariatur. mollit anim id est laborum.'
   }
 
-  updateState=() => this.setState({myState: 'Updated State'})
+  updateState = () => this.setState({myState: 'Updated State'})
 
   render() {
     return (
@@ -2110,13 +2241,13 @@ export default App;
 
 我们将使用类语法用于逻辑部分（容器），使用函数语法用于无缝部分（展示）。我们将在下一章中学习更多相关内容。我们还将学习如何使用 `updateState` 箭头函数的语法。你应该记住，这种语法使用了词法作用域，`this` 关键字将绑定到自然对象（类）。这有时会导致意料之外的行为。
 
-描述方法的另一种方式是使用 ES5 函数，但在情况下，我们需要手动将其绑定到构建器上。考虑以下示例以理解这一点。
+描述方法的另一种方式是使用 `ES5` 函数，但在情况下，我们需要手动将其绑定到构建器上。考虑以下示例以理解这一点。
 
 ```javascript
 class Home extends Component {
   constructor() {
     super()
-    this.updateState=this.updateState.bind(this)
+    this.updateState = this.updateState.bind(this)
   }
   updateState() {
     //
@@ -2128,77 +2259,91 @@ class Home extends Component {
 ```
 
 ### 使用 React Native 构建你的第一个应用
+
 一旦安装了 React，就从文件夹布局开始
 
-- 在根目录下添加文件夹并命名为 ‘application’。
-- 现在将 App.js 文件移动到 ‘application’ 的根目录下。
-- 然后更新 `index.js` 的导入语句为 ‘import Application from ./app/App.js.’。
-- 最后，在 ‘app.’ 内部创建文件夹。
+- 在根目录下添加文件夹并命名为 `application`。
+- 现在将 `App.js` 文件移动到 `application` 的根目录下。
+- 然后更新 `index.js` 的导入语句为 `import Application from ./app/App.js.`。
+- 最后，在 `app` 内部创建文件夹。
 
 你需要注意的几个单词及其功能：
+
 - **Screens (屏幕)**：这些被称为我们的主界面。
-- **Assets (资源)**：该目录下有两个文件夹，分别名为 images（图像）和 animations（动画）。
+- **Assets (资源)**：该目录下有两个文件夹，分别名为 `images`（图像）和 `animations`（动画）。
 - **Components (组件)**：这是你放置所有共享部分的地方。
 - **Configure (配置)**：你可以在 `colors.js` 文件中设置应用程序的配色方案以保持控制。
 
 ### 创建应用
+
 首先，在全球范围内安装一次：
-$ npm install -g create-react-native-app
+
+```bash
+npm install -g create-react-native-app
+```
+
 或者
-$ yarn global add create-react-native-app
 
-你需要确保正在使用 Node v6 或更高版本，并配合 npm v3 或 yarn v4 版本的 Yarn。我们没有要求你使用 npm v5，因为你在该 npm 版本中会遇到很多问题。然后，使用以下命令创建应用：
-$ create-react-native-app my-application
-$ cd my-application
+```bash
+yarn global add create-react-native-app
+```
 
-应用上述代码行后，当前活动目录下将创建一个名为 ‘my-app’ 的目录。这将在“my-plan”中生成项目的初始设计，因此请继续添加所有基础内容。如果你之前工作过 React Native，你将知道你不会看到任何“android”或“ios”目录。因此，一旦安装完成，你将在项目目录执行以下指令：
+你需要确保正在使用 `Node v6` 或更高版本，并配合 `npm v3` 或 `yarn v4` 版本的 Yarn。我们没有要求你使用 `npm v5`，因为你在该 npm 版本中会遇到很多问题。然后，使用以下命令创建应用：
+
+```bash
+create-react-native-app my-application
+cd my-application
+```
+
+应用上述代码行后，当前活动目录下将创建一个名为 `my-app` 的目录。这将在 `my-plan` 中生成项目的初始设计，因此请继续添加所有基础内容。如果你之前工作过 React Native，你将知道你不会看到任何 `android` 或 `ios` 目录。因此，一旦安装完成，你将在项目目录执行以下指令：
 
 ## 启动 NPM
-它将以交互模式运行你的应用程序，要在不通知的情况下启动它，请使用 -interactive 标记。如果你想查看它，请在手机上的 Expo 应用中打开它。当你保存文件时，它会自动加载。通过这种方式，你还可以看到构建错误并登录终端。
+
+它将以交互模式运行你的应用程序，要在不通知的情况下启动它，请使用 `-interactive` 标记。如果你想查看它，请在手机上的 Expo 应用中打开它。当你保存文件时，它会自动加载。通过这种方式，你还可以看到构建错误并登录终端。
 
 ## 什么是跨平台开发？
+
 React Native 是一种用 JavaScript 开发的开源软件，与其他平台有所不同。React Native 应用通常使用 JavaScript 开发 Android，使用 Objective C 或 Swift 开发 iOS。这就是原生应用能够快速运行的原因。React Native 在 2013 年在 Facebook 的内部黑客松上推出。之后，它于 2015 年 1 月开放测试，并一直处于目前的移动开发平台。
 
 跨平台开发是制作兼容多种类型硬件平台的软件实践。跨平台应用程序可以在 Microsoft Windows、Linux 和 macOS 或两者上运行。跨平台应用的一个很好的例子是网络浏览器或 Adobe Flash，无论你使用哪种计算机或移动设备，它们都是相同的。
 
 ## 跨平台开发的特性有哪些？
 
-*受众*
+### 受众
+
 你不需要决定目标群体（即 iOS 用户还是 Android 用户），因为跨平台软件可以在两者上运行，从而让你接触到更广泛的用户。
 
-*稳定性*
+### 稳定性
+
 iOS 和 Android 之间的漫游和设计存在差异，但在平台开发中，得益于共享代码库，这些差异会被自动处理。这有助于在两个论坛中创建应用品牌所有权，而比原生应用更轻松。
 
-*代码复用*
+### 代码复用
+
 这是平台开发最大的优势之一——你可以同时为 Android 和 iOS 创建自己的代码库，而不是像传统那样为特定平台构建软件。
 
-
-
-
-**62** ◾ 精通 React Native
-
-*快速开发*
+### 快速开发
 
 仅需一个代码即可管理 iOS 和 Android，当所有内容都集中在一个地方时，产品开发速度非常快。跨平台应用作为单个项目构建，尽管它们可以支持各种设备，但平台之间可以大量重复代码。
 
-*降低成本*
+### 降低成本
 
 构建跨平台应用的成本可以比构建传统应用低 30%，这归功于代码复用和快速开发的能力，这直接降低了成本。
 
 你目前为止所学的知识可能会让你得出结论：跨平台开发是完美无缺的——不，并不是。让我们现在就开始探讨。
 
-*需要额外的技术来确保高性能*
+### 需要额外的技术来确保高性能
 
-有一个常见的误区认为跨平台应用的效果不如其原生对应。例如，Flutter 和 React Native 的目标都是以每秒 60 帧的速度运行。大多数情况下，只要开发者具备足够的技能和专业知识，跨平台应用程序就可以像原生应用程序一样运行。
+有一个常见的误区认为跨平台应用的效果不如其原生对应。例如，`Flutter` 和 `React Native` 的目标都是以每秒 60 帧的速度运行。大多数情况下，只要开发者具备足够的技能和专业知识，跨平台应用程序就可以像原生应用程序一样运行。
 
 由于跨平台应用必须响应各种设备和平台，使得编码变得极其困难。这为工程师带来了大量工作，他们必须在不同的设备和平台中引入变量以考虑差异——特别是在涉及更复杂的方面时。
 
-章节总结
+### 章节总结
 
 本章涵盖了 React Native 的基础安装。这允许使用相同的代码库创建多平台应用。本质上，它允许开发者使用 React Native 框架以及其他原生平台功能。它还解释了它的特性。
 
-C H A P T E R 4
-移动端开发组件
+# CHAPTER 4
+
+## 移动端开发组件
 
 本章内容包括
 
@@ -2210,13 +2355,11 @@ C H A P T E R 4
 
 在上一章中，我们学习了如何使用 React Native 构建第一个应用程序。在本章中，我们将学习用于移动应用开发的组件。
 
-移动端组件
+### 移动端组件
 
-### HTML 与原生组件之间的类比
+#### HTML 与原生组件之间的类比
 
 当你为 Web 开发程序时，我们会使用各种基础 HTML 元素。这些包括 `<span>`、`<div>` 和 `<img>`，以及组织元素如 `<ol>`、`<ul>` 和 `<table>`。（你也可以考虑 `<audio>`、`<svg>`、`<canvas>` 等 HTML 元素，但我们目前将忽略它们。）
-
-**64** ◾ 精通 React Native
 
 在处理 React Native 时，我们不使用这些 HTML 元素，而是使用与它们几乎类比的各种组件。
 
@@ -2229,26 +2372,33 @@ C H A P T E R 4
 
 尽管这些元素的作用几乎相同，但它们并没有改变。让我们来看看这些组件在移动设备上通过 React Native 如何工作，以及它们与基于浏览器的对应物何不同。
 
-| Text 组件
+#### Text 组件
 
 渲染文本是一项基础功能；任何都需要在地方渲染文本。然而，在 React 和移动开发的背景下，文本处理与 Web 的文本渲染是分开的。
 
 在 HTML 中处理文本时，你可以在各种元素中包含原始文本字符串。此外，你可以使用子标签（如 `<strong>` 元素和 `<em>` 元素）对它们进行样式设置。因此，你会得到这样一段代码（HTML）：
 
-例如，
-`<p>The quick <em>brown</em> over the lazy <strong>dog</strong>.</p>`
+例如：
+
+```html
+<p>The quick <em>brown</em> over the lazy <strong>dog</strong>.</p>
+```
 
 在 React Native 中，`<Text>` 元素组件可以拥有纯文本节点作为子元素。换句话说，这样做是无效的：
 
-`<View>`
+```jsx
+<View>
 Text does not go here!
-`</View>`
+</View>
+```
 
 相反，将文本包装在 `<Text>` 组件中：
 
-`<View>`
-`<Text>This is OK!</Text>`
-`</View>`
+```jsx
+<View>
+<Text>This is OK!</Text>
+</View>
+```
 
 当你在 React Native 中处理 `<Text>` 组件时，你将不再访问 `<strong>` 和 `<em>` 等标签，但你可以通过使用 `fontWeight` 和 `fontStyle` 等属性应用样式来实现类似的效果。以下是你如何利用内联样式来实现这种效果：
 
@@ -2305,23 +2455,17 @@ var Em = React.createClass({
 
 同样，React Native 本身并不具备标题元素（h1, h2, 等）的概念，但很容易定义自己的样式化 `<Text>` 元素并在需要时使用。
 
+## 使用 TouchableHighlight
 
+任何对用户触摸有响应的界面元素（如按钮、控制元素等）通常都应该有一个 `<TouchableHighlight>` 包装器。
 
+`<TouchableHighlight>` 在视图被触摸时会产生覆盖层，为用户提供视觉反馈。重要的交互是让移动应用感觉不同于移动端优化网站的关键（因为后者的触摸响应是有限的）。作为一条一般原则，在网页上任何可能出现按钮或链接的地方，你都应该使用 `<TouchableHighlight>`。
 
+对于其基本功能，你只需要将部分包裹在 `<TouchableHighlight>` 中，它在被按下时会添加一个简单的覆盖层。
 
-**68** 精通 React Native
+`<TouchableHighlight>` 部分还为你提供了如 `onPressIn`、`onPressOut`、`onLongPress` 等事件钩子，你可以在 React 程序中使用这些事件。
 
-## 使用 TOUCHABLEHIGHLIGHT
-
-任何对用户触摸有响应的界面元素（如按钮、控制元素等）通常都应该有一个 <TouchableHighlight> 包装器。
-
-<TouchableHighlight> 在视图被触摸时会产生覆盖层，为用户提供视觉反馈。重要的交互是让移动应用感觉不同于移动端优化网站的关键（因为后者的触摸响应是有限的）。作为一条一般原则，在网页上任何可能出现按钮或链接的地方，你都应该使用 <TouchableHighlight>。
-
-对于其基本功能，你只需要将部分包裹在 <TouchableHighlight> 中，它在被按下时会添加一个简单的覆盖层。
-
-<TouchableHighlight> 部分还为你提供了如 `onPressIn`、`onPressOut`、`onLongPress` 等事件钩子，你可以在 React 程序中使用这些事件。
-
-示例 4.3 显示了如何将组件数据封装在 <TouchableHighlight> 中，以便用户提供反馈。
+示例 4.3 显示了如何将组件数据封装在 `<TouchableHighlight>` 中，以便用户提供反馈。
 
 **示例 4.3. 使用 TouchableHighlight 组件**
 
@@ -2338,13 +2482,11 @@ var Em = React.createClass({
 </TouchableHighlight>
 ```
 
-当用户按下按钮时，会出现覆盖层，文本会变为 <TouchableHighlight> 以给用户提供视觉反馈——左侧（左）和高亮的右侧（右）。
+当用户按下按钮时，会出现覆盖层，文本会变为 `<TouchableHighlight>` 以给用户提供视觉反馈——左侧（左）和高亮的右侧（右）。
 
-这是一个内置示例，但它展示了让“世界”按钮影响移动端的基本交互。覆盖层是重要的反馈部分，它让用户知道某些内容是可以按的。请注意，为了使用覆盖层，不需要对我们的样式应用任何逻辑；<TouchableHighlight> 随我们携带了逻辑部分。
+这是一个内置示例，但它展示了让“世界”按钮影响移动端的基本交互。覆盖层是重要的反馈部分，它让用户知道某些内容是可以按的。请注意，为了使用覆盖层，不需要对我们的样式应用任何逻辑；`<TouchableHighlight>` 随我们携带了逻辑部分。
 
-移动开发组件 **69**
-
-Touch/PressDemo.js 演示了 TouchableHighlight 的用法
+### Touch/PressDemo.js 演示了 TouchableHighlight 的用法
 
 ```javascript
 'use strict';
@@ -2386,11 +2528,7 @@ var Button = React.createClass({
     );
   }
 });
-```
 
-**70** 精通 React Native
-
-```javascript
 var styles = StyleSheet.create({
   container: {
     flex: 1,
@@ -2421,100 +2559,72 @@ module.exports = Button;
 
 尝试使用如 `onPress` 和 `onLongPress` 等钩子设置此按钮响应。获取这些事件如何与用户交互的方法是使用真实设备。
 
-## GESTURESPONDER 系统
+## GestureResponder 系统
 
-如果你想不仅仅是让事情变得“有趣”，React Native 还引入了两个自定义触摸 API：GestureResponder 和 PanResponder。GestureResponder 是一个低级 API，而 PanResponder 提供了更有用的说明。
+如果你想不仅仅是让事情变得“有趣”，React Native 还引入了两个自定义触摸 API：`GestureResponder` 和 `PanResponder`。`GestureResponder` 是一个低级 API，而 `PanResponder` 提供了更有用的说明。
 
-我们将从查看 GestureResponder 如何工作开始，因为它是 PanResponder 的基础。
+我们将从查看 `GestureResponder` 如何工作开始，因为它是 `PanResponder` 的基础。
 
 移动触摸非常复杂。大多数移动平台支持多点触摸（multitouch），这意味着屏幕上可以同时有多个触摸点（然而，并不是所有的指纹都要考虑，例如在屏幕角落的手掌）。此外，关于视图应该处理给定触摸的问题，这与网页上处理事件的方式类似，默认行为也是相同的：子元素具有自动触摸事件。在 React Native 的触摸系统中，如果我们选择，可以反转这种行为。
 
-触摸响应是一个捕捉给定触摸事件的想法。在上一节中，我们看到 <TouchableHighlight> 作为触摸响应。我们也可以让我们的部分响应响应。在此讨论的生命周期比较复杂。在触摸响应中获取这些的想法需要使用四个属性：
+触摸响应是一个捕捉给定触摸事件的想法。在上一节中，我们看到 `<TouchableHighlight>` 作为触摸响应。我们也可以让我们的部分响应响应。在此讨论的生命周期比较复杂。在触摸响应中获取这些的想法需要使用四个属性：
 
-1. View.props.onStartShouldResponder
-2. View.props.onMoveShouldResponder
-3. View.props.onResponderGrant
-4. View.props.onResponderReject
+1. `View.props.onStartShouldResponder`
+2. `View.props.onMoveShouldResponder`
+3. `View.props.onResponderGrant`
+4. `View.props.onResponderReject`
 
-触摸响应是一个捕捉给定触摸事件的想法。在上一节中，我们看到 <TouchableHighlight> 作为触摸响应。我们也可以让我们的部分响应响应。在此讨论的生命周期比较复杂。在触摸响应中获取这些的想法需要使用四个属性：
+- `View.props.onResponderMove`: 当用户移动手指时，响应器工作。
+- `View.props.onResponderRelease`: 当用户在触摸结束（即 "touchUp"）时，响应器工作。
+- `View.props.onTerminationRequest`: 如果有其他东西想要成为响应器。视图应该释放响应器吗？返回 true 允许释放。
+- `View.props.onResponderTermination`: 响应器从视图中移除。在调用 `ResponderRequest` 后可能再次查看，或者由操作系统处理（通过 iOS 的控制中心/通知中心发生）。
 
-移动开发组件 **71**
+在大多数情况下，你会更关注 `ResponderMoveReport`。所有这些方法都会获取触摸事件的操作，并附加以下内容（再次引用文档）：
 
-1. View.props.onStartShouldResponder
-2. View.props.onMoveShouldResponder
-3. View.props.onResponderGrant
-4. View.props.onResponderReject
-
-触摸响应是一个捕捉给定触摸事件的想法。在上一节中，我们看到 <TouchableHighlight> 作为触摸响应。我们也可以让我们的部分响应响应。在此讨论的生命周期比较复杂。在触摸响应中获取这些的想法需要使用四个属性：
-
-此问题与网页上处理事件的方式类似，默认行为也是相同的：子元素具有自动触摸事件。在 React Native 的触摸系统中，如果我们选择，可以反转这种行为。
-
-触摸响应是一个捕捉给定触摸事件的想法。在上一节中，我们看到 <TouchableHighlight> 作为触摸响应。我们也可以让我们的部分响应响应。在此讨论的生命周期比较复杂。在触摸响应中获取这些的想法需要使用四个属性：
-
-触摸响应是一个捕捉给定触摸事件的想法。在上一节中，我们看到 <TouchableHighlight> 作为触摸响应。我们也可以让我们的部分响应响应。在此讨论的生命周期比较复杂。在触摸响应中获取这些的想法需要使用四个属性：
-
-**72** 精通 React Native
-
-View.props.onResponderMove: 当用户移动手指时，响应器工作。
-View.props.onResponderRelease: 当用户在触摸结束（即 "touchUp"）时，响应器工作。
-View.props.onTerminationRequest: 如果有其他东西想要成为响应器。视图应该释放响应器吗？返回 true 允许释放
-View.props.onResponderTermination: 响应器从视图中移除。在调用 ResponderRequest 后可能再次查看，或者由操作系统处理（通过 iOS 的控制中心/通知中心发生）。
-
-在大多数情况下，你会更关注 ResponderMoveReport。所有这些方法都会获取触摸事件的操作，并附加以下内容（再次引用文档）：
-
-- changedTouches: 自上一次事件以来变化的所有触摸事件数组。
-- Identifier: 触摸 ID。
-- location: 相对于元素的 X 位置。
-- location: 相对于元素的 Y 位置。
-- pageX: 相对于屏幕的 X 位置。
-- pageY: 相对于屏幕的 Y 位置。
-- Target: 接收触摸事件的节点 ID。
-- Timestamp: 用于计算速度的时间标识。
-- touches: 屏幕上所有当前触摸的数组
+- `changedTouches`: 自上一次事件以来变化的所有触摸事件数组。
+- `identifier`: 触摸 ID。
+- `locationX`: 相对于元素的 X 位置。
+- `locationY`: 相对于元素的 Y 位置。
+- `pageX`: 相对于屏幕的 X 位置。
+- `pageY`: 相对于屏幕的 Y 位置。
+- `target`: 接收触摸事件的节点 ID。
+- `timestamp`: 用于计算速度的时间标识。
+- `touches`: 屏幕上所有当前触摸的数组。
 
 在决定是否响应事件时可以使用这些信息。例如，你的视觉只关心两个手指的触摸。这是一个底层 API；如果你想以这种方式发现并响应触摸，你需要花大量时间调整正确的参数，并找出你应该关注的值。
 
-PanResponder
+### PanResponder
 
-与 <TouchableHighlight> 不同，PanResponder 不是一个部分，而是分配给 React Native 的类。它提供了比基础更高级的 API
+与 `<TouchableHighlight>` 不同，`PanResponder` 不是一个部分，而是分配给 React Native 的类。它提供了比基础更高级的 API，Gesture Responder 程序检测到的事件，同时提供了对这些绿色事件的访问权限。根据 `PanResponder` 文档，`PanResponder` 手势对象将允许你访问以下内容：
 
-
-移动开发组件 ◾ **73**
-
-Gesture Responder 程序检测到的事件，同时提供了对这些绿色事件的访问权限。根据 PanResponder 文档，PanResponder 手势对象将允许你访问以下内容：
-
-- stateID: gestureState 的 ID（屏幕上至少有一个触摸点）
-- moveX: 最近移动的触摸点的屏幕坐标
-- moveY: 最近移动的触摸点的屏幕坐标
-- x0: 响应者在 x 轴上授予的屏幕坐标
-- y0: 响应者在 y 轴上授予的屏幕坐标
-- dx: 自触摸开始以来手势的累积距离
-- dy: 自触摸开始以来手势的累积距离
-- vx: 手势当前速度
-- vy: 手势的当前速度
-- numberActiveTouches: 当前屏幕上的触摸点数量
+- `stateID`: `gestureState` 的 ID（屏幕上至少有一个触摸点）
+- `moveX`: 最近移动的触摸点的屏幕坐标
+- `moveY`: 最近移动的触摸点的屏幕坐标
+- `x0`: 响应者在 x 轴上授予的屏幕坐标
+- `y0`: 响应者在 y 轴上授予的屏幕坐标
+- `dx`: 自触摸开始以来手势的累积距离
+- `dy`: 自触摸开始以来手势的累积距离
+- `vx`: 手势当前速度
+- `vy`: 手势的当前速度
+- `numberActiveTouches`: 当前屏幕上的触摸点数量
 
 如你所见，除了绿色区域数据外，手势状态对象还包含了如当前触摸速度和聚合距离等信息。
 
-为了在组件中使用 PanResponder，我们需要创建一个 PanResponder 对象并在子格式中将其附加到组件上。要创建 PanResponder，我们需要指定适当的 PanResponder 事件持有者。
+为了在组件中使用 `PanResponder`，我们需要创建一个 `PanResponder` 对象并在子格式中将其附加到组件上。要创建 `PanResponder`，我们需要指定适当的 `PanResponder` 事件持有者。
 
-*创建 PanResponder 需要我们传递一组回调函数*
+#### 创建 PanResponder 需要我们传递一组回调函数
 
 ```javascript
 this._panResponder = PanResponder.create({
   onStartShouldSetPanResponder: this._handleStartShouldSetPanResponder,
   onMoveShouldSetPanResponder: this._handleMoveShouldSetPanResponder,
-  onStartShouldSetPanResponder:
+  onPanResponderGrant: this._handlePanResponderGrant,
   onPanResponderMove: this._handlePanResponderMove,
   onPanResponderTerminate: this._handlePanResponderEnd,
 });
 ```
 
-**74** ◾ 精通 React Native
-
-然后，我们使用语法在组件的 render 方法中将 PanResponder 附加到视图上。
-
-*使用扩展语法附加 PanResponder*
+#### 使用扩展语法附加 PanResponder
 
 ```javascript
 render: function() {
@@ -2526,14 +2636,11 @@ render: function() {
 }
 ```
 
-在此之后，如果在该视图内出现触摸，则在相应的动作事件期间，你传递到 PanResponder.create 调用中的持有者将会被请求执行。
+在此之后，如果在该视图内出现触摸，则在相应的动作事件期间，你传递到 `PanResponder.create` 调用中的持有者将会被请求执行。
 
-示例 4.7 显示了为 React Native  PanResponder 模型代码的修改版本。此版本监听容器视图中的触摸事件，而不仅仅是一个圆，因此当你与应用程序交互时，值将打印在屏幕上。如果你计划使用触摸传感器，我建议你在真实设备上尝试此应用，以感受这些值是如何响应的。它显示了此示例的截图，但你需要一个带有真实触摸屏的设备。
+示例 4.7 显示了为 React Native `PanResponder` 模型代码的修改版本。此版本监听容器视图中的触摸事件，而不仅仅是一个圆，因此当你与应用程序交互时，值将打印在屏幕上。如果你计划使用触摸传感器，我建议你在真实设备上尝试此应用，以感受这些值是如何响应的。它显示了此示例的截图，但你需要一个带有真实触摸屏的设备。
 
-*Touch/PanDemo.js 解释了 PanResponder 的用法*
-*// 改自下方 github 链接*
-*//* xlink:href="https://github.com/facebook/react-native/blob/master/">*https://github.com/facebook/*react-native/blob/master/**
-*// Examples/UIExplorer/PanResponderExample.js*
+#### Touch/PanDemo.js 解释了 PanResponder 的用法
 
 ```javascript
 'use strict';
@@ -2542,8 +2649,7 @@ var React = require('react-native');
 var {
   StyleSheet,
   PanResponder,
-**75** 移动开发组件 ◾ **75**
-View,
+  View,
   Text
 } = React;
 
@@ -2581,7 +2687,6 @@ var PanResponderExample = React.createClass({
     });
     this._previousLeft = 20;
     this._previousTop = 84;
-**76** 精通 React Native
     this._circleStyles = {
       left: this._previousLeft,
       top: this._previousTop,
@@ -2621,7 +2726,6 @@ var PanResponderExample = React.createClass({
       backgroundColor: CIRCLE_COLOR
     });
   },
-**101** 移动开发组件 ◾ **77**
   // 我们直接通过 setNativeProps 控制圆的位置。
   _updatePosition: function() {
     this.circle && this.circle.setNativeProps(this._circleStyles);
@@ -2652,7 +2756,6 @@ var PanResponderExample = React.createClass({
     });
     // 使用增量计算当前位置
     this._circleStyles.left = this._previousLeft + gestureState.dx;
-**102** 78 精通 React Native
     this._circleStyles.top = this._previousTop + gestureState.dy;
     this._updatePosition();
   },
@@ -2680,52 +2783,50 @@ var styles = StyleSheet.create({
 });
 
 module.exports = PanResponderExample;
+```
 
 ## 选择触摸管理方法
 
-你应该决定何时使用本节讨论的触摸和 API。这取决于你想构建的内容。要给用户提供基础响应并指示按钮或其他元素正在被“触摸”，请使用 TouchableHighlight 部分。要使用自定义触摸链接，请使用手势系统或 PanResponder。你可能会一直喜欢 PanResponder 方法，因为它让你访问 GestureResponder 提供的简单触摸事件。如果你开始设计游戏或带有交互的应用程序，那么你需要花时间使用这些 API 构建你想要的交互。对于其他应用程序，你不需要手势系统或 PanResponder 实现任何自定义触摸处理。在下一节中，我们查看了一些实现常用 UI 模式的高级组件。
+你应该决定何时使用本节讨论的触摸和 API。这取决于你想构建的内容。要给用户提供基础响应并指示按钮或其他元素正在被“触摸”，请使用 `TouchableHighlight` 部分。要使用自定义触摸链接，请使用手势系统或 `PanResponder`。你可能会一直喜欢 `PanResponder` 方法，因为它让你访问 `GestureResponder` 提供的简单触摸事件。如果你开始设计游戏或带有交互的应用程序，那么你需要花时间使用这些 API 构建你想要的交互。对于其他应用程序，你不需要手势系统或 `PanResponder` 实现任何自定义触摸处理。在下一节中，我们查看了一些实现常用 UI 模式的高级组件。
 
 ## 使用组织组件工作
 
-**103** 移动开发组件 ◾ **79**
-在本节中，我们将查看可以用于控制应用程序内部流程的组织部分。这包括 <TabView>、<NavigatorView> 和 <ListView>，它们都使用了常用的移动交互和导航模式。一旦你设置了应用程序导航流程，你会发现这些组件对于使你的应用程序更加真实非常有帮助。
+在本节中，我们将查看可以用于控制应用程序内部流程的组织部分。这包括 `<TabView>`、`<NavigatorView>` 和 `<ListView>`，它们都使用了常用的移动交互和导航模式。一旦你设置了应用程序导航流程，你会发现这些组件对于使你的应用程序更加真实非常有帮助。
 
 ### 使用 ListView
 
-让我们从 <ListView> 组件开始。在本节中，你将创建一个列出《纽约时报》畅销列表的应用程序，允许我们查看每本书的数据。如果你愿意，可以从《纽约时报》获取你的 API 令牌。如果没有，使用示例代码中编码的 API 令牌。
+让我们从 `<ListView>` 组件开始。在本节中，你将创建一个列出《纽约时报》畅销列表的应用程序，允许我们查看每本书的数据。如果你愿意，可以从《纽约时报》获取你的 API 令牌。如果没有，使用示例代码中编码的 API 令牌。
 
-列表对于移动开发非常有用，你会注意到许多移动用户链接将它们作为中心对象包含。<ListView> 仅仅是查看，可选地带有类别、标题或页脚的特殊查看器。例如，你可以在 Dropbox、Twitter 和 iOS 应用中看到交互模式。
+列表对于移动开发非常有用，你会注意到许多移动用户链接将它们作为中心对象包含。`<ListView>` 仅仅是查看，可选地带有类别、标题或页脚的特殊查看器。例如，你可以在 Dropbox、Twitter 和 iOS 应用中看到交互模式。
 
-<ListView> 是 React Native 发放异彩的一个例子，因为可以使用其宿域。对于移动端，<ListView> 的传统部分通常会极大改进，以确保呈现流畅且无语言限制。如果你预计为 <ListView> 提供大量项目，你应该尝试保持子视图简单，以尽量减少卡顿。基础的 React Native <ListView> 组件有两个属性：dataSource 和 renderRow。source 正如名称所示，是需要提供的数据源。renderRow 应该从单个数据源元素返回基于数据的组件。
+`<ListView>` 是 React Native 发放异彩的一个例子，因为可以使用其宿域。对于移动端，`<ListView>` 的传统部分通常会极大改进，以确保呈现流畅且无语言限制。如果你预计为 `<ListView>` 提供大量项目，你应该尝试保持子视图简单，以尽量减少卡顿。基础的 React Native `<ListView>` 组件有两个属性：`dataSource` 和 `renderRow`。`source` 正如名称所示，是需要提供的数据源。`renderRow` 应该从单个数据源元素返回基于数据的组件。
 
-这种基础用法在 SimpleList.js 中解释。我们将从向我们的 <SimpleList> 组件添加 dataSource 开始。一个 ListView.DataSource 需要实现 rowHasChanged 方法。这是一个简单的示例：
+这种基础用法在 `SimpleList.js` 中解释。我们将从向我们的 `<SimpleList>` 组件添加 `dataSource` 开始。一个 `ListView.DataSource` 需要实现 `rowHasChanged` 方法。这是一个简单的示例：
 
 ```javascript
 var ds = new ListView.DataSource({rowHasChanged: (r1, r2) => r1 !== r2});
 ```
 
-为了设置 dataSource 的正确内容，我们使用 cloneWithRows。让我们 getInitialState 调用中返回 dataSource：
+为了设置 `dataSource` 的正确内容，我们使用 `cloneWithRows`。让我们 `getInitialState` 调用中返回 `dataSource`：
 
+```javascript
 getInitialState: function() {
-
-
-var ds = new ListView.DataSource({rowHasChanged:
-  (r1, r2) => r1 !== r2});
-
-return {
-  dataSource: ds.cloneWithRows(['a', 'b', 'c', 'a longer example', 'd', 'e'])
-};
+  var ds = new ListView.DataSource({rowHasChanged: (r1, r2) => r1 !== r2});
+  return {
+    dataSource: ds.cloneWithRows(['a', 'b', 'c', 'a longer example', 'd', 'e'])
+  };
 }
-
-
+```
 
 我们需要的另一个属性是 `renderRow`，它应该是一个函数，用于为特定行返回基于 JSX 的数据：
 
+```javascript
 _renderRow: function(rowData) {
   return <Text style={styles.row}>{rowData}</Text>;
 }
+```
 
-现在我们可以将所有内容整合在一起查看一个简单的 <ListView>，通过如下方式渲染 <ListView>：
+现在我们可以将所有内容整合在一起查看一个简单的 `<ListView>`，通过如下方式渲染 `<ListView>`：
 
 ```jsx
 <ListView
@@ -2734,21 +2835,20 @@ _renderRow: function(rowData) {
 />
 ```
 
-让我们创建一个带有更复杂数据的 <ListView>。我们将使用 NY Times API 创建一个卖家应用程序，它会渲染 NY Times 畅销列表。
+让我们创建一个带有更复杂数据的 `<ListView>`。我们将使用 NY Times API 创建一个卖家应用程序，它会渲染 NY Times 畅销列表。
 
 首先，我们将数据源初始化为空，因为我们需要获取数据：
 
 ```javascript
 getInitialState: function() {
-  var ds = new ListView.DataSource({rowHasChanged:
-    (r1, r2) => r1 !== r2});
+  var ds = new ListView.DataSource({rowHasChanged: (r1, r2) => r1 !== r2});
   return {
     dataSource: ds.cloneWithRows([])
   };
 }
 ```
 
-然后，我们也可以添加一个方法在获取数据后进行获取和更新。该方法会在 componentDidMount 中调用：
+然后，我们也可以添加一个方法在获取数据后进行获取和更新。该方法会在 `componentDidMount` 中调用：
 
 ```javascript
 _refreshData: function() {
@@ -2763,23 +2863,21 @@ _refreshData: function() {
 }
 ```
 
-NYTimes API 返回的每本书都有三个属性：coverURL、author 和 title。
+NYTimes API 返回的每本书都有三个属性：`coverURL`、`author` 和 `title`。
 
-我们更新 <ListView> 函数，使其返回一个基于这些属性的组件。
+我们更新 `<ListView>` 函数，使其返回一个基于这些属性的组件。
 
-*对于 _renderRow，我们只将适当的数据传递给 <BookItem>*
+#### 对于 _renderRow，我们只将适当的数据传递给 <BookItem>
 
 ```javascript
 _renderRow: function(rowData) {
-  return <BookItem coverURL={rowData.book_image}
-    title={rowData.title}
-    author={rowData.author}/>
-},
+  return <BookItem coverURL={rowData.book_image} title={rowData.title} author={rowData.author}/>;
+}
 ```
 
-我们还将加入一个头部和页脚组件以及它们的工作原理。请注意，对于 <ListView> 来说，头部和页脚并不是固定的；它们会随列表部分一起滚动。如果你想要一个固定的头部或页脚，最简单的方法可能是从 <ListView> 组件之外单独渲染它们。
+我们还将加入一个头部和页脚组件以及它们的工作原理。请注意，对于 `<ListView>` 来说，头部和页脚并不是固定的；它们会随列表部分一起滚动。如果你想要一个固定的头部或页脚，最简单的方法可能是从 `<ListView>` 组件之外单独渲染它们。
 
-*在 BookListV2.js 中的头部和页脚元素添加 render 方法*
+#### 在 BookListV2.js 中的头部和页脚元素添加 render 方法
 
 ```javascript
 _renderHeader: function() {
@@ -2793,15 +2891,13 @@ _renderHeader: function() {
 _renderFooter: function() {
   return (
     <View style={styles.sectionDivider}>
-      <Text>
-        The data from the New York Times Seller list.
-      </Text>
+      <Text>Data from the New York Times Seller list.</Text>
     </View>
   );
 },
 ```
 
-总而言之，Sellers 应用程序由两个文件组成：BookListV2.js 和 BookItem.js。BookListV2.js 见示例 4.10。（BookList.js 是一个更简单的文件，它从 API 获取数据，也包含在 GitHub 仓库中供你参考。）
+总而言之，Sellers 应用程序由两个文件组成：`BookListV2.js` 和 `BookItem.js`。`BookListV2.js` 见示例 4.10。（`BookList.js` 是一个更简单的文件，它从 API 获取数据，也包含在 GitHub 仓库中供你参考。）
 
 ***Bestsellers/BookListV2.js***
 
@@ -2816,6 +2912,7 @@ var {
   StyleSheet,
   ListView,
 } = React;
+
 var BookItem = require('./BookItem');
 var API_KEY = '73b19491b83909c7e07016f4bb4644f9:260667290';
 var QUERY_TYPE = 'hardcover-fiction';
@@ -2824,23 +2921,17 @@ var ENDPOINT = `${API_STEM}/${QUERY_TYPE}?response-format=json&api-key=${API_KEY
 
 var BookList = React.createClass({
   getInitialState: function() {
-    var ds = new ListView.DataSource({rowHasChanged:
-      (r1, r2) => r1 !== r2});
+    var ds = new ListView.DataSource({rowHasChanged: (r1, r2) => r1 !== r2});
     return {
       dataSource: ds.cloneWithRows([])
     };
   },
-
   componentDidMount: function() {
     this._refreshData();
   },
-
   _renderRow: function(rowData) {
-    return <BookItem coverURL={rowData.book_image}
-      title={rowData.title}
-      author={rowData.author}/>
+    return <BookItem coverURL={rowData.book_image} title={rowData.title} author={rowData.author}/>;
   },
-
   _renderHeader: function() {
     return (<View style={styles.sectionDivider}>
       <Text style={styles.headingText}>
@@ -2848,7 +2939,6 @@ var BookList = React.createClass({
       </Text>
     </View>);
   },
-
   _renderFooter: function() {
     return (
       <View style={styles.sectionDivider}>
@@ -2856,7 +2946,6 @@ var BookList = React.createClass({
       </View>
     );
   },
-
   _refreshData: function() {
     fetch(ENDPOINT)
       .then((response) => response.json())
@@ -2866,11 +2955,10 @@ var BookList = React.createClass({
         });
       });
   },
-
   render: function() {
     return (
       <ListView
-        style={this.state.dataSource}
+        dataSource={this.state.dataSource}
         renderRow={this._renderRow}
         renderHeader={this._renderHeader}
         renderFooter={this._renderFooter}
@@ -2917,7 +3005,7 @@ var styles = StyleSheet.create({
 module.exports = BookList;
 ```
 
-<BookItem> 是一个可以处理列表中的每个视图的简单组件
+`<BookItem>` 是一个可以处理列表中的每个视图的简单组件。
 
 ***Bestsellers/BookItem.js***
 
@@ -2969,7 +3057,6 @@ var BookItem = React.createClass({
     author: React.PropTypes.isRequired,
     title: React.PropTypes.isRequired
   },
-
   render: function() {
     return (
       <View style={styles.bookItem}>
@@ -2986,27 +3073,29 @@ var BookItem = React.createClass({
 module.exports = BookItem;
 ```
 
-如果你有复杂的数据或非常长的列表，你需要关注你选择的更复杂的 <ListView> 布局中的功能。然而，对于大多数应用程序，这就足够了。
 
-### 使用导航器 (NAVIGATORS)
 
-<ListView> 是将多个视图组合成更易用协作的很好的示例。在最高层，我们可以使用如 <Navigator> 等功能展示不同的应用程序屏幕，就像我们在网站上可能有不同的页面一样。
+如果你有复杂的数据或非常长的列表，你需要关注你选择的更复杂的 `<ListView>` 布局中的功能。然而，对于大多数应用程序，这就足够了。
 
-Navigator 是隐藏但关键的组件，用于许多常用应用程序。例如，iOS 设置应用可以使用 <Navigator> 和多个 <ListView> 组件的组合。Dropbox 应用也使用了 Navigator。
+### 使用导航器
 
-<Navigator> 允许你的应用程序在不同的屏幕（通常称为“场景”）之间切换，同时保留“多个”路由，这样你可以推送、弹出或旋转区域。你可以将其比 Web 历史 API。“路由”是屏幕标题，对应索引。
+`<ListView>` 是将多个视图组合成更易用协作的很好的示例。在最高层，我们可以使用如 `<Navigator>` 等功能展示不同的应用程序屏幕，就像我们在网站上可能有不同的页面一样。
+
+`Navigator` 是隐藏但关键的组件，用于许多常用应用程序。例如，iOS 设置应用可以使用 `<Navigator>` 和多个 `<ListView>` 组件的组合。Dropbox 应用也使用了 `Navigator`。
+
+`<Navigator>` 允许你的应用程序在不同的屏幕（通常称为“场景”）之间切换，同时保留“多个”路由，这样你可以推送、弹出或旋转区域。你可以将其比作 Web 历史 API。“路由”是屏幕标题，对应索引。
 
 例如，在设置应用程序中，初始栈是空的。如果你选择一个子菜单，第一个组会被推入栈中。点击屏幕左角的“返回”按钮将再次关闭它。
 
-如果你对这些如何运行感兴趣，UIExplorerapp 有关于使用 Navigator API 的几种方法的良好演示。请注意有两种 Navigator 选项：跨平台的 <Navigator> 组件和 <NavigatorIOS> 组件。在本书书中，我们将选择使用 <Navigator>。
+如果你对这些如何运行感兴趣，`UIExplorerapp` 有关于使用 `Navigator` API 的几种方法的良好演示。请注意有两种 `Navigator` 选项：跨平台的 `<Navigator>` 组件和 `<NavigatorIOS>` 组件。在本书中，我们将选择使用 `<Navigator>`。
 
-## 其他组织组件 (OTHER ORGANATIONAL COMPONENTS)
+## 其他组织组件
 
-还有许多其他组织部分。例如，其中几个包括 <TabBarIOS>、<SegmentedControlIOS>、<DrawerLayoutAndroid> 和 <ToolbarAndroid>
+还有许多其他组织部分。例如，其中几个包括 `<TabBarIOS>`、`<SegmentedControlIOS>`、`<DrawerLayoutAndroid>` 和 `<ToolbarAndroid>`。
 
 你会发现所有这些都带有特定平台的后缀。这是因为它们将原生 API 加载到特定平台的 UI 元素中。
 
-这些功能对于在应用程序中设置多个屏幕很有用。例如，<TabBarIOS> 和 <DrawerLayoutAndroid> 提供了多个功能之间切换的简单方法。<SegmentedControlIOS> 和 <ToolbarAndroid> 适用于良好的控件。
+这些功能对于在应用程序中设置多个屏幕很有用。例如，`<TabBarIOS>` 和 `<DrawerLayoutAndroid>` 提供了多个功能之间切换的简单方法。`<SegmentedControlIOS>` 和 `<ToolbarAndroid>` 适用于良好的控件。
 
 你可能希望查看特定平台的设计指南，了解如何最佳使用这些组件：
 
@@ -3015,147 +3104,225 @@ Navigator 是隐藏但关键的组件，用于许多常用应用程序。例如�
 
 你如何利用平台特定组件？让我们来看看如何在跨平台应用程序中处理平台特定组件。
 
-## 平台特定组件 (PLATFORM-SPECIFIC COMPONENTS)
+## 平台特定组件
 
 并不是所有组件在所有平台上都可用，而且并不是所有的交互模式都适用于所有设备。并不意味着你不能在应用程序中使用平台特定的代码！在本节中，我们将介绍平台特定组件，以及如何整合它们的策略。
 
 ### 仅限 iOS 或 Android 的组件
 
-某些组件在特定平台上可用。它包括如 <TabBarIOS> 或 <SwitchAndroid> 等内容。它们通常是平台特定的，因为它们封装了某些底层的平台特定 API。对于某些组件，拥有一个平台无关的版本并没有
-
-
-
-
-
-**88** ■ 掌握 React Native
-
-这很有道理。例如，`<ToolbarAndroid>` 组件为一种视图类型暴露了 Android 专用的 API，而这种视图类型在 iOS 上根本不存在。平台特定的组件以适当的后缀命名：IOS 或 Android。如果你尝试在在错误的地方安装其中一个，你的应用程序将会崩溃。
+某些组件在特定平台上可用。它包括如 `<TabBarIOS>` 或 `<SwitchAndroid>` 等内容。它们通常是平台特定的，因为它们封装了某些底层的平台特定 API。对于某些组件，拥有一个平台无关的版本并没有这很有道理。例如，`<ToolbarAndroid>` 组件为一种视图类型暴露了 Android 专用的 API，而这种视图类型在 iOS 上根本不存在。平台特定的组件以适当的后缀命名：IOS 或 Android。如果你尝试在在错误的地方安装其中一个，你的应用程序将会崩溃。
 
 组件还可以拥有特定字段的资源。在文档中，这些资源被标记上一个小小的标签，指示它们的用途。例如，`<TextInput>` 具有一些与平台无关的属性（props），另一些则是专门针对 iOS 或 Android 的。
 
 ### 具有平台特定版本的组件
 
-那么，你如何在跨平台应用中处理平台特定的组件或属性 呢？好消息是，你仍然可以使用这些组件。请记住应用如何同时拥有 `index.ios.js` 和 `index.android.js` 文件。这种命名约定可以用于任何文件，以创建一个在 Android 和 iOS 上具有不同实现的组件。
+那么，你如何在跨平台应用中处理平台特定的组件或属性呢？好消息是，你仍然可以使用这些组件。请记住应用如何同时拥有 `index.ios.js` 和 `index.android.js` 文件。这种命名约定可以用于任何文件，以创建一个在 Android 和 iOS 上具有不同实现的组件。
 
 为了举例说明，我们将使用 `<SwitchIOS>` 和 `<SwitchAndroid>` 组件。它们展示了略有不同的 API，但如果我们只想使用一个简单的开关呢？让我们创建一个封装部分 `<Switch>`，它为论坛提供了一个特定的部分。
 
 我们将从实现 `switch.ios.js` 开始。它是对 `<SwitchIOS>` 的非常简单的封装，并允许我们在开关值改变时提供回调函数。
 
-*Switch.ios.js*
+**Switch.ios.js**
 
 ```javascript
 var React = require('react-native');
+
 var { SwitchIOS } = React;
+
 var Switch = React.createClass({
+
   getInitialState() {
+
     return {value: false};
+
   },
+
   _onValueChange(value) {
+
     this.setState({value: value});
+
     if (this.props.onValueChange) {
+
       this.props.onValueChange(value);
+
     }
+
   },
+
   render() {
+
     return (
+
       <SwitchIOS
+
         onValueChange={this._onValueChange}
+
         value={this.state.value}/>
+
     );
+
   }
+
 });
+
 module.exports = Switch;
 ```
 
 接下来，让我们实现 `switch.android.js`。
 
-***Switch.android.js***
+**Switch.android.js**
 
 ```javascript
 var React = require('react-native');
+
 var { SwitchAndroid } = React;
+
 var Switch = React.createClass({
+
   getInitialState() {
+
     return {value: false};
+
   },
+
   _onValueChange(value) {
+
     this.setState({value: value});
+
     if (this.props.onValueChange) {
+
       this.props.onValueChange(value);
+
     }
+
   },
+
   render() {
+
     return (
+
       <SwitchAndroid
+
         onValueChange={this._onValueChange}
+
         value={this.state.value}/>
+
     );
+
   }
+
 });
+
 module.exports = Switch;
 ```
 
-注意，它看起来与 `switch.ios.js` 几乎相同，并且实现了相同的 API。 区别在于它使用了 `<SwitchAndroid>` 而不是 `<SwitchIOS>`。我们现在可以使用以下语法从另一个文件导入我们的 `<Switch>` 组件：
+注意，它看起来与 `switch.ios.js` 几乎相同，并且实现了相同的 API。区别在于它使用了 `<SwitchAndroid>` 而不是 `<SwitchIOS>`。我们现在可以使用以下语法从另一个文件导入我们的 `<Switch>` 组件：
 
 ```javascript
 var Switch = require('./switch');
+
 ...
+
 var switchComp = <Switch onValueChange={(val) => {console.log(val); }}/>;
 ```
 
 让我们实际使用一下 `<Switch>` 组件。创建一个新文件 `CrossPlatform.js`，并包含下面所示的代码。我们根据 `<Switch>` 的当前值更改背景颜色。
 
-*CrossPlatform.js 使用了 <Switch*> 组件*
+**CrossPlatform.js 使用了 `<Switch>` 组件**
 
 ```javascript
 var React = require('react-native');
+
 var {
+
   Text,
+
   View,
+
   StyleSheet,
+
 } = React;
+
 var Switch = require('./switch');
+
 var CrossPlatform = React.createClass({
+
   getInitialState() {
+
     return {val: false};
+
   },
+
   _onValueChange(val) {
+
     this.setState({val: val});
+
   },
+
   render: function() {
+
     var colorClass = this.state.val ? styles.blueContainer : styles.redContainer;
+
     return (
+
       <View style={[styles.container, colorClass]}>
+
         <Text style={styles.welcome}>
+
           让我变蓝色！
+
         </Text>
+
         <Switch onValueChange={this._onValueChange}/>
+
       </View>
+
     );
+
   }
+
 });
+
 var styles = StyleSheet.create({
+
   container: {
+
     flex: 1,
+
     justifyContent: 'center',
+
     alignItems: 'center',
+
   },
+
   blueContainer: {
+
     backgroundColor: '#5555FF'
+
   },
+
   redContainer: {
+
     backgroundColor: '#FF5555'
+
   },
+
   welcome: {
+
     fontSize: 20,
+
     textAlign: 'center',
+
     margin: 10,
+
   }
+
 });
+
 module.exports = CrossPlatform;
 ```
 
-注意，这里还有一个 `switch.js` 文件，但我们可以调用 `require('./switch)`。React Native 包将根据平台自动选择正确的 `index.android.js` 或 `index.ios.js`。最后，返回。
+注意，这里还有一个 `switch.js` 文件，但我们可以调用 `require('./switch')`。React Native 包将根据平台自动选择正确的 `index.android.js` 或 `index.ios.js`。最后，返回。
 
 ## 何时使用平台特定
 
@@ -3180,18 +3347,13 @@ module.exports = CrossPlatform;
 - 组织与继承
 - 布局的定位与设计
 
-
-
-
-
-## 94 - 精通 React Native
-
 ### 1. 样式非常重要：让它们易于查找
 
 将样式保留在根源文件夹中。
 
 样式是初学者需要关注的问题，样式可以从应用程序代码中的顶层文件夹访问。
 
+```text
 MyReactNativeApp
 - src
 - assets
@@ -3202,8 +3364,7 @@ MyReactNativeApp
 - index.js
 - typography.js
 - ...
-
-...
+```
 
 我们几乎在每个类别中都会引用样式，将它们尽可能变得易于访问将获得纯净的代码。
 
@@ -3215,74 +3376,100 @@ MyReactNativeApp
 
 `import { MyStyles } from "../../../../common/utils/styles/my_styles"`
 
-## 2. 原子化！
+### 2. 原子化！
 
 从更简单的样式构建构建复杂的样式。
 
-*通过在样式声明中使用对象构造函数，*
-*我们得到了非常简短且易读的样式，*
-*这些样式允许我们在各个部分中进行声明。*
+通过在样式声明中使用对象构造函数，我们得到了非常简短且易读的样式，这些样式允许我们在各个部分中进行声明。
 
-样式与布局 - 95
+**buttons.js**
 
-*// buttons.js*
 ```javascript
 export const small = {
+
   paddingHorizontal: 10,
+
   paddingVertical: 12,
+
   width: 75
+
 };
 
 export const rounded = {
+
   borderRadius: 50
+
 };
 
 export const smallRounded = {
+
   ...base,
+
   ...small,
+
   ...rounded
+
 };
 ```
 
-*// src/MyComponent/index.js*
+**src/MyComponent/index.js**
+
 ```javascript
 const styles = StyleSheet.create({
+
   button: {
+
     ...Buttons.smallRounded,
+
   },
+
 })
 ```
 
 理解意图和维护比以下代码更容易：
 
-*// src/MyComponent/index.js*
+**src/MyComponent/index.js**
+
 ```javascript
 const styles = StyleSheet.create({
+
   button: {
+
     paddingHorizontal: 10,
+
     paddingVertical: 12,
+
     width: 75,
+
     borderRadius: 50
+
   },
+
 })
 ```
 
-## 3. 样式非常重要：让它们易于使用
+### 3. 样式非常重要：让它们易于使用
 
 将相同的变量分组到模块中并将它们合并到一个 `index.js` 文件中。当为工作做好计划时，样式的灵活性易于发现和理解。因此，它们必须存在于有目的的文件中。当我们在文件夹中放置 `index.js` 时，我们可以使用 JavaScript ES6 语法一次性导入所有样式。
 
+```text
 - styles
 - colors.js
 - index.js
 - spacing.js
 - typography.js
 - buttons.js
+```
 
-*// src/styles/index.js*
+**src/styles/index.js**
+
 ```javascript
 import * as Buttons from './buttons'
+
 import * as Colors from './colors'
+
 import * as Spacing from './spacing'
+
 import * as Typography from './typography'
 
 export { Typography, Spacing, Colors, Buttons }
@@ -3295,171 +3482,170 @@ export { Typography, Spacing, Colors, Buttons }
 - 轻松地扩展和修改常用样式
 - 编写更简洁、更有表现力的代码
 
-*// src/MyComponent/index.js*
+**src/MyComponent/index.js**
+
 ```javascript
 import { Typography, Colors, Spacing } from '../styles'
+
 ...
 
 const styles = StyleSheet.create({
+
   container: {
+
     backgroundColor: Colors.background,
+
     alignItems: 'center',
+
     padding: Spacing.base,
+
   },
+
   header: {
+
     flex: 1,
+
     ...Typography.mainHeader,
+
   },
+
   section: {
+
     flex: 3,
+
     ...Typography.section,
+
   }
+
 })
 ```
 
-样式与布局 - 97
-
 优于以下代码：
 
-*// src/MyComponent/index.js*
+**src/MyComponent/index.js**
+
 ```javascript
 import {
+
   largePadding,
+
   smallest,
+
   small,
+
   large,
+
   base,
+
 } from '../../../common/utils/styles/spacing'
+
 import {
+
   largeRadius,
+
   baseTextColor,
+
   headerFontSize,
+
   smallFontSize,
+
 } from '../../../common/utils/styles/common'
+
 import { background, shuttleGray } from '../../../common/utils/styles/colors'
 
 const styles = StyleSheet.create({
+
   container: {
+
     backgroundColor: background,
+
     padding: largePadding,
+
   },
+
   header: {
+
     flex: 1,
+
     alignItems: 'center',
+
     backgroundColor: '#b7bdc5',
+
     flexDirection: 'row',
+
     justifyContent: 'center',
+
     borderRadius: largeRadius,
+
     color: shuttleGray,
+
     fontSize: headerFontSize,
+
     paddingBottom: base,
+
   },
+
   section: {
+
     flex: 3,
+
     alignItems: 'center',
+
     backgroundColor: background,
+
     flexDirection: 'row',
+
     justifyContent: 'center',
+
     borderRadius: largeRadius,
+
     color: baseTextColor,
+
     fontSize: smallFontSize,
+
     lineHeight: 19,
+
   }
+
 })
 ```
 
 这总结了不断从同一个地方提取样式的共识，这在整个项目生命周期内显著节省了开发周期。
 
-## 4. 保持样式靠近
+### 4. 保持样式靠近
 
-只需更新单个文件即可改进部分样式更改的简单性在某种程度上是快速的并导致更少的错误。将 StyleSheet 与部分保持一致。在与你的部分类似的文件中定义 StyleSheet 有助于确保：
+只需更新单个文件即可改进部分样式更改的简单性在某种程度上是快速的并导致更少的错误。将 `StyleSheet` 与部分保持一致。在与你的部分类似的文件中定义 `StyleSheet` 有助于确保：
 - 一个部分的样式在未来的重复中不会被另一个部分的样式覆盖；
 - 样式将随着部分的增长而维护；
 - 部分可能会在段落期间变化；
 
-由于我们只需要更新单个文件来改进一个样式更改，这种简单性是快速的，且错误更少。将 StyleSheet 与部分保持一致。在与你的部分类似的文件中定义 StyleSheet 有助于确保：
+由于我们只需要更新单个文件来改进一个样式更改，这种简单性是快速的，且错误更少。将 `StyleSheet` 与部分保持一致。在与你的部分类似的文件中定义 `StyleSheet` 有助于确保：
 - 一个部分的样式在未来的重复中不会被另一个部分的样式覆盖；
 - 样式将随着部分的增长而维护；
 - 部分可能会在段落期间变化；
-
-由于我们只需要更新单个文件来改进一个样式更改，这种简单性是快速的，且错误更少。将 StyleSheet 与部分保持一致。在与你的部分类似的文件中定义 StyleSheet 有助于确保：
-- 一个部分的样式在未来的重复中不会被另一个部分的样式覆盖；
-- 样式将随着部分的增长而维护；
-- 部分可能会在段落期间变化；
-
-由于我们只需要更新单个文件来改进一个样式更改，这种简单性是快速的，且错误更少。将 StyleSheet 与部分保持一致。在与你的部分类似的文件中定义 StyleSheet 有助于确保：
-- 一个部分的样式在未来的重复中不会被另一个部分的样式覆盖；
-- 样式将随着部分的增长而维护；
-- 部分可能会在段落期间变化；
-
-由于我们只需要更新单个文件来改进一个样式更改，这种简单性是快速的，且错误更少。将 StyleSheet 与部分保持一致。在与你的部分类似的文件中定义 StyleSheet 有助于确保：
-- 一个部分的样式在未来的重复中不会被另一个部分的样式覆盖；
-- 样式将随着部分的增长而维护；
-- 部分可能会在段落期间变化；
-
-由于我们只需要更新单个文件来改进一个样式更改，这种简单性是快速的，且错误更少。将 StyleSheet 与部分保持一致。在与你的部分类似的文件中定义 StyleSheet 有助于确保：
-- 一个部分的样式在未来的重复中不会被另一个部分的样式覆盖；
-- 样式将随着部分的增长而维护；
-- 部分可能会在段落期间变化；
-
-由于我们只需要更新单个文件来改进一个样式更改，这种简单性是快速的，且错误更少。将 StyleSheet 与部分保持一致。在与你的部分类似的文件中定义 StyleSheet 有助于确保：
-- 一个部分的样式在未来的重复中不会被另一个部分的样式覆盖；
-- 样式将随着部分的增长而维护；
-- 部分可能会在段落期间变化；
-
-由于我们只需要更新单个文件来改进一个样式更改，这种简单性是快速的，且错误更少。将 StyleSheet 与部分保持一致。在与你的部分类似的文件中定义 StyleSheet 有助于确保：
-- 一个部分的样式在未来的重复中不会被另一个部分的样式覆盖；
-- 样式将随着部分的增长而维护；
-- 部分可能会在段落期间变化；
-
-由于我们只需要更新单个文件来改进一个样式更改，这种简单性是快速的，且错误更少。将 StyleSheet 与部分保持一致。在与你的部分类似的文件中定义 StyleSheet 有助于确保：
-- 一个部分的样式在未来的重复中不会被另一个部分的样式覆盖；
-- 样式将随着部分的增长而维护；
-- 部分可能会在段落期间变化；
-
-由于我们只需要更新单个文件来改进一个样式更改，这种简单性是快速的，且错误更少。将 StyleSheet 与部分保持一致。在与你的部分类似的文件中定义 StyleSheet 有助于确保：
-- 一个部分的样式在未来的重复中不会被另一个部分的样式覆盖；
-- 样式将随着部分的增长而维护；
-- 部分可能会在段落期间变化；
-
-由于我们只需要更新单个文件来改进一个样式更改，这种简单性是快速的，且错误更少。将 StyleSheet 与部分保持一致。在与你的部分类似的文件中定义 StyleSheet 有助于确保：
-- 一个部分的样式在未来的重复中不会被另一个部分的样式覆盖；
-- 样式将随着部分的增长而维护；
-- 部分可能会在段落期间变化；
-
-由于我们只需要更新单个文件来改进一个样式更改，这种简单性是快速的，且错误更少。将 StyleSheet 与部分保持一致。在与你的部分类似的文件中定义 StyleSheet 有助于确保：
-- 一个部分的样式在未来的重复中不会被另一个部分的样式覆盖；
-- 样式将随着部分的增长而维护；
-- 部分可能会在段落期间变化；
-
-由于我们只需要更新单个文件来改进一个样式更改，这种简单性是快速的，且错误更少。将 StyleSheet 与部分保持一致。在与你的部分类似的文件中定义 StyleSheet 有助于确保：
-- 一个部分的样式在未来的重复中不会被另一个部分的样式覆盖；
-- 样式将随着部分的增长而维护；
-- 部分可能会在段落期间变化；
-
-## 100 - 精通 React Native
 
 这一切都是权衡，在这里我们为速度和清晰度做准备。最终你将需要找到适合你的项目和团队的方法。
 
-在 React Native 中，你使用 JavaScript 创建样式。所有主要组件都采用 prop 样式。名称和样式通常与 Web 上的 CSS 工作一致，除了使用驼峰命名法的单词，例如 backgroundColor 是背景颜色。
+在 React Native 中，你使用 JavaScript 创建样式。所有主要组件都采用 prop 样式。名称和样式通常与 Web 上的 CSS 工作一致，除了使用驼峰命名法的单词，例如 `backgroundColor` 是背景颜色。
 
-styleprop 可以是一个 JavaScript 对象。这是我们通常使用的示例代码。你也可以跳过许多样式——列表中的最后一个样式是高级的，所以你可以使用它获取样式资产。
+`style` prop 可以是一个 JavaScript 对象。这是我们通常使用的示例代码。你也可以跳过许多样式——列表中的最后一个样式是高级的，所以你可以使用它获取样式资产。
 
 当段落变得复杂时，使用 `StyleSheet.create` 在一处定义几个样式非常方便。这里有一个示例：
 
-一种常见的模式是接收用于设置底层部分的 styleprop。你可以使用它来实现像在 CSS 中那样的样式。
+一种常见的模式是接收用于设置底层部分的 `style` prop。你可以使用它来实现像在 CSS 中那样的样式。
 
 有很多方法可以自定义文本样式。请查看文本的引用部分获取完整列表。
 
-现在你可以让你的文本变得美了。成为样式大师的下一步是学习如何控制部分大小。在 React Native 中创建元素有几种方法。你可以使用 style 属性向行添加样式。但这不是一种特别好的做法，因为可能导致代码难以阅读。
+现在你可以让你的文本变得美了。成为样式大师的下一步是学习如何控制部分大小。在 React Native 中创建元素有几种方法。你可以使用 `style` 属性向行添加样式。但这不是一种特别好的做法，因为可能导致代码难以阅读。
 
-在本章中，我们将使用 StyleSheet 来创建样式。
+在本章中，我们将使用 `StyleSheet` 来创建样式。
 
-*容器组件*
+#### 容器组件
 
 在本节中，我们将简化上一个章节中的容器组件。
 
-App.js
+**App.js**
+
 ```javascript
 import React from 'react';
 
@@ -3470,85 +3656,107 @@ import PresentationalComponent from './PresentationalComponent'
 export default class App extends React.Component {
 
   state = {
+
     myState: 'This is my state'
+
   }
 
   render() {
 
-
-
-
-
-样式与布局 ◾ **101**
-
-```javascript
-return (
-  <View>
-    <PresentationalComponent myState={this.state.myState}/>
-  </View>
-);
+    return (
+      <View>
+        <PresentationalComponent myState={this.state.myState}/>
+      </View>
+    );
+  }
 }
-}
+```
 
-*表现型组件 (Presentational Component)*
+#### 表现型组件
 
-在下面的示例中，我们将导入 *StyleSheet*。在文件的底部，你将创建一个样式表并将其赋值给 *style* 常量。注意，你的样式使用了*驼峰命名法 (camelCase)*，且我们在编写样式时不使用 *px* 或 % 符号。
+在下面的示例中，我们将导入 `StyleSheet`。在文件的底部，你将创建一个样式表并将其赋值给 `style` 常量。注意，你的样式使用了驼峰命名法，且我们在编写样式时不使用 `px` 或 `%` 符号。
 
-要对任何文本应用样式，我们只需向 *Text* 元素添加 *style = {styles.myText}* 属性。
+要对任何文本应用样式，我们只需向 `Text` 元素添加 `style = {styles.myText}` 属性。
 
 ```javascript
 import React, { Component } from 'react';
+
 import {StyleSheet , Text, View } from 'react-native';
 
 const PresentationalComponent = (props) => {
+
   return (
+
     <View>
+
       <Text style={styles.myState}>
+
         {props.myState}
+
       </Text>
+
     </View>
+
   )
+
 }
 
 export default PresentationalComponent
 
 const styles = StyleSheet.create ({
+
   myState: {
+
     marginTop: 20,
+
     textAlign: 'center',
+
     color: 'blue',
+
     fontWeight: 'bold',
+
     fontSize: 20
+
   }
+
 })
 ```
 
 当我们运行此应用程序时，将得到以下输出。
 
-**102** ◾ 精通 React Native
-
 ## REACT NATIVE 样式方法
 
 React Native 为我们提供了两种强大的方式来自动编写应用程序：
 
-### 样式属性 (Style Props)
+### 样式属性
 
 你可以通过简单地向元素添加样式属性来适应架构对象，从而为你的部分添加样式。
 
 ```javascript
 import React,{Component}from 'react';
+
 import {Platform, StyleSheet, Text, View} from 'react-native';
 
 export default class App extends Component<Props> {
+
   render() {
+
     return (
+
       <View style={{flex:1,justifyContent:"left",backgroundColor:"#fff", alignItems:"center"}}>
+
         <View style={{width:250,height:50,backgroundColor:"red",padding:10}}>
+
           <Text style={{fontSize:20, color:"#666"}}>Styled with style props</Text>
+
         </View>
+
       </View>
+
     );
+
   }
+
 }
 ```
 
@@ -3560,27 +3768,47 @@ export default class App extends Component<Props> {
 
 ```javascript
 import React, {Component} from 'react';
+
 import { Text, View} from 'react-native';
 
 export default class App extends Component<Props> {
+
   render() {
+
     return (
+
       <View style={{flex:1,justifyContent:"center",backgroundColor:"#000", alignItems:"stretch"}}>
+
         <View style={{flex:1,backgroundColor:"red"}}>
+
           <Text style={{fontSize:20, color:"#fff"}}>Item number 1</Text>
+
         </View>
+
         <View style={{flex:1,backgroundColor:"blue"}}>
+
           <Text style={{fontSize:20, color:"#fff"}}>Item number 1</Text>
+
         </View>
+
         <View style={{flex:1,backgroundColor:"purple"}}>
+
           <Text style={{fontSize:20, color:"#fff"}}>Item number 1</Text>
+
         </View>
+
         <View style={{flex:1,backgroundColor:"orange"}}>
+
           <Text style={{fontSize:20, color:"#fff"}}>Item number 1</Text>
+
         </View>
+
       </View>
+
     );
+
   }
+
 }
 ```
 
@@ -3588,7 +3816,7 @@ React Native flexbox 是处理布局的一种极佳方式。操作非常简单�
 
 ### 使用 StyleSheet
 
-如果你有一个大型代码库，或者想在元素中设置多个布局，直接在样式中编写样式规则将使我们的代码变得更加复杂，这就是为什么 React Native 给了我们另一个选项，允许我们使用 StyleSheet 编写短代码。
+如果你有一个大型代码库，或者想在元素中设置多个布局，直接在样式中编写样式规则将使我们的代码变得更加复杂，这就是为什么 React Native 给了我们另一个选项，允许我们使用 `StyleSheet` 编写短代码。
 
 示例：
 
@@ -3596,239 +3824,415 @@ React Native flexbox 是处理布局的一种极佳方式。操作非常简单�
 import { View, StyleSheet } from 'react-native';
 ```
 
-要分配某些样式属性，请使用 create () 方法，它可以接收一个带有属性的的对象。
+要分配某些样式属性，请使用 `create()` 方法，它可以接收一个带有属性的对象。
 
 ```javascript
 const styles = StyleSheet.create({
+
   container: {
+
     flex:1,
+
     justifyContent:"center",
+
     backgroundColor:"#fff",
+
     alignItems:"stretch"
+
   },
+
   title: {
+
     fontSize:20,
+
     color:"#fff"
+
   },
+
   item1: {
+
     backgroundColor:"orange",
+
     flex:1
+
   },
+
   item2: {
+
     backgroundColor:"purple",
+
     flex:1
+
   },
+
   item3: {
+
     backgroundColor:"yellow",
+
     flex:1
+
   },
+
   item4: {
+
     backgroundColor:"red",
+
     flex:1
+
   },
+
 });
 ```
 
-然后我们通过 style 属性将样式对象传递给组件：
+然后我们通过 `style` 属性将样式对象传递给组件：
 
 ```javascript
 <View style={styles.container}>
+
   <View style={styles.item1}>
+
     <Text style={{fontSize:20, color:"#fff"}}>Item number 1</Text>
+
   </View>
+
   <View style={styles.item2}>
+
     <Text style={{fontSize:20, color:"#fff"}}>Item number 1</Text>
+
   </View>
+
   <View style={styles.item3}>
+
     <Text style={{fontSize:20, color:"#fff"}}>Item number 1</Text>
+
   </View>
+
   <View style={styles.item4}>
+
     <Text style={{fontSize:20, color:"#fff"}}>Item number 1</Text>
+
   </View>
+
 </View>
 ```
 
-
-
-
-
-**108** ◾ 精通 React Native
-
+```javascript
 padding:10px;
 
-```javascript
 const Shape=styled.View`
+
 clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+
 `
 
 export default class App extends Component {
+
   render() {
+
     return (
+
       <Container>
+
         <Item transparent>{/*将 props 传递给组件*/}
+
           <Title >Item number 1</Title>
+
         </Item>
+
         <Item primary>
+
           <Title >Item number 1</Title>
+
         </Item>
+
         <Item transparent>
+
           <Title >Item number 1</Title>
+
         </Item>
+
         <Item primary>
+
           <Title >Item number 1</Title>
+
         </Item>
+
       </Container>
+
     );
+
   }
+
 }
 ```
 
-有时你可能想要绘制一些包含圆形以及特定背景样式或渐变的复杂形状（例如，CSS 渐变背景并不是基于 React Native 的）。你可能会考虑使用其他提供 clip-path 的 CSS 方法，或任何允许你在 CSS 中创建复杂情况的方法，遗憾的是，这些方法目前在 React Native 中不支持，或者不支持允许你将 CSS 应用于 React Native 的 styled-components。在这种情况下，我们必须使用其他解决方案，例如使用 SVG。
+有时你可能想要绘制一些包含圆形以及特定背景样式或渐变的复杂形状（例如，CSS 渐变背景并不是基于 React Native 的）。你可能会考虑使用其他提供 `clip-path` 的 CSS 方法，或任何允许你在 CSS 中创建复杂情况的方法，遗憾的是，这些方法目前在 React Native 中不支持，或者不支持允许你将 CSS 应用于 React Native 的 `styled-components`。在这种情况下，我们必须使用其他解决方案，例如使用 SVG。
 
 ## 使用 React Native SVG 绘制特定条件
 
-React Native 社区带来了 react-native-svg，它允许你在 React Native 中使用 SVG。你可以使用 yarn 或 NPM 将其添加到项目中：
+React Native 社区带来了 `react-native-svg`，它允许你在 React Native 中使用 SVG。你可以使用 yarn 或 NPM 将其添加到项目中：
 
-// 使用 yarn
+```bash
+# 使用 yarn
 yarn add react-native-svg
 
-// npm
+# npm
 npm i react-native-svg
+```
 
 然后，确保使用以下命令行进行连接：
+
+```bash
 react-native link react-native-svg
+```
 
 现在，让我们用它开始实践吧：
 
 ```javascript
 /**
+
 * 示例 React Native App
+
 * https://github.com/facebook/react-native
+
 *
+
 * @format
+
 * @flow
+
 * @lint-ignore-next-line
+
 */
+
 import React, { Component } from "react";
+
 import { StyleSheet, Text, View } from "react-native";
+
 import styled from "styled-components";
+
 import Svg, {
+
   Circle,
+
   Ellipse,
+
   G,
+
   TSpan,
+
   TextPath,
+
   Path,
+
   Polygon,
+
   Polyline,
+
   Line,
+
   Rect,
+
   Use,
+
   Image,
+
   Symbol,
+
   Defs,
+
   LinearGradient,
+
   RadialGradient,
+
   Stop,
+
   ClipPath,
+
   Pattern,
+
   Mask
+
 } from "react-native-svg";
 
 const Container = styled.View`
+
 flex: 1;
+
 padding: 50px 0;
+
 justify-content: center;
+
 background-color: #f4f4f4;
+
 align-items: center;
+
 `;
 
 const Title = styled.Text`
+
 font-size: 20px;
+
 text-align: center;
+
 color: red;
+
 `;
 
 const Item = styled.View`
+
 flex: 1;
+
 border: 1px solid #ccc;
+
 margin: 2px 0;
+
 border-radius: 10px;
+
 box-shadow: 0 0 10px #ccc;
+
 height: 200px;
+
 background-color: ${props => (props.transparent ? "red" : "blue")};
+
 width: 80%;
+
 padding: 10px;
+
 `;
 
 export default class App extends Component {
+
   render() {
+
     return (
+
       <Container>
+
         <Svg height="150" width="300">
+
           <Defs>
+
             <LinearGradient id="grad" x1="123" y1="0" x2="170" y2="0">
+
               <Stop offset="0" stopColor="rgb(255,255,0)" stopOpacity="0" />
+
               <Stop offset="1" stopColor="red" stopOpacity="1" />
+
             </LinearGradient>
+
           </Defs>
+
           <Ellipse cx="150" cy="43" rx="85" ry="55" fill="url(#grad)" />
+
         </Svg>
+
         <Svg height="100" width="100">
+
           <Defs>
+
             <RadialGradient
+
               id="grad"
+
               cx="50%"
+
               cy="50%"
+
               rx="50%"
+
               ry="50%"
+
               fx="50%"
+
               fy="50%"
+
               gradientUnits="userSpaceOnUse"
+
             >
+
               <Stop offset="0%" stopColor="#ff0" stopOpacity="1" />
+
               <Stop offset="100%" stopColor="#00f" stopOpacity="1" />
+
             </RadialGradient>
+
             <ClipPath id="clip">
+
               <G scale="0.9" x="10">
+
                 <Circle cx="40" cy="30" r="20" />
+
                 <Ellipse cx="60" cy="70" rx="20" ry="10" />
+
                 <Rect x="65" y="15" width="50" height="50" />
+
                 <Polygon points="20,60 20,80 50,70" />
+
                 <Text
+
                   x="50"
+
                   y="30"
+
                   fontSize="32"
+
                   fontWeight="bold"
+
                   textAnchor="middle"
+
                   scale="1.2"
+
                 >
+
                   Q
+
                 </Text>
+
               </G>
+
             </ClipPath>
+
           </Defs>
+
           <Rect x="0" y="0" width="100" height="100" fill="url(#grad)" clipPath="url(#clip)" />
+
         </Svg>
+
         <Svg height="100" width="300">
+
           <Defs>
+
             <G id="shape">
+
               <G>
+
                 <Circle cx="50" cy="50" r="50" />
+
                 <Rect x="50" y="50" width="60" height="50" />
+
                 <Circle cx="50" cy="50" r="5" fill="#000" />
+
               </G>
+
             </Defs>
+
           <Use href="#shape" x="20" y="0" />
+
           <Use href="#shape" x="170" y="0" />
+
         </Svg>
+
       </Container>
+
     );
+
   }
+
 }
 ```
 
-可以看出，你可以通过 react-native-svg 深入使用，创建特定的形状和渐变背景，这通常使用 SVG。你仍然可以使用 React 方法来这样做，但如果我们想创建复杂的样式，则需要使用 react-native-svg 这样的工具，因为这样做总是很诡异。React Native 社区将带来更多样式选项的支持，让事情变得更容易。
+可以看出，你可以通过 `react-native-svg` 深入使用，创建特定的形状和渐变背景，这通常使用 SVG。你仍然可以使用 React 方法来这样做，但如果我们想创建复杂的样式，则需要使用 `react-native-svg` 这样的工具，因为这样做总是很诡异。React Native 社区将带来更多样式选项的支持，让事情变得更容易。
 
 ### 组织与继承
 
@@ -3838,10 +4242,11 @@ export default class App extends Component {
 
 ```javascript
 <Text style={{fontWeight:'bold'}}>我是粗体</Text>
+
 <Text style={{color:'red'}}>我是红色</Text>
 ```
 
-这是有效的。嵌套文本将通过继承系统进行验证。但到目前为止，React Native 的继承概念局限于子类。因此，在实际开发中使用这种机制非常困难。此外，我认为我们应该这样做，因为 React 部分在 way应该保持一致。
+这是有效的。嵌套文本将通过继承系统进行验证。但到目前为止，React Native 的继承概念局限于子类。因此，在实际开发中使用这种机制非常困难。此外，我认为我们应该这样做，因为 React 部分在 way 应该保持一致。
 
 那么，我们如何实现我们的预期？
 
@@ -3849,57 +4254,85 @@ export default class App extends Component {
 
 我的建议是创建一个 App 的自定义部分。通常你可以按照以下方式准备自己的文本部分：
 
+**shared/Typography.js**
+
 ```javascript
-// shared/Typography.js
 import React, { Component } from 'react';
+
 import { View, Text, StyleSheet } from 'react-native';
 
 const BASE_FONT = 'YOUR_CUSTOM_FONTS_FAMILY';
 
 export class AppText extends Component {
+
   render() {
+
     return (
+
       <Text {...this.props} style={[styles.myAppText, this.props.style]}>
+
         {this.props.children}
+
       </Text>
+
     );
+
   }
+
 }
 
 const styles = StyleSheet.create({
+
   myAppText: {
+
     fontFamily: BASE_FONT,
+
     fontSize: 16,
+
   },
+
 });
 ```
 
-然后，你可以在视图中使用你的 AppText 组件：
+然后，你可以在视图中使用你的 `AppText` 组件：
 
 ```javascript
 import { AppText } from 'PATH_TO_YOUR_COMPONENT/Typography';
+
 export default class MyView extends Component {
+
   render() {
+
     return ( <AppText>这里是自定义文本</AppText> )
+
   }
+
 }
 ```
 
-如果你更改基本字体，只需更改 Typography.js。一段时间后，你会想要改变某些屏幕样式。当样式传递给 AppText 时，它会提取你定义的默认样式。某些资源作为文本的一部分。如果你发现你在特定的屏幕或部分多次传递相同的样式，强烈建议你在 Typography.js 中通过 AppText 组件指定另一个部分。例如，如果你多次使用标题文本，只需说明：
+如果你更改基本字体，只需更改 `Typography.js`。一段时间后，你会想要改变某些屏幕样式。当样式传递给 `AppText` 时，它会提取你定义的默认样式。某些资源作为文本的一部分。如果你发现你在特定的屏幕或部分多次传递相同的样式，强烈建议你在 `Typography.js` 中通过 `AppText` 组件指定另一个部分。例如，如果你多次使用标题文本，只需说明：
 
 ```javascript
 export class AppHeading extends Component {
+
   render() {
+
     return (
+
       <AppText {...this.props} style={[styles.myAppHeading, this.props.style]}>
+
         {this.props.children}
+
       </AppText>
+
     );
+
   }
+
 }
 ```
 
-*继承* 是面向对象编程中起着关键作用的概念。它是一种允许对象拥有过去已经存在的结构的技术。存在两种类：
+继承 是面向对象编程中起着关键作用的概念。它是一种允许对象拥有过去已经存在的结构的技术。存在两种类：
 
 1. 超类(父类)
 2. 子类(子类)
@@ -3909,70 +4342,96 @@ export class AppHeading extends Component {
 ## 创建 React 应用
 
 **步骤 1:** 在终端/命令行提示符中使用以下命令创建 React 应用：
-`create-react-app foldername`
+
+```bash
+create-react-app foldername
+```
 
 **步骤 2:** 创建文件夹后，使用以下命令移动它：
-`cd foldername`
 
-在这里，你有两个组件，即 *AppComponent* 和 *ChildComponent*，子组件接管所有的 app 属性。
+```bash
+cd foldername
+```
 
-示例：现在在 App.js 文件中编写以下代码。在这里，App 是我们编写代码的默认（父级）部分。在下面的代码中，*this.state.message* 被传递给了 ChildComponent。
+在这里，你有两个组件，即 `AppComponent` 和 `ChildComponent`，子组件接管所有的 app 属性。
+
+示例：现在在 `App.js` 文件中编写以下代码。在这里，`App` 是我们编写代码的默认（父级）部分。在下面的代码中，`this.state.message` 被传递给了 `ChildComponent`。
+
+**App.js**
 
 ```javascript
-// App.js
 import logo from './logo.svg';
+
 import React from 'react';
+
 import './App.css';
+
 import ChildComponent from "./ChildComponent";
 
 class App extends React.Component {
+
   constructor(props) {
+
     super(props);
+
     this.state = {
+
       message: " Message"
+
     };
+
   }
 
   render() {
+
     return (
+
       <div>
+
         <ChildComponent message={this.state.message} />
+
       </div>
+
     );
+
   }
+
 }
 
 export default App;
 ```
 
-
-
-
-
-## 掌握 React Native
-
 现在在 `ChildComponent.js` 文件中编写以下代码。子组件接收所有应用组件的属性。
 
-- ChildComponent.js
+**ChildComponent.js**
 
 ```javascript
 import React from "react";
 
 class ChildComponent extends React.Component {
+
   render() {
+
     const { message } = this.props;
+
     return (
+
       <div>
+
         <p> Message from App component : {message}</p>
+
       </div>
+
     );
+
   }
+
 }
 
 export default ChildComponent;
 ```
 
-*运行应用程序的步骤*
+### 运行应用程序的步骤
 
 在项目的主（根）目录下通过以下命令运行应用程序：
 
@@ -3988,7 +4447,7 @@ npm start
 
 ### 从 View 开始
 
-View 组件是一个使用 FlexBox 创建结构的工具，它是创建我们 UI 的非常基础的部分。Views 相当于 React Native 中的 `div`。
+`View` 组件是一个使用 FlexBox 创建结构的工具，它是创建我们 UI 的非常基础的部分。`View` 相当于 React Native 中的 `div`。
 
 ### 定位基础
 
@@ -4000,9 +4459,13 @@ React Native 中所有的容器特性（如 `View`）都是自动的 Flex 容器
 
 ```jsx
 <View style={{ flex: 1}}>
+
   <View style={{ flex: 1 }}>A</View>
+
   <View style={{ flex: 2 }}>B</View>
+
   <View style={{ flex: 3 }}>C</View>
+
 </View>
 ```
 
@@ -4012,9 +4475,13 @@ React Native 中所有的容器特性（如 `View`）都是自动的 Flex 容器
 
 ```jsx
 <View style={{ flex: 1, flexDirection: 'column'}}>
+
   <View style={{ flex: 1, borderWidth: 10, borderColor: 'red'}}/>
+
   <View style={{ flex: 2, borderWidth: 10, borderColor: 'orange' }}/>
+
   <View style={{ flex: 3, borderWidth: 10, borderColor: 'green' }}/>
+
 </View>
 ```
 
@@ -4022,9 +4489,13 @@ React Native 中所有的容器特性（如 `View`）都是自动的 Flex 容器
 
 ```jsx
 <View style={{ flex: 1, flexDirection: 'row'}}>
+
   <View style={{ flex: 1, borderColor: 'red'}}/>
+
   <View style={{ flex: 2, borderColor: 'orange' }}/>
+
   <View style={{ flex: 3, borderColor: 'green' }}/>
+
 </View>
 ```
 
@@ -4044,187 +4515,313 @@ React Native 中所有的容器特性（如 `View`）都是自动的 Flex 容器
 
 ```jsx
 <View style={{ flex: 1, justifyContent: 'auto', alignItems: 'center' }}>
+
   <TextInput
+
     style={{height: 40, borderWidth: 1}}
+
     value="Text Input"
+
     />
+
 </View>
 ```
 
 ### 定位
 
-创建一个 View 区域并放置两个 TextInput 和按钮功能。灵活的 View 区域替换了整个手机屏幕。TextInput 和按钮对象设置为默认的 flex 轴（如列）。
+创建一个 `View` 区域并放置两个 `TextInput` 和按钮功能。灵活的 `View` 区域替换了整个手机屏幕。`TextInput` 和按钮对象设置为默认的 flex 轴（如列）。
 
 ```javascript
 import React, { Component } from "react";
+
 import { StyleSheet, TextInput, View , Button } from "react-native";
 
 export default class App extends Component {
+
   state = {
+
     placeName: "",
+
     places: []
+
   };
 
   placeNameChangedHandler = val => {
+
     this.setState({
+
       placeName: val
+
     });
+
   };
 
   placeSubmitHandler = () => {
+
     alert("button clicked")
+
   };
 
   render() {
+
     return (
+
       <View style={styles.container}>
+
         <TextInput
+
           placeholder="An awesome place"
+
           onChangeText={this.placeNameChangedHandler}
+
           style={styles.placeInput}
+
         />
+
         <Button
+
           title="Button"
+
           onPress={this.placeSubmitHandler}
+
         />
+
       </View>
+
     );
+
   }
+
 }
 
 const styles = StyleSheet.create({
+
   container: {
+
     flex: 1,
+
     padding: 26,
+
     backgroundColor: "#fff",
+
     justifyContent: "flex-start"
+
   }
+
 });
 ```
 
-#### 示例 1:
+#### 示例 1
 
-在这个示例中，我们将右侧按钮放在 TextInput 元素中。在父 View 中添加一个带有 `flex: 1` 和 `flexDirection: "row"` 的子 View 区域。设置 `flex: 1` 后，内部视图占据从上到下、从左到右的所有位置。`flexDirection: "row"` 将元素在内部视图组件中以行的形式排列。
+在这个示例中，我们将右侧按钮放在 `TextInput` 元素中。在父 `View` 中添加一个带有 `flex: 1` 和 `flexDirection: "row"` 的子 `View` 区域。设置 `flex: 1` 后，内部视图占据从上到下、从左到右的所有位置。`flexDirection: "row"` 将元素在内部视图组件中以行的形式排列。
 
 ```javascript
 import React, { Component } from "react";
+
 import { StyleSheet, View, TextInput, Button } from "react-native";
 
 export default class App extends Component {
+
   state = {
+
     placeName: "",
+
     places: []
+
   };
 
   placeNameChangedHandler = val => {
+
     this.setState({
+
       placeName: val
+
     });
+
   };
 
   placeSubmitHandler = () => {
+
     alert("button clicked")
+
   };
 
   render() {
+
     return (
+
       <View style={styles.container}>
+
         <View style={styles.innerContainer}>
+
           <TextInput
+
             placeholder="An awesome place"
+
             onChangeText={this.placeNameChangedHandler}
+
           />
+
           <Button
+
             title="Button"
+
             onPress={this.placeSubmitHandler}
+
           />
+
         </View>
+
       </View>
+
     );
+
   }
+
 }
 
 const styles = StyleSheet.create({
+
   container: {
+
     flex: 1,
+
     padding: 26,
+
     backgroundColor: "#fff",
+
     justifyContent: "flex-start"
+
   },
+
   innerContainer: {
+
     flex: 1,
+
     flexDirection: "row"
+
   }
+
 });
 ```
 
-#### 示例 2:
+#### 示例 2
 
-在这个示例中，我们将移除 View。内部视图占据占据宽度 100%。
+在这个示例中，我们将移除 `View`。内部视图占据占据宽度 100%。
 
 ```javascript
 import React, { Component } from "react";
+
 import { StyleSheet, TextInput, View, Button } from "react-native";
 
 export default class App extends Component {
+
   state = {
+
     placeName: "",
+
     places: []
+
   };
 
   placeNameChangedHandler = val => {
+
     this.setState({
+
       placeName: val
+
     });
+
   };
 
   placeSubmitHandler = () => {
+
     alert("button clicked")
+
   };
 
   render() {
+
     return (
+
       <View style={styles.container}>
+
         <View style={styles.innerContainer}>
+
           <TextInput
+
             placeholder="An awesome place"
+
             onChangeText={this.placeNameChangedHandler}
+
             style={styles.textStyle}
+
           />
+
           <Button
+
             title="Button"
+
             onPress={this.placeSubmitHandler}
+
           />
+
         </View>
+
       </View>
+
     );
+
   }
+
 }
 
 const styles = StyleSheet.create({
+
   container: {
+
     flex: 1,
+
     padding: 26,
+
     backgroundColor: "#fff",
+
     justifyContent: "flex-start"
+
   },
+
   innerContainer: {
+
     flex: 1,
+
     flexDirection: "row",
+
     justifyContent: "space-between",
+
     alignItems: "center"
+
   },
+
   textStyle: {
+
     width: "70%",
+
     backgroundColor: "gray",
+
   },
+
   buttonStyle: {
+
     width: "30%",
+
   }
+
 });
 ```
 
-### 使用 FLEXBOX 布局
+
+
+### 使用 Flexbox 布局
 
 组件可以使用 Flexbox 来对齐元素。Flexbox 设计用于为不同屏幕尺寸提供一致的布局。Flexbox 在 React Native 中的工作方式与 CSS 相同，只有少数例外。默认是 `column`。
 
@@ -4234,175 +4831,133 @@ React Native 中所有的容器特性（如 `View`）都是自动的 Flex 容器
 
 ### Flex Direction
 
-flexDirection 控制元素如何放置。这也被称为主轴。交叉轴是垂直于主轴的轴。
+`flexDirection` 控制元素如何放置。这也被称为主轴。交叉轴是垂直于主轴的轴。
 
-- **column（默认值）从上到下对齐**：如果启用了换行，下一行将从容器的顶部右侧开始。
-- **row（行）从左到右对齐**：如果启用了换行，下一行将从容器的左侧开始。
-- **column-reverse（反向列）从下到上对齐**：如果启用了换行，下一行将从容器的右侧开始。
-- **row-reverse（反向行）从右到左对齐**：如果启用了换行，下一行将从容器的右侧开始。
+- **column（默认值）**：从上到下对齐。如果启用了换行，下一行将从容器的顶部右侧开始。
+- **row**：从左到右对齐。如果启用了换行，下一行将从容器的左侧开始。
+- **column-reverse**：从下到上对齐。如果启用了换行，下一行将从容器的右侧开始。
+- **row-reverse**：从右到左对齐。如果启用了换行，下一行将从容器的右侧开始。
 
 ### Layout Direction
 
 布局方向指定了元素和区域文本放置的方式。结构指南也有助于确定起始和结束指的是什么。默认情况下，React Native 设置为 LTR。在这种模式下，起始指的是左侧，然后是右侧。
 
-- **LTR（默认值）**文本和元素从左到右显示。项目起始的外边距和内边距用于左侧。
-- **RTL**文本和元素从右到左分布。
+- **LTR（默认值）**：文本和元素从左到右显示。项目起始的外边距和内边距用于左侧。
+- **RTL**：文本和元素从右到左分布。
 
-### Justify Content (内容对齐)
+### Justify Content（内容对齐）
 
-justifyContent 描述了如何在容器的轴内对齐给定的子元素。例如，你可以使用这种结构将子元素放在设置为 `row` 的容器的水平居中位置，或者放在设置为 `column` 的容器的垂直居中位置。
+`justifyContent` 描述了如何在容器的轴内对齐给定的子元素。例如，你可以使用这种结构将子元素放在设置为 `row` 的容器的水平居中位置，或者放在设置为 `column` 的容器的垂直居中位置。
 
 - **flex-start（默认值）**：将容器的元素对齐在主轴的起点。
 - **flex-end**：将容器的元素对齐在主轴的终点。
 - **center**：将容器的元素对齐在容器主轴的中心。
 - **space-between**：在容器的主轴上元素之间相等空间，将剩余空间分布在元素之间。
+- **space-around**：容器主轴上子元素的均衡空间，将剩余空间分布在子元素周围。与 `space-between` 相比，使用 `space-around` 会导致空间分布在第一个子元素的开头和最后一个子元素的结尾。
+- **space-evenly**：子元素在靠近主轴的方向性容器内均匀分布。相邻对象对之间的空间、主轴边缘与第一个对象之间的空间、以及主边缘与最后一个对象之间的空间完全相同。
 
+### Align Items（项目对齐）
 
+`alignItems` 描述了将子元素对齐到容器交叉轴的方法。这同样适用于在主轴上提供一个内容而不是使用它，即在交叉轴上对齐工具。
 
+- **stretch（默认值）**：拉伸容器的子元素以匹配容器相反轴的长度。
+- **flex-start**：直接子元素容器位于容器交叉轴的起点。
+- **flex-end**：将容器子元素对齐在容器交叉轴的末尾。
+- **center**：将容器子元素对齐在容器轴的中心。
+- **baseline**：将容器子元素对齐在基线上，然后单个子元素可以设置为父元素的参考基线。
 
+子元素在次轴上没有固定尺寸，`stretch` 才会生效。例如，在从子元素中移除 `width: 50` 之前，设置 `alignItems: stretch;` 没有作用。
 
-**124** 精通 React Native
+### Align Self（对齐）
 
-- **Space-around（环绕分布）**：容器主轴上子元素的均衡空间，将剩余空间分布在子元素周围。与 space-between（间距对齐）相比，使用 space-around 会导致空间分布在第一个子元素的开头和最后一个子元素的结尾。
-- **space-evenly distributed（均匀分布）**：子元素在靠近主轴的方向性容器内均匀分布。相邻对象对之间的空间、主轴边缘与第一个对象之间的空间、以及主边缘与最后一个对象之间的空间完全相同。
+`alignSelf` 与 `alignItems` 有相同的选项和效果。你可以在单个子元素上使用此结构更改其在父元素内的对齐方式，而不是触摸容器内部的子元素。它可以移除任何父级设置的对齐选项。
 
-## Align Items（项目项目对齐）
+### Align Content（内容对齐）
 
-alignItems 描述了将子元素对齐到容器交叉轴的方法。这同样适用于在主轴上提供一个内容而不是使用它，即在交叉轴上对齐工具。
+它定义了沿交叉轴的行分布。这仅影响当使用 `flexWrap` 换行时项目折叠成多行的情况。
 
-- **stretch（拉伸 - 固定值）**：拉伸容器的子元素以匹配容器相反轴的长度。
-- **flex-start（起始对齐）**：直接子元素容器位于容器交叉轴的起点。
-- **flex-end（结束对齐）**：将容器子元素对齐在容器交叉轴的末尾。
-- **Center（居中）**：将容器子元素对齐在容器轴的中心。
-- **Baseline（基线对齐）**：将容器子元素对齐在基线上，然后单个子元素可以设置为父元素的参考基线。
+- **flex-start（默认值）**：将折叠行对齐在容器相反轴的起点。
+- **flex-end**：将折叠行引导至容器交叉轴的末端。
+- **stretch**：扩展折叠行以匹配容器交叉轴的长度。
+- **center**：将包裹行对齐在容器交叉轴的中心。
+- **space-between**：折叠行在容器交叉轴之间保持相等空间，将剩余空间分散在行之间。
+- **space-around**：容器交叉轴之间的行空间相等，分散行中的剩余空间。与 `space-between` 相比，使用 `space-around` 会导致空间分布在行的开头和最后一行的结尾。
 
-子元素在次轴上没有固定尺寸，stretch 才会生效。例如，在从子元素中移除 `width: 50` 之前，设置 `alignItems: stretch;` 没有作用。
+### Flex Wrap（换行）
 
-## Align Yourself（对齐）
+`flexWrap` 属性设置在容器，控制当子元素溢出主轴附近的容器尺寸时发生的情况。默认情况下，子元素被强制形成单行（这可能会缩小元素）。如果允许折叠，则根据需要将项目在主轴方向折叠成多行。
 
-alignSelf 与 alignItems 有相同的选项和效果。你可以在单个子元素上使用此结构更改其在父元素内的对齐方式，而不是触摸容器内部的子元素。它可以移除任何父级设置的对齐选项。
+在折叠行时，可以使用 `alignContent` 来决定行在容器中的位置。
 
-样式与布局 ◾ **125**
+### Flex Basis, Grow, and Shrink（基础、增长与收缩）
 
-## Align Content（内容对齐）
+- **FlexBasis**：一种独立的轴方法，用于提供与主轴相关的对象的固定尺寸。`flex` 设置子元素的基础，如果其父元素使用了 `flex`，则等同于设置子元素的宽度。`FlexBasis` 对象是一个固定对象尺寸，是在执行任何 `flexGrow` 和 `flexShrink` 计算之前的对象尺寸。
+- **FlexGrow**：解释了容器内部任何空间应如何分布在其靠近主轴的子元素之间。在布局子元素后，容器将根据其后代指定的不断增长的值分配任何剩余空间。`FlexGrow` 接受任何 `>= 0` 的浮点值，`0` 为默认值。容器将在加载了 `flexGrow` 值的子元素之间分配任何剩余空间。
+- **FlexShrink**：描述了在子元素总尺寸超过主轴上容器尺寸的情况下，如何缩小子元素以适应主轴。如果认为任何尺寸都是错误的平衡，那么 `FlexShrink` 可以像 `flex` 增长一样被看待。这两种结构也能很好地协同工作，允许子元素根据需要增长和收缩。`FlexShrink` 接受任何 `>= 0` 的浮点值，`0` 为默认值（在网页上，默认认为 `1`）。容器将减少其带有 `flexShrink` 值的子元素的权重。
 
-它定义了沿交叉轴的行分布。这仅影响当使用 flexWrap 换行时项目折叠成多行的情况。
+### Width and Height（宽度与高度）
 
-- **flex-start（起始对齐 - 默认值）**：将折叠行对齐在容器相反轴的起点。
-- **flex-end（结束对齐）**：将折叠行引导至容器交叉轴的末端。
-- **stretch（拉伸）**：扩展折叠行以匹配容器交叉轴的长度。
-- **Center（居中）**：将包裹行对齐在容器交叉轴的中心。
-- **Space-between（两端对齐）**：折叠行在容器交叉轴之间保持相等空间，将剩余空间分散在行之间。
-- **Space-around（环绕分布）**：容器交叉轴之间的行空间相等，分散行中的剩余空间。与 space-between 相比，使用 space-around 会导致空间分布在行的开头和最后一行的结尾。
-
-## Flex Wrap（换行）
-
-flexWrap 属性设置在容器，控制当子元素溢出主轴附近的容器尺寸时发生的情况。默认情况下，子元素被强制形成单行（这可能会缩小元素）。如果允许折叠，则根据需要将项目在主轴方向折叠成多行。
-
-在折叠行时，可以使用 alignContent 来决定行在容器中的位置。
-
-## Flex Basis, Grow, and Shrink（伸基础、增长与收缩）
-
-- FlexBasis 是一种独立的轴方法，用于提供与主轴相关的对象的固定尺寸。Flex 设置子元素的基础，如果其父元素使用了 flex，则等同于设置子元素的宽度。FlexBasis 对象是一个固定对象尺寸，是在执行任何 flexGrow 和 flexShrink 计算之前的对象尺寸。
-
-**126** ◾ 精通 React Native
-
-- FlexGrow 解释了容器内部任何空间应如何分布在其靠近主轴的子元素之间。在布局子元素后，容器将根据其后代指定的不断增长的值分配任何剩余空间。
-- FlexGrow 接受任何 >= 0 的浮点值，0 为固定值。容器将在加载了 flexGrow 值的子元素之间分配任何剩余空间。
-- FlexShrink 描述了在子元素总尺寸超过主轴上容器尺寸的情况下，如何缩小子元素以适应主轴。如果认为任何尺寸都是错误的平衡，那么 FlexShrink 可以像 flex 增长 一样被看待。这两种结构也能很好地协同工作，允许子元素根据需要增长和收缩。
-- FlexShrink 接受任何 >= 0 的浮点值，0 为固定值（在网页上，默认认为 1）。容器将减少其带有 flexShrink 值的子元素的权重。
-
-## Width and Height（宽度与高度）
-
-width 属性指定元素内容的空间区域。同样，height 属性指定元素内容的空间区域。宽度和长度都可以取以下值：
+`width` 属性指定元素内容的空间区域。同样，`height` 属性指定元素内容的空间区域。宽度和长度都可以取以下值：
 
 - **default（默认值）**：React Native 根据元素的内容（其他子元素、文本或图像）计算元素的宽度/长度。
 - **pixels（像素）**：以整像素定义宽度/高度。取决于在该部分设置的样式，这可能是或不是节点的最终尺寸。
 - **percent（百分比）**：将宽度或高度定义为父元素宽度或高度的百分比。
 
-## Absolute and Relative Layout（绝对与相对布局）
+### Absolute and Relative Layout（绝对与相对布局）
 
 对象位置类型描述了如何在其父元素放置。
 
-- **relative（相对 - 默认值）**：默认情况下，元素是类似的。这意味着元素根据结构的正常流进行定位，然后根据上、右、下、左的值与该区域进行偏移。偏移不会影响任何兄弟元素或父元素的位置。
-- **Absolute（绝对）**：如果是完全放置的；元素不参与正常结构的流。相反，它们与兄弟元素隔开。位置根据顶、右、底、左的值决定。
+- **relative（默认值）**：默认情况下，元素是类似的。这意味着元素根据结构的正常流进行定位，然后根据上、右、下、左的值与该区域进行偏移。偏移不会影响任何兄弟元素或父元素的位置。
+- **absolute**：如果是完全放置的；元素不参与正常结构的流。相反，它们与兄弟元素隔开。位置根据顶、右、底、左的值决定。
 
-结论
+## 结论
 
 在本章中，我们学习了 React Native 提供的样式。在下一章中，我们将学习平台 API。
 
-样式与布局 ◾ **127**
+---
 
-第 6 章
+# 第 6 章
 
-平台 API
+## 平台 API
 
-本章内容
+### 本章内容
 
 - 使用地理位置
 - 访问相机
-- 使用 asyncstore 存储持久化数据
+- 使用 AsyncStorage 存储持久化数据
 
 在上一章中，我们学习了 React Native 的样式，在本章中我们将学习平台 API。
 
-平台 API
+### 平台 API 简介
 
-“API 平台”术语被其他供应商以类似于 API 管理、API 网关的方式使用。这带我们进入结论。
-
-DOI: 10.1201/97810331040-6
-
-**129**
-
-**130** ◾ 精通 React Native
-
-标准服务与托管服务。学习每个 API 应该具备的技能。
+“API 平台”术语被其他供应商以类似于 API 管理、API 网关的方式使用。这带我们进入标准服务与托管服务。学习每个 API 应该具备的技能。
 
 当你创建移动应用程序时，你自然想要利用某些 API。React Native 让你轻松访问手机、位置和持久化存储。这些 API 通过包含的模块提供给 React Native，为我们这些任务的 JavaScript 链接。我们将在第 7 章介绍这一过程。文档是测试是否支持 API 的最佳地方。
 
 本章涵盖了可用的 API。例如，我们将对天气系统进行一些更改。我们将为应用程序添加地理位置，使其能够自动检测用户的位置。我们还将为应用程序添加“记忆”，以便它可以记住之前搜索的位置。最后，我们将使用相机卷将背景图像转换为用户的照片之一。
 
+### 什么是 API 平台？
 
-
-
-平台 API ◾ 131
-
-让我们来看一下目前在该目录中工作的 API 开发团队所使用的 API 平台服务总数。API 和 API 管理至关重要，构建良好感的开发团队需要一套完善的后台服务来加速其工作。这些包括：
-
-- 网格微服务管理
-- 开发者工具和 API 调解 - 运行时服务
-- 数据即服务 (DaaS)
-- 流式/事件驱动 API
-- 前置后端服务
-- 应用连接器
-
-## 什么是 API 平台？
 *为管理 API 全生命周期增加传统视角*
 
 - **网格与微服务管理**：任何转换步骤都将超越一个优秀的应用，需要开发后台思维和技能。开发团队将寻找现代微服务设施。小型服务的高度成熟，例如网格内部的可视性和流量管理 API，以及网格的关键入站（Ingress）和出站（Egress）。
-
 - **开发者和调解 API 工具**：开发者工具包括构建作为微服务的新 API 的代码工具、减少或合并 API、跨所有服务的流式传输。这允许开发团队在后台 API 之上构建，并发布特定于之前的项目、移动端、IoT 或更多的 API。
-
 - **运行时服务**：需要一个可以轮换和交替扩展的无服务器后端。这对于开发团队的创建至关重要——容器和微服务，以及开发团队创建的用于支持其之前项目的关键基础设施 API。了解关于 Axway 如何作为其 AMPLIFY 平台的一部分提供运行时服务，这是一个可扩展的基础设施（容器即服务），用于运行您的应用程序。
-
-132 ◾ 精通 React Native
-
 - **数据即服务**：后者的体验可能需要一个自定义数据存储，需要快速废弃和持续估计。现有的信息可以驱动对现有后台信息的数亿 API 调用，这需要免受负载的保护。数据即服务作为系统之间的层，通常用作后业务系统与前端之间的保护。
-
     - 数据即服务以较低的成本提供了资产限制的扩展（通过 SQL 扩展），并能够降低复杂性并确保任何关键信息的可用性。了解更多：Axway 作为其 AMPLIFY 平台的一部分提供移动后台服务和 cURL Firehose。
-
-- **流式/托管 API**：对于对时间要求高的应用程序，事件驱动属性对于获取实时用户信息至关重要。API 平台结合了将任何应用程序响应 API 转换为事件驱动 API 的能力，以便将数据推送到成功注册的客户端，并保护之前投票中常见错误导致的结论。了解更多 AMPLIFY Streams 如何允许您使用基于事件的布局升级 API 基础设施，以从您的 API 发布数据。
-
+- **流式/事件驱动 API**：对于对时间要求高的应用程序，事件驱动属性对于获取实时用户信息至关重要。API 平台结合了将任何应用程序响应 API 转换为事件驱动 API 的能力，以便将数据推送到成功注册的客户端，并保护之前投票中常见错误导致的结论。了解更多 AMPLIFY Streams 如何允许您使用基于事件的布局升级 API 基础设施，以从您的 API 发布数据。
 - **预置后端服务**：通常由于其移动根源被称为 mBaaS，任何新体验都需要通过标准服务来利用，包括用户管理偏好、照片、文件、位置、日志、帖子、事件、推送通知等。我们称这些为后端服务，因为这已超出了移动领域的范围。
-
 - **应用连接器**：控制 API 平台是一套通过目录感知连接的完整混合平台能力集。从 iPaaS 验证 200 多个应用程序中的一个或多个，这些应用程序暴露了投放时应使用的 API 端点。另一个优势是创建一个规范的 API 存档，以便在 API 调用中更新多个记录系统。额外的力量来自 API 平台作为 API 赋能混合集成平台策略的一部分的数据开放！
 
 API 平台关乎管理 API 的全生命周期及更多内容，带来新的应用程序和信息。API 平台的建立必须在：通过丰富的访问目录和工具为开发团队提供技能，以便团队能够在运营中独立且成功的基础上。
 
-平台 API ◾ 133 我们已经建议了，但理解混合集成平台 (HIP) 与待开发的开发策略之间的交叉点是非常有趣的。API 平台可以是个人 HIP 的一部分，也可以分开——但 API 平台始终会产生个人的集成策略。
+我们已经建议了，但理解混合集成平台 (HIP) 与待开发的开发策略之间的交叉点是非常有趣的。API 平台可以是个人 HIP 的一部分，也可以分开——但 API 平台始终会产生个人的集成策略。
 
 换句话说，当人类集成策略通过对齐并支持 API 平台的创新时，真正的力量就会出现，而广泛使用的混合集成平台 (HIP) 正是如此。
 
 这导致了一个事实：这些并不是独立的“对象”，当正确查看它们时，它们是硬币的两面！当你看着一面时，你有集成的概念；当你看着另一面时，你有创意概念。这两种场景为工程师和设计师提供了一个集成维度目录，他们可以在其中独立且快速地执行。
+
+---
 
 ## 使用地理位置
 
@@ -4414,63 +4969,56 @@ API 平台关乎管理 API 的全生命周期及更多内容，带来新的应�
 
 要访问地理坐标网站，你需要注册一个可以将 IP 地址转换为纬度和经度的服务，或者你需要维护一个包含这些信息的本地网站。任何一种方案都不廉价，也不完全可靠。你应该意识到这些服务对某些功能收费。你需要查阅服务页面以防感到惊讶。
 
-134 ◾ 精通 React Native
-
 使用与地图服务（如微软 Bing、Google Maps 和 MapPlatforms）集成的地理定位 API 可以提供有关终端用户的详细信息。你可以将地图服务添加到站点，为你的产品增加更多价值和应用级信息。现在你可以确定访问者的位置并在地图上添加附近的位置、提供行驶路线等。
 
-尽管每个浏览器都支持地理定位 API，但仍然建议检测它以查看是否支持。地理定位对象必须是 navigator 对象的成员，因此你可以检查它是否存在于 navigator 中。
+尽管每个浏览器都支持地理定位 API，但仍然建议检测它以查看是否支持。地理定位对象必须是 `navigator` 对象的成员，因此你可以检查它是否存在于 `navigator` 中。
 
-检测地理定位支持
+### 检测地理定位支持
 
+```javascript
 if ("geolocation" in navigator) {
-
+  // 支持
 } else {
-
+  // 不支持
 }
+```
 
 这是因为在用户禁用应用时，你应该安装一个检测器。你还应该注意，现代浏览器现在在 HTTPS 后安装 API，某些浏览器在运行 API 前需要获取用户权限。
 
-- 地理位置权限提示
+### 地理定位对象有三种模式
 
-- 地理定位对象有三种模式：
+1. `getCurrentPosition`：直接获取设备当前位置的调用；
+2. `watchPosition`：当设备位置变化时激活；
+3. `clearWatch`：停止或删除由运行 `watchPosition` 模式创建的计时器。
 
+### 使用 getCurrentPosition
 
+通过 `getCurrentPosition` 方法可以轻松地使用地理位置对象通过单个调用来定位设备。系统有三个参数：一个成功回调、一个错误回调以及一个可选项目。后两个参数是可选的。成功回调将有一个传递参数，即一个 `Position` 对象。同样，错误回调获得一个参数，即 `PositionError` 对象。`options` 参数是一个 `PositionOptions` 节点。
 
+#### PositionOptions
 
-Platform APIs ◾ **135**
-
-1. getCurrentPosition: 直接获取设备当前位置的调用；
-2. WatchPosition: 当设备位置变化时激活；
-3. clearWatch:停止或删除由运行 watchPosition 模式创建的计时器。
-
-使用 getCurrentPosition
-
-通过 `getCurrentPosition` 方法可以轻松地使用地理位置对象通过单个调用来定位设备。系统有三个参数：一个成功回调、一个重复调用以及一个可选项目。后两个参数是可选的。成功回调将有一个传递参数，即一个 `Position` 对象。同样，错误回调获得一个参数，即 `PositionError` 对象。`options` 参数是一个 `PositionOptions` 节点。
-
-*位置错误超时*
-
-- **maximumAge:** 总秒数（毫秒），表示缓存存储的有效时间；
-- **expiration time:** 在请求错误持有者之前有多少毫秒，默认值不是不关闭时间；
-- **enableHighAccuracy:** true 或 false，自动。启用会导致消耗更多能量，并需要更多的时间来积累位置。
+- **maximumAge**：总秒数（毫秒），表示缓存存储的有效时间；
+- **timeout**：在请求错误持有者之前有多少毫秒，默认值不是不关闭时间；
+- **enableHighAccuracy**：`true` 或 `false`，默认 `false`。启用会导致消耗更多能量，并需要更多的时间来积累位置。
 
 所有 `PositionOptions` 结构都是可选的。如果未指定值，地理位置系统将使用默认值。成功回调对象具有两个属性：`coords`（坐标项）和 `timestamp`。我们遵循的所有链接（只读）值如下：
 
-- **latitude:** 双精度浮点
-- **longitude:** 双精度浮点
-- **height:** 双精度浮点，海平面以上的米
-- **accuracy:** 也称为米为单位的半径
-- **altitudeAccuracy:** 米为单位的精度或半径
-- **heading:** 设备距离正北的度数
-- **speed:** 设备移动的速度（米/秒）
-
-**136** ◾ 精通 React Native
+- **latitude**：双精度浮点
+- **longitude**：双精度浮点
+- **altitude**：双精度浮点，海平面以上的米
+- **accuracy**：也称为米为单位的半径
+- **altitudeAccuracy**：米为单位的精度或半径
+- **heading**：设备距离正北的度数
+- **speed**：设备移动的速度（米/秒）
 
 你应该意识到，并不是所有的值都会提供。你总是会找到最小纬度和经度。我将在一段时间后更新准确性。高度取决于设备的性能，因此你应该考虑未给出的值。当高度为应用体验增加价值时，创建一个正向的增强体验。`timestamp` 值是一个决定何时确定位置的数据项。
 
 ```javascript
 if (navigator.geolocation) {
   navigator.geolocation.getCurrentPosition(
-    setCurrentPosition, positionError, {
+    setCurrentPosition,
+    positionError,
+    {
       enableHighAccuracy: false,
       timeout: 15000,
       maximumAge: 0
@@ -4489,17 +5037,14 @@ function setCurrentPosition(position) {
 }
 ```
 
-*管理位置错误*
+### 处理位置错误
 
 如果记录用户设备位置出现问题，将启动错误回调函数。`PositionError` 项包含一个数值代码属性以及一条消息。`code` 属性是一个无符号快捷，你可以从错误项值中进行比较。
 
-- **UNKNOWN_ERROR**: 代码 0，最常见的错误，因为无法确定位置且浏览器不知道原因。
-
-Platform APIs ◾ **137**
-
-- **PERMISSION_DENIED**: 代码 1，用户拒绝从权限中使用地理位置 API。
-- **POSITION_UNAVAILABLE**: 代码 2，未找到设备位置。
-- **TIMEOUT**: 代码 3，在关闭时间内无法收集位置。
+- **UNKNOWN_ERROR**：代码 0，最常见的错误，因为无法确定位置且浏览器不知道原因。
+- **PERMISSION_DENIED**：代码 1，用户拒绝从权限中使用地理位置 API。
+- **POSITION_UNAVAILABLE**：代码 2，未找到设备位置。
+- **TIMEOUT**：代码 3，在关闭时间内无法收集位置。
 
 这是一个错误处理回调函数如何工作的示例。
 
@@ -4522,16 +5067,15 @@ function positionError(error) {
 }
 ```
 
-*跟踪位置变化*
+### 跟踪位置变化
 
 `getCurrentPosition` 适用于查找用户的当前位置。但如果你的应用需要跟踪用户状态的变化，请考虑通过改变行驶方向或跟踪速度，以便设备提供效果所需的更新链接。感谢 `Position` 定时器，它会在设备位置更新时重新拨号。如果不是如此，你可能需要使用 `setInterval` 或 `requestAnimationFrame` 来反复获取 `getCurrentPosition`。
-
-**138** ◾ 精通 React Native
 
 让设备在更新处于最佳状态时触发更新。这可以节省电池并防止过度使用 CPU。`watchPosition` 方法的签名与 `getCurrentPosition` 相同，因此你可以轻松使用 `watchPosition` 方法进行更新。该方法返回一个数字 `id`，类似于 `setInterval`。你可以使用这个 `id` 在之后停止计时器。
 
 ```javascript
 var geoWatch;
+
 function startWatch() {
   if (!geoWatch) {
     if ("geolocation" in navigator && "watchPosition" in navigator.geolocation) {
@@ -4552,17 +5096,15 @@ function stopWatch() {
 
 现在你也可以把手机变成一个昂贵的计数器！为了好玩，你还可以创建一个持续版本。但由于 `watchPosition` 的签名与 `getCurrentPosition` 相同，你至少可以确保你的工作正确处理对象。
 
-使用开发工具设置链接
+### 使用开发工具设置链接
 
 在 Chrome 中，新的 Edge 以及其他基于 Chromium 的浏览器都有带有“sensor”标签的开发工具。在此面板中，你可以设置设备的纬度和经度。你还可以调整设备的形状，那是与陀螺仪一致的。
 
-Platform APIs ◾ **139**
-
 地理位置传感器模拟内置了许多大城市。你可以根据需要添加更多位置。要选择位置，只需点击“Geolocation”输入框。它看起来像文本输入，但会显示可用位置列表。点击“管理”按钮将显示位置列表以及添加新位置的能力。
 
-*位置是如何确定的*
+### 位置是如何确定的
 
-有三种确定位置的方法
+有三种确定位置的方法：
 
 1. Wi-Fi
 2. 卫星
@@ -4570,17 +5112,11 @@ Platform APIs ◾ **139**
 
 当使用 Wi-Fi 网络路由器时，它位于固定位置并且被证明非常流行。许多非常准确的服务都在跟踪此类项目，所有主要的零售商都使用此类服务中的一种或多种来确定设备位置。记得以前你需要访问 IP 站点且更准确的网站或服务更贵吗？现在，Apple、Google、Microsoft 等公司会处理这些，只要你使用地理位置 API。据我所知，这些数字通常将我的标记区域控制在 100 英尺或约 30 米内。浏览器在确定位置和准确性时不是决定性因素。下一步是连接到地理位置卫星。这些数据通常非常准确，误差在十米以内。问题是必须对一个卫星有无遮挡视野，通常在户外时如此。这意味着在建筑内部时无法使用这种方法，但可以用 Wi-Fi 方法代替。然而，如果这些一种方法都不可用且你拥有移动设备，最后的选择是基站区域三角测量。
 
-
-
-
-
-## 140 精通 React Native
-
 此过程的准确性不高，通常在 1000 到 3500 米之间。由于这些方法可能会有所不同，最好始终检查准确性，以查看你是否需要适当调整应用程序的响应。请记住，你无法控制用户设备接收链接的方式，但你可以根据准确性来决定如何使用位置值。
 
 ### iOS 附近位置
 
-Apple 为 iOS 14 引入了一项新设置，“近似本地位置”（almost-locally）。其目的是通过提供宽泛的位置来保护用户隐私。由于设备可以提供最精确的位置，这可能会导致坏人找到你。
+Apple 为 iOS 14 引入了一项新设置，“近似本地位置”。其目的是通过提供宽泛的位置来保护用户隐私。由于设备可以提供最精确的位置，这可能会导致坏人找到你。
 
 限制位置调整为你的位置增加了一些模糊性。我的理解是，它会报告你的位置，例如位于手机基站的一个三角形区域内，或者大约在 1 公里范围内。
 
@@ -4600,7 +5136,7 @@ HTML 的 geolocation API 被用于定位用户位置。由于这可能会降低�
 
 **示例：**
 
-<script>
+```javascript
 const x = document.getElementById("demo");
 
 function getLocation() {
@@ -4614,16 +5150,16 @@ function getLocation() {
 function showPosition(position) {
   x.innerHTML = "Latitude: " + position.coords.latitude + "<br>Longitude: " + position.coords.longitude;
 }
-</script>
+```
 
 对示例解释如下：
 
 - 检查是否支持地理定位。
 - 如果支持，使用 `getCurrentPosition()` 方法。如果不支持，则向用户显示消息。
-- 如果 `getCurrentPosition()` 方法执行成功，将将位置对象传递给参数中指定的函数（showPosition）。
+- 如果 `getCurrentPosition()` 方法执行成功，将位置对象传递给参数中指定的函数（`showPosition`）。
 - `showPosition()` 函数确定纬度和经度。
 
-上面的示例是一个基础的地理定位脚本，没有没有任何错误处理。
+上面的示例是一个基础的地理定位脚本，没有任何错误处理。
 
 ### 处理错误和拒绝
 
@@ -4635,15 +5171,16 @@ function showPosition(position) {
 function showError(error) {
   switch(error.code) {
     case error.PERMISSION_DENIED:
-      x.innerHTML = "用户拒绝了请求。
+      x.innerHTML = "用户拒绝了请求。";
       break;
     case error.POSITION_UNAVAILABLE:
-      x.innerHTML = "位置信息不可用。
+      x.innerHTML = "位置信息不可用。";
       break;
     case error.TIMEOUT:
-      x.innerHTML = "获取用户位置请求超时。
+      x.innerHTML = "获取用户位置请求超时。";
+      break;
     case error.UNKNOWN_ERROR:
-      x.innerHTML = "未知错误。
+      x.innerHTML = "未知错误。";
       break;
   }
 }
@@ -4655,9 +5192,9 @@ function showError(error) {
 
 ```javascript
 function showPosition(position) {
-  let latlon = position.coord.latitude + "," + position.coord.longitude;
+  let latlon = position.coords.latitude + "," + position.coords.longitude;
   let imgUrl = "https://maps.googleapis.com/maps/api/staticmap?center="+latlon+"&zoom=14&size=420x320&sensor=false&key=YOUR_KEY";
-  //console.log("IMG")
+  // console.log("IMG")
   document.getElementById("mapholder").innerHTML = "<img src='"+imgUrl+"'>";
 }
 ```
@@ -4670,31 +5207,31 @@ function showPosition(position) {
 - 显示用户附近的兴趣点。
 - 逐段导航 (GPS)。
 
-## GETCURRENTPOSITION() 方法 – 返回数据
+### getCurrentPosition() 方法 – 返回数据
 
 `getCurrentPosition()` 在成功时返回一个对象。返回纬度、经度和准确性属性。如果可用，则会返回其他属性：
 
 | 属性 | 返回值 |
 | :--- | :--- |
-| coords.latitude | 这是一个小数（始终返回）。 |
-| coords.longitude | 这是一个小数（始终返回）。 |
-| coords.accuracy | 是位置的准确性（始终返回）。 |
-| coords.altitude | 是高于平均海平的海拔（米）（可用时返回）。 |
-| coords.altitudeAccuracy | 是位置的海拔准确性（可用时返回）。 |
-| coords.heading | 是从北方向顺时针旋转的角度数（可用时返回）。 |
-| coords.speed | 是每秒米的速度（可用时返回）。 |
-| timestamp | 是响应的日期/时间（可用时返回）。 |
+| `coords.latitude` | 这是一个小数（始终返回）。 |
+| `coords.longitude` | 这是一个小数（始终返回）。 |
+| `coords.accuracy` | 是位置的准确性（始终返回）。 |
+| `coords.altitude` | 是高于平均海平的海拔（米）（可用时返回）。 |
+| `coords.altitudeAccuracy` | 是位置的海拔准确性（可用时返回）。 |
+| `coords.heading` | 是从北方向顺时针旋转的角度数（可用时返回）。 |
+| `coords.speed` | 是每秒米的速度（可用时返回）。 |
+| `timestamp` | 是响应的日期/时间（可用时返回）。 |
 
-### GEOL OBJECT – 其他有趣的方法
+### Geolocation Object – 其他有趣的方法
 
 地理定位对象还有其他方法：
 
-- **watchPosition()**: 它返回精确位置，并在用户移动时持续返回（如车内的 GPS）。
-- **clearWatch()**: 它停止 `watchPosition()` 方法。下面的示例展示了 `watchPosition()` 方法。你需要一个准确的设备来测试这个：
+- **watchPosition()**：它返回精确位置，并在用户移动时持续返回（如车内的 GPS）。
+- **clearWatch()**：它停止 `watchPosition()` 方法。下面的示例展示了 `watchPosition()` 方法。你需要一个准确的设备来测试这个：
 
 **示例：**
 
-<script>
+```javascript
 const x = document.getElementById("demo");
 
 function showPosition(position) {
@@ -4708,29 +5245,31 @@ function getLocation() {
     x.innerHTML = "不支持地理定位.";
   }
 }
-</script>
+```
 
-@capacitor/geolocation
+---
 
-geolocation API 提供了通过 GPS 获取并跟踪精确位置的方法（带有高度、方向和速度信息）。
+## @capacitor/geolocation
 
-#### 安装
+Geolocation API 提供了通过 GPS 获取并跟踪精确位置的方法（带有高度、方向和速度信息）。
 
-- npm install @capacitor/geolocation
-- npx cap sync
+### 安装
 
-#### iOS
+- `npm install @capacitor/geolocation`
+- `npx cap sync`
 
-需要在 Info.plist 中指定位置隐私描述：
+### iOS
 
-- NSLocationAlwaysUsageDescription（始终允许位置）
-- NSLocationWhenInUseUsageDescription（使用期间允许位置）
+需要在 `Info.plist` 中指定位置隐私描述：
 
-阅读 iOS 指南中关于配置 Info.plist 的部分以获取有关设置 iOS 权限的信息。
+- `NSLocationAlwaysUsageDescription`（始终允许位置）
+- `NSLocationWhenInUseUsageDescription`（使用期间允许位置）
 
-#### Android
+阅读 iOS 指南中关于配置 `Info.plist` 的部分以获取有关设置 iOS 权限的信息。
 
-需要在 AndroidManifest.xml 中添加以下权限：
+### Android
+
+需要在 `AndroidManifest.xml` 中添加以下权限：
 
 ```xml
 <!-- 地理定位 API -->
@@ -4741,13 +5280,13 @@ geolocation API 提供了通过 GPS 获取并跟踪精确位置的方法（带�
 
 前两个权限将用于位置数据（包括精确和粗略），最后一行是可选的，但如果应用程序需要 GPS 运行，则是必要的。你可以不包含它，但请注意这可能会安装在缺乏 GPS 硬件的设备上。
 
-#### 变量
+### 变量
 
 插件将使用以下项目变量（将在你 App 的 `variables.gradle` 文件中定义）：
 
-- $playServicesVersion com.google.android.gms:play-services-location 的版本（默认: 17.1.0）
+- `$playServicesVersion`：`com.google.android.gms:play-services-location` 的版本（默认: `17.1.0`）
 
-示例：
+### 示例
 
 ```javascript
 import { Geolocation } from '@capacitor/geolocation';
@@ -4758,137 +5297,115 @@ const printCurrentPosition = async () => {
 };
 ```
 
-API
+### API
 
-- `getCurrentPosition(...)`
-- `watchPosition(...)`
-- `clearWatch(...)`
-- `checkPermissions()`
-- `requestPermissions(...)`
-- 接口
-- 类型别名
+#### `getCurrentPosition(...)`
 
-
-
-
-
-**146** ◾ 掌握 React Native
-
-*getCurrentPosition(*…)*
-
-getCurrentPosition(options?: PositionOptions | undefined) => Promise<Position>
+`getCurrentPosition(options?: PositionOptions | undefined) => Promise<Position>`
 
 获取设备的当前 GPS 位置。
 
 **参数**
-- options
+- `options`: `PositionOptions`
 
-**类型**
-- *PositionOptions*
+**返回**: `Promise<Position>`
 
-返回: Promise<*Position*>
+**自**: 1.0.0
 
-自于: 1.0.0
+#### `watchPosition(...)`
 
-*watchPosition(*…)*
-
-watchPosition(options: PositionOptions, callback: WatchPositionCallback) => Promise<CallbackID>
+`watchPosition(options: PositionOptions, callback: WatchPositionCallback) => Promise<CallbackID>`
 
 设置一个位置更改的监听器，这会消耗大量能量，请仅在需要时才智能使用。
 
 **参数**
-**类型**
-- options
-  *PositionOptions*
-- callback
-  *WatchPositionCallback*
+- `options`: `PositionOptions`
+- `callback`: `WatchPositionCallback`
 
-返回: Promise<string>
+**返回**: `Promise<string>`
 
-自于: 1.0.0
+**自**: 1.0.0
 
-*clearWatch(*…)*
+#### `clearWatch(...)`
 
-clearWatch(options: ClearWatchOptions) => Promise<void>
+`clearWatch(options: ClearWatchOptions) => Promise<void>`
 
 清除指定的监听器。
 
 **参数**
-**类型**
-- options
-  *ClearWatchOptions*
+- `options`: `ClearWatchOptions`
 
-自于: 1.0.0
+**自**: 1.0.0
 
-*checkPermissions()*
+#### `checkPermissions()`
 
-checkPermissions() => Promise<PermissionStatus>
-
-Platform APIs ◾ **147**
+`checkPermissions() => Promise<PermissionStatus>`
 
 检查位置权限。
 
-返回: Promise<*PermissionStatus*>
+**返回**: `Promise<PermissionStatus>`
 
-自于: 1.0.0
+**自**: 1.0.0
 
-*requestPermissions(*…)*
+#### `requestPermissions(...)`
 
-requestPermissions(permissions?: GeolocationPluginPermissions | undefined) => Promise<PermissionStatus>
+`requestPermissions(permissions?: GeolocationPluginPermissions | undefined) => Promise<PermissionStatus>`
 
 请求位置权限。
 
 **参数**
-**类型**
-- permissions
-  *GeolocationPluginPermissions*
+- `permissions`: `GeolocationPluginPermissions`
 
-返回: Promise<*PermissionStatus*>
+**返回**: `Promise<PermissionStatus>`
 
-*Interfaces*
+### Interfaces
 
-### Position
+#### Position
+
 | 属性 | 类型 | 说明 |
 | :--- | :--- | :--- |
-| timestamp | Number | 创建时间 |
-| coords | { latitude: num; longitude: number; accuracy: num; altitudeAccuracy: num | null; altitude: num | null; speed: num | null; heading: num | null; } | 带有数据精度的 GPS 坐标 |
+| `timestamp` | `Number` | 创建时间 |
+| `coords` | `{ latitude: number; longitude: number; accuracy: number; altitudeAccuracy: number | null; altitude: number | null; speed: number | null; heading: number | null; }` | 带有数据精度的 GPS 坐标 |
 
-### PositionOptions
+#### PositionOptions
+
 | 属性 | 类型 | 说明 | 默认值 |
 | :--- | :--- | :--- | :--- |
-| enableHighAccuracy | boolean | 是否为高精度模式（如 GPS）。在 Android 12+ 设备上，如果用户未授予 ACCESS_FINE_LOCATION 权限，将被忽略（也可以通过位置别名检查）。 | false |
-| timeout | number | 位置更新的最长等待时间（毫秒）。 | 10000 |
-| maximumAge | number | 可接受的缓存位置的最大年龄（毫秒）。 | 0 |
+| `enableHighAccuracy` | `boolean` | 是否为高精度模式（如 GPS）。在 Android 12+ 设备上，如果用户未授予 `ACCESS_FINE_LOCATION` 权限，将被忽略（也可以通过位置别名检查）。 | `false` |
+| `timeout` | `number` | 位置更新的最长等待时间（毫秒）。 | `10000` |
+| `maximumAge` | `number` | 可接受的缓存位置的最大年龄（毫秒）。 | `0` |
 
-**148** ◾ 掌握 React Native
+#### ClearWatchOptions
 
-### ClearWatchOptions
 | 属性 | 类型 | 说明 |
 | :--- | :--- | :--- |
-| id | *CallbackID* | |
+| `id` | `CallbackID` | |
 
-### PermissionStatus
-| 属性 | 类型 | 说明 | 自于 |
+#### PermissionStatus
+
+| 属性 | 类型 | 说明 | 自 |
 | :--- | :--- | :--- | :--- |
-| location | *PermissionState* | 位置别名的权限状态。在 Android 上，它会同时请求/检查 ACCESS_COARSE_LOCATION 和 ACCESS_FINE_LOCATION 权限。在 iOS 和 Web 上，它会请求/检查位置权限。 | 1.0.0 |
-| coarseLocation | *PermissionState* | coarseLocation 别名的权限状态。在 Android 上，它会请求/检查 ACCESS_COARSE_LOCATION。在 Android 12+ 上，用户可以在近似位置（ACCESS_COARSE_LOCATION）或精确位置（ACCESS_FINE_LOCATION）之间选择，因此如果应用不需要高精度，则可以使用此别名。在 iOS 和 Web 上，它的值与 location 别名相同。 | 1.2.0 |
+| `location` | `PermissionState` | 位置别名的权限状态。在 Android 上，它会同时请求/检查 `ACCESS_COARSE_LOCATION` 和 `ACCESS_FINE_LOCATION` 权限。在 iOS 和 Web 上，它会请求/检查位置权限。 | 1.0.0 |
+| `coarseLocation` | `PermissionState` | `coarseLocation` 别名的权限状态。在 Android 上，它会请求/检查 `ACCESS_COARSE_LOCATION`。在 Android 12+ 上，用户可以在近似位置（`ACCESS_COARSE_LOCATION`）或精确位置（`ACCESS_FINE_LOCATION`）之间选择，因此如果应用不需要高精度，则可以使用此别名。在 iOS 和 Web 上，它的值与 `location` 别名相同。 | 1.2.0 |
 
-### GeolocationPluginPermissions
+#### GeolocationPluginPermissions
+
 | 属性 | 类型 |
-| :--- | :--- | :--- |
-| permissions | GeolocationPermissionType[] | |
+| :--- | :--- |
+| `permissions` | `GeolocationPermissionType[]` |
 
-*类型别名*
-- WatchPositionCallback: (position: Position | null, err?: any): void
-- CallbackID: string
-- PermissionState: 'prompt' | 'prompt-with-rationale' | 'granted' | 'denied'
-- GeolocationPermissionType: 'location' | 'coarseLocation'
+### 类型别名
 
-Platform APIs ◾ **149**
+- `WatchPositionCallback`: `(position: Position | null, err?: any): void`
+- `CallbackID`: `string`
+- `PermissionState`: `'prompt' | 'prompt-with-rationale' | 'granted' | 'denied'`
+- `GeolocationPermissionType`: `'location' | 'coarseLocation'`
 
-访问用户的图片和相机
+---
 
-在 HTML5 的许多开发工具中，有多种方法可以从移动设备和摄像头访问用户图片。在本教程中，我们将使用 Camera API 将用户照片导入 Web 页面，并并在 canvas 元素中显示它。Camera API 主要针对运行 Android 和 iOS 等系统的移动设备浏览器。该过程涉及少量的 JavaScript，但只要你有基础的脚本经验，就能完成它。
+## 访问用户的图片和相机
+
+在 HTML5 的许多开发工具中，有多种方法可以从移动设备和摄像头访问用户图片。在本教程中，我们将使用 Camera API 将用户照片导入 Web 页面，并在 `canvas` 元素中显示它。Camera API 主要针对运行 Android 和 iOS 等系统的移动设备浏览器。该过程涉及少量的 JavaScript，但只要你有基础的脚本经验，就能完成它。
 
 ### 创建页面
 
@@ -4912,7 +5429,7 @@ Platform APIs ◾ **149**
 
 在整个教程过程中，我们将不断向页面的 HTML body 部分和页面头部的 script 部分添加内容。
 
-## 添加文件输入
+### 添加文件输入
 
 使用 Camera API，你可以使用一个设置为接受图像的 file input 元素。首先，在你页面的 body 部分添加一些说明性文字：
 
@@ -4922,17 +5439,15 @@ Platform APIs ◾ **149**
 </p>
 ```
 
-**150** ◾ 掌握 React Native
-
 接下来添加输入元素：
 
 ```html
 <input type="file" accept="image/*" onchange="picChange(event)">
 ```
 
-该元素被设置为接受任何类型的图像。我们还设置了在 onchange 事件发生时执行的函数，每当用户从设备选择图像时，都会触发该函数。
+该元素被设置为接受任何类型的图像。我们还设置了在 `onchange` 事件发生时执行的函数，每当用户从设备选择图像时，都会触发该函数。
 
-## 添加 CANVAS
+### 添加 CANVAS
 
 为了演示使用输入元素可以做什么，我们将图像写入 canvas。并带上一些说明性信息：
 
@@ -4941,7 +5456,7 @@ Platform APIs ◾ **149**
 <canvas id="capturedPhoto" width="500" height="400"></canvas>
 ```
 
-## 响应更改
+### 响应更改
 
 现在让我们在 script 部分添加我们指定的函数：
 
@@ -4950,8 +5465,6 @@ function picChange(evt) {
   // 逻辑在此
 }
 ```
-
-Platform APIs ◾ **151**
 
 剩余代码将位于此条件块内。从获取窗口的引用开始：
 
@@ -4966,15 +5479,13 @@ function picChange(evt) {
 }
 ```
 
-## 绘制到 CANVAS
+### 绘制到 CANVAS
 
-现在将用户照片绘制到画布。调用 ObjectURL 后，获取 canvas 的引用：
+现在将用户照片绘制到画布。调用 `ObjectURL` 后，获取 canvas 的引用：
 
 ```javascript
 var photoCanvas = document.getElementById("capturedPhoto");
 ```
-
-**152** ◾ 掌握 React Native
 
 我们使用给该元素的 ID 值来检索它。现在获取上下文：
 
@@ -4982,13 +5493,13 @@ var photoCanvas = document.getElementById("capturedPhoto");
 var ctx = photoCanvas.getContext("2d");
 ```
 
-现在为照片创建一个 Image 对象：
+现在为照片创建一个 `Image` 对象：
 
 ```javascript
 var photo = new Image();
 ```
 
-在照片加载之前，我们不会尝试将其绘制到页面中，所以接下来添加一个 onload 函数：
+在照片加载之前，我们不会尝试将其绘制到页面中，所以接下来添加一个 `onload` 函数：
 
 ```javascript
 photo.onload = function() {
@@ -4996,23 +5507,17 @@ photo.onload = function() {
 };
 ```
 
-在 onload 函数之后，通过将它设置为我们创建的元素的源来加载图像：
+在 `onload` 函数之后，通过将它设置为我们创建的元素的源来加载图像：
 
 ```javascript
 photo.src = picURL;
 ```
 
-当图像加载后，onload 函数将执行，将其写入页面上的 canvas 元素中。最后，撤销 ObjectURL：
+当图像加载后，`onload` 函数将执行，将其写入页面上的 `canvas` 元素中。最后，撤销 `ObjectURL`：
 
 ```javascript
 windowURL.revokeObjectURL(picURL);
 ```
-
-
-
-
-
-平台 APIs ◾ **153**
 
 我们在教程中使用的代码演示了如何将用户拍摄的照片写入 `canvas` 元素，以便后续对其进行处理。然而，另一种方案是可以通过在 JavaScript 函数中将 URL 设置为 `src` 属性将图像写入 `img` 元素，而不是将其加载到 `Image` 对象中。
 
@@ -5020,23 +5525,25 @@ windowURL.revokeObjectURL(picURL);
 
 上述编码方法旨在捕捉移动设备上的照片——目前正在开发其他从摄像头获取图像的工具，包括 `getUserMedia` 方法。你可能还希望考虑使用 Modernizr 等工具来对用户设备和浏览器进行功能检测。
 
-## 使用 asyncstore 存储持久化数据
+---
 
-AsyncStorage 是一个全局的、未加密的持久化键值存储系统。它应该被用于 LocalStorage。
+## 使用 AsyncStorage 存储持久化数据
 
-由于 AsyncStorage 在全局范围内运行，建议在除轻量消耗之外的任何地方对 AsyncStorage 使用抽象，而不是直接使用它。
+`AsyncStorage` 是一个全局的、未加密的持久化键值存储系统。它应该被用于替代 `LocalStorage`。
 
-对于 iOS，AsyncStorage 由原生代码支持，它会将少量数据存储在固定字典中，将大量数据存储在单独的文件中。对于 Android，AsyncStorage 根据可用情况使用 RocksDB 或 SQLite。
+由于 `AsyncStorage` 在全局范围内运行，建议在除轻量消耗之外的任何地方对 `AsyncStorage` 使用抽象，而不是直接使用它。
 
-AsyncStorage 的 JavaScript 代码是一个面层，提供了清晰的 JavaScript API、真实对象，且函数并不多。每个到 API 的路径都会返回一个 Promise 对象。
+对于 iOS，`AsyncStorage` 由原生代码支持，它会将少量数据存储在固定字典中，将大量数据存储在单独的文件中。对于 Android，`AsyncStorage` 根据可用情况使用 RocksDB 或 SQLite。
 
-*导入 AsyncStorage 库*
+`AsyncStorage` 的 JavaScript 代码是一个面层，提供了清晰的 JavaScript API、真实对象，且函数并不多。每个到 API 的路径都会返回一个 `Promise` 对象。
+
+### 导入 AsyncStorage 库
 
 ```javascript
 import { AsyncStorage } from 'react-native';
 ```
 
-*持久化数据*
+### 持久化数据
 
 ```javascript
 _storeData = async () => {
@@ -5051,7 +5558,7 @@ _storeData = async () => {
 };
 ```
 
-*获取数据*
+### 获取数据
 
 ```javascript
 _retrieveData = async () => {
@@ -5069,63 +5576,63 @@ _retrieveData = async () => {
 
 ### 方法
 
-### *getItem()*
+#### `getItem()`
 
-`static getItem(key: string, [clbk]: ?(error: Error, result: string) => void)`
+`static getItem(key: string, [callback]: ?(error: Error, result: string) => void)`
 
-它根据键获取项目并在完成后调用回调函数。返回一个 Promise 对象。
+它根据键获取项目并在完成后调用回调函数。返回一个 `Promise` 对象。
 
-参数
+**参数**
 
 | 名称 | 数据类型 | 描述 |
 | :--- | :--- | :--- |
-| key | string | 要获取的项目的键。 |
-| callback | ?error: Error, result: string) => void | 如果找到或发生任何错误，将调用该函数。 |
+| `key` | `string` | 要获取的项目的键。 |
+| `callback` | `?(error: Error, result: string) => void` | 如果找到或发生任何错误，将调用该函数。 |
 
-### *setItem()*
+#### `setItem()`
 
-`static setItem(key: string, value: string, [clbk]: ?(error: Error) => void)`
+`static setItem(key: string, value: string, [callback]: ?(error: Error) => void)`
 
-它为键设置值并在完成后调用回调函数。返回一个 Promise 对象。
+它为键设置值并在完成后调用回调函数。返回一个 `Promise` 对象。
 
-参数
-
-| 名称 | 类型 | 描述 |
-| :--- | :--- | :--- |
-| key | string | 要设置的项目的键。 |
-| value | string | 为该键设置的值。 |
-| callback | ?error: Error) => void | 发生错误时调用的函数。 |
-
-### *removeItem()*
-
-`static removeItem(key: string, [clbk]: ?(error: Error) => void)`
-
-它移除一个键的项目并在完成后调用回调函数，同时返回一个 Promise 对象。
-
-参数
+**参数**
 
 | 名称 | 类型 | 描述 |
 | :--- | :--- | :--- |
-| key | string | 要移除的项目的键。 |
-| callback | ?error: Error) => void | 发生错误时调用的函数。 |
+| `key` | `string` | 要设置的项目的键。 |
+| `value` | `string` | 为该键设置的值。 |
+| `callback` | `?(error: Error) => void` | 发生错误时调用的函数。 |
 
-### *mergeItem()*
+#### `removeItem()`
 
-`static mergeItem(key: string, value: string, [clbk]: ?(error: Error) => void)`
+`static removeItem(key: string, [callback]: ?(error: Error) => void)`
 
-将现有的键值与输入值合并，假设两个值都是字符串化的 JSON。它也返回一个 Promise 对象。
+它移除一个键的项目并在完成后调用回调函数，同时返回一个 `Promise` 对象。
+
+**参数**
+
+| 名称 | 类型 | 描述 |
+| :--- | :--- | :--- |
+| `key` | `string` | 要移除的项目的键。 |
+| `callback` | `?(error: Error) => void` | 发生错误时调用的函数。 |
+
+#### `mergeItem()`
+
+`static mergeItem(key: string, value: string, [callback]: ?(error: Error) => void)`
+
+将现有的键值与输入值合并，假设两个值都是字符串化的 JSON。它也返回一个 `Promise` 对象。
 
 *注意*：并不是所有的原生实现都支持此。
 
-参数
+**参数**
 
 | 名称 | 类型 | 描述 |
 | :--- | :--- | :--- |
-| key | string | 要修改的项目键。 |
-| value | string | 为该键合并的新值。 |
-| callback | ?error: Error) => void | 发生错误时调用的函数。 |
+| `key` | `string` | 要修改的项目键。 |
+| `value` | `string` | 为该键合并的新值。 |
+| `callback` | `?(error: Error) => void` | 发生错误时调用的函数。 |
 
-示例：
+**示例：**
 
 ```javascript
 let UID123_object = {
@@ -5160,111 +5667,102 @@ AsyncStorage.setItem(
 // => {'name':'ABC','age':50,'traits': {'shoe_size':20,'hair':'red ','eyes':'green'}}
 ```
 
-### *clear()*
+#### `clear()`
 
-`static clear([clback]: ?(error: Error) => void)`
+`static clear([callback]: ?(error: Error) => void)`
 
-它可以擦除针对所有客户端、库等的*所有* AsyncStorage。你不希望使用它；请使用 `removeItem` 或 `multiRemove` 来仅清除你应用的键。返回一个 Promise 对象。
+它可以擦除针对所有客户端、库等的*所有* `AsyncStorage`。你不希望使用它；请使用 `removeItem` 或 `multiRemove` 来仅清除你应用的键。返回一个 `Promise` 对象。
 
-### *getAllKeys()*
+#### `getAllKeys()`
 
-`static getAllKeys([clbk]: ?(error: Error, result: string) => void)`
+`static getAllKeys([callback]: ?(error: Error, result: string) => void)`
 
-获取所有客户端、库等的*所有*键。你不希望使用它；请使用 `removeItem` 或 `multiRemove` 来仅清除你应用的键。返回一个 Promise 对象。
+获取所有客户端、库等的*所有*键。你不希望使用它；请使用 `removeItem` 或 `multiRemove` 来仅清除你应用的键。返回一个 `Promise` 对象。
 
-参数
-
-| 名称 | 类型 | 描述 |
-| :--- | :--- | :--- |
-| callback | ?error: Error, result: string) => void | 发生错误时调用的函数。 |
-
-### *multiGet()*
-
-`static multiGet(keys: string, [clbk]: ?(error: Error, result: string) => void)`
-
-它根据给定的键数组批量获取项目。返回一个 Promise 对象。
-
-参数
+**参数**
 
 | 名称 | 类型 | 描述 |
 | :--- | :--- | :--- |
-| keys | string | 获取的项目键数组。 |
-| callback | ?error: Error, result: string) => void | 发生错误时调用的函数。 |
+| `callback` | `?(error: Error, result: string) => void` | 发生错误时调用的函数。 |
 
-### *multiSet()*
+#### `multiGet()`
+
+`static multiGet(keys: string[], [callback]: ?(error: Error, result: string) => void)`
+
+它根据给定的键数组批量获取项目。返回一个 `Promise` 对象。
+
+**参数**
+
+| 名称 | 类型 | 描述 |
+| :--- | :--- | :--- |
+| `keys` | `string[]` | 获取的项目键数组。 |
+| `callback` | `?(error: Error, result: string) => void` | 发生错误时调用的函数。 |
+
+#### `multiSet()`
 
 `static multiSet(keyValuePairs: Array<Array<string>>, [callback]: ?(error: Error) => void)`
 
-使用此操作存储多个键值对。操作完成后你将获得一个包含错误的单一回调。返回一个 Promise 对象。
+使用此操作存储多个键值对。操作完成后你将获得一个包含错误的单一回调。返回一个 `Promise` 对象。
 
-参数
-
-| 名称 | 类型 | 描述 |
-| :--- | :--- | :--- |
-| keyValuePairs | Array<Array<string>> | 要设置的项目键值对数组。 |
-| callback | ?error: Error) => void | 发生错误时调用的函数。 |
-
-### *multiRemove()*
-
-`static multiRemove(keys: Array<string>, [clbk]: ?(error: Error) => void)`
-
-它批量删除键数组中的所有键。返回一个 Promise 对象。
-
-参数
+**参数**
 
 | 名称 | 类型 | 描述 |
 | :--- | :--- | :--- |
-| keys | Array<string> | 要删除的项目键数组。 |
-| callback | ?error: Error) => void | 发生错误时调用的函数。 |
+| `keyValuePairs` | `Array<Array<string>>` | 要设置的项目键值对数组。 |
+| `callback` | `?(error: Error) => void` | 发生错误时调用的函数。 |
 
-### *multiMerge()*
+#### `multiRemove()`
+
+`static multiRemove(keys: Array<string>, [callback]: ?(error: Error) => void)`
+
+它批量删除键数组中的所有键。返回一个 `Promise` 对象。
+
+**参数**
+
+| 名称 | 类型 | 描述 |
+| :--- | :--- | :--- |
+| `keys` | `Array<string>` | 要删除的项目键数组。 |
+| `callback` | `?(error: Error) => void` | 发生错误时调用的函数。 |
+
+#### `multiMerge()`
 
 `static multiMerge(keyValuePairs: Array<Array<string>>, [callback]: ?(error: Error) => void)`
 
-批量合并一组键的现有值和新值的操作。其值是字符串化的 JSON 并返回一个 Promise 对象。
+批量合并一组键的现有值和新值的操作。其值是字符串化的 JSON 并返回一个 `Promise` 对象。
 
 *注意*：并不是所有的原生实现都支持此。
 
-参数
+**参数**
 
 | 名称 | 类型 | 描述 |
 | :--- | :--- | :--- |
-| keyValuePairs | Array<Array<string>> | 用于合并的项目键值对数组。 |
-| callback | ?error: Error) => void | 发生错误时调用的函数。 |
+| `keyValuePairs` | `Array<Array<string>>` | 用于合并的项目键值对数组。 |
+| `callback` | `?(error: Error) => void` | 发生错误时调用的函数。 |
 
+**示例：**
 
-
-
-
-**160**  精通 React Native
-
-示例：
-
+```javascript
 // 第用户，初始值
-
-let UID134_object = {
-  name: 'ABC',
+let UID234_object = {
+  name: 'Chris',
   age: 15,
   traits: { hair: 'brown', eyes: 'brown' }
 };
 
 // 第用户，增量值
-
-let UID134_delta = {
+let UID234_delta = {
   age: 31,
   traits: { eyes: 'blue', shoe_size: 10 }
 };
 
 // 第二用户，初始值
-
-let UID145_object = {
+let UID345_object = {
   name: 'Marge',
   age: 25,
   traits: { hair: 'blonde', eyes: 'blue' }
 };
 
 // 第二用户，增量值
-
 let UID345_delta = {
   age: 26,
   traits: { eyes: 'green', shoe_size: 6 }
@@ -5295,10 +5793,13 @@ AsyncStorage.multiSet(multi_set_pairs, (err) => {
 // 控制台输出结果：
 // => UID234 {"name":"Chris","age":31,"traits":{"shoe_size":10,"hair":"brown","eyes":"blue"}}
 // => UID345 {"name":"Marge","age":26,"traits":{"shoe_size":6,"hair":"blonde","eyes":"green"}}
+```
 
-在本章中，我们将学习如何使用 *AsyncStorage* 来持久化你的数据。
+在本章中，我们将学习如何使用 `AsyncStorage` 来持久化你的数据。
 
-**第 1 步：演示**：在这一步中，我们将创建一个名为 *App.js* 的文件。
+### 步骤 1：演示
+
+在这一步中，我们将创建一个名为 `App.js` 的文件。
 
 ```javascript
 import React from 'react';
@@ -5313,12 +5814,13 @@ const App = () => {
 export default App
 ```
 
-**第 2 步：逻辑**：
+### 步骤 2：逻辑
 
-- 初始状态 Name为空字符串。我们将在组件挂载时从存储中更新它。
-- *setName* 函数将获取输入字段中的文本，通过 *AsyncStorage* 进行保存并更新状态。
+- 初始状态 `name` 为空字符串。我们将在组件挂载时从存储中更新它。
+- `setName` 函数将获取输入字段中的文本，通过 `AsyncStorage` 进行保存并更新状态。
 
-async_storage_example.js
+**async_storage_example.js**
+
 ```javascript
 import React, { Component } from 'react'
 import { StatusBar } from 'react-native'
@@ -5354,7 +5856,7 @@ class AsyncStorageExample extends Component {
 
 export default AsyncStorageExample
 
-const styles = StyleSheet.create ({
+const styles = StyleSheet.create({
   container: {
     flex: 1,
     alignItems: 'center',
@@ -5373,10 +5875,14 @@ const styles = StyleSheet.create ({
 
 在本章中，我们学习了平台 API。在下一章中，我们将学习 React Native 的模块。
 
+---
+
 # 第 7 章
- React Native 模块
+
+## React Native 模块
 
 ### 本章内容
+
 - 使用 NPM 安装 JavaScript 库
 - 适用于 iOS 的原生模块
 - 适用于 Android 的原生模块
@@ -5385,68 +5891,83 @@ const styles = StyleSheet.create ({
 在上一章中，我们学习了 React Native 中的平台 API；在本章中，我们将学习 React Native 模块。
 
 ## 模块
+
 ### 原生模块简介
 
 React Native 应用可能需要访问 JavaScript 默认无法提供的原生平台 API，例如 Apple Pay 或 Google Pay 的原生 API。你可能希望利用某些现有的 Objective-C、Swift、Java 或 C++ 库，而无需在 JavaScript 中重新实现它们，或者为图像处理构建某些高性能、多线程的代码。
 
-NativeModule 系统将 Java/Objective-C/C++（原生）类的实例作为 JS 对象暴露给 JavaScript (JS)，允许你从 JS 内部运行任意的原生代码。虽然我们并不预见此功能是标准开发流程的一部分，但它的存在至关重要。如果 React Native 没有暴露你的 JS 项目所需的原生 API，你应该能够创建一个。如果 React Native 没有暴露你的 JS 项目所需的原生 API，你应该能够创建一个。
-
-**163**  精通 React Native
-
-**164**  精通 React Native
+`NativeModule` 系统将 Java/Objective-C/C++（原生）类的实例作为 JS 对象暴露给 JavaScript (JS)，允许你从 JS 内部运行任意的原生代码。虽然我们并不预见此功能是标准开发流程的一部分，但它的存在至关重要。如果 React Native 没有暴露你的 JS 项目所需的原生 API，你应该能够创建一个。
 
 ### 使用 NPM 安装 JavaScript 库
 
- 库包含了开发者预先编写。
+库包含了开发者预先编写的代码。
 
-### 什么是 NPM？
+#### 什么是 NPM？
 
 NPM 是 Node.js 的包管理器。它是 JavaScript 生态系统，包含了大量的开源软件、库和模块。
 
-### 如何下载 NPM？
+#### 如何下载 NPM？
 
-Node.js 正大家所周知，是一种服务器端技术。因此，当我们在浏览器中执行上述代码时会遇到错误：可以通过安装工具来避免此问题。从上述 URL 下载 node.js 的 LTS 版本（推荐）：https://nodejs.org/download/
+Node.js 是一种服务器端技术。因此，当我们在浏览器中执行上述代码时会遇到错误：可以通过安装工具来避免此问题。从上述 URL 下载 node.js 的 LTS 版本（推荐）：`https://nodejs.org/download/`
 
-你可以使用命令提示符 (cmd) 检查 node.js 和 NPM 是否安装成功。
-> Node -v
-> npm -v
+你可以使用命令提示符 (`cmd`) 检查 node.js 和 NPM 是否安装成功。
 
-### 如何安装包？
+```bash
+node -v
+npm -v
+```
+
+#### 如何安装包？
 
 上述技术仅本地安装包，这意味着包只能被当前项目访问。
-> npm install chalk
 
-**165**  精通 React Native
+```bash
+npm install chalk
+```
 
-为了存储包，NPM 会生成一个新的子目录 node_modules（如果不存在）。该文件夹现在将包含所有下载的包。
+为了存储包，NPM 会生成一个新的子目录 `node_modules`（如果不存在）。该文件夹现在将包含所有下载的包。
 
-运行以下命令确认安装安装成功：
-> ls node_modules
+运行以下命令确认安装成功：
 
-### 如何全局下载包？
+```bash
+ls node_modules
+```
+
+#### 如何全局下载包？
 
 如果你希望安装系统上任何项目都可以使用的 NPM 包，请使用以下语法：
-> npm install -g upper-case
 
-### 如何使用包
+```bash
+npm install -g upper-case
+```
+
+#### 如何使用包
 
 以下是将 NPM 包插入 JavaScript 源码的方法：
+
 ```javascript
 const upper_case = require('upper-case');
 console.log(upper_case.upperCase("Hello World!"));
 ```
 
-**166**  精通 React Native
-
 如果在执行上述命令时遇到错误，请在运行上述命令之前打开 Windows PowerShell 并运行以下指令：
-> Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy Unrestricted
-> Set-ExecutionPolicy RemoteSigned
+
+```powershell
+Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy Unrestricted
+Set-ExecutionPolicy RemoteSigned
+```
 
 再次运行上述命令，这次应该可以了。
-> npm install -g browserify
+
+```bash
+npm install -g browserify
+```
 
 使用以下命令生成一个包含所有源码依赖的文件：
-> browserify source-file-name.js -o bundle.js
+
+```bash
+browserify source-file-name.js -o bundle.js
+```
 
 ### iOS 原生模块
 
@@ -5454,45 +5975,34 @@ console.log(upper_case.upperCase("Hello World!"));
 
 ### 创建日历原生模块
 
-接下来的章节将引导你完成创建原生模块 CalendarModule 的过程，这将允许你从 JavaScript 使用 Apple 的日历 API。最后，你应该能够调用 CalendarModule.createCalendarEvent('Dinner Party,' 'My House')；这是一个调用创建日历事件原生函数的 JavaScript 方法。
+接下来的章节将引导你完成创建原生模块 `CalendarModule` 的过程，这将允许你从 JavaScript 使用 Apple 的日历 API。最后，你应该能够调用 `CalendarModule.createCalendarEvent('Dinner Party', 'My House')`；这是一个调用创建日历事件原生函数的 JavaScript 方法。
 
-## 设置
+#### 设置
 
-开始之前，启动 Xcode 并导航到 React Native 应用中的 iOS 项目。在 React Native 应用中，你可以在此处访问你的 iOS 项目：
-
-
-
-
-
-## React Native Modules **167**
+开始之前，启动 Xcode 并导航到 React Native 应用中的 iOS 项目。在 React Native 应用中，你可以在此处访问你的 iOS 项目。
 
 我们建议使用 Xcode 编写原生代码。Xcode 是为 iOS 编程设计的，利用它将帮助你快速解决代码语法等细微问题。
 
-### 创建自定义原生模块文件
+#### 创建自定义原生模块文件
 
-第一步是设计主要的自定义原生模块头文件和实现文件。创建一个名为 RCTCalendarModule.h 的新文件，然后添加以下内容：
+第一步是设计主要的自定义原生模块头文件和实现文件。创建一个名为 `RCTCalendarModule.h` 的新文件，然后添加以下内容：
 
 ```objc
 // RCTCalendarModule.h
-
 #import <React/RCTBridgeModule.h>
 
-@interface RCTCalendarModule : NSObject
-
-<RCTBridgeModule>
-
+@interface RCTCalendarModule : NSObject <RCTBridgeModule>
 @end
 ```
 
-你可以选择任何与你创建的原生模块对应的名称。因为你正在构建一个日历原生模块，请将类命名为 RCTCalendarModule。由于 ObjC 不像 Java 或 C++ 那样支持语言级别的命名空间，因此类名带有前缀。这可以是你的应用程序或基础设施名称的缩写。在这种情况下，RCT 代表 React。
+你可以选择任何与你创建的原生模块对应的名称。因为你正在构建一个日历原生模块，请将类命名为 `RCTCalendarModule`。由于 ObjC 不像 Java 或 C++ 那样支持语言级别的命名空间，因此类名带有前缀。这可以是你的应用程序或基础设施名称的缩写。在这种情况下，`RCT` 代表 React。
 
-CalendarModule 类实现了 `RCTBridgeModule` 协议，所示。实现了 `RCTBridgeModule` 协议的 Objective-C 类被称为原生模块（native module）。
+`CalendarModule` 类实现了 `RCTBridgeModule` 协议，所示。实现了 `RCTBridgeModule` 协议的 Objective-C 类被称为原生模块。
 
-接下来，让我们开始开发原生模块。在同一个文件夹中，创建相关的实现文件 RCTCalendarModule.m，并包含以下内容：
+接下来，让我们开始开发原生模块。在同一个文件夹中，创建相关的实现文件 `RCTCalendarModule.m`，并包含以下内容：
 
 ```objc
 // RCTCalendarModule.m
-
 #import "RCTCalendarModule.h"
 
 @implementation RCTCalendarModule
@@ -5503,11 +6013,11 @@ RCT_EXPORT_MODULE();
 @end
 ```
 
-### 模块名称
+#### 模块名称
 
-目前，你的 RCTCalendarModule.m 原生模块中唯一的宏是 `RCT_EXPORT_MODULE`，它负责向 React Native 导出并注册原生模块类。`RCT_EXPORT_MODULE` 宏接受一个额外的参数，用于定义在 JavaScript 代码中的模块名称。
+目前，你的 `RCTCalendarModule.m` 原生模块中唯一的宏是 `RCT_EXPORT_MODULE`，它负责向 React Native 导出并注册原生模块类。`RCT_EXPORT_MODULE` 宏接受一个额外的参数，用于定义在 JavaScript 代码中的模块名称。
 
-这不是一个字符串字量参数。在接下来的示例中，使用的是 `RCT_EXPORT_MODULE(CalendarModuleFoo)` 而不是 `RCT_EXPORT_MODULE("CalendarModuleFoo")`。
+这不是一个字符串字面量参数。在接下来的示例中，使用的是 `RCT_EXPORT_MODULE(CalendarModuleFoo)` 而不是 `RCT_EXPORT_MODULE("CalendarModuleFoo")`。
 
 ```objc
 // 导出一个名为 CalendarModuleFoo 的模块
@@ -5536,18 +6046,17 @@ RCT_EXPORT_MODULE();
 const { CalendarModule } = ReactNative.NativeModules;
 ```
 
-### 将原生方法导出到 JavaScript
+#### 将原生方法导出到 JavaScript
 
 除非有明确指示，否则 React Native 不会向 JavaScript 暴露原生模块中的任何方法。可以使用 `RCT_EXPORT_METHOD` 宏来实现此。由于在 `RCT_EXPORT_METHOD` 宏中编写的方法是异步的，因此返回类型始终为 `void`。你可以利用回调或发送事件将结果从 `RCT_EXPORT_METHOD` 函数传输到 JavaScript（下文将介绍）。让我们使用 `RCT_EXPORT_METHOD` 宏为我们的 CalendarModule 原生模块创建一个原生方法。暂时将其命名为 `createCalendarEvent()`，并接受 `name` 和 `location` 作为字符串输入。我们将讨论各种参数类型。
 
 ```objc
 RCT_EXPORT_METHOD(createCalendarEvent:(NSString *)name location:(NSString *)location)
 {
-
 }
 ```
 
-请记住，在使用 TurboModules 时，除非方法依赖于 RCT 参数转换，否则不需要 `RCT_EXPORT_METHOD` 宏。我们不鼓励用户使用 `RCTConvert`，因为 React Native 将删除 `RCT_EXPORT_MACRO`。或者，你可以在方法体内部进行参数转换。
+请记住，在使用 TurboModules 时，除非方法依赖于 `RCTConvert` 参数转换，否则不需要 `RCT_EXPORT_METHOD` 宏。我们不鼓励用户使用 `RCTConvert`，因为 React Native 将删除 `RCT_EXPORT_MACRO`。或者，你可以在方法体内部进行参数转换。
 
 在扩展 `createCalendarEvent()` 方法的功能之前，在方法中包含控制台日志，以确保它是从你的 React Native 应用中的 JavaScript 调用的。利用 React 的 `RCTLog` API。在代码开头导入头文件后添加日志调用。
 
@@ -5560,7 +6069,7 @@ RCT_EXPORT_METHOD(createCalendarEvent:(NSString *)name location:(NSString *)loca
 }
 ```
 
-### 同步方法
+#### 同步方法
 
 要构建同步原生方法，请使用 `RCT_EXPORT_BLOCKING_SYNCHRONOUS_METHOD`。
 
@@ -5575,7 +6084,7 @@ RCT_EXPORT_BLOCKING_SYNCHRONOUS_METHOD(getName)
 
 目前，我们不鼓励使用同步方法，因为它们可能会产生重大的性能影响并为你的原生模块引入线程问题。请记住，如果你使用 `RCT_EXPORT_BLOCKING_SYNCHRONOUS_METHOD`，你的应用将无法再次使用 Google Chrome 调试器。这是因为同步方法需要 JS VM 与应用共享内存。React Native 在 Google Chrome 的 JS VM 内部运行。
 
-### 测试你构建的内容
+#### 测试你构建的内容
 
 你现在已经完成了原生模块的脚架。要测试这一点，请在你的应用程序中找到你想要包含原生模块的位置。下面是一个你可能使用的组件示例：
 
@@ -5606,37 +6115,29 @@ export default NewModuleButton;
 const { CalendarModule } = NativeModules;
 ```
 
-### 在迭代过程中构建
+#### 在迭代过程中构建
 
 当你通过这些步骤并迭代原生模块时，你需要重新执行应用程序的原生构建以访问你最新的 JavaScript 代码。这是因为你开发的代码包含在程序的原生部分。虽然 React Native 的 metro bundler 可以监听 JavaScript 的更改并重新构建 JS 包，但它不能对原生代码进行同样的操作。如果你想测试最新的原生修改，必须使用 `npx react-native run-ios` 命令重新构建。
 
-### 总结
+#### 总结
 
 在 JavaScript 中，你现在应该可以调用原生模块的 `createCalendarEvent()` 函数了。由于你在方法使用了 `RCTLog`，你可以通过在应用中设置调试模式并在 Chrome 控制台或移动应用调试器 Flipper 中检查来验证你的原生方法是否被调用。每当你使用原生模块函数时，你都应该看到你的 `RCTLogInfo` 消息。
 
-
-
-
-
-## 精通 React Native
-
 继续阅读以了解更多关于原生模块函数接受哪些参数类型，以及如何在原生模块中配置回调（callbacks）和承诺（promises）。
-
-## 超日历原生模块
 
 ### 更好的原生模块导出
 
-通过从 NativeModules 获取来导入原生模块有点笨拙。
+通过从 `NativeModules` 获取来导入原生模块有点笨拙。
 
-你可以为你的原生模块开发一个 JavaScript 包装器（wrapper），避免用户在每次访问你的原生模块时都执行此操作。创建一个名为 `NativeCalendarModule.js` 的新 JavaScript 文件，并填充以下代码：
+你可以为你的原生模块开发一个 JavaScript 包装器，避免用户在每次访问你的原生模块时都执行此操作。创建一个名为 `NativeCalendarModule.js` 的新 JavaScript 文件，并填充以下代码：
 
 ```javascript
 /**
-* 这将原生 CalendarModule 模块暴露为 JS 模块。它包含
-* 函数 ‘createCalendarEvent’，get接收以下参数：
-* 1. String name: 代表事件名称的字符串
-* 2. String location: 代表事件位置的字符串
-*/
+ * 这将原生 CalendarModule 模块暴露为 JS 模块。它包含
+ * 函数 ‘createCalendarEvent’，接收以下参数：
+ * 1. String name: 代表事件名称的字符串
+ * 2. String location: 代表事件位置的字符串
+ */
 import { NativeModules } from 'react-native';
 
 const { CalendarModule } = NativeModules;
@@ -5648,11 +6149,11 @@ export default CalendarModule;
 
 ```typescript
 /**
-* 这将原生 CalendarModule 模块暴露为 JS 模块。它包含
-* 函数 ‘createCalendarEvent’，get接收以下参数：
-* 1. String name: 代表事件名称的字符串
-* 2. String location: 代表事件位置的字符串
-*/
+ * 这将原生 CalendarModule 模块暴露为 JS 模块。它包含
+ * 函数 ‘createCalendarEvent’，接收以下参数：
+ * 1. String name: 代表事件名称的字符串
+ * 2. String location: 代表事件位置的字符串
+ */
 import { NativeModules } from 'react-native';
 
 const { CalendarModule } = NativeModules;
@@ -5671,6 +6172,8 @@ import NativeCalendarModule from './NativeCalendarModule';
 
 NativeCalendarModule.createCalendarEvent('foo', 'bar');
 ```
+
+
 
 需要注意的是，这意味着你导入 CalendarModule 的地方与 CalendarModule.js 处于同一层级结构。请根据需要保持相对导入的更新。
 
@@ -5707,7 +6210,7 @@ NativeCalendarModule.createCalendarEvent('foo', 'bar');
 ```objective-c
 -(NSDictionary *)constantsToExport
 {
-  return @{@DEFAULT_EVENT_NAME": @"New Event" };
+  return @{@"DEFAULT_EVENT_NAME": @"New Event"};
 }
 ```
 
@@ -5736,7 +6239,7 @@ location:(NSString *)location
 myCallback:(RCTResponseSenderBlock)callback)
 ```
 
-随后你可以在原生代码中调用回调，传递你想给 JavaScript 的任何结果。注意的是，`RCTResponseSenderBlock` 只接受一个参数：传递给 JavaScript 的参数数组。这将返回在下方节中产生的事件 ID。
+随后你可以在原生代码中调用回调，传递你想给 JavaScript 的任何结果。值得注意的是，`RCTResponseSenderBlock` 只接受一个参数：传递给 JavaScript 的参数数组。这将返回在下方节中产生的事件 ID。
 
 至关重要的一点是，回调在原生函数完成时并不会立即执行——记住，通信是异步的。
 
@@ -5794,10 +6297,6 @@ const onPress = () => {
   );
 };
 ```
-
-
-
-
 
 React Native 模块 **177**
 
@@ -5889,7 +6388,6 @@ const onSubmit = async () => {
 // CalendarModule.h
 #import <React/RCTBridgeModule.h>
 #import <React/RCTEventEmitter.h>
-
 @interface CalendarModule : RCTEventEmitter
 <RCTBridgeModule>
 @end
@@ -5904,19 +6402,16 @@ JavaScript 代码可以通过将你的模块封装在一个新的 `NativeEventEm
 {
   bool hasListeners;
 }
-
 // 当此模块的第一个监听器添加时会被调用。
 -(void)startObserving {
   hasListeners = YES;
   // 根据需要设置任何上游监听器或后台任务
 }
-
 // 当此模块的最后一个监听器释放或移除时会被调用。
 -(void)stopObserving {
   hasListeners = NO;
   // 移除上游监听器，停止不必要的后台任务
 }
-
 - (void)calendarEventReminderReceived:(Notification *)notification
 {
   NSString *eventName = notification.userInfo[@"name"];
@@ -5980,7 +6475,6 @@ class CalendarManager: NSObject {
   func addEvent(_ name: String, location: String, date: NSNumber) -> Void {
     // Date 可以使用了！
   }
-
   @objc
   func constantsToExport() -> [String: Any] {
     return ["someKey": "someValue"]
@@ -5993,19 +6487,11 @@ class CalendarManager: NSObject {
 ```objc
 // CalendarManagerBridge.m
 #import <React/RCTBridgeModule.h>
-
 @interface RCT_EXTERN_MODULE(CalendarManager, NSObject)
-
 RCT_EXTERN_METHOD(addEvent:(NSString *)name
-location:(NSString *)location date:(nonnull
-NSNumber *)date)
-
+location:(NSString *)location date:(nonnull NSNumber *)date)
 @end
 ```
-
-
-
-
 
 ## React Native 模块 **183**
 
@@ -6024,7 +6510,7 @@ invalidate()
 
 ## ANDROID 原生模块
 
-欢迎学习 Android 版本的原生模块。请先阅读《原生模块简介》以了解更多关于原生模块的知识。
+欢迎学习 Android 版本的原生模块。请先阅读《原生模块简介》以了解更更多关于原生模块的知识。
 
 ### 创建日历原生模块
 
@@ -6038,7 +6524,7 @@ React Native 团队目前正在重构原生模块框架。TurboModules 是一种
 
 *设置*
 
-开始之前，启动 Android Studio 并导航到你 React Native 应用程序中的 Android 项目。在 React Native 应用中，你可以在此处访问你的 Android 项目：
+开始之前，启动 Android Studio 并导航到你 React Native 应用程序中的 Android 项目。在 React Native 应用中，你可以在此处访你的 Android 项目：
 
 - 我们建议在 Android Studio 中编写原生代码。Android Studio 是一个专为 Android 编程设计的 IDE，可以帮助你快速解决代码语法错误等小问题。
 - 我们还建议在迭代 Java 代码时使用 Gradle Daemon 来加速构建。
@@ -6049,7 +6535,6 @@ React Native 团队目前正在重构原生模块框架。TurboModules 是一种
 
 ```java
 package com.your-app-name; // 将 com.your-app-name 替换为应用的名称
-
 import com.facebook.react.bridge.NativeModule;
 import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.bridge.ReactContext;
@@ -6057,7 +6542,6 @@ import com.facebook.react.bridge.ReactContextBaseJavaModule;
 import com.facebook.react.bridge.ReactMethod;
 import java.util.Map;
 import java.util.HashMap;
-
 public class CalendarModule extends ReactContextBaseJavaModule {
     CalendarModule(ReactApplicationContext context) {
         super(context);
@@ -6107,7 +6591,6 @@ public void createCalendarEvent(String name, String location) {
 
 ```java
 import android.util.Log;
-
 @ReactMethod
 public void createCalendarEvent(String name, String location) {
     Log.d("CalendarModule", "Create event with name: " + name + " and location: " + location);
@@ -6132,7 +6615,6 @@ public void createCalendarEvent(String name, String location) {
 
 ```java
 package com.your-app-name; // 将 app-name 替换为应用的名称
-
 import com.facebook.react.ReactPackage;
 import com.facebook.react.bridge.NativeModule;
 import com.facebook.react.bridge.ReactApplicationContext;
@@ -6140,13 +6622,11 @@ import com.facebook.react.uimanager.ViewManager;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
-
 public class MyAppPackage implements ReactPackage {
     @Override
     public List<ViewManager> createViewManagers(ReactApplicationContext reactContext) {
         return Collections.emptyList();
     }
-
     @Override
     public List<NativeModule> createNativeModules(ReactApplicationContext reactContext) {
         List<NativeModule> modules = new ArrayList<>();
@@ -6155,10 +6635,6 @@ public class MyAppPackage implements ReactPackage {
     }
 }
 ```
-
-
-
-
 
 这导入了你编写的原生模块 `CalendarModule`。
 
@@ -6193,12 +6669,10 @@ protected List<ReactPackage> getPackages() {
 ```javascript
 import React from 'react';
 import { NativeModules, Button } from 'react-native';
-
 const NewModuleButton = () => {
   const onPress = () => {
     NativeModules.CalendarModule.createCalendarEvent('Meeting');
   };
-
   return (
     <Button
       title="点击创建事件"
@@ -6206,11 +6680,8 @@ const NewModuleButton = () => {
     />
   );
 };
-
 export default NewModuleButton;
 ```
-
-
 
 React Native 模块 **193**
 
@@ -6259,10 +6730,8 @@ console.log(DEFAULT_EVENT_NAME);
 
 ```java
 import com.facebook.react.bridge.Callback;
-
 @ReactMethod
 public void createCalendarEvent(String name, String location, Callback callBack) {
-
 }
 ```
 
@@ -6354,7 +6823,6 @@ const onPress = () => {
 
 ```java
 import com.facebook.react.bridge.Promise;
-
 @ReactMethod
 public void createCalendarEvent(String name, String location, Promise promise) {
     try {
@@ -6400,19 +6868,16 @@ import com.facebook.react.modules.core.DeviceEventManagerModule;
 import com.facebook.react.bridge.WritableMap;
 import com.facebook.react.bridge.Arguments;
 import androidx.annotation.Nullable;
-
 private void sendEvent(ReactContext reactContext, String eventName, @Nullable WritableMap params) {
     reactContext
         .getJSModule(DeviceEventManagerModule.RCTDeviceEventEmitter.class)
         .emit(eventName, params);
 }
-
 @ReactMethod
 public void addListener(String eventName) {
     // 设置任何对应的监听器或后台任务
     as necessary
 }
-
 @ReactMethod
 public void removeListeners(Integer count) {
     // 移除对应的监听器，停止必要的
@@ -6431,31 +6896,22 @@ sendEvent(reactContext, “EventReminder”, params);
 
 ```javascript
 import { NativeEventEmitter, NativeModules } from ‘react-native’;
-
 ...
 componentDidMount() {
-
 ...
 ```
-
-
 
 React Native Modules ◾ **199**
 
 const eventEmitter = new NativeEventEmitter(NativeModules.ToastExample);
-
 this.eventListener = eventEmitter.addListener('EventReminder', (event) => {
   console.log(event.eventProperty) // “someValue”
 });
-
 ...
-
 }
-
 componentWillUnmount() {
   this.eventListener.remove(); //移除监听器
 }
-
 *从 startActivityForResult 获取 Activity 结果*
 
 如果你想从通过 `startActivityForResult` 的 activity 中检索结果，你需要监听 `onActivityResult`。你必须扩展 `BaseActivityEventListener` 或实现 `ActivityEventListener` 来完成此操作。
@@ -6536,6 +6992,7 @@ public class ImagePickerModule extends ReactContextBaseJavaModule {
     }
   }
 }
+```
 
 *监听生命周期事件*
 
@@ -6549,12 +7006,10 @@ reactContext.addLifecycleEventListener(this);
 public void onHostResume() {
   // Activity `onResume`
 }
-
 @Override
 public void onHostPause() {
   // Activity `onPause`
 }
-
 @Override
 public void onHostDestroy() {
   // Activity `onDestroy`
@@ -6601,9 +7056,6 @@ public void onHostDestroy() {
 
 本章涵盖了使用 NPM 安装 JavaScript 库、iOS 原生模块、Android 原生模块以及跨平台原生模块。在下一章中，我们将学习调试和开发工具。
 
-
-
-
 **206** ◾ 精通 React Native
 
 ## 启用快速刷新 (Fast Refresh)
@@ -6612,7 +7064,7 @@ React Native 的快速刷新功能可以对 React 组件的修改提供近乎实
 
 ## 启用键盘快捷键
 
-在 iOS 模拟器中，React Native 支持一些快捷键。详细信息见下文。要激活这些快捷键，前往 Hardware（硬件）菜单，选择 Keyboard（键盘），并勾选 Connect Hardware Keyboard（连接硬件键盘）框。
+在 iOS 模拢器中，React Native 支持一些快捷键。详细信息见下文。要激活这些快捷键，前往 Hardware（硬件）菜单，选择 Keyboard（键盘），并勾选 Connect Hardware Keyboard（连接硬件键盘）框。
 
 ## LogBox
 
@@ -6628,10 +7080,8 @@ LogBox 在发布（生产）版本中默认禁用。
 
 ```javascript
 import { LogBox } from 'react-native';
-
 // 按消息忽略日志通知：
 LogBox.ignoreLogs(['Warning: ...']);
-
 // 忽略所有日志通知：
 LogBox.ignoreAllLogs();
 ```
@@ -6642,7 +7092,7 @@ LogBox.ignoreAllLogs();
 
 ### *语法错误*
 
-当发生语法错误时，将出现全屏 LogBox 错误，显示堆栈跟踪和语法问题的位置。此错误无法被忽略，因为它标志着 JavaScript 执行故障，在继续运行程序之前必须修复它。修复语法问题后，可以保存以自动关闭，或按 cmd+r 重新加载以关闭这些错误。
+当发生语法错误时，将出现全屏 LogBox 错误，显示堆栈跟踪和语法问题的位置。此错误无法被忽略，因为它标志着 JavaScript 执行故障，在继续运程序之前必须修复它。修复语法问题后，可以保存以自动关闭，或按 cmd+r 重新加载以关闭这些错误。
 
 ## Chrome 开发者工具
 
@@ -6654,7 +7104,7 @@ LogBox.ignoreAllLogs();
 
 请记住，React Developer Tools Chrome 扩展不支持 React Native，但你可以使用它的独立版本。
 
-### *使用自定义 JavaScript 调试器调试*
+### *使用自定� JavaScript 调试器调试*
 
 要使用自定义 JavaScript 调试器代替 Chrome 开发者工具，请将环境变量 `REACT_DEBUGGER` 设置为运行你自己的调试器而非 Chrome 开发者工具的命令。然后，从开发者菜单点击“Debug JS Remotely”开始调试。调试器将获取所有项目根目录列表并用空格分隔。如果你设置 `REACT_DEBUGGER="node/path/to/launchDebugger.js --port 2345 --type ReactNative"`，则将使用命令 `node /path/to/launchDebugger.js --port 2345 --type ReactNative /path/to/reactNative/app` 来启动你的调试器。
 
@@ -6738,10 +7188,6 @@ Reactotron 是一个开源桌面程序，用于检查 Redux 或 MobX-State-Tree 
 当 react-devtools 运行时，它将出现在 Chrome 中。
 
 如果你遇到任何问题，可能是可能是你的某个 Chrome 扩展以意料之外的方式干扰了调试器。禁用所有扩展，然后一个一个重新启用，直到找到有问题的那个。
-
-
-
-
 
 ## 调试与开发者工具 **211**
 
@@ -6843,7 +7289,7 @@ isOddNumber(6)
 
 *添加日志点（Logpoints）*
 
-有时我们想查看变量的值，但不想中断执行。我们可以利用日志点来实现这种方法。
+有时我们想查变量的值，但不想中断执行。我们可以利用日志点来实现这种方法。
 
 日志点通过在向控制台打印消息来帮助我们，而不停止代码的执行。当我们设置一个日志点时，会出现一个带有小尖箭的红色气泡。
 
@@ -6905,8 +7351,6 @@ JSON 有时很难解释。为了处理 JSON 数据，我们提供了 JSON 格式
 
 以前调试代码最简单的方法是使用 Chrome 调试工具。在 MacOS 上，使用 Ctrl+D 启动 iOS 模拟器，在 Chrome 中使用 Ctrl+M 启动 Android 模拟器。如果你正在使用
 
-
-
 **216** ◾ 精通 React Native
 
 Windows（类似于 iOS）。也可以通过摇晃移动设备显示应用内开发者选项来进行远程调试。远程选择“Debug JS”，然后在 Chrome 中打开 URL http://localhost:8081/debugger-ui/ 即可启动具有基础功能的简易调试器。
@@ -6929,9 +7373,11 @@ yarn add react-devtools
 npm install react-devtools --save
 ```
 
+
+
 你现在可以运行 `yarn react-devtools` 来启动该应用。使用此工具，你可以检查 React 组件层级。此外，你还可以在 React Native 中调试样式、实现样式属性，并直接看到更改后的反射无需重新加载。
 
-### *React Native Debugger（React Native 调试器）*
+### React Native Debugger（React Native 调试器）
 
 这是一个适用于 macOS、Windows 和 Linux 的桌面程序。这是最推荐的调试工具，特别是当你使用 Redux 构建 React Native 应用时。它可以集成其他调试工具，如 Redux 的 DevTools 和 React 的 Developer Tools。因此，你可以混合使用所有这些工具以发挥其最大作用。此外，与 React Developer Tools 不同，它不需要安装。
 
@@ -6944,7 +7390,7 @@ npm install react-devtools --save
 5. **Network（网络）**：检查并记录网络请求（通过 MacBook touch bar 开启）。
 6. **Memory（内存）**：检查内存泄漏。
 
-### *Redux DevTools（Redux 开发者工具）*
+### Redux DevTools（Redux 开发者工具）
 
 如你所知，Redux 是一个用于通用状态管理的独立框架，广泛应用于 React JS 和 React Native。因此，在故障排除时，你不能简单地忽略这一关键功能。Redux Devtools 被认为是该功能最强大的调试工具。你可以轻松地探索活动之间的关系及其对数据存储的影响。
 
@@ -6963,13 +7409,13 @@ Redux DevTools 允许你将 redux 调试组件无缝接到应用程序中。然�
 
 Redux Devtools 扩展也可以安装在你的 Chrome 或 Firefox 浏览器中。该插件使用预构建的调试 UI，该 UI 与应用程序代码保持独立。
 
-### *Nuclide – Atom 插件*
+### Nuclide – Atom 插件
 
 它是一个开源的 React Native 工具，作为插件安装在 Facebook 创建的流行 IDE Atom 之上。
 
-该调试器强大的社区支持允许你获得在 Nuclide 上进行任何操作所需的帮助。由于其对 React Native 框架的内置支持，它被认为是最好的。它还包含一组额外的组件和扩展，允许你使用 Flow 和 JavaScript 编程语言以及 React UI 框架进行开发。内联错误、自动补全、跳转到定义功能以及其他服务（如远程和 JavaScript 开发、Hack 开发、内置调试、工作集、mercurial 支持、任务运行器等）都是 Nuclide 的丰富特性。
+该调试器强大的社区支持允许你获得在 Nuclide 上进行任何操作所需的帮助。由于其对 React Native 框架的内置支持，它被认为是最好的。它还包含一组额外的组件和扩展，允许你使用 Flow 和 JavaScript 编程语言以及 React UI 框架进行发展。内联错误、自动补全、跳转到定义功能以及其他服务（如远程和 JavaScript 开发、Hack 开发、内置调试、工作集、mercurial 支持、任务运行器等）都是 Nuclide 的丰富特性。
 
-### *Reactotron*
+### Reactotron
 
 它是由 Infinite Red 在 2016 年开发的的一个开源桌面程序，适用于 Windows、MacOS 和 Linux 等多个平台。它是 React Native Debugger 的最佳替代方案，提供的功能完全相同。
 
@@ -7006,7 +7452,7 @@ console.error('糟糕，发生了错误');
 
 要查看所有示例，请在任何浏览器中右键点击 -> 检查并打开控制台。并且，在阅读本文时，请在控制台上编写这些指令以便更好地理解。
 
-### *console.table()*
+### console.table()
 
 我最近才了解到 console.table()，希望早点知道它以便于调试。让我们下面定义一个名为 myShoppingCart 的对象：
 
@@ -7038,7 +7484,7 @@ const myShoppingCart = [
 
 需要记住的一点是，console.table() 只能处理最多 1000 行。
 
-### *console.assert()*
+### console.assert()
 
 你可以使用 console.assert() 在不使用 if-else 条件的情况下进行条件日志。console.assert(condition, message) 是其语法。当条件为假时，可以记录断言。查看下例示例以更好地理解。
 
@@ -7162,14 +7608,11 @@ $ yarn start OR $ expo start
 import React from "react";
 import ReactDOM from "react-dom";
 import "./styles.css";
-
 const initialState = { color: "green", showEmoji: false };
-
 class App extends React.Component {
   state = {
     ...initialState
   };
-
   componentDidMount() {
     try {
       const deserialisedState = JSON.parse(
@@ -7178,24 +7621,19 @@ class App extends React.Component {
       this.setState({ ...deserialisedState });
     } catch (err) {}
   }
-
   componentDidUpdate() {
     const serialisedState = JSON.stringify(this.state);
     window.localStorage.setItem("state", serialisedState);
   }
-
   toggleShowEmoji = () => {
     this.setState({ showEmoji: !this.state.showEmoji });
   };
-
   handleChangeColor = e => {
     this.setState({ color: e.target.value });
   };
-
   handleClearLocalStorage = () => {
     window.localStorage.clear();
   };
-
   render() {
     return (
       <div className={`App ${this.state.color}`}>
@@ -7221,7 +7659,6 @@ class App extends React.Component {
     );
   }
 }
-
 const rootElement = document.getElementById("root");
 ReactDOM.render(<App />, rootElement);
 ```
@@ -7234,14 +7671,12 @@ ReactDOM.render(<App />, rootElement);
   height: 90vh;
   width: 90%;
 }
-
 .App.black {
   background-image: linear-gradient(
     to right bottom, #ffef0a, #f5ee3f, #def297, #f7f391,
     #fcfaa8
   );
 }
-
 .App.green {
   background-image: linear-gradient(
     to top,
@@ -7249,7 +7684,6 @@ ReactDOM.render(<App />, rootElement);
     #f29c8b, #ffd0c8
   );
 }
-
 .App.purple {
   background-image: linear-gradient(
     to top,
@@ -7257,7 +7691,6 @@ ReactDOM.render(<App />, rootElement);
     #de58ed, #be7ae6, #bc8de0, #f6b8fc
   );
 }
-
 .App.black {
   background-image: linear-gradient(
     to right bottom,
@@ -7265,29 +7698,24 @@ ReactDOM.render(<App />, rootElement);
     #fcfaa9
   );
 }
-
 .flex {
   display: flex;
   flex-direction: column;
   width: fit-content;
   margin: auto;
 }
-
 .flex-child {
   margin: 3vh auto 7px auto;
   background-color: #b9fa8e;
   border-radius: 6px;
 }
-
 .emoji {
   font-size: 42pt;
 }
-
 button {
   font-size: 18px;
   padding: 7px 11px 6px;
 }
-
 button:hover {
   background-color: #fc84aa;
   color: #fcf7f8;
@@ -7305,7 +7733,6 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "./styles.css";
 console.log("新计数器示例");
-
 class Counter extends React.Component {
   constructor(props) {
     super(props);
@@ -7316,7 +7743,6 @@ class Counter extends React.Component {
       count: 0
     };
   }
-
   componentDidMount() {
     const stringCount = localStorage.getItem("count");
     const count = parseInt(stringCount, 12);
@@ -7324,13 +7750,11 @@ class Counter extends React.Component {
       this.setState(() => ({ count }));
     }
   }
-
   componentDidUpdate(prevProps, prevState) {
     if (prevState.count !== this.state.count) {
       localStorage.setItem("count", this.state.count);
     }
   }
-
   handleAddOne() {
     this.setState(prevState => {
       return {
@@ -7338,7 +7762,6 @@ class Counter extends React.Component {
       };
     });
   }
-
   handleMinusOne() {
     this.setState(prevState => {
       return {
@@ -7346,7 +7769,6 @@ class Counter extends React.Component {
       };
     });
   }
-
   handleReset() {
     this.setState(() => {
       return {
@@ -7354,7 +7776,6 @@ class Counter extends React.Component {
       };
     });
   }
-
   render() {
     return (
       <div className="container">
@@ -7368,7 +7789,6 @@ class Counter extends React.Component {
     );
   }
 }
-
 const rootElement = document.getElementById("root");
 ReactDOM.render(<Counter />, rootElement);
 ```
@@ -7428,7 +7848,6 @@ header {
   align-items: center;
   border-bottom: 3px solid #98;
 }
-
 header h1 {
   font-size: 3rem;
   color: #d4f;
@@ -7460,7 +7879,6 @@ import React from "react";
 import "./Main.css";
 import Navigation from "./Navigation";
 import Movies from "./Movies";
-
 class Main extends React.Component {
   state = {
     movies: [],
@@ -7488,7 +7906,6 @@ class Main extends React.Component {
     page: 1,
     genre: "Comedy",
   };
-
   componentDidMount() {
     const savedState = this.getStateFromLocalStorage();
     if (!savedState || !savedState.movies.length) {
@@ -7498,7 +7915,6 @@ class Main extends React.Component {
       this.generateUrl(savedState);
     }
   }
-
   componentWillUpdate(nextProps, nextState) {
     this.saveStateToLocalStorage();
     if (this.state.moviesUrl !== nextState.moviesUrl) {
@@ -7508,15 +7924,12 @@ class Main extends React.Component {
       this.generateUrl(nextState);
     }
   }
-
   onGenreChange = event => {
     this.setState({ genre: event.target.value });
   }
-
   setGenres = genres => {
     this.setState({genres});
   }
-
   onChange = data => {
     this.setState({
       [data.type]: {
@@ -7525,7 +7938,6 @@ class Main extends React.Component {
       },
     });
   };
-
   generateUrl = params => {
     const { genres, year, rating, runtime, page } = params;
     const selectedGenre = genres.find(genre => genre.name === params.genre);
@@ -7544,16 +7956,10 @@ class Main extends React.Component {
 }
 ```
 
-
-
-
 **236** 精通 React Native
 
 `page=${page}`;
-
 this.setState({ moviesUrl });
-
-}
 
 onSearchButtonClick = () => {
   this.setState({ page: 1 });
@@ -7620,12 +8026,10 @@ render() {
   )
 }
 
-}
-
 export default Main;
+```
 
 ### e. MovieListItem.css
-
 ```css
 .movie-item {
   flex-basis: 23%;
@@ -7637,11 +8041,9 @@ export default Main;
   border: 1px solid #ffffff;
   box-shadow: 0 11px 27px -6px #050505;
 }
-
 .movie-item img {
   width: 90%;
 }
-
 .thumbnail {
   display: flex;
   flex-direction: column;
@@ -7649,7 +8051,6 @@ export default Main;
   cursor: pointer;
   text-decoration: none;
 }
-
 .movie-description {
   display: flex;
   flex: 1 0 99%;
@@ -7657,54 +8058,45 @@ export default Main;
   justify-content: space-between;
   padding: 12px;
 }
-
 .movie-description h2 {
   color: #63bdc8;
   font-weight: bold;
   margin-bottom: 22px;
 }
-
 .movie-details {
   display: flex;
   margin-top: auto;
   justify-content: space-between;
 }
-
 .movie-details span {
   color: #75d1ff;
   font-size: 0.8rem;
   font-weight: bold;
 }
-
 .movie-year, .movie-rating {
   display: flex;
   flex-direction: column;
 }
-
 .movie-year .title, .movie-rating .title {
   color: #70a8c4;
   margin-bottom: 7px;
   font-size: 0.69rem;
   font-weight: normal;
 }
-
 .movie-rating {
   align-items: flex-end;
 }
 ```
 
 ### f. MovieListItem.js
-
 ```javascript
 import React from "react";
 import "./MovieListItem.css";
 import { Link } from "react-router-dom";
-
 const MovieListItem = ({ movie }) => {
   const { id, title, poster_path, release_date, vote_average } = movie;
   const imgUrl = `https://image.tmdb.org/t/p/w342/${poster_path}`;
   const year = release_date.substring(0, 4);
-
   return (
     <li className="movie-item">
       <Link to={`/movie/${id}`} className="thumbnail">
@@ -7726,12 +8118,10 @@ const MovieListItem = ({ movie }) => {
     </li>
   );
 };
-
 export default MovieListItem;
 ```
 
 ### g. Movies.css
-
 ```css
 .movies {
   flex-basis: 83%;
@@ -7740,7 +8130,6 @@ export default MovieListItem;
   margin: 0;
   padding: 22px 0;
 }
-
 .pagination {
   display: flex;
   justify-content: space-between;
@@ -7749,13 +8138,11 @@ export default MovieListItem;
 ```
 
 ### h. Movies.js
-
 ```javascript
 import React from "react";
 import "./Movies.css";
 import MovieListItem from "./MovieListItem";
 import Button from "../navigation/Button";
-
 const Movies = ({ movies, page, onPageIncrease, onPageDecrease }) => (
   <section>
     <ul className="movies">
@@ -7770,18 +8157,15 @@ const Movies = ({ movies, page, onPageIncrease, onPageDecrease }) => (
     </div>
   </section>
 );
-
 export default Movies;
 ```
 
 ### i. Button.css
-
 ```css
 .search-button {
   display: flex;
   justify-content: center;
 }
-
 .search-button button {
   padding: 13px 23px;
   background: #c4708a;
@@ -7792,29 +8176,24 @@ export default Movies;
   outline: 0;
   border: 0;
 }
-
 .search-button button:hover {
   color: #ffffff;
 }
 ```
 
 ### j. Button.js
-
 ```javascript
 import React from "react";
 import "./Button.css";
-
 const Button = ({ onClick, children }) => (
   <div className="search-button">
     <button onClick={onClick}>{children}</button>
   </div>
 );
-
 export default Button;
 ```
 
 ### k. Navigation.css
-
 ```css
 .navigation {
   flex-basis: 22%;
@@ -7824,14 +8203,12 @@ export default Button;
 ```
 
 ### l. Navigation.js
-
 ```javascript
 import React from "react";
 import "./Navigation.css";
 import Selection from "./Selection";
 import Slider from './Slider';
 import Button from './Button';
-
 class Navigation extends React.Component {
   componentDidMount() {
     fetch(this.props.url)
@@ -7839,7 +8216,6 @@ class Navigation extends React.Component {
       .then(data => this.props.setGenres(data.genres))
       .catch(error => console.log(error));
   }
-
   render() {
     const { genre, genres, onGenreChange, onChange, year, runtime, onSearchButtonClick } = this.props;
     return (
@@ -7857,36 +8233,30 @@ class Navigation extends React.Component {
     )
   }
 }
-
 export default Navigation;
 ```
 
 ### m. Selection.css
-
 ```css
 .selection {
   display: flex;
   flex-direction: column;
   margin-bottom: 62px;
 }
-
 .selection label {
   font-size: 1.2rem;
   margin-bottom: 12px;
   color: #bda4a4;
 }
-
 .selection select {
   max-width: 153px;
 }
 ```
 
 ### n. Selection.js
-
 ```javascript
 import React from "react";
 import "./Selection.css";
-
 const Selection = ({ genre, genres, onGenreChange }) => (
   <div className="selection">
     <label>类型</label>
@@ -7897,17 +8267,14 @@ const Selection = ({ genre, genres, onGenreChange }) => (
     </select>
   </div>
 );
-
 export default Selection;
 ```
 
 ### o. Slider.css
-
 ```css
 .slider {
   margin-bottom: 42px;
 }
-
 .slider label {
   color: #948890;
   font-size: 1.2rem;
@@ -7915,20 +8282,16 @@ export default Selection;
   display: block;
   text-transform: capitalize;
 }
-
 .input-range slider {
   background: #c466a2;
   border: none;
 }
-
 .input-range track {
   background: #f0e9e9;
 }
-
 .input-range track--active {
   background: #c466a2;
 }
-
 .input-range label--value .input-range label-container {
   background: #c466a2;
   color: #ffffff;
@@ -7936,33 +8299,28 @@ export default Selection;
   padding: 4px 7px;
   border-radius: 3px;
 }
-
-.input-range label--min .input-range label-container,
+.input-range label--min .input-range label-container {
   font-size: 0.68rem;
   color: #ada5ab;
   left: 0;
 }
-
 .input-range label--max .input-range label-container {
   left: 27%;
 }
 ```
 
 ### p. Slider.js
-
 ```javascript
 import React from "react";
 import InputRange from "react-input-range";
 import 'react-input-range/lib/css/index.css';
 import "./Slider.css"
-
 class Slider extends React.Component {
   onChange = range => {
     this.props.onChange({
       type: this.props.data.label, value: range
     });
   }
-
   render() {
     const { min, max, step, value, label } = this.props.data;
     return (
@@ -7979,319 +8337,190 @@ class Slider extends React.Component {
     )
   }
 }
-
 export default Slider;
 ```
 
 ### p. LoadingMovie.js
-
 ```javascript
 import React from "react";
-
 const LoadingMovie = () => <h2>电影加载中...</h2>
-
 export default LoadingMovie;
 ```
 
 ### q. Movie.css
-
 ```css
 .movie-page {
-```
-
-
-**244** ◾ 精通 React Native
-
-display: flex;
-
-flex-direction: column;
-
+  display: flex;
+  flex-direction: column;
 }
-
 .movie-page h5 { color: #888;
-
 font-weight: normal; line-height: 1.27rem;
-
 }
-
 .movie-page h5 span { font-size: inherit; font-
-
 weight: normal; color: #000001; padding-left:
-
 1.2rem;
-
 }
-
 .movie-page h4 { margin: 0;
-
 font-size: 1.27rem; line-height: 4;
-
 }
-
 .movie-page p { color: #bdb3b3; line-height: 1.59;
-
 }
-
 .movie-page .movie-image {
-
 flex-basis: 90%;
-
 height: 579px; background-size: cover;
-
 background-position: center center;
 }
-
 .movie-page .movie-details { display: flex;
-
 flex-direction: column; max-width: 804px;
-
 margin: 23px auto 62px auto;
 }
-
 .movie-page .movie-details h1 { line-height: 1.56em;
 }
-
 .movie-page .movie-details h1 span { font-size:
-
 inherit;
-
 font-weight: normal; padding-left: 1.2rem; color:
-
 #d9cece;
-
 line-height: inherit;
 }
-
 .movie-page .genres { display: flex;
-
 margin-bottom: 1.2rem;
 }
-
 .movie-page .genres span { font-weight: normal;
 }
-
 .movie-page .separator { color: #e8dfdf; padding: 0
-
 12px;
 }
+```
 
 ### Movie.js
+```javascript
 import React from "react";
-
 import LoadingMovie from "./LoadingMovie"; import "./Movie.css";
-
-将一切整合在一起 ◾ **245**
-
 class Movie extends React.Component { state = {
-
 isLoading: true, movie: {}
-
 }
-
 componentDidMount() {
-
 const { movieId } = this.props.match.params; const
-
 movieUrl =
-
 `https://api.themoviedb.org/3/movie/${movieId}?api_
-
 key=651925d45022d1ae658063b443c99784&language=en-US`;
-
 fetch(movieUrl)
-
 .then(response => response.json())
-
 .then(data => {
-
 this.setState({ movie: data, isLoading: false })
-
 })
-
 .catch(error => console.log("Error:", error));
 }
-
 render() {
-
 const { isLoading } = this.state; const {
-
 title, backdrop_path, release_date, genres,
-
 overview, vote_average, runtime
-
 } = this.state.movie;
-
 const year = release_date ? release_date.substring(0, 4) : null;
-
 const backgroundStyle = { backgroundImage:
-
 `url(http://image.tmdb.org/t/p/w128/${backdrop_path})`
 }
-
 return (
-
 <div className="movie-page">
-
 {
-
 isLoading
-
 ? <LoadingMovie />
-
 : <div>
-
 <div className="movie-image" style={backgroundStyle} />
-
 <div className="movie-details">
 <h1>
-
 {title}
-
 <span>({year})</span>
-
 </h1>
-
 <section className="genres">
-
 {genres.map((genre, index) => (
-
 <div key={genre.id}>
-
 <span>{genre.name}</span>
-
 {index < genres.length - 1 && (
-
-**246** ◾ 精通 React Native
-
 <span className="separator">|</span>
-
 )}
-
 </div
-
 ))}
-
 </section>
-
 <h5>
-
 电影评分：
-
 <span>{vote_average}</span>
-
 </h5>
-
 <h5>
-
 电影时长：
-
 <span>{`${runtime} min`}</</span>
-
 </h5>
-
 <h4>电影概览</h4>
-
 <p>{overview}</p>
-
 </div>
-
 </div>
 }
-
 </div>
-
-))
-
 )
 }
-
+}
 export default Movie;
+```
 
 ### App.js
+```javascript
 import React from "react"; import { BrowserRouter,
-
 Switch, Route } from "react-router-dom" import Header from
-
 "./header/Header"; import Main from "./main/Main";
-
 import Movie from "./movie/Movie"; import NotFound
-
 from "./NotFound";
-
 const App = () => { return (
-
 <BrowserRouter>
-
 <div>
-
 <Header />
-
 <Switch>
-
 <Route exact path='/' component={Main} />
-
 <Route path="/movie/:movieId" component={Movie} />
-
 <Route component={NotFound} />
-
 </Switch>
-
 <div>
-
-将一切整合在一起 ◾ **247**
-
 </BrowserRouter>
-
 );
-
 };
-
 export default App;
+```
 
 ### NotFound.js
+```javascript
 import React from "react";
-
 import { Link } from "react-router-dom";
-
 const NotFound = () => (
-
 <div>
-
 <h3>无法找到您正在寻找的电影
-
 :(</:>
-
 <Link to="/">以下是可以浏览的电影列表</Link>
-
 </div>
-
 );
-
 export default NotFound;
+```
 
 ### index.css
+```css
 body {
-
 margin: 1;
-
 padding: 1;
-
 font-family: sans-serif; box-sizing: border-box;
 }
+```
 
 ### index.html
+```html
 <div id="root"></div>
+```
 
 ### index.js
+```javascript
 import React from 'react';
-
 import ReactDOM from 'react-dom'; import App from
-
 'App';
-
 import './index.css';
-
 ReactDOM.render(<App />, document.getElementById("root"));
+```
 
 **272** ◾ 精通 React Native
 
@@ -8324,9 +8553,10 @@ expo init ReactDemo
 
 cd ReactDemo
 
-使用以下命令启动应用：
+使用以下命启动应用：
 
 yarn start
+```
 
 **250** ◾ 精通 React Native
 
@@ -8346,49 +8576,29 @@ React Native 示例
 
 // Homescreen.js
 import React, { Component } from 'react';
-
 import { Button, View, Text } from 'react-native';
-
 import { createStackNavigator, createAppContainer }
-
 from 'react-navigation';
-
 export default class Homescreen extends Component {
-
 render() {
-
 return (
-
 <View style={{ flex: 1, alignItems: 'left', justifyContent: 'center' }}>
-
 <Text>首页</Text>
-
 <Button
-
 title="跳转到关于"
-
 onPress={() =>  this.props.navigation.navigate('About')}
 />
 </View>
-
-整合在一起 ◾ **251**
-
-)
-
+}
 }
 
 关于上面按钮的 onPress 属性，我们稍后会解释它的作用。
 
 // Aboutscreen.js
-
 import React, { Component } from 'react';
-
 import { Button, View, Text } from 'react-native';
-
 import { createStackNavigator, createAppContainer }
-
 from 'react-navigation';
-
 export default class Aboutscreen extends Component {
   render() {
     return (
@@ -8399,6 +8609,7 @@ export default class Aboutscreen extends Component {
     )
   }
 }
+```
 
 你的项目文件夹看起来应该像图中所示。
 
@@ -8415,27 +8626,18 @@ export default class Aboutscreen extends Component {
 正如你所看到的，所有其他组件将封装在导航路由中。
 
 // App.js
-
 import React from 'react';
-
 import { StyleSheet, Text, View } from
-
 'react-native';
-
 import { createStackNavigator, createAppContainer }
-
 from "react-navigation";
-
 import HomeScreen from './components/HomeScreen';
-
 import AboutScreen from './components/AboutScreen';
-
 export default class App extends React.Component {
   render() {
     return <AppContainer />;
   }
 }
-
 const AppNavigator = createStackNavigator({
   Home: {
     screen: HomeScreen
@@ -8444,9 +8646,7 @@ const AppNavigator = createStackNavigator({
     screen: AboutScreen
   }
 });
-
 const AppContainer = createAppContainer(AppNavigator);
-
 const styles = StyleSheet.create({
   container: {
     flex: 1,
@@ -8572,10 +8772,6 @@ const AppNavigator = createDrawerNavigator({
 
 要开始构建抽屉导航，将 createStackNavigator 替换为 DrawerNavigator。你可以通过放置 tintColor 属性来个性化你的抽屉导航。例如，我们可以更改导航抽屉标签在激活状态下的颜色。将以下内容添加到 AppNavigator 变量的选项对象中：
 
-
-
-整合一切 **259**
-
 ```javascript
 }, {
   initialRouteName: "Home",
@@ -8583,7 +8779,8 @@ const AppNavigator = createDrawerNavigator({
     activeTintColor: '#e91e63'
   }
 });
-```
+
+
 
 向路由传递参数只需两步：
 
@@ -8660,7 +8857,7 @@ iPhone 是极其强大的智能手机。然而，在处理资源密集型任务�
 
 即使是专家也不总是第一次就能写出理想的代码。在你完成 iOS 应用开发后，需要对其进行测试。幸运的是，与为 Android 开发不同，你不需要为许多制造商的移动设备进行测试。iOS 是 Apple 专有的移动操作系统，只在 Apple iPhone 上可用。即使你想在许多版本的 iPhone（带有不同的操作系统）上测试你的 iOS 应用，需要测试的设备也比 Android 少。
 
-你的第一行测试应该在 Xcode 中进行。除了你熟悉的单元测试外，Xcode 还具有自动化 UI 测试。为了发现错误，你可以开发遍历你的 UI 并像用户一样与应用程序交互的测试。UI 测试不会通过 API 与你的代码通信；而是模拟真实用户与应用程序的交互。只要你构建了覆盖应用程序每个部分的测试，你就可以实现比人类所做的任何更彻底的 UI 测试。
+你的第一行测试应该在 Xcode 中进行。除了你熟悉的单元测试外，Xcode 还具有自动化 UI 测试。为了发现错误，你可以开发遍历你的 UI 并像用户一样与应用程交互的测试。UI 测试不会通过 API 与你的代码通信；而是模拟真实用户与应用程序的交互。只要你构建了覆盖应用程序每个部分的测试，你就可以实现比人类所做的任何更彻底的 UI 测试。
 
 然而，在你的测试考虑到用户与应用程序可能的每种交互之前，应该让人们进行 Beta 测试。虽然你可以在不提交到 Store 的情况下将程序侧加载到 iOS 设备，但 Apple 的 TestFlight App 让朋友、家人或用户群体体验应用程序变得简单。Apple Developer Program 参与者可以使用 TestFlight 进行内部测试，最多支持 25 名团队成员，每人最多 30 台设备。
 
@@ -8701,7 +8898,7 @@ iPhone 是极其强大的智能手机。然而，在处理资源密集型任务�
 
 *重要*
 
-默认情况下，组织标识符包含在 bundle ID (CFBundleIdentifier) 中。当您首次在设备上启动应用程序时，Xcode 会利用 bundle ID 注册 App ID。如果您不是 Apple 开发者计划的成员，您的 App ID 数量受到限制，并且在向 App Store Connect 提交构建版本后无法更改 App ID，因此请仔细选择您的组织标识符。
+默认情况下，组织标识符包含在 bundle ID (CFBundleIdentifier) 中。当您首次在设备上启应用程序时，Xcode 会利用 bundle ID 注册 App ID。如果您不是 Apple 开发者计划的成员，您的 App ID 数量受到限制，并且在向 App Store Connect 提交构建版本后无法更改 App ID，因此请仔细选择您的组织标识符。
 
 *创建项目*
 
@@ -8736,7 +8933,7 @@ Beta 测试有两种类型：
 
 应该强调这种类型测试的优势：
 
-- 拥有应用程序及其功能的测试人员可以对最终产品进行评估；
+- 拥有应用程及其功能的测试人员可以对最终产品进行评估；
 - 这种测试由许多人执行，每个人都为项目及其质量提供独特的观点；
 - 能够覆盖广泛的平台、浏览器和操作系统；
 - 该程序使更容易发现和修复应用程序中的错误。
@@ -8789,7 +8986,7 @@ TestFlight 服务不仅可以用于测试程序的 Beta 版本，还用于向测
 
 通过电子邮件或启用并发布公共链接邀请多达 10,000 名外部测试人员，后者可以邀请任何人测试你的应用。创建一个测试人员小组并将他们分配到你想要他们测试的构建版本。你甚至可以创建多个小组并根据你希望强调的方面为每个小组分配不同的构建版本。在测试开始之前，你应用程序的初始构建必须经过 TestFlight App Review（App 审核）。
 
-*使用电子邮件邀请测试人员*
+*使用电子邮邀请测试人员*
 
 如果你有测试人员的电子邮件地址，可以向他们发送邀请以及下载和测试你应用程序的链接。电子邮件是向现有的外部测试人员小组或你想要测试的特定人员分发软件 Beta 版本的极佳方法。
 
@@ -8797,7 +8994,7 @@ TestFlight 服务不仅可以用于测试程序的 Beta 版本，还用于向测
 
 如果你还没有测试人员网络，公共链接是与能够测试你应用程序的人员联系的好方法。不需要提供任何联系信息。只需进入你应用程序的 TestFlight 页面，选择一个现有的小组，然后点击“Enable Public Link”（启用公共链接）。之后，可以将 URL 复制并共享到社交媒体、消息平台、电子邮件营销和其他平台上。为了推广你的软件，请勿对 TestFlight 名称本地化或生成 TestFlight 徽章。
 
-你也可以使用公共链接限制加入的测试人员人数。如果达到小组限制或你的公共链接被禁用，任何寻求加入你的 Beta 的人员将收到警告，提示你的 Beta 不再接受新的测试人员。考虑你在哪里分发公共链接，以及何时移除它可能合适，以提供良好的用户体验。
+你也可以使用公共链限制加入的测试人员人数。如果达到小组限制或你的公共链接被禁用，任何寻求加入你的 Beta 的人员将收到警告，提示你的 Beta 不再接受新的测试人员。考虑你在哪里分发公共链接，以及何时移除它可能合适，以提供良好的用户体验。
 
 *测试信息*
 
@@ -9097,19 +9294,33 @@ $ kubectl get pods
 我们将创建一个详细的 YAML 配置文件。将其命名为 webserver。
 
 ```yaml
+
 apiVersion: v1
+
 kind: Service
+
 metadata:
+
   name: webserver
+
   labels:
+
     app: nginx
+
 spec:
+
   selector:
+
     app: nginx
+
   ports:
+
     - port: 80
+
       targetPort: 80
+
   type: NodePort
+
 ```
 
 $ kubectl create -f webserver.yaml
@@ -9132,19 +9343,33 @@ $ kubectl get rs
 部署 Android 应用 ◾ **283**
 
 ```yaml
+
 apiVersion: v1
+
 kind: Service
+
 metadata:
+
   name: webserver
+
   labels:
+
     app: nginx
+
 spec:
+
   selector:
+
     app: nginx
+
   ports:
+
     - port: 80
+
       targetPort: 80
+
   type: NodePort
+
 ```
 
 暴露应用程序
@@ -9154,21 +9379,37 @@ spec:
 如果应用程序死锁或突然崩溃。在这种情况下，容器将不再工作并可能重启容器以使请求再次可用。例如，liveness 命令检查 `/tmp/health` 是否存在。
 
 ```yaml
+
 apiVersion: v1
+
 kind: Pod
+
 metadata:
+
   labels:
+
     test: liveness
+
   name: liveness-exec
+
 spec:
+
   containers:
+
   - name: nginx
+
     image: nginx
+
     livenessProbe:
+
       exec:
+
         command:
+
         - cat
+
         - /tmp/health
+
 ```
 
 
@@ -9215,221 +9456,63 @@ Events:
 我们注意到，在某些情况下，当存活检查无法解析 `/tmp/healthy` 中的 `cat` 命令时会失败。失败后，容器将重新创建。在下面的示例中，kubelet 向应用程序的健康端发送 HTTP GET 请求。如果返回失败，kubelet 将重启受影响的容器。
 
 ```yaml
+
 apiVersion: v1
+
 kind: Pod
+
 metadata:
+
   labels:
+
     test: liveness
+
   name: liveness-http
+
 spec:
+
   containers:
+
     - name: liveness
+
       image: k8s.gcr.io/liveness
+
       args:
+
         - /server
+
       livenessProbe:
+
         httpGet:
+
           path: /healthz
+
           port: 8080
+
         initialDelaySeconds: 3
+
         periodSeconds: 3
+
       readinessProbe:
+
         tcpSocket:
+
           port: 8080
+
         initialDelaySeconds: 5
+
         periodSeconds: 10
+
       livenessProbe:
+
         tcpSocket:
+
           port: 8080
+
         initialDelaySeconds: 15
+
         periodSeconds: 20
-```
 
-## 288 精通 React Native
-
-通过 TCP 存活探针，kubelet 尝试打开容器中的 TCP Socket，如果失败，kubelet 将其标记为不健康并重启受影响的容器。15 秒后，查看 Pod 事件以验证存活探针是否已就位。
-
-## 为发布版本构建 APK
-
-React Native 开发者通常需要在 Google Play Store 中发布他们的 React Native 应用以供用户下载。在本教程中，我们将学习如何使用 ReactNative CLI 和 Studio IDE 为 Android 创建 APK。
-
-## 289 部署 Android 
-
-我们已经发布了所有的 React Native 模板（演示），因此我们了解制作 React Native Release APK 过程中可能出现的流程和错误。我们在教程中编写了所学内容，以帮助移动开发者提交他们的 Android 应用以加快制作。创建可生产的 Android 应用有两种不同的方法，因此我们在下面介绍了这两种方法。
-
-### REACT NATIVE CLI
-
-首先，确保 Android 项目是完美无缺的。也就是说，它在 Android 设备上成功集成并运行。因此，使用 Android Studio 打开 Android 项目，或在命令行中启动它。如果一切按计划进行，你就可以准备好了。
-
-第 1 步：生成密钥库（Keystore）
-
-你需要 Java 生成的签名密钥，它是用于生成 Android 可用 React Native 二进制文件的存储密钥。你可以使用终端中的 `keytool` 命令来创建一个：
-
-`keytool -genkey -v -Keystore your_key_name.keystore -alias your_key_alias -keyalg RSA -keysize 2048 -validity 10000`
-
-一旦启动密钥生成，你将需要这个签名密钥，它是生成 Android 可用 React Native 二进制文件的存储密钥。一旦启动密钥生成，它会提示你输入密码。使用 `keytool` 终端命令可以使用以下命令创建一个：
-
-`keytool -genkey -v -Keystore your_key_name.keystore -alias your_key_alias -keyalg RSA -keysize 2048 -validity 10000`
-
-一旦启动密钥生成，它会提示你输入密码。使用 `keytool` 终端命令可以使用以下命令创建一个：
-
-`keytool -genkey -v -Keystore your_key_name.keystore -alias your_key_alias -keyalg RSA -keysize 2048 -validity 10000`
-
-一旦启动密钥生成，它会提示你输入密码。使用 `keytool` 终端命令可以使用以下命令创建一个：
-
-`keytool -genkey -v -Keystore your_key_name.keystore -alias your_key_alias -keyalg RSA -keysize 2048 -validity 10000`
-
-一旦启动密钥生成，它会提示你输入密码。使用 `keytool` 终端命令可以使用以下命令创建一个：
-
-`keytool -genkey -v -Keystore your_key_name.keystore -alias your_key_alias -keyalg RSA -keysize 2048 -validity 10000`
-
-一旦启动密钥生成，它会提示你输入密码。使用 `keytool` 终端命令可以使用以下命令创建一个：
-
-`keytool -genkey -v -Keystore your_key_name.keystore -alias your_key_alias -keyalg RSA -keysize 2048 -validity 10000`
-
-一旦启动密钥生成，它会提示你输入密码。使用 `keytool` 终端命令可以使用以下命令创建一个：
-
-`keytool -genkey -v -Keystore your_key_name.keystore -alias your_key_alias -keyalg RSA -keysize 2048 -validity 10000`
-
-一旦启动密钥生成，它会提示你输入密码。使用 `keytool` 终端命令可以使用以下命令创建一个：
-
-`keytool -genkey -v -Keystore your_key_name.keystore -alias your_key_alias -keyalg RSA -keysize 2048 -validity 10000`
-
-一旦启动密钥生成，它会提示你输入密码。使用 `keytool` 终端命令可以使用以下命令创建一个：
-
-`keytool -genkey -v -Keystore your_key_name.keystore -alias your_key_alias -keyalg RSA -keysize 2048 -validity 10000`
-
-一旦启动密钥生成，它会提示你输入密码。使用 `keytool` 终端命令可以使用以下命令创建一个：
-
-`keytool -genkey -v -Keystore your_key_name.keystore -alias your_key_alias -keyalg RSA -keysize 2048 -validity 10000`
-
-一旦启动密钥生成，它会提示你输入密码。使用 `keytool` 终端命令可以使用以下命令创建一个：
-
-`keytool -genkey -v -Keystore your_key_name.keystore -alias your_key_alias -keyalg RSA -keysize 2048 -validity 10000`
-
-一旦启动密钥生成，它会提示你输入密码。使用 `keytool` 终端命令可以使用以下命令创建一个：
-
-`keytool -genkey -v -Keystore your_key_name.keystore -alias your_key_alias -keyalg RSA -keysize 2048 -validity 10000`
-
-一旦启动密钥生成，它会提示你输入密码。使用 `keytool` 终端命令可以使用以下命令创建一个：
-
-`keytool -genkey -v -Keystore your_key_name.keystore -alias your_key_alias -keyalg RSA -keysize 2048 -validity 10000`
-
-一旦启动密钥生成，它会提示你输入密码。使用 `keytool` 终端命令可以使用以下命令创建一个：
-
-`keytool -genkey -v -Keystore your_key_name.keystore -alias your_key_alias -keyalg RSA -keysize 2048 -validity 10000`
-
-一旦启动密钥生成，它会提示你输入密码。使用 `keytool` 终端命令可以使用以下命令创建一个：
-
-`keytool -genkey -v -Keystore your_key_name.keystore -alias your_key_alias -keyalg RSA -keysize 2048 -validity 10000`
-
-一旦启动密钥生成，它会提示你输入密码。使用 `keytool` 终端命令可以使用以下命令创建一个：
-
-`keytool -genkey -v -Keystore your_key_name.keystore -alias your_key_alias -keyalg RSA -keysize 2048 -validity 10000`
-
-一旦启动密钥生成，它会提示你输入密码。使用 `keytool` 终端命令可以使用以下命令创建一个：
-
-（注： -翻译key -v - -ystore你的_
-
-`name.keyystore -
-
-
-
-_key_key -key
-
- RSA -
-
-    0  -   111.
-
-1.：请将 `your_key_name` 和 `your_key_alias` 替换为你自己的值。
-
-2.  **生成密钥****22。
-
-.    密钥  使用 RSA 算法，密钥大小为 2048，有效期 10000 天。
-
-一旦启动密钥生成，它会提示你输入密码。使用 `keytool` 终端命令可以使用以下命令创建一个：
-
-`keytool -genkey -v -Keystore your_key_name.keystore -alias your_key_alias -keyalg RSA -keysize 2048 -validity 10000`
-
-（注：由于原文中存在大量重复的乱码，以上翻译已根据逻辑进行了清理和对齐。）
-
----
-
-**抱歉，由于你提供的原始文本在中间部分存在大量的重复乱码和格式错误（例如 `keytool` 命令的重复出现），导致翻译后的内容也出现了混乱。我已根据文档的逻辑上下文（React Native 存活探针、Android 构建流程）为你重新梳理并生成了逻辑通顺的翻译。**
-
-**以下是修复并翻译后的完整中文版本：**
-
-[content]
-
-## 286 精通 React Native
-
-containers:
-  - name: liveness
-    image: k8s.gcr.io/busybox
-    args:
-      - /bin/sh
-      - -c
-      - touch /tmp/healthy; sleep 30; rm -rf /tmp/healthy; sleep 600
-    livenessProbe:
-      exec:
-        command:
-          - cat
-          - /tmp/healthy
-      initialDelaySeconds: 3
-      failureThreshold: 1
-      periodSeconds: 5
-
-文件 `/tmp/healthy` 的存在将计划使用 `periodSeconds` 参数每五秒检查一次。`initialDelaySeconds` 参数要求 kubelet 在初始检查前等待 3 秒。如果你在容器上使用命令行参数，我们将首先创建一个 `/tmp/healthy` 文件，然后在 30 秒后将其删除。文件提取失败将触发探针失败，而 `failureThreshold` 参数设置为 1，则指示 kubelet 在一次探针失败后宣布容器为不健康，并触发容器重新加载。30 秒后，我们将描述该 pod 并查看其事件（Events）部分。
-
-$ kubectl describe pod liveness-exec
-
-Events:
-
-| Type | Reason | Age from | Message |
-| :--- | :--- | :--- | :--- |
-| Normal | Scheduled | 63s | default-scheduler: Successfully assigned default/liveness-exec to minikube |
-| Normal | Pulling | 63s | kubelet: Pulling image "k8s.gcr.io/busybox" |
-| Normal | Pulled | 62s | kubelet: Successfully pulled image "k8s.gcr.io/busybox" in 1.147125841s |
-| Normal | Created | 62s | kubelet: Created container liveness |
-| Normal | Started | 61s | kubelet: Started container liveness |
-| Warning | Unhealthy | 28s | kubelet: Liveness probe failed: cat: cannot open '/tmp/healthy': No such file or directory |
-| Normal | Killing | 28s | kubelet: Container liveness failed liveness probe, will be restarted |
-| Normal | Pulling | 28s (x3 over 2m3) | kubelet: Pulling image "k8s.gcr.io/busybox" |
-| Normal | Created | 27s (x3 over 2m3) | kubelet: Created container liveness |
-| Normal | Started | 27s (x3 over 2m3) | kubelet: Started container liveness |
-| Normal | Pulled | 27s | kubelet: Successfully pulled image "k8s.gcr.io/busybox" in 566.4814ms (about half second) |
-
-我们注意到，在某些情况下，当存活检查无法解析 `/tmp/healthy` 中的 `cat` 命令时会失败。失败后，容器将重新创建。在下面的示例中，kubelet 向应用程序的健康端发送 HTTP GET 请求。如果返回失败，kubelet 将重启受影响的容器。
-
-```yaml
-apiVersion: v1
-kind: Pod
-metadata:
-  labels:
-    test: liveness
-  name: liveness-http
-spec:
-  containers:
-    - name: liveness
-      image: k8s.gcr.io/liveness
-      args:
-        - /server
-      livenessProbe:
-        httpGet:
-          path: /healthz
-          port: 8080
-        initialDelaySeconds: 3
-        periodSeconds: 3
-      readinessProbe:
-        tcpSocket:
-          port: 8080
-        initialDelaySeconds: 5
-        periodSeconds: 10
-      livenessProbe:
-        tcpSocket:
-          port: 8080
-        initialDelaySeconds: 15
-        periodSeconds: 20
 ```
 
 ## 288 精通 React Native
@@ -9466,23 +9549,41 @@ React Native 开发者通常需要在 Google Play Store 中发布他们的 React
 你需要打开文件位置如 `android\app\build.gradle` 文件并添加密钥库配置。有两种配置密钥库的方法。首先是常用的不安全方法：
 
 ```gradle
+
 android {
+
     ...
+
     signingConfigs {
+
         release {
+
             storeFile file('your_key_name.keystore')
+
             storePassword 'your_store_password'
+
             keyAlias 'your_key_alias'
+
             keyPassword 'your_key_alias_password'
+
         }
+
     }
+
     buildTypes {
+
         release {
+
             ...
+
             signingConfig signingConfigs.release
+
         }
+
     }
+
 }
+
 ```
 
 
@@ -9536,7 +9637,7 @@ android {
 
 **步骤 1：设置你的 Android 产品位置**：要创建 APK 格式，你需要安装 Android Studio。最重要的是，确保你安装了 React Native 使用的最最新版本的 SDK。
 
-**步骤 2：安装 JDK**：你需要确保已安装了最新的 Java 开发工具包（例如版本 8）。安装方法取决于你所在的位置。因此，你可以使用 Oracle 的 Java SDK，或者使用 SDKMAN 安装其他选项（例如 OpenJDK）。
+**步骤 2：安装 JDK**：你需要确保已安证了最新的 Java 开发工具包（例如版本 8）。安装方法取决于你所在的位置。因此，你可以使用 Oracle 的 Java SDK，或者使用 SDKMAN 安装其他选项（例如 OpenJDK）。
 
 **步骤 3：使用 Android Studio 生成发布的 APK**：导航到应用的侧边发布栏。在这里，你可以看到各种不同测试类别的轨道列表。点击生产轨道（production track）上的 MANAGE。然后点击 CREATE RELEASE 创建原生 Android 构建 APK。
 
@@ -9558,7 +9659,7 @@ android {
 
 ### 如何从 REACT NATIVE 应用程序发送电子邮件
 
-事实上，我们将在函数中处理 to、cc、bcc、subject、body 并打开 Gmail 命名收件框。为此，我们需要使用通信依赖项，即 `react-native-communications`。在应用中，客户端需要向支持部分发送电子邮件或创建一个令牌。今天这是程序的一个常见功能，让我们从一个示例开始吧。
+事实上，我们将在函数中处理 to、cc、bcc、subject、body 并打开 Gmail 命名收件箱。为此，我们需要使用通信依赖项，即 `react-native-communications`。在应用中，客户端需要向支持部分发送电子邮件或创建一个令牌。今天这是程序的一个常见功能，让我们从一个示例开始吧。
 
 1. 创建新项目。在我们的案例中，我们使用一个之前的 expo 项目。你可以使用以下命令创建一个新项目：
 >>> react-native init projectName
@@ -9568,31 +9669,54 @@ android {
 
 3. 导入以下组件。在 JS 文件中导入以下组件：
 ```javascript
+
 import React, { Component } from "react";
+
 import {
+
   StyleSheet,
+
   Text,
+
   TextInput,
+
   Button,
+
   View,
+
   Alert,
+
   Platform
+
 } from "react-native";
+
 import Communication from "react-native-communications";
+
 ```
 
 4. 从传统方式发送电子邮件。我们使用以下方法打开电子邮件收件箱。你可以通过下面的参数传输到 to、cc、bcc、title、body 文本：
 ```javascript
+
 /* 邮件发送函数 (to, cc, bcc, title, body) */
+
 openEmail = () => {
+
   Communications.email(
+
     ["techupcode@gmail.com", "contact@techup.co.in"], //---- 本地邮箱
+
     null, //--- CC 
+
     null, //--- bcc
+
     "Enter Title", //--- 标题
+
     "Enter body mail" // <--- 正文文本
+
   );
+
 };
+
 ```
 
 我们需要点击按钮调用此函数，因为我添加了一个按钮以便查看完整代码。
@@ -9600,74 +9724,135 @@ openEmail = () => {
 5. App.js 查看从 React Native 应用发送邮件的完整代码：
 
 ```javascript
+
 import React, { Component } from "react";
+
 import {
+
   View,
+
   StyleSheet,
+
   Text,
+
   TextInput,
+
   Button,
+
   Alert,
+
   Platform
+
 } from "react-native";
+
 import Communication from "react-native-communications";
 
 export default class App extends Component {
+
   constructor(props) {
+
     super(props);
+
     this.state = {
+
       bodyText: ""
+
     };
+
   }
 
   /* 邮件发送函数 (to, cc, bcc, title, body) */
+
   openEmail = () => {
+
     Communications.email(
+
       ["techupcode@gmail.com", "contact@techup.co.in"],
+
       null,
+
       null,
+
       "Enter Title",
+
       "Enter body mail"
+
     );
+
   };
 
   render() {
+
     return (
+
       <View style={styles.container}>
+
         <Text style={{ fontSize: 20 }}>
+
           Send Email from React Native
+
         </Text>
+
         <TextInput
+
           style={styles.input}
+
           value={this.state.bodyText}
+
           onChangeText={text => this.setState({
+
             bodyText: text
+
           })}
+
           placeholder="Enter Body"
+
         />
+
         <Button onPress={this.openEmail} title="Send Email" />
+
       </View>
+
     );
+
   }
+
 }
 
 const styles = StyleSheet.create({
+
   container: {
+
     flex: 1,
+
     alignItems: "center",
+
     padding: 30,
+
     backgroundColor: "#ffffff"
+
   },
+
   input: {
+
     width: 255,
+
     height: 44,
+
     padding: 10,
+
     margin: 10,
+
     backgroundColor: "#FFF",
+
     borderColor: "#000",
+
     borderRadius: 5,
+
     borderWidth: 5
+
   }
+
 });
 
 部署 Android 应用 ◾ **293**
@@ -9680,7 +9865,7 @@ const styles = StyleSheet.create({
 
 **步骤 1：设置你的 Android 产品位置**：要创建 APK 格式（从 Google Store 下载），你需要安装 Android Studio。最重要的是，确保你安装了 React Native 使用的最最新版本的 SDK。
 
-**步骤 2：安装 JDK**：你需要确保已安装了最新的 Java 开发工具包（例如版本 8）。安装方法取决于你所在的位置。因此，你可以使用 Oracle 的 Java SDK，或者使用 SDKMAN 安装其他选项（例如 OpenJDK）。
+**步骤 2：安装 JDK**：你需要确保已安证了最新的 Java 开发工具包（例如版本 8）。安装方法取决于你所在的位置。因此，你可以使用 Oracle 的 Java SDK，或者使用 SDKMAN 安装其他选项（例如 OpenJDK）。
 
 **步骤 3：使用 Android Studio 生成发布的 APK**：导航到应用的侧边发布栏。在这里，你可以看到各种不同测试类别的轨道。点击生产轨道上的 MANAGE。然后点击 CREATE RELEASE 创建原生 Android 构建 APK。
 
@@ -9689,11 +9874,17 @@ const styles = StyleSheet.create({
 事实上，你必须创建一个新名称创建一个。为此，你需要生成一个上传密钥。
 
 1. 通过浏览你的 React 项目文件夹，在编辑器中打开该应用程序。
+
 2. 导航到 Build 标签页，点击 Generate signed bundle / APK。
+
 3. 选择 APK 为 React Android 项目生成发布 APK。点击 Next。
+
 4. 在 Key store path 下点击 Create new。
+
 5. 选择一个类似 `/home/User/keystores/android.jks` 的路径。
+
 6. 为 Keystore key 选择密码，然后输入证书信息。
+
 随后，点击 OK，然后点击 Next。同时选择 V1 和 V2 签名版本，然后点击 Finish。
 
 结果是构建开始，之后你可以在项目文件夹的 `android/app/release` 看到 `app-x86-release.apk` 和 `app-armeabi-v7a-release.apk`。
@@ -9760,9 +9951,6 @@ const styles = StyleSheet.create({
 
 **322 ◾ 深度掌握 React Native**
 
-
-
-
 部署 Android 应用 ◾ **299**
 
 14. 从你的 React Native 应用中发送电子邮件的三种方法。
@@ -9774,6 +9962,8 @@ const styles = StyleSheet.create({
 让我们探索从你的 React Native 应用程序与用户共享电子邮件的三种独立方式。
 
 ### 配置 Linking API
+
+
 
 发送请求的方法是通过 React 的 Linking API 发送电子邮箱。它们不仅可以帮助发送电子邮件，还可以实现应用内部的互链，以及预填错误报告邮件或提交请求。要创建并发送电子邮件，让我们使用 `OpenURL()`，这是一个用于在应用中打开不同链接的方法。在重定向用户到客户端之前，该方法始终会请求确认意图。
 
@@ -9840,7 +10030,7 @@ sendEmail(
 
 由于你无法直接发送，Zapier 将激活你最终选择的工具（例如 SendGrid）中的操作，并为子记录添加一个“zaps”。
 
-其次，你还可以选择集成已知的 Firebase CloudBase、Gmail 和 Nodemailer。如上所述，Firebase 可以根据应用内的用户操作快速创建多事件触发器，并发送重定向用户到其电子邮件请求的请求。Firebase CloudBase 允许我们通过 Nodemailer 发送此类电子邮件。为了让最后这个正常工作，你需要一个处理信件发送的电子邮件账户。你可以使用的工具之一是 Gmail，但你也可以以任何方式选择 SendGrid。
+其次，你还可以选择集成已知的 Firebase CloudBase、Gmail 和 Nodemailer。如上所述，Firebase 可以根据应用内的用户操作快速创建多事件触发器，并发送重定向用户到其电子邮件请求的请求。Firebase CloudBase 允许我们通过 Nodemailer 发送此类电邮。为了让最后这个正常工作，你需要一个处理信件发送的电子邮件账户。你可以使用的工具之一是 Gmail，但你也可以以任何方式选择 SendGrid。
 
 这种方法需要设置和集成几个工具，可能会引起安全担忧，但尽管如此，这是一种让你的 React Native 应用发送电子邮件的非常灵活的方法。
 
@@ -9857,10 +10047,6 @@ sendEmail(
 部署 Android 应用 ◾ **302**
 
 部署 Android 应用 ◾ **303**
-
-
-
-
 
 **304** 精通 React Native
 
@@ -9880,6 +10066,7 @@ buildTypes {
 在终端中运行以下命令：
 
 cd android
+
 ./gradlew bundleRelease
 
 Gradle 的 `bundleRelease` 将整合启动应用程序在 AAB（Android App Bundle）所需的所有 JavaScript。如果你需要更改 JavaScript 打包和/或收集应用程序的方式（例如，如果你更改了默认的文件/文件夹名称或标准项目布局），请查看 `Android/app/build.gradle` 文件，了解如何更新它们以反映这些更改。
@@ -9888,7 +10075,7 @@ Gradle 的 `bundleRelease` 将整合启动应用程序在 AAB（Android App Bund
 
 产物 AAB 可以在 `android/app/build/outputs/bundle/release/app.aab` 下载，并准备好在 Google Play 下载。
 
-为了让 Google Play 接受 AAB 格式，Google Play App 签名需要你在 Google Play Console 上配置应用。如果你正在审核一个未使用 Google Play 签名应用的现有应用程序，请查看我们的传输（Transfer）部分以了解如何进行此类更改。
+为了让 Google Play 接受 AAB 格式，Google Play App 签名需要你在 Google Play Console 上配置应用。如果你正在审核一个未使用 Google Play 签名应用的现有应用程请查看我们的传输（Transfer）部分以了解如何进行此类更改。
 
 ### 测试你的应用程序的发布 测试你的应用程序的发布版本
 
@@ -9967,7 +10154,6 @@ def enableProguardInReleaseBuilds = true
 ### UI 帧率（主线程）
 
 许多用户注意到 NavigatorIOS 的默认性能优于 Navigator。这是因为切换动画完全在主线程上完成，因此不受 JavaScript 线程掉帧的干扰。同样，即使 JavaScript 线程被锁定，你也可以通过 ScrollView 愉快地上下滚动，因为 ScrollView 在主线程
-
 
 评估 ◾ 309
 
@@ -10053,69 +10239,107 @@ handleOnPress() {
 
 313 ◾ 评估
 
-
-
-
 ## 314 参考文献
 
 - *调试*. (2020, 10月29日). React Native. https://reactnative.dev/docs/0.62/debugging
+
 - *React Native 应用调试方法*. (2022, 3月9日). https://www.topcoder.com/thrive/debugging-methods-for-react-native
+
 - *部署独立应用 - 第11章*. (2021, 1月24日). Wahinn. https://blog.andreaskhl.de/deploying-a-stand-alone-application/chapter11/
+
 - Deshpande, V., & 查看个人资料 (2019, 2月11日). *使用 SharePoint 构建 Microsoft Teams 标签*. https://www.vrd.com/2019/02/debugging-teams-tab
+
 - *黑盒测试与白盒测试的区别*. (2014, 12月10日). Software Testing. https://www.softwaretesting.com/difference-between-black-box-testing-and-white-box/
-- Dikson (2018, 8月5日). *如何在 React Native 中创建自定义组件*. Skcript. https://skcript.com/how-to-create-custom-component-in-react-native/
+
+- Dikson (2018, 8月5日). *如何在 React Native 中创建自定组件*. Skcript. https://skcript.com/how-to-create-custom-component-in-react-native/
+
 - *Discord 超链接：如何制作机器人嵌入 (2022指南)*. (2022, 1月17日). Shufegazine. https://shufegazine.com/make-discord-hyperlinks-bot-embeds/
+
 - Dissanake, R. *在 Linux 系统上混合 PHP 和 Java*. 2022年7月9日. https://www.raditha.com/php/java
+
 - Durgahee, CNN, A. (2012, 3月20日). *再见地图，你好应用*. CNN. https://edition.cnn.com/2012/03/20/business/travel-apps/index.html
+
 - Education, I. C. (2020, 12月21日). *iOS 应用开发*. IBM. https://www.ibm.com/cloud/learn/ios-app-development
+
 - eHam.net. 2022年7月9日. https://www.eham.net/reviews/product?id=15324
+
 - Eisenman, B. *学习使用 JavaScript 构建原生移动应用 (第二版)*. 2022年7月9日. https://123dok.com/document/zx9kjjdz-learning-react-native-building-mobile-apps.html
+
 - Evkoski, B (2018, 4月9日). *React Native：它是什么以及如何工作*. Medium. https://medium.com/we-talk-it/react-native-what-it-is-and-how-it-works
+
 - facebook. *react-native-website/fexbox.md 位于 facebook/react-native-website*. GitHub; 2022年7月9日. https://github.com/facebook/react-native-website/blob/main/docs/fexbox.md
+
 - facebook (2022, 6月21日). *react-native-website/signed-apk-android.md 位于 facebook/react-native-website*. GitHub. https://github.com/facebook/react-native-website/blob/main/docs/signed-apk-android.md
+
 - Fullsour (2017, 8月6日). *React Native 的样式继承*. Medium. https://medium.com/@fullsour/style-inheritance-of-react-native-eca1c97f02b
+
 - *Geolocation API*. 2022年7月9日. https://www.w3schools.com/js/js_api_geolocation.asp
 
 ## 315 参考文献
 
 - *入门*. (2020, 10月29日). React Native. https://reactnative.dev/docs/0.60/environment-setup
+
 - Gite, S (2020, 8月30日). *如何从 React-Native 应用发送电子邮件*. Techup. www.techup.co.in. https://www.techup.co.in/how-to-send-email-from-react-native-application/
+
 - Goklani, B (2018, 9月7日). *提高 React Native 应用性能需要遵循的重要提示*. www.mindinventory.com. https://www.mindinventory.com/blog/optimizing-performance-of-react-native-app/
+
 - googlecreativelab (2017, 12月7日). *GitHub - googlecreativelab/mystery-animal: 经典 20 问题游戏的新玩法*. GitHub. https://github.com/googlecreativelab/mystery-animal
+
 - Hamed, M (2019, 11月4日). *JavaScript 控制台调试：基础之外*. Programming with Mosh. https://programmingwithmosh.com/javascript/console-logging-beyond-the-basics/?shared=email&msg=fail
+
 - *如何为 Android 生成 React Native 构建*. (2022, 3月27日). Instamobile. https://instamobile.io/android-development/generate-react-native-release-build/
+
 - *提交 I-31 后获得批准需要多久？* (2012, 3月23日). Immigration Direct. www.immigrationdirect.com. https://www.immigrationdirect.com/immigration-articles/how-long-does-it-take-get-approval-after-filing-i31/
+
 - *在 Apple App Store 注册您的应用*. (2022, 4月24日). Outlook. www.techoutlook.com. https://www.techoutlook.com/apps/how-register-your-app-with-apples/
+
 - *在 Windows 上预留应用名称*. Harry’s Memo.
+
 - *如何在 React Native 中进行账户验证*. 2022年7月9日. https://www.devasking.com/issue/how-to-send-an-account-verification-in-react-native
+
 - *2022 年将应用提交到 App Store*. (2022, 5月25日). Blog. https://www.swingapp.com/blog/how-to-submit-your-app-to-app-store-in-2022/
+
 - *2022 年将应用提交到 App Store*. (2022, 1月5日). Instabug. https://blog.instabug.com/how-to-submit-app-to-app-store-in-2022/
+
 - *如何使用 Doom 3 Map*. 2022年7月9日. Deltapreview. https://deltapreview.weebly.com/how-to-use-doom-3-map
+
 - *HTML Geolocation API*. 2022年7月9日. https://www.w3schools.com/html/html5_geolocation
+
 - *Lilu 及其插件的傻瓜指南*. (2018, 9月26日). Tonymac86.com. https://www.tonymac86.com/threads/an-idiots-guide-to-lilu-and-its-plug-ins/
+
 - Inc., A. *TestFlight*. 2022年7月9日. Apple Developer. https://developer.apple.com/testflight/
 
 ## 316 参考文献
 
 - intigriti (2021, 11月30日). *不安全的直接引用 (IDOR)*. Intigriti. https://blog.intigriti.com/hackacademy/idor/
+
 - *React Native 简介*. (2017, 6月7日). GeeksforGeeks. https://www.geeksforgeeks.org/introduction-react-native/
+
 - *iOS 原生模块*. (2022, 4月1日). React Native. https://reactnative.dev/docs/0.65/native-modules
+
 - *Istio - Argo Rollouts - Kubernetes 渐进式交付控制器*. 2022年7月9日. https://argoproj.github.io/argo-rollouts/features/traffic-management/istio/
+
 - Jackson, E. *理解 React Native 中的样式*. 2022年7月9日. https://morioh.com/p/f38eb8f9fc
+
 - Jamil, M. S (2021, 10月20日). *如何在 React Native 中添加标签导航、简单导航或抽屉导航*. Medium. https://medium.com/@fa18-bcs-062/how-to-add-tab-navigation-or-simple-navigation-or-drawer-navigation-in-react-native-a4374db1223
+
 - *javascript - 使用相机拍照时浏览器崩溃*. (2015, 3月30日). Stack Overflow. https://stackoverflow.com/questions/29352106/browser-crashes-when-taking-picture-with-camera
+
 - Krishnakumar (2019, 2月6日). *学习使用 React Native 构建 Android 应用*. Eduonix Blog. https://blog.eduonix.com/android-tutorials/building-android-app-react-native/
+
 - Kumar, S (2017, 6月13日). *React Native 如何工作？* GeeksforGeeks. https://www.geeksforgeeks.org/react-native-works/
+
 - *使用 Flexbox 布局*. (2022, 3月30日). React Native. https://reactnative.dev/docs/0.68/flexbox
+
 - *学习 React Native*. Javatpoint. 2022年7月9日. https://www.javatpoint.com/react-native-tutorial
+
 - *学习 React Native*. O’Reilly Online Learning. 2022年7月9日. https://www.oreilly.com/library/view/learning-react-native/978149192909/ch06.html
+
 - leejiwonn (2021, 12月6日). *[RN] React Native 文档 #10 [RN] React Native*. Leejiwonn.Log. https://leejiwonn.tistory.com/67
+
 - *移动开发*. Mysol. 2022年7月9日. https://mysol.tech/mobile-development
+
 - *我的超级猫*. (2022, 6月18日). https://fathimazainudheen.blogspot.com/2022/06/is-react-native-react-native-is-open.html
-
-
-
-
 
 ## 参考文献 **317**
 
@@ -10141,7 +10365,7 @@ handleOnPress() {
 
 - *使用 TestFlight 进行 Beta 测试的过程*. (2019,11月28日). TestMatick. https://testmatick.com/the-process-of-beta-testing-using-testfight/
 
-- *Progress KB - 4GL/ABL: 使用 BLOB 字段使用 IMPORT 和 EXPORT 语句的示例代码*. (n.d.). Progress Software知识库. 检索于2022年7月9日，https://knowledgebase.progress.com/articles/Article/P113369
+- *Progress KB - 4GL/ABL: 使用 BLOB 字段使用 IMPORT AND EXPORT 语句的示例代码*. (n.d.). Progress Software知识库. 检索于2022年7月9日，https://knowledgebase.progress.com/articles/Article/P113369
 
 - *发布到 Google Play 商店*. (n.d.). React Native Archive. 检索于2022年7月9日，https://archive.reactnative.dev/docs/0.39/signed-apk-android
 
@@ -10212,683 +10436,743 @@ handleOnPress() {
 ## 索引 **321**
 
 | | | |
+
 | :--- | :--- | :--- |
+
 | 关于 | 251 | |
+
 | ActionResponder | 70 | |
+
 | 活动 | 199–201 | |
+
 | 优势 | 9 | |
+
 | 类性能 | 9 | |
+
 | 社区支持 | 10 | |
+
 | 成本降低 | 12 | |
+
 | 外部插件支持 | 12 | |
+
 | 热加载 | 10 | |
+
 | 原生组件 | 10 | |
+
 | JavaScript | 10 | |
+
 | 生命周期与热加载 | 11 | |
+
 | 模块化架构 | 12 | |
+
 | 性能增强 | 11 | |
+
 | 预制解决方案 | 13 | |
+
 |  {可靠性 | 12 | |
+
 | 不确定 | 10 | |
+
 | 升级时间 | 10 | |
+
 | 跨平台使用 | 9 | |
+
 | Android 应用 | 20, 42 | |
+
 | 访问应用 | 285 | |
+
 | APK 创建 | 288–289 | |
+
 | 空 React Native 项目 | 49–50 | |
+
 | 将 Android 设备连接到系统 | 50 | |
+
 | 通过 Microsoft Appcenter 分发 | 297–299 | |
+
 | 添加签名设置 | 303–304 | |
+
 | Google Play 签名应用 | 306 | |
+
 | Proguard, 缩小 APK 大小 | 305–306 | |
+
 | 在其他商店发布 | 305 | |
+
 | 测试发布 | 304–305 | |
+
 | 发送电子邮件 | 299–303 | |
+
 | fetchMoviesData 方法 | 51 | |
+
 | Java 开发包安装 | 41–42 | |
+
 | 生命周期 componentDidMount 方法 | 51 | |
+
 | 使用和就绪 | 285–288 | |
+
 | minikube 板 | 279–280 | |
+
 | movidedb 应用 | 49–51 | |
+
 | Pods | 280–281 | |
+
 | 列出副本集和 | 283 | |
-
-
-
-
 
 ## 322 ◾ 索引
 
 - Android JDK, 41–42
+
 - AndroidTextView, 20
+
 - API Gate, 129
+
 - API Platform
+
     - 应用连接器, 132
+
 - AsyncStorage
+
     - *clear()* 方法, 156–157
+
     - 获取数据, 154
+
     - *fetchGetRequests()* 方法, 157
+
     - *getAllKeys()* 方法, 157
+
     - *getItem()* 方法, 154
+
     - 用于 iOS, 153
+
     - JavaScript 代码, 153
+
     - *mergeItem()* 方法, 155
+
     - *multiGet()* 方法, 157–158
+
     - *multiMerge()* 方法, 159–161
+
     - *multiRemove()* 方法, 159
+
     - *multiSet()* 方法, 158
+
     - 持久数据, 153–154
+
     - *removeItem()* 方法, 155
+
     - *setItem()* 方法, 154–155
-    - setName 函数, 161–162
-- 相 API, 149–150, 152
-    - 在移动设备上拍摄照片, 151–153
-    - createObjectURL, 151
-- 数据即服务, 132
-- 开发者工具, 131
-- 用于数字开发者, 129
-- 文件输入元素, 149–150
-- 地理定位
-    - Android, 144–145
-    - *checkPermissions(...)*, 146–147
-    - chromium 开发者工具, 138–142
-    - ClearWatchOptions, 146, 148
-    - 交付与驾驶服务, 133
-    - 坐标网站, 133
-    - GeolocationPluginPermissions, 148
-    - 地理定位支持检测, 134–135
-    - getCurrentPosition 方法, 135–138, 146
-    - iOS, 144
-    - JavaScript 地理定位服务, 133
-    - MapsGoogle, 134
-    - MapsPlatforms, 134
-    - Microsoft Bing, 134
-    - PermissionStatus, 148
-    - 位置, 147
-    - PositionOptions, 147
-    - *requestPermissions(...)*, 147
-    - Sprint 3G 服务, 134
-    - watchPosition() 方法, 143, 146
-- HTML5 页面创建, 149
-- 混合集成平台 (HIP), 133
-    - 调, 130
-    - MESH 和微服务管理, 131
-    - onchange 事件监听器, 150–151
-    - onload 函数, 152
-    - 运行时服务, 131
-    - 预构建后台服务, 132
-    - “智能天气程序”, 130
-    - 流式/托管 API, 132
-- App.js, 57–58, 100–101, 115, 246–247, 252, 295–297
-- AppNavigator, 255–256, 258
-- 异步技能扩展, 20
-- AsyncStorage
-    - *clear()* 方法, 156–157
-    - 获取数据, 154
-    - *fetchGetRequests()* 方法, 157
-    - *getAllKeys()* 方法, 157
-    - *getItem()* 方法, 154
-    - 用于 iOS, 153
-    - JavaScript 代码, 153
-    - *mergeItem()* 方法, 155
-    - *multiGet()* 方法, 157–158
-    - *multiMerge()* 方法, 159–161
-    - *multiRemove()* 方法, 159
-    - *multiSet()* 方法, 158
-    - 持久数据, 153–154
-    - *removeItem()* 方法, 155
-    - *setItem()* 方法, 154–155
+
     - setName 函数, 161–162
 
+- 相 API, 149–150, 152
+
+    - 在移动设备上拍摄照片, 151–153
+
+    - createObjectURL, 151
+
+- 数据即服务, 132
+
+- 开发者工具, 131
+
+- 用于数字开发者, 129
+
+- 文件输入元素, 149–150
+
+- 地理定位
+
+    - Android, 144–145
+
+    - *checkPermissions(...)*, 146–147
+
+    - chromium 开发者工具, 138–142
+
+    - ClearWatchOptions, 146, 148
+
+    - 交付与驾驶服务, 133
+
+    - 坐标网站, 133
+
+    - GeolocationPluginPermissions, 148
+
+    - 地理定位支持检测, 134–135
+
+    - getCurrentPosition 方法, 135–138, 146
+
+    - iOS, 144
+
+    - JavaScript 地理定位服务, 133
+
+    - MapsGoogle, 134
+
+    - MapsPlatforms, 134
+
+    - Microsoft Bing, 134
+
+    - PermissionStatus, 148
+
+    - 位置, 147
+
+    - PositionOptions, 147
+
+    - *requestPermissions(...)*, 147
+
+    - Sprint 3G 服务, 134
+
+    - watchPosition() 方法, 143, 146
+
 ## B
+
 - BaseActivityEventListener, 199
+
 - Browserify, 165
+
 - Button.css, 240
+
 - Button.js, 240
 
 ## C
+
 - CalendarModule 创建
+
     - Android, 183
+
     - iOS, 166
+
 - 回调
+
     - Android, 194–196
+
     - iOS, 175–178
+
 - Camera API, 149–150, 152
+
 - Chrome 开发者工具, 207, 215–216
+
 - 手机塔三角定位, 139
+
 - 调试, 210
+
     - 地理定位卫星, 139
+
     - 地理定位传感器模拟, 139
+
     - Google Maps, 142
+
     - 处理错误和拒绝, 141–142
+
     - 特定位置的信息, 142
+
     - 附近的 iOS 位置, 140
+
     - React Native 开发者, 215–216
+
     - getCurrentPosition 方法, 140–141
+
     - 用户位置, 140
+
     - Wi-Fi 网络, 139
+
 - 基于教室的组件, 27
+
 - *clear()* 方法, 156–157
+
 - clearWatch 方法, 138
+
 - 代码编辑器, 214
+
 - componentDidCatch() 方法, 24
+
 - ComponentDidMount() 方法, 22
+
 - componentDidUpdate() 方法, 23
+
 - componentWillUnmount() 方法, 23
+
 - console.assert(), 220
+
 - console.assert(expression,object), 212
+
 - console.count(), 221
+
 - Console 错误和警告, 206
+
 - console.log(), 211–212
+
 - console.log 语句, 309
+
 - Console 日志, 219–221
+
 - console.memory, 221
+
 - Console 方法, 211–212
+
 - console.table(), 220
+
 - console.table(data, obj), 212
+
 - console.trace(), 212
+
 - constantsExport(), 174–175
+
 - control.time(), 221
+
 - createBottomTabNavigator, 254–255
+
 - createCalendarEvent()
+
     - Android, 183, 185–186
+
     - iOS, 170, 171
+
 - createDrawerNavigator, 255–256
+
 - createNativeModules(), 187–188
+
 - createStackNavigator 方法, 252–253
+
 - 跨平台开发, 61–62
+
 - 跨平台原生模块
+
     - 代码重用性, 203
+
     - 易部署和维护, 203
+
     - 成本和资源, 203
+
     - 统一设计, 203–204
+
     - 更宽的市场范围, 203
+
 - 跨平台支持, 2
+
 - 自定义文本创建, 24
+
 - render() 方法, 24–26
+
 - D
+
 - Dart, 46
+
 - dataSource 方法, 52
+
 - 调试
+
     - 超过 javascript, 219–221
+
     - 格式化, 211
+
     - 最佳实践, 211
+
     - 方法, 211–214
+
     - 原生代码, 211
+
     - 原生调试, 210
+
     - 用于 React Native 开发者
+
     - Chrome DevTools, 215–216
+
     - Atom 插件, 218
+
     - React Native 调试器, 216–217
+
     - Reactotron, 218–219
+
     - Redux DevTools, 217–218
+
 - DelaySeconds, 286
+
 - 开发者工具, 205
+
     - Chrome, 207
+
     - 开启 Fast Refresh, 206
+
     - 开启快捷键, 206
+
     - 开发过程, 17, 20
+
 - 缺点
+
     - 复杂的 UI, 14
+
     - 难学习, 13–14
+
     - 不成熟, 13
+
     - 长的初始化时间, 14
+
     - 低安全性, 14
+
     - 内存管理, 14
+
     - 抽屉导航, 255–259
 
 ## E
+
 - 错误回调, 177
+
 - “AwesomeProject,” 47–48
+
 - Expo CLI, 4
+
 - 安装, 4
+
 - 原生功能, 40
+
 - NPM, 47
+
 - 快速上手, 47, 48
+
 - React 注意, 48
+
 - 运行 React Native 应用, 48
+
 - 传统反应, 40
 
 ## F
+
 - failureThreshold, 286
+
 - failureCallback, 194–195
+
 - fetchMoviesData 方法, 51
+
 - Firebase, 301
+
 - 闪卡应用, 226
+
 - FlatList, 309
+
 - Flexbox 架构
+
     - 绝对和相对布局, 126–127
+
     - alignItems, 124
+
     - alignSelf, 124
+
     - 复杂形状, 108
+
     - FlexBasis, 125
+
     - FlexGrow, 125
+
     - flexDirection 控制, 122–123
+
     - flexWrap, 125
+
     - justifyContent, 123–124
+
     - 布局方向, 123
+
     - React Native SVG, 108–112
+
     - styled-component, 105–108
+
     - StyleSheet, 103–105
+
     - 主题和传递 props, 107
+
     - 宽度高度, 126
+
 - 灵活规划语言, 18
+
 - *fetchGetRequests()* 方法, 157
+
 - Frames, 307–308
+
 - JS 帧率, 308
+
 - 降低 FPS, 310
+
 - UI 帧率, 308–309
+
 - 改变图片大小, 311
+
 - 在屏幕上移动视图, 310–311
+
 - 框架调试工具, 215
+
 - 全生命周期 API 管理, 129, 130
 
 ## G
+
 - 地理定位
+
     - Android, 144–145
+
     - *checkPermissions(...)*, 146–147
+
     - chromium 开发者工具, 138–142
+
     - ClearWatchOptions, 146, 148
+
     - 交付与驾驶服务, 133
+
     - 坐标网站, 133
+
     - GeolocationPluginPermissions, 148
+
     - 地理定位支持检测, 134–135
+
     - getCurrentPosition 方法, 135–138, 146
+
     - iOS, 144
+
     - JavaScript 地理定位服务, 133
+
     - MapsGoogle, 134
+
     - MapsPlatforms, 134
+
     - Microsoft Bing, 134
+
     - PermissionStatus, 148
+
     - 位置, 147
+
     - PositionOptions, 147
+
     - *requestPermissions(...)*, 147
+
     - Sprint 3G 服务, 134
+
     - watchPosition() 方法, 143, 146
-
-## 323 ◾ 索引
-- Android JDK, 41–42
-- AndroidTextView, 20
-- API Gate, 129
-- API Platform
-    - 应用连接器, 132
-- AsyncStorage
-    - *clear()* 方法, 156–157
-    - 获取数据, 154
-    - *fetchGetRequests()* 方法, 157
-    - *getAllKeys()* 方法, 157
-    - *getItem()* 方法, 154
-    - 用于 iOS, 153
-    - JavaScript 代码, 153
-    - *mergeItem()* 方法, 155
-    - *multiGet()* 方法, 157–158
-    - *multiMerge()* 方法, 159–161
-    - *multiRemove()* 方法, 159
-    - *multiSet()* 方法, 158
-    - 持久数据, 153–154
-    - *removeItem()* 方法, 155
-    - *setItem()* 方法, 154–155
-    - setName 函数, 161–162
-- 相 API, 149–150, 152
-    - 在移动设备上拍摄照片, 151–153
-    - createObjectURL, 151
-- 数据即服务, 132
-- 开发者工具, 131
-- 用于数字开发者, 129
-- 文件输入元素, 149–150
-- 地理定位
-    - Android, 144–145
-    - *checkPermissions(...)*, 146–147
-    - chromium 开发者工具, 138–142
-    - ClearWatchOptions, 146, 148
-    - 交付与驾驶服务, 133
-    - 坐标网站, 133
-    - GeolocationPluginPermissions, 148
-    - 地理定位支持检测, 134–135
-    - getCurrentPosition 方法, 135–138, 146
-    - iOS, 144
-    - JavaScript 地理定位服务, 133
-    - MapsGoogle, 134
-    - MapsPlatforms, 134
-    - Microsoft Bing, 134
-    - PermissionStatus, 148
-    - 位置, 147
-    - PositionOptions, 147
-    - *requestPermissions(...)*, 147
-    - Sprint 3G 服务, 134
-    - watchPosition() 方法, 143, 146
-## 324 ◾ 索引
-- *clear()* 方法, 156–157
-- 获取数据, 154
-- *fetchGetRequests()* 方法, 157
-- *getAllKeys()* 方法, 157
-- *getItem()* 方法, 154
-- 用于 iOS, 153
-- JavaScript 代码, 153
-- *mergeItem()* 方法, 155
-- *multiGet()* 方法, 157–158
-- *multiMerge()* 方法, 159–161
-- *multiRemove()* 方法, 159
-- *multiSet()* 方法, 158
-- 持久数据, 153–154
-- *removeItem()* 方法, 155
-- *setItem()* 方法, 154–155
-- setName 函数, 161–162
-- 相 API, 149–150, 152
-    - 在移动设备上拍摄照片, 151–153
-    - createObjectURL, 151
-- 数据即服务, 132
-- 开发者工具, 131
-- 用于数字开发者, 129
-- 文件输入元素, 149–150
-- 地理定位
-    - Android, 144–145
-    - *checkPermissions(...)*, 146–147
-    - chromium 开发者工具, 138–142
-    - ClearWatchOptions, 146, 148
-    - 交付与驾驶服务, 133
-    - 坐标网站, 133
-    - GeolocationPluginPermissions, 148
-    - 地理定位支持检测, 134–135
-    - getCurrentPosition 方法, 135–138, 146
-    - iOS, 144
-    - JavaScript 地理定位服务, 133
-    - MapsGoogle, 134
-    - MapsPlatforms, 134
-    - Microsoft Bing, 134
-    - PermissionStatus, 148
-    - 位置, 147
-    - PositionOptions, 147
-    - *requestPermissions(...)*, 147
-    - Sprint 3G 服务, 134
-    - watchPosition() 方法, 143, 146
-## B
-- BaseActivityEventListener, 199
-- Browserify, 165
-- Button.css, 240
-- Button.js, 240
-
-## C
-- CalendarModule 创建
-    - Android, 183
-    - iOS, 166
-- 回调
-    - Android, 194–196
-    - iOS, 175–178
-- Camera API, 149–150, 152
-- Chrome 开发者工具, 207, 215–216
-- 手机塔三角定位, 139
-- 调试, 210
-    - 地理定位卫星, 139
-    - 地理定位传感器模拟, 139
-    - Google Maps, 142
-    - 处理错误和拒绝, 141–142
-    - 特定位置的信息, 142
-    - 附近的 iOS 位置, 140
-    - React Native 开发者, 215–216
-    - getCurrentPosition 方法, 140–141
-    - 用户位置, 140
-    - Wi-Fi 网络, 139
-- 基于教室的组件, 27
-- *clear()* 方法, 156–157
-- clearWatch 方法, 138
-- 代码编辑器, 214
-- componentDidCatch() 方法, 24
-- ComponentDidMount() 方法, 22
-- componentDidUpdate() 方法, 23
-- componentWillUnmount() 方法, 23
-- console.assert(), 220
-- console.assert(expression,object), 212
-- console.count(), 221
-- Console 错误和警告, 206
-- console.log(), 211–212
-- console.log 语句, 309
-- Console 日志, 219–221
-- console.memory, 221
-- Console 方法, 211–212
-- console.table(), 220
-- console.table(data, obj), 212
-- console.trace(), 212
-- constantsExport(), 174–175
-- control.time(), 221
-- createBottomTabNavigator, 254–255
-- createCalendarEvent()
-    - Android, 183, 185–186
-    - iOS, 170, 171
-- createDrawerNavigator, 255–256
-- createNativeModules(), 187–188
-- createStackNavigator 方法, 252–253
-- 跨平台开发, 61–62
-- 跨平台原生模块
-    - 代码重用性, 203
-    - 易部署和维护, 203
-    - 成本和资源, 203
-    - 统一设计, 203–204
-    - 更宽的市场范围, 203
-- 跨平台支持, 2
-- 自定义文本创建, 24
-- render() 方法, 24–26
-- D
-- Dart, 46
-- dataSource 方法, 52
-- 调试
-    - 超过 javascript, 219–221
-    - 格式化, 211
-    - 最佳实践, 211
-    - 方法, 211–214
-    - 原生代码, 211
-    - 原生调试, 210
-    - 用于 React Native 开发者
-    - Chrome DevTools, 215–216
-    - Atom 插件, 218
-    - React Native 调试器, 216–217
-    - Reactotron, 218–219
-    - Redux DevTools, 217–218
-- DelaySeconds, 286
-- 开发者工具, 205
-    - Chrome, 207
-    - 开启 Fast Refresh, 206
-    - 开启快捷键, 206
-    - 开发过程, 17, 20
-- 缺点
-    - 复杂的 UI, 14
-    - 难学习, 13–14
-    - 不成熟, 13
-    - 长的初始化时间, 14
-    - 低安全性, 14
-    - 内存管理, 14
-    - 抽屉导航, 255–259
-
-## E
-- 错误回调, 177
-- “AwesomeProject,” 47–48
-- Expo CLI, 4
-- 安装, 4
-- 原生功能, 40
-- NPM, 47
-- 快速上手, 47, 48
-- React 注意, 48
-- 运行 React Native 应用, 48
-- 传统反应, 40
-
-## F
-- failureThreshold, 286
-- failureCallback, 194–195
-- fetchMoviesData 方法, 51
-- Firebase, 301
-- 闪卡应用, 226
-- FlatList, 309
-- Flexbox 架构
-    - 绝对和相对布局, 126–127
-    - alignItems, 124
-    - alignSelf, 124
-    - 复杂形状, 108
-    - FlexBasis, 125
-    - FlexGrow, 125
-    - flexDirection 控制, 122–123
-    - flexWrap, 125
-    - justifyContent, 123–124
-    - 布局方向, 123
-    - React Native SVG, 108–112
-    - styled-component, 105–108
-    - StyleSheet, 103–105
-    - 主题和传递 props, 107
-    - 宽度高度, 126
-- 灵活规划语言, 18
-- *fetchGetRequests()* 方法, 157
-- Frames, 307–308
-- JS 帧率, 308
-- 降低 FPS, 310
-- UI 帧率, 308–309
-- 改变图片大小, 311
-- 在屏幕上移动视图, 310–311
-- 框架调试工具, 215
-- 全生命周期 API 管理, 129, 130
-
-## G
-- 地理定位
-    - Android, 144–145
-    - *checkPermissions(...)*, 146–147
-    - chromium 开发者工具, 138–142
-    - ClearWatchOptions, 146, 148
-    - 交付与驾驶服务, 133
-    - 坐标网站, 133
-    - GeolocationPluginPermissions, 148
-    - 地理定位支持检测, 134–135
-    - getCurrentPosition 方法, 135–138, 146
-    - iOS, 144
-    - JavaScript 地理定位服务, 133
-    - MapsGoogle, 134
-    - MapsPlatforms, 134
-    - Microsoft Bing, 134
-    - PermissionStatus, 148
-    - 位置, 147
-    - PositionOptions, 147
-    - *requestPermissions(...)*, 147
-    - Sprint 3G 服务, 134
-    - watchPosition() 方法, 143, 146
-
-
-
-
 
 **326** ◾ 索引
 
 L
 
 Keystore 密码, 289–291
+
 Kubernetes WebUI, 279, 280
+
 LayoutAnimation, 310
+
 生命 componentDidMount 方法, 51
+
 LifecycleEventListener, 201–202
+
 生命周期阶段
+
 - 错误处理, 21, 23–24
+
 - 流程图, 21
+
 - 挂载, 21–22
+
 - 卸载, 21, 23
+
 - 更新, 21–23
+
 Linking API, 299–300
+
 ListView 组件, 310
+
 - Bestsellers/BookItem.js, 85–86
+
 - BookListV2.js, 81–84
+
 - componentDidMount 方法, 80–81
+
 - dataSource, 79
+
 - ListView.DataSource, 79
+
 - NY Times API, 80
+
 - renderRow 数据, 79, 80
+
 - SimpleList.js., 79
+
 热更新与热加载应用, 11
+
 存活探针, 285–288
+
 LoadingMovie.js, 243
+
 LogBox, 206–207
 
 M
 
 Main.css, 233
+
 Main.js, 234–237
+
 Main Series, *参见* UI Thread
+
 *mergeItem()* 方法, 155
+
 methodQueue 方法, 180–181
+
 移动端组件
+
 - ActionResponder, 70
+
 - GestureResponder 系统
+
 - 附件, 71
+
 - 冒泡模式, 71
+
 - onMoveShouldSetResponder, 71
+
 - onStartShouldSetResponder, 71
+
 - PanResponder, 70, 72–78
+
 - RespondingMoveReport, 72
+
 - 触摸响应器, 71
+
 - HTML 元素, 63, 64
+
 - 图像组件, 66–67
+
 ListView 组件
+
 - Bestsellers/BookItem.js, 85–86
+
 - BookListV2.js, 81–84
+
 - componentDidMount 方法, 80–81
+
 - dataSource, 79
+
 - ListView.DataSource, 79
+
 - NY Times API, 80
+
 - renderRow 数据, 79, 80
+
 - SimpleList.js., 79
+
 基于鼠标的控制, 67
+
 导航器, 86–87
+
 PanResponder, 70, 74–78
+
 平台特定组件
+
 - CrossPlatform.js, 90–91
+
 - 仅限 iOS 或安卓的组件, 87–88
+
 - 命名规范, 88
+
 - <SwitchAndroid> 组件, 88
+
 - Switch.android.js, 89
+
 - <SwitchIOS> 组件, 88
+
 - Switch.ios.js, 88–89
+
 文本组件
+
 - <em>em 元素, 64
+
 - 内联样式, 65
+
 - 原始文本字符串, 64
+
 - 可复用组件, 65
+
 - <<strong><strong></strong> 元素, 64
+
 - 样式化组件 (styled components), 66
-- 子标签, 64
+
+- 子标筓, 64
+
 TouchableHighlight 组件, 67–70
+
 触摸管理方法, 78
+
 Touch/PressDemo.js, 69–70
+
 moviedb 应用, 49–51
+
 Movie.css, 243–244
+
 Movie.js, 244–246
+
 MovieListItem.css, 237–238
+
 MovieListItem.js, 238–239
+
 Movies.css, 239
+
 Movies.js, 239–240
+
 *multiGet()* 方法, 157–158
+
 *multiMerge()* 方法, 159–161
+
 *multiRemove()* 方法, 159
+
 *multiSet()* 方法, 158
+
 MyReactNativeApp, 94
 
 N
 
 Native 调试, 210
-NativeModule 系统, 163
+
+Native Module 系统, 163
+
 Native Module Thread, 16
+
 Navigation.css, 240
+
 Navigation.js, 241
+
 NewModuleButton, 170–171, 189, 190
+
 Nginx 镜像, 280
+
 NodeJS 检查器, 214
+
 Node.js 安装, 3, 164–165
+
 - 下载, 37
+
 - 从浏览器安装, 38
+
 - 环境要求, 37
+
 Node 包管理器 (NPM)
+
 针对 Android
+
 - 参数类型, 192–193
+
 - 更好的原生模块导出, 190–192
+
 - CalendarModule 创建, 183
+
 - 回调, 194–196
+
 - 自定义原生模块文件创建, 184–185
+
 - 导出常量, 193–194
+
+
+
+# 索引
+
+## A
+
 - 获取 activity 结果, 199–201
+
+## B
+
 - 迭代, 190
+
+## C
+
 - 监听生命周期事件, 201–202
 - 模块名称, 185
 - 导出到 JavaScript 的原生方法, 185–186
@@ -10901,194 +11185,200 @@ Node 包管理器 (NPM)
 - 测试, 189–190
 - 线程, 202
 - 命令行工具 (CLI), 38
-针对跨平台, 202–204
+- 针对跨平台, 202–204
 - 下载, 163–164
 - 安装, 38–39
 - 安装 JavaScript 库, 164–166
-针对 iOS
-- 参数类型, 173–174
-- 更好的原生模块导出, 172–173
-- CalendarModule 创建, 166
-- 回调, 175–178
-- 自定义原生模块文件, 167
-- 依赖注入, 181–182
-- 导出常量, 174–175
-- 导出 Swift, 182–183
-- 迭代, 171
-- 模块名称, 167
-- 导出到 JavaScript 的原生方法, 168–169
-- 承诺 (promises), 178–179
-- 总结, 171
-- 预留方法, 183
-- 向 JavaScript 发送事件, 179–180
-- 同步方法, 169–170
-- 测试, 170–171
-- 线程, 180–181
-- 原生 API, 163
-包管理器, 163
-环境要求, 37
+
+## D
+
+- 针对 iOS
+  - 参数类型, 173–174
+  - 更好的原生模块导出, 172–173
+  - CalendarModule 创建, 166
+  - 回调, 175–178
+  - 自定义原生模块文件, 167
+  - 依赖注入, 181–182
+  - 导出常量, 174–175
+  - 导出 Swift, 182–183
+  - 迭代, 171
+  - 模块名称, 167
+  - 导出到 JavaScript 的原生方法, 168–169
+  - 承诺 (promises), 178–179
+  - 总结, 171
+  - 预留方法, 183
+  - 向 JavaScript 发送事件, 179–180
+  - 同步方法, 169–170
+  - 测试, 170–171
+  - 线程, 180–181
+  - 原生 API, 163
+- 包管理器, 163
+- 环境要求, 37
 - 使用该包, 165–166
-Node v6, 60
-Node 版本管理器 (NVM), 38
-NotFound.js, 247
-NPM, *参见* Node 包管理器
-Node 插件, 218
+- Node v6, 60
+- Node 版本管理器 (NVM), 38
+- NotFound.js, 247
+- NPM, *参见* Node 包管理器
+- Node 插件, 218
 
-O
+## E
 
-Object.element, 7
-Objective-C Native Module 方法, 173
-onActivityResult, 199–200
-onFailure 回调, 177, 196
-onPress() 方法, 189
-onSuccess 回调, 177, 196
+- Object.element, 7
+- Objective-C Native Module 方法, 173
+- onActivityResult, 199–200
+- onFailure 回调, 177, 196
+- onPress() 方法, 189
+- onSuccess 回调, 177, 196
 
-P
+## F
 
-PanResponder, 70
-使用展开语法附加, 74
-事件持有者, 73–74
-触摸事件, 74
-Touch/PanDemo.js, 74–78
-Perf Monitor, 209
-性能优化
-- 动画, 8
-- 减小尺寸, 6–7
-- JSON 数据升级, 7–8
-- 缺乏多线程, 9
-- 使用, 9
-- 导航, 8–9
-- 图片缓存, 7
-- 系统尺寸缩小, 6
-性能概述
-- 帧, 307–309
-- 常见问题
-- JS 线程 FPS, 310
-- JS 注入, 310
-- ListView 初始渲染, 209
-- 屏幕视图移动, 310–311
-- 开发模式运行, 209
-- 慢导航过渡, 310–312
-Touchable , 311
-使用 console.log 语句, 209
-平台无关性, 19
-平台特定组件
-- CrossPlatform.js, 90–91
-- 仅限 iOS 或安卓的组件, 87–88
-- 命名规范, 88
-- <SwitchAndroid> 组件, 88
-- Switch.android.js, 89
-- <SwitchIOS> 组件, 88
-- Switch.ios.js, 88–89
-Pods
-- 列表, 280–281
-- 数据集列表, 283
-- 选择, 282
-PowerShell, 34
-用于减小 APK 尺寸 Proguard, 305–306
-Python, 40–41
+- PanResponder, 70
+  - 使用展开语法附加, 74
+  - 事件持有者, 73–74
+  - 触摸事件, 74
+  - Touch/PanDemo.js, 74–78
+- Perf Monitor, 209
 
-R
+## G
 
-RCTAsyncLocalStorage 模块, 180–181
-RCTBridgeDelegate 协议, 181–182
-RCTBridgeModule 协议, 167
-RCTCalendarModule, 167
-RCTDeviceEventEmitter, 198–199
-RCTEventEmitter 类, 179
-RCT_EXPORT_BLOCKING 同步方法, 169–170
-RCT_EXPORT_METHOD 宏, 168–169
-RCTInvalidating 协议, 183
-RCTRootView, 181–182
-ReactComponent, 27
-ReactApplicationContext (RAC), 185
-React 组件
-- ES5 函数, 59
-- 文件夹布局, 59
-- props, 54–55
-- state, 56–57
-- 有状态组件和无状态组件, 57
-- State Hook, 56
-- 更新状态, 58–59
-- 使用状态, 57–58
-ReactContext, 198
-ReactContextBaseJavaModule 类, 184–185
-React 开发工具, 208–209, 216
-React Native 应用创建
-- 业务表单，风险管理, 224
-- 业务风险评估, 224
-- 现有业务, 224–225
-- 闪卡应用, 226
-- 成本和税收规划, 225–226
-- 数据建模与存储, 226–247
-- 使用导航器, 248–259
-React Native 组件, 2
-React Native 调试器, 216–217
-React Native 发布, 3
-React Navigation
-- 安装, 248
-- 示例, 2 250
-- 抽屉导航, 250–255
+- 性能优化
+  - 动画, 8
+  - 减小尺寸, 6–7
+  - JSON 数据升级, 7–8
+  - 缺乏多线程, 9
+  - 使用, 9
+  - 导航, 8–9
+  - 图片缓存, 7
+  - 系统尺寸缩小, 6
+- 性能概述
+  - 帧, 307–309
+  - 常见问题
+  - JS 线程 FPS, 310
+  - JS 注入, 310
+  - ListView 初始渲染, 209
+  - 屏幕视图移动, 310–311
+  - 开发模式运行, 209
+  - 慢导航过渡, 310–312
+  - Touchable, 311
+  - 使用 console.log 语句, 209
+- 平台无关性, 19
+- 平台特定组件
+  - CrossPlatform.js, 90–91
+  - 仅限 iOS 或安卓的组件, 87–88
+  - 命名规范, 88
+  - `<SwitchAndroid>` 组件, 88
+  - Switch.android.js, 89
+  - `<SwitchIOS>` 组件, 88
+  - Switch.ios.js, 88–89
+- Pods
+  - 列表, 280–281
+  - 数据集列表, 283
+  - 选择, 282
+- PowerShell, 34
+- 用于减小 APK 尺寸 Proguard, 305–306
+- Python, 40–41
+
+## H
+
+- RCTAsyncLocalStorage 模块, 180–181
+- RCTBridgeDelegate 协议, 181–182
+- RCTBridgeModule 协议, 167
+- RCTCalendarModule, 167
+- RCTDeviceEventEmitter, 198–199
+- RCTEventEmitter 类, 179
+- RCT_EXPORT_BLOCKING 同步方法, 169–170
+- RCT_EXPORT_METHOD 宏, 168–169
+- RCTInvalidating 协议, 183
+- RCTRootView, 181–182
+- ReactComponent, 27
+- ReactApplicationContext (RAC), 185
+- React 组件
+  - ES5 函数, 59
+  - 文件夹布局, 59
+  - props, 54–55
+  - state, 56–57
+  - 有状态组件和无状态组件, 57
+  - State Hook, 56
+  - 更新状态, 58–59
+  - 使用状态, 57–58
+- ReactContext, 198
+- ReactContextBaseJavaModule 类, 184–185
+- React 开发工具, 208–209, 216
+- React Native 应用创建
+  - 业务表单，风险管理, 224
+  - 业务风险评估, 224
+  - 现有业务, 224–225
+  - 闪卡应用, 226
+  - 成本和税收规划, 225–226
+  - 数据建模与存储, 226–247
+  - 使用导航器, 248–259
+- React Native 组件, 2
+- React Native 调试器, 216–217
+- React Native 发布, 3
+- React Navigation
+  - 安装, 248
+  - 示例, 250
+  - 抽屉导航, 250–255
+  - 栈导航, 250–254
+  - 标签导航, 254–255
+  - 视图间, 250–254
+  - 组件, 250–255
+- 就绪探针, 285–288
+- Reconciler, 16
+- Redux DevTools, 208–209
+- `removeItem()` 方法, 155
+- render() 方法, 22, 51–53
+- 渲染线程, 16
+- 代码复用, 187
+
+## I
+
+- Safari 开发工具, 208
+- SectionList, 309
+- Selection.css, 241–242
+- Selection.js, 242
+- 智能天气, 130
 - 栈导航, 250–254
-- 标签导航, 254–255
-- 视图间, 250–254
-- 组件, 250–255
-就绪探针, 285–288
-Reconciler, 16
-Redux DevTools, 208–209
-*removeItem()* 方法, 155
-render() 方法, 22, 51–53
-渲染线程, 16
-代码复用, 187
+- startActivityForResult, 199–201
+- `static getDerivedStateFromProps()` 方法, 23
+- 数据存储在 React 本地存储, 231–247
 
-S
+## J
 
-Safari 开发工具, 208
-SectionList, 309
-Selection.css, 241–242
-Selection.js, 242
-智能天气, 130
-栈导航, 250–254
-startActivityForResult, 199–201
-static getDerivedStateFromProps() 方法, 23
-数据存储在 React 本地存储, 231–247
-电影列表
+- 电影列表
+- 样式
+  - 复杂的样式, 94–95
+  - 容器组件, 100–101
+  - 属性样式化属性样式, 100
+  - 样式属性, 102
+  - StyleSheets, 98, 101
+  - styles.css, 228–229, 231
 
-样式
-复杂的样式, 94–95
-容器组件, 100–101
-属性样式化属性样式, 100
-样式属性, 102
-StyleSheets, 98, 101
-styles.css, 228–229, 231
+## K
 
+- **330** ◾ 索引
+  - beta 测试的优势，268
+  - 算法，269–270
+  - 提交审核申请，272–277
+  - 批准，277
+  - 闭合类型，268
+  - 外部测试者和组，270–271
+  - 内部测试者，270
+  - 开放类型，268
+  - 拒绝，277
+  - 主要功能，269
 
+## L
 
-
-
-**330** ◾ 索引
-
-- beta 测试的优势，268
-- 算法，269–270
-- 提交审核申请，272–277
-- 批准，277
-- 闭合类型，268
-- 外部测试者和组，270–271
-- 内部测试者，270
-- 开放类型，268
-- 拒绝，277
-- 主要功能，269
-
-文本组件
-- <em><em></em> 元素，64
-- 内联样式，65
-- 原始文本字符串，64
-- 可复用组件，65
-- <strong><strong></strong> 元素，64
-- 样式化组件，66
-- 子标签，64
-
-- `getCurrentPosition ()` 方法，140–141
+- 文本组件
+  - `<em>` 元素，64
+  - 内联样式，65
+  - 原始文本字符串，64
+  - 可复用组件，65
+  - `<strong>` 元素，64
+  - 样式化组件，66
+  - 子标签，64
+- `getCurrentPosition()` 方法，140–141
 - 3D 组库，18
 - 切换检查器 (Toggle Inspector)，209
 - TouchableHighlight 组件，67–70
@@ -11096,7 +11386,8 @@ styles.css, 228–229, 231
 - TurboModules，183, 193–194
 - TurboReactPackage，188
 
-U
+## M
+
 - UI 丰富的技能，19
 - UI 线程，15, 308–309
 - 调整图片大小，311
@@ -11104,23 +11395,25 @@ U
 - 未处理的 JavaScript 错误，206–207
 - “Use strict”模式，215
 
-V
+## N
+
 - Visual Studio Code (IDE)，45–46
 
-W
+## O
+
 - `Watch Position` 方法，138
 - Windows Terminal 安装
-- Chocolatey，35
-- 命令提示符 (Command Prompt)，34
-- 来自 GitHub，34–36
-- 在 Microsoft Store 上，34, 35
-- 使用 PowerShell，34, 35
-- 在 Windows 10 中，34
-- 在 Windows 11 中，34
-- WSL，34
+  - Chocolatey，35
+  - 命令提示符 (Command Prompt)，34
+  - 来自 GitHub，34–36
+  - 在 Microsoft Store 上，34, 35
+  - 使用 PowerShell，34, 35
+  - 在 Windows 10 中，34
+  - 在 Windows 11 中，34
+  - WSL，34
 - 基于工作内容的组件，28
 - 一次编写随处运行 (WORA)，203
 
-Z
-- Zapier，301
+## P
 
+- Zapier，301

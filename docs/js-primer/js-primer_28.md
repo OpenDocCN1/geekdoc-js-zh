@@ -1,3 +1,4 @@
+
 # 异步处理:Promise/Async Function
 
 > 原文：[`jsprimer.net/basic/async/`](https://jsprimer.net/basic/async/)
@@ -6,9 +7,9 @@
 
 本章将从异步处理是什么开始，探讨异步处理中的异常处理和异步处理的方法。
 
-## *同步处理*
+## 同步处理
 
-*许多编程语言将代码的评估方式分为**同步处理（sync）**和**异步处理（async）**两大类。
+许多编程语言将代码的评估方式分为**同步处理（sync）**和**异步处理（async）**两大类。
 
 之前编写的代码被称为**同步处理**。在同步处理中，代码按顺序处理，一个处理完成后再进行下一个处理。因此，同步处理中正在执行的处理只有一个，这使得操作非常直观。
 
@@ -46,9 +47,9 @@ taskB();
 
 在之前的例子中，处理被阻塞了 1 秒钟，因此会导致 1 秒钟内的滚动等操作无法执行。
 
-## *异步处理*
+## 异步处理
 
-*异步处理按顺序处理代码，但不会等待一个异步处理完成就评估下一个处理。也就是说，在异步处理中，同时执行的处理有多个。
+异步处理按顺序处理代码，但不会等待一个异步处理完成就评估下一个处理。也就是说，在异步处理中，同时执行的处理有多个。
 
 在 JavaScript 中，`setTimeout`函数是异步处理的代表性函数之一。`setTimeout`函数将`回调函数`注册到计时器，以便在`delay`毫秒后调用。
 
@@ -80,13 +81,13 @@ taskB();
 
 ![异步处理与计时器](img/7c4cf9a7c958c70e85a0602203d1afc1.png)
 
-## *异步处理是在主线程中执行的*
+## 异步处理是在主线程中执行的
 
-*正如之前所介绍的，主线程（也称为 UI 线程）是执行重型的 JavaScript 同步处理，这会阻塞其他处理（如屏幕更新）的问题。在异步处理中也有类似的问题。这是因为 JavaScript 中的大部分异步处理都是在主线程中执行的。
+正如之前所介绍的，主线程（也称为 UI 线程）是执行重型的 JavaScript 同步处理，这会阻塞其他处理（如屏幕更新）的问题。在异步处理中也有类似的问题。这是因为 JavaScript 中的大部分异步处理都是在主线程中执行的。
 
 虽然从名称上看，异步处理似乎是在主线程之外执行的，但基本上异步处理也像同步处理一样在主线程中执行。在本节中，我们将简要地了解异步处理是如何在主线程中执行的。
 
-下面的代码使用`setTimeout`函数注册了计时器的回调函数，并测量了实际花费的时间。使用`setTimeout`函数注册了 10 毫秒后执行异步任务的异步任务，并在其之后立即调用了一个持续 1 秒钟的同步阻塞处理。运行此代码时，由于同步阻塞处理，异步任务比注册到计时器的时间（10 毫秒后）晚得多地被调用。
+下面的代码使用`setTimeout`函数注册了计时器的回调函数，并测量了实际花费的时间。使用`setTimeout`函数注册了 10 毫秒后执行异步任务的异步任务，并在其之后立即调用了一个持续 1 秒钟的同步阻塞处理。运行此代码时，由于同步阻塞处理，异亚任务比注册到计时器的时间（10 毫秒后）晚得多地被调用。
 
 ```
 function taskA() {
@@ -135,9 +136,9 @@ Web Worker 在主线程之外的不同 Worker 线程中执行，因此即使在 
 
 这样，不能一概而论所有非同步处理，但了解基本非同步处理（如定时器等）是在主线程中执行的这一性质是很重要的。 JavaScript 的大部分**非同步处理**都是**非同步执行的处理**。 本书介绍的非同步处理大多数是在主线程中切换处理而执行的**并行处理（Concurrent）**。
 
-## *非同步处理与异常处理*
+## 非同步处理与异常处理
 
-*介绍了非同步处理与同步处理流程的不同之处。 这对非同步处理中的**异常处理**也有很大的影响。
+介绍了非同步处理与同步处理流程的不同之处。 这对非同步处理中的**异常处理**也有很大的影响。
 
 在同步处理中，可以使用`try...catch`结构来捕获同步发生的异常（详细信息请参考“异常处理”章节）。
 
@@ -188,7 +189,7 @@ console.log("この行は実行されます");
 
 Async Function 是建立在 Promise 之上的语法结构。 因此，理解两者都很重要，而不是只理解其中之一。
 
-## *[ES2015] Promise*
+## [ES2015] Promise
 
 *[Promise](https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/Promise)是 ES2015 中引入的用于表示异步处理状态或结果的内置对象。 异步处理返回 Promise 实例，可以在 Promise 实例上注册状态变化时调用的回调函数。
 
@@ -217,11 +218,11 @@ asyncPromiseTask().then(()=> {
 
 `asyncPromiseTask`函数返回`Promise`这个内置对象的实例。 `Promise`实例表示`asyncPromiseTask`函数内进行的异步处理是成功还是失败的状态。 此外，可以通过对`Promise`实例使用`then`或`catch`方法，将成功时或失败时调用的处理注册为回调函数，以处理异步处理的结果。
 
-Promise 看起来可能有些复杂，但它是用于封装异步处理的状态或结果的类似对象。 同步函数执行函数后立即得到结果，而非同步函数执行函数后不会立即得到结果。 因此，非同步函数返回一个封装了异步处理状态的 Promise 对象，并在结果确定时将结果传递给之前注册的回调函数。
+Promise 看起来可能有些复杂，但它是用于封装异步处理的状态或结果的类似对象。 同步函数执行函数后立即得到结果，而非同步函数执函数后不会立即得到结果。 因此，非同步函数返回一个封装了异步处理状态的 Promise 对象，并在结果确定时将结果传递给之前注册的回调函数。
 
 实际上，让我们看看`Promise`的使用方法。
 
-### *`Promise`实例的创建*
+### `Promise`实例的创建
 
 *使用`new`运算符创建`Promise`实例，此时需要传递一个名为`executor`的函数作为参数，该函数接受`resolve`和`reject`两个参数。 在`executor`函数中执行非同步处理，如果非同步处理成功，则调用`resolve`函数，如果失败，则调用`reject`函数。
 
@@ -261,7 +262,7 @@ promise.then(onFulfilled, onRejected);
 
     +   将调用`onRejected`
 
-### *`Promise.prototype.then` 和 `Promise.prototype.catch`*
+### `Promise.prototype.then` 和 `Promise.prototype.catch`
 
 *因为以前没有像 Promise 这样将函数传递给构造函数的模式，所以我们将介绍具体的`then`方法用法示例。 同时，我们还将研究作为`then`方法别名的`catch`方法。
 
@@ -339,7 +340,7 @@ errorPromise("catchでエラーハンドリング").catch(error => {
 }); 
 ```
 
-### *Promise 和异常*
+### Promise 和异常
 
 *如果在构造函数中发生异常，则会自动捕获异常。 发生异常的`Promise`实例将被视为失败，就像调用`reject`函数一样。 因此，如果 Promise 内部发生异常，则将调用`then`方法的第二个参数或`catch`方法中注册的错误处理回调函数。
 
@@ -359,7 +360,7 @@ throwPromise().catch(error => {
 
 因此，在 Promise 处理中，无需使用`try...catch`语法，自动捕获异常。
 
-### *Promise 的状态*
+### Promise 的状态
 
 *现在我们已经了解了 Promise 的`then`方法和`catch`方法的处理方式，接下来我们将整理一下`Promise`实例的状态。
 
@@ -425,7 +426,7 @@ promise.then(() => {
 
 具体来说，我们将与已更改状态的`Promise`实例一起查看`Promise.resolve`和`Promise.reject`方法的结果。
 
-### *`Promise.resolve`*
+### `Promise.resolve`
 
 *`Promise.resolve`方法是将状态变为**已解决**的`Promise`实例。
 
@@ -479,7 +480,7 @@ console.log("2\. 同期的な処理が実行されました");
 
 执行此代码时，首先执行`Promise`的构造函数，然后执行同步处理，最后通过`then`方法异步调用之前注册的回调函数。
 
-### *`Promise.reject`*
+### `Promise.reject`
 
 *`Promise.reject`方法创建一个**Rejected**状态的`Promise`实例。
 
@@ -506,7 +507,7 @@ console.log("1\. 同期的な処理が実行されました");
 
 `Promise.resolve`或`Promise.reject`可以简写，因此在测试代码等情况下经常被使用。 此外，`Promise.reject`在接下来要解释的 Promise 链中用于操作 Promise 的状态。
 
-### *Promise 链*
+### Promise 链
 
 *Promise 是提供非同步处理统一接口的内置对象。 使用 Promise 的统一处理方法在处理多个非同步处理时特别有效。 之前，我们只是对单个`Promise`实例使用`then`或`catch`方法注册一组回调处理。
 
@@ -574,7 +575,7 @@ asyncTask()
 
 ![promise-chain](img/8725c9e1178b5a8f4700fe3a8210c63b.png)
 
-当 Promise 的状态变为**Rejected**时，将调用最近的失败处理（`catch`或`then`的第二引数）。 在这种情况下，将跳过成功时的处理（`then`的第一引数）。
+当 Promise 的状态变为**Rejected**时，将调用最近的失败处理（`catch`或`then`の第二引数）。 在这种情况下，将跳过成功时的处理（`then`の第一引数）。
 
 在下面的代码中，对于**Rejected**的 Promise，我们使用 Promise 链来编写`then` → `then` → `catch`的处理。 在这种情况下，最近的失败处理（`catch`）将被调用，但中间的两个成功处理（`then`）则不会执行。
 
@@ -590,7 +591,7 @@ rejectedPromise.then(() => {
 }); 
 ```
 
-与 Promise 构造函数处理相同，`then`或`catch`中发生的异常将自动捕获。 当发生异常时，`then`或`catch`方法将返回**Rejected**的`Promise`实例。 因此，当发生异常时，将调用最接近的失败处理（`catch`或`then`的第二个参数）。
+与 Promise 构造函数处理相同，`then`或`catch`中发生的异常将自动捕获。 当发生异常时，`then`或`catch`方法将返回**Rejected**的`Promise`实例。 因此，当发生异常时，将调用最接近的失败处理（`catch`または`then`の第二个参数）。
 
 ```
 Promise.resolve().then(() => {
@@ -615,7 +616,7 @@ Promise.reject(new Error("エラー")).catch(error => {
 
 就这样，通过`then`方法或`catch`方法链接，编写成功或失败的处理被称为 Promise 链。
 
-#### *在 Promise 链中返回值*
+#### 在 Promise 链中返回值
 
 在 Promise 链中，可以通过回调返回的值将其传递给下一个回调函数。
 
@@ -650,7 +651,7 @@ Promise.reject(new Error("失敗")).catch(error => {
 }); 
 ```
 
-#### *通过回调函数返回`Promise`实例*
+#### 通过回调函数返回`Promise`实例
 
 *一旦在 Promise 链中捕获一次，下一步调用的是成功处理（`then`方法）。 这是因为，当回调函数返回任意值时，将创建一个以该值解析为**Fulfilled**状态的`Promise`实例。 但是，如果回调函数返回`Promise`实例，则情况就会有所不同。
 
@@ -695,7 +696,7 @@ main().catch(error => {
 }); 
 ```
 
-#### *[ES2018] 在 Promise 链的最后写入处理*
+#### [ES2018] 在 Promise 链的最后写入处理
 
 *Promise 的`finally`方法允许注册一个回调函数，在成功或失败时都会被调用。 这类似于`try...catch...finally`结构中的`finally`块。
 
@@ -738,7 +739,7 @@ dummyFetch("/resource/A").then(response => {
 }); 
 ```
 
-### *在 Promise 链中进行顺序处理*
+### 在 Promise 链中进行顺序处理
 
 *Promise 链中编写异步处理流程的一个主要优点是，它可以适应异步处理的各种模式。
 
@@ -772,7 +773,7 @@ dummyFetch("/resource/A").then(response => {
 }); 
 ```
 
-### *使用`Promise.all`将多个 Promise 组合在一起*
+### 使用`Promise.all`将多个 Promise 组合在一起
 
 *通过使用`Promise.all`，可以将多个 Promise 作为一个 Promise 处理。
 
@@ -852,7 +853,7 @@ fetchedPromise.then(([responseA, responseB]) => {
 }); 
 ```
 
-### *`Promise.race`*
+### `Promise.race`
 
 *`Promise.all`方法等待多个 Promise 全部完成。`Promise.race`方法接收一个 Promise，但只要有一个 Promise 完成（变为 Settled 状态），就会执行下一步操作。
 
@@ -935,7 +936,7 @@ Promise.race([
 
 在 ES2017 中，为了解决 Promise 链的不雅外观，引入了名为 Async Function 的语法结构。
 
-## *[ES2017] 异步函数*
+## [ES2017] 异步函数
 
 *ES2017 引入了一种称为 Async Function 的语法，用于定义执行异步操作的函数。Async Function 与普通函数不同，它定义了一个必须返回 `Promise` 实例的函数。
 
@@ -969,7 +970,7 @@ doAsync().then(value => {
 
 本节将介绍 Async Function 和 `await` 表达式。
 
-## *Async Function 的定义*
+## Async Function 的定义
 
 *Async Function 是通过在函数定义中添加 `async` 关键字来定义的。JavaScript 的函数定义可以是函数声明、函数表达式、箭头函数、方法简写等。无论哪种定义方法，只要在前面加上 `async` 关键字，就可以将其定义为 Async Function。
 
@@ -990,7 +991,7 @@ const obj = { async method() {} };
 
 +   Async Function 内部可以使用 `await` 表达式
 
-## *Async Function 返回 Promise*
+## Async Function 返回 Promise
 
 *定义了 Async Function 的函数必定返回 `Promise` 实例。具体来说，Async Function 返回的值可以考虑以下三种情况。
 
@@ -1036,7 +1037,7 @@ exceptionFn().catch(error => {
 
 在任何情况下，Async Function 都会返回一个 Promise。从调用者的角度来看，Async Function 与返回 Promise 的普通函数没有区别。
 
-## *`await` 表达式*
+## `await` 表达式
 
 *`await` 表达式是以下位置可用的表达式。在以下位置之外，`await` 表达式会导致语法错误，因此无法使用。
 
@@ -1211,6 +1212,8 @@ fetchAB().then((results) => {
 
 在下面的代码中，实现了`fetchResources`函数，该函数通过传递指定资源的路径数组来按顺序获取这些资源。在 Async Function 内使用 for 循环进行循环处理，在 for 循环中使用`await`语句等待资源的获取，并将结果添加到其中。
 
+
+
 ```
 function dummyFetch(path) {
     return new Promise((resolve, reject) => {
@@ -1248,7 +1251,7 @@ fetchResources(resources).then((results) => {
 
 在 Async Function 中，可以轻松地将 for 循环等现有结构与非同步处理结合使用。如果只有 Promise，则需要使用 Promise 链和回调函数来实现循环处理。
 
-### Promise API 与 Async Function 结合使用*
+### Promise API 与 Async Function 结合使用
 
 *使用 Async Function 和`await`式可以使异步处理看起来像同步处理。由于这种同步处理的外观，在执行多个异步处理时，容易编写出产生无谓等待时间的代码。
 
@@ -1298,7 +1301,9 @@ fetchAllResources(resources).then((results) => {
 
 如此，Async Function 和`await`表达式可以与现有的 Promise API 结合使用。由于 Async Function 内部也使用 Promise 的机制，因此它们不是对立关系，而是共存关系。
 
-### Async Function 中的 await 式*`await`式只能在 Async Function 的直下使用*
+### Async Function 中的 await 式
+
+*`await`式只能在 Async Function 的直下使用*
 
 *在 Async Function 中使用`await`表达式时，需要注意`await`表达式只能在函数的直下使用。
 

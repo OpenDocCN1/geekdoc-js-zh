@@ -1,15 +1,12 @@
+
 # 急躁程序员的 JavaScript 指南 (ECMAScript, 2021 版)
 
-
-
 ![](img/cover-epub.jpg)
-
-
-
 
 # 1 在购买书籍之前
 
 ## 1.1 关于内容
+
 ### 1.1.1 本书中有什么？
 
 本书通过提供一种尽可能一致的现代视角，让初学者学习 JavaScript 不再具有挑战性。
@@ -25,7 +22,7 @@
 
 ### 1.1.2 本书未涵盖哪些内容？
 
-* 某些高级语言特性没有进行解释，但提供了相关材料的引用——例如我在 `ExploringJS.com` 上的其他 JavaScript 书籍，它们可以在线免费阅读。
+*   某些高级语言特性没有进行解释，但提供了相关材料的引用——例如我在 `ExploringJS.com` 上的其他 JavaScript 书籍，它们可以在线免费阅读。
 *   本书刻意专注于语言本身。未描述仅限器的特性等。
 
 ### 1.1.3 这本书对急躁的人来说不是太长了吗？
@@ -33,6 +30,7 @@
 你可以通过多种方法阅读这本书。其中一种方法是跳过大部分内容以便快速开始。详情请参阅 §2.1.1 “我应该以什么顺序阅读书中的内容?”。
 
 ## 1.2 预览和购买本书
+
 ### 1.2.1 我如何预览书籍、练习题和测验？
 
 访问[本书的主页](https://exploringjs.com/impatient-js/)：
@@ -45,11 +43,8 @@
 
 *给急躁程序员的 JavaScript*有两个数字版本：
 
-
-
-
-* 电子书：PDF, EPUB, MOBI, HTML（均无 DRM 保护）
-* 电子书加练习和测验
+*   电子书：PDF, EPUB, MOBI, HTML（均无 DRM 保护）
+*   电子书加练习和测验
 
 [本书的首页](https://exploringjs.com/impatient-js/#buy) 描述了如何购买它们。
 
@@ -67,22 +62,22 @@ Axel Rauschmayer 博士专攻 JavaScript 和 Web 开发。自 1995 年以来，�
 
 ## 1.4 致谢
 
-* 封面由 [Fran Caye](http://francaye.net) 设计
-* 本书部分由 [Adaobi Obi Tulton](http://www.serendipity23editorial.com) 编辑
-* 感谢回答问题、讨论语言话题等：
-    * Allen Wirfs-Brock ([@awbjs`](https://twitter.com/awbjs))
-    * Benedict Meurer ([@bmeurer`](https://twitter.com/bmeurer))
-    * Brian Terlson ([@bterlson`](https://twitter.com/bterlson))
-    * Daniel Ehrenberg ([@littledan`](https://twitter.com/littledan))
-    * Jordan Harband ([@ljharb`](https://twitter.com/ljharb))
-    * Maggie Johnson-Pint ([@maggiepint`](https://twitter.com/maggiepint))
-    * Mathias Bynens ([@mathias`](https://twitter.com/mathias))
-    * Myles Borins ([@MylesBorins`](https://twitter.com/MylesBorins))
-    * Rob Palmer ([@robpalmer2`](https://twitter.com/robpalmer2))
-    * Šime Vidas ([@simevidas`](https://twitter.com/simevidas))
-    * 以及许多其他人
-* 感谢校对：
-    * Johannes Weber ([@jowe`](https://twitter.com/jowe))
+*   封面由 [Fran Caye](http://francaye.net) 设计
+*   本书部分由 [Adaobi Obi Tulton](http://www.serendipity23editorial.com) 编辑
+*   感谢回答问题、讨论语言话题等：
+    *   Allen Wirfs-Brock ([@awbjs](https://twitter.com/awbjs))
+    *   Benedict Meurer ([@bmeurer](https://twitter.com/bmeurer))
+    *   Brian Terlson ([@bterlson](https://twitter.com/bterlson))
+    *   Daniel Ehrenberg ([@littledan](https://twitter.com/littledan))
+    *   Jordan Harband ([@ljharb](https://twitter.com/ljharb))
+    *   Maggie Johnson-Pint ([@maggiepint](https://twitter.com/maggiepint))
+    *   Mathias Bynens ([@mathias](https://twitter.com/mathias))
+    *   Myles Borins ([@MylesBorins](https://twitter.com/MylesBorins))
+    *   Rob Palmer ([@robpalmer2](https://twitter.com/robpalmer2))
+    *   Šime Vidas ([@simevidas](https://twitter.com/simevidas))
+    *   以及许多其他人
+*   感谢校对：
+    *   Johannes Weber ([@jowe](https://twitter.com/jowe))
 
 [生成于：2021-02-05 10:31]
 
@@ -92,74 +87,33 @@ Axel Rauschmayer 博士专攻 JavaScript 和 Web 开发。自 1995 年以来，�
 
 ## 2.1 如何阅读本书
 
-    * 2.1.1 我应该以什么顺序阅读本书的内容？
-    * 2.1.2 为什么某些章节和章节被标记为“(进阶）”？
-    * 2.1.3 为什么某些章节被标记为“(赠送）”？
-
-## 2.2 我拥有数字版
-
-    * 2.2.1 我如何提交反馈和修正？
-    * 2.2.2 我如何获取在 Payhip 购买的下载更新？
-    * 2.2.3 我可以从“电子书”包升级到“电子书+练习++测验”包吗？
-
-## 2.3 我拥有纸质版
-
-    * 2.3.1 我可以获得数字版的折扣吗？
-    * 2.3.2 我可以提交错误或查看已提交的错误吗？
-    * 2.3.3 是否有包含书中所有 URL 的在线列表？
-
-## 2.4 符号和约定
-
-    * 2.4.1 什么是类型签名？为什么我会在本书中看到静态类型？ 描述了如何购买它们。
+### 2.1.1 我应该以什么顺序阅读本书的内容？
 
 ### 2.1.2 为什么某些章节和章节被标记为“(进阶）”？
 
-电子书：PDF, EPUB, MOBI, HTML（均无 DRM 保护）
-
 ### 2.1.3 为什么某些章节被标记为“(赠送）”？
-
-电子书加练习和测验
 
 ## 2.2 我拥有数字版
 
 ### 2.2.1 我如何提交反馈和修正？
 
-本节提供了如何学习材料的指导。
-
 ### 2.2.2 我如何获取在 Payhip 购买的下载更新？
 
-本节提供了如何学习材料的指导。
-
 ### 2.2.3 我可以从“电子书”包升级到“电子书+练习++测验”包吗？
-
-本节提供了如何学习材料的指导。
 
 ## 2.3 我拥有纸质版
 
 ### 2.3.1 我可以获得数字版的折扣吗？
 
-*JavaScript for impatient programmers* 的纸质版可在 Amazon 购买。
-
 ### 2.3.2 我可以提交错误或查看已提交的错误吗？
 
-本节提供了如何学习材料的指导。
-
 ### 2.3.3 是否有包含书中所有 URL 的在线列表？
-
-本节提供了如何学习材料的指导。
 
 ## 2.4 符号和约定
 
 ### 2.4.1 什么是类型签名？为什么我会在本书中看到静态类型？
 
-本节提供了如何学习材料的指导。
-
 ### 2.4.2 带图标的注释意味着什么？
-
-本节提供了如何学习材料的指导。
-
-
-
 
 ![](img/file0.svg) **阅读说明**
 
@@ -193,19 +147,16 @@ Axel Rauschmayer 博士专攻 JavaScript 和 Web 开发。自 1995 年以来，�
 
 表示当前章节（或部分章节）有测验。
 
-# 3��为什么选择 JavaScript？（额外内容）
+# 3 为什么选择 JavaScript？（额外内容）
 
 * * *
 
-* 3.1 JavaScript 的缺点
-
-* 3.2 JavaScript 的优点
-
-    * 3.2.1 社区
-    * 3.2.2 实用性
-    * 3.2.3 语言
-
-* 3.3 JavaScript 的优缺点：创新
+*   3.1 JavaScript 的缺点
+*   3.2 JavaScript 的优点
+    *   3.2.1 社区
+    *   3.2.2 实用性
+    *   3.2.3 语言
+*   3.3 JavaScript 的优缺点：创新
 
 * * *
 
@@ -215,64 +166,64 @@ Axel Rauschmayer 博士专攻 JavaScript 和 Web 开发。自 1995 年以来，�
 
 ECMAScript 是语言标准的名称；数字指的是该标准版本的号。如需更多信息，请参阅 §5.2 “标准化 JavaScript”。
 
-## 3.1 JavaScript 的缺点
+## 3.1 JavaScript 的缺点
 
 在程序员中，JavaScript 并不总是受到欢迎。原因之一是它有很多怪癖（quirks）。其中某些只是处理事情的不寻方式，另一些则被认为是 Bug。无论如何，学习*为什么* JavaScript 要那样做，有助于处理这些怪癖并接受 JavaScript（甚至可能喜欢它）。希望本书在这方面有所帮助。
 
 此外，许多传统的怪癖现在已经消除了。例如：
 
-* 传统上，JavaScript 变量不是块级作用的。ES6 引入了 `let` 和 `const`，允许你声明块级作用的变量。
-* 在 ES6 之前，通过 `function` 和 `.prototype` 实现对象工厂和继承非常笨。ES6 引入了类（classes），为这些机制提供了更方便的语法。
-* 传统上，JavaScript 没有内置模块。ES6 在语言中添加了它们。
+*   传统上，JavaScript 变量不是块级作用的。ES6 引入了 `let` 和 `const`，允许你声明块级作用的变量。
+*   在 ES6 之前，通过 `function` 和 `.prototype` 实现对象工厂和继承非常笨。ES6 引入了类（classes），为这些机制提供了更方便的语法。
+*   传统上，JavaScript 没有内置模块。ES6 在语言中添加了它们。
 
 最后，JavaScript 的标准库很有限，但是：
 
-* 有[计划](https://github.com/tc39/proposal-javascript-standard-library) 添加更多功能。
-* 通过 [npm 软件注册表](https://www.npmjs.com) 可以轻松获取许多库。
+*   有[计划](https://github.com/tc39/proposal-javascript-standard-library) 添加更多功能。
+*   通过 [npm 软件注册表](https://www.npmjs.com) 可以轻松获取许多库。
 
-## 3.2 JavaScript 的优点
+## 3.2 JavaScript 的优点
 
 好的方面，JavaScript 提供了许多优势。
 
-### 3.2.1 社区
+### 3.2.1 社区
 
 JavaScript 的流行意味着它拥有良好的支持和文档记录。每当你用 JavaScript 创建任何东西时，你都可以认为会有很多人（潜在地）感兴趣。如果你需要，你还可以从大量的 JavaScript 程序员池中招聘。
 
 没有单一实体控制 JavaScript —— 它由 TC39 演进，这是一个由许多组织组成的委员会。该语言通过开放的过程进行演进，鼓励公众提供反馈。
 
-### 3.2.2 实用性
+### 3.2.2 实用性
 
 通过 JavaScript，你可以为许多客户端平台编写应用。以下是一些示例技术：
 
-* [渐进式 Web 应用](https://developers.google.com/web/progressive-web-apps/) 可以在 Android 和许多桌面操作系统上原生安装。
-* [Electron](https://electronjs.org) 允许你构建跨平台桌面应用。
-* [React Native](https://facebook.github.io/react-native/) 让你为 iOS 和 Android 编写原生用户界面的应用。
-* [Node.js](https://nodejs.org/) 为编写 shell 脚本提供了广泛支持（此外作为 Web 服务器平台）。
+*   [渐进式 Web 应用](https://developers.google.com/web/progressive-web-apps/) 可以在 Android 和许多桌面操作系统上原生安装。
+*   [Electron](https://electronjs.org) 允许你构建跨平台桌面应用。
+*   [React Native](https://facebook.github.io/react-native/) 让你为 iOS 和 Android 编写原生用户界面的应用。
+*   [Node.js](https://nodejs.org/) 为编写 shell 脚本提供了广泛支持（此外作为 Web 服务器平台）。
 
 许多服务器平台和服务支持 JavaScript ——例如：
 
-* Node.js（以下许多服务基于 Node.js 或支持其 API）
-* ZEIT Now
-* Microsoft Azure Functions
-* AWS Lambda
-* Google Cloud Functions
+*   Node.js（以下许多服务基于 Node.js 或支持其 API）
+*   ZEIT Now
+*   Microsoft Azure Functions
+*   AWS Lambda
+*   Google Cloud Functions
 
 有许多数据技术可用于 JavaScript：许多数据库支持它，并且存在中间层（如 GraphQL）。此外，标准数据格式 JSON（JavaScript 对象表示） 基于 JavaScript 并由其标准库支持。
 
 最后，JavaScript 的许多（如果不是大多数）工具都是用 JavaScript 编写的。这包括 IDE、构建工具等。因此，你安装它们的方式与安装库相同，并可以使用 JavaScript 对它们进行自定义。
 
-### 3.2.3 语言
+### 3.2.3 语言
 
-* 可以通过 JavaScript 宇宙中的事实标准 [npm 软件注册表](https://www.npmjs.com) 获取许多库。
-* 如果你对“纯原生”JavaScript 不满意，那么添加更多功能相对容易：
-    * 你可以通过 [Babel](https://babeljs.io) 将未来和现代语言特性编译为当前及过去版本的 JavaScript。
-    * 你可以通过 [TypeScript](https://www.typescriptlang.org) 和 [Flow](https://flow.org) 添加静态类型。
-    * 你可以使用 ReasonML，它本质上是带有 JavaScript 语法的 OCaml。它可以被编译为 JavaScript 或原生代码。
-* 语言非常灵活：它是动态的，并同时支持面向对象编程和函数式编程。
-* 对于这种动态语言来说，JavaScript 变得异常快。
-    * 每当它不够快时，你可以切换到 WebAssembly，它是内置在大多数 JavaScript 引擎中的通用虚拟机。它可以以近乎原生的速度运行静态代码。
+*   可以通过 JavaScript 宇宙中的事实标准 [npm 软件注册表](https://www.npmjs.com) 获取许多库。
+*   如果你对“纯原生”JavaScript 不满意，那么添加更多功能相对容易：
+    *   你可以通过 [Babel](https://babeljs.io) 将未来和现代语言特性编译为当前及过去版本的 JavaScript。
+    *   你可以通过 [TypeScript](https://www.typescriptlang.org) 和 [Flow](https://flow.org) 添加静态类型。
+    *   你可以使用 ReasonML，它本质上是带有 JavaScript 语法的 OCaml。它可以被编译为 JavaScript 或原生代码。
+*   语言非常灵活：它是动态的，并同时支持面向对象编程和函数式编程。
+*   对于这种动态语言来说，JavaScript 变得异常快。
+    *   每当它不够快时，你可以切换到 WebAssembly，它是内置在大多数 JavaScript 引擎中的通用虚拟机。它可以以近乎原生的速度运行静态代码。
 
-## 3.3 JavaScript 的优缺点：创新
+## 3.3 JavaScript 的优缺点：创新
 
 JavaScript 生态系统中充满了创新：实现用户界面的新方法、优化交付的新方法等。优点是你会不断学到新东西；缺点是不断的变化可能会让人精疲力竭。幸运的是，最近速度放慢了：所有的 ES6（这是语言的一次重大现代化）正在定型，某些工具和工作流也是如此。
 
@@ -280,47 +231,42 @@ JavaScript 生态系统中充满了创新：实现用户界面的新方法、优
 
 查看测验应用。
 
-# 4 JavaScript 的本质（额外内容）
+# 4 JavaScript 的本质（额外内容）
 
 * * *
 
-* 4.1 JavaScript 的影响
-* 4.2 JavaScript 的本质
-    * 4.2.1 JavaScript 经常静默失败
-* 4.3 入门 JavaScript 的提示
+*   4.1 JavaScript 的影响
+*   4.2 JavaScript 的本质
+    *   4.2.1 JavaScript 经常静默失败
+*   4.3 入门 JavaScript 的提示
 
 * * *
 
-## 4.1 JavaScript 的影响
+## 4.1 JavaScript 的影响
 
 当 JavaScript 在 1995 年创建时，它受到了多种编程语言的影响：
 
-* JavaScript 的语法很大程度上基于 Java。
-* JavaScript 的原型继承灵感来自 Self。
-* 闭包（Closures）和环境借自 Scheme。
-* AWK 影响了 JavaScript 的函数（包括 `function` 关键字）。
-* JavaScript 的字符串、数组和正则表达式参考了 Perl。
-* HyperTalk 启发了通过浏览器的 `onclick` 事件处理。
+*   JavaScript 的语法很大程度上基于 Java。
+*   JavaScript 的原型继承灵感来自 Self。
+*   闭包（Closures）和环境借自 Scheme。
+*   AWK 影响了 JavaScript 的函数（包括 `function` 关键字）。
+*   JavaScript 的字符串、数组和正则表达式参考了 Perl。
+*   HyperTalk 启发了通过浏览器的 `onclick` 事件处理。
 
 随着 ECMAScript 6，新的影响引入了 JavaScript：
 
-* 生成器（Generators）借自 Python。
-* 箭头函数的语法来自 CoffeeScript。
-* C++ 贡献了 `const` 关键字。
-* 解构赋值（Destructuring）受到 Lisp *解构绑定*（destructuring bind）的启发。
-* 模板字面量（Template literals）来自 E 语言（在其中被称为准字面量）。
+*   生成器（Generators）借自 Python。
+*   箭头函数的语法来自 CoffeeScript。
+*   C++ 贡献了 `const` 关键字。
+*   解构赋值（Destructuring）受到 Lisp *解构绑定*（destructuring bind）的启发。
+*   模板字面量（Template literals）来自 E 语言（在其中被称为准字面量）。
 
-## 4.2 JavaScript 的本质
+## 4.2 JavaScript 的本质
 
 这些是该语言的一些特征：
 
-* 它的语法属于 C 语言族的一部分（大括号等）。
-* 它是一门动态语言：大多数对象可以在运行时以各种方式更改，可以直接创建对象等。
-
-
-
-
-
+*   它的语法属于 C 语言族的一部分（大括号等）。
+*   它是一门动态语言：大多数对象可以在运行时以各种方式更改，可以直接创建对象等。
 *   它是一门动态类型语言：变量没有固定的静态类型，你可以给给定的（可变）变量赋值任何值。
 *   它具有函数式编程特性：一等函数、闭包、通过 `bind()` 实现的部分应用等。
 *   它具有面向对象的特性：可变状态、对象、继承、类等。
@@ -329,7 +275,7 @@ JavaScript 生态系统中充满了创新：实现用户界面的新方法、优
 *   JavaScript 是 Web 平台的一部分——它是内置在 浏览器中的语言。但它也被用于其他地方——例如在 Node.js 中用于服务器端以及 Shell 脚本。
 *   JavaScript 引擎通常会在底层优化效率较低的语言机制。例如，在原则上，JavaScript 的 `Arrays` 是字典。但在底层，如果数组具有连续索引，引擎会以连续的方式存储 `Arrays`。
 
-### 4.2.1 JavaScript 经常会静默失败
+### 4.2.1 JavaScript 经常会静默失败
 
 JavaScript 经常会静默失败。让我们来看两个例子。
 
@@ -349,7 +295,7 @@ Infinity
 
 静默失败的原因是历史性的：JavaScript 在 ECMAScript 3 之前没有异常机制。从那时起，设计者们一直试图避免静默失败。
 
-### 4.3 入门 JavaScript 的技巧
+### 4.3 入门 JavaScript 的技巧
 
 以下是一些帮助你开始学习 JavaScript 的技巧：
 
@@ -365,20 +311,20 @@ Infinity
     *   JavaScript 大议是与其他 JavaScript 程序员见面的另一种方便方式。
 *   阅读书籍和博客。网上有大量的免费资料！
 
-# 5 JavaScript 的历史与演变
+# 5 JavaScript 的历史与演变
 
-*   5.1 JavaScript 是如何创建的
-*   5.2 JavaScript 标准化
-*   5.3 ECMAScript 版本时间线
-*   5.4 Ecma 技术委员会 39 (TC39)
-*   5.5 TC39 流程
-    *   5.5.1 提示：按单个特性和阶段思考，而不是 ECMAScript 版本
-*   5.6 常见：TC39 流程
-    *   5.6.1 我喜欢的提议特性进展得如何？
-    *   5.6.2 有官方的 ECMAScript 特性列表吗？](#ch006.xhtml_is-there-an-official-list-of-ecmascript-features)
-*   5.7 演进中的 JavaScript：不要破坏 Web
+*   5.1 JavaScript 是如何创建的
+*   5.2 JavaScript 标准化
+*   5.3 ECMAScript 版本时间线
+*   5.4 Ecma 技术委员会 39 (TC39)
+*   5.5 TC39 流程
+    *   5.5.1 提示：按单个特性和阶段思考，而不是 ECMAScript 版本
+*   5.6 常见：TC39 流程
+    *   5.6.1 我喜欢的提议特性进展得如何？
+    *   5.6.2 有官方的 ECMAScript 特性列表吗？
+*   5.7 演进中的 JavaScript：不要破坏 Web
 
-## 5.1 JavaScript 是如何创建的
+## 5.1 JavaScript 是如何创建的
 
 JavaScript 是 1995 年 5 月在 10 天内由 Brendan Eich 创建的。Eich 在 Netscape 工作，并为他们的浏览器 `Netscape Navigator` 实现了 JavaScript。
 
@@ -390,7 +336,7 @@ JavaScript 是 1995 年 5 月在 10 天内由 Brendan Eich 创建的。Eich 在 
 *   在 Netscape Navigator 2.0 beta 版中（1995 年 9 月），它被称为 `LiveScript`。
 *   在 Netscape Navigator 2.0 beta 3 中（1995 年 12 月），它获得了最终名称 `JavaScript`。
 
-## 5.2 JavaScript 标准化
+## 5.2 JavaScript 标准化
 
 JavaScript 有两个标准：
 
@@ -408,7 +354,7 @@ JavaScript 有两个标准：
 
 因此，`ECMAScript 6` 是语言的一个版本。
 
-## 5.3 ECMAScript 时间线
+## 5.3 ECMAScript 时间线
 
 这是 ECMAScript 的简要时间线：
 
@@ -423,28 +369,24 @@ JavaScript 有两个标准：
 *   ECMAScript 2017 (2017 年 6 月)：第二个年度版本。
 *   随后的 ECMAScript 版本（ES2018 等）始终在 6 月通过。
 
-## 5.4 Ecma 技术委员会 39 (TC39)
+## 5.4 Ecma 技术委员会 39 (TC39)
 
 TC39 是演进 JavaScript 的委员会。严格来说，成员是公司：Adobe、Apple、Facebook、Google、Microsoft、Mozilla、Opera、Twitter 等。也就是说，通常是竞争对手的公司为了语言的利益共同努力。
 
 每两个月，TC39 会举行成员代表和受邀专家参加的会议。会议记录公开在 [GitHub 仓库](https://github.com/tc39/tc39-notes/) 中。
 
-
-
-
-
 ## 5.5 TC39 流程
 
 随着 ECMAScript 6 的出现，当时发布流程中的两个问题变得显而易见：
 
-* 如果发布之间的时间间隔过长，那么早期就绪的功能必须等待很长时间才能发布。而晚期就绪的功能则面临为了赶期限而仓发布的风险。
-* 特性通常在实现和使用很久以前设计好了。因此，与实现和使用相关的设计缺陷发现得太晚。
+*   如果发布之间的时间间隔过长，那么早期就绪的功能必须等待很长时间才能发布。而晚期就绪的功能则面临为了赶期限而仓发布的风险。
+*   特性通常在实现和使用很久以前设计好了。因此，与实现和使用相关的设计缺陷发现得太晚。
 
 针对这些问题，TC39 建立了新的 `TC39 流程`：
 
-* ECMAScript 特性独立设计，并经过多个阶段，从阶段 0（“草案”）开始，到阶段 4（“完成”）结束。
-* 特别后期阶段需要原型实现和真实世界的测试，导致了设计与实现之间的反馈循环。
-* ECMAScript 版本每年发布一次，包含所有在发布截止日期之前达到阶段 4 的功能。
+*   ECMAScript 特性独立设计，并经过多个阶段，从阶段 0（“草案”）开始，到阶段 4（“完成”）结束。
+*   特别后期阶段需要原型实现和真实世界的测试，导致了设计与实现之间的反馈循环。
+*   ECMAScript 版本每年发布一次，包含所有在发布截止日期之前达到阶段 4 的功能。
 
 结果是：更小、增量式的发布，其功能已经经过了现场测试。图 1 展示了 TC39 流程。
 
@@ -462,7 +404,7 @@ ES2016 是第一个根据 TC39 流程设计的 ECMAScript 版本。
 
 ## 5.6 FAQ：TC39 流程
 
-### 5.6.1 [我最喜欢的提议特性] 进展如何？
+### 5.6.1 我最喜欢的提议特性进展如何？
 
 如果你想知道各种提议特性处于什么阶段，请查阅 [GitHub 仓库 `proposals`](https://github.com/tc39/proposals)。
 
@@ -470,34 +412,36 @@ ES2016 是第一个根据 TC39 流程设计的 ECMAScript 版本。
 
 有的，TC39 仓库列出了[已完成提案](https://github.com/tc39/proposals/blob/master/finished-proposals.md)，并提到了它们是在哪些 ECMAScript 版本中引入的。
 
-## 5.7 演化的 JavaScript：不要破坏网页偶尔会出现一个想法是通过删除旧特性和缺陷来清理 JavaScript。虽然这个想法的吸引力显而易见，但它有巨大的副作用。
+## 5.7 演化的 JavaScript：不要破坏网页
+
+偶尔会出现一个想法是通过删除旧特性和缺陷来清理 JavaScript。虽然这个想法的吸引力显而易见，但它有巨大的副作用。
 
 假设我们创建了一个不后兼容的新 JavaScript 版本并修复了它所有的缺陷。结果，我们将遇到以下问题：
 
-* JavaScript 引擎变得臃肿：它们需要同时支持旧版本新版本。IDE 和构建工具也是如此。
-* 程序员需要知道并意识到版本之间的差异。
-* 你可以将所有现有代码迁移到新版本（这可能需要大量工作）。或者你可以混合版本，这样重构就会变得更困难，因为你无法在版本之间移动代码。
-* 你必须以某种方式为每段代码（无论是文件还是嵌入网页的代码）指定它是哪个版本。任何可能的解决方案都有优缺点。例如，`strict mode` 是 ES5 的一个稍微干净的版本。它没有想象中那样流行的原因之一是：通过文件或函数开头的指令来开启太麻烦了。
+*   JavaScript 引擎变得臃肿：它们需要同时支持旧版本新版本。IDE 和构建工具也是如此。
+*   程序员需要知道并意识到版本之间的差异。
+*   你可以将所有现有代码迁移到新版本（这可能需要大量工作）。或者你可以混合版本，这样重构就会变得更困难，因为你无法在版本之间移动代码。
+*   你必须以某种方式为每段代码（无论是文件还是嵌入网页的代码）指定它是哪个版本。任何可能的解决方案都有优缺点。例如，`strict mode` 是 ES5 的一个稍微干净的版本。它没有想象中那样流行的原因之一是：通过文件或函数开头的指令来开启太麻烦了。
 
 那么解决方案是什么？我们能既要鱼又要网子吗？为 ES6 选取的方法被称为“单一 JavaScript”：
 
-* 新版本始终向后兼容（但偶尔会有微小调整，几乎不是为了清理）。
-* 旧特性不会被删除或修复。相反，会引入它们的更好版本。一个例子是通过 `let` 声明变量——它是 `var` 的改进版本。
-* 如果语言的某些方面发生了更改，它是在新构造内部进行的。也就是说，你选择开启。例如，`yield` 仅在生成器（ES6 引入）内部是一个关键字。而且模块和类（均在 ES6 引入）中的所有代码都隐式处于严格模式。
+*   新版本始终向后兼容（但偶尔会有微小调整，几乎不是为了清理）。
+*   旧特性不会被删除或修复。相反，会引入它们的更好版本。一个例子是通过 `let` 声明变量——它是 `var` 的改进版本。
+*   如果语言的某些方面发生了更改，它是在新构造内部进行的。也就是说，你选择开启。例如，`yield` 仅在生成器（ES6 引入）内部是一个关键字。而且模块和类（均在 ES6 引入）中的所有代码都隐式处于严格模式。
 
-![](img/file7.svg) 练习
+![](img/file7.svg) **练习**
 
 查看测验。
 
 # 6 新的 JavaScript 特性
 
-* 6.1 ECMAScript 2021 新特性
-* 6.2 ECMAScript 2020 新特性
-* 6.3 ECMAScript 2019 新特性
-* 6.4 ECMAScript 2018 新特性
-* 6.5 ECMAScript 2017 新特性
-* 6.6 ECMAScript 2016 新特性
-* 6.7 本章来源
+*   6.1 ECMAScript 2021 新特性
+*   6.2 ECMAScript 2020 新特性
+*   6.3 ECMAScript 2019 新特性
+*   6.4 ECMAScript 2018 新特性
+*   6.5 ECMAScript 2017 新特性
+*   6.6 ECMAScript 2016 新特性
+*   6.7 本章来源
 
 ECMAScript 6 (ES2015) 是一次重大的发布，特性多到无法列出。后续发布中的新内容如下所示，按时间倒序排列。
 
@@ -505,26 +449,27 @@ ECMAScript 6 (ES2015) 是一次重大的发布，特性多到无法列出。后�
 
 ES2021 的特性集尚未最终确定。这些是已经达到阶段 4 并几乎会被包含的提案：
 
-* ``String.prototype.replaceAll()``
-* ``Promise.any()``
-* `WeakRefs`（超出本书范围，参见[提案](https://github.com/tc39/proposal-weakrefs)）
-* 逻辑赋值运算符
-* 下划线 (`_`) 作为 数字字面量 和 bigint 字面量 中的分隔符
+*   `String.prototype.replaceAll()`
+*   `Promise.any()`
+*   `WeakRefs`（超出本书范围，参见[提案](https://github.com/tc39/proposal-weakrefs)）
+*   逻辑赋值运算符
+*   下划线 (`_`) 作为 数字字面量 和 bigint 字面量 中的分隔符
 
 ## 6.2 ECMAScript 2020 新特性
 
 以下特性被添加到了 ECMAScript 2020 中：
 
-* ``String.prototype.matchAll()``
-* 通过 ``import()` 进行的动态导入
-* Bigints – 任意精度整数
-* ``Promise.allSettled()``
-* `globalThis`
-* `for-in` 机制（超出本书范围，参见[提案](https://github.com/tc39/proposal-for-in-order)）
-* 属性访问和方法调用的可选链
-* 空值合并运算符 (``??``](ch017.xhtml_nullish-coalescing-operator)
-* ``import.meta`
-* 命名空间重导出:
+*   `String.prototype.matchAll()`
+*   通过 `import()` 进行的动态导入
+*   Bigints – 任意精度整数
+*   `Promise.allSettled()`
+*   `globalThis`
+*   `for-in` 机制（超出本书范围，参见[提案](https://github.com/tc39/proposal-for-in-order)）
+*   属性访问和方法调用的可选链
+*   空值合并运算符 (`??`)
+*   `import.meta`
+*   命名空间重导出：
+
 ```javascript
 export * as ns from "mod";
 ```
@@ -533,46 +478,53 @@ export * as ns from "mod";
 
 以下特性被添加到了 ECMAScript 2019 中：
 
-* 可选的 `catch` 绑定
-* ``Symbol.prototype.description`
-* ``Object.fromEntries()``
-* 字符串方法：``trimStart()`` 和 ``trimEnd()``
-* 数组方法：``flatMap()`` 和 ``flat()``
+*   可选的 `catch` 绑定
+*   `Symbol.prototype.description`
+*   `Object.fromEntries()`
+*   字符串方法：`trimStart()` 和 `trimEnd()`
+*   数组方法：`flatMap()` 和 `flat()`
 
 这些新的 ES2019 特性超出了本书范围：
 
-* JSON 超集（参见 [2ality 博客文章](https://2ality.com/2019/01/json-superset.html)）
-* `Function.prototype.toString()` 修订（参见 [2ality 博客文章](https://2ality.com/2016/08/function-prototype-tostring.html)）
-* 良好的 `JSON.stringify()`（参见 [2ality 博客文章](https://2ality.com/2019/01/well-formed-stringify.html)）
+*   JSON 超集（参见 [2ality 博客文章](https://2ality.com/2019/01/json-superset.html)）
+*   `Function.prototype.toString()` 修订（参见 [2ality 博客文章](https://2ality.com/2016/08/function-prototype-tostring.html)）
+*   良好的 `JSON.stringify()`（参见 [2ality 博客文章](https://2ality.com/2019/01/well-formed-stringify.html)）
+*   `RegExp` 命名捕获组
+*   剩余属性（解构）, 展开到对象字面量
+*   `RegExp` 反向后行查找断言
+*   `RegExp` Unicode 属性转义符
+*   `Promise.prototype.finally()`
+*   异步迭代
 
+## 6.4 ECMAScript 2018 新特性
 
+以下特性被添加到了 ECMAScript 2018 中：
 
+*   正则表达式命名捕获组
+*   正则表达式反向后行查找断言
+*   正则表达式 Unicode 属性转义符
+*   `Promise.prototype.finally()`
+*   异步迭代
+*   剩余属性（解构）
+*   展开到对象字面量
 
-
-* `RegExp` 命名捕获组
-* 剩余属性（解构）, 展开到对象字面量
-* `RegExp` 反向后行查找断言
-* `RegExp` Unicode 属性转义符
-* `Promise.prototype.finally()`
-* 异步迭代
-
-## 6.5 ECMAScript 2017 的新特性
+## 6.5 ECMAScript 2017 新特性
 
 以下特性在 ECMAScript 2017 中新增的特性：
 
-* `Object.values()`, `Object.entries()`
-* 字符串填充：`.padStart()`](#ch023.xhtml_String.prototype.padStart) 和 `.padEnd()`](#ch023.xhtml_String.prototype.padEnd)
-* `Object.getOwnPropertyDescriptors()`（超出本书范围，请参阅[“深度 JavaScript”](https://exploringjs.com/deep-js/ch_property-attributes-intro.html#Object.getOwnPropertyDescriptors))
-* 函数参数列表和调用中的末尾逗号
-* 异步函数
-* 共享内存和原子操作（超出本书范围，请参阅[提案](https://github.com/tc39/ecmascript_sharedmem))
+*   `Object.values()`, `Object.entries()`
+*   字符串填充：`padStart()` 和 `padEnd()`
+*   `Object.getOwnPropertyDescriptors()`（超出本书范围，请参阅[“深度 JavaScript”](https://exploringjs.com/deep-js/ch_property-attributes-intro.html#Object.getOwnPropertyDescriptors)）
+*   函数参数列表和调用中的末尾逗号
+*   异步函数
+*   共享内存和原子操作（超出本书范围，请参阅[提案](https://github.com/tc39/ecmascript_sharedmem)）
 
-## 6.6 ECMAScript 2016 的新特性
+## 6.6 ECMAScript 2016 新特性
 
 以下特性在 ECMAScript 2016 中新增的特性：
 
-* `Array.prototype.includes()`
-* 幂运算符 (`**`)](#ch019.xhtml_binary-arithmetic-operators)
+*   `Array.prototype.includes()`
+*   幂运算符 (`**`)
 
 ## 6.7 本章来源
 
@@ -582,12 +534,13 @@ ECMAScript 特性列表取自 [TC39 关于已提案的页面](https://github.com
 
 * * *
 
-* 7.1 哪些是良好的 JavaScript 参考？
-* 7.2 我如何知道哪些地方支持哪些 JavaScript 特性？
-* 7.3 我可以在哪里查到计划中的 JavaScript 特性？
-* 7.4 为什么 JavaScript 经常会静默失败？
-* 7.5 为什么我们不能通过移除特殊习用和过时特性来清理 JavaScript？
-* 7.6 我如何快速尝试一段 JavaScript 代码？
+*   7.1 哪些是良好的 JavaScript 参考？
+*   7.2 我如何知道哪些地方支持哪些 JavaScript 特性？
+*   7.3 我可以在哪里查到计划中的 JavaScript 特性？
+*   7.4 为什么 JavaScript 经常会静默失败？
+*   7.5 为什么我们不能通过移除特殊习用和过时特性来清理 JavaScript？
+*   7.6 我如何快速尝试一段 JavaScript 代码？
+
 * * *
 
 ## 7.1 哪些是良好的 JavaScript 参考？
@@ -598,17 +551,17 @@ ECMAScript 特性列表取自 [TC39 关于已提案的页面](https://github.com
 
 本书通常会提到某项特性是属于 ECMAScript 5（旧浏览器要求）还是较新版本。有关更详细的信息（包括 ES5 之前的版本），网上有几个很好的兼容性表：
 
-* [各种引擎的 ECMAScript 兼容性表](http://kangax.github.io/compat-table/es5/)（由 [kangax](https://twitter.com/kangax), [webbedspace](https://twitter.com/webbedspace), [zloirock](https://twitter.com/zloirock) 维护）
-* [Node.js 兼容性表](https://node.green)（由 [William Kapke](https://twitter.com/williamkapke) 提供）
-* Mozilla 的 [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript) 为每个特性提供了表格，描述了相关的 ECMAScript 版本和浏览器支持。
-* ["Can I use…”](https://caniuse.com/) 文档记录了浏览器支持哪些特性（包括 JavaScript 语言特性）。
+*   [各种引擎的 ECMAScript 兼容性表](http://kangax.github.io/compat-table/es5/)（由 [kangax](https://twitter.com/kangax), [webbedspace](https://twitter.com/webbedspace), [zloirock](https://twitter.com/zloirock) 维护）
+*   [Node.js 兼容性表](https://node.green)（由 [William Kapke](https://twitter.com/williamkapke) 提供）
+*   Mozilla 的 [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript) 为每个特性提供了表格，描述了相关的 ECMAScript 版本和浏览器支持。
+*   ["Can I use…”](https://caniuse.com/) 文档记录了浏览器支持哪些特性（包括 JavaScript 语言特性）。
 
 ## 7.3 我可以在哪里查到计划中的 JavaScript 特性？
 
 请参阅以下来源：
 
-* §5.5 “TC39 流程 描述了如何规划即将推出的特性。
-* §5.6 “常见问题：TC39 流程 回答了关于即将特性的各种问题。
+*   §5.5 “TC39 流程 描述了如何规划即将推出的特性。
+*   §5.6 “常见问题：TC39 流程 回答了关于即将特性的各种问题。
 
 ## 7.4 为什么 JavaScript 经常会静默失败？
 
@@ -648,14 +601,14 @@ Infinity
 
 本书教授 JavaScript 语言。它专注于语言本身，但会偶而介绍一下可以使用 JavaScript 的两个平台：
 
-* 浏览器
-* Node.js
+*   浏览器
+*   Node.js
 
 Node.js 对 Web 开发非常重要，体现在以下三个方面：
 
-* 你可以使用它编写服务端软件。
-* 你还可以用它编写命令行软件（类似于 Unix Shell）。
-* Node 的软件仓库 `npm` 已成为安装工具（如编译器和构建工具）以及库的主流方式——即使对于客户端开发也是如此。
+*   你可以使用它编写服务端软件。
+*   你还可以用它编写命令行软件（类似于 Unix Shell）。
+*   Node 的软件仓库 `npm` 已成为安装工具（如编译器和构建工具）以及库的主流方式——即使对于客户端开发也是如此。
 
 ## 8.2 浏览器和 Node.js 的结构
 
@@ -663,68 +616,64 @@ Node.js 对 Web 开发非常重要，体现在以下三个方面：
 
 图 2：JavaScript 平台 *浏览器* 和 *Node.js* 的结构。API 和平台 API 托管在包含 JavaScript 引擎和特定的“核心”的基础层之上。
 
-* 基础层由 引擎和特定的“核心”功能组成。
-* 有两个 API 托管在其之上：标准库是 JavaScript 的一部分。平台 API 也可用——例如：
-    * 在浏览器中，如果你想进行任何与用户界面的操作（响应鼠标点击等），你需要使用平台 API。
-    * 在 Node.js 中，平台 API 允许读写文件、通过 HTTP 下载数据等。
+*   基础层由 引擎和特定的“核心”功能组成。
+*   有两个 API 托管在其之上：标准库是 JavaScript 的一部分。平台 API 也可用——例如：
+    *   在浏览器中，如果你想进行任何与用户界面的操作（响应鼠标点击等），你需要使用平台 API。
+    *   在 Node.js 中，平台 API 允许读写文件、通过 HTTP 下载数据等。
 
-8.3 JavaScript 参考
+## 8.3 JavaScript 参考
 
 当你对 JavaScript 有疑问时，网页搜索通常会有帮助。我推荐以下在线资源：
 
-* [MDN Web Docs](https://developer.mozilla.org/en-US/)：涵盖各种网络技术，如 CSS、HTML、JavaScript 等。极佳的参考。
-* [Node.js Docs](https://nodejs.org/en/docs/）：记录了 Node.js API。
-* [ExploringJS.com](https://exploringjs.com)：我关于 JavaScript 的书籍比本书更详细，并且可以免费阅读。你可以按 ECMAScript 版本查找特性：
-    * ES1–ES5：[*Speaking JavaScript*](http://speakingjs.com/)
-    * ES6：[*Exploring ES6*](https://exploringjs.com/es6.html)
-
-
-
-
-
-* ES2016–ES2017: [*探索 ES2016 和 ES2017*](https://exploringjs.com/es2016-es2017.html)
-* 等
+*   [MDN Web Docs](https://developer.mozilla.org/en-US/)：涵盖各种网络技术，如 CSS、HTML、JavaScript 等。极佳的参考。
+*   [Node.js Docs](https://nodejs.org/en/docs/)：记录了 Node.js API。
+*   [ExploringJS.com](https://exploringjs.com)：我关于 JavaScript 的书籍比本书更详细，并且可以免费阅读。你可以按 ECMAScript 版本查找特性：
+    *   ES1–ES5：[*Speaking JavaScript*](http://speakingjs.com/)
+    *   ES6：[*Exploring ES6*](https://exploringjs.com/es6.html)
+    *   ES2016–ES2017: [*探索 ES2016 和 ES2017*](https://exploringjs.com/es2016-es2017.html)
+    *   等
 
 ## 8.4 延伸阅读
 
-* §48 “后续步骤：Web 开发概述” 提供了更全面的 Web 开发视角。
+*   §48 “后续步骤：Web 开发概述” 提供了更全面的 Web 开发视角。
 
 # 9 语法
 
 * * *
 
-* 9.1 JavaScript 语法概述
-    * 9.1.1 基本构造结构
-    * 9.1.2 模块
-    * 9.1.3 类
-    * 9.1.4 异常处理
-    * 9.1.5 合法的变量和属性名
-    * 9.1.6 大小写风格
-    * 9.1.7 名称的大写规则
-    * 9.1.8 更多命名规范
-    * 9.1.9 分号应该放在哪里？
-* 9.2 (进阶）
-* 9.3 标识符
-    * 9.3.1 有效的标识符（变量名等）
-    * 9.3.2 保留字
-* 9.4 语句 vs. 表达式
-    * 9.4.1 语句
-    * 9.4.2 表达式
-    * 9.4.3 哪些地方允许做什么？
-* 9.5 歧义语法
-    * 9.5.1 相同语法：函数声明和函数表达式
-    * 9.5.2 相同语法：对象字面量和代码块
-    * 9.5.3 消除歧义
-* 9.6 分号
-    * 9.6.1 分号的经验法则
-    * 9.6.2 分号：控制语句
-* 9.7 自动分号插入 (ASI)
-    * 9.7.1 ASI 意外被触发
-    * 9.7.2 ASI 意外未被触发
-* 9.8 分号：最佳实践
-* 9.9 严格模式 vs. 宽散模式
-    * 9.9.1 开启严格模式
-    * 9.9.2 严格模式下的改进
+*   9.1 JavaScript 语法概述
+    *   9.1.1 基本构造结构
+    *   9.1.2 模块
+    *   9.1.3 类
+    *   9.1.4 异常处理
+    *   9.1.5 合法的变量和属性名
+    *   9.1.6 大小写风格
+    *   9.1.7 名称的大写规则
+    *   9.1.8 更多命名规范
+    *   9.1.9 分号应该放在哪里？
+*   9.2 (进阶)
+*   9.3 标识符
+    *   9.3.1 有效的标识符（变量名等）
+    *   9.3.2 保留字
+*   9.4 语句 vs. 表达式
+    *   9.4.1 语句
+    *   9.4.2 表达式
+    *   9.4.3 哪些地方允许做什么？
+*   9.5 歧义语法
+    *   9.5.1 相同语法：函数声明和函数表达式
+    *   9.5.2 相同语法：对象字面量和代码块
+    *   9.5.3 消除歧义
+*   9.6 分号
+    *   9.6.1 分号的经验法则
+    *   9.6.2 分号：控制语句
+*   9.7 自动分号插入 (ASI)
+    *   9.7.1 ASI 意外被触发
+    *   9.7.2 ASI 意外未被触发
+*   9.8 分号：最佳实践
+*   9.9 严格模式 vs. 宽散模式
+    *   9.9.1 开启严格模式
+    *   9.9.2 严格模式下的改进
+
 * * *
 
 ## 9.1 JavaScript 语法概述
@@ -735,168 +684,183 @@ Node.js 对 Web 开发非常重要，体现在以下三个方面：
 
 ### 9.1.1 基本构造结构
 
-### 9.1.1.1 注释
+#### 9.1.1.1 注释
 
-```
-[](#cb6-1)// 单行注释
-[](#cb6-2)
-[](#cb6-3)/*
-[](#cb6-4)
-[](#cb6-5)
-[](#cb6-6)*/
+```javascript
+// 单行注释
+
+/*
+ * 多行注释
+ */
 ```
 
-### 9.1.1.2 原始值
+#### 9.1.1.2 原始值
 
 **布尔值：**
-```
-[](#cb7-1)true
-[](#cb7-2)false
+
+```javascript
+true
+false
 ```
 
 **数字：**
-```
-[](#cb8-1)1.4
-[](#cb8-2)123
+
+```javascript
+1.4
+123
 ```
 
 **大整数 (Bigints):**
-```
-[](#cb9-1)1n
-[](#cb9-2)4n
+
+```javascript
+1n
+4n
 ```
 
 **字符串：**
-```
-[](#cb10-1)'abc'
-[](#cb10-2)"abc"
-[](#cb10-3)`abc`
+
+```javascript
+'abc'
+"abc"
+`abc`
 ```
 
-### 9.1.1.3 断言
+#### 9.1.1.3 断言
 
 `assertion`（断言）描述了结果应该是什么样的，如果结果不则抛出异常。例如，下面的 `assert.equal(7 + 1, 8)` 是有效的：
 
-```
-[](#cb11-1)assert.equal(7 + 1, 8);
+```javascript
+assert.equal(7 + 1, 8);
 ```
 
 `assert.equal()` 是一个接收两个参数的方法：实际结果和预期结果。它是断言 API 的一部分。
 
 `assert.deepEqual()` 对对象进行深度比较。
 
-### 9.1.1.4 打印到控制台
+#### 9.1.1.4 打印到控制台
 
 打印到标准输出或 Node.js：
-```
-[](#cb12-1)console.log('Hello!');
-[](#cb12-2)
+
+```javascript
+console.log('Hello!');
 ```
 
 打印到标准错误输出：
-```
-[](#cb12-3)console.error('Something went!');
+
+```javascript
+console.error('Something went!');
 ```
 
-### 9.1.1.5 运算符
+#### 9.1.1.5 运算符
 
-```
-[](#cb13-1)true
-[](#cb13-2)false
-```
 **与 (And)**
+
+```javascript
+true && false
 ```
-[](#cb13-3)true && false
-```
+
 **或 (Or)**
+
+```javascript
+true || false
 ```
-[](#cb13-4)true || false
-```
+
 **数字**
+
+```javascript
+3 + 4
+3 - 4
+3 * 4
+3 / 4
 ```
-[](#cb13-5)3 + 4
-[](#cb13-6)3 - 4
-[](#cb13-7)3 * 4
-[](#cb13-8)3 / 4
-```
+
 **大整数**
+
+```javascript
+3n + 4n
+3n - 4n
+3n * 4n
+3n / 4n
 ```
-[](#cb13-9)3n + 4n
-[](#cb13-10)3n - 4n
-[](#cb13-11)3n * 4n
-[](#cb13-12)3n / 4n
-```
+
 **字符串**
+
+```javascript
+'abc' + 'b'
+"ab"
+`abc`
 ```
-[](#cb13-13)'abc' + 'b'
-[](#cb13-14)"ab"
-[](#cb13-15)`abc`
-```
+
 **比较**
+
+```javascript
+3 < 4
+3 <= 4
+3 > 4
+3 >= 4
+3 === 4
+3 !== 4
+'abc' === 'abc'
+'abc' !== 'def'
 ```
-[](#cb13-16)3 < 4
-[](#cb13-17)3 <= 4
-[](#cb13-18)3 > 4
-[](#cb13-19)3 >= 4
-[](#cb13-20)3 === 4
-[](#cb13-21)3 !== 4
-[](#cb13-22)'abc' === 'abc'
-[](#cb13-23)'abc' !== 'def'
-```
+
 JavaScript 也有 `==` 比较。我建议使用严格相等。
 
-### 9.1.1.6 声明变量
+#### 9.1.1.6 声明变量
 
 `const` 创建*不可变的绑定*：变量必须立即初始化，之后不能重新赋值。但是，值本身可能是可变的。也就是说，`const` 并使值不可变。
 
-```
-[](#cb14-1)const x = 8; // 会导致 TypeError
+```javascript
+const x = 8; // 会导致 TypeError
 ```
 
 `let` 创建*可变的变量绑定*：
+
+```javascript
+let y;
+y = 5;
 ```
-[](#cb15-1)let y;
-[](#cb15-4)y = 5;
-```
+
 声明并初始化 `z`：
-```
-[](#cb15-8)let z = 5;
+
+```javascript
+let z = 5;
 ```
 
-### 9.1.1.7 普通函数声明
+#### 9.1.1.7 普通函数声明
 
-```
-[](#cb16-1)function add1(a, b) {
-[](#cb16-3)  return a + b;
+```javascript
+function add1(a, b) {
+  return a + b;
 }
-[](#cb16-6)assert.equal(add1(5, 2), 7);
+assert.equal(add1(5, 2), 7);
 ```
 
-### 9.1.1.8 箭头函数表达式
+#### 9.1.1.8 箭头函数表达式
 
 箭头函数表达式特别用于函数调用和方法调用的参数：
 
-```
-[](#cb17-1)const add2 = (a, b) => { return a + b };
-[](#cb17-3)assert.equal(add2(5, 2), 7);
+```javascript
+const add2 = (a, b) => { return a + b };
+assert.equal(add2(5, 2), 7);
 ```
 
 等同于 `add2`：
+
 ```javascript
-[](#cb17-6)const add3 = (a, b) => a + b;
+const add3 = (a, b) => a + b;
 ```
 
 之前的代码包含两个箭头函数（*表达式*和*语句*术语将在本章//主体为代码块的箭头函数
+
 (a, b) => { return a + b }
-[](#cb18-4)//主体为表达式的箭头函数
+
+//主体为表达式的箭头函数
+
 (a, b) => a + b
 ```
 
-### 9.1.1.9 纯对象
-
-
-
-
+#### 9.1.1.9 纯对象
 
 ```javascript
 // 通过对象字面量创建一个普通对象
@@ -910,6 +874,7 @@ const obj = {
 
 // 获取属性值
 assert.equal(obj.first, 'Jane');
+
 // 设置属性值
 obj.first = 'Janey';
 
@@ -917,7 +882,7 @@ obj.first = 'Janey';
 assert.equal(obj.getFullName(), 'Janey Doe');
 ```
 
-### 9.1.1.10 数组 (Arrays)
+#### 9.1.1.10 数组 (Arrays)
 
 ```javascript
 // 通过数组字面量创建数组
@@ -926,17 +891,17 @@ assert.equal(arr.length, 3);
 
 // 获取数组元素
 assert.equal(arr[1], 'b');
+
 // 设置数组元素
 arr[1] = 'β';
 
 // 向数组添加元素:
 arr.push('d');
-
 assert.deepEqual(
   arr, ['a', 'β', 'c', 'd']);
 ```
 
-### 9.1.1.11 控制流语句 (Control flow statements)
+#### 9.1.1.11 控制流语句 (Control flow statements)
 
 条件语句：
 
@@ -980,6 +945,7 @@ export function isTextFilePath(filePath) {
 ```javascript
 // 将整个模块作为命名空间对象 `path` 导入
 import * as path from 'path';
+
 // 导入 file-tools.mjs 中的单个导出
 import {isTextFilePath} from './file-tools.mjs';
 ```
@@ -1024,6 +990,7 @@ assert.equal(
 function throwsException() {
   throw new Error('Problem!');
 }
+
 function catchesException() {
   try {
     throwsException();
@@ -1141,7 +1108,7 @@ function func() {
 };
 ```
 
-**测验：基础级** 
+**测验：基础级**
 
 查看测验应用。
 
@@ -1194,10 +1161,6 @@ const $foo2 = true;
 
 > `Infinity` `NaN` `undefined` `async`
 
-
-
-
-
 ![](img/file5.svg) **我们假定只有语句和表达式**
 
 为了简单起见，我们假设 JavaScript 中只有语句和表达式。
@@ -1206,7 +1169,7 @@ const $foo2 = true;
 
 `statement`（语句）是可以执行并完成某种操作的代码段。例如，`if` 就是一个语句：
 
-```
+```javascript
 let myStr;
 if (myBool) {
   myStr = 'Yes';
@@ -1217,7 +1180,7 @@ if (myBool) {
 
 另一个语句的例子：函数声明。
 
-```
+```javascript
 function twice(x) {
   return x + x;
 }
@@ -1227,7 +1190,7 @@ function twice(x) {
 
 `expression`（表达式）是可以被*求值*并产生一个值的代码。例如，括号之间的代码就是一个表达式：
 
-```
+```javascript
 let myStr = (myBool ? 'Yes' : 'No');
 ```
 
@@ -1250,7 +1213,7 @@ JavaScript 源代码中的当前位置决定了你被允许使用何种语法结
 
 *   函数的体体必须是一系列语句：
 
-```
+```javascript
 function max(x, y) {
   if (x > y) {
     return x;
@@ -1262,7 +1225,7 @@ function max(x, y) {
 
 *   函数调用或方法调用的参数必须是表达式：
 
-```
+```javascript
 console.log('ab' + 'cd', Number('123'));
 ```
 
@@ -1270,7 +1233,7 @@ console.log('ab' + 'cd', Number('123'));
 
 下面的代码证明任何表达式 `bar()` 既可以是表达式也可以是语句——取决于上下文：
 
-```
+```javascript
 function f() {
   console.log(bar()); // bar() 是表达式
   bar(); // bar(); 是（表达式）语句 
@@ -1285,7 +1248,7 @@ JavaScript 有几种在语法上存在歧义的编程结构：相同的语法根
 
 `function declaration`（函数声明）是一个语句：
 
-```
+```javascript
 function id(x) {
   return x;
 }
@@ -1293,7 +1256,7 @@ function id(x) {
 
 `function expression`（函数表达式）是一个表达式（`=` 左的右侧）：
 
-```
+```javascript
 const id = function(x) {
   return x;
 };
@@ -1303,13 +1266,13 @@ const id = function(x) {
 
 在下面的代码中，`{}` 是一个*对象字面量*：创建一个空对象的表达式。
 
-```
+```javascript
 const obj = {};
 ```
 
 这是一个空代码块（语句）：
 
-```
+```javascript
 {}
 ```
 
@@ -1322,7 +1285,7 @@ const obj = {};
 
 为了消除歧义，以 `function` 或 `{` 开头的语句永远不会被解释为表达式。如果你想让一个表达式语句以这些标记之一开头，你必须将它包裹在括号中：
 
-```
+```javascript
 (function (x) { console.log(x) })('abc');
 // 输出:
 'abc'
@@ -1331,11 +1294,9 @@ const obj = {};
 在这段代码中：
 
 1.  我们首先通过函数表达式创建一个函数：
-
-```
-function (x) { console.log(x) }
-```
-
+    ```javascript
+    function (x) { console.log(x) }
+    ```
 2.  然后我们调用该函数：`('abc')`
 
 (1) 所示的代码片段之所以被解释为表达式，是因为我们将其包裹在了括号中。如果不这样做，我们将得到一个语法错误，因为那时 JavaScript 期望一个函数声明，并抱怨缺少名称。此外，你不能在函数声明之后紧跟一个函数调用。
@@ -1351,7 +1312,7 @@ function (x) { console.log(x) }
 
 每个语句都以分号结束：
 
-```
+```javascript
 const x = 3;
 someFunction('abc');
 i++;
@@ -1359,7 +1320,7 @@ i++;
 
 但以块结尾的语句除外：
 
-```
+```javascript
 function foo() {
   // ...
 }
@@ -1370,7 +1331,7 @@ if (y > 0) {
 
 以下情况稍显复杂：
 
-```
+```javascript
 const func = () => {}; // 分号！
 ```
 
@@ -1380,20 +1341,20 @@ const func = () => {}; // 分号！
 
 控制语句的体本身是一个语句。例如，这是 `while` 循环的语法：
 
-```
+```javascript
 while (condition)
   statement
 ```
 
 体可以是一个单一语句：
 
-```
+```javascript
 while (a > 0) a--;
 ```
 
 但块也是语句，因此是控制语句合法的体：
 
-```
+```javascript
 while (a > 0) {
   a--;
 }
@@ -1401,13 +1362,13 @@ while (a > 0) {
 
 如果你想让循环有一个空体，你的第一个选择是空语句（仅仅是一个分号）：
 
-```
+```javascript
 while(processNextItem() > 0);
 ```
 
 你的第二个选择是空块：
 
-```
+```javascript
 while(processNextItem() > 0) {}
 ```
 
@@ -1428,7 +1389,7 @@ ASI 的好消息是——如果你不依赖它并始终写分号——你只需�
 
 这种情况下在实践中意义最大的标记是 `return`。考虑以下代码：
 
-```
+```javascript
 return
 {
   first: 'jane'
@@ -1437,7 +1398,7 @@ return
 
 这段代码被解析为：
 
-```
+```javascript
 return;
 {
   first: 'jane';
@@ -1461,157 +1422,152 @@ JavaScript 为什么要这样做？它防止在 `return` 之后的行意外返�
 
 **例子 1：意外的函数调用。**
 
-```
+```javascript
 a = b + c
 (d + e).print()
 ```
 
 解析为：
 
-```
+```javascript
 a = b + c(d + e).print();
 ```
 
 **例子 2：意外的除法。**
 
-
-
-
-
-```
-[](#cb61-1)a = b
-[](#cb61-2)/hi/g.exec(c).map(d)
+```javascript
+a = b
+/hi/g.exec(c).map(d)
 ```
 
 解析为：
 
-```
-[](#cb62-1)a = b / hi / g.exec(c).map(d);
+```javascript
+a = b / hi / g.exec(c).map(d);
 ```
 
 **示例 3：** 意外的属性访问。
 
-```
-[](#cb63-1)someFunction()
-[](#cb63-2)['ul', 'ol'].map(x => x + x)
+```javascript
+someFunction()
+['ul', 'ol'].map(x => x + x)
 ```
 
 执行如下：
 
-```
-[](#cb64-1)const propKey = ('ul','ol'); // 逗号运算符
-[](#cb64-2)assert.equal(propKey, 'ol');
-[](#cb64-3)
-[](#cb64-4)someFunction()[propKey].map(x => x + x);
+```javascript
+const propKey = ('ul','ol'); // 逗号运算符
+assert.equal(propKey, 'ol');
+someFunction()[propKey].map(x => x + x);
 ```
 
-## 9.8 分号：最佳实践
+## 9.8 分号：最佳实践
 
 我建议你始终编写分号：
 
-- 我喜欢分号为代码带来的视觉结构——你可以清晰地看到语句何时结束。
-- 需要记住的规则更少。
-- 大多数 JavaScript 程序员都使用分号。
+*   我喜欢分号为代码带来的视觉结构——你可以清晰地看到语句何时结束。
+*   需要记住的规则更少。
+*   大多数 JavaScript 程序员都使用分号。
 
 然而，也有许多人不喜欢分号带来的视觉杂乱。如果你也是其中之一：不写分号的代码 `is` 是合法的。我建议你使用工具来帮助避免错误。以下是两个示例：
 
-- 自动代码格式化工具 [Prettier](https://prettier.io) 可以配置为不使用分号。它随后会自动修复问题。例如，如果它遇到以方括号开头的行，会在该行前加上一个分号。
-- 静态检查工具 [ESLint](https://eslint.org) 有一条[规则](https://eslint.org/docs/rules/semi)，可以让你指定偏好的样式（始终始终使用分号或尽可能少地使用分号），并在关键问题发出警告。
+*   自动代码格式化工具 [Prettier](https://prettier.io) 可以配置为不使用分号。它随后会自动修复问题。例如，如果它遇到以方括号开头的行，会在该行前加上一个分号。
+*   静态检查工具 [ESLint](https://eslint.org) 有一条[规则](https://eslint.org/docs/rules/semi)，可以让你指定偏好的样式（始终始终使用分号或尽可能少地使用分号），并在关键问题发出警告。
 
-## 9.9 严格模式 vs. 松散模式
+## 9.9 严格模式 vs. 松散模式
 
 从 ECMAScript 5 开始，JavaScript 有两种可执行模式：
 
-- 普通的“松散模式”（sloppy mode）是脚本的默认模式（作为模块的前身且受浏览器支持的代码片段）。
-- 严格模式（strict mode）是模块和类的默认模式，并可以在脚本中开启（如何开启将在后文解释）。在此模式下，消除了普通模式的几个陷阱，并会抛出更多异常。
+*   普通的“松散模式”（sloppy mode）是脚本的默认模式（作为模块的前身且受浏览器支持的代码片段）。
+*   严格模式（strict mode）是模块和类的默认模式，并可以在脚本中开启（如何开启将在后文解释）。在此模式下，消除了普通模式的几个陷阱，并会抛出更多异常。
 
 在现代 JavaScript 代码中很少遇到松散模式，它们几乎总是位于模块中。在书中，我假设严格模式始终开启开启。
 
-### 9.9.1 开启严格模式
+### 9.9.1 开启严格模式
 
 在脚本文件和 CommonJS 模块中，通过在第一行放置以下代码为整个文件开启严格模式：
 
-```
-[](#cb65-1)'use strict';
+```javascript
+'use strict';
 ```
 
 这个“指令”的之处在于，5 之前的 ECMAScript 版本会直接忽略它：它是一个无操作的表达式语句。
 
 你也可以为单个函数开启严格模式：
 
-```
-[](#cb66-1)function functionInStrictMode() {
-[](#cb66-2)  'use strict';
-[](#cb66-3)}
+```javascript
+function functionInStrictMode() {
+  'use strict';
+}
 ```
 
-### 9.9.2 严格模式的改进
+### 9.9.2 严格模式的改进
 
 让我们看看严格模式比松散模式更好的三件事。在本节中，所有代码片段都在松散模式下执行。
 
-#### 9.9.2.1 松散模式陷阱：修改未声明的变量会创建全局变量
+#### 9.9.2.1 松散模式陷阱：修改未声明的变量会创建全局变量
 
 在非严格模式下，修改未声明的变量会创建一个全局变量。
 
-```
-[](#cb67-1)function sloppyFunc() {
-[](#cb67-2)  undeclaredVar1 = 123;
-[](#cb67-3)}
-[](#cb67-4)sloppyFunc();
-[](#cb67-5)// 创建了全局变量 `undeclaredVar1`:
-[](#cb67-6)assert.equal(undeclaredVar1, 123);
+```javascript
+function sloppyFunc() {
+  undeclaredVar1 = 123;
+}
+sloppyFunc();
+// 创建了全局变量 `undeclaredVar1`:
+assert.equal(undeclaredVar1, 123);
 ```
 
 严格模式处理得更好，会抛出 `ReferenceError`。这使得检测拼写错误更容易。
 
-```
-[](#cb68-1)function strictFunc() {
-[](#cb68-2)  'use strict';
-[](#cb68-3)  undeclaredVar2 = 123;
-[](#cb68-4)}
-[](#cb68-5)assert.throws(
-[](#cb68-6)  () => strictFunc(),
-[](#cb68-7)  {
-[](#cb68-8)    name: 'ReferenceError',
-[](#cb68-9)    message: 'undeclaredVar2 is not defined',
-[](#cb68-10)  });
+```javascript
+function strictFunc() {
+  'use strict';
+  undeclaredVar2 = 123;
+}
+assert.throws(
+  () => strictFunc(),
+  {
+    name: 'ReferenceError',
+    message: 'undeclaredVar2 is not defined',
+  });
 ```
 
 `assert.throws()` 表示其第一个参数（一个函数）在调用时会抛出 `ReferenceError`。
 
-#### 9.9.2.2 函数声明在严格模式下是块作用域，松散模式下是函数作用域
+#### 9.9.2.2 函数声明在严格模式下是块作用域，松散模式下是函数作用域
 
 在严格模式下，通过函数声明创建的变量只存在于最内层的嵌套块中：
 
-```
-[](#cb69-1)function strictFunc() {
-[](#cb69-2)  'use strict';
-[](#cb69-3)  {
-[](#cb69-4)    function foo() { return 123 }
-[](#cb69-5)  }
-[](#cb69-6)  return foo(); // ReferenceError
-[](#cb69-7)}
-[](#cb69-8)assert.throws(
-[](#cb69-9)  () => strictFunc(),
-[](#cb69-10)  {
-[](#cb69-11)    name: 'ReferenceError',
-[](#cb69-12)    message: 'foo is not defined',
-[](#cb69-13)  });
+```javascript
+function strictFunc() {
+  'use strict';
+  {
+    function foo() { return 123 }
+  }
+  return foo(); // ReferenceError
+}
+assert.throws(
+  () => strictFunc(),
+  {
+    name: 'ReferenceError',
+    message: 'foo is not defined',
+  });
 ```
 
 在松散模式下，函数声明是函数作用域：
 
-```
-[](#cb70-1)function sloppyFunc() {
-[](#cb70-2)  {
-[](#cb70-3)    function foo() { return 123 }
-[](#cb70-4)  }
-[](#cb70-5)  return foo(); // 正常
-[](#cb70-6)}
-[](#cb70-7)assert.equal(sloppyFunc(), 123);
+```javascript
+function sloppyFunc() {
+  {
+    function foo() { return 123 }
+  }
+  return foo(); // 正常
+}
+assert.equal(sloppyFunc(), 123);
 ```
 
-#### 9.9.2.3 松散模式在修改只读属性时不抛出异常
+#### 9.9.2.3 松散模式在修改只读属性时不抛出异常
 
 在严格模式下，以下代码将抛出 `ReferenceError`：
 
@@ -1627,10 +1583,6 @@ var obj = { a: 1 };
 obj.a = 2;
 ```
 
-
-
-
-
 ![](img/file0.svg) **阅读：REPL 交互**
 
 我偶尔会通过 REPL 交互来演示 JavaScript。此外，我还会使用大于符号（`>`）来标记输入——例如：
@@ -1639,6 +1591,41 @@ obj.a = 2;
 > 3 + 5
 8
 ```
+
+# 10 尝试 JavaScript 代码
+
+*   10.1 尝试 JavaScript 代码
+    *   10.1.1 Node.js REPL
+    *   10.1.2 浏览器控制台
+    *   10.1.3 其他选项
+*   10.2 `console.*` API：打印数据及更多功能
+    *   10.2.1 打印值：`console.log()` (stdout)
+        *   10.2.1.1 打印多个值
+        *   10.2.1.2 打印带替换的字符串
+    *   10.2.2 打印错误信息：`console.error()` (stderr)
+    *   10.2.3 通过 `JSON.stringify()` 打印嵌套对象
+
+## 10.1 尝试 JavaScript 代码
+
+### 10.1.1 Node.js REPL
+
+安装 Node.js 后，你可以通过在命令行输入 `node` 来启动 REPL（Read-Eval-Print Loop，读取-求值-打印循环）。
+
+```
+> node
+Welcome to Node.js v14.15.0.
+Type ".help" for more information.
+> 3 + 5
+8
+> const x = 123
+undefined
+> x
+123
+```
+
+### 10.1.2 浏览器控制台
+
+所有现代浏览器都有开发者工具，其中包含一个 JavaScript 控制台。你可以在其中输入代码并查看结果。
 
 ### 10.1.3 其他选项
 
@@ -1666,19 +1653,19 @@ obj.a = 2;
 
 该操作有两个变体：
 
-```
-[](#cb74-1)console.log(...values: any[]): void
-[](#cb74-2)console.log(pattern: string, ...values: any[]): void
+```typescript
+console.log(...values: any[]): void
+console.log(pattern: string, ...values: any[]): void
 ```
 
 #### 10.2.1.1 打印多个值
 
 第一个变体在控制台上打印（值的文本表示形式）值：
 
-```
-[](#cb75-1)console.log('abc', 123, true);
-[](#cb75-2)// 输出:
-[](#cb75-3)// abc 123 true
+```javascript
+console.log('abc', 123, true);
+// 输出:
+// abc 123 true
 ```
 
 在最后，`console.log()` 总是打印一个换行符。因此，如果你带零参数调用它，它只会打印一个换行符。
@@ -1687,45 +1674,45 @@ obj.a = 2;
 
 第二个变体执行字符串替换：
 
-```
-[](#cb76-1)console.log('Test: %s %j', 123, 'abc');
-[](#cb76-2)// 输出:
-[](#cb76-3)// Test: 123 "abc"
+```javascript
+console.log('Test: %s %j', 123, 'abc');
+// 输出:
+// Test: 123 "abc"
 ```
 
 这些是你可以用于替换的一些指令：
 
 *   `%s` 将相应的值转换为字符串并将其插入。
 
-    ```
-    [](#cb77-1)console.log('%s %s', 'abc', 123);
-    [](#cb77-2)// 输出:
-    [](#cb77-3)// abc 123
-    ```
+```javascript
+console.log('%s %s', 'abc', 123);
+// 输出:
+// abc 123
+```
 
 *   `%o` 插入对象的字符串表示。
 
-    ```
-    [](#cb78-1)console.log('%o', {foo: 123, bar: 'abc'});
-    [](#cb78-2)// 输出:
-    [](#cb78-3)// { foo: 123, bar: 'abc' }
-    ```
+```javascript
+console.log('%o', {foo: 123, bar: 'abc'});
+// 输出:
+// { foo: 123, bar: 'abc' }
+```
 
 *   `%j` 将值转换为 JSON 字符串并将其插入。
 
-    ```
-    [](#cb79-1)console.log('%j', {foo: 123, bar: 'abc'});
-    [](#cb79-2)// 输出:
-    [](#cb79-3)// {"foo":123,"bar":"abc"}
-    ```
+```javascript
+console.log('%j', {foo: 123, bar: 'abc'});
+// 输出:
+// {"foo":123,"bar":"abc"}
+```
 
 *   `%%` 插入单个 `%`。
 
-    ```
-    [](#cb80-1)console.log('%s%%', 99);
-    [](#cb80-2)// 输出:
-    [](#cb80-3)// 99%
-    ```
+```javascript
+console.log('%s%%', 99);
+// 输出:
+// 99%
+```
 
 ### 10.2.2 打印错误信息：`console.error()` (stderr)
 
@@ -1735,8 +1722,8 @@ obj.a = 2;
 
 `JSON.stringify()` 偶尔对于打印嵌套对象很有用：
 
-```
-[](#cb81-1)console.log(JSON.stringify({first: 'Jane', last: 'Doe'}, null, 2));
+```javascript
+console.log(JSON.stringify({first: 'Jane', last: 'Doe'}, null, 2));
 ```
 
 输出：
@@ -1754,15 +1741,15 @@ obj.a = 2;
 *   11.2 断言在书中是如何被使用的
     *   11.2.1 通过断言在代码示例中记录结果
     *   11.2.2 通过断言实现测试驱动练习
-    *   11.3 普通比较与深层比较
-    *   11.4 断言 模块的快速参考
+*   11.3 普通比较与深层比较
+*   11.4 断言 模块的快速参考
 
 ## 11.1 软件开发中的断言
 
 在软件开发中，断言是关于值的必须正确的陈述。如果它们不成立，就会抛出异常。Node.js 支持通过[严格模式](https://nodejs.org/api/assert.html#strict_mode) 的 `assert` 使用断言——例如：
 
-```
-[](#cb83-1)import * as assert from 'assert/strict';
+```javascript
+import * as assert from 'assert/strict';
 ```
 
 ## 11.2 断言在书中是如何被使用的
@@ -1773,16 +1760,16 @@ obj.a = 2;
 
 在代码示例中，断言表达了预期的结果。例如，下面的函数：
 
-```
-[](#cb84-1)function id(x) {
+```javascript
+function id(x) {
   return x;
 }
 ```
 
 我们可以通过断言展示它：
 
-```
-[](#cb85-1)assert.equal(id('abc'), 'abc');
+```javascript
+assert.equal(id('abc'), 'abc');
 ```
 
 使用断言的动机是：
@@ -1794,8 +1781,8 @@ obj.a = 2;
 
 书中的练习是通过测试框架驱动的。下面是这样的测试示例：
 
-```
-[](#cb86-1)test('First exercise', () => {
+```javascript
+test('First exercise', () => {
   assert.equal(id('world'), 'Hello world!');
   assert.equal(id('Jane'), 'Hello Jane!');
   assert.equal(id('John'), 'Hello John!');
@@ -1803,10 +1790,15 @@ obj.a = 2;
 });
 ```
 
-更多信息，请参阅 12 “测验与练习`。
+更多信息，请参阅 12 “测验与练习”。
 
+## 11.3 普通比较与深层比较
 
+`assert.equal()` 使用 `===` 进行比较。
 
+`assert.deepEqual()` 使用深度比较。
+
+## 11.4 断言 模块的快速参考
 
 可选的最后一个参数 `message` 可用于解释断言的内容。如果断言失败，该消息将用于设置并抛出 `AssertionError`。
 
@@ -1814,12 +1806,22 @@ obj.a = 2;
 let e;
 try {
   const x = 3;
+```
+
+
+
   assert.equal(x, 8, 'x must be equal to 8')
+
 } catch (err) {
+
   assert.equal(
+
     String(err),
+
     'AssertionError [ERR_ASSERTION]: x must be equal to 8');
+
 }
+
 ```
 
 ### 11.4.2 深度等性
@@ -1830,9 +1832,11 @@ try {
 
 ```javascript
 assert.deepEqual([1,2,3], [1,2,3]);
+
 assert.deepEqual([], []);
 
 // 相比于 .equal()，对象仅与其自身相等：
+
 assert.notEqual([], []);
 ```
 
@@ -1911,7 +1915,7 @@ try {
 
 ![](img/file7.svg) **测试**
 
-查看 测验应用。
+查看测验应用。
 
 # 12 开始测验与练习
 
@@ -1969,7 +1973,7 @@ try {
 *   `id.mjs`（被测试的代码）
 *   `id_test.mjs`（测试）
 
-#### 12.3.1.1 第一部分：：代码
+#### 12.3.1.1 第一部分：代码
 
 代码本身位于 `id.mjs` 中：
 
@@ -1985,6 +1989,7 @@ export function id(x) {
 
 ```javascript
 import * as assert from 'assert';
+
 import {id} from './id.mjs';
 
 test('My test', () => {
@@ -1992,9 +1997,9 @@ test('My test', () => {
 });
 ```
 
+### 12.3.2 Mocha 中的异步测试
 
-
-
+#### 12.3.2.1 通过回调实现异步化
 
 ```javascript
 function divideCallback(x, y, callback) {
@@ -2006,7 +2011,7 @@ function divideCallback(x, y, callback) {
 }
 ```
 
-### 12.3.2.2��通过 Promise 实现异步化
+#### 12.3.2.2 通过 Promise 实现异步化
 
 如果测试返回一个 `Promise`，Mocha 会切换到基于 Promise 的异步处理。如果 `Promise` 已完成（fulfilled），则认为测试成功；如果 `Promise` 被拒绝（rejected）或处理时间超过超时时间，则测试失败。
 
@@ -2033,7 +2038,7 @@ function dividePromise(x, y) {
 }
 ```
 
-### 12.3.2.3��将 Async 函数作为测试“主体”
+#### 12.3.2.3 将 Async 函数作为测试"主体"
 
 Async 函数始终返回 `Promises`。因此，`async` 函数是实现异步测试的一种方便方式。以下代码与之前的示例等效。
 
@@ -2049,60 +2054,38 @@ test('dividePromise 2', async t => {
 
 # 13 变量与赋值
 
-### 13.1��`let`
-
-### 13.2��`const`
-
-#### 13.2.1��`const` 与不可变性
-
-#### 13.2.2��`const` 与循环
-
-### 13.3��在 `const` 和 `let` 之间做选择
-
-### 13.4��变量的作用域
-
-#### 13.4.1��变量遮蔽
-
-### 13.5��（进阶）
-
-### 13.6��术语：静态 vs. 动态
-
-#### 13.6.1��静态现象：变量的作用域
-
-#### 13.6.2��动态现象：函数调用
-
-### 13.7��全局变量与全局对象
-
-#### 13.7.1��`globalThis` [ES2020]
-
-### 13.8��声明：作用域与激活
-
-#### 13.8.1��`const` 和 `let`：暂性死区
-
-#### 13.8.2��函数声明与早期激活
-
-#### 13.8.3��类声明不会提早激活
-
-#### 13.8.4��`var`：提升（部分早期提升）
-
-### 13.9��闭包
-
-#### 13.9.1��绑定变量 vs. 自由变量
-
-#### 13.9.2��什么是闭包？
-
-#### 13.9.3��示例：递增器工厂
-
-#### 13.9.4��闭包的使用场景
+*   13.1 `let`
+*   13.2 `const`
+    *   13.2.1 `const` 与不可变性
+    *   13.2.2 `const` 与循环
+*   13.3 在 `const` 和 `let` 之间做选择
+*   13.4 变量的作用域
+    *   13.4.1 变量遮蔽
+*   13.5 （进阶）
+*   13.6 术语：静态 vs. 动态
+    *   13.6.1 静态现象：变量的作用域
+    *   13.6.2 动态现象：函数调用
+*   13.7 全局变量与全局对象
+    *   13.7.1 `globalThis` [ES2020]
+*   13.8 声明：作用域与激活
+    *   13.8.1 `const` 和 `let`：暂性死区
+    *   13.8.2 函数声明与早期激活
+    *   13.8.3 类声明不会提早激活
+    *   13.8.4 `var`：提升（部分早期提升）
+*   13.9 闭包
+    *   13.9.1 绑定变量 vs. 自由变量
+    *   13.9.2 什么是闭包？
+    *   13.9.3 示例：递增器工厂
+    *   13.9.4 闭包的使用场景
 
 这些是 JavaScript 声明变量的主要方式：
 
 * `let` 声明可变变量。
 * `const` 声明常量（不可变变量）。
 
-在 ES6 之前，还有 `var`。但它有许多怪癖，因此最好避免使用。你可以在《《 JavaScript》中阅读更多关于它的信息。
+在 ES6 之前，还有 `var`。但它有许多怪癖，因此最好避免使用。你可以在《JavaScript》中阅读更多关于它的信息。
 
-## 13.1��`let`
+## 13.1 `let`
 
 通过 `let` 声明的变量是可变的：
 
@@ -2119,12 +2102,13 @@ assert.equal(i, 1);
 let i = 0;
 ```
 
-## 13.2��`const`
+## 13.2 `const`
 
 通过 `const` 声明的变量是不可变的。你必须始终初始化：
 
 ```javascript
 const i = 0; // 必须初始化
+
 assert.throws(
   () => { i = i + 1 },
   {
@@ -2134,15 +2118,17 @@ assert.throws(
 );
 ```
 
-### 13.2.1��`const` 与不可变性
+### 13.2.1 `const` 与不可变性
 
 在 JavaScript 中，`const` 仅意味着绑定（变量名与变量值之间的关联）是不可变的。值本身可能是可变的，例如下面示例中的 `obj`。
 
 ```javascript
 const obj = { prop: 0 };
+
 // 允许：修改 obj 的属性
 obj.prop = obj.prop + 1;
 assert.equal(obj.prop, 1);
+
 // 不允许：给 obj 赋值
 assert.throws(
   () => { obj = {} },
@@ -2153,15 +2139,17 @@ assert.throws(
 );
 ```
 
-### 13.2.2��`const` 与循环
+### 13.2.2 `const` 与循环
 
 你可以在 `for-of` 循环中使用 `const`，其中每次迭代都会创建一个新的绑定：
 
 ```javascript
 const arr = ['hello', 'world'];
+
 for (const elem of arr) {
   console.log(elem);
 }
+
 // 输出：
 // 'hello'
 // 'world'
@@ -2171,13 +2159,14 @@ for (const elem of arr) {
 
 ```javascript
 const arr = ['hello', 'world'];
+
 for (let i=0; i<arr.length; i++) {
   const elem = arr[i];
   console.log(elem);
 }
 ```
 
-## 13.3��在 `const` 和 `let` 之间做选择
+## 13.3 在 `const` 和 `let` 之间做选择
 
 我建议遵循以下规则来选择 `const` 和 `let`：
 
@@ -2188,7 +2177,7 @@ for (let i=0; i<arr.length; i++) {
 
 `exercises/variables-assignment/const_exrc.mjs`
 
-## 13.4��变量的作用域
+## 13.4 变量的作用域
 
 变量的`作用域`是可以访问它的程序区域。考虑以下代码：
 
@@ -2196,10 +2185,12 @@ for (let i=0; i<arr.length; i++) {
 { // 作用域 A：访问 x
   const x = 0;
   assert.equal(x, 0);
+
   { // 作用域 B：访问 x, y
     const y = 1;
     assert.equal(x, 0);
     assert.equal(y, 1);
+
     { // 作用域 C：访问 x, y, z
       const z = 2;
       assert.equal(x, 0);
@@ -2208,6 +2199,7 @@ for (let i=0; i<arr.length; i++) {
     }
   }
 }
+
 // 外部：无法访问 x, y, z
 assert.throws(
   () => console.log(x),
@@ -2226,11 +2218,7 @@ assert.throws(
 
 通过 `const` 和 `let` 声明的变量被称为*块级作用域*，因为它们的作用域始终是最内层的块。
 
-### 13.4.1��变量遮蔽
-
-
-
-
+### 13.4.1 变量遮蔽
 
 ```javascript
 assert.throws(
@@ -2246,17 +2234,19 @@ assert.throws(
 
 ![](img/file5.svg) **为什么使用 `eval()`？**
 
-`eval()`` 延迟了解析（因此延迟了 `SyntaxError`），直到 `assert.throws()` 的回调被执行。如果不使用它，在解析这段代码时就会报错，导致 `assert.throws()` 甚至不会执行。
+`eval()` 延迟了解析（因此延迟了 `SyntaxError`），直到 `assert.throws()` 的回调被执行。如果不使用它，在解析这段代码时就会报错，导致 `assert.throws()` 甚至不会执行。
 
 然而，你可以在块中嵌套并使用与块外部相同的变量名 `x`：
 
 ```javascript
 const x = 1;
 assert.equal(x, 1);
+
 {
   const x = 2;
   assert.equal(x, 2);
 }
+
 assert.equal(x, 1);
 ```
 
@@ -2270,7 +2260,7 @@ assert.equal(x, 1);
 
 所有剩余章节均为高级内容。
 
-## 13.6 术语：静态与 动态
+## 13.6 术语：静态与动态
 
 这两个形容词描述了编程语言中的现象：
 
@@ -2333,6 +2323,7 @@ JavaScript 的变量作用域是嵌套的。它们形成了一棵树：
   const declarativeVariable = 'd';
   var objectVariable = 'o';
 </script>
+
 <script>
   // 所有脚本共享同一个顶层作用域：
   console.log(declarativeVariable); // 'd'
@@ -2344,21 +2335,19 @@ JavaScript 的变量作用域是嵌套的。它们形成了一棵树：
 </script>
 ```
 
+## 13.8 声明：作用域与激活
 
-
-
-
-`import` 的描述参见 §29.5 “ECMAScript modules”。接下来的章节将更详细地描述其他构造。
+`import` 的描述参见 §29.5 "ECMAScript modules"。接下来的章节将更详细地描述其他构造。
 
 ### 13.8.1 `const` 和 `let`：暂时性死区
 
 对于 JavaScript，TC39 需要决定在直接作用域内、在声明之前访问一个常量会发生什么：
 
-```
-[](#cb122-1){
-[](#cb122-2)  console.log(x); // 这里会发生什么？
-[](#cb122-3)  const x;
-[](#cb122-4)}
+```javascript
+{
+  console.log(x); // 这里会发生什么？
+  const x;
+}
 ```
 
 一些可能的方法有：
@@ -2381,31 +2370,31 @@ JavaScript 的变量作用域是嵌套的。它们形成了一棵树：
 
 以下代码说明了暂时性死区：
 
-```
-[](#cb123-1)if (true) { // 进入 `tmp` 的作用域，TDZ 开始
-[](#cb123-2)  // `tmp` 是未初始化的：
-[](#cb123-3)  assert.throws(() => (tmp = 'abc'), ReferenceError);
-[](#cb123-4)  assert.throws(() => console.log(tmp), ReferenceError);
-[](#cb123-5)
-[](#cb123-6)  let tmp; // TDZ 结束
-[](#cb123-7)  assert.equal(tmp, undefined);
-[](#cb123-8)}
+```javascript
+if (true) { // 进入 `tmp` 的作用域，TDZ 开始
+  // `tmp` 是未初始化的：
+  assert.throws(() => (tmp = 'abc'), ReferenceError);
+  assert.throws(() => console.log(tmp), ReferenceError);
+
+  let tmp; // TDZ 结束
+  assert.equal(tmp, undefined);
+}
 ```
 
 下一个示例显示了暂时性死区真的是`暂时性的`（与时间有关）：
 
-```
-[](#cb124-1)if (true) { // 进入 `myVar` 的作用域，TDZ 开始
-[](#cb124-2)  const func = () => {
-[](#cb124-3)    console.log(myVar); // 后执行
-[](#cb124-4)  };
-[](#cb124-5)
-[](#cb124-6)  // 我们处于 TDZ 之中：
-[](#cb124-7)  // 访问 `myVar` 会导致 `ReferenceError`
-[](#cb124-8)
-[](#cb124-9)  let myVar = 3; // TDZ 结束
-[](#cb124-10)  func(); // OK，在 TDZ 外部调用
-[](#cb124-11)}
+```javascript
+if (true) { // 进入 `myVar` 的作用域，TDZ 开始
+  const func = () => {
+    console.log(myVar); // 后执行
+  };
+
+  // 我们处于 TDZ 之中：
+  // 访问 `myVar` 会导致 `ReferenceError`
+
+  let myVar = 3; // TDZ 结束
+  func(); // OK，在 TDZ 外部调用
+}
 ```
 
 尽管 `func()` 位于 `myVar` 声明之前并使用了该变量，但我们仍然调用 `func()`。但我们必须等到 `myVar` 的暂时性死区结束。
@@ -2414,42 +2403,42 @@ JavaScript 的变量作用域是嵌套的。它们形成了一棵树：
 
 ![](img/file0.svg) 关于函数的更多信息
 
-在这一节中，我们正在使用函数——在我们还没有机会正确学习它们之前。希望一切仍然通顺的。每当不通顺时，请参 §27 “可调用值”。
+在这一节中，我们正在使用函数——在我们还没有机会正确学习它们之前。希望一切仍然通顺的。每当不通顺时，请参 §27 "可调用值"。
 
 函数声明在进入其作用域时总是会被执行，无论它位于该作用域内的什么位置。这使得你可以在声明之前之前调用函数 `foo()`：
 
-```
-[](#cb125-1)assert.equal(foo(), 123); // OK
-[](#cb125-2)function foo() { return 123; }
+```javascript
+assert.equal(foo(), 123); // OK
+function foo() { return 123; }
 ```
 
 `foo()` 的早期激活意味着之前的代码等同于：
 
-```
-[](#cb126-1)function foo() { return 123; }
-[](#cb126-2)assert.equal(foo(), 123);
+```javascript
+function foo() { return 123; }
+assert.equal(foo(), 123);
 ```
 
 如果你通过 `const` 或 `let` 声明函数，它就不会被早期激活。在下面的示例中，你只能在声明后使用 `bar()`。
 
-```
-[](#cb127-1)assert.throws(
-[](#cb127-2)  () => bar(), // 声明前
-[](#cb127-3)  ReferenceError);
-[](#cb127-4)
-[](#cb127-5)const bar = () => { return 123; };
-[](#cb127-6)assert.equal(bar(), 123); // 声明后
+```javascript
+assert.throws(
+  () => bar(), // 声明前
+  ReferenceError);
+
+const bar = () => { return 123; };
+assert.equal(bar(), 123); // 声明后
 ```
 
 #### 13.8.2.1 提前提前调用
 
 即使函数 `g()` 没有早期激活，只要我们遵循以下规则：`f()` 必须在 `g()` 声明之后调用，就可以在同一作用域内由前面的函数 `f()` 调用。
 
-```
-[](#cb128-1)const f = () => g();
-[](#cb128-2)const g = () => 123;
-[](#cb128-3)// 我们在 g() 声明后调用 f()
-[](#cb128-4)assert.equal(f(), 123);
+```javascript
+const f = () => g();
+const g = () => 123;
+// 我们在 g() 声明后调用 f()
+assert.equal(f(), 123);
 ```
 
 模块的函数通常在执行完毕后被调用。因此，在模块中很少需要担心函数的顺序。最后，注意早期激活：进入作用域时，先执行所有的声明。
@@ -2458,14 +2447,14 @@ JavaScript 的变量作用域是嵌套的。它们形成了一棵树：
 
 如果你依赖早期激活在声明之前调用函数，那么需要注意它是早期激活的。
 
-```
-[](#cb129-1)funcDecl();
-[](#cb129-2)const MY_STR = 'abc';
-[](#cb129-3)function funcDecl() {
-[](#cb129-4)  assert.throws(
-[](#cb129-5)    () => MY_STR,
-[](#cb129-6)    ReferenceError);
-[](#cb129-7)}
+```javascript
+funcDecl();
+const MY_STR = 'abc';
+function funcDecl() {
+  assert.throws(
+    () => MY_STR,
+    ReferenceError);
+}
 ```
 
 如果你在 `MY_STR` 声明之后调用 `funcDecl()`，问题就会消失。
@@ -2478,25 +2467,25 @@ JavaScript 的变量作用域是嵌套的。它们形成了一棵树：
 
 尽管它们在某些方面与函数声明相似，但类声明并没有早期激活：
 
-```
-[](#cb130-1)assert.throws(
-[](#cb130-2)  () => new MyClass(),
-[](#cb130-3)  ReferenceError);
-[](#cb130-4)class MyClass {}
-[](#cb130-5)assert.equal(new MyClass() instanceof MyClass, true);
+```javascript
+assert.throws(
+  () => new MyClass(),
+  ReferenceError);
+class MyClass {}
+assert.equal(new MyClass() instanceof MyClass, true);
 ```
 
 为什么这样？考虑下面的类声明：
 
-```
-[](#cb131-1)class MyClass extends Object
+```javascript
+class MyClass extends Object
 ```
 
 `extends` 的操作数是一个表达式。因此，你可以这样做：
 
-```
-[](#cb132-1)const identity = x => x;
-[](#cb132-2)class MyClass extends identity {}
+```javascript
+const identity = x => x;
+class MyClass extends identity {}
 ```
 
 评估这样的表达式必须在提到它的位置进行。否则会引起混乱。这解释了为什么类声明没有早期激活。
@@ -2505,8 +2494,8 @@ JavaScript 的变量作用域是嵌套的。它们形成了一棵树：
 
 `var` 是一种旧的声明方式，早于 `const` 和 `let`（现在更推荐它们）。考虑下面的 `var` 声明：
 
-```
-[](#cb133-1)var x = 123;
+```javascript
+var x = 123;
 ```
 
 这个声明包含两个部分：
@@ -2516,18 +2505,18 @@ JavaScript 的变量作用域是嵌套的。它们形成了一棵树：
 
 以下代码演示了 `var` 的影响：
 
-```
-[](#cb134-1)function f() {
-[](#cb134-2)  // 部分早期激活：
-[](#cb134-3)  assert.equal(x, undefined);
-[](#cb134-4)  if (true) {
-[](#cb134-5)    var x = 123;
-[](#cb134-6)    // 赋值在原处执行：
-[](#cb134-7)    assert.equal(x, 123);
-[](#cb134-8)  }
-[](#cb134-9)  // 作用域是函数，而不是块：
-[](#cb134-10)  assert.equal(x, 123);
-[](#cb134-11)}
+```javascript
+function f() {
+  // 部分早期激活：
+  assert.equal(x, undefined);
+  if (true) {
+    var x = 123;
+    // 赋值在原处执行：
+    assert.equal(x, 123);
+  }
+  // 作用域是函数，而不是块：
+  assert.equal(x, 123);
+}
 ```
 
 ## 13.9 闭包
@@ -2543,23 +2532,20 @@ JavaScript 的变量作用域是嵌套的。它们形成了一棵树：
 
 考虑下面的代码：
 
+```javascript
+function func(x) {
+  const y = 123;
+  console.log(z);
+}
 ```
-[](#cb135-1)function func(x) {
-[](#cb135-2)  const y = 123;
-[](#cb135-3)  console.log(z);
-[](#cb135-4)}
-```
-
-
-
 
 在 `func()` 的体中，`x` 和 `y` 是绑定变量。`z` 是一个自由变量。
 
-### 13.9.2 什么是闭包？
+### 13.9.2 什么是闭包？
 
 那么什么是闭包呢？
 
-> *闭包*是一个函数加上一个对在其“出生地”存在的变量的连接。
+> *闭包*是一个函数加上一个对在其"出生地"存在的变量的连接。
 
 保持这种连接的意义何在？它为函数的自由变量提供了值——例如：
 
@@ -2574,13 +2560,13 @@ const func = funcFactory('abc');
 assert.equal(func(), 'abc'); // (A)
 ```
 
-`funcFactory` 返回一个赋值给 `func` 的闭包。由于 `func` 拥有到其出生地变量的连接，因此当它在第 A 行被调用时，它仍然可以访问自由变量 `value`（尽管它“逃逸”了它的作用域）。
+`funcFactory` 返回一个赋值给 `func` 的闭包。由于 `func` 拥有到其出生地变量的连接，因此当它在第 A 行被调用时，它仍然可以访问自由变量 `value`（尽管它"逃逸"了它的作用域）。
 
 ![](img/file2.svg) **JavaScript 中的所有函数都是闭包**
 
 JavaScript 通过闭包支持静态作用域。因此，每个函数都是闭包。
 
-### 13.9.3 示例：一个自增器工厂
+### 13.9.3 示例：一个自增器工厂
 
 以下函数返回*自增器*（我刚刚起起的名称）。自增器是一个内部存储一个数字的函数。当它被调用时，它通过将参数加上数字来更新该数字并返回新值。
 
@@ -2591,6 +2577,7 @@ function createInc(startValue) {
     return startValue;
   };
 }
+
 const inc = createInc(5);
 assert.equal(inc(2), 7);
 ```
@@ -2615,7 +2602,7 @@ assert.deepEqual(inc(2), [1, 9]);
 assert.deepEqual(inc(2), [2, 11]);
 ```
 
-### 13.9.4 闭包的用例
+### 13.9.4 闭包的用例
 
 闭包有什么用？
 
@@ -2648,94 +2635,94 @@ assert.deepEqual(inc(2), [2, 11]);
 
 ![](img/file0.svg) **辅助工具：`===`**
 
-在本章中，我们将偶尔使用严格相等运算符。如果 `a` 和 `b` 相等，则 `a === b` 结果为 `true`。其具体含义在 §15.4.2 “严格相等 (`===`)” 中解释。
+在本章中，我们将偶尔使用严格相等运算符。如果 `a` 和 `b` 相等，则 `a === b` 结果为 `true`。其具体含义在 §15.4.2 "严格相等 (`===`)" 中解释。
 
-14.1 什么是类型？
-
-在本章中，我们将检查 JavaScript 有哪些类型的值。
-
-![](img/file0.svg) **辅助工具：`===`**
-
-在本章中，我们将偶尔使用严格相等运算符。如果 `a` 和 `b` 相等，则 `a === b` 结果为 `true`。其具体含义在 §15.4.2 “严格相等 (`===`)” 中解释。
-
-14.2 JavaScript 的类型层次结构
+## 14.1 什么是类型？
 
 在本章中，我们将检查 JavaScript 有哪些类型的值。
 
 ![](img/file0.svg) **辅助工具：`===`**
 
-在本章中，我们将偶尔使用严格相等运算符。如果 `a` 和 `b` 相等，则 `a === b` 结果为 `true`。其具体含义在 §15.4.2 “严格相等 (`===`)” 中解释。
+在本章中，我们将偶尔使用严格相等运算符。如果 `a` 和 `b` 相等，则 `a === b` 结果为 `true`。其具体含义在 §15.4.2 "严格相等 (`===`)" 中解释。
 
+## 14.2 JavaScript 的类型层次结构
 
+在本章中，我们将检查 JavaScript 有哪些类型的值。
 
+![](img/file0.svg) **辅助工具：`===`**
 
-```
-[](#cb139-1)let str = 'abc';
-[](#cb139-2)assert.equal(str.length, 3);
-[](#cb139-3)assert.throws(
-[](#cb139-4)  () => { str.length = 1 },
-[](#cb139-5)  /^TypeError: Cannot assign to read only property 'length'//
-[](#cb139-6));
+在本章中，我们将偶尔使用严格相等运算符。如果 `a` 和 `b` 相等，则 `a === b` 结果为 `true`。其具体含义在 §15.4.2 "严格相等 (`===`)" 中解释。
+
+### 14.4.1.1 原始值是不可变的
+
+```javascript
+let str = 'abc';
+assert.equal(str.length, 3);
+
+assert.throws(
+  () => { str.length = 1 },
+  /^TypeError: Cannot assign to read only property 'length'/
+);
 ```
 
 ### 14.4.1.2 基本类型按值传递
 
 基本类型是`按值传递的`：变量（包括参数）存储基本类型的内容。当将基本类型值赋值给变量或将其作为参数传递给函数时，其内容会被复制。
 
-```
-[](#cb140-1)let x = 123;
-[](#cb140-2)let y = x;
-[](#cb140-3)assert.equal(y, 123);
+```javascript
+let x = 123;
+let y = x;
+assert.equal(y, 123);
 ```
 
 ### 14.4.1.3 基本类型按值比较
 
 基本类型是`按值比较的`：当比较两个基本类型值时，我们比较它们的内容。
 
-```
-[](#cb141-1)assert.equal(123 === 123, true);
-[](#cb141-2)assert.equal('abc' === 'abc', true);
+```javascript
+assert.equal(123 === 123, true);
+assert.equal('abc' === 'abc', true);
 ```
 
 要了解这种比较方式的特殊之处，请继续阅读并了解对象是如何比较的。
 
 ## 14.4.2 对象
 
-对象在 [§30 “单个对象”]]以及后续章节中会有详细介绍。在这里，我们主要关注它们与基本类型值的区别。
+对象在 [§30 "单个对象"]]以及后续章节中会有详细介绍。在这里，我们主要关注它们与基本类型值的区别。
 
 让我们先探索创建对象的两种常见方式：
 
 *   对象字面量：
 
-    ```
-[](#cb142-1)const obj = {
-[](#cb142-2)  first: 'Jane',
-[](#cb142-3)  last: 'Doe',
-[](#cb142-4)};
+    ```javascript
+    const obj = {
+      first: 'Jane',
+      last: 'Doe',
+    };
     ```
 
-    对象字面量以大括号 `{}` 开始和结束。它创建了一个具有两个属性的对象。第一个属性的键为 `'first'`（一个字符串），值为 `'Jane'`。第二个属性的键为 `'last'`，值为 `'Doe'`。有关对象字面量的更多信息，请参考 [§30.2.1 “对象字面量：属性”]。
+    对象字面量以大括号 `{}` 开始和结束。它创建了一个具有两个属性的对象。第一个属性的键为 `'first'`（一个字符串），值为 `'Jane'`。第二个属性的键为 `'last'`，值为 `'Doe'`。有关对象字面量的更多信息，请参考 [§30.2.1 "对象字面量：属性"]。
 
 *   数组字面量：
 
-    ```
-[](#cb143-1)const fruits = ['strawberry', 'apple'];
+    ```javascript
+    const fruits = ['strawberry', 'apple'];
     ```
 
-    数组字面量以方括号 `[]` 开始和结束。它创建了一个包含两个元素的 `Array`：`'strawberry'` 和 `'apple'`。有关数组字面量的更多信息，请参考 [§33.2.1 “创建、读取、写入数组”]。
+    数组字面量以方括号 `[]` 开始和结束。它创建了一个包含两个元素的 `Array`：`'strawberry'` 和 `'apple'`。有关数组字面量的更多信息，请参考 [§33.2.1 "创建、读取、写入数组"]。
 
 ### 14.4.2.1 对象默认是可变的
 
 默认情况下，你可以自由地更改、添加和删除对象的属性：
 
-```
-[](#cb144-1)const obj = {};
-[](#cb144-2)
-[](#cb144-3)obj.count = 2; // 添加一个属性
-[](#cb144-4)assert.equal(obj.count, 2);
-[](#cb144-5)
-[](#cb144-6)obj.count = 3; // 修改一个属性
-[](#cb144-7)assert.equal(obj.count, 3);
+```javascript
+const obj = {};
+
+obj.count = 2; // 添加一个属性
+assert.equal(obj.count, 2);
+
+obj.count = 3; // 修改一个属性
+assert.equal(obj.count, 3);
 ```
 
 ### 14.4.2.2 对象按身份传递
@@ -2746,73 +2733,71 @@ assert.deepEqual(inc(2), [2, 11]);
 
 当将对象赋值给变量或将其作为参数传递给函数时，它的身份会被复制。每个对象字面量都会在堆上创建一个新的对象并返回其身份。
 
-```
-[](#cb145-1)const a = {}; // 新的空对象
-[](#cb145-2)// 将 `a` 中的身份传递给 `b`:
-[](#cb145-3)const b = a;
-[](#cb145-4)
-[](#cb145-5)// 现在 `a` 和 `b` 指向同一个对象
-[](#cb145-6)// (它们“共享”那个对象):
-[](#cb145-7)assert.equal(a === b, true);
-[](#cb145-8)
-[](#cb145-9)// 修改 `a` 也会改变 `b`:
-[](#cb145-10)a.name = 'Tessa';
-[](#cb145-11)assert.equal(b.name, 'Tessa');
+```javascript
+const a = {}; // 新的空对象
+// 将 `a` 中的身份传递给 `b`:
+const b = a;
+
+// 现在 `a` 和 `b` 指向同一个对象
+// (它们"共享"那个对象):
+assert.equal(a === b, true);
+
+// 修改 `a` 也会改变 `b`:
+a.name = 'Tessa';
+assert.equal(b.name, 'Tessa');
 ```
 
 JavaScript 使用`垃圾回收`来自动管理内存：
 
-```
-[](#cb146-1)let obj = { prop: 'value' };
-[](#cb146-2)obj = {};
+```javascript
+let obj = { prop: 'value' };
+obj = {};
 ```
 
 现在 `obj` 的旧值 `{ prop: 'value' }` 是`垃圾`（不再使用）。JavaScript 会在某个时间自动对其进行`垃圾回收`（将其从内存中移除），如果空闲内存足够，可能永远不会执行。
 
 ![](img/file5.svg) **详情：按身份传递**
 
-
-
-
+### 14.6.1 与原始类型相关的构造函数
 
 *   `Number.prototype` 为数字提供了属性——例如，方法 `.toString()`：
 
-```
-[](#cb154-1)assert.equal((123).toString, Number.prototype.toString);
+```javascript
+assert.equal((123).toString, Number.prototype.toString);
 ```
 
 *   `Number` 是一个用于数字工具函数的命名空间/容器对象——例如：
 
-```
-[](#cb155-1)assert.equal(Number.isInteger(123), true);
+```javascript
+assert.equal(Number.isInteger(123), true);
 ```
 
 *   最后，你也可以将 `Number` 作为类来创建数字对象。这些对象与真实的数字不同，应该避免使用。
 
-```
-[](#cb156-1)assert.notEqual(new Number(123), 123);
-[](#cb156-2)assert.equal(new Number(123).valueOf(), 123);
+```javascript
+assert.notEqual(new Number(123), 123);
+assert.equal(new Number(123).valueOf(), 123);
 ```
 
-#### 14.6.1.1 包装原始值
+#### 14.6.1.1 包装原始值
 
-与原始类型相关的构造函数也称为`包装类型`（wrapper types），因为它们提供了将原始值转换为对象的规范方法。在此过程中，原始值被“包装”在对象内部中。
+与原始类型相关的构造函数也称为`包装类型`（wrapper types），因为它们提供了将原始值转换为对象的规范方法。在此过程中，原始值被"包装"在对象内部中。
 
-```
-[](#cb157-1)const prim = true;
-[](#cb157-2)assert.equal(typeof prim, 'boolean');
-[](#cb157-3)assert.equal(prim instanceof Boolean, false);
-[](#cb157-4)
-[](#cb157-5)const wrapped = Object(prim);
-[](#cb157-6)assert.equal(typeof wrapped, 'object');
-[](#cb157-7)assert.equal(wrapped instanceof Boolean, true);
-[](#cb157-8)
-[](#cb157-9)assert.equal(wrapped.valueOf(), prim); // 解包
+```javascript
+const prim = true;
+assert.equal(typeof prim, 'boolean');
+assert.equal(prim instanceof Boolean, false);
+
+const wrapped = Object(prim);
+assert.equal(typeof wrapped, 'object');
+assert.equal(wrapped instanceof Boolean, true);
+
+assert.equal(wrapped.valueOf(), prim); // 解包
 ```
 
 包装在实践中很少使用，但它在语言规范内部被内部使用，用于为原始值提供属性。
 
-## 14.7 类型之间的转换
+## 14.7 类型之间的转换
 
 在 JavaScript 中，值转换为其他类型的方法有两种方式：
 
@@ -2820,7 +2805,7 @@ JavaScript 使用`垃圾回收`来自动管理内存：
 
 *   `强制转换`（Coercion，自动转换）：当操作接收到无法处理的操作数/参数时发生。
 
-### 14.7.1 类型之间的显式转换
+### 14.7.1 类型之间的显式转换
 
 与原始类型相关的函数显式地将值转换为该类型：
 
@@ -2853,7 +2838,7 @@ false
 | symbol | `Symbol` 的实例（`new` 会抛出 `TypeError`） |
 | object | `x` |
 
-### 14.7.2 强制转换（类型之间的自动转换）
+### 14.7.2 强制转换（类型之间的自动转换）
 
 对于许多操作，如果操作数/参数的类型不匹配，JavaScript 会自动转换它们。这种自动转换被称为`强制转换`（coercion）。
 
@@ -2879,7 +2864,7 @@ false
 
 查看测验应用。
 
-# 15 运算符
+# 15 运算符
 
 * 15.1 理解运算符
     * 15.1.1 运算符将其操作数强制转换为适当类型
@@ -2898,14 +2883,14 @@ false
     * 15.6.1 逗号运算符
     * 15.6.2 `void` 运算符
 
-## 15.1 理解运算符
+## 15.1 理解运算符
 
 JavaScript 的运算符可能看起来很古怪。根据以下规则：
 
 *   运算符将其操作数强制转换为适当类型
 *   大多数运算符仅与值工作
 
-### 15.1.1 运算符将其操作数强制转换为适当类型
+### 15.1.1 运算符将其操作数强制转换为适当类型
 
 首先，让我们来看乘法运算符。它将操作数强制转换为数字：
 
@@ -2916,59 +2901,59 @@ JavaScript 的运算符可能看起来很古怪。根据以下规则：
 
 接下来，它强制转换为字符串：
 
-```
-[](#cb157-1)const prim = true;
-[](#cb157-2)assert.equal(typeof prim, 'boolean');
-[](#cb157-3)assert.equal(prim instanceof Boolean, false);
-[](#cb157-4)
-[](#cb157-5)const wrapped = Object(prim);
-[](#cb157-6)assert.equal(typeof wrapped, 'object');
-[](#cb157-7)assert.equal(wrapped instanceof Boolean, true);
-[](#cb157-8)
-[](#cb157-9)assert.equal(wrapped.valueOf(), prim); // 解包
+```javascript
+const prim = true;
+assert.equal(typeof prim, 'boolean');
+assert.equal(prim instanceof Boolean, false);
+
+const wrapped = Object(prim);
+assert.equal(typeof wrapped, 'object');
+assert.equal(wrapped instanceof Boolean, true);
+
+assert.equal(wrapped.valueOf(), prim); // 解包
 ```
 
 等等，让我们来看赋值运算符：
 
-```
-[](#cb154-1)assert.equal((123).toString, Number.prototype.toString);
+```javascript
+assert.equal((123).toString, Number.prototype.toString);
 ```
 
 接下来，让我们来看命名空间对象：
 
-```
-[](#cb155-1)assert.equal(Number.isInteger(123), true);
+```javascript
+assert.equal(Number.isInteger(123), true);
 ```
 
 等等，让我们来看类：
 
-````
-[](#cb156-1)assert.notEqual(new Number(123), 123);
-[](#cb156-2)assert.equal(new Number(123).valueOf(), 123);
+```javascript
+assert.notEqual(new Number(123), 123);
+assert.equal(new Number(123).valueOf(), 123);
 ```
 
-### 15.1.2 大多数运算符仅与原始值工作
+### 15.1.2 大多数运算符仅与原始值工作
 
 等等，让我们来看赋值运算符：
 
-```
-[](#cb154-1)assert.equal((123).toString, Number.prototype.toString);
+```javascript
+assert.equal((123).toString, Number.prototype.toString);
 ```
 
 接下来，让我们来看命名空间对象：
 
-```
-[](#cb155-1)assert.equal(Number.isInteger(123), true);
+```javascript
+assert.equal(Number.isInteger(123), true);
 ```
 
 等等，让我们来看类：
 
-```
-[](#cb156-1)assert.notEqual(new Number(123), 123);
-[](#cb156-2)assert.equal(new Number(123).valueOf(), 123);
+```javascript
+assert.notEqual(new Number(123), 123);
+assert.equal(new Number(123).valueOf(), 123);
 ```
 
-## 15.2 加法运算符 (`+`)
+## 15.2 加法运算符 (`+`)
 
 加法运算符的工作原理如下：
 
@@ -2994,26 +2979,26 @@ JavaScript 的运算符可能看起来很古怪。根据以下规则：
 
 `Number(true)` 为 `1`。
 
-## 15.3 赋值运算符
+## 15.3 赋值运算符
 
-### 15.3.1 普通赋值运算符
+### 15.3.1 普通赋值运算符
 
 普通赋值运算符用于更改存储位置：
 
-```
-[](#cb169-1)x = value; // 赋值给已声明变量
-[](#cb169-2)obj.propKey = value; // 赋值给属性
-[](#cb169-3)arr[index] = value; // 赋值给数组元素
+```javascript
+x = value; // 赋值给已声明变量
+obj.propKey = value; // 赋值给属性
+arr[index] = value; // 赋值给数组元素
 ```
 
 变量声明中的初始化器也可以视为赋值的形式：
 
-```
-[](#cb170-1)const x = value;
-[](#cb170-2)let y = value;
+```javascript
+const x = value;
+let y = value;
 ```
 
-### 15.3.2 复合赋值运算符
+### 15.3.2 复合赋值运算符
 
 JavaScript 支持以下赋值运算符：
 
@@ -3029,10 +3014,6 @@ JavaScript 支持以下赋值运算符：
 
 *   逻辑赋值运算符：`||= &&= ??=`
 
-
-
-
-
 为什么 `a ||= b` 等价于以下表达式？
 
 > `a || (a = b)`
@@ -3043,25 +3024,27 @@ JavaScript 支持以下赋值运算符：
 
 前者表达式具有短路特性的好处：只有当 `a` 结果为 `false` 时，才会执行赋值操作。因此，只有在必要时才会执行赋值。相比之下，后者表达式总是执行赋值。
 
-关于 `??=` 的更多信息，请参阅第 16.4.5 节“空值赋值运算符 (`??=`)](#ch017.xhtml_nullish-coalescing-assignment-operator)。
+关于 `??=` 的更多信息，请参阅第 16.4.5 节"空值赋值运算符 (`??=`)"。
 
 ### 15.3.2.2 剩余的复合赋值运算符
 
 对于除 `|| && ??` 以外的运算符 `op`，以下两种赋值方式是等价的：
 
-```
+```javascript
 myvar op= value
+
 myvar = myvar op value
 ```
 
 例如，如果 `op` 是 `+`，那么我们得到了运算符 `+=`，其工作方式如下：
 
-```
+```javascript
 let str = '';
 str += '<b>>';
 str += 'Hello!';
-str += '</body>';
-assert.equal(str, '<b>Hello!</b>');
+str +=</body>';
+
+assert.equal(str, '<b>Hello</b>');
 ```
 
 ## 15.4 等于：`==` vs. `===`
@@ -3073,7 +3056,7 @@ JavaScript 有两种等于运算符：松散相等 (`==`) 和严格相等 (`===`
 * `==` 也称为双等等号（double equals）。它在语言规范中的正式名称是[抽象相等比较](https://tc39.github.io/ecma262/#sec-abstract-equality-comparison)。
 * `===` 也称为三等等号（triple equals）。
 
-### 15.4.1 松散相等 (`==` 和 `!=`）
+### 15.4.1 松散相等 (`==` 和 `!=`)
 
 松散相等是 JavaScript 的奇异特性之一。它经常会对操作数进行类型转换。其中一些转换是有意义的：
 
@@ -3107,7 +3090,6 @@ true
 false
 > [1, 2, 3] == [1, 2, 3]
 false
-
 > const arr = [1, 2, 3];
 > arr == arr
 true
@@ -3120,7 +3102,7 @@ true
 true
 ```
 
-### 15.4.2 严格相等 (`===` 和 `!==`）
+### 15.4.2 严格相等 (`===` 和 `!==`)
 
 严格相等绝不会进行类型转换。两个值只有在具有相同类型时才相等。让我们重新回顾一下之前与 `==` 运算符的交互，看看 `===` 运算符做了什么：
 
@@ -3138,12 +3120,10 @@ false
 false
 > ['1', '2', '3'] === '1,2,3'
 false
-
 > [1, 2, 3] === ['1', '2', '3']
 false
 > [1, 2, 3] === [1, 2, 3]
 false
-
 > const arr = [1, 2, 3];
 > arr === arr
 true
@@ -3166,7 +3146,7 @@ false
 
 `==` 让你通过单次比较检查值 `x` 是否为数字，或者是该数字的字符串形式：
 
-```
+```javascript
 if (x == 123) {
   // x 是 123 或者 '123'
 }
@@ -3174,8 +3154,9 @@ if (x == 123) {
 
 我更倾向于以下两种替代方案之一：
 
-```
+```javascript
 if (x === 123 || x === '123') ···
+
 if (Number(x) === 123) ···
 ```
 
@@ -3185,7 +3166,7 @@ if (Number(x) === 123) ···
 
 `==` 的另一个用例是检查值 `x` 是否为 `undefined` 或 `null`：
 
-```
+```javascript
 if (x == null) {
   // x 是 null 或 undefined
 }
@@ -3195,8 +3176,9 @@ if (x == null) {
 
 我更倾向于以下两种：
 
-```
+```javascript
 if (x === undefined || x === null) ···
+
 if (!x) ···
 ```
 
@@ -3204,9 +3186,11 @@ if (!x) ···
 
 以下三个条件大致等价：
 
-```
+```javascript
 if (x != null) ···
+
 if (x !== undefined && x !== null) ···
+
 if (x) ···
 ```
 
@@ -3221,7 +3205,10 @@ true
 false
 ```
 
-它比 `===` 更加严格。例如，它认为 `NaN`（数字的错误值
+它比 `===` 更加严格。例如，它认为 `NaN`（数字的错误值）等于其自身：
+
+```
+> Object.is(NaN, NaN)
 true
 > NaN === NaN
 false
@@ -3277,7 +3264,8 @@ true
 以下运算符在本书的其他部分已有所介绍：
 
 * 针对布尔值、数字、字符串、对象的运算符
-* 用于默认值的空值合并运算符 (`??`)](#ch017.xhtml_nullish-coalescing-operator)
+
+* 用于默认值的空值合并运算符 (`??`)
 
 接下来的两个小节将讨论两个很少使用的运算符。
 
@@ -3314,21 +3302,16 @@ undefined
     * 16.2.1 `undefined` 的出现
     * 16.2.2 `null` 的出现
 * 16.3 检查 `undefined` 或 `null`
-* 16.4 [用于默认值的空值合并运算符 (`??`) [ES2020]](#ch017.xhtml_nullish-coalescing-operator)
+* 16.4 用于默认值的空值合并运算符 (`??`) [ES2020]
     * 16.4.1 示例：计数匹配
     * 16.4.2 示例：为属性指定默认值
+    * 16.4.3 使用解构赋值设置默认值
+    * 16.4.4 旧版方法：使用逻辑或 (`||`) 设置默认值
+    * 16.4.5 空值合并赋值运算符 (`??=`)
+* 16.5 `undefined` 和 `null` 没有属性
+* 16.6 `undefined` 和 `null` 的历史
 
-
-
-
-
-### 16.4.3 使用解构赋值设置默认值
-### 16.4.4 旧版方法：使用逻辑或 (`||`) 设置默认值
-### 16.4.5 空值合并赋值运算符 (`??=`)
-## 16.5 `undefined` 和 `null` 没有属性
-## 16.6 `undefined` 和 `null` 的历史
-
-许多编程语言都只有一种名为 `null` 的“非值”。它表示变量当前没有指向任何对象——例如，当它尚未被初始化时。
+许多编程语言都只有一种名为 `null` 的"非值"。它表示变量当前没有指向任何对象——例如，当它尚未被初始化时。
 
 与此相反，JavaScript 有两个这样的值：`undefined` 和 `null`。
 
@@ -3336,13 +3319,15 @@ undefined
 
 这两个值非常相似，且通常可以互换使用。因此，它们的区别非常细微。语言本身做出了以下区分：
 
-- `undefined` 意味着“未初始化”（例如，变量）或“不存在”（例如，对象的属性）。
-- `null` 意味着“有意地空缺任何对象值”（引自[语言规范](https://tc39.github.io/ecma262/#sec-null-value)）。
+- `undefined` 意味着"未初始化"（例如，变量）或"不存在"（例如，对象的属性）。
+
+- `null` 意味着"有意地空缺任何对象值"（引自[语言规范](https://tc39.github.io/ecma262/#sec-null-value)）。
 
 程序员可能会做出如下区分：
 
 - `undefined` 是语言中使用的非值（当某些内容未初始化等时）。
-- `null` 意味着“显式关闭”。也就是说，它有助于实现一种既包含有意义的值又包含代表“无意义值”的元值的类型。这种类型在函数式编程中被称为*option type*或可选类型或[maybe type](https://en.wikipedia.org/wiki/Option_type)。
+
+- `null` 意味着"显式关闭"。也就是说，它有助于实现一种既包含有意义的值又包含代表"无意义值"的元值的类型。这种类型在函数式编程中被称为*option type*或可选类型或[maybe type](https://en.wikipedia.org/wiki/Option_type)。
 
 ## 16.2 `undefined` 和 `null` 的出现
 
@@ -3434,9 +3419,9 @@ if (!x) { // 是假值吗？
 }
 ```
 
-*Truthy*（真值）意味着“强制转换为布尔值时为 true”。*Falsy*（假值）意味着“强制转换为布尔值时为 false”。这两个概念在 17.2 节“假值和真值”中有详细的解释。
+*Truthy*（真值）意味着"强制转换为布尔值时为 true"。*Falsy*（假值）意味着"强制转换为布尔值时为 false"。这两个概念在 17.2 节"假值和真值"中有详细的解释。
 
-## 16.4 用于默认值的空值合并运算符 (`??`) 
+## 16.4 用于默认值的空值合并运算符 (`??`)
 
 有时我们接收到一个值，但只想在当它为 `null` 或 `undefined` 时才使用它。否则，我们想使用默认值作为回退。我们可以通过*空值合并运算符* (`??`) 来实现：
 
@@ -3554,10 +3539,6 @@ a ?? (a = b)
 
 #### 16.4.5.1 示例：使用 `??=` 添加缺失的属性
 
-
-
-
-
 ```javascript
 const books = [
   {
@@ -3569,7 +3550,7 @@ const books = [
   },
 ];
 
-// Add property .title where it’s missing
+// Add property .title where it's missing
 for (const book of books) {
   book.title ??= '(Untitled)';
 }
@@ -3590,7 +3571,7 @@ assert.deepEqual(
 
 ## 16.5 `undefined` 和 `null` 没有属性
 
-`undefined` 和 `null` 是 JavaScript 中仅两个在尝试读取其属性时会抛出异常的值。为了探索这一现象，让我们使用以下函数，它读取（“获取”）属性 `.foo` 并返回结果。
+`undefined` 和 `null` 是 JavaScript 中仅两个在尝试读取其属性时会抛出异常的值。为了探索这一现象，让我们使用以下函数，它读取（"获取"）属性 `.foo` 并返回结果。
 
 ```javascript
 function getFoo(x) {
@@ -3617,9 +3598,10 @@ undefined
 在 Java 中（它启发了 JavaScript 的许多方面），初始化值取决于变量的静态类型：
 
 - 对象类型的变量被初始化为 `null`。
+
 - 每个原始类型都有自己的初始化值。例如，`int` 变量被初始化为 `0`。
 
-在 JavaScript 中，每个变量都可以同时持有对象值和原始类型值。因此，如果 `null` 意味着“不是对象”，那么 JavaScript 也需要一个“既不是对象也不是原始类型值”的初始化值。这个初始化值就是 `undefined`。
+在 JavaScript 中，每个变量都可以同时持有对象值和原始类型值。因此，如果 `null` 意味着"不是对象"，那么 JavaScript 也需要一个"既不是对象也不是原始类型值"的初始化值。这个初始化值就是 `undefined`。
 
 **测试**
 
@@ -3653,17 +3635,22 @@ undefined
 
 ## 17.1 转换为布尔值
 
-**“转换为 [类型]”的含义**
+**"转换为 [类型]"的含义**
 
-“转换为 [类型]”是将任意值转换为类型为 [类型] 的值的简写。
+"转换为 [类型]"是将任意值转换为类型为 [类型] 的值的简写。
 
 将任意值 `x` 转换为布尔值的三种方法：
 
 - `Boolean(x)`
+
   最具描述性；推荐。
+
 - `x ? true : false`
-  使用条件运算符（在本章后续](#ch018.xhtml_conditional-operator) 解释）。
+
+  使用条件运算符（在本章后续解释）。
+
 - `!!x`
+
   使用逻辑非运算符 (`!`)。该运算符将其操作数强制转换为布尔值。应用第二次以获得非取反的结果。
 
 表 4 描述了如何将各种值转换为布尔值。
@@ -3707,15 +3694,21 @@ if (value) {}
 如果 `value` 为假（falsy），`if` 语句体将被跳过。这种检查非常常见，以至于被称为：
 
 - 如果一个值在转换为布尔值时为 `true`，则称为*真值 (truthy)*。
+
 - 如果一个值在转换为布尔值时为 `false`，则称为*假值 (falsy)*。
 
 查阅表 4，我们可以列出假值的列表：
 
 - `undefined`
+
 - `null`
+
 - `0`
+
 - `NaN`
+
 - `0n` (bigint)
+
 - `''` (string)
 
 其他值（包括对象）都是真值：
@@ -3738,7 +3731,7 @@ if (x) {
 const result = x ? 'truthy' : 'falsy';
 ```
 
-最后一行使用的条件运算符将在后续 解释。
+最后一行使用的条件运算符将在后续解释。
 
 **练习：真值**
 
@@ -3777,6 +3770,7 @@ if (obj.prop) {
 然而，如果满足以下情况也会被跳过：
 
 - `obj.prop` 为 `undefined`。
+
 - `obj.prop` 为任何其他假值（`null`、`0` 等）。
 
 在实践中这很少引起问题，但你必须意识到这个陷阱。
@@ -3793,9 +3787,6 @@ function func(x) {
   // ···
 }
 ```
-
-
-
 
 优点是，这种模式已经成熟且简洁。它能正确地为 `undefined` 和 `null` 抛出错误。
 
@@ -3844,6 +3835,7 @@ if (! ('path' in fileDesc)) {
 它的求值如下：
 
 - 如果 `condition` 为真值（truthy），求值并返回 `thenExpression`。
+
 - 否则，求值并返回 `elseExpression`。
 
 条件运算符也被三元运算符，因为它有三个操作数。
@@ -3859,7 +3851,9 @@ if (! ('path' in fileDesc)) {
 'no'
 ```
 
-以下代码演示了无论通过条件选择了“then”还是“else”分支，只有被选中的那个分支会被求值。另一个分支不会执行。
+以下代码演示了无论通过条件选择了"then"还是"else"分支，只有被选中的那个分支会被求值。另一个分支不会执行。
+
+
 
 ```javascript
 const x = (true ? console.log('then') : console.log('else'));
@@ -4005,7 +3999,7 @@ false
     - 18.2.1 整数字面量
     - 18.2.2 浮点数字面量
     - 18.2.3 整数字面量的陷阱
-    - 18.2.4 数字字面量中的下划线 (`_`) 
+    - 18.2.4 数字字面量中的下划线 (`_`)
 - 18.3 算术运算符
     - 18.3.1 二元算术运算符
     - 18.3.2 一元加 (`+`) 和负 (`-`)
@@ -4035,18 +4029,14 @@ false
     - 18.11.4 `Number.prototype` 的方法
     - 18.11.5 来源
 
-* * *
+***
 
 JavaScript 有两种数值：
-
-
-
-
 
 - `Numbers` 是 64 位浮点数，也用于较小的整数（范围在正/负 53 位之间）。
 - `Bigints` 表示任意精度的整数。
 
-本章介绍数字。`Bigints` 将在本书的后部分 进行介绍。
+本章介绍数字。`Bigints` 将在本书的后部分进行介绍。
 
 ## 18.1 同时用于浮点数和整数的数字
 
@@ -4059,7 +4049,7 @@ JavaScript 中用 `number` 类型同时用于整数和浮点数：
 
 然而，所有的数字都是 `doubles`（双精度），即根据 `浮点运算 IEEE 标准` (IEEE 754) 实现的 64 位浮点数。
 
-整数仅仅是不不带小数部分的浮点数：
+整数仅仅是不带小数部分的浮点数：
 
 ```javascript
 > 98 === 98.0
@@ -4076,14 +4066,14 @@ true
 
 几种 `整数字面量` 让我们以不同的基数表示整数：
 
-```
+```javascript
 // 二进制（底 2）
 assert.equal(0b11, 3); // ES6
 // 八进制（底 8）
 assert.equal(0o10, 8); // ES6
 // 十进制（底 10）
 assert.equal(35, 35);
-// 十进制（底 16）
+// 十六进制（底 16）
 assert.equal(0xE7, 231);
 ```
 
@@ -4163,11 +4153,15 @@ const trillionInShortScale = 1e1_2;
 - 分隔符不能放在数字的开头或结尾。
 - 分隔符不能连续出现。
 
-（注：由于原文在分隔符位置的描述中存在无意义的乱码和重复文本，此处根据技术逻辑进行了清理和意翻译）
+## 18.3 算术运算符
 
+### 18.3.1 二元算术运算符
 
+### 18.3.2 一元加 (`+`) 和负 (`-`)
 
+### 18.3.3 自增 (`++`) 和自减 (`--`)
 
+## 18.4 转换为数字
 
 | 类型 | 结果 |
 | :--- | :--- |
@@ -4431,9 +4425,6 @@ assert.equal(Number.isFinite(x), false);
 
 ![](img/file7.svg) **测试：基础**
 
-
-
-
 精确计算小数的唯一方法是在内部切换到 10 进制。对于许多编程语言来说，2 进制是默认的，而 10 进制是一个选项。例如，Java 有 [`BigDecimal`](https://docs.oracle.com/javase/8/docs/api/java/math/BigDecimal.html) 类，而 Python 有 [`decimal`](https://docs.python.org/3/library/decimal.html) 模块。目前有计划在 JavaScript 中添加类似的功能：[ECMAScript 提案“Decimal”](https://github.com/tc39/proposals/blob/master/stage-0-proposals.md) 目前处于第 0 阶段。
 
 ## 18.9 JavaScript 中的整数
@@ -4447,13 +4438,13 @@ true
 true
 ```
 
-在这一节中，我们将查看一些处理这些伪整数的工具。JavaScript 还支持 `bigints，它们是真正的整数。
+在这一节中，我们将查看一些处理这些伪整数的工具。JavaScript 还支持 `bigints`，它们是真正的整数。
 
 ### 18.9.1 转换为整数
 
 将数字转换为整数推荐的方法是使用 `Math` 对象中的一种舍入方法：
 
-*   `Math.floor(n)`：返回最大的整数 `i` ≤ `n`
+* `Math.floor(n)`：返回最大的整数 `i` ≤ `n`
 
     ```
     > Math.floor(2.1)
@@ -4462,7 +4453,7 @@ true
     2
     ```
 
-*   `Math.ceil(n)`：返回最小的整数 `i` ≥ `n`
+* `Math.ceil(n)`：返回最小的整数 `i` ≥ `n`
 
     ```
     > Math.ceil(2.1)
@@ -4471,7 +4462,7 @@ true
     3
     ```
 
-*   `Math.round(n)`：返回“接近”`n` 的整数，其中 `.5` 进舍入——例如：
+* `Math.round(n)`：返回“接近”`n` 的整数，其中 `.5` 进舍入——例如：
 
     ```
     > Math.round(2.4)
@@ -4480,7 +4471,7 @@ true
     3
     ```
 
-*   `Math.trunc(n)`：移除 `n` 的任何小数部分（小数点后的部分），将其转换为整数。
+* `Math.trunc(n)`：移除 `n` 的任何小数部分（小数点后的部分），将其转换为整数。
 
     ```
     > Math.trunc(2.1)
@@ -4495,22 +4486,19 @@ true
 
 这些是 JavaScript 中重要的整数范围：
 
-*   **安全整数：**可以被 JavaScript “安全地”表示（关于其含义，将在下一个小节中详细介绍）
+* **安全整数：**可以被 JavaScript “安全地”表示（关于其含义，将在下一个小节中详细介绍）
+    * 精度：53 位加一个符号位
+    * 范围：(−2⁵³, 2⁵³)
 
-    *   精度：53 位加一个符号位
-    *   范围：(−2⁵³, 2⁵³)
+* **数组索引**
+    * 精度：32 位，无符号
+    * 范围：[0, 2³²−1)（不包括最大长度）
+    * 类型数组（Typed Arrays）具有更大的 53 位范围（安全且无符号）
 
-*   **数组索引**
-
-    *   精度：32 位，无符号
-    *   范围：[0, 2³²−1)（不包括最大长度）
-    *   类型数组（Typed Arrays）具有更大的 53 位范围（安全且无符号）
-
-*   **位运算符**（按位或等）
-
-    *   精度：32 位
-    *   无符号右移（`>>>`）的范围：无符号，[0, 2³²)
-    *   所有其他位运算符的范围：有符号，[−2³¹, 2³¹)
+* **位运算符**（按位或等）
+    * 精度：32 位
+    * 无符号右移（`>>>`）的范围：无符号，[0, 2³²)
+    * 所有其他位运算符的范围：有符号，[−2³¹, 2³¹)
 
 ### 18.9.3 安全整数
 
@@ -4535,7 +4523,7 @@ true
 
 以下 `Number` 的属性有助于判断一个整数是否是安全的：
 
-```
+```javascript
 assert.equal(Number.MAX_SAFE_INTEGER, (2 ** 53) - 1);
 assert.equal(Number.MIN_SAFE_INTEGER, -Number.MAX_SAFE_INTEGER);
 assert.equal(Number.isSafeInteger(5), true);
@@ -4581,9 +4569,9 @@ isSafeInteger(a) && isSafeInteger(b) && isSafeInteger(a op b)
 
 在内部，JavaScript 的位运算符与 32 位整数工作。它们按照以下步骤产生结果：
 
-*   输入（JavaScript 数字）：1–2 个操作数首先被转换为 JavaScript 数字（64 位浮点数），然后转换为 32 位整数。
-*   计算（32 位整数）：实际操作处理 32 位整数并产生一个 32 位整数。
-*   输出（JavaScript 数字）：在返回结果之前，它会被转换回 JavaScript 数字。
+* 输入（JavaScript 数字）：1–2 个操作数首先被转换为 JavaScript 数字（64 位浮点数），然后转换为 32 位整数。
+* 计算（32 位整数）：实际操作处理 32 位整数并产生一个 32 位整数。
+* 输出（JavaScript 数字）：在返回结果之前，它会被转换回 JavaScript 数字。
 
 #### 18.10.1.1 操作数和结果的类型
 
@@ -4600,8 +4588,8 @@ isSafeInteger(a) && isSafeInteger(b) && isSafeInteger(a op b)
 
 在探索位运算符时，将 JavaScript 数字显示为 32 位整数是有帮助的：
 
-```
-> ~0b100
+```javascript
+> b32(~0b100)
 '11111111111111111111111111111011'
 ```
 
@@ -4655,10 +4643,6 @@ isSafeInteger(a) && isSafeInteger(b) && isSafeInteger(a op b)
 
 移位运算符将二进制位向左或向右移动。
 
-
-
-
-
 ```
 > (0b10 << 1).toString(2)
 '100'
@@ -4673,11 +4657,11 @@ isSafeInteger(a) && isSafeInteger(b) && isSafeInteger(a op b)
 '01000000000000000000000000000001'
 ```
 
-### 18.10.5��`b32()`：用二进制表示法显示无符号 32 位整数
+### 18.10.5 `b32()`：用二进制表示法显示无符号 32 位整数
 
 我们现在已经使用了几次 `b32()`。以下是它的实现代码：
 
-```
+```javascript
 /**
  * 返回一个表示 n 的 32 位无符号整数的字符串，
  * 使用二进制表示法。
@@ -4702,9 +4686,9 @@ assert.equal(
 1
 ```
 
-## 18.11 快速参考：数字
+## 18.11 快速参考：数字
 
-### 18.11.1 数字的全局函数
+### 18.11.1 数字的全局函数
 
 JavaScript 提供了以下四个数字的全局函数：
 
@@ -4715,238 +4699,252 @@ JavaScript 提供了以下四个数字的全局函数：
 
 然而，使用 `Number` 的对应方法（如 `Number.isFinite()` 等）更好，因为它们的陷阱更少。它们是在 ES6 中引入的，并在下文中讨论。
 
-### 18.11.2 `Number` 的静态属性
+### 18.11.2 `Number` 的静态属性
 
 * `.EPSILON: number` [ES6]
 
     1 与下一个可表示浮点数之间的差值。通常情况下，[机器精度](https://en.wikipedia.org/wiki/Machine_epsilon) 为浮点运算中的舍入误差提供了上限。
+
     * 大约：$2.2204460492503130847263316 \times 10^{-16}$
 
 * `.MAX_SAFE_INTEGER: number` [ES6]
+
     JavaScript 可以表示的最大整数（$2^{53}-1$）。
 
 * `.MAX_VALUE: number` [ES1]
+
     最大的正有限数。
+
     * 大约：$1.7976931348623157 \times 10^{308}$
 
 * `.MIN_SAFE_INTEGER: number` [ES6]
+
     JavaScript 可以表示的最小整数（$-2^{53}+1$）。
 
 * `.MIN_VALUE: number` [ES1]
+
     最小的正数。大约为 $5 \times 10^{-324}$。
 
 * `.NaN: number` [ES1]
+
     与全局变量 `NaN` 相同。
 
 * `.NEGATIVE_INFINITY: number` [ES1]
+
     与 `-POSITIVE_INFINITY` 相同。
 
 * `.POSITIVE_INFINITY: number` [ES1]
+
     与全局变量 `Infinity` 相同。
 
-### 18.11.3 `Number` 的静态方法
+### 18.11.3 `Number` 的静态方法
 
 * `.isFinite(num: number): boolean` [ES6]
+
     如果 `num` 是实际数字（既不是 `Infinity` 也不是 `NaN`），则返回 `true`。
 
-```
-> Number.isFinite(Infinity)
-false
-> Number.isFinite(-Infinity)
-false
-> Number.isFinite(NaN)
-false
-> Number.isFinite(123)
-true
-```
+    ```
+    > Number.isFinite(Infinity)
+    false
+    > Number.isFinite(-Infinity)
+    false
+    > Number.isFinite(NaN)
+    false
+    > Number.isFinite(123)
+    true
+    ```
 
 * `.isInteger(num: number): boolean` [ES6]
+
     如果 `num` 是一个数字且没有小数部分，则返回 `true`。
 
-```
-> Number.isInteger(-17)
-true
-> Number.isInteger(33)
-true
-> Number.isInteger(33.1)
-false
-> Number.isInteger('33')
-false
-> Number.isInteger(Infinity)
-false
-```
+    ```
+    > Number.isInteger(-17)
+    true
+    > Number.isInteger(33)
+    true
+    > Number.isInteger(33.1)
+    false
+    > Number.isInteger('33')
+    false
+    > Number.isInteger(Infinity)
+    false
+    ```
 
 * `.isNaN(num: number): boolean` [ES6]
+
     如果 `num` 的值为 `NaN`，则返回 `true`：
 
-```
-> Number.isNaN(NaN)
-true
-> Number.isNaN(123)
-false
-> Number.isNaN('abc')
-false
-```
+    ```
+    > Number.isNaN(NaN)
+    true
+    > Number.isNaN(123)
+    false
+    > Number.isNaN('abc')
+    false
+    ```
 
 * `.isSafeInteger(num: number): boolean` [ES6]
+
     如果 `num` 是一个数字且无歧地表示一个整数，则返回 `true`。
 
 * `.parseFloat(str: string): number` [ES6]
+
     将其参数强制转换为字符串并解析为浮点数。对于字符串转数字，`Number()`（它会忽略开头和结尾空格）通常是 `Number.parseFloat()`（它只忽略开头空格并可能隐藏问题）更好的选择。
 
-```
-> Number.parseFloat(' 123.4')
-123.4
-> Number(' 123.4')
-NaN
-```
+    ```
+    > Number.parseFloat(' 123.4')
+    123.4
+    > Number(' 123.4')
+    NaN
+    ```
 
 * `.parseInt(str: string, radix=10): number` [ES6]
+
     将其参数强制转换为字符串并解析为整数，忽略开头空格和末尾字符：
 
-```
-> Number.parseInt('  123')
-123
-```
+    ```
+    > Number.parseInt('  123')
+    123
+    ```
 
     参数 `radix` 指定了要解析数字的基数：
 
-```
-> Number.parseInt('101', 2)
-5
-> Number.parseInt('FF', 16)
-255
-```
+    ```
+    > Number.parseInt('101', 2)
+    5
+    > Number.parseInt('FF', 16)
+    255
+    ```
 
     不要使用此方法将数字转换为整数：强制转换为字符串效率很低。而且在第一个非数字字符之前停止并不是移除数字小数部分的良好算法。这里有一个出错的例子：
 
-```
-> Number.parseInt(1e21, 10) // 错误
-1
-```
+    ```
+    > Number.parseInt(1e21, 10) // 错误
+    1
+    ```
 
     最好使用 `Math` 的一个舍入函数将数字转换为整数：
 
-```
-> Math.trunc(1e21) // 正确
-1e+21
-```
+    ```
+    > Math.trunc(1e21) // 正确
+    1e+21
+    ```
 
-### 18.11.4 `Number.prototype` 的方法
+### 18.11.4 `Number.prototype` 的方法
 
 （`Number.prototype` 是数字方法存储的地方。）
 
 * `.toExponential(fractionDigits?: number): string` [ES3]
+
     返回一个通过指数计数法表示数字的字符串。通过 `fractionDigits`，我们可以指定与指数相乘的数字应该显示多少位数（默认显示尽可能多的位数）。
 
     示例：数字太小，无法通过 `.toString()` 获取正指数。
 
-```
-> 1234.toString()
-'1234'
+    ```
+    > 1234.toString()
+    '1234'
 
-> 1234.toExponential() // 3 个小数位
-'1.234e+3'
-> 1234.toExponential(3)
-'1.234e+3'
-```
+    > 1234.toExponential() // 3 个小数位
+    '1.234e+3'
+    > 1234.toExponential(3)
+    '1.234e+3'
+    ```
 
     示例：通过 `.toString()` 不足以获取负指数。
 
-```
-> 0.003.toString()
-'0.003'
-> 0.003.toExponential()
-'3e-3'
-```
+    ```
+    > 0.003.toString()
+    '0.003'
+    > 0.003.toExponential()
+    '3e-3'
+    ```
 
 * `.toFixed(fractionDigits=0): string` [ES5]
+
     返回数字的无指数表示法，保留到 `fractionDigits` 位。
 
-```
-> 0.000012.toString() // 带指数
-'1.2e-5'
+    ```
+    > 0.000012.toString() // 带指数
+    '1.2e-5'
 
-> 0.000012.toFixed(10)
-'0.0000120000'
-> 0.000012.toFixed()
-'0'
-```
+    > 0.000012.toFixed(10)
+    '0.0000120000'
+    > 0.000012.toFixed()
+    '0'
+    ```
 
     如果数字为 $10^{21}$ 或更大，即使是 `.toFixed()` 也会使用指数：
 
-```
-> (10 ** 21).toFixed()
-'1e+21'
-```
+    ```
+    > (10 ** 21).toFixed()
+    '1e+21'
+    ```
 
 * `.toPrecision(precision?: number): string` [ES3]
+
     类似于 `.toString()`，但 `precision` 指定了显示多少位数。如果缺少 `precision`，则使用 `.toString()`。
 
-```
-> 1234.toPrecision(3) // 需要指数计数法
-'1.2e+3'
+    ```
+    > 1234.toPrecision(3) // 需要指数计数法
+    '1.2e+3'
 
-> 1234.toPrecision(4)
-'1234'
+    > 1234.toPrecision(4)
+    '1234'
 
-> 1234.toPrecision(5)
-'1234.0'
+    > 1234.toPrecision(5)
+    '1234.0'
 
-> 1.234.toPrecision(3)
-'1.23'
-```
+    > 1.234.toPrecision(3)
+    '1.23'
+    ```
 
 * `.toString(radix=10): string` [ES1]
+
     返回数字的字符串表示。默认情况下，我们得到 10 进制结果：
 
-```
-> 123.456.toString()
-'123.456'
-```
+    ```
+    > 123.456.toString()
+    '123.456'
+    ```
 
     如果我们希望数字有不同的基，可以通过 `radix` 指定：
 
-```
-> 4.toString(2) // 二进制（基 2）
-'100'
-> 4.5.toString(2)
-'100.1'
+    ```
+    > 4.toString(2) // 二进制（基 2）
+    '100'
+    > 4.5.toString(2)
+    '100.1'
 
-> 255.toString(16) // 十六进制（基 16）
-'ff'
-> 255.66796875.toString(16)
-'ff.ab'
-```
+    > 255.toString(16) // 十六进制（基 16）
+    'ff'
+    > 255.66796875.toString(16)
+    'ff.ab'
+    ```
 
     `parseInt()` 提供了相反操作：它将包含给定基数的整数（无小数！）的字符串转换为数字。
 
-```
-> parseInt('kf12oi', 36)
-1234567890
-```
+    ```
+    > parseInt('kf12oi', 36)
+    1234567890
+    ```
 
-### 18.11.5 来源
+### 18.11.5 来源
 
 * Wikipedia
 * [TypeScript 内置类型定义](https://github.com/Microsoft/TypeScript/blob/master/lib/)
 * [MDN JavaScript 文档](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 * [ECMAScript 语言规范](https://tc39.github.io/ecma262/)
 
-![](img/file7.svg)  **测试：高级**
+![](img/file7.svg) **测试：高级**
 
 参见 测验应用。
 
-# 19 `Math`
+# 19 `Math`
 
-* * *
+***
 
-*   19.1 数据属性
-
-
-
-
-
+* 19.1 数据属性
 * 19.2 指数、根号、对数
 * 19.3 舍入
 * 19.4 三角函数
@@ -4960,40 +4958,52 @@ NaN
 ## 19.1 数据属性
 
 * `Math.E: number` ^([ES1])
+
     欧数，自然对数的底，约等于 2.7182818284590452354。
 
 * `Math.LN10: number` ^([ES1])
+
     10 的自然对数，约等于 2.302585092994046。
 
 * `Math.LN2: number` ^([ES1])
+
     2 的自然对数，约等于 0.6931471805599453。
 
 * `Math.LOG10E: number` ^([ES1])
+
     以 10 为底的 `e` 对数，约等于 0.4342944819032518。
 
 * `Math.LOG2E: number` ^([ES1])
+
     以 2 为底的 `e` 对数，约等于 1.4426950408889634。
 
 * `Math.PI: number` ^([ES1])
+
     数学常数 π，圆周与直径的比，约等于 3.1415926535897932。
 
 * `Math.SQRT1_2: number` ^([ES1])
+
     1/2 的平方根，约等于 0.7071067811865476。
 
 * `Math.SQRT2: number` ^([ES1])
+
     2 的平方根，约等于 1.4142135623730951。
 
 ## 19.2 指数、根号、对数
 
 * `Math.cbrt(x: number): number` ^([ES6])
+
     返回 `x` 的立方根。
+
     ```
     > Math.cbrt(8)
     2
     ```
 
 * `Math.exp(x: number): number` ^([ES1])
+
     返回 `e^x`（`e` 为欧数）。`Math.log()` 的逆函数。
+
     ```
     > Math.exp(0)
     1
@@ -5002,10 +5012,13 @@ NaN
     ```
 
 * `Math.expm1(x: number): number` ^([ES6])
+
     返回 `Math.exp(x)-1`。`Math.log1p()` 的逆函数。极小的数字（接近 0 的分数）具有更高的精度。因此，每当 `.exp()` 返回接近 1 的值时，此函数返回更精确的值。
 
 * `Math.log(x: number): number` ^([ES1])
+
     返回 `x` 的自然对数（以 `e`，即欧数为底）。`Math.exp()` 的逆函数。
+
     ```
     > Math.log(1)
     0
@@ -5016,10 +5029,13 @@ NaN
     ```
 
 * `Math.log1p(x: number): number` ^([ES6])
+
     返回 `Math.log(1 + x)`。`Math.expm1()` 的逆函数。极小的数字（接近 0 的分数）具有更高的精度。因此，每当 `.log()` 的参数接近 1 时，你可以为此函数提供更精确的参数。
 
 * `Math.log10(x: number): number` ^([ES6])
+
     返回以 10 为底的 `x` 对数。`10 ** x` 的逆函数。
+
     ```
     > Math.log10(1)
     0
@@ -5030,7 +5046,9 @@ NaN
     ```
 
 * `Math.log2(x: number): number` ^([ES6])
+
     返回以 2 为底的 `x` 对数。`2 ** x` 的逆函数。
+
     ```
     > Math.log2(1)
     0
@@ -5041,7 +5059,9 @@ NaN
     ```
 
 * `Math.pow(x: number, y: number): number` ^([ES1])
+
     返回 `x^y`，`x` 的 `y` 次方。与 `x ** y` 相同。
+
     ```
     > Math.pow(2, 3)
     8
@@ -5050,7 +5070,9 @@ NaN
     ```
 
 * `Math.sqrt(x: number): number` ^([ES1])
+
     返回 `x` 的平方根。`x ** 2` 的逆函数。
+
     ```
     > Math.sqrt(9)
     3
@@ -5061,7 +5083,9 @@ NaN
 舍入意味着将任意数字转换为整数（不带小数部分的数字）。以下函数实现了不同的舍入方法。
 
 * `Math.ceil(x: number): number` ^([ES1])
+
     返回大于等于 `x` 的最小（最接近 $-\infty$）整数 `i`。
+
     ```
     > Math.ceil(2.1)
     3
@@ -5070,7 +5094,9 @@ NaN
     ```
 
 * `Math.floor(x: number): number` ^([ES1])
+
     返回小于等于 `x` 的最大（最接近 $+\infty$）整数 `i`。
+
     ```
     > Math.floor(2.1)
     2
@@ -5079,7 +5105,9 @@ NaN
     ```
 
 * `Math.round(x: number): number` ^([ES1])
-    返回接近 `x` 的整数。如果 `x` 的小数部分为 `.5`，则 `.round()` 向上舍入（到靠近正正无穷的整数）：
+
+    返回接近 `x` 的整数。如果 `x` 的小数部分为 `.5`，则 `.round()` 向上舍入（到靠近正无穷的整数）：
+
     ```
     > Math.round(2.4)
     2
@@ -5088,7 +5116,9 @@ NaN
     ```
 
 * `Math.trunc(x: number): number` ^([ES6])
+
     移除 `x` 的小数部分并返回得到的整数。
+
     ```
     > Math.trunc(2.1)
     2
@@ -5111,8 +5141,10 @@ NaN
 
 角度均以弧度表示。使用以下函数在角度和弧度之间转换。
 
-*   `Math.acos(x: number): number` ^([ES1])
+* `Math.acos(x: number): number` ^([ES1])
+
     返回反余弦。
+
     ```
     > Math.acos(0)
     1.5707963267948966
@@ -5120,8 +5152,10 @@ NaN
     0
     ```
 
-*   `Math.asin(x: number): number` ^([ES1])
+* `Math.asin(x: number): number` ^([ES1])
+
     返回反正弦。
+
     ```
     > Math.asin(0)
     0
@@ -5129,11 +5163,14 @@ NaN
     1.5707963267948966
     ```
 
-*   `Math.atan2(y: number, x: number): number` ^([ES1])
-    返回 $y/x$ 的反正正切。
+* `Math.atan2(y: number, x: number): number` ^([ES1])
 
-*   `Math.cos(x: number): number` ^([ES1])
+    返回 $y/x$ 的反正切。
+
+* `Math.cos(x: number): number` ^([ES1])
+
     返回余弦。
+
     ```
     > Math.cos(0)
     1
@@ -5141,18 +5178,23 @@ NaN
     -1
     ```
 
-*   `Math.cosh(x: number): number` ^([ES6])
-    返回双余弦。
+* `Math.cosh(x: number): number` ^([ES6])
 
-*   `Math.hypot(...values: number): number` ^([ES6])
+    返回双曲余弦。
+
+* `Math.hypot(...values: number): number` ^([ES6])
+
     返回 `values` 平和的平方根（勾股定理）。
+
     ```
     > Math.hypot(3, 4)
     5
     ```
 
-*   `Math.sin(x: number): number` ^([ES1])
+* `Math.sin(x: number): number` ^([ES1])
+
     返回正弦。
+
     ```
     > Math.sin(0)
     0
@@ -5160,11 +5202,14 @@ NaN
     1
     ```
 
-*   `Math.sinh(x: number): number` ^([ES6])
+* `Math.sinh(x: number): number` ^([ES6])
+
     返回双曲正弦。
 
-*   `Math.tan(x: number): number` ^([ES1])
+* `Math.tan(x: number): number` ^([ES1])
+
     返回正切。
+
     ```
     > Math.tan(0)
     0
@@ -5172,13 +5217,16 @@ NaN
     1.5574077246549023
     ```
 
-*   `Math.tanh(x: number): number` ^([ES6])
-    返回双正切。
+* `Math.tanh(x: number): number` ^([ES6])
+
+    返回双曲正切。
 
 ## 19.5 其他各种函数
 
-*   `Math.abs(x: number): number` ^([ES1])
+* `Math.abs(x: number): number` ^([ES1])
+
     返回 `x` 的绝对值。
+
     ```
     > Math.abs(3)
     3
@@ -5186,8 +5234,10 @@ NaN
     3
     ```
 
-*   `Math.clz32(x: number): number` ^([ES6])
+* `Math.clz32(x: number): number` ^([ES6])
+
     计算 32 位整数 `x` 前导零的个数。用于 DSP 算法。
+
     ```
     > Math.clz32(0b01000000000000000000000000000000)
     1
@@ -5199,113 +5249,94 @@ NaN
     31
     ```
 
-*   `Math.max(...values: number[]): number` ^([ES1])
+* `Math.max(...values: number[]): number` ^([ES1])
+
     将 `values` 转换为数字并返回最大的一个。
+
     ```
     > Math.max(3, -5, 24)
     24
     ```
 
-
-
-
-
-*   `Math.min(...values: number[]): number` ^([ES1])
+* `Math.min(...values: number[]): number` ^([ES1])
 
     将 `values` 转换为数字并返回最小的一个。
 
-```
-> Math.min(3, -5, 24)
--5
-```
+    ```
+    > Math.min(3, -5, 24)
+    -5
+    ```
 
-*   `Math.random(): number` ^([ES1])
+* `Math.random(): number` ^([ES1])
 
     返回一个伪随机数 `n`，其中 0 ≤ `n` < 1。
 
-```
-[](#cb336-1)/** 返回一个满足 0 <= i < max 的随机整数 i */
-[](#cb336-2)function getRandomInteger(max) {
-[](#cb336-3)  return Math.floor(Math.random() * max);
-[](#cb336-4)}
-```
+    ```javascript
+    /** 返回一个满足 0 <= i < max 的随机整数 i */
+    function getRandomInteger(max) {
+      return Math.floor(Math.random() * max);
+    }
+    ```
 
-*   `Math.sign(x: number): number` ^([ES6])
+* `Math.sign(x: number): number` ^([ES6])
 
     返回数字的正负号：
 
-```
-> Math.sign(-8)
--1
-> Math.sign(0)
-0
-> Math.sign(3)
-1
-```
+    ```
+    > Math.sign(-8)
+    -1
+    > Math.sign(0)
+    0
+    > Math.sign(3)
+    1
+    ```
 
 ## 19.6 来源
 
-*   [Wikipedia（维基百科）](https://en.wikipedia.org/wiki)
-
-*   [TypeScript 内置类型定义](https://github.com/Microsoft/TypeScript/blob/master/lib/)
-
-*   [MDN JavaScript 文档](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
-
-*   [ECMAScript 语言规范](https://tc39.github.io/ecma262/)
+* [Wikipedia（维基百科）](https://en.wikipedia.org/wiki)
+* [TypeScript 内置类型定义](https://github.com/Microsoft/TypeScript/blob/master/lib/)
+* [MDN JavaScript 文档](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+* [ECMAScript 语言规范](https://tc39.github.io/ecma262/)
 
 # 20 Bigints – 任意精度整数 [ES2020] (进阶)
 
-* * *
+***
 
-*   20.1 为什么使用 bigints?
+* 20.1 为什么使用 bigints?
+* 20.2 Bigints
+    * 20.2.1 整数突破 53 位限制
+    * 20.2.2 示例：使用 bigints
+* 20.3 Bigint 字面量
+    * 20.3.1 bigint 字面量中的下划线 (`_`) 分隔符 [ES2021]
+* 20.4 为 bigints 重用数字运算符（重载）
+    * 20.4.1 算术运算符
+    * 20.4.2 比较运算符
+    * 20.4.3 位运算运算符
+    * 20.4.4 松相等 (`==`) 和不等于 (`!=`)
+    * 20.4.5 严格相等 (`===`) 和不等于 (`!==`)
+* 20.5 包装构造函数 `BigInt`
+    * 20.5.1 作为构造函数和函数的 `BigInt`
+    * 20.5.2 `BigInt.prototype.*` 方法
+    * 20.5.3 `BigInt.*` 方法
+    * 20.5.4 类型转换与 64 位整数
+* 20.6 将 bigints 转换为其他原始类型
+* 20.7 针对 64 位值的 TypedArrays 和 DataView 操作
+* 20.8 Bigints 和 JSON
+    * 20.8.1 bigints 字符串化
+    * 20.8.2 解析 bigints
+* 20.9 常见：Bigints
+    * 20.9.1 如何决定何时使用数字，何时使用 bigints?
+    * 20.9.2 为什么不像处理 bigints 那样增加数字的精度？
 
-*   20.2 Bigints
-
-    *   20.2.1 整数突破 53 位限制
-    *   20.2.2 示例：使用 bigints
-
-*   20.3 Bigint 字字量
-
-    *   20.3.1 [bigint 字面量中的下划线 (`_`) 分隔符 [ES2021]](#ch021.xhtml_numeric-separator-bigint-literals)
-
-*   20.4 为 bigints 重用数字运算符（重载)
-
-    *   20.4.1 算术运算符
-    *   20.4.2 比较运算符
-    *   20.4.3 位运算运算符
-    *   20.4.4 松相等 (`==`) 和不等于 (`!=`)
-    *   20.4.5 严格相等 (`===`) 和不等于 (`!==`)
-
-*   20.5 包装构造函数 `BigInt`
-
-    *   20.5.1 作为构造函数和函数的 `BigInt`
-    *   20.5.2 `BigInt.prototype.*` 方法
-    *   20.5.3 `BigInt.*` 方法
-    *   20.5.4 类型转换与 64 位整数
-
-*   20.6 将 bigints 转换为其他原始类型
-
-*   20.7 针对 64 位值的 TypedArrays 和 DataView 操作
-
-*   20.8 Bigints 和 JSON
-
-    *   20.8.1 bigints 字符串化
-    *   20.8.2 解析 bigints
-
-*   20.9 常见：Bigints
-
-    *   20.9.1 如何决定何时使用数字，何时使用 bigints?
-    *   20.9.2 为什么不像处理 bigints 那样增加数字的精度？
-
-* * *
+***
 
 在本章中，我们将介绍 bigints，它们是随需增长的*整数*。
 
-20.1 为什么使用 bigints?
+## 20.1 为什么使用 bigints?
 
 在 ECMAScript 2020 之前，JavaScript 的 `number` 类型使用 IEEE 754 双精度浮点数表示。这意味着它能够安全表示的整数范围是 $-2^{53}$ 到 $2^{53}-1$。超出此范围的整数表示可能会丢失精度。bigints 的引入为了解决这个问题，允许表示任意精度的整数。
 
-20.2 Bigints
+## 20.2 Bigints
 
 `bigint` 是一种新的原始类型，用于表示任意精度的整数。你可以通过在整数末尾添加 `n` 或使用 `BigInt()` 函数来创建它：
 
@@ -5335,7 +5366,7 @@ Bigints 能够与整数进行运算，例如：
 10n + 2 // TypeError: Cannot mix bigint and other types
 ```
 
-20.2.1 整数突破 53 位限制
+### 20.2.1 整数突破 53 位限制
 
 由于 `number` 类型使用双精度浮点数，其能够表示的安全整数范围是 $-2^{53}$ 到 $2^{53}-1$。这个范围可以通过 `Number` 的常量获取：
 
@@ -5358,9 +5389,9 @@ bigints 解决了这个问题，它们可以表示任意精度的整数：
 9007199254740991n + 2n // 9007199254740993n
 ```
 
-20.2.2 示例：使用 bigints
+### 20.2.2 示例：使用 bigints
 
-这是一个使用 bigints 计算质质数的函数示例：
+这是一个使用 bigints 计算质数的函数示例：
 
 ```javascript
 /**
@@ -5388,22 +5419,22 @@ assert.deepEqual(
 );
 ```
 
-20.3 Bigint 字面量
+## 20.3 Bigint 字面量
 
 和数字字面量一样，bigint 字面量支持多种进制：
 
-*   十进制：`123n`
-*   十六进制：`0xFFn`
-*   二进制：`0b1101n`
-*   八进制：`0o777n`
+* 十进制：`123n`
+* 十六进制：`0xFFn`
+* 二进制：`0b1101n`
+* 八进制：`0o777n`
 
 负 bigint 通过前一元减运算符产生：
 
-20.4 为 bigints 重用数字运算符（重载）
+## 20.4 为 bigints 重用数字运算符（重载）
 
 bigints 支持大多数与数字类型相同的运算符。
 
-20.4.1 算术运算符
+### 20.4.1 算术运算符
 
 bigints 支持以下算术运算符：
 
@@ -5416,7 +5447,7 @@ bigints 支持以下算术运算符：
 
 注意：bigint 除法会执行整数除法（截断取整）。
 
-20.4.2 比较运算符
+### 20.4.2 比较运算符
 
 bigints 支持所有比较运算符：
 
@@ -5426,17 +5457,17 @@ bigints 支持所有比较运算符：
 10n >= 2n // true
 ```
 
-20.4.3 位运算运算符
+### 20.4.3 位运算运算符
 
 bigints 支持位运算运算符：
 
 ```javascript
 10n & 2n // 2n
 10n | 2n // 10n
-10n ^ 2n // 8
+10n ^ 2n // 8n
 ```
 
-20.4.4 松相等 (`==`) 和不等于 (`!=`)
+### 20.4.4 松相等 (`==`) 和不等于 (`!=`)
 
 bigints 与数字进行松相等比较始终返回 `false`：
 
@@ -5445,7 +5476,7 @@ bigints 与数字进行松相等比较始终返回 `false`：
 10n != 10 // true
 ```
 
-20.4.5 严格相等 (`===`) 和不等于 (`!==`)
+### 20.4.5 严格相等 (`===`) 和不等于 (`!==`)
 
 bigints 与数字进行严格相等比较始终返回 `false`：
 
@@ -5454,11 +5485,11 @@ bigints 与数字进行严格相等比较始终返回 `false`：
 10n !== 10 // true
 ```
 
-20.5 包装构造函数 `BigInt`
+## 20.5 包装构造函数 `BigInt`
 
 `BigInt` 可以作为构造函数也可以作为函数使用。
 
-20.5.1 作为构造函数和函数的 `BigInt`
+### 20.5.1 作为构造函数和函数的 `BigInt`
 
 作为构造函数使用时，它返回一个新的 `BigInt` 对象：
 
@@ -5472,19 +5503,19 @@ new BigInt(10); // 10n
 BigInt(10); // 10n
 ```
 
-20.5.2 `BigInt.prototype.*` 方法
+### 20.5.2 `BigInt.prototype.*` 方法
 
 `BigInt.prototype` 目前没有任何方法。
 
-20.5.3 `BigInt.*` 方法
+### 20.5.3 `BigInt.*` 方法
 
 `BigInt` 提供了一些静态方法：
 
-*   `BigInt.asIntN(bits, value)`
-*   `BigInt.asUintN(bits, value)`
-*   `BigInt.from(value)`
+* `BigInt.asIntN(bits, value)`
+* `BigInt.asUintN(bits, value)`
+* `BigInt.from(value)`
 
-20.5.4 类型转换与 64 位整数
+### 20.5.4 类型转换与 64 位整数
 
 你可以将 bigint 转换为字符串或数字：
 
@@ -5495,7 +5526,7 @@ Number(10n); // 10
 
 如果 bigint 超过了数字类型的安全整数范围，`Number()` 会导致精度丢失。
 
-20.6 将 bigints 转换为其他原始类型
+## 20.6 将 bigints 转换为其他原始类型
 
 你可以将 bigint 转换为布尔值或字符串：
 
@@ -5505,7 +5536,7 @@ Boolean(0n); // false
 String(10n); // "10"
 ```
 
-20.7 针对 64 位值的 TypedArrays 和 DataView 操作
+## 20.7 针对 64 位值的 TypedArrays 和 DataView 操作
 
 JavaScript 提供了 `BigInt64Array` 和 `BigUint64Array` 来处理 64 位整数：
 
@@ -5513,11 +5544,11 @@ JavaScript 提供了 `BigInt64Array` 和 `BigUint64Array` 来处理 64 位整数
 let arr = new BigInt64Array([1n, 2n, 3n]);
 ```
 
-20.8 Bigints 和 JSON
+## 20.8 Bigints 和 JSON
 
 bigints 不能直接被 `JSON.stringify` 序列化。
 
-20.8.1 bigints 字符串化
+### 20.8.1 bigints 字符串化
 
 `JSON.stringify({ a: 10n })` 会抛出 `TypeError`。为了解决这个问题，你需要手动将 bigint 转换为字符串：
 
@@ -5525,7 +5556,7 @@ bigints 不能直接被 `JSON.stringify` 序列化。
 JSON.stringify({ a: 10n.toString() }); // '{"a":"10"}'
 ```
 
-20.8.2 解析 bigints
+### 20.8.2 解析 bigints
 
 在解析 JSON 时，你需要手动将字符串转回 bigint：
 
@@ -5533,30 +5564,26 @@ JSON.stringify({ a: 10n.toString() }); // '{"a":"10"}'
 JSON.parse('{"a":"10"}', (key, value) => BigInt(value)); // 10n
 ```
 
-20.9 常见：Bigints
+## 20.9 常见问题：Bigints
 
-20.9.1 如何决定何时使用数字，何时使用 bigints?
+### 20.9.1 如何决定何时使用数字，何时使用 bigints?
 
 如果你需要处理超过 $2^{53}-1$ 的整数，请使用 `bigint`。如果你需要浮点数运算，请继续使用 `number`。
 
-20.9.2 为什么不像处理 bigints 那样增加数字的精度？
+### 20.9.2 为什么不像处理 bigints 那样增加数字的精度？
 
 `number` 类型是为 IEEE 754 浮点数设计的，增加精度会改变其底层实现和性能。
 
-
-
-
-
 ```javascript
-[](#cb345-1)const priceInCents = 123_000_00; // 123 万美元
+const priceInCents = 123_000_00; // 123 万美元
 ```
 
 与数字字面量一样，有两个限制条件适用：
 
--   我们只能在两个数字之间放置下划线。
--   我们连续最多只能使用一个下划线。
+- 我们只能在两个数字之间放置下划线。
+- 我们连续最多只能使用一个下划线。
 
-## 20.4 为 bigints 重用数字运算符（重载）
+## 20.4 为 bigints 重用数字运算符（重载）
 
 对于大多数运算符，我们是不允许混合使用 `bigints` 和 `numbers` 的。如果这样做，则会抛出异常：
 
@@ -5565,21 +5592,21 @@ JSON.parse('{"a":"10"}', (key, value) => BigInt(value)); // 10n
 TypeError: Cannot mix BigInt and other types, use explicit conversions
 ```
 
-此该规则的原因是，没有通用的方法可以将 `number` 和 `bigint` 转换为共同类型：`numbers` 无法表示超过 53 位的 `bigints`，而 `bigints` 无法表示分数。因此，异常会警告我们可能存在可能导致意外结果的拼写错误。
+此规则的原因是，没有通用的方法可以将 `number` 和 `bigint` 转换为共同类型：`numbers` 无法表示超过 53 位的 `bigints`，而 `bigints` 无法表示分数。因此，异常会警告我们可能存在可能导致意外结果的拼写错误。
 
 例如，以下表达式的结果应该是 `9007199254740993n` 还是 `9007199254740992`？
 
 ```
-[](#cb347-1)2**53 + 1n
+2**53 + 1n
 ```
 
 同样，也不清楚以下表达式的结果应该是什么：
 
 ```
-[](#cb348-1)2n**53n * 3.3
+2n**53n * 3.3
 ```
 
-### 20.4.1 算术运算符
+### 20.4.1 算术运算符
 
 二进制 `+`、二进制 `-`、`*`、`**` 的工作符合预期：
 
@@ -5616,7 +5643,7 @@ TypeError: Cannot mix BigInt and other types, use explicit conversions
 TypeError: Cannot convert a BigInt value to a number
 ```
 
-### 20.4.2 排序运算符
+### 20.4.2 排序运算符
 
 排序运算符 `<`, `>`, `>=`, `<=` 的工作符合预期：
 
@@ -5634,9 +5661,9 @@ true
 true
 ```
 
-### 20.4.3 位运算符
+### 20.4.3 位运算符
 
-#### 20.4.3.1 数字的位运算符
+#### 20.4.3.1 数字的位运算符
 
 位运算符将 `numbers` 解释为 32 位整数。这些整数要么是无符号的要么是有符号的。如果是有符号的，整数的负值是其`补码`（将一个整数与其补码相加——在忽略溢出的情况下会产生零）：
 
@@ -5654,20 +5681,18 @@ true
 2147483647
 ```
 
-#### 20.4.3.2 bigints 的位运算符
+#### 20.4.3.2 bigints 的位运算符
 
 对于 `bigints`，位运算符将负号解释为无限补码——例如：
 
--   `-1` 是 `···111111`（1 向左无限延伸）
--   `-2` 是 `···111110`
--   `-3` 是 `···111101`
--   `-4` 是 `···111100`
+* `-1` 是 `···111111`（1 向左无限延伸）
+* `-2` 是 `···111110`
+* `-3` 是 `···111101`
+* `-4` 是 `···111100`
 
 也就是说，负号更多像是一个外部标志，而不是表示为实际的位。
 
-#### 20.4.3.3 位取反 (`~`)
-
-
+#### 20.4.3.3 位取反 (`~`)
 
 位取反 (`~`) 会反转所有位：
 
@@ -5680,7 +5705,7 @@ true
 1n
 ```
 
-#### 20.4.3.4 二进制位运算符 (`&`, `|`, `^`)
+#### 20.4.3.4 二进制位运算符 (`&`, `|`, `^`)
 
 将二进制位运算符应用于 `bigints` 的工作方式与应用于 `numbers` 类似：
 
@@ -5696,7 +5721,7 @@ true
 '1010'
 ```
 
-#### 20.4.3.5 有符号位移运算符 (`<<` 和 `>>`)
+#### 20.4.3.5 有符号位移运算符 (`<<` 和 `>>`)
 
 `bigints` 的有符号位移运算符保留数字的符号：
 
@@ -5712,7 +5737,7 @@ true
 -1n
 ```
 
-#### 20.4.3.6 无符号右移运算符 (`>>>`)
+#### 20.4.3.6 无符号右移运算符 (`>>>`)
 
 `bigints` 没有无符号右移运算符：
 
@@ -5720,10 +5745,6 @@ true
 > 2n >>> 1
 TypeError: BigInt does not support unsigned right shift
 ```
-
-
-
-
 
 * (1) `bigints` 不支持一元 `+` 运算符，因为许多代码依赖于它将操作数转换为数字。
 
@@ -5757,7 +5778,7 @@ TypeError: Do not know how to serialize a BigInt
 
 因此，我们最好的选择是将 `bigints` 存储在字符串中：
 
-```
+```javascript
 const bigintPrefix = '[[bigint]]';
 
 function bigintReplacer(_key, value) {
@@ -5778,7 +5799,7 @@ assert.equal(
 
 以下代码展示了如何解析类似上一个示例中产生的字符串。
 
-```
+```javascript
 function bigintReviver(_key, value) {
   if (typeof value === 'string' && value.startsWith(bigintPrefix)) {
     return BigInt(value.slice(bigintPrefix.length));
@@ -5894,10 +5915,6 @@ Unicode 的第一个版本使用了 16 位的 `code points`。自那以后，字
 * D8, D9, DA, DB
 * DC, DD, DE, DF
 
-
-
-
-
 对于每个代理（surrogate），我们有 4 个对供选择，这就是剩余 2 个位数的来源。
 
 因此，每个 `UTF-16` 编码单元始终是高位代理（leading surrogate）、低位代理（trailing surrogate），或者编码一个 BMP 代码点。
@@ -5907,7 +5924,7 @@ Unicode 的第一个版本使用了 16 位的 `code points`。自那以后，字
 * 代码点 `0x03C0` (`π`) 位于 BMP 中，因此可以用一个的 `UTF-16` 编码单元表示：`0x03C0`。
 * 代码点 `0x1F642` (`🙂`) 位于星际平面（astral plane），由两个编码单元表示：`0xD83D` 和 `0xDE42`。
 
-## 21.1.2.3 UTF-8 (Unicode 转换格式 8-bit)
+#### 21.1.2.3 UTF-8 (Unicode 转换格式 8-bit)
 
 UTF-8 使用 8 位编码单元。它使用 1–4 个编码单元来编码一个代码点：
 
@@ -5961,23 +5978,25 @@ true
 
 例如，现在 HTML 文件通常这样开始的：
 
-```
-[](#cb377-1)<!doctype html>
-[](#cb377-2)<html>
-[](#cb377-3)<head>
-[](#cb377-4)  <meta charset="UTF-8">
-[](#cb377-5)···
+```html
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+···
 ```
 
-对于在 浏览器中加载的 HTML 模块，[标准编码](https://html.spec.whatwg.org/multipage/webappapis.html#fetch-a-single-module-script)也是 `UTF-8`。
 
-## 21.3 字形簇（Grapheme clusters）—— 真正的字符
+
+对于在浏览器中加载的 HTML 模块，[标准编码](https://html.spec.whatwg.org/multipage/webappapis.html#fetch-a-single-module-script)也是 `UTF-8`。
+
+## 21.3 字形簇 —— 真正的字符
 
 一旦考虑到世界上许多文字系统，“字符”的概念就会变得异常复杂。
 
 一方面，有由代码点表示的 Unicode 字符。
 
-另一方面，有字形簇（grapheme clusters）。字形簇与屏幕或纸张上显示的符号最为对应。它被定义为“一个水平可分割的文本单元”。因此，[Unicode 文文档](https://unicode.org/reports/tr29/#Grapheme_Cluster_Boundaries) 也称其为“用户感知字符”。编码一个字形簇需要一个或多个代码点字符。
+另一方面，有字形簇。字形簇与屏幕或纸张上显示的符号最为对应。它被定义为“一个水平可分割的文本单元”。因此，[Unicode 文档](https://unicode.org/reports/tr29/#Grapheme_Cluster_Boundaries) 也称其为“用户感知字符”。编码一个字形簇需要一个或多个代码点字符。
 
 例如，天那加语的 *kshi* 是由 4 个代码点编码的。我们使用扩展运算符（`...`）将字符串拆分为一个包含代码点字符的 `Array`（详细信息，请参阅 §22.6.1 “处理代码点”）：
 
@@ -5989,7 +6008,7 @@ true
 
 ![](img/file1.svg) **关于字形簇的更多信息**
 
-有关更多信息，请参阅 Manish Goregaokar 写的[停止给代码点赋予意义”](https://manishearth.github.io/blog/2017/01/14/stop-ascribing-meaning-to-unicode-code-points/)。
+有关更多信息，请参阅 Manish Goregaokar 写的[停止给代码点赋予意义](https://manishearth.github.io/blog/2017/01/14/stop-ascribing-meaning-to-unicode-code-points/)。
 
 ![](img/file7.svg) **测验**
 
@@ -5997,20 +6016,18 @@ true
 
 # 22 字符串
 
-* *
-
 * 22.1 普通字符串字面量
     * 22.1.1 转义
-    * 22.2 访问字符和代码点
+* 22.2 访问字符和代码点
     * 22.2.1 访问 JavaScript 字符
     * 22.2.2 通过 `for-of` 和扩展运算符访问 Unicode 代码点字符
-    * 22.3 通过 `+` 拼接字符串
-    * 22.4 转换为字符串
+* 22.3 通过 `+` 拼接字符串
+* 22.4 转换为字符串
     * 22.4.1 字符串对象
     * 22.4.2 自定义对象
     * 22.4.3 另一种值的方式
-    * 22.5 比较字符串
-    * 22.6 文本原子：Unicode 字符、JavaScript 字符、字形簇
+* 22.5 比较字符串
+* 22.6 文本原子：Unicode 字符、JavaScript 字符、字形簇
     * 22.6.1 处理代码点
     * 22.6.2 处理单元
     * 22.6.3 ASCII
@@ -6030,15 +6047,15 @@ true
 
 普通字符串字面量由单引号或双引号分隔：
 
-```
-[](#cb378-1)const str1 = 'abc';
-[](#cb378-2)const str2 = "abc";
-[](#cb378-3)assert.equal(str1, str2);
+```javascript
+const str1 = 'abc';
+const str2 = "abc";
+assert.equal(str1, str2);
 ```
 
 单引号使用得更多，因为它更容易提到 HTML（HTML 倾向于使用双引号）。
 
-下一章](#ch24.xhtml_template-literals）将介绍*模板字符串*，它们提供了：
+下一章将介绍*模板字符串*，它们提供了：
 
 * 字符串插值
 * 多行
@@ -6051,20 +6068,17 @@ true
 * Unix 换行：`'\n'`
 * Windows 换行：`'\r\n'`
 * 制表符：`'\t'`
-* 反斜杠：` `'\\'`
+* 反斜杠：`'\\'`
 
 反斜杠还允许我们在字符串字面量内部使用该字面量的分隔符：
 
+```javascript
+assert.equal(
+  'She said: "Let\'s go!"',
+  "She said: \"Let's go!");
 ```
-[](#cb379-1)assert.equal(
-[](#cb379-2)  'She said: "Let\'s go!"',
-[](#cb379-3)  "She said: \"Let's go!");
-```
 
-
-
-
-通过 `for-of` 或扩展运算符（`...`）遍历字符串访问的是 Unicode 码点（code point）字符。每个码点字符由 1–2 个 JavaScript 字符编码。更多信息，请参阅 §22.6 “文本原子：Unicode 字符、JavaScript 字符、字素簇”。
+通过 `for-of` 或扩展运算符（`...`）遍历字符串访问的是 Unicode 码点字符。每个码点字符由 1–2 个 JavaScript 字符编码。更多信息，请参阅 §22.6 “文本原子：Unicode 字符、JavaScript 字符、字素簇”。
 
 以下是我们如何通过 `for-of` 遍历字符串的码点字符：
 
@@ -6195,13 +6209,13 @@ assert.equal(String(obj), 'hello');
 
 ### 22.4.3 值的字符串化的另一种方法
 
-JSON 数据格式是 JavaScript 值的文本表示。因此，`JSON.stringify()`(#ch048.xhtml_JSON.stringify) 也可以用于将值转换为字符串：
+JSON 数据格式是 JavaScript 值的文本表示。因此，`JSON.stringify()` 也可以用于将值转换为字符串：
 
 ```javascript
 > JSON.stringify({a: 1})
 '{"a":1}'
 > JSON.stringify(['a', ['b']])
-'["a",["b"]]
+'["a",["b"]]'
 ```
 
 需要是 JSON 仅支持 `null`、`booleans`、`numbers`、`strings` 和 `Arrays`（它始终将其处理为像对象字面量创建的）。提示：第三个参数允许我们切换多行输出并指定缩进——例如：
@@ -6233,16 +6247,16 @@ console.log(JSON.stringify({first: 'Jane', last: 'Doe'}, null, 2));
 > 'ä' < 'b' // false
 ```
 
-正确比较文本超出了本书的范围。它通过 ECMAScript 国际化 API (`Intl`)(https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Intl）支持。
+正确比较文本超出了本书的范围。它通过 ECMAScript 国际化 API (`Intl`) 支持。
 
 ## 22.6 文本原子：Unicode 字符、JavaScript 字符、字素簇
 
 快速回顾 `Unicode – 简介介绍`：
 
-* Unicode 字符由 `码点（code points）` 表示——范围为 21 位的数字。
-* 在 JavaScript 字符串中，Unicode 通过基于 UTF-16 编码的 `码单元（code units）` 实现。每个码单元是一个 16 位的数字。编码单个码点需要一到两个码单元。
-* 因此，每个 JavaScript 字符都由一个码单元表示。在 JavaScript 标准库中，码单元也称为 `字符代码（char codes）`。它们确实如此：JavaScript 字符的数字。
-* `字素簇（Grapheme clusters）`（`用户感知字符`）是在屏幕或纸上显示的书写符号。需要一个或多个 Unicode 字符来编码单个字素簇。
+* Unicode 字符由 `码点` 表示——范围为 21 位的数字。
+* 在 JavaScript 字符串中，Unicode 通过基于 UTF-16 编码的 `码单元` 实现。每个码单元是一个 16 位的数字。编码单个码点需要一到两个码单元。
+* 因此，每个 JavaScript 字符都由一个码单元表示。在 JavaScript 标准库中，码单元也称为 `字符代码`。它们确实如此：JavaScript 字符的数字。
+* `字素簇`（`用户感知字符`）是在屏幕或纸上显示的书写符号。需要一个或多个 Unicode 字符来编码单个字素簇。
 
 以下代码演示了单个 Unicode 字符包含一个或两个 JavaScript 字符。我们通过 `.length` 计数后者：
 
@@ -6263,7 +6277,7 @@ assert.equal('🙂'.length, 2); // 1 个 Unicode 字符，2 个 JavaScript 字�
 
 让我们探索 JavaScript 处理码点的工具。
 
-`Unicode 码点转义（Unicode code point escape）` 允许我们以十六进制指定码点（1–5 位）。它产生一个或两个 JavaScript 字符。
+`Unicode 码点转义` 允许我们以十六进制指定码点（1–5 位）。它产生一个或两个 JavaScript 字符。
 
 ```javascript
 > '\u{1F642}'
@@ -6288,7 +6302,7 @@ Unicode 转义序列
 '1f642'
 ```
 
-我们可以*迭代*字符串，访问 Unicode 字符（而不是 JavaScript 字符）。迭代将在本书后面介绍（ch033.xhtml_ch_sync-iteration）。一种迭代方法是通过 `for-of` 循环：
+我们可以*迭代*字符串，访问 Unicode 字符（而不是 JavaScript 字符）。迭代将在本书后面介绍。一种迭代方法是通过 `for-of` 循环：
 
 ```javascript
 const str = '🙂a';
@@ -6302,7 +6316,7 @@ for (const codePointChar of str) {
 // 'a'
 ```
 
-扩展（`...`）到数组字面量（ch034.xhtml-spreading-into-array-literals）也基于迭代并访问 Unicode 字符：
+扩展（`...`）到数组字面量也基于迭代并访问 Unicode 字符：
 
 ```javascript
 > [...'🙂a']
@@ -6322,43 +6336,39 @@ for (const codePointChar of str) {
 
 字符串的索引和长度基于 JavaScript 字符（通过 UTF-16 码单元表示）。
 
-要以十六进制指定码单元，我们可以使用恰好四个十六进制位的*Unicode 码单元转义（Unicode code unit escape）*。
+要以十六进制指定码单元，我们可以使用恰好四个十六进制位的*Unicode 码单元转义*。
 
-
-
-
-
-```
+```javascript
 > '\uD83D\uDE42'
 '🙂'
 ```
 
-我们可以使用 `String.fromCharCode()`。`Char code` 是标准库中 `code unit`（代码单元）的名称：
+我们可以使用 `String.fromCharCode()`。`Char code` 是标准库中 `code unit` 的名称：
 
-```
+```javascript
 > String.fromCharCode(0xD83D) + String.fromCharCode(0xDE42)
 '🙂'
 ```
 
 要获取字符的字符码，使用 `.charCodeAt()`：
 
-```
+```javascript
 > '🙂'.charCodeAt(0).toString(16)
 'd83d'
 ```
 
 ### 22.6.3 ASCII 转义
 
-如果字符的码点（code point）小于 256，我们可以通过带有恰好两个十六进制数字的 `ASCII escape` 来引用它：
+如果字符的码点小于 256，我们可以通过带有恰好两个十六进制数字的 `ASCII escape` 来引用它：
 
-```
+```javascript
 > 'He\x6C\xCo'
 'Hello'
 ```
 
 （ASCII 转义的正式名称是 `Hexadecimal escape sequences` [十六进制转义序列 – 它是第一个使用十六进制数的转义。）
 
-### 22.6.4 注意事项：字符簇（grapheme clusters）
+### 22.6.4 注意事项：字符簇
 
 在处理可能用任何人类语言编写的文本时，最好在字符簇的边界处进行分割，而不是在 Unicode 字符的边界处。
 
@@ -6372,7 +6382,7 @@ TC39 正在开发 [`Intl.Segmenter`](https://github.com/tc39/proposal-intl-segme
 
 ### 22.7.1 转换为字符串
 
-表 [14]](#ch023.xhtml_tbl:converting-to-string) 描述了如何将各种值转换为字符串。
+表 14 描述了如何将各种值转换为字符串。
 
 表 14：将值转换为字符串。
 
@@ -6393,6 +6403,7 @@ TC39 正在开发 [`Intl.Segmenter`](https://github.com/tc39/proposal-intl-segme
     *   大小：16 位，无符号
     *   将数字转换为字符：`String.fromCharCode()` ^([ES1])
     *   将字符转换为数字：字符串方法 `.charCodeAt()` ^([ES1])
+
 *   **Code point（码点）：** 用数字表示一个 Unicode 字符。
     *   大小：21 位，无符号（17 个平面，每个平面 16 位）
     *   将数字转换为字符：`String.fromCodePoint()` ^([ES6])
@@ -6402,7 +6413,6 @@ TC39 正在开发 [`Intl.Segmenter`](https://github.com/tc39/proposal-intl-segme
 
 ```javascript
 // 通过 [] 访问字符
-[]
 const str = 'abc';
 assert.equal(str[1], 'b');
 // 通过 + 拼接字符串
@@ -6422,6 +6432,7 @@ assert.equal('take ' + 3 + ' oranges', 'take 3 oranges');
     > 'abcde'.endsWith('cd', 4)
     true
     ```
+
 *   `.includes(searchString: string, startPos=0): boolean` ^([ES6])
     如果字符串包含 `searchString` 则返回 `true`，否则返回 `false`。搜索从 `startPos` 开始。
     ```
@@ -6430,6 +6441,7 @@ assert.equal('take ' + 3 + ' oranges', 'take 3 oranges');
     > 'abc'.includes('b', 2)
     false
     ```
+
 *   `.indexOf(searchString: string, minIndex=0): number` ^([ES1])
     返回 `searchString` 在字符串中出现的最低索引，否则返回 `-1`。任何返回的索引将是 `minIndex` 或更高。
     ```
@@ -6440,6 +6452,7 @@ assert.equal('take ' + 3 + ' oranges', 'take 3 oranges');
     > 'abab'.indexOf('c')
     -1
     ```
+
 *   `.lastIndexOf(searchString: string, maxIndex=Infinity): number` ^([ES1])
     返回 `searchString` 在字符串中出现的最高索引，否则返回 `-1`。任何返回的索引将是 `maxIndex` 或更低。
     ```
@@ -6450,6 +6463,7 @@ assert.equal('take ' + 3 + ' oranges', 'take 3 oranges');
     > 'abab'.lastIndexOf('ab')
     2
     ```
+
 *   `.match(regExp: string | RegExp): RegExpMatchArray | null` ^([ES3])
     如果 `regExp` 是一个没有设置 `/g` 标志的正则表达式，则 `.match()` 返回 `regExp` 在字符串中的第一个匹配项。如果没有匹配项，则返回 `null`。如果 `regExp` 是字符串，则在执行上述步骤之前，它被用于创建一个正则表达式（类似于 `new RegExp()` 的参数）。
     结果具有以下类型：
@@ -6462,7 +6476,7 @@ assert.equal('take ' + 3 + ' oranges', 'take 3 oranges');
       };
     }
     ```
-    编号的捕获组变为数组的索引（这就是为什么该类型扩展了 `Array`）。命名捕获组 (#ch046.xhtml_named-capture-groups)（ES2018）变为 `.groups` 的属性。在这种模式下，`.match()` 的工作方式类似于 `RegExp.prototype.exec()`。
+    编号的捕获组变为数组的索引（这就是为什么该类型扩展了 `Array`）。命名捕获组 (ES2018) 变为 `.groups` 的属性。在这种模式下，`.match()` 的工作方式类似于 `RegExp.prototype.exec()`。
     示例：
     ```
     > 'ababb'.match(/a(b+)/)
@@ -6472,6 +6486,7 @@ assert.equal('take ' + 3 + ' oranges', 'take 3 oranges');
     > 'abab'.match(/x/)
     null
     ```
+
 *   `.match(regExp: RegExp): string[] | null` ^([ES3])
     如果 `regExp` 的 `/g` 标志被设置，`.match()` 返回一个包含匹配项的数组，或者如果没有匹配项则返回 `null`。
     ```
@@ -6482,6 +6497,7 @@ assert.equal('take ' + 3 + ' oranges', 'take 3 oranges');
     > 'abab'.match(/x/g)
     null
     ```
+
 *   `.search(regExp: string | RegExp): number` ^([ES3])
     返回 `regExp` 在字符串中出现的索引。如果 `regExp` 是字符串，则被用于创建一个正则表达式（类似于 `new RegExp()` 的参数）。
     ```
@@ -6490,6 +6506,7 @@ assert.equal('take ' + 3 + ' oranges', 'take 3 oranges');
     > 'a2b'.search('[0-9]')
     1
     ```
+
 *   `.startsWith(searchString: string, startPos=0): boolean` ^([ES6])
     如果 `searchString` 出现在字符串的 `startPos` 位置，则返回 `true`。否则返回 `false`。
     ```
@@ -6511,6 +6528,7 @@ assert.equal('take ' + 3 + ' oranges', 'take 3 oranges');
     > 'abc'.slice(-2)
     'bc'
     ```
+
 *   `.split(separator: string | RegExp, limit?: number): string[]` ^([ES3])
     将字符串分割为子字符串数组——分隔符之间的字符串。分隔符可以是字符串：
     ```
@@ -6521,7 +6539,7 @@ assert.equal('take ' + 3 + ' oranges', 'take 3 oranges');
     ```
     > 'a : b : c'.split(/ *: */)
     [ 'a', 'b', 'c' ]
-    > 'a : b : c'.split(/( *):( *)
+    > 'a : b : c'.split(/( *):( *)/)
     [ 'a', ' ', ' ', 'b', ' ', ' ', 'c' ]
     ```
     最后一个调用演示了正则表达式组捕获变为返回数组的元素。
@@ -6535,137 +6553,108 @@ assert.equal('take ' + 3 + ' oranges', 'take 3 oranges');
     > [...'🙂X🙂']
     [ '🙂', 'X', '🙂' ]
     ```
+
 *   `.substring(start: number, end=this.length): string` ^([ES1])
-
-
-
-
-
-使用 `.slice()` 代替此方法。`.substring()` 在旧版引擎中的实现并不一致，且不支持负索引。
+    使用 `.slice()` 代替此方法。`.substring()` 在旧版引擎中的实现并不一致，且不支持负索引。
 
 ### 22.7.6 `String.prototype`: 组合
 
 * `.concat(...strings: string[]): string` ([ES3])
-
   返回字符串与 `strings` 的拼接结果。`'a'.concat('b')` 等同于 `'a'+'b'`。后者更为流行。
-
-```
-> 'ab'.concat('cd', 'ef', 'gh')
-'abcdefgh'
-```
+  ```
+  > 'ab'.concat('cd', 'ef', 'gh')
+  'abcdefgh'
+  ```
 
 * `.padEnd(len: number, fillString=' '): string` ([ES2017])
-
   在字符串末尾添加 `fillString` 的（片段），直到其达到指定的长度 `len`。如果长度已经达到或超过 `len`，则直接返回，不进行任何更改。
-
-```
-> '#'.padEnd(2)
-'# '
-> 'abc'.padEnd(2)
-'abc'
-> '#'.padEnd(5, 'abc')
-'#abca'
-```
+  ```
+  > '#'.padEnd(2)
+  '# '
+  > 'abc'.padEnd(2)
+  'abc'
+  > '#'.padEnd(5, 'abc')
+  '#abca'
+  ```
 
 * `.padStart(len: number, fillString=' '): string` ([ES2017])
-
   在字符串开头添加 `fillString` 的（片段），直到其达到指定的长度 `len`。如果长度已经达到或超过 `len`，则直接返回，不进行任何更改。
-
-```
-> '#'.padStart(2)
-' #'
-> 'abc'.padStart(2)
-'abc'
-> '#'.padStart(5, 'abc')
-'abca#'
-```
+  ```
+  > '#'.padStart(2)
+  ' #'
+  > 'abc'.padStart(2)
+  'abc'
+  > '#'.padStart(5, 'abc')
+  'abca#'
+  ```
 
 * `.repeat(count=0): string` ([ES6])
-
   返回拼接 `count` 次后的字符串。
-
-```
-> '*'.repeat()
-''
-> '*'.repeat(3)
-'***'
-```
+  ```
+  > '*'.repeat()
+  ''
+  > '*'.repeat(3)
+  '***'
+  ```
 
 ### 22.7.7 `String.prototype`: 转换
 
 * `.normalize(form: 'NFC'|'NFD'|'NFKC'|'NFKD' = 'NFC'): string` ([ES6])
-
   根据 [Unicode 规范化形式](https://unicode.org/reports/tr15/) 规范化字符串。
 
 * [1 of 2] `.replaceAll(searchValue: string | RegExp, replaceValue: string): string` ([ES2021])
-
   ![](img/file2.svg) 如果无法使用 `.replaceAll()` 怎么办
-
-  如果你的目标平台不支持 `.replaceAll()`，可以使用 `.replace()` 代替。具体详见 [§45.5.8.1 “`str.replace(searchValue, replacementValue)` ([ES3])](#ch046.xhtml_String.prototype.replace)”。
-
+  如果你的目标平台不支持 `.replaceAll()`，可以使用 `.replace()` 代替。具体详见 [§45.5.8.1 “`str.replace(searchValue, replacementValue)` ([ES3])”](#ch046.xhtml_String.prototype.replace)。
   将所有匹配 `searchValue` 的替换为 `replaceValue`。如果 `searchValue` 是一个不带 `/g` 标志的正则表达式，则会抛出 `TypeError`。
-
-```
-> 'x.x.'.replaceAll('.', '#')
-'x#x#'
-> 'x.x.'.replaceAll(/./g, '#')
-'####'
-> 'x.x.'.replaceAll(/./, '#')
-TypeError: String.prototype.replaceAll called with
-a non-global RegExp argument
-```
-
+  ```
+  > 'x.x.'.replaceAll('.', '#')
+  'x#x#'
+  > 'x.x.'.replaceAll(/./g, '#')
+  '####'
+  > 'x.x.'.replaceAll(/./, '#')
+  TypeError: String.prototype.replaceAll called with
+  a non-global RegExp argument
+  ```
   `replaceValue` 中的特殊字符有：
-
   * `$$`: 变为 `$`
-  * `$n`: 变为编号分组 `n` 的捕获内容（遗憾的是，$0` 代表字符串 `'$0'`，它不代表整个匹配项）
+  * `$n`: 变为编号分组 `n` 的捕获内容（遗憾的是，`$0` 代表字符串 `'$0'`，它不代表整个匹配项）
   * `$&`: 变为整个匹配项
   * `` $` ``: 变为匹配项之前的所有
   * `$'`: 变为匹配项之后的所有
-
   示例：
-
-```
-> 'a 1995-12 b'.replaceAll(/([0-9]{4})-([0-9]{2})/g, '|$2|')
-'a |12| b'
-> 'a 1995-12 b'.replaceAll(/([0-9]{4})-([0-9]{2})/g, '|$&|')
-'a |1995-12| b'
-> 'a 1995-12 b'.replaceAll(/([0-9]{4})-([0-9]{2})/g, '|$`|')
-'a |a | b'
-```
-
+  ```
+  > 'a 1995-12 b'.replaceAll(/([0-9]{4})-([0-9]{2})/g, '|$2|')
+  'a |12| b'
+  > 'a 1995-12 b'.replaceAll(/([0-9]{4})-([0-9]{2})/g, '|$&|')
+  'a |1995-12| b'
+  > 'a 1995-12 b'.replaceAll(/([0-9]{4})-([0-9]{2})/g, '|$`|')
+  'a |a | b'
+  ```
   同样支持命名捕获组 (ES2018)：
-
   * `$<name>`: 变为命名分组 `name` 的捕获内容
-
   示例：
-
-```
-[](#cb428-1)assert.equal(
-[](#cb428-2)  'a 1995-12 b'.replaceAll(
-[](#cb428-3)    /(?<year>[0-9]{4})-(?<month>[0-9]{2})/g, '|$<month>|'),
-[](#cb428-4)  'a |12| b');
-```
+  ```javascript
+  assert.equal(
+    'a 1995-12 b'.replaceAll(
+      /(?<year>[0-9]{4})-(?<month>[0-9]{2})/g, '|$<month>|'),
+    'a |12| b');
+  ```
 
 * [2 of 2] `.replaceAll(searchValue: string | RegExp, replacer: (...args: any[]) => string): string` ([ES2021])
-
   如果第二个参数是函数，则匹配项将被该函数返回的字符串替换。其参数 `args` 为：
-
   * `matched: string`. 整个匹配项
   * `g1: string|undefined`. 编号分组 1 的捕获内容
   * `g2: string|undefined`. 编号分组 2 的捕获内容
   * （等等）
-  * `offset: number`. 匹配项在输入字符串中的位置？
+  * `offset: number`. 匹配项在输入字符串中的位置
   * `input: string`. 整个输入字符串
-
-```
-[](#cb429-1)const regexp = /([0-9]{4})-([0-9]{2})/g;
-[](#cb429-2)const replacer = (all, year, month) => '|' + all + '|';
-[](#cb429-3)assert.equal(
-[](#cb429-4)  'a 1995-12 b'.replaceAll(regexp, replacer),
-[](#cb429-5)  'a |1995-12| b');
-```
-
+  ```javascript
+  const regexp = /([0-9]{4})-([0-9]{2})/g;
+  const replacer = (all, year, month) => '|' + all + '|';
+  assert.equal(
+    'a 1995-12 b'.replaceAll(regexp, replacer),
+    'a |1995-12| b');
+  ```
   同样支持命名捕获组 (ES2018)。如果有，则会在末尾添加参数：...
 
 ### 22.7.8 `Sources`
@@ -6680,20 +6669,17 @@ a non-global RegExp argument
 
 ![](img/file7.svg) **测验**
 
-参见测验应用。
+查看测验应用。
 
+# 23 模板字面量
 
-
-
-
-```markdown
-## 23.7 多行模板字量与缩进
+## 23.7 多行模板字面量与缩进
 
 ### 23.7.1 修复：用于取消缩进的模板标签
 
 ### 23.7.2 修复：`.trim()`
 
-## 23.8 通过模板字量进行简单的模板化
+## 23.8 通过模板字面量进行简单的模板化
 
 ### 23.8.1 一个更复杂的示例
 
@@ -6701,20 +6687,21 @@ a non-global RegExp argument
 
 ***
 
-在我们深入研究 `template literal`（模板字量）和 `tagged template`（标签模板）这两个特性之前，让我们先检查一下 `template` 一词的多种含义。
+在我们深入研究 `template literal`（模板字面量）和 `tagged template`（标签模板）这两个特性之前，让我们先检查一下 `template` 一词的多种含义。
 
-## 23.1 消除歧：“template”
+## 23.1 消除歧义：“template”
 
 尽管以下三者的名称中都包含 `template`，且看起来相似，但它们有显著的区别：
 
 *   `text template`（文本模板）是从数据到文本的函数。它经常用于 Web 开发，并且通常通过文本文件定义。例如，以下文本为 [Handlebars](https://handlebarsjs.com) 库定义了一个模板：
 
 ```html
-<div class="entry"> own  <h1>{{title}}</h1>
+<div class="entry">
+  <h1>{{title}}</h1>
   <div class="body">
     {{body}}
   </div>
-</div
+</div>
 ```
 
 这个模板有两个空位需要填充：`title` 和 `body`。它的用法如下：
@@ -6726,14 +6713,14 @@ const data = {title: 'My page', body: 'Welcome to my page!'};
 const html = tmplFunc(data);
 ```
 
-*   `template literal`（模板字量）类似于字符串字量，但它具有额外的功能——例如插值。它由反引号分隔：
+*   `template literal`（模板字面量）类似于字符串字面量，但它具有额外的功能——例如插值。它由反引号分隔：
 
 ```javascript
 const num = 5;
 assert.equal(`Count: ${num}!`, 'Count: 5!');
 ```
 
-*   从语法上讲，`tagged template`（标签模板）是一个跟在函数（或者更准确地说，是一个求值为为函数的表达式）后面的模板字量。这会导致函数被调用。它的参数源自模板字量的内容。
+*   从语法上讲，`tagged template`（标签模板）是一个跟在函数（或者更准确地说，是一个求值为函数的表达式）后面的模板字面量。这会导致函数被调用。它的参数源自模板字面量的内容。
 
 ```javascript
 const getArgs = (...args) => args;
@@ -6744,11 +6731,11 @@ assert.deepEqual(
 
 注意，`getArgs()` 同时接收字面量的文本和通过 `${}` 插值的数据。
 
-## 23.2 模板字量
+## 23.2 模板字面量
 
-与普通的字符串字量相比，模板字量有两个新特性。
+与普通的字符串字面量相比，模板字面量有两个新特性。
 
-首先，它支持 `string interpolation`（字符串插值）：如果我们在 `${}` 内部放入一个动态计算的值，它会被转换为字符串并插入到由该字量返回返回的字符串中。
+首先，它支持 `string interpolation`（字符串插值）：如果我们在 `${}` 内部放入一个动态计算的值，它会被转换为字符串并插入到由该字面量返回的字符串中。
 
 ```javascript
 const MAX = 100;
@@ -6763,7 +6750,7 @@ assert.throws(
   {message: 'At most 100 allowed: 101!'});
 ```
 
-其次，模板字量可以跨行：
+其次，模板字面量可以跨行：
 
 ```javascript
 const str = `this is
@@ -6771,7 +6758,7 @@ a text with
 multiple lines`;
 ```
 
-模板字量总是产生字符串。
+模板字面量总是产生字符串。
 
 ## 23.3 标签模板
 
@@ -6781,10 +6768,8 @@ multiple lines`;
 function tagFunc(...args) {
   return args;
 }
-
 const setting = 'dark mode';
 const value = true;
-
 assert.deepEqual(
   tagFunc`Setting ${setting} is ${value}!`, // (A)
   [['Setting ', ' is ', '!'], 'dark mode', true] // (B)
@@ -6794,18 +6779,15 @@ assert.deepEqual(
 第一个反引号之前的函数被称为 `tag function`（标签函数）。它的参数是：
 
 *   `Template strings`（模板字符串，第一个参数）：一个包含插值 `${}` 周围文本片段的数组。
-
     *   在示例中：`['Setting ', ' is ', '!']`
-
 *   `Substitutions`（剩余参数）：插值。
-
     *   在示例中：`'dark mode'` 和 `true`
 
-字量的静态（固定）部分（模板字符串）与动态部分（插值）分开。
+字面量的静态（固定）部分（模板字符串）与动态部分（插值）分开。
 
 标签函数可以返回任意值。
 
-### 23.3.1 熟化（cooked）与原始（raw）字符串
+### 23.3.1 熟化与原始字符串
 
 到目前为止，我们只见过 `cooked` 模板字符串。但标签函数可以得到两种：
 
@@ -6858,7 +6840,7 @@ assert.deepEqual(
 );
 ```
 
-错误的转义会在模板字量和字符串字量产生语法错误。为什么 JavaScript 对标签模板处理不同？它允许我们将标签模板用于无法放入字符串字量的文本——例如：
+错误的转义会在模板字面量和字符串字面量产生语法错误。为什么 JavaScript 对标签模板处理不同？它允许我们将标签模板用于无法放入字符串字面量的文本——例如：
 
 ```javascript
 windowsPath`C:\uuu\xxx\111`
@@ -6875,13 +6857,12 @@ latex`\unicode`
 
 ```javascript
 import {html, render} from 'lit-html';
-
 const template = (items) => html`
 <ul>
   ${
     repeat(items,
       (item) => item.id,
-      (item, index) => html`<li>${index}. ${item.name}</li>>`
+      (item, index) => html`<li>${index}. ${item.name}</li>`
     )
   }
 </ul>`;
@@ -6890,11 +6871,6 @@ const template = (items) => html`
 `repeat()` 是用于循环的自定义函数。它的第二个参数为第三个参数返回的值产生唯一键。注意该参数所使用的嵌套标签模板。
 
 ### 23.4.2 标签函数库：re-template-tag
-```
-
-
-
-
 
 [re-template-tag](https://github.com/rauschma/re-template-tag) 是一个用于组合正则表达式的简单库。带有 `re` 标记的模板会生成正则表达式。其主要优势是我们可以通过 `${}`（行 A）对正则表达式和普通文本进行插值：
 
@@ -6903,18 +6879,16 @@ const RE_YEAR = re`(?<year>[0-9]{4})`;
 const RE_MONTH = re`(?<month>[0-9]{2})`;
 const RE_DAY = re`(?<day>[0-9]{2})`;
 const RE_DATE = re`/${RE_YEAR}-${RE_MONTH}-${RE_DAY}/u`; // (A)
-
 const match = RE_DATE.exec('2017-01-27');
 assert.equal(match.groups.year, '2017');
 ```
 
 ### 23.4.3 标签函数库：graphql-tag
 
-[graphql-tag ](https://github.com/apollographql/graphql-tag) 让我们通过标签模板创建 GraphQL 查询：
+[graphql-tag](https://github.com/apollographql/graphql-tag) 让我们通过标签模板创建 GraphQL 查询：
 
 ```javascript
 import gql from 'graphql-tag';
-
 const query = gql`
  {
   user(id: 5) {
@@ -6926,7 +6900,7 @@ const query = gql`
 
 此外，还有插件用于在 Babel、TypeScript 等环境中预编译此类查询。
 
-## 23.5 原始字符串字面量 (Raw string literals)
+## 23.5 原始字符串字面量
 
 原始字符串字面量是通过标签函数 `String.raw` 实现的。在这种字符串字面量中，反斜杠没有任何特殊作用（如转义字符等）：
 
@@ -7000,7 +6974,7 @@ Output:
 import dedent from 'dedent';
 function divDedented(text) {
   return dedent`
-<<div>>
+<div>
   ${text}
 </div>
  `.replace(/\n/g, '#\n');
@@ -7025,7 +6999,7 @@ Output:
 ```javascript
 function divDedented(text) {
   return `
-<<div>
+<div>
   ${text}
 </div>
  `.trim().replace(/\n/g, '#\n');
@@ -7060,7 +7034,6 @@ const addresses = [
   { first: 'Bob', last: 'Smith' },
   { first: 'Alice', last: 'Brown' }
 ];
-
 const tmpl = (addrs) => `
 <table>
 ${addrs.map((addr) => `
@@ -7085,9 +7058,9 @@ tmpl(addresses);
 </table>
 ```
 
-### 23.8.2 简单的 HTML 转义 (HTML-escaping)
+### 23.8.2 简单的 HTML 转义
 
-以下函数对纯文本进行转 HTML 转义处理，以使其在 HTML 中正确显示：
+以下函数对纯文本进行 HTML 转义处理，以使其在 HTML 中正确显示：
 
 ```javascript
 function escapeHtml(str) {
@@ -7103,10 +7076,6 @@ function escapeHtml(str) {
 assert.equal(escapeHtml('Rock & Roll'), 'Rock &amp; Roll');
 assert.equal(escapeHtml('<blank>'), '&lt;blank&gt;');
 ```
-
-
-
-
 
 ![](img/file6.svg) **练习：HTML 模板填充**
 
@@ -7147,14 +7116,11 @@ const mySymbol = Symbol('mySymbol');
 符号是原始值：
 
 * 它们必须通过 `typeof` 进行分类：
-
     ```javascript
     const sym = Symbol();
     assert.equal(typeof sym, 'symbol');
     ```
-
 * 它们可以作为对象的属性键：
-
     ```javascript
     const obj = {
       [sym]: 123,
@@ -7177,12 +7143,10 @@ const string1 = 'abc';
 const string2 = 'abc';
 assert.equal(
   string1 === string2, true); // 非唯一
-
 const object1 = {};
 const object2 = {};
 assert.equal(
   object1 === object2, false); // 唯一
-
 const symbol1 = Symbol();
 const symbol2 = Symbol();
 assert.equal(
@@ -7226,7 +7190,7 @@ assert.equal(mySymbol.description, 'mySymbol');
 const COLOR_BLUE = 'Blue';
 ```
 
-优点是记录该常量会产生有用的输出。缺点是存在将无关值误认为颜色的风险，因为两个内容相同的字符串被认为认为是相等的：
+优点是记录该常量会产生有用的输出。缺点是存在将无关值误认为颜色的风险，因为两个内容相同的字符串被认为是相等的：
 
 ```javascript
 const MOOD_BLUE = 'Blue';
@@ -7238,7 +7202,6 @@ assert.equal(COLOR_BLUE, MOOD_BLUE);
 ```javascript
 const COLOR_BLUE = Symbol('Blue');
 const MOOD_BLUE = Symbol('Blue');
-
 assert.notEqual(COLOR_BLUE, MOOD_BLUE);
 ```
 
@@ -7251,7 +7214,6 @@ const COLOR_YELLOW = Symbol('Yellow');
 const COLOR_GREEN  = Symbol('Green');
 const COLOR_BLUE   = Symbol('Blue');
 const COLOR_VIOLET = Symbol('Violet');
-
 function getComplement(color) {
   switch (color) {
     case COLOR_RED: return COLOR_GREEN;
@@ -7271,7 +7233,6 @@ assert.equal(getComplement(COLOR_YELLOW), COLOR_VIOLET);
 属性键用于两个级别：
 
 * 属性键用于基础层——它们解决了点计算问题。例如，标准的 ECMAScript 方法 `.toString()`：
-
     ```javascript
     const point = {
       x: 7,
@@ -7282,9 +7243,7 @@ assert.equal(getComplement(COLOR_YELLOW), COLOR_VIOLET);
     };
     assert.equal(String(point), '(7, 4)');
     ```
-
 * 元级别是元级别属性——它与领域问题无关。例如，标准方法 `.toJSON()`：
-
     ```javascript
     const point = {
       x: 7,
@@ -7306,16 +7265,11 @@ assert.equal(getComplement(COLOR_YELLOW), COLOR_VIOLET);
 以下是 JavaScript 中此类问题的例子：
 
 * 在 2018 年 5 月，Array 方法 `.flatten()` 必须重命名为 `.flat()`，因为之前的名称已被库使用（[来源](https://github.com/tc39/proposal-flatMap/commit/093eacc7fe0906e70f7626bf6c7d6e9dfc53cce9)）。
-
-
-
-
-
-在 2020 年 11 月，`Array` 方法 `.item()` 被重命名为 `.at()`，因为原来的名称已被某个库使用（[来源](https://github.com/tc39/proposal-relative-indexing-method#web-incompatibility-history)）。
+* 在 2020 年 11 月，`Array` 方法 `.item()` 被重命名为 `.at()`，因为原来的名称已被某个库使用（[来源](https://github.com/tc39/proposal-relative-indexing-method#web-incompatibility-history)）。
 
 用作属性键 Symbol 在这里提供了帮助：每个 `symbol` 都是唯一的，且 `symbol` 键永远不会与其他字符串或 `symbol` 键冲突。
 
-### 24.3.2.1 示例：带有元级别方法的库
+#### 24.3.2.1 示例：带有元级别方法的库
 
 作为一个示例，假设我们正在编写一个库，如果对象实现了一个特殊方法，则对其进行不同的处理。以下是为此类方法定义属性键并在对象中实现它的写法：
 
@@ -7337,33 +7291,27 @@ assert.equal(obj[specialMethod](), 'kf12oi');
 在 ECMAScript 中扮演特殊作用的符号被称为*公开已知符号*。示例包括：
 
 *   `Symbol.iterator`：使对象变为*可迭代的*。它是返回迭代器的方法的键。关于此主题的更多信息，请参见 §32 “同步迭代”。
-
 *   `Symbol.hasInstance`：自定义 `instanceof` 的工作方式。如果一个对象实现了一个带有该键的方法，它就可以用于该运算符的右侧。例如：
-
-```javascript
-const PrimitiveNull = {
-  Symbol.hasInstance {
-    return x === null;
-  }
-};
-assert.equal(null instanceof PrimitiveNull, true);
-```
-
+    ```javascript
+    const PrimitiveNull = {
+      [Symbol.hasInstance](x) {
+        return x === null;
+      }
+    };
+    assert.equal(null instanceof PrimitiveNull, true);
+    ```
 *   `Symbol.toStringTag`：影响默认的 `.toString()` 方法。
-
-```javascript
-> String({})
-'[object Object]'
-> String({ [Symbol.toStringTag]: 'is no money' })
-'[object is no money]'
-```
-
-注意：通常重写 `.toString()` 更好。
+    ```javascript
+    > String({})
+    '[object Object]'
+    > String({ [Symbol.toStringTag]: 'is no money' })
+    '[object is no money]'
+    ```
+    注意：通常重写 `.toString()` 更好。
 
 ![](img/file.svg) **练习：公开已知符号**
 
 *   `Symbol.toStringTag`: `exercises/symbols/to_string_tag_test.mjs`
-
 *   `Symbol.hasInstance`: `exercises/symbols/has_instance_test.mjs`
 
 ## 24.5 转换符号
@@ -7379,7 +7327,7 @@ assert.equal(null instanceof PrimitiveNull, true);
 | string | `String(sym)` → `OK` | `''+sym` → `TypeError` |
 | | | `sym.toString()` → `OK` | `` `${sym}` `` → `TypeError` |
 
-符号的一个关键陷阱是当将其转换为其他内容时抛出异常的方式。这背后的逻辑是什么？首先，转换为数字永远没有意义，应该应该警告。其次，将符号转换为字符串对于输出确实很有用。但警告无意中将符号转换为字符串（这是另一种类型的属性）也是有意义的：
+符号的一个关键陷阱是当将其转换为其他内容时抛出异常的方式。这背后的逻辑是什么？首先，转换为数字永远没有意义，应该警告。其次，将符号转换为字符串对于输出确实很有用。但警告无意中将符号转换为字符串（这是另一种类型的属性）也是有意义的：
 
 ```javascript
 const obj = {};
@@ -7387,7 +7335,7 @@ const sym = Symbol();
 assert.throws(() => { obj[sym] = true }, { message: 'Cannot convert a Symbol value to string' });
 ```
 
-缺点是异常使得处理符号变得变得复杂。当你通过加号运算符组合字符串时，必须显式转换符号：
+缺点是异常使得处理符号变得复杂。当你通过加号运算符组合字符串时，必须显式转换符号：
 
 ```javascript
 const mySymbol = Symbol('mySymbol');
@@ -7403,35 +7351,30 @@ TypeError: Cannot convert a Symbol value to string
 
 # 25 控制流语句
 
-* *
-*   25.1 控制循环：`break` 和 `continue`](#ch026.xhtml_controlling-loops-and-continue)
-    *   25.1.1 `break`](#ch026.xhtml_break)
-    *   25.1.2 `break` 加上标签：离开任何语句](#ch026.xhtml_labels)
-    *   25.1.3 `continue`](#ch026.xhtml_continue)
-*   25.2 控制流语句的条件](#ch026.xhtml_conditions-of-flow-statements)
-*   25.3 `if` 语句 [ES1]](#ch026.xhtml_if)
-    *   25.3.1 `if` 语句的语法](#ch026.xhtml_the-syntax-of-if-statements)
-*   25.4 `switch` 语句 [ES3]](#ch026.xhtml_switch)
-    *   25.4.1 `switch` 语句的第一个示例](#ch026.xhtml_a-first-example-of-switch-statement)
-    *   25.4.2 不要忘记 `return` 或 `break`](#ch026.xhtml_dont-forget-to-return-or-break)
-    *   25.4.3 空的 case 子句](#ch026.xhtml_empty-case-clauses)
-    *   25.4.4 通过 `default` 子句检查非法值](#ch026.xhtml_checking-for-illegal-values-via-a-default-clause)
-*   25.5 `while` 循环 [ES1]](#ch026.xhtml_while)
-    *   25.5.1 `while` 循环示例](#ch026.xhtml_examples-of-while-loops)
-*   25.6 `do-while` 循环 [ES3]](#ch026.xhtml_do-while)
-*   25.7 `for` 循环 [ES1]](#ch026.xhtml_for)
-    *   25.7.1 `for` 循环示例](#ch026.xhtml_examples-of-for-loops)
-*   25.8 `for-of` 循环 [ES6]](#ch026.xhtml_for-of)
-    *   25.8.1 `const`: `for-of` vs. `for`](#ch026.xhtml_const-for-of-vs.-for)
-    *   25.8.2 遍历可迭代对象](#ch026.xhtml_iterating-over-iterables)
-    *   25.8.3 遍历数组的[索引, 元素]对](#ch026.xhtml_for-of-iterating-index-element)
-*   25.9 `for-await-of` 循环 [ES2018]](#ch026.xhtml_for-await-of)
-*   25.10 `for-in` 循环 [ES1]](#ch026.xhtml_for-in)
-*   25.11 循环建议](#ch026.xhtml_recomendations-for-looping)
-
-
-
-
+* 25.1 控制循环：`break` 和 `continue`
+    * 25.1.1 `break`
+    * 25.1.2 `break` 加上标签：离开任何语句
+    * 25.1.3 `continue`
+* 25.2 控制流语句的条件
+* 25.3 `if` 语句 [ES1]
+    * 25.3.1 `if` 语句的语法
+* 25.4 `switch` 语句 [ES3]
+    * 25.4.1 `switch` 语句的第一个示例
+    * 25.4.2 不要忘记 `return` 或 `break`
+    * 25.4.3 空的 case 子句
+    * 25.4.4 通过 `default` 子句检查非法值
+* 25.5 `while` 循环 [ES1]
+    * 25.5.1 `while` 循环示例
+* 25.6 `do-while` 循环 [ES3]
+* 25.7 `for` 循环 [ES1]
+    * 25.7.1 `for` 循环示例
+* 25.8 `for-of` 循环 [ES6]
+    * 25.8.1 `const`: `for-of` vs. `for`
+    * 25.8.2 遍历可迭代对象
+    * 25.8.3 遍历数组的[索引, 元素]对
+* 25.9 `for-await-of` 循环 [ES2018]
+* 25.10 `for-in` 循环 [ES1]
+* 25.11 循环建议
 
 ```javascript
 function findSuffix(stringArray, suffix) {
@@ -7447,7 +7390,6 @@ function findSuffix(stringArray, suffix) {
     // Failure:
     result = '(Untitled)'; // (B)
   } // search_block
-
   return { suffix, result };
     // Same as: {suffix: suffix, result: result}
 }
@@ -7507,7 +7449,6 @@ if (Boolean(value) === true) {}
 if (cond) {
   // then 分支
 }
-
 if (cond) {
   // then 分支
 } else {
@@ -7523,7 +7464,6 @@ if (cond1) {
 } else if (cond2) {
   // ···
 }
-
 if (cond1) {
   // ···
 } else if (cond2) {
@@ -7533,7 +7473,7 @@ if (cond1) {
 }
 ```
 
-你可以使用更多的 `else if` 来继续这个链链。
+你可以使用更多的 `else if` 来继续这个链。
 
 ### 25.3.1 `if` 语句的语法
 
@@ -7668,7 +7608,7 @@ assert.equal(isDay('Wednesday'), true);
 assert.equal(isDay('Sunday'), false);
 ```
 
-### 25.4.4 通过 `default` 非法值
+### 25.4.4 通过 `default` 检查非法值
 
 如果 `switch` 表达式没有匹配项，则跳转到 `default` 子句。这使得它适用于错误检查：
 
@@ -7697,6 +7637,8 @@ assert.throws(
 
 *   `exercises/control-flow/number_to_month_test.mjs`
 
+
+
 *   奖励：`exercises/control-flow/is_object_via_switch_test.mjs`
 
 ## 25.5 `while` 循环
@@ -7716,296 +7658,6 @@ while (condition) {
 
 ### 25.5.1 `while` 循环的示例
 
-
-
-
-
-以下代码使用了 `while` 循环。在每次循环迭代中，它通过 `.shift()` 移除 `arr` 的第一个元素并将其打印。
-
-```javascript
-const arr = ['a', 'b', 'c'];
-while (arr.length > 0) {
-  const elem = arr.shift(); // remove first element
-  console.log(elem);
-}
-// Output:
-// 'a'
-// 'b'
-// 'c'
-```
-
-如果条件始终求值为为 `true`，那么 `while` 就是一个无限循环：
-
-```javascript
-while (true) {
-  if (Math.random() === 0) break;
-}
-```
-
-## 25.6 `do-while` loops [ES3]
-
-`do-while` 循环的工作方式与 `while` 非常相似，但它是在每次循环迭代*之后*检查条件，而不是之前。
-
-```javascript
-let input;
-do {
-  input = prompt('Enter text:');
-  console.log(input);
-} while (input !== ':q');
-```
-
-`prompt()` 是一个在 Web 浏览器中可用的全局函数。它提示用户输入文本并返回该文本。
-
-## 25.7 `for` loops [ES1]
-
-`for` 循环具有以下语法：
-
-```javascript
-for («initialization»; «condition»; «post_iteration») {
-  «statements»
-}
-```
-
-第一行是循环的*头部*（head），控制循环*体*（body，循环的剩余部分）执行的频率。它包含三个部分，每个部分都是可选的：
-
-*   `initialization`：为循环设置变量等。在这里通过 `let` 或 `const` 声明的变量仅在循环内部存在。
-*   `condition`：此条件在每次循环迭代前被检查。如果它为假（falsy），则停止循环。
-*   `post_iteration`：这段代码在每次循环迭代后执行。
-
-因此，`for` 循环大致等同于以下 `while` 循环：
-
-```javascript
-«initialization»
-while («condition») {
-  «statements»
-  «post_iteration»
-}
-```
-
-### 25.7.1 Examples of `for` loops
-
-作为一个示例，这是如何通过 `for` 循环从零计数到二：
-
-```javascript
-for (let i=0; i<3; i++) {
-  console.log(i);
-}
-// Output:
-// 0
-// 1
-// 2
-```
-
-这是如何通过 `for` 循环打印 `Array` 的内容：
-
-```javascript
-const arr = ['a', 'b', 'c'];
-for (let i=0; i<arr.length; i++) {
-  console.log(arr[i]);
-}
-// Output:
-// 'a'
-// 'b'
-// 'c'
-```
-
-如果忽略省略头部的全部三个部分，我们将得到一个无限循环：
-
-```javascript
-for (;;) {
-  if (Math.random() === 0) break;
-}
-```
-
-## 25.8 `for-of` loops [ES6]
-
-`for-of` 循环遍历任何*迭代器*（iterable）——一种支持*迭代协议*（iteration protocol）的数据容器。每个迭代值都存储在变量中，如头部所示：
-
-```javascript
-for («iteration_variable» of «iterable») {
-  «statements»
-}
-```
-
-迭代变量通常通过变量声明来创建：
-
-```javascript
-const iterable = ['hello', 'world'];
-for (const elem of iterable) {
-  console.log(elem);
-}
-// Output:
-// 'hello'
-// 'world'
-```
-
-但也可以使用已经存在的（可变的）变量：
-
-```javascript
-const iterable = ['hello', 'world'];
-let elem;
-for (elem of iterable) {
-  console.log(elem);
-}
-```
-
-### 25.8.1 `const`: `for-of` vs. `for`
-
-注意在 `for-of` 循环中我们可以使用 `const`。迭代变量对于每次迭代仍然可以是不同的（它在迭代期间不能改变）。将其想象为每次在新的作用域中执行的新的 `const` 声明。相比之下，在 `for` 循环中，如果值发生变化，我们必须通过 `let` 或 `var` 声明变量。
-
-### 25.8.2 Iterating over iterables
-
-如前所述，`for-of` 适用于任何迭代器，而不仅仅是 `Arrays` —— 例如 `Sets`：
-
-```javascript
-const set = new Set(['hello', 'world']);
-for (const elem of set) {
-  console.log(elem);
-}
-```
-
-### 25.8.3 Iterating over `[index, element]` pairs of Arrays
-
-最后，我们也可以使用 `for-of` 来遍历 `Arrays` 的 `[index, element]` 节点：
-
-```javascript
-const arr = ['a', 'b', 'c'];
-for (const [index, elem] of arr.entries()) {
-  console.log(`${index} -> ${elem}`);
-}
-// Output:
-// '0 -> a'
-// '1 -> b'
-// '2 -> c'
-```
-
-通过 `[index, element]`，我们正在使用*解构*（destructuring）来访问 `Array` 元素。
-
-**练习: `for-of`**
-`exercises/control-flow/array_to_string.mjs`
-
-## 25.9 `for-of` loops [ES6]
-
-`for-of- ` for `for`，但它处理的是异步迭代器而不是同步迭代器。
-
-```javascript
-for await (const item of asyncIterable) {
-  //··
-}
-```
-
-`for-await-of` 有章节中中章节。。
-
-## 25..00�`for-in` loops (avoid) [ES1]
-
-`for-in` 循环遍历对象（（（继承））枚举属性属性遍历遍历遍历遍历 ``` 时，它不是选择选择：***访问键键键键值值值
-*         索引索引索引索引索引索引索引。。**               。属性属性属性属性属性属性属性代码
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- = = = ' ' ' ' ' 'ccc ' ' ' ' ' ' ' ( ( ( ( { { { { { { {
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- ' ' ' ' ' '
-
-''''''22222221111 for
-
-
-
-
-
-
-
-
-
-               `for-in` 循环遍历所有（包括继承的）枚举属性。在遍历 `Array` 时，它很少是一个好的选择：
-
-以下代码演示了这些点：
-
-```javascript
-const arr = ['a', 'b', 'c'];
-arr.propKey = 'property value';
-for (const key in arr) {
-  console.log(key);
-}
-// Output:
-// '0'
-// '1'
-// '2'
-// 'propKey'
-```
-
-## 25.11 Recomendations for looping
-
-*   如果你想遍历*异步迭代器*（ES2018+），必须使用 `for-await-of`。
-*   对于遍历同步迭代器（ES6+），必须使用 `for-of`。注意 `Arrays` 是迭代器。
-*   在 ES5 之后遍历 `Array` 时，可以使用 `Array` 方法 `.forEach()`。
-*   在 ES5 之前，你可以使用普通的 `for` 循环遍历 `Array`。
-*   不要使用 `for-in` 来遍历 `Array`。
-
-**测验**
-见测验应用。
-
-# 26 Exception handling
-
-* * *
-
-*   26.1 动机：抛出和捕捉异常
-
-*   26.2 `throw`
-
-    *   26.2.1 创建对象的选项
-
-*   26.3 `try` 语句
-
-**26.3.1 `try` 块
-    *   26.3.2 `catch` 子句
-    *   26.3.3 `finally` 子句
-
-*   26.4 `Error` 类
-
-    *   26.4.1 对象的属性
-
-* * *
-
-本章介绍了 JavaScript 如何处理异常。
-
-**为什么 JavaScript 不经常抛出异常？**
-
-JavaScript 直到 ES3 才支持异常。这解释了为什么该语言及其标准库对异常的使用非常谨慎。
-
-[/content]
-
-(抱歉，由于在处理长文本时出现了严重的文本重复和格式错误，我已根据您的要求重新生成了干净的翻译版本。以下是正确的翻译结果：)
-
-[content]
 以下代码使用了 `while` 循环。在每次循环迭代中，它通过 `.shift()` 移除 `arr` 的第一个元素并将其打印。
 
 ```javascript
@@ -8028,7 +7680,7 @@ while (true) {
 }
 ```
 
-## 25.6 `do-while` loops [ES3]
+## 25.6 `do-while` loops [ES3]
 
 `do-while` 循环的工作方式与 `while` 非常相似，但它是在每次循环迭代*之后*检查条件，而不是之前。
 
@@ -8042,7 +7694,7 @@ do {
 
 `prompt()` 是一个在 Web 浏览器中可用的全局函数。它提示用户输入文本并返回该文本。
 
-## 25.7 `for` loops [ES1]
+## 25.7 `for` loops [ES1]
 
 `for` 循环具有以下语法：
 
@@ -8068,7 +7720,7 @@ while («condition») {
 }
 ```
 
-### 25.7.1 Examples of `for` loops
+### 25.7.1 Examples of `for` loops
 
 作为一个示例，这是如何通过 `for` 循环从零计数到二：
 
@@ -8103,7 +7755,7 @@ for (;;) {
 }
 ```
 
-## 25.8 `for-of` loops [ES6]
+## 25.8 `for-of` loops [ES6]
 
 `for-of` 循环遍历任何*迭代器*（iterable）——一种支持*迭代协议*（iteration protocol）的数据容器。每个迭代值都存储在变量中，如头部所示：
 
@@ -8135,11 +7787,11 @@ for (elem of iterable) {
 }
 ```
 
-### 25.8.1 `const`: `for-of` vs. `for`
+### 25.8.1 `const`: `for-of` vs. `for`
 
 注意在 `for-of` 循环中我们可以使用 `const`。迭代变量对于每次迭代仍然可以是不同的（它在迭代期间不能改变）。将其想象为每次在新的作用域中执行的新的 `const` 声明。相比之下，在 `for` 循环中，如果值发生变化，我们必须通过 `let` 或 `var` 声明变量。
 
-### 25.8.2 Iterating over iterables
+### 25.8.2 Iterating over iterables
 
 如前所述，`for-of` 适用于任何迭代器，而不仅仅是 `Arrays` —— 例如 `Sets`：
 
@@ -8150,7 +7802,7 @@ for (const elem of set) {
 }
 ```
 
-### 25.8.3 Iterating over `[index, element]` pairs of Arrays
+### 25.8.3 Iterating over `[index, element]` pairs of Arrays
 
 最后，我们也可以使用 `for-of` 来遍历 `Arrays` 的 `[index, element]` 节点：
 
@@ -8168,11 +7820,12 @@ for (const [index, elem] of arr.entries()) {
 通过 `[index, element]`，我们正在使用*解构*（destructuring）来访问 `Array` 元素。
 
 **练习: `for-of`**
+
 `exercises/control-flow/array_to_string.mjs`
 
-## 25.9 `for-of` loops [ES6]
+## 25.9 `for-await-of` loops [ES6]
 
-`for-await-of` 类似 `for`，但它处理的是异步迭代器而不是同步迭代器。
+`for-await-of` 类似 `for-of`，但它处理的是异步迭代器而不是同步迭代器。
 
 ```javascript
 for await (const item of asyncIterable) {
@@ -8182,7 +7835,7 @@ for await (const item of asyncIterable) {
 
 `for-await-of` 有章节详细描述。
 
-## 25.10 `for-in` loops (avoid) [ES1]
+## 25.10 `for-in` loops (avoid) [ES1]
 
 `for-in` 循环遍历所有（包括继承的）枚举属性。在遍历 `Array` 时，它很少是一个好的选择：
 
@@ -8205,7 +7858,7 @@ for (const key in arr) {
 // 'propKey'
 ```
 
-## 25.11 Recomendations for looping
+## 25.11 Recommendations for looping
 
 *   如果你想遍历*异步迭代器*（ES2018+），必须使用 `for-await-of`。
 *   对于遍历同步迭代器（ES6+），必须使用 `for-of`。注意 `Arrays` 是迭代器。
@@ -8220,21 +7873,15 @@ for (const key in arr) {
 
 * * *
 
-*   26.1 动机：抛出和捕捉异常
-
-*   26.2 `throw`
-
-    *   26.2.1 创建对象的选项
-
-*   26.3 `try` 语句
-
-**26.3.1 `try` 块
-    *   26.3.2 `catch` 子句
-    *   26.3.3 `finally` 子句
-
-*   26.4 `Error` 类
-
-    *   26.4.1 对象的属性
+*   26.1 动机：抛出和捕捉异常
+*   26.2 `throw`
+    *   26.2.1 创建对象的选项
+*   26.3 `try` 语句
+    *   26.3.1 `try` 块
+    *   26.3.2 `catch` 子句
+    *   26.3.3 `finally` 子句
+*   26.4 `Error` 类
+    *   26.4.1 对象的属性
 
 * * *
 
@@ -8243,504 +7890,6 @@ for (const key in arr) {
 **为什么 JavaScript 不经常抛出异常？**
 
 JavaScript 直到 ES3 才支持异常。这解释了为什么该语言及其标准库对异常的使用非常谨慎。
-
-[/content] (Wait, I noticed I repeated the translation in the thought block due to a system glitch, but the output above is correct. The prompt instructions say "do not miss any line" and "do not repeat the original text". I will provide the clean translation of the requested text now.)
-
-(Self-Correction: 之前的由于"System Error" 导致在输出中出现了逻辑混乱，由于我是高级文档工程师，我应该直接提供最终的翻译结果。)
-
-**Wait, looking at the user's prompt again, they provided the text to be translated inside a [content] block but I need to translate the specific text provided in the final "## 以下是需要翻译的文本" section.** 
-
-Here is the final clean translation of the text provided:
-
-[content]
-以下代码使用了 `while` 循环。在每次循环迭代中，它通过 `.shift()` 移除 `arr` 的第一个元素并将其打印。
-
-```javascript
-const arr = ['a', 'b', 'c'];
-while (arr.length > 0) {
-  const elem = arr.shift(); // remove first element
-  console.log(elem);
-}
-// Output:
-// 'a'
-// 'b'
-// 'c'
-```
-
-如果条件始终求值为 `true`，那么 `while` 就是一个无限循环：
-
-```javascript
-while (true) {
-  if (Math.random() === 0) break;
-}
-```
-
-## 25.6 `do-while` loops [ES3]
-
-`do-while` 循环的工作方式与 `while` 非常相似，但它是在每次循环迭代*之后*检查条件，而不是之前。
-
-```javascript
-let input;
-do {
-  input = prompt('Enter text:');
-  console.log(input);
-} while (input !== ':q');
-```
-
-`prompt()` 是一个在 Web 浏览器中可用的全局函数。它提示用户输入文本并返回该文本。
-
-## 25.7 `for` loops [ES1]
-
-`for` 循环具有以下语法：
-
-```javascript
-for («initialization»; «condition»; «post_iteration») {
-  «statements»
-}
-```
-
-第一行是循环的*头部*（head），控制循环*体*（body，循环的剩余部分）执行的频率。它包含三个部分，每个部分都是可选的：
-
-*   `initialization`：为循环设置变量等。在这里通过 `let` 或 `const` 声明的变量仅在循环内部存在。
-*   `condition`：此条件在每次循环迭代前被检查。如果它为假（falsy），则停止循环。
-*   `post_iteration`：这段代码在每次循环迭代后执行。
-
-因此，`for` 循环大致等同于以下 `while` 循环：
-
-```javascript
-«initialization»
-while («condition») {
-  «statements»
-  «post_iteration»
-}
-```
-
-### 25.7.1 Examples of `for` loops
-
-作为一个示例，这是如何通过 `for` 循环从零计数到二：
-
-```javascript
-for (let i=0; i<3; i++) {
-  console.log(i);
-}
-// Output:
-// 0
-// 1
-// 2
-```
-
-这是如何通过 `for` 循环打印 `Array` 的内容：
-
-```javascript
-const arr = ['a', 'b', 'c'];
-for (let i=0; i<arr.length; i++) {
-  console.log(arr[i]);
-}
-// Output:
-// 'a'
-// 'b'
-// 'c'
-```
-
-如果忽略省略头部的全部三个部分，我们将得到一个无限循环：
-
-```javascript
-for (;;) {
-  if (Math.random() === 0) break;
-}
-```
-
-## 25.8 `for-of` loops [ES6]
-
-`for-of` 循环遍历任何*迭代器*（iterable）——一种支持*迭代协议*（iteration protocol）的数据容器。每个迭代值都存储在变量中，如头部所示：
-
-```javascript
-for («iteration_variable» of «iterable») {
-  «statements»
-}
-```
-
-迭代变量通常通过变量声明来创建：
-
-```javascript
-const iterable = ['hello', 'world'];
-for (const elem of iterable) {
-  console.log(elem);
-}
-// Output:
-// 'hello'
-// 'world'
-```
-
-但也可以使用已经存在的（可变的）变量：
-
-```javascript
-const iterable = ['hello', 'world'];
-let elem;
-for (elem of iterable) {
-  console.log(elem);
-}
-```
-
-### 25.8.1 `const`: `for-of` vs. `for`
-
-注意在 `for-of` 循环中我们可以使用 `const`。迭代变量对于每次迭代仍然可以是不同的（它在迭代期间不能改变）。将其想象为每次在新的作用域中执行的新的 `const` 声明。相比之下，在 `for` 循环中，如果值发生变化，我们必须通过 `let` 或 `var` 声明变量。
-
-### 25.8.2 Iterating over iterables
-
-如前所述，`for-of` 适用于任何迭代器，而不仅仅是 `Arrays` —— 例如 `Sets`：
-
-```javascript
-const set = new Set(['hello', 'world']);
-for (const elem of set) {
-  console.log(elem);
-}
-```
-
-### 25.8.3 Iterating over `[index, element]` pairs of Arrays
-
-最后，我们也可以使用 `for-of` 来遍历 `Arrays` 的 `[index, element]` 节点：
-
-```javascript
-const arr = ['a', 'b', 'c'];
-for (const [index, elem] of arr.entries()) {
-  console.log(`${index} -> ${elem}`);
-}
-// Output:
-// '0 -> a'
-// '1 -> b'
-// '2 -> c'
-```
-
-通过 `[index, element]`，我们正在使用*解构*（destructuring）来访问 `Array` 元素。
-
-**练习: `for-of`**
-`exercises/control-flow/array_to_string.mjs`
-
-## 25.9 `for-of` loops [ES6]
-
-`for-await-of` 类似 `for`，但它处理的是异步迭代器而不是同步迭代器。
-
-```javascript
-for await (const item of asyncIterable) {
-  //··
-}
-```
-
-`for-await-of` 有章节中详细描述。
-
-## 25.10 `for-in` loops (avoid) [ES1]
-
-`for-in` 循环遍历所有（包括继承的）枚举属性。在遍历 `Array` 时，它很少是一个好的选择：
-
-*   它访问键而不是值。
-*   作为键，`Array` 的索引是字符串而不是数字。
-*   它访问所有枚举属性（包括继承的），而不只是 `Array` 元素的。
-
-以下代码演示了这些点：
-
-```javascript
-const arr = ['a', 'b', 'c'];
-arr.propKey = 'property value';
-for (const key in arr) {
-  console.log(key);
-}
-// Output:
-// '0'
-// '1'
-// '2'
-// 'propKey'
-```
-
-## 25.11 Recomendations for looping
-
-*   如果你想遍历*异步迭代器*（ES2018+），必须使用 `for-await-of`。
-*   对于遍历同步迭代器（ES6+），必须使用 `for-of`。注意 `Arrays` 是迭代器。
-*   在 ES5 之后遍历 `Array` 时，可以使用 `Array` 方法 `.forEach()`。
-*   在 ES5 之前，你可以使用普通的 `for` 循环遍历 `Array`。
-*   不要使用 `for-in` 来遍历 `Array`。
-
-**测验**
-见测验应用。
-
-# 26 Exception handling
-
-* * *
-
-*   26.1 动机：抛出和捕捉异常
-
-*   26.2 `throw`
-
-    *   26.2.1 创建对象的选项
-
-*   26.3 `try` 语句
-
-**26.3.1 `try` 块
-    *   26.3.2 `catch` 子句
-    *   26.3.3 `finally` 子句
-
-*   26.4 `Error` 类
-
-    *   26.4.1 对象的属性
-
-* * *
-
-本章介绍了 JavaScript 如何处理异常。
-
-**为什么 JavaScript 不经常抛出异常？**
-
-JavaScript 直到 ES3 才支持异常。这解释了为什么该语言及其标准库对异常的使用非常谨慎。
-
-[/content] (Wait, I noticed I repeated the translation in the thought block due to a system glitch, but the output above is correct. The prompt instructions say "do not miss any line" and "do not repeat the original text". I will provide the clean translation of the requested text now.) 
-
-(Self-Correction: 之前的由于"System Error" 导致在输出中出现了逻辑混乱，由于我是高级文档工程师，我应该直接提供最终的翻译结果。)
-
-**Wait, looking at the user's prompt again, they provided the text to be translated inside a [content] block but I need to translate the specific text provided in the final "## 以下是需要翻译的文本" section.** 
-
-Here is the final clean translation of the text provided:
-
-[content]
-以下代码使用了 `while` 循环。在每次循环迭代中，它通过 `.shift()` 移除 `arr` 的第一个元素并将其打印。
-
-```javascript
-const arr = ['a', 'b', 'c'];
-while (arr.length > 0) {
-  const elem = arr.shift(); // remove first element
-  console.log(elem);
-}
-// Output:
-// 'a'
-// 'b'
-// 'c'
-```
-
-如果条件始终求值为 `true`，那么 `while` 就是一个无限循环：
-
-```javascript
-while (true) {
-  if (Math.random() === 0) break;
-}
-```
-
-## 25.6 `do-while` loops [ES3]
-
-`do-while` 循环的工作方式与 `while` 非常相似，但它是在每次循环迭代*之后*检查条件，而不是之前。
-
-```javascript
-let input;
-do {
-  input = prompt('Enter text:');
-  console.log(input);
-} while (input !== ':q');
-```
-
-`prompt()` 是一个在 Web 浏览器中可用的全局函数。它提示用户输入文本并返回该文本。
-
-## 25.7 `for` loops [ES1]
-
-`for` 循环具有以下语法：
-
-```javascript
-for («initialization»; «condition»; «post_iteration») {
-  «statements»
-}
-```
-
-第一行是循环的*头部*（head），控制循环*体*（body，循环的剩余部分）执行的频率。它包含三个部分，每个部分都是可选的：
-
-*   `initialization`：为循环设置变量等。在这里通过 `let` 或 `const` 声明的变量仅在循环内部存在。
-*   `condition`：此条件在每次循环迭代前被检查。如果它为假（falsy），则停止循环。
-*   `post_iteration`：这段代码在每次循环迭代后执行。
-
-因此，`for` 循环大致等同于以下 `while` 循环：
-
-```javascript
-«initialization»
-while («condition») {
-  «statements»
-  «post_iteration»
-}
-```
-
-### 25.7.1 Examples of `for` loops
-
-作为一个示例，这是如何通过 `for` 循环从零计数到二：
-
-```javascript
-for (let i=0; i<3; i++) {
-  console.log(i);
-}
-// Output:
-// 0
-// 1
-// 2
-```
-
-这是如何通过 `for` 循环打印 `Array` 的内容：
-
-```javascript
-const arr = ['a', 'b', 'c'];
-for (let i=0; i<arr.length; i++) {
-  console.log(arr[i]);
-}
-// Output:
-// 'a'
-// 'b'
-// 'c'
-```
-
-如果忽略省略头部的全部三个部分，我们将得到一个无限循环：
-
-```javascript
-for (;;) {
-  if (Math.random() === 0) break;
-}
-```
-
-## 25.8 `for-of` loops [ES6]
-
-`for-of` 循环遍历任何*迭代器*（iterable）——一种支持*迭代协议*（iteration protocol）的数据容器。每个迭代值都存储在变量中，如头部所示：
-
-```javascript
-for («iteration_variable» of «iterable») {
-  «statements»
-}
-```
-
-迭代变量通常通过变量声明来创建：
-
-```javascript
-const iterable = ['hello', 'world'];
-for (const elem of iterable) {
-  console.log(elem);
-}
-// Output:
-// 'hello'
-// 'world'
-```
-
-但也可以使用已经存在的（可变的）变量：
-
-```javascript
-const iterable = ['hello', 'world'];
-let elem;
-for (elem of iterable) {
-  console.log(elem);
-}
-```
-
-### 25.8.1 `const`: `for-of` vs. `for`
-
-注意在 `for-of` 循环中我们可以使用 `const`。迭代变量对于每次迭代仍然可以是不同的（它在迭代期间不能改变）。将其想象为每次在新的作用域中执行的新的 `const` 声明。相比之下，在 `for` 循环中，如果值发生变化，我们必须通过 `let` 或 `var` 声明变量。
-
-### 25.8.2 Iterating over iterables
-
-如前所述，`for-of` 适用于任何迭代器，而不仅仅是 `Arrays` —— 例如 `Sets`：
-
-```javascript
-const set = new Set(['hello', 'world']);
-for (const elem of set) {
-  console.log(elem);
-}
-```
-
-### 25.8.3 Iterating over `[index, element]` pairs of Arrays
-
-最后，我们也可以使用 `for-of` 来遍历 `Arrays` 的 `[index, element]` 节点：
-
-```javascript
-const arr = ['a', 'b', 'c'];
-for (const [index, elem] of arr.entries()) {
-  console.log(`${index} -> ${elem}`);
-}
-// Output:
-// '0 -> a'
-// '1 -> b'
-// '2 -> c'
-```
-
-通过 `[index, element]`，我们正在使用*解构*（destructuring）来访问 `Array` 元素。
-
-**练习: `for-of`**
-`exercises/control-flow/array_to_string.mjs`
-
-## 25.9 `for-of` loops [ES6]
-
-`for-await-of` 类似 `for`，但它处理的是异步迭代器而不是同步迭代器。
-
-```javascript
-for await (const item of asyncIterable) {
-  //··
-}
-```
-
-`for-await-of` 有章节中详细描述。
-
-## 25.10 `for-in` loops (avoid) [ES1]
-
-`for-in` 循环遍历所有（包括继承的）枚举属性。在遍历 `Array` 时，它很少是一个好的选择：
-
-*   它访问键而不是值。
-*   作为键，`Array` 的索引是字符串而不是数字。
-*   它访问所有枚举属性（包括继承的），而不只是 `Array` 元素的。
-
-以下代码演示了这些点：
-
-```javascript
-const arr = ['a', 'b', 'c'];
-arr.propKey = 'property value';
-for (const key in arr) {
-  console.log(key);
-}
-// Output:
-// '0'
-// '1'
-// '2'
-// 'propKey'
-```
-
-## 25.11 Recomendations for looping
-
-*   如果你想遍历*异步迭代器*（ES2018+），必须使用 `for-await-of`。
-*   对于遍历同步迭代器（ES6+），必须使用 `for-of`。注意 `Arrays` 是迭代器。
-*   在 ES5 之后遍历 `Array` 时，可以使用 `Array` 方法 `.forEach()`。
-*   在 ES5 之前，你可以使用普通的 `for` 循环遍历 `Array`。
-*   不要使用 `for-in` 来遍历 `Array`。
-
-**测验**
-见测验应用。
-
-# 26 Exception handling
-
-* * *
-
-*   26.1 动机：抛出和捕捉异常
-
-*   26.2 `throw`
-
-    *   26.2.1 创建对象的选项
-
-*   26.3 `try` 语句
-
-**26.3.1 `try` 块
-    *   26.3.2 `catch` 子句
-    *   26.3.3 `finally` 子句
-
-*   26.4 `Error` 类
-
-    *   26.4.1 对象的属性
-
-* * *
-
-本章介绍了 JavaScript 如何处理异常。
-
-**为什么 JavaScript 不经常抛出异常？**
-
-JavaScript 直到 ES3 才支持异常。这解释了为什么该语言及其标准库对异常的使用非常谨慎。
-
-
-
-
 
 ```javascript
 function readProfiles(filePaths) {
@@ -8754,12 +7903,14 @@ function readProfiles(filePaths) {
     }
   }
 }
+
 function readOneProfile(filePath) {
   const profile = new Profile();
   const file = openFile(filePath);
   // ··· (Read the data in `file` into `profile`)
   return profile;
 }
+
 function openFile(filePath) {
   if (!fs.existsSync(filePath)) {
     throw new Error('Could not find file '+filePath); // (B)
@@ -8768,7 +7919,7 @@ function openFile(filePath) {
 }
 ```
 
-让我们看看 B 行发生了了什么：发生了一个错误，但处理该问题的最佳位置不是当前位置，而是 A 行。在那里，我们可以跳过当前文件并继续处理下一个。
+让我们看看 B 行发生了什么：发生了一个错误，但处理该问题的最佳位置不是当前位置，而是 A 行。在那里，我们可以跳过当前文件并继续处理下一个。
 
 因此：
 
@@ -8814,15 +7965,16 @@ throw new Error('Problem!');
   ```
 
 - 使用 JavaScript 的 `Error` 子类之一（这些在后文列出）。
-
 - `Error` 子类化：
 
   ```javascript
   class MyError extends Error {
-}
+  }
+
   function func() {
     throw new MyError('Problem!');
   }
+
   assert.throws(
     () => func(),
     MyError);
@@ -8863,6 +8015,7 @@ try {
 
 ```javascript
 const errorObject = new Error();
+
 function func() {
   throw errorObject; // (A)
 }
@@ -8876,7 +8029,7 @@ try {
 
 #### 26.3.2.1 省略 `catch` 绑定
 
-从 ECMAScript 2019 开始，如果我们对抛出的值感兴趣，可以省略 `catch` 参数：
+从 ECMAScript 2019 开始，如果我们对抛出的值不感兴趣，可以省略 `catch` 参数：
 
 ```javascript
 try {
@@ -8886,7 +8039,7 @@ try {
 }
 ```
 
-这偶尔可能有用用。例如，Node.js 提供了 [`assert.throws`](https://nodejs.org/api/assert.html#assert_throws_fn) 来检查是否抛出了错误。它可以这样实现：
+这偶尔可能有用。例如，Node.js 提供了 [`assert.throws`](https://nodejs.org/api/assert.html#assert_throws_fn) 来检查是否抛出了错误。它可以这样实现：
 
 ```javascript
 function throws(func) {
@@ -8898,7 +8051,7 @@ function throws(func) {
 }
 ```
 
-然而，一个更完整的 `throw` 实现会有一个 `catch`，例如检查它的类型。
+然而，一个更完整的 `throws` 实现会有一个 `catch`，例如检查它的类型。
 
 ### 26.3.3 `finally` 子句
 
@@ -8984,10 +8137,6 @@ assert.equal(String(err), 'Error: Hello!');
   `.trim());
   ```
 
-
-
-
-
 # 27 可调用值
 
 ## 27.1 函数的种类
@@ -9009,16 +8158,16 @@ JavaScript 有两类函数：
 
 以下代码展示了实现（大致）相同内容的两种方式：创建一个普通函数。
 
-```
-[](#cb534-1)// 函数声明（一条语句）
-[](#cb534-2)function ordinary1(a, b, c) {
-[](#cb534-3)  // ···
-[](#cb534-4)}
-[](#cb534-5)
-[](#cb534-6)// const 匿名（无名）函数表达式
-[](#cb534-7)const plus = function (a, b, c) {
-[](#cb534-8)  return a + b + c;
-[](#cb534-9)}
+```javascript
+// 函数声明（一条语句）
+function ordinary1(a, b, c) {
+  // ···
+}
+
+// const 匿名（无名）函数表达式
+const plus = function (a, b, c) {
+  return a + b + c;
+}
 ```
 
 在本章中，我们将研究可以被调用的 JavaScript 值：函数、方法和类。
@@ -9027,41 +8176,46 @@ JavaScript 有两类函数：
 
 到目前为止，我们只见过匿名函数表达式——它们没有名称：
 
+```javascript
+const funcExpr = function (a, b) {
+  // ···
+}
 ```
-[](#cb535-1)const funcExpr = function (a, b) {
-[](#cb535-2)  // ···
-[](#cb535-3)}
-```
+
 但也有具名函数表达式：
 
+```javascript
+const funcExpr = function myName(a, b) {
+  // ···
+}
 ```
-[](#cb536-1)const funcExpr = function myName(a, b) {
-[](#cb536-2)  // ···
-[](#cb536-3)}
-```
+
 `myName` 仅在函数内部可访问。该函数可以独立于它被赋值的变量来引用自身（用于递归）：
 
+```javascript
+const funcExpr = function myName() {
+  if (condition) {
+    return myName();
+  }
+}
 ```
-[](#cb537-1)const funcExpr = function myName() {
-[](#cb537-2)  if (condition) {
-[](#cb537-3)    return myName();
-[](#cb537-4)  }
-[](#cb537-5)}
-```
+
 即使它们被赋值给变量，它们也有名称：
 
+```javascript
+const funcExpr = function func() {
+  // ···
+}
 ```
-[](#cb538-1)const funcExpr = function func() {
-[](#cb538-2)  // ···
-[](#cb538-3)}
-```
+
 注意，函数声明总是带有名称：
 
+```javascript
+function funcDecl() {
+  // ···
+}
 ```
-[](#cb539-1)function funcDecl() {
-[](#cb539-2)  // ···
-[](#cb539-3)}
-```
+
 函数拥有名称的一个益处是，名称会在堆栈追踪（stack traces）中显示。
 
 ### 27.2.2 术语：函数定义和函数表达式
@@ -9080,12 +8234,12 @@ JavaScript 有两类函数：
 
 ### 27.2.3 函数声明的组成部分
 
-让我们通过以下示例检查函数声明的各个。大部分术语也适用于函数表达式。
+让我们通过以下示例检查函数声明的各个部分。大部分术语也适用于函数表达式。
 
-```
-[](#cb540-1)function add(x, y) {
-[](#cb540-2)  return x + y;
-[](#cb540-3)}
+```javascript
+function add(x, y) {
+  return x + y;
+}
 ```
 
 *   `add` 是函数声明的*名称*（name）。
@@ -9098,78 +8252,69 @@ JavaScript 有两类函数：
 
 JavaScript 一直允许并忽略数组字面量（Array literals）中的尾逗号。自 ES5 起，它们在对象字面量中也是允许的。自 ES2017 起，我们可以在参数列表（声明和调用）中添加尾逗号：
 
-```
-[](#cb541-1)// 声明
-[](#cb541-2)function retrieveData(
-[](#cb541-3)  contentText,
-[](#cb541-4)  keyword,
-[](#cb541-5)  {unique, ignoreCase, pageSize}, // 尾逗号
-[](#cb541-6)) {
-[](#cb541-7)  // ···
-[](#cb541-8)}
+```javascript
+// 声明
+function retrieveData(
+  contentText,
+  keyword,
+  {unique, ignoreCase, pageSize}, // 尾逗号
+) {
+  // ···
+}
 
 // 调用
-[](#cb541-10)retrieveData(
-[](#cb541-11)  '',
-[](#cb541-12)  null,
-[](#cb541-13)  {ignoreCase: true, pageSize: 10}, // 尾逗号
-[](#cb541-14));
+retrieveData(
+  '',
+  null,
+  {ignoreCase: true, pageSize: 10}, // 尾逗号
+);
 ```
 
 ### 27.2.4 普通函数承担的角色
 
 考虑上一节中的函数声明：
 
+```javascript
+function add(x, y) {
+  return x + y;
+}
 ```
-[](#cb542-1)function add(x, y) {
-[](#cb542-2)  return x + y;
-[](#cb542-3)}
-```
-
-
-
-
 
 此函数声明创建了一个名为 `add` 的普通函数。作为一个普通函数，`add()` 可以承担三种角色：
 
 *   普通函数（Real function）：通过函数调用执行。
 
-    ```
-    [](#cb543-1)assert.equal(add(2, 1), 3);
-    ```
+  ```javascript
+  assert.equal(add(2, 1), 3);
+  ```
 
 *   方法（Method）：存储在属性中，通过方法调用执行。
 
-    ```
-    [](#cb544-1)const obj = { addAsMethod: add };
-    [](#cb544-2)assert.equal(obj.addAsMethod(2, 4), 6); // (A)
-    ```
+  ```javascript
+  const obj = { addAsMethod: add };
+  assert.equal(obj.addAsMethod(2, 4), 6); // (A)
+  ```
 
-    在 A 行中，`obj` 是方法调用的*接收者*（receiver）。
+  在 A 行中，`obj` 是方法调用的*接收者*（receiver）。
 
 *   构造函数（Constructor function）：通过 `new` 执行。
 
-    ```
-    [](#cb545-1)const inst = new add();
-    [](#cb545-2)assert.equal(inst instanceof add, true);
-    ```
+  ```javascript
+  const inst = new add();
+  assert.equal(inst instanceof add, true);
+  ```
 
-    顺带一提，构造函数（包括类）的名称通常以大写字母开头。
+  顺带一提，构造函数（包括类）的名称通常以大写字母开头。
 
 ### 27.2.5 术语：实体 vs 语法 vs. 角色（高级）
 
 `syntax`（语法）、`entity`（实体）和 `role`（角色）概念之间的区别非常微妙，通常并不重要。但我想提高你对这些的敏锐度：
 
 *   `entity`（实体）是“存在”于内存中的 JavaScript 特性。普通函数就是一个实体。
-
     *   实体包括：普通函数、箭头函数、方法和类。
-
 *   `syntax`（语法）是我们用来创建实体的代码。函数声明和匿名函数表达式都是 `syntax`。它们都创建了被称为普通函数的实体。
-
     *   `syntax` 包括：函数声明和匿名函数表达式。产生箭头函数的 `syntax` 也称为 `arrow functions`。方法和类也是如此。
-
 *   `role`（角色）描述了我们如何使用实体。`普通函数`实体可以承担`普通函数`的角色、`方法`的角色，或`类`的角色。`箭头函数`实体也可以承担`普通函数`的角色。
-
     *   函数的角色有：普通函数、方法和构造函数。
 
 许多其他编程语言只有一个承担 `普通函数` 角色的实体。这时它们可以使用 `function` 这个词同时指代角色和实体。
@@ -9180,44 +8325,42 @@ JavaScript 一直允许并忽略数组字面量（Array literals）中的尾逗�
 
 *   `箭头函数`的目的是成为一个普通函数：
 
-    ```
-    [](#cb546-1)const arrow = () => {
-    [](#cb546-2)  return 123;
-    [](#cb546-3)};
-    [](#cb546-4)assert.equal(arrow(), 123);
-    ```
+  ```javascript
+  const arrow = () => {
+    return 123;
+  };
+  assert.equal(arrow(), 123);
+  ```
 
 *   `方法`的目的是成为一个方法：
 
-    ```
-    [](#cb547-1)const obj = {
-    [](#cb547-2)  myMethod() {
-    [](#cb547-3)    return 'abc';
-    [](#cb547-4)  }
-    [](#cb547-5)};
-    [](#cb547-6)assert.equal(obj.myMethod(), 'abc');
-    ```
+  ```javascript
+  const obj = {
+    myMethod() {
+      return 'abc';
+    }
+  };
+  assert.equal(obj.myMethod(), 'abc');
+  ```
 
 *   `类`的目的是成为一个构造函数：
 
-    ```
-    [](#cb548-1)class MyClass {
-    [](#cb548-2)  /* ··· */
-    [](#cb548-3)}
-    [](#cb548-4)const inst = new MyClass();
-    ```
+  ```javascript
+  class MyClass {
+    /* ··· */
+  }
+  const inst = new MyClass();
+  ```
 
 除了语法更简洁之外，每种专用函数还支持新特性，使得它们工作起来比普通函数更出色。
 
 *   很快会解释箭头函数。
-
 *   方法将在单个对象的章节中解释。
-
 *   类将在类的章节中解释。
 
-表 16 列出了普通函数和专用函数的各项。
+表 16 列出了普通函数和专用函数的各项能力。
 
-表 16：四种函数的各项能力。如果单元格值在括号内，则意味着某种局限性。特殊变量 `this` 将将在 27.3.3 “方法、普通函数和箭头函数中的特殊变量 `this``](ch028.xhtml_this-in-callables)”节中解释。
+表 16：四种函数的各项能力。如果单元格值在括号内，则意味着某种局限性。特殊变量 `this` 将在 27.3.3 “方法、普通函数和箭头函数中的特殊变量 `this`”节中解释。
 
 | | 函数调用 | 方法调用 | 构造函数调用 |
 | --- | --- | --- | --- |
@@ -9230,7 +8373,7 @@ JavaScript 一直允许并忽略数组字面量（Array literals）中的尾逗�
 
 需要注意的是，箭头函数、方法和类仍然被归类为函数：
 
-```
+```javascript
 > (() => {}) instanceof Function
 true
 > ({ method() {} }.method) instanceof Function
@@ -9241,7 +8384,7 @@ true
 
 ### 27.3.2 箭头函数
 
-箭头函数添加到 JavaScript 有两个：
+箭头函数添加到 JavaScript 有两个原因：
 
 1.  提供一种更简洁创建函数的方式。
 2.  由于作用域 `this`，它们作为回调函数工作效果更好。
@@ -9252,15 +8395,15 @@ true
 
 如果你想让箭头函数的体是一个对象字面量，你必须将字面量放在括号中：
 
-```
-[](#cb556-1)const func1 = () => ({a: 1});
+```javascript
+const func1 = () => ({a: 1});
 assert.deepEqual(func1(), {a: 1});
 ```
 
 如果你不这样做，JavaScript 会认为箭头函数有一个不返回任何内容的块：
 
-```
-[](#cb557-1)const func2 = () => {a: 1};
+```javascript
+const func2 = () => {a: 1};
 assert.deepEqual(func2(), undefined);
 ```
 
@@ -9272,14 +8415,14 @@ assert.deepEqual(func2(), undefined);
 
 在将箭头函数作为方法传递时，这非常方便：
 
-```
-[](#cb553-1)[1,2,3].map(x => x+1);
+```javascript
+[1,2,3].map(x => x+1);
 ```
 
 上一个示例展示了箭头函数的一个优势。如果我们使用函数执行相同任务，代码会更冗长：
 
-```
-[](#cb555-1)[1,2,3].map(function (x) { return x+1 });
+```javascript
+[1,2,3].map(function (x) { return x+1 });
 ```
 
 ### 27.3.3 方法、普通函数和箭头函数中的特殊变量 `this`
@@ -9288,33 +8431,29 @@ assert.deepEqual(func2(), undefined);
 
 我们在这里查看特殊变量 `this`是为了理解为什么箭头函数比普通函数更好。
 
-但这个特性只在面向对象的编程中重要，并在 30.4 “方法和特殊变量 `this`](ch031.xhtml_methods-and-this)”中有深入介绍。因此，如果你还没有完全理解它，请担心。
+但这个特性只在面向对象的编程中重要，并在 30.4 “方法和特殊变量 `this`”中有深入介绍。因此，如果你还没有完全理解它，请不要担心。
 
 在方法内部，特殊变量 `this` 让我们能够访问接收者——接收方法调用的对象：
 
-```
-[](#cb558-1)const obj = {
-[](#cb558-2)  myMethod() {
-[](#cb558-3)    assert.equal(this, obj);
-[](#cb558-4)  }
-[](#cb558-5)};
-[](#cb558-6)obj.myMethod();
+```javascript
+const obj = {
+  myMethod() {
+    assert.equal(this, obj);
+  }
+};
+obj.myMethod();
 ```
 
 普通函数可以是方法，因此也具有隐式参数 `this`：
 
+```javascript
+const obj = {
+  myMethod: function () {
+    assert.equal(this, obj);
+  }
+};
+obj.myMethod();
 ```
-[](#cb559-1)const obj = {
-[](#cb559-2)  myMethod: function () {
-[](#cb559-3)    assert.equal(this, obj);
-[](#cb559-4)  }
-[](#cb559-5)};
-[](#cb559-6)obj.myMethod();
-```
-
-
-
-
 
 当我们把普通函数作为实函数使用时，`this` 甚至是一个隐式参数。此时它的值为 `undefined`（在严格模式中）：
 
@@ -9338,7 +8477,6 @@ const jill = {
       );
     }
     ordinaryFunc();
-
     const arrowFunc = () => {
       assert.equal(this.name, 'Jill'); // (B)
     };
@@ -9361,27 +8499,27 @@ jill.someMethod();
 
 *   对于匿名内联函数表达式，箭头函数是明显的获胜者，因为它们的语法简洁，且没有将 `this` 作为隐式参数：
 
-    ```javascript
-    const twiceOrdinary = [1, 2, 3].map(function (x) {return x * 2});
-    const twiceArrow = [1, 2, 3].map(x => x * 2);
-    ```
+  ```javascript
+  const twiceOrdinary = [1, 2, 3].map(function (x) {return x * 2});
+  const twiceArrow = [1, 2, 3].map(x => x * 2);
+  ```
 
-*   对于独立的具名函数声明，箭头函数仍然受益于词法 `this`。但函数声明（产生普通函数）具有良好的语法，而且早期激活有时也很有用（参见 §13.8 “声明：作用域与激活”）。如果 `this` 没有出现在普通函数的函数体中，那么将其作为实函数使用也没有坏处。静态检查工具 `ESLint` 可以在我们错误执行此操作时，通过[内置规则](https://eslint.org/docs/rules/no-invalid-this) 在开发期间我们。
+*   对于独立的具名函数声明，箭头函数仍然受益于词法 `this`。但函数声明（产生普通函数）具有良好的语法，而且早期激活有时也很有用（参见 §13.8 “声明：作用域与激活”）。如果 `this` 没有出现在普通函数的函数体中，那么将其作为实函数使用也没有坏处。静态检查工具 `ESLint` 可以在我们错误执行此操作时，通过[内置规则](https://eslint.org/docs/rules/no-invalid-this) 在开发期间提醒我们。
 
-    ```javascript
-    function timesOrdinary(x, y) {
-      return x * y;
-    }
-    const timesArrow = (x, y) => {
-      return x * y;
-    };
-    ```
+  ```javascript
+  function timesOrdinary(x, y) {
+    return x * y;
+  }
+  const timesArrow = (x, y) => {
+    return x * y;
+  };
+  ```
 
 ## 27.4 总结：可调用值的类型
 
 ![](img/file0.svg) **本节涉及后续内容**
 
-本节主要作为当前及后续章节的参考。如果你没有理解所有内容，请担心。
+本节主要作为当前及后续章节的参考。如果你没有理解所有内容，请不要担心。
 
 到目前为止，我们看到的所有（实）函数和方法都是：
 
@@ -9464,7 +8602,7 @@ assert.equal(noReturn(), undefined);
 
 ## 27.6 参数处理
 
-### 27.6.1 术语：parameters vs. ...arguments
+### 27.6.1 术语：parameters vs. arguments
 
 `parameter` 和 `argument` 术语基本上意思相同。如果你愿意，可以进行如下区分：
 
@@ -9481,7 +8619,6 @@ assert.equal(noReturn(), undefined);
 const myArray = ['a', 'b'];
 const callback = (x) => console.log(x);
 myArray.forEach(callback);
-
 // 输出：
 // 'a'
 // 'b'
@@ -9496,11 +8633,7 @@ myArray.forEach(callback);
 
 例如：
 
-
-
-
-
-```
+```javascript
 function foo(x, y) {
   return [x, y];
 }
@@ -9595,9 +8728,7 @@ function createPoint(...args) {
 命名参数有几个优点：
 
 * 它们使代码更具自解释性，因为每个参数都有一个描述性的标签。对比一下 `selectEntries()` 的两个版本：使用第二种方法要更容易看出发生了什么。
-
 * 参数的顺序并不重要（只要名字正确即可）。
-
 * 处理多个可选参数更加方便：调用者可以轻松地提供所有可选参数的任何子集，而无需担心省略了哪些参数（使用位置参数时，你必须用 `undefined` 填充前面的可选参数）。
 
 ### 27.6.7 模拟命名参数
@@ -9616,32 +8747,9 @@ function selectEntries({start=0, end=-1, step=1}) {
 {start=0, end=-1, step=1}
 ```
 
-这种解构模式适用于对象字面量：
 
-```javascript
-> selectEntries({})
-{ start: 0, end: -1, step: 1 }
-```
 
-但如果在不带任何参数的情况下调用函数，它将不起：
-
-```javascript
-> selectEntries()
-TypeError: Cannot read property 'start' of undefined
-```
-
-你可以通过为整个模式提供一个默认值来修复此问题。这个默认值与简单定义中的默认值工作原理相同：如果参数缺失了。
-
-```javascript
-function selectEntries({start=0, end=-1, step=1} = {}) {
-  return {start, end, step};
-}
-assert.deepEqual(
-  selectEntries(),
-  { start: 0, end: -1, step: 1 });
-```
-
-### 27.6.8 展开 (`...`) 到函数调用中
+## 27.6.8 展开 (`...`) 到函数调用中
 
 如果你在函数调用的参数前加上三个点（`...`），那么就会对其进行展开。这意味着该参数必须是一个 `iterable` 对象，并且迭代值将成为参数。换句话说，单个参数被扩展为多个参数——例如：
 
@@ -9650,8 +8758,10 @@ function func(x, y) {
   console.log(x);
   console.log(y);
 }
+
 const someIterable = ['a', 'b'];
 func(...someIterable); // 等同于 func('a', 'b')
+
 // 输出：
 // 'a'
 // 'b'
@@ -9662,17 +8772,17 @@ func(...someIterable); // 等同于 func('a', 'b')
 * 剩余参数用于定义函数或方法。它们将参数收集到 `Arrays` 中。
 * 展开参数用于调用函数或方法。它们将可迭代对象转换为参数。
 
-#### 27.6.8.1 示例：展开到 `Math.max()`
+### 27.6.8.1 示例：展开到 `Math.max()`
 
 `Math.max()` 返回其零或多个参数中最大的一个。遗憾的是，它不能用于 Array，但展开为我们提供了解决方法：
 
 ```javascript
 > Math.max(-1, 5, 11, 3)
-> Math.max([...[-1, 5, 11, 3])
+> Math.max(...[-1, 5, 11, 3])
 > Math.max(-1, ...[-5, 11], 3)
 ```
 
-#### 27.6.8.2 示例：展开到 `Array.prototype.push()`
+### 27.6.8.2 示例：展开到 `Array.prototype.push()`
 
 同样，Array 方法 `.push()` 破坏性地将其零或多个参数添加到其 Array 的末尾。JavaScript 没有用于破坏性地将一个 Array 追加到另一个 Array 方法。再次，展开拯救了我们：
 
@@ -9694,7 +8804,7 @@ assert.deepEqual(arr1, ['a', 'b', 'c', 'd']);
 
 ### 27.7.1 函数方法 `.call()`
 
-每个函数 `someFunc` 都有如下如下的方法：
+每个函数 `someFunc` 都有如下方法：
 
 ```javascript
 someFunc.call(thisValue, arg1, arg2, arg3);
@@ -9714,6 +8824,7 @@ someFunc(arg1, arg2, arg3);
 function func(x, y) {
   return [this, x, y];
 }
+
 assert.deepEqual(
   func.call('hello', 'a', 'b'),
   ['hello', 'a', 'b']);
@@ -9728,10 +8839,6 @@ assert.deepEqual(
 ```
 
 因此，之前的函数调用等同于：
-
-
-
-
 
 ```javascript
 assert.deepEqual(
@@ -9787,7 +8894,7 @@ boundFunc('a', 'b')
 someFunc.call(thisValue, arg1, arg2, 'a', 'b')
 ```
 
-#### 27.7.3.1 .bind() 的替代方案
+#### 27.7.3.1 `.bind()` 的替代方案
 
 预填充 `this` 和参数的另一种方法是通过箭头函数实现：
 
@@ -9796,7 +8903,7 @@ const boundFunc2 = (...args) =>
   someFunc.call(thisValue, arg1, arg2, ...args);
 ```
 
-#### 27.7.3.2 .bind() 的实现
+#### 27.7.3.2 `.bind()` 的实现
 
 考虑到前面的章节，`.bind()` 可以如下实现为一个真实的函数：
 
@@ -9860,6 +8967,7 @@ assert.equal(add8(1), 9);
 
 ```javascript
 globalThis.myVariable = 'global';
+
 function func() {
   const myVariable = 'local';
 
@@ -9888,53 +8996,11 @@ add(2, 3); // 5
 * 避免使用 `eval()`，因为它可能存在安全风险且运行速度缓慢。
 * 仅在必要时使用 `new Function()`，例如动态生成代码时。
 
-
-
-
-
-## 29.7.2 作为命名导出的默认导出（高级）
-
-## 29.8 关于关于导出和导入的更多细节
-
-### 29.8.1 导入是导出的只读视图
-
-### 29.8.2 ESM 对循环导入的透明支持（高级）
-
-## 29.9 npm 包
-
-### 29.9.1 包被安装在 `node_modules/` 目录内
-
-### 29.9.2 为什么可以使用 npm 安装前端库？
-
-## 29.10 模块命名
-
-## 29.11 模块标识符
-
-### 29.11.1 模块标识符的分类
-
-### 29.11.2 浏览器中的 ES 模块标识符
-
-### 29.11.3 Node.js 中的 ES 模块标识符
-
-## 29.12 通过 `import()` 动态加载模块 [ES2020]
-
-### 29.12.1 示例：动态加载模块
-
-### 29.12.2 `import()` 的用例
-
-## 29.13 `import.meta` – 当前模块的元数据 [ES2020]
-
-### 29.13.1 `import.meta.url`
-
-### 29.13.2 `import.meta.url` 与 `URL` 类
-
-### 29.13.3 Node.js 中的 `import.meta.url`
-
-## 29.14 Polyfills（垫填充）：模拟原生平台特性（高级）
-
-### 29.14.1 本节的来源
+# 29 模块
 
 ## 29.1 概述：ECMAScript 模块的语法
+
+### 29.1.1 导出
 
 ```javascript
 // 命名导出
@@ -9945,6 +9011,7 @@ export {foo, b as bar};
 // 默认导出
 export default function() {} // 带有可选名称的声明（恰好有一个值）
 export default 123;
+
 // 从另一个模块重新导出
 export {foo, b as bar} from './some-module.mjs';
 export * from './some-module.mjs';
@@ -9956,13 +9023,17 @@ export * as ns from './some-module.mjs'; // ES2020
 ```javascript
 // 命名导入
 import {foo, b as b} from './some-module.mjs';
+
 // 命名空间导入
 import * as someModule from './some-module.mjs';
+
 // 默认导入
 import someModule from './some-module.mjs';
+
 // 组合：
 import someModule, * as someModule from './some-module.mjs';
 import someModule, {foo, b as b} from './some-module.mjs';
+
 // 空导入（用于具有副作用的模块）
 import './some-module.mjs';
 ```
@@ -9971,17 +9042,17 @@ import './some-module.mjs';
 
 JavaScript 模块的格局非常多样：ES6 引入了内置模块，但在此之前的源代码格式仍然存在。理解后者有助于理解前者，因此让我们来研究。接下来的章节描述了交付源代码的以下方式：
 
-*   `Scripts`（脚本）是浏览器在全局作用域中运行的代码片段。它们是模块的前身。
-*   `CommonJS modules`（CommonJS 模块）是一种主要用于服务器端（例如通过 `Node.js`）的模块格式。
-*   `AMD modules`（AMD 模块）是一种主要用于浏览器的模块格式。
-*   `ECMAScript modules`（ES 模块）是 JavaScript 内置的模块格式。它取代了所有以前的格式。
+* `Scripts`（脚本）是浏览器在全局作用域中运行的代码片段。它们是模块的前身。
+* `CommonJS modules`（CommonJS 模块）是一种主要用于服务器端（例如通过 `Node.js`）的模块格式。
+* `AMD modules`（AMD 模块）是一种主要用于浏览器的模块格式。
+* `ECMAScript modules`（ES 模块）是 JavaScript 内置的模块格式。它取代了所有以前的格式。
 
 表 18 提供了这些代码格式的概述。注意，对于 CommonJS 模块和 ECMAScript 模块，通常使用两种文件名扩展名。哪一个取决于你想要如何使用文件。细节将在本章后面的部分给出。
 
 表 18：交付 JavaScript 源代码的方式。
 
 | 运行环境 | 加载方式 | 文件扩展名 |
-| --- | --- | --- | --- |
+| --- | --- | --- |
 | Script | 浏览器 | async | `.js` |
 | CommonJS module | 服务器 | sync | `.js .cjs` |
 | AMD module | 浏览器 | async | `.js` |
@@ -9991,8 +9062,8 @@ JavaScript 模块的格局非常多样：ES6 引入了内置模块，但在此�
 
 在进入内置模块（随 ES6 引入）之前，看到的所有代码都将用 ES5 编写。其他包括：
 
-*   ES5 没有 `const` 和 `let`，只有 `var`。
-*   ES5 没有箭头函数，只有函数表达式。
+* ES5 没有 `const` 和 `let`，只有 `var`。
+* ES5 没有箭头函数，只有函数表达式。
 
 ## 29.3 在我们拥有模块之前，我们拥有脚本
 
@@ -10011,13 +9082,16 @@ var myModule = (function () { // 立即调用函数表达式 Open IIFE
   // 导入（通过全局变量）
   var imported1 = otherModule1;
   var imported2 = otherModule2;
+
   // 主体
   function internalFunc() {
     imported1();
   }
+
   function exportedFunc() {
     imported2();
   }
+
   // 导出（赋值给全局变量 `myModule`）
   return {
     exportedFunc: exportedFunc
@@ -10029,16 +9103,12 @@ var myModule = (function () { // 立即调用函数表达式 Open IIFE
 
 这种模拟模块的方法存在几个问题：
 
-*   脚本文件中的库通过全局变量导出和导入功能，存在命名冲突风险。
-*   依赖关系没有显式声明，脚本没有内置方法来加载其所依赖的脚本。因此，网页必须不仅加载页面所需的脚本，还要加载这些脚本的依赖项、依赖项的依赖项等。而且它必须按照正确的顺序进行加载！
+* 脚本文件中的库通过全局变量导出和导入功能，存在命名冲突风险。
+* 依赖关系没有显式声明，脚本没有内置方法来加载其所依赖的脚本。因此，网页必须不仅加载页面所需的脚本，还要加载这些脚本的依赖项、依赖项的依赖项等。而且它必须按照正确的顺序进行加载！
 
 ## 29.4 ES6 之前创建的模块系统
 
 在 ECMAScript 6 之前，JavaScript 没有内置模块。因此，使用了语言灵活的语法在语言*内部*实现了自定义模块系统。两种流行的系统是：
-
-
-
-
 
 ### 29.4.1 服务端：CommonJS 模块
 
@@ -10046,25 +9116,25 @@ var myModule = (function () { // 立即调用函数表达式 Open IIFE
 
 从现在起，`CommonJS module` 指的是该标准的 Node.js 版本（带有一些额外功能）。这是一个 CommonJS 模块的示例：
 
-```
-[](#cb607-1)// Imports
-[](#cb607-2)var importedFunc1 = require('./other-module1.js').importedFunc1;
-[](#cb607-3)var importedFunc2 = require('./other-module2.js').importedFunc2;
-[](#cb607-4)
-[](#cb607-5)// Body
-[](#cb607-6)function internalFunc() {
-[](#cb607-7)  // ···
-[](#cb607-8)}
-[](#cb607-9)function exportedFunc() {
-[](#cb607-10)  importedFunc1();
-[](#cb607-11)  importedFunc2();
-[](#cb607-12)  internalFunc();
-[](#cb607-13)}
-[](#cb607-14)
-[](#cb607-15)// Exports
-[](#cb607-16)module.exports = {
-[](#cb607-17)  exportedFunc: exportedFunc,
-[](#cb607-18)};
+```javascript
+// Imports
+var importedFunc1 = require('./other-module1.js').importedFunc1;
+var importedFunc2 = require('./other-module2.js').importedFunc2;
+
+// Body
+function internalFunc() {
+  // ···
+}
+function exportedFunc() {
+  importedFunc1();
+  importedFunc2();
+  internalFunc();
+}
+
+// Exports
+module.exports = {
+  exportedFunc: exportedFunc,
+};
 ```
 
 CommonJS 的特征如下：
@@ -10077,25 +9147,25 @@ CommonJS 的特征如下：
 
 AMD 模块格式的创建是为了比 CommonJS 格式在浏览器中更易使用。它最流行的实现是 [RequireJS](https://requirejs.org)。以下是一个 AMD 模块的示例。
 
-```
-[](#cb608-1)define(['./other-module1.js', './other-module2.js'],
-[](#cb608-2)  function (otherModule1, otherModule2) {
-[](#cb608-3)    var importedFunc1 = otherModule1.importedFunc1;
-[](#cb608-4)    var importedFunc2 = otherModule2.importedFunc2;
-[](#cb608-5)
-[](#cb608-6)    function internalFunc() {
-[](#cb608-7)      // ···
-[](#cb608-8)    }
-[](#cb608-9)    function exportedFunc() {
-[](#cb608-10)      importedFunc1();
-[](#cb608-11)      importedFunc2();
-[](#cb608-12)      internalFunc();
-[](#cb608-13)    }
-[](#cb608-14) 
-[](#cb608-15)    return {
-[](#cb608-16)      exportedFunc: exportedFunc,
-[](#cb608-17)    };
-[](#cb608-18)  });
+```javascript
+define(['./other-module1.js', './other-module2.js'],
+  function (otherModule1, otherModule2) {
+    var importedFunc1 = otherModule1.importedFunc1;
+    var importedFunc2 = otherModule2.importedFunc2;
+
+    function internalFunc() {
+      // ···
+    }
+    function exportedFunc() {
+      importedFunc1();
+      importedFunc2();
+      internalFunc();
+    }
+ 
+    return {
+      exportedFunc: exportedFunc,
+    };
+  });
 ```
 
 AMD 的特征如下：
@@ -10133,19 +9203,19 @@ ES 模块还具有新的优势：
 
 这是一个 ES 模块语法的示例：
 
-```
-[](#cb609-1)import {importedFunc1} from './other-module1.mjs';
-[](#cb609-2)import {importedFunc2} from './other-module2.mjs';
-[](#cb609-3)
-[](#cb609-4)function internalFunc() {
-[](#cb609-5)  ···
-[](#cb609-6)}
-[](#cb609-7)
-[](#cb609-8)export function exportedFunc() {
-[](#cb609-9)  importedFunc1();
-[](#cb609-10)  importedFunc2();
-[](#cb609-11)  internalFunc();
-[](#cb609-12)}
+```javascript
+import {importedFunc1} from './other-module1.mjs';
+import {importedFunc2} from './other-module2.mjs';
+
+function internalFunc() {
+  ···
+}
+
+export function exportedFunc() {
+  importedFunc1();
+  importedFunc2();
+  internalFunc();
+}
 ```
 
 从现在起，“模块”意味着“ECMAScript 模块”。
@@ -10175,15 +9245,15 @@ main.mjs
 
 模块 `my-math.mjs` 有两个命名导出：`square` 和 `LIGHTSPEED`。
 
-```
-[](#cb611-1)// 未导出，模块私有
-[](#cb611-2)function times(a, b) {
-[](#cb611-3)  return a * b;
-[](#cb611-4)}
-[](#cb611-5)export function square(x) {
-[](#cb611-6)  return times(x, x);
-[](#cb611-7)}
-[](#cb611-8)export const LIGHTSPEED = 299792458;
+```javascript
+// 未导出，模块私有
+function times(a, b) {
+  return a * b;
+}
+export function square(x) {
+  return times(x, x);
+}
+export const LIGHTSPEED = 299792458;
 ```
 
 要导出某些内容，我们在声明前面加上 `export` 关键字。未导出的实体是模块私有的。
@@ -10192,25 +9262,25 @@ main.mjs
 
 模块 `main.mjs` 有一个命名导入，`square`：
 
-```
-[](#cb612-1)import {square} from './lib/my-math.mjs';
-[](#cb612-2)assert.equal(square(3), 9);
+```javascript
+import {square} from './lib/my-math.mjs';
+assert.equal(square(3), 9);
 ```
 
 它也可以重命名它的导入：
 
-```
-[](#cb613-1)import {square as sq} from './lib/my-math.mjs';
-[](#cb613-2)assert.equal(sq(3), 9);
+```javascript
+import {square as sq} from './lib/my-math.mjs';
+assert.equal(sq(3), 9);
 ```
 
 #### 29.6.2.1 语法陷阱：命名导入不是解构
 
 命名导入和解构看起来非常相似：
 
-```
-[](#cb614-1)import {foo} from './bar.mjs'; // 
-[](#cb614-2)const {foo} = require('./bar.mjs'); // 解构
+```javascript
+import {foo} from './bar.mjs'; // 
+const {foo} = require('./bar.mjs'); // 解构
 ```
 
 但它们很大不同：
@@ -10219,14 +9289,14 @@ main.mjs
 - 你可以在解构模式中再次进行解构，但导入中的 `{}` 不能嵌套。
 - 重命名语法不同：
 
-    ```
-    [](#cb615-1)import {foo as f} from './bar.mjs'; // 导入
-    [](#cb615-2)const {foo: f} = require('./bar.mjs'); // 解构
+    ```javascript
+    import {foo as f} from './bar.mjs'; // 导入
+    const {foo: f} = require('./bar.mjs'); // 解构
     ```
 
     原理：解构看起来类似于对象字面量（包括嵌套），而导入引发了重命名的想法。
 
-![](img/file6.svg) **练习：命名导出**
+**练习：命名导出**
 
 `exercises/modules/export_named_test.mjs`
 
@@ -10234,29 +9304,28 @@ main.mjs
 
 *Namespace imports* 是命名导入的替代方案。如果我们命名空间导入一个模块，它将变成一个属性为命名导出的对象。如果我们使用命名空间导入，`main.mjs` 如下：
 
-```
-[](#cb616-1)import * as myMath from './lib/my-math.mjs';
-[](#cb616-2)assert.equal(myMath.square(3), 9);
-[](#cb616-3)
-[](#cb616-4)assert.deepEqual(Object.keys(myMath), ['LIGHTSPEED', 'square']);
+```javascript
+import * as myMath from './lib/my-math.mjs';
+assert.equal(myMath.square(3), 9);
+
+assert.deepEqual(Object.keys(myMath), ['LIGHTSPEED', 'square']);
 ```
 
 ### 29.6.4 命名导出样式：内联与子句（高级）
 
 我们目前看到的命名导出样式是*内联*的：通过在声明前加上 `export` 关键字来导出实体。
 
-
-
-
 但我们也可以使用独立的 `export clauses`。例如，`lib/my-math.mjs` 使用导出句后的样子如下：
 
-```
+```javascript
 function times(a, b) {
   return a * b;
 }
+
 function square(x) {
   return times(x, x);
 }
+
 const LIGHTSPEED = 299792458;
 
 export { square, LIGHTSPEED }; // 这里有分号！
@@ -10268,9 +9337,11 @@ export { square, LIGHTSPEED }; // 这里有分号！
 function times(a, b) {
   return a * b;
 }
+
 function sq(x) {
   return times(x, x);
 }
+
 const LS = 299792458;
 
 export {
@@ -10283,7 +9354,7 @@ export {
 
 每个模块最多有一个 `default export`。其核心思想是模块本身*就是*默认出的值。
 
-![](img/file2.svg) **避免混合使用命名导出和默认导出**
+**避免混合使用命名导出和默认导出**
 
 一个模块可以同时拥有命名导出和默认导出，但通常每个模块只坚持一种导出样式会更好。
 
@@ -10312,7 +9383,7 @@ assert.equal(myFunc(), 'Hello!');
 
 注意语法上的区别：命名导入周围的大括号表示我们正在进入模块*内部*，而默认导入获取的*就是*模块本身。
 
-![](img/file3.svg) **默认导出的用例有哪些？**
+**默认导出的用例有哪些？**
 
 默认导出的最常见用例是模块只包含单个函数或单个类。
 
@@ -10348,11 +9419,11 @@ export default const foo = 1, bar = 2, baz = 3;
 
 使用这段代码，你无法知道这三个值中的哪是默认导出。
 
-![](img/file6.svg) **练习：默认导出**
+**练习：默认导出**
 
 `exercises/modules/export_default_test.mjs`
 
-### 29.7.2 作为命名导出的默认导出（进阶）
+### 29.7.2 作为命名导出的默认导出（高级）
 
 在内部，默认导出仅仅是一个名为 `default` 的命名导出。作为示例，考虑之前带有默认导出的模块 `my-func.mjs`：
 
@@ -10370,7 +9441,6 @@ const GREETING = 'Hello!';
 function greet() {
   return GREETING;
 }
-
 export {
   greet as default,
 };
@@ -10397,7 +9467,7 @@ import * as mf from './my-func2.mjs';
 assert.equal(mf.default(), 'Hello!');
 ```
 
-![](img/file3.svg) **`default` 不是一个变量名吗？**
+**`default` 不是一个变量名吗？**
 
 `export default` 不能用于标记 `const`：`const` 可能会定义多个值，但 `export default` 恰好需要一个值。考虑以下假设代码：
 
@@ -10410,7 +9480,7 @@ export default const foo = 1, bar = 2, baz = 3;
 
 ## 29.8 关于导出和导入的更多细节
 
-### 29.8.1 导入是导出的视图
+### 29.8.1 导入是导出的只读视图
 
 到目前为止，我们直观地使用了导入和导出，一切似乎都运行良好。但现在是时候仔细观察导入和导出之间真实的关系。考虑以下两个文件：
 
@@ -10422,13 +9492,13 @@ main.mjs
 `counter.mjs` 导出一个变量和一个函数：
 
 ```javascript
-export counter = 3;
+export let counter = 3;
 export function incCounter() {
   counter++;
 }
 ```
 
-`main.mjs` 默认导入了两者。当我们使用 `incCounter()` 时，我们发现 `counter` 是实时的：
+`main.mjs` 导入了两者。当我们使用 `incCounter()` 时，我们发现 `counter` 是实时的：
 
 ```javascript
 import { counter, incCounter } from './counter.mjs';
@@ -10439,9 +9509,9 @@ assert.equal(counter, 4);
 
 注意，由于 `counter` 是实时的，我们可以修改 `counter++`。
 
-### 29.8.2 ESM 对循环导入的透明支持（进阶）
+### 29.8.2 ESM 对循环导入的透明支持（高级）
 
-ESM 透明地支持循环导入。为了理解如何实现，考虑以下示例：7 显示了模块的有向图。在这种情况下，P 导入 M 就是循环。
+ESM 透明地支持循环导入。为了理解如何实现，考虑以下示例：图 7 显示了模块的有向图。在这种情况下，P 导入 M 就是循环。
 
 ![](img/file16.svg)
 
@@ -10463,10 +9533,6 @@ ESM 透明地支持循环导入。为了理解如何实现，考虑以下示例�
 
 *npm 软件注册表*（npm software registry）是 Node.js 和 浏览器 JavaScript 库和应用程序的主流发布方式。它通过 *npm 包管理器*（npm package manager，简称 *npm*）进行管理。软件以所谓的*包*（packages）的形式发布。包是一个包含任意文件的目录，顶层包含一个描述包的 `package.json` 文件。例如，当 npm 在 `my-package/` 目录内创建一个空包时，你会得到这个 `package.json`：
 
-
-
-
-
 ```json
 {
   "name": "my-package",
@@ -10484,32 +9550,28 @@ ESM 透明地支持循环导入。为了理解如何实现，考虑以下示例�
 
 这些属性中的包含简单的元数据：
 
-*   `name` 指定此包的名称。一旦上传到 npm 注册表，就可以通过 `npm install my-package` 安装。
-
-*   `version` 用于版本管理，并遵循[语义化版本](https://semver.org)，包含三个数字：
-    *   主版本（Major version）：当发生不兼容的 API 更改时增加。
-    *   次要版本（Minor version）：当以后兼容的方式添加功能时增加。
-    *   补丁版本（Patch version）：当进行向后兼容的更改时增加。
-
-*   `description`、`keywords`、`author` 让人更容易找到包。
-
-*   `license` 阐明你可以如何使用此包。
+* `name` 指定此包的名称。一旦上传到 npm 注册表，就可以通过 `npm install my-package` 安装。
+* `version` 用于版本管理，并遵循[语义化版本](https://semver.org)，包含三个数字：
+    * 主版本（Major version）：当发生不兼容的 API 更改时增加。
+    * 次要版本（Minor version）：当以后兼容的方式添加功能时增加。
+    * 补丁版本（Patch version）：当进行向后兼容的更改时增加。
+* `description`、`keywords`、`author` 让人更容易找到包。
+* `license` 阐明你可以如何使用此包。
 
 其他属性启用高级配置：
 
-*   `main`：指定“是”该包的模块（在本章稍后部分解释）。
-
-*   `scripts`：你可以通过 `npm run` 执行的命令。例如，可以通过 `npm run test` 执行脚本 `test`。
+* `main`：指定“是”该包的模块（在本章稍后部分解释）。
+* `scripts`：你可以通过 `npm run` 执行的命令。例如，可以通过 `npm run test` 执行脚本 `test`。
 
 欲需关于 `package.json` 的更多信息，请参阅[npm 文档](https://docs.npmjs.com/files/package.json)。
 
-### 29.9.1 包安装在 `node_modules/` 目录内部
+### 29.9.1 包被安装在 `node_modules/` 目录内
 
 npm 总是将包安装在 `node_modules` 目录中。通常有很多这样的目录。npm 使用哪一个取决于当前所在的目录。例如，如果我们在 `/tmp/a/b/` 目录内，npm 会尝试在当前目录、其父目录、父目录的父目录等处查找 `node_modules`。换句话说，它搜索以下位置的*链*：
 
-*   `/tmp/a/b/node_modules`
-*   `/tmp/a/node_modules`
-*   `/tmp/node_modules`
+* `/tmp/a/b/node_modules`
+* `/tmp/a/node_modules`
+* `/tmp/node_modules`
 
 在安装包 `some-pkg` 时，npm 使用最近的 `node_modules`。例如，如果我们在 `/tmp/a/b/` 内部且该目录下存在 `node_modules`，那么 npm 将将包放在该目录中：
 
@@ -10526,17 +9588,21 @@ import * as theModule from 'the-package/the-module.mjs';
 
 为了找到 `the-module.mjs`（Node.js 优先为 ES 模块使用 `.mjs` 扩展名），Node.js 会向上遍历 `node_module` 链并搜索以下位置：
 
-*   `/home/jane/proj/node_modules/the-package/the-module.mjs`
-*   `/home/jane/node_modules/the-package/the-module.mjs`
-*   `/home/node_modules/the-package/the-module.mjs`
+* `/home/jane/proj/node_modules/the-package/the-module.mjs`
+* `/home/jane/node_modules/the-package/the-module.mjs`
+* `/home/node_modules/the-package/the-module.mjs`
 
-### 29.9.2 为什么 npm 可以用于安装前端库？
+### 29.9.2 为什么可以使用 npm 安装前端库？
 
 在 `node_modules` 目录中查找已安装的模块仅支持 Node.js。那么为什么我们也可以用 npm 安装浏览器的库呢？
 
-这是通过打包工具）。因此，我们避免使用驼峰命名，以便“本地”文件的名称与 npm 包保持一致。仅使用小写字母还可以最大限度地减少大小敏感文件系统与不敏感文件系统之间的冲突：前者区分字母相同但大小写不同的文件；后者则不。
+这是通过打包工具实现的。
 
-*   将短横线命名的文件名转换为驼峰命名的 JavaScript 变量名有的规则。由于我们命名命名空间的方式，这些规则同时适用于命名空间导入和默认导入。
+## 29.10 模块命名
+
+因此，我们避免使用驼峰命名，以便“本地”文件的名称与 npm 包保持一致。仅使用小写字母还可以最大限度地减少大小敏感文件系统与不敏感文件系统之间的冲突：前者区分字母相同但大小写不同的文件；后者则不。
+
+* 将短横线命名的文件名转换为驼峰命名的 JavaScript 变量名有的规则。由于我们命名命名空间的方式，这些规则同时适用于命名空间导入和默认导入。
 
 我也喜欢下划线命名（underscore-cased）的模块文件名，因为你可以直接将这些名称用于命名空间导入（无需任何转换）：
 
@@ -10550,34 +9616,34 @@ import * as my_module from './my_module.mjs';
 
 *模块标识符*（Module specifiers）是标识模块的字符串。它们在浏览器和 Node.js 中的工作略有不同。在查看差异之前，我们需要了解不同类型的模块标识符。
 
-### 29.11.1 模块标识符分类
+### 29.11.1 模块标识符的分类
 
 在 ES 模块中，我们区分以下类型的标识符。这些类别源自 CommonJS 模块。
 
-*   相对路径：以点开头。例如：
+* 相对路径：以点开头。例如：
     ```javascript
     './some/other/module.mjs'
     '../../lib/counter.mjs'
     ```
 
-*   绝对路径：以斜杠开头。示例：
+* 绝对路径：以斜杠开头。示例：
     ```javascript
     '/home/jane/file-tools.mjs'
     ```
 
-*   URL：包含协议（技术上讲，路径也是 URL）。例如：
+* URL：包含协议（技术上讲，路径也是 URL）。例如：
     ```javascript
     'https://example.com/some-module.mjs'
     'file:///home/john/tmp/main.mjs'
     ```
 
-*   裸路径（Bare path）：不以点、斜杠或协议开头，由不带扩展名的文件名组成。例如：
+* 裸路径（Bare path）：不以点、斜杠或协议开头，由不带扩展名的文件名组成。例如：
     ```javascript
     'lodash'
     'the-package'
     ```
 
-*   深度导入路径：以裸路径开头并包含至少一个斜杠。示例：
+* 深度导入路径：以裸路径开头并包含至少一个斜杠。示例：
     ```javascript
     'the-package/dist/the-module.mjs'
     ```
@@ -10586,31 +9652,21 @@ import * as my_module from './my_module.mjs';
 
 浏览器处理标识符的方式：
 
-*   相对路径、绝对路径和 URL 按预期工作。它们都必须指向真实文件（对比 CommonJS 允许省略文件名扩展名）。
+* 相对路径、绝对路径和 URL 按预期工作。它们都必须指向真实文件（对比 CommonJS 允许省略文件名扩展名）。
+* 模块的文件扩展名并不重要，只要它们以 `text/javascript` 内容类型提供。
+* 裸路径将如何被处理尚不明确。你可能可能通过查找表将其映射到其他标识符。
 
-*   模块的文件扩展名并不重要，只要它们以 `text/javascript` 内容类型提供。
+注意，打包工具如 webpack 将模块合并为更少的文件，对标识符通常比浏览器宽松。这是因为它们在构建/编译时（而不是运行时）运行，并且可以通过遍历文件系统来搜索文件。
 
-*   裸路径将如何被处理尚不明确。你可能可能通过查找表将其映射到其他标识符。
-
-注意，打包工具](#ch049.xhtml_bundler）如 webpack 将模块合并为更少的文件，对标识符通常比浏览器宽松。这是因为它们在构建/编译时（而不是运行时）运行，并且可以通过遍历文件系统来搜索文件。
-
-### 29.11.3 Node.js 上的 ES 模块标识符
+### 29.11.3 Node.js 中的 ES 模块标识符
 
 Node.js 处理标识符的方式：
 
-*   相对路径像在 浏览器中一样解析——相对于当前模块的路径。
-
-*   目前不支持绝对路径。作为替代方案，你可以使用以 `file:///` 开头的 URL。你可以通过 `url.pathToFileURL` 创建此类 URL。
-
-*   URL 标识符仅支持 `file:` 协议。
-
-*   裸路径被解释为包名，并相对于最近的 `node_modules` 目录解析。加载哪个模块通过查看 `package.json` 中的 `"main"` 属性决定（类似于 CommonJS）。
-
-*   深度导入路径也相对于最近的 `node_modules` 目录解析。它们包含文件名，因此始终明确指的是哪个模块。
-
-
-
-
+* 相对路径像在 浏览器中一样解析——相对于当前模块的路径。
+* 目前不支持绝对路径。作为替代方案，你可以使用以 `file:///` 开头的 URL。你可以通过 `url.pathToFileURL` 创建此类 URL。
+* URL 标识符仅支持 `file:` 协议。
+* 裸路径被解释为包名，并相对于最近的 `node_modules` 目录解析。加载哪个模块通过查看 `package.json` 中的 `"main"` 属性决定（类似于 CommonJS）。
+* 深度导入路径也相对于最近的 `node_modules` 目录解析。它们包含文件名，因此始终明确指的是哪个模块。
 
 所有的标识符除裸路径（bare paths）外都必须引用实际文件。这意味着，ESM 不支持以下 CommonJS 特：
 
@@ -10620,16 +9676,15 @@ Node.js 处理标识符的方式：
 
 所有内置 Node.js 模块都可以通过裸路径访问并具有具名的 ESM 导出——例如：
 
-```
+```javascript
 import * as assert from 'assert/strict';
 import * as path from 'path';
 
 assert.equal(
   path.join('a/b/c', '../d'), 'a/b/d');
-);
 ```
 
-### 29.11.3.1 Node.js 中的文件名扩展名
+#### 29.11.3.1 Node.js 中的文件名扩展名
 
 Node.js 支持以下默认文件名扩展名：
 
@@ -10643,7 +9698,7 @@ Node.js 支持以下默认文件名扩展名：
 - `"commonjs"`（默认值）：扩展名为 `.js` 或没有扩展名的文件被解释为 CommonJS 模块。
 - `"module"`：扩展名为 `.js` 或没有扩展名的文件被解释为 ESM 模块。
 
-### 29.11.3.2 将非文件源代码解释为 CommonJS 或 ESM
+#### 29.11.3.2 将非文件源代码解释为 CommonJS 或 ESM
 
 并不是所有由 Node.js 执行的代码都来自文件。你还可以通过 `stdin`、`--eval` 和 `--print`发送代码。命令行选项 `--input-type` 允许你指定如何解释此类代码：
 
@@ -10671,7 +9726,7 @@ main2.mjs
 
 我们已经看到过模块 `my-math.mjs`：
 
-```
+```javascript
 // 未导出，模块内部私有
 function times(a, b) {
   return a * b;
@@ -10684,7 +9739,7 @@ export const LIGHTSPEED = 299792458;
 
 这是在 `main1.mjs` 中使用 `import()` 的样子：
 
-```
+```javascript
 const dir = './lib/';
 const moduleSpecifier = dir + 'my-math.mjs';
 
@@ -10707,7 +9762,7 @@ function loadConstant() {
 
 接下来，我们将在 `main2.mjs` 中实现完全相同的功能，但通过所谓的*异步函数*（async function），它为 Promises 提供了更好的语法。
 
-```
+```javascript
 const dir = './lib/';
 const moduleSpecifier = dir + 'my-math.mjs';
 
@@ -10726,20 +9781,16 @@ async function loadConstant() {
 - 我们在函数内部导入（而不是在顶层）。
 - 模块标识符来自变量。
 
-
-
-
-
 [Node.js 模块 `url`](https://nodejs.org/api/url.html) 提供了两个用于在 `file:` URL 和路径之间转换的函数：
 
-*   `fileURLToPath(url: URL|string): string`
+* `fileURLToPath(url: URL|string): string`
     将 `file:` URL 转换为路径。
-*   `pathToFileURL(path: string): URL`
+* `pathToFileURL(path: string): URL`
     将路径转换为 `file:` URL。
 
 如果你需要一个可以在本地文件系统中使用的路径，那么 `URL` 实例的属性 `.pathname` 并不总是可靠的：
 
-```
+```javascript
 assert.equal(
   new URL('file:///tmp/with%20space.txt').pathname,
   '/tmp/with%20space.txt');
@@ -10747,7 +9798,7 @@ assert.equal(
 
 因此，使用 `fileURLToPath()` 更好：
 
-```
+```javascript
 import * as url from 'url';
 assert.equal(
   url.fileURLToPath('file:///tmp/with%20space.txt'),
@@ -10756,36 +9807,44 @@ assert.equal(
 
 同样地，`pathToFileURL()` 的功能不仅仅是在绝对路径前加上 `'file://'`。
 
-## 29.14 Polyfills：模拟原生 Web 平台特性（高级）
+## 29.13 `import.meta` – 当前模块的元数据 [ES2020]
 
-![](img/file5.svg) **后端也有 polyfills**
+### 29.13.1 `import.meta.url`
+
+### 29.13.2 `import.meta.url` 与 `URL` 类
+
+### 29.13.3 Node.js 中的 `import.meta.url`
+
+## 29.14 Polyfills（垫填充）：模拟原生平台特性（高级）
+
+**后端也有 polyfills**
 
 这一节关于前端开发和 Web 浏览器，但类似的思想也适用于后端开发。
 
 `Polyfills` 帮助解决我们在 JavaScript 开发 Web 应用时面临的一个冲突：
 
-*   一方面，我们想使用现代 Web 平台特性，让应用变得更好和/或让开发更简单。
-*   另一方面，应用应该在尽可能多的浏览器上运行。
+* 一方面，我们想使用现代 Web 平台特性，让应用变得更好和/或让开发更简单。
+* 另一方面，应用应该在尽可能多的浏览器上运行。
 
 假设有一个 平台特性 `X`：
 
-*   `X` 的 `polyfill` 是一段代码。如果它在一个已经内置支持 `X` 的平台上执行，它将什么都不做。否则，它会在该平台上提供该特性的。在后一种情况下，被 polyfill 的特性（在很大程度上）原生实现无异。为了实现这一点，polyfill 通常会进行全局更改。例如，它可能会修改全局数据或配置全局模块加载器。Polyfills 通常被封装为模块。
-    *   术语 [`polyfill`](https://remysharp.com/2010/10/08/what-is-a-polyfill) 由 Remy Sharp 提出的。
-*   `speculative polyfill` 是针对提议中的 Web 平台特性（尚未标准化）的 polyfill。
-    *   替代术语：`prollyfill`
-*   `X` 的 `replica` 是一个在本地复制 `X` 的 API 和功能的库。此类库独立于 `X` 的原生（且全局的）实现。
-    *   `Replica` 是本节引入的新术语。替代术语：`ponyfill`
-*   还有 `shim` 这个术语，但它没有全球公认的定义。它的意思通常与 `polyfill` 相同。
+* `X` 的 `polyfill` 是一段代码。如果它在一个已经内置支持 `X` 的平台上执行，它将什么都不做。否则，它会在该平台上提供该特性的。在后一种情况下，被 polyfill 的特性（在很大程度上）原生实现无异。为了实现这一点，polyfill 通常会进行全局更改。例如，它可能会修改全局数据或配置全局模块加载器。Polyfills 通常被封装为模块。
+    * 术语 [`polyfill`](https://remysharp.com/2010/10/08/what-is-a-polyfill) 由 Remy Sharp 提出的。
+* `speculative polyfill` 是针对提议中的 Web 平台特性（尚未标准化）的 polyfill。
+    * 替代术语：`prollyfill`
+* `X` 的 `replica` 是一个在本地复制 `X` 的 API 和功能的库。此类库独立于 `X` 的原生（且全局的）实现。
+    * `Replica` 是本节引入的新术语。替代术语：`ponyfill`
+* 还有 `shim` 这个术语，但它没有全球公认的定义。它的意思通常与 `polyfill` 相同。
 
 每当我们的 Web 应用启动时，它必须首先执行所有可能在处处不可用的特性的 polyfills。之后，我们可以确定这些特性是原生可用的。
 
-### 29.14.1 本节来源
+### 29.14.1 本节的来源
 
-*   “什么是 Polyfill ，作者 Remy Sharp
-*   `replica` 术语的灵感：[拉斯维加斯的埃菲尔铁塔](https://en.wikipedia.org/wiki/Paris_Las_Vegas)
-*   关于“polyfill”及相关术语的有用澄清：[“Polyfills 与 Web 的演进”](https://www.w3.org/2001/tag/doc/polyfills/)。Andrew Betts 编辑。
+* “什么是 Polyfill ，作者 Remy Sharp
+* `replica` 术语的灵感：[拉斯维加斯的埃菲尔铁塔](https://en.wikipedia.org/wiki/Paris_Las_Vegas)
+* 关于“polyfill”及相关术语的有用澄清：[“Polyfills 与 Web 的演进”](https://www.w3.org/2001/tag/doc/polyfills/)。Andrew Betts 编辑。
 
-![](img/file7.svg) **测题**
+**测题**
 
 查看测试应用。
 
@@ -10793,65 +9852,59 @@ assert.equal(
 
 * * *
 
-*   30.1 什么是对象？
-    *   30.1.1 对象的角色：记录 vs 字典
-*   30.2 作为记录的对象
-    *   30.2.1 对象字面量：属性
-    *   30.2.2 对象字面量：属性值简写
-    *   30.2.3 获取属性
-    *   30.2.4 设置属性
-    *   30.2.5 对象字面量：方法
-    *   30.2.6 对象字面量：访问器
-*   30.3 [向对象字面量中展开 (`...`) [ES2018]](#ch031.xhtml_spreading-into-object-literals)
-    *   30.3.1 展开的用例：复制对象
-    *   30.3.2 展开的用例：缺失属性的默认值
-    *   30.3.3 展开的用例：非破坏性更改属性
-*   30.4 方法和特殊变量 `this`
-    *   30.4.1 方法是值为函数的属性
-    *   30.4.2 特殊变量 `this`
-    *   30.4.3 方法与 `.call()`
-    *   30.4.4 方法与 `.bind()`
-    *   30.4.5 `this` 陷阱：提取方法
-    *   30.4.6 `this` 陷阱：意外覆盖
-    *   30.4.7 各种上下文下的 `this` 值
-*   30.5 [可选链 [ES2020]](ch031.xhtml_optional-chaining)
-    *   30.5.1 可选静态访问示例
-    *   30.5.2 运算符详解（高级）
-    *   30.5.3 短路处理
-    *   30.5.4 常见问题
-*   30.6 作为字典的对象（高级）
-    *   30.6.1 任意固定字符串作为键
-    *   30.6.2 计算属性键
-    *   30.6.3 `in` 运算符：是否存在某个属性
-    *   30.6.4 删除属性
-    *   30.6.5 列出键
-    *   30.6.6 通过 `Object.values()` 列出值`
-    *   30.6.7 通过 `Object.entries()` 列出键值对 [ES2017
-    *   30.6.8 属性是有序的
-    *   30.6.9 通过 `Object.fromEntries()` 组装对象 [ES2019
-    *   30.6.10 使用对象作为字典的陷阱
-*   30.7 标准方法（高级）
-    *   30.7.1 .toString()`
-    *   30.7.2 .valueOf()`
-*   30.8 高级主题
-    *   30.8.1 `Object.assign()` [ES6`
-    *   30.8.2 [冻结对象 [ES5]`](ch031.xhtml_freezing-objects-es5)
-    *   30.8.3 [属性属性和属性描述符 [ES5]`](ch031.xhtml_property-attributes)
+* 30.1 什么是对象？
+    * 30.1.1 对象的角色：记录 vs 字典
+* 30.2 作为记录的对象
+    * 30.2.1 对象字面量：属性
+    * 30.2.2 对象字面量：属性值简写
+    * 30.2.3 获取属性
+    * 30.2.4 设置属性
+    * 30.2.5 对象字面量：方法
+    * 30.2.6 对象字面量：访问器
+* 30.3 向对象字面量中展开 (`...`) [ES2018]
+    * 30.3.1 展开的用例：复制对象
+    * 30.3.2 展开的用例：缺失属性的默认值
+    * 30.3.3 展开的用例：非破坏性更改属性
+* 30.4 方法和特殊变量 `this`
+    * 30.4.1 方法是值为函数的属性
+    * 30.4.2 特殊变量 `this`
+    * 30.4.3 方法与 `.call()`
+    * 30.4.4 方法与 `.bind()`
+    * 30.4.5 `this` 陷阱：提取方法
+    * 30.4.6 `this` 陷阱：意外覆盖
+    * 30.4.7 各种上下文下的 `this` 值
+* 30.5 可选链 [ES2020]
+    * 30.5.1 可选静态访问示例
+    * 30.5.2 运算符详解（高级）
+    * 30.5.3 短路处理
+    * 30.5.4 常见问题
+* 30.6 作为字典的对象（高级）
+    * 30.6.1 任意固定字符串作为键
+    * 30.6.2 计算属性键
+    * 30.6.3 `in` 运算符：是否存在某个属性
+    * 30.6.4 删除属性
+    * 30.6.5 列出键
+    * 30.6.6 通过 `Object.values()` 列出值
+    * 30.6.7 通过 `Object.entries()` 列出键值对 [ES2017]
+    * 30.6.8 属性是有序的
+    * 30.6.9 通过 `Object.fromEntries()` 组装对象 [ES2019]
+    * 30.6.10 使用对象作为字典的陷阱
+* 30.7 标准方法（高级）
+    * 30.7.1 `.toString()`
+    * 30.7.2 `.valueOf()`
+* 30.8 高级主题
+    * 30.8.1 `Object.assign()` [ES6]
+    * 30.8.2 冻结对象 [ES5]
+    * 30.8.3 属性属性和属性描述符 [ES5]
 
 * * *
 
 在书中，JavaScript 的面向对象编程（OOP）风格分四步引入。本章涵盖第一步；下一章涵盖第 2-4 步。步骤如下（见图 8):
 
-1.  **单个对象（本章）：**作为 OOP 基础构建模块的*对象*是如何孤立工作的？
-2.  **原型链（下一章）：**每个对象都有由零或多个*原型对象*组成的链。原型是 JavaScript 的核心继承机制。
-
-
-
-
-
-### 3. **类（下一章）：** JavaScript 的 `classes` 是对象的工厂。类与其实例之间的关系基于原型继承。
-
-### 4. **子子类化（下一章）：** 子类（`subclass`）与其父类（`superclass`）之间的关系也基于原型继承。
+1. **单个对象（本章）：**作为 OOP 基础构建模块的*对象*是如何孤立工作的？
+2. **原型链（下一章）：**每个对象都有由零或多个*原型对象*组成的链。原型是 JavaScript 的核心继承机制。
+3. **类（下一章）：** JavaScript 的 `classes` 是对象的工厂。类与其实例之间的关系基于原型继承。
+4. **子子类化（下一章）：** 子类（`subclass`）与其父类（`superclass`）之间的关系也基于原型继承。
 
 ![](img/file17.svg)
 
@@ -10874,9 +9927,15 @@ assert.equal(
 这些角色影响了本章对对象的解释方式：
 
 * 首先，我们将探索作为记录的对象。尽管属性键在底层是字符串或符号，在本章的这部分中，它们对我们来说将是固定的标识符。
-* 随后，我们将探索作为字典的对象。注意，`Maps``。它列出属性键：
+* 随后，我们将探索作为字典的对象。注意，`Maps` 更适合作为字典。
 
-```
+## 30.2 作为记录的对象
+
+### 30.2.1 对象字面量：属性
+
+对象字面量允许我们创建对象。它列出属性键：
+
+```javascript
 > Object.keys({a:1, b:2})
 [ 'a', 'b' ]
 ```
@@ -10885,10 +9944,11 @@ assert.equal(
 
 当属性的值通过变量名定义，且该名称与键相同时，我们可以省略键。
 
-```
+```javascript
 function createPoint(x, y) {
   return {x, y};
 }
+
 assert.deepEqual(
   createPoint(9, 2),
   { x: 9, y: 2 }
@@ -10899,7 +9959,7 @@ assert.deepEqual(
 
 这是我们 `get`（读取）属性的方法（行 A）：
 
-```
+```javascript
 const jane = {
   first: 'Jane',
   last: 'Doe',
@@ -10911,7 +9971,7 @@ assert.equal(jane.first, 'Jane'); // (A)
 
 获取未知属性会产生 `undefined`：
 
-```
+```javascript
 assert.equal(jane.unknownProperty, undefined);
 ```
 
@@ -10919,10 +9979,11 @@ assert.equal(jane.unknownProperty, undefined);
 
 这是我们 `set`（写入）属性的方法：
 
-```
+```javascript
 const obj = {
   prop: 1,
 };
+
 assert.equal(obj.prop, 1);
 obj.prop = 2; // (A)
 assert.equal(obj.prop, 2);
@@ -10930,7 +9991,7 @@ assert.equal(obj.prop, 2);
 
 我们刚刚通过设置更改了现有属性。如果设置设置一个未知属性，我们就会创建一个新条目：
 
-```
+```javascript
 const obj = {}; // 空对象
 assert.deepEqual(
   Object.keys(obj), []);
@@ -10952,6 +10013,7 @@ const jane = {
   },
 };
 ```
+
 在调用 `jane.says('hello')` 时，`jane` 是方法的*接收者*，`this` 是代表接收者的特殊变量。
 
 ### 30.2.6 对象字面量：访问器
@@ -10969,10 +10031,11 @@ getter 是通过在方法定义前加上 `get` 来创建的：
 const jane = {
   first: 'Jane',
   last: 'Doe',
-  get() {
+  get full() {
     return `${this.first} ${this.last}`;
   },
 };
+
 assert.equal(jane.full, 'Jane Doe');
 ```
 
@@ -10992,11 +10055,11 @@ const jane = {
 };
 ```
 
-### 6.svg **通过对象字面量创建对象**
+**练习：通过对象字面量创建对象**
 
-## 30.3 展开到对象字面量 (`...`) [ES018]
+## 30.3 展开到对象字面量 (`...`) [ES2018]
 
-在函数调用内部中，展开（`...`）将[*迭代*对象](ch33.xhtml_sync-iteration）的迭代值转换为参数。
+在函数调用内部中，展开（`...`）将[*迭代*对象](ch33.xhtml_sync-iteration)的迭代值转换为参数。
 
 在对象字面量内部，*展开属性*（spread property）将另一个对象的属性添加到当前对象中：
 
@@ -11031,7 +10094,7 @@ const jane = {
 { '0': 'a', '1': 'b' }
 ```
 
-字符串和数组的属性 `.length` 对这种操作是隐藏的（它不是*可枚举的*；参见 [§30.8.3 “属性属性和属性描述符 [ES5]”`](ch31.xhtml_property-attributes）获取更多信息）。
+字符串和数组的属性 `.length` 对这种操作是隐藏的（它不是*可枚举的*；参见 [§30.8.3 “属性属性和属性描述符 [ES5]”]获取更多信息）。
 
 ### 30.3.1 展开用：复制对象
 
@@ -11042,10 +10105,6 @@ const copy = {...original};
 ```
 
 注意 —— 复制是*浅拷贝*的：`copy` 是一个新对象，包含了 `original` 所有属性（键值对）的副本。但如果属性值是对象，那么这些对象本身并没有被复制；它们在 `original` 和 `copy` 之间共享。
-
-
-
-
 
 ```javascript
 const original = { a: 1, b: {foo: true} };
@@ -11068,7 +10127,7 @@ assert.deepEqual(
   original, { a: 1, b: {foo: false} });
 ```
 
-![](img/file4.svg) `JavaScript 没有内置对深拷贝的支持`
+**JavaScript 没有内置对深拷贝的支持**
 
 对象的*深拷贝*（即所有层级都被复制）在通用情况下是臭名的难以实现。因此，JavaScript 目前没有内置这样的操作操作。如果我们需要这样的操作，就必须自己实现它。
 
@@ -11111,7 +10170,7 @@ const updatedObj = {...obj, foo: 1};
 assert.deepEqual(updatedObj, {foo: 1, bar: 'b'});
 ```
 
-![](img/file6.svg) `练习：通过展开运算符非破坏性地更新属性（固定键）`
+**练习：通过展开运算符非破坏性地更新属性（固定键）**
 
 `exercises/single-objects/update_name_test.mjs`
 
@@ -11159,12 +10218,13 @@ const obj = {
     assert.equal(y, 'b');
   }
 };
+
 obj.someMethod('a', 'b'); // (B)
 ```
 
 在 B 行，`obj` 是方法调用的*接收者*。它被传递给存储在 `obj` 中的函数。
 
-### 30.4.3 方法和 `call`
+### 30.4.3 方法和 `.call()`
 
 回方法是将 `this` 作为参数的函数。在之前的示例中，`this` 被这样调用：
 
@@ -11178,7 +10238,7 @@ obj.someMethod('a', 'b')
 
 它们之所以不同是因为 (2) 为 `this` 指定了值。
 
-### 30.4.4 方法和 `bind`
+### 30.4.4 方法和 `.bind()`
 
 `bind()` 是另一个方法。在下面的示例中，我们使用：
 
@@ -11275,7 +10335,7 @@ const func2 = jane.says.bind(jane);
 assert.equal(func2('hello'), 'Jane says “hello”');
 ```
 
-### 30.4.5.1 示例：提取方法
+#### 30.4.5.1 示例：提取方法
 
 以下是实际 Web 开发中可能会看到的代码简化版本：
 
@@ -11297,21 +10357,17 @@ class ClickHandler {
 elem.addEventListener('click', this.handleClick.bind(this));
 ```
 
-### 30.4.5.2 如何避免提取方法的陷阱
-
-
-
-
+#### 30.4.5.2 如何避免提取方法的陷阱
 
 唉，没有简单的方法可以规避提取方法的陷阱：每当我们提取一个方法时，都必须小心并正确地处理——例如，通过绑定 `this` 或使用箭头函数。
 
-![](img/file6.svg) **练习：提取方法**
+**练习：提取方法**
 
 `exercises/single-objects/method_extraction_exrc.mjs`
 
 ### 30.4.6 `this` 陷阱：意外遮蔽 `this`
 
-![](img/file2.svg) **意外遮蔽 `this` 只对普通函数是一个问题**
+**意外遮蔽 `this` 只对普通函数是一个问题**
 
 箭头函数不会遮蔽 `this`。
 
@@ -11327,6 +10383,7 @@ const prefixer = {
       });
   },
 };
+
 assert.throws(
   () => prefixer.prefixStringArray(['a', 'b']),
   /^TypeError: Cannot read property 'prefix' of undefined$/
@@ -11342,11 +10399,38 @@ const prefixer = {
   prefix: '==> ',
   prefixStringArray(stringArray) {
     return stringArray.map(
-      (x) => {
-        return this.prefix + x;
-      });
+      x => this.prefix + x); // (A)
   },
 };
+
+assert.deepEqual(
+  prefixer.prefixStringArray(['a', 'b']),
+  ['==> a', '==> b']);
+```
+
+
+
+# 30.4.6 避免意外遮蔽 `this` 的陷阱
+
+## 30.4.6.1 避免意外遮蔽 `this` 的陷阱
+
+如果你遵循“建议：优先使用专门的函数而非普通函数”中的建议，就可以避免意外遮蔽 `this` 的陷阱。总结如下：
+
+- 使用箭头函数作为匿名内联函数。它们没有将 `this` 作为隐式参数，且不会遮蔽它。
+- 对于命名的独立函数，你可以使用箭头函数或函数声明。如果你使用后者，请确保函数体中没有提到 `this`。
+
+### 示例：修复 `this` 遮蔽问题
+
+```javascript
+prefixStringArray(stringArray) {
+  return stringArray.map(
+    (x) => {
+      return this.prefix + x;
+    });
+},
+```
+
+```javascript
 assert.deepEqual(
   prefixer.prefixStringArray(['a', 'b']),
   ['==> a', '==> b']
@@ -11390,14 +10474,7 @@ prefixStringArray(stringArray) {
 },
 ```
 
-#### 30.4.6.1 避免意外遮蔽 `this` 的陷阱
-
-如果你遵循“建议：优先使用专门的函数而非普通函数”中的建议，就可以避免意外遮蔽 `this` 的陷阱。总结如下：
-
-- 使用箭头函数作为匿名内联函数。它们没有将 `this` 作为隐式参数，且不会遮蔽它。
-- 对于命名的独立函数，你可以使用箭头函数或函数声明。如果你使用后者，请确保函数体中没有提到 `this`。
-
-### 30.4.7 `this` 在各种上下文中的值（高级）
+# 30.4.7 `this` 在各种上下文中的值（高级）
 
 `this` 的值是什么？在可调用实体内部，`this` 的值取决于该可调用实体是如何调用的以及哪种可调用实体：
 
@@ -11416,7 +10493,7 @@ prefixStringArray(stringArray) {
 **提示：在顶层作用域中假设 `this` 不存在**
 我喜欢这样做，因为顶层的 `this` 令人困惑且很少用。
 
-## 30.5 用于属性访问和方法调用的可选链 [ES2020]（高级）
+# 30.5 用于属性访问和方法调用的可选链 [ES2020]（高级）
 
 存在以下类型的可选链：
 
@@ -11431,7 +10508,7 @@ func?.(arg0, arg1) // 函数或调用
 - 如果问号之前的值既不是 `undefined` 也不是 `null`，则执行问号之后的操作。
 - 否则返回 `undefined`。
 
-### 30.5.1 示例：可选属性访问
+## 30.5.1 示例：可选属性访问
 
 考虑以下数据：
 
@@ -11449,8 +10526,7 @@ const persons = [
   },
   {
     surname: 'Carmen',
-    address: {
-    },
+    address: {},
   },
 ];
 ```
@@ -11461,12 +10537,13 @@ const persons = [
 const streetNames = persons.map(
   p => p.address?.street?.name
 );
+
 assert.deepEqual(
   streetNames, ['Sesame Street', undefined, undefined]
 );
 ```
 
-#### 30.5.1.1 通过空值合并运算符处理默认值
+### 30.5.1.1 通过空值合并运算符处理默认值
 
 空值合并运算符允许我们使用默认值 `'(no name)'` 代替 `undefined`：
 
@@ -11474,14 +10551,15 @@ assert.deepEqual(
 const streetNames = persons.map(
   p => p.address?.street?.name ?? '(no name)'
 );
+
 assert.deepEqual(
   streetNames, ['Sesame Street', '(no name)', '(no name)']
 );
 ```
 
-### 30.5.2 运算符详细说明（高级）
+## 30.5.2 运算符详细说明（高级）
 
-#### 30.5.2.1 可选静态属性访问
+### 30.5.2.1 可选静态属性访问
 
 以下两个表达式等价：
 
@@ -11498,7 +10576,7 @@ assert.equal(null?.prop, undefined);
 assert.equal({prop:1}?.prop, 1);
 ```
 
-#### 30.5.2.2 可选动态属性访问
+### 30.5.2.2 可选动态属性访问
 
 以下两个表达式等价：
 
@@ -11516,7 +10594,7 @@ assert.equal(null?.[key], undefined);
 assert.equal({prop:1}?.[key], 1);
 ```
 
-#### 30.5.2.3 可选函数或方法调用
+### 30.5.2.3 可选函数或方法调用
 
 以下两个表达式等价：
 
@@ -11542,12 +10620,9 @@ assert.throws(
 );
 ```
 
-
-
-
 为什么？这种设计的目的是运算符只容忍故意的遗漏。一个不可调用的值（`undefined` 和 `null` 除外）可能是一个错误，应该被报告而不是被规避。
 
-### 30.5.3 短路逻辑（高级）
+## 30.5.3 短路逻辑（高级）
 
 在属性访问和函数/方法调用的链中，一旦第一个可选运算符在其左侧遇到 `undefined` 或 `null`，评估就会停止：
 
@@ -11560,7 +10635,6 @@ function isInvoked(obj) {
 
 assert.equal(
   isInvoked({a: {b: {m() {}}}}), true);
-
 // ?. 的左侧是 undefined
 // 赋值操作没有执行
 assert.equal(
@@ -11573,9 +10647,9 @@ assert.equal(
 * `a || b`
 * `c ? t : e`
 
-### 30.5.4 常见问题
+## 30.5.4 常见问题
 
-#### 30.5.4.1 为什么 `o?.[x]` 和 `f?.()` 中有点？
+### 30.5.4.1 为什么 `o?.[x]` 和 `f?.()` 中有点？
 
 以下两个可选运算符的语法并不理想：
 
@@ -11591,17 +10665,17 @@ obj?['a', 'b', 'c'].map(x => x+x)
 obj ? ['a', 'b', 'c'].map(x => x+x) : []
 ```
 
-#### 30.5.4.2 为什么 `null?.prop` 评估结果是 `undefined` 而不是 `null`？
+### 30.5.4.2 为什么 `null?.prop` 评估结果是 `undefined` 而不是 `null`？
 
 `?.` 运算符主要关注的是它的右侧：属性 `.prop` 是否存在？如果不存在，则提前停止。因此，保留关于其左侧的信息很少用。然而，只拥有一个“提前终止”值确实简化了问题。
 
-### 30.6 对象作为字典（高级）
+# 30.6 对象作为字典（高级）
 
 对象作为记录时效果最好。但在 ES6 之前，JavaScript 没有用于字典的数据结构（ES6 引入了 Maps）。因此，必须使用对象作为字典，这带来了一个巨大的限制：键必须是字符串（symbol 也是 ES6 引入的）。
 
 我们首先查看与字典相关但对对象作为记录也有用的对象特性。本节最后关于如何实际将对象作为字典的提示（剧透：如果可以，请使用 `Maps`）。
 
-### 30.6.1 任意固定字符串作为属性键
+## 30.6.1 任意固定字符串作为属性键
 
 到目前为止，我们一直将对象作为记录。属性键是固定的标记，必须是有效的标识符，并在内部转换为字符串：
 
@@ -11653,7 +10727,7 @@ const obj = {
 assert.equal(obj['A nice method'](), 'Yes!');
 ```
 
-### 30.6.2 计算属性键
+## 30.6.2 计算属性键
 
 到目前为止，属性键一直是对象字面量内部的固定字符串。在本节中，我们学习如何动态计算属性键。这使我们能够使用任意字符串或 symbol。
 
@@ -11699,7 +10773,7 @@ assert.equal(obj[methodKey](), 'Yes!');
 
 `exercises/single-objects/update_property_test.mjs`
 
-### 30.6.3 `in` 运算符：是否存在给定键的属性？
+## 30.6.3 `in` 运算符：是否存在给定键的属性？
 
 `in` 运算符检查对象是否具有给定键的属性：
 
@@ -11713,7 +10787,7 @@ assert.equal('foo' in obj, true);
 assert.equal('unknownKey' in obj, false);
 ```
 
-#### 30.6.3.1 通过真值检查检查属性是否存在
+### 30.6.3.1 通过真值检查检查属性是否存在
 
 我们也可以使用真值检查来判断属性是否存在：
 
@@ -11730,7 +10804,7 @@ assert.equal(obj.unknownKey ? 'exists' : 'does not exist', 'does not exist');
 assert.equal(obj.bar ? 'exists' : 'does not exist', 'does not exist'); // 应该是：'exists'
 ```
 
-### 30.6.4 删除属性
+## 30.6.4 删除属性
 
 我们可以通过 `delete` 运算符删除属性：
 
@@ -11738,14 +10812,13 @@ assert.equal(obj.bar ? 'exists' : 'does not exist', 'does not exist'); // 应该
 const obj = {
   foo: 123,
 };
+
 assert.deepEqual(Object.keys(obj), ['foo']);
-
 delete obj.foo;
-
 assert.deepEqual(Object.keys(obj), []);
 ```
 
-### 30.6.5 列出属性键
+## 30.6.5 列出属性键
 
 表 19：列出*自有*（非继承的）属性键的标准库方法。它们都返回包含字符串和/或 symbol 的数组。
 
@@ -11755,10 +10828,6 @@ assert.deepEqual(Object.keys(obj), []);
 | `Object.getOwnPropertyNames()` | `✔` | `✔` | `✔` |  |
 | `Object.getOwnPropertySymbols()` | `✔` | `✔` |    | `✔` |
 | `Reflect.ownKeys()` | `✔` | `✔` | `✔` | `✔` |
-
-
-
-
 
 `tbl. [19]` 中的每个方法都会返回一个包含参数自身属性键的 `Array`。在方法名称中，我们可以看到以下区别：
 
@@ -11813,7 +10882,7 @@ assert.deepEqual(
 
 `Object.defineProperties()` 将在本章稍后部分解释。
 
-### 30.6.6 通过 `Object.values()` 列出属性值
+## 30.6.6 通过 `Object.values()` 列出属性值
 
 `Object.values()` 列出对象中所有可枚举属性的值：
 
@@ -11824,7 +10893,7 @@ assert.deepEqual(
   [1, 2]);
 ```
 
-### 30.6.7 通过 `Object.entries()` 列出属性项 [ES2017]
+## 30.6.7 通过 `Object.entries()` 列出属性项 [ES2017]
 
 `Object.entries()` 列出可枚举属性的键值对。每个对都被编码为一个包含两个元素的 `Array`：
 
@@ -11842,7 +10911,7 @@ assert.deepEqual(
 
 `exercises/single-objects/find_key_test.mjs`
 
-### 30.6.8 属性按确定顺序列出
+## 30.6.8 属性按确定顺序列出
 
 对象的自身的（非继承）属性始终按照以下顺序列出：
 
@@ -11861,13 +10930,13 @@ assert.deepEqual(
 
 ECMAScript 规范详细描述了属性是如何排序的。
 
-### 30.6.9 通过 `Object.fromEntries()` 组装对象 [2019]
+## 30.6.9 通过 `Object.fromEntries()` 组装对象 [2019]
 
 给定一个包含 `[key, value]` 对的迭代器，`Object.fromEntries()` 会创建一个对象：
 
 ```javascript
 assert.deepEqual(
-  Object.fromEntries(['foo',1], ['bar',2]]),
+  Object.fromEntries([['foo',1], ['bar',2]]),
   {
     foo: 1,
     bar: 2,
@@ -11876,7 +10945,7 @@ assert.deepEqual(
 
 `Object.fromEntries()` 是 `Object.entries()` 的相反操作。为了演示这两者，我们接下来的小节中使用它们来实现 `Underscore` 库中的两个函数。
 
-#### 30.6.9.1 示例：`pick(object, ...keys)`
+### 30.6.9.1 示例：`pick(object, ...keys)`
 
 `pick` 返回 `object` 的拷贝，该拷贝仅包含那些键作为参数列出的属性：
 
@@ -11888,6 +10957,7 @@ const address = {
   state: 'NT',
   zip: '49007',
 };
+
 assert.deepEqual(
   pick(address, 'street', 'number'),
   {
@@ -11907,7 +10977,7 @@ function pick(object, ...keys) {
 }
 ```
 
-#### 30.6.9.2 示例：`invert(object)`
+### 30.6.9.2 示例：`invert(object)`
 
 `invert` 返回 `object` 的拷贝，其中所有属性的键和值都交换了了：
 
@@ -11928,7 +10998,7 @@ function invert(object) {
 }
 ```
 
-#### 30.6.9.3 `Object.fromEntries()` 的简单实现
+### 30.6.9.3 `Object.fromEntries()` 的简单实现
 
 以下函数是 `Object.fromEntries()` 的简化版本：
 
@@ -11952,7 +11022,7 @@ function fromEntries(iterable) {
 
 `exercises/single-objects/omit_properties_test.mjs`
 
-### 30.6.10 使用对象作为字典的陷阱
+## 30.6.10 使用对象作为字典的陷阱
 
 如果我们使用普通对象（通过对象字面量创建）作为字典，我们必须注意两个陷阱。
 
@@ -11974,15 +11044,9 @@ dict['__proto__'] = 123;
 assert.deepEqual(Object.keys(dict), []);
 ```
 
-
-
-
-
 ```javascript
 const dict = Object.create(null); // no prototype
-
 assert.equal('toString' in dict, false); // (A)
-
 dict['__proto__'] = 123;
 assert.deepEqual(Object.keys(dict), ['__proto__']);
 ```
@@ -11996,40 +11060,40 @@ assert.deepEqual(Object.keys(dict), ['__proto__']);
 
 `exercises/single-objects/simple_dict_test.mjs`
 
-## 30.7 标准方法（高级）
+# 30.7 标准方法（高级）
 
 `Object.prototype` 定义了几个标准方法，可以通过重写这些方法来配置语言处理对象的方式。其中两个重要的是：
 
 *   `.toString()`
 *   `.valueOf()`
 
-### 30.7.1 `.toString()`
+## 30.7.1 `.toString()`
 
 `.toString()` 决定了对象如何转换为字符串：
 
-```
+```javascript
 > String({toString() { return 'Hello!' }})
 'Hello!'
 > String({})
 '[object Object]'
 ```
 
-### 30.7.2 `.valueOf()`
+## 30.7.2 `.valueOf()`
 
 `.valueOf()` 决定了对象如何转换为数字：
 
-```
+```javascript
 > Number({valueOf() { return 123 }})
 123
 > Number({})
 NaN
 ```
 
-## 30.8 高级主题
+# 30.8 高级主题
 
 以下小节对几个高级主题进行了简要概述。
 
-### 30.8.1 `Object.assign()` [ES6]
+## 30.8.1 `Object.assign()` [ES6]
 
 `Object.assign()` 是工具方法：
 
@@ -12041,12 +11105,10 @@ Object.assign(target, source_1, source_2, ···)
 
 ```javascript
 const target = { foo: 1 };
-
 const result = Object.assign(
   target,
   {bar: 2},
   {baz: 3, bar: 4});
-
 assert.deepEqual(
   result, { foo: 1, bar: 4, baz: 3 }); // target 被修改并返回了：
 assert.equal(result, target);
@@ -12054,7 +11116,7 @@ assert.equal(result, target);
 
 `Object.assign()` 的用场景与扩展属性（spread properties）类似。在某种意义上，它是破坏性地展开。
 
-### 30.8.2 冻结对象 [ES5]
+## 30.8.2 冻结对象 [ES5]
 
 `Object.freeze(obj)` 使 `obj` 变得完全不可变：我们无法更改属性、添加属性或更改其原型 ——例如：
 
@@ -12074,7 +11136,7 @@ assert.throws(
 
 有关冻结和其他锁定对象的更多信息，请参阅 [*Deep JavaScript*](https://exploringjs.com/deep-js/ch_protecting-objects.html)。
 
-### 30.8.3 属性特性和属性描述符 [ES5]
+## 30.8.3 属性特性和属性描述符 [ES5]
 
 就像对象由属性组成一样，属性是由*特性*组成的。属性的值只是若干特性中的之一。其他的包括：
 
@@ -12102,33 +11164,31 @@ const obj = {
   foo: 1,
   bar: 2,
 };
-
 assert.deepEqual(Object.keys(obj), ['foo', 'bar']);
-
 // 从 Object.keys() 中隐藏属性 `bar`
 Object.defineProperty(obj, 'bar', {
   enumerable: false,
 });
 ```
 
-
+# 31.1 原型
 
 原型（Prototype）是 JavaScript 唯一的继承机制：每个对象都有一个原型，原型要么是`null`要么是一个对象。在后者的情况下，该对象会继承原型的所有属性。
 
 在对象字面量中，可以通过特殊属性 `__proto__` 设置原型：
 
-```
-[](#cb747-1)const proto = {
-[](#cb747-2)  protoProp: 'a',
-[](#cb747-3)};
-[](#cb747-4)const obj = {
-[](#cb747-5)  __proto__: proto,
-[](#cb747-6)  objProp: 'b',
-[](#cb747-7)};
-[](#cb747-8)
-[](#cb747-9)// obj 继承了 .protoProp:
-[](#cb747-10)assert.equal(obj.protoProp, 'a');
-[](#cb747-11)assert.equal('protoProp' in obj, true);
+```javascript
+const proto = {
+  protoProp: 'a',
+};
+const obj = {
+  __proto__: proto,
+  objProp: 'b',
+};
+
+// obj 继承了 .protoProp:
+assert.equal(obj.protoProp, 'a');
+assert.equal('protoProp' in obj, true);
 ```
 
 考虑到原型对象本身也可以拥有原型，我们得到了一个对象链——所谓的*原型链*（prototype chain）。这意味着继承带给我们一种印象，认为我们正在处理单个对象，但实际上我们处理的是对象链。
@@ -12141,11 +11201,11 @@ Object.defineProperty(obj, 'bar', {
 
 未继承的属性被称为*自身属性*（own properties）。`obj` 拥有一个自身属性，`.objProp`。
 
-### 31.1.1 JavaScript 的操作：所有属性 vs 自身属性
+## 31.1.1 JavaScript 的操作：所有属性 vs 自身属性
 
 某些操作会考虑所有属性（自身的和继承的）——例如，获取属性：
 
-```
+```javascript
 > const obj = { foo: 1 };
 > typeof obj.foo // 自身
 'number'
@@ -12155,44 +11215,41 @@ Object.defineProperty(obj, 'bar', {
 
 其他操作只考虑自身属性——例如，`Object.keys()`：
 
-```
+```javascript
 > Object.keys(obj)
 [ 'foo' ]
 ```
 
 继续阅读另一个也只考虑自身属性的操作：设置属性。
 
-### 31.1.2 陷阱：只有原型链的第一个成员被修改
+## 31.1.2 陷阱：只有原型链的第一个成员被修改
 
 原型链中一个反直觉的方面是，通过对象设置任何属性（即使是继承的属性）只会改变该对象本身——永远不会改变其中一个原型。
 
 考虑以下对象 `obj`：
 
-```
-[](#cb750-1)const proto = {
-[](#cb750-2)  protoProp: 'a',
-[](#cb750-3)};
-[](#cb750-4)const obj = {
-[](#cb750-5)  __proto__: proto,
-[](#cb750-6)  objProp: 'b',
-[](#cb750-7)};
+```javascript
+const proto = {
+  protoProp: 'a',
+};
+const obj = {
+  __proto__: proto,
+  objProp: 'b',
+};
 ```
 
 在接下来的代码段中，我们设置了继承的属性 `obj.protoProp`（行 A）。这通过创建一个自身属性来“改变”了它：当读取 `obj.protoProp` 时，会先找到自身属性，其值会覆盖继承属性的值。
 
-```
-[](#cb751-1)// 起初，obj 拥有一个自身属性
-[](#cb751-2)assert.deepEqual(Object.keys(obj), ['objProp']);
-[](#cb751-3)
-[](#cb751-4)obj.protoProp = 'x'; // (A)
-[](#cb751-5)
-[](#cb751-6)// 我们创建了一个新的自身属性：
-[](#cb751-7)assert.deepEqual(Object.keys(obj), ['objProp', 'protoProp']);
-[](#cb751-8)
-[](#cb751-9)// 继承的属性未 way：
-[](#cb751-10)assert.equal(proto.protoProp, 'a');
-[](#cb751-11)// 自身属性覆盖了继承属性：
-[](#cb751-12)assert.equal(obj.protoProp, 'x');
+```javascript
+// 起初，obj 拥有一个自身属性
+assert.deepEqual(Object.keys(obj), ['objProp']);
+obj.protoProp = 'x'; // (A)
+// 我们创建了一个新的自身属性：
+assert.deepEqual(Object.keys(obj), ['objProp', 'protoProp']);
+// 继承的属性未 way：
+assert.equal(proto.protoProp, 'a');
+// 自身属性覆盖了继承属性：
+assert.equal(obj.protoProp, 'x');
 ```
 
 `obj` 的原型链如图 11 所示。
@@ -12201,20 +11258,20 @@ Object.defineProperty(obj, 'bar', {
 
 图 11：`obj` 的自身属性 `.protoProp` 覆盖了来自 `proto` 的属性。
 
-### 31.1.3 原型技巧（进阶）
+## 31.1.3 原型技巧（进阶）
 
-#### 31.1.3.1 最佳实践：除对象字面量外，避免使用伪属性 `__proto__`
+### 31.1.3.1 最佳实践：除对象字面量外，避免使用伪属性 `__proto__`
 
 正如我们稍后将在 #ch032.xhtml) 中看到的，并不是所有对象都具有它。然而，对象字面量中的 `__proto__` 是不同的。它是内置功能且始终可用。
 
 推荐的获取和设置原型的方法有：
 
 *   获取原型最佳方法是通过以下方法：
-    ```
+    ```javascript
     Object.getPrototypeOf(obj)
     ```
 *   设置原型最佳方法是在创建对象时——通过对象字面量中的 `__proto__` 或通过：
-    ```
+    ```javascript
     Object.create(proto)
     ```
 
@@ -12222,53 +11279,55 @@ Object.defineProperty(obj, 'bar', {
 
 这些功能的使用方式：
 
-```
-[const proto1 = {};
-[](#cb754-2)const proto2 = {};
-[](#cb754-3)const obj = Object.create(proto1);
-[](#cb754-4)assert.equal(Object.getPrototypeOf(obj), proto1);
-[](#cb754-5)Object.setPrototypeOf(obj, proto2);
-[](#cb754-6)assert.equal(Object.getPrototypeOf(obj), proto2);
+```javascript
+const proto1 = {};
+const proto2 = {};
+const obj = Object.create(proto1);
+assert.equal(Object.getPrototypeOf(obj), proto1);
+Object.setPrototypeOf(obj, proto2);
+assert.equal(Object.getPrototypeOf(obj), proto2);
 ```
 
-#### 31.1.3.2 检查：一个对象是另一个对象的原型？
+### 31.1.3.2 检查：一个对象是另一个对象的原型？
 
 到目前为止，“`p` 是 `o` 的原型”一直意味着“`p` 是 `o` 的直接原型”。但它可以被松散使用，意味着 `p` 在 `o` 的原型链中。这种松散的关系可以通过以下方式检查：
 
-```
+```javascript
 a.isPrototypeOf(b)
 ```
 
 例如：
 
-```
-[](#cb756-1)a = {};
-[](#cb756-2)b = {__proto__: a};
-[](#cb756-3)c = {__proto__: b};
-[](#cb756-4)assert.equal(a.isPrototypeOf(b), true);
-[](#cb756-5)assert.equal(a.isPrototypeOf(c), true);
-[](#cb756-6)assert.equal(b.isPrototypeOf(a), false);
-[](#cb756-7)assert.equal(c.isPrototypeOf(a), false);
+```javascript
+a = {};
+b = {__proto__: a};
+c = {__proto__: b};
+assert.equal(a.isPrototypeOf(b), true);
+assert.equal(a.isPrototypeOf(c), true);
+assert.equal(b.isPrototypeOf(a), false);
+assert.equal(c.isPrototypeOf(a), false);
 ```
 
-### 31.1.4 通过原型共享数据
+## 31.1.4 通过原型共享数据
 
 我们之前处理过代表人的 `jane` 和 `tarzan` 两个对象。它们都有两个方法。我们如何避免重复方法呢？
 
 考虑以下：
 
-```
-[](#cb757-1)const PersonProto = {
-[](#cb757-2)  describe() {
-[](#cb757-3)    return 'Person named '+this.name;
-[](#cb757-4)  },
-[](#cb757-5)};const jane = {
-[](#cb757-6)  __proto__: PersonProto,
-[](#cb757-7)  name: 'Jane',
-[](#cb757-8)};const tarzan = {
-[](#cb757-9)  __proto__: PersonProto,
-[](#cb757-10)  name: 'Tarzan',
-[](#cb757-11)};
+```javascript
+const PersonProto = {
+  describe() {
+    return 'Person named '+this.name;
+  },
+};
+const jane = {
+  __proto__: PersonProto,
+  name: 'Jane',
+};
+const tarzan = {
+  __proto__: PersonProto,
+  name: 'Tarzan',
+};
 ```
 
 原型的名称反映了 `jane` 和 `tarzan` 都是人。
@@ -12281,32 +11340,29 @@ a.isPrototypeOf(b)
 
 当你进行方法调用 `jane.describe()` 时，`this` 指向该方法调用的接收者 `jane`（图表的左下角）。这就是为什么方法仍然有效。`tarzan.describe()` 的原理类似。
 
-```
-[](#cb759-1)assert.equal(jane.describe(), 'Person named Jane');
-[](#cb759-2)assert.equal(tarzan.describe(), 'Person named Tarzan');
+```javascript
+assert.equal(jane.describe(), 'Person named Jane');
+assert.equal(tarzan.describe(), 'Person named Tarzan');
 ```
 
-## 31.2 类
+# 31.2 类
 
 我们现在准备好处理类了，类本质上是设置原型链的紧凑语法。在底层，JavaScript 的类是非传统的的。但在你与它们工作时很少看到这一点。对于使用过其他面向对象编程语言的人来说，它们应该很熟悉。
 
-### 31.2.1 人的类
+## 31.2.1 人的类
 
 我们之前处理过代表人的 `jane` 和 `tarzan` 单个对象。让我们使用类声明来实现对象的工厂：
 
 ```javascript
-[](#cb760-1)class Person {
-[](#cb760-2)  constructor(name) {
-[](#cb760-3)    this.name = name;
-[](#cb760-4)  }
-[](#cb760-5)  describe() {
-[](#cb760-6)    return 'Person named '+this.name;
-[](#cb760-7)  }
-[](#cb760-8)}
+class Person {
+  constructor(name) {
+    this.name = name;
+  }
+  describe() {
+    return 'Person named '+this.name;
+  }
+}
 ```
-
-
-
 
 `jane` 和 `tarzan` 现在可以通过 `new Person()` 创建了：
 
@@ -12314,7 +11370,6 @@ a.isPrototypeOf(b)
 const jane = new Person('Jane');
 assert.equal(jane.name, 'Jane');
 assert.equal(jane.describe(), 'Person named Jane');
-
 const tarzan = new Person('Tarzan');
 assert.equal(tarzan.name, 'Tarzan');
 assert.equal(tarzan.describe(), 'Person named Tarzan');
@@ -12325,7 +11380,7 @@ assert.equal(tarzan.describe(), 'Person named Tarzan');
 *   普通方法 `.describe()`
 *   特殊方法 `.constructor()`，它在创建完新实例后被直接调用，并初始化该实例。它接收传递给 `new` 运算符的参数（跟在类名之后）。如果你不需要任何参数来设置新实例，可以省略构造函数。
 
-### 31.2.1.1 类表达式
+### 31.2.1.1 类表达式
 
 有两种类的 `class definitions`（定义类的方式）：
 
@@ -12337,7 +11392,6 @@ assert.equal(tarzan.describe(), 'Person named Tarzan');
 ```javascript
 // 匿名类表达式
 const Person = class { ... };
-
 // 具名类表达式
 const Person = class MyClass { ... };
 ```
@@ -12346,7 +11400,7 @@ const Person = class MyClass { ... };
 
 这是对类的初步了解。我们将很快探索更多特性，但首先我们得学习类的内部原理。
 
-### 31.2.2 类的底层原理
+## 31.2.2 类的底层原理
 
 类的底层涉及很多操作。让我们看看 `jane` 的结构图（见图 13）。
 
@@ -12370,7 +11424,7 @@ const Person = class MyClass { ... };
 *   `.__proto__` 是用于访问对象原型的伪属性。
 *   `.prototype` 是一个普通属性，它的特殊之处仅仅是因为 `new` 运算符使用它的方式。这个名字并不理想：`Person.prototype` 并不指向 `Person` 本身的原型，而是指向所有 `Person` 实例的原型。
 
-### 31.2.2.1 `Person.prototype.constructor`（进阶）
+### 31.2.2.1 `Person.prototype.constructor`（进阶）
 
 图 13 中有一个细节我们尚未查看：`Person.prototype.constructor` 指回了 `Person`：
 
@@ -12385,7 +11439,6 @@ true
 
 ```javascript
 const jane = new Person('Jane');
-
 const cheeta = new jane.constructor('Cheeta');
 // cheeta 也是 Person 的一个实例
 // (instanceof 运算符稍后解释)
@@ -12396,11 +11449,10 @@ assert.equal(cheeta instanceof Person, true);
 
 ```javascript
 const tarzan = new Person('Tarzan');
-
 assert.equal(tarzan.constructor.name, 'Person');
 ```
 
-### 31.2.3 类定义：原型属性
+## 31.2.3 类定义：原型属性
 
 在类类声明体中的所有构造都会创建 `Foo.prototype` 的属性。
 
@@ -12430,14 +11482,13 @@ class Foo {
 > const foo = new Foo(123);
 > foo.prop
 123
-
 > foo.protoMethod()
 'protoMethod'
 > foo.protoGetter
 'protoGetter'
 ```
 
-### 31.2.4 类定义：静态属性
+## 31.2.4 类定义：静态属性
 
 在类类声明体中的所有构造都会创建所谓的 `static` 属性——`Bar` 自身的属性。
 
@@ -12461,7 +11512,7 @@ class Bar {
 'staticGetter'
 ```
 
-### 31.2.5 `instanceof` 运算符
+## 31.2.5 `instanceof` 运算符
 
 `instanceof` 运算符告诉你一个值是否是给定类的实例：
 
@@ -12478,7 +11529,7 @@ true
 
 在我们学习了子类化后，将在之后 详细探索 `instanceof` 运算符。
 
-### 31.2.6 为什么我推荐类
+## 31.2.6 为什么我推荐类
 
 我推荐使用类的原因如下：
 
@@ -12493,7 +11544,6 @@ true
 *   存在过度继承的风险。
 *   存在在类中放置过多功能的风险（而某些功能通常被放在函数中）。
 *   它们在表面和底层的运行原理完全不同。换句话说，语法和语义之间存在脱节。有两个例子：
-
     *   在类 `C` 内部定义方法会在对象 `C.prototype` 中创建一个一个方法。
     *   类是函数。
 
@@ -12503,14 +11553,11 @@ true
 
 `exercises/proto-chains-classes/point_class_test.mjs`
 
-## 31.3 类的私有数据
+# 31.3 类的私有数据
 
 本节描述了从外部隐藏对象部分数据的技术。我们在类的语文中讨论它们，但它们也适用于直接创建的对象（例如通过对象字面量创建）。
 
-### 31.3.1 私有数据：命名约定
-
-
-
+## 31.3.1 私有数据：命名约定
 
 第一种技术通过在属性名称前加上下划线来使属性变为私有。这并不能任何方式保护该属性；它只是向外部信号：“你不需要知道这个属性。”
 
@@ -12538,14 +11585,13 @@ assert.deepEqual(
 
 使用这种技术，你无法获得任何保护，而且私有名称可能会冲突。好的一处是它很容易使用。
 
-### 31.3.2 私有数据：WeakMaps
+## 31.3.2 私有数据：WeakMaps
 
 另一种技术是使用 `WeakMaps`。具体工作原理在 WeakMaps 章节 中进行了解释。以下是预览：
 
 ```javascript
 const _counter = new WeakMap();
 const _action = new WeakMap();
-
 class Countdown {
   constructor(counter, action) {
     _counter.set(this, counter);
@@ -12569,13 +11615,13 @@ assert.deepEqual(
 
 这种技术可以提供免受外部访问的高度保护，而且不会发生任何名称冲突。但它的使用也更复杂。
 
-### 31.3.3 私有数据的更多技术
+## 31.3.3 私有数据的更多技术
 
 本书解释了类中私有数据最重要的技术。可能很快就会有内置支持。详情请参阅 ECMAScript 提议 [“类公共实例字段 & 私有实例字段”](https://github.com/tc39/proposal-class-fields)。
 
 额外的几种技术在 [*探索 ES6*](https://exploringjs.com/es6/ch_classes.html#sec_private-data-for-classes) 中有所介绍。
 
-## 31.4 子类
+# 31.4 子类
 
 类也可以子类（“扩展”）现有类。例如，下面的类 `Employee` 子类了 `Person`：
 
@@ -12593,7 +11639,6 @@ class Person {
     }
   }
 }
-
 class Employee extends Person {
   constructor(name, title) {
     super(name);
@@ -12604,7 +11649,6 @@ class Employee extends Person {
       ` (${this.title})`;
   }
 }
-
 const jane = new Employee('Jane', 'CTO');
 assert.equal(
   jane.describe(),
@@ -12615,13 +11659,38 @@ assert.equal(
 
 *   在 `.constructor()` 方法内部，你必须在访问 `this` 之前通过 `super()` 调用超构造函数。这是因为在调用超构造函数之前 `this` 并不存在（这种现象是类特有的）。
 *   静态方法也会被继承。例如，`Employee` 继承了静态方法 `.logNames()`。
+
+## 31.4.1 `extends` 子句的操作数（高级）
+
+`extends` 子句的操作数是一个表达式，该表达式的值必须是一个构造函数（类或函数）或 `null`。
+
+## 31.4.2 `super` 属性访问（高级）
+
+在子类中，`super` 关键字用于访问超类的方法或属性。
+
+## 31.4.3 `instanceof` 运算符详解（高级）
+
+### 31.4.3.1 `instanceof` 的算法
+
+`instanceof` 运算符检查构造函数的 `prototype` 属性是否出现在对象的原型链中。
+
+### 31.4.3.2 `instanceof` 与原型链
+
+```javascript
+const proto = {};
+const obj = Object.create(proto);
+assert.equal(obj instanceof Object, true);
 ```
 
+### 31.4.3.3 `instanceof` 与 `Symbol.hasInstance`
 
+类可以通过 `Symbol.hasInstance` 自定义 `instanceof` 行为。
+
+### 31.4.3.4 不是 `Object` 的实例的对象
 
 只有当 `Object.prototype` 在一个对象的原型链中时，该对象才是 `Object` 的实例。通过各种字面量创建的大多数都是 `Object` 的实例：
 
-```
+```javascript
 > ({}) instanceof Object
 true
 > (() => {}) instanceof Object
@@ -12634,7 +11703,8 @@ true
 
 ```javascript
 > ({ __proto__: null }) instanceof Object
-false```
+false
+```
 
 `Object.prototype` 结束了大多数原型链。它的原型是 `null`，这意味着它也不是 `Object` 的实例：
 
@@ -12643,7 +11713,7 @@ false```
 false
 ```
 
-### 31.4.3.5 伪属性 `.__proto__` 究竟是如何工作的？
+### 31.4.3.5 伪属性 `.__proto__` 究竟是如何工作的？
 
 伪属性 `.__proto__` 是通过 `Object` 类通过 getter 和 setter 实现的。它的实现方式可能如下：
 
@@ -12668,9 +11738,9 @@ true
 false
 ```
 
-### 31.4.4 分派方法调用与直接方法调用（高级）
+## 31.4.4 分派方法调用与直接方法调用（高级）
 
-让我们检 true 类中的方法调用是如何工作的。我们重新回顾早之前的 `jane`：
+让我们检查类中的方法调用是如何工作的。我们重新回顾早之前的 `jane`：
 
 ```javascript
 class Person {
@@ -12693,13 +11763,10 @@ const jane = new Person('Jane');
 普通的方法调用是*分派的*（dispatched）——方法调用 `jane.describe()` 分两个步骤完成：
 
 *   **分派**（Dispatch）：在 `jane` 的原型链中，找到键为 `'describe'` 的第一个属性并获取其值。
-
     ```javascript
     const func = jane.describe;
     ```
-
 *   **调用**（Call）：调用该值，同时将 `this` 设置为 `jane`。
-
     ```javascript
     func.call(jane);
     ```
@@ -12716,7 +11783,7 @@ Person.prototype.describe.call(jane)
 
 注意，`this` 始终指向原型链的起点。这使得 `.describe()` 能够访问 `.name`。
 
-#### 31.4.4.1 借用方法
+### 31.4.4.1 借用方法
 
 当你处理 `Object.prototype` 的方法时，直接方法调用变得变得非常有用。例如，`Object.prototype.hasOwnProperty(k)` 检查 `this` 是否拥有键为 `k` 的非继承属性：
 
@@ -12756,7 +11823,7 @@ true
 
 这种模式看起来可能效率低下，但大多数引擎都对这种模式进行了优化，因此性能不应该是问题。
 
-### 31.4.5 混入类（高级）
+## 31.4.5 混入类（高级）
 
 JavaScript 的类系统仅支持*单继承*。也就是说，每个类最多有一个超类。绕过这一限制的方法是通过一种称为*混入类*（mixin classes，简写：*mixins*）的技术。
 
@@ -12779,7 +11846,7 @@ class C extends S2(S1(Object)) {
 
 现在我们有一个类 `C`，它继承自类 `S2`，`S2` 继承自类 `S1`，`S1` 继承自 `Object`（大多数类都是隐式这样做的）。
 
-#### 31.4.5.1 示例：用于品牌管理的混入
+### 31.4.5.1 示例：用于品牌管理的混入
 
 我们实现了一个混入 `Branded`，它拥有了用于设置和获取对象品牌的辅助方法：
 
@@ -12815,27 +11882,24 @@ car.setBrand('Toyota');
 console.log(car.toString()); // Toyota Corolla
 ```
 
-#### 31.4.5.2 混入的优势
+### 31.4.5.2 混入的优势
 
 混入让我们从单继承的限制中解放：
 
 *   同一个类可以被多个混入使用。
 *   同一个混入可以被多个类使用。
 
-### 31.5 FAQ：对象
+# 31.5 FAQ：对象
 
-#### 31.5.1 为什么对象会保留插入顺序？
+## 31.5.1 为什么对象会保留插入顺序？
 
 原则上，对象是无序的。属性排序的主要目的是为了确保列出条目、键或值的的操作是确定性的。这有助于，例如在测试中。
 
-![](img/file7.svg) **测试**
+# 32.1 迭代概述
 
-参见测验应用。
+迭代是一种处理数据的协议，它将数据源和数据消费者分离：
 
-
-
-
-
+-   **数据源：** 你有一组数据结构（`Arrays`、`Maps`、`Sets` 等），它们以不同的方式存储数据。
 -   **数据消费者：** 另一方面，你有一整类构造和算法，它们只需要*顺序地*访问其输入：一次处理一个值，直到所有值都被访问完毕。示例包括 `for-of` 循环和展开到函数调用中（通过 `...`）。
 
 迭代协议通过 `Iterable` 接口连接了这两组数据：数据源通过“它”顺序交付内容；数据消费者通过“它”获取输入。
@@ -12855,7 +11919,7 @@ console.log(car.toString()); // Toyota Corolla
 - 如果你开发了一个新的数据结构，你只需要实现 `Iterable`，一组工具就可以立即应用到它上。
 - 如果你编写使用迭代的代码，它会自动与许多数据源配合。
 
-## 32.2 核心迭代构造：可迭代对象和迭代器
+# 32.2 核心迭代构造：可迭代对象和迭代器
 
 两个角色（由接口描述）构成了迭代的核心（图 19）：
 
@@ -12868,7 +11932,7 @@ console.log(car.toString()); // Toyota Corolla
 
 这些是用于迭代协议接口的类型定义（使用 TypeScript 语法）：
 
-```
+```typescript
 interface Iterable<T> {
   [Symbol.iterator]() : Iterator<T>;
 }
@@ -12891,11 +11955,11 @@ interface IteratorResult<T> {
     -   `.value` 是迭代的值。
     -   `.done` 表示是否已到达迭代结束。在最后一个迭代值之后它为 `true`，在此之前为 `false`。
 
-## 32.3 手动迭代
+# 32.3 手动迭代
 
 这是一个使用迭代协议的示例：
 
-```
+```javascript
 const iterable = ['a', 'b'];
 
 // 可迭代对象是迭代器的工厂：
@@ -12910,11 +11974,11 @@ assert.deepEqual(
   iterator.next(), { value: undefined, done: true });
 ```
 
-### 32.3.1 通过 `while` 遍历可迭代对象
+## 32.3.1 通过 `while` 遍历可迭代对象
 
 以下代码演示了如何使用 `while` 循环遍历可迭代对象：
 
-```
+```javascript
 function logAll(iterable) {
   const iterator = iterable[Symbol.iterator]();
   while (true) {
@@ -12931,11 +11995,11 @@ logAll(['a', 'b']);
 
 ![](img/file6.svg) **练习：手动使用迭代**
 
-## 32.4 实践中的迭代
+# 32.4 实践中的迭代
 
 我们已经看到了如何手动使用迭代，但它很繁琐。
 
-### 32.4.1 遍历数组
+## 32.4.1 遍历数组
 
 `Arrays` 是可迭代的。通过 `for-of` 循环：
 
@@ -12950,20 +12014,17 @@ for (const x of myArray) {
 // 'c'
 ```
 
-### 32.4.2 解构
+## 32.4.2 解构
 
 使用解构：
 
 ```javascript
-assert.deepEqual(
-  iterator.next(), { value: 'a', done: false });
-assert.deepEqual(
-  iterator.next(), { value: 'b', done: false });
-assert.deepEqual(
-  iterator.next(), { value: undefined, done: true });
+const [a, b] = ['a', 'b'];
+assert.equal(a, 'a');
+assert.equal(b, 'b');
 ```
 
-### 32.4.3 遍历 Set
+## 32.4.3 遍历 Set
 
 `Set` 是可迭代的。
 
@@ -12977,7 +12038,7 @@ for (const x of mySet) {
 // 'b'
 ```
 
-### 32.4.4 遍历 Map
+## 32.4.4 遍历 Map
 
 `Map` 是可迭代的。
 
@@ -12991,20 +12052,9 @@ for (const [key, value] of myMap) {
 // 'b' 2
 ```
 
-解构
+# 32.5 快速引用
 
-```javascript
-assert.deepEqual(
-  iterator.next(), { value: 'a', done: false });
-assert.deepEqual(
-  iterator.next(), { value: 'b', done: false });
-assert.deepEqual(
-  iterator.next(), { value: undefined, done: true });
-```
-
-## 32.5 快速引用
-
-### 32.5.1 可迭代源
+## 32.5.1 可迭代源
 
 以下内置源是可迭代的：
 
@@ -13014,9 +12064,10 @@ assert.deepEqual(
 
 遍历对象的属性需要 `Object.keys()` 或 `Object.entries()` 等辅助方法。
 
-### 32.5.2 迭代构造
+## 32.5.2 迭代构造
 
 - `for-of`：
+
 ```javascript
 const myArray = ['a', 'b', 'c'];
 for (const x of myArray) {
@@ -13025,21 +12076,25 @@ for (const x of myArray) {
 ```
 
 - `Array.from()`：
+
 ```javascript
 const arr = Array.from(['a', 'b', 'c']);
 ```
 
 - 展开运算符 `...`：
+
 ```javascript
 const arr = [...['a', 'b', 'c']];
 ```
 
 - `reduce()`：
+
 ```javascript
 const sum = ['a', 'b', 'c'].reduce((acc, curr) => acc + curr, 0);
 ```
 
 - `forEach()`：
+
 ```javascript
 ['a', 'b', 'c'].forEach((x) => {
   console.log(x);
@@ -13050,79 +12105,7 @@ const sum = ['a', 'b', 'c'].reduce((acc, curr) => acc + curr, 0);
 
 请参阅 测试。
 
-
-
-
-
-## 33.4 类数组对象
-
-## 33.5 将迭代器和类数组值转换为数组
-
-### 33.5.1 通过展开运算符 (`...`) 将迭代器转换为数组
-
-### 33.5.2 通过 `Array.from()` 将迭代器和类数组对象转换为数组（进阶）
-
-# 33.6 创建并填充任意长度的数组
-
-### 33.6.1 你是否需要创建一个稍后完全填充的空数组？
-
-### 33.6.2 你是否需要创建一个填充了基本类型值值的数组？
-
-### 33.6.3 你是否需要创建一个填充了对象的数组？
-
-### 33.6.4 你是否需要创建一个整数范围？
-
-### 33.6.5 如果元素全为整数或全为浮点数，请使用类型化数组（Typed Array）
-
-## 33.7 多维数组
-
-# 33.8 更多数组特性（进阶）
-
-### 33.8.1 数组索引是（略微特殊的）属性键
-
-### 33.8.2 数组是字典并且可以存在空位
-
-# 33.9 添加和移除元素（破坏性和非破坏性）
-
-### 33.9.1 头部插入元素和数组
-
-### 33.9.2 尾追加元素和数组
-
-### 33.9.3 移除元素
-
-# 33.10 方法：迭代与转换（`.find()`, `.map()`, `.filter()`, 等）
-
-### 33.10.1 用于迭代和转换方法的回调函数
-
-### 33.10.2 查找元素：`.find()`, `.findIndex()`
-
-### 33.10.3 `.map()`：复制的同时为元素赋予新值
-
-### 33.10.4 `.flatMap()`：映射到零个或多个值
-
-### 33.10.5 `.filter()`：只保留部分元素
-
-### 33.10.6 `.reduce()`：从数组派生出一个值（进阶）
-
-# 33.11 `.sort()`：数组排序
-
-### 33.11.1 自定义排序顺序
-
-### 33.11.2 数字排序
-
-### 33.11.3 对象排序
-
-## 33.12 快速参考：`Array<T>`
-
-### 33.12.1 `new Array()`
-
-### 33.12.2 `Array` 的静态方法
-
-### 33.12.3 `Array<T>.prototype` 的方法
-
-### 33.12.4 来源
-
-## 33.1 数组在 JavaScript 中的两个角色
+# 33.1 数组在 JavaScript 中的两个角色
 
 数组扮演两个角色：
 
@@ -13131,9 +12114,9 @@ const sum = ['a', 'b', 'c'].reduce((acc, curr) => acc + curr, 0);
 
 在实践中，这两个角色通常是混合使用的。值得注意的是，作为序列的数组非常灵活，你可以将其用作（传统的）数组、栈和队列（见后文）。
 
-## 33.2 基础数组操作
+# 33.2 基础数组操作
 
-### 33.2.1 创建、读取、写入数组
+## 33.2.1 创建、读取、写入数组
 
 创建数组的最佳方式是通过 `Array` 字面量：
 
@@ -13168,7 +12151,7 @@ assert.deepEqual(arr, ['x', 'b', 'c']);
 
 数组索引的范围是 32 位（不包括最大长度）：`[0, 2³²-1]`
 
-### 33.2.2 数组的 `.length`
+## 33.2.2 数组的 `.length`
 
 每个数组都有 `.length` 属性，可以用于读取和修改数组中的元素数量。数组的长度总是最高索引加一：
 
@@ -13199,7 +12182,7 @@ arr.length = 1;
 arr // ['a']
 ```
 
-### 33.2.3 清空数组
+## 33.2.3 清空数组
 
 要清空（为空）数组，你可以将其 `.length` 设置为零：
 
@@ -13220,11 +12203,82 @@ assert.deepEqual(arr, []);
 后一种方法的优点是不会影响指向同一数组的其他位置。然而，如果你确实想为所有人重置一个共享数组，那么你需要前一种方法。
 
 **练习：通过 `.push()` 移除空行**
+
 `exercises/arrays/remove_empty_lines_push_test.mjs`
 
-### 33.2.4 展开到数组字面量 [ES6]
+## 33.2.4 展开到数组字面量 [ES6]
 
-在数组字面量内部，*展开元素*（spread element）由三个点 (`...`）后跟一个表达式组成。结果是该表达式被求值并进行迭代。每个迭代后的值都变成额外的数组元素——例如：
+# 33.3 类数组对象
+
+# 33.4 将迭代器和类数组值转换为数组
+
+## 33.4.1 通过展开运算符 (`...`) 将迭代器转换为数组
+
+## 33.4.2 通过 `Array.from()` 将迭代器和类数组对象转换为数组（进阶）
+
+# 33.5 创建并填充任意长度的数组
+
+## 33.5.1 你是否需要创建一个稍后完全填充的空数组？
+
+## 33.5.2 你是否需要创建一个填充了基本类型值值的数组？
+
+## 33.5.3 你是否需要创建一个填充了对象的数组？
+
+## 33.5.4 你是否需要创建一个整数范围？
+
+## 33.5.5 如果元素全为整数或全为浮点数，请使用类型化数组（Typed Array）
+
+# 33.6 多维数组
+
+# 33.7 更多数组特性（进阶）
+
+## 33.7.1 数组索引是（略微特殊的）属性键
+
+## 33.7.2 数组是字典并且可以存在空位
+
+# 33.8 添加和移除元素（破坏性和非破坏性）
+
+## 33.8.1 头部插入元素和数组
+
+## 33.8.2 尾追加元素和数组
+
+## 33.8.3 移除元素
+
+# 33.9 方法：迭代与转换（`.find()`, `.map()`, `.filter()`, 等）
+
+## 33.9.1 用于迭代和转换方法的回调函数
+
+## 33.9.2 查找元素：`.find()`, `.findIndex()`
+
+## 33.9.3 `.map()`：复制的同时为元素赋予新值
+
+## 33.9.4 `.flatMap()`：映射到零个或多个值
+
+## 33.9.5 `.filter()`：只保留部分元素
+
+## 33.9.6 `.reduce()`：从数组派生出一个值（进阶）
+
+# 33.10 `.sort()`：数组排序
+
+## 33.10.1 自定义排序顺序
+
+## 33.10.2 数字排序
+
+## 33.10.3 对象排序
+
+# 33.11 快速参考：`Array<T>`
+
+## 33.11.1 `new Array()`
+
+## 33.11.2 `Array` 的静态方法
+
+## 33.11.3 `Array<T>.prototype` 的方法
+
+## 33.11.4 来源
+
+
+
+在数组字面量内部，`展开元素`（spread element）由三个点（`...`）后跟一个表达式组成。结果是该表达式被求值并进行迭代。每个迭代后的值都变成额外的数组元素——例如：
 
 ```javascript
 const iterable = ['b', 'c'];
@@ -13257,15 +12311,11 @@ assert.deepEqual(concatenated, ['a', 'b', 'c', 'd', 'e']);
 
 **展开到数组字面量是浅拷贝**
 
-与展开到对象字面量类似，展开到数组字面量创建的是*浅*拷贝。也就是说，嵌套数组不会被复制。
+与展开到对象字面量类似，展开到数组字面量创建的是`浅`拷贝。也就是说，嵌套数组不会被复制。
 
 ### 33.2.5 数组：列出索引和条目 [ES6]
 
 方法 `.keys()` 列出数组的索引：
-
-
-
-
 
 ```javascript
 const arr = ['a', 'b'];
@@ -13307,7 +12357,7 @@ true
 true
 ```
 
-`instanceof` 通常没有问题。如果一个值可能来自另一个*realm*（作用域），你需要使用 `Array.isArray()`。粗来说，一个 realm 是 JavaScript 全局作用域的实例。某些 realm 之间是隔离的（例如浏览器中的 [Web Workers]），但也存在可以在其之间移动数据的 realm —— 例如浏览器中的同源 iframe。`x instanceof Array` 检查 `x` 的原型链，因此，如果 `x` 是一个来自另一个 realm 的 `Array`，则它将返回 `false`。
+`instanceof` 通常没有问题。如果一个值可能来自另一个`realm`（作用域），你需要使用 `Array.isArray()`。粗略来说，一个 realm 是 JavaScript 全局作用域的实例。某些 realm 之间是隔离的（例如浏览器中的 `Web Workers`），但也存在可以在其之间移动数据的 realm —— 例如浏览器中的同源 iframe。`x instanceof Array` 检查 `x` 的原型链，因此，如果 `x` 是一个来自另一个 realm 的 `Array`，则它将返回 `false`。
 
 `typeof` 将 `Arrays` 归类为对象：
 
@@ -13361,7 +12411,7 @@ for (const [index, element] of ['a', 'b'].entries()) {
 
 ## 33.4 类数组对象 (Array-like objects)
 
-某些适用于 `Arrays` 的操作只需要最少条件：值必须是*类数组*的（Array-like）。类类数组值是一个具有以下属性的对象：
+某些适用于 `Arrays` 的操作只需要最少条件：值必须是`类数组`的（Array-like）。类数组值是一个具有以下属性的对象：
 
 * `.length`: 存储类数组对象的长度。
 * `[0]`: 存储索引为 0 的元素（依此类推）。注意，如果你使用数字作为属性名，它们始终会被强制转换为字符串。因此，`[0]` 获取键为 `'0'` 的属性值。
@@ -13446,21 +12496,21 @@ assert.deepEqual(
 ```javascript
 .from<T>(iterable: Iterable<T> | ArrayLike<T>, mapFn?: (value: T, index: number) => any, thisArg?: any): T[]
 ```
-等待，提供的用于模式 2 的文本片段是：
-```javascript
-.from<T>(iterable: Iterable<T> | ArrayLike<T>): T[]
-```
+
 （注：源文本为模式 2 提供了一个不完整的签名，但我将遵循代码段提供的逻辑）。
 
 实际上，查看提供的文本：
+
 （此处省略重复）
 
 在此模式下，`Array.from()` 执行以下操作：
+
 * 它遍历 `iterable`。
 * 它对每个值调用 `mapFunc`。可选的 `thisArg` 指定了 `mapFunc` 的 `this` 指向。
 * 它将结果收集在一个新的 `Array` 中并返回它。
 
 这是一个示例：
+
 ```javascript
 > Array.from(new Set(['a', 'b']), x => x)
 [ 'aa', 'bb' ]
@@ -13477,7 +12527,7 @@ assert.deepEqual(
 [ , ,]
 ```
 
-注意结果包含*空洞*（空位）：数组字面量中的最后一个逗号总是被忽略的。
+注意结果包含`空洞`（空位）：数组字面量中的最后一个逗号总是被忽略的。
 
 ### 33.6.2 你是否需要创建一个填充了原始值的数组？
 
@@ -13504,7 +12554,7 @@ assert.deepEqual(
 ### 33.6.3 你是否需要创建一个填充了对象的数组？
 
 ```javascript
-> Array.from({length: 3}, () => (}))
+> Array.from({length: 3}, () => ({}))
 [{}, {}, {}]
 ```
 
@@ -13519,76 +12569,72 @@ assert.deepEqual(
   [2, 3, 4]);
 ```
 
-这里是另一种创建从零开始的整数范围的略显黑奇的技巧：
+这里是另一种创建从零开始的整数范围的略显黑科技的技巧：
 
-
-
-
-
-```
-[](#cb851-1)/** 返回一个迭代器 */
-[](#cb851-2)function createRange(end) {
-[](#cb851-3)  return new Array(end).keys();
-[](#cb851-4)}
+```javascript
+/** 返回一个迭代器 */
+function createRange(end) {
+  return new Array(end).keys();
+}
 assert.deepEqual(
-[](#cb851-6)  [...createRange(4)],
-[](#cb851-7)  [0, 1, 2, 3]);
+  [...createRange(4)],
+  [0, 1, 2, 3]);
 ```
 
 这之所以有效是因为 `.keys()` 将空位 视为 `undefined` 元素并列出它们的索引。
 
-### 33.6.5 如果元素全是整数或全浮点数，请使用类型数组
+### 33.6.5 如果元素全是整数或全浮点数，请使用类型数组
 
 如果你正在处理整数或浮点数的 `Arrays`，可以考虑类型数组，它们是专门为此目的而创建的。
 
-## 33.7 多维数组
+## 33.7 多维数组
 
 JavaScript 没有真正的多维 `Arrays`；你需要求助于元素为 `Arrays` 的 `Arrays`：
 
-```
-[](#cb852-1)function initMultiArray(...dimensions) {
-[](#cb852-2)  function initMultiArrayRec(dimIndex) {
-[](#cb852-3)    if (dimIndex >= dimensions.length) {
-[](#cb852-4)      return 0;
-[](#cb852-5)    } else {
-[](#cb852-6)      const dim = dimensions[dimIndex];
-[](#cb852-7)      const arr = [];
-[](#cb852-8)      for (let i=0; i<dim; i++) {
-[](#cb852-9)        arr.push(initMultiArrayRec(dimIndex+1));
-[](#cb852-10)      }
-[](#cb852-11)      return arr;
-[](#cb852-12)    }
-[](#cb852-13)  }
-[](#cb852-14)  return initMultiArrayRec(0);
-[](#cb852-15)}
+```javascript
+function initMultiArray(...dimensions) {
+  function initMultiArrayRec(dimIndex) {
+    if (dimIndex >= dimensions.length) {
+      return 0;
+    } else {
+      const dim = dimensions[dimIndex];
+      const arr = [];
+      for (let i=0; i<dim; i++) {
+        arr.push(initMultiArrayRec(dimIndex+1));
+      }
+      return arr;
+    }
+  }
+  return initMultiArrayRec(0);
+}
 
-[](#cb852-17)const arr = initMultiArray(4, 3, 2);
-[](#cb852-18)arr[3][2][1] = 'X'; // 每个维度的最后一个元素
-[](#cb852-19)assert.deepEqual(arr, 
+const arr = initMultiArray(4, 3, 2);
+arr[3][2][1] = 'X'; // 每个维度的最后一个元素
+assert.deepEqual(arr, 
 [  [ [ 0, 0 ], [ 0, 0 ], [ 0, 0 ] ],
-[](#cb852-21)  [ [ 0, 0 ], [ 0, 0 ], [ 0, 0 ] ],
-[](#cb852-22)  [ [ 0, 0 ], [ 0, 0 ], [ 0, 0 ] ],
-[](#cb852-23)  [ [ 0, 0 ], [ 0, 0 ], [ 0, 'X' ] ],
-[](#cb852-24)]);
+  [ [ 0, 0 ], [ 0, 0 ], [ 0, 0 ] ],
+  [ [ 0, 0 ], [ 0, 0 ], [ 0, 0 ] ],
+  [ [ 0, 0 ], [ 0, 0 ], [ 0, 'X' ] ],
+]);
 ```
 
-## 33.8 更多数组特性（高级）
+## 33.8 更多数组特性（高级）
 
 在本节中，我们将查看你在处理 `Arrays` 时并不经常遇到的现象。
 
-### 33.8.1 数组索引是（略微特殊的）属性键
+### 33.8.1 数组索引是（略微特殊的）属性键
 
 你可能可能认为 `Array` 元素是特殊的，因为你是通过数字访问它们的。但用于执行此操作的方括号运算符 `[]` 与访问属性时使用的运算符是相同的。它会将任何值（非 symbol 类型）转换为字符串。因此，`Array` 元素是（几乎是）普通的属性（A 行），你使用数字还是字符串作为索引并不重要（B 行和 C 行）：
 
-```
-[](#cb853-1)const arr = ['a', 'b'];
-[](#cb853-2)arr.prop = 123;
-[](#cb853-3)assert.deepEqual(
-[](#cb853-4)  Object.keys(arr),
-[](#cb853-5)  ['0', '1', 'prop']); // (A)
+```javascript
+const arr = ['a', 'b'];
+arr.prop = 123;
+assert.deepEqual(
+  Object.keys(arr),
+  ['0', '1', 'prop']); // (A)
 
-[](#cb853-7)assert.equal(arr[0], 'a');  // (B)
-[](#cb853-8)assert.equal(arr['0'], 'a'); // (C)
+assert.equal(arr[0], 'a');  // (B)
+assert.equal(arr['0'], 'a'); // (C)
 ```
 
 为了让事情变得更加困惑，这仅仅是语言规范定义的方式（如果说是 JavaScript 的理论）。大多数 JavaScript 引擎在底层进行了优化，并确实使用实际整数来访问 `Array` 元素（如果说是 JavaScript 的实践）。
@@ -13599,40 +12645,40 @@ JavaScript 没有真正的多维 `Arrays`；你需要求助于元素为 `Arrays`
 ToString(ToUint32(str)) === str
 ```
 
-#### 33.8.1.1 列出索引
+#### 33.8.1.1 列出索引
 
 列出属性键时，索引会被特殊处理 —— 它们始终在前，并像数字一样排序（`'2'` 在 `'10'` 之前）：
 
-```
-[](#cb855-1)const arr = [];
-[](#cb855-2)arr.prop = true;
-[](#cb855-3)arr[1] = 'b';
-[](#cb855-4)arr[0] = 'a';
+```javascript
+const arr = [];
+arr.prop = true;
+arr[1] = 'b';
+arr[0] = 'a';
 
-[](#cb855-6)assert.deepEqual(
-[](#cb855-7)  Object.keys(arr),
-[](#cb855-8)  ['0', '1', 'prop']);
+assert.deepEqual(
+  Object.keys(arr),
+  ['0', '1', 'prop']);
 ```
 
 注意 `.length`、`.entries()` 和 `.keys()` 将 `Array` 索引视为数字并忽略非索引属性：
 
-```
-[](#cb856-1)assert.equal(arr.length, 2);
-[](#cb856-2)assert.deepEqual(
-[](#cb856-3)  [...arr.keys()], [0, 1]);
-[](#cb856-4)assert.deepEqual(
-[](#cb856-5)  [...arr.entries()], [[0, 1]]);
+```javascript
+assert.equal(arr.length, 2);
+assert.deepEqual(
+  [...arr.keys()], [0, 1]);
+assert.deepEqual(
+  [...arr.entries()], [[0, 1]]);
 ```
 
-### 33.8.2 稀疏数组
+### 33.8.2 稀疏数组
 
 如果 `Array` 具有空位（未赋值值的索引），则稀疏数组。
 
-```
-[](#cb857-1)const arr = [1, , 3];
-[](#cb857-2)console.log(arr.length); // 3
-[](#cb857-3)console.log(1 in arr); // false
-[](#cb857-4)console.log(arr[1]); // undefined
+```javascript
+const arr = [1, , 3];
+console.log(arr.length); // 3
+console.log(1 in arr); // false
+console.log(arr[1]); // undefined
 ```
 
 空位可以通过几种方式创建：
@@ -13644,226 +12690,222 @@ ToString(ToUint32(str)) === str
 
 不同方法处理空位的方式不同：
 
-- `forEach`、`map`、`filter` 跳过空位。
-- `join`、`entries`、`values` 将空位视为 `undefined`。
-- 扩展运算符 `...` 和 `Array.from()` 将空位转换为 `undefined`。
+* `forEach`、`map`、`filter` 跳过空位。
+* `join`、`entries`、`values` 将空位视为 `undefined`。
+* 扩展运算符 `...` 和 `Array.from()` 将空位转换为 `undefined`。
 
-### 33.8.3 Array.prototype.hasOwnProperty()
+### 33.8.3 Array.prototype.hasOwnProperty()
 
 `hasOwnProperty()` 方法返回一个布尔值，指示对象是否拥有该属性。
 
-```
-[](#cb858-1)const arr = [1, , 3];
-[](#cb858-2)arr.hasOwnProperty(1); // false
+```javascript
+const arr = [1, , 3];
+arr.hasOwnProperty(1); // false
 ```
 
-### 33.8.4 Array.prototype.slice()
+### 33.8.4 Array.prototype.slice()
 
 `slice()` 方法将 `Array` 的部分浅拷贝到一个新的 `Array` 对象中。
 
-```
-[](#cb859-1)const arr = [1, , 3];
-[](#cb859-2)arr.slice(0, 2); // [1, undefined]
+```javascript
+const arr = [1, , 3];
+arr.slice(0, 2); // [1, undefined]
 ```
 
-### 33.8.5 Array.prototype.splice()
+### 33.8.5 Array.prototype.splice()
 
 `splice()` 方法通过删除或添加新元素来更改数组的内容。
 
-```
-[](#cb860-1)const arr = [1, 2, 3];
-[](#cb860-2)arr.splice(1, 1, 4, 5); // 删除索引 1 处的元素，插入 4 和 5
-[](#cb860-3)arr; // [1, 4, 5, 3]
+```javascript
+const arr = [1, 2, 3];
+arr.splice(1, 1, 4, 5); // 删除索引 1 处的元素，插入 4 和 5
+arr; // [1, 4, 5, 3]
 ```
 
-### 33.8.6 Array.prototype.sort()
+### 33.8.6 Array.prototype.sort()
 
 `sort()` 方法就地排序 `Array` 的元素并返回排序后的数组。默认，它将元素视为字符串。
 
-```
-[](#cb861-1)const arr = [1, 10, 2];
-[](#cb861-2)arr.sort((a, b) => a - b); // [1, 2, 10]
+```javascript
+const arr = [1, 10, 2];
+arr.sort((a, b) => a - b); // [1, 2, 10]
 ```
 
-### 33.8.7 Array.prototype.reverse()
+### 33.8.7 Array.prototype.reverse()
 
 `reverse()` 方法就地反转元素的顺序并返回反转后的数组。
 
-```
-[](#cb862-1)const arr = [1, 2, 3];
-[](#cb862-2)arr.reverse(); // [3, 2, 1]
+```javascript
+const arr = [1, 2, 3];
+arr.reverse(); // [3, 2, 1]
 ```
 
-### 33.8.8 Array.prototype.indexOf()
+### 33.8.8 Array.prototype.indexOf()
 
 `indexOf()` 方法返回给定元素在数组中找到的索引，如果不存在则返回 -1。
 
-```
-[](#cb863-1)const arr = [1, 2, 3];
-[](#cb863-2)arr.indexOf(2); // 1
-[](#cb863-3)arr.indexOf(4); // -1
+```javascript
+const arr = [1, 2, 3];
+arr.indexOf(2); // 1
+arr.indexOf(4); // -1
 ```
 
-### 33.8.9 Array.prototype.includes()
+### 33.8.9 Array.prototype.includes()
 
 如果 `Array` 包含某个元素，`includes()` 返回 `true`，否则返回 `false`。
 
-```
-[](#cb864-1)const arr = [1, 2, 3];
-[](#cb864-2)arr.includes(2); // true
-[](#cb864-3)arr.includes(4); // false
+```javascript
+const arr = [1, 2, 3];
+arr.includes(2); // true
+arr.includes(4); // false
 ```
 
-### 33.8.10 Array.prototype.find()
+### 33.8.10 Array.prototype.find()
 
 `find()` 方法返回数组中找到的满足测试函数的第一个值。
 
-```
-[](#cb865-1)const arr = [1, 12, 51, 23];
-[](#cb865-2)arr.find(element => element > 10); // 12
+```javascript
+const arr = [1, 12, 51, 23];
+arr.find(element => element > 10); // 12
 ```
 
-### 33.8.11 Array.prototype.findIndex()
+### 33.8.11 Array.prototype.findIndex()
 
 `findIndex()` 方法返回数组中找到的满足测试函数的索引。
 
-```
-[](#cb866-1)const arr = [1, 12, 51, 23];
-[](#cb866-2)arr.findIndex(element => element > 10); // 1
+```javascript
+const arr = [1, 12, 51, 23];
+arr.findIndex(element => element > 10); // 1
 ```
 
-### 33.8.12 Array.prototype.every()
+### 33.8.12 Array.prototype.every()
 
 `every()` 方法测试数组中的所有元素是否通过由函数实现的测试。
 
-```
-[](#cb867-1)const arr = [1, 2, 3];
-[](#cb867-2)arr.every(element => element > 0); // true
-[](#cb867-3)arr.every(element => element > 1); // false
+```javascript
+const arr = [1, 2, 3];
+arr.every(element => element > 0); // true
+arr.every(element => element > 1); // false
 ```
 
-### 33.8.13 Array.prototype.some()
+### 33.8.13 Array.prototype.some()
 
 `some()` 方法测试数组中至少有一个元素通过了由函数实现的测试。
 
-```
-[](#cb868-1)const arr = [1, 2, 3];
-[](#cb868-2)arr.some(element => element > 2); // true
-[](#cb868-3)arr.some(element => element > 4); // false
+```javascript
+const arr = [1, 2, 3];
+arr.some(element => element > 2); // true
+arr.some(element => element > 4); // false
 ```
 
-### 33.8.14 Array.prototype.filter()
+### 33.8.14 Array.prototype.filter()
 
 `filter()` 方法创建一个新数组，其中包含数组中所有通过函数实现的测试的元素。
 
-```
-[](#cb869-1)const arr = [1, 12, 51, 23];
-[](#cb869-2)arr.filter(element => element > 10); // [12, 51, 23]
+```javascript
+const arr = [1, 12, 51, 23];
+arr.filter(element => element > 10); // [12, 51, 23]
 ```
 
-### 33.8.15 Array.prototype.reduce()
+### 33.8.15 Array.prototype.reduce()
 
 `reduce()` 方法在数组的每个元素上执行用户提供的回调函数，产生单个输出值。
 
-```
-[](#cb870-1)const arr = [1, 2, 3];
-[](#cb870-2)arr.reduce((accumulator, current) => accumulator + current, 0); // 6
+```javascript
+const arr = [1, 2, 3];
+arr.reduce((accumulator, current) => accumulator + current, 0); // 6
 ```
 
-### 33.8.16 Array.prototype.reduceRight()
+### 33.8.16 Array.prototype.reduceRight()
 
 `reduceRight()` 方法从右向左对数组的每个元素执行用户提供的回调函数，产生单个输出值。
 
-```
-[](#cb871-1)const arr = [1, 2, 3];
-[](#cb871-2)arr.reduceRight((accumulator, current) => accumulator + current, 0); // 6
+```javascript
+const arr = [1, 2, 3];
+arr.reduceRight((accumulator, current) => accumulator + current, 0); // 6
 ```
 
-### 33.8.17 Array.prototype.concat()
+### 33.8.17 Array.prototype.concat()
 
 `concat()` 方法合并两个或多个数组。返回一个新的数组，不改变现有数组。
 
-```
-[](#cb872-1)const arr = [1, 2];
-[](#cb872-2)const arr2 = [3, 4];
-[](#cb872-3)arr1.concat(arr2); // [1, 2, 3, 4]
+```javascript
+const arr = [1, 2];
+const arr2 = [3, 4];
+arr.concat(arr2); // [1, 2, 3, 4]
 ```
 
-### 33.8.18 Array.prototype.join()
+### 33.8.18 Array.prototype.join()
 
 `join()` 方法通过连接数组的所有元素创建一个字符串。
 
-```
-[](#cb873-1)const arr = [1, 2, 3];
-[](#cb873-2)arr.join("-"); // "1-2-3"
+```javascript
+const arr = [1, 2, 3];
+arr.join("-"); // "1-2-3"
 ```
 
-### 33.8.19 Array.prototype.toString()
+### 33.8.19 Array.prototype.toString()
 
 `toString()` 方法返回 `Array` 的字符串表示。
 
-```
-[](#cb874-1)const arr = [1, 2, 3];
-[](#cb874-2)arr.toString(); // "1,2,3"
+```javascript
+const arr = [1, 2, 3];
+arr.toString(); // "1,2,3"
 ```
 
-### 33.8.20 Array.prototype.flat()
+### 33.8.20 Array.prototype.flat()
 
 `flat()` 方法根据指定的深度将子数组元素递归地合并到一个新数组中。
 
-```
-[](#cb875-1)const arr = [1, 2, [3, 4]];
-[](#cb875-2)arr.flat(); // [1, 2, 3, 4]
+```javascript
+const arr = [1, 2, [3, 4]];
+arr.flat(); // [1, 2, 3, 4]
 ```
 
-### 33.8.21 Array.prototype.flatMap()
+### 33.8.21 Array.prototype.flatMap()
 
 `flatMap()` 方法等同于调用 `map()` 后调用深度为 1 的 `flat()`。
 
-```
-[](#cb876-1)const arr = [1, 2, 3, 4];
-[](#cb876-2)arr.flatMap(x => [x, x]); // [1, 1, 2, 2, 3, 3, 4, 4]
+```javascript
+const arr = [1, 2, 3, 4];
+arr.flatMap(x => [x, x]); // [1, 1, 2, 2, 3, 3, 4, 4]
 ```
 
-### 33.8.22 Array.prototype.fill()
+### 33.8.22 Array.prototype.fill()
 
 `fill()` 方法用静态值填充数组中的元素。
 
-```
-[](#cb877-1)const arr = [1, 2, 3];
-[](#cb877-2)arr.fill(0); // [0, 0, 0]
+```javascript
+const arr = [1, 2, 3];
+arr.fill(0); // [0, 0, 0]
 ```
 
-### 33.8.23 Array.prototype.findLast()
+### 33.8.23 Array.prototype.findLast()
 
 `findLast()` 方法返回数组中最后一个满足测试函数的元素。
 
-```
-[](#cb878-1)const arr = [1, 12, 51, 23];
-[](#cb878-2)arr.findLast(element => element > 10); // 23
+```javascript
+const arr = [1, 12, 51, 23];
+arr.findLast(element => element > 10); // 23
 ```
 
-### 33.8.24 Array.prototype.findIndexLast()
+### 33.8.24 Array.prototype.findIndexLast()
 
 `findIndexLast()` 方法返回数组中最后一个满足测试函数的索引。
 
-```
-[](#cb879-1)const arr = [1, 12, 51, 23];
-[](#cb879-2)arr.findIndexLast(element => element > 10); // 3
+```javascript
+const arr = [1, 12, 51, 23];
+arr.findIndexLast(element => element > 10); // 3
 ```
 
-### 33.8.25 Array.prototype.copyWithin()
+### 33.8.25 Array.prototype.copyWithin()
 
 `copyWithin()` 方法将数组的一个部分浅拷贝到同一数组的另一部分。
 
+```javascript
+const arr = [1, 2, 3, 4, 5];
+arr.copyWithin(0, 3); // [4, 5, 3, 4, 5]
 ```
-[](#cb880-1)const arr = [1, 2, 3, 4, 5];
-[](#cb880-2)arr.copyWithin(0, 3); // [4, 5, 3, 4, 5]
-```
-
-
-
-
 
 ```javascript
 const arr1 = ['a', 'b'];
@@ -13913,7 +12955,7 @@ assert.deepEqual(arr2, ['a', 'b']); // unchanged!
 
 ### 33.9.3 移除元素
 
-以下是移除数组元素的种破坏性方式：
+以下是移除数组元素的几种破坏性方式：
 
 ```javascript
 // 破坏性地移除第一个元素：
@@ -13948,6 +12990,7 @@ assert.deepEqual(arr1, ['a', 'b', 'c']); // unchanged!
 遗憾的是，剩余元素必须位于 `Array` 的最后位置。因此，你只能将其用于提取。
 
 练习：通过数组实现队列
+
 `exercises/arrays/queue_via_array.js`
 
 ## 33.10 方法：迭代与转换 (`.find()`, `.map()`, `.filter()`)
@@ -13961,20 +13004,22 @@ assert.deepEqual(arr1, ['a', 'b', 'c']); // unchanged!
 `(value: T, index: number, array: T)`
 
 也就是说，`callback` 接收三个参数：
+
 * `value` 是最重要的，当前正在处理的迭代值。
 * `index` 可以额外告知迭代值的索引。
 * `array` 指向方法调用的接收者。`callback` 预期的返回值取决于它传递给哪个方法：
-
 * `.map()` 用其 `callback` 返回的值填充结果。
 * `.find()` 返回 `callback` 返回真值的第一个元素（如果找不到则返回 `undefined`）。
 
-### 33.10.2 `.map()`
+### 33.10.2 .map()
 
 `Array.prototype.map()` 的类型为：
 
 ```typescript
 map<U>(callback: (value: T, index: number, array: T[]) => U, thisValue?: any): U[]
 ```
+
+### 33.10.3 .flatMap()
 
 `.map()` 和 `.flatMap()` 都接受一个 `callback` 作为参数，该回调控制输入 `Array` 如何被转换：
 
@@ -14013,15 +13058,9 @@ function flatMap(arr, mapFunc) {
 
 #### 33.10.4.2 用例：同时进行过滤和映射
 
-
-
-
-
-Array 方法 `.map()` 的结果长度与其被调用的 Array 长度相同。这意味着，它的回调函数无法跳过不感兴趣的 Array 元素。`.flatMap()` 能够做到这一点，这种能力在接下来的示例中非常用用。
+Array 方法 `.map()` 的结果长度与其被调用的 Array 长度相同。这意味着，它的回调函数无法跳过不感兴趣的 Array 元素。`.flatMap()` 能够做到这一点，这种能力在接下来的示例中非常有用。
 
 我们将使用以下函数 `processArray()` 来创建一个 Array，然后通过 `.flatMap()` 对其进行过滤（filter）和映射（map）：
-
-
 
 ```javascript
 function processArray(arr, callback) {
@@ -14084,12 +13123,12 @@ function stringsToCodePoints(strs) {
 }
 ```
 
-![](img/file6.svg) **练习：`.flatMap()`**
+**练习：`.flatMap()`**
 
 * `exercises/arrays/convert_to_numbers_test.mjs`
 * `exercises/arrays/replace_objects_test.mjs`
 
-### 33.10.5 `.filter()`：只保留部分元素
+### 33.10.5 .filter()：只保留部分元素
 
 Array 方法 `.filter()` 返回一个 Array，收集所有回调函数返回真值（truthy）的元素。
 
@@ -14116,11 +13155,11 @@ function filter(arr, filterFunc) {
 }
 ```
 
-![](img/file6.svg) **练习：通过 `.filter()` 空行**
+**练习：通过 `.filter()` 空行**
 
 `exercises/arrays/remove_empty_lines_filter_test.mjs`
 
-### 33.10.6 `.reduce()`：从 Array 派生值（进阶）
+### 33.10.6 .reduce()：从 Array 派生值（进阶）
 
 方法 `.reduce()` 是一个计算 Array `arr` “摘要”的强力工具。摘要可以是任何类型的值：
 
@@ -14178,7 +13217,7 @@ function addAll(arr) {
 
 很难说这两种实现中哪种更好：基于 `.reduce()` 的实现更简洁，而基于 `for` 的实现可能更容易理解——特别是当你不熟悉函数式编程时。
 
-### 33.10.6.2 示例：通过 `.reduce()` 查找索引
+### 33.10.6.2 示例：通过 .reduce() 查找索引
 
 以下函数是 Array 方法 `.indexOf()` 的实现。它返回 `searchValue` 在 `arr` 中首次出现的索引：
 
@@ -14204,12 +13243,9 @@ assert.equal(indexOf(['a', 'b', 'c'], 'x'), -1);
 
 `.reduce()` 的局限性之一是你无法提前结束（在 `for` 循环中，你可以 `break`）。在这里，一旦找到结果，我们也立即返回。
 
-#### 33.10.6.3 示例：双倍 Array 元素
+### 33.10.6.3 示例：双倍 Array 元素
 
 函数 `double(arr)` 返回 `inArr` 的拷贝，其所有元素都乘以 2：
-
-
-
 
 ```javascript
 function double(inArr) {
@@ -14241,13 +13277,15 @@ assert.deepEqual(
   [2, 4, 6]);
 ```
 
-This version is more elegant but also slower and uses more memory.![](img/file6.svg) **Exercises: `.reduce()`**
+This version is more elegant but also slower and uses more memory.
+
+**Exercises: `.reduce()`**
 
 * `map()` via `.reduce()`: `exercises/arrays/map_reduce_test.mjs`
 * `filter()` via `.reduce()`: `exercises/arrays/filter_reduce_test.mjs`
 * `countMatches()` via `.reduce()`: `exercises/arrays/count_matches_reduce_test.mjs`
 
-## 33.11 `.sort()`: sorting Arrays
+## 33.11 .sort(): sorting Arrays
 
 `.sort()` has the following definition:
 
@@ -14289,7 +13327,7 @@ You can customize sort order via the `compareFunc` parameter, which must return 
 * zero if `a === b`
 * positive if `a > b`
 
-![](img/file2.svg) **Tip for remembering these rules**
+**Tip for remembering these rules**
 
 A negative number is less than zero (etc.).
 
@@ -14334,7 +13372,7 @@ arr.sort((obj1, obj2) => obj1.age - obj2.age),
 [{ age: 3 }, { age: 10 }, { age: 200 }];
 ```
 
-![](img/file6.svg) **Exercise: Sorting objects by name**
+**Exercise: Sorting objects by name**
 
 `exercises/arrays/sort_objects.mjs`
 
@@ -14354,7 +13392,9 @@ Legend:
 ### 33.12.2 Static methods of `Array`
 
 * `Array.from<T>(iterable: Iterable<T> | ArrayLike<T>): T[]`
+
 Converts an iterable or Array-like object to an Array. Optionally, the input values can be translated via `mapFunc` before they are added to the output Array.
+
 Examples:
 
 ```javascript
@@ -14365,6 +13405,7 @@ Examples:
 ```
 
 * `Array.of<T>(...items: T): T[]`
+
 This static method is mainly useful for subclasses of `Array`, where it serves as a custom Array literal:
 
 ```javascript
@@ -14375,6 +13416,7 @@ assert.equal(MyArray.of('a', 'b') instanceof MyArray, true);
 ### 33.12.3 Methods of `Array<T>.prototype`
 
 * `.concat(...items: Array<T[] | T>): T[]`
+
 Returns a new Array that is the concatenation of the receiver and all `items`. Non-Array parameters (such as `'b'` in the following example) are treated as if they were Arrays with single elements.
 
 ```javascript
@@ -14383,6 +13425,7 @@ Returns a new Array that is the concatenation of the receiver and all `items`. N
 ```
 
 * `.copyWithin(target: number, start: number, end=this.length): this`
+
 Copies the elements whose indices range from (including) `start` to (excluding) `end` to indices starting with `target`. Overlapping is handled correctly.
 
 ```javascript
@@ -14393,6 +13436,7 @@ Copies the elements whose indices range from (including) `start` to (excluding) 
 If `start` or `end` is negative, then `.length` is added to it.
 
 * `.entries(): Iterable<[number, T]>`
+
 Returns an iterable over `[index, element]` pairs.
 
 ```javascript
@@ -14401,6 +13445,7 @@ Returns an iterable over `[index, element]` pairs.
 ```
 
 * `.every(callback: (value: T, index: number, array: Array<T>) => boolean, thisArg?: any): boolean`
+
 Returns `true` if `callback` returns a truthy value for every element. Otherwise, it returns `false`. It stops as soon as it receives a falsy value. This method corresponds to universal quantification (“for all”, `∀`) in mathematics.
 
 ```javascript
@@ -14413,6 +13458,7 @@ false
 Related method: `.some()` (“exists”).
 
 * `.fill(value: T, start=0, end=this.length): this`
+
 Assigns `value` to every index between (including) `start` and (excluding) `end`.
 
 ```javascript
@@ -14423,6 +13469,7 @@ Assigns `value` to every index between (including) `start` and (excluding) `end`
 Caveat: Don’t use this method to fill an Array with an object `obj`; then each element will refer to `obj` (sharing it). In this case, it’s better to use `Array.from()`.
 
 * `.filter(callback: (value: T, index: number, array: Array<T>) => any, thisArg?: any): T[]`
+
 Returns an Array with only those elements for which `callback` returns a truthy value.
 
 ```javascript
@@ -14431,6 +13478,7 @@ Returns an Array with only those elements for which `callback` returns a truthy 
 ```
 
 * `.find(predicate: (value: T, index: number, obj: T[]) => boolean, thisArg?: any): T | undefined`
+
 The result is the first element for which `predicate` returns a truthy value. If there is no such element, the result is `undefined`.
 
 ```javascript
@@ -14442,24 +13490,20 @@ undefined
 
 * `.findIndex(predicate: (value: T, index: number, obj: T[]) => boolean, thisArg?: any): number`
 
-
-
-
-
 结果是第一个让 `predicate` 返回真值的元素的索引。如果没有这样的元素，结果为 `-1`。
 
-```
+```javascript
 > [1, -2, 3].findIndex(x => x < 0)
 1
 > [1, 2, 3].findIndex(x => x < 0)
 -1
 ```
 
-*   `.flat(depth = 1): any[]` ^([R, ES2019])
+* `.flat(depth = 1): any[]` ^([R, ES2019])
 
-    “平坦化”一个数组：它会进入输入数组内部嵌套的数组，并创建一个副本，将所有在 `depth` 层或更深层找到的值都移动到顶层。
+“平坦化”一个数组：它会进入输入数组内部嵌套的数组，并创建一个副本，将所有在 `depth` 层或更深层找到的值都移动到顶层。
 
-```
+```javascript
 > [ 1,2, [3,4], [[5,6]] ].flat(0) // no change
 [ 1, 2, [3,4], [[5,6]] ]
 
@@ -14470,11 +13514,11 @@ undefined
 [1, 2, 3, 4, 5, 6]
 ```
 
-*   `.flatMap<U>(callback: (value: T, index: number, array: T[]) => U|Array<U>, thisValue?: any): U[]` ^([R, ES2019])
+* `.flatMap<U>(callback: (value: T, index: number, array: T[]) => U|Array<U>, thisValue?: any): U[]` ^([R, ES2019])
 
-    结果通过对原始数组的每个元素调用 `callback()` 并拼接其返回的数组产生。
+结果通过对原始数组的每个元素调用 `callback()` 并拼接其返回的数组产生。
 
-```
+```javascript
 > ['a', 'b', 'c'].flatMap(x => [x,x])
 [ 'a', 'a', 'b', 'b', 'c', 'c' ]
 > ['a', 'b', 'c'].flatMap(x => [x])
@@ -14483,36 +13527,36 @@ undefined
 []
 ```
 
-*   `.forEach(callback: (value: T, index: number, array: Array<T>) => void, thisArg?: any): void` ^([R, ES5])
+* `.forEach(callback: (value: T, index: number, array: Array<T>) => void, thisArg?: any): void` ^([R, ES5])
 
-    为每个元素调用 `callback`。
+为每个元素调用 `callback`。
 
+```javascript
+['a', 'b'].forEach((x, i) => console.log(x, i))
+
+// Output:
+// 'a', 0
+// 'b', 1
 ```
-[](#cb917-1)['a', 'b'].forEach((x, i) => console.log(x, i))
-[](#cb917-2)
-[](#cb917-3)// Output:
-[](#cb917-4)// 'a', 0
-[](#cb917-5)// 'b', 1
-```
 
-    `for-of` 循环通常是更好的选择：它更快，支持 `break` 并且可以遍历任意迭代器。
+`for-of` 循环通常是更好的选择：它更快，支持 `break` 并且可以遍历任意迭代器。
 
-*   `.includes(searchElement: T, fromIndex=0): boolean` ^([R, ES2016])
+* `.includes(searchElement: T, fromIndex=0): boolean` ^([R, ES2016])
 
-    如果接收者拥有值为 `searchElement` 的元素，则返回 `true`，否则返回 `false`。搜索从索引 `fromIndex` 开始。
+如果接收者拥有值为 `searchElement` 的元素，则返回 `true`，否则返回 `false`。搜索从索引 `fromIndex` 开始。
 
-```
+```javascript
 > [0, 1, 2].includes(1)
 true
 > [0, 1, 2].includes(5)
 false
 ```
 
-*   `.indexOf(searchElement: T, fromIndex=0): number` ^([R, ES5])
+* `.indexOf(searchElement: T, fromIndex=0): number` ^([R, ES5])
 
-    返回第一个严格等于 `searchElement` 的元素的索引。如果没有这样的元素，则返回 `-1`。从索引 `fromIndex` 开始搜索，依次访问更高的索引。
+返回第一个严格等于 `searchElement` 的元素的索引。如果没有这样的元素，则返回 `-1`。从索引 `fromIndex` 开始搜索，依次访问更高的索引。
 
-```
+```javascript
 > ['a', 'b', 'a'].indexOf('a')
 0
 > ['a', 'b', 'a'].indexOf('a', 1)
@@ -14521,31 +13565,31 @@ false
 -1
 ```
 
-*   `.join(separator = ','): string` ^([R, ES1])
+* `.join(separator = ','): string` ^([R, ES1])
 
-    通过拼接所有元素的字符串表示来创建一个字符串，并用 `separator` 分隔它们。
+通过拼接所有元素的字符串表示来创建一个字符串，并用 `separator` 分隔它们。
 
-```
+```javascript
 > ['a', 'b', 'c'].join('##')
 'a##b##c'
 > ['a', 'b', 'c'].join()
 'a,b,c'
 ```
 
-*   `.keys(): Iterable<number>` ^([R, ES6])
+* `.keys(): Iterable<number>` ^([R, ES6])
 
-    返回关于接收者键的迭代器。
+返回关于接收者键的迭代器。
 
-```
+```javascript
 > [...['a', 'b'].keys()]
 [ 0, 1 ]
 ```
 
-*   `.lastIndexOf(searchElement: T, fromIndex=this.length-1): number` ^([R, ES5])
+* `.lastIndexOf(searchElement: T, fromIndex=this.length-1): number` ^([R, ES5])
 
-    返回最后一个严格等于 `searchElement` 的元素的索引。如果没有这样的元素，则返回 `-1`。从索引 `fromIndex` 开始搜索，依次访问较低的索引。
+返回最后一个严格等于 `searchElement` 的元素的索引。如果没有这样的元素，则返回 `-1`。从索引 `fromIndex` 开始搜索，依次访问较低的索引。
 
-```
+```javascript
 > ['a', 'b', 'a'].lastIndexOf('a')
 2
 > ['a', 'b', 'a'].lastIndexOf('a', 1)
@@ -14554,22 +13598,22 @@ false
 -1
 ```
 
-*   `.map<U>(mapFunc: (value: T, index: number, array: Array<T>) => U, thisArg?: any): U[]` ^([R, ES5])
+* `.map<U>(mapFunc: (value: T, index: number, array: Array<T>) => U, thisArg?: any): U[]` ^([R, ES5])
 
-    返回一个新数组，其中每个元素都是将 `mapFunc` 应用于接收者对应元素的结果。
+返回一个新数组，其中每个元素都是将 `mapFunc` 应用于接收者对应元素的结果。
 
-```
+```javascript
 > [1, 2, 3].map(x => x * 2)
 [ 2, 4, 6 ]
 > ['a', 'b', 'c'].map((x, i) => i)
 [ 0, 1, 2 ]
 ```
 
-*   `.pop(): T | undefined` ^([W, ES3])
+* `.pop(): T | undefined` ^([W, ES3])
 
-    移除并返回接收者的最后一个元素。`shift()` 的相反操作。
+移除并返回接收者的最后一个元素。`shift()` 的相反操作。
 
-```
+```javascript
 > arr = ['a', 'b', 'c'];
 > arr.pop()
 'c'
@@ -14577,11 +13621,11 @@ false
 [ 'a', 'b' ]
 ```
 
-*   `.shift(): T | undefined` ^([W, ES3])
+* `.shift(): T | undefined` ^([W, ES3])
 
-    移除并返回接收者的第一个元素。`pop()` 的相反操作。
+移除并返回接收者的第一个元素。`pop()` 的相反操作。
 
-```
+```javascript
 > arr = ['a', 'b', 'c'];
 > arr.shift()
 'a'
@@ -14589,11 +13633,11 @@ false
 [ 'b', 'c' ]
 ```
 
-*   `.push(...items: T): number` ^([R, ES3])
+* `.push(...items: T): number` ^([R, ES3])
 
-    在数组末尾添加一个多个元素并返回数组的新长度。
+在数组末尾添加一个多个元素并返回数组的新长度。
 
-```
+```javascript
 > arr = ['a', 'b'];
 > arr.push('c', 'd')
 4
@@ -14601,22 +13645,22 @@ false
 [ 'a', 'b', 'c', 'd' ]
 ```
 
-*   `.slice(start=0, end=this.length): T[]` ^([R, ES3])
+* `.slice(start=0, end=this.length): T[]` ^([R, ES3])
 
-    返回接收者在 `start` 和 `end` 之间的元素的浅拷贝。
+返回接收者在 `start` 和 `end` 之间的元素的浅拷贝。
 
-```
+```javascript
 > ['a', 'b', 'c', 'd'].slice(1, 3)
 [ 'b', 'c' ]
 > ['a', 'b', 'c', 'd'].slice(-2)
 [ 'c', 'd' ]
 ```
 
-*   `.splice(start, deleteCount, ...items: T): T[]` ^([R, ES5])
+* `.splice(start, deleteCount, ...items: T): T[]` ^([R, ES5])
 
-    通过删除现有元素和插入新元素来改变数组的内容。返回被删除元素的数组。
+通过删除现有元素和插入新元素来改变数组的内容。返回被删除元素的数组。
 
-```
+```javascript
 > arr = ['a', 'b', 'c', 'd'];
 > arr.splice(1, 2, 'e', 'f')
 [ 'b', 'c' ]
@@ -14624,140 +13668,137 @@ false
 [ 'a', 'e', 'f', 'd' ]
 ```
 
-*   `.reverse(): this` ^([W, ES3])
+* `.reverse(): this` ^([W, ES3])
 
-    原地反转数组并返回数组的引用。
+原地反转数组并返回数组的引用。
 
-```
+```javascript
 > arr = ['a', 'b', 'c'];
 > arr.reverse()
 [ 'c', 'b', 'a' ]
 ```
 
-*   `.some(callback: (value: T, index: number, array: T) => boolean, thisArg?: any): boolean` ^([R, ES5])
+* `.some(callback: (value: T, index: number, array: T) => boolean, thisArg?: any): boolean` ^([R, ES5])
 
-    如果 `callback` 对至少一个元素返回真值，则返回 `true`。否则返回 `false`。它在接收到真值时就会停止。
+如果 `callback` 对至少一个元素返回真值，则返回 `true`。否则返回 `false`。它在接收到真值时就会停止。
 
-```
+```javascript
 > [1, 2, 3].some(x => x < 0)
 false
 > [1, -2, 3].some(x => x < 0)
 true
 ```
 
-*   `.every(callback: (value: T, index: number, array: T) => boolean, thisArg?: any): boolean` ^([R, ES5])
+* `.every(callback: (value: T, index: number, array: T) => boolean, thisArg?: any): boolean` ^([R, ES5])
 
-    如果 `callback` 对数组中的所有元素都返回真值，则返回 `true`。否则返回 `false`。
+如果 `callback` 对数组中的所有元素都返回真值，则返回 `true`。否则返回 `false`。
 
-```
+```javascript
 > [1, 2, 3].every(x => x > 0)
 true
 > [1, 2, 3].every(x => x > 1)
 false
 ```
 
-*   `.filter(callback: (value: T, index: number, array: T) => boolean, thisArg?: any): T[]` ^([R, ES5])
+* `.filter(callback: (value: T, index: number, array: T) => boolean, thisArg?: any): T[]` ^([R, ES5])
 
-    返回一个包含通过提供函数测试的新数组。
+返回一个包含通过提供函数测试的新数组。
 
-```
+```javascript
 > [1, 2, 3, 4].filter(x => x > 2)
 [ 3, 4 ]
 ```
 
-*   `.forEach(callback: (value: T, index: number, array: T) => void, thisArg?: any): void` ^([R, ES5])
+* `.forEach(callback: (value: T, index: number, array: T) => void, thisArg?: any): void` ^([R, ES5])
 
-    为数组每个元素执行一次提供的函数。
+为数组每个元素执行一次提供的函数。
 
-```
+```javascript
 ['a', 'b'].forEach((x, i) => console.log(x, i))
 "a" 0
 "b" 1
 ```
 
-*   `.find(callback: (value: T, index: number, array: T) => boolean, thisArg?: any): T | undefined` ^([R, ES6])
+* `.find(callback: (value: T, index: number, array: T) => boolean, thisArg?: any): T | undefined` ^([R, ES6])
 
-    返回数组中满足提供的测试函数的第一个元素。如果没有找到值，则返回 `undefined`。
+返回数组中满足提供的测试函数的第一个元素。如果没有找到值，则返回 `undefined`。
 
-```
+```javascript
 > [1, 2, 3].find(x => x > 2)
 3
 > [1, 2, 3].find(x => x > 5)
 undefined
 ```
 
-*   `.findIndex(callback: (value: T, index: number, array: T) => boolean, thisArg?: any): number` ^([R, ES6])
+* `.findIndex(callback: (value: T, index: number, array: T) => boolean, thisArg?: any): number` ^([R, ES6])
 
-    返回数组中满足提供的测试函数的第一个元素的索引。如果没有找到元素，则返回 `-1`。
+返回数组中满足提供的测试函数的第一个元素的索引。如果没有找到元素，则返回 `-1`。
 
-```
+```javascript
 > [1, 2, 3].findIndex(x => x > 2)
 2
 > [1, 2, 3].findIndex(x => x > 5)
 -1
 ```
 
-*   `.flatMap(callback: (value: T, index: number, array: T) => U|Array<U>, thisArg?: any): U[]` ^([R, ES2019])
+* `.flatMap(callback: (value: T, index: number, array: T) => U|Array<U>, thisArg?: any): U[]` ^([R, ES2019])
 
-    结果通过对原始数组的每个元素调用 `callback()` 并拼接其返回的数组产生。
+结果通过对原始数组的每个元素调用 `callback()` 并拼接其返回的数组产生。
 
-```
+```javascript
 > ['a', 'b', 'c'].flatMap(x => [x,x])
 [ 'a', 'a', 'b', 'b', 'c', 'c' ]
 ```
 
-*   `.join(separator = ','): string` ^([R, ES1])
+* `.join(separator = ','): string` ^([R, ES1])
 
-    通过拼接所有元素的字符串表示来创建一个字符串，并用 `separator` 分隔它们。
+通过拼接所有元素的字符串表示来创建一个字符串，并用 `separator` 分隔它们。
 
-```
+```javascript
 > ['a', 'b', 'c'].join('##')
 'a##b##c'
 > ['a', 'b', 'c'].join()
 'a,b,c'
 ```
 
-*   `.keys(): Iterable<number>` ^([R, ES6])
+* `.keys(): Iterable<number>` ^([R, ES6])
 
-    返回关于接收者键的迭代器。
+返回关于接收者键的迭代器。
 
-```
+```javascript
 > [...['a', 'b'].keys()]
 [ 0, 1 ]
 ```
 
-*   `.lastIndexOf(searchElement: T, fromIndex=this.length-1): number` ^([R, ES5])
+* `.lastIndexOf(searchElement: T, fromIndex=this.length-1): number` ^([R, ES5])
 
-    返回最后一个严格等于 `searchElement` 的元素的索引。如果没有这样的元素，则返回 `-1`。从索引 `fromIndex` 开始搜索，依次访问较低的索引。
+返回最后一个严格等于 `searchElement` 的元素的索引。如果没有这样的元素，则返回 `-1`。从索引 `fromIndex` 开始搜索，依次访问较低的索引。
 
-```
+```javascript
 > ['a', 'b', 'a'].lastIndexOf('a')
 2
 > ['a', 'b', 'a'].lastIndexOf('a', 1)
 0
 ```
 
-*   `.map<U>(mapFunc: (value: T, index: number, array: Array<T>) => U, thisArg?: any): U[]` ^([R, ES5])
+* `.map<U>(mapFunc: (value: T, index: number, array: Array<T>) => U, thisArg?: any): U[]` ^([R, ES5])
 
-    返回一个新数组，其中每个元素都是将 `mapFunc` 应用于接收者对应元素的结果。
+返回一个新数组，其中每个元素都是将 `mapFunc` 应用于接收者对应元素的结果。
 
-```
+```javascript
 > [1, 2, 3].map(x => x * 2)
 [ 2, 4, 6 ]
 > ['a', 'b', 'c'].map((x, i) => i)
 [ 0, 1, 2 ]
 ```
 
-
-
-
 自 ECMAScript 2019 起，排序被保证是稳定的：如果元素在排序时被认为是相等的，那么排序不会改变这些元素的顺序（它们彼此之间）。
 
-*   `.splice(start: number, deleteCount=this.length-start, ...items: T[]): T[]` ^([W, ES3])
+* `.splice(start: number, deleteCount=this.length-start, ...items: T[]): T[]` ^([W, ES3])
 
-  在索引 `start` 处，它删除了 `deleteCount` 个元素并插入 `items`。它返回被删除的元素。
+在索引 `start` 处，它删除了 `deleteCount` 个元素并插入 `items`。它返回被删除的元素。
 
-```
+```javascript
 > const arr = ['a', 'b', 'c', 'd'];
 > arr.splice(1, 2, 'x', 'y')
 [ 'b', 'c' ]
@@ -14767,16 +13808,16 @@ undefined
 
 `start` 可以为负数，且如果是负数，则会加到 `.length`：
 
-```
+```javascript
 > ['a', 'b', 'c'].splice(-2, 2)
 [ 'b', 'c' ]
 ```
 
-*   `.toString(): string` ^([R, ES1])
+* `.toString(): string` ^([R, ES1])
 
-  通过 `String()` 将所有元素转换为字符串，并将它们用逗号分隔后拼接，返回结果。
+通过 `String()` 将所有元素转换为字符串，并将它们用逗号分隔后拼接，返回结果。
 
-```
+```javascript
 > [1, 2, 3].toString()
 '1,2,3'
 > ['1', '2', '3'].toString()
@@ -14785,11 +13826,11 @@ undefined
 ''
 ```
 
-*   `.unshift(...items: T[]): number` ^([W, ES3])
+* `.unshift(...items: T[]): number` ^([W, ES3])
 
-  在接收者的开头插入 `items` 并在修改后返回其长度。
+在接收者的开头插入 `items` 并在修改后返回其长度。
 
-```
+```javascript
 > const arr = ['c', 'd'];
 > arr.unshift('e', 'f')
 4
@@ -14797,60 +13838,86 @@ undefined
 [ 'e', 'f', 'c', 'd' ]
 ```
 
-*   `.values(): Iterable<T>` ^([R, ES6])
+* `.values(): Iterable<T>` ^([R, ES6])
 
-  返回一个关于接收者值的迭代器。
+返回一个关于接收者值的迭代器。
 
-```
+```javascript
 > [...['a', 'b'].values()]
 [ 'a', 'b' ]
 ```
 
-### 33.12.4 来源
+### 33.12.4 来源
 
-*   [TypeScript 内置类型定义](https://github.com/Microsoft/TypeScript/blob/master/lib/)
-*   [MDN JavaScript 文档](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
-*   [ECMAScript 语言规范](https://tc39.github.io/ecma262/)
+* [TypeScript 内置类型定义](https://github.com/Microsoft/TypeScript/blob/master/lib/)
+* [MDN JavaScript 文档](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+* [ECMAScript 语言规范](https://tc39.github.io/ecma262/)
 
-![](img/file7.svg) **测试**
+**测试**
 
 查看测试应用。
 
-# 34 类型数组（Typed Arrays）：处理二进制数据（高级）
+# 34 类型数组（Typed Arrays）：处理二进制数据（高级）
 
 * * *
 
-* 34.1 API 基础
-    * 34.1.1 类型数组的用例
-    * 34.1.2 核心类：`ArrayBuffer`、类型数组、`DataView`
-    * 34.1.3 使用类型数组
-    * 34.1.4 使用 DataViews
-* 34.2 元素类型
-    * 34.2.1 处理溢出和下溢
-    * 34.2.2 字节序
-* 34.3 关于类型数组的更多信息
-    * 34.3.1 静态方法 `«ElementType»Array.from()`
-    * 34.3.2 类型数组是可迭代的
-    * 34.3.3 类型数组 vs 普通数组
-    * 34.3.4 类型数组与普通数组之间的转换
-    * 34.3.5 拼接类型数组
-* 34.4 快速参考：索引 vs 偏移量
-* 34.5 快速参考：ArrayBuffers
-    * 34.5.1 `new ArrayBuffer()`
-    * 34.5.2 `ArrayBuffer` 的静态方法
-    * 34.5.3 `ArrayBuffer` 的属性
-* 34.6 快速参考：类型数组
-    * 34.6.1 `TypedArray<T>` 的静态方法
-    * 34.6.2 `TypedArray<T>` 的属性
-    * 34.6.3 `new TypedArray<T>()`
-    * 34.6.4 类型数组与普通数组的转换方法
-    * 34.6.5 `TypedArray<T>` 的原型方法
-* 34.7 快速参考：DataViews
-    * 34.7.1 `new DataView()`
-    * 34.7.2 `DataView` 的属性
+## 34.1 API 基础
+
+### 34.1.1 类型数组的用例
+
+### 34.1.2 核心类：`ArrayBuffer`、类型数组、`DataView`
+
+### 34.1.3 使用类型数组
+
+### 34.1.4 使用 DataViews
+
+## 34.2 元素类型
+
+### 34.2.1 处理溢出和下溢
+
+### 34.2.2 字节序
+
+## 34.3 关于类型数组的更多信息
+
+### 34.3.1 静态方法 `«ElementType»Array.from()`
+
+### 34.3.2 类型数组是可迭代的
+
+### 34.3.3 类型数组 vs 普通数组
+
+### 34.3.4 类型数组与普通数组之间的转换
+
+### 34.3.5 拼接类型数组
+
+## 34.4 快速参考：索引 vs 偏移量
+
+## 34.5 快速参考：ArrayBuffers
+
+### 34.5.1 `new ArrayBuffer()`
+
+### 34.5.2 `ArrayBuffer` 的静态方法
+
+### 34.5.3 `ArrayBuffer` 的属性
+
+## 34.6 快速参考：类型数组
+
+### 34.6.1 `TypedArray<T>` 的静态方法
+
+### 34.6.2 `TypedArray<T>` 的属性
+
+### 34.6.3 `new TypedArray<T>()`
+
+### 34.6.4 类型数组与普通数组的转换方法
+
+### 34.6.5 `TypedArray<T>` 的原型方法
+
+## 34.7 快速参考：DataViews
+
+### 34.7.1 `new DataView()`
 
 
 
+## 34.7.2 `DataView.prototype` 的属性
 
 ```javascript
 // Argument: Typed Array or Array-like object
@@ -14906,8 +13973,7 @@ dataView.setUint8(0, 5);
 | --- | --- | --- | --- | --- |
 | `Int8` | `Int8Array` | 1 | 8 位有符号整数 | ES6 |
 | `Uint8` | `Uint8Array` | 1 | 8 位无符号整数 | ES6 |
-| `Uint8C` | `Uint8ClampedArray` | 1 | 8 位无符号整数 | ES6 |
-| | | | (限幅转换) | ES6 |
+| `Uint8C` | `Uint8ClampedArray` | 1 | 8 位无符号整数 (限幅转换) | ES6 |
 | `Int16` | `Int16Array` | 2 | 16 位有符号整数 | ES6 |
 | `Uint16` | `Uint16Array` | 2 | 16 位无符号整数 | ES6 |
 | `Int32` | `Int32Array` | 4 | 32 位有符号整数 | ES6 |
@@ -14933,7 +13999,7 @@ Typed Arrays 和 Array Buffers 使用数字和 bigints 来导入和导出值：
 
 通常，当一个值超出元素类型的范围时，会使用取模运算将其转换为范围内的值。对于有符号和无符号整数，这意味着：
 
-* 最大值加 1 转换为最小值值（无符号整数为 0）。
+* 最大值加 1 转换为最小值（无符号整数为 0）。
 * 最小值减 1 转换为最大值。
 
 以下函数有助于说明转换是如何运作的：
@@ -15002,7 +14068,7 @@ assert.equal(setAndGet(uint8c, -1), 255);
 * 大端序（Big endian）：高字节在前。例如，`Uint16` 值 0x4321 被存储为两个字节——0x43，然后是 0x21。
 * 小端序（Little endian）：低字节在前。例如，`Uint16` 值 0x4321 被存储为两个字节——0x21，然后是 0x43。
 
-字节序通常按架构固定，，并且在原生 API 中保持一致。DataViews 满足了这一用例，并允许你在获取或设置时指定字节序。
+字节序通常按架构固定，并且在原生 API 中保持一致。DataViews 满足了这一用例，并允许你在获取或设置时指定字节序。
 
 [引用维基百科关于字节序](https://en.wikipedia.org/wiki/Endianness)：
 
@@ -15046,10 +14112,6 @@ assert.deepEqual(
 ```
 
 `source` 也可以是*类数组对象*：
-
-
-
-
 
 ```javascript
 assert.deepEqual(
@@ -15159,6 +14221,7 @@ for (const byte of ui8) {
         ```
 
 * `Typed Array` 的 `.length` 派生自其 `ArrayBuffer` 且不会改变（除非切换到 `Array`）。
+
 普通 `Arrays` 可以有空位；`Typed Arrays` 不能。
 
 ### 34.3.4 Typed Arrays 与普通 Arrays 之间的转换
@@ -15197,7 +14260,7 @@ function concatenate(resultConstructor, ...arrays) {
 }
 ```
 
-### 34.4 
+## 34.4 快速参考：索引 vs 偏移量
 
 为了准备引用 `ArrayBuffers`、`Typed Arrays` 和 `DataViews`，我们需要学习索引和偏移量之间的区别：
 
@@ -15219,7 +14282,7 @@ function concatenate(resultConstructor, ...arrays) {
     assert.deepEqual(Object.keys(tarr), ['0', '1']);
     ```
 
-* `ArrayBuffers`、`Typed Arrays` 和 `DataViews` 方法的索引：每个索引可以是负的。如果是负的，它将加上对象的长度以产生实际索引。因此，`-1` 指最后一个元素，`-2` 指倒第二个元素，以此此类推。普通 `Arrays` 的方法也相同相同。
+* `ArrayBuffers`、`Typed Arrays` 和 `DataViews` 方法的索引：每个索引可以是负的。如果是负的，它将加上对象的长度以产生实际索引。因此，`-1` 指最后一个元素，`-2` 指倒第二个元素，以此类推。普通 `Arrays` 的方法也相同。
 
     ```javascript
     const ui8 = Uint8Array.of(0, 1, 2);
@@ -15227,10 +14290,6 @@ function concatenate(resultConstructor, ...arrays) {
     ```
 
 * 传递给 `Typed Arrays` 和 `DataViews` 方法的偏移量：必须是非负的 —— 例如：
-
-
-
-
 
 ```javascript
 const dataView = new DataView(new ArrayBuffer(4));
@@ -15245,13 +14304,13 @@ assert.throws(
 
 一个参数是索引（index）还是偏移量（offset）只能通过查看文档来确定；没有简单的规则。
 
-## 34.5 快速参考：ArrayBuffers
+## 34.5 快速参考：ArrayBuffers
 
 `ArrayBuffers` 存储二进制数据，旨在通过 `Typed Arrays`（类型数组）和 `DataViews` 进行访问。
 
-### 34.5.1 `new ArrayBuffer()`
+### 34.5.1 `new ArrayBuffer()`
 
-该构造函数的类型签为：
+该构造函数的类型签名为：
 
 ```javascript
 new ArrayBuffer(length: number)
@@ -15261,13 +14320,13 @@ new ArrayBuffer(length: number)
 
 你不能更改 `ArrayBuffer` 的长度；只能创建一个不同长度的新 `ArrayBuffer`。
 
-### 34.5.2 `ArrayBuffer` 的静态方法
+### 34.5.2 `ArrayBuffer` 的静态方法
 
 * `ArrayBuffer.isView(arg: any)`
 
   如果 `arg` 是一个对象且是 `ArrayBuffer` 的视图（即它是一个 `Typed Array` 或 `DataView`），则返回 `true`。
 
-### 34.5.3 `ArrayBuffer.prototype` 的属性
+### 34.5.3 `ArrayBuffer.prototype` 的属性
 
 * `get .byteLength(): number`
 
@@ -15277,21 +14336,24 @@ new ArrayBuffer(length: number)
 
   创建一个新的 `ArrayBuffer`，其中包含该 `ArrayBuffer` 中索引大于或等于 `startIndex` 且小于 `endIndex` 的字节。`start` 和 `endIndex` 可以为负数（参见 §34.4 “快速参考：索引 vs 偏移量”）。
 
-## 34.6 快速参考：Typed Arrays
+## 34.6 快速参考：Typed Arrays
 
 各种 `Typed Array` 对象的属性分两个步骤介绍：
 
 1. `TypedArray`：首先，我们查看所有 `Typed Array` 类的抽象父类（在章节开头的类图中显示）。我将该父类称为 `TypedArray`，但无法从 JavaScript 直接访问。`TypedArray.prototype` 包含了所有 `Typed Arrays` 的方法。
-
 2. `«ElementType»Array`：具体的 `Typed Array` 类被称为 `Uint8Array`、`Int16Array`、`Float32Array` 等。这些是你通过 `new`、`.of` 和 `.from()` 使用的类。
 
-### 34.6.1 `TypedArray<T>` 的静态方法
+### 34.6.1 `TypedArray<T>` 的静态方法
 
 所有静态 `TypedArray` 方法都被其子类（`Uint8Array` 等）继承。`TypedArray` 是抽象的。因此，你始终通过子类使用这些方法，因为子类是具体的并且可以拥有直接实例。
 
 * `.from<S>(source: Iterable<S>|ArrayLike<S>, mapfn?: S => T, thisArg?: any) : instanceof this`
 
-  将可迭代对象（包括 `Arrays` 和 `Typed Arrays`）或类数组对象,
+  将可迭代对象（包括 `Arrays` 和 `Typed Arrays`）或类数组对象转换为 `this` 的实例。
+
+  ```javascript
+  assert.deepEqual(
+    Uint16Array.from([0, 1, 2]),
     Uint16Array.of(0, 1, 2));
   ```
 
@@ -15304,7 +14366,6 @@ new ArrayBuffer(length: number)
   ```
 
 * `.of(...items: bigint[]): instanceof this` (`BigInt64Array`, `BigUint64Array`)
-
 * `.of(...items: number[]): instanceof this` (所有其他 Typed Arrays)
 
   创建一个 `this` 的新实例，其元素为 `items`（被强制转换为元素类型）。
@@ -15315,11 +14376,11 @@ new ArrayBuffer(length: number)
     new Int16Array([-1234, 5, 67]) );
   ```
 
-### 34.6.2 `TypedArray<T>.prototype` 的属性
+### 34.6.2 `TypedArray<T>.prototype` 的属性
 
-`Typed Array` 方法接受的索引可以是负数（它们的工作方式类似于传统的 `Array` 方法）。偏移量必须是非负的。详情，请参见 §34.4 “快速参考：索引 vs 偏移量”)。
+`Typed Array` 方法接受的索引可以是负数（它们的工作方式类似于传统的 `Array` 方法）。偏移量必须是非负的。详情，请参见 §34.4 “快速参考：索引 vs 偏移量”。
 
-#### 34.6.2.1 Typed Arrays 特有属性
+#### 34.6.2.1 Typed Arrays 特有属性
 
 以下属性 `Typed Arrays` 特有；普通的 `Arrays` 不具备：
 
@@ -15340,9 +14401,7 @@ new ArrayBuffer(length: number)
   返回此 `Typed Array` 在其 `ArrayBuffer` 内部“起始”的偏移量。
 
 * `.set(typedArray: TypedArray, offset=0): void`
-
 * `.set(arrayLike: ArrayLike<bigint>, offset=0): void` (`BigInt64Array`, `BigUint64Array`)
-
 * `.set(arrayLike: ArrayLike<number>, offset=0): void` (所有其他 Typed Arrays)
 
   将第一个参数的所有元素拷贝到此 `Typed Array`。参数中索引为 0 的元素被写入此 `Typed Array` 的索引 `offset` 处（依此类推）。关于类数组对象的更多信息，请参阅 §33.4 “类数组对象”。
@@ -15351,55 +14410,40 @@ new ArrayBuffer(length: number)
 
   返回一个新的 `Typed Array`，它与此 `Typed Array` 具有相同的缓冲区，但范围（通常）较小。如果 `startIndex` 是负的，则结果 `Typed Array` 的第一个元素是 `this[startIndex]`。
 
-#### 34.6.2.2 Array 方法
+#### 34.6.2.2 Array 方法
 
 以下方法与 `Arrays` 的方法基本相同：
 
 * `.slice(start=0, end=this.length): T[]`
-
 * `.entries(): Iterable<[number, T]>`
-
 * `.every(value: T, index: number, array: TypedArray<T>) => boolean, thisArg?: any`
-
 * `.fill(value: T, start=0, end=this.length): this`
-
 * `.keys(): Iterable<number>`
-
 * `.forEach(value: T, index: number, array: TypedArray<T>) => void, thisArg?: any`
-
 * `.values(): Iterable<T>`
 
 以下方法**不**等同于 `Arrays` 方法：
 
 * `.copyWithin(target: number, start: number, end=this.length): this`
-
 * `.sort(compareFunc?: (a: T, b: T) => number): this`
 
-```)
+关于这些方法如何工作，请参阅 §33.12.3 “Array<T>.prototype 的方法”。
 
-关于这些方法如何工作，请参阅 §33.12.3 “Array<T>.prototype` 的方法”。
-
-### 34.6.3 `new «ElementType»Array()`
+### 34.6.3 `new «ElementType»Array()`
 
 每个 Typed Array 构造函数的名称都遵循 `«ElementType»Array` 模式，其中 `«ElementType»` 是开头表格中的元素类型之一。这意味着有 11 个 Typed Arrays 构造函数：
 
 * `Float32Array`, `Float64Array`
-
 * `Int8Array`, `Int16Array`, `Int32Array`, `BigInt64Array`
-
 * `Uint8Array`, `Uint8ClampedArray`, `Uint16Array`, `Uint32Array`, `BigUint64Array`
-
-
-
-
 
 每个构造函数都有四个重载版本 – 它的行为取决于接收的参数数量以及这些的类型：
 
-*   `new «ElementType»Array(buffer: ArrayBuffer, byteOffset=0, length=0)`
+* `new «ElementType»Array(buffer: ArrayBuffer, byteOffset=0, length=0)`
 
     创建一个新的 `«ElementType»Array`，其缓冲区为 `buffer`。它从给定的 `byteOffset` 开始访问缓冲区，并具有给定的 `length`。注意，`length` 统计的是类型数组的元素个数（每个元素 1–8 字节），而不是字节数。
 
-*   `new «ElementType»Array(length=0)`
+* `new «ElementType»Array(length=0)`
 
     创建一个具有给定 `length` 和相应缓冲器的 `«ElementType»Array`。缓冲区以字节为单位的大小为：
 
@@ -15407,19 +14451,18 @@ new ArrayBuffer(length: number)
     length * «ElementType»Array.BYTES_PER_ELEMENT
     ```
 
-*   `new «ElementType»Array(source: TypedArray)`
+* `new «ElementType»Array(source: TypedArray)`
 
     创建一个 `«ElementType»Array` 的新实例，其元素的值与 `source` 的元素值相同，但会被强制转换为 `ElementType`。
 
-*   `new «ElementType»Array(source: ArrayLike<bigint>)` (`BigInt64Array`, `BigUint64Array`)
-
-*   `new «ElementType»Array(source: ArrayLike<number>)` (所有其他类型数组)
+* `new «ElementType»Array(source: ArrayLike<bigint>)` (`BigInt64Array`, `BigUint64Array`)
+* `new «ElementType»Array(source: ArrayLike<number>)` (所有其他类型数组)
 
     创建一个 `«ElementType»Array` 的新实例，其元素的值与 `source` 的元素值相同，但会被强制转换为 `ElementType`。有关关于类数组对象的更多信息，请参阅 §33.4 “类数组对象”。
 
 ### 34.6.4 `«ElementType»Array` 的静态属性
 
-*   `«ElementType»Array.BYTES_PER_ELEMENT: number`
+* `«ElementType»Array.BYTES_PER_ELEMENT: number`
 
     计算存储单个元素需要多少个字节：
 
@@ -15434,7 +14477,7 @@ new ArrayBuffer(length: number)
 
 ### 34.6.5 `«ElementType»Array.prototype` 的属性
 
-*   `.BYTES_PER_ELEMENT: number`
+* `.BYTES_PER_ELEMENT: number`
 
     与 `«ElementType»Array.BYTES_PER_ELEMENT` 相同。
 
@@ -15442,7 +14485,7 @@ new ArrayBuffer(length: number)
 
 ### 34.7.1 `new DataView()`
 
-*   `new DataView(buffer: ArrayBuffer, byteOffset=0, byteLength=buffer.byteLength-byteOffset)`
+* `new DataView(buffer: ArrayBuffer, byteOffset=0, byteLength=buffer.byteLength-byteOffset)`
 
     创建一个新的 `DataView`，其数据存储在 ArrayBuffer `buffer` 中。默认情况下，新的 `DataView` 可以访问整个 `buffer`。最后两个参数允许你更改此行为。
 
@@ -15450,35 +14493,31 @@ new ArrayBuffer(length: number)
 
 在本节的剩余部分中，`«ElementType»` 指：
 
-*   `Int8`, `Int16`, `Int32`, `BigInt64`
-
-*   `Uint8`, `Uint16`, `Uint32`, `BigUint64`
-
-*   `Float32`, `Float64`
+* `Int8`, `Int16`, `Int32`, `BigInt64`
+* `Uint8`, `Uint16`, `Uint32`, `BigUint64`
+* `Float32`, `Float64`
 
 这些是 `DataView.prototype` 的属性：
 
-*   `get .buffer(): ArrayBuffer`
+* `get .buffer(): ArrayBuffer`
 
     返回此 DataView 的 ArrayBuffer。
 
-*   `get .byteLength(): number`
+* `get .byteLength(): number`
 
     返回此 DataView 可以访问的字节数。
 
-*   `get .byteOffset(): number`
+* `get .byteOffset(): number`
 
     返回此 DataView 从缓冲区中的哪个偏移量开始访问字节。
 
-*   `.get«ElementType»(byteOffset: number, littleEndian=false): bigint` (`BigInt64`, `BigUint64`)
-
-*   `.get«ElementType»(byteOffset: number, littleEndian=false): number` (所有其他元素类型)
+* `.get«ElementType»(byteOffset: number, littleEndian=false): bigint` (`BigInt64`, `BigUint64`)
+* `.get«ElementType»(byteOffset: number, littleEndian=false): number` (所有其他元素类型)
 
     从此 DataView 的缓冲区中读取值。
 
-*   `.set«ElementType»(byteOffset: number, value: bigint, littleEndian=false): void` (`BigInt64`, `BigUint64`)
-
-*   `.set«ElementType»(byteOffset: number, value: number, littleEndian=false): void` (所有其他元素类型)
+* `.set«ElementType»(byteOffset: number, value: bigint, littleEndian=false): void` (`BigInt64`, `BigUint64`)
+* `.set«ElementType»(byteOffset: number, value: number, littleEndian=false): void` (所有其他元素类型)
 
     将 `value` 写入此 DataView 的缓冲区。
 
@@ -15486,119 +14525,93 @@ new ArrayBuffer(length: number)
 
 * * *
 
-*   35.1 使用 Maps
-
+* 35.1 使用 Maps
     * 35.1.1 创建 Maps
-
     * 35.1.2 拷贝 Maps
-
     * 35.1.3 处理单个条目
-
     * 35.1.4 确定 Map 的大小并清空
-
     * 35.1.5 获取 Map 的键和值
-
     * 35.1.6 获取 Map 的条目
-
     * 35.1.7 按插入顺序列出：条目、键、值
-
     * 35.1.8 在 Maps 和对象之间转换
-
-*   35.2 示例：计数字符
-
-*   35.3 关于 Maps 键的更多细节（高级）
-
-    * 35.3.1 哪些键被认为是等等的？
-
-*   35.4 缺失的 Map 操作
-
+* 35.2 示例：计数字符
+* 35.3 关于 Maps 键的更多细节（高级）
+    * 35.3.1 哪些键被认为是相等的？
+* 35.4 缺失的 Map 操作
     * 35.4.1 映射和过滤 Maps
-
     * 35.4.2 合并 Maps
-
-*   35.5 快速参考：`Map<K,V>``
-
+* 35.5 快速参考：`Map<K,V>`
     * 35.5.1 构造函数
-
     * 35.5.2 `Map<K,V>.prototype`: 处理单个条目
-
     * 35.5.3 `Map<K,V>.prototype`: 处理所有条目
-
     * 35.5.4 `Map<K,V>.prototype`: 迭代和循环
-
     * 35.5.5 本节的来源
+* 35.6 FAQ：Maps
+    * 35.6.1 我什么时候应该使用 Map，我是否应该使用对象？
 
-*   35.6 FAQ：Maps
+在 ES6 之前，JavaScript 还没有用于字典的数据结构。ES6 引入了 `Map`，它是基于值的字典。单个键值映射被称为一个条目（entry）。
 
-    * [35.6.1 我什么时候应该使用 Map，我是否应该使用对象？]
+## 35.1 使用 Maps
 
-    在 ES6 之前，JavaScript 还没有用于字典的数据结构。ES6 引入了 `Map`，它是基于值的字典。单个键值映射被称为一个条目（entry）。
+`Map` 实例将键映射到值。
 
-    ## 35.1 使用 Maps
+### 35.1.1 创建 Maps
 
-    `Map` 实例将键映射到值。
+创建 Maps 有三种常见方法：
 
-    ### 35.1.1 创建 Maps
+首先，你可以使用构造函数创建一个空的 Map：
 
-    创建 Maps 有三种常见方法：
+```javascript
+const emptyMap = new Map();
+assert.equal(emptyMap.size, 0);
+```
 
-    首先，你可以使用构造函数创建一个空的 Map：
+其次，你可以向构造函数传递一个键值“对”的可迭代器（例如，数组）：
 
-    ```
-    const emptyMap = new Map();
-    assert.equal(emptyMap.size, 0);
-    ```
+```javascript
+const map = new Map([
+  [1, 'one'],
+  [2, 'two'],
+  [3, 'three']
+]);
+```
 
-    其次，你可以向构造函数传递一个键值“对”的可迭代器（例如，数组）：
+第三，`.set()` 方法向 Map 添加条目，并且可以链式调用：
 
-    ```
-    const map = new Map([
-      [1, 'one'],
-      [2, 'two'],
-      [3, 'three']
-    ]);
-    ```
+```javascript
+const map = new Map()
+  .set(1, 'one')
+  .set(2, 'two')
+  .set(3, 'three');
+```
 
-    第三，`.set()` 方法向 Map 添加条目，并且可以链式调用：
+### 35.1.2 拷贝 Maps
 
-    ```
-    const map = new Map()
-      .set(1, 'one')
-      .set(2, 'two')
-      .set(3, 'three');
-    ```
+正如我们之后看到的，Maps 也是键值对的可迭代器。因此，你可以使用构造函数创建一个 Map 的拷贝。该拷贝是浅的：键和值是相同的；它们没有被复制。
 
-    ### 35.1.2 拷贝 Maps
+```javascript
+const original = new Map()
+  .set(false, 'no')
+  .set(true, 'yes');
+const copy = new Map(original);
+assert.deepEqual(original, copy);
+```
 
-    正如我们之后看到的，Maps 也是键值对的可迭代器。因此，你可以使用构造函数创建一个 Map 的拷贝。该拷贝是浅的：键和值是相同的；它们没有被复制。
+### 35.1.3 处理单个条目
 
-    ```
-    const original = new Map()
-      .set(false, 'no')
-      .set(true, 'yes');
-    const copy = new Map(original);
-    assert.deepEqual(original, copy);
-    ```
+`.set()` 和 `.get()` 用于写入和读取值（给定键）。
 
-    ### 35.1.3 处理单个条目
+```javascript
+const map = new Map();
+map.set('foo', 123);
+assert.equal(map.get('foo'), 123);
+// 未知键：
+assert.equal(map.get('bar'), undefined);
+// 如果条目缺失，使用默认值 ''：
+assert.equal(map.get('bar') ?? '', '');
+```
 
-    `.set()` 和 `.get()` 用于写入和读取值（给定键）。
-
-    ```
-    const map = new Map();
-    map.set('foo', 123);
-    assert.equal(map.get('foo'), 123);
-    // 未知键：
-    assert.equal(map.get('bar'), undefined);
-    // 如果条目缺失，使用默认值 ''：
-    assert.equal(map.get('bar') ?? '', '');
-    ```
-
-    `.has()` 检查 Map 是否具有给定键的条目。`.delete()` 删除条目。
-
-
-
-
+`.has()` 检查 Map 是否具有给定键的条目。`.delete()` 删除条目。
 
 ```javascript
 const map = new Map([['foo', 123]]);
@@ -15646,11 +14659,11 @@ assert.deepEqual(
   [false, true]);
 ```
 
-`.values()` 的工作方式与 `.keys()` ，但针对的是值而不是键。
+`.values()` 的工作方式与 `.keys()` 相同，但针对的是值而不是键。
 
 ### 35.1.6 获取 Map 的条目
 
-`.entries()` 返回包含 `Map` 条目的的可迭代器：
+`.entries()` 返回包含 `Map` 条目的可迭代器：
 
 ```javascript
 const map = new Map()
@@ -15747,7 +14760,7 @@ function countChars(chars) {
 const result = countChars('AaBbccc');
 assert.deepEqual(
   [...result], 
-  ['a', 2], ['b', 2], ['c', 3]);
+  [['a', 2], ['b', 2], ['c', 3]]);
 ```
 
 ## 35.3 关于键的一些细节
@@ -15764,7 +14777,7 @@ map.get(KEY1); // 'hello'
 map.get(KEY2); // 'world'
 ```
 
-### 35.3.1 哪些键是等的？
+### 35.3.1 哪些键是相等的？
 
 大多数 Map 操作通过 [SameValueZero 算法](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Equality_comparison#samevalue) 检查是否相等，该算法认为 `NaN` 与自身相等：
 
@@ -15776,7 +14789,7 @@ map.get(NaN); // 1
 
 ### 35.3.2 对象相等
 
-只有当两个对象指向同一个对象引用时，它们才是等的：
+只有当两个对象指向同一个对象引用时，它们才是相等的：
 
 ```javascript
 const map = new Map();
@@ -15788,9 +14801,9 @@ map.get({}); // undefined
 
 Map 没有 `.map()` 或 `.filter()` 方法，这就是为什么我们必须：
 
-1.  将 Map 转换为数组。
-2.  对数组进行映射或过滤。
-3.  将结果转换回 Map。
+1. 将 Map 转换为数组。
+2. 对数组进行映射或过滤。
+3. 将结果转换回 Map。
 
 让我们使用以下示例：
 
@@ -15806,9 +14819,6 @@ assert.deepEqual(mappedMap.get(1), '_a');
 const filteredMap = new Map([...map].filter(([k, v]) => k < 3));
 assert.deepEqual(filteredMap.size, 2);
 ```
-
-
-
 
 如果你没有提供参数 `entries`，则会创建一个空的 `Map`。如果你提供了一个包含 `[key, value]` 对的可迭代对象，则这些对将作为条目添加到 `Map` 中。例如：
 
@@ -15842,7 +14852,7 @@ map.set(1, 'ONE!')
    .set(3, 'THREE!');
 assert.deepEqual(
   [...map.entries()],
-  [[1, 'ONE!'], [2, 'two'], [3, 'THREE!]]
+  [[1, 'ONE!'], [2, 'two'], [3, 'THREE!']]
 );
 ```
 
@@ -15852,8 +14862,8 @@ assert.deepEqual(
 
 ```javascript
 const map = new Map([[1, 'one'], [2, 'two']]);
-assert.equal(map.has(1), true); // key 
-assert.equal(map.has(5), false); // key 不
+assert.equal(map.has(1), true); // key 存在
+assert.equal(map.has(5), false); // key 不存在
 ```
 
 * `.delete(key: K): boolean`
@@ -15949,10 +14959,6 @@ const map = new Map([[1, 'one'], [2, 'two']]);
 
 返回一个用于遍历 map 条目的迭代器。
 
-
-
-
-
 接下来的两个章节将详细介绍其含义。
 
 ## 36.1 `WeakMap` 是黑盒
@@ -15986,7 +14992,7 @@ TypeError: Invalid value used as weak map key
 
 这是 `WeakMaps` 的主要用例：你可以使用它们将值外部附加到对象上——例如：
 
-```
+```javascript
 const wm = new WeakMap();
 {
   const obj = {};
@@ -15997,7 +15003,7 @@ const wm = new WeakMap();
 
 在行 A 中，我们将一个值附加到 `obj`。在行 B 中，即使 `wm` 仍然存在，`obj` 也可以被垃圾回收。这种为对象附加值的技巧等同于将对象的属性存储在外部。如果 `wm` 是一个属性，之前的代码如下：
 
-```
+```javascript
 {
   const obj = {};
   obj.wm = 'attachedValue';
@@ -16010,7 +15016,7 @@ const wm = new WeakMap();
 
 通过 `WeakMaps`，你可以将之前计算过的结果与对象关联，而无需担心内存管理。以下函数 `countOwnKeys()` 就是示例：它在 `WeakMap` `cache` 中缓存了之前的结果。
 
-```
+```javascript
 const cache = new WeakMap();
 function countOwnKeys(obj) {
   if (cache.has(obj)) {
@@ -16037,7 +15043,7 @@ function countOwnKeys(obj) {
 
 在以下代码中，`WeakMaps` `_counter` 和 `_action` 用于存储 `Countdown` 实例虚拟属性的值：
 
-```
+```javascript
 const _counter = new WeakMap();
 const _action = new WeakMap();
 
@@ -16080,7 +15086,7 @@ cd.dec(); assert.equal(invoked, true);
 
 ## 36.4 `WeakMap` API
 
-`WeakMap` 的构造函数和四个方法的工作方式与它们的 `Map` 等等方法相同：
+`WeakMap` 的构造函数和四个方法的工作方式与它们的 `Map` 对应方法相同：
 
 * `new WeakMap()`
 * `set(key, value)`
@@ -16090,9 +15096,41 @@ cd.dec(); assert.equal(invoked, true);
 
 (注意：`WeakMap` 没有 `clear()` 方法。)
 
+# 37 Sets (`Set`)
 
+* * *
 
+* 37.1 使用 Sets
+    * 37.1.1 创建 Sets
+    * 37.1.2 添加、删除、检查成员身份
+    * 37.1.3 确定 Set 的大小并清空
+    * 37.1.4 遍历 Sets
+* 37.2 使用 Sets 的示例
+    * 37.2.1 从 Array 中移除重复项
+    * 37.2.2 创建 Unicode 字符（代码点）的集合
+* 37.3 哪些 Set 元素被认为是相等的？
+* 37.4 缺失的 Set 操作
+    * 37.4.1 并集 (`a` ∪ `b`)
+    * 37.4.2 交集 (`a` ∩ `b`)
+    * 37.4.3 差集 (`a` \ `b`)
+    * 37.4.4 对 Sets 进行映射
+    * 37.4.5 过滤 Sets
+* 37.5 参考：`Set`
+    * 37.5.1 构造函数
+    * 37.5.2 `Set<T>.prototype`
+    * 37.5.3 迭代和循环
+    * 37.5.4 与 `Map` 的对称性
+* 37.6 FAQ：Sets
+    * 37.6.1 为什么 Sets 有 `.size` 属性而 Arrays 有 `.length`？
 
+## 37.1 使用 Sets
+
+首先，你可以使用构造函数创建一个空的 `Set`：
+
+```javascript
+const emptySet = new Set();
+assert.equal(emptySet.size, 0);
+```
 
 其次，你可以将一个迭代器（例如，`Array`）传递给构造函数。迭代出的值将成为新 `Set` 的元素：
 
@@ -16133,7 +15171,7 @@ assert.equal(set.has('red'), false);
 
 ### 37.1.3 确定 Set 的大小并清空
 
-###`.size` 包含 `Set` 中的元素数量。
+`.size` 包含 `Set` 中的元素数量。
 
 ```javascript
 const set = new Set()
@@ -16195,7 +15233,7 @@ assert.deepEqual(
   new Set(['a', 'b', 'c']));
 ```
 
-## 37.3 哪些 Set 元素被认为是等等的？
+## 37.3 哪些 Set 元素被认为是相等的？
 
 与 `Map` 键一样，`Set` 元素的比较方式类似于 `===`，不同之处是 `NaN` 等于它自己。
 
@@ -16225,7 +15263,7 @@ set.size
 
 Sets 缺少几个常用操作。此类操作通常可以通过以下方式实现：
 
-* 通过扩展到 `Array 字面量量` 将输入的 `Sets` 转换为 `Arrays`。
+* 通过扩展到 `Array` 字面量将输入的 `Sets` 转换为 `Arrays`。
 * 在 `Arrays` 上执行该操作。
 * 将结果转换为 `Set` 并返回。
 
@@ -16301,44 +15339,44 @@ const set = new Set(['red', 'green']);
 
 ### 37.5.2 `Set<T>.prototype`
 
-`.add(value: T)`: 将 `value` 添加到此 `Set`。该方法返回 `this`，可以链式调用。
+* `.add(value: T)`: 将 `value` 添加到此 `Set`。该方法返回 `this`，可以链式调用。
 
 ```javascript
 const set = new Set();
 set.add('red').add('green');
 ```
 
-`.delete(value: T)`: 从此 `Set` 中移除 `value`。如果删除了内容则返回 `true`，否则返回 `false`。
+* `.delete(value: T)`: 从此 `Set` 中移除 `value`。如果删除了内容则返回 `true`，否则返回 `false`。
 
 ```javascript
 const set = new Set(['red', 'green']);
 set.delete('red'); // true
 ```
 
-`.has(value: T)`: 检查 `value` 是否在此 `Set` 中。
+* `.has(value: T)`: 检查 `value` 是否在此 `Set` 中。
 
 ```javascript
 const set = new Set(['red', 'green']);
 set.has('red'); // true
 ```
 
-`.size`: 返回此 `Set` 中元素的数量。
+* `.size`: 返回此 `Set` 中元素的数量。
 
 ```javascript
 const set = new Set(['red', 'green', 'blue']);
 set.size // 3
 ```
 
-`.clear()`: 移除此 `Set` 中的所有元素。
+* `.clear()`: 移除此 `Set` 中的所有元素。
 
 ```javascript
 const set = new Set(['red', 'green']);
 set.clear();
 ```
 
-### 37.5.4 迭代和循环
+### 37.5.3 迭代和循环
 
-`.values(): Iterable<T>`: 返回此 `Set` 中所有元素的迭代器。
+* `.values(): Iterable<T>`: 返回此 `Set` 中所有元素的迭代器。
 
 ```javascript
 const set = new Set(['red', 'green']);
@@ -16347,7 +15385,7 @@ for (const x of set.values()) {
 }
 ```
 
-`[Symbol.iterator](): Iterable<T>`: `Sets` 的默认迭代方式。与 `.values()` 相同。
+* `[Symbol.iterator](): Iterable<T>`: `Sets` 的默认迭代方式。与 `.values()` 相同。
 
 ```javascript
 const set = new Set(['red', 'green']);
@@ -16356,17 +15394,13 @@ for (const x of set) {
 }
 ```
 
-
-
-
-
-*   `.forEach(callback: (value: T, key: T, theSet: Set<T>) => void, thisArg?: any): void` ([ES6])
+* `.forEach(callback: (value: T, key: T, theSet: Set<T>) => void, thisArg?: any): void` ([ES6])
 
     将此 Set 的每个元素传递给 `callback()`。`value` 和 `key` 都包含当前元素。引入这种冗余是为了让该 `callback` 的类型签名与 `Map.prototype.forEach()` 的 `callback` 相同。
 
     你可以通过 `thisArg` 指定 `callback` 的 `this` 值。如果省略它，`this` 将为 `undefined`。
 
-```
+```javascript
 const set = new Set(['red', 'green']);
 set.forEach(x => console.log(x));
 // Output:
@@ -16374,16 +15408,16 @@ set.forEach(x => console.log(x));
 // 'green'
 ```
 
-### 37.5.5 与 `Map` 的对称性
+### 37.5.4 与 `Map` 的对称性
 
 以下两个方法的存在是为了让 Sets 和 Maps 具有相似的接口。每个 Set 元素的处理方式就像它是一个 Map 条目，其键和值都是该元素本身。
 
-*   `Set.prototype.entries(): Iterable<[T,T]>` ([ES6])
-*   `Set.prototype.keys(): Iterable<T>` ([ES6])
+* `Set.prototype.entries(): Iterable<[T,T]>` ([ES6])
+* `Set.prototype.keys(): Iterable<T>` ([ES6])
 
 `.entries()` 允许你将 Set 转换为 Map：
 
-```
+```javascript
 const set = new Set(['a', 'b', 'c']);
 const map = new Map(set.entries());
 assert.deepEqual(
@@ -16405,15 +15439,15 @@ assert.deepEqual(
 
 * * *
 
-*   38.1 [示例：标记对象可以安全地在方法中使用]
-*   38.2 [WeakSet API]
+* 38.1 示例：标记对象可以安全地在方法中使用
+* 38.2 WeakSet API
 
 * * *
 
 WeakSets 与 Sets 类似，区别在于：
 
-*   它们可以持有对象，而不会阻止这些对象被垃圾回收。
-*   它们是黑盒：只有当我们同时拥有 WeakSet 和一个值时，才能从 WeakSet 中获取任何数据。支持的方法只有 `.add()`、`.delete()` 和 `.has()`。请参考[作为黑盒的 WeakMaps]章节了解 WeakSets 不允许迭代、循环和清空的原因。
+* 它们可以持有对象，而不会阻止这些对象被垃圾回收。
+* 它们是黑盒：只有当我们同时拥有 WeakSet 和一个值时，才能从 WeakSet 中获取任何数据。支持的方法只有 `.add()`、`.delete()` 和 `.has()`。请参考[作为黑盒的 WeakMaps]章节了解 WeakSets 不允许迭代、循环和清空的原因。
 
 由于无法遍历它们的元素，WeakSets 的用例并不多。但它们确实允许我们标记对象。
 
@@ -16452,33 +15486,33 @@ assert.throws(
 
 构造函数和三个方法的工作方式与[它们对应的 Set 等效方法] 相同：
 
-*   `new WeakSet<T>(values?: Iterable<T>)` ([ES6])
-*   `.add(value: T): this` ([ES6])
-*   `.delete(value: T): boolean` ([ES6])
-*   `.has(value: T): boolean` ([ES6])
+* `new WeakSet<T>(values?: Iterable<T>)` ([ES6])
+* `.add(value: T): this` ([ES6])
+* `.delete(value: T): boolean` ([ES6])
+* `.has(value: T): boolean` ([ES6])
 
 # 39 解构
 
 * * *
 
-*   39.1 [解构初初体验]
-*   39.2 [构造 vs 提取]
-*   39.3 [我们哪里进行解构?]
-*   39.4 [对象解构]
-    *   39.4.1 [属性值简写]
-    *   39.4.2 [剩余属性]
-    *   39.4.3 [语法陷阱：通过对象解构赋值]
-*   39.5 [数组解构]
-    *   39.5.1 [数组解构适用于任何迭代器]
-    *   39.5.2 [剩余元素]
-*   39.6 [解构示例]
-    *   39.6.1 [数组解构：交换变量值]
-    *   39.6.2 [数组解构：返回数组的操作]
-    *   39.6.3 [对象解构：多返回值]
-*   39.7 [如果模式部分没有匹配到任何内容会发生什么?]
-    *   39.7.1 [对象解构与缺失属性]
+* 39.1 解构初体验
+* 39.2 构造 vs 提取
+* 39.3 我们在哪里进行解构?
+* 39.4 对象解构
+    * 39.4.1 属性值简写
+    * 39.4.2 剩余属性
+    * 39.4.3 语法陷阱：通过对象解构赋值
+* 39.5 数组解构
+    * 39.5.1 数组解构适用于任何迭代器
+    * 39.5.2 剩余元素
+* 39.6 解构示例
+    * 39.6.1 数组解构：交换变量值
+    * 39.6.2 数组解构：返回数组的操作
+    * 39.6.3 对象解构：多返回值
+* 39.7 如果模式部分没有匹配到任何内容会发生什么?
+    * 39.7.1 对象解构与缺失属性
 
-### 39.1 解构初初体验
+### 39.1 解构初体验
 
 使用普通赋值，你一次只提取一条数据——例如：
 
@@ -16503,8 +15537,8 @@ assert.equal(y, 'b');
 
 为了理解什么是解构，请考虑 JavaScript 有两种相反的操作：
 
-*   你可以构造复合数据，例如通过设置属性和对象字面量。
-*   你可以从复合数据中提取数据，例如通过获取属性。
+* 你可以构造复合数据，例如通过设置属性和对象字面量。
+* 你可以从复合数据中提取数据，例如通过获取属性。
 
 构造数据的方式如下：
 
@@ -16519,40 +15553,8 @@ const jane2 = {
   first: 'Jane',
   last: 'Doe',
 };
+assert.deepEqual(jane1, jane2);
 ```
-
-``assert.deepEqual(jane1, jane2);`
-
-### 39.3 我们哪里进行解构?
-
-## 39.4 对象解构
-
-#### 39.4.1 属性值简写
-
-#### 39.4.2 剩余属性
-
-#### 39.4.3 语法陷阱：通过对象解构赋值
-
-## 39.5 数组解构
-
-#### 39.5.1 数组解构适用于任何迭代器
-
-#### 39.5.2 剩余元素
-
-### 39.6 解构示例
-
-#### 39.6.1 数组解构：交换变量值
-
-#### 39.6.2 数组解构：返回数组的操作
-
-#### 39.6.3 对象解构：多返回值
-
-### 39.7 如果模式部分没有匹配到任何内容会发生什么?
-
-#### 39.7.1 对象解构与缺失属性
-
-
-
 
 提取数据如下：
 
@@ -16588,7 +15590,7 @@ assert.equal(l2, 'Doe');
 
 解构模式可以用于“数据汇聚点位置”，例如：
 
-*   变量声明：
+* 变量声明：
 
     ```javascript
     const [a] = ['x'];
@@ -16598,7 +15600,7 @@ assert.equal(l2, 'Doe');
     assert.equal(b, 'y');
     ```
 
-*   赋值：
+* 赋值：
 
     ```javascript
     let b;
@@ -16606,12 +15608,14 @@ assert.equal(l2, 'Doe');
     assert.equal(b, 'z');
     ```
 
-*   参数定义：
+* 参数定义：
 
     ```javascript
     const f = ([x]) => x;
     assert.equal(f(['a']), 'a');
     ```
+
+
 
 注意，变量声明包括 `for-of` 循环中的 `const` 和 `let` 声明：
 
@@ -16771,9 +15775,6 @@ assert.equal(x, 'b');
 assert.equal(y, 'a');
 ```
 
-
-
-
 如果函数返回多个值——要么被封装为 `Array`，要么被封装为一个对象——那么解构就会非常有用。
 
 考虑一个在 `Array` 中查找元素的 `findElement()` 函数：
@@ -16917,8 +15918,8 @@ assert.equal(y, 2);
 
 ```javascript
 const {first='', last=''} = {};
-assert.equal(f, '');
-assert.equal(l, '');
+assert.equal(first, '');
+assert.equal(last, '');
 ```
 
 在被解构的对象中，属性键 `first` 和属性键 `last` 都不存在。因此，使用了默认值。
@@ -16958,13 +15959,9 @@ const [, {first}] = arr;
 assert.equal(first, 'Lars');
 ```
 
-在行 A 的 `Array` 模式内部，索引 1 处有一个嵌套的对象模式。嵌套模式可能会难以理解，因此最好适节使用。
+在行 A 的 `Array` 模式内部，索引 1 处有一个嵌套的对象模式。嵌套模式可能会难以理解，因此最好适度使用。
 
 # 40 同步生成器（高级）
-
-
-
-
 
 * 40.4.3 [外部迭代 (拉取)]
 * 40.5 [生成器的高级特性]
@@ -17031,7 +16028,7 @@ for (const x of genFunc1()) {
 * 调用该函数会返回一个迭代器 `iter`（它也是可迭代的）。
 * 重复迭代 `iter` 会反复调用 `iter.next()`。每次调用，我们都会跳转到生成器函数的体内，直到遇到一个返回值的 `yield`。
 
-因此，`yield` 的作用不仅仅仅仅是向迭代器添加值——它还会暂停并退出生成器函数：
+因此，`yield` 的作用不仅仅是向迭代器添加值——它还会暂停并退出生成器函数：
 
 * 类似于 `return`，`yield` 会退出函数体并返回一个值（通过 `.next()`）。
 * 与 `return` 不同，如果重复调用（`.next()`），执行将直接从 `yield` 之后的地方继续。
@@ -17055,7 +16052,7 @@ const iter = genFunc2();
 assert.equal(location, 0);
 ```
 
-`iter` 迭代协议 (#ch033.xhtml_ch_sync-iteration)。因此，我们通过 `iter.next()` 控制 `genFunc2()` 的执行。调用该方法会恢复暂停的 `genFunc2()` 并执行它，直到遇到 `yield`。然后执行暂停，`.next()` 返回 `yield` 的操作数：
+`iter` 遵循迭代协议。因此，我们通过 `iter.next()` 控制 `genFunc2()` 的执行。调用该方法会恢复暂停的 `genFunc2()` 并执行它，直到遇到 `yield`。然后执行暂停，`.next()` 返回 `yield` 的操作数：
 
 ```javascript
 assert.deepEqual(
@@ -17122,7 +16119,7 @@ assert.deepEqual(
 
 在这里使用生成器的关键优势是一切都是增量运行的：通过 `numberedLines.next()`，我们只向 `numberLines()` 请求一个带编号的行。反过来，它向 `genLines()` 请求一个不带编号的行。
 
-这种增量机制会继续起，例如，如果 `genLines()` 从一个大文件中读取行：如果我们向 `numberLines()` 请求一个带编号的行，只要 `genLines()` 读取了第一行，我们就能得到。
+这种增量机制会继续起作用，例如，如果 `genLines()` 从一个大文件中读取行：如果我们向 `numberLines()` 请求一个带编号的行，只要 `genLines()` 读取了第一行，我们就能得到。
 
 如果没有生成器，`genLines()` 将首先读取所有行并返回它们。然后 `numberLines()` 会为所有行编号并返回它们。因此，我们必须等待更长时间才能得到第一行。
 
@@ -17143,11 +16140,7 @@ const iterable = mapIter(['a', 'b'], x => x + x);
 assert.deepEqual([...iterable], ['aa', 'bb']);
 ```
 
-
-
-
-
-`yield` 只能在生成器内部直接工作——到目前为止，我们还没有看到将 `yield` 委托给另一个函数或方法的方法
+`yield` 只能在生成器内部直接工作——到目前为止，我们还没有看到将 `yield` 委托给另一个函数或方法的方法。
 
 让我们先来看哪些是*不生效*的：在下面的示例中，我们希望 `foo()` 调用 `bar()`，以便后者为前者产出两个值。遗憾的是，简单的方法失败了：
 
@@ -17200,7 +16193,7 @@ assert.deepEqual(
   [...gen()], [1, 2]);
 ```
 
-## 40.2.2 示例：遍历树结构
+### 40.2.2 示例：遍历树结构
 
 `yield*` 允许我们在生成器中进行递归调用，这在遍历递归数据结构（如树）时非常有用。以以下二叉树数据结构为例：
 
@@ -17226,7 +16219,7 @@ class BinaryTree {
 }
 ```
 
-方法 `[Symbol.iterator]()` 添加了迭代迭代的支持，这意味着我们可以使用 `for-of` 循环来遍历 `BinaryTree` 的实例：
+方法 `[Symbol.iterator]()` 添加了迭代支持，这意味着我们可以使用 `for-of` 循环来遍历 `BinaryTree` 的实例：
 
 ```javascript
 const tree = new BinaryTree('a',
@@ -17254,27 +16247,27 @@ for (const x of tree) {
 
 在准备下一节之前，我们需要学习两种遍历对象“内部”值的不同风格：
 
-*   **外部迭代（拉取 pull）**：你的代码通过迭代协议向对象请求值。例如，`for-of` 循环基于 JavaScript 的迭代协议：
+* **外部迭代（拉取 pull）**：你的代码通过迭代协议向对象请求值。例如，`for-of` 循环基于 JavaScript 的迭代协议：
 
-    ```javascript
-    for (const x of ['a', 'b']) {
-      console.log(x);
-    }
-    // 输出：
-    // 'a'
-    // 'b'
-    ```
+```javascript
+for (const x of ['a', 'b']) {
+  console.log(x);
+}
+// 输出：
+// 'a'
+// 'b'
+```
 
-*   **内部迭代（推送 push）**：你将回调函数传递给对象的方法，该方法将值传递给回调函数。例如，数组有 `.forEach()` 方法：
+* **内部迭代（推送 push）**：你将回调函数传递给对象的方法，该方法将值传递给回调函数。例如，数组有 `.forEach()` 方法：
 
-    ```javascript
-    ['a', 'b'].forEach((x) => {
-      console.log(x);
-    });
-    // 输出：
-    // 'a'
-    // 'b'
-    ```
+```javascript
+['a', 'b'].forEach((x) => {
+  console.log(x);
+});
+// 输出：
+// 'a'
+// 'b'
+```
 
 下一节包含了这两种风格的示例。
 
@@ -17284,7 +16277,7 @@ for (const x of tree) {
 
 ### 40.4.1 需要复用的遍历
 
-作为一个示例，考虑以下函数，它遍历文件树并记录它们的路径（它使用 https://nodejs.org/en/docs/ 的 Node.js API 来实现这一点）：
+作为一个示例，考虑以下函数，它遍历文件树并记录它们的路径（它使用 Node.js API 来实现这一点）：
 
 ```javascript
 function logPaths(dir) {
@@ -17363,13 +16356,10 @@ function* iterPaths(dir) {
 const paths = [...iterPaths('mydir')];
 ```
 
-
-
-
 - 41.2 调用堆栈
 - 41.3 事件循环
 - 41.4 如何避免阻塞 JavaScript 进程
-    - 41.4.1 浏览用户界面可能会阻塞
+    - 41.4.1 浏览器用户界面可能会阻塞
     - 41.4.2 我们如何避免阻塞浏览器？
     - 41.4.3 适时休息
     - 41.4.4 执行到完成语义
@@ -17383,7 +16373,7 @@ const paths = [...iterPaths('mydir')];
 
 ## 41.1 JavaScript 异步编程路线图
 
-本节节为 JavaScript 异步编程的内容提供了路线图。
+本节为 JavaScript 异步编程的内容提供了路线图。
 
 ![](img/file0.svg) **不要担心细节！**
 
@@ -17393,7 +16383,7 @@ const paths = [...iterPaths('mydir')];
 
 普通函数是`同步的`：调用者会等待被调用者完成计算。行 A 中的 `divideSync()` 是一个同步函数调用：
 
-```
+```javascript
 function main() {
   try {
     const result = divideSync(12, 3); // (A)
@@ -17408,7 +16398,7 @@ function main() {
 
 默认情况下，JavaScript 的 `tasks` 是在单进程中顺序执行的函数。它们看起来如下：
 
-```
+```javascript
 while (true) {
   const task = taskQueue.dequeue();
   task(); // 运行任务
@@ -17423,7 +16413,7 @@ while (true) {
 
 如果 `divide()` 需要服务器来计算结果呢？那么结果应该以不同的方式传递：调用者不应该（同步地）等待结果准备就绪；当结果准备好，应该（异步地）通知它。异步传递结果的一种方法是给 `divide()` 传递回调函数，它使用该函数来通知调用者。
 
-```
+```javascript
 function main() {
   divideCallback(12, 3,
     (err, result) => {
@@ -17445,19 +16435,13 @@ divideCallback(x, y, callback)
 会发生以下步骤：
 
 * `divideCallback()` 向服务器发送请求。
-
 * 然后，当前任务 `main()` 完成，可以执行其他任务。
-
 * 当服务器的响应到达时，它可能是：
-
     * 一个错误 `err`：则将下一个任务添加到队列中。
-
       ```
       taskQueue.enqueue(() => callback(err));
       ```
-
     * 一个结果 `r`：则将下一个任务添加到队列中。
-
       ```
       taskQueue.enqueue(() => callback(null, r));
       ```
@@ -17467,12 +16451,11 @@ divideCallback(x, y, callback)
 Promise 包含两个方面：
 
 * 一种让处理回调变得更简单的标准模式。
-
 * 构建 `async functions`（下一节的主题）的机制。
 
 调用一个基于 Promise 的函数如下：
 
-```
+```javascript
 function main() {
   dividePromise(12, 3)
     .then(result => assert.equal(result, 4))
@@ -17510,7 +16493,7 @@ async function main() {
 
 这是一个发生了多次调用的示例：
 
-```
+```javascript
 function h(z) {
   const error = new Error();
   console.log(error.stack);
@@ -17543,10 +16526,6 @@ f(3);
 在第 3 行记录 `error` 会产生如下输出：
 
 ```
-DEBUG
-```
-
-```
 Error: 
     at h (file://demos/async-js/stack_trace.mjs:2:17)
     at g (file://demos/async-js/stack_trace.mjs:6:3)
@@ -17555,9 +16534,6 @@ Error:
 ```
 
 这就是 `Error` 对象创建位置的所谓*堆栈轨迹*（stack trace）。请注意它记录的是调用发生的位置，而不是返回位置。在第 2 行创建异常是另一个调用。这就是为什么堆栈轨迹包含了 `h()` 内部的位置。
-
-
-
 
 在第 3 行之后，每个函数都会终止，并且每次都会从调用栈中移除顶部项。当函数 `f` 执行完成后，我们回到了顶层作用域，栈为空。当代码片段结束时，这相当于一个隐式的 `return`。如果我们认为代码片段是一个正在执行的任务，那么带有空调用栈的返回意味着任务的结束。
 
@@ -17571,13 +16547,12 @@ Error:
 
 有两个部分访问任务队列：
 
-*   `Task sources` 向队列添加任务。其中某些源与 JavaScript 进程并发运行。例如，一个任务源负责用户界面事件：如果用户点击了某个地方并且注册了点击监听器，那么该监听器的调用将被添加到任务队列中。
-
-*   `event loop` 在 JavaScript 进程内部持续运行。在每次循环迭代中，它从队列中取出一个任务（如果队列为空，它会等待直到不为空）并执行它。当调用栈为空并存在 `return` 时，该任务完成。控制权返回给事件循环，它随后从队列中检索下一个任务并执行它。以此此类推。
+* `Task sources` 向队列添加任务。其中某些源与 JavaScript 进程并发运行。例如，一个任务源负责用户界面事件：如果用户点击了某个地方并且注册了点击监听器，那么该监听器的调用将被添加到任务队列中。
+* `event loop` 在 JavaScript 进程内部持续运行。在每次循环迭代中，它从队列中取出一个任务（如果队列为空，它会等待直到不为空）并执行它。当调用栈为空并存在 `return` 时，该任务完成。控制权返回给事件循环，它随后从队列中检索下一个任务并执行它。以此类推。
 
 以下 JavaScript 代码是事件循环的近似表示：
 
-```
+```javascript
 while (true) {
   const task = taskQueue.dequeue();
   task(); // run task
@@ -17590,12 +16565,12 @@ while (true) {
 
 浏览器的许多用户界面机制也运行在 JavaScript 进程中（作为任务）。因此，长时间运行的 JavaScript 代码可能会阻塞用户界面。让我们来看一个演示这一点的网页。你有两种方式可以尝试该页面：
 
-*   你可以[在线运行它](http://rauschma.github.io/async-examples/blocking.html)。
-*   你可以在包含练习的仓库中打开以下文件：`demos/async-js/blocking.html`
+* 你可以[在线运行它](http://rauschma.github.io/async-examples/blocking.html)。
+* 你可以在包含练习的仓库中打开以下文件：`demos/async-js/blocking.html`
 
 以下 HTML 是该页面的用户界面：
 
-```
+```html
 <a id="block" href="">Block</a>
 <div id="statusMessage"></div>
 <button>Click me!</button>
@@ -17605,7 +16580,7 @@ while (true) {
 
 简化版的 JavaScript 代码看起来如下：
 
-```
+```javascript
 document.getElementById('block')
   .addEventListener('click', doBlock); // (A)
 
@@ -17629,30 +16604,30 @@ function displayStatus(status) {
 
 这些是代码的关键部分：
 
-*   A 行：我们告诉浏览器每当 ID 为 `block` 的 HTML 元素被点击时，调用 `doBlock()`。
-*   `doBlock()` 显示状态信息，然后调用 `sleep()` 来阻塞 JavaScript 进程 5000 毫秒（B 行）。
-*   `sleep()` 通过循环直到足够的时间通过来阻塞 JavaScript 进程。
-*   `displayStatus()` 在 ID 为 `statusMessage` 的 `<div>` 内部显示状态消息。
+* A 行：我们告诉浏览器每当 ID 为 `block` 的 HTML 元素被点击时，调用 `doBlock()`。
+* `doBlock()` 显示状态信息，然后调用 `sleep()` 来阻塞 JavaScript 进程 5000 毫秒（B 行）。
+* `sleep()` 通过循环直到足够的时间通过来阻塞 JavaScript 进程。
+* `displayStatus()` 在 ID 为 `statusMessage` 的 `<div>` 内部显示状态消息。
 
 ### 41.4.2 我们如何避免阻塞浏览器？
 
 有几种方法可以防止长时间运行的操作阻塞浏览器：
 
-*   操作可以异步 `asynchronously` 交付结果：某些操作（如下载）可以与 JavaScript 进程并发执行。触发此类操作的 JavaScript 代码注册一个回调函数，一旦操作完成，该回调将带结果被调用。调用通过任务队列处理。这种交付结果风格被称为`异步`，因为调用者不需要等待结果准备就绪。普通的函数调用同步地交付结果。
-*   在单独的进程中执行长时间计算：这可以通过所谓的 `Web Workers` 实现。Web Workers 是与主进程并发运行的重量级进程。它们每一个都有自己的运行时环境（全局变量等）。它们是完全隔离的，必须通过消息传递进行通信。更多信息请参阅 [MDN web docs](https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API)。
-*   在长时间计算期间进行休息。下一小节将解释如何做到。
+* 操作可以异步 `asynchronously` 交付结果：某些操作（如下载）可以与 JavaScript 进程并发执行。触发此类操作的 JavaScript 代码注册一个回调函数，一旦操作完成，该回调将带结果被调用。调用通过任务队列处理。这种交付结果风格被称为`异步`，因为调用者不需要等待结果准备就绪。普通的函数调用同步地交付结果。
+* 在单独的进程中执行长时间计算：这可以通过所谓的 `Web Workers` 实现。Web Workers 是与主进程并发运行的重量级进程。它们每一个都有自己的运行时环境（全局变量等）。它们是完全隔离的，必须通过消息传递进行通信。更多信息请参阅 [MDN web docs](https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API)。
+* 在长时间计算期间进行休息。下一小节将解释如何做到。
 
 ### 41.4.3 休息
 
 以下全局函数在延迟 `ms` 毫秒后执行其参数 `callback`（类型签名已简化——`setTimeout()` 具有更多功能）：
 
-```
+```javascript
 function setTimeout(callback: () => void, ms: number): any
 ```
 
 该函数返回一个 `handle`（ID），可以通过以下全局函数来 `clear` 定时（取消回调的执行）：
 
-```
+```javascript
 function clearTimeout(handle?: any): void
 ```
 
@@ -17672,7 +16647,7 @@ JavaScript 对任务提供了一种保证：
 
 以下示例演示了这一保证：
 
-```
+```javascript
 console.log('start');
 setTimeout(() => {
   console.log('callback');
@@ -17693,9 +16668,9 @@ console.log('end');
 
 为了避免在等待长时间运行的操作完成时阻塞主进程，JavaScript 通常异步地交付结果。以下是实现此目标的三种流行模式：
 
-*   事件 (Events)
-*   回调 (Callbacks)
-*   承诺 (Promises)
+* 事件 (Events)
+* 回调 (Callbacks)
+* 承诺 (Promises)
 
 前两种模式将在接下来的两个小节中解释。Promises 将在下一章 中解释。
 
@@ -17703,23 +16678,20 @@ console.log('end');
 
 作为模式的事件工作方式如下：
 
-*   它们被用于异步交付值。
-*   它们执行零次或多次。
-*   该模式中有三个角色：
-    *   `event`（对象）承载要交付的数据。
-    *   `event listener`（事件监听器）是一个通过参数接收事件的函数。
-    *   `event source`（事件源）发送事件并允许你注册事件监听器。
-
-
-
+* 它们被用于异步交付值。
+* 它们执行零次或多次。
+* 该模式中有三个角色：
+    * `event`（对象）承载要交付的数据。
+    * `event listener`（事件监听器）是一个通过参数接收事件的函数。
+    * `event source`（事件源）发送事件并允许你注册事件监听器。
 
 这种模式在 JavaScript 世界中存在多种变体。接下来我们将看三个例子。
 
-### 41.5.1.1 事件：IndexedDB
+#### 41.5.1.1 事件：IndexedDB
 
 IndexedDB 是内置在网页浏览器中的数据库。以下是使用它的示例：
 
-```
+```javascript
 const openRequest = indexedDB.open('MyDatabase', 1); // (A)
 
 openRequest.onsuccess = (event) => {
@@ -17734,15 +16706,15 @@ openRequest.onerror = (error) => {
 
 `indexedDB` 调用操作的方式与众寻常：
 
-*   每个操作都有一个关联的方法用于创建请求对象。例如，在 A 行中，操作是“open”，方法是 `.open()`，而请求对象是 `openRequest`。
-*   操作的参数是通过请求对象提供的，而不是通过方法的入参数提供的。例如，事件监听器（函数）存储在属性 `.onsuccess` 和 `.onerror` 中。
-*   操作的调用是通过该方法（在 A 行中）被添加到任务队列的。也就是说，我们在操作被添加到队列之后才对其进行配置。在这里，只有运行到完成（run-to-completion）语义让我们免于竞态条件的影响，并确保操作在当前代码段执行后运行。
+* 每个操作都有一个关联的方法用于创建请求对象。例如，在 A 行中，操作是“open”，方法是 `.open()`，而请求对象是 `openRequest`。
+* 操作的参数是通过请求对象提供的，而不是通过方法的入参数提供的。例如，事件监听器（函数）存储在属性 `.onsuccess` 和 `.onerror` 中。
+* 操作的调用是通过该方法（在 A 行中）被添加到任务队列的。也就是说，我们在操作被添加到队列之后才对其进行配置。在这里，只有运行到完成（run-to-completion）语义让我们免于竞态条件的影响，并确保操作在当前代码段执行后运行。
 
-### 41.5.1.2 事件：XMLHttpRequest
+#### 41.5.1.2 事件：XMLHttpRequest
 
 `XMLHttpRequest` API 允许我们在网页浏览器内部进行下载。这就是我们下载文件 `http://example.com/textfile.txt` 的方式：
 
-```
+```javascript
 const xhr = new XMLHttpRequest(); // (A)
 xhr.open('GET', 'http://example.com/textfile.txt'); // (B)
 xhr.onload = () => { // (C)
@@ -17764,15 +16736,15 @@ function processData(str) {
 
 使用这个 API，我们首先创建一个请求对象（A 行），然后对其进行配置，最后激活它（E 行）。配置包括：
 
-*   指定使用哪种 HTTP 请求方法（B 行）：`GET`、`POST`、`PUT` 等。
-*   注册一个监听器（C 行），如果可以下载内容，该监听器会被通知。在监听器内部，我们仍然需要判断下载的内容包含了我们请求的数据还是通知我们了错误。注意，部分结果数据是通过请求对象 `xhr` 传递。（我不喜欢这种输入和输出数据混合的方式。）
-*   注册一个监听器（D 行），如果发生网络错误，该监听器会被通知。
+* 指定使用哪种 HTTP 请求方法（B 行）：`GET`、`POST`、`PUT` 等。
+* 注册一个监听器（C 行），如果可以下载内容，该监听器会被通知。在监听器内部，我们仍然需要判断下载的内容包含了我们请求的数据还是通知我们了错误。注意，部分结果数据是通过请求对象 `xhr` 传递。（我不喜欢这种输入和输出数据混合的方式。）
+* 注册一个监听器（D 行），如果发生网络错误，该监听器会被通知。
 
-### 41.5.1.3 事件：DOM
+#### 41.5.1.3 事件：DOM
 
 我们已经从 [§41.4.1 “浏览器的用户界面可能会阻塞”]中见过 DOM 事件的操作。以下代码也处理了 `click` 事件：
 
-```
+```javascript
 const element = document.getElementById('my-link'); // (A)
 element.addEventListener('click', clickListener); // (B)
 
@@ -17803,33 +16775,52 @@ readFile('some-file.txt', {encoding: 'utf8'},
 
 有一个回调可以同时处理成功和失败。如果第一个参数不是 `null`，那么...
 
-
-
-
-
 # 42.3 错误处理：不要混用拒绝和异常
+
 # 42.4 基于 Promise 的函数同步开始，异步终结
+
 # 42.5 Promise 组合器函数：处理 Promise 数组
+
 ## 42.5.1 什么是 Promise 组合器函数？
+
 ## 42.5.2 `Promise.all()`
+
 ## 42.5.3 `Promise.race()`
+
 ## 42.5.4 `Promise.any()` [ES2021]
+
 ## 42.5.5 `Promise.allSettled()` [ES2020]
+
 ## 42.5.6 短路机制（高级）
+
 # 42.6 并发与 `Promise.all()`（高级）
+
 ## 42.6.1 顺序执行 vs. 并发执行
+
 ## 42.6.2 并发提示：关注操作开始的时机
+
 ## 42.6.3 `Promise.all()` 是分叉-合并（fork-join）
-# 42.7 Promise 链式调技巧
+
+# 42.7 Promise 链式调用技巧
+
 ## 42.7.1 链式错误：丢失尾部
+
 ## 42.7.2 链式错误：嵌套
+
 ## 42.7.3 链式错误：过度嵌套
+
 ## 42.7.4 并非所有嵌套都是坏的
+
 ## 42.7.5 链式错误：创建了 Promise 而不是链式调用
+
 # 42.8 快速参考：Promise 组合器函数
+
 ## 42.8.1 `Promise.all()`
+
 ## 42.8.2 `Promise.race()`
+
 ## 42.8.3 `Promise.any()` [ES2021]
+
 ## 42.8.4 `Promise.allSettled()` [ES2020]
 
 ***
@@ -17848,7 +16839,7 @@ Promise 是一种异步交付结果的模式。
 
 以下代码是使用基于 Promise 的函数 `addAsync()` 的示例（稍后将显示实现）：
 
-```
+```javascript
 addAsync(3, 4)
   .then(result => { // 成功
     assert.equal(result, 7);
@@ -17877,9 +16868,9 @@ Promise 类似于事件模式：有一个对象（一个 `Promise`），我们�
 
 ### 42.1.3 实现一个 Promise
 
-这是一个基于 Promise 的函数实现，用于相两个数字 `x` 和 `y`：
+这是一个基于 Promise 的函数实现，用于相加两个数字 `x` 和 `y`：
 
-```
+```javascript
 function addAsync(x, y) {
   return new Promise(
     (resolve, reject) => { // (A)
@@ -17914,7 +16905,7 @@ function addAsync(x, y) {
 
 Promise 有可能永远不会终结。例如：
 
-```
+```javascript
 new Promise(() => {})
 ```
 
@@ -17922,7 +16913,7 @@ new Promise(() => {})
 
 `Promise.resolve(x)` 创建一个带有 `x` 的已完成的 Promise：
 
-```
+```javascript
 Promise.resolve(123)
   .then(x => {
     assert.equal(x, 123);
@@ -17931,7 +16922,7 @@ Promise.resolve(123)
 
 如果参数已经是 Promise，则按原样返回：
 
-```
+```javascript
 const abcPromise = Promise.resolve('abc');
 assert.equal(
   Promise.resolve(abcPromise),
@@ -17946,7 +16937,7 @@ assert.equal(
 
 `Promise.reject(err)` 创建一个带有 `err` 的已拒绝 Promise：
 
-```
+```javascript
 const myError = new Error('My error!');
 Promise.reject(myError)
   .catch(err => {
@@ -17962,7 +16953,7 @@ Promise.reject(myError)
 
 首先，回调可以返回一个非 Promise 值（A 行）。因此，`.then()` 返回的 Promise 将用该值完成（如 B 行所示的检查）：
 
-```
+```javascript
 Promise.resolve('abc')
   .then(str => {
     return str + str; // (A)
@@ -17974,192 +16965,186 @@ Promise.resolve('abc')
 
 #### 42.1.7.2 返回一个 Promise
 
-
-
-
 其次，回调函数可以返回一个 Promise `p`（A 行）。因此，`p` “变成” `.then()` 返回的内容。换句话说：`.then()` 已经返回的 Promise 实际上被 `p` 替换了。
 
-```
-[](#cb1139-1)Promise.resolve('abc')
-[](#cb1139-2)  .then(str => {
-[](#cb1139-3)    return Promise.resolve(123); // (A)
-[](#cb1139-4)  })
-[](#cb1139-5)  .then(num => {
-[](#cb1139-6)    assert.equal(num, 123);
-[](#cb1139-7)  });
+```javascript
+Promise.resolve('abc')
+  .then(str => {
+    return Promise.resolve(123); // (A)
+  })
+  .then(num => {
+    assert.equal(num, 123);
+  });
 ```
 
 为什么这样做很有用？我们可以返回一个基于 Promise 的操作的结果，并通过“扁平化”（非嵌套）的 `.then()` 处理其完成值。对比一下：
 
-```
-[](#cb1140-1)//扁平化
-[](#cb1140-2)asyncFunc1()
-[](#cb1140-3)  .then(result1 => {
-[](#cb1140-4)    /*···*/
-[](#cb1140-5)    return asyncFunc2();
-[](#cb1140-6)  })
-[](#cb1140-7)  .then(result2 => {
-[](#cb1140-8)    /*···*/
-[](#cb1140-9)  });
-[](#cb1140-10)
-[](#cb1140-11)//嵌套
-[](#cb1140-12)asyncFunc1()
-[](#cb1140-13)  .then(result1 => {
-[](#cb1140-14)    /*···*/
-[](#cb1140-15)    asyncFunc2()
-[](#cb1140-16)    .then(result2 => {
-[](#cb1140-17)      /*···*/
-[](#cb1140-18)    });
-[](#cb1140-19)  });
-```
+```javascript
+// 扁平化
+asyncFunc1()
+  .then(result1 => {
+    /*···*/
+    return asyncFunc2();
+  })
+  .then(result2 => {
+    /*···*/
+  });
 
-#### 42.1.7.3 抛出异常
-
-第三，回调函数可以抛出异常。因此，`.then()` 返回的 Promise 将因该异常被拒绝（rejected）。这意味着同步错误被转换成了异步错误。
-
-```
-[](#cb1141-1)const myError = new Error('My error!');
-[](#cb1141-2)Promise.resolve('abc')
-[](#cb1141-3)  .then(str => {
-[](#cb1141-4)    throw myError;
-[](#cb1141-5)  })
-[](#cb1141-6)  .catch(err => {
-[](#cb1141-7)    assert.equal(err, myError);
-[](#cb1141-8)  });
+// 嵌套
+asyncFunc1()
+  .then(result1 => {
+    /*···*/
+    asyncFunc2()
+    .then(result2 => {
+      /*···*/
+    });
+  });
 ```
 
-### 42.1.8 `.catch()` 及其回调
+#### 42.1.7.3 抛出异常
 
-`.then()` 和 `.catch()` 的区别在于后者是由拒绝（rejections）触发的，而不是完成（fulfillments）。然而，两种方法都以相同的方式将其回调的操作转换为 Promise。例如，在下面的代码中，A 行 `.catch()` 回调的返回值变成一个完成值：
+第三，回调函数可以抛出异常。因此，`.then()` 返回的 Promise 将因该异常被拒绝。这意味着同步错误被转换成了异步错误。
 
-```
-[](#cb1142-1)const err = new Error();
-[](#cb1142-2)Promise.reject(err)
-[](#cb1142-3)  .catch(e => {
-[](#cb1142-4)    assert.equal(e, err);
-[](#cb1142-5)    // 出些问题了，使用默认值
-[](#cb1142-6)    return 'default value'; // (A)
-[](#cb1142-7)  })
-[](#cb1142-8)  .then(str => {
-[](#cb1142-9)    assert.equal(str, 'default value');
-[](#cb1142-10});
+```javascript
+const myError = new Error('My error!');
+Promise.resolve('abc')
+  .then(str => {
+    throw myError;
+  })
+  .catch(err => {
+    assert.equal(err, myError);
+  });
 ```
 
-### 42.1.9 方法链式调用
+### 42.1.8 `.catch()` 及其回调
+
+`.then()` 和 `.catch()` 的区别在于后者是由拒绝触发的，而不是完成。然而，两种方法都以相同的方式将其回调的操作转换为 Promise。例如，在下面的代码中，A 行 `.catch()` 回调的返回值变成一个完成值：
+
+```javascript
+const err = new Error();
+Promise.reject(err)
+  .catch(e => {
+    assert.equal(e, err);
+    // 出些问题了，使用默认值
+    return 'default value'; // (A)
+  })
+  .then(str => {
+    assert.equal(str, 'default value');
+  });
+```
+
+### 42.1.9 方法链式调用
 
 `.then()` 和 `.catch()` 总是返回 Promise。这使我们能够创建任意的方法调用链：
 
-```
-[](#cb1143-1)function myAsyncFunc() {
-[](#cb1143-2)  return asyncFunc1() // (A)
-[](#cb1143-3)    .then(result1 => {
-[](#cb1143-4)      // ···
-[](#cb1143-5)      return asyncFunc2(); // 一个 Promise
-[](#cb1143-6)    })
-[](#cb1143-7)    .then(result2 => {
-[](#cb1143-8)      // ···
-[](#cb1143-9)      return result2 ?? '(Empty)'; // 不是 Promise
-[](#cb1143-10)    })
-[](#cb1143-11)    .then(result3 => {
-[](#cb1143-12)      // ···
-[](#cb1143-13)      return asyncFunc4(); // 一个 Promise
-[](#cb1143-14)    });
+```javascript
+function myAsyncFunc() {
+  return asyncFunc1() // (A)
+    .then(result1 => {
+      // ···
+      return asyncFunc2(); // 一个 Promise
+    })
+    .then(result2 => {
+      // ···
+      return result2 ?? '(Empty)'; // 不是 Promise
+    })
+    .then(result3 => {
+      // ···
+      return asyncFunc4(); // 一个 Promise
+    });
 }
 ```
 
 由于链式调用，A 行中的 `return` 返回的是最后一个 `.then()` 的结果。在某种意义上，`.then()` 是分号（`;`）的异步版本：
 
-*   `.then()` 按顺序执行两个异步操作。
-*   分号按顺序执行两个同步操作。
+* `.then()` 按顺序执行两个异步操作。
+* 分号按顺序执行两个同步操作。
 
 我们还可以将 `.catch()` 加入其中，并让它同时处理多个来源：
 
-```
-[](#cb1144-1)asyncFunc1()
-[](#cb1144-2)  .then(result1 => {
-[](#cb1144-3)    // ···
-[](#cb1144-4)    return asyncFunction2();
-[](#cb1144-5)  })
-[](#cb1144-6)  .then(result2 => {
-[](#cb1144-7)    // ···
-[](#cb1144-8)  })
-[](#cb1144-9)  .catch(error => {
-[](#cb1144-10)    // 失败：处理 asyncFunc1(), asyncFunc2() 的错误以及之前回调中抛出的（同步）异常
-[](#cb1144-11)    });
+```javascript
+asyncFunc1()
+  .then(result1 => {
+    // ···
+    return asyncFunction2();
+  })
+  .then(result2 => {
+    // ···
+  })
+  .catch(error => {
+    // 失败：处理 asyncFunc1(), asyncFunc2() 的错误以及之前回调中抛出的（同步）异常
+  });
 ```
 
-### 42.1.10 `.finally()` [ES2018]
+### 42.1.10 `.finally()` [ES2018]
 
 Promise 方法 `.finally()` 经常如下使用：
 
 ```javascript
-[](#cb1145-1)somePromise
-[](#cb1145-2)  .then((result) => {
-[](#cb1145-3)    // ···
-[](#cb1145-4)  })
-[](#cb1145-5)  .catch((error) => {
-[](#cb1145-6)    // ···
-[](#cb1145-7)  })
-[](#cb1145-8)  .finally(() => {
-[](#cb1145-9)    // ···
-[](#cb1145-10)  });
+somePromise
+  .then((result) => {
+    // ···
+  })
+  .catch((error) => {
+    // ···
+  })
+  .finally(() => {
+    // ···
+  });
 ```
 
 `.finally()` 回调总是执行的——独立于 `somePromise` 以及 `.then()` 或 `.catch()` 返回的值。相比之下：
 
-*   `.then()` 回调仅在 `somePromise` 完成时执行。
-*   `.catch()` 回调仅在满足以下条件时执行：
-    *   `somePromise` 被拒绝；
-    *   或者 `.then()` 回调返回了一个被拒绝的 Promise；
-    *   或者 `.then()` 回调抛出了异常。
+* `.then()` 回调仅在 `somePromise` 完成时执行。
+* `.catch()` 回调仅在满足以下条件时执行：
+    * `somePromise` 被拒绝；
+    * 或者 `.then()` 回调返回了一个被拒绝的 Promise；
+    * 或者 `.then()` 回调抛出了异常。
 
-`.finally()` 忽略其回调的返回值，并直接传递调用之前已存在的状态（settlement）：
+`.finally()` 忽略其回调的返回值，并直接传递调用之前已存在的状态：
 
-```
-[](#cb1146-1)Promise.resolve(123)
-[](#cb1146-2)  .finally(() => {})
-[](#cb1146-3)  .then((result) => {
-[](#cb1146-4)    assert.equal(result, 123);
-[](#cb1146-5)  })
+```javascript
+Promise.resolve(123)
+  .finally(() => {})
+  .then((result) => {
+    assert.equal(result, 123);
+  })
 ```
 
 如果 `.finally()` 回调抛出了异常，返回的 Promise 将被拒绝：
 
 ```javascript
-[](#cb1147-1)Promise.resolve('error')
-[](#cb1147-2)  .finally(() => {
-[](#cb1147-3)    throw new Error('finally error');
-[](#cb1147-4)  })
-[](#cb1147-5)  .then(result => {
-[](#cb1147-6)    // 这将不会运行
-[](#cb1147-7)  })
-[](#cb1147-8)  .catch(error => {
-[](#cb1147-9)    assert.equal(error.message, 'finally error');
-[](#cb1147-10)  });
+Promise.resolve('error')
+  .finally(() => {
+    throw new Error('finally error');
+  })
+  .then(result => {
+    // 这将不会运行
+  })
+  .catch(error => {
+    assert.equal(error.message, 'finally error');
+  });
 ```
 
 等待，`.finally()` 子句类似于同步分号：用例如下：
 
 ```javascript
-[](#cb1148-1)let connection;
+let connection;
 db.open()
-[](#cb1148-2)  .then(conn => {
-[](#cb1148-3)    connection = conn;
-[](#cb1148-4)  })
-[](#cb1148-5)  .finally(() => {
-[](#cb1148-6)    connection.close();
-[](#cb1148-7)  }); // 用例：清理资源
+  .then(conn => {
+    connection = conn;
+  })
+  .finally(() => {
+    connection.close();
+  }); // 用例：清理资源
 ```
 
+* 基于 `Promise` 的函数和方法的类型签名更加清晰：如果一个函数是基于回调的，那么某些参数是关于输入的，而结尾的一个或两个回调是关于输出的。使用 `Promises`，所有与输出相关的逻辑都通过返回值来处理。
+* 链式调用异步处理步骤更加方便。
+* `Promises` 同时处理异步错误（通过拒绝）和同步错误：在 `new Promise()`、`.then()` 和 `.catch()` 的回调函数内部，异常会被转换为拒绝。相比之下，如果我们使用回调来处理异步操作，异常通常不会被我们自动处理；我们必须手动处理。
+* `Promises` 是一个单一的标准，正在逐渐取代许多个互不兼容的替代方案。例如，在 `Node.js` 中，许多函数现在都提供了基于 `Promise` 的版本。新的浏览器异步 API 通常也是基于 `Promise` 的。
 
-
-
-*   基于 `Promise` 的函数和方法的类型签名更加清晰：如果一个函数是基于回调（callback）的，那么某些参数是关于输入的，而结尾的一个或两个回调是关于输出的。使用 `Promises`，所有与输出相关的逻辑都通过返回值来处理。
-*   链式调用异步处理步骤更加方便。
-*   `Promises` 同时处理异步错误（通过拒绝 `rejections`）和同步错误：在 `new Promise()`、`.then()` 和 `.catch()` 的回调函数内部，异常会被转换为拒绝（converted to `rejections`）。相比之下，如果我们使用回调来处理异步操作，异常通常不会被我们自动处理；我们必须手动处理。
-*   `Promises` 是一个单一的标准，正在逐渐取代许多个互不兼容的替代方案。例如，在 `Node.js` 中，许多函数现在都提供了基于 `Promise` 的版本。新的浏览器异步 API 通常也是基于 `Promise` 的。
-
-`Promises` 的最大优势之一在于是不直接与它们交互：它们是 `async functions` 的基础，`async functions` 是一种用于执行异步计算的看起来像同步的语法。异步函数将在下一章中介绍。
+`Promises` 的最大优势之一在于不直接与它们交互：它们是 `async functions` 的基础，`async functions` 是一种用于执行异步计算的看起来像同步的语法。异步函数将在下一章中介绍。
 
 ## 42.2 示例
 
@@ -18169,7 +17154,7 @@ db.open()
 
 考虑以下包含 JSON 数据 的文本文件 `person.json`：
 
-```
+```json
 {
   "first": "Jane",
   "last": "Doe"
@@ -18182,7 +17167,7 @@ db.open()
 
 以下代码读取该文件的内容并转换为 JavaScript 对象。它基于 `Node.js` 风格的回调：
 
-```
+```javascript
 import * as fs from 'fs';
 fs.readFile('person.json',
   (error, text) => {
@@ -18207,79 +17192,31 @@ fs.readFile('person.json',
 
 `fs` 是一个用于文件系统操作内置 `Node.js` 模块。我们使用基于回调的函数 `fs.readFile()` 来读取名为 `person.json` 的文件。如果成功，内容将通过参数 `text` 以字符串的形式传递。在 C 行中，我们将该字符串从基于文本的数据格式 `JSON` 转换为 JavaScript 对象。`JSON` 是一个包含用于消费和生成 `JSON` 方法的对象。它是 JavaScript 标准库的一部分，并在本书的后文部分 中有记录。
 
-注意，`fs` 是一个内置的 `Node.js` 模块，用于文件系统操作。我们使用基于回调的函数 `fs.readFile()` 来读取名为 `person.json` 的文件。如果成功，内容将通过参数 `text` 以字符串的形式传递。在 C 行中，我们将该字符串从基于文本的数据格式 `JSON` 转换为 JavaScript 对象。`JSON` 是一个包含用于消费和生成 `JSON` 方法的对象。它是 JavaScript 标准库的一部分，并在本书的后文部分 中有记录。
-
-注意，`fs` 是一个内置的 `Node.js` 模块，用于文件系统操作。我们使用基于回调的函数 `fs.readFile()` 来读取名为 `person.json` 的文件。如果成功，内容将通过参数 `text` 以字符串的形式传递。在 C 行中，我们将该字符串从基于文本的数据格式 `JSON` 转换为 JavaScript 对象。`JSON` 是一个包含用于消费和生成 `JSON` 方法的对象。它是 JavaScript 标准库的一部分，并在本书的后文部分 中有记录。
-
-注意，`fs` 是一个内置的 `Node.js` 模块，用于文件系统操作。我们使用基于回调的函数 `fs.readFile()` 来读取名为 `person.json` 的文件。如果成功，内容将通过参数 `text` 以字符串的形式传递。在 C 行中，我们将该字符串从基于文本的数据格式 `JSON` 转换为 JavaScript 对象。`JSON` 是一个包含用于消费和生成 `JSON` 方法的对象。它是 JavaScript 标准库的一部分，并在本书的后文部分 中有记录。
-
-注意，`fs` 是一个内置的 `Node.js` 模块，用于文件系统操作。我们使用基于回调的函数 `fs.readFile()` 来读取名为 `person.json` 的文件。如果成功，内容将通过参数 `text` 以字符串的形式传递。在 C 行中，我们将该字符串从基于文本的数据格式 `JSON` 转换为 JavaScript 对象。`JSON` 是一个包含用于消费和生成 `JSON` 方法的对象。它是 JavaScript 标准库的一部分，并在本书的后文部分 中有记录。
-
-注意，`fs` 是一个内置的 `Node.js` 模块，用于文件系统操作。我们使用基于回调的函数 `fs.readFile()` 来读取名为 `person.json` 的文件。如果成功，内容将通过参数 `text` 以字符串的形式传递。在 C 行中，我们将该字符串从基于文本的数据格式 `JSON` 转换为 JavaScript 对象。`JSON` 是一个包含用于消费和生成 `JSON` 方法的对象。它是 JavaScript 标准库的一部分，并在本书的后文部分 中有记录。
-
-注意，`fs` 是一个内置的 `Node.js` 模块，用于文件系统操作。我们使用基于回调的函数 `fs.readFile()` 来读取名为 `person.json` 的文件。如果成功，内容将通过参数 `text` 以字符串的形式传递。在 C 行中，我们将该字符串从基于文本的数据格式 `JSON` 转换为 JavaScript 对象。`JSON` 是一个包含用于消费和生成 `JSON` 方法的对象。它是 JavaScript 标准库的一部分，并在本书的后文部分 中有记录。
-
-注意，`fs` 是一个内置的 `Node.js` 模块，用于文件系统操作。我们使用基于回调的函数 `fs.readFile()` 来读取名为 `person.json` 的文件。如果成功，内容将通过参数 `text` 以字符串的形式传递。在 C 行中，我们将该字符串从基于文本的数据格式 `JSON` 转换为 JavaScript 对象。`JSON` 是一个包含用于消费和生成 `JSON` 方法的对象。它是 JavaScript 标准库的一部分，并在本书的后文部分 中有记录。
-
-（注：由于原文中存在重复段落，此处已按逻辑结构进行翻译对齐）
-
-我们使用基于回调的函数 `fs.readFile()` 来读取名为 `person.json` 的文件。如果成功，内容将通过参数 `text` 以字符串的形式传递。在 C 行中，我们将该字符串从基于文本的数据格式 `JSON` 转换为 JavaScript 对象。`JSON` 是一个包含用于消费和生成 `JSON` 方法的对象。它是 JavaScript 标准库的一部分，并在本书的后文部分 中有记录。
-
-#### 42.2.1.2 基于 Promise 的版本
-
-以下代码读取该文件的内容并将其转换为 JavaScript 对象。它基于 `Node.js` 风格的回调：
-
-（注：此处根据原文逻辑，应为基于 `Promise` 版本）
-
-```
-import * as fs from 'fs';
-fs.readFile('person.json',
-  (error, text) => {
-    if (error) { // (A)
-      // 失败
-      assert.fail(error);
-    } else {
-      // 成功
-      try { // (B)
-        const obj = JSON.parse(text); // (C)
-        assert.deepEqual(obj, {
-          first: 'Jane',
-          last: 'Doe',
-        });
-      } catch (e) {
-        // 无效 JSON
-        assert.fail(e);
-      }
-    }
-  });
-```
-
-（注：原文示例中存在逻辑重复和格式混乱，翻译时保持其原始结构）
-
 #### 42.2.1.2 基于 Promise 的版本
 
 以下代码读取该文件的内容并将其转换为 JavaScript 对象。它基于 `Promise` 的版本：
 
-```
-// 示例：基于 Promise 的实现逻辑
-fs.readFilePromise('person.json').then(text => {
+```javascript
+import * as fs from 'fs/promises';
+
+fs.readFile('person.json', { encoding: 'utf8' })
+  .then(text => {
     const obj = JSON.parse(text);
     assert.deepEqual(obj, {
       first: 'Jane',
       last: 'Doe',
     });
-  }).catch(err => {
+  })
+  .catch(err => {
     assert.fail(err);
   });
 ```
 
-（注：原文提供的源文本在 42.2.1.1 之后存在大量重复和乱码化描述，以上翻译基于核心语义）
 
 
+# 42.2.1.1 练习：使用 fetch API
 
-
-
-```
+```javascript
 fetch('http://example.com/textfile.txt')
   .then(response => response.text())
   .then(text => {
@@ -18291,15 +17228,15 @@ fetch('http://example.com/textfile.txt')
 
 `exercises/promises/fetch_json_test.mjs`
 
-## 42.3 错误处理：不要混合拒绝（rejections）和异常（exceptions）
+## 42.3 错误处理：不要混合拒绝和异常
 
 实现函数和方法的规则：
 
-> 不要将（异步）拒绝和（同步）异常混合用用。
+> 不要将（异步）拒绝和（同步）异常混合使用。
 
 这使得我们的同步和异步代码更具可预测性且也更简单，因为我们可以始终专注于一种单一的错误处理机制。
 
-对于基于 Promise 的函数和方法，该规则意味着它们不应该抛出异常。遗憾的是，很容易不小心出错——例如：
+对于基于 `Promise` 的函数和方法，该规则意味着它们不应该抛出异常。遗憾的是，很容易不小心出错——例如：
 
 ```javascript
 // 不要这样做
@@ -18312,9 +17249,9 @@ function asyncFunc() {
 }
 ```
 
-问题在于，如果在第 A 行抛出异常，那么 `asyncFunc()` 将抛出异常。该函数的调用者只期望得到拒绝，而没有准备好处理异常。我们三种方法可以修复这个问题。
+问题在于，如果在第 A 行抛出异常，那么 `asyncFunc()` 将抛出异常。该函数的调用者只期望得到拒绝，而没有准备好处理异常。我们有三种方法可以修复这个问题。
 
-我们可以将整个函数体封装在 `try-catch` 语句中，并在抛出异常时返回一个拒绝的 Promise：
+我们可以将整个函数体封装在 `try-catch` 语句中，并在抛出异常时返回一个拒绝的 `Promise`：
 
 ```javascript
 // 方案 1
@@ -18331,7 +17268,7 @@ function asyncFunc() {
 }
 ```
 
-鉴于 `.then()`会将异常转换为拒绝，我们可以在 `.then()` 回调内部执行 `doSomethingSync()`。为了做到，我们通过 `Promise.resolve()` 启动 Promise 链。我们忽略该初始 Promise 的履行值 `undefined`。
+鉴于 `.then()` 会将异常转换为拒绝，我们可以在 `.then()` 回调内部执行 `doSomethingSync()`。为了做到这一点，我们通过 `Promise.resolve()` 启动 `Promise` 链。我们忽略该初始 `Promise` 的履行值 `undefined`。
 
 ```javascript
 // 方案 2
@@ -18364,10 +17301,10 @@ function asyncFunc() {
 
 ## 42.4 基于 Promise 的函数同步启动，异步稳定
 
-大多数基于 Promise 的函数执行方式如下：
+大多数基于 `Promise` 的函数执行方式如下：
 
 *   它们的执行立即开始，是同步的（在当前任务中）。
-*   但它们返回的 Promise 保证是异步稳定的（在稍后的任务中）——如果会稳定的话。
+*   但它们返回的 `Promise` 保证是异步稳定的（在稍后的任务中）——如果会稳定的话。
 
 下面的代码演示了这一点：
 
@@ -18395,9 +17332,11 @@ console.log('END');
 // '.then()'
 ```
 
+## 42.5 Promise 组合器
 
+### 42.5.1 `Promise.all()`
 
-
+#### 42.5.1.1 基本示例
 
 ```javascript
 function timesTwoAsync(x) {
@@ -18411,7 +17350,7 @@ Promise.all(promiseArr)
   });
 ```
 
-#### 42.5.2.2 一个更真实的 `.map()` 示例
+#### 42.5.1.2 一个更真实的 `.map()` 示例
 
 接下来，我们将使用 `.map()` 和 `Promise.all()` 从网络下载文本文件。为了实现这一点，我们需要下面的工具函数：
 
@@ -18427,11 +17366,11 @@ function downloadText(url) {
 }
 ```
 
-`downloadText()` 使用基于 Promise 的 [fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch) 将文本文件下载为字符串：
+`downloadText()` 使用基于 `Promise` 的 [fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch) 将文本文件下载为字符串：
 
--   首先，它异步获取一个 `response`（第 A 行）。
--   `response.ok`（第 B 行）检查是否存在如“文件未找到”之类的错误。
--   如果没有错误，我们使用 `.text()`（第 C 行）将文件内容作为字符串获取出来。
+*   首先，它异步获取一个 `response`（第 A 行）。
+*   `response.ok`（第 B 行）检查是否存在如“文件未找到”之类的错误。
+*   如果没有错误，我们使用 `.text()`（第 C 行）将文件内容作为字符串获取出来。
 
 在接下来的示例中，我们下载了两个文本文件：
 
@@ -18451,7 +17390,7 @@ Promise.all(promises)
     ));
 ```
 
-#### 42.5.2.3 `Promise.all()` 的简单实现
+#### 42.5.1.3 `Promise.all()` 的简单实现
 
 这是 `Promise.all()` 的简化实现（例如，它没有执行任何安全检查）：
 
@@ -18489,7 +17428,7 @@ function all(iterable) {
 }
 ```
 
-### 42.5.3 `Promise.race()`
+### 42.5.2 `Promise.race()`
 
 这是 `Promise.race()` 的类型签名：
 
@@ -18497,9 +17436,9 @@ function all(iterable) {
 Promise.race<T>(promises: Iterable<Promise<T>>): Promise<T>
 ```
 
-`Promise.race()` 返回一个 Promise `q`，一旦 `promises` 中的第一个 Promise `p` 状态确定，`q` 就会状态确定。`q` 与 `p` 具有相同的状态值。
+`Promise.race()` 返回一个 `Promise` `q`，一旦 `promises` 中的第一个 `Promise` `p` 状态确定，`q` 就会状态确定。`q` 与 `p` 具有相同的状态值。
 
-在接下来的演示中，已完成的 Promise（第 A 行）的状态发生在被拒绝的 Promise（第 B 行）确定之前。因此，结果也是完成的（第 C 行）。
+在接下来的演示中，已完成的 `Promise`（第 A 行）的状态发生在被拒绝的 `Promise`（第 B 行）确定之前。因此，结果也是完成的（第 C 行）。
 
 ```javascript
 const promises = [
@@ -18528,20 +17467,18 @@ Promise.race(promises)
   .catch(err => assert.deepEqual(err, new Error('Operation out')));
 ```
 
-
-
-
+### 42.5.3 `Promise.any()` [ES2021]
 
 这是 `Promise.any()` 的类型签名：
 
-```javascript
+```typescript
 Promise.any<T>(promises: Iterable<Promise<T>>): Promise<T>
 ```
 
-`Promise.any()` 返回一个 Promise `p`。它的状态状态取决于参数 `promises`（该参数指向一个 Promise 迭代器）：
+`Promise.any()` 返回一个 `Promise` `p`。它的状态取决于参数 `promises`（该参数指向一个 `Promise` 迭代器）：
 
-*   当且当第一个 Promise 被履行（fulfilled）时，`p` 将以该 Promise 的值解析（resolved）。
-*   如果所有的 Promise 都被拒绝（rejected），则 `p` 将被 `AggregateError` 实例所拒绝，该实例包含了所有的拒绝值。
+*   当且仅当第一个 `Promise` 被履行时，`p` 将以该 `Promise` 的值解析。
+*   如果所有的 `Promise` 都被拒绝，则 `p` 将被 `AggregateError` 实例所拒绝，该实例包含了所有的拒绝值。
 
 这是 `AggregateError` 的类型签名（省略了部分成员）：
 
@@ -18559,9 +17496,9 @@ class AggregateError {
 
 图 25：Promise 组合器 `Promise.any()`。
 
-### 42.5.4.1 前两个示例
+#### 42.5.3.1 前两个示例
 
-当其中一个 Promise 被履行时，发生的情况如下：
+当其中一个 `Promise` 被履行时，发生的情况如下：
 
 ```javascript
 const promises = [
@@ -18575,7 +17512,7 @@ Promise.any(promises)
   ));
 ```
 
-当所有的 Promise 都被拒绝时，发生的情况如下：
+当所有的 `Promise` 都被拒绝时，发生的情况如下：
 
 ```javascript
 const promises = [
@@ -18590,29 +17527,29 @@ Promise.any(promises)
   ));
 ```
 
-### 42.5.4.2 `Promise.any()` vs. `Promise.all()`
+#### 42.5.3.2 `Promise.any()` vs. `Promise.all()`
 
 `Promise.any()` 和 `Promise.all()` 有两种比较方式：
 
 *   它们是互反的：
-    *   `Promise.all()`：第一个输入的拒绝会导致结果 Promise 被拒绝，或者其履行值是一个包含所有输入履行值的数组。
-    *   `Promise.any()`：第一个输入的履行会导致结果 Promise 被履行，或者其拒绝值是一个包含所有输入拒绝值的数组。
+    *   `Promise.all()`：第一个输入的拒绝会导致结果 `Promise` 被拒绝，或者其履行值是一个包含所有输入履行值的数组。
+    *   `Promise.any()`：第一个输入的履行会导致结果 `Promise` 被履行，或者其拒绝值是一个包含所有输入拒绝值的数组。
 *   它们关注点不同：
     *   `Promise.all()` 关注的是*所有*履行。相反的情况（至少一个拒绝）会导致拒绝。
     *   `Promise.any()` 关注的是第一个履行。相反的情况（全为拒绝）会导致拒绝。
 
-### 42.5.4.3 `Promise.any()` vs. `Promise.race()`
+#### 42.5.3.3 `Promise.any()` vs. `Promise.race()`
 
 `Promise.any()` 和 `Promise.race()` 也有关系，但它们关注点不同：
 
-*   `Promise.race()` 关注的是状态定型（settlements）。最先状态定型的 Promise 会“赢了”。换句话说：我们想知道第一个结束的异步计算。
-*   `Promise.any()` 关注的是履行（fulfillments）。第一个被履行的 Promise “赢了”。换句话说：我们想知道第一个成功的异步计算。
+*   `Promise.race()` 关注的是状态定型。最先状态定型的 `Promise` 会“赢了”。换句话说：我们想知道第一个结束的异步计算。
+*   `Promise.any()` 关注的是履行。第一个被履行的 `Promise` “赢了”。换句话说：我们想知道第一个成功的异步计算。
 
-`.race()` 的主要——相对少见的用例是为 Promise 设置超时。`.any()` 的用例则广泛得多。我们接下来来看它们。
+`.race()` 的主要——相对少见的用例是为 `Promise` 设置超时。`.any()` 的用例则广泛得多。我们接下来来看它们。
 
-### 42.5.4.4 `Promise.any()` 的用例
+#### 42.5.3.4 `Promise.any()` 的用例
 
-如果我们有多个异步计算，并且对对第一个成功的感兴趣，就会使用 `Promise.any()`。在某种程度上，我们让计算相互竞争，并使用最快的那一个。
+如果我们有多个异步计算，并且对第一个成功的感兴趣，就会使用 `Promise.any()`。在某种程度上，我们让计算相互竞争，并使用最快的那一个。
 
 以下代码展示了在下载资源时的应用：
 
@@ -18645,24 +17582,24 @@ try {
 }
 ```
 
-### 42.5.4.5 如何实现 `Promise.any()`？
+#### 42.5.3.5 如何实现 `Promise.any()`？
 
 `Promise.any()` 的简单实现基本上是 `Promise.all()` 实现的镜像版本。
 
-### 42.5.5 `Promise.allSettled()` [ES2020]
+### 42.5.4 `Promise.allSettled()` [ES2020]
 
 这次的类型签名稍微复杂一些。你可以直接跳到第一个演示，它应该更容易理解。
 
 `Promise.allSettled()` 的类型签名：
 
-```javascript
+```typescript
 Promise.allSettled<T>(promises: Iterable<Promise<T>>)
   : Promise<Array<SettlementObject<T>>>
 ```
 
-它返回一个 Promise，其数组的元素具有以下类型签名：
+它返回一个 `Promise`，其数组的元素具有以下类型签名：
 
-```javascript
+```typescript
 type SettlementObject<T> = FulfillmentObject<T> | RejectionObject;
 
 interface FulfillmentObject<T> {
@@ -18676,18 +17613,18 @@ interface RejectionObject {
 }
 ```
 
-`Promise.allSettled()` 返回一个 Promise `out`。当所有的 `promises` 都状态定型后，`out` 将被一个数组填充。该数组的每个元素 `e` 对应于 `promises` 中的一个 Promise `p`：
+`Promise.allSettled()` 返回一个 `Promise` `out`。当所有的 `promises` 都状态定型后，`out` 将被一个数组填充。该数组的每个元素 `e` 对应于 `promises` 中的一个 `Promise` `p`：
 
 *   如果 `p` 被值 `v` 履行，则 `e` 为：
-  ```javascript
-  { status: 'fulfilled', value:  v }
-  ```
+    ```javascript
+    { status: 'fulfilled', value:  v }
+    ```
 *   如果 `p` 被值 `r` 拒绝，则 `e` 为：
-  ```javascript
-  { status: 'rejected',  reason: r }
-  ```
+    ```javascript
+    { status: 'rejected',  reason: r }
+    ```
 
-除非在遍历 `promises` 时发生错误，否则输出 Promise `out` 永远不会被拒绝。
+除非在遍历 `promises` 时发生错误，否则输出 `Promise` `out` 永远不会被拒绝。
 
 图 26 展示了 `Promise.allSettled()` 的工作原理。
 
@@ -18695,7 +17632,7 @@ interface RejectionObject {
 
 图 26：Promise 组合器 `Promise.allSettled()`。
 
-#### 42.5.5.1 `Promise.allSettled()` 的第一个演示
+#### 42.5.4.1 `Promise.allSettled()` 的第一个演示
 
 这是一个关于 `Promise.allSettled()` 如何工作的快速演示：
 
@@ -18709,9 +17646,9 @@ Promise.allSettled([
 ]));
 ```
 
-#### 42.5.5.2 `Promise.allSettled()` 的较长示例
+#### 42.5.4.2 `Promise.allSettled()` 的较长示例
 
-下一个示例类似于.map()` 加上 `Promise.all()` 的示例（我们借用了其中的 `downloadText()` 函数）：我们正在下载多个文件，其 URL 存储在一个数组中。然而，这次我们不想在出现错误时停止，而是想继续。`Promise.allSettled()` 允许我们这样做：
+下一个示例类似于 `.map()` 加上 `Promise.all()` 的示例（我们借用了其中的 `downloadText()` 函数）：我们正在下载多个文件，其 URL 存储在一个数组中。然而，这次我们不想在出现错误时停止，而是想继续。`Promise.allSettled()` 允许我们这样做：
 
 ```javascript
 const urls = [
@@ -18729,13 +17666,9 @@ result.then(
   ));
 ```
 
-#### 42.5.5.3 `Promise.allSettled()` 的简单实现
+#### 42.5.4.3 `Promise.allSettled()` 的简单实现
 
 这是 `Promise.allSettled()` 的简化实现（例如，它没有执行安全检查）：
-
-
-
-
 
 ```javascript
 function allSettled(iterable) {
@@ -18775,13 +17708,13 @@ function allSettled(iterable) {
 }
 ```
 
-### 42.5.6 短路（进阶）
+### 42.5.5 短路（进阶）
 
-对于 `Promise` 组合器，*短路*意味着输出的 `Promise` 提前完成（settled）——即在所有输入 `Promises` 完成状态改变之前。以下组合器支持短路：
+对于 `Promise` 组合器，*短路*意味着输出的 `Promise` 提前完成——即在所有输入 `Promises` 完成状态改变之前。以下组合器支持短路：
 
-* `Promise.all()`：一旦有一个输入 `Promise` 被拒绝（rejected），输出的 `Promise` 就会被拒绝。
-* `Promise.race()`：一旦有一个输入 `Promise` 完成状态改变（settled），输出的 `Promise` 就会完成。
-* `Promise.any()`：一旦有一个输入 `Promise` 成功（fulfilled），输出的 `Promise` 就会完成。
+*   `Promise.all()`：一旦有一个输入 `Promise` 被拒绝，输出的 `Promise` 就会被拒绝。
+*   `Promise.race()`：一旦有一个输入 `Promise` 完成状态改变，输出的 `Promise` 就会完成。
+*   `Promise.any()`：一旦有一个输入 `Promise` 成功，输出的 `Promise` 就会完成。
 
 再次强调，提前完成并不意味着被忽略的 `Promises` 后面的操作停止了。它仅仅意味着它们的完成状态被忽略了。
 
@@ -18850,7 +17783,7 @@ function sequentialAll() {
 
 ### 42.6.3 `Promise.all()` 是分支合并（fork-join）
 
-`Promise.all()` 与“分叉合并”（fork join）模式有松散的关系。让我们回顾一下之前遇到过的一个例子：
+`Promise.all()` 与“分叉合并”模式有松散的关系。让我们回顾一下之前遇到过的一个例子：
 
 ```javascript
 Promise.all([
@@ -18862,8 +17795,8 @@ Promise.all([
 .then(arr => assert.deepEqual(arr, ['First!', 'Second!']));
 ```
 
-* 分叉 (Fork)：在 A 行中，我们正在分叉两个异步计算并并发执行它们。
-* 合并 (Join)：在 B 行中，一旦所有计算完成，我们将这些计算合并到一个单一的“线程”中。
+*   分叉：在 A 行中，我们正在分叉两个异步计算并并发执行它们。
+*   合并：在 B 行中，一旦所有计算完成，我们将这些计算合并到一个单一的“线程”中。
 
 ## 42.7 链式调用技巧
 
@@ -18907,7 +17840,7 @@ asyncFunc1()
   });
 ```
 
-A 行的 `.then()` 是嵌套的。扁坦结构会更好：
+A 行的 `.then()` 是嵌套的。扁平结构会更好：
 
 ```javascript
 asyncFunc1()
@@ -18936,7 +17869,7 @@ asyncFunc1()
   });
 ```
 
-我们可以再次获得扁坦的结构：
+我们可以再次获得扁平的结构：
 
 ```javascript
 asyncFunc1()
@@ -18973,10 +17906,6 @@ db.open()
 
 问题：
 
-
-
-
-
 ```javascript
 // 不要这样做
 class Model {
@@ -18995,7 +17924,7 @@ class Model {
 }
 ```
 
-在第 `A` 行中，我们正在创建一个 `Promise` 来交付 `db.insert()` 的结果。这种写法是不必要的冗长，并且可以被简化：
+在第 A 行中，我们正在创建一个 `Promise` 来交付 `db.insert()` 的结果。这种写法是不必要的冗长，并且可以被简化：
 
 ```javascript
 class Model {
@@ -19010,51 +17939,51 @@ class Model {
 }
 ```
 
-核心思想是我们不需要创建一个 `Promise`；我们可以直接返回 `.then()` 调用产生的结果。另一个额外的好处是，我们不需要捕获并重新拒绝 `db.insert()` 的失败。我们只需将其将其拒绝状态传递给 `.insertInto()` 的调用者即可。
+核心思想是我们不需要创建一个 `Promise`；我们可以直接返回 `.then()` 调用产生的结果。另一个额外的好处是，我们不需要捕获并重新拒绝 `db.insert()` 的失败。我们只需将其拒绝状态传递给 `.insertInto()` 的调用者即可。
 
-## 42.8 快速参考：Promise 组合器函数
+## 42.8 快速参考：Promise 组合器函数
 
 除非另有说明，这些功能是在 ECMAScript 6 中引入的（即 `Promises` 被添加到语言中的时期）。
 
 术语表：
 
-*   **短路 (Short-circuiting)**：在某些情况下，输出的 `Promise` 可以提前完成（在所有输入 `Promise` 完成之前）。后文将提供关于其工作原理的更多信息。
+*   **短路**：在某些情况下，输出的 `Promise` 可以提前完成（在所有输入 `Promise` 完成之前）。后文将提供关于其工作原理的更多信息。
 
-### 42.8.1 `Promise.all()`
+### 42.8.1 `Promise.all()`
 
 ```typescript
 Promise.all<T>(promises: Iterable<Promise<T>>)
   : Promise<Array<T>>
 ```
 
-*   `P` 的**完成 (Fulfillment)**：如果所有输入的 `Promise` 都完成。
+*   `P` 的**完成**：如果所有输入的 `Promise` 都完成。
     *   值：包含所有输入 `Promise` 完成值的数组
-*   `P` 的**拒绝 (Rejection)**：如果其中一个输入的 `Promise` 被拒绝。
+*   `P` 的**拒绝**：如果其中一个输入的 `Promise` 被拒绝。
     *   值：输入 `Promise` 的拒绝值
     *   短路：是
     *   用例：处理 `Arrays`（拒绝会终止）
 
-### 42.8.2 `Promise.race()`
+### 42.8.2 `Promise.race()`
 
 ```typescript
 Promise.race<T>(promises: Iterable<Promise<T>>)
   : Promise<T>
 ```
 
-*   `P` 的**状态改变 (Settlement)**：如果第一个输入的 `Promise` 状态改变。
+*   `P` 的**状态改变**：如果第一个输入的 `Promise` 状态改变。
     *   值：该输入 `Promise` 的状态值
     *   短路：是
     *   用例：对多个 `Promises` 中的第一个状态改变做出反应
 
-### 42.8.3 `Promise.any()` [ES2021]
+### 42.8.3 `Promise.any()` [ES2021]
 
 ```typescript
 Promise.any<T>(promises: Iterable<Promise<T>>): Promise<T>
 ```
 
-*   `P` 的**完成 (Fulfillment)**：如果有一个输入的 `Promise` 完成。
+*   `P` 的**完成**：如果有一个输入的 `Promise` 完成。
     *   值：该输入 `Promise` 的完成值
-*   `P` 的**拒绝 (Rejection)**：如果所有输入的 `Promise` 都被拒绝。
+*   `P` 的**拒绝**：如果所有输入的 `Promise` 都被拒绝。
     *   值：包含所有输入 `Promise` 拒绝值的 `AggregateError`。
     *   短路：是
     *   用例：在多个异步计算中，我们只对第一个成功的感兴趣。也就是说，我们正在尝试几种方法，最快的方法应该获胜。
@@ -19069,16 +17998,16 @@ class AggregateError {
 }
 ```
 
-### 42.8.4 `Promise.allSettled()` [ES2020]
+### 42.8.4 `Promise.allSettled()` [ES2020]
 
 ```typescript
 Promise.allSettled<T>(promises: Iterable<Promise<T>>)
   : Promise<Array<SettlementObject<T>>>
 ```
 
-*   `P` 的**完成 (Fulfillment)**：如果所有输入的 `Promise` 都已状态改变。
+*   `P` 的**完成**：如果所有输入的 `Promise` 都已状态改变。
     *   值：包含每个输入 `Promise` 对应的 `settlement object` 的数组。`settlement object` 包含了类型和状态值。
-*   `P` 的**拒绝 (Rejection)**：如果在遍历输入 `Promises` 时发生错误。
+*   `P` 的**拒绝**：如果在遍历输入 `Promises` 时发生错误。
     *   短路：否
     *   用例：处理 `Arrays`（拒绝不会终止）
 
@@ -19096,114 +18025,35 @@ interface RejectionObject {
 }
 ```
 
-# 43 异步函数
+# 43 异步函数
 
 简单来说，*async functions*为使用 `Promises` 的代码提供了更好的语法。因此，为了使用异步函数，我们应该理解 `Promises`。它们在上一节中已经过。
 
-### 43.1 异步函数：基础
-
-*   43.1.1 `Async constructs`
-
-### 43.2 从异步函数中返回
-
-*   43.2.1 异步函数总是返回 `Promises`
-*   43.2.2 返回的 `Promises` 不会被包装
-*   43.2.3 执行异步函数：同步开始，异步状态改变（高级）
-
-### 43.3 `await`：与 `Promises` 协作
-
-*   43.3.1 `await` 与完成的 `Promises`
-*   43.3.2 `await` 与被拒绝的 `Promises`
-*   43.3.3 `await` 是浅层的（我们不能在回调函数中使用它）
-
-### 43.4 （高级）
-
-### 43.5 立即调用的异步箭头函数
-
-### 43.6 并发与 `await`
-
-*   43.6.1 `await`：顺序执行异步函数
-*   43.6.2 `await`：并发执行异步函数
-
-### 43.7 异步函数的提示
-
-*   43.7.1 如果我们“触发后就不不管”，则不需要 `await`
-*   43.7.2 `await` 并忽略结果有时是有意义的
-
-考虑以下异步函数：
-
-```javascript
-async function fetchJsonAsync(url) {
-  try {
-    const request = await fetch(url); // async
-    const text = await request.text(); // async
-    return JSON.parse(text); // sync
-  } catch (error) {
-    assert.fail(error);
-  }
-}
-```
-
-之前的看起来像同步的代码等同于直接使用 `Promises` 的以下代码：
-
-```javascript
-function fetchJsonPromises(url) {
-  return fetch(url) // async
-    .then(request => request.text()) // async
-    .then(text => JSON.parse(text)) // sync
-    .catch(error => {
-      assert.fail(error);
-    });
-}
-```
-
-
-
-
-
-- 任何抛出的异常都将用于拒绝 Promise。
-
-`fetchJsonAsync()` 和 `fetchJsonViaPromises()` 的调用方式完全相同，如下：
-
-```
-[](#cb1218-1)fetchJsonAsync('http://example.com/person.json')
-[](#cb1218-2).then(obj => {
-[](#cb1218-3)  assert.deepEqual(obj, {
-[](#cb1218-4)    first: 'Jane',
-[](#cb1218-5)    last: 'Doe',
-[](#cb1218-6)  });
-[](#cb1218-7)});
-```
-
-![](img/file5.svg) 异步函数与直接使用 Promise 的函数一样是基于 Promise
-
-**异步函数与直接使用 Promise 的函数一样是基于 Promise 的**
-
-从外部来看，几乎无法区分 `async` 函数与返回 `Promise` 的函数之间的区别。
+## 43.1 异步函数：基础
 
 ### 43.1.1 异步构造结构
 
 JavaScript 拥有以下同步可调用实体的异步版本。它们的角色总是真正的函数或方法。
 
-```
-[](#cb1219-1)// 异步函数声明
-[](#cb1219-2)async function func1() {}
-[](#cb1219-4)// 异步函数表达式
-[](#cb1219-5)const func2 = async function () {};
-[](#cb1219-7)// 异步箭头函数
-[](#cb1219-8)const func3 = async () => {};
-[](#cb1219-10)// 对象字面量中的异步方法定义
-[](#cb1219-11)const obj = { async m() {} };
-[](#cb1219-13)// 类中的异步方法定义
-[](#cb1219-14)class MyClass { async m() {} }
+```javascript
+// 异步函数声明
+async function func1() {}
+// 异步函数表达式
+const func2 = async function () {};
+// 异步箭头函数
+const func3 = async () => {};
+// 对象字面量中的异步方法定义
+const obj = { async m() {} };
+// 类中的异步方法定义
+class MyClass { async m() {} }
 ```
 
-#### 异步函数 (Asynchronous functions) 与 async 函数 (async functions)
+#### 异步函数 与 async 函数
 
 `asynchronous function` 和 `async function` 之间的区别虽然细微，但很重要：
 
-- `asynchronous function`（异步函数）是指任何异步交付结果的函数——例如基于回调的函数或基于 `Promise` 的函数。
-- `async function` 是通过特殊语法定义的，涉及 `async` 和 `await` 关键字。由于这些关键字，它也被称为 `async/await`。`async` 函数基于 `Promises`，因此它们也是异步函数（这听起来有点困惑）。
+*   `asynchronous function`（异步函数）是指任何异步交付结果的函数——例如基于回调的函数或基于 `Promise` 的函数。
+*   `async function` 是通过特殊语法定义的，涉及 `async` 和 `await` 关键字。由于这些关键字，它也被称为 `async/await`。`async` 函数基于 `Promises`，因此它们也是异步函数（这听起来有点困惑）。
 
 ## 43.2 从异步函数中返回
 
@@ -19211,36 +18061,36 @@ JavaScript 拥有以下同步可调用实体的异步版本。它们的角色总
 
 每个 `async` 函数总是返回一个 `Promise`。在 `async` 函数内部，我们通过 `return`（A 行）来完成结果：
 
-```
-[](#cb1220-1)async function asyncFunc() {
-[](#cb1220-2)  return 123; // (A)
+```javascript
+async function asyncFunc() {
+  return 123; // (A)
 }
-[](#cb1220-4)asyncFunc()
-[](#cb1220-5).then(result => {
-[](#cb1220-7)  assert.equal(result, 123);
+asyncFunc()
+.then(result => {
+  assert.equal(result, 123);
 });
 ```
 
 和往常一样，如果我们没有显式地返回任何内容，系统会为我们返回 `undefined`：
 
-```
-[](#cb1221-1)async function asyncFunc() {
+```javascript
+async function asyncFunc() {
 }
-[](#cb1221-3)asyncFunc()
-[](#cb1221-4).then(result => {
-[](#cb1221-6)  assert.equal(result, undefined);
+asyncFunc()
+.then(result => {
+  assert.equal(result, undefined);
 });
 ```
 
 我们通过 `throw`（A 行）来拒绝结果：
 
-```
-[](#cb1222-1)async function asyncFunc() {
-[](#cb1222-2)  throw new Error('Problem!'); // (A)
+```javascript
+async function asyncFunc() {
+  throw new Error('Problem!'); // (A)
 }
-[](#cb1222-4)asyncFunc()
-[](#cb1222-5).catch(err => {
-[](#cb1222-7)  assert.deepEqual(err, new Error('Problem!'));
+asyncFunc()
+.catch(err => {
+  assert.deepEqual(err, new Error('Problem!'));
 });
 ```
 
@@ -19248,88 +18098,88 @@ JavaScript 拥有以下同步可调用实体的异步版本。它们的角色总
 
 如果从 `async` 函数中返回一个 `Promise` `p`，那么 `p` 将成为函数的结果（或者说，结果“锁定”在 `p` 上，并且行为与它完全相同）。也就是说，该 `Promise` 不会被包装在另一个 `Promise` 中。
 
-```
-[](#cb1223-1)async function asyncFunc() {
-[](#cb1223-2)  return Promise.resolve('abc');
+```javascript
+async function asyncFunc() {
+  return Promise.resolve('abc');
 }
-[](#cb1223-4)asyncFunc()
-[](#cb1223-5).then(result => assert.equal(result, 'abc'));
+asyncFunc()
+.then(result => assert.equal(result, 'abc'));
 ```
 
 记住，任何 `Promise` `q` 在以下情况下会被类似地处理：
 
-- `new Promise((resolve, reject) => { ... })` 内部的 `resolve(q)`
-- `.then(result => { ... })` 内部的 `return q`
-- `.catch(err => { ... })` 内部的 `return q`
+*   `new Promise((resolve, reject) => { ... })` 内部的 `resolve(q)`
+*   `.then(result => { ... })` 内部的 `return q`
+*   `.catch(err => { ... })` 内部的 `return q`
 
 ### 43.2.3 执行异步函数：同步开始，异步结算（进阶）
 
 `async` 函数的执行方式如下：
 
-- 当 `async` 函数启动时，会创建结果对应的 `Promise` `p`。
-- 然后执行函数体。执行有两种离开离开体的方式：
-    - 执行在结算 `p` 的同时**永久地**离开主体：
-        - `return` 完成 `p`。
-        - `throw` 拒绝 `p`。
-    - 执行也可以通过 `await` 等待另一个 `Promise` `q` 的结算时**临时地**离开主体。`async` 函数被暂停，执行离开它。一旦 `q` 结算，执行就会恢复。
-- 在执行第一次离开主体（无论是永久还是临时）后，会返回 `Promise` `p`。
+*   当 `async` 函数启动时，会创建结果对应的 `Promise` `p`。
+*   然后执行函数体。执行有两种离开主体的方式：
+    *   执行在结算 `p` 的同时**永久地**离开主体：
+        *   `return` 完成 `p`。
+        *   `throw` 拒绝 `p`。
+    *   执行也可以通过 `await` 等待另一个 `Promise` `q` 的结算时**临时地**离开主体。`async` 函数被暂停，执行离开它。一旦 `q` 结算，执行就会恢复。
+*   在执行第一次离开主体（无论是永久还是临时）后，会返回 `Promise` `p`。
 
 注意，结果 `p` 结算的通知是异步发生的，正如 `Promise` 一一情况如此。
 
 以下代码演示了 `async` 函数是同步启动的（A 行），然后当前任务完成（C 行），最后结果 `Promise` 异步结算（B 行）。
 
-```
-[](#cb1224-1)async function asyncFunc() {
-[](#cb1224-2)  console.log('asyncFunc() starts'); // (A)
-[](#cb1224-3)  return 'abc';
+```javascript
+async function asyncFunc() {
+  console.log('asyncFunc() starts'); // (A)
+  return 'abc';
 }
-[](#cb1224-5)asyncFunc().
-[](#cb1224-6)then(x => { // (B)
-[](#cb1224-7)  console.log(`Resolved: ${x}`);
+asyncFunc().
+then(x => { // (B)
+  console.log(`Resolved: ${x}`);
 });
-[](#cb1224-9)console.log('Task finished'); // (C)
+console.log('Task finished'); // (C)
 ```
 
 ## 43.3 `await`：与 Promise 操作
 
 `await` 运算符只能在 `async` 函数内部使用；它决定了 `Promise` 的处理方式：
 
-- 当 `async` 函数启动时，会创建结果对应的 `Promise` `p`。
-- 然后执行函数体。执行有两种离开主体的方式：
-    - 执行在结算 `p` 的同时**永久地**离开主体：
-        - `return` 完成 `p`。
-        - `throw` 拒绝 `p`。
-    - 执行也可以通过 `await` 等待另一个 `Promise` `q` 的结算时**临时地**离开主体。`async` 函数被暂停，执行离开它。一旦 `q` 结算，执行就会恢复。
-- 在执行第一次离开主体（无论是永久还是临时）后，会返回 `Promise` `p`。
+*   当 `async` 函数启动时，会创建结果对应的 `Promise` `p`。
+*   然后执行函数体。执行有两种离开主体的方式：
+    *   执行在结算 `p` 的同时**永久地**离开主体：
+        *   `return` 完成 `p`。
+        *   `throw` 拒绝 `p`。
+    *   执行也可以通过 `await` 等待另一个 `Promise` `q` 的结算时**临时地**离开主体。`async` 函数被暂停，执行离开它。一旦 `q` 结算，执行就会恢复。
+*   在执行第一次离开主体（无论是永久还是临时）后，会返回 `Promise` `p`。
 
 ### 43.3.1 `await` 与已完成的 Promise
 
 如果其操作数是一个已完成的 `Promise`，`await` 将返回其完成值：
 
 ```javascript
-[](#cb1225-1)assert.equal(await Promise.resolve('yes'), 'yes!');
+assert.equal(await Promise.resolve('yes'), 'yes!');
 ```
 
-也允许非 Promise 值，它们会直接被传递（同步地）：
+也允许非 `Promise` 值，它们会直接被传递（同步地）：
 
 ```javascript
-[](#cb1226-1)assert.equal(await 'yes!', 'yes!');
+assert.equal(await 'yes!', 'yes!');
 ```
 
 ### 43.3.2 `await` 与被拒绝的 Promise
 
-如果其操作数是一个被被拒绝的 `Promise`，`await` 将抛出拒绝值：
+如果其操作数是一个被拒绝的 `Promise`，`await` 将抛出拒绝值：
 
 ```javascript
-[](#cb1227-1)try {
-[](#cb1227-2)  await Promise.reject(new Error());
-[](#cb1227-3)  assert.fail(); // 我们永远进不到这里
+try {
+  await Promise.reject(new Error());
+  assert.fail(); // 我们永远进不到这里
 } catch (e) {
-[](#cb1227-5)  assert.equal(e instanceof Error, true);
+  assert.equal(e instanceof Error, true);
 }
 ```
 
-![](img/file6.svg) 练习：通过异步函数 Fetch API
+![](img/file6.svg) **练习：通过异步函数 Fetch API**
 
 `exercises/async-functions/fetch_json_test.mjs`
 
@@ -19340,10 +18190,10 @@ JavaScript 拥有以下同步可调用实体的异步版本。它们的角色总
 例如，以下代码无法执行：
 
 ```javascript
-[](#cb1228-1)async function downloadContent(urls) {
-[](#cb1228-2)  return urls.map((url) => {
-[](#cb1228-3)    return await httpGet(url); // 语法错误！
-[](#cb1228-4)  });
+async function downloadContent(urls) {
+  return urls.map((url) => {
+    return await httpGet(url); // 语法错误！
+  });
 }
 ```
 
@@ -19352,19 +18202,16 @@ JavaScript 拥有以下同步可调用实体的异步版本。它们的角色总
 好，让我们试试异步箭头函数：
 
 ```javascript
-[](#cb1229-1)async function downloadContent(urls) {
-[](#cb1229-2)  return urls.map(async (url) => {
-[](#cb1229-3)    return await httpGet(url);
+async function downloadContent(urls) {
+  return urls.map(async (url) => {
+    return await httpGet(url);
   });
 }
 ```
 
-遗憾，这样也不行：`.map()`（因此 `downloadContent()`）返回的是一个包含 Promise 的数组，而不是包含（未拆包）值的数组。
+遗憾的是，这样也不行：`.map()`（因此 `downloadContent()`）返回的是一个包含 `Promise` 的数组，而不是包含（未拆包）值的数组。
 
-
-
-
-一种可能的解决方案是使用 `Promise.all()` 来解开所有的 Promises：
+一种可能的解决方案是使用 `Promise.all()` 来解开所有的 `Promises`：
 
 ```javascript
 async function downloadContent(urls) {
@@ -19375,7 +18222,7 @@ async function downloadContent(urls) {
 }
 ```
 
-这段代码可以改进吗？可以的：在行 A 中，我们通过 `await` 解开了一个 Promise，但紧接着又通过 `return` 将其重新封装。如果我们省略 `await`，我们甚至不需要使用 async 箭头函数：
+这段代码可以改进吗？可以的：在行 A 中，我们通过 `await` 解开了一个 `Promise`，但紧接着又通过 `return` 将其重新封装。如果我们省略 `await`，我们甚至不需要使用 async 箭头函数：
 
 ```javascript
 async function downloadContent(urls) {
@@ -19391,11 +18238,11 @@ async function downloadContent(urls) {
 
 `exercises/async-functions/map_async_test.mjs`
 
-## 43.4 （进阶）
+## 43.4 （进阶）
 
 剩余的所有章节均为高级内容。
 
-## 43.5 立即调用的异步箭头函数
+## 43.5 立即调用的异步箭头函数
 
 如果我们在异步函数之外需要 `await`，可以立即调用一个异步箭头函数：
 
@@ -19407,7 +18254,7 @@ async function downloadContent(urls) {
 })(); // 结束
 ```
 
-立即调用的异步箭头函数的结果是一个 Promise：
+立即调用的异步箭头函数的结果是一个 `Promise`：
 
 ```javascript
 const promise = (async () => 123)();
@@ -19416,7 +18263,7 @@ promise.then(x => assert.equal(x, 123));
 
 立即调用的异步箭头函数用场景是在模块的顶层使用 `await`（例如通过 `fetch()` 下载数据）。
 
-## 43.6 并发与 `await`
+## 43.6 并发与 `await`
 
 在接下来的两个子节中，我们将使用辅助函数 `paused()`：
 
@@ -19437,7 +18284,7 @@ async function paused(id) {
 }
 ```
 
-### 43.6.1 `await`：顺序执行异步函数
+### 43.6.1 `await`：顺序执行异步函数
 
 如果我们在多个异步函数的调用前加上 `await`，那么这些函数将按顺序执行：
 
@@ -19457,9 +18304,9 @@ async function sequentialAwait() {
 // 'END second'
 ```
 
-也就是说，`paused('second')` 只在 `paused('first')` 完全完成后后才会开始。
+也就是说，`paused('second')` 只在 `paused('first')` 完全完成后才会开始。
 
-### 43.6.2 `await`：并发执行异步函数
+### 43.6.2 `await`：并发执行异步函数
 
 如果我们想并发运行多个函数，可以使用工具方法 `Promise.all()`：
 
@@ -19477,7 +18324,7 @@ async function concurrentPromiseAll() {
 // 'END second'
 ```
 
-在这里，两个异步函数是同时启动的。一旦两者都稳定，`await` 会给我们返回一个结果数组，或者如果其中一个 Promise 被拒绝，则抛出一个异常。回顾 42.6 “并发提示：关注开始”，重要的是我们何时开始一个基于 Promise 的计算；而不是我们如何处理它的结果。因此，以下代码与上一个代码一样是“并发”的：
+在这里，两个异步函数是同时启动的。一旦两者都稳定，`await` 会给我们返回一个结果数组，或者如果其中一个 `Promise` 被拒绝，则抛出一个异常。回顾 42.6 “并发提示：关注开始”，重要的是我们何时开始一个基于 `Promise` 的计算；而不是我们如何处理它的结果。因此，以下代码与上一个代码一样是“并发”的：
 
 ```javascript
 async function concurrentAwait() {
@@ -19493,11 +18340,11 @@ async function concurrentAwait() {
 // 'END second'
 ```
 
-## 43.7 使用异步函数的技巧
+## 43.7 使用异步函数的技巧
 
-### 43.7.1 如果“只发不收”，我们就不需要 `await`
+### 43.7.1 如果“只发不收”，我们就不需要 `await`
 
-在处理基于 Promise 的函数时，不需要 `await`；只有当我们想要暂停并等待返回的 Promise 稳定时才需要它。如果我们只想启动一个异步操作，那么就不需要：
+在处理基于 `Promise` 的函数时，不需要 `await`；只有当我们想要暂停并等待返回的 `Promise` 稳定时才需要它。如果我们只想启动一个异步操作，那么就不需要：
 
 ```javascript
 async function asyncFunc() {
@@ -19512,7 +18359,7 @@ async function asyncFunc() {
 
 注意：每次调用 `.write()` 都是同步启动的。这防止了竞态条件。
 
-### 43.7.2 使用 `await` 并忽略结果是有意义的
+### 43.7.2 使用 `await` 并忽略结果是有意义的
 
 有时使用 `await` 即使忽略它的结果也是有意义的，例如：
 
@@ -19523,49 +18370,11 @@ console.log('Done!');
 
 在这里，我们使用 `await` 来等待一个长时间运行的异步操作。这确保了日志记录是在该操作完成*之后*真正发生的。
 
-## 44 异步迭代
+## 44 异步迭代
 
-### 44.1 基础异步迭代
+### 44.1 基础异步迭代
 
-#### 44.1.1 协议：异步迭代
-
-#### 44.1.2 直接使用异步迭代
-
-#### 44.1.3 通过 `for-await-of` 使用异步迭代
-
-### 44.2 异步生成器
-
-#### 44.2.1 示例：通过异步生成器创建异步迭代器
-
-#### 44.2.2 示例：将同步迭代器转换为异步迭代器
-
-#### 44.2.3 示例：将异步迭代器转换为数组
-
-#### 44.2.4 示例：转换异步迭代器
-
-#### 44.2.5 示例：对异步迭代器进行映射
-
-### 44.3 对 Node.js 流进行异步迭代
-
-### 44.3.1 Node.js 流：通过回调 (push) 异步化
-
-### 44.3.2 Node.js 流：通过异步迭代 (pull) 异步化
-
-### 44.3.3 示例：从块到行
-
-* * *
-
-![](img/file0.svg) **必要知识**
-
-对于本章，你应该熟悉：
-
-*   [Promises]
-
-*   [异步函数]
-
-
-
-
+#### 44.1.1 协议：异步迭代
 
 ```javascript
 interface Iterable<T> {
@@ -19580,18 +18389,18 @@ interface IteratorResult<T> {
 }
 ```
 
-* `Iterable` 是一种可以通过迭代访问其内容的数据结构。它是迭代器的工厂。
-* `Iterator` 是迭代结果的工厂，我们通过调用 `.next()` 方法来获取结果。
-* 每一个 `IterationResult` 包含被迭代的 `.value` 和一个布尔值 `.done`，后者在最后一个元素之后为 `true`，在此之前为 `false`。
+*   `Iterable` 是一种可以通过迭代访问其内容的数据结构。它是迭代器的工厂。
+*   `Iterator` 是迭代结果的工厂，我们通过调用 `.next()` 方法来获取结果。
+*   每一个 `IterationResult` 包含被迭代的 `.value` 和一个布尔值 `.done`，后者在最后一个元素之后为 `true`，在此之前为 `false`。
 
 对于异步迭代协议，我们只想改变一点：由 `.next()` 产生的值应该是异步交付的。有两种可以想象的方案：
 
-* `.value` 可以包含一个 `Promise<T>`。
-* `.next()` 可以返回 `Promise<IteratorResult<T>>`。
+*   `.value` 可以包含一个 `Promise<T>`。
+*   `.next()` 可以返回 `Promise<IteratorResult<T>>`。
 
-换句话说，问题在于是将仅仅值还是将整个迭代器结果包装在 Promise 中。
+换句话说，问题在于是将仅仅值还是将整个迭代器结果包装在 `Promise` 中。
 
-必须是后者，因为当 `.next()` 返回结果时，它开始了一个异步计算。该计算是否产生值或信号迭代的结束，只有在它完成后才能确定。因此，`.done` 和 `.value` 都需要被包装在 Promise 中。
+必须是后者，因为当 `.next()` 返回结果时，它开始了一个异步计算。该计算是否产生值或信号迭代的结束，只有在它完成后才能确定。因此，`.done` 和 `.value` 都需要被包装在 `Promise` 中。
 
 异步迭代的接口如下。
 
@@ -19610,7 +18419,7 @@ interface IteratorResult<T> {
 
 与同步接口的唯一区别是 `.next()` 的返回类型（A 行）。
 
-### 44.1.2 直接使用异步迭代
+#### 44.1.2 直接使用异步迭代
 
 以下代码直接使用了异步迭代协议：
 
@@ -19658,10 +18467,6 @@ const result3 = await asyncIterator.next();
 assert.deepEqual(result3, { value: undefined, done: true });
 ```
 
-
-
-
-
 以下异步生成器将同步可迭代转换为转换为异步可迭代。它实现了我们之前过的函数 `syncToAsyncIterable()`。
 
 ```javascript
@@ -19674,7 +18479,13 @@ async function* syncToAsyncIterable(syncIterable) {
 
 注意：在此情况下，输入是同步的（不需要 `await`）。
 
-### 44.2.3 示例：将异步可迭代转换为数组 (Array)
+### 44.2 异步生成器
+
+#### 44.2.1 示例：通过异步生成器创建异步迭代器
+
+#### 44.2.2 示例：将同步迭代器转换为异步迭代器
+
+#### 44.2.3 示例：将异步可迭代转换为数组
 
 以下函数是之前练习的解决方案。它将异步可迭代转换为一个 `Array`（类似于扩展操作，但针对的是异步可迭代而非同步可迭代）。
 
@@ -19706,7 +18517,7 @@ assert.deepEqual(
 
 注意 A 行中的 `await`，它是为了解包 `asyncIterableToArray()` 返回的 `Promise`。为了让 `await` 起作用，这段代码必须在异步函数内部运行。
 
-### 44.2.4 示例：转换异步可迭代
+#### 44.2.4 示例：转换异步可迭代
 
 让我们实现一个异步生成器，通过转换现有的异步可迭代来产生一个新的异步可迭代。
 
@@ -19736,9 +18547,9 @@ assert.deepEqual(
 
 警告：我们很快就会在本章看到此练习的解答。
 
-- `exercises/async-iteration/number_lines_test.mjs`
+*   `exercises/async-iteration/number_lines_test.mjs`
 
-### 44.2.5 示例：在异步可迭代上进行映射 (map)
+#### 44.2.5 示例：在异步可迭代上进行映射
 
 复习一下，对同步可迭代进行映射的方法：
 
@@ -19792,9 +18603,9 @@ assert.deepEqual(
 
 `exercises/async-iteration/filter_async_iter_test.mjs`
 
-## 44.3 对 Node.js 流的异步迭代
+### 44.3 对 Node.js 流的异步迭代
 
-### 44.3.1 Node.js 流：通过回调 (push) 实现异步
+#### 44.3.1 Node.js 流：通过回调 实现异步
 
 传统上，从 Node.js 流中异步读取数据是通过回调完成的：
 
@@ -19813,7 +18624,7 @@ function main(inputFilePath) {
 
 也就是说，由流来控制并向读者推送数据。
 
-### 44.3.2 Node.js 流：通过异步迭代 (pull) 实现异步
+#### 44.3.2 Node.js 流：通过异步迭代 实现异步
 
 从 Node.js 10 开始，我们也可以使用异步迭代从流中读取数据：
 
@@ -19830,7 +18641,7 @@ async function main(inputFilePath) {
 
 这一次，由读者控制并从流中拉取数据。
 
-### 44.3.3 示例：从块 (chunks) 到行 (lines)
+#### 44.3.3 示例：从块 到行
 
 Node.js 流迭代的是数据的*块*（任意长度的片段）。以下异步生成器将基于块的异步可迭代转换为行的异步可迭代：
 
@@ -19877,10 +18688,6 @@ assert.deepEqual(
 );
 ```
 
-
-
-
-
 ```javascript
 async function* numberLines(linesAsync) {
   let lineNumber = 1;
@@ -19900,6 +18707,15 @@ assert.deepEqual(
   ]);
 ```
 
+---
+
+![](img/file0.svg) **必要知识**
+
+对于本章，你应该熟悉：
+
+*   [Promises]
+*   [异步函数]
+
 # 45 正则表达式 (`RegExp`)
 
 ---
@@ -19916,11 +18732,11 @@ assert.deepEqual(
 
 ### 45.2.2 基础原子
 
-### 45.2.3 Unicode 属性转义 ^([ES2018])
+### 45.2.3 Unicode 属性转义 [ES2018]
 
-## 45.3 标志 (Flags)
+## 45.3 标志
 
-### 45.3.1 标志：通过 `/u`  Unicode 模式
+### 45.3.1 标志：通过 `/u` Unicode 模式
 
 ## 45.4 正则表达式对象的属性
 
@@ -19932,15 +18748,15 @@ assert.deepEqual(
 
 ### 45.5.1 默认情况下，正则表达式在字符串的任何位置匹配
 
-### 45.5.2 `regExp.test(str)`：是否存在匹配？ ^([ES3])
+### 45.5.2 `regExp.test(str)`：是否存在匹配？ [ES3]
 
-### 45.5.3 `str.search(regExp)`：匹配的索引在何？ ^([ES3])
+### 45.5.3 `str.search(regExp)`：匹配的索引在何处？ [ES3]
 
-### 45.5.4 `regExp.exec(str)`：捕获组 ^([ES3])
+### 45.5.4 `regExp.exec(str)`：捕获组 [ES3]
 
-### 45.5.5 `str.match(regExp)`：获取所有分组 0 的捕获 ^([ES3])
+### 45.5.5 `str.match(regExp)`：获取所有分组 0 的捕获 [ES3]
 
-### 45.5.6 `str.matchAll(regExp)`：获取所有匹配对象的迭代器 ^([ES2020])
+### 45.5.6 `str.matchAll(regExp)`：获取所有匹配对象的迭代器 [ES2020]
 
 ### 45.5.7 `regExp.exec()` vs. `str.match()` vs. `str.matchAll()`
 
@@ -19968,9 +18784,9 @@ assert.deepEqual(
 
 ### 45.7.2 匹配所有内容或无匹配
 
----
 
-**特性可用性**
+
+# 特性可用性
 
 除非另有说明，每个正则表达式特性自 ES3 以来均可用。
 
@@ -19980,13 +18796,13 @@ assert.deepEqual(
 
 创建正则表达式的两种主要方式为：
 
-*   字面量：静态编译（在加载时）。
+*   **字面量**：静态编译（在加载时）。
 
     ```javascript
     /abc/ui
     ```
 
-*   构造函数：动态编译（在运行时）。
+*   **构造函数**：动态编译（在运行时）。
 
     ```javascript
     new RegExp('abc', 'ui')
@@ -19995,14 +18811,13 @@ assert.deepEqual(
 两个正则表达式都有相同的两个部分：
 
 *   主体 `abc` – 实际的正则表达式。
-
 *   标志 `u` 和 `i`。`Flags` 配置了如何解释模式。例如，`i` 启用不区分大小写的匹配。可用标志列表将在本章后面给出。
 
-### 45.1.2 隆隆与非破坏性修改正则表达式
+### 45.1.2 克隆与非破坏性修改正则表达式
 
 构造函数 `RegExp()` 有两种变体：
 
-*   `new RegExp(pattern : string, flags = '')` ^([ES3])
+*   `new RegExp(pattern: string, flags = '')` ^([ES3])
 
     根据 `pattern` 指定创建一个新的正则表达式。如果 `flags` 为空，则不设置任何标志。
 
@@ -20036,21 +18851,17 @@ new RegExp('/')
 
 *原子*是正则表达式的基本构建单元。
 
-*   *模式字符*是除语法字符*之外*的所有字符。它们匹配自身。`..` 匹配任何字符。我们可以使用标志 `/s` (`dotAll`) 来控制点号是否匹配行终止符。
+*   *模式字符*是除语法字符*之外*的所有字符。它们匹配自身。`.` 匹配任何字符。我们可以使用标志 `/s` (`dotAll`) 来控制点号是否匹配行终止符。
 
-*   *字符类转义*（每个转义匹配一个固定字符）：
+*   *字符转义*（每个转义匹配一个固定字符）：
 
     *   控制转义（针对少数控制字符）：
 
-        *   `\f`: 分页符 (FF)
-
-        *   `\n`: 换符 (LF)
-
-        *   `\r`: 回车符 (CR)
-
-        *   `\t`: 制表符
-
-        *   `\v`: 垂直表符
+        *   `\f`：分页符 (FF)
+        *   `\n`：换行符 (LF)
+        *   `\r`：回车符 (CR)
+        *   `\t`：制表符
+        *   `\v`：垂直制表符
 
     *   任意控制字符：`\cA` (Ctrl-A), …, `\cZ` (Ctrl-Z)
 
@@ -20060,31 +18871,22 @@ new RegExp('/')
 
 *   *字符类转义*（每个转义匹配一组字符中的其中一个）：
 
-    *   `\d`: 数字（等同于 `[0-9]`）
+    *   `\d`：数字（等同于 `[0-9]`）
+        *   `\D`：非数字
 
-        *   `\D`: 非数字
+    *   `\w`：“单词”字符（等同于 `[A-Za-z0-9_]`，与编程语言中的标识符相关）
+        *   `\W`：非单词字符
 
-    *   `\w`: “单词”字符（等同于 `[A-Za-z0-9_]`，与编程语言中的标识符相关）
+    *   `\s`：空白（空格、制表符、行终止符等）
+        *   `\S`：非空白
 
-        *   `\W`: 非单词字符
-
-    *   `\s`: 空白（空格、制表符、行终止符等）
-
-        *   `\S`: 非空白
-
-    *   *Unicode 属性转义* ^([ES2018]): `\p{White_Space}`, `\P{White_Space}` 等。
-
+    *   *Unicode 属性转义* ^([ES2018])：`\p{White_Space}`, `\P{White_Space}` 等。
         *   需要标志 `/u`。
-
         *   在下一个小节中描述。
 
 ### 45.2.3 Unicode 属性转义 ^([ES2018])
 
 #### 45.2.3.1 Unicode 字符属性
-
-
-
-
 
 在 Unicode 标准中，每个字符都有 `properties` —— 描述字符的元数据。属性在定义字符的性质方面起着重要作用。引用 [Unicode 标准，第 3.3 节，D3](http://www.unicode.org/versions/Unicode9.0.0/ch03.pdf)：
 
@@ -20093,39 +18895,32 @@ new RegExp('/')
 以下是属性的几个示例：
 
 *   `Name`：唯一名称，由大写字母、数字、连字符和空格组成——例如：
-
     *   A: `Name = LATIN CAPITAL LETTER A`
     *   `🙂`: `Name = SLIGHTLY SMILING FACE`
 
 *   `General_Category`：对字符进行分类——例如：
-
     *   x: `General_Category = Lowercase_Letter`
     *   $: `General_Category = Currency_Symbol`
 
 *   `White_Space`：用于标记不可见的间距字符，如空格、制表符和换行符——例如：
-
     *   `\t`: `White_Space = True`
     *   π: `White_Space = False`
 
 *   `Age`：引入该字符的 Unicode 标准版本——例如：欧元符号 € 是在 Unicode 标准 2.1 版本中添加的。
-
     *   €: `Age = 2.1`
 
-*   `Block`：连续码点范围。区块（Blocks）不重叠，且名称是唯一的。例如：
-
+*   `Block`：连续码点范围。区块不重叠，且名称是唯一的。例如：
     *   S: `Block = Basic_Latin` (范围 `U+0000..U+007F`)
     *   `🙂`: `Block = Emoticons` (范围 `U+1F600..U+1F64F`)
 
 *   `Script`：由一个或多个写入系统使用的字符集合。
-
     *   某些脚本支持多种写入系统。例如，拉丁脚本支持英语、法语、德语、拉丁语等写入系统。
     *   某些语言可以使用多种备选写入系统编写，这些系统由多个脚本支持。例如，土耳其在 20 世纪初过渡到拉丁脚本之前曾使用阿拉伯脚本。
     *   示例：
-
         *   α: `Script = Greek`
         *   Д: `Script = Cyrillic`
 
-### 45.2.3.2 Unicode 属性转义
+#### 45.2.3.2 Unicode 属性转义
 
 Unicode 属性转义符的格式如下：
 
@@ -20139,40 +18934,40 @@ Unicode 属性转义符的格式如下：
 *   只有在设置了标志 `/u` 的情况下，我们才能使用 Unicode 属性转义。如果没有 `/u`，`\p` 等同于 `p`。
 *   当属性为 `General_Category` 时，形式 (3) 和 (4) 可以作为简写形式使用。例如，以下两个转义符是等效的：
 
-```
-\p{Lowercase_Letter}
-\p{General_Category=Lowercase_Letter}
-```
+    ```
+    \p{Lowercase_Letter}
+    \p{General_Category=Lowercase_Letter}
+    ```
 
 示例：
 
 *   检查空白字符：
 
-```
-> /^\p{White_Space}+$/u.test('\t \n\r')
-true
-```
+    ```
+    > /^\p{White_Space}+$/u.test('\t \n\r')
+    true
+    ```
 
 *   检查希腊字母：
 
-```
-> /^\p{Script=Greek}+$/u.test('μετά')
-true
-```
+    ```
+    > /^\p{Script=Greek}+$/u.test('μετά')
+    true
+    ```
 
 *   删除任何字母：
 
-```
-> '1π2ü3é4'.replace(/\p{Letter}/ug, '')
-'1234'
-```
+    ```
+    > '1π2ü3é4'.replace(/\p{Letter}/ug, '')
+    '1234'
+    ```
 
 *   删除小写字母：
 
-```
-> 'AbCdEf'.replace(/\p{Lowercase_Letter}/ug, '')
-'ACE'
-```
+    ```
+    > 'AbCdEf'.replace(/\p{Lowercase_Letter}/ug, '')
+    'ACE'
+    ```
 
 延伸阅读：
 
@@ -20189,9 +18984,7 @@ true
 
 *   非语法字符代表其自身：`[abc]`
 *   只有以下四个字符是特殊的，且必须通过斜杠进行转义：
-
     `^ \ - ]`
-
     *   `^` 仅在位于开头时需要转义。
     *   `-` 在位于开头或结尾时不需要转义。
 *   字符转义（`\n`, `\u{1F44D}` 等）具有通常含义。
@@ -20203,7 +18996,7 @@ true
 
 *   位置捕获组：`(#+)`
     *   反向引用：`\1`, `\2` 等。
-*   命名捕获组 `^([ES2018])`: `(?<hashes>#+)`
+*   命名捕获组 `^([ES2018])`：`(?<hashes>#+)`
     *   反向引用：`\k<hashes>`
 *   非捕获组：`(?:#+)`
 
@@ -20236,7 +19029,7 @@ true
 
 #### 45.2.7.1 前瞻断言
 
-**正向瞻断言**：`(?=«pattern»)` 如果 `pattern` 匹配后续内容，则匹配。
+**正向前瞻断言**：`(?=«pattern»)` 如果 `pattern` 匹配后续内容，则匹配。
 
 示例：后续跟随 `X` 的小写字母序列。
 
@@ -20247,7 +19040,7 @@ true
 
 注意 `X` 本身不是匹配的一部分。
 
-**负向瞻断言**：`(??!«pattern»)` 如果 `pattern` 不匹配后续内容，则匹配。
+**负向前瞻断言**：`(?!«pattern»)` 如果 `pattern` 不匹配后续内容，则匹配。
 
 示例：后续不是 `X` 的小写字母序列。
 
@@ -20258,13 +19051,11 @@ true
 
 #### 45.2.7.2 后行断言
 
-（注：此处原文未提供内容，根据逻辑通常如下）
-
 **正向后行断言**：`(?<=«pattern»)` 如果 `pattern` 匹配前置内容，则匹配。
 
 **负向后行断言**：`(?<!«pattern»)` 如果 `pattern` 不匹配前置内容，则匹配。
 
-### 45.2.8 析取 (`|`）
+### 45.2.8 析取 (`|`)
 
 注意：`|` 的优先级较低。必要时使用分组：
 
@@ -20288,77 +19079,69 @@ JavaScript 支持正则表达式标志：
 以下是 JavaScript 支持的正则表达式标志（见表 21):
 
 *   `/g` (`.global`）：根本上改变了以下方法的工作方式。
-
     *   `RegExp.prototype.test()`
     *   `RegExp.prototype.exec()`
     *   `String.prototype.match()`
-
     具体说明请见 [§45.6.1 “标志 `/g` 和 `/y`”]。简而言之，没有 `/g`，这些方法只考虑输入字符串中正则表达式的第一个匹配。有了 `/g`，它们会考虑所有匹配项。
 
 *   `/i` (`.ignoreCase`）：开启不区分大小写的匹配：
 
-
-
-
-
-```
-> /a/.test('A')
-false
-> /a/i.test('A')
-true
-```
+    ```
+    > /a/.test('A')
+    false
+    > /a/i.test('A')
+    true
+    ```
 
 *   `/m` (`.multiline`): 如果开启此标志，`^` 匹配每行的开头，`$` 匹配每行的结尾。如果未开启，`^` 匹配整个输入字符串的开头，`$` 匹配整个输入字符串的结尾。
 
-```javascript
-> 'a1\na2\na3'.match(/^a./gm)
-[ 'a1', 'a2', 'a3' ]
-> 'a1\na2\na3'.match(/^a./g)
-[ 'a1' ]
-```
+    ```javascript
+    > 'a1\na2\na3'.match(/^a./gm)
+    [ 'a1', 'a2', 'a3' ]
+    > 'a1\na2\na3'.match(/^a./g)
+    [ 'a1' ]
+    ```
 
 *   `/u` (`.unicode`): 此标志为正则表达式开启 Unicode 模式。该模式将在下一个小节中详细解释。
 
 *   `/y` (`.sticky`): 此标志主要在与 `/g` 结合使用时才有意义。当两者都开启时，任何匹配都必须紧跟上一个匹配（即它必须从正则表达式对象的 `.lastIndex` 索引开始）。因此，第一个匹配必须位于索引 0。
 
-```javascript
-> 'a1a2 a3'.match(/a./gy)
-[ 'a1', 'a2' ]
-> '_a1a2 a3'.match(/a./gy) // 第一个匹配必须位于索引 0
-null
+    ```javascript
+    > 'a1a2 a3'.match(/a./gy)
+    [ 'a1', 'a2' ]
+    > '_a1a2 a3'.match(/a./gy) // 第一个匹配必须位于索引 0
+    null
 
-> 'a1a2 a3'.match(/a./g)
-[ 'a1', 'a2', 'a3' ]
-> '_a1a2 a3'.match(/a./g)
-[ 'a1', 'a2', 'a3' ]
-```
+    > 'a1a2 a3'.match(/a./g)
+    [ 'a1', 'a2', 'a3' ]
+    > '_a1a2 a3'.match(/a./g)
+    [ 'a1', 'a2', 'a3' ]
+    ```
 
-`/y` 的主要用例是分词（在解析期间）。
+    `/y` 的主要用例是分词（在解析期间）。
 
 *   `/s` (`.dotAll`): 默认情况下，点号 `.` 不匹配行终止符。开启此标志后，它可以匹配：
 
-```javascript
-> /./.test('\n')
-false
-> /./s.test('\n')
-true
-```
+    ```javascript
+    > /./.test('\n')
+    false
+    > /./s.test('\n')
+    true
+    ```
 
-如果不支持 `/s` 的替代方案：使用 `[^]` 代替点号。
+    如果不支持 `/s` 的替代方案：使用 `[^]` 代替点号。
 
-```javascript
-> /[^]/.test('\n')
-true
-```
+    ```javascript
+    > /[^]/.test('\n')
+    true
+    ```
 
 ### 45.3.1 标志：通过 `/u` 开启 Unicode 模式
 
 `/u` 标志为正则表达式开启了一种特殊的 Unicode 模式。该模式启用了若干功能：
 
 *   在模式中，我们可以使用 Unicode 代码点转义（如 `\u{1F42A}`）来指定字符。代码单元转义（如 `\u03B1`）只有四个十六进制数字（对应基本多语言平面）。
-
 *   在模式中，我们可以使用 Unicode 属性转义（如 `\p{White_Space}`）。
-
 *   许多转义字符现在被禁止了。例如：`\a \- \:`
 
 模式字符始终匹配其本身：
@@ -20379,7 +19162,6 @@ true
 
 *   `\p` 开始一个 Unicode 属性转义。
 *   剩余的“自匹配”转义被禁止了。结果是它们现在可以用于未来的新功能。
-
 *   匹配的原子单位是 Unicode 字符（代码点），而不是 JavaScript 字符（代码单元）。
 
 接下来的小节将详细解释最后一项。它们使用以下 Unicode 字符来解释何时原子单位是 Unicode 字符，以及何时是 JavaScript 字符：
@@ -20453,7 +19235,7 @@ true
 *   严格来说，只有 `.lastIndex` 是真正的实例属性。所有其他属性都是通过 getter 实现的。
 *   因此，`.lastIndex` 是唯一的可变属性。所有其他属性都是只读的。如果我们想更改它们，需要复制正则表达式（详情请参 [§45.1.2 “克隆和非破坏性修改正则表达式”）。
 
-### 45.4.1 属性属性的标志
+### 45.4.1 标志属性
 
 每个正则表达式标志以属性的形式存在，具有更长、更具描述性的名称：
 
@@ -20478,18 +19260,20 @@ false
 每个正则表达式还有以下属性：
 
 *   `.source` (ES3): 正则表达式模式
-```javascript
-> /abc/ig.source
-'abc'
-```
+
+    ```javascript
+    > /abc/ig.source
+    'abc'
+    ```
 
 *   `.flags` (ES6): 正则表达式的标志
-```javascript
-> /abc/ig.flags
-'gi'
-```
 
-*   `.lastIndex` (ES3): 在开启标志 `/g` 时使用。详情请参阅 [§45.6 “g 和 y 标志”。
+    ```javascript
+    > /abc/ig.flags
+    'gi'
+    ```
+
+*   `.lastIndex` (ES3): 在开启标志 `/g` 时使用。详情请参阅 [§45.6 “g 和 y 标志”]。
 
 ## 45.5 处理表达式的方法
 
@@ -20568,7 +19352,7 @@ assert.deepEqual(
 
 结果是一个包含以下属性的*匹配对象*：
 
-*   `[0]`:正则表达式匹配的完整子字符串
+*   `[0]`: 正则表达式匹配的完整子字符串
 *   `[1]`: 位置组 1 的捕获（依此类推）
 *   `.index`: 匹配发生在哪里？
 *   `.input`: 用于匹配的字符串
@@ -20577,10 +19361,6 @@ assert.deepEqual(
 #### 45.5.4.2 命名捕获组 (ES2018)
 
 之前的示例包含一个单独的位置捕获组。下面的示例演示了命名组：
-
-
-
-
 
 ```javascript
 assert.deepEqual(
@@ -20637,7 +19417,7 @@ while (match = regExp.exec(str)) {
 
 ![](img/file4.svg) **在共享带有 `/g` 的正则表达式时要小心！**
 
-共享带有 `/g` 的正则表达式会有一些陷阱，这些陷将在后文中解释。
+共享带有 `/g` 的正则表达式会有一些陷阱，这些陷阱将在后文中解释。
 
 ![](img/file6.svg) **练习：通过 `.exec()` 提取引号文本**
 
@@ -20751,7 +19531,6 @@ for (const match of str.matchAll(regex)) {
 - `searchValue` 可以是：
     - 字符串
     - 正则表达式
-
 - `replacementValue` 可以是：
     - 字符串：字符 `$` 具有特殊含义并允许我们插入分组
     - 函数：计算用于替换的字符串
@@ -20811,29 +19590,20 @@ for (const match of str.matchAll(regex)) {
   'xxx'
   ```
 
+- 不带 `/g` 的正则表达式：会抛出 `TypeError`（因为 `.replaceAll()` 的目的是替换所有出现项）。
 
-
-
-
-```
-> 'aaa'.replaceAll('a', 'x')
-'xxx'
-```
-
-- 不带 `/g` 的正则表达式：：会抛出 `TypeError`（因为 `.replaceAll()` 的目的是替换所有出现项）。
-
-```
-> 'aaa'.replaceAll(/a/, 'x')
-TypeError: String.prototype.replaceAll called with
-a non-global RegExp argument
-```
+  ```
+  > 'aaa'.replaceAll(/a/, 'x')
+  TypeError: String.prototype.replaceAll called with
+  a non-global RegExp argument
+  ```
 
 #### 45.5.8.3 `.replace()` 和 `.replaceAll()` 的参数 `replacementValue`
 
 到目前为止，我们只使用过简单字符串作为 `replacementValue` 参数，但它可以实现更多功能。如果它的值是：
 
-字体 字符串，则匹配项将用该字符串替换。字符 `$` 具有特殊含义，允许我们插入捕获组的内容等（详情请参阅后文）。
-- 一个函数，则匹配项将用通过该函数计算出的字符串进行替换。
+*   字符串，则匹配项将用该字符串替换。字符 `$` 具有特殊含义，允许我们插入捕获组的内容等（详情请参阅后文）。
+*   一个函数，则匹配项将用通过该函数计算出的字符串进行替换。
 
 #### 45.5.8.4 `replacementValue` 是字符串
 
@@ -20888,12 +19658,12 @@ assert.equal(
 
 替换函数接收以下参数。注意它们与匹配对象（match objects）是多么相似。这些参数都是位置参数，但我包含了人们可能如何命名它们：
 
-- `all`: 完整匹配
-- `g1`: 位置组 1 的捕获
-- 等此类推
-- `index`: 匹配发生在哪里？
-- `input`: 正在其中替换的字符串
-- `groups` ^([ES2018]): 命名组的捕获（一个对象）
+*   `all`: 完整匹配
+*   `g1`: 位置组 1 的捕获
+*   等此类推
+*   `index`: 匹配发生在哪里？
+*   `input`: 正在其中替换的字符串
+*   `groups` ^([ES2018]): 命名组的捕获（一个对象）
 
 ### 45.5.9 处理正则表达式的其他方法
 
@@ -20916,8 +19686,8 @@ assert.equal(
 
 每个方法对 `/g` 和 `/y` 的反应都不同；这给了我们一个大致的印象：
 
-- `/g` (`.global`, ES3): 标准表达式应该在字符串的任何地方多次匹配。
-- `/y` (`.sticky`, ES6): 字符串中的任何匹配都应该紧跟在上一个匹配之后（匹配项“粘”在一起）。
+*   `/g` (`.global`, ES3): 标准表达式应该在字符串的任何地方多次匹配。
+*   `/y` (`.sticky`, ES6): 字符串中的任何匹配都应该紧跟在上一个匹配之后（匹配项“粘”在一起）。
 
 如果正则表达式既没有 `/g` 标志也没有 `/y` 标志，则匹配只发生一次并从开始开始。
 
@@ -20925,18 +19695,18 @@ assert.equal(
 
 有三组与正则表达式相关的方法：
 
-1. 字符串方法 `.search(regExp)` 和 `.split(regExp)` 完全忽略了 `/g` 和 `/y`（因此也忽略 `.lastIndex`）。
-2. `RegExp` 方法 `.exec(str)` 和 `.test(str)` 在设置了 `/g` 或 `/y` 时会以两种方式发生变化。
+1.  字符串方法 `.search(regExp)` 和 `.split(regExp)` 完全忽略了 `/g` 和 `/y`（因此也忽略 `.lastIndex`）。
+2.  `RegExp` 方法 `.exec(str)` 和 `.test(str)` 在设置了 `/g` 或 `/y` 时会以两种方式发生变化。
     首先，我们通过重复调用该方法获取多次匹配。每次调用都会返回另一个结果（匹配对象或 `true`）或一个“结果结束”的值（`null` 或 `false`）。
     其次，正则表达式属性 `.lastIndex` 用于遍历输入字符串。一方面，`.lastIndex` 决定了匹配开始的位置：
-    - `/g` 意味着匹配必须从 `.lastIndex` 或之后开始。
-    - `/y` 意味着匹配必须正好从 `.lastIndex` 开始。也就是说，正则表达式的开头锚定在 `.lastIndex` 上。
+    *   `/g` 意味着匹配必须从 `.lastIndex` 或之后开始。
+    *   `/y` 意味着匹配必须正好从 `.lastIndex` 开始。也就是说，正则表达式的开头锚定在 `.lastIndex` 上。
     注意 `^` 和 `$` 继续像往常一样工作：它们将匹配锚定在输入字符串的开头或结尾，除非设置了 `.multiline`。此时它们锚定在行的开头或结尾。
     另一方面，`.lastIndex` 被设置为上一次匹配的最后一个索引加 1。
-3. 所有其他方法受影响的情况如下：
-    - `/g` 导致多次匹配。
-    - `/y` 导致必须在 `.lastIndex` 开始的单次匹配。
-    - `/yg` 导致没有间隙的多次匹配。
+3.  所有其他方法受影响的情况如下：
+    *   `/g` 导致多次匹配。
+    *   `/y` 导致必须在 `.lastIndex` 开始的单次匹配。
+    *   `/yg` 导致没有间隙的多次匹配。
 
 这是一个初步概述。接下来的章节将进入更多细节。
 
@@ -21029,10 +19799,6 @@ assert.equal(
 ```
 
 或者带有 `/y` 时：
-
-
-
-
 
 ```
 > const re = /#/y; re.lastIndex = 1;
@@ -21298,10 +20064,6 @@ assert.equal(countMatches(myRegExp, 'babaa'), 3); // OK！
 
 ### 45.6.4 `.lastIndex` 的用例：从给定索引开始匹配
 
-
-
-
-
 除了存储状态，`.lastIndex` 还可以用于从指定的索引开始匹配。本节将描述如何实现。
 
 #### 示例：检查正则表达式是否在指定索引处匹配
@@ -21381,10 +20143,10 @@ assert.equal(
 
 正则表达式属性 `.lastIndex` 有两个显著缺点：
 
-- 它使正则表达式变得有状态的：
-    - 我们现在必须留意正则表达式的状态以及如何共享它们。
-    - 对于许多用例，我们无法无法通过冻结（freezing）来使其变为不可变。
-- 对 `.lastIndex` 的支持在不同的正则表达式操作之间是不一致的。
+*   它使正则表达式变得有状态的：
+    *   我们现在必须留意正则表达式的状态以及如何共享它们。
+    *   对于许多用例，我们无法无法通过冻结（freezing）来使其变为不可变。
+*   对 `.lastIndex` 的支持在不同的正则表达式操作之间是不一致的。
 
 相反，`.lastIndex` 也为我们提供了额外的有用功能：我们可以规定匹配应该开始的位置（针对某些操作）。
 
@@ -21392,8 +20154,8 @@ assert.equal(
 
 以下方法完全不受 `/g` 和 `/y` 的影响：
 
-- `String.prototype.search()`
-- `String.prototype.split()`
+*   `String.prototype.search()`
+*   `String.prototype.split()`
 
 下表解释了其余与正则表达式相关的方法如何受到这两个标志的影响：
 
@@ -21421,16 +20183,16 @@ const s = '##-#';
 
 缩写：
 
-- `{i:2}`：属性 `.index` 值为 `2` 的匹配对象
-- `.lI` upd：`.lastIndex` 更新
-- `.lI` reset：`.lastIndex` 重置为零
-- `.lI` unch：`.lastIndex` 不变
+*   `{i:2}`：属性 `.index` 值为 `2` 的匹配对象
+*   `.lI` upd：`.lastIndex` 更新
+*   `.lI` reset：`.lastIndex` 重置为零
+*   `.lI` unch：`.lastIndex` 不变
 
 上表是通过一个 [Node.js 脚本](https://gist.github.com/rauschma/5c90e6c19923611521a61e199d8cb15b) 生成的。
 
-###正则表达式技巧
+## 正则表达式技巧
 
-#### 为正则表达式转义任意文本
+### 为正则表达式转义任意文本
 
 以下函数可以转义任意文本：
 
@@ -21440,47 +20202,26 @@ function escapeRegExp(string) {
 }
 ```
 
-#### 匹配所有或空
+### 匹配所有或空
 
 有时，我们需要一个匹配所有或空的正则表达式，例如默认值。
 
-- 匹配所有：`(?:)`
-  空非捕获分组 `(?:)` 匹配所有内容。
+*   匹配所有：`(?:)`
+    空非捕获分组 `(?:)` 匹配所有内容。
+*   匹配空：`^`
+    `^` 仅匹配字符串开头。点号会跳过第一个字符。
 
-- 匹配空：`^`
-  `^` 仅匹配字符串开头。点号会跳过第一个字符。
-
-
-
-
-
-## 46.5.3 创建日期的其他方法
-
-## 46.6 Getters 和 setters
-
-### 46.6.1 时间单位的 getters 和 setters
-
-## 46.7 将日期转换为字符串
-
-### 46.7.1 包含时间的字符串
-
-### 46.7.2 包含日期的字符串
-
-### 46.7.3 包含日期和时间的字符串
-
-### 46.7.4 其他方法
-
-本章描述了 JavaScript 用于日期的 API —— `Date` 类。
+# 日期
 
 ## 46.1 最佳实践：避免使用内置的 `Date`
 
 JavaScript 的 `Date` API 使用起来非常繁琐。因此，对于任何与日期相关的操作，最好依赖第三方库。流行的库包括：
 
-* [Moment.js](https://momentjs.com)
-* [Day.js](https://github.com/iamkun/dayjs)
-* [Luxon](https://moment.github.io/luxon/)
-* [js-joda](https://js-joda.github.io/js-joda/)
-* [date-fns](https://github.com/date-fns/date-fns)
+*   [Moment.js](https://momentjs.com)
+*   [Day.js](https://github.com/iamkun/dayjs)
+*   [Luxon](https://moment.github.io/luxon/)
+*   [js-joda](https://js-joda.github.io/js-joda/)
+*   [date-fns](https://github.com/date-fns/date-fns)
 
 请参考博客文章[“为什么你不应该使用 Moment.js……”](https://inventi.studio/en/blog/why-you-shouldnt-use-moment-js) 来了解这些库的优缺点。
 
@@ -21490,9 +20231,8 @@ JavaScript 的 `Date` API 使用起来非常繁琐。因此，对于任何与日
 
 有两点需要记住：
 
-* `Tree-shaking`（摇树优化）可以显著减小库的大小。这项技术仅向 Web 服务器部署那些在某些地方被导入的导出。函数比类更易进行摇树优化。
-
-* 对时区的支持：如后文所述，`Date` 不支持时区，这引入了许多陷阱并是一个主要的弱点。请确保你的日期库支持时区。
+*   `Tree-shaking`（摇树优化）可以显著减小库的大小。这项技术仅向 Web 服务器部署那些在某些地方被导入的导出。函数比类更易进行摇树优化。
+*   对时区的支持：如后文所述，`Date` 不支持时区，这引入了许多陷阱并是一个主要的弱点。请确保你的日期库支持时区。
 
 ## 46.2 时间标准
 
@@ -21500,30 +20240,28 @@ JavaScript 的 `Date` API 使用起来非常繁琐。因此，对于任何与日
 
 UTC、Z 和 GMT 是指定时间的几种方式，它们相似但有细微差别：
 
-* UTC（协调世界时）是所有时区所依据的时间标准。时区是相对于 UTC 指定的。也就是说，没有任何国家或地区将 UTC 作为其本地时区。
-
-* Z（祖鲁时区）是一种军事时区，通常在航空和军事领域用作 UTC+0 的别名。
-
-* GMT（格林维治标准时间）是某些欧洲和非洲国家使用的时区。它是 UTC 加上零小时，因此其其时间与 UTC 相同。
+*   UTC（协调世界时）是所有时区所依据的时间标准。时区是相对于 UTC 指定的。也就是说，没有任何国家或地区将 UTC 作为其本地时区。
+*   Z（祖鲁时区）是一种军事时区，通常在航空和军事领域用作 UTC+0 的别名。
+*   GMT（格林威治标准时间）是某些欧洲和非洲国家使用的时区。它是 UTC 加上零小时，因此其时间与 UTC 相同。
 
 来源：
 
-* [“GMT 和 UTC 的区别”](https://www.timeanddate.com/time/gmt-utc-time.html) 来自 TimeAndDate.com
-* [“Z – 祖鲁时区（军事时间）”](https://www.timeanddate.com/time/zones/z) 来自 TimeAndDate.com
+*   [“GMT 和 UTC 的区别”](https://www.timeanddate.com/time/gmt-utc-time.html) 来自 TimeAndDate.com
+*   [“Z – 祖鲁时区（军事时间）”](https://www.timeanddate.com/time/zones/z) 来自 TimeAndDate.com
 
 ### 46.2.2 日期不支持时区
 
 日期支持以下时间标准：
 
-* 本地时区（取决于当前位置）
-* UTC
-* 时间偏移（相对于 UTC）
+*   本地时区（取决于当前位置）
+*   UTC
+*   时间偏移（相对于 UTC）
 
 根据操作，只有部分选项可用。例如，在将日期转换为字符串或提取如日期等时间单位时，你只能在本地时区和 UTC 之间进行选择。
 
 日期在内部以 UTC 形式存储。在从本地时区转换或反之时，必要的偏移量是通过日期确定的。在下面的示例中，本地时区是 Europe/Paris：
 
-```
+```javascript
 // CEST (欧洲夏令时间)
 assert.equal(
   new Date('2122-06-29').getTimezoneOffset(), -120);
@@ -21550,21 +20288,20 @@ assert.equal(
 
 无法指定时区有两个缺点：
 
-* 它导致无法支持多个时区。
-* 它可能导致特定区域的 bug。例如，上一个示例根据执行位置的不同产生不同的结果。为了安全起见：
-
-    * 尽可能使用基于 UTC 的操作
-    * 在解析字符串时使用 `Z` 或时间偏移（更多信息见下一节）。
+*   它导致无法支持多个时区。
+*   它可能导致特定区域的 bug。例如，上一个示例根据执行位置的不同产生不同的结果。为了安全起见：
+    *   尽可能使用基于 UTC 的操作
+    *   在解析字符串时使用 `Z` 或时间偏移（更多信息见下一节）。
 
 ## 46.3 背景：日期时间格式 (ISO)
 
 日期-时间格式描述了：
 
-* 以下方法接受的字符串：
-    * `Date.parse()`
-    * `new Date()`
-* 以下方法返回的（总是长格式）：
-    * `Date.prototype.toISOString()`
+*   以下方法接受的字符串：
+    *   `Date.parse()`
+    *   `new Date()`
+*   以下方法返回的（总是长格式）：
+    *   `Date.prototype.toISOString()`
 
 以下是 `.toISOString()` 返回的日期时间字符串示例：
 
@@ -21574,35 +20311,31 @@ assert.equal(
 
 日期时间格式具有以下结构：
 
-* 日期格式：Y=年；M=月；D=日
+*   日期格式：Y=年；M=月；D=日
     ```
     YYYY-MM-DD
     YYYY-MM
     YYYY
     ```
-
-* 时间格式：T=分隔符（字符串 `'T'`）；H=小时；m=分钟；s=秒和毫秒；Z=祖鲁时区（字符串 `'Z'`）
+*   时间格式：T=分隔符（字符串 `'T'`）；H=小时；m=分钟；s=秒和毫秒；Z=祖鲁时区（字符串 `'Z'`）
     ```
     THH:mm:ss.sss
     THH:mm:ss.sssZ
-
     THH:mm:ss
     THH:mm:ssZ
     ```
-
-* 日期时间格式：`YYYY-MM-DD` 紧接 `THH:mm:ss.sss`。
+*   日期时间格式：`YYYY-MM-DD` 紧接 `THH:mm:ss.sss`。
 
 ### 46.3.1 提示：附加 `Z` 使日期解析具有确定性
 
 如果你在字符串末尾添加 `Z`，日期解析在不同位置就不会产生不同的结果：
 
-* 没有 `Z`：输入为 1 月 27 日（本地时区），输出为 1 月 26 日（UTC）。
+*   没有 `Z`：输入为 1 月 27 日（本地时区），输出为 1 月 26 日（UTC）。
     ```
     > new Date('2077-01-27T00:00').toISOString()
     '2077-01-26T23:00:00.000Z'
     ```
-
-* 有 `Z`：输入为 1 月 27 日。
+*   有 `Z`：输入为 1 月 27 日。
     ```
     > new Date('2077-01-27T00:00Z').toISOString()
     '2077-01-27T00:00:00.000Z'
@@ -21614,7 +20347,7 @@ assert.equal(
 
 时间值可用于创建 Date：
 
-```
+```javascript
 const timeValue = 0;
 assert.equal(
   new Date(timeValue).toISOString(),
@@ -21630,7 +20363,7 @@ assert.equal(
 
 操作符会将操作数转换为数字。因此，你可以使用这些运算符来比较 Date：
 
-```
+```javascript
 assert.equal(
   new Date('1972-05-03') < new Date('2001-12-23'), true);
 
@@ -21642,30 +20375,30 @@ assert.equal(73699200000 < 1009065600000, true);
 
 以下方法创建时间值：
 
-* `Date.now(): number` (UTC)
+*   `Date.now(): number` (UTC)
     返回当前时间的时间值。
-* `Date.parse(dateTimeStr: string): number` (本地时区、UTC、时间偏移)
+*   `Date.parse(dateTimeStr: string): number` (本地时区、UTC、时间偏移)
     解析 `dateTimeStr` 并返回对应的时间值。
-* `Date.UTC(year, month, date?, hours?, minutes?, seconds?, milliseconds?): number` (UTC)
+*   `Date.UTC(year, month, date?, hours?, minutes?, seconds?, milliseconds?): number` (UTC)
     返回指定 UTC 日期时间的值。
 
 ### 46.4.2 获取和设置时间值
 
-* `Date.prototype.getTime(): number` (UTC)
+*   `Date.prototype.getTime(): number` (UTC)
     返回对应 Date 的时间值。
-* `Date.prototype.setTime(timeValue)` (UTC)
+*   `Date.prototype.setTime(timeValue)` (UTC)
     将 `this` 设置为由 `timeValue` 编码的日期。
 
+## 46.5 创建日期
 
-
-
+### 46.5.1 通过时间单位创建
 
 `new Date(year: number, month: number, date?: number, hours?: number, minutes?: number, seconds?: number, milliseconds?: number)` (本地时区)
 
 其中两个参数存在陷阱：
 
-- 对于 `month`，0 代表 1 月，1 代表 2 月，以此此类推。
-- 如果 0 ≤ `year` ≤ 99，则会加上 1900 年：
+*   对于 `month`，0 代表 1 月，1 代表 2 月，以此类推。
+*   如果 0 ≤ `year` ≤ 99，则会加上 1900 年：
 
 ```javascript
 > new Date(12, 1, 22, 19, 11).getFullYear()
@@ -21683,7 +20416,7 @@ assert.equal(73699200000 < 1009065600000, true);
 
 注意，输入的小时 (21) 与输出的小时 (20) 不同。前者指的是本地时区，后者指的是 UTC。
 
-### 46.5.2 从字符串解析日期
+### 46.5.2 从字符串解析日期
 
 `new Date(dateTimeStr: string)` (本地时区, UTC, 时间偏移)
 
@@ -21708,55 +20441,54 @@ assert.equal(73699200000 < 1009065600000, true);
 '2077-01-27T00:00:00.000Z'
 ```
 
-### 46.5.3 创建日期的其他方法
+### 46.5.3 创建日期的其他方法
 
-- `new Date(timeValue: number)` (UTC)
+*   `new Date(timeValue: number)` (UTC)
 
-```javascript
-> new Date(0).toISOString()
-'1970-01-01T00:00:00.000Z'
-```
+    ```javascript
+    > new Date(0).toISOString()
+    '1970-01-01T00:00:00.000Z'
+    ```
 
-- `new Date()` (UTC)
+*   `new Date()` (UTC)
+    同于 `new Date(Date.now())`。
 
-同于 `new Date(Date.now())`。
+## 46.6 Getters 和 setters
 
-## 46.6 Getter 和 setter
-
-### 46.6.1 时间单位的 getter 和 setter
+### 46.6.1 时间单位的 getters 和 setters
 
 日期具有时间单位的 getter 和 setter——例如：
 
-- `Date.prototype.getFullYear()`
-- `Date.prototype.setFullYear(num)`
+*   `Date.prototype.getFullYear()`
+*   `Date.prototype.setFullYear(num)`
 
 这些 getter 和 setter 遵循以下模式：
 
-- 本地时区：
-    - `Date.prototype.get«Unit»()`
-    - `Date.prototype.set«Unit»(num)`
-- UTC:
-    - `Date.prototype.getUTC«Unit»()`
-    - `Date.prototype.setUTC«Unit»(num)`
+*   本地时区：
+    *   `Date.prototype.get«Unit»()`
+    *   `Date.prototype.set«Unit»(num)`
+*   UTC:
+    *   `Date.prototype.getUTC«Unit»()`
+    *   `Date.prototype.setUTC«Unit»(num)`
 
 这些是支持的时间单位：
 
-- 日期 (Date)
-    - `FullYear`
-    - `Month`: 月份 (0–11)。**陷阱：** 0 是 1 月，等等。
-    - `Date`: 月的几 (1–31)
-    - `Day` (仅限 getter): 星期 (0–6, 0 是周日)
-- 时间 (Time)
-    - `Hours`: 小时 (0–23)
-    - `Minutes`: 分钟 (0–59)
-    - `Seconds`: 秒 (0–59)
-    - `Milliseconds`: 毫秒 (0–999)
+*   日期 (Date)
+    *   `FullYear`
+    *   `Month`：月份 (0–11)。**陷阱：** 0 是 1 月，等等。
+    *   `Date`：月的几 (1–31)
+    *   `Day` (仅限 getter)：星期 (0–6, 0 是周日)
+*   时间 (Time)
+    *   `Hours`：小时 (0–23)
+    *   `Minutes`：分钟 (0–59)
+    *   `Seconds`：秒 (0–59)
+    *   `Milliseconds`：毫秒 (0–999)
 
 还有一个 getter 不符合上述的模式：
 
-- `Date.prototype.getTimezoneOffset()`
+*   `Date.prototype.getTimezoneOffset()`
 
-返回本地时区与 UTC 之间的时间差（分钟分钟）。例如，对于 Europe/Paris，它返回 `-120` (CEST，中欧夏令时间) 或 `-60` (CET，中欧时间)：
+返回本地时区与 UTC 之间的时间差（分钟）。例如，对于 Europe/Paris，它返回 `-120` (CEST，中欧夏令时间) 或 `-60` (CET，中欧时间)：
 
 ```javascript
 > new Date('2122-06-29').getTimezoneOffset()
@@ -21765,7 +20497,7 @@ assert.equal(73699200000 < 1009065600000, true);
 -60
 ```
 
-## 46.7 将日期转换为字符串
+## 46.7 将日期转换为字符串
 
 示例日期：
 
@@ -21773,48 +20505,50 @@ assert.equal(73699200000 < 1009065600000, true);
 const d = new Date(0);
 ```
 
-### 46.7.1 包含时间的字符串
+### 46.7.1 包含时间的字符串
 
-- `Date.prototype.toTimeString()` (本地时区)
+*   `Date.prototype.toTimeString()` (本地时区)
 
-```javascript
-> d.toTimeString()
-'01:00:00 GMT+0100 (Central European Standard Time)'
-```
+    ```javascript
+    > d.toTimeString()
+    '01:00:00 GMT+0100 (Central European Standard Time)'
+    ```
 
-### 46.7.2 包含日期的字符串
+### 46.7.2 包含日期的字符串
 
-- `Date.prototype.toDateString()` (本地时区)
+*   `Date.prototype.toDateString()` (本地时区)
 
-```javascript
-> d.toDateString()
-'Thu Jan 01 1970'
-```
+    ```javascript
+    > d.toDateString()
+    'Thu Jan 01 1970'
+    ```
 
-### 46.7.3 包含日期和时间的字符串
+### 46.7.3 包含日期和时间的字符串
 
-- `Date.prototype.toString()` (本地时区)
+*   `Date.prototype.toString()` (本地时区)
 
-```javascript
-> d.toString()
-'Thu Jan 01 1970 01:00:00 GMT+0100 (Central European Standard Time)'
-```
+    ```javascript
+    > d.toString()
+    'Thu Jan 01 1970 01:00:00 GMT+0100 (Central European Standard Time)'
+    ```
 
-- `Date.prototype.toUTCString()` (UTC)
+*   `Date.prototype.toUTCString()` (UTC)
 
-```javascript
-> d.toUTCString()
-'Thu, 01 Jan 1970 00:00:00 GMT'
-```
+    ```javascript
+    > d.toUTCString()
+    'Thu, 01 Jan 1970 00:00:00 GMT'
+    ```
 
-- `Date.prototype.toISOString()` (UTC)
+*   `Date.prototype.toISOString()` (UTC)
 
-```javascript
-> d.toISOString()
-'1970-01-01T00:00:00.000Z'
-```
+    ```javascript
+    > d.toISOString()
+    '1970-01-01T00:00:00.000Z'
+    ```
 
-### 46.7.4 其他方法
+### 46.7.4 其他方法
+
+
 
 以下三个方法并不真正属于 ECMAScript 标准，而是属于 [ECMAScript 国际化 API](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl)。该 API 提供了许多格式化日期的功能（包括对时区的支持），但不用于解析。
 
@@ -21826,36 +20560,15 @@ const d = new Date(0);
 
 `exercises/dates/create_date_string_test.mjs`
 
-# 47 创建和解析 JSON (`JSON`)
+# 47 创建和解析 JSON (`JSON`)
 
-* * *
+---
 
-- 47.1 [JSON 的发现与标准化]
-    - 47.1.1 [JSON 的语法是冻结]
-- 47.2 [JSON 语法]
-- 47.3 [使用 JSON API]
-    - 47.3.1 `JSON.stringify(data, replacer?, space?)`
-    - 47.3.2 `JSON.parse(text, reviver?)`
-    - 47.3.3 [示例：在 JSON 之间转换]
-- 47.4 [自定义字符串化和解析（高级）]
-    - 47.4.1 [`.stringfy()`：指定要字符串化的对象属性]
-    - 47.4.2 `.stringify()` 和 `.parse()`：值访问器
-    - 47.4.3 [示例：访问值]
-    - 47.4.4 [示例：访问值]
-    - 47.4.5 [示例：解析值]
-- 47.5 [常见问题]
-    - 47.5.1 [为什么 JSON 不支持注释？]
+## 47.1 JSON 的发现与标准化
 
+### 47.1.1 JSON 的语法是冻结
 
-
-
-
-- `null`（但不是 `undefined`）
-- 布尔值
-- 数字（排除 `NaN`、`+Infinity`、`-Infinity`）
-- 字符串（必须使用双引号）
-
-因此，你无法在 JSON 中）直接表示循环结构。
+## 47.2 JSON 语法
 
 ## 47.3 使用 `JSON` API
 
@@ -22035,11 +20748,15 @@ assert.equal(
 字符串化和解析可以如下进行自定义：
 
 - `JSON.stringify(data, replacer?, space?)`
+
   可选参数 `replacer` 包含：
+
   - 一个属性名称数组。如果 `data` 中的值被字符串化为对象字面量，则只考虑这些属性。所有其他属性都被忽略。
+
   - 一个访问者（value visitor），一个可以在字符串化之前转换 JavaScript 函数。
 
 - `JSON.parse(text, reviver?)`
+
   可选参数 `reviver` 包含一个可以在返回之前转换解析 JSON 数据的访问者。
 
 ### 47.4.1 `.stringify()`：指定要字符串化的对象属性
@@ -22064,6 +20781,7 @@ assert.equal(
 我所说的访问者是一个转换 JavaScript 数据的函数：
 
 - `JSON.stringify()` 让其参数 `replacer` 中的访问者在字符串化之前转换 JavaScript 数据。
+
 - `JSON.parse()` 让其参数 `reviver` 中的访问者在返回之前转换解析后的 JSON 数据。
 
 在本节中，JavaScript 数据被视为一个值树。如果数据是原子的，它就是一个只有一个根的树。树中的所有值都会一个接一个传递给访问者。根据访问者的返回值，当前值会被省略、更改或保留。
@@ -22077,23 +20795,24 @@ type ValueVisitor = (key: string, value: any) => any;
 参数为：
 
 - `value`：当前值。
+
 - `this`：当前值的父级。根值 `r` 的父级是 `{'': r}`。
+
   - 注意：`this` 是一个隐式参数，仅当访问者为普通函数时可用。
+
 - `key`：当前值在其父级中的键或索引。根值的键是 `''`。
 
 访问者可以返回：
 
 - `value`：意味着没有任何变化。
+
 - 一个不同的值 `x`：导致输出树中的 `value` 被替换为 `x`。
+
 - `undefined`：导致输出树中的 `value` 被省略。
 
 ### 47.4.3 示例：访问值
 
 以下代码展示了访问者看到值的顺序：
-
-
-
-
 
 ```javascript
 const log = [];
@@ -22198,9 +20917,12 @@ assert.deepEqual(
 
 Douglas Crockford 在 [2012 年的一篇文章](https://archive.google.com/web/2019030824153/) 中解释了原因：我删除了注释，是因为人们利用它们来存放指令。我看到人们将注释用于解析、插入等操作，这违背了 JSON 数据的初衷。
 
+- `null`（但不是 `undefined`）
+- 布尔值
+- 数字（排除 `NaN`、`+Infinity`、`-Infinity`）
+- 字符串（必须使用双引号）
 
-
-
+因此，你无法在 JSON 中直接表示循环结构。
 
 *   渐进式 Web 应用（Progressive web apps）：`progressive web apps` 背后的核心思想是为 Web 应用提供传统只有原生应用才具备的功能——例如：在移动和桌面操作系统上的原生安装；离线运行；向用户显示通知。Google 发布了一份[清单](https://developers.google.com/web/progressive-web-apps/checklist)，详细说明了什么让一个 Web 应用变得“渐进式”。最低要求是：
 
@@ -22222,7 +20944,7 @@ Douglas Crockford 在 [2012 年的一篇文章](https://archive.google.com/web/2
 
 对于静态代码，WebAssembly 速度非常快：C/C++ 代码编译为 WebAssembly 后，其速度大约是编译为原生（[源码](https://arxiv.org/abs/1901.09056)）的相同代码的 50%。用例包括支持新的视频格式、机器学习、游戏等。
 
-WebAssembly 作为各种语言的编译目标效果良好。这这意味着 JavaScript 将被编译为 WebAssembly 或被另一种语言取代吗？
+WebAssembly 作为各种语言的编译目标效果良好。这意味着 JavaScript 将被编译为 WebAssembly 或被另一种语言取代吗？
 
 #### 48.2.1.1 JavaScript 会被编译为 WebAssembly 吗？
 
@@ -22290,10 +21012,6 @@ WebAssembly 是否意味着 JavaScript 即将被另一种语言取代？WebAssem
 
 在现代浏览器中，你还可以将包作为模块交付（而不是脚本文件）。
 
-
-
-
-
 ## 代码压缩工具 (Minifiers)
 
 压缩工具将 JavaScript 编译为等效且更小（即字符更少）的 JavaScript。它通过重命名变量、移除注释、删除空白等等。
@@ -22316,13 +21034,14 @@ let a=5;Math.random()&&a++;
 
 流行的压缩工具包括：[UglifyJS](http://lisperator.net/uglifyjs/), [babel-minify](https://github.com/babel/minify), [Terser](https://github.com/terser-js/terser) 以及 [Closure Compiler](https://developers.google.com/closure/compiler/)。
 
-## 打处理器 (Bundlers)
+## 打包器 (Bundlers)
 
 编译并优化 JavaScript 应用的代码。打包器的输入是许多文件——所有的应用程序代码及其使用的库。打包器合并这些输入文件以生成更少的文件（在考虑导入的情况下，这往往能提高性能）。
 
 打包器通过 `tree-shaking` 等技术最小化输出尺寸。Tree-shaking 是死代码消除的一种形式：只有在某些地方导入的导出会被放入输出中。在打包时执行转译和压缩等步骤也是常见的。所有这些工具和构建步骤通常通过称为任务运行器（类似于 Unix 中的“make”）的进行协调。它们有：
 
 - 专用任务运行器：`grunt`、`broccoli` 等。
+
 - 可作为简单任务运行器的工具：`npm`（通过其脚本）和 `webpack`（通过插件）。
 
 流行的打包器包括 `browserify`、`Rollup` 和 `Parcel`。
@@ -22332,8 +21051,11 @@ let a=5;Math.random()&&a++;
 静态检查意味着分析源代码（而不运行）。它可以用于检测各种问题。工具包括：
 
 - Linter (检查器)：检查源代码是否存在问题模式、未使用变量等。如果你正在学习这种语言，Linter 特别有用，因为它们会指出你是否做错了什么。流行的 Linter 包括 `JSLint`、`JSHint`、`eslint`。
+
 - 代码风格检查：检查代码格式是否正确。考虑缩进、括号后的空格、逗号后的空格等。例如：`JSCS`（JavaScript 样式检查器）。
+
 - 代码格式化器：根据你可以自定义的规则自动为你的代码格式化。例如：`Prettier`。
+
 - 类型检查器：为 JavaScript 添加静态检查。流行的类型检查器：`TypeScript`（它也是一个转译器）、`Flow`。
 
 ## 测试 (Testing)
@@ -22341,7 +21063,9 @@ let a=5;Math.random()&&a++;
 JavaScript 有许多测试框架——例如：
 
 - 单元测试：`Jasmine`、`Mocha`、`Jest`、`Karma`。
+
 - 集成测试：`Jenkins`、`Travis CI`。
+
 - 用户界面测试：`CasperJS`、`Nightwatch.js`、`TestCafe`。
 
 ## 包管理器 (Package managers)
@@ -22349,18 +21073,27 @@ JavaScript 有许多测试框架——例如：
 JavaScript 最流行的包管理器是 `npm`。它最初作为 `Node.js` 的包管理器，但已成为客户端 Web 开发和各类工具的主流。`npm` 有替代方案，但它们以不同程度上基于 `npm` 的软件注册表：
 
 - `Yarn` 是对 `npm` 的不同实现；它首创的一些功能现在已被 `npm` 支持。
+
 - `pnpm` 专注于在本地安装包时节省空间。
 
 ## 库 (Libraries)
 
 - 各类辅助函数：`lodash`（最初基于 `Underscore.js` 库）是 JavaScript 最流行的通用辅助库之一。
+
 - 数据结构：以下是许多库中的两个示例
+
     - `Immutable.js` 为 JavaScript 提供了不可变数据结构。
+
     - `Immer` 是 `Immutable.js` 一个非常有趣的轻量级替代方案。它也不会修改所操作的数据，而是与普通对象和 `Arrays` 一工作。
+
 - 日期库：JavaScript 对日期的内置支持有限且充满陷阱。关于日期的章节列出了你可以使用的替代库。
+
 - 国际化：在此领域，ECMAScript 标准库由 ECMAScript 国际化 API (ECMA-402) 补充。它通过全局变量 `Intl` 访问，并适用于大多数浏览器。
+
 - 实现和访问服务：以下是许多流行的方案：
+
     - `REST`（表现状态转换）是一种流行的服务方案，基于 `HTTP(S)`。
+
     - `GraphQL` 更复杂（例如，它可以合并多个数据源）并支持查询语言。
 
 ## 与 JavaScript 无关
@@ -22368,14 +21101,18 @@ JavaScript 最流行的包管理器是 `npm`。它最初作为 `Node.js` 的包�
 考虑到 JavaScript 只是 Web 开发涉及的多种工制品之一，还存在其他工具。这些只是少数例子：
 
 - CSS：
+
     - 压缩工具：通过移除注释等减少 CSS  own。
+
     - 预处理器：允许你编写紧凑的 CSS（有时带有流程控制等），并扩展为可部署的、详细的 CSS。
+
     - 框架：为布局、良好的用户界面组件提供帮助。
+
 - 图像：自动优化位图图像的大小等。
 
 # 索引 (Index)
 
- 符号 (Symbol)
+## 符号 (Symbol)
 
 - `!x`
 - `++x`
@@ -22406,7 +21143,7 @@ JavaScript 最流行的包管理器是 `npm`。它最初作为 `Node.js` 的包�
 - `__proto__`
 - `~`
 
-A
+## A
 
 - 访问器 (对象字面量)
 - 加法
@@ -22425,10 +21162,6 @@ A
 - Array 解构赋值
 - 类数组对象
 - ArrayBuffer
-
-
-
-
 
 ## A
 
@@ -22592,11 +21325,6 @@ A
 *   `for`
 *   `for-await-of`
 *   `for-in`
-
-
-
-
-
 - `for-of`
 - 自由变量
 - 冻结对象
@@ -22611,6 +21339,7 @@ A
 - `function*`
 
 ### G
+
 - 垃圾回收
 - 生成器，异步
 - 生成器，同步
@@ -22625,12 +21354,14 @@ A
 - [格林威治时间 (GMT)]](#ch047.xhtml_index-entry-496)
 
 ### H
+
 - 堆
 - 十六进制整数字面量
 - 变量提升
 - 数组中的空位
 
 ### I
+
 - 标识符
 - 对象的标识
 - `if`
@@ -22669,15 +21400,18 @@ A
 - [迭代器 (同步)]](#ch033.xhtml_index-entry-380)
 
 ### J
+
 - [JSON (格式)]](#ch048.xhtml_index-entry-499)
 - [JSON (命名空间)]](#ch048.xhtml_index-entry-500)
 
 ### K
+
 - kebab case
 - kebab case
 - 关键字
 
 ### L
+
 - 标签
 - 左移运算符
 - `let`
@@ -22689,6 +21423,7 @@ A
 - 逻辑或
 
 ### M
+
 - Map
 - `Map`
 - Map 与对象
@@ -22713,6 +21448,7 @@ A
 - 乘法
 
 ### N
+
 - 命名导出
 - 命名函数表达式
 - 命名导入
@@ -22729,6 +21465,7 @@ A
 - `Number()`
 
 ### O
+
 - 对象
 - 对象字面量
 - 对象与 Map
@@ -22755,17 +21492,13 @@ A
 - 覆盖属性
 
 ### P
+
 - 包, npm
 - `package.json`
 - 参数
 - 参数默认值
 - 参数与参数
 - 按标识传递
-
-
-
-
-
 * 按值传递
 * 模式（正则表达式）
 * 待定（Promise 状态）
@@ -22803,10 +21536,12 @@ A
 * 公开的符号
 
 ## Q
+
 * 开始测验
 * 引号属性键
 
 ## R
+
 * 实际函数（普通函数的作用）
 * 接收者
 * 记录（对象的作用）
@@ -22830,6 +21565,7 @@ A
 * 完成语义
 
 ## S
+
 * 安全整数
 * 变量作用
 * 脚本
@@ -22872,6 +21608,7 @@ A
 * 同步迭代器
 
 ## T
+
 * 标签模板
 * 任务队列
 * 任务运行器
@@ -22906,6 +21643,7 @@ A
 * TypeScript
 
 ## U
+
 * `Uint16Array`
 * `Uint32Array`
 * `Uint8Array`
@@ -22915,10 +21653,6 @@ A
 * 下划线命名
 * Unicode
 * Unicode 代码点转义
-
-
-
-
 - Unicode 代码单元转义
 - Unicode 转换格式 (UTF)
 - 单元测试
@@ -22930,6 +21664,7 @@ A
 - UTF-8
 
 ## V
+
 - 值保持
 - 变量，绑定的
 - 变量，自由的
@@ -22937,6 +21672,7 @@ A
 - `void` 运算符
 
 ## W
+
 - Wasm (WebAssembly)
 - WeakMap
 - `WeakMap`
@@ -22949,11 +21685,13 @@ A
 - 包装类型（用于原始类型)
 
 ## Y
+
 - `yield` (异步生成器)
 - `yield` (同步生成器)
 - `yield*` (异步生成器)
 - `yield*` (同步生成器)
 
 ## Z
+
 - Z (格鲁威时区)
 - 格鲁威时区 (Z)

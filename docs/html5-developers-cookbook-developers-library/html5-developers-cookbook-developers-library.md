@@ -1,18 +1,19 @@
+
 # HTML5 开发者秘籍（开发者图书馆）
 
 ## 引言
 
-超文本标记语言 (HTML) 是创建和构建网页的核心语言。二十多年来，开发人员一直在编写 HTML，在最初的几年里，该语言经历了根本性的变化，但在 20 世纪 90 年代后期，事情放缓了一点。直到现在。
+超文本标记语言（HTML）是创建和构建网页的核心语言。二十多年来，开发人员一直在编写 HTML，在最初的几年里，该语言经历了根本性的变化，但在 20 世纪 90 年代后期，事情放缓了一点。直到现在。
 
 ## HTML 简史
 
-1991 年，蒂姆·伯纳斯-李爵士撰写了一篇名为 "HTML 标签" 的文档，其中描述了 20 个用于编写网页文档的元素。到 1993 年中期，互联网工程任务组 (IETF) 发布了第一个 HTML 规范的提案。该提案草案到期，直到 1995 年 11 月，第一个规范才发布：不是 HTML 1.0，而是 HTML 2.0。
+1991 年，蒂姆·伯纳斯-李爵士撰写了一篇名为“HTML 标签”的文档，其中描述了 20 个用于编写网页文档的元素。到 1993 年中期，互联网工程任务组（IETF）发布了第一个 HTML 规范的提案。该提案草案到期，直到 1995 年 11 月，第一个规范才发布：不是 HTML 1.0，而是 HTML 2.0。
 
-HTML 3.2 于 1997 年发布，随后是 1998 年发布的 HTML 4。HTML 4 有三种变体：严格型、过渡型和框架集型。在此期间，浏览器供应商（如微软和网景）开始以略微不同的方式实现 HTML，我们经历了第一轮的浏览器战争 (http://en.wikipedia.org/wiki/Browser_wars)。
+HTML 3.2 于 1997 年发布，随后是 1998 年发布的 HTML 4。HTML 4 有三种变体：严格型、过渡型和框架集型。在此期间，浏览器供应商（如微软和网景）开始以略微不同的方式实现 HTML，我们经历了第一轮的浏览器战争（http://en.wikipedia.org/wiki/Browser_wars）。
 
 ## XHTML
 
-HTML 4 发布后，万维网联盟 (W3C) 决定停止 HTML 的演进和发展，并着手研究可扩展超文本标记语言 (XHTML) 1.0，一种基于 XML 的语言，被认为是互联网的未来。XHTML 中没有新元素——事实上，该规范与 HTML 4 相同——但开发人员必须遵循新的语法规则：标签必须闭合，或自闭合，属性必须加引号。这要求更严格、更规范的编码标准，并确保开发人员将使用单一的书写风格。大约在 2001 年左右，层叠样式表 (CSS) 开始变得更加突出和流行，随着博客的兴起，对网络标准的认识显著提高。
+HTML 4 发布后，万维网联盟（W3C）决定停止 HTML 的演进和发展，并着手研究可扩展超文本标记语言（XHTML）1.0，一种基于 XML 的语言，被认为是互联网的未来。XHTML 中没有新元素——事实上，该规范与 HTML 4 相同——但开发人员必须遵循新的语法规则：标签必须闭合，或自闭合，属性必须加引号。这要求更严格、更规范的编码标准，并确保开发人员将使用单一的书写风格。大约在 2001 年左右，层叠样式表（CSS）开始变得更加突出和流行，随着博客的兴起，对网络标准的认识显著提高。
 
 从 2002 年开始，W3C 发布了 XHTML 1.1 的草案。虽然 XHTML 1 本质上是带有 XML 色彩的 HTML，但 XHTML 1.1 本质上是 XML。尽管它本应更具前瞻性，但它不向后兼容，因此如果将其用于网站开发，该网站在当前和旧版浏览器中将无法工作。
 
@@ -28,11 +29,11 @@ WHATWG 开始着手 Web Forms 2.0 和 Web Applications 1.0 的工作。规范的
 
 因此，在 WHATWG 开发 HTML5 的同时，W3C 的 XHTML 2 规范却举步维艰。2006 年，W3C 决定其在前几年放弃 HTML 的做法是错误的，虽然仍会继续开发 XHTML 2，但将再次审视 HTML 的发展。W3C 决定使用 WHATWG 迄今为止完成的工作作为新版本 HTML 的起点。
 
-尽管这是个好消息，但也导致了一种令人困惑的局面，因为目前有三种不同的标记语言正在开发中：W3C 的 HTML 5 和 XHTML 2；以及 WHATWG 的 HTML5（注意与 W3C 的 “HTML 5” 相比没有空格）。因此，HTML5/HTML 5 这个规范由两个团体同时开发。
+尽管这是个好消息，但也导致了一种令人困惑的局面，因为目前有三种不同的标记语言正在开发中：W3C 的 HTML 5 和 XHTML 2；以及 WHATWG 的 HTML5（注意与 W3C 的“HTML 5”相比没有空格）。因此，HTML5/HTML 5 这个规范由两个团体同时开发。
 
 WHATWG 的运作方式与 W3C 截然不同，其步伐要快得多。由于 WHATWG 的公共邮件列表，想法得以定期提出，Web 开发者能够质疑一些做出的决定。规范团队——过去和现在——都能够基于社区反馈快速地采纳好想法、拒绝坏想法，并更改或删除规范中的项目。HTML5 在 WHATWG 的发展速度远快于在 W3C 的速度。
 
-这样经过几年后，在 2009 年，W3C 宣布停止 XHTML 2 的工作。HTML5 “赢了”。
+这样经过几年后，在 2009 年，W3C 宣布停止 XHTML 2 的工作。HTML5“赢了”。
 
 那么，规范现在处于什么状态？嗯，它主要仍由 WHATWG 开发，然后由 W3C 进行审查。
 
@@ -40,7 +41,7 @@ WHATWG 的运作方式与 W3C 截然不同，其步伐要快得多。由于 WHAT
 
 ## 我应该参考哪个规范？
 
-W3C (http://dev.w3.org/html5/spec/spec.html) 和 WHATWG (http://whatwg.org/specs/web-apps/current-work/multipage/) 各有一个版本的规范。两者都是庞大、厚重的文档。2011 年 3 月，Ben Schwarz 推出了“面向 Web 开发者的 WHATWG HTML5 规范”(http://developers.whatwg.org)，我们建议使用它。如果您对日常讨论感兴趣，也可以通过邮件列表随时了解规范动态：http://lists.whatwg.org/htdig.cgi/whatwg-whatwg.org。
+W3C（http://dev.w3.org/html5/spec/spec.html）和 WHATWG（http://whatwg.org/specs/web-apps/current-work/multipage/）各有一个版本的规范。两者都是庞大、厚重的文档。2011 年 3 月，Ben Schwarz 推出了“面向 Web 开发者的 WHATWG HTML5 规范”（http://developers.whatwg.org），我们建议使用它。如果您对日常讨论感兴趣，也可以通过邮件列表随时了解规范动态：http://lists.whatwg.org/htdig.cgi/whatwg-whatwg.org。
 
 基础 HTML5 规范仅仅是一个基础。为了匹配技术发展的速度，已经发生了重大转变。WHATWG 和 W3C 的团队一直在不断开发新的附加规范，这些规范包含诸如网络连接信息和设备摄像头信息之类的功能。浏览器厂商正在共同努力，帮助定义这些功能并加快其在浏览器中的实现。未来几年将会非常激动人心。
 
@@ -52,24 +53,24 @@ HTML5 的创建方式支持现有内容，换句话说，是向后兼容的。�
 
 HTML5 还告诉浏览器如何处理由不正确的标记实现引起的错误。以前，浏览器会自行解释这些错误，因此每个浏览器都有自己的怪癖。HTML5 是为我们这样的开发者和浏览器厂商编写的，以便在不久的将来，我们都遵循相同的标准。
 
-或许 HTML5 真正强大的地方在于它如何满足 Web 应用程序开发者的需求。因为浏览器如此强大，我们可以创建非常像应用程序的网站：它们可以提供照片共享、绘图、文件编辑和其他功能。以前，这些功能需要多层 JavaScript 和插件（如 Java 或 Flash）。但这意味着可访问性问题，并依赖于第三方软件的稳定性。HTML5 为我们创建 Web 应用程序提供了新标准，提供了强大的 API，用于诸如 canvas 绘图、拖放、离线存储和浏览器原生视频等功能。有了明确的标准，浏览器将正确且稳定地处理这些事情。网络社区将帮助发展和完善这些标准，持续推动和改进它们，而开发者则不必创建 hack 来让这些功能工作。
+或许 HTML5 真正强大的地方在于它如何满足 Web 应用程序开发者的需求。因为浏览器如此强大，我们可以创建非常像应用程序的网站：它们可以提供照片共享、绘图、文件编辑和其他功能。以前，这些功能需要多层 JavaScript 和插件（如 Java 或 Flash）。但这意味着可访问性问题，并依赖于第三方软件的稳定性。HTML5 为我们创建 Web 应用程序提供了新标准，提供了强大的 API，用于诸如 `canvas` 绘图、拖放、离线存储和浏览器原生视频等功能。有了明确的标准，浏览器将正确且稳定地处理这些事情。网络社区将帮助发展和完善这些标准，持续推动和改进它们，而开发者则不必创建 hack 来让这些功能工作。
 
 ## HTML5 到底是什么？
 
 HTML5 不仅仅是一项技术。它更像是一个总称，涵盖了新的和增强的 HTML 元素、CSS 样式以及 JavaScript API 和事件。这些技术的结合提供了广泛的新增功能，以增强用户体验，使网站更像原生应用程序，并与设备集成。以下只是部分新增或增强的功能：
 
--   改进的语义
--   表单
--   Canvas 绘图
--   拖放
--   本地存储
--   页面间通信
--   桌面通知
--   视频和音频
--   Web Sockets
--   地理定位
--   历史记录
--   微数据
+- 改进的语义
+- 表单
+- Canvas 绘图
+- 拖放
+- 本地存储
+- 页面间通信
+- 桌面通知
+- 视频和音频
+- Web Sockets
+- 地理定位
+- 历史记录
+- 微数据
 
 尽管地理定位并非 HTML5 规范严格的一部分，但它是一项同时开发的很酷的新技术，因此常与 HTML5 相提并论。是的，我们在这本书中也会讨论地理定位。
 
@@ -93,49 +94,47 @@ HTML5 不仅仅是一项技术。它更像是一个总称，涵盖了新的和�
 
 ![](img/de30ea99ecac39b49e690a84c48f43b9_23_1.png)
 
-
-
 ## 引言
 
-总的来说，本书的结构是从较简单的主题开始，在前期主题的基础上逐步深入到更复杂的主题。我们在早期章节中介绍了HTML5元素和CSS3的新增内容，后期章节则过渡到各种JavaScript API和事件。我们知道，对于其中任何一个主题，都可以写一整本书来探讨其所有复杂性。尤其是在CSS3这类主题上，市面上已有很多优秀的书籍可供参考。
+总的来说，本书的结构是从较简单的主题开始，在前期主题的基础上逐步深入到更复杂的主题。我们在早期章节中介绍了 HTML5 元素和 CSS3 的新增内容，后期章节则过渡到各种 JavaScript API 和事件。我们知道，对于其中任何一个主题，都可以写一整本书来探讨其所有复杂性。尤其是在 CSS3 这类主题上，市面上已有很多优秀的书籍可供参考。
 
 对于章节中涉及的每个主题，我们都包含了一个表格，展示了该功能在主流浏览器中的支持情况。我们还提供了一个或多个示例，演示如何应用该技术。在大多数情况下，示例包含一系列说明、代码清单以及对该示例的详细讲解。每个示例也已发布在本书网站上：www.HTML5DevelopersCookbook.com。
 
-> **注意：** 构成HTML5的各个组件，如JavaScript API，仍在通过规范进行定义，并被整合到各种浏览器平台中。我们专注于那些规范明确且得到一个或多个主流浏览器支持的元素。但需要理解的是，HTML5正通过新的功能和特性不断发展。在第15章中，我们将介绍一些围绕设备集成的即将推出的功能和特性。
+> **注意：** 构成 HTML5 的各个组件，如 JavaScript API，仍在通过规范进行定义，并被整合到各种浏览器平台中。我们专注于那些规范明确且得到一个或多个主流浏览器支持的元素。但需要理解的是，HTML5 正通过新的功能和特性不断发展。在第 15 章中，我们将介绍一些围绕设备集成的即将推出的功能和特性。
 
 示例分为三个类别：初级、中级和高级。这些分类旨在让你对所涵盖主题的难度有所了解，同时尝试让你了解完成该示例可能需要投入的精力和时间。这些是粗略的分类，我们深知所需的时间和精力因读者而异。
 
 ## 第三方库
 
-如果你参与过一段时间的Web开发，那么你首先会注意到本书中的一个特点是，很少有示例利用jQuery等众多可用的JavaScript第三方库。只有少数几个例外情况，我们特别介绍了第三方库的支持或集成，以解决这些库可能克服的障碍。但总的来说，我们试图专注于核心HTML5技术，因为每位读者都有自己偏爱的库，而每个库对HTML5特性的支持和集成方式也各不相同。
+如果你参与过一段时间的 Web 开发，那么你首先会注意到本书中的一个特点是，很少有示例利用 jQuery 等众多可用的 JavaScript 第三方库。只有少数几个例外情况，我们特别介绍了第三方库的支持或集成，以解决这些库可能克服的障碍。但总的来说，我们试图专注于核心 HTML5 技术，因为每位读者都有自己偏爱的库，而每个库对 HTML5 特性的支持和集成方式也各不相同。
 
-我们坚信库在日常网站和应用的设计与开发中扮演着重要角色。我们自己也有偏爱的库。在许多情况下，已经集成了许多HTML5特性的库，其集成方式与规范定义的方式相似。因此，了解如何在原生JavaScript中使用该组件，将使你更容易在所选的库中利用它。
+我们坚信库在日常网站和应用的设计与开发中扮演着重要角色。我们自己也有偏爱的库。在许多情况下，已经集成了许多 HTML5 特性的库，其集成方式与规范定义的方式相似。因此，了解如何在原生 JavaScript 中使用该组件，将使你更容易在所选的库中利用它。
 
-本书网站www.HTML5DevelopersCookbook.com正是为此目的而设立，它不仅提供示例的电子版本以及可供执行和下载的支持文件，还提供额外的资源。
+本书网站 www.HTML5DevelopersCookbook.com 正是为此目的而设立，它不仅提供示例的电子版本以及可供执行和下载的支持文件，还提供额外的资源。
 
-## HTML5何时可以投入使用？
+## HTML5 何时可以投入使用？
 
-开发者普遍担心不能或现在不应该开始使用HTML5，但事实并非如此。
+开发者普遍担心不能或现在不应该开始使用 HTML5，但事实并非如此。
 
-### 我必须等到2022年吗？
+### 我必须等到 2022 年吗？
 
-不，你不必等到2022年！在2008年的一次采访中，HTML5编辑Ian Hickson给出了一个时间表，称HTML5要到2022年才会准备就绪。这在媒体和网络社区中被过分夸大了。我们认为Hickson的本意是最终的建议性推荐要到2022年左右才会发布，但这并不意味着你不能使用所有已经定义并纳入的功能。你可能从HTML历史的讨论中了解到，规范需要付出难以置信的努力和时间，并且在完成之前需要经过许多阶段。
+不，你不必等到 2022 年！在 2008 年的一次采访中，HTML5 编辑 Ian Hickson 给出了一个时间表，称 HTML5 要到 2022 年才会准备就绪。这在媒体和网络社区中被过分夸大了。我们认为 Hickson 的本意是最终的建议性推荐要到 2022 年左右才会发布，但这并不意味着你不能使用所有已经定义并纳入的功能。你可能从 HTML 历史的讨论中了解到，规范需要付出难以置信的努力和时间，并且在完成之前需要经过许多阶段。
 
-一个常见的论点涉及CSS 2.1的状态。CSS 2.1已经开发了10多年，直到2011年夏天才最终定稿。但在它开发的那些年里，我们不都还在使用CSS吗？我们现在到了CSS3，谁知道它什么时候才算“准备好”。这是网络社区推动技术发展超越规范的一个典型例子。
+一个常见的论点涉及 CSS 2.1 的状态。CSS 2.1 已经开发了 10 多年，直到 2011 年夏天才最终定稿。但在它开发的那些年里，我们不都还在使用 CSS 吗？我们现在到了 CSS3，谁知道它什么时候才算“准备好”。这是网络社区推动技术发展超越规范的一个典型例子。
 
-### 那么，我现在可以使用HTML5吗？
+### 那么，我现在可以使用 HTML5 吗？
 
-是的，你现在就可以使用HTML5！不存在一个必须停止使用HTML4而开始使用HTML5的时刻。谁知道W3C何时会宣布HTML5正式就绪；到那时我们可能都在使用HTML6的特性了。但浏览器制造商正在全心全意地拥抱HTML5特性，并不断整合新功能。
+是的，你现在就可以使用 HTML5！不存在一个必须停止使用 HTML4 而开始使用 HTML5 的时刻。谁知道 W3C 何时会宣布 HTML5 正式就绪；到那时我们可能都在使用 HTML6 的特性了。但浏览器制造商正在全心全意地拥抱 HTML5 特性，并不断整合新功能。
 
-由于规范和补充规范中包含如此多不同的部分和技术，你可以选择性地整合HTML5中你想要的部分；这不是全有或全无的情况。并非所有浏览器都能100%完美运行，但在第3章《HTML5中的浏览器处理》中，我们解释了一些浏览器处理方法。最新版本的Firefox、Safari、Opera、Chrome和Internet Explorer都广泛支持（尽管支持的HTML5特性集略有不同）HTML5特性。然而，日复一日，甚至在本书撰写过程中，我们已经看到浏览器有了显著的改进，并且随着浏览器之间的竞争，这种情况只会持续下去。所以，找一个文本或HTML编辑器，准备几个浏览器，开始接触HTML5吧。
+由于规范和补充规范中包含如此多不同的部分和技术，你可以选择性地整合 HTML5 中你想要的部分；这不是全有或全无的情况。并非所有浏览器都能 100% 完美运行，但在第 3 章《HTML5 中的浏览器处理》中，我们解释了一些浏览器处理方法。最新版本的 Firefox、Safari、Opera、Chrome 和 Internet Explorer 都广泛支持（尽管支持的 HTML5 特性集略有不同）HTML5 特性。然而，日复一日，甚至在本书撰写过程中，我们已经看到浏览器有了显著的改进，并且随着浏览器之间的竞争，这种情况只会持续下去。所以，找一个文本或 HTML 编辑器，准备几个浏览器，开始接触 HTML5 吧。
 
 ## 致谢
 
 ### Chuck Hudson 的致谢
 
-每当承担像本书这样具有挑战性的项目时，都会有多人参与确保项目的成功。我很幸运能与我的合著者Tom Leadbolt共同着手本书的编写，他是一位极具才华的设计师和开发者。谢谢你，Tom，感谢你分享你的知识，测试我的想法，并成为我许多疯狂想法的绝佳共鸣板。
+每当承担像本书这样具有挑战性的项目时，都会有多人参与确保项目的成功。我很幸运能与我的合著者 Tom Leadbolt 共同着手本书的编写，他是一位极具才华的设计师和开发者。谢谢你，Tom，感谢你分享你的知识，测试我的想法，并成为我许多疯狂想法的绝佳共鸣板。
 
-感谢我的家人：妈妈，谢谢你的支持；爸爸，谢谢你开创了创业之路；还有我的祖父母，谢谢你们的爱。给我亲爱的小女儿Sierra，你总能用你无尽的“为什么”问题让我脸上露出笑容。永远不要停止好奇。特别要感谢Michele，感谢你对我痴迷前沿技术和无尽“项目”的无尽支持。你在我为一行代码而痛苦挣扎多次时的理解，对我意义重大。
+感谢我的家人：妈妈，谢谢你的支持；爸爸，谢谢你开创了创业之路；还有我的祖父母，谢谢你们的爱。给我亲爱的小女儿 Sierra，你总能用你无尽的“为什么”问题让我脸上露出笑容。永远不要停止好奇。特别要感谢 Michele，感谢你对我痴迷前沿技术和无尽“项目”的无尽支持。你在我为一行代码而痛苦挣扎多次时的理解，对我意义重大。
 
 Tom S.，谢谢这些年来的许多欢笑。我期待着看到我们前方有什么冒险。
 
@@ -143,17 +142,15 @@ Tom S.，谢谢这些年来的许多欢笑。我期待着看到我们前方有�
 
 ### Tom Leadbolt 的致谢
 
-首先，我要感谢我的合著者Chuck Hudson，他在整个写作过程中帮助了我，并在最需要的时候提供了宝贵的反馈，更不用说他还编写了一些精彩的代码片段！
+首先，我要感谢我的合著者 Chuck Hudson，他在整个写作过程中帮助了我，并在最需要的时候提供了宝贵的反馈，更不用说他还编写了一些精彩的代码片段！
 
-感谢HTML5 Doctors团队——Rich Clark, Bruce Lawson, Remy Sharp, Jack Osborne, Mike Robinson, Oli Studholme, Brandan Lennox——感谢他们在HTML5Doctor.com网站上付出的时间、技能和奉献精神，该网站始终为网络社区提供美妙的知识和讨论。
+感谢 HTML5 Doctors 团队——Rich Clark、Bruce Lawson、Remy Sharp、Jack Osborne、Mike Robinson、Oli Studholme、Brandan Lennox——感谢他们在 HTML5Doctor.com 网站上付出的时间、技能和奉献精神，该网站始终为网络社区提供美妙的知识和讨论。
 
-最后，感谢我的妻子Lucy：非常感谢你在我挣扎时的支持，感谢在我许多个夜晚和周末消失不见时的耐心。我已尽最大努力完成本书，你一路都在帮助我。
+最后，感谢我的妻子 Lucy：非常感谢你在我挣扎时的支持，感谢在我许多个夜晚和周末消失不见时的耐心。我已尽最大努力完成本书，你一路都在帮助我。
 
 ### 共同致谢
 
-感谢Trina MacDonald和Pearson对我们的信任，并在我们不断改进书稿的过程中持续的耐心。感谢各位编辑。
-
-
+感谢 Trina MacDonald 和 Pearson 对我们的信任，并在我们不断改进书稿的过程中持续的耐心。感谢各位编辑。
 
 ## 致谢
 
@@ -163,19 +160,21 @@ Tom S.，谢谢这些年来的许多欢笑。我期待着看到我们前方有�
 
 ## 关于作者
 
-**Chuck Hudson** 自20世纪90年代以来一直从事网络和移动领域的开发。作为一位成功的企业家，他热衷于利用技术解决商业问题，这促使他为多家公司提供各种网络技术的咨询，并在会议上发表演讲。哈德森也是一位终身学习的技术爱好者，他还是认证的 PHP 程序员、PayPal 开发者，并在波士顿和亚特兰大地区教授网络编程、移动技术和创业课程。2008年，他因开发首个 iOS 移动网页和原生应用而获得 eBay Star Developer 奖。
+**Chuck Hudson** 自 20 世纪 90 年代以来一直从事网络和移动领域的开发。作为一位成功的企业家，他热衷于利用技术解决商业问题，这促使他为多家公司提供各种网络技术的咨询，并在会议上发表演讲。哈德森也是一位终身学习的技术爱好者，他还是认证的 PHP 程序员、PayPal 开发者，并在波士顿和亚特兰大地区教授网络编程、移动技术和创业课程。2008 年，他因开发首个 iOS 移动网页和原生应用而获得 eBay Star Developer 奖。
 
-**Tom Leadbetter** 是一位来自英国利物浦的网络设计师和开发者。自2005年起，他一直在网络行业工作，为各种组织和客户服务，并从2009年初开始研究 HTML5。他在 HTML5Doctor.com 上撰写相关博客。
+**Tom Leadbetter** 是一位来自英国利物浦的网络设计师和开发者。自 2005 年起，他一直在网络行业工作，为各种组织和客户服务，并从 2009 年初开始研究 HTML5。他在 HTML5Doctor.com 上撰写相关博客。
 
-## 1 HTML5中的新结构元素
+## 1 HTML5 中的新结构元素
 
 **HTML5** 不仅仅是关于使用 JavaScript API 进行交互式巫术和视频酷炫。你可以使用超过 20 种新元素来构建你的网页，添加语义化以提供更易于访问、可重用的内容。
 
-在后续章节中，你将学习新的 HTML5 表单控件和多媒体元素。在本章中，你将学习新的结构元素：header、hgroup、nav、footer、article、section 和 aside，重点关注如何、为什么以及何时使用这些新元素，无论是单独使用还是组合使用。本质上，你将使用这些新元素构建一个基本的网站模板，如图 1.1 所示。
+在后续章节中，你将学习新的 HTML5 表单控件和多媒体元素。在本章中，你将学习新的结构元素：`header`、`hgroup`、`nav`、`footer`、`article`、`section` 和 `aside`，重点关注如何、为什么以及何时使用这些新元素，无论是单独使用还是组合使用。本质上，你将使用这些新元素构建一个基本的网站模板，如图 1.1 所示。
 
 ![](img/de30ea99ecac39b49e690a84c48f43b9_31_0.png)
 
-## 初学者食谱：构建一个 HTML5 启动文档
+
+
+# 初学者食谱：构建一个 HTML5 启动文档
 
 你即将开始使用 HTML5，所以让我们从 HTML 文档的顶部开始。虽然本节中的内容不包含新元素，但有一种新的编写方式，因此最好在深入主体之前了解它。
 
@@ -196,9 +195,10 @@ doctype 应该是 HTML 文档的第一行。它被称为文档类型定义（DTD
 <!DOCTYPE html>
 ```
 
-老实说，它就是这么简单。这就是你需要告诉浏览器你正在使用标准模式的全部内容。如果浏览器不支持 HTML5，页面仍然会正常工作。如果你使用 `<!doctype html5>`，它也会触发怪异模式。选择这个 doctype 是为了确保它在任何浏览器中都能工作，无论语言的最新版本是什么。
+老实说，它就是这么简单。这就是你需要告诉浏览器你正在使用标准模式的全部内容。如果浏览器不支持 HTML5，页面仍然会正常工作。如果你使用`<!doctype html5>`，它也会触发怪异模式。选择这个 doctype 是为了确保它在任何浏览器中都能工作，无论语言的最新版本是什么。
 
 > 注意
+>
 > 如果你参考 http://infomesh.net/html/history/early/，你可以看到最早的 HTML 文档，来自1990年11月13日。它的标记非常简单，这种简洁性让我们想起了 HTML5 的 doctype。事实上，如果你将新的 doctype 添加到那个页面，它将通过验证！
 
 ### 字符编码
@@ -211,17 +211,17 @@ doctype 应该是 HTML 文档的第一行。它被称为文档类型定义（DTD
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 ```
 
-但像 `doctype` 一样，在 HTML5 中它现在简单多了：
+但像`doctype`一样，在 HTML5 中它现在简单多了：
 
 ```
 <meta charset="utf-8" />
 ```
 
-很简单！记住，你的页面需要这个和 `doctype`。
+很简单！记住，你的页面需要这个和`doctype`。
 
 ### JavaScript 和 CSS 链接
 
-我们也可以快速浏览这个小节。HTML5 帮助你减少页面中的大量标记，你可以简化对 JavaScript（和其他客户端脚本文件）和 CSS 的调用。在 HTML4 中，script 和 link 元素需要一个 `type` 属性，如下所示：
+我们也可以快速浏览这个小节。HTML5 帮助你减少页面中的大量标记，你可以简化对 JavaScript（和其他客户端脚本文件）和 CSS 的调用。在 HTML4 中，script 和 link 元素需要一个`type`属性，如下所示：
 
 ```
 <script type="text/javascript" src="my-javascript-file.js"></script>
@@ -235,11 +235,12 @@ doctype 应该是 HTML 文档的第一行。它被称为文档类型定义（DTD
 <link rel="stylesheet" href="my-css-file.css" />
 ```
 
-你可能想知道为什么你现在可以这样做。嗯，HTML5 的目标之一是让你在编码时更加合理。所以，如果你链接到一个脚本，浏览器会假设它是一个 JavaScript 文件，如果你使用 `rel=stylesheet`，它只能意味着你链接到一个 CSS 文件。别担心，不使用 `type` 属性在旧浏览器中不会引起任何问题。
+你可能想知道为什么你现在可以这样做。嗯，HTML5 的目标之一是让你在编码时更加合理。所以，如果你链接到一个脚本，浏览器会假设它是一个 JavaScript 文件，如果你使用`rel=stylesheet`，它只能意味着你链接到一个 CSS 文件。别担心，不使用`type`属性在旧浏览器中不会引起任何问题。
 
 ### 语法编写风格
 
 在 HTML5 中，使用前面的代码示例，你可以用略有不同的方式编写页面代码。
+
 你可以用大写字母编写：
 
 ```
@@ -293,7 +294,9 @@ doctype 应该是 HTML 文档的第一行。它被称为文档类型定义（DTD
 ### 所有新元素从哪里来？
 
 新的结构元素旨在告诉浏览器页面的结构，并赋予内容语义意义，但它们的名字从何而来？
+
 2005年，Google 分析了超过 10 亿个网页，以找出开发者和网页作者正在使用哪些类名（http://code.google.com/web-stats）。这使得 HTML5 规范的主要编辑 Ian Hickson（“Hixie”）开始思考这些新元素。尽管这已经是五年前的事情了，在互联网时代算是相当久远了，但它识别出了网站上哪些内容是重要且被重用的。
+
 以下是当时最流行的 20 个类名：
 
 | | | |
@@ -306,15 +309,15 @@ doctype 应该是 HTML 文档的第一行。它被称为文档类型定义（DTD
 | Body | Style1 | Top |
 | White | link | |
 
-
-
 尽管其中一些元素是表现性的（例如，`white`、`style1`、`msnormal`），但其他元素构成了 HTML5 规范中包含的元素（`footer`、`nav`、`header`）。
-那么，为什么要使用这些新元素呢？嗯，HTML5 允许你赋予你的内容以语义意义，所以，例如，如果你的页面上有导航，你可以使用 `nav` 元素，因为该元素为其内容提供了意义。
 
-## 初学者指南：使用 header 元素创建网站页眉
+那么，为什么要使用这些新元素呢？嗯，HTML5 允许你赋予你的内容以语义意义，所以，例如，如果你的页面上有导航，你可以使用`nav`元素，因为该元素为其内容提供了意义。
+
+# 初学者指南：使用 header 元素创建网站页眉
 
 让我们从一个“典型”网页的顶部开始。
-`header` 元素通常是网页上的第一个东西，它通常包含诸如标志、网站名称或主要站点导航之类的内容。它可以在页面上使用不止一次，并且如将会讨论的，它可以用于特定部分的导航，而不仅仅是整个页面。诸如搜索表单或目录之类的内容可以包含在 `header` 元素中。以下是一个基本示例：
+
+`header`元素通常是网页上的第一个东西，它通常包含诸如标志、网站名称或主要站点导航之类的内容。它可以在页面上使用不止一次，并且如将会讨论的，它可以用于特定部分的导航，而不仅仅是整个页面。诸如搜索表单或目录之类的内容可以包含在`header`元素中。以下是一个基本示例：
 
 ```html
 <header>
@@ -323,18 +326,19 @@ doctype 应该是 HTML 文档的第一行。它被称为文档类型定义（DTD
 </header>
 ```
 
-正如 HTML5 规范所说，`header` 元素可以包含导航辅助工具，因此图 1.2 中的元素可以用一个包含标志、主要导航链接和搜索表单的 `header` 来标记。但根据网站的设计，这可能意味着你必须将 `nav` 标记在 `header` 之外，这是可以的。
-以下是 `header` 元素的可能内容，其中几个在图 1.2 中显示：
+正如 HTML5 规范所说，`header`元素可以包含导航辅助工具，因此图 1.2 中的元素可以用一个包含标志、主要导航链接和搜索表单的`header`来标记。但根据网站的设计，这可能意味着你必须将`nav`标记在`header`之外，这是可以的。
 
--   标志
--   网站名称/标题
--   网站副标题
--   搜索表单
--   主导航
+以下是`header`元素的可能内容，其中几个在图 1.2 中显示：
+
+- 标志
+- 网站名称/标题
+- 网站副标题
+- 搜索表单
+- 主导航
 
 ![](img/de30ea99ecac39b49e690a84c48f43b9_35_0.png)
 
-你并不限于每个页面只有一个 `header` 元素，并且它也不必在页面顶部。正如我们稍后将详细解释的，如果你的页面上有多个标题，你可能会考虑将它们放在一个 `header` 元素中。你也可以在一个页面上使用多个 `h1` 标签，所以你可能会有类似清单 1.2 的内容（你将在本章稍后学习 `article` 元素）。
+你并不限于每个页面只有一个`header`元素，并且它也不必在页面顶部。正如我们稍后将详细解释的，如果你的页面上有多个标题，你可能会考虑将它们放在一个`header`元素中。你也可以在一个页面上使用多个`h1`标签，所以你可能会有类似清单 1.2 的内容（你将在本章稍后学习`article`元素）。
 
 ### 清单 1.2：在一页上使用多个页眉
 
@@ -368,9 +372,9 @@ tempor sit amet, ante.</p>
 </article>
 ```
 
-清单 1.2 中的代码将产生图 1.3 所示的显示。你也可以在 `header` 元素中放入作者和日期。然而，HTML5 规范建议作者信息更适合放在 `footer` 元素中。
+清单 1.2 中的代码将产生图 1.3 所示的显示。你也可以在`header`元素中放入作者和日期。然而，HTML5 规范建议作者信息更适合放在`footer`元素中。
 
-如果你的 `header` 元素中只有一个标题（`h1`-`6`），那么就没有必要使用 `header`；单独的 `h1`-`6` 就足够了。
+如果你的`header`元素中只有一个标题（`h1`-`6`），那么就没有必要使用`header`；单独的`h1`-`6`就足够了。
 
 # 第 1 章
 
@@ -394,9 +398,9 @@ Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac tu
 
 ## 初学者指南：使用 hgroup 元素组合标题
 
-使用另一个新的 HTML5 元素 `hgroup`，你可以为 `header` 元素添加更多信息。
+使用另一个新的 HTML5 元素`hgroup`，你可以为`header`元素添加更多信息。
 
-此元素用于组合多个相关的 `h1`-`6` 标题。因此，如果你的网站有副标题，你可以使用清单 1.3 中所示的元素，它会生成图 1.4 中的布局。虽然这是一个有用的分组选项，但 `hgroup` 主要旨在告诉文档大纲（我们稍后将讨论）哪个标题是最重要的。在清单 1.3 中，文档大纲将排除除最高级标题（在本例中为 `h1`）之外的所有标题。
+此元素用于组合多个相关的`h1`-`6`标题。因此，如果你的网站有副标题，你可以使用清单 1.3 中所示的元素，它会生成图 1.4 中的布局。虽然这是一个有用的分组选项，但`hgroup`主要旨在告诉文档大纲（我们稍后将讨论）哪个标题是最重要的。在清单 1.3 中，文档大纲将排除除最高级标题（在本例中为`h1`）之外的所有标题。
 
 ### 清单 1.3：排除除 h1 之外的所有标题
 
@@ -413,14 +417,15 @@ Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac tu
 
 ![](img/de30ea99ecac39b49e690a84c48f43b9_38_0.png)
 
-图 1.4 带有主标志和副标题的网站。这些会包含在一个 `hgroup` 元素内。
+图 1.4 带有主标志和副标题的网站。这些会包含在一个`hgroup`元素内。
 
-在清单 1.3 中，`h2` 与 `h1` 的内容相关，因此在这种情况下你可以使用 `hgroup`。如果你只有一个 `h1`-`6` 标题，则不需要使用 `hgroup`。
+在清单 1.3 中，`h2`与`h1`的内容相关，因此在这种情况下你可以使用`hgroup`。如果你只有一个`h1`-`6`标题，则不需要使用`hgroup`。
 
 ## 初学者指南：使用 nav 元素创建导航
 
-`nav` 元素，顾名思义，用于导航内容。它用于链接到网站内的其他页面或页面的其他部分（例如目录）。
-`nav` 最常见的用途是用于网站的主导航。通常的做法是使用无序列表来编写导航，如清单 1.4 所示。
+`nav`元素，顾名思义，用于导航内容。它用于链接到网站内的其他页面或页面的其他部分（例如目录）。
+
+`nav`最常见的用途是用于网站的主导航。通常的做法是使用无序列表来编写导航，如清单 1.4 所示。
 
 ### 清单 1.4：传统的导航标记方式
 
@@ -434,7 +439,7 @@ Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac tu
 </ul>
 ```
 
-在 HTML5 中创建 `nav` 元素时，此代码变化不大。图 1.5 的代码将类似于清单 1.5 所示的内容。
+在 HTML5 中创建`nav`元素时，此代码变化不大。图 1.5 的代码将类似于清单 1.5 所示的内容。
 
 ### 清单 1.5：HTML5 中的导航标记
 
@@ -452,11 +457,13 @@ Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac tu
 
 www.it-ebooks.info
 
-图 1.5 会包含在 `nav` 元素内的全站导航
+图 1.5 会包含在`nav`元素内的全站导航
 
-你也可以将 `nav` 放在 `header` 中，如清单 1.6 所示，因为 `header` 允许包含介绍性和导航性内容。然而，它不一定必须在 `header` 中，有时它的位置可能取决于样式问题。在页面的页脚中看到导航菜单也很常见，有时会复制主导航。
+你也可以将`nav`放在`header`中，如清单 1.6 所示，因为`header`允许包含介绍性和导航性内容。然而，它不一定必须在`header`中，有时它的位置可能取决于样式问题。在页面的页脚中看到导航菜单也很常见，有时会复制主导航。
 
 ### 清单 1.6：header 元素内的 nav 元素
+
+
 
 ```html
 <header>
@@ -472,11 +479,11 @@ www.it-ebooks.info
 </header>
 ```
 
-没有必要将页面上的所有链接都放在一个 `nav` 元素中。HTML5 规范警告说，只有“主要导航”块才被认为适合 `nav` 元素。
+没有必要将页面上的所有链接都放在一个`nav`元素中。HTML5规范警告说，只有“主要导航”块才被认为适合`nav`元素。
 
-在新闻或博客网站上，通常会看到一个包含指向文章和其他页面链接的侧边栏。清单 1.7 中的标记用于生成图 1.6 中所示的元素。
+在新闻或博客网站上，通常会看到一个包含指向文章和其他页面链接的侧边栏。清单1.7中的标记用于生成图1.6中所示的元素。
 
-### 清单 1.7：单个 nav 元素中的多个导航组
+### 清单1.7：单个nav元素中的多个导航组
 
 ```html
 <nav>
@@ -487,8 +494,6 @@ www.it-ebooks.info
   </ul>
 </nav>
 ```
-
-
 
 ## 第1章 HTML5中的新结构元素
 
@@ -510,25 +515,23 @@ www.it-ebooks.info
 </nav>
 ```
 
-请注意，导航栏中使用了一个h2来分隔链接组。在图1.6中，这些h2标签可以作为选项卡标题，因此当用户选择一个标题时，内容会切换（此效果可以通过JavaScript实现）。标题元素并非总是必需的，但在可能的情况下，应使用它来分隔和组织导航组。出于样式原因，您可能需要将前面的示例分成两个nav结构，这也是可以的。
+请注意，导航栏中使用了一个`h2`来分隔链接组。在图1.6中，这些`h2`标签可以作为选项卡标题，因此当用户选择一个标题时，内容会切换（此效果可以通过JavaScript实现）。标题元素并非总是必需的，但在可能的情况下，应使用它来分隔和组织导航组。出于样式原因，您可能需要将前面的示例分成两个`nav`结构，这也是可以的。
 
-使用nav元素可以带来巨大的无障碍访问收益。辅助技术，如屏幕阅读器，将能够搜索并立即使用导航组，而不是等待它们出现在屏幕上。传统上，开发者在HTML文档中使用“跳过”或“跳转”链接作为第一个元素，这些链接通常指向主导航或主要内容。然而，使用nav元素意味着您很快就能摆脱此类“跳过”菜单。唯一的问题是目前辅助技术对HTML5元素的支持有限。然而，它们很快就会跟上。
+使用`nav`元素可以带来巨大的无障碍访问收益。辅助技术，如屏幕阅读器，将能够搜索并立即使用导航组，而不是等待它们出现在屏幕上。传统上，开发者在HTML文档中使用“跳过”或“跳转”链接作为第一个元素，这些链接通常指向主导航或主要内容。然而，使用`nav`元素意味着您很快就能摆脱此类“跳过”菜单。唯一的问题是目前辅助技术对HTML5元素的支持有限。然而，它们很快就会跟上。
 
 ![](img/de30ea99ecac39b49e690a84c48f43b9_40_0.png)
 
-## 中级技巧：
-使用新的 article 元素
+## 中级技巧：使用新的article元素
 
 `article`元素和`section`元素（将在下一节讨论）可以说是两个最重要的HTML5新结构元素，但它们也是最容易让人困惑的两个。
 
 `article`元素是一个独立的内容块；它可以独立存在并且可以重复使用。想想你在RSS订阅源中看到的内容；这些内容几乎都是单独的文章。你可以将它们从订阅源中取出，它们本身就有意义。
 
-HTML5规范建议了一些如何使用article元素的例子，例如论坛帖子、杂志或报纸文章、博客条目或用户提交的评论。
+HTML5规范建议了一些如何使用`article`元素的例子，例如论坛帖子、杂志或报纸文章、博客条目或用户提交的评论。
 
 清单1.8使用`article`元素标记一个新闻项目，如图1.7所示。
 
 ```html
-**清单1.8 在 `article` 元素中标记新闻项目**
 <article>
   <header>
     <h1>HTML5拯救数百万人！</h1>
@@ -559,6 +562,7 @@ Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac tu
 ## 二级标题
 
 1. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+
 2. Aliquam tincidunt mauris eu risus.
 
 Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Vivamus magna. Cras in mi at felis aliquet congue. Ut a est eget ligula molestie gravida. Curabitur massa. Donec eleifend, libero at sagittis mollis, tellus est malesuada tellus, at luctus turpis elit sit amet quam. Vivamus pretium ornare est.
@@ -566,6 +570,7 @@ Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Vivamus magna. Cras in
 ## 三级标题
 
 - Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+
 - Aliquam tincidunt mauris eu risus.
 
 本文发表于2010年10月32日星期日的《HTML5时报》，作者为Tom Leadbetter。
@@ -576,27 +581,29 @@ Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Vivamus magna. Cras in
 
 正如你将在后面的章节中发现的，你可以在`article`中嵌套`section`，也可以在`section`中嵌套`article`。
 
-HTML5规范指出，article是一个“独立的内容项”，它甚至说博客评论也可以是`article`。
+HTML5规范指出，`article`是一个“独立的内容项”，它甚至说博客评论也可以是`article`。
 
-## 中级技巧：
-使用 section 元素对内容进行分组
+## 中级技巧：使用section元素对内容进行分组
 
-`section`元素是一个内容区域或页面区域，几乎总是需要一个标题。它可用于对一整个部分的内容进行分组，并且如果需要，可以进一步细分为更小的部分。它不是用于通用包装样式的元素。一个section可以包含`article`元素，而`article`元素也可以将其内容分割成多个section。因此，正如你在`article`元素中看到的那样，你需要思考何时使用`article`或`section`。清单1.9是一个使用`section`的示例，如图1.8所示。
+`section`元素是一个内容区域或页面区域，几乎总是需要一个标题。它可用于对一整个部分的内容进行分组，并且如果需要，可以进一步细分为更小的部分。它不是用于通用包装样式的元素。一个`section`可以包含`article`元素，而`article`元素也可以将其内容分割成多个`section`。因此，正如你在`article`元素中看到的那样，你需要思考何时使用`article`或`section`。清单1.9是一个使用`section`的示例，如图1.8所示。
 
-## # 大量新闻
+## 大量新闻
 
-体育新闻
+### 体育新闻
+
 我们将在此放置体育新闻。
 
-娱乐新闻
+### 娱乐新闻
+
 娱乐新闻将放在这里。
 
-极客新闻
+### 极客新闻
+
 极客的新闻将放在此页面的此部分。
 
 图1.8 高亮显示了分区的基本新闻页面（未应用样式）
 
-## 清单1.9 为不同类型的新闻创建带有分区的基本新闻页面
+### 清单1.9 为不同类型的新闻创建带有分区的基本新闻页面
 
 ```html
 <h1>大量新闻</h1>
@@ -614,7 +621,7 @@ HTML5规范指出，article是一个“独立的内容项”，它甚至说博�
 </section>
 ```
 
-在图1.8中，每个section都有自己的标题，并且每个section与其他section完全分离。如果页面上还有其他内容，你可以将它们全部包装在一个section中，并给它一个“我们涵盖的新闻类型”的标题：
+在图1.8中，每个`section`都有自己的标题，并且每个`section`与其他`section`完全分离。如果页面上还有其他内容，你可以将它们全部包装在一个`section`中，并给它一个“我们涵盖的新闻类型”的标题：
 
 ```html
 <section>
@@ -633,14 +640,14 @@ HTML5规范指出，article是一个“独立的内容项”，它甚至说博�
 <section>
   <h1>我们涵盖的新闻类型</h1>
   <section>
-    <h1> 极客新闻 </h1>
+    <h1>极客新闻</h1>
     <p>极客的新闻将放在此页面的此部分。</p>
     <section>
       <h2>游戏新闻</h2>
       ...
     </section>
     <section>
-      <h2> gadget 新闻</h2>
+      <h2>gadget新闻</h2>
       ...
     </section>
   </section>
@@ -650,7 +657,7 @@ HTML5规范指出，article是一个“独立的内容项”，它甚至说博�
 
 www.it-ebooks.info
 
-## 你应该使用哪个：`article` 还是 `section`？
+## 你应该使用哪个：`article`还是`section`？
 
 `section`元素的用法类似于你现在使用的`div`标签。但与`div`不同，`section`具有语义意义；它是对相关内容的分组。
 
@@ -672,45 +679,51 @@ www.it-ebooks.info
 
 `div`元素“完全没有特殊含义”，因此你使用它来对不属于任何新HTML5元素之一的内容进行分组。通常，当CSS无法通过其他方式针对内容进行样式设置时，需要使用`div`来设置样式。如果你使用
 
+## 第1章 HTML5中的新结构元素
 
+`section`元素会被添加到文档大纲中，因为它被认为对文档很重要，而`div`则不会。因此，如果只是为了样式化目的使用`section`，你应该改用`div`。
 
-## 第1章 HTML5 中的新结构元素
+## 初学者指南：使用`aside`元素创建侧边栏
 
-`section` 元素会被添加到文档大纲中，因为它被认为对文档很重要，而 `div` 则不会。因此，如果只是为了样式化目的使用 `section`，你应该改用 `div`。
+`aside`元素用于放置与周围内容“tangentially（tangentially）”相关的内容组，例如最受欢迎的文章列表、博客分类或近期评论。这类内容与页面主体内容相关，但又自成一体。
 
-## 初学者指南：使用 `aside` 元素创建侧边栏
+在当前的网页开发中，页面上出现“侧边栏”是很常见的。这不一定意味着它在页面的物理侧面，但它通常包含相关链接或分类列表等内容。`aside`的正确使用取决于你将其放置的位置：如果它在`article`内部，则`aside`内容应与`article`内容tangentially相关，例如一个术语表。或者，如果`aside`位于`article`或`section`外部，则其内容必须与整个页面相关，例如相关链接、网站所有者的Twitter动态或与网站相关的广告。清单1.10展示了如何创建一个“相关链接”部分，如图1.9所示。
 
-`aside` 元素用于放置与周围内容“ tangentially（ tangentially）”相关的内容组，例如最受欢迎的文章列表、博客分类或近期评论。这类内容与页面主体内容相关，但又自成一体。
-
-在当前的网页开发中，页面上出现“侧边栏”是很常见的。这不一定意味着它在页面的物理侧面，但它通常包含相关链接或分类列表等内容。`aside` 的正确使用取决于你将其放置的位置：如果它在 `article` 内部，则 `aside` 内容应与 `article` 内容 tangentially 相关，例如一个术语表。或者，如果 `aside` 位于 `article` 或 `section` 外部，则其内容必须与整个页面相关，例如相关链接、网站所有者的 Twitter 动态或与网站相关的广告。清单 1.10 展示了如何创建一个“相关链接”部分，如图 1.9 所示。
-
-### 关于 HTML5 的 10 件事
+### 关于HTML5的10件事
 
 ### 相关链接
 
 Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. *Aenean ultricies mi vitae est.* Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, `commodo` vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. [Donec non enim](http://www.it-ebooks.info) in turpis pulvinar facilisis. Ut felis.
 
-- [关于 HTML 4 的 10 件事](http://www.it-ebooks.info)
-- [关于 CSS3 的 10 件事](http://www.it-ebooks.info)
-- [关于 JavaScript 的 10 件事](http://www.it-ebooks.info)
+- [关于HTML 4的10件事](http://www.it-ebooks.info)
 
-### 标题级别 2
+- [关于CSS3的10件事](http://www.it-ebooks.info)
 
-1.  Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-2.  Aliquam tincidunt mauris eu risus.
+- [关于JavaScript的10件事](http://www.it-ebooks.info)
+
+### 标题级别2
+
+1. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+
+2. Aliquam tincidunt mauris eu risus.
 
 Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Vivamus magna. Cras in mi at felis aliquet congue. Ut a est eget ligula molestie gravida. Curabitur massa. Donec eleifend, libero at sagittis mollis, tellus est malesuada tellus, at luctus turpis elit sit amet quam. Vivamus pretium ornare est.
 
-### 标题级别 3
+### 标题级别3
 
 - Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+
 - Aliquam tincidunt mauris eu risus.
 
-本文发表于 2010 年 10 月 32 日星期日的《HTML5 时报》，作者为 Tom Leadbetter
+本文发表于2010年10月32日星期日的《HTML5时报》，作者为Tom Leadbetter
 
-图 1.9 带有“侧边栏”的页面基本布局
+图1.9 带有“侧边栏”的页面基本布局
 
-清单 1.10 使用 aside 标记“相关链接”部分
+### 清单1.10 使用aside标记“相关链接”部分
+
+
+
+## 使用 `aside` 元素
 
 ```html
 <!DOCTYPE html>
@@ -747,7 +760,7 @@ nav {width: 250px;}
 </html>
 ```
 
-你也可以将 `aside` 嵌套在其他元素内，包括 `article` 元素。扩展前面的例子，你可以为用户提供一个术语表，涵盖主要内容中用户可能不熟悉的短语或内容：
+你也可以将`aside`嵌套在其他元素内，包括`article`元素。扩展前面的例子，你可以为用户提供一个术语表，涵盖主要内容中用户可能不熟悉的短语或内容：
 
 ```html
 <article>
@@ -764,10 +777,11 @@ nav {width: 250px;}
 </article>
 ```
 
-## 初学者指南：使用 footer 元素
+## 初学者指南：使用 `footer` 元素
 
-`footer` 元素，顾名思义，通常位于页面底部。然而，情况并非总是如此，尽管 `footer` 经常位于某个部分或页面的底部。`footer` 元素用于放置其所属部分的内容信息，包括作者或网站所有者信息、版权声明以及网站条款和条件。如果它位于 `article` 或 `section` 内部，则可以包含文章的发布日期、标签、分类和其他元数据。
-HTML5 规范为一种非常常见的网页元素提供了解决方案：页面上的版权声明：
+`footer`元素，顾名思义，通常位于页面底部。然而，情况并非总是如此，尽管`footer`经常位于某个部分或页面的底部。`footer`元素用于放置其所属部分的内容信息，包括作者或网站所有者信息、版权声明以及网站条款和条件。如果它位于`article`或`section`内部，则可以包含文章的发布日期、标签、分类和其他元数据。
+
+HTML5规范为一种非常常见的网页元素提供了解决方案：页面上的版权声明：
 
 ```html
 <footer>
@@ -775,10 +789,11 @@ HTML5 规范为一种非常常见的网页元素提供了解决方案：页面�
 </footer>
 ```
 
-前面的例子很可能放在 `</body>` 标签之前。（也请注意版权声明是放在 `small` 标签中的。我们将在下一章讨论这个。）
-就像 `header` 元素一样，你可以在一个页面上多次使用 `footer`。你可以将 `footer` 放在 `article` 内部。清单 1.11 详细展示了一个带有全站页脚的页面，以及 `article` 内使用嵌套 `footer` 元素的情况，如图 1.10 所示。
+前面的例子很可能放在`</body>`标签之前。（也请注意版权声明是放在`small`标签中的。我们将在下一章讨论这个。）
 
-### 清单 1.11 带有全站页脚和 article > footer 组合的页面
+就像`header`元素一样，你可以在一个页面上多次使用`footer`。你可以将`footer`放在`article`内部。清单1.11详细展示了一个带有全站页脚的页面，以及`article`内使用嵌套`footer`元素的情况，如图1.10所示。
+
+### 清单1.11 带有全站页脚和 `article > footer` 组合的页面
 
 ```html
 <article>
@@ -801,39 +816,41 @@ HTML5 规范为一种非常常见的网页元素提供了解决方案：页面�
 </footer>
 ```
 
-这个例子展示了 `article` 内的两个 `footer` 元素。在新闻文章或博客文章的顶部和底部显示作者或日期是很常见的，你可以根据需要多次使用 `footer`。
-在前面的例子中，我们引入了 `time` 元素，我们将在下一章讨论它。
-你可以在 `footer` 中包含其他内容，例如导航（是的，使用 `nav` 元素）、合作伙伴标志和许可协议，你经常会看到类似“本站由 <cms name> 提供支持”的文本。
+这个例子展示了`article`内的两个`footer`元素。在新闻文章或博客文章的顶部和底部显示作者或日期是很常见的，你可以根据需要多次使用`footer`。
 
-### 关于 HTML5 的 10 件事
+在前面的例子中，我们引入了`time`元素，我们将在下一章讨论它。
 
-本文发表于 2011 年 4 月 1 日，作者为 Tom Leadbetter
+你可以在`footer`中包含其他内容，例如导航（是的，使用`nav`元素）、合作伙伴标志和许可协议，你经常会看到类似“本站由<cms name>提供支持”的文本。
+
+### 关于HTML5的10件事
+
+本文发表于2011年4月1日，作者为Tom Leadbetter
 
 Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, `commodo` vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis.
 
-### 标题级别 2
+### 标题级别2
 
-1.  Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-2.  Aliquam tincidunt mauris eu risus.
+1. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+
+2. Aliquam tincidunt mauris eu risus.
 
 Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Vivamus magna. Cras in mi at felis aliquet congue. Ut a est eget ligula molestie gravida. Curabitur massa. Donec eleifend, libero at sagittis mollis, tellus est malesuada tellus, at luctus turpis elit sit amet quam. Vivamus pretium ornare est.
 
-### 标题级别 3
+### 标题级别3
 
 - Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+
 - Aliquam tincidunt mauris eu risus.
 
-本文发表于 2010 年 10 月 32 日星期日的《HTML5 时报》，作者为 Tom Leadbetter
+本文发表于2010年10月32日星期日的《HTML5时报》，作者为Tom Leadbetter
 
-本文发表于 2011 年 4 月 1 日，作者为 Tom Leadbetter
+本文发表于2011年4月1日，作者为Tom Leadbetter
 
-阅读 Tom 的下一篇文章
+阅读Tom的下一篇文章
 
-© 版权所有 HTML5 Cookbook 2011
+©版权所有HTML5 Cookbook 2011
 
-图 1.10 带有多个 footer 元素的页面布局（未应用样式）
-
-
+图1.10带有多个`footer`元素的页面布局（未应用样式）
 
 HTML5规范指出，`footer`元素可以包含指向相关文档的链接。虽然之前你可能使用`aside`和`nav`的组合来实现这一功能，但如果该内容位于`article`内部，你也可以使用`footer`元素来承载。它还可以包含其他链接，例如指向上一篇和下一篇文章的链接，其结构大致如下：
 
@@ -846,10 +863,10 @@ HTML5规范指出，`footer`元素可以包含指向相关文档的链接。虽�
 </article>
 ```
 
-## 中级技巧：
-使用HTML5大纲工具确保正确的文档结构
+## 中级技巧：使用HTML5大纲工具确保正确的文档结构
 
-借助这些新元素，你有机会使内容以逻辑的方式流动，并允许人们使用层级结构（例如使用屏幕阅读器）来浏览内容，其作用非常类似于目录。通过大纲进行测试，可以帮助你检查是否正确使用了标题和节。你可以使用各种浏览器扩展和网站，这里我们将使用一个Google Chrome扩展程序：http://code.google.com/p/h5o/。
+借助这些新元素，你有机会使内容以逻辑的方式流动，并允许人们使用层级结构（例如使用屏幕阅读器）来浏览内容，其作用非常类似于目录。通过大纲进行测试，可以帮助你检查是否正确使用了标题和节。你可以使用各种浏览器扩展和网站，这里我们将使用一个Google Chrome扩展程序：`http://code.google.com/p/h5o/`。
+
 下载Chrome扩展程序并安装后，你会在地址栏看到一个图标，如图1.11所示。
 
 选择此工具时，你会看到类似目录的显示数据，内容通常会缩进显示。
@@ -862,26 +879,26 @@ HTML5规范指出，`footer`元素可以包含指向相关文档的链接。虽�
 
 一个正确的大纲可能如下所示：
 
-+   1. 网站名称
-   a. 博客
-      i. 文章标题
-      ii. 文章标题
-   b. 关于我
-      i. 我的姓名
-      ii. 我的喜好
-      iii. 我的厌恶
-   c. 联系我
++ 1. 网站名称
+  a. 博客
+     i. 文章标题
+     ii. 文章标题
+  b. 关于我
+     i. 我的姓名
+     ii. 我的喜好
+     iii. 我的厌恶
+  c. 联系我
 
 图1.12展示了一个文档大纲示例。缩进正确，除了`nav`之外没有无标题节，这是可以接受的。
 
 你将在本技巧中创建的大纲如下：
 
-+   1. 海量新闻
-   a. 为您带来各类新闻！
-   b. 无标题导航
-   c. 体育新闻
-   d. 娱乐新闻！
-   e. 极客新闻
++ 1. 海量新闻
+  a. 为您带来各类新闻！
+  b. 无标题导航
+  c. 体育新闻
+  d. 娱乐新闻！
+  e. 极客新闻
 
 ![](img/de30ea99ecac39b49e690a84c48f43b9_50_0.png)
 
@@ -916,16 +933,17 @@ HTML5规范指出，`footer`元素可以包含指向相关文档的链接。虽�
 </section>
 ```
 
-此页面顶部有一个`header`，它在大纲中作为第一个节点（而非页面标题），随后是带有标题的节。`header`元素中使用了一个`hgroup`元素，其中包含文本“为您带来各类新闻！”，但在大纲中你看不到h2，因为大纲会读取元素中的第一个标题（h1、h2、h3、h4、h5或h6）。
+此页面顶部有一个`header`，它在大纲中作为第一个节点（而非页面标题），随后是带有标题的节。`header`元素中使用了一个`hgroup`元素，其中包含文本“为您带来各类新闻！”，但在大纲中你看不到`h2`，因为大纲会读取元素中的第一个标题（`h1`、`h2`、`h3`、`h4`、`h5`或`h6`）。
 
-`section`、`article`、`nav`和`aside`元素在大纲中开始了缩进（节）。这些节都有一个h1，并在大纲中显示。如果你想，也可以使用h2或h3；这并不重要。如果有一个节包含内容但没有标题，大纲会显示“无标题节”，而你需要避免这种情况。
+`section`、`article`、`nav`和`aside`元素在大纲中开始了缩进（节）。这些节都有一个`h1`，并在大纲中显示。如果你想，也可以使用`h2`或`h3`；这并不重要。如果有一个节包含内容但没有标题，大纲会显示“无标题节”，而你需要避免这种情况。
 
-## 高级技巧：
-使用所有新元素构建新闻页面
+## 高级技巧：使用所有新元素构建新闻页面
 
 图1.13和代码清单1.13展示了如何使用所有新的HTML5元素来构建新闻页面的布局。它包含一些用于定位元素的基础CSS，但目前不会做任何过于花哨的事情；我们将把所有这些留到后面的章节。
 
 ### 代码清单1.13 创建新闻主页
+
+
 
 ```
 <!DOCTYPE html>
@@ -1105,8 +1123,6 @@ Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac tu
 
 © 版权所有 无名氏 2011
 
-
-
 ## 2 分组、文本级与重定义语义
 
 在前一章中，你已经了解了几个新的HTML5元素。这些元素使你能够创建页面的主体结构。在本章中，你将学习更多新的HTML5元素（即`figure`、`time`、`details`和`mark`），以及一些被重新定义的元素（`address`、`s`、`cite`、`ol`、`dl`、`small`、`b`、`strong`、`i`、`em`、`abbr`和`hr`）。你还将了解新的块级链接和WAI-ARIA。这些元素被称为*分组*或*文本级*元素，用于处理页面内容。
@@ -1142,16 +1158,15 @@ Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac tu
 
 图 2.1 用于显示图表和说明文字的 figure 元素
 
-关于在figure元素中是否仍需要alt文本（为不支持图形的浏览器提供的文本替代方案），一直存在困惑。在figure之外，img总是需要alt。如果图像纯粹是装饰性的，并且不需要被辅助技术识别，那么可以使用空的alt属性。对于figure，如果说明文字是一个合适的描述，那么就不需要alt。然而，由于浏览器和辅助技术支持不足，这目前阻碍了无障碍访问。
+关于在`figure`元素中是否仍需要`alt`文本（为不支持图形的浏览器提供的文本替代方案），一直存在困惑。在`figure`之外，`img`总是需要`alt`。如果图像纯粹是装饰性的，并且不需要被辅助技术识别，那么可以使用空的`alt`属性。对于`figure`，如果说明文字是一个合适的描述，那么就不需要`alt`。然而，由于浏览器和辅助技术支持不足，这目前阻碍了无障碍访问。
 
-我们建议此处采取谨慎的做法，无论如何都提供alt。在代码清单2.1中，说明文字非常直接，但对于使用屏幕阅读器的人来说，图表将如何呈现是未知的，因此alt文本提供了这一信息。
+我们建议此处采取谨慎的做法，无论如何都提供`alt`。在代码清单2.1中，说明文字非常直接，但对于使用屏幕阅读器的人来说，图表将如何呈现是未知的，因此`alt`文本提供了这一信息。
 
 此外，即使示例使用的是图表图像，也没有理由不能使用通过Canvas或SVG创建的图表。
 
 > **注意**
-> 最初，规范要求使用（已有的）legend元素而不是新元素（figcaption），但由于跨浏览器样式问题，legend被弃用，转而支持figcaption。
-
-
+>
+> 最初，规范要求使用（已有的）`legend`元素而不是新元素（`figcaption`），但由于跨浏览器样式问题，`legend`被弃用，转而支持`figcaption`。
 
 # 2010年冬季访客数量
 
@@ -1163,7 +1178,7 @@ Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac tu
 
 > 图 2.2 用于显示共享一个图注的三张图片的 figure 元素
 
-如图 2.2 所示，使用 figure 时并不局限于只显示一张图片；你可以使用 figure 元素来显示多张图片。图 2.2 的代码在代码清单 2.2 中。
+如图 2.2 所示，使用`figure`时并不局限于只显示一张图片；你可以使用`figure`元素来显示多张图片。图 2.2 的代码在代码清单 2.2 中。
 
 ## 代码清单 2.2 在 figure 中包含多张图片
 
@@ -1182,16 +1197,20 @@ Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac tu
 </figure>
 ```
 
-在显示此类内容时，是否总是应该使用 `figcaption`？如果图像（或图表、表格等）纯粹是用于展示性目的，那么只需使用普通的 `img` 标签即可。但是，如果它包含附加信息并且对内容有益，那么很可能需要一个描述来配合它，因此在这种情况下，应使用 `figure` 和 `figcaption`。最后，一个 `figure` 只能有一个 `figcaption`。
+在显示此类内容时，是否总是应该使用`figcaption`？如果图像（或图表、表格等）纯粹是用于展示性目的，那么只需使用普通的`img`标签即可。但是，如果它包含附加信息并且对内容有益，那么很可能需要一个描述来配合它，因此在这种情况下，应使用`figure`和`figcaption`。最后，一个`figure`只能有一个`figcaption`。
 
 ## 初学者食谱：使用 time 元素标记日期和时间
 
-`time` 元素允许你编码机器可读但以用户友好方式显示的日期和时间。因此，你可以用它来为发布日期或事件添加时间戳，这些时间戳可以供其他技术使用（日历是最明显的例子）。`time` 元素有两个可选属性：
 
-- `datetime`：最终用户将看到 `time` 标签内的内容，但机器能够读取 `datetime` 的值：`datetime="2011-04-01T16:00Z"`。此值中的时间部分（T16:00）是可选的。你还可以添加时区偏移量：T16:00+04:00。Z 代表协调世界时（UTC），相当于时区偏移量为 +00:00。
-- `pubdate`：`pubdate` 是一个布尔属性。它指示其最近的父级 `article` 元素的发布日期和可能的发布时间。如果没有父级 `article` 元素，则 `pubdate` 指整个文档。每个 `article` 元素必须只有一个带有 `pubdate` 的 `time` 元素。
 
-`time` 元素旨在显示精确的日期，例如“2011年1月22日”，而不是模糊的日期，例如“2011年的某个时候”。`datetime` 属性必须采用公历格式：YYYY-MM-DD，时间编码为 T00:00。以下是一些示例：
+## `time` 元素
+
+`time`元素允许你编码机器可读但以用户友好方式显示的日期和时间。因此，你可以用它来为发布日期或事件添加时间戳，这些时间戳可以供其他技术使用（日历是最明显的例子）。`time`元素有两个可选属性：
+
+- `datetime`：最终用户将看到`time`标签内的内容，但机器能够读取`datetime`的值：`datetime="2011-04-01T16:00Z"`。此值中的时间部分（`T16:00`）是可选的。你还可以添加时区偏移量：`T16:00+04:00`。`Z`代表协调世界时（UTC），相当于时区偏移量为`+00:00`。
+- `pubdate`：`pubdate`是一个布尔属性。它指示其最近的父级`article`元素的发布日期和可能的发布时间。如果没有父级`article`元素，则`pubdate`指整个文档。每个`article`元素必须只有一个带有`pubdate`的`time`元素。
+
+`time`元素旨在显示精确的日期，例如“2011年1月22日”，而不是模糊的日期，例如“2011年的某个时候”。`datetime`属性必须采用公历格式：`YYYY-MM-DD`，时间编码为`T00:00`。以下是一些示例：
 
 ```
 <article>....
@@ -1214,13 +1233,13 @@ Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac tu
 <p>HTML6 release date is due on <time datetime="2040-01-04">April 1<sup>st</sup></time> 2040</time></p>
 ```
 
-## 初学者食谱：使用 details 元素制作原生切换部件
+## 初学者食谱：使用 `details` 元素制作原生切换部件
 
-在撰写本文时，只有 Chrome 13+ 支持新的 `details` 元素。我们希望其他浏览器能尽快支持它。
+在撰写本文时，只有 Chrome 13+ 支持新的`details`元素。我们希望其他浏览器能尽快支持它。
 
-`details` 元素创建了一个交互式的开/关切换效果，无需 JavaScript 和/或 CSS。`summary` 元素可在 `details` 内部使用，以表示内容的摘要。
+`details`元素创建了一个交互式的开/关切换效果，无需 JavaScript 和/或 CSS。`summary`元素可在`details`内部使用，以表示内容的摘要。
 
-`details` 有一个可选属性：`open`。如果此属性为 true，它将默认显示 `details` 元素为打开状态；否则，`details` 元素将关闭，并显示 `summary`。`summary` 是可点击的部分，用于打开/关闭 `details`。
+`details`有一个可选属性：`open`。如果此属性为 true，它将默认显示`details`元素为打开状态；否则，`details`元素将关闭，并显示`summary`。`summary`是可点击的部分，用于打开/关闭`details`。
 
 图 2.3 显示了一个简短的作者简介，顶部的默认是打开的。代码清单 2.3 展示了代码。
 
@@ -1230,11 +1249,11 @@ Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac tu
   - Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
 - ▶ Chuck Hudson
 
-图 2.3 在 Chrome 中查看的 `details` 元素，其中一部分默认打开
+图 2.3 在 Chrome 中查看的`details`元素，其中一部分默认打开
 
 第36页 第2章 分组、文本级别和重新定义的语义
 
-### 代码清单 2.3 details 元素示例
+### 代码清单 2.3 `details` 元素示例
 
 ```
 <details open>
@@ -1259,7 +1278,7 @@ Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac tu
 </details>
 ```
 
-另一个例子是使用 details 元素来显示/隐藏目录。根据页面的样式和内容量，将目录始终放在顶部角落可能很有用，用户可以点击展开它并导航到页面的不同部分。代码清单 2.4 包含了这段代码，其中 details 元素默认是关闭的。
+另一个例子是使用`details`元素来显示/隐藏目录。根据页面的样式和内容量，将目录始终放在顶部角落可能很有用，用户可以点击展开它并导航到页面的不同部分。代码清单 2.4 包含了这段代码，其中`details`元素默认是关闭的。
 
 ### 代码清单 2.4 创建可折叠的目录
 
@@ -1285,11 +1304,11 @@ Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac tu
 </article>
 ```
 
-## 初学者食谱：使用 address 元素提供联系信息
+## 初学者食谱：使用 `address` 元素提供联系信息
 
-规范将 address 元素定义为一个“分段”元素，类似于 nav 或 article。然而，我们将其放在本章中，因为我们认为它作为“文本级别”语义更合适，因为它的使用涉及文本内容，而非布局。
+规范将`address`元素定义为一个“分段”元素，类似于`nav`或`article`。然而，我们将其放在本章中，因为我们认为它作为“文本级别”语义更合适，因为它的使用涉及文本内容，而非布局。
 
-多年来，address 元素一直被 Web 开发者错误使用。它不应该被用作通用的邮政地址（通常在“联系我们”页面上）。因此，以下代码是不正确的：
+多年来，`address`元素一直被 Web 开发者错误使用。它不应该被用作通用的邮政地址（通常在“联系我们”页面上）。因此，以下代码是不正确的：
 
 ```
 <address>
@@ -1299,13 +1318,13 @@ United Kingdom
 </address>
 ```
 
-HTML5 试图通过将 address 元素用于其最近的 article 或 body 元素的联系信息来澄清这种混淆。
+HTML5 试图通过将`address`元素用于其最近的`article`或`body`元素的联系信息来澄清这种混淆。
 
-那么，这意味着什么呢？它意味着你应该使用 address 元素来提供当前文章或整个网页作者的联系信息。因为你可以在 article 内部使用 address，这意味着 address 可以在一个站点上多次使用。address 元素的内容可以是电子邮件地址、网站、电话号码、邮政地址或任何其他类型的联系信息。
+那么，这意味着什么呢？它意味着你应该使用`address`元素来提供当前文章或整个网页作者的联系信息。因为你可以在`article`内部使用`address`，这意味着`address`可以在一个站点上多次使用。`address`元素的内容可以是电子邮件地址、网站、电话号码、邮政地址或任何其他类型的联系信息。
 
-由于它是用于联系信息，在 footer 内部使用 address 很常见。代码清单 2.5 两次使用了 address 元素：一次用于主页内容的作者，另一次用于整个站点的作者。
+由于它是用于联系信息，在`footer`内部使用`address`很常见。代码清单 2.5 两次使用了`address`元素：一次用于主页内容的作者，另一次用于整个站点的作者。
 
-### 代码清单 2.5 address 元素的多次使用
+### 代码清单 2.5 `address` 元素的多次使用
 
 ```
 <article>
@@ -1316,11 +1335,10 @@ HTML5 试图通过将 address 元素用于其最近的 article 或 body 元素�
   <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas....</p>
 ```
 
-
-
-## 初学者配方：使用 mark 元素高亮文本
+## 初学者配方：使用 `mark` 元素高亮文本
 
 `mark`元素为文档作者提供了一种高亮或引起文档中某些文本注意的机会。
+
 如果用户搜索网站并被带到单独的页面，他们搜索的术语可能会被高亮以供参考。这里我们会使用`mark`，而不是`strong`或`em`，因为我们不是要赋予该术语任何重要性或强调，仅仅是为了用户而高亮它。图2.4展示了如何使用它。清单2.6展示了HTML和CSS代码。
 
 ```
@@ -1339,9 +1357,9 @@ mark {background-color: #0F0; font-weight:bold;}
 
 Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.
 
-图 2.4  用于为用户高亮文本的 mark 元素
+图 2.4  用于为用户高亮文本的 `mark` 元素
 
-## 初学者配方：使用 s 元素表示不准确或不相关的内容
+## 初学者配方：使用 `s` 元素表示不准确或不相关的内容
 
 以前`s`元素专门用于删除线文本。在HTML5中，它已被重新定义，现在用于表示不再正确或相关的内容。
 
@@ -1363,7 +1381,7 @@ Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac tu
 
 在第一章中，你了解了可用于创建页面布局和添加内容的新元素。在本章的前面部分，你看到了更多新的HTML5元素，但它们与内容本身有关，例如图像。仅仅因为关注点集中在新元素上，并不意味着现有元素被忽视了。事实上，有几个元素的角色已经改变。
 
-### cite 元素
+### `cite` 元素
 
 `cite`元素在HTML5中已作调整。在HTML4中，`cite`允许内容开发者标记引用中说话者/作者的姓名：
 
@@ -1373,7 +1391,7 @@ Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac tu
 
 ![图 2.5 用于显示旧价格的 s 元素](img/de30ea99ecac39b49e690a84c48f43b9_69_0.png)
 
-图 2.5 用于显示旧价格的 s 元素
+图 2.5 用于显示旧价格的 `s` 元素
 
 它也用于`blockquote`内部，这在HTML4中技术上是不正确的，但尽管如此仍被普遍使用：
 
@@ -1392,19 +1410,22 @@ tempor sit amet, ante.</p>
 ```
 
 （HTML5规范建议对作者姓名使用`b`元素。）
+
 HTML5中不允许`cite`用于姓名这一更改引起了一些争议。Jeremy Keith 的文章 http://24ways.org/2009/incite-a-riot 值得一读；它深入探讨了这个问题。总结一下，HTML5中的`cite`元素不再向后兼容，相反，HTML5规范建议对姓名使用`b`元素，尽管这个标签本身没有语义意义，即使其内容是有意义的。
+
 因此，你需要做出选择：是按照规范执行，还是像许多人继续做的那样，使用`cite`来表示姓名。值得关注`cite`元素，看看其定义是否会改变。
 
 > **注意**
+
 2011年7月，有讨论可能允许在`blockquote`中使用`footer`，这将为添加关于引用的信息（如作者）提供绝佳机会。因此，请关注这一发展。
 
-### ol 元素
+### `ol` 元素
 
 用于创建有序列表的`ol`元素已被重新定义，因此它现在有三个可接受的属性：
 
--   start
--   reversed
--   type
+- `start`
+- `reversed`
+- `type`
 
 在清单2.8中使用的`reversed`属性是HTML5新增的，当至少有一个浏览器选择实现它时，将使你能够反转一个从大到小计数的列表。
 
@@ -1440,7 +1461,11 @@ HTML5中不允许`cite`用于姓名这一更改引起了一些争议。Jeremy Ke
 
 #### 清单 2.9  嵌套有序列表
 
-```
+
+
+## 有序列表
+
+```html
 <ol>
   <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
     <ol>
@@ -1496,17 +1521,15 @@ type="I" = I, II, III, IV, V
 
 使用不同的类型，在内容中你可以引用项目 1.b.ii，而不是 1.3.2。浏览器将正确实现`type`属性，但在撰写本文时，它会导致验证错误。
 
-### `dl` 元素
+### `dl`元素
 
 在HTML4中，`dl`是一个定义列表，它应该包含一个术语，然后是一个定义，但其自身的定义和用法从来不是很清楚，因此要么被误用，要么被舍弃而转用另一个元素。
-
-
 
 在HTML5中，它被重新定义为描述性列表或关联列表。通过一些示例可以更好地理解这个元素。清单2.10使用`dl`创建了一个术语表。我们将术语表放在`aside`中，因为可以假设它位于一篇关于网络开发的文章内部。
 
 #### 清单2.10 创建术语表
 
-```
+```html
 <aside>
 <h2>术语表</h2>
 <dl>
@@ -1522,7 +1545,7 @@ type="I" = I, II, III, IV, V
 
 #### 清单2.11 添加电影演职员表
 
-```
+```html
 <h1>肖申克的救赎</h1>
 <dl>
 <dt>导演：</dt>
@@ -1540,7 +1563,7 @@ type="I" = I, II, III, IV, V
 
 上述代码为一个键（`dt`）使用了多个值（`dd`）。可以说，演职员表的每个部分（导演、编剧等）都可以放在各自的区块中，如下面所示：
 
-```
+```html
 <article>
 <header>
 <h1>肖申克的救赎</h1>
@@ -1567,32 +1590,32 @@ type="I" = I, II, III, IV, V
 
 过去，`dl`元素曾被用来标记对话，但规范现在指出使用`dl`是不恰当的。最初，在HTML5中有一个`dialog`元素，但它在2009年底被废弃了。取而代之，你应该使用`p`元素来满足此需求，如果你想设置说话者姓名的样式，应该使用`span`或`b`。下面是一个示例：
 
-```
+```html
 <p><b>约翰</b>：你现在能使用HTML5了吗？</p>
 <p><b>简</b>：是的，你当然可以！</p>
 ```
 
-### small元素
+### `small`元素
 
 在HTML4中，`small`元素用于减小文本大小。然而，这过去是、现在也仍是一个表现形式的问题，因此应使用CSS来实现此目的。现在，在HTML5中，`small`元素用于显示小字体文本，例如版权信息、条款和条件或许可/法律信息：
 
-```
+```html
 <p><small>本站采用<a href="http://creativecommons.org/licenses/by-nc/2.0/uk/">知识共享署名-非商业性使用2.0</a>许可协议。欢迎修改、复用、改编和扩展。</small></p>
 ```
 
 由于`small`是内联内容，如有必要，你可以将其嵌入其他元素中，例如`strong`，这将强调此小字体文本的重要性：
 
-```
+```html
 <p><strong><small>此内容归我所有！请勿窃取，否则会有严重、严重的后果。</small></strong></p>
 ```
 
-### b和strong元素
+### `b`和`strong`元素
 
 在HTML4中，`b`元素用于加粗文本，但这一点已经改变。现在它纯粹是表现形式；应用于样式化一段文本，而不传递任何特定的重要性。
 
 你经常会看到博客文章的第一段样式不同，通常是加粗文本：
 
-```
+```html
 <h2>简单方法揭示暗能量与平坦宇宙</h2>
 <p><b class="lead">研究人员开发了一种简单的技术，为宇宙是平坦的理论增添了证据。</b></p>
 <p>此外，这种方法——通过重访一个30年前的想法而开发——证实了“暗能量”占据了宇宙近四分之三的比重。</p>
@@ -1600,9 +1623,9 @@ type="I" = I, II, III, IV, V
 
 你不会使用`strong`元素，因为你并不想给第一段增加重要性；你只是想给它设置不同的样式。然而，你也可以使用一些CSS（`p:first-of-type`或`h2+p`）来替代`b`实现样式化。清单2.12使用`b`为部分文本添加了颜色样式。
 
-#### 清单2.12 b元素
+#### 清单2.12 `b`元素
 
-```
+```html
 <style>
 b.red {color: red;}
 b.green {color: green;}
@@ -1618,21 +1641,21 @@ b.blue {color: blue;}
 
 `strong`元素表示具有强烈重要性的文本，所以你通常用它来生成加粗效果，并且你可以嵌套`strong`以增加内容的重要性：
 
-```
+```html
 <p><strong>不要吃我的饼干</strong>并且<strong><strong>不要喝我的牛奶</strong></strong></p>
 ```
 
-### i和em元素
+### `i`和`em`元素
 
 在HTML4中，`i`元素用于样式化斜体文本。但现在，它代表以另一种语气或情感表达的文本。HTML5规范给出了一些使用示例，包括梦境、技术术语、思考或船名：
 
-```
+```html
 <p>我今晚要吃鱼<i>（然后我想我要吃点饼干，我好久没吃饼干了）</i>。</p>
 ```
 
 相比之下，`em`元素表示改变句子含义的强调。根据需要强调的单词（或多个单词），将其包裹在`em`元素中，但移动`em`元素会导致句子改变其含义：
 
-```
+```html
 <p>我以为我晚上8点和朋友见面，但我妻子说是<em>晚上9点</em></p>
 <p><em>我</em>以为我晚上8点和朋友见面，但我的<em>妻子</em>说是<em>晚上9点</em></p>
 ```
@@ -1641,7 +1664,7 @@ b.blue {color: blue;}
 
 `abbr`元素在HTML5中并非新元素，它也没有被重新定义。那么，为什么还要提到它呢？因为`abbr`已经与`acronym`合并了。现在，`abbr`元素代表一个缩写或首字母缩略词。你可以使用`title`属性来展开缩写，这通常意味着对用户显示工具提示：
 
-```
+```html
 <p><abbr title="HyperText Markup Language">HTML</abbr>是自切片网页以来最棒的东西</p>
 ```
 
@@ -1655,29 +1678,30 @@ b.blue {color: blue;}
 
 HTML5已经移除了几个元素，所以请向以下元素说再见：
 
--   acronym（使用`abbr`；见上文）
--   applet（使用`object`）
--   basefont（使用CSS进行表现）
--   big（使用CSS进行表现）
--   center（使用CSS进行表现）
--   frame（尽管`iframe`仍然存在）
--   frameset
--   noframes
--   font（使用CSS进行表现）
--   strike（根据内容，使用`s`或`del`）
--   tt（使用CSS进行表现）
--   u（使用CSS进行表现）
+- acronym（使用`abbr`；见上文）
+- applet（使用`object`）
+- basefont（使用CSS进行表现）
+- big（使用CSS进行表现）
+- center（使用CSS进行表现）
+- frame（尽管`iframe`仍然存在）
+- frameset
+- noframes
+- font（使用CSS进行表现）
+- strike（根据内容，使用`s`或`del`）
+- tt（使用CSS进行表现）
+- u（使用CSS进行表现）
 
 就这些了，真的。我们不会哀悼这些元素，如果你现在还在使用它们，请立即停止！
 
-## 入门技巧：
-将链接包裹在元素周围
+## 入门技巧：将链接包裹在元素周围
 
 HTML5一个方便的新特性是能够将多个元素组合成一个链接。这为你提供了更大的点击区域，过去你可能需要使用JavaScript或标签组合来完成这项任务。
+
 在HTML4中，如果你正在标记一个新闻或博客主页，其中有多篇文章需要链接，你可能之前使用了类似清单2.13中的代码，使每个项目都可点击。
 
-```
-清单2.13 在HTML4中包裹链接
+#### 清单2.13 在HTML4中包裹链接
+
+```html
 <div class="article">
   <h2><a href="article.htm"><img alt="article thumbnail" src="thumb.jpg"
     height="100" width="100" /> 我的文章标题</a></h2>
@@ -1688,8 +1712,9 @@ HTML5一个方便的新特性是能够将多个元素组合成一个链接。这
 
 清单2.14表明，在HTML5中，你可以将所有这些包裹在一个`a`元素中。
 
-```
-清单2.14 使用HTML5包裹链接
+#### 清单2.14 使用HTML5包裹链接
+
+```html
 <article>
   <a href="article.htm">
     <h2><img alt="article thumbnail" src="thumb.jpg" height="100" width="100" />
@@ -1702,20 +1727,17 @@ HTML5一个方便的新特性是能够将多个元素组合成一个链接。这
 
 你也可以将`article`包裹在`a`元素中；然而，已知这会导致一些浏览器问题，因此我们建议不要采用这种方法。
 
-## 中级技巧：
-使用微数据添加语义信息
+## 中级技巧：使用微数据添加语义信息
 
 微数据规范允许作者为内容片段添加标签，使其可被机器读取。使用微数据格式理论上有助于“机器”（如谷歌）返回关于网页更准确的信息。
-
-
 
 # 第2章 分组、文本级别与重定义语义
 
 你可以将微数据视为自定义元素，因此可以用它来标记诸如商家、人物、产品或事件等事物。由于不存在`<book>`元素，你可以将微数据属性应用于现有元素。
 
-微数据有五个属性：itemid、itemprop、itemref、itemscope 和 itemtype。清单2.15展示了一个基本示例，描述了一个人。
+微数据有五个属性：`itemid`、`itemprop`、`itemref`、`itemscope`和`itemtype`。清单2.15展示了一个基本示例，描述了一个人。
 
-## 清单2.15 微数据示例
+### 清单2.15 微数据示例
 
 ```html
 <article itemscope itemtype="http://data-vocabulary.org/Person">
@@ -1745,6 +1767,8 @@ HTML5一个方便的新特性是能够将多个元素组合成一个链接。这
 
 **图2.6** Google搜索预览
 
+
+
 ```
 Item
     Type: http://data-vocabulary.org/person
@@ -1762,26 +1786,27 @@ Item 1
 
 **图2.7** Google掌握的其他信息
 
-2011年6月，http://schema.org 上线，这是由Bing、Google和Yahoo!共同协作推出的共享词汇表。Schema.org 提供了多个示例和大量的示例数据。在清单2.15中，我们链接到 http://data-vocabulary.org，因为这目前在富媒体摘要测试工具中受支持，但不久后你就可以在微数据中使用 http://schema.org，它很可能会成为开发者学习应使用何种标记的目标网站。
+2011年6月，`http://schema.org`上线，这是由Bing、Google和Yahoo!共同协作推出的共享词汇表。`Schema.org`提供了多个示例和大量的示例数据。在清单2.15中，我们链接到`http://data-vocabulary.org`，因为这目前在富媒体摘要测试工具中受支持，但不久后你就可以在微数据中使用`http://schema.org`，它很可能会成为开发者学习应使用何种标记的目标网站。
 
 > **注意**
-> 微格式（Microformats）和 RDFa 是扩展HTML以描述特定信息的另外两种方式。这些选项存在一些我们不会深入讨论的政治因素，但两者都有其优缺点。实际上，你可以将微数据与微格式结合使用，尽管微数据是新兴标准，但微格式目前更为流行。
+>
+> 微格式（Microformats）和RDFa是扩展HTML以描述特定信息的另外两种方式。这些选项存在一些我们不会深入讨论的政治因素，但两者都有其优缺点。实际上，你可以将微数据与微格式结合使用，尽管微数据是新兴标准，但微格式目前更为流行。
 
 ## 中级技巧：在HTML5中使用WAI-ARIA
 
-Web无障碍倡议-可访问富互联网应用（WAI-ARIA），也常被称为ARIA，是一项草案规范（http://w3.org/TR/wai-aria），旨在提高Web应用和网页的无障碍性。ARIA使开发者和内容作者能够开发丰富的互联网应用和内容，这些内容可以被辅助技术识别和使用。通常情况下，辅助技术不知道小部件是什么，并且很少有小部件可以通过键盘访问。还要考虑到当内容通过Ajax调用更新时，辅助技术不知道内容已更新，因此无法通知用户。虽然我们不会讨论ARIA提供的所有可能解决方案，但我们将涵盖ARIA的**地标角色（Landmark Roles）**部分，以及如何将这些新角色添加到你的HTML5文档中。
+Web无障碍倡议-可访问富互联网应用（WAI-ARIA），也常被称为ARIA，是一项草案规范（`http://w3.org/TR/wai-aria`），旨在提高Web应用和网页的无障碍性。ARIA使开发者和内容作者能够开发丰富的互联网应用和内容，这些内容可以被辅助技术识别和使用。通常情况下，辅助技术不知道小部件是什么，并且很少有小部件可以通过键盘访问。还要考虑到当内容通过Ajax调用更新时，辅助技术不知道内容已更新，因此无法通知用户。虽然我们不会讨论ARIA提供的所有可能解决方案，但我们将涵盖ARIA的**地标角色（Landmark Roles）**部分，以及如何将这些新角色添加到你的HTML5文档中。
 
-地标角色是页面中用作导航地标的区域。规范（http://w3.org/TR/wai-aria/roles#landmark_roles）中列出了超过50个角色，但这里列出的是更常用的地标角色：
+地标角色是页面中用作导航地标的区域。规范（`http://w3.org/TR/wai-aria/roles#landmark_roles`）中列出了超过50个角色，但这里列出的是更常用的地标角色：
 
-- role="article"
-- role="banner"
-- role="complementary"
-- role="contentinfo"
-- role="form"
-- role="heading"
-- role="main"
-- role="navigation"
-- role="search"
+- `role="article"`
+- `role="banner"`
+- `role="complementary"`
+- `role="contentinfo"`
+- `role="form"`
+- `role="heading"`
+- `role="main"`
+- `role="navigation"`
+- `role="search"`
 
 你可以像这样轻松地将它们添加到你的标记中：
 
@@ -1830,13 +1855,14 @@ footer[role=contentinfo] {background: green; border: 5px solid blue;}
 
 关于WAI-ARIA规范和HTML5无障碍性还有更多内容，因此我们鼓励你在以下网站进行进一步阅读：
 
-- http://w3.org/TR/wai-aria
-- http://html5accessibility.com
-- http://paciellogroup.com/blog
+- `http://w3.org/TR/wai-aria`
+- `http://html5accessibility.com`
+- `http://paciellogroup.com/blog`
 
 ## 高级技巧：为带评论的文章页面进行标记
 
 清单2.16展示了创建带评论的文章页面（图2.9）所需的代码。
+
 它使用了本章涵盖的几项新技术。
 
 ### Tom的博客
@@ -1852,11 +1878,15 @@ Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac tu
 ### 评论
 
 1. **13/12/2010 11:15**
+
    评论者：[Tom Leadbetter](#)
+
    多么精彩的文章啊！
 
 2. **16/12/2010 11:15**
+
    评论者：匿名
+
    那真是垃圾。
 
 **图2.9** 带评论的网站文章
@@ -1883,8 +1913,6 @@ Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac tu
       <h1>Title of my article</h1>
       <time pubdate datetime="2010-12-12">Sunday, 12th December 2010</time>
 ```
-
-
 
 ## 高级指南：使用注释标记文章页面
 
@@ -1915,29 +1943,29 @@ Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac tu
 </html>
 ```
 
-代码清单 2.15 使用了一些 ARIA 地标角色，我们利用这些角色来辅助 `h1` 标签的样式设计。同时，我们还使用 `b` 元素来样式化文章的首字母，使其看起来更别致一些。在为 `h1` 和 `b` 元素设置样式时，不一定非要使用前面提到的 CSS，因为还有其他方法可以定位这些元素，但提供多种选项总是好的。
+代码清单2.15使用了一些ARIA地标角色，我们利用这些角色来辅助`h1`标签的样式设计。同时，我们还使用`b`元素来样式化文章的首字母，使其看起来更别致一些。在为`h1`和`b`元素设置样式时，不一定非要使用前面提到的CSS，因为还有其他方法可以定位这些元素，但提供多种选项总是好的。
 
-新的 `time` 元素被多次使用：一次用于主文章（带有 `pubdate` 属性），另一次用于每条评论中。在上一章中，我们提到用户评论本身就是一个 `article`，因此我们在这里采用了这种结构。在这个例子中，我们使用日期和时间作为评论的标题。我们本可以使用评论者的作者名，但我们不希望在页面大纲中出现重复的标题，而使用日期和时间则为其提供了唯一标识符。这仅仅是个人偏好；没有任何规则禁止你使用，比如，评论作者作为标题。
+新的`time`元素被多次使用：一次用于主文章（带有`pubdate`属性），另一次用于每条评论中。在上一章中，我们提到用户评论本身就是一个`article`，因此我们在这里采用了这种结构。在这个例子中，我们使用日期和时间作为评论的标题。我们本可以使用评论者的作者名，但我们不希望在页面大纲中出现重复的标题，而使用日期和时间则为其提供了唯一标识符。这仅仅是个人偏好；没有任何规则禁止你使用，比如，评论作者作为标题。
 
-我们还使用了一个有序列表，这样每条评论都有一个序号。这不仅定义了评论的顺序，也提供了一种样式化的选择。我们在 `ol` 上使用了 `reversed` 属性，因为在这个案例中，我们希望最新的评论出现在最上方。这样，我们未来或许可以添加一个“按日期排序”的开关，并通过 JavaScript 来添加或移除 `reversed` 属性。同样，你不必完全照搬，有很多替代方案，而且评论区的设计可能意味着你需要考虑其他选择。
+我们还使用了一个有序列表，这样每条评论都有一个序号。这不仅定义了评论的顺序，也提供了一种样式化的选择。我们在`ol`上使用了`reversed`属性，因为在这个案例中，我们希望最新的评论出现在最上方。这样，我们未来或许可以添加一个“按日期排序”的开关，并通过JavaScript来添加或移除`reversed`属性。同样，你不必完全照搬，有很多替代方案，而且评论区的设计可能意味着你需要考虑其他选择。
 
 # 第2章 分组、文本级与重新定义的语义
 
 ## 总结
 
-在本章中，你学习了 HTML5 中一系列全新的元素以及一些经过微调的元素。像 `figure` 和 `details` 这样的新元素，无疑将使开发者的工作在未来变得更加轻松。结合新的 ARIA 角色，你可以构建出语义更丰富、可访问性更强的文档。此外，你还可以使用微数据向 HTML 添加更多信息，从而使搜索引擎能够提供更丰富、更精确的数据。
+在本章中，你学习了HTML5中一系列全新的元素以及一些经过微调的元素。像`figure`和`details`这样的新元素，无疑将使开发者的工作在未来变得更加轻松。结合新的ARIA角色，你可以构建出语义更丰富、可访问性更强的文档。此外，你还可以使用微数据向HTML添加更多信息，从而使搜索引擎能够提供更丰富、更精确的数据。
 
 ## 3 浏览器中的HTML5处理
 
-尽管 HTML5 及其相关规范尚未完全定稿，细节也处于不断变化之中，但你现在就可以使用其中的许多功能。HTML5 是一门不断发展的语言，并集成了不断增长的 JavaScript API。浏览器厂商们正努力跟上这些新规范的快速发展。面对这些不断变化的新功能和浏览器版本，我们开发者常常会遇到浏览器支持问题。在本章中，你将学习如何处理浏览器之间的差异，以及如何运用现有的技巧、窍门和脚本来弥补这些差距。
+尽管HTML5及其相关规范尚未完全定稿，细节也处于不断变化之中，但你现在就可以使用其中的许多功能。HTML5是一门不断发展的语言，并集成了不断增长的JavaScript API。浏览器厂商们正努力跟上这些新规范的快速发展。面对这些不断变化的新功能和浏览器版本，我们开发者常常会遇到浏览器支持问题。在本章中，你将学习如何处理浏览器之间的差异，以及如何运用现有的技巧、窍门和脚本来弥补这些差距。
 
 ## 入门指南：处理 Internet Explorer
 
-如果你一直在 Internet Explorer（IE）7、8 或甚至 6（我们真心希望你没有被迫支持 IE6）中测试前面章节的代码，那么你可能已经注意到一个小小的问题——你在指南中创建的页面可能无法正常显示。这是因为我们目前提供的代码只能在以下主流浏览器中原生运行：Firefox、Chrome、Safari、Opera 和 Internet Explorer 9（IE9）。这并不是说 IE7 和 IE8 完全不支持 HTML5；它们确实支持一些 HTML5 API，例如拖放功能和 `ContentEditable`。
+如果你一直在Internet Explorer（IE）7、8或甚至6（我们真心希望你没有被迫支持IE6）中测试前面章节的代码，那么你可能已经注意到一个小小的问题——你在指南中创建的页面可能无法正常显示。这是因为我们目前提供的代码只能在以下主流浏览器中原生运行：Firefox、Chrome、Safari、Opera和Internet Explorer 9（IE9）。这并不是说IE7和IE8完全不支持HTML5；它们确实支持一些HTML5 API，例如拖放功能和`ContentEditable`。
 
 ### 使用 JavaScript 实现 HTML5 兼容性
 
-默认情况下，IE6、7 和 8 无法识别新的 HTML5 元素，比如 `article` 或 `section`，因此也不会对这些标签应用任何样式。如果你不采取任何措施，页面效果很可能与你预期的不同。为了让 IE 识别这些元素，你可以通过 JavaScript 在 DOM 中以编程方式创建它们，然后相应地设置样式，如下例所示：
+默认情况下，IE6、7和8无法识别新的HTML5元素，比如`article`或`section`，因此也不会对这些标签应用任何样式。如果你不采取任何措施，页面效果很可能与你预期的不同。为了让IE识别这些元素，你可以通过JavaScript在DOM中以编程方式创建它们，然后相应地设置样式，如下例所示：
 
 第56页 第3章 浏览器中的HTML5处理
 
@@ -1949,11 +1977,11 @@ document.createElement('section');
 </script>
 ```
 
-当然，为每一个新的 HTML5 元素都这样做会有点繁琐，而且你很可能会遗漏某些元素。幸运的是，你可以使用一个叫做 HTML5Shiv（http://code.google.com/p/html5shiv）的工具，它由 Remy Sharp 编写，包含了所有新元素。还有一个叫做 IE Print Protector（http://iecss.com/print-protector）的 JavaScript 小脚本，可以帮助 IE 正确显示 HTML5 元素。这个“shiv”旨在让 IE9 之前的版本能够识别 HTML5 元素，并允许通过 CSS 对它们进行样式化。
+当然，为每一个新的HTML5元素都这样做会有点繁琐，而且你很可能会遗漏某些元素。幸运的是，你可以使用一个叫做HTML5Shiv（`http://code.google.com/p/html5shiv`）的工具，它由Remy Sharp编写，包含了所有新元素。还有一个叫做IE Print Protector（`http://iecss.com/print-protector`）的JavaScript小脚本，可以帮助IE正确显示HTML5元素。这个“shiv”旨在让IE9之前的版本能够识别HTML5元素，并允许通过CSS对它们进行样式化。
 
-尽管这个脚本内部包含条件代码，使其只在 IE 中运行，但你最好还是自己用一个条件注释将其包裹起来，这样只有 IE 8 及更早版本会下载并运行此代码。这个脚本必须放在 `head` 标签内，并且要在样式表调用之前，如代码清单 3.1 所示。你可以自行决定是选择本地托管 html5shiv 文件，还是直接链接到 http://googlecode.com 上的文件。将文件放在本地可以避免任何远程访问问题导致的“资源未找到”错误，以及因 JavaScript 文件未来修改而可能引起的中断。
+尽管这个脚本内部包含条件代码，使其只在IE中运行，但你最好还是自己用一个条件注释将其包裹起来，这样只有IE 8及更早版本会下载并运行此代码。这个脚本必须放在`head`标签内，并且要在样式表调用之前，如代码清单3.1所示。你可以自行决定是选择本地托管html5shiv文件，还是直接链接到`http://googlecode.com`上的文件。将文件放在本地可以避免任何远程访问问题导致的“资源未找到”错误，以及因JavaScript文件未来修改而可能引起的中断。
 
-代码清单 3.1 使用 HTML5 Shiv
+代码清单3.1 使用HTML5 Shiv
 
 ```html
 <!DOCTYPE html>
@@ -1969,9 +1997,9 @@ document.createElement('section');
 
 ### 使 CSS 兼容
 
-现在你已经让 IE 支持了新的 HTML5 元素，接下来需要让它与 CSS 良好协作。大多数现代浏览器默认知道如何处理这些新元素，即使没有任何样式也是如此；然而，为了确保 IE 能正常工作，你需要将新元素的显示属性设置为 `block`，如代码清单 3.2 所示。
+现在你已经让IE支持了新的HTML5元素，接下来需要让它与CSS良好协作。大多数现代浏览器默认知道如何处理这些新元素，即使没有任何样式也是如此；然而，为了确保IE能正常工作，你需要将新元素的显示属性设置为`block`，如代码清单3.2所示。
 
-代码清单 3.2 在 CSS 中设置新元素
+代码清单3.2 在CSS中设置新元素
 
 ```css
 article, aside, details, figcaption, figure, footer, header, hgroup, nav, section
@@ -1980,34 +2008,37 @@ display: block;
 }
 ```
 
-如果你使用 CSS 重置（CSS reset），可以将代码清单 3.2 中的代码包含进去，或者也可以使用当前各种已包含 HTML5 修复的 CSS 重置方案：
+如果你使用CSS重置（CSS reset），可以将代码清单3.2中的代码包含进去，或者也可以使用当前各种已包含HTML5修复的CSS重置方案：
 
-- http://meyerweb.com/eric/thoughts/2011/01/03/reset-revisited
+- `http://meyerweb.com/eric/thoughts/2011/01/03/reset-revisited`
 - Modernizr（我们将在本章稍后介绍）
-- http://html5doctor.com/html-5-reset-stylesheet
+- `http://html5doctor.com/html-5-reset-stylesheet`
 
 ### 样板代码
 
-无论你是 web 开发领域的新手还是老手，你可能都积累了一些最佳实践和代码片段，并在几乎每个项目中重复使用。根据你投入多少时间来组织这些组件，你可能已经有了自己的 *样板代码*，这是一系列文件夹和文件，能让你快速启动项目。目前在 web 社区中正在推广几个流行的样板代码：http://html5boilerplate.com 和 http://html5reset.org。此外，这些样板代码已经可以通过像 http://initializr.com 这样的网站扩展，用于生成针对你特定网站或应用程序的模板，该网站就使用了 HTML5 Boilerplate。
+
+
+无论你是 web 开发领域的新手还是老手，你可能都积累了一些最佳实践和代码片段，并在几乎每个项目中重复使用。根据你投入多少时间来组织这些组件，你可能已经有了自己的样板代码，这是一系列文件夹和文件，能让你快速启动项目。目前在 web 社区中正在推广几个流行的样板代码：`http://html5boilerplate.com` 和 `http://html5reset.org`。此外，这些样板代码已经可以通过像 `http://initializr.com` 这样的网站扩展，用于生成针对你特定网站或应用程序的模板，该网站就使用了 HTML5 Boilerplate。
 
 这些网站，尤其是 HTML5 Boilerplate，提供了大量文档、说明以及针对你 web 项目的技巧和窍门，涵盖标记、脚本、CSS 和优化技术。
 
 样板代码的意义不在于直接拿来就用，而在于理解其中的内容，并根据你的需要或偏好增删一些你认为不需要或不认同的部分，这完全没问题。样板代码只是为你提供一个起点，让你受益于众多智慧的结晶，以获得 HTML5 跨浏览器支持和性能结构。你甚至可能最终根据你认为重要的特性，形成自己定制的样板代码。
 
 > **提示**
-HTML5 Boilerplate 在项目启动阶段提供了大量可利用的功能和优势。该样板代码包含浏览器兼容性模型、针对旧版浏览器的 HTML5 支持选项、移动设备设计处理，甚至还有一个优化构建脚本。我们建议你查阅 http://html5boilerplate.com 上的完整功能列表。如果你需要一个更完善的模板作为起点，可以查看 http://initializr.com，它利用 HTML5 Boilerplate 为你创建模板。
+
+HTML5 Boilerplate 在项目启动阶段提供了大量可利用的功能和优势。该样板代码包含浏览器兼容性模型、针对旧版浏览器的 HTML5 支持选项、移动设备设计处理，甚至还有一个优化构建脚本。我们建议你查阅 `http://html5boilerplate.com` 上的完整功能列表。如果你需要一个更完善的模板作为起点，可以查看 `http://initializr.com`，它利用 HTML5 Boilerplate 为你创建模板。
 
 ## 入门指南：检测 HTML5 功能
 
 在前面，你学习了如何让浏览器识别新的 HTML5 元素，以及如何使用 CSS 让它们正常显示。但并非所有浏览器都支持所有新的 HTML5 功能，比如 `canvas` 或 `geolocation`。虽然你仍然有时……
 
-## 3.3 HTML5中的浏览器处理
+## HTML5中的浏览器处理
 
 由于需要让浏览器以特定方式运行，你可能不得不进行一些“浏览器嗅探”，但这并不是一个推荐的方法。随着HTML5的广泛采用和浏览器的快速迭代，你可以转而使用特性检测方法。特性检测需要JavaScript，因此你需要确保你的标记足够好，可以“优雅降级”，以便使用旧版浏览器或关闭JavaScript的用户仍然可以使用该网站。
 
-通常，HTML5的特性（如属于HTML5元素和JavaScript API的canvas和地理定位），可以通过JavaScript检查它们的存在与否来确定。在清单3.3中，你将对浏览器进行一个简单的检查，以确定其是否支持地理定位API。
+通常，HTML5的特性（如属于HTML5元素和JavaScript API的`canvas`和地理定位），可以通过JavaScript检查它们的存在与否来确定。在清单3.3中，你将对浏览器进行一个简单的检查，以确定其是否支持地理定位API。
 
-```html
+```
 清单3.3 测试HTML5地理定位支持
 <!DOCTYPE html>
 <html>
@@ -2027,9 +2058,9 @@ if (navigator.geolocation) {
 </html>
 ```
 
-对于JavaScript API，检查其是否存在相当容易，我们将在本书中多次展示。然而，如果你试图检查HTML5元素（如canvas元素）的可用性，过程会稍微复杂一些。检查元素是否支持的标准方法是创建该元素，然后尝试检索其默认方法或属性。如果返回的值是`null`或`undefined`，则浏览器不支持该元素。清单3.4展示了一个如何用canvas元素进行此检查的例子。
+对于JavaScript API，检查其是否存在相当容易，我们将在本书中多次展示。然而，如果你试图检查HTML5元素（如`canvas`元素）的可用性，过程会稍微复杂一些。检查元素是否支持的标准方法是创建该元素，然后尝试检索其默认方法或属性。如果返回的值是`null`或`undefined`，则浏览器不支持该元素。清单3.4展示了一个如何用`canvas`元素进行此检查的例子。
 
-```html
+```
 清单3.4 检查canvas支持
 <!DOCTYPE html>
 <html>
@@ -2049,7 +2080,7 @@ if (document.createElement('canvas').getContext) {
 </html>
 ```
 
-你首先创建了一个canvas类型的新元素，然后立即检查该元素是否提供了`getContext`方法。你将在本书后面看到canvas的各种方法，但目前只需知道`getContext`方法是任何canvas对象必需且默认的方法。因此，如果这个元素上不存在`getContext`方法，那么该元素本身也不存在，此浏览器不支持canvas。
+你首先创建了一个`canvas`类型的新元素，然后立即检查该元素是否提供了`getContext`方法。你将在本书后面看到`canvas`的各种方法，但目前只需知道`getContext`方法是任何`canvas`对象必需且默认的方法。因此，如果这个元素上不存在`getContext`方法，那么该元素本身也不存在，此浏览器不支持`canvas`。
 
 ## 中级技巧：利用jQuery替换日历控件
 
@@ -2058,11 +2089,12 @@ if (document.createElement('canvas').getContext) {
 ![图3.1 Opera中的日期输入控件](img/de30ea99ecac39b49e690a84c48f43b9_89_0.png)
 
 ![图3.2 Internet Explorer中使用jQuery回退方案的日历](img/de30ea99ecac39b49e690a84c48f43b9_90_0.png)
+
 *图3.2 Internet Explorer中使用jQuery回退方案的日历*
 
 以下是你需要使该输入在Opera中工作的HTML代码：
 
-```html
+```
 <form>
     <label for="date">What date do you leave?</label>
     <input required type="date" id="date" name="date" />
@@ -2074,7 +2106,7 @@ if (document.createElement('canvas').getContext) {
 
 ### 清单3.5 使用jQuery日历作为回退方案
 
-```html
+```
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -2117,7 +2149,7 @@ $(function(){
 
 ### 清单3.6 检测不同的输入类型
 
-```javascript
+```
 $(function(){
   function inputSupport(inputType) {
     var input = document.createElement("input");
@@ -2141,35 +2173,41 @@ $(function(){
 
 ## 中级技巧：使用Modernizr检测特性
 
-Modernizr是一个JavaScript库（可在 http://modernizr.com 找到），它能检测浏览器支持哪些HTML5和CSS3特性，并让开发者能够轻松地针对不支持某些新技术的浏览器进行测试和编码。在前面的例子中，我们使用标准JavaScript来测试特性，但使用Modernizr则非常容易。
+Modernizr是一个JavaScript库（可在 `http://modernizr.com` 找到），它能检测浏览器支持哪些HTML5和CSS3特性，并让开发者能够轻松地针对不支持某些新技术的浏览器进行测试和编码。在前面的例子中，我们使用标准JavaScript来测试特性，但使用Modernizr则非常容易。
 
-尽管Modernizr为你完成了检测部分，但它*不会*为你填补空白或添加缺失的功能。尽管如此，它是一个极其强大的脚本片段，开发者应该了解并随时准备使用。目前是第2版的Modernizr库专注于CSS3检测、HTML5标签支持和JavaScript API支持。对于这些领域中的每一个，Modernizr库都有特定的属性，可以在初始化后访问，并用于动态更改源内容，从而支持多种体验和浏览器。部分属性标志包括：
+尽管Modernizr为你完成了检测部分，但它不会为你填补空白或添加缺失的功能。尽管如此，它是一个极其强大的脚本片段，开发者应该了解并随时准备使用。目前是第2版的Modernizr库专注于CSS3检测、HTML5标签支持和JavaScript API支持。对于这些领域中的每一个，Modernizr库都有特定的属性，可以在初始化后访问，并用于动态更改源内容，从而支持多种体验和浏览器。部分属性标志包括：
 
 - 地理定位API
-- localStorage
-- sessionStorage
+
+- `localStorage`
+
+- `sessionStorage`
+
 - 拖放
+
 - 历史管理
-- applicationCache
 
+- `applicationCache`
 
+- `Canvas`
 
-# 第3章 HTML5中的浏览器处理
-
-- Canvas
 - Web Sockets
+
 - Web Workers
+
 - Web SQL 数据库
+
 - 输入类型
+
 - 输入属性
 
-Modernizr库，或按其术语称为*微库*，使用简单，已集成到全球各大网站中。在浏览器统一支持HTML5、CSS3和JavaScript API的所有功能之前，仍需要像Modernizr这样的工具。
+Modernizr库，或按其术语称为微库，使用简单，已集成到全球各大网站中。在浏览器统一支持HTML5、CSS3和JavaScript API的所有功能之前，仍需要像Modernizr这样的工具。
 
-那么，如何使用它呢？要生成你的文件，你需要选择想要测试的功能。只选择少量功能很有用，因为这能保持文件大小较小，并让你更具体地思考网站将具备的功能。因此，首先，你需要从该网站生成一个文件，如清单3.7所示，在head标签中包含该链接，并在html标签上添加no-js类。
+那么，如何使用它呢？要生成你的文件，你需要选择想要测试的功能。只选择少量功能很有用，因为这能保持文件大小较小，并让你更具体地思考网站将具备的功能。因此，首先，你需要从该网站生成一个文件，如清单3.7所示，在`head`标签中包含该链接，并在`html`标签上添加`no-js`类。
 
-## 清单3.7 使用Modernizr进行设置
+### 清单3.7 使用Modernizr进行设置
 
-```html
+```
 <!DOCTYPE html>
 <html class="no-js" lang="en">
 <head>
@@ -2182,17 +2220,17 @@ Modernizr库，或按其术语称为*微库*，使用简单，已集成到全球
 </html>
 ```
 
-Modernizr脚本在被包含后将自动运行，并会替换添加到html元素的no-js类属性。该脚本会动态附加CSS类，以显示浏览器支持哪些功能，以及浏览器*不支持*哪些功能。以下代码显示了Modernizr脚本运行并替换类属性后，在Chrome 8版本中的html标签。如你所见，Chrome 8浏览器支持许多CSS3和HTML5的优秀特性，但不支持例如WebGL，因此它添加了一个no-webgl类。
+Modernizr脚本在被包含后将自动运行，并会替换添加到`html`元素的`no-js`类属性。该脚本会动态附加CSS类，以显示浏览器支持哪些功能，以及浏览器不支持哪些功能。以下代码显示了Modernizr脚本运行并替换类属性后，在Chrome 8版本中的`html`标签。如你所见，Chrome 8浏览器支持许多CSS3和HTML5的优秀特性，但不支持例如WebGL，因此它添加了一个`no-webgl`类。
 
-```html
-<html lang="en" class=" js flexbox canvas canvastext **no-webgl** no-touch geolocation postmessage websqldatabase no-indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms no-csstransforms3d csstransitions fontface video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths">
+```
+<html lang="en" class=" js flexbox canvas canvastext no-webgl no-touch geolocation postmessage websqldatabase no-indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms no-csstransforms3d csstransitions fontface video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths">
 ```
 
 清单3.8展示了一个简单的用法，说明Modernizr如何通过检查Session Storage API支持，在CSS标签中暴露不同的功能支持。如果会话存储可用，则将使用`.sessionstorage`类样式；如果会话存储不支持，则将使用`.no-sessionstorage`类样式。
 
-## 清单3.8 使用Modernizr的CSS选项
+### 清单3.8 使用Modernizr的CSS选项
 
-```html
+```
 <!DOCTYPE html>
 <html class="no-js" lang="en">
 <head>
@@ -2212,11 +2250,13 @@ Modernizr脚本在被包含后将自动运行，并会替换添加到html元素�
 </html>
 ```
 
-因此，在前面的示例中，相应的div将根据支持情况进行显示。但你可以将其用于任何JavaScript API的使用。所有在Modernizr对象上暴露的属性列表可以在 http://modernizr.com 网站的文档部分找到。
+因此，在前面的示例中，相应的`div`将根据支持情况进行显示。但你可以将其用于任何JavaScript API的使用。所有在Modernizr对象上暴露的属性列表可以在 `http://modernizr.com` 网站的文档部分找到。
 
 尽管这对于CSS开发很有用，但Modernizr拥有丰富的JavaScript属性，可用于功能检测。在清单3.9中，你根据Modernizr对象的一个属性，以编程方式向用户提示会话存储是否可用。
 
-## 清单3.9 使用Modernizr和JavaScript进行功能检测
+### 清单3.9 使用Modernizr和JavaScript进行功能检测
+
+
 
 ```html
 <!DOCTYPE html>
@@ -2274,13 +2314,13 @@ Modernizr脚本在被包含后将自动运行，并会替换添加到html元素�
 </html>
 ```
 
-你通常不需要像我们在清单3.10中那样使用JavaScript的开头部分 `$(function(){})`，但在这个示例中，我们使用了一个jQuery日历，所以需要它。这就是全部内容。这真的很容易，Modernizr文档 http://modernizr.com/docs 中有数十个选项，包括使用新测试扩展库的灵活性。
+你通常不需要像我们在清单3.10中那样使用JavaScript的开头部分`$(function(){})`，但在这个示例中，我们使用了一个jQuery日历，所以需要它。这就是全部内容。这真的很容易，Modernizr文档 http://modernizr.com/docs 中有数十个选项，包括使用新测试扩展库的灵活性。
 
 ## Polyfilling（填充）
 
 能够检测HTML5支持了哪些功能，无论是使用自己的代码还是使用Modernizr，都只是成功了一半。最终目标是在用户访问你创建的Web应用程序和网站时，能够在他们使用的各种浏览器和浏览器版本中支持HTML5功能。为了允许不支持特定HTML5功能的浏览器使用，你需要使用一个第三方库，该库包含为各种浏览器提供相同功能的代码。允许功能在浏览器上得到支持的代码或代码库被称为*polyfill*（填充）或*polyfiller*（填充器）。填充器的一个例子可以是一个为Internet Explorer提供canvas支持的库，因为Internet Explorer不直接支持canvas元素，但有其自身的绘图功能，如Silverlight。你希望能够使用新的API进行开发，同时仍然为不支持这些API的浏览器提供相同的体验。我们已经看到使用jQuery这样的JavaScript库来填补一些空白的示例，但没有一个库能解决所有问题。
 
-不仅仅是旧浏览器在HTML5功能上存在缺陷；新浏览器也尚未普遍涵盖HTML5。因此，无论是使用自己的检测代码还是使用Modernizr，你都需要加载一个适当的填充库，以在多个浏览器中提供对HTML5功能同等水平的支持。事实上，Modernizr提供了一个通过其 `Modernizr.load` 方法直接加载脚本的实用程序，该方法基于对特定功能的测试，其结果可以动态加载一个填充器，如这里所示：
+不仅仅是旧浏览器在HTML5功能上存在缺陷；新浏览器也尚未普遍涵盖HTML5。因此，无论是使用自己的检测代码还是使用Modernizr，你都需要加载一个适当的填充库，以在多个浏览器中提供对HTML5功能同等水平的支持。事实上，Modernizr提供了一个通过其`Modernizr.load`方法直接加载脚本的实用程序，该方法基于对特定功能的测试，其结果可以动态加载一个填充器，如这里所示：
 
 ```javascript
 Modernizr.load({
@@ -2291,27 +2331,33 @@ Modernizr.load({
 ```
 
 > **提示**
-> `Modernizr.load` 方法实际上是一个别名命令，指向一个包含的第三方JavaScript库，名为yepnope.js，你可以在 http://yepnopejs.com 找到它。该库致力于成为一个快速的条件资源加载器，且占用空间小。该库可以单独使用，也可以通过Modernizr load别名方法使用。yepnope JavaScript库通过测试从字符串到数组的各种类型的数据对象，对于有条件地加载CSS或JavaScript非常有益。
+
+> `Modernizr.load`方法实际上是一个别名命令，指向一个包含的第三方JavaScript库，名为yepnope.js，你可以在 http://yepnopejs.com 找到它。该库致力于成为一个快速的条件资源加载器，且占用空间小。该库可以单独使用，也可以通过Modernizr load别名方法使用。yepnope JavaScript库通过测试从字符串到数组的各种类型的数据对象，对于有条件地加载CSS或JavaScript非常有益。
 
 目前已经为各种浏览器中的多种组件开发了广泛的填充器；你可以在 http://github.com/Modernizr/Modernizr/ 找到一份广泛的列表。
 
 wiki/HTML5跨浏览器Polyfills。这份有用的列表由Modernizr的首席开发者Paul Irish维护，包含了各种功能的回退方案，如canvas、视频、地理定位、表单等。
 
 > **注意**
+
 > 拥有各种polyfill、shim和库来支持当前可能未在一个或多个浏览器中实现的HTML5功能，是为用户提供跨浏览器统一体验的强有力方式。然而，如果需要加载多个polyfill，可能会对性能产生负面影响。需要在开发中平衡负面的加载时间与获得的功能和支持。
 
 # 实用的HTML5验证网站
 
 我们已经介绍了各种技术和脚本，以了解如何处理不同的浏览器行为，所以这里有一个快速网站列表，可以告诉你哪些浏览器支持哪些功能。随着浏览器更新，或者如果你不确定某个特定功能，可以尝试访问以下网站之一：
 
-- *http://findmebyIP.com*：提供你启动页面的浏览器的详细信息，包括CSS3、HTML5、Forms 2.0、CSS3选择器测试、脚本支持和IP详情。实际上，它使用Modernizr提供大部分信息。
-- *http://caniuse.com*：提供HTML5、JS API和CSS3与各种浏览器的兼容性表格，并可按需筛选。
-- *http://html5test.com*：测试一组各种HTML5功能，并根据支持情况为你的浏览器评分。这可以比较一个浏览器与其他浏览器。
-- *http://html5readiness.com*：可视化各种浏览器在HTML5功能方面的状态。
+- http://findmebyIP.com：提供你启动页面的浏览器的详细信息，包括CSS3、HTML5、Forms 2.0、CSS3选择器测试、脚本支持和IP详情。实际上，它使用Modernizr提供大部分信息。
+
+- http://caniuse.com：提供HTML5、JS API和CSS3与各种浏览器的兼容性表格，并可按需筛选。
+
+- http://html5test.com：测试一组各种HTML5功能，并根据支持情况为你的浏览器评分。这可以比较一个浏览器与其他浏览器。
+
+- http://html5readiness.com：可视化各种浏览器在HTML5功能方面的状态。
 
 ## 总结
 
 在本章中，你学习了处理旧版浏览器以及浏览器版本在HTML5方面的缺陷的一些方法。HTML5的情况是，组成HTML5的各种CSS、HTML和JavaScript的附加功能得到了广泛支持，但它仍在不断成熟。你还学习了CSS重置和模板，它们包含了现代、最新的Web开发工具、技巧和技术。
+
 你学习了Modernizr的使用，这是一个强大的脚本，用于功能检测，使你能够为尚不支持某些新HTML5功能的浏览器提供回退方案。我们不会在本书中展示如何使用Modernizr，因为你可能会也可能不会选择在你的网站中使用它，并且我们试图展示执行功能的基础方法。然而，我们推荐并完全期望，使用Modernizr或本章中提到的其他工具将在你的HTML5编码中为你提供益处。
 
 *此页有意留白*
@@ -2340,7 +2386,7 @@ CSS第3级（CSS3）是CSS规范的最新迭代。在先前版本的基础上，
 | Opera | 11.0+ |
 | Safari | 5.0+ |
 
-```
+```html
 <link rel="stylesheet" href="screen.css" media="screen" />
 <link rel="stylesheet" href="print.css" media="print" />
 ```
@@ -2349,24 +2395,24 @@ CSS第3级（CSS3）是CSS规范的最新迭代。在先前版本的基础上，
 
 **代码清单4.1  简单的媒体查询示例**
 
-```
+```html
 <link rel="stylesheet" media="screen and
 (max-device-width: 480px)" href="smartphone.css" />
 <link rel="stylesheet" media="screen and
 (min-width: 480px)" href="screen.css" />
 ```
 
-代码清单4.1询问设备其水平分辨率是否为480像素宽或更小。如果是，那么这里假设它是智能手机并加载smartphone.css。然后询问分辨率是否至少为480像素宽；如果是，那么可以使用不同的样式表。你可能会尝试针对所有不同类型的设备、分辨率和屏幕方向，拥有几个不同的媒体查询。你可能会为智能手机、横向的智能手机、Android屏幕尺寸、iPad、纵向的iPad、宽度小于800像素的浏览器或宽屏分辨率的浏览器准备样式表。你真的可以非常精确，没有限制。
+代码清单4.1询问设备其水平分辨率是否为480像素宽或更小。如果是，那么这里假设它是智能手机并加载`smartphone.css`。然后询问分辨率是否至少为480像素宽；如果是，那么可以使用不同的样式表。你可能会尝试针对所有不同类型的设备、分辨率和屏幕方向，拥有几个不同的媒体查询。你可能会为智能手机、横向的智能手机、Android屏幕尺寸、iPad、纵向的iPad、宽度小于800像素的浏览器或宽屏分辨率的浏览器准备样式表。你真的可以非常精确，没有限制。
 
-所以，你需要一个好的方法来组织所有单独的查询。记住，你已经拥有了所有的主样式表。使用代码清单4.1中的方法意味着在head标签中会有很多HTTP请求。
+所以，你需要一个好的方法来组织所有单独的查询。记住，你已经拥有了所有的主样式表。使用代码清单4.1中的方法意味着在`head`标签中会有很多HTTP请求。
 
-或者，你可以在CSS文件中包含媒体查询，如代码清单4.2所示，使用@media。
+或者，你可以在CSS文件中包含媒体查询，如代码清单4.2所示，使用`@media`。
 
 www.it-ebooks.info
 
 **代码清单4.2  在CSS文件中的媒体查询**
 
-```
+```css
 body {background: black; color: #fff; font: normal 62.5%/1.5 tahoma, verdana, sans-serif;}
 h1 {font-size: 2em;}
 p {font-size: 1.4em;}
@@ -2390,18 +2436,16 @@ body {background: green;}
 }
 ```
 
-在代码清单4.2中，我们根据屏幕分辨率更改了背景颜色。所有媒体查询都是同一个CSS文档的一部分，因此确保CSS文档组织良好非常重要；你的默认设计可能会有数百行代码，然后为媒体查询添加额外的CSS。根据你的网站设置，在CSS文件中编辑媒体查询类型（例如将min-width: 2000px调整为min-width: 2500px）可能比在所有页面的HTML中编辑更容易。
+在代码清单4.2中，我们根据屏幕分辨率更改了背景颜色。所有媒体查询都是同一个CSS文档的一部分，因此确保CSS文档组织良好非常重要；你的默认设计可能会有数百行代码，然后为媒体查询添加额外的CSS。根据你的网站设置，在CSS文件中编辑媒体查询类型（例如将`min-width: 2000px`调整为`min-width: 2500px`）可能比在所有页面的HTML中编辑更容易。
 
-使用and语法，你可以组合不同的查询。你可以针对多个功能：宽度、高度、设备宽度、设备高度、方向、宽高比、设备宽高比、颜色、颜色索引、单色、分辨率、扫描和网格。结合公认的媒体类型：all、braille、embossed、handheld、print、projection、screen和speech，你可以组合它们以同时针对多种不同类型的设备和尺寸。值得注意的是，max-device-width是设备的屏幕尺寸（如iPhone），而max-width仅是视口区域的宽度（如浏览器窗口）；参见以下代码中的区别：
+使用`and`语法，你可以组合不同的查询。你可以针对多个功能：宽度、高度、设备宽度、设备高度、方向、宽高比、设备宽高比、颜色、颜色索引、单色、分辨率、扫描和网格。结合公认的媒体类型：`all`、`braille`、`embossed`、`handheld`、`print`、`projection`、`screen`和`speech`，你可以组合它们以同时针对多种不同类型的设备和尺寸。值得注意的是，`max-device-width`是设备的屏幕尺寸（如iPhone），而`max-width`仅是视口区域的宽度（如浏览器窗口）；参见以下代码中的区别：
 
-```
+```css
 /* 设备小于480px；移动设备、iPhone和普通屏幕 */
 @media handheld and (max-width: 480px), screen and (max-device-width: 480px), screen and (max-width: 480px) {
 ```
 
 www.it-ebooks.info
-
-
 
 # 第四章 使用CSS3实现新的布局与样式技术
 
@@ -2416,7 +2460,9 @@ www.it-ebooks.info
 ```
 
 > **提示**
-> 在接下来的代码示例中，我们使用了不同类型的CSS选择器。第一种是属性选择器，应用于 `header[role=banner]`，第二种是伪类选择器，即 `nth-xx()`，在多种场景下使用，例如 `section:nth-of-type(1)`。属性选择器并非CSS3的新特性，但结合新的ARIA-Roles，它们让你在CSS中拥有了更灵活的选择器运用方式。CSS3引入了许多新选择器，包括 `nth-child()` 和 `nth-of-type()`。使用这些新选择器意味着你可以不必在许多元素上使用类（class）。例如，使用 `nth-of-type()`，你可以选中每个奇数位的表格行或列表项。关于这一点的更多信息，我们推荐阅读 http://quirksmode.org/css/nthchild.html。
+
+> 在接下来的代码示例中，我们使用了不同类型的CSS选择器。第一种是属性选择器，应用于`header[role=banner]`，第二种是伪类选择器，即`nth-xx()`，在多种场景下使用，例如`section:nth-of-type(1)`。属性选择器并非CSS3的新特性，但结合新的ARIA-Roles，它们让你在CSS中拥有了更灵活的选择器运用方式。CSS3引入了许多新选择器，包括`nth-child()`和`nth-of-type()`。使用这些新选择器意味着你可以不必在许多元素上使用类（class）。例如，使用`nth-of-type()`，你可以选中每个奇数位的表格行或列表项。关于这一点的更多信息，我们推荐阅读 http://quirksmode.org/css/nthchild.html。
+
 > 许多新选择器在旧版本的Internet Explorer中无法正常工作，因此我们推荐使用Selectivizr (http://selectivizr.com)，这是一个易于使用的JavaScript工具，能让Internet Explorer理解新的CSS选择器。
 
 图4.1展示了来自第2章的新闻网站示例HTML标记。清单4.3提供了精简后的HTML。清单4.4中的CSS代码用于默认布局，如图4.1所示。
@@ -2448,6 +2494,8 @@ www.it-ebooks.info
 图4.1 应用默认CSS的新闻网站
 
 ## 清单4.4 默认屏幕布局的CSS
+
+
 
 ```css
 <style>
@@ -2489,19 +2537,27 @@ p {font-size: 1.4em;}
 ### 体育新闻
 
 文章标题
+
 2010年11月20日
+
 Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non erat in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat.
 
 体育标题.1
+
 2010年11月19日
+
 Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis.
 
 体育标题.2
+
 2010年11月16日
+
 Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
 
 体育标题.3
+
 2010年11月16日
+
 Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
 
 ### 娱乐新闻
@@ -2509,30 +2565,43 @@ Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac tu
 ### 极客新闻
 
 娱乐标题.1
+
 2010年11月20日
+
 Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis.
 
 极客标题 1
+
 2010年11月20日
+
 Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis.
 
 娱乐标题.2
+
 2010年11月9日
+
 Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
 
 极客标题 2
+
 2010年11月16日
+
 Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
 
 娱乐标题.3
+
 2010年11月16日
+
 Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
 
 极客标题 3
+
 2010年11月16日
+
 Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
 
 炫酷广告
+
 炫酷广告
 
 图4.2 缩小屏幕尺寸后的新闻网站
@@ -2578,23 +2647,21 @@ Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac tu
 
 虽然你可以为不同的设备和屏幕尺寸创建独立的样式，但问题是，是否应该总是使用媒体查询？它们在台式电脑和笔记本电脑上无疑很有用，但移动领域的格局已经变化了一段时间。像iPhone和Android设备这样的现代智能手机，其内置的浏览器与桌面浏览器几乎无异，因此它们能处理大多数事务，并且设备的交互性允许用户通过捏合和缩放相对轻松地浏览网站。
 
-使用媒体查询通常意味着你根据屏幕大小来显示/隐藏内容。许多网站，如 http://youtube.com、http://facebook.com、http://cnn.com 和 http://nfl.com，都会检测用户是否在使用手持设备，并将其重定向到网站的移动版。他们这样做的原因是他们的网站内容繁重，包含大量数据、图片、视频、广告、Flash以及各种内容。如果这些网站在智能手机上仅使用媒体查询，那么即使用户看不到这些数据，智能手机仍然需要下载所有这些数据。因此，你究竟需要全新的样式还是完全独立的移动站点，取决于你的内容。但如果你只需要更改布局并添加一些小改进，那么你或许应该使用CSS3媒体查询。关于CSS3媒体查询的一些优秀用例，请查看 http://mediaqueri.es。
+使用媒体查询通常意味着你根据屏幕大小来显示/隐藏内容。许多网站，如`http://youtube.com`、`http://facebook.com`、`http://cnn.com`和`http://nfl.com`，都会检测用户是否在使用手持设备，并将其重定向到网站的移动版。他们这样做的原因是他们的网站内容繁重，包含大量数据、图片、视频、广告、Flash以及各种内容。如果这些网站在智能手机上仅使用媒体查询，那么即使用户看不到这些数据，智能手机仍然需要下载所有这些数据。因此，你究竟需要全新的样式还是完全独立的移动站点，取决于你的内容。但如果你只需要更改布局并添加一些小改进，那么你或许应该使用CSS3媒体查询。关于CSS3媒体查询的一些优秀用例，请查看`http://mediaqueri.es`。
 
 ## 针对iPhone和Android设备
 
-如果你曾使用媒体查询来针对iPhone或Android设备，你可能会注意到它们并未识别用于小屏幕的CSS更改。这是因为现代智能手机浏览器功能强大，默认情况下，它们显示网页的方式与桌面浏览器相同。然后浏览器会缩小网站以适应小屏幕，这常常导致文本和图片变得很小，用户不得不放大才能阅读和浏览。你可以强制浏览器使用设备的宽度作为视图区域的宽度，也称为视口（view-port）。以下代码应放在head标签中：
+如果你曾使用媒体查询来针对iPhone或Android设备，你可能会注意到它们并未识别用于小屏幕的CSS更改。这是因为现代智能手机浏览器功能强大，默认情况下，它们显示网页的方式与桌面浏览器相同。然后浏览器会缩小网站以适应小屏幕，这常常导致文本和图片变得很小，用户不得不放大才能阅读和浏览。你可以强制浏览器使用设备的宽度作为视图区域的宽度，也称为视口（view-port）。以下代码应放在`head`标签中：
 
 ```html
 <meta name="viewport" content="width=device-width; initial-scale=1.0; " />
 ```
 
-
-
 ## 初学者食谱：使用 @font-face 自定义字体
 
-尽管 @font-face 并非 CSS3 的新特性，但在 CSS3 旗帜下它重新焕发生机，如今网页设计师和开发者在选择网站字体和实现方面有了大量选择。表 4.2 展示了各浏览器支持 @font-face 的版本。
+尽管`@font-face`并非CSS3的新特性，但在CSS3旗帜下它重新焕发生机，如今网页设计师和开发者在选择网站字体和实现方面有了大量选择。表4.2展示了各浏览器支持`@font-face`的版本。
 
-表 4.2 @font-face 设备与浏览器支持情况
+表4.2 `@font-face`设备与浏览器支持情况
 
 | 浏览器         | 版本   |
 |-----------------|---------|
@@ -2608,15 +2675,15 @@ Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac tu
 
 > **注意**
 >
-> @font-face 在 1998 年的 CSS2 规范中就被纳入；然而，由于浏览器实现不佳、字体文件类型混淆，以及对使用字体的合法性和许可问题的担忧，它当时几乎未被使用。Internet Explorer 4 甚至支持自定义字体，尽管仅限于 EOT 格式。
+> `@font-face`在1998年的CSS2规范中就被纳入；然而，由于浏览器实现不佳、字体文件类型混淆，以及对使用字体的合法性和许可问题的担忧，它当时几乎未被使用。Internet Explorer 4甚至支持自定义字体，尽管仅限于EOT格式。
 
-通过 @font-face，你只需几行 CSS 即可嵌入自己的字体。图 4.4 中的 h1 标题使用的是一种名为 Anagram 的字体（稍后会介绍字体获取途径），但该字体可用于任何元素。
+通过`@font-face`，你只需几行CSS即可嵌入自己的字体。图4.4中的`h1`标题使用的是一种名为Anagram的字体（稍后会介绍字体获取途径），但该字体可用于任何元素。
 
 ![](img/de30ea99ecac39b49e690a84c48f43b9_107_0.png)
 
-代码清单 4.7 展示了图 4.4 所需的代码，并提供了 `@font-face` 最简单用法的示例。你在 `font-family` 中将字体命名为 Anagram（你也可以随心所欲地命名，稍后会再次引用它），请参阅 h1 的字体值。在 `@font-face` 声明中，字体的 `src` 与 HTML 页面位于同一目录；如果你想的话，也可以将其放在不同的目录。
+代码清单4.7展示了图4.4所需的代码，并提供了`@font-face`最简单用法的示例。你在`font-family`中将字体命名为Anagram（你也可以随心所欲地命名，稍后会再次引用它），请参阅`h1`的字体值。在`@font-face`声明中，字体的`src`与HTML页面位于同一目录；如果你想的话，也可以将其放在不同的目录。
 
-### 代码清单 4.7 最简形式的 `@font-face`
+### 代码清单4.7 最简形式的`@font-face`
 
 ```html
 <style>
@@ -2639,17 +2706,19 @@ h1 {
 
 ## 文件格式与跨浏览器修复
 
-代码清单 4.7 仅使用了 .ttf（TrueType/OpenType）字体文件。不出所料，这会产生跨浏览器实现问题。存在几种不同的字体文件格式：
+代码清单4.7仅使用了`.ttf`（TrueType/OpenType）字体文件。不出所料，这会产生跨浏览器实现问题。存在几种不同的字体文件格式：
 
--   嵌入式 OpenType (.eot)
--   OpenType PS (.otf)
--   TrueType/OpenType (.ttf)
--   SVG (.svg)
--   WOFF (.woff)
+- 嵌入式OpenType（`.eot`）
+- OpenType PS（`.otf`）
+- TrueType/OpenType（`.ttf`）
+- SVG（`.svg`）
+- WOFF（`.woff`）
 
-WOFF 是字体的新网络标准。Internet Explorer 8 及更早版本需要 .eot 字体，但 Internet Explorer 9 将支持新的 WOFF 格式。尽管 Safari 很早以前就支持 .ttf，但 iPhone 和 iPad 直到最近才开始支持 .ttf 格式；此前，它们需要 .svg 字体。因此，你需要做的是以不同格式提供相同的字体。为此，你需要自行转换字体，或使用像 Font Squirrel (http://fontsquirrel.com) 这样的工具。`@font-face` 生成器允许你上传字体并将其转换为不同格式。它还会生成必要的 CSS 代码，使字体能够在不同浏览器中工作，如代码清单 4.8 所示。
+WOFF是字体的新网络标准。Internet Explorer 8及更早版本需要`.eot`字体，但Internet Explorer 9将支持新的WOFF格式。尽管Safari很早以前就支持`.ttf`，但iPhone和iPad直到最近才开始支持`.ttf`格式；此前，它们需要`.svg`字体。因此，你需要做的是以不同格式提供相同的字体。为此，你需要自行转换字体，或使用像Font Squirrel（`http://fontsquirrel.com`）这样的工具。`@font-face`生成器允许你上传字体并将其转换为不同格式。它还会生成必要的CSS代码，使字体能够在不同浏览器中工作，如代码清单4.8所示。
 
-### 代码清单 4.8 跨浏览器的 @font-face
+### 代码清单4.8 跨浏览器的@font-face
+
+
 
 ```css
 @font-face {
@@ -2666,7 +2735,7 @@ WOFF 是字体的新网络标准。Internet Explorer 8 及更早版本需要 .eo
 
 ## 字体服务
 
-找到合适的字体可能很困难。找到一种可以*合法*在网页上使用的字体则更难。Font Squirrel 允许你将字体转换为各种必要的格式。为此，你必须勾选一个方框，上面写着“是的，我上传的字体在法律上有资格用于网页嵌入”。如果你勾选此项但并非完全确定，那么你可能会面临一些法律问题。
+找到合适的字体可能很困难。找到一种可以合法在网页上使用的字体则更难。Font Squirrel 允许你将字体转换为各种必要的格式。为此，你必须勾选一个方框，上面写着“是的，我上传的字体在法律上有资格用于网页嵌入”。如果你勾选此项但并非完全确定，那么你可能会面临一些法律问题。
 
 如果你需要免费字体，我们建议浏览 Font Squirrel 上的字体库，因为该网站不仅提供字体生成器，其主要重点是提供完全免费供商业使用的字体。而且，他们不会随便放任何免费字体；他们确保字体是高质量的。Font Squirrel 并非获取免费网络字体的唯一途径，但在其他地方搜索时，请注意合法性问题。
 
@@ -2688,7 +2757,7 @@ h1 {font-family: 'Yanone Kaffeesatz', arial, serif;}
 
 > **提示**
 >
-> 你可能在前面的示例中注意到，在声明自定义字体后，我们列出了一些网页安全字体，例如 `font-family: 'Yanone Kaffeesatz', arial, serif`。我们提供后备字体以防自定义字体检索出错。服务器可能有问题，浏览器可能无法检索到我们想要的自定义字体，因此使用字体栈，我们可以提供一个已知可用的字体作为后备。在使用 CSS *font-family* 时，应始终提供字体栈。
+> 你可能在前面的示例中注意到，在声明自定义字体后，我们列出了一些网页安全字体，例如 `font-family: 'Yanone Kaffeesatz', arial, serif`。我们提供后备字体以防自定义字体检索出错。服务器可能有问题，浏览器可能无法检索到我们想要的自定义字体，因此使用字体栈，我们可以提供一个已知可用的字体作为后备。在使用 CSS `font-family` 时，应始终提供字体栈。
 
 如果 Font Squirrel 或 Google 字体目录无法提供你正在寻找的字体，那么还有其他服务可用。由于许可问题多年来一直存在，许多主要字体铸造厂已经开始要么创建自己的框架，允许你合法安全地使用他们的字体，要么与第三方合作来帮助提供这些字体。
 
@@ -2735,8 +2804,6 @@ div {
 
 代码清单 4.10 使用了输入按钮，并结合了属性选择器、盒子阴影、圆角边框、多重背景和 CSS 渐变来实现图 4.6 中的效果。在 `background` 属性中，你用逗号分隔多个背景样式。因此，首先是你想要使用的图像，然后设置渐变样式。如果先使用渐变样式，它会覆盖图像。
 
-
-
 # 第4章 CSS3 新布局与样式技术
 
 ![](img/de30ea99ecac39b49e690a84c48f43b9_112_0.png)
@@ -2782,11 +2849,11 @@ input[type="reset"] {
 }
 ```
 
-您可以实现的效果远不止两种颜色之间的简单淡入淡出。通过使用*色标*，您可以向渐变中添加多种颜色，如图 4.7 所示。色标在每个逗号后添加，并且可以指定其起始位置，如清单 4.11 所示。
+您可以实现的效果远不止两种颜色之间的简单淡入淡出。通过使用色标，您可以向渐变中添加多种颜色，如图 4.7 所示。色标在每个逗号后添加，并且可以指定其起始位置，如清单 4.11 所示。
 
 清单 4.11 展示了用于制作图 4.7 左侧图像的代码。渐变变得更为复杂，但本质上，每个逗号都开始一个新的渐变部分，并为它传递颜色值以及起始的百分比位置。
 
-您可以通过更改诸如 *left* 和 *left top* 这样的声明来倾斜渐变，如清单 4.11 所示，这给出了图 4.7 的右侧图像。
+您可以通过更改诸如 `left` 和 `left top` 这样的声明来倾斜渐变，如清单 4.11 所示，这给出了图 4.7 的右侧图像。
 
 ```css
 清单 4.11 带有多个色标的渐变
@@ -2828,6 +2895,7 @@ CSS3 渐变提供了大量选项，包括创建径向渐变，因此我们推荐
 | Safari | 5.0+ |
 
 图 4.8 显示了应用于图形元素的旋转变形。
+
 要创建图 4.8 中的效果，您需要将 `transform` 属性的 `rotate` 值应用于 `figure` 和 `h1`。如清单 4.12 所示，您必须使用多个浏览器特定的 CSS 前缀才能使该效果在 WebKit、Mozilla 和 Opera 中工作。这里有一个 `-ms-` 前缀，尽管目前 IE9 测试版不支持 `transform` 效果；我们希望当您阅读本书时，它已经支持了。
 
 ## 清单 4.12 CSS 变形
@@ -2902,6 +2970,8 @@ The view from our hotel room
 
 ## 清单 4.13 更多 CSS 变形选项
 
+
+
 ```css
 h1 {transform: translate(100px, 200px)}
 h1 {transform: skew(40deg);}
@@ -2910,9 +2980,9 @@ h1 {transform: scale(2);}
 h1{transform: translate(100px, 200px) skew(40deg) skew(2) rotate(40deg);}
 ```
 
-您还可以进行过渡和动画。CSS 过渡和 CSS 动画之间存在差异。过渡是由鼠标悬停（:hover）或鼠标点击（:active）触发的两个状态之间的过渡。CSS 动画是时间线动画，可以自行运行。
+您还可以进行过渡和动画。CSS 过渡和 CSS 动画之间存在差异。过渡是由鼠标悬停（`:hover`）或鼠标点击（`:active`）触发的两个状态之间的过渡。CSS 动画是时间线动画，可以自行运行。
 
-WebKit 很久以前就支持过渡了，Mozilla 和 Opera 现在也实现了 CSS 过渡；遗憾的是，目前 IE 还不支持。过渡使用前面展示的 `transform` 属性，并可以应用于 :hover 或 :active。您无需在悬停时立即更改元素的值，而是可以使用 CSS `transition` 属性来动画化到这些新值。图 4.9 显示了一个普通文本链接的基本示例。
+WebKit 很久以前就支持过渡了，Mozilla 和 Opera 现在也实现了 CSS 过渡；遗憾的是，目前 IE 还不支持。过渡使用前面展示的`transform`属性，并可以应用于`:hover`或`:active`。您无需在悬停时立即更改元素的值，而是可以使用 CSS`transition`属性来动画化到这些新值。图 4.9 显示了一个普通文本链接的基本示例。
 
 ![](img/de30ea99ecac39b49e690a84c48f43b9_117_0.png)
 
@@ -2920,7 +2990,7 @@ WebKit 很久以前就支持过渡了，Mozilla 和 Opera 现在也实现了 CSS
 
 图 4.10 显示了鼠标悬停时链接背景渐变为空白、文本渐变为白色的过渡中间效果和最终效果。在黑白印刷的书籍中很难呈现这种效果，因此我们强烈建议您在浏览器中尝试一下。
 
-清单 4.14 展示了此鼠标悬停效果的代码。您希望动画化到的颜色更改位于 `:hover` 上。没有任何过渡时，颜色会在 `:hover` 时立即改变，但要获得淡入淡出效果，您可以使用 `transition` 属性（以及 WebKit、Mozilla 和 Opera 的浏览器特定前缀）。这是您需要的 CSS 关键部分：`transition: all 1s ease-in;`。这里您是在告诉浏览器动画化所有属性（背景和颜色），使用 `ease-in` 时间函数，并且过渡的总持续时间为一秒（1s）。您可以选择包含一个延迟值，例如 `transition: all 1s ease-in 1s;`，它会延迟过渡的开始，并延迟元素恢复到其默认状态。
+清单 4.14 展示了此鼠标悬停效果的代码。您希望动画化到的颜色更改位于`:hover`上。没有任何过渡时，颜色会在`:hover`时立即改变，但要获得淡入淡出效果，您可以使用`transition`属性（以及 WebKit、Mozilla 和 Opera 的浏览器特定前缀）。这是您需要的 CSS 关键部分：`transition: all 1s ease-in;`。这里您是在告诉浏览器动画化所有属性（背景和颜色），使用`ease-in`时间函数，并且过渡的总持续时间为一秒（`1s`）。您可以选择包含一个延迟值，例如`transition: all 1s ease-in 1s;`，它会延迟过渡的开始，并延迟元素恢复到其默认状态。
 
 ## 清单 4.14 鼠标悬停时的颜色动画变化
 
@@ -2948,8 +3018,6 @@ a:hover {
 ![](img/de30ea99ecac39b49e690a84c48f43b9_117_1.png)
 
 图 4.10 过渡效果
-
-
 
 # 第四章 使用CSS3的新布局与样式技术
 
@@ -2992,7 +3060,7 @@ transform: rotate(10deg) scale(2);
 }
 ```
 
-使用更多CSS，结合`:after`伪元素和CSS `content`属性，你可以在图片放大时显示其`alt`标签。代码在清单4.16中，并扩展了清单4.15的代码。这段CSS在`:hover`时显示`img`的`alt`属性，为照片画廊添加更多信息。你可以用JavaScript在其他浏览器中实现此效果，尽管我们已经简要提到了`:after`伪元素，但我们鼓励你了解更多关于它的内容（以及`:before`伪元素），它可以在网页开发中以多种创造性的方式使用。目前，此效果仅适用于Opera浏览器中的图片，所以如果你有Opera浏览器，可以试试这段代码。
+使用更多CSS，结合`:after`伪元素和CSS`content`属性，你可以在图片放大时显示其`alt`标签。代码在清单4.16中，并扩展了清单4.15的代码。这段CSS在`:hover`时显示`img`的`alt`属性，为照片画廊添加更多信息。你可以用JavaScript在其他浏览器中实现此效果，尽管我们已经简要提到了`:after`伪元素，但我们鼓励你了解更多关于它的内容（以及`:before`伪元素），它可以在网页开发中以多种创造性的方式使用。目前，此效果仅适用于Opera浏览器中的图片，所以如果你有Opera浏览器，可以试试这段代码。
 
 ## 清单4.16 图片悬停时显示alt文本
 
@@ -3204,15 +3272,14 @@ background: #F00;
 ```
 
 > **提示**
+>
 > 过渡和动画有多种用途。它们不仅为网页添加了美观的效果，也帮助了设计师和开发者，他们可以快速地创建和调整这些效果。本章我们只展示了基本示例以激发你的兴趣，因此如何发挥创意取决于你自己。然而，能力越大，责任越大，所以请不要过度使用所有这些不同的效果，因为它们可能迅速将一个优秀的网站变得俗气。过多的过渡和动画也可能影响浏览器的性能。我们建议花时间在网上搜索示例，并研究其他设计师和开发者如何使用CSS3改进网站。
 
 ## 总结
 
 在本章中，你了解了一些CSS的新特性：媒体查询、字体、渐变、变换、过渡和动画。除了我们描述的这些特性之外，还有更多的特性；我们只是浅尝辄止。利用这些新特性，你可以实现的可能性是无穷无尽的。如果你对CSS感兴趣，那么我们建议你进行进一步的研究和学习，因为在使用其中一些新特性时，还有许多其他的技术和最佳实践。去探索吧，尽情玩转CSS吧。
 
-
-
-## 5 HTML5 网页表单
+# 5 HTML5 网页表单
 
 在本章中，你将学习关于 HTML5 网页表单的内容，以及现在可供网页开发者使用的全新功能。当然，并非所有这些新功能都得到所有浏览器的完全支持，但正如你将在本章各处的示例中看到的那样，新功能能够优雅地降级。有超过十种新的输入类型和若干新属性可供选择，以及一些你可以用来创建表单的新 CSS 技巧。
 
@@ -3222,7 +3289,7 @@ background: #F00;
 
 有了 HTML5，表单验证变得轻而易举；你可以在用户尝试提交表单时提供内联验证和反馈，这使得表单更易于填写，并增加了提交正确信息的机会。当然，你仍然需要一些服务器端代码来实际处理表单并将其发送到目的地。
 
-在本章各处的示例中，我们在大多数表单元素上添加了一个 `required` 属性；这是为了让你在测试它们时，可以看到浏览器显示了哪些验证消息（如果有的话）。此属性告诉浏览器，如果该元素未完成，就无法发送表单。
+在本章各处的示例中，我们在大多数表单元素上添加了一个`required`属性；这是为了让你在测试它们时，可以看到浏览器显示了哪些验证消息（如果有的话）。此属性告诉浏览器，如果该元素未完成，就无法发送表单。
 
 ## HTML 4 输入类型
 
@@ -3236,9 +3303,11 @@ background: #F00;
 
 本质上，你拥有 form 元素、一个 fieldset（fieldset 是一个用于在表单中对相关字段进行分组的元素），以及常见的表单元素，它们为你提供了图 5.1 所示的表单控件。
 
-清单 5.1 提供了图 5.1 的 HTML 代码。请注意，使用了无序列表（ul）和列表项（li）来格式化此表单。这不是组织表单的唯一方式，但它意味着你不必在代码中使用不必要的 `<br/>`。
+清单 5.1 提供了图 5.1 的 HTML 代码。请注意，使用了无序列表（`ul`）和列表项（`li`）来格式化此表单。这不是组织表单的唯一方式，但它意味着你不必在代码中使用不必要的`<br/>`。
 
 ### 清单 5.1 包含不同表单元素的页面
+
+
 
 ```
 <form>
@@ -3274,7 +3343,7 @@ HTML5 中有几种新的输入类型，对于创建表单或更新旧表单非�
 
 ## 初学者示例：创建一个收集联系信息的表单
 
-清单 5.2 使用了三种新的输入类型来收集用户的联系信息：email、tel 和 url。查看代码；输入类型以粗体突出显示，并在后续章节中进一步讨论。
+清单 5.2 使用了三种新的输入类型来收集用户的联系信息：`email`、`tel` 和 `url`。查看代码；输入类型以粗体突出显示，并在后续章节中进一步讨论。
 
 ### 清单 5.2 使用新 HTML5 表单元素的联系表单
 
@@ -3301,9 +3370,9 @@ HTML5 中有几种新的输入类型，对于创建表单或更新旧表单非�
 </form>
 ```
 
-## input type="email"
+## `input type="email"`
 
-email 输入类型告诉浏览器，此字段的内容应该看起来像一个电子邮件地址。在清单 5.3 中，我们在 email 输入上放置了一个 required 属性。这将指示兼容的浏览器在提交表单前检查此字段的内容。它不会检查电子邮件地址是否实际存在。
+`email` 输入类型告诉浏览器，此字段的内容应该看起来像一个电子邮件地址。在清单 5.3 中，我们在 `email` 输入上放置了一个 `required` 属性。这将指示兼容的浏览器在提交表单前检查此字段的内容。它不会检查电子邮件地址是否实际存在。
 
 ### 清单 5.3 email 输入类型
 
@@ -3315,7 +3384,7 @@ email 输入类型告诉浏览器，此字段的内容应该看起来像一个�
 </form>
 ```
 
-**表 5.1 email 输入类型的设备和浏览器支持**
+**表 5.1 `email` 输入类型的设备和浏览器支持**
 
 | 浏览器 | 版本 |
 | :--- | :--- |
@@ -3329,7 +3398,8 @@ email 输入类型告诉浏览器，此字段的内容应该看起来像一个�
 
 \* 无验证
 
-随着浏览器发展越来越快，试图保持领先并相互超越，它们处理验证的方式存在差异。表 5.2 中的测试突出显示了浏览器处理表单、表单验证和反馈方面的差异。早些时候，验证消息与测试中显示的不同。还要注意，"test@test" 在 Firefox 中是有效的，但在 Opera 中不是，这是两个浏览器之间最显著的差异。
+随着浏览器发展越来越快，试图保持领先并相互超越，它们处理验证的方式存在差异。表 5.2 中的测试突出显示了浏览器处理表单、表单验证和反馈方面的差异。早些时候，验证消息与测试中显示的不同。还要注意，`test@test` 在 Firefox 中是有效的，但在 Opera 中不是，这是两个浏览器之间最显著的差异。
+
 在撰写本文时，在 Chrome 或 Safari 中使用前面的示例时，没有浏览器验证。
 
 > 注意：你可能想知道是否可以为表单反馈设置样式。嗯，答案是，某种程度上可以。我们将在本章后面讨论 CSS。
@@ -3343,9 +3413,9 @@ email 输入类型告诉浏览器，此字段的内容应该看起来像一个�
 | test@test.com | 无错误 | 是 | 无错误 | 是 |
 | test@test | “请输入电子邮件地址” | 否 | 无错误 | 是 |
 
-## input type="tel"
+## `input type="tel"`
 
-与新的 search 输入类型类似，`tel` 输入类型呈现为一个普通的文本字段（见图 5.2）。它接受此字段中的任何字符，而不仅仅是数字，因为电话号码可以包含非数字字符，如 + 或 (。如果你想强制字段仅接受数字，那么可以使用 `pattern`，这将在本章后面描述。
+与新的 `search` 输入类型类似，`tel` 输入类型呈现为一个普通的文本字段（见图 5.2）。它接受此字段中的任何字符，而不仅仅是数字，因为电话号码可以包含非数字字符，如 `+` 或 `(`。如果你想强制字段仅接受数字，那么可以使用 `pattern`，这将在本章后面描述。
 
 **表 5.3 `tel` 输入类型的设备和浏览器支持**
 
@@ -3363,7 +3433,7 @@ email 输入类型告诉浏览器，此字段的内容应该看起来像一个�
 
 图 5.2 Opera 中的 `input type="tel"` 元素。它看起来像一个普通的输入文本字段。
 
-## input type="url"
+## `input type="url"`
 
 网页表单上的一个常见需求，比如博客上的评论表单，是要求用户提供他们自己网站的 URL。在 HTML5 中，现在请求 URL 变得非常简单，如清单 5.4 所示。
 
@@ -3373,7 +3443,7 @@ email 输入类型告诉浏览器，此字段的内容应该看起来像一个�
 <label for="url">Website</label><input required type="url" id="url" name="url" />
 ```
 
-**表 5.4 url 输入类型的设备和浏览器支持**
+**表 5.4 `url` 输入类型的设备和浏览器支持**
 
 | 浏览器/设备 | 版本 |
 |---|---|
@@ -3387,18 +3457,16 @@ email 输入类型告诉浏览器，此字段的内容应该看起来像一个�
 
 \* 无验证
 
-此输入类型期望内容是有效的 URL。同样，与 email 类型一样，它不会检查该 URL 是否实际存在（你可以用一些额外的脚本来做到这一点）。传统的 URL 是一个网址，例如 http://mysite.com。Firefox 4.0b7 不允许 mysite.com 或 www.mysite.com；它要求地址包含 http://。然而，Opera 11 会自动将 mysite.com 转换为 http://mysite.com，这是有效的，并允许表单提交。
+此输入类型期望内容是有效的 URL。同样，与 `email` 类型一样，它不会检查该 URL 是否实际存在（你可以用一些额外的脚本来做到这一点）。传统的 URL 是一个网址，例如 `http://mysite.com`。Firefox 4.0b7 不允许 `mysite.com` 或 `www.mysite.com`；它要求地址包含 `http://`。然而，Opera 11 会自动将 `mysite.com` 转换为 `http://mysite.com`，这是有效的，并允许表单提交。
 
-大多数时候，此字段的内容将是 http://mysite.com；但是，它也接受其他类型的 URL：
+大多数时候，此字段的内容将是 `http://mysite.com`；但是，它也接受其他类型的 URL：
 
-- ftp://user:password@server
-- javascript:window.alert（小心这个；你可能想编写自己的验证以不允许提交任何 JavaScript）
-- file://server/path
-- tel:12345
+- `ftp://user:password@server`
+- `javascript:window.alert`（小心这个；你可能想编写自己的验证以不允许提交任何 JavaScript）
+- `file://server/path`
+- `tel:12345`
 
-由于这些额外的 URL 类型，目前表单将以 hello:world 验证通过。这是因为大多数浏览器都有自己 URL 类型，比如 Firefox 有 about:config。所以，目前，任何包含冒号的[...]
-
-URL 将被验证。随着浏览器完善其验证方法，这在将来可能会发生变化。
+由于这些额外的 URL 类型，目前表单将以 `hello:world` 验证通过。这是因为大多数浏览器都有自己 URL 类型，比如 Firefox 有 `about:config`。所以，目前，任何包含冒号的 URL 将被验证。随着浏览器完善其验证方法，这在将来可能会发生变化。
 
 ## 初学者教程：使用 `input type="search"` 创建搜索表单
 
@@ -3438,7 +3506,7 @@ WebKit 浏览器（如 Safari 和 Chrome）的一个有趣补充是，你可以�
 
 ![](img/de30ea99ecac39b49e690a84c48f43b9_132_0.png)
 
-**图 5.3 带有 WebKit 浏览器特定细节和信息的 input type="search" 元素**
+**图 5.3 带有 WebKit 浏览器特定细节和信息的 `input type="search"` 元素**
 
 Safari 目前会接管搜索输入的设计，但你可以在 CSS 中使用 `-webkit-appearance: none` 来覆盖它。
 
@@ -3446,7 +3514,7 @@ Safari 目前会接管搜索输入的设计，但你可以在 CSS 中使用 `-we
 
 Web 开发人员需要处理的一个常见问题是如何创建日历小部件，让用户从日历中选择日期，而无需手动输入日期。创建这样一个小部件以前总是需要 JavaScript，但这种情况即将改变。在本教程中，你将了解用于创建不同日历控件的各种新输入类型。对于不提供日历小部件的浏览器，请参考第 3 章，我们在那里提供了一些备用解决方案。
 
-**表 5.6 datetime 输入类型设备与浏览器支持**
+**表 5.6 `datetime` 输入类型设备与浏览器支持**
 
 | Android | * |
 | :--- | :--- |
@@ -3469,67 +3537,67 @@ input type="datetime"
 
 ![](img/de30ea99ecac39b49e690a84c48f43b9_133_0.png)
 
-**图 5.4 Opera 11 中的 input type="datetime" 元素为用户提供了一个日历日期选择器。**
+**图 5.4 Opera 11 中的 `input type="datetime"` 元素为用户提供了一个日历日期选择器。**
 
-此外，因为是浏览器处理日历，如果你的系统设置为其他语言，它将显示该语言（例如，意大利语中的 Novembre），不像，例如，jQuery datepicker (http://docs.jquery.com/UI/Datepicker)。
+此外，因为是浏览器处理日历，如果你的系统设置为其他语言，它将显示该语言（例如，意大利语中的 Novembre），不像，例如，jQuery datepicker (`http://docs.jquery.com/UI/Datepicker`)。
 
 ```
 input type="datetime-local"
 ```
 
-与之前的 datetime 输入几乎相同，datetime-local 生成的日历有一个细微差别：右侧没有 "UTC" 标签，因此没有附带时区（参见图 5.5）。
+与之前的 `datetime` 输入几乎相同，`datetime-local` 生成的日历有一个细微差别：右侧没有 "UTC" 标签，因此没有附带时区（参见图 5.5）。
 
 ```
 input type="date"
 ```
 
-图 5.6 显示 date 输入类型类似于图 5.4 中显示的 datetime 输入类型，但这里的控件不显示时间选项。
+图 5.6 显示 `date` 输入类型类似于图 5.4 中显示的 `datetime` 输入类型，但这里的控件不显示时间选项。
 
 ![](img/de30ea99ecac39b49e690a84c48f43b9_133_1.png)
 
-**图 5.5 Opera 11 中显示的 input type="time" 元素**
+**图 5.5 Opera 11 中显示的 `input type="time"` 元素**
 
 ![](img/de30ea99ecac39b49e690a84c48f43b9_133_2.png)
 
-**图 5.6 Opera 10.63 中显示的 input type="date" 元素**
+**图 5.6 Opera 10.63 中显示的 `input type="date"` 元素**
 
 104 第 5 章 HTML5 Web 表单
 
 ![](img/de30ea99ecac39b49e690a84c48f43b9_134_0.png)
 
-**图 5.7 Opera 10.63 中显示的 input type="time" 元素**
+**图 5.7 Opera 10.63 中显示的 `input type="time"` 元素**
 
 ```
 input type="time"
 ```
 
-`time` 输入类型允许用户以 24 小时格式输入时间。目前，只有 Opera 支持此元素。图 5.7 显示了此输入在 Opera 中的外观。在此输入中，用户可以自行键入数字，如 22:11，也可以使用 Opera 提供的按钮来滚动选择时间。
+`time` 输入类型允许用户以 24 小时格式输入时间。目前，只有 Opera 支持此元素。图 5.7 显示了此输入在 Opera 中的外观。在此输入中，用户可以自行键入数字，如 `22:11`，也可以使用 Opera 提供的按钮来滚动选择时间。
 
 ```
 input type="month"
 ```
 
-`month` 输入类型显示如图 5.4 所示的日历，但只允许选择月份。输入的值为 YYYY-MM。在图 5.8 中，可以选中十二月。你也可以选择上个月或下个月。
+`month` 输入类型显示如图 5.4 所示的日历，但只允许选择月份。输入的值为 `YYYY-MM`。在图 5.8 中，可以选中十二月。你也可以选择上个月或下个月。
 
 ```
 input type="week"
 ```
 
-与 `date` 和 `month` 输入类型非常相似，`week` 允许用户选择一年中的某一周。输入的值为 YYYY-W00。在图 5.9 中，可以选择该周，并在左列提供周数。
+与 `date` 和 `month` 输入类型非常相似，`week` 允许用户选择一年中的某一周。输入的值为 `YYYY-W00`。在图 5.9 中，可以选择该周，并在左列提供周数。
 
 ### 对日期和时间进行限制
 
-有两个新属性 `min` 和 `max`，我们将在本章后面再次提到；它们可用于控制和限制小部件的日期或时间。对于日期，如果你想确保用户不能选择过去的日期，可以添加一个 `min` 属性值，格式如下：YYYY-MM-DD。`max` 属性值格式相同，用于阻止用户选择过于遥远的未来日期。对于 `time` 输入类型，格式为 HH:MM。
+有两个新属性 `min` 和 `max`，我们将在本章后面再次提到；它们可用于控制和限制小部件的日期或时间。对于日期，如果你想确保用户不能选择过去的日期，可以添加一个 `min` 属性值，格式如下：`YYYY-MM-DD`。`max` 属性值格式相同，用于阻止用户选择过于遥远的未来日期。对于 `time` 输入类型，格式为 `HH:MM`。
 
 ![](img/de30ea99ecac39b49e690a84c48f43b9_134_1.png)
 
-**图 5.8 Opera 10.63 中显示的 input type="month" 元素**
+**图 5.8 Opera 10.63 中显示的 `input type="month"` 元素**
 
 初学者教程：创建数字选择器
 
 ![](img/de30ea99ecac39b49e690a84c48f43b9_135_0.png)
 
-**图 5.9 Opera 10.63 中显示的 input type="week" 元素**
+**图 5.9 Opera 10.63 中显示的 `input type="week"` 元素**
 
 ## 初学者教程：创建数字选择器
 
@@ -3548,31 +3616,33 @@ input type="week"
 
 \* 无数字选择器，但提供文本输入备用方案
 
-使用清单 5.6 中的代码，Opera 创建了一个允许用户循环浏览数字的控件（参见图 5.10）。数字可以是负数，除非你指定了最小值或最大值，否则数字可以无限大。使用 `step` 属性，你可以更精确地控制数字。图 5.10 允许用户以 0.5 为步长，在 0 到 10（`min` 和 `max`）之间选择数字。因此，他们可以选择 0、0.5、1、1.5，依此类推。用户可以使用提供的控件，也可以直接键入数字。
+
+
+使用清单 5.6 中的代码，Opera 创建了一个允许用户循环浏览数字的控件（参见图 5.10）。数字可以是负数，除非你指定了最小值或最大值，否则数字可以无限大。使用`step`属性，你可以更精确地控制数字。图 5.10 允许用户以 0.5 为步长，在 0 到 10（`min`和`max`）之间选择数字。因此，他们可以选择 0、0.5、1、1.5，依此类推。用户可以使用提供的控件，也可以直接键入数字。
 
 www.it-ebooks.info
 
-106 第 5 章 HTML5 Web 表单
+# 第 5 章 HTML5 Web 表单
 
 ![](img/de30ea99ecac39b49e690a84c48f43b9_136_0.png)
 
-**图 5.10 Opera 11 中显示的 `input type="number"` 元素**
+**图 5.10 Opera 11 中显示的`input type="number"`元素**
 
 ![](img/de30ea99ecac39b49e690a84c48f43b9_136_1.png)
 
-**图 5.11 带有无效数字的 `input type="number"` 元素（在此示例中只允许 0.5 或整数）**
+**图 5.11 带有无效数字的`input type="number"`元素（在此示例中只允许 0.5 或整数）**
 
-**清单 5.6 带有步长的 `number` 输入类型**
+**清单 5.6 带有步长的`number`输入类型**
 
 ```
 <input min="0" max="10" step="0.5" required type="number" id="number" name="number" />
 ```
 
-因为你指定了 `step` 范围，超出此范围的任何输入都将导致验证错误。因此，在图 5.11 中输入 9.99 是不允许的。
+因为你指定了`step`范围，超出此范围的任何输入都将导致验证错误。因此，在图 5.11 中输入 9.99 是不允许的。
 
 ## 初学者教程：创建滑块（无需 JavaScript）
 
-`range` 输入类型生成一个滑块控件。它没有可供用户输入的文本区域，并且像 `number` 输入类型一样，它可以使用 `min`、`max` 和 `step` 属性。
+`range`输入类型生成一个滑块控件。它没有可供用户输入的文本区域，并且像`number`输入类型一样，它可以使用`min`、`max`和`step`属性。
 
 **表 5.8 滑块设备与浏览器支持**
 
@@ -3588,18 +3658,17 @@ www.it-ebooks.info
 
 \* 无滑块，但提供文本输入备用方案
 
-`range` 输入类型的一些可能用途可以是页面或表单上的“评价我的*某物*”部分，或者可以用来控制视频或音频播放器的音量。
+`range`输入类型的一些可能用途可以是页面或表单上的“评价我的*某物*”部分，或者可以用来控制视频或音频播放器的音量。
 
 www.it-ebooks.info
-
-
 
 ## 5.7 范围输入类型
 
 在清单 5.7 中，我们将看到创建一个基本*范围*输入所需的 HTML，尽管在后续章节中你将学习如何使其成为功能性的音量控制。
 
+**清单 5.7 范围输入类型**
+
 ```
-清单 5.7 **范围输入类型**
 <label for="range">音量</label>
 <input min="0" max="10" step="0.5" required type="range" id="range" name="range" />
 ```
@@ -3610,7 +3679,7 @@ www.it-ebooks.info
 
 ## 新手指南：创建颜色选择器
 
-如图 5.13 所示，`<input type="color">` 为用户提供了一些基本颜色的选择，并允许输入十六进制值（#12ff00）或使用颜色选择器，类似于许多软件包中使用的。目前唯一支持此有用输入类型的桌面浏览器是 Opera 11（尽管新的 BlackBerry 浏览器也支持颜色选择器）。
+如图 5.13 所示，`<input type="color">`为用户提供了一些基本颜色的选择，并允许输入十六进制值（#12ff00）或使用颜色选择器，类似于许多软件包中使用的。目前唯一支持此有用输入类型的桌面浏览器是 Opera 11（尽管新的 BlackBerry 浏览器也支持颜色选择器）。
 
 ### 表 5.9 颜色选择器设备和浏览器支持
 
@@ -3623,13 +3692,14 @@ www.it-ebooks.info
 | iOS Safari | * |
 | Opera | 10.0+ |
 | Safari | * |
-| * 不提供颜色选择器，但提供文本输入回退方案 | |
 
-## 新手指南：使用 `output` 元素显示结果
+\* 不提供颜色选择器，但提供文本输入回退方案
 
-`output` 元素使用 JavaScript 来显示结果，通常来自计算或脚本。它可以用作计算器，或者使用清单 5.6 中的代码，为页面添加一些额外功能，例如显示用户的名。如果不需要在其中显示任何额外内容，它可以是一个自结束标签，因此你可以选择 `<output/>` 或 `<output></output>`。
+## 新手指南：使用`output`元素显示结果
 
-### 表 5.10 `output` 元素设备和浏览器支持
+`output`元素使用 JavaScript 来显示结果，通常来自计算或脚本。它可以用作计算器，或者使用清单 5.6 中的代码，为页面添加一些额外功能，例如显示用户的名。如果不需要在其中显示任何额外内容，它可以是一个自结束标签，因此你可以选择`<output/>`或`<output></output>`。
+
+### 表 5.10 `output`元素设备和浏览器支持
 
 | Android | - |
 | --- | --- |
@@ -3642,7 +3712,7 @@ www.it-ebooks.info
 
 例如，如图 5.14 所示，可以在拖动滑块时显示范围输入类型的值。默认值为空，但当用户移动滑块时，输出值会更改并实时显示给用户。清单 5.8 包含此功能的代码。
 
-### 清单 5.8 `output` 元素
+### 清单 5.8 `output`元素
 
 ```
 <label for="range">音量</label><input min="0" max="10" step="0.5" value="2" required type="range" id="range" name="range" />
@@ -3657,14 +3727,14 @@ www.it-ebooks.info
 
 以前，这需要 JavaScript 来实现此效果，但现在你可以坐下来让浏览器为你完成。
 
-`placeholder` 文本存在可访问性问题，因为目前文本颜色默认为浅灰色，与默认背景颜色的对比度不足。你可以在 Mozilla 和 WebKit 浏览器中使用以下 CSS 覆盖文本颜色：
+`placeholder`文本存在可访问性问题，因为目前文本颜色默认为浅灰色，与默认背景颜色的对比度不足。你可以在 Mozilla 和 WebKit 浏览器中使用以下 CSS 覆盖文本颜色：
 
 ```
 input::-webkit-input-placeholder {color: red;}
 input:-moz-placeholder {color: red;}
 ```
 
-### 表 5.11 `placeholder` 属性设备和浏览器支持
+### 表 5.11 `placeholder`属性设备和浏览器支持
 
 | Android | 2.2 |
 | Chrome | 9.0+ |
@@ -3674,11 +3744,11 @@ input:-moz-placeholder {color: red;}
 | Opera | 10.0+ |
 | Safari | 4.0+ |
 
-## 新手指南：使用 `list` 和 `datalist` 创建自动完成功能
+## 新手指南：使用`list`和`datalist`创建自动完成功能
 
-`datalist` 是 HTML5 中的新元素。与 `list` 属性结合使用，它用于提供预定义的选项列表（参见图 5.16），使创建列表的过程看起来像自动完成表单。用户不必从预定义选项中选择；如果他们愿意，可以输入自己的答案。
+`datalist`是 HTML5 中的新元素。与`list`属性结合使用，它用于提供预定义的选项列表（参见图 5.16），使创建列表的过程看起来像自动完成表单。用户不必从预定义选项中选择；如果他们愿意，可以输入自己的答案。
 
-### 表 5.12 `datalist` 元素设备和浏览器支持
+### 表 5.12 `datalist`元素设备和浏览器支持
 
 | Android | * |
 | Chrome | * |
@@ -3687,9 +3757,10 @@ input:-moz-placeholder {color: red;}
 | iOS Safari | * |
 | Opera | 10.0+ |
 | Safari | * |
-| * 不提供下拉列表，但提供文本输入回退方案 | |
 
-`datalist` 的代码（显示在清单 5.9 中）类似于 `select` 元素。但是，对于 `select` 元素，用户如果需要输入自己的选项则无法做到。`datalist` 不存在此问题。使用 `list` 属性，你可以关联一个普通输入（也可以是 url、email、search 或 tel 类型）。
+\* 不提供下拉列表，但提供文本输入回退方案
+
+`datalist`的代码（显示在清单 5.9 中）类似于`select`元素。但是，对于`select`元素，用户如果需要输入自己的选项则无法做到。`datalist`不存在此问题。使用`list`属性，你可以关联一个普通输入（也可以是 url、email、search 或 tel 类型）。
 
 ### 清单 5.9 datalist 示例
 
@@ -3706,16 +3777,16 @@ input:-moz-placeholder {color: red;}
 
 在上一个示例中，有四个自动完成选项。目前只有 Firefox 和 Opera 显示自动完成选项，而且它们的做法略有不同：Firefox 仅显示与已输入内容相似的选项，而 Opera 在字段处于活动状态时显示整个列表。
 
-datalist 可以从数据库或 Ajax 调用生成（类似于 Google 搜索引擎的自动完成功能），为用户提供，比如说，该问题的前 10 个常见答案。这个新元素和属性的妙处在于，如果用户使用的是不渲染此 HTML5 元素的浏览器，没有 JavaScript，或者存在 Ajax 连接问题，表单控件将像普通文本框一样渲染，用户可以正常输入。
+`datalist`可以从数据库或 Ajax 调用生成（类似于 Google 搜索引擎的自动完成功能），为用户提供，比如说，该问题的前 10 个常见答案。这个新元素和属性的妙处在于，如果用户使用的是不渲染此 HTML5 元素的浏览器，没有 JavaScript，或者存在 Ajax 连接问题，表单控件将像普通文本框一样渲染，用户可以正常输入。
 
-## 新手指南：使用 `progress` 元素跟踪任务进度
+## 新手指南：使用`progress`元素跟踪任务进度
 
 新的进度元素用于跟踪任务的状态和完成情况。它可以用于显示下载的进度，例如下载文件或从 Ajax 调用加载数据。
 
 进度元素有两个可选属性：
 
-- **value**：value 属性表示任务（以百分比计）已完成的量。
-- **max**：max 属性表示完成任务所需的总量。value 和 max 内容都应显示在进度元素内，以便用户获得完成状态的反馈。
+- **value**：`value`属性表示任务（以百分比计）已完成的量。
+- **max**：`max`属性表示完成任务所需的总量。`value`和`max`内容都应显示在进度元素内，以便用户获得完成状态的反馈。
 
 在 Chrome 中，以下代码会给你如图 5.17 所示的进度元素。进度条还会发光，这是一个很好的点缀。
 
@@ -3724,9 +3795,9 @@ datalist 可以从数据库或 Ajax 调用生成（类似于 Google 搜索引擎
 <progress value="45" max="100"><span>45</span>% 完成</progress>
 ```
 
-在不支持 progress 元素的浏览器中，你会得到如图 5.18 所示的结果（来自 Firefox 3.6 的截图）。其背后的思路是，绿色（或蓝色，取决于操作系统和浏览器版本）的条形，或文本视觉效果，会实时更新，以便用户知道已过去多少时间以及还剩多少时间。
+在不支持`progress`元素的浏览器中，你会得到如图 5.18 所示的结果（来自 Firefox 3.6 的截图）。其背后的思路是，绿色（或蓝色，取决于操作系统和浏览器版本）的条形，或文本视觉效果，会实时更新，以便用户知道已过去多少时间以及还剩多少时间。
 
-### 表 5.13 `progress` 元素设备和浏览器支持
+### 表 5.13 `progress`元素设备和浏览器支持
 
 | Android | * |
 | Chrome | 13+ |
@@ -3735,20 +3806,21 @@ datalist 可以从数据库或 Ajax 调用生成（类似于 Google 搜索引擎
 | iOS Safari | * |
 | Opera | 11.0+ |
 | Safari | * |
-| * 不提供样式化的条形，但提供文本回退方案 | |
 
-## 新手指南：使用 `meter` 元素进行测量
+\* 不提供样式化的条形，但提供文本回退方案
 
-meter 元素用于显示测量值，例如温度，或显示分数值。
+## 新手指南：使用`meter`元素进行测量
+
+`meter`元素用于显示测量值，例如温度，或显示分数值。
 
 它具有六种可能的属性：
 
-- `min`：允许的最小值。如果没有 `min` 属性，则值默认为零。你可以根据需要使用负数。
+- `min`：允许的最小值。如果没有`min`属性，则值默认为零。你可以根据需要使用负数。
 - `max`：允许的最大值。
-- `value`：这是实际值，使用 `meter` 时必须存在。
+- `value`：这是实际值，使用`meter`时必须存在。
 - `low`：这是值的低部分。
 - `high`：这是值范围的高部分。
-- `optimum`：这是最佳值。其值必须介于 `min` 和 `max` 之间。然而，其 `value` 可以大于 `high` 属性的值。
+- `optimum`：这是最佳值。其值必须介于`min`和`max`之间。然而，其`value`可以大于`high`属性的值。
 
 以下是一些基本示例：
 
@@ -3758,14 +3830,14 @@ meter 元素用于显示测量值，例如温度，或显示分数值。
     optimum="100">A+</meter></p>
 ```
 
-`meter` 元素（如图 5.19 所示）可用于描述硬盘空间的当前状态：
+`meter`元素（如图 5.19 所示）可用于描述硬盘空间的当前状态：
 
 ```
 <meter min="0" value="512" max="1024">You are using exactly 50% of your hard drive
     space</meter>
 ```
 
-表 5.14 `meter` 元素设备与浏览器支持情况
+### 表 5.14 `meter`元素设备与浏览器支持情况
 
 | Android | * |
 | Chrome | 13+ |
@@ -3779,15 +3851,15 @@ meter 元素用于显示测量值，例如温度，或显示分数值。
 
 ![](img/de30ea99ecac39b49e690a84c48f43b9_143_0.png)
 
-图 5.19 Chrome 中的 `meter` 元素
+**图 5.19 Chrome 中的`meter`元素**
 
-114 第 5 章 HTML5 Web 表单
+# 第 5 章 HTML5 Web 表单
 
 ## 入门技巧：页面加载时跳转到表单元素
 
-`autofocus` 属性让你有机会在页面加载时聚焦一个表单控件。如果聚焦在一个 `input` 或 `textarea` 上，用户就可以在页面加载后立即开始输入。如果你自动聚焦的字段有占位符文本，那么它将被清空，因为文本光标在该字段内。以前，你必须使用 JavaScript 来执行自动聚焦任务。`autofocus` 布尔属性，所以它要么开启，要么关闭。图 5.20 展示了一个示例。
+`autofocus`属性让你有机会在页面加载时聚焦一个表单控件。如果聚焦在一个`input`或`textarea`上，用户就可以在页面加载后立即开始输入。如果你自动聚焦的字段有占位符文本，那么它将被清空，因为文本光标在该字段内。以前，你必须使用 JavaScript 来执行自动聚焦任务。`autofocus`布尔属性，所以它要么开启，要么关闭。图 5.20 展示了一个示例。
 
-表 5.15 `autofocus` 属性设备与浏览器支持情况
+### 表 5.15 `autofocus`属性设备与浏览器支持情况
 
 | Android | - |
 | Chrome | 9.0+ |
@@ -3797,10 +3869,11 @@ meter 元素用于显示测量值，例如温度，或显示分数值。
 | Opera | 10.0+ |
 | Safari | 5.0+ |
 
-`autofocus` 属性应谨慎使用。自动让页面跳转/滚动到内容区域并非最佳的用户体验实践，因为使用移动设备、屏幕阅读器或低分辨率屏幕的用户可能会错过其上方可能相关的内容。建议仅在 `form` 元素是主要内容的页面上使用 `autofocus`，例如联系页面或如图 5.17 所示的搜索站点（如 Google.com 上的表单，它实际上通过 JavaScript 实现了自动聚焦）。代码清单 5.10 展示了用于生成图 5.17 的代码。
+`autofocus`属性应谨慎使用。自动让页面跳转/滚动到内容区域并非最佳的用户体验实践，因为使用移动设备、屏幕阅读器或低分辨率屏幕的用户可能会错过其上方可能相关的内容。建议仅在`form`元素是主要内容的页面上使用`autofocus`，例如联系页面或如图 5.17 所示的搜索站点（如 Google.com 上的表单，它实际上通过 JavaScript 实现了自动聚焦）。代码清单 5.10 展示了用于生成图 5.17 的代码。
+
+**清单 5.10 搜索输入类型上的 autofocus**
 
 ```
-Listing 5.10 autofocus on a search Input Type
 <label for="autofocus">Search the site</label>
 <input autofocus required type="search" id="autofocus" name="autofocus" />
 ```
@@ -3808,13 +3881,14 @@ Listing 5.10 autofocus on a search Input Type
 ![](img/de30ea99ecac39b49e690a84c48f43b9_144_0.png)
 
 > **注意**
-`autofocus` 在每个页面上应仅使用一次。有趣的是，如果你在页面上有多个字段都设置了 `autofocus`，Opera、Chrome 和 Safari 会将自动聚焦放在最后一个字段，而 Firefox 则使用第一个。
+
+`autofocus`在每个页面上应仅使用一次。有趣的是，如果你在页面上有多个字段都设置了`autofocus`，Opera、Chrome 和 Safari 会将自动聚焦放在最后一个字段，而 Firefox 则使用第一个。
 
 ## 入门技巧：允许多个条目
 
-`multiple` 属性允许用户在特定字段中输入多个值。它可以用于任何 input 类型，因此可以用来创建“发送给朋友”表单或电子邮件应用程序，允许用户在收件人、抄送和密送字段中输入多个电子邮件地址。
+`multiple`属性允许用户在特定字段中输入多个值。它可以用于任何 input 类型，因此可以用来创建“发送给朋友”表单或电子邮件应用程序，允许用户在收件人、抄送和密送字段中输入多个电子邮件地址。
 
-表 5.16 `multiple` 属性设备与浏览器支持情况
+### 表 5.16 `multiple`属性设备与浏览器支持情况
 
 | Android | - |
 | Chrome | 10.0+ |
@@ -3826,25 +3900,26 @@ Listing 5.10 autofocus on a search Input Type
 
 上传多个文件是另一个例子。以前，这需要 JavaScript 或服务器端代码来检测何时选择了文件，然后显示另一个上传选项。但现在使用代码清单 5.11 中的代码，你可以在 HTML5 中完成。
 
+**清单 5.11 允许多个文件上传**
+
 ```
-Listing 5.11 Allowing Multiple File Uploads
 <label for="upload">Upload some files</label>
 <input multiple type="file" id="upload" name="upload" />
 ```
 
 目前，只有 Firefox 4、Safari 和 Chrome 支持这个新属性。Safari 和 Chrome 会显示所选文件的数量。在图 5.21 所示的示例中，选择了三个文件。Firefox 4 不会自动显示已选择的文件数量；相反，它会在一个文本框内列出完整的文件路径，用逗号分隔，类似“C:\fileone.doc, C:\filetwo.pdf.”
 
-116 第 5 章 HTML5 Web 表单
+# 第 5 章 HTML5 Web 表单
 
 ![](img/de30ea99ecac39b49e690a84c48f43b9_146_0.png)
 
-图 5.21 Safari 中在文件输入上使用 `multiple` 属性
+**图 5.21 Safari 中在文件输入上使用`multiple`属性**
 
-## 入门技巧：使用 `required` 属性进行基本验证
+## 入门技巧：使用`required`属性进行基本验证
 
-`required` 属性在本章的许多示例中都已使用过。如果使用了该属性，浏览器在必填字段为空时将不会尝试提交表单。在支持此属性的浏览器中，如果必填字段为空，将显示错误，如图 5.22 所示。
+`required`属性在本章的许多示例中都已使用过。如果使用了该属性，浏览器在必填字段为空时将不会尝试提交表单。在支持此属性的浏览器中，如果必填字段为空，将显示错误，如图 5.22 所示。
 
-表 5.17 `required` 属性设备与浏览器支持情况
+### 表 5.17 `required`属性设备与浏览器支持情况
 
 | Android | - |
 | Chrome | 10.0+ |
@@ -3856,9 +3931,13 @@ Listing 5.11 Allowing Multiple File Uploads
 
 > **提示**
 
-除了 `required` 属性外，你还可以添加 `aria-required="true"`，如下所示，这将提高表单元素的可访问性。你可能会有兴趣知道，WordPress 默认为其评论表单使用了这个属性。
 
-`<input aria-required="true" required type="text" id="name" name="name" />`
+
+除了`required`属性外，你还可以添加`aria-required="true"`，如下所示，这将提高表单元素的可访问性。你可能会有兴趣知道，WordPress 默认为其评论表单使用了这个属性。
+
+```
+<input aria-required="true" required type="text" id="name" name="name" />
+```
 
 ![](img/de30ea99ecac39b49e690a84c48f43b9_146_1.png)
 
@@ -3868,11 +3947,12 @@ www.it-ebooks.info
 
 ## 中级技巧：编写你自己的验证规则
 
-尽管 HTML5 具有内置验证，你仍可以使用 `pattern` 属性和正则表达式设置自己的规则。
+尽管 HTML5 具有内置验证，你仍可以使用`pattern`属性和正则表达式设置自己的规则。
 
-表 5.18 `pattern` 属性设备与浏览器支持情况
+表 5.18 `pattern`属性设备与浏览器支持情况
 
 | 浏览器 | 支持情况 |
+| --- | --- |
 | Android | - |
 | Chrome | 10.0+ |
 | Firefox | 4.0+ |
@@ -3881,8 +3961,9 @@ www.it-ebooks.info
 | Opera | 11.0+ |
 | Safari | - |
 
-例如，你已经看到 `url` 输入类型接受各种类型的 URL。你可能想阻止这种情况，并强制用户以 `http://` 开头。你可以使用自定义正则表达式来做到这一点。
-代码清单 5.12 中使用的正则表达式仅验证以 `http://` 或 `https://` 开头的 URL。它还接受子域名和查询字符串，因此 `http://you.site.com/search.aspx?=test` 是有效内容，但 `mailto:` 地址则无效。
+例如，你已经看到`url`输入类型接受各种类型的 URL。你可能想阻止这种情况，并强制用户以`http://`开头。你可以使用自定义正则表达式来做到这一点。
+
+代码清单 5.12 中使用的正则表达式仅验证以`http://`或`https://`开头的 URL。它还接受子域名和查询字符串，因此`http://you.site.com/search.aspx?=test`是有效内容，但`mailto:`地址则无效。
 
 ```
 Listing 5.12 pattern Attribute with Regular Expression
@@ -3896,13 +3977,14 @@ Listing 5.12 pattern Attribute with Regular Expression
 
 HTML5 中的表单条目现在可以通过各种属性进行限制（如果适用）。
 
-### step
+### `step`
 
-`step` 属性可用于 `number`、`range` 和 `time` 输入类型。它指定了 `input` 可取数值的增量步长。请参阅本章前面的代码清单 5.10（带有 `number` 输入类型）作为示例。
+`step`属性可用于`number`、`range`和`time`输入类型。它指定了`input`可取数值的增量步长。请参阅本章前面的代码清单 5.10（带有`number`输入类型）作为示例。
 
-表 5.19 `step` 属性设备与浏览器支持情况
+表 5.19 `step`属性设备与浏览器支持情况
 
 | 设备/浏览器 | 支持情况 |
+| --- | --- |
 | Android | - |
 | Chrome | 10.0+ |
 | Firefox | - |
@@ -3911,13 +3993,14 @@ HTML5 中的表单条目现在可以通过各种属性进行限制（如果适�
 | Opera | 11.0+ |
 | Safari | 5.1 |
 
-### min, max
+### `min`、`max`
 
-如 `meter` 元素以及 `number` 和 `range` 输入类型上所示，`min` 和 `max` 属性设置了元素上允许的值范围。这些不是必需属性，你可以只使用 `min` 或 `max`，或者两者都用。这些设置了验证规则，如果 `min` 或 `max` 值不在范围内，表单将不会提交。这些可用于 `date` 和 `time` 输入类型，以限制用户选择某个值，例如在活动日历上或在日期之间搜索时。
+如`meter`元素以及`number`和`range`输入类型上所示，`min`和`max`属性设置了元素上允许的值范围。这些不是必需属性，你可以只使用`min`或`max`，或者两者都用。这些设置了验证规则，如果`min`或`max`值不在范围内，表单将不会提交。这些可用于`date`和`time`输入类型，以限制用户选择某个值，例如在活动日历上或在日期之间搜索时。
 
-表 5.20 `min`, `max` 属性设备与浏览器支持情况
+表 5.20 `min`、`max`属性设备与浏览器支持情况
 
 | 设备/浏览器 | 支持情况 |
+| --- | --- |
 | Android | - |
 | Chrome | 10.0+ |
 | Firefox | - |
@@ -3925,14 +4008,12 @@ HTML5 中的表单条目现在可以通过各种属性进行限制（如果适�
 | iOS Safari | - |
 | Opera | 11.0+ |
 | Safari | 5.1 |
-
-
 
 ## `formnovalidate`、`novalidate`
 
-如果你有一个表单，但不想使用浏览器验证，那么可以使用 `formnovalidate` 或 `novalidate` 属性。如果你希望保存表单的当前状态而不是提交，例如，如果网站有一个大型表单，或者在流程的当前阶段，因为用户在最终提交前还有其他阶段要完成，你并不关心数据验证，那么使用其中一个属性可能会特别有用。
+如果你有一个表单，但不想使用浏览器验证，那么可以使用`formnovalidate`或`novalidate`属性。如果你希望保存表单的当前状态而不是提交，例如，如果网站有一个大型表单，或者在流程的当前阶段，因为用户在最终提交前还有其他阶段要完成，你并不关心数据验证，那么使用其中一个属性可能会特别有用。
 
-表 5.21 `formnovalidate`、`novalidate` **属性设备与浏览器支持**
+表 5.21 `formnovalidate`、`novalidate`属性设备与浏览器支持
 
 | 设备/浏览器 | 支持情况 |
 | :--- | :--- |
@@ -3944,17 +4025,17 @@ HTML5 中的表单条目现在可以通过各种属性进行限制（如果适�
 | Opera | 11.0+ |
 | Safari | - |
 
-你可以在 form 元素上放置 `novalidate`，这样当表单被提交时，表单将忽略任何格式不正确或为空的字段：
+你可以在`form`元素上放置`novalidate`，这样当表单被提交时，表单将忽略任何格式不正确或为空的字段：
 
-```html
+```
 <form novalidate>
 ```
 
-你也可以在任何单独的表单元素上放置 `formnovalidate` 属性。例如，你可以将其放在 `url` 输入类型上，浏览器将忽略对此元素的验证（尽管费这么大劲使用 `url` 输入类型然后又忽略验证，这一点很值得商榷）。
+你也可以在任何单独的表单元素上放置`formnovalidate`属性。例如，你可以将其放在`url`输入类型上，浏览器将忽略对此元素的验证（尽管费这么大劲使用`url`输入类型然后又忽略验证，这一点很值得商榷）。
 
-## 中级技巧：**自定义和设置表单样式**
+## 中级技巧：自定义和设置表单样式
 
-设计师们最先问的问题之一是，“我能为新元素设置样式吗？” 嗯，算是可以吧。虽然你不能改变日期选择器的外观，因为它是由浏览器生成的（这在未来*可能*会改变），但你可以设置 `input` 框的外观样式，例如边框、字体和背景颜色，因为你可以利用 CSS3 技巧来设置 HTML5 字段不同状态的样式。
+设计师们最先问的问题之一是，“我能为新元素设置样式吗？” 嗯，算是可以吧。虽然你不能改变日期选择器的外观，因为它是由浏览器生成的（这在未来*可能*会改变），但你可以设置`input`框的外观样式，例如边框、字体和背景颜色，因为你可以利用 CSS3 技巧来设置 HTML5 字段不同状态的样式。
 
 清单 5.13 中的代码生成了你在图 5.23 中看到的内容；请注意不同的字段状态。这些字段最初是橙色的，并带有一个星号图像，因为它们是必填的。
 
@@ -3966,7 +4047,7 @@ HTML5 中的表单条目现在可以通过各种属性进行限制（如果适�
 
 清单 5.13 用于表单元素的新 CSS3 选项
 
-```html
+```
 <style>
 * {margin: 0; font: 13px tahoma, verdana, sans-serif; padding: 0;}
 form {padding-top: 10px; width: 310px;}
@@ -3989,19 +4070,19 @@ input[type=submit] {background: #7ab526; border: none; box-shadow: 0px 0px 5px #
 
 我们将不会涵盖所有新的 CSS 选项，但在图 5.20 中，我们使用了 CSS3 基本用户界面模块 (www.w3.org/TR/css3-ui) 中的以下伪类：
 
-- :valid：当表单元素的内容根据元素类型和验证规则有效时，该元素会接收此伪类。
-- :invalid：如果表单元素的内容不正确，则会应用 :invalid 伪类。
-- :required：任何具有 required 属性的表单元素都会被分配 :required 伪类。
+- `:valid`：当表单元素的内容根据元素类型和验证规则有效时，该元素会接收此伪类。
+- `:invalid`：如果表单元素的内容不正确，则会应用`:invalid`伪类。
+- `:required`：任何具有`required`属性的表单元素都会被分配`:required`伪类。
 
 ### 错误消息
 
 我们希望你一直在跟踪前面的示例，并注意到错误消息在 Opera 和 Firefox 中的显示方式不同。Opera 显示一个摇晃的红色错误消息，而 Firefox 显示一个更平静的黄色错误消息。目前，你无法更改这些错误的显示方式，因为它们是由浏览器生成的。这在未来可能会改变，因为目前正在讨论是否可以通过 CSS 使其可编辑。所以，尽管你可能会抱怨错误消息看起来很丑陋或不符合你可爱的品牌准则，但这些错误消息在同一个浏览器内是一致的，因此可以说在可用性上是成功的，因为用户会期望在使用他们选择的浏览器时看到这些错误样式。
 
-虽然你目前还不能改变错误的样式，但你可以使用 JavaScript 和 `setCustomValidity()` 方法来更改错误消息文本。清单 5.14 提供了一个示例，当添加了不正确的内容时，它会覆盖默认的错误消息。
+虽然你目前还不能改变错误的样式，但你可以使用 JavaScript 和`setCustomValidity()`方法来更改错误消息文本。清单 5.14 提供了一个示例，当添加了不正确的内容时，它会覆盖默认的错误消息。
 
 清单 5.14 一个 HTML5 注册表单
 
-```html
+```
 <form>
 <label for="email">邮箱</label><input oninput="check()" type="email" id="email"
 name="email" />
@@ -4024,6 +4105,7 @@ function check() {
 ![](img/de30ea99ecac39b49e690a84c48f43b9_152_0.png)
 
 **个性化你的个人资料**
+
 选择页面颜色
 
 ![](img/de30ea99ecac39b49e690a84c48f43b9_152_1.png)
@@ -4038,9 +4120,11 @@ function check() {
 
 图 5.24 在 Opera 11 中使用一些 HTML 4 元素、新的 HTML5 表单元素和 CSS 创建的注册表单
 
-因此，在图 5.24 中，我们使用了 `tel`、`date`、`url`、`number`、`text`、`email`、`color` 和 `range` 输入类型。在几个地方还使用了 `datalist` 元素，虽然我们本可以使用 `select`，但在这个表单中，我们希望人们输入他们的职位或国家/地区。在表单的末尾，使用了 `range` 输入类型以及与之配套的 `output` 元素。所有包含我们需要捕获数据的元素都具有 `required` 属性，这将触发浏览器内置的验证。为了使其看起来更漂亮，我们添加了一些新的 CSS3 选择器来针对元素的 :required、:valid 和 :invalid 状态。
+因此，在图 5.24 中，我们使用了`tel`、`date`、`url`、`number`、`text`、`email`、`color`和`range`输入类型。在几个地方还使用了`datalist`元素，虽然我们本可以使用`select`，但在这个表单中，我们希望人们输入他们的职位或国家/地区。在表单的末尾，使用了`range`输入类型以及与之配套的`output`元素。所有包含我们需要捕获数据的元素都具有`required`属性，这将触发浏览器内置的验证。为了使其看起来更漂亮，我们添加了一些新的 CSS3 选择器来针对元素的`:required`、`:valid`和`:invalid`状态。
 
 ## 清单 5.15 一个功能完备的注册表单
+
+
 
 ```html
 <!DOCTYPE html>
@@ -4085,8 +4169,6 @@ input[type=submit]:hover {box-shadow: 0px 0px 25px #7ab526; }
       <li><label for="name">姓名</label><input autofocus required type="tel" id="name" name="name" /></li>
       <li><label for="birthday">生日</label><input required type="date" id="birthday" name="birthday" /></li>
 ```
-
-
 
 # 第五章 HTML5 网页表单
 
@@ -4148,25 +4230,27 @@ input[type=submit]:hover {box-shadow: 0px 0px 25px #7ab526; }
 
 ## 总结
 
-本章中，您了解了所有新的输入类型，以及如果它们被完全支持，它们在浏览器中的工作方式。这些新的输入类型，连同新的内置原生验证功能以及优秀浏览器中的新CSS功能，使得创建表单和向用户提供反馈变得容易得多。尽管在所有浏览器都赶上之前还有很长的路要走，但总有一天——理想情况下很快——您将不必依赖JavaScript来创建诸如日期选择器、滑块和验证等有用功能。所有新的输入类型，如 `email`、`tel` 和 `date`，在浏览器中都“能工作”，至少会显示一个文本字段，因此没有理由不开始使用它们。
+本章中，您了解了所有新的输入类型，以及如果它们被完全支持，它们在浏览器中的工作方式。这些新的输入类型，连同新的内置原生验证功能以及优秀浏览器中的新CSS功能，使得创建表单和向用户提供反馈变得容易得多。尽管在所有浏览器都赶上之前还有很长的路要走，但总有一天——理想情况下很快——您将不必依赖JavaScript来创建诸如日期选择器、滑块和验证等有用功能。所有新的输入类型，如`email`、`tel`和`date`，在浏览器中都“能工作”，至少会显示一个文本字段，因此没有理由不开始使用它们。
 
 ## 第六章 使用 Canvas 绘图
 
-2004年，苹果公司为 Mac OS X Dashboard 开发了一个名为 `canvas` 的基于像素的绘图元素，后来被应用于 Safari 浏览器。HTML5 规范采纳了这个元素及其相关的一套API，以提供基本的绘图功能。在 `canvas` 元素出现之前，浏览器需要第三方插件来渲染这些基本图形。由于这是一种基于像素的绘图机制，而不是基于矢量和图层的系统，因此底层功能较为基础；然而，正如您将在本章学到的，它仍然可以提供一种提供丰富显示的方式。
+2004年，苹果公司为 Mac OS X Dashboard 开发了一个名为`canvas`的基于像素的绘图元素，后来被应用于 Safari 浏览器。HTML5 规范采纳了这个元素及其相关的一套API，以提供基本的绘图功能。在`canvas`元素出现之前，浏览器需要第三方插件来渲染这些基本图形。由于这是一种基于像素的绘图机制，而不是基于矢量和图层的系统，因此底层功能较为基础；然而，正如您将在本章学到的，它仍然可以提供一种提供丰富显示的方式。
 
 ## Canvas 概览
 
-实现canvas的核心是两个部分：HTML中的 `canvas` 元素和用于在canvas上执行操作的JavaScript。就像画家一样，canvas在画家使用画笔、工具和介质创作出最终的艺术品之前是一片空白。同样地，您将使用canvas形状工具、效果和变换的运动编程到您的JavaScript中。然后这些被绘制到canvas上，形成更新后的新像素视图。
+实现canvas的核心是两个部分：HTML中的`canvas`元素和用于在canvas上执行操作的JavaScript。就像画家一样，canvas在画家使用画笔、工具和介质创作出最终的艺术品之前是一片空白。同样地，您将使用canvas形状工具、效果和变换的运动编程到您的JavaScript中。然后这些被绘制到canvas上，形成更新后的新像素视图。
 
-`canvas` 元素为您提供了一个空白表面（因此得名 `canvas`），您可以使用它来动态渲染图形、图像和文本。canvas的功能非常强大，因此我们将介绍一些基础知识，如绘制形状，然后介绍一些更复杂的效果和变换。然而，如果您喜欢这类东西，我们鼓励您进行进一步研究，因为我们在这里只是触及了皮毛。在深入探讨canvas的大量用法之前，我们将快速过一遍基础知识。
+`canvas`元素为您提供了一个空白表面（因此得名`canvas`），您可以使用它来动态渲染图形、图像和文本。canvas的功能非常强大，因此我们将介绍一些基础知识，如绘制形状，然后介绍一些更复杂的效果和变换。然而，如果您喜欢这类东西，我们鼓励您进行进一步研究，因为我们在这里只是触及了皮毛。在深入探讨canvas的大量用法之前，我们将快速过一遍基础知识。
 
-表 6.1 显示了支持 `canvas` 元素的每个浏览器的版本。
+表 6.1 显示了支持`canvas`元素的每个浏览器的版本。
 
 > **注意**
 
 对于 Internet Explorer 8 及更早版本，您需要一些第三方帮助，这就是 explorercanvas (http://code.google.com/p/explorercanvas) 的用武之地。因为您只需要在 IE8 中使用它，所以可以将其放在条件语句中：
 
-`<!--[if lte IE 8]><script src="excanvas.js"></script><![endif]-->`
+```
+<!--[if lte IE 8]><script src="excanvas.js"></script><![endif]-->
+```
 
 表 6.1 Canvas 浏览器支持情况
 
@@ -4182,9 +4266,9 @@ input[type=submit]:hover {box-shadow: 0px 0px 25px #7ab526; }
 
 ### 入门
 
-清单 6.1 包含了开始使用 `canvas` 元素所需的代码。如果您在浏览器中尝试此代码，将看不到任何内容，因为没有添加任何JavaScript来实际在canvas上绘制。验证canvas是否已被浏览器渲染的一种快速方法是使用CSS为元素添加边框。
+清单 6.1 包含了开始使用`canvas`元素所需的代码。如果您在浏览器中尝试此代码，将看不到任何内容，因为没有添加任何JavaScript来实际在canvas上绘制。验证canvas是否已被浏览器渲染的一种快速方法是使用CSS为元素添加边框。
 
-清单 6.1 设置 `canvas` 元素
+清单 6.1 设置`canvas`元素
 
 ```html
 <!DOCTYPE html>
@@ -4202,13 +4286,11 @@ canvas {
 </html>
 ```
 
-`canvas` 元素具有HTML元素的标准属性。至少，您需要 `id`、`width` 和 `height` 属性，以便能够从JavaScript中引用canvas并设置其大小。此外，`canvas` 元素可以像任何其他元素一样通过CSS进行样式设置。在清单 6.1 中，应用了一个边框，以便您可以快速验证canvas已放置在页面上并且尺寸正确。您也可以添加背景颜色或其他样式。这些样式默认会在canvas中显示，因为canvas默认是透明的，它会渲染 `canvas` 元素下方的所有内容。这对于将canvas叠加在其他HTML元素上非常有用，这样您就可以在其上绘制了。
+`canvas`元素具有HTML元素的标准属性。至少，您需要`id`、`width`和`height`属性，以便能够从JavaScript中引用canvas并设置其大小。此外，`canvas`元素可以像任何其他元素一样通过CSS进行样式设置。在清单 6.1 中，应用了一个边框，以便您可以快速验证canvas已放置在页面上并且尺寸正确。您也可以添加背景颜色或其他样式。这些样式默认会在canvas中显示，因为canvas默认是透明的，它会渲染`canvas`元素下方的所有内容。这对于将canvas叠加在其他HTML元素上非常有用，这样您就可以在其上绘制了。
 
-www.it-ebooks.info
+您会注意到在清单 6.1 中，我们在HTML中包含了结束标签`</canvas>`。包含结束标签的原因是为了提供一个后备容器，并完全符合Mozilla的规范，因为该浏览器期望有后备内容。通过拥有一个后备容器，如果浏览器不支持canvas元素，则可以显示标签之间的内容。与其他元素一样，您可以提供 alt 属性来显示文本内容，但如果canvas标签不受支持，则开始和结束元素标签内的任何内容都将被显示。这可以方便地显示从文本到图像的任何内容，因为canvas绘图将不会被显示。
 
-您会注意到在清单 6.1 中，我们在HTML中包含了结束标签 `</canvas>`。包含结束标签的原因是为了提供一个后备容器，并完全符合Mozilla的规范，因为该浏览器期望有后备内容。通过拥有一个后备容器，如果浏览器不支持canvas元素，则可以显示标签之间的内容。与其他元素一样，您可以提供 alt 属性来显示文本内容，但如果canvas标签不受支持，则开始和结束元素标签内的任何内容都将被显示。这可以方便地显示从文本到图像的任何内容，因为canvas绘图将不会被显示。
-
-要使用JavaScript在canvas上绘制，您首先必须获取要绘制的canvas的上下文。为此，您的脚本将通过id获取canvas元素，然后使用 `getContext` 来获取canvas元素二维上下文的引用。此上下文引用提供了更改canvas中像素的链接，如下所示：
+要使用JavaScript在canvas上绘制，您首先必须获取要绘制的canvas的上下文。为此，您的脚本将通过id获取canvas元素，然后使用`getContext`来获取canvas元素二维上下文的引用。此上下文引用提供了更改canvas中像素的链接，如下所示：
 
 ```html
 <canvas id="mycanvas" width="640" height="480"></canvas>
@@ -4217,7 +4299,7 @@ www.it-ebooks.info
 </script>
 ```
 
-`getContext` 方法也可用于验证您的JavaScript并确定当前浏览器是否支持canvas绘图。使用canvas元素进行一个简单的检查，如果支持则返回true值，如果不支持则返回false值：
+`getContext`方法也可用于验证您的JavaScript并确定当前浏览器是否支持canvas绘图。使用canvas元素进行一个简单的检查，如果支持则返回true值，如果不支持则返回false值：
 
 ```javascript
 var canvas = document.getElementById('mycanvas');
@@ -4242,9 +4324,16 @@ if (mycanvas.getContext) {
 现在，让我们按照以下步骤，参照代码清单6.2，让这个网格变得可见：
 
 1.  创建一个空白的HTML页面，包含如代码清单6.2所示的`<html>`和`<body>`标签，其中应包括`<canvas>`的开始和结束标签，以及其间的替换文本。
+
 2.  添加包含`canvas` ID样式的`<style>`部分。
+
 3.  添加`window.addEventListener`，以便在页面加载时启动`showGrid`函数，并声明canvas和上下文变量。
-4.  添加`showGrid`函数，以便在画布上绘制线条、点和文本。
+
+
+
+### 添加`showGrid`函数
+
+添加`showGrid`函数，以便在画布上绘制线条、点和文本。
 
 **代码清单6.2 绘制画布网格**
 
@@ -4362,58 +4451,58 @@ window.addEventListener('load',showGrid,false);
 </html>
 ```
 
-在这里，我们不会过多深入讲解具体的直线、点或文本绘制细节，因为这些图形绘制方法和效果将在本章后面详细描述。关键在于理解当你想在画布上绘图时所发生的处理过程。在本教程中，你已经在HTML中创建了一个宽600像素、高400像素的canvas元素。此外，该canvas元素被设置了边框和背景色样式。当代码在浏览器中运行时，你会看到这个边框和背景色。由于canvas默认是透明的，而代码仅在canvas上绘制线条、点和文本，因此背景样式颜色会显现出来。
+在这里，我们不会过多深入讲解具体的直线、点或文本绘制细节，因为这些图形绘制方法和效果将在本章后面详细描述。关键在于理解当你想在画布上绘图时所发生的处理过程。在本教程中，你已经在HTML中创建了一个宽600像素、高400像素的`canvas`元素。此外，该`canvas`元素被设置了边框和背景色样式。当代码在浏览器中运行时，你会看到这个边框和背景色。由于`canvas`默认是透明的，而代码仅在`canvas`上绘制线条、点和文本，因此背景样式颜色会显现出来。
 
-当页面加载时，`showGrid`函数将被触发。在本教程中，你需要做的第一件事是获取对canvas元素的引用，然后获取canvas的绘图上下文。一旦你有了上下文，就可以设置一些基本设置，例如使用`context.lineWidth`设置线宽，以及使用`context.strokeStyle`设置要使用的颜色。然后，你将网格线的间距设置为100，设置初始起始坐标为(0,0)，并确定需要绘制的水平线和垂直线的数量。利用这些信息，代码通过每100像素向下移动位置并绘制一条横跨画布的线来绘制所有水平线。在完成水平线后，代码从左到右绘制垂直线，每条线从画布顶部绘制到底部。请记住，对于y轴方向，顶部是0，向下则数值增加。
+当页面加载时，`showGrid`函数将被触发。在本教程中，你需要做的第一件事是获取对`canvas`元素的引用，然后获取`canvas`的绘图上下文。一旦你有了上下文，就可以设置一些基本设置，例如使用`context.lineWidth`设置线宽，以及使用`context.strokeStyle`设置要使用的颜色。然后，你将网格线的间距设置为100，设置初始起始坐标为(0,0)，并确定需要绘制的水平线和垂直线的数量。利用这些信息，代码通过每100像素向下移动位置并绘制一条横跨画布的线来绘制所有水平线。在完成水平线后，代码从左到右绘制垂直线，每条线从画布顶部绘制到底部。请记住，对于y轴方向，顶部是0，向下则数值增加。
 
 # 第6章 使用Canvas绘图
 
 网格线绘制完成后，接下来需要添加交汇点及其坐标。要绘制这些点，你将使用弧形工具在每个点绘制一个圆，我们将在本章后面更详细地介绍这个工具。在每个点上，你还需要使用`fillText`方法显示其坐标文本。默认情况下，文本是左对齐和顶部对齐的，这对网格上的大多数点都适用，除了最右侧的列和最底部的行。如果你不改变文本对齐方式就显示这些点，那么文本将不可见，因为它会绘制在上下文中但却在画布可视区域之外。因此，代码会判断该点是否位于最后一列或最后一行，并相应地修改该位置的文本对齐方式。
 
 > 注意
-由于canvas是基于像素操作的，在二维世界中，你在画布上绘制的顺序非常重要。Canvas API中没有图层的概念，因此你构建绘图的顺序将决定最终成品。例如，如果你在为路牌绘制实心背景之前就将文本添加到画布上，那么你的文本就会被覆盖掉。相反，你应该先绘制路牌背景，然后再在上面绘制文本。
 
-你刚刚完成了你的第一幅canvas绘图，同时也学会了网格系统如何与canvas上下文配合工作。现在，让我们来看看canvas功能的基本绘图形状或方法，以及一些可用的效果。
+由于`canvas`是基于像素操作的，在二维世界中，你在画布上绘制的顺序非常重要。Canvas API中没有图层的概念，因此你构建绘图的顺序将决定最终成品。例如，如果你在为路牌绘制实心背景之前就将文本添加到画布上，那么你的文本就会被覆盖掉。相反，你应该先绘制路牌背景，然后再在上面绘制文本。
+
+你刚刚完成了你的第一幅`canvas`绘图，同时也学会了网格系统如何与`canvas`上下文配合工作。现在，让我们来看看`canvas`功能的基本绘图形状或方法，以及一些可用的效果。
 
 ## Canvas工具
 
 Canvas提供了一套基本工具（如下所示），你可以使用它们在画布上创建各种简单和复杂的图形。在本教程中，你将简要了解这些工具中的每一个，并查看一些快速示例。
 
-- *矩形*：在特定位置绘制一个具有特定宽度和高度的矩形
-- *线*：从点A创建一条线到点B
-- *路径*：使用一条或多条线或曲线创建一条路径
-- *弧形*：根据给定尺寸创建一个弧形，也可用于创建圆形
-- *曲线*：创建两种曲线类型之一：贝塞尔曲线或二次曲线
+- 矩形：在特定位置绘制一个具有特定宽度和高度的矩形
+- 线：从点A创建一条线到点B
+- 路径：使用一条或多条线或曲线创建一条路径
+- 弧形：根据给定尺寸创建一个弧形，也可用于创建圆形
+- 曲线：创建两种曲线类型之一：贝塞尔曲线或二次曲线
 
-## 初学者教程：
-制作简单图形和线条
+## 初学者教程：制作简单图形和线条
 
 在本教程中，你将绘制简单的图形，如正方形和三角形，并学习如何绘制线条和路径。
 
-
-
 ### 绘制和样式化矩形或正方形
 
-使用 `fillRect(pos-x, pos-y, width, height)`，你可以绘制矩形或正方形：
+使用`fillRect(pos-x, pos-y, width, height)`，你可以绘制矩形或正方形：
 
-`canvas.fillRect(0, 0, 100, 100);`
+```
+canvas.fillRect(0, 0, 100, 100);
+```
 
 这将创建一个100像素乘以100像素的正方形，并将其放置在画布的左上角（0,0），如图6.2所示。默认情况下，正方形将是黑色的，这相当乏味，所以我们来尝试添加一些颜色。
 
-除了canvas提供的基本工具集外，还有一些效果可以与这些工具结合使用：
+除了`canvas`提供的基本工具集外，还有一些效果可以与这些工具结合使用：
 
-- **填充**：控制形状的填充参数
-- **描边**：控制形状中使用的线条描边
-- **渐变**：允许在形状中使用线性或径向填充图案
-- **透明度**：定义画布上所有形状的不透明度级别，或者通过填充RGBa值为特定形状设置透明度
-- **阴影**：为单个形状提供易于使用的阴影
-- **合成**：遮罩或裁剪画布区域，并控制画布上形状构建的整体顺序
+- 填充：控制形状的填充参数
+- 描边：控制形状中使用的线条描边
+- 渐变：允许在形状中使用线性或径向填充图案
+- 透明度：定义画布上所有形状的不透明度级别，或者通过填充RGBa值为特定形状设置透明度
+- 阴影：为单个形状提供易于使用的阴影
+- 合成：遮罩或裁剪画布区域，并控制画布上形状构建的整体顺序
 
 你在本章中已经简要看到过其中一些效果的方法。以下是一些可用于形状的更常见效果方法：
 
 - `strokeStyle`：指定形状周围线条的颜色或样式
 - `fillStyle`：指定形状内部使用的颜色或样式
-- `shadowOffsetX/shadowOffsetY`：指定阴影的距离
+- `shadowOffsetX`/`shadowOffsetY`：指定阴影的距离
 - `shadowBlur`：指定模糊效果的级别
 - `shadowColor`：指定阴影的颜色
 - `createLinearGradient`：在形状内创建线性渐变
@@ -4421,7 +4510,7 @@ Canvas提供了一套基本工具（如下所示），你可以使用它们在�
 
 ![](img/de30ea99ecac39b49e690a84c48f43b9_165_0.png)
 
-因此，如果你对之前用fillRect绘制的正方形使用多种可用效果，你可以得到一个相当迷人的带紫色阴影的紫色正方形（见清单6.3）。对于任何使用颜色的效果，如strokeStyle、fillStyle和shadowColor，你不必使用RGBA格式，也可以使用十六进制值或HSLA。但需要注意的是，所有样式和效果都必须在调用fillRect方法之前完成，因为fillRect方法会告知canvas上下文渲染形状，一旦渲染完成，形状就固定了。由于形状是通过单个像素显示在画布上的，绘制后无法更改形状。相反，你需要重新绘制形状来修改它，正如你将在本章后面学到的。
+因此，如果你对之前用`fillRect`绘制的正方形使用多种可用效果，你可以得到一个相当迷人的带紫色阴影的紫色正方形（见清单6.3）。对于任何使用颜色的效果，如`strokeStyle`、`fillStyle`和`shadowColor`，你不必使用RGBA格式，也可以使用十六进制值或HSLA。但需要注意的是，所有样式和效果都必须在调用`fillRect`方法之前完成，因为`fillRect`方法会告知`canvas`上下文渲染形状，一旦渲染完成，形状就固定了。由于形状是通过单个像素显示在画布上的，绘制后无法更改形状。相反，你需要重新绘制形状来修改它，正如你将在本章后面学到的。
 
 ### 清单6.3 为正方形添加样式
 
@@ -4440,7 +4529,7 @@ Canvas提供了一套基本工具（如下所示），你可以使用它们在�
 
 使用可用的颜色代码选项，颜色可以包含不透明度设置，这对于创建分层图像效果非常方便。清单6.3使用了半透明的阴影RGBA值来获得最理想的阴影效果。
 
-绘制矩形还有另外两个方法：clearRect(pos-x, pos-y, width, height) 和 strokeRect(pos-x, pos-y, width, height)。clearRect方法将清除给定矩形区域内的像素。这将移除该区域内的任何像素更改，将区域恢复到默认的透明状态。正如你将在本章后面学到的，使用clearRect方法在动画中非常有用，你可以使用画布的宽度和高度来清除整个画布，或者只清除特定区域。strokeRect与lineWidth结合使用，将在你设置的坐标、宽度和高度处绘制描边。结合使用这些形状和效果，如清单6.4所示，将创建出更独特的图像。
+绘制矩形还有另外两个方法：`clearRect(pos-x, pos-y, width, height)`和`strokeRect(pos-x, pos-y, width, height)`。`clearRect`方法将清除给定矩形区域内的像素。这将移除该区域内的任何像素更改，将区域恢复到默认的透明状态。正如你将在本章后面学到的，使用`clearRect`方法在动画中非常有用，你可以使用画布的宽度和高度来清除整个画布，或者只清除特定区域。`strokeRect`与`lineWidth`结合使用，将在你设置的坐标、宽度和高度处绘制描边。结合使用这些形状和效果，如清单6.4所示，将创建出更独特的图像。
 
 ### 清单6.4 更多样式选项
 
@@ -4460,7 +4549,7 @@ canvas.strokeRect(25, 25, 50, 50);
 
 ### 为形状应用渐变
 
-你可以与canvas形状一起使用的另一个效果是渐变。画布中的渐变填充可以通过线性（createLinearGradient）或径向（createRadialGradient）渐变创建。要向渐变添加颜色，请使用addColorStop属性。清单6.5使用两种渐变类型创建了两个矩形。
+你可以与`canvas`形状一起使用的另一个效果是渐变。画布中的渐变填充可以通过线性（`createLinearGradient`）或径向（`createRadialGradient`）渐变创建。要向渐变添加颜色，请使用`addColorStop`属性。清单6.5使用两种渐变类型创建了两个矩形。
 
 ### 清单6.5 创建渐变
 
@@ -4489,22 +4578,26 @@ canvas.closePath();
 
 清单6.5创建了一个左上角带有线性渐变的矩形和一个右下角带有径向渐变的矩形。两种渐变方法使用不同的参数来控制渐变的行为，如下所示：
 
+```
 createLinearGradient(startX, startY, endX, endY)
 createRadialGradient(startX, startY, startRadius, endX, endY, endRadius)
+```
 
-径向渐变方法可能有点复杂，因此值得尝试一下；尝试添加各种addColorStop来看看会发生什么。
+径向渐变方法可能有点复杂，因此值得尝试一下；尝试添加各种`addColorStop`来看看会发生什么。
 
 # 第6章 使用Canvas绘图
 
 ## 绘制线条和路径
 
-要使用canvas绘制线条，有三个方法构成了这个过程：
+要使用`canvas`绘制线条，有三个方法构成了这个过程：
 
 - `moveTo(x,y)`：将画布网格上的当前位置移动到线条的起点；线条将从这里开始绘制。
-- `lineTo(x,y)`：告诉canvas线条的终点位置。
-- `stroke()`：调用以让canvas绘制线条。如果尚未使用strokeStyle方法设置描边样式，则线条的默认颜色将是黑色。
+- `lineTo(x,y)`：告诉`canvas`线条的终点位置。
+- `stroke()`：调用以让`canvas`绘制线条。如果尚未使用`strokeStyle`方法设置描边样式，则线条的默认颜色将是黑色。
 
-在清单6.6中，你从左上角10像素处开始线条，并使用lineTo将线条终点设置在画布右下角10像素处，如图6.3所示。
+
+
+在清单6.6中，你从左上角10像素处开始线条，并使用`lineTo`将线条终点设置在画布右下角10像素处，如图6.3所示。
 
 ### 清单6.6 绘制一条线
 
@@ -4518,9 +4611,9 @@ createRadialGradient(startX, startY, startRadius, endX, endY, endRadius)
 </script>
 ```
 
-请记住，线条的选项（如宽度和颜色）必须在调用stroke方法之前设置，以便样式能够正确渲染。
+请记住，线条的选项（如宽度和颜色）必须在调用`stroke`方法之前设置，以便样式能够正确渲染。
 
-你可以多次使用lineTo来绘制各种形状，通过创建线条所走的“路径”来实现。让我们看看在清单6.7中绘制一个三角形，它使用了三次lineTo来绘制三角形的三条边。
+你可以多次使用`lineTo`来绘制各种形状，通过创建线条所走的“路径”来实现。让我们看看在清单6.7中绘制一个三角形，它使用了三次`lineTo`来绘制三角形的三条边。
 
 ![](img/de30ea99ecac39b49e690a84c48f43b9_168_0.png)
 
@@ -4548,9 +4641,9 @@ createRadialGradient(startX, startY, startRadius, endX, endY, endRadius)
 </script>
 ```
 
-要让线条形成一个路径，你需要使用两个新方法：beginPath和closePath。beginPath告诉canvas，之后的线条或曲线属于一个路径对象，当调用closePath方法时该路径被“闭合”。线条或曲线的路径随后可以作为一个对象来处理，类似于矩形，然后可以类似地进行样式化。
+要让线条形成一个路径，你需要使用两个新方法：`beginPath`和`closePath`。`beginPath`告诉canvas，之后的线条或曲线属于一个路径对象，当调用`closePath`方法时该路径被“闭合”。线条或曲线的路径随后可以作为一个对象来处理，类似于矩形，然后可以类似地进行样式化。
 
-使用清单6.7中的代码预览形状，你会注意到线条结束的地方（左上角）有点粗糙，因为线条没有平滑地衔接。嗯，有一个方法可以解决这个问题，lineCap，它接受butt、round或square值。这将封闭线条的末端，但三角形的其他顶点呢？你可以使用lineJoin方法，它接受bevel、miter或round值：
+使用清单6.7中的代码预览形状，你会注意到线条结束的地方（左上角）有点粗糙，因为线条没有平滑地衔接。嗯，有一个方法可以解决这个问题，`lineCap`，它接受`butt`、`round`或`square`值。这将封闭线条的末端，但三角形的其他顶点呢？你可以使用`lineJoin`方法，它接受`bevel`、`miter`或`round`值：
 
 ```
 canvas.lineCap = 'round';
@@ -4563,18 +4656,19 @@ canvas.lineJoin = 'round';
 
 在这个技巧中，你将使用Canvas API的线条绘制和路径功能，根据用户提供的边数和半径来绘制一个正多边形。因为多边形是通过使用路径特性创建的，所以你可以然后填充
 
-
-
 # 第6章 使用Canvas绘图
 
 ### 使用路径绘制多边形
 
 要创建多边形，JavaScript将根据数学公式计算顶点坐标，并在多边形的每个顶点之间绘制一条线。可以按照以下步骤并使用清单6.8中的代码来实现此效果：
 
-1.  使用`style`和`body`标签为画布创建清单6.8中的页面。
-2.  添加用于输入边数和半径的输入框，以及触发多边形绘制的按钮。
-3.  添加`init`函数、全局变量和加载事件处理器，以设置对画布和上下文的全局引用。
-4.  添加`drawPolygon`函数，这是绘制实际正多边形的工作函数。
+1. 使用`style`和`body`标签为画布创建清单6.8中的页面。
+
+2. 添加用于输入边数和半径的输入框，以及触发多边形绘制的按钮。
+
+3. 添加`init`函数、全局变量和加载事件处理器，以设置对画布和上下文的全局引用。
+
+4. 添加`drawPolygon`函数，这是绘制实际正多边形的工作函数。
 
 **清单6.8 使用路径绘制多边形**
 
@@ -4701,7 +4795,7 @@ canvas.arc(x, y, radius, startAngle, endAngle, antiClockwise(Boolean));
 
 在清单6.9中，你将`antiClockwise`的值设置为`true`。尝试将其设置为`false`，看看会绘制出什么。
 
-要绘制圆形，请使用`arc()`方法，起始角度为0，结束角度为2*Math.PI：
+要绘制圆形，请使用`arc()`方法，起始角度为0，结束角度为`2 * Math.PI`：
 
 ```
 canvas.arc(100, 150, 60, 0, 2 * Math.PI, false);
@@ -4777,30 +4871,30 @@ Canvas API中一个更有趣的领域是图像的引入。通过`drawImage`方�
 `drawImage`函数有三种不同的格式：
 
 - `drawImage(image, dx, dy)`：在位置x和y处显示提供的image URL中的图像。
+
 - `drawImage(image, dx, dy, dw, dh)`：根据显示宽度（dw）和显示高度（dh）对图像进行缩放。
+
 - `drawImage(image, sx, sy, sw, sh, dx, dy, dw, dh)`：根据提供的（sx、sy、sw和sh）的X、Y坐标和宽高裁剪图像的某个区域。
 
 图6.7 绘制到画布上的图像（HTML5标志归属W3C，www.w3.org）
 
-
-
 ## 第六章 使用 Canvas 绘图
 
-基础的 `drawImage` 方法接受图像的 URL，然后是显示图像的 x 和 y 坐标。图像不会以任何方式缩放或裁剪。在清单 6.11 中，使用了 `load` 事件来验证图像在尝试显示到画布之前已经加载完毕。如果你直接将图像 URL 传入变量，那么将不会显示任何内容，因为图像尚未加载到页面中。因此，为了确认图像在要求画布显示之前已加载，你需要监听图像加载事件。
+基础的`drawImage`方法接受图像的URL，然后是显示图像的x和y坐标。图像不会以任何方式缩放或裁剪。在清单6.11中，使用了`load`事件来验证图像在尝试显示到画布之前已经加载完毕。如果你直接将图像URL传入变量，那么将不会显示任何内容，因为图像尚未加载到页面中。因此，为了确认图像在要求画布显示之前已加载，你需要监听图像加载事件。
 
-在图 6.4 中，你可以看到图像刚好能放入我们的画布框架内；你可以通过使用带有缩放宽度和高度选项的 `drawImage` 方法来调整图像大小：
+在图6.4中，你可以看到图像刚好能放入我们的画布框架内；你可以通过使用带有缩放宽度和高度选项的`drawImage`方法来调整图像大小：
 
 ```
 drawImage(image, x, y, width, height);
 ```
 
-通过这种方式，脚本传入了额外的宽度和高度值，例如 `canvas.drawImage(canvasImage, 50, 50, 150, 211);`，这将把图像调整为 150 像素宽、211 像素高，并将其定位在距离顶部和左侧各 50 像素的位置。
+通过这种方式，脚本传入了额外的宽度和高度值，例如`canvas.drawImage(canvasImage, 50, 50, 150, 211);`，这将把图像调整为150像素宽、211像素高，并将其定位在距离顶部和左侧各50像素的位置。
 
 ## 中级技巧：裁剪图像
 
-你也可以使用包含裁剪属性的第三种方法签名来裁剪图像。裁剪属性包括图像中的起始 X 和 Y 位置，以及裁剪框的宽度和高度。这有点复杂，所以清单 6.12 在每个值旁边都有注释。
+你也可以使用包含裁剪属性的第三种方法签名来裁剪图像。裁剪属性包括图像中的起始X和Y位置，以及裁剪框的宽度和高度。这有点复杂，所以清单6.12在每个值旁边都有注释。
 
-### 清单 6.12 裁剪图像
+### 清单6.12 裁剪图像
 
 ```
 function cropImage() {
@@ -4819,7 +4913,9 @@ function cropImage() {
 canvasImage.addEventListener('load', cropImage, false);
 ```
 
-除了简单地将图像绘制到画布上，API 还提供了一种使用图像来填充给定形状的方法。使用 `createPattern` 方法，你可以用图像来填充形状的背景。首先，传入你想要显示的图像；然后使用该图像创建一个 pattern 变量。接着，使用坐标和大小绘制一个形状。然后，将形状的填充样式设置为已创建的 pattern，如下所示：
+除了简单地将图像绘制到画布上，API还提供了一种使用图像来填充给定形状的方法。使用`createPattern`方法，你可以用图像来填充形状的背景。首先，传入你想要显示的图像；然后使用该图像创建一个pattern变量。接着，使用坐标和大小绘制一个形状。然后，将形状的填充样式设置为已创建的pattern，如下所示：
+
+
 
 ```
 var canvasImage = new Image();
@@ -4836,7 +4932,7 @@ canvasImage.addEventListener('load',createImagePattern,false);
 canvasImage.src = 'images/html5-logo.png';
 ```
 
-`repeat` 参数可以具有以下值：
+`repeat`参数可以具有以下值：
 
 - `repeat`：在水平和垂直方向上重复图案
 - `repeat-x`：在水平方向上重复图案
@@ -4845,12 +4941,12 @@ canvasImage.src = 'images/html5-logo.png';
 
 ## 中级技巧：制作精灵图动画
 
-由于 `drawImage` 方法可用于裁剪源图像并将生成的子图像绘制到画布上，你可以利用相同的效果，通过循环播放精灵图像的帧来制作精灵图动画。在设定的时间间隔内，`drawImage` 方法被调用以每次渲染源图像的一个新帧，从而创建动画。在这个技巧中，你将使用一个包含三帧的简单精灵图来制作一个回收图标的动画。每次调用 `drawImage` 时，帧移动到下一帧。到达最后一帧后，帧移回源图像的第一帧。要创建此示例，请使用以下步骤和清单 6.13：
+由于`drawImage`方法可用于裁剪源图像并将生成的子图像绘制到画布上，你可以利用相同的效果，通过循环播放精灵图像的帧来制作精灵图动画。在设定的时间间隔内，`drawImage`方法被调用以每次渲染源图像的一个新帧，从而创建动画。在这个技巧中，你将使用一个包含三帧的简单精灵图来制作一个回收图标的动画。每次调用`drawImage`时，帧移动到下一帧。到达最后一帧后，帧移回源图像的第一帧。要创建此示例，请使用以下步骤和清单 6.13：
 
-1.  使用清单 6.13 中用于画布的 `style` 和 `body` 标签创建页面，并包含启动和停止动画的按钮。
-2.  添加全局变量定义、`init` 函数和 `window.addEventHandler` 事件处理器。
-3.  添加 `animateSprite` 函数，用于绘制裁剪后的图像。
-4.  添加 `startAnimation` 和 `stopAnimation` 函数，它们分别与开始和停止动画按钮关联。
+1. 使用清单 6.13 中用于画布的`style`和`body`标签创建页面，并包含启动和停止动画的按钮。
+2. 添加全局变量定义、`init`函数和`window.addEventHandler`事件处理器。
+3. 添加`animateSprite`函数，用于绘制裁剪后的图像。
+4. 添加`startAnimation`和`stopAnimation`函数，它们分别与开始和停止动画按钮关联。
 
 ### 清单 6.13 使用图像裁剪与精灵图
 
@@ -4941,48 +5037,45 @@ window.addEventListener('load',init,false);
 </html>
 ```
 
-在用户点击开始按钮后，`startAnimation` 函数被调用，该函数设置一个 100 毫秒的间隔来启动 `animateSprite` 函数。这是动画计时的核心。每隔 100 毫秒，`animateSprite` 函数将被调用，直到 `stopAnimation` 函数被调用并清除该间隔。每次运行 `animateSprite` 函数时，都会显示回收图像的一个切片。回收图像宽 300 像素，包含三个 100x100 像素的切片。每次绘制切片后，切片的水平位置向右移动 100 像素，如图 6.8 所示。如果切片已经在最后 100 像素处，则将切片移回 0。
+在用户点击开始按钮后，`startAnimation`函数被调用，该函数设置一个 100 毫秒的间隔来启动`animateSprite`函数。这是动画计时的核心。每隔 100 毫秒，`animateSprite`函数将被调用，直到`stopAnimation`函数被调用并清除该间隔。每次运行`animateSprite`函数时，都会显示回收图像的一个切片。回收图像宽 300 像素，包含三个 100x100 像素的切片。每次绘制切片后，切片的水平位置向右移动 100 像素，如图 6.8 所示。如果切片已经在最后 100 像素处，则将切片移回 0。
 
 ![图 6.8](img/de30ea99ecac39b49e690a84c48f43b9_180_0.png)
 
 图 6.8 精灵图像的切片帧在每次循环中显示
 
-请注意，你无需在每次 `drawImage` 调用前清除画布，因为精灵图像具有不透明背景，并且你每次都在整个 100x100 像素的画布上绘制。
+请注意，你无需在每次`drawImage`调用前清除画布，因为精灵图像具有不透明背景，并且你每次都在整个 100x100 像素的画布上绘制。
 
 > **注意**
 
-尽管 `canvas` 元素本身不支持图层，但你可以模仿图层的功能。由于画布是页面上一个可以设置样式的元素，默认具有透明背景，因此没有任何理由阻止开发者定义多个相互层叠的 `canvas` 元素。要控制页面上的图层位置，可以使用元素上的 `z-index` 样式属性。想象一个游戏，它有一个背景画布，而角色精灵被加载在一个位于另一个画布之上较小的画布中，这并非牵强附会。如果你实现了多画布页面，请注意性能问题，因为必须保持对各个 `canvas` 元素的引用才能使用它们。
+尽管`canvas`元素本身不支持图层，但你可以模仿图层的功能。由于画布是页面上一个可以设置样式的元素，默认具有透明背景，因此没有任何理由阻止开发者定义多个相互层叠的`canvas`元素。要控制页面上的图层位置，可以使用元素上的`z-index`样式属性。想象一个游戏，它有一个背景画布，而角色精灵被加载在一个位于另一个画布之上较小的画布中，这并非牵强附会。如果你实现了多画布页面，请注意性能问题，因为必须保持对各个`canvas`元素的引用才能使用它们。
 
 ## 画布变换
 
 除了可用的画布工具和效果外，还有一些变换工具可用。以下是可用的三种变换工具：
 
 - `rotate(angle)`：旋转画布的底层上下文网格，使得任何添加到旋转上下文的内容对用户来说都呈现旋转状态。角度以弧度为单位，顺时针测量。
-
-
-
-## 第6章 使用 Canvas 绘图
-
-+   - `scale(x, y)`：允许开发者控制 x 和 y 单位的比例。该方法接受 x 单位比例和 y 单位比例作为参数。
+- `scale(x, y)`：允许开发者控制 x 和 y 单位的比例。该方法接受 x 单位比例和 y 单位比例作为参数。
 - `transform`：此转换允许开发者直接访问变换矩阵。
 
-与 canvas 相关联的有三种方法，用于协助执行变换。`translate(x, y)` canvas 方法允许您将 canvas 的原点移动到新位置。因此，如果您调用 `translate(100,100)`，新的原点将向下移动 100 像素，向右移动 100 像素，并成为您的新原点。这对于旋转等变换极为重要，因为原点是执行旋转的中心点。有两种方法可以将原点返回到原始位置。第一种是简单地再次使用 `translate` 方法，以相反方向返回位置。第二种也是首选方法是使用 `save` 和 `restore` canvas 方法。
+与 canvas 相关联的有三种方法，用于协助执行变换。`translate(x, y)` canvas 方法允许您将 canvas 的原点移动到新位置。因此，如果您调用`translate(100,100)`，新的原点将向下移动 100 像素，向右移动 100 像素，并成为您的新原点。这对于旋转等变换极为重要，因为原点是执行旋转的中心点。有两种方法可以将原点返回到原始位置。第一种是简单地再次使用`translate`方法，以相反方向返回位置。第二种也是首选方法是使用`save`和`restore` canvas 方法。
 
-`save` 和 `restore` 方法允许您在任何变换之前保存当前上下文，然后在稍后将上下文恢复到保存的版本。我们将在各种示例中结合使用这种模式与 `rotate` 方法，来演示使用 canvas 进行变换。`rotate` 方法接受以弧度为单位的数值来旋转 canvas 方向。要将角度度数转换为弧度，请使用以下公式：
+`save`和`restore`方法允许您在任何变换之前保存当前上下文，然后在稍后将上下文恢复到保存的版本。我们将在各种示例中结合使用这种模式与`rotate`方法，来演示使用 canvas 进行变换。`rotate`方法接受以弧度为单位的数值来旋转 canvas 方向。要将角度度数转换为弧度，请使用以下公式：
+
 弧度数 = 角度度数 * Pi / 180
 
-通过使用诸如 `rotate` 和 `scale` 方法之类的变换，您可以使用 canvas 创建有趣的动画，如下一个示例所示。
+通过使用诸如`rotate`和`scale`方法之类的变换，您可以使用 canvas 创建有趣的动画，如下一个示例所示。
 
 > **注意**
+
 与任何可基于基本组件进行扩展和重复功能（如绘制正方形、圆形等）的 API 基础调用集一样，各种开发者已经创建了扩展的调用库。反过来，其中许多库已经产品化，并可以为用更简单的调用封装 canvas 功能提供基础。此外，这些库通常扩展了功能，使更复杂的特性更容易使用。您可能想要查看的一些库包括 netron、canvas toolkit、EaselJS、jCanvassScript 和 gury。随着 HTML5 canvas 的日益普及，我们确信库的数量和广度将继续增长。
 
 ## 高级示例：为图像添加动画
 
 在本示例中，您将使用两个步骤来使一个齿轮图像从左到右在 canvas 上“滚动”。第一步是通过每隔一定间隔向右重绘图像来移动图像。第二步是在每次移动图像时将其旋转一定角度。如前所述，旋转效果用于旋转绘图的上下文。在本例中，您将保存默认的 canvas 上下文，然后旋转上下文，绘制图像，最后恢复上下文。通过这种方式并结合这些方法，清单 6.14 中的代码将创造出齿轮图像在屏幕上滚动的错觉。
 
-+   1. 使用 `style` 和 `body` 标签创建清单 6.14 中的页面。
-2. 添加全局变量定义、`init` 函数和 `window.addEventListener` 事件处理器。
-3. 添加 `moveGear` 函数，该函数负责旋转、移动和绘制齿轮图像。
+1. 使用`style`和`body`标签创建清单 6.14 中的页面。
+2. 添加全局变量定义、`init`函数和`window.addEventListener`事件处理器。
+3. 添加`moveGear`函数，该函数负责旋转、移动和绘制齿轮图像。
 
 ### 清单 6.14 移动和旋转图像
 
@@ -5096,9 +5189,9 @@ window.addEventListener('load',init,false);
 </html>
 ```
 
-当图像加载后调用 `moveGear` 函数时，代码执行的第一个操作是通过调用 `clearRect` 清除 canvas。您需要这样做，否则先前绘制的图像“残影”将留在 canvas 上。接下来，脚本保存当前上下文，增加水平位置，然后使用 `translate` 函数将原点定位到新位置。然后，脚本根据新原点，使用之前通过 `rotate` 方法设置的 `stepDegrees` 来旋转图像。接着绘制图像，之后恢复上下文方向以便进行下一次绘图操作。
+当图像加载后调用`moveGear`函数时，代码执行的第一个操作是通过调用`clearRect`清除 canvas。您需要这样做，否则先前绘制的图像“残影”将留在 canvas 上。接下来，脚本保存当前上下文，增加水平位置，然后使用`translate`函数将原点定位到新位置。然后，脚本根据新原点，使用之前通过`rotate`方法设置的`stepDegrees`来旋转图像。接着绘制图像，之后恢复上下文方向以便进行下一次绘图操作。
 
-在将齿轮图像绘制到新位置和角度后，您通过比较水平位置和 canvas 宽度来检查图像是否已移动到 canvas 的右边缘之外。如果已移出边缘，则停止动画。但是，如果图像仍在 canvas 可视区域内，则脚本会增加步数计数器，并设置下一个超时时间以再次启动 `moveGear` 函数。
+在将齿轮图像绘制到新位置和角度后，您通过比较水平位置和 canvas 宽度来检查图像是否已移动到 canvas 的右边缘之外。如果已移出边缘，则停止动画。但是，如果图像仍在 canvas 可视区域内，则脚本会增加步数计数器，并设置下一个超时时间以再次启动`moveGear`函数。
 
 可以通过更改脚本顶部的动画变量来调整任何动画设置。图 6.9 显示了图像在 canvas 中的不同阶段。
 
@@ -5107,22 +5200,23 @@ window.addEventListener('load',init,false);
 图 6.9 精灵图像在每次循环中显示时的切片帧
 
 > **注意**
-您可以通过捕获 `mouseover` 和 `click` 等鼠标事件与 canvas 进行交互，无论是玩游戏还是移动形状。事件提供的坐标可以通过偏移 X 和 Y 坐标映射到页面上 canvas 的位置。例如，如果鼠标单击事件的 X,Y 为 150,200，而 canvas 的偏移量 x 为 100，y 为 100，那么鼠标单击在 canvas 内的坐标为 50,100。知道了这个 canvas 网格中的坐标，您就可以确定该点击是否发生在绘制在 canvas 上的特定形状上。
+
+您可以通过捕获`mouseover`和`click`等鼠标事件与 canvas 进行交互，无论是玩游戏还是移动形状。事件提供的坐标可以通过偏移 X 和 Y 坐标映射到页面上 canvas 的位置。例如，如果鼠标单击事件的 X,Y 为 150,200，而 canvas 的偏移量 x 为 100，y 为 100，那么鼠标单击在 canvas 内的坐标为 50,100。知道了这个 canvas 网格中的坐标，您就可以确定该点击是否发生在绘制在 canvas 上的特定形状上。
 
 ## 高级示例：为垂直柱状图添加动画
 
 在本章的最后一个示例中，您将使用 canvas 工具以及一些效果和变换，从一组示例 JSON 数据创建一个垂直柱状图。当图表加载时，垂直柱条将根据一些预设的动画设置（如每列增长的速度和距离）增长到其定义值。图 6.10 显示了柱条动画完成后，使用示例数据输出的结果。要创建此示例，请按照以下步骤和清单 6.15 中的代码操作：
 
-+   1. 创建清单 6.15 中的页面，其中 `style` 和 `body` 标签用于 canvas，其 `id` 为 `graph`。
-2. 添加全局变量定义，包括 `chartData` JSON 对象、`initGraph` 函数和 `window.addEventListener` 事件处理器。
-3. 添加 `initSettings` 函数，该函数设置图表的所有属性，包括柱条的数量和尺寸。
-4. 添加 `drawAxis` 函数，该函数将添加 x 轴和 y 轴线、轴上的数据标记和标题。
-5. 添加 `growBars` 函数，该函数用于将垂直柱条的增长动画到其正确的高度。
-6. 添加 `drawBar` 辅助函数，该函数执行在 canvas 上绘制柱条的实际操作。
-
-
+1. 创建清单 6.15 中的页面，其中`style`和`body`标签用于 canvas，其`id`为`graph`。
+2. 添加全局变量定义，包括`chartData` JSON 对象、`initGraph`函数和`window.addEventListener`事件处理器。
+3. 添加`initSettings`函数，该函数设置图表的所有属性，包括柱条的数量和尺寸。
+4. 添加`drawAxis`函数，该函数将添加 x 轴和 y 轴线、轴上的数据标记和标题。
+5. 添加`growBars`函数，该函数用于将垂直柱条的增长动画到其正确的高度。
+6. 添加`drawBar`辅助函数，该函数执行在 canvas 上绘制柱条的实际操作。
 
 # 第6章 使用Canvas绘图
+
+
 
 ![](img/de30ea99ecac39b49e690a84c48f43b9_186_0.png)
 
@@ -5358,11 +5452,10 @@ window.addEventListener('load',initGraph,false);
 要改变条形的速度或增长率，你只需在`initSettings`函数中更改`numSteps`和`growSpeed`变量。
 
 > **提示**
+
 > 使用HTML5 canvas创建动画甚至交互式图表非常简单，正如你在最后一个示例中看到的那样。如果你想看到使用HTML5 canvas创建图表的无尽可能性——从基本的折线图到复杂的玫瑰图——你将想查看RGraph JavaScript和HTML5 canvas图表库www.rgraph.net。该库的开发人员已经完成了繁重的工作，只要你遵循许可协议，你就可以根据需要将其合并到你自己的项目中。无论哪种方式，该库都展示了将canvas与JavaScript结合使用的潜力。
 
 ![](img/de30ea99ecac39b49e690a84c48f43b9_191_0.png)
-
-
 
 ## 总结
 
@@ -5382,6 +5475,8 @@ window.addEventListener('load',initGraph,false);
 
 ### 代码清单 7.1 video 元素的基础使用
 
+
+
 ```html
 <!DOCTYPE html>
 <html lang="en">
@@ -5399,13 +5494,13 @@ window.addEventListener('load',initGraph,false);
 </html>
 ```
 
-很简单，不是吗？在基础层面上，这就是让 `video` 元素在 HTML5 中工作所需的全部。然而，遗憾的是，实际情况并不完全如此简单。但既然已经引起了你的兴趣，在你开始使用视频之前，还有一些问题需要了解。
+很简单，不是吗？在基础层面上，这就是让`video`元素在 HTML5 中工作所需的全部。然而，遗憾的是，实际情况并不完全如此简单。但既然已经引起了你的兴趣，在你开始使用视频之前，还有一些问题需要了解。
 
 ## 浏览器和设备支持
 
-表 7.1 列出了 `video` 元素的浏览器兼容性。它假设的是撰写时的浏览器最新版本以及此后发布的所有版本。
+表 7.1 列出了`video`元素的浏览器兼容性。它假设的是撰写时的浏览器最新版本以及此后发布的所有版本。
 
-**表 7.1 `video` 元素的支持情况**
+**表 7.1 `video`元素的支持情况**
 
 | 浏览器/设备 | 支持版本 |
 |---|---|
@@ -5417,7 +5512,7 @@ window.addEventListener('load',initGraph,false);
 | Opera | 10.6+ |
 | Safari | 4.0+ |
 
-所以，一方面，当前浏览器对 `video` 元素的支持非常好；但另一方面，Internet Explorer 6、7 和 8 版本并不原生支持 `video` 元素，而它们的市场份额加起来非常大。本章稍后将展示如何为那些尚不支持 `video` 元素的浏览器和设备提供回退内容。但在我们深入探讨之前，你需要先理解不同的视频类型和编解码器。
+所以，一方面，当前浏览器对`video`元素的支持非常好；但另一方面，Internet Explorer 6、7 和 8 版本并不原生支持`video`元素，而它们的市场份额加起来非常大。本章稍后将展示如何为那些尚不支持`video`元素的浏览器和设备提供回退内容。但在我们深入探讨之前，你需要先理解不同的视频类型和编解码器。
 
 ## HTML5 与视频编解码器
 
@@ -5447,13 +5542,13 @@ Internet Explorer 9 原生支持 H.264 编解码器，但只有通过单独安�
 
 ## 中级技巧：为所有浏览器启用视频
 
-正如本章第一个技巧中提到的，*video* 元素最简单的用法是使用以下标记：
+正如本章第一个技巧中提到的，`video`元素最简单的用法是使用以下标记：
 
 ```html
 <video src="mymovie.mp4"></video>
 ```
 
-由于浏览器和编解码器问题，你必须在同一个 *video* 元素中提供不同格式的视频，这通过使用多个 *source* 元素来实现。为了让视频在关键浏览器的最新版本中工作，你需要指定一个 .mp4 格式和一个 .webm 或 .ogv 格式的文件，这正是你在代码清单 7.2 中所做的。
+由于浏览器和编解码器问题，你必须在同一个`video`元素中提供不同格式的视频，这通过使用多个`source`元素来实现。为了让视频在关键浏览器的最新版本中工作，你需要指定一个 .mp4 格式和一个 .webm 或 .ogv 格式的文件，这正是你在代码清单 7.2 中所做的。
 
 ### 代码清单 7.2 使用 Source 元素显示不同视频格式
 
@@ -5465,20 +5560,17 @@ Internet Explorer 9 原生支持 H.264 编解码器，但只有通过单独安�
 </video>
 ```
 
-
-
-## 清单 7.2
-
 > **注意**
+
 在理想情况下，浏览器和设备会自动选择它们能播放的第一个文件。虽然这在主流桌面和笔记本电脑浏览器上通常可行，但 iPad 浏览器存在一个 bug，导致它只能加载第一个源视频文件。因此，必须将 .mp4 文件放在首位，如清单 7.2 所示。
 
-`video` 元素有 `height` 和 `width` 值，尽管你可以使用 CSS 来设置高度和宽度。该元素还有一个 `controls` 属性，用于显示默认的视频控件。在清单 7.2 中，`video` 元素内有三个 `source` 元素，每个 `source` 元素都链接到一个单独的视频。每个 `source` 都有一个 `type` 属性，因为此属性告诉浏览器所提供的文件类型。如果浏览器不识别该类型，它将不会下载该文件，这一点很重要，因为它可以节省带宽并加快页面加载速度。浏览器会选择它能播放的第一个文件。
+`video`元素有`height`和`width`值，尽管你可以使用 CSS 来设置高度和宽度。该元素还有一个`controls`属性，用于显示默认的视频控件。在清单 7.2 中，`video`元素内有三个`source`元素，每个`source`元素都链接到一个单独的视频。每个`source`都有一个`type`属性，因为此属性告诉浏览器所提供的文件类型。如果浏览器不识别该类型，它将不会下载该文件，这一点很重要，因为它可以节省带宽并加快页面加载速度。浏览器会选择它能播放的第一个文件。
 
-清单 7.2 提供的视频可以在 Chrome、Firefox、Internet Explorer 9 和 Safari 上播放，并适用于 iPad、iPhone 和最新的 Android (2.3) 设备，所有这些都无需第三方组件，这非常棒。但是，对于使用 Internet Explorer 6、7 和 8 的用户，这些浏览器当时不支持 `video` 标签，你能提供什么呢？
+清单 7.2 提供的视频可以在 Chrome、Firefox、Internet Explorer 9 和 Safari 上播放，并适用于 iPad、iPhone 和最新的 Android (2.3) 设备，所有这些都无需第三方组件，这非常棒。但是，对于使用 Internet Explorer 6、7 和 8 的用户，这些浏览器当时不支持`video`标签，你能提供什么呢？
 
 ### 为旧版浏览器添加后备内容
 
-在 `source` 元素之后，你可以放入一些内容，当用户的浏览器无法处理 `video` 元素时向他们发出提示。将该内容放在 `video` 元素内部，你有多种选择来决定提供什么信息。你可以提供一些简单的消息，如下所示：
+在`source`元素之后，你可以放入一些内容，当用户的浏览器无法处理`video`元素时向他们发出提示。将该内容放在`video`元素内部，你有多种选择来决定提供什么信息。你可以提供一些简单的消息，如下所示：
 
 ```
 <p>抱歉，您的浏览器版本太旧了。请升级。</p>
@@ -5506,7 +5598,7 @@ Internet Explorer 9 原生支持 H.264 编解码器，但只有通过单独安�
 </object>
 ```
 
-因此，将所有这些整合起来就得到了清单 7.4 中的代码，它通过原生的 video 元素或使用 Flash 后备方案，在所有当前主流浏览器中提供视频。
+因此，将所有这些整合起来就得到了清单 7.4 中的代码，它通过原生的`video`元素或使用 Flash 后备方案，在所有当前主流浏览器中提供视频。
 
 ### 清单 7.4 包含后备方案的跨浏览器视频
 
@@ -5564,6 +5656,7 @@ Internet Explorer 9 原生支持 H.264 编解码器，但只有通过单独安�
 ```
 
 > **提示**
+
 在 HTML5 视频开发中，可能会遇到的一个问题是 MIME 类型问题。在为本书开发示例时，我们遇到一个问题：当 .ogv 和 .webm 文件上传到 Web 服务器后，在 Firefox 中无法播放。这些视频在我们的本地机器上播放正常，当放到 Web 服务器（Apache）上时，在 Opera 和 Chrome 中也能正常运行；然而，.ogv 和 .webm 文件在 Firefox 中却无法播放。这是因为 Firefox 需要知道服务器支持特定的 MIME 类型。并非所有服务器都支持这些新的视频类型，为了支持它们，你必须进行适当的配置更改，例如根据你的服务器平台，在 .htaccess 或 httpd.conf 文件中添加以下几行：
 
 ```
@@ -5576,51 +5669,51 @@ AddType video/webm .webm
 
 ## 新的视频属性
 
-`video` 元素有几个新的可用属性。在前面的示例中，你使用了 `width` 和 `height` 属性，这些属性不是必需的，但我们建议设置这些值，因为这有助于加载时间。设置这些值不会拉伸或扭曲你的视频，因为 `video` 元素会将视频放在框的中间，所以如果你将高度和宽度设置为 200 x 1000，浏览器会相应地缩小视频，同时保持其比例。
+`video`元素有几个新的可用属性。在前面的示例中，你使用了`width`和`height`属性，这些属性不是必需的，但我们建议设置这些值，因为这有助于加载时间。设置这些值不会拉伸或扭曲你的视频，因为`video`元素会将视频放在框的中间，所以如果你将高度和宽度设置为 200 x 1000，浏览器会相应地缩小视频，同时保持其比例。
 
-### `src` 属性
+### `src`属性
 
-本章开头的清单 7.1 展示了一个非常基础的 `video` 元素示例，它包含一个 `src` 属性。但使用 `src` 意味着你只能限于一个视频文件，并且由于编解码器和浏览器的问题，这使得它在目前几乎没有用处。与其使用 `src`，不如考虑在 `video` 内部使用 `source` 元素，如清单 7.4 所示，这样你就可以使视频在各种浏览器中工作。
+本章开头的清单 7.1 展示了一个非常基础的`video`元素示例，它包含一个`src`属性。但使用`src`意味着你只能限于一个视频文件，并且由于编解码器和浏览器的问题，这使得它在目前几乎没有用处。与其使用`src`，不如考虑在`video`内部使用`source`元素，如清单 7.4 所示，这样你就可以使视频在各种浏览器中工作。
 
-### `poster` 属性
+### `poster`属性
 
-`poster` 属性用于在视频下载期间或等待开始播放时，显示一张图片代替视频。`poster` 图片旨在让观众对视频的内容或主题有一个概念。该图片可以是 .gif、.jpg 或 .png 文件（尽管透明的 PNG 不会叠加在视频上）。如果没有 `poster`，浏览器只会显示视频的第一帧，这可能适合你的需要。如果不适合，下面是设置 `poster` 图片的方法，图 7.1 展示了它在页面加载时的样子：
+`poster`属性用于在视频下载期间或等待开始播放时，显示一张图片代替视频。`poster`图片旨在让观众对视频的内容或主题有一个概念。该图片可以是 .gif、.jpg 或 .png 文件（尽管透明的 PNG 不会叠加在视频上）。如果没有`poster`，浏览器只会显示视频的第一帧，这可能适合你的需要。如果不适合，下面是设置`poster`图片的方法，图 7.1 展示了它在页面加载时的样子：
 
 ```
 <video width="640" height="480" poster="poster.gif">
 ```
 
-![在 Google Chrome 中显示的 `poster` 图片](img/de30ea99ecac39b49e690a84c48f43b9_200_0.png)
+![在 Google Chrome 中显示的`poster`图片](img/de30ea99ecac39b49e690a84c48f43b9_200_0.png)
 
-图 7.1 在 Google Chrome 中显示的 `poster` 图片
+图 7.1 在 Google Chrome 中显示的`poster`图片
 
+### `preload`属性
 
-
-### `preload` 属性
-
-如果页面上有一个相对较大的视频，或者你确信用户会想观看你嵌入的视频（例如 YouTube 页面），那么你可以让浏览器在页面加载时开始下载该视频。`preload` 属性有三个可能的值：
+如果页面上有一个相对较大的视频，或者你确信用户会想观看你嵌入的视频（例如 YouTube 页面），那么你可以让浏览器在页面加载时开始下载该视频。`preload`属性有三个可能的值：
 
 ```
 preload="auto"
 ```
 
-`auto`，或者你只需写 `preload`，这会告诉浏览器在页面加载时下载视频。
+
+
+`auto`，或者你只需写`preload`，这会告诉浏览器在页面加载时下载视频。
 
 ```
 preload="none"
 ```
 
-`preload="none"` 告诉浏览器不要下载视频。只有当用户开始播放视频时，它才会开始下载。不过目前，似乎只有 Firefox 4 支持这一项。
+`preload="none"`告诉浏览器不要下载视频。只有当用户开始播放视频时，它才会开始下载。不过目前，似乎只有 Firefox 4 支持这一项。
 
 ```
 preload="metadata"
 ```
 
-`metadata` 属性会检索关于视频的信息（元数据），包括视频时长、第一帧、视频尺寸和音轨列表。浏览器在用户开始播放视频本身之前，不应该下载视频。
+`metadata`属性会检索关于视频的信息（元数据），包括视频时长、第一帧、视频尺寸和音轨列表。浏览器在用户开始播放视频本身之前，不应该下载视频。
 
-### `audio` 属性（目前不支持）
+### `audio`属性（目前不支持）
 
-虽然浏览器目前不支持，但 `audio` 属性的存在是为了让你可以控制视频的默认音量。目前，它只有一个指定的值：`muted`。使用时，它看起来像这样：
+虽然浏览器目前不支持，但`audio`属性的存在是为了让你可以控制视频的默认音量。目前，它只有一个指定的值：`muted`。使用时，它看起来像这样：
 
 ```
 <video height="300" width="300" audio="muted">
@@ -5628,23 +5721,23 @@ preload="metadata"
 </video>
 ```
 
-其思路是，如果使用了这个属性，那么视频默认将是静音的，用户需要手动调高音量。将来有可能可以填入其他值，例如 `audio="2"` 或 `audio="low"`，以控制默认音频音量。在后面的章节中，你将看到如何通过 JavaScript 更改音量。
+其思路是，如果使用了这个属性，那么视频默认将是静音的，用户需要手动调高音量。将来有可能可以填入其他值，例如`audio="2"`或`audio="low"`，以控制默认音频音量。在后面的章节中，你将看到如何通过 JavaScript 更改音量。
 
-#### loop 属性
+#### `loop`属性
 
-如果 `video` 具有 `loop` 属性，那么当视频播放结束时，它将循环回到开头并再次播放。这是一个布尔属性，所以它要么开启，要么关闭。除了奇怪的 Firefox 4 当前测试版外，所有主流浏览器都支持此属性。
+如果`video`具有`loop`属性，那么当视频播放结束时，它将循环回到开头并再次播放。这是一个布尔属性，所以它要么开启，要么关闭。除了奇怪的 Firefox 4 当前测试版外，所有主流浏览器都支持此属性。
 
-### autoplay 属性
+### `autoplay`属性
 
-`autoplay` 是一个布尔属性，它将强制浏览器在页面加载时开始下载并播放视频。例如，YouTube 就是这样做的，视频广告也经常自动开始播放。关于视频自动播放，存在可访问性和可用性方面的担忧，更不用说这可能会很烦人。但规范中之所以包含它，是因为你现在有了一个标准的方式来实现这一点（如果你*真的*需要的话）。你不必借助各种 JavaScript 技巧来达到这个效果。请注意，已经有各种浏览器扩展可以下载，用于禁用自动播放。
+`autoplay`是一个布尔属性，它将强制浏览器在页面加载时开始下载并播放视频。例如，YouTube 就是这样做的，视频广告也经常自动开始播放。关于视频自动播放，存在可访问性和可用性方面的担忧，更不用说这可能会很烦人。但规范中之所以包含它，是因为你现在有了一个标准的方式来实现这一点（如果你*真的*需要的话）。你不必借助各种 JavaScript 技巧来达到这个效果。请注意，已经有各种浏览器扩展可以下载，用于禁用自动播放。
 
 > **注意**
 
-在 iOS 中，`autoplay` 和 `preload` 属性已被故意禁用。这是出于对用户潜在成本和加载速度问题的考虑。在用户手动选择开始播放视频之前，不会下载任何数据。有一些技术，嗯，可以说是变通方法，可以绕过这个限制。但由于它们是非官方方法，不应该被使用，本书也不会涉及。
+在 iOS 中，`autoplay`和`preload`属性已被故意禁用。这是出于对用户潜在成本和加载速度问题的考虑。在用户手动选择开始播放视频之前，不会下载任何数据。有一些技术，嗯，可以说是变通方法，可以绕过这个限制。但由于它们是非官方方法，不应该被使用，本书也不会涉及。
 
-### controls 属性
+### `controls`属性
 
-`controls` 属性为你的视频添加了默认的浏览器特定控件，包括播放/暂停按钮、进度条、时长/已播放时间信息和音量控制。
+`controls`属性为你的视频添加了默认的浏览器特定控件，包括播放/暂停按钮、进度条、时长/已播放时间信息和音量控制。
 
 该属性是一个布尔属性，所以你要么包含它，要么不包含。以下是一个示例：
 
@@ -5654,7 +5747,7 @@ preload="metadata"
 </video>
 ```
 
-如果未包含，则会显示视频的第一帧或 `poster` 图片。用户必须右键点击视频并从选项列表中选择。因此，最好使用 `controls` 属性提供控件。如果你想，可以使用自定义控件，我们将在本章后面讨论这一点。图 7.2 显示了各大浏览器中的默认控件。
+如果未包含，则会显示视频的第一帧或`poster`图片。用户必须右键点击视频并从选项列表中选择。因此，最好使用`controls`属性提供控件。如果你想，可以使用自定义控件，我们将在本章后面讨论这一点。图 7.2 显示了各大浏览器中的默认控件。
 
 > **注意**
 
@@ -5668,23 +5761,27 @@ preload="metadata"
 
 你可以做一些事情来提高视频的可访问性。例如，你可以启用字幕、隐藏式字幕和描述，以帮助耳聋或听力障碍者。
 
-有一个 `track` 元素可用，你可以用它来使用不同类型的文件。以下是其基本用法：
+有一个`track`元素可用，你可以用它来使用不同类型的文件。以下是其基本用法：
 
 ```
 <track src="subtitles.vtt" kind="subtitles" srclang="en" label="English">
 ```
 
-对于 `kind` 属性，你可以使用不同的值：
+对于`kind`属性，你可以使用不同的值：
 
-- subtitles：对话的转录或翻译
-- captions：类似于字幕，但也包括音效和其他音频信息
-- descriptions：旨在成为单独的音频文件，描述视频内容
-- chapters：旨在帮助用户导航视频
-- metadata：关于视频的信息和内容，不打算显示给观众
+- `subtitles`：对话的转录或翻译
 
-`track` 元素是 HTML5 规范中非常近期的新增内容，字幕/隐藏式字幕的标准最初是 WebSRT，但现在是 Web Video Text Track (WebVTT)。由于这项技术很新，而且工作量巨大，目前还没有可用的示例或浏览器实现。不过，你可以使用 JavaScript 和 WebVTT (.vtt) 文件来显示字幕。清单 7.6 是一个基本示例，包含来自 WebVTT 文件的一些示例数据（基于当前规范）。你可以使用像 Notepad 这样的基本文本编辑器创建和编辑 .vtt 文件。.vtt 文件包含一个步骤编号，然后是它要显示的时段，接着是要显示的内容。
+- `captions`：类似于字幕，但也包括音效和其他音频信息
 
-清单 7.6  示例 .vtt 文件内容
+- `descriptions`：旨在成为单独的音频文件，描述视频内容
+
+- `chapters`：旨在帮助用户导航视频
+
+- `metadata`：关于视频的信息和内容，不打算显示给观众
+
+`track`元素是 HTML5 规范中非常近期的新增内容，字幕/隐藏式字幕的标准最初是 WebSRT，但现在是 Web Video Text Track (WebVTT)。由于这项技术很新，而且工作量巨大，目前还没有可用的示例或浏览器实现。不过，你可以使用 JavaScript 和 WebVTT (`.vtt`) 文件来显示字幕。清单 7.6 是一个基本示例，包含来自 WebVTT 文件的一些示例数据（基于当前规范）。你可以使用像 Notepad 这样的基本文本编辑器创建和编辑`.vtt`文件。`.vtt`文件包含一个步骤编号，然后是它要显示的时段，接着是要显示的内容。
+
+清单 7.6  示例`.vtt`文件内容
 
 ```
 0
@@ -5700,7 +5797,7 @@ This is the second bit
 And as you might have guessed, this is the third bit of the subtitles
 ```
 
-由于目前还没有浏览器原生支持 `track` 元素，你需要一个 JavaScript 插件来完成这项工作。在清单 7.7 中，你使用的是一个名为 VideoSub 的 jQuery 插件，可从 http://github.com/icelab/jquery-videosub 获取，它基于 Thomas Sturm 的原始 MooTools 脚本 (http://storiesinflight.com/js_videosub)。该插件将视频包装在一个 div 中，然后添加一个包含字幕的额外 div。在这个例子中，你默认隐藏字幕，并添加一个链接来切换字幕显示。图 7.3 显示了字幕显示效果的示例。完整代码在清单 7.7 中。
+由于目前还没有浏览器原生支持`track`元素，你需要一个 JavaScript 插件来完成这项工作。在清单 7.7 中，你使用的是一个名为 VideoSub 的 jQuery 插件，可从 http://github.com/icelab/jquery-videosub 获取，它基于 Thomas Sturm 的原始 MooTools 脚本 (http://storiesinflight.com/js_videosub)。该插件将视频包装在一个`div`中，然后添加一个包含字幕的额外`div`。在这个例子中，你默认隐藏字幕，并添加一个链接来切换字幕显示。图 7.3 显示了字幕显示效果的示例。完整代码在清单 7.7 中。
 
 ![](img/de30ea99ecac39b49e690a84c48f43b9_204_0.png)
 
@@ -5771,9 +5868,7 @@ a#subtitlestoggle:hover {
 </style>
 ```
 
-一个值得留意的可能发展是，是否应该为 `poster` 图片提供 `alt` 文本。目前尚未最终确定，但存在一些可访问性问题，因此 `poster` 属性未来可能会有所改变。
-
-
+一个值得留意的可能发展是，是否应该为`poster`图片提供`alt`文本。目前尚未最终确定，但存在一些可访问性问题，因此`poster`属性未来可能会有所改变。
 
 ## 第7章 使用HTML5嵌入视频
 
@@ -5823,61 +5918,111 @@ a#subtitlestoggle:hover {
 
 HTML5为多媒体提供了庞大且令人兴奋的API。使用该API和JavaScript，你可以操控网页中的视频。以下是可用的API事件列表：
 
-- abort
-- canplay
-- canplaythrough
-- canshowcurrentframe
-- dataunavailable
-- durationchange
-- emptied
-- empty
-- ended
-- error
-- loadeddata
-- loadedmetadata
-- loadstart
-- pause
-- play
-- playing
-- progress
-- ratechange
-- seeked
-- seeking
-- suspend
-- timeupdate
-- volumechange
-- waiting
+- `abort`
+
+- `canplay`
+
+- `canplaythrough`
+
+- `canshowcurrentframe`
+
+- `dataunavailable`
+
+- `durationchange`
+
+- `emptied`
+
+- `empty`
+
+- `ended`
+
+- `error`
+
+- `loadeddata`
+
+- `loadedmetadata`
+
+- `loadstart`
+
+- `pause`
+
+- `play`
+
+- `playing`
+
+- `progress`
+
+- `ratechange`
+
+- `seeked`
+
+- `seeking`
+
+- `suspend`
+
+- `timeupdate`
+
+- `volumechange`
+
+- `waiting`
 
 还有许多可用的媒体属性：
 
-- audioTracks
-- autoplay
-- buffered
-- controls
-- controller
-- currentSrc
-- currentTime
-- defaultMuted
-- defaultPlaybackRate
-- duration
-- ended
-- error
-- initialTime
-- loop
-- muted
-- networkState
-- paused
-- preload
-- played
-- playbackRate
-- readyState
-- seekable
-- seeking
-- startOffsetTime
-- src
-- textTracks
-- videoTracks
-- volume
+- `audioTracks`
+
+- `autoplay`
+
+- `buffered`
+
+- `controls`
+
+- `controller`
+
+- `currentSrc`
+
+- `currentTime`
+
+- `defaultMuted`
+
+- `defaultPlaybackRate`
+
+- `duration`
+
+- `ended`
+
+- `error`
+
+- `initialTime`
+
+- `loop`
+
+- `muted`
+
+- `networkState`
+
+- `paused`
+
+- `preload`
+
+- `played`
+
+- `playbackRate`
+
+- `readyState`
+
+- `seekable`
+
+- `seeking`
+
+- `startOffsetTime`
+
+- `src`
+
+- `textTracks`
+
+- `videoTracks`
+
+- `volume`
 
 并非所有这些事件和属性都已可供使用，但大多数都可以使用，包括那些允许你创建自己的视频播放器控件的重要选项。我们不会解释所有的API选项，只讲解创建你自己的播放器所需的部分。但如果你有兴趣了解更多关于API的信息，我们推荐参考 http://w3.org/2010/05/video/mediaevents.html 上的API演示和 http://w3.org/TR/html5/video.html#mediaevents 上非常详细的规范。
 
@@ -5890,8 +6035,11 @@ HTML5为`<video>`和`<audio>`元素提供了JavaScript媒体API。如上一节�
 你自己创建控件所需的基本功能是播放按钮，但借助JavaScript和媒体API，你可以创建远比这更多的功能，正如使用清单7.8中的代码所示。
 
 1.  用一个`<div id="video-wrapper">`包裹`<video>`元素，并添加一个包含按钮、滑块和其他控件显示所需元素的`<div id="controls">`。为了便于阅读，我们在本技巧的开始就包含了这个HTML，但实际上，你应该避免在主标记中包含这样的控件，而应该使用JavaScript动态创建它们，这样只有启用了JavaScript的用户才能获得这些控件。
+
 2.  将`<video>`元素声明为一个对象，以便可以引用它，然后通过删除为非JavaScript用户指定的`controls`属性来移除默认的浏览器控件。在视频准备好播放之前，播放按钮是禁用的。
+
 3.  为了更好的性能和跨浏览器兼容性，你需要等待视频准备就绪，然后才能收集其持续时间等信息。当视频准备好播放时，播放按钮将被启用。
+
 4.  为按钮、其他控件和显示添加`functions`（函数）和`listeners`（监听器）。
 
 ![](img/de30ea99ecac39b49e690a84c48f43b9_208_0.png)
@@ -5899,6 +6047,8 @@ HTML5为`<video>`和`<audio>`元素提供了JavaScript媒体API。如上一节�
 图7.4 在Opera 11中查看带有自定义控件的视频
 
 ### 清单7.8 自定义视频控件
+
+
 
 ```
 <!DOCTYPE html>
@@ -6051,8 +6201,6 @@ video.addEventListener('play', function() {
 }, false);
 ```
 
-
-
 ## 第7章 使用HTML5嵌入视频
 
 ```javascript
@@ -6183,15 +6331,17 @@ window.addEventListener('load',init,false);
 `have_nothing`的值表示浏览器没有关于视频的任何信息，而其他值表示浏览器拥有关于视频的各种信息，包括时长、高度和宽度、当前位置以及下一帧。因此，在这个食谱中，你寻找的是`readyState`值大于0的时候，当它大于0时，你检测时长并更新屏幕上的时长值。你还启用了播放按钮，这样用户就可以开始播放视频。在这个食谱中，当视频准备好时，你只做了一些事情，但这可能是在视频上创建控件、显示/隐藏加载图形，或者甚至显示视频本身的时刻。
 
 或者，你可以使用`loadeddata`事件监听器，当浏览器拥有足够的信息以允许播放开始时，它将触发：
+
 `video.addEventListener("loadeddata", function(){//执行操作}, false);`
 
 现在你知道了时长，所以使用`video.duration`，你获得视频片段的总长度，然后可以将其分配给`input[type="range"]`进度条，这样它就有了一个终点。然后你将滑块的起点设置到开始位置（零秒）。
 
-你使用一些`addEventListener`事件来检测视频播放时间何时更新（timeupdate），当它更新时，你更新播放显示和进度条。
+你使用一些`addEventListener`事件来检测视频播放时间何时更新（`timeupdate`），当它更新时，你更新播放显示和进度条。
 
 尽管你已经移除了默认的视频控件，并且拥有了自己的控制按钮（包括播放和静音），但如果用户右键单击视频，根据浏览器的不同，他们可能会在那里看到播放/暂停、显示控件、静音、保存视频等选项。你无法移除或更改这些浏览器默认设置，但你也可以挂钩到这些事件。在这个食谱中，你有代码监听播放或暂停事件，当这些事件发生时，按钮文本会改变。
 
 你还想知道视频何时结束，以便可以更改播放按钮的文本。这个事件很有用，因为当视频结束时，你可以做几件事，例如从播放列表中启动另一个视频。你通过使用事件监听器检测`ended`事件来检测视频结束：
+
 `video.addEventListener("ended", function(){//执行操作}, false);`
 
 在`addEventListener`之后，你有用于其他视频功能的各种函数，例如检查视频是否正在播放；设置音量（`video.volume = volume.value`）；使视频以全屏模式播放（`video.webkitEnterFullscreen()`），这仅在WebKit浏览器中有效；以及检查播放速率（`playbackRate`）。你还添加了播放功能，以便用户可以控制视频的位置和方向：有一个进度条，用户可以跳转到时间线上的某个位置（`video.currentTime = seekbar.value`），以及快进和快退按钮。
@@ -6205,6 +6355,7 @@ window.addEventListener('load',init,false);
 图7.5 在Firefox 4中查看带有自定义jQuery控件的视频
 
 - 目前只有Safari、Chrome和Opera支持`<input type="range">`，并且只有Opera允许此元素拥有透明背景，因此在Chrome中看起来有点丑，而在Safari中它根本不可见。Firefox和IE9默认显示一个文本框，其中显示更新的时间。
+
 - 快进按钮在Firefox中不起作用，在IE9中非常卡顿。快退按钮在任何浏览器中都尚未起作用。
 
 由于浏览器在控件显示以及它们如何与API交互方面存在这种不一致性，你可能需要考虑使用其他控件。例如，在图7.5中，视频控件是使用jQuery滑块创建的。还有其他几个视频播放器可供下载，例如来自http://sublime-video.net和http://videojs.com的播放器。
@@ -6215,17 +6366,17 @@ window.addEventListener('load',init,false);
 
 但除了编解码器之外，你学习了在所有当前主要浏览器中原生播放视频的方法，而无需像Flash这样的第三方插件。对于不支持`video`元素的旧版浏览器，你可以回退到链接或嵌入的Flash文件。你还使用最新的WebVTT文件标准创建了一个带字幕的视频播放器，尽管这是一个新兴标准，因此请务必关注任何变化和实践。
 
+
+
 最后，我们介绍了媒体API的几个组件，可用于创建自定义控件，你可以用CSS来设置它们的样式。
 
-
-
-# 8 使用HTML5嵌入音频
+# 使用HTML5嵌入音频
 
 与新的视频元素类似，新的音频元素允许你将音频文件嵌入到页面中，而无需依赖像Flash这样的额外插件。音频现在无需依赖这些第三方插件，即可在现代网络浏览器中播放，包括许多移动设备上的浏览器。
 
 本章，你将学习`audio`元素的基础知识，然后探讨解决跨浏览器兼容性问题的方法。接着，你将了解可用的API，学习如何创建自己的音频播放器。
 
-## 初级配方：使用 `audio` 元素添加音频
+## 初级配方：使用`audio`元素添加音频
 
 要查看如何使用新的`audio`元素在页面上放置音频的基本示例，请看清单8.1中的代码。代码中添加了`controls`属性；否则，用户界面上将不会显示任何控件。
 
@@ -6244,8 +6395,6 @@ window.addEventListener('load',init,false);
 </html>
 ```
 
-# 第8章 使用HTML5嵌入音频
-
 ### 表 8.1 文件类型与浏览器支持
 
 | 编解码器 | Android | Chrome | Firefox | Internet Explorer | iPhone | Opera | Safari |
@@ -6254,19 +6403,19 @@ window.addEventListener('load',init,false);
 | MP3 | 2.3 | 13+ | - | 9+ | 4+ | - | 5+ |
 | WAV | - | - | - | - | - | - | - |
 
-代码本身非常直接，但和视频元素一样，音频元素也存在一些问题。如果你尝试清单8.1中的代码并使用.mp3文件，但音频没有播放，这可能是因为你遇到了一些编解码器问题。
+代码本身非常直接，但和视频元素一样，音频元素也存在一些问题。如果你尝试清单8.1中的代码并使用`.mp3`文件，但音频没有播放，这可能是因为你遇到了一些编解码器问题。
 
 我们在第7章更详细地讨论了编解码器困境，虽然那里的信息主要针对视频文件类型，但音频文件类型也面临类似情况。
 
-主要有两种音频编解码器：Ogg Vorbis (.ogg) 和 MP3 (.mp3)。你也可以考虑WAV (.wav)，但我们将主要关注Ogg Vorbis和MP3，因为WAV文件通常很大，不适合在网络上加载；WAV文件也不支持元数据，如艺术家和标题。虽然MP3格式几乎可以被视为标准文件类型，但MP3是MPEG4/H.2.64组的一部分，因此是一种封闭的、需要支付版税的文件类型。另一方面，Ogg被认为是“自由”和“开放”的。毫无疑问，关于哪种文件类型能提供更高质量的音频会有很多争论，但主要问题在于浏览器的支持情况是分裂的。简而言之，表8.1展示了当前的浏览器播放兼容性。
+主要有两种音频编解码器：Ogg Vorbis (`.ogg`) 和 MP3 (`.mp3`)。你也可以考虑WAV (`.wav`)，但我们将主要关注Ogg Vorbis和MP3，因为WAV文件通常很大，不适合在网络上加载；WAV文件也不支持元数据，如艺术家和标题。虽然MP3格式几乎可以被视为标准文件类型，但MP3是MPEG4/H.2.64组的一部分，因此是一种封闭的、需要支付版税的文件类型。另一方面，Ogg被认为是“自由”和“开放”的。毫无疑问，关于哪种文件类型能提供更高质量的音频会有很多争论，但主要问题在于浏览器的支持情况是分裂的。简而言之，表8.1展示了当前的浏览器播放兼容性。
 
 ## 中级配方：为所有浏览器启用音频
 
 就像你在第7章为视频所做的那样，你需要在所有现代浏览器中实现音频播放和支持。你可以使用嵌套在`audio`元素中的`source`元素来堆叠不同的音频文件，浏览器会选择它能播放的那一个。清单8.2提供了所需的代码，为现代浏览器提供它们能播放的音频文件。
 
+```
 清单 8.2 音频文件堆叠
 
-```
 <audio controls>
   <source src="music.mp3" type="audio/mp3" />
   <source src="music.ogg" type="audio/ogg" />
@@ -6275,15 +6424,17 @@ window.addEventListener('load',init,false);
 
 音频元素不需要`height`或`width`属性，因为默认情况下每个浏览器都有自己的音频播放器，但你可以使用CSS来应用高度和宽度：
 
+```
 audio {display: block; width: 90px; height: 28px;}
+```
 
 ### 为旧版浏览器添加后备内容
 
-在`source`元素之后，你可以为不能原生播放音频的浏览器编写额外的代码；我们主要谈论的是Internet Explorer 6、7和8。像视频一样，有几个选项。你可以将音频文件托管在类似http://soundcloud.com这样的网站上，并使用其嵌入代码来提供音频，或者你可以使用Flash Player将音频内容传递给功能较弱的浏览器。在清单8.3中，我们使用了JW Player，一个非常流行且可定制的多媒体播放器，但还有更多可供选择，或者你可以自己制作一个。
-
-清单 8.3 使用 JW Player
+在`source`元素之后，你可以为不能原生播放音频的浏览器编写额外的代码；我们主要谈论的是Internet Explorer 6、7和8。像视频一样，有几个选项。你可以将音频文件托管在类似`http://soundcloud.com`这样的网站上，并使用其嵌入代码来提供音频，或者你可以使用Flash Player将音频内容传递给功能较弱的浏览器。在清单8.3中，我们使用了JW Player，一个非常流行且可定制的多媒体播放器，但还有更多可供选择，或者你可以自己制作一个。
 
 ```
+清单 8.3 使用 JW Player
+
 <script type="text/javascript" src="swfobject.js"></script>
 <div id="mediaplayer"></div>
 <script>
@@ -6295,13 +6446,13 @@ audio {display: block; width: 90px; height: 28px;}
 </script>
 ```
 
-只有旧版浏览器会下载swfobject.swf和player.swf文件，并在Flash Player中播放音频文件。
+只有旧版浏览器会下载`swfobject.swf`和`player.swf`文件，并在Flash Player中播放音频文件。
 
 清单8.4将所有内容整合在一起。这段代码在所有主流浏览器中提供音频，要么使用原生音频元素，要么在必要时使用Flash Player后备方案。
 
+```
 清单 8.4 跨浏览器音频
 
-```
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6327,17 +6478,15 @@ audio {display: block; width: 90px; height: 28px;}
 </html>
 ```
 
-190 第8章 使用HTML5嵌入音频
-
 ### 新的音频属性
 
 `audio`元素有几个新的属性，你现在将了解它们。
 
-### src 属性
+#### `src`属性
 
 本章开头的清单8.1展示了`audio`元素的基本示例，它包含一个`src`属性。但使用`src`意味着你只能局限于一个音频文件，而且由于编解码器和浏览器问题，它目前几乎没什么用。但理想情况下，有一天它会是你所需要的全部。考虑使用`audio`内的`source`元素，如清单8.4所示，而不是使用`src`，这样你就能让音频跨浏览器工作。
 
-#### preload 属性
+#### `preload`属性
 
 如果页面上有一个相对较大的音频文件，或者你确信用户会想听你嵌入的音频，那么你可以让浏览器在页面加载时就开始下载该文件。`preload`属性有三个可能的值：
 
@@ -6350,20 +6499,19 @@ preload="metadata"
     `metadata`属性获取音频轨道的信息（元数据），包括音频时长、第一帧和轨道列表。它不应该在用户启动音频之前下载音频本身。
 ```
 
-#### loop 属性
+#### `loop`属性
 
 如果`audio`有`loop`属性，那么当音频播放完毕时，它会循环回到开头再次播放。它是一个布尔属性，所以要么开，要么关。所有主流浏览器都支持这个属性，但奇怪的是，Firefox 4除外。
 
-www.it-ebooks.info
-
-#### `autoplay` 属性
+#### `autoplay`属性
 
 一个布尔属性，`autoplay`会强制浏览器在页面加载时开始下载和播放音频。广告经常自动开始播放。关于音频自动播放存在可访问性和可用性方面的担忧，更不用说它可能有多烦人了，但这个属性被包含在规范中是因为，如果你*真的*需要，现在有了一种标准方式来实现它，你不必借助各种JavaScript技巧来达到效果。已经有各种浏览器扩展可供下载来禁用`autoplay`。
 
 > **注意**
-`autoplay`和`preload`属性在iOS上已被刻意禁用。这是考虑到对用户可能产生的费用和加载速度问题。在用户启动音频之前，不会下载任何数据。有一些技术，嗯，可以说是“黑科技”，可以绕过这一点。但因为是黑科技，我们并不想在本书中教给你这样的坏习惯。
+>
+> `autoplay`和`preload`属性在iOS上已被刻意禁用。这是考虑到对用户可能产生的费用和加载速度问题。在用户启动音频之前，不会下载任何数据。有一些技术，嗯，可以说是“黑科技”，可以绕过这一点。但因为是黑科技，我们并不想在本书中教给你这样的坏习惯。
 
-#### `controls` 属性
+#### `controls`属性
 
 `controls`属性为你的音频文件添加浏览器特定的控件，包括播放/暂停按钮、搜索栏、时长/已播放时间信息和音量控制。以下是示例：
 
@@ -6378,19 +6526,16 @@ www.it-ebooks.info
 如果你想使用自己的控件，可以通过API来创建停止和开始控件，我们将在本章稍后介绍。图8.1展示了主要浏览器中的默认控件。
 
 > **注意**
-奇怪的是，在Firefox中，如果你没有启用JavaScript，控件就不会出现。其他浏览器则正确地在无JavaScript的情况下显示了控件。
+>
+> 奇怪的是，在Firefox中，如果你没有启用JavaScript，控件就不会出现。其他浏览器则正确地在无JavaScript的情况下显示了控件。
 
 ![](img/de30ea99ecac39b49e690a84c48f43b9_221_0.png)
 
-
-
-# 第8章 使用HTML5嵌入音频
-
 ### 用于测试的免费音频文件
 
-出于测试目的，你可能需要一些免费音频文件。有很多选择，但我们可以使用一些来自以下网站的文件：http://beatstorm.com、http://free-soundtrackmusic.com、http://vocaldownloads.com 和 http://freesound.org。
+出于测试目的，你可能需要一些免费音频文件。有很多选择，但我们可以使用一些来自以下网站的文件：`http://beatstorm.com`、`http://free-soundtrackmusic.com`、`http://vocaldownloads.com` 和 `http://freesound.org`。
 
-这些文件有各种格式，正如你已读到的，你将需要转换它们才能在不同的浏览器中播放。我们建议尝试以下工具：http://media.io 或 Free MP3/WMA/OGG Converter，可从 http://download.cnet.com/Free-MP3-WMA-OGG-Converter/3000-2140_4-10793572.html 获取。
+这些文件有各种格式，正如你已读到的，你将需要转换它们才能在不同的浏览器中播放。我们建议尝试以下工具：`http://media.io` 或 Free MP3/WMA/OGG Converter，可从 `http://download.cnet.com/Free-MP3-WMA-OGG-Converter/3000-2140_4-10793572.html` 获取。
 
 ## 媒体API
 
@@ -6398,54 +6543,56 @@ HTML5为多媒体提供了一个庞大且令人兴奋的API。使用该API和Jav
 
 | | |
 |---|---|
-| abort | loadstart |
-| canplay | pause |
-| canplaythrough | play |
-| canshowcurrentframe | playing |
-| dataunavailable | progress |
-| durationchange | ratechange |
-| emptied | seeked |
-| empty | seeking |
-| ended | suspend |
-| error | timeupdate |
-| loadeddata | volumechange |
-| loadedmetadata | waiting |
+| `abort` | `loadstart` |
+| `canplay` | `pause` |
+| `canplaythrough` | `play` |
+| `canshowcurrentframe` | `playing` |
+| `dataunavailable` | `progress` |
+| `durationchange` | `ratechange` |
+| `emptied` | `seeked` |
+| `empty` | `seeking` |
+| `ended` | `suspend` |
+| `error` | `timeupdate` |
+| `loadeddata` | `volumechange` |
+| `loadedmetadata` | `waiting` |
 
 以下是可用的媒体属性：
 
 | | |
 |---|---|
-| audioTracks | muted |
-| autoplay | networkState |
-| buffered | paused |
-| controls | preload |
-| controller | played |
-| currentSrc | playbackRate |
-| currentTime | readyState |
-| defaultMuted | seekable |
-| defaultPlaybackRate | seeking |
-| duration | startOffsetTime |
-| ended | src |
-| error | textTracks |
-| initialTime | videoTracks |
-| loop | volume |
-| mediaGroup | |
+| `audioTracks` | `muted` |
+| `autoplay` | `networkState` |
+| `buffered` | `paused` |
+| `controls` | `preload` |
+| `controller` | `played` |
+| `currentSrc` | `playbackRate` |
+| `currentTime` | `readyState` |
+| `defaultMuted` | `seekable` |
+| `defaultPlaybackRate` | `seeking` |
+| `duration` | `startOffsetTime` |
+| `ended` | `src` |
+| `error` | `textTracks` |
+| `initialTime` | `videoTracks` |
+| `loop` | `volume` |
+| `mediaGroup` | |
 
-并非所有这些事件和属性都可供使用，但其中大部分都可用，包括那些允许你创建自己的音频播放器控件的重要API。我们不会解释所有API选项，只会解释创建以下食谱所需的内容。如果你有兴趣了解更多关于API的信息，我们推荐 http://w3.org/2010/05/video/mediaevents.html 上的API演示；虽然它是视频演示，但API同样适用于音频。还有非常详细的API规范在 http://w3.org/TR/html5/video.html#mediaevents。
+并非所有这些事件和属性都可供使用，但其中大部分都可用，包括那些允许你创建自己的音频播放器控件的重要API。我们不会解释所有API选项，只会解释创建以下食谱所需的内容。如果你有兴趣了解更多关于API的信息，我们推荐 `http://w3.org/2010/05/video/mediaevents.html` 上的API演示；虽然它是视频演示，但API同样适用于音频。还有非常详细的API规范在 `http://w3.org/TR/html5/video.html#mediaevents`。
 
 ## 中级食谱：创建混音器
 
 到目前为止，你已经知道如何在现代浏览器中让音频原生播放。在这个食谱中，你将创建一个混音器，以便测试浏览器如何处理同时播放的多个音频元素。存在一些浏览器怪异行为，因此我们建议为此食谱使用Chrome和Opera。
 
-这个食谱在Safari和Internet Explorer中使用.mp3文件，在Chrome、Firefox和Opera中使用.ogg文件。我们不关心这个食谱中旧版本的Internet Explorer。这是一个开始使用音频和API的简单食谱。
+这个食谱在Safari和Internet Explorer中使用`.mp3`文件，在Chrome、Firefox和Opera中使用`.ogg`文件。我们不关心这个食谱中旧版本的Internet Explorer。这是一个开始使用音频和API的简单食谱。
 
 你将从列表中的六个音频元素开始，尽管理论上你可以动态加载音频文件。使用了一些CSS进行基本布局和样式设置，并且有一个`class`用于音频未播放的情况。对于每个音频元素，都有一个`onclick`事件来切换文件的播放状态。你可以在图8.2中看到该页面，代码在清单8.5中。
 
 ![](img/de30ea99ecac39b49e690a84c48f43b9_223_0.png)
 
-图8.2  运行中的混音器，在Firefox中查看
+图8.2 运行中的混音器，在Firefox中查看
 
 ### 清单8.5 创建混音器
+
+
 
 ```html
 <!DOCTYPE html>
@@ -6602,6 +6749,7 @@ href="http://www.freesound.org">freesound.org</a></p>
 首先，你隐藏默认控件并使用CSS显示播放按钮。当用户点击一个`audio`元素时，你会检查文件是否已暂停。如果没有暂停，则使用`play`方法开始播放音频。如果文件正在播放，则使用`pause`方法暂停文件。在播放或暂停时，你会切换一个类以显示不同的按钮操作。当你暂停音频时，实际上是通过将其`currentTime`设置回0来停止它。而当音轨播放时，你使用`timeupdate`监听器事件来显示音轨已播放多长时间。
 
 > **混音器的浏览器怪异行为**
+
 这个食谱有一些浏览器怪异行为。首先，Firefox 4不支持`loop`属性，因此音轨不会自动重复，尽管你可以通过JavaScript检测音轨`ended`并再次`play`它来实现这一点。其次，虽然JavaScript在IE9和Safari中可以工作，但这个食谱在这些浏览器中将无法工作，因为这些浏览器尚不支持`audio`元素的样式设置。如果你移除隐藏`controls`属性的代码行，那么它在这些浏览器中就可以正常工作。或者，你可以为`li`设置样式以包含播放/停止图标。
 
 ## 高级食谱：添加流媒体广播
@@ -6611,12 +6759,14 @@ href="http://www.freesound.org">freesound.org</a></p>
 这些流采用OGG或MP3格式，OGG流将在Firefox、Opera和Chrome中工作。MP3流将在Chrome、IE9和Safari中工作。如果浏览器不支持该格式，则会显示错误消息。
 
 1. 使用HTML和CSS创建播放器的布局和控件。
+
 2. 创建一个基于JSON的广播电台及其URL列表。
+
 3. 如果有错误，则使用API检测错误类型。
+
 4. 将每个电台作为选项添加到电台列表中。
+
 5. 当选择一个电台时，触发函数`setStation`，该函数更改音频元素的`src`并立即开始播放。
-
-
 
 # 第8章 使用HTML5嵌入音频
 
@@ -6625,6 +6775,8 @@ href="http://www.freesound.org">freesound.org</a></p>
 图8.3 HTML5音频流播放器，在Chrome浏览器中查看
 
 ### 清单8.6 流媒体电台播放器
+
+
 
 ```html
 <!DOCTYPE html>
@@ -6943,31 +7095,31 @@ button {
 </style>
 ```
 
-
-
 ## HTML5 音频流播放器
 
-页面加载时，`init` 函数会运行。该函数通过设置音频播放器以便后续引用和操控来启动整个流程，同时也会设置播放和音量控制等其他控件。随后，它使用 `loadStations` 函数加载电台。该函数遍历电台的 JSON 列表，并生成供用户选择的列表。`select` 元素的 `onChange` 事件绑定了 `setStation` 函数，该函数会获取选中的电台，将其 URL 设为音频的 `src`，并修改音频的 `type` 属性（设为 MP3 或 OGG），以确保其正确播放。如果浏览器无法播放该音频类型（例如，由于 MP3 格式限制，BBC World Service 在 Firefox 或 Opera 中无法播放），则会弹出错误提示，错误文本取决于具体的错误类型。
+页面加载时，`init()`函数会运行。该函数通过设置音频播放器以便后续引用和操控来启动整个流程，同时也会设置播放和音量控制等其他控件。随后，它使用`loadStations()`函数加载电台。该函数遍历电台的 JSON 列表，并生成供用户选择的列表。`select`元素的`onChange`事件绑定了`setStation()`函数，该函数会获取选中的电台，将其 URL 设为音频的`src`，并修改音频的`type`属性（设为 MP3 或 OGG），以确保其正确播放。如果浏览器无法播放该音频类型（例如，由于 MP3 格式限制，BBC World Service 在 Firefox 或 Opera 中无法播放），则会弹出错误提示，错误文本取决于具体的错误类型。
 
-即使设置了播放器的源地址，除非明确调用 `radioPlayer.play()`，否则音频不会播放。当流媒体正在播放时，会触发一个名为 `durationchange` 的监听事件。当此事件发生时，会启动一个名为 `streamPlaying` 的函数，该函数更新屏幕上正在播放的电台文本；将播放按钮切换为暂停按钮；并显示其余的控件。
+即使设置了播放器的源地址，除非明确调用`radioPlayer.play()`，否则音频不会播放。当流媒体正在播放时，会触发一个名为`durationchange`的监听事件。当此事件发生时，会启动一个名为`streamPlaying()`的函数，该函数更新屏幕上正在播放的电台文本；将播放按钮切换为暂停按钮；并显示其余的控件。
 
-最后的控件涉及播放/暂停按钮和音量控制。点击播放/暂停按钮时，会运行一个函数来检查当前状态：如果音频处于暂停或结束状态，则触发 `.play()`；否则触发 `.pause()`。在上一章关于视频的内容中，你使用了新的 HTML5 `range` 输入元素作为音量控件。在这里，你创建了一个跨浏览器兼容的版本，它能检测音量条被点击的位置，并通过 `.volume` 来更新音频的音量。
+
+
+最后的控件涉及播放/暂停按钮和音量控制。点击播放/暂停按钮时，会运行一个函数来检查当前状态：如果音频处于暂停或结束状态，则触发`.play()`；否则触发`.pause()`。在上一章关于视频的内容中，你使用了新的 HTML5 `range` 输入元素作为音量控件。在这里，你创建了一个跨浏览器兼容的版本，它能检测音量条被点击的位置，并通过`.volume`来更新音频的音量。
 
 ## 总结
 
-在本章中，你学习了如何在浏览器中播放音频文件，而无需依赖第三方插件（通常是 Flash）。当然，由于这是一个新的浏览器特性，在不同浏览器中存在各种兼容性问题。与 `video` 元素一样，你需要处理编解码器问题，但你可以为旧版浏览器提供备用选项。
+在本章中，你学习了如何在浏览器中播放音频文件，而无需依赖第三方插件（通常是 Flash）。当然，由于这是一个新的浏览器特性，在不同浏览器中存在各种兼容性问题。与`video`元素一样，你需要处理编解码器问题，但你可以为旧版浏览器提供备用选项。
 
 你还了解了新 API 的各种元素，这些元素允许你操控音频文件在浏览器中的行为，包括控制播放和暂停、控制音量以及更改播放的文件。
 
 # 9 更改浏览器历史记录
 
-本章讨论 HTML5 中历史记录接口的更新，特别是 History API 中的两个新方法（pushState 和 replaceState），并包含若干将它们融入会话导航的实用方案。此外，你将了解 state 事件、使用 History API 存储超出页面导航范围的信息，以及诸如安全性和扩展库等高级主题。
+本章讨论 HTML5 中历史记录接口的更新，特别是 History API 中的两个新方法（`pushState`和`replaceState`），并包含若干将它们融入会话导航的实用方案。此外，你将了解`state`事件、使用 History API 存储超出页面导航范围的信息，以及诸如安全性和扩展库等高级主题。
 
 ## History 基础
 
-History API 是一个 JavaScript API，自 JavaScript 1.0 起就已在网站中使用，但在 HTML5 之前并未进行重大更新。随着 Ajax 和无页面导航的兴起，使用 history 对象进行前进、后退或跳转到特定会话条目变得存在问题。事实上，包括 YUI 在内的几个框架都引入了自己的浏览器会话管理技术。
+History API 是一个 JavaScript API，自 JavaScript 1.0 起就已在网站中使用，但在 HTML5 之前并未进行重大更新。随着 Ajax 和无页面导航的兴起，使用`history`对象进行前进、后退或跳转到特定会话条目变得存在问题。事实上，包括 YUI 在内的几个框架都引入了自己的浏览器会话管理技术。
 
-以前，要在不实际更改页面的情况下向浏览器历史记录添加页面，你需要通过在 URL 后添加 # 符号和哈希值来更改 URL。使用 `history.pushState` 和 `history.replaceState` 方法，你现在可以分别添加和修改历史记录，并且当它们与 `window popstate` 事件结合使用时，可以为用户提供改进的导航体验。通过公开向网站添加和修改页面历史记录的能力，History API 为使用 Ajax 技术的富应用程序提供了更好的后退按钮支持。你现在只需将一个虚拟页面或上下文推入历史记录，即可更改应用程序的“视图状态”。
+以前，要在不实际更改页面的情况下向浏览器历史记录添加页面，你需要通过在 URL 后添加`#`符号和哈希值来更改 URL。使用`history.pushState`和`history.replaceState`方法，你现在可以分别添加和修改历史记录，并且当它们与`window popstate`事件结合使用时，可以为用户提供改进的导航体验。通过公开向网站添加和修改页面历史记录的能力，History API 为使用 Ajax 技术的富应用程序提供了更好的后退按钮支持。你现在只需将一个虚拟页面或上下文推入历史记录，即可更改应用程序的“视图状态”。
 
 你可以将浏览器会话历史记录，即用户在你网站中浏览过的页面，视为一个栈。当页面被查看时，它们被推入栈顶。当用户点击或点击浏览器的后退按钮时，页面会逐一从栈中“弹出”。仅使用 JavaScript，你可以使用以下命令前进、后退或前进/后退特定数量的页面：
 
@@ -6995,51 +7147,53 @@ History API 扩展目前在表 9.1 所列的浏览器平台上受支持。
 
 ## 初学者指南：使用 pushState 添加历史记录
 
-你可以使用 History API 的 `pushState` 方法，通过当前浏览器页面向浏览器会话栈添加一个新条目。该方法接受两个参数：`data` 和 `title`，以及一个可选的第三个参数 `url`：
+你可以使用 History API 的`pushState`方法，通过当前浏览器页面向浏览器会话栈添加一个新条目。该方法接受两个参数：`data`和`title`，以及一个可选的第三个参数`url`：
 
 `history.pushState(data, title [,url])`
 
-`pushState` 方法的参数如下：
+`pushState`方法的参数如下：
 
 - `data`：传递的一个字符串或对象，用于表示页面的状态。
 - `title`：显示在浏览器标题栏中的页面标题字符串。
 - `url`：（可选）要添加到历史记录栈的新 URL。
 
-`data` 参数表示页面的状态，并自动与新条目关联。稍后你将看到，可以通过窗口的 `popstate` 事件来检索它。这里的*状态*，我们指的是页面显示的当前上下文。例如，这可以是用户当前通过 Ajax 等方式从数据库调用查看的菜谱。
+`data`参数表示页面的状态，并自动与新条目关联。稍后你将看到，可以通过窗口的`popstate`事件来检索它。这里的*状态*，我们指的是页面显示的当前上下文。例如，这可以是用户当前通过 Ajax 等方式从数据库调用查看的菜谱。
 
-某些浏览器对 `data` 参数的大小施加限制，因为状态对象由浏览器本地存储在用户的磁盘上。在 Firefox 中，此限制是状态对象序列化表示的 640,000 个字符。如果你计划达到或可能达到此限制，你应该改用 `sessionStorage` 或 `localStorage`（参见第 11 章，客户端存储）。
+某些浏览器对`data`参数的大小施加限制，因为状态对象由浏览器本地存储在用户的磁盘上。在 Firefox 中，此限制是状态对象序列化表示的 640,000 个字符。如果你计划达到或可能达到此限制，你应该改用`sessionStorage`或`localStorage`（参见第 11 章，客户端存储）。
 
 > 注意
-> 某些浏览器，如 Firefox，会忽略 `title` 参数，并且不会在用户的会话历史列表中显示该值。这是浏览器特定的，我们希望在未来的更新中能得到修正。
+>
+> 某些浏览器，如 Firefox，会忽略`title`参数，并且不会在用户的会话历史列表中显示该值。这是浏览器特定的，我们希望在未来的更新中能得到修正。
 
-如果提供了 `url` 参数，这将替换浏览器地址栏中的 URL，但不会导致浏览器从网站请求该页面。这允许用户将 URL 加入书签并在以后返回。当然，你需要在服务器端页面上设置逻辑，以处理那些不代表真实页面的书签地址。传递的 URL 可以是相对路径或绝对路径；但是，路径必须与当前 URL 在同一域中。如果使用相对路径，则路径将基于当前文档的位置。如果不包含 `url` 参数或仅提供查询字符串（例如 "?page=5"），则默认路径是文档的当前 URL。
+如果提供了`url`参数，这将替换浏览器地址栏中的 URL，但不会导致浏览器从网站请求该页面。这允许用户将 URL 加入书签并在以后返回。当然，你需要在服务器端页面上设置逻辑，以处理那些不代表真实页面的书签地址。传递的 URL 可以是相对路径或绝对路径；但是，路径必须与当前 URL 在同一域中。如果使用相对路径，则路径将基于当前文档的位置。如果不包含`url`参数或仅提供查询字符串（例如`"?page=5"`），则默认路径是文档的当前 URL。
 
-`pushState` 方法类似于使用哈希值来控制页面上下文，这在基于 Ajax 的动态应用中很常见：
+`pushState`方法类似于使用哈希值来控制页面上下文，这在基于 Ajax 的动态应用中很常见：
 
 `window.location = "#foo";`
 
-然而，`pushState` 方法比哈希访问提供了更大的灵活性：
+然而，`pushState`方法比哈希访问提供了更大的灵活性：
 
-- `pushState` 允许你保持在同一页面或更改 URL。使用哈希方法时，浏览器保持在同一 URL。
-- `pushState` 允许你在历史记录的状态中保留上下文信息。正如你稍后将在本章中看到的，这非常有用。
+- `pushState`允许你保持在同一页面或更改 URL。使用哈希方法时，浏览器保持在同一 URL。
+- `pushState`允许你在历史记录的状态中保留上下文信息。正如你稍后将在本章中看到的，这非常有用。
 
-最后一点需要强调，因为它是对 URL 添加哈希方法的重大改进。历史记录中的每个条目，`pushState` 允许你存储一个数据对象，该对象可以保存关于页面状态的上下文信息。数据可以简单如字符串值，也可以复杂如序列化的 JSON 对象。例如，假设你有一个展示演示文稿幻灯片的页面。每张幻灯片可能有关于如何显示的详细信息，例如副标题、边框、致谢等。状态对象可以保存这些信息，从而轻松根据你所在的幻灯片更改页面样式。你将在本章后面看到一个利用此状态对象的方案。
+最后一点需要强调，因为它是对 URL 添加哈希方法的重大改进。历史记录中的每个条目，`pushState`允许你存储一个数据对象，该对象可以保存关于页面状态的上下文信息。数据可以简单如字符串值，也可以复杂如序列化的 JSON 对象。例如，假设你有一个展示演示文稿幻灯片的页面。每张幻灯片可能有关于如何显示的详细信息，例如副标题、边框、致谢等。状态对象可以保存这些信息，从而轻松根据你所在的幻灯片更改页面样式。你将在本章后面看到一个利用此状态对象的方案。
 
-让我们使用历史记录的 `pushState` 方法向历史会话添加一个新条目。页面在加载时通过调用 `typeof` 检查 `history.pushState` 方法来检测浏览器中 History API 的可用性。如果该方法返回 "undefined"，则浏览器不支持 History API。你可以使用此
-
-
+让我们使用历史记录的`pushState`方法向历史会话添加一个新条目。页面在加载时通过调用`typeof`检查`history.pushState`方法来检测浏览器中 History API 的可用性。如果该方法返回`"undefined"`，则浏览器不支持 History API。你可以使用此
 
 ## 9.1 修改浏览器历史记录
 
 我们需要根据用户当前使用的浏览器，采用不同的方法来实现历史记录或限制功能：
 
-1.  创建一个空白的HTML页面，其中包含一个用于显示当前展品的div。
-2.  添加一个按钮，点击该按钮将启动JavaScript函数 `nextExhibit`。
-3.  插入 `nextExhibit` 函数来执行 `pushState` 方法。
-4.  添加 `pushState` 方法调用，将狐獴展品的上下文添加到历史记录中：
-    `history.pushState('Meerkat','Meerkat Exhibit','meerkats.html');`
-5.  更新展品div，告知用户当前处于狐獴展区：
-    `document.getElementById("exhibit").innerHTML = "At the Meerkats.";`
+1. 创建一个空白的HTML页面，其中包含一个用于显示当前展品的`div`。
+2. 添加一个按钮，点击该按钮将启动JavaScript函数`nextExhibit`。
+3. 插入`nextExhibit`函数来执行`pushState`方法。
+4. 添加`pushState`方法调用，将狐獴展品的上下文添加到历史记录中：
+
+   `history.pushState('Meerkat','Meerkat Exhibit','meerkats.html');`
+
+5. 更新展品`div`，告知用户当前处于狐獴展区：
+
+   `document.getElementById("exhibit").innerHTML = "At the Meerkats.";`
 
 清单9.1包含了整个页面的代码。
 
@@ -7091,16 +7245,17 @@ Welcome to the zoo.
 </html>
 ```
 
-当你在浏览器中加载此页面时，根据页面标题和显示的消息，你会看到你位于动物园入口。如果点击“参观狐獴”按钮，页面会将当前页面推入历史记录，然后更改浏览器窗口的标题和URL，而无需实际导航到新页面。JavaScript会更改消息，告知用户狐獴展区的信息。从所有目的来看，用户会感觉是从服务器加载了一个新页面。然而，这仅仅是通过 `pushState` 添加到历史记录中的一个新上下文。
+当你在浏览器中加载此页面时，根据页面标题和显示的消息，你会看到你位于动物园入口。如果点击“参观狐獴”按钮，页面会将当前页面推入历史记录，然后更改浏览器窗口的标题和URL，而无需实际导航到新页面。JavaScript会更改消息，告知用户狐獴展区的信息。从所有目的来看，用户会感觉是从服务器加载了一个新页面。然而，这仅仅是通过`pushState`添加到历史记录中的一个新上下文。
 
 > **提示**
-> 在某些情况下，如果在 `pushState` 中提供的 `url` 参数值指向一个无效页面，可能会在某些浏览器（如 Firefox）中导致安全异常。要解决此问题，请提供一个有效的 URL 或使用可选的 `state` 参数，这样可以避免异常。
+>
+> 在某些情况下，如果在`pushState`中提供的`url`参数值指向一个无效页面，可能会在某些浏览器（如 Firefox）中导致安全异常。要解决此问题，请提供一个有效的 URL 或使用可选的`state`参数，这样可以避免异常。
 
 如果你查看浏览器的历史记录列表，你会看到“在动物园”页面是最后一个页面，如果点击返回按钮，你将返回到该页面。页面上的消息不会变回“在动物园入口”，但你稍后将了解如何修复此问题。请记住，URL是可选的，但对于回访用户来说可能非常有用。当然，你需要在服务器上设置逻辑来处理那些在服务器上没有真实页面的书签条目。
 
 ## 初级配方：创建图片查看器
 
-在前一个配方中，你完成了第一个 `pushState` 调用，将一个简单条目推入了历史会话。此配方将更进一步，为用户提供多个选择选项，并将每个选择存储到不断增长的历史会话中。有许多网站允许用户通过提供缩略图链接并动态替换所选内容来浏览一系列照片、视频或其他内容。在此配方中，你将向用户展示一系列图片缩略图，允许他们选择一张图片进行查看，并添加一个新的历史记录条目来跟踪已查看的内容，并允许用户返回到这些图片。清单9.2显示了使用历史记录条目创建图片查看器的完整页面代码。代码清单中引用的图片和其他资源可从本书网站获取。请将图片放入“images”文件夹中，以便在代码的 `showImage` 函数中正确引用。
+在前一个配方中，你完成了第一个`pushState`调用，将一个简单条目推入了历史会话。此配方将更进一步，为用户提供多个选择选项，并将每个选择存储到不断增长的历史会话中。有许多网站允许用户通过提供缩略图链接并动态替换所选内容来浏览一系列照片、视频或其他内容。在此配方中，你将向用户展示一系列图片缩略图，允许他们选择一张图片进行查看，并添加一个新的历史记录条目来跟踪已查看的内容，并允许用户返回到这些图片。清单9.2显示了使用历史记录条目创建图片查看器的完整页面代码。代码清单中引用的图片和其他资源可从本书网站获取。请将图片放入`images`文件夹中，以便在代码的`showImage`函数中正确引用。
 
 ### 清单9.2：图片查看器：创建多个历史记录条目
 
@@ -7185,25 +7340,26 @@ src="images/slide'+i+'.jpg"></a>';
 *图9.1：后退按钮下拉列表中的历史记录与我们的选择匹配。*
 
 > **注意**
-> 在前面的清单中，我们使用内联脚本在页面加载时创建缩略图按钮。通常，这会通过像 jQuery 这样的框架中的 `domReady` 事件来处理。为了节省空间并保持代码无关性，我们使用了内联脚本。
+>
+> 在前面的清单中，我们使用内联脚本在页面加载时创建缩略图按钮。通常，这会通过像 jQuery 这样的框架中的`domReady`事件来处理。为了节省空间并保持代码无关性，我们使用了内联脚本。
 
-当你运行此配方时，你会注意到，如果你在浏览器中点击后退按钮，`pageInfo` div中的页面列表保持不变。如果你能在用户点击后退按钮时捕获一个事件来更新显示的页面，那不是很好吗？HTML5正好为此提供了 `popstate` 事件，这将在下一个配方中介绍。
+当你运行此配方时，你会注意到，如果你在浏览器中点击后退按钮，`pageInfo` div中的页面列表保持不变。如果你能在用户点击后退按钮时捕获一个事件来更新显示的页面，那不是很好吗？HTML5正好为此提供了`popstate`事件，这将在下一个配方中介绍。
 
 ## 中级配方：在图片查看器中弹出状态
 
-为了与 History API 的新方法配合工作，HTML5 定义了一个新的窗口事件，称为 `popstate`。当浏览器窗口的活动历史记录会话条目发生更改时，将触发此事件。历史记录条目可能由于用户点击浏览器的前进或后退按钮，或者调用 JavaScript history 对象的 `back` 和 `go` 等方法而发生更改。在任何一种情况下，你都可以基于事件处理程序执行逻辑来捕获此事件。事件处理程序的语法在 JavaScript 中采用以下格式：
+
+
+为了与 History API 的新方法配合工作，HTML5 定义了一个新的窗口事件，称为`popstate`。当浏览器窗口的活动历史记录会话条目发生更改时，将触发此事件。历史记录条目可能由于用户点击浏览器的前进或后退按钮，或者调用 JavaScript history 对象的`back`和`go`等方法而发生更改。在任何一种情况下，你都可以基于事件处理程序执行逻辑来捕获此事件。事件处理程序的语法在 JavaScript 中采用以下格式：
 
 ```javascript
 window.addEventListener('popstate',funcRef,false);
 ```
 
-`popstate` 事件通过 `popstate` 事件在 JavaScript window 对象上触发，并与一个处理函数相关联，在上一行中引用为 `funcRef`。因此，当用户使用后退按钮浏览历史记录时，你可以执行任何必要的逻辑，以便在页面 HTML 中加载正确的上下文。你会记得在 `pushState` 调用中，对于推送的每个条目，你可以存储该条目的数据或状态。`popstate` 事件将你存储的状态传递给事件处理程序，并允许脚本访问状态对象。你可以通过访问事件的只读属性 `event.state` 来使用此状态数据。
+`popstate`事件通过`popstate`事件在 JavaScript window 对象上触发，并与一个处理函数相关联，在上一行中引用为`funcRef`。因此，当用户使用后退按钮浏览历史记录时，你可以执行任何必要的逻辑，以便在页面 HTML 中加载正确的上下文。你会记得在`pushState`调用中，对于推送的每个条目，你可以存储该条目的数据或状态。`popstate`事件将你存储的状态传递给事件处理程序，并允许脚本访问状态对象。你可以通过访问事件的只读属性`event.state`来使用此状态数据。
 
+## 图像查看器：捕获弹出状态事件
 
-
-## 9.3 图像查看器：捕获弹出状态事件
-
-在清单 9.2 中，你创建了一个简单的图像查看器，允许用户选择缩略图。选中后，图像会加载到查看区域，并将一个新的页面条目推入历史记录。然而，除非你能在用户使用浏览器后退按钮导航或脚本调用 `history.back` 或 `history.go` 时显示正确的图像，否则历史记录中的页面并无益处。在这个配方中，你将添加弹出状态事件处理器来捕获导航事件，并加载正确的图像和详情。
+在清单 9.2 中，你创建了一个简单的图像查看器，允许用户选择缩略图。选中后，图像会加载到查看区域，并将一个新的页面条目推入历史记录。然而，除非你能在用户使用浏览器后退按钮导航或脚本调用`history.back`或`history.go`时显示正确的图像，否则历史记录中的页面并无益处。在这个配方中，你将添加弹出状态事件处理器来捕获导航事件，并加载正确的图像和详情。
 
 将清单 9.3 中的高亮代码部分添加到清单 9.2 的现有脚本行之间，如下所示。
 
@@ -7245,32 +7401,37 @@ function showImage(imgNum) {
 
 **图 9.2 历史记录状态的推入和弹出**
 
-在代码中加入清单 9.3 的事件处理函数后，运行代码。当页面加载时，选择第二个缩略图，然后选择第三个缩略图。这会对每个选择执行 `pushState`，将它们添加到历史记录条目列表中。通过添加之前的弹出状态事件处理器，每当用户在浏览器中点击后退或前进按钮时，你都可以捕获该事件，然后根据事件上存储的状态为用户加载正确的图像。
+在代码中加入清单 9.3 的事件处理函数后，运行代码。当页面加载时，选择第二个缩略图，然后选择第三个缩略图。这会对每个选择执行`pushState`，将它们添加到历史记录条目列表中。通过添加之前的弹出状态事件处理器，每当用户在浏览器中点击后退或前进按钮时，你都可以捕获该事件，然后根据事件上存储的状态为用户加载正确的图像。
 
-现在点击浏览器的后退按钮。`popstate` 事件处理器将被调用。你首先会通过将事件状态分配给当前图像来检索状态，然后用它来显示正确的图像并设置标题。为了验证，你随后会更新 `stateInfo` div，以便你可以看到历史记录中弹出了什么（参见图 9.2）。
+现在点击浏览器的后退按钮。`popstate`事件处理器将被调用。你首先会通过将事件状态分配给当前图像来检索状态，然后用它来显示正确的图像并设置标题。为了验证，你随后会更新`stateInfo` div，以便你可以看到历史记录中弹出了什么（参见图 9.2）。
 
-请注意，即使从浏览器的历史记录下拉菜单中选择其中一个条目，也会触发该事件。尝试使用代码，看看 `pushState` 和 `popstate` 事件如何处理历史记录遍历。
+请注意，即使从浏览器的历史记录下拉菜单中选择其中一个条目，也会触发该事件。尝试使用代码，看看`pushState`和`popstate`事件如何处理历史记录遍历。
 
 > **提示**
-> 用户可以通过历史记录菜单或脚本中的 history API 命令（如 `go` 和 `back`）在浏览器历史记录中向后导航任意步数。最好将历史记录条目的数据元素与一个能让你确切知道条目上下文的键关联起来。例如，这可以是项目的唯一编号、幻灯片编号或其他唯一索引。这样，当处理 `popstate` 事件时，代码将确切知道要处理哪个元素，而不仅仅是最后访问的那个。
+
+> 用户可以通过历史记录菜单或脚本中的 history API 命令（如`go`和`back`）在浏览器历史记录中向后导航任意步数。最好将历史记录条目的数据元素与一个能让你确切知道条目上下文的键关联起来。例如，这可以是项目的唯一编号、幻灯片编号或其他唯一索引。这样，当处理`popstate`事件时，代码将确切知道要处理哪个元素，而不仅仅是最后访问的那个。
 
 ## 初级配方：使用 replaceState 更改历史记录
 
-History API 的 `replaceState` 方法用于用新条目替换浏览器历史记录中的当前条目。参数与 `pushState` 相同：data、title 和一个可选的 URL 字段。`replaceState` 方法在更新历史记录条目的状态（随着上下文变化）或设置页面的初始状态时很有用。`replaceState` 方法采用以下形式：
+History API 的`replaceState`方法用于用新条目替换浏览器历史记录中的当前条目。参数与`pushState`相同：data、title 和一个可选的 URL 字段。`replaceState`方法在更新历史记录条目的状态（随着上下文变化）或设置页面的初始状态时很有用。`replaceState`方法采用以下形式：
 
 ```
 history.replaceState(data, title [, url])
 ```
 
-当页面在浏览器中全新加载时，标题和 URL 会存储在历史记录条目中。但是，没有上下文数据与这些信息一起存储。要将数据与标题和 URL 一起存储，你可以在页面加载时调用 `replaceState`，使用相同的标题、URL 以及你的额外状态数据存储在历史记录条目中。这本质上将用相同的页面信息和你的额外数据覆盖当前条目。页面加载后，用户可以改进搜索结果，例如，在每次改进之后，你可以使用 `replaceState` 方法替换存储的设置。
+当页面在浏览器中全新加载时，标题和 URL 会存储在历史记录条目中。但是，没有上下文数据与这些信息一起存储。要将数据与标题和 URL 一起存储，你可以在页面加载时调用`replaceState`，使用相同的标题、URL 以及你的额外状态数据存储在历史记录条目中。这本质上将用相同的页面信息和你的额外数据覆盖当前条目。页面加载后，用户可以改进搜索结果，例如，在每次改进之后，你可以使用`replaceState`方法替换存储的设置。
 
-这个配方使用 `replaceState` 来演示页面如何不重新加载，而是改变当前历史记录条目的状态。页面加载后，用户可以点击一个按钮，该按钮用更新的计数器替换当前状态（键为 "page"，值为 idxCounter）。每次替换状态时，计数器只是递增。要构建清单 9.4 中的页面，请按照以下步骤操作：
+这个配方使用`replaceState`来演示页面如何不重新加载，而是改变当前历史记录条目的状态。页面加载后，用户可以点击一个按钮，该按钮用更新的计数器替换当前状态（键为 "page"，值为 idxCounter）。每次替换状态时，计数器只是递增。要构建清单 9.4 中的页面，请按照以下步骤操作：
 
-1. 创建一个空白 HTML 页面，包含一个空的 `stateInfo` div。这将用于查看你每次设置的内容。
-2. 添加一个按钮，当点击时，启动一个名为 `nextState` 的 JavaScript 函数。
-3. 插入包含 `history.replaceState` 的 `nextState` 函数：
+1. 创建一个空白 HTML 页面，包含一个空的`stateInfo` div。这将用于查看你每次设置的内容。
+
+2. 添加一个按钮，当点击时，启动一个名为`nextState`的 JavaScript 函数。
+
+3. 插入包含`history.replaceState`的`nextState`函数：
+
    `history.replaceState({page: idxCounter}, "page "+idxCounter, "?page="+idxCounter);`
-4. 在 `nextState` 中更新 `stateInfo` div，显示 `replaceState` 已执行，并递增 `idxCounter` 计数。
+
+4. 在`nextState`中更新`stateInfo` div，显示`replaceState`已执行，并递增`idxCounter`计数。
 
 ```
 清单 9.4 替换当前状态
@@ -7317,11 +7478,11 @@ window.addEventListener('load', init, false);
 </html>
 ```
 
-每次点击 "Replace State" 按钮时，你会注意到可以验证状态正在被替换，因为 URL 会显示你添加的查询字符串：`page=<idxCounter>`。如果你查看浏览器后退按钮的历史记录下拉菜单，你还会注意到每次调用 `replaceState` 时，都不会向堆栈添加新的历史记录条目。请注意，你在 `replaceState` 中为状态使用了不同样式的数据。你使用了一个 JSON 风格的序列化对象，键为 `page`，值为 `idxCounter`。对于 push 或 replace 的 data 元素，你不仅限于字符串，还可以存储复杂的对象。
+每次点击 "Replace State" 按钮时，你会注意到可以验证状态正在被替换，因为 URL 会显示你添加的查询字符串：`page=<idxCounter>`。如果你查看浏览器后退按钮的历史记录下拉菜单，你还会注意到每次调用`replaceState`时，都不会向堆栈添加新的历史记录条目。请注意，你在`replaceState`中为状态使用了不同样式的数据。你使用了一个 JSON 风格的序列化对象，键为`page`，值为`idxCounter`。对于 push 或 replace 的 data 元素，你不仅限于字符串，还可以存储复杂的对象。
 
 ## 中级配方：更改页面历史记录
 
-下一个配方在页面加载时对浏览器历史记录执行多个操作，采用 `pushState`、`replaceState` 以及 `back` 和 `forward` 方法。`popstate` 事件用于显示当使用历史记录方法时事件何时被触发。清单 9.5 显示了该配方的代码。
+下一个配方在页面加载时对浏览器历史记录执行多个操作，采用`pushState`、`replaceState`以及`back`和`forward`方法。`popstate`事件用于显示当使用历史记录方法时事件何时被触发。清单 9.5 显示了该配方的代码。
 
 **清单 9.5 推入和弹出**
 
@@ -7378,9 +7539,7 @@ window.addEventListener('load', loadPages, false);
 </html>
 ```
 
-加载时，脚本调用 `loadPages` 函数，该函数推入两个后续页面，执行一次 `replaceState`，执行两次 history back 命令，并
-
-
+加载时，脚本调用`loadPages`函数，该函数推入两个后续页面，执行一次`replaceState`，执行两次 history back 命令，并
 
 ## 第9章 更改浏览器历史记录
 
@@ -7398,20 +7557,21 @@ taking two steps forward
 POP - location: 9_4_page_flow.html?page=3, state: {"page":3}
 ```
 
-在推入页面 1 和页面 2 之后调用了 `replaceState`，因此浏览器历史记录中只剩下页面 1 和页面 3，其中页面 3 是当前状态。现在历史记录堆栈中已有一些条目，你可以通过调用 `history.back` 来回退。调用 `history.back` 会触发 popstate 事件，使你返回到页面 1。再次调用 `History.back`，会带你回到没有状态的原始页面。请注意，状态为 null，因为该页面是通过浏览器加载的，而非通过 pushState 或 replaceState。
+在推入页面 1 和页面 2 之后调用了`replaceState`，因此浏览器历史记录中只剩下页面 1 和页面 3，其中页面 3 是当前状态。现在历史记录堆栈中已有一些条目，你可以通过调用`history.back`来回退。调用`history.back`会触发 popstate 事件，使你返回到页面 1。再次调用`History.back`，会带你回到没有状态的原始页面。请注意，状态为 null，因为该页面是通过浏览器加载的，而非通过 pushState 或 replaceState。
 
-最后，你执行了 `history.go`，在浏览器堆栈中向前移动了两个页面。这通过从原始页面跳转到页面 1，然后再到页面 3（因为页面 2 之前已被页面 3 替换），将你带回到了页面 3。这可能会让人感到困惑，你可能会发现在弹出警告框时，在纸上画出这个过程会更容易理解。我们发现最简单的方法是绘制一个由块组成的塔，每个块代表一个推入的条目。替换一个条目就是替换一个块，而在历史记录中导航则只是将当前指针移动到堆栈中的某个块（参见图 9.3）。
+最后，你执行了`history.go`，在浏览器堆栈中向前移动了两个页面。这通过从原始页面跳转到页面 1，然后再到页面 3（因为页面 2 之前已被页面 3 替换），将你带回到了页面 3。这可能会让人感到困惑，你可能会发现在弹出警告框时，在纸上画出这个过程会更容易理解。我们发现最简单的方法是绘制一个由块组成的塔，每个块代表一个推入的条目。替换一个条目就是替换一个块，而在历史记录中导航则只是将当前指针移动到堆栈中的某个块（参见图 9.3）。
 
-需要注意的是，`popstate` 事件在窗口的 `onload` 事件触发之后才会触发。如果在窗口的 `onload` 事件之前调用了通常会触发 `popstate` 事件的方法，那么通常只有最后一个 `popstate` 事件会在浏览器中被触发。
+需要注意的是，`popstate`事件在窗口的`onload`事件触发之后才会触发。如果在窗口的`onload`事件之前调用了通常会触发`popstate`事件的方法，那么通常只有最后一个`popstate`事件会在浏览器中被触发。
 
 > **提示**
-> 本方法演示了在 `pushState` 执行后，`replaceState` 方法如何替换页面的状态。如你所见，原始页面的状态为 null，因为原始页面是通过浏览器加载的，而非通过 `pushState`。如果你需要为原始页面关联一个状态，请在页面加载时执行 `replaceState` 来关联你的状态数据。
+
+> 本方法演示了在`pushState`执行后，`replaceState`方法如何替换页面的状态。如你所见，原始页面的状态为 null，因为原始页面是通过浏览器加载的，而非通过`pushState`。如果你需要为原始页面关联一个状态，请在页面加载时执行`replaceState`来关联你的状态数据。
 
 ![](img/de30ea99ecac39b49e690a84c48f43b9_250_0.png)
 
 ## 高级方法：使用高级状态数据对象在页面间传递信息
 
-根据 `pushState` 和 `replaceState` 方法的语法，第一个参数可以接受字符串或对象作为表示页面状态的数据。到目前为止，你只为数据参数传递了字符串或一个小型键值对象。在许多情况下，页面上下文的更多详细信息最好能与历史记录条目一起保存，这样当用户返回该页面时，你可以直接渲染内容，而无需在浏览器外部调用获取信息。
+根据`pushState`和`replaceState`方法的语法，第一个参数可以接受字符串或对象作为表示页面状态的数据。到目前为止，你只为数据参数传递了字符串或一个小型键值对象。在许多情况下，页面上下文的更多详细信息最好能与历史记录条目一起保存，这样当用户返回该页面时，你可以直接渲染内容，而无需在浏览器外部调用获取信息。
 
 可以通过 JSON 表示法将对象传递给这些方法，如以下示例所示，其中包含一个 JSON 格式的变量：
 
@@ -7429,11 +7589,17 @@ history.pushState(stateObj, 'Slide 1', 'slide1.html');
 
 状态数据对象是存储用户在页面上执行的选项、操作或偏好设置的好方法，这些数据随后会与历史记录条目一起被存入。不过请注意，如果用户清除了浏览器历史记录，这些状态数据对象会丢失，并且每个浏览器可能对数据的长度有限制，但对于大多数用例来说，这应该不是问题。
 
-在本方法中，你将学习如何以 JSON 格式将数据与历史记录条目一起存储，然后通过 `window.onpopstate` 事件将数据取回。清单 9.6 使用幻灯片图像和用户偏好设置创建了一个简单的幻灯片放映。用户偏好设置与每个历史记录条目一起存储，这样当用户使用后退按钮导航到之前的幻灯片时，偏好设置会被恢复。偏好的恢复发生在 popstate 事件处理程序中。
+在本方法中，你将学习如何以 JSON 格式将数据与历史记录条目一起存储，然后通过`window.onpopstate`事件将数据取回。清单 9.6 使用幻灯片图像和用户偏好设置创建了一个简单的幻灯片放映。用户偏好设置与每个历史记录条目一起存储，这样当用户使用后退按钮导航到之前的幻灯片时，偏好设置会被恢复。偏好的恢复发生在 popstate 事件处理程序中。
 
 ### 清单 9.6 幻灯片演示：推入带数据的页面
 
-```
+
+
+# 幻灯片演示与浏览器历史记录控制
+
+## HTML 页面结构
+
+```html
 <!DOCTYPE html>
 <html>
 <head>
@@ -7578,16 +7744,13 @@ function setImgBorder() {
 </html>
 ```
 
-此代码允许用户为每张幻灯片设置图片边框和备注。你可以提供任意数量的选项。一个名为 stateInfo 的调试 div 会显示历史记录条目被弹出时数据的上下文。你可以使用 JSON.stringify 方法来显示 JSON 状态对象。要引用每个已存储的状态对象值，只需通过键名进行引用。例如，要获取边框状态值，可以调用 `event.state.border`。当用户点击下一张幻灯片时，你创建一个包含当前设置和幻灯片编号的对象。然后将其传递给 replaceState 调用，以便在推入下一张幻灯片之前存储状态。接着你重置设置并推入下一张幻灯片。
-
-
+此代码允许用户为每张幻灯片设置图片边框和备注。你可以提供任意数量的选项。一个名为`stateInfo`的调试`div`会显示历史记录条目被弹出时数据的上下文。你可以使用`JSON.stringify`方法来显示JSON状态对象。要引用每个已存储的状态对象值，只需通过键名进行引用。例如，要获取边框状态值，可以调用`event.state.border`。当用户点击下一张幻灯片时，你创建一个包含当前设置和幻灯片编号的对象。然后将其传递给`replaceState`调用，以便在推入下一张幻灯片之前存储状态。接着你重置设置并推入下一张幻灯片。
 
 ## 第9章 更改浏览器历史记录
 
-用于显示的幻灯片。当然，这并未考虑在当前幻灯片之后出现的已查看幻灯片，因为每个后续幻灯片都会作为新的历史记录条目被压入历史栈。为了解决这个问题，你可以使用HTML5的一些新的客户端存储技术，这些技术将在第11章“客户端存储”中介绍。
+用于显示的幻灯片。当然，这并未考虑在当前幻灯片之后出现的已查看幻灯片，因为每个后续幻灯片都会作为新的历史记录条目被压入历史栈。为了解决这个问题，你可以使用HTML5的一些新的客户端存储技术，这些技术将在第11章"客户端存储"中介绍。
 
-## 中级技巧：
-测试历史记录安全性
+## 中级技巧：测试历史记录安全性
 
 每当你能够修改浏览器历史记录、页面标题和URL地址时，都需要考虑安全问题。更改URL地址历来是常见的钓鱼方法之一，也被称为*网站伪造*。新的History API首次为开发者提供了一种无需实际加载页面即可更改URL内容的方法。然而，HTML5规范包含了各种浏览器需要遵循的保障措施，以防止History API的滥用：
 
@@ -7598,16 +7761,17 @@ function setImgBorder() {
 通过这些浏览器策略，History API可能被恶意使用的风险应被最小化。让我们通过尝试将URL更改为不同的域名来验证其中一项策略。
 
 > **注意**
-浏览器可能会实施限制并修剪历史记录栈，以防止潜在的"泛滥"攻击造成的过载。条目数量由每个浏览器决定，但移除顺序遵循先进先出（FIFO）原则。
+>
+> 浏览器可能会实施限制并修剪历史记录栈，以防止潜在的"泛滥"攻击造成的过载。条目数量由每个浏览器决定，但移除顺序遵循先进先出（FIFO）原则。
 
 关于允许JavaScript控制浏览器的URL显示，而无需实际更改页面或导致加载新页面，已经有很多争论。主要关注点是，诸如`pushState`或`replaceState`之类的方法可能被用于钓鱼以获取个人和机密信息，通过使用户看起来位于不同的位置。你可以想象，如果能够将地址更改为任何你想要的内容会造成多么大的混乱。然而，History API的规范要求浏览器验证`url`参数中使用的地址。如果使用绝对路径，则该地址必须与原始页面具有相同的源。让我们通过尝试将不同域名的页面压入历史记录来验证浏览器是否能防止这种可能的滥用。清单9.7提供了一个非常简单的页面用于压入新状态。请尝试它，并按照以下步骤创建清单9.7的副本，在你的浏览器中验证其是否有效：
 
-1. 创建一个空白HTML页面，其中包含一个按钮，单击时启动pushPage函数。
-2. 添加pushPage函数，该函数检查history.pushState方法的可用性，然后压入page.html的新上下文。
+1. 创建一个空白HTML页面，其中包含一个按钮，单击时启动`pushPage`函数。
+2. 添加`pushPage`函数，该函数检查`history.pushState`方法的可用性，然后压入`page.html`的新上下文。
 
 ### 清单9.7 同一源中的简单压入
 
-```
+```html
 <!DOCTYPE html>
 <html>
 <head>
@@ -7647,11 +7811,11 @@ window.addEventListener('load',init,false);
 </html>
 ```
 
-现在让我们对前面的清单进行微小的修改，看看如果有人试图使用pushState伪造域名URL会发生什么。如清单9.8所示，将pushState方法的url参数更改为与你当前运行的域名不同的域名的绝对路径。我们仅以www.asite.com为例。
+现在让我们对前面的清单进行微小的修改，看看如果有人试图使用`pushState`伪造域名URL会发生什么。如清单9.8所示，将`pushState`方法的`url`参数更改为与你当前运行的域名不同的域名的绝对路径。我们仅以`www.asite.com`为例。
 
 ### 清单9.8 设置不同的源
 
-```
+```html
 <!DOCTYPE html>
 <html>
 <head>
@@ -7693,20 +7857,22 @@ window.addEventListener('load',init,false);
 
 当使用`pushState`方法将新状态压入历史记录时，浏览器将验证传递的URL。如果URL是完整路径且域名与正在"压入"的域名不同，调用将失败、抛出异常，或者根据浏览器的不同可能不做任何操作。`replaceState`方法同样如此。
 
-### 实用库
+## 实用库
 
 作为Web开发者，我们不仅需要关注History API的安全方面，还需要关注该API在浏览器之间以及同一浏览器不同版本之间的支持情况。对于HTML5的几个新API，不同浏览器的实现程度差异很大，向后兼容性在可预见的未来将是一个问题，至少在大多数用户迁移到新版本之前是这样。对于History API，这意味着你需要继续支持哈希地址方法和`hashChange`事件，以保持页面状态的向后兼容性：
 
-```
+```javascript
 window.onhashchange = function() {
     alert("hash changed!");
 };
 window.location.hash = Math.random();
 ```
 
-然而，这并不意味着你必须放弃新的HTML5历史记录功能的好处。与大多数浏览器兼容性问题一样，其他开发者已经认识到这个缺点，并创建了库来处理不仅在浏览器之间，而且在浏览器版本之间的差异。对于History API，目前领先的库是history.js。
 
-你仍然可以自己编写逻辑，但history.js库可在GitHub上获取（https://github.com/balupton/History.js），并提供了一个易于使用的包装JavaScript库，该库尝试使用HTML5历史记录方法（如果支持），但在需要时会自动回退到哈希码方法。总体而言，其语法与你在本章中看到的History API方法、事件和属性相似。遗憾的是，我们在这里没有篇幅来详细探讨该库，但该库提供了以下功能：
+
+然而，这并不意味着你必须放弃新的HTML5历史记录功能的好处。与大多数浏览器兼容性问题一样，其他开发者已经认识到这个缺点，并创建了库来处理不仅在浏览器之间，而且在浏览器版本之间的差异。对于History API，目前领先的库是`history.js`。
+
+你仍然可以自己编写逻辑，但`history.js`库可在GitHub上获取（https://github.com/balupton/History.js），并提供了一个易于使用的包装JavaScript库，该库尝试使用HTML5历史记录方法（如果支持），但在需要时会自动回退到哈希码方法。总体而言，其语法与你在本章中看到的History API方法、事件和属性相似。遗憾的是，我们在这里没有篇幅来详细探讨该库，但该库提供了以下功能：
 
 - 多浏览器支持
 - 框架支持，包括jQuery、MooTools和Prototype
@@ -7716,7 +7882,7 @@ window.location.hash = Math.random();
 
 JavaScript中可用的History API功能非常强大，为Web开发者提供了在不更改实际页面的情况下更改用户站点历史记录的机会。GitHub和Flickr等网站已经充分利用了History API，提供了更用户友好的功能。
 
-在本章中，你研究了pushState和replaceState方法以及popstate事件如何与历史记录条目列表协同工作（参见图9.4）。
+在本章中，你研究了`pushState`和`replaceState`方法以及`popstate`事件如何与历史记录条目列表协同工作（参见图9.4）。
 
 以下是HTML5现在为历史记录添加的主要技术特性：
 
@@ -7725,8 +7891,6 @@ JavaScript中可用的History API功能非常强大，为Web开发者提供了�
 - 管理导航事件处理和检索状态
 
 你现在应该对如何在你自己的网站或应用中使用这些功能有了些想法。
-
-
 
 ## 10 使用地理位置 API 实现位置感知
 
@@ -7745,6 +7909,7 @@ JavaScript中可用的History API功能非常强大，为Web开发者提供了�
 通过地理位置 API，浏览器现在能够通过纬度和经度值告诉您其在世界上的位置，并附带一定的精确度。精确度取决于多个因素，开发者可以影响精确度。现在您可能想知道，如果您不知道街角咖啡馆的纬度和经度坐标，那么纬度和经度有什么用呢？为了让地理位置发挥作用，传达位置的通用方式必须处于“最低公分母”水平，而纬度和经度坐标系统提供了这一点。正如您将在本章后面看到的，有许多来自不同供应商的服务可以接收纬度和经度坐标并提供额外信息。并且，要进行反向地理编码（参见下文侧栏），给定像 Google 这样拥有大型地理数据库的供应商，一组坐标是相当容易获取的。
 
 > ### 反向地理编码
+>
 > 反向地理编码是地理编码（将地址转换为一组纬度和经度坐标）的相反过程，它是将一组纬度和经度坐标转换为物理地址的做法。各种服务都可以提供此信息。最常用的是 Google 地图 JavaScript API V3 服务 (http://code.google.com/apis/maps/documentation/javascript/services.html#ReverseGeocoding)。
 
 ### 浏览器兼容性
@@ -7767,26 +7932,27 @@ JavaScript中可用的History API功能非常强大，为Web开发者提供了�
 
 ### 世界在何处：getCurrentPosition
 
-地理位置 API 的基本功能是查找浏览器在世界上的当前位置。`getCurrentPosition` 方法通过 JavaScript 异步调用向您提供此信息。需要注意的是，在 JavaScript 中确定位置的调用本质上是异步的。大多数 JavaScript 是同步执行或在主程序流中执行的。通过异步方法调用，JavaScript 在后台执行调用，然后在过程完成后将结果返回给函数。通过将 API 调用设为异步调用，可以向用户显示查询结果，而不会阻塞页面其余部分的处理。
+地理位置 API 的基本功能是查找浏览器在世界上的当前位置。`getCurrentPosition`方法通过 JavaScript 异步调用向您提供此信息。需要注意的是，在 JavaScript 中确定位置的调用本质上是异步的。大多数 JavaScript 是同步执行或在主程序流中执行的。通过异步方法调用，JavaScript 在后台执行调用，然后在过程完成后将结果返回给函数。通过将 API 调用设为异步调用，可以向用户显示查询结果，而不会阻塞页面其余部分的处理。
 
-`getCurrentPosition` 方法检索浏览器的当前位置，并接受一个必需参数（成功回调函数名称）和两个可选参数（错误回调函数和位置选项对象）：
+`getCurrentPosition`方法检索浏览器的当前位置，并接受一个必需参数（成功回调函数名称）和两个可选参数（错误回调函数和位置选项对象）：
 
 `getCurrentPosition(successCallback [, errorCallback] [, positionOptions])`
 
-`getCurrentPosition` 的参数包括以下内容：
+`getCurrentPosition`的参数包括以下内容：
 
 - `successCallback`：要执行并传递坐标的函数
 - `errorCallback`：（可选）处理任何发生错误的函数
 - `options`：（可选）用于处理如何检索位置的选项对象
 
-由于对 `getCurrentPosition` 的调用是异步的，因此需要告诉该方法在方法完成后将执行哪些成功和潜在失败的函数。让我们立即开始，通过一个实践方案来找到您的位置。
+由于对`getCurrentPosition`的调用是异步的，因此需要告诉该方法在方法完成后将执行哪些成功和潜在失败的函数。让我们立即开始，通过一个实践方案来找到您的位置。
 
 ### 初学者实践：使用简单的 getCurrentPosition 确定您的位置
 
-在此实践中，页面将使用带有成功回调函数的 `getCurrentPosition` 方法来确定您的当前位置，并显示返回的位置对象的属性。请使用以下步骤和代码清单 10.1 来创建此实践：
+在此实践中，页面将使用带有成功回调函数的`getCurrentPosition`方法来确定您的当前位置，并显示返回的位置对象的属性。请使用以下步骤和代码清单 10.1 来创建此实践：
 
-1. 创建一个空白的 HTML 页面，其中包含一个 div（称为 `btnFindMe`）和一个“Find Me”按钮，该按钮在被点击时将调用 `findMe` 函数。
-2. 在一组 script 标签中添加 `findMe` 函数，使用以下代码来检查地理位置 API，然后调用 `getCurrentPosition` 方法：
+1. 创建一个空白的 HTML 页面，其中包含一个`div`（称为`btnFindMe`）和一个“Find Me”按钮，该按钮在被点击时将调用`findMe`函数。
+
+2. 在一组`script`标签中添加`findMe`函数，使用以下代码来检查地理位置 API，然后调用`getCurrentPosition`方法：
 
 ```javascript
 if (navigator.geolocation) {
@@ -7796,8 +7962,9 @@ if (navigator.geolocation) {
 }
 ```
 
-3. 添加 geoSuccess 函数，该函数将处理来自 getCurrentPosition 请求的成功回调。
-4. 在 HTML 中添加第二个 div（称为 myLocation），您将在其中显示从 getCurrentPosition 返回的位置信息。
+3. 添加`geoSuccess`函数，该函数将处理来自`getCurrentPosition`请求的成功回调。
+
+4. 在 HTML 中添加第二个`div`（称为`myLocation`），您将在其中显示从`getCurrentPosition`返回的位置信息。
 
 **代码清单 10.1 使用 getCurrentPosition 查找浏览器位置**
 
@@ -7862,17 +8029,15 @@ window.addEventListener('load',init,false);
 </html>
 ```
 
-当您点击“Find Me”按钮时，`findMe()` 函数将被调用。此函数的第一步是检查您使用的浏览器是否支持地理位置 API。此检查通过使用以下代码完成：
+当您点击“Find Me”按钮时，`findMe()`函数将被调用。此函数的第一步是检查您使用的浏览器是否支持地理位置 API。此检查通过使用以下代码完成：
 
 `if (navigator.geolocation) {`
 
-如果 navigator.geolocation 对象可用，那么您就可以执行 `getCurrentPosition`；否则，您可以通过显示 API 不支持的相应消息来处理 API 的缺失支持。成功验证 API 的可用性后，将使用回调函数名 `geoSuccess` 调用 `getCurrentPosition` 方法。这将是当 `getCurrentPosition` 完成时要执行的函数。
+如果`navigator.geolocation`对象可用，那么您就可以执行`getCurrentPosition`；否则，您可以通过显示 API 不支持的相应消息来处理 API 的缺失支持。成功验证 API 的可用性后，将使用回调函数名`geoSuccess`调用`getCurrentPosition`方法。这将是当`getCurrentPosition`完成时要执行的函数。
 
-当调用 `getCurrentPosition` 方法时，浏览器要执行的第一个操作是验证用户是否已授权浏览器向页面提供此信息，或者提示用户进行授权。根据使用的浏览器，消息和选项可能略有不同。例如，在 Firefox 中，会从浏览器顶部下拉一个授权面板，允许用户选择共享或不共享其位置，并记住该网站的选择。在 Safari 中，将出现一个对话框，向用户确认允许、不允许或允许接下来的 24 小时。
+当调用`getCurrentPosition`方法时，浏览器要执行的第一个操作是验证用户是否已授权浏览器向页面提供此信息，或者提示用户进行授权。根据使用的浏览器，消息和选项可能略有不同。例如，在 Firefox 中，会从浏览器顶部下拉一个授权面板，允许用户选择共享或不共享其位置，并记住该网站的选择。在 Safari 中，将出现一个对话框，向用户确认允许、不允许或允许接下来的 24 小时。
 
 当浏览器被授权检索您的位置时，浏览器将利用 WiFi 和蜂窝网络信息（如果可用）来确定位置。
-
-
 
 ## 第10章 使用地理定位API实现位置感知
 
@@ -7890,40 +8055,46 @@ window.addEventListener('load',init,false);
 | timestamp | | DOMTimeStamp | 当前的本地日期和时间 |
 
 信息将作为位置对象传递给成功回调函数。该位置对象包含位置的属性，包括纬度和经度（见表10.2）。
-位置对象的数据分为coords对象和一个DOMTimeStamp格式的时间戳。在geoSuccess函数中，你现在可以通过位置根对象来引用coords对象的各种属性。例如，要获取位置的纬度，你需要使用position.coords.latitude。每个浏览器对可选字段的处理方式会有所不同；图10.1展示了Chrome 14的输出。
+
+位置对象的数据分为`coords`对象和一个`DOMTimeStamp`格式的时间戳。在`geoSuccess`函数中，你现在可以通过位置根对象来引用`coords`对象的各种属性。例如，要获取位置的纬度，你需要使用`position.coords.latitude`。每个浏览器对可选字段的处理方式会有所不同；图10.1展示了Chrome 14的输出。
 
 ![](img/de30ea99ecac39b49e690a84c48f43b9_266_0.png)
 
 ## 位置隐私
 
 知晓浏览器的位置，从而知晓查看浏览器者的位置，这可以被视为隐私信息。允许用户共享其私人位置信息的方法是通过一个授权操作，正如你在第一个示例中看到的那样。在用户允许或拒绝访问位置之前，`getCurrentPosition` API调用将处于等待状态。这是该调用通过异步方法执行的一个关键原因，这样页面的其余部分就不会因为等待用户授权或回复而“阻塞”。
+
 你可能会想，如果用户没有提供信息授权或位置信息超时了会怎样。这时`getCurrentPosition`的错误处理参数就派上用场了，这也是你将在下一个示例中看到的内容。
 
 > **提示**
-当你使用地理定位API时，你可能会发现在某些情况下你的页面没有产生结果或返回了超时错误（正如你将在下一个示例中看到的）。这通常是因为你的代码中某个回调函数存在错误。由于位置方法是异步的，这些错误是否会冒泡到你的浏览器窗口取决于你正在使用的浏览器。在回调函数中使用`console.log()`调试来识别问题会很有帮助。
+>
+> 当你使用地理定位API时，你可能会发现在某些情况下你的页面没有产生结果或返回了超时错误（正如你将在下一个示例中看到的）。这通常是因为你的代码中某个回调函数存在错误。由于位置方法是异步的，这些错误是否会冒泡到你的浏览器窗口取决于你正在使用的浏览器。在回调函数中使用`console.log()`调试来识别问题会很有帮助。
 
 ## 中级示例：使用getCurrentPosition绘制位置地图
 
 在这个示例中，你将使用`getCurrentPosition`方法来获取浏览器的位置，并在页面上的谷歌地图中将其绘制出来。你将在示例中包含一个错误处理程序，以防`getCurrentPosition`方法返回错误（一旦你的页面正常工作，你就会让它发生）。
+
 与之前的示例类似，当页面加载时，用户可以点击“Map Me”按钮，这将触发`getCurrentPosition`方法。一旦你收到调用，你将使用经纬度坐标来创建一个带有标记和信息窗口的谷歌地图实例，用于显示坐标、城市和州。城市和州信息来自Mozilla地址对象，在其他浏览器中不可用。如果你想在其他浏览器中显示对应的物理地址，那么你需要使用反向地理编码，这将在本章的另一个示例中看到。
 
-- 1. 利用之前的示例，将按钮更改为“Map Me”，并将调用的函数更改为`mapMe`。
-- 2. 包含Google Maps JavaScript API V3 Overlay脚本标签（注意，使用V3版的Google Maps套件，你不再需要开发者密钥）：
+1. 利用之前的示例，将按钮更改为“Map Me”，并将调用的函数更改为`mapMe`。
+
+2. 包含Google Maps JavaScript API V3 Overlay脚本标签（注意，使用V3版的Google Maps套件，你不再需要开发者密钥）：
 
 ```html
 <script src="http://maps.google.com/maps/api/js?sensor=false">
 ```
 
-www.it-ebooks.info
+3. 修改`getCurrentPosition`请求以添加错误处理函数：
 
-- 3. 修改getCurrentPosition请求以添加错误处理函数：
 `navigator.geolocation.getCurrentPosition(geoSuccess, geoErrorHandler);`
 
-- 4. 添加geoErrorHandler函数`geoErrorHandler(error)`，该函数将处理getCurrentPosition请求返回的任何错误。
+4. 添加`geoErrorHandler`函数`geoErrorHandler(error)`，该函数将处理`getCurrentPosition`请求返回的任何错误。
 
-- 5. 更新HTML主体div部分，使其与清单10.2中的内容一致，包含一个包含mapCanvas、mapMe按钮和myLocation的容器。
+5. 更新HTML主体`div`部分，使其与清单10.2中的内容一致，包含一个包含`mapCanvas`、`mapMe`按钮和`myLocation`的容器。
 
 ### 清单10.2 使用getCurrentPosition绘制位置地图
+
+
 
 ```html
 <!DOCTYPE html>
@@ -8057,9 +8228,7 @@ window.addEventListener('load',init,false);
 </head>
 ```
 
-
-
-## 进阶示例：使用 getCurrentPosition 定位地图
+## 进阶示例：使用 `getCurrentPosition` 定位地图
 
 ```html
 <body>
@@ -8089,34 +8258,36 @@ window.addEventListener('load',init,false);
 错误处理程序允许你捕获返回的错误并采取相应的措施。一个常见的错误 `PERMISSION_DENIED` 是由于用户未授予页面上地理位置 API 调用所需的信息访问权限导致的。要查看此错误，请重新加载页面，当浏览器询问是否允许访问位置信息时，选择不共享或拒绝访问你的位置。错误处理程序 `geoErrorHandler` 将被调用，并传入一个位置错误对象。在我们的代码中，该位置错误对象（命名为 `error`）将包含两个属性：`code` 和 `message`。前面显示的代码是一个定义错误类型的数值常量，而 `message` 可能包含一个可选的字符串消息，供你（开发者）更深入地了解错误发生的原因。在这种情况下，由于用户拒绝了位置信息的访问权限，将提供 `PERMISSION_DENIED` 错误代码，你可以显示自己的消息。
 
 > **注意**
+
 Mozilla 添加了第四个可能的错误代码值：`UNKNOWN_ERROR` (0)。当位置检索因未知原因失败且不属于其他错误范围时，会提供此错误。在代码清单 10.2 中，`switch` 的 `default` 分支将捕获任何未知错误，包括 Mozilla 提供的 `UNKNOWN_ERROR`。在这种情况下，错误对象的 `message` 属性对于确定错误原因可能更有帮助。
 
 在示例中，你利用谷歌地图 JavaScript API V3 Overlay 向用户显示其带有标记的位置。与此标记关联的，你还打开了一个包含其经纬度坐标的信息窗口。Mozilla 提供了一个名为 `address` 的附加位置属性，它不在 W3C 规范中。它提供了坐标的物理位置。当然，由于位置的精度可能过大，这个物理地址位置可能不精确，但在可用时，它省去了使用另一个服务对坐标进行逆地理编码的需要。在这个示例中，如果 `address` 对象可用，你可以从中提取 `city` 和 `region` 属性，并将值附加到信息窗口中。以下是当提供 `address` 对象时可用的属性：
 
-- `city`: 包含城市名的 DOMString。
-- `country`: 包含国家名的 DOMString。
-- `countryCode`: 包含国家代码的 DOMString。
-- `county`: 包含县/郡名的 DOMString。
-- `postalCode`: 包含邮政编码或 ZIP 码的 DOMString。
-- `premises`: 包含建筑物/场所名称的 DOMString。
-- `region`: 包含地区/州/省名的 DOMString。
-- `street`: 包含街道名称的 DOMString。
-- `streetNumber`: 包含街道门牌号的 DOMString。
+- `city`: 包含城市名的 `DOMString`。
+- `country`: 包含国家名的 `DOMString`。
+- `countryCode`: 包含国家代码的 `DOMString`。
+- `county`: 包含县/郡名的 `DOMString`。
+- `postalCode`: 包含邮政编码或 ZIP 码的 `DOMString`。
+- `premises`: 包含建筑物/场所名称的 `DOMString`。
+- `region`: 包含地区/州/省名的 `DOMString`。
+- `street`: 包含街道名称的 `DOMString`。
+- `streetNumber`: 包含街道门牌号的 `DOMString`。
 
-### 进阶示例：使用 PositionOptions 确定距离
+### 进阶示例：使用 `PositionOptions` 确定距离
 
 如果 `address` 对象不可用，那么你可以使用谷歌提供的逆地理编码服务，这将在下一个示例中看到。在下一个示例中，你将研究 `getCurrentPosition` 接口提供的三个选项，以及它们如何根据你的具体需求发挥作用。
 
-### 进阶示例：使用 PositionOptions 确定距离
+### 进阶示例：使用 `PositionOptions` 确定距离
 
 本示例将首先使用 `getCurrentPosition` 定位你的浏览器位置，然后计算到一组点的距离，对你的位置进行逆地理编码，并将此信息显示给用户。为了更好地控制提供的位置信息，你将使用 `getCurrentPosition` 方法的第三个参数 `PositionOptions`。
 
 `PositionOptions` 是一个作为参数传递给 `getCurrentPosition` 方法的对象，允许你对该方法的行为进行一些控制。根据你正在开发的应用程序类型，这可能是有益的。例如，如果你正在为移动设备开发一个基于位置的餐厅应用程序，那么返回位置的常规精度可能对你的需求来说过于宽泛。你可以在 `getCurrentPosition` 的 `PositionOptions` 中设置三个选项，如表 10.3 所示。
 
 > 注意
+
 对于 `PositionOptions` 参数的 `timeout` 选项，用户在请求面板或对话框弹出期间授权访问位置信息所花费的时间不计算在此时间内。超时毫秒数仅针对实际调用执行的时间进行计算。
 
-### 表 10.3 PositionOptions 参数
+### 表 10.3 `PositionOptions` 参数
 
 | 选项 | 默认值 | 描述 |
 | :--- | :--- | :--- |
@@ -8130,7 +8301,9 @@ Mozilla 添加了第四个可能的错误代码值：`UNKNOWN_ERROR` (0)。当�
 
 1. 将 `setLocation` 方法调用添加到 `body` 的 `onload` 属性中，并添加 `setLocation` 函数，确保包含位置选项对象。
 2. 更新谷歌地图 JavaScript API V3 Overlay 脚本标签以加载用于距离计算的 geometry 库：
+
    `<script src="http://maps.google.com/maps/api/js?sensor=false&libraries=geometry"></script>`
+
 3. 添加 `reverseGeoCode` 函数，该函数接受你的经纬度点并从谷歌地理编码器检索地址信息。
 4. 添加 `calculateDistance` 函数，该函数使用 `computeDistanceBetween` 计算到伦敦、纽约和旧金山的距离。
 5. 更新 HTML body `div` 部分以与代码清单 10.3 中的结构一致，包含一个容器，其中包括 `mapCanvas`、位置信息和城市距离 div。
@@ -8138,8 +8311,6 @@ Mozilla 添加了第四个可能的错误代码值：`UNKNOWN_ERROR` (0)。当�
 代码清单 10.3 带有位置选项的 `getCurrentPosition`
 
 ```html
-<!DOCTYPE html>
-<html>
 <!DOCTYPE html>
 <html>
 <head>
@@ -8167,9 +8338,9 @@ Mozilla 添加了第四个可能的错误代码值：`UNKNOWN_ERROR` (0)。当�
 </html>
 ```
 
+## 中级示例：使用 `PositionOptions` 确定距离
 
 
-## 中级示例：使用 PositionOptions 确定距离
 
 ```html
 <style>
@@ -8366,29 +8537,29 @@ window.addEventListener('load',setLocation,false);
 </html>
 ```
 
-当页面加载时，你使用 `getCurrentPosition` 方法来检索经纬度坐标，但传递了一些关键选项。创建了一个名为 `posOptions` 的对象并传递给 `getCurrentPosition`。在 `posOptions` 中，你将最大有效时间选项设置为 60000，等于一分钟，超时时间设置为 30 秒（30000）。这告诉 `getCurrentPosition` 仅在位置信息不超过一分钟时从之前缓存的位置拉取数据。超时时间限制了 `getCurrentPosition` 检索位置所允许的时间长度：
+当页面加载时，你使用`getCurrentPosition`方法来检索经纬度坐标，但传递了一些关键选项。创建了一个名为`posOptions`的对象并传递给`getCurrentPosition`。在`posOptions`中，你将最大有效时间选项设置为`60000`，等于一分钟，超时时间设置为30秒（`30000`）。这告诉`getCurrentPosition`仅在位置信息不超过一分钟时从之前缓存的位置拉取数据。超时时间限制了`getCurrentPosition`检索位置所允许的时间长度：
 
 ```javascript
 var posOptions = {maximumAge:60000, timeout:30000};
 ```
 
-一旦你获得了位置信息，你就可以使用 Google 脚本中方便的 `geocoder` 对象进行反向地理编码以获取完整地址，然后计算到三个城市的距离。结果将类似于图 10.3。
+一旦你获得了位置信息，你就可以使用Google脚本中方便的`geocoder`对象进行反向地理编码以获取完整地址，然后计算到三个城市的距离。结果将类似于图10.3。
 
-正如你在本示例中所见，你可以通过在 `getCurrentPosition` 调用中设置 `PositionOptions` 对象来控制位置获取的行为。这些选项允许你更改精度和性能，将你的应用调整为满足用户所需的体验。到目前为止的示例已经包含了地图、反向地理编码甚至距离计算。你可能已经想过移动端空间以及如何随着用户位置的变化来更改呈现给用户的信息。嗯，地理定位 API 正好有这个功能，正如你将在下一个示例中看到的那样。
+正如你在本示例中所见，你可以通过在`getCurrentPosition`调用中设置`PositionOptions`对象来控制位置获取的行为。这些选项允许你更改精度和性能，将你的应用调整为满足用户所需的体验。到目前为止的示例已经包含了地图、反向地理编码甚至距离计算。你可能已经想过移动端空间以及如何随着用户位置的变化来更改呈现给用户的信息。嗯，地理定位API正好有这个功能，正如你将在下一个示例中看到的那样。
 
 ![](img/de30ea99ecac39b49e690a84c48f43b9_279_0.png)
 
-图 10.3 计算出的到三个城市的距离
+图10.3 计算出的到三个城市的距离
 
 ## 高级示例：使用 watchPosition 跟踪移动位置
 
-在许多情况下，你的访客使用的浏览器将是基于移动端的。人们在街上行走、乘坐地铁或以其他方式移动时获取关于周围环境或自身位置的信息，这并不少见。`getCurrentPosition` 方法在被调用时提供一次位置对象。然而，随着一个人四处移动，能够“跟踪”位置是很有用的。这就是地理定位 API 的两个新方法 `watchPosition` 和 `clearWatch` 的用武之地。
+在许多情况下，你的访客使用的浏览器将是基于移动端的。人们在街上行走、乘坐地铁或以其他方式移动时获取关于周围环境或自身位置的信息，这并不少见。`getCurrentPosition`方法在被调用时提供一次位置对象。然而，随着一个人四处移动，能够“跟踪”位置是很有用的。这就是地理定位API的两个新方法`watchPosition`和`clearWatch`的用武之地。
 
-`watchPosition` 方法与 `getCurrentPosition` 非常相似，接受相同的参数。当调用 `watchPosition` 方法时，浏览器将创建一个后台任务，并提供一个监视进程的引用 ID 作为返回值。后台任务将检索当前位置，将位置发送给成功回调，然后设置一个计时器来监视位置。每次计时器触发并检索到新位置时，都会比较该位置是否“显著”不同。如果新位置与上一次位置显著不同，则会使用新位置信息调用成功回调函数。该过程将持续运行，直到使用监视 ID 作为参数调用 `clearWatch` 方法，或者浏览器标签页或窗口被关闭（在 iPhone 等移动平台上，这可能是在浏览器被发送到后台时）。以下是 `watchPosition` 和 `clearWatch` 方法的接口：
+`watchPosition`方法与`getCurrentPosition`非常相似，接受相同的参数。当调用`watchPosition`方法时，浏览器将创建一个后台任务，并提供一个监视进程的引用ID作为返回值。后台任务将检索当前位置，将位置发送给成功回调，然后设置一个计时器来监视位置。每次计时器触发并检索到新位置时，都会比较该位置是否“显著”不同。如果新位置与上一次位置显著不同，则会使用新位置信息调用成功回调函数。该过程将持续运行，直到使用监视ID作为参数调用`clearWatch`方法，或者浏览器标签页或窗口被关闭（在iPhone等移动平台上，这可能是在浏览器被发送到后台时）。以下是`watchPosition`和`clearWatch`方法的接口：
 
 `long watchPosition (successCallback [, errorCallback] [, positionOptions])`
 
-`watchPosition` 方法的参数如下：
+`watchPosition`方法的参数如下：
 
 - `successCallback`：当浏览器识别到新位置时执行并传递位置对象的函数
 - `errorCallback`：（可选）处理任何发生错误的函数
@@ -8396,25 +8567,26 @@ var posOptions = {maximumAge:60000, timeout:30000};
 
 `clearWatch (watchId)`
 
-`clearWatch` 方法的参数如下：
+`clearWatch`方法的参数如下：
 
-- `watchId`：要结束的监视进程的 long 型 ID 引用
+- `watchId`：要结束的监视进程的long型ID引用
 
-在这个示例中，你将使用 `watchPosition` 方法来检索浏览器的位置，并在位置与上一个标记物相差超过四分之一英里时，在 Google 地图上绘制一个新的标记。本示例的视口在 `meta` 标签中设置为 iPhone 宽度，并配合 CSS 样式，以便该示例可以轻松地在 iPhone 上运行以显示地图上的移动。点之间将连接一条线，以显示过去点的轨迹，并且地图将
-
-## 高级技巧：使用 watchPosition 跟踪移动位置
-
-地图将始终以最后显示的点为中心。当用户点击“清除监控”按钮时，监控进程将结束。
+在这个示例中，你将使用`watchPosition`方法来检索浏览器的位置，并在位置与上一个标记物相差超过四分之一英里时，在Google地图上绘制一个新的标记。本示例的视口在`meta`标签中设置为iPhone宽度，并配合CSS样式，以便该示例可以轻松地在iPhone上运行以显示地图上的移动。点之间将连接一条线，以显示过去点的轨迹，并且地图将始终以最后显示的点为中心。当用户点击“清除监控”按钮时，监控进程将结束。
 
 通过检查与上一个点的距离，此方法可以在用户移动设备时保持地图相对干净。但是，如果您正在处理较小的尺度，例如城市内的导航，四分之一英里的差异可能太大；如果您使用的是快速交通工具，四分之一英里可能又不够大。这种距离检查将基于您自己的需求，但本技巧展示了如何在位置变化时使用一些快速的距离计算来过滤位置点。
 
--   1. 创建包含“开始监控”和“清除监控”按钮的 HTML 页面，如清单 10.4 所示。
--   2. 引入包含 geometry 库的 Google Maps JavaScript API V3 Overlay 脚本，以及用于存储监控 ID、地图、折线以及最后纬度和经度坐标的全局变量。
--   3. 在脚本中添加 `initMap` 函数，并将加载事件设置为启动 `initMap` 函数。
--   4. 添加 `startWatch` 和 `clearWatch` 函数。
--   5. 添加 `successCallback` 和 `errorCallback` 函数。
+1. 创建包含“开始监控”和“清除监控”按钮的HTML页面，如清单10.4所示。
+2. 引入包含geometry库的Google Maps JavaScript API V3 Overlay脚本，以及用于存储监控ID、地图、折线以及最后纬度和经度坐标的全局变量。
 
-**清单 10.4：使用 watchPosition 跟踪您的路径**
+
+
+### 3. 在脚本中添加 `initMap` 函数，并将加载事件设置为启动 `initMap` 函数。
+
+### 4. 添加 `startWatch` 和 `clearWatch` 函数。
+
+### 5. 添加 `successCallback` 和 `errorCallback` 函数。
+
+**清单 10.4：使用 `watchPosition` 跟踪您的路径**
 
 ```html
 <!DOCTYPE html>
@@ -8648,21 +8820,19 @@ window.addEventListener('load', initMap, false);
 
 让我们详细看看清单 10.4。当页面加载时，`initMap` 函数被调用并在页面上初始化地图。我们选择了纽约市的坐标，但您也可以轻松地设置不同的起始中心，或者仅在监控开始时加载地图。在 `initMap` 中，您在地图上创建了一个折线图层，这将允许您连接来自监控的坐标并向查看者显示“路径”。地图现已初始化，您可以开始位置监控。
 
-首先，点击或轻触“开始监控”按钮。通常，系统会要求您确认是否要共享位置信息。点击后，`startWatch` 函数将被调用。在 `startWatch` 函数中，您通过检查全局 watch ID 变量来检查是否已有监控进程运行。这可以防止启动多个监控进程。然后您设置位置选项并调用 `watchPosition` 方法。`watchPosition` 的返回值，即监控 ID，随后存储在 `watchId` 变量中，以便稍后可以使用它通过 `clearWatch` 停止该进程。
+首先，点击或轻触“开始监控”按钮。通常，系统会要求您确认是否要共享位置信息。点击后，`startWatch` 函数将被调用。在 `startWatch` 函数中，您通过检查全局 `watchId` 变量来检查是否已有监控进程运行。这可以防止启动多个监控进程。然后您设置位置选项并调用 `watchPosition` 方法。`watchPosition` 的返回值，即监控 ID，随后存储在 `watchId` 变量中，以便稍后可以使用它通过 `clearWatch` 停止该进程。
 
 当 `watchPosition` 返回一个位置对象时，您提取纬度和经度属性，创建一个经纬度对象，然后使用 Google 的 `computeDistanceBetween` 方法计算与上一个经纬度坐标的距离。在这种情况下，您将新坐标、最后一个坐标和一个常量值传递给该方法，告知函数您希望返回值以英里为单位。然后您检查此距离是否大于四分之一英里，以避免地图被标记淹没。如果下一个点的距离大于该值，则将新坐标推送到折线路径点数组中，并添加一个新标记。将坐标推送到数组会更新地图上的线，因此每个新点都会使路径增长，显示您到过的地方，如图 10.4 所示。
 
 本技巧展示了如何访问浏览器的位置，并在位置变化时收到通知。这些信息可用于广泛的应用程序，包括与基于位置的服务数据库集成，如 Yahoo Query Language 和 Google Places（测试版），以显示附近的兴趣点。
 
-
-
 地理定位 API 提供了一个简便的接口，用于为网站和应用程序添加基于位置和位置感知的功能。可以设计的一些解决方案包括：
 
--   显示特定位置的信息
--   邻近感知
--   根据区域动态调整，例如语言和货币
--   集成地图和路线
--   为数据、图片和其他项目添加地理位置标记信息
+- 显示特定位置的信息
+- 邻近感知
+- 根据区域动态调整，例如语言和货币
+- 集成地图和路线
+- 为数据、图片和其他项目添加地理位置标记信息
 
 在本章中，你学习了 `getCurrentPosition`、`watchPosition` 和 `clearWatch` 方法，以及这些方法的成功和错误回调函数。其可能性是无限的，现在浏览器能提供这个选项令人兴奋。
 
@@ -8685,63 +8855,68 @@ HTML5 提供的会话存储和本地 Web 存储选项与 cookie 类似，其结�
 HTML5 中的存储选项采用“基于源”的安全策略，通过将对会话存储、本地存储和数据库客户端存储的访问限制为来自创建存储的同一域名的页面。这样，来自其他网站或页面的数据就无法被访问。然而，“源”安全实现使用页面的源作为访问会话存储和本地存储键/值对列表的决定因素。因此，存储有可能暴露给嵌入式脚本。这使得了解你在页面中使用的外部文件的行为变得更加重要。
 
 > **注意**
+>
 > 你使用 `local`、`session` 或 `database` 对象存储的数据仅限于访问者当时使用的特定浏览器。如果用户使用不同的浏览器或不同的计算机返回你的网站或应用程序，那么存储将无法访问。你希望在任何地方都能访问的数据仍然需要存储在你的数据库服务器或云中。
 
 **表 11.1 客户端存储类型和属性**
 
-| 存储       | 格式       | 作用域             | 持久性           |
-|-----------|--------------|-------------------|-------------------|
-| 会话存储   | 键/值    | 仅限会话      | 仅限会话      |
-| 本地存储   | 键/值    | 跨会话   | 跨会话   |
-| 数据库存储  | 结构化   | 跨会话   | 跨会话   |
-
-不同的浏览器平台正在迅速采用客户端存储，Chrome 在这方面的支持是领先的。不同浏览器对于最佳数据库存储机制的实现仍存在争议，但表 11.2 列出了各种浏览器当前对客户端存储对象的支持情况。
-
-**表 11.2 客户端存储浏览器支持情况**
-
-| 浏览器         | 版本 |
-| :-------------- | :------ |
-| Android         | 2.1+    |
-| Chrome          | 10.0+   |
-| Firefox         | 10.6+   |
-| Internet Explorer| 8.0+   |
-| iOS Safari      | 3.2+    |
-| Opera           | 10.6+   |
-| Safari          | 4.0+    |
-
-### 键和值：sessionStorage 和 localStorage
-
-会话存储对象和本地存储对象在实现上相似，仅在数据的写入作用域和持久性方面有所不同，如表 11.1 所示。浏览器为每种存储类型提供了内置的存储接口：`sessionStorage` 和 `localStorage`，每个都使用键/值对列表来存储数据。你可以将一个值设置给一个键，然后通过请求该键来检索值。这两个存储对象都提供了设置值、获取值、移除键、检索列表中某个位置的键以及清除存储对象中所有键/值对的方法。每种存储对象类型的方法和属性是相同的，因为它们继承自 Web 存储规范中定义的同一个 `Storage` 接口：
-
--   `setItem(key,value)`：设置作为参数传递的键/值对。如果键已存在，则使用传递的值更新。
--   `getItem(key)`：返回作为参数传递的键对应的值。
--   `removeItem(key)`：移除由传递的键定义的键/值对。
--   `key(n)`：返回给定索引的键的名称。
--   `clear`：移除所有键/值对。
--   `length`：提供存储列表中键/值对的数量。
-
-要设置一个项，你需要调用 `setItem` 并提供一个要设置的键和值：
-
-`setItem(key, value)`
+| 存储 | 格式 | 作用域 | 持久性 |
 
 
 
 ## 第11章 客户端存储
 
+| 存储类型 | 数据格式 | 数据生命周期 | 作用域 |
+|-----------|--------------|-------------------|-------------------|
+| 会话存储 | 键/值 | 仅限会话 | 仅限会话 |
+| 本地存储 | 键/值 | 跨会话 | 跨会话 |
+| 数据库存储 | 结构化 | 跨会话 | 跨会话 |
+
+不同的浏览器平台正在迅速采用客户端存储，Chrome 在这方面的支持是领先的。不同浏览器对于最佳数据库存储机制的实现仍存在争议，但表 11.2 列出了各种浏览器当前对客户端存储对象的支持情况。
+
+**表 11.2 客户端存储浏览器支持情况**
+
+| 浏览器 | 版本 |
+| :-------------- | :------ |
+| Android | 2.1+ |
+| Chrome | 10.0+ |
+| Firefox | 10.6+ |
+| Internet Explorer | 8.0+ |
+| iOS Safari | 3.2+ |
+| Opera | 10.6+ |
+| Safari | 4.0+ |
+
+### 键和值：sessionStorage 和 localStorage
+
+会话存储对象和本地存储对象在实现上相似，仅在数据的写入作用域和持久性方面有所不同，如表 11.1 所示。浏览器为每种存储类型提供了内置的存储接口：`sessionStorage` 和 `localStorage`，每个都使用键/值对列表来存储数据。你可以将一个值设置给一个键，然后通过请求该键来检索值。这两个存储对象都提供了设置值、获取值、移除键、检索列表中某个位置的键以及清除存储对象中所有键/值对的方法。每种存储对象类型的方法和属性是相同的，因为它们继承自 Web 存储规范中定义的同一个 `Storage` 接口：
+
+- `setItem(key,value)`：设置作为参数传递的键/值对。如果键已存在，则使用传递的值更新。
+- `getItem(key)`：返回作为参数传递的键对应的值。
+- `removeItem(key)`：移除由传递的键定义的键/值对。
+- `key(n)`：返回给定索引的键的名称。
+- `clear`：移除所有键/值对。
+- `length`：提供存储列表中键/值对的数量。
+
+要设置一个项，你需要调用 `setItem` 并提供一个要设置的键和值：
+
+```
+setItem(key, value)
+```
+
 以下是参数说明：
 
--   **key**：用于存储字符串值的键名
--   **value**：需要与键一同存储的值
+- `key`：用于存储字符串值的键名
+- `value`：需要与键一同存储的值
 
 该值是字符串类型，因此如果存储的是数字，在存储中将被视为字符串，检索时需要转换回正确的数据类型。键和值随后将按无特定顺序存储在浏览器存储中该页面所属域的键值对列表中。
 
-如果使用已存在的键设置项，则该键的值将更新为提供的新值。因此，`setItem` 方法同时充当创建方法和更新方法。要将值 "book" 存储在会话存储的 "source" 键下，可以在 JavaScript 中进行如下调用：
+如果使用已存在的键设置项，则该键的值将更新为提供的新值。因此，`setItem` 方法同时充当创建方法和更新方法。要将值 `"book"` 存储在会话存储的 `"source"` 键下，可以在 JavaScript 中进行如下调用：
 
 ```
 sessionStorage.setItem('source', 'book');
 ```
 
-`setItem` 方法没有返回值，因此为防止可能的存储错误，可以将调用封装在 try-catch 块中。
+`setItem` 方法没有返回值，因此为防止可能的存储错误，可以将调用封装在 `try-catch` 块中。
 
 要从会话存储或本地存储中检索键的值，请使用你感兴趣的键调用 `getItem`。返回值是字符串，随后可在脚本中使用：
 
@@ -8751,7 +8926,7 @@ string getItem(key)
 
 此处 `key` 是用于检索对应值的字符串键。
 
-要检索上一个示例中存储的值，可以通过执行以下调用从会话存储中请求 "source" 键：
+要检索上一个示例中存储的值，可以通过执行以下调用从会话存储中请求 `"source"` 键：
 
 ```
 textSource = sessionStorage.getItem('source');
@@ -8766,15 +8941,16 @@ textSource = sessionStorage.source;
 在简要讨论了会话存储和本地存储的获取与设置方法后，我们将展示一个基本配方的实际应用。我们将从会话对象开始展示配方，然后转向本地存储。
 
 > **提示**
+>
 > 在 Firefox 等浏览器中，用户可以禁用存储。为验证存储是否可用，你的代码应尝试写入然后检索一个值。如果无法检索到该值，则可能是浏览器中禁用了存储。
 
-## 初学者配方：获取和设置会话存储
+### 初学者配方：获取和设置会话存储
 
 在此配方中，HTML 页面将使用 `sessionStorage` 对象的 `getItem` 和 `setItem` 方法，在会话中存储并检索访问者查看页面的次数。每次刷新页面时，此数字会递增并向访问者显示。请执行以下步骤创建清单 11.1 中的页面：
 
-1.  创建一个空白 HTML 页面，其中包含一个标题为 `divVisits` 的 div。
-2.  在一组 `script` 标签中添加 `init` 函数，代码来自清单 11.1。
-3.  添加 `window.addEventListener` 事件处理程序，以便在页面加载后启动 `init` 函数。
+1. 创建一个空白 HTML 页面，其中包含一个标题为 `divVisits` 的 div。
+2. 在一组 `script` 标签中添加 `init` 函数，代码来自清单 11.1。
+3. 添加 `window.addEventListener` 事件处理程序，以便在页面加载后启动 `init` 函数。
 
 **清单 11.1** 使用会话存储显示页面访问量
 
@@ -8833,17 +9009,18 @@ window.addEventListener('load',init,false);
 
 当你在浏览器中加载清单 11.1 创建的页面时，`init` 函数将被启动。`init` 函数将首先通过检查 `window.sessionStorage` 来查看会话存储对象在窗口中是否可用。如果会话存储对象不可用，则会在页面上的 div 中显示一条消息。
 
-假设会话存储对象可用，JavaScript 代码然后通过点表示法请求值来检查键 "visits" 是否存在：`sessionStorage.visits`。如果键 "visits" 存在，则会返回该值，并且检查将通过。否则，你就知道这是该会话的第一次，并将 "visits" 计数从 1 开始。如果该键在会话存储中，那么为了演示获取值的 `get` 方法，你将通过 `getItem` 方法检索该键的值。检索到值后，你使用 `parseInt` 将 "visits" 字符串值转换为整数数据类型。必须进行此转换，因为 Web 存储中的所有值都作为基本字符串存储。如果你的脚本存储并随后检索其他数据类型，你将需要将这些字符串转换为其适当的类型。
+假设会话存储对象可用，JavaScript 代码然后通过点表示法请求值来检查键 `"visits"` 是否存在：`sessionStorage.visits`。如果键 `"visits"` 存在，则会返回该值，并且检查将通过。否则，你就知道这是该会话的第一次，并将 `"visits"` 计数从 1 开始。如果该键在会话存储中，那么为了演示获取值的 `get` 方法，你将通过 `getItem` 方法检索该键的值。检索到值后，你使用 `parseInt` 将 `"visits"` 字符串值转换为整数数据类型。必须进行此转换，因为 Web 存储中的所有值都作为基本字符串存储。如果你的脚本存储并随后检索其他数据类型，你将需要将这些字符串转换为其适当的类型。
 
-检索到访问次数并将其递增 1 或将初始值设置为 1 后，脚本将使用 `setItem` 方法更新会话存储中的 "visits" 键。如果该键之前不在会话存储中，则 `setItem` 将添加键/值对，但如果 "visits" 键已经在会话存储中，则该值将更新为新的访问次数。
+检索到访问次数并将其递增 1 或将初始值设置为 1 后，脚本将使用 `setItem` 方法更新会话存储中的 `"visits"` 键。如果该键之前不在会话存储中，则 `setItem` 将添加键/值对，但如果 `"visits"` 键已经在会话存储中，则该值将更新为新的访问次数。
 
-## 用于查看存储的 Chrome 开发者工具
+### 用于查看存储的 Chrome 开发者工具
 
 在浏览器中加载清单 11.1 创建的页面后，你可能想知道如何在脚本运行时验证本地会话存储中幕后发生的情况。Google Chrome 浏览器有一套名为开发者工具的工具集，你可能已经熟悉。如果在浏览器窗口中打开这些工具并刷新页面，你将能够在"资源"部分下看到会话存储的键/值对，如图 11.1 所示。
 
 在图 11.1 中，左侧"会话存储"下显示了存储了键的域，右侧是当前存储的键/值对。在此例中，当前的访问次数值为 2，JavaScript 已将其显示给用户。Chrome 的开发者工具对于处理会话存储和本地存储非常有用，因为你不仅可以确认脚本正常工作，还可以通过用户界面添加、更新和删除键/值对。在当前版本的开发者工具中，如果你更改了键/值对，需要使用底部的"刷新"按钮刷新存储键/值视图窗格。
 
 > **提示**
+>
 > 任何具有内置 `toString` 方法的对象都可以存储在会话存储和本地存储的键/值对的 value 字段中。甚至更复杂的 JSON 结构化对象也可以通过使用 `JSON.stringify(yourObject)` 和 `JSON.parse(itemRetrieved)` 方法转换 JSON 对象为字符串，然后将检索到的字符串转换回你的对象来存储。
 
 ![](img/de30ea99ecac39b49e690a84c48f43b9_295_0.png)
@@ -8852,20 +9029,22 @@ window.addEventListener('load',init,false);
 
 此配方执行了会话存储中键/值对的非常简单的设置和获取操作。下一个配方将包含错误处理，并展示会话存储在不同页面间的可用性。
 
-## 初学者配方：来自会话存储的样式
+### 初学者配方：来自会话存储的样式
 
 在此配方中，你将为访问页面的访问者提供选择页面背景主题颜色的机会。访问者的选择将存储在会话存储中，并在第二个页面上检索以控制背景颜色。提供了一个主题重置选项，它将从会话存储中移除已存储的背景键/值对。以下是本配方中将使用的 `removeItem` 方法：
 
-`removeItem(key)`
+```
+removeItem(key)
+```
 
 此处 `key` 是要移除的键字符串。
 
-与任何数据存储机制一样，会话存储和本地存储有大小限制以保护浏览器和客户端机器。每个浏览器设置自己的大小限制，但与仅限 4KB 的小 Cookie 不同，为会话存储和本地存储分配的大小要大得多。在撰写本书时，例如 Internet Explorer 9 有 10MB 的限制。如果你的脚本尝试为键设置或更新值并达到此上限，将抛出一个错误。为防止你的脚本因该错误而突然终止，应将 `setItem` 方法调用封装在 try-catch 块中。在此配方中，我们将向你展示如果发生此错误如何捕获它。以下步骤和清单 11.2 将允许你创建配方的第 1 页：
+与任何数据存储机制一样，会话存储和本地存储有大小限制以保护浏览器和客户端机器。每个浏览器设置自己的大小限制，但与仅限 4KB 的小 Cookie 不同，为会话存储和本地存储分配的大小要大得多。在撰写本书时，例如 Internet Explorer 9 有 10MB 的限制。如果你的脚本尝试为键设置或更新值并达到此上限，将抛出一个错误。为防止你的脚本因该错误而突然终止，应将 `setItem` 方法调用封装在 `try-catch` 块中。在此配方中，我们将向你展示如果发生此错误如何捕获它。以下步骤和清单 11.2 将允许你创建配方的第 1 页：
 
-1.  使用 `style`、`script` 和 `body` 标签创建清单 11.2 中的页面。
-2.  添加 `themeContent` 和 `themeSettings` div，如清单 11.2 中的相应 HTML 所示。
-3.  将 `initTheme`、`setTheme`、`resetTheme` 和 `applyTheme` 函数添加到你的脚本中。
-4.  添加 `window.addEventListener` 语句以触发 `initTheme` 函数。
+1. 使用 `style`、`script` 和 `body` 标签创建清单 11.2 中的页面。
+2. 添加 `themeContent` 和 `themeSettings` div，如清单 11.2 中的相应 HTML 所示。
+3. 将 `initTheme`、`setTheme`、`resetTheme` 和 `applyTheme` 函数添加到你的脚本中。
+4. 添加 `window.addEventListener` 语句以触发 `initTheme` 函数。
 
 **清单 11.2** 在会话存储中设置主题
 
@@ -8875,21 +9054,6 @@ window.addEventListener('load',init,false);
 <head>
 <meta charset="UTF-8" />
 <title>11.2 主题选择器 - 第1页</title>
-<style>
-#themeContent {
-```
-
-
-
-## 第11章 客户端存储
-
-### 代码清单11.2 显示主题 - 第1页
-
-```html
-<!DOCTYPE html>
-<html><head>
-<meta charset="UTF-8" />
-<title>11.2 显示主题 - 第1页</title>
 <style>
 #themeContent {
   background-color:#FFF;
@@ -9000,8 +9164,12 @@ window.addEventListener('load',initTheme,false);
 
 在第1页（即代码清单11.2）设置主题后，你可以通过加载另一个读取存储并使用主题信息来设置正确主题的页面，来验证主题已被存储。请按照以下步骤，使用代码清单11.3创建第二个页面，以显示之前选择的主题颜色：
 
-1.  根据代码清单11.3创建一个包含相应部分的新页面。
-2.  修改两个页面中的`<a>`标签，使其指向你实际页面的名称，以便你可以在页面之间来回导航。
+
+
+## 根据代码清单11.3创建页面
+
+1. 根据代码清单11.3创建一个包含相应部分的新页面。
+2. 修改两个页面中的`<a>`标签，使其指向你实际页面的名称，以便你可以在页面之间来回导航。
 
 ### 代码清单11.3 显示主题 - 第2页
 
@@ -9060,6 +9228,7 @@ window.addEventListener('load',init,false);
 当第1页加载到你的浏览器时，页面首先从会话存储中检索当前存储的主题颜色。页面首次运行时，没有主题，返回值为空，因此主题设置为浏览器的默认值。在页面后续加载时，颜色会被检索出来，设置为背景色，并设置为颜色选择控件中的选中值。
 
 > **注意**
+>
 > 要运行涉及会话存储的示例，你需要将页面上传到服务器，而不是在“本地模式”下运行。原因是，在本地模式下，某些浏览器会抛出错误，指出不支持该操作。例如，在Firefox中，会抛出一个代码为9的“Operation is not supported”错误。
 
 一旦加载，访问者可以将下拉列表选项更改为另一种颜色，这会更改页面背景色，并将该颜色以`themeColor`为键存储在会话存储中。在脚本中，这个用于存储设置的`setItem`调用已被包装在一个try-catch块中。如果由于大小限制而触发，代码会通知访问者会话存储已满，但你可以在此场景发生时执行任何所需的其他操作。设置主题颜色后，访问者可以点击“转到第2页”，这将加载第二个页面。由于第二个页面与第一个页面在同一个会话中，它也可以访问第1页保存的会话存储键/值对。然后第二个页面检索此项目，并将背景设置为存储的颜色。
@@ -9068,7 +9237,7 @@ window.addEventListener('load',init,false);
 
 在本章开头，我们讨论了会话存储如何允许你仅为该会话存储数据。如果你在同一个浏览器中的两个标签页或窗口中加载代码清单11.2中创建的页面，然后选择不同的颜色，每个标签页将有自己的背景色，因为每个标签页或窗口都有不同的会话。要使值在浏览器窗口或标签页之间可用，甚至在浏览器关闭并重新打开后仍然可用，你需要使用本地存储对象。我们将在下一个示例中研究本地存储对象。
 
-### 中级技巧：使用本地存储存储表单
+## 中级技巧：使用本地存储存储表单
 
 如前面的示例所示，会话存储为你提供了一种在访问者会话期间存储项目的方法，这对于短期存储很有用。然而，有时你会希望将数据存储在访问者的浏览器中，以便他们返回时使用，甚至在当前活动的会话中使用。这就是本地存储的价值所在。本地存储使用相同的键/值对列表，并使用`getItem`、`setItem`和`removeItem`网络存储方法来存储数据。重要的因素是，你存储在本地存储中的数据在会话关闭后仍然会持久化。
 
@@ -9081,23 +9250,22 @@ DOMString key(index)
 ```
 
 这里，`index`是要返回其键字符串的键/值对的索引。
+
 该示例还使用了会话存储和本地存储的`length`属性，它返回会话存储或本地存储中键/值对的数量。要返回键/值对的数量，你可以使用如下调用：
 
 ```
 var numItems = localStorage.length;
 ```
 
+在这个示例中，你将同时使用`key`方法和`length`属性来遍历`localStorage`的键/值对。让我们按照以下步骤开始学习清单11.4的内容：
 
+1. 创建一个空白HTML文件，并添加清单11.4中的`body` HTML代码，其中包含了你将要使用的表单和表单字段。为了简化，我们在表单字段上使用了`onchange`内联事件，但你也可以为每个字段替换为事件监听器。
+2. 在HTML文件的`head`中添加`<script>`标签，并使用`window.addEventListener`函数，以便在页面加载时启动`checkStorage`函数。
+3. 在脚本中添加`checkStorage`函数，如清单11.4所示。
+4. 在脚本中添加`changeField`函数，如清单11.4所示，该函数将处理表单字段的更改。
+5. 在Chrome浏览器中加载该文件，并打开开发者工具，定位到本地存储区域，然后在字段中输入信息。
 
-在这个示例中，你将同时使用 `key` 方法和 `length` 属性来遍历 `localStorage` 的键/值对。让我们按照以下步骤开始学习清单 11.4 的内容：
-
-1.  创建一个空白 HTML 文件，并添加清单 11.4 中的 `body` HTML 代码，其中包含了你将要使用的表单和表单字段。为了简化，我们在表单字段上使用了 `onchange` 内联事件，但你也可以为每个字段替换为事件监听器。
-2.  在 HTML 文件的 `head` 中添加 `<script>` 标签，并使用 `window.addEventListener` 函数，以便在页面加载时启动 `checkStorage` 函数。
-3.  在脚本中添加 `checkStorage` 函数，如清单 11.4 所示。
-4.  在脚本中添加 `changeField` 函数，如清单 11.4 所示，该函数将处理表单字段的更改。
-5.  在 Chrome 浏览器中加载该文件，并打开开发者工具，定位到本地存储区域，然后在字段中输入信息。
-
-## 清单 11.4 将表单更改存储到 localStorage 中
+### 清单11.4 将表单更改存储到localStorage中
 
 ```html
 <!DOCTYPE html>
@@ -9194,13 +9362,13 @@ window.addEventListener('load', checkStorage, false);
 </html>
 ```
 
-在 `firstName` 字段中输入你的名字并切换到下一个字段后，`firstName` 字段的 `onchange` 事件将被触发。随后，`changeField` 函数将被执行，并将表单字段 `firstName` 作为参数传入。`changeField` 函数随后会将字段数据以键/值对的形式存储在 `localStorage` 中。该函数使用表单字段的 ID 作为键，字段值作为键/值对中的值。因此，如果你在执行此操作时在 Chrome 中打开了开发者工具，你现在应该会看到键 `firstName` 及其对应的文本输入值。
+在`firstName`字段中输入你的名字并切换到下一个字段后，`firstName`字段的`onchange`事件将被触发。随后，`changeField`函数将被执行，并将表单字段`firstName`作为参数传入。`changeField`函数随后会将字段数据以键/值对的形式存储在`localStorage`中。该函数使用表单字段的ID作为键，字段值作为键/值对中的值。因此，如果你在执行此操作时在Chrome中打开了开发者工具，你现在应该会看到键`firstName`及其对应的文本输入值。
 
-为了真正体会 `localStorage` 的强大功能，请关闭你的标签页或浏览器窗口，然后重新打开此表单页面。当你重新打开页面时，`checkStorage` 函数将在页面加载时执行。此函数旨在检查你之前是否在本地存储中保存过任何表单信息，并检索这些信息。该函数将通过遍历 `localStorage` 列表来获取每个键/值对，检查是否存在与键名匹配的表单字段 ID，如果匹配，则将字段值设置为检索到的值。
+为了真正体会`localStorage`的强大功能，请关闭你的标签页或浏览器窗口，然后重新打开此表单页面。当你重新打开页面时，`checkStorage`函数将在页面加载时执行。此函数旨在检查你之前是否在本地存储中保存过任何表单信息，并检索这些信息。该函数将通过遍历`localStorage`列表来获取每个键/值对，检查是否存在与键名匹配的表单字段ID，如果匹配，则将字段值设置为检索到的值。
 
-在这个示例中，你使用简单的文本字段来展示 `localStorage` 的功能，但它也可以用于其他类型的表单输入。`changeField` 和 `checkStorage` 函数需要更新以处理不同字段类型（如选择列表或单选按钮）的不同逻辑，但其值可以像普通文本输入一样存储在本地存储中。
+在这个示例中，你使用简单的文本字段来展示`localStorage`的功能，但它也可以用于其他类型的表单输入。`changeField`和`checkStorage`函数需要更新以处理不同字段类型（如选择列表或单选按钮）的不同逻辑，但其值可以像普通文本输入一样存储在本地存储中。
 
-当页面完成存储表单信息并最终将表单提交给服务器后，理想情况下你会想要删除这些字段。除了你之前看到的 `removeItem` 方法外，存储 API 还提供了一个用于清除整个会话或本地存储的方法：`clear`。`clear` 方法不接受任何参数，也不返回任何结果，它会从列表中“清除”页面域的所有键/值对。以下是调用示例：
+当页面完成存储表单信息并最终将表单提交给服务器后，理想情况下你会想要删除这些字段。除了你之前看到的`removeItem`方法外，存储API还提供了一个用于清除整个会话或本地存储的方法：`clear`。`clear`方法不接受任何参数，也不返回任何结果，它会从列表中“清除”页面域的所有键/值对。以下是调用示例：
 
 ```javascript
 localStorage.clear();
@@ -9208,34 +9376,34 @@ localStorage.clear();
 
 执行这行代码将从本地存储列表中清除所有键/值对，无论它们是由哪个页面添加的，或者是何时添加的。由于这是一种“全有或全无”类型的方法，你应该绝对确定要清除会话存储或本地存储的内容。
 
-到目前为止，在这个系列示例中，你已经学习了在客户端机器上为网站添加、更新和删除存储数据的基础知识。这假设访问者当时在单个页面上与网站交互。如果存储的信息是从浏览器中的另一个页面更改的，你无法自动处理之前打开的页面上的这种更改。客户端存储 API 为会话存储和本地存储更新提供了事件结构，你可以在打开的页面上捕获并处理这些事件。下一个示例将结合你所学的方法与存储更新事件，以刷新你的页面内容。
+到目前为止，在这个系列示例中，你已经学习了在客户端机器上为网站添加、更新和删除存储数据的基础知识。这假设访问者当时在单个页面上与网站交互。如果存储的信息是从浏览器中的另一个页面更改的，你无法自动处理之前打开的页面上的这种更改。客户端存储API为会话存储和本地存储更新提供了事件结构，你可以在打开的页面上捕获并处理这些事件。下一个示例将结合你所学的方法与存储更新事件，以刷新你的页面内容。
 
 ## 高级示例：在本地存储中捕获事件
 
 在这个示例中，你将使用本地存储的方法和属性来实现一个笔记侧边栏，允许访问者在浏览网站时做笔记。笔记存储在访问者浏览器的本地存储中，并且笔记的顺序得以维护。访问者可以添加新笔记、更新笔记、删除笔记或删除所有笔记。此外，如果访问者在多个标签页或浏览器实例中查看网站，当一个页面上的笔记发生变化时，所有页面上的笔记都会自动更新。
 
-为了根据访问者在另一个标签页或窗口中对笔记列表的更改，自动更新浏览器标签页或窗口中的笔记列表，你需要采用存储事件机制。与你见过的其他事件一样，当会话存储或本地存储被修改时，会触发存储事件。该事件可能在添加、更新或移除新的键/值对时发生。页面上的处理程序可以监听这些事件，并根据接收到的事件执行操作。`storageEvent` 包含有助于确定所需操作的属性（表 11.3）。在这个示例中，你将捕获该事件，验证它来自本地存储，向访问者提示更改，然后刷新笔记列表，以便显示当前列表。
+为了根据访问者在另一个标签页或窗口中对笔记列表的更改，自动更新浏览器标签页或窗口中的笔记列表，你需要采用存储事件机制。与你见过的其他事件一样，当会话存储或本地存储被修改时，会触发存储事件。该事件可能在添加、更新或移除新的键/值对时发生。页面上的处理程序可以监听这些事件，并根据接收到的事件执行操作。`storageEvent`包含有助于确定所需操作的属性（表11.3）。在这个示例中，你将捕获该事件，验证它来自本地存储，向访问者提示更改，然后刷新笔记列表，以便显示当前列表。
 
-### 表 11.3 storageEvent 属性
+### 表11.3 storageEvent属性
 
 | 属性 | 类型 | 目的 |
 |---|---|---|
 | key | DOMString | 发生更改的键 |
 | oldValue | DOMString | 旧值 |
 | newValue | DOMString | 新值 |
-| url | DOMString | 进行更改的页面的 URL |
+| url | DOMString | 进行更改的页面的URL |
 | storageArea | Storage | 此更新发生的存储区域 |
 
-让我们按照以下步骤开始学习清单 11.5：
+让我们按照以下步骤开始学习清单11.5：
 
-1.  创建一个空白 HTML 页面，包含如清单 11.5 所示的 HTML `body` 和 `style` 标签。
-2.  添加 `<script>` 标签和 `keyCode` 变量声明。此变量保存一个键，你将使用它作为每个存储笔记的前缀。
-3.  添加 `window.addEventListener` 行以及 `initNoteBoard` 和 `updateNoteBoard` 函数。
-4.  添加笔记函数：`addNote`、`changeNote`、`updateNote` 和 `removeNote`。`changeNote` 函数将笔记加载到更新表单中，而 `updateNote` 则修改本地存储中的笔记。
-5.  添加 `clearAllNotes` 函数，允许访问者重置笔记板。
-6.  添加事件处理函数 `onStorageEvent`，它将捕获任何存储事件。
+1. 创建一个空白HTML页面，包含如清单11.5所示的HTML `body`和`style`标签。
+2. 添加`<script>`标签和`keyCode`变量声明。此变量保存一个键，你将使用它作为每个存储笔记的前缀。
+3. 添加`window.addEventListener`行以及`initNoteBoard`和`updateNoteBoard`函数。
+4. 添加笔记函数：`addNote`、`changeNote`、`updateNote`和`removeNote`。`changeNote`函数将笔记加载到更新表单中，而`updateNote`则修改本地存储中的笔记。
+5. 添加`clearAllNotes`函数，允许访问者重置笔记板。
+6. 添加事件处理函数`onStorageEvent`，它将捕获任何存储事件。
 
-## 清单 11.5 在本地存储中存储笔记
+### 清单11.5 在本地存储中存储笔记
 
 ```html
 <!DOCTYPE html>
@@ -9268,9 +9436,9 @@ section {width: 300px;}
 #addNote, #updateNote {float: left;}
 ```
 
-
-
 ## 高级技巧：在本地存储中捕获事件
+
+
 
 ```
 #addNote {
@@ -9487,22 +9655,21 @@ window.addEventListener('load', initNoteBoard, false);
 </html>
 ```
 
-页面加载时，初始化过程会启动 `initNoteBoard` 函数。该函数附加事件监听器以捕获任何存储事件，并将触发 `storageEvent` 处理程序。接下来，`initNoteBoard` 通过检查本地存储来更新便条的显示。在 `updateNoteBoard` 函数中，脚本会首先检索键 `numNotes`，该键记录了之前存储的便条数量。然后，使用 `numNotes`，脚本将循环遍历并使用前缀 `keyCode`（即 "note"）和从0开始的索引来检索每个键值对。因此，要检索第一条便条，页面会调用 `getItem` 并使用键 `note0`。使用 `keyCode` 和 `numNotes` 键有两个原因。首先，使用它们可以确保您不必遍历站点本地存储中可能存储的任何其他键值对；其次，这将使您能够有序地组织便条。请记住，对于会话和本地存储，列表中的键值对没有特定的顺序。浏览器使用 `setItem` 插入它们时没有特定顺序（参见图 11.2）。
+页面加载时，初始化过程会启动`initNoteBoard`函数。该函数附加事件监听器以捕获任何存储事件，并将触发`storageEvent`处理程序。接下来，`initNoteBoard`通过检查本地存储来更新便条的显示。在`updateNoteBoard`函数中，脚本会首先检索键`numNotes`，该键记录了之前存储的便条数量。然后，使用`numNotes`，脚本将循环遍历并使用前缀`keyCode`（即`"note"`）和从0开始的索引来检索每个键值对。因此，要检索第一条便条，页面会调用`getItem`并使用键`note0`。使用`keyCode`和`numNotes`键有两个原因。首先，使用它们可以确保您不必遍历站点本地存储中可能存储的任何其他键值对；其次，这将使您能够有序地组织便条。请记住，对于会话和本地存储，列表中的键值对没有特定的顺序。浏览器使用`setItem`插入它们时没有特定顺序（参见图 11.2）。
 
 ![图 11.2 显示本地存储中多个键值对的示例输出](img/de30ea99ecac39b49e690a84c48f43b9_312_0.png)
 
 图 11.2 显示本地存储中多个键值对的示例输出
 
-这个技巧真正的强大之处在于事件处理。如果您在两个浏览器标签页或窗口中加载该页面，并在其中一个窗口中添加新便条，事件处理程序将被触发。在这种情况下，将调用 `onStorageEvent` 函数，该函数将执行两个操作。首先，该函数会提醒访客发生了变更，并提供有关更新的一些信息。其次，事件处理程序调用更新显示函数以显示更新后的便条列表。如果您尝试添加、更新和移除便条，您将看到此事件处理的行为方式。
+这个技巧真正的强大之处在于事件处理。如果您在两个浏览器标签页或窗口中加载该页面，并在其中一个窗口中添加新便条，事件处理程序将被触发。在这种情况下，将调用`onStorageEvent`函数，该函数将执行两个操作。首先，该函数会提醒访客发生了变更，并提供有关更新的一些信息。其次，事件处理程序调用更新显示函数以显示更新后的便条列表。如果您尝试添加、更新和移除便条，您将看到此事件处理的行为方式。
 
-如果您移除一条便条，事件处理程序将向您显示本地存储中发生的多个变更。原因是便条顺序的维护方式。为了维护列表的顺序，脚本使用一种算法，将被移除条目之后的条目依次向下移动，然后移除最后一个条目。请记住，clear 方法不仅会移除您感兴趣的键值对，还会移除存储中的所有键值对。
+如果您移除一条便条，事件处理程序将向您显示本地存储中发生的多个变更。原因是便条顺序的维护方式。为了维护列表的顺序，脚本使用一种算法，将被移除条目之后的条目依次向下移动，然后移除最后一个条目。请记住，`clear`方法不仅会移除您感兴趣的键值对，还会移除存储中的所有键值对。
 
 > **注意**
+>
 > 存储事件不会在进行会话或本地存储修改的同一页面上触发。相反，存储事件是传播到其他浏览器窗口或标签页的通知。要在进行更改的页面上捕获变更，您需要在进行更改时直接调用相关逻辑。
 
-
-
-在本例中，你使用了一个特定的键 `numNotes` 来保存已输入笔记的数量。此外，为了保持笔记的有序性，你使用了带有递增数字的键前缀，如 `note0`、`note1` 和 `note2`。如果脚本需要基于不同的标准对列表进行排序，或者需要将你的笔记归类到不同的类别中，该怎么办？你可以使用 JavaScript 和对象自己设计方法，但借助 HTML5 及其定义的 Web SQL Database API，这项任务将变得非常简单，正如你将在本章最后一个示例中看到的那样。
+在本例中，你使用了一个特定的键`numNotes`来保存已输入笔记的数量。此外，为了保持笔记的有序性，你使用了带有递增数字的键前缀，如`note0`、`note1`和`note2`。如果脚本需要基于不同的标准对列表进行排序，或者需要将你的笔记归类到不同的类别中，该怎么办？你可以使用 JavaScript 和对象自己设计方法，但借助 HTML5 及其定义的 Web SQL Database API，这项任务将变得非常简单，正如你将在本章最后一个示例中看到的那样。
 
 ## Web SQL Database API
 
@@ -9525,21 +9692,22 @@ window.addEventListener('load', initNoteBoard, false);
 Web SQL Database API 规范基于 SQLite，因此如果你已经在移动环境（如 iOS 开发）中使用过 SQLite，那么你会感到很熟悉。同时，如果你使用过像 MySQL 这样的服务器端数据库，基本的命令和结构也会让你觉得眼熟。如果你没有 SQL 经验，那么你可能需要寻找一些关于 SQL 命令的资料，但我们将在下一个示例中介绍基本的创建、读取、更新和删除命令。与 session 和 local storage 类似，出于安全目的，web 数据库仅对创建它的同一源的页面可用；然而，与 session 和 local storage 不同的是，web 数据库可以存储带有关系信息的复杂数据。
 
 > **注意**
+>
 > 目前，关于 Web SQL Database API 使用的底层数据库格式存在一些争议。SQLite 被列在 W3 Web Database 规范中，并已被多个浏览器实现。然而，在获得普遍接受之前，W3C 的 web 数据库小组已暂停该规范的进一步开发。这导致了 IndexedDB 规范的进一步推进，该规范正获得越来越多的关注。
 
 要与 web 数据库交互，API 提供了三个核心异步命令。这些命令通常是异步的原因，是为了在等待数据库调用返回时，浏览器页面的渲染不会被“阻塞”。根据事务中请求的数据量，页面可能需要等待几秒钟才能返回数据集。这三个核心命令允许你打开（或创建）数据库、创建事务，并在事务中执行 SQL 语句：
 
 - `openDatabase`：打开一个现有的数据库，如果数据库不存在，则根据传递的参数创建一个数据库。
-- `Transaction`：包含对数据库的命令，以便你可以在需要时对整个事务执行回滚。还有一个只读版本可用，即 `readTransaction`。
+- `Transaction`：包含对数据库的命令，以便你可以在需要时对整个事务执行回滚。还有一个只读版本可用，即`readTransaction`。
 - `executeSql`：在打开的数据库上运行实际 SQL 命令的方法。
 
-`openDatabase` 方法打开一个已建立的数据库，或者如果数据库不存在，该方法将根据参数中描述的信息自动创建数据库，然后打开数据库，如下所示：
+`openDatabase`方法打开一个已建立的数据库，或者如果数据库不存在，该方法将根据参数中描述的信息自动创建数据库，然后打开数据库，如下所示：
 
 ```
 WindowDatabase openDatabase(name, version, displayName, estimatedSize [, creationCallBack])
 ```
 
-`openDatabase` 方法的参数如下：
+`openDatabase`方法的参数如下：
 
 - `name`：数据库的名称
 - `version`：你为数据库分配的版本号
@@ -9547,31 +9715,33 @@ WindowDatabase openDatabase(name, version, displayName, estimatedSize [, creatio
 - `estimatedSize`：数据库的预估大小
 - `creationCallBack`：（可选）数据库首次创建时调用的函数
 
-返回一个 `WindowDatabase` 对象，随后将用于执行事务。当浏览器窗口或标签页关闭时，数据库会自动关闭。
+返回一个`WindowDatabase`对象，随后将用于执行事务。当浏览器窗口或标签页关闭时，数据库会自动关闭。
 
 **提示**
 
-`openDatabase` 方法的版本号是一个你可以用来跟踪数据库结构和数据版本的值。如果你使用数据库来提供快速的本地数据查找，这会很有帮助。当你的查找数据发生变化，并且用户返回到你的网站时，你可以通过将该值存储在一个主 web 数据库的表中来检查这个版本。如果查找数据库不是最新的，那么可以安装一个新的。或者，你可以使用打开时的错误代码来验证它是否是错误的版本。
+`openDatabase`方法的版本号是一个你可以用来跟踪数据库结构和数据版本的值。如果你使用数据库来提供快速的本地数据查找，这会很有帮助。当你的查找数据发生变化，并且用户返回到你的网站时，你可以通过将该值存储在一个主 web 数据库的表中来检查这个版本。如果查找数据库不是最新的，那么可以安装一个新的。或者，你可以使用打开时的错误代码来验证它是否是错误的版本。
 
-要查询数据库，必须执行事务请求。事务方法封装一个或多个 `executeSql` 命令，为数据库创建一个单一的事务来处理。如果任何 SQL 查询失败，该事务可用于回滚。事务的 callback 参数包含 `executeSql` 方法的内联函数，如下所示：
+
+
+要查询数据库，必须执行事务请求。事务方法封装一个或多个`executeSql`命令，为数据库创建一个单一的事务来处理。如果任何 SQL 查询失败，该事务可用于回滚。事务的`callback`参数包含`executeSql`方法的内联函数，如下所示：
 
 ```
 transaction(callback [, errorCallback] [, successCallback])
 ```
 
-`transaction` 方法的参数如下：
+`transaction`方法的参数如下：
 
 - `callback`：在事务中执行的功能
 - `errorCallback`：（可选）处理任何发生错误的函数
 - `successCallback`：（可选）如果事务中的所有过程都成功，则调用的成功函数
 
-`executeSql` 方法将你的 SQL 查询命令作为第一个参数，并且可以包含一个数组或可选参数、一个成功回调和一个可选的错误回调，如下所示：
+`executeSql`方法将你的 SQL 查询命令作为第一个参数，并且可以包含一个数组或可选参数、一个成功回调和一个可选的错误回调，如下所示：
 
 ```
 executeSql(sqlStatement [, arguments] [, callback] [, errorCallback])
 ```
 
-`executeSql` 方法的参数如下：
+`executeSql`方法的参数如下：
 
 - `sqlStatement`：要执行的 SQL 语句
 - `arguments`：（可选）一个可选参数的数组
@@ -9580,33 +9750,28 @@ executeSql(sqlStatement [, arguments] [, callback] [, errorCallback])
 
 数据库 API 方法的错误处理参数选项用于捕获在与数据库交互时可能发生的任何错误。这可能包括 SQL 错误或访问数据库时出现问题等实例：
 
-- UNKNOWN_ERR (0)：发生了未列出的未知错误。
-- DATABASE_ERR (1)：数据库中发生了不属于任何错误类别的错误。
-- VERSION_ERR (2)：命令中声明的版本与数据库的版本不匹配。
-- TOO_LARGE_ERR (3)：数据库返回给请求的结果数据集太大，无法返回。
-- QUOTA_ERR (4)：没有剩余的存储空间，或者用户拒绝为你的数据库分配更多空间。
-- SYNTAX_ERR (5)：由于语法错误导致请求失败。
-- CONSTRAINT_ERR (6)：由于违反数据库结构中的约束导致请求失败。
-- TIMEOUT_ERR (7)：由于无法及时建立数据库锁导致事务失败。
+- `UNKNOWN_ERR (0)`：发生了未列出的未知错误。
+- `DATABASE_ERR (1)`：数据库中发生了不属于任何错误类别的错误。
+- `VERSION_ERR (2)`：命令中声明的版本与数据库的版本不匹配。
+- `TOO_LARGE_ERR (3)`：数据库返回给请求的结果数据集太大，无法返回。
+- `QUOTA_ERR (4)`：没有剩余的存储空间，或者用户拒绝为你的数据库分配更多空间。
+- `SYNTAX_ERR (5)`：由于语法错误导致请求失败。
+- `CONSTRAINT_ERR (6)`：由于违反数据库结构中的约束导致请求失败。
+- `TIMEOUT_ERR (7)`：由于无法及时建立数据库锁导致事务失败。
 
-一个常见的错误是 SYNTAX_ERR，它表示你的 SQL 命令存在语法问题。传递给错误处理程序的错误对象的消息部分对于提供有关特定错误代码的更多细节至关重要。
+一个常见的错误是`SYNTAX_ERR`，它表示你的 SQL 命令存在语法问题。传递给错误处理程序的错误对象的消息部分对于提供有关特定错误代码的更多细节至关重要。
 
 至此，你可能想知道所有这些如何协同工作来在数据库中存储和检索信息。下一个示例将把这些核心方法组合在一起，正是实现这一点。
 
-### 进阶示例：
-使用 Web 数据库构建杂货购物清单
+## 进阶示例：使用 Web 数据库构建杂货购物清单
 
 本示例将使用我们刚刚回顾的 web 数据库接口，创建一个完全存储在浏览器数据库资源中的购物清单。访客将能够向列表中添加物品，包括数量和名称，并从下拉菜单中选择该物品所在的杂货部门。每当添加一个物品，杂货清单就会更新并显示。列表将按部门分组，以方便购物。访客可以从列表中移除物品，也可以完全清空列表。如果访客离开后再次返回页面，页面将显示已存储的物品。
 
-本示例创建的数据库将有两个表：一个 `groceryitems` 表用于保存列表中的物品，一个 `departments` 表，它是一个包含预定义部门列表的查找表。当页面首次加载时，数据库和表将被创建，`departments` 表将填充部门信息。`groceryitems` 表将有四个字段，如表 11.5 所定义。
+本示例创建的数据库将有两个表：一个`groceryitems`表用于保存列表中的物品，一个`departments`表，它是一个包含预定义部门列表的查找表。当页面首次加载时，数据库和表将被创建，`departments`表将填充部门信息。`groceryitems`表将有四个字段，如表 11.5 所定义。
 
-`departments` 表将有两个字段，如表 11.6 所定义。
+`departments`表将有两个字段，如表 11.6 所定义。
 
-默认情况下，当 `departments` 表创建时，脚本将在 `departments` 表中添加四个部门。
-
-
-
-## 高级食谱：使用网络数据库创建杂货清单
+默认情况下，当`departments`表创建时，脚本将在`departments`表中添加四个部门。
 
 ### 表 11.5 杂货物品表结构
 
@@ -9625,19 +9790,20 @@ executeSql(sqlStatement [, arguments] [, callback] [, errorCallback])
 | `deptname` | TEXT | 该特定物品需要获取的数量 |
 
 > **提示**
+>
 > 与会话存储和本地存储类似，Chrome 开发者工具提供了一种高效的方式来查看 JavaScript 执行过程中的 SQLite 数据库。你可以在开发者工具窗口的“资源”部分下找到“数据库”部分。与会话存储和本地存储项目不同，数据库表和数据无法在开发者工具中编辑，但此功能可能会在将来添加。
 
 出于调试目的，页面上还放置了一个“删除数据库”按钮，以便你可以删除数据库。目前，网络数据库规范不包含删除数据库的方法。为了变通并删除数据库，你必须“删除”已在数据库中创建的表，这样你的数据库就会变为空。在使用网络数据库 API 进行开发时，重新创建数据库对于验证你的 SQL 数据库创建事务很有用。
 
 要创建杂货清单页面，请按照以下步骤操作：
 
-1.  使用 HTML body、`shoppingdb` 变量声明、`window.addEventListener` load 事件处理器和 `init` JavaScript 函数创建页面的基本结构。
-2.  添加从 `init` 函数调用的 JavaScript 函数：`openShoppingDb` 和 `dbPresent`。
-3.  为了完成数据库的初始化，添加 `initShoppingDb`、`onDbError` 和 `nullHandler` 函数。`initShoppingDb` 函数创建表并插入部门数据。`onDbError` 函数是一个通用函数，用于处理脚本执行事务时可能发生的数据库错误，而 `nullHandler` 用于捕获成功的事务事件。如果你此时加载页面，你应该能在 Chrome 开发者工具中看到你的脚本正在创建数据库。
-4.  你需要通过添加 `initPage`、`getDepartments` 和 `showDepartments` 函数，在页面显示时展示杂货物品。“获取并展示”技术将很常见，因为事务请求是异步的，需要回调函数来处理结果。在这种情况下，`getDepartments` 执行从部门表获取部门的请求，然后由 `showDepartments` 函数来显示它们。`showDepartments` 将为我们的选择列表创建选项。
-5.  为了完成初始化时的显示，你需要展示之前存储在数据库中的任何杂货物品，因此添加清单 11.6 中的 `getGroceryItems` 和 `showGroceryItems` 函数。
-6.  要添加物品，需要调用 `addGroceryItem` 函数，该函数将获取输入字段的值并将其插入到 groceryitems 表中。如果成功，页面将显示新的杂货物品列表。要删除物品，添加 `deleteItem` 方法。
-7.  为了完成页面，添加 `resetGroceryList` 方法以清空杂货清单，以及用于删除数据库表的调试函数 `removeDatabase`。
+1. 使用 HTML body、`shoppingdb`变量声明、`window.addEventListener` load 事件处理器和`init` JavaScript 函数创建页面的基本结构。
+2. 添加从`init`函数调用的 JavaScript 函数：`openShoppingDb`和`dbPresent`。
+3. 为了完成数据库的初始化，添加`initShoppingDb`、`onDbError`和`nullHandler`函数。`initShoppingDb`函数创建表并插入部门数据。`onDbError`函数是一个通用函数，用于处理脚本执行事务时可能发生的数据库错误，而`nullHandler`用于捕获成功的事务事件。如果你此时加载页面，你应该能在 Chrome 开发者工具中看到你的脚本正在创建数据库。
+4. 你需要通过添加`initPage`、`getDepartments`和`showDepartments`函数，在页面显示时展示杂货物品。“获取并展示”技术将很常见，因为事务请求是异步的，需要回调函数来处理结果。在这种情况下，`getDepartments`执行从部门表获取部门的请求，然后由`showDepartments`函数来显示它们。`showDepartments`将为我们的选择列表创建选项。
+5. 为了完成初始化时的显示，你需要展示之前存储在数据库中的任何杂货物品，因此添加清单 11.6 中的`getGroceryItems`和`showGroceryItems`函数。
+6. 要添加物品，需要调用`addGroceryItem`函数，该函数将获取输入字段的值并将其插入到`groceryitems`表中。如果成功，页面将显示新的杂货物品列表。要删除物品，添加`deleteItem`方法。
+7. 为了完成页面，添加`resetGroceryList`方法以清空杂货清单，以及用于删除数据库表的调试函数`removeDatabase`。
 
 ### 清单 11.6 使用客户端数据库创建杂货清单
 
@@ -9813,13 +9979,7 @@ function showGroceryItems(tx, rs) {
   tableRow += '</table>';
 ```
 
-www.it-ebooks.info
 
-
-
-## 第11章 客户端存储
-
-### 高级方案：使用Web数据库管理购物清单
 
 ```javascript
 // set our info in the div
@@ -9892,9 +10052,10 @@ window.addEventListener('load',init,false);
 
 当页面在浏览器中加载时，`init`函数将通过验证`window.openDatabase`方法是否可用，来检查Web SQL Database API是否可用。如果可用，则使用数据库参数调用`openDatabase`方法。在此例中，脚本将数据库大小大致设置为5MB，因为浏览器对于此大小或更小的数据库创建似乎不会向用户确认。如果你的数据库在创建时或之后超过此大小，浏览器将向用户确认以分配更多空间。如果这是你第一次运行该代码，那么数据库将被创建并返回句柄；否则，数据库将被打开。
 
-由于本方案使用departments表的值来加载部门的下拉列表，你需要确保如果是新的数据库实例，你已用查询信息填充了departments表。为检查是否需要创建表，脚本通过执行一个简单的查询（在`dbPresent`方法中尝试从department表中选择第一行）来检查数据库表的存在。如果表尚不存在，则脚本将在`initShoppingDb`方法中创建两个表，并将部门值插入departments表。数据库加载后，脚本从数据库中将部门加载到下拉列表，并通过调用`getGroceryItems`方法显示任何已存储的购物物品。`getGroceryItems`方法将打开另一个事务，从groceryitems表中请求所有物品，如果成功，则将结果行集传递给`showGroceryItems`方法。show方法随后将循环遍历购物物品，并在页面的`myShoppingList`部分显示它们。
+由于本方案使用`departments`表的值来加载部门的下拉列表，你需要确保如果是新的数据库实例，你已用查询信息填充了`departments`表。为检查是否需要创建表，脚本通过执行一个简单的查询（在`dbPresent`方法中尝试从`department`表中选择第一行）来检查数据库表的存在。如果表尚不存在，则脚本将在`initShoppingDb`方法中创建两个表，并将部门值插入`departments`表。数据库加载后，脚本从数据库中将部门加载到下拉列表，并通过调用`getGroceryItems`方法显示任何已存储的购物物品。`getGroceryItems`方法将打开另一个事务，从`groceryitems`表中请求所有物品，如果成功，则将结果行集传递给`showGroceryItems`方法。`show`方法随后将循环遍历购物物品，并在页面的`myShoppingList`部分显示它们。
 
 > **注意**
+
 > `transaction`方法用于需要数据库写权限的SQL命令。由于要求写权限，该事务会对数据库加写锁，防止其他人在该时间写入数据库。如果你只是对数据库执行读命令，应使用`readTransaction`方法。`readTransaction`方法的调用方式与`transaction`方法相同。
 
 一旦页面初始化完成并且数据库和部门填充完毕，访问者就可以输入数量和物品，并为购物清单中的新物品选择部门。然后，`addGroceryItem`将获取这些信息，创建一个数据库事务，并通过执行SQL插入将物品添加到内联函数调用中。如果插入失败，你将调用错误处理器`onDbError`，它将显示我们的错误。如果成功，脚本将调用`getGroceryItems`，随后调用`showGroceryItems`来显示从`groceryitems`表返回的结果行集。图11.3显示了输入若干物品后的输出。
@@ -9903,9 +10064,9 @@ window.addEventListener('load',init,false);
 
 图11.3 添加几个购物物品后的示例输出
 
-当调用`getGroceryItems`函数时，脚本将使用内联函数调用`executeSql`来调用`readTransaction`方法。该SQL命令从groceryitems表中选择所有记录，按部门分组，并按部门名称的字母顺序排序。此外，SQL命令通过deptid连接groceryitems表和departments表，因此返回集也将包含要显示的部门名称。如果`executeSql`调用成功，脚本将把结果返回给`showGroceryItems`，传递事务引用和结果记录集。为了显示记录集中的结果，脚本会循环遍历记录集的行。每一行代表SQL查询返回的一条记录，你可以通过点表示法引用每个字段。
+当调用`getGroceryItems`函数时，脚本将使用内联函数调用`executeSql`来调用`readTransaction`方法。该SQL命令从`groceryitems`表中选择所有记录，按部门分组，并按部门名称的字母顺序排序。此外，SQL命令通过`deptid`连接`groceryitems`表和`departments`表，因此返回集也将包含要显示的部门名称。如果`executeSql`调用成功，脚本将把结果返回给`showGroceryItems`，传递事务引用和结果记录集。为了显示记录集中的结果，脚本会循环遍历记录集的行。每一行代表SQL查询返回的一条记录，你可以通过点表示法引用每个字段。
 
-要删除一个物品，访问者点击X按钮，该按钮调用`deleteItem`方法并传入物品ID。然后页面使用传入的物品ID从groceryitems表中删除该物品。如果调用成功，则通过获取和显示购物物品的函数刷新列表。最后，访问者可以重置购物清单，这将从groceryitems表中删除所有物品。
+要删除一个物品，访问者点击X按钮，该按钮调用`deleteItem`方法并传入物品ID。然后页面使用传入的物品ID从`groceryitems`表中删除该物品。如果调用成功，则通过获取和显示购物物品的函数刷新列表。最后，访问者可以重置购物清单，这将从`groceryitems`表中删除所有物品。
 
 本方案是集成客户端Web数据库到你的网站和应用程序中的一个快速示例。该方案涵盖了记录的创建、检索、更新和删除，以及数据库的初始创建。这些功能为实现你自己的数据库存储提供了所需的构建模块。
 
@@ -9929,11 +10090,9 @@ var myWS = new WebSocket("ws://some.webservice.com/");
 
 当`WebSocket`对象被实例化时，它会尝试与在`WebSocket`对象构造函数中提供的URL上监听的服务建立套接字连接。如果连接成功打开，那么`WebSocket`对象实例将提供发送消息和关闭连接的方法，如下所示：
 
-
-
 ## 第12章 通信与线程
 
-表12.1 WebSocket readyState属性值
+表12.1 WebSocket `readyState`属性值
 
 | 值 | 常量 | 描述 |
 |---|---|---|
@@ -9943,9 +10102,9 @@ var myWS = new WebSocket("ws://some.webservice.com/");
 | 3 | CLOSED | 套接字连接已关闭。 |
 
 - `send(DOMString)`：以字符串形式发送数据。
-- `send(ArrayBuffer)`：以ArrayBuffer形式发送数据。
-- `send(Blob)`：以二进制对象（Blob）形式发送数据。
-- `close([code][,reason])`：关闭套接字连接，可选参数包括一个无符号长整型代码和一个DOMString类型的原因说明。
+- `send(ArrayBuffer)`：以`ArrayBuffer`形式发送数据。
+- `send(Blob)`：以二进制对象（`Blob`）形式发送数据。
+- `close([code][,reason])`：关闭套接字连接，可选参数包括一个无符号长整型代码和一个`DOMString`类型的原因说明。
 
 要确定套接字连接何时准备好发送数据，你可以使用连接的`readyState`属性（该属性可以是表12.1所列的四个值之一），或者使用`onopen`事件。
 
@@ -9974,13 +10133,15 @@ var myWS = new WebSocket("ws://some.webservice.com/");
 
 本示例将使用WebSocket接口与服务器建立WebSocket连接，发送用户输入的消息，并接收服务器回送的相同消息回显。本例中，我们将使用在 www.websocket.org 上设置的一个免费测试WebSocket服务。这个免费在线服务通过验证你可以建立连接、发送消息和接收消息，使测试WebSocket脚本变得简单。要创建此连接，请执行以下步骤，最终得到清单12.1：
 
-1.  创建一个空白HTML页面，包含消息输入元素、发送和关闭按钮，以及状态和消息结果显示的div元素。
-2.  添加用于WebSocket和URL的全局变量。
-3.  添加`init`函数和用于页面加载事件的事件监听器。
-4.  添加`onOpen`、`onClose`、`onMessage`和`onError`函数，以处理WebSocket连接的事件。
-5.  添加`postMessage`、`closeWS`和`updateStatus`函数，以处理发送消息、关闭连接和更新连接状态。
+1. 创建一个空白HTML页面，包含消息输入元素、发送和关闭按钮，以及状态和消息结果显示的`div`元素。
+2. 添加用于WebSocket和URL的全局变量。
+3. 添加`init`函数和用于页面加载事件的事件监听器。
+4. 添加`onOpen`、`onClose`、`onMessage`和`onError`函数，以处理WebSocket连接的事件。
+5. 添加`postMessage`、`closeWS`和`updateStatus`函数，以处理发送消息、关闭连接和更新连接状态。
 
 ### 清单12.1 通过WebSocket发送和接收数据
+
+
 
 ```html
 <!DOCTYPE html>
@@ -10086,13 +10247,14 @@ window.addEventListener('load', init, false);
 </html>
 ```
 
-当清单12.1的页面加载时，会调用`init`函数。在`init`函数中，脚本添加按钮事件监听器，然后通过创建WebSocket接口的一个实例并传入地址来建立WebSocket连接。创建此实例后，本示例注册了`onopen`、`onclose`、`onmessage`和`onerror`事件，并将一个函数链接到每个事件。当WebSocket成功打开连接时，会触发`onopen`事件，并调用`onOpen`函数，更改页面上显示的连接状态。在本示例中，我们保留了控制台日志语句，以便你可以在浏览器的开发者日志中查看WebSocket连接的流程。
+当清单12.1的页面加载时，会调用`init`函数。在`init`函数中，脚本添加按钮事件监听器，然后通过创建`WebSocket`接口的一个实例并传入地址来建立WebSocket连接。创建此实例后，本示例注册了`onopen`、`onclose`、`onmessage`和`onerror`事件，并将一个函数链接到每个事件。当WebSocket成功打开连接时，会触发`onopen`事件，并调用`onOpen`函数，更改页面上显示的连接状态。在本示例中，我们保留了控制台日志语句，以便你可以在浏览器的开发者日志中查看WebSocket连接的流程。
 
 页面显示一个输入框，供用户输入消息并通过WebSocket发送给服务器。消息在`postMessage`函数中发送，该函数在WebSocket上调用`send`方法，并将消息作为参数传递。接收到消息后，WebSocket服务会重新打包文本字符串，并将该字符串作为消息发送回页面。`onmessage`事件处理程序捕获传入的消息，相应的`onMessage`函数接收传入的消息，并使用消息的`data`部分更新显示。
 
 如果在WebSocket连接打开、使用或关闭过程中发生任何错误，`onerror`事件处理程序将捕获错误，并向用户显示错误的数据部分。一旦页面与WebSocket服务之间的对话完成，你可以通过调用WebSocket上的`close`方法来关闭WebSocket连接。
 
 > **注意**
+>
 > 你的WebSocket实例向其发送消息并从中接收消息的服务通常是你自己设计的，并运行在你的Web服务器上。你可以在网上找到多种语言的开源示例，用于设置WebSocket服务器进程。在本书的在线参考列表中，我们包含了几个此类软件包的链接。
 
 在本示例中，你与远程服务器建立了连接，并通过WebSocket连接来回发送消息。这对于双向通信，特别是从服务向已连接的浏览器页面主动发送消息，非常有用。
@@ -10101,34 +10263,35 @@ window.addEventListener('load', init, false);
 
 JavaScript在HTML页面中运行的一个普遍问题是，JavaScript在页面上以单线程运行，在执行繁重处理时很容易阻塞界面。通过HTML5 Web Workers API，开发者有了一个新的机会来分离这种处理，让功能在一个后台线程上执行，其优先级低于HTML页面的主线程。这样，主线程可以保持不被阻塞，允许用户与页面交互，几乎不会产生负面影响。
 
-HTML5中Web Workers API的实现提供了两种类型的Web Worker：专用（dedicated）和共享（shared）Web Worker。`专用`Web Worker特定于启动该Web Worker的页面，不能跨页面使用。相比之下，`共享`Worker可以在同一浏览器实例中来自同一源的多个页面之间共享。共享Worker有其自己的状态，该状态也跨越页面，正如你将在本章的最后一个示例中看到的那样。
+HTML5中Web Workers API的实现提供了两种类型的Web Worker：专用（dedicated）和共享（shared）Web Worker。专用Web Worker特定于启动该Web Worker的页面，不能跨页面使用。相比之下，共享Worker可以在同一浏览器实例中来自同一源的多个页面之间共享。共享Worker有其自己的状态，该状态也跨越页面，正如你将在本章的最后一个示例中看到的那样。
 
-那么，Web Worker究竟是什么呢？`Web Worker`是一个分离为文件的JavaScript脚本，可以在新线程上运行。在单独线程上运行的脚本甚至可以直接传递给Web Worker，而不是保存在专用的.js文件中。Web Worker可以通过在线程之间传递消息，与启动页面和主脚本进行通信，反之亦然。
-
-
+那么，Web Worker究竟是什么呢？Web Worker是一个分离为文件的JavaScript脚本，可以在新线程上运行。在单独线程上运行的脚本甚至可以直接传递给Web Worker，而不是保存在专用的`.js`文件中。Web Worker可以通过在线程之间传递消息，与启动页面和主脚本进行通信，反之亦然。
 
 ### 表 12.3 工作线程事件
 
 | 事件名称 | 属性 | 目的 |
 |---|---|---|
-| `message` | `onmessage` | 当收到消息时触发。将提供一个包含 `data` 成员的事件对象，其中包含该消息。 |
-| `error` | `onerror` | 当工作线程中发生错误时触发。该事件提供一个包含错误信息的 `data` 成员。 |
+| `message` | `onmessage` | 当收到消息时触发。将提供一个包含`data`成员的事件对象，其中包含该消息。 |
+| `error` | `onerror` | 当工作线程中发生错误时触发。该事件提供一个包含错误信息的`data`成员。 |
 
 > 提示
-Web 工作者无法操作页面的 DOM 元素，因为 Web 工作者运行在与页面本身不同的线程上。只有主页面线程才能修改 DOM。
+>
+> Web工作者无法操作页面的DOM元素，因为Web工作者运行在与页面本身不同的线程上。只有主页面线程才能修改DOM。
 
-要创建一个 Web 工作者的实例，你需要创建一个新的 `Worker` 接口实例，并传入要执行的脚本或文件，如下所示，用于创建一个专用工作者：
+要创建一个Web工作者的实例，你需要创建一个新的`Worker`接口实例，并传入要执行的脚本或文件，如下所示，用于创建一个专用工作者：
+
 `var myWorker = new Worker('worker_script.js');`
 
-上一代码中的专用 Web 工作者将在创建 Web 工作者时执行 JavaScript。专用 Web 工作者将保持运行并可用，直到该线程被终止或创建该专用 Web 工作者的页面被关闭。以下是专用 Web 工作者可用的方法：
+上一代码中的专用Web工作者将在创建Web工作者时执行JavaScript。专用Web工作者将保持运行并可用，直到该线程被终止或创建该专用Web工作者的页面被关闭。以下是专用Web工作者可用的方法：
 
--   `postMessage(Message [, MessagePort])`：向 Web 工作者线程发送消息。工作者线程通过后面将描述的 `onmessage` 事件“捕获”该消息。
--   `terminate()`：终止调用该方法的工作线程。
+- `postMessage(Message [, MessagePort])`：向Web工作者线程发送消息。工作者线程通过后面将描述的`onmessage`事件“捕获”该消息。
+- `terminate()`：终止调用该方法的工作线程。
 
-专用 Web 工作者上有两个可用事件：`onmessage` 和 `onerror`。`onmessage` 事件允许主页面脚本接收来自 Web 工作者线程的消息，或让 Web 工作者从主线程接收消息。
+专用Web工作者上有两个可用事件：`onmessage`和`onerror`。`onmessage`事件允许主页面脚本接收来自Web工作者线程的消息，或让Web工作者从主线程接收消息。
 
 > 注意
-如果你使用过支持多线程的编程语言，那么你可能了解线程安全问题以及在并发运行线程时可能出现的问题。在 HTML5 Web Workers API 中，通过序列化对象进行的线程间通信在很大程度上可以防止这些问题。为了防止其他并发问题，工作者线程无法访问 DOM 页面结构或非线程安全的组件。只有主页面线程才能更新页面的 DOM 元素。
+>
+> 如果你使用过支持多线程的编程语言，那么你可能了解线程安全问题以及在并发运行线程时可能出现的问题。在HTML5 Web Workers API中，通过序列化对象进行的线程间通信在很大程度上可以防止这些问题。为了防止其他并发问题，工作者线程无法访问DOM页面结构或非线程安全的组件。只有主页面线程才能更新页面的DOM元素。
 
 ### 表 12.4 Web Workers API 浏览器可用性
 
@@ -10142,19 +10305,20 @@ Web 工作者无法操作页面的 DOM 元素，因为 Web 工作者运行在与
 | Opera | 10.6+ |
 | Safari | 4.0+ |
 
-请注意，Safari 是唯一支持共享工作者（shared workers）的浏览器平台，本章稍后将介绍。在 2.1 版本之后，Android 浏览器移除了对工作者的支持。
+请注意，Safari是唯一支持共享工作者（shared workers）的浏览器平台，本章稍后将介绍。在2.1版本之后，Android浏览器移除了对工作者的支持。
 
-## 初学者指南：创建 Web 工作者
+## 初学者指南：创建Web工作者
 
-在本指南中，你将创建一个简单的专用 Web 工作者，使用一种基本的方法在 Web 工作者线程上在后台计算一系列数字的和。当 HTML 页面加载时，Web 工作者将被启动。随着 Web 工作者处理数字范围的进程，工作者将向主脚本提供进度百分比消息。一旦 Web 工作者完成数字求和，工作者将向主脚本发送一条包含最终结果的消息。提供了一个终止按钮，以便用户可以随时终止工作者。
-如上所述的 Web 工作者将在一个不阻塞主页面脚本和处理的线程中执行命令。为了演示，页面包含一个时间戳按钮，用于在页面上记录日期时间戳。随着工作者的进行，尝试点击日期时间戳按钮以验证主页面没有被 Web 工作者线程的活动阻塞。本指南将包含两个文件：清单 12.2 中的 HTML 页面和清单 12.3 中的 Web 工作者 JavaScript 文件。
+在本指南中，你将创建一个简单的专用Web工作者，使用一种基本的方法在Web工作者线程上在后台计算一系列数字的和。当HTML页面加载时，Web工作者将被启动。随着Web工作者处理数字范围的进程，工作者将向主脚本提供进度百分比消息。一旦Web工作者完成数字求和，工作者将向主脚本发送一条包含最终结果的消息。提供了一个终止按钮，以便用户可以随时终止工作者。
 
-1.  创建清单 12.2 中的页面，包含 `output` 标签、按钮和结果日志部分。
-2.  向页面添加脚本部分，包括工作者变量和 `startWorkerThread` 初始化函数。
-3.  添加 `terminateWorker` 函数以终止 Web 工作者线程。
-4.  添加 `getTimeStamp` 函数和 `window.addEventListener` 触发器。
+如上所述的Web工作者将在一个不阻塞主页面脚本和处理的线程中执行命令。为了演示，页面包含一个时间戳按钮，用于在页面上记录日期时间戳。随着工作者的进行，尝试点击日期时间戳按钮以验证主页面没有被Web工作者线程的活动阻塞。本指南将包含两个文件：清单12.2中的HTML页面和清单12.3中的Web工作者JavaScript文件。
 
-### 清单 12.2 向 Web 工作者发送消息
+1. 创建清单12.2中的页面，包含`output`标签、按钮和结果日志部分。
+2. 向页面添加脚本部分，包括工作者变量和`startWorkerThread`初始化函数。
+3. 添加`terminateWorker`函数以终止Web工作者线程。
+4. 添加`getTimeStamp`函数和`window.addEventListener`触发器。
+
+### 清单 12.2 向Web工作者发送消息
 
 ```
 <!DOCTYPE html>
@@ -10216,17 +10380,23 @@ window.addEventListener('load',startWorkerThread,false);
 </html>
 ```
 
-306 第 12 章 通信与线程
+306 第12章 通信与线程
 
-当页面创建 Web 工作者时，你会将要在新线程上执行的 JavaScript 文件名传递给新实例。在这个例子中，JavaScript 文件名为 `12_3_simple_worker.js`。清单 12.3 提供了该文件的代码，该文件遍历数字范围，将它们相加，并将消息发送回主页面脚本。
+当页面创建Web工作者时，你会将要在新线程上执行的JavaScript文件名传递给新实例。在这个例子中，JavaScript文件名为`12_3_simple_worker.js`。清单12.3提供了该文件的代码，该文件遍历数字范围，将它们相加，并将消息发送回主页面脚本。
 
-1.  创建清单 12.3 中的 JavaScript 文件，在顶部声明变量。
-2.  添加 for 循环，从 1 循环到 `maxLimit`，对数字求和并发送完成百分比状态。
-3.  添加最后的 `postMessage` 以将总和发送给主页面脚本。
+1. 创建清单12.3中的JavaScript文件，在顶部声明变量。
+2. 添加for循环，从1循环到`maxLimit`，对数字求和并发送完成百分比状态。
+3. 添加最后的`postMessage`以将总和发送给主页面脚本。
 
-### 清单 12.3 在 Web 工作者中执行任务
+### 清单 12.3 在Web工作者中执行任务
 
-```
+
+
+## 第十二章 通信与线程
+
+### 简单 Web Worker 示例
+
+```javascript
 // The 12.3 js simple web worker file
 
 // initialize our variables
@@ -10259,27 +10429,24 @@ for (var j=0; j<=maxLimit; j++) {
 postMessage('Sum = ' + sum);
 ```
 
-当主页面在浏览器中加载时，窗口加载事件会调用 `startWorkerThread` 函数。该函数添加按钮监听器；创建一个新的 `Worker` 实例，传入 JavaScript 文件名；并将此引用赋值给 `worker` 变量。创建此实例后，脚本注册 `onmessage` 事件，并定义一个事件发生时执行的函数，以获取数据并在 `result` 输出中显示来自工作者线程的消息。当工作者线程通过 `postMessage` 向主脚本发送消息时，`onmessage` 事件处理器将被触发。
+当主页面在浏览器中加载时，窗口加载事件会调用`startWorkerThread`函数。该函数添加按钮监听器；创建一个新的`Worker`实例，传入 JavaScript 文件名；并将此引用赋值给`worker`变量。创建此实例后，脚本注册`onmessage`事件，并定义一个事件发生时执行的函数，以获取数据并在`result`输出中显示来自工作者线程的消息。当工作者线程通过`postMessage`向主脚本发送消息时，`onmessage`事件处理器将被触发。
 
 当工作者实例被创建时，脚本被加载到线程中并自动执行。在下一个指南中，你将看到如何在创建线程后手动告诉脚本何时开始运行。
 
-随着脚本在工作者线程中执行，通过一次循环一个数字（尽管为了演示目的，这是一种非常长且费力的方式）来计算总和。随着循环的进行，脚本会检查完成百分比是否增加。如果完成百分比发生了变化，则脚本通过 `postMessage` 命令向主页面发送一条消息，包括新的完成百分比。此发送的消息将触发主页面脚本中的 `onmessage` 事件处理器。主脚本然后获取此事件并访问包含实际文本的 `data` 成员。主脚本随后显示完成百分比，如图 12.1 所示。
+随着脚本在工作者线程中执行，通过一次循环一个数字（尽管为了演示目的，这是一种非常长且费力的方式）来计算总和。随着循环的进行，脚本会检查完成百分比是否增加。如果完成百分比发生了变化，则脚本通过`postMessage`命令向主页面发送一条消息，包括新的完成百分比。此发送的消息将触发主页面脚本中的`onmessage`事件处理器。主脚本然后获取此事件并访问包含实际文本的`data`成员。主脚本随后显示完成百分比，如图 12.1 所示。
 
-如果用户确实想在不关闭页面的情况下终止工作者线程，可以使用终止工作者按钮，通过 `terminate` 方法告诉工作者立即停止。
+如果用户确实想在不关闭页面的情况下终止工作者线程，可以使用终止工作者按钮，通过`terminate`方法告诉工作者立即停止。
 
+### 中级食谱：添加双向通信
 
+在上一个食谱中，你学习了主脚本如何创建专用 Web Worker，以及 Worker 如何将消息发回给主脚本。消息的传递被设计为可在不同线程间进行，这包括了创建 Worker 实例的主页面线程。这意味着主脚本和 Worker 线程可以通过`Worker`接口的`postMessage`方法相互发送消息。在本食谱中，主脚本将向 Web Worker 发送消息，而 Web Worker 将反过来向主脚本发送一条消息接收确认。
 
-## 中级食谱：
-### 添加双向通信
+本食谱还探讨了在两个层面上对 Worker 的错误处理：通过`error`事件，以及通过返回给主脚本的自定义消息。通过`postMessage`方法发送的消息格式为序列化对象。这意味着你可以发送 JSON 格式的字符串来封装多个数据成员。在本食谱中，你将使用这种发送复杂数据的方法来通知主脚本所发送的消息类型以及消息的有效负载。此外，`onerror`事件处理程序被编程用于处理 Worker 脚本处理过程中发生的任何 JavaScript 错误。要开始本食谱，请按照以下步骤操作，最终将得到代码清单 12.4：
 
-在上一个食谱中，你学习了主脚本如何创建专用 Web Worker，以及 Worker 如何将消息发回给主脚本。消息的传递被设计为可在不同线程间进行，这包括了创建 Worker 实例的主页面线程。这意味着主脚本和 Worker 线程可以通过 `Worker` 接口的 `postMessage` 方法相互发送消息。在本食谱中，主脚本将向 Web Worker 发送消息，而 Web Worker 将反过来向主脚本发送一条消息接收确认。
-
-本食谱还探讨了在两个层面上对 Worker 的错误处理：通过 `error` 事件，以及通过返回给主脚本的自定义消息。通过 `postMessage` 方法发送的消息格式为序列化对象。这意味着你可以发送 JSON 格式的字符串来封装多个数据成员。在本食谱中，你将使用这种发送复杂数据的方法来通知主脚本所发送的消息类型以及消息的有效负载。此外，`onerror` 事件处理程序被编程用于处理 Worker 脚本处理过程中发生的任何 JavaScript 错误。要开始本食谱，请按照以下步骤操作，最终将得到代码清单 12.4：
-
-- 1. 创建一个空白 HTML 文件，并添加代码清单 12.4 中的 `body` HTML，这包括输入字段、发送消息的按钮以及显示返回消息的部分。
-- 2. 添加包含 Worker 声明和 `onmessage` 处理程序的脚本部分。
-- 3. 添加 `onerror` 处理程序以捕获任何 Worker 错误。
-- 4. 添加 `postToWorker` 函数，通过 `postMessage` 方法将文本输入发送给 Web Worker。
+1. 创建一个空白 HTML 文件，并添加代码清单 12.4 中的`body` HTML，这包括输入字段、发送消息的按钮以及显示返回消息的部分。
+2. 添加包含 Worker 声明和`onmessage`处理程序的脚本部分。
+3. 添加`onerror`处理程序以捕获任何 Worker 错误。
+4. 添加`postToWorker`函数，通过`postMessage`方法将文本输入发送给 Web Worker。
 
 **代码清单 12.4** 创建客户端页面
 
@@ -10344,10 +10511,10 @@ return a message type of error):</p>
 
 与上一个食谱一样，你将使用一个外部 JavaScript 文件来存放你的 Web Worker 代码。代码清单 12.5 包含了该文件的脚本，并可以通过以下步骤创建。确保文件的名称与你在代码清单 12.4 的主脚本中用于 Worker 实例化的名称相同。
 
-- 1. 创建一个空白文件，并添加代码清单 12.5 中的 `onmessage` 事件处理程序。
-- 2. 添加 `if` 条件以及相应的代码段，以检查输入是否有效，并向主脚本发回错误或确认消息。
+1. 创建一个空白文件，并添加代码清单 12.5 中的`onmessage`事件处理程序。
+2. 添加`if`条件以及相应的代码段，以检查输入是否有效，并向主脚本发回错误或确认消息。
 
-### 代码清单 12.5 添加 Web Worker
+**代码清单 12.5** 添加 Web Worker
 
 ```javascript
 // The 12.5 2 way Web Worker js file
@@ -10366,28 +10533,23 @@ onmessage = function(event) {
 }
 ```
 
-当 HTML 页面加载时，Web Worker 通过加载 JavaScript Worker 文件来创建，但请注意，与之前的食谱不同，Web Worker 在创建时并未执行任何操作。Web Worker 将等待任何传入的消息触发消息处理程序。在 HTML 页面上，用户会被提示在输入字段中输入一个文本字符串，并点击“Send to Worker”按钮。“Send to Worker”按钮触发一个 `postMessage`，将文本字符串发送给 Web Worker。然后 Web Worker 检查该字符串是否为空，如果为空，则使用一个消息类型为“ERR”且包含相应消息的 JSON 字符串，将消息发回给主脚本。如果 Web Worker 收到的消息不为空，则 Worker 将该字符串包装在另一个字符串中以显示接收到的内容，并以相同的 JSON 格式（消息类型为“MSG”）将这个更新后的消息发回。
+当 HTML 页面加载时，Web Worker 通过加载 JavaScript Worker 文件来创建，但请注意，与之前的食谱不同，Web Worker 在创建时并未执行任何操作。Web Worker 将等待任何传入的消息触发消息处理程序。在 HTML 页面上，用户会被提示在输入字段中输入一个文本字符串，并点击“Send to Worker”按钮。“Send to Worker”按钮触发一个`postMessage`，将文本字符串发送给 Web Worker。然后 Web Worker 检查该字符串是否为空，如果为空，则使用一个消息类型为“ERR”且包含相应消息的 JSON 字符串，将消息发回给主脚本。如果 Web Worker 收到的消息不为空，则 Worker 将该字符串包装在另一个字符串中以显示接收到的内容，并以相同的 JSON 格式（消息类型为“MSG”）将这个更新后的消息发回。
 
-在错误或消息被发送回主脚本后，主脚本中的 `onmessage` 事件处理程序会触发，并接收到从 Web Worker 来的消息。该函数会检查发送的消息类型，然后要么向用户发出错误警报，要么使用 Web Worker 发来的消息更新结果字段，如图 12.2 所示，从而完成通信循环。
+在错误或消息被发送回主脚本后，主脚本中的`onmessage`事件处理程序会触发，并接收到从 Web Worker 来的消息。该函数会检查发送的消息类型，然后要么向用户发出错误警报，要么使用 Web Worker 发来的消息更新结果字段，如图 12.2 所示，从而完成通信循环。
 
 要触发错误消息，请将输入字段留空，然后点击“Send to Worker”按钮向 Web Worker 发送一个空字符串。
 
 本食谱和上一个食谱都利用了专用 Web Worker，它们仅对创建它们的页面可用。但在某些情况下，你可能需要使用一个在跨页面共享作用域的 Web Worker。在下一个食谱中，我们将解释共享 Web Worker 的结构以及如何实现与 Web Worker 的连接。
 
-## 高级食谱：
-### 利用共享 Web Worker
+### 高级食谱：利用共享 Web Worker
 
-正如你在前面的食谱中所看到的，专用 Web Worker 的作用域仅限于创建了该 Web Worker 的页面。在所有方面，Web Worker 在该环境中被沙箱化以执行线程安全操作。HTML5 Web Workers API 提供了第二个 Worker 接口，称为 `SharedWorker`。该接口提供了相同的 Web Worker 功能，但其作用域可在同一浏览器的同一源下跨多个页面共享。共享 Web Worker 中的功能可以像专用 Web Worker 一样对每个请求独立，或者 Web Worker 可以跨页面共享其环境，正如你将在本食谱中看到的。
+正如你在前面的食谱中所看到的，专用 Web Worker 的作用域仅限于创建了该 Web Worker 的页面。在所有方面，Web Worker 在该环境中被沙箱化以执行线程安全操作。HTML5 Web Workers API 提供了第二个 Worker 接口，称为`SharedWorker`。该接口提供了相同的 Web Worker 功能，但其作用域可在同一浏览器的同一源下跨多个页面共享。共享 Web Worker 中的功能可以像专用 Web Worker 一样对每个请求独立，或者 Web Worker 可以跨页面共享其环境，正如你将在本食谱中看到的。
 
-由于一个共享 Web Worker 实例可以有多个客户端与线程通信，因此其接口与专用 Web Worker 接口略有不同。共享 Web Worker 使用一个端口分配来标识页面到 Web Worker 的连接。这个标识被共享 Web Worker 用来识别消息的来源以及应该将消息发送给谁。以下是 `SharedWorker` 的创建方式：
+由于一个共享 Web Worker 实例可以有多个客户端与线程通信，因此其接口与专用 Web Worker 接口略有不同。共享 Web Worker 使用一个端口分配来标识页面到 Web Worker 的连接。这个标识被共享 Web Worker 用来识别消息的来源以及应该将消息发送给谁。以下是`SharedWorker`的创建方式：
 
 ```javascript
 var sworker = new SharedWorker('mySharedWorker.js');
 ```
-
-
-
-## 第十二章 通信与线程
 
 **表 12.5 SharedWorker 事件**
 
@@ -10395,14 +10557,14 @@ var sworker = new SharedWorker('mySharedWorker.js');
 | :--- | :--- | :--- |
 | connect | onconnect | 当接收到消息时触发。会提供一个包含 data 成员的事件对象及消息。 |
 
-共享 Web Worker 有一个事件 `connect`，当客户端线程连接到共享 Web Worker 时执行，如表 12.5 所示。如前所述，每个客户端连接都有一个端口标识符来唯一标识该连接。`postMessage` 方法和 `message` 事件被推送到端口，从而在连接级别执行消息传递。
+共享 Web Worker 有一个事件`connect`，当客户端线程连接到共享 Web Worker 时执行，如表 12.5 所示。如前所述，每个客户端连接都有一个端口标识符来唯一标识该连接。`postMessage`方法和`message`事件被推送到端口，从而在连接级别执行消息传递。
 
 在本示例中，我们将解释如何跨多个页面使用共享 Web Worker，从任何已连接的页面提供的值中计算平均值。当平均值发生变化时，结果将发送到每个页面进行显示。为便于测试，客户端页面使用 iframe 在一个容器页面中显示，而不是在浏览器中单独加载每个页面。因此，需要创建三个文件：主容器页面（用于保存每个客户端页面的 iframe）、接受用户输入并连接到共享 Web Worker 的客户端页面，以及实际的共享 Web Worker JavaScript 文件。让我们从清单 12.6 所示的容器文件开始：
 
-1.  创建一个空白的 HTML 页面，包含 HTML body 和三个 div 标签中的 iframe，如清单所示。
-2.  接着添加 `style` 标签以及 div 和 iframe 标签的样式，使 iframe 以三列等宽形式显示在页面中。至此，容器文件完成。
+1. 创建一个空白的 HTML 页面，包含 HTML body 和三个 div 标签中的 iframe，如清单所示。
+2. 接着添加`style`标签以及 div 和 iframe 标签的样式，使 iframe 以三列等宽形式显示在页面中。至此，容器文件完成。
 
-**清单 12.6 创建客户端页面容器**
+**清单 12.6** 创建客户端页面容器
 
 ```html
 <!DOCTYPE html>
@@ -10429,12 +10591,14 @@ tabs or windows in the same browser. -->
 
 接下来，你需要按照清单 12.7 中的代码创建客户端页面，该页面将被加载到容器的每个 iframe 中，并显示输入字段供用户输入数字：
 
-1.  创建一个空白的 HTML 页面，包含如清单 12.7 所示的 `body`，包括 `input` 标签、SEND NUMBER 按钮和日志区域。
-2.  添加 `script` 标签和一个名为 `sworker` 的共享 Worker 实例的全局引用。这将是用于发送和接收消息的 `SharedWorker` 实例。
-3.  添加 `window.addEventListener` 行和 `init` 函数，该函数创建共享 Worker 连接并为该客户端在共享 Worker 上的端口注册 `onmessage` 处理器。
-4.  添加 `sendNumber` 函数，该函数获取输入值并将数字发送到共享 Worker 进行处理。
+1. 创建一个空白的 HTML 页面，包含如清单 12.7 所示的`body`，包括`input`标签、SEND NUMBER 按钮和日志区域。
+2. 添加`script`标签和一个名为`sworker`的共享 Worker 实例的全局引用。这将是用于发送和接收消息的`SharedWorker`实例。
+3. 添加`window.addEventListener`行和`init`函数，该函数创建共享 Worker 连接并为该客户端在共享 Worker 上的端口注册`onmessage`处理器。
+4. 添加`sendNumber`函数，该函数获取输入值并将数字发送到共享 Worker 进行处理。
 
-**清单 12.7 创建客户端页面**
+**清单 12.7** 创建客户端页面
+
+
 
 ```html
 <!DOCTYPE html>
@@ -10511,11 +10675,13 @@ window.addEventListener("load", init, false);
 </html>
 ```
 
-当清单 12.7 中的客户端页面加载时，你将初始化与从文件 `12_4_sworker.js` 构建的共享 Worker 的连接。本示例的最后一步是创建共享 Worker JavaScript 文件。共享 Worker JavaScript 文件在清单 12.8 中提供，并通过以下步骤创建：
+当清单 12.7 中的客户端页面加载时，你将初始化与从文件`12_4_sworker.js`构建的共享 Worker 的连接。本示例的最后一步是创建共享 Worker JavaScript 文件。共享 Worker JavaScript 文件在清单 12.8 中提供，并通过以下步骤创建：
 
-1.  创建一个 JavaScript 文件，命名为 `12_4_sworker.js`（或者你选择的任何名称，只要与客户端 HTML 页面中共享 Worker 文件参数匹配即可）。
-2.  在脚本顶部添加全局变量和 `onconnect` 事件处理器。
-3.  将 `sendAllConnections` 和 `updateAverage` 函数添加到脚本中。
+1. 创建一个 JavaScript 文件，命名为`12_4_sworker.js`（或者你选择的任何名称，只要与客户端 HTML 页面中共享 Worker 文件参数匹配即可）。
+
+2. 在脚本顶部添加全局变量和`onconnect`事件处理器。
+
+3. 将`sendAllConnections`和`updateAverage`函数添加到脚本中。
 
 **清单 12.8 添加共享 Worker .js 文件**
 
@@ -10591,21 +10757,22 @@ function updateAverage(newValue) {
 
 要运行本示例，请将容器 HTML 页面加载到你的浏览器中。请注意，在撰写本示例时，只有 Safari 支持 SharedWorker 接口。当容器加载时，它将在三个 iframe HTML 页面中加载客户端页面的实例，如图 12.3 所示。每个客户端页面将创建一个 SharedWorker 接口的实例，该实例创建一个共享的 Web Worker。
 
-线程并连接客户端页面与单个共享 Web Worker。当客户端页面连接时，共享 Web Worker 中的 `onconnect` 事件处理程序将被触发。该事件处理程序将获取连接所绑定的端口引用，以便后续可以向此客户端连接发送消息，并将此端口存储在 `connections` 数组中。接下来，共享 Web Worker 在 `onconnect` 事件处理程序中向刚刚连接的端口发送一条日志消息，说明客户端已连接以及这是第几个客户端连接。此外，共享 Web Worker 向客户端发送当前平均值，以初始化客户端页面上的显示。最后，共享 Web Worker 为此端口注册一个 `onmessage` 事件处理程序，以便当客户端页面向共享 Web Worker 发送消息时，可以捕获该消息。
+线程并连接客户端页面与单个共享 Web Worker。当客户端页面连接时，共享 Web Worker 中的`onconnect`事件处理程序将被触发。该事件处理程序将获取连接所绑定的端口引用，以便后续可以向此客户端连接发送消息，并将此端口存储在`connections`数组中。接下来，共享 Web Worker 在`onconnect`事件处理程序中向刚刚连接的端口发送一条日志消息，说明客户端已连接以及这是第几个客户端连接。此外，共享 Web Worker 向客户端发送当前平均值，以初始化客户端页面上的显示。最后，共享 Web Worker 为此端口注册一个`onmessage`事件处理程序，以便当客户端页面向共享 Web Worker 发送消息时，可以捕获该消息。
 
-当共享 Web Worker 在初始连接时将日志或平均值消息发回客户端页面时，客户端页面中的 `onmessage` 处理程序将捕获这些消息。客户端页面将根据传递的 JSON 字符串中的字段确定消息类型，并通过添加日志消息和在需要时设置平均值来更新显示。
+当共享 Web Worker 在初始连接时将日志或平均值消息发回客户端页面时，客户端页面中的`onmessage`处理程序将捕获这些消息。客户端页面将根据传递的 JSON 字符串中的字段确定消息类型，并通过添加日志消息和在需要时设置平均值来更新显示。
 
-一旦所有客户端页面都初始化了与共享 Web Worker 的连接，用户就可以在任何客户端页面中输入一个数字，并点击“将数字发送到 SharedWorker”按钮。这将调用客户端 JavaScript 中的 `sendNumber` 函数，进而向共享 Web Worker 发送一条包含所输入数字的消息。请注意，这里使用的是 `sworker` 的端口来调用 `postmessage`，如下所示，这与向专用 Web Worker 发送消息略有不同：
+一旦所有客户端页面都初始化了与共享 Web Worker 的连接，用户就可以在任何客户端页面中输入一个数字，并点击“将数字发送到 SharedWorker”按钮。这将调用客户端 JavaScript 中的`sendNumber`函数，进而向共享 Web Worker 发送一条包含所输入数字的消息。请注意，这里使用的是`sworker`的端口来调用`postmessage`，如下所示，这与向专用 Web Worker 发送消息略有不同：
 
 ```
 swworker.port.postMessage(numToSend);
 ```
 
-此 post message 命令将用户输入发送到共享 Web Worker，然后共享 Web Worker 将在已注册的 `onmessage` 事件中获取此数字，并向客户端端口返回一条已收到该数字的日志消息。发送完收到日志消息后，共享 Web Worker 将更新全局变量中的当前平均值，并将此新平均值发送给所有已连接的客户端。用于向所有客户端发送消息的辅助函数会遍历 `connections` 并在消息中发送新平均值。图 12.3 展示了此操作的一个示例运行。
+此 post message 命令将用户输入发送到共享 Web Worker，然后共享 Web Worker 将在已注册的`onmessage`事件中获取此数字，并向客户端端口返回一条已收到该数字的日志消息。发送完收到日志消息后，共享 Web Worker 将更新全局变量中的当前平均值，并将此新平均值发送给所有已连接的客户端。用于向所有客户端发送消息的辅助函数会遍历`connections`并在消息中发送新平均值。图 12.3 展示了此操作的一个示例运行。
 
-`SharedWorker` 接口应被视为尚处于早期阶段；它仅在少数浏览器平台中受支持，并且功能有限。该接口还存在一些尚未解决的挑战，例如处理客户端断开连接的问题，但该接口前景广阔，未来将为开发者提供大量功能。
+`SharedWorker`接口应被视为尚处于早期阶段；它仅在少数浏览器平台中受支持，并且功能有限。该接口还存在一些尚未解决的挑战，例如处理客户端断开连接的问题，但该接口前景广阔，未来将为开发者提供大量功能。
 
 > **提示**
+
 在开发自己的 Web Worker 结构时，最好先在主页面中开发 Worker 功能，以便于调试。一旦核心 Worker 功能正常工作，你就可以将代码封装在单独的 Worker 文件和线程中。
 
 ## 总结
@@ -10617,7 +10784,9 @@ swworker.port.postMessage(numToSend);
 由于安全原因，浏览器历来与操作系统的其余部分隔离。随着 HTML5 的出现，一些 API 被提出，允许与用户可能使用的设备的操作系统进行更紧密的集成，并提供更接近原生应用程序的典型用户体验。我们将其中三个 API 归入本章关于浏览器体验的内容中。这三个 API 允许以下类型的用户体验：
 
 - 在浏览器外部和页面内部拖放对象
+
 - 应用程序缓存存储，允许离线使用网页
+
 - 桌面通知，提醒用户浏览器窗口中的事件
 
 在本章中，你将了解这些 API，尽管它们比我们已经介绍过的其他 API 更不成熟，并且还有改进的空间。我们将从一个比较完善的 API 开始，并以一个尚未被大多数浏览器支持但前景广阔的 API 结束。那么，让我们从拖放 API 开始深入探讨。
@@ -10627,37 +10796,42 @@ swworker.port.postMessage(numToSend);
 拖放 API 已被添加到 HTML5 API 中，允许用户选择一个对象，将该对象拖到页面上的某个区域，然后释放该对象以触发某些操作。拖放功能的基础是四个部分的组合：
 
 - 一个可从浏览器内部或外部拖拽的对象
+
 - 一个用于接收对象的拖放区域
+
 - 允许控制拖放行为的事件
+
 - 一个用于传输对象上下文数据的数据存储
 
-要允许浏览器中的对象被拖拽，有一个名为 `draggable` 的新属性。`draggable` 属性有三个可能的值：`true`、`false` 和 `auto`。如果 `draggable` 设置为 `true`，则该对象可以被用户拖拽。如果该属性设置为 `false`，则该对象不能被拖拽。如果该值设置为 `auto`，则浏览器将使用该类型对象的默认可拖拽值，就像未提供 `draggable` 属性一样。例如，你可能已经注意到你可以抓取页面上的图像并拖动它。当然，当你释放它时，什么也不会发生，因为没有定义拖放区域；但它仍然可以被拖动。要创建一个可拖拽的 `div`，代码应如下所示：
+要允许浏览器中的对象被拖拽，有一个名为`draggable`的新属性。`draggable`属性有三个可能的值：`true`、`false`和`auto`。如果`draggable`设置为`true`，则该对象可以被用户拖拽。如果该属性设置为`false`，则该对象不能被拖拽。如果该值设置为`auto`，则浏览器将使用该类型对象的默认可拖拽值，就像未提供`draggable`属性一样。例如，你可能已经注意到你可以抓取页面上的图像并拖动它。当然，当你释放它时，什么也不会发生，因为没有定义拖放区域；但它仍然可以被拖动。要创建一个可拖拽的`div`，代码应如下所示：
 
 ```
 <div class="divClass" id="myDiv" draggable="true">My Div</div>
 ```
 
-要创建一个可以释放对象的区域，HTML5 中添加了一个名为 `dropzone` 的属性。`dropzone` 属性可以有三个值之一：`copy`、`move` 或 `link`。你选择的值取决于你希望在对象释放时执行的操作类型。`dropzone` 在 div 上的声明示例如下：
+要创建一个可以释放对象的区域，HTML5 中添加了一个名为`dropzone`的属性。`dropzone`属性可以有三个值之一：`copy`、`move`或`link`。你选择的值取决于你希望在对象释放时执行的操作类型。`dropzone`在 div 上的声明示例如下：
 
 ```
 <div id="divDropzone" dropzone="copy" ...
 ```
 
-`dropzone` 属性还可以使用过滤器，例如格式列表 `f:/image/png`，它表示只有 PNG 类型的图像文件可以拖放到该拖放区域上。
+`dropzone`属性还可以使用过滤器，例如格式列表`f:/image/png`，它表示只有 PNG 类型的图像文件可以拖放到该拖放区域上。
 
-接下来，你必须通过捕获由你指定为 `draggable` 对象和 `dropzone` 对象的元素触发的事件，来处理项的实际拖放操作。当用户开始拖动一个对象时，`ondragstart` 属性或 `dragstart` 事件将被触发。通过在此事件上调用一个函数，你将能够存储一些关于正在拖动对象的数据。当该对象随后被释放到 `dropzone` 上时，`dropzone` 将触发一个名为 `ondrop` 或 `drop` 事件的属性事件。当此事件被触发时，存储在正在拖动对象上的数据就可以被检索出来，并用于执行脚本选择的任何函数。要传递此信息，你需要使用一个名为 `DataTransfer` 的新接口。
+接下来，你必须通过捕获由你指定为`draggable`对象和`dropzone`对象的元素触发的事件，来处理项的实际拖放操作。当用户开始拖动一个对象时，`ondragstart`属性或`dragstart`事件将被触发。通过在此事件上调用一个函数，你将能够存储一些关于正在拖动对象的数据。当该对象随后被释放到`dropzone`上时，`dropzone`将触发一个名为`ondrop`或`drop`事件的属性事件。当此事件被触发时，存储在正在拖动对象上的数据就可以被检索出来，并用于执行脚本选择的任何函数。要传递此信息，你需要使用一个名为`DataTransfer`的新接口。
 
-`DataTransfer` 接口有各种属性和方法，但用于传递信息的两个是 `setData` 和 `getData`。以下是 `DataTransfer` 接口可用的方法：
+`DataTransfer`接口有各种属性和方法，但用于传递信息的两个是`setData`和`getData`。以下是`DataTransfer`接口可用的方法：
 
 - `setData(format, data)`：将类型为 format（例如文本）的数据设置到数据存储中。
+
 - `getData(format)`：从数据存储中检索类型为 format 的数据。
+
 - `clearData([format])`：清除数据存储中提供的可选格式的数据。如果未提供格式，则清除整个存储。
+
 - `void setDragImage(image, long x, long y)`：使用在 x,y 坐标处的图像向用户显示。
+
 - `void addElement(element)`：将提供的元素添加到数据存储中。
 
 表 13.1 显示了支持拖放 API 的每个浏览器的版本。
-
-
 
 表 13.1 拖放 API 浏览器可用性
 
@@ -10671,14 +10845,16 @@ swworker.port.postMessage(numToSend);
 | Opera | - |
 | Safari | 3.2+ |
 
-## 初学者指南：跨 `div` 拖放
+## 初学者指南：跨`div`拖放
+
+
 
 本指南将使用拖放功能，允许用户将便签图片拖拽到软木板投放区。当便签被放下时，所选便签图片的新副本将被添加到软木板，如图 13.1 所示。
 
-本指南将向你展示通过使用 `draggable` 和 `dropzone` 属性以及关键事件和 DataTransfer 接口来创建拖放用例的基础知识。代码清单 13.1 展示了此示例的代码，但你可以按照以下步骤创建文件：
+本指南将向你展示通过使用`draggable`和`dropzone`属性以及关键事件和`DataTransfer`接口来创建拖放用例的基础知识。代码清单 13.1 展示了此示例的代码，但你可以按照以下步骤创建文件：
 
-- 1. 创建一个空白 HTML 页面，包含代码清单 13.1 中所示的 `style` 和 `body` 部分。在 `body` 部分，务必为便签图片和看板 `div` 添加事件处理属性。
-- 2. 在 HTML body 中添加 `fileAttributes` 部分，用于显示文件属性。
+1. 创建一个空白 HTML 页面，包含代码清单 13.1 中所示的`style`和`body`部分。在`body`部分，务必为便签图片和看板`div`添加事件处理属性。
+2. 在 HTML body 中添加`fileAttributes`部分，用于显示文件属性。
 
 ![](img/de30ea99ecac39b49e690a84c48f43b9_351_0.png)
 
@@ -10686,8 +10862,8 @@ www.it-ebooks.info
 
 ## 322 第 13 章 HTML5 浏览器体验
 
-- 3. 添加 `dragStartHandler` 和 `dropHandler` 函数，这两个函数都接收事件触发的目标元素以及事件本身。
-- 4. 添加 `getStartPos` 和 `init` 函数，分别用于检索被拖动元素中的拖动起始位置和初始化样式。
+3. 添加`dragStartHandler`和`dropHandler`函数，这两个函数都接收事件触发的目标元素以及事件本身。
+4. 添加`getStartPos`和`init`函数，分别用于检索被拖动元素中的拖动起始位置和初始化样式。
 
 ```
 代码清单 13.1  基本拖放示例
@@ -10809,9 +10985,9 @@ window.addEventListener('load',init,false);
 </html>
 ```
 
-当页面在浏览器中加载时，每个图片都设置了一个 `ondragstart` 事件处理程序，以调用 `dragStartHandler` 并传入相应的元素。注意，你不需要添加 `draggable` 属性，因为图片的默认设置就是 `draggable`。在 `div` 看板那一行，你将该 `div` 设置为 `dropzone`，并设置了 `ondrop` 和 `ondragover` 事件处理程序。`ondragover` 事件处理程序是必需的，用于覆盖标准浏览器功能，只需在事件触发时返回 `false`。如果用户选择一个便签并开始拖动它，那么 `dragStartHandler` 函数将被调用。此外，`onmousedown` 事件将触发一个辅助函数，该函数仅将 x 和 y 坐标存储在变量中，用于计算便签在看板上的定位。在 `dragStartHandler` 函数中，脚本在 DataTransfer 接口中设置了正在被拖动的元素的 ID。
+当页面在浏览器中加载时，每个图片都设置了一个`ondragstart`事件处理程序，以调用`dragStartHandler`并传入相应的元素。注意，你不需要添加`draggable`属性，因为图片的默认设置就是`draggable`。在`div`看板那一行，你将该`div`设置为`dropzone`，并设置了`ondrop`和`ondragover`事件处理程序。`ondragover`事件处理程序是必需的，用于覆盖标准浏览器功能，只需在事件触发时返回`false`。如果用户选择一个便签并开始拖动它，那么`dragStartHandler`函数将被调用。此外，`onmousedown`事件将触发一个辅助函数，该函数仅将 x 和 y 坐标存储在变量中，用于计算便签在看板上的定位。在`dragStartHandler`函数中，脚本在`DataTransfer`接口中设置了正在被拖动的元素的 ID。
 
-然后用户将便签放到看板上，`dropHandler` 函数将被调用。在放置处理程序中，你做的第一件事是通过调用事件的 `preventDefault` 来否定浏览器的默认行为。这将允许你控制浏览器中放置动作的行为。脚本随后从数据存储中获取元素 ID，创建一个新图片，设置其源，并进行一些计算以在看板上设置新图片的位置。请注意，由于可用的定位方法，这种定位仅在 Chrome 等某些浏览器中有效，但这对于示例来说并不关键。一旦图片被创建并定位，你就可以将图片追加到看板 `div`，从而产生便签图片的一个副本。
+然后用户将便签放到看板上，`dropHandler`函数将被调用。在放置处理程序中，你做的第一件事是通过调用事件的`preventDefault`来否定浏览器的默认行为。这将允许你控制浏览器中放置动作的行为。脚本随后从数据存储中获取元素 ID，创建一个新图片，设置其源，并进行一些计算以在看板上设置新图片的位置。请注意，由于可用的定位方法，这种定位仅在 Chrome 等某些浏览器中有效，但这对于示例来说并不关键。一旦图片被创建并定位，你就可以将图片追加到看板`div`，从而产生便签图片的一个副本。
 
 这是一个简单的拖放功能示例。在下一个指南中，你将把这些概念与其他拖放事件结合起来，以更全面地控制拖放体验。
 
@@ -10827,24 +11003,25 @@ window.addEventListener('load',init,false);
 - `drop`：对象被释放到一个可用的投放区上。
 - `dragend`：对可拖动对象的拖动操作已结束。
 
-在本指南中，你将运用拖放 API 来创建通常被称为汉诺塔的数学游戏，该游戏由数学家爱德华·卢卡斯于 1883 年发明（你可以在维基百科 http://en.wikipedia.org/wiki/Tower_of_Hanoi 上找到关于该游戏历史的更多信息）。基本规则是：你有三根柱子，最左边的柱子上有一系列从大到小堆叠的圆盘。圆盘的数量在不同的棋盘上可能不同。目标是将整个堆叠移动到最右边的柱子上，一次只能移动一个圆盘，并且只能放在空的柱子上或放有比要移动的圆盘更大的圆盘的柱子上。我们将使用拖放 API 事件和 `dataTransfer` 对象来创建这个游戏，并确保强制执行游戏规则。
-
-
+在本指南中，你将运用拖放 API 来创建通常被称为汉诺塔的数学游戏，该游戏由数学家爱德华·卢卡斯于 1883 年发明（你可以在维基百科 http://en.wikipedia.org/wiki/Tower_of_Hanoi 上找到关于该游戏历史的更多信息）。基本规则是：你有三根柱子，最左边的柱子上有一系列从大到小堆叠的圆盘。圆盘的数量在不同的棋盘上可能不同。目标是将整个堆叠移动到最右边的柱子上，一次只能移动一个圆盘，并且只能放在空的柱子上或放有比要移动的圆盘更大的圆盘的柱子上。我们将使用拖放 API 事件和`dataTransfer`对象来创建这个游戏，并确保强制执行游戏规则。
 
 ## 326 第13章 HTML5中的浏览器体验
 
 在游戏过程中，如果玩家尝试将圆盘放置在有更小圆盘的堆栈上，代码将不允许圆盘被放下。但是，如果移动是有效的，圆盘将被移动并添加到堆栈中。此外，如果用户尝试移动不是特定堆栈顶部的圆盘，该操作将被禁止。每次将圆盘移动到最右边的堆栈后，你将检查用户是否已成功移动整个堆栈并表示祝贺。让我们开始吧，看看如何使用各种事件来执行游戏规则：
 
-1.  创建如清单13.2所示的页面，包含用于方块和三个放置区域的`style`和`body`标签。注意，在方块上添加`draggable`属性，以确保浏览器理解这些div可以被拖动。
-2.  添加`script`标签，添加`initTowers`函数，并添加`window.addEventListener`来触发初始化。
-3.  为方块添加事件处理程序；`blockHandleDragStart`和`blockHandleDragEnd`函数将只允许堆栈顶部的方块被拖动。这些函数还会在拖动开始和结束时改变样式。
-4.  为了配合方块处理程序，你需要放置区域处理程序。添加堆栈放置区域处理程序函数`towerHandleDragOver`、`towerHandleDragLeave`和`towerHandleDragDrop`，以控制将方块移动到其上时堆栈放置区域的样式，并处理方块在堆栈上的放置。
-5.  在脚本顶部添加全局变量声明，用于堆栈方块游戏地图（名为`towers`的二维数组）、游戏中的方块数量以及玩家已执行移动次数的计数器。
+1. 创建如清单13.2所示的页面，包含用于方块和三个放置区域的`style`和`body`标签。注意，在方块上添加`draggable`属性，以确保浏览器理解这些`div`可以被拖动。
+2. 添加`script`标签，添加`initTowers`函数，并添加`window.addEventListener`来触发初始化。
+3. 为方块添加事件处理程序；`blockHandleDragStart`和`blockHandleDragEnd`函数将只允许堆栈顶部的方块被拖动。这些函数还会在拖动开始和结束时改变样式。
+4. 为了配合方块处理程序，你需要放置区域处理程序。添加堆栈放置区域处理程序函数`towerHandleDragOver`、`towerHandleDragLeave`和`towerHandleDragDrop`，以控制将方块移动到其上时堆栈放置区域的样式，并处理方块在堆栈上的放置。
+5. 在脚本顶部添加全局变量声明，用于堆栈方块游戏地图（名为`towers`的二维数组）、游戏中的方块数量以及玩家已执行移动次数的计数器。
 
 > **注意**
+
 > 你可以在本书网站上找到此配方的图片（参见引言部分了解位置信息）。
 
 ### 清单13.2 为汉诺塔应用拖放功能
+
+
 
 ```html
 <!DOCTYPE html>
@@ -11083,40 +11260,43 @@ window.addEventListener('load',initTowers,false);
 
 那么，现在你已经构建好了页面，并且理想情况下通过来回拖动方块玩了几轮，你已经对基于玩家操作如何触发事件有了概念。但是，让我们花几分钟时间来了解一下游戏逻辑如何与拖放功能集成的一些细节。
 
-当页面加载时，该配方声明了游戏地图的全局变量（如果你编写过基于位置的游戏，那么游戏地图对你来说将是第二天性；否则，游戏地图可以简单地理解为游戏棋子在任何特定时间所在位置的表示）、游戏中的方块数量以及玩家移动次数的计数器。这里的游戏地图是一个二维数组，用于跟踪每个三个堆栈上有哪些方块。放置区域或堆栈具有从零开始的基于整数的ID，这些ID直接映射到堆栈
+当页面加载时，该配方声明了游戏地图的全局变量（如果你编写过基于位置的游戏，那么游戏地图对你来说将是第二天性；否则，游戏地图可以简单地理解为游戏棋子在任何特定时间所在位置的表示）、游戏中的方块数量以及玩家移动次数的计数器。这里的游戏地图是一个二维数组，用于跟踪每个三个堆栈上有哪些方块。放置区域或堆栈具有从零开始的基于整数的ID，这些ID直接映射到堆栈。
 
+运行`initTowers()`函数后，页面会为每个汉诺塔塔注册放置区域的事件处理器，以及那些将要移动的方块的事件处理器。接着，脚本通过将方块3、2、1、0添加到塔零（第一个塔）的数组中来设置当前游戏地图。你会注意到添加的顺序是反过来的，这代表了方块3比方块2大，依此类推。此外，你还使用这个顺序通过样式属性动态地调整方块的大小，这完成了游戏棋盘的初始化。
 
+现在让我们看看游戏流程。当用户将一个方块从一个塔拖到另一个塔时，随着事件的触发，会发生几件事。首先，拖动开始事件被触发，`blockHandleDragStart()`函数执行。此函数首先验证所选方块是否是其所在塔的顶部方块。如果不是，则函数返回`false`，从而阻止该方块被拖动。如果是顶部方块，那么该步骤会创建一个包含一些关键信息的JSON字符串：方块ID以及方块被拖动的源塔ID。然后，这些数据被设置到`DataTransfer`接口中，以便当方块被放置到新塔上时，你能够知道被选中的方块以及它来自哪个塔。为了向用户显示你正在拖动特定的方块，你还需要在函数中更改该方块的透明度。
 
-运行 `initTowers` 函数后，页面会为每个汉诺塔塔注册放置区域的事件处理器，以及那些将要移动的方块的事件处理器。接着，脚本通过将方块3、2、1、0添加到塔零（第一个塔）的数组中来设置当前游戏地图。你会注意到添加的顺序是反过来的，这代表了方块3比方块2大，依此类推。此外，你还使用这个顺序通过样式属性动态地调整方块的大小，这完成了游戏棋盘的初始化。
+当方块被拖入一个放置区域或塔时，拖动经过事件被触发，`towerHandleDragOver()`函数执行。此函数的目的是让玩家知道他们已经移动到了一个放置区域上。这是通过更改被拖动经过的塔`div`区域的样式来实现的，如图13.2所示。
 
-现在让我们看看游戏流程。当用户将一个方块从一个塔拖到另一个塔时，随着事件的触发，会发生几件事。首先，拖动开始事件被触发，`blockHandleDragStart` 函数执行。此函数首先验证所选方块是否是其所在塔的顶部方块。如果不是，则函数返回 `false`，从而阻止该方块被拖动。如果是顶部方块，那么该步骤会创建一个包含一些关键信息的 JSON 字符串：方块ID以及方块被拖动的源塔ID。然后，这些数据被设置到 `DataTransfer` 接口中，以便当方块被放置到新塔上时，你能够知道被选中的方块以及它来自哪个塔。为了向用户显示你正在拖动特定的方块，你还需要在函数中更改该方块的透明度。
+然而，一个关键点是包含了`preventDefault()`命令。正如你在前面的步骤中所看到的，为了阻止浏览器执行默认操作（这可能会导致游戏流程出现问题），你必须使用此命令。如果方块只是“路过”塔的放置区域，那么拖动离开事件将被触发，`towerHandleDragLeave()`函数将被执行。此函数将离开的塔放置区域的样式更回正常视图。
 
-当方块被拖入一个放置区域或塔时，拖动经过事件被触发，`towerHandleDragOver` 函数执行。此函数的目的是让玩家知道他们已经移动到了一个放置区域上。这是通过更改被拖动经过的塔 div 区域的样式来实现的，如图13.2所示。
+当方块被放置到塔的放置区域时，大部分的游戏逻辑在`towerHandleDragDrop()`函数中执行。当此函数启动时，你首先调用`preventDefault()`方法，再次阻止浏览器使用其拖放事件的默认逻辑。接下来，该步骤将检索`dataTransfer`信息，以便在游戏逻辑中使用这些数据。逻辑的关键是确定方块是否可以被放置，这通过检查游戏地图来完成，查看方块被放置的塔是空的还是上面已经有一个更大的方块。如果塔上有一个较小的方块，则不能添加该方块，你将返回`false`，这将阻止在塔上发生放置操作。如果可以添加方块，那么你会将方块“插入”到顶部方块之前（为了正确显示方块）或者塔上的占位符（即段落标签`<p id="px">`）之前。一旦方块被添加到HTML中，该步骤会更新游戏地图，增加移动次数计数器，并最后检查玩家是否已完成游戏。
 
-然而，一个关键点是包含了 `preventDefault` 命令。正如你在前面的步骤中所看到的，为了阻止浏览器执行默认操作（这可能会导致游戏流程出现问题），你必须使用此命令。如果方块只是“路过”塔的放置区域，那么拖动离开事件将被触发，`towerHandleDragLeave` 函数将被执行。此函数将离开的塔放置区域的样式更回正常视图。
+为了检查玩家是否完成了游戏，你执行一个非常简单的检查，看最后一个塔是否拥有全部四个方块。由于游戏逻辑防止较小的方块位于塔上较大方块的下方，因此你不需要验证顺序。如果游戏已解决，那么玩家应该不能再移动方块，因此代码通过程序化地将每个方块的`draggable`属性设置为`false`来使方块不可拖动。这便结束了游戏；要再次游玩，玩家必须重新加载页面。
 
-当方块被放置到塔的放置区域时，大部分的游戏逻辑在 `towerHandleDragDrop` 函数中执行。当此函数启动时，你首先调用 `preventDefault` 方法，再次阻止浏览器使用其拖放事件的默认逻辑。接下来，该步骤将检索 `dataTransfer` 信息，以便在游戏逻辑中使用这些数据。逻辑的关键是确定方块是否可以被放置，这通过检查游戏地图来完成，查看方块被放置的塔是空的还是上面已经有一个更大的方块。如果塔上有一个较小的方块，则不能添加该方块，你将返回 `false`，这将阻止在塔上发生放置操作。如果可以添加方块，那么你会将方块“插入”到顶部方块之前（为了正确显示方块）或者塔上的占位符（即段落标签 `<p id="px">`）之前。一旦方块被添加到 HTML 中，该步骤会更新游戏地图，增加移动次数计数器，并最后检查玩家是否已完成游戏。
+你可以通过以下功能极大地增强此步骤，例如根据方块是否可以放置在某个区域来更改放置区域的颜色。但现在你已经理解了拖放API的事件流，并且知道如何在事件触发时添加逻辑，如果你想添加这些功能，我们就留给你来完成。
 
-为了检查玩家是否完成了游戏，你执行一个非常简单的检查，看最后一个塔是否拥有全部四个方块。由于游戏逻辑防止较小的方块位于塔上较大方块的下方，因此你不需要验证顺序。如果游戏已解决，那么玩家应该不能再移动方块，因此代码通过程序化地将每个方块的 `draggable` 属性设置为 `false` 来使方块不可拖动。这便结束了游戏；要再次游玩，玩家必须重新加载页面。
-
-你可以通过以下功能极大地增强此步骤，例如根据方块是否可以放置在某个区域来更改放置区域的颜色。但现在你已经理解了拖放 API 的事件流，并且知道如何在事件触发时添加逻辑，如果你想添加这些功能，我们就留给你来完成。
-
-在拖放 API 的两个示例中，你已经通过 `DataTransfer` 接口传递了简单的文本字符串。如前所述，`DataTransfer` 接口可以处理多种类型的信息传输，包括图像、文件等。这些步骤仅涉及实现拖放解决方案功能的基础知识。拖放 API 还有许多其他特性，包括不同的行为、可拖动的对象，以及从桌面拖动到浏览器。在第14章“使用本地文件”中，你将学习如何使用 `DataTransfer` 接口的一些特殊功能来处理将文件从浏览器外部拖放到页面上的放置区域。
+在拖放API的两个示例中，你已经通过`DataTransfer`接口传递了简单的文本字符串。如前所述，`DataTransfer`接口可以处理多种类型的信息传输，包括图像、文件等。这些步骤仅涉及实现拖放解决方案功能的基础知识。拖放API还有许多其他特性，包括不同的行为、可拖动的对象，以及从桌面拖动到浏览器。在第14章“使用本地文件”中，你将学习如何使用`DataTransfer`接口的一些特殊功能来处理将文件从浏览器外部拖放到页面上的放置区域。
 
 > 提示
 
-如果你发现自己在调试拖放程序时遇到困难，因为每次你将对象拖放到放置区域时，浏览器都会启动一个新标签页或窗口，并只显示你正在拖动的对象，那么很可能你在触发的事件上遗漏了 `preventDefault` 方法调用。没有此方法，浏览器将根据被拖动对象的类型执行其处理放置操作的默认流程。例如，在 Firefox 中，如果你正在拖动一个图像并将其放到一个没有执行 `preventDefault` 方法的放置区域上，将打开一个新标签页，只显示你正在拖动的图像。
+如果你发现自己在调试拖放程序时遇到困难，因为每次你将对象拖放到放置区域时，浏览器都会启动一个新标签页或窗口，并只显示你正在拖动的对象，那么很可能你在触发的事件上遗漏了`preventDefault()`方法调用。没有此方法，浏览器将根据被拖动对象的类型执行其处理放置操作的默认流程。例如，在Firefox中，如果你正在拖动一个图像并将其放到一个没有执行`preventDefault()`方法的放置区域上，将打开一个新标签页，只显示你正在拖动的图像。
 
-## 应用程序缓存与 API
+## 应用程序缓存与API
 
 在智能手机和平板设备上，如果你想让一个应用程序始终可用，那么你需要一个原生应用程序。如果你想使用来自网站的应用程序，那么你需要一个互联网连接——也就是说，直到应用程序缓存的出现。应用程序缓存意味着你可以离线运行在线应用程序，不仅在智能手机或平板上，也可以在桌面浏览器上。
 
-表13.2显示了支持应用程序缓存和 API 的每个浏览器版本。
+表13.2显示了支持应用程序缓存和API的每个浏览器版本。
 
 **表13.2 应用程序缓存浏览器兼容性**
 
 | 浏览器 | 版本 |
 | :--- | :--- |
+
+
+
+### 浏览器支持情况
+
 | Android | 2.1+ |
 | Chrome | 10.0+ |
 | Firefox | 3.6+ |
@@ -11125,7 +11305,7 @@ window.addEventListener('load',initTowers,false);
 | Opera | 10.6+ |
 | Safari | 4.0+ |
 
-应用程序缓存是一个文件列表，记录在一个 *清单* 中，它告诉浏览器下载这些文件并存储它们，以便当用户返回页面时，这些文件可供使用。如果你没有连接，这非常有用，但即使你有连接，这也会加快页面的加载速度，因为这些文件已经被加载过了。
+应用程序缓存是一个文件列表，记录在一个清单中，它告诉浏览器下载这些文件并存储它们，以便当用户返回页面时，这些文件可供使用。如果你没有连接，这非常有用，但即使你有连接，这也会加快页面的加载速度，因为这些文件已经被加载过了。
 
 任何引用该清单的页面都会自动被存储，但这并不意味着你想存储，或者确实应该（考虑到文件大小和类型限制）存储所有内容进行离线访问。你想提供给用户的是一个合适的离线体验。如果你有一个应用程序设计，那么使用该应用程序的关键文件应该被离线存储。
 
@@ -11135,7 +11315,7 @@ window.addEventListener('load',initTowers,false);
 
 ### 引用清单文件
 
-浏览器引用清单文件很简单；只需将 `manifest` 属性添加到 `html` 元素中，并指定你的清单文件名（`.appcache`），如下所示：
+浏览器引用清单文件很简单；只需将`manifest`属性添加到`html`元素中，并指定你的清单文件名（`.appcache`），如下所示：
 
 ```
 <!DOCTYPE html>
@@ -11148,9 +11328,10 @@ window.addEventListener('load',initTowers,false);
 ```
 
 > **注意**
-> 清单文件中引用的任何文件（`.html`、`.php` 等）都将被下载并缓存。
+>
+> 清单文件中引用的任何文件（`.html`、`.php`等）都将被下载并缓存。
 
-你的 Web 服务器可能不知道如何处理 `.appcache` 文件，因此你可能需要向服务器添加 MIME 类型。你可以通过 IIS 进行此操作，或者如果你使用的是 Apache，请在服务器上使用以下代码：
+你的 Web 服务器可能不知道如何处理`.appcache`文件，因此你可能需要向服务器添加 MIME 类型。你可以通过 IIS 进行此操作，或者如果你使用的是 Apache，请在服务器上使用以下代码：
 
 ```
 AddType text/cache-manifest .appcache
@@ -11158,13 +11339,14 @@ AddType text/cache-manifest .appcache
 
 ## 初级配方：创建清单文件
 
-你不需要任何特殊软件来创建清单文件；你可以使用任何基本的文本编辑器，如记事本。将文件另存为 `xxx.appcache`。在文件的顶部，你必须包含以下内容：
+你不需要任何特殊软件来创建清单文件；你可以使用任何基本的文本编辑器，如记事本。将文件另存为`xxx.appcache`。在文件的顶部，你必须包含以下内容：
 
 ```
 CACHE MANIFEST
 ```
 
 > **注意**
+>
 > 我们建议在完成你的应用或网站之前不要创建清单文件，因为你不会希望存储未完成的文件，它们可能会干扰开发过程。清除或刷新缓存并不像刷新页面那样简单（我们将在本章后面介绍）。
 
 从这里开始，你可以开始列出想要存储的文件，如下所示：
@@ -11178,22 +11360,23 @@ images/logo.png
 
 这应该就是你所需要的全部。如果你创建了一个 HTML 页面并包含了一个列出文件的清单文件，如上所示，那么在线访问该页面后，页面及其支持文件将被缓存。然后，如果你断开互联网连接并刷新页面，页面将正常显示。清单中列出的文件可以是相对地址或绝对地址。
 
-但你还可以做更多。你可以将清单文件分为三个部分：`CACHE`、`FALLBACK` 和 `NETWORK`：
+但你还可以做更多。你可以将清单文件分为三个部分：`CACHE`、`FALLBACK`和`NETWORK`：
 
-- *CACHE*：应在客户端浏览器设备上缓存的文件，以便在互联网连接不可用时使用。
-- *FALLBACK*：当无法连接到互联网时使用的文件及其替代文件列表。
-- *NETWORK*：仅在连接时需要且不应缓存的文件。
+- `CACHE`：应在客户端浏览器设备上缓存的文件，以便在互联网连接不可用时使用。
+- `FALLBACK`：当无法连接到互联网时使用的文件及其替代文件列表。
+- `NETWORK`：仅在连接时需要且不应缓存的文件。
 
 ### CACHE
 
-`CACHE` 部分与前面示例中的基本相同。像前面示例中的那样列出的文件或带有 `CACHE` 标题的文件是“显式”的，将被下载并缓存在浏览器中。它们可以包含存储在外部的文件，但在缓存文件时不能使用通配符，因此 `css/*` 将不起作用。
+`CACHE`部分与前面示例中的基本相同。像前面示例中的那样列出的文件或带有`CACHE`标题的文件是“显式”的，将被下载并缓存在浏览器中。它们可以包含存储在外部的文件，但在缓存文件时不能使用通配符，因此`css/*`将不起作用。
 
 > **警告**
+>
 > 不要在缓存中缓存清单本身，因为这将几乎不可能通知浏览器新的清单。
 
 ### FALLBACK
 
-清单的 `FALLBACK` 部分非常有用，可以作为检测用户是否在线或离线的一种方式。使用 `FALLBACK`，你可以告诉浏览器，如果由于用户离线导致特定文件不可用，该使用哪个文件。例如，如果你有一个离线使用不必要的大型 CSS 文件，那么你可以将其从 `CACHE` 部分省略，转而使用 `FALLBACK`，如下所示：
+清单的`FALLBACK`部分非常有用，可以作为检测用户是否在线或离线的一种方式。使用`FALLBACK`，你可以告诉浏览器，如果由于用户离线导致特定文件不可用，该使用哪个文件。例如，如果你有一个离线使用不必要的大型 CSS 文件，那么你可以将其从`CACHE`部分省略，转而使用`FALLBACK`，如下所示：
 
 ```
 CACHE MANIFEST
@@ -11201,17 +11384,17 @@ FALLBACK:
 online.css offline.css
 ```
 
-因此，在此示例中，如果用户离线但 HTML 页面调用了 `online.css`，清单文件会告诉浏览器切换到 `offline.css`（注意文件之间用空格分隔），该文件已被缓存。很方便，不是吗？这不仅限于 CSS 文件，还可以用于图像、JavaScript 文件、HTML 页面，甚至视频片段。只需将每个声明放在新的一行。
+因此，在此示例中，如果用户离线但 HTML 页面调用了`online.css`，清单文件会告诉浏览器切换到`offline.css`（注意文件之间用空格分隔），该文件已被缓存。很方便，不是吗？这不仅限于 CSS 文件，还可以用于图像、JavaScript 文件、HTML 页面，甚至视频片段。只需将每个声明放在新的一行。
 
-使用 `FALLBACK`，你可以使用通配符技术。因此，如果你想为所有文件设置一个回退，你可以使用以下内容：
+使用`FALLBACK`，你可以使用通配符技术。因此，如果你想为所有文件设置一个回退，你可以使用以下内容：
 
 ```
 / /offline.html
 ```
 
-因此，如果用户离线，斜杠后的所有文件（如 `/page1.html`）将显示 `offline.html`。但请记住，一旦打开了一个文件（如 `page1.html`）并且它引用了清单文件，那么它将被下载并可供离线使用。
+因此，如果用户离线，斜杠后的所有文件（如`/page1.html`）将显示`offline.html`。但请记住，一旦打开了一个文件（如`page1.html`）并且它引用了清单文件，那么它将被下载并可供离线使用。
 
-你可以进一步使用 `FALLBACK`，为特定目录或仅 HTML 页面提供通用回退：
+你可以进一步使用`FALLBACK`，为特定目录或仅 HTML 页面提供通用回退：
 
 ```
 /js/ /offline.js
@@ -11220,7 +11403,7 @@ online.css offline.css
 
 ### NETWORK
 
-`NETWORK` 部分告诉浏览器哪些文件仅在连接时可用，并阻止这些文件被下载。通常，放在此部分的资源是需要数据库或服务器连接的资源，例如登录页面：
+`NETWORK`部分告诉浏览器哪些文件仅在连接时可用，并阻止这些文件被下载。通常，放在此部分的资源是需要数据库或服务器连接的资源，例如登录页面：
 
 ```
 CACHE MANIFEST
@@ -11252,7 +11435,7 @@ style.css
 - 两个 CSS 文件
 - 两个图像
 
-第一个 HTML 页面上有两个输入字段（当然是新的 HTML5 输入类型），按钮将两个数字相乘（本示例中没有验证）。当单击提交按钮时，将显示结果，并提供一个选项，通过联系表单将你的结果发送给一个虚构的公司。但是，联系表单仅在连接时显示，因此你将提供一个 `FALLBACK` 选项，该选项是一个仅包含电话号码的页面。
+第一个 HTML 页面上有两个输入字段（当然是新的 HTML5 输入类型），按钮将两个数字相乘（本示例中没有验证）。当单击提交按钮时，将显示结果，并提供一个选项，通过联系表单将你的结果发送给一个虚构的公司。但是，联系表单仅在连接时显示，因此你将提供一个`FALLBACK`选项，该选项是一个仅包含电话号码的页面。
 
 此外，在应用程序中你有一个包含一些布局样式的 CSS 文件，以及一个单独的 CSS 文件，用于加载漂亮的字体（例如，它可能来自网络字体服务）。你希望这个漂亮的字体仅在用户在线时显示。
 
@@ -11260,7 +11443,7 @@ style.css
 
 清单 13.3 显示了此应用程序的 HTML，清单 13.4 显示了清单文件。你可以在图 13.4 中查看其实际效果。
 
-**清单 13.3    用于显示计算表单的 HTML**
+**清单 13.3 用于显示计算表单的 HTML**
 
 ```
 <!DOCTYPE html>
@@ -11287,8 +11470,6 @@ style.css
 </body>
 </html>
 ```
-
-www.it-ebooks.info
 
 ### 提交一个计算
 
@@ -11334,8 +11515,6 @@ connection-tick.gif connection-cross.gif
 
 图 13.5 离线时提交计算的输出
 
-
-
 ### 联系我们
 
 我们的联系表单需要您连接互联网。或者，您也可以拨打 123-456-789 联系我们。
@@ -11371,18 +11550,18 @@ Application Cache Progress event (5 of 5)
 Application Cache UpdateReady event
 ```
 
-`ApplicationCache` 对象中有几个事件，如下所列。浏览器默认提供加载事件，但应用缓存 API 为您提供了更多选择（如果您想使用它们）。
+`ApplicationCache`对象中有几个事件，如下所列。浏览器默认提供加载事件，但应用缓存 API 为您提供了更多选择（如果您想使用它们）。
 
 - `checking`：浏览器首次下载清单文件或正在查找文件的更新。
 - `noupdate`：清单文件未更改。
 - `downloading`：如果浏览器是首次查看清单文件，它将下载资源；否则，它已找到更新并正在下载该更新。
 - `progress`：浏览器正在下载列出的资源。
 - `cached`：资源现已下载并缓存。
-- `updateready`：清单中的资源已下载完毕，浏览器缓存可以更新。然后可以触发 `swapCache` 函数使浏览器使用最新的清单。请注意，必须调用 `swapCache` 函数；否则，浏览器仍将使用旧缓存。
+- `updateready`：清单中的资源已下载完毕，浏览器缓存可以更新。然后可以触发`swapCache`函数使浏览器使用最新的清单。请注意，必须调用`swapCache`函数；否则，浏览器仍将使用旧缓存。
 - `obsolete`：找不到清单文件。
 - `error`：找不到清单文件、引用清单的页面未正确下载，或检查清单时发生致命错误。
 
-这些事件为您提供了选择，例如使用 `addEventListener` 告知用户更新已准备就绪，然后调用 `swapCache` 函数：
+这些事件为您提供了选择，例如使用`addEventListener`告知用户更新已准备就绪，然后调用`swapCache`函数：
 
 ```
 applicationCache.addEventListener('updateready', function() {
@@ -11398,35 +11577,37 @@ applicationCache.addEventListener('updateready', function() {
 
 很多时候，用户会在使用系统上的其他应用程序时将浏览器窗口置于后台。当浏览器页面提醒用户其会话即将过期、某只股票达到卖出价位或某些其他对用户可能很重要的事件时，该警报可能位于桌面其他窗口的后面。使用通知 API，浏览器页面现在可以请求用户的桌面代为显示通知。通知将像其他已安装应用程序的通知一样显示，通常在用户屏幕的某个角落。
 
-WebKit 通知 API 提供了两个接口，分别名为 `NotificationCenter` 和 `Notification`。`NotificationCenter` 接口提供了请求用户通知权限、维护权限状态和创建通知的能力。以下是 `NotificationCenter` 接口上可用的方法：
+WebKit 通知 API 提供了两个接口，分别名为`NotificationCenter`和`Notification`。`NotificationCenter`接口提供了请求用户通知权限、维护权限状态和创建通知的能力。以下是`NotificationCenter`接口上可用的方法：
 
 - `Notification createNotification(in DOMString iconUrl, in DOMString title, in DOMString body)`：基于提供的图标、标题和正文创建一个通知实例。
 - `Notification createHTMLNotification(in DOMString url)`：创建一个基于 HTML 页面的通知。
 - `Int checkPermission()`：获取当前来源的通知权限级别。
 - `void requestPermission([in Function callback])`：请求用户显示通知的权限。
 
-`NotificationCenter` 接口在 WebKit 浏览器中通过 `window` 对象的名为 `webkitNotifications` 的属性暴露。例如，要使用 JavaScript 创建通知，您可以使用以下代码行：
+
+
+`NotificationCenter`接口在 WebKit 浏览器中通过`window`对象的名为`webkitNotifications`的属性暴露。例如，要使用 JavaScript 创建通知，您可以使用以下代码行：
 
 ```
 window.webkitNotifications.createNotification('icon.png', 'My Title', 'My Notification');
 ```
 
-如您所见，该接口有两种不同的创建通知的方法：`createNotification` 和 `createHTMLNotification`。`createNotification` 方法接受传递的参数以显示带有图标、标题和正文的标准桌面通知。除这些值外，使用 `createNotification` 时无法对通知执行其他自定义操作。使用 `createHTMLNotification` 时，源页面的 URL 被传递给该方法。然后此 URL 页面可以具有格式等以提供附加功能，例如超链接。无论哪种情况，都会返回一个 `Notification` 实例。
+如您所见，该接口有两种不同的创建通知的方法：`createNotification`和`createHTMLNotification`。`createNotification`方法接受传递的参数以显示带有图标、标题和正文的标准桌面通知。除这些值外，使用`createNotification`时无法对通知执行其他自定义操作。使用`createHTMLNotification`时，源页面的 URL 被传递给该方法。然后此 URL 页面可以具有格式等以提供附加功能，例如超链接。无论哪种情况，都会返回一个`Notification`实例。
 
-一旦创建了 `Notification` 实例，您就可以使用 `Notification` 接口方法来控制通知的显示。在 WebKit 通知接口中，有两个方法 `show` 和 `cancel`，说明如下：
+一旦创建了`Notification`实例，您就可以使用`Notification`接口方法来控制通知的显示。在 WebKit 通知接口中，有两个方法`show`和`cancel`，说明如下：
 
 - `show()`：如果权限已允许，则将通知添加到桌面队列中进行显示。
 - `cancel()`：从桌面或队列中移除通知。
 
-`Notification` 接口还具有事件处理函数，用于在通知显示、关闭或发生错误时提供通知的详细信息，如下所列：
+`Notification`接口还具有事件处理函数，用于在通知显示、关闭或发生错误时提供通知的详细信息，如下所列：
 
 - `ondisplay`：通知已在桌面上显示。
-- `onclose`：通知已通过手动操作或通过 `cancel` 方法关闭。
+- `onclose`：通知已通过手动操作或通过`cancel`方法关闭。
 - `onerror`：通知发生错误。
 
-您将在本章的最后一个示例中研究如何处理 Notification 接口事件。
+您将在本章的最后一个示例中研究如何处理`Notification`接口事件。
 
-### 通知权限
+## 通知权限
 
 由于通知 API 能够随时在用户的屏幕上显示任何性质的弹出窗口，因此对安全性和不需要的广告内容的担忧是自然的。因此，通知 API 包含一个权限系统，用户必须首先被询问是否希望允许或拒绝特定来源的通知。当向用户请求权限时，特定浏览器将使用下拉栏或类似方法向用户请求权限，如图 13.7 所示。
 
@@ -11434,7 +11615,7 @@ window.webkitNotifications.createNotification('icon.png', 'My Title', 'My Notifi
 
 同样重要的是要认识到，通知的权限是按来源设置的，而不是按页面设置的。因此，如果用户拒绝了您的某个页面的通知，那么整个域的通知都将被拒绝。如果用户未提供权限而您创建了通知，通知不会失败，但也不会显示。在本章的最后一个示例中，您将了解如何检查用户对域的当前“权限级别”。
 
-### 浏览器兼容性
+## 浏览器兼容性
 
 表 13.3 显示了每个支持通知 API 的浏览器的版本。但请注意，通知 API 是使用 WebKit 实现的，因为通用规范仍在草案阶段。预计最终发布的规范将拥有一个不依赖 WebKit 的通知方法。
 
@@ -11458,11 +11639,11 @@ window.webkitNotifications.createNotification('icon.png', 'My Title', 'My Notifi
 
 这是一个简单的教程，但将展示在桌面上显示桌面通知的基础知识。让我们通过查看代码清单 13.5 来发送第一个通知：
 
-1.  创建一个空白 HTML 页面，包含如代码清单 13.5 所示的 HTML body 标签，其中包括“设置权限”和“发送通知”两个按钮。
-2.  添加 `window.addEventListener` 行以监听页面加载事件，并添加 `init` 函数，该函数为按钮附加点击事件处理程序。
-3.  添加全局变量 `notificationCount`，为每个通知维护一个唯一 ID。
-4.  添加 `setPermission` 函数，以便在支持 `webkitNotifications` 接口时请求权限。
-5.  添加 `fireNotification` 函数，该函数创建并显示通知。
+1. 创建一个空白 HTML 页面，包含如代码清单 13.5 所示的 HTML body 标签，其中包括“设置权限”和“发送通知”两个按钮。
+2. 添加`window.addEventListener`行以监听页面加载事件，并添加`init`函数，该函数为按钮附加点击事件处理程序。
+3. 添加全局变量`notificationCount`，为每个通知维护一个唯一 ID。
+4. 添加`setPermission`函数，以便在支持`webkitNotifications`接口时请求权限。
+5. 添加`fireNotification`函数，该函数创建并显示通知。
 
 ### 代码清单 13.5 使用 createNotification 显示事件
 
@@ -11530,46 +11711,47 @@ window.addEventListener('load',init,false);
 </html>
 ```
 
-当代码清单 13.5 在浏览器中加载时，`init` 函数将运行，并为两个按钮“设置权限”和“发送通知”添加点击事件处理程序。你需要首先点击“设置权限”按钮，以便浏览器显示授权提示。（请记住在 Chrome 或其他基于 WebKit 的浏览器中运行此代码。）当权限请求出现时，选择“允许”选项，这将告知浏览器，允许来自该页面源点的任何页面请求桌面显示桌面通知。在 `setPermission` 函数内部，你首先检查 `webkitNotifications` 是否可用。如果接口可用，脚本将执行 `webkitNotifications` 接口的 `requestPermission` 方法。这将启动向用户请求权限的流程。如果你之前已设置权限允许通知，那么再次调用 `requestPermission` 将不会有任何效果。你可以重置页面源点的权限以便进行测试，如下面的提示所示。
+当代码清单 13.5 在浏览器中加载时，`init`函数将运行，并为两个按钮“设置权限”和“发送通知”添加点击事件处理程序。你需要首先点击“设置权限”按钮，以便浏览器显示授权提示。（请记住在 Chrome 或其他基于 WebKit 的浏览器中运行此代码。）当权限请求出现时，选择“允许”选项，这将告知浏览器，允许来自该页面源点的任何页面请求桌面显示桌面通知。在`setPermission`函数内部，你首先检查`webkitNotifications`是否可用。如果接口可用，脚本将执行`webkitNotifications`接口的`requestPermission`方法。这将启动向用户请求权限的流程。如果你之前已设置权限允许通知，那么再次调用`requestPermission`将不会有任何效果。你可以重置页面源点的权限以便进行测试，如下面的提示所示。
 
 > ### 提示
-在使用这些教程或你自己的页面测试通知时，你会注意到一旦你允许或拒绝了通知，将无法再使用 `requestPermission` 方法再次询问用户是否允许或拒绝通知。要重置通知的首选项，你必须进入浏览器的设置并手动重置权限。在 Chrome 中，你可以在“偏好设置” > “高级” > “隐私” - “内容设置...” > “通知” > “管理例外情况...”下找到此选项，如图 13.8 所示。
+>
+> 在使用这些教程或你自己的页面测试通知时，你会注意到一旦你允许或拒绝了通知，将无法再使用`requestPermission`方法再次询问用户是否允许或拒绝通知。要重置通知的首选项，你必须进入浏览器的设置并手动重置权限。在 Chrome 中，你可以在“偏好设置” > “高级” > “隐私” - “内容设置...” > “通知” > “管理例外情况...”下找到此选项，如图 13.8 所示。
+>
+> 要重置你域名的通知权限，请将鼠标悬停在你的条目上，然后点击 X 从主机名模式列表中移除你的条目，如图 13.9 所示。这将重置权限，并允许 JavaScript 代码通过`requestPermission`方法进行询问。
 
-要重置你域名的通知权限，请将鼠标悬停在你的条目上，然后点击 X 从主机名模式列表中移除你的条目，如图 13.9 所示。这将重置权限，并允许 JavaScript 代码通过 `requestPermission` 方法进行询问。
-
-一旦权限设置为允许桌面通知，你就可以点击“发送通知”按钮。这将执行 `fireNotification` 方法，该方法增加通知计数器，然后通过 `createNotification` 方法创建一个通知。传递给该方法的参数包括我们创建的图标 URL、包含计数器的标题，以及包含唯一计数器的通知正文文本。创建通知后，你仍然必须调用 `show` 方法，告诉浏览器要求桌面显示通知。如果权限未被允许或已被拒绝，则通知将不会显示。
+一旦权限设置为允许桌面通知，你就可以点击“发送通知”按钮。这将执行`fireNotification`方法，该方法增加通知计数器，然后通过`createNotification`方法创建一个通知。传递给该方法的参数包括我们创建的图标 URL、包含计数器的标题，以及包含唯一计数器的通知正文文本。创建通知后，你仍然必须调用`show`方法，告诉浏览器要求桌面显示通知。如果权限未被允许或已被拒绝，则通知将不会显示。
 
 每次点击“发送通知”按钮，都会创建并显示一个新的通知。在图 13.10 中，你可以看到多次点击“发送通知”按钮的示例。
 
 > **注意**
-每个桌面环境都会对一次可以向用户显示的通知数量有限制。如果你创建了一个通知，而桌面当前正在显示最大数量的通知，那么该通知将被排队，直到用户移除一个通知或通知被自动移除，桌面才有空间显示。
+>
+> 每个桌面环境都会对一次可以向用户显示的通知数量有限制。如果你创建了一个通知，而桌面当前正在显示最大数量的通知，那么该通知将被排队，直到用户移除一个通知或通知被自动移除，桌面才有空间显示。
 
 本教程展示了通过 WebKit 通知创建和显示桌面通知的简单示例。在下一个教程中，你将使用这些方法以及其他事件来创建来自 Twitter 用户的新推文通知。
-
-348 第13章 HTML5 浏览器体验
 
 ## 高级教程：创建推文通知页面
 
 在上一个教程中，你已经能够创建桌面通知，你可能对如何使用通知 API 有了一些想法。当用户不在浏览器窗口中时，能够通知他们发生事件是非常有用的。
 
-在这个教程中，你将使用通知 API 在桌面上显示来自特定 Twitter.com 用户的新推文通知。该教程将使用 Twitter API `statuses/user_timeline` 来检索用户的新推文，然后将推文作为通知显示在桌面上。该页面将每隔 60 秒向 Twitter.com 发送一次请求来检查用户的新推文。首次发出请求时，页面将默认抓取三条最新的推文进行显示。有关 Twitter API 的更多信息，请参阅 REST API 的文档 http://dev.twitter.com/doc，以及本教程将使用特定 API 方法的文档 http://dev.twitter.com/doc/get/statuses/user_timeline。
+在这个教程中，你将使用通知 API 在桌面上显示来自特定 Twitter.com 用户的新推文通知。该教程将使用 Twitter API `statuses/user_timeline`来检索用户的新推文，然后将推文作为通知显示在桌面上。该页面将每隔 60 秒向 Twitter.com 发送一次请求来检查用户的新推文。首次发出请求时，页面将默认抓取三条最新的推文进行显示。有关 Twitter API 的更多信息，请参阅 REST API 的文档 http://dev.twitter.com/doc，以及本教程将使用特定 API 方法的文档 http://dev.twitter.com/doc/get/statuses/user_timeline。
 
 > **注意**
-Twitter API 能够通过 Twitter REST API 执行回调函数。本教程利用这种回调技术，能够直接对 Twitter API 进行 JavaScript 调用。你必须使用此回调方法以及 JSONP 格式，以解决这些基于客户端的请求中常见的跨域请求安全问题。此外，你也可以使用第三方库（如 jQuery）来执行调用，甚至可以在你自己的域中构建代理服务器。请注意，与大多数在线 API 一样，Twitter API 对其 API 实施速率限制以防止滥用，如果你使用过于频繁，可能会收到“超过速率限制”的错误。
+>
+> Twitter API 能够通过 Twitter REST API 执行回调函数。本教程利用这种回调技术，能够直接对 Twitter API 进行 JavaScript 调用。你必须使用此回调方法以及 JSONP 格式，以解决这些基于客户端的请求中常见的跨域请求安全问题。此外，你也可以使用第三方库（如 jQuery）来执行调用，甚至可以在你自己的域中构建代理服务器。请注意，与大多数在线 API 一样，Twitter API 对其 API 实施速率限制以防止滥用，如果你使用过于频繁，可能会收到“超过速率限制”的错误。
 
-除了你在前一个教程中看到的 `createNotification` 和 `show` 方法外，你还将使用 `cancel` 方法在特定时间段后自动移除通知。该教程将使用 `ondisplay` 事件处理程序来触发一个计时器，在 15 秒后自动移除显示的通知。然后，脚本将等待一分钟，并向 Twitter 询问是否有新推文。
+除了你在前一个教程中看到的`createNotification`和`show`方法外，你还将使用`cancel`方法在特定时间段后自动移除通知。该教程将使用`ondisplay`事件处理程序来触发一个计时器，在 15 秒后自动移除显示的通知。然后，脚本将等待一分钟，并向 Twitter 询问是否有新推文。
 
-在前一个示例中，您可能已经注意到，很难知道是否已提供权限或当前的通知权限级别。在本示例中，您将使用`webkitNotifications`接口上的`checkPermission`方法，允许用户随时查看权限。通常，这不是您会在页面中向用户展示的内容，但可以在您的脚本中很有用。`checkPermission`方法返回一个整数值，描述桌面通知的当前权限状态，如表13.4所示。
+在前一个示例中，您可能已经注意到，很难知道是否已提供权限或当前的通知权限级别。在本示例中，您将使用`webkitNotifications`接口上的`checkPermission`方法，允许用户随时查看权限。通常，这不是您会在页面中向用户展示的内容，但可以在您的脚本中很有用。`checkPermission`方法返回一个整数值，描述桌面通知的当前权限状态，如表 13.4 所示。
 
-通常，要使用回调函数调用外部Web服务，您需要将内联脚本源作为REST调用的URL。本示例展示了一种令人兴奋的替代方法，使用Web Worker来检索结果、解析它们，然后将它们发送回主线程。这是通过在Web Worker中使用`importScripts`命令来实现的，如第12章“通信与线程”中所述。这允许主线程在调用Twitter时继续运行而不被阻塞，并允许处理结果。您只需在每次想要检索结果时创建一个新的Web Worker，并且Web Worker在处理完结果后结束。关于这一点的一个注意事项是，通知不能从Web Worker启动，因为通知是`window`对象的一部分，而该对象在Web Worker中不可用。因此，您只需将信息发送到主线程以显示通知。使用这种Web Worker模型，将有两个文件。清单13.6是主页面，清单13.7是Web Worker。让我们从主页面开始，如清单13.6所示：
+通常，要使用回调函数调用外部 Web 服务，您需要将内联脚本源作为 REST 调用的 URL。本示例展示了一种令人兴奋的替代方法，使用 Web Worker 来检索结果、解析它们，然后将它们发送回主线程。这是通过在 Web Worker 中使用`importScripts`命令来实现的，如第 12 章“通信与线程”中所述。这允许主线程在调用 Twitter 时继续运行而不被阻塞，并允许处理结果。您只需在每次想要检索结果时创建一个新的 Web Worker，并且 Web Worker 在处理完结果后结束。关于这一点的一个注意事项是，通知不能从 Web Worker 启动，因为通知是`window`对象的一部分，而该对象在 Web Worker 中不可用。因此，您只需将信息发送到主线程以显示通知。使用这种 Web Worker 模型，将有两个文件。清单 13.6 是主页面，清单 13.7 是 Web Worker。让我们从主页面开始，如清单 13.6 所示：
 
-1.  创建一个空白的HTML页面，包含HTML body标签和按钮：设置权限、检查权限级别和获取推文。
-2.  添加script标签和全局变量`tworker`和`lastTweetId`。
-3.  添加script标签和`setPermission`函数，用于请求桌面通知的权限。
-4.  添加`checkPermissionLevel`函数，用于检索和显示当前的权限级别。
-5.  添加`grabTweets`函数，该函数启动Web Worker，为来自Web Worker的消息分配监听器，并处理通知的创建。
+1. 创建一个空白的 HTML 页面，包含 HTML body 标签和按钮：设置权限、检查权限级别和获取推文。
+2. 添加 script 标签和全局变量`tworker`和`lastTweetId`。
+3. 添加 script 标签和`setPermission`函数，用于请求桌面通知的权限。
+4. 添加`checkPermissionLevel`函数，用于检索和显示当前的权限级别。
+5. 添加`grabTweets`函数，该函数启动 Web Worker，为来自 Web Worker 的消息分配监听器，并处理通知的创建。
 
-### 表13.4 桌面通知的权限级别
+### 表 13.4 桌面通知的权限级别
 
 | 权限 | 值 | 说明 |
 | :--- | :---: | :--- |
@@ -11577,7 +11759,9 @@ Twitter API 能够通过 Twitter REST API 执行回调函数。本教程利用�
 | `PERMISSION_NOT_ALLOWED` | 1 | 用户已允许或拒绝权限。通常，尚未执行权限请求。 |
 | `PERMISSION_DENIED` | 2 | 用户已拒绝此来源的桌面通知权限。 |
 
-### 清单13.6 在主线程中创建通知
+### 清单 13.6 在主线程中创建通知
+
+
 
 ```html
 <!DOCTYPE html>
@@ -11746,8 +11930,9 @@ window.addEventListener('load',init,false);
 
 现在主页面已完成，您需要创建Web Worker JavaScript文件，该文件将检索推文并解析返回的任何推文，如清单13.7所示：
 
-1.  为Web Worker创建一个.js文件，其中包含用于接收来自主页面消息的`onmessage`处理程序。`onmessage`处理程序还将执行从Twitter.com导入REST API脚本的操作。
-2.  添加`getResult`函数，它是`importScripts` REST API调用的回调函数。此函数将处理检索到的任何推文的解析，并将它们发送回主线程进行显示。这就是Web Worker的全部内容。
+1. 为Web Worker创建一个`.js`文件，其中包含用于接收来自主页面消息的`onmessage`处理程序。`onmessage`处理程序还将执行从Twitter.com导入REST API脚本的操作。
+
+2. 添加`getResult`函数，它是`importScripts` REST API调用的回调函数。此函数将处理检索到的任何推文的解析，并将它们发送回主线程进行显示。这就是Web Worker的全部内容。
 
 ### 清单13.7 利用 Web Worker 关注推文
 
@@ -11763,6 +11948,8 @@ var maxId = 0;
 ```
 
 ## 354 第13章 HTML5中的浏览器体验
+
+
 
 ```
 // 检查是否有待解析的推文
@@ -11814,8 +12001,9 @@ onmessage = function(event) {
     // 为你想要关注的任意Twitter用户
 importScripts('http://api.twitter.com/1/statuses/user_timeline.json?screen_name=BreakingNews' + qString + '&callback=getResult');
 }
+```
 
-// 高级技巧：创建推文通知页面
+## 高级技巧：创建推文通知页面
 
 在浏览器中加载主页面后，点击“设置权限”按钮之前，先点击“检查权限级别”按钮。这将调用`checkPermissionLevel`函数。该函数会验证`webkitNotifications`是否可用，然后执行`checkPermission`方法，以整数值的形式获取当前的权限级别。接着，该值会被转换为对应的含义，并以警报形式显示。这将帮助你快速验证该域是否已正确设置显示桌面通知的权限。你可以通过浏览器设置移除权限、拒绝权限以及最终允许权限来观察权限级别的变化，以此进行测试。如果你尚未将权限设置为允许通知，则需要在继续后续操作前完成设置。
 
@@ -11827,8 +12015,6 @@ Web Worker发送给主页面的消息将有两种不同类型：TWEET消息和EN
 
 END消息将通知主页面，Web Worker已完成任何推文的检索和处理。通过让Web Worker告知你线程已完成，你可以确保没有多个Worker（线程）同时运行，并确保在Worker结束和启动新Worker之间等待一段时间。
 请求被拒绝，因为它被视为高风险
-
-
 
 ## 本章总结
 
@@ -11842,11 +12028,11 @@ END消息将通知主页面，Web Worker已完成任何推文的检索和处理�
 
 File API提供了一套标准化方式，用于在客户端浏览器中与用户选择的文件进行交互。File API的接口可分为三个功能领域：
 
-- 在FileList接口中选择一个或多个文件
-- 通过File接口获取文件的属性
-- 通过FileReader接口读取实际文件内容
+- 在`FileList`接口中选择一个或多个文件
+- 通过`File`接口获取文件的属性
+- 通过`FileReader`接口读取实际文件内容
 
-FileList接口是用户选择的文件列表，可以像数组一样进行遍历。File接口提供了所选文件的属性。借助这两个接口，脚本可以遍历所选文件并获取文件的关键属性，如下所示：
+`FileList`接口是用户选择的文件列表，可以像数组一样进行遍历。`File`接口提供了所选文件的属性。借助这两个接口，脚本可以遍历所选文件并获取文件的关键属性，如下所示：
 
 - `name`：文件名
 - `type`：MIME格式、ASCII编码的文件类型
@@ -11870,8 +12056,7 @@ File API与客户端设备上浏览器容器之外的信息和数据进行交互
 | Opera | 11.1+ |
 | Safari | - |
 
-## 入门实例：
-获取文件属性
+## 入门实例：获取文件属性
 
 本实例将使用`File`接口，获取页面访问者通过标准文件输入元素选择的文件的名称、类型、大小和最后修改日期。在展示如何获取这些信息之前，本实例将先演示如何验证浏览器是否支持`FileList`接口。要显示文件的属性，如清单14.1所示，请执行以下步骤：
 
@@ -11890,26 +12075,20 @@ File API与客户端设备上浏览器容器之外的信息和数据进行交互
   <script>
     // 处理选定的文件
     function handleFile(fileInput) {
-
       // 引用用于显示属性的部分
       var fileAttributes = document.getElementById('fileAttributes');
-
       // 验证浏览器是否支持files接口
       if (fileInput.files) {
-
         // 使用files接口引用文件
         var file = fileInput.files[0];
-
         // 创建输出内容
         var output = 'File attributes:<br>';
         output += 'name: ' + file.name + '<br>';
         output += 'type: ' + file.type + '<br>';
         output += 'size: ' + (file.size/1024).toFixed(2) + 'KB<br>';
         output += 'last modified date: ' + file.lastModifiedDate;
-
         // 将输出内容设置到该部分
         fileAttributes.innerHTML = output;
-
       } else {
         // 浏览器不支持files接口
         fileAttributes.innerHTML = 'files interface not supported';
@@ -11928,26 +12107,23 @@ File API与客户端设备上浏览器容器之外的信息和数据进行交互
 </html>
 ```
 
-当清单14.1创建的页面的访问者从文件输入元素的浏览按钮中选择一个文件时，onchange事件处理程序将调用handleFile函数，并将文件元素作为参数传递。在handleFile函数内部，你首先获取显示部分元素的引用，然后检查以验证浏览器是否支持FileList接口。如果浏览器不支持FileList接口（通过检查Files数组是否存在来判断），将在fileAttributes部分显示一条消息，但你可以选择继续处理逻辑或请求访问者提供更多信息。
+当清单14.1创建的页面的访问者从文件输入元素的浏览按钮中选择一个文件时，`onchange`事件处理程序将调用`handleFile`函数，并将文件元素作为参数传递。在`handleFile`函数内部，你首先获取显示部分元素的引用，然后检查以验证浏览器是否支持`FileList`接口。如果浏览器不支持`FileList`接口（通过检查`Files`数组是否存在来判断），将在`fileAttributes`部分显示一条消息，但你可以选择继续处理逻辑或请求访问者提供更多信息。
 
-如果支持FileList接口，你将从文件数组中获取一个特定实例（File对象），即引用Files数组中的第一个文件`fileInput.files[0]`。然后你使用该File接口实例来获取`name`、`type`、`size`和`lastModifiedDate`属性。对size属性执行了转换，因为其度量单位是字节，而文件大小通常以千字节为单位引用更常见。该等式将字节转换为千字节。你可以通过编写一个函数来增强此功能，该函数接收字节数，并根据总字节数以千字节、兆字节或其他单位显示转换结果，就像在常规目录列表中所做的那样。
+如果支持`FileList`接口，你将从文件数组中获取一个特定实例（`File`对象），即引用`Files`数组中的第一个文件`fileInput.files[0]`。然后你使用该`File`接口实例来获取`name`、`type`、`size`和`lastModifiedDate`属性。对`size`属性执行了转换，因为其度量单位是字节，而文件大小通常以千字节为单位引用更常见。该等式将字节转换为千字节。你可以通过编写一个函数来增强此功能，该函数接收字节数，并根据总字节数以千字节、兆字节或其他单位显示转换结果，就像在常规目录列表中所做的那样。
 
 > 注意
-> File接口继承自Blob，因此它包含size和type属性。通过File接口，添加了name和lastModifiedDate属性。然而，在多个浏览器平台中，lastModifiedDate不可用，当被请求时会返回未定义的值。
+> `File`接口继承自`Blob`，因此它包含`size`和`type`属性。通过`File`接口，添加了`name`和`lastModifiedDate`属性。然而，在多个浏览器平台中，`lastModifiedDate`不可用，当被请求时会返回未定义的值。
 
 在本实例中，你获取了访问者选择的文件并显示了文件属性。这在文件上传到服务器之前进行过滤，或仅向用户显示确认信息时非常方便。下一个实例将扩展此功能，为访问者提供选择多个文件进行处理的接口。
 
-## 入门实例：
-使用拖放处理多个文件
+## 入门实例：使用拖放处理多个文件
 
-FileList接口提供了处理来自本地文件系统的File对象数组的能力。本实例展示如何将拖放区域与FileList结合使用，以处理用户选择的多个文件。这有多种不同用途，包括按名称、大小或类型过滤文件，以及让用户确认他们选择的文件。一旦文件被拖放到放置区域，脚本将使用length属性遍历FileList序列。length属性返回FileList中的元素数量（即File对象数量），可用于“遍历”文件序列。对于每个File对象，页面将在表格中显示文件属性，以向查看者确认哪些内容被放置到了页面的放置区域。要创建拖放页面，请按照以下步骤和清单14.2中的代码操作：
+`FileList`接口提供了处理来自本地文件系统的`File`对象数组的能力。本实例展示如何将拖放区域与`FileList`结合使用，以处理用户选择的多个文件。这有多种不同用途，包括按名称、大小或类型过滤文件，以及让用户确认他们选择的文件。一旦文件被拖放到放置区域，脚本将使用`length`属性遍历`FileList`序列。`length`属性返回`FileList`中的元素数量（即`File`对象数量），可用于“遍历”文件序列。对于每个`File`对象，页面将在表格中显示文件属性，以向查看者确认哪些内容被放置到了页面的放置区域。要创建拖放页面，请按照以下步骤和清单14.2中的代码操作：
 
-1. 创建清单14.2中的页面，包含放置区域和filesSelected部分的样式和正文标签。确保input元素具有multiple属性和onchange事件处理程序。
-2. 在init函数中添加放置区域事件监听器，并添加handleFileDrop和handleDragOver函数以启用放置区域。
+1. 创建清单14.2中的页面，包含放置区域和`filesSelected`部分的样式和正文标签。确保`input`元素具有`multiple`属性和`onchange`事件处理程序。
+2. 在`init`函数中添加放置区域事件监听器，并添加`handleFileDrop`和`handleDragOver`函数以启用放置区域。
 
-
-
-### 清单 14.2 使用 FileList 遍历多个文件
+### 清单14.2 使用FileList遍历多个文件
 
 ```html
 <!DOCTYPE html>
@@ -11979,125 +12155,109 @@ tr:nth-child(odd)  { background-color:#eee; }
 tr:nth-child(even) { background-color:#fff; }
 </style>
 <script>
-
 // 初始化我们的拖放区域
 function init() {
-
     // 设置拖放区域和事件监听器。
     dropZone = document.getElementById('dropZone');
     dropZone.addEventListener('dragover', handleDragOver, false);
     dropZone.addEventListener('drop', handleFileDrop, false);
-
 }
-
 // 处理拖放的文件
 function handleFileDrop(evt) {
     // 阻止默认的拖放行为
     evt.stopPropagation();
     evt.preventDefault();
-
     // 获取文件列表
     var files = evt.dataTransfer.files;
-
     // 显示选中的文件列表
     displayFiles(files);
-
 }
-
 // 处理拖拽经过事件
 function handleDragOver(evt) {
-
     // 在拖拽经过时阻止默认行为
     evt.stopPropagation();
     evt.preventDefault();
 }
-
 // 显示选中的文件
 function displayFiles(files) {
-
     // 清空当前表格
     clearTable();
-
     // 显示选中的文件数量
     var fileCount = document.getElementById('fileCount');
     fileCount.innerHTML = files.length + ' 个文件被选中';
-
     // 设置表格生成的字段
     var fileTable = document.getElementById('fileTable');
-
     if (files.length>0) {
         var row;
         var cell;
         var textNode;
-
         // 遍历文件列表并创建行
         for (var i=0; i<files.length; i++) {
-
             // 添加行
             var row = fileTable.insertRow(i);
+```
 
-            // 添加文件名单元格
-            cell = row.insertCell(0);
-            textNode = document.createTextNode(files[i].name);
-            cell.appendChild(textNode);
 
-            // 添加文件类型单元格
-            cell = row.insertCell(1);
-            textNode = document.createTextNode(files[i].type);
-            cell.appendChild(textNode);
 
-            // 添加文件大小单元格
-            cell = row.insertCell(2);
-            textNode = document.createTextNode((files[i].size/1024).toFixed(2)+'KB');
-            cell.appendChild(textNode);
+```
+// 添加文件名单元格
+cell = row.insertCell(0);
+textNode = document.createTextNode(files[i].name);
+cell.appendChild(textNode);
 
-            if (files[i].lastModifiedDate != undefined) {
-              // 添加文件最后修改日期单元格
-              cell = row.insertCell(3);
-              textNode = document.createTextNode(files[i].lastModifiedDate);
-              cell.appendChild(textNode);
-            }
-        }
-        fileTable.style.visibility = 'visible';
-    } else {
-        fileTable.style.visibility = 'hidden';
-    }
+// 添加文件类型单元格
+cell = row.insertCell(1);
+textNode = document.createTextNode(files[i].type);
+cell.appendChild(textNode);
+
+// 添加文件大小单元格
+cell = row.insertCell(2);
+textNode = document.createTextNode((files[i].size/1024).toFixed(2)+'KB');
+cell.appendChild(textNode);
+
+if (files[i].lastModifiedDate != undefined) {
+  // 添加文件最后修改日期单元格
+  cell = row.insertCell(3);
+  textNode = document.createTextNode(files[i].lastModifiedDate);
+  cell.appendChild(textNode);
+}
+}
+
+fileTable.style.visibility = 'visible';
+
+} else {
+fileTable.style.visibility = 'hidden';
+}
 }
 
 // 清空表格
 function clearTable() {
-
-    // 获取表格
-    var fileTable = document.getElementById('fileTable');
-
-    // 循环移除现有行
-    while (fileTable.rows.length>0) {
-        fileTable.deleteRow(fileTable.rows.length-1);
-    }
+// 获取表格
+var fileTable = document.getElementById('fileTable');
+// 循环移除现有行
+while (fileTable.rows.length>0) {
+fileTable.deleteRow(fileTable.rows.length-1);
+}
 }
 
 // 初始化窗口
 window.addEventListener('load',init,false);
-
 </script>
 </head>
 <body>
-
 <h1>将多个文件拖到下面的拖放区域：</h1>
-
 <section id="fileSelection">
-  <!--
-  // 多文件部分也可以通过 multiple 属性来实现
-  <input type="file" id="input" multiple="true" onchange="displayFiles(this.files)">
-  -->
-
-  <div id="dropZone">将文件拖放到此处</div>
+<!--
+// 多文件部分也可以通过 multiple 属性来实现
+<input type="file" id="input" multiple="true" onchange="displayFiles(this.files)">
+-->
+<div id="dropZone">将文件拖放到此处</div>
 </section>
 <section id="filesSelected">
-    <br>
-    <div id="fileCount"></div>
-    <table id="fileTable">
-    </table>
+<br>
+<div id="fileCount"></div>
+<table id="fileTable">
+</table>
 </section>
 </body>
 </html>
@@ -12105,11 +12265,11 @@ window.addEventListener('load',init,false);
 
 ## 第 364 页 第 14 章 处理本地文件
 
-页面在浏览器中加载后，通过窗口 `load` 事件监听器调用的 `init` 函数初始化拖放区域。`init` 函数将 `dropzone` 变量设置为拖放区域的 div，并为 `dragover` 和 `drop` 事件注册两个事件监听器。当 `dragover` 事件被触发时，将调用 `handleDragOver` 函数；当 `drop` 事件被触发时，将调用 `handleFileDrop` 函数。当文件被放置到拖放区域并且 `handleFileDrop` 被调用时，脚本将检索 `FileList` 并将其传递给 `displayFiles` 方法。
+页面在浏览器中加载后，通过窗口`load`事件监听器调用的`init`函数初始化拖放区域。`init`函数将`dropzone`变量设置为拖放区域的`div`，并为`dragover`和`drop`事件注册两个事件监听器。当`dragover`事件被触发时，将调用`handleDragOver`函数；当`drop`事件被触发时，将调用`handleFileDrop`函数。当文件被放置到拖放区域并且`handleFileDrop`被调用时，脚本将检索`FileList`并将其传递给`displayFiles`方法。
 
-`displayFiles` 函数调用辅助函数 `clearTable` 来清除任何先前的结果。`clearTable` 从表格中移除行，直到所有行都被移除。接下来，`displayFiles` 检查 `FileList` 的长度，以验证是否有文件被放置到拖放区域。脚本使用索引遍历 `FileList`，以获取每个 File 接口。对于每个 File 对象，检索其属性并将它们作为新行中的单元格添加到表格中。最后，脚本通过使表格可见来显示它，如示例执行图 14.1 所示。
+`displayFiles`函数调用辅助函数`clearTable`来清除任何先前的结果。`clearTable`从表格中移除行，直到所有行都被移除。接下来，`displayFiles`检查`FileList`的长度，以验证是否有文件被放置到拖放区域。脚本使用索引遍历`FileList`，以获取每个`File`接口。对于每个`File`对象，检索其属性并将它们作为新行中的单元格添加到表格中。最后，脚本通过使表格可见来显示它，如示例执行图 14.1 所示。
 
-通过使用拖放区域和 `FileList` 序列，HTML5 使得访问者能够轻松地将文件提交到客户端页面。然而，到目前为止，您已经查看了文件的属性，而不是文件中的数据。在本章的其余部分，您将学习如何在客户端 JavaScript 中读取不同类型的文件。
+通过使用拖放区域和`FileList`序列，HTML5 使得访问者能够轻松地将文件提交到客户端页面。然而，到目前为止，您已经查看了文件的属性，而不是文件中的数据。在本章的其余部分，您将学习如何在客户端 JavaScript 中读取不同类型的文件。
 
 ## 将多个文件拖到下面的拖放区域：
 
@@ -12129,18 +12289,18 @@ window.addEventListener('load',init,false);
 www.it-ebooks.info
 
 > **提示**
-> 从 Blob 接口继承的 File 接口的 `type` 属性返回文件的多用途互联网邮件扩展 (MIME) 类型。MIME 类型是一个全小写、ASCII 编码的 DOMString。此 MIME 类型字符串可用于根据文件类型（如图像等）进行过滤。如图 14.1 所示，有两种不同类型的图像，但 MIME 类型都以 `image` 开头，因此您可以轻松验证这两个文件都是图像。MIME 类型提供了一种简单有效的方式来执行文件过滤和验证，正如您将在下一节中看到的。
+> 从`Blob`接口继承的`File`接口的`type`属性返回文件的多用途互联网邮件扩展 (MIME) 类型。MIME 类型是一个全小写、ASCII 编码的`DOMString`。此 MIME 类型字符串可用于根据文件类型（如图像等）进行过滤。如图 14.1 所示，有两种不同类型的图像，但 MIME 类型都以`image`开头，因此您可以轻松验证这两个文件都是图像。MIME 类型提供了一种简单有效的方式来执行文件过滤和验证，正如您将在下一节中看到的。
 
 ## FileReader 接口
 
-要将文件读入客户端内存，HTML5 File API 规范提供了一个名为 `FileReader` 的新接口。此接口提供了允许开发者从客户端 JavaScript 异步读取文件的方法、属性和事件。通过 `FileReader` 事件，您可以显示或处理文件数据。可以读取多种不同类型的文件，因为 `FileReader` 接口根据您可能读取的文件类型提供了四种不同的读取方法：
+要将文件读入客户端内存，HTML5 File API 规范提供了一个名为`FileReader`的新接口。此接口提供了允许开发者从客户端 JavaScript 异步读取文件的方法、属性和事件。通过`FileReader`事件，您可以显示或处理文件数据。可以读取多种不同类型的文件，因为`FileReader`接口根据您可能读取的文件类型提供了四种不同的读取方法：
 
-- `readAsArrayBuffer(Blob)`：将文件内容作为 `ArrayBuffer` 返回。
+- `readAsArrayBuffer(Blob)`：将文件内容作为`ArrayBuffer`返回。
 - `readAsBinaryString(Blob)`：将文件内容作为二进制字符串返回。
-- `readAsText(Blob [,encoding])`：将文件内容作为文本 `DOMString` 返回。
-- `readAsDataURL(Blob)`：将文件内容作为表示数据 URL 的 `DOMString` 返回。
+- `readAsText(Blob [,encoding])`：将文件内容作为文本`DOMString`返回。
+- `readAsDataURL(Blob)`：将文件内容作为表示数据 URL 的`DOMString`返回。
 
-由于 `FileReader` 接口是异步的，这允许页面的主线程继续处理，同时使用事件来捕获文件读取的关键阶段。表 14.2 显示了定义为 `FileReader` 接口一部分的事件。
+由于`FileReader`接口是异步的，这允许页面的主线程继续处理，同时使用事件来捕获文件读取的关键阶段。表 14.2 显示了定义为`FileReader`接口一部分的事件。
 
 | 事件名称 | 属性 | 目的 |
 |---|---|---|
@@ -12151,26 +12311,24 @@ www.it-ebooks.info
 | load | onload | 当文件被成功读取时触发 |
 | loadend | onloadend | 当文件读取完成（无论成功或失败）时触发 |
 
-
-
 ## 第14章 处理本地文件
 
-通过使用适当的 `FileReader` 读取方法并监听 `FileReader` 事件，您可以利用 `FileReader` 接口在客户端浏览器中执行通常在文件上传后在服务器端才会进行的工作。在接下来的这个方法中，您将使用 `readAsDataURL` 方法在用户的浏览器中为选定的图像创建缩略图，并显示它们的相应属性。
+通过使用适当的`FileReader`读取方法并监听`FileReader`事件，您可以利用`FileReader`接口在客户端浏览器中执行通常在文件上传后在服务器端才会进行的工作。在接下来的这个方法中，您将使用`readAsDataURL`方法在用户的浏览器中为选定的图像创建缩略图，并显示它们的相应属性。
 
 > **注意**
-> 文件读取可以通过与 Web Worker 一起使用 `FileReaderSync` 来作为同步接口，因为 Web Workers API 允许这些方法在与主线程不同的线程上执行。`FileReaderSync` 接口具有与 `FileReader` 相同的方法。有关同步文件 API 使用的更多信息，请参阅 W3C 工作草案。
+> 文件读取可以通过与 Web Worker 一起使用`FileReaderSync`来作为同步接口，因为 Web Workers API 允许这些方法在与主线程不同的线程上执行。`FileReaderSync`接口具有与`FileReader`相同的方法。有关同步文件 API 使用的更多信息，请参阅 W3C 工作草案。
 
-### 中级方法：通过 `readAsDataURL` 预览图像
+### 中级方法：通过`readAsDataURL`预览图像
 
-`FileReader` 接口的 `readAsDataURL` 方法接受一个提供的 `Blob` 或 `File` 引用，并将数据读入一个可以在适当容器中加载的 URL。在这个方法中，您将让访问者选择多个文件，然后从文件集合中过滤出图像，通过 `readAsDataURL` 读取它们，并将它们加载到图像容器中作为缩略图进行查看。通常，在 HTML5 File API 之前复制此功能，您需要将文件上传到服务器，在服务器上处理它们，然后将它们加载到客户端浏览器页面中。这需要增加文件来回发送和服务器上处理文件的开销。通过使用 HTML5 File API，您可以消除来回发送文件的需要，并利用客户端计算机的处理能力来执行文件的处理。
+`FileReader`接口的`readAsDataURL`方法接受一个提供的`Blob`或`File`引用，并将数据读入一个可以在适当容器中加载的 URL。在这个方法中，您将让访问者选择多个文件，然后从文件集合中过滤出图像，通过`readAsDataURL`读取它们，并将它们加载到图像容器中作为缩略图进行查看。通常，在 HTML5 File API 之前复制此功能，您需要将文件上传到服务器，在服务器上处理它们，然后将它们加载到客户端浏览器页面中。这需要增加文件来回发送和服务器上处理文件的开销。通过使用 HTML5 File API，您可以消除来回发送文件的需要，并利用客户端计算机的处理能力来执行文件的处理。
 
-这个方法将使用 `readAsDataURL` 方法以及 `onload` `FileReader` 事件来读取选定的文件。此外，当您将鼠标悬停在缩略图上时，该方法将显示每个文件的属性。要开始使用这个方法，请执行以下步骤以创建清单 14.3：
+这个方法将使用`readAsDataURL`方法以及`onload` `FileReader`事件来读取选定的文件。此外，当您将鼠标悬停在缩略图上时，该方法将显示每个文件的属性。要开始使用这个方法，请执行以下步骤以创建清单 14.3：
 
-- 1. 创建一个空白的 HTML 文件并添加清单 14.3 中的 `body` HTML，其中包括多文件 `input` 元素、用于显示缩略图的部分以及用于显示属性的部分。
-- 2. 添加 `style` 部分，其中包括用于处理图像选择和取消选择的三个样式集。
-- 3. 如清单 14.3 所示，在脚本中添加 `handleFiles` 函数，该函数在文件被选择后触发。
-- 4. 添加 `showFile` 函数以显示鼠标悬停文件的属性。
-- 5. 添加 `clearFile` 函数，当焦点不再停留在图像上时，该函数简单地清除属性区域。
+- 1. 创建一个空白的 HTML 文件并添加清单 14.3 中的`body` HTML，其中包括多文件`input`元素、用于显示缩略图的部分以及用于显示属性的部分。
+- 2. 添加`style`部分，其中包括用于处理图像选择和取消选择的三个样式集。
+- 3. 如清单 14.3 所示，在脚本中添加`handleFiles`函数，该函数在文件被选择后触发。
+- 4. 添加`showFile`函数以显示鼠标悬停文件的属性。
+- 5. 添加`clearFile`函数，当焦点不再停留在图像上时，该函数简单地清除属性区域。
 
 ### 清单 14.3 使用 readAsDataURL 预览图像
 
@@ -12197,10 +12355,8 @@ www.it-ebooks.info
 }
 </style>
 <script>
-
 // 加载选定的图像文件
 function handleFiles(files) {
-
   // 设置默认值
   var fileLimit = 10;        // 一次最大文件数
   var sizeLimit = 500;        // KB 文件大小限制
@@ -12215,74 +12371,68 @@ function handleFiles(files) {
 
   // 检查文件数量是否超过限制
   if (files.length<fileLimit) {
-
     // 遍历文件列表
     for (var i = 0; i < files.length; i++) {
-
       // 引用当前文件
       var file = files[i];
 
-// 验证文件是图像
-if (file.type.match(imageType)) {
+      // 验证文件是图像
+      if (file.type.match(imageType)) {
+        // 验证文件未超过最大大小
+        if (file.size<sizeLimitBytes) {
+          // 为文件创建一个图像容器
+          var img = document.createElement("img");
+          img.file = file;
+          img.className = 'unhighlight';
+          img.addEventListener('mouseover', showFile, false);
+          img.addEventListener('mouseout', clearFile, false);
+          imgPanel.appendChild(img);
 
-    // 验证文件未超过最大大小
-    if (file.size<sizeLimitBytes) {
+          // 创建读取器来读取文件
+          var reader = new FileReader();
 
-        // 为文件创建一个图像容器
-        var img = document.createElement("img");
-        img.file = file;
-        img.className = 'unhighlight';
-        img.addEventListener('mouseover', showFile, false);
-        img.addEventListener('mouseout', clearFile, false);
-        imgPanel.appendChild(img);
+          // 设置读取器的 onload 事件
+          reader.onload = (function(aImg) { return function(e) { aImg.src = e.target.result; }; })(img);
 
-        // 创建读取器来读取文件
-        var reader = new FileReader();
-        // 设置读取器的 onload 事件
-        reader.onload = (function(aImg) { return function(e) { aImg.src = e.target.result; }; })(img);
-
-        // 将文件作为数据 URL 读取以获取图像
-        reader.readAsDataURL(file);
-
-    } else {
-        // 文件太大
-        alert(file.name+' 大于 '+sizeLimit+'KB。');
+          // 将文件作为数据 URL 读取以获取图像
+          reader.readAsDataURL(file);
+        } else {
+          // 文件太大
+          alert(file.name+' 大于 '+sizeLimit+'KB。');
+        }
+      } else {
+        // 文件不是图像 MIME 类型
+        alert(file.name+' 不是图像。');
+      }
     }
-} else {
-    // 文件不是图像 MIME 类型
-    alert(file.name+' 不是图像。');
-}
-} else {
+  } else {
     // 选择了太多文件
     imgPanel.innerHTML = '一次只能选择 '+fileLimit+' 个文件。';
-}
+  }
 }
 
 // 显示鼠标悬停图像上的信息
 function showFile() {
+  // 高亮显示当前图像
+  this.className = 'highlight';
 
-    // 高亮显示当前图像
-    this.className = 'highlight';
+  // 获取属性面板和文件的引用
+  var fileAttributes = document.getElementById('fileAttributes');
+  var file = this.file;
 
-    // 获取属性面板和文件的引用
-    var fileAttributes = document.getElementById('fileAttributes');
-    var file = this.file;
+  // 创建文件信息
+  var fileinfo = '文件信息：<br>';
+  fileinfo += file.name + '<br>';
+  fileinfo += file.type + '<br>';
+  fileinfo += (file.size/1024).toFixed(2) + 'KB<br>';
+  fileinfo += file.lastModifiedDate + '<br>';
 
-// 创建文件信息
-var fileinfo = '文件信息：<br>';
-fileinfo += file.name + '<br>';
-fileinfo += file.type + '<br>';
-fileinfo += (file.size/1024).toFixed(2) + 'KB<br>';
-fileinfo += file.lastModifiedDate + '<br>';
-
-// 显示文件信息
-fileAttributes.innerHTML = fileinfo;
+  // 显示文件信息
+  fileAttributes.innerHTML = fileinfo;
 }
 
-```
 // 鼠标移出图像后重置
 function clearFile() {
-
   // 清空文件属性面板
   var fileAttributes = document.getElementById('fileAttributes');
   fileAttributes.innerHTML = '';
@@ -12290,9 +12440,6 @@ function clearFile() {
   // 将图像高亮恢复为正常
   this.className = 'unhighlight';
 }
-```
-
-```
 </script>
 </head>
 <body>
@@ -12307,15 +12454,17 @@ function clearFile() {
 </html>
 ```
 
-当清单 14.3 创建的页面加载时，访问者将被提示选择一个文件或一组文件。文件选定后，input 元素的 onchange 事件被触发，该事件启动 handleFiles 函数并传递已选定的文件。handleFiles 函数是脚本的核心，并首先设置关键默认值。这些默认值包括允许的最大文件数、每个文件的最大大小，以及一个将用于匹配图像 MIME 类型的正则表达式。限制文件大小和数量是为了防止客户端浏览器的内存过载，因为处理将在客户端机器的内存中执行。在这个方法中，您将循环遍历文件，这将创建同时工作的多个 `FileReaders`。脚本可以在处理方面更智能一些，维护一个读取器池，只有在读取器空闲时才处理下一个文件，但这将留给您自己实现。
+
+
+## 使用 `FileReader` 处理本地文件
+
+当清单 14.3 创建的页面加载时，访问者将被提示选择一个文件或一组文件。文件选定后，`input` 元素的 `onchange` 事件被触发，该事件启动 `handleFiles` 函数并传递已选定的文件。`handleFiles` 函数是脚本的核心，并首先设置关键默认值。这些默认值包括允许的最大文件数、每个文件的最大大小，以及一个将用于匹配图像 MIME 类型的正则表达式。限制文件大小和数量是为了防止客户端浏览器的内存过载，因为处理将在客户端机器的内存中执行。在这个方法中，您将循环遍历文件，这将创建同时工作的多个 `FileReader`。脚本可以在处理方面更智能一些，维护一个读取器池，只有在读取器空闲时才处理下一个文件，但这将留给您自己实现。
 
 脚本接下来检查您选择的文件数量是否少于最大值，如果不是，则显示相应的消息。如果您选择的文件数量可控，那么您将循环遍历 `FileList`，并通过匹配 MIME 类型验证每个文件是否为图像，并确保每个文件都小于您设置的最大文件大小。如果每个文件都满足这些要求，那么该方法将创建一个图像容器，其属性包括用于显示属性的 `mouseover` 和 `mouseout` 事件。现在，脚本已准备好通过为每个图像创建一个新的 `FileReader` 来读取文件。脚本将 `onload` 事件设置在 `FileReader` 上，以将 `FileReader` 的结果加载到图像元素的源属性中，从而创建实际的缩略图，如图 14.2 所示。
 
 最后，您告诉 `FileReader` 通过 `readAsDataURL` 方法读取每个文件，该方法将返回用于图像源的数据 URL 结果。函数的其余部分处理各种检查失败的情况，并向用户显示相应的消息。`showFile` 和 `clearFile` 方法显示文件的属性。
 
 这个方法展示了 `FileReader` 接口的基本实现以及可用的读取方法之一。此外，我们希望这个方法已经向您展示了在客户端浏览器中同时运行多个异步读取时必须注意的问题。要实际看到这个限制，请增加文件大小和数量的限制（但要小心操作，因为很容易耗尽浏览器的内存）。在下一个方法中，您将了解 `FileReader` 接口上的一些附加功能，这些功能将允许您中止处理并捕获可能发生的错误。
-
-
 
 ## 高级技巧：使用 `readAsText` 解析 CSV 文件
 
@@ -12335,17 +12484,15 @@ function clearFile() {
 | `NOT_READABLE_ERR` | 4 | 无法读取文件。通常是因为文件权限问题。 |
 | `ENCODING_ERR` | 5 | 当 `readAsDataURL` 的结果不是数据 URL 的形式时抛出错误。此错误不涉及将文件作为文本读取时的编码问题。 |
 
-## 374 第 14 章 使用本地文件
-
 在这个技巧中，你将探索 `FileReader` 提供的最后一个事件处理程序 `onprogress`。`onprogress` 事件处理程序提供读取文件的进度通知，可用于向用户显示状态。`onprogress` 事件处理程序包含三个属性：`lengthComputable`、`loaded` 和 `total`。`lengthComputable` 属性是一个布尔标志，用于标记 `loaded` 和 `total` 属性是否可用。`loaded` 属性是已读取到内存中的字节数，而 `total` 是要读取的总字节数。通过将 `progress.loaded` 除以 `progress.total`，你可以计算出完成百分比并显示给用户。在这个技巧中，当文件读取到内存时，页面将显示一个进度条来指示状态。但请注意，进度事件是由每个浏览器对 `FileReader` 接口的实现自行决定的，因此无法保证事件何时或以多大频率触发。以下步骤将创建清单 14.4 中的代码：
 
-1.  创建一个空白 HTML 页面，包含如清单 14.4 所示的 HTML `body` 和 `style` 标签，包括文件选择、取消按钮、文件信息部分和文件输出 div。
-2.  添加各种类的样式标签和样式，包括隐藏取消按钮。
-3.  添加 `script` 标签和对名为 `textReader` 的 `FileReader` 实例的全局引用。这将是用于读取所选 CSV 文件的 `FileReader` 实例。
-4.  添加 `addEventListener load` 行和 `init` 函数，用于为 `textReader` 事件注册相应的函数。
-5.  添加相应的事件函数：`onErrorHandler`、`updateProgress`、`onAbortHandler`、`onLoadStartHandler` 和 `onLoadHandler`。
-6.  添加 `cancelFileReader` 函数，允许访客中止读取过程。
-7.  添加 `handleFile` 函数，该函数通过 `readAsText` FileReader 方法启动对所选文件的读取过程。
+1. 创建一个空白 HTML 页面，包含如清单 14.4 所示的 HTML `body` 和 `style` 标签，包括文件选择、取消按钮、文件信息部分和文件输出 `div`。
+2. 添加各种类的样式标签和样式，包括隐藏取消按钮。
+3. 添加 `script` 标签和对名为 `textReader` 的 `FileReader` 实例的全局引用。这将是用于读取所选 CSV 文件的 `FileReader` 实例。
+4. 添加 `addEventListener load` 行和 `init` 函数，用于为 `textReader` 事件注册相应的函数。
+5. 添加相应的事件函数：`onErrorHandler`、`updateProgress`、`onAbortHandler`、`onLoadStartHandler` 和 `onLoadHandler`。
+6. 添加 `cancelFileReader` 函数，允许访客中止读取过程。
+7. 添加 `handleFile` 函数，该函数通过 `readAsText` 方法启动对所选文件的读取过程。
 
 ### 清单 14.4 显示 CSV 文件的内容
 
@@ -12500,10 +12647,6 @@ function updateProgress(evt) {
 }
 ```
 
-
-
-## 第14章 处理本地文件
-
 ```javascript
 // 处理文件读取器读取过程中的任何中止操作
 function onAbortHandler(evt) {
@@ -12556,38 +12699,37 @@ window.addEventListener('load', init, false);
 </html>
 ```
 
-当页面加载到浏览器中时，访问者可以浏览并选择一个CSV文件进行读取。选择文件后，`handleFile` 方法会被调用，并将文件作为参数传入。`handleFile` 方法首先通过匹配MIME类型的正则表达式来验证是否选择了CSV文件。如果文件与CSV的MIME类型不匹配，则会显示一个提醒，告知用户该文件不是CSV格式的文件。如果文件是CSV格式的，则代码会调用 `FileReader` 实例的 `readAsText` 方法，并将文件作为参数传入。这将启动一个异步读取过程，该过程会在读取进度中触发相应的事件。为了验证读取是异步的，你在调用 `readAsText` 函数之后才放置了文件属性的显示代码。由于读取不会阻塞脚本的主线程，因此在调用 `readAsText` 后，属性会立即显示。
 
-在脚本的 `init` 函数中，你注册了 `onLoadStartHandler` 函数，以便在 `onloadstart` 事件发生时被调用。当 `FileReader` 开始读取文件时，`onloadstart` 事件将被触发。当此事件发生时，`onLoadStartHandler` 会显示取消按钮、进度条和输出区域。
 
-在文件读取过程中，当 `FileReader` 触发 `onprogress` 事件时，会调用 `updateProgress` 方法来更新进度条。`updateProgress` 方法通过检查 `lengthComputable` 属性来验证 `loaded` 和 `total` 属性是否可用。该属性如果为真，则基本表明 `loaded` 和 `total` 属性是可用的。`updateProgress` 将使用 `loaded` 和 `total` 来计算完成百分比，并通过进度条显示此值。进度条是通过设置 `progHolder` div 中 `progMeter` div 的宽度来构建的。
+当页面加载到浏览器中时，访问者可以浏览并选择一个CSV文件进行读取。选择文件后，`handleFile`方法会被调用，并将文件作为参数传入。`handleFile`方法首先通过匹配MIME类型的正则表达式来验证是否选择了CSV文件。如果文件与CSV的MIME类型不匹配，则会显示一个提醒，告知用户该文件不是CSV格式的文件。如果文件是CSV格式的，则代码会调用`FileReader`实例的`readAsText`方法，并将文件作为参数传入。这将启动一个异步读取过程，该过程会在读取进度中触发相应的事件。为了验证读取是异步的，你在调用`readAsText`函数之后才放置了文件属性的显示代码。由于读取不会阻塞脚本的主线程，因此在调用`readAsText`后，属性会立即显示。
 
-如果文件被 `FileReader` 读取完成，则会触发 `onload` 事件，并调用 `onLoadHandler` 函数，读取结果将包含在传递给该方法的事件中。在方法内部，你关闭了取消按钮，并将进度标记为100%，以便访问者知道文件已被读取到内存中。由于CSV文件是基于行的，接下来你通过执行以下代码行，将结果按换行符分割成行数组：
+在脚本的`init`函数中，你注册了`onLoadStartHandler`函数，以便在`onloadstart`事件发生时被调用。当`FileReader`开始读取文件时，`onloadstart`事件将被触发。当此事件发生时，`onLoadStartHandler`会显示取消按钮、进度条和输出区域。
+
+在文件读取过程中，当`FileReader`触发`onprogress`事件时，会调用`updateProgress`方法来更新进度条。`updateProgress`方法通过检查`lengthComputable`属性来验证`loaded`和`total`属性是否可用。该属性如果为真，则基本表明`loaded`和`total`属性是可用的。`updateProgress`将使用`loaded`和`total`来计算完成百分比，并通过进度条显示此值。进度条是通过设置`progHolder` div中`progMeter` div的宽度来构建的。
+
+如果文件被`FileReader`读取完成，则会触发`onload`事件，并调用`onLoadHandler`函数，读取结果将包含在传递给该方法的事件中。在方法内部，你关闭了取消按钮，并将进度标记为100%，以便访问者知道文件已被读取到内存中。由于CSV文件是基于行的，接下来你通过执行以下代码行，将结果按换行符分割成行数组：
 
 ```javascript
 var fileArr = evt.target.result.split('\n');
 ```
 
-`result` 引用的是内存中的文本文件。在将结果分割成行（或逗号分隔值行）数组后，脚本会遍历每个数组元素，并用逗号字符分割值。当脚本遍历每一行时，值会被添加到一个输出字符串中，所有行处理完毕后，该字符串会显示在文件输出区域中，如图14.3所示。
+`result`引用的是内存中的文本文件。在将结果分割成行（或逗号分隔值行）数组后，脚本会遍历每个数组元素，并用逗号字符分割值。当脚本遍历每一行时，值会被添加到一个输出字符串中，所有行处理完毕后，该字符串会显示在文件输出区域中，如图14.3所示。
 
 ![](img/de30ea99ecac39b49e690a84c48f43b9_410_0.png)
 
-本示例中用于解析逗号分隔值文件的方法相当简单；它没有处理值中嵌入逗号的情况，也不理解带引号值和不带引号值的区别。你可以在网上找到更全面的解析方法，但为了展示 `readAsText` 方法的工作原理，本示例使用了一个简单的模型。
+本示例中用于解析逗号分隔值文件的方法相当简单；它没有处理值中嵌入逗号的情况，也不理解带引号值和不带引号值的区别。你可以在网上找到更全面的解析方法，但为了展示`readAsText`方法的工作原理，本示例使用了一个简单的模型。
 
-本示例通过一个取消按钮包含了中止选项。如果访问者在 `FileReader` 读取文件期间点击了取消按钮，则会调用 `cancelFileReader` 方法，该方法继而调用 `FileReader` 实例（TextReader）的 `abort` 方法。这会指示 `FileReader` 实例取消读取过程，移除内存中已读取的任何信息，并触发 `onabort` 事件。反过来，脚本将通过 `onaborthandler` 方法捕获 `onabort` 事件，并向访问者显示一条消息，确认读取已取消。
+本示例通过一个取消按钮包含了中止选项。如果访问者在`FileReader`读取文件期间点击了取消按钮，则会调用`cancelFileReader`方法，该方法继而调用`FileReader`实例（`TextReader`）的`abort`方法。这会指示`FileReader`实例取消读取过程，移除内存中已读取的任何信息，并触发`onabort`事件。反过来，脚本将通过`onaborthandler`方法捕获`onabort`事件，并向访问者显示一条消息，确认读取已取消。
 
-你还会注意到，脚本包含了一个针对 `onerror` 事件传递的任何错误的错误处理程序。当读取过程中止时，会创建一个名为 `ABORT_ERR` 的错误事件，并调用 `onErrorHandler` 方法处理此错误。由于你在其他地方处理了中止操作，脚本会简单地忽略此错误。然而，可能会遇到的其他错误将通过向用户显示适当的消息来处理。
+你还会注意到，脚本包含了一个针对`onerror`事件传递的任何错误的错误处理程序。当读取过程中止时，会创建一个名为`ABORT_ERR`的错误事件，并调用`onErrorHandler`方法处理此错误。由于你在其他地方处理了中止操作，脚本会简单地忽略此错误。然而，可能会遇到的其他错误将通过向用户显示适当的消息来处理。
 
-本示例展示了在客户端浏览器中使用 `FileReader` 接口处理CSV文件的强大功能。CSV文件解析的结果可以被过滤、显示，并打包后传输到Web服务器，而无需服务器端的任何工作。本示例包含了读取文件、中止进程以及处理可能出现的错误的功能。这应该能为你开始处理自己网页中的文件提供一个模板。
-
-www.it-ebooks.info
+本示例展示了在客户端浏览器中使用`FileReader`接口处理CSV文件的强大功能。CSV文件解析的结果可以被过滤、显示，并打包后传输到Web服务器，而无需服务器端的任何工作。本示例包含了读取文件、中止进程以及处理可能出现的错误的功能。这应该能为你开始处理自己网页中的文件提供一个模板。
 
 ### 文件API扩展规范
 
-你可能想知道是否可以浏览系统目录、创建文件并写入它们。基于文件API，有两个新的规范正在制定中，以处理这些确切的用例。第一个是 `File API: Directories and System`，第二个是 `File API: Writer` 规范。这些规范已经历了几个版本并且仍在变动中，因此尚未被许多浏览器实现。事实上，目前唯一支持这些扩展文件API对象和方法的浏览器是Chrome。
+你可能想知道是否可以浏览系统目录、创建文件并写入它们。基于文件API，有两个新的规范正在制定中，以处理这些确切的用例。第一个是`File API: Directories and System`，第二个是`File API: Writer`规范。这些规范已经历了几个版本并且仍在变动中，因此尚未被许多浏览器实现。事实上，目前唯一支持这些扩展文件API对象和方法的浏览器是Chrome。
 
-> 注意
-> 在Chrome 12及更新版本中，浏览器使用自定义版本的 `requestFileSystem` 调用，即 `webkitRequestFileSystem`。该调用的参数相同，但你需要根据Chrome版本有条件地使用正确的调用。理想情况下，随着规范的完善以及更多浏览器支持文件API规范，这些调用将再次通用并在所有浏览器中保持一致。
+> 注意：在Chrome 12及更新版本中，浏览器使用自定义版本的`requestFileSystem`调用，即`webkitRequestFileSystem`。该调用的参数相同，但你需要根据Chrome版本有条件地使用正确的调用。理想情况下，随着规范的完善以及更多浏览器支持文件API规范，这些调用将再次通用并在所有浏览器中保持一致。
 
 在目录和写入器文件API中有几个对象和方法，但其中一些对于本示例以及处理文件系统和文件至关重要。以下是一些更有用的目录和系统接口：
 
@@ -12602,7 +12744,7 @@ www.it-ebooks.info
 - `FileSaver`：用于监视写入事件和进度
 - `FileWriter`：用于写入、截断和追加文件
 
-`DirectoryEntry` 和 `FileEntry` 接口构建在 `Entry` 接口之上，后者具有标准的复制、移动和删除方法。目录和写入器API集合具有相应的事件和一组可能的错误。此外，API提供了异步调用（用于嵌入式使用）和同步调用（用于Web Worker）。每个接口都有方法和属性，我们建议你查阅最新的规范以获取当前信息。然而，表14.4描述了本章中你将要使用的一些方法。`FileWriter` 接口还具有 `length` 和 `position` 属性，可用于定位要追加或写入文件信息的位置。目录和系统相关的多个方法包括复制和移动，并且包含你在普通目录和文件浏览器中常见的文件和目录属性。这些方法和属性将使
+`DirectoryEntry`和`FileEntry`接口构建在`Entry`接口之上，后者具有标准的复制、移动和删除方法。目录和写入器API集合具有相应的事件和一组可能的错误。此外，API提供了异步调用（用于嵌入式使用）和同步调用（用于Web Worker）。每个接口都有方法和属性，我们建议你查阅最新的规范以获取当前信息。然而，表14.4描述了本章中你将要使用的一些方法。`FileWriter`接口还具有`length`和`position`属性，可用于定位要追加或写入文件信息的位置。目录和系统相关的多个方法包括复制和移动，并且包含你在普通目录和文件浏览器中常见的文件和目录属性。这些方法和属性将使
 
 ## 第14章 使用本地文件
 
@@ -12610,18 +12752,18 @@ www.it-ebooks.info
 
 | 接口 | 方法 | 目的 |
 | :--- | :--- | :--- |
-| FileSystem | requestFileSystem | 请求一个用于存储应用数据的文件系统 |
-| Entry | copyTo | 将目录或文件的条目复制到给定位置 |
-| Entry | getMetadata | 获取此条目的元数据 |
-| Entry | getParent | 获取条目的父级目录条目 |
-| Entry | moveTo | 将条目从当前文件系统位置移动到不同位置 |
-| Entry | remove | 删除该条目，无论是文件还是目录 |
-| Entry | toURL | 返回可用于引用的给定条目的URL |
-| FileEntry | createWriter | 创建一个文件编写器实例，用于写入文件 |
-| FileEntry | file | 返回FileEntry指向的文件 |
-| FileWriter | seek | 设置文件中下次执行写入方法的位置 |
-| FileWriter | truncate | 通过缩短或扩展来改变文件的长度 |
-| FileWriter | write | 将提供的数据写入文件的当前位置 |
+| `FileSystem` | `requestFileSystem` | 请求一个用于存储应用数据的文件系统 |
+| `Entry` | `copyTo` | 将目录或文件的条目复制到给定位置 |
+| `Entry` | `getMetadata` | 获取此条目的元数据 |
+| `Entry` | `getParent` | 获取条目的父级目录条目 |
+| `Entry` | `moveTo` | 将条目从当前文件系统位置移动到不同位置 |
+| `Entry` | `remove` | 删除该条目，无论是文件还是目录 |
+| `Entry` | `toURL` | 返回可用于引用的给定条目的URL |
+| `FileEntry` | `createWriter` | 创建一个文件编写器实例，用于写入文件 |
+| `FileEntry` | `file` | 返回`FileEntry`指向的文件 |
+| `FileWriter` | `seek` | 设置文件中下次执行写入方法的位置 |
+| `FileWriter` | `truncate` | 通过缩短或扩展来改变文件的长度 |
+| `FileWriter` | `write` | 将提供的数据写入文件的当前位置 |
 
 制作自己的文件和目录浏览器相当容易。不幸的是，我们在此没有篇幅来创建一个这样的食谱，但你可以在目录和系统API规范中找到使用这些方法和属性的所有必要信息。不过需要注意的一点是，这些接口似乎处理的是浏览器为安全目的在源自域的特定沙箱中“生成”的文件系统。在下一个食谱中，你将创建一个本地文件并写入一些数据。
 
@@ -12629,19 +12771,19 @@ www.it-ebooks.info
 
 在此食谱中，你将创建一个页面，该页面使用本地文本文件存储用户添加的电子邮件地址列表。该页面将允许用户添加电子邮件地址，该地址将追加到文件中；显示文件中的电子邮件地址列表；并删除文件。
 
-> 由于目前没有允许用户授权浏览器访问本地文件存储的安全权限接口，你必须通过启动带有两个参数的Chrome浏览器来授予该权限：--unlimited-quota-for-files 和 --allow-file-access-from-files。要使用这些参数启动Chrome浏览器，你可以在Mac OS中启动终端并使用以下命令：
+> 由于目前没有允许用户授权浏览器访问本地文件存储的安全权限接口，你必须通过启动带有两个参数的Chrome浏览器来授予该权限：`--unlimited-quota-for-files`和`--allow-file-access-from-files`。要使用这些参数启动Chrome浏览器，你可以在Mac OS中启动终端并使用以下命令：
 >
 > `open /Applications/Google\ Chrome.app -n --args -unlimited-quota-for-files -allow-file-access-from-files`
 >
 > 此命令将启动Chrome浏览器，并传递命令行参数，指示浏览器允许文件访问并为文件设置无限配额。如果不以这种方式启动Chrome，你将收到安全或权限错误，阻止你访问文件系统。
 
-此脚本通常会使用 `requestFileSystem` 方法来获取对本地文件系统的引用；然而，在Chrome 12及更新版本中，浏览器使用了自己的版本方法 `webkitRequestFileSystem`，因为规范一直在变动。此外，脚本中使用条件逻辑，根据浏览器版本通过 `BlobBuilder` 或 `WebKitBlobBuilder` 创建 `Blob` 对象。要创建该页面，请执行以下步骤来创建清单14.5：
+此脚本通常会使用`requestFileSystem`方法来获取对本地文件系统的引用；然而，在Chrome 12及更新版本中，浏览器使用了自己的版本方法`webkitRequestFileSystem`，因为规范一直在变动。此外，脚本中使用条件逻辑，根据浏览器版本通过`BlobBuilder`或`WebKitBlobBuilder`创建`Blob`对象。要创建该页面，请执行以下步骤来创建清单14.5：
 
-1.  创建一个空白HTML文件，并添加清单14.5中的 `body` HTML，其中包含电子邮件输入元素、多个 `button` 元素以及用于显示电子邮件地址列表的显示 `div`。
-2.  添加 `fileErrorHandler` 函数，该函数将处理异步代码遇到的任何目录或文件错误。
-3.  在清单14.3所示的脚本中添加 `fileAction` 函数，该函数获取文件引用并根据用户请求的操作进行分派。
-4.  添加 `writeToFile`、`readFromFile` 和 `removeFile` 函数，这些函数处理传入文件引用的具体操作。
-5.  添加页面加载的事件监听器，该监听器将启动 `fileAction` 方法以显示存储文件中存在的任何电子邮件地址。
+1. 创建一个空白HTML文件，并添加清单14.5中的`body` HTML，其中包含电子邮件输入元素、多个`button`元素以及用于显示电子邮件地址列表的显示`div`。
+2. 添加`fileErrorHandler`函数，该函数将处理异步代码遇到的任何目录或文件错误。
+3. 在清单14.3所示的脚本中添加`fileAction`函数，该函数获取文件引用并根据用户请求的操作进行分派。
+4. 添加`writeToFile`、`readFromFile`和`removeFile`函数，这些函数处理传入文件引用的具体操作。
+5. 添加页面加载的事件监听器，该监听器将启动`fileAction`方法以显示存储文件中存在的任何电子邮件地址。
 
 ### 清单14.5 在本地文件中存储电子邮件列表
 
@@ -12794,9 +12936,9 @@ window.addEventListener('load',fileAction('read'),false);
 </head>
 ```
 
-
-
 ## 14.5 使用本地文件（清单14.5示例）
+
+
 
 ```html
 <body>
@@ -12815,7 +12957,7 @@ window.addEventListener('load',fileAction('read'),false);
 
 文件创建后，用户可以通过输入邮箱地址并点击“添加邮箱”按钮来添加地址，这将触发`fileAction`。`fileAction`将启动`writeToFile`，在其中你将创建一个`fileWriter`来将文本写入文件。脚本首先为`fileWriter`完成（`onwriteend`）以及如果文本写入因任何原因失败（`onerror`）设置一些处理程序。脚本使用`BlobBuilder`为输入的邮箱地址创建一个`Blob`对象。在此情况下，你根据Chrome版本的不同条件性地选择接口。然后，脚本使用文件写入器的`seek`方法，根据长度属性将位置移动到文件末尾，然后调用`write`命令以文本格式添加Blob。请注意，将地址追加到文件时，你在每个邮箱地址末尾添加了一个HTML换行符`<br/>`。这纯粹是为了在读取文件时，在div中显示多个邮箱地址更方便。你可以按照最适合你信息的布局来格式化文件的数据。将新邮箱地址写入文件后，脚本会触发一次读取操作以更新页面上显示的列表。
 
-最后，脚本提供了文件的删除选项，它调用FileEntry上的remove方法。这将从文件系统中删除该文件。如果你离开页面后返回而未删除文件，由于你在调用`webkitRequestFileSystem`时请求文件系统持久保存该文件，该文件将会保留。在接下来的几个月里，这些规范预计会有很大进展，并且预计各种浏览器制造商将开始更多地集成File API：目录与系统API以及File API：Writer API。
+最后，脚本提供了文件的删除选项，它调用`FileEntry`上的`remove`方法。这将从文件系统中删除该文件。如果你离开页面后返回而未删除文件，由于你在调用`webkitRequestFileSystem`时请求文件系统持久保存该文件，该文件将会保留。在接下来的几个月里，这些规范预计会有很大进展，并且预计各种浏览器制造商将开始更多地集成File API：目录与系统API以及File API：Writer API。
 
 ## 本章小结
 
@@ -12833,24 +12975,22 @@ W3C设备API与策略工作组成立于2009年5月，旨在创建一组客户端
 
 可以想象，对于设备API这样的主题，API覆盖的范围相当广泛。该工作组在为浏览器制造商创建用于使用的API和事件规范方面取得了巨大进展。尽管还处于早期阶段，但一些浏览器已经开始包含这些API。设备API工作组的API集合和事件包括：
 
--   *应用注册API*：提供Web应用注册为系统中应用程序的能力，并允许应用程序通过注册的数据字符串标识符处理调用。
--   *电池状态事件*：提供电池状态变化的事件，包括电池电量和充电状态。
--   *蜂鸣API*：提供对设备系统蜂鸣声的控制。
--   *日历API*：提供对设备上日历事件的读取访问。
--   *通讯录API*：提供对设备通讯录存储应用中的联系人及其信息的读取访问。
--   *图库API*：提供对设备图库的访问，图库可能包括音频、视频和图像文件。
--   *通用传感器API*：提供对设备上各种传感器的集成和支持。
--   *HTML媒体捕获*：提供属性和HTML能力，以便在设备上实时捕获媒体，如音频、视频和图像。
--   *媒体捕获API*：提供通过设备的摄像头和麦克风捕获媒体的编程接口。
--   *菜单API*：提供对应用程序设备菜单的控制。
--   *消息API*：允许客户端页面发送基于mms、sms或mailto URI方案的消息。
--   *网络信息API*：检索设备的当前网络连接类型。
--   *任务API*：提供对设备上管理的个人任务的访问。
--   *振动API*：提供对设备振动的控制。
+- *应用注册API*：提供Web应用注册为系统中应用程序的能力，并允许应用程序通过注册的数据字符串标识符处理调用。
+- *电池状态事件*：提供电池状态变化的事件，包括电池电量和充电状态。
+- *蜂鸣API*：提供对设备系统蜂鸣声的控制。
+- *日历API*：提供对设备上日历事件的读取访问。
+- *通讯录API*：提供对设备通讯录存储应用中的联系人及其信息的读取访问。
+- *图库API*：提供对设备图库的访问，图库可能包括音频、视频和图像文件。
+- *通用传感器API*：提供对设备上各种传感器的集成和支持。
+- *HTML媒体捕获*：提供属性和HTML能力，以便在设备上实时捕获媒体，如音频、视频和图像。
+- *媒体捕获API*：提供通过设备的摄像头和麦克风捕获媒体的编程接口。
+- *菜单API*：提供对应用程序设备菜单的控制。
+- *消息API*：允许客户端页面发送基于mms、sms或mailto URI方案的消息。
+- *网络信息API*：检索设备的当前网络连接类型。
+- *任务API*：提供对设备上管理的个人任务的访问。
+- *振动API*：提供对设备振动的控制。
 
 目前，列出的API非常新，任何已在浏览器中实现的API都是例外。事实上，在撰写本书时，只有通讯录API达到了规范草案的最终征求意见阶段。标有星号（*）的规范在www.w3.org网站上发布了某种形式的草案。预计到2011年底，其中许多API将拥有其规范的工作草案版本。在本章中，我们将介绍这些API中的一部分，展示一些发展较完善的API，以及一些示例，其中……
-
-
 
 ## 第15章 集成设备数据
 
@@ -12904,9 +13044,9 @@ void find (DOMString[] fields, ContactFindCB successCB, optional ContactErrorCB 
 
 尽管检索用户的所有联系人可能不被推荐，但有时这可能是适用的。本示例将使用通讯录接口的`find`方法以及成功和错误回调函数来检索所有联系人，检查联系人是否有手机号码，并在页面的`div`中显示联系人的姓名和手机号码。要创建此示例，请执行以下步骤，结果如代码清单15.1所示：
 
-1.  创建一个空白HTML页面，包含一个`button`元素和用于显示结果的`div`。为按钮添加`click`处理程序以启动`findAllContacts`方法。
-2.  在页面中添加`script`标签和`findAllContacts`方法，该方法启动通讯录请求。
-3.  添加`contactsFindSuccess`回调函数和`contactsError`回调函数，分别处理通讯录请求的成功和失败事件。
+1. 创建一个空白HTML页面，包含一个`button`元素和用于显示结果的`div`。为按钮添加`click`处理程序以启动`findAllContacts`方法。
+2. 在页面中添加`script`标签和`findAllContacts`方法，该方法启动通讯录请求。
+3. 添加`contactsFindSuccess`回调函数和`contactsError`回调函数，分别处理通讯录请求的成功和失败事件。
 
 ### 代码清单15.1 检索和显示所有联系人的手机号码
 
@@ -12989,6 +13129,8 @@ window.addEventListener('load',init,false);
 
 在成功回调中，该示例首先在页面上创建对结果`div`的引用，以便您可以显示任何匹配的结果。接下来，函数遍历`contacts`数组。对于每个联系人，该示例遍历该联系人的`phoneNumbers`。对于每个电话号码，代码检查`type`以查看该电话号码是否为手机号码。如果是手机号码，则代码在结果`div`中显示姓名和电话号码。
 
+
+
 本示例中使用的通讯录`find`方法请求所有联系人，并提供了成功和错误回调函数。`find`方法可以接受第四个可选参数，其类型为`ContactFindOptions`。根据通讯录API规范，此接口的具体实现由各浏览器代理决定。然而，此接口的基础是创建一个基于请求的联系人字段进行匹配的过滤器。这是一个简单的过滤方法，它将匹配请求字段中的任何一个，并且匹配值中的任何位置。例如，如果提供过滤值"son"并检索了`displayName`和`emails`字段，那么任何其字符串中包含"son"的联系人……（文本在此截断）
 
 ### 表15.2 ContactField接口属性
@@ -12999,11 +13141,9 @@ window.addEventListener('load',init,false);
 | DOMString | value | 字段的实际值 |
 | Boolean | pref | 一个标志，表示此字段是主要或首选值 |
 
-
-
 ## 消息传递 API
 
-消息传递 API 旨在允许页面使用 `sms`、`mms` 和 `mailto` URI 方案向特定地址发送消息。该 API 非常简单，因为它只有一个接口和一个方法：`device` 和 `sendMessage`。`device` 接口预计是 `navigator` 接口的一部分，因此要检查是否支持消息传递 API，您可以使用以下代码：
+消息传递 API 旨在允许页面使用`sms`、`mms`和`mailto` URI 方案向特定地址发送消息。该 API 非常简单，因为它只有一个接口和一个方法：`device`和`sendMessage`。`device`接口预计是`navigator`接口的一部分，因此要检查是否支持消息传递 API，您可以使用以下代码：
 
 ```javascript
 if (navigator.device.sendMessage) {
@@ -13011,27 +13151,27 @@ if (navigator.device.sendMessage) {
 }
 ```
 
-如果浏览器代理支持消息传递 API，那么您可以使用 `sendMessage` 方法向给定的收件人发送消息。`sendMessage` 方法的结构如下所示：
+如果浏览器代理支持消息传递 API，那么您可以使用`sendMessage`方法向给定的收件人发送消息。`sendMessage`方法的结构如下所示：
 
 ```javascript
 void sendMessage (DOMString to [,Blob attachments] [, messagingErrorCB]);
 ```
 
-`to` 参数接受一个与 `sms`、`mms` 或 `mailto` 方案匹配的 URI 方案，并且可以接受包含 `body` 元素等的查询字符串。`attachments` 字段可以是图片或视频，最后一个参数是可选的错误处理程序。因此，要通过 SMS 发送一条基本消息，您可能会像下面这样调用 `sendMessage`：
+`to`参数接受一个与`sms`、`mms`或`mailto`方案匹配的 URI 方案，并且可以接受包含`body`元素等的查询字符串。`attachments`字段可以是图片或视频，最后一个参数是可选的错误处理程序。因此，要通过 SMS 发送一条基本消息，您可能会像下面这样调用`sendMessage`：
 
 ```javascript
 navigator.device.sendMessage('sms:+17705551212?body=Hi%20Tom');
 ```
 
-如果添加了错误回调函数（这是推荐的，否则您将不知道 `sendMessage` 失败了），那么一个错误对象将被传递给处理程序，其中包含一个错误代码。表 15.3 提供了可能的错误代码列表。
+如果添加了错误回调函数（这是推荐的，否则您将不知道`sendMessage`失败了），那么一个错误对象将被传递给处理程序，其中包含一个错误代码。表 15.3 提供了可能的错误代码列表。
 
 尽管消息传递 API 是一个简短的规范，但其影响是非同凡响的。现在，客户端页面将能够通过设备上的浏览器直接发送短信、视频和图片，以及通过 MMS 消息和电子邮件发送。
 
 > **注意**
 >
-> 联系人 API 被纯粹设计为设备上联系人数据的只读服务。要在设备上的数据存储中执行联系人的添加和更新，您需要将联系人信息放入联系人应用程序的标准格式（如基于文本的 vCard），然后通过 `href` 元素引用此卡文本，以便用户可以将该卡片下载到其联系人应用程序中。
+> 联系人 API 被纯粹设计为设备上联系人数据的只读服务。要在设备上的数据存储中执行联系人的添加和更新，您需要将联系人信息放入联系人应用程序的标准格式（如基于文本的 vCard），然后通过`href`元素引用此卡文本，以便用户可以将该卡片下载到其联系人应用程序中。
 
-任何一组字段中的匹配项，例如 "**sonny**@....com" 或 "**Chuck Hudson**。" 此示例的预期语句如下：
+任何一组字段中的匹配项，例如 "sonny@....com" 或 "Chuck Hudson。" 此示例的预期语句如下：
 
 ```javascript
 {filter: 'son'}
@@ -13044,21 +13184,21 @@ navigator.device.sendMessage('sms:+17705551212?body=Hi%20Tom');
 | 值 | 常量项 | 描述 |
 | :--- | :--- | :--- |
 | 0 | `UNKNOWN_ERROR` | 发生未知错误。 |
-| 1 | `INVALID_ARGUMENT_ERROR` | `sendMessage` 方法传递了无效参数。 |
+| 1 | `INVALID_ARGUMENT_ERROR` | `sendMessage`方法传递了无效参数。 |
 | 3 | `TIMEOUT_ERROR` | 发送消息的请求超时。 |
 | 4 | `PENDING_OPERATION_ERROR` | 浏览器已在等待回调。 |
 | 5 | `IO_ERROR` | 发生通信错误。 |
-| 6 | `NOT_SUPPORTED_ERROR` | 不支持 `sendMessage` 方法。 |
+| 6 | `NOT_SUPPORTED_ERROR` | 不支持`sendMessage`方法。 |
 | 20 | `PERMISSION_DENIED_ERROR` | 用户或浏览器未授权方法调用。 |
 | 30 | `MESSAGE_SIZE_EXCEEDED` | 此消息类型的消息方案限制已超出。 |
 
 > **提示**
 >
-> 预计浏览器代理中的 `sendMessage` 方法将实现以支持 URI 功能，以便启用诸如多个收件人等功能。如果情况如此，那么只需用逗号分隔号码，例如 "sms:+17705551212,+18025551212...."，就可以轻松地向多个 SMS 收件人发送消息。
+> 预计浏览器代理中的`sendMessage`方法将实现以支持 URI 功能，以便启用诸如多个收件人等功能。如果情况如此，那么只需用逗号分隔号码，例如 "sms:+17705551212,+18025551212...."，就可以轻松地向多个 SMS 收件人发送消息。
 
 ## 网络信息 API
 
-确定浏览器的连接速度对于节流数据和功能以获得更好的用户体验非常重要。网络信息 API 旨在暴露一个简单的 `type` 属性，该属性将指示设备当前具有的连接类型。基于此值，页面可以改变其行为以适应可用数据管道的大小和速度。连接类型的值可以是以下之一：`unknown`、`ethernet`、`wifi`、`2g`、`3g`、`4g` 和 `none`。提供了一个名为 `Connection` 的新接口，它有一个关联的属性：`type`。因此，要检索当前连接类型，您将使用以下代码：
+确定浏览器的连接速度对于节流数据和功能以获得更好的用户体验非常重要。网络信息 API 旨在暴露一个简单的`type`属性，该属性将指示设备当前具有的连接类型。基于此值，页面可以改变其行为以适应可用数据管道的大小和速度。连接类型的值可以是以下之一：`unknown`、`ethernet`、`wifi`、`2g`、`3g`、`4g`和`none`。提供了一个名为`Connection`的新接口，它有一个关联的属性：`type`。因此，要检索当前连接类型，您将使用以下代码：
 
 ```javascript
 var connectionType = navigator.connection.type;
@@ -13066,17 +13206,17 @@ var connectionType = navigator.connection.type;
 
 了解连接类型后，您可以在完整版本和轻量版本的样式表之间动态切换，或者在连接速度较慢时更改页面上的逻辑以仅检索部分结果。
 
-除了 `Connection` 接口，还有两个新事件：`online` 和 `offline`。这些事件与 `window` 对象相关联，可以在 `online` 触发时用于检查连接类型的变化，或在设备离线时进行处理。
+除了`Connection`接口，还有两个新事件：`online`和`offline`。这些事件与`window`对象相关联，可以在`online`触发时用于检查连接类型的变化，或在设备离线时进行处理。
 
 > **提示**
 >
-> 当用户更改连接类型时，`online` 事件可能会被多次触发。您的代码应尽可能精简，以最小化在此事件上运行的功能，因为该事件可能会由于快速连接类型切换而重复发送。
+> 当用户更改连接类型时，`online`事件可能会被多次触发。您的代码应尽可能精简，以最小化在此事件上运行的功能，因为该事件可能会由于快速连接类型切换而重复发送。
 
 ## 电池状态事件
 
-电池状态事件允许您捕获与设备电池状态相关的事件。在电池状态事件规范中，有两种可能触发事件的状态变化。第一种状态变化在设备插入电源或从电源拔出时触发。第二种事件表示电池电量变化达到 1% 或更多。在任何一种情况下，都会触发电池状态事件。然后该事件将具有可用的属性：`isPlugged`，这是一个布尔值，以及 `level`，这是一个浮点数，范围从 0 到 100，其中 100 表示电池已充满电。如果 level 为 null，则浏览器无法报告电池电量。
+电池状态事件允许您捕获与设备电池状态相关的事件。在电池状态事件规范中，有两种可能触发事件的状态变化。第一种状态变化在设备插入电源或从电源拔出时触发。第二种事件表示电池电量变化达到 1% 或更多。在任何一种情况下，都会触发电池状态事件。然后该事件将具有可用的属性：`isPlugged`，这是一个布尔值，以及`level`，这是一个浮点数，范围从 0 到 100，其中 100 表示电池已充满电。如果`level`为`null`，则浏览器无法报告电池电量。
 
-要注册处理电池状态事件，可以使用 `onbatterystatus` 属性和 `batterystatus` 事件。以下任一示例都是有效的：
+要注册处理电池状态事件，可以使用`onbatterystatus`属性和`batterystatus`事件。以下任一示例都是有效的：
 
 ```javascript
 window.addEventListener('batterystatus', function (event) {
@@ -13088,42 +13228,41 @@ window.onbatterystatus = function (event) {
 };
 ```
 
-在任何一种情况下，当前电池电量都将提醒用户。如果您想在插入状态更改时提醒用户，那么您可以使用 `event.isPlugged` 来检索设备是否已插入电源的布尔值。
+在任何一种情况下，当前电池电量都将提醒用户。如果您想在插入状态更改时提醒用户，那么您可以使用`event.isPlugged`来检索设备是否已插入电源的布尔值。
 
 > **注意**
 >
-> 如果浏览器无法确定当前电池电量（在 0 到 100 之间，包括 0 和 100），则 level 属性将被赋予 `null` 值。
+> 如果浏览器无法确定当前电池电量（在 0 到 100 之间，包括 0 和 100），则`level`属性将被赋予`null`值。
 
 ## HTML 媒体捕获
 
 HTML 媒体捕获旨在指示浏览器代理基于文件输入元素的新参数和属性启动媒体捕获工具。通过提供有关文件输入应接受的信息类型以及使用什么来“捕获”输入的建议，浏览器代理可以启动适当的设备捕获机制。捕获可以采取视频、音频或图片的形式，因为它们都是媒体形式，通常在具有摄像头和麦克风的设备（如智能手机、平板电脑和笔记本电脑）上可用。
 
-通常，文件输入元素打开文件浏览窗口以选择要提交的适当文件。HTML 媒体捕获使用文件输入的 `accept` 属性来推荐合适的文件选择器，例如用于接收图像的摄像头。以下是三种不同的 `accept` 属性值：
+通常，文件输入元素打开文件浏览窗口以选择要提交的适当文件。HTML 媒体捕获使用文件输入的`accept`属性来推荐合适的文件选择器，例如用于接收图像的摄像头。以下是三种不同的`accept`属性值：
 
--   `image/*`：用于从摄像头或用户的图像库中接收图像
--   `audio/*`：用于通过设备麦克风录制来接收音频输入
--   `video/*`：用于接收通过设备摄像头和麦克风录制的视频文件
+- `image/*`：用于从摄像头或用户的图像库中接收图像
+- `audio/*`：用于通过设备麦克风录制来接收音频输入
+- `video/*`：用于接收通过设备摄像头和麦克风录制的视频文件
 
-可以添加一个额外的属性来建议浏览器应使用什么方法来捕获输入。`capture` 属性可以采用四个值之一：`camera`、`camcorder`、`microphone` 或 `filesystem`。如果未提供 `capture` 属性，则默认值为 `filesystem`。因此，一个用于从麦克风捕获音频的示例文件输入元素如下：
+可以添加一个额外的属性来建议浏览器应使用什么方法来捕获输入。`capture`属性可以采用四个值之一：`camera`、`camcorder`、`microphone`或`filesystem`。如果未提供`capture`属性，则默认值为`filesystem`。因此，一个用于从麦克风捕获音频的示例文件输入元素如下：
 
 ```html
 <input type="file" accept="audio/*" capture="microphone">
 ```
 
-通过 `accept` 和 `capture` 属性，您将能够以一些有趣的方式使用设备麦克风和摄像头。已经有一些团队正在努力使用 HTML 媒体捕获和其他 HTML5 技术（如 WebSocket）来实现设备之间的全双工音频/视频通话流。
+通过`accept`和`capture`属性，您将能够以一些有趣的方式使用设备麦克风和摄像头。已经有一些团队正在努力使用 HTML 媒体捕获和其他 HTML5 技术（如 WebSocket）来实现设备之间的全双工音频/视频通话流。
 
 ## 中级配方：使用文件输入捕获图片
 
-在此配方中，您将使用文件输入元素上的 `accept` 和 `capture` 属性来让浏览器启动设备内置的摄像头图片捕获屏幕，让用户拍摄照片，然后将照片返回到页面。照片文件返回到页面后，HTML 媒体捕获将获取该文件并将其加载到一个新的图像元素中，该元素被缩放为缩略图并添加到页面。要创建清单 15.2 中的代码，请按照以下步骤操作：
+在此配方中，您将使用文件输入元素上的`accept`和`capture`属性来让浏览器启动设备内置的摄像头图片捕获屏幕，让用户拍摄照片，然后将照片返回到页面。照片文件返回到页面后，HTML 媒体捕获将获取该文件并将其加载到一个新的图像元素中，该元素被缩放为缩略图并添加到页面。要创建清单 15.2 中的代码，请按照以下步骤操作：
 
-1.  创建一个空白 HTML 页面，其中包含文件输入元素和缩略图 div。
-2.  在页面中添加 `script` 标签和 `handleCapture` 函数，该函数处理通过文件输入的 `onChange` 方法传递的文件。
-
-
+1. 创建一个空白 HTML 页面，其中包含文件输入元素和缩略图 div。
+2. 在页面中添加`script`标签和`handleCapture`函数，该函数处理通过文件输入的`onChange`方法传递的文件。
 
 ## 400 第15章 集成设备数据
 
 > **注意**
+>
 > 在撰写本文时，此示例可在支持 HTML Media Capture 的 Android 3.0 及更新版本的设备上运行。因此，本章的截图来自一台 Android 平板电脑。
 
 ### 清单 15.2 捕获摄像头图像
@@ -13184,9 +13323,9 @@ function handleCapture(files) {
 
 当页面在浏览器中加载时，会提供常规的“选择文件”提示，如图 15.1 所示。
 
-当用户点击“选择文件”时，浏览器会通过 `accept` 和 `capture` 属性被告知启动摄像头选择器，本例中将启动 Android 的拍照界面，如图 15.2 所示。
+当用户点击“选择文件”时，浏览器会通过`accept`和`capture`属性被告知启动摄像头选择器，本例中将启动 Android 的拍照界面，如图 15.2 所示。
 
-一旦拍摄了照片，图片文件会发送到页面，并以文件作为参数调用 `handleCapture` 函数。在 `handleCapture` 函数中，你首先检查文件以验证其是否为图像类型，然后创建一个新的图像元素，将其添加到页面并使用该文件加载。在图 15.3 中，“选择文件”按钮已被点击数次，所拍摄的图片已作为缩略图添加到 div 中供查看。
+一旦拍摄了照片，图片文件会发送到页面，并以文件作为参数调用`handleCapture`函数。在`handleCapture`函数中，你首先检查文件以验证其是否为图像类型，然后创建一个新的图像元素，将其添加到页面并使用该文件加载。在图 15.3 中，“选择文件”按钮已被点击数次，所拍摄的图片已作为缩略图添加到 div 中供查看。
 
 ![](img/de30ea99ecac39b49e690a84c48f43b9_431_0.png)
 
@@ -13210,31 +13349,31 @@ W3C 组织的设备方向规范指定了三个新事件，如下所列：
 - `compassneedscalibration`：由浏览器代理触发的事件，表明设备的指南针需要校准
 - `devicemotion`：提供加速度、包含重力的加速度、旋转速率以及用于设备移动的间隔时间
 
-设备方向中的所有三个事件都在 `window` 对象上触发，并且像 `window` 对象上的任何正常事件一样进行注册。`deviceorientation` 事件通过传递给你的处理程序的事件数据提供四个可读属性：`alpha`、`beta`、`gamma` 和 `absolute`。`alpha`、`beta` 和 `gamma` 属性对应于设备的方向，例如设备的倾斜或旋转。`alpha` 属性表示旋转，而 `beta` 和 `gamma` 对应于向左/右倾斜和向前/向后倾斜。例如，放在桌子上的笔记本电脑的 `beta` 为 0，`gamma` 为 0，而 `alpha` 将有一个代表其方向的值。对于笔记本电脑，方向是基于键盘的，而不是屏幕，而手机的方向则是手机本身。`absolute` 属性表示浏览器是否能够提供方向角的绝对值。如果设备不能绝对地设置该值，则此值将为 false。在我们的大多数测试中，该值确实为 false，尽管 `beta` 和 `gamma` 角是绝对的，而 `alpha` 在页面执行时被任意设置为 0。
+设备方向中的所有三个事件都在`window`对象上触发，并且像`window`对象上的任何正常事件一样进行注册。`deviceorientation`事件通过传递给你的处理程序的事件数据提供四个可读属性：`alpha`、`beta`、`gamma`和`absolute`。`alpha`、`beta`和`gamma`属性对应于设备的方向，例如设备的倾斜或旋转。`alpha`属性表示旋转，而`beta`和`gamma`对应于向左/右倾斜和向前/向后倾斜。例如，放在桌子上的笔记本电脑的`beta`为 0，`gamma`为 0，而`alpha`将有一个代表其方向的值。对于笔记本电脑，方向是基于键盘的，而不是屏幕，而手机的方向则是手机本身。`absolute`属性表示浏览器是否能够提供方向角的绝对值。如果设备不能绝对地设置该值，则此值将为 false。在我们的大多数测试中，该值确实为 false，尽管`beta`和`gamma`角是绝对的，而`alpha`在页面执行时被任意设置为 0。
 
-`compassneedscalibration` 事件是一个简单的事件，它通知窗口设备的内部指南针需要校准。根据规范，该事件可以被网站或应用程序取消，并且默认的设备校准用户界面可以由 Web 应用程序提供的自定义校准所取代。然而，关于此事件的细节仍有待确定。
+`compassneedscalibration`事件是一个简单的事件，它通知窗口设备的内部指南针需要校准。根据规范，该事件可以被网站或应用程序取消，并且默认的设备校准用户界面可以由 Web 应用程序提供的自定义校准所取代。然而，关于此事件的细节仍有待确定。
 
-`devicemotion` 事件是一个更复杂的事件，因为它包含用于加速度、旋转和间隔的属性。`acceleration` 属性是新接口 `DeviceAcceleration` 的一个实例，该接口以 double 数据类型格式提供 x、y、z 加速度属性，以显示 X、Y、Z 方向的加速度。旋转速率也是一个接口实例，但是 `DeviceRotationRate` 的实例，它以 alpha、beta、gamma 的格式提供旋转。`devicemotion` 事件的所有属性在规范中都显示为可选属性。表 15.4 更详细地展示了 `devicemotion` 事件的属性。
 
-### 表 15.4 devicemotion 事件属性值
+
+`devicemotion`事件是一个更复杂的事件，因为它包含用于加速度、旋转和间隔的属性。`acceleration`属性是新接口`DeviceAcceleration`的一个实例，该接口以`double`数据类型格式提供`x`、`y`、`z`加速度属性，以显示X、Y、Z方向的加速度。旋转速率也是一个接口实例，但是`DeviceRotationRate`的实例，它以`alpha`、`beta`、`gamma`的格式提供旋转。`devicemotion`事件的所有属性在规范中都显示为可选属性。表15.4更详细地展示了`devicemotion`事件的属性。
+
+### 表15.4 devicemotion事件属性值
 
 | 属性 | 类型 | 描述 |
 | :--- | :--- | :--- |
-| acceleration | DeviceAcceleration | 以 X、Y、Z 值表示的设备加速度。 |
-| accelerationIncludingGravity | DeviceAcceleration | 包含重力影响的设备加速度，以 X、Y、Z 值表示。 |
-| rotationRate | DeviceRotationRate | 通过 alpha、beta 和 gamma 角显示的设备旋转。 |
-| interval | double | 采集加速度和旋转数据的间隔（以毫秒为单位）。预期这是一个常量。 |
+| `acceleration` | `DeviceAcceleration` | 以X、Y、Z值表示的设备加速度。 |
+| `accelerationIncludingGravity` | `DeviceAcceleration` | 包含重力影响的设备加速度，以X、Y、Z值表示。 |
+| `rotationRate` | `DeviceRotationRate` | 通过`alpha`、`beta`和`gamma`角显示的设备旋转。 |
+| `interval` | `double` | 采集加速度和旋转数据的间隔（以毫秒为单位）。预期这是一个常量。 |
 
 ## 中级食谱：创建一个气泡水平仪
 
-如果你有机会参与移动设备编程领域，你很可能会看到大多数移动平台上都可用的气泡水平仪原生应用程序，用于显示设备的方向。`deviceorientation` 事件可以通过查看 `beta` 和 `gamma` 事件字段，在客户端 JavaScript 中提供相同类型的功能。（你不需要 alpha 字段，因为气泡水平仪不使用设备的旋转。）在本食谱中，你将使用分层的 `canvas` 元素来构建一个复合气泡水平仪，并显示 `beta` 和 `gamma` 值，如图 15.4 所示。
+如果你有机会参与移动设备编程领域，你很可能会看到大多数移动平台上都可用的气泡水平仪原生应用程序，用于显示设备的方向。`deviceorientation`事件可以通过查看`beta`和`gamma`事件字段，在客户端JavaScript中提供相同类型的功能。（你不需要`alpha`字段，因为气泡水平仪不使用设备的旋转。）在本食谱中，你将使用分层的`canvas`元素来构建一个复合气泡水平仪，并显示`beta`和`gamma`值，如图15.4所示。
 
-你可以改进定位算法以添加诸如将气泡限制在圆形内等功能，但本食谱将展示处理设备方向数据的基础知识。要创建此气泡水平仪，请使用清单 15.3 并执行以下步骤：
+你可以改进定位算法以添加诸如将气泡限制在圆形内等功能，但本食谱将展示处理设备方向数据的基础知识。要创建此气泡水平仪，请使用清单15.3并执行以下步骤：
 
-- 1. 创建一个空白 HTML 页面，包含构成气泡水平仪的三个 `canvas` 元素，并添加用于显示 `beta` 和 `gamma` 值的 `span`。
-- 2. 添加用于设置 `canvas` 元素样式的 `style` 部分。
-
-
+1. 创建一个空白HTML页面，包含构成气泡水平仪的三个`canvas`元素，并添加用于显示`beta`和`gamma`值的`span`。
+2. 添加用于设置`canvas`元素样式的`style`部分。
 
 ## 第15章 集成设备数据
 
@@ -13244,11 +13383,12 @@ W3C 组织的设备方向规范指定了三个新事件，如下所列：
 
 图15.4 在笔记本电脑上倾斜时，显示气泡水平仪画布层和beta/gamma值的示例输出
 
--   3.  添加init函数，该函数包含在`script`标签内定义的`deviceorientation`事件处理器。
--   4.  使用`window.addEventListener`添加页面加载时启动init函数的代码。
+3. 添加`init`函数，该函数包含在`script`标签内定义的`deviceorientation`事件处理器。
+4. 使用`window.addEventListener`添加页面加载时启动`init`函数的代码。
 
 > 注意
-> 此配方要求你的浏览器支持canvas元素，并且你启动此页面的设备需要具有内部陀螺仪以提供beta和gamma值。
+>
+> 此配方要求你的浏览器支持`canvas`元素，并且你启动此页面的设备需要具有内部陀螺仪以提供`beta`和`gamma`值。
 
 ```html
 <!DOCTYPE html>
@@ -13392,7 +13532,7 @@ window.addEventListener('load',init,false);
 
 当页面在浏览器中加载并调用`init`函数时，脚本将首先创建气泡水平仪的各个组件。气泡水平仪由三个`canvas`元素组成：背景、气泡和前景中心环。将气泡水平仪拆分为这三个组件有两个目的。首先，这使得气泡可以分层显示在背景之上、中心环之下，看起来像一个真实的气泡水平仪。其次，这允许你以编程方式移动气泡，而无需在每次移动时重绘元素。
 
-绘制完气泡水平仪组件后，脚本为`deviceorientation`事件设置事件处理器。事件处理函数的设计是首先检查beta和gamma值是否发生了任何变化，如果有变化，则将临时保存变量设置为新值。接下来，该函数设置一些位置调整变量，这些变量用于计算气泡画布的位置。`adjFactor`变量用于随着气泡远离中心而“加速”其移动，而`adjMax`变量是气泡可以移动的最大距离。计算出气泡画布的新top和left坐标后，你移动画布并显示更新后的beta和gamma角度。请注意，在处理`beta`和`gamma`角度时，你只使用事件提供的双精度值的整数部分。在我们的测试中，提供的角度粒度非常细，因此为了防止在角度发生最微小的变化时就移动画布；我们选择只在整个度数发生变化时才移动画布。
+绘制完气泡水平仪组件后，脚本为`deviceorientation`事件设置事件处理器。事件处理函数的设计是首先检查`beta`和`gamma`值是否发生了任何变化，如果有变化，则将临时保存变量设置为新值。接下来，该函数设置一些位置调整变量，这些变量用于计算气泡画布的位置。`adjFactor`变量用于随着气泡远离中心而“加速”其移动，而`adjMax`变量是气泡可以移动的最大距离。计算出气泡画布的新`top`和`left`坐标后，你移动画布并显示更新后的`beta`和`gamma`角度。请注意，在处理`beta`和`gamma`角度时，你只使用事件提供的双精度值的整数部分。在我们的测试中，提供的角度粒度非常细，因此为了防止在角度发生最微小的变化时就移动画布；我们选择只在整个度数发生变化时才移动画布。
 
 ## 总结
 
@@ -13406,60 +13546,58 @@ www.it-ebooks.info
 
 ### 初级配方
 
--   构建HTML5入门文档 2
--   使用`header`元素创建网站页眉 5
--   使用`hgroup`元素对标题进行分组 7
--   使用`nav`元素创建导航 8
--   使用`aside`元素创建侧边栏 15
--   使用`footer`元素 17
--   使用`figure`和`figcaption`元素标记图表和标题 31
--   使用`time`元素标记日期和时间 34
--   使用`details`元素制作原生切换小部件 35
--   使用`address`元素提供联系信息 37
--   使用`mark`元素突出显示文本 38
--   使用`s`元素显示不准确或无关的内容 39
--   将链接包裹在元素周围 47
--   处理Internet Explorer 55
--   测试HTML5功能 57
--   使用`@font-face`使用自定义字体 77
--   创建一个表单来收集联系信息 97
--   使用`input type="search"`创建搜索表单 101
--   创建日历和时间控件 102
--   创建数字选择器 105
--   创建滑块（无需JavaScript） 106
--   创建颜色选择器 107
--   使用`output`元素显示结果 108
--   使用表单占位符文本 109
+- 构建HTML5入门文档 2
+- 使用`header`元素创建网站页眉 5
+- 使用`hgroup`元素对标题进行分组 7
+- 使用`nav`元素创建导航 8
+- 使用`aside`元素创建侧边栏 15
+- 使用`footer`元素 17
+- 使用`figure`和`figcaption`元素标记图表和标题 31
+- 使用`time`元素标记日期和时间 34
+- 使用`details`元素制作原生切换小部件 35
+- 使用`address`元素提供联系信息 37
+- 使用`mark`元素突出显示文本 38
+- 使用`s`元素显示不准确或无关的内容 39
+- 将链接包裹在元素周围 47
+- 处理Internet Explorer 55
+- 测试HTML5功能 57
+- 使用`@font-face`使用自定义字体 77
+- 创建一个表单来收集联系信息 97
+- 使用`input type="search"`创建搜索表单 101
+- 创建日历和时间控件 102
+- 创建数字选择器 105
+- 创建滑块（无需JavaScript） 106
+- 创建颜色选择器 107
+- 使用`output`元素显示结果 108
+- 使用表单占位符文本 109
 
 www.it-ebooks.info
 
-
-
 # 412 个实用技巧
 
-- 使用 list 和 datalist 创建自动完成功能 110
-- 使用 progress 元素跟踪任务完成情况 111
-- 使用 meter 元素进行度量 112
+- 使用`list`和`datalist`创建自动完成功能 110
+- 使用`progress`元素跟踪任务完成情况 111
+- 使用`meter`元素进行度量 112
 - 页面加载时跳转到表单元素 114
 - 允许多项输入 115
-- 使用 required 属性进行基本验证 116
+- 使用`required`属性进行基本验证 116
 - 限制用户输入 118
 - 在画布上绘制网格 130
 - 绘制简单形状和线条 134
 - 添加文本 144
 - 绘制图像 145
-- 使用 video 元素嵌入视频 163
-- 使用 audio 元素嵌入音频 187
-- 使用 pushState 添加历史记录 208
+- 使用`video`元素嵌入视频 163
+- 使用`audio`元素嵌入音频 187
+- 使用`pushState`添加历史记录 208
 - 创建图片查看器 211
-- 使用 replaceState 修改历史记录 216
-- 使用简单的 getCurrentPosition 确定位置 233
+- 使用`replaceState`修改历史记录 216
+- 使用简单的`getCurrentPosition`确定位置 233
 - 获取和设置会话存储 263
 - 根据会话存储设置样式 266
-- 通过 Web Sockets 进行通信 299
-- 创建 Web Worker 304
-- 跨 div 拖放元素 321
-- 创建 Manifest 文件 335
+- 通过Web Sockets进行通信 299
+- 创建Web Worker 304
+- 跨`div`拖放元素 321
+- 创建Manifest文件 335
 - 离线使用网页 337
 - 显示简单通知 344
 - 获取文件属性 360
@@ -13468,15 +13606,15 @@ www.it-ebooks.info
 
 ## 中级技巧
 
-- 使用新的 article 元素 11
-- 使用 section 元素对内容进行分组 12
-- 使用 HTML5 大纲工具确保正确的结构 19
+- 使用新的`article`元素 11
+- 使用`section`元素对内容进行分组 12
+- 使用HTML5大纲工具确保正确的结构 19
 - 使用微数据添加语义信息 47
-- 在 HTML5 中使用 WAI-ARIA 49
-- 利用 jQuery 替换日历组件 59
-- 使用 Modernizr 检测功能 62
-- 使用 CSS3 媒体查询创建响应式设计 69
-- 使用 CSS 渐变和多重背景制作按钮 80
+- 在HTML5中使用WAI-ARIA 49
+- 利用jQuery替换日历组件 59
+- 使用Modernizr检测功能 62
+- 使用CSS3媒体查询创建响应式设计 69
+- 使用CSS渐变和多重背景制作按钮 80
 - 使用变换和过渡增强网站 84
 - 编写自定义验证规则 117
 - 自定义和美化表单 119
@@ -13491,13 +13629,21 @@ www.it-ebooks.info
 - 在图片查看器中弹出状态 214
 - 修改页面历史记录 218
 - 测试历史记录安全性 225
-- 使用 getCurrentPosition 在地图上标记位置 237
-- 使用 PositionOptions 确定距离 243
-- 使用本地存储保存表单数据 271
-- 添加双向通信 308
-- 通过 readAsDataURL 预览图像 368
-- 使用文件输入捕获图片 399
-- 创建气泡水平仪 404
+- 使用`getCurrentPosition`在地图上标记位置 237
+
+
+
+# 使用 PositionOptions 确定距离 243
+
+# 使用本地存储保存表单数据 271
+
+# 添加双向通信 308
+
+# 通过 readAsDataURL 预览图像 368
+
+# 使用文件输入捕获图片 399
+
+# 创建气泡水平仪 404
 
 ## 高级技巧
 
@@ -13515,7 +13661,7 @@ www.it-ebooks.info
 - 捕获本地存储事件 275
 - 使用 Web 数据库实现购物清单 286
 - 利用共享 Web Worker 311
-- 利用事件和 dataTransfer 325
+- 利用事件和 `dataTransfer` 325
 - 创建推文通知页面 348
 - 使用 `readAsText` 解析 CSV 文件 373
 - 创建本地文件 382
@@ -13524,50 +13670,50 @@ www.it-ebooks.info
 
 ## A
 
-- abbr 元素，46
-- abort 函数，FileReader，373、376、378、380
-- ABORT_ERR，FileReader，373、378
-- accept 属性，HTML Media Capture，399–402
-- **无障碍访问**
+- `abbr` 元素，46
+- `abort` 函数，`FileReader`，373、376、378、380
+- `ABORT_ERR`，`FileReader`，373、378
+- `accept` 属性，HTML Media Capture，399–402
+- 无障碍访问
   - 使用 ARIA 改善，49–51
-  - 结合 nav 元素进行导航，10
+  - 结合 `nav` 元素进行导航，10
   - 占位符文本，109
   - 为视频添加字幕和说明文字，173–176
 - 首字母缩略词，46
-- :active 状态，CSS3 过渡，86
-- **addEventListener 函数**
+- `:active` 状态，CSS3 过渡，86
+- `addEventListener` 函数
   - 为设备方向创建气泡水平仪，405、407–408
   - 创建 web worker，304–306
   - 自定义视频控件，181–183、185
   - 数据库存储，287–288、293
   - 显示简单通知，344–345
-  - 利用事件和 dataTransfer，326–328
+  - 利用事件和 `dataTransfer`，326–328
   - 利用共享 web worker，313–314
-  - 使用 readAsText 解析 CSV 文件，374、378
+  - 使用 `readAsText` 解析 CSV 文件，374、378
   - 通过拖放处理多个文件，363、365
   - 使用本地存储保存表单，272–273
-- **addGroceryItem 函数**，数据库存储，288、292–293
-- **addNote 函数**，本地存储，276–278、281
-- address 元素，联系人，37–38
-- **Adobe Photoshop**，基于坐标的绘图系统，129
-- **高级技巧**，413–414，xxviii
-- **警报**。请参阅 Notification API
+- `addGroceryItem` 函数，数据库存储，288、292–293
+- `addNote` 函数，本地存储，276–278、281
+- `address` 元素，联系人，37–38
+- Adobe Photoshop，基于坐标的绘图系统，129
+- 高级技巧，413–414，xxviii
+- 警报。请参阅 Notification API
 - 替换文本
   - 鼠标悬停时显示，89
   - 用于标记图形和标题，32
   - 用于海报图像，171
-- and 语法，CSS3 媒体查询，71
-- **Android**
+- `and` 语法，CSS3 媒体查询，71
+- Android
   - 浏览器支持。*请参阅* 浏览器支持
   - 通过媒体查询进行定向，76
-- **animateSprite 函数**，147–149
-- **动画**
+- `animateSprite` 函数，147–149
+- 动画
   - CSS3 动画，86、89–94
   - 图像动画，151–155
   - 精灵图动画，147–150
   - 垂直柱状图动画，155–161
-- **antiClockwise 值，圆弧，143**
-- **API 类型**
+- `antiClockwise` 值，圆弧，143
+- API 类型
   - 应用缓存，340–341
   - 音频媒体，192–193
   - 联系人，391–396
@@ -13585,103 +13731,103 @@ www.it-ebooks.info
   - 视频媒体，177
   - Web Workers。*请参阅* Web Workers API
   - WebSocket，297–302
-- **.appcache 文件，335**
-- **应用缓存**
+- `.appcache` 文件，335
+- 应用缓存
   - API，340–341
   - 创建 manifest 文件，335–337
   - 概述，334–335
   - 离线使用网页，337–340
-- **arc 方法**
+- `arc` 方法
   - 在 canvas 中绘制圆弧和圆形，143
   - 在画布上绘制网格，130–133
-- **弧形工具，134**
-- aria-required:"true"，116
-- **ARIA (Web Accessibility Initiative Accessible Rich Internet Applications)，49–51**
-- **article 元素**
+- 弧形工具，134
+- `aria-required:"true"`，116
+- ARIA (Web Accessibility Initiative Accessible Rich Internet Applications)，49–51
+- `article` 元素
   - 用于文档大纲，21
   - 使用评论功能标记文章页面，53
   - 用于新闻主页，23–25
   - 在其中放置页脚元素，17–18
   - 用于搜索结果页面，27–29
-  - 在 section 内使用，12
-  - 与 section 元素的比较，14–15
+  - 在 `section` 内使用，12
+  - 与 `section` 元素的比较，14–15
   - 使用，11–12
-- **带评论的文章页面，51–54**
-- **aside 元素**
+- 带评论的文章页面，51–54
+- `aside` 元素
   - 用于文档大纲，21
   - 用于新闻主页，23–25
   - 用于搜索结果页面，28–29
   - 用于侧边栏，15–17
-- **关联列表，43–44**
-- **异步命令，Web SQL Database API，284**
-- **@font-face，CSS3，77–78**
-- **属性选择器，CSS3，72**
-- **属性**
+- 关联列表，43–44
+- 异步命令，Web SQL Database API，284
+- `@font-face`，CSS3，77–78
+- 属性选择器，CSS3，72
+- 属性
   - 音频，190–192
-  - canvas 元素，128
-  - ContactField 接口，395
-  - Contacts 接口，391–392
-  - DataTransfer 接口，320
-  - DeviceAcceleration 接口，404
-  - devicemotion 事件，403–404
-  - deviceorientation 事件，403
+  - `canvas` 元素，128
+  - `ContactField` 接口，395
+  - `Contacts` 接口，391–392
+  - `DataTransfer` 接口，320
+  - `DeviceAcceleration` 接口，404
+  - `devicemotion` 事件，403–404
+  - `deviceorientation` 事件，403
   - 获取文件属性，360–362
   - HTML Media Capture，399
   - 微数据，48
-  - FileReader 的 onprogress 事件，374
-- **audio 属性，video 元素，171**
-- **audio 元素**
+  - `FileReader` 的 `onprogress` 事件，374
+- `audio` 属性，`video` 元素，171
+- `audio` 元素
   - 添加流式音频，198–206
   - 创建节拍混音器，193–197
   - 为所有浏览器启用音频，188–190
-  - 使用 audio 元素嵌入音频，187–188
+  - 使用 `audio` 元素嵌入音频，187–188
   - 新属性，190–192
-- **音频，使用 HTML5 嵌入**
+- 音频，使用 HTML5 嵌入
   - 创建节拍混音器，193–197
   - 为所有浏览器启用音频，188–190
   - 测试用的免费音频文件，192
   - 媒体 API，192–193
   - 新属性，190–192
   - 流式广播电台，197–206
-  - 使用 audio 元素，187–188
-- **作者信息**
-  - cite 元素不用于此目的，39–40
+  - 使用 `audio` 元素，187–188
+- 作者信息
+  - `cite` 元素不用于此目的，39–40
   - 在页脚中，6、17
   - 在页头中，6
-  - 使用 b 元素表示，40
-- **授权，位置隐私和**，237
-- **自动完成，使用 list 和 datalist 创建**，110–111
-- **autofocus 属性**，114–115
-- **autoplay 属性**
-  - audio 元素，191
-  - video 元素，172
-- **电池，移动设备**，257
-- **Battery Status 事件**，398
-- **节拍混音器**，193–197
-- **初级技巧**，411–412，xxviii
-- **beginPath 方法，canvas 线条**，139、142
-- **bezierCurveTo，绘制曲线**，143
-- **BlobBuilder 接口**，381
-- **块级处理器，利用事件**，326–328、330
-- **blockquote 和 cite 元素**，40
-- **博客条目**，11–12
-- **模板代码**，57
-- **边框**
+  - 使用 `b` 元素表示，40
+- 授权，位置隐私和，237
+- 自动完成，使用 `list` 和 `datalist` 创建，110–111
+- `autofocus` 属性，114–115
+- `autoplay` 属性
+  - `audio` 元素，191
+  - `video` 元素，172
+- 电池，移动设备，257
+- Battery Status 事件，398
+- 节拍混音器，193–197
+- 初级技巧，411–412，xxviii
+- `beginPath` 方法，canvas 线条，139、142
+- `bezierCurveTo`，绘制曲线，143
+- `BlobBuilder` 接口，381
+- 块级处理器，利用事件，326–328、330
+- `blockquote` 和 `cite` 元素，40
+- 博客条目，11–12
+- 模板代码，57
+- 边框
   - 添加到 canvas，128
   - 绘制 canvas 网格，131、133
-- **HTML5 浏览器体验**
+- HTML5 浏览器体验
   - 应用缓存，334–335
   - 应用缓存 API，340–341
   - 创建 manifest 文件，335–337
   - 创建推文通知页面，347–356
   - 显示简单通知，344–347
   - 拖放 API，319–321
-  - 跨 div 拖放元素，321–325
-  - 利用事件和 dataTransfer，325–333
+  - 跨 `div` 拖放元素，321–325
+  - 利用事件和 `dataTransfer`，325–333
   - 通知 API，341–343
   - 概述，319
   - 离线使用网页，337–340
-- **浏览器处理**
+- 浏览器处理
   - 模板代码，57
   - 自定义视频控件，184
   - 处理 Internet Explorer，55–57
@@ -13689,73 +13835,71 @@ www.it-ebooks.info
   - HTML 历史，xxiii
   - 概述，55
 
-
-
 ### 浏览器处理（续）
 
--   polyfilling，66–67
--   HTML5 的原则，xxv
--   使用 jQuery 替换日历组件，59–62
--   测试 HTML5 特性，57–59
--   实用的 HTML5 验证网站，67
+- polyfilling，66–67
+- HTML5 的原则，xxv
+- 使用 jQuery 替换日历组件，59–62
+- 测试 HTML5 特性，57–59
+- 实用的 HTML5 验证网站，67
 
 ### 浏览器历史
 
--   使用 pushState 添加到历史记录，208–211
--   基础知识，207–208
--   浏览器兼容性，208
--   更改页面历史记录，218–220
--   使用 replaceState 创建历史记录，216–218
--   创建图像查看器，211–214
--   有用的库，228
--   在图像查看器中使用 popstate，214–216
--   安全性测试，225–228
--   使用高级状态数据对象，221–225
+- 使用 `pushState` 添加到历史记录，208–211
+- 基础知识，207–208
+- 浏览器兼容性，208
+- 更改页面历史记录，218–220
+- 使用 `replaceState` 创建历史记录，216–218
+- 创建图像查看器，211–214
+- 有用的库，228
+- 在图像查看器中使用 `popstate`，214–216
+- 安全性测试，225–228
+- 使用高级状态数据对象，221–225
 
 ### 浏览器支持
 
--   application cache，334
--   audio codecs，188
--   autofocus attribute，114
--   日历组件，102
--   canvas，128
--   客户端存储，261
--   颜色选择器，107
--   CSS 动画，90
--   CSS 变换与过渡，84
--   CSS3 @font-face，77
--   CSS3 渐变，80
--   CSS3 Media Queries，70
--   datalist 元素，110–111
--   拖放 API，321
--   email 输入类型，98
--   启用音频，188–190
--   启用视频，166–173
--   File API，360
--   formnovalidate/novalidate 属性，119
--   Geolocation API，232
--   History API，208
--   HTML5 和视频编解码器，165
--   meter 元素，113
--   min 和 max 属性，118
--   multiple 属性，115
--   Notification API，343
--   数字选择器，105
--   output 元素，108
--   pattern 属性，117
--   placeholder 属性，110
--   progress 元素，112
--   beat mixer 中的怪异行为，197
--   required 属性，116
--   search 输入类型，101
--   滑块控件，106
--   step 属性，118
--   tel 输入类型，99
--   url 输入类型，100
--   video 元素，164
--   Web SQL Database，283
--   Web Workers API，303
--   WebSocket API，298
+- application cache，334
+- audio codecs，188
+- `autofocus` attribute，114
+- 日历组件，102
+- canvas，128
+- 客户端存储，261
+- 颜色选择器，107
+- CSS 动画，90
+- CSS 变换与过渡，84
+- CSS3 `@font-face`，77
+- CSS3 渐变，80
+- CSS3 Media Queries，70
+- `datalist` 元素，110–111
+- 拖放 API，321
+- `email` 输入类型，98
+- 启用音频，188–190
+- 启用视频，166–173
+- File API，360
+- `formnovalidate`/`novalidate` 属性，119
+- Geolocation API，232
+- History API，208
+- HTML5 和视频编解码器，165
+- `meter` 元素，113
+- `min` 和 `max` 属性，118
+- `multiple` 属性，115
+- Notification API，343
+- 数字选择器，105
+- `output` 元素，108
+- `pattern` 属性，117
+- `placeholder` 属性，110
+- `progress` 元素，112
+- beat mixer 中的怪异行为，197
+- `required` 属性，116
+- `search` 输入类型，101
+- 滑块控件，106
+- `step` 属性，118
+- `tel` 输入类型，99
+- `url` 输入类型，100
+- `video` 元素，164
+- Web SQL Database，283
+- Web Workers API，303
+- WebSocket API，298
 
 ### 创建气泡水平仪，404–408
 
@@ -13763,209 +13907,224 @@ www.it-ebooks.info
 
 #### 缓存
 
--   application. *参见* Application cache
--   通过 manifest 文件更新，337
+- application. *参见* Application cache
+- 通过 manifest 文件更新，337
 
 #### CACHE 部分，manifest 文件，336
 
-#### cached 事件，application cache API，341
+#### `cached` 事件，application cache API，341
 
-#### calculateDistance 函数，PositionOptions，244–246
+#### `calculateDistance` 函数，`PositionOptions`，244–246
 
 ## 日历组件
 
--   利用 jQuery 进行替换，59–62
--   时间控件，102–105
+- 利用 jQuery 进行替换，59–62
+- 时间控件，102–105
 
 ## 客户端存储
 
--   回调函数，tweet 通知，348–349，353，356
+- 回调函数，tweet 通知，348–349，353，356
 
 ## 相机，使用 file input 捕获图片，399–402
 
-## cancel 方法，notifications，348，352
+## `cancel` 方法，notifications，348，352
 
 ## canvas
 
--   添加文本，144
--   动画图像，151–155
--   动画精灵图，147–150
--   动画垂直条形图，155–161
--   为形状应用渐变，137
--   创建气泡水平仪，404–408
--   裁剪图像，146–147
--   绘制和设置矩形或正方形样式，135–137
--   绘制弧线和圆形，143
--   绘制图像，145–146
--   绘制线条和路径，138–139
--   使用路径绘制多边形，139–142
--   在 canvas 上绘制网格，130–134
--   canvas 概述，127–128
--   设置 canvas 元素，128–129
--   测试浏览器对 HTML5 特性的支持，58–59
--   工具，134
--   变换工具，150–151
--   X 和 Y 坐标，129
+- 添加文本，144
+- 动画图像，151–155
+- 动画精灵图，147–150
+- 动画垂直条形图，155–161
+- 为形状应用渐变，137
+- 创建气泡水平仪，404–408
+- 裁剪图像，146–147
+- 绘制和设置矩形或正方形样式，135–137
+- 绘制弧线和圆形，143
+- 绘制图像，145–146
+- 绘制线条和路径，138–139
+- 使用路径绘制多边形，139–142
+- 在 canvas 上绘制网格，130–134
+- canvas 概述，127–128
+- 设置 `canvas` 元素，128–129
+- 测试浏览器对 HTML5 特性的支持，58–59
+- 工具，134
+- 变换工具，150–151
+- X 和 Y 坐标，129
 
 ## 字幕
 
--   创建视频字幕，173–176
--   figcaption 关联图像，31–34
+- 创建视频字幕，173–176
+- `figcaption` 关联图像，31–34
 
-## capture 属性，HTML Media Capture，399–402
+## `capture` 属性，HTML Media Capture，399–402
 
 ## 层叠样式表. *参见* CSS (Cascading Style Sheets)
 
 ## 分类，食谱，xxviii
 
-## changeField 函数，本地存储，272–274
+## `changeField` 函数，本地存储，272–274
 
-## changeNote 函数，本地存储，276，278，280
+## `changeNote` 函数，本地存储，276，278，280
 
-## chapters 值，kind 属性，173
+## `chapters` 值，`kind` 属性，173
 
 ## 字符编码，2–3
 
-## charset 声明，2–3
+## `charset` 声明，2–3
 
-## checking 事件，application cache API，340–341
+## `checking` 事件，application cache API，340–341
 
-## checkPermission 方法，tweet 通知，349–351，353，355
+## `checkPermission` 方法，tweet 通知，349–351，353，355
 
-## checkPermissionLevel 函数，tweet 通知，349–353，355
+## `checkPermissionLevel` 函数，tweet 通知，349–353，355
 
-## checkStorage 函数，本地存储，272–274
+## `checkStorage` 函数，本地存储，272–274
 
 ## Chrome
 
--   浏览器支持. *参见* Browser support
--   HTML5 Outliner 扩展程序图标，19–21
+- 浏览器支持. *参见* Browser support
+- HTML5 Outliner 扩展程序图标，19–21
 
 ## Chrome 开发者工具
 
--   使用本地存储存储表单，272，274
--   查看 SQLite 数据库，287
--   查看存储，265–266
+- 使用本地存储存储表单，272，274
+- 查看 SQLite 数据库，287
+- 查看存储，265–266
 
 ## 圆形，在 canvas 中绘制，143
 
-## cite 元素，更改，39–40
+## `cite` 元素，更改，39–40
 
-## clearAllNotes 函数，本地存储，276，279–281
+## `clearAllNotes` 函数，本地存储，276，279–281
 
-## clearFile 函数，预览图像，368，370–372
+## `clearFile` 函数，预览图像，368，370–372
 
-## clearRect 方法
+## `clearRect` 方法
 
--   清除 canvas，142，154
--   矩形，136
+- 清除 canvas，142，154
+- 矩形，136
 
-## clearTable 函数，拖放，363–366
+## `clearTable` 函数，拖放，363–366
 
-## clearWatch 函数，watchPosition，251，255–256
+## `clearWatch` 函数，`watchPosition`，251，255–256
 
 ## 客户端存储
 
--   在本地存储中捕获事件，275–283
--   使用 Chrome 开发者工具查看，265–266
--   数据安全，260–261
--   在浏览器中禁用，262
--   获取和设置 sessionStorage，263–264
--   概述，259–260
--   session storage 和 local storage，261–262
--   使用本地存储存储表单，271–275
--   使用 session storage 设置样式，266–271
--   类型，259
--   使用 web database 创建杂货清单，286–295
--   Web SQL Database API，283–286
+- 在本地存储中捕获事件，275–283
+- 使用 Chrome 开发者工具查看，265–266
+- 数据安全，260–261
+- 在浏览器中禁用，262
+- 获取和设置 `sessionStorage`，263–264
+- 概述，259–260
+- session storage 和 local storage，261–262
+- 使用本地存储存储表单，271–275
+- 使用 session storage 设置样式，266–271
+- 类型，259
+- 使用 web database 创建杂货清单，286–295
+- Web SQL Database API，283–286
 
 #### 通过 Web Workers API 实现线程处理，302–304
 
 #### WebSocket API 概述，297–298
 
-## compassneedscalibration 事件，设备方向，403
+## `compassneedscalibration` 事件，设备方向，403
 
 ## 兼容性. *参见* Browser support
 
 ## 合成，canvas 工具，135
 
-## computeDistanceBetween 函数
+## `computeDistanceBetween` 函数
 
--   PositionOptions，244
--   watchPosition，252–253，256
+- `PositionOptions`，244
+- `watchPosition`，252–253，256
 
 ## 并发，303
 
-## connect 事件，共享 web worker，312
+## `connect` 事件，共享 web worker，312
 
-## Connection 接口，Network Information API，397
+## `Connection` 接口，Network Information API，397
 
 ## 联系信息
 
--   使用 address 元素，37–38
--   创建表单以收集，97–101
+- 使用 `address` 元素，37–38
+- 创建表单以收集，97–101
 
-## ContactField 接口，392，395
+## `ContactField` 接口，392，395
 
 ## Contacts API
 
--   开发，390
--   概述，391–392
--   检索所有联系人和手机号码，393–396
+- 开发，390
+- 概述，391–392
 
-## Contacts 接口，391–392
 
-## contactsFindSuccess 函数，Contacts 接口，393
+
+- 检索所有联系人和手机号码，393–396
+
+## `Contacts`接口，391–392
+
+## `contactsFindSuccess`函数，`Contacts`接口，393
 
 ## 内容
 
--   footer 元素，17–19
--   使用 section 元素分组，12–14
--   可能的 header，5
+- `footer`元素，17–19
 
-## closePath 方法，canvas 线条，139，142
+- 使用`section`元素分组，12–14
 
-## closeWS 函数，WebSocket API，299–301
+- 可能的`header`，5
+
+## `closePath`方法，canvas线条，139，142
+
+## `closeWS`函数，WebSocket API，299–301
 
 ## 编解码器
 
--   audio 元素问题，188
--   HTML5 和视频，165
--   为什么应该关注，165–166
+- `audio`元素问题，188
 
-## 编码，HTML5 的原则，xxv
+- HTML5和视频，165
 
-## 颜色. *另见* 背景颜色
+- 为什么应该关注，165–166
 
--   CSS3 过渡，86–89
--   覆盖表单占位符文本，109
--   美化正方形，136
+## 编码，HTML5的原则，xxv
 
-## color 输入类型
+## 颜色。*另见* 背景颜色
 
--   颜色选择器，107–108
--   创建注册表单，122–125
+- CSS3过渡，86–89
+
+- 覆盖表单占位符文本，109
+
+- 美化正方形，136
+
+## `color`输入类型
+
+- 颜色选择器，107–108
+
+- 创建注册表单，122–125
 
 ## 颜色选择器，107–108
 
-## 逗号分隔值（CSV）文件，使用 readAsText 解析，373–380
+## 逗号分隔值（CSV）文件，使用`readAsText`解析，373–380
 
 ## 注释
 
--   使用注释标记文章页面，51–54
--   在 article 元素中标记注释，11–12
+- 使用注释标记文章页面，51–54
+
+- 在`article`元素中标记注释，11–12
 
 ## 通信
 
--   添加双向通信，308–311
--   创建 web worker，304–308
--   利用共享 web worker，311–318
--   概述，297
--   通过 web sockets 进行通信，299–302
+- 添加双向通信，308–311
 
-## controls 属性，audio 元素，191
+- 创建web worker，304–308
 
-## controls 属性，video 元素，172–173
+- 利用共享web worker，311–318
+
+- 概述，297
+
+- 通过web sockets进行通信，299–302
+
+## `controls`属性，`audio`元素，191
+
+## `controls`属性，`video`元素，172–173
 
 ## 控件，自定义视频控件，178–186
 
@@ -13975,384 +14134,505 @@ www.it-ebooks.info
 
 ## 坐标系，canvas
 
--   绘制网格，130–134
--   概述，129
+- 绘制网格，130–134
 
-## coords 对象，getCurrentPosition，236，239
+- 概述，129
 
-## 版权数据，footer 元素，17
+## `coords`对象，`getCurrentPosition`，236，239
 
-## Create Polygon 按钮，142
+## 版权数据，`footer`元素，17
 
-## createHTMLNotification 属性，NotificationCenter，342
+## Create Polygon按钮，142
 
-## createLinearGradient 方法，形状，135
+## `createHTMLNotification`属性，`NotificationCenter`，342
 
--   定义，342
+## `createLinearGradient`方法，形状，135
 
-## createNotification 属性，NotificationCenter
+- 定义，342
 
--   简单通知，344–347
--   tweet 通知，348，352
+## `createNotification`属性，`NotificationCenter`
 
-## createPattern 方法，裁剪图像，145–146
+- 简单通知，344–347
 
-## createRadialGradient 方法，形状，135
+- tweet通知，348，352
+
+## `createPattern`方法，裁剪图像，145–146
+
+## `createRadialGradient`方法，形状，135
 
 ## 裁剪图像，145–146
 
-## 跨浏览器修复，@font-face，79
+## 跨浏览器修复，`@font-face`，79
 
 ## CSS（层叠样式表），188
 
--   beat mixer，193–197
--   构建 HTML5 入门文档，3
--   创建带字幕和标题的视频，174–176
--   自定义视频控件，179，184
--   HTML5 与 CSS，xxvi
--   使 IE 兼容 HTML5，56–57
--   设置视频高度和宽度，167
--   流式广播播放器，197
--   开发过程中的可用性，xxix
--   用于分隔符，46
--   在线使用网页，338–340
--   与 ARIA roles 一起使用，51
+- beat mixer，193–197
+
+- 构建HTML5入门文档，3
+
+- 创建带字幕和标题的视频，174–176
+
+- 自定义视频控件，179，184
+
+- HTML5与CSS，xxvi
+
+- 使IE兼容HTML5，56–57
+
+- 设置视频高度和宽度，167
+
+- 流式广播播放器，197
+
+- 开发过程中的可用性，xxix
+
+- 用于分隔符，46
+
+- 在线使用网页，338–340
+
+- 与ARIA roles一起使用，51
 
 ## CSS3
 
--   动画，89–94
--   基本用户界面模块，120–121
--   带有渐变和多重背景的按钮，80–83
--   使用 @font-face 的自定义字体，77–78
--   使用 Modernizr 进行特性检测，62–64
--   文件格式和跨浏览器修复，78–79
--   iPhone 和 Android 设备以及 CSS3，76
--   Media Queries，69–76
--   概述，69
--   合理使用，76
--   设置 canvas 样式，128
--   设置表单元素样式，119–121
--   变换与过渡，84–89
--   类型服务，79–80
+- 动画，89–94
 
-## CSV（逗号分隔值）文件，使用 readAsText 解析，373–380
+- 基本用户界面模块，120–121
+
+- 带有渐变和多重背景的按钮，80–83
+
+- 使用`@font-face`的自定义字体，77–78
+
+- 使用Modernizr进行特性检测，62–64
+
+- 文件格式和跨浏览器修复，78–79
+
+- iPhone和Android设备以及CSS3，76
+
+- Media Queries，69–76
+
+- 概述，69
+
+- 合理使用，76
+
+- 设置canvas样式，128
+
+- 设置表单元素样式，119–121
+
+- 变换与过渡，84–89
+
+- 类型服务，79–80
+
+## CSV（逗号分隔值）文件，使用`readAsText`解析，373–380
 
 ## 曲线，绘制
 
--   使用 Curve 工具，134
--   概述，143–144
+- 使用Curve工具，134
+
+- 概述，143–144
 
 ## 自定义字体
 
--   使用 CSS3 @font-face，77–78
--   文件格式和跨浏览器修复，78–79
--   类型服务，79–80
+- 使用CSS3 `@font-face`，77–78
+
+- 文件格式和跨浏览器修复，78–79
+
+- 类型服务，79–80
 
 ## 自定义视频控件，178–186
 
-## 自定义 Web 表单，119–121
+## 自定义Web表单，119–121
 
 ## D
 
-#### data 参数，History API
+### `data`参数，History API
 
--   pushState 方法，208–209
--   replaceState 方法，216–218
+- `pushState`方法，208–209
 
-#### 数据库存储
+- `replaceState`方法，216–218
 
--   HTML5 选项，260
--   客户端安全问题，260–261
--   用于杂货清单，286–295
--   Web SQL Database API，283–286
+### 数据库存储
 
-#### datalist 元素
+- HTML5选项，260
 
--   创建自动完成功能，110–111
--   创建注册表单，122–125
+- 客户端安全问题，260–261
 
-## dataTransfer
+- 用于杂货清单，286–295
 
--   属性和方法，320
+- Web SQL Database API，283–286
 
+### `datalist`元素
 
+- 创建自动完成功能，110–111
 
-## dataTransfer
+- 创建注册表单，122–125
 
-**dataTransfer（续）**
-- 拖放 API，321–324
+## `dataTransfer`
+
+- 属性和方法，320
+
+## `dataTransfer`（续）
+
+- 拖放API，321–324
+
 - 利用事件与，325，329–330，332–333
 
-## date 输入类型
+## `date`输入类型
+
 - 日历，103–104
+
 - 创建注册表单，122–125
-- 利用 jQuery 替换日历，59–62
 
-## Date，使用 time 元素标记，34–35
+- 利用jQuery替换日历，59–62
 
-## datetime 属性，time 元素，34–35
+## Date，使用`time`元素标记，34–35
 
-## datetime 输入类型，日历，102–103
+## `datetime`属性，`time`元素，34–35
 
-## datetime-local 输入类型，日历，103
+## `datetime`输入类型，日历，102–103
 
-## dbPresent 函数，数据库存储，287，289，293
+## `datetime-local`输入类型，日历，103
+
+## `dbPresent`函数，数据库存储，287，289，293
 
 ## 调试
-- 开发 worker 功能以简化调试，317
+
+- 开发worker功能以简化调试，317
+
 - 拖放编程，333
-- 在地理位置 API 中，237
+
+- 在地理位置API中，237
+
 - 为调试而移除数据库，287–288
 
-## 专用 Web Workers
+## 专用Web Workers
+
 - 添加双向通信，308–311
+
 - 定义，302
+
 - 方法与事件，303
 
 ## 定义列表，42–43
 
-## del 元素，已编辑或删除的文本，39
+## `del`元素，已编辑或删除的文本，39
 
-## deleteItem 方法，数据库存储，288
+## `deleteItem`方法，数据库存储，288
 
-## 描述列表，用于此的 dl 元素，43–44
+## 描述列表，用于此的`dl`元素，43–44
 
-## descriptions 值，kind 属性，173
+## `descriptions`值，`kind`属性，173
 
-## details 元素，使用其进行切换，35–37
+## `details`元素，使用其进行切换，35–37
 
-## 设备 API 工作组，389–390
+## 设备API工作组，389–390
 
 ## 设备数据，集成
+
 - 电池状态事件，398
-- 通讯录 API，391–396
-- 设备 API 历史，389–391
+
+- 通讯录API，391–396
+
+- 设备API历史，389–391
+
 - 设备方向与运动事件，403–408
-- HTML 媒体捕获，398–402
-- 消息 API，396–397
-- 网络信息 API，397–398
+
+- HTML媒体捕获，398–402
+
+- 消息API，396–397
+
+- 网络信息API，397–398
+
 - 概述，389
 
 ## 设备方向与运动事件
+
 - 创建水平仪，404–408
+
 - 概述，403–404
 
-## DeviceAcceleration 接口，404
+## `DeviceAcceleration`接口，404
 
-## devicemotion 事件，403–404
+## `devicemotion`事件，403–404
 
-## deviceorientation 事件
+## `deviceorientation`事件
+
 - 创建水平仪，404–408
+
 - 定义，403
 
-## DeviceRotationRate 接口，404
+## `DeviceRotationRate`接口，404
 
 ## 直接下载，适用于较旧的浏览器，167
 
 ## 目录与系统规范，File API，381–382
 
-## DirectoryEntry 接口，381
+## `DirectoryEntry`接口，381
 
-## 显示结果，使用 output 元素，108–109
+## 显示结果，使用`output`元素，108–109
 
-## displayFiles 函数，通过拖放处理多个文件，362–366
+## `displayFiles`函数，通过拖放处理多个文件，362–366
 
-## div 元素
-- 拖放 API，321–325
+## `div`元素
+
+- 拖放API，321–325
+
 - 作为最后手段，14–15
 
-## dl 元素，42–44
+## `dl`元素，42–44
 
-## doctype
-- HTML5 入门文档，2
+## `doctype`
+
+- HTML5入门文档，2
+
 - 新闻主页，23
+
 - 搜索结果页，26
 
-## 文档类型定义 (DTD)，2
+## 文档类型定义（DTD），2
 
-## downloading 事件，应用程序缓存 API，341
+## `downloading`事件，应用程序缓存API，341
 
-## 拖放 API
-- 跨 div 拖放，321–325
-- 利用事件与 dataTransfer，325–333
+## 拖放API
+
+- 跨`div`拖放，321–325
+
+- 利用事件与`dataTransfer`，325–333
+
 - 概述，319–321
+
 - 处理多个文件，362–367
 
-## draggable 属性，拖放 API，319–320，321，324
+## `draggable`属性，拖放API，319–320，321，324
 
-## dragstart 属性，拖放 API，320
+## `dragstart`属性，拖放API，320
 
-## dragStartHandler 函数，拖放 API，322，324
+## `dragStartHandler`函数，拖放API，322，324
 
-## drawAxis 函数，垂直柱状图动画，155，157–158，161
+## `drawAxis`函数，垂直柱状图动画，155，157–158，161
 
-## drawBar 函数，垂直柱状图动画，155，160–161
+## `drawBar`函数，垂直柱状图动画，155，160–161
 
-## drawImage 方法，canvas，145–150
+## `drawImage`方法，canvas，145–150
 
-## 绘图，使用 canvas。*参见* canvas
+## 绘图，使用canvas。*参见* canvas
 
-## drawPolygon 函数，139–142
+## `drawPolygon`函数，139–142
 
-## drop 事件，dropzone 属性，320
+## `drop`事件，`dropzone`属性，320
 
 ## 放置区域
-- 利用事件与 dataTransfer，326，328，331–333
+
+- 利用事件与`dataTransfer`，326，328，331–333
+
 - 通过拖放处理多个文件，362–366
 
-## dropHandler 函数，322，324–325
+## `dropHandler`函数，322，324–325
 
-## dropzone 属性，320–321，324
+## `dropzone`属性，320–321，324
 
 ## DTD（文档类型定义），2
 
 ## 时长，自定义视频控件，179–181，183–185
 
-## durationChange 事件，流媒体广播，200，206
+## `durationChange`事件，流媒体广播，200，206
 
 # E
 
-## 效果，用于此的 canvas 工具，135
+## 效果，用于此的canvas工具，135
 
 ## 元素
+
 - 分组或文本级别。*参见* 分组或文本级别元素
+
 - 结构性。*参见* 结构性元素，新的
+
 - 将链接包裹在其周围，47
 
 ## 元素，现有元素的更改
-- abbr，46
-- b 和 strong，44–45
-- cite，39–40
-- dl，42–44
-- hr，46
-- i 和 em，45–46
-- ol，40–42
-- 已移除的元素，46–47
-- small，44
 
-## em 元素，45–46
+- `abbr`，46
+
+- `b`和`strong`，44–45
+
+- `cite`，39–40
+
+- `dl`，42–44
+
+- `hr`，46
+
+- `i`和`em`，45–46
+
+- `ol`，40–42
+
+- 已移除的元素，46–47
+
+- `small`，44
+
+## `em`元素，45–46
 
 ## 电子邮件，创建本地文件，382–388
 
-## email 输入类型
+## `email`输入类型
+
 - 创建联系表单，98–99
+
 - 创建注册表单，122–125
 
 ## 嵌入式
-- 音频。*参见* 音频，使用 HTML5 嵌入
-- 视频。*参见* 视频，使用 HTML5 嵌入
 
-## 嵌入式 OpenType (.eot) 字体文件格式，78
+- 音频。*参见* 音频，使用HTML5嵌入
+
+- 视频。*参见* 视频，使用HTML5嵌入
+
+## 嵌入式OpenType（.eot）字体文件格式，78
 
 ## 强调，句子，45–46
 
-## enableHighAccuracy，PositionOptions，243
+## `enableHighAccuracy`，`PositionOptions`，243
 
-## ENCODING_ERR，FileReader，373，378
+## `ENCODING_ERR`，`FileReader`，373，378
 
 ## 加密，数据存储，260–261
 
-## END 消息，推文通知，355–356
+## END消息，推文通知，355–356
 
-## Entry 接口，381
+## `Entry`接口，381
 
-## .eot（嵌入式 OpenType）字体文件格式，78
+## .eot（嵌入式OpenType）字体文件格式，78
 
 ## 错误代码值
-- FileReader，373，378
-- 消息 API，397
 
-## error 事件，应用程序缓存 API，341
+- `FileReader`，373，378
+
+- 消息API，397
+
+## `error`事件，应用程序缓存API，341
 
 ## 错误处理
-- 更改 Web 表单的消息，121
-- Web SQL 数据库 API，285–286
 
-## 错误处理，地理位置 API
+- 更改Web表单的消息，121
+
+- Web SQL数据库API，285–286
+
+## 错误处理，地理位置API
+
 - 确定距离，247
+
 - 跟随移动位置，254
+
 - 位置隐私，237
+
 - 映射位置，238，240–242
 
-## errorCallback 参数
-- getCurrentPosition，233
-- watchPosition，250，251
+## `errorCallback`参数
+
+- `getCurrentPosition`，233
+
+- `watchPosition`，250，251
 
 ## 事件处理
-- 与 dataTransfer，326–328
+
+- 与`dataTransfer`，326–328
+
 - 本地存储，276–277，282
+
 - 推文通知，348，351–353
 
 ## 事件
+
 - 应用程序缓存，340–341
+
 - 电池状态，398
+
 - 在本地存储中捕获，275–283
-- dataTransfer 与利用，325–333
+
+- `dataTransfer`与利用，325–333
+
 - 设备方向与运动，403–404
-- 拖放 API，320，325
-- FileReader，367–368
-- 利用共享 web worker，312
-- 媒体 API，177，192–193，197
-- 网络信息 API，398
-- 使用 readAsText 解析 CSV 文件，374–376
+
+- 拖放API，320，325
+
+- `FileReader`，367–368
+
+- 利用共享web worker，312
+
+- 媒体API，177，192–193，197
+
+- 网络信息API，398
+
+- 使用`readAsText`解析CSV文件，374–376
+
 - Web Workers API，303
+
 - WebSocket API，298
 
-## executeSql 方法，Web SQL 数据库 API，284–285
+## `executeSql`方法，Web SQL数据库API，284–285
 
-## 可扩展超文本标记语言 (XHTML)，xxiii–xxiv
+## 可扩展超文本标记语言（XHTML），xxiii–xxiv
 
 ## File API
+
 - 扩展规范，381–382
+
 - 概述，359–360
 
-## 文件格式，以及 CSS3 跨浏览器修复，78–79
+## 文件格式，以及CSS3跨浏览器修复，78–79
 
-## file 输入元素，捕获图片，399–402
+## `file`输入元素，捕获图片，399–402
 
-## File 接口，359–362
+## `File`接口，359–362
 
-## fileAction 函数，本地文件，383，385–387
+## `fileAction`函数，本地文件，383，385–387
 
-## fileAttributes 部分，360–362
+## `fileAttributes`部分，360–362
 
-## FileEntry 接口，381
+## `FileEntry`接口，381
 
-## fileErrorHandler 函数，本地文件，383–386
+## `fileErrorHandler`函数，本地文件，383–386
 
-## FileList 接口
+## `FileList`接口
+
 - File API，359
+
 - 获取文件属性，360–362
+
 - 通过拖放处理多个文件，362–367
 
-## FileReader 接口
+## `FileReader`接口
+
 - File API，359
+
 - 本地文件，367–368
+
 - 概述，367–368
-- 使用 readAsText 解析 CSV 文件，373–380
-- 通过 readAsDataURL 预览图像，368–372
 
-## FileReaderSnyc，368
+- 使用`readAsText`解析CSV文件，373–380
 
-## FileSaver 接口，381
+- 通过`readAsDataURL`预览图像，368–372
 
-## FileSystem 接口，381
+## `FileReaderSync`，368
 
-## FileWriter 接口，381–382，385–387
+## `FileSaver`接口，381
 
-## 填充效果，canvas 工具，135
+## `FileSystem`接口，381
 
-## fillRect 方法，矩形或正方形，135–136
+## `FileWriter`接口，381–382，385–387
 
-## fillStyle 方法
-- 向 canvas 添加文本，144
+## 填充效果，canvas工具，135
+
+## `fillRect`方法，矩形或正方形，135–136
+
+## `fillStyle`方法
+
+- 向canvas添加文本，144
+
 - 形状，135–137
 
-## fillText 方法
-- 向 canvas 添加文本，144
-- 绘制 canvas 网格，130–134
+## `fillText`方法
 
-## 过滤器，dropzone 属性，320
+- 向canvas添加文本，144
+
+- 绘制canvas网格，130–134
+
+## 过滤器，`dropzone`属性，320
 
 # F
 
@@ -14360,60 +14640,75 @@ www.it-ebooks.info
 
 ## 回退内容，在较旧的浏览器中，167–169，189–190
 
-## FALLBACK 部分，清单文件，336–337
+## FALLBACK部分，清单文件，336–337
 
 ## 快进按钮，自定义视频控件，186
 
 ## 特性检测方法，浏览器
+
 - Modernizr，62–66
+
 - 概述，57–59
 
-## figcaption 元素，31–34
+## `figcaption`元素，31–34
 
-## figure 元素
-- 和 figcaption，31–34
+## `figure`元素
+
+- 和`figcaption`，31–34
+
 - 应用旋转转换，84
 
-## find 方法，Contacts 接口，391，393–395
+## `find`方法，`Contacts`接口，391，393–395
 
-## findAllContacts 方法，Contacts 接口，393–395
+## `findAllContacts`方法，`Contacts`接口，393–395
 
-## FindMe 函数，getCurrentPosition，233–235
+## `FindMe`函数，`getCurrentPosition`，233–235
 
 ## Firefox。*参见* 浏览器支持
 
-## fireNotification 函数，Notification API，344–345
+## `fireNotification`函数，Notification API，344–345
 
-## Flash Player 回退，较旧的浏览器，167–169，189–190
+## Flash Player回退，较旧的浏览器，167–169，189–190
 
 ## Font Squirrel，78–80
 
-## 字体栈，使用 CSS font-family，80
+## 字体栈，使用CSS `font-family`，80
 
-## FontDeck 服务，80
+## FontDeck服务，80
 
 # 字体
-- 向 canvas 添加文本，144
-- 使用 CSS3 @fontface 自定义，77–78
+
+- 向canvas添加文本，144
+
+- 使用CSS3 `@font-face`自定义，77–78
+
 - 文件格式与跨浏览器修复，78–79
+
 - 字体服务，79–80
 
-# footer 元素
+# `footer`元素
+
 - 内部的作者信息，6
-- 在 blockquote 中，40
+
+- 在`blockquote`中，40
+
 - 创建新闻主页，23–25
+
 - 创建搜索结果页，28–29
+
 - 使用，17–19
 
-## form 元素，页面加载时跳转至，114–115
+## `form`元素，页面加载时跳转至，114–115
 
 # 格式
-- CSS3 跨浏览器修复与文件，78–79
-- drawImage 函数，145
 
-## formnovalidate 属性，表单条目，119
+- CSS3跨浏览器修复与文件，78–79
 
-## 表单。*参见* Web 表单
+- `drawImage`函数，145
+
+## `formnovalidate`属性，表单条目，119
+
+## 表单。*参见* Web表单
 
 ## 论坛帖子，标记，11–12
 
@@ -14423,155 +14718,223 @@ www.it-ebooks.info
 
 ## 地理编码，232
 
-# geoErrorHandler 函数
-- getCurrentPosition，238，240–242
-- PositionOptions，247
+# `geoErrorHandler`函数
 
-# 地理位置 API
+- `getCurrentPosition`，238，240–242
+
+- `PositionOptions`，247
+
+# 地理位置API
+
 - 浏览器兼容性，232
+
 - 设备方向规范，403–404
-- getCurrentPosition，位置感知，233–236
-- getCurrentPosition，位置隐私，237
-- getCurrentPosition，映射位置，237–243
+
+- `getCurrentPosition`，位置感知，233–236
+
+- `getCurrentPosition`，位置隐私，237
+
+- `getCurrentPosition`，映射位置，237–243
+
 - 概述，231–232
-- PositionOptions，确定距离，243–249
-- watchPosition，跟随移动位置，250–257
 
-## geoSuccess 函数，getCurrentPosition，234–236，239
+- `PositionOptions`，确定距离，243–249
 
-## getContext 方法，在 canvas 上绘图，129
+- `watchPosition`，跟随移动位置，250–257
 
-# getCurrentPosition 方法，地理位置 API
+## `geoSuccess`函数，`getCurrentPosition`，234–236，239
+
+## `getContext`方法，在canvas上绘图，129
+
+# `getCurrentPosition`方法，地理位置API
+
 - 确定浏览器位置，233–236
-- 使用 PositionOptions 确定距离，243–249
+
+- 使用`PositionOptions`确定距离，243–249
+
 - 位置隐私，237
+
 - 映射位置，237–243
+
 - 概述，233
 
-## getData 属性，DataTransfer，320
+## `getData`属性，`DataTransfer`，320
 
-## getDepartments 函数，数据库存储，288
+## `getDepartments`函数，数据库存储，288
 
-## getGroceryItems 函数，数据库存储，288，290–292
+## `getGroceryItems`函数，数据库存储，288，290–292
 
-# getItem 方法
-- sessionStorage，263–264
-- sessionStorage 和 localStorage，262
+# `getItem`方法
 
+- `sessionStorage`，263–264
 
+- `sessionStorage`和`localStorage`，262
 
-getTimeStamp 函数，Web Worker，304–305
+`getTimeStamp`函数，Web Worker，304–305
 
 GitHub，228
 
-术语表，使用 `dl` 创建，43
+术语表，使用`dl`创建，43
 
 Google
 
-Chrome。参见 Chrome
-字体目录，79–80
-HTML5 与视频编解码器，165–166
+Chrome。参见Chrome
 
-Google Maps API V3 服务
+
+
+# 字体目录
+
+79–80
+
+# HTML5 与视频编解码器
+
+165–166
+
+# Google Maps API V3 服务
+
 地理位置 API 与，232
-getCurrentPosition，237–243
-PositionOptions，244–249
-watchPosition，250–257
+
+`getCurrentPosition`，237–243
+
+`PositionOptions`，244–249
+
+`watchPosition`，250–257
 
 Grab Tweets 按钮，推文通知，355
 
-grabTweets 函数，349
+`grabTweets` 函数，349
 
-渐变生成器，83
+# 渐变生成器
 
-渐变
+83
+
+## 渐变
+
 添加到形状，137–138
+
 具有多重背景和 CSS3 的按钮，80–83
+
 Canvas 工具，135
 
 格里高利历，34–35
 
-网格系统，Canvas，130–134
+## 网格系统，Canvas
 
-杂货清单页面，数据库存储，287–295
+130–134
 
-内容分组，12–14
+# 杂货清单页面，数据库存储
 
-标题分组，7–8
+287–295
 
-导航分组，9–10
+## 内容分组
 
-分组或文本级元素。另见 元素，现有元素的变更
-使用 `address` 的联系信息，37–38
+12–14
+
+## 标题分组
+
+7–8
+
+## 导航分组
+
+9–10
+
+## 分组或文本级元素。另见元素，现有元素的变更
+
+使用`address`的联系信息，37–38
+
 使用评论创建文章页面，51–54
-使用 `time` 表示日期和时间，34–35
-`figure` 和 `figcaption`，31–34
-使用 `mark` 高亮文本，38
-使用 `s` 显示不准确/无关内容，39
-使用 `details` 进行切换，35–37
+
+使用`time`表示日期和时间，34–35
+
+`figure`和`figcaption`，31–34
+
+使用`mark`高亮文本，38
+
+使用`s`显示不准确/无关内容，39
+
+使用`details`进行切换，35–37
+
 使用微数据，47–49
+
 使用 WAI-ARIA，49–51
+
 将链接包裹在元素周围，47
 
-growBars 函数，157，159–161
+`growBars`函数，157，159–161
 
 # H
 
 H.264 编解码器（MPEG-4），165–166
 
-handleCapture 函数，HTML Media Capture，399–401
+`handleCapture`函数，HTML Media Capture，399–401
 
-handleDragOver 函数，多个文件，362–364，366
+`handleDragOver`函数，多个文件，362–364，366
 
-handleFile 函数
+## `handleFile`函数
+
 获取文件属性，360–361
+
 解析 CSV 文件，374–375，378–379
 
-handleFileDrop 函数，多个文件，362–363，366
+`handleFileDrop`函数，多个文件，362–363，366
 
-handleFiles 函数，图像预览，368–369，371
+`handleFiles`函数，图像预览，368–369，371
 
 哈希地址方法，History API，228
 
-hashChange 事件，History API，228
+`hashChange`事件，History API，228
 
-`header` 元素
+## `header`元素
+
 创建文档大纲，21
+
 创建新闻主页，23–25
+
 创建搜索结果页，27–28
+
 创建站点页头，5–7
-使用 `hgroup` 分组标题，7–8
-内部的 `nav` 元素，9
 
-标题
+使用`hgroup`分组标题，7–8
+
+内部的`nav`元素，9
+
+## 标题
+
 文档大纲，21
-使用 `hgroup` 分组，7–8
-页面上的多个 `header` 元素，6–7
 
-`height` 值，`video` 元素，167
+使用`hgroup`分组，7–8
 
-`hgroup` 元素
+页面上的多个`header`元素，6–7
+
+`height`值，`video`元素，167
+
+## `hgroup`元素
+
 分组标题，7–8
+
 制作文档大纲，21
 
 Hickson, Ian "Hixie"，4，xxiv
 
-`high` 属性，`progress` 元素，113
+`high`属性，`progress`元素，113
 
 高亮文本，38
 
-历史记录
-更改浏览器历史记录。参见 浏览器历史记录
+## 历史记录
+
+更改浏览器历史记录。参见浏览器历史记录
+
 History API，207
+
 HTML 的历史，xxiii–xxv
 
-history.js 库，228
+`history.js`库，228
 
 托管站点，旧版浏览器的音频，189
 
-`:hover` 状态，CSS3 过渡，86–89
+`:hover`状态，CSS3 过渡，86–89
 
-`hr` 元素，46
+`hr`元素，46
 
 IE Print Protector，56
 
@@ -14583,106 +14946,165 @@ HTML Media Capture，398–402
 
 HTML4，输入类型，95–97
 
-HTML5
+## HTML5
+
 Boilerplate，57
+
 Cookbook 风格，xxvii–xxviii
+
 增强功能和新特性，xxvi
+
 标志，xxvii
+
 原则，xxv–xxvi
+
 可用性就绪，xxix
+
 第三方库，xxviii
+
 Web Forms 2.0 和 Web App 1.0 作为其一部分，xxiv
+
 XHTML 2 与之对比，xxiv
 
 HTML5DevelopersCookbook.com，xxvii
 
 HTML5Shiv，56
 
-图像查看器
+## 图像查看器
+
 创建历史记录条目，211–214
-其中的 `popstate` 事件，214–216
 
-图像
+其中的`popstate`事件，214–216
+
+## 图像
+
 添加标题，31–34
-添加悬停效果，88–89
-动画效果，151–155
-捕捉摄像头，399–402
-裁剪，145–146
-在 Canvas 中绘制，145–146
-用于在线网页，338–340
-使用 `readAsDataURL` 预览，368–372
 
-`i` 元素，45–46
+添加悬停效果，88–89
+
+动画效果，151–155
+
+捕捉摄像头，399–402
+
+裁剪，145–146
+
+在 Canvas 中绘制，145–146
+
+用于在线网页，338–340
+
+使用`readAsDataURL`预览，368–372
+
+`i`元素，45–46
 
 图标，xxvii
 
-`id` 样式，Canvas，129–130
+`id`样式，Canvas，129–130
 
-IE（Internet Explorer）。另见 浏览器支持
+## IE（Internet Explorer）。另见浏览器支持
+
 旧版浏览器中的音频，189–190
+
 CSS 兼容性，56–57
+
 支持 HTML5，55
+
 使用 Selectivizr 实现新的 CSS 选择器，72
 
-`img` 标签，使用 `figure`/`figcaption` 元素代替，32
+`img`标签，使用`figure`/`figcaption`元素代替，32
 
-`importScripts` 命令，推文通知，349，353，355–356
+`importScripts`命令，推文通知，349，353，355–356
 
-不准确内容，使用 `s` 元素显示，39
+不准确内容，使用`s`元素显示，39
 
 IndexedDB API，数据库存储，260，283–286
 
-init 函数
+## `init`函数
+
 创建水平仪，404–408
+
 创建数据库存储，287–288
+
 使用 Canvas 绘制多边形，140
+
 用于会话存储，263–264
+
 流式收音机播放器，199，202，205
+
 通过 Web Socket 通话，299
 
-initGraph 函数，动画化垂直柱状图，155，157，160–161
+`initGraph`函数，动画化垂直柱状图，155，157，160–161
 
-initMap 函数，watchPosition，251–252，255–256
+`initMap`函数，`watchPosition`，251–252，255–256
 
-initNoteBoard 函数，本地存储，276–277，281
+`initNoteBoard`函数，本地存储，276–277，281
 
-initPage 函数，数据库存储，288
+`initPage`函数，数据库存储，288
 
-initShoppingDb 函数，数据库存储，287，289–290，293
+`initShoppingDb`函数，数据库存储，287，289–290，293
 
-输入类型
+## 输入类型
+
 颜色，107–108
+
 联系表单，97–101
+
 日期，103–104
+
 日期时间，102–103
+
 本地日期时间，103
+
 电子邮件，98–99
+
 HTML4，95–97
+
 利用 jQuery 替换日历，59–62
+
 月份，104
+
 多个条目，115–116
+
 数字，105–106
+
 范围，106–107
+
 搜索，100
+
 搜索表单，101–102
+
 注册表单，122–125
+
 电话，99
+
 时间，104
+
 URL，100
+
 周，104–105
 
-接口
+## 接口
+
 File API，359
+
 文件写入器，381
-FileEntry，381
-FileList，359–367
-FileReader。参见 FileReader 接口
-FileSaver，381
-FileSystem，381
-FileWriter，381
-Notification，341–342
-NotificationCenter，341–342
-Worker，303
+
+`FileEntry`，381
+
+`FileList`，359–367
+
+`FileReader`。参见`FileReader`接口
+
+`FileSaver`，381
+
+`FileSystem`，381
+
+`FileWriter`，381
+
+`Notification`，341–342
+
+`NotificationCenter`，341–342
+
+`Worker`，303
 
 中级食谱，412–413，xxviii
 
@@ -14692,66 +15114,92 @@ Internet Explorer。参见 IE（Internet Explorer）
 
 交点，Canvas 网格，134
 
-`:invalid` 类，CSS3，121
+`:invalid`类，CSS3，121
 
-`INVALID_ARGUMENT_ERROR` 代码，Messaging API，397
+`INVALID_ARGUMENT_ERROR`代码，Messaging API，397
 
-`IO_ERROR` 代码，Messaging API，397
+`IO_ERROR`代码，Messaging API，397
 
-iOS Safari。参见 浏览器支持
+iOS Safari。参见浏览器支持
 
 IP 地址位置挑战，231
 
-iPhone，76。另见 浏览器支持
+iPhone，76。另见浏览器支持
 
-无关内容，使用 `s` 元素显示，39
+无关内容，使用`s`元素显示，39
 
-`itemid` 属性，微数据，48
+`itemid`属性，微数据，48
 
-`itemprop` 属性，微数据，48
+`itemprop`属性，微数据，48
 
-`itemref` 属性，微数据，48
+`itemref`属性，微数据，48
 
-`itemscope` 属性，微数据，48
+`itemscope`属性，微数据，48
 
-`itemtype` 属性，微数据，48
+`itemtype`属性，微数据，48
 
-设备数据集成。参见 设备数据，集成
+## 设备数据集成。参见设备数据，集成
 
-接口
+## 接口
+
 基础用户界面模块，CSS3，120–121
-BlobBuilder，381
-Connection，397
-ContactField，392，395
-Contacts，391–395
-DeviceAcceleration，404
-DeviceRotationRate，404
-目录和系统，381
-DirectoryEntry，381
-Entry，381
-File，359–362
 
-JavaScript
+`BlobBuilder`，381
+
+`Connection`，397
+
+`ContactField`，392，395
+
+`Contacts`，391–395
+
+`DeviceAcceleration`，404
+
+`DeviceRotationRate`，404
+
+目录和系统，381
+
+`DirectoryEntry`，381
+
+`Entry`，381
+
+`File`，359–362
+
+## JavaScript
+
 构建 HTML5 起始文档，3
+
 创建自定义视频控件，184
+
 创建带字幕和隐藏字幕的视频，174–176
+
 从 JavaScript 在 Canvas 上绘图，129
+
 使用 Modernizr 和 JavaScript 进行功能检测，64–65
+
 使用 JavaScript 实现 Canvas，127–128
+
 用于 jQuery 日历小部件，61
+
 使 IE 兼容 HTML5，55–56
+
 使用 JavaScript 为手机设置样式，69
+
 用于在线网页，338–340
 
-jQuery 日历
+## jQuery 日历
+
 用作备用方案，59–62
+
 使用 Modernizr 作为检测工具，65–66
 
 jQuery 插件，带字幕和隐藏字幕的视频，174–176
 
-JSON
+## JSON
+
 列出电台和 URL，197，205
+
 推送带数据的页面，221–222，224
+
 使用开发者工具查看存储，265
 
 JSONP，Twitter REST API 与，348
@@ -14760,55 +15208,69 @@ JW Player，169，189–190
 
 # K
 
-`key` 方法，使用本地存储存储表单，271–275
+`key`方法，使用本地存储存储表单，271–275
 
-键/值对
+## 键/值对
+
 使用 Chrome 开发者工具查看，265–266
+
 基于源的安全性和，260
+
 用于会话存储和本地存储，261–262
+
 用于会话存储，263–264
+
 使用本地存储存储表单，271–275
+
 从会话存储设置样式，266–271
+
 用于 Web 存储，259–260
 
-`kind` 属性，带字幕和隐藏字幕的视频，173
+`kind`属性，带字幕和隐藏字幕的视频，173
 
 # L
 
 标签，使用微数据添加，47–49
 
-地标角色部分，ARIA
+## 地标角色部分，ARIA
+
 标记带评论的文章页面，51–54
+
 概述，49–51
 
 语言，日历上的日期时间控件，103
 
-`lastModifiedDate` 属性，File API，359，362
+`lastModifiedDate`属性，File API，359，362
 
 `lastTweetId`，推文通知，355
 
-纬度坐标
+## 纬度坐标
+
 地理位置 API，232
-getCurrentPosition，242
-PositionOptions，244–249
+
+`getCurrentPosition`，242
+
+`PositionOptions`，244–249
+
 逆向地理编码，232
-watchPosition，253，255–256
+
+`watchPosition`，253，255–256
 
 图层，在 Canvas 中，150
 
 法律问题，字体服务，79–80
 
-`legend` 元素，32
+`legend`元素，32
 
-`length` 属性，表单的本地存储，271–272
+`length`属性，表单的本地存储，271–272
 
-`lengthComputable` 属性，`onprogress` 事件，374，377，379
+`lengthComputable`属性，`onprogress`事件，374，377，379
 
 库，228，xxviii
 
-许可协议，在 `footer` 内，18
+许可协议，在`footer`内，18
 
-`line` 方法，绘制 Canvas 网格，130–133
+`line`方法，绘制 Canvas 网格，130–133
 
 直线工具，Canvas，134
 
@@ -14816,148 +15278,195 @@ watchPosition，253，255–256
 
 线条，在 Canvas 中绘制，138–139
 
-链接
-在 `footer` 元素内，19
+## 链接
+
+在`footer`元素内，19
+
 包裹在元素周围，47
 
-`list` 属性，`datalist` 元素，110–111
+`list`属性，`datalist`元素，110–111
 
-`loaded` 属性，`onprogress` 事件，374
+`loaded`属性，`onprogress`事件，374
 
-`loadeddata` 事件监听器，自定义视频控件，185
+`loadeddata`事件监听器，自定义视频控件，185
 
-`loadPages` 函数，页面历史记录，219–220
-
-
+`loadPages`函数，页面历史记录，219–220
 
 ## 本地文件
 
 创建，335–337
+
 引用，335
+
 使用在线网页，337–340
 
-**本地文件**
+## 本地文件
+
 创建，382–388
+
 File API 扩展规范，381–382
+
 File API 概述，359–360
-FileReader 接口，367–368
+
+`FileReader`接口，367–368
+
 获取文件属性，360–362
+
 解析 CSV 文件，373–380
+
 预览图像，368–372
+
 处理多个文件，362–367
 
-**“Map Me”按钮**，237–238, 241
+“Map Me”按钮，237–238, 241
 
-**映射位置，使用 getCurrentPosition**，237–243
+映射位置，使用`getCurrentPosition`，237–243
 
-**mark 元素**，高亮文本，38
+`mark`元素，高亮文本，38
 
-**max 属性**
+## `max`属性
+
 限制表单条目，118
+
 数字输入类型，105
-progress 元素，111–112, 113
+
+`progress`元素，111–112, 113
+
 范围输入类型，105–106
+
 限制部件的日期或时间，104–105
 
-**本地存储**
+## 本地存储
+
 捕获其中的事件，275–283
+
 键/值对，261–262
+
 基于源的安全策略，260
+
 会话存储与之对比，259
+
 使用其存储表单，271–275
+
 网页数据库存储与之对比，284
 
-**max-device-width, CSS3 媒体查询**，71–72
+`max-device-width`，CSS3 媒体查询，71–72
 
-**max-width, CSS3 媒体查询**，71
+`max-width`，CSS3 媒体查询，71
 
-**maximumAge, PositionOptions**，243
+`maximumAge`，`PositionOptions`，243
 
-**测量，使用 meter 元素**，112–113
+测量，使用`meter`元素，112–113
 
-**位置感知。参见 Geolocation API**
+位置感知。参见 Geolocation API
 
-**标志**
-在 footer 元素内，18
-在 header 元素内，5
+## 标志
+
+在`footer`元素内，18
+
+在`header`元素内，5
+
 HTML5 与之相关，xxvii
 
-**媒体 API**
+## 媒体 API
+
 音频，192–193
+
 视频，177
 
-**媒体捕获。参见 HTML Media Capture**
+媒体捕获。参见 HTML Media Capture
 
-**CSS3 媒体查询**
+## CSS3 媒体查询
+
 浏览器支持，70
+
 组合不同的查询，71–72
+
 为新闻网站精简 HTML，72–73
+
 默认屏幕布局，73–74
+
 示例，70
+
 在 CSS 文件内，70–71
+
 概述，69–70
+
 减小的屏幕尺寸，74–75
+
 选择器，72
+
 合理使用，76
+
 用于智能手机，75–76
+
 定位 iPhone 和 Android 设备，76–77
 
-**经度坐标**
+## 经度坐标
+
 Geolocation API，232
-getCurrentPosition，242
-PositionOptions，244–249
+
+`getCurrentPosition`，242
+
+`PositionOptions`，244–249
+
 反向地理编码中，232
-watchPosition，253, 255–256
 
-**loop 属性**
-audio 元素，190
-video 元素，172
+`watchPosition`，253, 255–256
 
-**low 属性, progress 元素**，113
+## `loop`属性
 
-## M
+`audio`元素，190
 
-**清单文件**
+`video`元素，172
+
+`low`属性，`progress`元素，113
+
+# M
+
+## 清单文件
+
 应用缓存 API，340–341
+
 其中捕获的应用缓存文件，334
 
-nextExhibit 函数，将页面添加到历史记录，431
+`nextExhibit`函数，将页面添加到历史记录，431
 
-MESSAGE_SIZE_EXCEEDED 代码, Messaging API, 397
+`MESSAGE_SIZE_EXCEEDED`代码，Messaging API，397
 
 多媒体 API，177
 
 Messaging API，396–397
 
-multiple 属性, 网页表单条目，115–116
+`multiple`属性，网页表单条目，115–116
 
-metadata 属性, audio 元素，190
+`metadata`属性，`audio`元素，190
 
-多个条目, 网页表单，115–116
+多个条目，网页表单，115–116
 
-metadata 值, kind 属性，173
+`metadata`值，`kind`属性，173
 
-myLocation, getCurrentPosition，234
+`myLocation`，`getCurrentPosition`，234
 
-meter 元素, 使用其进行测量，112–113
+`meter`元素，使用其进行测量，112–113
 
 # N
 
-Micro-library, Modernizr，63
+Micro-library，Modernizr，63
 
-微数据, 添加语义信息，47–49
+微数据，添加语义信息，47–49
 
-name 属性, File API，359, 362
+`name`属性，File API，359, 362
 
-### nav 元素
+## `nav`元素
 
-微格式, 扩展 HTML，49
+微格式，扩展 HTML，49
 
 创建导航，8–10
 
-MIME 类型, HTML5 视频开发，169
+MIME 类型，HTML5 视频开发，169
 
-### min 属性
+## `min`属性
 
 限制表单条目，118
 
@@ -14965,47 +15474,49 @@ MIME 类型, HTML5 视频开发，169
 
 数字输入类型，105
 
-### 导航
+## 导航
 
-progress 元素，113
+`progress`元素，113
 
-用于导航的 header 元素，5–7
+用于导航的`header`元素，5–7
 
-使用 nav 元素。参见 nav 元素
+使用`nav`元素。参见`nav`元素
 
 限制部件的日期或时间，104–105
 
-Navigator 地理定位对象，235
+`Navigator`地理定位对象，235
 
-移动浏览, 用于其的 CSS3 媒体查询，69–76
+移动浏览，用于其的 CSS3 媒体查询，69–76
 
-### 嵌套元素
+## 嵌套元素
 
-article 元素，11
+`article`元素，11
 
-Modernizr
+## Modernizr
 
 检测浏览器功能，62–66
 
-aside 元素，16–17
+`aside`元素，16–17
 
 加载跨浏览器填充脚本，66–67
 
-strong 元素，45
+`strong`元素，45
 
 Network Information API，397–398
 
-month 输入类型, 日历，104
+`month`输入类型，日历，104
 
-NETWORK 部分, 清单文件，336–337
+`NETWORK`部分，清单文件，336–337
 
-mouseclick 事件, CSS 过渡，86–89
+`mouseclick`事件，CSS 过渡，86–89
 
-### 新闻项, 标记，11–12
+## 新闻项，标记
 
-mouseover 事件
+11–12
 
-### 新闻页面
+`mouseover`事件
+
+## 新闻页面
 
 CSS 过渡，86–89
 
@@ -15013,147 +15524,169 @@ CSS 过渡，86–89
 
 与画布交互，155
 
-使用 section 创建，13–14
+使用`section`创建，13–14
 
-moveGear 函数, 动画图像，152–155
+`moveGear`函数，动画图像，152–155
 
-### 新闻网站
+## 新闻网站
 
 为其精简 HTML，72–73
 
-nextState 函数, 更改历史记录，217
+`nextState`函数，更改历史记录，217
 
-注意事项, 本地存储事件，275–283
+注意事项，本地存储事件，275–283
 
-NOT_FOUND_ERR, FileReader，373, 378
+`NOT_FOUND_ERR`，`FileReader`，373, 378
 
-### Notification API
+## Notification API
 
 创建推文通知页面，347–356
+
 显示简单通知，344–347
+
 概述，341–343
 
-Notification 接口，341–342
+`Notification`接口，341–342
 
-NotificationCenter 接口，341–342
+`NotificationCenter`接口，341–342
 
-NOT_READABLE_ERR, FileReader，373, 378
+`NOT_READABLE_ERR`，`FileReader`，373, 378
 
-NOT_SUPPORTED_ERROR, Messaging API，397
+`NOT_SUPPORTED_ERROR`，Messaging API，397
 
-noupdate 事件, 应用缓存 API，341
+`noupdate`事件，应用缓存 API，341
 
-novalidate 属性, 限制表单条目，119
+`novalidate`属性，限制表单条目，119
 
-nth-child 选择器, CSS3，72
+`nth-child`选择器，CSS3，72
 
-nth-of-type 选择器, CSS3，72
+`nth-of-type`选择器，CSS3，72
 
-nullHandler 函数, 数据库存储，287
+`nullHandler`函数，数据库存储，287
 
-number 输入类型，105–106, 122–125
+`number`输入类型，105–106, 122–125
 
 数字选择器，105–106
 
 # O
 
-obsolete 事件, 应用缓存 API，341
+`obsolete`事件，应用缓存 API，341
 
-offline 事件, Network Information API，398
+`offline`事件，Network Information API，398
 
-离线, 网页，337–340
+离线，网页，337–340
 
-.ogg 文件 (Ogg Vorbis), 音频编码
-- audio 元素问题，188
+`.ogg`文件（Ogg Vorbis），音频编码
+
+- `audio`元素问题，188
+
 - 节拍混音器，193–197
+
 - 流式广播，197–206
 
 Ogg Theora 编解码器，165
 
-### ol 元素
+## `ol`元素
 
 变更，40–42
+
 标记带评论的文章页面，53
 
-onbatterystatus 属性, Battery Status 事件，398
+`onbatterystatus`属性，Battery Status 事件，398
 
-### onchange 事件
+## `onchange`事件
 
 通过文件输入捕获图片，399–402
+
 获取文件属性，360–361
+
 处理多个文件，362, 365
+
 流式广播播放器，205
 
-### onclose 事件
+## `onclose`事件
 
 推文通知，352, 355–356
+
 WebSocket API，298–301
 
-onconnect 事件, 共享 Web Worker，317
+`onconnect`事件，共享 Web Worker，317
 
-onDbError 函数, 数据库存储，287, 290–294
+`onDbError`函数，数据库存储，287, 290–294
 
-ondisplay 事件, 推文通知，348, 352, 355–356
 
-ondragstart 属性, 拖放 API，320, 324
 
-ondrop 事件, dropzone 属性，320
+`ondisplay`事件，推文通知，348，352，355–356
 
-### onerror 事件
+`ondragstart`属性，拖放 API，320，324
 
-推文通知，352, 355–356
+`ondrop`事件，`dropzone`属性，320
+
+### `onerror`事件
+
+推文通知，352，355–356
+
 双向通信，308–309
+
 Web Workers API，303
+
 WebSocket API，298–302
 
-online 事件, Network Information API，398
+`online`事件，Network Information API，398
 
-onload FileReader 事件, 预览图像，368, 370, 372
+`onload FileReader`事件，预览图像，368，370，372
 
-### onmessage 事件
+### `onmessage`事件
 
 创建 Web Worker，307
+
 利用共享 Web Worker，317
-推文通知，352, 355
+
+推文通知，352，355
+
 Web Workers API，303
+
 WebSocket API，298–302
 
-onmousedown 事件, 拖放 API，324
+`onmousedown`事件，拖放 API，324
 
-onopen 事件, WebSocket API，298–301
+`onopen`事件，WebSocket API，298–301
 
-onprogress 事件, FileReader，374
+`onprogress`事件，`FileReader`，374
 
-onStorageEvent 函数, 本地存储，276–277, 282
+`onStorageEvent`函数，本地存储，276–277，282
 
-open 属性, details，35–36
+`open`属性，`details`，35–36
 
-postMessage 函数, 433
+`postMessage`函数，433
 
-**openDatabase 方法, Web SQL Database API**，284–285
+`openDatabase`方法，Web SQL Database API，284–285
 
 - 简单通知，344–346
-- 推文通知，349–351, 353, 355
 
-**openShoppingDb 函数**，287, 289
+- 推文通知，349–351，353，355
 
-**OpenType PS (.otf) 字体文件格式**，78
+`openShoppingDb`函数，287，289
 
-**Opera**，59–60。*另见* 浏览器支持
+`OpenType PS (.otf)`字体文件格式，78
 
-**optimum 属性, progress 元素**，113
+Opera，59–60。*另见*浏览器支持
 
-**PERMISSIONS_DENIED_ERROR, Messaging API**，397
+`optimum`属性，`progress`元素，113
 
-**PERMISSION_UNAVAILABLE 错误**
+`PERMISSIONS_DENIED_ERROR`，Messaging API，397
 
-**options 参数, getCurrentPosition**，233
+`PERMISSION_UNAVAILABLE`错误
 
-- getCurrentPosition，241
-- PositionOptions，247
-- watchPosition，254
+`options`参数，`getCurrentPosition`，233
 
-**options 参数, watchPosition**，250
+- `getCurrentPosition`，241
+
+- `PositionOptions`，247
+
+- `watchPosition`，254
+
+`options`参数，`watchPosition`，250
 
 ### 有序列表，40–41
 
@@ -15163,316 +15696,370 @@ postMessage 函数, 433
 
 ### 占位符文本，表单，109–110
 
-**.otf (OpenType PS) 字体文件格式**，78
+`.otf (OpenType PS)`字体文件格式，78
 
 ### 大纲，制作文档，19–21
 
 ### 播放按钮
 
-- 节拍混音器，194, 197
+- 节拍混音器，194，197
+
 - 自定义视频控件，178
 
-**Outliner 扩展图标, HTML5**，19–21
+`Outliner`扩展图标，HTML5，19–21
 
-**output 元素, 显示结果**，108–109
+`output`元素，显示结果，108–109
 
-### 播放/暂停按钮, 流式广播，198, 200–202, 205–206
+### 播放/暂停按钮，流式广播，198，200–202，205–206
 
 # P
 
-### 播放速率, 视频，181–183, 185
+### 播放速率，视频，181–183，185
 
 ### 页面元素
 
-### 策略, 浏览器，225
+### 策略，浏览器，225
 
-内容。*参见* 分组或文本级元素
-结构性。*参见* 结构性元素, 新
+内容。*参见*分组或文本级元素
+
+结构性。*参见*结构性元素，新
 
 ### 填充脚本，66–67
 
-### 段落分隔, hr 元素，46
+### 段落分隔，`hr`元素，46
 
-### 多边形, 绘制，139–142
+### 多边形，绘制，139–142
 
-### 解析 CSV 文件, 使用 readAsText，373–380
+### 解析 CSV 文件，使用`readAsText`，373–380
 
-### popstate 事件
+### `popstate`事件
 
-### 路径工具, 画布，134
+### 路径工具，画布，134
 
 - 为网站添加/修改历史记录，207
+
 - 更改页面历史记录，218–220
+
 - 在图像查看器中，214–216
+
 - 推送带数据的页面，221–225
+
 - 使用其检索新条目的数据参数，208
+
 - 测试历史记录安全性，225
 
 ### 路径
 
 - 使用画布绘制多边形，139–142
+
 - 使用画布绘制，138–139
 
-**pattern 属性, 验证规则**，117
+`pattern`属性，验证规则，117
 
-**pause 方法, 节拍混音器**，194, 197
+`pause`方法，节拍混音器，194，197
 
-**position 返回对象, 浏览器位置**，236
+`position`返回对象，浏览器位置，236
 
-**PENDING_OPERATION_ERROR, Messaging API**，397
+`PENDING_OPERATION_ERROR`，Messaging API，397
 
-**PositionOptions 方法, Geolocation API**，243–249
+`PositionOptions`方法，Geolocation API，243–249
 
-**PERMISSION_DENIED 错误**
+`PERMISSION_DENIED`错误
 
-**posOptions, getCurrentPosition**，247, 249
+`posOptions`，`getCurrentPosition`，247，249
 
-**poster 属性, video 元素**，170–171
+`poster`属性，`video`元素，170–171
 
-postToWorker 函数, 双向通信，308–310
+`postToWorker`函数，双向通信，308–310
 
-**preload 属性, audio 元素**，190–191
+`preload`属性，`audio`元素，190–191
 
-**preload 属性, video 元素**，171
+`preload`属性，`video`元素，171
 
-### preventDefault 方法
+### `preventDefault`方法
 
 - 调试拖放，333
-- 跨 div 拖放，325
-- 利用事件和 dataTransfer，328, 332–333
 
-**progress 元素, 跟踪任务完成情况**，111–112
+- 跨`div`拖放，325
 
-**progress 事件, 应用缓存 API**，341
+- 利用事件和`dataTransfer`，328，332–333
+
+`progress`元素，跟踪任务完成情况，111–112
+
+`progress`事件，应用缓存 API，341
 
 ### 属性
 
 - 音频媒体 API，192–193
+
 - 客户端存储类型及其，260
+
 - 使用 Modernizr 检测，62–63
+
 - File API，359
-- sessionStorage 和 localStorage，261
+
+- `sessionStorage`和`localStorage`，261
+
 - 视频媒体 API，177
 
-**pubdate 属性, time 元素**，34
+`pubdate`属性，`time`元素，34
 
-**pushPage 函数, 历史记录安全性**，225–227
+`pushPage`函数，历史记录安全性，225–227
 
-### pushState 方法
+### `pushState`方法
 
 - 添加到历史记录，208–211
+
 - 更改页面历史记录，218–220
+
 - 定义，207
+
 - 在图像查看器中，216
+
 - 推送带数据的页面，221–225
+
 - 测试历史记录安全性，225–228
 
 # Q
 
-**quadraticCurveTo, 绘制曲线**，143
+`quadraticCurveTo`，绘制曲线，143
 
-**引号, 语法**，3
+引号，语法，3
 
 # R
 
-**径向渐变**，81–83, 137–138
+径向渐变，81–83，137–138
 
-### range 输入类型
+### `range`输入类型
 
 - 创建注册表单，122–125
+
 - 创建滑块，106–107
+
 - 自定义视频控件怪癖，186
 
-**RDFa, 扩展 HTML**，49
+`RDFa`，扩展 HTML，49
 
-**readAsDataURL, 预览图像**，368–372
+`readAsDataURL`，预览图像，368–372
 
-**readAsText 方法, 解析 CSV 文件**，373–380
+`readAsText`方法，解析 CSV 文件，373–380
 
-**readFromFile 函数, 本地文件**，383, 385–387
+`readFromFile`函数，本地文件，383，385–387
 
-**readyState 属性值, WebSocket**，298
+`readyState`属性值，WebSocket，298
 
-*readyState* 值, 自定义视频控件，181, 184
+`readyState`值，自定义视频控件，181，184
 
 ### 食谱
 
 - 高级，413–414
+
 - 初级，411–412
+
 - 本书使用的食谱风格，xxvii–xxviii
+
 - 中级，412–413
 
-**矩形工具, 画布**，134
+矩形工具，画布，134
 
-**矩形, 绘制**，135–136
+矩形，绘制，135–136
 
-**正则表达式, 编写验证规则**，117
+正则表达式，编写验证规则，117
 
-**移除数据库按钮**，287
+移除数据库按钮，287
 
-**已移除元素, 来自 HTML5**，46–47
+已移除元素，来自 HTML5，46–47
 
-**removeDatabase 函数**，288, 292–293
+`removeDatabase`函数，288，292–293
 
-**removeFile 函数, 本地文件**，383, 385
+`removeFile`函数，本地文件，383，385
 
-**removeItem 方法, 从会话存储设置样式**，266, 271
+`removeItem`方法，从会话存储设置样式，266，271
 
-**removeNote 函数, 本地存储**，276, 279–280
+`removeNote`函数，本地存储，276，279–280
 
-**repeat 参数, 裁剪图像**，146
+`repeat`参数，裁剪图像，146
 
-### replaceState 方法
+### `replaceState`方法
 
 - 更改历史记录，216–218
+
 - 更改页面历史记录，218–220
+
 - 定义，207
+
 - 推送带数据的页面，221–225
-- 测试历史记录安全性，225, 228
 
-**requestPermission 方法, Notification API**，345–346
+- 测试历史记录安全性，225，228
 
+`requestPermission`方法，Notification API，345–346
 
+`setItem`方法，客户端存储 435
 
-setItem 方法，客户端存储 435
+必填属性
 
-**必填属性**
 - 创建注册表单，122–125
+
 - 电子邮件输入类型，98–99
+
 - 表单验证，95，116
 
 - 内容分组，12–14
+
 - 创建文档大纲，21
-- 使用 article 元素对比，14–15
+
+- 使用`article`元素对比，14–15
 
 ## 安全
+
 - 浏览器缓存，334
+
 - 客户端数据存储问题，260–261
+
 - File API，360
+
 - Notification API 权限，343
+
 - 测试历史记录，225–228
 
-**:required 类，CSS3，121**
+`:required`类，CSS3，121
 
-**resetGroceryList 方法，数据库存储，288，292–293**
+`resetGroceryList`方法，数据库存储，288，292–293
 
-**重置，CSS，57**
+重置，CSS，57
 
-**SECURITY_ERR，FileReader，373，378**
+`SECURITY_ERR`，`FileReader`，373，378
 
-**restore 方法，canvas，151**
+`restore`方法，`canvas`，151
 
-**results 属性，搜索输入类型，101**
+`results`属性，搜索输入类型，101
 
-**select 元素，流媒体广播播放器，200–201，205**
+`select`元素，流媒体广播播放器，200–201，205
 
-**反向地理编码，232**
+反向地理编码，232
 
-**reversed 属性，ol 元素，40–41，53**
+`reversed`属性，`ol`元素，40–41，53
 
-**Selectivizr，72**
+Selectivizr，72
 
-**选择器，新的 CSS3，72**
+选择器，新的 CSS3，72
 
-**reverseGeoCode 函数，PositionOptions，244–245**
+`reverseGeoCode`函数，`PositionOptions`，244–245
 
-**语义信息，通过 Microdata 添加，47–49**
+语义信息，通过 Microdata 添加，47–49
 
-**倒带按钮，自定义视频控件，186**
+倒带按钮，自定义视频控件，186
 
-**rotate 函数，CSS transform 属性，84–86**
+`rotate`函数，CSS `transform`属性，84–86
 
-**sendAllConnections 函数，共享 Web Worker，315–316**
+`sendAllConnections`函数，共享 Web Worker，315–316
 
-**rotate 方法，canvas，150–151，154**
+`rotate`方法，`canvas`，150–151，154
 
-**sendMessage 方法，Messaging API，396–397**
+`sendMessage`方法，Messaging API，396–397
 
-**规则，编写验证，117**
+规则，编写验证，117
 
 ## S
 
-**sendNumber 函数，共享 Web Worker，313，317**
+`sendNumber`函数，共享 Web Worker，313，317
 
-**s 元素，39**
+`s`元素，39
 
-**Safari。请参阅 浏览器支持**
+Safari。请参阅浏览器支持
 
-**会话历史，207**
+会话历史，207
 
 ### 会话存储
+
 - 获取与设置，263–264
+
 - 键/值对，261–262
+
 - 本地存储对比，259
+
 - 基于源的安全机制，260
+
 - 运行示例，270
+
 - 设置样式，266–271
+
 - 使用 Chrome 开发者工具查看，265–266
+
 - Web 数据库存储对比，284
 
-**save 方法，canvas，151**
+`save`方法，`canvas`，151
 
-**scale 函数，CSS transform 属性，86**
+`scale`函数，CSS `transform`属性，86
 
-**scale 方法，canvas，151**
+`scale`方法，`canvas`，151
 
-**脚本标签，推文通知，348**
+脚本标签，推文通知，348
 
 ### 搜索表单
-- 使用 input type="search" 创建，101–102
-- 使用 header 元素，5
+
+- 使用`input type="search"`创建，101–102
+
+- 使用`header`元素，5
 
 ### 会话
+
 - 跨会话数据库存储，260
+
 - 跨会话本地存储，259–260
 
-### search 输入类型
+### `search`输入类型
+
 - 创建搜索表单，101–102
-- 使用 autofocus，114–115
 
-**setData 属性，DataTransfer，320**
+- 使用`autofocus`，114–115
 
-**搜索结果页，25–29**
+`setData`属性，`DataTransfer`，320
 
-**setItem 方法，客户端存储，261–264**
+搜索结果页，25–29
 
-# setLocation 函数，PositionOptions
+`setItem`方法，客户端存储，261–264
 
-setLocation 函数，PositionOptions，244
+`setLocation`函数，`PositionOptions`，244
 
-### setPermission 函数
+### `setPermission`函数
+
 - Notification API，344–347
+
 - 推文通知，349
 
-setStation 函数，流媒体广播，197，201，205
+`setStation`函数，流媒体广播，197，201，205
 
 阴影效果，135
 
-shadowBlur 方法，形状，135–137
+`shadowBlur`方法，形状，135–137
 
-shadowColor 方法，形状，135–137
+`shadowColor`方法，形状，135–137
 
-shadowOffsetX 方法，形状，135–137
+`shadowOffsetX`方法，形状，135–137
 
-shadowOffsetY 方法，形状，135–137
+`shadowOffsetY`方法，形状，135–137
 
 形状，135，137–138
 
 共享 Web Worker，302，311–318
 
-shoppingdb 变量声明，数据库存储，287，289
+`shoppingdb`变量声明，数据库存储，287，289
 
-showDepartments 函数，数据库存储，288
+`showDepartments`函数，数据库存储，288
 
-showFile 函数，预览图像，368，370，372
+`showFile`函数，预览图像，368，370，372
 
-showGrid 函数，在 canvas 上绘制网格，131，133
+`showGrid`函数，在`canvas`上绘制网格，131，133
 
-showGroceryItems 函数，数据库存储，288，291，293–295
+`showGroceryItems`函数，数据库存储，288，291，293–295
 
 ### 侧边栏
-- 使用 aside 元素创建，15–17
-- 使用 nav 对导航进行分组，9–10
+
+- 使用`aside`元素创建，15–17
+
+- 使用`nav`对导航进行分组，9–10
+
 - 本地存储事件，275–283
 
 注册表单，121–125
@@ -15483,20 +16070,22 @@ showGroceryItems 函数，数据库存储，288，291，293–295
 
 站点条款和条件，在页脚内，17
 
-size 属性，File API，359，362
+`size`属性，File API，359，362
 
-skew 函数，CSS transform 属性，86
+`skew`函数，CSS `transform`属性，86
 
 滑块控件，106–107
 
-small 元素，44
+`small`元素，44
 
 智能手机，75–76
 
 Socket 连接。请参阅 WebSocket API
 
-### source 元素
+### `source`元素
+
 - 显示视频格式，166–167
+
 - 为所有浏览器启用音频，188–190
 
 规范，File API 扩展，381–382
@@ -15504,142 +16093,191 @@ Socket 连接。请参阅 WebSocket API
 精灵图，动画，147–150
 
 ### SQLite 数据库
+
 - 存储，260
+
 - 使用 Web 数据库存储购物清单，287
+
 - 基于 SQLite 的 Web SQL Database API，283–284
 
 正方形，绘制，135–136
 
-### src 属性
+### `src`属性
+
 - 音频元素，190
+
 - 视频元素，170
 
 ### 栈，历史
-- 使用 pushState 添加历史记录，207
+
+- 使用`pushState`添加历史记录，207
+
 - 更改页面历史，220
+
 - 定义，207
+
 - 替换当前历史状态，218
 
-start 属性，ol 元素，40–41
+`start`属性，`ol`元素，40–41
 
-startAnimation 函数，精灵图，147–149
+`startAnimation`函数，精灵图，147–149
 
-startWatch 函数，watchPosition，251，256
+`startWatch`函数，`watchPosition`，251，256
 
-startWorkerThread 函数，Web Worker，304–307
+`startWorkerThread`函数，Web Worker，304–307
 
-### stateInfo div
+### `stateInfo div`
+
 - 创建图像查看器，212–213
+
 - 在图像查看器中弹出状态，215–216
+
 - 历史状态的推入与弹出，216
+
 - 替换当前历史状态，217–218
 
-### step 属性
+### `step`属性
+
 - 限制表单输入项，118
+
 - 数字输入类型，105–106
+
 - 范围输入类型，105–106
 
-**stepDegrees 方法**，动画图像，154
+`stepDegrees`方法，动画图像，154
 
-**stopAnimation 函数**，精灵图，147–149
+`stopAnimation`函数，精灵图，147–149
 
-**存储**。请参阅 客户端存储
+存储。请参阅客户端存储
 
-**storageEvent 属性**，本地存储，275
+`storageEvent`属性，本地存储，275
 
 ### 流媒体音频，197–206
 
-**streamPlaying 函数**，流媒体广播，200–201，206
+`streamPlaying`函数，流媒体广播，200–201，206
 
-### stringify 方法，JSON
+### `stringify`方法，JSON
+
 - 更改页面历史，219
+
 - 在图像查看器中弹出状态，215
+
 - 推入带数据的页面，222，224
 
-**描边效果**，canvas 工具，135
+描边效果，`canvas`工具，135
 
-**stroke 方法**，canvas 线条，138
+`stroke`方法，`canvas`线条，138
 
-**strokeRec 方法**，矩形，136
+`strokeRec`方法，矩形，136
 
-**strokeStyle 方法**，形状，135–137
+`strokeStyle`方法，形状，135–137
 
-**strokeText 方法**，canvas，144
+`strokeText`方法，`canvas`，144
 
-**strong 元素**，44–45
+`strong`元素，44–45
 
 ## 结构元素，新的
-- article，11–12
-- article 对比 section，14–15
+
+- `article`，11–12
+
+- `article`对比`section`，14–15
+
 - 构建新闻页面，21–25
+
 - 构建搜索结果页，25–29
+
 - 构建入门文档，2–4
+
 - 使用 HTML5 Outliner 确保正确结构，19–21
-- 使用 nav 创建导航，8–10
-- 使用 aside 创建侧边栏，15–17
-- 使用 header 创建站点页头，5–7
-- footer，17–19
-- 使用 section 对内容分组，12–14
-- 使用 hgroup 对标题分组，7–8
+
+- 使用`nav`创建导航，8–10
+
+- 使用`aside`创建侧边栏，15–17
+
+- 使用`header`创建站点页头，5–7
+
+- `footer`，17–19
+
+- 使用`section`对内容分组，12–14
+
+- 使用`hgroup`对标题分组，7–8
+
 - 概述，1
+
 - 新元素的来源，4–5
 
 ## 样式化
+
 - 矩形和正方形，135–137
+
 - 从会话存储设置样式，266–271
+
 - 视频字幕，173–176
+
 - Web 表单，119–121
 
-**字幕，视频**，173–176
+字幕，视频，173–176
 
-### successCallback 参数
-- getCurrentPosition，233
-- watchPosition，250，251
+### `successCallback`参数
 
-**summary 元素**，在 details 元素内，35–36
+- `getCurrentPosition`，233
 
-**.svg (SVG) 字体文件格式**，78
+- `watchPosition`，250，251
 
-**swapCache 函数**，应用缓存 API，341
+`summary`元素，在`details`元素内，35–36
+
+`.svg (SVG)`字体文件格式，78
+
+`swapCache`函数，应用缓存 API，341
 
 ## 语法
+
 - HTML5 编写风格，3
+
 - XHTML 规则，xxiii
 
-**SYNTAX_ERR**，Web SQL Database API，286
+`SYNTAX_ERR`，Web SQL Database API，286
 
 # T
 
-**目录**，显示/隐藏，36–37
+目录，显示/隐藏，36–37
 
-**标签，HTML4**，62–66
+标签，HTML4，62–66
 
-**任务完成**，跟踪，111–112
+任务完成，跟踪，111–112
 
-### tel 输入类型
+### `tel`输入类型
+
 - 联系表单，99
+
 - 注册表单，122–125
 
-**terminateWorker 函数**，304–306
+`terminateWorker`函数，304–306
 
 ## 测试
+
 - 浏览器的 HTML5 功能支持，57–59
+
 - 历史记录安全，225–228
+
 - 通知，346
 
 ## 文本
-- 添加到 canvas，144
+
+- 添加到`canvas`，144
+
 - 表单占位符，109–110
 
-**text 输入类型**，96，122–125
+`text`输入类型，96，122–125
 
-**文本级元素**。请参阅 分组或文本级元素
+文本级元素。请参阅分组或文本级元素
 
-438 textReader，FileReader
-- textReader，FileReader，374–376
+`textReader`，`FileReader`，374–376
 
 ## 主题
+
 - 在会话存储中设置，266–270
+
 - 显示，268–270
 
 第三方库，HTML5，xxviii
@@ -15648,59 +16286,75 @@ startWorkerThread 函数，Web Worker，304–307
 
 时间控件，日历，101–105
 
-### time 元素
+### `time`元素
+
 - 日期和时间，34–35
+
 - 标记带评论的文章页面，53
 
-time 输入类型，日历，104
+`time`输入类型，日历，104
 
 时区，日历，103
 
 ### 超时
-- 通知，352，356
-- PositionOptions，243
 
-### TIMEOUT 错误代码
-- getCurrentPosition，241
+- 通知，352，356
+
+- `PositionOptions`，243
+
+### `TIMEOUT`错误代码
+
+- `getCurrentPosition`，241
+
 - Messaging API，397
-- PositionOptions，247
-- watchPosition，254
+
+- `PositionOptions`，247
+
+- `watchPosition`，254
 
 超时错误，Geolocation API，237
 
-时间戳，GetCurrentPosition，239
+时间戳，`GetCurrentPosition`，239
 
-### title 参数
-- pushState 方法，208–209
-- replaceState 方法，216–218
+### `title`参数
 
-切换，使用 details 元素，35–37
 
-工具，canvas，134
 
-toString 内置方法，查看会话存储，265
+- `pushState`方法，208–209
 
-total 属性，onprogress 事件，374
+- `replaceState`方法，216–218
+
+切换，使用`details`元素，35–37
+
+工具，`canvas`，134
+
+`toString`内置方法，查看会话存储，265
+
+`total`属性，`onprogress`事件，374
 
 汉诺塔游戏，325
 
-track 元素，173–174
+`track`元素，173–174
 
-transaction 方法，Web SQL Database API，284–285
+`transaction`方法，Web SQL Database API，284–285
 
 ## 变换
-- 用于变换的 canvas 工具，150–151
+
+- 用于变换的`canvas`工具，150–151
+
 - CSS3，84–89
 
 过渡，CSS3，84–89，94
 
-### translate 函数
-- canvas，151，154
-- CSS transform 属性，86
+### `translate`函数
 
-透明效果，canvas 工具，135
+- `canvas`，151，154
 
-.ttf (TrueType/OpenType) 字体文件格式，78
+- CSS `transform`属性，86
+
+透明效果，`canvas`工具，135
+
+`.ttf` (TrueType/OpenType) 字体文件格式，78
 
 TWEET 消息，推文通知，355–356
 
@@ -15710,13 +16364,13 @@ Twitter REST API，348
 
 Twitter，推文通知页面，348–356
 
-tworker，通知，349–350，353，355
+`tworker`，通知，349–350，353，355
 
-type 属性，Network Information API，397
+`type`属性，Network Information API，397
 
-type 属性，ol 元素，40–42
+`type`属性，`ol`元素，40–42
 
-type 属性，File API，359，362
+`type`属性，File API，359，362
 
 字体服务，CSS3，79–80
 
@@ -15724,88 +16378,117 @@ TypeKit 服务，80
 
 # U
 
-## UNKNOWN_ERROR 代码
-- getCurrentPosition，242
+## `UNKNOWN_ERROR`代码
+
+- `getCurrentPosition`，242
+
 - Messaging API，397
-- PositionOptions，247
-- watchPosition，254
+
+- `PositionOptions`，247
+
+- `watchPosition`，254
 
 无序列表，标记导航，8
 
-updateAverage 函数，共享 Web Worker，315–316
+`updateAverage`函数，共享 Web Worker，315–316
 
-updateNote 函数，本地存储，276–281
+`updateNote`函数，本地存储，276–281
 
-updateNoteBoard 函数，本地存储，276–281
+`updateNoteBoard`函数，本地存储，276–281
 
-updateready 事件，应用缓存 API，341
+`updateready`事件，应用缓存 API，341
 
 ### 更新
+
 - 通过清单文件更新缓存，337
+
 - Contact API 中的联系人更新，391
 
-updateStatus 函数，WebSocket API，299–301
+`updateStatus`函数，WebSocket API，299–301
 
 上传，多文件，115
 
 大写，语法编写风格，3
 
+`url` input type
 
-
-url input type
 contact form, 100
+
 sign-up form, 122–125
 
-## url parameter, pushState method, 208–209, 211
+## `url` parameter, `pushState` method, 208–209, 211
 
-## url parameter, replaceState method, 216–218
+## `url` parameter, `replaceState` method, 216–218
 
 ## URLs
-- 通过 pushState 添加到历史记录, 209–211
-- drawImage method 与 URLs, 145
+
+- 通过`pushState`添加到历史记录, 209–211
+
+- `drawImage` method 与 URLs, 145
+
 - History API 的先前用法, 207
+
 - 测试历史记录安全性, 225–228
 
 ## 用户输入，在 Web 表单上进行限制, 118–119
 
-### :valid class, CSS3, 121
+### `:valid` class, CSS3, 121
 
 ## 验证, HTML5 表单
-- email input type, 99
+
+- `email` input type, 99
+
 - 概述, 95
-- 使用 required 属性进行验证, 116
+
+- 使用`required`属性进行验证, 116
+
 - 编写自己的验证规则, 117
 
 ## 验证器, HTML5, 4
 
-## value 属性, progress 元素, 111–113
+## `value`属性, `progress`元素, 111–113
 
 ## vCard, Contact API, 391
 
 ## 验证网站, 67
 
-## 版本号, openDatabase method, 285
+## 版本号, `openDatabase` method, 285
 
 ## 垂直条形图，动画效果, 155–161
 
-## video 元素
+## `video`元素
+
 - 基本用法, 163–166
+
 - 浏览器兼容性, 164
+
 - 自定义视频控件, 178–186
+
 - 为所有浏览器启用视频, 166–167
+
 - HTML5 与视频编解码器, 165
+
 - 原生渲染视频, 163
+
 - 新属性, 170–173
+
 - 针对旧版浏览器, 167–169
 
 ## 使用 HTML5 嵌入视频
+
 - 自定义控件, 178–186
+
 - 为所有浏览器启用, 166–169
+
 - 媒体 API, 177
+
 - 新属性, 170–173
+
 - 概述, 163
+
 - 字幕和说明, 173–176
-- 使用 video 元素, 163–166
+
+- 使用`video`元素, 163–166
 
 ## 视频播放器，可下载, 186
 
@@ -15821,49 +16504,74 @@ sign-up form, 122–125
 
 ## VP8 (webM) 多媒体格式, 165–166
 
-## .vtt 文件 (WebVTT), 173–176
+## `.vtt`文件 (WebVTT), 173–176
 
 ## W3C 验证器, 4
 
 ## W3C (万维网联盟)
+
 - 开发 HTML5, xxiv
+
 - 开发 XHTML 1.0, xxiii
+
 - 设备 API 与策略工作组, 389–390
+
 - HTML5 徽标与 W3C, xxvii
 
 ## WAI-ARIA (Web 可访问性倡议 - 无障碍富互联网应用), 49–51
 
-## watchID 参数, clearWatch, 250
+## `watchID`参数, `clearWatch`, 250
 
-## watchPosition 方法, Geolocation API, 250–257
+## `watchPosition`方法, Geolocation API, 250–257
 
-## .wav 文件 (WAV) 音频编解码器, 188
+## `.wav`文件 (WAV) 音频编解码器, 188
 
 ## Web 可访问性倡议 - 无障碍富互联网应用 (ARIA), 49–51
 
 ## Web Applications 1.0, xxiv
 
 ## Web 表单
+
 - 允许多次输入, 115–116
+
 - 自动完成特性, 110–111
+
 - 日历和时间控件, 102–105
+
 - 拾色器, 107–108
+
 - 联系信息, 97–101
+
 - 自定义和样式化, 119–121
-- 使用 output 元素显示结果, 108–109
+
+- 使用`output`元素显示结果, 108–109
+
 - 错误消息, 121
+
 - HTML4 input types, 95–97
+
 - 页面加载时跳转到表单元素, 114–115
+
 - 限制用户输入, 118–119
-- 使用 meter 元素进行测量, 112–113
+
+- 使用`meter`元素进行测量, 112–113
+
 - 数字选择器, 105–106
+
 - 占位符文本, 109–110
+
 - 搜索表单, 101–102
+
 - 注册表单, 121–125
+
 - 滑块, 106–107
+
 - 使用本地存储进行存储, 271–275
+
 - 跟踪任务完成情况, 111–112
+
 - 验证, 95, 116
+
 - 验证规则, 117
 
 #### Web Forms 2.0, HTML 历史, xxiv
@@ -15875,37 +16583,55 @@ sign-up form, 122–125
 #### 离线网页, 337–340
 
 ## Web SQL Database API
+
 - 概述, 283–286
+
 - 用于杂货清单, 286–295
 
 ## Web 存储, HTML5 选项, 259–260
 
 ## Web worker
+
 - 利用 Web Worker 跟踪推文, 353–356
+
 - 推文通知, 349–353
 
 ## Web Workers API
+
 - 创建 web worker, 304–307
+
 - 定义, 297
+
 - 利用共享 web worker, 311–318
+
 - 最小化使用 web workers, 308
+
 - 通过线程进行通信, 302–304
+
 - 双向通信, 308–311
 
 ## WebKit 浏览器
+
 - CSS 动画, 89
+
 - 显示简单通知, 344
+
 - 渐变语法, 81
+
 - 输入类型与 WebKit, 61
+
 - 搜索输入类型, 101–102
+
 - 支持 Notification API, 341–343
 
-#### webkitEnterFullScreen 函数, 183, 185
+#### `webkitEnterFullScreen`函数, 183, 185
 
-#### webkitNotifications 属性, NotificationCenter 接口, 341
+#### `webkitNotifications`属性, `NotificationCenter`接口, 341
 
-#### webkitRequestFileSystem, Chrome 12
+#### `webkitRequestFileSystem`, Chrome 12
+
 - 创建本地文件, 383–388
+
 - 定义, 381
 
 #### webM (VP8) 多媒体格式, 165–166
@@ -15914,46 +16640,56 @@ sign-up form, 122–125
 
 #### WebSocket API, 297–302
 
-#### week input type, 日历, 104–105
+#### `week` input type, 日历, 104–105
 
 #### WHATWG (Web Hypertext Application Technology Working Group), xxiv–xxv
 
-#### width 值, video 元素, 167
+#### `width`值, `video`元素, 167
 
-#### 通配符, manifest 的 FALLBACK 部分, 336–337
+#### 通配符, manifest 的 `FALLBACK` 部分, 336–337
 
-#### .woff (WOFF) 字体文件格式, 78
+#### `.woff` (WOFF) 字体文件格式, 78
 
-#### Worker 接口, 303
+#### `Worker`接口, 303
 
 #### Writer, File API 规范用于文件写入, 381–382
 
 #### Writer 规范, File API, 381–382
 
-#### writeToFile 函数, 本地文件, 383, 385, 387
+#### `writeToFile`函数, 本地文件, 383, 385, 387
 
 # X
 
-## X 坐标, canvas
+## X 坐标, `canvas`
+
 - 裁剪图像, 145–146
-- 绘制 canvas 网格, 130–134
-- 与 canvas 交互, 155
+
+- 绘制`canvas`网格, 130–134
+
+- 与`canvas`交互, 155
+
 - 概述, 129
 
 ## XHTML (可扩展超文本标记语言), xxiii–xxiv
+
 - 为旧版浏览器添加后备内容, 167–169
+
 - HTML5 与视频编解码器, 165–166
 
 # Y
 
-## Y 坐标, canvas
+## Y 坐标, `canvas`
+
 - 裁剪图像, 145–146
-- 绘制 canvas 网格, 130–134
-- 与 canvas 交互, 155
+
+- 绘制`canvas`网格, 130–134
+
+- 与`canvas`交互, 155
+
 - 概述, 129
 
 # Z
 
-## z-index 样式属性, canvas, 150
+## `z-index`样式属性, `canvas`, 150
 
 ## YouTube

@@ -1,9 +1,5 @@
-# 7.4 表单
 
-*   表单的验证
-    *   HTML 5 表单验证
-    *   checkValidity 方法，setCustomValidity 方法，validity 对象
-    *   参考链接
+# 7.4 表单
 
 ## 表单的验证
 
@@ -51,19 +47,29 @@ checkValidity 方法表示执行原生的表单验证，如果验证通过返回
 每一个表单元素都有一个 validity 对象，它有以下属性。
 
 *   valid：如果该元素通过验证，则返回 true。
+
 *   valueMissing：如果用户没填必填项，则返回 true。
+
 *   typeMismatch：如果填入的格式不正确（比如 Email 地址），则返回 true。
+
 *   patternMismatch：如果不匹配指定的正则表达式，则返回 true。
+
 *   tooLong：如果超过最大长度，则返回 true。
+
 *   tooShort：如果小于最短长度，则返回 true。
+
 *   rangeUnderFlow：如果小于最小值，则返回 true。
+
 *   rangeOverflow：如果大于最大值，则返回 true。
+
 *   stepMismatch：如果不匹配步长（step），则返回 true。
+
 *   badInput：如果不能转为值，则返回 true。
+
 *   customError：如果该栏有自定义错误，则返回 true。
 
 setCustomValidity 方法用于自定义错误信息，该提示信息也反映在该输入框的 validationMessage 属性中。如果将 setCustomValidity 设为空字符串，则意味该项目验证通过。
 
 ## 参考链接
 
-*   Craig Buckler, [HTML5 Forms: JavaScript and the Constraint Validation API](http://www.sitepoint.com/html5-forms-javascript-constraint-validation-api/)
+*   Craig Buckler, [HTML5 Forms: JavaScript and the Constraint Validation API](http://www.sitepoint.com/html5-forms-javascript-constraint-validation-api/)

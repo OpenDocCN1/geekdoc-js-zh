@@ -1,38 +1,33 @@
+
 # Modern JavaScript 入门指南
-
-
 
 ![](img/calibre_cover.jpg)
 
-
-
-
-
-
-
-
-
 ## 关于 SitePoint
+
 SitePoint 专门为 Web 专业人士出版有趣、实用且易于理解的内容。访问 [`www.sitepoint.com/`](http://www.sitepoint.com/) 访问我们的博客、书籍、时通讯、文章和社区论坛。你将在这里找到关于 JavaScript、PHP、设计等大量信息。
 
 ## 前言
+
 如今，看到人们抱怨 JavaScript 开发变得多么复杂并不罕见。如果这种观点来自一个对该语言的新手，我们对此表示某种同情。如果你正在学习 JS，很快就会接触到庞大的生态系统，以及为了构建现代 Web 应用程序需要理解（至少在概念上）的海量变动部分。包管理、代码检查、转译、模块打包、代码压缩、源码映射、框架、单元测试、热重载……不可否认，这比仅仅在页面中包含几个 `<script>` 标签并通过 FTP 上传到服务器要复杂得多。
 
 长期以来，JavaScript 被许多人视为一个笑话；一种玩具级语言，其唯一的用途就是添加一些非必要的视觉点缀（如鼠标悬停变化），并且经常是奇怪错误和页面崩溃的根源。尽管从早期以来已经取得了巨大进步，但今天仍有人不认真对待这种语言。对 PHP 开发者产生同情也并不难。无论好坏，JavaScript 都是（目前也是）绝大多数 Web 浏览器原生支持的唯一语言。社区努力改进语言本身，并提供工具帮助构建生产级应用。
 
-这本合集是文章的汇，精选自 SitePoint 的 [JavaScript 频道](https://www.sitepoint.com/javascript/)，旨在让你在现代 JavaScript 开发中抢占先机。当然，由于语言和生态系统的演变速度都非常快，跟上最新进展至关重要。不要掉队，在读完这本书后，请前往该频道以跟上新趋势和技术！
+这本合集是文章的汇编，精选自 SitePoint 的 [JavaScript 频道](https://www.sitepoint.com/javascript/)，旨在让你在现代 JavaScript 开发中抢占先机。当然，由于语言和生态系统的演变速度都非常快，跟上最新进展至关重要。不要掉队，在读完这本书后，请前往该频道以跟上新趋势和技术！
 
 James Hibbard & Nilson Jacques，SitePoint JavaScript 频道编辑。
 
 ## 使用的规范
+
 你会注意到，我们在本书中使用了特定的布局样式来表示不同类型的信息。请关注以下项目。
 
 ### 代码示例
+
 书中的代码使用等宽字体显示，如下：
 
-```
-<h1>A Perfect Summer's Day</h1>
-<p>It was a lovely day for a walk.</p>
+```html
+<h1>A Perfect Summer's Day</h1>
+<p>It was a lovely day for a walk.</p>
 ```
 
 某些代码行应该在一行输入，但由于页面限制，我们不得不对它们进行换行处理。➥ 表示仅出于格式目的而存在的换行，应该被忽略：
@@ -44,18 +39,23 @@ URL.open("http://www.sitepoint.com/responsive-web-design-real-user-testing/?resp
 ### 提示、注释和警告
 
 **嘿，你！**
+
 提示（Tips）提供有用的小建议。
 
 **额咳，打扰一下……**
-注释（Notes）与当前主题相关但并非关重要的有用补充。将它们视为额外的信息片段即可。
+
+注释（Notes）与当前主题相关但并非关键的有用补充。将它们视为额外的信息片段即可。
 
 **确保你始终……**
+
 ……注意这些重要要点。
 
 **小心！**
-警告（Warnings）强调可能会可能会让你出错的任何陷阱。
+
+警告（Warnings）强调可能会让你出错的任何陷阱。
 
 ## 第 1 章：现代 JavaScript 应用程序剖析
+
 作者 James Kolce
 
 毫无疑问，JavaScript 生态系统的变化极快。不仅新工具和框架以快速速度引入和开发，语言本身也随着 ES2015（又称 `ES6`）的引入发生了巨大的变化。可以理解，现在有许多文章在抱怨学习现代 JavaScript 开发有多困难。
@@ -63,12 +63,15 @@ URL.open("http://www.sitepoint.com/responsive-web-design-real-user-testing/?resp
 在这篇文章中，我将向你介绍现代 JavaScript。我们将查看该语言的最新进展，并概述当前用于编写前端 Web 应用程序的工具和技术。如果你刚开始学习这种语言，或者已经多年没碰它，并好奇你以前熟悉的 JavaScript 发生了什么变化，那么这篇文章就是为你准备的。
 
 ### 关于 Node.js 的说明
+
 `Node.js` 是一个允许使用 JavaScript 编写服务器程序的运行时。可以拥有全栈 JavaScript 应用程序，前后端都使用 JavaScript。`Node.js` 的到来对生态系统产生了重大影响，引入了 `npm` 包管理器并普及了 CommonJS 模块格式。
 
-### JavaScript2015
-2015 年，ECMAScript](https://en.wikipedia.org/wiki/ECMAScript)——定义 JavaScript 的规范以 `ES6` 的名称发布。这个新版本包含了语言的重大补充。改进并没有停止于 ES2015；每年都会发布新版本。
+### JavaScript 2015
+
+2015 年，[ECMAScript](https://en.wikipedia.org/wiki/ECMAScript)——定义 JavaScript 的规范以 `ES6` 的名称发布。这个新版本包含了语言的重大补充。改进并没有停止于 ES2015；每年都会发布新版本。
 
 ### 声明变量
+
 JavaScript 现在有了额外的变量声明方式：[let 和 const](https://www.sitepoint.com/how-to-declare-variables/)。
 
 `let` 是 `var` 的继承者——尽管 `var` 仍然可用，但 `let` 将变量的作用域限制在所在的块内（而不是函数），这减少了出错的空间：
@@ -97,20 +100,15 @@ name = 'Steve';
 ```
 
 **陷阱**
+
 ```javascript
 const person = { name: 'Bill' };
 person.name = 'Steve';
-// person.name 现在是 Steve。 
+// person.name 现在是 Steve。
 // 因为我们没有更改 person 绑定的对象，JavaScript 不会报错。
 ```
 
-## 箭头函数
-
-
-
-
-
-## 箭头函数
+### 箭头函数
 
 箭头函数为声明匿名函数（lambda）提供了一种更简洁的语法，当函数体只有一个表达式时，可以省去 `function` 关键字和 `return` 关键字。这允许你以更优雅的方式编写函数风格的代码。
 
@@ -142,7 +140,7 @@ function Person() {
 var p = new Person();
 ```
 
-## 改进的 Class 语法
+### 改进的 Class 语法
 
 如果你是面向对象编程的粉丝，可能会喜欢语言在现有原型机制的基础上增加了类（classes）。虽然这只是语法糖，但它为试图用原型模拟经典面向对象编程的开发者提供了更简洁的语法。
 
@@ -157,9 +155,9 @@ class Person {
 }
 ```
 
-## Promises / 异步函数
+### Promises / 异步函数
 
-JavaScript 的异步本质长期以来一直挑战；在处理如 Ajax 请求时，任何复杂的应用都有陷入回调地狱的风险。
+JavaScript 的异步本质长期以来一直是挑战；在处理如 Ajax 请求时，任何复杂的应用都有陷入回调地狱的风险。
 
 幸运的是，ES2015 增加了对 [promises](https://www.sitepoint.com/deeper-dive-promises/) 的原生支持。Promises 代表目前不存在但以后可能的值，使得异步函数的调用更易于管理。ES2017 引入了 [async functions](https://www.sitepoint.com/simplifying-async-functions/)（有时被称为 async/await），在该领域带来了改进，允许你像处理同步代码一样处理异步代码。
 
@@ -171,25 +169,27 @@ async function doAsync () {
 };
 ```
 
-## 模块
+### 模块
 
 ES2015 添加的另一个显著特性是原生模块格式，使得模块的定义和使用成为语言的一部分。以前模块仅以第三方库的形式存在。我们将在下一节深入查看模块。
 
 这里我们不会讨论其他特性，但在查看现代 JavaScript 时，你会注意到一些主要的差异。你可以通过 [Learn ES2015](https://babeljs.io/learn-es015/) 页面在 [Babel site](https://babeljs.io/) 查看完整的列表。这些特性包括模板字符串、迭代器、生成器以及如 `Map` 和 `Set` 等新数据结构。
 
-### 关于 ES2015
+#### 关于 ES2015
+
 要了解更多关于 ES2015 的知识，请查看我们的课程：[Diving into ES2015](https://www.sitepoint.com/premium/224)
 
-## 代码检查
+### 代码检查
 
 Linter 是解析你的代码并根据一组规则进行对比、检查语法错误、格式和良好实践的工具。虽然建议每个人都使用 linter，但当你刚开始时它特别有用。当你的代码编辑器/IDE 配置好后，你可以获得即时反馈，以确保你在学习新语言特性时不会被语法错误困住。你可以 [查看 ESLint](https://www.sitepoint.com/up-and-running-with-eslint/)，它是最流行的 linter 且支持 ES2015+。
 
-## 模块化代码
+### 模块化代码
 
 现代 Web 应用可能有数千（甚至数十万）行代码。如果没有将所有内容组织成更小组件的机制，进行这种规模的工作几乎是不可能的，这样可以编写专门且隔离的代码。
 
-### CommonJS
-多年出现了一些模块格式，最流行的是 [CommonJS](https://en.wikipedia.org/wiki/CommonJS)。它是 Node.js 的默认格式。它使用 `module` 对象来导出，使用 `require()` 函数来导入。
+#### CommonJS
+
+多年来出现了一些模块格式，最流行的是 [CommonJS](https://en.wikipedia.org/wiki/CommonJS)。它是 Node.js 的默认格式。它使用 `module` 对象来导出，使用 `require()` 函数来导入。
 
 ```javascript
 // lib/math.js
@@ -206,7 +206,8 @@ const math = require("./lib/math");
 console.log(math.sum(1, 2));
 ```
 
-### ES2015 模块
+#### ES2015 模块
+
 ES2015 引入了直接在语言中定义和消费模块的方法。示例：
 
 ```javascript
@@ -228,7 +229,7 @@ console.log(sum(1, 2));
 import { sum } from "./lib/math";
 ```
 
-## 包管理
+### 包管理
 
 其他语言长期以来都有自己的仓库和管理器，以便查找和安装第三方库。Node.js 自带包管理器和仓库 [npm](https://www.sitepoint.com/beginners-guide-node-manager/)。尽管还有其他可用，但 npm 已成为事实上的 JavaScript 包管理器，并被称为最大的包注册表。
 
@@ -238,7 +239,7 @@ import { sum } from "./lib/math";
 
 你可以为开发和生产定义单独依赖。生产依赖是包运行所需的，而开发依赖对于开发者来说是必要的。
 
-### 示例 package.json 文件
+#### 示例 package.json 文件
 
 ```json
 {
@@ -247,8 +248,8 @@ import { sum } from "./lib/math";
   "description": "Demo package.json",
   "main": "main.js",
   "dependencies": {
-    "mkdirp": "⁰.5.1",
-    "underscore": "¹.8.3"
+    "mkdirp": "0.5.1",
+    "underscore": "1.8.3"
   },
   "devDependencies": {},
   "scripts": {
@@ -259,23 +260,23 @@ import { sum } from "./lib/math";
 }
 ```
 
+### 构建工具
 
+我们在开发现代 Web 应用时编写的代码，几乎从没有直接进入过生产环境。我们使用现代版本的 JavaScript 编写代码，这些代码可能不受浏览器支持；我们大量使用位于 `node_modules` 文件夹中的第三方包及其依赖项；我们可能还有如静态分析工具或压缩化工具等流程。构建工具的存在是为了帮助将所有这些转换为可以高效部署并被大多数浏览器理解的内容。
 
-我们在开发现代 Web 应用时编写的代码，几乎从没有直接进入过生产环境。我们使用现代版本的 JavaScript 编写代码，这些代码可能不受浏览器支持；我们大量使用位于 `node_modules` 文件夹中的第三方包及其依赖项；我们可能还有如静态分析工具或压缩化工具等流程。构建工具（Build tooling）的存在是为了帮助将所有这些转换为可以高效部署并被大多数 浏览器理解的内容。
-
-## 模块打包 (Module bundling)
+#### 模块打包
 
 在使用 ES2015/CommonJS 模块编写整洁、复用的代码时，我们需要某种方法来加载这些模块（至少在浏览器原生支持 ES2015 模块加载之前是）。在 HTML 中引入大量的 `<script>` 标签并不是一个可行的方案，因为对于任何严肃的应用来说，这都会迅速变得难以管理，而且所有这些独立的 HTTP 请求会损害性能。
 
-我们可以使用 ES2015 的 `import` 语句（或 CommonJS 的 `require`）在需要的地方引入所有模块，并使用模块打包器（module bundler）将所有内容合并成一个或多个文件（包，bundles）。我们将上传到服务器并包含在 HTML 中的，正是这些打包后的文件。它将包含你导入的所有模块及其必要的依赖项。
+我们可以使用 ES2015 的 `import` 语句（或 CommonJS 的 `require`）在需要的地方引入所有模块，并使用模块打包器将所有内容合并成一个或多个文件（包，bundles）。我们将上传到服务器并包含在 HTML 中的，正是这些打包后的文件。它将包含你导入的所有模块及其必要的依赖项。
 
 目前有几种流行的选择，最流行的是 [Webpack](http://webpack.js.org)、[Browserify](http://browserify.org) 和 [Rollup.js](http://rollupjs.org)。你可以根据自己的需求选择其中一种。
 
-### 学习更多关于模块打包
+##### 学习更多关于模块打包
 
 如果你想了解更多关于模块打包以及它如何融入应用开发大局，我推荐阅读 [理解 JavaScript 模块：打包与转译](https://www.sitepoint.com/javascript-modules-bundling-transpiling/)。
 
-## 转译 (Transpilation)
+#### 转译
 
 虽然[现代浏览器对 ES2015 的支持已经非常好](http://kangax.github.io/compat-table/es6/)，但你的目标用户可能包含部分支持或完全不支持的旧版浏览器和设备。
 
@@ -283,7 +284,7 @@ import { sum } from "./lib/math";
 
 有些功能需要的不仅仅是语法翻译；Babel 包含了一个 [Polyfill](http://babeljs.io/docs/usage/polyfill/)，它模拟了某些复杂功能（如 promises）所需的某些机制。
 
-## 构建系统与任务运行器 (Build systems & task runners)
+#### 构建系统与任务运行器
 
 模块打包和转译只是我们在项目中可能需要的两个构建过程。其他过程还包括代码压缩（以减小文件大小）、分析工具，以及可能与 JavaScript 无关的任务，例如图像优化或 CSS/HTML 预处理。
 
@@ -293,27 +294,27 @@ import { sum } from "./lib/math";
 
 每当你发现自己在手动为项目组织处理步骤时，请思考一下是否可以使用任务运行器实现自动化。
 
-## 应用架构 (Application Architecture)
+### 应用架构
 
 Web 应用的要求与网站有所不同。例如，虽然对于博客来说，页面刷新是可以接受的，但对于像 Google Docs 这样的应用则完全不是。你的应用行为应该尽可能接近桌面应用，否则可用性将受到影响。
 
-旧式的 Web 应用通常是通过从 Web 服务器发送多个页面来实现的，当需要大量动态性时，通过 Ajax 根据用户操作替换 HTML 块来加载内容。虽然这是向更动态的 Web 迈出的一一步，但它确实有其复杂性；在每次用户操作时发送 HTML 片段甚至整个页面都是资源的浪费，特别是从用户的角度来看更是时间的浪费。其可用性仍然无法匹配桌面应用的响应速度。
+旧式的 Web 应用通常是通过从 Web 服务器发送多个页面来实现的，当需要大量动态性时，通过 Ajax 根据用户操作替换 HTML 块来加载内容。虽然这是向更动态的 Web 迈出的一步，但它确实有其复杂性；在每次用户操作时发送 HTML 片段甚至整个页面都是资源的浪费，特别是从用户的角度来看更是时间的浪费。其可用性仍然无法匹配桌面应用的响应速度。
 
 为了改进这一点，我们创建了两种构建 Web 应用的新方法，从向用户展示应用的方式到客户端与服务器通信的方式。尽管应用所需的 JavaScript 数量也急剧增加，但结果是现在的应用行为非常接近原生应用；每次点击按钮时都不需要刷新页面或长时间的等待。
 
-### 单页应用 (SPAs)
+#### 单页应用
 
 Web 应用最常见的高层架构被称为 [SPA](https://en.wikipedia.org/wiki/Single-page_application)，意为单页应用。SPA 是巨大的 JavaScript 集合，包含了应用正常运行所需的所有内容。UI 完全在客户端渲染，因此不需要重新加载。唯一变化的是应用内部的数据，这通常通过远程 API 配合 [Ajax](https://en.wikipedia.org/wiki/Ajax_(programming)) 或另一种异步通信方法来处理。
 
-这种方法的一个缺点是应用首次加载耗时间较长。然而，一旦加载完成，视图（页面）之间的切换通常要快得多，因为在客户端和服务器之间传输的只是纯数据。
+这种方法的一个缺点是应用首次加载耗时较长。然而，一旦加载完成，视图（页面）之间的切换通常要快得多，因为在客户端和服务器之间传输的只是纯数据。
 
-### 通用型 / 同构应用 (Universal / Isomorphic Applications)
+#### 通用型 / 同构应用
 
-尽管 SPA 提供了极的用户体验，但根据你的需求，它们可能不是最佳解决方案。特别是当你需要更快的初始加载时间或搜索引擎的最优索引时。
+尽管 SPA 提供了极佳的用户体验，但根据你的需求，它们可能不是最佳解决方案。特别是当你需要更快的初始加载时间或搜索引擎的最优索引时。
 
 解决这些问题的一种较新方法被称为 [同构](http://isomorphic.net/javascript)（或通用型）JavaScript 应用。在这种架构中，大部分代码可以在服务器和客户端执行。你可以选择想要在服务器上渲染的内容以实现更快的初始加载，之后由客户端接管渲染。由于页面最初在服务器上渲染，搜索引擎可以对其进行正确的索引。
 
-## 部署 (Deployment)
+### 部署
 
 在现代 JavaScript 应用中，你编写的代码与部署到生产环境的代码并不相同；你只部署构建过程的结果。完成此操作的工作流取决于项目的规模、参与开发的人数，有时取决于你使用的工具/库。
 
@@ -339,28 +340,25 @@ Web 应用最常见的高层架构被称为 [SPA](https://en.wikipedia.org/wiki/
 
 所有的应用文件都在 `src` 目录下，使用 ES2015 编写，并导入通过 npm 安装的包以及来自 `lib` 目录的自定义模块。
 
-
-
-
 然后你可以运行 Gulp，它将执行 `gulpfile.js` 中的指令来构建你的项目：将所有模块打包成一个文件（包括通过 `npm` 安装的模块）、将 ES2015+ 编译为 ES5、对生成的文件进行压缩等。然后，你可以配置它将结果输出到方便的 `dist` 目录中。
 
-## 无需处理的文件
+#### 无需处理的文件
 
 如果你有不需要任何处理的文件，只需将它们从 `src` 复制到 `dist` 目录即可。你可以在构建系统中为该操作配置一个任务。
 
 现在，你只需要将 `dist` 目录中的文件上传到 Web 服务器即可，而无需担心其他仅对开发有用的文件。
 
-## 团队开发
+#### 团队开发
 
 如果你与其他开发者一起工作，很可能也正在使用共享代码仓库（如 GitHub）来存储项目。在这种情况下，你可以在提交（commit）之前运行构建过程，并将结果与其他文件一起存储在 Git 仓库中，以便后续下载到生产服务器。
 
 然而，如果几位开发者共同工作，将构建后的文件存储到仓库中容易出错，而且你可能希望保持项目整洁，不包含构建产物。幸运的是，有更好的处理方法：你可以在流程中使用如 [Jenkins](http://jenkins.io)、[Travis CI](http://travis-ci.org)、[CircleCI](http://circleci.com) 等服务，这样它在每次提交推送到仓库后都能自动构建你的项目。开发者只需担心推送代码更改，而无需每次都预先构建项目；同时，仓库也保持了整洁，没有自动生成的文件；最后，你仍然拥有构建好的文件可供部署。
 
-## 结论
+### 结论
 
 如果你近几年没有接触 Web 开发，从简单网页到现代 JavaScript 应用程序的转变可能看起来望而生畏，但我希望这篇文章能作为一个有用的起点。我尽可能为每个主题都链接了更深入的文章，以便你进一步探索。
 
-请记住，如果在某个时刻，在查看所有可用选项后，觉得一切看起来都难以从心且混乱；那么只需记住 [KISS 原则](https://en.wikipedia.org/wiki/KISS_principle)，只使用你认为需要的，而不是你拥有的所有。根结底，解决问题才是最重要的，而不是使用所有最新的东西。
+请记住，如果在某个时刻，在查看所有可用选项后，觉得一切看起来都难以从容且混乱；那么只需记住 [KISS 原则](https://en.wikipedia.org/wiki/KISS_principle)，只使用你认为需要的，而不是你拥有的所有。归结底，解决问题才是最重要的，而不是使用所有最新的东西。
 
 ## 第 2 章：Gulp.js 简介
 
@@ -383,7 +381,7 @@ Web 应用最常见的高层架构被称为 [SPA](https://en.wikipedia.org/wiki/
 
 如果是这样，你需要一个任务运行器或构建流程。
 
-## 这听起来复杂得可怕！
+### 这听起来复杂得可怕！
 
 创建一个构建流程需要时间。它比手动执行每个任务要复杂，但从长远来看，你将节省数小时的工作，减少人为错误并保持理智。采取务实的方法：
 
@@ -393,7 +391,7 @@ Web 应用最常见的高层架构被称为 [SPA](https://en.wikipedia.org/wiki/
 
 某些工具和概念对你来说可能是新的，但请深呼吸，一次专注于一件事。
 
-## 任务运行器：可选方案
+### 任务运行器：可选方案
 
 诸如 [GNU Make](https://www.gnu.org/software/make/) 这样的构建工具已经存在了几十年，但针对 Web 的任务运行器是一个相对新的现象。第一个实现规模效应的是 [Grunt](http://gruntjs.com/) - 这是一个 Node.js 任务运行器，它使用（最初）由 JSON 配置文件控制的插件。Grunt 取得了成功，但也存在许多问题：
 
@@ -406,14 +404,14 @@ Web 应用最常见的高层架构被称为 [SPA](https://en.wikipedia.org/wiki/
 
 1. 像文件监听这样的功能是内置的。
 2. Gulp 插件（大部分）设计为执行单项工作。
-3. Gulp 使用 JavaScript 配置代码，更更简洁、更易读、更易修改，并提供了更好的灵活性。
+3. Gulp 使用 JavaScript 配置代码，更简洁、更易读、更易修改，并提供了更好的灵活性。
 4. Gulp 速度更快，因为它使用 [Node.js streams](https://www.sitepoint.com/basics-node-js-streams/) 通过一系列管道（piped）插件传递数据。文件只在任务结束时才写入。
 
-当然，Gulp 本身并不完美，而新的任务运行器如 [Broccoli.js](http://broccolijs.com/)、[Brunch](http://brunch.io/) 和 [webpack](https://webpack.github.io/) 也在竞争开发者的关注。最近，npm 本身也被推崇为一种更简单的方案](https://www.sitepoint.com/guide-to-npm-as-build-tool/)。所有工具都有优缺点，但 Gulp 仍然是首选并被超过 40% 的 Web 开发者使用](https://ashleolan.co.uk/blog/frontend-tooling-survey-2016-results)。
+当然，Gulp 本身并不完美，而新的任务运行器如 [Broccoli.js](http://broccolijs.com/)、[Brunch](http://brunch.io/) 和 [webpack](https://webpack.github.io/) 也在竞争开发者的关注。最近，npm 本身也被推崇为一种更简单的方案。所有工具都有优缺点，但 Gulp 仍然是首选并被超过 40% 的 Web 开发者使用。
 
 Gulp 需要 Node.js，虽然某些 JavaScript 知识会有帮助，但所有 Web 开发者都能从中受益。
 
-## 关于 Gulp 4
+#### 关于 Gulp 4
 
 本文介绍了如何使用 Gulp 3 - 这是编写时的最新发布版本。Gulp 4 已经开发一段时间，但仍处于测试阶段。你可以[使用或切换到 Gulp 4](https://www.joezimjs.com/javascript/complete-guide-upgrading-gulp-4/)，但在正式发布之前建议使用版本 3。
 
@@ -421,25 +419,25 @@ Gulp 需要 Node.js，虽然某些 JavaScript 知识会有帮助，但所有 Web
 
 可以在 [nodejs.org/download/](https://nodejs.org/download/) 下载 Windows、Mac 和 Linux 的 Node.js。从二进制文件、包管理器和 Docker 镜像安装有多种选择 - 详细说明可用。
 
-### Windows 用户注意
+#### Windows 用户注意
 
 Node.js 和 Gulp 可以在 Windows 上运行，但某些依赖原生 Linux 二进制文件的压缩库可能无法安装或运行。Windows 10 用户的一个选择是使用新的 [bash 命令行](https://msdn.microsoft.com/en-us/commandline/wsl/install_guide)；这解决了许多问题，但它是测试产品并可能引入替代问题。
 
 安装后，打开命令提示符并输入：
 
-```
+```bash
 node -v
 ```
 
 显示版本号。你大量使用 `npm` - Node.js 包管理器，它用于安装模块。查看它的版本号：
 
-```
+```bash
 npm -v
 ```
 
+#### Linux 用户注意
 
-
-Linux 用户注意：Node.js 模块可以全局安装，这样它们在整个系统中都可用。然而，除非在 `npm` 命令前加上 `sudo`，否则大多数用户将没有权限写入全局目录。有许多[修复 npm 权限的选项](https://docs.npmjs.com/getting-started/fixing-npm-permissions)以及像 [nvm 可以提供的帮助](https://www.sitepoint.com/quick-tip-multiple-versions-node-nvm/) 这样的工具可以使用，但我经常会更改默认目录，例如在 Ubuntu/Debian 系的平台上：
+Node.js 模块可以全局安装，这样它们在整个系统中都可用。然而，除非在 `npm` 命令前加上 `sudo`，否则大多数用户将没有权限写入全局目录。有许多[修复 npm 权限的选项](https://docs.npmjs.com/getting-started/fixing-npm-permissions)以及像 [nvm](https://www.sitepoint.com/quick-tip-multiple-versions-node-nvm/) 这样的工具可以使用，但我经常会更改默认目录，例如在 Ubuntu/Debian 系的平台上：
 
 ```bash
 cd ~
@@ -491,17 +489,19 @@ Git 用户注意：Node.js 将模块安装在 `node_modules` 文件夹中。您�
 
 在本文的剩余部分，我们假设您的项目文件夹包含以下子文件夹：
 
-`src`
-文件夹：预处理过的源文件
+`src` 文件夹：预处理过的源文件
+
 它包含进一步的子文件夹：
+
 * `html` - HTML 源文件和模板
 * `images` — 原始未压缩图像
 * `js` — 多个预处理过的脚本文件
 * `scss` — 多个预处理过的 Sass `.scss` 文件
 
-`build`
-文件夹：编译/处理后的文件
+`build` 文件夹：编译/处理后的文件
+
 Gulp 将根据需要创建文件和子文件夹：
+
 * `html` - 编译后的静态 HTML 文件
 * `images` — 压缩后的图像
 * `js` — 单个合并并压缩的 JavaScript 文件
@@ -539,7 +539,7 @@ export NODE_ENV=production
 set NODE_ENV=production
 ```
 
-本教程假设您的资产将编译到 `build` 文件夹，并提交到您的 Git 仓库或直接上传到服务器。然而，如果您想更改创建它们的方式，在在生产服务器上构建资产可能更合适，例如：HTML、CSS 和 JavaScript 文件在生产环境中经过了压缩，但在开发环境中没有。在这种情况下，请对 Gulp 和所有插件使用 `--save` 选项，即：
+本教程假设您的资产将编译到 `build` 文件夹，并提交到您的 Git 仓库或直接上传到服务器。然而，如果您想更改创建它们的方式，在生产服务器上构建资产可能更合适，例如：HTML、CSS 和 JavaScript 文件在生产环境中经过了压缩，但在开发环境中没有。在这种情况下，请对 Gulp 和所有插件使用 `--save` 选项，即：
 
 ```bash
 npm install gulp --save
@@ -547,9 +547,9 @@ npm install gulp --save
 
 这会将 Gulp 设置为 `package.json` 中 `"dependencies"` 部分的应用程序依赖项。它会在您输入 `npm install` 时安装，并可以在项目部署的任何地方运行。您可以从仓库中删除 `build` 文件夹，因为这些文件可以在需要时任何平台上创建。
 
-### 步骤 4：创建 Gulp 配置文件
+### 步骤 5：创建 Gulp 配置文件
 
-在项目文件夹的根目录下创建一个新的 `gulpfile.js` 配置文件。添加一些基础代码开始开始：
+在项目文件夹的根目录下创建一个新的 `gulpfile.js` 配置文件。添加一些基础代码开始：
 
 ```javascript
 // Gulp.js configuration
@@ -566,55 +566,13 @@ var
 ;
 ```
 
-Node.js 项目注意：如果您已经有一个 `package.json` 配置文件，可以跳过此步骤。
+### 图像任务
 
-假设您在 `project1` 文件夹中有一个新项目或现有项目。进入该文件夹并用 npm 进行初始化：
-
-```bash
-cd project1
-npm init
-```
-
-您将被询问一系列问题 - 输入值或按回车键接受默认值。完成后将创建一个 `package.json` 文件，其中存储了您的 `npm` 配置设置。
-
-Git 用户注意：Node.js 将模块安装在 `node_modules` 文件夹中。您应该将其添加到 `.gitignore` 文件中，以确保它们不会被提交到仓库中。当将项目部署到另一台电脑时，您可以运行 `npm install` 来恢复它们。
-
-在本文的剩余部分，我们假设您的项目文件夹包含以下子文件夹：
-
-`src`
-文件夹：预处理过的源文件
-它包含进一步的子文件夹：
-* `html` - HTML 源文件和模板
-* `images` — 原始未压缩图像
-* `js` — 多个预处理过的脚本文件
-* `scss` — 多个预处理过的 Sass `.scss` 文件
-
-`build`
-文件夹：编译/处理后的文件
-Gulp 将根据需要创建文件和子文件夹：
-* `html` - 编译后的静态 HTML 文件
-* `images` — 压缩后的图像
-* `js` — 单个合并并压缩的 JavaScript 文件
-* `css` — 单个编译并压缩的 CSS 文件
-
-您的项目几乎肯定会有所不同，但下面的示例将使用此结构。
-
-提示：如果您在使用类 Unix 系统，并且只想跟本教程操作，可以使用以下命令重新创建文件夹结构：
+此示例演示了如何压缩图像。为了实现这一点，我们需要 `gulp-newer` 和 `gulp-imagemin`。从命令行使用 save-dev 安装它们：
 
 ```bash
-mkdir -p src/{html,images,js,scss} build/{html,images,js,css}
+npm install gulp-newer gulp-imagemin --save-dev
 ```
-
-### 步骤 5：创建 Gulp 任务
-
-Gulp 提供了三个主要方法：
-* `gulp.task` - 定义新任务。
-* `gulp.src` - 设置源。
-* `gulp.dest` - 设置目标。
-
-图像任务
-
-此示例演示了如何压缩图像。为了实现这一点，我们需要 `gulp-newer` 和 `gulp-imagemin`。从命令行使用 save-dev 安装它们。
 
 现在我们可以在 `gulpfile.js` 顶部引用这两个模块：
 
@@ -625,6 +583,14 @@ var
   gulp = require('gulp'),
   newer = require('gulp-newer'),
   imagemin = require('gulp-imagemin'),
+  // development mode?
+  devBuild = (process.env.NODE_ENV !== 'production'),
+  // folders
+  folder = {
+    src: 'src/',
+    build: 'build/'
+  }
+;
 ```
 
 现在我们可以在 `gulpfile.js` 的末尾定义图像处理任务：
@@ -646,10 +612,6 @@ gulp.task('images', function() {
 gulp images
 ```
 
-
-
-
-
 ```
 Finished 'imagemin' in 5.71 ms
 gulp-imagemin: image1.png (saved 48.7 kB)
@@ -659,7 +621,7 @@ gulp-imagemin: image3.svg (saved 12.8 kB)
 
 尝试再次运行 `gulp images`，应该不会发生任何变化，因为没有新的图像了。
 
-## HTML 任务
+### HTML 任务
 
 我们现在可以创建一个类似的任务，用于从源 HTML 文件夹复制文件。我们可以使用 [gulp-htmlclean](https://www.npmjs.com/package/gulp-htmlclean) 插件来安全地对 HTML 代码进行压缩化，以移除不必要的空格和属性：
 
@@ -676,6 +638,14 @@ var
   newer = require('gulp-newer'),
   imagemin = require('gulp-imagemin'),
   htmlclean = require('gulp-htmlclean'),
+  // development mode?
+  devBuild = (process.env.NODE_ENV !== 'production'),
+  // folders
+  folder = {
+    src: 'src/',
+    build: 'build/'
+  }
+;
 ```
 
 我们现在可以在 `gulpfile.js` 的末尾创建一个 `html` 任务：
@@ -702,7 +672,7 @@ gulp.task('html', ['images'], function() {
 
 保存 `gulpfile.js` 并从命令行运行 `gulp html`。`html` 和 `images` 任务都会运行。
 
-## JavaScript 任务
+### JavaScript 任务
 
 对你来说太简单了？让我们通过构建一个基础的模块打包器来处理所有的 JavaScript 文件。它将：
 
@@ -720,11 +690,23 @@ npm install gulp-deporder gulp-concat gulp-strip-debug gulp-uglify --save-dev
 
 ```javascript
 var
-  ...
+  // 模块
+  gulp = require('gulp'),
+  newer = require('gulp-newer'),
+  imagemin = require('gulp-imagemin'),
+  htmlclean = require('gulp-htmlclean'),
   concat = require('gulp-concat'),
   deporder = require('gulp-deporder'),
   stripdebug = require('gulp-strip-debug'),
   uglify = require('gulp-uglify'),
+  // development mode?
+  devBuild = (process.env.NODE_ENV !== 'production'),
+  // folders
+  folder = {
+    src: 'src/',
+    build: 'build/'
+  }
+;
 ```
 
 然后添加一个新的的 `js` 任务：
@@ -746,7 +728,7 @@ gulp.task('js', function() {
 
 保存然后运行 `gulp js` 来体验魔法！
 
-## CSS 任务
+### CSS 任务
 
 最后，让我们创建一个 CSS 任务，使用 [gulp-sass](https://www.npmjs.com/package/gulp-sass) 将 `.scss` 文件编译为单个 `.css` 文件。这是用于 [node-sass](https://www.npmjs.com/package/node-sass) 的 Gulp 插件，它绑定到超快的 [Sass C/C++ 引擎](http://sass-lang.com/libsass)（无需安装 Ruby）。我们假设你的 Sass 文件 `scss/main.scss` 负责加载所有部分文件。
 
@@ -760,507 +742,10 @@ gulp.task('js', function() {
 安装这些插件：
 
 ```bash
-npm install gulp-sass gulp-postcss postcss-assets autoprefixer css-mqpacker cssnano
+npm install gulp-sass gulp-postcss postcss-assets autoprefixer css-mqpacker cssnano --save-dev
 ```
 
 在 `gulpfile.js` 的顶部引用它们：
-
-```javascript
-var
-  ...
-  sass = require('gulp-sass'),
-  postcss = require('gulp-postcss'),
-  assets = require('postcss-assets'),
-  autoprefixer = require('autoprefixer'),
-  mqpacker = require('css-mqpacker'),
-  cssnano = require('cssnano'),
-```
-
-```，在 ` `，，，，，，，，，，
-
-
-
-  插件：
-
-```bash
-npm install gulp-sass gulp-postcss postcss-assets autoprefixer css-mqpacker cssnano
-```
-
-```，修正 ` ` ` ` 插件：
-
-```bash
-npm install- 
--
-
-
- 
-  
-```
-
-在 `gulpfile.js` 顶部引用它们：
-
-```javascript
-var
-  ...
-  sass = require('gulp-sass'),
-  postcss = require('gulp-postcss'),
-  assets = require('postcss-assets'),
-  autoprefixer = require('autoprefixer'),
-  mqpacker = require('css-mqpacker'),
-  cssnano = require('cssnano'),
-```
-
-```，修正 ` ` ` 插件：
-
-```bash
-npm install gulp-sass gulp-postcss postcss-assets autoprefixer css-mqpacker cssnano
-```
-
-```，，在 `gulpfile.js` 顶部引用它们：
-
-```javascript
-var
-  ...
-  sass = require('gulp-sass'),
-  postcss = require('gulp-postcss'),
-  assets = require('postcss-assets'),
-  autoprefixer = require('autoprefixer'),
-  mqpacker = require('css-mqpacker'),
-  cssnano = require('cssnano'),
-```
-
-```
-npm install - ` -postcss postcss-assets refixer - 
-
-
-
-
-``````，在 `gulpfile.js` 顶部引用它们：
-
-```javascript
-var
-  ...
-  sass = require('gulp-sass'),
-  postcss = require('gulp-postcss'),
-  assets = require('postcss-assets'),
-  autoprefixer = require('autoprefixer'),
-  mqpacker = require('css-mqpacker'),
-  cssnano = require('cssnano'),
-```
-
-```，修正 ` ` ` 插件：
-
-```bash
-npm install  (  -postcss postcss-assets refixer 
- 
-```
-
-```，在 `gulpfile.js` 顶部引用它们：
-
-```javascript
-var
-  ...
-  sass = require('gulp-sass'),
-  postcss = require('gulp-postcss'),
-  assets = require('postcss-assets'),
-  autoprefixer = require('autoprefixer'),
-  mqpacker = require('css-mqpacker'),
-  cssnano = require('cssnano'),
-```
-
-```，修正 ` ` ` ` 插件：
-
-```bash
-npm install gulp-sass gulp-postcss postcss-assets autoprefixer mqpacker cssnano
-```
-
-```，在 `gulpfile.js` 顶部引用它们：
-
-```javascript
-var
-  ...
-  sass = require('gulp-sass'),
-  postcss = require('gulp-postcss'),
-  assets = require('postcss-assets'),
-  autoprefixer = require('autoprefixer'),
-  mqpacker = require('css-mqpacker'),
-  cssnano = require('cssnano'),
-```
-
-```，修正 ` ` ` ` 插件：
-
-```bash
-npm install 
- 
-- 
-- 
--postcss postcss-assets refixer 
- 
-```
-
-```，在 `gulpfile.js` 顶部引用它们：
-
-```javascript
-var
-  ...
-  sass = require('gulp-sass'),
-  postcss = require('gulp-postcss'),
-  assets = require('postcss-assets'),
-  autoprefixer = require('autoprefixer'),
-  mqpacker = require('css-mqpacker'),
-  cssnano = require('cssnano'),
-```
-
-```，修正 ` ` ` ` ` 插件：
-
-```bash
-npm install gulp-sass gulp-postcss postcss-assets autoprefixer mqpacker cssnano
-```
-
-```，在 `gulpfile.js` 顶部引用它们：
-
-```javascript
-var
-  ...
-  sass = require('gulp-sass'),
-  postcss = require('gulp-postcss'),
-  assets = require('postcss-assets'),
-  autoprefixer = require('autoprefixer'),
-  mqpacker = require('css-mqpacker'),
-  cssnano = require('cssnano'),
-```
-
-```
-npm install 
- 
-```
-
-``````，在 `gulpfile.js` 顶部引用它们：
-
-```javascript
-var
-  ...
-  sass = require('gulp-sass'),
-  postcss = require('gulp-postcss'),
-  assets = require('postcss-assets'),
-  autoprefixer = require('autoprefixer'),
-  mqpacker = require('css-mqpacker'),
-  cssnano = require('cssnano'),
-```
-
-```
-npm install gulp-sass gulp-postcss postcss-assets autoprefixer mqpacker cssnano
-```
-
-```，在 `gulpfile.js` 顶部引用它们：
-
-```javascript
-var
-  ...
-  sass = require('gulp-sass'),
-  postcss = require('gulp-postcss'),
-  assets = require('postcss-assets'),
-  autoprefixer = require('autoprefixer'),
-  mqpacker = require('css-mqpacker'),
-  cssnano = require('cssnano'),
-```
-
-```
-npm install gulp-sass gulp-postcss postcss-assets autoprefixer mqpacker cssnano
-```
-
-```，在 `gulpfile.js` 顶部引用它们：
-
-```javascript
-var
-  ...
-  sass = require('gulp-sass'),
-  postcss = require('gulp-postcss'),
-  assets = require('postcss-assets'),
-  autoprefixer = require('autoprefixer'),
-  mqpacker = require('css-mqpacker'),
-  cssnano = require('cssnano'),
-```
-
-```
-npm install gulp-sass gulp-postcss postcss-assets autoprefixer mqpacker cssnano
-```
-
-```，在 `gulpfile.js` 顶部引用它们：
-
-```javascript
-var
-  ...
-  sass = require('gulp-sass'),
-  postcss = require('gulp-postcss'),
-  assets = require('postcss-assets'),
-  autoprefixer = require('autoprefixer'),
-  mqpacker = require('css-mqpacker'),
-  cssnano = require('cssnano'),
-```
-
-```
-npm install gulp-sass gulp-postcss postcss-assets autoprefixer mqpacker cssnano
-```
-
-```，在 `gulpfile.js` 顶部引用它们：
-
-```javascript
-var
-  ...
-  sass = require('gulp-sass'),
-  postcss = require('gulp-postcss'),
-  assets = require('postcss-assets'),
-  autoprefixer = require('autoprefixer'),
-  mqpacker = require('css-mqpacker'),
-  cssnano = require('cssnano'),
-```
-
-```
-npm install gulp-sass gulp-postcss postcss-assets autoprefixer mqpacker cssnano
-```
-
-```，在 `gulpfile.js` 顶部引用它们：
-
-```javascript
-var
-  ...
-  sass = require('gulp-sass'),
-  postcss = require('gulp-postcss'),
-  assets = require('postcss-assets'),
-  autoprefixer = require('autoprefixer'),
-  mqpacker = require('css-mqpacker'),
-  cssnano = require('cssnano'),
-```
-
-```
-npm install gulp-sass gulp-postcss postcss-assets autoprefixer mqpacker cssnano
-```
-
-```，在 `gulpfile.js` 顶部引用它们：
-
-```javascript
-var
-  ...
-  sass = require('gulp-sass'),
-  postcss = require('gulp-postcss'),
-  assets = require('postcss-assets'),
-  autoprefixer = require('autoprefixer'),
-  mqpacker = require('css-mqpacker'),
-  cssnano = require('cssnano'),
-```
-
-```
-npm install 
- 
-```
-
-```javascript
-  // 压缩生产代码
-  if (!devBuild) {
-    page = page.pipe(htmlclean());
-  }
-  return page.pipe(gulp.dest(out));
-});
-```
-
-这复用了 `gulp-newer` 并引入了几个概念：
-
-1. `[images]` 参数表示在处理 HTML 之前必须运行 `images` 任务（HTML 可能会引用图像）。此数组中可以列出任意数量的依赖任务，且所有任务都将在任务函数运行之前完成。
-2. 只有当 `NODE_ENV` 设置为 `production` 时，我们才将 HTML 传递给 `gulp-htmlclean`。因此，HTML 在开发期间将保持未压缩状态，这可能对调试有用。
-
-保存 `gulpfile.js` 并从命令行运行 `gulp html`。`html` 和 `images` 任务都会运行。
-
-## JavaScript 任务
-
-对你来说太简单了？让我们通过构建一个基础的模块打包器来处理所有的 JavaScript 文件。它将：
-
-1. 使用 [gulp-deporder](https://www.npmjs.com/package/gulp-deporder) 插件确保先加载依赖。它会分析每个脚本顶部的注释以确保正确的顺序，例如 `// requires: defaults.js lib.js`。
-2. 使用 [gulp-concat](https://www.npmjs.com/package/gulp-concat) 将所有脚本文件合并成单个 `main.js` 文件，并且
-3. 使用 [gulp-strip-debug](https://www.npmjs.com/package/gulp-strip-debug) 移除所有的 `console` 和 `debugging` 语句，并使用 [gulp-uglify](https://www.npmjs.com/package/gulp-uglify) 压缩代码。此步骤只会在运行生产模式下发生。
-
-安装插件：
-
-```bash
-npm install gulp-deporder gulp-concat gulp-strip-debug gulp-uglify --save-dev
-```
-
-在 `gulpfile.js` 的顶部引用它们：
-
-```javascript
-var
-  ...
-  concat = require('gulp-concat'),
-  deporder = require('gulp-deporder'),
-  stripdebug = require('gulp-strip-debug'),
-  uglify = require('gulp-uglify'),
-```
-
-然后添加一个新的的 `js` 任务：
-
-```javascript
-// JavaScript 处理
-gulp.task('js', function() {
-  var jsbuild = gulp.src(folder.src + 'js/**/*')
-    .pipe(deporder())
-    .pipe(concat('main.js'));
-  if (!devBuild) {
-    jsbuild = jsbuild
-      .pipe(stripdebug())
-      .pipe(uglify());
-  }
-  return jsbuild.pipe(gulp.dest(folder.build + 'js/'));
-});
-```
-
-保存然后运行 `gulp js` 来体验魔法！
-
-## CSS 任务
-
-最后，让我们创建一个 CSS 任务，使用 [gulp-sass](https://www.npmjs.com/package/gulp-sass) 将 `.scss` 文件编译为单个 `.css` 文件。这是用于 [node-sass](https://www.npmjs.com/package/node-sass) 的 Gulp 插件，它绑定到超快的 [Sass C/C++ 引擎](http://sass-lang.com/libsass)（无需安装 Ruby）。我们假设你的 Sass 文件 `scss/main.scss` 负责加载所有部分文件。
-
-我们的任务还将通过 [gulp-postcss](https://github.com/postcss/gulp-postcss) 插件利用 [PostCSS](http://postcss.org/)。PostCSS 需要它自己的插件，我们将安装它们：
-
-* [postcss-assets](https://www.npmjs.com/package/postcss-assets) 用于管理资源。这允许我们使用如 `background('image.png')` 的属性来解析路径，或使用 `background('image.png')` 内联数据编码图像。
-* [autoprefixer](https://www.npmjs.com/package/autoprefixer) 用于自动为 CSS 属性添加厂商前缀。
-* [css-mqpacker](https://www.npmjs.com/package/css-mqpacker) 将同一个媒体查询的多次引用合并到单个规则中。
-* [cssnano](https://www.npmjs.com/package/cssnano) 用于压缩代码。
-
-安装这些插件：
-
-```bash
-npm install gulp-sass gulp-postcss postcss-assets autoprefixer mqpacker cssnano
-```
-
-在 `gulpfile.js` 的顶部引用它们：
-
-```javascript
-var
-  ...
-  sass = require('gulp-sass'),
-  postcss = require('gulp-postcss'),
-  assets = require('postcss-assets'),
-  autoprefixer = require('autoprefixer'),
-  mqpacker = require('css-mqpacker'),
-  cssnano = require('cssnano'),
-```
-
-```javascript
-// HTML 处理
-gulp.task('html', ['images'], function() {
-  var
-    out = folder.build + 'html/',
-    page = gulp.src(folder.src + 'html/**/*')
-      .pipe(newer(out));
-  // 压缩生产代码
-  if (!devBuild) {
-    page = page.pipe(htmlclean());
-  }
-  return page.pipe(gulp.dest(out));
-});
-```
-
-这复用了 `gulp-newer` 并引入了几个概念：
-
-1. `[images]` 参数表示在处理 HTML 之前必须运行 `images` 任务（HTML 可能会引用图像）。此数组中可以列出任意数量的依赖任务，且所有任务都将在任务函数运行之前完成。
-2. 只有当 `NODE_ENV` 设置为 `production` 时，我们才将 HTML 传递给 `gulp-htmlclean`。因此，HTML 在开发期间将保持未压缩状态，这可能对调试有用。
-
-保存 `gulpfile.js` 并从命令行运行 `gulp html`。`html` 和 `images` 任务都会运行。
-
-## JavaScript 任务
-
-对你来说太简单了？让我们通过构建一个基础的模块打包器来处理所有的 JavaScript 文件。它将：
-
-1. 使用 [gulp-deporder](https://www.npmjs.com/package/gulp-deporder) 插件确保先加载依赖。它会分析每个脚本顶部的注释以确保正确的顺序，例如 `// requires: defaults.js lib.js`。
-2. 使用 [gulp-concat](https://www.npmjs.com/package/gulp-concat) 将所有脚本文件合并成单个 `main.js` 文件，并且
-3. 使用 [gulp-strip-debug](https://www.npmjs.com/package/gulp-strip-debug) 移除所有的 `console` 和 `debugging` 语句，并使用 [gulp-uglify](https://www.npmjs.com/package/gulp-uglify) 压缩代码。此步骤只会在运行生产模式下发生。
-
-安装插件：
-
-```bash
-npm install gulp-deporder gulp-concat gulp-strip-debug gulp-uglify --save-dev
-```
-
-在 `gulpfile.js` 的顶部引用它们：
-
-```javascript
-var
-  ...
-  concat = require('gulp-concat'),
-  deporder = require('gulp-deporder'),
-  stripdebug = require('gulp-strip-debug'),
-  uglify = require('gulp-uglify'),
-```
-
-然后添加一个新的的 `js` 任务：
-
-```javascript
-// JavaScript 处理
-gulp.task('js', function() {
-  var jsbuild = gulp.src(folder.src + 'js/**/*')
-    .pipe(deporder())
-    .pipe(concat('main.js'));
-  if (!devBuild) {
-    jsbuild = jsbuild
-      .pipe(stripdebug())
-      .pipe(uglify());
-  }
-  return jsbuild.pipe(gulp.dest(folder.build + 'js/'));
-});
-```
-
-保存然后运行 `gulp js` 来体验魔法！
-
-## CSS 任务
-
-最后，让我们创建一个 CSS 任务，使用 [gulp-sass](https://www.npmjs.com/package/gulp-sass) 将 `.scss` 文件编译为单个 `.css` 文件。这是用于 [node-sass](https://www.npmjs.com/package/node-sass) 的 Gulp 插件，它绑定到超快的 [Sass C/C++ 引擎](http://sass-lang.com/libsass)（无需安装 Ruby）。我们假设你的 Sass 文件 `scss/main.scss` 负责加载所有部分文件。
-
-我们的任务还将通过 [gulp-postcss](https://github.com/postcss/gulp-postcss) 插件利用 [PostCSS](http://postcss.org/)。PostCSS 需要它自己的插件，我们将安装它们：
-
-* [postcss-assets](https://www.npmjs.com/package/postcss-assets) 用于管理资源。这允许我们使用如 `background('image.png')` 的属性来解析路径，或使用 `background('image.png')` 内联数据编码图像。
-* [autoprefixer](https://www.npmjs.com/package/autoprefixer) 用于自动为 CSS 属性添加厂商前缀。
-* [css-mqpacker](https://www.npmjs.com/package/css-mqpacker) 将同一个媒体查询的多次引用合并到单个规则中。
-* [cssnano](https://www.npmjs.com/package/cssnano) 用于压缩代码。
-
-安装这些插件：
-
-```bash
-npm install gulp-sass gulp-postcss postcss-assets autoprefixer mqpacker cssnano
-```
-
-在 `gulpfile.js` 的顶部引用它们：
-
-```javascript
-var
-  ...
-  sass = require('gulp-sass'),
-  postcss = require('gulp-postcss'),
-  assets = require('postcss-assets'),
-  autoprefixer = require('autoprefixer'),
-  mqpacker = require('css-mqpacker'),
-  cssnano = require('cssnano'),
-```
-
-[/content]
-
-```
-Finished 'imagemin' in 5.71 ms
-gulp-imagemin: image1.png (saved 48.7 kB)
-gulp-imagemin: image2.jpg (saved 36.2 kB)
-gulp-imagemin: image3.svg (saved 12.8 kB)
-```
-
-尝试再次运行 `gulp images`，应该不会发生任何变化，因为没有新的图像了。
-
-## HTML 任务
-
-我们现在可以创建一个类似的任务，用于从源 HTML 文件夹复制文件。我们可以使用 [gulp-htmlclean](https://www.npmjs.com/package/gulp-htmlclean) 插件来安全地对 HTML 代码进行压缩化，以移除不必要的空格和属性：
-
-```bash
-npm install gulp-htmlclean --save-dev
-```
-
-然后在 `gulpfile.js` 的顶部引入引用它：
 
 ```javascript
 var
@@ -1269,92 +754,99 @@ var
   newer = require('gulp-newer'),
   imagemin = require('gulp-imagemin'),
   htmlclean = require('gulp-htmlclean'),
-```
-
-我们现在可以在 `gulpfile.js` 的末尾创建一个 `html` 任务：
-
-```javascript
-// HTML 处理
-gulp.task('html', ['images'], function() {
-  var
-    out = folder.build + 'html/',
-    page = gulp.src(folder.src + 'html/**/*')
-      .pipe(newer(out));
-  // 压缩生产代码
-  if (!devBuild) {
-    page = page.pipe(htmlclean());
-  }
-  return page.pipe(gulp.dest(out));
-});
-```
-
-这复用了 `gulp-newer` 并引入了几个概念：
-
-1. `[images]` 参数表示在处理 HTML 之前必须运行 `images` 任务（HTML 可能会引用图像）。此数组中可以列出任意数量的依赖任务，且所有任务都将在任务函数运行之前完成。
-2. 只有当 `NODE_ENV` 设置为 `production` 时，我们才将 HTML 传递给 `gulp-htmlclean`。因此，HTML 在开发期间将保持未压缩状态，这可能对调试有用。
-
-保存 `gulpfile.js` 并从命令行运行 `gulp html`。`html` 和 `images` 任务都会运行。
-
-## JavaScript 任务
-
-对你来说太简单了？让我们通过构建一个基础的模块打包器来处理所有的 JavaScript 文件。它将：
-
-1. 使用 [gulp-deporder](https://www.npmjs.com/package/gulp-deporder) 插件确保先加载依赖。它会分析每个脚本顶部的注释以确保正确的顺序，例如 `// requires: defaults.js lib.js`。
-2. 使用 [gulp-concat](https://www.npmjs.com/package/gulp-concat) 将所有脚本文件合并成单个 `main.js` 文件，并且
-3. 使用 [gulp-strip-debug](https://www.npmjs.com/package/gulp-strip-debug) 移除所有的 `console` 和 `debugging` 语句，并使用 [gulp-uglify](https://www.npmjs.com/package/gulp-uglify) 压缩代码。此步骤只会在运行生产模式下发生。
-
-安装插件：
-
-```bash
-npm install gulp-deporder gulp-concat gulp-strip-debug gulp-uglify --save-dev
-```
-
-在 `gulpfile.js` 的顶部引用它们：
-
-```javascript
-var
-  ...
   concat = require('gulp-concat'),
   deporder = require('gulp-deporder'),
   stripdebug = require('gulp-strip-debug'),
   uglify = require('gulp-uglify'),
+  sass = require('gulp-sass'),
+  postcss = require('gulp-postcss'),
+  assets = require('postcss-assets'),
+  autoprefixer = require('autoprefixer'),
+  mqpacker = require('css-mqpacker'),
+  cssnano = require('cssnano'),
+  // development mode?
+  devBuild = (process.env.NODE_ENV !== 'production'),
+  // folders
+  folder = {
+    src: 'src/',
+    build: 'build/'
+  }
+;
 ```
 
-然后添加一个新的的 `js` 任务：
+然后添加 CSS 任务：
 
 ```javascript
-// JavaScript 处理
-gulp.task('js', function() {
-  var jsbuild = gulp.src(folder.src + 'js/**/*')
-    .pipe(deporder())
-    .pipe(concat('main.js'));
-  if (!devBuild) {
-    jsbuild = jsbuild
-      .pipe(stripdebug())
-      .pipe(uglify());
-  }
-  return jsbuild.pipe(gulp.dest(folder.build + 'js/'));
+// CSS 处理
+gulp.task('css', function() {
+  var postCssOpts = [
+    assets({loadPaths: ['images/']}),
+    autoprefixer({browsers: ['last 2 versions']}),
+    mqpacker,
+    cssnano
+  ];
+  return gulp.src(folder.src + 'scss/main.scss')
+    .pipe(sass({
+      outputStyle: 'nested',
+      precision: 3,
+      errLogToConsole: true
+    }))
+    .pipe(postcss(postCssOpts))
+    .pipe(gulp.dest(folder.build + 'css/'));
 });
 ```
 
-保存然后运行 `gulp js` 来体验魔法！
+### 运行所有任务
 
-## CSS 任务
+现在我们可以定义一个默认任务，一次性运行所有任务：
 
-最后，让我们创建一个 CSS 任务，使用 [gulp-sass](https://www.npmjs.com/package/gulp-sass) 将 `.scss` 文件编译为单个 `.css` 文件。这是用于 [node-sass](https://www.npmjs.com/package/node-sass) 的 Gulp 插件，它绑定到超快的 [Sass C/C++ 引擎](http://sass-lang.com/libsass)（无需安装 Ruby）。我们假设你的 Sass 文件 `scss/main.scss` 负责加载所有部分文件。
+```javascript
+// 默认任务
+gulp.task('default', ['html', 'css', 'js'], function() {
+  console.log('Build complete!');
+});
+```
 
-我们的任务还将通过 [gulp-postcss](https://github.com/postcss/gulp-postcss) 插件利用 [PostCSS](http://postcss.org/)。PostCSS 需要它自己的插件，我们将安装它们：
-
-* [postcss-assets](https://www.npmjs.com/package/postcss-assets) 用于管理资源。这允许我们使用如 `background('image.png')` 的属性来解析路径，或使用 `background('image.png')` 内联数据编码图像。
-* [autoprefixer](https://www.npmjs.com/package/autoprefixer) 用于自动为 CSS 属性添加厂商前缀。
-* [css-mqpacker](https://www.npmjs.com/package/css-mqpacker) 将同一个媒体查询的多次引用合并到单个规则中。
-* [cssnano](https://www.npmjs.com/package/cssnano) 用于压缩代码。
-
-安装这些插件：
+或者你可以单独运行每个任务：
 
 ```bash
-npm install gulp-sass gulp-postcss postcss-assets autoprefixer mqpacker cssnano
+gulp images
+gulp html
+gulp js
+gulp css
 ```
+
+### 监听文件变化
+
+为了在开发过程中自动运行任务，我们可以添加一个监听任务：
+
+```javascript
+// 监听文件变化
+gulp.task('watch', function() {
+  gulp.watch(folder.src + 'images/**/*', ['images']);
+  gulp.watch(folder.src + 'html/**/*', ['html']);
+  gulp.watch(folder.src + 'js/**/*', ['js']);
+  gulp.watch(folder.src + 'scss/**/*', ['css']);
+});
+```
+
+运行 `gulp watch` 将启动监听，当文件发生变化时自动运行相应任务。
+
+### 总结
+
+通过本教程，你学会了如何使用 Gulp.js 创建一个完整的构建流程，包括：
+
+* 图像压缩
+* HTML 压缩
+* JavaScript 合并、去除调试代码和压缩
+* Sass 编译、PostCSS 处理和 CSS 压缩
+* 文件监听和自动化构建
+
+这将大大提高你的开发效率，减少人为错误，并让你专注于编写代码而不是重复性任务。
+
+
+
+npm install gulp-sass gulp-postcss postcss-assets autoprefixer mqpacker cssnano
 
 在 `gulpfile.js` 的顶部引用它们：
 
@@ -1368,39 +860,6 @@ var
   mqpacker = require('css-mqpacker'),
   cssnano = require('cssnano'),
 ```
-
-```，，，，，，，，，，，，，，，，，，，，，，，``` 
-
-  运行 ` ` 任务 
-
-       运行 ` ` 任务， `，` 
-```
-
-```
-
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
-
- 
 
 ## 第 6 步：自动化任务
 
@@ -1418,7 +877,7 @@ gulp.task('run', ['html', 'css', 'js']);
 ```javascript
 // 监听变化
 gulp.task('watch', function() {
-  //图像变化
+  // 图像变化
   gulp.watch(folder.src + 'images/**/*', ['images']);
   // HTML 变化
   gulp.watch(folder.src + 'html/**/*', ['html']);
@@ -1436,30 +895,25 @@ gulp.task('watch', function() {
 gulp.task('default', ['run', 'watch']);
 ```
 
-保存 `gulpfile.js` 并在命令行输入 `gulp`。你的图像、HTML、CSS 和 JavaScript 将被处理，然后 Gulp 将保持活跃监控更新并在需要时重新运行任务。按 Ctrl/Cmd + C 停止监控并返回命令行。
+保存 `gulpfile.js` 并在命令行输入 `gulp`。你的图像、HTML、CSS 和 JavaScript 将被处理，然后 Gulp 将保持活跃监控更新并在需要时重新运行任务。按 `Ctrl/Cmd + C` 停止监控并返回命令行。
 
 ## 第 7 步：获利！
 
 其他你可能觉得有用的插件：
 
-* [gulp-load-plugins](https://www.npmjs.com/package/gulp-load-plugins) - 无需 require 声明即可加载 Gulp 插件模块
+* [gulp-load-plugins](https://www.npmjs.com/package/gulp-load-plugins) - 无需 `require` 声明即可加载 Gulp 插件模块
 * [gulp-preprocess](https://www.npmjs.com/package/gulp-preprocess) - 一个简单的 HTML 和 JavaScript 预处理工具
 * [gulp-less](https://www.npmjs.com/package/gulp-less) - [Less CSS 预处理器](http://lesscss.org/) 插件
-
-
-
-
-
 * [gulp-stylus](https://www.npmjs.com/package/gulp-stylus) - [Stylus CSS 预处理器](http://stylus-lang.com/) 插件
 * [gulp-sequence](https://www.npmjs.com/package/gulp-sequence) - 按特定顺序运行一系列 gulp 任务
 * [gulp-plumber](https://www.npmjs.com/package/gulp-plumber) - 错误处理，防止 Gulp 在失败时停止
 * [gulp-size](https://www.npmjs.com/package/gulp-size) - 显示文件大小和节省空间
-* [gulp-nodemon](https://www.npmjs.com/package/gulp-nodemon) - 使用 [nodemon](https://www.npmjs.com/package/nodemon) 在发生变化时自动重启 Node.js 。
+* [gulp-nodemon](https://www.npmjs.com/package/gulp-nodemon) - 使用 [nodemon](https://www.npmjs.com/package/nodemon) 在发生变化时自动重启 Node.js
 * [gulp-util](https://www.npmjs.com/package/gulp-util) - 包含日志和颜色编码的实用函数
 
 `gulp-util` 中一个实用的方法是 `.noop()`，它会直接传递数据而不执行任何操作。这可以用于更整洁的开发/生产处理代码，例如：
 
-```
+```javascript
 var gutil = require('gulp-util');
 // HTML processing
 gulp.task('html', ['images'], function() {
@@ -1474,7 +928,7 @@ gulp.task('html', ['images'], function() {
 Gulp 也可以调用其他 Node.js 模块 - 它们不需要是插件，例如：
 
 * [browser-sync](https://www.npmjs.com/package/browser-sync) - 在发生变化时自动加载资源或刷新浏览器
-* [del](https://www.npmjs.com/package/del) - 删除文件和文件夹（也许可以在每次运行时清理你的 `build` 文件夹）。
+* [del](https://www.npmjs.com/package/del) - 删除文件和文件夹（也许可以在每次运行时清理你的 `build` 文件夹）
 
 投入一点时间，Gulp 就能节省许多小时的开发沮败感。优势是：
 
@@ -1498,14 +952,13 @@ Gulp 也可以调用其他 Node.js 模块 - 它们不需要是插件，例如：
 
 由 [Vildan Softic](https://www.sitepoint.com/author/vildansoftic/) 和 [Joan Yin](https://github.com/newjs) 同行评审。
 
-每我们需要执行 DOM 操作时，大家都会迅速求助于 jQuery。然而，原生 JavaScript DOM API 本身其实非常强大，而且由于 IE < 11 已经被[官方放弃](https://www.microsoft.com/en-us/WindowsForBusiness/End-of-IE-support)，现在可以无忧地使用。
+每当我们需要执行 DOM 操作时，大家都会迅速求助于 jQuery。然而，原生 JavaScript DOM API 本身其实非常强大，而且由于 IE < 11 已经被[官方放弃](https://www.microsoft.com/en-us/WindowsForBusiness/End-of-IE-support)，现在可以无忧地使用。
 
 在本文中，我将演示如何使用原生 JavaScript 完成一些常见的 DOM 操作任务，即：
 
 * 查询和修改 DOM
 * 修改类（classes）和属性
 * 监听事件
-以及
 * 动画
 
 最后，我将向你展示如何创建一个自己的超轻量 DOM 库，并将其投入到任何项目中。过程中，你会发现使用原生 JS 进行 DOM 操作并不是什么高深科技，而且许多 jQuery 方法在原生 API 中实际上有直接对应方法。
@@ -1520,31 +973,31 @@ Gulp 也可以调用其他 Node.js 模块 - 它们不需要是插件，例如：
 
 可以使用 `.querySelector()` 方法查询 DOM，该方法接受任意 CSS 选择器作为参数：
 
-```
+```javascript
 const myElement = document.querySelector('#foo > div.bar')
 ```
 
 这将返回第一个匹配项（深度优先）。相反，我们可以检查一个元素是否匹配某个选择器：
 
-```
+```javascript
 myElement.matches('div.bar') === true
 ```
 
-如果等想获取所有匹配项，可以使用：
+如果想获取所有匹配项，可以使用：
 
-```
+```javascript
 const myElements = document.querySelectorAll('div.bar')
 ```
 
-如果已经已经有一个元素的引用，我们可以直接查询它的子元素。
+如果已经有一个元素的引用，我们可以直接查询它的子元素。
 
-```
+```javascript
 const myElements = document.querySelector('div.bar')
 ```
 
 ### getElementsByTagName
 
-那么为什么还要用 `getElementsByTagName()` 等其他方法？嗯，一个重要的区别是 `querySelectorAll()` 的结果是动态的（live）。
+那么为什么还要用 `getElementsByTagName()` 等其他方法？嗯，一个重要的区别是 `querySelectorAll()` 的结果是静态的，而 `getElementsByTagName()` 返回的是动态的（live）`HTMLCollection`。
 
 ```javascript
 const elements1 = document.querySelectorAll('div')
@@ -1562,7 +1015,7 @@ elements1.appendChild(newElement)
 
 现在关于 `querySelectorAll()` 有两个坑。第一个坑是我们无法在结果上调用数组方法（就像你从 jQuery 中习惯的那样）。相反，我们必须显式遍历元素。另一个坑是：返回值是一个 `NodeList` 而不是 `Array`。这意味着我们需要将列表转换为数组，或者“借用”数组原型的方法。
 
-```
+```javascript
 // 使用 Array.from()
 Array.from(myElements).forEach(doSomethingElement)
 
@@ -1573,9 +1026,9 @@ Array.prototype.forEach.call(myElements, doSomethingElement)
 [].forEach.call(myElements, doSomethingElement)
 ```
 
-每个元素还有几个自言自懂的只读属性指向“元素族”，所有的都是动态的：
+每个元素还有几个不言自明的只读属性指向“元素族”，所有的都是动态的：
 
-```
+```javascript
 myElement.children
 myElement.firstElementChild
 lastElementChild
@@ -1585,7 +1038,7 @@ nextElementSibling
 
 由于 [Element](https://developer.mozilla.org/en-US/docs/Web/API/element) 接口继承自 [Node](https://developer.mozilla.org/en-US/docs/Web/API/Node) 接口，以下属性也可用：
 
-```
+```javascript
 myElement.childNodes
 myElement.firstChild
 myElement.lastChild
@@ -1597,13 +1050,13 @@ myElement.parentElement
 
 前者只引用元素，而后者（`.parentElement` 除外）可以是任何种类型的节点，例如文本节点。然后我们可以检查给定节点的[类型](https://developer.mozilla.org/en-US/docs/Web/API/Node/nodeType)，例如：
 
-```
+```javascript
 myElement.firstChild.nodeType === 3 // 这是一个文本节点
 ```
 
 和任何对象一样，我们可以使用 `instanceof` 运算符检查节点的原型链：
 
-```
+```javascript
 myElement.firstChild.nodeType instanceof Text
 ```
 
@@ -1611,15 +1064,11 @@ myElement.firstChild.nodeType instanceof Text
 
 修改元素的类非常简单：
 
-```
+```javascript
 myElement.classList.add('foo')
 myElement.classList.remove('bar')
 myElement.classList.toggle('baz')
 ```
-
-
-
-
 
 你可以通过这篇 [Yaphi Berhanu 的快速贴士](https://www.sitepoint.com/add-remove-css-class-vanilla-js/)阅读关于如何修改类的更深入讨论。元素属性可以像任何其他对象的属性一样被访问。
 
@@ -1640,7 +1089,7 @@ Object.assign(myElement, {
 myElement.value = null
 ```
 
-请注意，还有 `.getAttibute()`、`.setAttribute()` 和 `.removeAttribute()` 方法。这些方法直接修改元素的 HTML 属性（而不是 DOM 属性），从而导致浏览器重绘（你可以通过浏览器的开发工具检查元素来观察这些变化）。这种浏览器重绘不仅比仅设置 DOM 属性更耗费更多资源，而且这些方法还可能导致[意外的结果](https://developer.mozilla.org/en-US/docs/Web/API/Element/setAttribute#Notes)。
+请注意，还有 `.getAttribute()`、`.setAttribute()` 和 `.removeAttribute()` 方法。这些方法直接修改元素的 HTML 属性（而不是 DOM 属性），从而导致浏览器重绘（你可以通过浏览器的开发工具检查元素来观察这些变化）。这种浏览器重绘不仅比仅设置 DOM 属性更耗费更多资源，而且这些方法还可能导致[意外的结果](https://developer.mozilla.org/en-US/docs/Web/API/Element/setAttribute#Notes)。
 
 作为经验法则，只有当属性没有对应的 DOM 属性（例如 `colspan`）时，才使用它们；或者如果你真的想“持久化”这些更改到 HTML 中（例如，在克隆元素或修改其父元素的 `.innerHTML` 时保留它们——参见第 3 部分）。
 
@@ -1652,7 +1101,7 @@ CSS 规则可以像其他属性一样应用；但请注意，属性在 JavaScrip
 myElement.style.marginLeft = '2em'
 ```
 
-如果我们需要某些值，可以通过 `.style` 属性获取这些值。然而，这只会带给我们显式应用的样式。要获取计算后的值（computed values），我们可以使用 `.window.getComputedStyle()`。它接收元素并返回一个 [CSSStyleDeclaration](https://developer.mozilla.org/en-US/docs/Web/API/CSSStyleDeclaration)，其中包含了元素本身的样式以及继承自父元素的样式：
+如果我们需要某些值，可以通过 `.style` 属性获取这些值。然而，这只会带给我们显式应用的样式。要获取计算后的值（computed values），我们可以使用 `window.getComputedStyle()`。它接收元素并返回一个 [CSSStyleDeclaration](https://developer.mozilla.org/en-US/docs/Web/API/CSSStyleDeclaration)，其中包含了元素本身的样式以及继承自父元素的样式：
 
 ```javascript
 window.getComputedStyle(myElement).getPropertyValue('margin-left')
@@ -1663,7 +1112,7 @@ window.getComputedStyle(myElement).getPropertyValue('margin-left')
 我们可以像这样移动元素：
 
 ```javascript
-// 将 element1 作为 element2 的最后一个子节点
+// 将 element2 作为 element1 的最后一个子节点
 element1.appendChild(element2)
 
 // 将 element2 插入作为 element1 的子节点，位于 element3 之前
@@ -1678,7 +1127,7 @@ const myElementClone = myElement.cloneNode()
 myParentElement.appendChild(myElementClone)
 ```
 
-`.cloneNode()` 方法可选地接受一个布尔值作为参数；如果设置为 true 将创建一个深拷贝，这意味着它的子元素也会被克隆。
+`.cloneNode()` 方法可选地接受一个布尔值作为参数；如果设置为 `true` 将创建一个深拷贝，这意味着它的子元素也会被克隆。
 
 当然，我们也可以完全创建新的元素或文本节点：
 
@@ -1746,7 +1195,7 @@ myElement.addEventListener('click', function (event) {
 在监听函数内部，`event.target` 指向触发事件元素（`this` 也是如此，除非我们使用了[箭头函数](https://www.sitepoint.com/es6-arrow-functions-new-syntax/)）。因此你可以轻松地访问它的属性：
 
 ```javascript
-// 的 forms 属性是包含所有表单的数组
+// document.forms 属性是包含所有表单的数组
 const myForm = document.forms[0]
 const myInputElements = myForm.querySelectorAll('input')
 Array.from(myInputElements).forEach(el => {
@@ -1770,20 +1219,17 @@ myForm.addEventListener('submit', function (event) {
 })
 ```
 
-
-
-
 另一个重要的事件方法是 `.stopPropagation()`，它会阻止事件向 DOM 树冒泡。这意味着如果我们在某个元素上设置了停止传播的点击监听器（比如），而在它的其中一个父元素上设置了另一个点击监听器，那么在子元素上触发的点击事件将不会在父元素上触发——否则，它将在两个地方都触发。
 
 现在，`.addEventListener()` 接受一个可选的配置对象作为第三个参数，该对象可以包含以下任何布尔属性（默认值均为 `false`）：
 
-- `capture`: 事件将在 DOM 中该元素下方的任何其他元素之前在该元素上触发（事件捕获和冒泡是一篇专门的文章，更多细节请参阅[这里](http://javascript.info/tutorial/bubbling-and-capturing)）。
-- `once`: 正如你可能猜到的，这表示事件将只会触发一次。
-- `passive`: 这意味着 `event.preventDefault()`将被忽略（并且通常会在控制台中产生警告）。
+* `capture`: 事件将在 DOM 中该元素下方的任何其他元素之前在该元素上触发（事件捕获和冒泡是一篇专门的文章，更多细节请参阅[这里](http://javascript.info/tutorial/bubbling-and-capturing)）。
+* `once`: 正如你可能猜到的，这表示事件将只会触发一次。
+* `passive`: 这意味着 `event.preventDefault()` 将被忽略（并且通常会在控制台中产生警告）。
 
 最常用的选项是 `.capture`；事实上，它非常常见，以至于有一个简写：你不需要在配置对象中指定它，只需在这里传递一个布尔值即可：
 
-```
+```javascript
 myElement.addEventListener(type, listener, true)
 ```
 
@@ -1798,7 +1244,7 @@ myElement.addEventListener('change', function listener (event) {
 
 ### 事件委托
 
-另一个实用的模式是事件委托：假设我们有一个表单，并想为其所有的 `input` 子元素添加 `change` 事件监听器。一种方法是如上所示，使用 `myForm.querySelectorAll('input')` 对它们进行迭代。然而，当我们我们可以同样地将其添加到表单本身上并检查 `event.target` 的内容时，这样做是不必要的。
+另一个实用的模式是事件委托：假设我们有一个表单，并想为其所有的 `input` 子元素添加 `change` 事件监听器。一种方法是如上所示，使用 `myForm.querySelectorAll('input')` 对它们进行迭代。然而，当我们可以同样地将其添加到表单本身上并检查 `event.target` 的内容时，这样做是不必要的。
 
 ```javascript
 myForm.addEventListener('change', function (event) {
@@ -1815,18 +1261,18 @@ myForm.addEventListener('change', function (event) {
 
 通常执行动画最干净的方法是应用带有 `transition` 属性的 CSS 类，或使用 CSS `@keyframes`。但如果你需要更大的灵活性（例如用于游戏），也可以用 JavaScript 实现。
 
-原始的方法是让 `window.setTimeout()` 函数不断调用自己，直到所需的动画完成。然而，这种方法低效地强制了快速的文档重流；这种布局抖动（layout thrashing）会导致导致卡顿，尤其是在移动设备上。相反，我们可以使用 `window.requestAnimationFrame()` 同步更新，将所有当前更改调度到下一次浏览器重绘帧。它接受一个回调作为参数，接收当前的（高分辨率）戳：
+原始的方法是让 `window.setTimeout()` 函数不断调用自己，直到所需的动画完成。然而，这种方法低效地强制了快速的文档重流；这种布局抖动（layout thrashing）会导致卡顿，尤其是在移动设备上。相反，我们可以使用 `window.requestAnimationFrame()` 同步更新，将所有当前更改调度到下一次浏览器重绘帧。它接受一个回调作为参数，接收当前的（高分辨率）戳：
 
 ```javascript
 const start = window.performance.now()
 const duration = 2000
-window.requestAnimationFrame(function fadeIn (now)) {
+window.requestAnimationFrame(function fadeIn (now) {
   const progress = now - start
   myElement.style.opacity = progress / duration
   if (progress < duration) {
     window.requestAnimationFrame(fadeIn)
   }
-}
+})
 ```
 
 通过这种方式，我们可以实现非常流畅的动画。如需更详细的讨论，请查看 Mark Brown 写的这篇[文章](https://www.sitepoint.com/quick-tip-game-loop-in-javascript/)。
@@ -1877,7 +1323,7 @@ const html = (nodeList, newHtml) => {
 
 ### Demo
 
-为了结束这篇文章，这里有一个 [CodePen](https://codpen.io/SitePoint/aJaggB/)，展示了上述许多概念，用于实现一个简单的灯箱效果。
+为了结束这篇文章，这里有一个 [CodePen](https://codepen.io/SitePoint/aJaggB/)，展示了上述许多概念，用于实现一个简单的灯箱效果。
 
 ## 结论
 
@@ -1887,7 +1333,7 @@ const html = (nodeList, newHtml) => {
 
 ## 第四章：Webpack 入门指南
 
-作者 Mark Brown
+作者：Mark Brown
 
 [Webpack](https://webpack.org/) 已成为现代 Web 开发中最重要的工具之一。它主要是一个 JavaScript 模块打包器，但它可以转换所有的前端资源，如 HTML 和 CSS，甚至图片。它可以更好地控制应用的 HTTP 请求数量，并允许使用 npm 包。
 
@@ -1899,7 +1345,7 @@ const html = (nodeList, newHtml) => {
 
 让我们用 npm 初始化新项目并安装 webpack：
 
-```
+```bash
 mkdir webpack-demo
 cd webpack-demo
 npm init -y
@@ -1928,7 +1374,7 @@ touch index.html src/app.js webpack.config.js
 ```javascript
 // src/app.js
 const root = document.querySelector('#root')
-root.innerHTML = `<p>Hello webpack.</p>` 
+root.innerHTML = `<p>Hello webpack.</p>`
 ```
 
 ```javascript
@@ -1936,13 +1382,6 @@ root.innerHTML = `<p>Hello webpack.</p>`
 const webpack = require('webpack')
 const path = require('path')
 const config = {
-```
-
-
-
-
-
-```javascript
   context: path.resolve(__dirname, 'src'),
   entry: './app.js',
   output: {
@@ -1971,7 +1410,9 @@ module.exports = config
 
 为了运行这些配置，我们需要安装三个包：`babel-core`、`webpack` 的加载器 `babel-loader` 以及用于我们想要编写的 JavaScript 风格的预设 `babel-preset-es2015`。`{ modules: false }` 启用 [Tree Shaking](http://www.2ality.com/2015/12/webpack-tree-shaking.html)，从包中移除未使用的导出以减小文件大小。
 
-`npm install babel-core babel-loader babel-preset-es2015 --save-dev`
+```bash
+npm install babel-core babel-loader babel-preset-es2015 --save-dev
+```
 
 最后，将 `package.json` 中的 `scripts` 部分替换为以下内容：
 
@@ -1988,24 +1429,28 @@ module.exports = config
 
 现在你应该可以在浏览器中加载 `index.html` 并看到“Hello webpack.” 了。
 
-`open index.html`
+```bash
+open index.html
+```
 
 打开 `dist/bundle.js` 查看 `webpack` 做了什么，顶部是 `webpack` 的模块引导代码，最底部是我们的模块。你现在可能觉得并不惊艳，但如果你已经走了这一步，现在就可以开始编写 ES6 模块，`webpack` 将能够创建一个可以在所有浏览器中运行的生产包。
 
 使用 `Ctrl + C` 停止 `webpack` 并运行 `npm run build` 在生产模式下编译我们的包。
 
-注意，包的大小从 2.61 kB 减到了 585 字节。再次查看 `dist/bundle.js`，你会看到一大堆混乱的代码，我们的包已经通过 `UglifyJS` 了压缩，代码运行方式完全相同，但使用了最少的字符完成。
+注意，包的大小从 2.61 kB 减到了 585 字节。再次查看 `dist/bundle.js`，你会看到一大堆混乱的代码，我们的包已经通过 `UglifyJS` 压缩，代码运行方式完全相同，但使用了最少的字符完成。
 
 ## 模块 (Modules)
 
 `webpack` 原生支持如何消费各种格式的 JavaScript 模块，其中最著名的两个：
 
-- ES2015 `import` 语句
-- CommonJS `require()` 语句
+* ES2015 `import` 语句
+* CommonJS `require()` 语句
 
 我们可以通过安装 [lodash](https://lodash.com/) 并从 `app.js` 导入它来测试：
 
-`npm install lodash --save`
+```bash
+npm install lodash --save
+```
 
 ```javascript
 // src/app.js
@@ -2069,63 +1514,44 @@ root.innerHTML = `<pre>${JSON.stringify(managerGroups, null, 2)}</pre>`
 
 我们已经接触到了 `babel-loader`，它是许多 [loaders](https://webpack.js.org/loaders/) 之一，你可以配置它们来告诉 `webpack` 在遇到不同文件类型的导入时该做什么。你可以将加载器链联成一系列转换，观察其是否起作用的好方法是可以在 JavaScript 中引入 Sass。
 
-为了让它运行，我们需要安装三个包：`babel-core`、`webpack` 加载器 `babel-loader` 以及针对我们想要编写的 JavaScript 风格的预设 `babel-preset-es2015`。`{ modules: false }` 启用 [Tree Shaking]，从包中移除未使用的导出以减小文件大小。
+为了让它运行，我们需要安装相关包：
 
-`npm install babel-core babel-loader babel-preset-es2015 --save-dev`
+```bash
+npm install node-sass sass-loader css-loader style-loader --save-dev
+```
 
-最后，将 `package.json` 中的 `scripts` 部分替换为以下内容：
-（此处省略代码块，与上文保持一致）
+更新 `webpack.config.js`：
 
-在命令行中运行 `npm start` 将以监听模式启动 `webpack`，每当 `src` 目录中的 `.js` 文件发生变化时，它都会重新编译我们的包。控制台中的输出会告诉我们正在创建的包，关注包的数量和大小是非常重要的。
+```javascript
+// webpack.config.js
+module: {
+  rules: [{
+    test: /\.scss$/,
+    use: ['style-loader', 'css-loader', 'sass-loader']
+  }]
+}
+```
 
-![](img/00003.jpg)
+在 `app.js` 中导入样式：
 
-现在你应该可以在浏览器中加载 `index.html` 并看到“Hello webpack.” 了。
+```javascript
+// src/app.js
+import './style.scss'
+// ...
+```
 
-`open index.html`
+创建 `src/style.scss`：
 
-打开 `dist/bundle.js` 查看 `webpack` 做了什么，顶部是 `webpack` 的模块引导代码，最底部是我们的模块。你现在可能觉得并不惊艳，但如果你已经走了这一步，现在就可以开始编写 ES6 模块，`webpack` 将能够创建一个可以在所有浏览器中运行的生产包。
+```scss
+/* src/style.scss */
+$bluegrey: #2B3A42;
+pre {
+  background: $bluegrey;
+  padding: 20px;
+}
+```
 
-使用 `Ctrl + C` 停止 `webpack` 并运行 `npm run build` 在生产模式下编译我们的包。
-
-注意，包的大小从 2.61 kB 减到了 585 字节。再次查看 `dist/bundle.js`，你会看到一大堆混乱的代码，我们的包已经通过 `UglifyJS` 压缩，代码运行方式完全相同，但使用了最少的字符完成。
-
-## 模块 (Modules)
-
-`webpack` 原生支持如何消费各种格式的 JavaScript 模块，其中最著名的两个：
-
-- ES2015 `import` 语句
-- CommonJS `require()` 语句
-
-我们可以通过安装 [lodash](https://lodash.com/) 并从 `app.js` 导入它来测试：
-
-`npm install lodash --save`
-
-（代码块省略）
-
-运行 `npm start` 启动 `webpack` 并刷新 `index.html`，你应该看到一个按经理分组的人员数组。
-
-让我们将人员数组移动到自己的模块 `people.js` 中：
-
-（代码块省略）
-
-我们可以简单地通过相对路径从 `app.js` 导入它。
-
-（代码块省略）
-
-注意：没有相对路径的导入（如 `'lodash/collection'`）是安装到 `/node_modules` 的 npm 模块，你自己的模块始终需要像 `'./people'` 这样的相对路径，你可以以此区分它们。
-
-## 加载器 (Loaders)
-
-我们已经接触到了 `babel-loader`，它是许多 [loaders](https://webpack.js.org/loaders/) 之一，你可以配置它们来告诉 `webpack` 在遇到不同文件类型的导入时该做什么。你可以将加载器链联成一系列转换，观察其是否起作用的好方法是可以在 JavaScript 中引入 Sass。
-
-为了让它运行，我们需要安装三个包：`babel-core`、`webpack` 加载器 `babel-loader` 以及针对我们想要编写的 JavaScript 风格的预设 `babel-preset-es2015`。`{ modules: false }` 启用 [Tree Shaking]，从包中移除未使用的导出以减小文件大小。
-
-（注：由于原文中存在大量重复，译文已按要求去除了重复输出，并确保逻辑连贯）
-
-
-
-使用 `Ctrl + C` 和 `npm start` 重启构建。
+运行 `npm start` 重启构建。
 
 使用以下命令下载[测试图片](https://raw.githubusercontent.com/sitepoint-editors/webpack-demo/master/src/code.png)：
 
@@ -2254,7 +1680,7 @@ root.innerHTML = `<p>${people.length} people.</p>`
   <title>Hello webpack</title>
 </head>
 <body>
-  <div id="root"></</div>
+  <div id="root"></div>
   <script src="dist/commons.js"></script>
   <script src="dist/app.bundle.js"></script>
 </body>
@@ -2262,7 +1688,7 @@ root.innerHTML = `<p>${people.length} people.</p>`
 ```
 
 ```html
-<!-- index.html -->
+<!-- admin.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -2270,22 +1696,29 @@ root.innerHTML = `<p>${people.length} people.</p>`
   <title>Hello webpack</title>
 </head>
 <body>
-  <div id="root"></</div>
+  <div id="root"></div>
   <script src="dist/commons.js"></script>
   <script src="dist/admin.bundle.js"></script>
 </body>
 </html>
 ```
 
+## 代码分割
 
+Webpack 允许你将代码库分割成多个包，以便按需加载。这对于大型应用程序特别有用，因为它可以减少初始加载时间。
 
+使用动态 `import()` 语法（符合 [ECMAScript 提案](https://github.com/tc39/proposal-dynamic-import)）：
 
 ```javascript
-System.import('./dashboard').then((dashboard) => {
-  dashboard.draw()
-}).catch((err) => {
-  console.log("Chunk loading failed")
-})
+// src/routes.js
+const routes = {
+  dashboard() {
+    System.import('./dashboard').then((dashboard) => {
+      dashboard.draw()
+    }).catch((err) => {
+      console.log("Chunk loading failed")
+    })
+  }
 }
 // demo async loading with a timeout
 setTimeout(routes.dashboard, 1000)
@@ -2324,16 +1757,16 @@ python -m SimpleHTTPServer 8001
 
 ## Webpack Dev Server
 
-热重载可以通过每次文件更改时自动刷新来极大提升开发者体验。只需安装它并使用 `webpackdev-server` 启动，即可开始你的旅程。
+热重载可以通过每次文件更改时自动刷新来极大提升开发者体验。只需安装它并使用 `webpack-dev-server` 启动，即可开始你的旅程。
 
 ```bash
-npm install webpackdev-server@2.2.0-rc.0 --save-dev
+npm install webpack-dev-server@2.2.0-rc.0 --save-dev
 ```
 
-修改 `package.json` 中的 `start` 脚本
+修改 `package.json` 中的 `start` 脚本：
 
 ```json
-"start": "webpackdev-server --inline",
+"start": "webpack-dev-server --inline",
 ```
 
 运行 `npm start` 启动服务器并在浏览器中打开 [`localhost:8080`](http://localhost:8080)。
@@ -2342,19 +1775,19 @@ npm install webpackdev-server@2.2.0-rc.0 --save-dev
 
 ## Hot Module Replacement (热模块替换)
 
-如果你对热重载印象深刻，那么[热模块替换](https://webpack.js.org/concepts/hot-module-replacement) (HMR) 将让你大眼眼镜。
+如果你对热重载印象深刻，那么[热模块替换](https://webpack.js.org/concepts/hot-module-replacement) (HMR) 将让你大开眼界。
 
 现在是 2017 年，你可能已经在开发带有全局状态的单页应用了。在开发过程中，你会对组件进行许多小更改，并希望在交互的真实浏览器中看到这些更改。通过手动刷新页面或使用热重载，你的全局状态会丢失，导致你需要从头开始。热模块替换彻底改变了这一点。
 
 在理想的开发者工作流中，你可以对模块进行更改，它会被编译并替换，而无需刷新浏览器（丢失本地状态）或触及其他模块。虽然仍有时需要手动刷新，但 HMR 仍然可以为你节省大量时间，感觉就像未来一样。
 
-对 `package.json` 中的 `start` 脚本进行最后的编辑。
+对 `package.json` 中的 `start` 脚本进行最后的编辑：
 
 ```json
-"start": "webpackdev-server --inline --hot",
+"start": "webpack-dev-server --inline --hot",
 ```
 
-在 `app.js` 顶部告诉 webpack 接受此模块及其任何依赖的热重载。
+在 `app.js` 顶部告诉 webpack 接受此模块及其任何依赖的热重载：
 
 ```javascript
 if (module.hot) {
@@ -2363,7 +1796,7 @@ if (module.hot) {
 // ...
 ```
 
-注意：`webpackdev-server --hot` 将 `module.hot` 设置为 `true`，这仅包含开发环境。在生产环境构建时，`module.hot` 被设置为 `false`，因此这些会被从包中移除。在 `webpack.config.js` 的插件列表中添加 `NamedModulesPlugin` 以改进控制台日志。
+注意：`webpack-dev-server --hot` 将 `module.hot` 设置为 `true`，这仅包含开发环境。在生产环境构建时，`module.hot` 被设置为 `false`，因此这些会被从包中移除。在 `webpack.config.js` 的插件列表中添加 `NamedModulesPlugin` 以改进控制台日志。
 
 ```javascript
 plugins: [
@@ -2375,8 +1808,8 @@ plugins: [
 最后，在页面上添加一个元素，我们可以在其中添加一些文本，以确认当我们修改模块时没有发生全页刷新。
 
 ```html
-<<body>
-  <div id="root"></</div>
+<body>
+  <div id="root"></div>
 ```
 
 使用 `npm start` 重启服务器并见证热重载吧！
@@ -2387,7 +1820,7 @@ plugins: [
 
 ## Hot Reload CSS (热重载 CSS)
 
-更改 `style.scss` 中 `<pre>`元素的背景颜色，你会发现它正在被 HMR 替换。
+更改 `style.scss` 中 `<pre>` 元素的背景颜色，你会发现它正在被 HMR 替换。
 
 ```css
 pre {
@@ -2397,7 +1830,7 @@ pre {
 
 事实证明，当你使用 `style-loader` 时，CSS 的 HMR 是免费提供的，你不需要做任何特殊处理。我们通过将 CSS 模块提取到无法替换的外部 CSS 文件中切断了这条链条。如果我们把 Sass 规则恢复到原始状态并从插件列表中移除 `extractCSS`，你也将看到你的 Sass 支持热重载。
 
-```js
+```javascript
 {
   test: /\.scss$/,
   loader: ['style-loader', 'css-loader', 'sass-loader']
@@ -2420,11 +1853,7 @@ Webpack 的作者 [Tobias Koppers](https://twitter.com/wSokra) 写了一篇信�
 
 应该选择 Angular 还是 React？如今 JavaScript 框架两极分化的格局让许多开发者在这场争论中难以抉择。无论你是试图从何开始的新手，还是为下一个项目挑选框架的自由职业者，或是为公司规划战略愿景的企业级架构师，你可能都会从这一话题的明智见解中受益。
 
-
-
-
-
-在选择任何任何工具之前，你需要回答两个简单的问题：“它本身是一个好工具吗？”以及“它是否适合我的用例？”。这两个问题单看来看都没有任何意义，所以你总是需要同时记住这两点。好吧，这些问题可能并没有那么简单，所以我们将尝试将它们拆解为更小的问题。
+在选择任何工具之前，你需要回答两个简单的问题：“它本身是一个好工具吗？”以及“它是否适合我的用例？”。这两个问题单独看来都没有任何意义，所以你总是需要同时记住这两点。好吧，这些问题可能并没有那么简单，所以我们将尝试将它们拆解为更小的问题。
 
 ## 关于工具本身的问题：
 
@@ -2455,11 +1884,11 @@ React 和 Angular 都源自优秀的背景，所以看起来在这方面我们�
 
 ## React
 
-React 由 Facebook 开发并维护，并应用于其自己的产品中，[包括 Instagram 和 WhatsApp](https://github.com/facebook/react/wiki/sites-using-react)。它已经存在了大约[三个半以来](https://facebook.github.io/react/blog/2013/06/05/why-react.html)，所以它并不算新。它也是 GitHub 上[最受欢迎的](https://github.com/search?q=stars:%3E1&s=stars&type=Repositories)项目之一，在编写时大约有 60,000 个星。听起来很不错。
+React 由 Facebook 开发并维护，并应用于其自己的产品中，[包括 Instagram 和 WhatsApp](https://github.com/facebook/react/wiki/sites-using-react)。它已经存在了大约[三个半年以来](https://facebook.github.io/react/blog/2013/06/05/why-react.html)，所以它并不算新。它也是 GitHub 上[最受欢迎的](https://github.com/search?q=stars:%3E1&s=stars&type=Repositories)项目之一，在编写时大约有 60,000 个星。听起来很不错。
 
 ## Angular
 
-Angular（2 及以上版本）出现的时间比 React 短，但如果你算上它的前身 AngularJS 的历史，情况就平分了。它由 Google 维护，并用于 [AdWords 和 Google Fiber](http://angularjs.blogspot.com/2015/11/how-google-uses-angular-2-with-dart.html)。由于 AdWords 是 Google 的核心项目之一，显而易见他们对它下下了大注，不太可能短期内消失。
+Angular（2 及以上版本）出现的时间比 React 短，但如果你算上它的前身 AngularJS 的历史，情况就平分了。它由 Google 维护，并用于 [AdWords 和 Google Fiber](http://angularjs.blogspot.com/2015/11/how-google-uses-angular-2-with-dart.html)。由于 AdWords 是 Google 的核心项目之一，显而易见他们对它下了大注，不太可能短期内消失。
 
 ## 特性
 
@@ -2498,9 +1927,9 @@ Angular 开箱即提供了许多现代 Web 应用所需的特性。一些标准�
 * 用于 CSS 封装的[各种技术](https://github.com/MicheleBertoli/css-in-js)；
 * 用于额外的单元测试工具的 [Enzyme](https://github.com/airbnb/enzyme)。
 
-我们发现选择自己库的自由是令人解放的。这使我们能够根据每个项目的特定需求来定制我们的技术栈，而且我们发现学习新库的成本并不。
+我们发现选择自己库的自由是令人解放的。这使我们能够根据每个项目的特定需求来定制我们的技术栈，而且我们发现学习新库的成本并不高。
 
-## 语言、范式和模式。
+## 语言、范式和模式
 
 从每个框架的特性中退一步，让我们看看哪些高级概念在两个框架中都是流行的。
 
@@ -2508,21 +1937,21 @@ Angular 开箱即提供了许多现代 Web 应用所需的特性。一些标准�
 
 在思考 React 时，有几件重要的事情进入脑海：JSX、Flow 和 Redux。
 
-#### JSX
+### JSX
 
-[JSX](https://facebook.github.io/react/docs/introducing-jsx.html) 对许多开发者是有争议的话题：有些人喜欢它，另一些人认为它是巨大的退步。React 没有遵循传统的做法，而是在组件内部将它们结合。虽然将标记与逻辑混合的话题可能有争议，但它有一个不可否的益处：静态分析。如果你在 JSX 中编写错误，编译器将发出错误而不是静默运行。这有助于发现拼写错误和其他愚蠢的错误。
+[JSX](https://facebook.github.io/react/docs/introducing-jsx.html) 对许多开发者是有争议的话题：有些人喜欢它，另一些人认为它是巨大的退步。React 没有遵循传统的做法，而是在组件内部将它们结合。虽然将标记与逻辑混合的话题可能有争议，但它有一个不可否认的益处：静态分析。如果你在 JSX 中编写错误，编译器将发出错误而不是静默运行。这有助于发现拼写错误和其他愚蠢的错误。
 
-#### Flow
+### Flow
 
 [Flow](https://flow.org/) 是一个由 Facebook 开发的 JavaScript 类型检查工具。它可以解析代码并检查常见的类型错误，例如隐式转换或空引用。与具有类似目的 TypeScript 不同，它不需要你迁移到一种新语言并为代码添加注解。在 Flow 中，类型注解是可选的，可以为分析器提供额外的提示。这使得 Flow 对于想要使用静态代码分析但不想重写现有代码的人来说是一个很好的选择。
 
 进一步阅读：[更好的 JavaScript](https://www.sitepoint.com/writing-better-javascript-with-flow/)
 
-#### Redux
+### Redux
 
-[Redux](http://redux.js.org/) 是一个有助于清晰管理状态变化的库。它受到了 [Flux](http://facebook.github.io/flux/) 的启发，但进行了简化。Redux 的核心思想是应用程序的状态由单个对象表示，并通过称为 reducer 的函数进行更改。Reducer 本身是与组件分离的纯函数实现了更好的关注点分离和可测试性。
+[Redux](http://redux.js.org/) 是一个有助于清晰管理状态变化的库。它受到了 [Flux](http://facebook.github.io/flux/) 的启发，但进行了简化。Redux 的核心思想是应用程序的状态由单个对象表示，并通过称为 reducer 的函数进行更改。Reducer 本身是与组件分离的纯函数，实现了更好的关注点分离和可测试性。
 
-如果你在一个简单的项目上工作，那么引入 Redux 可能会过度复杂，但对于中大型项目，它是一个可靠的选择。该库已变得如此流行，以至于有项目](https://github.com/angular-redux/store) 在 Angular 中实现了它。
+如果你在一个简单的项目上工作，那么引入 Redux 可能会过度复杂，但对于中大型项目，它是一个可靠的选择。该库已变得如此流行，以至于有[项目](https://github.com/angular-redux/store)在 Angular 中实现了它。
 
 这三个特性都可以极大地提高你的开发者体验：JSX 和 Flow 让你能够快速发现潜在错误的地方，而 Redux 将帮助为项目实现清晰的结构。
 
@@ -2530,11 +1959,7 @@ Angular 开箱即提供了许多现代 Web 应用所需的特性。一些标准�
 
 Angular 也有一些有趣的王牌，即 TypeScript 和 RxJS。
 
-#### TypeScript
-
-
-
-
+### TypeScript
 
 [TypeScript](https://www.typescriptlang.org/) 是一种构建在 JavaScript 之上由微软开发的新语言。它是 `JavaScript ES2015` 的超集，并包含了该语言新版本的特性。你可以用它代替 `Babel` 来编写顶尖的 JavaScript。它还具有极其强大的类型系统，可以通过结合注解和类型推断对你的代码进行静态分析。
 
@@ -2542,7 +1967,7 @@ Angular 也有一些有趣的王牌，即 TypeScript 和 RxJS。
 
 [延伸阅读：[TypeScript 简介：面向 Web 的静态类型](https://www.sitepoint.com/introduction-to-typescript/)]
 
-## RxJS
+### RxJS
 
 [RxJS](http://reactivex.io/rxjs/) 是一个响应式编程库，允许更灵活地处理异步操作和事件。它是观察者模式（`Observer`）和迭代器模式（`Iterator`）与函数式编程的结合。RxJS 允许你将任何内容视为值的连续流，并对其执行各种操作，如映射、过滤、分割或合并。
 
@@ -2564,7 +1989,7 @@ Angular 也有一些有趣的王牌，即 TypeScript 和 RxJS。
 
 现代框架的一个流行趋势是拥有一个 CLI 工具，帮助你启动项目，而无需自己配置构建。`Angular` 提供了 [Angular CLI](https://cli.angular.io/)来实现这一目标。它允许你通过几个命令即可生成并运行项目。所有负责构建应用程序、启动开发服务器和运行测试的脚本都隐藏在 `node_modules` 中。你也可以用它在开发期间生成新代码。这使得设置新项目变得轻而易举。
 
-[延伸阅读：终极 Angular CLI 参考指南](https://www.sitepoint.com/ultimate-angular-cli-reference/)]
+[延伸阅读：[终极 Angular CLI 参考指南](https://www.sitepoint.com/ultimate-angular-cli-reference/)]
 
 ### Ionic 2
 
@@ -2572,7 +1997,7 @@ Angular 也有一些有趣的王牌，即 TypeScript 和 RxJS。
 
 ### Material design components
 
-如果你是 Material design 的粉丝，你会很高兴听到听到 `Angular` 已经有一套 [Material 组件库](https://material.angular.io/)可用。目前，它仍处于早期阶段且略显粗糙，但最近收到了大量贡献，所以我们可能很快就能看到改进。
+如果你是 Material design 的粉丝，你会很高兴听到 `Angular` 已经有一套 [Material 组件库](https://material.angular.io/)可用。目前，它仍处于早期阶段且略显粗糙，但最近收到了大量贡献，所以我们可能很快就能看到改进。
 
 ### Angular universal
 
@@ -2588,7 +2013,7 @@ Angular 也有一些有趣的王牌，即 TypeScript 和 RxJS。
 
 ### Create react app
 
-[Createreact-app](https://github.com/facebookincubator/create-react-app) 是一个用于 `React` 的 CLI 工具，可快速设置新项目。与 `Angular CLI` 类似，它允许你生成新项目、启动开发服务器并创建包。它使用 Facebook 较新的测试运行器 [Jest](https://www.sitepoint.com/test-react-components-jest/) 进行单元测试，它本身也有一些很棒的功能。它还支持使用环境变量进行灵活的应用分析、本地开发中的后端代理、`Flow` 以及其他功能。查看简短的 [createreact-app 介绍](https://www.sitepoint.com/create-react-app/) 以获取更多信息。
+[Create-react-app](https://github.com/facebookincubator/create-react-app) 是一个用于 `React` 的 CLI 工具，可快速设置新项目。与 `Angular CLI` 类似，它允许你生成新项目、启动开发服务器并创建包。它使用 Facebook 较新的测试运行器 [Jest](https://www.sitepoint.com/test-react-components-jest/) 进行单元测试，它本身也有一些很棒的功能。它还支持使用环境变量进行灵活的应用分析、本地开发中的后端代理、`Flow` 以及其他功能。查看简短的 [create-react-app 介绍](https://www.sitepoint.com/create-react-app/) 以获取更多信息。
 
 ### React Native
 
@@ -2610,11 +2035,7 @@ Angular 也有一些有趣的王牌，即 TypeScript 和 RxJS。
 
 ## Storybook
 
-
-
-
-
-[Storybook](https://getstorybook.io/) 是一个用于 React 的组件开发环境。它允许你快速搭建一个独立的应用程序来展示你的组件。此外，它提供了许多插件，用于组件的文档化、开发、测试和设计。我们发现，能够独立于应用程序的其他部分来开发组件是非常用的。你可以从之前的文章中[了解更多关于 Storybook 的信息](https://www.sitepoint.com/react-storybook-develop-beautiful-user-interfaces-with-ease/)。
+[Storybook](https://getstorybook.io/) 是一个用于 React 的组件开发环境。它允许你快速搭建一个独立的应用程序来展示你的组件。此外，它提供了许多插件，用于组件的文档化、开发、测试和设计。我们发现，能够独立于应用程序的其他部分来开发组件是非常有用的。你可以从之前的文章中[了解更多关于 Storybook 的信息](https://www.sitepoint.com/react-storybook-develop-beautiful-user-interfaces-with-ease/)。
 
 > 在 [Awesome React 列表](https://github.com/enaqx/awesome-react) 中还有许多其他可用库和工具。
 
@@ -2626,7 +2047,7 @@ Angular 也有一些有趣的王牌，即 TypeScript 和 RxJS。
 
 使用 React 时，你遇到的第一个就是 `JSX`。对于一些开发者来说，写它看起来似乎很别扭，但它并没有增加多少复杂性；只需表达式（实际上是 JavaScript）和一种特殊的类 HTML 语法。你还需要学习如何编写组件、使用 `props` 进行配置以及管理内部状态。你不需要学习任何新的逻辑结构或循环，因为所有这些都是纯 JavaScript。
 
-[官方教程](https://facebook.github.io/react/docs/hello-world.html)是学习 React 的极佳起点。一旦你完成了该教程，就可以[熟悉路由器](https://reacttraining.com/react-router/web/guides/quick-start)。`react router v4` 可能会稍微复杂且不符合常规，但并不可担心。使用 `Redux` 需要进行范式转移，以学习如何按照该库建议的方式来完成已经熟悉的任务。免费的 [Redux 入门](https://egghead.io/courses/getting-started-with-redux) 视频课程可以快速向你介绍核心概念。根据你的项目的大小和复杂度，你可能需要寻找并学习一些额外的库，这可能是棘手的部分，但在那之后一切都应该顺风顺利。
+[官方教程](https://facebook.github.io/react/docs/hello-world.html)是学习 React 的极佳起点。一旦你完成了该教程，就可以[熟悉路由器](https://reacttraining.com/react-router/web/guides/quick-start)。`react router v4` 可能会稍微复杂且不符合常规，但并不可担心。使用 `Redux` 需要进行范式转移，以学习如何按照该库建议的方式来完成已经熟悉的任务。免费的 [Redux 入门](https://egghead.io/courses/getting-started-with-redux) 视频课程可以快速向你介绍核心概念。根据你的项目的大小和复杂度，你可能需要寻找并学习一些额外的库，这可能是棘手的部分，但在那之后一切都应该顺风顺水。
 
 我们对开始使用 React 是如此简单感到非常惊讶。即使是具有后端开发背景且前端开发经验有限的人也能快速跟上。你在这一过程中可能会遇到的错误信息通常是清晰的，并提供了关于如何解决底层问题的解释。最困难的部分可能是为所有所需功能找到合适的库，但结构化和开发应用程序是极其简单的。
 
@@ -2634,11 +2055,17 @@ Angular 也有一些有趣的王牌，即 TypeScript 和 RxJS。
 
 学习 Angular 将向你介绍比 React 更多的新概念。首先，你需要熟悉 `TypeScript`。对于具有 `Java` 或 `.NET` 等静态类型语言经验的开发者来说，这可能比 `JavaScript` 更容易理解，但对于纯 JavaScript 开发者来说，这可能需要花费一些精力。
 
-框架本身拥有丰富的学习主题，从基础主题（如模块、依赖注入、装饰器、组件、服务、管道、模板和指令）到更高级的主题（如变更检测、区域、`AoT 编译` 和 `Rx.js`）。这些都包含在[文档](https://angular.io/docs/ts/latest/quickstart.html)中。`Rx.js` 本身就是一个沉重的话，在[官方网站](http://reactivex.io/) 上有非常详细的描述。虽然在基础层面上相对容易使用，但在转向高级主题时，它会变得更加复杂。
+
+
+# 框架学习主题与选择指南
+
+## Angular 学习曲线
+
+框架本身拥有丰富的学习主题，从基础主题（如模块、依赖注入、装饰器、组件、服务、管道、模板和指令）到更高级的主题（如变更检测、区域、`AoT 编译` 和 `Rx.js`）。这些都包含在[文档](https://angular.io/docs/ts/latest/quickstart.html)中。`Rx.js` 本身就是一个沉重的话题，在[官方网站](http://reactivex.io/) 上有非常详细的描述。虽然在基础层面上相对容易使用，但在转向高级主题时，它会变得更加复杂。
 
 总而言之，我们注意到 Angular 的门槛比 React 高。新概念的庞大数量让新手感到困惑。即使在你开始之后，体验也可能有些坎坷，因为你需要不断记住诸如 `Rx.js` 订阅管理、变更检测性能和[箱子里的香蕉](https://angular.io/docs/ts/latest/guide/template-syntax.html)（是的，这是文档中的真实建议）。我们经常遇到太晦涩而无法理解的错误信息，所以我们不得不在 Google 上搜索它们并祈祷有完全匹配的结果。
 
-似乎我们在这里偏于 React，我们确实是如此。我们过在规模和复杂度相当的 Angular 和 React 项目中入职新开发者的经验，不知为何，使用 React 的过程总是更顺畅。但是，正如我之前提到的，这取决于许多因素，对你来说可能会有所不同。
+似乎我们在这里偏向 React，我们确实是如此。我们在规模和复杂度相当的 Angular 和 React 项目中入职新开发者的经验表明，不知为何，使用 React 的过程总是更顺畅。但是，正如我之前提到的，这取决于许多因素，对你来说可能会有所不同。
 
 ## 结合实际背景
 
@@ -2664,28 +2091,25 @@ Angular 也有一些有趣的王牌，即 TypeScript 和 RxJS。
 
 一旦你为一个项目选择了框架，你会被诱惑在接下来的项目中使用完全相同的栈。不要这样做。虽然保持技术栈的一致是一个好主意，但不要盲目地使用相同的方法。在开始每个项目之前，花时间再次回答这些问题。可能对于下一个项目，答案会不同，或者格局会发生变化。此外，如果你有幸使用不熟悉的技术栈做一个小项目，尽管尝试吧。这类实验将为你提供宝贵的经验。
 
-## 第 6 章：将你的网站改造为渐进式 Web 应用
+# 第 6 章：将你的网站改造为渐进式 Web 应用
 
 作者 Craig Buckler
 
 同行评审：[AJ Latour](https://github.com/ajlatour)、[Panayiotis «pvgr» Velisarakos](https://github.com/pvgr) 和 [Dave Maxwell](https://github.com/davemaxwell77)。
 
-
-
-
-最近，渐进式 Web 应用（PWAs）引起了广泛关注，许多人质疑它们是否代表了（移动端）Web 的未来。我不会陷入原生应用与 PWA 之间的争论，但有一点是肯定的——它们在增强移动端和提升用户体验方面发挥了巨大作用。考虑到移动 Web 访问量到 2018 年将超过所有其他设备的总和，你还能负担得忽视这一趋势吗？
+最近，渐进式 Web 应用（PWAs）引起了广泛关注，许多人质疑它们是否代表了（移动端）Web 的未来。我不会陷入原生应用与 PWA 之间的争论，但有一点是肯定的——它们在增强移动端和提升用户体验方面发挥了巨大作用。考虑到移动 Web 访问量到 2018 年将超过所有其他设备的总和，你还能负担得起忽视这一趋势吗？
 
 好消息是，制作一个 PWA 并不困难。事实上，将现有的网站转换为 PWA 是完全可能的。这正是我在本教程中将要做的——当你完成时，你将拥有一个行为像原生 Web 应用的网站。它可以在离线工作，并拥有自己的主屏幕图标。
 
 ## 什么是渐进式 Web 应用？
 
-渐进式 Web 应用（称为“PWAs”）是 Web 技术领域的一项激动创新。PWAs 结合了多种技术，使 Web 应用运行起来类似于原生移动应用。它为开发者和用户带来的收益克服了纯 Web 端或纯原生方案的局限：
+渐进式 Web 应用（称为“PWAs”）是 Web 技术领域的一项激动人心的创新。PWAs 结合了多种技术，使 Web 应用运行起来类似于原生移动应用。它为开发者和用户带来的收益克服了纯 Web 端或纯原生方案的局限：
 
 1. 你只需要开发一个使用开放标准 W3C Web 技术的应用。无需开发独立的原生代码库。
 2. 用户可以在安装前发现并尝试你的应用。
 3. 无需使用 AppStore，无需遵守晦涩的规则或支付费用。应用程序更新会自动进行，无需用户交互。
 4. 用户会收到“安装”提示，这会在他们的主屏幕上添加一个图标。
-5. 启动时，PWA 会显示一个吸引的启动屏。
+5. 启动时，PWA 会显示一个吸引人的启动屏。
 6. 如果必要，可以修改浏览器外壳选项以提供全屏体验。
 7. 核心文件被缓存在本地，因此 PWAs 的响应比标准 Web 应用更快（它们甚至比原生应用更快）。
 8. 安装非常轻量——可能只有几百 KB 的缓存数据。
@@ -2694,11 +2118,11 @@ Angular 也有一些有趣的王牌，即 TypeScript 和 RxJS。
 
 虽然现在还处于早期阶段，但[案例研究结果是积极的](https://developers.google.com/web/showcase/)。印度最大的电子商务网站 Flipkart 在放弃原生应用转用 PWA 后，[销售转化率提升了 70%，站内时长增加了三倍](https://developers.google.com/web/showcase/2016/flipkart)。全球最大的商业交易平台阿里巴巴也经历了类似的[76% 转化率增长](https://developers.google.com/web/showcase/2016/alibaba)。
 
-Firefox、Chrome 以及其他基于 Blink 的浏览器已提供可靠的 PWA 技术支持。微软正在开发 Edge 的实现方案。苹果仍保持沉默，尽管在 [WebKit 五年计划中有令人前景的评论](https://trac.webkit.org/wiki/FiveYearPlanFall2015)。幸运的是，浏览器支持目前大多并不重要……
+Firefox、Chrome 以及其他基于 Blink 的浏览器已提供可靠的 PWA 技术支持。微软正在开发 Edge 的实现方案。苹果仍保持沉默，尽管在 [WebKit 五年计划中有令人期待的评论](https://trac.webkit.org/wiki/FiveYearPlanFall2015)。幸运的是，浏览器支持目前大多并不重要……
 
 ## 渐进式 Web 应用是渐进式增强
 
-你的应用仍然可以在不支持 PWA 技术的浏览器中运行。用户无法获得离线功能的好处，但一切将继续像以前一样工作。考虑到投入产比的回报，没有理由不向你的系统中添加 PWA 技术。
+你的应用仍然可以在不支持 PWA 技术的浏览器中运行。用户无法获得离线功能的好处，但一切将继续像以前一样工作。考虑到投入产出比的回报，没有理由不向你的系统中添加 PWA 技术。
 
 ## 它不仅仅是应用
 
@@ -2708,7 +2132,7 @@ Google 领导了[PWA 运动](https://developers.google.com/web/progressive-web-a
 
 演示代码可在 [`github.com/sitepoint-editors/pwa-retrofit`](https://github.com/sitepoint-editors/pwa-retrofit) 获取。
 
-它了一个简单的四页网站，包含几张图片、一个样式表和一个主 JavaScript 文件。该网站在所有现代浏览器（IE10+）中均可运行。如果浏览器支持 PWA 技术，用户可以在离线时阅读之前过的页面。
+它包含一个简单的四页网站，包含几张图片、一个样式表和一个主 JavaScript 文件。该网站在所有现代浏览器（IE10+）中均可运行。如果浏览器支持 PWA 技术，用户可以在离线时阅读之前访问过的页面。
 
 要运行代码，请确保已安装 [Node.js](https://nodejs.org/)，然后在终端中启动提供的 Web 服务器：
 
@@ -2725,7 +2149,7 @@ node ./server.js [port]
 1. 使用 `Cmd/Ctrl + C` 停止 Web 服务器，或
 2. 在开发者工具的 Network 或 Application - Service Workers 标签页中勾选 Offline 复选框。
 
-重新访问你之前过的任何页面，它们将仍然加载。访问一个你没过的页面，将看到一个包含“你处于离线状态”的页面，其中列出了可选页面列表：
+重新访问你之前访问过的任何页面，它们将仍然加载。访问一个你没访问过的页面，将看到一个包含“你处于离线状态”的页面，其中列出了可选页面列表：
 
 ![](img/0001.jpg)
 
@@ -2735,14 +2159,10 @@ node ./server.js [port]
 
 ![](img/0019.jpg)
 
-
-
-
 ```json
 {
   "type": "image/png",
-  },
-  [
+  "icons": [
     {
       "src": "/images/logo/logo256.png",
       "sizes": "256x256",
@@ -2767,7 +2187,7 @@ node ./server.js [port]
 - `short_name`: 当空间不足以显示全名时使用的短名称
 - `description`: 应用程序的详细描述
 - `start_url`: 启动程序的相对 URL（通常为 `/`）
-- `scope`: 导航范围。例如，范围为 `app` 将将该应用限制在相应文件夹内
+- `scope`: 导航范围。例如，范围为 `app` 将该应用限制在相应文件夹内
 - `background-color`: 用于启动页和浏览器框架的背景颜色（如果需要）
 - `theme_color`: 应用程序的颜色，通常与背景相同，会影响应用的显示方式
 - `orientation`: 偏好的方向：`any`、`natural`、`landscape`、`landscape-primary`、`landscape-secondary`、`portrait`、`portrait-primary` 和 `portrait-secondary`
@@ -2801,7 +2221,7 @@ Service workers 可能会令人困惑，但你应该能够根据自己的需求�
 
 Service workers 对三个主要事件做出响应：install（安装）、activate（激活）和 fetch（获取）。
 
-## Install 事件
+### Install 事件
 
 该事件在应用程序安装时发生。它通常用于使用 [Cache API](https://developer.mozilla.org/en-US/docs/Web/API/Cache) 缓存基本文件。
 
@@ -2812,10 +2232,6 @@ Service workers 对三个主要事件做出响应：install（安装）、activa
 3. 必须缓存的文件列表。
 4. 可选的缓存文件数组。
 
-
-
-
-
 ```javascript
 if (newreq.ok) cache.put(event.request, newreq.clone());
 return newreq;
@@ -2823,7 +2239,6 @@ return newreq;
 // app is offline
 .catch(() => offlineAsset(url));
 });
-);
 });
 ```
 
@@ -2934,28 +2349,36 @@ Firefox 在工具菜单的 Service Workers 选项提供了一个 JavaScript 调�
 
 ## PWA 注意事项
 
-渐进式 Web 应用（PWA）需要新的技术，因此建议采取谨慎态度。manifest 参数 `display: minimal-ui` 或 `display: browser` 对于大多数网站可能是最好的。## URL 隐藏
+渐进式 Web 应用（PWA）需要新的技术，因此建议采取谨慎态度。manifest 参数 `display: minimal-ui` 或 `display: browser` 对于大多数网站可能是最好的。
 
-演示隐藏了地址栏，除非你只有一个应用。缓存负载
+### URL 隐藏
+
+演示隐藏了地址栏，除非你只有一个应用。
+
+### 缓存负载
 
 你可以缓存网站上的所有页面。但对于有成千上万页面的网站是否可行？可能考虑：
 
 *   仅缓存重要页面例如首页和最新的
 *   不缓存图片、视频和其他大文件
 *   定期清理旧文件
-*   提供“存储此页面”按钮让用户选择缓存什么。缓存刷新
+*   提供“存储此页面”按钮让用户选择缓存什么。
+
+### 缓存刷新
 
 演示从缓存中查找资源，这在用户离线时很棒，但意味着他们在在线时可能查看旧页面。
 
 图片和视频的 URL 永远不会更改，因此长期缓存很少有问题。你可以通过 `Cache-Control` HTTP 头部确保它们缓存至少一年（31,536,000 秒）：
 
-`Cache-Control: max-age=3153600`
+`Cache-Control: max-age=31536000`
 
 页面、CSS 和脚本文件可能会更频繁地更改，你可以设置较短的 24 小时过期并在在线时进行服务器验证：
 
 `Cache-Control: must-revalidate, max-age=86400`
 
-你也可以考虑缓存失效技术以确保旧资源无法被使用，例如将你的 CSS 文件命名为 `styles-abc123.css` 并在每次发布时更改哈希值。可能会变得复杂，所以我建议阅读 Jake Archibald 的 [缓存最佳实践与 max-age 阱](https://jakearchibald.com/2016/caching-best-practices/)。有用链接
+你也可以考虑缓存失效技术以确保旧资源无法被使用，例如将你的 CSS 文件命名为 `styles-abc123.css` 并在每次发布时更改哈希值。可能会变得复杂，所以我建议阅读 Jake Archibald 的 [缓存最佳实践与 max-age 陷阱](https://jakearchibald.com/2016/caching-best-practices/)。
+
+## 有用链接
 
 如果你想了解更多关于渐进式 Web 应用，以下资源非常有用：
 
@@ -2963,17 +2386,13 @@ Firefox 在工具菜单的 Service Workers 选项提供了一个 JavaScript 调�
 *   [Progressive Web Apps](https://developers.google.com/web/progressive-web-apps/)
 *   [你的 PWA](https://codelabs.developers.google.com/codelabs/your-first-pwapp/)
 *   [Mozilla Service Worker Cookbook](https://serviceworke.rs/)
-[MDN 使用 Service Workers](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API/Using_Service_Workers)
+*   [MDN 使用 Service Workers](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API/Using_Service_Workers)
 
-第 7 章：成为更好的 Node 开发者的 10 条建议
+# 第 7 章：成为更好的 Node 开发者的 10 条建议
 
 作者 Azat Mardan
 
-
-
-
-
-我在 2012 年加入 Storify 时开始全职从事 Node 开发。从那时起，我从未回头过，也从未觉得想念 Python、Ruby、Java 或 PHP —— 这些在我过去的十年 Web 开发中使用过的语言。
+我在 2012 年加入 Storify 时开始全职从事 Node 开发。从那时起，我从未回头过，也从未觉得想念 Python、Ruby、Java 或 PHP —— 这些是我在过去的十年 Web 开发中使用过的语言。
 
 Storify 对我来说是一份有趣的工作，因为与许多其他公司不同，Storify 使用（可能现在仍在使用）JavaScript 运行一切。你会发现，大多数公司，尤其是像 PayPal、Walmart 或 Capital One 这样的大公司，只在技术栈的某些部分使用 Node。通常它们将其作为 API 网关或编排层。这很棒。但对于软件工程师来说，没有什么比完全沉浸在 Node 环境中更棒的。
 
@@ -2988,8 +2407,8 @@ Storify 对我来说是一份有趣的工作，因为与许多其他公司不同
 7. **返回回调或使用 if ... else** — 为了保险起见，返回一个回调以防止执行继续。
 8. **监听错误事件** — 几乎所有的 Node 类/对象都扩展了事件发射（观察者模式）并发出 `error` 事件。务必监听它。
 9. **了解你的 npm** — 使用 `-S` 或 `-D` 安装模块，而不是 `--save` 或 `--save-dev`。
-10. **在 package.json 中使用精确版本**: npm 在你使用 `-S` 时会愚蠢地默认添加插入符号（^），因此请手动删除它们以锁定版本。永远不要在应用中信任语义版本（semver），但在开源模块中可以这样做。
-11. **额外 — 使用不同的依赖项**。将项目仅在开发时需要的项放在 `devDependencies` 中，然后使用 `npm i --production`。非必需依赖项越多，漏洞风险就越大。
+10. **在 package.json 中使用精确版本** — npm 在你使用 `-S` 时会愚蠢地默认添加插入符号（^），因此请手动删除它们以锁定版本。永远不要在应用中信任语义版本（semver），但在开源模块中可以这样做。
+11. **额外 — 使用不同的依赖项** — 将项目仅在开发时需要的项放在 `devDependencies` 中，然后使用 `npm i --production`。非必需依赖项越多，漏洞风险就越大。
 
 所以，让我们逐一分析每一个吧。准备好了吗？
 
@@ -3005,7 +2424,7 @@ Object.freeze(module.wrap)
 
 为什么要避免复杂？根据一个传说，一句起源于美国海军的名言是：KEEP IT SIMPLE STUPID（保持简单，大笨蛋 —— 或者它应该是“保持简单，你大笨蛋”？）。这是有原因的。人类大脑在任何时候的工作记忆中都只能容纳五到七项内容。这是一个事实。
 
-通过将你的代码模块化为更小的部分，你和其他开发者可以更好地理解和推理它。你也可以更好地测试它。考虑一下这个例子，
+通过将你的代码模块化为更小的部分，你和其他开发者可以更好地理解和推理它。你也可以更好地测试它。考虑一下这个例子：
 
 ```
 app.use(function(req, res, next) {
@@ -3080,10 +2499,6 @@ app.post('/connect', (req, res) => {
 })
 ```
 
-
-
-
-
 我在上一节中提到过 `require` 是被缓存的，但有趣的是，我们可以在 `module.exports` 之外编写代码。例如：
 
 ```javascript
@@ -3097,7 +2512,7 @@ module.exports = () => {
 
 ## 始终检查错误
 
-Node 并不是 Java。在 Java 中，你抛出错误是因为是因为在大多数情况下，如果发生错误，你不希望程序继续运行。在 Java 中，你可以通过单个 `try...catch` 在更高层级处理多个错误。
+Node 并不是 Java。在 Java 中，你抛出错误是因为在大多数情况下，如果发生错误，你不希望程序继续运行。在 Java 中，你可以通过单个 `try...catch` 在更高层级处理多个错误。
 
 Node 则并非如此。由于 Node 使用了[事件循环](https://www.youtube.com/watch?v=8aGhZQkoFbQ) 并异步执行，因此任何错误在发生时都会与任何错误处理器（如 `try...catch`）的上下文隔离开来。这在 Node 中是没用的：
 
@@ -3203,9 +2618,9 @@ req.on('error', (error) => {
 
 这篇文章是两部分之一。我们已经涵盖了大量内容，从处理回调和异步代码到检查错误。我希望你从中发现了新的或有用的内容。如果你喜欢，请务必查看第二部分：[Node.js 实践：来自大师的启示](https://www.sitepoint.com/node-js-best-practices-from-gurus/)。
 
-## 第 8 章：函数式 JavaScript 简介
+# 第 8 章：函数式 JavaScript 简介
 
-M. David
+作者 M. David
 
 你听说过 JavaScript 是一种函数式语言，或者至少它支持函数式编程。但什么是函数式编程？而且，如果你开始学习编程范式，对于你一直编写的 JavaScript 来说？
 
@@ -3242,8 +2657,6 @@ function capWords(input) {
 
 document.getElementById("main_button").onclick = getText;
 ```
-
-
 
 这段简小的代码片段中发生了许多操作。变量在全局作用域被定义。值在函数之间传递并修改。DOM 方法与原生 JavaScript 混合在一起。函数名没有很好的描述性，这部分部分是因为整个程序依赖于一个可能存在也可能不存在的上下文。但如果你恰好在 HTML 文档的浏览器中运行这段代码，且其中定义了一个 `<button id="main_button">`，你可能会被提示输入一些文本，然后看到一个 `alert` 框，显示该文本中每个单词的首字母大写的结果。
 
@@ -3282,7 +2695,7 @@ document.getElementById("main_button").onclick = getText;
 }());
 ```
 
-在在这个面向对象的版本中，构造函数模拟了一个类来构建我们想要的对象。方法存储在新对象的原型上，以保持低内存占用。所有代码都隔离在一个匿名的立即执行函数表达式中，因此不会污染全局作用域。甚至还使用了 `"use strict"` 指令来利用最新的 JavaScript 引擎，并且旧式的 `onclick` 方法被全新的 `addEventListener` 取代，因为现在还有谁在用 IE8 或更早版本呢？这样的脚本可能会插入到 HTML 文档 `<body>` 元素的末尾，以确保在处理之前所有 DOM 都已加载，从而使其它依赖的 `<button>` 是可用的。
+在这个面向对象的版本中，构造函数模拟了一个类来构建我们想要的对象。方法存储在新对象的原型上，以保持低内存占用。所有代码都隔离在一个匿名的立即执行函数表达式中，因此不会污染全局作用域。甚至还使用了 `"use strict"` 指令来利用最新的 JavaScript 引擎，并且旧式的 `onclick` 方法被全新的 `addEventListener` 取代，因为现在还有谁在用 IE8 或更早版本呢？这样的脚本可能会插入到 HTML 文档 `<body>` 元素的末尾，以确保在处理之前所有 DOM 都已加载，从而使其它依赖的 `<button>` 是可用的。
 
 尽管经过了这些重构，仍然存在许多导致我们走到这里的命令式风格痕迹。构造函数中的方法依赖于父对象作用域的变量。有一个循环结构用于遍历字符串数组的所有成员。有一个 `counter` 变量，除了增加 `for` 循环的进度外没有其他用途。还有一些方法会产生修改其定义之外变量的副作用。这一切使得代码更加脆弱、可移植性更差，并且更难在这个狭窄的上下文之外测试这些方法。
 
@@ -3306,10 +2719,9 @@ document.getElementById("main_button").onclick = getText;
 }());
 ```
 
-你注意到这个版本短了了吗？我们只定义了两个函数：`capify` 和 `processWords`。每一个都是纯函数，这意味着它们对于任何给定的输入都会返回相同的的结果。在这里使用 `map` 代替 `for` 循环，消除了 `counter` 变量，并帮助我们的代码变得整洁得多。
+你注意到这个版本短了吗？我们只定义了两个函数：`capify` 和 `processWords`。每一个都是纯函数，这意味着它们对于任何给定的输入都会返回相同的结果。在这里使用 `map` 代替 `for` 循环，消除了 `counter` 变量，并帮助我们的代码变得整洁得多。
 
-
-
+# Chart.js 入门指南
 
 我选择 Chart.js 是因为它可以被快速学习和利用。它的设计初衷是简单性，但又具有极高的定制性。根据我的经验，图表库分布在一个复杂性光谱上，越复杂的库提供的定制化程度越深，但学习曲线也越陡峭。Chart.js 是最容易学习、最简单的库之一，且不会严重限制你的选择。它自带了八种不同的图表类型，可以涵盖你几乎所有的数据可视化需求。
 
@@ -3330,14 +2742,14 @@ Chart.js 由开源社区以高标准进行活跃维护。它最近达到了 2.0 
 2) 一个 `<canvas>` 元素，因为 Chart.js 利用了 HTML5 canvas。
 
 ```html
-</canvas><canvas id="myChart"></canvas>
+<canvas id="myChart"></canvas>
 ```
 
 或者，你可以使用包管理器下载该库。更多信息请参阅[入门指南](http://www.chartjs.org/docs/#getting-started)。
 
 简单吧，对吧？现在，废话不多说，让我们来看看 Chart.js 提供了什么。
 
-# 折线图
+## 折线图
 
 这就是在 Chart.js 中创建一个最小折线图所需的所有内容。只需要在声明 HTML5 canvas 之后，将其放在 `<body>` 内部某处的 `<script></script>` 标签中即可。
 
@@ -3381,43 +2793,21 @@ var myChart = new Chart(ctx, {
 
 在这里我们正在创建图表对象。我暂时排除了数据，以便关注 `type` 属性，它决定了我们想要的图表类型。Chart.js 的 `new Chart()` 构造函数接受两个参数：
 
-1. 要渲染图表的 `<canvas><canvas>` 元素的引用，或者是其 2d 绘图上下文的引用（在这里我们使用的是 2d）。无论使用哪一个，Chart.js 的惯例将其称为 `ctx`。
-2. 一个包含 Chart.js 用于构建你的图表的数据和配置的字面量对象。必需的属性是 `type` 和 `data`。在我们的示例中，`type` 为 'line'，因为我们想要折线图。`data` 是你用于填充图表的数据。 Chart.js 使用数组来确定图形的位置，因此 'apples' 的第一个点值将为 '12'，第二个将为 '19$，依此类推。添加新行就像添加一个带有 `label` 和 `data` 的新对象一样简单。
+1. 要渲染图表的 `<canvas>` 元素的引用，或者是其 2d 绘图上下文的引用（在这里我们使用的是 2d）。无论使用哪一个，Chart.js 的惯例将其称为 `ctx`。
+2. 一个包含 Chart.js 用于构建你的图表的数据和配置的字面量对象。必需的属性是 `type` 和 `data`。在我们的示例中，`type` 为 'line'，因为我们想要折线图。`data` 是你用于填充图表的数据。 Chart.js 使用数组来确定图形的位置，因此 'apples' 的第一个点值将为 '12'，第二个将为 '19'，依此类推。添加新行就像添加一个带有 `label` 和 `data` 的新对象一样简单。
 
 最后，我为每个集合设置了 rgba 背景色，使其更具吸引力。要了解更多关于折线图的信息，请[查看文档](http://www.chartjs.org/docs/#line-chart)
 
 专业提示：点击图表的任何图例（此处为 "Apples" 和 "Oranges"）将切换显示。
 
-# 柱状图
+## 柱状图
 
-柱状图是易用的。易学、易利用、易安装。如果你想深入研究实际代码，请[查看 GitHub 项目](https://github.com/modernjsant/chartjs/Chart.js)。
-
-使用 Chart.js 只需要两个东西。
-
-1) 库 - 对于本指南，我建议使用 CDN，因为这是快速上手的最简单方法。
-
-```html
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.4/Chart.min.js"></script>
-```
-
-2) 一个 `<canvas>` 元素，因为 Chart.js 利用了 HTML5 canvas。
-
-```html
-</canvas><canvas id="myChart"></canvas>
-```
-
-或者，你可以使用包管理器下载该库。更多信息请参阅[入门指南](http://www.chartjs.org/docs/#getting-started)。
-
-简单吧，对吧？现在，废话不多说，让我们来看看 Chart.js 提供了什么。
-
-# 折线图
-
-这就是在 Chart.js 中创建一个最小折线图所需的所有内容。只需要在声明 HTML5 canvas 之后，将其放在 `<body>` 内部某处的 `<script></script>` 标签中即可。
+柱状图同样易于创建。只需将 `type` 属性更改为 `'bar'` 即可。
 
 ```javascript
 var ctx = document.getElementById('myChart').getContext('2d');
 var myChart = new Chart(ctx, {
-  type: 'line',
+  type: 'bar',
   data: {
     labels: ['M', 'T', 'W', 'T', 'F', 'S', 'S'],
     datasets: [{
@@ -3433,41 +2823,13 @@ var myChart = new Chart(ctx, {
 });
 ```
 
-查看 [CodePen](http://codepen.io) 上 SitePoint 发布的 [2 - Line chart](http://codepen.io/SitePoint/pen/WGZGNE/) ([@SitePoint](http://codepen.io/SitePoint))。
+查看 [CodePen](http://codepen.io) 上 SitePoint 发布的 [3 - Bar chart](http://codepen.io/SitePoint/pen/WGZGNE/) ([@SitePoint](http://codepen.io/SitePoint))。
 
-![](img/00002.jpg)
+![](img/00003.jpg)
 
-如果这段代码看起来很复杂，别担心！所有的 Chart.js 示例大部分都遵循上述格式，所以你只需要学习一次。让我们逐行理解正在发生什么。
+柱状图的配置与折线图几乎相同，只是 `type` 不同。你可以通过设置 `backgroundColor` 和 `borderColor` 来自定义柱子的外观。
 
-```javascript
-var ctx = document.getElementById("myChart").getContext('2d');
-```
 
-这一行获取了我们之前创建的 `<canvas>` 元素的引用，然后对其调用了 `getContext` 方法。`getContext` 方法返回一个对象，该对象[提供了方法和属性](https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D) 用于在画布上绘制。我们将其存储在名为 `ctx` 的变量中。
-
-```javascript
-var myChart = new Chart(ctx, {
-  type: 'line',
-  data: // 折线数据数组在这里
-});
-```
-
-在这里我们正在创建图表对象。我暂时排除了数据，以便关注 `type` 属性，它决定了我们想要的图表类型。Chart.js 的 `new Chart()` 构造函数接受两个参数：
-
-1. 要渲染图表的 `<canvas><canvas>` 元素的引用，或者是其 2d 绘图上下文的引用（在这里我们使用的是 2d）。无论使用哪一个，Chart.js 的惯例将其称为 `ctx`。
-2. 一个包含 Chart.js 用于构建你的图表的数据和配置的字面量对象。必需的属性是 `type` 和 `data`。在我们的示例中，`type` 为 'line'，因为我们想要折线图。`data` 是你用于填充图表的数据。 Chart.js 使用数组来确定图形的位置，因此 'apples' 的第一个点值将为 '12$，第二个将为 '19$，依此类推。添加新行就像添加一个带有 `label` 和 `data` 的新对象一样简单。
-
-最后，我为每个集合设置了 rgba 背景色，使其更具吸引力。要了解更多关于折线图的信息，请[查看文档](http://www.chartjs.org/docs/#line-chart)
-
-专业提示：点击图表的任何图例（此处为 "Apples" 和 "Oranges"）将切换显示。
-
-# 柱状图
-
-柱状图是易用的。易学、易利用、易安装。如果你想深入研究实际代码，请[查看 GitHub 项目](https://github.com/modernjsant/chartjs/Chart.js)。
-
-使用 Chart.js 只需要两个东西。
-
-1) 库 - 对于本指南，我建议使用 CDN，因为这是快速上手的最简单方法。
 
 ```html
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.4/Chart.min.js"></script>
@@ -3476,299 +2838,7 @@ var myChart = new Chart(ctx, {
 2) 一个 `<canvas>` 元素，因为 Chart.js 利用了 HTML5 canvas。
 
 ```html
-</canvas><canvas id="myChart"></canvas>
-```
-
-或者，你可以使用包管理器下载该库。更多信息请参阅[入门指南](http://www.chartjs.org/docs/#getting-started)。
-
-简单吧，对吧？现在，废话不多说，让我们来看看 Chart.js 提供了什么。
-
-# 折线图
-
-这就是在 Chart.js 中创建一个最小折线图所需的所有内容。只需要在声明 HTML5 canvas 之后，将其放在 `<body>` 内部某处的 `<script></script>` 标签中即可。
-
-```javascript
-var ctx = document.getElementById('myChart').getContext('2d');
-var myChart = new Chart(ctx, {
-  type: 'line',
-  data: {
-    labels: ['M', 'T', 'W', 'T', 'F', 'S', 'S'],
-    datasets: [{
-      label: 'apples',
-      data: [12, 19, 3, 17, 6, 3, 7],
-      backgroundColor: "rgba(153,255,51,0.4)"
-    }, {
-      label: 'oranges',
-      data: [2, 29, 5, 5, 2, 3, 10],
-      backgroundColor: "rgba(255,153,0,0.4)"
-    }]
-  }
-});
-```
-
-查看 [CodePen](http://codepen.io) 上 SitePoint 发布的 [2 - Line chart](http://codepen.io/SitePoint/pen/WGZGNE/) ([@SitePoint](http://codepen.io/SitePoint))。
-
-![](img/00002.jpg)
-
-如果这段代码看起来很复杂，别担心！所有的 Chart.js 示例大部分都遵循上述格式，所以你只需要学习一次。让我们逐行理解正在发生什么。
-
-```javascript
-var ctx = document.getElementById("myChart").getContext('2d');
-```
-
-这一行获取了我们之前创建的 `<canvas>` 元素的引用，然后对其调用了 `getContext` 方法。`getContext` 方法返回一个对象，该对象[提供了方法和属性](https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D) 用于在画布上绘制。我们将其存储在名为 `ctx` 的变量中。
-
-```javascript
-var myChart = new Chart(ctx, {
-  type: 'line',
-  data: // 折线数据数组在这里
-});
-```
-
-在这里我们正在创建图表对象。我暂时排除了数据，以便关注 `type` 属性，它决定了我们想要的图表类型。Chart.js 的 `new Chart()` 构造函数接受两个参数：
-
-1. 要渲染图表的 `<canvas><canvas>` 元素的引用，或者是其 2d 绘图上下文的引用（在这里我们使用的是 2d）。无论使用哪一个，Chart.js 的惯例将其称为 `ctx`。
-2. 一个包含 Chart.js 用于构建你的图表的数据和配置的字面量对象。必需的属性是 `type` 和 `data`。在我们的示例中，`type` 为 'line'，因为我们想要折线图。`data` 是你用于填充图表的数据。 Chart.js 使用数组来确定图形的位置，因此 'apples' 的第一个点值将为 '12$，第二个将为 '19$，依此类推。添加新行就像添加一个带有 `label` 和 `data` 的新对象一样简单。
-
-最后，我为每个集合设置了 rgba 背景色，使其更具吸引力。要了解更多关于折线图的信息，请[查看文档](http://www.chartjs.org/docs/#line-chart)
-
-专业提示：点击图表的任何图例（此处为 "Apples" 和 "Oranges"）将切换显示。
-
-# 柱状图
-
-柱状图是易用的。易学、易利用、易安装。如果你想深入研究实际代码，请[查看 GitHub 项目](https://github.com/modernjsant/chartjs/Chart.js)。
-
-使用 Chart.js 只需要两个东西。
-
-1) 库 - 对于本指南，我建议使用 CDN，因为这是快速上手的最简单方法。
-
-```html
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.4/Chart.min.js"></script>
-```
-
-2) 一个 `<canvas>` 元素，因为 Chart.js 利用了 HTML5 canvas。
-
-```html
-</canvas><canvas id="myChart"></canvas>
-```
-
-或者，你可以使用包管理器下载该库。更多信息请参阅[入门指南](http://www.chartjs.org/docs/#getting-started)。
-
-简单吧，对吧？现在，废话不多说，让我们来看看 Chart.js 提供了什么。
-
-# 折线图
-
-这就是在 Chart.js 中创建一个最小折线图所需的所有内容。只需要在声明 HTML5 canvas 之后，将其放在 `<body>` 内部某处的 `<script></script>` 标签中即可。
-
-```javascript
-var ctx = document.getElementById('myChart').getContext('2d');
-var myChart = new Chart(ctx, {
-  type: 'line',
-  data: {
-    labels: ['M', 'T', 'W', 'T', 'F', 'S', 'S'],
-    datasets: [{
-      label: 'apples',
-      data: [12, 19, 3, 17, 6, 3, 7],
-      backgroundColor: "rgba(153,255,51,0.4)"
-    }, {
-      label: 'oranges',
-      data: [2, 29, 5, 5, 2, 3, 10],
-      backgroundColor: "rgba(255,153,0,0.4)"
-    }]
-  }
-});
-```
-
-查看 [CodePen](http://codepen.io) 上 SitePoint 发布的 [2 - Line chart](http://codepen.io/SitePoint/pen/WGZGNE/) ([@SitePoint](http://codepen.io/SitePoint))。
-
-![](img/00002.jpg)
-
-如果这段代码看起来很复杂，别担心！所有的 Chart.js 示例大部分都遵循上述格式，所以你只需要学习一次。让我们逐行理解正在发生什么。
-
-```javascript
-var ctx = document.getElementById("myChart").getContext('2d');
-```
-
-这一行获取了我们之前创建的 `<canvas>` 元素的引用，然后对其调用了 `getContext` 方法。`getContext` 方法返回一个对象，该对象[提供了方法和属性](https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D) 用于在画布上绘制。我们将其存储在名为 `ctx` 的变量中。
-
-```javascript
-var myChart = new Chart(ctx, {
-  type: 'line',
-  data: // 折线数据数组在这里
-});
-```
-
-在这里我们正在创建图表对象。我暂时排除了数据，以便关注 `type` 属性，它决定了我们想要的图表类型。Chart.js 的 `new Chart()` 构造函数接受两个参数：
-
-1. 要渲染图表的 `<canvas><canvas>` 元素的引用，或者是其 2d 绘图上下文的引用（在这里我们使用的是 2d）。无论使用哪一个，Chart.js 的惯例将其称为 `ctx`。
-2. 一个包含 Chart.js 用于构建你的图表的数据和配置的字面量对象。必需的属性是 `type` 和 `data`。在我们的示例中，`type` 为 'line'，因为我们想要折线图。`data` 是你用于填充图表的数据。 Chart.js 使用数组来确定图形的位置，因此 'apples' 的第一个点值将为 '12$，第二个将为 '19$，依此类推。添加新行就像添加一个带有 `label` 和 `data` 的新对象一样简单。
-
-最后，我为每个集合设置了 rgba 背景色，使其更具吸引力。要了解更多关于折线图的信息，请[查看文档](http://www.chartjs.org/docs/#line-chart)
-
-专业提示：点击图表的任何图例（此处为 "Apples" 和 "Oranges"）将切换显示。
-
-# 柱状图
-
-柱状图是易用的。易学、易利用、易安装。如果你想深入研究实际代码，请[查看 GitHub 项目](https://github.com/modernjsant/chartjs/Chart.js)。
-
-使用 Chart.js 只需要两个东西。
-
-1) 库 - 对于本指南，我建议使用 CDN，因为这是快速上手的最简单方法。
-
-```html
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.4/Chart.min.js"></script>
-```
-
-2) 一个 `<canvas>` 元素，因为 Chart.js 利用了 HTML5 canvas。
-
-```html
-</canvas><canvas id="myChart"></canvas>
-```
-
-或者，你可以使用包管理器下载该库。更多信息请参阅[入门指南](http://www.chartjs.org/docs/#getting-started)。
-
-简单吧，对吧？现在，废话不多说，让我们来看看 Chart.js 提供了什么。
-
-# 折线图
-
-这就是在 Chart.js 中创建一个最小折线图所需的所有内容。只需要在声明 HTML5 canvas 之后，将其放在 `<body>` 内部某处的 `<script></script>` 标签中即可。
-
-```javascript
-var ctx = document.getElementById('myChart').getContext('2d');
-var myChart = new Chart(ctx, {
-  type: 'line',
-  data: {
-    labels: ['M', 'T', 'W', 'T', 'F', 'S', 'S'],
-    datasets: [{
-      label: 'apples',
-      data: [12, 19, 3, 17, 6, 3, 7],
-      backgroundColor: "rgba(153,255,51,0.4)"
-    }, {
-      label: 'oranges',
-      data: [2, 29, 5, 5, 2, 3, 10],
-      backgroundColor: "rgba(255,153,0,0.4)"
-    }]
-  }
-});
-```
-
-查看 [CodePen](http://codepen.io) 上 SitePoint 发布的 [2 - Line chart](http://codepen.io/SitePoint/pen/WGZGNE/) ([@SitePoint](http://codepen.io/SitePoint))。
-
-![](img/00002.jpg)
-
-如果这段代码看起来很复杂，别担心！所有的 Chart.js 示例大部分都遵循上述格式，所以你只需要学习一次。让我们逐行理解正在发生什么。
-
-```javascript
-var ctx = document.getElementById("myChart").getContext('2d');
-```
-
-这一行获取了我们之前创建的 `<canvas>` 元素的引用，然后对其调用了 `getContext` 方法。`getContext` 方法返回一个对象，该对象[提供了方法和属性](https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D) 用于在画布上绘制。我们将其存储在名为 `ctx` 的变量中。
-
-```javascript
-var myChart = new Chart(ctx, {
-  type: 'line',
-  data: // 折线数据数组在这里
-});
-```
-
-在这里我们正在创建图表对象。我暂时排除了数据，以便关注 `type` 属性，它决定了我们想要的图表类型。Chart.js 的 `new Chart()` 构造函数接受两个参数：
-
-1. 要渲染图表的 `<canvas><canvas>` 元素的引用，或者是其 2d 绘图上下文的引用（在这里我们使用的是 2d）。无论使用哪一个，Chart.js 的惯例将其称为 `ctx`。
-2. 一个包含 Chart.js 用于构建你的图表的数据和配置的字面量对象。必需的属性是 `type` 和 `data`。在我们的示例中，`type` 为 'line'，因为我们想要折线图。`data` 是你用于填充图表的数据。 Chart.js 使用数组来确定图形的位置，因此 'apples' 的第一个点值将为 '12$，第二个将为 '19$，依此类推。添加新行就像添加一个带有 `label` 和 `data` 的新对象一样简单。
-
-最后，我为每个集合设置了 rgba 背景色，使其更具吸引力。要了解更多关于折线图的信息，请[查看文档](http://www.chartjs.org/docs/#line-chart)
-
-专业提示：点击图表的任何图例（此处为 "Apples" 和 "Oranges"）将切换显示。
-
-# 柱状图
-
-柱状图是易用的。易学、易利用、易安装。如果你想深入研究实际代码，请[查看 GitHub 项目](https://github.com/modernjsant/chartjs/Chart.js)。
-
-使用 Chart.js 只需要两个东西。
-
-1) 库 - 对于本指南，我建议使用 CDN，因为这是快速上手的最简单方法。
-
-```html
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.4/Chart.min.js"></script>
-```
-
-2) 一个 `<canvas>` 元素，因为 Chart.js 利用了 HTML5 canvas。
-
-```html
-</canvas><canvas id="myChart"></canvas>
-```
-
-或者，你可以使用包管理器下载该库。更多信息请参阅[入门指南](http://www.chartjs.org/docs/#getting-started)。
-
-简单吧，对吧？现在，废话不多说，让我们来看看 Chart.js 提供了什么。
-
-# 折线图
-
-这就是在 Chart.js 中创建一个最小折线图所需的所有内容。只需要在声明 HTML5 canvas 之后，将其放在 `<body>` 内部某处的 `<script></script>` 标签中即可。
-
-```javascript
-var ctx = document.getElementById('myChart').getContext('2d');
-var myChart = new Chart(ctx, {
-  type: 'line',
-  data: {
-    labels: ['M', 'T', 'W', 'T', 'F', 'S', 'S'],
-    datasets: [{
-      label: 'apples',
-      data: [12, 19, 3, 17, 6, 3, 7],
-      backgroundColor: "rgba(153,255,51,0.4)"
-    }, {
-      label: 'oranges',
-      data: [2, 29, 5, 5, 2, 3, 10],
-      backgroundColor: "rgba(255,153,0,0.4)"
-    }]
-  }
-});
-```
-
-查看 [CodePen](http://codepen.io) 上 SitePoint 发布的 [2 - Line chart](http://codepen.io/SitePoint/pen/WGZGNE/) ([@SitePoint](http://codepen.io/SitePoint))。
-
-![](img/00002.jpg)
-
-如果这段代码看起来很复杂，别担心！所有的 Chart.js 示例大部分都遵循上述格式，所以你只需要学习一次。让我们逐行理解正在发生什么。
-
-```javascript
-var ctx = document.getElementById("myChart").getContext('2d');
-```
-
-这一行获取了我们之前创建的 `<canvas>` 元素的引用，然后对其调用了 `getContext` 方法。`getContext` 方法返回一个对象，该对象[提供了方法和属性](https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D) 用于在画布上绘制。我们将其存储在名为 `ctx` 的变量中。
-
-```javascript
-var myChart = new Chart(ctx, {
-  type: 'line',
-  data: // 折线数据数组在这里
-});
-```
-
-在这里我们正在创建图表对象。我暂时排除了数据，以便关注 `type` 属性，它决定了我们想要的图表类型。Chart.js 的 `new Chart()` 构造函数接受两个参数：
-
-1. 要渲染图表的 `<canvas><canvas>` 元素的引用，或者是其 2d 绘图上下文的引用（在这里我们使用的是 2d）。无论使用哪一个，Chart.js 的惯例将其称为 `ctx`。
-2. 一个包含 Chart.js 用于构建你的图表的数据和配置的字面量对象。必需的属性是 `type` 和 `data`。在我们的示例中，`type` 为 'line'，因为我们想要折线图。`data` 是你用于填充图表的数据。 Chart.js 使用数组来确定图形的位置，因此 'apples' 的第一个点值将为 '12$，第二个将为 '19$，依此类推。添加新行就像添加一个带有 `label` 和 `data` 的新对象一样简单。
-
-最后，我为每个集合设置了 rgba 背景色，使其更具吸引力。要了解更多关于折线图的信息，请[查看文档](http://www.chartjs.org/docs/#line-chart)
-
-专业提示：点击图表的任何图例（此处为 "Apples" 和 "Oranges"）将切换显示。
-
-# 柱状图
-
-柱状图是易用的。易学、易利用、易安装。如果你想深入研究实际代码，请[查看 GitHub 项目](https://github.com/modernjsant/chartjs/Chart.js)。
-
-使用 Chart.js 只需要两个东西。
-
-1) 库 - 对于本指南，我建议使用 CDN，因为这是快速上手的最简单方法。
-
-```html
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.4/Chart.min.js"></script>
-```
-
-2) 一个 `<canvas>` 元素，因为 Chart.js 利用了 HTML5 canvas。
-
-```html
-</canvas><canvas id="myChart"></canvas>
+<canvas id="myChart"></canvas>
 ```
 
 或者，你可以使用包管理器下载该库。更多信息请参阅[入门指南](http://www.chartjs.org/docs/#getting-started)。
@@ -3782,6 +2852,7 @@ var myChart = new Chart(ctx, {
 ```javascript
 var ctx = document.getElementById('myChart').getContext('2d');
 ```
+
 （省略中间重复部分，根据翻译逻辑，已完成完整翻译处理）
 
 # 柱状图
@@ -3790,15 +2861,11 @@ var ctx = document.getElementById('myChart').getContext('2d');
 
 （注：由于原文重复，已合并逻辑翻译）
 
-`data` 是你用于填充图表的数据。 Chart.js 使用数组来确定图形的位置，因此 'apples' 的第一个点值将为 '12$，第二个将为 '19$，依此类推。添加新行就像添加一个带有 `label` 和 `data` 的新对象一样简单。
+`data` 是你用于填充图表的数据。Chart.js 使用数组来确定图形的位置，因此 'apples' 的第一个点值将为 '12$，第二个将为 '19$，依此类推。添加新行就像添加一个带有 `label` 和 `data` 的新对象一样简单。
 
 最后，我为每个集合设置了 rgba 背景色，使其更具吸引力。要了解更多关于折线图的信息，请[查看文档](http://www.chartjs.org/docs/#line-chart)
 
 专业提示：点击图表的任何图例（此处为 "Apples" 和 "Oranges"）将切换显示。
-
-
-
-
 
 但是，极坐标面积图是我涵盖的第一个无法用于比较两个数据集的图表。之前的示例是对比两个等长度数组的不同方法，而极坐标图（以及下一个将介绍的饼图）只视觉化单组数字。
 
@@ -3830,7 +2897,7 @@ var myChart = new Chart(ctx, {
 
 要了解更多关于极坐标面积图的信息，请[查看文档](http://www.chartjs.org/docs/#polar-area-chart)。
 
-## 饼图与环甜图
+## 饼图与环形图
 
 你现在可能已经猜到这部分了。将：
 
@@ -3840,24 +2907,25 @@ var myChart = new Chart(ctx, {
 
 `type: 'pie'`
 
-`type` 属性是 Chart.js 的关键。记得从折线图转换为柱状图和雷达图有多简单吗？其实，极坐标图、饼图和环甜图同样相互转换的。通过这一个更改，我们就可以从极坐标图切换到饼图。
+`type` 属性是 Chart.js 的关键。记得从折线图转换为柱状图和雷达图有多简单吗？其实，极坐标图、饼图和环形图同样相互转换的。通过这一个更改，我们就可以从极坐标图切换到饼图。
 
 5. SitePoint 提供的饼图 ([@SitePoint](http://codepen.io/SitePoint)) 享于 [CodePen](http://codepen.io)。
 
 ![](img/00001.jpg)
 
-对于环甜图：
+对于环形图：
 
 `type: 'pie'`
+
 改为：
 
 `type: 'doughnut'`
 
-6. SitePoint 提供的环甜图 ([@SitePoint](http://codepen.io/SitePoint)) 享于 [CodePen](http://codepen.io)。
+6. SitePoint 提供的环形图 ([@SitePoint](http://codepen.io/SitePoint)) 享于 [CodePen](http://codepen.io)。
 
 ![](img/00017.jpg)
 
-要了解更多关于饼图和环甜图的信息，请[查看文档](http://www.chartjs.org/docs/#doughnut-pie-chart)。
+要了解更多关于饼图和环形图的信息，请[查看文档](http://www.chartjs.org/docs/#doughnut-pie-chart)。
 
 以下是饼图的完整代码：
 
@@ -3883,7 +2951,7 @@ var myChart = new Chart(ctx, {
 });
 ```
 
-环甜图有一个有趣的属性叫做 `cutPercentage`，它决定了中心空洞的大小。为了深入了解这一点，我首先需要向你展示一些为了帮助你学习而我忽略的 Chart.js 内容。
+环形图有一个有趣的属性叫做 `cutPercentage`，它决定了中心空洞的大小。为了深入了解这一点，我首先需要向你展示一些为了帮助你学习而我忽略的 Chart.js 内容。
 
 ## 配置 Chart.js
 
@@ -3909,6 +2977,7 @@ var myChart = new Chart(ctx, {
 现在你已经熟悉了 Chart.js 的基础，是时候介绍一些关于 `options` 的技巧了。
 
 ### 标题
+
 通过添加这组选项可以轻松地为任何 Chart.js 添加标题。原生标题非常棒，但值得注意的是，它们大多是静态且不变的。当我们尝试添加自定义事件时，这一点将会变得重要。
 
 ```javascript
@@ -3920,8 +2989,9 @@ options: {
 }
 ```
 
-### 环甜空洞
-`cutPercentage` 属性是一个 0 到 50 之间的值。饼图只是 `cutPercentage` 为 0 的环甜图。
+### 环形空洞
+
+`cutPercentage` 属性是一个 0 到 50 之间的值。饼图只是 `cutPercentage` 为 0 的环形图。
 
 ```javascript
 options: {
@@ -3930,6 +3000,7 @@ options: {
 ```
 
 ### 堆叠柱状图
+
 如果你希望柱状图是堆叠的，只需在你的图表代码中添加以下一组选项：
 
 ```javascript
@@ -3945,6 +3016,7 @@ options: {
 每种图表类型都有许多选项供你挖掘。我鼓励你这样做。
 
 ### 处理事件
+
 如之前提到的，点击图例将切换与该图例相关的数据集。让我们用自己的功能增强它：
 
 ```javascript
@@ -3955,13 +3027,13 @@ Chart.defaults.global.onClick = function(e, legendItem) {
 };
 ```
 
-这段代码将 `Chart.defaults.global.onClick` 传递到变量中。`Chart.defaults.global.onClick` 接收 `e` 和 `legendItem`。这段代码将 `Chart.defaults.global.onClick` 传递到变量中。`Chart.defaults.global.onClick` 接收 `e` 和 `legendItem`。这段代码将 `Chart.defaults.global.onClick` 传递到变量中。`Chart.defaults.global.onClick` 接收 `e` 和 `legendItem`。
+这段代码将 `Chart.defaults.global.onClick` 传递到变量中。`Chart.defaults.global.onClick` 接收 `e` 和 `legendItem`。
 
 ## 具体示例
 
 让我们增强之前的代码，这样当用户点击图例时，底部的说明会自动更新。换句话说，我们现在可以在 `onClick()` 之上添加任何想要的功能。例如，仪表板可能拥有 `apples` 和 `oranges` 的值。使用 Chart.js 创建交互式数据是简单的。
 
-以下是代码
+以下是代码：
 
 ```javascript
 var labels = {
@@ -3979,13 +3051,14 @@ var update_caption = function(legend) {
 };
 ```
 
-正如你所看到的，我们使用对象字面量来跟踪图例的状态。filter 过滤将返回所有值为 `true` 的键，我们用它来构建说明。
+正如你所看到的，我们使用对象字面量来跟踪图例的状态。`filter` 过滤将返回所有值为 `true` 的键，我们用它来构建说明。
 
 ## Chart.js 2.0 vs 1.0
 
 本文使用了 Chart.js 2.0 语法。Chart.js 2.0 相对较新。2.0 和 1.0 最明显的区别在于如何声明图表。
 
 ### 1.0
+
 ```javascript
 var LineChartDemo = new Chart(ctx).Line(
   //数据在此，
@@ -3994,6 +3067,7 @@ var LineChartDemo = new Chart(ctx).Line(
 ```
 
 ### 2.0
+
 ```javascript
 var myChart = new Chart(ctx, {
   type: 'line',
@@ -4004,24 +3078,19 @@ var myChart = new Chart(ctx, {
 
 1.0 版本侧重于使用函数链来创建特定类型的图表，然后传入数据和选项。2.0 版本改变了这种方式，允许用户创建一个通用的图表对象，然后传入类型以及数据和选项。第二种方法更符合 Chart.js 的哲学，即尽可能的模块化和独立。
 
-7. SitePoint 提供的带有自定义 onClick() 的柱状图 ([@SitePoint](http://codepen.io/SitePoint)) 享于 [CodePen](http://codepen.io)。
-
-
-
+7. SitePoint 提供的带有自定义 `onClick()` 的柱状图 ([@SitePoint](http://codepen.io/SitePoint)) 享于 [CodePen](http://codepen.io)。
 
 Chart.js 是快速原型简单图表的完美选择。它共有八种主要的图表类型，我们涵盖了：`line`、`bar`、`radar`、`polarArea`、`pie` 和 `doughnut`。这些多样化的图表涵盖了常见的数据可视化方式，这意味着 Chart.js 可能是你下一个项目中唯一的绘图库。
 
 如果你想了解更多关于 Chart.js 的知识，我强烈推荐查看文档，你可以在 [Chart.js Website](http://www.chartjs.org/) 上找到。
 
-## 第 10 章：通过示例学习 JavaScript 测试驱动开发
+# 第 10 章：通过示例学习 JavaScript 测试驱动开发
 
 作者 James Wright
 
 由 [Vildan Softic](https://www.sitepoint.com/author/vildansoftic) 评审。
 
 你可能已经对自动化测试及其优点非常熟悉了。为你的应用程序编写一组测试可以让你放心地修改代码，因为知道万一你破坏了某些内容，测试会为你提供后盾。你还可以更进一步，在编写代码之前先编写测试；这种做法被称为测试驱动开发（TDD）。
-
-在本教程中，我们将讨论什么是 TDD 以及它能给开发者带来什么好处。我们将使用 TDD 来实现一个表单验证器，确保用户输入的任何值都符合一组特定的规则。
 
 ## Node 中的 TDD
 
@@ -4031,42 +3100,47 @@ Chart.js 是快速原型简单图表的完美选择。它共有八种主要的�
 
 测试驱动开发是一种编程方法，通过它可以处理代码单元的设计、实现和测试，并在某种程度上处理程序的预期功能。
 
-TDD 补充了 [极捷编程的测试优先方法](https://courses.csail.mit.edu/6.042/spring17/mcs.pdf）（即开发者在实现功能或单元之前编写测试），同时 TDD 也有助于代码的重构；这通常被称为红-绿-重构循环（RedGreen-Refactor Cycle）。
+TDD 补充了 [极限编程的测试优先方法](https://courses.csail.mit.edu/6.042/spring17/mcs.pdf)（即开发者在实现功能或单元之前编写测试），同时 TDD 也有助于代码的重构；这通常被称为红-绿-重构循环（Red-Green-Refactor Cycle）。
 
 ![](img/00010.jpg)
 
-*   编写一个失败的测试 - 写一个调用你的逻辑并断言会产生正确行为的测试
+*   **编写一个失败的测试** - 写一个调用你的逻辑并断言会产生正确行为的测试
     *   在单元测试中，这将是断言函数的返回值，或验证模拟的依赖是否按预期被调用
-    *   在功能测试中，这将确保 UI 或 API 在一系列操作中表现出可预测的性
-*   让测试通过 - 实现最少的代码以使测试通过，并确保所有其他测试继续通过
-*   重构实现 - 更新或重写实现，在不破坏任何公共契约的情况下提高其质量，且不破坏新旧测试
+    *   在功能测试中，这将确保 UI 或 API 在一系列操作中表现出可预测的性能
+*   **让测试通过** - 实现最少的代码以使测试通过，并确保所有其他测试继续通过
+*   **重构实现** - 更新或重写实现，在不破坏任何公共契约的情况下提高其质量，且不破坏新旧测试
 
 自从我从职业之初就接触到 TDD 以来，我已经在某种程度上使用它了，但随着我开始处理具有更复杂要求的应用程序和系统，我个人发现这种技术可以节省时间，并有利于我工作的质量和健壮性。
 
 在继续之前，可能值得熟悉一下可以编写的各种类型的自动化测试。Eric Elliot [对它们总结得非常到位](https://www.sitepoint.com/javascript-testing-unit-functional-integration/)：
 
-*   单元测试 - 确保应用的各个单元（如函数和类）按预期工作。断言测试这些单元对于任何给定的输入是否返回预期的输出。
-*   集成测试 - 确保单元之间的协作按预期工作。断言可以测试 API、UI 或可能产生副作用的交互（如数据库 I/O、日志等）。
-*   端到端测试 - 确保软件从用户的角度来看按预期工作，并且每个单元在系统的整体范围内都表现正确。断言主要测试用户界面。
+*   **单元测试** - 确保应用的各个单元（如函数和类）按预期工作。断言测试这些单元对于任何给定的输入是否返回预期的输出。
+*   **集成测试** - 确保单元之间的协作按预期工作。断言可以测试 API、UI 或可能产生副作用的交互（如数据库 I/O、日志等）。
+*   **端到端测试** - 确保软件从用户的角度来看按预期工作，并且每个单元在系统的整体范围内都表现正确。断言主要测试用户界面。
 
 ## 测试驱动开发的优势
 
-### 时的测试覆盖
+### 即时的测试覆盖
+
 通过在实现功能之前为其编写测试用例，代码覆盖率立即得到保证，而且可以在项目开发周期的更早阶段发现行为漏洞。当然，这要求测试能够覆盖所有行为，包括错误处理，但人们应该始终带着这种心态实践 TDD。
 
-### 充满心地重构
+### 充满信心地重构
+
 参考上述的红-绿-重构循环，对实现的任何更改都可以通过确保现有测试继续通过来验证。编写运行速度尽可能快的测试将缩短这种反馈循环；虽然覆盖所有可能的场景是重要的，且不同计算机之间的执行时间可能略有不同，但编写精简且重点的测试长远来看将节省时间。
 
 ### 契约设计
+
 测试驱动开发允许开发者考虑 API 将如何被消费以及使用起来有多方便，而无需担心实现。在测试用例中调用单元本质上反映了生产环境中的调用点，因此可以在实现阶段之前修改外部设计。
 
 ### 避免冗余代码
+
 只要人们在更改相关实现时频繁甚至自动地运行测试，满足现有测试就会减少增加不必要的额外代码的概率，这可能导致代码库更容易维护和理解。因此，TDD 帮助人们遵循 [KISS 原则（简单点，愚蠢的！）](https://en.wikipedia.org/wiki/KISS_principle)。
 
 ### 不依赖集成
+
 在编写单元测试时，如果符合要求的输入，那么单元在集成到代码库后将按预期运行。然而，也应该编写集成测试，以确保新代码的调用点被正确调用。
 
-例如，让我们考虑下面的函数，它判断用户是否为：
+例如，让我们考虑下面的函数，它判断用户是否为管理员：
 
 ```javascript
 'use strict'
@@ -4090,8 +3164,8 @@ const testUsers = [
   }
 ];
 
-const isAdmin = isAdmin(1, testUsers);
-// TODO: 断言 isAdmin 为 true
+const isAdminResult = isAdmin(1, testUsers);
+// TODO: 断言 isAdminResult 为 true
 ```
 
 这种方法允许单元在系统的其余部分之外实现和测试。一旦数据库中有用户，我们就可以集成单元并编写集成测试来验证我们正确传递了参数。
@@ -4108,10 +3182,6 @@ const isAdmin = isAdmin(1, testUsers);
 4.  对下一个可验证输入重复此操作
 
 有一个[练习的 CodePen](http://codepen.io/SitePoint/pen/NpZLzR)，其中包含了一些样板测试代码以及空的 `validateForm` 函数。请在我们开始之前对其进行 Fork。
-
-
-
-
 
 我们将编写一个端到端测试，以验证 `validateForm` 在真实 DOM 节点上的功能，以及针对我们最初支持的两种验证类型的验证。一旦我们的第一个实现运行正常，我们将遵循 TDD（测试驱动开发），通过编写更小的单元来逐步对其进行重构。
 
@@ -4151,7 +3221,7 @@ it('should validate a form with all of the possible validation types', function 
 
 将更改保存到你的 fork 之后，你应该看到测试失败了。
 
-现在让我们这个测试通过（变绿）！记住，我们应该努力编写最少、合理的代码（而不是 `return true;!` 这种数量的代码）来满足测试，所以我们现在不要担心错误报告。
+现在让我们让这个测试通过（变绿）！记住，我们应该努力编写最少、合理的代码（而不是 `return true;` 这种数量的代码）来满足测试，所以我们现在不要担心错误报告。
 
 这是初始实现，它遍历我们表单的 `input` 元素并使用正则表达式验证每个的值：
 
@@ -4178,7 +3248,7 @@ function validateForm(form) {
 
 ### 错误处理
 
-在我们第一个测试之后，让我们写另一个测试，用于验证当字母字段无效时，返回的 `result` 对象的 `error` 数组包含一个带有预期消息的 `Error` 实例：
+在我们第一个测试之后，让我们写另一个测试，用于验证当字母字段无效时，返回的 `result` 对象的 `errors` 数组包含一个带有预期消息的 `Error` 实例：
 
 ```javascript
 it('should return an error when a name is invalid', function () {
@@ -4193,7 +3263,7 @@ it('should return an error when a name is invalid', function () {
 });
 ```
 
-保存你的 fork 之后，你应该看到新的失败用例。让我们更新实现以以满足测试用例：
+保存你的 fork 之后，你应该看到新的失败用例。让我们更新实现以满足测试用例：
 
 ```javascript
 function validateForm(form) {
@@ -4266,14 +3336,14 @@ it('should return multiple errors if more than one field is invalid', function (
 
 虽然我们有一个通过测试的运行函数，但它产生了一些代码气味：
 
-*   多重职责：
-    - 我们在同一个函数中查询内部节点、指定规则集并计算整体结果。从[SOLID 原则](https://en.wikipedia.org/wiki/SOLID_(object-oriented_design))的角度来看，这违反了[单一职责原则](https://en.wikipedia.org/wiki/Single_responsibility_principle)。
-    - 此外，缺乏抽象导致代码难以理解。
-*   紧耦合：
-    - 目前实现将上述职责交织在一起，使得对每个部分的更新都变得脆弱；当我们引入问题时，调试将变得困难。
-    - 而且，我们无法在不更新 `if` 语句的情况下添加或更改验证规则。这违反了 SOLID 的[开闭原则](https://en.wikipedia.org/wiki/Open/closed_principle)。
-*   逻辑重复：
-    - 如果我们要更新错误消息的格式，或者向数组添加另一个对象，就必须在两个地方进行更新。
+*   **多重职责**：
+    *   我们在同一个函数中查询内部节点、指定规则集并计算整体结果。从 [SOLID 原则](https://en.wikipedia.org/wiki/SOLID_(object-oriented_design)) 的角度来看，这违反了 [单一职责原则](https://en.wikipedia.org/wiki/Single_responsibility_principle)。
+    *   此外，缺乏抽象导致代码难以理解。
+*   **紧耦合**：
+    *   目前实现将上述职责交织在一起，使得对每个部分的更新都变得脆弱；当我们引入问题时，调试将变得困难。
+    *   而且，我们无法在不更新 `if` 语句的情况下添加或更改验证规则。这违反了 SOLID 的 [开闭原则](https://en.wikipedia.org/wiki/Open/closed_principle)。
+*   **逻辑重复**：
+    *   如果我们要更新错误消息的格式，或者向数组添加另一个对象，就必须在两个地方进行更新。
 
 幸运的是，由于我们已经为验证器编写了功能测试，我们可以放心地改进代码而不用担心破坏它。
 
@@ -4281,10 +3351,7 @@ it('should return multiple errors if more than one field is invalid', function (
 
 通过将我们的 `HTMLInputElement` `NodeList` 映射为代表表单字段、验证类型以及该字段值的对象，我们不仅将 `validateForm` 函数与 DOM 解耦，还为以后替换硬编码正则表达式时进行验证规则查找提供了便利。
 
-
-
-
-例如，`first-name` 字段的验证查询对象将：
+例如，`first-name` 字段的验证查询对象将如下所示：
 
 ```javascript
 {
@@ -4294,7 +3361,7 @@ it('should return multiple errors if more than one field is invalid', function (
 }
 ```
 
-在 `validateForm` 函数上方，创建一个名为 `createValidationQueries` 的空函数。然后，在 `validateForm` 的 `describe` get 之外，创建另一个名为 'the createValidationQueries function' 的 `describe suite`。
+在 `validateForm` 函数上方，创建一个名为 `createValidationQueries` 的空函数。然后，在 `validateForm` 的 `describe` 之外，创建另一个名为 'the createValidationQueries function' 的 `describe suite`。
 
 它应该包含唯一的测试用例：
 
@@ -4447,102 +3514,156 @@ function validateForm(form) {
 
 ## 结语
 
-通过 TDD，我们能够将表单验证的初始实现并拆分为独立且易于理解的部分。我希望你喜欢这个教程，并将这种实践带到你的日常工作中。
-
-
-
+通过 TDD，我们能够将表单验证的初始实现拆分为独立且易于理解的部分。我希望你喜欢这个教程，并将这种实践带到你的日常工作中。
 
 # 任务运行器：选项
 
 ## Gulp 4 如何？
+
 ## 第 1 步：安装 Node.js
+
 ## 第 2 步：全局安装 Gulp
+
 ## 第 3 步：配置你的项目
+
 ## 第 4 步：本地安装 Gulp
-## 第 4 步：创建 Gulp 配置文件
-## 第 5 步：创建 Gulp 任务
-## 第 6 步：自动化任务
-## 第 7 步：大功告成！
+
+## 第 5 步：创建 Gulp 配置文件
+
+## 第 6 步：创建 Gulp 任务
+
+## 第 7 步：自动化任务
+
+## 第 8 步：大功告成！
 
 # 第 3 章：原生 JavaScript DOM 操作基础（无需 jQuery）
 
 ## DOM 操作：查询 DOM
+
 ## 修改类和属性
+
 ## 修改 DOM
+
 ## 监听事件
+
 ### 动画
+
 ## 编写自己的辅助方法
+
 ## 演示
+
 ## 结论
 
 # 第 4 章：Webpack 2 与模块打包入门指南
 
 ## 设置
+
 ## 模块
+
 ## Loaders
-## 插件 (Plugins)
+
+## 插件
+
 ## 代码分割
+
 ## Webpack Dev Server
+
 ## HTTP/2
+
 ## 轮到你了
 
 # 第 5 章：React vs Angular：深度对比
 
 ## 从何开始？
+
 ## 成熟度
+
 ## 特性
+
 ## 语言、范式与模式
+
 ## 生态系统
+
 ## 采用、学习曲线与开发体验
+
 ## 结合上下文分析
+
 ## 一个统治一切？
 
 # 第 6 章：将你的网站重构渐进式 Web 应用 (PWA)
 
 ## 什么是渐进式 Web 应用？
+
 ## 演示代码
+
 ## 第 1 步：启用 HTTPS
+
 ## 第 2 步：创建 Web Manifest
+
 ## 第 3 步：创建 Service Worker
+
 ## 额外第 4 步：创建离线页面
+
 ## PWA 注意事项
+
 ## 有用链接
 
 # 第 7 章：成为优秀开发者的 10 个建议
 
 ## 避免复杂度
+
 ## 使用异步代码
+
 ## 避免阻塞
+
 ## 始终返回回调或错误
-## 了解你的
+
+## 了解你的工具
 
 ## 第 8 章：函数式 JavaScript 简介
 
 ## 命令式 JavaScript
+
 ## 面向对象 JavaScript
+
 ## 函数式 JavaScript
+
 ## 函数式思维
 
 # 第 9 章：Chart.js 2.0 简介——六个简单示例
 
 ## 为什么选择 Chart.js？
+
 ## 安装 Chart.js
+
 ## 折线图
+
 ## 柱状图
+
 ## 雷达图
-## 极图
+
+## 极坐标图
+
 ## 饼图与环形图
+
 ## 配置 Chart.js
+
 ### 处理事件
+
 ## 具体示例
+
 ## Chart.js 2.0 vs 1.0
+
 ## 结论
 
 # 第 10 章：通过示例学习 JavaScript 测试驱动开发 (TDD)
 
 ## 什么是 TDD？
-## 测试驱动开发的好处
-## 使用 JavaScript 进行测试驱动开发
-### 重构我们的验证器
-## 总结
 
+## 测试驱动开发的好处
+
+## 使用 JavaScript 进行测试驱动开发
+
+### 重构我们的验证器
+
+## 总结

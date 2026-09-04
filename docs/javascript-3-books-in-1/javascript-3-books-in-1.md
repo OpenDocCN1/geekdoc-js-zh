@@ -1,3 +1,4 @@
+
 # JavaScript 三合一教程
 
 ## 引言
@@ -34,9 +35,7 @@ HTML 是一种标记语言，允许开发人员格式化内容并创建动态网
 
 JavaScript 允许用户在需要时以文档形式加载内容，而无需重新加载网页。我们称这个过程为 Ajax。JavaScript 允许你在浏览器中运行现有可能性的测试，然后做出相应的反应。这个过程被称为防御性脚本。JavaScript 将修复出现在你网页上的任何问题。它将弥补浏览器支持中存在的漏洞。
 
-当我们比较 JavaScript 能为我们做的一切与其他用于 Web 的编程语言时，我们意识到它能做更多的事情。JavaScript 非常受欢迎和被喜爱，因为它允许你毫无麻烦地构建复杂的应用程序。你也可以用 Flash 构建复杂的应用程序，但 JavaScript 是最好的选择，因为它是一种 Web
-
-标准。
+当我们比较 JavaScript 能为我们做的一切与其他用于 Web 的编程语言时，我们意识到它能做更多的事情。JavaScript 非常受欢迎和被喜爱，因为它允许你毫无麻烦地构建复杂的应用程序。你也可以用 Flash 构建复杂的应用程序，但 JavaScript 是最好的选择，因为它是一种 Web 标准。
 
 说到 JavaScript 的用途，其用途一直在不断变化。起初，JavaScript 与网站的交互仅限于形成交互和向用户提供反馈。然而，它随着时间不断演变，现在的用途远比最初要多得多。
 
@@ -48,9 +47,9 @@ JavaScript 的用例也在随着时代的变化而变化。用户需要改变那
 
 元编程被认为是一种强大的技术，它能够让你编写一系列程序。ES6 的出现进一步简化了元编程在 JavaScript 编程世界中的应用。你可以使用代理及其他类似功能。ES6 的代理有助于重新定义对象中的不同操作。
 
-### \<script\> 标签
+### `<script>` 标签
 
-让我们来谈谈本书中最常用的标签符号。所有 JavaScript 代码都包含在 \<script\> 标签内。
+让我们来谈谈本书中最常用的标签符号。所有 JavaScript 代码都包含在 `<script>` 标签内。
 
 ```html
 <!DOCTYPE html>
@@ -70,11 +69,12 @@ document.getElementById("demo12").innerHTML = "This is your First JavaScript";
 ```
 
 JavaScript Rests in the Body
+
 This is your First JavaScript
 
 旧版本的 JavaScript 写法有所不同。它的格式如下：`<script type="text/javascript">`。
 
-JavaScript 中有函数可以用来执行代码块。你可以在某种事件发生时调用函数。事件可以定义为点击按钮。你可以在任何 HTML 文档中放置任何类型的脚本。脚本可以放在 \<head\> 中、\<body\> 中，或两者都放。以下是在 head 中使用脚本的示例：
+JavaScript 中有函数可以用来执行代码块。你可以在某种事件发生时调用函数。事件可以定义为点击按钮。你可以在任何 HTML 文档中放置任何类型的脚本。脚本可以放在 `<head>` 中、`<body>` 中，或两者都放。以下是在 head 中使用脚本的示例：
 
 ```html
 <!DOCTYPE html>
@@ -99,10 +99,12 @@ function FunctionUN() {
 ```
 
 You have seen the JavaScript in the Head
+
 This is a Paragraph.
+
 Click Me
 
-当你在网页浏览器中点击按钮时，将触发函数的调用。你也可以将脚本放在 HTML 页面的 \<body\> 中。点击按钮时将调用此函数。
+当你在网页浏览器中点击按钮时，将触发函数的调用。你也可以将脚本放在 HTML 页面的 `<body>` 中。点击按钮时将调用此函数。
 
 ```html
 <!DOCTYPE html>
@@ -124,12 +126,14 @@ function FunctionZ() {
 ```
 
 This is A Web Page
+
 I have changed the Paragraph.
+
 Click Me
 
 ### 显示
 
-在网页浏览器中显示 JavaScript 有不同的方法。程序员使用不同的技术来达到显示目的。我在本书中使用的第一种方法是 document.getElementById(id) 方法。在该短语中，id 指的是定义 HTML 文档的元素。innerHTML 一词定义了 HTML 的内容。
+在网页浏览器中显示 JavaScript 有不同的方法。程序员使用不同的技术来达到显示目的。我在本书中使用的第一种方法是 `document.getElementById(id)` 方法。在该短语中，`id` 指的是定义 HTML 文档的元素。`innerHTML` 一词定义了 HTML 的内容。
 
 ```html
 <!DOCTYPE html>
@@ -150,10 +154,12 @@ document.getElementById("demo1234").innerHTML = 4567 + 36;
 ```
 
 This is going to be my First Web Page
+
 This will be the First Paragraph.
+
 4603
 
-你可以使用的第二种方法是 document.write() 方法。这也同样简单。然而，除了本示例之外，我在本书中没有使用此方法创建任何脚本，只是为了向你展示它的工作原理：
+你可以使用的第二种方法是 `document.write()` 方法。这也同样简单。然而，除了本示例之外，我在本书中没有使用此方法创建任何脚本，只是为了向你展示它的工作原理：
 
 ```html
 <!DOCTYPE html>
@@ -174,7 +180,9 @@ document.write(4567 + 36);
 ```
 
 This is going to be my First Web Page
+
 This will be the First Paragraph.
+
 4603
 
 如果在加载 HTML 页面后使用此方法，你将丢失所有数据，因为它会被删除。因此，如果你犯了这个错误，应该警惕其后果。此外，你可以使用此方法创建一个按钮并测试 HTML 页面。请参阅以下示例。
@@ -194,10 +202,12 @@ This will be the First Paragraph.
 ```
 
 This is going to be my First Web Page
+
 This will be the First Paragraph.
+
 Click me
 
-另一种方法是 window.alert 方法。
+另一种方法是 `window.alert` 方法。
 
 ```html
 <!DOCTYPE html>
@@ -218,9 +228,10 @@ window.alert(4567 + 36);
 ```
 
 This is going to be my First Web Page
+
 This will be the First Paragraph.
 
-上述文本将在浏览器中看到。每次运行代码时，你会在屏幕顶部的警告窗口中看到数学计算的结果。window 关键字的使用是可选的。由于 JavaScript 中的 window 对象是全局的，你可以省略它的使用，仍然可以获得相同的结果。以下代码将产生相同的结果。
+上述文本将在浏览器中看到。每次运行代码时，你会在屏幕顶部的警告窗口中看到数学计算的结果。`window` 关键字的使用是可选的。由于 JavaScript 中的 `window` 对象是全局的，你可以省略它的使用，仍然可以获得相同的结果。以下代码将产生相同的结果。
 
 ```html
 <!DOCTYPE html>
@@ -240,7 +251,7 @@ alert(4567 + 36);
 </html>
 ```
 
-另一种方法是 console.log() 方法。此方法用于调试代码并显示数据。
+另一种方法是 `console.log()` 方法。此方法用于调试代码并显示数据。
 
 ```html
 <!DOCTYPE html>
@@ -264,7 +275,7 @@ console.log(4567 + 36);
 
 在计算机世界中，你只会看到一样东西，那就是数据。你可以读取数据、修改数据，还可以创建新数据。所有这些数据都以基本相似的序列形式存储。位是具有两个值的实体，通常被描述为一和零。如果你拆开一台计算机，你会看到数据以多种形式存在，比如低电荷和高电荷、弱信号或强信号，或 CD 上暗淡和光亮的斑点。一条离散的信息可以还原为一和零的序列。因此，它们被表示为位。你可以用位来表示任何数字。这个过程与十进制数相同。然而，你不必写很多位数字，只需用两个就能产生结果。
 
-那么，什么是值？想象一下位的海洋。一台典型的现代计算机在工作内存中大约包含 300 亿个位。工作内存也被称为*易失性数据存储*。属于硬盘或与之等效的非易失性存储则有几倍的数量级。如果你想继续处理这些数量的位而不\f而不混淆和搞混，就必须将它们分成称为值的微小块。必须记住，值是由位创建的，但这些值扮演着多种角色。
+那么，什么是值？想象一下位的海洋。一台典型的现代计算机在工作内存中大约包含 300 亿个位。工作内存也被称为易失性数据存储。属于硬盘或与之等效的非易失性存储则有几倍的数量级。如果你想继续处理这些数量的位而不混淆和搞混，就必须将它们分成称为值的微小块。必须记住，值是由位创建的，但这些值扮演着多种角色。
 
 每个值都有一个类型，该类型决定了值要扮演的角色。有些值被称为数字，有些被称为文本片段，还有些被称为函数。创建值有标准做法——你必须首先调用它的名称。这种做法不仅是标准的，而且也很方便。你不必为值收集正确的构建材料，也不必立即为它们付费。调用一个，你就会有一个。这并不意味着值会凭空产生。每个值都需要某个地方来存储自己。所以，如果你想创建大量值，就必须考虑存储过程。然而，如果你不是同时创建它们，这就不是问题。当你不使用某个值时，计算机系统会将其丢弃。
 
@@ -272,11 +283,11 @@ console.log(4567 + 36);
 
 数字类型的值就是数值。在 JavaScript 代码中，你可以这样写：
 
+```
 13
+```
 
-你将在程序中使用它，它将在你的计算机内存中生成该数字的位模式。JavaScript 使用固定数量的位，即 64 位，来存储单个数字的值。用 64 位可以创建无限种模式。这意味着
-
-系统所能表示的不同数字是有限的。使用 N 位十进制数字，你有机会表示 10^N 个数。
+你将在程序中使用它，它将在你的计算机内存中生成该数字的位模式。JavaScript 使用固定数量的位，即 64 位，来存储单个数字的值。用 64 位可以创建无限种模式。这意味着系统所能表示的不同数字是有限的。使用 N 位十进制数字，你有机会表示 10^N 个数。
 
 过去计算机的内存要小得多，人们不得不使用特定的 8 位和 16 位组合来表示数字。一些小数字很容易溢出，最终得到一个无法放入某些位中的数。时代变了。即使是放在我们口袋里的计算机，也有巨大的空间来保存你需要的任何东西。
 
@@ -284,7 +295,7 @@ console.log(4567 + 36);
 
 ### 算术
 
-要点在于数字被用于算术运算。它们在编程中被用于执行加法和乘法等算术运算。乘法和加法这类简单运算至少需要两个数才能产生第三个数。**+** 是加法的符号，而 **\*** 是乘法的符号。这两个符号都被称为运算符。当你编程时，在一个运算符放在两个数字之间，你就开始了一个算术运算。你可以使用括号来改变运算符执行的顺序。例如，在正常情况下，乘法优先。但如果你把加法放在括号中，你就改变了顺序。现在编辑器会先执行加法。
+要点在于数字被用于算术运算。它们在编程中被用于执行加法和乘法等算术运算。乘法和加法这类简单运算至少需要两个数才能产生第三个数。`+` 是加法的符号，而 `*` 是乘法的符号。这两个符号都被称为运算符。当你编程时，在一个运算符放在两个数字之间，你就开始了一个算术运算。你可以使用括号来改变运算符执行的顺序。例如，在正常情况下，乘法优先。但如果你把加法放在括号中，你就改变了顺序。现在编辑器会先执行加法。
 
 ```
 (500 + 100) * 500
@@ -297,16 +308,18 @@ console.log(4567 + 36);
 在深入 JavaScript 编程的海洋之前，你必须牢记的另一个概念是字符串。JavaScript 字符串表示文本。你可以通过将任何想要转换为字符串的文本片段用引号括起来编写它们。参见以下示例。
 
 > 'I am looking at the sinking sun.'
-> 
+>
 > "I am going to take a flight to Mars."
-> 
+>
 > `The weather is balmy, as April has started.`
 
 你可以使用单引号、双引号和反引号，如我在上述示例中所示。在每个字符串的开头或结尾放置引号，以便代码编辑器将文本识别为字符串。你几乎可以在引号中放入任何内容，JavaScript 都会将其转换为字符串。然而，语言中的某些字符难以转换。你可能想过如何在引号中放入引号。第一个几乎不可能包含在字符串中的是换行符。换行符出现在你按下键盘上的回车键时。使用反引号时，你可以不用转义就做到这一点。
 
 如果你想在字符串中包含特殊字符，可以使用反斜杠（`\\`）。反斜杠表示紧跟其后的字符被赋予了特殊含义。这个过程被称为转义字符。如果反斜杠位于引号之前，它不会结束字符串，而是会被包含在字符串中。如果在反斜杠后插入 'n' 字符，它将被解释为一个换行符。如果在反斜杠后放置 't'，它表示一个制表符。参见以下字符串示例。
 
+```
 "I will reach the moon\n And I will travel onwards to Mars."
+```
 
 你在网页上将看到的内容如下所示：
 
@@ -318,9 +331,11 @@ And I will travel onwards to Mars.
 
 你必须将字符串建模为一系列位，以便它们能存在于计算机中。JavaScript 执行的方式取决于 Unicode 标准。这些标准为你需要的每个字符分配特定的数字，包括阿拉伯语、希腊语、亚美尼亚语和日语的字符。如果每个字符都有一个数字，你的字符串就可以由特定的数字序列来描述。这就是 JavaScript 执行代码的方式。不过，你可能会面临一些复杂情况。JavaScript 的表示使用每个字符串元素 16 位。Unicode 定义的字符远多于此。一些字符如表情符号会占用两个字符位置。
 
-JavaScript 字符串的一个奇特之处是你不能对它们进行除法、减法和乘法运算。然而，有一个运算符可以用于字符串。你可以在 JavaScript 字符串上使用 **+** 运算符来连接它们，或者简单地将它们组合成一个整体。参见以下示例：
+JavaScript 字符串的一个奇特之处是你不能对它们进行除法、减法和乘法运算。然而，有一个运算符可以用于字符串。你可以在 JavaScript 字符串上使用 `+` 运算符来连接它们，或者简单地将它们组合成一个整体。参见以下示例：
 
+```
 "I" + "am" + "going" + "to" + "Mars" + "."
+```
 
 字符串值有多个相关函数，你可以用来执行不同的操作。你用单引号或双引号编写的字符串行为方式相同。这两种字符串的唯一区别是字符串中转义字符的使用。当你在 `${}` 中写入某些内容时，结果将被计算，然后转换为字符串，并插入到同一位置。
 
@@ -328,7 +343,7 @@ JavaScript 字符串的一个奇特之处是你不能对它们进行除法、减
 
 JavaScript 数组可以通过方括号来识别。数组的项目填充在方括号内，并用逗号分隔。看看我们如何声明数组。
 
-```
+```html
 <!DOCTYPE html>
 <html>
 <body>
@@ -345,7 +360,7 @@ JavaScript 数组可以通过方括号来识别。数组的项目填充在方括
 
 学习 JavaScript 数组
 
-JavaScript 数组的索引是从零开始的。这意味着数组中的第一个项目是 [0]。
+JavaScript 数组的索引是从零开始的。这意味着数组中的第一个项目是 `[0]`。
 
 Volkswagen
 
@@ -358,13 +373,13 @@ Volkswagen
 - My profession is coding.
 - My state is Texas, USA.
 
-如果你读到了这些内容，你就已经把我是程序员、我住在德克萨斯州的信息记在了脑中。在上述文本片段中，coding 和 Texas, USA 这些词语和短语的作用方式与 JavaScript 中的变量相同。My Profession 和 My State 这类术语指向特定的值。它们与 Coding 和 Texas, USA 的关系，正如 JavaScript 中值与变量的关系。
+如果你读到了这些内容，你就已经把我是程序员、我住在德克萨斯州的信息记在了脑中。在上述文本片段中，`coding` 和 `Texas, USA` 这些词语和短语的作用方式与 JavaScript 中的变量相同。`My Profession` 和 `My State` 这类术语指向特定的值。它们与 `Coding` 和 `Texas, USA` 的关系，正如 JavaScript 中值与变量的关系。
 
-你可以通过书写 var（代表 variable，变量）来创建一个变量。然后跟上你要分配给变量的名称。当你创建一个变量时，它会获得一个特定的值。变量的名称可以是你喜欢的任何东西。如何命名由你决定。变量的值可能会改变。变量的实际情况可以改变。
+你可以通过书写 `var`（代表 variable，变量）来创建一个变量。然后跟上你要分配给变量的名称。当你创建一个变量时，它会获得一个特定的值。变量的名称可以是你喜欢的任何东西。如何命名由你决定。变量的值可能会改变。变量的实际情况可以改变。
 
-JavaScript 变量可以简单地定义为用于以数据形式存储值的容器。在以下示例中，我将使用三个变量：a、b 和 c，并用不同的值填充它们。
+JavaScript 变量可以简单地定义为用于以数据形式存储值的容器。在以下示例中，我将使用三个变量：`a`、`b` 和 `c`，并用不同的值填充它们。
 
-```
+```html
 <!DOCTYPE html>
 <html>
 <body>
@@ -379,9 +394,6 @@ JavaScript 变量可以简单地定义为用于以数据形式存储值的容器
 var a = 50;
 var b = 16;
 var c = a + b;
-```
-
-```
 document.getElementById("variable-demo").innerHTML =
 "The value of c is: " + c;
 </script>
@@ -392,15 +404,15 @@ document.getElementById("variable-demo").innerHTML =
 
 这些是 JavaScript 变量
 
-在以下示例中，a、b 和 c 是 JavaScript 变量。
+在以下示例中，`a`、`b` 和 `c` 是 JavaScript 变量。
 
 c 的值是：66
 
-因为这是第一个示例，你需要好好理解它。首先，这一行划分了 JavaScript 的后端代码和前端。你可以说它划分了你在代码编辑器中编写的内容和你在网页上看到的内容。h1 和 p 标题在书中显示的可能与在网页上显示的不同。这是因为我使用的文字处理器的 h1 和 p 设置。如果你将代码复制粘贴到编辑器中并在网页上运行，它们会正常工作。此外，这就是我在本书其余部分中将代码嵌入 HTML 结构的写法，因为这就是你创建网站时的写法。你需要 HTML 嵌入来编写 JavaScript 脚本，以便让网页浏览器读取它们。在上述示例中，你可以看到每个变量都有一个变量来容纳。
+因为这是第一个示例，你需要好好理解它。首先，这一行划分了 JavaScript 的后端代码和前端。你可以说它划分了你在代码编辑器中编写的内容和你在网页上看到的内容。`h1` 和 `p` 标题在书中显示的可能与在网页上显示的不同。这是因为我使用的文字处理器的 `h1` 和 `p` 设置。如果你将代码复制粘贴到编辑器中并在网页上运行，它们会正常工作。此外，这就是我在本书其余部分中将代码嵌入 HTML 结构的写法，因为这就是你创建网站时的写法。你需要 HTML 嵌入来编写 JavaScript 脚本，以便让网页浏览器读取它们。在上述示例中，你可以看到每个变量都有一个变量来容纳。
 
 我现在不再创建单字母变量，而是创建具有完整单词名称的变量。
 
-```
+```html
 <!DOCTYPE html>
 <html>
 <body>
@@ -427,19 +439,19 @@ document.getElementById("variable-demo").innerHTML =
 
 在下面的示例中，变量将使用完整的单词名称。
 
-totalprice 的值为：310
+`totalprice` 的值为：310
 
 ### JavaScript 标识符
 
-JavaScript 变量需要被赋予唯一的名称，以便于识别。这些唯一的名称被称为标识符。标识符可以是像 a、b、c 这样的短名，也可以是像 totalprice、milkprice 和 oilprice 这样的较长描述性名称。JavaScript 变量有一些命名规则。你可以使用这些规则来最大限度地减少错误发生的可能性。
+JavaScript 变量需要被赋予唯一的名称，以便于识别。这些唯一的名称被称为标识符。标识符可以是像 `a`、`b`、`c` 这样的短名，也可以是像 `totalprice`、`milkprice` 和 `oilprice` 这样的较长描述性名称。JavaScript 变量有一些命名规则。你可以使用这些规则来最大限度地减少错误发生的可能性。
 
 - 变量必须不包含数字、字母、美元符号和下划线。
-- 变量可以以 $ 符号开头。
-- 变量区分大小写，这使得 'a' 变量与 'A' 变量不同。
+- 变量可以以 `$` 符号开头。
+- 变量区分大小写，这使得 `a` 变量与 `A` 变量不同。
 - 变量必须以字母开头。
 - 你不能将 JavaScript 关键字用作变量。
 
-如果你在 JavaScript 中看到像 '=' 这样的等号，不要将其误认为是代数中使用的那个等号。它有不同的用途。
+如果你在 JavaScript 中看到像 `=` 这样的等号，不要将其误认为是代数中使用的那个等号。它有不同的用途。
 
 变量存储的信息可能在你创建的程序的后续部分中使用。脚本很长，因此变量使得定位有用值变得容易。变量便于在同一代码中重复使用一个值。你无需记住该值，只需创建一个变量并为其赋值即可。
 
@@ -447,7 +459,7 @@ JavaScript 变量需要被赋予唯一的名称，以便于识别。这些唯一
 
 JavaScript 变量可以存储不同类型的信息，如数字和文本。编程中的文本值被称为文本字符串。JavaScript 可以存储不同类型的数据。正如我已经解释过的，字符串必须用单引号或双引号编写，取决于哪种适合你。数字编写时不带引号。如果你对数字使用引号，浏览器会将其解释为字符串。
 
-```
+```html
 <!DOCTYPE html>
 <html>
 <body>
@@ -471,20 +483,24 @@ num + "<br>" + novelist + "<br>" + introduction;
 ```
 
 You are studying JavaScript Variables
+
 I am defining JavaScript datatypes.
+
 5555555.889
+
 Charles Dickens
+
 Charles Dickens wrote melodramatic novels!
 
 ### 变量声明
 
-变量声明的过程，实际上就是创建变量的过程。你可能已经注意到，在上面的示例中，我在每个变量前都使用了关键字 var。没有 var 关键字，你无法创建一个变量。一旦你声明了一个变量，该变量将没有值。你必须像我在示例中所做的那样为它赋值。这里使用了等号 =。你将这个符号放在变量名和值之间。
+变量声明的过程，实际上就是创建变量的过程。你可能已经注意到，在上面的示例中，我在每个变量前都使用了关键字 `var`。没有 `var` 关键字，你无法创建一个变量。一旦你声明了一个变量，该变量将没有值。你必须像我在示例中所做的那样为它赋值。这里使用了等号 `=`。你将这个符号放在变量名和值之间。
 
 ### 未定义的变量
 
 在不同的程序中，你经常会声明没有值的变量。这个值可能是你可以计算出来的东西，也可能是你稍后可以提供给它的东西，比如用户的输入。你声明时没有赋值的变量会带有一个“未定义”的值。我将使用我已经创建的其中一个示例，并移除变量的值。让我们使用最新的示例，以便你能更好地理解。
 
-```
+```html
 <!DOCTYPE html>
 <html>
 <body>
@@ -509,13 +525,14 @@ document.getElementById("variable-demo").innerHTML =
 ```
 
 You are studying JavaScript Variables
+
 I am defining JavaScript's undefined variables.
 
 ### 重新声明
 
 有可能你已经定义并声明了一个变量，但后来改变了主意，并按照我刚才解释的过程使其未定义。那么，这会让它变成未定义吗？答案是“不会”。在声明之后使其未定义不会导致变量失去其值。
 
-```
+```html
 <!DOCTYPE html>
 <html>
 <body>
@@ -545,16 +562,20 @@ num + "<br>" + novelist + "<br>" + introduction;
 ```
 
 You are learning JavaScript Variables
+
 This is JavaScript's undeclared variables.
+
 5555.444
+
 Charles Lamb
+
 Charles Lamb wrote beautiful humor.
 
 ### 算术运算
 
-JavaScript 与其他编程语言一样，允许你进行数学计算。你可以对数字进行运算，产生结果，然后将结果传递给变量进行存储。在代码中，你可以使用像 = 和 + 这样的运算符。
+JavaScript 与其他编程语言一样，允许你进行数学计算。你可以对数字进行运算，产生结果，然后将结果传递给变量进行存储。在代码中，你可以使用像 `=` 和 `+` 这样的运算符。
 
-```
+```html
 <!DOCTYPE html>
 <html>
 <body>
@@ -578,14 +599,16 @@ document.getElementById("variable-demo").innerHTML = a
 ```
 
 JavaScript Arithmetic
+
 This is JavaScript's undeclared arithmetic.
+
 3489
 
 ### 减法
 
-接下来要讨论的算术运算符是减法。该运算符的符号与代数中使用的相同。你可以用你选择的数字填充程序，并在它们之间放置 – 符号以开始减法过程。
+接下来要讨论的算术运算符是减法。该运算符的符号与代数中使用的相同。你可以用你选择的数字填充程序，并在它们之间放置 `–` 符号以开始减法过程。
 
-```
+```html
 <!DOCTYPE html>
 <html>
 <body>
@@ -611,14 +634,16 @@ document.getElementById("variable-demo").innerHTML = c
 ```
 
 JavaScript Arithmetic
+
 JavaScript subtraction.
+
 15
 
 ### JavaScript 字符串连接
 
-就像你学会了加法一样，JavaScript 允许你连接字符串。在下面的示例中，我将使用 + 运算符来连接字符串。
+就像你学会了加法一样，JavaScript 允许你连接字符串。在下面的示例中，我将使用 `+` 运算符来连接字符串。
 
-```
+```html
 <!DOCTYPE html>
 <html>
 <body>
@@ -642,18 +667,20 @@ num + "<br>" + novelist + "<br>" + introduction;
 ```
 
 JavaScript String Concatenation
+
 JavaScript datatypes.
+
 Charles Dickens wrote melodramatic novels!
 
 ### JavaScript Let 关键字
 
-在 JavaScript 中，let 关键字用于变量的声明。var 关键字也可用于变量的声明；然而，关键区别在于两者的作用域。var 关键字基于函数作用域，而 let 关键字基于块作用域。学习如何使用 let 关键字与学习 var 关键字和 let 关键字之间的区别相关联。
+在 JavaScript 中，`let` 关键字用于变量的声明。`var` 关键字也可用于变量的声明；然而，关键区别在于两者的作用域。`var` 关键字基于函数作用域，而 `let` 关键字基于块作用域。学习如何使用 `let` 关键字与学习 `var` 关键字和 `let` 关键字之间的区别相关联。
 
 #### 全局作用域
 
 你在 JavaScript 函数外部声明的变量。
 
-```
+```html
 <!DOCTYPE html>
 <html>
 <body>
@@ -684,7 +711,7 @@ I plan to buy a BMW for my daily commute and offroading.
 
 你将在 JavaScript 函数范围内声明的变量具有函数作用域。在下面的示例中，我将在函数内部声明变量。
 
-```
+```html
 <!DOCTYPE html>
 <html>
 <body>
@@ -704,24 +731,22 @@ function Function2() {
 </html>
 ```
 
+这些是 JavaScript 作用域
 
-
-#### 这些是 JavaScript 作用域
-
-我将在 Function2() 外部定义并声明一个变量。
+我将在 `Function2()` 外部定义并声明一个变量。
 
 ```
 string BMW
 undefined
 ```
 
-我尝试在函数内部和外部定义变量。因此，当我检查这些变量的类型时，我发现被抛出函数范围之外的变量被标记为 undefined。这就是我们称它们为函数作用域变量的原因。所以，如果你编写代码时错误地将一个变量带出函数，你会看到相同的消息。解决办法是将声明包含在函数括号内，这样代码就会正常工作了。
+我尝试在函数内部和外部定义变量。因此，当我检查这些变量的类型时，我发现被抛出函数范围之外的变量被标记为 `undefined`。这就是我们称它们为函数作用域变量的原因。所以，如果你编写代码时错误地将一个变量带出函数，你会看到相同的消息。解决办法是将声明包含在函数括号内，这样代码就会正常工作了。
 
 #### 块级作用域
 
-使用 **var** 关键字声明的变量没有块级作用域。只有在大括号内声明的变量才能从块外部访问。块级作用域是在 ES2015 中引入 JavaScript 的。在此之前，它没有作用域。虽然使用 **var** 关键字的变量没有块级作用域，但使用 **let** 关键字声明的变量可以具有块级作用域。
+使用 `var` 关键字声明的变量没有块级作用域。只有在大括号内声明的变量才能从块外部访问。块级作用域是在 ES2015 中引入 JavaScript 的。在此之前，它没有作用域。虽然使用 `var` 关键字的变量没有块级作用域，但使用 `let` 关键字声明的变量可以具有块级作用域。
 
-**var** 关键字在某些情况下会给程序员带来问题。尤其是当你尝试使用 **var** 关键字重新声明变量时，你会看到编辑器中出现一堆问题。如果你在块内重新声明一个变量，也会在同一个块外重新声明它。从长远来看，这会导致额外的问题。
+`var` 关键字在某些情况下会给程序员带来问题。尤其是当你尝试使用 `var` 关键字重新声明变量时，你会看到编辑器中出现一堆问题。如果你在块内重新声明一个变量，也会在同一个块外重新声明它。从长远来看，这会导致额外的问题。
 
 ```html
 <!DOCTYPE html>
@@ -747,11 +772,11 @@ document.getElementById("let-demo").innerHTML = xyz;
 </html>
 ```
 
-此代码片段将使用 **var** 关键字声明你的变量
+此代码片段将使用 `var` 关键字声明你的变量
 
 1
 
-所以，你可以看到我们遇到了一个大问题。使用 **var** 关键字时，重新声明可能是一个棘手的难题。这就是 exists **let** 关键字发挥作用的地方。它解决了重新声明的问题。如果你使用 **let** 关键字声明变量，在重新声明同一变量时就不会有任何问题。在下面的代码中，我将解释 **let** 关键字如何解决重新声明的问题。
+所以，你可以看到我们遇到了一个大问题。使用 `var` 关键字时，重新声明可能是一个棘手的难题。这就是 `let` 关键字发挥作用的地方。它解决了重新声明的问题。如果你使用 `let` 关键字声明变量，在重新声明同一变量时就不会有任何问题。在下面的代码中，我将解释 `let` 关键字如何解决重新声明的问题。
 
 ```html
 <!DOCTYPE html>
@@ -777,13 +802,13 @@ document.getElementById("let-demo").innerHTML = xyz;
 </html>
 ```
 
-我现在将使用 **let** 关键字来重新声明一个变量
+我现在将使用 `let` 关键字来重新声明一个变量
 
 1000
 
-由于 **let** 关键字是后来引入的，Internet Explorer 11 及更早版本不支持它。目前，Chrome 49、Firefox 44、Opera 36、Edge 12 和 Safari 11 支持使用 **let** 关键字。
+由于 `let` 关键字是后来引入的，Internet Explorer 11 及更早版本不支持它。目前，Chrome 49、Firefox 44、Opera 36、Edge 12 和 Safari 11 支持使用 `let` 关键字。
 
-在使用 JavaScript 循环时，**var** 和 **let** 关键字具有不同的行为。请参阅以下两个示例以了解这两个关键字之间的区别。
+在使用 JavaScript 循环时，`var` 和 `let` 关键字具有不同的行为。请参阅以下两个示例以了解这两个关键字之间的区别。
 
 #### 示例 1
 
@@ -813,7 +838,7 @@ JavaScript 的 let 关键字
 
 9
 
-#### 示例 2：
+#### 示例 2
 
 ```html
 <!DOCTYPE html>
@@ -841,21 +866,20 @@ JavaScript 的 let 关键字
 
 4
 
-在第一个示例中，当我使用 var 关键字时，在循环内声明的变量重新声明了循环外部的 xyz 变量。然而，在示例 2 中，当我使用 let 关键字时，在循环内部声明的变量并没有重新声明循环外部的变量。当你使用 let 在 for 循环中声明 xyz 变量时，你只能在该循环内看到 xyz 变量，而在循环外是看不到的。
+在第一个示例中，当我使用 `var` 关键字时，在循环内声明的变量重新声明了循环外部的 `xyz` 变量。然而，在示例 2 中，当我使用 `let` 关键字时，在循环内部声明的变量并没有重新声明循环外部的变量。当你使用 `let` 在 `for` 循环中声明 `xyz` 变量时，你只能在该循环内看到 `xyz` 变量，而在循环外是看不到的。
 
-let 关键字和 var 关键字都致力于声明变量。然而，在创建 JavaScript 程序之前，你应该了解两者之间的关键区别。
+`let` 关键字和 `var` 关键字都致力于声明变量。然而，在创建 JavaScript 程序之前，你应该了解两者之间的关键区别。
 
-- var 关键字主要在较早的 JavaScript 版本中使用，而 let 关键字被认为是最新的变量声明方法。你可以说 let 关键字从 ES6 开始，也就是 ES2015。
-- var 关键字基本上是函数作用域的，而 let 关键字是块级作用域的。
+- `var` 关键字主要在较早的 JavaScript 版本中使用，而 `let` 关键字被认为是最新的变量声明方法。你可以说 `let` 关键字从 ES6 开始，也就是 ES2015。
+- `var` 关键字基本上是函数作用域的，而 `let` 关键字是块级作用域的。
 
-如果我们谈论这两个关键字中推荐使用哪一个，我们可能会说 let 关键字是编写程序时的最佳选择。然而，一些浏览器不支持 let 关键字。因此，你可能会觉得需要使用 var 关键字。
+如果我们谈论这两个关键字中推荐使用哪一个，我们可能会说 `let` 关键字是编写程序时的最佳选择。然而，一些浏览器不支持 `let` 关键字。因此，你可能会觉得需要使用 `var` 关键字。
 
 ## 第三章
 
-#### JavaScript 常量
+### JavaScript 常量
 
-JavaScript 中的 const 关键字是在 ES2015 中引入的。使用 const 关键字定义的变量与使用 let 关键字定义的变量一样好用。唯一的区别是你不能重新赋值它们。'][内容结束]```plain
-一旦初始化常量，就无法再更改其值。这就是常量与 var 关键字的区别。如果要声明常量，需要先对其进行初始化。
+JavaScript 中的 `const` 关键字是在 ES2015 中引入的。使用 `const` 关键字定义的变量与使用 `let` 关键字定义的变量一样好用。唯一的区别是你不能重新赋值它们。一旦初始化常量，就无法再更改其值。这就是常量与 `var` 关键字的区别。如果要声明常量，需要先对其进行初始化。
 
 在程序中是否应该使用常量，你应该先考虑一下。只有当你确定不需要更改变量的值时，才应该使用它。
 
@@ -867,20 +891,31 @@ JavaScript 中的 const 关键字是在 ES2015 中引入的。使用 const 关�
 <body>
 
 <p>You are learning JavaScript constants</p>
+
 <p>Keep in mind that you cannot change primitive values.</p>
+
 <p id="const-demo"></p>
 
 <script>
+
 try {
+
   const xyz = 89.141592653589793;
+
   xyz = 54.14;
+
 }
+
 catch (err) {
+
   document.getElementById("const-demo").innerHTML = err;
+
 }
+
 </script>
 
 </body>
+
 </html>
 ```
 
@@ -892,7 +927,7 @@ TypeError: Assignment to constant variable.
 
 #### 块级作用域
 
-在使用块级作用域时，使用 const 关键字声明变量与使用 let 关键字声明变量类似。以下示例将解释它是如何倾向于 let 关键字，而远离 var 关键字的。
+在使用块级作用域时，使用 `const` 关键字声明变量与使用 `let` 关键字声明变量类似。以下示例将解释它是如何倾向于 `let` 关键字，而远离 `var` 关键字的。
 
 ```html
 <!DOCTYPE html>
@@ -904,25 +939,35 @@ TypeError: Assignment to constant variable.
 <p id="const-demo"></p>
 
 <script>
+
 var xyz = 15;
+
 // The value of xyz is 15
+
 {
+
     const xyz = 1;
+
     // The value of xyz is 1
+
 }
+
 // The value of xyz is 15
+
 document.getElementById("const-demo").innerHTML = xyz;
+
 </script>
 
 </body>
+
 </html>
 ```
 
-在此示例中，我将使用 const 关键字声明变量
+在此示例中，我将使用 `const` 关键字声明变量
 
 15
 
-与使用 var 关键字声明的变量不同，常量必须在声明时赋值。你不能将值部分留空。constant 这个词有点令人困惑，如果不是完全误导的话。const 关键字并不定义常量值。实际上，它定义了你在等式中使用的值的常量引用。这就是为什么你不能更改常量的原始值。但是，你可以更改属性。
+与使用 `var` 关键字声明的变量不同，常量必须在声明时赋值。你不能将值部分留空。`constant` 这个词有点令人困惑，如果不是完全误导的话。`const` 关键字并不定义常量值。实际上，它定义了你在等式中使用的值的常量引用。这就是为什么你不能更改常量的原始值。但是，你可以更改属性。
 
 #### 原始值
 
@@ -934,31 +979,41 @@ document.getElementById("const-demo").innerHTML = xyz;
 <body>
 
 <p>These are JavaScript constants</p>
+
 <p>Let try if we can change primitive value.</p>
 
 <p id="const-demo"></p>
 
 <script>
+
 try {
+
     const xyz = 5556.175757557757793;
+
     xyz = 3555.19090;
+
 }
+
 catch (err) {
+
     document.getElementById("const-demo").innerHTML = err;
+
 }
+
 </script>
 
 </body>
+
 </html>
 ```
 
-#### 这些是 JavaScript 常量
+这些是 JavaScript 常量
 
 让我们试试能否更改原始值。
 
 TypeError: Assignment to constant variable.
 
-虽然你无法更改 JavaScript 常量中的原始值，但你可以更改对象的属性。在下面的示例中，我将使用 const 关键字创建一个对象，然后对该对象的属性进行一些更改，看看是否可以更改它们。请参阅示例以了解如何完成。
+虽然你无法更改 JavaScript 常量中的原始值，但你可以更改对象的属性。在下面的示例中，我将使用 `const` 关键字创建一个对象，然后对该对象的属性进行一些更改，看看是否可以更改它们。请参阅示例以了解如何完成。
 
 ```html
 <!DOCTYPE html>
@@ -972,26 +1027,31 @@ TypeError: Assignment to constant variable.
 <p id="const-demo"></p>
 
 <script>
+
 // I am going to create an object:
+
 const mycar = {name:"Honda", model:"Vezel", make:"Japan", color:"Grey"};
 
 // Let us Change the property:
+
 mycar.model = "Civic";
 
 // You also can add a new property:
+
 mycar.transmission = "Automatic";
 
 // It is time to display your properties:
+
 document.getElementById("const-demo").innerHTML = "I have a " + mycar.name + "," + " It is of " + mycar.color + " color and its model label is " + mycar.model + "." + "This car has " + mycar.transmission + ".";
+
 </script>
 
 </body>
+
 </html>
 ```
 
-
-
-#### JavaScript 常量
+JavaScript 常量
 
 你可以在声明对象后更改其属性：
 
@@ -1003,19 +1063,33 @@ document.getElementById("const-demo").innerHTML = "I have a " + mycar.name + ","
 <!DOCTYPE html>
 <html>
 <body>
+
 <p>学习 JavaScript 常量</p>
+
 <p>禁止：你不能将同一个常量重新赋值为另一个对象：</p>
+
 <p id="const-demo"></p>
+
 <script>
+
 try {
+
   const mycar = {name:"Honda", model:"Vezel", make:"Japan", color:"black"};
+
   mycar = {name:"BMW", model:"Z1", make:"German", color:"red"};
+
 }
+
 catch (err) {
+
   document.getElementById("demo").innerHTML = err;
+
 }
+
 </script>
+
 </body>
+
 </html>
 ```
 
@@ -1065,12 +1139,17 @@ catch (err) {
 <p id="if-demo">Have a Savory Evening!</p>
 
 <script>
+
 if (new Date().getHours() < 15) {
+
     document.getElementById("if-demo").innerHTML = "Have a Great Day!";
+
 }
+
 </script>
 
 </body>
+
 </html>
 ```
 
@@ -1094,18 +1173,31 @@ Have a Great Day!
 <p id="ifelse-demo"></p>
 
 <script>
+
 function FunctionX() {
+
     var myhours = new Date().getHours();
+
     var mygreetings;
+
     if (myhours < 15) {
+
         mygreetings = "Have a Great Day";
+
     } else {
+
         mygreetings = "Have a Great Evening. I hope you enjoy your dinner.";
+
     }
+
     document.getElementById("ifelse-demo").innerHTML = mygreetings;
+
 }
+
 </script>
+
 </body>
+
 </html>
 ```
 
@@ -1133,26 +1225,35 @@ Have a Great Day
 <p id="ifelse-demo"></p>
 
 <script>
+
 function FunctionX() {
+
   var mygreetings;
+
   var mytime = new Date().getHours();
+
   if (mytime < 8) {
+
     mygreetings = "Have a Good Morning. I hope you have had a nutritious breakfast. Get ready for work";
+
   } else if (mytime < 15) {
+
     mygreetings = "Have a Great Day. Don't forget to eat your lunch.";
-```
 
+  } else {
 
-
-```javascript
-} else {
     mygreetings = "晚上好。晚餐有什么特别计划吗？";
+
+  }
+
+  document.getElementById("ifelse-demo").innerHTML = mygreetings;
+
 }
-document.getElementById("ifelse-demo").innerHTML = mygreetings;
-}
+
 </script>
 
 </body>
+
 </html>
 ```
 
@@ -1162,13 +1263,13 @@ document.getElementById("ifelse-demo").innerHTML = mygreetings;
 
 祝您度过愉快的一天。别忘了吃午餐。
 
-这运行得非常完美。现在你的程序将在一天中的三个时间段显示问候信息。你可以根据业务需求自定义消息，使其更具互动性。一些程序员习惯省略花括号来编写if语句。这种做法完全合法，但写起来有点难度。另一些程序员则把左花括号放在新行上。还有一种做法是将整个if语句写在一行上，这样做更容易，但当你回头研究程序结构时却难以阅读。我建议你遵循我在上面示例中使用的相同规则，这样你会发现编写和理解都更容易。在大多数情况下，你可以使用双等号 == 来代替三等号。不过，你可能会注意到两者之间存在细微的技术差异。
+这运行得非常完美。现在你的程序将在一天中的三个时间段显示问候信息。你可以根据业务需求自定义消息，使其更具互动性。一些程序员习惯省略花括号来编写 `if` 语句。这种做法完全合法，但写起来有点难度。另一些程序员则把左花括号放在新行上。还有一种做法是将整个 `if` 语句写在一行上，这样做更容易，但当你回头研究程序结构时却难以阅读。我建议你遵循我在上面示例中使用的相同规则，这样你会发现编写和理解都更容易。在大多数情况下，你可以使用双等号 `==` 来代替三等号。不过，你可能会注意到两者之间存在细微的技术差异。
 
-编写if语句以及if语句的各种变体有许多不同的格式。使用if语句进行编码的可能性是无穷无尽的。
+编写 `if` 语句以及 `if` 语句的各种变体有许多不同的格式。使用 `if` 语句进行编码的可能性是无穷无尽的。
 
-### JavaScript Switch语句
+### JavaScript Switch 语句
 
-你可以使用switch语句根据JavaScript条件执行不同的操作。它将帮助你处理单个代码块并执行它。编辑器会对其求值一次，在值之间进行比较，如果匹配，则执行该代码块。如果不匹配，则不会执行。以下程序将运行switch语句，遍历你的电脑日历查看今天是星期几，并找出代码中为这一天设置的消息。它将遍历一周的所有七天，当找到匹配时，它将运行你已为这一天关联的消息。请参阅以下代码。
+你可以使用 `switch` 语句根据 JavaScript 条件执行不同的操作。它将帮助你处理单个代码块并执行它。编辑器会对其求值一次，在值之间进行比较，如果匹配，则执行该代码块。如果不匹配，则不会执行。以下程序将运行 `switch` 语句，遍历你的电脑日历查看今天是星期几，并找出代码中为这一天设置的消息。它将遍历一周的所有七天，当找到匹配时，它将运行你已为这一天关联的消息。请参阅以下代码。
 
 ```html
 <!DOCTYPE html>
@@ -1178,41 +1279,67 @@ document.getElementById("ifelse-demo").innerHTML = mygreetings;
 <p id="switch-demo"></p>
 
 <script>
+
 var weekdays;
+
 switch (new Date().getDay()) {
+
   case 0:
+
     weekdays = "宁静的星期日";
+
     break;
+
   case 1:
+
     weekdays = "忧郁的星期一";
+
     break;
+
   case 2:
+
     weekdays = "迷信的星期二";
+
     break;
+
   case 3:
+
     weekdays = "忙碌的星期三";
+
     break;
+
   case 4:
+
     weekdays = "疲惫的星期四";
+
     break;
+
   case 5:
+
     weekdays = "欢乐的星期五";
+
     break;
+
   case 6:
+
     weekdays = "慵懒的星期六";
+
 }
+
 document.getElementById("switch-demo").innerHTML = "今天是" + weekdays + "。" + " 祝你度过充实而美好的一天！";
+
 </script>
 
 </body>
+
 </html>
 ```
 
 今天是迷信的星期二。祝你度过充实而美好的一天！
 
-在上面的代码示例中，你可能已经注意到了 `break` 关键字的使用。当代码执行到 `break` 关键字时，它会跳出特定的switch代码块。这种跳出switch代码块的操作会终止switch代码块的执行。你并非必须在switch代码块的最后一个case中插入 `break` 关键字。包含或不包含它，代码块最终都会结束。如果你在switch代码块中省略了 `break` 关键字，即使值不匹配，Web浏览器也会执行紧接着的下一个case。所以，如果你跳过了 `break` 关键字，请做好出现错误的准备。
+在上面的代码示例中，你可能已经注意到了 `break` 关键字的使用。当代码执行到 `break` 关键字时，它会跳出特定的 `switch` 代码块。这种跳出 `switch` 代码块的操作会终止 `switch` 代码块的执行。你并非必须在 `switch` 代码块的最后一个 `case` 中插入 `break` 关键字。包含或不包含它，代码块最终都会结束。如果你在 `switch` 代码块中省略了 `break` 关键字，即使值不匹配，Web 浏览器也会执行紧接着的下一个 `case`。所以，如果你跳过了 `break` 关键字，请做好出现错误的准备。
 
-还有另一个关键字可以添加到switch语句中。即使值不匹配，它也会执行代码。
+还有另一个关键字可以添加到 `switch` 语句中。即使值不匹配，它也会执行代码。
 
 ```html
 <!DOCTYPE html>
@@ -1222,39 +1349,65 @@ document.getElementById("switch-demo").innerHTML = "今天是" + weekdays + "。
 <p id="switch-demo"></p>
 
 <script>
+
 var weekdays;
+
 switch (new Date().getDay()) {
+
   case 0:
+
     weekdays = "今天是宁静的星期日";
+
     break;
+
   case 1:
+
     weekdays = "今天是忧郁的星期一";
+
     break;
+
   case 3:
+
     weekdays = "今天是忙碌的星期三";
+
     break;
+
   case 4:
+
     weekdays = "今天是疲惫的星期四";
+
     break;
+
   case 5:
+
     weekdays = "今天是欢乐的星期五";
+
     break;
+
   case 6:
+
     weekdays = "今天是慵懒的星期六";
+
     break;
+
   default:
+
     weekdays = "我正热切地盼望着周末，因为我已经计划了一个假期。";
+
 }
+
 document.getElementById("switch-demo").innerHTML = weekdays
+
 </script>
 
 </body>
+
 </html>
 ```
 
 我正热切地盼望着周末，因为我已经计划了一个假期。
 
-你可能认为default情况只能放在代码的最后。但事实并非如此。你可以将其插入到代码中的任何位置，甚至在代码的开头。它都能正常工作。
+你可能认为 `default` 情况只能放在代码的最后。但事实并非如此。你可以将其插入到代码中的任何位置，甚至在代码的开头。它都能正常工作。
 
 ```html
 <!DOCTYPE html>
@@ -1264,34 +1417,59 @@ document.getElementById("switch-demo").innerHTML = weekdays
 <p id="switch-demo"></p>
 
 <script>
+
 var weekdays;
+
 switch (new Date().getDay()) {
+
   default:
+
     weekdays = "我正热切地盼望着周末，因为我已经计划了一个假期。";
+
     break;
+
   case 0:
+
     weekdays = "今天是宁静的星期日";
+
     break;
+
   case 1:
+
     weekdays = "今天是忧郁的星期一";
+
     break;
+
   case 3:
+
     weekdays = "今天是忙碌的星期三";
+
     break;
+
   case 4:
+
     weekdays = "今天是疲惫的星期四";
+
     break;
+
   case 5:
+
     weekdays = "今天是欢乐的星期五";
+
     break;
+
   case 6:
+
     weekdays = "今天是慵懒的星期六";
 
 }
+
 document.getElementById("switch-demo").innerHTML = weekdays
+
 </script>
 
 </body>
+
 </html>
 ```
 
@@ -1299,9 +1477,9 @@ document.getElementById("switch-demo").innerHTML = weekdays
 
 ## 第五章
 
-## JavaScript字符串和数组
+### JavaScript 字符串和数组
 
-我已经解释了什么是字符串以及如何在脚本中使用它们。在处理字符串时，你可以使用一些方法。一些原始值不能拥有方法或属性，因为它们不是对象。但是，JavaScript允许原始值拥有属性和方法，因为它在执行属性和方法时会将原始值当作对象处理。你可以了解程序中使用的字符串的长度。
+我已经解释了什么是字符串以及如何在脚本中使用它们。在处理字符串时，你可以使用一些方法。一些原始值不能拥有方法或属性，因为它们不是对象。但是，JavaScript 允许原始值拥有属性和方法，因为它在执行属性和方法时会将原始值当作对象处理。你可以了解程序中使用的字符串的长度。
 
 ```html
 <!DOCTYPE html>
@@ -1315,12 +1493,17 @@ document.getElementById("switch-demo").innerHTML = weekdays
 <p id="string-demo"></p>
 
 <script>
+
 var msgX = "我正准备动身去纽约开始我自己的事业。";
+
 var msgY = msgX.length;
+
 document.getElementById("string-demo").innerHTML = msgY;
+
 </script>
 
 </body>
+
 </html>
 ```
 
@@ -1330,7 +1513,7 @@ document.getElementById("string-demo").innerHTML = msgY;
 
 58
 
-另一个JavaScript方法帮助你在字符串中查找子串。我这里将使用的方法叫做 `indexOf()`。如果你在一个字符串中指定了另一个字符串（子串），它会帮你找到它。需要记住的一个重要提示是，你可以使用单引号在字符串内部创建另一个字符串。下面的例子将说明这个过程。
+另一个 JavaScript 方法帮助你在字符串中查找子串。我这里将使用的方法叫做 `indexOf()`。如果你在一个字符串中指定了另一个字符串（子串），它会帮你找到它。需要记住的一个重要提示是，你可以使用单引号在字符串内部创建另一个字符串。下面的例子将说明这个过程。
 
 ```html
 <!DOCTYPE html>
@@ -1344,19 +1527,25 @@ document.getElementById("string-demo").innerHTML = msgY;
 <p id="string-demo"></p>
 
 <script>
+
 var msgX = "我正准备动身去'纽约'开始我自己的事业。";
+
 var msgY = msgX.indexOf("纽约");
+
 document.getElementById("string-demo").innerHTML = msgY;
+
 </script>
 
 </body>
+
 </html>
 ```
 
 这个字符串属性将回答关于字符串中子串的问题：
+
 25
 
-你可以看到子串的索引已经显示在屏幕上。请记住JavaScript的索引编号是从0开始的。
+你可以看到子串的索引已经显示在屏幕上。请记住 JavaScript 的索引编号是从 0 开始的。
 
 ### lastIndexOf() 方法
 
@@ -1374,25 +1563,29 @@ document.getElementById("string-demo").innerHTML = msgY;
 <p id="string-demo"></p>
 
 <script>
+
 var msgX = "我正准备动身去'纽约'开始我自己的事业。";
+
 var msgY = msgX.lastIndexOf("纽约");
+
 document.getElementById("string-demo").innerHTML = msgY;
+
 </script>
 
 </body>
+
 </html>
 ```
 
 这个字符串属性将回答关于字符串中子串的问题：
+
 25
-
-
 
 ### 如果找不到索引怎么办？
 
-如果这些方法未能找到索引，它们将返回 -1。如果你在代码中写错了拼写或者写了一个完全不同的词，就可能会发生这种情况。
+如果这些方法未能找到索引，它们将返回 `-1`。如果你在代码中写错了拼写或者写了一个完全不同的词，就可能会发生这种情况。
 
-```
+```html
 <!DOCTYPE html>
 <html>
 <body>
@@ -1404,12 +1597,17 @@ document.getElementById("string-demo").innerHTML = msgY;
 <p id="string-demo"></p>
 
 <script>
+
 var msgX = "I am about to leave for 'New York' to start my own business.";
+
 var msgY = msgX.lastIndexOf("Washington");
+
 document.getElementById("string-demo").innerHTML = msgY;
+
 </script>
 
 </body>
+
 </html>
 ```
 
@@ -1419,9 +1617,9 @@ This String property will answer the question about the inner string of your str
 
 ### search() 方法
 
-还有另一种方法可以在长字符串中定位指定的内部子串。如果匹配完全正确，你可以使用 **search()** 方法来查找它。
+还有另一种方法可以在长字符串中定位指定的内部子串。如果匹配完全正确，你可以使用 `search()` 方法来查找它。
 
-```
+```html
 <!DOCTYPE html>
 <html>
 <body>
@@ -1433,12 +1631,17 @@ This String property will answer the question about the inner string of your str
 <p id="string-demo"></p>
 
 <script>
+
 var msgX = "I am about to leave for 'New York' to start my own business.";
+
 var msgY = msgX.search("New York");
+
 document.getElementById("string-demo").innerHTML = msgY;
+
 </script>
 
 </body>
+
 </html>
 ```
 
@@ -1446,13 +1649,13 @@ This String property will answer the question about the inner string of your str
 
 25
 
-如果你注意到这两种方法的结果，即 **search()** 和 **indexOf()**，你会发现它们是相同的。它们接受相同的参数，然后返回相同的值。然而，从技术上讲，这两种方法有很大的不同。**search()** 方法不能接受第二个起始位置参数，而 **indexOf()** 方法不能接受强大的搜索值。
+如果你注意到这两种方法的结果，即 `search()` 和 `indexOf()`，你会发现它们是相同的。它们接受相同的参数，然后返回相同的值。然而，从技术上讲，这两种方法有很大的不同。`search()` 方法不能接受第二个起始位置参数，而 `indexOf()` 方法不能接受强大的搜索值。
 
 ### 部分提取
 
-你可以根据程序的需要将字符串拆分成多个部分。JavaScript 为我们提供了三种拆分字符串的方法。第一种方法被称为 **slice()** 方法。它提取字符串的一部分，并以新字符串的形式显示出来。你需要执行两个参数：一个是字符串的起始位置，另一个是字符串的结束位置。看看你可以如何做到这一点。
+你可以根据程序的需要将字符串拆分成多个部分。JavaScript 为我们提供了三种拆分字符串的方法。第一种方法被称为 `slice()` 方法。它提取字符串的一部分，并以新字符串的形式显示出来。你需要执行两个参数：一个是字符串的起始位置，另一个是字符串的结束位置。看看你可以如何做到这一点。
 
-```
+```html
 <!DOCTYPE html>
 <html>
 <body>
@@ -1464,12 +1667,17 @@ This String property will answer the question about the inner string of your str
 <p id="string-demo"></p>
 
 <script>
+
 var msgX = "I am about to leave for 'New York' to start my own business.";
+
 var msgY = msgX.slice(23, 34);
+
 document.getElementById("string-demo").innerHTML = msgY;
+
 </script>
 
 </body>
+
 </html>
 ```
 
@@ -1477,9 +1685,9 @@ This String property will answer the question about the inner string of your str
 
 'New York'
 
-请记住，JavaScript 从 **0** 点开始计算索引。如果一个参数是负数，你必须从字符串的末尾开始计数。它会向后切片字符串。你可以试试并查看结果。我现在跳过这个，测试一下如果你忘记插入结束点会发生什么。
+请记住，JavaScript 从 `0` 点开始计算索引。如果一个参数是负数，你必须从字符串的末尾开始计数。它会向后切片字符串。你可以试试并查看结果。我现在跳过这个，测试一下如果你忘记插入结束点会发生什么。
 
-```
+```html
 <!DOCTYPE html>
 <html>
 <body>
@@ -1491,12 +1699,17 @@ This String property will answer the question about the inner string of your str
 <p id="string-demo"></p>
 
 <script>
+
 var msgX = "I am about to leave for 'New York' to start my own business.";
+
 var msgY = msgX.slice(23);
+
 document.getElementById("string-demo").innerHTML = msgY;
+
 </script>
 
 </body>
+
 </html>
 ```
 
@@ -1506,9 +1719,9 @@ This String property will answer the question about the inner string of your str
 
 你可以看到它显示了其余的文本直到末尾。如果起始点是负数且缺少结束点，你将看到结果从末尾开始计数到切片点。
 
-第二种切割字符串并生成子字符串的方法是 **substring()** 方法。这和 **slice()** 方法一样简单。不同之处在于它不接受负索引。请看下面的例子来理解它的用法。
+第二种切割字符串并生成子字符串的方法是 `substring()` 方法。这和 `slice()` 方法一样简单。不同之处在于它不接受负索引。请看下面的例子来理解它的用法。
 
-```
+```html
 <!DOCTYPE html>
 <html>
 <body>
@@ -1520,12 +1733,17 @@ This String property will answer the question about the inner string of your str
 <p id="string-demo"></p>
 
 <script>
+
 var msgX = "I am about to leave for 'New York' to start my own business.";
+
 var msgY = msgX.substring(23, 34);
+
 document.getElementById("string-demo").innerHTML = msgY;
+
 </script>
 
 </body>
+
 </html>
 ```
 
@@ -1533,9 +1751,9 @@ This String property will answer the question about the inner string of your str
 
 'New York'
 
-第三种也是最后一种切片方法是 **substr()** 方法，它与 **slice()** 非常相似。第二个参数定义了切片的剩余字符串的长度。
+第三种也是最后一种切片方法是 `substr()` 方法，它与 `slice()` 非常相似。第二个参数定义了切片的剩余字符串的长度。
 
-```
+```html
 <!DOCTYPE html>
 <html>
 <body>
@@ -1547,12 +1765,17 @@ This String property will answer the question about the inner string of your str
 <p id="string-demo"></p>
 
 <script>
+
 var msgX = "I am about to leave for 'New York' to start my own business.";
+
 var msgY = msgX.substr(23, 34);
+
 document.getElementById("string-demo").innerHTML = msgY;
+
 </script>
 
 </body>
+
 </html>
 ```
 
@@ -1560,9 +1783,9 @@ This String property will answer the question about the inner string of your str
 
 'New York' to start my own business
 
-JavaScript 变得有趣的时候，是它允许你替换字符串内的值。例如，我在示例中包含的字符串中，New York 是我将要访问的城市。JavaScript 允许你更改城市的名称，而无需编写新代码并创建新字符串。这在你创建冗长的程序时节省了大量时间。这个方法可以被称为 **replace()**。
+JavaScript 变得有趣的时候，是它允许你替换字符串内的值。例如，我在示例中包含的字符串中，New York 是我将要访问的城市。JavaScript 允许你更改城市的名称，而无需编写新代码并创建新字符串。这在你创建冗长的程序时节省了大量时间。这个方法可以被称为 `replace()`。
 
-```
+```html
 <!DOCTYPE html>
 <html>
 <body>
@@ -1572,22 +1795,27 @@ JavaScript 变得有趣的时候，是它允许你替换字符串内的值。例
 <p id="string-demo"></p>
 
 <script>
+
 var msgX = "I am about to leave for 'New York' to start my own business.";
+
 var msgY = msgX.replace('New York', 'Las Vegas');
+
 document.getElementById("string-demo").innerHTML = msgY;
+
 </script>
 
 </body>
+
 </html>
 ```
 
-### Learning Properties of JavaScript Strings
+Learning Properties of JavaScript Strings
 
 I am about to leave for 'Las Vegas' to start my own business.
 
-默认情况下，如果你写 NEW YORK 而不是 New York，JavaScript 的 **replace()** 将不会工作。它是*区分大小写*的，它将不同的大小写视为不同的词。因此，如果你发现该方法不起作用，最好检查一下词的大小写。此外，**replace()** 方法只替换第一个匹配项。如果字符串中有多个 New York，它只会替换第一个匹配项，而保留其余的词不变。如果你想不顾警告而使用大写，你必须使用正则表达式，例如与词一起使用的 `/i`，以使浏览器能够识别匹配。该正则表达式将使词不区分大小写。看看你应该如何在编辑器中编写它。
+默认情况下，如果你写 NEW YORK 而不是 New York，JavaScript 的 `replace()` 将不会工作。它是区分大小写的，它将不同的大小写视为不同的词。因此，如果你发现该方法不起作用，最好检查一下词的大小写。此外，`replace()` 方法只替换第一个匹配项。如果字符串中有多个 New York，它只会替换第一个匹配项，而保留其余的词不变。如果你想不顾警告而使用大写，你必须使用正则表达式，例如与词一起使用的 `/i`，以使浏览器能够识别匹配。该正则表达式将使词不区分大小写。看看你应该如何在编辑器中编写它。
 
-```
+```html
 <!DOCTYPE html>
 <html>
 <body>
@@ -1597,22 +1825,27 @@ I am about to leave for 'Las Vegas' to start my own business.
 <p id="string-demo"></p>
 
 <script>
+
 var msgX = "I am about to leave for 'New York' to start my own business.";
+
 var msgY = msgX.replace(/NEW YORK/i, 'Las Vegas');
+
 document.getElementById("string-demo").innerHTML = msgY;
+
 </script>
 
 </body>
+
 </html>
 ```
 
-### Learning Properties of JavaScript Strings
+Learning Properties of JavaScript Strings
 
 I am about to leave for 'Las Vegas' to start my own business.
 
 让我们看看如果你不使用正则表达式，仍然在代码中使用大写，代码会是什么样子的。
 
-```
+```html
 <!DOCTYPE html>
 <html>
 <body>
@@ -1622,16 +1855,21 @@ I am about to leave for 'Las Vegas' to start my own business.
 <p id="string-demo"></p>
 
 <script>
+
 var msgX = "I am about to leave for 'New York' to start my own business.";
+
 var msgY = msgX.replace('NEW YORK', 'Las Vegas');
+
 document.getElementById("string-demo").innerHTML = msgY;
+
 </script>
 
 </body>
+
 </html>
 ```
 
-### Learning Properties of JavaScript Strings
+Learning Properties of JavaScript Strings
 
 I am about to leave for 'New York' to start my own business.
 
@@ -1639,9 +1877,9 @@ I am about to leave for 'New York' to start my own business.
 
 ### 全局替换
 
-我已经解释过，如果你要替换多个词，你不能通过 **replace()** 方法来做到。它就是行不通。然而，这个问题有一个解决方案。如果你有多个词必须被替换为另一个词，你需要再次使用正则表达式。这次正则表达式被称为 `/g`。包含该表达式的方法与 `/i` 相同。然而，我会写一个新字符串并包含该表达式，以便你能很好地理解它。
+我已经解释过，如果你要替换多个词，你不能通过 `replace()` 方法来做到。它就是行不通。然而，这个问题有一个解决方案。如果你有多个词必须被替换为另一个词，你需要再次使用正则表达式。这次正则表达式被称为 `/g`。包含该表达式的方法与 `/i` 相同。然而，我会写一个新字符串并包含该表达式，以便你能很好地理解它。
 
-```
+```html
 <!DOCTYPE html>
 <html>
 <body>
@@ -1651,37 +1889,51 @@ I am about to leave for 'New York' to start my own business.
 <p id="string-demo"></p>
 
 <script>
+
 var msgX = "The Coach of the NBA team will visit Las Vegas. Las Vegas has a huge fan base for NBA stars.";
+
 var msgY = msgX.replace(/Las Vegas/g, 'Los Angeles');
+
 document.getElementById("string-demo").innerHTML = msgY;
+
 </script>
 
 </body>
+
 </html>
 ```
 
-### Learning Properties of JavaScript Strings
+Learning Properties of JavaScript Strings
 
 The Coach of the NBA team will visit Los Angeles. Los Angeles has a huge fan base for NBA stars.
 
 还有一些额外的方法可以调整字符串。你可以通过简单的方法将字符串转换为大写和小写。
 
-
-
-```
+```html
 <!DOCTYPE html>
 <html>
 <body>
+
 <p>我正在将字符串转换为大写和小写：</p>
+
 <button onclick="FunctionX()">你需要点击我</button>
+
 <p id="string-demo">JavaScript使你的网页具有交互性并易于使用！</p>
+
 <script>
+
 function FunctionX() {
+
     var msg = document.getElementById("string-demo").innerHTML;
+
     document.getElementById("string-demo").innerHTML = msg.toUpperCase();
+
 }
+
 </script>
+
 </body>
+
 </html>
 ```
 
@@ -1699,15 +1951,15 @@ JavaScript使你的网页具有交互性并易于使用！
 
 JAVASCRIPT使你的网页具有交互性并易于使用！
 
-你可以使用另一种方法`toLowerCase()`将文本转换为小写。只需将`toUpperCase()`替换为`toLowerCase()`即可。
+你可以使用另一种方法 `toLowerCase()` 将文本转换为小写。只需将 `toUpperCase()` 替换为 `toLowerCase()` 即可。
 
 ### 拼接
 
-拼接是几乎所有编程语言不可或缺的一部分。每当需要将两个或多个字符串配对时，程序员都会寻求拼接的支持。这是连接两个或多个字符串最简单的方法。如果你编写的代码行正确，`concat()`方法将顺利工作。需要注意的最重要事项是逗号和空格的位置。`concat()`方法用于替代加号运算符。
+拼接是几乎所有编程语言不可或缺的一部分。每当需要将两个或多个字符串配对时，程序员都会寻求拼接的支持。这是连接两个或多个字符串最简单的方法。如果你编写的代码行正确，`concat()` 方法将顺利工作。需要注意的最重要事项是逗号和空格的位置。`concat()` 方法用于替代加号运算符。
 
 功能上没有区别——这两种方法仅作为替代方案。下面的练习将帮助你顺利掌握拼接过程。
 
-```
+```html
 <!DOCTYPE html>
 <html>
 <body>
@@ -1717,13 +1969,19 @@ JAVASCRIPT使你的网页具有交互性并易于使用！
 <p id="string-demo"></p>
 
 <script>
+
 var msg1 = "I have been promoted as Chief Executive Officer of Skyfall.";
+
 var msg2 = "I will call a board meeting next week.!";
+
 var msg3 = msg1.concat(" ", msg2);
+
 document.getElementById("string-demo").innerHTML = msg3;
+
 </script>
 
 </body>
+
 </html>
 ```
 
@@ -1733,13 +1991,13 @@ document.getElementById("string-demo").innerHTML = msg3;
 
 几乎所有字符串方法都有一个习惯，即创建新字符串，同时保持原始字符串不变。它们首先创建一个副本，然后将你提出的更改应用到编辑器中。程序员说字符串只能被替换，而不能被改变。
 
-程序员们每天都在努力为编程语言引入一些新东西。ECMAScript 2017为JavaScript字符串引入了更多方法。`padStart`和`padEnd`方法现在被用于JavaScript字符串的开头和结尾。
+程序员们每天都在努力为编程语言引入一些新东西。ECMAScript 2017 为 JavaScript 字符串引入了更多方法。`padStart` 和 `padEnd` 方法现在被用于 JavaScript 字符串的开头和结尾。
 
 ### 字符串数组
 
 标题可能有点令人困惑。实际上并不存在字符串数组。但是，有一个新方法可以将字符串转换为数组。
 
-```
+```html
 <!DOCTYPE html>
 <html>
 <body>
@@ -1751,33 +2009,41 @@ document.getElementById("string-demo").innerHTML = msg3;
 <p id="string-demo"></p>
 
 <script>
+
 function FunctionX() {
+
     var msg1 = "Texas, Las Vegas, Los Angeles.";
+
     var msg2 = msg1.split(", ");
+
     document.getElementById("string-demo").innerHTML = msg2[0];
+
 }
+
 </script>
 
 </body>
+
 </html>
 ```
 
 请点击“Click me”来生成第一个数组元素。
 
 Click This Button
+
 Texas
 
-字符串非常神奇，如果你能很好地学习其方法和属性，它们将在你的编程事业中提供巨大帮助。如果你能敏锐地捕捉细微差别，JavaScript编程是所有编程语言中最简单、最完美的。
+字符串非常神奇，如果你能很好地学习其方法和属性，它们将在你的编程事业中提供巨大帮助。如果你能敏锐地捕捉细微差别，JavaScript 编程是所有编程语言中最简单、最完美的。
 
-### JavaScript数组
+### JavaScript 数组
 
-与变量一样，JavaScript数组也是值的容器。然而，它们在某种意义上偏离了变量的属性，因为它们可以在一个名称下容纳比变量更多的数据。因此，当你需要在同一个名称下加载更多数据时，应该使用数组。有多种设置数组的方法。最简单的方法是使用`var`关键字，然后写出数组的名称并赋值。数组在一个变量中保存各个值。你必须用逗号将它们分隔开，并将它们全部放在方括号内。等号必须跟在变量名后面。
+与变量一样，JavaScript 数组也是值的容器。然而，它们在某种意义上偏离了变量的属性，因为它们可以在一个名称下容纳比变量更多的数据。因此，当你需要在同一个名称下加载更多数据时，应该使用数组。有多种设置数组的方法。最简单的方法是使用 `var` 关键字，然后写出数组的名称并赋值。数组在一个变量中保存各个值。你必须用逗号将它们分隔开，并将它们全部放在方括号内。等号必须跟在变量名后面。
 
-当你必须访问所有数组值时，应使用索引号，就像在字符串中一样。方括号中的数字表示索引。该数字必须对应于数组中值的位置。需要记住的最重要一点是索引位置从0开始。
+当你必须访问所有数组值时，应使用索引号，就像在字符串中一样。方括号中的数字表示索引。该数字必须对应于数组中值的位置。需要记住的最重要一点是索引位置从 0 开始。
 
-创建数组后，你就可以在Web浏览器中运行它。你应该能够在浏览器的屏幕上看到所需的值。你可以编辑索引号并插入其他内容以显示不同的值。保存编辑后的数字并刷新浏览器以更改结果。如果你的数组有三个项目，而你输入索引号3，你会发现浏览器将在计算机屏幕上显示单词“undefined”。这是因为数组中只有三个项目。当你输入索引3时，你试图显示第四个项目，但它并不存在。JavaScript不会显示错误，而是在数组中添加一个新位置，该位置尚未定义。JavaScript将新位置添加到数组末尾。在你用合理的值填充它之前，它一直保持未定义状态。你可以根据需要使用这个新的未定义位置来存储数据。
+创建数组后，你就可以在 Web 浏览器中运行它。你应该能够在浏览器的屏幕上看到所需的值。你可以编辑索引号并插入其他内容以显示不同的值。保存编辑后的数字并刷新浏览器以更改结果。如果你的数组有三个项目，而你输入索引号 3，你会发现浏览器将在计算机屏幕上显示单词 `undefined`。这是因为数组中只有三个项目。当你输入索引 3 时，你试图显示第四个项目，但它并不存在。JavaScript 不会显示错误，而是在数组中添加一个新位置，该位置尚未定义。JavaScript 将新位置添加到数组末尾。在你用合理的值填充它之前，它一直保持未定义状态。你可以根据需要使用这个新的未定义位置来存储数据。
 
-```
+```html
 <!DOCTYPE html>
 <html>
 <body>
@@ -1787,11 +2053,15 @@ Texas
 <p id="array-demo"></p>
 
 <script>
+
 var carsforsale = ["Honda", "Toyota", "GTX", "Ford"];
+
 document.getElementById("array-demo").innerHTML = carsforsale;
+
 </script>
 
 </body>
+
 </html>
 ```
 
@@ -1799,11 +2069,11 @@ document.getElementById("array-demo").innerHTML = carsforsale;
 
 Honda,Toyota,GTX,Ford
 
-从上面的例子中你可以看到，JavaScript中的数组是一种特殊类型的变量，可以同时保存多个值。如果你有一个汽车列表，原本可能存储在多个变量中，你可以使用数组来打包所有值并将它们插入网页中。如果你将它们存储在独立变量中，你将创建四个具有不同名称的变量。现在有4辆汽车，所以你可能认为为这些值创建四个独立变量不是什么大事。但是，如果你有4000个值，为它们创建独立变量就会成为一个问题。在这种情况下，数组就派上用场了。同样，如果你有一百个值并且必须在循环中使用它们，独立变量不会有太大帮助。数组更容易处理，因为你可以轻松地遍历它们。
+从上面的例子中你可以看到，JavaScript 中的数组是一种特殊类型的变量，可以同时保存多个值。如果你有一个汽车列表，原本可能存储在多个变量中，你可以使用数组来打包所有值并将它们插入网页中。如果你将它们存储在独立变量中，你将创建四个具有不同名称的变量。现在有 4 辆汽车，所以你可能认为为这些值创建四个独立变量不是什么大事。但是，如果你有 4000 个值，为它们创建独立变量就会成为一个问题。在这种情况下，数组就派上用场了。同样，如果你有一百个值并且必须在循环中使用它们，独立变量不会有太大帮助。数组更容易处理，因为你可以轻松地遍历它们。
 
-空格或换行在JavaScript数组中并不那么重要。你可以用不同的格式编写它们。请参见以下示例，它与上面的内容相同，但格式不同。
+空格或换行在 JavaScript 数组中并不那么重要。你可以用不同的格式编写它们。请参见以下示例，它与上面的内容相同，但格式不同。
 
-```
+```html
 <!DOCTYPE html>
 <html>
 <body>
@@ -1813,14 +2083,21 @@ Honda,Toyota,GTX,Ford
 <p id="array-demo"></p>
 
 <script>
+
 var carsforsale = ["Honda",
+
     "Toyota",
+
     "GTX",
+
     "Ford"];
+
 document.getElementById("array-demo").innerHTML = carsforsale;
+
 </script>
 
 </body>
+
 </html>
 ```
 
@@ -1828,9 +2105,9 @@ document.getElementById("array-demo").innerHTML = carsforsale;
 
 Honda,Toyota,GTX,Ford
 
-它与前面的示例结果相同。创建数组还有另一种方法。这被称为JavaScript关键字`new`。我将在下面的示例中使用关键字`new`创建一个数组。
+它与前面的示例结果相同。创建数组还有另一种方法。这被称为 JavaScript 关键字 `new`。我将在下面的示例中使用关键字 `new` 创建一个数组。
 
-```
+```html
 <!DOCTYPE html>
 <html>
 <body>
@@ -1839,12 +2116,16 @@ Honda,Toyota,GTX,Ford
 
 <p id="array-demo"></p>
 
-<script:
+<script>
+
 var carsforsale = new Array("Honda", "Toyota", "GTX", "Ford");
+
 document.getElementById("array-demo").innerHTML = carsforsale;
+
 </script>
 
 </body>
+
 </html>
 ```
 
@@ -1852,17 +2133,13 @@ document.getElementById("array-demo").innerHTML = carsforsale;
 
 Honda,Toyota,GTX,Ford
 
-让我们分析这种新格式，了解其中有什么不同。第一个区别是在数组的开头添加了关键字`new`，位于等号之后，紧跟在关键字`new`后面的是关键字`Array`。另一个显著的区别是移除了方括号。
-
-
-
-括号以及添加圆括号，但两种方法的工作原理相同。第二种方法更复杂、更冗长。为了简洁、快速和可读性，你应该选择第一种方法，也就是所谓的数组字面量方法。
+让我们分析这种新格式，了解其中有什么不同。第一个区别是在数组的开头添加了关键字 `new`，位于等号之后，紧跟在关键字 `new` 后面的是关键字 `Array`。另一个显著的区别是移除了方括号以及添加圆括号，但两种方法的工作原理相同。第二种方法更复杂、更冗长。为了简洁、快速和可读性，你应该选择第一种方法，也就是所谓的数组字面量方法。
 
 ### 索引号
 
 你可以通过索引号来访问数组中的项目。如前所述，数组的索引从数字 0 开始。在下面的示例中，我将访问具有零索引的元素。
 
-```
+```html
 <!DOCTYPE html>
 <html>
 <body>
@@ -1872,11 +2149,15 @@ Honda,Toyota,GTX,Ford
 <p id="array-demo"></p>
 
 <script>
+
 var carsforsale = new Array("Honda", "Toyota", "GTX", "Ford");
+
 document.getElementById("array-demo").innerHTML = carsforsale[0];
+
 </script>
 
 </body>
+
 </html>
 ```
 
@@ -1886,7 +2167,7 @@ Honda
 
 索引号非常有用，因为它们可以帮助更改数组元素的值。你只需要提及索引号，就可以替换数组中的几乎所有元素。
 
-```
+```html
 <!DOCTYPE html>
 <html>
 <body>
@@ -1896,31 +2177,37 @@ Honda
 <p id="array-demo"></p>
 
 <script>
+
 var carsforsale = new Array("Honda", "Toyota", "GTX", "Ford");
+
 carsforsale[0] = "BMW"
+
 carsforsale[1] = "Mitsubishi"
+
 document.getElementById("array-demo").innerHTML = carsforsale;
+
 </script>
 
 </body>
+
 </html>
 ```
 
-### Learning JavaScript Arrays
+Learning JavaScript Arrays
 
 BMW,Mitsubishi,GTX,Ford
 
-数组被视为特殊的对象。如果你使用 typeof 运算符来检查数组的类型，你会得到单词'object'作为返回值。但我们必须使用"数组"这个词来描述 JavaScript 数组。原因是 JavaScript 数组使用数字来访问元素，而对象则使用项目的名称来让你访问相同的项目。
+数组被视为特殊的对象。如果你使用 `typeof` 运算符来检查数组的类型，你会得到单词 `object` 作为返回值。但我们必须使用“数组”这个词来描述 JavaScript 数组。原因是 JavaScript 数组使用数字来访问元素，而对象则使用项目的名称来让你访问相同的项目。
 
-你可以将任何值赋给数组。任何你可以赋给变量的值，都可以赋给数组。你可以在同一个数组中混合不同类型的数据。程序员通常更喜欢给数组起复数名称，如 cities、countries、numbers 等。原因是每个数组都是包含多个项目的列表。就像普通变量一样，你只能声明一次数组。
+你可以将任何值赋给数组。任何你可以赋给变量的值，都可以赋给数组。你可以在同一个数组中混合不同类型的数据。程序员通常更喜欢给数组起复数名称，如 `cities`、`countries`、`numbers` 等。原因是每个数组都是包含多个项目的列表。就像普通变量一样，你只能声明一次数组。
 
 JavaScript 变量可以被称为对象，而 JavaScript 数组则被称为特殊对象，因为数组可以包含不同类型的变量。你可以用对象、函数甚至数组来填充一个数组。就像字符串一样，数组的真正强大之处在于其丰富的属性和内置方法。
 
-## *数组属性*
+### 数组属性
 
-首先要讨论的属性是 length 属性。它返回数组的完整长度，包含数组的所有元素。
+首先要讨论的属性是 `length` 属性。它返回数组的完整长度，包含数组的所有元素。
 
-```
+```html
 <!DOCTYPE html>
 <html>
 <body>
@@ -1930,21 +2217,25 @@ JavaScript 变量可以被称为对象，而 JavaScript 数组则被称为特殊
 <p id="array-demo"></p>
 
 <script>
+
 var carsforsale = new Array("Honda", "Toyota", "GTX", "Ford");
+
 document.getElementById("array-demo").innerHTML = carsforsale.length;
+
 </script>
 
 </body>
+
 </html>
 ```
 
-### Learning JavaScript Arrays
+Learning JavaScript Arrays
 
 4
 
-你可以遍历数组中的项目来显示所有项目，或者在程序中使用所有项目。创建循环的最常见方法之一是 for 循环。
+你可以遍历数组中的项目来显示所有项目，或者在程序中使用所有项目。创建循环的最常见方法之一是 `for` 循环。
 
-```
+```html
 <!DOCTYPE html>
 <html>
 <body>
@@ -1954,21 +2245,31 @@ document.getElementById("array-demo").innerHTML = carsforsale.length;
 <p>I will use the for loop in the following code</p>
 
 <p id="array-demo"></p>
+
 <script>
+
 var carsforsale, msg, cLn, y;
+
 carsforsale = ["BMW", "Mitsubishi", "Honda", "Toyota"];
+
 cLn = carsforsale.length;
 
 msg = "<ul>";
+
 for (y = 0; y < cLn; y++) {
+
   msg += "<li>" + carsforsale[y] + "</li>";
+
 }
+
 msg += "</ul>";
 
 document.getElementById("array-demo").innerHTML = msg;
+
 </script>
 
 </body>
+
 </html>
 ```
 
@@ -1981,9 +2282,9 @@ I will use the for loop in the following code
 - Honda
 - Toyota
 
-你已经看到了如何在网页上显示一个整洁有序的项目列表。数组的所有项目都以项目符号的形式整齐地显示出来。下次你在网页上看到类似样式的列表时，你应该知道这是数组和 for 循环创造的奇迹。还有另一个函数可以在数组中创建相同的效果。
+你已经看到了如何在网页上显示一个整洁有序的项目列表。数组的所有项目都以项目符号的形式整齐地显示出来。下次你在网页上看到类似样式的列表时，你应该知道这是数组和 `for` 循环创造的奇迹。还有另一个函数可以在数组中创建相同的效果。
 
-```
+```html
 <!DOCTYPE html>
 <html>
 <body>
@@ -1991,25 +2292,37 @@ I will use the for loop in the following code
 <p>These are JavaScript Arrays</p>
 
 <p>I will use the for loop in the following code</p>
+
 <p id="array-demo"></p>
+
 <script>
+
 var carsforsale, msg;
+
 carsforsale = ["BMW", "Mitsubishi", "Honda", "Toyota"];
 
 msg = "<ul>";
+
 carsforsale.forEach(FunctionX);
+
 msg += "</ul>"
+
 document.getElementById("array-demo").innerHTML = msg;
 
 function FunctionX(value) {
+
   msg += "<li>" + value + "</li>";
+
 }
+
 </script>
+
 </body>
+
 </html>
 ```
 
-### These are JavaScript Arrays
+These are JavaScript Arrays
 
 I will use the for loop in the following code
 
@@ -2018,11 +2331,11 @@ I will use the for loop in the following code
 - Honda
 - Toyota
 
-## **添加元素**
+### 添加元素
 
-你可以使用 push() 方法向数组中添加元素。如果你在一家零售公司工作，每天都需要向同一个数组上传新元素，这个 JavaScript 特性会非常有帮助。JavaScript 的惊人之处在于，它允许你声明一个没有值的变量。之后，你可以使用追加函数向同一个变量添加值。你还可以根据不断变化的需求更改值。所有这些都可以在一个数组中进行。
+你可以使用 `push()` 方法向数组中添加元素。如果你在一家零售公司工作，每天都需要向同一个数组上传新元素，这个 JavaScript 特性会非常有帮助。JavaScript 的惊人之处在于，它允许你声明一个没有值的变量。之后，你可以使用追加函数向同一个变量添加值。你还可以根据不断变化的需求更改值。所有这些都可以在一个数组中进行。
 
-```
+```html
 <!DOCTYPE html>
 <html>
 <body>
@@ -2030,22 +2343,33 @@ I will use the for loop in the following code
 <p>Learning JavaScript Arrays</p>
 
 <p>I will use the push method to append new elements to existing arrays.</p>
+
 <button onclick="FunctionXX()">Please click this Button</button>
+
 <p id="array-demo"></p>
+
 <script>
+
 var veggies = ["Pumpkin", "Tomato", "Ginger", "Potato"];
+
 document.getElementById("array-demo").innerHTML = veggies;
 
 function FunctionXX() {
+
     veggies.push("Spinach");
+
     document.getElementById("array-demo").innerHTML = veggies;
+
 }
+
 </script>
+
 </body>
+
 </html>
 ```
 
-### Learning JavaScript Arrays
+Learning JavaScript Arrays
 
 I will use the push method to append new elements to existing arrays.
 
@@ -2059,33 +2383,43 @@ Please click this Button
 
 Pumpkin, Tomato, Ginger, Potato,Spinach
 
-你可以操作 length 属性来向数组追加新元素。看看如何使用 length 属性。
+你可以操作 `length` 属性来向数组追加新元素。看看如何使用 `length` 属性。
 
-```
+```html
 <!DOCTYPE html>
 <html>
 <body>
 
 <p>Learning JavaScript Arrays</p>
+
 <p>I will use the push method to append new elements to existing arrays.</p>
+
 <button onclick="FunctionXX()">Please click this Button</button>
+
 <p id="array-demo"></p>
 
 <script>
+
 var veggies = ["Pumpkin", "Tomato", "Ginger", "Potato"];
+
 document.getElementById("array-demo").innerHTML = veggies;
 
 function FunctionXX() {
+
   veggies[veggies.length] = ("Spinach");
+
   document.getElementById("array-demo").innerHTML = veggies;
+
 }
+
 </script>
 
 </body>
+
 </html>
 ```
 
-### Learning JavaScript Arrays
+Learning JavaScript Arrays
 
 I will use the push method to append new elements to existing arrays.
 
@@ -2095,7 +2429,7 @@ Pumpkin, Tomato, Ginger, Potato, Spinach
 
 如果你不知道自己在做什么，数组可能会很难处理。例如，你可以使用索引号向数组追加元素。在此过程中，如果你在代码中使用了过高的索引，你将在数组中创建空洞，这些空洞将完全是未定义的。
 
-```
+```html
 <!DOCTYPE html>
 <html>
 <body>
@@ -2107,23 +2441,33 @@ Pumpkin, Tomato, Ginger, Potato, Spinach
 <p id="undefinedarray-demo"></p>
 
 <script>
+
 var veggies, msg, cLn, XX;
+
 veggies = ["Pumpkin", "Ginger", "Tomato", "Garlic"];
+
 veggies[8] = "Spinach";
 
 cLn = veggies.length;
+
 msg = "";
+
 for (XX = 0; XX < cLn; XX++) {
+
   msg += veggies[XX] + "<br>";
+
 }
+
 document.getElementById("undefinedarray-demo").innerHTML = msg;
+
 </script>
 
 </body>
+
 </html>
 ```
 
-### Learning JavaScript Arrays
+Learning JavaScript Arrays
 
 I will add elements that have high indices. The result will be undefined "holes" in the array.
 
@@ -2139,11 +2483,11 @@ I will add elements that have high indices. The result will be undefined "holes"
 
 你可以看到 JavaScript 不会在代码中返回错误。它只是在没有项目填充的位置上创建一个未定义的槽位。如果你以后需要，可以用项目填充未定义的槽位。因此，这实际上不能被称为致命错误。
 
-## **关联数组**
+### 关联数组
 
 在编程世界中，许多编程语言都有具有命名索引的数组。包含命名索引的数组被称为关联数组。一些程序员也将它们称为哈希。JavaScript 不支持具有命名索引的数组。JavaScript 中的数组使用数字索引。
 
-```
+```html
 <!DOCTYPE html>
 <html>
 <body>
@@ -2151,27 +2495,33 @@ I will add elements that have high indices. The result will be undefined "holes"
 <p id="array-demo"></p>
 
 <script>
+
 var car = [];
+
 car[0] = "BMW";
+
 car[1] = "Germany";
+
 car[2] = 2018;
+
 document.getElementById("array-demo").innerHTML =
+
 car[0] + " " + car[1] + " " + car[2];
+
 </script>
 
 </body>
+
 </html>
 ```
 
 BMW Germany 2018
 
-
-
 JavaScript 数组和 JavaScript 对象之间存在一个基本区别。我已经解释过，数组是按数字编号的，而对象是按名称命名的。现在我将继续解释在何处应该使用数组，以及在何处应该使用对象。对于 JavaScript 对象，当你希望元素以文本形式的字符串来命名时，就必须使用它。而对于数组，则应该在必须使用数字来命名元素的地方使用它们。如果混淆了二者的使用场景，将会在 Web 浏览器中得到意想不到的结果。
 
 ### 数组转换
 
-JavaScript 提供了一些方法，允许你将数组转换为用逗号分隔的字符串。这个方法被称为 toString() 方法。我将使用 veggies 数组作为示例，并将 toString() 方法应用于该数组，其效果将在 Web 浏览器中可见。
+JavaScript 提供了一些方法，允许你将数组转换为用逗号分隔的字符串。这个方法被称为 `toString()` 方法。我将使用 `veggies` 数组作为示例，并将 `toString()` 方法应用于该数组，其效果将在 Web 浏览器中可见。
 
 ```html
 <!DOCTYPE html>
@@ -2179,14 +2529,19 @@ JavaScript 提供了一些方法，允许你将数组转换为用逗号分隔的
 <body>
 
 <p>Learning JavaScript Arrays</p>
+
 <p id="array-demo"></p>
 
 <script>
+
 var veggies = ["Pumpkin", "Ginger", "Tomato", "Garlic"];
+
 document.getElementById("array-demo").innerHTML = veggies.toString();
+
 </script>
 
 </body>
+
 </html>
 ```
 
@@ -2194,7 +2549,7 @@ Learning JavaScript Arrays
 
 Pumpkin, Ginger, Tomato, Garlic
 
-你可以看到数组已经被转换成了字符串。网页上没有显示整齐的列表，取而代之的是一团由逗号分隔的杂乱项目。不仅 toString() 方法可以将数组转换为字符串，join() 方法也能做到同样的事情。它会将所有元素连接成一个整体。这个方法的效果与 toString() 方法一样好。唯一的区别是，这个方法允许你指定分隔符。
+你可以看到数组已经被转换成了字符串。网页上没有显示整齐的列表，取而代之的是一团由逗号分隔的杂乱项目。不仅 `toString()` 方法可以将数组转换为字符串，`join()` 方法也能做到同样的事情。它会将所有元素连接成一个整体。这个方法的效果与 `toString()` 方法一样好。唯一的区别是，这个方法允许你指定分隔符。
 
 ```html
 <!DOCTYPE html>
@@ -2206,19 +2561,23 @@ Pumpkin, Ginger, Tomato, Garlic
 <p id="array-demo"></p>
 
 <script>
+
 var veggies = ["Pumpkin", "Ginger", "Tomato", "Garlic"];
+
 document.getElementById("array-demo").innerHTML = veggies.join(" - ");
+
 </script>
 
 </body>
+
 </html>
 ```
 
-### Learning JavaScript Arrays
+Learning JavaScript Arrays
 
 Pumpkin - Ginger - Tomato - Garlic
 
-你可以看到一切都与 toString() 方法的效果相同。然而，代码在允许我选择自己喜欢的符号来分隔转换后的字符串元素时，显示出了灵活性。我选择了" - "作为分隔符。不过，你也可以选择其他符号，比如 * 或 +，任何适合你的都可以。
+你可以看到一切都与 `toString()` 方法的效果相同。然而，代码在允许我选择自己喜欢的符号来分隔转换后的字符串元素时，显示出了灵活性。我选择了 `" - "` 作为分隔符。不过，你也可以选择其他符号，比如 `*` 或 `+`，任何适合你的都可以。
 
 ### 弹出数组
 
@@ -2232,27 +2591,35 @@ Pumpkin - Ginger - Tomato - Garlic
 <p>Learning JavaScript Arrays</p>
 
 <p id="popping-demo1"></p>
+
 <p id="popping-demo2"></p>
 
 <script>
+
 var veggies = ["Pumpkin", "Ginger", "Tomato", "Garlic"];
+
 document.getElementById("popping-demo1").innerHTML = veggies;
+
 veggies.pop();
+
 document.getElementById("popping-demo2").innerHTML = veggies;
+
 </script>
 
 </body>
+
 </html>
 ```
 
-### Learning JavaScript Arrays
+Learning JavaScript Arrays
 
 Pumpkin, Ginger, Tomato, Garlic
+
 Pumpkin, Ginger, Tomato
 
-数组的最后一项通过 pop() 方法被弹出了。你可以不断重复执行该脚本，最终会得到一个空数组。
+数组的最后一项通过 `pop()` 方法被弹出了。你可以不断重复执行该脚本，最终会得到一个空数组。
 
-现在你已经学会了如何从数组中弹出项目，接下来我将解释如何推入元素。请记住，运行代码后你不会立即看到添加的元素。由于我在代码中添加了一个按钮，你必须先点击按钮，然后才能显示该元素。由于代码中包含一个函数，push 方法会向代码中添加多个相同的元素实例。持续点击，浏览器将不断向数组中添加更多实例。
+现在你已经学会了如何从数组中弹出项目，接下来我将解释如何推入元素。请记住，运行代码后你不会立即看到添加的元素。由于我在代码中添加了一个按钮，你必须先点击按钮，然后才能显示该元素。由于代码中包含一个函数，`push` 方法会向代码中添加多个相同的元素实例。持续点击，浏览器将不断向数组中添加更多实例。
 
 ```html
 <!DOCTYPE html>
@@ -2268,16 +2635,23 @@ Pumpkin, Ginger, Tomato
 <p id="array-demo"></p>
 
 <script>
+
 var veggies = ["Garlic", "Pumpkin", "Ginger", "Tomato"];
+
 document.getElementById("array-demo").innerHTML = veggies;
 
 function FunctionYY() {
+
   veggies.push("Spinach");
+
   document.getElementById("array-demo").innerHTML = veggies;
+
 }
+
 </script>
 
 </body>
+
 </html>
 ```
 
@@ -2289,11 +2663,11 @@ Click Me
 
 Garlic, Pumpkin, Ginger, Tomato, Spinach
 
-## **数组移位**
+### 数组移位
 
-还有另一种被称为 shift 方法的操作，用于从数组的起始位置移除元素。假设你有一个数组。我将使用相同的 veggies 数组来解释数组中移位的概念。与弹出方法相反，移位方法会从数组中移除第一个元素。shift 方法从数组中移除一个元素，而 unshift 方法则从开始位置移除一个或多个元素。
+还有另一种被称为 `shift` 方法的操作，用于从数组的起始位置移除元素。假设你有一个数组。我将使用相同的 `veggies` 数组来解释数组中移位的概念。与弹出方法相反，移位方法会从数组中移除第一个元素。`shift` 方法从数组中移除一个元素，而 `unshift` 方法则从开始位置移除一个或多个元素。
 
-随着元素的移除，索引数字也会发生变化。在使用 shift 或 unshift 方法后，数组中所有其他元素将自动移至更低的索引位置。再次提醒，仅在浏览器中运行代码并不会从开始位置移除元素。你必须点击"Click Me"按钮来触发数组的变化。此外，如果你持续点击该按钮，浏览器将不断从数组中移除元素。如此循环往复，无休无止。shift() 方法非常灵活，因为你可以将移除的元素收集到一个变量中。然后你可以根据需要随意使用它们。
+随着元素的移除，索引数字也会发生变化。在使用 `shift` 或 `unshift` 方法后，数组中所有其他元素将自动移至更低的索引位置。再次提醒，仅在浏览器中运行代码并不会从开始位置移除元素。你必须点击 "Click Me" 按钮来触发数组的变化。此外，如果你持续点击该按钮，浏览器将不断从数组中移除元素。如此循环往复，无休无止。`shift()` 方法非常灵活，因为你可以将移除的元素收集到一个变量中。然后你可以根据需要随意使用它们。
 
 ```html
 <!DOCTYPE html>
@@ -2309,16 +2683,23 @@ Garlic, Pumpkin, Ginger, Tomato, Spinach
 <p id="array-demo"></p>
 
 <script>
+
 var veggies = ["Garlic", "Pumpkin", "Ginger", "Tomato"];
+
 document.getElementById("array-demo").innerHTML = veggies;
 
 function FunctionYY() {
+
   veggies.shift();
+
   document.getElementById("array-demo").innerHTML = veggies;
+
 }
+
 </script>
 
 </body>
+
 </html>
 ```
 
@@ -2330,7 +2711,7 @@ Click Me
 
 Pumpkin, Ginger, Tomato
 
-有一种方法可以从数组中删除元素。该脚本的关键字被标记为 delete。
+有一种方法可以从数组中删除元素。该脚本的关键字被标记为 `delete`。
 
 ```html
 <!DOCTYPE html>
@@ -2342,23 +2723,31 @@ Pumpkin, Ginger, Tomato
 <p>The delete method</p>
 
 <p id="array-demo1"></p>
+
 <p id="array-demo2"></p>
 
 <script>
+
 var veggies = ["Garlic ", "Pumpkin ", "Ginger ", "Tomato "];
+
 document.getElementById("array-demo1").innerHTML =
+
 "Here is the first vegetable name " + veggies[0];
+
 delete veggies[0];
+
 document.getElementById("array-demo2").innerHTML =
+
 "Here is the first vegetable name: " + veggies[0];
 
 </script>
 
 </body>
+
 </html>
 ```
 
-## Learning Array Methods
+Learning Array Methods
 
 The delete method
 
@@ -2366,9 +2755,9 @@ Here is the first vegetable name Garlic
 
 Here is the first vegetable name: undefined
 
-## **splice() 方法**
+### splice() 方法
 
-JavaScript 中有一个 splice() 方法，用于在数组中添加更多或多个元素。该方法还会移除放置在其后的元素。我将使用与其他方法相同的数组，以便你能理解不同方法之间的区别。括号中的第一个数字是添加或删除的起始索引。第二个元素表示要移除的剩余元素数量。你可以使用 splice 方法在任意位置复制连续元素，然后将它们添加到一个新数组中。
+JavaScript 中有一个 `splice()` 方法，用于在数组中添加更多或多个元素。该方法还会移除放置在其后的元素。我将使用与其他方法相同的数组，以便你能理解不同方法之间的区别。括号中的第一个数字是添加或删除的起始索引。第二个元素表示要移除的剩余元素数量。你可以使用 `splice` 方法在任意位置复制连续元素，然后将它们添加到一个新数组中。
 
 ```html
 <!DOCTYPE html>
@@ -2382,22 +2771,31 @@ JavaScript 中有一个 splice() 方法，用于在数组中添加更多或多�
 <button onclick="FunctionZZ()">Click Me</button>
 
 <p id="array-demo1"></p>
+
 <p id="array-demo2"></p>
 
 <script>
+
 var veggies = ["Pumpkin ", "Ginger ", "Tomato ", "Potato "];
+
 document.getElementById("array-demo1").innerHTML = "You are seeing the original Array:<br>" + veggies;
+
 function FunctionZZ() {
+
     veggies.splice(3, 0, "Spinach ", "Garlic ");
+
     document.getElementById("array-demo2").innerHTML = "You are seeing the new Array:<br>" + veggies;
+
 }
+
 </script>
 
 </body>
+
 </html>
 ```
 
-## JavaScript splice()
+JavaScript splice()
 
 I will use the splice() method to add new elements.
 
@@ -2413,7 +2811,7 @@ Pumpkin, Ginger, Tomato, Spinach, Garlic, Potato
 
 如果你分析这段代码片段，会看到代码中有两个参数。第一个参数（3）指出了我指示编辑器添加新元素的位置——换句话说，元素被拼接进去了。第二个参数（0）定义了我想要从代码中移除的元素数量。接下来的两个参数指示编辑器向数组添加新元素。
 
-你还可以使用 splice() 方法来从数组中排出某些元素。虽然还有许多其他方法可以完成这项任务，但 splice() 方法为程序员提供了正确消除数组中空洞的方法。
+你还可以使用 `splice()` 方法来从数组中排出某些元素。虽然还有许多其他方法可以完成这项任务，但 `splice()` 方法为程序员提供了正确消除数组中空洞的方法。
 
 ```html
 <!DOCTYPE html>
@@ -2423,13 +2821,37 @@ Pumpkin, Ginger, Tomato, Spinach, Garlic, Potato
 <p>JavaScript splice()</p>
 
 <p>I will use the splice() method to add new elements.</p>
+
+<button onclick="FunctionZZ()">Click Me</button>
+
+<p id="array-demo1"></p>
+
+<p id="array-demo2"></p>
+
+<script>
+
+var veggies = ["Pumpkin ", "Ginger ", "Tomato ", "Potato "];
+
+document.getElementById("array-demo1").innerHTML = "You are seeing the original Array:<br>" + veggies;
+
+function FunctionZZ() {
+
+    veggies.splice(0, 1);
+
+    document.getElementById("array-demo2").innerHTML = "You are seeing the new Array:<br>" + veggies;
+
+}
+
+</script>
+
+</body>
+
+</html>
 ```
 
+JavaScript splice() 方法
 
-
-### JavaScript splice() 方法
-
-我将使用 splice() 方法来添加新元素。
+我将使用 `splice()` 方法来添加新元素。
 
 点击此处
 
@@ -2449,29 +2871,29 @@ JavaScript 允许你将两个数组拼接起来以产生一个新数组。
 
 ### JavaScript Array concat()
 
-concat() 方法遵循合并模式：
+`concat()` 方法遵循合并模式：
 
 Tomato, Potato, Cauliflower, Cabbage, Orange, Fig, Guava, Date
 
-JavaScript 中的 concat() 方法可以处理多于两个参数。你可以再添加一个数组将其与前两个合并。下面的示例将解释如何合并多达三个数组的方法。
+JavaScript 中的 `concat()` 方法可以处理多于两个参数。你可以再添加一个数组将其与前两个合并。下面的示例将解释如何合并多达三个数组的方法。
 
 ### JavaScript Array concat()
 
-concat() 方法遵循合并模式：
+`concat()` 方法遵循合并模式：
 
 Tomato, Potato, Cauliflower, Cabbage, Orange, Fig, Guava, Date, Watermelon, Melon, Mango
 
-concat() 方法也接受字符串作为参数。这是一个学习如何将字符串添加到数组的示例。
+`concat()` 方法也接受字符串作为参数。这是一个学习如何将字符串添加到数组的示例。
 
 ### JavaScript Array concat()
 
-concat() 方法遵循合并模式：
+`concat()` 方法遵循合并模式：
 
 Tomato, Potato, Cauliflower, Cabbage, Spinach, Garlic, Eggplant
 
 ### 切片
 
-你可以在想要的点切开一个数组。slice() 方法产生数组的片段并创建新数组。
+你可以在想要的点切开一个数组。`slice()` 方法产生数组的片段并创建新数组。
 
 Tomato, Potato, Cauliflower, Cabbage
 
@@ -2479,9 +2901,9 @@ Potato, Cauliflower, Cabbage
 
 Cauliflower, Cabbage
 
-slice() 方法保持现有数组不变。它不会从数组源中删除任何新元素。示例
+`slice()` 方法保持现有数组不变。它不会从数组源中删除任何新元素。示例
 
-concat() 方法遵循合并模式：
+`concat()` 方法遵循合并模式：
 
 Tomato, Potato, Cauliflower, Cabbage
 
@@ -2491,7 +2913,7 @@ Potato, Cauliflower
 
 ### JavaScript Array
 
-concat() 方法遵循合并模式：
+`concat()` 方法遵循合并模式：
 
 Tomato, Potato, Cauliflower, Cabbage
 
@@ -2499,7 +2921,7 @@ Potato, Cauliflower, Cabbage
 
 ### 数组排序
 
-你可以使用 sort() 方法按字母顺序对数组进行排序。当你在零售店或金融公司处理大量数组元素时，这非常有用。
+你可以使用 `sort()` 方法按字母顺序对数组进行排序。当你在零售店或金融公司处理大量数组元素时，这非常有用。
 
 这是 JavaScript Array Sort 方法
 
@@ -2511,7 +2933,7 @@ Garlic, Peas, Potato, Radish, Spinach
 
 ### 反向排列
 
-你可以使用 reverse() 方法将数组设置为反向位置。它会将元素按相反顺序排列。此方法也称为降序方法，因为它反转字母顺序并将其设置为降序位置。
+你可以使用 `reverse()` 方法将数组设置为反向位置。它会将元素按相反顺序排列。此方法也称为降序方法，因为它反转字母顺序并将其设置为降序位置。
 
 这是 JavaScript Array Sort 方法
 
@@ -2523,7 +2945,7 @@ Spinach, Radish, Potato, Peas, Garlic
 
 ### 数字排序
 
-sort() 函数默认设置为对字符串形式的值进行排序。当你有单词需要排序时，它们工作良好。但是，如果你有数字需要排序，你将陷入困境。在排序函数看来，数字 20 比数字 100 大。原因是 2 比 1 大。这就是为什么如果你尝试将 sorted() 方法应用于数组，很可能会得到不正确结果的原因。
+`sort()` 函数默认设置为对字符串形式的值进行排序。当你有单词需要排序时，它们工作良好。但是，如果你有数字需要排序，你将陷入困境。在排序函数看来，数字 20 比数字 100 大。原因是 2 比 1 大。这就是为什么如果你尝试将 `sorted()` 方法应用于数组，很可能会得到不正确结果的原因。
 
 ### 学习 JavaScript Array Sort
 
@@ -2543,11 +2965,9 @@ sort() 函数默认设置为对字符串形式的值进行排序。当你有单�
 
 15, 102, 253, 555, 1000, 4000
 
-现在我将使用相同的 sort() 方法以降序模式反转顺序。让我们看看通过这种方式可以得到什么类型的结果。我将在浏览器屏幕上点击按钮后展示我得到的结果。
+现在我将使用相同的 `sort()` 方法以降序模式反转顺序。让我们看看通过这种方式可以得到什么类型的结果。我将在浏览器屏幕上点击按钮后展示我得到的结果。
 
-
-
-```
+```html
 <html>
 <body>
 
@@ -2560,16 +2980,23 @@ sort() 函数默认设置为对字符串形式的值进行排序。当你有单�
 <p id="demo10"></p>
 
 <script>
+
 var nums = [4000, 1000, 15, 555, 253, 102];
+
 document.getElementById("demo10").innerHTML = nums;
 
 function FunctionT() {
+
   nums.sort(function(x, y){return y - x});
+
   document.getElementById("demo10").innerHTML = nums;
+
 }
+
 </script>
 
 </body>
+
 </html>
 ```
 
@@ -2585,11 +3012,11 @@ function FunctionT() {
 
 ### 比较函数
 
-即使在处理数字时，你也可以使用比较函数来获得所需的结果。此函数旨在定义排序顺序的特定替代方案。该比较函数必须根据所使用的参数返回零、负数或正值。当你向 `sort()` 函数传入一对值时，它会将这些值传递给比较函数。之后，它会根据返回的负值、正值或零对这些值进行排序。如果结果为负，则将 x 排在 y 之前。如果结果为正，则将 y 排在 x 之前。零表示值的排序顺序不变。
+即使在处理数字时，你也可以使用比较函数来获得所需的结果。此函数旨在定义排序顺序的特定替代方案。该比较函数必须根据所使用的参数返回零、负数或正值。当你向 `sort()` 函数传入一对值时，它会将这些值传递给比较函数。之后，它会根据返回的负值、正值或零对这些值进行排序。如果结果为负，则将 `x` 排在 `y` 之前。如果结果为正，则将 `y` 排在 `x` 之前。零表示值的排序顺序不变。
 
 此函数比较数组中的值。当比较 20 和 100 时，它会调用比较函数来计算差值。如果结果为负，则判定 20 小于 100。你可以使用以下代码片段来试验字母排序和数字排序。
 
-```
+```html
 <!DOCTYPE html>
 <html>
 <body>
@@ -2599,29 +3026,41 @@ function FunctionT() {
 <p>You can use the click buttons to sort out the arrays either in alphabetical order or in numerical order.</p>
 
 <button onclick="FunctionP()">Click Me to Sort Alphabetically</button>
+
 <button onclick="FunctionQ()">Click Me to Sort Numerically</button>
 
 <p id="demo1"></p>
 
 <script>
+
 var nums = [4045, 1002, 1567, 5234, 251, 100];
+
 document.getElementById("demo1").innerHTML = nums;
 
 function FunctionP() {
+
   nums.sort();
+
   document.getElementById("demo1").innerHTML = nums;
+
 }
+
 function FunctionQ() {
+
   nums.sort(function(x, y){return x - y});
+
   document.getElementById("demo1").innerHTML = nums;
+
 }
+
 </script>
 
 </body>
+
 </html>
 ```
 
-### 学习 JavaScript 数组排序
+学习 JavaScript 数组排序
 
 你可以点击按钮，将数组按字母顺序或数字顺序进行排序。
 
@@ -2631,7 +3070,7 @@ function FunctionQ() {
 
 以上是当你在浏览器中运行代码时显示的原始结果。下面是点击字母排序按钮后的效果。
 
-### 学习 JavaScript 数组排序
+学习 JavaScript 数组排序
 
 你可以点击按钮，将数组按字母顺序或数字顺序进行排序。
 
@@ -2653,7 +3092,7 @@ function FunctionQ() {
 
 你可以使用随机方法来对数组进行随机排序。请参阅示例，了解如何将方法添加到代码中以获得所需结果。通过使用随机方法，数字将进行随机排序。我无法在此展示所有排序结果，因为每次点击浏览器中的按钮时，我都会得到不同的结果。你可以使用这段代码，并多次点击按钮查看不同的结果。参见以下示例。
 
-```
+```html
 <!DOCTYPE html>
 <html>
 <body>
@@ -2667,16 +3106,23 @@ function FunctionQ() {
 <p id="demo10"></p>
 
 <script>
+
 var nums = [4000, 1000, 15, 555, 253, 102];
+
 document.getElementById("demo10").innerHTML = nums;
 
 function FunctionT() {
+
   nums.sort(function(x, y){return 0.5 - Math.random()});
+
   document.getElementById("demo10").innerHTML = nums;
+
 }
+
 </script>
 
 </body>
+
 </html>
 ```
 
@@ -2688,9 +3134,9 @@ function FunctionT() {
 
 15,253,1000,555,102,4000
 
-随机方法的问题在于它偏爱某些数字而非其他数字。还有一种比这种方法更正确、更有用的方法。它通常被称为 **Fisher-Yates 洗牌法**。该方法在数据科学早期就被引入了。
+随机方法的问题在于它偏爱某些数字而非其他数字。还有一种比这种方法更正确、更有用的方法。它通常被称为 Fisher-Yates 洗牌法。该方法在数据科学早期就被引入了。
 
-```
+```html
 <!DOCTYPE html>
 <html>
 <body>
@@ -2706,28 +3152,41 @@ function FunctionT() {
 <p id="demo12"></p>
 
 <script>
+
 var nums = [404, 10023, 123, 589, 2511, 102];
+
 document.getElementById("demo12").innerHTML = nums;
 
 function FunctionXX() {
+
   var a, b, c;
+
   for (a = nums.length -1; a > 0; a--) {
+
     b = Math.floor(Math.random() * a)
+
     c = nums[a]
+
     nums[a] = nums[b]
+
     nums[b] = c
+
   }
+
   document.getElementById("demo12").innerHTML = nums;
+
 }
+
 </script>
 
 </body>
+
 </html>
 ```
 
-### JavaScript 数组排序继续
+JavaScript 数组排序继续
 
-### 这就是 Fisher-Yates 方法
+这就是 Fisher-Yates 方法
 
 反复点击按钮，即可将数组随机排序。
 
@@ -2739,7 +3198,7 @@ function FunctionXX() {
 
 JavaScript 没有内置函数来查找数组中的最大值或最小值。但是，当你存储了一个数组后，可以使用索引来获取最大值和最小值。
 
-```
+```html
 <!DOCTYPE html>
 <html>
 <body>
@@ -2749,12 +3208,17 @@ JavaScript 没有内置函数来查找数组中的最大值或最小值。但是
 <p>You are seeing the lowest number which is <span id="demo4"></span>.</p>
 
 <script>
+
 var nums = [4099999, 124100, 12, 5444, 2544444, 102343];
+
 nums.sort(function(x, y){return x-y});
+
 document.getElementById("demo4").innerHTML = nums[0];
+
 </script>
 
 </body>
+
 </html>
 ```
 
@@ -2764,7 +3228,7 @@ JavaScript 数组排序方法
 
 同样的代码可以用来找出最大的数字。我将反转模式，找出列表中最大的数字。以下是该模式。
 
-```
+```html
 <!DOCTYPE html>
 <html>
 <body>
@@ -2774,12 +3238,17 @@ JavaScript 数组排序方法
 <p>You are seeing the lowest number which is <span id="demo4"></span>.</p>
 
 <script>
+
 var nums = [4099999, 124100, 12, 5444, 2544444, 102343];
+
 nums.sort(function(x, y){return y - x});
+
 document.getElementById("demo4").innerHTML = nums[0];
+
 </script>
 
 </body>
+
 </html>
 ```
 
@@ -2789,7 +3258,7 @@ JavaScript 数组排序方法
 
 这种查找数组中最大值和最小值的方法是最笨拙的方法。它也是低效的。如果你想更精确、更准确，可以使用 `Math.max()` 方法，无需遍历整个数组后再返回答案，即可获得最准确的结果。
 
-```
+```html
 <!DOCTYPE html>
 <html>
 <body>
@@ -2799,25 +3268,31 @@ JavaScript 数组排序方法
 <p>Here is the highest number in the array: <span id="demo7"></span>.</p>
 
 <script>
+
 var nums = [4087787878, 1002333333333, 112, 5, 2544, 11220];
+
 document.getElementById("demo7").innerHTML = ArrayMaxPoint(nums);
 
 function ArrayMaxPoint(arr) {
+
   return Math.max.apply(null, arr);
+
 }
+
 </script>
 
 </body>
+
 </html>
 ```
 
-### 通过 Max 方法进行 JavaScript 数组排序
+通过 Max 方法进行 JavaScript 数组排序
 
 数组中最大的数字是：1002333333333。
 
 现在我将使用同样的方法来找出数组中最小的值。参见以下示例。
 
-```
+```html
 <!DOCTYPE html>
 <html>
 <body>
@@ -2827,27 +3302,31 @@ function ArrayMaxPoint(arr) {
 <p>Here is the highest number in the array: <span id="demo7"></span>.</p>
 
 <script>
+
 var nums = [4087787878, 1002333333333, 112, 5, 2544, 11220];
+
 document.getElementById("demo7").innerHTML = ArrayMaxPoint(nums);
 
 function ArrayMaxPoint(arr) {
+
   return Math.min.apply(null, arr);
+
 }
+
 </script>
 
 </body>
+
 </html>
 ```
 
-### 通过 Max 方法进行 JavaScript 数组排序
-
-
+通过 Max 方法进行 JavaScript 数组排序
 
 以下是数组中最大的数字：5。
 
 下面是另一种被认为是检测数组中最大数字最快方法的解决方案。在这种方法中，一个函数进入循环并遍历数组，将数组中的每一个值与它第一阶段检测到的最大值进行比较。当它遍历完所有值后，会产生结果。
 
-```
+```html
 <!DOCTYPE html>
 <html>
 <body>
@@ -2857,32 +3336,45 @@ function ArrayMaxPoint(arr) {
 <p>Here is the highest number in the array: <span id="demo7"></span>.</p>
 
 <script>
+
 var nums = [4077879878, 10023, 14777777777, 53, 25, 1023];
+
 document.getElementById("demo7").innerHTML = ArrayMaxPoint(nums);
 
 function ArrayMaxPoint(arr) {
+
   var length = arr.length;
+
   var maximum = -Infinity;
+
   while (length--) {
+
     if (arr[length] > maximum) {
+
       maximum = arr[length];
+
     }
+
   }
+
   return maximum;
+
 }
+
 </script>
 
 </body>
+
 </html>
 ```
 
-### JavaScript 数组排序求最大值
+JavaScript 数组排序求最大值
 
 数组中最大的数字是：14777777777。
 
 同样，你可以创建一个函数，它会遍历整个数组，首先检测最低值，然后将其与数组中的其余值进行比较。最后，它会在浏览器中输出结果。看看最小值函数是如何工作并遍历数组的。
 
-```
+```html
 <!DOCTYPE html>
 <html>
 <body>
@@ -2892,26 +3384,39 @@ function ArrayMaxPoint(arr) {
 <p>Here is the highest number in the array: <span id="demo7"></span>.</p>
 
 <script>
+
 var nums = [4077879878, 10023, 14777777777, 53, 25, 1023];
+
 document.getElementById("demo7").innerHTML = ArrayMinPoint(nums);
 
 function ArrayMinPoint(arr) {
+
     var length = arr.length;
+
     var minimum = Infinity;
+
     while (length--) {
+
         if (arr[length] < minimum) {
+
             minimum = arr[length];
+
         }
+
     }
+
     return minimum;
+
 }
+
 </script>
 
 </body>
+
 </html>
 ```
 
-### JavaScript 数组排序求最大值
+JavaScript 数组排序求最大值
 
 数组中最大的数字是：25。
 
@@ -2919,46 +3424,67 @@ function ArrayMinPoint(arr) {
 
 如果你有一个包含对象的数组，可以使用以下方法对它们进行排序。
 
-```
+```html
 <!DOCTYPE html>
 <html>
 <body>
 
 <p>JavaScript Array Sorting Objects</p>
+
 <p>Please click the buttons to sort out the objects of the car.</p>
+
 <button onclick="FunctionO()">Please Click Me to Sort</button>
+
 <p id="demo2"></p>
 
 <script>
+
 var carsObjects = [
+
     {type:"Honda", year:2020, Make:"Japan", Model:"Vezel"},
+
     {type:"Toyota", year:2010, Make:"Japan", Model:"Fortuner"},
+
     {type:"Toyota", year:2018, Make:"Japan", Model:"Vitz"}
+
 ];
 
 ToDisplayCars();
 
 function FunctionO() {
+
     carsObjects.sort(function(x, y){return x.year - y.year});
+
     ToDisplayCars();
+
 }
 
 function ToDisplayCars() {
+
     document.getElementById("demo2").innerHTML =
+
     carsObjects[0].type + " " + carsObjects[0].year + " " + carsObjects[0].Make + " " +
+
     carsObjects[0].Model + "<br>" +
+
     carsObjects[1].type + " " + carsObjects[1].year + " " + carsObjects[1].Make + " " +
+
     carsObjects[1].Model + "<br>" +
+
     carsObjects[2].type + " " + carsObjects[2].year + " " + carsObjects[2].Make + " " +
+
     carsObjects[2].Model;
+
 }
+
 </script>
 
 </body>
+
 </html>
 ```
 
-### JavaScript 对象数组排序
+JavaScript 对象数组排序
 
 请点击按钮对汽车对象进行排序。
 
@@ -2976,7 +3502,7 @@ Honda 2020 Japan Vezel
 
 JavaScript 数组还有更多可以学习和应用的内容，供你在创建网页时使用。`forEach()` 方法帮助你为数组的所有元素调用一个函数。
 
-```
+```html
 <!DOCTYPE html>
 <html>
 <body>
@@ -2988,20 +3514,29 @@ JavaScript 数组还有更多可以学习和应用的内容，供你在创建网
 <p id="demo44"></p>
 
 <script>
+
 var msg = "";
+
 var nums = [4588888, 2234, 12349, 16899, 900025];
+
 nums.forEach(FunctionE);
+
 document.getElementById("demo44").innerHTML = msg;
 
 function FunctionE(Evalue, Eindex, Earray) {
+
     msg = msg + Evalue + "<br>";
+
 }
+
 </script>
+
 </body>
+
 </html>
 ```
 
-### 这是 JavaScript Array.forEach()
+这是 JavaScript Array.forEach()
 
 该方法至少会为每个单独的数组元素调用一次函数。
 
@@ -3017,7 +3552,7 @@ function FunctionE(Evalue, Eindex, Earray) {
 
 `map()` 方法被程序员用于通过对所有数组元素执行单个函数来创建一个新数组。它不会对没有值的元素执行该函数，也不会改变数组的原始形式。以下示例将使用加法运算符为数组中的每个数字加上 1000，从而创建一个新数组。
 
-```
+```html
 <!DOCTYPE html>
 <html>
 <body>
@@ -3025,20 +3560,27 @@ function FunctionE(Evalue, Eindex, Earray) {
 <p>This is JavaScript Array.map()</p>
 
 <p>I will create a new array by applying the function on all array elements.</p>
+
 <p id="demo90"></p>
 
 <script>
+
 var nums1 = [12345, 7674, 3449, 12316, 9900025];
+
 var nums2 = nums1.map(FunctionM);
 
 document.getElementById("demo90").innerHTML = nums2;
 
 function FunctionM(Mvalue, Mindex, Marray) {
+
     return Mvalue + 1000;
+
 }
+
 </script>
 
 </body>
+
 </html>
 ```
 
@@ -3050,7 +3592,7 @@ function FunctionM(Mvalue, Mindex, Marray) {
 
 我将移除加号运算符，添加乘法运算符以产生不同的结果并创建一个新数组。
 
-```
+```html
 <!DOCTYPE html>
 <html>
 <body>
@@ -3058,20 +3600,27 @@ function FunctionM(Mvalue, Mindex, Marray) {
 <p>This is JavaScript Array.map()</p>
 
 <p>I will create a new array by applying the function on all array elements.</p>
+
 <p id="demo90"></p>
 
 <script>
+
 var nums1 = [12345, 7674, 3449, 12316, 9900025];
+
 var nums2 = nums1.map(FunctionM);
 
 document.getElementById("demo90").innerHTML = nums2;
 
 function FunctionM(Mvalue, Mindex, Marray) {
+
     return Mvalue * 1000;
+
 }
+
 </script>
 
 </body>
+
 </html>
 ```
 
@@ -3087,7 +3636,7 @@ function FunctionM(Mvalue, Mindex, Marray) {
 
 `filter()` 方法倾向于创建一个由通过测试的数组元素组成的新数组。我将筛选标准设置在数字 20，这意味着所有大于 20 的数字都会被该方法筛选出来。用户只会看到大于 20 的数字。其余元素将被隐藏。
 
-```
+```html
 <!DOCTYPE html>
 <html>
 <body>
@@ -3099,17 +3648,23 @@ function FunctionM(Mvalue, Mindex, Marray) {
 <p id="demo789"></p>
 
 <script>
+
 var nums = [45890, 17, 3459, 18, 2, 6, 23416, 87625];
+
 var over20 = nums.filter(FunctionZ);
 
 document.getElementById("demo789").innerHTML = over20;
 
 function FunctionZ(valueF, indexF, arrayF) {
+
   return valueF > 20;
+
 }
+
 </script>
 
 </body>
+
 </html>
 ```
 
@@ -3121,11 +3676,9 @@ function FunctionZ(valueF, indexF, arrayF) {
 
 ### reduce() 方法
 
-`reduce()` 方法对所有数组元素进行函数调用并产生一个值。该方法将从左到右在数组内部进行操作。
+`reduce()` 方法对所有数组元素进行函数调用并产生一个值。该方法将从左到右在数组内部进行操作。它保持原始数组不变。
 
-数组。它保持原始数组不变。
-
-```
+```html
 <!DOCTYPE html>
 <html>
 <body>
@@ -3137,17 +3690,23 @@ function FunctionZ(valueF, indexF, arrayF) {
 <p id="demo789"></p>
 
 <script>
+
 var nums = [45890, 17, 3459, 18, 2, 6, 23416, 87625];
+
 var over20 = nums.reduce(FunctionZ);
 
 document.getElementById("demo789").innerHTML = over20;
 
 function FunctionZ(Total, valueF) {
+
   return Total + valueF;
+
 }
+
 </script>
 
 </body>
+
 </html>
 ```
 
@@ -3157,9 +3716,9 @@ The following program will create a new array by filtering all array elements th
 
 160433
 
-reduce() 方法最神奇之处在于，与其他方法不同，它可以接受一个额外的初始值。
+`reduce()` 方法最神奇之处在于，与其他方法不同，它可以接受一个额外的初始值。
 
-```
+```html
 <!DOCTYPE html>
 <html>
 <body>
@@ -3171,19 +3730,23 @@ reduce() 方法最神奇之处在于，与其他方法不同，它可以接受�
 <p id="demo789"></p>
 
 <script>
+
 var nums = [45890, 17, 3459, 18, 2, 6, 23416, 87625];
+
 var over20 = nums.reduce(FunctionZ, 5000000000);
 
 document.getElementById("demo789").innerHTML = over20;
 
 function FunctionZ(Total, valueF) {
-  return Total + valueF;
-}
-```
 
-```
+  return Total + valueF;
+
+}
+
 </script>
+
 </body>
+
 </html>
 ```
 
@@ -3193,11 +3756,11 @@ The following program will create a new array by filtering all array elements th
 
 5000160433
 
-## *reduceRight() 方法*
+### reduceRight() 方法
 
-reduceRight() 方法对数组的所有元素运行一个函数，以生成一个值。该方法从数组的右侧向左侧工作，效果很好。最好的优点是你能够保持原始数组不变。
+`reduceRight()` 方法对数组的所有元素运行一个函数，以生成一个值。该方法从数组的右侧向左侧工作，效果很好。最好的优点是你能够保持原始数组不变。
 
-```
+```html
 <!DOCTYPE html>
 <html>
 <body>
@@ -3209,17 +3772,23 @@ reduceRight() 方法对数组的所有元素运行一个函数，以生成一个
 <p id="demo789"></p>
 
 <script>
+
 var nums = [45890, 17, 3459, 18, 2, 6, 23416, 87625900000];
+
 var sum = nums.reduceRight(FunctionZ);
 
 document.getElementById("demo789").innerHTML = "The Total sum of all the numbers is " + sum;
 
 function FunctionZ(Total, valueF) {
+
   return Total + valueF;
+
 }
+
 </script>
 
 </body>
+
 </html>
 ```
 
@@ -3229,13 +3798,13 @@ The following program will create a new array by filtering all array elements th
 
 The Total sum of all the numbers is 87625972808
 
-Array.reduceRight() 在所有浏览器中都能正常工作，除了 Internet Explorer 8 或更早版本。
+`Array.reduceRight()` 在所有浏览器中都能正常工作，除了 Internet Explorer 8 或更早版本。
 
-## *every() 方法*
+### every() 方法
 
-every() 方法对数组进行全面检查，查看数组中的所有元素是否都通过了测试。在下面的示例中，我将运行一个测试，查看所有元素是否都大于 500。
+`every()` 方法对数组进行全面检查，查看数组中的所有元素是否都通过了测试。在下面的示例中，我将运行一个测试，查看所有元素是否都大于 500。
 
-```
+```html
 <!DOCTYPE html>
 <html>
 <body>
@@ -3247,17 +3816,23 @@ every() 方法对数组进行全面检查，查看数组中的所有元素是否
 <p id="demo789"></p>
 
 <script>
+
 var nums = [45890, 17, 3459, 18, 2, 6, 23416, 87625900000];
+
 var Over500 = nums.every(FunctionZ);
 
 document.getElementById("demo789").innerHTML = "Are all values bigger than 500: " + Over500;
 
 function FunctionZ(valueF) {
+
   return valueF > 500;
+
 }
+
 </script>
 
 </body>
+
 </html>
 ```
 
@@ -3269,7 +3844,7 @@ Are all values bigger than 500: false
 
 现在我故意将所有值设为大于 500，看看结果是什么。
 
-```
+```html
 <!DOCTYPE html>
 <html>
 <body>
@@ -3281,31 +3856,37 @@ Are all values bigger than 500: false
 <p id="demo789"></p>
 
 <script>
-var nums = [45890, 1700, 3459, 1800, 2700, 6222, 23416, 87625900000];
-var Over500 = nums.every(FunctionZ);
-```
 
-```
+var nums = [45890, 1700, 3459, 1800, 2700, 6222, 23416, 87625900000];
+
+var Over500 = nums.every(FunctionZ);
+
 document.getElementById("demo789").innerHTML = "Are all values bigger than 500: " + Over500;
+
 function FunctionZ(valueF) {
+
   return valueF > 500;
+
 }
+
 </script>
+
 </body>
+
 </html>
 ```
 
-### This is JavaScript Array.every()
+This is JavaScript Array.every()
 
 The following program will display the results of the test.
 
 Are all values bigger than 500: true
 
-## *some() 方法*
+### some() 方法
 
 有另一个方法用于检查数组中有多少个值通过了测试。我将检查有多少个值通过了大于 500 的测试。该方法可以接受多个参数，但由于我只需要一个，我就坚持使用一个。你可以添加更多参数来筛选索引并生成整个数组。
 
-```
+```html
 <!DOCTYPE html>
 <html>
 <body>
@@ -3317,21 +3898,27 @@ Are all values bigger than 500: true
 <p id="demo789"></p>
 
 <script>
+
 var nums = [45890, 170, 345, 1800, 270, 622, 23416, 87625900000];
+
 var Over500 = nums.some(FunctionZ);
 
 document.getElementById("demo789").innerHTML = "Are there some values bigger than 500: " + Over500;
 
 function FunctionZ(valueF) {
+
   return valueF > 500;
+
 }
+
 </script>
 
 </body>
+
 </html>
 ```
 
-### This is JavaScript Array.some()
+This is JavaScript Array.some()
 
 The following program will display the results of the test.
 
@@ -3339,9 +3926,9 @@ Are there some values bigger than 500: true
 
 ### indexOf() 方法
 
-indexOf() 方法遍历数组以搜索某个值，然后返回该值的位置。列表中的第一个项目位置为 0，第二个项目位置为 1。
+`indexOf()` 方法遍历数组以搜索某个值，然后返回该值的位置。列表中的第一个项目位置为 0，第二个项目位置为 1。
 
-```
+```html
 <!DOCTYPE html>
 <html>
 <body>
@@ -3353,7 +3940,9 @@ indexOf() 方法遍历数组以搜索某个值，然后返回该值的位置。�
 <p id="demo789"></p>
 
 <script>
+
 var nums = [45890, 170, 345, 1800, 270, 622, 23416, 87625900000];
+
 var p = nums.indexOf(622);
 
 document.getElementById("demo789").innerHTML = "The position of 622 in the array is: " + p;
@@ -3361,6 +3950,7 @@ document.getElementById("demo789").innerHTML = "The position of 622 in the array
 </script>
 
 </body>
+
 </html>
 ```
 
@@ -3370,9 +3960,9 @@ The following program will display the index of the elements of the array.
 
 The position of 622 in the array is: 5
 
-让我们分析一下该方法的语法。首先，你需要写出方法必须搜索的项目的名称。第二部分是可选的。你可以告诉代码搜索的起始点。负值将从特定位置开始，计数从最后一点开始。搜索将继续到末尾。如果浏览器找不到该项目，它将返回 -1 作为结果。如果该项目在数组中有多个实例，它将显示第一个出现的位置。
+让我们分析一下该方法的语法。首先，你需要写出方法必须搜索的项目的名称。第二部分是可选的。你可以告诉代码搜索的起始点。负值将从特定位置开始，计数从最后一点开始。搜索将继续到末尾。如果浏览器找不到该项目，它将返回 `-1` 作为结果。如果该项目在数组中有多个实例，它将显示第一个出现的位置。
 
-```
+```html
 <!DOCTYPE html>
 <html>
 <body>
@@ -3380,16 +3970,19 @@ The position of 622 in the array is: 5
 <p>This is Array.lastIndexOf()</p>
 
 <p id="demo00"></p>
-```
 
-```
 <script>
+
 var veggies = ["Garlic", "Tomatoes", "Potatoes", "Tomatoes", "Pumpkin", "Tomatoes"];
+
 var a = veggies.lastIndexOf("Tomatoes");
+
 document.getElementById("demo00").innerHTML = "Tomatoes are found at position " + (a);
+
 </script>
 
 </body>
+
 </html>
 ```
 
@@ -3397,11 +3990,11 @@ This is Array.lastIndexOf()
 
 Tomatoes are found at position 5
 
-## **find() 方法**
+### find() 方法
 
-find() 方法返回数组中第一个通过测试函数的项目的值。
+`find()` 方法返回数组中第一个通过测试函数的项目的值。
 
-```
+```html
 <!DOCTYPE html>
 <html>
 <body>
@@ -3411,16 +4004,23 @@ find() 方法返回数组中第一个通过测试函数的项目的值。
 <p id="demo00"></p>
 
 <script>
+
 var nums = [444, 55544, 2333, 56666, 22, 876];
+
 var a = nums.find(FunctionZ);
+
 document.getElementById("demo00").innerHTML = "The number that is bigger than 500 = " + a;
 
 function FunctionZ(valueF) {
+
   return valueF > 500;
+
 }
+
 </script>
 
 </body>
+
 </html>
 ```
 
@@ -3428,11 +4028,11 @@ This is Array.find()
 
 The number that is bigger than 500 = 55544
 
-## **findIndex() 方法**
+### findIndex() 方法
 
-findIndex() 方法返回数组中第一个通过测试的元素的索引号。由于我们处理的数组由数字组成，我将设置一个条件，让数组测试每个数字，检查它是否小于 500。
+`findIndex()` 方法返回数组中第一个通过测试的元素的索引号。由于我们处理的数组由数字组成，我将设置一个条件，让数组测试每个数字，检查它是否小于 500。
 
-```
+```html
 <!DOCTYPE html>
 <html>
 <body>
@@ -3442,16 +4042,23 @@ findIndex() 方法返回数组中第一个通过测试的元素的索引号。�
 <p id="demo055"></p>
 
 <script>
+
 var nums = [444, 55544, 2333, 56, 22, 876];
+
 var a = nums.findIndex(FunctionZ);
+
 document.getElementById("demo055").innerHTML = "The index of the number that is lower than 500 = " + a;
 
 function FunctionZ(valueF) {
+
   return valueF < 500;
+
 }
+
 </script>
 
 </body>
+
 </html>
 ```
 
@@ -3459,15 +4066,13 @@ This is Array.findIndex()
 
 The index of the number that is lower than 500 = 0
 
-
-
 ## 第六章
 
-## JavaScript 循环
+### JavaScript 循环
 
 JavaScript 的 `for` 循环包含一条语句和三个表达式。其中有一个初始化部分，在 `for` 循环第一次执行之前运行。该表达式用于创建计数器。在此处创建的变量会立即被限定在 `for` 循环的作用域内。一旦循环执行完毕并达到其逻辑终点，这些变量就会被销毁。
 
-JavaScript `for` 循环的另一个重要部分是**条件**。`for` 循环会在每次新迭代开始之前检查该表达式。如果省略此部分，表达式将被求值为 `true`，循环内的语句将被执行。如果求值结果为 `false`，循环将停止运行。
+JavaScript `for` 循环的另一个重要部分是条件。`for` 循环会在每次新迭代开始之前检查该表达式。如果省略此部分，表达式将被求值为 `true`，循环内的语句将被执行。如果求值结果为 `false`，循环将停止运行。
 
 循环的另一个重要部分是 `final-expression`（最终表达式）。该表达式在每次迭代后执行，用于递增计数器。不过，你也可以用它来递减计数器。循环的 `statement`（语句）部分是需要在循环内部重复执行的代码。你可以根据需要省略这些表达式中的任何一个。
 
@@ -3475,25 +4080,33 @@ JavaScript 中的 `for` 循环用于计数数学数字或语句的迭代次数�
 
 循环的特殊之处在于，它们免去了多次编写代码的麻烦。一旦将代码放入循环中，它就会重复执行。代码块应该重复多少次取决于你在代码中包含的数字。此外，每次循环执行代码时，数值都会不同。因此，虽然代码在重复，但这种重复是按照某种适当的方式进行的。
 
-```
+```html
 <!DOCTYPE html>
 <html>
 <body>
 
 <p id="forloop-demo"></p>
-```
 
-```
 <script>
+
 var carsforsale = ["Honda", "Toyota", "Vezel", "Fiat", "Volkswagen"];
+
 var msg = "";
+
 var YY;
+
 for (YY = 0; YY < carsforsale.length; YY++) {
+
   msg += carsforsale[YY] + "<br>";
+
 }
+
 document.getElementById("forloop-demo").innerHTML = msg;
+
 </script>
+
 </body>
+
 </html>
 ```
 
@@ -3509,7 +4122,7 @@ Volkswagen
 
 在这个例子中，我创建了一个数组，然后添加了一个 `for` 循环来遍历数组的元素。`for` 循环遍历了数组的项，并将它们整齐地显示在单独的行上。
 
-```
+```html
 <!DOCTYPE html>
 <html>
 <body>
@@ -3517,15 +4130,23 @@ Volkswagen
 <p id="demo1"></p>
 
 <script>
+
 var msg = "";
+
 var YY;
+
 for (YY = 0; YY < 3; YY++) {
+
   msg += "The next number you will have to add to the list is " + YY + "<br>";
+
 }
+
 document.getElementById("demo1").innerHTML = msg;
+
 </script>
 
 </body>
+
 </html>
 ```
 
@@ -3539,7 +4160,7 @@ The next number you will have to add to the list is 2
 
 通常，你需要使用第一条语句来初始化循环中的变量。然而，这并非总是必须的。JavaScript 并不强制从第一条语句开始。你可以跳过它，并在第一条语句中初始化不同的值。
 
-```
+```html
 <!DOCTYPE html>
 <html>
 <body>
@@ -3547,15 +4168,23 @@ The next number you will have to add to the list is 2
 <p id="demo1"></p>
 
 <script>
+
 var carsforsale = ["Vezel", "Fortuner", "Sportage", "Sorento"];
+
 var YY, length, msg;
+
 for (YY = 0, length = carsforsale.length, msg = ""; YY < length; YY++) {
+
   msg += carsforsale[YY] + "<br>";
+
 }
+
 document.getElementById("demo1").innerHTML = msg;
+
 </script>
 
 </body>
+
 </html>
 ```
 
@@ -3569,7 +4198,7 @@ Sorento
 
 如果你的值已经在循环开始前设置好了，你也可以跳过第一条语句。
 
-```
+```html
 <!DOCTYPE html>
 <html>
 <body>
@@ -3577,27 +4206,27 @@ Sorento
 <p id="demo1"></p>
 
 <script>
+
 var carsforsale = ["Vezel", "Fortuner", "Sportage", "Sorento"];
+
 var YY = 0
+
 var length = carsforsale.length
+
 var msg = ""
+
 for (; YY < length; YY++) {
+
   msg += carsforsale[YY] + "<br>";
+
 }
+
 document.getElementById("demo1").innerHTML = msg;
+
 </script>
 
 </body>
-</html>
-```
 
-```
-msg += carsforsale[YY] + "<br>";
-}
-document.getElementById("demo1").innerHTML = msg;
-</script>
-
-</body>
 </html>
 ```
 
@@ -3613,7 +4242,7 @@ Sorento
 
 第三条语句递增起始变量的值。然而，第三条语句是可选的。它可以执行负递增、正递增等操作。你也可以省略第三条语句。
 
-```
+```html
 <!DOCTYPE html>
 <html>
 <body>
@@ -3621,24 +4250,29 @@ Sorento
 <p id="demo1"></p>
 
 <script>
+
 var carsforsale = ["Vezel", "Fortuner", "Sportage", "Sorento"];
 
 var YY = 0
+
 var length = carsforsale.length
+
 var msg = ""
 
 for (; YY < length; YY++) {
-  msg += carsforsale[YY] + "<br>";
-  YY++;
-}
-}
-```
 
-```
+  msg += carsforsale[YY] + "<br>";
+
+  YY++;
+
+}
+
 document.getElementById("demo1").innerHTML = msg;
+
 </script>
 
 </body>
+
 </html>
 ```
 
@@ -3654,7 +4288,7 @@ Sportage
 
 `for` 循环的另一种类型是 JavaScript 的 `for/in` 循环。该循环遍历特定对象的所有属性。
 
-```
+```html
 <!DOCTYPE html>
 <html>
 <body>
@@ -3666,22 +4300,31 @@ Sportage
 <p id="demo1"></p>
 
 <script>
+
 var msg = "";
+
 var car = {name:"Honda", model:"Vezel", year:2020, make:"Japan"};
+
 var YY;
+
 for (YY in car) {
+
   msg += car[YY] + " ";
+
 }
+
 document.getElementById("demo1").innerHTML = msg;
+
 </script>
 
 </body>
+
 </html>
 ```
 
-### 学习 JavaScript For/In 循环
+学习 JavaScript For/In 循环
 
-我们的 for/in 循环遍历对象 car 的所有属性。
+我们的 `for/in` 循环遍历对象 `car` 的所有属性。
 
 Honda Vezel 2020 Japan
 
@@ -3689,14 +4332,14 @@ Honda Vezel 2020 Japan
 
 `for/in` 循环的特殊之处在于，你可以将它与数组配对使用，它会像遍历对象的属性一样遍历数组的属性。
 
-```
+```html
 <!DOCTYPE html>
 <html>
-
 <head>
-<meta content="text/html; charset=windows-1050" http-equiv="Content-Type">
-</head>
 
+<meta content="text/html; charset=windows-1050" http-equiv="Content-Type">
+
+</head>
 <body>
 
 <p>These are JavaScript For In Loops</p>
@@ -3706,22 +4349,31 @@ Honda Vezel 2020 Japan
 <p id="demo5"></p>
 
 <script>
+
 var msg = "";
+
 var nums = [5545, 24, 139, 6716, 4425];
+
 var YY;
+
 for (YY in nums) {
+
   msg += nums[YY] + "<br>";
+
 }
+
 document.getElementById("demo5").innerHTML = msg;
+
 </script>
 
 </body>
+
 </html>
 ```
 
 These are JavaScript For In Loops
 
-我将展示 for/in 语句如何遍历数组值。
+我将展示 `for/in` 语句如何遍历数组值。
 
 | 值    |
 |-------|
@@ -3729,8 +4381,6 @@ These are JavaScript For In Loops
 | 24    |
 | 139   |
 | 6716  |
-
-
 
 如果你非常在意索引的顺序，就应该放弃在数组循环中使用 `for in` 的想法。顺序与实现无关。你无法按照预期的顺序访问数组的值。重要的是，当你认为顺序很特殊时，最好使用 `for of` 循环、`for` 循环以及 `Array.forEach()`。
 
@@ -3750,17 +4400,25 @@ These are JavaScript For In Loops
 <p id="demo5"></p>
 
 <script>
+
 var msg = "";
+
 var nums = [55545, 454, 1239, 78816, 45625];
+
 nums.forEach(FunctionYZ);
+
 document.getElementById("demo5").innerHTML = msg;
 
 function FunctionYZ(fvalue, findex, farray) {
+
   msg = msg + fvalue + "<br>";
+
 }
+
 </script>
 
 </body>
+
 </html>
 ```
 
@@ -3788,17 +4446,25 @@ function FunctionYZ(fvalue, findex, farray) {
 <p id="demo5"></p>
 
 <script>
+
 var msg = "";
+
 var nums = [55545, 454, 1239, 78816, 45625];
+
 nums.forEach(FunctionYZ);
+
 document.getElementById("demo5").innerHTML = msg;
 
 function FunctionYZ(fvalue) {
+
   msg = msg + fvalue + "<br>";
+
 }
+
 </script>
 
 </body>
+
 </html>
 ```
 
@@ -3820,7 +4486,7 @@ function FunctionYZ(fvalue) {
 
 ### for/of 循环
 
-JavaScript 中还有另一种 for 循环，称为 `for/of` 语句。此语句遍历特定对象的值，这些对象必须是可迭代的。此语句允许你创建循环，遍历各种数据结构，如 Map、数组、NodeList 和字符串。
+JavaScript 中还有另一种 `for` 循环，称为 `for/of` 语句。此语句遍历特定对象的值，这些对象必须是可迭代的。此语句允许你创建循环，遍历各种数据结构，如 Map、数组、NodeList 和字符串。
 
 当迭代开始时，下一个属性的值会自动分配给一个变量。JavaScript 中的变量使用 `var`、`const` 和 `let` 关键字声明。我们已经在前面的章节中涵盖了所有主题。
 
@@ -3838,23 +4504,29 @@ JavaScript 中还有另一种 for 循环，称为 `for/of` 语句。此语句遍
 <p id="demo6"></p>
 
 <script>
+
 let carsforsale = ["Volkswagen", "Vezel", "Ford", "Fortuner", "Sportage"];
+
 let msg = "";
 
 for (let YY of carsforsale) {
+
   msg += YY + "<br>";
+
 }
 
 document.getElementById("demo6").innerHTML = msg;
+
 </script>
 
 </body>
+
 </html>
 ```
 
 这是 JavaScript For/Of 循环
 
-for/of 语句将创建一个循环，遍历你可以迭代的所有对象的值。
+`for/of` 语句将创建一个循环，遍历你可以迭代的所有对象的值。
 
 - Volkswagen
 - Vezel
@@ -3876,23 +4548,29 @@ for/of 语句将创建一个循环，遍历你可以迭代的所有对象的值�
 <p id="demo6"></p>
 
 <script>
+
 let carsforsale = "Volkswagen, Vezel, Ford";
+
 let msg = "";
 
 for (let YY of carsforsale) {
+
   msg += YY + "<br>";
+
 }
 
 document.getElementById("demo6").innerHTML = msg;
+
 </script>
 
 </body>
+
 </html>
 ```
 
-### 这是 JavaScript For/Of 循环
+这是 JavaScript For/Of 循环
 
-for/of 语句将创建一个循环，遍历你可以迭代的所有对象的值。
+`for/of` 语句将创建一个循环，遍历你可以迭代的所有对象的值。
 
 Volkswagen, Vezel, Ford
 
@@ -3916,16 +4594,25 @@ JavaScript 循环会在特定条件为真时执行代码。既然你已经了解
 <p id="demo7"></p>
 
 <script>
+
 var msg = "";
+
 var YY = 0;
+
 while (YY < 10) {
+
   msg += "<br>下一个数字是 " + YY;
+
   YY++;
+
 }
+
 document.getElementById("demo7").innerHTML = msg;
+
 </script>
 
 </body>
+
 </html>
 ```
 
@@ -3957,19 +4644,27 @@ document.getElementById("demo7").innerHTML = msg;
 <p id="demo8"></p>
 
 <script>
+
 var msg = ""
+
 var YY = 0;
 
 do {
+
   msg += "<br>下一个数字是 " + YY;
+
   YY++;
+
 }
+
 while (YY < 5);
 
 document.getElementById("demo8").innerHTML = msg;
+
 </script>
 
 </body>
+
 </html>
 ```
 
@@ -3995,17 +4690,27 @@ document.getElementById("demo8").innerHTML = msg;
 <p id="demo9"></p>
 
 <script>
+
 var carsforsale = ["Vezel", "Fortuner", "Land Cruiser", "Jimmy"];
+
 var YY = 0;
+
 var msg = "";
+
 for (;carsforsale[YY];) {
+
     msg += carsforsale[YY] + "<br>";
+
     YY++;
+
 }
+
 document.getElementById("demo9").innerHTML = msg;
+
 </script>
 
 </body>
+
 </html>
 ```
 
@@ -4027,16 +4732,27 @@ Jimmy
 <p id="demo9"></p>
 
 <script>
+
 var carsforsale = ["Vezel", "Fortuner", "Land Cruiser", "Jimmy"];
+
 var YY = 0;
+
 var msg = "";
+
 while (carsforsale[YY]) {
+
     msg += carsforsale[YY] + "<br>";
+
     YY++;
+
 }
+
 document.getElementById("demo9").innerHTML = msg;
+
 </script>
+
 </body>
+
 </html>
 ```
 
@@ -4064,34 +4780,45 @@ Jimmy
 <p id="demo9"></p>
 
 <script>
+
 var msg = "";
+
 var YY;
+
 for (YY = 0; YY < 10; YY++) {
+
   if (YY === 5) { break; }
+
   msg += "下一个数字是 " + YY + "<br>";
+
 }
+
 document.getElementById("demo9").innerHTML = msg;
+
 </script>
 
 </body>
+
 </html>
 ```
 
-### 学习 JavaScript 循环
+学习 JavaScript 循环
 
-
-
-我将向 for 循环中添加一个 **break** 语句。
+我将向 `for` 循环中添加一个 `break` 语句。
 
 The next digit is 0
+
 The next digit is 1
+
 The next digit is 2
+
 The next digit is 3
+
 The next digit is 4
 
-循环本需要完成 10 个数字的迭代，但由于我在位置 5 处添加了 break 语句，循环退出了迭代，程序停止了。continue 语句不能说是 break 语句的反面，因为与 break 语句类似，它也会中断循环，但随后会继续执行程序的其余迭代。我将使用相同的示例来详细说明如何利用 continue 语句。
+循环本需要完成 10 个数字的迭代，但由于我在位置 5 处添加了 `break` 语句，循环退出了迭代，程序停止了。`continue` 语句不能说是 `break` 语句的反面，因为与 `break` 语句类似，它也会中断循环，但随后会继续执行程序的其余迭代。我将使用相同的示例来详细说明如何利用 `continue` 语句。
 
-```
+```html
 <!DOCTYPE html>
 <html>
 <body>
@@ -4103,46 +4830,63 @@ The next digit is 4
 <p id="demo9"></p>
 
 <script>
+
 var msg = "";
+
 var YY;
+
 for (YY = 0; YY < 10; YY++) {
+
   if (YY === 5) { continue; }
+
   msg += "The next digit is " + YY + "<br>";
+
 }
+
 document.getElementById("demo9").innerHTML = msg;
+
 </script>
 
 </body>
+
 </html>
 ```
 
-### 学习 JavaScript 循环
+学习 JavaScript 循环
 
-我将向 for 循环中添加一个 **break** 语句。
+我将向 `for` 循环中添加一个 `break` 语句。
 
 The next digit is 0
+
 The next digit is 1
+
 The next digit is 2
+
 The next digit is 3
+
 The next digit is 4
+
 The next digit is 6
+
 The next digit is 7
+
 The next digit is 8
+
 The next digit is 9
 
-循环在点 5 处中断，然后继续。你可以看到结果中唯一缺失的数字是 5。continue 语句适合用于跳过循环的一次迭代。break 语句只有一个用途：让你跳出 switch 或循环。你可以使用 break 语句跳出代码块。
+循环在点 5 处中断，然后继续。你可以看到结果中唯一缺失的数字是 5。`continue` 语句适合用于跳过循环的一次迭代。`break` 语句只有一个用途：让你跳出 `switch` 或循环。你可以使用 `break` 语句跳出代码块。
 
 ## 第七章
 
-## JavaScript 函数
+### JavaScript 函数
 
-到目前为止，我们创建的脚本都是在网页加载到浏览器时立即运行的。还有另一种使用代码的方式。你可以将代码打包到一个函数中，然后在网页浏览器中运行它。除非你进行函数调用，否则你不会在浏览器上看到任何动作。函数短语包含 function 关键字、函数名称和花括号。
+到目前为止，我们创建的脚本都是在网页加载到浏览器时立即运行的。还有另一种使用代码的方式。你可以将代码打包到一个函数中，然后在网页浏览器中运行它。除非你进行函数调用，否则你不会在浏览器上看到任何动作。函数短语包含 `function` 关键字、函数名称和花括号。
 
-你需要在 function 关键字后包含一个空格。之后，你需要写下你为函数选择的名称。这些与变量命名规则非常相似。然而，函数命名的唯一区别是你可以在函数名中添加数字、字母、$ 或下划线。之后，你需要添加一组圆括号或括号来包含任何参数。然后，你需要放入花括号来编写代码。你不必将函数写在多行上。如果你习惯的话，可以将其写在单行上。然而，刚开始时最好写在多行上，这样你可以清楚地了解它是如何编写的。此外，如果代码运行不正常，你可以轻松纠正任何错误。
+你需要在 `function` 关键字后包含一个空格。之后，你需要写下你为函数选择的名称。这些与变量命名规则非常相似。然而，函数命名的唯一区别是你可以在函数名中添加数字、字母、`$` 或下划线。之后，你需要添加一组圆括号或括号来包含任何参数。然后，你需要放入花括号来编写代码。你不必将函数写在多行上。如果你习惯的话，可以将其写在单行上。然而，刚开始时最好写在多行上，这样你可以清楚地了解它是如何编写的。此外，如果代码运行不正常，你可以轻松纠正任何错误。
 
 JavaScript 函数是为了执行特定任务而创建的。当你进行函数调用时，可以执行它。
 
-```
+```html
 <!DOCTYPE html>
 <html>
 <body>
@@ -4154,32 +4898,37 @@ JavaScript 函数是为了执行特定任务而创建的。当你进行函数调
 <p id="demo890"></p>
 
 <script>
+
 function FunctionZZ(x1, x2) {
+
   return x1 * x2;
+
 }
+
 document.getElementById("demo890").innerHTML = FunctionZZ(345, 1222);
-</script>
 
 </script>
+
 </body>
+
 </html>
 ```
 
-### 学习 JavaScript 函数
+学习 JavaScript 函数
 
 在这个示例中，我将进行函数调用以执行计算并返回结果：
 
 421590
 
-你可以看到有一个 function 关键字，后跟函数名称。我在代码中包含了括号。你可以在括号中包含一个或多个参数。函数中需要包含的代码放在花括号内。至于函数参数，你在创建函数后想要调用它时必须传递它们。在函数内部，参数的行为非常类似于局部变量。函数的工作方式与 Subroutine 和 Procedure 在其他编程语言中的工作方式相同。
+你可以看到有一个 `function` 关键字，后跟函数名称。我在代码中包含了括号。你可以在括号中包含一个或多个参数。函数中需要包含的代码放在花括号内。至于函数参数，你在创建函数后想要调用它时必须传递它们。在函数内部，参数的行为非常类似于局部变量。函数的工作方式与 Subroutine 和 Procedure 在其他编程语言中的工作方式相同。
 
 ### 函数的调用
 
 你打包到函数内部的代码只有在调用函数时才会执行。调用过程也称为进行函数调用。它可能在访客点击网页上的按钮时发生，或者你可以从 JavaScript 代码中调用它。你也可以将函数设置为自调用。
 
-函数末尾有一个 return。当你到达它时，函数将停止执行。函数通常会计算返回值，然后将值返回给进行函数调用的人。
+函数末尾有一个 `return`。当你到达它时，函数将停止执行。函数通常会计算返回值，然后将值返回给进行函数调用的人。
 
-```
+```html
 <!DOCTYPE html>
 <html>
 <body>
@@ -4191,18 +4940,25 @@ document.getElementById("demo890").innerHTML = FunctionZZ(345, 1222);
 <p id="demo890"></p>
 
 <script>
+
 var Y = FunctionZZ(55, 2345)
+
 document.getElementById("demo890").innerHTML = Y;
 
 function FunctionZZ(x1, x2) {
+
   return x1 * x2;
+
 }
+
 </script>
+
 </body>
+
 </html>
 ```
 
-### 学习 JavaScript 函数
+学习 JavaScript 函数
 
 在这个示例中，我将进行函数调用以执行计算并返回结果：
 
@@ -4210,22 +4966,29 @@ function FunctionZZ(x1, x2) {
 
 在以下示例中，你将看到我在创建代码一次后如何多次重用它。你可以根据需要填充尽可能多的参数并产生不同的结果。这在开发网页时可以节省时间和精力。这也使得编码过程更快更高效。参见以下示例。
 
-```
+```html
 <!DOCTYPE html>
 <html>
 <body>
 
 <p>This will make a function call to convert digits from Fahrenheit to Celsius:</p>
+
 <p id="demo789"></p>
 
 <script>
+
 function toCels(f) {
+
   return (15/90) * (f-40);
+
 }
+
 document.getElementById("demo789").innerHTML = toCels(80);
+
 </script>
 
 </body>
+
 </html>
 ```
 
@@ -4235,24 +4998,31 @@ document.getElementById("demo789").innerHTML = toCels(80);
 
 ### () 运算符
 
-toCels 一词指的是函数的对象，而 toCels() 指的是函数的结果。当你不带括号访问函数时，它将返回函数的对象而不是函数的结果。让我们看看当你遗漏括号时函数的行为。
+`toCels` 一词指的是函数的对象，而 `toCels()` 指的是函数的结果。当你不带括号访问函数时，它将返回函数的对象而不是函数的结果。让我们看看当你遗漏括号时函数的行为。
 
-```
+```html
 <!DOCTYPE html>
 <html>
 <body>
 
 <p>This will make a function call to convert digits from Fahrenheit to Celsius:</p>
+
 <p id="demo789"></p>
 
 <script>
+
 function toCels(f) {
+
   return (15/90) * (f-40);
+
 }
+
 document.getElementById("demo789").innerHTML = toCels;
+
 </script>
 
 </body>
+
 </html>
 ```
 
@@ -4268,7 +5038,7 @@ function toCels(f) { return (15/90) * (f-40); }
 
 你可以像在不同赋值、公式和计算中使用变量一样使用函数。无需使用变量来存储函数的返回值，你可以直接以变量值的形式使用它。
 
-```
+```html
 <!DOCTYPE html>
 <html>
 <body>
@@ -4278,19 +5048,25 @@ function toCels(f) { return (15/90) * (f-40); }
 <p id="demo1234"></p>
 
 <script>
+
 document.getElementById("demo1234").innerHTML =
+
 "Presently, the average temperature is about " + toCels(90) + " Celsius";
 
 function toCels(tempfahrenheit) {
+
   return (15/9) * (tempfahrenheit-40);
+
 }
+
 </script>
 
 </body>
+
 </html>
 ```
 
-### 学习 JavaScript 函数
+学习 JavaScript 函数
 
 目前，平均温度约为 83.33333333333334 摄氏度
 
@@ -4298,30 +5074,39 @@ function toCels(tempfahrenheit) {
 
 你在 JavaScript 函数内部声明的变量对该函数而言是局部的。你只能从函数内部访问局部变量。
 
-```
+```html
 <!DOCTYPE html>
 <html>
 <body>
 
 <p>A variable out of a Function is undefined.</p>
+
 <p id="demo15"></p>
 
 <p id="demo25"></p>
 
 <script>
+
 FunctionOP();
 
 function FunctionOP() {
+
   var carsforsale = "BMW";
+
   document.getElementById("demo15").innerHTML =
+
   typeof carsforsale + " " + carsforsale;
+
 }
 
 document.getElementById("demo25").innerHTML =
+
 typeof carsforsale;
+
 </script>
 
 </body>
+
 </html>
 ```
 
@@ -4333,28 +5118,31 @@ undefined
 
 局部变量可以在函数中识别。具有相同名称的变量可以在多个函数中使用。当函数开始时，你可以创建局部变量。当函数完成时，局部变量被删除。
 
-当你创建了一个函数后，你可以保存代码并将其加载到浏览器中。如果你看到没有任何反应，那你做对了，因为花括号之间的代码不会显示。有多种方法可以进行函数调用。你可以使用 onLoad 函数将函数加载到浏览器窗口。你可以在函数开头添加 onLoad 代码以成功执行。
-
-
+当你创建了一个函数后，你可以保存代码并将其加载到浏览器中。如果你看到没有任何反应，那你做对了，因为花括号之间的代码不会显示。有多种方法可以进行函数调用。你可以使用 `onLoad` 函数将函数加载到浏览器窗口。你可以在函数开头添加 `onLoad` 代码以成功执行。
 
 ### JavaScript 表达式
 
 你可以借助表达式来定义一个 JavaScript 函数。你可以将函数的表达式存储在一个变量中。
 
-```
+```html
 <!DOCTYPE html>
 <html>
 <body>
 
 <p>In this example, I will store a function in a variable:</p>
+
 <p id="demo12"></p>
 
 <script>
+
 var Y = function (x, y) {return x * y};
+
 document.getElementById("demo12").innerHTML = Y;
+
 </script>
 
 </body>
+
 </html>
 ```
 
@@ -4366,20 +5154,25 @@ function (x, y) {return x * y}
 
 在表达式被存储到变量后，你就可以在函数中使用该变量了。在下面的例子中，我将为变量分配值。
 
-```
+```html
 <!DOCTYPE html>
 <html>
 <body>
 
 <p>In this example, I will store a function in a variable:</p>
+
 <p id="demo12"></p>
 
 <script>
+
 var Y = function (x, y) {return x * y};
+
 document.getElementById("demo12").innerHTML = Y(34, 89);
+
 </script>
 
 </body>
+
 </html>
 ```
 
@@ -4393,20 +5186,25 @@ document.getElementById("demo12").innerHTML = Y(34, 89);
 
 JavaScript 函数通常借助 `function` 关键字来定义。这些函数是通过构造函数 `function()` 创建和定义的。
 
-```
+```html
 <!DOCTYPE html>
 <html>
 <body>
 
 <p>Analyzing the built-in constructor to create functions.</p>
+
 <p id="demo555"></p>
 
 <script>
+
 var FunctionLK = new Function("x", "y", "return x * y");
+
 document.getElementById("demo555").innerHTML = FunctionLK(345, 2);
+
 </script>
 
 </body>
+
 </html>
 ```
 
@@ -4416,20 +5214,25 @@ document.getElementById("demo555").innerHTML = FunctionLK(345, 2);
 
 如果我们考虑 `constructor()` 的实际应用，就会意识到我们不必使用构造函数。
 
-```
+```html
 <!DOCTYPE html>
 <html>
 <body>
 
 <p>Analyzing the built-in constructor to create functions.</p>
+
 <p id="demo555"></p>
 
 <script>
+
 var FunctionLK = function(x, y) {return x * y};
+
 document.getElementById("demo555").innerHTML = FunctionLK(345, 2);
+
 </script>
 
 </body>
+
 </html>
 ```
 
@@ -4441,7 +5244,7 @@ document.getElementById("demo555").innerHTML = FunctionLK(345, 2);
 
 函数的表达式可以被设计成自调用的。一个自调用表达式即使你没有调用它，也会自动执行。如果你在函数后面加上括号，函数的表达式就会自动执行。你无法自调用一个函数声明。你必须在函数周围加上括号，以表明它是一个函数的表达式。
 
-```
+```html
 <!DOCTYPE html>
 <html>
 <body>
@@ -4451,12 +5254,17 @@ document.getElementById("demo555").innerHTML = FunctionLK(345, 2);
 <p id="demo6789"></p>
 
 <script>
+
 (function () {
+
     document.getElementById("demo6789").innerHTML = "This is calling by myself";
+
 })();
+
 </script>
 
 </body>
+
 </html>
 ```
 
@@ -4466,53 +5274,71 @@ This is calling by myself
 
 上述例子中的函数是一个匿名自调用函数。我没有给它起名字。你可以按照以下方式将函数用作值。
 
-```
+```html
 <!DOCTYPE html>
 <html>
 <body>
 
 <p>You can use Functions as values:</p>
+
 <p>Y = FunctionH(2,2) or Y = 4</p>
+
 <p>In the above cases, Y is a number becomes a number with the value of 4.</p>
+
 <p id="demo12"></p>
 
 <script>
+
 function FunctionH(x, y) {
+
     return x * y;
+
 }
+
 var Y = FunctionH(2, 2);
+
 document.getElementById("demo12").innerHTML = Y;
+
 </script>
 
 </body>
+
 </html>
 ```
 
 你可以将函数用作值：
 
-Y = FunctionH(2,2) 或 Y = 4
+`Y = FunctionH(2,2)` 或 `Y = 4`
 
-在上述情况下，Y 是一个数值，其值为 4。
+在上述情况下，`Y` 是一个数值，其值为 4。
 
 你可以在 JavaScript 表达式中使用 JavaScript 函数。
 
-```
+```html
 <!DOCTYPE html>
 <html>
 <body>
 
 <p>You can use functions in expressions.</p>
+
 <p id="demo678"></p>
 
 <script>
+
 function Function123(x, y) {
+
   return x * y;
+
 }
+
 var Y = Function123(5, 2) * 8;
+
 document.getElementById("demo678").innerHTML = Y;
+
 </script>
 
 </body>
+
 </html>
 ```
 
@@ -4524,7 +5350,7 @@ document.getElementById("demo678").innerHTML = Y;
 
 如果你使用我们在前几章学过的 `typeof` 运算符来了解函数的类型，你会意识到 JavaScript 函数最好用对象的形式来描述。就像对象一样，JavaScript 中的函数也有方法和属性。在下面的例子中，我将尝试将一些属性应用于函数，看看它的行为。
 
-```
+```html
 <!DOCTYPE html>
 <html>
 <body>
@@ -4534,13 +5360,19 @@ document.getElementById("demo678").innerHTML = Y;
 <p id="demo90"></p>
 
 <script>
+
 function FunctionP(x, y) {
+
   return arguments.length;
+
 }
+
 document.getElementById("demo90").innerHTML = FunctionP(40, 3, 78);
+
 </script>
 
 </body>
+
 </html>
 ```
 
@@ -4552,7 +5384,7 @@ document.getElementById("demo90").innerHTML = FunctionP(40, 3, 78);
 
 如果你想将你的函数转换为一个字符串，你可以使用 `toString()` 方法来实现。以下是你如何操作一个函数并将其转换为字符串的方法。
 
-```
+```html
 <!DOCTYPE html>
 <html>
 <body>
@@ -4562,19 +5394,27 @@ document.getElementById("demo90").innerHTML = FunctionP(40, 3, 78);
 <p id="demo12"></p>
 
 <script>
+
 function Function1234(x, y, z) {
+
   return x * y * z;
+
 }
+
 document.getElementById("demo12").innerHTML = Function1234.toString();
+
 </script>
 
 </body>
+
 </html>
 ```
 
 `toString()` 方法将你的函数转换为一个字符串：
 
+```
 function Function1234(x, y, z) { return x * y * z; }
+```
 
 一个被定义为特定对象属性的函数被称为该对象的方法。一个必须创建新对象的函数被称为对象构造函数。
 
@@ -4582,7 +5422,7 @@ function Function1234(x, y, z) { return x * y * z; }
 
 箭头函数可以帮助你缩短函数中的文本长度。语法会更简短，编写时间也会减少，从而便于在短时间内编写更多代码。如果你使用箭头函数，你就不再需要 `function` 关键字、花括号和 `return` 关键字了。
 
-```
+```html
 <!DOCTYPE html>
 <html>
 <body>
@@ -4594,15 +5434,19 @@ function Function1234(x, y, z) { return x * y * z; }
 <p id="demo123"></p>
 
 <script>
+
 const a = (a, b) => a * b;
+
 document.getElementById("demo123").innerHTML = a(50, 50);
+
 </script>
 
 </body>
+
 </html>
 ```
 
-### 学习 JavaScript 箭头函数
+学习 JavaScript 箭头函数
 
 IE11 或更早版本不支持箭头函数。
 
@@ -4620,25 +5464,35 @@ JavaScript 函数无法对参数的值进行任何检查。函数参数是在函
 
 在大多数情况下，你可能觉得没有必要用实参来填充一个函数，如果缺少实参，你将在结果中看到未定义的值。在某些情况下，你可以让它这样继续。然而，在某些情况下，你不能让实参部分保持未定义。这不符合网络浏览器的要求。如果你漏掉了为某个实参插入值，参数的默认值将会覆盖它。
 
-```
+```html
 <!DOCTYPE html>
 <html>
 <body>
 
 <p>I am now setting up a default value to the function parameter.</p>
+
 <p id="demo567"></p>
 
 <script>
+
 function FunctionTUP(a, b) {
+
   if (b === undefined) {
+
     b = 6;
+
   }
+
   return a * b;
+
 }
+
 document.getElementById("demo567").innerHTML = FunctionTUP(6);
+
 </script>
 
 </body>
+
 </html>
 ```
 
@@ -4648,22 +5502,29 @@ document.getElementById("demo567").innerHTML = FunctionTUP(6);
 
 ECMAScript 2015 的最新标准允许在函数声明中为参数设置默认值。
 
-```
+```html
 <!DOCTYPE html>
 <html>
 <body>
 
 <p>I am now setting up a default value to the function parameter.</p>
+
 <p id="demo567"></p>
 
 <script>
+
 function FunctionTUP(a, b = 5) {
+
   return a * b;
+
 }
+
 document.getElementById("demo567").innerHTML = FunctionTUP(6);
+
 </script>
 
 </body>
+
 </html>
 ```
 
@@ -4671,33 +5532,45 @@ document.getElementById("demo567").innerHTML = FunctionTUP(6);
 
 30
 
+JavaScript 函数中有一个内置对象。程序员将其命名为 `arguments` 对象。该对象预先填充了一个数组，你可以在调用函数时使用它。以下是你可以使用函数来查找数字列表中最大值的方法。
 
-
-JavaScript 函数中有一个内置对象。程序员将其命名为 arguments 对象。该对象预先填充了一个数组，你可以在调用函数时使用它。以下是你可以使用函数来查找数字列表中最大值的方法。
-
-```
+```html
 <!DOCTYPE html>
 <html>
 <body>
 
 <p>I am now finding the largest number in an array.</p>
+
 <p id="demo123"></p>
 
 <script>
+
 function findingtheMax() {
+
   var O;
+
   var maximum = -Infinity;
+
   for(O = 0; O < arguments.length; O++) {
+
     if (arguments[O] > maximum) {
+
       maximum = arguments[O];
+
     }
+
   }
+
   return maximum;
+
 }
+
 document.getElementById("demo123").innerHTML = findingtheMax(4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14);
+
 </script>
 
 </body>
+
 </html>
 ```
 
@@ -4705,29 +5578,41 @@ document.getElementById("demo123").innerHTML = findingtheMax(4, 5, 6, 7, 8, 9, 1
 
 ### 求和功能
 
-你可以创建一个函数来将函数接收到的所有输入值相加。这是一个可以包含在网页中的实用工具。你的访客在结账时可以计算他们在你的产品上花费了多少以及需要支付多少。以下是你可以使用 JavaScript 函数的求和功能的方法。如果一个函数有大量的参数，事实上，超过了声明的参数数量，可以使用 arguments 对象来访问所有参数。
+你可以创建一个函数来将函数接收到的所有输入值相加。这是一个可以包含在网页中的实用工具。你的访客在结账时可以计算他们在你的产品上花费了多少以及需要支付多少。以下是你可以使用 JavaScript 函数的求和功能的方法。如果一个函数有大量的参数，事实上，超过了声明的参数数量，可以使用 `arguments` 对象来访问所有参数。
 
-```
+```html
 <!DOCTYPE html>
 <html>
 <body>
 
 <p>Here is how you can sum up all the arguments:</p>
+
 <p id="demo555"></p>
 
 <script>
+
 function summingUpAll() {
+
   var Y;
+
   var summingUp = 0;
+
   for(Y = 0; Y < arguments.length; Y++) {
+
     summingUp += arguments[Y];
+
   }
+
   return summingUp;
+
 }
+
 document.getElementById("demo555").innerHTML = summingUpAll(1444, 1232, 1233500, 7115, 454, 123);
+
 </script>
 
 </body>
+
 </html>
 ```
 
@@ -4741,7 +5626,7 @@ document.getElementById("demo555").innerHTML = summingUpAll(1444, 1232, 1233500,
 
 当你编写了一个函数并调用它时，JavaScript 会执行其中的代码。仅定义函数不会执行代码。调用函数与调用函数是同一回事。你不应该混淆两者，因为在 Python 等其他编程语言中，calling a function（调用函数）被广泛使用。JavaScript 稍微偏离了这一传统，使用 invoking a function（调用函数）而不是 calling。你也可以说 calling upon a function、executing a function 或 starting a function。所有这些短语做的是同一件事，即执行函数。
 
-```
+```html
 <!DOCTYPE html>
 <html>
 <body>
@@ -4749,51 +5634,65 @@ document.getElementById("demo555").innerHTML = summingUpAll(1444, 1232, 1233500,
 <p>This is JavaScript Function</p>
 
 <p>My global function will return the product of different arguments (x , y):</p>
+
 <p id="demo77"></p>
 
 <script>
+
 function FunctionXXX(x, y) {
+
     return x * y;
+
 }
+
 document.getElementById("demo77").innerHTML = FunctionXXX(12, 89);
+
 </script>
 
 </body>
+
 </html>
 ```
 
 这是 JavaScript 函数
 
-我的全局函数将返回不同参数的乘积（x，y）：
+我的全局函数将返回不同参数的乘积（`x`，`y`）：
 
 1068
 
 示例中的函数与任何对象都没有关联。这就引出了一个问题：为什么在没有对象的情况下执行仍然成功？答案是 JavaScript 有一个默认的全局对象。由于 JavaScript 与 HTML 紧密配合，HTML 中的默认对象是 HTML 页面本身，因此该函数由 HTML 页面使用。在浏览器内部，该对象是访客浏览器的窗口，因此该函数变成了窗口函数。
 
-```
+```html
 <!DOCTYPE html>
 <html>
 <body>
 
 <p>This is JavaScript Function</p>
+
 <p>My global function will return the product of different arguments. If you invoke FunctionXXX, you are actually invoking window.FunctionXXX. Both are the same. (x , y):</p>
 
 <p id="demo77"></p>
 
 <script>
+
 function FunctionXXX(x, y) {
+
     return x * y;
+
 }
+
 document.getElementById("demo77").innerHTML = FunctionXXX(12, 89);
+
 </script>
 
 </body>
+
 </html>
 ```
 
 这是 JavaScript 函数
 
-我的全局函数将返回不同参数的乘积。如果你调用 FunctionXXX，你实际上是在调用 window.FunctionXXX。两者是相同的。（x，y）：
+我的全局函数将返回不同参数的乘积。如果你调用 `FunctionXXX`，你实际上是在调用 `window.FunctionXXX`。两者是相同的。（`x`，`y`）：
 
 1068
 
@@ -4805,7 +5704,7 @@ document.getElementById("demo77").innerHTML = FunctionXXX(12, 89);
 
 当函数调用中缺少拥有者对象时，`this` 的值会变成全局对象。在 Web 浏览器中，浏览器的窗口充当全局对象。
 
-```
+```html
 <!DOCTYPE html>
 <html>
 <body>
@@ -4815,18 +5714,25 @@ document.getElementById("demo77").innerHTML = FunctionXXX(12, 89);
 <p id="demo777"></p>
 
 <script>
+
 var Y = FunctionDD();
+
 function FunctionDD() {
+
     return this;
+
 }
+
 document.getElementById("demo777").innerHTML = Y;
+
 </script>
 
 </body>
+
 </html>
 ```
 
-在 HTML 编程语言中，**this** 的值是 window 对象。
+在 HTML 编程语言中，`this` 的值是 `window` 对象。
 
 [object Window]
 
@@ -4834,7 +5740,7 @@ document.getElementById("demo777").innerHTML = Y;
 
 在 JavaScript 的世界中，你可以以对象方法的形式定义某些函数。
 
-```
+```html
 <!DOCTYPE html>
 <html>
 <body>
@@ -4846,29 +5752,39 @@ document.getElementById("demo777").innerHTML = Y;
 <p id="demo234"></p>
 
 <script>
+
 var thisObject = {
+
   Namef:"Mac",
+
   Namel: "Millan",
+
   completeName: function() {
+
     return this.Namef + " " + this.Namel;
+
   }
+
 }
+
 document.getElementById("demo234").innerHTML = thisObject.completeName();
+
 </script>
 
 </body>
+
 </html>
 ```
 
-### 使用 JavaScript 函数
+使用 JavaScript 函数
 
-thisObject.Namef() 将返回 Mac Millan：
+`thisObject.Namef()` 将返回 Mac Millan：
 
 Mac Millan
 
-completeName 是一个属于名为 thisObject 的对象的函数。该对象拥有该函数。在示例中，`this` 的值是 thisObject。你可以验证一下。
+`completeName` 是一个属于名为 `thisObject` 的对象的函数。该对象拥有该函数。在示例中，`this` 的值是 `thisObject`。你可以验证一下。
 
-```
+```html
 <!DOCTYPE html>
 <html>
 <body>
@@ -4880,23 +5796,33 @@ completeName 是一个属于名为 thisObject 的对象的函数。该对象拥�
 <p id="demo234"></p>
 
 <script>
+
 var thisObject = {
+
   Namef:"Mac",
+
   Namel: "Millan",
+
   completeName: function() {
+
     return this;
+
   }
+
 }
+
 document.getElementById("demo234").innerHTML = thisObject.completeName();
+
 </script>
 
 </body>
+
 </html>
 ```
 
-### 使用 JavaScript 函数
+使用 JavaScript 函数
 
-thisObject.Namef() 将返回 Mac Millan：
+`thisObject.Namef()` 将返回 Mac Millan：
 
 [object Object]
 
@@ -4904,7 +5830,7 @@ thisObject.Namef() 将返回 Mac Millan：
 
 你可以使用构造函数来调用函数。
 
-```
+```html
 <!DOCTYPE html>
 <html>
 <body>
@@ -4914,16 +5840,23 @@ thisObject.Namef() 将返回 Mac Millan：
 <p id="demo234"></p>
 
 <script>
+
 function FunctionT(argument1, argument2) {
+
     this.Namef = argument1;
+
     this.Namel  = argument2;
+
 }
 
 var Y = new FunctionT("Mac","Millan")
+
 document.getElementById("demo234").innerHTML = Y.Namef;
+
 </script>
 
 </body>
+
 </html>
 ```
 
@@ -4933,9 +5866,9 @@ Mac
 
 ### 重用方法
 
-借助 call() 方法，你可以将一个方法应用于不同类型的对象。在 JavaScript 中，所有函数都是对象的方法。如果一个函数不是，则它属于全局对象。
+借助 `call()` 方法，你可以将一个方法应用于不同类型的对象。在 JavaScript 中，所有函数都是对象的方法。如果一个函数不是，则它属于全局对象。
 
-```
+```html
 <!DOCTYPE html>
 <html>
 <body>
@@ -4947,71 +5880,41 @@ Mac
 <p id="demo234"></p>
 
 <script>
+
 var thisObject = {
+
     Namef:"Mac",
+
     Namel: "Millan",
+
     completeName: function() {
+
         return this.Namef + " " + this.Namel;
+
     }
+
 }
 
 Y = thisObject.completeName();
+
 document.getElementById("demo234").innerHTML = thisObject.completeName(); Y
+
 </script>
 
 </body>
+
 </html>
 ```
 
-### 使用 JavaScript 函数
+使用 JavaScript 函数
 
-thisObject.Namef() 将返回 Mac Millan：
+`thisObject.Namef()` 将返回 Mac Millan：
 
 Mac Millan
 
 ### call() 方法
 
-JavaScript 中的 call() 方法就像一个预定义的方法，你可以用来调用一个方法。你可以使用另一个对象所拥有的方法。
-
-```
-<!DOCTYPE html>
-<html>
-<body>
-
-<p>The following example will call the fullName method of a person by using it on another person:
-</p>
-
-<p id="demo90"></p>
-
-<script>
-var man = {
-  completeName: function() {
-    return this.Namef + " " + this.Namel;
-  }
-}
-var man1 = {
-  Namef:"Christiano",
-  Namel: "Ronaldo"
-}
-var man2 = {
-  Namef:"Lionel",
-  Namel: "Messi"
-}
-var Y = man.completeName.call(man1);
-document.getElementById("demo90").innerHTML = Y;
-</script>
-
-</body>
-</html>
-```
-
-以下示例将通过在一个对象上使用另一个对象的 fullName 方法来调用它：
-
-
-
-### 克里斯蒂亚诺·罗纳尔多
-
-现在我将在 man2 上调用 completeName 方法并使用它。
+JavaScript 中的 `call()` 方法就像一个预定义的方法，你可以用来调用一个方法。你可以使用另一个对象所拥有的方法。
 
 ```html
 <!DOCTYPE html>
@@ -5023,28 +5926,99 @@ document.getElementById("demo90").innerHTML = Y;
 <p id="demo90"></p>
 
 <script>
+
 var man = {
+
   completeName: function() {
+
     return this.Namef + " " + this.Namel;
+
   }
+
 }
+
 var man1 = {
+
   Namef:"Christiano",
+
   Namel: "Ronaldo"
+
 }
+
 var man2 = {
+
   Namef:"Lionel",
+
   Namel: "Messi"
+
 }
-var Y = man.completeName.call(man2);
+
+var Y = man.completeName.call(man1);
+
 document.getElementById("demo90").innerHTML = Y;
+
 </script>
 
 </body>
+
 </html>
 ```
 
-下面的示例将调用一个人的 fullName 方法，并将其用于另一个人：
+以下示例将通过在一个对象上使用另一个对象的 `fullName` 方法来调用它：
+
+Christiano Ronaldo
+
+现在我将在 `man2` 上调用 `completeName` 方法并使用它。
+
+```html
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>The following example will call the fullName method of a person by using it on another person:</p>
+
+<p id="demo90"></p>
+
+<script>
+
+var man = {
+
+  completeName: function() {
+
+    return this.Namef + " " + this.Namel;
+
+  }
+
+}
+
+var man1 = {
+
+  Namef:"Christiano",
+
+  Namel: "Ronaldo"
+
+}
+
+var man2 = {
+
+  Namef:"Lionel",
+
+  Namel: "Messi"
+
+}
+
+var Y = man.completeName.call(man2);
+
+document.getElementById("demo90").innerHTML = Y;
+
+</script>
+
+</body>
+
+</html>
+```
+
+下面的示例将调用一个人的 `fullName` 方法，并将其用于另一个人：
 
 Lionel Messi
 
@@ -5062,80 +6036,49 @@ Lionel Messi
 <p id="demo90"></p>
 
 <script>
+
 var man = {
+
   completeName: function(profession, economicalstatus) {
+
     return this.Namef + " " + this.Namel + ", " + profession + ", " + economicalstatus;
+
   }
+
 }
+
 var man1 = {
+
   Namef:"Christiano",
+
   Namel: "Ronaldo"
+
 }
+
 var man2 = {
+
   Namef:"Lionel",
+
   Namel: "Messi"
+
 }
+
 var Y = man.completeName.call(man2, "soccer star", "extremely rich");
+
 document.getElementById("demo90").innerHTML = Y;
+
 </script>
 
 </body>
+
 </html>
 ```
 
-下面的示例将调用一个人的 fullName 方法，并将其用于另一个人：
+下面的示例将调用一个人的 `fullName` 方法，并将其用于另一个人：
 
-Lionel Messi , soccer star , extremely rich
+Lionel Messi, soccer star, extremely rich
 
-你可以将相同的参数应用于另一个人。
 
-```html
-<!DOCTYPE html>
-<html>
-<body>
-
-<p>The following example will call the fullName method of a person by using it on another person:</p>
-
-<p id="demo90"></p>
-
-<script>
-var man = {
-  completeName: function(profession, economicalstatus) {
-    return this.Namef + " " + this.Namel + ", " + profession + ", " + economicalstatus;
-  }
-}
-var man1 = {
-  Namef:"Christiano",
-  Namel: "Ronaldo"
-}
-
-var man2 = {
-  Namef:"Lionel",
-  Namel: "Messi"
-}
-
-var man3 = {
-  Namef:"Bill",
-  Namel: "Gates"
-}
-
-var man4 = {
-  Namef:"Elon",
-  Namel: "Musk"
-}
-var Y = man.completeName.call(man4, "Businessperson", "World's Richest Person");
-document.getElementById("demo90").innerHTML = Y;
-</script>
-
-</body>
-</html>
-```
-
-下面的示例将调用一个人的 fullName 方法，并将其用于另一个人：
-
-Elon Musk , Businessperson , World's Richest Person
-
-## 第八章
 
 ## JavaScript 对象
 
@@ -5147,7 +6090,6 @@ JavaScript 中的对象用大括号括起来。你必须以名称:值对的形�
 <body>
 
 <p>Learning JavaScript Objects</p>
-
 <p id="objects-demo"></p>
 
 <script>
@@ -5157,7 +6099,6 @@ var car = {
   model  : 2020,
   Color : "silver"
 };
-
 document.getElementById("objects-demo").innerHTML =
 car.Name + " is made in " + car.Make + "." + " The model no is " + car.model + " and the color is " + car.Color + ".";
 </script>
@@ -5182,13 +6123,11 @@ JavaScript 中几乎所有东西都可以是对象。如果你使用 `new` 关�
 <body>
 
 <p>JavaScript Objects</p>
-
 <p id="demo90"></p>
 
 <script>
 var man1 = { Namef:"Christiano", Name1: "Ronaldo", profession: "soccer star",
 economicalstatus: "rich"};
-
 document.getElementById("demo90").innerHTML =
 man1.Namef + " is the biggest " + man1.profession + " across the world. He is a " +
 man1.economicalstatus + " person.";
@@ -5210,7 +6149,6 @@ Christiano is the biggest soccer star across the world. He is a rich person.
 <body>
 
 <p>JavaScript Objects</p>
-
 <p id="demo90"></p>
 
 <script>
@@ -5220,7 +6158,6 @@ var man1 = {
     profession: "soccer star",
     economicalstatus: "rich"
 };
-
 document.getElementById("demo90").innerHTML =
 man1.Namef + " is the biggest " + man1.profession + " across the world. He is a " +
 man1.economicalstatus + " person.";
@@ -5242,7 +6179,6 @@ man1.economicalstatus + " person.";
 <body>
 
 <p>JavaScript Objects</p>
-
 <p id="demo90"></p>
 
 <script>
@@ -5251,7 +6187,6 @@ var man1 = new Object();
     man1.Namel = "Ronaldo";
     man1.profession = "soccer star";
     man1.economicalstatus = "rich";
-
 document.getElementById("demo90").innerHTML =
 man1.Namef + " is the biggest " + man1.profession + " across the world. He is a " +
 man1.economicalstatus + " person.";
@@ -5281,14 +6216,15 @@ JavaScript 属性是对象最重要的部分。每个对象都有一个名为属
 <body>
 
 <p>JavaScript Object Properties</p>
-
 <p id="demo555"></p>
 
 <script>
 var msg = "";
+</script>
+
+</body>
+</html>
 ```
-
-
 
 ### JavaScript 对象属性
 
@@ -5301,9 +6237,7 @@ Lionel Messi 33
 <html>
 <body>
 
-<p>JavaScript Objects
-</p>
-
+<p>JavaScript Objects</p>
 <p id="demo90"></p>
 
 <script>
@@ -5313,12 +6247,10 @@ var man1 = {
     profession: "soccer star",
     economicalstatus: "rich"
 };
-
 man1.nationality = "Portuguese"
 document.getElementById("demo90").innerHTML =
 man1.Namef + " is the biggest " + man1.profession + " across the world. He is from " +
-man1.nationality + "."
-;
+man1.nationality + ".";
 </script>
 
 </body>
@@ -5331,16 +6263,14 @@ Christiano is the biggest soccer star across the world. He is from Portuguese.
 
 #### 删除操作
 
-正如添加属性简单又有趣一样，删除操作也同样简单有趣。使用的关键字是 `delete`。通过使用该关键字，JavaScript 会从对象中删除一个属性。在使用 delete 关键字时你应该小心。它会一次性删除值和属性，删除后你就不能再使用该属性了。这与其他编程语言不同。该运算符只适用于对象，对函数和变量没有作用。该运算符对 JavaScript 的预定义对象属性无效，如果你这样做，你的网页应用可能会崩溃。这对你的网站和业务声誉不利。
+正如添加属性简单又有趣一样，删除操作也同样简单有趣。使用的关键字是 `delete`。通过使用该关键字，JavaScript 会从对象中删除一个属性。在使用 `delete` 关键字时你应该小心。它会一次性删除值和属性，删除后你就不能再使用该属性了。这与其他编程语言不同。该运算符只适用于对象，对函数和变量没有作用。该运算符对 JavaScript 的预定义对象属性无效，如果你这样做，你的网页应用可能会崩溃。这对你的网站和业务声誉不利。
 
 ```html
 <!DOCTYPE html>
 <html>
 <body>
 
-<p>JavaScript Objects
-</p>
-
+<p>JavaScript Objects</p>
 <p id="demo90"></p>
 
 <script>
@@ -5350,11 +6280,9 @@ var man1 = {
     profession: "soccer star",
     economicalstatus: "rich"
 };
-
 delete man1.nationality
 document.getElementById("demo90").innerHTML =
-man1.Namef + " is the biggest " + man1.profession + " across the world. He is from " + man1.nationality + "."
-;
+man1.Namef + " is the biggest " + man1.profession + " across the world. He is from " + man1.nationality + ".";
 </script>
 
 </body>
@@ -5365,7 +6293,7 @@ man1.Namef + " is the biggest " + man1.profession + " across the world. He is fr
 
 Christiano is the biggest soccer star across the world. He is from undefined.
 
-你可以看到，JavaScript 甚至在程序中使用该属性之前就将其删除了。undefined 一词表明该属性的值已经不存在了。
+你可以看到，JavaScript 甚至在程序中使用该属性之前就将其删除了。`undefined` 一词表明该属性的值已经不存在了。
 
 ### 日期
 
@@ -5377,9 +6305,7 @@ JavaScript 的日期功能非常有趣。当你创建新网站时，你需要将
 <body>
 
 <p>Learning JavaScript new Dates()</p>
-
 <p>The new Date() method will create for you a new date object that has the current date and time:</p>
-
 <p id="demo678"></p>
 
 <script>
@@ -5393,7 +6319,7 @@ document.getElementById("demo678").innerHTML = Y;
 
 ### JavaScript 类
 
-JavaScript 也被称为基于原型的语言。该语言中的每个对象都保留一个隐藏的、内部的属性，称为 [[Prototype]]。你可以用它来扩展你在该语言中创建的对象的方法和属性。你可以使用关键字 `class` 来创建一个类。另一个需要添加到类中的重要方法是 `constructor()` 方法。正如我们向对象添加属性一样，我们也可以向类添加属性。类本身不是对象，而是一个模板，用于创建对象并在网页浏览器中操作它们。
+JavaScript 也被称为基于原型的语言。该语言中的每个对象都保留一个隐藏的、内部的属性，称为 `[[Prototype]]`。你可以用它来扩展你在该语言中创建的对象的方法和属性。你可以使用关键字 `class` 来创建一个类。另一个需要添加到类中的重要方法是 `constructor()` 方法。正如我们向对象添加属性一样，我们也可以向类添加属性。类本身不是对象，而是一个模板，用于创建对象并在网页浏览器中操作它们。
 
 ```html
 <!DOCTYPE html>
@@ -5401,9 +6327,7 @@ JavaScript 也被称为基于原型的语言。该语言中的每个对象都保
 <body>
 
 <p>This is the JavaScript Class</p>
-
 <p>I will show you how to create and use the JavaScript Class on your website.</p>
-
 <p id="demo777"></p>
 <p id="demo778"></p>
 <p id="demo779"></p>
@@ -5418,19 +6342,15 @@ class LuxCars {
     this.ccolor = ccolor;
   }
 }
-
 Car1 = new LuxCars("Ford", 2020, "USA", "Mustang", "Blue");
 document.getElementById("demo777").innerHTML = 
 Car1.cname + " " + Car1.cyear + " " + Car1.cmake + " " + Car1.cmodel + " " + Car1.ccolor;
-
 Car2 = new LuxCars("BMW", 2010, "Germany", "K45", "Silver");
 document.getElementById("demo778").innerHTML = 
 Car2.cname + " " + Car2.cyear + " " + Car2.cmake + " " + Car2.cmodel + " " + Car2.ccolor;
-
 Car3 = new LuxCars("Mercedes", 2021, "Germany", "S-Class", "Black");
 document.getElementById("demo779").innerHTML = 
 Car3.cname + " " + Car3.cyear + " " + Car3.cmake + " " + Car3.cmodel + " " + Car3.ccolor;
-
 </script>
 
 </body>
@@ -5447,7 +6367,7 @@ BMW 2010 Germany K45 Silver
 
 Mercedes 2021 Germany S-Class Black
 
-我使用同一个 LuxCars 类创建了三个不同的对象。类提供了最简单的方法来创建和部署对象以供使用。如果你经营汽车展厅并需要网站来接触客户，这个程序会对你有所帮助。一个单一的类允许你创建无限数量的不同汽车对象。一旦你创建了类，你所需要做的就是填入属性并将它们显示在你的网站上。当新对象诞生时，构造方法会被自动调用并运行。这个方法是特殊的。你必须写清楚拼写 'constructor'。当你在类中创建新对象时，该方法会自动执行，节省你的时间。这个方法启动对象的属性。
+我使用同一个 `LuxCars` 类创建了三个不同的对象。类提供了最简单的方法来创建和部署对象以供使用。如果你经营汽车展厅并需要网站来接触客户，这个程序会对你有所帮助。一个单一的类允许你创建无限数量的不同汽车对象。一旦你创建了类，你所需要做的就是填入属性并将它们显示在你的网站上。当新对象诞生时，构造方法会被自动调用并运行。这个方法是特殊的。你必须写清楚拼写 `constructor`。当你在类中创建新对象时，该方法会自动执行，节省你的时间。这个方法启动对象的属性。
 
 ### 类方法
 
@@ -5459,9 +6379,7 @@ Mercedes 2021 Germany S-Class Black
 <body>
 
 <p>This is the JavaScript Class</p>
-
 <p>I will show you how to create and use the JavaScript Class on your website.</p>
-
 <p id="demo777"></p>
 <p id="demo778"></p>
 <p id="demo779"></p>
@@ -5480,17 +6398,14 @@ class LuxCars {
     return cdate.getFullYear() - this.cyear;
   }
 }
-
 let Car1 = new LuxCars("Ford", 2017, "USA", "Mustang", "Blue");
 document.getElementById("demo777").innerHTML =
 Car1.cname + " " + Car1.cyear + " " + Car1.cmake + " " + Car1.cmodel + " " + Car1.ccolor
 + " : " + "This car is " + Car1.carAge() + " years old.";
-
 let Car2 = new LuxCars("BMW", 2010, "Germany", "K45", "Silver");
 document.getElementById("demo778").innerHTML =
 Car2.cname + " " + Car2.cyear + " " + Car2.cmake + " " + Car2.cmodel + " " + Car2.ccolor
 + " : " + "This car is " + Car2.carAge() + " years old.";
-
 let Car3 = new LuxCars("Mercedes", 2021, "Germany", "S-Class", "Black");
 document.getElementById("demo779").innerHTML =
 Car3.cname + " " + Car3.cyear + " " + Car3.cmake + " " + Car3.cmodel + " " + Car3.ccolor;
@@ -5500,10 +6415,6 @@ Car3.cname + " " + Car3.cyear + " " + Car3.cmake + " " + Car3.cmodel + " " + Car
 </html>
 ```
 
-
-
-
-```markdown
 ### JavaScript 类
 
 我将向你展示如何在你的网站上创建和使用 JavaScript 类。
@@ -5524,9 +6435,7 @@ Car3.cname + " " + Car3.cyear + " " + Car3.cmake + " " + Car3.cmodel + " " + Car
 <body>
 
 <p>This is the JavaScript Class</p>
-
 <p>I will show you how to create and use the JavaScript Class on your website.</p>
-
 <p id="demo777"></p>
 <p id="demo778"></p>
 
@@ -5543,20 +6452,18 @@ class LuxCars {
     return Y - this.cyear;
   }
 }
-
 let cdate = new Date();
 let cyear = cdate.getFullYear();
-
 let Car1 = new LuxCars("Ford", 2017, "USA", "Mustang", "Blue");
 document.getElementById("demo777").innerHTML =
 Car1.cname + " " + Car1.cyear + " " + Car1.cmake + " " + Car1.cmodel + " " + Car1.ccolor
 + " : " + "This car is " + Car1.carAge(cyear) + " years old.";
-
 let Car2 = new LuxCars("BMW", 2010, "Germany", "K45", "Silver");
 document.getElementById("demo778").innerHTML =
 Car2.cname + " " + Car2.cyear + " " + Car2.cmake + " " + Car2.cmodel + " " + Car2.ccolor
 + " : " + "This car is " + Car2.carAge(cyear) + " years old.";
 </script>
+
 </body>
 </html>
 ```
@@ -5579,9 +6486,7 @@ Car2.cname + " " + Car2.cyear + " " + Car2.cmake + " " + Car2.cmodel + " " + Car
 <body>
 
 <p>This is the JavaScript Class</p>
-
 <p>I will show you how to create and use the JavaScript Class on your website.</p>
-
 <p id="demo777"></p>
 <p id="demo778"></p>
 
@@ -5607,10 +6512,10 @@ class Ecar extends LuxCars {
     return this.present() + '. It is a ' + this.cmodel + ' model.';
   }
 }
-
 let Car2 = new Ecar("Tesla", 2010);
 document.getElementById("demo778").innerHTML = Car2.show()
 </script>
+
 </body>
 </html>
 ```
@@ -5653,10 +6558,10 @@ class LuxCars {
     this.cname = Y;
   }
 }
-
 let Car2 = new LuxCars("Tesla");
 document.getElementById("demo778").innerHTML = Car2.namec;
 </script>
+
 </body>
 </html>
 ```
@@ -5725,10 +6630,6 @@ React 提供了丰富的特性：
 - 它使用 JSX 和内联模板，部分开发者可能觉得有些不习惯。
 
 React JS 是前端开发工具包中最好的工具之一，所以赶快动手，通过简单实用的示例来掌握所有概念并学习如何使用它们。
-```
-
-
-
 
 ## 第一章
 
@@ -5744,7 +6645,7 @@ React JS 是前端开发工具包中最好的工具之一，所以赶快动手�
 
 文本编辑器用于编写你的程序，有多种不同的编辑器可供选择，例如 Windows 记事本、Brief、EMACS、Vi、Vim、OS edit 命令等，还有很多其他的。具体使用哪一种取决于你的操作系统，例如，如果你使用的是 Windows，你可能会用记事本、Vi 或 Vim，而 Linux 用户则会坚持使用 Vi 或 Vim。
 
-使用编辑器创建的文件称为源文件，你的程序代码就存储在其中。Node.js 源文件通常具有 .js 扩展名。
+使用编辑器创建的文件称为源文件，你的程序代码就存储在其中。Node.js 源文件通常具有 `.js` 扩展名。
 
 在开始编程之前，请确保你已经准备好了文本编辑器。做出你的选择，如果需要安装新的编辑器，请按照编辑器网站上的下载说明进行操作。另外，请确保你具备足够的编程经验——本书不面向没有任何经验的读者。
 
@@ -5758,7 +6659,7 @@ React JS 是前端开发工具包中最好的工具之一，所以赶快动手�
 
 ##### macOS/Linux/Unix/SunOS
 
-下载文件并在你的计算机上打开它。将名为 (osname).tar.gz 的 node 归档文件解压到 /tmp。然后将文件从那里移动到一个名为 /usr/local/nodejs 的目录。示例如下：
+下载文件并在你的计算机上打开它。将名为 `(osname).tar.gz` 的 node 归档文件解压到 `/tmp`。然后将文件从那里移动到一个名为 `/usr/local/nodejs` 的目录。示例如下：
 
 ```
 $ cd /tmp
@@ -5768,19 +6669,19 @@ $ mkdir -p /usr/local/nodejs
 $ mv node-v6.3.1-linux-x64/* /usr/local/nodejs
 ```
 
-现在，根据你的操作系统，使用下面的命令之一将 /usr/local/nodejs/bin 添加到你的 PATH 环境变量中：
+现在，根据你的操作系统，使用下面的命令之一将 `/usr/local/nodejs/bin` 添加到你的 `PATH` 环境变量中：
 
-- **Linux** - export PATH=$PATH:/usr/local/nodejs/bin
-- **Mac** - export PATH=$PATH:/usr/local/nodejs/bin
-- **FreeBSD** - export PATH=$PATH:/usr/local/nodejs/bin
+- **Linux** - `export PATH=$PATH:/usr/local/nodejs/bin`
+- **Mac** - `export PATH=$PATH:/usr/local/nodejs/bin`
+- **FreeBSD** - `export PATH=$PATH:/usr/local/nodejs/bin`
 
 ##### Windows
 
-下载 MSI 文件并按照屏幕上的提示将 Node.js 安装到你的系统中。安装程序应使用默认选项 C:\Program Files\node.js 来安装文件，并将 bin 目录（C:\Program Files\nodejs\bin）设置到你的 Path 环境变量中。如果你已经打开了命令提示符窗口，请重新启动它们，以便使更改生效。
+下载 MSI 文件并按照屏幕上的提示将 Node.js 安装到你的系统中。安装程序应使用默认选项 `C:\Program Files\node.js` 来安装文件，并将 bin 目录（`C:\Program Files\nodejs\bin`）设置到你的 `Path` 环境变量中。如果你已经打开了命令提示符窗口，请重新启动它们，以便使更改生效。
 
 ### 验证安装
 
-创建一个新文件，将其命名为 main.js。然后在其中添加以下代码：
+创建一个新文件，将其命名为 `main.js`。然后在其中添加以下代码：
 
 ```
 /* Hello, World! program in node.js */
@@ -5800,30 +6701,30 @@ Hello, World!
 一旦 Node.js 安装并运行正常，就可以使用 npm 在其上安装 React 了。有两种方法可以做到这一点：
 
 - 使用 Webpack 和 Babel
-- 使用 create-react-app 命令
+- 使用 `create-react-app` 命令
 
 ### 使用 Webpack 和 Babel
 
-Webpack 管理独立的模块并进行加载，通常被称为模块打包工具。它将依赖模块编译打包成一个文件，这个单一文件可以在你的应用开发过程中以两种方式使用——通过命令行调用，或使用 webpack.config 进行配置。
+Webpack 管理独立的模块并进行加载，通常被称为模块打包工具。它将依赖模块编译打包成一个文件，这个单一文件可以在你的应用开发过程中以两种方式使用——通过命令行调用，或使用 `webpack.config` 进行配置。
 
 Babel 编译和转译 JavaScript，用于将源代码转换成另一种形式。这使你能够使用 EC6 代码特性，因为 Babel 会将其转换为任何浏览器都可以使用的 EC5。
 
 #### 第一步 —— 创建根文件夹
 
-创建一个新文件夹，命名为 reactApp。这是使用 mkdir 命令安装所有必需文件的位置：
+创建一个新文件夹，命名为 `reactApp`。这是使用 `mkdir` 命令安装所有必需文件的位置：
 
 ```
 C:\Users\username\Desktop>mkdir reactApp
 C:\Users\username\Desktop>cd reactApp
 ```
 
-创建模块需要生成 package.json 文件，所以一旦文件夹创建完成，就创建另一个名为 package.json 的文件。为此，在命令提示符下运行以下 npm init 命令：
+创建模块需要生成 `package.json` 文件，所以一旦文件夹创建完成，就创建另一个名为 `package.json` 的文件。为此，在命令提示符下运行以下 `npm init` 命令：
 
 ```
 C:\Users\username\Desktop\reactApp>npm init
 ```
 
-该命令会询问模块的相关信息，如作者、描述、包名等。你可以使用 -y 选项来跳过所有这些步骤，如下所示：
+该命令会询问模块的相关信息，如作者、描述、包名等。你可以使用 `-y` 选项来跳过所有这些步骤，如下所示：
 
 ```
 C:\Users\username\Desktop\reactApp>npm init -y
@@ -5844,7 +6745,7 @@ Written to C:\reactApp\package.json:
 
 #### 第二步 —— 安装 React 和 react-dom
 
-我们要安装 ReactJS 及其所有 DOM 包，这需要使用两个 npm 命令——install react 和 react-dom。使用 –save 选项将这些包添加到 package.json 文件中：
+我们要安装 ReactJS 及其所有 DOM 包，这需要使用两个 npm 命令——`install react` 和 `react-dom`。使用 `--save` 选项将这些包添加到 `package.json` 文件中：
 
 ```
 C:\Users\Username\Desktop\reactApp>npm install react --save
@@ -5854,7 +6755,7 @@ C:\Users\Username\Desktop\reactApp>npm install react-dom --save
 或者，使用一条命令来安装并保存所有内容：
 
 ```
-C:\Users\username\Desktop\reactApp>npm install react react-dom –save
+C:\Users\username\Desktop\reactApp>npm install react react-dom --save
 ```
 
 #### 第三步 —— 安装 Webpack
@@ -5905,14 +6806,13 @@ C:\Users\username\Desktop\reactApp>type nul > .babelrc
 
 #### 第六步 —— 设置编译器、服务器和加载器
 
-打开名为 webpack-config.js 的文件，并添加以下代码。它的作用是将 main.js 设为 webpack 的入口点。output path 是打包后的应用被提供的位置，开发服务器也被设置为 8001 端口，不过你可以选择任何你想要的端口。
+打开名为 `webpack-config.js` 的文件，并添加以下代码。它的作用是将 `main.js` 设为 webpack 的入口点。output path 是打包后的应用被提供的位置，开发服务器也被设置为 8001 端口，不过你可以选择任何你想要的端口。
 
 ##### webpack.config.js
 
 ```
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-
 module.exports = {
     entry: './main.js',
     output: {
@@ -5943,7 +6843,7 @@ module.exports = {
 }
 ```
 
-打开 package.json，并从 Scripts 对象中删除以下内容：
+打开 `package.json`，并从 Scripts 对象中删除以下内容：
 
 ```
 "test": "echo \"Error: no test specified\" && exit 1"
@@ -5951,13 +6851,11 @@ module.exports = {
 
 我们删除这个是因为目前不打算测试任何东西。
 
-相反，我们可以添加另外两个命令——start 和 build：
-
-
+相反，我们可以添加另外两个命令——`start` 和 `build`。
 
 ##### 第七步 – Index.html
 
-这只是标准的 HTML，其中 div id = "app" 被设置为应用的根元素。我们还添加了打包后的应用文件 index_bundle.js：
+这只是标准的 HTML，其中 `div id = "app"` 被设置为应用的根元素。我们还添加了打包后的应用文件 `index_bundle.js`：
 
 ```html
 <!DOCTYPE html>
@@ -6001,7 +6899,6 @@ export default App;
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App.js';
-
 ReactDOM.render(<App />, document.getElementById('app'));
 ```
 
@@ -6009,7 +6906,7 @@ ReactDOM.render(<App />, document.getElementById('app'));
 
 请注意，你必须始终导入你想使用的任何东西，而且，如果你想在不同的应用部分中使用它，它必须在创建后导出，然后再导入到新的位置。
 
-创建一个新文件并命名为 .babelrc。向其中添加以下代码：
+创建一个新文件并命名为 `.babelrc`。向其中添加以下代码：
 
 ```json
 {
@@ -6043,7 +6940,7 @@ C:\Users\Username\Desktop\reactApp>npm run build
 
 ### create-react-app 命令
 
-如果你不想使用 babel 和 webpack，还有另一种更简单的安装 ReactJS 的方法——使用 create-react-app 命令。
+如果你不想使用 babel 和 webpack，还有另一种更简单的安装 ReactJS 的方法——使用 `create-react-app` 命令。
 
 **第一步 – 安装 create-react-app**
 使用以下命令进行安装：
@@ -6053,10 +6950,10 @@ C:\Users\Username>cd C:\Users\Username\Desktop\
 C:\Users\Username\Desktop>npx create-react-app my-app
 ```
 
-会创建一个名为 my-app 的文件夹并放置在你的桌面上，所有必需的文件也会随之创建。
+会创建一个名为 `my-app` 的文件夹并放置在你的桌面上，所有必需的文件也会随之创建。
 
 **第二步 – 删除源文件**
-打开 my-app 文件夹并查看 src 文件夹。从中删除以下文件：
+打开 `my-app` 文件夹并查看 `src` 文件夹。从中删除以下文件：
 
 ```
 C:\Users\Username\Desktop>cd my-app/src
@@ -6065,14 +6962,14 @@ C:\Users\Username\Desktop\my-app\src\*, Are you sure (Y/N)? y
 ```
 
 **第三步 – 添加文件**
-向 src 文件夹中添加两个文件——index.css 和 index.js：
+向 `src` 文件夹中添加两个文件——`index.css` 和 `index.js`：
 
 ```
 C:\Users\Username\Desktop\my-app\src>type nul > index.css
 C:\Users\Username\Desktop\my-app\src>type nul > index.js
 ```
 
-向 index.js 文件添加以下代码：
+向 `index.js` 文件添加以下代码：
 
 ```javascript
 import React from 'react';
@@ -6094,7 +6991,7 @@ npm start
 
 这完成了设置，所以我们将通过了解 JSX 来更深入地探讨 ReactJS。
 
-# 第二章
+## 第二章
 
 ## React JSX 简介
 
@@ -6122,7 +7019,7 @@ React 非常强调渲染逻辑与用户界面中的其他逻辑有着固有的�
 
 ### 如何在 JSX 中嵌入表达式
 
-在下面这个简单的例子中，声明了一个名为 name 的变量，然后将其包裹在一对花括号中，以便在 JSX 中使用：
+在下面这个简单的例子中，声明了一个名为 `name` 的变量，然后将其包裹在一对花括号中，以便在 JSX 中使用：
 
 ```javascript
 const name = 'John Philips';
@@ -6133,25 +7030,22 @@ ReactDOM.render(
 );
 ```
 
-只要 JavaScript 表达式是有效的，它就可以放在花括号中用于 JSX。例如，5 + 7、formatName(user) 和 user.FirstName 都是 JavaScript 中的有效表达式。
+只要 JavaScript 表达式是有效的，它就可以放在花括号中用于 JSX。例如，`5 + 7`、`formatName(user)` 和 `user.FirstName` 都是 JavaScript 中的有效表达式。
 
-在下一个例子中，我们调用一个名为 formatName(user) 的 JavaScript 函数，并将其结果嵌入到 `<h1>` 元素中：
+在下一个例子中，我们调用一个名为 `formatName(user)` 的 JavaScript 函数，并将其结果嵌入到 `<h1>` 元素中：
 
 ```javascript
 function formatName(user) {
   return user.firstName + ' ' + user.lastName;
 }
-
 const user = {
   firstName: 'Harry',
   lastName: 'Philips'
 };
-
 const element = (
   <h1>
     Hello, {formatName(user)}! </h1>
 );
-
 ReactDOM.render(
   element,
   document.getElementById('root')
@@ -6162,7 +7056,7 @@ JSX 可以拆分为多行以提高可读性。虽然你不必这样做，但建�
 
 ### JSX 是一种表达式
 
-当 JSX 表达式被编译后，它们会变成常规的函数调用，可以被求值为 JavaScript 对象。这意味着 JSX 可以在 for 循环和 if 语句中使用；它可以赋值给变量，从函数中返回，也可以作为参数接受。以下是一个例子：
+当 JSX 表达式被编译后，它们会变成常规的函数调用，可以被求值为 JavaScript 对象。这意味着 JSX 可以在 `for` 循环和 `if` 语句中使用；它可以赋值给变量，从函数中返回，也可以作为参数接受。以下是一个例子：
 
 ```javascript
 function getGreeting(user) {
@@ -6190,7 +7084,7 @@ const element = <img src={user.avatarUrl}></img>;
 **警告**
 JSX 比 HTML 更接近 JavaScript，因此 React DOM 使用 camelCase 命名约定，而不是 HTML 的属性名称。
 
-例如，tabindex 会变成 tabIndex，class 会变成 className。
+例如，`tabindex` 会变成 `tabIndex`，`class` 会变成 `className`。
 
 ### 如何使用 JSX 指定子元素
 
@@ -6211,8 +7105,6 @@ const element = (
 );
 ```
 
-
-
 ### 使用 JSX 防止注入攻击
 
 用户输入可以安全地嵌入到 JSX 中：
@@ -6227,7 +7119,7 @@ React DOM 在渲染之前，默认会对嵌入 JSX 的值进行转义。因此�
 
 ### JSX 表示对象
 
-JSX 会被 Babel 编译为 React.createElement() 调用。以下是两个相同的示例：
+JSX 会被 Babel 编译为 `React.createElement()` 调用。以下是两个相同的示例：
 
 ```javascript
 const element = (
@@ -6242,7 +7134,7 @@ const element = React.createElement(
 );
 ```
 
-React.createElement() 会执行一些检查，帮助你编写无 bug 的代码，但本质上，它所做的就是创建如下对象：
+`React.createElement()` 会执行一些检查，帮助你编写无 bug 的代码，但本质上，它所做的就是创建如下对象：
 
 ```javascript
 // 注意：这是一个简化结构
@@ -6281,7 +7173,7 @@ const element = {
 
 虽然 JSX 看起来非常像 HTML，但你必须记住它们之间存在重要的区别：
 
-# *HTML 实体*
+### HTML 实体
 
 HTML 实体可以插入到 JSX 中的字面文本里：
 
@@ -6321,7 +7213,7 @@ HTML 实体可以插入到 JSX 中的字面文本里：
 <div dangerouslySetInnerHTML={{__html: 'First &middot; Second'}} />
 ```
 
-# *自定义 HTML 属性*
+### 自定义 HTML 属性
 
 如果向原生 HTML 元素传递的属性不在 HTML 规范中，React 将不会渲染它们。可以使用自定义属性，但它们必须以 `data-` 为前缀：
 
@@ -6335,11 +7227,11 @@ HTML 实体可以插入到 JSX 中的字面文本里：
 <div aria-hidden={true} />
 ```
 
-# 第 3 章
+## 第 3 章
 
-# 组件全解
+## 组件全解
 
-React 允许你将组件定义为函数或类，而那些定义为类的组件具有许多有用的特性。首先，定义一个 React 组件类需要扩展 React.Component：
+React 允许你将组件定义为函数或类，而那些定义为类的组件具有许多有用的特性。首先，定义一个 React 组件类需要扩展 `React.Component`：
 
 ```javascript
 class Welcome extends React.Component {
@@ -6349,77 +7241,77 @@ class Welcome extends React.Component {
 }
 ```
 
-React.Component 的子类必须至少定义一个方法。虽然我们在本章讨论的大多数方法是可选的，但你必须定义 render() 方法。
+`React.Component` 的子类必须至少定义一个方法。虽然我们在本章讨论的大多数方法是可选的，但你必须定义 `render()` 方法。
 
 有一件事我必须提醒你：不要创建自己的基础组件类。React 组件通过组合而非继承来复用代码。
 
 **注意**
 
-在 React 中，你并非必须使用 ES6 类语法。如果你愿意，可以使用类似 create-react-class 模块的替代方案。
+在 React 中，你并非必须使用 ES6 类语法。如果你愿意，可以使用类似 `create-react-class` 模块的替代方案。
 
 ### 组件生命周期
 
 每个 React 组件都有多个生命周期方法。这些方法可以在流程中的特定时刻被覆盖以运行代码。在这里，我们将讨论这些方法，其中最常用的以**粗体**显示。其余方法很少使用，但你仍然需要了解它们。
 
-## *挂载*
+#### 挂载
 
 当组件实例被创建并放入 DOM 时，会按以下顺序调用挂载生命周期方法：
 
-- [constructor()](https://reactjs.org/docs/react-component.html#constructor)
-- static getDerivedStateFromProps()
-- render()
-- componentDidMount()
+- `constructor()`
+- `static getDerivedStateFromProps()`
+- `render()`
+- `componentDidMount()`
 
 **注意**
 
-UNSAFE_componentWillMount() 是一个遗留方法，绝不能放入新代码中。稍后我们将更多地讨论遗留方法。
+`UNSAFE_componentWillMount()` 是一个遗留方法，绝不能放入新代码中。稍后我们将更多地讨论遗留方法。
 
-## *更新*
+#### 更新
 
 状态或 props 的变化可能导致更新，以下是在重新渲染组件时这些方法的调用顺序：
 
-- static getDerivedStateFromProps()
-- shouldComponentUpdate()
-- render()
-- getSnapshotBeforeUpdate()
-- componentDidUpdate()
+- `static getDerivedStateFromProps()`
+- `shouldComponentUpdate()`
+- `render()`
+- `getSnapshotBeforeUpdate()`
+- `componentDidUpdate()`
 
 **注意**
 
 以下方法是遗留方法，不应放入新代码中：
 
-- UNSAFE_componentWillUpdate()
-- UNSAFE_componentWillReceiveProps()
+- `UNSAFE_componentWillUpdate()`
+- `UNSAFE_componentWillReceiveProps()`
 
-## *卸载*
+#### 卸载
 
 当组件从 DOM 中移除时，会调用此方法：
 
-- componentWillUnmount()
+- `componentWillUnmount()`
 
-## *错误处理*
+#### 错误处理
 
 当渲染过程中、子组件的构造函数或生命周期方法中发生错误时，会调用错误处理方法：
 
-- [static getDerivedStateFromError()](link)
-- [componentDidCatch()](link)
+- `static getDerivedStateFromError()`
+- `componentDidCatch()`
 
 ### 其他 API
 
 每个组件都有其他 API：
 
-- [setState()](link)
-- [forceUpdate()](link)
+- `setState()`
+- `forceUpdate()`
 
 ### 类属性
 
-- [defaultProps](link)
-- [displayName](link)
+- `defaultProps`
+- `displayName`
 
 ### 实例属性
 
-- [props](link)
-- [state](link)
+- `props`
+- `state`
 
 ### 常用的生命周期方法
 
@@ -6427,27 +7319,24 @@ UNSAFE_componentWillMount() 是一个遗留方法，绝不能放入新代码中�
 
 #### render()
 
-这是类组件中**必须**存在的唯一方法。当 render() 方法被调用时，它会检查 this.state 和 this.props，并返回以下类型之一：
+这是类组件中**必须**存在的唯一方法。当 `render()` 方法被调用时，它会检查 `this.state` 和 `this.props`，并返回以下类型之一：
 
 - **React 元素。** 这些通常是使用 JSX 创建的。例如，用于告诉 React 需要渲染 DOM 节点的一个组件是 `<div />`，而 `<MyComponent />` 则用于指示 React 渲染不同的用户定义组件。
 - **片段和数组。** 这些允许你从 render 返回多个元素。
-
-
-
-**Portal（传送门）。** 它允许你将子组件渲染到其他的 DOM 子树中。
+- **Portal（传送门）。** 它允许你将子组件渲染到其他的 DOM 子树中。
 - **数字和字符串。** 两者在 DOM 中都以文本节点的形式渲染。
-- **Null 或布尔值。** 这些不会渲染任何内容，它们的存在主要是为了支持 `test && <Child />` 模式，其中 test 为布尔值。
+- **Null 或布尔值。** 这些不会渲染任何内容，它们的存在主要是为了支持 `test && <Child />` 模式，其中 `test` 为布尔值。
 
 这是一个必须是纯函数的函数。这意味着它永远不会修改任何组件状态，永远不会直接与浏览器交互，并且在调用时始终返回相同的结果。
 
 如果你需要与浏览器交互，请使用 `componentDidMount()` 或其他生命周期方法来完成工作。当 `render()` 保持纯净时，其他组件更容易协作。
 
 **注意**
-如果 `shouldComponentUpdate()` 返回 false，`render()` 将不会被调用。
+如果 `shouldComponentUpdate()` 返回 `false`，`render()` 将不会被调用。
 
 #### constructor()
 
-**constructor(props)**
+`constructor(props)`
 
 如果状态未初始化且方法未绑定，你的 React 组件不需要实现构造函数。
 
@@ -6485,9 +7374,9 @@ constructor(props) {
 }
 ```
 
-你不应该这样做的原因有两个 – 第一，这确实没有必要（可以直接使用 `this.props.color()`），第二，这样做只会产生 bug，因为任何 color prop 的更新都不会反映在 state 中。
+你不应该这样做的原因有两个 – 第一，这确实没有必要（可以直接使用 `this.props.color()`），第二，这样做只会产生 bug，因为任何 `color` prop 的更新都不会反映在 state 中。
 
-这种模式只应在你有意忽略 prop 更新时使用。然后，你应该给 prop 另一个名称，类似 `defaultColor` 或 `initialColor`。之后，可以在需要时强制组件更改其 key，从而重置其内部状态。
+这种模式只应在你有意忽略 prop 更新时使用。然后，你应该给 prop 另一个名称，类似 `defaultColor` 或 `initialColor`。之后，可以在需要时强制组件更改其 `key`，从而重置其内部状态。
 
 #### componentDidMount()
 
@@ -6501,7 +7390,7 @@ constructor(props) {
 
 #### componentDidUpdate()
 
-**componentDidUpdate(prevProps, prevState, snapshot)**
+`componentDidUpdate(prevProps, prevState, snapshot)`
 
 一旦更新发生，`componentDidUpdate()` 将立即被调用。但是，它永远不会在初始渲染时被调用。这应该用于在更新组件后对 DOM 执行操作，同时也是发起网络请求的好地方，只要比较了当前和之前的 props。例如，如果 props 没有发生变化，某些网络请求就不需要进行。
 
@@ -6519,7 +7408,7 @@ componentDidUpdate(prevProps) {
 如果你使用你的组件来实现 `getSnapshotBeforeUpdate`（这不太可能），它将作为 `componentDidUpdate()` 的第三个参数返回该值；否则，该参数保持未定义。
 
 **注意**
-如果 `shouldComponentUpdate()` 返回 false，`componentDidUpdate()` 将不会被调用。
+如果 `shouldComponentUpdate()` 返回 `false`，`componentDidUpdate()` 将不会被调用。
 
 #### componentWillUnmount()
 
@@ -6533,7 +7422,7 @@ componentDidUpdate(prevProps) {
 
 #### shouldComponentUpdate()
 
-**shouldComponentUpdate(nextProps, nextState)**
+`shouldComponentUpdate(nextProps, nextState)`
 
 这应该用于告知 React，组件的输出不会受到 props 或 state 当前变化的影响。默认情况下，每次状态变化都应该重新渲染，在大多数情况下，这比使用 `shouldComponentUpdate()` 方法更可取。
 
@@ -6547,13 +7436,9 @@ componentDidUpdate(prevProps) {
 
 在撰写本文时，如果 `shouldComponentUpdate()` 返回 `false`，那么 `render()`、`UNSAFE_componentWillUpdate()` 和 `componentDidUpdate()` 将不会被调用。希望在未来，React 将 `shouldComponentUpdate()` 视为提示而非指令，并且如果它返回 `false`，组件可能仍会被重新渲染。
 
-```
-static getDerivedStateFromProps()
-```
+#### static getDerivedStateFromProps()
 
-```
-static getDerivedStateFromProps(props, state)
-```
+`static getDerivedStateFromProps(props, state)`
 
 此方法在调用 `render()` 之前立即被调用，不仅在初始挂载时，而且在所有后续更新时也是如此。应返回以下两者之一 – 更新状态的对象或 `null`（不会更新任何内容）。
 
@@ -6565,17 +7450,15 @@ static getDerivedStateFromProps(props, state)
 - 如果仅需要在 props 发生变化时重新计算数据，记忆化辅助函数会更有用。
 - 如果仅在 props 变化时重置状态，请考虑使用 `key` 使组件完全非受控或完全受控。
 
-`static getDerivedStateFromProps` 也无法访问组件实例
+`static getDerivedStateFromProps` 也无法访问组件实例。你可以在方法和其他可用的类方法之间复用代码——这需要在类定义之外提取状态和 props 的纯函数。
 
-实例。你可以在方法和其他可用的类方法之间复用代码——这需要在类定义之外提取状态和 props 的纯函数。
-
-请注意，此方法在所有渲染时都会触发，无论原因如何。相比之下，UNSAFE_componentWillReceiveProps 仅在由父组件导致的重新渲染时触发，而非本地 setState。
+请注意，此方法在所有渲染时都会触发，无论原因如何。相比之下，`UNSAFE_componentWillReceiveProps` 仅在由父组件导致的重新渲染时触发，而非本地 `setState`。
 
 #### getSnapshotBeforeUpdate()
 
-#### getSnapshotBeforeUpdate(prevProps, prevState)
+`getSnapshotBeforeUpdate(prevProps, prevState)`
 
-此方法将在最近渲染的输出被提交到 DOM 之前立即调用。使用它可以让组件在任何潜在更改发生之前从 DOM 获取信息，该生命周期返回的任何值都会作为参数传递给 componentDidUpdate()。
+此方法将在最近渲染的输出被提交到 DOM 之前立即调用。使用它可以让组件在任何潜在更改发生之前从 DOM 获取信息，该生命周期返回的任何值都会作为参数传递给 `componentDidUpdate()`。
 
 这不是一个常见的使用场景，但在某些需要特殊处理滚动位置的 UI 中可能会用到，例如聊天记录。
 
@@ -6587,7 +7470,6 @@ class ScrollingList extends React.Component {
     super(props);
     this.listRef = React.createRef();
   }
-
   getSnapshotBeforeUpdate(prevProps, prevState) {
     // Is a new item being added to the list?
     // Capture the scroll position so we it can be adjusted later.
@@ -6597,7 +7479,6 @@ class ScrollingList extends React.Component {
     }
     return null;
   }
-
   componentDidUpdate(prevProps, prevState, snapshot) {
     // If we see a snapshot value, we know new items have been added.
     // Adjust scroll, so they don't push the old items out of the view.
@@ -6607,24 +7488,21 @@ class ScrollingList extends React.Component {
       list.scrollTop = list.scrollHeight - snapshot;
     }
   }
-}
-```
-
-```
-render() {
+  render() {
     return (
         <div ref={this.listRef}>{/* ...contents... */}</div>
     );
+  }
 }
 ```
 
-这些示例说明了从 getSnapshotBeforeUpdate 中读取 scrollHeight 属性的重要性，因为在提交和渲染生命周期阶段之间可能会有一些延迟。
+这些示例说明了从 `getSnapshotBeforeUpdate` 中读取 `scrollHeight` 属性的重要性，因为在提交和渲染生命周期阶段之间可能会有一些延迟。
 
 ### 错误边界
 
 错误边界是一种可以捕获 JavaScript 错误的组件，无论错误发生在子组件树中的哪个位置。它还可以捕获错误并提供替代 UI 来取代崩溃的界面。这些边界会捕获边界下方整棵子树中生命周期方法、渲染和构造函数中的错误。
 
-当类组件定义了一个或两个生命周期方法——componentDidCatch() 或 static getDerivedStateFromError()——时，它们就变成了错误边界。当从任一生命周期更新状态时，你可以捕获下方子树中未处理的错误并显示替代 UI。
+当类组件定义了一个或两个生命周期方法——`componentDidCatch()` 或 `static getDerivedStateFromError()`——时，它们就变成了错误边界。当从任一生命周期更新状态时，你可以捕获下方子树中未处理的错误并显示替代 UI。
 
 你不应该使用错误边界来控制流程，而仅用于从意外异常中恢复。
 
@@ -6633,7 +7511,7 @@ render() {
 
 #### static getDerivedStateFromError()
 
-#### static getDerivedStateFromError(error)
+`static getDerivedStateFromError(error)`
 
 当后代组件抛出错误时，此方法会被调用一次。该方法接收错误作为参数，其返回值应更新状态：
 
@@ -6643,351 +7521,42 @@ class ErrorBoundary extends React.Component {
         super(props);
         this.state = { hasError: false };
     }
-```
-
-```
- StreamReader reader = new StreamReader(FileRepository + fileName);
-
-在从流中读取数据之前，我们必须检查是否有数据可读。Reader.EndOfStream 正是做这个的，所以检查它：
-
-```
-while(!reader.EndOfStream)
-{
-    // The file has the following format:
-    // ID,DataValue
-    // Example: 133,0.35232
-    line = reader.ReadLine();
-    string[] datePieces = line.Split(',');
-    string recordID = datePieces[0];
-    double dataValue = double.Parse(datePieces[1]);
 }
 ```
 
-对于 StreamWriter，你需要创建一个新的 StreamWriter，提供文件路径并将 append 设置为 `true` 以追加到现有文件。
+#### componentDidCatch()
+
+`componentDidCatch(error, info)`
+
+此方法在后代组件抛出错误后被调用。它接收两个参数：
+
+- `error` – 抛出的错误
+- `info` – 包含 `componentStack` 键的对象，其中包含有关哪个组件抛出错误的信息
 
 ```
-StreamWriter writer = new StreamWriter(fileAndPath, true); Creates a file if
-```
-
-然后创建一个写入文件的方法：
-
-```
-private void SaveToFile(string data)
-{
-    using(StreamWriter sw = new StreamWriter(fileAndPath, true))
-    {
-        sw.WriteLine(data);
+class ErrorBoundary extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = { hasError: false };
+    }
+    static getDerivedStateFromError(error) {
+        return { hasError: true };
+    }
+    componentDidCatch(error, info) {
+        logComponentStackToMyService(info.componentStack);
+    }
+    render() {
+        if (this.state.hasError) {
+            return <h1>Something went wrong.</h1>;
+        }
+        return this.props.children;
     }
 }
 ```
-
-这就是在 C# 中保存或读取文件所需的全部操作。接下来我们要看的是序列化。
-
-现在，让我们来看整个项目的代码：
-
-```
-using System;
-using System.Collections.Generic;
-using System.Windows.Forms;
-
-namespace File_IO
-{
-    public partial class Form1 : Form
-    {
-        string FileRepository = @"C:\SPB_Data\Test\";
-        string fileName = "test.txt";
-
-        public Form1()
-        {
-            InitializeComponent();
-        }
-
-        private void SaveToFile(string data)
-        {
-            string fileAndPath = FileRepository + fileName;
-            using(StreamWriter sw = new StreamWriter(fileAndPath, true))
-            {
-                sw.WriteLine(data);
-            }
-        }
-
-        private string ReadFile()
-        {
-            string fileAndPath = FileRepository + fileName;
-            using(StreamReader sr = new StreamReader(fileAndPath))
-            {
-                string line;
-                while(!sr.EndOfStream)
-                {
-                    line = sr.ReadLine();
-                    return line;
-                }
-            }
-            return "File is empty or not present";
-        }
-
-        private void buttonWrite_Click(object sender, EventArgs e)
-        {
-            string data = textBox1.Text.ToString();
-            SaveToFile(data);
-        }
-
-        private void buttonRead_Click(object sender, EventArgs e)
-        {
-            textBox1.Text = ReadFile();
-        }
-    }
-}
-```
-
-StreamReader 会检查是否有字符或行可供读取。如果文件读取器当前位置没有行或字符，文件读取器将返回 -1。这是需要注意的重要部分。如果文件没有数据，我们需要执行写入操作；如果有数据，我们需要定位读取位置，并且仅在文件有数据可读时才进行读取。
-
-StreamReader 还有两个你应该了解的方法，分别是 Peek() 和 Read() 方法。Peek() 会查看流中的下一个字符，但不会使用它或降低流中的当前位置。Read() 同样返回流中的下一个字符，但它会增加流中的当前位置。如果需要在不改变当前位置的情况下测试文件读取器，这是可行的。另一个需要注意的是，每次创建 StreamWriter 类的实例时，都会用你输入的路径创建一个新文件。如果该路径已存在，文件将被覆盖。如果你想追加数据，需要在类构造函数中将第二个参数设置为 `true`。
-
-### 序列化
-
-序列化是将对象转换为可以跨网络传输或存储在存储介质中的形式的过程。序列化能正确处理对象层次结构，因此如果你编写了一个具有基类型的对象，该对象和基类型都会被传递到新的环境中。
-
-C# 有三种序列化形式，分别是：二进制、XML 和 SOAP。它们的工作方式相同，但各有优缺点。二进制序列化紧凑且创建速度快，但依赖于平台。XML 生成可读的代码，但不如二进制那样快速或紧凑。SOAP 创建简单的 XML 文件，但不被 .NET Core 支持。
-
-> 注意：SOAP 在 .NET Core 上不受支持。
-
-要执行序列化，你需要一个流。流可以是文件流或内存流。让我们先创建一个表示人的数据对象：
-
-```
-[Serializable]
-public class PersonData
-{
-    public int Age { get; set; }
-    public string Name { get; set; }
-}
-```
-
-在大多数情况下，序列化是简单直接的。有二进制方法和 XML 方法。对于二进制方法，你需要创建一个内存流并使用 BinaryFormatter 类来序列化类型。你也可以创建一个文件，然后将数据流式写入文件。让我们看看如何实现：
-
-二进制
-
-```
-using System.IO;
-using System.Runtime.Serialization.Formatters.Binary;
-
-...
-
-PersonData testPerson = new PersonData() { Age = 28, Name = "James" };
-
-using(FileStream stream = new FileStream("file.bin", FileMode.Create))
-{
-    BinaryFormatter bf = new BinaryFormatter();
-    bf.Serialize(stream, testPerson);
-}
-```
-
-要读回数据，你需要创建相同的格式化器，然后调用 Deserialize 方法。由于反序列化返回的是一个对象，你必须有想要转换成的类型。让我们看一个示例：
-
-```
-using(FileStream stream = new FileStream("file.bin", FileMode.Open))
-{
-    BinaryFormatter bf = new BinaryFormatter();
-    PersonData testPerson2 = (PersonData)bf.Deserialize(stream);
-    Console.WriteLine($"{testPerson2.Age}, {testPerson2.Name}");
-}
-```
-
-XML
-
-对于 XML，我们需要使用 XMLSerializer 和我们创建的数据传输对象。XML 方法非常适合传输数据，因为它采用可读格式。让我们看看与二进制相比代码量的差异：
-
-```
-using System.Xml.Serialization;
-
-...
-
-PersonData testPerson = new PersonData() { Age = 28, Name = "James" };
-
-using (FileStream stream = new FileStream("file.xml", FileMode.Create))
-{
-    XmlSerializer xml = new XmlSerializer(typeof(PersonData));
-    xml.Serialize(stream, testPerson);
-}
-```
-
-注意我们在 XmlSerializer 构造函数中传入了 typeof 对象。要读回数据，你需要使用 Deserialize 方法：
-
-```
-using (FileStream stream = new FileStream("file.xml", FileMode.Open))
-{
-    XmlSerializer xml = new XmlSerializer(typeof(PersonData));
-    PersonData testPerson2 = (PersonData)xml.Deserialize(stream);
-    Console.WriteLine($"{testPerson2.Age}, {testPerson2.Name}");
-}
-```
-
-SOAP
-
-SOAP 方法类似于 XML，但使用不同的格式化器。如前所述，它在 .NET Core 中不受支持。如果你想使用它，需要将 System.Runtime.Serialization.Formatters.Soap NuGet 包添加到项目中。使用 SOAP，我们可以创建一个简单的 XML 文件，其中数据被传输为 SOAP 消息。以下是一个示例：
-
-```
-using System.IO;
-using System.Runtime.Serialization.Formatters.Soap;
-
-public class SoapExample
-{
-    public void Save(PersonData person)
-    {
-        using(FileStream stream = new FileStream("file.soap", FileMode.Create))
-        {
-            SoapFormatter f = new SoapFormatter();
-            f.Serialize(stream, person);
-        }
-    }
-
-    public PersonData Load()
-    {
-        using(FileStream stream = new FileStream("file.soap", FileMode.Open))
-        {
-            SoapFormatter f = new SoapFormatter();
-            return (PersonData)f.Deserialize(stream);
-        }
-    }
-}
-```
-
-调用时唯一的区别是格式化器。二进制和其他格式化器本质上工作方式相同。因此，我不再添加更多示例，但我会提到 .NET 在 System.Text.Json 中有一个 JSON 序列化器，以及第三方 JSON 序列化器，你也可以考虑使用。
-
-以下是二进制序列化示例的完整代码：
-
-```
-using System;
-using System.IO;
-using System.Runtime.Serialization.Formatters.Binary;
-
-namespace BinarySerFileIO
-{
-    [Serializable]
-    public class PersonData
-    {
-        public int Age { get; set; }
-        public string Name { get; set; }
-    }
-    class Program
-    {
-        static void Main(string[] args)
-        {
-            PersonData testPerson = new PersonData() { Age = 28, Name = "James" };
-
-            using(FileStream stream = new FileStream("file.bin", FileMode.Create))
-            {
-                BinaryFormatter bf = new BinaryFormatter();
-                bf.Serialize(stream, testPerson);
-            }
-
-            using(FileStream stream = new FileStream("file.bin", FileMode.Open))
-            {
-                BinaryFormatter bf = new BinaryFormatter();
-                PersonData testPerson2 = (PersonData)bf.Deserialize(stream);
-                Console.WriteLine($"{testPerson2.Age}, {testPerson2.Name}");
-            }
-            Console.ReadKey();
-        }
-    }
-}
-```
-
-### 总结
-
-在本章中，我们首先了解了什么是文件 I/O、它在哪里使用，以及使用 .NET 提供的类的好处。接下来，我们深入探讨了 StreamReader 和 StreamWriter 类，了解了检查文件是否已结束的重要性、何时在文件不存在时创建文件，以及如何向现有文件追加数据。我们还看了如何在应用程序中创建打开文件对话框。然后我们了解了序列化以及如何改变对象使其具有足够的可移植性，以便跨网络传输或存储。
-
-在下一章中，我们将学习如何编写高效利用系统资源的代码。
-
-## 第 7 章：异步编程
-
-### 技术要求
-
-要完成本章，你需要安装一个代码编辑器。推荐的代码编辑器是 Visual Studio 2019 Community 或更高版本，本章的源代码可在 https://github.com/PacktPublishing/... 找到。
-```
-
-
-
-这是 `setState()` 的一种异步形式，如果在同一周期内多次调用，它们可以被批量处理。例如，如果你想在同一个周期内多次增加购物车的数量，这就等同于：
-
-```
-Object.assign(
-  previousState,
-  {quantity: state.quantity + 1},
-  {quantity: state.quantity + 1},
-  ...
-)
-```
-
-在同一周期内，后续的任何调用都会覆盖前一次调用的值，因此数量只会增加一次。当下一个状态依赖于当前状态时，你应该使用更新器函数形式：
-
-```
-this.setState((state) => {
-  return {quantity: state.quantity + 1};
-});
-```
-
-## forceUpdate()
-
-### component.forceUpdate(callback)
-
-当组件中的 state 或 props 发生变化时，会触发重新渲染。如果 render() 方法依赖于其他数据，你应该调用 `forceUpdate()` 来指示 React 重新渲染该组件。
-
-当你调用 `forceUpdate()` 时，组件的 render() 方法会被自动调用，而 `shouldComponentUpdate()` 则会被跳过。这会触发子组件的标准生命周期方法，包括每个子组件的 `shouldComponentUpdate()` 方法。然而，除非标记发生变化，否则 React 不会更新 DOM。
-
-你应该尽量避免使用 `forceUpdate()`，并且只在 render() 方法中读取 `this.state` 和 `this.props`。
-
-### 类属性
-
-### defaultProps
-
-我们可以将 `defaultProps` 定义为组件的类属性，用来设置该类的默认 props。我们不应将其用于 null 值的 props，但可以用于 undefined 值的 props。以下是示例：
-
-```
-class CustomButton extends React.Component {
-  // ...
-}
-
-CustomButton.defaultProps = {
-  color: 'green'
-};
-```
-
-如果你没有提供 `props.color`，它将默认为 `'green'`。
-
-```
-render() {
-  return <CustomButton /> ; // props.color 被设置为 green
-}
-```
-
-而如果你将 `props.color` 设置为 null，它将保持不变：
-
-```
-render() {
-  return <CustomButton color={null} /> ; // props.color 将保持为 null
-}
-```
-
-### displayName
-
-这个字符串用于调试消息，但通常不需要显式设置，因为定义组件的类或函数的名称会自动推断出来。但是，如果你想在调试时显示不同的名称，你可以显式设置它，此外在创建高阶组件时也可以这样做。我们将在本书后面更详细地讨论这些内容。
-
-### 实例属性
-
-### Props
-
-在 `this.props` 内部，你可以看到组件调用者定义的 props。我们将在后面的章节深入讨论 props，但这里只是简单了解一下。具体来说，`this.props.children` 是特殊的，它通常由 JSX 表达式的子标签定义，而不是在标签本身中定义。
-
-### state
-
-state 包含可随时间变化的组件特定数据。它是用户定义的状态，应该是一个标准的 JavaScript 对象。如果某个值不用于数据流或渲染，则不必放入 state 中；相反，它可以被定义为组件的实例字段。我们将在稍后讨论 State 和 Lifecycle 时进一步讨论这一点。
-
-需要记住的一点是——永远不要直接修改 `this.state`，因为如果你之后调用 `setState()`，它可能会覆盖你的修改。始终将 `this.state` 视为不可变的。
 
 ## 第 4 章
 
-### State 和生命周期
+## State 和生命周期
 
 本章将简要介绍 React 组件的 state 和生命周期概念。让我们直接开始。
 
@@ -7003,7 +7572,6 @@ function tick() {
   );
   ReactDOM.render(element, document.getElementById('root'));
 }
-
 setInterval(tick, 1000);
 ```
 
@@ -7020,13 +7588,11 @@ function Clock(props) {
     </div>
   );
 }
-
 function tick() {
   ReactDOM.render(
     <Clock date={new Date()} />, document.getElementById('root')
   );
 }
-
 setInterval(tick, 1000);
 ```
 
@@ -7045,9 +7611,9 @@ ReactDOM.render(
 像 Clock 这样的函数组件可以通过以下五个步骤转换为类：
 
 - 1. 创建一个同名的 ES6 类，并继承 `React.Component`
-- 2. 向该类添加一个名为 render() 的空方法
-- 3. 将函数体移入 render() 中
-- 4. 在 render() 的函数体中用 `this.props` 替换 props
+- 2. 向该类添加一个名为 `render()` 的空方法
+- 3. 将函数体移入 `render()` 中
+- 4. 在 `render()` 的函数体中用 `this.props` 替换 props
 - 5. 删除剩余的空函数声明：
 
 ```
@@ -7065,7 +7631,7 @@ class Clock extends React.Component {
 
 现在我们已经将 Clock 定义为一个类，而不是函数。
 
-每当发生更新时，render() 就会被调用。但是，只要 `<Clock />` 被渲染到同一个 DOM 节点上，就只会使用一个 Clock 类的实例，从而允许它使用本地 state、生命周期方法和其他有用的功能。
+每当发生更新时，`render()` 就会被调用。但是，只要 `<Clock />` 被渲染到同一个 DOM 节点上，就只会使用一个 Clock 类的实例，从而允许它使用本地 state、生命周期方法和其他有用的功能。
 
 ### 向类中添加本地 state
 
@@ -7073,7 +7639,7 @@ class Clock extends React.Component {
 
 #### 第一步
 
-第一步是在 render() 中进行替换——用 `this.state.date` 替换 `this.props.date`。
+第一步是在 `render()` 中进行替换——用 `this.state.date` 替换 `this.props.date`。
 
 ```
 class Clock extends React.Component {
@@ -7098,7 +7664,6 @@ class Clock extends React.Component {
     super(props);
     this.state = {date: new Date()};
   }
-
   render() {
     return (
       <div>
@@ -7123,7 +7688,7 @@ constructor(props) {
 
 #### 第三步
 
-最后一步是从 `<Clock />` 元素中移除 date prop：
+最后一步是从 `<Clock />` 元素中移除 `date` prop：
 
 ```
 ReactDOM.render(
@@ -7150,7 +7715,6 @@ class Clock extends React.Component {
     );
   }
 }
-
 ReactDOM.render(
   <Clock />, document.getElementById('root')
 );
@@ -7172,7 +7736,6 @@ class Clock extends React.Component {
     super(props);
     this.state = {date: new Date()};
   }
-
   componentDidMount() { }
   componentWillUnmount() { }
   render() {
@@ -7190,7 +7753,63 @@ class Clock extends React.Component {
 
 一旦组件的输出被渲染到 DOM，`componentDidMount()` 就会运行，这使其成为设置定时器的好地方：
 
+```
+componentDidMount() {
+  this.timerID = setInterval(
+    () => this.tick(),
+    1000
+  );
+}
+```
 
+注意，计时器 ID 保存在 `this.timerID` 上。
+
+所以，React 设置 `this.props`，`this.state` 有一些特殊含义，但你仍然可以手动向类添加其他字段，特别是如果你想存储一些在数据流中没有特定作用的东西，比如 `this.timerID`。
+
+我们将使用名为 `componentWillUnmount` 的生命周期方法来拆除计时器。
+
+```
+componentWillUnmount() {
+  clearInterval(this.timerID);
+}
+```
+
+最后，实现了一个名为 `tick()` 的方法，时钟组件每秒都会运行它。它将使用 `this.setState()` 调度组件本地状态的更新。
+
+```
+class Clock extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {date: new Date()};
+  }
+  componentDidMount() {
+    this.timerID = setInterval(
+      () => this.tick(),
+      1000
+    );
+  }
+  componentWillUnmount() {
+    clearInterval(this.timerID);
+  }
+  tick() {
+    this.setState({
+      date: new Date()
+    });
+  }
+  render() {
+    return (
+      <div>
+        <h1>Hello, world!</h1>
+        <h2>It is {this.state.date.toLocaleTimeString()}.</h2>
+      </div>
+    );
+  }
+}
+ReactDOM.render(
+  <Clock />,
+  document.getElementById('root')
+);
+```
 
 ### 正确使用 State
 
@@ -7199,11 +7818,8 @@ class Clock extends React.Component {
 让我们快速回顾一下发生的事情以及方法调用顺序：
 
 - 1. `<Clock />` 被传入 `ReactDOM.render()`。React 调用 Clock 组件的构造函数。Clock 必须显示当前时间，因此 `this.state` 使用包含当前时间的对象进行初始化。此状态将在稍后更新。
-
 - 2. 然后，React 调用 Clock 组件中的 `render()` 方法，告诉 React 应该在屏幕上显示什么。随后，React 更新 DOM 以匹配 Clock 的渲染输出。
-
 - 3. 浏览器每秒调用一次 `tick()` 方法，在该方法内部，Clock 组件调度一次 UI 更新。它通过使用包含当前时间的对象调用 `setState()` 来实现这一点。React 通过调用 `setState()` 来了解状态已更改。接着调用 `render()` 方法来确定应该显示什么，这一次，`render()` 方法中的 `this.state.date` 不同了，更新的时间将包含在渲染输出中。React 相应地更新 DOM。
-
 - 4. 如果从 DOM 中移除 Clock 组件，React 会调用 `componentWillUnmount()`，停止计时器。
 
 关于 `setState()`，有三件重要的事情需要了解：
@@ -7282,7 +7898,6 @@ componentDidMount() {
             posts: response.posts
         });
     });
-
     fetchComments().then(response => {
         this.setState({
             comments: response.comments
@@ -7329,7 +7944,6 @@ function App() {
     </div>
   );
 }
-
 ReactDOM.render(
   <App />,
   document.getElementById('root')
@@ -7340,7 +7954,9 @@ ReactDOM.render(
 
 在任何 React 应用中，组件是有状态的还是无状态的被视为组件的实现细节，可能会随时间变化。无状态组件可以用于有状态组件中，反之亦然。
 
-# 第 5 章：ReactJS Props 和 PropTypes
+## 第 5 章
+
+## ReactJS Props 和 PropTypes
 
 你是否对 props 和 PropTypes 感到困惑？很多人都是如此，在本章中，我的目标是告诉你需要了解的内容——首先要知道的是，当你开发 React 应用时，它们可以让你的生活变得*极其轻松*。
 
@@ -7418,74 +8034,21 @@ class PostList extends React.Component {
             return (
               <li key={post.id}>
                 <Post {...post} />
+              </li>
+            );
+          })}
+        </ul>
+      </React.Fragment>
+    );
+  }
+}
 ```
 
-componentDidMount() {
-  this.timerID = setInterval(
-    () => this.tick(),
-    1000
-  );
-}
+`PostList` 组件接收一个 `posts` 属性。然后它遍历 `this.props.posts`，将每篇文章作为 `Post` 组件返回。我们在这段代码中还使用了 `key`，它是分配给每个列表项的唯一标识符，用于区分不同项目。我们将在后面的章节中更详细地讨论 `key`，但现在，`key` 就是文章的 ID，没有两个项目可以拥有相同的 ID。
 
-注意，计时器 ID 保存在 `this.timerID` 上。
-
-所以，React 设置 `this.props`，`this.state` 有一些特殊含义，但你仍然可以手动向类添加其他字段，特别是如果你想存储一些在数据流中没有特定作用的东西，比如 `this.timerID`。
-
-我们将使用名为 `componentWillUnmount` 的生命周期方法来拆除计时器。
-
-componentWillUnmount() {
-  clearInterval(this.timerID);
-}
-
-最后，实现了一个名为 `tick()` 的方法，时钟组件每秒都会运行它。它将使用 `this.setState()` 调度组件本地状态的更新。
+其余属性通过 `<Post {...post} />` 作为 props 传递给 `Post` 组件。因此，现在我们需要创建那个 `Post` 组件，以便在其中使用 props：
 
 ```javascript
-class Clock extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {date: new Date()};
-  }
-
-  componentDidMount() {
-    this.timerID = setInterval(
-      () => this.tick(),
-      1000
-    );
-  }
-
-  componentWillUnmount() {
-    clearInterval(this.timerID);
-  }
-
-  tick() {
-    this.setState({
-      date: new Date()
-    });
-  }
-
-  render() {
-    return (
-      <div>
-        <h1>Hello, world!</h1>
-        <h2>It is {this.state.date.toLocaleTimeString()}.</h2>
-      </div>
-    );
-  }
-}
-
-ReactDOM.render(
-  <Clock />,
-  document.getElementById('root')
-);
-```
-
-
-
-PostList 组件接收一个 posts 属性。然后它遍历 this.props.posts，将每篇文章作为 Post 组件返回。我们在这段代码中还使用了 key，它是分配给每个列表项的唯一标识符，用于区分不同项目。我们将在后面的章节中更详细地讨论 key，但现在，key 就是文章的 ID，没有两个项目可以拥有相同的 ID。
-
-其余属性通过 `<Post{...post} />` 作为 props 传递给 Post 组件。因此，现在我们需要创建那个 Post 组件，以便在其中使用 props：
-
-```
 const Post = (props) => {
   return (
     <div>
@@ -7496,7 +8059,7 @@ const Post = (props) => {
 };
 ```
 
-Post 被构建成一个函数式组件，而不是像 PostList 那样的类组件。我们这样做的目的是演示在函数式组件中如何访问 props，与在类组件中使用 `this.props` 访问 props 进行对比。在函数式组件中，props 可以直接用于访问值。
+`Post` 被构建成一个函数式组件，而不是像 `PostList` 那样的类组件。我们这样做的目的是演示在函数式组件中如何访问 props，与在类组件中使用 `this.props` 访问 props 进行对比。在函数式组件中，props 可以直接用于访问值。
 
 现在你已经了解了如何传递和访问 props，以及信息如何在组件之间传递，我们需要进一步探讨如何将 props 与函数结合使用。
 
@@ -7508,7 +8071,7 @@ Post 被构建成一个函数式组件，而不是像 PostList 那样的类组�
 
 听起来很复杂？试试下面的代码——它将使用两个组件在屏幕上显示一条有用的信息。第一个是 App，它是包含状态和设置状态函数的父组件。第二个是 ChildComponent，用于在状态改变时渲染屏幕上的信息：
 
-```
+```javascript
 class App extends React.Component {
   constructor(props) {
     super(props);
@@ -7529,11 +8092,11 @@ class App extends React.Component {
 }
 ```
 
-我们将状态设置为 true，并在 App 组件中创建了用于更改状态的方法。应用的状态通过 render() 中的 isShow 属性传递给 ChildComponent 组件。最后，toggleShow() 函数作为 props 传递给 clickMe。
+我们将状态设置为 `true`，并在 App 组件中创建了用于更改状态的方法。应用的状态通过 `render()` 中的 `isShow` 属性传递给 `ChildComponent` 组件。最后，`toggleShow()` 函数作为 props 传递给 `clickMe`。
 
-这将在 ChildComponent 中使用，其代码如下：
+这将在 `ChildComponent` 中使用，其代码如下：
 
-```
+```javascript
 class ChildComponent extends React.Component {
   clickMe = () => {
     this.props.clickMe();
@@ -7545,25 +8108,18 @@ class ChildComponent extends React.Component {
         {this.props.isShow ? (
           <h1 style={{ color: "green", fontSize: "4rem" }}>{greeting}</h1>
         ) : null}
+        <button onClick={this.clickMe}>
+          <h3>click Me</h3>
+        </button>
       </div>
     );
   }
 }
 ```
 
-```
-<button onClick={this.clickMe}>
-  <h3>click Me</h3>
-</button>
-</div>
-);
-}
-}
-```
+最重要的是，App 组件通过 props 将一个函数传递给了 `ChildComponent`。`clickMe()` 函数在 `ChildComponent` 中被用作点击处理程序，但 `ChildComponent` 完全不知道该函数的内部逻辑——它只是等待按钮被点击，然后触发该函数。当函数被调用后，状态发生改变，随后状态再次作为 props 传递下来。所有受影响的组件将重新渲染。
 
-最重要的是，App 组件通过 props 将一个函数传递给了 ChildComponent。clickMe() 函数在 ChildComponent 中被用作点击处理程序，但 ChildComponent 完全不知道该函数的内部逻辑——它只是等待按钮被点击，然后触发该函数。当函数被调用后，状态发生改变，随后状态再次作为 props 传递下来。所有受影响的组件将重新渲染。
-
-应用状态 isShow 作为 props 传递给 ChildComponent——没有它，就无法编写逻辑在状态更新后显示正确的问候语。
+应用状态 `isShow` 作为 props 传递给 `ChildComponent`——没有它，就无法编写逻辑在状态更新后显示正确的问候语。
 
 接下来让我们看看如何验证 props，这需要使用 PropTypes。
 
@@ -7587,15 +8143,15 @@ PropTypes 确保组件使用正确的数据类型，并且传递了正确的数�
 npm install --save prop-types
 ```
 
-首先，必须从 prop-types 包中导入 PropTypes：
+首先，必须从 `prop-types` 包中导入 PropTypes：
 
-```
+```javascript
 import PropTypes from 'prop-types';
 ```
 
-我们将在之前创建的用户文章列表应用中使用 PropTypes。以下是在 Post 组件上的用法：
+我们将在之前创建的用户文章列表应用中使用 PropTypes。以下是在 `Post` 组件上的用法：
 
-```
+```javascript
 Post.propTypes = {
   id: PropTypes.number,
   content: PropTypes.string,
@@ -7603,11 +8159,11 @@ Post.propTypes = {
 }
 ```
 
-这里有两个 prop 验证器——PropTypes.number 和 PropTypes.string。它们用于确保接收到正确类型的 props。在上面的代码中，id 被声明为数字类型，user 和 content 被声明为字符串类型。
+这里有两个 prop 验证器——`PropTypes.number` 和 `PropTypes.string`。它们用于确保接收到正确类型的 props。在上面的代码中，`id` 被声明为数字类型，`user` 和 `content` 被声明为字符串类型。
 
-PropTypes 还有助于捕获 bug，并且可以通过使用 isRequired 来强制传递 props：
+PropTypes 还有助于捕获 bug，并且可以通过使用 `isRequired` 来强制传递 props：
 
-```
+```javascript
 Post.propTypes = {
   id: PropTypes.number.isRequired,
   content: PropTypes.string.isRequired,
@@ -7617,7 +8173,7 @@ Post.propTypes = {
 
 PropTypes 中有很多验证器，以下是较常用的一些：
 
-```
+```javascript
 Component.propTypes = {
   stringProp: PropTypes.string,    // 该 prop 是字符串
   numberProp: PropTypes.number,    // 该 prop 是数字
@@ -7630,16 +8186,14 @@ Component.propTypes = {
 
 ### 默认 Props
 
-如果我们有想通过 props 传递给组件的默认信息，可以使用 defaultProps。当 PropType 没有使用 isRequired 时，它被视为可选的，此时可以设置 defaultProps，确保在没有传递 props 时仍有默认值。以下是一个示例：
+如果我们有想通过 props 传递给组件的默认信息，可以使用 `defaultProps`。当 PropType 没有使用 `isRequired` 时，它被视为可选的，此时可以设置 `defaultProps`，确保在没有传递 props 时仍有默认值。以下是一个示例：
 
-```
-Class Profile extends React.Component{
-
+```javascript
+class Profile extends React.Component{
     // 指定 props 的默认值
     static defaultProps = {
         name: 'Stranger'
     };
-
     // 渲染 "Welcome, Stranger":
     render() {
         return <h2> Welcome, {this.props.name}<h2>
@@ -7647,9 +8201,9 @@ Class Profile extends React.Component{
 }
 ```
 
-在这个例子中，defaultProps 确保了 this.props.name 有值，以防父组件没有指定它。如果 Profile 组件没有接收到 name prop，它将有一个默认值 Stranger。这可以防止在 prop 未传递时发生错误。
+在这个例子中，`defaultProps` 确保了 `this.props.name` 有值，以防父组件没有指定它。如果 `Profile` 组件没有接收到 `name` prop，它将有一个默认值 `Stranger`。这可以防止在 prop 未传递时发生错误。
 
-最佳实践建议对所有可选的 PropTypes 使用 defaultProps。
+最佳实践建议对所有可选的 PropTypes 使用 `defaultProps`。
 
 ## 第 6 章
 
@@ -7665,20 +8219,17 @@ Class Profile extends React.Component{
 
 第一步是使用 JSX 创建一个空表单。它必须包含一个元素和一个提交按钮。表单的提交事件将被处理，数据将传递给不同的服务。在第一步结束时，你的表单将能够将数据传递给异步函数。
 
-首先，打开 App.js 组件：
+首先，打开 `App.js` 组件：
 
 ```
 nano src/components/App/App.js
 ```
 
-
-
-我们想要构建一个允许我们购买橙子的表单，因此创建一个`<div>`并为其设置一个名为`wrapper`的className。给它一个包含文本“Look At Those Oranges!”的`<h1>`标签，并添加一个空的form元素。你可以使用下面的代码来完成：
+我们想要构建一个允许我们购买橙子的表单，因此创建一个 `<div>` 并为其设置一个名为 `wrapper` 的 `className`。给它一个包含文本“Look At Those Oranges!”的 `<h1>` 标签，并添加一个空的 `form` 元素。你可以使用下面的代码来完成：
 
 ```jsx
 import React from 'react';
 import './App.css';
-
 function App() {
   return (
     <div className="wrapper">
@@ -7688,16 +8239,14 @@ function App() {
     </div>
   )
 }
-
 export default App;
 ```
 
-现在，在`<form>`标签内，你需要一个`<fieldset>`元素，其中需要包含一个在`<label>`标签内的`<input>`元素。当你将`<input>`元素包裹在`<label>`元素中时，它有助于屏幕阅读器用户，因为标签和输入是关联的——这也让你的应用更具可访问性。最后，需要在表单底部添加一个提交`<button>`：
+现在，在 `<form>` 标签内，你需要一个 `<fieldset>` 元素，其中需要包含一个在 `<label>` 标签内的 `<input>` 元素。当你将 `<input>` 元素包裹在 `<label>` 元素中时，它有助于屏幕阅读器用户，因为标签和输入是关联的——这也让你的应用更具可访问性。最后，需要在表单底部添加一个提交 `<button>`：
 
 ```jsx
 import React from 'react';
 import './App.css';
-
 function App() {
   return(
     <div className="wrapper">
@@ -7714,23 +8263,21 @@ function App() {
   </div>
   )
 }
-
 export default App;
 ```
 
-保存并关闭文件。现在打开App.css以便设置样式：
+保存并关闭文件。现在打开 `App.css` 以便设置样式：
 
 ```
 nano src/components/App/App.css
 ```
 
-现在为`.wrapper`添加一些内边距，并为`fieldset`添加外边距。这将为元素之间提供空间。
+现在为 `.wrapper` 添加一些内边距，并为 `fieldset` 添加外边距。这将为元素之间提供空间。
 
 ```css
 .wrapper {
     padding: 5px 20px;
 }
-
 .wrapper fieldset {
     margin: 20px 0;
 }
@@ -7738,26 +8285,24 @@ nano src/components/App/App.css
 
 保存并关闭文件；你的浏览器会重新加载，一个基本的表单将出现在屏幕上，显示“Look At Those Oranges!”，下方有一个提交按钮。
 
-点击提交按钮，页面会重新加载。因为这是一个单页应用，标准按钮行为通过`type="submit"`被阻止了，所以提交事件将在组件内部处理：
+点击提交按钮，页面会重新加载。因为这是一个单页应用，标准按钮行为通过 `type="submit"` 被阻止了，所以提交事件将在组件内部处理：
 
-首先，打开App.js：
+首先，打开 `App.js`：
 
 ```
 nano src/components/App/App.js
 ```
 
-现在需要为`<form>`元素（而不是你可能认为的`<button>`）添加一个事件处理程序。创建一个函数并命名为handleSubmit——它将接收一个SyntheticEvent参数，该参数包装了Event对象并具有相同的接口。通过调用`.preventDefault`，你可以阻止页面提交表单，并触发一个确认表单提交的警报：
+现在需要为 `<form>` 元素（而不是你可能认为的 `<button>`）添加一个事件处理程序。创建一个函数并命名为 `handleSubmit`——它将接收一个 `SyntheticEvent` 参数，该参数包装了 `Event` 对象并具有相同的接口。通过调用 `.preventDefault`，你可以阻止页面提交表单，并触发一个确认表单提交的警报：
 
 ```jsx
 import React from 'react';
 import './App.css';
-
 function App() {
   const handleSubmit = event => {
     event.preventDefault();
     alert('The form is submitted.')
   }
-
   return(
     <div className="wrapper">
       <h1>Look At Those Oranges!</h1>
@@ -7773,31 +8318,27 @@ function App() {
     </div>
   )
 }
-
 export default App;
 ```
 
 再次保存文件，浏览器会重新加载。点击提交按钮，你会收到一个警报，告诉你表单已提交——窗口没有重新加载。
 
-许多React应用需要你将数据发送到外部服务，例如Web API。当服务解析完成时，可能会显示成功消息，或者你可以将用户重定向到其他地方，或者两者都做。
+许多 React 应用需要你将数据发送到外部服务，例如 Web API。当服务解析完成时，可能会显示成功消息，或者你可以将用户重定向到其他地方，或者两者都做。
 
-模拟API需要在handleSubmit函数中添加setTimeout函数，从而产生一个异步操作，该操作在完成前会等待指定的时间——这类似于外部数据请求的行为。然后使用useState Hook来创建两样东西——一个submitting变量和一个setSubmitting函数。当数据提交时，调用`setSubmitting(true)`，当超时完成时，调用`setSubmitting(false)`。
+模拟 API 需要在 `handleSubmit` 函数中添加 `setTimeout` 函数，从而产生一个异步操作，该操作在完成前会等待指定的时间——这类似于外部数据请求的行为。然后使用 `useState` Hook 来创建两样东西——一个 `submitting` 变量和一个 `setSubmitting` 函数。当数据提交时，调用 `setSubmitting(true)`，当超时完成时，调用 `setSubmitting(false)`。
 
 ```jsx
 import React, { useState } from 'react';
 import './App.css';
-
 function App() {
   const [submitting, setSubmitting] = useState(false);
   const handleSubmit = event => {
     event.preventDefault();
     setSubmitting(true);
-
     setTimeout(() => {
       setSubmitting(false);
     }, 3000)
   }
-
   return(
     <div className="wrapper">
       <h1>Look At Those Oranges!</h1>
@@ -7816,56 +8357,50 @@ function App() {
     </div>
   )
 }
-
 export default App;
 ```
 
-当submitting为true时，你还会显示一个简短的HTML消息，告诉用户他们的表单正在提交。
+当 `submitting` 为 `true` 时，你还会显示一个简短的 HTML 消息，告诉用户他们的表单正在提交。
 
 保存文件，浏览器重新加载，然后点击提交——你的消息将会显示。
 
-你现在有了一个基本的表单，可以在React组件内处理提交事件。它使用`onSubmit`事件处理程序连接到你的JSX，并使用钩子在handleSubmit事件运行时显示警报。
+你现在有了一个基本的表单，可以在 React 组件内处理提交事件。它使用 `onSubmit` 事件处理程序连接到你的 JSX，并使用钩子在 `handleSubmit` 事件运行时显示警报。
 
 在第二步中，我们将添加更多的用户输入，并学习当用户填写表单时数据如何保存到状态中。
 
 ### 第二步 – 使用非受控组件收集表单数据
 
-现在我们将使用非受控组件来收集表单数据。这些组件的值不是由React设置的。与其在组件上设置数据，不如连接`onChange`事件来收集用户输入。随着组件的构建，你将学习React如何处理不同的输入类型，以及如何使用可重用函数将表单数据收集到一个对象中。
+现在我们将使用非受控组件来收集表单数据。这些组件的值不是由 React 设置的。与其在组件上设置数据，不如连接 `onChange` 事件来收集用户输入。随着组件的构建，你将学习 React 如何处理不同的输入类型，以及如何使用可重用函数将表单数据收集到一个对象中。
 
 在第二步结束时，你将知道如何使用不同元素（如复选框和下拉菜单）构建表单。你还将知道如何收集表单数据、提交并显示它。
 
 **注意**
 
-你的大多数React应用将使用受控组件构建，但从非受控组件开始可以让你理解它们，并学习如何避免因值设置不正确而可能引入的错误和意外循环。
+你的大多数 React 应用将使用受控组件构建，但从非受控组件开始可以让你理解它们，并学习如何避免因值设置不正确而可能引入的错误和意外循环。
 
-目前，你有一个提交信息的表单，但我们没有信息可以提交。表单中有一个`<input>`元素，但数据没有被收集或存储在组件中。要做到这一点并能够在用户提交的表单上处理数据，你需要一种管理状态的方法，然后每个输入都需要通过一个事件处理程序连接。
+目前，你有一个提交信息的表单，但我们没有信息可以提交。表单中有一个 `<input>` 元素，但数据没有被收集或存储在组件中。要做到这一点并能够在用户提交的表单上处理数据，你需要一种管理状态的方法，然后每个输入都需要通过一个事件处理程序连接。
 
-再次打开App.js，通过使用`useReducer`钩子创建一个`formData`对象和一个`setFormData`函数。reducer函数需要从`event.target`对象中提取`name`和`value`。然后必须更新状态——当前状态被展开，而`name`和`value`被添加在末尾。这将导致创建一个状态对象，并在特定值改变时被覆盖，同时保持不变：
+再次打开 `App.js`，通过使用 `useReducer` 钩子创建一个 `formData` 对象和一个 `setFormData` 函数。reducer 函数需要从 `event.target` 对象中提取 `name` 和 `value`。然后必须更新状态——当前状态被展开，而 `name` 和 `value` 被添加在末尾。这将导致创建一个状态对象，并在特定值改变时被覆盖，同时保持不变：
 
 ```jsx
 import React, { useReducer, useState } from 'react';
 import './App.css';
-
 const formReducer = (state, event) => {
   return {
     ...state,
     [event.target.name]: event.target.value
   }
 }
-
 function App() {
   const [formData, setFormData] = useReducer(formReducer, {});
   const [submitting, setSubmitting] = useState(false);
-
   const handleSubmit = event => {
     event.preventDefault();
     setSubmitting(true);
-
     setTimeout(() => {
       setSubmitting(false);
     }, 3000)
   }
-
   return(
     <div className="wrapper">
       <h1>Look At Those Oranges!</h1>
@@ -7884,73 +8419,60 @@ function App() {
     </div>
   )
 }
-
 export default App;
 ```
 
-一旦你创建了reducer，就需要将`setFormData`添加到输入的`onChange`事件处理程序上——这将导致浏览器重新加载。如果你尝试在输入框中输入，你会得到一个错误：
+一旦你创建了 reducer，就需要将 `setFormData` 添加到输入的 `onChange` 事件处理程序上——这将导致浏览器重新加载。如果你尝试在输入框中输入，你会得到一个错误：
 
 ![](img/7091ef933114a5ffe0ae0554f9493e61_211_0.png)
 
-造成这种情况的原因是SyntheticEvent被重复使用了，因此它不能被传递给任何异步函数。简单来说，事件不能直接传递。修复此问题需要在调用reducer函数之前提取出你需要的数据。
+造成这种情况的原因是 `SyntheticEvent` 被重复使用了，因此它不能被传递给任何异步函数。简单来说，事件不能直接传递。修复此问题需要在调用 reducer 函数之前提取出你需要的数据。
 
-需要更新reducer函数，使其接受一个包含`name`和`value`属性的对象。需要创建一个名为`handleChange`的函数，从`event.target`中提取数据，并将对象传递给`setFormData`。最后，需要更新`onChange`事件处理程序，使其能够使用这个新函数：
+需要更新 reducer 函数，使其接受一个包含 `name` 和 `value` 属性的对象。需要创建一个名为 `handleChange` 的函数，从 `event.target` 中提取数据，并将对象传递给 `setFormData`。最后，需要更新 `onChange` 事件处理程序，使其能够使用这个新函数：
 
 ```jsx
 import React, { useReducer, useState } from 'react';
 import './App.css';
-
 const formReducer = (state, event) => {
     return {
         ...state,
         [event.name]: event.value
     }
 }
-
 function App() {
     const [formData, setFormData] = useReducer(formReducer, {});
     const [submitting, setSubmitting] = useState(false);
-
     const handleSubmit = event => {
         event.preventDefault();
         setSubmitting(true);
-
         setTimeout(() => {
             setSubmitting(false);
         }, 3000);
     }
-}
-```
-
-
-
-```javascript
-const handleChange = event => {
-  setFormData({
-    name: event.target.name,
-    value: event.target.value,
-  });
-}
-
-return(
-  <div className="wrapper">
-    <h1>看看那些橙子！</h1>
-    {submitting &&
-      <div>正在提交表单...</div>
+    const handleChange = event => {
+      setFormData({
+        name: event.target.name,
+        value: event.target.value,
+      });
     }
-    <form onSubmit={handleSubmit}>
-      <fieldset>
-        <label>
-          <p>姓名</p>
-          <input name="name" onChange={handleChange}/>
-        </label>
-      </fieldset>
-      <button type="submit">提交</button>
-    </form>
-  </div>
-  )
+    return(
+      <div className="wrapper">
+        <h1>Look At Those Oranges!</h1>
+        {submitting &&
+          <div>Submitting Form...</div>
+        }
+        <form onSubmit={handleSubmit}>
+          <fieldset>
+            <label>
+              <p>Name</p>
+              <input name="name" onChange={handleChange}/>
+            </label>
+          </fieldset>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    )
 }
-
 export default App;
 ```
 
@@ -7958,13 +8480,13 @@ export default App;
 
 由于你现在正在收集表单状态，可以更新用户显示信息，以显示一个包含数据的无序列表 `<ul>` 元素。使用 `Object.entries` 将数据转换为数组，然后映射数据以将每个数组成员转换为一个 `<li>` 元素，包括名称和值。确保使用名称作为元素的 `key` 属性。
 
-```javascript
+```jsx
 return(
   <div className="wrapper">
-    <h1>看看那些橙子！</h1>
+    <h1>Look At Those Oranges!</h1>
     {submitting &&
     <div>
-      以下内容正在被提交：
+      The following is being submitted:
       <ul>
         {Object.entries(formData).map(([name, value]) => (
           <li key={name}><strong>{name}</strong>: {value.toString()}</li>
@@ -7975,16 +8497,15 @@ return(
     <form onSubmit={handleSubmit}>
       <fieldset>
         <label>
-          <p>姓名</p>
+          <p>Name</p>
           <input name="name" onChange={handleChange}/>
         </label>
       </fieldset>
-      <button type="submit">提交</button>
+      <button type="submit">Submit</button>
     </form>
   </div>
   )
 }
-
 export default App;
 ```
 
@@ -7994,14 +8515,13 @@ export default App;
 
 每个元素都需要将 `handleChange` 函数添加到 `onChange` 事件处理器：
 
-```javascript
-...
+```jsx
 return(
 <div className="wrapper">
-<h1>看看那些橙子！</h1>
+<h1>Look At Those Oranges!</h1>
 {submitting &&
 <div>
-以下内容正在被提交：
+The following is being submitted:
 <ul>
 {Object.entries(formData).map(([name, value]) => (
 <li key={name}><strong>{name}</strong>: {value.toString()}</li>
@@ -8012,35 +8532,34 @@ return(
 <form onSubmit={handleSubmit}>
 <fieldset>
 <label>
-<p>姓名</p>
+<p>Name</p>
 <input name="name" onChange={handleChange}/>
 </label>
 </fieldset>
 <fieldset>
 <label>
-<p>橙子</p>
+<p>Oranges</p>
 <select name="orange" onChange={handleChange}>
-<option value="">--请选择一个选项--</option>
-<option value="seville">塞维利亚</option>
-<option value="andrew">安德鲁</option>
-<option value="blood-orange">血橙</option>
+<option value="">--Please choose an option--</option>
+<option value="seville">Seville</option>
+<option value="andrew">Andrew</option>
+<option value="blood-orange">Blood Orange</option>
 </select>
 </label>
 <label>
-<p>数量</p>
+<p>Count</p>
 <input type="number" name="count" onChange={handleChange} step="1"/>
 </label>
 <label>
-  <p>礼品包装</p>
+  <p>Gift Wrap</p>
   <input type="checkbox" name="gift-wrap" onChange={handleChange} />
 </label>
 </fieldset>
-<button type="submit">提交</button>
+<button type="submit">Submit</button>
 </form>
 </div>
 )
 }
-
 export default App;
 ```
 
@@ -8050,22 +8569,19 @@ export default App;
 
 `handleChange` 函数需要更新以检查 `event.target.type` 是否为复选框。如果是，则必须将 `event.target.checked` 属性作为值传递，而不是 `event.target.value`：
 
-```javascript
+```jsx
 import React, { useReducer, useState } from 'react';
 import './App.css';
 function App() {
   const [formData, setFormData] = useReducer(formReducer, {});
   const [submitting, setSubmitting] = useState(false);
-
   const handleSubmit = event => {
     event.preventDefault();
     setSubmitting(true);
-    
     setTimeout(() => {
       setSubmitting(false);
     }, 3000);
   }
-
   const handleChange = event => {
     const isCheckbox = event.target.type === 'checkbox';
     setFormData({
@@ -8099,53 +8615,51 @@ function App() {
 
 由于你的初始状态是一个空对象，值必须设置为 `formData` 的值或一个空字符串，或其他一些默认值。例如，姓名值应为 `formData.name || ""`：
 
-```javascript
-    return(
-      <div className="wrapper">
-        <h1>看看那些橙子！</h1>
-        {submitting &&
-          <div>
-            以下内容正在被提交：
-            <ul>
-              {Object.entries(formData).map(([name, value]) => (
-                <li key={name}><strong>{name}</strong>: {value.toString()}</li>
-              ))}
-            </ul>
-          </div>
-        }
-        <form onSubmit={handleSubmit}>
-          <fieldset>
-            <label>
-              <p>姓名</p>
-              <input name="name" onChange={handleChange} value={formData.name || ""}/>
-            </label>
-          </fieldset>
-          <fieldset>
-            <label>
-              <p>橙子</p>
-              <select name="orange" onChange={handleChange} value={formData.orange || ""}>
-                <option value="">--请选择一个选项--</option>
-                <option value="seville">塞维利亚</option>
-                <option value="andrew">安德鲁</option>
-                <option value="blood-orange">血橙</option>
-              </select>
-            </label>
-            <label>
-              <p>数量</p>
-              <input type="number" name="count" onChange={handleChange} step="1" value={formData.count || ""}/>
-            </label>
-            <label>
-              <p>礼品包装</p>
-              <input type="checkbox" name="gift-wrap" onChange={handleChange} checked={formData['gift-wrap'] || false}/>
-            </label>
-          </fieldset>
-          <button type="submit">提交</button>
-        </form>
+```jsx
+return(
+  <div className="wrapper">
+    <h1>Look At Those Oranges!</h1>
+    {submitting &&
+      <div>
+        The following is being submitted:
+        <ul>
+          {Object.entries(formData).map(([name, value]) => (
+            <li key={name}><strong>{name}</strong>: {value.toString()}</li>
+          ))}
+        </ul>
       </div>
-    )
-```
-
-```javascript
+    }
+    <form onSubmit={handleSubmit}>
+      <fieldset>
+        <label>
+          <p>Name</p>
+          <input name="name" onChange={handleChange} value={formData.name || ""}/>
+        </label>
+      </fieldset>
+      <fieldset>
+        <label>
+          <p>Oranges</p>
+          <select name="orange" onChange={handleChange} value={formData.orange || ""}>
+            <option value="">--Please choose an option--</option>
+            <option value="seville">Seville</option>
+            <option value="andrew">Andrew</option>
+            <option value="blood-orange">Blood Orange</option>
+          </select>
+        </label>
+        <label>
+          <p>Count</p>
+          <input type="number" name="count" onChange={handleChange} step="1" value={formData.count || ""}/>
+        </label>
+        <label>
+          <p>Gift Wrap</p>
+          <input type="checkbox" name="gift-wrap" onChange={handleChange} checked={formData['gift-wrap'] || false}/>
+        </label>
+      </fieldset>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+)
+}
 export default App;
 ```
 
@@ -8153,7 +8667,7 @@ export default App;
 
 如果你想让表单预填充一些数据，请在 `formData` 状态中放入一些默认数据。通过向 `formState` 提供 `{ count: 100 }` 来为 `count` 设置一个默认值。你也可以选择设置初始对象的默认值，但首先需要在显示表单信息之前过滤掉假值：
 
-```javascript
+```jsx
 function App() {
     const [formData, setFormData] = useReducer(formReducer, {
         count: 100,
@@ -8173,16 +8687,41 @@ function App() {
 
 在将新的事件条件添加到 `formReducer` 之后，你的提交函数可以被更新，以便当函数解析完成时，状态被重置：
 
-```javascript
+```jsx
 import React, { useReducer, useState } from 'react';
 import './App.css';
-
 const formReducer = (state, event) => {
     if(event.reset) {
         return {
+            name: '',
+            orange: '',
+            count: '',
+            'gift-wrap': false
+        }
+    }
+    return {
+        ...state,
+        [event.name]: event.value
+    }
+}
+function App() {
+    const [formData, setFormData] = useReducer(formReducer, {
+        count: 100
+    });
+    const [submitting, setSubmitting] = useState(false);
+    const handleSubmit = event => {
+        event.preventDefault();
+        setSubmitting(true);
+        setTimeout(() => {
+            setSubmitting(false);
+            setFormData({
+                reset: true
+            })
+        }, 3000);
+    }
+    ...
+}
 ```
-
-
 
 ### 第四步 – 动态更新表单属性
 
@@ -8194,7 +8733,7 @@ const formReducer = (state, event) => {
 
 尝试设置一个输入框，使其在另一个输入框满足特定条件之前保持禁用状态。我们将以礼品包装复选框为例——在用户选择 Seville 选项之前，将其禁用。
 
-打开 App.js，在复选框中添加 disabled 属性，当 formData.orange 为 Seville 时，该属性为真：
+打开 `App.js`，在复选框中添加 `disabled` 属性，当 `formData.orange` 为 Seville 时，该属性为真：
 
 ```jsx
 function App() {
@@ -8202,11 +8741,9 @@ function App() {
     count: 100
   });
   const [submitting, setSubmitting] = useState(false);
-
   const handleSubmit = event => {
     event.preventDefault();
     setSubmitting(true);
-
     setTimeout(() => {
       setSubmitting(false);
       setFormData({
@@ -8246,17 +8783,16 @@ function App() {
     </div>
     )
 }
-
 export default App;
 ```
 
 保存文件后，浏览器会重新加载，默认情况下复选框是禁用的。如果选择 Seville 作为橙子类型，该元素将被启用。
 
-除了更改单个组件的属性外，还可以通过更新 fieldset 组件来修改整个组件组。
+除了更改单个组件的属性外，还可以通过更新 `fieldset` 组件来修改整个组件组。
 
-例如，在活跃提交期间可以禁用表单。这样可以防止双重或多次提交，并阻止用户在 handleSubmit 完全处理之前更改任何字段。
+例如，在活跃提交期间可以禁用表单。这样可以防止双重或多次提交，并阻止用户在 `handleSubmit` 完全处理之前更改任何字段。
 
-为此，应在每个 `<fieldset>` 和 `<button>` 元素上添加 disabled={submitting}：
+为此，应在每个 `<fieldset>` 和 `<button>` 元素上添加 `disabled={submitting}`：
 
 ```jsx
           <form onSubmit={handleSubmit}>
@@ -8296,13 +8832,12 @@ export default App;
         </div>
       )
     }
-
 export default App;
 ```
 
 最后一次保存文件，浏览器会刷新。当表单提交时，字段将被禁用，直到提交功能完全处理完毕。
 
-可以更新输入组件上的任何属性，这在需要更改数字输入的 maxvalue 或添加动态 pattern 属性进行验证时非常有用。
+可以更新输入组件上的任何属性，这在需要更改数字输入的 `maxvalue` 或添加动态 `pattern` 属性进行验证时非常有用。
 
 在最后这一步中，你学习了如何在表单组件上动态设置属性。你添加了一个属性，用于根据另一个组件的输入动态启用或禁用组件，还使用了 `<fieldset>` 组件来禁用整个部分。
 
@@ -8310,7 +8845,9 @@ export default App;
 
 无论你选择哪种方法，React 都能让你动态更新和调整表单，以满足用户和应用程序的需求。
 
-## 第七章 – ReactJS 事件
+## 第七章
+
+## ReactJS 事件
 
 大多数应用程序的行为都基于事件。当用户在表单中输入值时，这是一个事件。当用户点击提交按钮时，这也是一个事件。事件可以通过多种方式触发，应用程序被设计成监听这些事件，以便作为响应执行其他操作。
 
@@ -8321,8 +8858,8 @@ export default App;
 首先要做的是创建一个包含输入框和按钮的表单。当输入值时，会触发一个事件。按钮调用一个函数来反转该值。工作原理如下：
 
 - 用户在空输入框中输入文本
-- 当在输入框中输入值时，会触发 onChange 事件，调用用于设置新输入状态的 handleChange 函数
-- 当点击"反转文本"按钮时，会触发另一个事件。调用 handleReverse() 函数，设置新的 reversedText 状态。
+- 当在输入框中输入值时，会触发 `onChange` 事件，调用用于设置新输入状态的 `handleChange` 函数
+- 当点击"反转文本"按钮时，会触发另一个事件。调用 `handleReverse()` 函数，设置新的 `reversedText` 状态。
 
 让我们在代码中看看这一切：
 
@@ -8333,7 +8870,6 @@ class App extends React.Component {
     input: "",
     reversedText: ""
   };
-
   /* handleChange() 函数用于设置新的输入状态 */
   handleChange = event => {
     const value = event.target.value;
@@ -8341,7 +8877,6 @@ class App extends React.Component {
       input: value
     });
   };
-
   /* handleReverse() 函数将输入反转并设置为新的 reversedText 状态 */
   handleReverse = event => {
     event.preventDefault();
@@ -8353,7 +8888,6 @@ class App extends React.Component {
         .join("")
     });
   };
-
   render() {
     return (
       <React.Fragment>
@@ -8388,24 +8922,18 @@ class App extends React.Component {
 
 假设你有一个像这样的组件：
 
-假设你有一个像这样的组件；
-
-
-
 ### 添加事件监听器
 
-有时，你可能想要在组件挂载之后使用特定的 DOM 事件。我们可以通过 resize 事件来看这个实际操作，我们希望在窗口大小改变时知道窗口的宽度。
+有时，你可能想要在组件挂载之后使用特定的 DOM 事件。我们可以通过 `resize` 事件来看这个实际操作，我们希望在窗口大小改变时知道窗口的宽度。
 
 ```javascript
 class App extends React.Component {
   state = {
     windowWidth: window.innerWidth
   }
-
   handleResize = (event) => {
     this.setState({ windowWidth: window.innerWidth })
   }
-
   render() {
     return (
       <React.Fragment>
@@ -8424,19 +8952,15 @@ class App extends React.Component {
   state = {
     windowWidth: window.innerWidth
   }
-
   handleResize = (event) => {
     this.setState({ windowWidth: window.innerWidth })
   }
-
   componentDidMount() {
     window.addEventListener('resize', this.handleResize)
   }
-
   componentWillUnmount() {
     window.removeEventListener('resize', this.handleResize)
   }
-
   render() {
     return (
       <React.Fragment>
@@ -8456,8 +8980,8 @@ class App extends React.Component {
 
 尽管 React 元素的事件处理与 DOM 元素的事件处理非常相似，但在语法上有一些区别：
 
--   React 事件命名使用 camelCase，而非小写。
--   在 JSX 中，函数作为事件处理程序传递，而非字符串。
+- React 事件命名使用 camelCase，而非小写。
+- 在 JSX 中，函数作为事件处理程序传递，而非字符串。
 
 以下是 HTML 示例：
 
@@ -8474,7 +8998,7 @@ class App extends React.Component {
 </button>
 ```
 
-还有一个区别——在 React 中，你不能通过返回 false 来阻止默认行为；相反，必须显式调用 `preventDefault`。例如，当你使用纯 HTML 时，可以编写以下代码来阻止链接的默认行为（即打开新页面）：
+还有一个区别——在 React 中，你不能通过返回 `false` 来阻止默认行为；相反，必须显式调用 `preventDefault`。例如，当你使用纯 HTML 时，可以编写以下代码来阻止链接的默认行为（即打开新页面）：
 
 ```html
 <a href="#" onclick="console.log('The link was clicked.'); return false">
@@ -8508,17 +9032,14 @@ class Toggle extends React.Component {
   constructor(props) {
     super(props);
     this.state = { isToggleOn: true };
-
     // 必须进行绑定，以确保 `this` 在回调中有效
     this.handleClick = this.handleClick.bind(this);
   }
-
   handleClick() {
     this.setState(state => ({
       isToggleOn: !state.isToggleOn
     }));
   }
-
   render() {
     return (
       <button onClick={this.handleClick}>
@@ -8527,14 +9048,13 @@ class Toggle extends React.Component {
     );
   }
 }
-
 ReactDOM.render(
   <Toggle />,
   document.getElementById('root')
 );
 ```
 
-你必须意识到 `this` 在 JSX 回调中的含义。默认情况下，JavaScript 方法不会被绑定。因此，如果 `this.handleClick` 没有被绑定就传递给 `onClick`，当函数被调用时，它将会是 undefined。
+你必须意识到 `this` 在 JSX 回调中的含义。默认情况下，JavaScript 方法不会被绑定。因此，如果 `this.handleClick` 没有被绑定就传递给 `onClick`，当函数被调用时，它将会是 `undefined`。
 
 这种行为并非 React 特有；这是 JavaScript 函数的工作方式。如果引用一个方法时没有在其后添加 `()`，比如 `onClick={this.handleClick}`，那么该方法应该被绑定。
 
@@ -8547,7 +9067,6 @@ class LoggingButton extends React.Component {
   handleClick = () => {
     console.log('this is:', this);
   }
-
   render() {
     return (
       <button onClick={this.handleClick}>
@@ -8567,7 +9086,6 @@ class LoggingButton extends React.Component {
   handleClick() {
     console.log('this is:', this);
   }
-
   render() {
     // 这种语法确保 `this` 在 handleClick 中被绑定
     return (
@@ -8594,8 +9112,6 @@ class LoggingButton extends React.Component {
 
 两次中，`e` 参数都代表 React 事件，并在 ID 之后作为附加参数传递。箭头函数意味着必须显式传递它，但使用 `bind` 时，附加参数会自动转发。
 
-
-
 ## 第 8 章
 
 ## ReactJS Refs
@@ -8614,7 +9130,6 @@ React 团队做的事情是所有库的作者都应该做的——他们为我�
 
 ```javascript
 import React from 'react'
-
 class ActionButton extends React.Component {
   render() {
     const { label, action } = this.props
@@ -8625,19 +9140,17 @@ class ActionButton extends React.Component {
 }
 ```
 
-这里，button 表达式是 JSX 调用 `React.createElement('button')` 语句的方式。然而，这并不是一个 HTML Button 元素的表示；它是一个 React 元素。
+这里，`button` 表达式是 JSX 调用 `React.createElement('button')` 语句的方式。然而，这并不是一个 HTML Button 元素的表示；它是一个 React 元素。
 
 要访问 HTML 元素，需要创建一个 React 引用，然后将其传递给 HTML 元素：
 
 ```javascript
 import React, { createRef } from 'react'
-
 class ActionButton extends React.Component {
   constructor() {
     super()
     this.buttonRef = createRef()
   }
-
   render() {
     const { label, action } = this.props
     return (
@@ -8653,14 +9166,12 @@ class ActionButton extends React.Component {
 
 React 团队最近发布了一个包含 Hooks 的版本，允许你将函数组件与类组件共享的功能进行配对。
 
-因此，现在也可以在函数组件中导入 useRef 来使用 refs：
+因此，现在也可以在函数组件中导入 `useRef` 来使用 refs：
 
 ```javascript
 import React, { useRef } from 'react'
-
 function ActionButton({ label, action }) {
   const buttonRef = useRef(null)
-
   return (
     <button onClick={action} ref={buttonRef}>{label}</button>
   )
@@ -8681,18 +9192,14 @@ React 在 Web 领域扩展了许多概念，其中之一就是声明式视图。
 
 ```javascript
 import React from "react";
-
 class InputModal extends React.Component {
   constructor(props) {
     super(props);
-
     this.state = { value: props.initialValue };
   }
-
   onChange = e => {
     this.setState({ value: e.target.value });
   };
-
   onSubmit = e => {
     e.preventDefault();
     const { value } = this.state;
@@ -8700,10 +9207,8 @@ class InputModal extends React.Component {
     onSubmit(value);
     onClose();
   };
-
   render() {
     const { value } = this.state;
-
     return (
       <div className="modal--overlay">
         <div className="modal">
@@ -8727,19 +9232,15 @@ class InputModal extends React.Component {
 
 ```javascript
 import React, { createRef } from "react";
-
 class InputModal extends React.Component {
   constructor(props) {
     super(props);
     this.inputRef = createRef();
-
     this.state = { value: props.initialValue };
   }
-
   onChange = e => {
     this.setState({ value: e.target.value });
   };
-
   onSubmit = e => {
     e.preventDefault();
     const { value } = this.state;
@@ -8747,10 +9248,8 @@ class InputModal extends React.Component {
     onSubmit(value);
     onClose();
   };
-
   render() {
     const { value } = this.state;
-
     return (
       <div className="modal--overlay">
         <div className="modal">
@@ -8769,7 +9268,6 @@ class InputModal extends React.Component {
     );
   }
 }
-
 export default InputModal;
 ```
 
@@ -8777,23 +9275,18 @@ export default InputModal;
 
 ```javascript
 import React, { createRef } from "react";
-
 class InputModal extends React.Component {
   constructor(props) {
     super(props);
     this.inputRef = createRef();
-
     this.state = { value: props.initialValue };
   }
-
   componentDidMount() {
     this.inputRef.current.focus();
   }
-
   onChange = e => {
     this.setState({ value: e.target.value });
   };
-
   onSubmit = e => {
     e.preventDefault();
     const { value } = this.state;
@@ -8801,10 +9294,8 @@ class InputModal extends React.Component {
     onSubmit(value);
     onClose();
   };
-
   render() {
     const { value } = this.state;
-
     return (
       <div className="modal--overlay">
         <div className="modal">
@@ -8823,7 +9314,6 @@ class InputModal extends React.Component {
     );
   }
 }
-
 export default InputModal;
 ```
 
@@ -8835,30 +9325,23 @@ export default InputModal;
 
 ```javascript
 import React, { createRef } from "react";
-
 class InputModal extends React.Component {
   constructor(props) {
     super(props);
     this.inputRef = createRef();
     this.modalRef = createRef();
-
     this.state = { value: props.initialValue };
   }
-
   componentDidMount() {
     this.inputRef.current.focus();
-
     document.body.addEventListener("click", this.onClickOutside);
   }
-
   componentWillUnmount() {
     document.removeEventListener("click", this.onClickOutside);
   }
-
   onClickOutside = e => {
     const { onClose } = this.props;
     const element = e.target;
-
     if (this.modalRef.current
         && !this.modalRef.current.contains(element)) {
       e.preventDefault();
@@ -8866,11 +9349,9 @@ class InputModal extends React.Component {
       onClose();
     }
   };
-
   onChange = e => {
     this.setState({ value: e.target.value });
   };
-
   onSubmit = e => {
     e.preventDefault();
     const { value } = this.state;
@@ -8878,10 +9359,8 @@ class InputModal extends React.Component {
     onSubmit(value);
     onClose();
   };
-
   render() {
     const { value } = this.state;
-
     return (
       <div className="modal--overlay" ref={this.modalRef}>
         <div className="modal">
@@ -8900,38 +9379,6 @@ class InputModal extends React.Component {
     );
   }
 }
-
-export default InputModal;
-```
-
-
-
-```
-onSubmit(value);
-    onClose();
-};
-
-render() {
-    const { value } = this.state;
-    return (
-        <div className="modal--overlay">
-            <div className="modal" ref={this.modalRef}>
-                <h1>Insert a new value</h1>
-                <form action="?" onSubmit={this.onSubmit}>
-                    <input
-                        ref={this.inputRef}
-                        type="text"
-                        onChange={this.onChange}
-                        value={value}
-                    />
-                    <button>Save new value</button>
-                </form>
-            </div>
-        </div>
-    );
-}
-}
-
 export default InputModal;
 ```
 
@@ -8947,19 +9394,16 @@ export default InputModal;
 
 动画方面较流行的库之一是 GreenSock，使用它需要向任何 GreenSock 方法传递一个 DOM 元素。通过使用 refs，我们可以将 GreenSock 和 React 结合起来，所以回到之前我们创建的模态框，让我们添加一些动画来使其更完善：
 
-```
+```javascript
 import React, { createRef } from "react";
 import gsap from "gsap";
-
 class InputModal extends React.Component {
   constructor(props) {
     super(props);
     this.inputRef = createRef();
     this.modalRef = createRef();
     this.overlayRef = createRef();
-
     this.state = { value: props.initialValue };
-
     const onComplete = () => {
       this.inputRef.current.focus();
     };
@@ -8978,14 +9422,12 @@ class InputModal extends React.Component {
         y: 25
       });
     this.timeline.play();
-
     document.body.addEventListener("click", this.onClickOutside);
   }
   componentWillUnmount() {
     this.timeline.kill();
     document.removeEventListener("click", this.onClickOutside);
   }
-
   onClickOutside = e => {
     const { onClose } = this.props;
     const element = e.target;
@@ -8998,43 +9440,36 @@ class InputModal extends React.Component {
       onClose();
     }
   };
-
   onChange = e => {
     this.setState({ value: e.target.value });
   };
-
   onSubmit = e => {
     e.preventDefault();
     const { value } = this.state;
-```
-
-```
-const { onSubmit, onClose } = this.props;
-onSubmit(value);
-onClose();
-};
-
-render() {
-  const { value } = this.state;
-  return (
-    <div className="modal--overlay" ref={this.overlayRef}>
-      <div className="modal" ref={this.modalRef}>
-        <h1>Insert a new value</h1>
-        <form action="?" onSubmit={this.onSubmit}>
-          <input
-            ref={this.inputRef}
-            type="text"
-            onChange={this.onChange}
-            value={value}
-          />
-          <button>Save new value</button>
-        </form>
+    const { onSubmit, onClose } = this.props;
+    onSubmit(value);
+    onClose();
+  };
+  render() {
+    const { value } = this.state;
+    return (
+      <div className="modal--overlay" ref={this.overlayRef}>
+        <div className="modal" ref={this.modalRef}>
+          <h1>Insert a new value</h1>
+          <form action="?" onSubmit={this.onSubmit}>
+            <input
+              ref={this.inputRef}
+              type="text"
+              onChange={this.onChange}
+              value={value}
+            />
+            <button>Save new value</button>
+          </form>
+        </div>
       </div>
-    </div>
-  );
+    );
+  }
 }
-}
-
 export default InputModal;
 ```
 
@@ -9048,24 +9483,18 @@ export default InputModal;
 
 更简单的解释方式是——有一个函数需要被调用，而这个函数与任何 React 构件或方法无关。下面是一个常见反模式的简短示例：
 
-```
+```javascript
 import React, { createRef } from 'react';
-```
-
-```
 class Form extends React.Component {
   constructor(props) {
     super(props)
     this.inputRef = createRef()
-
     this.state = { storedValue: "" }
   }
-
   onSubmit = (e) => {
     e.preventDefault()
     this.setState({ storedValue: this.inputRef.current.value })
   }
-
   render() {
     return (
       <div className="modal">
@@ -9088,10 +9517,9 @@ class Form extends React.Component {
 
 当我们控制一个输入框的值时，我们总是有办法检查它的值：
 
-```
+```javascript
 render() {
   const { value } = this.state
-
   return (
     <input
       type="text"
@@ -9110,12 +9538,10 @@ render() {
 
 如今，组件要复杂得多，我们很少直接使用简单的 HTML 元素。更常见的做法是将一个或多个节点包含在代码中，封装围绕视图行为的逻辑：
 
-```
+```javascript
 import React from 'react'
-
 const LabelledInput = (props) => {
   const { id, label, value, onChange } = props
-
   return (
     <div class="labelled--input">
       <label for={id}>{label}</label>
@@ -9123,18 +9549,15 @@ const LabelledInput = (props) => {
     </div>
   )
 }
-
 export default LabelledInput
 ```
 
 现在我们遇到了另一个问题。如果我们将一个 ref 传递给这个组件，我们得到的是一个 React 组件引用，而不是我们想要的输入元素。幸运的是，React 中有一个原生的解决方案，它叫做 `forwardRef`。这允许你定义 ref 在内部指向哪个元素。
 
-```
+```javascript
 import React from 'react'
-
 const LabelledInput = (props, ref) => {
   const { id, label, value, onChange } = props
-
   return (
     <div class="labelled--input">
       <label for={id}>{label}</label>
@@ -9142,7 +9565,6 @@ const LabelledInput = (props, ref) => {
     </div>
   )
 }
-
 export default React.forwardRef(LabelledInput)
 ```
 
@@ -9153,24 +9575,19 @@ export default React.forwardRef(LabelledInput)
 当你使用接口来访问 DOM 时，库会将 React 的内部状态维护在原位。如果你使用反模式破坏了这个模型，可能会导致难以排查错误或进行性能优化。
 
 你只应该在 React 无法通过自身方法处理的隐式函数调用时使用 refs。并且你必须确保它们不会改变组件的内部状态。
-```
-
-
 
 ## 第 9 章
 
 ## ReactJS 列表与键
 
-在开发网站用户界面时，列表非常有用，常用于显示网站菜单，例如导航栏菜单。标准 JS 使用数组来创建列表，这与 React 非常相似。我们稍后会详细讲解，但首先简要了解一下在标准 JS 中如何遍历和更新列表。对于遍历，我们可以使用 map() 函数，如下所示：
+在开发网站用户界面时，列表非常有用，常用于显示网站菜单，例如导航栏菜单。标准 JS 使用数组来创建列表，这与 React 非常相似。我们稍后会详细讲解，但首先简要了解一下在标准 JS 中如何遍历和更新列表。对于遍历，我们可以使用 `map()` 函数，如下所示：
 
-```
+```html
 <script type="text/javascript">
     var numbers = [1,2,3,4,5];
-
     const updatedNums = numbers.map((number)=>{
         return (number + 2);
     });
-
     console.log(updatedNums);
 </script>
 ```
@@ -9181,20 +9598,17 @@ export default React.forwardRef(LabelledInput)
 [3, 4, 5, 6, 7]
 ```
 
-让我们尝试在 ReactJS 中创建一个元素列表。上面代码中的列表数字将在浏览器中渲染为无序列表元素，而不是打印到控制台。我们将使用 JS 的 map() 函数来遍历列表，需要更新的元素将被包裹在 `<li> </li>` 元素中。最后，新列表将被包裹在 `<ul> </ul>` 元素中并渲染到 DOM。
+让我们尝试在 ReactJS 中创建一个元素列表。上面代码中的列表数字将在浏览器中渲染为无序列表元素，而不是打印到控制台。我们将使用 JS 的 `map()` 函数来遍历列表，需要更新的元素将被包裹在 `<li> </li>` 元素中。最后，新列表将被包裹在 `<ul> </ul>` 元素中并渲染到 DOM。
 
 代码示例如下：
 
-```
+```javascript
 import React from 'react';
 import ReactDOM from 'react-dom';
-
 const numbers = [1,2,3,4,5];
-
 const updatedNums = numbers.map((number)=>{
     return <li>{number}</li>;
 });
-
 ReactDOM.render(
     <ul>
         {updatedNums}
@@ -9211,27 +9625,22 @@ ReactDOM.render(
 
 在上面的 React 代码中，列表是直接渲染到 DOM 的，但这并不是良好的 React 实践。我们已经知道 React 中的一切都是独立的组件。想想网站上的导航菜单——很明显，导航菜单项在任何网站上都不是硬编码的。相反，这些项目从数据库中获取，并以列表的形式显示在浏览器中。从组件的角度来看，我们可以说列表通过 props 传递给组件，然后组件将列表渲染到 DOM。上面的代码可以更新为：组件接收一个数组作为 props，然后返回一个无序列表：
 
-```
+```javascript
 import React from 'react';
 import ReactDOM from 'react-dom';
-
 // Component that returns an
 // unordered list
 function Navmenu(props)
 {
     const list = props.menuitems;
-
     const updatedList = list.map((listItems)=>{
         return <li>{listItems}</li>;
     });
-
     return(
         <ul>{updatedList}</ul>
     );
 }
-
 const menuItems = [1,2,3,4,5];
-
 ReactDOM.render(
     <Navmenu menuitems = {menuItems} />,
     document.getElementById('root')
@@ -9250,16 +9659,14 @@ Warning: Each child in an array or iterator should have a unique "key" prop
 
 以下是更新后的代码：
 
-```
+```javascript
 import React from 'react';
 import ReactDOM from 'react-dom';
-
 // Component that returns an
 // unordered list
 function Navmenu(props)
 {
     const list = props.menuitems;
-
     const updatedList = list.map((listItems)=>{
         return(
             <li key={listItems.toString()}>
@@ -9267,14 +9674,11 @@ function Navmenu(props)
             </li>
         );
     });
-
     return(
         <ul>{updatedList}</ul>
     );
 }
-
 const menuItems = [1,2,3,4,5];
-
 ReactDOM.render(
     <Navmenu menuitems = {menuItems} />,
     document.getElementById('root')
@@ -9287,21 +9691,19 @@ ReactDOM.render(
 
 我们知道，键是创建 React 列表所需的字符串属性。它们用于标识列表元素的变化，因此接下来我们需要考虑的是使用什么作为列表项的键。最佳实践建议使用字符串为每个元素赋予其唯一的身份标识。在下面的示例中，你可以看到一个使用字符串作为键的列表：
 
-```
+```javascript
 const numbers = [ 1, 2, 3, 4, 5 ];
-
 const updatedNums = numbers.map((number)=>{
-    return <li>{ number } </li>;
+    return <li key={number.toString()}>{ number } </li>;
 });
 ```
 
 数组索引也可以作为键分配给列表项——下面的示例展示了如何分配数组索引：
 
-```
+```javascript
 const numbers = [ 1, 2, 3, 4, 5 ];
-
 const updatedNums = numbers.map((number, index)=>{
-    return <li>{ number } </li>;
+    return <li key={index}>{ number } </li>;
 });
 ```
 
@@ -9309,44 +9711,37 @@ const updatedNums = numbers.map((number, index)=>{
 
 ### 如何在组件中使用键
 
-请思考一下。你有一个项目列表，并且已经为它们创建了一个单独的组件；你想从该组件中提取这些项目。你需要将键分配给从迭代器返回的组件，而不是分配给列表中的项目。因此，键应该分配给 `<Component />` 而不是 `<li>`。为了避免犯错，最佳实践建议牢记一点——每当从 map() 函数内部返回内容时，都需要为其分配一个键。
+请思考一下。你有一个项目列表，并且已经为它们创建了一个单独的组件；你想从该组件中提取这些项目。你需要将键分配给从迭代器返回的组件，而不是分配给列表中的项目。因此，键应该分配给 `<Component />` 而不是 `<li>`。为了避免犯错，最佳实践建议牢记一点——每当从 `map()` 函数内部返回内容时，都需要为其分配一个键。
 
 下面的第一个示例展示了错误的键使用方式：
 
-```
+```javascript
 import React from 'react';
 import ReactDOM from 'react-dom';
-
 // Component you want extracted
 function MenuItems(props)
 {
     const item = props.item;
-
     return(
         <li>
             {item}
         </li>
     );
 }
-
 // Component that returns an
 // unordered list
 function Navmenu(props)
 {
     const list = props.menuitems;
-
     const updatedList = list.map((listItems)=>{
         return (
             <MenuItems item={listItems} />
         );
     });
-
     return(
         <ul>{updatedList}</ul>);
 }
-
 const menuItems = [1, 2, 3, 4, 5];
-
 ReactDOM.render(
     <Navmenu menuitems={menuItems} />,
     document.getElementById('root')
@@ -9357,44 +9752,37 @@ ReactDOM.render(
 
 ![](img/7091ef933114a5ffe0ae0554f9493e61_247_0.png)
 
-你可以看到，虽然列表已成功渲染，但你仍然会收到警告，提示你没有为迭代器中的元素分配键。这是因为没有为返回给 map() 迭代器的元素分配 key。
+你可以看到，虽然列表已成功渲染，但你仍然会收到警告，提示你没有为迭代器中的元素分配键。这是因为没有为返回给 `map()` 迭代器的元素分配 `key`。
 
 现在你可以看到正确使用键的方式：
 
-```
+```javascript
 import React from 'react';
 import ReactDOM from 'react-dom';
-
 // Component you want extracted
 function MenuItems(props)
 {
     const item = props.item;
-
     return(
         <li>
             {item}
         </li>
     );
 }
-
 // Component that returns an
 // unordered list
 function Navmenu(props)
 {
     const list = props.menuitems;
-
     const updatedList = list.map((listItems)=>{
         return (
             <MenuItems key={listItems.toString()} item={listItems} />
         );
     });
-
     return(
         <ul>{updatedList}</ul>);
 }
-
 const menuItems = [1, 2, 3, 4, 5];
-
 ReactDOM.render(
     <Navmenu menuitems={menuItems} />,
     document.getElementById('root')
@@ -9407,7 +9795,9 @@ ReactDOM.render(
 
 你知道需要为每个数组元素分配唯一的键，但这并不意味着需要全局唯一的键。数组中的每个元素必须有自己的唯一键，因此你可以有多个数组，它们可以共享相同的键集合，只要每个元素的键在各自数组内不重复即可。
 
-在下面的代码示例中，有两个数组——menuItems1 和 menuItems2。每个数组的前五个项目共享相同的键，但代码将成功执行，不会出现警告信息。
+在下面的代码示例中，有两个数组——`menuItems1` 和 `menuItems2`。每个数组的前五个项目共享相同的键，但代码将成功执行，不会出现警告信息。
+
+
 
 ```
 import React from 'react';
@@ -9453,9 +9843,6 @@ ReactDOM.render(
 )
 ```
 
-```);
-```
-
 ### 注意事项
 
 请不要混淆 keys 与 props；它们并不相同。唯一相同之处在于为组件分配 keys 的方法与分配 props 的方法相同。Keys 存在于 React 内部，你无法像访问 props 那样从组件内部访问它们。因此，你赋给 key 的相同值可以用于传递给组件的任何 prop。
@@ -9468,13 +9855,15 @@ ReactDOM.render(
 
 在 ReactJS 中，路由是指当用户输入 URL 或点击链接、图标、按钮或应用程序上的任何其他元素时，让我们能够在应用程序内导航的功能。本章将概述如何在 React 应用程序中使用路由。要为你的 React 应用程序添加路由功能，你需要使用一个非常流行的库叫做 React-Router，它有三个变体：
 
-- **react-router** – 这是核心库
-- **react-router-dom** – 用于 Web 应用程序的核心库变体
-- **react-router-native** – 与 react-native 结合用于开发 iOS 和 Android 移动应用程序的核心库变体
+- `react-router` – 这是核心库
+
+- `react-router-dom` – 用于 Web 应用程序的核心库变体
+
+- `react-router-native` – 与 react-native 结合用于开发 iOS 和 Android 移动应用程序的核心库变体
 
 通常，你不会只单独安装核心库；根据你是开发移动应用还是 Web 应用，你还需要在 dom 和 native 变体之间做出选择。这两个变体都导入了核心库的功能。
 
-在本章中，我们将专注于 Web 应用程序，因此我们将使用 react-router-dom。你可以通过进入项目目录并运行以下命令将此库安装到你的项目中：
+在本章中，我们将专注于 Web 应用程序，因此我们将使用 `react-router-dom`。你可以通过进入项目目录并运行以下命令将此库安装到你的项目中：
 
 ```
 npm install --save react-router-dom
@@ -9482,13 +9871,13 @@ npm install --save react-router-dom
 
 ### 路由器
 
-在 react-router 包中，你会发现几个可以使用的路由器，具体取决于你开发应用程序所针对的平台。这些包括 HashRouter、BrowserRouter 和 MemoryRouter。
+在 `react-router` 包中，你会发现几个可以使用的路由器，具体取决于你开发应用程序所针对的平台。这些包括 `HashRouter`、`BrowserRouter` 和 `MemoryRouter`。
 
-我们将重点关注基于浏览器的应用程序，因此我们将使用 HashRouter 和 BrowserRouter。
+我们将重点关注基于浏览器的应用程序，因此我们将使用 `HashRouter` 和 `BrowserRouter`。
 
-BrowserRouter 用于具有动态服务器的应用程序。这些可以处理任何类型的 URL，而 HashRouter 用于静态网站，服务器只能响应已知文件的请求。
+`BrowserRouter` 用于具有动态服务器的应用程序。这些可以处理任何类型的 URL，而 `HashRouter` 用于静态网站，服务器只能响应已知文件的请求。
 
-我们将使用 BrowserRouter，并假设我们的应用程序服务器是动态的。请记住，路由器只会期望接收一个子元素。以下是一个示例：
+我们将使用 `BrowserRouter`，并假设我们的应用程序服务器是动态的。请记住，路由器只会期望接收一个子元素。以下是一个示例：
 
 ```jsx
 ReactDOM.render(
@@ -9504,7 +9893,7 @@ ReactDOM.render(
 
 每个路由器都会创建自己的 history 对象，在其中跟踪当前位置，并且当该位置发生变化时，应用程序会重新渲染。正因如此，其他 React 组件将依赖于该对象的存在，这就是为什么它们必须在路由器内渲染。
 
-BrowserRouter 使用 HTML5 history API 来确保界面与浏览器地址栏中当前的 URL 保持同步。Router 创建的 history 对象有多个属性，其中一个就是 location 属性。它的值是一个对象，也是我们在本章中将重点讨论的一个属性。
+`BrowserRouter` 使用 HTML5 history API 来确保界面与浏览器地址栏中当前的 URL 保持同步。Router 创建的 history 对象有多个属性，其中一个就是 location 属性。它的值是一个对象，也是我们在本章中将重点讨论的一个属性。
 
 当你在浏览器中渲染前面的示例时，React DevTools 窗口应该会显示 history 对象。在 history 对象内部是 location 对象，它看起来像这样：
 
@@ -9522,7 +9911,7 @@ React Router 包中最关键的部分之一是 `<Route/>` 组件。当路由的�
 <Route path="/items"/>
 ```
 
-当路径名读作 /items，或者所有其他路径以 /items 开头时，路由就会匹配。一个这样的例子是 /items/2。如果你只想精确匹配 /items，`<Route/>` 组件必须接受一个 exact prop。添加此 prop 后，你可以确保渲染的是与当前位置完全匹配的路径名。以下是使用 exact prop 的示例：
+当路径名读作 `/items`，或者所有其他路径以 `/items` 开头时，路由就会匹配。一个这样的例子是 `/items/2`。如果你只想精确匹配 `/items`，`<Route/>` 组件必须接受一个 exact prop。添加此 prop 后，你可以确保渲染的是与当前位置完全匹配的路径名。以下是使用 exact prop 的示例：
 
 ```jsx
 <Route exact path="/items" />
@@ -9530,19 +9919,21 @@ React Router 包中最关键的部分之一是 `<Route/>` 组件。当路由的�
 
 当路径匹配成功时，需要渲染一个 React 组件以提供 UI 变化。
 
-你还应该注意，react-router 包使用一个名为 Path-to-RegExp 的包将路径字符串转换为正则表达式，然后与当前位置进行匹配。
+你还应该注意，`react-router` 包使用一个名为 Path-to-RegExp 的包将路径字符串转换为正则表达式，然后与当前位置进行匹配。
 
 在 `<Route/>` 组件中有三个 prop，我们用它们来确定需要渲染哪个组件：
 
-- **component**
-- **render**
-- **children**
+- `component`
+
+- `render`
+
+- `children`
 
 让我们更详细地看看这些。
 
 #### Component Prop
 
-这个 prop 用于定义当路径匹配时 Route 返回的元素。提供的组件使用 React.createElement 来创建元素，你可以在下面看到如何使用 component prop 的示例：
+这个 prop 用于定义当路径匹配时 Route 返回的元素。提供的组件使用 `React.createElement` 来创建元素，你可以在下面看到如何使用 component prop 的示例：
 
 ```jsx
 <Route
@@ -9552,7 +9943,7 @@ React Router 包中最关键的部分之一是 `<Route/>` 组件。当路由的�
 />
 ```
 
-这里，当路径与当前位置匹配时，Items 组件被匹配。
+这里，当路径与当前位置匹配时，`Items` 组件被匹配。
 
 #### Render Prop
 
@@ -9576,7 +9967,7 @@ const cat = {category: "food"}
 />
 ```
 
-在这个示例中，额外的 prop 由 data 表示，并被传递到 Items 组件中。这个示例中的额外 prop 是 dog。
+在这个示例中，额外的 prop 由 data 表示，并被传递到 `Items` 组件中。这个示例中的额外 prop 是 dog。
 
 #### Children Prop
 
@@ -9586,11 +9977,11 @@ const cat = {category: "food"}
 <Route children={props => <Items {...props}>}/>
 ```
 
-在这个示例中，Items 组件将始终被渲染。
+在这个示例中，`Items` 组件将始终被渲染。
 
 ### Switch 组件
 
-在 react-router 库中，你还会发现一个 `<Switch/>` 组件。它用于包裹多个 `<Route/>` 组件。这个组件将始终只从所有子路由中选择第一个匹配的路由。
+在 `react-router` 库中，你还会发现一个 `<Switch/>` 组件。它用于包裹多个 `<Route/>` 组件。这个组件将始终只从所有子路由中选择第一个匹配的路由。
 
 在下一个示例中，你可以看到当没有 Switch 组件时，多个路由的行为方式：
 
@@ -9605,7 +9996,7 @@ const cat = {category: "food"}
 />
 ```
 
-当在浏览器中导航到 /items/2 时，你会看到两个 Route 组件都被 React 元素渲染：
+当在浏览器中导航到 `/items/2` 时，你会看到两个 Route 组件都被 React 元素渲染：
 
 List of items
 
@@ -9613,7 +10004,7 @@ Item with id of 2
 
 这很可能是预期的行为——第一个组件将显示标题，而具有相同基础路径的其他路由都将渲染不同的用户界面。
 
-让我们对上面的示例进行修改。这一次，我们将添加 `<Switch/>` 组件，并查看当导航到 /items/2 时会发生什么：
+让我们对上面的示例进行修改。这一次，我们将添加 `<Switch/>` 组件，并查看当导航到 `/items/2` 时会发生什么：
 
 ```jsx
 <Switch>
@@ -9628,9 +10019,7 @@ Item with id of 2
 </Switch>
 ```
 
-你将只看到 List of Items 被渲染在浏览器中，因为 Switch 组件将只匹配与当前位置匹配的第一个路径。在这里，一旦在浏览器地址栏中输入 /items/2，名为 /items 的路由就会立即被匹配。
-
-
+你将只看到 List of Items 被渲染在浏览器中，因为 Switch 组件将只匹配与当前位置匹配的第一个路径。在这里，一旦在浏览器地址栏中输入 `/items/2`，名为 `/items` 的路由就会立即被匹配。
 
 ### Link 组件
 
@@ -9688,10 +10077,13 @@ npm install && npm start
 
 让我们看看这些属性：
 
--   **url:** 这是一个字符串，它将返回匹配到的 URL 部分
--   **path:** 这是一个字符串，将返回路由路径的一部分
--   **isExact:** 这是一个布尔值——如果匹配是精确的，它将返回 true；如果不是，则返回 false
--   **params:** 这是一个对象，包含 Path-to-RegExp 包匹配的键值对
+- `url:` 这是一个字符串，它将返回匹配到的 URL 部分
+
+- `path:` 这是一个字符串，将返回路由路径的一部分
+
+- `isExact:` 这是一个布尔值——如果匹配是精确的，它将返回 true；如果不是，则返回 false
+
+- `params:` 这是一个对象，包含 Path-to-RegExp 包匹配的键值对
 
 为了成功实现嵌套路由，我们需要对嵌套的 Links 使用 `match.url`，而对嵌套的路由使用 `match.path`。
 
@@ -9705,10 +10097,13 @@ npm install && npm start
 
 项目中有四个组件：
 
--   **Header** —— 包含指向 Home、Category 和 Items 的链接
--   **Home** —— 包含一些虚拟数据
--   **Items** —— 包含一个虚拟项目的列表
--   **Category** —— 展示嵌套路由和动态路由
+- `Header` —— 包含指向 Home、Category 和 Items 的链接
+
+- `Home` —— 包含一些虚拟数据
+
+- `Items` —— 包含一个虚拟项目的列表
+
+- `Category` —— 展示嵌套路由和动态路由
 
 我们将重点关注 Category 组件，因为这里展示了嵌套路由和动态路由：
 
@@ -9735,7 +10130,7 @@ export const Category = ({match}) => (
 
 Category 组件内部有一个参数列表，其中匹配对象被解构（destructured），并使用 `match.url` 来链接到各个分类。
 
-需要在 Link 组件上为指向 /shoes、/food 和 /dresses 这三个 URL 的链接构造属性值，这是通过模板字面量（template literals）完成的。
+需要在 Link 组件上为指向 `/shoes`、`/food` 和 `/dresses` 这三个 URL 的链接构造属性值，这是通过模板字面量（template literals）完成的。
 
 如果你在浏览器中打开这个示例，然后点击 Category 链接，你会看到三个分类。当你点击其中一个时，URL 会更新，但界面不会改变。
 
@@ -9743,17 +10138,21 @@ Category 组件内部有一个参数列表，其中匹配对象被解构（destr
 
 ### React 路由示例
 
--   [Home](http://localhost:3000/home)
--   [Items](http://localhost:3000/items)
--   [Category](http://localhost:3000/category)
+- [Home](http://localhost:3000/home)
+
+- [Items](http://localhost:3000/items)
+
+- [Category](http://localhost:3000/category)
 
 #### Category 组件
 
 **点击一个分类**
 
--   [Shoes](http://localhost:3000/category/shoes)
--   [Food](http://localhost:3000/category/food)
--   [Dresses](http://localhost:3000/category/dresses)
+- [Shoes](http://localhost:3000/category/shoes)
+
+- [Food](http://localhost:3000/category/food)
+
+- [Dresses](http://localhost:3000/category/dresses)
 
 这是一个需要修复的缺陷。我们需要在每次点击分类链接时改变界面，为此需要在 Category 组件中创建一个动态路由。该路由将有一个 `match.path` 属性，界面将动态改变：
 
@@ -9787,17 +10186,21 @@ render={props =>
 
 ### React 路由示例
 
--   [Home](#)
--   [Items](#)
--   [Category](#)
+- [Home](#)
+
+- [Items](#)
+
+- [Category](#)
 
 #### Category 组件
 
 **点击一个分类**
 
--   [Shoes](#)
--   [Food](#)
--   [Dresses](#)
+- [Shoes](#)
+
+- [Food](#)
+
+- [Dresses](#)
 
 food category
 
@@ -9831,23 +10234,24 @@ npm install && npm start
 
 在私有路由（private route）中，有三个属性——`isAuthenticated`、`component` 和 `path`。让我们更仔细地看看这个私有（自定义）路由。
 
-这些属性在参数列表中被解构，并且 `component` 被重命名为
+这些属性在参数列表中被解构，并且 `component` 被重命名为 Component（注意从小写变为大写）。Route 组件被传递给 render 和 `...rest` props。在 render prop 中，编写了逻辑来判断是否应该渲染某个组件，以及当用户已登录时应该渲染哪些组件。如果没有登录，用户将被重定向到登录页面。
 
-Component（注意从小写变为大写）。Route 组件被传递给 render 和 ...rest props。在 render prop 中，编写了逻辑来判断是否应该渲染某个组件，以及当用户已登录时应该渲染哪些组件。如果没有登录，用户将被重定向到登录页面。
+在 Login 组件中有一个虚拟的身份验证方法。当用户点击登录按钮时，该方法会将用户登录。当登录成功时，`redirectToReferrer` 状态属性被设置为 true，触发重定向，将用户送到他们原本想去的地方。如果他们是从登录路由开始的，则被重定向到 `/path`。
 
-在 Login 组件中有一个虚拟的身份验证方法。当用户点击登录按钮时，该方法会将用户登录。当登录成功时，redirectToReferrer 状态属性被设置为 true，触发重定向，将用户送到他们原本想去的地方。如果他们是从登录路由开始的，则被重定向到 /path。
-
-在克隆的项目运行时，访问 localhost:3000，你应该会看到类似这样的内容：
+在克隆的项目运行时，访问 `localhost:3000`，你应该会看到类似这样的内容：
 
 ![](img/7091ef933114a5ffe0ae0554f9493e61_263_0.png)
 
-如果你点击 Admin 链接时未登录，你会被送到 /login 页面，并显示登录按钮。当你点击该按钮时，你会被送到 admin 页面，该页面是受保护的，如下所示：
+如果你点击 Admin 链接时未登录，你会被送到 `/login` 页面，并显示登录按钮。当你点击该按钮时，你会被送到 admin 页面，该页面是受保护的，如下所示：
 
 ### React 路由示例
 
 - Home
+
 - Items
+
 - Category
+
 - Admin
 
 #### 受保护的管理组件
@@ -9879,6 +10283,7 @@ Flux 有一个令人难忘的口号——"*单向数据流*"，下图展示了�
 ![](img/7091ef933114a5ffe0ae0554f9493e61_266_0.png)
 
 最重要的是记住数据以这种方式流动：
+
 React → Dispatcher → Stores → React。
 
 让我们深入了解这些主要组件，看看它们是如何连接的。
@@ -9886,14 +10291,19 @@ React → Dispatcher → Stores → React。
 不过，在此之前，Flux 文档提供了以下*注意事项*：
 
 > Flux is a pattern rather than a framework, and it has no hard dependencies.
+
 > However, EventEmitter is often used for our Views as a basis for React and
+
 > Stores. The Dispatcher is the one part of Flux that is not easily available
+
 > elsewhere but is needed for your Flux toolbox.
 
 因此，Flux 中有三个组件：
 
 1. **Views** – `React = require('react')`
+
 2. **Dispatcher** – `Dispatcher = require('flux').Dispatcher`
+
 3. **Stores** – `EventEmitter = require('events').EventEmitter.`
 
 不过，很快我们就会看到，这会变成 `Backbone = require("backbone")`
@@ -10040,8 +10450,6 @@ var MessageStore = merge(EventEmitter.prototype, {
 
 Backbone 提供了 Models 和 Collections，它们拥有 Flux 中基于 EventEmitter 的 Stores 所具备的一切功能。
 
-
-
 当 Flux 告诉你使用原生 EventEmitter 时，他们实际上是在建议你，每当你创建一个 store 时，你都在重新创建 Backbone 中 50% 到 75% 的 Models 和 Collections。你可以将 EventEmitter 用于 Stores 类比于在拥有更好、更丰富的选择时使用原生 Node.js 来构建服务器，例如像 Express.js 这样的微框架。
 
 就像 Express 基于 Node 构建一样，Models 和 Collections 也是基于 EventEmitter 构建的。而且它包含了你所需的一切——Backbone 会触发 change 事件，并且包含 getter、setter、查询方法以及你可能需要的其他所有功能。
@@ -10053,7 +10461,9 @@ Backbone 提供了 Models 和 Collections，它们拥有 Flux 中基于 EventEmi
 这是 Flux 架构与 Backbone 的结合，基本模式如下：
 
 1. Models 或 Collections 用于实例化 Stores。这些 models 或 collections 在 Dispatcher 上注册了一个回调，并且通常是单例的。
-2. View 组件绝不直接修改 Store，也就是说，没有 .set() 方法。相反，Actions 由组件派发给 Dispatcher。
+
+2. View 组件绝不直接修改 Store，也就是说，没有 `.set()` 方法。相反，Actions 由组件派发给 Dispatcher。
+
 3. View 组件通过绑定到 Stores 的事件来查询 Stores 并触发事件。
 
 让我们逐一介绍，并使用 Backbone 和 Flux 的示例：
@@ -10102,7 +10512,7 @@ TodoStore = new TodoCollection()
 module.exports = TodoStore
 ```
 
-2. **View 组件绝不直接修改 Store，也就是说，没有 .set() 方法。相反，Actions 由组件派发给 Dispatcher。**
+2. **View 组件绝不直接修改 Store，也就是说，没有 `.set()` 方法。相反，Actions 由组件派发给 Dispatcher。**
 
 ```
 # components/TodoComponent.coffee
@@ -10161,7 +10571,7 @@ module.exports = TodoListComponent
 
 ### Mixin Example
 
-每当你将基于 Flux 和 Backbone 的 Store 添加到一个组件时，每次都写 this.on() 和 this.off() 代码可能会令人沮丧。
+每当你将基于 Flux 和 Backbone 的 Store 添加到一个组件时，每次都写 `this.on()` 和 `this.off()` 代码可能会令人沮丧。
 
 在下面的 React Mixin 示例中，虽然它有些简单，但它会让你的迭代工作变得更加容易：
 
@@ -10212,11 +10622,11 @@ React.renderComponent(
 
 在之前的 Flux 示意图中，你可以看到 Web API 只能通过 ActionCreators 进行交互。这要求服务器在响应之前才能将 actions 发送给 Dispatcher，但是，Store 难道不应该在服务器之前知道任何变化吗？
 
-我们可以交换示意图，将其翻转，使 Stores 直接通过 Backbone 中的 sync() 方法与 RESTful CRUD API 交互。如果你正在使用这些 API，这将非常便利。
+我们可以交换示意图，将其翻转，使 Stores 直接通过 Backbone 中的 `sync()` 方法与 RESTful CRUD API 交互。如果你正在使用这些 API，这将非常便利。
 
-维护数据完整性也没有问题。当使用 .set() 设置新属性时，change 事件会触发 React 重新渲染，新数据会以乐观方式显示。当你尝试使用 .save() 保存到服务器时，request 事件会告诉你如何显示加载图标。当一切完成后，sync 事件会告诉你需要移除加载图标，或者 error 事件会让你知道需要将某些内容标红。
+维护数据完整性也没有问题。当使用 `.set()` 设置新属性时，change 事件会触发 React 重新渲染，新数据会以乐观方式显示。当你尝试使用 `.save()` 保存到服务器时，request 事件会告诉你如何显示加载图标。当一切完成后，sync 事件会告诉你需要移除加载图标，或者 error 事件会让你知道需要将某些内容标红。
 
-第一层防御还有验证和无效事件，以及用于从服务器获取新信息的 .fetch() 方法。
+第一层防御还有验证和无效事件，以及用于从服务器获取新信息的 `.fetch()` 方法。
 
 ---
 
@@ -10242,9 +10652,7 @@ React.renderComponent(
 
 React Animation 是一个相对较新的 React 包，帮助你将 UI 动画添加到项目中。这个包充满了包装组件和预构建的动画关键帧，你可以轻松快速地添加到项目中。
 
-当然，还有其他方式可以为你的应用构建动画。你可以
-
-使用 **React Transition Group**，它允许你添加和移除类名，从而应用动画效果。遗憾的是，React Transition Group 并不包含动画本身，因此这部分工作仍需你自己处理。或者，你可以选择 **React Spring**，它提供了许多高级工具，帮助你处理大量动画元素。
+当然，还有其他方式可以为你的应用构建动画。你可以使用 **React Transition Group**，它允许你添加和移除类名，从而应用动画效果。遗憾的是，React Transition Group 并不包含动画本身，因此这部分工作仍需你自己处理。或者，你可以选择 **React Spring**，它提供了许多高级工具，帮助你处理大量动画元素。
 
 你真正需要的是一个介于两者之间的方案，它能简化为元素部分添加动画的过程，并提供大量可直接集成到项目中的预构建动画。这就是 **React Animations** 的用武之地——它易于使用，提供了足够的、一致的灵活性，帮助你根据项目需求定制动画。
 
@@ -10252,9 +10660,9 @@ React Animation 是一个相对较新的 React 包，帮助你将 UI 动画添�
 
 ### AnimateOnChange
 
-AnimateOnChange 是几个简单的包装组件之一，它包裹你的内容，并根据需要应用动画。
+`AnimateOnChange` 是几个简单的包装组件之一，它包裹你的内容，并根据需要应用动画。
 
-有时，你希望通过添加一些可见的动画效果，让用户知道某些内容已经更改。如果你需要在用户界面的多个部分编写此类功能，这很快就会变得枯燥且耗时，错误也容易在此时产生。这时，你可以用 AnimateOnChange 组件包裹你的内容。
+有时，你希望通过添加一些可见的动画效果，让用户知道某些内容已经更改。如果你需要在用户界面的多个部分编写此类功能，这很快就会变得枯燥且耗时，错误也容易在此时产生。这时，你可以用 `AnimateOnChange` 组件包裹你的内容。
 
 首先，通过以下命令安装 React Animation：
 
@@ -10280,7 +10688,7 @@ Your content and components go here
 
 ### 自定义动画
 
-AnimateOnChange 组件还允许你以两种不同的方式创建自定义动画。首先，它允许你创建关键帧，并将动画字符串传入 `animationIn` 和 `animationOut` 属性。假设你将用于隐藏内容的关键帧命名为 `my-anim-out`，将用于显示新内容的关键帧命名为 `my-anim-in`；这些关键帧可以这样定义：
+`AnimateOnChange` 组件还允许你以两种不同的方式创建自定义动画。首先，它允许你创建关键帧，并将动画字符串传入 `animationIn` 和 `animationOut` 属性。假设你将用于隐藏内容的关键帧命名为 `my-anim-out`，将用于显示新内容的关键帧命名为 `my-anim-in`；这些关键帧可以这样定义：
 
 ```
 @keyframes custom-animation-in {
@@ -10310,13 +10718,13 @@ AnimateOnChange 组件还允许你以两种不同的方式创建自定义动画�
 
 ### HideUntilLoaded
 
-一些 UI 组件使用背景图片或另一张可能是动态的、并且文件尺寸可能非常大的图片。我们不希望组件在图片完全加载之前就显示出来，因为这样可能导致网站上只显示部分内容。你也可能希望组件在图片完全加载前保持隐藏状态，这就是 HideUntilLoaded 组件的用武之地。
+一些 UI 组件使用背景图片或另一张可能是动态的、并且文件尺寸可能非常大的图片。我们不希望组件在图片完全加载之前就显示出来，因为这样可能导致网站上只显示部分内容。你也可能希望组件在图片完全加载前保持隐藏状态，这就是 `HideUntilLoaded` 组件的用武之地。
 
 它的使用方式与上一个组件类似，也是包裹你的内容；在这种情况下，它会告诉内容需要等待哪张图片。
 
 你甚至可以传入一个加载指示器组件，向用户直观地展示图片正在加载——这样，他们就会知道有事情正在发生。最后，可以为所有内容完全加载后指定一个 `animationIn` 动画。
 
-HideUntilLoaded 组件非常有用，特别是在你的组件依赖于大尺寸背景图片的情况下。这些图片可以是你的产品图片，带有文字叠加和阴影效果，或者是包含文字和照片的媒体组件。这个组件可以帮助你将它们全部隐藏，直到它们准备就绪，然后一起进行动画处理。
+`HideUntilLoaded` 组件非常有用，特别是在你的组件依赖于大尺寸背景图片的情况下。这些图片可以是你的产品图片，带有文字叠加和阴影效果，或者是包含文字和照片的媒体组件。这个组件可以帮助你将它们全部隐藏，直到它们准备就绪，然后一起进行动画处理。
 
 ### 预构建关键帧
 
@@ -10343,15 +10751,23 @@ My Component
 
 该包中内置的动画有：
 
--   bounceIn
--   bounceOut
--   fadeIn
--   fadeInUp
--   fadeOut
--   popIn
--   popOut
--   slideIn
--   slideOut
+- `bounceIn`
+
+- `bounceOut`
+
+- `fadeIn`
+
+- `fadeInUp`
+
+- `fadeOut`
+
+- `popIn`
+
+- `popOut`
+
+- `slideIn`
+
+- `slideOut`
 
 思考一下你的项目，以及你可以在用户界面的哪些地方使用动画。例如，你可以将用户的注意力吸引到某个特定的按钮上，或者用它来让列表中的项目淡入淡出。无论你想怎么做，都可以考虑使用 React Animations 来帮助你。只需像这样安装它：
 
@@ -10387,14 +10803,15 @@ JavaScript 高阶组件以函数的形式接收参数，然后返回另一个函
 
 组合是使用这些函数最有趣的部分，因为可以编写更小的函数来处理某一段逻辑。然后，使用这些较小的函数组合成更复杂的函数，这降低了代码出错的风险，使代码更具可读性和易于理解。
 
-
-
 部分高阶函数已经内置于 JavaScript 中，以下是一些示例：
 
-- **.forEach()** – 用于使用相同的代码遍历数组中的每个元素。但是，它不会以任何方式修改或改变数组，且返回值为 undefined。
-- **.map()** – 用于转换数组。通过对数组中的每个元素应用一个函数，然后使用返回的值构建一个新数组来实现。
-- **.reduce()** – 用于对每个数组值执行特定函数，从左到右进行处理。
-- **.filter()** – 用于检查给定数组中的每个元素，查看其是否满足 filter() 方法内指定的条件。返回一个包含与指定条件匹配的元素的新数组。
+- `.forEach()` – 用于使用相同的代码遍历数组中的每个元素。但是，它不会以任何方式修改或改变数组，且返回值为 undefined。
+
+- `.map()` – 用于转换数组。通过对数组中的每个元素应用一个函数，然后使用返回的值构建一个新数组来实现。
+
+- `.reduce()` – 用于对每个数组值执行特定函数，从左到右进行处理。
+
+- `.filter()` – 用于检查给定数组中的每个元素，查看其是否满足 `filter()` 方法内指定的条件。返回一个包含与指定条件匹配的元素的新数组。
 
 JavaScript 包含大量高阶函数，但你仍然可以创建自己的自定义高阶函数。
 
@@ -10402,7 +10819,7 @@ JavaScript 包含大量高阶函数，但你仍然可以创建自己的自定义
 
 假设我们要编写一个用于将整数格式化为货币形式的函数。你需要加入某种自定义配置来指定货币符号，并为金额添加分隔符——我们使用小数点分隔符。
 
-我们会编写一个高阶函数来接收符号和分隔符，然后使用小数运算符和货币符号对传入的值进行格式化。我们将这个高阶函数命名为 formatCurrency。
+我们会编写一个高阶函数来接收符号和分隔符，然后使用小数运算符和货币符号对传入的值进行格式化。我们将这个高阶函数命名为 `formatCurrency`。
 
 ```
 const formatCurrency = function(
@@ -10419,7 +10836,7 @@ const formatCurrency = function(
 }
 ```
 
-formatCurrency 函数将返回另一个包含小数点分隔符和固定货币符号的函数。该格式化函数接收一个值，并使用该函数对其进行格式化——提取整数部分和小数部分。使用模板字面量来构造函数的返回值，并将货币符号、整数部分、分隔符和小数部分拼接在一起。
+`formatCurrency` 函数将返回另一个包含小数点分隔符和固定货币符号的函数。该格式化函数接收一个值，并使用该函数对其进行格式化——提取整数部分和小数部分。使用模板字面量来构造函数的返回值，并将货币符号、整数部分、分隔符和小数部分拼接在一起。
 
 让我们为这个高阶函数赋值，以便使用它并查看结果：
 
@@ -10431,7 +10848,7 @@ formatCurrency 函数将返回另一个包含小数点分隔符和固定货币�
 "$34.99" //formatted value
 ```
 
-这里，我们所做的就是创建一个名为 getLabel 的变量。然后，将 formatCurrency 赋值给它，并将货币格式化参数传入——即小数点分隔符和货币符号。要使用该函数，调用 getLabel（现在是一个函数），并传入需要格式化的值即可。
+这里，我们所做的就是创建一个名为 `getLabel` 的变量。然后，将 `formatCurrency` 赋值给它，并将货币格式化参数传入——即小数点分隔符和货币符号。要使用该函数，调用 `getLabel`（现在是一个函数），并传入需要格式化的值即可。
 
 这就是创建自定义高阶函数所需的全部步骤。
 
@@ -10446,24 +10863,33 @@ formatCurrency 函数将返回另一个包含小数点分隔符和固定货币�
 关于高阶组件，你需要了解以下几点：
 
 1. 组件既不会被修改也不会被改变，而是创建新的组件
+
 2. 高阶组件用于组合组件，使代码更易于复用
+
 3. 高阶组件是纯函数，没有任何副作用，只返回新组件
 
 以下是一些你可能在实际开发中遇到的高阶组件：
 
 | 库 | 示例 |
+
 |---------|---------|
-| react-redux | connect(mapStateToProps, mapDispatchToProps)(UserPage) |
-| react-router | withRouter(UserPage) |
-| material-ui | withStyles(styles)(UserPage) |
+
+| react-redux | `connect(mapStateToProps, mapDispatchToProps)(UserPage)` |
+
+| react-router | `withRouter(UserPage)` |
+
+| material-ui | `withStyles(styles)(UserPage)` |
 
 ### 高阶组件结构
 
 高阶组件的结构与高阶函数非常相似：
 
 - 它们是组件
+
 - 它们接收组件作为参数
+
 - 它们返回新组件
+
 - 返回的组件能够渲染最初传入的组件
 
 在下面的代码示例中，你可以看到 React 高阶组件的结构：
@@ -10482,7 +10908,7 @@ const higherOrderComponent = (WrappedComponent) => {
 };
 ```
 
-如你所见，higherOrderComponent 接收 WrappedComponent（即另一个组件），然后在内部返回一个新组件。使用这种技术，我们可以通过从组件创建高阶组件来复用组件的逻辑，并在需要的地方使用它。
+如你所见，`higherOrderComponent` 接收 `WrappedComponent`（即另一个组件），然后在内部返回一个新组件。使用这种技术，我们可以通过从组件创建高阶组件来复用组件的逻辑，并在需要的地方使用它。
 
 ### 使用场景
 
@@ -10526,20 +10952,20 @@ export default List;
 const List = (props) => {};
 ```
 
-首先，初始化函数组件，命名为 List，然后将 props 传递给它。
+首先，初始化函数组件，命名为 `List`，然后将 props 传递给它。
 
 ```
 const { repos } = props;
 ```
 
-接下来，创建一个名为 repos 的常量，然后将其传递给组件的 props。这允许我们使用它来修改组件。
+接下来，创建一个名为 `repos` 的常量，然后将其传递给组件的 props。这允许我们使用它来修改组件。
 
 ```
 if (!repos) return null;
 if (!repos.length) return <p>No repos, sorry</p>;
 ```
 
-这里我们表达的意思是，如果获取完成后 repos prop 仍然为空，则应返回 null。我们还进行了条件渲染——如果 repos prop 的长度为空，浏览器中应渲染"no repos, sorry"。
+这里我们表达的意思是，如果获取完成后 `repos` prop 仍然为空，则应返回 null。我们还进行了条件渲染——如果 `repos` prop 的长度为空，浏览器中应渲染"no repos, sorry"。
 
 ```
 return (
@@ -10551,7 +10977,7 @@ return (
 );
 ```
 
-这里，我们遍历名为 repos 的数组，返回一个列表，其中包含各仓库的完整名称，并为每个条目提供唯一的 key。
+这里，我们遍历名为 `repos` 的数组，返回一个列表，其中包含各仓库的完整名称，并为每个条目提供唯一的 key。
 
 现在，为了让用户满意，我们需要处理加载状态，让我们编写一个高阶组件：
 
@@ -10567,9 +10993,9 @@ function WithLoading(Component) {
 export default WithLoading;
 ```
 
-当应用仍在获取数据且 props 正在被注入到状态中时，会显示文本"Please wait, fetching data might take a while"。我们还使用 isLoading 来判断是否渲染组件。
+当应用仍在获取数据且 props 正在被注入到状态中时，会显示文本"Please wait, fetching data might take a while"。我们还使用 `isLoading` 来判断是否渲染组件。
 
-在你创建的 App.js 文件中，可以将加载逻辑传递给 WithLoading，而无需在 List 中处理它。
+在你创建的 `App.js` 文件中，可以将加载逻辑传递给 `WithLoading`，而无需在 `List` 中处理它。
 
 ```
 import React from 'react';
@@ -10618,9 +11044,9 @@ class App extends React.Component {
 }
 ```
 
-我们所做的不过是创建一个类组件并将其命名为 App()。然后使用两个属性初始化状态——loading: false 和 repos: null。loading 的初始状态为 false，repos 的初始状态为 null。
+我们所做的不过是创建一个类组件并将其命名为 `App()`。然后使用两个属性初始化状态——`loading: false` 和 `repos: null`。`loading` 的初始状态为 false，`repos` 的初始状态为 null。
 
-当组件开始挂载时，loading 属性的状态被设置为 true，并立即向 API URL 发起 fetch 请求，该 URL 包含填充 List 组件所需的数据。当请求完成时
+当组件开始挂载时，`loading` 属性的状态被设置为 true，并立即向 API URL 发起 fetch 请求，该 URL 包含填充 `List` 组件所需的数据。当请求完成时
 
 当加载完成后，加载状态被设置为 false，并且仓库状态会填充我们通过 API 请求获取到的数据。
 
@@ -10628,7 +11054,7 @@ class App extends React.Component {
 const ListWithLoading = WithLoading(List);
 ```
 
-在这行代码中，我们创建了一个名为 ListWithLoading 的组件。我们传递了 WithLoading 高阶组件和 List 组件。
+在这行代码中，我们创建了一个名为 `ListWithLoading` 的组件。我们传递了 `WithLoading` 高阶组件和 `List` 组件。
 
 ```
 render() {
@@ -10641,7 +11067,7 @@ render() {
 }
 ```
 
-在这里，我们渲染了 ListWithLoading 组件，该组件通过传入 WithLoading 高阶组件和 List 组件得到了增强。我们还将加载状态的值和仓库状态的值作为 props 传递给了该组件。
+在这里，我们渲染了 `ListWithLoading` 组件，该组件通过传入 `WithLoading` 高阶组件和 `List` 组件得到了增强。我们还将加载状态的值和仓库状态的值作为 props 传递给了该组件。
 
 页面仍在尝试从 API 获取数据，因此高阶组件会在浏览器中渲染文本：
 
@@ -10653,9 +11079,9 @@ render() {
 
 ### 条件渲染组件
 
-假设我们有一个只应在用户认证通过时才渲染的组件。这将是一个受保护的组件。可以创建一个名为 withAuth() 的高阶组件来包裹这些受保护组件，然后在高阶组件中进行检查，以确保该特定组件仅在用户认证通过时才渲染。
+假设我们有一个只应在用户认证通过时才渲染的组件。这将是一个受保护的组件。可以创建一个名为 `withAuth()` 的高阶组件来包裹这些受保护组件，然后在高阶组件中进行检查，以确保该特定组件仅在用户认证通过时才渲染。
 
-你可以根据此示例编写一个 withAuth() 高阶组件，如下所示：
+你可以根据此示例编写一个 `withAuth()` 高阶组件，如下所示：
 
 ```
 // withAuth.js
@@ -10691,10 +11117,11 @@ loginErrorMessage }
 export default withAuth;
 ```
 
-这就是 withAuth() 高阶组件。它将接收一个组件并返回另一个名为 AuthenticatedComponent 的组件。该组件会检查用户是否已认证。如果没有，则返回另一个名为 loginErrorMessage 的组件。如果用户已认证，则返回被包裹的组件。
+这就是 `withAuth()` 高阶组件。它将接收一个组件并返回另一个名为 `AuthenticatedComponent` 的组件。该组件会检查用户是否已认证。如果没有，则返回另一个名为 `loginErrorMessage` 的组件。如果用户已认证，则返回被包裹的组件。
 
 **注意**
-你的应用逻辑必须用于设置 this.props.isAuthenticated，或者必须通过 react-redux 从全局状态中检索它。
+
+你的应用逻辑必须用于设置 `this.props.isAuthenticated`，或者必须通过 react-redux 从全局状态中检索它。
 
 我们可以在一个受保护的组件中这样使用这个高阶组件：
 
@@ -10723,13 +11150,13 @@ export class MyProtectedComponent extends React.Component {
 export default withAuth(MyPrivateComponent);
 ```
 
-创建了一个只能由认证用户看到的组件。该组件被 withAuth 高阶组件包裹，以确保其免受未认证用户的访问。
+创建了一个只能由认证用户看到的组件。该组件被 `withAuth` 高阶组件包裹，以确保其免受未认证用户的访问。
 
 #### 为你的组件提供特定样式
 
-延续上面的用例，可以根据高阶组件传入的 UI 状态，为特定的 UI 状态渲染特定的样式。例如，如果你需要在多个地方使用特定的样式，如 fontSize、backgroundColor 等，你可以使用一个高阶组件来提供它们——只需将该组件与另一个将特定 className 注入到 props 中的组件包裹即可。
+延续上面的用例，可以根据高阶组件传入的 UI 状态，为特定的 UI 状态渲染特定的样式。例如，如果你需要在多个地方使用特定的样式，如 `fontSize`、`backgroundColor` 等，你可以使用一个高阶组件来提供它们——只需将该组件与另一个将特定 `className` 注入到 props 中的组件包裹即可。
 
-让我们用一个简单的组件作为例子——一个渲染单词 "Hello" 后跟一个人名的组件。该组件将接收两个 props——一个 name，另一个影响被渲染的 JSX（JSX = JavaScript XML）。
+让我们用一个简单的组件作为例子——一个渲染单词 "Hello" 后跟一个人名的组件。该组件将接收两个 props——一个 `name`，另一个影响被渲染的 JSX（JSX = JavaScript XML）。
 
 ```
 // A simple component
@@ -10738,7 +11165,7 @@ const HelloComponent = ({ name, ...otherProps }) => (
 );
 ```
 
-现在，我们可以创建一个高阶组件，并将其命名为 withStyling，然后用它来为文本添加样式：
+现在，我们可以创建一个高阶组件，并将其命名为 `withStyling`，然后用它来为文本添加样式：
 
 ```
 const withStyling = (BaseComponent) => (props) => (
@@ -10746,19 +11173,19 @@ const withStyling = (BaseComponent) => (props) => (
 );
 ```
 
-要在 HelloComponent 上使用此高阶组件，需将高阶组件包裹在它外面。创建一个纯净组件，名为 EnhancedHello，并将高阶组件和 HelloComponent 赋值给它，如下所示：
+要在 `HelloComponent` 上使用此高阶组件，需将高阶组件包裹在它外面。创建一个纯净组件，名为 `EnhancedHello`，并将高阶组件和 `HelloComponent` 赋值给它，如下所示：
 
 ```
 const EnhancedHello = withStyling(HelloComponent);
 ```
 
-要以任何方式更改 HelloComponent，只需渲染 EnhancedHello 组件即可：
+要以任何方式更改 `HelloComponent`，只需渲染 `EnhancedHello` 组件即可：
 
 ```
 <EnhancedHello name='World' />
 ```
 
-HelloComponent 的文本现在变成：
+`HelloComponent` 的文本现在变成：
 
 ```
 <div style={{fontWeight: 700, color: 'green' }}>Hello World</div>
@@ -10779,7 +11206,7 @@ const HelloComponent = ({ name, ...otherProps }) => (
 );
 ```
 
-现在我们可以创建一个高阶组件，并将其命名为 withNameChange。它将把基础组件的 name prop 设置为 'New Name'：
+现在我们可以创建一个高阶组件，并将其命名为 `withNameChange`。它将把基础组件的 `name` prop 设置为 'New Name'：
 
 ```
 const withNameChange = (BaseComponent) => (props) => (
@@ -10787,31 +11214,31 @@ const withNameChange = (BaseComponent) => (props) => (
 );
 ```
 
-将高阶组件包裹在 HelloComponent 周围，并创建一个纯净组件，名为 EnhancedHello2。将高阶组件和 HelloComponent 赋值给它，如下所示：
+将高阶组件包裹在 `HelloComponent` 周围，并创建一个纯净组件，名为 `EnhancedHello2`。将高阶组件和 `HelloComponent` 赋值给它，如下所示：
 
 ```
 const EnhancedHello2 = withNameChange(HelloComponent);
 ```
 
-通过渲染 EnhancedHello 组件来更改我们的 HelloComponent，如下所示：
+通过渲染 `EnhancedHello` 组件来更改我们的 `HelloComponent`，如下所示：
 
 ```
 <EnhancedHello />
 ```
 
-现在 HelloComponent 的文本是：
+现在 `HelloComponent` 的文本是：
 
 ```
 <div>Hello New World</div>
 ```
 
-像这样更改 name prop：
+像这样更改 `name` prop：
 
 ```
 <EnhancedHello name='Shelley' />
 ```
 
-现在我们的 HelloComponent 文本是：
+现在我们的 `HelloComponent` 文本是：
 
 ```
 <div>Hello Shelley</div>
@@ -10819,7 +11246,7 @@ const EnhancedHello2 = withNameChange(HelloComponent);
 
 ### 构建一个高阶组件 - 示例
 
-在本章结束时，我们将构建一个高阶组件。它将接收一个带有 name prop 的组件，并且该 name prop 将在高阶组件中被使用。
+在本章结束时，我们将构建一个高阶组件。它将接收一个带有 `name` prop 的组件，并且该 `name` prop 将在高阶组件中被使用。
 
 首先，使用 create-react-app 创建一个 React 应用：
 
@@ -10827,7 +11254,7 @@ const EnhancedHello2 = withNameChange(HelloComponent);
 npx create-react-app my-app
 ```
 
-一旦应用生成，你可以将 index.js 文件中的代码替换为以下内容：
+一旦应用生成，你可以将 `index.js` 文件中的代码替换为以下内容：
 
 ```
 import React from 'react';
@@ -10852,7 +11279,7 @@ const App = () =>
 render(<App />, document.getElementById('root'));
 ```
 
-当代码在 index.js 文件中替换后，你屏幕上应该显示如下内容：
+当代码在 `index.js` 文件中替换后，你屏幕上应该显示如下内容：
 
 ![](img/7091ef933114a5ffe0ae0554f9493e61_292_0.png)
 
@@ -10865,7 +11292,7 @@ const Hello = ({ name }) =>
   </h1>;
 ```
 
-创建了一个函数组件，并赋予了一个名为 name 的 prop。组件中渲染了 "Hello" 以及 name prop 的值，包裹在一个 h1 标签中：
+创建了一个函数组件，并赋予了一个名为 `name` 的 prop。组件中渲染了 "Hello" 以及 `name` prop 的值，包裹在一个 `h1` 标签中：
 
 ```
 function withName(WrappedComponent) {
@@ -10877,13 +11304,13 @@ function withName(WrappedComponent) {
 }
 ```
 
-创建了一个高阶函数组件，名为 withName()。它内部返回一个匿名类组件，在高阶组件包裹器中渲染该组件，然后为被包裹组件中的 prop 赋值。
+创建了一个高阶函数组件，名为 `withName()`。它内部返回一个匿名类组件，在高阶组件包裹器中渲染该组件，然后为被包裹组件中的 prop 赋值。
 
 ```
 const NewComponent = withName(Hello);
 ```
 
-创建了一个名为 NewComponent 的新组件。我们将之前创建的高阶组件赋值给了最开始创建的函数组件。
+创建了一个名为 `NewComponent` 的新组件。我们将之前创建的高阶组件赋值给了最开始创建的函数组件。
 
 ```
 const App = () =>
@@ -10893,13 +11320,11 @@ const App = () =>
 render(<App />, document.getElementById('root'));
 ```
 
-我们这里所做的只是创建了另一个函数组件，并将其命名为 App。该组件将渲染 NewComponent——就是我们用高阶组件在 div 中升级过的那个组件——然后使用 react-dom 的 render 函数将其显示在浏览器中。
+我们这里所做的只是创建了另一个函数组件，并将其命名为 `App`。该组件将渲染 `NewComponent`——就是我们用高阶组件在 `div` 中升级过的那个组件——然后使用 react-dom 的 render 函数将其显示在浏览器中。
 
-就是这样，我们需要做的全部事情。名为 withName 的函数将接收一个参数，该参数是一个组件，并返回一个高阶组件。如果你以后想修改内容，你只需编辑高阶组件即可。
+就是这样，我们需要做的全部事情。名为 `withName` 的函数将接收一个参数，该参数是一个组件，并返回一个高阶组件。如果你以后想修改内容，你只需编辑高阶组件即可。
 
 真的就是这么简单。
-
-
 
 ## 第14章
 
@@ -10916,9 +11341,13 @@ render(<App />, document.getElementById('root'));
 我们已经知道 React 允许你创建一些相当大的组件，在某些情况下甚至非常庞大，用于执行多个任务。然而，设计组件的更好方式是让它们尽可能小巧，确保一个组件只对应一个功能。在理想情况下，一个组件应该只渲染网页的特定部分或修改特定的行为，这带来了很多优势：
 
 - 功能单一的组件可以被设计为独立的，这使得测试和维护变得更加容易。
+
 - 每个小组件都应该能在你的各个项目中复用。
+
 - 如果一个组件被设计为执行通用功能，开发者可以将其提供给社区使用。
+
 - 组件越小，就越容易对应用性能进行优化。
+
 - 较大的组件需要做更多的工作，而且可能更难维护。
 
 在为一个功能创建一个组件和创建大型组件来处理多个任务之间需要平衡，这在不同组织之间会有所不同。归根结底，你能拥有的组件数量没有限制，你可以按需重新组合它们以获得正确的结果。
@@ -10950,7 +11379,7 @@ class IconButton extends React.Component {
 
 如何实现这一点？通过仔细审查你的所有代码，寻找相似之处和模式。当你发现它们时，进一步检查以确保你没有重复代码——尽可能消除重复。大多数时候，稍加重写就能解决问题。
 
-这在很大程度上依赖于 React 的可复用性原则。假设你想添加多个按钮，每个都包含图标。你不必为每个按钮编写标记代码，而是可以使用我们上面代码创建的 IconButton 组件。你甚至可以更进一步，使用数组来映射所有内容：
+这在很大程度上依赖于 React 的可复用性原则。假设你想添加多个按钮，每个都包含图标。你不必为每个按钮编写标记代码，而是可以使用我们上面代码创建的 `IconButton` 组件。你甚至可以更进一步，使用数组来映射所有内容：
 
 ```
 const buttons = ['facebook', 'twitter', 'youtube'];
@@ -11011,19 +11440,20 @@ let Component = props => {
 仅在必要时为代码添加注释。这不仅符合 React 最佳实践，还同时实现了两个目的：
 
 - 保持代码在视觉上整洁无杂乱。
+
 - 避免在未来某个时间点修改代码时，注释与代码之间产生潜在冲突。
 
 ### 6. 组件应以功能命名
 
-按照组件执行的具体功能来命名是一个好习惯——这样更容易识别。例如，如果你有一个名为 ProductTable 的组件，你一眼就能看出它的作用。如果你按照代码的需要来命名组件，事情可能会变得混乱，不仅对你自己如此，对其他阅读你代码的人也是如此。
+按照组件执行的具体功能来命名是一个好习惯——这样更容易识别。例如，如果你有一个名为 `ProductTable` 的组件，你一眼就能看出它的作用。如果你按照代码的需要来命名组件，事情可能会变得混乱，不仅对你自己如此，对其他阅读你代码的人也是如此。
 
-再举一个例子，一个名为 Avatar 的组件。这个组件可以在任何地方使用，例如用于用户、作者，甚至在评论中。但如果你将其命名为 AuthorAvatar，它的用途就会在一定程度上受到限制。
+再举一个例子，一个名为 `Avatar` 的组件。这个组件可以在任何地方使用，例如用于用户、作者，甚至在评论中。但如果你将其命名为 `AuthorAvatar`，它的用途就会在一定程度上受到限制。
 
 额外的好处是，当你与社区共享组件时，按照功能来命名是合理的，因为这样更容易找到它们。
 
 ### 7. 组件名称应首字母大写
 
-大多数开发者使用 JavaScript 的扩展——JSX，你的组件名称应该以大写字母开头。例如，组件应该命名为 Menu 而不是 menu，或者 SelectButton 而不是 selectbutton。这样做是为了让 JSX 能将其与 HTML 标签区分开来。
+大多数开发者使用 JavaScript 的扩展——JSX，你的组件名称应该以大写字母开头。例如，组件应该命名为 `Menu` 而不是 `menu`，或者 `SelectButton` 而不是 `selectbutton`。这样做是为了让 JSX 能将其与 HTML 标签区分开来。
 
 在 React 早期，维护了一个所有内置名称的列表，以帮助与自定义名称区分。然而，不断更新这个列表工作量太大，最终被放弃，转而采用首字母大写的方式。
 
@@ -11033,15 +11463,13 @@ let Component = props => {
 
 在使用 React 时，你通常使用 JSX 文件。这意味着为 React 创建的所有组件都应该使用 Pascal 大小写或大驼峰命名法。也就是说，单词之间没有空格，每个单词的首字母都大写。
 
-如果你想创建一个提交表单的函数，应该使用大驼峰命名法将其命名为 SubmitForm，而不是 submitForm 或 submit_form。通常，大驼峰命名法就是 Pascal 大小写的另一个名称。
+如果你想创建一个提交表单的函数，应该使用大驼峰命名法将其命名为 `SubmitForm`，而不是 `submitForm` 或 `submit_form`。通常，大驼峰命名法就是 Pascal 大小写的另一个名称。
 
 ### 9. 将有状态逻辑与渲染逻辑分离
 
 React 组件可以是无状态的或有状态的。有状态组件在状态中存储信息，并提供任何需要的上下文。相比之下，无状态组件没有任何记忆，无法为 UI 的其他部分提供任何上下文。它们所做的只是接收来自父组件的输入（props），返回 JSX 元素。它们是可复用的、可扩展的，类似于 JavaScript 的纯函数。
 
 React 的一个最佳实践是：加载数据的有状态逻辑不应与渲染无状态逻辑放在一起。如果你用一个有状态组件来加载数据，用一个无状态组件来显示数据，效果会好得多，从而降低组件的复杂性。
-
-
 
 在新版本的 React 中，你可以使用 React Hooks 来编写与函数相关的有状态组件。最终，这可能会消除对基于类的组件的需求。
 
@@ -11068,13 +11496,13 @@ class Table extends Component {
 
 ### 10. 你的代码应该始终按预期执行，并且必须具备可测试性
 
-老实说，这确实不需要太多解释。当你编写代码时，它应该始终按你的预期运行，并且应该易于测试。由此得出的另一个好做法是将测试文件命名与源文件相同，但带有 .test 后缀。这样，你可以轻松找到你想要测试的文件。
+老实说，这确实不需要太多解释。当你编写代码时，它应该始终按你的预期运行，并且应该易于测试。由此得出的另一个好做法是将测试文件命名与源文件相同，但带有 `.test` 后缀。这样，你可以轻松找到你想要测试的文件。
 
 ### 11. 将与单个组件相关的所有文件保存在一个文件夹中
 
 这包括你的样式文件。如果你有仅与特定组件相关的小组件，将它们全部放在一个文件夹中。这样，你可以轻松理解层次结构——大型组件有自己的文件夹，较小的组件被拆分到子文件夹中，允许你在需要时提取代码或修改它。
 
-例如，如果你有一个 Form 组件，你应该将所有图标、CSS 文件、测试、图像以及任何其他相关的子组件放在一个文件夹中。
+例如，如果你有一个 `Form` 组件，你应该将所有图标、CSS 文件、测试、图像以及任何其他相关的子组件放在一个文件夹中。
 
 命名要合理，这样你在需要时就不会找不到它们。
 
@@ -11271,12 +11699,13 @@ yarn-error.log*
 
 上面的文件概述了所有 React 应用的设置：
 
-- **name** – 你的应用名称
-- **version** – 当前应用版本
-- **"private": true** – 这是一个安全机制，帮助你避免不小心将应用作为公共包发布到 npm
-- **dependencies** – 这是存储应用所需的所有 Node 模块及其版本的地方。我们有六个依赖项——
+- `name` – 你的应用名称
 
+- `version` – 当前应用版本
 
+- `"private": true` – 这是一个安全机制，帮助你避免不小心将应用作为公共包发布到 npm
+
+- `dependencies` – 这是存储应用所需的所有 Node 模块及其版本的地方。我们有六个依赖项——
 
 #### node_modules
 
@@ -11298,9 +11727,11 @@ yarn-error.log*
 
 在这里，你可以看到 webpack 处理的 JavaScript 代码——这是你的 React 应用的核心。当你浏览 `src` 文件夹时，你会看到以下内容：
 
-- **App.js** – 主 JS 组件
-- **App.css** – 与该组件相关的样式
-- **App.test.js** – 测试套件
+- `App.js` – 主 JS 组件
+
+- `App.css` – 与该组件相关的样式
+
+- `App.test.js` – 测试套件
 
 `Index.js` 和 `index.css`（样式文件）是应用的入口点，它们还会启动 `registerServiceWorker.js`。该文件负责为终端用户缓存和更新文件，同时还提供离线工作能力，并在首次访问完成后加快页面加载速度。
 
@@ -11336,28 +11767,44 @@ React 虽然相对较新，但它是一个成熟的库，使我们能够创建�
 
 ### 参考资料
 
--   Animation in React. 2019, www.nearform.com/blog/animation-in-react/.
--   Atto, Edmond. "Understanding the Fundamentals of Routing in React." Medium, 20 Apr. 2020, medium.com/the-andela-way/understanding-the-fundamentals-of-routing-in-react-b29f806b157e.
--   "Fullstack React: Introduction to Flux." Fullstack React, 22 Oct. 2016, www.newline.co/fullstack-react/30-days-of-react/day-18/.
--   "Getting Started – React." Reactjs.org, 2019, reactjs.org/docs/getting-started.html.
--   "Handling Events – React." Reactjs.org, 2019, reactjs.org/docs/handling-events.html.
--   "Higher-Order Components in React." Smashing Magazine, 8 June 2020, www.smashingmagazine.com/2020/06/higher-order-components-react/.
--   "How to Build Forms in React." DigitalOcean, www.digitalocean.com/community/tutorials/how-to-build-forms-in-react.
--   Priya. "15 React Best Practices You Need to Follow in 2021." CodeinWP, 5 Sept. 2019, www.codeinwp.com/blog/react-best-practices/.
--   "React – a JavaScript Library for Building User Interfaces." Reactjs.org, 2019, reactjs.org/.
--   "ReactJS - Component Life Cycle - Tutorialspoint." Www.tutorialspoint.com, www.tutorialspoint.com/reactjs/reactjs_component_life_cycle.htm.
--   "ReactJS - Components - Tutorialspoint." Www.tutorialspoint.com, www.tutorialspoint.com/reactjs/reactjs_components.htm.
--   "ReactJS - Environment Setup - Tutorialspoint." Www.tutorialspoint.com, www.tutorialspoint.com/reactjs/reactjs_environment_setup.htm.
--   "ReactJS - Forms - Tutorialspoint." Www.tutorialspoint.com, www.tutorialspoint.com/reactjs/reactjs_forms.htm.
--   "ReactJS - Props Overview - Tutorialspoint." Www.tutorialspoint.com, www.tutorialspoint.com/reactjs/reactjs_props_overview.ht.
--   "ReactJS - Refs - Tutorialspoint." Www.tutorialspoint.com, www.tutorialspoint.com/reactjs/reactjs_refs.htm.
--   "ReactJS | Components." GeeksforGeeks, 10 Mar. 2018, www.geeksforgeeks.org/reactjs-components/.
--   "ReactJS | Keys." GeeksforGeeks, 5 Apr. 2018, www.geeksforgeeks.org/reactjs-keys/.
--   Wheeler, Ken. "Getting to Know Flux, the React.js Architecture." Scotch, scotch.io/tutorials/getting-to-know-flux-the-react-js-architecture#:~:text=Flux%20is%20an%20architecture%20that.
+- Animation in React. 2019, www.nearform.com/blog/animation-in-react/.
 
+- Atto, Edmond. "Understanding the Fundamentals of Routing in React." Medium, 20 Apr. 2020, medium.com/the-andela-way/understanding-the-fundamentals-of-routing-in-react-b29f806b157e.
 
+- "Fullstack React: Introduction to Flux." Fullstack React, 22 Oct. 2016, www.newline.co/fullstack-react/30-days-of-react/day-18/.
+
+- "Getting Started – React." Reactjs.org, 2019, reactjs.org/docs/getting-started.html.
+
+- "Handling Events – React." Reactjs.org, 2019, reactjs.org/docs/handling-events.html.
+
+- "Higher-Order Components in React." Smashing Magazine, 8 June 2020, www.smashingmagazine.com/2020/06/higher-order-components-react/.
+
+- "How to Build Forms in React." DigitalOcean, www.digitalocean.com/community/tutorials/how-to-build-forms-in-react.
+
+- Priya. "15 React Best Practices You Need to Follow in 2021." CodeinWP, 5 Sept. 2019, www.codeinwp.com/blog/react-best-practices/.
+
+- "React – a JavaScript Library for Building User Interfaces." Reactjs.org, 2019, reactjs.org/.
+
+- "ReactJS - Component Life Cycle - Tutorialspoint." Www.tutorialspoint.com, www.tutorialspoint.com/reactjs/reactjs_component_life_cycle.htm.
+
+- "ReactJS - Components - Tutorialspoint." Www.tutorialspoint.com, www.tutorialspoint.com/reactjs/reactjs_components.htm.
+
+- "ReactJS - Environment Setup - Tutorialspoint." Www.tutorialspoint.com, www.tutorialspoint.com/reactjs/reactjs_environment_setup.htm.
+
+- "ReactJS - Forms - Tutorialspoint." Www.tutorialspoint.com, www.tutorialspoint.com/reactjs/reactjs_forms.htm.
+
+- "ReactJS - Props Overview - Tutorialspoint." Www.tutorialspoint.com, www.tutorialspoint.com/reactjs/reactjs_props_overview.ht.
+
+- "ReactJS - Refs - Tutorialspoint." Www.tutorialspoint.com, www.tutorialspoint.com/reactjs/reactjs_refs.htm.
+
+- "ReactJS | Components." GeeksforGeeks, 10 Mar. 2018, www.geeksforgeeks.org/reactjs-components/.
+
+- "ReactJS | Keys." GeeksforGeeks, 5 Apr. 2018, www.geeksforgeeks.org/reactjs-keys/.
+
+- Wheeler, Ken. "Getting to Know Flux, the React.js Architecture." Scotch, scotch.io/tutorials/getting-to-know-flux-the-react-js-architecture#:~:text=Flux%20is%20an%20architecture%20that.
 
 # JAVASCRIPT
+
 ## JAVASCRIPT 后端编程
 
 Andy Vickler
@@ -11381,8 +11828,11 @@ Node.js 由 Ryan Dahl 于 2009 年开发，基于 Chrome JavaScript 引擎构建
 ### Node.js 特性
 
 - **事件驱动和异步** – 所有 Node.js API 都是异步的，即非阻塞的。这意味着 Node.js 服务器永远不会等待 API 返回数据；它会继续处理下一个请求，而事件通知机制将帮助获取之前调用的响应。
+
 - **快速** – 由于基于 Google Chrome V8 JavaScript 引擎构建，它是代码执行速度最快的库之一。
+
 - **单线程、可扩展** – 使用包含事件循环的单线程模型，服务器可以以非阻塞方式进行响应，从而实现可扩展性。单线程程序比传统服务器（如 Apache HTTP）能处理更多的请求。
+
 - **无缓冲** – Node.js 应用中数据永远不会被缓冲，而是以大块数据的形式直接输出。
 
 如果你想真正掌握后端 JavaScript 编程，就需要从 Node.js 开始。所以请坐好，让我们一起深入探索吧。
@@ -11394,7 +11844,9 @@ Node.js 由 Ryan Dahl 于 2009 年开发，基于 Chrome JavaScript 引擎构建
 在第一章中，首先搭建 Node.js 开发环境是合理的。我将向你展示所需的工具以及如何进行设置。你可以在 Linux、Mac、Windows 和 Solaris 上搭建 Node.js 开发环境，无论使用哪种平台，你都需要以下内容：
 
 - Node.js
+
 - NPM – Node 包管理器
+
 - IDE – 集成开发环境，或者你可以使用任何兼容的文本编辑器。
 
 从 0.6.0 版本开始，Node.js 的下载包已包含包管理器，因此无需单独安装。
@@ -11485,16 +11937,16 @@ cd hello
 code .
 ```
 
-现在前往"File Explorer"工具栏，点击"New File"按钮；将其命名为 app.js。使用 .js 文件扩展名后，VSC 会将其识别为 JavaScript 文件，并使用 JS 语言服务来解析文件内容。
+现在前往"File Explorer"工具栏，点击"New File"按钮；将其命名为 `app.js`。使用 .js 文件扩展名后，VSC 会将其识别为 JavaScript 文件，并使用 JS 语言服务来解析文件内容。
 
-在 app.js 文件中，创建一个字符串变量并将其内容输出到控制台，如下所示：
+在 `app.js` 文件中，创建一个字符串变量并将其内容输出到控制台，如下所示：
 
 ```
 var msg = 'Hello World';
 console.log(msg);
 ```
 
-你可能已经注意到，当输入 console. 时，系统会自动在 console 对象上显示 IntelliSense。VS Code 还知道 msg 是一个字符串，并且它是基于 Hello World 初始化的。因此，当输入 msg 时，IntelliSense 会显示 msg 字符串的所有函数。
+你可能已经注意到，当输入 `console.` 时，系统会自动在 console 对象上显示 IntelliSense。VS Code 还知道 `msg` 是一个字符串，并且它是基于 Hello World 初始化的。因此，当输入 `msg` 时，IntelliSense 会显示 `msg` 字符串的所有函数。
 
 使用 CTRL+S 保存文件，现在我们可以运行这个应用了。在终端中输入：
 
@@ -11512,7 +11964,7 @@ VS Code 还有一个集成终端，你可以在其中运行 shell 命令，它�
 
 ### 调试 Hello World
 
-VS Code 还内置了调试器，可以帮助你调试 Node.js 应用。让我们用之前创建的 Hello World 应用来试试。首先，我们需要在 app.js 中设置断点，将编辑器光标放在第 1 行，然后按 F9。或者，点击行号左侧的灰色区域 – 你会看到一个红色圆圈。
+VS Code 还内置了调试器，可以帮助你调试 Node.js 应用。让我们用之前创建的 Hello World 应用来试试。首先，我们需要在 `app.js` 中设置断点，将编辑器光标放在第 1 行，然后按 F9。或者，点击行号左侧的灰色区域 – 你会看到一个红色圆圈。
 
 要开始调试代码，请前往活动栏并点击 Run View。
 
@@ -11538,13 +11990,13 @@ npm install -g express-generator
 
 注意这里的 `-g` 开关；它会在你的计算机上全局安装 Express 允许你从任何位置运行它。
 
-接下来，使用以下命令创建一个名为 myExpressApp 的新应用程序：
+接下来，使用以下命令创建一个名为 `myExpressApp` 的新应用程序：
 
 ```
 express myExpressApp --view pug
 ```
 
-将创建一个名为 myExpressApp 的新文件夹，其中包含你的应用程序内容。命令末尾的参数 `--view pug` 告知生成器应使用 pug 模板引擎。
+将创建一个名为 `myExpressApp` 的新文件夹，其中包含你的应用程序内容。命令末尾的参数 `--view pug` 告知生成器应使用 pug 模板引擎。
 
 你还需要安装应用程序依赖项，所有依赖项都是 npm 模块；导航到该文件夹，然后执行 `npm install` 命令：
 
@@ -11553,7 +12005,7 @@ cd myExpressApp
 npm install
 ```
 
-现在我们需要确保应用程序能够运行。在生成的 Express 应用程序中有一个名为 package.json 的文件，其中包含一个运行 `node ./bin/www` 的启动脚本——这将启动 Node.js 应用程序。在 Express 应用程序文件夹内的终端中输入以下内容：
+现在我们需要确保应用程序能够运行。在生成的 Express 应用程序中有一个名为 `package.json` 的文件，其中包含一个运行 `node ./bin/www` 的启动脚本——这将启动 Node.js 应用程序。在 Express 应用程序文件夹内的终端中输入以下内容：
 
 ```
 npm start
@@ -11561,7 +12013,7 @@ npm start
 
 Node.js Web 服务器启动；导航到 http://localhost:3000，你就可以看到应用程序正在运行。
 
-关闭浏览器并在 myExpressApp 文件夹中打开一个终端；按 CTRL+C 停止服务器。现在打开 VS Code：
+关闭浏览器并在 `myExpressApp` 文件夹中打开一个终端；按 CTRL+C 停止服务器。现在打开 VS Code：
 
 ```
 code .
@@ -11571,15 +12023,15 @@ code .
 
 ### 强大的代码编辑
 
-打开 app.js 文件，找到名为 `__dirname` 的 Node.js 全局对象。将光标悬停在上面，你会看到 VS Code 将 `__dirname` 视为一个字符串。并且你可以获得针对该框架的智能感知。例如，当你在 VS Code 中输入代码中 require 的内容（如 HTTP）时，你可以获得智能感知。
+打开 `app.js` 文件，找到名为 `__dirname` 的 Node.js 全局对象。将光标悬停在上面，你会看到 VS Code 将 `__dirname` 视为一个字符串。并且你可以获得针对该框架的智能感知。例如，当你在 VS Code 中输入代码中 require 的内容（如 HTTP）时，你可以获得智能感知。
 
 VS Code 使用 TypeScript 类型的声明文件，为 VS Code 提供有关你的应用程序所使用的 JS 框架的元数据。类型声明使用 TypeScript 来让 Express 知道函数和参数的数据类型。这使得 VS Code 能够提供最佳的智能感知体验，而且你无需担心下载这些文件——得益于自动类型获取功能，VS Code 会自动安装它们。
 
-你还可以在代码的不同文件中引用其他模块。例如，我们在 app.js 中需要 `./routes/index` 模块，该模块导出一个 Express.Router 类。
+你还可以在代码的不同文件中引用其他模块。例如，我们在 `app.js` 中需要 `./routes/index` 模块，该模块导出一个 `Express.Router` 类。
 
 ### 调试 Express 应用
 
-首先，你的 Express 应用程序需要一个名为 launch.json 的调试器配置文件。转到活动栏并单击“运行”图标。然后在“运行”视图中单击“配置”图标（看起来像一个齿轮）以创建默认的 launch.json 文件。在“配置”中，确保 `type` 属性设置为 `node`——这将确保选择 Node.js 环境。文件创建后，VS Code 会在 package.json 中查找启动脚本，并将其值用作“启动程序”配置的程序——在我们的例子中，它是 `${workspaceFolder}\\bin\\www`。
+首先，你的 Express 应用程序需要一个名为 `launch.json` 的调试器配置文件。转到活动栏并单击“运行”图标。然后在“运行”视图中单击“配置”图标（看起来像一个齿轮）以创建默认的 `launch.json` 文件。在“配置”中，确保 `type` 属性设置为 `node`——这将确保选择 Node.js 环境。文件创建后，VS Code 会在 `package.json` 中查找启动脚本，并将其值用作“启动程序”配置的程序——在我们的例子中，它是 `${workspaceFolder}\\bin\\www`。
 
 ```json
 {
@@ -11595,7 +12047,7 @@ VS Code 使用 TypeScript 类型的声明文件，为 VS Code 提供有关你的
 }
 ```
 
-保存文件并转到“运行”视图。单击“配置”选项，确保选择了“启动程序”。打开 app.js，通过单击左侧边栏在 Express 应用对象附近（靠近文件开头）设置你的断点。按 F5 开始调试，服务器将在新终端中启动。从断点开始，你可以逐步执行代码、创建监视并检查变量。
+保存文件并转到“运行”视图。单击“配置”选项，确保选择了“启动程序”。打开 `app.js`，通过单击左侧边栏在 Express 应用对象附近（靠近文件开头）设置你的断点。按 F5 开始调试，服务器将在新终端中启动。从断点开始，你可以逐步执行代码、创建监视并检查变量。
 
 到此结束了这第一章。你的 Node.js 环境已经设置好了，所以现在我们可以看看 REPL 终端。
 
@@ -11612,6 +12064,7 @@ REPL 即读取-求值-打印-循环，是一个交互式 shell，用于求值 No
 要学习本章内容，你需要具备以下两个条件：
 
 - 计算机上已安装 Node.js——参见上一章
+
 - 具备一些 JavaScript 知识以及如何用它编写代码
 
 ### 第一步 — 启动和停止 REPL
@@ -11681,6 +12134,7 @@ node
 ```
 
 > **注意**
+
 > 你可能已经发现输出被单引号而不是双引号括起来。与许多其他编程语言不同，JavaScript 字符串中使用的引号对其值没有影响。如果你在字符串输入中使用了单引号，REPL 会智能地在输出中将其改为双引号。
 
 #### 调用函数
@@ -11733,8 +12187,6 @@ undefined
 ```
 
 因为 REPL 会返回值，所以没有必要使用 `console.log` 这样的函数来查看输出。默认情况下，REPL 的值会自动显示在屏幕上。
-
-
 
 #### 多行代码块
 
@@ -11896,11 +12348,17 @@ Math.trunc
 你不会看到庞大的命令列表，因为命令并不多，但它们都对你在REPL中完成任务很有帮助：
 
 - `.break` —— 如果你卡住了，这个命令可以让你退出
-- `.clear` —— .break的别名
+
+- `.clear` —— `.break`的别名
+
 - `.editor` —— 进入编辑器模式
+
 - `.exit` —— 退出REPL
+
 - `.help` —— 打印帮助信息
+
 - `.load` —— 从文件将JavaScript加载到REPL会话中
+
 - `.save` —— 将本次会话中求值的命令保存到文件
 
 如果你想退出当前的表达式，可以按^C；如果你想退出REPL，可以按^D。
@@ -12022,8 +12480,6 @@ undefined
 
 以上就是对Node.js中REPL的简要介绍。在下一章中，我们将介绍包管理器。
 
-
-
 ## 第三章
 
 ## Node.js - 包管理器（NPM）
@@ -12034,7 +12490,7 @@ Npm最初是用来下载Node.js包并管理其依赖的工具。现在它已成�
 
 ### 下载和安装依赖
 
-Npm用于管理项目中的所有下载依赖。如果你的包中包含一个名为package.json的文件，运行npm install将确保你的项目获得所需的一切。所有内容都将安装在一个名为node_modules的文件夹中——如果该文件夹尚不存在，npm会自动创建它。
+Npm用于管理项目中的所有下载依赖。如果你的包中包含一个名为`package.json`的文件，运行`npm install`将确保你的项目获得所需的一切。所有内容都将安装在一个名为`node_modules`的文件夹中——如果该文件夹尚不存在，npm会自动创建它。
 
 #### 安装和更新包
 
@@ -12046,8 +12502,9 @@ npm install <package-name>
 
 通常情况下，还会在命令中添加 angezeigt 其他标志，例如：
 
-- **--save** – 安装后将条目添加到package.json中名为dependencies的文件中
-- **--save-dev** – 安装后将条目添加到package.json中名为devDependencies的文件中
+- `--save` – 安装后将条目添加到`package.json`中名为dependencies的文件中
+
+- `--save-dev` – 安装后将条目添加到`package.json`中名为devDependencies的文件中
 
 两者的区别在于，devDependencies通常是开发工具，如测试库，而dependencies则是打包到应用中的依赖项。
 
@@ -12067,13 +12524,13 @@ npm update <package-name>
 
 除了标准下载之外，你还可以使用npm进行版本控制，允许你指定特定的包版本，或要求高于或低于当前所需的版本。大多数时候，库只兼容另一个库的主版本。或者你可能因为某个库中存在未修复的bug而遇到问题。
 
-当你明确指定库版本时，有助于所有人保持一致，确保整个团队在package.json更新之前都使用相同的版本。
+当你明确指定库版本时，有助于所有人保持一致，确保整个团队在`package.json`更新之前都使用相同的版本。
 
 在这种情况下，版本控制非常有用，而且npm始终遵循semver（语义化版本控制）标准。
 
 ### 运行任务
 
-package.json支持指定命令行任务的格式，你可以通过以下方式运行这些任务：
+`package.json`支持指定命令行任务的格式，你可以通过以下方式运行这些任务：
 
 ```
 npm run <task-name>
@@ -12120,9 +12577,9 @@ $ npm run prod
 npm install lodash
 ```
 
-默认情况下，包会安装在当前目录下，位于名为node_modules的子文件夹中。同时，lodash条目也会被添加到当前文件夹中package.json的dependencies属性里。
+默认情况下，包会安装在当前目录下，位于名为`node_modules`的子文件夹中。同时，lodash条目也会被添加到当前文件夹中`package.json`的dependencies属性里。
 
-要进行全局安装，需要添加-g标志：
+要进行全局安装，需要添加`-g`标志：
 
 ```
 npm install -g lodash
@@ -12130,19 +12587,19 @@ npm install -g lodash
 
 这次，包会使用全局位置而不是安装到本地文件夹。但具体在哪里呢？
 
-root -g命令会告诉你计算机上的确切位置。在Linux或Mac系统上，可能是/usr/local/lib/node_modules，而在Windows上，可能是C:\Users\YOU\AppData\Roaming\npm\node_modules。
+`root -g`命令会告诉你计算机上的确切位置。在Linux或Mac系统上，可能是`/usr/local/lib/node_modules`，而在Windows上，可能是`C:\Users\YOU\AppData\Roaming\npm\node_modules`。
 
 如果你使用npm管理Node.js版本，这些位置会有所不同。
 
 ### 使用或执行通过npm安装的包
 
-当你使用npm在名为node_modules的文件夹中或全局安装包时，如何在Node.js代码中使用它呢？假设你使用以下命令安装了流行的JS工具库lodash：
+当你使用npm在名为`node_modules`的文件夹中或全局安装包时，如何在Node.js代码中使用它呢？假设你使用以下命令安装了流行的JS工具库lodash：
 
 ```
 npm install lodash
 ```
 
-该包将安装在本地node_modules文件夹中。要在代码中使用它，需要使用require命令将其导入程序：
+该包将安装在本地`node_modules`文件夹中。要在代码中使用它，需要使用require命令将其导入程序：
 
 ```javascript
 const _ = require('lodash')
@@ -12150,7 +12607,7 @@ const _ = require('lodash')
 
 那么，如果你有一个可执行的包呢？
 
-可执行文件会被放到node_modules/.bin/文件夹中。
+可执行文件会被放到`node_modules/.bin/`文件夹中。
 
 演示这一点的最简单方法之一是使用cowsay包，它包含一个命令行程序。可以执行该程序让动物（如奶牛）说些什么。
 
@@ -12160,7 +12617,7 @@ const _ = require('lodash')
 npm install cowsay
 ```
 
-它会连同所需的依赖一起安装在node_modules文件夹中：
+它会连同所需的依赖一起安装在`node_modules`文件夹中：
 
 ![node_modules folder contents](img/7091ef933114a5ffe0ae0554f9493e61_339_0.png)
 
@@ -12177,7 +12634,7 @@ lrwxr-xr-x  16 flavio  3 Aug 17:06 cowthink -> ../cowsay/cli.js
 
 那么，如何执行这些程序呢？
 
-你可以通过输入./node_modules/.bin/cowasay来运行，它会生效。但使用*npx*更好，它已集成在较新的npm版本中。你只需运行：
+你可以通过输入`./node_modules/.bin/cowasay`来运行，它会生效。但使用*npx*更好，它已集成在较新的npm版本中。你只需运行：
 
 ```
 npx cowsay
@@ -12226,9 +12683,9 @@ fs.readFile(funFileName, function(err, file) {
 })
 ```
 
-一旦fs.readFile获取了funFileName文件，回调函数就会被执行。该函数将处理任何抛出的错误，并将检索到的文件记录到控制台。
+一旦`fs.readFile`获取了`funFileName`文件，回调函数就会被执行。该函数将处理任何抛出的错误，并将检索到的文件记录到控制台。
 
-回调函数接受两个参数——err和file。按照惯例，回调函数的第一个参数是错误。如果父函数抛出错误，它会被处理；但有时候不会抛出错误，此时函数的第一个参数必须为null。按照惯例，后续跟随的函数是响应数据。
+回调函数接受两个参数——`err`和`file`。按照惯例，回调函数的第一个参数是错误。如果父函数抛出错误，它会被处理；但有时候不会抛出错误，此时函数的第一个参数必须为null。按照惯例，后续跟随的函数是响应数据。
 
 好的，这很好，但我们为什么不直接这样写代码呢？
 
@@ -12239,7 +12696,7 @@ console.log("file: headphones, file);
 
 简短的答案是异步。
 
-第二个例子表明，当我们尝试记录时file尚未定义。这是因为fs.readFile在我们到达console.log()之前还没有完成获取。
+第二个例子表明，当我们尝试记录时`file`尚未定义。这是因为`fs.readFile`在我们到达`console.log()`之前还没有完成获取。
 
 然而，值得注意的是，以下内容会生效：
 
@@ -12251,8 +12708,6 @@ console.log("file: ", file);
 对于那些真正刚接触这个领域、只接触过同步编程的人来说，这会让人感到有些困惑，更不用说还有些繁琐了。在同步编程中，你的生活很轻松，充满了逻辑，然后突然间，第四行可以在第三行之前执行！那么，回调应该到处使用、一直使用，以防万一吗？答案是一个响亮的**不**。
 
 你应该只在不知道某事何时完成时才使用回调。再次想想从数据库获取数据、API调用等。这些都需要时间，所以回调需要在事件发生时被调用，这就是"事件驱动编程"这一术语的由来。
-
-
 
 如果你现在还不太理解，别担心——你不是唯一一个，真正的理解方法就是亲手实践。
 
@@ -12283,10 +12738,13 @@ btn.addEventListener('click', () => {
 
 首先，我们获取 DOM 中一个现成的 `<button>` 元素的引用。然后添加一个点击事件监听器；当按钮被点击时，按顺序发生四件事：
 
-1.  显示一个 `alert()` 消息
-2.  关闭警告框后，创建一个 `<p>` 元素
-3.  然后为该元素设置文本
-4.  将段落追加到文档主体中
+1. 显示一个 `alert()` 消息
+
+2. 关闭警告框后，创建一个 `<p>` 元素
+
+3. 然后为该元素设置文本
+
+4. 将段落追加到文档主体中
 
 现在，这就是同步代码问题所在——JavaScript 是单线程的，因此，在上述每个操作发生时，其他操作都无法执行。每个步骤都依赖于前一个步骤完成后才能运行——在此之前，所有其他操作都被阻塞。以上面的例子为例——一旦按钮被点击，警告消息就会出现。直到点击消息上的“确定”按钮，段落才会出现。
 
@@ -12391,9 +12849,9 @@ fetch('products.json').then(function(response) {
 
 这可能需要一点时间来适应，并且感觉有点像薛定谔的猫——所有可能的结果都还没有发生，`fetch()` 正在等待浏览器结果，这个结果将在未来的某个时间点出现。还有另外三个代码块链接到 `fetch()`：
 
--   有两个 `then()` 块，每个都包含一个回调函数。这个函数只有在前面的操作成功时才会运行，每个回调都接收该先前操作的结果作为输入。这样，你就可以继续做其他事情。`.then()` 块返回一个 Promise，多个 `.then()` 块可以链接在一起，允许异步操作按顺序一个接一个地运行。
+- 有两个 `then()` 块，每个都包含一个回调函数。这个函数只有在前面的操作成功时才会运行，每个回调都接收该先前操作的结果作为输入。这样，你就可以继续做其他事情。`.then()` 块返回一个 Promise，多个 `.then()` 块可以链接在一起，允许异步操作按顺序一个接一个地运行。
 
--   最后还有一个 `catch()` 块，它只在一个或多个 `.then()` 块失败时才会运行。就像同步 JavaScript 中的 `try...catch` 块一样，`catch()` 块中有一个错误对象，用于报告发生的任何错误。值得注意的是，同步的 `try...catch` 对 Promise 不起作用。
+- 最后还有一个 `catch()` 块，它只在一个或多个 `.then()` 块失败时才会运行。就像同步 JavaScript 中的 `try...catch` 块一样，`catch()` 块中有一个错误对象，用于报告发生的任何错误。值得注意的是，同步的 `try...catch` 对 Promise 不起作用。
 
 ### 事件队列
 
@@ -12403,15 +12861,13 @@ fetch('products.json').then(function(response) {
 
 Promise 与回调有些相似，它们只不过是返回的对象附加了回调函数，而不是将回调传递给函数。但 Promise 专门设计用于异步操作，相对于回调有几个优势：
 
--   多个异步操作可以链接在一起，可以有任意多个
+- 多个异步操作可以链接在一起，可以有任意多个 `.then()` 操作在需要时链式调用。结果作为输入从一个操作传递到下一个操作，这在回调函数中很难实现——你可以试试，结果往往会变得一团糟。
 
+- Promise 总是按照它们进入事件队列的确切顺序被调用。
 
+- 错误处理起来更容易，因为所有错误都由一个 `.catch()` 块统一处理，而不是在每一层都单独处理。
 
-    .then() 操作在需要时链式调用。结果作为输入从一个操作传递到下一个操作，这在回调函数中很难实现——你可以试试，结果往往会变得一团糟。
-
--   Promise 总是按照它们进入事件队列的确切顺序被调用。
--   错误处理起来更容易，因为所有错误都由一个 `.catch()` 块统一处理，而不是在每一层都单独处理。
--   Promise 也摆脱了控制反转的问题，而传统的回调函数在将回调传递给第三方库时，会失去对函数执行的控制。
+- Promise 也摆脱了控制反转的问题，而传统的回调函数在将回调传递给第三方库时，会失去对函数执行的控制。
 
 ### 异步代码的本质
 
@@ -12440,9 +12896,11 @@ console.log ('All done!');
 
 只有当 `fetch()` 完成，并且结果通过 `.then()` 代码块传递后，第二个 `console.log()` 消息才会出现在控制台上。如你所见，消息出现的顺序与你预期的不符：
 
--   Starting
--   All done!
--   It worked :)
+- Starting
+
+- All done!
+
+- It worked :)
 
 如果你觉得这很困惑，请看这个例子：
 
@@ -12585,17 +13043,18 @@ someAsyncOperation(() => {
 
 轮询阶段有两个主要功能：
 
--   计算阻塞和轮询 I/O 的时间长度
-
-
+- 计算阻塞和轮询 I/O 的时间长度
 
 ### 进程轮询队列事件
 
 当事件循环进入轮询阶段时，如果没有已调度的定时器，则可能发生以下两种情况之一：
 
 1. 如果队列不为空，循环会遍历回调队列，异步执行它们，直到达到硬性限制或队列为空。
+
 2. 如果队列为空，则可能发生以下两种情况之一：
+
    - 如果已使用 `setImmediate()` 调度脚本，事件循环将结束轮询阶段。然后循环进入检查阶段并执行所有已调度的脚本。
+
    - 如果未使用 `setImmediate()` 调度脚本，事件循环将等待回调被添加到队列中，届时它们将立即被执行。
 
 当轮询队列中没有剩余内容时，事件循环会查找已到达时间阈值的定时器。如果至少有一个就绪，事件循环将返回定时器阶段并执行回调。
@@ -12615,6 +13074,7 @@ someAsyncOperation(() => {
 它们非常相似，但在调用时，它们的表现可能有所不同。
 
 - `setImmediate()` 在当前轮询阶段结束后执行脚本。
+
 - `setTimeout()` 调度一个脚本在最小毫秒阈值过后运行。
 
 执行顺序是变化的，取决于调用上下文。如果两者都在主模块中调用，进程性能会绑定它们的时序，但其他机器应用可能会影响性能。
@@ -12739,6 +13199,7 @@ server.on('listening', () => {});
 这两个调用非常相似，但名字容易让人混淆：
 
 - `process.nextTick()` 会在同一阶段立即触发。
+
 - `setImmediate()` 会等待下一次事件循环迭代或 tick 后再触发。
 
 实际上，这两个名字应该互换，因为 `process.nextTick()` 比 `setImmediate()` 更快触发。然而，这是历史遗留问题，不太可能改变。简单的原因是这会破坏相当多的 npm 包。每天都有更多的模块被添加，这会导致更多潜在的破坏，因此，尽管令人困惑，这些名字不会改变。
@@ -12750,6 +13211,7 @@ server.on('listening', () => {});
 有几个充分的理由应该使用 `process.nextTick()`：
 
 - 用户可以在循环继续之前更好地处理错误、清理不需要的资源，或重新提交请求。
+
 - 有时，回调需要在调用栈解包和事件循环继续之间运行。
 
 最好的例子之一是匹配用户预期，一个简单的例子是：
@@ -12827,9 +13289,8 @@ myEmitter.on('event', () => {
 ```
 var buffer = Buffer.alloc(8);
 // This prints 8 bytes of zero:
-// <Buffer 00 00 00 00 00 00
-
-
+// <Buffer 00 00 00 00 00 00 00 00>
+```
 
 ## 第八章
 
@@ -12875,6 +13336,7 @@ Node.js 有四种类型的流：
 
 ```
 const Stream = require('stream')
+
 const readableStream = new Stream.Readable()
 ```
 
@@ -12882,6 +13344,7 @@ const readableStream = new Stream.Readable()
 
 ```
 readableStream.push('ping!')
+
 readableStream.push('pong!')
 ```
 
@@ -12902,6 +13365,7 @@ async function logChunks(readable) {
 
 const readable = fs.createReadStream(
   'tmp/test.txt', {encoding: 'utf8'});
+
 logChunks(readable);
 
 // Output:
@@ -12922,6 +13386,7 @@ async function readableToString2(readable) {
 }
 
 const readable = Readable.from('Good morning!', {encoding: 'utf8'});
+
 assert.equal(await readableToString2(readable), 'Good morning!');
 ```
 
@@ -12981,7 +13446,7 @@ readerStream.on('error', function(err) {
 console.log("Program Ended");
 ```
 
-`fs.createReadStream()` 是一个提供可读流的函数调用。起初，流处于静态状态，但当监听到 data 事件并附加回调后，它就会开始流动。一旦发生这种情况，数据块就会被读取并传递给回调函数。数据事件发出的频率由流的实现者决定。例如，HTTP 请求可能在读取了几 KB 数据后发出 data 事件。如果你的数据来自文件，你可以选择在每行读取完毕后发出 data 事件。
+`fs.createReadStream()` 是一个提供可读流的函数调用。起初，流处于静态状态，但当监听到 data 事件并附加回调后，它就会开始流动。一旦发生这种情况，数据块就会被读取并传递给回调函数。data 事件发出的频率由流的实现者决定。例如，HTTP 请求可能在读取了几 KB 数据后发出 data 事件。如果你的数据来自文件，你可以选择在每行读取完毕后发出 data 事件。
 
 当所有数据读取完毕后，流会发出一个 end 事件。在上面的代码中，我们监听了该事件，因此我们知道何时到达末尾。此外，如果检测到错误，流会发出 error 事件并进行通知。
 
@@ -12995,9 +13460,14 @@ var chunk;
 
 readableStream.on('readable', function() {
     while ((chunk=readableStream.read()) != null) {
+        data += chunk;
+    }
+});
+
+readableStream.on('end', function() {
+    console.log(data);
+});
 ```
-
-
 
 ### 如何创建可写流
 
@@ -13113,6 +13583,7 @@ const zlib = require('zlib');
 
 // The pipeline API is used to make it easy pipe multiple streams
 // together and be notified when the pipeline has completely finished.
+
 // A pipeline to gzip can move a potentially large video file in an efficient manner.
 
 pipeline(
@@ -13147,28 +13618,26 @@ const stream = require('stream');
 
 由于流具有诸多优势，一些 Node.js 核心模块提供了处理流的原生能力。其中最值得注意的能力包括：
 
-- **net.Socket** – 这是 Node 流的主要 API 基础，几乎所有其他 API 都以此为底层支撑。
-- **process.stdin** – 返回一个连接到 stdin 的流
-- **process.stdout** – 返回一个连接到 stdout 的流
-- **process.stderr** – 返回一个连接到 stderr 的流
-- **fs.createReadStream()** - 创建一个指向文件的可读流
-- **fs.createWriteStream()** – 创建一个指向文件的可写流
-- **net.connect** – 发起一个基于流的连接
-- **http.request()** - 返回一个 http.ClientRequest 类实例——这是一个可写流。
-- **zlib.createGzip()** – 使用名为 gzip 的压缩算法将数据压缩到流中
-- **zlib.createGunzip()** - 解压 gzip 流
-- **zlib.createDeflate()** – 使用名为 deflate 的压缩算法将数据压缩到流中
-- **zlib.createInflate()** - 解压 deflate 流
+- `net.Socket` – 这是 Node 流的主要 API 基础，几乎所有其他 API 都以此为底层支撑。
+- `process.stdin` – 返回一个连接到 stdin 的流
+- `process.stdout` – 返回一个连接到 stdout 的流
+- `process.stderr` – 返回一个连接到 stderr 的流
+- `fs.createReadStream()` - 创建一个指向文件的可读流
+- `fs.createWriteStream()` – 创建一个指向文件的可写流
+- `net.connect` – 发起一个基于流的连接
+- `http.request()` - 返回一个 `http.ClientRequest` 类实例——这是一个可写流。
+- `zlib.createGzip()` – 使用名为 gzip 的压缩算法将数据压缩到流中
+- `zlib.createGunzip()` - 解压 gzip 流
+- `zlib.createDeflate()` – 使用名为 deflate 的压缩算法将数据压缩到流中
+- `zlib.createInflate()` - 解压 deflate 流
 
 在结束本章之前，以下是与可写流相关的一些最重要的事件：
 
-- **error** – 当管道传输/写入过程中发生错误时触发
-- **pipeline** – 当可读流被管道传输到可写流时，可写流会触发此事件。
-- **unpipe** – 当在可读流上调用 `unpipe` 时触发。它会停止将数据管道传输到目标流。
+- `error` – 当管道传输/写入过程中发生错误时触发
+- `pipeline` – 当可读流被管道传输到可写流时，可写流会触发此事件。
+- `unpipe` – 当在可读流上调用 `unpipe` 时触发。它会停止将数据管道传输到目标流。
 
 希望本章能让你对流有一个基本的了解。Node.js 一些最强大的特性包括管道、流和链式调用，而流能够帮助你编写简洁、优雅的代码来高效地执行 I/O 操作。
-
-
 
 ## 第九章
 
@@ -13211,35 +13680,34 @@ var fs = require('fs');
 
 要异步读取物理文件，使用：
 
-fs.readFile()
+`fs.readFile()`
 
 其工作方式的示例：
 
-fs.readFile(fileName [,options], callback)
+`fs.readFile(fileName [,options], callback)`
 
 ### 参数
 
 这里有三个参数或参数项：
 
-- **filename**：字符串格式的完整路径和文件名。
-- **options**：这可以是字符串或对象，可以包含标志和编码。默认标志是 `'r'`，默认编码是 `utf8`。
-- **callback**：这是一个有两个参数的函数——`fd` 和 `err`。它在操作完成时被调用。
+- `filename`：字符串格式的完整路径和文件名。
+- `options`：这可以是字符串或对象，可以包含标志和编码。默认标志是 `'r'`，默认编码是 `utf8`。
+- `callback`：这是一个有两个参数的函数——`fd` 和 `err`。它在操作完成时被调用。
 
-在下面的示例中，你可以看到如何异步读取名为 TestFile.txt 的文件：
+在下面的示例中，你可以看到如何异步读取名为 `TestFile.txt` 的文件：
 
 ```
 var fs = require('fs');
 
 fs.readFile('TestFile.txt', function (err, data) {
     if (err) throw err;
-
     console.log(data);
 });
 ```
 
-这段代码在 Windows 操作系统上异步读取 TestFile.txt。读取操作完成后执行回调函数。操作将成功完成，或者会抛出错误。如果抛出错误，`err` 参数包含所有的错误信息。在 `data` 参数中，你会找到指定文件的内容。
+这段代码在 Windows 操作系统上异步读取 `TestFile.txt`。读取操作完成后执行回调函数。操作将成功完成，或者会抛出错误。如果抛出错误，`err` 参数包含所有的错误信息。在 `data` 参数中，你会找到指定文件的内容。
 
-这是一个名为 TextFile.txt 的示例文件，内容如下：
+这是一个名为 `TextFile.txt` 的示例文件，内容如下：
 
 This test file tests the fs module of Node.js
 
@@ -13255,7 +13723,6 @@ This test file tests the fs module of Node.js
 
 ```
 var fs = require('fs');
-
 var data = fs.readFileSync('dummyfile.txt', 'utf8');
 console.log(data);
 ```
@@ -13274,15 +13741,16 @@ fs.writeFile(filename, data[, options], callback)
 
 这个方法有四个参数：
 
-- **filename**：字符串格式的完整路径和文件名。
-- **Data**：这是要写入文件的内容。
-- **options**：这可以是字符串或对象，可以包含标志和编码。默认标志是 `'r'`，默认编码是 `utf8`。
-- **callback**：这是一个有两个参数的函数——`fd` 和 `err`。它在操作完成时被调用。
+- `filename`：字符串格式的完整路径和文件名。
+- `Data`：这是要写入文件的内容。
+- `options`：这可以是字符串或对象，可以包含标志和编码。默认标志是 `'r'`，默认编码是 `utf8`。
+- `callback`：这是一个有两个参数的函数——`fd` 和 `err`。它在操作完成时被调用。
 
-在下面的示例中，你可以看到创建了一个名为 test.txt 的新文件，并异步写入 "Hello World"：
+在下面的示例中，你可以看到创建了一个名为 `test.txt` 的新文件，并异步写入 "Hello World"：
 
 ```
 var fs = require('fs');
+
 fs.writeFile('test.txt', 'Hello World!', function (err) {
     if (err)
         console.log(err);
@@ -13295,6 +13763,7 @@ fs.writeFile('test.txt', 'Hello World!', function (err) {
 
 ```
 var fs = require('fs');
+
 fs.appendFile('test.txt', 'Hello World!', function (err) {
     if (err)
         console.log(err);
@@ -13315,10 +13784,10 @@ fs.open(path, flags[, mode], callback)
 
 ### 参数
 
-- **path**：字符串格式的完整路径和文件名。
-- **Flag**：执行操作所需的标志。
-- **Mode**：这表示所需的模式——读、写、读写。默认是读写，即 0666。
-- **callback**：这是一个有两个参数的函数——`fd` 和 `err`。它在操作完成时被调用。
+- `path`：字符串格式的完整路径和文件名。
+- `Flag`：执行操作所需的标志。
+- `Mode`：这表示所需的模式——读、写、读写。默认是读写，即 0666。
+- `callback`：这是一个有两个参数的函数——`fd` 和 `err`。它在操作完成时被调用。
 
 #### 标志
 
@@ -13342,6 +13811,7 @@ fs.open(path, flags[, mode], callback)
 
 ```
 var fs = require('fs');
+
 fs.open('TestFile.txt', 'r', function (err, fd) {
     if (err) {
         return console.error(err);
@@ -13350,7 +13820,6 @@ fs.open('TestFile.txt', 'r', function (err, fd) {
     var bufr = new Buffer(1024);
 
     fs.read(fd, bufr, 0, bufr.length, 0, function (err, bytes) {
-
         if (err) throw err;
 
         // 只打印读取的字节，避免垃圾数据。
@@ -13380,13 +13849,14 @@ fs.unlink(path, callback);
 
 有两个参数：
 
-- **path**：字符串格式的完整路径和文件名。
-- **callback**：这是一个有两个参数的函数——`fd` 和 `err`。它在操作完成时被调用。
+- `path`：字符串格式的完整路径和文件名。
+- `callback`：这是一个有两个参数的函数——`fd` 和 `err`。它在操作完成时被调用。
 
 在下面的示例中，你可以看到删除一个现有文件：
 
 ```
 var fs = require('fs');
+
 fs.unlink('test.txt', function () {
     console.log('write operation complete.');
 });
@@ -13398,38 +13868,33 @@ fs.unlink('test.txt', function () {
 
 | 方法 | 描述 |
 |---|---|
-| fs.access() | 查看文件是否存在，以及 Node.js 是否可以根据其权限访问该文件 |
-| fs.appendFile() | 追加数据到文件——如果指定的文件不存在，则创建该文件 |
-| fs.chmod() | 更改指定文件的权限。与 `fs.lchmod()` 和 `fs.fchmod()` 相关 |
-| fs.chown() | 更改指定文件的所有者和/或组。与 `fs.chown()` 和 `fs.lchown()` 相关 |
-| fs.close() | 关闭文件描述符 |
-| fs.copyFile() | 复制指定文件 |
-| fs.createReadStream() | 创建可读文件流 |
-| fs.createWriteStream() | 创建可写文件流 |
-| fs.link() | 创建指向指定文件的硬链接 |
-| fs.mkdir() | 创建新文件夹 |
-| fs.mkdtemp() | 创建临时目录 |
-| fs.open() | 设置所需的文件模式 |
-| fs.readdir() | 读取指定目录的内容 |
-| fs.readFile() | 读取指定文件的内容。与 |
-
-```
-| 函数 | 说明 |
-|---|---|
-| fs.read() | 读取指定缓冲区 |
-| fs.readlink() | 读取符号链接的指定值 |
-| fs.realpath() | 将相对文件路径指针解析为完整路径 |
-| fs.rename() | 重命名指定的文件或文件夹 |
-| fs.rmdir() | 删除指定的文件夹 |
-| fs.stat() | 返回指定文件名的状态信息。与 fs.fstat() 和 fs.lstat() 相关 |
-| fs.symlink() | 创建指向指定文件的新符号链接 |
-| fs.truncate() | 将指定文件截断为指定长度。与 fs.ftruncate() 相关 |
-| fs.unlink() | 删除指定的文件或符号链接 |
-| fs.unwatchFile() | 停止监视文件的更改 |
-| fs.utimes() | 更改指定文件的时间戳。与 fs.futimes() 相关 |
-| fs.watchFile() | 开始监视指定文件的更改。与 fs.watch() 相关 |
-| fs.writeFile() | 将数据写入指定文件。RE |
-```
+| `fs.access()` | 查看文件是否存在，以及 Node.js 是否可以根据其权限访问该文件 |
+| `fs.appendFile()` | 追加数据到文件——如果指定的文件不存在，则创建该文件 |
+| `fs.chmod()` | 更改指定文件的权限。与 `fs.lchmod()` 和 `fs.fchmod()` 相关 |
+| `fs.chown()` | 更改指定文件的所有者和/或组。与 `fs.chown()` 和 `fs.lchown()` 相关 |
+| `fs.close()` | 关闭文件描述符 |
+| `fs.copyFile()` | 复制指定文件 |
+| `fs.createReadStream()` | 创建可读文件流 |
+| `fs.createWriteStream()` | 创建可写文件流 |
+| `fs.link()` | 创建指向指定文件的硬链接 |
+| `fs.mkdir()` | 创建新文件夹 |
+| `fs.mkdtemp()` | 创建临时目录 |
+| `fs.open()` | 设置所需的文件模式 |
+| `fs.readdir()` | 读取指定目录的内容 |
+| `fs.readFile()` | 读取指定文件的内容。与 `fs.read()` 相关 |
+| `fs.read()` | 读取指定缓冲区 |
+| `fs.readlink()` | 读取符号链接的指定值 |
+| `fs.realpath()` | 将相对文件路径指针解析为完整路径 |
+| `fs.rename()` | 重命名指定的文件或文件夹 |
+| `fs.rmdir()` | 删除指定的文件夹 |
+| `fs.stat()` | 返回指定文件名的状态信息。与 `fs.fstat()` 和 `fs.lstat()` 相关 |
+| `fs.symlink()` | 创建指向指定文件的新符号链接 |
+| `fs.truncate()` | 将指定文件截断为指定长度。与 `fs.ftruncate()` 相关 |
+| `fs.unlink()` | 删除指定的文件或符号链接 |
+| `fs.unwatchFile()` | 停止监视文件的更改 |
+| `fs.utimes()` | 更改指定文件的时间戳。与 `fs.futimes()` 相关 |
+| `fs.watchFile()` | 开始监视指定文件的更改。与 `fs.watch()` 相关 |
+| `fs.writeFile()` | 将数据写入指定文件。RE |
 
 关于 fs 模块，有一点需要了解——默认情况下，它的所有方法都是异步的，但通过添加 `sync()` 后缀，可以让它们同步运行：
 
@@ -13439,6 +13904,7 @@ fs.unlink('test.txt', function () {
 
 ```javascript
 const fs = require('fs')
+
 fs.rename('before.json', 'after.json', err => {
   if (err) {
     return console.error(err)
@@ -13452,6 +13918,7 @@ fs.rename('before.json', 'after.json', err => {
 
 ```javascript
 const fs = require('fs')
+
 try {
   fs.renameSync('before.json', 'after.json')
   //done
@@ -13503,6 +13970,7 @@ SecondFile.js
 
 ```javascript
 require('FirstFile.js');
+
 console.log(myName); // It will log "marypoppins"
 ```
 
@@ -13514,7 +13982,7 @@ console.log(myName); // It will log "marypoppins"
 
 该对象包含大量关于进程的有用信息：
 
-- **Process.versions** – 告诉我们每个 Node 核心模块的版本，例如 openssl、zlib、v8 等。
+- `Process.versions` – 告诉我们每个 Node 核心模块的版本，例如 openssl、zlib、v8 等。
 
 ```javascript
 > process.versions
@@ -13536,7 +14004,7 @@ console.log(myName); // It will log "marypoppins"
 > 
 ```
 
-- **Process.env** – 告诉我们有关 Node 运行环境的一些重要信息。以下是一些示例：
+- `Process.env` – 告诉我们有关 Node 运行环境的一些重要信息。以下是一些示例：
 
 ```javascript
 >process.env.shell
@@ -13572,9 +14040,9 @@ Buffer 是 V8 堆外部的一个内存块，用于帮助我们将数据放入内
 
 创建 Buffer 的一些方式包括：
 
-- **Buffer.from()** - 使用任何内容（如图片、文件或字符串）来创建 Buffer
-- **Buffer.alloc()** – 创建指定大小的已填充 Buffer
-- **Buffer.allocUnsafe()** - 创建指定大小的 Buffer，可能包含旧数据，但在性能方面具有优势。也可以使用 `.fill()` 来填充。
+- `Buffer.from()` - 使用任何内容（如图片、文件或字符串）来创建 Buffer
+- `Buffer.alloc()` – 创建指定大小的已填充 Buffer
+- `Buffer.allocUnsafe()` - 创建指定大小的 Buffer，可能包含旧数据，但在性能方面具有优势。也可以使用 `.fill()` 来填充。
 
 下图展示了 `Buffer.alloc()` 和 `Buffer.allocUnsafe()` 之间的区别。
 
@@ -13592,7 +14060,9 @@ Buffer 是 V8 堆外部的一个内存块，用于帮助我们将数据放入内
 // myFile.js
 const { StringDecoder } = require('string_decoder');
 const decoder = new StringDecoder('utf8');
+
 let myBuffer = Buffer.from("Hello Guys ... ");
+
 console.log(myBuffer);
 console.log(myBuffer.toString());
 console.log(decoder.write(myBuffer));
@@ -13623,9 +14093,9 @@ Hello Guys...
 我们将介绍以下全局对象：
 
 - process
-- \_\_dirname
-- \_\_filename
-- require()
+- `__dirname`
+- `__filename`
+- `require()`
 - module
 - URL
 
@@ -13647,8 +14117,6 @@ cd nodejs
 touch main.js
 ```
 
-
-
 **注意**
 
 如果你使用的是 Windows 系统，touch 命令将无法使用。唯一的解决方法是使用文本编辑器创建文件，然后将其保存到你的 nodejs 目录中。
@@ -13659,20 +14127,19 @@ touch main.js
 
 这个全局对象为你提供大量有关程序执行环境的有用信息。它提供的一些信息包括架构、平台、进程 ID、运行时间、环境变量、当前工作目录等。以下是该对象中一些较常用的函数和属性：
 
-- **process.arch** – 返回操作系统的 CPU 架构。一些返回值包括 x32、x64 和 ia32。
-- **process.platform** – 返回程序正在其上运行的操作系统或平台。一些返回的字符串示例包括 openbsd、linux、freebsd 和 win32。
-- **process.id** – 返回 Node 进程的 PID，即进程 ID。
-- **process.cwd()** – 这是一个返回执行程序当前工作目录的方法。
-- **process.chdir(directory)** – 此方法用于更改当前工作目录。
+- `process.arch` – 返回操作系统的 CPU 架构。一些返回值包括 x32、x64 和 ia32。
+- `process.platform` – 返回程序正在其上运行的操作系统或平台。一些返回的字符串示例包括 openbsd、linux、freebsd 和 win32。
+- `process.id` – 返回 Node 进程的 PID，即进程 ID。
+- `process.cwd()` – 这是一个返回执行程序当前工作目录的方法。
+- `process.chdir(directory)` – 此方法用于更改当前工作目录。
 
 process 对象有很多属性，但我们将把注意力集中在四个主要属性上，并用它们创建一个程序：
 
-打开 main.js 并输入以下内容：
+打开 `main.js` 并输入以下内容：
 
 ```js
 // 打印当前工作目录
 console.log(`Starting directory: ${process.cwd()}`);
-
 console.log(`This platform is ${process.platform}`);
 console.log(`Process PID: ${process.pid}`);
 console.log(`The CPU Architecture is: ${process.arch}`);
@@ -13692,17 +14159,9 @@ node main.js
 
 ```
 Starting directory: /home/<your username>/nodejs
-```
-
 This platform is linux
-
-```
 Process PID: 19253
-```
-
 The CPU Architecture is: x64
-
-```
 Ending directory: /home/<your username>/Documents
 ```
 
@@ -13724,7 +14183,7 @@ const localModule = require('.path/filename.js');
 const jsonData = require('.path/filename.json');
 ```
 
-如果你想从 node_modules 目录导入模块或使用 Node.js 内置模块，需要将模块名称传递给 require() 方法：
+如果你想从 `node_modules` 目录导入模块或使用 Node.js 内置模块，需要将模块名称传递给 `require()` 方法：
 
 ```js
 // fs 是一个内置模块
@@ -13735,7 +14194,7 @@ const fileSystem = require('fs');
 
 这返回脚本正在执行的目录路径。你无法在 Node.js REPL 中访问它。
 
-将 main.js 中的代码清空，并替换为以下内容：
+将 `main.js` 中的代码清空，并替换为以下内容：
 
 ```js
 console.log(__dirname);
@@ -13747,13 +14206,17 @@ console.log(__dirname);
 /home/<your username>/nodejs
 ```
 
+
+
+## Node.js 全局对象
+
 当你想用 Node.js 读写文件时，这会很有用。
 
-### \_\_filename
+### `__filename`
 
 这返回正在执行的文件的绝对路径。同样，它也无法在 REPL 中访问。
 
-将 main.js 中的代码清空，并替换为以下内容：
+将 `main.js` 中的代码清空，并替换为以下内容：
 
 ```js
 console.log(__filename);
@@ -13765,17 +14228,17 @@ console.log(__filename);
 /home/<your username>/nodejs/main.js
 ```
 
-### module
+### `module`
 
-module 全局对象引用当前模块，其中包含 CommonJS 可以用来确定如何导入该模块的当前模块信息。
+`module` 全局对象引用当前模块，其中包含 CommonJS 可以用来确定如何导入该模块的当前模块信息。
 
-每当创建一个文件时，就像我们之前创建的 main.js 文件，它就会变成一个模块。记录 module 可以让我们获取有关 main.js 模块的信息：
+每当创建一个文件时，就像我们之前创建的 `main.js` 文件，它就会变成一个模块。记录 `module` 可以让我们获取有关 `main.js` 模块的信息：
 
 ```js
 console.log(module);
 ```
 
-当你记录 module 时，会返回一个包含该模块所有信息的对象：
+当你记录 `module` 时，会返回一个包含该模块所有信息的对象：
 
 ```
 Module {
@@ -13795,17 +14258,16 @@ Module {
 }
 ```
 
-当 main.js 模块被 CommonJS 在另一个文件中导入时，它会在来自 Module.paths 的路径中查找 main.js 文件。
+当 `main.js` 模块被 CommonJS 在另一个文件中导入时，它会在来自 `Module.paths` 的路径中查找 `main.js` 文件。
 
-### URL
+### `URL`
 
 这是一个构造函数方法，用于解析 URL 并返回一个包含解析数据的对象。
 
-删除 main.js 中的所有内容，以便我们可以解析以下 URL（这不是一个真实的 URL）—— https://www.marypoppins.madeup/。如果你愿意，也可以用一个真实的 URL 来尝试——只需输入相应的详细信息：
+删除 `main.js` 中的所有内容，以便我们可以解析以下 URL（这不是一个真实的 URL）—— `https://www.marypoppins.madeup/`。如果你愿意，也可以用一个真实的 URL 来尝试——只需输入相应的详细信息：
 
 ```js
 const url = new URL('https://www.marypoppins.madeup/');
-
 console.log(`The url protocol: ${url.protocol}`);
 console.log(`The url path : ${url.pathname}`);
 console.log(`The url hostname: ${url.hostname}`);
@@ -13839,25 +14301,25 @@ var os = require("os");
 
 | 方法 | 描述 |
 |---|---|
-| os.tmpdir() | 返回操作系统临时文件的默认目录 |
-| os.endianness() | 返回 CPU 的字节序，可能值为 LE 或 BE |
-| os.hostname() | 返回操作系统的主机名 |
-| os.type() | 返回操作系统的系统名称 |
-| os.arch() | 返回操作系统的 CPU 架构。可能值为 arm、x64 和 ia32。 |
-| os.platform() | 返回操作系统平台 |
-| os.release() | 返回操作系统的发布版本 |
-| os.uptime() | 返回系统运行时间（秒） |
-| os.loadavg() | 返回包含 1、5 和 15 分钟平均负载的数组 |
-| os.totalmem() | 返回系统内存总量（字节） |
-| os.freemem() | 返回系统空闲内存量（字节） |
-| os.cpus() | 返回包含每个已安装 CPU/核心信息的对象数组。包括速度（MHz）、型号和 times —— CPU/核心在 irq、idle、sys、nice 和 user 上花费的时间（秒） |
-| os.networkInterfaces() | 提供网络接口列表 |
+| `os.tmpdir()` | 返回操作系统临时文件的默认目录 |
+| `os.endianness()` | 返回 CPU 的字节序，可能值为 `LE` 或 `BE` |
+| `os.hostname()` | 返回操作系统的主机名 |
+| `os.type()` | 返回操作系统的系统名称 |
+| `os.arch()` | 返回操作系统的 CPU 架构。可能值为 `arm`、`x64` 和 `ia32`。 |
+| `os.platform()` | 返回操作系统平台 |
+| `os.release()` | 返回操作系统的发布版本 |
+| `os.uptime()` | 返回系统运行时间（秒） |
+| `os.loadavg()` | 返回包含 1、5 和 15 分钟平均负载的数组 |
+| `os.totalmem()` | 返回系统内存总量（字节） |
+| `os.freemem()` | 返回系统空闲内存量（字节） |
+| `os.cpus()` | 返回包含每个已安装 CPU/核心信息的对象数组。包括速度（MHz）、型号和 `times` —— CPU/核心在 `irq`、`idle`、`sys`、`nice` 和 `user` 上花费的时间（秒） |
+| `os.networkInterfaces()` | 提供网络接口列表 |
 
 #### OS 模块属性
 
-该模块的主要属性是 os.EOL。它是一个常量，定义了特定操作系统的正确行尾标记。
+该模块的主要属性是 `os.EOL`。它是一个常量，定义了特定操作系统的正确行尾标记。
 
-在下面的代码演示中，你可以看到一些 OS 模块方法。如果你想跟着做，创建一个文件，命名为 main.js，然后输入以下代码：
+在下面的代码演示中，你可以看到一些 OS 模块方法。如果你想跟着做，创建一个文件，命名为 `main.js`，然后输入以下代码：
 
 ```js
 var os = require("os");
@@ -13903,19 +14365,19 @@ var path = require("path");
 
 | 方法 | 描述 |
 | --- | --- |
-| path.normalize(p) | 用于规范化字符串路径，处理 "." 和 ".." 部分 |
-| path.join([path1][, path2][, ...]) | 连接参数并规范化生成的路径 |
-| path.resolve([from ...], to) | 将解析为绝对路径 |
-| path.isAbsolute(path) | 确定路径是否为绝对路径。无论工作目录是什么，绝对路径始终解析到同一位置。 |
-| path.relative(from, to) | 求解 from 到 to 的相对路径 |
-| path.dirname(p) | 返回路径的目录名 |
-| path.basename(p[, ext]) | 返回路径的最后一部分 |
-| path.extname(p) | 返回路径的扩展名形式 |
+| `path.normalize(p)` | 用于规范化字符串路径，处理 `"."` 和 `".."` 部分 |
+| `path.join([path1][, path2][, ...])` | 连接参数并规范化生成的路径 |
+| `path.resolve([from ...], to)` | 将解析为绝对路径 |
+| `path.isAbsolute(path)` | 确定路径是否为绝对路径。无论工作目录是什么，绝对路径始终解析到同一位置。 |
+| `path.relative(from, to)` | 求解 `from` 到 `to` 的相对路径 |
+| `path.dirname(p)` | 返回路径的目录名 |
+| `path.basename(p[, ext])` | 返回路径的最后一部分 |
+| `path.extname(p)` | 返回路径的扩展名形式 |
 
- | 方法 | 说明 |
+| 方法 | 说明 |
 |--------|-------------|
-| path.parse(pathString) | 从路径字符串返回一个对象 |
-| path.format(pathObject) | 从对象返回路径字符串 |
+| `path.parse(pathString)` | 从路径字符串返回一个对象 |
+| `path.format(pathObject)` | 从对象返回路径字符串 |
 
 #### Path 模块属性
 
@@ -13923,16 +14385,16 @@ var path = require("path");
 
 | 属性 | 说明 |
 |------------|-------------|
-| path.sep | 特定于平台的文件分隔符，为 / 或 \\ |
-| path.delimiter | 特定于平台的路径分隔符，为 : 或 ; |
-| path.posix | 提供对上述路径方法的访问，但只允许以与 posix 兼容的方式进行交互 |
-| path.win32 | 这也提供对上述路径方法的访问，但只允许以与 win32 兼容的方式进行交互 |
+| `path.sep` | 特定于平台的文件分隔符，为 `/` 或 `\\` |
+| `path.delimiter` | 特定于平台的路径分隔符，为 `:` 或 `;` |
+| `path.posix` | 提供对上述路径方法的访问，但只允许以与 posix 兼容的方式进行交互 |
+| `path.win32` | 这也提供对上述路径方法的访问，但只允许以与 win32 兼容的方式进行交互 |
 
 在这里，你可以看到 Path 模块方法的实际应用。
 
-清空 main.js 文件的内容，并添加以下内容：
+清空 `main.js` 文件的内容，并添加以下内容：
 
-```
+```js
 var path = require("path");
 
 // Normalization
@@ -13940,9 +14402,7 @@ console.log('normalization : ' + path.normalize('/test/test1//2slashes/1slash/ta
 
 // Join
 console.log('joint path : ' + path.join('/test', 'test1', '2slashes/1slash', 'tab', '..'));
-```
 
-```
 // Resolve
 console.log('resolve : ' + path.resolve('main.js'));
 
@@ -13963,9 +14423,9 @@ ext name : .js
 
 ### Net 模块
 
-net 模块提供客户端和服务器流，还提供了围绕网络的异步包装器。使用以下语法导入：
+`net` 模块提供客户端和服务器流，还提供了围绕网络的异步包装器。使用以下语法导入：
 
-```
+```js
 var net = require("net")
 ```
 
@@ -13975,125 +14435,115 @@ var net = require("net")
 
 | 方法 | 说明 |
 | --- | --- |
-| net.createServer([options][, connectionListener]) | 创建 TCP 服务器，参数 connectionListener 自动设置为连接事件监听器 |
-| net.connect(options[, connectionListener]) | 这是一个工厂方法，返回 net.Socket 并连接到提供的地址和端口 |
-| net.createConnection(options[, connectionListener]) | 同上 |
-| net.connect(port[, host][, connectListener]) | 创建到主机上端口的 TCP 连接。如果没有主机，则默认为 localhost。参数 connectListener 添加为连接事件监听器，与前两种方法一样，它也返回 net.Socket。 |
-| net.connect(path[, connectListener]) | 创建到路径的 Unix 套接字连接。参数 connectListener 添加为连接事件监听器，与前面方法一样，它也返回 net.Socket。 |
-| net.createConnection(path[, connectListener]) | 同上 |
-| net.isIP(input) | 测试输入是否为 IP 地址，如果字符串无效返回 0，是 IPv4 地址返回 4，是 IPv6 地址返回 6 |
-| net.isIPv4(input) | 如果输入是 IPv4 地址返回 true，否则返回 false |
-| net.isIPv6(input) | 如果输入是 IPv6 地址返回 true，否则返回 false |
+| `net.createServer([options][, connectionListener])` | 创建 TCP 服务器，参数 `connectionListener` 自动设置为连接事件监听器 |
+| `net.connect(options[, connectionListener])` | 这是一个工厂方法，返回 `net.Socket` 并连接到提供的地址和端口 |
+| `net.createConnection(options[, connectionListener])` | 同上 |
+| `net.connect(port[, host][, connectListener])` | 创建到主机上端口的 TCP 连接。如果没有主机，则默认为 `localhost`。参数 `connectListener` 添加为连接事件监听器，与前两种方法一样，它也返回 `net.Socket`。 |
+| `net.connect(path[, connectListener])` | 创建到路径的 Unix 套接字连接。参数 `connectListener` 添加为连接事件监听器，与前面方法一样，它也返回 `net.Socket`。 |
+| `net.createConnection(path[, connectListener])` | 同上 |
+| `net.isIP(input)` | 测试输入是否为 IP 地址，如果字符串无效返回 `0`，是 IPv4 地址返回 `4`，是 IPv6 地址返回 `6` |
+| `net.isIPv4(input)` | 如果输入是 IPv4 地址返回 `true`，否则返回 `false` |
+| `net.isIPv6(input)` | 如果输入是 IPv6 地址返回 `true`，否则返回 `false` |
 
-#### 类 - net.Server
+#### 类 - `net.Server`
 
-net.Server 类用于创建本地或 TCP 服务器。
+`net.Server` 类用于创建本地或 TCP 服务器。
 
-##### net.Server 方法
+##### `net.Server` 方法
 
 以下是该类的相关方法：
 
 | 方法 | 说明 |
 | :--- | :--- |
-| `server.listen(port[, host][, backlog][, callback])` | 允许开始在给定端口和主机上接受连接。如果没有指定主机，服务器将接受指向 IPv4 地址（INADDR_ANY）的连接。如果端口号缺失，则分配随机端口。 |
+| `server.listen(port[, host][, backlog][, callback])` | 允许开始在给定端口和主机上接受连接。如果没有指定主机，服务器将接受指向 IPv4 地址（`INADDR_ANY`）的连接。如果端口号缺失，则分配随机端口。 |
 | `server.listen(path[, callback])` | 启动在给定路径上监听连接的本地套接字服务器 |
-| `server.listen(handle[, callback])` | 你可以将 handle 对象设置为套接字或服务器，只要它具有 {fd: <n>} 对象或底层 _handle 成员。服务器被迫在给定 handle 上接受连接，但假定该 handle 或文件描述符已绑定到域套接字或端口。Windows 不支持在文件描述符上监听。 |
-| `server.listen(options[, callback])` | 在此方法中，host、port、可选属性 backlog 和回调函数的行为与 server.listen(port, [host], [backlog], [callback]) 调用中的相同。你还可以使用 path 选项来指定 UNIX 套接字。 |
-| `server.close([callback])` | 当没有更多打开的连接时关闭，并发出 close 事件 |
-| server.address() | 此方法将返回绑定地址、服务器端口以及操作系统报告的地址族名称 |
-| server.unref() | 当你对服务器调用 unref 时，如果事件系统没有其他活跃的服务器，程序可以退出。如果服务器已经 unref，调用 unref 将无效。 |
-| server.ref() | 与上述相反——如果你在之前 unref 的服务器上调用 ref，如果它是唯一剩余的服务器，程序将无法退出。如果服务器是 ref 状态，再次调用 ref 将无效。 |
-| server.getConnections(callback) | 异步获取并发连接数。这适用于发送到分叉的套接字，回调需要两个参数——err 和 count |
+| `server.listen(handle[, callback])` | 你可以将 `handle` 对象设置为套接字或服务器，只要它具有 `{fd: <n>}` 对象或底层 `_handle` 成员。服务器被迫在给定 `handle` 上接受连接，但假定该 `handle` 或文件描述符已绑定到域套接字或端口。Windows 不支持在文件描述符上监听。 |
+| `server.listen(options[, callback])` | 在此方法中，`host`、`port`、可选属性 `backlog` 和回调函数的行为与 `server.listen(port, [host], [backlog], [callback])` 调用中的相同。你还可以使用 `path` 选项来指定 UNIX 套接字。 |
+| `server.close([callback])` | 当没有更多打开的连接时关闭，并发出 `close` 事件 |
+| `server.address()` | 此方法将返回绑定地址、服务器端口以及操作系统报告的地址族名称 |
+| `server.unref()` | 当你对服务器调用 `unref` 时，如果事件系统没有其他活跃的服务器，程序可以退出。如果服务器已经 `unref`，调用 `unref` 将无效。 |
+| `server.ref()` | 与上述相反——如果你在之前 `unref` 的服务器上调用 `ref`，如果它是唯一剩余的服务器，程序将无法退出。如果服务器是 `ref` 状态，再次调用 `ref` 将无效。 |
+| `server.getConnections(callback)` | 异步获取并发连接数。这适用于发送到分叉的套接字，回调需要两个参数——`err` 和 `count` |
 
-## **事件**
+#### 事件
 
 以下是上述方法相关的事件：
 
 | 事件 | 说明 |
 |-------|-------------|
-| listening | 当 server.listen 被调用且服务器绑定后发出此事件 |
-| connection | 当新连接建立后发出。事件处理器可以访问连接对象、套接字对象，套接字是 net.Socket 实例。 |
-| close | 当服务器关闭后发出。如果存在现有连接，必须等它们全部关闭后才能发出 |
-| error | 当发生错误时发出。此事件之后，立即调用 close 事件。 |
+| `listening` | 当 `server.listen` 被调用且服务器绑定后发出此事件 |
+| `connection` | 当新连接建立后发出。事件处理器可以访问连接对象、套接字对象，套接字是 `net.Socket` 实例。 |
+| `close` | 当服务器关闭后发出。如果存在现有连接，必须等它们全部关闭后才能发出 |
+| `error` | 当发生错误时发出。此事件之后，立即调用 `close` 事件。 |
 
-#### 类 - net.Socket
+#### 类 - `net.Socket`
 
-这是本地或 TCP 套接字的抽象，net.Socket 的实例用于实现双工流接口。用户可以创建它们，并使用 connect() 作为客户端，或者 Node 可以创建它们并通过服务器的 connection 事件传递给用户。
+这是本地或 TCP 套接字的抽象，`net.Socket` 的实例用于实现双工流接口。用户可以创建它们，并使用 `connect()` 作为客户端，或者 Node 可以创建它们并通过服务器的 `connection` 事件传递给用户。
 
-### *net.Socket 事件*
+##### `net.Socket` 事件
 
-以下是 net.Socket 发出的事件：
+以下是 `net.Socket` 发出的事件：
 
 | 事件 | 说明 |
 | --- | --- |
-| Lookup | 当主机名解析后但在连接之前发出此事件。这不适用于 UNIX 套接字 |
-| connect | 套接字连接成功建立后发出 |
-| data | 收到数据时随时发出。参数数据使用 String 或 Buffer，socket.setEncoding() 用于设置数据编码 |
-| end | 当套接字的另一端发送 FIN 包时发出 |
-| timeout | 当不活动导致套接字超时时发出。这纯粹是为了告诉你套接字处于空闲状态，连接必须由用户手动关闭 |
-| drain | 写入缓冲区清空后发出，可用于限制上传速度 |
-| error | 发生错误后发出，并立即由 close 事件跟随 |
-| close | 仅在套接字完全关闭时发出。它接受 had_error 参数，这是一个布尔值，告诉你传输错误是否导致套接字关闭。 |
+| `lookup` | 当主机名解析后但在连接之前发出此事件。这不适用于 UNIX 套接字 |
+| `connect` | 套接字连接成功建立后发出 |
+| `data` | 收到数据时随时发出。参数数据使用 `String` 或 `Buffer`，`socket.setEncoding()` 用于设置数据编码 |
+| `end` | 当套接字的另一端发送 FIN 包时发出 |
+| `timeout` | 当不活动导致套接字超时时发出。这纯粹是为了告诉你套接字处于空闲状态，连接必须由用户手动关闭 |
+| `drain` | 写入缓冲区清空后发出，可用于限制上传速度 |
+| `error` | 发生错误后发出，并立即由 `close` 事件跟随 |
+| `close` | 仅在套接字完全关闭时发出。它接受 `had_error` 参数，这是一个布尔值，告诉你传输错误是否导致套接字关闭。 |
 
-**net.Socket 属性**
+##### `net.Socket` 属性
 
-以下是 net.Socket 用于控制套接字交互的属性：
+以下是 `net.Socket` 用于控制套接字交互的属性：
 
 | 属性 | 说明 |
 |---|---|
-| socket.bufferSize | 指示等待写入的缓冲字符数 |
-| socket.remoteAddress | 远程 IP 地址的字符串表示。 |
-| socket.remoteFamily | 远程 IP 族的字符串表示，IPv4 或 IPv6 |
-| socket.remotePort | 以数字表示远程端口 |
-| socket.localAddress | 表示远程客户端连接到的本地 IP 地址，是字符串表示。例如，如果你在 0.0.0.0 上监听，远程客户端使用 192.168.1.1 连接，则值为 192.168.1.1 |
-| socket.localPort | 以数字表示本地端口 |
-| socket.bytesRead | 指示接收了多少字节 |
-| socket.bytesWritten | 指示发送了多少字节 |
+| `socket.bufferSize` | 指示等待写入的缓冲字符数 |
+| `socket.remoteAddress` | 远程 IP 地址的字符串表示。 |
+| `socket.remoteFamily` | 远程 IP 族的字符串表示，`IPv4` 或 `IPv6` |
+| `socket.remotePort` | 以数字表示远程端口 |
+| `socket.localAddress` | 表示远程客户端连接到的本地 IP 地址，是字符串表示。例如，如果你在 `0.0.0.0` 上监听，远程客户端使用 `192.168.1.1` 连接，则值为 `192.168.1.1` |
+| `socket.localPort` | 以数字表示本地端口 |
+| `socket.bytesRead` | 指示接收了多少字节 |
+| `socket.bytesWritten` | 指示发送了多少字节 |
 
-##### net.Socket 方法
+##### `net.Socket` 方法
 
-以下是 net.Socket 的方法：
+以下是 `net.Socket` 的方法：
 
 | 方法 | 说明 |
 | --- | --- |
-| new net.Socket([options]) | 此方法用于构造新的套接字对象 |
-| socket.connect(port[, host][, connectListener]) | 用于打开指定套接字的连接。如果提供了 host 和 port，套接字作为 TCP 打开；如果未提供 host，则假定为 localhost。如果提供了 path，套接字作为 UNIX 套接字打开到该路径 |
-| socket.connect(path[, connectListener]) | 用于打开指定套接字的连接。如果提供了 host |
+| `new net.Socket([options])` | 此方法用于构造新的套接字对象 |
+| `socket.connect(port[, host][, connectListener])` | 用于打开指定套接字的连接。如果提供了 `host` 和 `port`，套接字作为 TCP 打开；如果未提供 `host`，则假定为 `localhost`。如果提供了 `path`，套接字作为 UNIX 套接字打开到该路径 |
+| `socket.connect(path[, connectListener])` | 用于打开指定套接字的连接。 |
+| `socket.setEncoding([encoding])` | 用于将 socket 编码设置为可读流 |
+| `socket.write(data[, encoding][, callback])` | 用于在 socket 上发送数据。如果数据是字符串，则第二个参数用于指定编码方式——默认为 `UTF8` |
+| `socket.end([data][, encoding])` | 用于发送 FIN 包，半关闭 socket。服务器可能仍能发送数据 |
+| `socket.destroy()` | 用于确保 socket 上不会发生 I/O 操作。仅在出现错误（如解析错误等）时才需要使用 |
+| `socket.pause()` | 用于暂停数据读取，即停止触发 `data` 事件。当你希望限制上传速度时非常有用 |
+| `socket.resume()` | 用于在调用 `pause` 方法后恢复数据读取 |
+| `socket.setTimeout(timeout[, callback])` | 用于设置 socket 在指定毫秒数后超时。默认情况下，`net.socket` 没有超时设置 |
+| `socket.setNoDelay([noDelay])` | 用于禁用 Nagle 算法。TCP 连接默认使用该算法，在发送数据之前会进行缓冲。如果将 `noDelay` 设置为 `true`，则在调用 `socket.write()` 时会立即发送数据。默认情况下，`noDelay` 设置为 `true` |
+| `socket.setKeepAlive([enable][, initialDelay])` | 用于启用或禁用 keep-alive 功能。可选地，还可以设置空闲 socket 发送初始 keepalive 探测之前的延迟时间。默认情况下，`enable` 设置为 `false` |
+| `socket.address()` | 返回操作系统报告的地址族名称、绑定地址和 socket 端口。返回一个包含三个属性的对象，即 `{port: 23467, family: 'IPv6', address: '128.0.1.1'}` |
+| `socket.unref()` | 当你对 socket 调用 `unref` 时，如果事件系统中没有其他活动的 socket，程序可以退出。如果 socket 已经被 `unref`，调用 `unref` 不会产生效果 |
+| `socket.ref()` | 与上面相反——如果你对之前被 `unref` 的 socket 调用 `ref`，当它是唯一剩余的 socket 时，程序将无法退出。如果 socket 已经被 `ref`，再次调用 `ref` 不会产生效果 |
 
+以下是使用这些方法的示例。首先，创建一个新文件，命名为 `server.js`。然后输入以下内容：
 
-
-##### Socket 方法
-
-| 方法 | 描述 |
-|--------|-------------|
-| socket.setEncoding([encoding]) | 用于将 socket 编码设置为可读流 |
-| socket.write(data[, encoding][, callback]) | 用于在 socket 上发送数据。如果数据是字符串，则第二个参数用于指定编码方式——默认为 UTF8 |
-| socket.end([data][, encoding]) | 用于发送 FIN 包，半关闭 socket。服务器可能仍能发送数据 |
-| socket.destroy() | 用于确保 socket 上不会发生 I/O 操作。仅在出现错误（如解析错误等）时才需要使用 |
-| socket.pause() | 用于暂停数据读取，即停止触发 data 事件。当你希望限制上传速度时非常有用 |
-| socket.resume() | 用于在调用 pause 方法后恢复数据读取 |
-| socket.setTimeout(timeout[, callback]) | 用于设置 socket 在指定毫秒数后超时。默认情况下，net.socket 没有超时设置 |
-| socket.setNoDelay([noDelay]) | 用于禁用 Nagle 算法。TCP 连接默认使用该算法，在发送数据之前会进行缓冲。如果将 noDelay 设置为 true，则在调用 socket.write() 时会立即发送数据。默认情况下，noDelay 设置为 true |
-| socket.setKeepAlive([enable][, initialDelay]) | 用于启用或禁用 keep-alive 功能。可选地，还可以设置空闲 socket 发送初始 keepalive 探测之前的延迟时间。默认情况下，enable 设置为 false |
-| socket.address() | 返回操作系统报告的地址族名称、绑定地址和 socket 端口。返回一个包含三个属性的对象，即 {port: 23467, family: 'IPv6', address: '128.0.1.1'} |
-| socket.unref() | 当你对 socket 调用 unref 时，如果事件系统中没有其他活动的 socket，程序可以退出。如果 socket 已经被 unrefd，调用 unref 不会产生效果 |
-| socket.ref() | 与上面相反——如果你对之前被 unrefd 的 socket 调用 ref，当它是唯一剩余的 socket 时，程序将无法退出。如果 socket 已经被 refd，再次调用 ref 不会产生效果 |
-
-以下是使用这些方法的示例。首先，创建一个新文件，命名为 server.js。然后输入以下内容：
-
-```
+```js
 var net = require('net');
 var server = net.createServer(function(connection) {
     console.log('client connected');
-
     connection.on('end', function() {
         console.log('client disconnected');
     });
-
     connection.write('Hello World!\r\n');
     connection.pipe(connection);
 });
-
 server.listen(8080, function() {
     console.log('server is listening');
 });
@@ -14111,19 +14561,17 @@ $ node server.js
 server is listening
 ```
 
-接下来，创建另一个新文件，命名为 client.js，并输入以下代码：
+接下来，创建另一个新文件，命名为 `client.js`，并输入以下代码：
 
-```
+```js
 var net = require('net');
 var client = net.connect({port: 8080}, function() {
     console.log('connected to server!');
 });
-
 client.on('data', function(data) {
     console.log(data.toString());
     client.end();
 });
-
 client.on('end', function() {
     console.log('disconnected from server');
 });
@@ -14143,7 +14591,7 @@ Hello World!
 disconnected from server
 ```
 
-最后，在运行 server.js 文件的终端上，验证输出：
+最后，在运行 `server.js` 文件的终端上，验证输出：
 
 ```
 server is listening
@@ -14155,7 +14603,7 @@ client disconnected
 
 DNS 模块包含允许我们进行 DNS 查询和使用操作系统底层名称解析功能的函数。它为网络提供了一个异步封装，需要使用以下语法来导入它：
 
-```
+```js
 var dns = require("dns")
 ```
 
@@ -14165,67 +14613,67 @@ var dns = require("dns")
 
 | 方法 | 描述 |
 | :--- | :--- |
-| dns.lookup(hostname[, options], callback) | 此方法用于将主机名解析为第一条 IPv4（A）或 IPv6（AAAA）记录。options 参数可以是整数或对象，如果未提供，则 IPv4 和 IPv6 地址均有效。如果设置为整数，则为 4 或 6 |
-| dns.lookupService(address, port, callback) | 使用 getnameinfo 将指定的端口和地址解析为服务和主机名 |
-| dns.resolve(hostname[, rrtype], callback) | 用于将主机名解析为包含 rrtype 指定的记录类型的数组 |
-| dns.resolve4(hostname, callback) | 与上面类似，但仅针对 IPv4 或 A 记录查询 |
-| dns.resolve6(hostname, callback) | 与上面类似，但针对 IPv6 或 AAAA 记录查询 |
-| dns.resolveMx(hostname, callback) | 与上面类似，但仅针对 MX 记录或邮件交换查询 |
-| dns.resolveTxt(hostname, callback) | 与上面类似，但针对 TXT 记录或文本查询 |
-| dns.resolveSrv(hostname, callback) | 与上面类似，但针对 SRV 记录或服务记录查询 |
-| dns.resolveSoa(hostname, callback) | 与上面类似，但仅针对 SOA 或起始授权记录 |
-| dns.resolveNs(hostname, callback) | 与上面类似，但仅针对 NS 或名称服务器记录 |
-| dns.resolveCname(hostname, callback) | 与上面类似，但仅针对 CNAME 或规范名称记录 |
-| dns.reverse(ip, callback) | 将 IP 地址反向解析为主机名数组 |
-| dns.getServers() | 返回一个包含当前用于解析的 IP 地址字符串的数组 |
-| dns.setServers(servers) | 将给定的字符串格式 IP 地址数组设置为解析所需的服务器 |
+| `dns.lookup(hostname[, options], callback)` | 此方法用于将主机名解析为第一条 IPv4（`A`）或 IPv6（`AAAA`）记录。`options` 参数可以是整数或对象，如果未提供，则 IPv4 和 IPv6 地址均有效。如果设置为整数，则为 `4` 或 `6` |
+| `dns.lookupService(address, port, callback)` | 使用 `getnameinfo` 将指定的端口和地址解析为服务和主机名 |
+| `dns.resolve(hostname[, rrtype], callback)` | 用于将主机名解析为包含 `rrtype` 指定的记录类型的数组 |
+| `dns.resolve4(hostname, callback)` | 与上面类似，但仅针对 IPv4 或 `A` 记录查询 |
+| `dns.resolve6(hostname, callback)` | 与上面类似，但针对 IPv6 或 `AAAA` 记录查询 |
+| `dns.resolveMx(hostname, callback)` | 与上面类似，但仅针对 `MX` 记录或邮件交换查询 |
+| `dns.resolveTxt(hostname, callback)` | 与上面类似，但针对 `TXT` 记录或文本查询 |
+| `dns.resolveSrv(hostname, callback)` | 与上面类似，但针对 `SRV` 记录或服务记录查询 |
+| `dns.resolveSoa(hostname, callback)` | 与上面类似，但仅针对 `SOA` 或起始授权记录 |
+| `dns.resolveNs(hostname, callback)` | 与上面类似，但仅针对 `NS` 或名称服务器记录 |
+| `dns.resolveCname(hostname, callback)` | 与上面类似，但仅针对 `CNAME` 或规范名称记录 |
+| `dns.reverse(ip, callback)` | 将 IP 地址反向解析为主机名数组 |
+| `dns.getServers()` | 返回一个包含当前用于解析的 IP 地址字符串的数组 |
+| `dns.setServers(servers)` | 将给定的字符串格式 IP 地址数组设置为解析所需的服务器 |
 
 #### DNS 模块 rrtypes
 
-以下是 dns.resolve() 方法使用的有效 rrtypes：
+以下是 `dns.resolve()` 方法使用的有效 rrtypes：
 
-- **A** —— 默认值，IPv4 地址
-- **AAAA** —— IPv6 地址
-- **MX** —— 邮件交换记录
-- **SRV** —— SRV 记录
-- **TXT** —— 文本记录
-- **PTR** —— 用于进行反向 IP 查询
-- **CNAME** —— 规范名称记录
-- **NS** —— 名称服务器记录
-- **SOA** —— 起始授权记录
+- `A` —— 默认值，IPv4 地址
+- `AAAA` —— IPv6 地址
+- `MX` —— 邮件交换记录
+- `SRV` —— SRV 记录
+- `TXT` —— 文本记录
+- `PTR` —— 用于进行反向 IP 查询
+- `CNAME` —— 规范名称记录
+- `NS` —— 名称服务器记录
+- `SOA` —— 起始授权记录
 
 ##### DNS 模块错误代码
 
 所有 DNS 查询都可能返回以下代码之一：
 
-- **dns.NODATA** —— DNS 服务器响应中没有返回数据
-- **dns.FORMERR** —— 根据 DNS 服务器的说明，查询格式错误
-- **dns.SERVFAIL** —— DNS 服务器返回了通用故障
-- **dns.NOTFOUND** —— 未找到域名
-- **dns.NOTIMP** —— DNS 服务器尚未实现所请求的操作
-- **dns.REFUSED** —— DNS 服务器拒绝了该查询
-- **dns.BADQUERY** —— DNS 查询格式错误
-- **dns.BADNAME** —— 主机名格式错误
-- **dns.BADFAMILY** —— 不支持该地址族
-- **dns.BADRESP** —— DNS 响应格式错误
-- **dns.CONNREFUSED** —— 无法联系 DNS 服务器
-- **dns.TIMEOUT** —— DNS 服务器连接超时
-- **dns.EOF** —— 文件结束
-- **dns.FILE** —— 读取文件时出错
-- **dns.NOMEM** —— 内存不足
-- **dns.DESTRUCTION** —— 通道正在被销毁
-- **dns.BADSTR** —— 字符串格式错误
-- **dns.BADFLAGS** —— 指定的标志无效
-- **dns.NONAME** —— 指定的主机名不是数字格式
-- **dns.BADHINTS** —— 指定了非法的 hints 标志
-- **dns.NOTINITIALIZED** —— c-ares 库尚未初始化
-- **dns.LOADIPHLPAPI** —— 加载 iphlpapi.dll 时出错
-- **dns.ADDRGETNETWORKPARAMS** —— 未找到 GetNetworkParams 函数
-- **dns.CANCELLED** —— DNS 查询已取消
+- `dns.NODATA` —— DNS 服务器响应中没有返回数据
+- `dns.FORMERR` —— 根据 DNS 服务器的说明，查询格式错误
+- `dns.SERVFAIL` —— DNS 服务器返回了通用故障
+- `dns.NOTFOUND` —— 未找到域名
+- `dns.NOTIMP` —— DNS 服务器尚未实现所请求的操作
+- `dns.REFUSED` —— DNS 服务器拒绝了该查询
+- `dns.BADQUERY` —— DNS 查询格式错误
+- `dns.BADNAME` —— 主机名格式错误
+- `dns.BADFAMILY` —— 不支持该地址族
+- `dns.BADRESP` —— DNS 响应格式错误
+- `dns.CONNREFUSED` —— 无法联系 DNS 服务器
+- `dns.TIMEOUT` —— DNS 服务器连接超时
+- `dns.EOF` —— 文件结束
+- `dns.FILE` —— 读取文件时出错
+- `dns.NOMEM` —— 内存不足
+- `dns.DESTRUCTION` —— 通道正在被销毁
+- `dns.BADSTR` —— 字符串格式错误
+- `dns.BADFLAGS` —— 指定的标志无效
+- `dns.NONAME` —— 指定的主机名不是数字格式
+- `dns.BADHINTS` —— 指定了非法的 hints 标志
+- `dns.NOTINITIALIZED` —— c-ares 库尚未初始化
+- `dns.LOADIPHLPAPI` —— 加载 `iphlpapi.dll` 时出错
+- `dns.ADDRGETNETWORKPARAMS` —— 未找到 `GetNetworkParams` 函数
+- `dns.CANCELLED` —— DNS 查询已取消
 
-下面是一个实际示例。找到你的 main.js 文件，清空其内容。然后添加以下代码：
+下面是一个实际示例。找到你的 `main.js` 文件，清空其内容。然后添加以下代码：
 
-```
+```js
 var dns = require('dns');
 
 dns.lookup('www.google.com', function onLookup(err, address, family) {
@@ -14234,15 +14682,8 @@ dns.lookup('www.google.com', function onLookup(err, address, family) {
         if (err) {
             console.log(err.stack);
         }
-
         console.log('reverse for ' + address + ': ' + JSON.stringify(hostnames));
     });
-});
-```
-
-
-
- ```
 });
 ```
 
@@ -14263,18 +14704,18 @@ reverse for 173.194.46.83: ["ord08s11-in-f19.1e100.net"]
 
 我们最后一个实用模块是 Domain 模块，用于帮助我们将多个 I/O 操作作为一个组来处理。它通过外部绑定或内部绑定来拦截未处理的错误。如果这些错误未被处理，Node 应用程序将会崩溃。
 
-- **内部绑定**（Internal Binding）—— 错误发射器在域的 run 方法中执行代码
-- **外部绑定**（External Binding）—— 错误发射器使用其自身的 add 方法显式添加到域中。
+- **内部绑定**（Internal Binding）—— 错误发射器在域的 `run` 方法中执行代码
+- **外部绑定**（External Binding）—— 错误发射器使用其自身的 `add` 方法显式添加到域中。
 
 导入该模块的语法如下：
 
-```
+```js
 var domain = require("domain")
 ```
 
-Domain 模块的 domain 类提供了将未捕获的异常和错误路由到活动 Domain 对象的功能。它是 EventEmitter 的子类，需要监听其 error 事件来处理任何捕获到的错误。下面的语法创建它：
+Domain 模块的 `domain` 类提供了将未捕获的异常和错误路由到活动 Domain 对象的功能。它是 `EventEmitter` 的子类，需要监听其 `error` 事件来处理任何捕获到的错误。下面的语法创建它：
 
-```
+```js
 var domain = require("domain");
 var child = domain.create();
 ```
@@ -14285,22 +14726,22 @@ var child = domain.create();
 
 | 方法 | 描述 |
 |---|---|
-| domain.run(function) | 此方法在域上下文中运行指定的函数。它会隐式绑定所有定时器、事件发射器和底层请求。这是使用域的基本方式 |
-| domain.add(emitter) | 显式将发射器添加到域中。如果发射器调用的事件处理程序抛出错误，或者发射器发出了 error 事件，该错误将被发送到域的 error 事件，与隐式绑定相同。 |
-| domain.remove(emitter) | 与上述相反，从给定发射器移除域处理 |
-| domain.bind(callback) | 返回的函数是所提供回调函数的包装器。当该函数被调用时，抛出的错误将被发送到域中的 error 事件 |
-| domain.intercept(callback) | 与 domain.bind(callback) 几乎相同，但除了捕获错误外，还会拦截作为第一个参数发送到函数的任何错误消息 |
-| domain.enter() | 由 bind、run 和 intercept 方法使用，帮助设置域。它将 process.domain 和 domain.active 设置为该域，并将该域隐式推入域模块管理的域堆栈中。调用此方法标记异步调用链和绑定到特定域的 I/O 操作的开始。 |
-| domain.exit() | 此方法将当前域从堆栈中弹出并退出。当执行切换到另一个异步调用链的上下文时，必须退出当前域。exit 的调用将标记对调用链的中断或结束，以及任何绑定到特定域的 I/O。 |
-| domain.dispose() | 调用此方法时，使用 intercept、bind 或 run 绑定到域中的任何回调都无法再使用该域，并且会发出一个 dispose 事件 |
+| `domain.run(function)` | 此方法在域上下文中运行指定的函数。它会隐式绑定所有定时器、事件发射器和底层请求。这是使用域的基本方式 |
+| `domain.add(emitter)` | 显式将发射器添加到域中。如果发射器调用的事件处理程序抛出错误，或者发射器发出了 `error` 事件，该错误将被发送到域的 `error` 事件，与隐式绑定相同。 |
+| `domain.remove(emitter)` | 与上述相反，从给定发射器移除域处理 |
+| `domain.bind(callback)` | 返回的函数是所提供回调函数的包装器。当该函数被调用时，抛出的错误将被发送到域中的 `error` 事件 |
+| `domain.intercept(callback)` | 与 `domain.bind(callback)` 几乎相同，但除了捕获错误外，还会拦截作为第一个参数发送到函数的任何错误消息 |
+| `domain.enter()` | 由 `bind`、`run` 和 `intercept` 方法使用，帮助设置域。它将 `process.domain` 和 `domain.active` 设置为该域，并将该域隐式推入域模块管理的域堆栈中。调用此方法标记异步调用链和绑定到特定域的 I/O 操作的开始。 |
+| `domain.exit()` | 此方法将当前域从堆栈中弹出并退出。当执行切换到另一个异步调用链的上下文时，必须退出当前域。`exit` 的调用将标记对调用链的中断或结束，以及任何绑定到特定域的 I/O。 |
+| `domain.dispose()` | 调用此方法时，使用 `intercept`、`bind` 或 `run` 绑定到域中的任何回调都无法再使用该域，并且会发出一个 `dispose` 事件 |
 
 #### Domain 模块属性
 
-Domain 模块有一个主要属性称为 domain.members。它是一个数组，包含显式添加到域中的事件发射器和定时器。
+Domain 模块有一个主要属性称为 `domain.members`。它是一个数组，包含显式添加到域中的事件发射器和定时器。
 
-现在看一个展示上述所有内容的示例。清空你的 main.js 文件并添加以下代码：
+现在看一个展示上述所有内容的示例。清空你的 `main.js` 文件并添加以下代码：
 
-```
+```js
 var EventEmitter = require("events").EventEmitter;
 var domain = require("domain");
 
@@ -14321,7 +14762,9 @@ emitter1.on('error',function(err) {
 });
 
 emitter1.emit('error',new Error('To be handled by listener'));
+
 emitter1.removeAllListeners('error');
+
 emitter1.emit('error',new Error('To be handled by domain1'));
 
 var domain2 = domain.create();
@@ -14337,6 +14780,7 @@ domain2.run(function() {
 });
 
 domain1.remove(emitter1);
+
 emitter1.emit('error', new Error('Converted to exception. System will crash!'));
 ```
 
@@ -14366,9 +14810,7 @@ Error: Converted to exception. System will crash!
     at node.js:906:3
 ```
 
-## 第十二章
-
-## Node.js Web 模块
+## 第十二章：Node.js Web 模块
 
 Web 服务器就是软件应用程序，就这么简单。它们处理 exporting HTTP 请求，这些请求由 HTTP 客户端（可能是 Web 浏览器）发送，并通过返回网页来响应。通常，Web 服务器会传送包含样式表、图像和脚本的 HTML 文档。
 
@@ -14378,11 +14820,7 @@ Web 服务器就是软件应用程序，就这么简单。它们处理 exporting
 
 ### Web 应用架构
 
-通常，Web 应用程序分为四个独立的层，如下图所示：
-
-![](img/7091ef933114a5ffe0ae055 √(a²+b²+c²)+b²+c²)
-
-我们来分解这个图表：
+通常，Web 应用程序分为四个独立的层：
 
 - **客户端**（Client）—— 客户端层由能够向 Web 服务器发出和发送 HTTP 请求的应用程序、移动浏览器或 Web 浏览器组成。
 - **服务器**（Server）—— 服务器层是 Web 服务器所在的位置，它可以拦截客户端发出的任何请求并发送响应。
@@ -14391,9 +14829,9 @@ Web 服务器就是软件应用程序，就这么简单。它们处理 exporting
 
 ### 使用 Node 创建 Web 服务器
 
-在 Node.js 中，你可以访问 http 模块。此模块用于创建服务器的 HTTP 客户端。下面你可以看到在端口 8081 监听的 HTTP 服务器的绝对最小结构。首先，创建一个名为 server.js 的程序，然后向其中添加此代码：
+在 Node.js 中，你可以访问 `http` 模块。此模块用于创建服务器的 HTTP 客户端。下面你可以看到在端口 `8081` 监听的 HTTP 服务器的绝对最小结构。首先，创建一个名为 `server.js` 的程序，然后向其中添加此代码：
 
-```
+```js
 var http = require('http');
 var fs = require('fs');
 var url = require('url');
@@ -14410,7 +14848,6 @@ http.createServer( function (request, response) {
     fs.readFile(pathname.substr(1), function (err, data) {
         if (err) {
             console.log(err);
-
             // HTTP Status: 404 : NOT FOUND
             // Content Type: text/plain
             response.writeHead(404, {'Content-Type': 'text/html'});
@@ -14419,11 +14856,9 @@ http.createServer( function (request, response) {
             // HTTP Status: 200 : OK
             // Content Type: text/plain
             response.writeHead(200, {'Content-Type': 'text/html'});
-
             // Write the content of file to the response body
             response.write(data.toString());
         }
-
         // Send the response body
         response.end();
     });
@@ -14433,9 +14868,9 @@ http.createServer( function (request, response) {
 console.log('Server running at http://127.0.0.1:8081/');
 ```
 
-接下来，创建另一个文件，这次是 html 文件，并将其命名为 index.htm。将其保存在创建 server.js 的同一目录中：
+接下来，创建另一个文件，这次是 html 文件，并将其命名为 `index.htm`。将其保存在创建 `server.js` 的同一目录中：
 
-```
+```html
 <html>
     <head>
         <title>Sample Page</title>
@@ -14446,7 +14881,7 @@ console.log('Server running at http://127.0.0.1:8081/');
 </html>
 ```
 
-现在你可以运行 server.js 来查看输出：
+现在你可以运行 `server.js` 来查看输出：
 
 ```
 $ node server.js
@@ -14460,9 +14895,7 @@ Server running at http://127.0.0.1:8081/
 
 ### 向 Node.js 服务器发出请求
 
-打开你使用的浏览器，然后打开这个地址——[http://127.0.0.1:8081/index.htm](http://127.0.0.1:8081/index.htm)，你应该会看到类似这样的内容：
-
-
+打开你使用的浏览器，然后打开这个地址——`http://127.0.0.1:8081/index.htm`，你应该会看到类似这样的内容：
 
 输出需要在服务器端进行验证。
 
@@ -14473,9 +14906,9 @@ Request for /index.htm received.
 
 ### 使用 Node 创建 Web 客户端
 
-你也可以使用 http 模块来创建一个 Web 客户端。首先，创建一个名为 `client.js` 的文件，并将以下内容复制进去：
+你也可以使用 `http` 模块来创建一个 Web 客户端。首先，创建一个名为 `client.js` 的文件，并将以下内容复制进去：
 
-```
+```js
 var http = require('http');
 
 // Options the request will use
@@ -14504,7 +14937,7 @@ var req = http.request(options, callback);
 req.end();
 ```
 
-现在打开一个与 server.js 不同的命令终端，运行 `client.js` 来查看结果：
+现在打开一个与 `server.js` 不同的命令终端，运行 `client.js` 来查看结果：
 
 ```
 $ node client.js
@@ -14512,12 +14945,11 @@ $ node client.js
 
 别忘了验证输出：
 
-```
+```html
 <html>
   <head>
     <title>Sample Page</title>
   </head>
-
   <body>
     Hello World!
   </body>
@@ -14533,9 +14965,7 @@ Request for /index.htm received.
 
 如你所见，Web 模块在创建 Web 服务器和客户端方面非常易于使用。
 
-## 第十三章
-
-### Node.js Express 框架
+## 第十三章：Node.js Express 框架
 
 在本章中，我们将了解 Express，这是一个为 Node.js 构建的灵活但精简的 Web 应用框架。它提供了一套强大的功能集，帮助我们构建单页和多页 Web 应用，以及混合型应用。
 
@@ -14548,7 +14978,7 @@ Request for /index.htm received.
 3. **Angular.js** – 用于 Web 应用的 JavaScript MVC 框架
 4. **Node.js** – 用于可扩展网络和服务器端应用的框架
 
-使用 Express 框架，你可以轻松开发能够处理多种请求类型的应用，例如 PUT、GET、DELETE 和 POST 请求。
+使用 Express 框架，你可以轻松开发能够处理多种请求类型的应用，例如 `PUT`、`GET`、`DELETE` 和 `POST` 请求。
 
 ### 安装和使用 Express
 
@@ -14560,44 +14990,46 @@ npm install express
 
 此命令要求 Node 包管理器下载 Express 模块并进行安装。
 
-让我们从创建一个 Hello World 应用开始。它所做的就是创建一个服务器模块。该模块监听端口 3000，在本例中，如果浏览器通过该端口发起请求，服务器应用将向客户端发送响应——即 Hello World。
+让我们从创建一个 Hello World 应用开始。它所做的就是创建一个服务器模块。该模块监听端口 `3000`，在本例中，如果浏览器通过该端口发起请求，服务器应用将向客户端发送响应——即 Hello World。
 
-```
+```js
 var express=require('express');
 var app=express();
+
 app.get('/',function(req,res)
 {
 res.send('Hello World!');
 });
+
 var server=app.listen(3000,function() {});
 ```
 
 ### 代码说明：
 
-1. 第一行中，`require` 函数用于引入指定的模块，在本例中是 express 模块
+1. 第一行中，`require` 函数用于引入指定的模块，在本例中是 `express` 模块
 
 2. 在使用该模块之前，必须从中创建一个对象
 
 3. 第三行中，我们创建了一个回调函数，当浏览到 Web 应用的根路径时会调用该函数——根路径是 `http://localhost:3000`。回调函数将响应——即一个读作 Hello World 的字符串——作为响应发送到网页。
 
-4. 字符串 Hello World 由回调函数发送给客户端。使用 `res` 参数将内容发送到网页。该参数由 request 模块提供，允许将内容发送到网页。
+4. 字符串 Hello World 由回调函数发送给客户端。使用 `res` 参数将内容发送到网页。该参数由 `request` 模块提供，允许将内容发送到网页。
 
-5. 最后，`listen` 函数用于使应用监听端口 3000 上的客户端请求。可以指定任何可用端口。
+5. 最后，`listen` 函数用于使应用监听端口 `3000` 上的客户端请求。可以指定任何可用端口。
 
 如果命令成功执行，当你运行代码时，应该在浏览器中看到类似这样的内容：
 
 ### 输出：
 
-从输出中可以看到，如果在端口 3000 上浏览到 localhost URL，字符串 Hello World 将显示在你的页面上。只要你浏览到服务器监听的指定端口，就能在屏幕上看到正确的输出。
+从输出中可以看到，如果在端口 `3000` 上浏览到 `localhost` URL，字符串 Hello World 将显示在你的页面上。只要你浏览到服务器监听的指定端口，就能在屏幕上看到正确的输出。
 
 ### 什么是路由？
 
-路由决定了应用如何响应客户端对特定端点的请求。例如，客户端可以对任何 URL 发起 HTTP 请求，如 POST、GET、DELETE 或 PUT，例如以下这些：
+路由决定了应用如何响应客户端对特定端点的请求。例如，客户端可以对任何 URL 发起 HTTP 请求，如 `POST`、`GET`、`DELETE` 或 `PUT`，例如以下这些：
 
-- http://localhost:3000/Books
-- http://localhost:3000/Students
+- `http://localhost:3000/Books`
+- `http://localhost:3000/Students`
 
-在本例中，当对第一个 URL 发起 GET 请求时，理想的输出应该是一个书籍列表，而如果对第二个 URL 发起请求，你将看到一个学生列表。根据你访问的 URL，Web 服务器上会调用特定的功能，并将响应发送给客户端——这就是路由的工作方式。
+在本例中，当对第一个 URL 发起 `GET` 请求时，理想的输出应该是一个书籍列表，而如果对第二个 URL 发起请求，你将看到一个学生列表。根据你访问的 URL，Web 服务器上会调用特定的功能，并将响应发送给客户端——这就是路由的工作方式。
 
 每个路由可以有至少一个处理函数，当路由匹配时，这些函数将被执行。
 
@@ -14609,8 +15041,8 @@ app.METHOD(PATH, HANDLER)
 
 在该语法中：
 
-1. `app` 是 express 模块实例
-2. `METHOD` 是 HTTP 请求方法之一，即 POST、GET、DELETE 或 PUT
+1. `app` 是 `express` 模块实例
+2. `METHOD` 是 HTTP 请求方法之一，即 `POST`、`GET`、`DELETE` 或 `PUT`
 3. `PATH` 表示服务器路径
 4. `HANDLER` 是当路由匹配时执行的函数
 
@@ -14622,17 +15054,20 @@ app.METHOD(PATH, HANDLER)
 
 基本代码与我们之前看到的相同，以下代码是展示如何实现路由的附加部分：
 
-```
+```js
 var express = require('express');
 var app = express();
+
 app.route('/Node').get(function(req,res)
 {
     res.send("Node Tutorial");
 });
+
 app.route('/Angular').get(function(req,res)
 {
     res.send("Angular Tutorial");
 });
+
 app.get('/',function(req,res){
     res.send('Welcome to My Tutorials');
 });
@@ -14657,15 +15092,11 @@ app.get('/',function(req,res){
 
 如果命令成功执行，你应该在浏览器中看到 Welcome to My Tutorials 界面。
 
-输出将显示，通过在端口 3000 上浏览到 localhost URL，Welcome to My Tutorials 消息显示在屏幕上——这是我们在代码中指定的默认消息。
+输出将显示，通过在端口 `3000` 上浏览到 `localhost` URL，Welcome to My Tutorials 消息显示在屏幕上——这是我们在代码中指定的默认消息。
 
 ### 使用 Express.js 构建 Web 服务器
 
-在上面的示例中，我们了解了如何根据
-
-
-
-在一个路由上。这就是现代 Web 应用程序中使用的方式，而 Web 服务器的其余部分则完全是关于使用 Node.js 模板。
+在上面的示例中，我们了解了如何根据一个路由上。这就是现代 Web 应用程序中使用的方式，而 Web 服务器的其余部分则完全是关于使用 Node.js 模板。
 
 当你快速创建 Node 应用程序时，最简单的方法之一是使用 Node.js 模板。市场上有大量的框架，我们将使用 jade 框架。
 
@@ -14679,31 +15110,26 @@ npm install jade
 
 让我们创建一个 jade 模板。创建一个新文件并将其命名为 `index.jade`，并在其中放入以下代码，确保该文件是在名为 `views` 的文件夹中创建的。
 
-![](img/7091ef933114a5ffe0ae0554f9493e61_427_0.png)
-
-页面标题将在调用模板时更改为传递的值。我们还表明，标题标签的文本将被模板中传递的内容替换。
-
-```
+```js
 var express=require('express');
 var app=express();
+
 app.set('view engine','jade');
+
 app.get('/',function(req,res)
 {
 res.render('index',
 {title:'My Tutorials',message:'Welcome'})
-}
-```
-
-```
 });
+
 var server=app.listen(3000,function() {});
 ```
 
 ### 代码解释：
 
-1.  首先，在应用程序中指定了 "view engine"——它用于渲染模板，由于使用的是 jade，因此我们指定它。
-2.  我们使用 render 函数来渲染网页。这里，我们渲染之前创建的 `index.jade` 模板。
-3.  我们向 title 和 message 参数传递两个值——分别是 "My Tutorials" 和 "Welcome"。这些值会替换模板中指定的 title 和 message 参数。
+1. 首先，在应用程序中指定了 `"view engine"`——它用于渲染模板，由于使用的是 jade，因此我们指定它。
+2. 我们使用 `render` 函数来渲染网页。这里，我们渲染之前创建的 `index.jade` 模板。
+3. 我们向 `title` 和 `message` 参数传递两个值——分别是 `"My Tutorials"` 和 `"Welcome"`。这些值会替换模板中指定的 `title` 和 `message` 参数。
 
 如果你成功执行该命令，你将在浏览器中看到欢迎界面。
 
@@ -14717,9 +15143,7 @@ Express 框架常用于 Node.js 的应用程序开发，它基于 Node 框架构
 
 最后，模板用于高效地注入正确的内容，而 Node 应用程序中较受欢迎的模板引擎之一是 Jade。
 
-## 第十四章
-
-## Node.js RESTful API
+## 第十四章：Node.js RESTful API
 
 让我们从名字说起——REST 代表 Representational State Transfer（表述性状态转移）。REST 于 2000 年由 Roy Fielding 首次提出，是一种基于 Web 标准的架构，使用 HTTP 协议。REST 围绕资源展开——所有组件都是资源，一个通用接口通过使用标准 HTTP 方法来访问这些资源。
 
@@ -14729,10 +15153,10 @@ REST 服务器基本上提供对资源的访问点，REST 客户端使用 HTTP �
 
 以下是 REST 架构中最常用的四种 HTTP 方法：
 
--   **GET** – 用于对资源进行只读访问。
--   **PUT** – 用于创建新资源。
--   **DELETE** – 用于删除资源。
--   **POST** – 用于更新资源或创建新资源。
+- `GET` – 用于对资源进行只读访问。
+- `PUT` – 用于创建新资源。
+- `DELETE` – 用于删除资源。
+- `POST` – 用于更新资源或创建新资源。
 
 ### RESTful Web 服务
 
@@ -14744,7 +15168,7 @@ Web 服务是包含系统和应用程序之间数据交换标准和开放协议�
 
 假设我们有一个基于 JSON 的数据库，其中包含一个名为 `users.json` 的文件，其中列出了用户列表：
 
-```
+```json
 {
     "user1" : {
         "name" : "michael",
@@ -14752,14 +15176,12 @@ Web 服务是包含系统和应用程序之间数据交换标准和开放协议�
         "profession" : "teacher",
         "id": 1
     },
-
     "user2" : {
         "name" : "sara",
         "password" : "password2",
         "profession" : "scientist",
         "id": 2
     },
-
     "user3" : {
         "name" : "ronnie",
         "password" : "password3",
@@ -14773,10 +15195,10 @@ Web 服务是包含系统和应用程序之间数据交换标准和开放协议�
 
 |    | URI        | HTTP 方法 | POST 主体  | 结果               |
 |---|---|---|---|---|
-| 1 | listUsers  | GET       | 空         | 显示所有用户的列表 |
-| 2 | addUser    | POST      | JSON 字符串| 添加新用户详情     |
-| 3 | deleteUser | DELETE    | JSON 字符串| 删除用户           |
-| 4 | :id        | GET       | 空         | 显示用户详情       |
+| 1 | `listUsers`  | `GET`       | 空         | 显示所有用户的列表 |
+| 2 | `addUser`    | `POST`      | JSON 字符串| 添加新用户详情     |
+| 3 | `deleteUser` | `DELETE`    | JSON 字符串| 删除用户           |
+| 4 | `:id`        | `GET`       | 空         | 显示用户详情       |
 
 我假设，到现在为止，你已经知道如何从前端传递值（使用表单数据或 AJAX），以及如何使用 Express 的 Request 对象来处理它们。
 
@@ -14784,7 +15206,7 @@ Web 服务是包含系统和应用程序之间数据交换标准和开放协议�
 
 我们将实现的第一个 RESTful API 是 `listUsers`。创建一个名为 `server.js` 的文件并添加以下代码：
 
-```
+```js
 var express = require('express');
 var app = express();
 var fs = require("fs");
@@ -14803,9 +15225,9 @@ var server = app.listen(8081, function () {
 })
 ```
 
-现在，在本机上使用 [http://127.0.0.1:8001/listUsers](http://127.0.0.1:8001/listUsers) 和 HTTP 方法：GET。确保你使用 REST 客户端，以便你可以访问 API，你应该会看到以下结果——在生产环境中使用此代码时，给定的 IP 地址可能会更改：
+现在，在本机上使用 `http://127.0.0.1:8001/listUsers` 和 HTTP 方法：`GET`。确保你使用 REST 客户端，以便你可以访问 API，你应该会看到以下结果——在生产环境中使用此代码时，给定的 IP 地址可能会更改：
 
-```
+```json
 {
     "user1" : {
         "name" : "michael",
@@ -14813,22 +15235,18 @@ var server = app.listen(8081, function () {
         "profession" : "teacher",
         "id": 1
     },
-
     "user2" : {
         "name" : "sara",
         "password" : "password2",
         "profession" : "scientist",
         "id": 2
     },
-```
-
-```
-"user3" : {
-    "name" : "ronnie",
-    "password" : "password3",
-    "profession" : "clerk",
-    "id": 3
-  }
+    "user3" : {
+        "name" : "ronnie",
+        "password" : "password3",
+        "profession" : "clerk",
+        "id": 3
+    }
 }
 ```
 
@@ -14836,7 +15254,7 @@ var server = app.listen(8081, function () {
 
 我们将实现的下一个 RESTful API 是 `newUser`，使用以下详细信息：
 
-```
+```json
 user = {
   "user4" : {
     "name" : "monica",
@@ -14849,9 +15267,7 @@ user = {
 
 同样的输入也可以通过 AJAX 调用以 JSON 形式接受，但为了本章的目的，我们所有内容都是硬编码的。清空你的 `server.js` 文件并添加以下内容：
 
-server.js
-
-```
+```js
 var express = require('express');
 var app = express();
 var fs = require("fs");
@@ -14882,9 +15298,9 @@ var server = app.listen(8081, function () {
 })
 ```
 
-现在尝试通过 URL 访问：http://127.0.0.1:8081/addUser 和 HTTP 方法：POST。使用本机和 REST 客户端，你应该会看到以下内容：
+现在尝试通过 URL 访问：`http://127.0.0.1:8081/addUser` 和 HTTP 方法：`POST`。使用本机和 REST 客户端，你应该会看到以下内容：
 
-```
+```json
 {
     "user1":{"name":"michael","password":"password1","profession":"teacher","id":1},
     "user2":{"name":"sara","password":"password2","profession":"scientist","id":2},
@@ -14897,7 +15313,7 @@ var server = app.listen(8081, function () {
 
 现在我们想实现一个 RESTful API，通过用户 ID 调用并显示相应用户的详细信息。同样，清空 `server.js` 文件并添加此代码：
 
-```
+```js
 var express = require('express');
 var app = express();
 var fs = require("fs");
@@ -14919,21 +15335,17 @@ var server = app.listen(8081, function () {
 })
 ```
 
-和以前一样，使用本机和 REST 客户端尝试通过 http://127.0.0.1:8081/2 和 HTTP 方法：GET 访问它，你应该会看到这个：
+和以前一样，使用本机和 REST 客户端尝试通过 `http://127.0.0.1:8081/2` 和 HTTP 方法：`GET` 访问它，你应该会看到这个：
 
-```
+```json
 {"name":"sara","password":"password2","profession":"scientist","id":2}
 ```
 
 ### 删除用户
 
-这与 `addUser` API 非常相似。输入数据通过 `req.body` 传递，并使用用户 ID，我们从系统中删除正确的用户。保持事情
+这与 `addUser` API 非常相似。输入数据通过 `req.body` 传递，并使用用户 ID，我们从系统中删除正确的用户。保持事情很简单，我们将删除用户 ID 2。清空 `server.js` 文件并添加以下代码：
 
-
-
-很简单，我们将删除用户 ID 2。清空 server.js 文件并添加以下代码：
-
-```
+```js
 var express = require('express');
 var app = express();
 var fs = require("fs");
@@ -14945,7 +15357,6 @@ app.delete('/deleteUser', function (req, res) {
     fs.readFile( __dirname + "/" + "users.json", 'utf8', function (err, data) {
         data = JSON.parse( data );
         delete data["user" + 2];
-
         console.log( data );
         res.end( JSON.stringify(data));
     });
@@ -14958,18 +15369,16 @@ var server = app.listen(8081, function () {
 })
 ```
 
-同样，使用本地机器和 REST 客户端，访问 http://127.0.0.1:8081/deleteUser，HTTP 方法选择 DELETE，你应该会看到以下内容：
+同样，使用本地机器和 REST 客户端，访问 `http://127.0.0.1:8081/deleteUser`，HTTP 方法选择 `DELETE`，你应该会看到以下内容：
 
-```
+```json
 {"user1":{"name":"michael","password":"password1","profession":"teacher","id":1},
 "user3":{"name":"ronnie","password":"password3","profession":"clerk","id":3}}
 ```
 
 RESTful API 的内容就差不多这些了——你需要知道的就是如何定义 API 以及如何使用 HTTP 方法。
 
-## 第十五章
-
-## Node.js 可扩展应用
+## 第十五章：Node.js 可扩展应用
 
 Node.js 的可扩展性并不是后来才硬塞进去的；它是 Node 运行时的核心部分。Node 之所以被如此命名，正是为了强调 Node 应用应该以怎样的方式构建——由分布式的、相互通信的小型节点组成。
 
@@ -14989,17 +15398,17 @@ Node.js 的可扩展性并不是后来才硬塞进去的；它是 Node 运行时
 
 扩展应用主要有三种方式：
 
-1.  **克隆**
+1. **克隆**
 
 扩展应用最简单的方式，尤其是大型应用，就是将其克隆多次，让每个克隆体处理一部分工作负载，例如配合负载均衡器使用。这种方式的开发成本很低，也是最有效的方式之一。这是你应该采用的最基本的策略，你可以使用 Node 内置的 Cluster 模块在单台服务器上轻松实现这一策略。
 
-2.  **分解**
+2. **分解**
 
 应用也可以通过分解来进行扩展。这是基于服务和功能来划分的，意味着拥有多个具有各自代码库的应用，在某些情况下，它们还有各自独立的用户界面和专属数据库。
 
 我们通常将分解策略与微服务这个概念联系在一起。微表示服务应该是小型的，但现实中服务的规模并不重要；重要的是如何在服务之间实现高内聚和松耦合。实施这一策略并不总是容易的，有可能引发长期问题；但如果实施得当，它将带来巨大的优势。
 
-3.  **拆分**
+3. **拆分**
 
 最后一种策略是将应用拆分为多个更小的实例——每个实例负责处理应用数据中自己那一小部分。通常你会看到这种策略在数据库中被称为分片或水平分区。在数据分区中，每次操作之前都需要一个查找步骤，以确定应该使用哪个应用实例。例如，我们可能希望根据语言或国家对用户进行分区，这就需要先查找这些信息。
 
@@ -15009,13 +15418,13 @@ Node.js 的可扩展性并不是后来才硬塞进去的；它是 Node 运行时
 
 ### Cluster 模块
 
-你可以使用内置的 cluster 模块在环境中启用跨 CPU 核心的负载均衡。该模块基于子进程模块中的 fork 方法，允许主应用进程被 fork 出与 CPU 核心数量相同的次数。然后，它接管发送到主进程的请求，并通过 fork 出的进程对其进行负载均衡。
+你可以使用内置的 `cluster` 模块在环境中启用跨 CPU 核心的负载均衡。该模块基于子进程模块中的 `fork` 方法，允许主应用进程被 fork 出与 CPU 核心数量相同的次数。然后，它接管发送到主进程的请求，并通过 fork 出的进程对其进行负载均衡。
 
 Cluster 模块是 Node.js 提供的一个辅助工具，帮助我们实现克隆策略，但仅限于单台机器上。在拥有更多资源的大型机器上，或者当向单台机器添加额外资源比添加其他机器更便宜、更方便时，Cluster 模块表现出色，帮助你快速实现该策略。
 
 即使是一台小型机器也可能拥有多个核心；即使你不担心 Node 服务器的负载，也应该启用 Cluster 模块，以提高服务器的可用性和容错水平。这很容易做到，当你使用进程管理器（例如 PM2）时，你只需为启动命令提供一个参数即可。
 
-让我们看看 cluster 模块是如何在原生环境中使用以及它是如何工作的。
+让我们看看 `cluster` 模块是如何在原生环境中使用以及它是如何工作的。
 
 Cluster 模块的结构相当简单。创建一个主进程来 fork 并管理多个工作进程。每个工作进程代表一个需要扩展的应用实例。主进程处理所有传入的请求，并决定由哪个工作进程来处理传入的请求。
 
@@ -15029,9 +15438,9 @@ Cluster 模块的结构相当简单。创建一个主进程来 fork 并管理多
 
 让我们来动手实践。我们要关闭一个简单的 HTTP 服务器，并使用 Cluster 模块对其进行负载均衡。我们将使用 Node 的 hello-world 示例服务器，并稍作修改，在响应之前模拟 CPU 工作。
 
-创建一个 server.js 文件并添加以下代码：
+创建一个 `server.js` 文件并添加以下代码：
 
-```
+```js
 // server.js
 const http = require('http');
 const pid = process.pid;
@@ -15044,7 +15453,7 @@ http.createServer((req, res) => {
 });
 ```
 
-我在 HTTP 响应中包含了进程 pid。这将通过识别处理请求的应用实例来验证我们的负载均衡器是否正常工作。
+我在 HTTP 响应中包含了进程 `pid`。这将通过识别处理请求的应用实例来验证我们的负载均衡器是否正常工作。
 
 在创建集群将服务器克隆为多个工作进程之前，我们需要运行一个基准测试来查看服务器每秒能处理多少请求。Apache 基准测试工具非常适合做这件事；运行完上述服务器代码后，继续执行以下命令：
 
@@ -15054,17 +15463,13 @@ ab -c200 -t10 http://localhost:8080/
 
 这将使用 200 个并发连接对服务器进行 10 秒的测试负载。
 
-我运行时，我的机器大约每秒处理 51 个请求，但这些结果会因机器和平台而异。这只是一个简单的测试，让你了解性能情况，但不能将其视为 100% 准确的结果
-
-
-
-准确地说——它只会向你展示在多核环境下使用集群所带来的差异。
+我运行时，我的机器大约每秒处理 51 个请求，但这些结果会因机器和平台而异。这只是一个简单的测试，让你了解性能情况，但不能将其视为 100% 准确的结果——它只会向你展示在多核环境下使用集群所带来的差异。
 
 我们现在有了一个可以作为参考的基准，所以现在是时候使用 Cluster 模块，通过克隆来扩展应用了。
 
 与你的 `server.js` 文件使用同一台服务器，创建另一个新文件并将其命名为 `cluster.js`。这个文件用于主进程，需要包含以下内容：
 
-```
+```js
 // cluster.js
 const cluster = require('cluster');
 const os = require('os');
@@ -15091,15 +15496,11 @@ if (cluster.isMaster) {
 
 差不多就是这些了。这就是你如何利用机器的处理能力，测试集群就像运行 `cluster.js` 一样简单：
 
-![](img/7091ef933114a5ffe0ae0554f9493e61_441_0.png)
-
 因为我的机器有八个核心，所以启动了八个进程。你必须理解的是，每个进程都是一个独立的 Node.js 进程——每个工作进程都有自己独立的事件循环和内存空间。
 
 现在，当 Web 服务器被多次访问时，不同的工作进程将开始处理请求，每个进程都有自己的进程 ID。工作进程不会按顺序轮转，因为集群模块在选择工作进程之前会进行一些优化，但负载会均匀地分布到所有工作进程中。
 
 我们之前使用的 `ab` 命令现在可以再次用来对进程集群进行负载测试：
-
-![](img/7091ef933114a5ffe0ae0554f9493e61_442_0.png)
 
 在我的机器上创建的集群每秒可以处理大约 181 个请求，而单个 Node 进程每秒只能处理 52 个请求。仅仅用了几行代码，我们就将这个简单应用的性能提升了三倍。
 
@@ -15109,7 +15510,7 @@ if (cluster.isMaster) {
 
 使用上面的示例，可以通过 `cluster.workers` 来访问工作进程对象列表。这是另一个包含每个工作进程引用的对象，用于读取它们的信息。因为主进程和工作进程之间存在通信通道，向所有工作进程广播消息只需要遍历工作进程即可。下面是一个示例：
 
-```
+```js
 Object.values(cluster.workers).forEach(worker => {
     worker.send(`Hello Worker ${worker.id}`);
 });
@@ -15119,7 +15520,7 @@ Object.values(cluster.workers).forEach(worker => {
 
 在我们的 `server.js` 文件中（即工作进程文件），当从主进程收到消息时，通过在全局 `process` 对象上注册消息事件处理器来读取。下面是一个示例：
 
-```
+```js
 process.on('message', msg => {
   console.log(`Message from master: ${msg}`);
 });
@@ -15127,13 +15528,11 @@ process.on('message', msg => {
 
 当我测试这些对服务器/集群示例的补充时，看到的效果如下：
 
-![](img/7091ef933114a5ffe0ae0554f9493e61_443_0.png)
-
 这里，主进程向每个工作进程发送了一条消息。需要注意的一点是，工作进程并不是按顺序启动的。
 
 让我们做一些更实际的事情。我们想让服务器回复一个数字，表示数据库中创建了多少个用户。我们需要一个模拟函数来返回数据库中的用户数量，并且每次调用时，我们希望这个值翻倍——这被称为"梦幻增长"：
 
-```
+```js
 // **** Mock DB Call
 const numberOfUsersInDB = function() {
   this.count = this.count || 5;
@@ -15147,7 +15546,7 @@ const numberOfUsersInDB = function() {
 
 例如，在主进程模式下，我们可以用一个循环将该值广播给所有工作进程：
 
-```
+```js
 // Immediately after fork loop within isMaster=true block
 const updateWorkers = () => {
     const usersCount = numberOfUsersInDB();
@@ -15166,7 +15565,7 @@ setInterval(updateWorkers, 10000);
 
 下面是另一个示例：
 
-```
+```js
 const http = require('http');
 const pid = process.pid;
 
@@ -15199,7 +15598,7 @@ process.on('message', msg => {
 
 下面的示例模拟了服务器进程随机崩溃的情况。为此，我们在一个定时器中调用 `process.exit`，该定时器会在随机时间后触发：
 
-```
+```js
 // In server.js
 setTimeout(() => {
   process.exit(1) // death by random timeout
@@ -15208,24 +15607,22 @@ setTimeout(() => {
 
 当工作进程以这种方式退出时，主进程会收到通知。这是通过集群模型对象的 `exit` 事件实现的，可以为该事件注册一个处理器，每当一个工作进程退出时就 fork 一个新的工作进程。下面是一个示例：
 
-```
+```js
 // Immediately after fork loop within isMaster=true block
 cluster.on('exit', (worker, code, signal) => {
   if (code !== 0 && !worker.exitedAfterDisconnect) {
     console.log(`Worker ${worker.id} crashed. ` +
       'Starting a new worker...');
     cluster.fork();
+  }
+});
 ```
-
-
 
 添加 `if` 条件是有意义的，因为它确保了工作进程是崩溃的，而不是被用户手动断开连接，或者不是被主进程杀死的。例如，主进程可能根据其观察到的负载模式判断使用了过多资源，如果是这种情况，它需要杀死一些工作进程。为此，可以对工作进程使用 `disconnect` 方法，并将 `exitedAfterDisconnect` 标志设置为 `true`。我们添加的 `if` 语句就是用来防止在这种情况下派生新的工作进程。
 
 如果使用上述处理程序运行集群，加上 `server.js` 中的随机崩溃，工作进程将在随机秒数后开始崩溃。主进程将开始派生新的工作进程以提高系统的可用性。实际上可用性可以用我们之前使用的 `ab` 命令来衡量——它会显示服务器无法处理的请求数量。这是因为有些请求不幸会遇到崩溃，而这确实是无法避免的。
 
 我测试了这段代码，在 10 秒的测试中，在超过 1800 个请求中我得到了 17 个失败的请求，使用的是 200 个并发请求：
-
-![](img/7091ef933114a5ffe0ae0554f9493e61_446_0.png)
 
 这表明可用性超过了 99%。只需额外添加几行代码，我们就可以不用担心进程崩溃了，因为守护主进程会替我们监控它们。
 
@@ -15237,9 +15634,10 @@ cluster.on('exit', (worker, code, signal) => {
 
 使用 Cluster 模块实现这一点非常简单。一旦主进程启动并运行，我们不希望它被重启，因此需要找到一种方式向它发送命令，告诉它开始重启工作进程。如果你使用的是 Linux，这很容易，因为你只需监听 `SIGUSR2` 或其他进程信号。可以对进程 ID 触发 `kill` 命令，并传递信号：
 
-```javascript
+```js
 // In Node
 process.on('SIGUSR2', () => { ... });
+
 // To trigger that
 $ kill -SIGUSR2 PID
 ```
@@ -15254,13 +15652,13 @@ $ kill -SIGUSR2 PID
 
 首先，我们需要引用所有当前工作进程，这通过 `cluster.workers` 对象来实现。然后，可以将工作进程存储在数组中：
 
-```javascript
+```js
 const workers = Object.values(cluster.workers);
 ```
 
 之后，可以创建一个 `restartWorker` 函数来接收需要重启的工作进程的索引。这样，函数在准备好后可以调用自身，确保工作进程按顺序重启。以下是该函数的示例：
 
-```javascript
+```js
 const restartWorker = (workerIndex) => {
   const worker = workers[workerIndex];
   if (!worker) return;
@@ -15268,7 +15666,6 @@ const restartWorker = (workerIndex) => {
   worker.on('exit', () => {
     if (!worker.exitedAfterDisconnect) return;
     console.log(`Exited process ${worker.process.pid}`);
-
     cluster.fork().on('listening', () => {
       restartWorker(workerIndex + 1);
     });
@@ -15288,13 +15685,11 @@ restartWorker(0);
 
 这就是零停机重启所需的全部内容。要测试它，只需读取将接收 `SIGUSR2` 信号的主进程 ID：
 
-```javascript
+```js
 console.log(`Master PID: ${process.pid}`);
 ```
 
 启动集群，然后复制主进程 ID，使用 `kill -SIGUSR2 PID` 命令来重启集群。在集群重启时也可以运行 `ab` 命令，查看这对系统可用性的影响。理论上，你不应该得到任何失败的请求：
-
-![](img/7091ef933114a5ffe0ae0554f9493e61_449_0.png)
 
 PM2 以及其他在生产环境中使用的进程监控器应该使所有这些操作变得非常简单，同时还提供大量功能来监控你的 Node 应用程序的健康状况。例如，如果你使用 PM2 并想为任何应用程序启动集群，只需使用 `-i` 参数：
 
@@ -15318,13 +15713,9 @@ pm2 reload all
 
 如果在集群设置中需要缓存某些内容，则需要一个独立的实体。所有工作进程都需要能够读写该实体的 API，该实体可以是数据库服务器，或者在需要内存缓存的情况下，可以使用 Redis 或其他服务器。或者，你可以创建一个包含读写 API 的 Node 进程，所有其他工作进程都可以与之通信。
 
-![](img/7091ef933114a5ffe0ae0554f9493e61_451_0.png)
-
 但这并不是一个缺点，你不应该这样看待它——为缓存需求使用独立实体属于可扩展性策略之一——分解。事实上，即使你使用的是单核机器，你也应该这样做。
 
 在运行集群设置时，除了缓存之外，还有另一个问题——通用的有状态通信。由于无法保证通信会与同一个工作进程进行，因此无法在任何特定工作进程上创建有状态通道。用户认证就是最常见的例子之一：
-
-
 
 在集群设置中，认证请求会发送到主负载均衡进程。然后，该请求会被转发到某个工作进程——在本例中，我们假设是工作进程 A：
 
@@ -15336,27 +15727,25 @@ pm2 reload all
 
 现在，当同一用户发送新请求时，会在记录中查询哪个服务器保存了已认证的会话；然后请求会被发送到该服务器，而不是采用标准的分布式行为。这样，服务器端代码就无需更改。但缺点是我们无法为已认证用户获得负载均衡的好处，所以这其实是在没有其他办法时才应该使用的方案。
 
-粘性负载均衡实际上并不被 cluster 模块支持，但有些负载均衡器默认支持这一功能。
+粘性负载均衡实际上并不被 `cluster` 模块支持，但有些负载均衡器默认支持这一功能。
 
-## 第十六章
-
-## Node.js 打包
+## 第十六章：Node.js 打包
 
 近年来，Node.js 的 popularity 飙升，JavaScript 连续多年被评为最受欢迎的编程语言——现在，你应该理解这并不令人意外了。
 
 JavaScript 是无处不在的前端 Web 编程语言，这意味着无论开发者过去使用过什么编程语言——C、C#、Java、Ruby 等——他们都在使用并理解 JavaScript。由于使用 JavaScript 的开发者数量如此庞大，社区已经充满了各种框架和库，几乎能满足每一种需求。因此，将其用于服务器端项目是正确的选择。
 
-### *问题真的会出现*
+### 问题真的会出现
 
 有时，许多从编译型语言转向脚本型语言的程序员会莫名其妙地抛弃他们良好的编程习惯。
 
-我们经常看到程序员用 Node.js 开发应用，或使用 Node.js 开发纯 JS 应用，将代码存放在 GitHub 之类的平台上，然后直接将其拉取到生产服务器。接着运行 npm install 和 web build——有时他们会写测试，但更多时候，他们认为部署时重新构建一切要容易得多。这可能导致许多问题：
+我们经常看到程序员用 Node.js 开发应用，或使用 Node.js 开发纯 JS 应用，将代码存放在 GitHub 之类的平台上，然后直接将其拉取到生产服务器。接着运行 `npm install` 和 web build——有时他们会写测试，但更多时候，他们认为部署时重新构建一切要容易得多。这可能导致许多问题：
 
 - **依赖版本控制**
 
-当你的 packages.json 文件包含 semver 时，你的配置可能会告诉你某个包依赖需要匹配特定版本，比如 4.17.2。你的生产机拉取下来的是 4.17.3，而 4.17.4 被用于运行测试。等你部署到生产环境时，库的作者又更新了一次，你的软件最终运行在了 4.17.9 版本上——这是在生产环境。很多时候，库作者更新的库包含重大变更，可能会破坏生产环境，无论他们是无意为之，还是没有意识到自己的变更会产生什么影响。他们的更新抬高了版本号，这可能导致版本范围过宽，引发严重的代码崩溃。而 node_modules 中极其复杂的依赖链更是加剧了这一问题。
+当你的 `packages.json` 文件包含 semver 时，你的配置可能会告诉你某个包依赖需要匹配特定版本，比如 `4.17.2`。你的生产机拉取下来的是 `4.17.3`，而 `4.17.4` 被用于运行测试。等你部署到生产环境时，库的作者又更新了一次，你的软件最终运行在了 `4.17.9` 版本上——这是在生产环境。很多时候，库作者更新的库包含重大变更，可能会破坏生产环境，无论他们是无意为之，还是没有意识到自己的变更会产生什么影响。他们的更新抬高了版本号，这可能导致版本范围过宽，引发严重的代码崩溃。而 `node_modules` 中极其复杂的依赖链更是加剧了这一问题。
 
-假设你有模块 A，它是一个显式依赖的模块，依赖于某个版本范围的模块 B。而模块 B 又依赖于某个版本范围的多个其他模块。别忘了——运行 npm install 时，你不仅需要动态确定和解析你的模块，还要处理依赖链中的所有其他内容。使用最近新增的 package-lock 功能可以在一定程度上缓解这个问题，只要将该文件提交到源代码控制中。
+假设你有模块 A，它是一个显式依赖的模块，依赖于某个版本范围的模块 B。而模块 B 又依赖于某个版本范围的多个其他模块。别忘了——运行 `npm install` 时，你不仅需要动态确定和解析你的模块，还要处理依赖链中的所有其他内容。使用最近新增的 `package-lock` 功能可以在一定程度上缓解这个问题，只要将该文件提交到源代码控制中。
 
 - **部署成功不在你的掌控之中**
 
@@ -15374,12 +15763,13 @@ JavaScript 是无处不在的前端 Web 编程语言，这意味着无论开发�
 > npm install
 > gulp build   # 插入你想用的构建工具
 > zip -r ../RandomQuotes.1.0.zip .
+
 # ../RandomQuotes.1.0.zip created (5.2 MB)
 ```
 
 生成的 zip 文件随后可以解压到你的生产服务器上，应用就可以直接运行了。然而，我们在这里压缩了整个应用目录，其中大部分是编译和调试应用所需的库。应用完全构建好并准备投入生产后，TypeScript 编译器、测试框架或 webpack 库都不再需要。关键问题是，我们如何区分生产依赖和开发时依赖？
 
-运行以下 npm 命令会从 node_modules 中移除 package.json 的 devDependencies 部分指定的所有包：
+运行以下 npm 命令会从 `node_modules` 中移除 `package.json` 的 `devDependencies` 部分指定的所有包：
 
 ```
 npm prune --production
@@ -15387,7 +15777,7 @@ npm prune --production
 
 建议在你的整个应用被打包成归档文件之前运行此命令，无论你是使用手动流程还是 VSTS、Octopus Deploy 或 Chef 等部署工具。
 
-我们可以使用 octojs 来简化整个过程。这是 Octopus Deploy 发布的 Node.js CLI 工具，帮助我们在无需先执行 prune 步骤的情况下创建 zip 或 tar.gz 文件。默认情况下，包名称会生成与你的项目的 package.json 文件中相同的名称和版本。不过，所有这些值都可以被覆盖。你可以通过两种方式使用 octojs——导入后作为应用构建过程的一部分使用，或通过控制台使用。
+我们可以使用 octojs 来简化整个过程。这是 Octopus Deploy 发布的 Node.js CLI 工具，帮助我们在无需先执行 `prune` 步骤的情况下创建 zip 或 `tar.gz` 文件。默认情况下，包名称会生成与你的项目的 `package.json` 文件中相同的名称和版本。不过，所有这些值都可以被覆盖。你可以通过两种方式使用 octojs——导入后作为应用构建过程的一部分使用，或通过控制台使用。
 
 ### 使用命令行打包
 
@@ -15415,8 +15805,9 @@ Push response 201 - Created
 
 另一种替代方式是通过代码一步完成项目的打包和推送，使用同一个库：
 
-```javascript
+```js
 var octo = require("@octopusdeploy/octojs");
+
 octo.pack({dependencies: 'prod', bypassDisk: true, root: "."},
     (err, data) => {
         console.log("Uploading package: " + data.name);
@@ -15439,9 +15830,7 @@ octo.pack({dependencies: 'prod', bypassDisk: true, root: "."},
 
 你可以使用 Octopus JS 库来帮助你完成这项工作，但归根结底，应用程序如何构建和打包、使用什么工具来完成这些工作，其实都不重要；真正重要的是，它只构建一次，然后部署到每个环境中。
 
-## 第十七章
-
-## Node.js 中的 MongoDB + Mongoose – 后端开发者最佳实践
+## 第十七章：Node.js 中的 MongoDB + Mongoose – 后端开发者最佳实践
 
 MongoDB 无疑是所有 NOSQL 数据库中最受欢迎的之一，它拥有一个出色的生态系统和一个优秀的社区。本章将介绍在将 MongoDB 和 Mongoose 与 Node.js 应用程序一起使用时，应遵循的一些最佳实践：
 
@@ -15474,7 +15863,7 @@ MongoDB 是一个无模式数据库，这意味着当你刚开始使用时，它
 
 首先，我们想了解如何使用 Mongoose 连接 MongoDB 数据库：
 
-```
+```js
 mongoose.connect(DB_CONNECTION_STRING, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
@@ -15506,7 +15895,7 @@ mongoose.connect(DB_CONNECTION_STRING, {
 
 模型是 Mongoose 的超级功能，帮助你强制执行模式规则并将 Node 代码无缝集成到数据库单元中。所以，首先，我们需要定义一个好的模型：
 
-```
+```js
 import mongoose from 'mongoose'
 
 const CompletedSchema = new mongoose.Schema(
@@ -15543,7 +15932,7 @@ CRUD 代表 **创建**、**读取**、**更新**、**删除**——操作数据�
 
 这仅仅是为了创建新的数据库记录。我们将使用之前定义的模型来创建记录：
 
-```
+```js
 try {
     const res = await CompletedSchema.create(record)
 } catch(error) {
@@ -15562,31 +15951,31 @@ try {
 
 此操作从数据库读取值，但虽然听起来简单，关于 Mongoose 有几点需要注意：
 
-```
+```js
 const res = await CompletedSchema.find(info).lean()
 ```
 
-- 1. 你注意到 lean() 函数了吗？这是性能方面最好的函数之一，默认情况下，Mongoose 会处理从数据库返回的文档，为它们添加魔术方法，例如 .save。
+- 1. 你注意到 `lean()` 函数了吗？这是性能方面最好的函数之一，默认情况下，Mongoose 会处理从数据库返回的文档，为它们添加魔术方法，例如 `.save`。
 
-- 2. 当使用 .lean() 时，返回的是普通的 JSON 对象，而不是消耗大量资源和内存的文档对象。这使得你的查询快得多，并且 CPU 消耗也不会那么大。
+- 2. 当使用 `.lean()` 时，返回的是普通的 JSON 对象，而不是消耗大量资源和内存的文档对象。这使得你的查询快得多，并且 CPU 消耗也不会那么大。
 
-- 3. 话虽如此，如果你考虑更新数据，可以省略 .lean()。
+- 3. 话虽如此，如果你考虑更新数据，可以省略 `.lean()`。
 
 #### 更新操作
 
-如果未触发 .lean()，并且你已经有一个 Mongoose 文档，那么可以通过 object.save() 修改对象属性并保存：
+如果未触发 `.lean()`，并且你已经有一个 Mongoose 文档，那么可以通过 `object.save()` 修改对象属性并保存：
 
-```
+```js
 const doc = await CompletedSchema.findOne(info)
 doc.slug = 'something-else'
 await doc.save()
 ```
 
-在这里，我们进行了两次数据库调用——findOne 和 doc.save。在可能的情况下，尽量减少对数据库的请求次数。当你比较网络、内存和磁盘时，网络几乎总是最慢的。
+在这里，我们进行了两次数据库调用——`findOne` 和 `doc.save`。在可能的情况下，尽量减少对数据库的请求次数。当你比较网络、内存和磁盘时，网络几乎总是最慢的。
 
 另一种情况允许你使用类似下面的方式只对数据库进行一次调用：
 
-```
+```js
 const res = await CompletedSchema.updateOne(<condition>, <query>).lean()
 ```
 
@@ -15594,15 +15983,13 @@ const res = await CompletedSchema.updateOne(<condition>, <query>).lean()
 
 最后，Mongoose 也使删除操作变得简单直接。以下是删除单个文档的方法：
 
-```
+```js
 const res = await CompletedSchema.deleteOne(<condition>)
 ```
 
-与 updateOne 类似，deleteOne 也将文档的匹配条件作为其第一个参数。
+与 `updateOne` 类似，`deleteOne` 也将文档的匹配条件作为其第一个参数。
 
-
-
-另一种方法`deleteMany`，当你需要删除多个文档时应使用它。但是，若想避免执行多个查询，尤其是在试图执行自定义查询时，请使用`deleteOne`。
+另一种方法 `deleteMany`，当你需要删除多个文档时应使用它。但是，若想避免执行多个查询，尤其是在试图执行自定义查询时，请使用 `deleteOne`。
 
 ### 结论
 

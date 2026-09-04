@@ -1,15 +1,7 @@
+
 # NativeScript 精通：初学者指南 (计算机科学大师)
 
-
-
-
-
-
-
 ![](img/42004012abc3006b81bee3fbecfb4ef0_0_0.png)
-
-
-
 
 *Mastering NativeScript* 帮助读者掌握 NativeScript 框架，以进行更快、更稳健的移动应用开发。
 
@@ -23,103 +15,48 @@ NativeScript 是一种极具吸引力的范式，目前正日益流行。它可�
 
 通过 *Mastering NativeScript*，学习 NativeScript 将变得简单易行，这无疑有助于读者提升职业生涯。
 
+**“精通计算机科学”系列书籍由 Sufyan bin Uzayr 领导的 Zeba Academy 团队成员编写。**
 
-
-
-
-
-
-
-
-
-
-***“精通计算机科学”系列书籍由 Sufyan bin Uzayr 领导的***Zeba Academy 团队成员编写。***
-
-***Zeba Academy 是一家教育科技初创企业，主要为 STEM 领域的学习者开发课程和内容，并为全球的大学和机构提供教育咨询。欲了解更多信息，请访问***
-***https://zeba.academy***
+**Zeba Academy 是一家教育科技初创企业，主要为 STEM 领域的学习者开发课程和内容，并为全球的大学和机构提供教育咨询。欲了解更多信息，请访问 https://zeba.academy**
 
 Sufyan bin Uzayr
 
-
-
-
-
 DOI: 10.132297624
 
-序言
-关于作者
+## 序言
 
+## 关于作者
 
+## 目录
 
+- NativeScript 中的事件处理
+- NativeScript 中的数据绑定
+- NativeScript 的模块
+- NativeScript 插件
+- 使用 JavaScript 使用原生 API
+- NativeScript – ANDROID 应用开发
+- 我们的第一个应用
+- NativeScript 中的布局
+- UI 布局容器
+- 第3章 完善你的应用
+- 将我们的 NativeScript 应用发布到应用商店的步骤
+- 在 NativeScript 中，处理数据
+- 准备发布我们的应用
+- 在 Windows 上
+- 保护我们的移动应用
+- 第4章 Angular 和 NativeScript
+  - 升级我们的 Angular 10 项目
+  - 应更新的 .json 文件
+- 使用 Angular 创建 NativeScript 应用
+- 导航
+- 数据绑定
+- 使用插件
+- 第5章 深入探索
+- webpack 配置
+- iOS 应用扩展
+  - 用于 WatchOS 的 NativeScript 应用
 
-
-
-
-## NativeScript 中的事件处理 51
-
-## NativeScript 中的数据绑定 54
-
-## NativeScript 的模块 58
-
-## NativeScript 插件 63
-
-## 使用 JavaScript 使用原生 API 65
-
-
-## NativeScript – ANDROID 应用开发 71
-
-## 我们的第一个应用 73
-
-## NativeScript 中的布局 89
-
-## UI 布局容器 95
-
-## 第3章 完善你的应用 111
-## 将我们的 NativeScript 应用发布到应用商店的步骤 111
-
-## 在 NativeScript 中，处理数据 124
-
-## 准备发布我们的应用 127
-
-## 在 Windows 上 131
-
-## 保护我们的移动应用 133
-
-## 第4章 Angular 和 NativeScript 141
-- 升级我们的 Angular 10 项目 146
-- 应更新的 .json 文件 147
-
-## 使用 Angular 创建 NativeScript 应用 151
-
-## 导航 158
-
-## 数据绑定 176
-
-## 使用插件 179
-
-## 第5章 深入探索 183
-
-## webpack 配置 185
-
-## iOS 应用扩展 189
-- 用于 WatchOS 的 NativeScript 应用 191
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-序言
+## 序言
 
 《精通计算机科学》（*Mastering Computer Science*）涵盖了广泛的主题，跨越编程语言以及现代技术和框架。该系列特别关注初级内容，并以易于理解的方式呈现，包括：
 
@@ -133,8 +70,7 @@ DOI: 10.132297624
 
 《精通计算机科学》系列由 Sufyan bin Uzayr 编辑，他是一位在计算领域拥有十年经验的作家和教育者。
 
-
-关于作者
+## 关于作者
 
 **Sufyan bin Uzayr** 是一位作家、程序员和创业者，在行业拥有十多年经验。他过去撰写过几本书，涉及从历史到计算机/IT 的多种主题。
 
@@ -146,8 +82,6 @@ Sufyan 是一个数字游民，时间分布在四个国家。他曾在全球各�
 
 访问 sufyanism.com 了解更多。
 
-
-
 # 第1章：基础
 
 ## 本章内容
@@ -156,27 +90,17 @@ Sufyan 是一个数字游民，时间分布在四个国家。他曾在全球各�
 
 今天，移动世界不断演变，使得跟上最新技术变得越来越挑战性。当开发者创建应用程序时，他们必须接触最广泛的潜在受众：专注于单一平台不再是一个选择。应用程序必须在多个平台和设备上可用。
 
-为了跟上不断变化的环境，开发者重视任何可以简化移动开发流程的技术。有多种用于创建移动应用程序的框架；NativeScript 是其中之一，但它远不是唯一的。其他的如 Cordova、Xamarin 和 React Native 你可能对它们熟悉。
-
+为了跟上不断变化的环境，开发者重视任何可以简化移动开发流程的技术。有多种用于创建移动应用程序的框架；NativeScript 是其中之一，但它远不是唯一的。其他的如 `Cordova`、`Xamarin` 和 `React Native` 你可能对它们熟悉。
 
 ## 基础
 
 ### JavaScript 框架概述
 
-让我们看看几个最流行的 JavaScript 框架：
-
 ### NativeScript 概述
-
-## 基础
-
-
-
-
 
 ## 4. 掌握 NativeScript：入门指南
 
-
-学习一门新语言有时会成为进入新世界的阻碍。在开发 NativeScript 应用时，我们将利用之前在 HTML 应用程序方面的专业知识，快速设计出针对多个平台（Android 和 iOS）的应用程序。由于我们已经具备了这些能力，设计 NativeScript 应用将是轻而易举的。此外，我们无需学习 Objective C、Swift 或 Java。
+学习一门新语言有时会成为进入新世界的阻碍。在开发 NativeScript 应用时，我们将利用之前在 HTML 应用程序方面的专业知识，快速设计出针对多个平台（Android 和 iOS）的应用程序。由于我们已经具备了这些能力，设计 NativeScript 应用将是轻而易举的。此外，我们无需学习 `Objective C`、`Swift` 或 `Java`。
 
 ## NativeScript 应用是如何创建的？
 
@@ -194,7 +118,7 @@ NativeScript 中的应用。
 
 NativeScript 的另一个独特特性是原生 API 的可用性。
 
-随着我们深入了解 NativeScript，我们会发现它将我们所有的代码作为原生代码在设备上运行。这使我们能够从原生代码的性能优势，而无需学习或编写 Objective C、Swift 或 Java。
+随着我们深入了解 NativeScript，我们会发现它将我们所有的代码作为原生代码在设备上运行。这使我们能够从原生代码的性能优势，而无需学习或编写 `Objective C`、`Swift` 或 `Java`。
 
 ## 在移动开发背景下，NativeScript 意味着什么
 
@@ -205,7 +129,6 @@ NativeScript 的另一个独特特性是原生 API 的可用性。
 移动应用分为四类：原生、混合、交叉编译和 JIT 编译。
 
 不同类型的移动应用及其最流行的框架：
-
 
 除了原生应用外，表中的其他三类应用具有共同目标：编写一次应用代码并发布到各个平台（这就是人们所说的“跨平台”的意思）。
 
@@ -235,23 +158,17 @@ NativeScript 的另一个独特特性是原生 API 的可用性。
 
 NativeScript 拥有一个活跃的社区支持。以下是 NativeScript 的一些突出特性：
 
-
 ### NativeScript 的优势
 
 NativeScript 帮助小型和大型企业开发跨平台应用。其许多优势包括：
-
 
 可以使用 TypeScript 创建 NativeScript 应用。TypeScript 是一种编译为 JavaScript 的语言，并扩展了 JavaScript 的面向对象编程功能。
 
 ### 使用 NativeScript
 
-使用 JavaScript、XML 和 CSS 编写原生移动应用并不是经常听到的。相反，我们可能经常听说过使用 Objective C、Swift 或 Java 开发原生移动应用。
+使用 JavaScript、XML 和 CSS 编写原生移动应用并不是经常听到的。相反，我们可能经常听说过使用 `Objective C`、`Swift` 或 `Java` 开发原生移动应用。
 
-
-
-
-
-## 基础 **9**
+## 基础
 
 该图展示了这些组件如何交互以生成原生的 Android 和 iOS 项目，然后开发成运行在移动设备上的原生程序。
 
@@ -269,7 +186,7 @@ NativeScript 帮助小型和大型企业开发跨平台应用。其许多优势�
 
 完成程序开发后，它会被输入到 NativeScript CLI。CLI 负责开发原生 Android 和 iOS 项目，并将 NativeScript 应用核心集成到每个项目中。在执行时，CLI 会调用原生的 Android 或 iOS 软件开发包（SDK）来创建和组装原生应用。随后，构建的程序将部署（通过命令行界面）并运行在物理设备、模拟器或仿真器上。
 
-正如我们所看到的，NativeScript 的魅力在于它的通用性：我们不需要花费时间学习 Objective C、Swift 和 Java 等原生编程语言，因为我们可以利用 JavaScript。此外，NativeScript CLI 的平台无关命令消除了学习 Android 和 iOS 原生工具及 SDK 如何运行的必要。
+正如我们所看到的，NativeScript 的魅力在于它的通用性：我们不需要花费时间学习 `Objective C`、`Swift` 和 `Java` 等原生编程语言，因为我们可以利用 JavaScript。此外，NativeScript CLI 的平台无关命令消除了学习 Android 和 iOS 原生工具及 SDK 如何运行的必要。
 
 ## NativeScript 的安装
 
@@ -279,46 +196,67 @@ NativeScript 帮助小型和大型企业开发跨平台应用。其许多优势�
 
 在继续安装之前，必须满足以下条件：
 
+`Node.js` 是一个构建在 Google Chrome 内部 JavaScript 引擎 v8 之上的 JavaScript 运行时引擎。NativeScript 积极利用 `Node.js` 用于各种用途，例如开发初始模板应用、编译应用等。您的 PC 必须安装 `Node.js`。希望您的 PC 上已经安装了 `Node.js`。如果尚未安装，请访问 https://nodejs.org/ 下载并安装最新的 LTS 包。
 
+要检查 `Node.js` 是否正确安装，请在我们的终端中运行以下命令：
 
-Node.js 是一个构建在 Google Chrome 内部 JavaScript 引擎 v8 之上的 JavaScript 运行时引擎。NativeScript 积极利用 Node.js 用于各种用途，例如开发初始模板应用、编译应用等。您的 PC 必须安装 Node.js。希望您的 PC 上已经安装了 Node.js。如果尚未安装，请访问 https://nodejs.org/ 下载并安装最新的 LTS 包。
-
-要检查 Node.js 是否正确安装，请在我们的终端中运行以下命令：
-
+```
+node -v
+```
 
 ### CLI 设置
 
-NativeScript CLI 是一个命令行程序，允许我们构建和开发 NativeScript 应用。NativeScript CLI 通过 Node.js 包管理器 npm 安装在我们的 PC 上。
+`NativeScript CLI` 是一个命令行程序，允许我们构建和开发 NativeScript 应用。`NativeScript CLI` 通过 `Node.js` 包管理器 `npm` 安装在我们的 PC 上。
 
-要安装 NativeScript CLI，请运行以下命令：
+要安装 `NativeScript CLI`，请运行以下命令：
 
+```
+npm install -g nativescript
+```
 
-我们已在机器上安装了最新的 NativeScript CLI —— tns。现在，在我们的终端中输入以下命令：
+我们已在机器上安装了最新的 `NativeScript CLI` —— `tns`。现在，在我们的终端中输入以下命令：
 
+```
+tns --version
+```
 
-即使没有进一步的配置，我们也可以利用 tns 构建和开发应用。然而，我们无法在真实设备上安装该程序。相反，我们可以使用 NativeScript Playground iOS/Android 应用来启动程序。
+即使没有进一步的配置，我们也可以利用 `tns` 构建和开发应用。然而，我们无法在真实设备上安装该程序。相反，我们可以使用 `NativeScript Playground` iOS/Android 应用来启动程序。
 
 ### 安装 NativeScript Playground 应用
 
-导航到 iOS App Store 或 Google Play Store 并寻找 NativeScript Playground 应用。当程序出现在搜索结果中，点击安装按钮。它会将 NativeScript Playground 软件下载并安装到我们的手机中。
+导航到 iOS App Store 或 Google Play Store 并寻找 `NativeScript Playground` 应用。当程序出现在搜索结果中，点击安装按钮。它会将 `NativeScript Playground` 软件下载并安装到我们的手机中。
 
-NativeScript Playground 应用允许您在 Android 或 iOS 设备上测试应用，而无需将其部署到真实设备或仿真器上。这将缩短构建应用所需的时间，并为创建移动应用提供更简单的方法。
+`NativeScript Playground` 应用允许您在 Android 或 iOS 设备上测试应用，而无需将其部署到真实设备或仿真器上。这将缩短构建应用所需的时间，并为创建移动应用提供更简单的方法。
 
 ### Android 和 iOS 的配置
 
 在本节中，我们将学习如何配置系统以便模拟器或真实设备上编写并执行 iOS 和 Android 应用。
 
 - **步骤 1：Windows 依赖**：在 Windows 命令行提示符以管理员身份运行以下命令。
+
+```
+@powershell -NoProfile -ExecutionPolicy Bypass -Command "iex ((New-Object System.Net.WebClient).DownloadString('https://www.nativescript.org/setup/win'))"
+```
+
 执行此命令后，脚本将被下载，依赖项将被安装并配置。
 
-- **步骤 2：macOS 依赖**：要在 macOS 上安装，必须首先检查是否安装了 Xcode。NativeScript 需要使用 Xcode。如果尚未安装 Xcode，请访问 https://developer.apple.com/xcode/ 下载并进行安装。
+- **步骤 2：macOS 依赖**：要在 macOS 上安装，必须首先检查是否安装了 `Xcode`。NativeScript 需要使用 `Xcode`。如果尚未安装 `Xcode`，请访问 https://developer.apple.com/xcode/ 下载并进行安装。
+
 现在，在终端中输入以下命令：
-`sudo ruby -e "$(curl -fsSL https://www.nativescript.org/setup/mac)"`
+
+```
+sudo ruby -e "$(curl -fsSL https://www.nativescript.org/setup/mac)"
+```
+
 执行上述命令后，脚本将为 iOS 安装必要内容。完成后，重启终端。
 
 - **步骤 3：Android 依赖**：希望我们已经设置了以下内容：
 
 - **步骤 4：确认依赖**：一切已完成。我们可以使用以下命令测试依赖：
+
+```
+tns doctor
+```
 
 ## NativeScript 架构
 
@@ -330,43 +268,31 @@ NativeScript 高度重视利用 JavaScript 创建高效环境。由于 JavaScrip
 
 ### NativeScript 框架高层概述
 
-
 简而言之，模块用于构建和组织 NativeScript 应用。模块用纯 JavaScript 编写，并通过插件访问平台相关功能，插件反过来桥接了平台 API 和 JavaScript API。
-
-
-
-
-
-
-
-
 
 应用模块包括根模块和页面模块。应用模块作为 NativeScript 应用的入口点。它启动一个页面，允许开发者设计页面的 UI，最后执行页面的业务逻辑。应用模块由下面列出的三个部分组成：
 
+NativeScript 拥有大量的 UI 组件用于设计应用页面。在基于 Angular 的应用中，UI 组件可以用 XML 或 HTML 格式表示。应用模块使用 UI 组件创建页面，并保存在独立的 XML 文件 `page.xml`/`page.component.html` 中。CSS 可对设计进行样式处理。
 
-NativeScript 拥有大量的 UI 组件用于设计应用页面。在基于 Angular 的应用中，UI 组件可以用 XML 或 HTML 格式表示。应用模块使用 UI 组件创建页面，并保存在独立的 XML 文件 `page.xml/page.component.html` 中。CSS 可对设计进行样式处理。
-
-在应用模块中，设计样式存储在不同的 CSS 文件 `page.css/page.component.css` 中。页面的功能可以使用 JavaScript/TypeScript 实现，它们对设计平台功能具有完全访问权限。页面的实际功能由应用模块在不同的文件 `page.js/page.component.ts` 中编写。
+在应用模块中，设计样式存储在不同的 CSS 文件 `page.css`/`page.component.css` 中。页面的功能可以使用 JavaScript/TypeScript 实现，它们对设计平台功能具有完全访问权限。页面的实际功能由应用模块在不同的文件 `page.js`/`page.component.ts` 中编写。
 
 ### 根模块 (Root Modules)
 
 NativeScript 使用 UI 容器来控制 UI 和用户交互。每个 UI 容器都应该有一个通过根模块来维护其 UI。NativeScript 应用中有两种 UI 容器：
 
-
-就像其内容一样，每个根模块应该只有一个 UI 组件。而 UI 组件本身可能包含其他 UI 组件作为子组件。NativeScript 拥有许多具有子功能的 UI 组件，如 TabView、ScrollView 等。这些可以作为主要的 UI 组件。frame 是一个例外，因为它没有子选项，但可以作为根组件使用。frame 具有加载 Page 模块以及导航到其他 Page 模块的。
+就像其内容一样，每个根模块应该只有一个 UI 组件。而 UI 组件本身可能包含其他 UI 组件作为子组件。NativeScript 拥有许多具有子功能的 UI 组件，如 `TabView`、`ScrollView` 等。这些可以作为主要的 UI 组件。`frame` 是一个例外，因为它没有子选项，但可以作为根组件使用。`frame` 具有加载 Page 模块以及导航到其他 Page 模块的能力。
 
 ### 页面模块 (Page Modules)
 
 NativeScript 中的每个页面本质上都是一个 Page 模块。页面模块使用 NativeScript 广泛的 UI 组件构建。页面模块通过 Frame 组件（通过其 `defaultPage` 属性或 `navigate()` 函数）加载到应用中，然后通过根模块加载，最后通过应用加载。在程序运行时，使用 `run()`。
 
-基于 基于 ANGULAR 的 NativeScript 应用工作流
+### 基于 Angular 的 NativeScript 应用工作流
 
 如前，NativeScript 框架提供了多种方法来吸引不同类型的开发者。NativeScript 支持以下方法论：
 
 - NativeScript Core 是 NativeScript 框架的基础概念。
 
 让我们看看 Angular 框架是如何集成到 NativeScript 框架中的。
-
 
 ```typescript
 import { platformNativeScriptDynamic } from "nativescript-angular/platform";
@@ -375,38 +301,54 @@ platformNativeScriptDynamic().bootstrapModule(AppModule);
 ```
 
 - **步骤 2：** 应用模块的基础实现：
+
 ```typescript
 import { NgModule } from "@angular/core";
 
-
-
-
-
-
-
+@NgModule({
+  // ...
+})
+export class AppModule { }
+```
 
 在这里，
 
-
-## 21 基础知识
-
+## 基础知识
 
 ### Node 模块
 
 ### Android 源代码
 
 ### iOS 源代码
-NativeScript 生成 iOS 源代码并保存在 `App_Resources\iOS` 文件夹中。它将被用于使用 iOS SDK 和 XCode 开发 iOS 应用。
+
+NativeScript 生成 iOS 源代码并保存在 `App_Resources/iOS` 文件夹中。它将被用于使用 iOS SDK 和 XCode 开发 iOS 应用。
 
 ### 源代码
+
 应用程序代码存储在 `src` 文件夹中。在我们程序的 `src` 文件夹中，我们将找到列出的文件：
 
+```
+src/
 │
-│
+├── main.ts
+├── app.css
+├── app/
+│   ├── app.module.ts
+│   ├── app.component.ts
+│   ├── app-routing.module.ts
+│   ├── home.module.ts
+│   ├── home.component.ts
+│   ├── home/
+│   │   └── home-routing.module.ts
+│   ├── app.component.html
+│   └── home.component.html
+```
 
 让我们先理解这部分所有文件的功能以及它们是如何组织的。
 
 - **步骤 1：main.ts – 应用程序的入口。**
+
+```typescript
 // 此导入操作应该最初执行
 // 以加载某些必要的参数（如
 // globals 和 reflect-metadata）
@@ -414,114 +356,210 @@ import { AppModule } from "./app/app.module";
 
 platformNativeScriptDynamic()
   .bootstrapModule(AppModule);
+```
+
 在此情况下，`AppModule` 被指定为应用程序的引导模块。
 
 - **步骤 2：app.css – 应用程序的主样式表显示在这里。**
 
+```css
 /* 在此部分放置任何希望同时应用于
 iOS 和 Android 的 CSS 规则。
 这里是大部分 CSS 代码将放置的地方。*/
-在这里，app.css` 导入了 NativeScript 框架的核心样式表和棕色主题样式表。
+```
 
-- **步骤 3：app\app.module.ts – 应用程序的根模块。**
+在这里，`app.css` 导入了 NativeScript 框架的核心样式表和棕色主题样式表。
+
+- **步骤 3：app/app.module.ts – 应用程序的根模块。**
+
+```typescript
 import { NativeScriptModule } from "nativescript-angular/nativescript.module";
 import { AppRoutingModule } from "./app-routing.module";
 
 @NgModule({
-  ],
+  // ...
+})
+export class AppModule { }
+```
+
 在这里，`AppModule` 构建并配置了应用程序的组件。它包含了两个模块 `NativeScriptModule` 和 `AppRoutingModule`，以及一个组件 `AppComponent`。
 
 - **步骤 4：app.component.ts – 应用程序的根组件。**
+
+```typescript
 import { Component } from "@angular/core";
 
 @Component({
+  // ...
+})
+export class AppComponent { }
+```
+
 在这里，`AppComponent` 定义了组件的模板和样式表。
 
 - **步骤 5：app-routing.module.ts – Angular 路由模块。**
 
+```typescript
+import { NgModule } from "@angular/core";
+import { NativeScriptRouterModule } from "nativescript-angular/router";
+import { Routes } from "@angular/router";
+
+const routes: Routes = [
+  // ...
 ];
+
+@NgModule({
+  imports: [NativeScriptRouterModule.forRoot(routes)],
+  exports: [NativeScriptRouterModule]
+})
+export class AppRoutingModule { }
+```
 
 在这里，`AppRoutingModule` 运行 `NativeScriptRouterModule` 来配置路由。它本质上将空路由重定向到 home。
 
-- **步骤 6：app\home.module.ts – 创建名为 HomeModule 的模块。**
+- **步骤 6：app/home.module.ts – 创建名为 HomeModule 的模块。**
+
+```typescript
+import { NgModule, NO_ERRORS_SCHEMA } from "@angular/core";
+import { NativeScriptCommonModule } from "nativescript-angular/common";
+import { HomeRoutingModule } from "./home-routing.module";
+import { HomeComponent } from "./home.component";
 
 @NgModule({
+  imports: [
+    NativeScriptCommonModule,
+    HomeRoutingModule
+  ],
   declarations: [
-    AppComponent
+    HomeComponent
+  ],
+  schemas: [
+    NO_ERRORS_SCHEMA
+  ]
+})
+export class HomeModule { }
+```
+
 （注：此处原文代码内容与标题描述的 home.module 不符，翻译已按要求保留原文代码内容）
 
-- **步骤 7：app\home.component.ts – 定义作为主页的 Home 组件。**
+- **步骤 7：app/home.component.ts – 定义作为主页的 Home 组件。**
 
+```typescript
+import { Component, OnInit } from "@angular/core";
+
+@Component({
+  selector: "Home",
+  templateUrl: "./home.component.html"
+})
+export class HomeComponent implements OnInit {
+  ngOnInit(): void {
+    // 初始化组件属性
   }
-
-在这里，`AppComponent` 配置了组件的模板和样式表。
-
-- **步骤 8：app\home\home-routing.module.ts – 用于为 模块指定路由的路由模块。**
-
-
-  ],
+}
 ```
+
+在这里，`HomeComponent` 配置了组件的模板和样式表。
+
+- **步骤 8：app/home/home-routing.module.ts – 用于为模块指定路由的路由模块。**
+
+```typescript
+import { NgModule } from "@angular/core";
+import { NativeScriptRouterModule } from "nativescript-angular/router";
+import { Routes } from "@angular/router";
+import { HomeComponent } from "../home.component";
+
+const routes: Routes = [
+  { path: "", component: HomeComponent }
+];
+
+@NgModule({
+  imports: [NativeScriptRouterModule.forChild(routes)],
+  exports: [NativeScriptRouterModule]
+})
+export class HomeRoutingModule { }
+```
+
 在这里，`HomeRoutingModule` 将空路径设置为 `HomeComponent`。
 
 - **步骤 9：app.component.html 和 home.component.html – 这些文件用于使用 NativeScript UI 组件构建应用程序的 UI。**
+
 ### 运行应用
+
 如果我们想在不使用设备的情况下运行程序，可以使用以下命令：
 
+```
+tns preview
+```
 
 运行此命令后，将生成一个二维码用于扫描并与我们的手机连接。
 
 ### 在我们的设备上运行我们的应用
+
 如果我们想测试应用程序中连接的设备，可以使用以下语法：
 
-`tns device <Platform> --available-devices`
+```
+tns device <Platform> --available-devices
+```
 
 之后，我们可以使用以下命令运行程序：
 
-`tns run`
+```
+tns run
+```
 
 上面的程序用于在本地开发你的应用并将其安装到 Android 或 iOS 设备上。如果我们想在 Android 模拟器上运行程序，可以使用以下命令：
 
-`tns run android`
+```
+tns run android
+```
 
 我们可以在 iOS 设备上使用以下命令：
 
-`run ios`
-
-
-
+```
+tns run ios
+```
 
 ## NativeScript 模板
 
 ### 使用模板
 
-`tns create <app-name> --template <tns-template-name>`
+```
+tns create <app-name> --template <tns-template-name>
+```
 
 在这里，模板的名称为 `tns-template-name`。
 
+```
+tns create <app-name> --template tns-template-blank
+```
 
-`tns create <app-name> --template tns-template-blank`
-
-`tns create <app-name> --template tns-template-blank-ts`
+```
+tns create <app-name> --template tns-template-blank-ts
+```
 
 ### 导航模板
 
 导航模板用于构建从简单到复杂的应用程序。它包含一个预配置的带有多个页面的 `SideDrawer`（侧边抽屉）组件。`SideDrawer` 组件为导航 UI 或常用设置提供了一个隐藏视图。要开发基于导航的应用程序，请使用以下命令：
 
-`tns create <app-name> --template tns-template-drawer-navigation`
+```
+tns create <app-name> --template tns-template-drawer-navigation
+```
 
 ### 标签导航模板
 
 要构建基于标签的应用程序，将利用标签导航模板。它包含一个预配置的带有多个页面的 `TabView` 组件。要构建基于标签的应用程序，请使用以下命令：
 
-`tns create <app-name> --template tns-template-tab-navigation`
-
-28 精通 NativeScript：入门指南
+```
+tns create <app-name> --template tns-template-tab-navigation
+```
 
 ### 主/详情模板 (Master-Detail)
 
 主/详情模板用于开发基于列表的应用程序，该应用程序为列表中的每个项目包含一个详情页：
 
-`tns create <app-name> --template tns-template-master-detail`
+```
+tns create <app-name> --template tns-template-master-detail
+```
 
 ### 自定义模板
 
@@ -529,7 +567,9 @@ import { Component } from "@angular/core";
 
 例如，使用以下命令从 git 仓库克隆一个自定义且直观的模板。
 
-`git clone https://github.com/NativeScript/template-blank-ts.git`
+```
+git clone https://github.com/NativeScript/template-blank-ts.git
+```
 
 它现在将生成移动应用框架，允许你进行调整并运行在 Android/iOS 设备上。该结构建立在一组规则之上。让我们快速查看指南。
 
@@ -548,35 +588,23 @@ import { Component } from "@angular/core";
 {
   "name": "tns-template-blank-ts",
   "displayName": "template-blank",
+  "version": "3.2.1",
+  "main": "app.js",
+  "android": {
+    "v8Flags": "--expose_gc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/NativeScript/template-master-detail-ts"
+  }
 }
 ```
 
-29 基础
-
-给 `version` 属性赋值。它在下方进一步定义。
-
-`"version": "3.2.1",`
-
-给指定我们应用程序主入口的 `main` 属性赋值。它在下方进一步定义：
-
-`"main": "app.js",`
-
-给 `android` 属性赋值。它在下方进一步定义：
-
-`"android": {
-  "v8Flags": "--expose_gc"
-},`
-
-`repository` 属性在我们的代码中应定义如下：
-
-`"repository": {
-  "type": "git",
-  "url": "https://github.com/NativeScript/template-master-detail-ts"
-},`
-
 **样式:** 使用下面的语法将样式和主题导入到我们的应用模板中：
 
-`@import '~nativescript-theme-core/scss/light';`
+```
+@import '~nativescript-theme-core/scss/light';
+```
 
 我们还可以使用下面的代码来设置自定义背景颜色：
 
@@ -590,44 +618,47 @@ $primary: lighten(#000, 13%);
 
 NativeScript 有许多被称为“组件”的 UI 组件。每个组件都执行一个特定的功能并有一组方法。在这部分，我们将深入介绍 NativeScript 组件。
 
-30 精通 NativeScript：入门指南
-
 ### 按钮 (Button)
 
 按钮用于执行点击事件操作的组件。当用户点击按钮时，将执行相应的操作。它在下方进一步定义。
 
-`<Button text="Click-here" tap="onTap"></Button>`
+```xml
+<Button text="Click-here" tap="onTap"></Button>
+```
 
 让我们如下所示将按钮添加到我们的 BlankNgApp 中。
 
-- **步骤 1:** 导航到 `src\app\home\home.component.html`。这是主页组件的 UI 设计页面。
+- **步骤 1:** 导航到 `src/app/home/home.component.html`。这是主页组件的 UI 设计页面。
+
 - **步骤 2:** 将按钮插入到 `GridLayout` 组件中。完整代码如下：
 
-```html
+```xml
 <ActionBar>
   <Label text="Home"></Label>
 </ActionBar>
 <GridLayout>
-  <button text="Click-Here"></button>
+  <Button text="Click-Here"></Button>
 </GridLayout>
 ```
+
 - **步骤 3:** 我们可以使用 CSS 对按钮进行样式设置，如下所示：
-```html
+
+```xml
 <ActionBar>
   <Label text="Home"></Label>
 </ActionBar>
 <GridLayout>
-  <button text="Click-Here"></button>
+  <Button text="Click-Here"></Button>
 </GridLayout>
 ```
+
 - **步骤 4:**
-```html
+
+```xml
 <GridLayout>
   <Button text="Click-here" tap="onTap"></Button>
 </GridLayout>
 ```
-
-31 基础
 
 ```css
 .fa {
@@ -635,56 +666,53 @@ NativeScript 有许多被称为“组件”的 UI 组件。每个组件都执行
 }
 ```
 
-- **步骤 1:** 见上文页面
-- 创建一个新的文件夹并将功能区域放在其中。
-- 页面、视图模型和服务类都应该放在功能部分。这有助于创建优秀且清晰的代码。
-- **步骤 2:** 见上文页面
-- **步骤 3:** 见上文代码块
-- **步骤 4:** 见上文代码块
-- **步骤 5:** 下载最新的 FontAwesome.ttf 到 `src\fonts/`。
+- **步骤 5:** 下载最新的 `FontAwesome.ttf` 到 `src/fonts/`。
 
-NativeScript 是一个用于原生应用的框架。
+### 标签 (Label)
 
-```html
+`Label` 组件用于显示文本。
+
+```xml
 <GridLayout>
   <Label text="Home"></Label>
 </GridLayout>
 ```
 
+### 文本框 (TextField)
+
 `TextField` 组件用于从用户处收集数据。
 
-```html
+```xml
 <GridLayout>
-  <TextField hint="Enter">
+  <TextField hint="Enter"></TextField>
 </GridLayout>
 ```
 
+### 文本视图 (TextView)
+
 `TextView` 用于接收多行文本。让我们将主页修改为：
 
-```html
+```xml
 <GridLayout>
-  <TextView textWrap="true" returnKey="done" autocorrect="false" maxLength="90">
+  <TextView textWrap="true" returnKey="done" autocorrect="false" maxLength="90"></TextView>
 </GridLayout>
 ```
 
 文本框的高度：
 
-```html
+```xml
 <GridLayout>
-  <TextField hint="Enter">
+  <TextField hint="Enter"></TextField>
 </GridLayout>
 ```
-
-32 精通 NativeScript：入门指南
 
 ### 进度 (Progress)
 
 进度组件显示操作的状态。当前状态由一个条形指示。它在下方进一步定义：
 
-```html
+```xml
 <StackLayout verticalAlign="center" height="50">
-  <Progress value="85" maxValue="110" backgroundColor="yellow" color="green" row="0">
-</Progress>
+  <Progress value="85" maxValue="110" backgroundColor="yellow" color="green" row="0"></Progress>
 </StackLayout>
 ```
 
@@ -692,19 +720,17 @@ NativeScript 是一个用于原生应用的框架。
 
 活动指示器显示正在处理的任务。它在下方进一步定义：
 
-```html
+```xml
 <StackLayout verticalAlign="center" height="40">
   <ActivityIndicator busy="true" color="blue" width="50" height="40"></ActivityIndicator>
 </StackLayout>
 ```
 
-33 基础
-
 ### 图片 (Image)
 
 要显示图片，可以使用图片组件。可以通过 `ImageSource` URI 访问。它在下方进一步定义：
 
-```html
+```xml
 <StackLayout class="m-15" backgroundColor="lightyellow">
   <Image src="~/images/logo1.png" stretch="aspectFill"></Image>
 </StackLayout>
@@ -712,44 +738,31 @@ NativeScript 是一个用于原生应用的框架。
 
 ### 网页视图 (WebView)
 
-WebView 显示网页。可以使用 URL 加载网页。它在下方进一步定义：
+`WebView` 显示网页。可以使用 URL 加载网页。它在下方进一步定义：
 
-```html
-<WebView row="1" loaded="onWebViewLoaded" id="myWebView" src="http://www.facebook.com">
-</WebView>
+```xml
+<WebView row="1" loaded="onWebViewLoaded" id="myWebView" src="http://www.facebook.com"></WebView>
 ```
 
 ### 日期选择器 (DatePicker)
 
-DatePicker 用于选择日期。它在下方进一步定义：
+`DatePicker` 用于选择日期。它在下方进一步定义：
 
-```html
+```xml
 <StackLayout class="m-15" backgroundColor="lightgray">
+  <DatePicker year="1980" month="4" day="20" verticalAlignment="center"></DatePicker>
+</StackLayout>
 ```
 
+### 时间选择器 (TimePicker)
 
+`TimePicker` 组件用于选择时间。它在下方定义：
 
-
-
-**34**    ◾   掌握 NativeScript：入门指南
-
-<DatePicker year="1980" month="4" day="20"
-verticalAlignment="center"></DatePicker>
-
-</StackLayout>
-
-## 时间选择器 (TimePicker)
-
-TimePicker 组件用于选择时间。它在下方定义：
-
+```xml
 <StackLayout class="m-15" backgroundColor="lightgray">
-<TimePicker hour="8"
-minute="28"
-maxHour="23"
-maxMinute="59"
-minuteInterval="5">
-</TimePicker>
+  <TimePicker hour="8" minute="28" maxHour="23" maxMinute="59" minuteInterval="5"></TimePicker>
 </StackLayout>
+```
 
 ## NativeScript 中的布局容器
 
@@ -757,257 +770,233 @@ NativeScript 提供了一组容器组件，主要用于设置 UI 控件组件。
 
 NativeScript 有六种布局容器，如下所示：
 
-- 绝对布局容器 (AbsoluteLayout)
-- 停靠布局容器 (DockLayout)
-- 网格布局容器 (GridLayout)
-- 堆叠布局容器 (StackLayout)
-- 换行布局容器 (WrapLayout)
-- FlexibleBox 是一种布局容器
+- 绝对布局容器 (`AbsoluteLayout`)
+- 停靠布局容器 (`DockLayout`)
+- 网格布局容器 (`GridLayout`)
+- 堆叠布局容器 (`StackLayout`)
+- 换行布局容器 (`WrapLayout`)
+- 弹性布局容器 (`FlexboxLayout`)
 
 在本次课程中，我们将深入探讨所有布局容器的原理。
 
 ### 绝对布局 (AbsoluteLayout)
 
-AbsoluteLayout 容器是 NativeScript 最基础的布局容器。AbsoluteLayout 对子组件不施加任何限制，并将以左上角为原点的二维坐标系在内部对其进行定位。
+`AbsoluteLayout` 容器是 NativeScript 最基础的布局容器。`AbsoluteLayout` 对子组件不施加任何限制，并将以左上角为原点的二维坐标系在内部对其进行定位。
 
-AbsoluteLayout 使用四个属性对子组件进行定位，具体如下：
+`AbsoluteLayout` 使用四个属性对子组件进行定位，具体如下：
 
 - **top:** 定义子组件在 y 轴方向的位置，从原点开始向下延伸。
 - **left:** 子组件放置在原点的左侧，在 x 轴方向上水平移动。
 - **width:** 定义子组件的宽度。
 - **height:** 定义子组件的高度。
 
-让我们如下所示将 AbsoluteLayout 容器添加到应用程序的主页中：
+让我们如下所示将 `AbsoluteLayout` 容器添加到应用程序的主页中：
 
+```xml
 <ActionBar>
-<Label text="Home"></Label>
+  <Label text="Home"></Label>
 </ActionBar>
-<AbsoluteLayout width="210" height="310"
-backgroundColor="blue">
-<Label text="Top Left" left="0" top="0" width="110"
-height="140" backgroundColor="green">
-</Label>
-<Label text="Top Right" left="100" top="0"
-width="110" height="140" backgroundColor="blue">
-</Label>
-<Label text="Bottom Left" left="0" top="140"
-width="110" height="140" backgroundColor="orange">
-</Label>
-<Label text="Bottom Right" left="110" top="140"
-width="110" height="140" backgroundColor="red">
-</Label>
+<AbsoluteLayout width="210" height="310" backgroundColor="blue">
+  <Label text="Top Left" left="0" top="0" width="110" height="140" backgroundColor="green"></Label>
+  <Label text="Top Right" left="100" top="0" width="110" height="140" backgroundColor="blue"></Label>
+  <Label text="Bottom Left" left="0" top="140" width="110" height="140" backgroundColor="orange"></Label>
+  <Label text="Bottom Right" left="110" top="140" width="110" height="140" backgroundColor="red"></Label>
 </AbsoluteLayout>
+```
 
 ### 停靠布局 (DockLayout)
 
-DockLayout 容器组件允许其子组件在内部停靠。子组件可以停靠在容器的每一侧（顶部、底部、左侧和右侧）。DockLayout 容器通过它们的 dock 属性来相应停靠。
+`DockLayout` 容器组件允许其子组件在内部停靠。子组件可以停靠在容器的每一侧（顶部、底部、左侧和右侧）。`DockLayout` 容器通过它们的 `dock` 属性来相应停靠。
 
-dock 属性可以取以下值：
+`dock` 属性可以取以下值：
 
 - **top:** 将子组件停靠在布局容器的顶部。
 - **bottom:** 将子组件停靠在布局容器的底部。
 - **left:** 将子组件停靠在布局容器的左侧。
 - **right:** 将子组件停靠在布局容器的右侧。
 
-DockLayout 容器默认停靠其最后一个子组件。可以通过设置 `stretchLastChild` 参数为零来覆盖此行为。
+`DockLayout` 容器默认停靠其最后一个子组件。可以通过设置 `stretchLastChild` 参数为零来覆盖此行为。
 
-让我们如下所示将 DockLayout 容器添加到应用程序的主页中：
+让我们如下所示将 `DockLayout` 容器添加到应用程序的主页中：
 
+```xml
 <ActionBar>
-<Label text="Home"></Label>
+  <Label text="Home"></Label>
 </ActionBar>
-<DockLayout width="240" height="310"
-backgroundColor="blue" stretchLastChild="false">
-<Label text="left" dock="left" width="60"
-backgroundColor="green"></Label>
-<Label text="top" dock="top" height="60"
-backgroundColor="orange"></Label>
-<Label text="right" dock="right" width="60"
-backgroundColor="red"></Label>
-<Label text="bottom" dock="bottom" height="60"
-backgroundColor="orange"></Label>
+<DockLayout width="240" height="310" backgroundColor="blue" stretchLastChild="false">
+  <Label text="left" dock="left" width="60" backgroundColor="green"></Label>
+  <Label text="top" dock="top" height="60" backgroundColor="orange"></Label>
+  <Label text="right" dock="right" width="60" backgroundColor="red"></Label>
+  <Label text="bottom" dock="bottom" height="60" backgroundColor="orange"></Label>
 </DockLayout>
+```
 
 ### 网格布局 (GridLayout)
 
-GridLayout 是一种复杂的布局容器，它以行和列的表格形式排列子项目。它默认有一行一列。它具有以下特性：
+`GridLayout` 是一种复杂的布局容器，它以行和列的表格形式排列子项目。它默认有一行一列。它具有以下特性：
 
 1. **columns:** 用于指定每列的默认宽度，用逗号分隔。有三个可能值：数字、`*` 和 `auto` 关键字，其中：
+   - 数字代表列的绝对宽度。
+   - `*` 指定列相对于其他列的宽度。后面可以跟一个数字来指定该列宽度相对于其他列的倍数。例如，`2*` 表示该列宽度应该是最小列宽度的两倍。
+   - `auto` 指定列的宽度与其最宽子组件的宽度相同。
+   例如，`*, 2*` 表示两列，第二列的大小是第一列的两倍。
 
-- 数字代表列的绝对宽度。
-- `*` 指定列相对于其他列的宽度。后面可以跟一个数字来指定该列宽度相对于其他列的倍数。例如，`2*` 表示该列宽度应该是最小列宽度的两倍。
-- `auto` 指定列的宽度与其最宽子组件的宽度相同。
+2. **rows:** 用于指定每行的默认高度，用逗号分隔。`GridLayout` 使用下面列出的属性布局其子组件：
+   - **row:** 行号。
+   - **col:** 列号。
+   - **rowSpan:** 布局跨越的总行数。
+   - **colSpan:** 布局跨越的总列数。
 
-例如，`*, 2*` 表示两列，第二列的大小是第一列的两倍。
+让我们如下所示将 `GridLayout` 容器添加到应用程序的主页中：
 
-2. **rows:** 用于指定每行的默认高度，用逗号分隔。GridLayout 使用下面列出的属性布局其子组件：
-
-- **row:** 行号。
-- **col:** 列号。
-- **rowSpan:** 布局跨越的总行数。
-- **colSpan:** 布局跨越的总列数。
-
-让我们如下所示将 GridLayout 容器添加到应用程序的主页中：
-
+```xml
 <ActionBar>
-<Label text="Home"></Label>
+  <Label text="Home"></Label>
 </ActionBar>
-<GridLayout columns="40, *" rows="40, auto" width="220" height="220"
-backgroundColor="blue">
-<Label text="Top Left" row="0" col="0">
-</Label>
-<Label text="Top Right" row="0" col="1">
-</Label>
-<Label text="Bottom Left" row="1" col="0">
-</Label>
-<Label text="Bottom Right" row="1" col="1">
-</Label>
+<GridLayout columns="40, *" rows="40, auto" width="220" height="220" backgroundColor="blue">
+  <Label text="Top Left" row="0" col="0"></Label>
+  <Label text="Top Right" row="0" col="1"></Label>
+  <Label text="Bottom Left" row="1" col="0"></Label>
+  <Label text="Bottom Right" row="1" col="1"></Label>
 </GridLayout>
+```
 
 ### 堆叠布局 (StackLayout)
 
-StackLayout 将子组件在一个维方向上排列，可以是水平的或垂直的。它可以根据可用空间调整大小。它通过 `orientation` 属性来决定方向是水平还是垂直。
+`StackLayout` 将子组件在一个维方向上排列，可以是水平的或垂直的。它可以根据可用空间调整大小。它通过 `orientation` 属性来决定方向是水平还是垂直。
 
-让我们如下所示将 StackLayout 添加到应用程序的主页中：
+让我们如下所示将 `StackLayout` 添加到应用程序的主页中：
 
+```xml
 <ActionBar>
-<Label text="Home"></Label>
+  <Label text="Home"></Label>
 </ActionBar>
-<StackLayout orientation="vertical" width="210" height="210"
-backgroundColor="blue">
-<Label text="Item 1" width="40" height="40" backgroundColor="green"></Label>
-<Label text="Item 2" width="40" height="40" backgroundColor="orange"></Label>
+<StackLayout orientation="vertical" width="210" height="210" backgroundColor="blue">
+  <Label text="Item 1" width="40" height="40" backgroundColor="green"></Label>
+  <Label text="Item 2" width="40" height="40" backgroundColor="orange"></Label>
 </StackLayout>
+```
 
 ### 换行布局 (WrapLayout)
 
-WrapLayout 是一种用于在换行或新列上换行的布局。它具有以下三个属性：
+`WrapLayout` 是一种用于在换行或新列上换行的布局。它具有以下三个属性：
 
 - **orientation:** 显示水平或垂直方向。
 - **itemWidth:** 指定每个子组件的宽度。
 - **itemHeight:** 指定每个子组件的高度。
 
-让我们如下所示将 WrapLayout 添加到应用程序的主页中：
+让我们如下所示将 `WrapLayout` 添加到应用程序的主页中：
 
+```xml
 <ActionBar>
-<Label text="Home"></Label>
+  <Label text="Home"></Label>
 </ActionBar>
-<WrapLayout orientation="horizontal"
-width="200" height="200"
-backgroundColor="blue">
-<Label text="Item 1" width="70" height="70" backgroundColor="green"></Label>
-<Label text="Item 2" width="70" height="70" backgroundColor="brown"></Label>
-<Label text="Item 3" width="70" height="70" backgroundColor="red"></Label>
-<Label text="Item 4" width="70" height="70" backgroundColor="orange"></Label>
+<WrapLayout orientation="horizontal" width="200" height="200" backgroundColor="blue">
+  <Label text="Item 1" width="70" height="70" backgroundColor="green"></Label>
+  <Label text="Item 2" width="70" height="70" backgroundColor="brown"></Label>
+  <Label text="Item 3" width="70" height="70" backgroundColor="red"></Label>
+  <Label text="Item 4" width="70" height="70" backgroundColor="orange"></Label>
 </WrapLayout>
+```
 
 ### 弹性布局 (FlexboxLayout)
 
-复杂的布局组件之一是 FlexboxLayout 容器组件。它允许我们生成从简单到非常复杂且精细的布局。它是基于 CSS Flexbox 构建的。
+复杂的布局组件之一是 `FlexboxLayout` 容器组件。它允许我们生成从简单到非常复杂且精细的布局。它是基于 CSS Flexbox 构建的。
 
-FlexboxLayout 组件有几个属性，具体如下：
+`FlexboxLayout` 组件有几个属性，具体如下：
 
-1. **flexDirection:** 它指示子组件放置的顺序。以下是 flexDirection 的可能值：
+1. **flexDirection:** 它指示子组件放置的顺序。以下是 `flexDirection` 的可能值：
+   - **row:** 子组件水平向上堆叠。
+   - **row-reverse:** `row-reverse` 将子组件并排排列，但方向相反。
+   - **column:** 子组件垂直向上堆叠。
+   - **column-reverse:** `column-reverse` 以列反方式排列子组件，一个接一个，但方向相反。
 
-- **row:** 子组件水平向上堆叠。
-- **row-reverse:** row-reverse 将子组件并排排列，但方向相反。
-- **column:** 子组件垂直向上堆叠。
-- **column-reverse:** column-reverse 以列反方式排列子组件，一个接一个，但方向相反。
+让我们如下所示将 `FlexboxLayout` 容器添加到应用程序的主页中：
 
-让我们如下所示将 FlexLayout 容器添加到应用程序的主页中：
-
+```xml
 <ActionBar>
-<Label text="Home"></Label>
+  <Label text="Home"></Label>
 </ActionBar>
 <FlexboxLayout flexDirection="row">
-<Label text="First Item"
-backgroundColor="yellow"></Label>
-<Label text="Second Item"
-backgroundColor="red"></Label>
+  <Label text="First Item" backgroundColor="yellow"></Label>
+  <Label text="Second Item" backgroundColor="red"></Label>
+  <Label text="第三项" backgroundColor="green"></Label>
+  <Label text="第四项" backgroundColor="red"></Label>
+  <Label text="第五项" backgroundColor="yellow"></Label>
 </FlexboxLayout>
-
-
-
-
-
-## 40 精通 NativeScript：入门指南
-
-<Label text="第三项" backgroundColor="green"></Label>
-<Label text="第四项" backgroundColor="red"></Label>
-<Label text="第五项" backgroundColor="yellow"></Label>
-</FlexboxLayout>
+```
 
 将 `flexDirection` 值从 `row` 改为 `row-reverse`，并查看它对布局的影响。
 
+```xml
 <ActionBar>
-<Label text="首页"></Label>
+  <Label text="首页"></Label>
 </ActionBar>
-
 <FlexboxLayout flexDirection="row-reverse">
-<Label text="第一项" backgroundColor="yellow"></Label>
-<Label text="第二项" backgroundColor="red"></Label>
-<Label text="第三项" backgroundColor="green"></Label>
-<Label text="第四项" backgroundColor="yellow"></Label>
-<Label text="第五项" backgroundColor="orange"></Label>
+  <Label text="第一项" backgroundColor="yellow"></Label>
+  <Label text="第二项" backgroundColor="red"></Label>
+  <Label text="第三项" backgroundColor="green"></Label>
+  <Label text="第四项" backgroundColor="yellow"></Label>
+  <Label text="第五项" backgroundColor="orange"></Label>
 </FlexboxLayout>
+```
 
 让我们尝试将 `flexDirection` 值从 `row-reverse` 改为 `column`，查看它对布局的影响：
 
+```xml
 <ActionBar>
-<Label text="首页"></Label>
+  <Label text="首页"></Label>
 </ActionBar>
-
 <FlexboxLayout flexDirection="column">
-<Label text="第一项" backgroundColor="green"></Label>
-<Label text="第二项" backgroundColor="red"></Label>
-<Label text="第三项" backgroundColor="yellow"></Label>
-<Label text="第四项" backgroundColor="red"></Label>
-<Label text="第五项" backgroundColor="green"></Label>
+  <Label text="第一项" backgroundColor="green"></Label>
+  <Label text="第二项" backgroundColor="red"></Label>
+  <Label text="第三项" backgroundColor="yellow"></Label>
+  <Label text="第四项" backgroundColor="red"></Label>
+  <Label text="第五项" backgroundColor="green"></Label>
 </FlexboxLayout>
-
-## 41 基础
+```
 
 让我们尝试将 `flexDirection` 值从 `column` 改为 `column-reverse`，查看它对布局的影响：
 
+```xml
 <ActionBar>
-<Label text="首页"></Label>
+  <Label text="首页"></Label>
 </ActionBar>
-
 <FlexboxLayout flexDirection="column-reverse">
-<Label text="第一项" backgroundColor="green"></Label>
-<Label text="第二项" backgroundColor="red"></Label>
-<Label text="第三项" backgroundColor="yellow"></Label>
-<Label text="第四项" backgroundColor="red"></Label>
-<Label text="第五项" backgroundColor="green"></Label>
+  <Label text="第一项" backgroundColor="green"></Label>
+  <Label text="第二项" backgroundColor="red"></Label>
+  <Label text="第三项" backgroundColor="yellow"></Label>
+  <Label text="第四项" backgroundColor="red"></Label>
+  <Label text="第五项" backgroundColor="green"></Label>
 </FlexboxLayout>
+```
 
 2. **flexWrap:** 它指定子组件是在显示在单行/单列中，还是根据 `flexDirection` 指定的方向通过换行流到多行。
 
 以下是可能的取值：
 
-- **wrap:** 如果指定方向上没有可用空间，则换行子组件（flexDirection）。
+- **wrap:** 如果指定方向上没有可用空间，则换行子组件（`flexDirection`）。
 - **wrap-reverse:** 与 `wrap` 相同，但组件流向相反的方向。
 
 添加 `flexWrap` 属性并将其值设置为 `wrap`。此外，如下所示，再添加三个子组件：
 
+```xml
 <ActionBar>
-<Label text="首页"></Label>
+  <Label text="首页"></Label>
 </ActionBar>
-
 <FlexboxLayout flexDirection="row" flexWrap="wrap">
-<Label text="第一项" backgroundColor="green"></Label>
-<Label text="第二项" backgroundColor="red"></Label>
-<Label text="第三项" backgroundColor="yellow"></Label>
-<Label text="第四项" backgroundColor="red"></Label>
-<Label text="第五项" backgroundColor="green"></Label>
-<Label text="第六项" backgroundColor="red"></Label>
-<Label text="第七项" backgroundColor="green"></Label>
-<Label text="第八项" backgroundColor="red"></Label>
+  <Label text="第一项" backgroundColor="green"></Label>
+  <Label text="第二项" backgroundColor="red"></Label>
+  <Label text="第三项" backgroundColor="yellow"></Label>
+  <Label text="第四项" backgroundColor="red"></Label>
+  <Label text="第五项" backgroundColor="green"></Label>
+  <Label text="第六项" backgroundColor="red"></Label>
+  <Label text="第七项" backgroundColor="green"></Label>
+  <Label text="第八项" backgroundColor="red"></Label>
 </FlexboxLayout>
+```
 
-## 42 精通 NativeScript：入门指南
-
-3. **JustifyContent:** 它描述了子组件相对于彼此以及整体结构的放置方式。它有三个属性，列如下：
+3. **justifyContent:** 它描述了子组件相对于彼此以及整体结构的放置方式。它有三个属性，列如下：
 
 - **flex-end:** 它将子组件推到行的末尾。
 - **space-between:** 通过在行内均匀分布子组件来紧凑它们。
@@ -1015,37 +1004,37 @@ backgroundColor="red"></Label>
 
 让我们也包含 `justifyContent` 并观察它的行为：
 
+```xml
 <ActionBar>
-<Label text="首页"></Label>
+  <Label text="首页"></Label>
 </ActionBar>
-
 <FlexboxLayout flexDirection="row" flexWrap="wrap" justifyContent="space-around">
-<Label text="第一项" backgroundColor="green"></Label>
-<Label text="第二项" backgroundColor="red"></Label>
-<Label text="第三项" backgroundColor="green"></Label>
-<Label text="第四项" backgroundColor="yellow"></Label>
-<Label text="第五项" backgroundColor="green"></Label>
-<Label text="第六项" backgroundColor="red"></Label>
-<Label text="第七项" backgroundColor="yellow"></Label>
-<Label text="第八项" backgroundColor="red"></Label>
+  <Label text="第一项" backgroundColor="green"></Label>
+  <Label text="第二项" backgroundColor="red"></Label>
+  <Label text="第三项" backgroundColor="green"></Label>
+  <Label text="第四项" backgroundColor="yellow"></Label>
+  <Label text="第五项" backgroundColor="green"></Label>
+  <Label text="第六项" backgroundColor="red"></Label>
+  <Label text="第七项" backgroundColor="yellow"></Label>
+  <Label text="第八项" backgroundColor="red"></Label>
 </FlexboxLayout>
+```
 
-FlexLayout 容器为其子组件增加了两个新参数来控制顺序和收缩能力。它们的名称是：
+`FlexboxLayout` 容器为其子组件增加了两个新参数来控制顺序和收缩能力。它们的名称是：
 
-- **order:** 它设置 FlexLayout 容器子组件的显示顺序。
+- **order:** 它设置 `FlexboxLayout` 容器子组件的显示顺序。
 - **flexShrink:** 它决定了子组件收缩到 0 级的能力。
 
 在本章中，我们学习了 NativeScript 的介绍、NativeScript 应用是如何制作的、为什么 NativeScript 非常重要以及可以使用 NativeScript 创建什么样的应用。我们还讨论了 NativeScript 的优点、特性和操作。我们还谈到了安装和架构。此外，我们还学习了 NativeScript 中的 Angular 应用。
 
 ![](img/42004012abc3006b81bee3fbecfb4ef0_66_0.png)
 
-## 45 构建你的应用程序
+## 第 2 章 构建你的应用程序
 
 DOI: 10.1201/9781003299394-2
 
-### 第 2 章 构建你的应用程序
+### 本章内容
 
-本章内容：
 - 页面与导航
 - 理解应用布局的基础
 - 使用高级布局
@@ -1065,52 +1054,52 @@ DOI: 10.1201/9781003299394-2
 
 正向导航是指引导进入下一层级。它由两个 NativeScript 组件构建：`Frame` 和 `Page`。例如：
 
+```xml
 <Frame id="featured" defaultPage="featured-page" />
+```
 
 在这里，`Frame` 导航并渲染 `featured-page` 组件。`Page` 组件位于 `Frame` 旁边并作为用户界面 (UI) 组件的容器。一个简单的示例如下：
 
+```xml
 <Page loaded="onLoaded">
-<ActionBar title="项"></ActionBar>
-<AbsoluteLayout>
-<Label text="标签"/>
-<Button text="navigate('another-page')" tap="onTap"/>
-</AbsoluteLayout>
+  <ActionBar title="项"></ActionBar>
+  <AbsoluteLayout>
+    <Label text="标签"/>
+    <Button text="navigate('another-page')" tap="onTap"/>
+  </AbsoluteLayout>
 </Page>
-
-## 46 精通 NativeScript：入门指南
+```
 
 ### 反向导航
 
 在这里，页面加载屏幕的所有 UI 组件。当用户点击按钮时，将被发送另一个页面。要返回上一页，请使用简单的 `goBack()` 函数。它的定义如下：
 
+```xml
 <Page loaded="onPageLoaded">
-<ActionBar title="项"></ActionBar>
-<StackLayout class="home-panel">
-<Button class="btn btn-primary" text="返回" tap="doBack"/>
-</StackLayout>
+  <ActionBar title="项"></ActionBar>
+  <StackLayout class="home-panel">
+    <Button class="btn btn-primary" text="返回" tap="doBack"/>
+  </StackLayout>
 </Page>
+```
 
 在这里，当用户触摸按钮时，将调用 `goBack()` 函数。如果之前的页面可用，`goBack()` 将用户返回那里。
 
 ### 侧向导航
 
-侧向导航是在相同层级之间的移动。它是基于中心（hub）模式的。BottomNavigation、Tabs、TabView、SideDrawer 和 Modal View 是实现它的组件。
+侧向导航是在相同层级之间的移动。它是基于中心（hub）模式的。`BottomNavigation`、`Tabs`、`TabView`、`SideDrawer` 和 `Modal View` 是实现它的组件。
 
 基础示例如下：
 
+```xml
 <Page class="pages" xmlns="http://www.nativescript.org/tns.xsd">
-<ActionBar title="中心"></ActionBar>
-<StackLayout class="home-panel">
-<Button class="btn btn-primary" text="推荐" tap="navigateToFeatured" />
-<Button class="btn btn-primary" text="搜索" tap="navigateToSearch" />
-</StackLayout>
+  <ActionBar title="中心"></ActionBar>
+  <StackLayout class="home-panel">
+    <Button class="btn btn-primary" text="推荐" tap="navigateToFeatured" />
+    <Button class="btn btn-primary" text="搜索" tap="navigateToSearch" />
+  </StackLayout>
 </Page>
-
-
-
-
-
-## 精通 NativeScript：入门指南
+```
 
 此处的 `navigateToFeatured` 函数使用 `navigate()` 方法将访问者引导至精选页面。
 
@@ -1120,7 +1109,7 @@ DOI: 10.1201/9781003299394-2
 
 作为一个示例，请考虑以下内容：
 
-```html
+```xml
 <Page class="page">
   <ActionBar title="Item" class="action-bar">
   </ActionBar>
@@ -1141,14 +1130,12 @@ NativeScript 的导航范式经过扩展，以适应 Angular 的路由理念。`
 
 NativeScript Angular 导航概念可以分为下面列出的部分：
 
-- Page-router-outlet 标签
-- nsRouterLink 属性
-- RouterExtension 类
-- 自定义路由复用策略 (Custom RouterReuseStrategy)
+- `Page-router-outlet` 标签
+- `nsRouterLink` 属性
+- `RouterExtension` 类
+- 自定义路由复用策略 (`Custom RouterReuseStrategy`)
 
 在此部分，我们将介绍上述提到的所有 Angular 导航主题。
-
-### 构建您的应用
 
 ### Page-Router-Outlet
 
@@ -1163,9 +1150,8 @@ NativeScript Angular 导航概念可以分为下面列出的部分：
 
 这里是一个基础的代码示例：
 
-```html
-<Button text="Go Home" [nsRouterLink]="['/home']" pageTransition="slide" clearHistory="true">
-</Button>
+```xml
+<Button text="Go Home" [nsRouterLink]="['/home']" pageTransition="slide" clearHistory="true"></Button>
 ```
 
 ### 路由扩展 (Router Extension)
@@ -1174,12 +1160,12 @@ NativeScript 提供了 `RouterExtensions` 类，它暴露了基础 NativeScript 
 
 `RouterExtensions` 暴露了以下方法：
 
-- back
-- canGoBack
-- navigateByUrl
-- backToPreviousPage
-- navigate
-- canGoBackToPreviousPage
+- `back`
+- `canGoBack`
+- `navigateByUrl`
+- `backToPreviousPage`
+- `navigate`
+- `canGoBackToPreviousPage`
 
 以下是利用 `RouterExtensions` 的简单示例：
 
@@ -1196,7 +1182,7 @@ export class HomeComponent {
 
 ### 自定义路由复用策略
 
-为了支持移动应用的架构，NativeScript 采用了一种定制的路由复用方法 (RouterReuseStrategy)。移动应用与 Web 应用在多个方面有所不同。
+为了支持移动应用的架构，NativeScript 采用了一种定制的路由复用方法 (`RouterReuseStrategy`)。移动应用与 Web 应用在多个方面有所不同。
 
 例如，在 Web 应用中，当用户离开页面时可以删除该页面，并在用户返回页面时重新创建。然而，在移动应用中，页面会被保存并复用。在构建路由概念时考虑了这些想法。
 
@@ -1247,7 +1233,7 @@ export class AppRoutingModule { }
 const Observable = require("nativescript-core/data/observable");
 ```
 
-NativeScript 对象继承自 Observable，因此支持事件。
+NativeScript 对象继承自 `Observable`，因此支持事件。
 
 ### 事件监听器
 
@@ -1266,7 +1252,7 @@ const testButton = new Button();
 testButton.text = "Click";
 ```
 
-- **步骤 3:** 如下所示创建一个名为 onTap 的函数：
+- **步骤 3:** 如下所示创建一个名为 `onTap` 的函数：
 
 ```javascript
 let onTap = function(args) {
@@ -1282,14 +1268,14 @@ testButton.on("tap", onTap);
 
 - **步骤 5:** 通过 UI 如下所示添加事件：
 
-```html
+```xml
 <Button text="click" (tap)="onTap($event)"></Button>
 ```
 
-在这里，$event 是 EventData 类型。在这种情况下，EventData 有两个属性：
+在这里，`$event` 是 `EventData` 类型。在这种情况下，`EventData` 有两个属性：
 
-- **对象 (Object):** 用于触发事件的 Observable 实例。在这种情况下是 Button 对象。
-- **事件名称 (EventName):** 这是事件的名称。在这种情况下是 tap 事件。
+- **对象 (Object):** 用于触发事件的 `Observable` 实例。在这种情况下是 `Button` 对象。
+- **事件名称 (EventName):** 这是事件的名称。在这种情况下是 `tap` 事件。
 
 - **步骤 6:** 最后，如下所示可以在任何时候卸载事件监听器：
 
@@ -1307,21 +1293,19 @@ testButton.removeEventListener("tap");
 
 让我们通过修改 BlankApp，以更好地理解 NativeScript 事件。
 
-- **步骤 1:** 打开主组件的 UI，src/app/home/component.html，添加以下代码：
+- **步骤 1:** 打开主组件的 UI，`src/app/home/component.html`，添加以下代码：
 
-```html
+```xml
 <ActionBar>
   <Label text="Home"></Label>
 </ActionBar>
 <StackLayout>
-  <Button text='Fire event' class="-primary" color='white' (tap)='onTap($event)'>
+  <Button text='Fire event' class="-primary" color='white' (tap)='onButtonTap($event)'>
   </Button>
 </StackLayout>
 ```
 
-在这里，tap 代表事件，Button 代表触发者。
-
-事件监听器是 onButtonTap。
+在这里，`tap` 代表事件，`Button` 代表触发者。事件监听器是 `onButtonTap`。
 
 - **步骤 2:** 打开主组件的代码，“src/app/home/home.component.ts”，编辑下面的代码：
 
@@ -1340,7 +1324,7 @@ export class HomeComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    // 在处初始化您的组件属性。
+    // 在此处初始化您的组件属性。
   }
 
   onButtonTap(args: EventData): void {
@@ -1351,12 +1335,6 @@ export class HomeComponent implements OnInit {
 }
 ```
 
-
-
-
-
-## 精通 NativeScript：入门指南
-
 - **步骤 3：** 启动应用并点击按钮。控制台将输出以下行：
 
 ```
@@ -1364,7 +1342,7 @@ LOG from device <device name>: tap
 LOG from device <device name>: Fire an event
 ```
 
-NativeScript 中的数据绑定
+## NativeScript 中的数据绑定
 
 NativeScript 提供的高级概念之一是数据绑定。NativeScript 尽可能地遵循 Angular 的数据绑定理念。数据绑定允许 UI 组件在不需要脚本的情况下显示/更新应用程序数据模型的当前值。NativeScript 支持两种数据绑定类型，列如下：
 
@@ -1377,15 +1355,15 @@ NativeScript 提供的高级概念之一是数据绑定。NativeScript 尽可能
 
 为了在 UI 组件中实现单向数据绑定，NativeScript 提供了一个简单的选项。要启用单向绑定，只需在目标 UI 的属性中包含一个方括号 `[]`，然后将其分配相关模型的属性。
 
-例如，要编辑 Label 组件的文本内容，只需按如下所示修改 UI 代码：
+例如，要编辑 `Label` 组件的文本内容，只需按如下所示修改 UI 代码：
 
-```html
+```xml
 <Label [text]='this.model.prop' />
 ```
 
 在这里，“this.model.prop” 指的是模型的属性 `this.model`。让我们修改 BlankNgApp 以更好地理解单向数据绑定。
 
-- **步骤 1：** 创建一个新的模型 User (src/model/user.ts)，如下所示：
+- **步骤 1：** 创建一个新的模型 User (`src/model/user.ts`)，如下所示：
 
 ```typescript
 export class User {
@@ -1395,22 +1373,17 @@ export class User {
 
 - **步骤 2：** 打开组件的 UI 文件 `src/app/home/home.component.html`，并对代码进行以下更改：
 
-```html
+```xml
 <ActionBar>
   <Label text="Home"></Label>
 </ActionBar>
 <GridLayout columns="*" rows="auto, auto, auto">
-  <Button text="Click-here to greet" class="-primary" color='gray'
-    (tap)='onButtonTap($event)' row='1' column='0'>
-  </Button>
-  <Label [text]='this.user.name' row='2' column='0'
-    height="40px" textAlignment='center'
-    style='font-size: 15px; font-weight: bold; margin: 0px 32px 025px;'>
-  </Label>
+  <Button text="Click-here to greet" class="-primary" color='gray' (tap)='onButtonTap($event)' row='1' column='0'></Button>
+  <Label [text]='this.user.name' row='2' column='0' height="40px" textAlignment='center' style='font-size: 15px; font-weight: bold; margin: 0px 32px 025px;'></Label>
 </GridLayout>
 ```
 
-在这里，Label 的文本被设置为用户模型中的属性名。`onButtonTap` 方法与按钮点击事件相关。
+在这里，`Label` 的文本被设置为用户模型中的属性名。`onButtonTap` 方法与按钮点击事件相关。
 
 - **步骤 3：** 打开首页组件的代码 `src/app/home/home.component.ts`，并进行下所示更改：
 
@@ -1432,7 +1405,7 @@ export class HomeComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    // 在处初始化组件属性。
+    // 在此处初始化组件属性。
   }
 
   onButtonTap(args: EventData) {
@@ -1449,13 +1422,13 @@ export class HomeComponent implements OnInit {
 
 对于复杂的功能，NativeScript 还支持双向绑定。它将模型数据绑定到 UI，并将 UI 中更改的数据绑定到模型。要实现双向绑定，利用 `ngModel` 属性并用 `[]` 和 `()` 包围它，如下：
 
-```html
+```xml
 <TextField [(ngModel)] = 'this.user.name'></TextField>
 ```
 
 为了进一步理解双向绑定，让我们修改 BlankNgApp 应用。
 
-- **步骤 1：** 在 HomeModule (src/app/home/home.module.ts) 中导入 `NativeScriptFormsModule`，如下所示：
+- **步骤 1：** 在 HomeModule (`src/app/home/home.module.ts`) 中导入 `NativeScriptFormsModule`，如下所示：
 
 ```typescript
 import { NgModule, NO_ERRORS_SCHEMA } from "@angular/core";
@@ -1484,34 +1457,27 @@ export class HomeModule { }
 
 - **步骤 2：** 如下所示修改首页组件的 UI：
 
-```html
+```xml
 <ActionBar>
   <Label text="Home"></Label>
 </ActionBar>
 <GridLayout columns="*" rows="auto, auto">
-  <TextField hint="Username" row='0' column='0'
-    color="white" backgroundColor="lightyellow" height="74px"
-    [(ngModel)]='this.user.name'>
-  </TextField>
-  <Label [text]='this.user.name' row='1' column='0'
-    height="40px" textAlignment='center' style='font-size: 14px; font-weight: bold; margin: 0px 32px 25px;'>
-  </Label>
+  <TextField hint="Username" row='0' column='0' color="white" backgroundColor="lightyellow" height="74px" [(ngModel)]='this.user.name'></TextField>
+  <Label [text]='this.user.name' row='1' column='0' height="40px" textAlignment='center' style='font-size: 14px; font-weight: bold; margin: 0px 32px 25px;'></Label>
 </GridLayout>
 ```
 
-在这里，Label 组件的文本属性被设置为用户模型的属性名。（注：原文中存在大量重复描述，已根据可读性要求进行了清理）。
+在这里，`Label` 组件的文本属性被设置为用户模型的属性名。
 
 - **步骤 3：** 启动应用并点击按钮更改模型，Label 文本将自动更改。应用的初始和最终状态也会发生变化。
 
-## 精通 NativeScript：入门指南
-
-### NativeScript 
+## NativeScript 的模块
 
 NativeScript 模块是封装成单个库的功能集合。让我们来看看主要模块。
 
 ### Application
 
-application 包含特定平台的功能。下方定义了一个基础模块：
+`application` 包含特定平台的功能。下方定义了一个基础模块：
 
 ```javascript
 const applicationModule = require("tns-core-modules/application");
@@ -1519,9 +1485,9 @@ const applicationModule = require("tns-core-modules/application");
 
 ### Console
 
-使用 Console 模块进行日志记录。它使用了以下方法：
+使用 `Console` 模块进行日志记录。它使用了以下方法：
 
-```
+```javascript
 console.log("My FirstApp");
 console.info("Native apps!");
 console.warn("Warning message!");
@@ -1530,7 +1496,9 @@ console.error("Exception occurred");
 
 ### Application-settings
 
-application-settings 模块提供了管理设置的方法。要包含此模块，我们必须包含以下代码：
+`application-settings` 模块提供了管理设置的方法。要包含此模块，我们必须包含以下代码：
+
+
 
 ```javascript
 const appSettings = require("tns-core-modules/application");
@@ -1538,13 +1506,13 @@ const appSettings = require("tns-core-modules/application");
 
 以下是可以使用的一些技术：
 
-- **setBoolean(key: string, value: boolean):** 创建一个布尔对象。
-- **setNumber(key: string, value: number):** 创建一个数字对象。
-- **setString(key: string, value: string):** 创建一个字符串对象。
-- **getAllKeys():** 返回所有已保存键的列表。
-- **hasKey(key: string):** 判断键是否存在。
-- **clear():** 移除之前保存的值。
-- **remove(key: string):** 根据键删除任何条目。
+- `setBoolean(key: string, value: boolean)`: 创建一个布尔对象。
+- `setNumber(key: string, value: number)`: 创建一个数字对象。
+- `setString(key: string, value: string)`: 创建一个字符串对象。
+- `getAllKeys()`: 返回所有已保存键的列表。
+- `hasKey(key: string)`: 判断键是否存在。
+- `clear()`: 移除之前保存的值。
+- `remove(key: string)`: 根据键删除任何条目。
 
 以下应用设置的简单示例：
 
@@ -1572,7 +1540,7 @@ function onClear() {
 }
 ```
 
-### http
+## http
 
 此模块处理 http 请求和响应。向我们的应用添加以下代码以包含此模块：
 
@@ -1580,7 +1548,7 @@ function onClear() {
 const httpModule = require("tns-core-modules/http");
 ```
 
-- **getString:** 该方法用于执行请求并从 URL 下载字符串数据。它在下方处定义：
+- `getString`: 该方法用于执行请求并从 URL 下载字符串数据。它在下方处定义：
 
 ```javascript
 httpModule.getString("https://.../get").then(
@@ -1589,13 +1557,9 @@ httpModule.getString("https://.../get").then(
   }, (e) =>
 ```
 
-
-
-
-
 ## 掌握 NativeScript：初学者指南
 
-- **getJSON:** 用于访问 JSON 数据。在下文中有定义：
+- `getJSON`: 用于访问 JSON 数据。在下文中有定义：
 
 ```javascript
 httpModule.getJSON("https://.../get").then((r) => {
@@ -1605,7 +1569,7 @@ httpModule.getJSON("https://.../get").then((r) => {
 });
 ```
 
-- **getImage:** 下载指定 URL 的内容并返回 `ImageSource` 对象。在下文中有定义：
+- `getImage`: 下载指定 URL 的内容并返回 `ImageSource` 对象。在下文中有定义：
 
 ```javascript
 httpModule.getImage("https://.../image/jpeg")
@@ -1616,9 +1580,9 @@ httpModule.getImage("https://.../image/jpeg")
 });
 ```
 
-- **getFile:** 接收两个参数：URL 和文件位置。
-- **URL:** 下载的数据。
-- **File path:** 使用文件路径将 URL 数据保存到文件中。定义如下：
+- `getFile`: 接收两个参数：URL 和文件位置。
+- `URL`: 下载的数据。
+- `File path`: 使用文件路径将 URL 数据保存到文件中。定义如下：
 
 ```javascript
 httpModule.getFile("https://").then((resultFile)
@@ -1629,7 +1593,7 @@ httpModule.getFile("https://").then((resultFile)
 });
 ```
 
-- **request:** 它有一个可选项参数。其目的是请求请求选项并提供一个 `HttpResponse` 对象。定义如下：
+- `request`: 它有一个可选项参数。其目的是请求请求选项并提供一个 `HttpResponse` 对象。定义如下：
 
 ```javascript
 httpModule.request({
@@ -1688,8 +1652,8 @@ const timerModule = require("tns-core-modules/timer");
 
 它基于两种方法。
 
-- **setTimeout:** 此函数用于推迟执行。以毫秒为单位。
-- **setInterval:** 此方法用于按预定义的间隔重复执行。
+- `setTimeout`: 此函数用于推迟执行。以毫秒为单位。
+- `setInterval`: 此方法用于按预定义的间隔重复执行。
 
 ### Trace
 
@@ -1725,25 +1689,25 @@ const connectivityModule = require("tns-core-modules/connectivity");
 
 功能模块中包含了许多特定于系统/平台的模块。以下是一些核心模块：
 
-- **platform:** 平台用于显示有关我们设备的信息。定义如下：
+- `platform`: 平台用于显示有关我们设备的信息。定义如下：
 
 ```javascript
 const platformModule = require("tns-core-modules/platform");
 ```
 
-- **fps-meter:** 一个测量每秒帧数的工具。定义如下：
+- `fps-meter`: 一个测量每秒帧数的工具。定义如下：
 
 ```javascript
 const fpsMeter = require("tns-core-modules/fps-meter");
 ```
 
-- **file-system:** 此函数用于与我们设备的文件系统交互。下文中有定义：
+- `file-system`: 此函数用于与我们设备的文件系统交互。下文中有定义：
 
 ```javascript
 const fileSystemModule = require("tns-core-modules/file-system");
 ```
 
-- **ui/gestures:** 用于处理 UI 手势。
+- `ui/gestures`: 用于处理 UI 手势。
 
 ### UI 模块单元
 
@@ -1763,11 +1727,11 @@ npm 包用于为项目提供原生功能。我们可以使用此包来安装、�
 
 **命令：**
 
-- **add:** 用于安装插件。
-- **update:** 此函数更新给插件并修改其依赖项。
-- **remove:** 卸载插件。
-- **build:** 此命令用于为 iOS 或 Android 项目创建插件。
-- **create:** 此命令为你的项目生成插件。
+- `add`: 用于安装插件。
+- `update`: 此函数更新给插件并修改其依赖项。
+- `remove`: 卸载插件。
+- `build`: 此命令用于为 iOS 或 Android 项目创建插件。
+- `create`: 此命令为你的项目生成插件。
 
 ### 添加插件
 
@@ -1850,7 +1814,7 @@ tns plugin create <Plugin Repository Name> [--path <Directory>]
 
 ## 使用 JavaScript 使用原生 API
 
-本节提供了如何使用 JavaScript  API 的概述。
+本节提供了如何使用 JavaScript API 的概述。
 
 ### 封送 (Marshaling)
 
@@ -1891,16 +1855,13 @@ var obj = new Demo();
 obj.maxMethod(6,9);
 ```
 
-
-
-
 构建您的应用 67
 
 ## 字符串 (Strings)
 
 Android 的字符串定义在 `java.lang.String` 中，而 iOS 的字符串指定在 `NSString` 中。让我们如何在两个平台上进行封送（marshal）。
 
-### *Android*
+### Android
 
 字符串是不可变的；然而，String 缓冲区可以处理可变的字符串。下面的代码显示了一个基础映射的示例：
 
@@ -1952,7 +1913,7 @@ JavaScript 字符串可以简单映射到 `NSString`。
 
 本节描述了如何实现数组封送。让我们从 iOS 生态系统的示例开始。
 
-### *数组的声明*
+### 数组的声明
 
 ```objc
 class NSArray : NSObject
@@ -1960,7 +1921,7 @@ class NSArray : NSObject
 
 在这种情况下，`NSArray` 被用于处理称为数组的有序对象集合。它用于创建静态数组。`NSMutableArray` 是其子类，用于构建动态数组。
 
-考虑以下内容：`NSArray` 对象可以使用数组字字量构建：
+考虑以下内容：`NSArray` 对象可以使用数组字面量构建：
 
 ```javascript
 let array: NSArray = ["React","Vue","TypeScript"]
@@ -1980,7 +1941,7 @@ let compare = nsArr.isEqual(jsArr);
 console.log(compare);
 ```
 
-### *Android 中的数组声明*
+### Android 中的数组声明
 
 Java 中的数组定义在 `java.util.Arrays` 中。该类提供了不同的数组操作方法。下面是一个示例：
 
@@ -1997,11 +1958,11 @@ console.log(result);
 
 面向对象编程的核心思想是类和对象。类是用户定义的原型。对象是类的实例。类是所有同类对象共有的属性或方法的集合。让我们两个移动开发环境中的原生类和对象。
 
-### *Android 环境*
+### Android 环境
 
 整个包名作为 Java 和 Kotlin 类的唯一标识。例如：
 
-**android.view.View:** 这是一个用于屏幕布局和用户交互的简单 UI 类。可以使用 JavaScript 访问此类，如下所示：
+`android.view.View`: 这是一个用于屏幕布局和用户交互的简单 UI 类。可以使用 JavaScript 访问此类，如下所示：
 
 ```javascript
 const View = android.view.View;
@@ -2032,7 +1993,7 @@ const myview = new android.view.View(context);
 
 同样，在 `java.lang` 包中，我们可以访问接口、常量和枚举。
 
-### *iOS 环境*
+### iOS 环境
 
 Objective-C 中的类分为两个部分：`@interface` 和 `@implementation`。`@interface` 术语后面是类规范中的接口（类）名称。Objective-C 中的所有类都派生自基础类 `NSObject`。
 
@@ -2085,7 +2046,7 @@ var obj = MyClass.new();
 
 SideKick 是一个与所有操作系统工作的图形化 UI 客户端。它简化了 NativeScript CLI 流程并有助于移动应用的开发。
 
-### *将我们的 Sidekick 应用发布到 Google Play 控制台*
+### 将我们的 Sidekick 应用发布到 Google Play 控制台
 
 SideKick 简化了 NativeScript CLI 流程并有助于移动应用的开发。
 
@@ -2100,7 +2061,7 @@ Sidekick 的下载和安装依赖于我们的操作系统。为了在 Google Pla
 - **Step 7: 应用包**
 - **Step 8: 发布到 Google Play**
 
-### *发布我们的应用到 Google Play*
+### 发布我们的应用到 Google Play
 
 在 Google Play 上发布应用之前，我们必须先完成以下操作：
 
@@ -2110,10 +2071,6 @@ Sidekick 的下载和安装依赖于我们的操作系统。为了在 Google Pla
 ### 发布的应用的程序
 
 以下方法将帮助我们理解如何在 Google Play 商店发布我们的应用。
-
-
-
-
 
 # 我们的第一个应用
 
@@ -2197,7 +2154,6 @@ application.start({ moduleName: "notes-page" });
       </ActionItem>
     </ActionBar.actionItems>
   </ActionBar>
-  </Page.actionBar>
   <StackLayout>
     <StackLayout id="form" class="form-container">
       <TextView text="{{ item_title }}" hint="Title" />
@@ -2218,19 +2174,7 @@ application.start({ moduleName: "notes-page" });
 </Page>
 ```
 
-
-
-
-
 ## 精通 NativeScript：入门指南
-
-</StackLayout>
-
-</ActionItem.actionView>
-
-</ActionItem>
-
-</ActionBar.actionItems>
 
 实际页面内容随其后。我们可以通过使用一个或多个布局容器来组织各种元素。在下面的示例中，我们使用了两种可能的布局方式：StackLayout 和 GridLayout。
 
@@ -2293,12 +2237,6 @@ StackLayout 允许我们将包含在内部的所有组件堆叠在一起。此�
 
 同样注意 `horizontalAlignment` 和 `verticalAlignment` 的使用。将其视为 NativeScript 中 HTML `text-align` 属性的对应物。我们对齐的是 UI 组件而不是文本。`verticalAlignment` 可以设置为 `top`、`bottom`、`center` 或 `stretch`，而 `horizontalAlignment` 可以设置为 `right`、`left`、`center` 或 `stretch`。它们大多数是自言自懂的，除了 `stretch`，它会扩展以占据可用的水平或垂直空间。
 
-## 构建结构你的 App
-
-`ListView` 没有 `itemTap` 属性。相反，我们想添加一个删除操作，每当列表项被触摸时，都会通过删除按钮执行删除。每个项都有一个 `index` 属性，我们将其自定义属性传递给删除按钮。这是用于识别和引用每个对象的唯一键。
-
-同样注意 `horizontalAlignment` 和 `verticalAlignment` 的使用。将其视为 NativeScript 中 HTML `text-align` 属性的对应物。我们对齐的是 UI 组件而不是文本。`verticalAlignment` 可以设置为 `top`、`bottom`、`center` 或 `stretch`，而 `horizontalAlignment` 可以设置为 `right`、`left`、`center` 或 `stretch`。它们大多数是自言自懂的，除了 `stretch`，它会扩展以占据可用的水平或垂直空间。
-
 `horizontalAlignment` 和 `verticalAlignment` 在此场景中用于将图像在其列中水平和垂直方向上居中。
 
 在删除按钮上，`horizontalAlignment` 用于将其对齐到第二列的最右侧区域。
@@ -2307,12 +2245,12 @@ StackLayout 允许我们将包含在内部的所有组件堆叠在一起。此�
 
 首先，我们引入 `data/observable` 和 `observable-array`。这些是 NativeScript 内置模块，允许我们构建对象和数组。
 
-- **camera**: 用于设备
-- **view**: 用于页面
-- **enums**: 全局常量值
-- **animation**: 用于动画
-- **application-settings**: 用于存储数据
-- **file-system**: 用于
+- `camera`: 用于设备
+- `view`: 用于页面
+- `enums`: 全局常量值
+- `animation`: 用于动画
+- `application-settings`: 用于存储数据
+- `file-system`: 用于
 
 ### 初始化
 
@@ -2376,9 +2314,6 @@ if(!notes){
 }
 ```
 
-
-
-
 构建你的应用 83
 
 ```javascript
@@ -2410,9 +2345,11 @@ if(!pageArray.length){
 
 现在我们已经添加了笔记数据，可以通过更新项的 `title` 属性为我们之前从应用设置中获取的值，来更改页面标题。然后，将 `pageData` 绑定到页面，这样在我们设置任何更改时，都能自动更改 UI。
 
+```javascript
 pageData.set('item_title', new_note_title);
 
 args.object.bindingContext = pageData;
+```
 
 为创建笔记的表单添加动画。我们通过在视图中调用 `getViewById` 方法，并将上下文（当前页面）作为第一个参数以及与我们想要更改的元素相关的 `id` 属性来实现。
 
@@ -2427,7 +2364,7 @@ view.getViewById(page, 'form').animate({
 
 84 精通 NativeScript：入门指南
 
-### *newNote() 函数*
+### newNote() 函数
 
 当用户点击页头中的“新建项目”操作项时，会调用 `newNote()` 方法。根据 `showForm` 的当前值，它将隐藏或显示新项目的 `ListView`，并向上或向下滑动表单。
 
@@ -2450,7 +2387,7 @@ exports.newNote = function() {
 }
 ```
 
-### *btnLoaded() 函数*
+### btnLoaded() 函数
 
 在 `notes-page.xml` 文件中，我们为删除笔记的按钮有一个 `loaded` 属性。这是在事件发生时调用的函数。当 `ListView` 项目内部创建按钮时，与 `ListView` 的 `itemTap` 属性关联的函数默认不会运行。这是因为 NativeScript 期望这些按钮只能触发每个列表项的操作。
 
@@ -2465,7 +2402,7 @@ exports.btnLoaded = function (args) {
 
 85 构建你的应用
 
-### *openCamera() 函数*
+### openCamera() 函数
 
 下一个函数是 `openCamera()`，它在用户按下“附加图像”按钮时调用。由于在使用摄像头模块时不会保留当前状态，我们必须首先在应用设置中存储新笔记的标题。
 
@@ -2483,7 +2420,7 @@ exports.openCamera = function() {
 }
 ```
 
-### *saveNote() 函数*
+### saveNote() 函数
 
 当用户按下“保存”按钮时，会调用 `saveNote()` 方法。它检索笔记文本和图像路径的当前值，增加 `current_index`，并将新项插入到笔记和观察数组中。然后，它将当前笔记和 `current_index` 存储到应用设置中，移除应用设置中的值，调整 UI 以隐藏表单（或显示列表）。
 
@@ -2497,9 +2434,6 @@ exports.saveNote = function() {
   appSettings.setInt('current_index', current_index);
 }
 ```
-
-
-
 
 ### 构建你的应用结构
 
@@ -2553,7 +2487,7 @@ GridLayout 是一种生成列和行的布局，额外的视图可以位于其中
 </GridLayout>
 ```
 
-GridLayout 的一个核心功能是可以将视图堆叠在一起。。我们的图片将显示在 StackLayout 之后，作为背景图片。我们将 `rowSpan` 设置为 3，因为我们希望它出现在所有内容之下。我们将 `iosOverflowSafeArea` 设置为 `true`，以便它出现在刘海（notch）和状态栏下方。
+GridLayout 的一个核心功能是可以将视图堆叠在一起。我们的图片将显示在 StackLayout 之后，作为背景图片。我们将 `rowSpan` 设置为 3，因为我们希望它出现在所有内容之下。我们将 `iosOverflowSafeArea` 设置为 `true`，以便它出现在刘海（notch）和状态栏下方。
 
 请记住，第一行现在填充了整个屏幕。由于后续行没有添加任何新内容，因为它们被设置为 `auto`，它们的测量高度为 0，而 `*` 行占据了所有可用空间（在本例中即是整个屏幕）。
 
@@ -2634,10 +2568,6 @@ ScrollView 不是一个布局，但它是我们经常使用的一个视图。为
 ```
 
 （注：原文中存在大量代码块和描述的重复，翻译已严格遵循原文行对应关系。）
-
-
-
-
 
 **94 掌握 NativeScript：学者指南**
 
@@ -2735,7 +2665,7 @@ ScrollView 不是一个布局，但它是我们经常使用的一个视图。为
 
 | 属性 | 说明 |
 | :--- | :--- |
-| Dock | 明子元素在 DockLayout 中的停齐位置。可能的值有 left、top、right、bottom。 |
+| Dock | 指定子元素在 DockLayout 中的停齐位置。可能的值有 left、top、right、bottom。 |
 
 **stretchChild="false" 示例：**
 
@@ -2771,10 +2701,6 @@ ScrollView 不是一个布局，但它是我们经常使用的一个视图。为
 | :--- | :--- |
 | Columns | 逗号分隔的文本值指示列宽。列宽可以指定精确数字、自动值或 `*`。数字表示绝对列宽，auto 使列宽等于最宽子元素的宽度，`*` 使列占据所有可用水平空间。 |
 | Rows | 逗号分隔的字符串值表示行高。行高可以指定绝对数字、自动值或 `*`。数字表示绝对行高，auto 使行高等于最高子元素的高度，`*` 使行占据所有可用垂直空间。 |
-
-
-
-
 
 ## 结构化您的应用程序
 
@@ -2846,6 +2772,8 @@ Label 3 设置了 150 像素的宽度，作为列拉伸的示例。因为 Label 
 ```
 
 复杂结构示例：图像设置了 72 像素的宽度和高度，并跨越了两行。第一个 Label 通过设置 `colSpan="2"` 获得了额外的空间。因为第四个 Label 扩展了自动列，所以第三个 Label 获得的空间比要求的更多。
+
+
 
 ```xml
 <Page xmlns="http://schemas.nativescript.org/tns.xsd">
@@ -2970,10 +2898,6 @@ orientation="vertical" 的示例：
 </Page>
 ```
 
-
-
-
-
 ## 构建您的应用结构 **105**
 
 ### FlexboxLayout
@@ -3003,6 +2927,7 @@ FlexboxLayout 是一种非标准的 CSS 弹性盒布局实现，它基于 github
 - flexWrapBefore: 获取或设置控制项目换行的布尔值。当我们在 flexbox 项目上将其设置为 true 时，它将强制其换行到新行。默认值为 false。此属性未包含在 flexbox 定义中。
 
 **FlexDirection = "row" 且 alignItems = "stretch"（默认）示例：**
+
 ```xml
 <Page xmlns="schemas.nativescript.org/tns.xsd">
   <FlexboxLayout width="250" height="250" backgroundColor="gray">
@@ -3015,6 +2940,7 @@ FlexboxLayout 是一种非标准的 CSS 弹性盒布局实现，它基于 github
 ```
 
 **FlexDirection = "column" 且 alignItems = "stretch"（默认）示例：**
+
 ```xml
 <Page xmlns="schemas.nativescript.org/tns.xsd">
   <FlexboxLayout width="250" height="250" backgroundColor="gray">
@@ -3027,6 +2953,7 @@ FlexboxLayout 是一种非标准的 CSS 弹性盒布局实现，它基于 github
 ```
 
 **FlexDirection = "row" 且 alignItems = "flex-start" 示例：**
+
 ```xml
 <Page xmlns="schemas.nativescript.org/tns.xsd">
   <FlexboxLayout flexDirection="row" alignItems="flex-start" width="250" height="250" backgroundColor="gray">
@@ -3039,6 +2966,7 @@ FlexboxLayout 是一种非标准的 CSS 弹性盒布局实现，它基于 github
 ```
 
 **FlexDirection = "row" 且有自定义 order 示例：**
+
 ```xml
 <Page xmlns="schemas.nativescript.org/tns.xsd">
   <FlexboxLayout flexDirection="row" alignItems="flex-start" width="250" height="250" backgroundColor="gray">
@@ -3051,6 +2979,7 @@ FlexboxLayout 是一种非标准的 CSS 弹性盒布局实现，它基于 github
 ```
 
 **flexWrap = "wrap" 示例：**
+
 ```xml
 <Page xmlns="schemas.nativescript.org/tns.xsd">
   <FlexboxLayout flexWrap="wrap" width="250" height="250" backgroundColor="gray">
@@ -3063,6 +2992,7 @@ FlexboxLayout 是一种非标准的 CSS 弹性盒布局实现，它基于 github
 ```
 
 **FlexDirection = "column-reverse", justifyContent = "space-around" 和 alignItems = "stretch" 示例：**
+
 ```xml
 <Page xmlns="schemas.nativescript.org/tns.xsd">
   <FlexboxLayout flexDirection="column-reverse" justifyContent="space-around" alignItems="stretch" width="300" height="300" backgroundColor="white">
@@ -3073,10 +3003,6 @@ FlexboxLayout 是一种非标准的 CSS 弹性盒布局实现，它基于 github
   </FlexboxLayout>
 </Page>
 ```
-
-
-
-
 
 ![](img/42004012abc3006b81bee3fbecfb4ef0_132_0.png)
 
@@ -3091,9 +3017,13 @@ DOI: 10.1201/9781003299394-3
 在本章中
 
 - ➢ 处理数据
+
 - ➢ 原生硬件
+
 - ➢ 部署 Android 应用
+
 - ➢ 准备用于分发的 iOS 应用
+
 - ➢ iOS 安全以及使用 Xcode 构建我们的应用
 
 在上一章中，我们讨论了应用的结构，包括导航页面和应用的布局。本章将讨论处理数据、原生硬件、增强用户体验、部署 Android 应用以及准备 iOS 应用。
@@ -3103,12 +3033,19 @@ DOI: 10.1201/9781003299394-3
 本节节包含了将使用 NativeScript 构建的应用提交到 iOS App Store 和 Google Play 的分步指南。
 
 - **步骤 1：** 设计我们的应用图标。
+
 - **步骤 2：** 创建我们的启动页（Splash screens）。
+
 - **步骤 3：** 设置我们的元数据。
+
 - **步骤 4（可选）：** 安装 Webpack。
+
 - **步骤 5：** 创建 Android 发布版本构建。
+
 - **步骤 6：** Google Play。
+
 - **步骤 7：** 创建 iOS 发布版本构建。
+
 - **步骤 8：** 连接到 iTunes。
 
 ### 步骤 1：设计我们的应用图标
@@ -3191,10 +3128,6 @@ Android 图标的背景通常是半透明的。
 
 要在 iOS 上更改该值，进入我们应用的 `app/App Resources/iOS/Info.plist` 文件。
 
-
-
-
-
 ## 116 精通 NativeScript：入门指南
 
 有一点需要牢记：虽然显示名称没有真正的字符限制，但 iOS 和 Android 都会在约 10–12 个字符后对其进行截断。例如，当我尝试使用“Pokémon Types”作为我应用程序的显示名称时，我们得到了被截断的显示。
@@ -3219,7 +3152,7 @@ Android 图标的背景通常是半透明的。
 
 我们可能会在应用的 `app/App Resources/iOS/Info.plist` 文件中更改额外的设置，例如我们应用支持的屏幕方向。
 
-在 Android 上，额外的配置变量可以在 `app/App Resources/Android/AndroidManifest.xml` 文件中找到。需要查看的一是我们目前正在请求的权限，以及这些权限是否与我们应用的状态同步。
+在 Android 上，额外的配置变量可以在 `app/App Resources/Android/AndroidManifest.xml` 文件中找到。需要查看的一是我们目前正在请请求的权限，以及这些权限是否与我们应用的状态同步。
 
 最后，我们的 `Info.plist` 和 `AndroidManifest.xml` 文件包含了应用的版本号，NativeScript 默认将其设为 1.0。如果我们想修改这些设置，或者在应用更新时需要更新它们，请参阅此处关于 iOS 以及此处关于 Android 的 NativeScript 版本控制说明。
 
@@ -3250,6 +3183,7 @@ NativeScript 的源代码包含 JavaScript，就像网页上的 JavaScript 代�
 我们在 NativeScript 开发期间一直使用的 `tns run` 命令为我们创建一个 .apk 文件并将其下载到 Android 模拟器或设备上。然而，真正的 Google Play 发布所需的构建还必须经过代码签名。如果我们想深入了解加密的细节，可以参考 Android 的代码签名说明，但在构建 Android 应用的发布版本之前，我们需要完成两件事：
 
 - 创建一个扩展名为 .keystore 或 .jks（Java 密钥库）的文件。
+
 - 在构建期间，使用该 .keystore 或 .jks 文件对我们的程序进行签名。
 
 Android 手册为创建密钥库文件提供了几种替代方案。我们喜欢的方法是使用 `keytool` 命令行软件，它包含在 NativeScript 基于的 Java JDK 中，并且在我们的开发机器的命令行中可用。
@@ -3285,10 +3219,6 @@ Google Play 是 Android 用户查找和安装应用的地方，而 Google Play D
 使用 `tns run android` 命令，我们可以在 Android 虚拟设备 (AVD) 中启动你的程序。AVD 提供了内置截图方法，可以通过模拟器侧边栏的小相机图标访问。
 
 使用此按钮拍摄我们应用最核心屏幕的几张截图，图像文件将显示在我们的桌面上。然后我们可以直接将这些文件提交到 Google Play Developer Console。尽管如此，我们更倾向于使用 DaVinci 这样的服务为我们的截图增添一些色彩。
-
-
-
-
 
 ## 120 精通 NativeScript：入门指南
 
@@ -3334,7 +3264,7 @@ NativeScript 文档包含了引导我们完成这一过程的说明，但你能�
 
 .ipa 文件是 .apk 文件的 iOS 对应物，我们需要它将程序发布到 iOS App Store。
 
-使用 NativeScript 有多种方法生成此文件。我最喜欢的方法是使用带有以下选项 NativeScript CLI `tns build iOS` 命令：
+使用 NativeScript 有多种方法生成此文件。我最喜�的方法是使用带有以下选项 NativeScript CLI `tns build iOS` 命令：
 
 - tns build ios --release --for-device
 
@@ -3369,9 +3299,6 @@ iTunes Connect 本质上是 Apple 版的 Google Play 网站，只不过更糟糕
 ### *上传你的 .ipa 文件*
 
 我们快要完成了！一旦我们在 iTunes Connect 中提交了信息，最后一步就是我们将构建好的 .ipa 文件与我们刚刚输入的内容相关联。我们必须专门在 iTunes Connect 中完成这一步。
-
-
-
 
 **124** 精通 NativeScript：入门指南
 
@@ -3418,10 +3345,6 @@ Tekmo 应用的产品列表页，显示了许多硬编码的商品。
 假设我们正在制作一个剪贴簿并想在上面添加页面。我们首先通过测量和使用尺来排列页面，确保对象对齐、垂直且组织方式与剪贴簿中之前的页面相似。添加到页面上的每个图像、贴纸和文本都要执行此操作。这看起来很耗时，但如果我们从一个模板开始呢：一个带有页面标题、宠物名称、图像和其他设计元素占位符的页面？添加新页面要简单得多。
 
 添加新页面要简单得多，因为我们不需要重新对齐每个元素；我们只需要填充占位符。（注：此处原文存在大量重复句子，已根据逻辑流进行处理）。
-
-
-
-
 
 ## 128 精通 NativeScript：入门指南
 
@@ -3473,7 +3396,7 @@ Tekmo 应用的产品列表页，显示了许多硬编码的商品。
 
 对于 iOS 和 watchOS 应用，在设备（Device）列下选择兼容的设备。在 Device 下同时勾选 iPad 和 Mac 复选框，以开发 iPad 应用的 Mac 版本。
 
-在部署信息设置的底部选择“支持多个窗口”（Supports multiple windows）复选框，允许 iPad 应用使用多个窗口。然后点击“配置”（Configure）箭头调整其他选项。
+在部署信息设置的底部选择“支持多个窗口”（Supports multiple windows）复选箱，允许 iPad 应用使用多个窗口。然后点击“配置”（Configure）箭头调整其他选项。
 
 ### 添加应用图标和 App Store 图标
 
@@ -3517,10 +3440,6 @@ Tekmo 应用的产品列表页，显示了许多硬编码的商品。
 
 云构建被认为比本地构建慢得多。这可以理解，因为本地构建在我们的硬件上运行，且不需要通过网络传输数据。而 Sidekick 云构建，相反，很快。极快。我们的云构建有比本地构建更快的潜力。为什么？Sidekick 构建是在连接了高速网络的最新 Mac Pro 上进行的。
 
-
-
-
-
 ## 132 精通 NativeScript：初学者指南
 
 为了确保我们的文件能够尽可能地被上传、编译和下载。
@@ -3528,18 +3447,23 @@ Tekmo 应用的产品列表页，显示了许多硬编码的商品。
 ### 我们现在还可以进行本地构建吗？
 
 如果我们已经在本地安装了必要的 SDK，只需在 Sidekick 中
+
 选择“local（本地）”构建即可。
 
 作为我们入门教程的一部分，我们提供了一份完整的安装
+
 指南，用于设置本地构建所需的依赖项。另一方面，如果我们缺少
+
 任何依赖项，Sidekick 会为我们安装。
 
 ### 我们如何使用 Sidekick 创建构建？
 
 没有比这更简单的了。在应用打开时，进入 Sidekick 中的
+
 Run（运行）菜单并选择 Build（构建）。
 
 在弹出的窗口中在 iOS 和 Android 构建之间进行选择，
+
 并确保选择了 Cloud Build（云构建）。
 
 “Sidekick 在构建之间会缓存几个中间文件，以保证最快的云构建。如果我们需要完全重新构建应用，请选择 Clean build（清理构建）。请记住，这将极大减慢构建速度。”
@@ -3549,22 +3473,29 @@ Run（运行）菜单并选择 Build（构建）。
 ### Windows 上的 iOS 开发
 
 利用 Sidekick 从 Windows 构建 iOS 应用的能力对于 Windows 开发者来说是一个巨大的优势。然而，我们当然还有更多
+
 要介绍的功能可以让我们的生活变得更轻松。
 
 Sidekick 还提供了生成用于应用签名的证书的能力，从 CSR
+
 （证书签名请求）开始。
 
 此外，如果我们还没有有效的 iOS 描述文件和证书对，
+
 Sidekick 可以使用免费的 Apple 账户为我们生成这些内容。
 
 App Store 提交是拼图的最后一块。如果没有 Mac，我们就无法
+
 将二进制 IPA 文件提交到 Apple App Store。然而，Sidekick 让我们
+
 能够直接开发并发布到应用商店。
 
 ### 持续集成构建是如何工作的？
 
 作为一个图形用户界面（GUI）桌面程序，在考虑我们的持续
+
 集成（CI）流程时，Sidekick 并不是第一个想到的东西。然而，
+
 我们正在积极研究通过 NativeScript CLI 暴露我们云构建服务的解决方案。
 
 ## 保护我们的移动应用
@@ -3572,49 +3503,69 @@ App Store 提交是拼图的最后一块。如果没有 Mac，我们就无法
 无论我们是在创建一个经典的原生应用、使用 Appcelerator 或 Xamarin 开发的交叉编译应用、使用 Ionic 的混合应用，还是使用 NativeScript 或 React Native 制作的 JavaScript 原生应用，应用安全都是贯穿所有这些应用的共同主线。
 
 移动安全不再是可以掉以轻心的事情。每个人口袋里都有
+
 敏感数据、公司机密访问权限以及受保护的健康信息。
 
 ### 简史：
 
 - 以明文形式存储用户密码。
+
 - 在查询字符串中发送带有 SSN（社会安全号码）的查询。
+
 - 在没有 SSL 的情况下接受信用卡支付。
 
 用户一直依赖公共应用商店作为 ultimate门卫，充当病毒守护者
+
 并阻止欺性的 API 使用。事实是，我们开发者在发布下一个精彩程序
+
 之前，必须安装更多的安全措施。
 
 NativeScript 博客上的这四部分系列将深入探讨各种与安全
+
 相关的技巧和策略，供我们在项目中实施。其中大部分构建起来
+
 非常简单，因为我们闻名的插件开发者社区已经承担了最繁重的工作。
 
 - **第一部分：** 保护您的源代码。
+
 - **第二部分：** 静态数据安全。
+
 - **第三部分：** 确保设备与服务器之间的数据完整性。
+
 - **第四部分：** 企业级用户的身份验证与授权。
 
 ### 源代码保护
 
 我们大多数人都有 Web 开发背景。我们习惯通过服务器将
+
 代码发送到用户的浏览器。是的，确实存在知识产权（代码拷贝）的
+
 担忧，但我们对此无能为力。
 
 另一方面，桌面和移动端开发者更习惯将代码编译成大部分
+
 不可读的位，以保护代码并减少寻找漏洞的尝试。
 
 那么，这些挑战在由 React Native 和 NativeScript 等技术
+
 开发的“JavaScript 原生”应用浪潮中是如何解决的呢？使用 Ionic 创建的混合应用又是怎样的？
 
 我们不想打破大家的幻象，但提供给客户端的源代码从根本上
+
 是不安全的，因为在理论上它可以以某种方式被终端用户读取。
+
 NativeScript、React Native 或 Cordova/Ionic 都没有被编译为
+
 原生字节码。JavaScript 在设备上的解释方式与 Web 浏览器
+
 相同。
 
 所以我们是认为自己是安全的典型原生应用开发者吗？再想想吧——有大量的工具可以反编译我们的代码，
+
 读取我们的秘密。
 
 但一切并未失去。看看一些加密我们的源代码并让窥探的
+
 目光远离我们物品的方法——在保护我们知识产权的同时，也最大限度地减少对我们应用程序和后端系统的攻击。
 
 ### 混淆与压缩
@@ -3643,6 +3594,7 @@ exports.DrawerTap = DrawerTap;
 ### NativeScript CLI
 
 NativeScript CLI 允许我们开箱即用对应用进行 uglify（压缩）。
+
 在我们已经使用 Webpack 的情况下，只需运行：
 
 `ns build android|ios --env`
@@ -3671,14 +3623,19 @@ exports.DrawerTap = DrawerTap;
 ### 应用
 
 我们与 Jscrambler 的人员已经联系多年了，追溯到我们开发
+
 混合应用的时代。Jscrambler 是一项提供深度混淆和保护的服务，直到
+
 代码美化后变得无法理解。
 
 Jscrambler 通过自动化静态分析将 JavaScript 转换为抗性
+
 形式，以防止篡改。Jscrambler 还支持“代码锁”，限制
+
 何时、何地以及谁运行 JavaScript。
 
 例如，在 NativeScript 应用中，我们可以使用 Jscrambler 执行 JavaScript。
+
 在确认兼容 NativeScript 后，Jscrambler 无疑值得一试。
 
 我们目前对分发给终端用户的代码采取了一些适当的保护措施。
@@ -3686,25 +3643,28 @@ Jscrambler 通过自动化静态分析将 JavaScript 转换为抗性
 通过私有商店限制访问
 
 从应用商店下载程序几乎没有限制。无论目标或受众如何，
+
 澳大利亚的 14 岁少年和亚利桑那州的 80 岁老人拥有的权限
+
 大致相同。诚然，我们可以根据年龄限制应用，并将其地理限制为仅在特定地区可用，但这与应用安全没有太大关系。
 
 如果我们构建的应用只需要提供给单一实体（即一组用户或
+
 单一公司/组织），那么私有应用商店可能是一个更优的选择方案。
 
 企业级 MAM/MDM 选项
 
 如果我们在足够大的公司工作，很可能依赖移动应用管理（MAM）
+
 或移动设备管理（MDM）软件来帮助保护我们的内部应用和设备。通过
+
 MobileIron 或 AirWatch 等 MAM 提供商，我们有一个内部“业务”应用商店。
 
 Apple 开发者企业计划
 
 Apple Developer Enterprise Program 我们绕过公共 iOS 应用商店，并将
-我们的应用直接提供给企业用户。虽然费用比标准开发者协议要高，但分发的灵活性是无价的。
 
-
-
+我们的应用直接提供给企业用户。虽然费用比标标准开发者协议要高，但分发的灵活性是无价的。
 
 优化您的应用
 
@@ -3805,15 +3765,25 @@ return this.http.post(
 避免这种情况最简单的方法是使用 .gitignore 文件，排除存储我们私有密钥的 .ts/.js 文件(s)。这是我们为 NativeScript 项目使用的标准 .gitignore 文件（假设使用了 TypeScript，这也会排除应用目录中的 JavaScript 文件）：
 
 - .vscode/
+
 - .cloud/
+
 - platforms/
+
 - node_modules
+
 - app/**/*.js
+
 - app/**/*.map
+
 - npm-debug.log
+
 - app/keys.*
+
 - hooks/
+
 - app/**/google-services.json
+
 - app/**/GoogleService-Info.plist
 
 这排除了私钥，并阻止了 platforms 和 node modules 文件夹被共享（如果我们克隆应用，这些文件夹是完全不需要的，更不用说包含数百个文件了）。
@@ -3823,9 +3793,13 @@ return this.http.post(
 # 第 4 章：Angular 和 NativeScript
 
 **本章内容**
+
 - 使用 Angular 创建 NativeScript 应用
+
 - 使用 Angular 组件和路由
+
 - Angular 数据绑定和服务
+
 - 使用插件
 
 在上一章中，我们讨论了在 NativeScript 中处理数据以及启动应用的问题。我们还学习了 iOS 分发和安全性。本章将教我们关于 NativeScript 中的 Angular，包括它的开发、组件、Angular 数据绑定和应用。
@@ -3866,9 +3840,6 @@ ng add @nativescript/schematics
 
 在运行上述命令之前，确保我们已经进入了项目内部。我们必须位于 Angular CLI 生成的项目中；因此我们不认为在 NativeScript CLI 创建的 NativeScript 项目中可以包含示意。
 
-
-
-
 Angular 和 NativeScript **143**
 
 如果我们确实是从零开始构建一个代码共享项目，作为替代方案，我们可以使用以下命令构建一个带有 NativeScript 的 Angular 项目：
@@ -3879,9 +3850,13 @@ Angular 和 NativeScript **143**
 
 ## 理解计划程序的更改和 Angular 开发流程
 
-当我们在 Angular 项目中添加 NativeScript 计划程序时，我们会看到它生成了一系列新文件，甚至修改了几个配置文件。不要担心我们的初始想法会发生任何负面变化。我们首先注意到的是项目中有了一些 `.tns.ts` 和 `.tns.html` 文件。初看之下，我们可能认为现在必须处理两套独立的代码集，但这并不完全正确。
+当我们在 Angular 项目中添加 NativeScript 计划程序时，我们会看到它生成了一系列新文件，甚至修改了几个配文件。不要担心我们的初始想法会发生任何负面变化。我们首先注意到的是项目中有了一些 `.tns.ts` 和 `.tns.html` 文件。初看之下，我们可能认为现在必须处理两套独立的代码集，但这并不完全正确。
 
 由于 NativeScript 是一个原生移动应用框架，我们无法使用普通的 HTML 标记来构建用户界面（UI）。因此，我们必须同时维护 Web UI 和 NativeScript UI。我们可以为所有内容都准备 TypeScript 版本的 Web 版和 NativeScript 版，但我们没必要这样做。在模块和路由部分这样做是有合理的，因为存在诸如 `NativeScriptRoutingModule` 和 `RoutingModule` 等服务，它们执行相同的功能，但特定于平台。
+
+
+
+# 让我们微调一下我们的新应用
 
 让我们微调一下我们的新应用，以展示在“几乎”单一 CLI 下拥有如此多个平台的价值。从项目的 `src/app/app.routing.tns.ts` 文件开始，将其克隆到 `src/app/app.routing.ts` 并修改如下所示：
 
@@ -3901,9 +3876,7 @@ const routes: Routes = [
 export class AppRoutingModule { }
 ```
 
-**144** 精通 NativeScript：入门指南
-
-如果我们没有注意的话，差异在于所用用模块的命名方式上。我们从文件名中删除了 `tns`，并使用了 Angular 原生模块，因为这个文件是用于 Web 端的。
+如果我们没有注意的话，差异在于所用模块的命名方式上。我们从文件名中删除了 `tns`，并使用了 Angular 原生模块，因为这个文件是用于 Web 端的。
 
 我们还没有完全脱出困境。为了与 NativeScript 版本保持一致，我们必须修改项目的 `src/app/app.module.ts` 文件：
 
@@ -3932,13 +3905,13 @@ export class AppModule { }
 
 如果我们是从现有的 Angular 项目迁移过来的，我们可能需要追赶 NativeScript 版本的进度。换句话说，我们正在做与之前相反的操作。
 
-最后一步是对 `src/app/app.component.html` 文件进行任何必要的更改。在我们的 Angular 项目中，截至2018 年 6 月，我们有一个没有路由的默认落地页。我们必须完成路由配置。将项目 `src/app/app.component.html` 中的所有内容替换为以下内容：
+最后一步是对 `src/app/app.component.html` 文件进行任何必要的更改。在我们的 Angular 项目中，截至 2018 年 6 月，我们有一个没有路由的默认落地页。我们必须完成路由配置。将项目 `src/app/app.component.html` 中的所有内容替换为以下内容：
 
 `<router-outlet></router-outlet>`
 
 我们只是在尝试匹配这两个程序的行为。因为程序是新的，NativeScript 版本的实现的要比在线版本多得多。原始材料强化了这一点。
 
-**145** Angular 和 NativeScript
+# Angular 和 NativeScript
 
 我们的项目已经完成，但如果我们想继续使用 Angular CLI 呢？让我们使用以下命令创建一个新组件：
 
@@ -3946,11 +3919,11 @@ export class AppModule { }
 
 上一个命令将利用 CLI 构建一个名为 `about` 的组件，结果如下：
 
-- src/app/about/about.component.css
-- src/app/about/about.component.html
-- src/app/about/about.component.tns.html
-- src/app/about/about.component.ts
-- src/app/about/about.component.spec.ts
+- `src/app/about/about.component.css`
+- `src/app/about/about.component.html`
+- `src/app/about/about.component.tns.html`
+- `src/app/about/about.component.ts`
+- `src/app/about/about.component.spec.ts`
 
 我们的意思是，可以像使用任何其他 Angular 应用一样使用 Angular CLI。我们将留下一个 `.tns.html` 文件来添加自定义的移动端 UI。除了生成组件外，还有许多额外的命令，所以不要觉得受到束缚。
 
@@ -3966,61 +3939,36 @@ export class AppModule { }
 
 上面的命令将启动应用。如果 Android 更方便，我们可以快速切换到 Android。
 
-**146** 精通 NativeScript：入门指南
-
-### 升级 Angular 10
+# 升级 Angular 10
 
 NativeScript 团队再次做到了，Angular 10 的最新发布标志着开发者体验迈出了重要一步。TSC 成员 Nathan Walker 描述并实现了 `package.json` 必须采取的形式。根据他的建议，我们写了一个 Node 脚本，读取现有的 `package.json` 并使用扩展语法更改需要更新的包。
 
 1. 该文件可以从 https://gist.github.com/mahmoudaja/351b7e90460b5d78942046049a6f759 下载到项目的根目录（与 `package.json` 所在的同一级）。
-
 2. 将工作目录配置到项目路径后，使用我们喜爱的终端应用运行 `node update_package.tns-ng10.js`。
-
 3. 脚本将执行，并希望产生更新的包！
-
-a. 如果没有，并且我们收到“发现了 package.json.bak”，很可能是我们之前尝试执行过脚本，我们的 `package.json` 文件已经被修改过。
-b. 打开 `package.json` 并检查 `@nativescript/angular` 包的版本是否设置为 `10.0.0`。
-c. 如果是，我们的 `package.json` 可能是是由之前的运行修改的。
-d. 否则，删除 `package.json.bak`。
-e. 如果问题仍然存在，请告诉我以便我们协作解决。
-
+   a. 如果没有，并且我们收到“发现了 package.json.bak”，很可能是我们之前尝试执行过脚本，我们的 `package.json` 文件已经被修改过。
+   b. 打开 `package.json` 并检查 `@nativescript/angular` 包的版本是否设置为 `10.0.0`。
+   c. 如果是，我们的 `package.json` 可能是由之前的运行修改的。
+   d. 否则，删除 `package.json.bak`。
+   e. 如果问题仍然存在，请告诉我以便我们协作解决。
 4. 检查修订后的 `package.json` 文件，以确保一切无误。
-
 5. 应删除 `webpack.config.js`。
-
-a. 假设我们对 `webpack.config.js` 进行了任何修改。在这种情况下，我们必须以后重新实现它们，因为
-
-**147** Angular 和 NativeScript
-
-*包应该更新*
+   a. 假设我们对 `webpack.config.js` 进行了任何修改。在这种情况下，我们必须以后重新实现它们，因为包应该更新。
 
 `package.json` 是我们项目包含和依赖的确定性参考。它目前出于此目的使用之前的版本。
 
 **警告**：确保将我们的更新提交并推送到远程仓库。该过程包含了可能从对比当前项目的 changeset 中获益的更改。
 
-
-
-
-## 精通 NativeScript：入门指南
-
 如果缺失，NativeScript 包将尝试构建更新后的 `webpack.config.js` 文件。
 
 6. 运行 `npm run clean`，然后运行 `npm run PLATFORM`，其中 PLATFORM 是我们想要部署应用的平台。
-
    a. 应用将无法运行，因为在调用 `tns run PLATFORM` 时必须提供 `--no-hmr` 参数。使用 `npm run PLATFORM` 将为我们提供所需操作的快捷方式。
-
    b. 目前无法使用 NativeScript Preview Android 和 iOS 应用以预览模式运行项目，因为 Preview 应用程序需要升级，且升级正在进行中：https://github.com/NativeScript/nativescript-schematics/pull/28#issuecomment-667577731。
-
 7. 如果我们的应用无法运行，很有可能是某些导入断了，你接下来将解决这个问题。如果我们倾向于自己处理，你必须执行的操作如下：
-
    a. 包已更新。根据此注释更新了 json 包的版本。
-
    b. 从 `nativescript` 部分删除平台版本，同时保留 `id` 属性。
-
    c. 应该删除 `webpack.config.js`。
-
    d. 运行 `npm run clean && npm run PLATFORM`，其中 PLATFORM 是我们想要部署应用的平台。
-
    e. 如果我们的应用无法运行，很有可能是某些导入断了，我们接下来将解决这个问题。
 
 ## 修复导入
@@ -4029,7 +3977,7 @@ a. 假设我们对 `webpack.config.js` 进行了任何修改。在这种情况�
 
 要做到这一点，请利用我们的 IDE 或编辑器搜索并替换以下术语：
 
-tns-core-modules
+### tns-core-modules
 
 **警告：** 我们的搜索结果可能包含 `package.json`、`package-lock.json`、`package.json.bak` 和 `webpack.config.js`。我们不应该尝试更改这些文件。
 
@@ -4039,7 +3987,7 @@ tns-core-modules
 
 为了进行转换，我们需要将导入替换为顶层：
 
-`import { screen } from '@nativescript/core'; // 而不是 @nativescript/core/platform // 会报错
+`import { screen } from '@nativescript/core'; // 而不是 @nativescript/core/platform // 会报错`
 
 由于从 `tns-core-modules` 切换到 `@nativescript/core`，特定的类名称发生了变化，例如 `screen`，现在是 `Screen`。我们可以通过使用 IDE 或编辑器的自动补全组合（通常是 `Ctrl+Space`、`Cmd+Space`）来显示 `@nativescript/core` 包中可访问的所有类，并寻找可能的新类名。
 
@@ -4053,7 +4001,7 @@ tns-core-modules
 
 当我们在代码库中搜索 `tns-core-modules` 或 `@nativescript/core/` 时没有得到任何结果时，这一阶段就结束了。此注释建议了顶层导入，这是项目转换为 Angular 10 必需的。深层导入似乎会损坏项目，仅仅切换到注释建议的顶层导入就解决了升级忧虑。
 
-nativescript-angular
+### nativescript-angular
 
 **警告：** 我们的搜索结果可能包含 `package.json`、`package-lock.json`、`package.json.bak` 和 `webpack.config.js`。我们不应该尝试更改这些文件。
 
@@ -4071,7 +4019,7 @@ nativescript-angular
 
 某些类，例如 `DEVICE`，以前被导入以注入到我们的 Angular 类中，在更改后已不再可用。我们现在必须使用 `@nativescript/core` 中的 `Device` 而无需注入它。当我们在代码库中搜索 `nativescript-angular` 或 `@nativescript/angular/` 短语时没有得到任何结果时，这一步就结束了。
 
-*额外建议*
+### 额外建议
 
 如前所述，我们可以以下方法之一执行我们带有 Angular 10 的 NativeScript 应用：
 
@@ -4098,35 +4046,38 @@ nativescript-angular
 
 将 `page-router-outlet` 包裹在任何布局组件（如 `GridLayout`）中也解决了问题。作为结果，我们的 `app.component.tns` 应该像这样：
 
-`<GridLayout>
+```xml
+<GridLayout>
   <page-router-outlet>
-</GridLayout>`
+</GridLayout>
+```
 
 “**核心团队注意**：将 `page-router-outlet` 包围在 `GridLayout` 中是有益的，未来。”
 
-## 使用 Angular 创建 NativeScript 应用
+# 使用 Angular 创建 NativeScript 应用
 
 Angular 已经存在多年，并证明适用于开发各种应用程序，包括 Web 和移动应用。
 
 尽管技术一直是一样的，但某些开发者认为设计这些各种应用的体验可能是不一致且令人困惑的。
 
-然而，它可以与标准的 Angular CLI 使用使用。这允许我们使用 Angular CLI 启动项目，添加方案（如 NativeScript），并完成一个适用于 Web 和移动的 CLI。
+然而，它可以与标准的 Angular CLI 使用。这允许我们使用 Angular CLI 启动项目，添加方案（如 NativeScript），并完成一个适用于 Web 和移动的 CLI。
 
 通过 NativeScript 图表，我们将利用 Angular CLI 创建兼容 Web 和移动的应用程序。
 
-### 步骤 1：安装 NPM 要求
+## 步骤 1：安装 NPM 要求
 
 在使用 Angular CLI 管理 NativeScript 应用程序之前，我们必须确保工作站上安装了所有 NPM 要求。如果 PC 上尚未安装 Node.js® 和 npm，请安装它们。现在，使用命令行执行以下操作安装 Angular CLI：
 
 `npm install @angular/cli@6.1.0-beta.0`
 
-### 步骤 2：制作支持 NativeScript 的 Angular CLI 项目
+## 步骤 2：制作支持 NativeScript 的 Angular CLI 项目
 
 记住，Angular 方案仅用于创建和维护项目。构建和部署移动应用仍然需要 NativeScript CLI。
 
 导航到 `angular-native-project` 项目并运行以下命令安装 NativeScript CLI 和 NativeScript 方案。
 
 `npm install nativescript@rc`
+
 `npm install --save-dev @nativescript/schematics@rc`
 
 在我们安装所有所需的依赖后，可以为新的 Angular CLI 项目添加 NativeScript 功能。导航到命令行并运行以下命令：
@@ -4137,25 +4088,22 @@ Angular 已经存在多年，并证明适用于开发各种应用程序，包括
 
 `ng add @nativescript/schematics`
 
+### 代码共享倡议
 
-
-
-
-Angular 和 NativeScript **153**
-
-**代码共享倡议：** 我们也可以轻松为自己建立一个代码共享项目，通过使用 `--shared` 参数同时为 Web 和移动端构建项目。例如：
+我们也可以轻松为自己建立一个代码共享项目，通过使用 `--shared` 参数同时为 Web 和移动端构建项目。例如：
 
 `ng new -c=@nativescript/schematics angular-native-project2 --prefix=my --no-theme --style=scss --no-webpack`
 
-### 第 3 步：Schematic（架构图）修改与 Angular 开发流程
+## 第 3 步：Schematic（架构图）修改与 Angular 开发流程
 
 在向项目中添加 NativeScript schematics 后，我们会注意到生成了一些带有 `.tns` 扩展的新文件，并且一些配置文件被修改了。在项目目录中查找 `.tns.ts` 和 `.tns.html` 文件。
 
 由于 NativeScript 是一个原生移动应用框架，我们无法使用标准的 HTML 标记来构建 UI。因此，我们需要同时维护 Web UI 和 NativeScript UI。在 TypeScript 方面，我们可以为所有内容都准备 Web 版本和 NativeScript 版本，但并非非要这样做。
 
-然而，在模块（modules）和路由（routing）部分是有是有，因为像 `NativeScriptRoutingModule` 和 `RoutingModule` 等服务执行的功能相同，但是针对特定平台的。
+然而，在模块和路由部分是有必要的，因为像 `NativeScriptRoutingModule` 和 `RoutingModule` 等服务执行的功能相同，但是针对特定平台的。
 
 `src/app/app.routing.ts`
+
 ```typescript
 import { NgModule } from "@angular/core";
 import { RouterModule } from "@angular/router";
@@ -4174,11 +4122,10 @@ export class AppRoutingModule {}
 
 这里唯一的区别在于所用模块的命名。我们从文件名中删除了 `tns` 并使用了原生的 Angular 模块，因为该文件将用于 Web 端。
 
-**154** 精通 NativeScript：入门指南
-
-接下，我们必须修改项目的 `src/app/app.module.ts` 文件，使其更符合 NativeScript 版本：
+接下来，我们必须修改项目的 `src/app/app.module.ts` 文件，使其更符合 NativeScript 版本：
 
 `src/app/app.module.ts`
+
 ```typescript
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
@@ -4210,29 +4157,29 @@ export class AppModule {}
 
 上面的命令将利用 CLI 构建一个名为 `home` 的组件。结果是将生成以下文件：
 
-- src/app/home/home.component.css
-- src/app/home/home.component.html
-- src/app/home/home.component.tns.html
-- src/app/home/home.component.ts
-- src/app/home/home.component.spec.ts
+- `src/app/home/home.component.css`
+- `src/app/home/home.component.html`
+- `src/app/home/home.component.tns.html`
+- `src/app/home/home.component.ts`
+- `src/app/home/home.component.spec.ts`
 
 我们可以像使用任何其他 Angular 应用一样使用 Angular CLI。我们将以一个 `.tns.html` 文件结束，可以在其中添加您的自定义移动端 UI。
 
-### 第 4 步：使用 NativeScript CLI 在 Android 或 iOS 上运行 Angular CLI 项目
+## 第 4 步：使用 NativeScript CLI 在 Android 或 iOS 上运行 Angular CLI 项目
 
 当项目完成构建、修改并就绪后，我们现在可以启动应用程序。要检查项目是否作为 Web 应用程序正常工作，请使用以下命令：
 
 `ng serve`
 
-命令完成后，在 浏览器中访问 http://localhost:4200 查看其运行效果。要在移动设备上运行程序，使用以下命令：
+命令完成后，在浏览器中访问 http://localhost:4200 查看其运行效果。要在移动设备上运行程序，使用以下命令：
 
 `tns run ios --bundle`
 
 上面的命令将在 iOS 上启动应用。而且，如果有必要，我们可以快速将 iOS 组件切换到 Android。`--bundle` 是该命令中最重要的部分。如果我们不打包程序，它会因为一系列问题而崩溃。
 
-## Angular 初始化（Bootstrap）
+# Angular 初始化
 
-### 初始化过程
+## 初始化过程
 
 一个典型的 NativeScript 程序通过初始化全局对象、配置全局 CSS 规则以及构建并导航主页开始。Angular 不关心这些任何内容；它只需要在 DOM 中的一个位置来挂载。自然地，Angular 应用必须处理它们的初始化：模块、组件、指令、路由和 DI（依赖注入）提供者。为了让这两种范式在 NativeScript Angular 项目协同工作，我们创建了一个封装平台对象 `platformScriptDynamic`，它负责设置 NativeScript 应用并可能引导主页。
 
@@ -4240,16 +4187,14 @@ export class AppModule {}
 
 我们在这里的主要设计目标之一是提供一个与 Web 版本几乎相同的接口，以便熟悉 Angular 的人员能够以尽可能少的摩擦开始使用。
 
-**156** 精通 NativeScript：入门指南
-
-### NativeScript 应用选项
+## NativeScript 应用选项
 
 NativeScript 应用设置在程序启动时进行。我们在平台方法中添加了额外的 `AppOptions` 参数以启用修改，目前设置如下：
 
- ** **cssFile:** 覆盖指向包含全局 CSS 规则的文件路径，这些规则应用于所有对象。默认路径是 app.css。
+- **cssFile:** 覆盖指向包含全局 CSS 规则的文件路径，这些规则应用于所有对象。默认路径是 app.css。
 - **createFrameOnBootstrap:** 如果应用程序没有使用路由，我们将接收 Frame。我们使用选项：`platformScriptDynamic({ createFrameOnBootstrap: true });`
 
-### 自定义 DI 提供者
+## 自定义 DI 提供者
 
 依赖注入（DI）机制用于自定义 Angular 应用的功能。NgModules 通常是配置 DI 提供者并将其暴露给应用对象的机制。几个 Angular 库（如路由器和 HTTP 客户端）都有注册提供者的模块。NativeScript 封装了在移动端应使用的内置模块（路由器、表单）：
 
@@ -4279,7 +4224,7 @@ class AppModule {}
 platformScriptDynamic().bootstrapModule(AppModule);
 ```
 
-### 注入的对象
+## 注入的对象
 
 由于 DI 系统对于 Angular 应用非常重要，将特定的平台对象暴露给客户端代码是合理的。因此，只需在构造函数中定义相应类型的参数即可访问它们。例如，下面的组件是如何获取原生 `Page` 对象的：
 
@@ -4294,18 +4239,12 @@ export class UserDetailsView {
 }
 ```
 
-### 注入的对象
+### 注入的对象列表
 
 - **“ui/page”.Page:** 渲染组件的原生页面。当在不同的页面上加载组件时，路由实现会确保注入正确的实例。
 - **“platform”.Device:** 关于执行运行的设备的信息。
 
-
-
-
-
-## 158 进阶 NativeScript：入门指南
-
-### 高级启动 (Advanced Bootstrap)
+## 高级启动
 
 在某些应用场景下，可能需要在现有的 NativeScript 应用中启动一个 Angular 应用。这种需求通常出现在自动化测试中，这些测试需要在各种配置下创建和销毁应用。高级启动可能对于将原生 NativeScript 应用迁移到 Angular 也有帮助——我们可以通过集成 Angular 并使用它构建新功能来开始迁移，然后逐个迁移旧功能。
 
@@ -4331,13 +4270,13 @@ platformNativeScriptDynamic({bootInExistingPage: true})
   .bootstrapModule(AdvancedBootstrapModule);
 ```
 
-## 导航 (NAVIGATION)
+# 导航
 
 在本文中，我们将介绍如何使用 Angular 在 NativeScript 应用中进行导航，并提供一些典型移动导航模式的实用示例。
 
-Angular 组件路由（Component Router）用于 Angular 中的导航。我们可以在这里找到关于如何操作路由的详细说明。在本主题中，我们假设已经熟悉基本概念，并将重点放在 NativeScript 程序中实现这些概念的细节上。
+Angular 组件路由用于 Angular 中的导航。我们可以在这里找到关于如何操作路由的详细说明。在本主题中，我们假设已经熟悉基本概念，并将重点放在 NativeScript 程序中实现这些概念的细节上。
 
-### NativeScript 路由模块 (Route Module)
+## NativeScript 路由模块
 
 NativeScript 通过其 `NativeScriptRouterModule` 增强了 Angular `RouterModule`。它包含了在移动环境中运行路由所需的若干修改和更改，并将整个原生移动导航 UX 引入 Angular 的选择。
 
@@ -4347,15 +4286,15 @@ NativeScript 通过其 `NativeScriptRouterModule` 增强了 Angular `RouterModul
 - 处理返回导航——在 Android 上是硬件返回键，在 iOS 上是导航栏返回按钮。
 - 在移动导航生命周期中返回时保留视图状态。
 - 移动端特有的历史记录——不是全局历史，而是为每个导航控制器保留历史。
-- 底部导航 (BottomNavigation)、标签页 (Tabs)、侧抽屉 (SideDrawer)、模视图 (Modal View) 以及更多移动侧向导航组件。
+- 底部导航、标签页、侧抽屉、模视图以及更多移动侧向导航组件。
 
 NativeScript 通过下面列出的扩展、指令和技术将它们引入 Angular：
 
 - **page-router-outlet:** 传统 `router-outlet` 的替代方案，作为原生移动导航发生地的占位符。
 - **nsRouterLink** 是一个 routerLink 指令，它与移动手势配合，作为标准 `routerLink` 指令的替代。
 - `RouterExtensions` 类像 `Router` 和 `Location` 类一样，提供了原生移动导航 API。
-- **自定义路由复用策略 (Custom RouteReuseStrategy):** 这种方法要求 Angular 根据原生导航生命周期缓存并重用在 `page-router-outlet` 中加载的组件。
-- **自定义平台位置和定位策略 (Custom PlatformLocation and LocationStrategy):** 这种方法不是全局线性历史，而是为每个出口（outlet）保留历史。
+- **自定义路由复用策略:** 这种方法要求 Angular 根据原生导航生命周期缓存并重用在 `page-router-outlet` 中加载的组件。
+- **自定义平台位置和定位策略:** 这种方法不是全局线性历史，而是为每个出口保留历史。
 
 ### Page-Router-Outlet
 
@@ -4363,18 +4302,18 @@ NativeScript 中的 `page-router-outlet` 类似于 Angular 中的 `router-outlet
 
 我们建议将 `page-router-outlet` 作为我们主要的移动导航模式，并在必要时将标准的 `router-outlet` 用于内部组件导航。如果在我们的情况下更合理，我们也可以仅使用 `router-outlet`。
 
-### 路由链接 (Router Link)
+### 路由链接
 
 Angular 的 `routerLink` 指令不能直接在 NativeScript 应用中使用。NativeScript 有自己的 `nsRouterLink` 指令，其工作原理类似。它还支持两个 NativeScript 特有的属性，我们可以将它们添加到 HTML 中的 `nsRouterLink` 元素中。
 
-- **pageTransition:** 我们可以使用此参数来描述 `nsRouterLink` 导航的原生过渡效果。`true`、`false`、上述提到的任何一种标准过渡或一个新的的 `NavigationTransition` 对象都是有效值。
+- **pageTransition:** 我们可以使用此参数来描述 `nsRouterLink` 导航的原生过渡效果。`true`、`false`、上述提到的任何一种标准过渡或一个新的 `NavigationTransition` 对象都是有效值。
 - **clearHistory:** 此属性接受布尔值，并指定由 `nsRouterLink` 发起的导航是否会清除当前出口的导航历史。
 
 ```html
 <Button text="Button" [nsRouterLink]="['/main']" pageTransition="slide" clearHistory="true"></Button>
 ```
 
-### 路由扩展 (Router Extension)
+### 路由扩展
 
 `RouterExtensions` 类提供了命令式导航的方法，类似于 Angular `Router` 和 `Location` 类提供导航的方式。只需将该类注入到组件的构造函数中使用即可：
 
@@ -4399,7 +4338,7 @@ export class MainComponent {
 - **backToPreviousPage():** 此函数与 `back()` 相同，但它跳过了导航过程。
 - **canGoBackToPreviousPage():** 此函数提供一个值，指示用户是否可以返回之前的路由。
 
-### 自定义路由复用策略 (Custom Route Reuse Strategy)
+### 自定义路由复用策略
 
 NativeScript 还导入了自定义的 `RouteStrategy`，它更改了通过 `page-router-outlet` 浏览的组件的生命周期。当我们离开 `router-outlet` 中的组件时，它会被销毁，在我们返回它时会被重建。组件的生命周期在正向反向导航之间没有区别。
 
@@ -4407,7 +4346,7 @@ NativeScript 还导入了自定义的 `RouteStrategy`，它更改了通过 `page
 
 当我们前进，我们需要执行特定的清理步骤（例如取消订阅以停止更新）。如果我们使用 `page-router-outlet`，我们无法在 `ngOnDestroy()` 钩中执行操作，因为它在前进时不会被调用。我们可以通过在组件中注入 `Page` 实例并将其绑定页面导航事件（例如 `navigatedFrom`）来执行清理。我们可以获取所有页面事件的列表。
 
-### 配置 (Configuration)
+### 配置
 
 通常，路由配置由以下步骤组成。
 
@@ -4436,13 +4375,7 @@ import { NativeScriptRouterModule } from "nativescript-angular/router";
 export class GrocerieAppModule { }
 ```
 
-
-
-
-
-Angular 和 NativeScript **163**
-
-• 为了启动程序，按照惯例，将我们的模块发送到 bootstrapModule 函数：
+- 为了启动程序，按照惯例，将我们的模块发送到 bootstrapModule 函数：
 
 ```typescript
 import {platformNativeScriptDynamic} from "@nativescript/angular";
@@ -4452,7 +4385,7 @@ platformNativeScriptDynamic().bootstrapModule(GroceryAppModule);
 
 ## 移动导航模式
 
-在应用程序的不同屏幕之间移动的行为被称为导航。根据其尝试显示的信息，每个移动应用 都有其独特的导航架构。下面的图描绘了一个典型的移动导航场景。
+在应用程序的不同屏幕之间移动的行为被称为导航。根据其尝试显示的信息，每个移动应用都有其独特的导航架构。下面的图描绘了一个典型的移动导航场景。
 
 ![](img/42004012abc3006b81bee3fbecfb4ef0_185_0.png)
 
@@ -4460,9 +4393,9 @@ platformNativeScriptDynamic().bootstrapModule(GroceryAppModule);
 
 根据该架构，用户在使用移动导航时，主要可以进行三个方向的导航：
 
-- **向前 (Forward)：** 指移动到层级结构的下一层并选择一个屏幕。
-- **向后 (Backward)：** 指返回到层级结构之前或时间顺序之前的屏幕。
-- **横向 (Lateral)：** 在同一层级结构的屏幕之间导航被称为横向导航。
+- **向前:** 指移动到层级结构的下一层并选择一个屏幕。
+- **向后:** 指返回到层级结构之前或时间顺序之前的屏幕。
+- **横向:** 在同一层级结构的屏幕之间导航被称为横向导航。
 
 在导航选择方面，NativeScript 与 Angular 的结合非常强大。Angular 拥有其众为人知的导航系统以及路由器。而 NativeScript 则为开发者提供了访问原生移动导航模式的能力。由于集成的性质，我们可以采用其中任何模式，或使用最符合我们需求的组合。在接下来的章节中，我们将展示如何实现几种移动导航模式。
 
@@ -4474,7 +4407,7 @@ platformNativeScriptDynamic().bootstrapModule(GroceryAppModule);
 
 应用组件。
 
-在移动端术语中，这被称为枢纽导航模式（hub navigation pattern），其中我们有一个屏幕，可以导航到应用程序的所有功能。我们将结合使用 `router-outlet`、`nsRouterLink` 指令以及 Angular Location 类的 `back()` 函数。下面的代码示例仅显示了两个组件。更详细的示例，请参见下方的 playground 演示。
+在移动端术语中，这被称为枢纽导航模式，其中我们有一个屏幕，可以导航到应用程序的所有功能。我们将结合使用 `router-outlet`、`nsRouterLink` 指令以及 Angular Location 类的 `back()` 函数。下面的代码示例仅显示了两个组件。更详细的示例，请参见下方的 playground 演示。
 
 **APP-ROUTING.MODULE.TS**
 
@@ -4613,11 +4546,6 @@ export class HubComponent implements OnInit {
 
 `BottomNavigation` 容器通过向用户展示供选标签自动处理横向导航逻辑。要创建 `BottomNavigation`，只需使用 `TabItemContent` 描述每个容器的 UI，并使用匹配的 `stripItem` 指定标题和图标（基本结构详情见此处）。`TabContentItem` 组件代表每个 UI 容器。你可以像处理其他容器一样，通过在每个容器中嵌入 `page-router-outlet` 来启用向前和向后导航。在这种情况下，需要三个兄弟出口。使用 Angular 路由器的具命名出口是此方法。
 
-
-
-
-Angular 和 NativeScript    ◾    **171**
-
 **BottomNavigation 组件还具有两个关键的侧向导航功能：**
 
 - `selectedIndex` 属性可用于程序化地在标签页之间切换。
@@ -4654,19 +4582,15 @@ const routes: Routes = [
 export class AppRoutingModule { }
 ```
 
-172    ◾    精通 NativeScript：入门指南
-
-## 模型视图导航 (Model View Navigation)
+## 模态视图导航
 
 一种常见的移动导航策略是打开一个新的全屏模态窗口导航控制器。在这种情况下，打开模态窗口象征着向新功能的侧向移动。集成的 `page-router-outlet` 然后可以用于在该功能中进行后向后操作。当我们关闭模态窗口时，我们将侧向导航回访问模态视图的地方。下面的图显示了如何使用模态视图实现这种导航范式。
 
-在 NativeScript Angular 中，我们通过向组件注入 `ModalDialogService` 并使用其 `showModal()` 函数来打开模态视图。该方法有两个参数：一个组件和一个选项对象。传递给 `showModal()` 函数的组件成为模态视图 UI 容器的基础。我们是侧向移动到该组件而不是正向，而且是在不使用路由的情况下完成的。它没有匹配的路由，我们无法在路由配置中将其注册为路由；相反，我们必须在模块中将其手动注册为 Angular 入组件（Entry Component）。
+在 NativeScript Angular 中，我们通过向组件注入 `ModalDialogService` 并使用其 `showModal()` 函数来打开模态视图。该方法有两个参数：一个组件和一个选项对象。传递给 `showModal()` 函数的组件成为模态视图 UI 容器的基础。我们是侧向移动到该组件而不是正向，而且是在不使用路由的情况下完成的。它没有匹配的路由，我们无法在路由配置中将其注册为路由；相反，我们必须在模块中将其手动注册为 Angular 入组件。
 
 ![](img/42004012abc3006b81bee3fbecfb4ef0_194_0.png)
 
-模型视图导航
-
-Angular 和 NativeScript    ◾    **173**
+模态视图导航
 
 当模态视图打开时，组件的 UI 会被渲染。为了使上面的图表生效，我们必须在模态内部创建正向导航。我们通过在组件的模板中包含一个 `page-router-outlet` 并使用组件的 `ngOnInit` 钩子跳转到模态中的第一个路由来实现。我们还给该 outlet 赋予了一个名称，因为我们将有两个模态，所以它们的 outlet 将是兄弟关系。通常，我们提倡对模态视图内的 router outlets 进行命名。
 
@@ -4705,19 +4629,16 @@ const route: Route = [
 export class AppRoutingModule { }
 ```
 
-174    ◾    精通 NativeScript：入门指南
-
-## 侧抽屉导航 (SideDrawer Navigation)
+## 侧抽屉导航
 
 NativeScript 的内置组件包括 `SideDrawer`。它允许用户打开隐藏视图（如抽屉），并完成两件事：
+
 - 使用 `page-router-outlet` 进行正向导航。
 - 打开模态视图。
 
 ![](img/42004012abc3006b81bee3fbecfb4ef0_196_0.png)
 
 侧抽屉导航
-
-Angular 和 NativeScript    ◾    **175**
 
 与 `BottomNavigation` 不同，该组件设计用于自动提供侧向导航。为了使上面的图表生效，我们将 `page-router-outlet` 插入主内容。它具有更大的灵活性。代码示例后请查看完整的 Playground 示例。
 
@@ -4750,10 +4671,7 @@ const routes: Routes = [
 export class AppRoutingModule { }
 ```
 
-
-
-
-Angular 与 NativeScript **177**
+# 数据绑定
 
 - 双向数据绑定需要用方括号和圆括号包围目标属性。
 
@@ -4773,32 +4691,34 @@ import { NativeScriptFormsModule } from "nativescript-angular/forms"
 
 `<TextField [(ngModel)]='model.mytext'></TextField>`
 
-在 Angular 中使用双向数据绑定时，有几个限制。不是使用属性名称，而是使用 `[(ngModel]` 指令来初始化双向绑定。在底层，这产生了两个基础的单向和从源到单向数据绑定：
+在 Angular 中使用双向数据绑定时，有几个限制。不是使用属性名称，而是使用 `[(ngModel)]` 指令来初始化双向绑定。在底层，这产生了两个基础的单向和从源到单向数据绑定：
 
 `<TextField [(ngModel)]='model.mytext' ></TextField>`
+
 <!-- 变为 -->
+
 `<TextField [ngModel]='model.mytext' (ngModelChange)='model.mytext=$event'></TextField>`
 
 这就是 Angular 处理双向数据绑定的方式。它在几乎所有情况下都有效，但我们只能使用双向数据绑定一个属性（对于 TextField 来说，就是 text 属性）。
 
-`[(ngModel]` 指令还提供了一个双向更新属性的接口。NativeScript-Angular 插件提供了底层架构，允许所有 NativeScript 控件使用 `ngModel` 指令启用原生控件（与 Angular 语法相同）。这是通过每个控件定义一个可以使用 `ngModel` 语法的单值属性来实现的。以下是可访问的属性：
+`[(ngModel)]` 指令还提供了一个双向更新属性的接口。NativeScript-Angular 插件提供了底层架构，允许所有 NativeScript 控件使用 `ngModel` 指令启用原生控件（与 Angular 语法相同）。这是通过每个控件定义一个可以使用 `ngModel` 语法的单值属性来实现的。以下是可访问的属性：
 
 - TextField、TextView 和 SearchBar 都有 text 属性。
 - DatePicker 是一个日期选择器。
 - TimePicker 是一个时间相关的属性。
 - ListPicker 和 SegmentedBar 有一个名为 selectedIndex 的属性。
-- switch 有 checked 属性。
+- Switch 有 checked 属性。
 - Slider 是一个 Value 属性。
 
-### 插值
+## 插值
 
-NativeScript-Angular 也可以使用 Angular 的大须括号语法 `({{}})` 进行绑定，这通常被称为插值。它仅仅是使用在文本中间的另一种类型的单向绑定。
+NativeScript-Angular 也可以使用 Angular 的大须括号语法 `{{}}` 进行绑定，这通常被称为插值。它仅仅是使用在文本中间的另一种类型的单向绑定。
 
 `<Label text='{{model.deliveryHour}}:{{model.deliveryMinute}}'></Label>`
 
-### 数据转换器
+## 数据转换器
 
-数据模型 内部的数据通常以优化搜索、替换等操作的最优性能的方式存储。遗憾的是，计算机存储数据的方式与人类可读的格式有显著差异。Date 对象可能是最好的例子。JavaScript 中的 Date 是一个极大的数字，代表自 1970 年 1 月 1 日以来的毫秒，这对于人类来说没有任何意义。这就是数据转换器的用武之地，它们本质上是以人类可读的方式格式化数据（来自 Model 并显示在 UI）的函数。
+数据模型内部的数据通常以优化搜索、替换等操作的最优性能的方式存储。遗憾的是，计算机存储数据的方式与人类可读的格式有显著差异。Date 对象可能是最好的例子。JavaScript 中的 Date 是一个极大的数字，代表自 1970 年 1 月 1 日以来的毫秒，这对于人类来说没有任何意义。这就是数据转换器的用武之地，它们本质上是以人类可读的方式格式化数据（来自 Model 并显示在 UI）的函数。
 
 Angular 采用了相同的概念并将其称为 pipe（类似于 UNIX 管道）——向 pipe 函数提供一个值，对其进行更改，并将最终结果显示给用户。使用 pipe 非常简单，并遵循与 UNIX 管道相同的语法。
 
@@ -4808,11 +4728,11 @@ Angular 采用了相同的概念并将其称为 pipe（类似于 UNIX 管道）�
 
 `<Label [text]='model.deliveryDate | date:"fullDate" | testPipe' ></Label>`
 
-## 使用插件
+# 使用插件
 
 NativeScript 插件是添加了一些原生功能的 npm 包。因此，查找、安装和删除 NativeScript 插件与处理 Node.js 或前端 Web 开发中的 npm 包相似的。
 
-### 查找插件
+## 查找插件
 
 NativeScript 团队运行着一个官方市场，该市场提供了与 NativeScript 连接的 npm 插件过滤列表。市场中列出的所有插件都带有描述其质量的信息。在插件市场中搜索“accelerometer”将引导我们找到所需的插件。
 
@@ -4822,13 +4742,13 @@ NativeScript 团队运行着一个官方市场，该市场提供了与 NativeScr
 
 此外，检查一下 NativeScript 核心模块，它们作为每个 NativeScript 项目的依赖项分发。我们想要的功能可能已经内置。如果我们仍然找不到想要的内容，可以在 NativeScript 社区论坛中以想法的形式提交插件请求，或者尝试自己构建它。
 
-### 安装插件
+## 安装插件
 
 一旦确定了插件，请使用 `tns plugin add` 命令将其包含在我们的项目中：
 
 `tns plugin add <pluginname>`
 
-例如，以下命令安装 NativeScript 相：
+例如，以下命令安装 NativeScript 相机插件：
 
 `tns plugin add @nativescript/camera`
 
@@ -4836,15 +4756,15 @@ NativeScript 团队运行着一个官方市场，该市场提供了与 NativeScr
 
 `npm install @nativescript/camera`
 
-### 将插件作为开发依赖安装
+## 将插件作为开发依赖安装
 
-上述的 `tns plugin add` 命令在后台执行 `npm install`。如果我们需要安装开发依赖（例如 @nativescript/types 或 @nativescript/webpack），我们必须显式地将其保存为 devDependency。使用带有 `--save-dev` 参数的 npm install 命令来实现。例如：
+上述的 `tns plugin add` 命令在后台执行 `npm install`。如果我们需要安装开发依赖（例如 `@nativescript/types` 或 `@nativescript/webpack`），我们必须显式地将其保存为 devDependency。使用带有 `--save-dev` 参数的 npm install 命令来实现。例如：
 
 `npm i @nativescript/types --save-dev`
 
-### 导入和使用插件
+## 导入和使用插件
 
-安装所需的插件后，你就可以在项目中使用它。需要注意的是，每个插件可能有其设置要求；因此，请务必阅读插件的说明和 README 文件。下面的代码示例演示了 @nativescript/camera 插件的基础原理。
+安装所需的插件后，你就可以在项目中使用它。需要注意的是，每个插件可能有其设置要求；因此，请务必阅读插件的说明和 README 文件。下面的代码示例演示了 `@nativescript/camera` 插件的基础原理。
 
 ```typescript
 import { requestPermissions } from "@nativescript/camera";
@@ -4852,7 +4772,7 @@ import { requestPermissions } from "@nativescript/camera";
 requestPermissions();
 ```
 
-### 移除插件
+## 移除插件
 
 从命令行运行以下命令从项目中删除 NativeScript 插件：
 
@@ -4862,18 +4782,10 @@ requestPermissions();
 
 `tns plugin remove @nativescript/camera`
 
-
-
-
-
-**183**
-
-DOI: 10.1201/9781003299394-5
-
-## 第5 章
-## 深入探索
+# 第5章 深入探索
 
 本章内容
+
 - Android 模拟器技巧
 - 自定义 webpack 配置
 - 创建自定义 UI 控件
@@ -4882,28 +4794,28 @@ DOI: 10.1201/9781003299394-5
 
 在上一章中，我们学习了如何使用 Angular 和 Angular 组件以及路由创建应用，还涵盖了 Angular 数据绑定、服务和插件。本章将涵盖 Android 模拟器、UI 控件、样式和惯例，以及 NativeScript 中的 CLI。
 
-### 安装 Android 模拟器
+## 安装 Android 模拟器
 
 除了使用真实的 Android 设备外，下载、安装和使用 Android 模拟器也是可行的方案。所有通过 `tns device` 命令连接并识别的 Android 模拟器都可以在 NativeScript 中使用。该命令的详情可以在 `tns device` 部分找到。
 
 **提示：** 模拟器的启动可能需要一些时间。作为最佳实践，请在执行其他 CLI 命令之前启动模拟器，以尽量减少时间上的同步问题。启动模拟器后，请保持其打开状态，以避免在我们需要部署 Android 应用时出现初始加载耗时。
 
-**184** 精通 NativeScript：初学者指南
-
-### 在 Android Studio 中创建 Android 虚拟设备
+## 在 Android Studio 中创建 Android 虚拟设备
 
 请参考关于创建和管理虚拟设备的官方指南，该指南涵盖了在 Android Studio 中下载、安装和使用 Android 模拟器的过程。
 
-**注意：** 如果我们的顶层“工具 (Tools)”菜单中缺少“Android”选项（这是 >3.0.0 版本的常见问题），请遵循此 Stack Overflow 回答中的说明，将其添加到工具栏并激活 AVD Manager。
+**注意：** 如果我们的顶层“工具”菜单中缺少“Android”选项（这是 >3.0.0 版本的常见问题），请遵循此 Stack Overflow 回答中的说明，将其添加到工具栏并激活 AVD Manager。
 
-### 使用命令行工具创建 Android 虚拟设备
+## 使用命令行工具创建 Android 虚拟设备
 
-`avdmanager` 是一个用于创建和管理 Android 虚拟设备（AVD）的命令行程序。`avdmanager` 工具包含在 Android SDK Tools 包（25.3.0 及以上）中，可以在 $ANDROID_HOME/tools/bin/ 找到。请查看官方 avdmanager 文档获取有关 avdmanager 以及如何使用它构建 AVD 的更多信息。
+`avdmanager` 是一个用于创建和管理 Android 虚拟设备（AVD）的命令行程序。`avdmanager` 工具包含在 Android SDK Tools 包（25.3.0 及以上）中，可以在 `$ANDROID_HOME/tools/bin/` 找到。请查看官方 avdmanager 文档获取有关 avdmanager 以及如何使用它构建 AVD 的更多信息。
 
 要构建新的 AVD，请使用以下命令语法：
 
-`$ cd $ANDROID_HOME/tools/bin`
-`$ avdmanager create avd -n name -k "sdk_id" [-c {path|size}] [-f] [-p path]`
+```bash
+$ cd $ANDROID_HOME/tools/bin
+$ avdmanager create avd -n name -k "sdk_id" [-c {path|size}] [-f] [-p path]
+```
 
 我们必须为 AVD 指定一个名称，并使用引号括起的 `sdk_id` 指定用于该 AVD 的 SDK 包 ID。例如，以下命令构建了一个名为 test、使用 API 级别 25 的 x86 映像 AVD：
 
@@ -4912,25 +4824,24 @@ DOI: 10.1201/9781003299394-5
 需要注意的是，该命令表明系统镜像尚未下载。请使用 `sdkmanager` 下载镜像。`sdkmanager "system-images;android-25;google apis;x86"` 是一个示例。
 
 以下说明了如何使用其他选项：
-- -c path|size：指向此 AVD 的 SD 卡镜像的路径，或为此 AVD 生成新 SD 卡镜像的大小，单位为 KB 或 MB，用 K 或 M 表示。例如，`-c path/to/sdcard/` 或 `-c 1000M`。
-- -f：强制创建 AVD。如果我们需要用同名的新 AVD 替换现有 AVD，请使用此选项。
-- -p path：生成此 AVD 文件的目录路径。如果未指定路径，AVD 将生成在 ~/.android/avd/ 下。
+
+- `-c path|size`：指向此 AVD 的 SD 卡镜像的路径，或为此 AVD 生成新 SD 卡镜像的大小，单位为 KB 或 MB，用 K 或 M 表示。例如，`-c path/to/sdcard/` 或 `-c 1000M`。
+- `-f`：强制创建 AVD。如果我们需要用同名的新 AVD 替换现有 AVD，请使用此选项。
+- `-p path`：生成此 AVD 文件的目录路径。如果未指定路径，AVD 将生成在 `~/.android/avd/` 下。
 
 可以使用 `list` 命令显示所有已下载的系统镜像列表。
 
 `avdmanager list`
 
-**185** 深入探索
+## 自定义 webpack 配置
 
-### 自定义 webpack 配置
+### 到底什么是 webpack 配置？
 
-#### 到底什么是 webpack 配置？
+webpack 配置 `webpack.config.js` 提供了生成 NativeScript 应用 JavaScript 部分所需的所有配置、插件、加载器和要求。该文件位于 NativeScript 应用的根目录下。由于不同类型（Angular, Vue.js, React, TypeScript, JavaScript）在应用中处理文件的方式不同，文件内容也所不同。默认配置文件来自 `@nativescript/webpack` 插件在后安装阶段（或当我们运行项目 `dir/node_modules/.bin/` 目录下的 `update-ns-webpack --configs` 脚本时）。
 
-webpack 配置 `webpack.config.js` 提供了生成 NativeScript 应用 JavaScript 部分所需的所有配置、插件、加载器和要求。该文件位于 NativeScript 应用的根目录下。由于不同类型（Angular, Vue.js, React, TypeScript, JavaScript）在应用中处理文件的方式不同，文件内容也所不同。默认配置文件来自 @nativescript/webpack 插件在后后安装阶段（或当我们运行项目 `dir/node_modules/.bin/` 目录下的 `update-ns-webpack --configs` 脚本时）。
+我们正在不断增强默认 `webpack.config.js` 文件的内容；因此，我们实现了一个检查，查看应用程序的 `webpack.config.js` 文件是否与新的默认文件不同，如果是则显示警告。然而，在许多情况下，我们需要在 `webpack.config.js` 文件中添加某些特定逻辑，例如我们有特定的文件需要传输或自定义的 Android Activity。在这种情况下，每当我们更新 `@nativescript/webpack` 时都会出现上述警告。
 
-我们正在不断增强默认 `webpack.config.js` 文件的内容；因此，我们实现了一个检查，查看应用程序的 `webpack.config.js` 文件是否与新的默认文件不同，如果是则显示警告。然而，在许多情况下，我们需要在 `webpack.config.js` 文件中添加某些特定逻辑，例如我们有特定的文件需要传输或自定义的 Android Activity。在这种情况下，每当我们更新 @nativescript/webpack 时都会出现上述警告。
-
-#### 如何使用自定义配置
+### 如何使用自定义配置
 
 我们可以在 NativeScript 中使用自定义的 webpack。要实现这一点，我们需要在 `nsconfig.json` 中设置 `webpackPath`：
 
@@ -4940,9 +4851,8 @@ webpack 配置 `webpack.config.js` 提供了生成 NativeScript 应用 JavaScrip
 }
 ```
 
-**186** 精通 NativeScript：初学者指南
+#### 第一个示例
 
-**第一个示例：**
 ```javascript
 const webpackConfig = require("./webpack.config");
 
@@ -4955,17 +4865,17 @@ module.exports = (env) => {
 **注意：** 虽然我们不强制使用默认配置，但我们建议这样做。
 
 **执行：**
+
 `$ tns run <platform>`
 
 **可选：** 从应用中删除 `webpack.config.js` 并将其添加到 .gitignore – 如果我们不再想看到针对不同 webpack 的警告，可以安全地从应用中移除 `webpack.config.js` 并加入 .gitignore。
-
-**187** 深入探索
 
 #### 将新资源添加到待复制列表中
 
 如果我们希望为应用添加更多资源，可以使用以下方法：
 
-**第二个示例：**
+**第二个示例**
+
 ```javascript
 const webpackConfig = require("./webpack.config");
 const CopyWebpackPlugin = require("copy-webpack-plugin");
@@ -4982,7 +4892,7 @@ module.exports = env => {
 
 #### 自定义应用和 Activity (Android)
 
-如果我们为 Android 有了自定义的 Application和 Activity，可以完成以下操作：
+如果我们为 Android 有了自定义的 Application 和 Activity，可以完成以下操作：
 
 ```javascript
 const webpackConfig = require("./webpack.config");
@@ -5000,19 +4910,12 @@ module.exports = env => {
 };
 ```
 
-
-
-
-
-## 1. 精通 NativeScript：入门指南
-
 ### 为特定文件添加更多规则
 
 如果我们希望对某些文件进行进一步处理：
 
 ```javascript
 const webpackConfig = require("./webpack.config");
-
 const path = require("path");
 
 module.exports = env => {
@@ -5049,7 +4952,6 @@ module.exports = env => {
 
 ```javascript
 const webpackConfig = require("./webpack.config");
-
 const path = require("path");
 
 module.exports = env => {
@@ -5067,11 +4969,11 @@ module.exports = env => {
 };
 ```
 
-## 深入探索
-
 在这个示例中，我们展示了如何在开发 iOS 版本时禁用 HotModuleReplacement 插件。
 
 ### iOS APP 扩展
+
+
 
 iOS App 扩展允许用户从 iOS 的任何地方访问应用程序的功能和内容。App 扩展允许用户在不启动应用程序的情况下与其他程序交互，同时访问应用程序的功能。最新版本的 Xcode 中有 25 多种不同的 App 扩展模板。它们涵盖共享、照片编辑、文件系统访问、小组件、自定义警告、操作、自定义键盘等许多功能。每个扩展都是应用程序的一个组件，但它们也可以独立运行。
 
@@ -5086,12 +4988,15 @@ NativeScript CLI 5.3.0 包含了对 iOS App 扩展的 Beta 支持。虽然扩展
 **前提条件：**
 
 - 已生成的 App 扩展。
+
 - 现有的 NativeScript 应用程序，我们可以使用 `tns create` 命令构建一个用于测试的基础应用程序：`tns create today-extension --tsc`
 
 要整合 App 扩展，请遵循以下步骤：
 
 1. 在 `/app/App_Resources/iOS/` 下创建一个名为 `extensions` 的文件夹。
+
 2. 在 `extensions` 文件夹中创建一个包含扩展文件的主文件夹。例如，创建一个名为 `TestExtension` 的文件夹，其中包含所有扩展文件。
+
 3. 在 `TestExtension` 文件夹（存储扩展文件的地方）创建一个名为 `extension.json` 的文件。该配置文件指定了扩展中使用的 SDK 框架（通过 `frameworks` 键）以及用于扩展图标的可选图像资源（通过 `assetcatalogCompilerAppiconName` 键）。
 
 例如：
@@ -5104,7 +5009,9 @@ NativeScript CLI 5.3.0 包含了对 iOS App 扩展的 Beta 支持。虽然扩展
 ```
 
 - `frameworks` 是一个键，其值为框架名称数组。
+
 - `assetcatalogCompilerAppiconName` 键 – 其值是扩展文件夹内 `.xcassets` 目录下的 `.appiconset` 名称（上述示例中的 `AppIconExtension.appiconset`）。
+
 4. 重新编译程序，我们的扩展就可以使用了。
 
 #### 为插件添加 App 扩展
@@ -5118,11 +5025,15 @@ NativeScript CLI 5.3.0 包含了对 iOS App 扩展的 Beta 支持。虽然扩展
 **基本要求：**
 
 - 支持 NativeScript CLI 5.4 及以上版本
+
 - NativeScript 项目
+
 - Xcode 10 及更高版本
+
 - 已配对或模拟的设备（运行 WatchOS 4.x/5.x 或更高版本的 iPhone 和 iWatch）
 
 请记住，用 Xcode 生成的默认 Watch App 将在 WatchOS 4.x 上运行。用户必须在配置 json 中显式指定 WATCHOS DEPLOYMENT TARGET。
+
 - 使用 Objective-C 构建 WatchOS 应用程序（目前尚不支持 Swift 代码）。
 
 #### 用于 WatchOS 的 NativeScript 应用程序
@@ -5130,12 +5041,19 @@ NativeScript CLI 5.3.0 包含了对 iOS App 扩展的 Beta 支持。虽然扩展
 执行以下步骤将您当前的 WatchOS 应用程序整合到您的 NativeScript 应用程序中：
 
 - 使用 Xcode 创建 Single View App（单一视图应用）。
+
 - 通过 File > New > Target 添加一个 WatchKit target。
+
 - 选择 WatchOS application 模板。
+
 - 为应用命名，例如 MyWatchApp。
+
 - 在 `Info.plist` 中，必须显式指定 `WATCHOS_DEPLOYMENT_TARGET`。
+
 - 使用 Objective-C 作为编程语言。
+
 - 将 `App.xcassets` 拷贝到 `App_Resources/iOS/Resources/MyWatchApp`。
+
 - 更新 `config.json` 文件：
 
 ```json
@@ -5145,10 +5063,6 @@ NativeScript CLI 5.3.0 包含了对 iOS App 扩展的 Beta 支持。虽然扩展
 }
 ```
 
-
-
-
-
 ## 精通 NativeScript：初学者指南
 
 ### 布尔值 (Boolean)
@@ -5156,12 +5070,14 @@ NativeScript CLI 5.3.0 包含了对 iOS App 扩展的 Beta 支持。虽然扩展
 在 Android 上，布尔值会被隐式转换为 iOS 上的 boolean 和 BOOL，反之亦然。
 
 - **iOS**
+
 ```javascript
 let str = NSString.stringWithString('YES');
 let isTrue = str.boolValue();
 ```
 
 - **Android**
+
 ```javascript
 let str = new java.lang.String('Hello everyone');
 let result = str.endsWith(' everyone ');
@@ -5173,6 +5089,7 @@ console.log(result); // true
 Android 上的 JavaScript 数组对应于特定的 Java 数组，iOS 则对应 NSArray。
 
 - **iOS**
+
 ```javascript
 let nsArray = NSArray.arrayWithArray(['Fours', 'Fives', 'Twos', 'Sevens']);
 let jsArray = ['Ones', 'Twos', 'Threes']; // Pure JavaScript 数组
@@ -5181,7 +5098,9 @@ console.log(firstCommon); // Twos
 ```
 
 - **Android**
+
 代码展示了如何从 JavaScript 调用 `ns.example.Math.minElement(int[] array)`：
+
 ```javascript
 let numbers = [4, 5, 18, -2, 5, 7];
 let min = ns.example.Math.minElement(numbers); // -2
@@ -5196,6 +5115,7 @@ let min = ns.example.Math.minElement(numbers); // -2
 ### 在 iOS 上使用类和对象
 
 这是一个在 JavaScript 中创建和使用 `NSMutableArray` 类实例的示例：
+
 ```javascript
 let array = new NSMutableArray();
 array.addObject(new NSObject());
@@ -5210,6 +5130,7 @@ array.addObject(new NSObject());
 我们肯定会遇到以 `NSDictionary` 对象作为参数的方法。创建 `NSDictionary` 实例有几种方法：
 
 - 使用 `NSDictionary` 和数组来传输键和值。
+
 ```javascript
 let dict = new NSDictionary([".example.com", "cookieName", "/", "cookieValue"],
 [NSHTTPCookieDomain, NSHTTPCookieName, NSHTTPCookiePath, NSHTTPCookieValue]);
@@ -5217,6 +5138,7 @@ let cookie = NSHTTPCookie.cookieWithProperties(dict);
 ```
 
 - 使用 JSON 字面量
+
 ```javascript
 let cookie = NSHTTPCookie.cookieWithProperties({[NSHTTPCookieDomain]:".example.com", [NSHTTPCookieName]:"cookieName", [NSHTTPCookiePath]:"/", [NSHTTPCookieValue]:"cookieValue"});
 ```
@@ -5226,24 +5148,27 @@ let cookie = NSHTTPCookie.cookieWithProperties({[NSHTTPCookieDomain]:".example.c
 在 Android 上，我们可能会处理类和对象：
 
 代码演示了如何在 JavaScript 中创建 `android.widget.Button` 实例：
+
 ```javascript
 let context = ...;
 let button = new android.widget.Button(context);
 button.setText("My Button");
 ```
 
-正如我们看到的，原生 Java 类型通过它们各自的包可用。句话说，要访问原生 Java 类型，只需要知道并显式说明它所在的包。原生 Java 方法的访问方式与 JavaScript 方法相同：调用方法标识符并传递必要的参数。
+正如我们看到的，原生 Java 类型通过它们各自的包可用。换句话说，要访问原生 Java 类型，只需要知道并显式说明它所在的包。原生 Java 方法的访问方式与 JavaScript 方法相同：调用方法标识符并传递必要的参数。
 
 ### 未定义 (Undefined) 和空 (Null)
 
-JavaScript 中的 `undefined` 和 `null` 对应 Java 的 `null` 指针和 Objective-C 的 `nil`。原生空值对应 JavaScript 的 `null` 值。
+JavaScript 中的 `undefined` 和 `null` 对应 Java 的 `null` 指针和 Objective-C 的 `nil`。原生空值对应 JavaScript的 `null` 值。
 
 - **iOS**
+
 ```javascript
 console.log(NSStringFromClass(null));
 ```
 
 - **Android**
+
 ```javascript
 let context = ...;
 const button = new android.widget.Button(context);
@@ -5261,18 +5186,21 @@ button.setOnClickListener(undefined);
 **注意：** 为了防止在输出构建文件中包含巨大的声明文件，请始终将插件作为开发依赖安装（使用 `npm i @nativescript/types --save-dev` 选项）。
 
 在项目根目录下创建 `reference.d.ts` 并添加以下内容：
+
 ```typescript
 /// <reference path="node_modules/@nativescript/types/index.d.ts" />
 ```
 
-`android.d.ts` 文件默认带有为 API  17 生成的类型。作为 Android 开发人员，我们可能需要访问更高 API 级别的类、方法或属性。`@nativescript/types` 插件包含了从 API 17 到 27 所有级别的生成的类型以及来自相关支持库的相关类型。要使用特定 Android 级别的类型，请将对默认文件的引用替换为我们选择的文件。每个 API 级别的文件都以破折号开头加上 API 级别数字（例如，对于 API 21，文件名为 `android-21.d.ts`）。
+`android.d.ts` 文件默认带有为 API 17 生成的类型。作为 Android 开发人员，我们可能需要访问更高 API 级别的类、方法或属性。`@nativescript/types` 插件包含了从 API 17 到 27 所有级别的生成的类型以及来自相关支持库的相关类型。要使用特定 Android 级别的类型，请将对默认文件的引用替换为我们选择的文件。每个 API 级别的文件都以破折号开头加上 API 级别数字（例如，对于 API 21，文件名为 `android-21.d.ts`）。
 
 假设我们正在构建一个 API 21 的应用程序并需要相应的类型：
+
 ```typescript
 /// <reference path="node_modules/@nativescript/types/android-21.d.ts" />
 ```
 
 **注意：** 使用较新的 API 级别时应小心。如果尝试利用目标设备未支持的功能，程序将会崩溃。**修改 tsconfig.json 中的以下值：**
+
 ```json
 {
   "compilerOptions": {
@@ -5283,6 +5211,7 @@ button.setOnClickListener(undefined);
   }
 }
 ```
+
 需要注意的是，d.ts 文件会消耗大量的内存和 CPU 资源。考虑在 `tsconfig.json` 中添加 `skipLibCheck` 。
 
 ## 元数据 (METADATA)
@@ -5296,6 +5225,7 @@ NativeScript 默认包含所有支持的实体。这允许应用和插件开发�
 **插件的元数据过滤规则：**
 
 插件可以通过 `native-api-usage.json` 文件指定它们所调用的 API 列表，该文件位于每个平台目录（platforms/android 或 platforms/ios）。它遵循以下格式：
+
 ```json
 {
   "uses": [
@@ -5307,6 +5237,7 @@ NativeScript 默认包含所有支持的实体。这允许应用和插件开发�
 **应用的元数据过滤规则：**
 
 应用程序对使用什么元数据过滤拥有最终决定权。它们提供 `native-api-usage.json` 文件，格式如下，位于 App_Resources/Android 和 App_Resources/iOS：
+
 ```json
 {
   "whitelist-plugins-usages": true,
@@ -5315,10 +5246,6 @@ NativeScript 默认包含所有支持的实体。这允许应用和插件开发�
   ]
 }
 ```
-
-
-
-
 
 深入探索    ◾     **199**
 
@@ -5346,16 +5273,20 @@ pattern1 与 Android 上的 Java 包名匹配，而匹配的 pattern2 则与类�
 
 ## 规则语义
 
-在评估平台的过滤标准后，N CLI 会在原生项目中生成最终的白名单和黑名单文件，供相应的元数据生成器使用。黑名单始终与应用设置的黑名单一致。而 `whitelist-plugins-usages` 标志决定了白名单：
+在评估平台的过滤标准后，N CLI 会在原生项目中生成最终的白名单和黑名列文件，供相应的元数据生成器使用。黑名单始终与应用设置的黑名单一致。而 `whitelist-plugins-usages` 标志决定了白名单：
 
 - 如果正确，最终的白名单是所有插件的使用列表与应用白名单的合并。
+
 - 否则，它等同于应用的白名单。
 
 这两个列表明确地规定了如何执行过滤：
 
 - 如果白名单为空，则假设所有内容都在白名单中。
+
 - 如果包含至少一条规则，则只有匹配规则的实体才被视为白名单内。
+
 - 所有不在白名单内或符合黑名单规则的实体都将从元数据中移除。
+
 - 元数据包含所有其他实体。
 
 **200**    ◾     精通 NativeScript：入门指南
@@ -5365,22 +5296,31 @@ pattern1 与 Android 上的 Java 包名匹配，而匹配的 pattern2 则与类�
 缺少元数据实体会导致运行时错误。例如，如果一个原生类被误过滤掉；其构造方法将是未定义的（undefined），导致调用时抛出异常。由于未定义的原因可能各异，确定具体原因可能是挑战性的。构建成功后，检查元数据生成器的详细日志（verbose logs），查看是否是元数据过滤的问题：
 
 - 在 iOS 上，查找 `platforms/ios/build/<configuration>-<platform>/metadata-generation-stderr-<arch>.txt`（例如：`platforms/ios/build/Debug-iphonesimulator/metadata-generation-stderr-x86_64.txt`）。
+
 - 在 Android 上，它们可以在 `platforms/android/build-tools/buildMetadata.log` 中找到。
+
 - 对于生成器检测到的每个全局符号，都应该有一行指示其是否被包含在元数据中，以及是否由于规则或异常导致。
 
 **示例：**
 
 - **verbose:** 从 CoreFoundation 黑名单了 kCFBuddhistCalendar。CFLocale（被‘CoreFoundation*:*’ 禁用）——当不存在白名单规则时，黑名单符号只会显示禁用它的规则。
+
 - **verbose:** 从 Foundation.NSString 黑名单了 NSString – 只要至少存在一条白名单规则时，某些黑名单符号不会定义规则。这意味着该符号不符合任何白名单标准。
+
 - **verbose:** 从 Photos.PhotosTypes 黑名单了 PHImageContentModeDefault（被‘Photos.PhotosTypes:*’ 启用，被‘Photos.PhotosTypes:PHImageContentMode*’ 禁用）。
+
 - **verbose:** 从 java.lang 黑名单了 String（被 java.lang:* 启用，被 java.lang:String 禁用）——同时满足白名单规则和黑名单规则的黑名单条目在这两种情况下都会指定。
+
 - **verbose:** 从 ObjectiveC.NSObject 包含了 NSObject —— 当没有白名单规则时，包含的符号不会标识允许包含的规则。
 
 **201**    ◾     深入探索
 
 - **verbose:** 从 Photos.PhotosTypes 包含了 PHCollectionListType（被‘Photos.PhotosTypes:*’ 启用）。
+
 - **verbose:** 从 java.lang 包含了 StrictMath（被 java.lang:* 启用）—— 当符号因为匹配了白名单规则（但未匹配任何黑名单规则）而可以包含时，会打印该规则。
-- **verbose:** Exception [Name: ‘vfwprintf’, JsName: ‘vfwprintf’, Module: ‘Darwin.C.wchar’, File: ‘/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/wchar.h’]: 无法创建类型依赖。 –> [Type Decayed]: 无法创建类型依赖。 –> [Type Typedef]: 不支持 VaList 类型。 – 如果符号因为某种原因未被包含，日志中的错误将提到此。由于 {N} 不允许调用带有可变参数列表的函数，在这种情况下无法从 JavaScript 中使用该符号。
+
+- **verbose:** Exception [Name: ‘vfwprintf’, JsName: ‘vfwprintf’, Module: ‘Darwin.C.wchar’, File: ‘/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/wchar.h’]: 无法创建类型依赖。 –> [Type Decayed]: 无法创建类型依赖。 –> [Type Typedef]: 不支持 VaList 类型。 – 如果符号因为某种原因未被包含，日志中的错误将提到此。由于 {N} 不允许调用带有可变参数列列表的函数，在这种情况下无法从 JavaScript 中使用该符号。
+
 - **verbose:** Exception [Name: ‘GLKVector3Make’, JsName: ‘GLKVector3Make’, Module: ‘GLKit.GLKVector3’, File: ‘/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/GLKit.framework/Headers/GLKVector3.h’]: 无法创建类型依赖。 –> [Type Typedef]: 不支持 VaList 类型。 – 如果符号因为某种原因未被包含，日志中的错误将提到此。由于 {N} 不允许调用带有可变参数列表的函数，在这种情况下无法从 JavaScript 中使用该符号。
 
 ## 内存管理
@@ -5388,18 +5328,19 @@ pattern1 与 Android 上的 Java 包名匹配，而匹配的 pattern2 则与类�
 在本部分中，我们将讨论 JavaScript 和原生运行时的复杂性。NativeScript 使用三个带有垃圾回收的虚拟机：Android VM、Android V8 以及 iOS 的 JavaScriptCore。
 
 - **弱引用/强引用：** 实例可以对另一个实例建立弱引用或强引用。如果从一个实例到另一个实例存在强引用路径（由栈变量、静态字段持有），则第二个实例无法被收集。然而，弱引用可以。
+
 - **原生实例:** Objective-C 类 (iOS) 或 Java 类 (Android)。
+
 - **引用计数：** Objective-C Runtime 使用引用计数来管理生命周期。每设置一次强引用，计数加一。当更新强引用时，计数减少。
+
 - **GC:** 它代表垃圾回收。当 GC 运行运行时，它首先阻塞所有线程以发现所有对象。最后，它清理不可达的实例。
+
 - **Splice（接）:** 我们引入一个新的 NativeScript 术语：splice。原生实例与其 JavaScript 等价之间建立的连接。在某些情况下，splice 在原生端实例化（例如 AppDelegate 类、Android 的 Application、Activity 和 Fragment 类）。
-
-
-
-
 
 ## 204 精通 NativeScript：入门指南
 
 - 当原生实例作为参数传递给 JavaScript 构造函数、方法、属性、块、匿名接口、lambda 等时。
+
 - 当 JavaScript 扩展的原生类在原生环境或 JavaScript 环境中实例化时。
 
 ### iOS
@@ -5413,7 +5354,9 @@ JavaScriptCore 提供了一个用于保护 JavaScript 实例的 API，可以将�
 splice 会将 Objective-C 实例的引用计数加 1，如果引用计数显著大于 1，则该 splice 会将 JavaScript 实例设为强引用。从那时刻起：
 
 - 当 Objective-C 实例的引用计数从 1 增加到 2 时，splice 会加强其对 JavaScript 实例的弱引用。
+
 - 如果 Objective-C 实例的引用计数从 2 减少到 1，splice 会将其对 JavaScript 实例的强引用转换为弱引用。
+
 - 只有当 Objective-C 实例的引用计数为 1 时，splice 才对 JavaScript 实例持有弱引用，使得该 JavaScript 实例适合被垃圾回收。如果 GC 无法从存活的 JavaScript 对象访问此 JavaScript 实例，它将将其标记为待收集。之后，当 JSC 终结 JavaScript 实例时，splice 会调度减少 Objective-C 实例的引用计数，最终释放它并销毁 splice。
 
 ## 深度解析 **205**
@@ -5435,7 +5378,9 @@ splice 会将 Objective-C 实例的引用计数加 1，如果引用计数显著�
 Page -> StackPanel -> Button
 
 | .ios | .ios | .ios |
+
 | :--- | :--- | :--- |
+
 | UIViewController | UIView | UIButton |
 
 ## 206 精通 NativeScript：入门指南
@@ -5455,7 +5400,9 @@ Android 中的 Java 和 JavaScript 虚拟机都是基于 GC 的。为了订阅 G
 Android splice 有三种类型：
 
 - 当 splice 被指定为收集时，Java 实例将变为弱引用。
+
 - 如果 JavaScript 实例被指定为收集，它包含一个对象，则 JavaScript 实例会被复活。
+
 - 如果 splice 在前面的阶段未被标记为“实现可用”（implementation accessible），则对其 Java 实例的引用将变为弱引用。
 
 ## 深度解析 **207**
@@ -5467,7 +5414,9 @@ Android 中的 Java 和 JavaScript 虚拟机都是基于 GC 的。为了订阅 G
 Android splice 有三种类型：
 
 - 当 splice 被指定为收集时，Java 实例将变为弱引用。
+
 - 如果 JavaScript 实例被指定为收集，它包含一个对象，则 JavaScript 实例会被复活。
+
 - 如果 splice 在前面的阶段未被标记为“实现可用”，则对其 Java 实例的引用将变为弱引用。
 
 ## 208 精通 NativeScript：入门指南
@@ -5491,13 +5440,14 @@ Android splice 有三种类型：
 可能会产生多个 splice 和 JavaScript 实例；但属性可能会丢失。从缺少实现对象的 splice 获取 JavaScript 实例很容易。考虑以下执行序列：
 
 - 在 JavaScript 中，通过获取现有的 Java 实例构造 splice。
+
 - 使用它进行工作，并为其分配新的 JavaScript 属性。
+
 - 移除 JavaScript 实例引用。
+
 - GC 期间，V8 收集 JavaScript 实例，splice 被释放。
+
 - 再次获取同一个 Java 实例，构造并返回带有新 JavaScript 对象的 splice。
-
-
-
 
 深入探索 **209**
 
@@ -5541,13 +5491,21 @@ NativeScript 拥有一个递归布局框架，允许您在屏幕上缩放和排�
 每个 `View` 在测量阶段被测量，以确定其目标尺寸。测量阶段评估以下属性：
 
 - 高度 (height)
+
 - 宽度 (width)
+
 - 可见性 (visibility)
+
 - 最小宽度 (minWidth)
+
 - 最小高度 (minHeight)
+
 - 上边距 (marginTop)
+
 - 左边距 (marginLeft)
+
 - 下边距 (marginBottom)
+
 - 右边距 (marginRight)
 
 ### 布局阶段
@@ -5555,10 +5513,15 @@ NativeScript 拥有一个递归布局框架，允许您在屏幕上缩放和排�
 在布局阶段，每个 `View` 被分配到一个布局槽位。视图的预期尺寸（由测量阶段定义）以及以下特征决定了该槽位：
 
 - 上边距 (marginTop)
+
 - 右边距 (marginRight)
+
 - 水平对齐 (horizontalAlignment)
+
 - 垂直对齐 (verticalAlignment)
+
 - 左边距 (marginLeft)
+
 - 下边距 (marginBottom)
 
 **211** — 深入探索
@@ -5570,7 +5533,9 @@ NativeScript 拥有一个递归布局框架，允许您在屏幕上缩放和排�
 视图与其父元素之间的距离由四个边距属性（`marginRight`, `marginTop`, `marginLeft` 和 `marginBottom`）描述。当您使用 XML 设置边距时，您可以使用以下方法之一：
 
 - **设置单个值：** 请提供一个单一值，该值将应用于视图的所有边。
+
 - **设置以下两个值：** 提供两个值。第一个值应用于顶部，第二个值应用于右侧。然后将第一个值放在底部，将第二个值放置在左侧（按此顺序）。
+
 - **设置以下四个值：** 为每个边距提供四个值。第一个值应用于顶部，第二个值应用于右侧，第三个应用于底部，第四个应用于左侧。
 
 #### *内边距 (Padding)*
@@ -5578,6 +5543,7 @@ NativeScript 拥有一个递归布局框架，允许您在屏幕上缩放和排�
 内边距属性（`paddingRight`, `paddingTop`, `paddingLeft` 和 `paddingBottom`）定义了布局容器与其子元素之间的空间。当您使用 XML 设置内边距时，我们可以选择三种技术之一：
 
 - **设置单个值：** 提供一个应用于视图所有边的单一值。
+
 - **设置以下两个值：** 提供两个值。第一个值应用于顶部，第二个值应用于右侧。然后将第一个值放在底部，将第二个值放置在左侧（按此顺序）。
 
 **212** — 精通 NativeScript：入门指南
@@ -5589,19 +5555,29 @@ NativeScript 拥有一个递归布局框架，允许您在屏幕上缩放和排�
 只有当元素获得的空间大于其所需的空间时，布局才会使用水平和垂直对齐。下表列出了允许的 `horizontalAlignment` 值。
 
 | 成员 | 描述 |
+
 | :--- | :--- |
+
 | Left | 视图对齐到父元素槽位的左侧。 |
+
 | Center | 视图对齐到父元素槽位的中心。 |
+
 | Right | 视图对齐到父元素槽位的右侧。 |
+
 | Stretch | 视图扩展到父元素槽位；如果指定了宽度，则优先。 |
 
 下表列出了允许的 `verticalAlignment` 值。
 
 | 成员 | 描述 |
+
 | :--- | :--- |
+
 | Top | 视图置在父元素槽位的顶部。 |
+
 | Center | 视图对齐到父元素槽位的中心。 |
+
 | Bottom | 视图置在父元素槽位的底部。 |
+
 | Stretch | 视图扩展以填充父元素槽位；如果指定了高度，则优先。 |
 
 #### *百分比支持 (Percentage Support)*
@@ -5613,23 +5589,26 @@ iOS 安全区域（Safe Area）是可以自由利用且不会被系统硬件或�
 从 5.0 版本开始，NativeScript 包含了针对 iOS 安全区域的默认处理方法。某些容器组件（可以拥有子元素的组件）会溢出安全区域并扩展到屏幕边界。这些容器组件如下：
 
 - Layouts (布局)
+
 - ListView
+
 - Repeater
+
 - WebView
+
 - ScrollView
 
 **内部工作流如下：**
 
 - **测量阶段：** 在屏幕安全区域内对所有组件进行测量。
+
 - **布局阶段：** 所有组件全屏显示，但相对于安全区域边界进行偏移。
+
 - **布局阶段：** 如果组件靠近安全区域，它将被修改并放大到屏幕边缘。
 
 iosOverflowSafeArea 属性
 
 上述默认行为已经提供了良好的用户体验。此外，NativeScript 5.0 引入了 `iosOverflowSafeArea` 属性，可用于修改组件处理 iOS 安全区域的方式。如果我们希望组件在靠近安全区域时扩展到屏幕边界，将属性值设置为 `true`。若要显式避免这种行为，请设置为 `false`。`true` 是容器组件的默认值。所有其他组件被视为应限制在安全区域的内容，默认设置为 `false`。
-
-
-
 
 ## 214 精通 NativeScript：入门指南
 
@@ -5646,12 +5625,19 @@ LayoutBase 是所有视图的根类，用于启用子元素的放置。
 NativeScript 提供的默认布局
 
 | 布局 | 说明 |
+
 | :--- | :--- |
+
 | FlexboxLayout | 这是一个非标准的 CSS 弹性盒子布局实现。 |
+
 | AbsoluteLayout | 此布局允许我们指定子元素的精确位置（左侧/顶部坐标）。 |
+
 | DockLayout | 此布局将子元素放置在外侧边缘，并允许最后一个子元素占据剩余空间。 |
+
 | GridLayout | 这种布局指定了一个带有列和行的矩形布局区域。 |
+
 | StackLayout | 此布局中的子元素按水平或垂直方向排列。`orientation` 属性决定了方向。 |
+
 | WrapLayout | 根据 `orientation` 参数，该布局按行或列排列子元素，直到空间填满，然后将其换行到新行或新列。 |
 
 ## 组件 (COMPONENTS)
@@ -5687,12 +5673,15 @@ ActionBar 具有一个 `title` 属性，可以通过一个或多个 `ActionItem`
 **Android 使用 `android.position` 位置：**
 
 - **actionBar:** 将项插入到 ActionBar 中。操作项可能以文本或图标的形式显示。
+
 - **popup:** 显示项的选项菜单。项将以文本形式显示。
+
 - **actionBarIfRoom:** 如果有空间，则将项放置在 ActionBar 中。否则，将其添加到选项菜单中。
 
 **iOS 使用 `ios.position` 确定位置：**
 
 - **left:** 将项置于 ActionBar 的左侧。
+
 - **right:** 将项置于 ActionBar 的右侧
 
 #### NavigationButton
@@ -5700,11 +5689,12 @@ ActionBar 具有一个 `title` 属性，可以通过一个或多个 `ActionItem`
 NavigationButton 组件是 iOS 返回按钮和 Android 导航按钮的泛化。
 
 - **iOS 规范：** 导航按钮的默认文本是上一个页的标题。返回按钮专门用于 iOS 的导航。它会导航到上一个页，我们无法通过 `tap` 事件更改此行为。我们可以使用带有 `ios.position="left"` 的 `ActionItem` 在 ActionBar 的左侧添加按钮并处理 `tap` 事件。
+
 - **Android 细节：** 我们无法在 Android 的导航按钮内设置文本。我们可以利用 `icon` 属性提供图像（例如 `~/images/nav-image.png` 或 `res:ic_nav`）。我们可以使用 `android.systemIcon` 设置 Android 中可用的系统图标之一。在这种情况下，NavigationButton 的 `tap` 事件没有默认行为，我们必须显式声明将要调用的回调代码。
 
 #### 样式 (Styl)
 
-只有 `background-color` 和 `color` 属性可以自定义 ActionBar。我们还可以使用 `@nativescript/theme` 并利用每个主题的默认样式。带有 `font://` 前缀的图标字体可以使用 ActionItem 的 `icon` 属性。通过指定此前缀，将创建一个新图像并将其分配为 ActionItem 的图标资源。在使用此功能时，我们必须提供字体大小，这将根据设备的 dpi 计算输出图片的大小。
+只有 `background-color` 和 `color` 属性可以自定 ActionBar。我们还可以使用 `@nativescript/theme` 并利用每个主题的默认样式。带有 `font://` 前缀的图标字体可以使用 ActionItem 的 `icon` 属性。通过指定此前缀，将创建一个新图像并将其分配为 ActionItem 的图标资源。在使用此功能时，我们必须提供字体大小，这将根据设备的 dpi 计算输出图片的大小。
 
 ```xml
 <!-- ActionBar 和 ActionItem 的默认背景颜色和颜色由
@@ -5731,26 +5721,35 @@ NavigationButton 组件是 iOS 返回按钮和 Android 导航按钮的泛化。
 #### ActionBar 属性
 
 - **Title:** string。获取或设置 actionBar 的标题。
+
 - **titleView:** View。此方法设置标题视图。配置配置后，自定义视图将替换标题。
 
 #### ActionItem 属性
 
 - **Text:** string。获取或设置操作项的文本。
+
 - **Icon:** string。获取或设置操作项的图标。支持本地图像 (`~/`)。
+
 - **ios.position:** 枚举 *left*, *right*。设置项在 ActionBar 中的位置。
+
 - **android.position:** 枚举 *actionBar*, *popup*, *actionBarIfRoom*。设置项的位置。
+
 - **ios.systemIcon:** number。iOS 专用：使用 UIBarSystemIcon 枚举设置系统图标。
+
 - **android.systemIcon:** string。Android 专用：设置 Android 可用的系统图标路径。
 
 #### NavigationButton 属性
 
 - **Text:** string。获取或设置导航按钮的文本。
+
 - **Icon:** string。获取或设置操作项的图标。
 
 #### 事件 (Events)
 
 - **Loaded:** 视图加载时，触发此事件。
+
 - **Unloaded:** 视图卸载时，触发此事件。
+
 - **layoutChanged:** 当由于布局限制发生变化时，触发此事件。
 
 ## 218 精通 NativeScript：入门指南
@@ -5758,9 +5757,13 @@ NavigationButton 组件是 iOS 返回按钮和 Android 导航按钮的泛化。
 ### API 参考 (API References)
 
 - ActionBar 模块
+
 - ActionBar 类
+
 - ActionItem 类
+
 - ActionItems 类
+
 - NavigationButton 类
 
 ### 动画 (Animation)
@@ -5776,35 +5779,47 @@ NavigationButton 组件是 iOS 返回按钮和 Android 导航按钮的泛化。
 **在每个动画中，我们可以控制以下属性：**
 
 - **duration:** 动画的持续时间。
+
 - **delay:** 启动动画前等待的时间。
+
 - **iterations:** 动画执行的次数。
+
 - **curve:** 动画的速度曲线。可用的替代方案如下。
 
 | JavaScript 属性 | 值描述 |
+
 | :--- | :--- |
+
 | backgroundColor | 接受十六进制值或颜色值。 |
+
 | Curve | 使用 AnimationCurve 枚举的时间函数。 |
+
 | Delay | 以毫秒为单位的动画延迟。 |
+
 | Duration | 以毫秒为单位的动画持续时间。 |
 
 *(继续)*
-
-
-
-
 
 深入探索    ◾    **219**
 
 ## Javascript 属性
 
 | Value | 描述 |
+
 | :--- | :--- | :--- |
+
 | Iterations | 迭代 | 动画重复的次数。 |
+
 | Opacity | 透明度 | 数值（0–1，其中0 为完全不透明）。 |
+
 | Rotate | 旋转 | 角度数值（0–360 度）。 |
+
 | Scale | 缩放 | 对象值 { x:1, y:2 } (1 = 原始比例)。 |
+
 | Translate | 位移 | 对象值 { x:110, y:210 } |
+
 | Width | 宽度 | 数字值。 |
+
 | Height | 高度 | 数字值。 |
 
 **动画标签的透明度和背景是一个基础示例：**
@@ -5829,7 +5844,7 @@ label.animate({
 
 ## Button (按钮)
 
-Button 组件提供了一种与应用程序交互的简单方法，并响应运行自定义代码。当用户按下它时，按钮会执行任何关联的操作。
+Button 组件提供了一种与应用程交互的简单方法，并响应运行自定义代码。当用户按下它时，按钮会执行任何关联的操作。
 
 *用法*
 
@@ -5872,8 +5887,11 @@ Button 组件的 tap 事件可以用于执行自定义逻辑。这就像在 HTML
 ### 特定样式属性
 
 | Name | CSS 名称 | 类型 | 描述 |
+
 | :--- | :--- | :--- | :--- |
+
 | androidElevation | android-elevation | Number | (仅限 Android) 可以获取或调整 android 视图的高度（投影）。 |
+
 | androidDynamicElevationOffset | android-dynamic-elevation-offset | Number | (仅限 Android) 获取或设置动态高度偏移。 |
 
 深入探索    ◾    **221**
@@ -5889,12 +5907,19 @@ View 是所有 NativeScript UI 元素的基类类，它包含了 NativeScript �
 NativeScript 支持的手势包括：
 
 - Tap (点击)
+
 - Rotation (旋转)
+
 - Double Tap (双击)
+
 - Long Press (长按)
-- Touch (触摸)
+
+- Touch (触摬)
+
 - Pan (滑动)
+
 - Pinch (捏合)
+
 - Swipe (划过)
 
 ## Slider (滑动条)
@@ -5930,7 +5955,9 @@ Switch 组件允许用户在两个两个状态之间切换。组件的默认状�
 Switch 控制的样式特征如下：
 
 - **color:** 设置手柄的颜色。
+
 - **backgroundColor (CSS 中的 background-color):** 设置开关开启时的背景颜色。
+
 - **offBackgroundColor (CSS 中的 off-background-color):** 设置开关关闭时的背景颜色。
 
 ```html
@@ -5949,14 +5976,12 @@ Switch 控制的样式特征如下：
 <DatePicker>
 ```
 
-
-
-
-
 深入探索    ◾    **225**
 
 - **过渡：** 一种指示它们之间相对位置的滑动过渡。
+
 - **滑动手势：** 是一种手势。
+
 - **预加载：** 每侧至少加载一个（因为由于滑动手势的存在）。
 
 *用法*
@@ -5964,7 +5989,8 @@ Switch 控制的样式特征如下：
 **Tabs 组件由两个子组件组成：**
 
 - 底部栏及其 `TabStripItem` 组件由 `TabStrip` 定义并渲染。
-- 包含多个 `TabContentItem` 组件，其总数应等于标签（即 `TabStripItem` 组件）的数量。每个 `TabContentItem` 都作为我们标签内容的容器。
+
+- 包含多个 `TabContentItem` 组件，其总数应等于标签（即 `TabStripItem` 组件）的数量。每个 `TabContentItem` 也作为我们标签内容的容器。
 
 ```xml
 <Tabs selectedIndex="1">
@@ -5978,8 +6004,7 @@ Switch 控制的样式特征如下：
     <TabStripItem class="special">
       <Label text="Account's"></Label>
       <Image src="font://&#xf007;" class="fas"></Image>
-    </TabStripItem>
-    <TabStripItem class="special">
+    </TabStripItem class="special">
       <Label text="Searchs"></Label>
       <Image src="font://&#xf00e;" class="fas"></Image>
     </TabStripItem>
@@ -6010,7 +6035,9 @@ Switch 控制的样式特征如下：
 在 `TabStrip` 组件上应指定三个独特的参数，用于引入显著样式可能性。
 
 - **selectedItemnColor：** 此属性指定所选标签条项的文本颜色。当图标为图标字体（font://）时，它也会更改标签条图标的颜色。
+
 - **unSelectedItemColor:**** 未选中标签条项的文本颜色。当图标为图标字体（font://）时，它也会更改标签条图标的颜色。
+
 - **highlightColor：** 此属性决定指定标签条项下划线的颜色。
 
 **这些属性可以动态地、内联或使用 CSS 进行更改：**
@@ -6078,8 +6105,10 @@ WebView 组件用于我们的应用程序以显示网络资源。我们通过指
 CSS 可以应用于三个不同的层级：
 
 - **应用级：** 应用于所有页面的 CSS 称为应用级。
+
 - **组件特定级：** 这仅适用于某个组件。
-- **内联 CSS：** 直接应用于视图的 CSS。
+
+- **内联 CSS：** 直接应用于视视图的 CSS。
 
 应用级 CSS
 
@@ -6127,8 +6156,11 @@ NativeScript 的原理使得使用平台特定的 CSS 非常简单，可以通�
 **注意：** 使用 Angular 时，文件名规则无法针对特定的屏幕尺寸或方向。对于运行时，需要 JavaScript 来针对各种显示器。请参此文章针对平板电脑的示例。
 
 **227**    ◾    深入探索    ◾   
+
 **228**    ◾    精通 NativeScript：入门指南
+
 **229**    ◾    深入探索    ◾   
+
 **230**    ◾    精通 NativeScript：入门指南
 
 支持的选择器
@@ -6136,15 +6168,16 @@ NativeScript 的原理使得使用平台特定的 CSS 非常简单，可以通�
 NativeScript 识别 CSS 选择器语法的子集。以下是使用受支持选择器的方法：
 
 - 类选择器
+
 - 类型选择器
+
 - 层级选择器
+
 - ID 选择器
+
 - 伪选择器
+
 - 属性选择器
-
-
-
-
 
 ## 深入探索 231
 
@@ -6179,14 +6212,19 @@ ID 选择器选取具有相同 id 的视图。视图的 id 通过 `id` 属性设
 一个 CSS 选择器可以包含多个基础选择器，并可以在选择器之间添加组合符号。
 
 - 后代选择（空格）。例如，以下代码将选取所有 StackLayout 内部的按钮。
+
 ```css
 StackLayout Button { background-color: blue; }
 ```
+
 - (>) – 直接子元素选择。使用前面的示例，如果将 CSS 修改为：
+
 ```css
 StackLayout > Button { background-color: blue; }
 ```
+
 则背景颜色规则将不会生效。要使用该选择器，必须删除 WrapLayout 元素，使 Button 成为 StackLayout 的直接子元素。
+
 - (+) – 相邻兄弟选择器允许我们选择与给定元素同同级的所有元素。
 
 ## 精通 NativeScript：入门指南 232
@@ -6230,6 +6268,7 @@ StackLayout > Button { background-color: blue; }
 ```css
 button[testAttr]{ background-color: green; }
 ```
+
 该选择器将选取所有设置了 `testAttr` 属性某些值的按钮。
 
 **同时也支持更复杂的情况：**
@@ -6239,9 +6278,13 @@ button[testAttr]{ background-color: green; }
 ## 深入探索 233
 
 - **button[testAttr~='flower'] {…}:** 选取所有 `testAttr` 属性包含空格分隔的单词列表且其中之一为“flower”的按钮。
+
 - **button[testAttr|='flower'] {…}:** 选取所有 `testAttr` 属性值以“flower”开头的按钮。该值必须是一个完整的单词，要么单独如 `btn['testAttr'] = 'flower'`，要么后面跟着连字符 (-)，如 `btn['testAttr'] = 'flower-house'`。
+
 - **button[testAttr^='flower'] {…}:** 选取所有 `testAttr` 属性值以“flower”开头的按钮。该值不需要是完整的单词。
+
 - **button[testAttr$='flower'] {…}:** 选取所有 `testAttr` 属性值以“flower”结尾的按钮。不需要不需要是完整的单词。
+
 - **button[testAttr*='flo'] {…}:** 选取所有 `testAttr` 属性包含“flo”的按钮。不需要是完整的单词。
 
 属性选择器可以单独使用，也可以与所有类型的 CSS 选择器结合。
@@ -6257,11 +6300,12 @@ button[testAttr]{ background-color: green; }
 
 **根视图 CSS 类**
 
-NativeScript 为特定状态下的应用程序根视图添加 CSS 类，以实现灵活的样式和主题。
+NativeScript 为特定状态下的应用程序根视视图添加 CSS 类，以实现灵活的样式和主题。
 
 **以下是默认 CSS 类：**
 
 - **.ns-root:** 与应用程序根视图关联的类。
+
 - **.ns-modal:** 与模态根视图关联的类。
 
 ## 精通 NativeScript：入门指南 234
@@ -6269,8 +6313,11 @@ NativeScript 为特定状态下的应用程序根视图添加 CSS 类，以实�
 每个应用程序和模态根视图的 CSS 类如下：
 
 - .ns-android 和 .ns-ios 是定义应用平台的类。
+
 - .ns-phone 和 .ns-tablet 是特定于设备的类。
+
 - .ns-portrait、.ns-landscape 和 .ns-unknown 是定义应用方向的类。
+
 - .ns-light 和 .ns-dark 是定义系统外观的类。
 
 ## NativeScript 基础
@@ -6295,7 +6342,8 @@ NativeScript CLI 用于开发和运行程序。安装后，NativeScript CLI 在�
 
 一旦我们的 NativeScript 移动项目建立，我们有两种运行方式：
 
-- 使用 preview 命令运行预览构建。该选项允许我们快速测试 NativeScript。
+- 使用 preview 呣令运行预览构建。该选项允许我们快速测试 NativeScript。
+
 - 使用 run 命令执行本地构建。该选项为我们提供了在模拟器和设备上运行的完整开发体验。
 
 ### 使用预览快速设置
@@ -6311,16 +6359,16 @@ NativeScript CLI 用于开发和运行程序。安装后，NativeScript CLI 在�
 `tns preview`
 
 - 在终端中，我们将看到一个二维码。
+
 - 然后，在你的 iOS 或 Android 手机上启动 NativeScript Playground 应用。
+
 - 使用 Playground 应用中的“扫描二维码”选项扫描终端中显示的二维码。
+
 - 扫描后，我们的应用应该出现在手机上。
+
 - 现在我们已经安装了程序，但可能会发现终端或命令提示符中的 tns preview 命令并未完成。也就是说，我们无法在终端输入字。
 
 这是因为 tns preview 命令现在正在监控项目的更新。当 tns preview 命令检测到代码更改时，它会自动刷新或同步我们的应用，以便我们立即看到更改。
-
-
-
-
 
 ## 评估
 
@@ -6330,6 +6378,12 @@ DOI: 10.1201/9781003299394-6
 
 NativeScript 是一个广名的前端跨平台编程框架，可以使用 JavaScript 创建真正的原生应用。它由 Progress 公司于 2014 年创建，并在 Gartner 的移动应用开发平台（MADP）魔力矩阵中被评为“远见卓识”。
 
+
+
+# NativeScript 文档
+
+## 概述
+
 它允许使用 JavaScript、TypeScript 或 Angular 直接访问所有原生平台 API，从而在 Web、iOS 和 Android 上提供更出色的原生体验。
 
 NativeScript 是一个用于 iOS 和 Android 的免费开源移动应用开发框架。它是一个 JIT 编译的框架。JS 虚拟机运行 NativeScript 代码。在 Android 和 iOS 平台上，它利用了 V8 引擎运行时。
@@ -6338,7 +6392,7 @@ NativeScript 帮助开发者快速高效地创建原生跨平台程序，同时�
 
 如所示，NativeScript 应用是用 JavaScript、XML 和 CSS 组合编写的。
 
-**NativeScript 的优势：**
+### NativeScript 的优势
 
 - 学习曲线简单
 - 有坚实社区的支持
@@ -6354,7 +6408,7 @@ NativeScript 在开发者和公司中流行，是因为它使用了 XML 进行�
 
 由 NativeScript 开发的应用包括 Triodos Bank、Daily Nanny、Sennheiser（森）、MyPUMA、Portable North Pole 和 SAP。
 
-**NativeScript 的局限性：**
+### NativeScript 的局限性
 
 - 应用占用的空间比原生应用大。
 - 需要插件。
@@ -6366,7 +6420,7 @@ NativeScript 在开发者和公司中流行，是因为它使用了 XML 进行�
 
 我们过去曾与多个移动应用框架合作过，在我们看来，NativeScript 脱颖而出。
 
-  快速进入市场
+### 快速进入市场
 
 一次编写，随处部署，等等。我们不想浪费您的时间，无论我们是公司、个人开发者还是业余爱好者。我们会有更多时间在更短时间内开发并提供更多功能，因为我们花费在构建完整应用上的时间更少。
 
@@ -6374,13 +6428,13 @@ NativeScript 在开发者和公司中流行，是因为它使用了 XML 进行�
 
 - NativeScript 开发者
 - 软件工程师 – NativeScript 平台 – 移动应用
- 使用 使用 Native 的 Angular（移动应用开发者）
+- 使用 Native 的 Angular（移动应用开发者）
 - Nativescript 应用开发者
 - 移动应用开发者（Native script）
 
 **239** 评估
 
-**NativeScript 在三个关键方面优于 React Native：**
+### NativeScript 在三个关键方面优于 React Native
 
 - 它旨在编写一次并随处运行。而 React Native 仍需要针对特定平台的编程。
 - Angular 2 比 React 更用户友好。使用 Angular 很简单。React 则很难。Angular 2（在 NativeScript 中拥有原生支持）似乎比 Angular 1 还要简单。
@@ -6390,13 +6444,13 @@ NativeScript 在开发者和公司中流行，是因为它使用了 XML 进行�
 
 尽管近年来应用的增长和扩张一直在进行，但跨平台移动应用无论好坏，都在改变每个行业的商业环境。因此，技术栈也应该经过仔细选择。让我们来看看两个帮助我们构建应用概念开发结构的列表。
 
-**对于需要使用 JS 或 TypeScript 的程序，NativeScript 是理想选择：**
+### 对于需要使用 JS 或 TypeScript 的程序，NativeScript 是理想选择
 
 - 结合了 iOS 和 Android 的常用功能
 - 我们将使用 Angular 或 Vue 访问 Web 组件
 - jsweb 应用
 
-如果我们的应用满足以下条件，使用 React Native 将保持领先：
+### 如果我们的应用满足以下条件，使用 React Native 将保持领先
 
 - 它在 Android 和 iOS 上具有类原生的性能。
 - 除了 Kotlin/Java 和 Objective-C/Swift 之外，其代码库将包含 UI 组件。
@@ -6434,10 +6488,6 @@ MyPumma、Raiffeisenbank、California Court Access App、Dockbooking、Regelneef
 
 虽然 iOS 和 Android 的某些内容是相同的，但其他 UI 设计模式是该平台特有的，该平台的用户会习惯 UI 在该平台上的布局和表现。我们应该熟悉两个平台建议的许多 UI 设计模式。两个平台都包含了我们在开发应用时应该知道的设计规则：iOS 的人机交互指南（Human Interface Guidelines）和 Android 的 Material 设计指南（Material Design Guidelines）。
 
-
-
-
-
 ## 评估
 
 ### 评估
@@ -6460,9 +6510,9 @@ NativeScript Angular 和 NativeScript Vue 默认使用模型视图控制器（MV
 
 NativeScript 有几个模块在我们创建新项目时会自动打包到你的应用程序中。核心模块为访问底层原生平台提供了必要的抽象。例如，Gesture 模块暴露了一个标准的 JS API，将应用程序 TypeScript/JavaScript 代码翻译成原生手势 API 调用。核心模块还包含了一种简单的基于 XML 的方法，用于设计 UI、数据绑定和导航。
 
-核心模块包含了辅助创建应用 UI 的可用模块。例如，tns-core-modules 下的 layouts 模块提供了如 StackLayout 等布局，帮助我们安排 UI 元素。
+核心模块包含了辅助创建应用 UI 的可用模块。例如，`tns-core-modules` 下的 layouts 模块提供了如 `StackLayout` 等布局，帮助我们安排 UI 元素。
 
-Buttons 和 Labels 等 UI 组件也可以在 tns-core-modules 中找到。核心模块此外提供了网络、定时、应用设置以及数据功能，例如处理观察对象（observables）和可观察数组。
+Buttons 和 Labels 等 UI 组件也可以在 `tns-core-modules` 中找到。核心模块此外提供了网络、定时、应用设置以及数据功能，例如处理观察对象（observables）和可观察数组。
 
 ## 学习伙伴
 
@@ -6483,10 +6533,6 @@ Buttons 和 Labels 等 UI 组件也可以在 tns-core-modules 中找到。核心
 - *数据绑定 · nativescript*. (n.d.). Data binding · nativescript; nativescript.io.
 - *在 Windows 上使用 Sidekick 开发 iOS 应用*. (n.d.). Develop iOS Apps on Windows with Sidekick | The NativeScript Blog; blog.nativescript.org.
 - *环境搭建 | NativeScript 文档*. (n.d.). Environment Setup | NativeScript; docs.nativescript.org.
-
-
-
-
 
 ## 参考文献 247
 
@@ -6519,6 +6565,7 @@ Buttons 和 Labels 等 UI 组件也可以在 tns-core-modules 中找到。核心
 ## 索引 249
 
 ### A
+
 - AbsoluteLayout, 34–35, 95–96
 - ActionBar, 214, 217
 - ActionItem, 215, 217
@@ -6578,14 +6625,10 @@ Buttons 和 Labels 等 UI 组件也可以在 tns-core-modules 中找到。核心
 - NativeScript 路由模块, 158–159
 - page-router-outlet, 159–160
 
-
-
-
-
 ## 索引 (250)
 
 - RouterExtensions 类, 160–161
--  链接, 160
+- 链接, 160
 - 侧边栏导航 (SideDrawer navigation), 174–175
 - 插件, 179
 - 查找, 179
@@ -6641,6 +6684,7 @@ Buttons 和 Labels 等 UI 组件也可以在 tns-core-modules 中找到。核心
 - AVD, *参见* Android 虚拟设备 (Android Virtual Device)
 
 ### B
+
 - 后退导航, 47, 167–168
 - NativeScript 的优势, 7–8
 - 修改 BlankNgApp, 52–54
@@ -6658,6 +6702,7 @@ Buttons 和 Labels 等 UI 组件也可以在 tns-core-modules 中找到。核心
     - 使用, 219
 
 ### C
+
 - NativeScript 的职业前景, 238–239
 - 级联样式表 (CSS), 228
     - 添加 CSS 文件, 229
@@ -6734,6 +6779,7 @@ Buttons 和 Labels 等 UI 组件也可以在 tns-core-modules 中找到。核心
     - 如何使用, 185–187
 
 ### D
+
 - 数据 (Data), 操作, 124
 - 数据绑定, 126–127
 - 动态用户界面, 需要, 124–125
@@ -6769,6 +6815,7 @@ Buttons 和 Labels 等 UI 组件也可以在 tns-core-modules 中找到。核心
 - 最后元素 (LastChild), 96–97
 
 ### E
+
 - 入口 (Entry point), 75
 - 事件监听器, 51–52
 - NativeScript 事件处理, 51–52
@@ -6789,6 +6836,7 @@ Buttons 和 Labels 等 UI 组件也可以在 tns-core-modules 中找到。核心
 - 帧率 (fps-meter), 62
 
 ### G
+
 - 手势 (Gestures), 221
 - 全局 NPM 依赖, 安装, 142
 - Google Play, 119
@@ -6804,10 +6852,11 @@ Buttons 和 Labels 等 UI 组件也可以在 tns-core-modules 中找到。核心
 - 水平对齐 (horizontalAlignment), 80
 - HtmlView, 223
     - 使用, 223
--RoutingModule, 25
+- RoutingModule, 25
 - 导航, 168–169
 
 ### I
+
 - ID 选择器, 231
 - 源 (Image-source), 60–61
 - 图片小部件 (Image widget), 33
@@ -6841,6 +6890,7 @@ Buttons 和 Labels 等 UI 组件也可以在 tns-core-modules 中找到。核心
 - 截图, 122–123
 
 ### J
+
 - JavaScript, 192, 240–241
 - 数组, 194
 - 布尔值 (Boolean), 194
@@ -6878,9 +6928,11 @@ Buttons 和 Labels 等 UI 组件也可以在 tns-core-modules 中找到。核心
 - 对齐内容 (justifyContent), 42, 105
 
 ### K
+
 - Keytool 软件, 118
 
 ### L
+
 - 标签组件 (Label), 31
 - 侧向导航, 47–48, 168
 - 将 NativeScript 应用到商店, 111
@@ -6912,10 +6964,6 @@ Buttons 和 Labels 等 UI 组件也可以在 tns-core-modules 中找到。核心
 - StackLayout, 38
 - WrapLayout, 38–39
 
-
-
-
-
 **254 索引**
 
 布局传递 (Layout pass), 210–211
@@ -6928,282 +6976,296 @@ NativeScript 的局限性, 238
 业务与消费者级应用, 7
 ListView, 76, 78, 79, 80, 84, 213
 
-M
-MADP, *参见* 移动开发平台 (Mobile App Dev Platforms)
-MAM, *参见* 移动应用管理 (Mobile App Management)
-序列 (Marshaling), 66
-主详情模板 (Master-detail, template for), 28
-MDM, *参见* 设备设备管理 (Mobile Device Management)
-测量传递 (Measure pass), 210
-内存管理 (Memory management), 201
-Android, 206
-splice 生命周期周期 (splice lifecycle), 206–207
-常用技巧, 209
-实现特性, 207
-半死 splice (half-dead splice), 208
-Java 友好, 209
-泄漏 (leaks), 208
-过早收集 (premature collection), 207–208
-splice 死亡得快 (splices die fast), 208–209
-splice 死亡得慢 (splices die hard), 209
-iOS, 204
-实现特性, 205–206
-splice 生命周期周期, 204
-术语 (terms), 202–204
-元数据 (Metadata), 198
-过滤 (filtering), 198–199
-规则语义 (rule semantics), 199
-规则语法 (rule syntax), 199
-设置 (setting up), 114, 116
-应用 ID (application id), 114–115
-显示名称 (display name), 115–116
-排错排除 (troubleshooting), 200–201
-移动应用保护 (Mobile app, protecting), 133
-通过私有应用商店限制访问, 136
-苹果开发者企业计划, 136–137
-Jscrambler (Protection+++), 136
-在云端维护业务逻辑, 137–139
-移动应用管理 (MAM), 136
-移动设备管理 (MDM), 136
-混淆与极小化 (obfuscation and minification), 134–135
-源代码保护 (source code protection), 133–134
-共享密钥时要小心, 139–140
-移动开发平台 (MADP), 237
-移动应用管理 (MAM), 136
-移动开发，在 NativeScript 语下, 5
-移动设备管理 (MDM), 136
-移动导航模式 (Mobile navigation patterns), 163–164
-模型视图-控制器 (MVC) 范式, 242
-模型视图导航 (Model view navigation), 172–174
-模型视图-视图模型 (MVVM) 范式, 242
-NativeScript 模块 (Modules for NativeScript), 58
-应用, 58
-应用设置模块 (application-settings module), 58–60
-连接模块 (connectivity module), 62
-控制台模块 (Console module), 58
-功能，模块的, 62–63
-图像源 (image-source), 60–61
-定时器模块 (timer module), 61
-跟踪模块 (trace module), 62
-ui/image-cache, 62
-用户界面 (UI), 模块的, 63
-MVC 范式, *参见* 模型视图-控制器范式
-MVVM 范式, *参见* 模型视图-视图模型范式
+### M
 
-N
-使用 JavaScript 的 Native APIs, 65
-Android 环境, 66
-数组 (array), 68
-android 中的数组声明, 68–69
-数组的声明, 68
-类与对象 (classes and objects), 69
-Android 环境, 69
-iOS 环境, 70
-iOS 环境, 67–68
-序列 (marshaling), 66
-数值 (numeric values), 66
-Android 字符串, 67
-NativeScript, 3–4
-NativeScript 应用扩展 (NativeScript app extensions), 189
-evenNativeScriptCommonModule, 25
-NativeScriptModule, 23
-NativeScript Playground 应用，安装, 11
-NativeScriptRouterModule, 24, 158–159
-NativeScript Sidekick, 131
-云构建 (cloud build), 131
-持续集成构建，工作原理, 132–133
-使用 Sidekick 创建构建, 132
-在 Windows 上进行 iOS 开发, 132
-在本地构建的可能性, 132
-导航 (Navigation), 158
-angular 导航, 164–165
-后退导航 (backward navigation), 167–168
-底部导航与标签页导航, 169–171
-配置 (configuration), 162–163
-自定义路由复用策略, 161–162
-前进导航 (forward navigation), 165–167
-枢枢导航 (hub navigation), 168–169
-侧向导航 (lateral navigation), 168
-移动导航模式, 163–164
-模型视图导航, 172–174
-NativeScript 路由模块 (NativeScript route module), 158–159
-page-router-outlet, 159–160
-RouterExtensions 类, 160–161
-路由链接 (router link), 160
-侧边抽屉导航 (SideDrawer navigation), 174–175
-模板 (template for), 27
-NavigationButton, 215–216, 217
-NativeScript 中的导航 (Navigation in NativeScript), 45
-基于 angular 的导航, 48
-后退导航, 47
-底部与标签页导航 (Bottom and Tab Navigation), 48
-自定义路由复用策略, 50
-前进导航, 46–47
-侧向导航, 47
-page-router-outlet, 49
-路由扩展 (router extension), 49–50
-路由链接 (nsLink), 49
-路由, 50–51
-新 angular 项目 (New project), 142–143
-New() 函数, 84
-ngModel, 57
-Node.js, 3
-NSDictionary, 195–196
-数值 (Numeric values), 66
-混淆与极小化 (Obfuscation and minification), 134–135
-Observable 类 (Observable class), 51
-单向数据绑定 (One-way data binding), 54–56
-单向与双向数据绑定, 176–178
-OpenCamera() 函数, 85
-顺序 (Order), 106
-PageLoaded() 函数, 82–83
-Page 模块 (Page modules), 15
-page-router-outlet, 49, 159–160
-过渡 (transition), 160
-平台 (Platform), 62
-platformScriptDynamic, 155
-平台特定 CSS (Platform-specific CSS), 229–230
-插件 (Plugins), 63, 179
-添加 (adding), 64
-构建 (building), 65
-查找 (finding), 199
-导入 (importing), 64, 180
-开发者依赖 (as dependencies), 180
-移除 (removing), 65, 181
-更新 (updating), 65
-使用 (using), 180
-伪选择器 (Pseudo selector), 233–234
-R
-ReactJS, 3
-React Native vs NativeScript, 239
-移除插件 (Removing plugin), 65
-反向导航 (Reverse navigation), 47
-根模块 (Root modules), 14–15
-路由扩展 (Router extension), 49–50
-RouterExtensions 类 (RouterExtensions class), 160–161
-路由链接 (Router link), 49, 160
-路由 (Routes), 50–51
-规则语义 (Rule semantics), 199
-规则语法 (Rule syntax), 199
-S
-设置 NativeScript (Setting up NativeScript), 73–74
-CLI, 11
-侧边抽屉组件 (SideDrawer component), 27
-侧边抽屉导航 (SideDrawer navigation), 174–175
-SideKick for NativeScript, 71
-发布应用到 Google Play, 72
-发布 SideKick 应用到 Google 控制台, 71–72
-NativeScript 的重要性 (Significance of NativeScript), 238
-滑块组件 (Slider component), 32, 221
-样式 (styling), 221
-使用 (usage), 221
-软件设计模式 (Software Design Patterns), 242
-软件开发包 (SDKs), 9
-源代码保护 (Source code protection), 133–134
-SPA, *参见* 单页应用 (Single Page Application)
-启动页 (Splash screens),创建, 114
-StackLayout, 38, 78, 90–92, 101–103
-拉伸最后一个 (stretchLastChild), 96–97
-WrapLayout, 103–104
-字符串 (String), 193
-切换组件 (Switch component), 32, 222
-样式 (styling), 222
-使用 (usage), 222
-T
-TabItemContent, 170
-标签页导航模板 (Tab navigation, template for), 27
-Tabs 组件 (Tabs component), 224
-样式 (styling), 226–227
-使用 (usage), 225–226
-takePicture() 函数, 85
-NativeScript 模板 (Templates for NativeScript), 27
-自定义模板 (customized template), 28
-主详情模板 (master-detail, template for), 28
-导航模板 (navigation, template for), 27
-结构 (structure), 28–29
-标签页导航模板 (tab navigation, template for), 27
-使用模板 (using a template), 27
-TextField 组件 (TextField component), 31
-TextView 组件 (TextView component), 32
-TimePicker 组件 (TimePicker component), 34, 224
-使用 (usage), 224
-定时器模块 (Timer module), 61
-tkDrawerContent, 175
-跟踪模块 (Trace module), 62
-双向数据绑定 (Two-way data binding), 56–58
-通过 IntelliSense 和访问原生 API 使用 TypeScript (TypeScript via IntelliSense and access to native APIs), 196–197
-类型选择器 (Type selector), 231
-U
-UI, *参见* 用户界面 (User interface)
-ui/image-cache, 62
-添加 UI 标记 (UI markup adding), 75–80
-JavaScript 中的 Undefined 和 Null (Undefined and Null in JavaScript), 196
-未选中项颜色 (unSelectedItemColor), 226
-更新插件 (Updating plugins), 65
-用户体验 (UX), 241–242
-用户界面 (UI), 143
-布局容器 (layout containers), 95
-AbsoluteLayout, 95–96
-DockLayout, 96–97
-FlexboxLayout, 105–109
-GridLayout, 98–101
-StackLayout, 38, 78, 90–92, 101–103
-拉伸最后一个 (stretchLastChild), 96–97
-WrapLayout, 103–104
-用户布局过程 (User layout process), 210
-NativeScript 提供的默认布局, 214
-iosSafeArea 属性, 213
-iOS 安全区域支持 (iOS safe area support), 213
-布局 (layout), 214
-布局传递 (layout pass), 210–211
-布局属性 (layout properties), 211
-对齐 (alignments), 212
-外边距 (margins), 211
-内边距 (padding), 211–212
-测量传递 (measure pass), 210
-百分比支持 (percentage support), 212
-预定义布局 (predefined layouts), 214
-用户界面样式化 (User interface styling), 228
-层叠样式表 (Cascading Style Sheets (CSS))样式
-添加 CSS 文件 (adding CSS file), 229
-添加 CSS 字符串 (adding CSS string), 229
-应用级 CSS (application-wide CSS), 228
-应用 (applying), 228
-组件特定 CSS (component-specific CSS), 228–229
-内联 CSS (inline CSS), 229
-平台特定 CSS (platform-specific CSS), 229–230
-支持的选择器 (supported selectors), 230
-属性选择器 (attribute selector), 232–233
-类选择器 (class selector), 231
-层级选择器 (hierarchical selector), 231–232
-ID 选择器 (ID selector), 231
-伪选择器 (pseudo selector), 233–234
-类型选择器 (type selector), 231
-UX, *参见* 用户体验 (User Experience)
-V
-VectorStock, 112
-版本号配置与构建字符串 (Version number configuration and building string), 128–129
-视图模型 (ViewModel), 242
-Vue.js, 3, 15, 28, 185, 238
-W
-WatchOS 应用用于 (WatchOS, NativeScript application for), 191–192
-Webpack
-配置 (configuration), 185
-安装 (installing), 117
-WebView, 33, 227
-技巧与技巧 (tips and tricks), 227
-使用 (usage), 227
-NativeScript 中的小部件 (Widgets in NativeScript), 29
-ActivityIndicator, 33
-button, 30–31
-DatePicker, 33–34
-image, 33
-Label, 31
-Progress, 33
-SearchBar, 32
-slider, 32
-switch, 32
-TextField, 31
-TextView, 32
-TimePicker, 34
-WebView, 33
+- MADP, *参见* 移动开发平台 (Mobile App Dev Platforms)
+- MAM, *参见* 移动应用管理 (Mobile App Management)
+- 序列 (Marshaling), 66
+- 主详情模板 (Master-detail, template for), 28
+- MDM, *参见* 设备设备管理 (Mobile Device Management)
+- 测量传递 (Measure pass), 210
+- 内存管理 (Memory management), 201
+- Android, 206
+- splice 生命周期周期 (splice lifecycle), 206–207
+- 常用技巧, 209
+- 实现特性, 207
+- 半死 splice (half-dead splice), 208
+- Java 友好, 209
+- 泄漏 (leaks), 208
+- 过早收集 (premature collection), 207–208
+- splice 死亡得快 (splices die fast), 208–209
+- splice 死亡得慢 (splices die hard), 209
+- iOS, 204
+- 实现特性, 205–206
+- splice 生命周期周期, 204
+- 术语 (terms), 202–204
+- 元数据 (Metadata), 198
+- 过滤 (filtering), 198–199
+- 规则语义 (rule semantics), 199
+- 规则语法 (rule syntax), 199
+- 设置 (setting up), 114, 116
+- 应用 ID (application id), 114–115
+- 显示名称 (display name), 115–116
+- 排错排除 (troubleshooting), 200–201
+- 移动应用保护 (Mobile app, protecting), 133
+- 通过私有应用商店限制访问, 136
+- 苹果开发者企业计划, 136–137
+- Jscrambler (Protection+++), 136
+- 在云端维护业务逻辑, 137–139
+- 移动应用管理 (MAM), 136
+- 移动设备管理 (MDM), 136
+- 混淆与极小化 (obfuscation and minification), 134–135
+- 源代码保护 (source code protection), 133–134
+- 共享密钥时要小心, 139–140
+- 移动开发平台 (MADP), 237
+- 移动应用管理 (MAM), 136
+- 移动开发，在 NativeScript 语下, 5
+- 移动设备管理 (MDM), 136
+- 移动导航模式 (Mobile navigation patterns), 163–164
+- 模型视图-控制器 (MVC) 范式, 242
+- 模型视图导航 (Model view navigation), 172–174
+- 模型视图-视图模型 (MVVM) 范式, 242
+- NativeScript 模块 (Modules for NativeScript), 58
+- 应用, 58
+- 应用设置模块 (application-settings module), 58–60
+- 连接模块 (connectivity module), 62
+- 控制台模块 (Console module), 58
+- 功能，模块的, 62–63
+- 图像源 (image-source), 60–61
+- 定时器模块 (timer module), 61
+- 跟踪模块 (trace module), 62
+- ui/image-cache, 62
+- 用户界面 (UI), 模块的, 63
+- MVC 范式, *参见* 模型视图-控制器范式
+- MVVM 范式, *参见* 模型视图-视图模型范式
+
+### N
+
+- 使用 JavaScript 的 Native APIs, 65
+- Android 环境, 66
+- 数组 (array), 68
+- android 中的数组声明, 68–69
+- 数组的声明, 68
+- 类与对象 (classes and objects), 69
+- Android 环境, 69
+- iOS 环境, 70
+- iOS 环境, 67–68
+- 序列 (marshaling), 66
+- 数值 (numeric values), 66
+- Android 字符串, 67
+- NativeScript, 3–4
+- NativeScript 应用扩展 (NativeScript app extensions), 189
+- evenNativeScriptCommonModule, 25
+- NativeScriptModule, 23
+- NativeScript Playground 应用，安装, 11
+- NativeScriptRouterModule, 24, 158–159
+- NativeScript Sidekick, 131
+- 云构建 (cloud build), 131
+- 持续集成构建，工作原理, 132–133
+- 使用 Sidekick 创建构建, 132
+- 在 Windows 上进行 iOS 开发, 132
+- 在本地构建的可能性, 132
+- 导航 (Navigation), 158
+- angular 导航, 164–165
+- 后退导航 (backward navigation), 167–168
+- 底部导航与标签页导航, 169–171
+- 配置 (configuration), 162–163
+- 自定义路由复用策略, 161–162
+- 前进导航 (forward navigation), 165–167
+- 枢枢导航 (hub navigation), 168–169
+- 侧向导航 (lateral navigation), 168
+- 移动导航模式, 163–164
+- 模型视图导航, 172–174
+- NativeScript 路由模块 (NativeScript route module), 158–159
+- page-router-outlet, 159–160
+- RouterExtensions 类, 160–161
+- 路由链接 (router link), 160
+- 侧边抽屉导航 (SideDrawer navigation), 174–175
+- 模板 (template for), 27
+- NavigationButton, 215–216, 217
+- NativeScript 中的导航 (Navigation in NativeScript), 45
+- 基于 angular 的导航, 48
+- 后退导航, 47
+- 底部与标签页导航 (Bottom and Tab Navigation), 48
+- 自定义路由复用策略, 50
+- 前进导航, 46–47
+- 侧向导航, 47
+- page-router-outlet, 49
+- 路由扩展 (router extension), 49–50
+- 路由链接 (nsLink), 49
+- 路由, 50–51
+- 新 angular 项目 (New project), 142–143
+- New() 函数, 84
+- ngModel, 57
+- Node.js, 3
+- NSDictionary, 195–196
+- 数值 (Numeric values), 66
+- 混淆与极小化 (Obfuscation and minification), 134–135
+- Observable 类 (Observable class), 51
+- 单向数据绑定 (One-way data binding), 54–56
+- 单向与双向数据绑定, 176–178
+- OpenCamera() 函数, 85
+- 顺序 (Order), 106
+- PageLoaded() 函数, 82–83
+- Page 模块 (Page modules), 15
+- page-router-outlet, 49, 159–160
+- 过渡 (transition), 160
+- 平台 (Platform), 62
+- platformScriptDynamic, 155
+- 平台特定 CSS (Platform-specific CSS), 229–230
+- 插件 (Plugins), 63, 179
+- 添加 (adding), 64
+- 构建 (building), 65
+- 查找 (finding), 199
+- 导入 (importing), 64, 180
+- 开发者依赖 (as dependencies), 180
+- 移除 (removing), 65, 181
+- 更新 (updating), 65
+- 使用 (using), 180
+- 伪选择器 (Pseudo selector), 233–234
+
+### R
+
+- ReactJS, 3
+- React Native vs NativeScript, 239
+- 移除插件 (Removing plugin), 65
+- 反向导航 (Reverse navigation), 47
+- 根模块 (Root modules), 14–15
+- 路由扩展 (Router extension), 49–50
+- RouterExtensions 类 (RouterExtensions class), 160–161
+- 路由链接 (Router link), 49, 160
+- 路由 (Routes), 50–51
+- 规则语义 (Rule semantics), 199
+- 规则语法 (Rule syntax), 199
+
+### S
+
+- 设置 NativeScript (Setting up NativeScript), 73–74
+- CLI, 11
+- 侧边抽屉组件 (SideDrawer component), 27
+- 侧边抽屉导航 (SideDrawer navigation), 174–175
+- SideKick for NativeScript, 71
+- 发布应用到 Google Play, 72
+- 发布 SideKick 应用到 Google 控制台, 71–72
+- NativeScript 的重要性 (Significance of NativeScript), 238
+- 滑块组件 (Slider component), 32, 221
+- 样式 (styling), 221
+- 使用 (usage), 221
+- 软件设计模式 (Software Design Patterns), 242
+- 软件开发包 (SDKs), 9
+- 源代码保护 (Source code protection), 133–134
+- SPA, *参见* 单页应用 (Single Page Application)
+- 启动页 (Splash screens),创建, 114
+- StackLayout, 38, 78, 90–92, 101–103
+- 拉伸最后一个 (stretchLastChild), 96–97
+- WrapLayout, 103–104
+- 字符串 (String), 193
+- 切换组件 (Switch component), 32, 222
+- 样式 (styling), 222
+- 使用 (usage), 222
+
+### T
+
+- TabItemContent, 170
+- 标签页导航模板 (Tab navigation, template for), 27
+- Tabs 组件 (Tabs component), 224
+- 样式 (styling), 226–227
+- 使用 (usage), 225–226
+- takePicture() 函数, 85
+- NativeScript 模板 (Templates for NativeScript), 27
+- 自定义模板 (customized template), 28
+- 主详情模板 (master-detail, template for), 28
+- 导航模板 (navigation, template for), 27
+- 结构 (structure), 28–29
+- 标签页导航模板 (tab navigation, template for), 27
+- 使用模板 (using a template), 27
+- TextField 组件 (TextField component), 31
+- TextView 组件 (TextView component), 32
+- TimePicker 组件 (TimePicker component), 34, 224
+- 使用 (usage), 224
+- 定时器模块 (Timer module), 61
+- tkDrawerContent, 175
+- 跟踪模块 (Trace module), 62
+- 双向数据绑定 (Two-way data binding), 56–58
+- 通过 IntelliSense 和访问原生 API 使用 TypeScript (TypeScript via IntelliSense and access to native APIs), 196–197
+- 类型选择器 (Type selector), 231
+
+### U
+
+- UI, *参见* 用户界面 (User interface)
+- ui/image-cache, 62
+- 添加 UI 标记 (UI markup adding), 75–80
+- JavaScript 中的 Undefined 和 Null (Undefined and Null in JavaScript), 196
+- 未选中项颜色 (unSelectedItemColor), 226
+- 更新插件 (Updating plugins), 65
+- 用户体验 (UX), 241–242
+- 用户界面 (UI), 143
+- 布局容器 (layout containers), 95
+- AbsoluteLayout, 95–96
+- DockLayout, 96–97
+- FlexboxLayout, 105–109
+- GridLayout, 98–101
+- StackLayout, 38, 78, 90–92, 101–103
+- 拉伸最后一个 (stretchLastChild), 96–97
+- WrapLayout, 103–104
+- 用户布局过程 (User layout process), 210
+- NativeScript 提供的默认布局, 214
+- iosSafeArea 属性, 213
+- iOS 安全区域支持 (iOS safe area support), 213
+- 布局 (layout), 214
+- 布局传递 (layout pass), 210–211
+- 布局属性 (layout properties), 211
+- 对齐 (alignments), 212
+- 外边距 (margins), 211
+- 内边距 (padding), 211–212
+- 测量传递 (measure pass), 210
+- 百分比支持 (percentage support), 212
+- 预定义布局 (predefined layouts), 214
+- 用户界面样式化 (User interface styling), 228
+- 层叠样式表 (Cascading Style Sheets (CSS))样式
+- 添加 CSS 文件 (adding CSS file), 229
+- 添加 CSS 字符串 (adding CSS string), 229
+- 应用级 CSS (application-wide CSS), 228
+- 应用 (applying), 228
+- 组件特定 CSS (component-specific CSS), 228–229
+- 内联 CSS (inline CSS), 229
+- 平台特定 CSS (platform-specific CSS), 229–230
+- 支持的选择器 (supported selectors), 230
+- 属性选择器 (attribute selector), 232–233
+- 类选择器 (class selector), 231
+- 层级选择器 (hierarchical selector), 231–232
+- ID 选择器 (ID selector), 231
+- 伪选择器 (pseudo selector), 233–234
+- 类型选择器 (type selector), 231
+- UX, *参见* 用户体验 (User Experience)
+
+### V
+
+- VectorStock, 112
+- 版本号配置与构建字符串 (Version number configuration and building string), 128–129
+- 视图模型 (ViewModel), 242
+- Vue.js, 3, 15, 28, 185, 238
+
+### W
+
+- WatchOS 应用用于 (WatchOS, NativeScript application for), 191–192
+- Webpack
+- 配置 (configuration), 185
+- 安装 (installing), 117
+- WebView, 33, 227
+- 技巧与技巧 (tips and tricks), 227
+- 使用 (usage), 227
+- NativeScript 中的小部件 (Widgets in NativeScript), 29
+- ActivityIndicator, 33
+- button, 30–31
+- DatePicker, 33–34
+- image, 33
+- Label, 31
+- Progress, 33
+- SearchBar, 32
+- slider, 32
+- switch, 32
+- TextField, 31
+- TextView, 32
+- TimePicker, 34
+- WebView, 33

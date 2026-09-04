@@ -1,6 +1,7 @@
+
 # jQuery、jQuery UI 和 jQuery Mobile 秘籍与示例
 
-本书封面展示的是位于英国伦敦附近邱园皇家植物园内的**戴维斯高山温室**。该温室于 2006 年开放，是一座非常独特的温室：它不产生热量，而是提供凉爽的温度、微风和低湿度，为邱园的高山植物创造了理想的生长环境。此外，它采用被动式可持续技术建造——无需空调或风泵。
+本书封面展示的是位于英国伦敦附近邱园皇家植物园内的戴维斯高山温室。该温室于 2006 年开放，是一座非常独特的温室：它不产生热量，而是提供凉爽的温度、微风和低湿度，为邱园的高山植物创造了理想的生长环境。此外，它采用被动式可持续技术建造——无需空调或风泵。
 
 该温室由屡获殊荣的威尔金森·艾尔建筑事务所设计，其扇形结构如同孔雀开屏，为植物提供遮荫。结构下方，风扇将空气吹过一个凉爽的混凝土“迷宫”，该结构在原理上类似于白蚁蚂蚁建造的冷却巢穴。空气冷却后流入建筑内部；随着空气上升并变暖，它会通过屋顶的通风口排出。
 
@@ -9,22 +10,29 @@
 # 对《jQuery、jQuery UI 和 jQuery Mobile》的赞誉
 
 > “de Jonge 和 Dutson 采用食谱式方法讲解 jQuery、jQuery UI 和 jQuery Mobile，教会读者如何快速创建复杂的项目，消除了所有猜测。他们真的让 jQuery 看起来毫不费力！”
+
 > ——Joseph Annuzzi, Jr.，PeerDynamic.com 网络架构师
 
 > “这本书非常适合 jQuery 开发的各个方面；它内容全面，从优秀的 UI 部分到最新的移动技术。在目前的项目中，我发现自己多次参考这本书。
+
 > “对于任何渴望了解更多 jQuery 及其功能的人来说，这本书都将非常出色。作者用任何人都能理解并以此为基础进行构建的语言来讲解学习内容。”
+
 > ——Erik Levanger，UI/UX 工程师
 
 > “我常说，对于 jQuery 而言，成功的关键有一半在于熟悉它能够完成的各类任务。拥有良好的基础可以轻松帮助你弥合‘这将会很复杂’和‘我可以用 jQuery 做到！’之间的差距。像任何优秀的食谱书一样，本书包含了可直接使用的代码示例，展示了从基础到高级的技术。除了书名中提到的主要领域外，还介绍了如何自定义 jQuery UI 功能以满足你的需求，以及关于创建和使用插件的额外章节。我也非常欣赏作者在性能问题和最佳实践方面的见解。最后，作为一个没有 jQuery Mobile 经验的人，本书提供了坚实的示例，让你能快速上手。总体而言，这本书将极大地扩展你的 jQuery 技能库。”
+
 > ——Ryan Minnick，Verizon Wireless 软件开发工程师
 
 > “对于使用 jQuery、jQuery UI 或 jQuery Mobile 的任何人来说，这都是终极食谱。”
+
 > ——Stretch Nate，HealthPlan Services 网络应用开发工程师
 
 > “通过易于理解的食谱，de Jonge 和 Dutson 向读者介绍了 jQuery 的方方面面，从最基本的选择器到插件编写和 jQuery Mobile 等高级主题。对于任何对这款最强大的 JavaScript 库之一感兴趣的人来说，这是一个绝佳的起点。”
+
 > ——Jacob Seidelin，Nihilogic 网络开发工程师
 
 由互联网档案馆于 2023 年数字化
+
 资金来源：Kahle/Austin 基金会
 
 https://archive.org/details/jjqueryjqueryuij0000jong
@@ -40,9 +48,11 @@ https://archive.org/details/jjqueryjqueryuij0000jong
 ✦
 
 献给我挚爱且支持我的女友 Christine Kam。
+
 ——Adriaan
 
 献给我的母亲，她教会我热爱书籍；我的父亲，他教会我热爱科技；以及我的家人，他们支持我对两者的投入。
+
 ——Phil
 
 ✦
@@ -56,9 +66,6 @@ https://archive.org/details/jjqueryjqueryuij0000jong
 我们考虑两个半无限晶体A和B在一个界面处相遇。除了相对取向不同外，这两个晶体是相同的。界面由单位法向量n表征，相对取向定义为其中一个晶体绕平行于n的轴相对于另一个晶体的旋转。系统的能量通过求和两个晶体中原子之间的成对相互作用来计算。然后调整两个晶体的相对位移以最小化该能量。
 
 该方法应用于铝中的<110>对称倾斜晶界。晶界能量作为取向差角的函数进行计算。结果表明，当边界由交替的六边形和菱形“结构单元”对组成时，能量最低。另外两种边界{221}和{331}的能量也进行了计算，发现与一般理论相符。
-
-
-
 
 # 前言
 
@@ -83,16 +90,22 @@ https://archive.org/details/jjqueryjqueryuij0000jong
 读完本书后，你应该
 
 - 能够轻松地将 jQuery 添加到你的 Web 项目中
+
 - 理解 jQuery 核心、jQuery UI 和 jQuery Mobile 之间的区别
+
 - 熟悉 jQuery 核心的基本功能和函数
+
 - 熟练使用 jQuery 核心和 jQuery UI 添加样式和小部件，并与用户交互
+
 - 能够使用 jQuery Mobile 库创建移动网站
+
 - 能够轻松创建自己的插件并将其集成到你的网站中
+
 - 能够添加第三方插件，例如来自 Twitter Bootstrap 框架的插件
 
 ## 本书结构
 
-第 1 至 5 章涵盖 jQuery 核心库。第 1 章介绍了基本用法以及如何包含 jQuery，包括设置数组、使用数据属性和测试浏览器功能支持。第 2 章介绍了如何从 DOM 中精细调整元素选择。第 3 章教授了 jQuery 如何帮助操作网站的 DOM 结构。第 4 章介绍了 jQuery 事件处理之旅，并涵盖了 jQuery 1.6 和 1.7 版本中绑定的差异。第 5 章向你展示了如何与 Web 服务器通信，包括使用 AJAX、页面错误、页面重定向和 XML。
+第 1 至 5 章涵盖 jQuery 核心库。第 1 章介绍了基本用法以及如何包含 jQuery，包括设置数组、使用数据属性和测试浏览器功能支持。第 2 章介绍了如何从 DOM 中精细调整元素选择。第 3 章教授了 jQuery 如何帮助操作网站的 DOM 结构。第 4 章介绍了 jQuery 事件处理之旅，并涵盖了 jQuery 1.6 和 1.7 版本中绑ning的差异。第 5 章向你展示了如何与 Web 服务器通信，包括使用 AJAX、页面错误、页面重定向和 XML。
 
 第 6 至 8 章涵盖了 jQuery UI 库的使用。第 6 章演示了 jQuery UI 带来的额外功能，例如可拖动、可拖放和可排序的对象。第 7 章涵盖了使用小部件，包括手风琴、自动完成、按钮、日期选择器、对话框、进度条、滑块和选项卡组件。第 8 章涉及 jQuery UI 的样式和主题以及效果和过渡。
 
@@ -107,14 +120,18 @@ https://archive.org/details/jjqueryjqueryuij0000jong
 以下是一些你应该访问的有用网站：
 
 - jQuery API 文档：http://api.jquery.com/
+
 - jQuery UI 文档：http://jqueryui.com/demos/
+
 - jQuery Mobile 文档：http://jquerymobile.com/demos/
+
 - Twitter Bootstrap JavaScript 文档：http://twitter.github.com/bootstrap/javascript.html
+
 - Zurb Foundation 文档：http://foundation.zurb.com/docs/
+
 - jQuery Tools：http://jquerytools.org/
+
 - Stack Overflow 论坛：http://stackoverflow.com/
-
-
 
 ## 致谢
 
@@ -143,9 +160,13 @@ https://archive.org/details/jjqueryjqueryuij0000jong
 # 核心
 
 - **第1章** jQuery入门
+
 - **第2章** 选择元素
+
 - **第3章** 修改页面
+
 - **第4章** 监听和响应事件
+
 - **第5章** 与服务器通信
 
 # 第1章
@@ -215,6 +236,7 @@ $(document).ready(function() {
 ```
 
 > **注意**
+
 > 通常，你应该避免在HTML中包含任何CSS和JavaScript。本书为了可读性，将一个示例的所有代码放在一起，打破了这一规则。然而，通常你应该将脚本放在外部JavaScript文件中，并像第29行引用jQuery库那样引用它们。
 
 除了`script`元素外，HTML不含JavaScript。HTML包含一些指针，使元素更容易被jQuery找到。这些是`class`和`id`。
@@ -231,9 +253,7 @@ HTML采用了HTML5的部分特性，但尚未使用所有新的元素名称，�
 
 第39行对文档中的所有段落元素起作用并更改CSS属性。不推荐以这种方式更改CSS属性。本书主要使用`css()`函数来指示选择了哪些元素。第41行选择一个类为`myclass`的段落，并通过`.html()`函数更改其HTML内容。这允许你获取或更改选择器的内容。最后，第43行选择一个id为`myid`的段落并绑定一个单击处理程序，该处理程序显示一个带有"Hello World"的警报框。
 
-第39、41和43行中的选择器是CSS选择器。jQuery支持大多数CSS3选择器，并添加了自己的扩展。选择越简单、越标准，性能就越快。第2章“选择元素”将更详细地介绍选择器。
-
-
+第39、41和43行中的选择器是CSS选择器。jQuery支持大多数CSS3选择器，并添加了自己的扩展。选择越简单、越标准，性能就越快。第2章“选择元素”将更详细介绍选择器。
 
 ## 配方：在其他库中使用 jQuery
 
@@ -367,11 +387,11 @@ jQuery 将 `$` 用作 `jQuery` 的别名。这意味着当你调用 jQuery 函�
 26
 27   $('p').each(function(index, el) {
 28     $(el).prepend(' - ');
-29   });
+29   );
 30
 31   $('p').each(function(index) {
 32     $(this).prepend(values[index]);
-33   });
+33   );
 34
 35 });
 36 </script>
@@ -387,7 +407,7 @@ jQuery 将 `$` 用作 `jQuery` 的别名。这意味着当你调用 jQuery 函�
 
 ## 配方：使用 map() 操作数组
 
-尽管 `each()` 看起来比 for 循环更简洁，但有更简洁的方法来操作数组。清单 1.5 说明了如何使用 `map()` 实现与清单 1.4 类似的目的。结果证明，`each()` 更适合根据数组元素进行函数调用。`map()` 函数专门用于通过处理数组元素来生成一个新数组。在 `map()` 中，变量赋值被简单的 `return` 语句取代。
+尽管 `each()` 看起来比 for 循环更简洁，但有更简洁的方法来操作数组。清单 1.5 说明了如何使用 `map()` 实现与清单 1.4 类似的目的。结果证明，`each()` 更适合根据数组元素进行函数调用。`map()` 函数专门用于通过处理数组元来生成一个新数组。在 `map()` 中，变量赋值被简单的 `return` 语句取代。
 
 ### 清单 1.5 修改数组中的所有元素
 
@@ -418,10 +438,12 @@ jQuery 将 `$` 用作 `jQuery` 的别名。这意味着当你调用 jQuery 函�
 23
 24   arr = $.map(arr, function(value, index) {
 25     return 'done something with ' + value;
-26   });
+26   );
 27
+
 28   $('#after').append(JSON.stringify(arr));
 29
+
 30 });
 31 </script>
 32 </body>
@@ -458,6 +480,7 @@ jQuery 将 `$` 用作 `jQuery` 的别名。这意味着当你调用 jQuery 函�
 18 <button id="get-first">Get first</button><br>
 19 <button id="get-last">Get last</button>
 20
+
 21 <script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
 22
 23 <script>
@@ -467,65 +490,61 @@ jQuery 将 `$` 用作 `jQuery` 的别名。这意味着当你调用 jQuery 函�
 27     // same as next
 28     $('#get').click(function() {
 29         alert('Get p = ' + $('p').get());
-30     });
+30     );
 31
+
 32     // same as previous, better readability
 33     $('#to-array').click(function() {
 34         alert('Get p = ' + $('p').toArray());
-35     });
+35     );
 36
+
 37     // yet another alternative with the same functionality
 38     $('#make-array').click(function() {
 39         alert('Get p = ' + $.makeArray($('p')));
-40     });
+40     );
 41
+
 42     // same as next
 43     $('#first').click(function() {
-```
-
-
-
-## 第1章 jQuery入门
-
-### 清单1.6 以多种方式检索数组和元素（续）
-
-```javascript
-44	alert('First p = ' + $('p')[0].innerHTML);
-45	});
-46	// 与上一个相同
-47	$('#get-first').click(function() {
-48	alert('Get first p = ' + $('p').get(0).innerHTML);
-49	});
+44         alert('First p = ' + $('p')[0].innerHTML);
+45     );
+46     // 与上一个相同
+47     $('#get-first').click(function() {
+48         alert('Get first p = ' + $('p').get(0).innerHTML);
+49     );
 50
-51	// 使用简便：获取最后一个元素
-52	$('#get-last').click(function() {
-53	alert('Get last p = ' + $('p').get(-1).innerHTML);
-54	});
+
+51     // 使用简便：获取最后一个元素
+52     $('#get-last').click(function() {
+53         alert('Get last p = ' + $('p').get(-1).innerHTML);
+54     );
 55
-56	});
-57	</script>
-58	</body>
-59	</html>
+
+56     });
+57 </script>
+58 </body>
+59 </html>
 ```
 
 第29、34和39行执行相同的功能：将包含选择的jQuery对象转换为HTML元素数组。`get()`方法对此很有效，但对于这个目的来说，它不是最易读的。`getArray()`和`makeArray()`函数主要区别在于调用方式，两者都可以使用，取决于个人偏好。
 
-使用`get()`从当前选择中获取特定元素类似于使用方括号`[]`访问jQuery对象。一个优点是可以通过请求位置-1来获取最后一个元素。
+使用`get()`从当前选择中获特定元素类似于使用方括号`[]`访问jQuery对象。一个优点是可以通过请求位置-1来获取最后一个元素。
 
-### 配方：使用`index()`获取元素的位置
+## 配方：使用`index()`获取元素的位置
 
 最后一个配方展示了如何将jQuery选择转换为常规HTML元素数组。所有HTML元素都有一个位置，不仅在jQuery选择中，在整个HTML文档中也是如此。清单1.7展示了如何确定这个位置。
 
 #### 清单1.7 确定段落的索引
 
-```html
-00	<!DOCTYPE html>
+```
+00 <!DOCTYPE html>
 01
-02	<html lang="en">
-03	<head>
-04	<title>The index() function</title>
-05	</head>
-06	<body>
+02 <html lang="en">
+03 <head>
+04   <title>The index() function</title>
+05 </head>
+06 <body>
 07
 08 <h1>Click on the paragraphs to see their index</h1>
 09 
@@ -547,7 +566,7 @@ jQuery 将 `$` 用作 `jQuery` 的别名。这意味着当你调用 jQuery 函�
 25 
 26   $('p').click(function() {
 27     alert('Index of clicked item is: ' + $(this).index())
-28   });
+28   );
 29 
 30 });
 31 </script>
@@ -557,13 +576,13 @@ jQuery 将 `$` 用作 `jQuery` 的别名。这意味着当你调用 jQuery 函�
 
 通过仅从混合多种元素类型的文档中选择段落元素，可以明显看出`index()`函数的返回值独立于jQuery选择。
 
-### 配方：使用`grep()`在数组中查找元素
+## 配方：使用`grep()`在数组中查找元素
 
 要在数组中查找元素，可以使用`grep()`函数（类似于Unix命令用于在文件中查找文本），它与`map()`和`each()`有相似之处。清单1.8展示了如何使用`grep()`选择名称中包含字符“r”的月份。
 
 #### 清单1.8 选择一年中名称中包含“r”的月份
 
-```html
+```
 00 <!DOCTYPE html>
 01 
 02 <html lang="en">
@@ -587,13 +606,16 @@ jQuery 将 `$` 用作 `jQuery` 的别名。这意味着当你调用 jQuery 函�
 20    'June', 'July', 'August', 'September', 'October',
 21       'November', 'December'];
 22
+
 23   var rInMonth = $.grep(arr, function(value, index) {
 24      return value.indexOf('r') >= 0;
-25   });
+25   );
 26
+
 27   $('#all-months').html(arr.join('<br> '));
 28   $('#vitamin').html(rInMonth.join('<br> '));
 29
+
 30 });
 31 </script>
 32 </body>
@@ -602,13 +624,13 @@ jQuery 将 `$` 用作 `jQuery` 的别名。这意味着当你调用 jQuery 函�
 
 其中`each()`适用于为每个数组元素调用其他函数，`map()`适用于更改数组中的所有值，而`grep()`适用于选择数组的子集。所有函数调用都期望返回`true`或`false`，具体取决于当前元素是否应在结果集中。
 
-### 配方：使用`length()`确定元素集的大小
+## 配方：使用`length()`确定元素集的大小
 
 如果您需要知道jQuery选择了多少个项目，`length()`函数就派上用场了。另请注意，它将返回与`size()`函数相同的值。清单1.9展示了如何使用此函数。
 
 #### 清单1.9 确定段落的数量
 
-```html
+```
 00 <!DOCTYPE html>
 01
 02 <html lang="en">
@@ -620,23 +642,29 @@ jQuery 将 `$` 用作 `jQuery` 的别名。这意味着当你调用 jQuery 函�
 08 <h2>By clicking on the button below, you can see
 09   the length of the selected element set.</h2>
 10
+
 11 <p>First</p>
 12 <p>Second</p>
 13 <p>Third</p>
 14
+
 15 <button id="get-length">Get length</button>
 16
+
 17 <script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
 18
+
 19 <script>
 20 // please externalize this code to an external .js file
 21 $(document).ready(function() {
 22
+
 23   // 与下一个相同
 24   $('#get-length').click(function() {
 25     alert('Length = ' + $('p').length);
-26   });
+26   );
 27
+
 28 });
 29 </script>
 30 </body>
@@ -645,13 +673,13 @@ jQuery 将 `$` 用作 `jQuery` 的别名。这意味着当你调用 jQuery 函�
 
 `length()`的用法很直接。第25行返回所选段落元素的数量。
 
-### 配方：检索HTML5 data-属性
+## 配方：检索HTML5 data-属性
 
 使用HTML5，您可以在HTML元素以data-开头时添加自己的属性。这对于需要传输许多与DOM树相关的小数据、但希望对网站访问者隐藏这些数据的Web应用程序非常有用。清单1.10演示了jQuery如何帮助您读取这些data-属性的内容。
 
 #### 清单1.10 从data-myattribute读取隐藏文本
 
-```html
+```
 00 <!DOCTYPE html>
 01 
 02 <html lang="en">
@@ -675,7 +703,7 @@ jQuery 将 `$` 用作 `jQuery` 的别名。这意味着当你调用 jQuery 函�
 20 
 21   $('button').click(function() {
 22     alert('The data is: ' + $('#test-data').data('myattribute'));
-23   });
+23   );
 24 
 25 });
 26 </script>
@@ -685,15 +713,15 @@ jQuery 将 `$` 用作 `jQuery` 的别名。这意味着当你调用 jQuery 函�
 
 如果您的属性名为`data-myattribute`，您可以使用`data()`函数获取数据，将`myattribute`作为参数指定。在这种情况下，您可以将`data()`视为一个便利函数。正如您在下一个配方中看到的，`data()`函数有更多用途。
 
-### 配方：使用`data()`存储元素数据
+## 配方：使用`data()`存储元素数据
 
 操作HTML文档相对较慢。一些Web应用程序滥用HTML文档来存储与特定HTML元素相关的隐藏数据。应用程序可以使用像`data-myattribute`这样的属性来实现这一点。
 
-以前，将数据存储在HTML文档内部被认为是一种不好的做法。这是因为Web开发人员会随意插入自定义元素，导致验证错误并可能引起页面渲染问题。HTML5添加了对`data-*`属性的支持，jQuery以`data()`函数的形式提供了一种使用存储在其中的数据的方法。在最后一个配方中，您看到了此函数如何帮助您获取data-属性。这不是主要功能。清单1.11演示了如何使用`data()`在文档之外的中央存储中存储特定于元素的数据。
+以前，将数据存储在HTML文档内部被认为是一种不好的做法。这是因为Web开发人员会随意插入自定�元素，导致验证错误并可能引起页面渲染问题。HTML5添加了对`data-*`属性的支持，jQuery以`data()`函数的形式提供了一种使用存储在其中的数据的方法。在最后一个配方中，您看到了此函数如何帮助您获取data-属性。这不是主要功能。清单1.11演示了如何使用`data()`在文档之外的中央存储中存储特定于元素的数据。
 
 #### 清单1.11 在不影响其他元素的情况下存储元素数据
 
-```html
+```
 00 <!DOCTYPE html>
 01 
 02 <html lang="en">
@@ -728,19 +756,12 @@ jQuery 将 `$` 用作 `jQuery` 的别名。这意味着当你调用 jQuery 函�
 31 
 32   $('#store').click(function() {
 33     $('#store-data').data('myattribute', 'some data');
-34   });
+34   );
 35 
 36   $('#show-data').click(function() {
 37     alert('The data is: ' + $('#store-data').data('myattribute'));
-38   });
-```
-
-
-
-## 清单 1.11 在不影响其他元素的情况下存储元素数据（续）
-
-```
-39
+38   );
+39 
 40 $('#show-empty').click(function() {
 41   alert('The data is: ' + $('#empty-data').data('myattribute'));
 42 });
@@ -773,11 +794,13 @@ jQuery 将 `$` 用作 `jQuery` 的别名。这意味着当你调用 jQuery 函�
 11
 12 <button id="remove-data">Remove the data</button>
 13
+
 14 <p id="store-data">This paragraph element is the placeholder
 15    for the data to be stored. Showing the data will reveal
 16    a little bit of the jquery internals for storing data.
 17    You can ignore the technical details.</p>
 18
+
 19
 20 <script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
 21
@@ -789,16 +812,18 @@ jQuery 将 `$` 用作 `jQuery` 的别名。这意味着当你调用 jQuery 函�
 27   $('#store-data').click(function() {
 28     $('#store-data').data('myattribute',
 29       {a: 'first', b: 'second'});
-30   });
+30   );
 31
+
 32   $('#show-data').click(function() {
 33     alert('The data is: ' +
 34       JSON.stringify($('#store-data').data()));
-35   });
+35   );
 36
+
 37   $('#remove-data').click(function() {
 38     $('#store-data').removeData();
-39   });
+39   );
 40 });
 41 </script>
 42 </body>
@@ -822,65 +847,85 @@ JavaScript 是一种弱类型语言。这意味着你永远无法百分之百确
 05 </head>
 06 <body>
 07
+
 08 <p>This is a list of variable type tests, followed by
 09 a few modification functions:</p>
 10 <p id="placeholder"></p>
 11
+
 12 <script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
 13
+
 14 <script>
 15 // please externalize this code to an external .js file
 16 $(document).ready(function() {
 17
+
 18 var testObj = {},
 19 testVar = 1,
 20 testFun = function() {},
 21 testArr = [1, 2, 2];
 22
+
 23 var results = [];
 24
+
 25 results.push('testObj = ' + JSON.stringify(testObj));
 26 results.push('testVar = ' + JSON.stringify(testVar));
 27 results.push('testFun = ' + JSON.stringify(testFun));
 28 results.push('testArr = ' + JSON.stringify(testArr));
 29
+
 30 results.push('<br>');
 31
+
 32 results.push('type(testObj) = ' + $.type(testObj));
 33 results.push('type(testVar) = ' + $.type(testVar));
 34 results.push('type(testFun) = ' + $.type(testFun));
 35 results.push('type(testArr) = ' + $.type(testArr));
 36
+
 37 results.push('<br>');
 38
+
 39 results.push('inArray(3, testArr) = '
 40 + $.inArray(3, testArr));
 41
+
 42 results.push('isArray(testArr) = '
 43 + $.isArray(testArr));
 44
+
 45 results.push('isEmptyObject(testObj) = '
 46 + $.isEmptyObject(testObj));
 47
+
 48 results.push('isPlainObject(testObj) = '
 49              + $.isPlainObject(testObj));
 50
+
 51 results.push('isFunction(testFun) = '
 52              + $.isFunction(testFun));
 53
+
 54 results.push('<br>');
 55
+
 56 results.push('merge(testArr, [3, 3, 4]) = '
 57              + $.merge(testArr, [3, 3, 4]));
 58
+
 59 results.push('unique(testArr) = '
 60              + $.unique(testArr));
 61
+
 62 results.push('merge(testArr, [5, 6]) = '
 63              + $.merge(testArr, [5, 6]));
 64
+
 65 $('#placeholder').append(results.join('<br>'));
 66
+
 67 });
 68 </script>
 69 </body>
@@ -912,37 +957,50 @@ JavaScript 是一种弱类型语言。这意味着你永远无法百分之百确
 07
 08 <p>First object:</p>
 09
+
 10 <p id="object-1"></p>
 11
+
 12 <p>Second object:</p>
 13
+
 14 <p id="object-2"></p>
 15
+
 16 <p>Result object:</p>
 17
+
 18 <p id="object-result"></p>
 19
+
 20 <button id="extend">Extend</button>
 21
+
 22 <button id="extend-new">Extend into empty</button>
 23
+
 24 <button id="reset">Reset</button>
 25
+
 26 <script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
 27
+
 28 <script>
 29 // please externalize this code to an external .js file
 30 $(document).ready(function() {
 31
+
 32 var reset,
 33 object1 = object2 = objectresult = {};
 34
+
 35 var show = function() {
 36    $('#object-1').html(JSON.stringify(object1));
 37    $('#object-2').html(JSON.stringify(object2));
 38    $('#object-result').html(JSON.stringify(objectresult));
 39  };
 40
+
 41  (reset = function() {
 42    object1 = {
 43      a: 'original a',
@@ -957,22 +1015,26 @@ JavaScript 是一种弱类型语言。这意味着你永远无法百分之百确
 52    show();
 53  })();
 54
+
 55  $('#extend').click(function() {
 56    // has side effects for object1
 57    objectresult = $.extend(object1, object2);
 58    show();
-59  });
+59  );
 60
+
 61  $('#extend-new').click(function() {
 62    // without side effects for object1
 63    objectresult = $.extend({}, object1, object2);
 64    show();
-65  });
+65  );
 66
+
 67  $('#reset').click(function() {
 68    reset();
-69  });
+69  );
 70
+
 71 });
 72 </script>
 73 </body>
@@ -980,8 +1042,6 @@ JavaScript 是一种弱类型语言。这意味着你永远无法百分之百确
 ```
 
 比较第 57 行和第 63 行。第 57 行将第二个对象合并到第一个对象中，覆盖了第一个对象中已存在的函数和属性。此外，第一个对象会被此函数修改。
-
-
 
 ## 第1章 jQuery入门
 
@@ -1034,15 +1094,18 @@ JavaScript 是一种弱类型语言。这意味着你永远无法百分之百确
 37 // please externalize this code to an external .js file
 38 $(document).ready(function() {
 39
+
 40 $('#serialize').click(function() {
 41 $('#placeholder').html($('#form').serialize());
-42 });
+42 );
 43
+
 44 $('#serialize-array').click(function() {
 45 $('#placeholder').html(JSON.stringify(
 46 $('#form').serializeArray()));
-47 });
+47 );
 48
+
 49 });
 50 </script>
 51 </body>
@@ -1069,14 +1132,18 @@ jQuery 的目标之一是帮助你处理浏览器不兼容性。许多浏览器�
 08 <p>The paragraph under this contains the supported
 09   properties of this browser:</p>
 10
+
 11 <p id="placeholder"></p>
 12
+
 13 <script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
 14
+
 15 <script>
 16 // please externalize this code to an external .js file
 17 $(document).ready(function() {
 18
+
 19 var result = [];
 20 $.each(
 21 ('ajax boxModel changeBubbles checkClone checkOn cors cssFloat ' +
@@ -1086,8 +1153,10 @@ jQuery 的目标之一是帮助你处理浏览器不兼容性。许多浏览器�
 25   result.push(name + ' = ' + $.support[name] + '<br>');
 26 });
 27
+
 28 $('#placeholder').html(result.join('') );
 29
+
 30 });
 31 </script>
 32 </body>
@@ -1095,6 +1164,7 @@ jQuery 的目标之一是帮助你处理浏览器不兼容性。许多浏览器�
 ```
 
 例如，`ajax` 属性指示浏览器是否支持对服务器的调用。而 `opacity` 指示你是否可以在多个元素之间创建透视效果。
+
 所有这些属性的完整参考超出了本书的范围。有关它们的更多信息，请访问 http://api.jquery.com/jQuery.support/。jQuery 还包含一个不应使用的 `browser` 属性。尽管 `support` 优于 `browser`，但只要可能，最好还是避免使用它。
 
 ## 总结
@@ -1122,24 +1192,33 @@ jQuery 的目标之一是帮助你处理浏览器不兼容性。许多浏览器�
 07
 08 <div>This text should be normal.</div>
 09
+
 10 <p>This text should become blue</p>
 11
+
 12 <span>This text should become blue</span>
 13
+
 14 <div>This text should be normal.</div>
 15
+
 16 <p>This text should become blue</p>
 17
+
 18 <span>This text should become blue</span>
 19
+
 20 <script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
 21
+
 22 <script>
 23 // please externalize this code to an external .js file
 24 $(document).ready(function() {
 25
+
 26 $('p').add('span').css('background-color', 'blue');
 27
+
 28 });
 29 </script>
 30 </body>
@@ -1151,6 +1230,7 @@ jQuery 的目标之一是帮助你处理浏览器不兼容性。许多浏览器�
 ## 配方：使用 filter() 精炼选择
 
 在进行粗略选择后，你可以使用 `filter()` 函数进一步精炼结果。这有两个目的。首先，并非所有 CSS 选择器和扩展的速度都一样快。如果你先用快速选择器选择一组元素，然后用较慢的选择器进一步精炼该集，与直接在完整文档上使用较慢选择器相比，性能会有所提高。
+
 其次，在 jQuery 中，你可以将函数链接在一起。如果某些链接的函数只应作用于选择集的子集，而其他链接的函数应作用于整个集合，那么 `filter()` 和 `end()` 函数就会派上用场，如清单2.2所示。
 
 ### 清单2.2 分离奇数和偶数元素
@@ -1165,12 +1245,8 @@ jQuery 的目标之一是帮助你处理浏览器不兼容性。许多浏览器�
 06 <body>
 07
 08 <h2>Filter the selection</h2>
-```
-
-## 清单 2.2 分离奇数和偶数元素（续）
-
-```html
 09
+
 10 <ul>
 11 <li>One</li>
 12 <li>Two</li>
@@ -1184,17 +1260,21 @@ jQuery 的目标之一是帮助你处理浏览器不兼容性。许多浏览器�
 20 <li>Ten</li>
 21 </ul>
 22
+
 23 <script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
 24
+
 25 <script>
 26 // please externalize this code to an external .js file
 27 $(document).ready(function() {
 28
+
 29   $('li')
 30     .filter(':odd').css('background-color', 'blue')
 31     .end().css('color', 'red')
 32
-33 });
+
+33 );
 34 </script>
 35 </body>
 36 </html>
@@ -1210,7 +1290,7 @@ jQuery 的目标之一是帮助你处理浏览器不兼容性。许多浏览器�
 
 清单 2.3 演示 find() 和 children() 的区别
 
-```html
+```
 00 <!DOCTYPE html>
 01 
 02 <html lang="en">
@@ -1221,7 +1301,8 @@ jQuery 的目标之一是帮助你处理浏览器不兼容性。许多浏览器�
 07 
 08 <h2>This code highlights the 'special' cases using both
 09   children() and find() to show the difference</h2>
-10 
+10
+
 11 <ul id="ul-root">
 12   <li>1</li>
 13   <li>2
@@ -1262,7 +1343,56 @@ is() 函数作用于当前选集，并测试其是否与提供的参数相等，
 
 清单 2.4 演示了 has() 和 is() 的用法。
 
-## 清单 2.4 展示 has() 和 is() 的区别
+### 清单 2.4 展示 has() 和 is() 的区别
+
+```
+00 <!DOCTYPE html>
+01
+02 <html lang="en">
+03 <head>
+04   <title>Display has() and is()</title>
+05 </head>
+06 <body>
+07
+08 <h2>This example shows the difference between has() and is()</h2>
+09
+
+10 <ul>
+11 <li>One</li>
+12 <li>Two</li>
+13 <li>Three</li>
+14 <li>Four</li>
+15 <li>Five</li>
+16 <li>Six</li>
+17 <li>Seven</li>
+18 <li>Eight</li>
+19 <li>Nine</li>
+20 <li>Ten</li>
+21 </ul>
+22
+
+23 <script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+24
+
+25 <script>
+26 // please externalize this code to an external .js file
+27 $(document).ready(function() {
+28
+
+29   $('li').has('span').css('background-color', 'yellow');
+30   $('li').is(':contains("Three")').css('color', 'green');
+31
+
+32 });
+33 </script>
+34 </body>
+35 </html>
+```
+
+第 29 行使用 `has()` 选择包含 `span` 元素的 `li` 元素，并将其背景颜色设为黄色。第 30 行使用 `is()` 检查 `li` 元素是否包含文本 "Three"，如果是则将其文本颜色设为绿色。
+
+
+
 
 ```html
 00 <!DOCTYPE html>
@@ -1298,13 +1428,13 @@ is() 函数作用于当前选集，并测试其是否与提供的参数相等，
 
 第 21 行根据是否存在 em 后代元素来筛选当前选集。第 23 行和第 24 行展示了 is() 函数如何判断两个 jQuery 选集是否相同。
 
-32 第 2 章 选择元素
+## 第 2 章 选择元素
 
-## 技巧：使用伪选择器选择表单元素
+### 技巧：使用伪选择器选择表单元素
 
 除了 CSS3 选择器，jQuery 还允许你提供类似 CSS3 选择器但未标准化的选择器。清单 2.5 演示了如何使用此类伪选择器来选择特定的表单元素。
 
-清单 2.5 选择 text、submit、button、radio 和 checkbox 输入元素
+#### 清单 2.5 选择 text、submit、button、radio 和 checkbox 输入元素
 
 ```html
 00 <!DOCTYPE html>
@@ -1347,11 +1477,11 @@ is() 函数作用于当前选集，并测试其是否与提供的参数相等，
 
 伪选择器由 jQuery 处理。如果伪选择器没有限定作用域，jQuery 可能会遍历文档中的每个元素并测试其是否符合条件。jQuery 内部没有查询优化算法；因此，明智的做法是将伪选择器的使用限制在 filter() 函数内。
 
-## 技巧：嵌套选择器
+### 技巧：嵌套选择器
 
 使用 jQuery，你可以使用 CSS 不支持的其他结构。例如，你可以嵌套选择器。清单 2.6 展示了如何结合使用 not() 和 has() 选择器。
 
-清单 2.6 选择不包含 <em> 元素的元素
+#### 清单 2.6 选择不包含 <em> 元素的元素
 
 ```html
 00 <!DOCTYPE html>
@@ -1387,7 +1517,7 @@ is() 函数作用于当前选集，并测试其是否与提供的参数相等，
 
 这个选择器的结果可能会让你感到惊讶。不仅第一个和第三个 div 元素被选中，第二个 div 中包含的 em 和 strong 元素也被选中了。请记住，该选择器的作用域并非仅限于 div 元素。尽管 em 元素本身就是一个 em，但严格来说，它并不包含另一个 em。
 
-## 技巧：模拟 CSS hover 选择器
+### 技巧：模拟 CSS hover 选择器
 
 并非所有 CSS3 选择器都能在 jQuery 中工作。例如，伪元素 ::first-letter 和 ::first-line 无法在 jQuery 中工作，因为它只能作用于实际的元素。jQuery 无法在没有副作用的情况下更改文档元素树。此外，一些不常用的选择器也被排除在 jQuery 之外。
 
@@ -1397,7 +1527,7 @@ is() 函数作用于当前选集，并测试其是否与提供的参数相等，
 
 清单 2.7 展示了 jQuery 如何使用适用于鼠标事件的简写符号来模拟 hover 的行为。
 
-**清单 2.7 当鼠标悬停在元素上时更改背景颜色**
+#### 清单 2.7 当鼠标悬停在元素上时更改背景颜色
 
 ```html
 00 <!DOCTYPE html>
@@ -1429,9 +1559,7 @@ is() 函数作用于当前选集，并测试其是否与提供的参数相等，
 26 </script>
 ```
 
-
-
-## 代码清单 2.7 鼠标悬停时改变背景颜色（续）
+#### 代码清单 2.7 鼠标悬停时改变背景颜色（续）
 
 ```
 27 });
@@ -1442,13 +1570,13 @@ is() 函数作用于当前选集，并测试其是否与提供的参数相等，
 
 当鼠标尚未移至被嵌套的 `div` 之上时，其背景为白色。当鼠标悬停在 `div` 上时，它变为蓝色。当鼠标移开，背景将保持蓝色。再次指向该 `div` 会使背景变为红色。最终的行为类似于 CSS 的 `hover` 效果。实际上，对于这个特定例子，CSS 的 `hover` 更为合适，因为这只是样式问题。但如果你需要基于此类行为调用 JavaScript，可以考虑使用 `hover()` 工具函数。
 
-## 技巧：使用 contains() 按文本内容进行选择
+### 技巧：使用 contains() 按文本内容进行选择
 
 常规的 CSS3 选择器可以通过检查完整值、起始内容或结束内容来测试 HTML 属性。然而，在 CSS3 中，无法基于 HTML 元素本身的内容来实现选择。
 
 代码清单 2.8 演示了 jQuery 的扩展函数 `contains()`，它可以根据元素的内容进行选择。
 
-### 代码清单 2.8 选择包含单词 "blue" 的元素
+#### 代码清单 2.8 选择包含单词 "blue" 的元素
 
 ```
 00 <!DOCTYPE html>
@@ -1482,11 +1610,11 @@ is() 函数作用于当前选集，并测试其是否与提供的参数相等，
 
 第 21 行将所有包含单词 "blue" 的 `div` 元素设置为蓝色背景。请注意，过度使用此函数会影响页面的性能。
 
-## 示例：高亮显示单个单词
+#### 示例：高亮显示单个单词
 
 上一个技巧仅高亮显示包含 "blue" 一词的整个元素。更理想的用例是仅高亮显示该单词本身。可以考虑使用此类函数来突出显示访客最近搜索过的单词。代码清单 2.9 演示了其工作原理。
 
-### 代码清单 2.9 高亮显示元素内的单词 "blue"
+#### 代码清单 2.9 高亮显示元素内的单词 "blue"
 
 ```
 00 <!DOCTYPE html>
@@ -1526,11 +1654,11 @@ is() 函数作用于当前选集，并测试其是否与提供的参数相等，
 
 第 21 行选择了包含单词 "blue" 的 `div`，方式与代码清单 2.8 类似。然后，所选 `div` 的内容被分割成多个 `span` 标签并存储到一个数组中。这通过 `map()` 函数创建数组、`html()` 函数获取数据以及 `split()` 函数解析数据来完成。替换完成后，第 27 行选择了包含 "blue" 一词的 `span`，并通过 `css()` 函数为其应用蓝色。
 
-## 技巧：创建自定义选择器
+### 技巧：创建自定义选择器
 
 你可以添加类似表单伪选择器和 `contains()` 的自定义选择器。编写自己的选择器有助于你理解它们在处理大数据集时的性能问题。如果你知道如何通过预选元素来规避这些性能问题，你仍然可以利用其优雅的语法。代码清单 2.10 展示了如何创建自定义选择器。
 
-### 代码清单 2.10 为每隔第三个元素创建自定义选择器
+#### 代码清单 2.10 为每隔第三个元素创建自定义选择器
 
 ```
 00 <!DOCTYPE html>
@@ -1570,35 +1698,41 @@ is() 函数作用于当前选集，并测试其是否与提供的参数相等，
 34     // index contains the 0 - n, depending on the current
 35     //     element and the number of elements
 36
+
 37     // meta contains an array with the following values:
 38     //     [":third('bla')", "third", "'", "bla"]
 39
+
 40     // stack contains a NodeList, which can be transformed into
 41     //     an array using $.makeArray(stack)
 42
+
 43     return (index + 1) % 3 == 0;
 44   };
-45
-46   $('li:third(\'bla\')').css('background-color', 'blue');
-47
-48   // li:nth-child(3n) would do the same of course
-49   // this example is to show how to implement a custom
-50   // selector
+
+45   $('li:third(\'bla\')').css('background-color', 'blue');
+
+46   // li:nth-child(3n) would do the same of course
+47   // this example is to show how to implement a custom
+48   // selector
+
+49
+
+50 });
 51
-52 });
-53
-54 </script>
-55 </body>
-56 </html>
+
+52 </script>
+53 </body>
+54 </html>
 ```
 
 jQuery 的核心是 Sizzle 选择器引擎。正是它赋予了 jQuery 遍历 DOM 并选择所需元素的能力。你可以在 jQuery 中使用 Sizzle 选择器来创建自定义选择器。第 30 行展示了其方法。通过使用 `$.expr[':']`，你告知 jQuery 你要构建一个选择器。添加 `.third` 则指明了该选择器将被如何调用。匿名函数中的四个变量是创建自定义选择器的标准参数。每个变量的作用已在注释中说明，以帮助你理解它们各自包含的内容。此示例并未使用自定义选择器的所有可能性。传递给它的 `bla` 参数在此处没有实际作用。你可以参考代码注释中的说明，进一步探索其各种可能性。
 
-## 技巧：限定选择的上下文范围
+### 技巧：限定选择的上下文范围
 
 除了 `filter()` 和 `find()`，你还可以从最初的查询开始就限制 jQuery 选择的范围。如果你有一个常规的 HTML 元素，可以使用类似代码清单 2.11 的结构，将选择操作限制在该元素的后代元素上。
 
-### 代码清单 2.11 设置和读取 context 属性
+#### 代码清单 2.11 设置和读取 context 属性
 
 ```
 00 <!DOCTYPE html>
@@ -1614,29 +1748,38 @@ jQuery 的核心是 Sizzle 选择器引擎。正是它赋予了 jQuery 遍历 DO
 10   <p>So this text will remain unchanged</p>
 11 </div>
 12
+
 13 <div id="the-context">
 14   <h2>This is the container context.</h2>
 15   <p>So this text should get a blue background</p>
 16 </div>
 17
+
 18 <script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
 19
+
 20 <script>
 21 // please externalize this code to an external .js file
 22 $(document).ready(function() {
 23
 24   var selectContext = $('p', $('#the-context')[0]);
 25   var selectOther = $('#not-the-context p');
+
 26
+
 27   selectContext
 28 .css('background-color', 'blue')
 29 .append('<p>Context element is ' +
 30 selectContext.context.nodeName + '</p>');
+
 31
+
 32 selectOther
 33 .append('<p>Not the element is ' +
 34 selectOther.context.nodeName + '</p>');
+
 35
+
 36 });
 37 </script>
 38 </body>
@@ -1649,19 +1792,17 @@ jQuery 的核心是 Sizzle 选择器引擎。正是它赋予了 jQuery 遍历 DO
 
 本章涵盖了 CSS 元素选择器及其 jQuery 扩展。除了 CSS 选择器，还演示了用于进一步细化选择和树遍历的 jQuery 函数。最后一个技巧重点介绍了自定义选择器。
 
-
-
 ## 第3章 修改页面
 
 本章涵盖 jQuery 操作 HTML 树的方法。这包括类、属性、特性以及元素。本章还将展示名称相似的方法之间的区别，并讨论潜在的性能问题。
 
-## 方法：添加类
+### 方法：添加类
 
 在没有 jQuery 的情况下，浏览器限制你只能在单次调用中设置所有类。你不能在不考虑元素上其他类的情况下添加或移除类。当你想向元素添加另一个类时，这增加了额外的复杂性和开销。幸运的是，jQuery 提供了 `addClass()` 函数，通过提供轻松向选择器添加一个或多个类的能力，克服了这一障碍。
 
 清单 3.1 展示了如何通过单次 `addClass()` 调用添加一个类。
 
-### 清单 3.1 向单个元素添加多个类
+#### 清单 3.1 向单个元素添加多个类
 
 ```html
 <!DOCTYPE html>
@@ -1702,11 +1843,11 @@ jQuery 的核心是 Sizzle 选择器引擎。正是它赋予了 jQuery 遍历 DO
 
 第 34 行添加一个类，而第 37 行在单次调用中添加两个类。
 
-### 示例：移除类
+#### 示例：移除类
 
 `removeClass()` 函数的工作方式与 `addClass()` 相同。一个常见的用例是隐藏仅在 JavaScript 可用时才使用的 HTML 元素。清单 3.2 展示了如何在文档加载后立即移除 `no-js` 类。
 
-### 清单 3.2 当 JavaScript 不可用时隐藏 HTML 内容
+#### 清单 3.2 当 JavaScript 不可用时隐藏 HTML 内容
 
 ```html
 <!DOCTYPE html>
@@ -1745,11 +1886,11 @@ jQuery 的核心是 Sizzle 选择器引擎。正是它赋予了 jQuery 遍历 DO
 
 反过来，你可以使用 `noscript` 元素来显示仅在 JavaScript 不可用时才应可见的内容。
 
-## 方法：生成类名
+### 方法：生成类名
 
 `addClass()` 函数的参数不仅可以是静态字符串。你也可以传递一个函数，如清单 3.3 所示。特别是在动态 Web 应用程序中，这可能会派上用场。不过要小心；你不希望让你的 CSS 样式比必要的更复杂。通过正确的选择器，你可以用非复杂的类名完成许多事情。
 
-### 清单 3.3 将函数传递给 addClass()
+#### 清单 3.3 将函数传递给 addClass()
 
 ```html
 <!DOCTYPE html>
@@ -1794,11 +1935,11 @@ jQuery 的核心是 Sizzle 选择器引擎。正是它赋予了 jQuery 遍历 DO
 
 在第 39 行，该函数作用于选择器返回的每个元素的索引以及所选元素的当前类名。第 41 行将当前类名和索引组合成一个新名称，以演示该函数的可能性。不过，这个示例在实践中并不实用。
 
-## 方法：更改特性和属性
+### 方法：更改特性和属性
 
-使用 `attr()`，你可以更改 HTML 元素的属性，例如 `rel`、`lang` 或自定义属性。使用 `prop()`，你可以更改 HTML 元素的特性。清单 3.4 演示了其复杂之处。在某些情况下，从 HTML 角度看起来像属性的东西，从 JavaScript 角度看可能是一个特性。（在 jQuery 的 1.6 版本中进行了更改，导致 `prop()` 函数专门用于特性值，而 `attr()` 函数用于属性值。你可以在 http://api.jquery.com/prop/ 和 http://api.jquery.com/attr/ 阅读有关当前及任何未来更改的信息。）
+使用 `attr()`，你可以更改 HTML 元素的属性，例如 `rel`、`lang` 或自定属性。使用 `prop()`，你可以更改 HTML 元素的特性。清单 3.4 演示了其复杂之处。在某些情况下，从 HTML 角度看起来像属性的东西，从 JavaScript 角度看可能是一个特性。（在 jQuery 的 1.6 版本中进行了更改，导致 `prop()` 函数专门用于特性值，而 `attr()` 函数用于属性值。你可以在 http://api.jquery.com/prop/ 和 http://api.jquery.com/attr/ 阅读有关当前及任何未来更改的信息。）
 
-### 清单 3.4 演示特性与属性之间的区别
+#### 清单 3.4 演示特性与属性之间的区别
 
 ```html
 <!DOCTYPE html>
@@ -1845,15 +1986,13 @@ jQuery 的核心是 Sizzle 选择器引擎。正是它赋予了 jQuery 遍历 DO
 
 第 41 行设置了一个自定义属性。如果你的浏览器足够现代，第 9–11 行的 CSS 样式将直观地显示属性的更改。
 
-## 方法：更改元素包含的 HTML
+### 方法：更改元素包含的 HTML
 
 jQuery 提供了一种便捷的方法 `html()`，用于操作 HTML 元素的 `innerHTML` 属性。清单 3.5 演示了其用法。
 
+#### 教程：更改元素中包含的 HTML
 
-
-# 教程：更改元素中包含的 HTML
-
-## 清单 3.5 选择段落并替换其 HTML
+##### 清单 3.5 选择段落并替换其 HTML
 
 ```html
 00 <!DOCTYPE html>
@@ -1885,11 +2024,14 @@ jQuery 提供了一种便捷的方法 `html()`，用于操作 HTML 元素的 `in
 26 
 27     alert('The old HTML was:\n' + p.html());
 28 
+
 29     p.html('<p>And that can be replaced with ' +
 29             '<em>simple</em> new HTML.</p>');
 31 
+
 32   });
 33 
+
 34 });
 35 </script>
 36 </body>
@@ -1898,13 +2040,11 @@ jQuery 提供了一种便捷的方法 `html()`，用于操作 HTML 元素的 `in
 
 你可以直接将 HTML 字符串传递给 `html()`，或者传递一个包含 HTML 的 jQuery 对象也可以。与 `innerHTML` 相比，`html()` 的主要优势在于它直接作用于 jQuery 选择集，而无需先将其转换为数组。
 
-## 48 第 3 章 修改页面
-
-# 教程：使用 append() 和 appendTo() 添加内容
+#### 教程：使用 append() 和 appendTo() 添加内容
 
 html() 会替换当前内容——因此你需要自己负责保留当前内容——而清单 3.6 则展示了如何使用 append() 和 appendTo() 添加元素，同时不影响现有内容。
 
-### 清单 3.6 展示 append() 与 appendTo() 之间的区别
+##### 清单 3.6 展示 append() 与 appendTo() 之间的区别
 
 ```html
 00 <!DOCTYPE html>
@@ -1939,23 +2079,26 @@ html() 会替换当前内容——因此你需要自己负责保留当前内容�
 29 
 30   $('#append-to').click(function() {
 31     $('<p>Test appendTo()</p>').appendTo('#append-to-placeholder');
-32   });
+32   );
 33 
-34 </script>
-35 </body>
-36 </html>
+
+34 });
+35 </script>
+36 </body>
+37 </html>
 ```
 
 `append()` 和 `appendTo()` 之间的主要区别在于：它是将 HTML 作为参数作用于目标，还是将目标作为参数作用于 HTML。`append()` 函数将内容附加到其被调用的选择器上，如第 27 行所示；而 `appendTo()` 函数的工作方式则相反，如第 31 行所示，将要插入的内容用作选择器。当附加 jQuery 对象时，这种方式在视觉上可能更直观一些。就参数而言，`append()` 和 `appendTo()` 函数能够接受 DOM 元素、HTML 字符串、jQuery 对象和函数。
 
 > **注意**
+
 > 如果你需要附加许多 HTML 元素，最好先将这些 HTML 组合成一个更大的字符串，然后通过单个函数调用进行附加。`append()` 和 `appendTo()` 函数作用于 HTML 文档树，这会使得操作相对缓慢。
 
-# 示例：附加函数的结果
+##### 示例：附加函数的结果
 
 除了向 `append()` 传递静态字符串外，你还可以传递一个函数。清单 3.7 展示了使用一个函数来首先确定是否有足够空间添加另一个元素。
 
-### 清单 3.7 确定是否有空间附加更多项目
+##### 清单 3.7 确定是否有空间附加更多项目
 
 ```html
 00 <!DOCTYPE html>
@@ -1991,6 +2134,7 @@ html() 会替换当前内容——因此你需要自己负责保留当前内容�
 30           last = "<p>This is the last one</p>",
 31           spaceLeft = 160 - $.trim(html).length - last.length;
 32
+
 33       if(more.length < spaceLeft)
 34         return more;
 35       else if(spaceLeft > 0)
@@ -1998,6 +2142,7 @@ html() 会替换当前内容——因此你需要自己负责保留当前内容�
 37     });
 38   });
 39
+
 40 });
 41 </script>
 42 </body>
@@ -2006,11 +2151,11 @@ html() 会替换当前内容——因此你需要自己负责保留当前内容�
 
 此示例会添加包含文本“There is room for more”的行，直到确定没有足够的空间为止。在停止添加行之前，最后一行将显示文本“This is the last one。”
 
-# 教程：使用 prepend() 和 prependTo() 添加内容
+##### 教程：使用 prepend() 和 prependTo() 添加内容
 
 prepend() 和 prependTo() 函数的工作方式与 append() 和 appendTo() 函数几乎完全相同。只不过附加内容是将新内容放置在选中元素的底部，而前置内容则是将内容放置在顶部。清单 3.8 演示了使用 prepend() 和 prependTo() 函数。
 
-### 清单 3.8 展示 prepend() 与 prependTo() 之间的区别
+##### 清单 3.8 展示 prepend() 与 prependTo() 之间的区别
 
 ```html
 00 <!DOCTYPE html>
@@ -2041,12 +2186,13 @@ prepend() 和 prependTo() 函数的工作方式与 append() 和 appendTo() 函�
 25 
 26     $('#prepend').click(function() {
 27         $('#prepend-placeholder').prepend('<p>Test prepend</p>');
-28     });
+28     );
 29 
 30     $('#prepend-to').click(function() {
 31         $('<p>Test prependTo()</p>').appendTo('#prepend-to-placeholder');
-32     });
+32     );
 33 
+
 34 });
 35 </script>
 36 </body>
@@ -2055,11 +2201,11 @@ prepend() 和 prependTo() 函数的工作方式与 append() 和 appendTo() 函�
 
 第 9 行和第 15 行都包含有助于识别前置文本并形象化如何在任何现有元素上方添加内容的内容。就像 append() 和 appendTo() 函数一样，prepend() 和 prependTo() 也能够接受 DOM 元素、HTML 字符串、jQuery 对象和函数作为参数。
 
-# 教程：使用 jQuery 动态生成 HTML
+##### 教程：使用 jQuery 动态生成 HTML
 
 在前面的示例中，HTML 主要直接作为文本字符串生成。你也可以使用 jQuery 生成 HTML。你可以将属性作为属性映射传递，并在该映射中为子元素嵌套 HTML 元素。清单 3.9 展示了这种生成 HTML 的方式。
 
-### 清单 3.9 使用 jQuery 构建无序列表
+##### 清单 3.9 使用 jQuery 构建无序列列表
 
 ```html
 00 <!DOCTYPE html>
@@ -2105,9 +2251,7 @@ prepend() 和 prependTo() 函数的工作方式与 append() 和 appendTo() 函�
 
 在此示例中，第 26-28 行“生成”了 HTML。第 31 行添加了对该函数的引用，该函数会自动执行。第 30 行和第 31 行的嵌套方式产生了一种
 
-
-
-## 教程：附加和分离元素
+##### 教程：附加和分离元素
 
 你可以将一个元素从HTML树中分离出来，然后重新附加到另一个位置。清单3.10展示了如何操作。
 
@@ -2182,7 +2326,7 @@ prepend() 和 prependTo() 函数的工作方式与 append() 和 appendTo() 函�
 
 除了将HTML元素移动到不同位置，分离元素的一个重要使用场景是对HTML树进行大量操作。当一个元素被分离后，对其进行操作所需的系统资源更少。你还应该注意，`detach()`函数会将所有相关的jQuery数据（包括函数和对象）保留在被分离的元素中。当将数据重新附加回DOM时，这很有帮助，这也是本教程能够删除并重新附加内容的方式。
 
-## 教程：使用`clone()`复制元素
+##### 教程：使用`clone()`复制元素
 
 如果分离和重新附加元素只是移动它们，那么如何高效地复制元素呢？为了解决这个问题，jQuery提供了`clone()`函数。
 
@@ -2221,8 +2365,10 @@ prepend() 和 prependTo() 函数的工作方式与 append() 和 appendTo() 函�
 29 
 30     <button id="add-row">Add row</button><br>
 31 
+
 32     <div id="repeat"></div>
 33 
+
 34 </form>
 35 
 36 <div id="template">
@@ -2251,12 +2397,14 @@ prepend() 和 prependTo() 函数的工作方式与 append() 和 appendTo() 函�
 59       .appendTo('#repeat');
 60     rowCount++;
 61 
+
 62     // if the click handler is on a <button> element and the button
 63     // is within a <form> element, return false to stop the page
 64     // from reloading and inadvertently undoing the clone action
 65     return false;
 66   });
 67 
+
 68 });
 69 </script>
 70 </body>
@@ -2265,7 +2413,7 @@ prepend() 和 prependTo() 函数的工作方式与 append() 和 appendTo() 函�
 
 直到第53行的`clone()`调用，代码都很简单。在第54-58行，代码过滤出input元素并更改它们的`name`属性，以确保每个元素在表单中都是唯一的。当你提交这个表单时，结果看起来就像一个重复元素的数组。`clone()`函数还可以接受两个额外的参数，使克隆的元素也包含任何元素数据和事件绑定的副本。虽然这两个参数都是布尔值，但第一个参数仅指父元素的数据和事件绑定，而第二个参数指的是任何子元素。
 
-## 教程：在特定位置插入元素
+##### 教程：在特定位置插入元素
 
 `append()`、`appendTo()`、`prepend()`和`prependTo()`函数将新元素插入到现有元素的选择集中。在某些情况下，你想创建新的兄弟元素而不是新的子元素。清单3.12演示了实现这一点的选项。
 
@@ -2301,17 +2449,18 @@ prepend() 和 prependTo() 函数的工作方式与 append() 和 appendTo() 函�
 26 
 27   $('#before').click(function() {
 28     $('#target').before('<p>Before</p>');
-29   });
+29   );
 30   $('#after').click(function() {
 31     $('#target').after('<p>After</p>');
-32   });
+32   );
 33   $('#insert-before').click(function() {
 34     $('<p>Insert Before</p>').insertBefore('#target');
-35   });
+35   );
 36   $('#insert-after').click(function() {
 37     $('<p>Insert After</p>').insertAfter('#target');
-38   });
+38   );
 39 
+
 40 });
 41 </script>
 42 </body>
@@ -2320,7 +2469,7 @@ prepend() 和 prependTo() 函数的工作方式与 append() 和 appendTo() 函�
 
 `after()`和`insertAfter()`之间的区别类似于`append()`和`appendTo()`之间的区别。如果你点击按钮，你会看到在这个代码示例中，结果行为是相同的。正如预期的那样，`before()`在现有选择之前插入元素。请注意，这些函数接受与`append()`和`prepend()`函数相同的参数，这意味着你可以传递DOM元素、HTML字符串、jQuery对象和一个函数作为参数。
 
-## 示例：在列表中上下移动项目
+##### 示例：在列表中上下移动项目
 
 你可以使用`insertBefore()`和`insertAfter()`来上下移动现有元素。清单3.13展示了如何通过*向上*和*向下*按钮来移动一个div元素列表。
 
@@ -2354,9 +2503,7 @@ prepend() 和 prependTo() 函数的工作方式与 append() 和 appendTo() 函�
 24 </div>
 ```
 
-
-
-## 示例：在列表中上下移动项目
+##### 示例：在列表中上下移动项目
 
 清单 3.13 使用上、下按钮更改 `<div>` 列表的顺序（续）
 
@@ -2391,12 +2538,13 @@ prepend() 和 prependTo() 函数的工作方式与 append() 和 appendTo() 函�
 52   $('.up').click(function() {
 53     var parent = $(this).parent();
 54     parent.insertBefore(parent.prev());
-55   });
+55   );
 56   $('.down').click(function() {
 57     var parent = $(this).parent();
 58     parent.insertAfter(parent.next());
-59   });
+59   );
 60 
+
 61 });
 62 </script>
 63 </body>
@@ -2405,7 +2553,7 @@ prepend() 和 prependTo() 函数的工作方式与 append() 和 appendTo() 函�
 
 隐藏第一个 *上移* 按钮和最后一个 *下移* 按钮是通过在 HTML 顶部使用 CSS 样式表来完成的。调用 `insertBefore()` 和 `insertAfter()` 会自动将元素从其当前位置移开。
 
-## 配方：移除元素
+##### 配方：移除元素
 
 当你 `detach()` 一个元素时，它会从屏幕和 HTML 文档树中消失；但是，它仍然存储在内存中。清单 3.14 演示了如何使用 `remove()` 和 `empty()` 函数来从文档和内存中消除元素。`remove()` 函数将返回被移除的元素，因此你可以将这些元素存储在一个变量中，然后将它们重新插入到页面中。请记住，当使用 `remove()` 函数执行此操作时，所有的 jQuery 数据和事件信息都会丢失。
 
@@ -2459,7 +2607,7 @@ prepend() 和 prependTo() 函数的工作方式与 append() 和 appendTo() 函�
 44
 45 $('#p#empty').click(function() {
 46     $(this).empty();
-47 });
+47 );
 48
 49 });
 50 </script>
@@ -2469,11 +2617,11 @@ prepend() 和 prependTo() 函数的工作方式与 append() 和 appendTo() 函�
 
 第 35 行的 `remove()` 函数移除了整个段落元素。在第 39 行，它移除了段落直接子级的 `span` 元素。与 `remove()` 函数的其他示例类似，使用 `$(this).children().remove('span')` 也可以实现此结果。当你在第 49 行调用 `empty()` 时，段落元素仍然存在；然而，文本已被移除。如果段落元素中包含任何子元素，它们也将会被移除。试一试这个代码示例，并查看以红色边框形式呈现的视觉表示。
 
-## 配方：包裹和解包裹元素
+##### 配方：包裹和解包裹元素
 
 如果你想用一个新的 HTML 元素封装现有的 HTML 元素，jQuery 提供了多个函数来帮助你完成。这些函数的标题中都包含 "wrap" 一词，但它们工作原理的具体细节各不相同。清单 3.15 演示了 `wrap()` 的最基本用法。
 
-### 清单 3.15 包裹和解包裹段落
+###### 清单 3.15 包裹和解包裹段落
 
 ```
 00 <!DOCTYPE html>
@@ -2505,7 +2653,7 @@ prepend() 和 prependTo() 函数的工作方式与 append() 和 appendTo() 函�
 26
 27   $('p').click(function() {
 28     $(this).unwrap('<div class="wrapper"/>');
-29   });
+29   );
 30
 31 });
 32 </script>
@@ -2515,7 +2663,7 @@ prepend() 和 prependTo() 函数的工作方式与 append() 和 appendTo() 函�
 
 在这个例子中，每个段落都被自己的包裹 div 所包裹。然后，`unwrap()` 函数会移除这些 div。清单 3.16 演示了 `wrapInner()` 函数。
 
-### 清单 3.16 包裹段落的内容
+###### 清单 3.16 包裹段落的内容
 
 ```
 00 <!DOCTYPE html>
@@ -2545,11 +2693,13 @@ prepend() 和 prependTo() 函数的工作方式与 append() 和 appendTo() 函�
 24
 25 $('p').wrapInner('<div class="wrapper"/>');
 26
+
 27 // 以下方法不适用于 wrapInner()：
 28 // $('p').click(function() {
 29 // $(this).unwrap('<div class="wrapper"/>');
 30 // });
 31
+
 32 });
 33 </script>
 34 </body>
@@ -2560,7 +2710,7 @@ prepend() 和 prependTo() 函数的工作方式与 append() 和 appendTo() 函�
 
 清单 3.17 演示了 `wrapAll()` 的使用。
 
-### 清单 3.17 包裹一组段落
+###### 清单 3.17 包裹一组段落
 
 ```
 00 <!DOCTYPE html>
@@ -2592,7 +2742,7 @@ prepend() 和 prependTo() 函数的工作方式与 append() 和 appendTo() 函�
 26 
 27 $('p').click(function(){
 28 $(this).unwrap('<div class="wrapper"/>');
-29 });
+29 );
 30 
 31 });
 32 </script>
@@ -2606,17 +2756,15 @@ prepend() 和 prependTo() 函数的工作方式与 append() 和 appendTo() 函�
 
 本章演示了操作 HTML 文档树的最重要函数。本章从类、属性和特性开始。本章的大部分内容涵盖了修改文档中元素的各种方式：动态 HTML、追加、前置、在之前和之后插入、附加、分离、复制以及以各种方式包裹元素。通过使用本章涵盖的函数，你可以随心所欲地操作 HTML 文档。
 
-
-
 ## 第4章：监听并响应事件
 
 使用 jQuery 监听并响应事件在代码层面相对简单。然而，无论代码多么简洁，处理事件本身可能依然复杂。大量事件以看似不可预测的顺序生成。为了能以有用的方式响应事件，你需要掌握在何种情况下可以预期哪些事件。本章提供了一些方法，你可以用它们来记录特定类型的所有事件，并通过输入实验来观察结果。它涵盖了鼠标事件、键盘事件、表单事件以及一些更通用的事件（如滚动）。在探讨了特定事件之后，本章还将展示事件委托的优势。
 
-## 方法：监听鼠标事件
+### 方法：监听鼠标事件
 
 鼠标事件的数量可能超过任何其他类型的事件。你必须明确自己要从如此多的事件中寻找什么，才能做出有用的响应。为了感受不同鼠标事件的效果，清单4.1简单地展示了特定类型事件发生时的情况。鼠标事件太多，难以记录到日志文件并轻松阅读。
 
-### 清单4.1：显示鼠标事件
+#### 清单4.1：显示鼠标事件
 
 ```html
 <!DOCTYPE html>
@@ -2674,17 +2822,18 @@ $(document).ready(function() {
 </html>
 ```
 
-大多数鼠标事件是不言自明的，你可以通过移动鼠标并指向测试区域的不同部分来学习它们。然而，`mouseover` 和 `mouseout` 与 `mouseenter` 和 `mouseleave` 之间的差异一开始可能并不明显。在目标 `div` 的大部分区域内，结果是相同的。现在，尝试将鼠标移到段落方块上，注意其差异。
+大多数鼠标事件是不言自明的，你可以通过移动鼠标并指向测试区域的不同部分来学习它们。然而，`mouseover` 和 `mouseout` 与 `mouseenter` 和 `mouseleave` 之间的差异一开始可能并不明显。在目标 `div` 的大部分区域内，结果是相同的。现在，尝试将鼠移到段落方块上，注意其差异。
 
 请注意，此示例对所有事件名称都使用了 `bind` 函数。当然，如果你只监听较少量的事件类型，也可以使用简写函数，如 `mousedown()`、`mouseenter()`、`mouseleave()`、`mousemove()`、`mouseout()`、`mouseover()` 和 `mouseup()`。如果你发现需要移除已附加的某个事件，可以使用 `unbind()` 函数来移除该特定事件处理程序。
 
-## 示例：在 Canvas 上绘图
+#### 示例：在 Canvas 上绘图
 
 另一种可视化鼠标事件的方法是用它们来进行绘图。如果你有一个支持 HTML5 `canvas` 元素的现代浏览器，可以使用清单4.2进行一些有创意的涂鸦。
 
-### 清单4.2：监听 `<canvas>` 元素上的鼠标事件并绘制像素
+#### 清单4.2：监听 `<canvas>` 元素上的鼠标事件并绘制像素
 
-```html
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -2726,7 +2875,6 @@ $(document).ready(function() {
 </script>
 </body>
 </html>
-```
 
 此示例在按下鼠标按钮时绘制像素。如果你移动鼠标很快，你会看到像素之间可能存在间隙。如果这是一个实际的绘图应用程序，一种解决方法是监听 `onmousemove` 事件，然后绘制当前位置和前一位置之间的所有点（要了解一些相关的数学知识，请参阅 Bresenham 直线算法，网址为 http://en.wikipedia.org/wiki/Bresenham%27s_line_algorithm）。出于演示目的，了解鼠标事件之间通常存在间隙是有好处的。
 
@@ -2787,8 +2935,6 @@ $(document).ready(function() {
 ## 方法：监听表单事件
 
 如果你想在不跟踪每个键盘或鼠标事件的情况下知道表单是否发生了变化，可以监听特定的表单相关事件。清单4.4演示了一个表单，它将列出表单被操作时触发的事件。
-
-
 
 技术方案：监听表单事件
 
@@ -3038,8 +3184,6 @@ $(document).ready(function() {
 </html>
 ```
 
-
-
 ## 清单 4.8 使用 on() 函数代替 delegate()
 
 此清单与清单 4.6 的主要区别在于，清单 4.7 中按钮组下方的 `li` 项不再响应点击事件。事件处理程序被绑定到第一个 `ul` 元素上。`delegate()` 的语法要求开发者理解事件委托的原理。而 `live()` 函数可能会被不具备此知识的开发者使用。如果文档中的某个元素阻止了事件冒泡，这可能会很危险。
@@ -3134,7 +3278,7 @@ $(document).ready(function() {
 
 ## 配方：在 Node.js 中设置示例服务器
 
-要测试 AJAX 示例，你需要一个服务器。对于这些示例，服务器是用 PHP、Python、Ruby、Erlang、Dart、Go、.Net 还是 Java 编写的并不重要。当然，要记住所有服务器都需要一些设置时间。因为 jQuery 是 JavaScript，所以本书假设你已经熟悉它。这就是为什么测试服务器是用 JavaScript 代码提供的。要运行代码，你需要在 http://nodejs.org 下载并安装 Node.js。此示例不需要插件或进一步的模块。作为参考，本章的代码是使用 Node.js 的 0.4.11 和 0.6.19 版本开发和测试的。安装 Node.js 并将示例放入名为 `01-app.js` 的文件后，你可以从以下命令行运行代码：
+要测试 AJAX 示例，你需要一个服务器。对于这些示例，服务器是用 PHP、Python、Ruby、Erlang、Dart、Go、.Net 还是 Java 编写的并不重要。当然，要记住所有服务器都需要一些设置时间。因为 jQuery 是 JavaScript，所以本书假设你已经熟悉它。这就是为什么测试服务器是用 JavaScript 代码提供的。要运行代码，你需要在 http://nodejs.org 下载并安装 Node.js。此示例不需要插件或进一的模块。作为参考，本章的代码是使用 Node.js 的 0.4.11 和 0.6.19 版本开发和测试的。安装 Node.js 并将示例放入名为 `01-app.js` 的文件后，你可以从以下命令行运行代码：
 
 ```
 node 01-app.js
@@ -3190,8 +3334,6 @@ else if(path == '/validate') {
     res.end(JSON.stringify(keys));
 ```
 
-
-
 ## 代码清单 5.1 监听本章中由食谱生成的HTTP请求并相应响应（续）
 
 ```javascript
@@ -3214,6 +3356,7 @@ else if(path == '/validate') {
 ```
 
 HTML、JSON和XML请求会被传递给文件服务器。你将在以下食谱中遇到的一些特殊情况，将各自使用特定的响应进行处理。根据请求的路径，这些响应应该不会太出乎意料。
+
 如果找不到文件，或者没有处理器且请求不是XML、JSON或HTML，则会返回404错误。
 
 ## 食谱：执行GET请求
@@ -3286,29 +3429,40 @@ HTML、JSON和XML请求会被传递给文件服务器。你将在以下食谱中
 07
 08 <h2>Press the button to perform the request.</h2>
 09
+
 10 <button id="trigger">GET</button>
 11 <br>
 12 <div id="target"></div>
 13
+
 14 <script src="http://code.jquery.com/jquery-latest.min.js"></script>
 15
+
 16 <script>
 17 // please externalize this code to an external .js file
 18 $(document).ready(function() {
 19
+
 20   $('#trigger').click(function() {
 21
+
 22     $('#target').load('03a-test-snippet.html');
 23
-24   });
+
+24   );
 25
+
 26 });
-27 </script>
-28 </body>
-29 </html>
+27
+
+28 });
+29 </script>
+30 </body>
+31 </html>
 ```
 
 将被加载到文档中的HTML内容如下：
+
 `<h1>Hello world from external HTML snippet</h1>`
 
 第22行展示了load()函数如何直接作用于选定的元素，无需回调处理器。
@@ -3336,18 +3490,23 @@ Promise可以解决这个问题。理解Promise涉及一些理论。首先，让
 11 <br>
 12 <div id="target">
 13
+
 14 <script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
 15
+
 16 <script>
 17 // please externalize this code to an external.js file
 18 $(document).ready(function() {
 19
+
 20   $('#trigger').click(function() {
 21
+
 22     // avoid error() success() complete()
 23     // those are deprecated in jQuery 1.8
 24     // use done() fail() always() instead
 25
+
 26     $.ajax({url:'02a-test-values.json', dataType: 'json'})
 27     .done(function(data) {
 28       $('#target').append('The returned value is: '
@@ -3408,36 +3567,40 @@ $.ajax({url: '02a-test-values.json', dataType: 'json'})
 11 <br>
 12 <div id="target">
 13
+
 14
 15 <script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
 16
+
 17 <script>
 18 // please externalize this code to an external .js file
 19 $(document).ready(function() {
 20
+
 21   $('#trigger').click(function() {
 22
+
 23     $.ajax('fail-on-purpose')
 24     .done(function(data, xhr) {
 25       $('#target').append('Unexpected success. . . ' +
 26                            '(actually not a good thing)');
-27     })
+27     )
 28     .fail(function(xhr, text, error) {
 29       $('#target').append('Failed as expected (good!). Code ' +
 30                            xhr.status + ' and text ' + error);
-31     });
+31     );
 32
-33   });
+33   );
 34
 35 });
-36 </script>
-37 </body>
-38 </html>
+36
+37 });
+38 </script>
+39 </body>
+40 </html>
 ```
 
 如预期的那样，fail()回调被调用了。通过传递给此回调处理器的参数，你可以确定出了什么问题并采取相应措施。
-
-
 
 ## 配方：捕获“页面未找到”结果
 
@@ -3532,7 +3695,7 @@ $.ajax('fail-on-purpose', {
 
 然而，如果你不想被重定向，并且知道出了问题，你可能就无能为力了。jQuery 似乎与自动重定向处理无关。浏览器根据规范为你处理这个操作。
 
-在某些用例中，重定向用于向最终用户请求更多信息，例如登录凭证。在这些情况下，你不希望 AJAX 请求在底层被重定向。相反，你希望捕获重定向并将其传递给完整的浏览器屏幕。
+在某些用例中，重定向用于向最终用户请更多信息，例如登录凭证。在这些情况下，你不希望 AJAX 请求在底层被重定向。相反，你希望捕获重定向并将其传递给完整的浏览器屏幕。
 
 在这种情况下，如果你无法控制服务器，那就无能为力了。如果你确实可以控制服务器，你应该找到另一种方式将重定向传递回 AJAX 调用。考虑将其作为内容负载的一部分。一些库发明了新的非标准 HTTP 状态代码。这应被视为不良做法，并且可能导致代理和缓存出现意外结果。
 
@@ -3649,8 +3812,6 @@ $(document).ready(function() {
 <body>
 ```
 
-
-
 ## 清单 5.10 每次更改后序列化并将表单输入发送至服务器（续）
 
 ```html
@@ -3665,45 +3826,60 @@ $(document).ready(function() {
 19     <input type="text" name="first_field"
 20       value="" id="first_field"><br>
 21
+
 22     <label for="second_field">第二字段</label>
 23     <input type="text" name="second_field"
 24       value="" id="second_field"><br>
 25
+
 26     <label for="third_field">第三字段</label>
 27     <input type="text" name="third_field"
 28       value="" id="third_field"><br>
 29
+
 30     <label for="fourth_field">第四字段</label>
 31     <input type="text" name="fourth_field"
 32       value="" id="fourth_field"><br>
 33
+
 34     <input type="submit" name="submit" value="提交" id="submit">
 35
+
 36   </form>
 37
+
 38   <script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
 39
+
 40   <script>
 41   // 请将此代码外部化到外部 .js 文件
 42   $(document).ready(function() {
 43
+
 44     $('input').filter(':text').addClass('error');
 45
+
 46     $('input').change(function() {
 47
+
 48       $.get('validate', $('form').serialize())
 49       .done(function(data) {
 50
+
 51         $('input').removeClass('error');
 52
+
 53         $.each(data, function(i, name) {
 54           $('#' + name).addClass('error');
 55         });
 56
-57       });
+
+57       );
 58
-59     });
+
+59     );
 60
+
 61   });
 62 </script>
 63 </body>
@@ -3731,31 +3907,42 @@ AJAX 这个首字母缩写词的原意是 Asynchronous JavaScript And Xml。随�
 07
 08 <h2>按下按钮以执行请求。</h2>
 09
+
 10 <button id="trigger">GET</button>
 11 <br>
 12 <div id="target">
 13
+
 14
 15 <script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
 16
+
 17 <script>
 18 // 请将此代码外部化到外部 .js 文件
 19 $(document).ready(function() {
 20
+
 21   $('#trigger').click(function() {
 22
+
 23     $.get('11a-test-values', function(data) {
 24
+
 25       $('#target').append('返回的值是：' +
 26         $(data).find('name').text());
-27     });
+27     );
 28
-29   });
+
+29   );
 30
+
 31 });
-32 </script>
-33 </body>
-34 </html>
+32
+
+33 });
+34 </script>
+35 </body>
+36 </html>
 ```
 
 第 26 行使用 jQuery 构造从 XML 中读取。以下代码片段包含服务器返回的 XML：
@@ -3787,35 +3974,41 @@ AJAX 这个首字母缩写词的原意是 Asynchronous JavaScript And Xml。随�
 07
 08 <h2>按下按钮以执行请求。</h2>
 09
+
 10 <button id="trigger">GET</button>
 11 <br>
 12 <div id="target"> </div>
 13 <div id="log"> </div>
 14
+
 15 <script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
 16
+
 17 <script>
 18 // 请将此代码外部化到外部 .js 文件
 19 $(document).ready(function() {
 20
+
 21   $('#trigger').click(function() {
-22     $('#target').load('test-snippet.html');
-23   });
-24
-25   $.each(('ajaxError ajaxSend ajaxStart ajaxStop ' +
-26           'ajaxSuccess ajaxComplete').split(' '),
-27     function (i, name) {
-28       $('#log').bind(name, function(event, xhr) {
-29         $(this).append('事件：' + event.type + '<br/>');
-30       });
-31   });
-32 });
-33 </script>
-34 </body>
-35 </html>
+22
+23     $('#target').load('test-snippet.html');
+24   );
+25
+
+26   $.each(('ajaxError ajaxSend ajaxStart ajaxStop ' +
+27           'ajaxSuccess ajaxComplete').split(' '),
+28     function (i, name) {
+29       $('#log').bind(name, function(event, xhr) {
+30         $(this).append('事件：' + event.type + '<br/>');
+31       });
+32     });
+33 });
+34 </script>
+35 </body>
+36 </html>
 ```
 
-观察点击按钮时事件到达的顺序。这意味着你可以在 AJAX 请求的多个阶段进行响应。这些事件也允许你从中央位置修改或添加请求参数（如果需要的话）。
+观察点击按钮时事件到达的顺序。这意味着你可以在 AJAX 请求的多个阶段进行响应。这些事件也允许你从中央位置修改或添加请参数（如果需要的话）。
 
 ## 配方：从外部服务器读取 JSONP
 
@@ -3824,7 +4017,9 @@ AJAX 这个首字母缩写词的原意是 Asynchronous JavaScript And Xml。随�
 JSONP 是包装在函数调用中的 JSON。不是发起 AJAX 请求，而是向 HTML 文档内添加一个指向 JSONP 脚本的 script 元素，并调用一个回调函数来访问该脚本。
 
 > **注意**
+
 > 限制使用 XHR 的浏览器厂商这样做是有充分理由的：安全。
+
 > 使用 JSONP 绕过这些限制为黑客开辟了新的可能性，因为 JSONP 不允许在执行前进行验证。
 
 清单 5.13 演示了如何使用 JSONP 从 Twitter 检索数据。请记住，JSONP 不支持错误处理。
@@ -3842,36 +4037,50 @@ JSONP 是包装在函数调用中的 JSON。不是发起 AJAX 请求，而是向
 07
 08 <h2>按下按钮以执行请求。</h2>
 09
+
 10 <button id="trigger">GET</button>
 11 <br>
 12 <div id="target">
 13
+
 14
 15 <script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
 16
+
 17 <script>
 18 // 请将此代码外部化到外部 .js 文件
 19 $(document).ready(function() {
 20
+
 21   $('#trigger').click(function() {
 22
+
 23     $.getJSON('http://search.twitter.com/search.json' +
 24         '?q=jquery&callback=?', function(data) {
 25
+
 26       $.each(data.results, function(index, value) {
 27
+
 28         $('#target').append(value.text + '<br>');
 29
-30       });
-31   });
-32
-33 });
+
+30       );
+31
+
+32   );
+33
+
 34 });
 35
+
 36 });
-37 </script>
-38 </body>
-39 </html>
+37
+
+38 });
+39 </script>
+40 </body>
+41 </html>
 ```
 
 默认情况下，jQuery 中的 JSONP 处理程序在查询字符串中寻找 `callback=?` 参数。`?` 会被一个 jQuery 生成的回调函数替换，该函数将由服务器插入到 JSONP 中。
@@ -3884,12 +4093,12 @@ JSONP 是包装在函数调用中的 JSON。不是发起 AJAX 请求，而是向
 
 本章涵盖了 AJAX 最常见的用途。配方涵盖了获取 JSON、HTML 和 XML，以及许多错误场景。你可以传递 HTTP 头信息，在后台验证表单输入，以及普遍监听 AJAX 事件。最后一个配方展示了一个使用 JSONP 从其他服务器加载数据的权宜之计。由于安全风险和缺乏错误处理，最好避免使用 JSONP。
 
-
-
 ## 第二部分
+
 用户界面
 
 - **第 6 章** 与用户交互
+
 - **第 7 章** 与小组件交互
 
 ## 第 6 章 与用户交互
@@ -3898,7 +4107,7 @@ jQuery UI 是一套标准的 jQuery 插件集，可帮助你为网站添加交�
 
 ### 下载与安装 jQuery UI
 
-要开始使用 jQuery UI 组件，你需要引入一个单独的库。jQuery UI 采用模块化设计。模块的编程方式与第三方插件相同。当你只需要单个 jQuery UI 组件时，可以通过只包含该特定插件来保持 JavaScript 文件的体积精简。在 jQuery UI 官方网站（http://jqueryui.com）上，你可以选择所需的 jQuery 组件并下载自定义的 JavaScript 文件。当你需要使用所有可用的 jQuery UI 组件，或者代码效率不是首要考虑时，你可以引用一个包含所有 jQuery UI 插件的单个 JavaScript 文件，其方式类似于引用 jQuery 核心库。当你使用 jQuery 的内容分发网络（CDN）时，需要包含以下代码：
+要开始使用 jQuery UI 组件，你需要引入一个单独的库。jQuery UI 采用模块化设计。模块的编程方式与第三方插件相同。当你只需要单个 jQuery UI 组件时，可以通过只包含该特定插件来保持 JavaScript 文件的体积精简。在 jQuery UI 官方网站（http://jqueryui.com）上，你可以选择所需的 jQuery 组件并下载自定的 JavaScript 文件。当你需要使用所有可用的 jQuery UI 组件，或者代码效率不是首要考虑时，你可以引用一个包含所有 jQuery UI 插件的单个 JavaScript 文件，其方式类似于引用 jQuery 核心库。当你使用 jQuery 的内容分发网络（CDN）时，需要包含以下代码：
 
 ```html
 <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
@@ -3915,8 +4124,11 @@ href="http://code.jquery.com/ui/1.8.16/themes/base/jquery-ui.css">
 同样，如果你偏好不同的样式，可以将前面代码中的 `base` 一词替换为以下任一主题名称：
 
 black-tie, blitzer, cupertino, dark-hive, dot-luv, eggplant,
+
 excite-bike, flick, hot-sneaks, humanity, le-frog, mint-choc,
+
 overcast, pepper-grinder, redmond, smoothness, south-street, start,
+
 sunny, swanky-purse, trontastic, ui-darkness, ui-lightness, vader
 
 本章在不使用默认 CSS 相对简单的情况下，尽量避免使用它。在其他情况下，则使用基础主题以避免冗长的 CSS 列表。文中提供了关于如何在这些情况下提供自定义样式的指导。
@@ -3992,45 +4204,77 @@ position: relative; left: 123px; top: 123px;
 **表 6.1 可拖动交互的选项**
 
 | 选项 | 描述 |
+
 | --- | --- |
+
 | `$('body *').draggable({disabled: true});` | 通过禁用可拖动组件，你使元素无法移动。这看起来可能不太有用，但它可以帮助设置所有类来更改可拖动元素的外观和感觉，然后为需要此功能的应用程序快速开启或关闭元素的实际工作。 |
+
 | `$('body *').draggable({addClasses: false});` | 当你将 `addClasses` 设置为 false 时，可拖动元素都不会使用 `ui-draggable` 类进行可视化。但是，当你开始拖动元素时，它会获得一个 `ui-draggable-dragging` 类。如果你有大量可拖动元素，不添加这些类可以优化性能。你可能已经通过使用 HTML 和 CSS 提供了自己的样式。 |
-| `$('body *').draggable({appendTo: 'body'});` | 此选项用于设置拖动过程中使用的可拖动辅助元素的容器。默认情况下，辅助元素将被附加到可拖动元素的父元素上。 |
+
+| `$('body *').draggable({appendTo: 'body'});` | 此选项用于设置拖动过程中使用的可拖动辅助元素的容器。默认情况下，辅助元素将被附加到可拖动元父元素上。 |
+
 | `$('body *').draggable({axis: 'x'});` | 默认情况下，元素可以在垂直和水平轴上拖动。通过设置此选项，你可以将拖动限制为仅在 x 或 y 轴上进行。 |
+
 | `$('body *').draggable({cancel: 'b'});` | 通过设置 `cancel` 选项，当鼠标位于与提供的选择器匹配的元素上时，拖动无法开始。 |
+
 | `$('body *').draggable({connectToSortable: 'ul#my-sortable'});` | 当页面上设置了可排序元素（本章后面会讨论）时，你可以允许可拖动元素成为可排序列表的一部分。在使用此选项之前请仔细考虑。可排序元素也可以相互连接。仅当你需要从其他源将元素拖入可排序列表时才使用此选项。 |
+
 | `$('body b').draggable({containment: 'p'});` | 设置 `containment` 会限制可拖动元素的移动自由度。你可以提供 CSS 选择器、特定元素、单词 `parent`、`document` 或 `window`，或者提供一个值数组 `[x1, y1, x2, y2]`。 |
+
 | `$('body *').draggable({cursor: 'move'});` | 你可以在拖动时将鼠标光标更改为任何有效的 CSS 光标值：`crosshair`、`e-resize`、`help`、`move`、`n-resize`、`ne-resize`、`nw-resize`、`pointer`、`progress`、`s-resize`、`se-resize`、`sw-resize`、`text`、`w-resize` 或 `wait`。 |
+
 | `$('body *').draggable({cursorAt: {left: 20, top: 50}});` | 要更改拖动时光标的位置，可以更改 `cursorAt` 选项。除了 `left` 和 `top`，你还可以使用 `right` 和 `bottom`、`left` 和 `bottom` 或 `right` 和 `top` 来设置位置。 |
+
 | `$('body *').draggable({delay: 500});` | 设置元素开始拖动前需要等待的毫秒数。 |
+
 | `$('body *').draggable({distance: 50});` | 设置在可拖动组件开始在屏幕上移动元素并触发 `dragstart` 事件之前，元素应被拖动的距离。 |
+
 | `$('body *').draggable({grid: [20, 20]});` | 将被拖动元素的位置限制在指定比例的网格上。 |
+
 | `$('body *').draggable({handle: 'p'});` | 设置手柄以控制选择器的哪个部分将用于开始拖动。 |
+
 | `$('body *').draggable({helper: 'clone'});` | 通过将 `helper` 选项设置为 `clone`，被拖动的元素会在被拖动到屏幕之前先被克隆。这样，原始元素会保留在原位。 |
-
-
 
 ## 第6章 与用户交互
 
 ## 表6.1 可拖动交互的选项（续）
 
 | 选项 | 描述 |
+
 | :--- | :--- |
+
 | `$('body *').draggable({helper: function() { return $('b').clone(); }});` | 你可以不使用被拖动元素的克隆，而是使用文档中的任何其他元素作为辅助对象。选中的元素是一个函数的结果。它是否是一个克隆取决于函数的实现。 |
+
 | `$('body *').draggable({iframeFix: true});` | 当你的页面上有一个iframe时，尝试将元素拖动到iframe上方时会表现出奇怪的行为。通过将iframeFix设置为true，jQuery会在所有iframe上放置一个覆盖层。 |
+
 | `$('body *').draggable({iframeFix: '#my-iframe'});` | 你也可以选择特定的iframe，而不是在所有iframe上放置覆盖层。为此，你需要提供一个CSS选择器，而不是设置true。 |
-| `$('body *').draggable({opacity: 0.5});` | 使用opacity，你可以在拖动元素时创建一种透视效果。其值范围从0（不可见）到1（不透明）。 |
+
+
+
+| `$('body *').draggable({opacity: 0.5});` | 使用` | 使用opacity，你可以在拖动元素时创建一种透视效果。其值范围从0（不可见）到1（不透明）。 |
+
 | `$('body *').draggable({refreshPositions: true});` | 在高度动态的页面上，你可以将refreshPositions设置为true，以将重绘间隔增加到每次鼠标移动。这会影响性能和响应速度。 |
+
 | `$('body *').draggable({revert: 'invalid'});` | 当与本章后面讨论的droppable组件结合使用时，revert选项尤其有趣。在此示例中，当可拖动元素没有被放置在可放置区域上时，它将返回到其原始位置。 |
+
 | `$('body *').draggable({revertDuration: 1000});` | 设置revert动画的速度。 |
+
 | `$('body *').draggable({scope: 'my-scope'});` | 限制可拖动元素的作用域。设置此选项时，你需要一个具有相同作用域的可放置元素，否则你无法在任何地方放置可拖动元素。 |
+
 | `$('body *').draggable({scroll: false});` | 防止访问者在拖动元素时容器滚动。 |
+
 | `$('body *').draggable({scrollSensitivity: 10});` | 设置元素需要被拖动到当前范围之外多少像素，容器才会开始滚动。 |
+
 | `$('body *').draggable({scrollSpeed: 50});` | 设置滚动速度。 |
+
 | `$('body *').draggable({snap: 'li'});` | 设置可拖动元素吸附到的元素的选择器。当你将元素拖动到匹配选择器的另一个元素附近时，它将移动到该元素的边界。 |
+
 | `$('body *').draggable({snapMode: 'inner'});` | 设置元素应该吸附到另一个元素的内边框、外边框还是两者都吸附。 |
+
 | `$('body *').draggable({snapTolerance: 10});` | 设置吸附范围。增加此值使吸附到元素更容易，但更难将元素拖动到靠近另一个元素而不吸附的位置。 |
+
 | `$('body *').draggable({stack: '.my-stack'});` | 设置一个通用的CSS类来堆叠相同类型的可拖动元素。 |
+
 | `$('body *').draggable({zIndex: -1});` | 操作可拖动元素的CSS zIndex。 |
 
 ## 捕获可拖动事件
@@ -4107,12 +4351,19 @@ $('body *')
 表6.2列出了可用于可拖动组件的方法的代码片段。
 
 | 代码 | 可拖动组件使用的方法 |
+
 | :--- | :--- |
+
 | `$('body *').draggable('destroy');` | 销毁可拖动组件，并将HTML恢复到其原始状态。 |
+
 | `$('body *').draggable('disable');` | 禁用可拖动功能。阻止可拖动元素被拖动。 |
+
 | `$('body *').draggable('enable');` | 启用被禁用的可拖动元素。 |
+
 | `$('body *').draggable('option', 'option-name', 'option-value');` | 设置在“设置可拖动选项”部分讨论的任何选项。 |
+
 | `$('body *').draggable('option', {/*options*/});` | 同时设置多个选项。当省略第三个参数时，这也可以用作getter来检索值。 |
+
 | `$('body *').draggable('widget');` | 访问作为部件的可拖动元素。 |
 
 ## 教程：放置元素
@@ -4175,20 +4426,27 @@ $(document).ready(function() {
 选项`disable`和`addClasses`在“设置可拖动选项”部分有解释。表6.3展示了其他可用于可放置区域的代码片段。
 
 | 代码 | 可拖动组件使用的选项 |
+
 | :--- | :--- |
+
 | `$('#target').droppable({accept: 'span'});` | 仅接受`span`类型的元素。你也可以在此过滤器中提供任何其他CSS选择器，例如`#my-id`或`.my-class`。 |
+
 | `$('#target').droppable({activeClass: 'show-active'});` | 当符合所有要求的可拖动元素正在被拖动时，添加你自己的类。你可以使用CSS在此情况下更改可放置元素的外观。 |
+
 | `$('#target').droppable({greedy: true});` | 阻止嵌套可放置元素上的事件传播。默认值为`false`。设置为`true`时，最具体的可放置元素捕获可拖动元素。在默认情况下，可放置元素会沿HTML树向上冒泡到最通用的可放置元素。 |
+
 | `$('#target').droppable({scope: 'my-scope'});` | 当符合所有要求的可拖动元素被拖动到可放置区域上方时，添加你自己的类。你可以使用CSS在此情况下更改可放置元素的外观。此选项可以帮助你了解前面提到的贪婪和非贪婪选项之间的行为差异。 |
+
 | `$('#target').droppable({hoverClass: 'show-hover'});` | 将可接受的可拖动元素限制在指定的作用域内。另请参阅`draggable`。 |
-
-
 
 ## 6.3 可放置交互选项（续）
 
 | 代码 | 与可拖动组件配合使用的选项 |
+
 | :--- | :--- |
+
 | `$('#target').droppable({scope: 'touch'});` | 你可以指定 `fit`、`intersect`、`pointer` 或 `touch` 范围。这些值表示可拖动元素的哪个部分需要位于可放置区域内部才能触发放置事件。 |
+
 | `$('#target').droppable({tolerance: 'fit'});` | `tolerance` 选项用于调整可拖动元素经过可放置区域上方时的成功或触发条件。默认值是 `intersect`，当可拖动元素的 50% 位于可放置区域上方时触发。其他值有 `fit`、`pointer` 和 `touch`。`fit` 值要求可拖动元素 100% 位于可放置区域上方。`pointer` 值在拖动期间要求鼠标指针位于可放置区域上方。`touch` 值将在可拖动元素的任何部分与可放置区域相交时触发。 |
 
 ### 捕获可放置事件
@@ -4338,25 +4596,37 @@ $(document).ready(function() {
 ### 为可排序组件设置样式
 
 `ui-sortable` 类被添加到 `ul` 元素上。当拖动一个 `li` 元素时，它会获得 `ui-sortable-helper` 类。
+
 当拖动一个 `li` 元素时，你可以看到在底层添加了一个 `style` 属性，其中包含 `width`、`height`、`position`（`absolute`）、`z-index`、`left` 和 `top` 的值。
 
 ### 设置可排序选项
 
 以下选项在“设置可拖动选项”部分中进行了解释：`disabled`、`appendTo`、`cancel`、`containment`、`cursor`、`cursorAt`、`delay`、`distance`、`grid`、`handle`、`helper`、`opacity`、`scroll`、`scrollSensitivity`、`scrollSpeed` 和 `zIndex`。
+
 其他可用于可排序交互的方法在表 6.4 中进行了解释。
 
 #### 表 6.4 可排序交互的选项
 
 | 选项 | 描述 |
+
 | :--- | :--- |
+
 | `$('body *').draggable({axis: 'x'});` | 默认情况下，元素可以沿垂直和水平轴拖动。通过设置此选项，你可以将拖动限制在 x 或 y 轴之一（而不是两者）。 |
+
 | `$('ul#my-first-ul').sortable({connectWith: 'ul#my-other-ul'});` | 允许两个或多个可排序组件通过将元素从一个可排序组件拖入另一个来交换元素。 |
+
 | `$('ul').sortable({dropOnEmpty: false});` | 当容器连接时，防止元素被拖入空的可排序容器。 |
+
 | `$('ul').sortable({forceHelperSize: true});` | 确保辅助元素具有尺寸。 |
+
 | `$('ul').sortable({forcePlaceholderSize: true});` | 确保占位符（项目可以放置的位置）具有尺寸。 |
+
 | `$('ul').sortable({items: 'li'});` | 这针对选择器内应该是可排序的元素。 |
+
 | `$('ul').sortable({placeholder: 'ui-state-highlight'});` | 更改占位符的类，使其对访问者更加突出。 |
+
 | `$('ul').sortable({revert: true});` | 让元素通过平滑动画移动到占位符。 |
+
 | `$('#target').sortable({tolerance: 'fit'});` | `tolerance` 选项用于调整拖动期间重新排序的行为。规则与可放置组件相同；默认值是 `intersect`，当可拖动元素的 50% 位于可放置区域上方时触发。其他值有 `fit`、`pointer` 和 `touch`。`fit` 值要求可拖动元素 100% 位于可放置区域上方。`pointer` 值在拖动期间要求鼠标指针位于可放置区域上方。`touch` 值将在可拖动元素的任何部分与可放置区域相交时触发。 |
 
 ### 捕获可排序事件
@@ -4374,8 +4644,6 @@ ui = {
   placeholder: // 元素（表示项目将被放置的位置）
 }
 ```
-
-
 
 ## 第六章 与用户交互
 
@@ -4582,7 +4850,7 @@ var numbered = $.map(
 $('ul').sortable('serialize', {key: 'myotherkey'});
 ```
 
-除了序列化为字符串，你还可以将可排序元素序列化为一个数组。这将返回一个类似 `['mykey-2', 'mykey-1', ...]` 的值：
+除了序列化为字符串，你还可以将可排序元序列化为一个数组。这将返回一个类似 `['mykey-2', 'mykey-1', ...]` 的值：
 
 ```
 $('ul').sortable('toArray');
@@ -4715,7 +4983,7 @@ $('ul').sortable('cancel');
 40       console.log(ui);
 41       $(ui.selected).html('SELECTED');
 42     }
-43   });
+43   );
 44
 45 });
 46 </script>
@@ -4724,8 +4992,6 @@ $('ul').sortable('cancel');
 ```
 
 要使元素可选，它们不一定需要在自上而下呈现的无序列表中。你同样可以从符合你要求的二维网格中选择元素。
-
-
 
 ## 为可选择元素添加样式
 
@@ -4738,9 +5004,13 @@ $('ul').sortable('cancel');
 表 6.5 展示了几个可用于可选择元素的代码片段选项。
 
 | 选项 | 描述 |
+
 |---|---|
+
 | `$("ul#target").selectable({autoRefresh: false});` | 防止可选择组件在所有可选择元素上设置类。这主要用于性能优化。你可以通过使用 CSS 固有的层叠样式机制来提供样式，并且在选择时仍然会添加额外的类。 |
+
 | `$("ul#target").selectable({filter: "li.my-filter"});` | 在可选择根容器内，你可以通过将 CSS 选择器指定为过滤器参数来过滤哪些后代元素可以被选择，哪些不能。 |
+
 | `$("ul#target").selectable({tolerance: "fit"});` | `tolerance` 选项用于调整拖动时重新排序的行为。其规则与 droppable（可放置元素）的类似；默认值为 `touch`，当可拖动元素有 50% 覆盖在可放置元素上时触发。另一个值是 `fit`。此值要求可拖动元素 100% 覆盖在可放置元素上。`touch` 值将在可拖动元素的任何部分与可放置元素相交时触发。 |
 
 ## 捕获可选择元素上的事件
@@ -4954,7 +5224,7 @@ $('#target').selectable('refresh');
 29
 30
 31  <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
-32  <script src="http://code.jquery.com/ui/1.8.16/jquery-ui.min.js">
+32  <script src="http=code.jquery.com/ui/1.8.16/jquery-ui.min.js">
 33  </script>
 34
 35  <script>
@@ -4989,16 +5259,18 @@ $('#target').selectable('refresh');
 
 表 6.6 展示了演示可调整大小交互可用的其他选项的代码片段。
 
-
-
 ## 第六章 与用户交互
 
 ### 表 6.6 可调整大小交互的选项
 
 | 选项 | 描述 |
+
 | --- | --- |
+
 | `$('#my-resizable').resizable({alsoResize: '#other-resizable'});` | 指定屏幕上另一个应与当前可调整大小组件一起调整大小的额外元素。 |
+
 | `$('#my-resizable').resizable({animate: true});` | 调整大小后显示动画。 |
+
 | `$('#my-resizable').resizable({animateDuration: 1000});` | 设置动画速度。可以是毫秒数，也可以是包含 `slow`、`normal` 或 `fast` 的字符串。 |
 
 指定应使用哪种动画。你可以从以下动画中选择：
@@ -5022,7 +5294,7 @@ $('#my-resizable').resizable({aspectRatio: true});
 $('#my-resizable').resizable({aspectRatio: 0.25});
 ```
 
-仅在鼠标悬停时显示调整大小手柄：
+仅在鼠悬时显示调整大小手柄：
 
 ```
 $('#my-resizable').resizable({autoHide: true});
@@ -5053,6 +5325,7 @@ $('#my-resizable').resizable({minWidth: 200});
 ### 捕获可调整大小事件
 
 以下代码片段展示了可用于事件处理的事件。
+
 元素被转换为可调整大小：
 
 ```
@@ -5117,6 +5390,7 @@ $('#my-resizable').resizable()
 ## 第七章 与小部件交互
 
 在介绍了 jQuery UI 用户交互的基础知识后，本章你将学习一组具有更具体 HTML 结构的组件。手风琴、选项卡、自动完成建议、日期选择器、按钮、滑块、对话框和进度条是 jQuery UI 包含的小部件的一部分。
+
 小部件是 jQuery UI 组件，它们需要更具体的 HTML 作为输入，并且可以生成更复杂的 HTML 结构作为输出。
 
 ### 配方：使用手风琴对内容进行分组
@@ -5219,23 +5493,34 @@ $('#my-resizable').resizable()
 
 有许多不同的选项可以与手风琴小部件一起设置和使用。表 7.1 介绍了设置选项的示例，以及每个选项功能的描述。
 
-
-
 ## 表 7.1 折叠面板部件的选项
 
 | 选项 | 描述 |
+
 |---|---|
+
 | `$('#my-accordion').accordion({disabled: true});` | `disabled` 选项的默认值为 `false`。将其设置为 `true` 会禁用折叠面板，使其停止工作。你可以在任何时间设置此选项，包括初始化期间。 |
-| `$('#my-accordion').accordion({active: false});` | 将 `active` 设置为 `false` 会在初始化时关闭所有面板组。这仅在 `collapsible` 为 `true` 时有效。除了布尔值，你还可以提供一个选择器、一个 jQuery 元素或一个 HTML 元素来指定要打开的面板。 |
+
+| `$('#my-accordion').accordion({active: false});` | 将 `active` 设置为 `false` 会在初始化时关闭所有面板组。这仅在 `collapsible` 为 `true` 时有效。除了布尔值，你还可以提供一个选择器、一个 jQuery 元素或一个 HTML 元来指定要打开的面板。 |
+
 | `$('#my-accordion').accordion({animated: 'blind'});` | `animated` 选项在打开和关闭面板组时显示动画。默认值是 `slide`，但你可以使用以下值代替：blind、bounce、clip、drop、explode、fade、fold、highlight、puff、pulsate、scale、shake、size 和 transfer。 |
+
 | `$('#my-accordion').accordion({autoHeight: false});` | 禁用面板组高度自动调整。这样每个面板组的高度将取决于其内容，而不是保持整个折叠面板组件的高度恒定。`autoHeight` 的默认值为 `true`。 |
+
 | `$('#my-accordion').accordion({clearStyle: true, autoHeight: false});` | `clearStyle` 选项会在动画结束后清除任何高度样式元素，这对于加载动态内容很有用。请注意，它不能与 `autoHeight` 选项一起工作。 |
+
 | `$('#my-accordion').accordion({collapsible: true});` | 你可以使用 `collapsible` 选项使所有折叠面板区域同时折叠。此选项可以与 `active: false` 一起使用，以提供一个在初始化时完全关闭的折叠面板。默认值为 `false`。 |
+
 | `$('#my-accordion').accordion({event: 'dblclick'});` | 更改打开折叠面板组的事件。你也可以考虑 `mouseover` 或默认的 `click` 等事件。 |
+
 | `$('#my-accordion').accordion({fillSpace: true});` | 覆盖 `autoHeight` 并填充整个父元素。这对于创建带有选项组的类似 Visual Studio 侧边栏很有用。默认值为 `false`。 |
+
 | `$('#my-accordion').accordion({header: 'h3'});` | 默认情况下，折叠面板使用组件中的每隔一项作为面板组标题。在此代码片段示例中，此选项被明确设置为将 `h3` 元素配置为面板组标题。 |
-| `$('#my-accordion').accordion({ icons: { 'header': 'ui-icon-circle-plus', 'headerSelected': 'ui-icon-circle-minus' }});` | 通过 `icons` 选项，你可以在面板组标题上提供额外的图标。你可以在第 8 章“更改外观和感觉”中找到所有可用图标的列表。 |
+
+| `$('#my-accordion').accordion({ icons: { 'header': 'ui-icon-circle-plus', 'headerSelected': 'ui-icon-circle-minus' }});` | 通过 `icons` 选项，你可以在面板组标题上提供额的图标。你可以在第 8 章“更改外观和感觉”中找到所有可用图标的列表。 |
+
 | `$('#my-accordion').accordion({navigation: true});` | 打开 URL 中选定锚点对应的区域。这要求 `href` 元素提供唯一的本地哈希标签。默认值为 `false`。 |
+
 | `$('#my-accordion').accordion({ navigation: true, navigationFilter: function(index) { return index == 2; } });` | 除了从 URL 的哈希标签打开面板组，你也可以实现自己的函数来指定应打开哪个面板组。该函数会对每个面板组调用一次，面板组索引作为函数参数传入。对于应打开的面板组，该函数应返回 `true`。该实现可以比此示例更复杂。 |
 
 ## 捕获折叠面板上的事件
@@ -5316,14 +5601,23 @@ $('#my-accordion').accordion()
 ### 表 7.2 折叠面板部件的方法
 
 | 方法 | 描述 |
+
 |---|---|
+
 | `$('#my-accordion').accordion('destroy');` | 移除所有折叠面板功能，并将所选元素恢复到其原始状态。 |
+
 | `$('#my-accordion').accordion('disable');` | 禁用折叠面板功能，但不会将元素从页面中移除。 |
+
 | `$('#my-accordion').accordion('enable');` | 启用已禁用的折叠面板。 |
+
 | `$('#my-accordion').accordion('option', optionName, [value]);` | 使用此方法获取或设置折叠面板中使用的值。如果留空，它将充当 getter；当提供值时，它变为 setter。 |
+
 | `$('#my-accordion').accordion('option', options);` | 通过传递一个选项对象，你可以同时设置多个选项。 |
+
 | `$('#my-accordion').accordion('widget');` | 这将返回 `.ui-accordion` 元素。 |
+
 | `$('#my-accordion').accordion('activate', 1);` | 选择第二个面板组。 |
+
 | `$('#my-accordion').accordion('resize');` | 基于当前 HTML 元素重新计算折叠面板的高度。 |
 
 ## 实践：使用自动完成建议输入值
@@ -5369,8 +5663,6 @@ $('#my-accordion').accordion()
 31         'ante', 'ullamcorper', 'eget', 'posuere', 'ligula'
 32     ];
 ```
-
-
 
 ## 代码清单 7.2 建议 Lorem Ipsum 值（续）
 
@@ -5418,20 +5710,31 @@ $('#my-accordion').accordion()
 表 7.3 自动完成小部件的选项
 
 | 选项 | 描述 |
+
 |---|---|
+
 | `source: '/retrieve-suggestions'` | 调用指定的 URL 以检索自动完成的值。自动完成元素会在 URL 后添加 `?term={yourvalue}` 查询参数。 |
+
 | 对象数组 `[ {id: 'my-id', label: 'my-label', value: 'my-value'}, ... ]` | 返回的数据可以是 JSON 数据结构，类似于前面的代码。 |
+
 | `source: function(req, res) { ... }` | 除了服务器端查询和静态数组外，您还可以提供一个函数。 |
+
 | `disabled: true` | 将 `disabled` 选项设置为 `true` 会使自动完成停止工作。默认值为 `false`。 |
+
 | `appendTo: '#another-autocomplete'` | 使用 `appendTo` 选项，您可以在传递给 `appendTo` 选项的元素上初始化自动完成。默认值为 `body`。 |
+
 | `delay: 500` | 使用 `delay` 选项，您可以设置一个计时器来触发自动完成的激活。默认值为 300。 |
 
 表 7.3 自动完成小部件的选项（续）
 
 | 选项 | 描述 |
+
 | --- | --- |
+
 | `$('#my-autocomplete').autocomplete({autoFocus: true, source: loremIpsum});` | 预选自动完成列表中的第一项。将其与 `source` 选项结合使用，您可以选择首先显示哪些数据。`autoFocus` 的默认值为 `false`。 |
+
 | `$('#my-autocomplete').autocomplete({minLength: 3, source: loremIpsum});` | 指定在显示自动完成之前需要输入的最小字符数（在此示例中为 3）。这可以防止列表过长或数据库查询过重。 |
+
 | `$('#my-autocomplete').autocomplete({ position: { my: 'left top', at: 'right top' }, source: loremIpsum});` | 将选择列表的位置设置为指定的位置。`position` 选项的详细信息可以在 http://docs.jquery.com/UI/Position 查看。 |
 
 ## 捕获自动完成上的事件
@@ -5453,6 +5756,8 @@ $('#my-autocomplete')
 ```
 
 访问者输入了一个至少达到 `minLength` 长度的搜索值。返回 `false` 可以取消搜索：
+
+
 
 ```javascript
 $('#my-autocomplete').autocomplete({search: function(event, ui) {
@@ -5605,8 +5910,6 @@ $('#my-autocomplete').autocomplete('close');
 
 在此代码清单中，第 11-20 行包含了一组不同类型的 HTML 元素。应用第 31-36 行后，所有元素都被设置为按钮样式，看起来大致相似。
 
-
-
 ## 按钮的样式设置
 
 如果你想应用自己的CSS样式，可以在生成按钮后使用以下HTML结构：
@@ -5709,9 +6012,9 @@ $('button').button('refresh');
 
 除了按钮，jQuery UI还提供了按钮集。清单7.4演示了如何使用按钮集将一组单选按钮样式化为一组普通按钮，其中一次只能选择一个。
 
-```
-清单7.4  对一组单选按钮进行样式设置
+### 清单7.4 对一组单选按钮进行样式设置
 
+```html
 00 <!DOCTYPE html>
 01 
 02 <html lang="en">
@@ -5753,9 +6056,9 @@ $('button').button('refresh');
 
 在HTML5之前，在网页中选择日期是一件痛苦的事情。即使有了HTML5，仍然有一些浏览器没有提供可用的日期选择器实现。清单7.5演示了jQuery UI提供的日期选择器，它适用于常规输入字段。
 
-```
-清单7.5 帮助网站访客输入日期
+### 清单7.5 帮助网站访客输入日期
 
+```html
 00 <!DOCTYPE html>
 01
 02 <html lang="en">
@@ -5789,8 +6092,6 @@ $('button').button('refresh');
 ## 对日期选择器进行样式设置
 
 日期选择器生成的HTML、CSS和JavaScript并不是其最令人钦佩的部分。如果你想提供自定义样式，这些类和HTML元素是你需要了解的。
-
-方案：使用日期选择器选择日期 153
 
 ```html
 <div class="ui-datepicker ui-widget ui-widget-content
@@ -5870,11 +6171,9 @@ $('button').button('refresh');
 </div>
 ```
 
-
-
 ## 第7章 与控件交互
 
-```
+```html
         </th>
       </tr>
     </thead>
@@ -5919,7 +6218,7 @@ $('button').button('refresh');
 
 在下面的代码片段中，您可以看到 `disabled` 选项的工作方式与其他对象和控件一样。它可以在初始化时使用，也可以稍后启用。默认情况下，此选项的值为 `false`。
 
-```
+```javascript
 $('#my-date').datepicker({disabled: true});
 ```
 
@@ -5927,7 +6226,7 @@ $('#my-date').datepicker({disabled: true});
 
 `altField` 选项用于在选定日期时搜索另一个要更新的字段。`altFormat` 选项会改变日期的返回方式。与您预期相反，`yy` 会返回四位数的年份。如果您输入 `yyyy`，函数将返回 `23-06-20122012`，而不是 `23-06-2012`。
 
-```
+```javascript
 $('#my-date').datepicker({
     altField: '#dutch-notation',
     altFormat: 'dd-mm-yy'
@@ -5936,25 +6235,25 @@ $('#my-date').datepicker({
 
 此文本会附加在输入字段之后，以指示访问者应输入到文本字段中的日期格式，如下所示：
 
-```
+```javascript
 $('#my-date').datepicker({appendText: '(mm/dd/yyyy)'});
 ```
 
 调整输入字段的大小以适应当前日期。默认值为 `false`：
 
-```
+```javascript
 $('#my-date').datepicker({autoSize: true});
 ```
 
 基于您对其他 jQuery UI 组件的了解，您可能预期提供一个类名作为值，例如 `ui-icon-calendar`。相反，您需要提供一个图像的硬编码路径，如下所示：
 
-```
+```javascript
 $('#my-date').datepicker({buttonImage: '/images/my-image.png'});
 ```
 
 从按钮中移除文本。默认值为 `false`：
 
-```
+```javascript
 $('#my-date').datepicker({buttonImageOnly: true});
 ```
 
@@ -5962,13 +6261,13 @@ $('#my-date').datepicker({buttonImageOnly: true});
 
 将日期选择器按钮文本设置为点击时显示 `choose`：
 
-```
+```javascript
 $('#my-date').datepicker({buttonText: 'choose', showOn: 'button'});
 ```
 
 更改周数计算的实现方式。默认符合 ISO 8601 标准。这意味着一年的第一周取决于该年的第一个星期四：
 
-```
+```javascript
 $('#my-date').datepicker({calculateWeek: function(date) {
     // 从日期计算周数
     return calculatedWeekNr;
@@ -5977,7 +6276,7 @@ $('#my-date').datepicker({calculateWeek: function(date) {
 
 为月份和年份提供下拉列表，而不仅仅是月份选择箭头。这些选项的默认值均为 `false`：
 
-```
+```javascript
 $('#my-date').datepicker({changeMonth: true, changeYear: true});
 ```
 
@@ -5985,7 +6284,7 @@ $('#my-date').datepicker({changeMonth: true, changeYear: true});
 
 将日期选择器的关闭按钮文本更改为 `Close`，当前日期文本更改为 `Current`，上个月链接文本更改为 `Earlier`，下个月链接文本更改为 `Later`，并启用按钮面板：
 
-```
+```javascript
 $('#my-date').datepicker({closeText: 'Close',
     currentText: 'Current', prevText: 'Earlier',
     nextText: 'Later', showButtonPanel: true});
@@ -5993,7 +6292,7 @@ $('#my-date').datepicker({closeText: 'Close',
 
 将 `constrainInput` 设置为 `false` 允许输入与当前日期格式不匹配的内容。默认值为 `true`：
 
-```
+```javascript
 $('#my-date').datepicker({constrainInput: false});
 ```
 
@@ -6001,7 +6300,7 @@ $('#my-date').datepicker({constrainInput: false});
 
 为了在英语与汉语的辩论中保持安全立场，您最好保持中立，并将您所有的文本和日期用一种被称为荷兰语的晦涩且过时的语言来书写。荷兰人做事总有点与众不同。例如，他们将日期写作 `dd-mm-yy`，而不是 `mm/dd/yy`。对您来说有个好消息：使用 jQuery UI 日期选择器，您可以按照任何喜欢的格式书写日期。以下示例实现了一个荷兰语版本的日期选择器：
 
-```
+```javascript
 $('#my-date').datepicker({
     dateFormat: 'dd-mm-yy', dayNames: ['Maandag', 'Dinsdag', 'Woensdag',
     'Donderdag', 'Vrijdag', 'Zaterdag', 'Zondag'],
@@ -6016,61 +6315,59 @@ $('#my-date').datepicker({
 
 `duration` 选项设置日期选择器出现的速度。这也可以设置为以毫秒为单位的数字：
 
-```
+```javascript
 $('#my-date').datepicker({duration: 'slow'});
 ```
 
 配置为从星期三而非星期日开始一周。`firstDay` 的默认值为 `0`，即星期日。一周的其余日期依次递进；`1` 是星期一，`2` 是星期二，依此类推：
 
-```
+```javascript
 $('#my-date').datepicker({firstDay: 3});
 ```
 
 如果存在 `minDate` 和/或 `maxDate`，则隐藏“上一个”和“下一个”按钮，而不是禁用它们。默认值为 `false`：
 
-```
+```javascript
 $('#my-date').datepicker({hideIfNoPrevNext: true});
 ```
 
 如果您正在为阿拉伯语等语言渲染日期选择器，您希望将日期的渲染设置为从右到左阅读。（注意：RTL 代表从右到左）。默认值为 `false`：
 
-```
+```javascript
 $('#my-date').datepicker({isRTL: true});
 ```
 
 以下代码片段将日期限制在提供的最小和最大日期范围内。在此示例中，字符 `w` 代表周。您也可以分别使用 `d`、`m` 和 `y` 表示天、月和年，或者提供当前日期格式的日期字符串：
 
-```
+```javascript
 $('#my-date').datepicker({ maxDate: '+5w', minDate: '-4w'});
 ```
 
 以下示例中的 `numberOfMonths` 选项设置为一次显示三个月。默认值为 `1`。此示例中的 `showCurrentAtPos` 选项设置为在第二位置显示当前月份。默认值为 `0`，从顶部/左侧月份开始计数。
 
-```
+```javascript
 $('#my-date').datepicker({numberOfMonths: 3,
     showCurrentAtPos: 1});
 ```
 
 选择并显示下个月的前几天和上个月的后几天。这些选项一起显示，因为 `selectOtherMonths` 选项只有在 `showOtherMonths` 选项设置为 `true` 时才会生效。两个选项的默认值均为 `false`：
 
-```
+```javascript
 $('#my-date').datepicker({selectOtherMonths: true,
     showOtherMonths: true});
 ```
 
 确定两位数年份被视为在本世纪的时间点，以及何时假定其在上一世纪。默认值为 `+10`：
 
-```
+```javascript
 $('#my-date').datepicker({shortYearCutoff: '+20'});
 ```
 
 使用 `showAnim` 选项为日期选择器设置动画。可选项有 `blind`、`bounce`、`clip`、`drop`、`explode`、`fade`、`fold`、`highlight`、`puff`、`pulsate`、`scale`、`shake`、`size`、`slide` 和 `transfer`。默认值为 `show`：
 
-```
+```javascript
 $('#my-date').datepicker({showAnim: 'blind'});
 ```
-
-## 158 第7章 与小部件交互
 
 更改日期选择器的标题，并将月份和年份调换位置。此选项也是一个本地化选项。默认值为 false：
 
@@ -6316,10 +6613,6 @@ $(document).ready(function() {
 | `$('#my-dialog').dialog({disabled: true});` | 禁用对话框。默认值为 false。 |
 | `$('#my-dialog').dialog({autoOpen: false});` | 保持对话框关闭，直到明确要求打开。创建对话框会将原始 HTML 元素从屏幕上隐藏。默认值为 true。 |
 
-
-
-**技巧：使用对话框吸引注意力**
-
 **表 7.4 对话框小部件的可用选项及描述（续）**
 
 | 选项 | 描述 |
@@ -6347,7 +6640,7 @@ $(document).ready(function() {
 
 初始化新对话框时的事件处理：
 
-```
+```javascript
 $('#my-dialog').dialog({create: function(event, ui) {
     // 进行事件处理
 }});
@@ -6361,7 +6654,7 @@ $('#my-dialog')
 
 当用户尝试关闭对话框时处理事件。返回 `false` 可以阻止其关闭。
 
-```
+```javascript
 $('#my-dialog').dialog({beforeClose: function(event, ui) {
     // 进行事件处理
 }});
@@ -6372,11 +6665,9 @@ $('#my-dialog').dialog()
   });
 ```
 
-## 技巧：使用对话框吸引注意力
-
 对话框打开时的事件处理：
 
-```
+```javascript
 $('#my-dialog').dialog({open: function(event, ui) {
     // 进行事件处理
 }});
@@ -6389,7 +6680,7 @@ $('#my-dialog').dialog()
 
 当对话框获得焦点时处理事件：
 
-```
+```javascript
 $('#my-dialog').dialog({focus: function(event, ui) {
     // 进行事件处理
 }});
@@ -6402,7 +6693,7 @@ $('#my-dialog').dialog()
 
 当用户开始拖动对话框时处理事件：
 
-```
+```javascript
 $('#my-dialog').dialog({dragStart: function(event, ui) {
     // 进行事件处理
 }});
@@ -6415,7 +6706,7 @@ $('#my-dialog').dialog()
 
 当用户继续拖动对话框时的事件处理：
 
-```
+```javascript
 $('#my-dialog').dialog({drag: function(event, ui) {
     // 进行事件处理
 }});
@@ -6428,7 +6719,7 @@ $('#my-dialog').dialog()
 
 当用户完成拖动对话框时的事件处理：
 
-```
+```javascript
 $('#my-dialog').dialog({dragStop: function(event, ui) {
     // 进行事件处理
 }});
@@ -6441,7 +6732,7 @@ $('#my-dialog').dialog()
 
 当用户开始调整对话框大小时的事件处理：
 
-```
+```javascript
 $('#my-dialog').dialog({resizeStart: function(event, ui) {
     // 进行事件处理
 }});
@@ -6454,7 +6745,7 @@ $('#my-dialog').dialog()
 
 当用户进一步调整对话框大小时的事件处理：
 
-```
+```javascript
 $('#my-dialog').dialog({resize: function(event, ui) {
     // 进行事件处理
 }});
@@ -6467,7 +6758,7 @@ $('#my-dialog').dialog()
 
 当用户完成调整对话框大小时的事件处理：
 
-```
+```javascript
 $('#my-dialog').dialog({resizeStop: function(event, ui) {
     // 进行事件处理
 }});
@@ -6480,7 +6771,7 @@ $('#my-dialog').dialog()
 
 当用户关闭对话框时的事件处理：
 
-```
+```javascript
 $('#my-dialog').dialog({close: function(event, ui) {
     // 进行事件处理
 }});
@@ -6497,55 +6788,55 @@ $('#my-dialog').dialog()
 
 从页面中完全移除对话框：
 
-```
+```javascript
 $('#my-dialog').dialog('destroy');
 ```
 
 禁用对话框：
 
-```
+```javascript
 $('#my-dialog').dialog('disable');
 ```
 
 启用对话框：
 
-```
+```javascript
 $('#my-dialog').dialog('enable');
 ```
 
 获取或设置对话框的值：
 
-```
+```javascript
 $('#my-dialog').dialog('option', options);
 ```
 
 返回对话框元素：
 
-```
+```javascript
 $('#my-dialog').dialog('widget');
 ```
 
 关闭当前打开的对话框。你可以将其视为一个隐藏函数。关闭后可以重用对话框：
 
-```
+```javascript
 $('#my-dialog').dialog('close');
 ```
 
 返回对话框当前是否处于打开状态：
 
-```
+```javascript
 $('#my-dialog').dialog('isOpen');
 ```
 
 如果对话框被其他对话框遮挡，则将其移到最前面：
 
-```
+```javascript
 $('#my-dialog').dialog('moveToTop');
 ```
 
 打开先前关闭的对话框或使用选项 `autoOpen: false` 创建的对话框：
 
-```
+```javascript
 $('#my-dialog').dialog('open');
 ```
 
@@ -6555,9 +6846,9 @@ $('#my-dialog').dialog('open');
 
 在某些情况下，你确实知道进程的进度。在这种情况下，最好尽可能准确地管理用户的期望。清单 7.7 介绍了 jQuery UI 的进度条，你可以将其用于此目的。
 
-**清单 7.7 将 <div> 元素转换为进度条**
+### 清单 7.7 将 `<div>` 元素转换为进度条
 
-```
+```html
 00 <!DOCTYPE html>
 01 
 02 <html lang="en">
@@ -6591,16 +6882,7 @@ $('#my-dialog').dialog('open');
 30     setInterval(function() {
 31         if(count++ > 100) count = 0;
 32         el.progressbar('value', count);
-```
-
-
-
-## 实战：使用进度条显示进程状态
-
-```
-清单 7.7  将 `<div>` 元素转换为进度条（续）
-
-33 }(),100);
+33     },100);
 34
 35 });
 36 </script>
@@ -6614,7 +6896,7 @@ $('#my-dialog').dialog('open');
 
 jQuery UI 会用多个类和属性来扩展目标 `div`，并添加一个代表进度的子 `div`。避免在进度条 `div` 中写入文本，因为它会将进度指示器向下推移。
 
-```
+```html
 <div id="my-progress"
   class="ui-progressbar ui-widget ui-widget-content ui-corner-all"
   role="progressbar" aria-valuemin="0" aria-valuemax="100"
@@ -6627,30 +6909,29 @@ jQuery UI 会用多个类和属性来扩展目标 `div`，并添加一个代表�
 ## 设置进度条选项
 
 以下代码片段展示了如何在使用 `progressbar` 时设置选项。
+
 在创建时禁用进度条：
 
-```
+```javascript
 $('#my-progress').progressbar({disabled: true});
 ```
 
 创建一个填充了 25% 的进度条。
 
-```
+```javascript
 $('#my-progress').progressbar({value: 25});
 ```
 
 ## 捕获进度条事件
 
 以下代码片段演示了在使用 `progressbar` 时如何处理事件。
+
 初始化一个新的进度条：
 
-```
+```javascript
 $('#my-progress').progressbar({create: function(event, ui) {
   // 进行事件处理
 }});
-```
-
-```
 // 或者
 $('#my-progress')
     .on('progressbarcreate', function(event, ui) {
@@ -6661,7 +6942,7 @@ $('#my-progress')
 
 当进度条状态发生变化时的事件处理：
 
-```
+```javascript
 $('#my-progress').progressbar({change: function(event, ui) {
     // 进行事件处理
 }});
@@ -6674,7 +6955,7 @@ $('#my-progress').progressbar()
 
 当进度条达到 100% 时的事件处理。你可以捕获此事件来改变进度条的外观，也许可以突出其状态：
 
-```
+```javascript
 $('#my-progress').progressbar({complete: function(event, ui) {
     // 进行事件处理
 }});
@@ -6691,7 +6972,7 @@ $('#my-progress').progressbar()
 
 将进度条的值更新为指定的参数：
 
-```
+```javascript
 $('#my-progress').progressbar('value', 50);
 ```
 
@@ -6701,9 +6982,9 @@ $('#my-progress').progressbar('value', 50);
 
 清单 7.8 展示了如何将一个 `div` 元素转换为滑块组件。
 
-## 清单 7.8 将 `<div>` 元素转换为滑块并显示其值
+### 清单 7.8 将 `<div>` 元素转换为滑块并显示其值
 
-```
+```html
 00 <!DOCTYPE html>
 01 
 02 <html lang="en">
@@ -6751,7 +7032,7 @@ $('#my-progress').progressbar('value', 50);
 
 与其他 jQuery UI 组件相比，`slider` 组件生成的 HTML 结构相对较小。在下面的代码片段中，为 `div` 添加了一些类使其看起来像一个滑块，并添加了一个表示滑块手柄的锚点。
 
-```
+```html
 <div id="my-slider"
   class="ui-slider ui-slider-horizontal ui-widget ui-widget-content
     ui-corner-all">
@@ -6782,7 +7063,7 @@ $('#my-progress').progressbar('value', 50);
 
 当一个新的 `slider` 组件被初始化时的事件处理：
 
-```
+```javascript
 $('#my-slider').slider({create: function(event, ui) {
     // 进行事件处理
 }});
@@ -6796,7 +7077,7 @@ $('#my-slider')
 
 当访问者开始拖动滑块手柄时的事件处理：
 
-```
+```javascript
 $('#my-slider').slider({start: function(event, ui) {
     // 进行事件处理
 }});
@@ -6809,7 +7090,7 @@ $('#my-slider').slider()
 
 当访问者继续拖动滑块手柄时的事件处理：
 
-```
+```javascript
 $('#my-slider').slider({slide: function(event, ui) {
     // 进行事件处理
 }});
@@ -6822,7 +7103,7 @@ $('#my-slider').slider()
 
 当滑块的值发生变化时的事件处理：
 
-```
+```javascript
 $('#my-slider').slider({change: function(event, ui) {
         // 进行事件处理
     }});
@@ -6835,7 +7116,7 @@ $('#my-slider').slider()
 
 当访问者停止拖动滑块手柄时的事件处理：
 
-```
+```javascript
 $('#my-slider').slider({stop: function(event, ui) {
         // 进行事件处理
     }});
@@ -6850,13 +7131,13 @@ $('#my-slider').slider()
 
 滑块小部件使用与第 6 章中可拖动交互以及对话框和手风琴小部件相同的方法。有关 destroy、disable、enable、option 和 widget 的更多详细信息，请参阅它们的条目。将滑块更新到值 10：
 
-```
+```javascript
 $('#my-slider').slider('value', 10);
 ```
 
 将滑块范围更新到范围 10–20：
 
-```
+```javascript
 $('#my-slider').slider('values', [10, 20]);
 ```
 
@@ -6864,13 +7145,11 @@ $('#my-slider').slider('values', [10, 20]);
 
 在本章前面，介绍了手风琴组件，用于分组较大量的内容并一次只显示一组。标签页元素具有类似的功能，但有一些细微的差别。虽然并非总是如此，但手风琴非常适合作为主屏幕侧面的额外元素，而标签页元素则最适合作为主屏幕本身。
 
-
-
 列表 7.9 将一个相对简单的 HTML 结构转换为一组选项卡。手风琴和选项卡元素之间的区别之一是，选项卡标题列表和内容组是相互分离的；而对于手风琴，组标题和组本身是一体的。
 
-## 列表 7.9 将无序列表转换为选项卡窗格
+### 列表 7.9 将无序列表转换为选项卡窗格
 
-```
+```html
 00 <!DOCTYPE html>
 01 
 02 <html lang="en">
@@ -6931,7 +7210,7 @@ $('#my-slider').slider('values', [10, 20]);
 
 选项卡元素对 HTML 的改动不大。它确实添加了许多类，你可以使用主题滚动器主题或自己的 CSS 样式来为选项卡设置样式。
 
-```
+```html
 <div id="my-tabs"
     class="ui-tabs ui-widget ui-widget-content ui-corner-all">
     <ul class="ui-tabs-nav ui-helper-reset ui-helper-clearfix
@@ -6966,23 +7245,38 @@ $('#my-slider').slider('values', [10, 20]);
 
 ## 为选项卡组件设置选项
 
+
+
 与 jQuery UI 中的其他组件一样，选项卡组件也有几个可编辑的选项，可以用来更改默认行为。表 7.6 展示了选项卡组件中可用选项的代码示例及描述。
 
 **表 7.6 选项卡组件的选项**
 
 | 选项 | 描述 |
+
 | :--- | :--- |
+
 | `$('#my-tabs').tabs({ajaxOptions:{timeout: 2000}});` | 使用 `$.ajax` 的任何选项。这些选项在第 5 章中介绍。 |
+
 | `$('#my-tabs').tabs({cache: true});` | 启用请求缓存。默认值为 `false`。 |
+
 | `$('#my-tabs').tabs({collapsible: true});` | 允许通过再次点击当前选项卡来关闭它。默认值为 `false`。 |
+
 | `$('#my-tabs').tabs({cookie: { expires: 7, path: '/', secure: true, name: 'my-cookie' }});` | 将当前打开的选项卡存储在 cookie 中。 |
+
 | `$('#my-tabs').tabs({disabled: [0, 1]});` | 禁用选项卡索引数组中的特定选项卡。 |
+
 | `$('#my-tabs').tabs({event: 'mouseover'});` | 将触发选项卡选择的事件从点击更改为鼠标悬停。默认值为 `click`。 |
+
 | `$('#my-tabs').tabs({fx: [{opacity:'toggle', duration:'normal'}, {opacity:'toggle', duration:'fast'}]});` | 指定隐藏旧选项卡和显示新选项卡的效果及速度。 |
+
 | `$('#my-tabs').tabs({idPrefix: 'id-fix-'});` | 更改远程选项卡生成的 `id` 属性的前缀。默认值为 `ui-tabs-`。 |
+
 | `$('#my-tabs').tabs({panelTemplate: '<p></p>'});` | 将窗格从默认的 `<div></div>` 更改为段落。 |
+
 | `$('#my-tabs').tabs({selected: 2});` | 在初始化时更改当前选定的选项卡。这是基于零的，因此在此示例中，第三个选项卡将被选中。默认值为 `0`。要将所有选项卡设置为未选中，请使用值 `-1`。 |
+
 | `$('#my-tabs').tabs({spinner: '<p class='my-spinner'>Please wait</p>'});` | 更改在加载远程内容时显示的元素。你可以使用 CSS 创建自己的加载图标。默认值为 `<em>Loading…</em>`。 |
+
 | `$('#my-tabs').tabs({tabTemplate: '<li><a href="#{href}"><span>#{label}</span></a></li>'});` | 更改此模板以生成与当前默认值不同的 HTML。此模板与 `add` 方法一起使用。默认值为 `<li><a href="#{href}"><span>#{label}</span></a></li>`。 |
 
 ## 捕获选项卡组件上的事件
@@ -7109,8 +7403,6 @@ $('#my-tabs').tabs('add', '/my-url', 'My Tab Label', 1);
 $('#my-tabs').tabs('remove', 1);
 ```
 
-
-
 ## 总结
 
 本章介绍了jQuery UI中的小部件组件，这些组件旨在协助Web开发人员完成常见任务，例如将内容组织成选项卡、手风琴、滑块、进度条、自动完成、日期选择器、对话框和按钮。
@@ -7122,7 +7414,9 @@ $('#my-tabs').tabs('remove', 1);
 ## 移动端
 
 -   **第8章** 更改外观与感觉
+
 -   **第9章** 使用jQuery Mobile进行页面导航
+
 -   **第10章** 与jQuery Mobile进行交互
 
 ## 第8章
@@ -7142,31 +7436,54 @@ $('#my-tabs').tabs('remove', 1);
 要更改主题，请将上一代码片段中的**base**一词替换为以下主题名称之一：
 
 -   black-tie
+
 -   blitzer
+
 -   cupertino
+
 -   dark-hive
+
 -   dot-luv
+
 -   eggplant
+
 -   excite-bike
+
 -   flick
+
 -   hot-sneaks
+
 -   humanity
+
 -   le-frog
+
 -   mint-choc
+
 -   overcast
+
 -   pepper-grinder
+
 -   redmond
+
 -   smoothness
+
 -   south-street
+
 -   start
+
 -   sunny
+
 -   swanky-purse
+
 -   trontastic
+
 -   ui-darkness
+
 -   ui-lightness
+
 -   vader
 
-另一种更改jQuery UI组件外观的方法是在互联网上搜索第三方主题。您可能会找到由熟练设计师创建的一些主题。要创建自己的主题，您可以使用jQuery的ThemeRoller来创建自定义主题。使用此工具，您可以更改有限数量的默认属性，例如颜色、距离和圆角大小。您可以在 http://jqueryui.com/themeroller/ 找到ThemeRoller。
+另一种更改jQuery UI组件外观的方法是在互联网上搜索第三方主题。您可能会找到由熟练设计师创建的一些主题。要创建自己的主题，您可以使用jQuery的ThemeRoller来创建自定�主题。使用此工具，您可以更改有限数量的默认属性，例如颜色、距离和圆角大小。您可以在 http://jqueryui.com/themeroller/ 找到ThemeRoller。
 
 如果您觉得ThemeRoller提供的自由度不够，并且希望对UI组件的外观有更多控制权，您可以创建自己的CSS文件。您可以基于现有的CSS文件进行修改，或者，如果您有干劲的话，可以从头开始创建。
 
@@ -7332,46 +7649,52 @@ $('#my-tabs').tabs('remove', 1);
 ```
 
 启用指定的选项卡索引：
+
 ```javascript
 $('#my-tabs').tabs('enable', 1);
 ```
 
 禁用指定的选项卡索引：
+
 ```javascript
 $('#my-tabs').tabs('disable', 1);
 ```
 
 选择指定的选项卡索引：
+
 ```javascript
 $('#my-tabs').tabs('select', 1);
 ```
 
 重新加载指定选项卡的内容：
+
 ```javascript
 $('#my-tabs').tabs('load', 1);
 ```
 
 在指定的选项卡索引上加载指定的URL：
+
 ```javascript
 $('#my-tabs').tabs('url', 1, '/my-url');
 ```
 
 获取选项卡组件中的选项卡数量：
+
 ```javascript
 $('#my-tabs').tabs('length');
 ```
 
 中止所有AJAX请求：
+
 ```javascript
 $('#my-tabs').tabs('abort');
 ```
 
 每2000毫秒自动循环切换选项卡。当用户选择一个选项卡时，循环停止，因为`continuing`为`false`：
+
 ```javascript
 $('#my-tabs').tabs('rotate', 2000, false);
 ```
-
-
 
 清单 8.3 淡入淡出和滑动元素（续）
 
@@ -7394,35 +7717,65 @@ $('#my-tabs').tabs('rotate', 2000, false);
 第33行和第35行指定了*缓动*函数 *swing*。jQuery UI 包含了32种不同的缓动选项，如下列所示：
 
 - linear
+
 - swing
+
 - easeInQuad
+
 - easeOutQuad
+
 - easeInOutQuad
+
 - easeInCubic
+
 - easeOutCubic
+
 - easeInOutCubic
+
 - easeInQuart
+
 - easeOutQuart
+
 - easeInOutQuart
+
 - easeInQuint
+
 - easeOutQuint
+
 - easeInOutQuint
+
 - easeInSine
+
 - easeOutSine
+
 - easeInOutSine
+
 - easeInExpo
+
 - easeOutExpo
+
 - easeInOutExpo
+
 - easeInCirc
+
 - easeOutCirc
+
 - easeInOutCirc
+
 - easeInElastic
+
 - easeOutElastic
+
 - easeInOutElastic
+
 - easeInBack
+
 - easeOutBack
+
 - easeInOutBack
+
 - easeOutBound
+
 - easeInOutBounce
 
 jQuery UI 团队维护了一个非常好的交互式演示页面，展示了每种缓动风格的图表。请访问 http://jqueryui.com/demos/effect/easing.html 来尝试它们。
@@ -7477,15 +7830,15 @@ jQuery UI 团队维护了一个非常好的交互式演示页面，展示了每�
 38       recursiveEffects(effs);
 39     });
 40 };
-41 
-42 $('#my-animate').click(function() {
-43   recursiveEffects(effects.split(' ').reverse());
-44 });
-45 
-46 });
-47 </script>
-48 </body>
-49 </html>
+42 
+43 $('#my-animate').click(function() {
+44   recursiveEffects(effects.split(' ').reverse());
+45 });
+46 
+47 });
+48 </script>
+49 </body>
+50 </html>
 ```
 
 此代码中的构造与通常的略有不同。在早期的示例中，你已经看到了参数化示例，其中参数来自将一个更大的字符串分割成数组。通常使用 `$.each` 来遍历数组。
@@ -7567,12 +7920,15 @@ jQuery UI 团队维护了一个非常好的交互式演示页面，展示了每�
 ```
 
 按一次按钮会关闭动画。按两次会重新打开动画，但保持较长的间隔。默认间隔是13毫秒。
+
 为了演示动画化 CSS 类切换的局限性，`my-toggle` 类定义了虚线边框而不是实线。当你尝试这个示例时，你会发现动画会先执行，实际的类更改发生在动画结束时。
+
 第53行和第54行演示了如何关闭动画或更改动画间隔。
 
 ## 食谱：将 jQuery UI 中的所有缓动函数显示为图表
 
 在本章中，你可以看到 `toggle` 和 `fade` 函数如何允许指定缓动函数作为参数。在第6章中，你可以在可调整大小组件中使用缓动函数作为参数。
+
 缓动函数的概念是在 x 从 0 变到 1 时，使 y 从 0 逐渐变化到 1。默认情况下，这可以通过使用 y=x 以线性方式完成。大多数缓动函数提供了非线性替代方案，赋予动画不同的感觉。你可能熟悉弹性、弹跳、先快后慢或先慢后快等缓动风格。
 
 清单 8.6 并未演示动画本身。相反，它在一个简化的点图中绘制缓通函数。这是通过在一行中绘制大量 div 元素来实现的，其中垂直位置取决于缓动函数。必须说明，这不是对 div 和边框的正确使用；这只是为了演示目的。
@@ -7618,8 +7974,6 @@ jQuery UI 团队维护了一个非常好的交互式演示页面，展示了每�
 35 <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
 36 <script src="http://code.jquery.com/ui/1.8.16/jquery-ui.min.js"></script>
 ```
-
-
 
 ## 第8章 改变外观和风格
 
@@ -7807,8 +8161,6 @@ $(document).ready(function() {
 </head>
 ```
 
-
-
 ## 清单 8.9 使用队列在动画之间更改 HTML（续）
 
 ```
@@ -7869,9 +8221,10 @@ queue 函数可以接受一个额外的参数，一个表示队列名称的字�
 本章全面展示了 jQuery Core 和 jQuery UI 的动画功能。其中的一些技巧可以作为参考资料，在使用前查阅动画、缓动函数和图标。
 
 # 第 9 章
+
 # 使用 jQuery Mobile 导航页面
 
-本章介绍 jQuery Mobile 的基础知识。它描述了设置页面、导航到其他页面、通过 AJAX 请求加载内容以及提供平滑过渡动画的框架。在页面内部，有一些基本元素（如页眉和页脚），它们的行为会根据你指定的选项而有所不同。这种页面设置，结合列、事件和最少的自定义 JavaScript 代码等基础知识，构成了使用 jQuery Mobile 的基础。
+本章介绍 jQuery Mobile 的基础知识。它描述了设置页面、导航到其他页面、通过 AJAX 请加载内容以及提供平滑过渡动画的框架。在页面内部，有一些基本元素（如页眉和页脚），它们的行为会根据你指定的选项而有所不同。这种页面设置，结合列、事件和最少的自定义 JavaScript 代码等基础知识，构成了使用 jQuery Mobile 的基础。
 
 ## 技巧：设置 jQuery Mobile 基础
 
@@ -7905,12 +8258,15 @@ jQuery Mobile 要求你以特定的方式设置你的 HTML。清单 9.1 提供�
 20 <h1>我的标题</h1>
 21 </div>
 22
+
 23 <div data-role="content">
 24 <p>你好世界</p>
 25 </div>
 26
+
 27 </div>
 28
+
 29 </body>
 30 </html>
 ```
@@ -7956,10 +8312,12 @@ jQuery Mobile 框架使用这些角色来分配样式、主题和行为。当你
 20     <h1>第一页</h1>
 21   </div>
 22
+
 23   <div data-role="content">
 24     <p>你好世界 <a href="#second">前往第二页</a></p>
 25   </div>
 26
+
 27   <!--
 28   二选一 ... 结果在链接中，而不是 div 中
 29
@@ -7970,8 +8328,10 @@ jQuery Mobile 框架使用这些角色来分配样式、主题和行为。当你
 34  -->
 35  </div>
 36
+
 37  <div data-role="page" id="second">
 38
+
 39    <div data-role="header">
 40      <h1>第二页</h1>
 41    </div>
@@ -7979,8 +8339,10 @@ jQuery Mobile 框架使用这些角色来分配样式、主题和行为。当你
 43      你好，又见面了！
 44    </div>
 45
+
 46  </div>
 47
+
 48  </body>
 49  </html>
 ```
@@ -7996,8 +8358,6 @@ jQuery Mobile 框架使用这些角色来分配样式、主题和行为。当你
 ## 技巧：更改 Title 元素
 
 单个 HTML 文件包含一个 title 元素。当你在单个 HTML 文件中提供多个页面时，这可能会导致不期望的行为。单个 HTML 文件中的页面可能需要自己的 HTML 标题。
-
-
 
 ## 清单 9.3 为每个页面提供单独的标题
 
@@ -8049,7 +8409,7 @@ jQuery Mobile 框架使用这些角色来分配样式、主题和行为。当你
 
 在第3行，你可以看到默认的`title`元素。这个标题是默认加载的。在第17行和第31行，你找到了每个页面的特定标题。一旦你导航到第一个页面，浏览器的标题就会变为第31行中`data-title`属性指定的值。
 
-当你按下返回按钮时，标题会回到第3行的默认标题。如果你想获得第17行`data-title`属性指定的标题，你需要创建一个指向第一个页面的链接。这在第38行完成。你可以测试这个示例，看看会发生什么。
+当你按下返回按钮时，标题会回到第3行的默认标号。如果你想获得第17行`data-title`属性指定的标题，你需要创建一个指向第一个页面的链接。这在第38行完成。你可以测试这个示例，看看会发生什么。
 
 ## 配方：使用 AJAX 加载外部页面
 
@@ -8062,6 +8422,7 @@ jQuery Mobile 框架使用这些角色来分配样式、主题和行为。当你
 使用 AJAX 加载的优势在于可以提供流畅的过渡动画。此外，页面存储在 DOM 树中。这允许快速导航回上一个页面，而无需访问服务器。其缺点是内存消耗。在资源有限的设备上，这可能会成为问题。
 
 > **注意**
+
 在本地开发时，你应该使用 Web 服务器。如果你试图在没有服务器的情况下使用 jQuery Mobile，AJAX 请求将失败，并且你将在屏幕上或控制台中看到一个错误。尽管某些浏览器可能允许你通过 AJAX 调用加载本地文件，但尽可能模拟生产环境总是最佳的。
 
 ## 清单 9.4 链接到外部页面
@@ -8102,7 +8463,7 @@ jQuery Mobile 框架使用这些角色来分配样式、主题和行为。当你
 </html>
 ```
 
-第24行和第25行提供了两种链接到外部文件的不同方式。实际上，你可能不希望在所有链接上都使用`data-prefetch`，因为这会为每个链接创建一个额外的 HTTP 请求，并会减慢你网站的渲染和加载速度。将它们保留给你确定会被访问的链接。第一个链接将在被点击时加载页面。第二个链接将尽快预加载链接背后的数据，以加速导航。
+第24行和第25行提供了两种链接到外部文件的不同方式。实际上，你可能不希望在所有链接上都使用`data-prefetch`，因为这会为每个链接创建一个额的 HTTP 请求，并会减慢你网站的渲染和加载速度。将它们保留给你确定会被访问的链接。第一个链接将在被点击时加载页面。第二个链接将尽快预加载链接背后的数据，以加速导航。
 
 清单 9.5 提供了一个要加载的外部页面示例。
 
@@ -8197,7 +8558,7 @@ Link to an original file
  </html>
 ```
 
-第34–37行提供了两个用于开启和关闭加载消息的按钮。这些按钮连接到自定义的 JavaScript 代码。虽然大多数 jQuery Mobile 代码不需要编写自定义的 JavaScript，但仍有一些例外情况。第17行和第20行分别显示和隐藏加载消息。按下这些按钮，你会注意到加载消息与实际执行的工作之间实际上并没有联系。
+第34–37行提供了两个用于开启和关闭加载消息的按钮。这些按钮连接到自定�的 JavaScript 代码。虽然大多数 jQuery Mobile 代码不需要编写自定义的 JavaScript，但仍有一些例外情况。第17行和第20行分别显示和隐藏加载消息。按下这些按钮，你会注意到加载消息与实际执行的工作之间实际上并没有联系。
 
 尽管可以随时开启或关闭加载提示，但建议仅在后台实际执行工作或加载页面资源时使用。
 
@@ -8249,11 +8610,13 @@ Link to an original file
 ```
 
 第 24 行引入了 `data-ajax` 属性以指定是否使用 AJAX。其默认值为 `true`。若设为 `false`，则禁用 AJAX。
+
 第 27 行提供了 `rel="external"` 属性。在 jQuery Mobile 中效果相同：禁用 AJAX。此写法符合 HTML 规范。但使用此方式可能产生副作用。例如，可能会有 CSS 规则为指向外部位置的链接添加不同的样式（如添加图标）。
 
 ## 方案：指定过渡动画
 
 当点击通过 AJAX 加载的内部链接时，jQuery Mobile 会提供过渡动画。默认情况下，你会看到页面向左滑动。
+
 jQuery Mobile 提供了少量默认动画供选择，包括 `pop`、`slidefade`、`slide`、`slideup`、`slidedown`、`fade` 和 `flip`。清单 9.8 展示了如何为链接更改动画效果。
 
 ### 清单 9.8 使用动画导航到第二页
@@ -8282,6 +8645,7 @@ jQuery Mobile 提供了少量默认动画供选择，包括 `pop`、`slidefade`�
 20 <h1>First</h1>
 21 </div>
 22
+
 23 <div data-role="content">
 24 <p>Hello world <a href="#second" data-transition="pop">and go
 25 to the second</a></p>
@@ -8289,10 +8653,13 @@ jQuery Mobile 提供了少量默认动画供选择，包括 `pop`、`slidefade`�
 27 (support for flip is limited on Android) -->
 28 </div>
 29
+
 30 </div>
 31
+
 32 <div data-role="page" id="second">
 33
+
 34 <div data-role="header">
 35 <h1>Second</h1>
 36 </div>
@@ -8300,8 +8667,10 @@ jQuery Mobile 提供了少量默认动画供选择，包括 `pop`、`slidefade`�
 38 Hello again!
 39 </div>
 40
+
 41 </div>
 42
+
 43 </body>
 44 </html>
 ```
@@ -8311,9 +8680,12 @@ jQuery Mobile 提供了少量默认动画供选择，包括 `pop`、`slidefade`�
 ## 方案：指定自定义过渡动画
 
 若需要不同于上例提供的默认动画集合，你可以自定义动画。可以使用 CSS3 过渡创建平滑的硬件加速动画（2D 和 3D 均可）。
+
 清单 9.9 提供了一个动画示例，在打开新页面时旋转页面。
 
 ### 清单 9.9 使用自定义 CSS3 过渡切换页面
+
+
 
 ```html
 00 <!DOCTYPE html>
@@ -8382,19 +8754,24 @@ jQuery Mobile 提供了少量默认动画供选择，包括 `pop`、`slidefade`�
 ```
 
 在清单 9.9 中，依然没有自定义 JavaScript 代码。但第 43 行出现了一个 `data-transition` 属性，指向自定义值：`mine`。jQuery Mobile 使用此值在需要过渡动画时添加 class 属性。
+
 在 CSS 规范中，第 9–15 行定义了两个规则：`mine` 类与 `in` 类的组合，以及 `mine` 类与 `out` 类的组合。这两个 CSS 实现都引用了第 17–24 行指定的 CSS3 动画。
+
 第 17–24 行的 CSS 规范使页面在过渡期间旋转。由于带有 `-webkit-` 前缀，这些动画仅在 iOS、Safari 和 Chrome 中有效。若要使其在其他浏览器中生效，可添加 `-moz-`、`-ms-` 前缀，或在未来标准成熟后移除前缀。此处示例针对 iPhone 和 iPad。了解更多 CSS3 和动画信息，请访问 http://www.html5rocks.com/en/features/presentation。
+
 若使用 jQuery Mobile 且浏览器不支持 3D 变换，则过渡将回退为简单的淡入淡出效果。你也可以通过更改全局配置覆盖某些过渡的默认行为，例如：
+
 ```javascript
 $.mobile.transitionFallbacks.slideout = "none";
 ```
+
 另一个需要覆盖页面过渡的场景是在大屏幕上效果可能出现卡顿。此时可通过设置 `maxTransitionWidth` 选项值来调整，如下所示：
+
 ```javascript
 $.mobile.maxTransitionWidth = 640;
 ```
+
 此设置会在设备宽度大于 640 时禁用过渡。
-
-
 
 # 方法：监听移动事件
 
@@ -8495,8 +8872,6 @@ $.mobile.maxTransitionWidth = 640;
 然而，也有充分的理由在你的Web应用中提供返回按钮。一个原因是当你的Web应用全屏运行时，浏览器的返回按钮可能不可用。更重要的是，jQuery Mobile应用模拟了原生应用的外观和感觉。在原生应用中，返回按钮位于屏幕的左上角。
 
 清单9.11演示了jQuery Mobile如何轻松地在必要时添加返回按钮。
-
-
 
 ## 第9章 使用jQuery Mobile导航页面
 
@@ -8757,8 +9132,6 @@ $.mobile.maxTransitionWidth = 640;
 <div data-role="page">
 ```
 
-
-
 ## 清单 9.15  不移动页脚位置的滚动文本（续）
 
 ```
@@ -8861,6 +9234,7 @@ $.mobile.maxTransitionWidth = 640;
 40          <a href="#" id="show" data-role="button">显示页脚</a>
 41          <a href="#" id="hide" data-role="button">隐藏页脚</a>
 42
+
 43          <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 44          Cras metus tellus, iaculis vestibulum ornare sit amet,
 45          semper ac nisi. Suspendisse convallis, libero ut sodales
@@ -8878,6 +9252,7 @@ $.mobile.maxTransitionWidth = 640;
 57          feugiat quis aliquam enim egestas. Integer et ante metus, ut
 58          faucibus libero. </p>
 59
+
 60          <p> Sed lobortis nunc nec ligula dictum dignissim
 61          pellentesque lorem semper. Vivamus dui felis, pulvinar non
 62          accumsan ac, facilisis a lectus. In blandit aliquet sapien
@@ -8889,16 +9264,18 @@ $.mobile.maxTransitionWidth = 640;
 68          faucibus a. Etiam sed enim ante, et aliquam quam. Donec
 69          velit velit, cursus at sodales id, accumsan at sapien. </p>
 70
+
 71      </div>
 72      <div data-role="footer" data-position="fixed">
 73          <p>第二页</p>
 74      </div>
 75
+
 76      </div>
 77
-78
-79  </body>
-80  </html>
+
+78  </body>
+79  </html>
 ```
 
 第 16-26 行包含显示和隐藏页眉与页脚的代码。当页脚被“隐藏”时，它仍然在页面底部可见。只是它不再位于屏幕底部了。页眉的情况也相同。
@@ -8939,8 +9316,6 @@ jQuery Mobile 提供了一个称为全屏模式的功能。这意味着页眉和
 26       <p>再次点击以恢复它们</p>
 27     </div>
 ```
-
-
 
 ## 第9章 使用jQuery Mobile导航页面
 
@@ -9124,7 +9499,7 @@ jQuery Mobile 提供了一个称为全屏模式的功能。这意味着页眉和
 41 </div>
 42 <div class="ui-block-c">
 43 <a href="#" data-role="button">右</a>
-44 </div>
+44 </div
 45 </div>
 46
 47 <div class="ui-grid-c">
@@ -9195,13 +9570,12 @@ jQuery Mobile 提供了一个称为全屏模式的功能。这意味着页眉和
 34       <a href="#" id="change" data-role="button">更改页面</a>
 35    </div>
 36
+
 37 </body>
 38 </html>
 ```
 
 第18和19行包含对changePage的调用。在将页面更改为指定URL时，该代码请求使用淡入淡出过渡动画，而不是默认动画。与过渡动画选项类似，您可以使用jQuery Mobile来指定其他参数。
-
-
 
 ## 第9章 使用jQuery Mobile导航页面
 
@@ -9213,7 +9587,7 @@ jQuery Mobile 提供了一个称为全屏模式的功能。这意味着页眉和
 |---|---|
 | allowSamePageTransition | 设置为true，可以从当前页面以过渡动画切换到当前页面 |
 | changeHash | 设置为false，防止URL变为不同的哈希值 |
-| Data | 为AJAX请求添加额外的URL参数 |
+| Data | 为AJAX请请求添加额外的URL参数 |
 | dataUrl | 指定页面更改后将窗口位置URL更改为的值 |
 | pageContainer | 更改页面在DOM中的存储位置 |
 | reloadPage | 设置为true，在页面更改后重新加载页面 |
@@ -9239,7 +9613,7 @@ jQuery Mobile 提供了一个称为全屏模式的功能。这意味着页眉和
 08
 09    <div data-role="header">
 10       <h1>Linked File</h1>
-11    </div>
+11    </div
 12
 13    <div data-role="content">
 14       <p><a href="43-change-page.html">Link to an original
@@ -9252,7 +9626,7 @@ jQuery Mobile 提供了一个称为全屏模式的功能。这意味着页眉和
 21 </html>
 ```
 
-与前面的示例类似，该示例有意省略了脚本和样式，以演示该页面是通过AJAX请求加载的。在实际示例中，提供脚本和样式是合理的，因为该页面的URL可能会被直接请求。当代码从另一个jQuery Mobile页面加载时，头部中的任何脚本都会被忽略。
+与前面的示例类似，该示例有意省略了脚本和样式，以演示该页面是通过AJAX请求加载的。在实际示例中，提供脚本和样式是合理的，因为该页面的URL可能会被直接请请求。当代码从另一个jQuery Mobile页面加载时，头部中的任何脚本都会被忽略。
 
 ### 技巧：使用JavaScript调用加载页面
 
@@ -9295,11 +9669,11 @@ jQuery Mobile 提供了一个称为全屏模式的功能。这意味着页眉和
 31
 32    <div data-role="header">
 33       <h1>Load page</h1>
-34    </div>
+34    </div
 35
 36    <div data-role="content">
 37       <a href="#" id="change" data-role="button">Change Page</a>
-38    </div>
+38    </div
 39
 40 </body>
 41 </html>
@@ -9358,7 +9732,7 @@ jQuery Mobile提供了一个该函数的变体：`jqmData()`。代码清单9.24�
 37
 38     <div data-role="header">
 39         <h1>jQuery Mobile Data Function</h1>
-40     </div>
+40     </div
 41
 42     <div data-role="content">
 43         <p id="mydata">This paragraph serves as the data container.</p>
@@ -9366,7 +9740,7 @@ jQuery Mobile提供了一个该函数的变体：`jqmData()`。代码清单9.24�
 45         <a href="#" id="getdata" data-role="button">Get Data</a>
 46         <a href="#" id="removedata" data-role="button">Remove Data</a>
 47         <a href="#" id="select" data-role="button">Select</a>
-48     </div>
+48     </div
 49
 50 </body>
 51 </html>
@@ -9377,8 +9751,6 @@ jQuery Mobile提供了一个该函数的变体：`jqmData()`。代码清单9.24�
 ### 技巧：利用jQuery Mobile辅助函数
 
 jQuery Mobile在内部使用了许多实用函数来执行AJAX请求。为了方便起见，这些实用函数也可供您重用。代码清单9.25演示了如何将URL实用函数用于您自己的目的。
-
-
 
 ## 清单 9.25 使用 parseUrl() 函数读取 URL
 
@@ -9530,6 +9902,8 @@ jQuery Mobile在内部使用了许多实用函数来执行AJAX请求。为了方
 
 ## 食谱：在内容中内联显示工具栏
 
+
+
 上一章介绍了 jQuery Mobile 提供的基本页面导航框架。页面框架中包含页眉、页脚和对话框。与页眉和页脚类似，你也可以在内容内部添加类似工具栏的元素。工具栏通常用于布局和格式化；它们是引入内容中断以及帮助内容分组的好方法。清单 10.1 提供了在内容 div 内自定义工具栏的示例。
 
 ```html
@@ -9550,8 +9924,6 @@ jQuery Mobile在内部使用了许多实用函数来执行AJAX请求。为了方
 ```
 
 (续)
-
-
 
 ## 第10章 与jQuery Mobile交互
 
@@ -9773,8 +10145,6 @@ jQuery Mobile在内部使用了许多实用函数来执行AJAX请求。为了方
 <head>
 ```
 
-
-
 ## 第十章 与 jQuery Mobile 交互
 
 ### 代码清单 10.6 在导航栏中显示图标（续）
@@ -9824,7 +10194,7 @@ jQuery Mobile在内部使用了许多实用函数来执行AJAX请求。为了方
 
 在第 23 行，`data-iconpos` 属性指定了所有图标应放置的位置。本例将其设置为顶部。在许多情况下，您可能更喜欢将它们放在左侧或右侧。默认情况下，图标位于左侧，但您也可以使用 `data-iconpos="right"`、`data-iconpos="top"`、`data-iconpos="bottom"` 和 `data-iconpos="notext"`。`notext` 选项会移除按钮上的文本，只显示图标。
 
-第 25、27 和 29 行指定了一个来自 jQuery Mobile 默认图标列表的图标类。如果您想使用自定义图标，应该相应地提供 CSS 类，其方式类似于 jQuery Mobile 的做法。
+第 25、27 和 29 行指定了一个来自 jQuery Mobile 默认图标列表的图标类。如果您想使用自定图标，应该相应地提供 CSS 类，其方式类似于 jQuery Mobile 的做法。
 
 ## 技巧：使用可折叠区域显示和隐藏元素
 
@@ -10012,13 +10382,12 @@ HTML 提供了多种类型的输入字段。jQuery Mobile 会选择这些输入�
 第 39–42 行演示了如何初始化多行文本区域。
 
 > **注意**
+
 每一对标签和输入字段都包含在一个具有 `data-role=fieldcontain` 属性的 div 中。jQuery Mobile 使用这些容器 div 来帮助对齐标签和输入字段。
 
 ## 技巧：获取基于日历的输入
 
 在第七章中，介绍了一个日历输入组件。在 HTML 4 Web 表单中，输入日期并不是很用户友好。Web 设计师通常只能在以下选项中选择：提供单个输入字段并强制使用特定的输入格式；提供三个输入字段，带或不带下拉菜单；或者添加一个基于 JavaScript 的日历组件。
-
-
 
 HTML5提供了新的输入元素，使浏览器能够提供原生控件来帮助用户输入值。日期输入是这些新输入字段的一个很好的例子。移动设备似乎比普通Web浏览器更快地实现了这些新的输入方式。在许多平台上，已经有以用户友好方式提供的日期输入组件。清单10.10演示了与日历相关的输入字段。
 
@@ -10091,7 +10460,7 @@ HTML5提供了新的输入元素，使浏览器能够提供原生控件来帮助
 
 ## 技巧：使用替代键盘显示输入字段
 
-日历输入需要完全不同的输入组件。还有一些字段看起来像普通的文本输入字段，但有不同的要求。带有屏幕键盘的移动设备屏幕空间有限，无法显示完整的键盘。因此，与普通键盘不同，这里有一个按键选择，要访问不同的按键，您需要进入子菜单。
+日历输入需要完全不同的输入组件。还有一些字段看起来像普通的文本输入字段，但有不同的要求。带有屏幕键盘的移动设备屏空间有限，无法显示完整的键盘。因此，与普通键盘不同，这里有一个按键选择，要访问不同的按键，您需要进入子菜单。
 
 特别是在输入特定结构（如电话号码、电子邮件地址和URL）时，需要切换很多次键盘才能完成一个输入字段。幸运的是，移动设备提供了专门用于输入电话号码、电子邮件地址和URL的键盘变体。清单10.11演示了这些键盘。
 
@@ -10143,7 +10512,7 @@ HTML5提供了新的输入元素，使浏览器能够提供原生控件来帮助
 42         <input type="tel" id="mytel">
 43       </div>
 44 
-45     </form>
+45     </form
 46   </div>
 47 
 48 </body>
@@ -10218,8 +10587,6 @@ HTML5提供了新的输入元素，使浏览器能够提供原生控件来帮助
 
 最后，颜色输入字段（如第36–39行）可能引导至完全不同的输入组件。在iOS中，它与普通文本字段无法区分。如果颜色输入变得更受欢迎，这种情况可能会随着时间而改变。
 
-
-
 ## 方法：使用滑块输入整数
 
 输入整数可能需要使用一种与文本框完全不同的输入元素。例如，你可以使用滑块。清单 10.13 演示了如何使用滑块输入整数。
@@ -10261,7 +10628,7 @@ HTML5提供了新的输入元素，使浏览器能够提供原生控件来帮助
 30           min="0" max="10" value="3">
 31       </div>
 32
-33     </form>
+33     </form
 34   </div>
 35
 36 </body>
@@ -10276,7 +10643,7 @@ HTML5提供了新的输入元素，使浏览器能够提供原生控件来帮助
 
 许多表单包含要求访问者在两个值之间做出选择的输入字段。某个选项要么是“是”或“否”，“开”或“关”，“男”或“女”等。你可以选择使用两个单选按钮、一个复选框，或一个具有两个选项的选择框。
 
-在某些情况下，更用户友好的选择是提供一个类似滑块的开关，可以进行开/关切换。在 iOS 中，这种开关类似于你可以在手机设置菜单中找到的开关。清单 10.14 展示了如何使用 jQuery Mobile 创建这些开关。
+在某些情况下，更用户友好的选择是提供一个类似滑块的开关，可以进行开/关切换。在 iOS 中，这种开关类似于你可以在手机设置菜中找到的开关。清单 10.14 展示了如何使用 jQuery Mobile 创建这些开关。
 
 ### 清单 10.14 将选择框显示为滑动开关
 
@@ -10317,7 +10684,7 @@ HTML5提供了新的输入元素，使浏览器能够提供原生控件来帮助
 33      </select>
 34    </div>
 35
-36  </form>
+36  </form
 37</div>
 38
 39 </body>
@@ -10361,46 +10728,58 @@ HTML5提供了新的输入元素，使浏览器能够提供原生控件来帮助
 25
 26       <form action="" method="post">
 27
+
 28         <div data-role="fieldcontain">
 29           <fieldset data-role="controlgroup">
 30
 31             <legend>Select from Radio:</legend>
 32
+
 33             <input type="radio" name="myradio" id="myradio1"
 34               value="1" checked="checked">
 35             <label for="myradio1">First</label>
 36
+
 37             <input type="radio" name="myradio" id="myradio2"
 38               value="2">
 39             <label for="myradio2">Second</label>
 40
+
 41             <input type="radio" name="myradio" id="myradio3"
 42               value="3">
 43             <label for="myradio3">Third</label>
 44
+
 45           </fieldset>
 46
+
 47           <fieldset data-role="controlgroup" data-type="horizontal">
 48
+
 49             <legend>Select from Horizontal:</legend>
 50
+
 51             <input type="radio" name="myhoriz" id="myhoriz1"
 52               value="1" checked="checked">
 53             <label for="myhoriz1">First</label>
 54
+
 55             <input type="radio" name="myhoriz" id="myhoriz2"
 56               value="2">
 57             <label for="myhoriz2">Second</label>
 58
+
 59             <input type="radio" name="myhoriz" id="myhoriz3"
 60               value="3">
 61             <label for="myhoriz3">Third</label>
 62
+
 63         </fieldset>
 64
+
 65     </div>
 66
-67     </form>
+67     </form
 68     </div>
 69
 70 </body>
@@ -10450,11 +10829,9 @@ HTML5提供了新的输入元素，使浏览器能够提供原生控件来帮助
 29                <input type="checkbox" name="mycheck" id="mycheck3"
 30                  value="3">
 31                <label for="mycheck3">Third</label>
-32            </fieldset>
+32            </fieldset
 33          <fieldset data-role="controlgroup" data-type="horizontal">
 ```
-
-
 
 ## 清单 10.16 显示垂直和水平复选框组（续）
 
@@ -10474,14 +10851,14 @@ HTML5提供了新的输入元素，使浏览器能够提供原生控件来帮助
 60          value="3">
 61        <label for="myhoriz3">第三个</label>
 62
-63    </fieldset>
+63    </fieldset
 64
-65  </div>
+65  </div
 66
-67  </form>
-68  </div>
+67  </form
+68  </div
 69
-70 </body>
+70 </body
 71 </html>
 ```
 
@@ -10522,62 +10899,67 @@ HTML5提供了新的输入元素，使浏览器能够提供原生控件来帮助
 19
 20   <div data-role="content">
 21
+
 22      <form action="" method="post">
 23
+
 24      <div data-role="fieldcontain">
 25
+
 26         <label for="myselect">选择</label>
 27         <select>
 28            <option value="1">第一个</option>
 29            <option value="2">第二个</option>
 30            <option value="3">第三个</option>
-31         </select>
+31         </select
 32
-33      </div>
+33      </div
 34
 35      <fieldset data-role="controlgroup">
 36
+
 37         <select data-theme="e" data-native-menu="false">
 38            <option value="1">第一个</option>
 39            <option value="2">第二个</option>
 40            <option value="3">第三个</option>
-41         </select>
+41         </select
 42      <select>
 43          <option value="1">第一个</option>
 44          <option value="2">第二个</option>
 45          <option value="3">第三个</option>
-46      </select>
+46      </select
 47      <select>
 48          <option value="1">第一个</option>
 49          <option value="2">第二个</option>
 50          <option value="3">第三个</option>
-51      </select>
-52  </fieldset>
+51      </select
+52  </fieldset
 53
 54  <fieldset data-type="horizontal" data-role="controlgroup">
 55
+
 56      <select>
 57          <option value="1">第一个</option>
 58          <option value="2">第二个</option>
 59          <option value="3">第三个</option>
-60      </select>
+60      </select
 61      <select>
 62          <option value="1">第一个</option>
 63          <option value="2">第二个</option>
 64          <option value="3">第三个</option>
-65      </select>
+65      </select
 66      <select>
 67          <option value="1">第一个</option>
 68          <option value="2">第二个</option>
 69          <option value="3">第三个</option>
-70      </select>
-71  </fieldset>
+70      </select
+71  </fieldset
 72
 73
-74      </form>
-75    </div>
+74      </form
+75    </div
 76
-77  </body>
+77  </body
 78  </html>
 ```
 
@@ -10618,25 +11000,25 @@ HTML5提供了新的输入元素，使浏览器能够提供原生控件来帮助
 15 
 16   <div data-role="header">
 17     <h1>关闭 jQuery Mobile</h1>
-18   </div>
+18   </div
 19 
 20   <div data-role="content">
 21   
 22       <form action="" method="post" data-ajax="false">
 23   
-24          <h2>基础</h2>
+24          <h2>基础</h2
 25          <div data-role="fieldcontain">
 26            <label for="myinput">输入</label>
 27            <input type="text" id="myinput" data-role="none">
-28          </div>
+28          </div
 29          <div data-role="fieldcontain">
 30            <label for="myselect">选择</label>
 31            <select data-role="none">
 32              <option value="1">第一个</option>
 33              <option value="2">第二个</option>
 34              <option value="3">第三个</option>
-35            </select>
-36          </div>
+35            </select
+36          </div
 37          <fieldset data-role="controlgroup">
 38   
 39            <legend>从复选框中选择：</legend>
@@ -10653,11 +11035,11 @@ HTML5提供了新的输入元素，使浏览器能够提供原生控件来帮助
 50              value="3" data-role="none">
 51            <label for="mycheck3">第三个</label>
 52   
-53          </fieldset>
-54       </form>
-55   </div>
+53          </fieldset
+54       </form
+55   </div
 56   
-57   </body>
+57   </body
 58   </html>
 ```
 
@@ -10689,35 +11071,33 @@ jQuery Mobile 为页面中的元素提供了统一的外观和感觉。从用户
 12     <div data-role="page">
 13       <div data-role="header">
 14         <h1>列表</h1>
-15       </div>
+15       </div
 16       <div data-role="content">
-17         <h2>无序列表</h2>
+17         <h2>无序列表</h2
 18         <ul data-role="listview" data-inset="true">
 19           <li>一</li>
 20           <li>二</li>
 21           <li>三</li>
-22         </ul>
-23         <h2>有序列表</h2>
+22         </ul
+23         <h2>有序列表</h2
 24         <ol data-role="listview">
 25           <li>一</li>
 26           <li>二</li>
 27           <li>三</li>
-28         </ol>
-29       </div>
-30     </div>
-31   </body>
-32 </html>
+28         </ol
+29       </div
+30     </div
+31   </body
+32 </html
 ```
-
-
 
 ## 清单 10.19 显示简单列表项（续）
 
 ```html
-38 </div>
+38 </div
 39
-40 </body>
-41 </html>
+40 </body
+41 </html
 ```
 
 第26至30行包含一个无序列表，这是最常见的列表形式。其内容仅为文本，因此这个列表组件完全不具有交互性。最后，在第26行，有一个 `data-inset="true"` 属性。这会在列表周围添加边距，并为列表设置圆角。你可以将其与有序列表进行比较，以查看差异。
@@ -10734,42 +11114,42 @@ jQuery Mobile 为页面中的元素提供了统一的外观和感觉。从用户
 02 <head>
 03   <title>嵌套列表</title>
 04   <meta name="viewport"
-05     content="width=device-width, initial-scale=1">
+05     content="width=device-width, initial-scale=1>
 06   <link rel="stylesheet" href=
-07     "http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.css">
+07     "http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.css>
 08   <script type="text/javascript"
-09     src="http://code.jquery.com/jquery-1.7.1.min.js">
+09     src="http://code.jquery.com/jquery-1.7.1.min.js>
 10   </script>
 11   <script type="javascript" src=
-12     "http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.js">
+12     "http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.js>
 13   </script>
 14
 15 </head>
 16 <body>
 17
-18 <div data-role="page">
+18 <div data-role="page>
 19
-20   <div data-role="header">
+20   <div data-role="header>
 21     <h1>嵌套列表</h1>
-22   </div>
+22   </div
 23
-24  <div data-role="content">
-25    <ul data-role="listview">
+24  <div data-role="content>
+25    <ul data-role="listview>
 26      <li>一</li>
 27      <li>二</li>
 28      <li>三
-29        <ol data-role="listview">
+29        <ol data-role="listview>
 30          <li>一</li>
 31          <li>二</li>
 32          <li>三</li>
-33        </ol>
-34      </li>
-35    </ul>
+33        </ol
+34      </li
+35    </ul
 36
-37  </div>
+37  </div
 38
-39  </body>
-40  </html>
+39  </body
+40  </html
 ```
 
 第25至35行在无序列表内设置了一个有序列表。这也可以是一个有序或无序列表内的无序列表。你期望的是一个在屏幕上显示六个元素的树状结构。而你实际得到的是一个包含三个元素的单个无序列表。第三个元素的右侧包含一个箭头。当你点击第三个元素时，似乎导航到了一个新页面。从技术上讲，这正是jQuery Mobile对嵌套列表的处理方式。它生成新页面来显示它们。
@@ -10784,40 +11164,42 @@ jQuery Mobile 为页面中的元素提供了统一的外观和感觉。从用户
 02  <head>
 03    <title>拆分列表</title>
 04    <meta name="viewport"
-05      content="width=device-width, initial-scale=1">
+05      content="width=device-width, initial-scale=1>
 06    <link rel="stylesheet" href=
-07      "http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.css">
+07      "http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.css>
 08    <script type="text/javascript"
-09      src="http://code.jquery.com/jquery-1.7.1.min.js">
+09      src="http://code.jquery.com/jquery-1.7.1.min.js>
 10    </script>
 11    <script type="javascript" src=
-12      "http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.js">
+12      "http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.js>
 13    </script>
 14
 15 </head>
 16 <body>
 17
-18 <div data-role="page">
+18 <div data-role="page>
 19
-20   <div data-role="header">
+20   <div data-role="header>
 21     <h1>拆分列表</h1>
-22   </div>
+22   </div
 23
-24   <div data-role="content">
-25     <h2>无序列表</h2>
-26     <ul data-role="listview" data-split-icon="gear">
-27       <li><a href="#">一</a><a href="#">按钮</a></li>
-28       <li><a href="#">二</a><a href="#">按钮</a></li>
-29       <li><a href="#">三</a><a href="#">按钮</a></li>
-30     </ul>
+24   <div data-role="content>
+25     <h2>无序列表</h2
+26     <ul data-role="listview" data-split-icon="gear>
+27       <li><a href="#">一</a><a href="#">按钮</a></li
+28       <li><a href="#">二</a><a href="#">按钮</a></li
+29       <li><a href="#">三</a><a href="#">按钮</a></li
+30     </ul
 31
-32   </div>
+32   </div
 33
-34 </body>
-35 </html>
+34 </body
+35 </html
 ```
 
 清单10.21与清单10.20有两个不同之处。首先，元素不再是静态文本，而是按钮。其次，右侧有一个额外的按钮。在HTML内部，它看起来像是单个列表项中的两个链接。为了将第二个链接转换为图标，第26行的 ul 项包含一个 `data-split-icon="gear"` 属性。gear 这个值可以是可用图标集中的任何其他图标。
+
+
 
 当列表变得稍微长一些时，在列表中导航可能会变得更加困难。为了帮助访问者浏览列表，你可以在列表项之间添加标题。你可以自己决定选择什么标题。字母表可以是一个很好的默认选择，但音乐流派或不同的分组也同样适用。清单10.22展示了数字的字母分组。
 
@@ -10967,8 +11349,6 @@ jQuery Mobile 为页面中的元素提供了统一的外观和感觉。从用户
 38 </body>
 39 </html>
 ```
-
-
 
 ## 清单 10.24 在列表项中显示缩略图（续）
 
@@ -11201,7 +11581,9 @@ jQuery Mobile 为页面中的元素提供了统一的外观和感觉。从用户
 ## 总结
 
 HTML 4 和 HTML5 都提供了与用户交互的多种可能性。要在移动设备上与用户交互，需要一个易于在触摸设备上控制的界面。jQuery Mobile 使得提供触摸友好的用户控件变得容易。
+
 本章从工具栏、导航栏和可折叠项开始。接着，它提供了最常见表单元素的示例以及如何在触摸设备上使用它们。
+
 本章最后介绍了项目列表的多种变体，包括有序和无序列表。它涵盖了嵌套列表、带有特殊标记的列表，以及包含额外搜索元素以过滤内容的较大列表。
 
 # 第四部分
@@ -11209,9 +11591,8 @@ HTML 4 和 HTML5 都提供了与用户交互的多种可能性。要在移动设
 ## 插件
 
 - **第 11 章** 创建插件
+
 - **第 12 章** 使用第三方插件
-
-
 
 # 第11章
 
@@ -11363,6 +11744,7 @@ return this.each(function(index) {/* ... */});
 ## 配方：参数化插件
 
 一个总是执行完全相同操作的默认插件只在有限数量的用例中有用。正如你在第6章《与用户交互》中与jQuery UI一起看到的那样，你可以指定许多选项来自定义插件行为。
+
 代码清单11.4展示了将参数传递给插件的第一个朴素实现。
 
 **代码清单11.4** 添加选项对象作为参数
@@ -11399,15 +11781,16 @@ return this.each(function(index) {/* ... */});
 28 </html>
 ```
 
-
-
 在之前的示例中，插件被命名为 makeItBlue()。为使其更具通用性，插件在第26行重命名为 makeIt()，并接受一个用于指定颜色的选项对象。
+
 第28行使用了从选项对象中获取的指定颜色。该颜色在第37行传入。
+
 此示例比前一个更灵活。唯一的缺点是使用此函数需要对API有更多了解。颜色不再有合理的默认值。
 
 ## 技巧：提供默认参数
 
 通过巧妙地使用第1章《jQuery入门》中介绍的名为 extend() 的辅助函数，你可以在两个对象上调用 extend()，该函数会将第二个对象的属性复制到第一个对象中。
+
 清单11.5展示了插件如何使用此函数扩展，将提供的选项合并到默认对象中。
 
 ### 清单11.5 用可选参数扩展默认参数
@@ -11469,8 +11852,11 @@ return this.each(function(index) {/* ... */});
 ## 技巧：通过使用方法操作插件
 
 在 jQuery 对象中塞入许多函数是不良实践。jQuery 文档建议一个插件只向 jQuery 对象添加一个函数。谨慎添加函数可以避免插件之间发生冲突的风险。
+
 对于更大的插件，你可能需要添加多个函数。有几种方法可以做到这一点。如果你在网上搜索，会发现一些带有代码示例的文章。问题在于它们有些相互矛盾。在某些博客上，你会发现彼此不一致的后续版本。
+
 从中你可以得出两个结论：第一，jQuery 网站上的建议似乎并未得到整个社区的认可；第二，目前似乎还没有就一种更好的方法达成普遍共识。
+
 本书紧贴 jQuery 的原始建议。然而，它也通过引入 Plugin 插件解决了需要复制粘贴一些代码的问题。那将是下一个技巧。首先，让我们从在插件上调用函数的基础开始，如清单11.6所示。
 
 ### 清单11.6 基于函数参数调用方法
@@ -11547,13 +11933,13 @@ return this.each(function(index) {/* ... */});
 68   });
 69   $('#blue').click(function() {
 70     $('h2').makeIt({ color: 'blue' });
-71   });
+71   );
 72   $('#dark').click(function() {
 73     $('h2').makeIt('dark'); // default is gray
 74   });
 75   $('#light').click(function() {
 76     $('h2').makeIt('light'); // default is gray
-77   });
+77   );
 78
 79 });
 80 </script>
@@ -11562,16 +11948,23 @@ return this.each(function(index) {/* ... */});
 ```
 
 在深入细节之前，必须提到，此示例中的方法也可以作为选项参数来实现。在实际应用中，最佳实践是将可以描述为在插件上执行的操作的代码作为方法，例如启用、禁用、折叠、展开、提交等。
+
 在此插件中将 light 和 dark 实现为方法的原因是，你可以通过按钮切换它们，而无需知道当前选择的颜色；当然，前提是它是一个具有亮色和暗色变体的颜色名称。
+
 在此示例中，使其变亮和变暗是通过使用操作来实现的。在底层，插件实例化的设置通过 `data()` 方法存储。
+
 如你所见，`extend` 函数可以集成超过两个对象。如果没有选项且没有先前的设置，将使用默认值。如果有设置但没有选项，设置将优先于默认值。然而，如果有当前设置和新选项，将使用新选项。
+
 第36-44行依赖于第24-34行定义的 `helper()` 函数。此辅助函数防止了重复。它通过 `apply()` 调用以传递上下文。
+
 第48-56行读取提供给插件的方法名称，并使用提供的参数执行相应的方法。如果没有提供方法名，该函数默认为 `init`。
 
 ## 技巧：创建一个创建插件的插件
 
 创建一个处理方法并将选项传递给这些方法的大型插件意味着样板代码。样板代码是重复的另一个代名词，而重复是罪恶的。
+
 消除重复的通用技巧是将保持不变的代码与每次变化的代码分开。代码中最显著的不变部分是读取方法参数并调用正确方法的逻辑。如果你能创建一个包含此逻辑的插件，让你可以专注于特定用例的代码，那会怎样？你能想象一个创建插件的插件吗？
+
 清单11.7展示了一个用于创建插件的示例插件，以隔离方法处理逻辑，并让你专注于自己的代码。我们称之为 Plugin 插件。
 
 ### 清单11.7 将样板代码提取到单独的静态插件中
@@ -11592,8 +11985,6 @@ return this.each(function(index) {/* ... */});
 12 <button id="light">Light</button>
 13 <button id="dark">Dark</button>
 ```
-
-
 
 ## 第11章 创建插件
 
@@ -11662,14 +12053,14 @@ return this.each(function(index) {/* ... */});
 74       $('h2').makeIt({ color: 'green' });
 75    });
 76    $('#blue').click(function() {
-77       $('h2').makeIt({ color: 'blue' });
+77       $('h2').makeIt({ color: 'blue' );
 78    });
 79    $('#dark').click(function() {
 80       $('h2').makeIt('dark'); // 默认为灰色
 81    });
 82    $('#light').click(function() {
 83       $('h2').makeIt('light'); // 默认为灰色
-84    });
+84    );
 85
 86 });
 87 </script>
@@ -11677,7 +12068,7 @@ return this.each(function(index) {/* ... */});
 89 </html>
 ```
 
-第22–37行包含插件插件。你可以将这段代码保存到单独的 .js 文件中，并在每次定义插件时重复使用它。如果你在网站上定义多个自定义插件，这尤其有用。
+第22–37行包含插件插件。你可以将这段代码保存到单独的 .js 文件中，并在每次定义插件时重复使用它。如果你在网站上定义多个自定�插件，这尤其有用。
 
 插件插件被定义为 jQuery 对象上的一个静态方法。它不接受任何上下文。它期望一个方法字典作为参数。最佳实践是至少传递一个名为 `init` 的方法。这将作为默认方法。
 
@@ -11760,7 +12151,7 @@ return this.each(function(index) {/* ... */});
 57 </html>
 ```
 
-首先，查看回调函数本身，`hello` 和 `bye`。值得注意的是第一个参数，即要操作的 HTML 元素。接下来，在 `hello` 函数中，注意被注释掉的 `lock()` 和 `disable()` 行。你可以取消注释以查看效果。这两个函数都是 jQuery 1.7 中的新函数，用于防止进一步的回调函数被执行。`lock()` 函数将回调锁定在其当前状态；`disable()` 函数停止回调列表执行任何其他操作。
+首先，查看回调函数本身，`hello` 和 `bye`。值得注意的是第一个参数，即要操作的 HTML 元素。接下来，在 `hello` 函数中，注意被注释掉的 `lock()` 和 `disable()` 行。你可以取消注释以查看效果。这两个函数都是 jQuery 1.7 中的新函数，用于防止进一�的回调函数被执行。`lock()` 函数将回调锁定在其当前状态；`disable()` 函数停止回调列表执行任何其他操作。
 
 类似地，在第42和43行，有注释掉的行用于移除回调和清空栈。再次取消注释以查看效果。
 
@@ -11804,8 +12195,6 @@ return this.each(function(index) {/* ... */});
 24 
 25   $.fn.testCallbacks = function() {
 ```
-
-
 
 ## 清单 11.9 使用 fireWith() 将上下文传递给回调函数（续）
 
@@ -11895,6 +12284,7 @@ $(document).ready(function() {
 ```
 
 第19–22行展示了一个简单地直接返回 Deferred 对象的插件。该插件在第28行被实例化，紧接着注册了一个 `done` 回调函数。
+
 为了展示 Deferred 对象如何解析已注册的回调函数，第32–36行在五秒后调用了所有已注册的回调处理程序。然而，这段代码的位置有问题。这段代码位于插件外部。这意味着插件的内部实现被暴露了。其他 JavaScript 代码可能会破解该插件并添加不良行为。
 
 ## 配方：返回 Promise 以保护内部实现
@@ -11949,7 +12339,8 @@ $(document).ready(function() {
 ```
 
 考虑第19-21行。你看到了相同的 Deferred 对象和相同的 `setTimeout` 函数，它使用 `resolve` 函数调用所有已注册的回调处理程序。区别在于 `setTimeout` 函数现在被集成到了插件内部，并且在最后调用了 `promise()` 方法。
-从插件用户的角度来看，似乎没有任何变化。第35-37行注册回调函数的代码保持不变。
+
+从插件用户的角度来看，似乎没有任何变化。第35-37行注册回函数的代码保持不变。
 
 ## 配方：演示 Promise(d) 的保护作用
 
@@ -12043,8 +12434,6 @@ $(document).ready(function() {
     };
 ```
 
-
-
 ## 第11章 创建插件
 
 清单 11.13 在示例代码中添加 `fail()`、`then()` 和 `always()` 方法（续）
@@ -12082,6 +12471,7 @@ $(document).ready(function() {
 ```
 
 当你运行这个示例时，请注意第 23-25 行，你可以从解决（resolve）状态切换到拒绝（reject）状态。解决（Resolve）等同于成功，拒绝（Reject）等同于失败。
+
 在第 37-53 行，为插件的所有可能结果注册了函数。实际上，只有两种可能的结果：成功（done）和失败（fail）。`then()` 函数提供了一种简写方式来同时注册成功和失败函数，并且与 CommonJS Promises/A 规范兼容。`always()` 函数可用于注册无论结果如何都会被调用的回调。
 
 ## 技巧：在最终回调前可视化进度
@@ -12091,6 +12481,7 @@ $(document).ready(function() {
 对于一些长时间运行的操作，你可能希望在最终回调函数被调用之前可视化进度。Deferred 对象提供了一种通信进度的机制。清单 11.14 演示了进度通知。
 
 清单 11.14 为 `progress()` 添加回调并调用 `notify()` 来触发它们
+
 ```
 00 <!DOCTYPE html>
 01 
@@ -12201,7 +12592,7 @@ $(document).ready(function() {
 41   })
 42   .fail(function(msg) {
 43       alert('Fail ' + msg);
-44   });
+44   );
 45 
 46 });
 47 </script>
@@ -12263,11 +12654,11 @@ $(document).ready(function() {
 42   .progress(function(msg) {
 43     this.css('background-color', 'orange');
 44     // ignore message
-45   })
+45   )
 46   .always(function(msg) {
 47     this.css('background-color', 'green');
 48     // ignore message
-49   });
+49   );
 50 
 51 });
 52 </script>
@@ -12430,8 +12821,6 @@ Bootstrap的模态插件使您能够监听模态框上的事件，并根据这�
 23               <a class="dropdown-toggle" data-toggle=
 ```
 
-
-
 ## 清单 12.2 创建导航系统（续）
 
 ```html
@@ -12469,7 +12858,7 @@ Bootstrap的模态插件使您能够监听模态框上的事件，并根据这�
 
 <div class="container">
 
-<p>上面的菜单是通过下拉菜单插件创建的。</p>
+<p>上面的菜单是通过下拉菜插件创建的。</p>
 <p>
   内部菜单将指向本地 html 文件，而外部菜单将链接到其他网站。
 </p>
@@ -12488,12 +12877,15 @@ Bootstrap的模态插件使您能够监听模态框上的事件，并根据这�
 ```
 
 使用 Bootstrap 设置下拉菜单的关键在清单的第 24–53 行。这里你可以看到，一个包含多个 `li` 元素的 `ul` 元素被创建出来。`active` 类用于改变菜单项应用的视觉样式，在此例中它将向用户指示其当前位置。
+
 第 26 行和第 38 行显示了应用了 `class="dropdown"` 的列表元素。这会将相应的样式应用于这些元素。第 27 行和第 29 行显示了一些包含 `class="dropdown-toggle"` 和 `data-toggle="dropdown"` 的链接，它们用于样式化，并且被插件用来创建下拉菜单。每个这样的链接还包含一个指回包含列表元素的链接，该链接可用于定位特定的下拉菜单。这意味着，如果你真的想这么做，你可以将第 28 行的 `#internal` 替换为 `#external`，这样点击时，就会触发外部下拉菜单。
+
 第 74 行显示了对 `bootstrap-dropdown.js` 文件的引用。因为这是负责使下拉菜单工作的插件，所以必须包含它。
 
 ## 配方：使用 ScrollSpy
 
 你可能在某些网站上见过一个功能，那就是浮动或固定的导航栏，其样式会根据你当前所在页面的位置而改变。ScrollSpy 插件处理此功能，可以轻松添加到你的页面中以赋予这种行为。
+
 该插件在调用时对可见的 DOM 进行操作。这意味着，如果你修改了 DOM，那么你需要刷新插件以获取更改。清单 12.3 给出了添加额外导航项并刷新插件的示例。
 
 ### 清单 12.3 添加动态导航项
@@ -12580,15 +12972,21 @@ Bootstrap的模态插件使您能够监听模态框上的事件，并根据这�
 ```
 
 第 20 行显示了包含 `data-spy="scroll"` 属性的 body 元素。此属性必须应用于 ScrollSpy 将要应用到的区域。
+
 第 26–29 行显示了在导航栏中可见的其他导航项。这些项将根据滚动位置应用样式。这些项中的每一个都指向页面主要内容部分内的一个元素。要使 ScrollSpy 工作，必须设置这些链接。
+
 第 35–54 行显示了内容区域。这些元素被设置得足够大，以便你可以来回滚动并看到导航部分的变化。第 27 行有一个按钮，点击后会追加一个新的导航项，同时插入一个新的 div 元素并刷新 ScrollSpy 插件。
+
 第 62 行显示了插件工作所需的 `bootstrap-scrollspy.js` 文件的引入。
+
 第 64–75 行显示了负责添加按钮以及刷新插件的 jQuery 脚本。这是通过一些简单的 `append()` 函数以及检查 DOM 中所有包含 `data-spy="scroll"` 属性的元素完成的，找到这些元素后即刷新。
+
 你加载此示例时可能会注意到一个 bug，该 bug 将在 Bootstrap 2.1 版本中修复：页面加载时，最后一个导航项被选为活动项，但一旦页面滚动超过为菜单添加的初始边距，它就会立即改变。你可以通过添加一些 jQuery 脚本来修复这个问题，该脚本会移除最后一个元素的 `active` 类并将其重新应用于第一个元素，或者你可以等待 Bootstrap 的下一个版本。
 
 ## 配方：切换选项卡
 
 选项卡已被使用多年，几乎是电子商务网站的必备元素。这些选项卡通常包含图表、统计数据、评论、特性、优点、价格、计划以及各种数据，当用户需要时提供这些信息比将它们杂乱地堆在页面上效果更好。
+
 清单 12.4 显示了一个简单选项卡组和内容区域的设置。
 
 ### 清单 12.4 切换活动选项卡和内容
@@ -12626,8 +13024,6 @@ Bootstrap的模态插件使您能够监听模态框上的事件，并根据这�
             <li class="active">
                 <a href="#features" data-toggle="tab">Features</a>
 ```
-
-
 
 ## 清单 12.4 切换活动标签页与内容（续）
 
@@ -12812,7 +13208,7 @@ $('#content a').popover({placement: 'bottom'});
 </html>
 ```
 
-添加弹出框几乎和添加工具提示一样简单。区别在于第33-37行的链接元素。在这个元素中，你可以看到添加了三个属性：`rel="popover"`、`data-content`和`data-original-title`。`rel`属性告知插件该链接应作为弹出框处理。`data-`属性用于填充弹出框中显示的内容。`data-content`属性用于在弹出框的内容部分显示文本，而`data-original-title`用于为弹出框添加标题或头部。
+添加弹出框几乎和添加工具提示一样简单。区别在于第33-37行的链元素。在这个元素中，你可以看到添加了三个属性：`rel="popover"`、`data-content`和`data-original-title`。`rel`属性告知插件该链接应作为弹出框处理。`data-`属性用于填充弹出框中显示的内容。`data-content`属性用于在弹出框的内容部分显示文本，而`data-original-title`用于为弹出框添加标题或头部。
 
 最后需要注意的是第48和49行，其中同时包含了`bootstrap-tooltip.js`和`bootstrap-popover.js`。弹出框要求必须包含工具提示插件。
 
@@ -12830,8 +13226,6 @@ $('#content a').popover({placement: 'bottom'});
 <head>
 <meta charset="utf-8">
 ```
-
-
 
 ## 清单 12.7 使用按钮显示警告框（续）
 
@@ -12853,7 +13247,7 @@ $('#content a').popover({placement: 'bottom'});
 18	   <div id="navbar" class="navbar navbar-fixed-top">
 19	      <div class="navbar-inner">
 20	         <div class="container">
-21	            <a class="brand" href="#">使用警告框</a>
+21            <a class="brand" href="#">使用警告框</a>
 22	         </div>
 23	      </div>
 24	   </div>
@@ -12876,13 +13270,13 @@ $('#content a').popover({placement: 'bottom'});
 41	   $(document).ready(function() {
 42	      $('#btnAlert').click(function() {
 43	         $('#content').prepend(
-44	            '<div class="alert fade in">'+
-45	            '<button class="close" data-dismiss="alert">'+
-46	            '&times;'+
-47	            '</button>'+
-48	            '<h3>你触发了警告框！</h3>' +
-49	            '<p>干得好，现在把它关掉吧</p>' +
-50	            '</div>'
+44            '<div class="alert fade in">'+
+45            '<button class="close" data-dismiss="alert">'+
+46            '&times;'+
+47            '</button>'+
+48            '<h3>你触发了警告框！</h3>' +
+49            '<p>干得好，现在把它关掉吧</p>' +
+50            '</div>'
 51	      );
 52      });
 53  });
@@ -12893,7 +13287,7 @@ $('#content a').popover({placement: 'bottom'});
 
 本例中的警告框设置起来很容易，因为大部分代码都包含在页面底部的 jQuery 脚本中。第29行有一个按钮，点击时会向页面添加一个警告框。你可以多次点击它，页面上会显示多个警告框。这是由于第42行使用了 `click()` 方法。
 
-在 `click()` 内部，你可以看到代码被前置添加到 ID 为 `content` 的 `div` 元素中。添加的代码包含一个具有 `alert`、`fade` 和 `in` 类的 `div`。这些类有助于为警告框提供样式和功能。还包含一个具有 `close` 类的按钮，用于样式化，更重要的是，它包含一个 `data-dismiss="alert"` 属性，这意味着它将被用于关闭警告框。第48行和第49行的 `h3` 和 `p` 元素显示在警告框容器中。如果需要，你可以使用其他元素，但我建议避免使用 `h1` 和 `h2` 元素，除非你使用自定义样式，因为它们确实会打乱警告框容器的视觉平衡。
+在 `click()` 内部，你可以看到代码被前置添加到 ID 为 `content` 的 `div` 元素中。添加的代码包含一个具有 `alert`、`fade` 和 `in` 类的 `div`。这些类有助于为警告框提供样式和功能。还包含一个具有 `close` 类的按钮，用于样式化，更重要的是，它包含一个 `data-dismiss="alert"` 属性，这意味着它将被用于关闭警告框。第48行和第49行的 `h3` 和 `p` 元素显示在警告框容器中。如果需要，你可以使用其他元素，但我建议避免使用 `h1` 和 `h2` 元素，除非你使用自定样式，因为它们确实会打乱警告框容器的视觉平衡。
 
 ## 实战：按钮控件
 
@@ -13040,8 +13434,6 @@ $('#content a').popover({placement: 'bottom'});
 33          你可以在任何想要根据点击来显示或隐藏内容的地方使用折叠功能。
 34       </div>
 ```
-
-
 
 342    第12章  使用第三方插件
 
@@ -13242,8 +13634,6 @@ $('#content a').popover({placement: 'bottom'});
 
 第92行展示了对必需的 bootstrap-carousel.js 文件的引用。第95行展示了启用该插件所需的jQuery脚本。你可以看到，容器已被选中，并对其调用了 `carousel()` 函数。
 
-
-
 ## 食谱：使用 typeahead 实现自动补全
 
 Bootstrap 的最后一个食谱是关于 typeahead 插件的。你可以使用这个优秀的插件来填充 data 属性，其中包含可用于简化文本输入的数据。你可能在常用的搜索引擎中见过这种行为，它试图猜测你正在输入的内容，这样你就可以直接从列表中选择，而无需输入完整的短语。
@@ -13324,255 +13714,491 @@ Bootstrap 的最后一个食谱是关于 typeahead 插件的。你可以使用�
 ## A
 
 - **选项卡的 abort() 方法**，181
+
 - **accept 选项**，113
+
 - **手风琴（Accordions）**
+
   - 可折叠集，258–260
+
   - 事件，139–141
+
   - 方法，141
+
   - 选项，137–139
+
   - 样式，136–137
+
   - 转换元素，135–136
+
 - **accordion-toggle 类**，343
+
 - **activate 事件**
+
   - 可放置区域，114
+
   - 可排序元素，121
+
 - **activate() 方法**，141
+
 - **active 选项**，138
+
 - **activeClass 选项**，113
+
 - **add 事件**，179
+
 - **用于合并元素集的 add() 函数**，27–28
+
 - **选项卡的 add() 方法**，180
+
 - **addClass() 函数**，41, 43–45
+
 - **addClasses 选项**，106
+
 - **添加 CSS 类，动画化**，192–194
+
 - **after() 函数**，58
+
 - **AJAX**
+
   - 不使用 AJAX 链接到外部页面，212–213
+
   - 监听事件，97–98
+
   - 加载外部页面，208–210
+
 - **ajax() 函数**，87
+
 - **ajax 属性**，26
+
 - **alert() 函数**，323
+
 - **向用户发出警报**，336–338
+
 - **美元符号作为别名**，6–7
+
 - **allowSamePageTransition 选项**，238
+
 - **alsoResize 选项**，132
+
 - **替代键盘**，263–265
+
 - **altField 选项**，155
+
 - **altFormat 选项**，155
+
 - **always() 函数**，86–87, 314–315, 317
+
 - **祖先元素，将事件委托给**，75–78
+
 - **animate 选项**
+
   - 可调整大小元素，132
+
   - 滑块，172
+
 - **animated 选项**，138
-- **animateDuration 选项**，132
+
 - **动画**
+
   - 在动画结束时执行代码，198–200
+
   - 使用队列和出队执行代码，200–202
+
   - 颜色，187–189
+
   - 创建动画，186–187
+
   - 添加和移除 CSS 类，192–194
+
   - 矩形的尺寸和位置，186–187
+
   - 过渡，213–216
+
 - **append() 函数**，48–49, 330
+
 - **追加**
+
   - 日期文本，155
+
   - 函数的结果，49–50
+
 - **appendText 选项**，155
+
 - **appendTo() 函数**，48–49, 53–54
+
 - **appendTo 选项**
+
   - 自动完成，144
+
   - 可拖动元素，106
+
 - **apply() 函数**，303, 309
+
 - **数组元素**
+
   - 查找，13–14
+
   - 遍历，8–9
+
   - 操作，9–10
+
   - 修改，19–22
+
   - 位置，12–13
+
   - 使用，10–12
+
 - **宽高比设置**，132
+
 - **附加**
+
   - 数据到 DOM 节点，241–242
+
   - 元素，53–54
+
 - **attr() 函数**，45–46
+
 - **属性与属性**，45–46
+
 - **authority 选项**，246
+
 - **自动完成**
+
   - 建议，142
+
   - 用于自动完成的 typeahead，347–348
+
 - **autoFocus 选项**，145
+
 - **autoHeight 选项**，138
+
 - **autoHide 选项**，132
+
 - **autoOpen 选项**，162
+
 - **autoRefresh 选项**，126
+
 - **autoSize 选项**，155
+
 - **axis 选项**
+
   - 可拖动元素，106
+
   - 可排序元素，117
 
 ## B
 
 - **返回按钮**，221–223
+
 - **背景颜色**，34–35
+
 - **before() 函数**，58
+
 - **beforeClose 事件**，164
+
 - **beforeShow 事件**，159
+
 - **beforeShowDay 事件**，159
+
 - **beforeStop 事件**，120
+
 - **二进制，用于翻转开关**，268–269
+
 - **blur 事件**，72
+
 - **插件样板代码**，303–306
+
   - 注册和调用，306–308
+
 - **Bootstrap 框架**，323, 325
+
   - 在 Bootstrap 之前可视化进度，315–317
+
 - **页面底部，页脚**，223–224
+
 - **Callback() 对象**，306–308
+
 - **Bresenham 直线算法**，69
+
 - **可排序元素的 cancel() 方法**，123
+
 - **浏览器功能，测试**，25–26
+
 - **可拖动元素的 cancel 选项**，106
+
 - **browser 属性**，26
+
 - **canvas 元素，绘图**，67–69
+
 - **buttonImage 选项**，155
+
 - **carousel-caption 类**，346
+
 - **buttonImageOnly 选项**，155
+
 - **carousel() 函数**，346
+
 - **图片轮播**，344–346
+
 - **按钮**
+
   - 警报，336–338
+
   - 返回，221–223
+
   - 日期，155–157
+
   - 页脚中的按钮，223–225
+
   - 用于隐藏和显示页脚的按钮，229–231
+
   - 用于多列的按钮，235–236
+
   - 单选按钮，32–33, 269–271
+
   - 选择按钮，32–33
+
   - 将元素列表样式化为按钮，148–149
+
   - 第三方插件，338–340
+
   - 将元素转换为按钮，147–150
-  - 向上和向下按钮，58–59
+
+  - 向上和向下按钥，58–59
+
 - **CDN（内容分发网络）**，5, 103
+
 - **中央事件监听器**，73–75
+
 - **链式调用**
+
   - 回调函数，86–87, 200
+
   - 函数和插件，296–297
+
 - **对话框的 buttons 选项**，163
+
 - **change 事件**
+
   - 手风琴，140
+
   - 自动完成，147
+
   - 进度条，170
+
   - 目的，72
+
   - 滑块，174
+
   - 可排序元素，119–120
+
 - **按钮组**
+
   - 页脚中的按钮组，224–225
+
   - 使用按钮组为单选按钮设置样式，151
+
 - **changeHash 选项**，238
+
 - **buttonText 选项**，155
+
 - **changeMonth 选项**，155
+
 - **changePage() 函数**，238
+
 - **changestart 事件**，141
+
 - **cache 选项**，177
+
 - **图表，以图表形式显示缓动函数**，194–196
+
 - **基于日历的输入**，261–263
+
 - **复选框**
+
   - 显示复选框，271–273
+
   - 选择复选框，32–33
+
 - **回调函数**
+
   - 在成功和错误时调用，309–311
+
   - 链，86–87, 200
+
   - 上下文，308–309, 317–319
+
   - 调用，316–317
+
 - **children() 函数**，29–30
+
 - **class 属性**，216
+
 - **class 元素**，5
+
 - **类**
+
   - 添加类，41–42
+
   - CSS 类，动画化，192–194
-
-
 
 ## 354 类（续）
 
 - **类（续）**
+
   - 命名，43–45
+
   - 移除，42–43
+
 - **clearStyle 选项**，138
+
 - **click() 函数**，338
+
 - **clone() 函数**，54–56
+
 - **关闭事件**
+
   - 自动完成，146
+
   - 对话框，167
+
 - **closeOnEscape 选项**，163
+
 - **closeText 选项**
+
   - 日期选择器，156
+
   - 对话框，163
+
 - **可折叠内容**，341–343
+
 - **可折叠元素**，257–258
+
 - **collapsible 选项**
+
   - 手风琴，138
+
   - 选项卡，177
+
 - **可折叠集合**，258–260
+
 - **颜色**
+
   - 动画效果，187–189
+
   - 背景，34–35
+
   - 输入字段，265–266
+
   - 方案更改，232–234
+
 - **列**
+
   - 多列，234–236
+
   - 将列表拆分为列，280–281
+
 - **合并元素集合**，27–28
+
 - **完成事件**，170
+
 - **连接**
+
   - 到 Twitter，99–100
+
   - 无序列表，123–124
+
 - **connectToSortable 选项**，106
+
 - **connectWith 选项**，117
+
 - **constrainInput 选项**，156
+
 - **containment 选项**，107
+
 - **contains() 函数**，35–36
+
 - **内容**
+
   - 添加到页面，48–51
+
   - 轮播，344–346
+
   - 可折叠，341–343
+
   - 分组，135–141
+
   - 隐藏，42–43
+
   - 工具栏，249–250
+
 - **内容分发网络 (CDN)**，5, 103
+
 - **上下文**
+
   - 回调函数，308–309, 317–319
+
   - 链式调用，296–297
+
   - 执行，78–80
+
   - 进度函数，319–320
+
   - 选择，39–40
+
 - **上下文感知插件**，295–296
+
 - **cookie 选项**，177
+
 - **复制元素**，54–56
+
 - **使用列表计数项目**，283–284
+
 - **创建事件**
+
   - 手风琴，140
+
   - 自动完成，145
+
   - 按钮，150
+
   - 日期选择器，158
+
   - 对话框，164
+
   - 可放置区域，114
+
   - 可调整大小的元素，133
+
   - 可选择元素，126
+
   - 滑块，173
+
   - 可排序，119
+
   - 选项卡，178
+
 - **CSS**
+
   - 类动画，192–194
+
   - 悬停选择器模拟，34–35
+
   - 在 HTML 中，4
+
 - **css() 函数**，5, 29, 297
+
 - **CSS3 过渡**，214–216
+
 - **currentText 选项**，156
+
 - **cursor 选项**，107
+
 - **cursorAt 选项**，107
+
 - **自定义选择器**，37–39
+
 - **自定义过渡动画**，214–216
 
 355 disable() 函数
@@ -13580,88 +14206,163 @@ Bootstrap 的最后一个食谱是关于 typeahead 插件的。你可以使用�
 ## D
 
 - **数据**
+
   - 附加到 DOM 节点，241–242
+
   - 序列化，24–25
+
 - **data- 属性，检索**，15–16
+
 - **data-add-back-button 属性**，223
-- **data-ajax 属性**，213
-- **data-content 属性**，336
-- **data-filter 属性**，287
-- **data() 函数**，16–18
-- **data-iconpos 属性**，256–257
-- **data-inset 属性**，279
-- **data-items 属性**，348
+
+
+
+# 索引
+
+## 符号
+
+- **`<div>` 元素**
+  - 从 `<div>` 创建手风琴，135–136
+  - 列表排序，58–59
+  - 从 `<div>` 创建进度条，168–169
+  - 可调整大小，130–131
+  - 从 `<div>` 创建滑块，171
+
+- **`$` (美元符号)**
+  - 作为别名，6–7
+  - 多个事件源，79–80
+
+## A
+
+- **AJAX**
+  - 事件，97–98
+  - 链接到外部页面，208–210
+  - 加载页面，208–210
+
+- **`data-ajax` 属性**，213
+
+- **`data-content` 属性**，336
+
+- **`data-filter` 属性**，287
+
+- **`data()` 函数**，16–18
+
+- **`data-iconpos` 属性**，256–257
+
+- **`data-inset` 属性**，279
+
+- **`data-items` 属性**，348
+
 - **Data 选项**，238
-- **data-original-title 属性**，336
-- **data-parent 属性**，343
-- **data-position 属性**，227
-- **data-prefetch 属性**，239
-- **data-provide 属性**，348
-- **data-rel 属性**，223
-- **data-role 属性**，225
-- **data-slide 属性**，346
-- **data-source 属性**，348
-- **data-split-icon 属性**，281
-- **data-spy 属性**，330
-- **data-title 属性**，208
-- **data-toggle 属性**，326, 328, 332, 340, 343
-- **data-transition 属性**，214, 216
-- **data-type 属性**，225, 271, 273
+
+- **`data-original-title` 属性**，336
+
+- **`data-parent` 属性**，343
+
+- **`data-position` 属性**，227
+
+- **`data-prefetch` 属性**，239
+
+- **`data-provide` 属性**，348
+
+- **`data-rel` 属性**，223
+
+- **`data-role` 属性**，225
+
+- **`data-slide` 属性**，346
+
+- **`data-source` 属性**，348
+
+- **`data-split-icon` 属性**，281
+
+- **`data-spy` 属性**，330
+
+- **`data-title` 属性**，208
+
+- **`data-toggle` 属性**，326, 328, 332, 340, 343
+
+- **`data-transition` 属性**，214, 216
+
+- **`data-type` 属性**，225, 271, 273
+
 - **数据类型测试函数**，21
-- **dataUrl 选项**，238
+
+- **`dataUrl` 选项**，238
+
 - **日期选择器**
   - 选择日期，152
   - 事件，158–159
   - 方法，160
   - 选项，154–158
   - 样式，152–154
+
 - **停用事件**
   - 可选择元素，128
   - 可排序，122
-- **deactive 事件**，115
+
+- **`deactive` 事件**，115
+
 - **默认插件参数**，299–300
+
 - **延迟构造**，199
+
 - **延迟对象**
   - 回调，306
   - 承诺，87, 199
   - 返回，309–311
-- **delay 选项**
+
+- **`delay` 选项**
   - 自动完成，144
   - 可拖动元素，107
-- **delegate() 函数**，75–78
+
+- **`delegate()` 函数**，75–78
+
 - **事件委托**
   - 中央事件监听器，73–75
   - 委托给特定祖先元素，75–78
+
 - **已弃用的 API**，5
-- **dequeue() 函数**，200–202
+
+- **`dequeue()` 函数**，200–202
+
 - **后代，选择**，29
-- **destroy() 方法**
+
+- **`destroy()` 方法**
   - 手风琴，141
   - 对话框，167
   - 拖动元素，111
-- **detach() 函数**，53–54
+
+- **`detach()` 函数**，53–54
+
 - **分离元素**，53–54
-- **dialog() 方法**，160
-- **dialogClass 选项**，163
+
+- **`dialog()` 方法**，160
+
+- **`dialogClass` 选项**，163
+
 - **对话框**
   - 事件，164–167
   - 方法，167
   - 选项，162–164
   - 样式，161–162
   - 将段落转换为对话框，160–161
-- **die() 函数**，73–75
-- **directory 选项**，246
+
+- **`die()` 函数**，73–75
+
+- **`directory` 选项**，246
+
 - **选项卡的禁用事件**，180
-- **disable() 函数**，307–308
 
-356 disable() 方法
+- **`disable()` 函数**，307–308
 
-- **disable() 方法**
+- **`disable()` 方法**
   - 手风琴，141
   - 对话框，167
   - 拖动元素，111
   - 选项卡，181
+
 - **按钮的禁用事件**，150
+
 - **禁用选项**
   - 手风琴，138
   - 自动完成，144
@@ -13672,67 +14373,84 @@ Bootstrap 的最后一个食谱是关于 typeahead 插件的。你可以使用�
   - 进度条，169
   - 滑块，172
   - 选项卡，177
-- **distance 选项**，107
-- **<div> 元素**
-  - 从 <div> 创建手风琴，135–136
-  - 列表排序，58–59
-  - 从 <div> 创建进度条，168–169
-  - 可调整大小，130–131
-  - 从 <div> 创建滑块，171
-- **美元符号 ($)**
-  - 作为别名，6–7
-  - 多个事件源，79–80
+
+- **`distance` 选项**，107
+
 - **DOM 树**
   - 将数据附加到节点，241–242
   - 移动元素，53–54
-- **domain 选项**，246
-- **done() 函数**，86–87, 91
+
+- **`domain` 选项**，246
+
+- **`done()` 函数**，86–87, 91
+
 - **向下按钮**，58–59
+
 - **下载 jQuery UI**，103–104
+
 - **拖动事件**
   - 对话框，165
   - 元素，110
-- **dragcreate 事件**，109–110
-- **draggable 选项**，163
+
+- **`dragcreate` 事件**，109–110
+
+- **`draggable` 选项**，163
+
 - **拖动元素**，104–105
   - 事件，109–110
   - 方法，111
   - 选项，105–109
   - 样式，105
-- **dragStart 事件**，165
-- **dragStop 事件**，166
+
+- **`dragStart` 事件**，165
+
+- **`dragStop` 事件**，166
+
 - **在画布上绘制**，67–69
+
 - **下拉列表**，273–276
+
 - **下拉菜单**，326–328
+
 - **放置事件**，115
-- **dropOnEmpty 选项**，117
+
+- **`dropOnEmpty` 选项**，117
+
 - **放置元素**，111–112
   - 事件，114–115
   - 方法，115
   - 选项，113–114
   - 样式，113
+
 - **占位符文本**，142
+
 - **持续时间选项**，156
+
 - **动态 HTML**
   - 生成，51–53
   - 代码片段，85
+
 - **动态导航**，328–331
 
 ## E
 
-- **each() 函数**，8–9
+- **`each()` 函数**，8–9
+
 - **缓动函数**
   - 显示为图表，194–196
   - 列表，190
-- **effect 函数**，191–192
+
+- **`effect` 函数**，191–192
+
 - **图形效果**，191–192
+
 - **元素选择**
   - 复选框，271–273
   - 后代，29–30
   - 下拉列表，273–276
   - 过滤，28–29
   - 表单，32–33
-  - has() 方法，31
+  - `has()` 方法，31
   - 列表，148–149
   - 多个，271–273
   - 单选按钮，269–271
@@ -13741,8 +14459,9 @@ Bootstrap 的最后一个食谱是关于 typeahead 插件的。你可以使用�
   - 树结构，128–130
   - 无序列表，124–130
   - 单词，36–37
+
 - **元素**
-  - 数组。*参见数组元素*
+  - 数组。*参见* 数组元素
   - 附加和分离，53–54
   - 可折叠，257–258
   - 复制，54–56
@@ -13751,7 +14470,7 @@ Bootstrap 的最后一个食谱是关于 typeahead 插件的。你可以使用�
   - 隐藏，189–191
   - HTML，46–47
   - 插入，56–58
-  - 列表。*参见列表*
+  - 列表。*参见* 列表
   - 移除，18–19, 60–61
   - 调整大小，130–134
   - 选择，124–130
@@ -13760,27 +14479,38 @@ Bootstrap 的最后一个食谱是关于 typeahead 插件的。你可以使用�
   - 存储，16–18
   - 转换为按钮，147–150
   - 包装和解除包装，61–64
+
 - **元素集合**
   - 合并，27–28
   - 大小，14–15
-- **empty() 函数**，60–61
+
+- **`empty()` 函数**，60–61
+
 - **模拟**
   - CSS 悬停选择器，34–35
   - 重复元素，55–56
+
 - **选项卡的启用事件**，180
-- **enable() 方法**
+
+- **`enable()` 方法**
   - 手风琴，141
   - 对话框，167
-- **end 函数**，28–29
+
+- **`end` 函数**，28–29
+
 - **错误**
   - 回调函数调用，309–311
   - 服务器，87–88
-- **ETag 头**，93–94
+
+- **`ETag` 头**，93–94
+
 - **偶数元素，分隔**，28–29
-- **event 选项**
+
+- **`event` 选项**
   - 手风琴，138
   - 拖动元素，110
   - 选项卡，177
+
 - **事件**，65
   - 手风琴，139–141
   - AJAX，97–98
@@ -13804,1424 +14534,1488 @@ Bootstrap 的最后一个食谱是关于 typeahead 插件的。你可以使用�
   - 滑块，173–174
   - 可排序，118–122
   - 选项卡，178–180
+
 - **在动画中执行代码**
   - 使用承诺，198–200
   - 使用队列和出队，200–202
 
-357 在动画中执行代码
-
-358 函数的执行上下文
-
 - **函数的执行上下文**，78–80
-- **extend() 函数**，22–24, 299, 303
+
+- **`extend()` 函数**，22–24, 299, 303
+
 - **扩展**
   - 默认参数，299–300
   - 对象，22–24
+
 - **外部页面**
   - 链接到，208–210, 212–213
   - 加载，208–210
+
 - **外部服务器，从其读取**，98–100
 
 ## F
 
 - **淡入淡出动画**，189–191, 213
-- **fail() 函数**，86–88, 90, 314–315
-- **filename 选项**，246
+
+- **`fail()` 函数**，86–88, 90, 314–315
+
+- **`filename` 选项**，246
+
 - **填充文本**，142
-- **fillSpace 选项**，139
-- **filter() 函数**，28–29, 33
-- **filter 选项**，126
+
+- **`fillSpace` 选项**，139
+
+- **`filter()` 函数**，28–29, 33
+
+- **`filter` 选项**，126
+
 - **过滤**
   - 列表元素，286–287
   - 可选择元素，126
   - 选择，28–29
-- **find() 函数**，29–30
+
+- **`find()` 函数**，29–30
+
 - **查找数组元素**，13–14
-- **fireWith() 函数**，308–309
-- **firstDay 选项**，157
+
+- **`fireWith()` 函数**，308–309
+
+- **`firstDay` 选项**，157
+
 - **固定页脚**，225–229
+
 - **固定工具栏**，227–229
+
 - **翻转动画**，213
+
 - **开关**，268–269
+
 - **流结构，用于承诺**，314–315
+
 - **页脚工具栏**
   - 全屏视图，231–232
   - 隐藏和显示，229–231
   - 菜单栏，252–253
-- **for 循环**，9
-- **forceHelperSize 选项**，118
-- **forcePlaceholderSize 选项**，118
+
+- **`for` 循环**，9
+
+- **`forceHelperSize` 选项**，118
+
+- **`forcePlaceholderSize` 选项**，118
+
 - **表单元素**
   - 在列表中分组，288–289
   - 选择，32–33
   - 序列化，24–25
+
 - **表单**
   - 事件，70–72
   - 输入验证，94–96
   - 不使用 jQuery Mobile，276–277
   - 重复元素，55–56
   - 文本输入字段，260–261
+
 - **页眉和页脚的全屏视图**，231–232
+
 - **函数**
   - 追加函数结果，49–50
-  - 回调。*参见回调函数*
+  - 回调。*参见* 回调函数
   - 链式调用，296–297
   - 执行上下文，78–80
   - 参数，301–303
   - 传递，44–45
-- **fx 选项**，178
+
+- **`fx` 选项**，178
 
 ## G
 
 - **图库轮播**，344–346
+
 - **生成**
   - 类名，43–45
   - 动态 HTML，51–53
-- **Ajax 中的 get() 函数**，83–84
 
-
+- **Ajax 中的 `get()` 函数**，83–84
 
 ## H
 
-### 从`<h3>`元素创建折叠面板，135–136
+- **从 `<h3>` 元素创建折叠面板**，135–136
 
-拖拽元素的处理选项，107
+- **拖拽元素的处理选项**，107
 
-可调整大小元素的手柄选项，132
+- **可调整大小元素的手柄选项**，132
 
-has()函数，31，33–34
+- **`has()` 函数**，31，33–34
 
-哈希选项，245
+- **哈希选项**，245
 
-页眉选项，139
+- **页眉选项**，139
 
-### 页眉
+- **页眉**
+  - 折叠面板，139
+  - 带页眉显示页面，203–205
+  - 全屏视图，231–232
+  - 列表项之间的页眉，281–283
+  - 传递页眉，93–94
 
-- 折叠面板，139
-- 带页眉显示页面，203–205
-- 全屏视图，231–232
-- 列表项之间的页眉，281–283
-- 传递页眉，93–94
+- **高度选项**，163
 
-高度选项，163
+- **`helper()` 函数**，303
 
-helper()函数，303
+- **jQuery Mobile 中的辅助函数**，242–246
 
-jQuery Mobile中的辅助函数，242–246
+- **拖拽元素的 `helper` 选项**，107–108
 
-拖拽元素的helper选项，107–108
+- **隐藏文本，读取隐藏文本**，16
 
-隐藏文本，读取隐藏文本，16
+- **`hide()` 方法**，160
 
-hide()方法，160
+- **隐藏选项**，163
 
-隐藏选项，163
+- **如果无上一页/下一页则隐藏选项**，157
 
-如果无上一页/下一页则隐藏选项，157
+- **隐藏**
+  - 可折叠元素，257–258
+  - 日期选择器，160
+  - 对话框，163
+  - 使用淡入淡出和滑动效果隐藏元素，189–191
+  - 页脚，229–231
+  - HTML 内容，42–43
 
-### 隐藏
+- **高亮显示单词**，36–37
 
-- 可折叠元素，257–258
-- 日期选择器，160
-- 对话框，163
-- 使用淡入淡出和滑动效果隐藏元素，189–191
-- 页脚，229–231
-- HTML内容，42–43
+- **`.html()` 函数**，5
 
-高亮显示单词，36–37
+- **水平复选框组**，271–273
 
-.html()函数，5
+- **水平单选按钮组**，269–271
 
-水平复选框组，271–273
+- **`host` 选项**，245
 
-水平单选按钮组，269–271
+- **`hostname` 选项**，245
 
-主机选项，245
+- **`hover()` 函数**，35
 
-主机名选项，245
+- **悬停选择器模拟**，34–35
 
-hover()函数，35
+- **悬停类选项**，113
 
-悬停选择器模拟，34–35
+- **`href` 选项**，245
 
-悬停类选项，113
+- **无哈希的 `href` 选项**，246
 
-href选项，245
+- **无搜索的 `href` 选项**，246
 
-无哈希的href选项，246
+- **HTML**
+  - 在动画之间切换 HTML，200–202
+  - 带页眉显示页面，203–205
+  - 动态 HTML，51–53，85
+  - 元素中的 HTML，46–47
+  - 隐藏 HTML 内容，42–43
+  - 直接加载 HTML，85
+  - 标题元素，206–208
 
-无搜索的href选项，246
+- **`html()` 函数**，37
 
-### HTML
+- **`html()` 方法**，46–47
 
-- 在动画之间切换HTML，200–202
-- 带页眉显示页面，203–205
-- 动态HTML，51–53，85
-- 元素中的HTML，46–47
-- 隐藏HTML内容，42–43
-- 直接加载HTML，85
-- 标题元素，206–208
+- **HTML5 data- 属性**，15–16
 
-html()函数，37
+- **HTTP**
+  - 监听请求，82–83
+  - 传递页眉，93–94
 
-html()方法，46–47
+- **图标**
+  - 折叠面板图标，139
+  - 显示图标，196–198
+  - 导航栏图标，255–256
 
-HTML5 data-属性，15–16
+- **图标选项**，139
 
-### HTTP
+- **`id` 元素**，5
 
-- 监听请求，82–83
-- 传递页眉，93–94
+- **`idPrefix` 选项**，178
 
-### 图标
+- **`iframeFix` 选项**，108
 
-- 折叠面板图标，139
-- 显示图标，196–198
-- 导航栏图标，255–256
+- **图片库轮播**，344–346
 
-图标选项，139
+- **隐式重定向**，90–91
 
-360 id元素
+- **`inArray()` 函数**，21
 
-id元素，5
+- **用于数组元素位置的索引**，12–13
 
-idPrefix选项，178
+- **输入**
+  - 替代键盘，263–265
+  - 基于日历的输入，261–263
+  - 整数输入，267–268
+  - 数字输入，170–174
+  - 专用字段，265–266
+  - 使用自动完成进行建议，142
+  - 文本表单字段，260–261
+  - 在服务器端验证，94–96
 
-iframeFix选项，108
+- **用于键盘事件的 `<input>` 元素**，69–70
 
-图片库轮播，344–346
+- **`insertAfter()` 函数**，58–59
 
-隐式重定向，90–91
+- **`insertBefore()` 函数**，58–59
 
-inArray()函数，21
+- **在特定位置插入元素**，56–58
 
-用于数组元素位置的索引，12–13
+- **安装 jQuery UI**，103–104
 
-### 输入
+- **整数输入**，267–268
 
-- 替代键盘，263–265
-- 基于日历的输入，261–263
-- 整数输入，267–268
-- 数字输入，170–174
-- 专用字段，265–266
-- 使用自动完成进行建议，142
-- 文本表单字段，260–261
-- 在服务器端验证，94–96
+- **界面。参见 jQuery UI**
 
-用于键盘事件的`<input>`元素，69–70
+- **内部结构，promise 用于内部结构**，311–314
 
-insertAfter()函数，58–59
+- **调用回调函数**，306–308，316–317
 
-insertBefore()函数，58–59
+- **`is()` 函数**，31
 
-在特定位置插入元素，56–58
+- **`isAbsoluteUrl()` 函数**，246
 
-安装jQuery UI，103–104
+- **`isArray()` 函数**，21
 
-整数输入，267–268
+- **`isDisabled()` 方法**，160
 
-界面。参见jQuery UI
+- **`isEmptyObject()` 函数**，21
 
-内部结构，promise用于内部结构，311–314
+- **`isFunction()` 函数**，21
 
-调用回调函数，306–308，316–317
+- **`isOpen()` 方法，对话框**，167
 
-is()函数，31
+- **`isPlainObject()` 函数**，21
 
-isAbsoluteUrl()函数，246
+- **`isRTL` 选项**，157
 
-isArray()函数，21
+- **`isSameDomain()` 函数**，246
 
-isDisabled()方法，160
+- **可排序元素的 `items` 选项**，118
 
-isEmptyObject()函数，21
-
-isFunction()函数，21
-
-isOpen()方法，对话框，167
-
-isPlainObject()函数，21
-
-isRTL选项，157
-
-isSameDomain()函数，246
-
-可排序元素的items选项，118
-
-迭代数组，8–9
+- **迭代数组**，8–9
 
 ## J
 
-### JavaScript调用
+- **JavaScript 调用**
+  - 使用 JavaScript 调用更改页面，236–239
+  - HTML 中的 JavaScript 调用，4
+  - 使用 JavaScript 调用加载页面，239–240
 
-- 使用JavaScript调用更改页面，236–239
-- HTML中的JavaScript调用，4
-- 使用JavaScript调用加载页面，239–240
+- **JavaScript 对象表示法（JSON）格式**
+  - 数据存储，19
+  - 获取值，83–84
 
-### JavaScript对象表示法（JSON）格式
+- **`jqmData()` 函数**，203，241–242
 
-- 数据存储，19
-- 获取值，83–84
+- **jQuery 核心**
+  - 动画，186–187
+  - 追加项目，49–50
+  - 数组。*参见* 数组元素
+  - 基本用法，3–5
+  - 浏览器测试，25–26
+  - 回调对象，306–308
+  - 类，41–45
+  - 内容，48–51
+  - 元素。*参见* 元素
+  - 事件。*参见* 事件
+  - 函数和插件
+    - 链式调用，296–297
+  - HTML，46–47，51–53
+  - HTML5 属性，15–16
+  - 库，6–7，103
+  - 对象扩展，22–24
+  - 属性和特性，45–46
+  - 选择集。*参见* 选择集
+  - 序列化表单数据，24–25
+  - 服务器。*参见* 服务器
+  - 变量，19–22
+  - 版本，7–8
 
-jqmData()函数，203，241–242
+- **jQuery Mobile**
+  - 将数据附加到 DOM 节点，241–242
+  - 返回按钮，221–223
+  - 基础知识，203–205
+  - 基于日历的输入，261–263
+  - 复选框，271–273
+  - 可折叠元素，257–258
+  - 可折叠集合，258–260
+  - 颜色方案，232–234
+  - 下拉列表，273–276
+  - 事件，217–221
+  - 滑动开关，268–269
+  - 页脚。*参见* 页脚
+  - 文本表单字段，260–261
+  - 页眉，231–232
+  - 辅助函数，242–246
+  - 输入字段，263–266
+  - JavaScript 调用，236–239
+  - 链接到外部页面，212–213
+  - 列表。*参见* 列表
+  - 多列，234–236
+  - 不使用 jQuery Mobile 的原生表单，276–277
+  - 导航栏，253–257
+  - 页面加载，208–212，239–240
+  - 单选按钮，269–271
+  - 提供多页面，205–206
+  - 滑块，267–268
+  - 标题元素，206–208
+  - 内容内的工具栏，249–250
+  - 过渡动画，213–216
+  - 警告栏，250–252
 
-### jQuery核心
+- **jQuery 对象**
+  - 感知上下文的插件，295–296
+  - 静态插件，293–294
 
-- 动画，186–187
-- 追加项目，49–50
-- 数组。参见数组元素
-- 基本用法，3–5
-- 浏览器测试，25–26
-- 回调对象，306–308
-- 类，41–45
-- 内容，48–51
-- 元素。参见元素
-- 事件。参见事件
-- 函数和插件
-  - 链式调用，296–297
-- HTML，46–47，51–53
-- HTML5属性，15–16
-- 库，6–7，103
-- 对象扩展，22–24
-- 属性和特性，45–46
-- 选择集。参见选择集
-- 序列化表单数据，24–25
-- 服务器。参见服务器
-- 变量，19–22
-- 版本，7–8
+- **`jquery` 属性**，7
 
-### jQuery Mobile
+- **jQuery UI**，103
+  - 使用 jQuery UI 为颜色添加动画，187–189
+  - CSS 类，192–194
+  - 下载与安装，103–104
+  - 缓动函数，190，194–196
+  - 元素。*参见* 元素
+  - 图形效果，191–192
+  - 图标显示，196–198
+  - 样式，185–186
+  - 小部件。*参见* 小部件
 
-- 将数据附加到DOM节点，241–242
-- 返回按钮，221–223
-- 基础知识，203–205
-- 基于日历的输入，261–263
-- 复选框，271–273
-- 可折叠元素，257–258
-- 可折叠集合，258–260
-- 颜色方案，232–234
-- 下拉列表，273–276
-- 事件，217–221
-- 滑动开关，268–269
-- 页脚。参见页脚
-- 文本表单字段，260–261
-- 页眉，231–232
-- 辅助函数，242–246
-- 输入字段，263–266
-- JavaScript调用，236–239
-- 链接到外部页面，212–213
-- 列表。参见列表
-- 多列，234–236
-- 不使用jQuery Mobile的原生表单，276–277
-- 导航栏，253–257
-- 页面加载，208–212，239–240
-- 单选按钮，269–271
-- 提供多页面，205–206
-- 滑块，267–268
-- 标题元素，206–208
-- 内容内的工具栏，249–250
-- 过渡动画，213–216
-- 警告栏，250–252
+- **JSON（JavaScript 对象表示法）格式**
+  - 数据存储，19
+  - 获取值，83–84
 
-## **jQuery对象**
-
-- 感知上下文的插件，295–296
-- 静态插件，293–294
-
-## **jquery属性，** 7
-
-## **jQuery UI，** 103
-
-- 使用jQuery UI为颜色添加动画，187–189
-- CSS类，192–194
-- 下载与安装，103–104
-- 缓动函数，190，194–196
-- 元素。参见元素
-- 图形效果，191–192
-- 图标显示，196–198
-- 样式，185–186
-- 小部件。参见小部件
-
-## **JSON（JavaScript对象表示法）格式**
-
-- 数据存储，19
-- 获取值，83–84
-
-## **JSONP，** 98–100
+- **JSONP**，98–100
 
 ## K
 
-## **键盘**
+- **键盘**
+  - 替代键盘，263–265
+  - 事件，69–70
 
-- 替代键盘，263–265
-- 事件，69–70
+- **键盘按下事件**，69
 
-## **键盘按下事件，** 69
+- **键盘输入事件**，69
 
-## **键盘输入事件，** 69
-
-## **键盘释放事件，** 69
+- **键盘释放事件**，69
 
 ## L
 
-## **元素集合的length()函数，** 14–15
+- **元素集合的 `length()` 函数**，14–15
 
-## **选项卡的length()方法，** 181
+- **选项卡的 `length()` 方法**，181
 
-## **库，** 6–7，103
+- **库**，6–7，103
 
-## **链接到外部页面**
+- **链接到外部页面**
+  - 使用 Ajax，208–210
+  - 不使用 Ajax，212–213
 
-- 使用Ajax，208–210
-- 不使用Ajax，212–213
+- **监听器，中央事件监听器**，73–75
 
-## **监听器，中央事件监听器，** 73–75
+- **监听**
+  - 表单事件，70–72
+  - HTTP 请求，82–83
+  - 键盘事件，69–70
+  - `<li>` 项事件，75–78
+  - 移动事件，217–221
+  - 鼠标事件，65–67
+  - 滚动事件，72–73
 
-## **监听**
+- **列表**
+  - 构建列表，52–53
+  - 连接列表，123–124
+  - 使用列表计数项目，283–284
+  - 显示列表，278–279
+  - 过滤元素，286–287
+  - 对表单元素进行分组，288–289
+  - 列表项之间的页眉，281–283
+  - 移动项目，58–59
+  - 嵌套列表，279–280
+  - 对列表中的值进行编号，8–9
+  - 选择元素，124–130，148–149
+  - 可排序列表，116–123
+  - 拆分为多列，280–281
+  - 将元素样式设置为按钮，148–149
+  - 文本格式化，285–286
+  - 列表中的缩略图，284–285
+  - 转换为选项卡窗格，175–176
 
-- 表单事件，70–72
-- HTTP请求，82–83
-- 键盘事件，69–70
-- `<li>`项事件，75–78
-- 移动事件，217–221
-- 鼠标事件，65–67
-- 滚动事件，72–73
+- **`live()` 函数**，73–75，77
 
-## **列表**
+- **选项卡的 `load` 事件**，179
 
-- 构建列表，52–53
-- 连接列表，123–124
-- 使用列表计数项目，283–284
-- 显示列表，278–279
-- 过滤元素，286–287
-- 对表单元素进行分组，288–289
-- 列表项之间的页眉，281–283
-- 移动项目，58–59
-- 嵌套列表，279–280
-- 对列表中的值进行编号，8–9
-- 选择元素，124–130，148–149
-- 可排序列表，116–123
-- 拆分为多列，280–281
-- 将元素样式设置为按钮，148–149
-- 文本格式化，285–286
-- 列表中的缩略图，284–285
-- 转换为选项卡窗格，175–176
+- **`load()` 函数**，85
 
-live()函数，73–75，77
+- **选项卡的 `load()` 方法**，181
 
-选项卡的load事件，179
+- **加载**
+  - 直接加载 HTML，85
+  - 使用 AJAX 加载页面，208–210
+  - 使用 JavaScript 调用加载页面，239–240
+  - 加载 XML，96–97
 
-load()函数，85
+- **`loadPage()` 方法**，240
 
-选项卡的load()方法，181
+- **`lock()` 函数**，307–308
 
-### 加载
+- **外观和感觉。参见 jQuery UI**
 
-- 直接加载HTML，85
-- 使用AJAX加载页面，208–210
-- 使用JavaScript调用加载页面，239–240
-- 加载XML，96–97
-
-loadPage()方法，240
-
-lock()函数，307–308
-
-外观和感觉。参见jQuery UI
-
-Lorem Ipsum文本，142–143
+- **Lorem Ipsum 文本**，142–143
 
 ## M
 
-makeArray()函数，12
+- **`makeArray()` 函数**，12
 
-makePathAbsolute()函数，246
+- **`makePathAbsolute()` 函数**，246
 
-makeUrlAbsolute()函数，246
+- **`makeUrlAbsolute()` 函数**，246
 
-map()函数，37
+- **`map()` 函数**，37
 
-maps()函数，9–10
+- **`maps()` 函数**，9–10
 
-maxDate选项，157
+- **`maxDate` 选项**，157
 
-### maxHeight选项
+- **`maxHeight` 选项**
+  - 对话框，163
+  - 可调整大小元素，133
 
-- 对话框，163
-- 可调整大小元素，133
+- **`maxWidth` 选项**
+  - 对话框，163
+  - 可调整大小元素，133
 
-### maxWidth选项
+- **页脚元素的菜单栏**，252–253
 
-- 对话框，163
-- 可调整大小元素，133
+- **下拉菜单**，326–328
 
-页脚元素的菜单栏，252–253
+- **方法**
+  - 自动完成，147
+  - 按钮，150
+  - 基于函数参数调用方法，301–303
+  - 日期选择器，160
+  - 对话框，167
+  - 可放置区域，115
+  - 插件，300–303
+  - 进度条，170
+  - 可调整大小元素，134
+  - 可选择元素，128
+  - 滑块，174
+  - 可排序元素，122–123
+  - 选项卡，180–181
 
-下拉菜单，326–328
+- **`min` 选项**，172
 
-### 方法
+- **`minDate` 选项**，157
 
-- 自动完成，147
-- 按钮，150
-- 基于函数参数调用方法，301–303
-- 日期选择器，160
-- 对话框，167
-- 可放置区域，115
-- 插件，300–303
-- 进度条，170
-- 可调整大小元素，134
-- 可选择元素，128
-- 滑块，174
-- 可排序元素，122–123
-- 选项卡，180–181
+- **`minHeight` 选项**
+  - 对话框，163
+  - 可调整大小元素，133
 
-min选项，172
+- **`minLength()` 方法**，147
 
-minDate选项，157
+- **`minLength` 选项**，145
 
-### minHeight选项
+- **`minWidth` 选项**
+  - 对话框，163
+  - 可调整大小元素，133
 
-- 对话框，163
-- 可调整大小元素，133
+- **移动端。参见 jQuery Mobile**
 
-minLength()方法，147
+- **`modal` 选项**，163
 
-minLength选项，145
+- **模态窗口**，323–326
 
-### minWidth选项
+- **月份，选择月份**，13–14
 
-- 对话框，163
-- 可调整大小元素，133
+- **鼠标事件**
+  - 用于绘图，67–69
+  - 监听鼠标事件，65–67
 
-移动端。参见jQuery Mobile
+- **`mousedown()` 事件**，67
 
-modal选项，163
+- **`mouseenter()` 事件**，67
 
-模态窗口，323–326
+- **`mouseleave()` 事件**，67
 
-月份，选择月份，13–14
+- **`mousemove()` 事件**，67
 
-### 鼠标事件
+- **`mouseout()` 事件**，67
 
-- 用于绘图，67–69
-- 监听鼠标事件，65–67
+- **`mouseover()` 事件**，67
 
-mousedown()事件，67
+- **`mouseup()` 事件**，67
 
-mouseenter()事件，67
+- **移动**
+  - DOM 树元素，53–54
+  - 列表项，58–59
 
-mouseleave()事件，67
+- **多列**，234–236
 
-mousemove()事件，67
+- **多页面，提供多页面**，205–206
 
-mouseout()事件，67
+- **导航栏中的多行**，254–255
 
-mouseover()事件，67
+- **单页面中的多个主题**，232–233
 
-mouseup()事件，67
+- **`notify()` 函数**，316–317
 
-moveToTop()方法，167
+- **`notifyWith()` 函数**，319–320
 
-### **移动**
+- **列表值编号**，8–9
 
-- DOM树元素，53–54
-- 列表项，58–59
+- **`numberOfMonths` 选项**，157
 
-多列，234–236
+- **数字，检索数字**，170–174
 
-多页面，提供多页面，205–206
+- **对象**
+  - 回调对象，306–308
+  - 延迟对象，87，199，309–311
+  - 扩展对象，22–24
+  - 测试对象，7–8
 
-### 导航栏中的多行，254–255
+- **奇数元素，分隔奇数元素**，28–29
 
-单页面中的多个主题，232–233
+- **`off()` 函数**，77
 
-notify()函数，316–317
+- **`offset()` 函数**，69
 
-notifyWith()函数，319–320
+- **`on()` 函数**，77–78
 
-列表值编号，8–9
+- **`onChangeMonthYear` 事件**，159
 
-numberOfMonths选项，157
+- **`onclick` 属性**，5
 
-数字，检索数字，170–174
+- **`onClose` 事件**，159
 
-### **对象**
+- **`onmousemove` 事件**，68
 
-- 回调对象，306–308
-- 延迟对象，87，199，309–311
-- 扩展对象，22–24
-- 测试对象，7–8
+- **`onSelect` 事件**，159
 
-奇数元素，分隔奇数元素，28–29
+- **不透明度选项**，108
 
-off()函数，77
+- **不透明度属性**，26
 
-offset()函数，69
+- **`open` 事件**
+  - 自动完成，146
+  - 对话框，165
 
-on()函数，77–78
+- **打开对话框的 `open()` 方法**，167
 
-onChangeMonthYear事件，159
+- **`option()` 方法**
+  - 折叠面板，141
+  - 对话框，167
+  - 拖拽元素，111
 
-onclick属性，5
+- **列表项排序**，58–59
 
-onClose事件，159
+- **方向**
+  - 方向变化，217–218
+  - 滑块方向，172
 
-onmousemove事件，68
-
-onSelect事件，159
-
-不透明度选项，108
-
-不透明度属性，26
-
-### **open事件**
-
-- 自动完成，146
-- 对话框，165
-
-打开对话框的open()方法，167
-
-### **option()方法**
-
-- 折叠面板，141
-- 对话框，167
-- 拖拽元素，111
-
-列表项排序，58–59
-
-### **方向**
-
-- 方向变化，217–218
-- 滑块方向，172
-
-方向变化事件，218
+- **方向变化事件**，218
 
 ## N
 
-### 名称
+- **名称**
+  - 类名称，43–45
+  - 图标列表名称，196–198
 
-- 类名称，43–45
-- 图标列表名称，196–198
+- **原生表单，显示原生表单**，276–277
 
-原生表单，显示原生表单，276–277
+- **导航栏**
+  - 添加导航栏，253–257
+  - 导航栏中的图标，255–256
+  - 导航栏中的多行，254–255
 
-### **导航栏**
+- **导航选项**，139
 
-- 添加导航栏，253–257
-- 导航栏中的图标，255–256
-- 导航栏中的多行，254–255
+- **可选择的嵌套无序列表**，129–130
 
-导航选项，139
+- **嵌套**
+  - 列表嵌套，279–280
+  - 选择器嵌套，33–34
 
-可选择的嵌套无序列表，129–130
+- **新创建的项目，响应新创建的项目**，74–75
 
-### **嵌套**
+- **`nextText` 选项**，156
 
-- 列表嵌套，279–280
-- 选择器嵌套，33–34
+- **`node` 命令**，81
 
-新创建的项目，响应新创建的项目，74–75
+- **Node.js，服务器设置**，81–83
 
-nextText选项，156
-
-node命令，81
-
-Node.js，服务器设置，81–83
-
-not()选择器，33–34
+- **`not()` 选择器**，33–34
 
 ## O
 
-## out 事件
+- **`out` 事件**
+  - 可放置区域，115
+  - 可排序，121
 
-out 事件
-- 可放置区域，115
-- 可排序，121
+- **从单个 HTML 文件提供服务**，205-206
 
-从单个 HTML 文件提供服务，205-206
-标签页，174-181
+- **标签页**，174-181
 
-over 事件
-- 可放置区域，115
-- 可排序，121
-
-## pageshow 事件，218，220
-
-## panelTemplate 选项，178
-
-## 段落
-
-替换其中的 HTML，47
-索引，12-13
-选择，27-28
+- **`over` 事件**
+  - 可放置区域，115
+  - 可排序，121
 
 ## P
 
-转换为对话框，160-167
-包裹和取消包裹，61-64
+- **`pageshow` 事件**，218，220
 
-## 页面未找到的结果，89-90
+- **`panelTemplate` 选项**，178
 
-## 参数化插件，297-299
+- **段落**
+  - 替换其中的 HTML，47
+  - 索引，12-13
+  - 选择，27-28
 
-## pagebeforechange 事件，220
+- **转换为对话框**，160-167
 
-## 参数
+- **包裹和取消包裹**，61-64
 
-pagebeforecreate 事件，220
-pagebeforehide 事件，220
-pagebeforeload 事件，219
-pagebeforeshow 事件，220
-pagechange 事件，220
-pagechangefailed 事件，220
-pageContainer 选项，238
-pagecreate 事件，220
-pagehide 事件，218，220
-pageinit 事件，221
-pageload 事件，219
-pageloadfailed 事件，219
-pageremove 事件，221
+- **页面未找到的结果**，89-90
 
-基于参数的方法调用，301-303
-插件，299-300
+- **参数化插件**，297-299
 
-## parseUrl() 函数，243-246
+- **`pagebeforechange` 事件**，220
 
-## 传递
+- **参数**
+  - `pagebeforecreate` 事件，220
+  - `pagebeforehide` 事件，220
+  - `pagebeforeload` 事件，219
+  - `pagebeforeshow` 事件，220
+  - `pagechange` 事件，220
+  - `pagechangefailed` 事件，220
+  - `pageContainer` 选项，238
+  - `pagecreate` 事件，220
+  - `pagehide` 事件，218，220
+  - `pageinit` 事件，221
+  - `pageload` 事件，219
+  - `pageloadfailed` 事件，219
+  - `pageremove` 事件，221
+  - 基于参数的方法调用，301-303
+  - 插件，299-300
 
-上下文到回调函数，308-309
-函数，44-45
-HTTP 头，93-94
+- **`parseUrl()` 函数**，243-246
 
-## 页面
+- **传递**
+  - 上下文到回调函数，308-309
+  - 函数，44-45
+  - HTTP 头，93-94
 
-## password 选项，246
+- **页面**
 
-## 密码输入字段，265-266
+- **`password` 选项**，246
 
-追加函数的结果，49-50
-类，41-45
-内容，48-51
-动态 HTML 生成，51-53
-元素。*参见* 元素
-带标题的页面，203-205
-元素中的 HTML，46-47
-加载消息，210-212
-使用 JavaScript 调用加载，239-240
-移动列表项，58-59
-属性和特性，45-46
-重定向，90-91
+- **密码输入字段**，265-266
 
-## pathname 选项，245
+- **追加函数的结果**，49-50
 
-## 像素，绘制，67-69
+- **类**，41-45
 
-## 文本字段的 placeholder 属性，261
+- **内容**，48-51
 
-## 可排序元素的 placeholder 选项，118
+- **动态 HTML 生成**，51-53
 
-承诺，311–315
-静态插件，293–294
-第三方插件。*参见* 第三方插件
-可视化进度，315–317
+- **元素。*参见* 元素**
 
-弹出动画，213
+- **带标题的页面**，203-205
 
-## 弹出框，334–336
+- **元素中的 HTML**，46-47
 
-port 选项，245
+- **加载消息**，210-212
 
-## 位置
+- **使用 JavaScript 调用加载**，239-240
 
-- 数组元素，12–13
-- 矩形，动画化，186–187
+- **移动列表项**，58-59
 
-## position() 函数，69
+- **属性和特性**，45-46
 
-## position 选项
+- **重定向**，90-91
 
-- 自动完成，145
-- 对话框，163
+- **`pathname` 选项**，245
 
-## prepend() 函数，50–51
+- **像素，绘制**，67-69
 
-## prependTo() 函数，50–51
+- **文本字段的 `placeholder` 属性**，261
 
-## prevText 选项，156
+- **可排序元素的 `placeholder` 选项**，118
 
-## progress() 函数，316–317
+- **承诺**，311–315
 
-## 进度函数，上下文到，319–320
+- **静态插件**，293–294
 
-## 进度条，168–170
+- **第三方插件。*参见* 第三方插件**
 
-## promise() 函数，314
+- **可视化进度**，315–317
 
-## promise() 方法，312
+- **弹出动画**，213
 
-## 承诺
+- **弹出框**，334–336
 
-- 在动画结束时执行代码，198–200
-- 用于流程结构，314–315
-- 操作机制，86–87
-- 保护内部实现，311–314
+- **`port` 选项**，245
 
-## prop() 函数，45–46
+- **位置**
+  - 数组元素，12–13
+  - 矩形，动画化，186–187
 
-## 属性
+- **`position()` 函数**，69
 
-- 与特性的区别，45–46
-- 测试，25–26
+- **`position` 选项**
+  - 自动完成，145
+  - 对话框，163
 
-## 保护内部实现，用于此目的的承诺，311–314
+- **`prepend()` 函数**，50–51
 
-## protocol 选项，245
+- **`prependTo()` 函数**，50–51
 
-## proxy() 函数，78–80
+- **`prevText` 选项**，156
 
-## 特定用途的键盘，264–265
+- **`progress()` 函数**，316–317
 
-## 标签页的 remove() 方法
+- **进度函数，上下文到**，319–320
+
+- **进度条**，168–170
+
+- **`promise()` 函数**，314
+
+- **`promise()` 方法**，312
+
+- **承诺**
+  - 在动画结束时执行代码，198–200
+  - 用于流程结构，314–315
+  - 操作机制，86–87
+  - 保护内部实现，311–314
+
+- **`prop()` 函数**，45–46
+
+- **属性**
+  - 与特性的区别，45–46
+  - 测试，25–26
+
+- **保护内部实现，用于此目的的承诺**，311–314
+
+- **`protocol` 选项**，245
+
+- **`proxy()` 函数**，78–80
+
+- **特定用途的键盘**，264–265
+
+- **标签页的 `remove()` 方法**
 
 ## Q
 
-## querySelectorAll() 函数，32–33
+- **`querySelectorAll()` 函数**，32–33
 
-## 问答页面，341–343
+- **问答页面**，341–343
 
-## 队列，200–202
+- **队列**，200–202
 
 ## R
 
-## 单选按钮
+- **单选按钮**
+  - 显示，269–271
+  - 选择，32–33
 
-- 显示，269–271
-- 选择，32–33
+- **`range` 选项**，172
 
-## range 选项，172
+- **滑块范围**，172，268
 
-## 滑块范围，172，268
+- **读取**
+  - 隐藏文本，16
+  - JSONP，98–100
+  - URL，243–245
+  - XML 值，96–97
 
-## 读取
+- **`ready` 事件**，5
 
-- 隐藏文本，16
-- JSONP，98–100
-- URL，243–245
-- XML 值，96–97
+- **`receive` 事件**，120
 
-## ready 事件，5
+- **矩形，动画化**，186–187
 
-## receive 事件，120
+- **效果的递归执行**，191–192
 
-## 矩形，动画化，186–187
+- **重定向，页面**，90–91
 
-## 效果的递归执行，191–192
+- **细化选择**，28–29
 
-## 重定向，页面，90–91
+- **`refresh()` 方法**，160
 
-## 细化选择，28–29
+- **可排序元素的 `refreshPositions()` 方法**，123
 
-## refresh() 方法，160
+- **可拖动元素的 `refreshPositions` 选项**，108
 
-## 可排序元素的 refreshPositions() 方法，123
+- **注册回调函数**，306–308
 
-## 可拖动元素的 refreshPositions 选项，108
+- **`reject()` 函数**，315
 
-## 注册回调函数，306–308
+- **`rejectWith()` 函数**，317–319
 
-## reject() 函数，315
+- **`rel` 属性**，336
 
-## rejectWith() 函数，317–319
+- **`reloadPage` 选项**，238
 
-## rel 属性，336
+- **`remove` 事件**
+  - 可排序，121
+  - 标签页，180
 
-## reloadPage 选项，238
+- **元素的 `remove()` 函数**，60–61
 
-## remove 事件
+- **标签页的 `remove()` 方法**，180
 
-- 可排序，121
-- 标签页，180
+- **`removeClass()` 函数**，42–43
 
-## 元素的 remove() 函数，60–61
+- **`removeData()` 函数**，18–19
 
-## 标签页的 remove() 方法，180
+- **移除**
+  - 类，42–43
+  - 使用 jQuery UI 移除 CSS 类，192–194
+  - 附加到 DOM 节点的数据，241–242
+  - 元素，18–19，60–61
 
-## removeClass() 函数
+- **重复元素模拟**，55–56
 
-## removeClass() 函数，42–43
+- **请求**
+  - GET，83–84
+  - 监听请求，82–83
+  - 超时，91–92
 
-## removeData() 函数，18–19
+- **用于缓动函数的 `resizable` 组件**，194
 
-## 移除
+- **对话框的 `resizable` 选项**，164
 
-- 类，42–43
-- 使用 jQuery UI 移除 CSS 类，192–194
-- 附加到 DOM 节点的数据，241–242
-- 元素，18–19，60–61
+- **`resize` 事件**
+  - 对话框，166
+  - 可调整大小的元素，133
 
-## 重复元素模拟，55–56
+- **手风琴的 `resize()` 方法**，141
 
-## 请求
+- **`resizeStart` 事件**，166
 
-- GET，83–84
-- 监听请求，82–83
-- 超时，91–92
+- **`resizeStop` 事件**，166
 
-## 用于缓动函数的 resizable 组件，194
+- **调整大小**
+  - 手风琴，141
+  - 对话框，164，166
+  - 元素，130–134
 
-## 对话框的 resizable 选项，164
+- **`resolve()` 函数**，314–315，317–318
 
-## resize 事件
+- **`resolveWith()` 函数**，317，319
 
-- 对话框，166
-- 可调整大小的元素，133
+- **检索**
+  - 附加到 DOM 节点的数据，241–242
+  - HTML5 data- 属性，15–16
+  - 数字，170–174
 
-## 手风琴的 resize() 方法，141
+- **返回**
+  - deferred 对象，309–311
+  - 承诺，311–314
 
-## resizeStart 事件，166
+- **`reverse` 选项**，238
 
-## resizeStop 事件，166
+- **`revert` 选项**
+  - 可拖动元素，108
+  - 可排序元素，118
 
-## 调整大小
+- **`revertDuration` 选项**，108
 
-- 手风琴，141
-- 对话框，164，166
-- 元素，130–134
+- **`role` 选项**，238
 
-## resolve() 函数，314–315，317–318
+- **`rotate()` 方法**，181
 
-## resolveWith() 函数，317，319
-
-## 检索
-
-- 附加到 DOM 节点的数据，241–242
-- HTML5 data- 属性，15–16
-- 数字，170–174
-
-## 返回
-
-- deferred 对象，309–311
-- 承诺，311–314
-
-## reverse 选项，238
-
-## revert 选项
-
-- 可拖动元素，108
-- 可排序元素，118
-
-## revertDuration 选项，108
-
-## role 选项，238
-
-## rotate() 方法，181
-
-## 导航栏中的行，254–255
+- **导航栏中的行**，254–255
 
 ## S
 
-## 方案，颜色，232–234
+- **方案，颜色**，232–234
 
-## scope 选项
+- **`scope` 选项**
+  - 可拖动元素，108
+  - 可放置区域，113–114
 
-- 可拖动元素，108
-- 可放置区域，113–114
+- **作用域选择上下文**，39–40
 
-## 作用域选择上下文，39–40
+- **屏幕，绘制缓动函数**，195–196
 
-## 屏幕，绘制缓动函数，195–196
+- **`script` 元素**，5
 
-## script 元素，5
+- **滚动事件**，72–73
 
-## 滚动事件，72–73
+- **可拖动元素的 `scroll` 选项**，109
 
-## 可拖动元素的 scroll 选项，109
+- **使用固定页脚滚动文本**，227–229
 
-## 使用固定页脚滚动文本，227–229
+- **`scrollSensitivity` 选项**，109
 
-## scrollSensitivity 选项，109
+- **`scrollSpeed` 选项**，109
 
-## scrollSpeed 选项，109
+- **ScrollSpy 插件**，328–331
 
-## ScrollSpy 插件，328–331
+- **`scrollstart` 事件**，218
 
-## scrollstart 事件，218
+- **`scrollstop` 事件**，218
 
-## scrollstop 事件，218
+- **搜索和搜索框**
+  - 输入字段，265–266
+  - 列表过滤，287
+  - Twitter 帖子，99–100
 
-## 搜索和搜索框
+- **自动完成的 `search` 事件**，145
 
-- 输入字段，265–266
-- 列表过滤，287
-- Twitter 帖子，99–100
+- **`search` 选项**，245
 
-## 自动完成的 search 事件，145
+- **导航到第二个页面**，205–206
+  - 使用动画，213–214
+  - 返回按钮，222–223
 
-## search 选项，245
+- **`select` 事件**
+  - 自动完成，146
+  - 标签页，179
 
-## 导航到第二个页面，205–206
+- **`slidfade` 动画**
 
-- 使用动画，213–214
-- 返回按钮，222–223
+- **`select()` 方法**，181
 
-## select 事件
+- **可选择元素**
+  - 事件，126–128
+  - 创建，124–125
+  - 方法，128
+  - 嵌套无序列表，129–130
+  - 选项，126
+  - 样式，126
 
-- 自动完成，146
-- 标签页，179
+- **服务器端交互**
+  - 传递 HTTP 头，93–94
+  - 承诺，86–87
+  - 读取 JSONP，98–100
+  - 请求超时，91–92
+  - 设置，81–83
+  - 验证表单输入，94–96
 
-## slidfade 动画
+- **`selected` 事件**，127
 
-## select() 方法，181
+- **`selected` 选项**，178
 
-## 可选择元素
+- **`selecting` 事件**，127
 
-- 事件，126–128
-- 创建，124–125
-- 方法，128
-- 嵌套无序列表，129–130
-- 选项，126
-- 样式，126
+- **`setDate()` 方法**，160
 
-## 服务器端交互
+- **`setInterval()` 函数**，169
 
-- 传递 HTTP 头，93–94
-- 承诺，86–87
-- 读取 JSONP，98–100
-- 请求超时，91–92
-- 设置，81–83
-- 验证表单输入，94–96
+- **`setTimeout()` 函数**，312
 
-## selected 事件，127
+- **`shortYearCutoff` 选项**，157
 
-## selected 选项，178
+- **选择**
+  - 上下文，作用域，39–40
+  - 日期，152–156
+  - 从下拉列表，273–276
+  - 元素。*参见* 元素选择
+  - 带 span 的段落，27–28
 
-## selecting 事件，127
+- **标签页的 `show` 事件**，179
 
-## setDate() 方法，160
+- **日期选择器的 `show()` 方法**，160
 
-## setInterval() 函数，169
+- **对话框的 `show` 选项**，164
 
-## setTimeout() 函数，312
+- **`showAnim` 选项**，157–158
 
-## shortYearCutoff 选项，157
+- **`showButtonPanel` 选项**，156
 
-## 选择
+- **`showCurrentAtPos` 选项**，157
 
-- 上下文，作用域，39–40
-- 日期，152–156
-- 从下拉列表，273–276
-- 元素。*参见* 元素选择
-- 带 span 的段落，27–28
+- **选择器**
+  - 创建，37–39
+  - CSS 悬停，34–35
+  - 嵌套，33–34
 
-## 标签页的 show 事件，179
+- **显示**
+  - 可折叠元素，257–258
+  - 页脚，229–231
 
-## 日期选择器的 show() 方法，160
+- **`selectOtherMonths` 选项**，157
 
-## 对话框的 show 选项，164
+- **`showLoadMsg` 选项**，238
 
-## showAnim 选项，157–158
+- **`showMonthAfterYear` 选项**，158
 
-## showButtonPanel 选项，156
+- **`serialize()` 方法**，25，122
 
-## showCurrentAtPos 选项，157
+- **`showWeek` 选项**，158
 
-## 选择器
+- **`serializeArray()` 函数**，25
 
-- 创建，37–39
-- CSS 悬停，34–35
-- 嵌套，33–34
+- **序列化**
+  - 表单数据，24–25，94–96
+  - 可排序元素，122
 
-## 显示
+- **扩展对象的副作用**，22–24
 
-- 可折叠元素，257–258
-- 页脚，229–231
+- **选择单个元素**，269–271
 
-## selectOtherMonths 选项，157
+- **从单个 HTML 文件提供多个页面**，205–206
 
-## showLoadMsg 选项，238
+- **服务器**，81
+  - AJAX 事件，97–98
+  - 错误，87–88
+  - GET 请求，83–84
+  - 加载 HTML，85
+  - 加载 XML，96–97
+  - 多个页面，205–206
+  - 页面未找到的结果，89–90
+  - 页面重定向，90–91
 
-## showMonthAfterYear 选项，158
+- **大小**
+  - 动画化，186–187
+  - 元素集合，14–15
 
-## serialize() 方法，25，122
+- **`sleep` 函数**，91–92
 
-## showWeek 选项，158
+- **滑动**
+  - 动画，213
+  - 使用滑动隐藏元素，189–191
 
-## serializeArray() 函数，25
+- **`slide` 事件**，173–174
 
-## 序列化
+- **`slidedown` 动画**，213
 
-- 表单数据，24–25，94–96
-- 可排序元素，122
+- **`slidefade` 动画**，213
 
-## 扩展对象的副作用，22–24
+- **滑块**
+  - 用于整数，267–268
+  - 用于检索数字，170–174
+  - 将 `<div>` 元素转换为滑块，171
 
-## 选择单个元素，269–271
+- **`slideup` 动画**，213
 
-## 从单个 HTML 文件提供多个页面，205–206
+- **`snap` 选项**，109
 
-## 服务器，81
+- **`snapMode` 选项**，109
 
-- AJAX 事件，97–98
-- 错误，87–88
-- GET 请求，83–84
-- 加载 HTML，85
-- 加载 XML，96–97
-- 多个页面，205–206
-- 页面未找到的结果，89–90
-- 页面重定向，90–91
+- **`snapTolerance` 选项**，109
 
-## 大小
+- **`sort` 事件**，119
 
-- 动画化，186–187
-- 元素集合，14–15
+- **可排序元素**，116–123
 
-## sleep 函数，91–92
+- **排序树结构元素**，123–124
 
-## 滑动
+- **自动完成的 `source` 选项**，144
 
-- 动画，213
-- 使用滑动隐藏元素，189–191
+- **选择 span**，27–28
 
-## slide 事件，173–174
+- **专用输入字段**，265–266
 
-## slidedown 动画，213
+- **在特定位置插入元素**，56–58
 
-## slidefade 动画，213
+- **`spinner` 选项**，178
 
-## 滑块
+- **`split()` 函数**，37
 
-- 用于整数，267–268
-- 用于检索数字，170–174
-- 将 `<div>` 元素转换为滑块，171
+- **将列表分成多列**，280–281
 
-## slideup 动画，213
+- **`stack` 选项**
+  - 对话框，164
+  - 可拖动元素，109
 
-## snap 选项，109
+- **`start` 事件**
+  - 拖动元素，110
+  - 可调整大小的元素，133
+  - 可选择元素，127
+  - 滑块，173
+  - 可排序，119
 
-## snapMode 选项，109
+- **有状态按钮**，338–340
 
-## snapTolerance 选项，109
+- **静态插件**，293–294
 
-## sort 事件，119
+- **进程状态**，168–170
 
-## 可排序元素，116–123
+- **滑块的 `step` 选项**，173
 
-## 排序树结构元素，123–124
+- **`stepMonths` 选项**，158
 
-## 自动完成的 source 选项，144
+- **`stop` 事件**
+  - 拖动元素，110
+  - 可调整大小的元素，134
+  - 可选择元素，128
+  - 滑块，174
+  - 可排序，119
 
-## 选择 span，27–28
+- **`stop()` 函数**，199
 
-## 专用输入字段，265–266
+- **存储**
+  - 元素数据，16–18
+  - 对象，19
 
-## 在特定位置插入元素，56–58
+- **`style` 属性**，105
 
-## spinner 选项，178
+- **样式化**
+  - 手风琴，136–137
+  - 自动完成，143
+  - 按钮，149
+  - 日期选择器，152–154
+  - 对话框，161–162
+  - 可拖动元素，105
+  - 可放置区域，113
+  - jQuery UI 组件，185–186
+  - 元素列表，148–149
+  - 进度条，169
+  - 单选按钮，151
+  - 可调整大小的元素，131
+  - 可选择元素，126
+  - 滑块，172–173
+  - 可排序元素，117
+  - 标签页，176–177
+  - 切换，338–340
 
-## split() 函数，37
+- **提交按钮**，32–33
 
-## 将列表分成多列，280–281
+- **成功，调用成功时的回调**，309–311
 
-## stack 选项
+- **使用自动完成建议输入值**，142
 
-- 对话框，164
-- 可拖动元素，109
+- **`swipe` 事件**，218
 
-## start 事件
+- **`swipeleft` 事件**，218
 
-- 拖动元素，110
-- 可调整大小的元素，133
-- 可选择元素，127
-- 滑块，173
-- 可排序，119
+- **`swiperight` 事件**，218
 
-## 有状态按钮，338–340
+- **捕获轻扫**，217–218
 
-## 静态插件，293–294
-
-## 进程状态，168–170
-
-## 滑块的 step 选项，173
-
-## stepMonths 选项，158
-
-## stop 事件
-
-- 拖动元素，110
-- 可调整大小的元素，134
-- 可选择元素，128
-- 滑块，174
-- 可排序，119
-
-## stop() 函数，199
-
-## 存储
-
-- 元素数据，16–18
-- 对象，19
-
-## style 属性，105
-
-## 样式化
-
-- 手风琴，136–137
-- 自动完成，143
-- 按钮，149
-- 日期选择器，152–154
-- 对话框，161–162
-- 可拖动元素，105
-- 可放置区域，113
-- jQuery UI 组件，185–186
-- 元素列表，148–149
-- 进度条，169
-- 单选按钮，151
-- 可调整大小的元素，131
-- 可选择元素，126
-- 滑块，172–173
-- 可排序元素，117
-- 标签页，176–177
-- 切换，338–340
-
-## 提交按钮，32–33
-
-## 成功，调用成功时的回调，309–311
-
-## 使用自动完成建议输入值，142
-
-## swipe 事件，218
-
-## swipeleft 事件，218
-
-## swiperight 事件，218
-
-## 捕获轻扫，217–218
-
-## 切换
-
-- CSS 类，193–194
-- 页面，214–216
-
-
+- **切换**
+  - CSS 类，193–194
+  - 页面，214–216
 
 ## T
 
-- tab-pane class, 332
+- **`tab-pane` class**，332
+
 - **选项卡**
-  - 使用选项卡导航页面, 174–181
-  - 切换选项卡, 331–332
-  - 将无序列表转换为选项卡, 175–176
-- tabTemplate 选项, 178
-- tap 事件, 218
-- taphold 事件, 218
+  - 使用选项卡导航页面，174–181
+  - 切换选项卡，331–332
+  - 将无序列表转换为选项卡，175–176
+
+- **`tabTemplate` 选项**，178
+
+- **`tap` 事件**，218
+
+- **`taphold` 事件**，218
+
 - **测试**
-  - 浏览器对功能的支持, 25–26
-  - 数据类型, 21
-  - 对象, 7–8
-  - 变量, 19–22
+  - 浏览器对功能的支持，25–26
+  - 数据类型，21
+  - 对象，7–8
+  - 变量，19–22
+
 - **文本**
-  - 按钮, 149
-  - 日期, 155
-  - 填充文本, 142–143
-  - 格式化列表项, 285–286
-  - 滚动文本, 227–229
-  - 选择文本, 32–33, 35–36
+  - 按钮，149
+  - 日期，155
+  - 填充文本，142–143
+  - 格式化列表项，285–286
+  - 滚动文本，227–229
+  - 选择文本，32–33, 35–36
+
 - **文本输入**
-  - 自动完成, 347–348
-  - 表单字段, 260–261
-- text 选项, 149
-- ThemeRoller 工具, 185–186
+  - 自动完成，347–348
+  - 表单字段，260–261
+
+- **`text` 选项**，149
+
+- **ThemeRoller 工具**，185–186
+
 - **主题**
-  - 使用主题更改配色方案, 232–234
-  - 为组设置主题, 257–258
-  - 主题滚动条, 176, 185–186
-- then() 函数, 314–315
-- **第三方插件, 323**
-  - 警告框, 336–338
-  - 按钮控件, 338–340
-  - 轮播, 344–346
-  - 可折叠内容, 341–343
-  - 下拉菜单, 326–328
-  - 模态窗口显示, 323–326
-  - 弹出框, 334–336
-  - ScrollSpy, 328–331
-  - 切换选项卡, 331–332
-  - 工具提示, 333–334
-  - 用于自动完成的 Typeahead, 347–348
-- **插件中的 this 关键字, 296–297**
-- **列表项中的缩略图, 284–285**
-- timeout 选项, 177
+  - 使用主题更改配色方案，232–234
+  - 为组设置主题，257–258
+  - 主题滚动条，176, 185–186
+
+- **`then()` 函数**，314–315
+
+- **第三方插件**，323
+  - 警告框，336–338
+  - 按钮控件，338–340
+  - 轮播，344–346
+  - 可折叠内容，341–343
+  - 下拉菜单，326–328
+  - 模态窗口显示，323–326
+  - 弹出框，334–336
+  - ScrollSpy，328–331
+  - 切换选项卡，331–332
+  - 工具提示，333–334
+  - 用于自动完成的 Typeahead，347–348
+
+- **插件中的 `this` 关键字**，296–297
+
+- **列表项中的缩略图**，284–285
+
+- **`timeout` 选项**，177
+
 - **超时**
-  - 请求超时, 91–92
-  - 选项卡超时, 177
-- **标题元素, 206–208**
-- **对话框的 title 选项, 164**
+  - 请求超时，91–92
+  - 选项卡超时，177
+
+- **标题元素**，206–208
+
+- **对话框的 `title` 选项**，164
+
 - **切换**
-  - CSS 类, 193–194
-  - 样式, 338–340
-  - 选项卡, 331–332
-- **tolerance 选项**
-  - 可放置区域, 114
-  - 可选择元素, 126
-  - 可排序元素, 118
+  - CSS 类，193–194
+  - 样式，338–340
+  - 选项卡，331–332
+
+- **`tolerance` 选项**
+  - 可放置区域，114
+  - 可选择元素，126
+  - 可排序元素，118
+
 - **工具栏**
-  - 固定工具栏, 227–229
-  - 内联工具栏, 249–250
-  - 警告栏, 250–252
-- tooltip() 函数, 334
-- **工具提示, 333–334**
+  - 固定工具栏，227–229
+  - 内联工具栏，249–250
+  - 警告栏，250–252
+
+- **`tooltip()` 函数**，334
+
+- **工具提示**，333–334
+
 - **转换**
-  - 将 <div> 元素转换为进度条, 168–169
-  - 将 <div> 元素转换为滑块, 171
-  - 将元素转换为按钮, 147–150
-  - 将 <h3> 和 <div> 元素转换为手风琴, 135–136
-  - 将段落转换为对话框, 160–167
-  - 将无序列表转换为可排序列表, 116–117
-  - 将无序列表转换为选项卡面板, 175–176
-- 过渡动画, 213–216, 238
-- transition 选项, 238
+  - 将 `<div>` 元素转换为进度条，168–169
+  - 将 `<div>` 元素转换为滑块，171
+  - 将元素转换为按钮，147–150
+  - 将 `<h3>` 和 `<div>` 元素转换为手风琴，135–136
+  - 将段落转换为对话框，160–167
+  - 将无序列表转换为可排序列表，116–117
+  - 将无序列表转换为选项卡面板，175–176
 
-## 树结构
+- **过渡动画**，213–216, 238
 
-- 为节点附加数据, 241–242
-- 移动元素, 53–54
-- 选择元素, 128–130
-- 排序元素, 123–124
+- **`transition` 选项**，238
 
-- 关闭 jQuery Mobile, 276–277
-- Twitter Bootstrap 框架, 323
-- Twitter 连接, 99–100
-- type() 函数, 21
-- type 选项, 238
-- 用于自动完成的 Typeahead, 347–348
-- typeof() 函数, 21
+- **树结构**
+  - 为节点附加数据，241–242
+  - 移动元素，53–54
+  - 选择元素，128–130
+  - 排序元素，123–124
+
+- **关闭 jQuery Mobile**，276–277
+
+- **Twitter Bootstrap 框架**，323
+
+- **Twitter 连接**，99–100
+
+- **`type()` 函数**，21
+
+- **`type` 选项**，238
+
+- **用于自动完成的 Typeahead**，347–348
+
+- **`typeof()` 函数**，21
 
 ## U
 
-- ui-bar class, 250
-- ui-bar-b class, 250
-- ui-block-a class, 236
-- ui-block-b class, 236
-- ui-block-c class, 236
-- ui-block-d class, 236
-- ui-button-disabled class, 149
-- ui-corner class, 186
-- ui-draggable class, 106
-- ui-draggable-dragging class, 106
-- ui-droppable class, 113
-- ui-grid-a class, 236
-- ui-grid-b class, 236
-- ui-grid-c class, 236
-- ui-helper class, 186
-- ui-hidden-accessible class, 261
-- ui-li-aside class, 286
-- ui-li-count class, 284
-- ui-li-icon class, 285
-- ui 对象, 118
-- ui-priority class, 186
-- ui-resizable class, 131, 186
-- ui-selectable class, 126
-- ui-selected class, 126
-- ui-selectee class, 126
-- ui-selecting class, 126
-- ui-sortable class, 117
-- ui-sortable-helper class, 117
-- ui-state class, 186
-- ui-state-active class, 149
-- ui-state-disabled class, 149
-- ui-state-highlight class, 154
-- ui-state-hover class, 149
-- ui-unselecting class, 126
-- ui-widget class, 186
-- <ul> 项目, 75–78
-- unbind() 函数, 67
-- undelegate() 函数, 75
+- **`ui-bar` class**，250
 
-## 无序列表
+- **`ui-bar-b` class**，250
 
-- 构建无序列表, 52–53
-- 连接无序列表, 123–124
-- 在无序列表中选择元素, 124–130
-- 可排序的无序列表, 116–123
-- 将无序列表转换为选项卡面板, 175–176
+- **`ui-block-a` class**，236
 
-- unselected 事件, 128
-- unwrap() 函数, 63–64
-- 拆解元素, 61–64
-- 向上按钮, 58–59
-- update 事件, 120
-- updatelayout 事件, 221
-- url() 方法, 181
+- **`ui-block-b` class**，236
 
-## URL
+- **`ui-block-c` class**，236
 
-- 加载 URL, 181
-- 读取 URL, 243–245
+- **`ui-block-d` class**，236
 
-- 用户界面。请参阅 jQuery UI
-- username 选项, 246
-- 面向用户的警告框, 336–338
+- **`ui-button-disabled` class**，149
+
+- **`ui-corner` class**，186
+
+- **`ui-draggable` class**，106
+
+- **`ui-draggable-dragging` class**，106
+
+- **`ui-droppable` class**，113
+
+- **`ui-grid-a` class**，236
+
+- **`ui-grid-b` class**，236
+
+- **`ui-grid-c` class**，236
+
+- **`ui-helper` class**，186
+
+- **`ui-hidden-accessible` class**，261
+
+- **`ui-li-aside` class**，286
+
+- **`ui-li-count` class**，284
+
+- **`ui-li-icon` class**，285
+
+- **`ui` 对象**，118
+
+- **`ui-priority` class**，186
+
+- **`ui-resizable` class**，131, 186
+
+- **`ui-selectable` class**，126
+
+- **`ui-selected` class**，126
+
+- **`ui-selectee` class**，126
+
+- **`ui-selecting` class**，126
+
+- **`ui-sortable` class**，117
+
+- **`ui-sortable-helper` class**，117
+
+- **`ui-state` class**，186
+
+- **`ui-state-active` class**，149
+
+- **`ui-state-disabled` class**，149
+
+- **`ui-state-highlight` class**，154
+
+- **`ui-state-hover` class**，149
+
+- **`ui-unselecting` class**，126
+
+- **`ui-widget` class**，186
+
+- **`<ul>` 项目**，75–78
+
+- **`unbind()` 函数**，67
+
+- **`undelegate()` 函数**，75
+
+- **无序列表**
+  - 构建无序列表，52–53
+  - 连接无序列表，123–124
+  - 在无序列表中选择元素，124–130
+  - 可排序的无序列表，116–123
+  - 将无序列表转换为选项卡面板，175–176
+
+- **`unselected` 事件**，128
+
+- **`unwrap()` 函数**，63–64
+
+- **拆解元素**，61–64
+
+- **向上按钮**，58–59
+
+- **`update` 事件**，120
+
+- **`updatelayout` 事件**，221
+
+- **`url()` 方法**，181
+
+- **URL**
+  - 加载 URL，181
+  - 读取 URL，243–245
+
+- **用户界面。请参阅 jQuery UI**
+
+- **`username` 选项**，246
+
+- **面向用户的警告框**，336–338
 
 ## V
 
-- 验证表单输入, 94–96
-- value 选项
-  - 进度条, 169
-  - 滑块, 173
-- 测试和操作变量, 19–22
-- 下拉变体, 274–275
-- vclick 事件, 219, 221
-- 版本
-  - 确定版本, 7–8
-  - 升级版本, 5
-- 垂直复选框组, 271–273
-- 垂直单选按钮组, 269–271
-- 在回调函数之前可视化进度, 315–317
-- vmousecancel 事件, 219
-- vmousedown 事件, 219
-- vmousemove 事件, 219
-- vmouseover 事件, 218
-- vmouseup 事件, 219
+- **验证表单输入**，94–96
+
+- **`value` 选项**
+  - 进度条，169
+  - 滑块，173
+
+- **测试和操作变量**，19–22
+
+- **下拉变体**，274–275
+
+- **`vclick` 事件**，219, 221
+
+- **版本**
+  - 确定版本，7–8
+  - 升级版本，5
+
+- **垂直复选框组**，271–273
+
+- **垂直单选按钮组**，269–271
+
+- **在回调函数之前可视化进度**，315–317
+
+- **`vmousecancel` 事件**，219
+
+- **`vmousedown` 事件**，219
+
+- **`vmousemove` 事件**，219
+
+- **`vmouseover` 事件**，218
+
+- **`vmouseup` 事件**，219
 
 ## W
 
-- 警告栏, 250–252
-- -webkit- 前缀, 216
-- weekHeader 选项, 158
-- widget() 方法
-  - 对话框, 167
-  - 拖动元素, 111
-- 小部件, 135
-  - 手风琴, 135–141
-  - 自动完成, 142–147
-  - 按钮, 147–150
-  - 按钮组, 151
-  - 日期选择器, 152–160
-  - 对话框, 160–167
-  - 进度条, 168–170
-  - 滑块, 170–174
-  - 选项卡, 174–181
-- width 选项, 163
-- 高亮显示单词, 36–37
-- wrap() 函数, 61–62
-- wrapAll() 函数, 63
-- wrapInner() 函数, 62–63
-- 包装元素, 61–64
+- **警告栏**，250–252
+
+- **`-webkit-` 前缀**，216
+
+- **`weekHeader` 选项**，158
+
+- **`widget()` 方法**
+  - 对话框，167
+  - 拖动元素，111
+
+- **小部件**，135
+  - 手风琴，135–141
+  - 自动完成，142–147
+  - 按钮，147–150
+  - 按钮组，151
+  - 日期选择器，152–160
+  - 对话框，160–167
+  - 进度条，168–170
+  - 滑块，170–174
+  - 选项卡，174–181
+
+- **`width` 选项**，163
+
+- **高亮显示单词**，36–37
+
+- **`wrap()` 函数**，61–62
+
+- **`wrapAll()` 函数**，63
+
+- **`wrapInner()` 函数**，62–63
+
+- **包装元素**，61–64
 
 ## X
 
-- 加载 XML, 96–97
-- XmlHttpRequest (XHR) 对象, 98
+- **加载 XML**，96–97
+
+- **XmlHttpRequest (XHR) 对象**，98
 
 ## Y
 
-- yearRange 选项, 158
-- yearSuffix 选项, 158
-- 黄色工具栏, 250–252
+- **`yearRange` 选项**，158
+
+- **`yearSuffix` 选项**，158
+
+- **黄色工具栏**，250–252
 
 ## Z
 
-- zIndex 选项
-  - 对话框, 164
-  - 可拖动元素, 109
+- **`zIndex` 选项**
+  - 对话框，164
+  - 可拖动元素，109
+
+---
 
 # informIT.com 可信赖的技术学习资源
 
@@ -15249,23 +16043,29 @@ informIT.com 可信赖的技术学习资源
 
 Addison-Wesley Cisco Press EXAM/CRAM IBM Press QUE PRENTICE HALL SAMS Safari
 
+---
+
 # 免费试用 Safari Books Online 15 天
 
 在线获取数千本书籍和视频
 
-- > **充实您的大脑**
-  > 无限制地访问来自 O'Reilly Media、Addison-Wesley、Microsoft Press、Cisco Press、McGraw Hill、Wiley、WROX、Prentice Hall、Que、Sams、Apress、Adobe Press 及其他顶级出版商的数千本关于技术、数字媒体和专业发展的书籍和视频。
+> **充实您的大脑**
+>
+> 无限制地访问来自 O'Reilly Media、Addison-Wesley、Microsoft Press、Cisco Press、McGraw Hill、Wiley、WROX、Prentice Hall、Que、Sams、Apress、Adobe Press 及其他顶级出版商的数千本关于技术、数字媒体和专业发展的书籍和视频。
 
-- > **眼见为实**
-  > 观看数百个由专家主导的、关于当今最热门主题的教学视频。
+> **眼见为实**
+>
+> 观看数百个由专家主导的、关于当今最热门主题的教学视频。
 
 ## 等等，还有更多！
 
-- > **获取竞争优势**
-  > 通过 Rough Cuts 预出版手稿和 Short Cuts 中的新技术概览，率先了解最新技术和主题。
+> **获取竞争优势**
+>
+> 通过 Rough Cuts 预出版手稿和 Short Cuts 中的新技术概览，率先了解最新技术和主题。
 
-- > **加速您的项目**
-  > 复制和粘贴代码，创建智能搜索以在您喜爱主题的新书发布时获得通知，并通过收藏、高亮、标签、注释、混搭等功能自定义您的图书馆。
+> **加速您的项目**
+>
+> 复制和粘贴代码，创建智能搜索以在您喜爱主题的新书发布时获得通知，并通过收藏、高亮、标签、注释、混搭等功能自定义您的图书馆。
 
 > * 仅适用于新订阅用户。折扣适用于 Safari Library，在前 12 个连续计费周期内有效。Safari Library 并非在所有国家/地区都提供。
 
@@ -15281,23 +16081,30 @@ Safari Books Online 是一个数字图书馆，提供可搜索的、按需访问
 
 如果您在 Safari 上注册或访问在线版本时遇到问题，请发送电子邮件至 customer-service@safaribooksonline.com
 
-
+---
 
 # 开发者资料库
 
 面向编程专业人士的必备参考
 
 **CoffeeScript 编程**
+
 Mark Bates
+
 ISBN-13: 978-0-321-82010-5
 
 **HTML5 开发者食谱**
+
 Chuck Hudson
+
 Tom Leadbetter
+
 ISBN-13: 978-0-321-76938-1
 
 **测试驱动的 JavaScript 开发**
+
 Christian Johansen
+
 ISBN-13: 978-0-321-68391-5
 
 ## 其他开发者资料库书目
@@ -15314,9 +16121,10 @@ ISBN-13: 978-0-321-68391-5
 所有开发者资料库书目的在线版本均可通过 Safari Books Online 订阅，网址为 **safari.informit.com**。
 
 **开发者资料库**
+
 informit.com/devlibrary
 
-超过 100 个实用 jQuery 配方，助您解决真实世界的 Web 和移动开发挑战！
+---
 
 # jQuery、jQuery UI 与 jQuery Mobile 配方与示例
 

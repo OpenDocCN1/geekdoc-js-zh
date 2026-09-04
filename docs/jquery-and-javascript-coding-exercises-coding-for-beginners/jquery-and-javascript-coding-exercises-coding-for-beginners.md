@@ -1,26 +1,15 @@
+
 # jQuery 与 JavaScript 编程练习：初学者编码指南
-
-
-
-
-
-
-
 
 ![](img/754f8a8c8c8e54f1effee3be00683eac_0_0.png)
 
-
-
-# JQUERY 编程练习
-
-
-# JQUERY 编程练习
+# jQuery 编程练习
 
 ## 检查 jQuery 是否加载
 
 ### HTML 代码
 
-```
+```html
 <!DOCTYPE html>
 <html>
 <head>
@@ -34,9 +23,9 @@
 </html>
 ```
 
-### JAVASCRIPT 代码
+### JavaScript 代码
 
-```
+```javascript
 $("p").bind("click", function(){
   $( "This is a click Event").appendTo( "body" );
 });
@@ -56,7 +45,7 @@ This is a click Event
 
 ### HTML 代码
 
-```
+```html
 <!DOCTYPE html>
 <html>
 <head>
@@ -89,9 +78,9 @@ This is a click Event
 </html>
 ```
 
-### JAVASCRIPT 代码
+### JavaScript 代码
 
-```
+```javascript
 $("a[href='#top']").click(function() {
   $("html, body").animate({ scrollTop: 0 }, "slow");
   return false;
@@ -104,7 +93,7 @@ $("a[href='#top']").click(function() {
 
 ### HTML 代码
 
-```
+```html
 <!DOCTYPE html>
 <html>
 <head>
@@ -117,9 +106,9 @@ $("a[href='#top']").click(function() {
 </html>
 ```
 
-### JAVASCRIPT 代码
+### JavaScript 代码
 
-```
+```javascript
 $(document).bind("contextmenu",function(e){
     return false;
 });
@@ -129,7 +118,7 @@ $(document).bind("contextmenu",function(e){
 
 ### HTML 代码
 
-```
+```html
 <!DOCTYPE html>
 <html>
 <head>
@@ -144,9 +133,9 @@ $(document).bind("contextmenu",function(e){
 </html>
 ```
 
-### JAVASCRIPT 代码
+### JavaScript 代码
 
-```
+```javascript
 $('#accept').click(function() {
             if ($('#submitbtn').is(':disabled')) {
         $('#submitbtn').removeAttr('disabled');
@@ -164,7 +153,7 @@ $('#accept').click(function() {
 
 ### HTML 代码
 
-```
+```html
 <!DOCTYPE html>
 <html>
 <head>
@@ -178,9 +167,9 @@ $('#accept').click(function() {
 </html>
 ```
 
-### JAVASCRIPT 代码
+### JavaScript 代码
 
-```
+```javascript
 function blink_text() {
     $('.blink').fadeOut(500);
     $('.blink').fadeIn(500);
@@ -194,7 +183,7 @@ setInterval(blink_text, 1000);
 
 ### HTML 代码
 
-```
+```html
 <!DOCTYPE html>
 <html>
 <head>
@@ -252,9 +241,9 @@ table tr th{
 </html>
 ```
 
-### JAVASCRIPT 代码
+### JavaScript 代码
 
-```
+```javascript
 $(document).ready(function(){
     $("tr:odd").addClass("zebra");
 });
@@ -273,7 +262,7 @@ $(document).ready(function(){
 
 ### HTML 代码
 
-```
+```html
 <!DOCTYPE html>
 <html>
 <head>
@@ -290,9 +279,9 @@ $(document).ready(function(){
 </html>
 ```
 
-### JAVASCRIPT 代码
+### JavaScript 代码
 
-```
+```javascript
 $('p').each(function(){
     var pdata = $(this);
     pdata.html( pdata.text().replace(/(^\w+)/,'$1') );
@@ -313,7 +302,7 @@ $('p').each(function(){
 
 ### HTML 代码
 
-```
+```html
 <!DOCTYPE html>
 <html>
 <head>
@@ -330,15 +319,15 @@ $('p').each(function(){
 
 ### CSS 代码
 
-```
+```css
 p span{
     text-decoration: underline;
 }
 ```
 
-### JAVASCRIPT 代码
+### JavaScript 代码
 
-```
+```javascript
 $('p').each(function() {
 
     var text_words = $(this).text().split(' ');
@@ -364,7 +353,7 @@ The best way we learn anything is by practice and excercise
 
 ### HTML 代码
 
-```
+```html
 <!DOCTYPE html>
 <html>
 <head>
@@ -379,9 +368,9 @@ The best way we learn anything is by practice and excercise
 </html>
 ```
 
-### JAVASCRIPT 代码
+### JavaScript 代码
 
-```
+```javascript
 //取消注释以下代码以查看更改。
 
 //$("#button1").prop('value', 'Save');
@@ -391,7 +380,7 @@ The best way we learn anything is by practice and excercise
 
 ### HTML 代码
 
-```
+```html
 <!DOCTYPE html>
 <html>
 <head>
@@ -412,9 +401,9 @@ The best way we learn anything is by practice and excercise
 </html>
 ```
 
-### JAVASCRIPT 代码
+### JavaScript 代码
 
-```
+```javascript
 var myOptions = {
     val1 : 'Blue',
     val2 : 'Orange'
@@ -426,8 +415,6 @@ $.each(myOptions, function(val, text) {
     );
 });
 ```
-
-
 
 ## 输出
 
@@ -812,14 +799,6 @@ margin: 20px 0 0 0;
 </html>
 ```
 
-### CSS 代码
-
-```javascript
-$('#button1').click(function(){
-    $( "p" ).after( "<b><i>包含解答。</i></b>" );
-});
-```
-
 ### JavaScript 代码
 
 ```javascript
@@ -933,9 +912,7 @@ span, p {
 }
 ```
 
-
-
-### JAVASCRIPT 代码
+### JavaScript 代码
 
 ```javascript
 $('#button1').click(function(){
@@ -985,7 +962,7 @@ p {
 }
 ```
 
-### JAVASCRIPT 代码
+### JavaScript 代码
 
 ```javascript
 $('#button1').click(function(){
@@ -999,7 +976,7 @@ $( "#pid" ).animate({
 });
 ```
 
-# JAVASCRIPT 编程练习
+# JavaScript 编程练习
 
 ## 显示当前日期和时间
 
@@ -1016,7 +993,7 @@ $( "#pid" ).animate({
 </html>
 ```
 
-### JAVASCRIPT 代码
+### JavaScript 代码
 
 ```javascript
 var today = new Date();
@@ -1069,7 +1046,7 @@ console.log("Current Time : " + hour + prepand + ": " + minute + ": " + second);
 </html>
 ```
 
-### JAVASCRIPT 代码
+### JavaScript 代码
 
 ```javascript
 function print_current_page()
@@ -1094,7 +1071,7 @@ window.print();
 </html>
 ```
 
-### JAVASCRIPT 代码
+### JavaScript 代码
 
 ```javascript
 var today = new Date();
@@ -1137,7 +1114,7 @@ console.log(today);
 </html>
 ```
 
-### JAVASCRIPT 代码
+### JavaScript 代码
 
 ```javascript
 var side1 = 5;
@@ -1164,7 +1141,7 @@ console.log(area);
 </html>
 ```
 
-### JAVASCRIPT 代码
+### JavaScript 代码
 
 ```javascript
 function leapyear(year)
@@ -1181,9 +1158,13 @@ console.log(leapyear(100));
 ## 输出
 
 true
+
 true
+
 false
+
 false
+
 false
 
 ## 计算两个数字的乘法和除法
@@ -1214,7 +1195,7 @@ body {margin: 30px;}
 </html>
 ```
 
-### JAVASCRIPT 代码
+### JavaScript 代码
 
 ```javascript
 function multiplyBy()
@@ -1240,7 +1221,7 @@ function divideBy()
 
 结果为 :
 
-## 在 JAVASCRIPT 中将摄氏度和华氏度相互转换
+## 在 JavaScript 中将摄氏度和华氏度相互转换
 
 ### HTML 代码
 
@@ -1256,7 +1237,7 @@ function divideBy()
 </html>
 ```
 
-### JAVASCRIPT 代码
+### JavaScript 代码
 
 ```javascript
 function cToF(celsius)
@@ -1302,7 +1283,7 @@ fToC(45);
 </html>
 ```
 
-### JAVASCRIPT 代码
+### JavaScript 代码
 
 ```javascript
 function max_of_three(x, y, z)
@@ -1353,7 +1334,7 @@ console.log(max_of_three(1000,510,440));
 </html>
 ```
 
-### JAVASCRIPT 代码
+### JavaScript 代码
 
 ```javascript
 function string_reverse(str)
@@ -1392,7 +1373,7 @@ tpircSavaJ
 </html>
 ```
 
-### JAVASCRIPT 代码
+### JavaScript 代码
 
 ```javascript
 function LetterChanges(text) {
@@ -1409,10 +1390,6 @@ break;
 case 'Z':
 s[i] = 'A';
 break;
-```
-
-
-
 default:
     s[i] = String.fromCharCode(1 + s[i].charCodeAt(0));
 }
@@ -1425,12 +1402,13 @@ switch(s[i]) {
 }
 return s.join('');
 }
+
 console.log(LetterChanges("PYTHON"));
 console.log(LetterChanges("W3R"));
 console.log(LetterChanges("php"));
 ```
 
-# 输出：
+## 输出
 
 QZUIPO
 X4S
@@ -1440,7 +1418,7 @@ qIq
 
 ### HTML 代码
 
-```
+```html
 <!DOCTYPE html>
 <html>
 <head>
@@ -1453,24 +1431,22 @@ qIq
 </html>
 ```
 
-### JAVASCRIPT 代码
+### JavaScript 代码
 
-```
+```javascript
 function capital_letter(str)
 {
 	str = str.split(" ");
-
 	for (var i = 0, x = str.length; i < x; i++) {
 		str[i] = str[i][0].toUpperCase() + str[i].substr(1);
 	}
-
 	return str.join(" ");
 }
 
 console.log(capital_letter("Write a JavaScript program to capitalize the first letter of each word of a given string."));
 ```
 
-# 输出：
+## 输出
 
 Write A JavaScript Program To Capitalize The First Letter Of Each Word Of A Given String.
 
@@ -1478,7 +1454,7 @@ Write A JavaScript Program To Capitalize The First Letter Of Each Word Of A Give
 
 ### HTML 代码
 
-```
+```html
 <!DOCTYPE html>
 <html>
 <head>
@@ -1491,9 +1467,9 @@ Write A JavaScript Program To Capitalize The First Letter Of Each Word Of A Give
 </html>
 ```
 
-### JAVASCRIPT 代码
+### JavaScript 代码
 
-```
+```javascript
 function time_convert(num)
 {
     var hours = Math.floor(num / 60);
@@ -1506,7 +1482,7 @@ console.log(time_convert(450));
 console.log(time_convert(1441));
 ```
 
-# 输出：
+## 输出
 
 1:11
 
@@ -1518,7 +1494,7 @@ console.log(time_convert(1441));
 
 ### HTML 代码
 
-```
+```html
 <!DOCTYPE html>
 <html>
 <head>
@@ -1531,9 +1507,9 @@ console.log(time_convert(1441));
 </html>
 ```
 
-### JAVASCRIPT 代码
+### JavaScript 代码
 
-```
+```javascript
 function vowel_Count(str)
 {
     return str.replace(/[^aeiou]/g, "").length;
@@ -1543,7 +1519,7 @@ console.log(vowel_Count("Python"));
 console.log(vowel_Count("htmlresource.com"));
 ```
 
-# 输出：
+## 输出
 
 1
 
@@ -1553,7 +1529,7 @@ console.log(vowel_Count("htmlresource.com"));
 
 ### HTML 代码
 
-```
+```html
 <!DOCTYPE html>
 <html>
 <head>
@@ -1566,18 +1542,19 @@ console.log(vowel_Count("htmlresource.com"));
 </html>
 ```
 
-### JAVASCRIPT 代码
+### JavaScript 代码
 
-```
+```javascript
 function without_first_end(str) {
     return str.substring(1, str.length - 1);
 }
+
 console.log(without_first_end('JavaScript'));
 console.log(without_first_end('JS'));
 console.log(without_first_end('PHP'));
 ```
 
-### 输出：
+## 输出
 
 avaScrip
 
@@ -1589,7 +1566,7 @@ H
 
 ### HTML 代码
 
-```
+```html
 <!DOCTYPE html>
 <html>
 <head>
@@ -1602,9 +1579,9 @@ H
 </html>
 ```
 
-### JAVASCRIPT 代码
+### JavaScript 代码
 
-```
+```javascript
 function concatenate(str1, str2) {
     str1 = str1.substring(1, str1.length);
     str2 = str2.substring(1, str2.length);
@@ -1616,19 +1593,19 @@ console.log(concatenate("A","B"));
 console.log(concatenate("AA","BB"));
 ```
 
-# 输出：
+## 输出
 
 HPS
 
 AB
 
-## BB
+BB
 
 ## 将指定字符串的最后三个字符移到开头
 
 ### HTML 代码
 
-```
+```html
 <!DOCTYPE html>
 <html>
 <head>
@@ -1641,9 +1618,9 @@ AB
 </html>
 ```
 
-### JAVASCRIPT 代码
+### JavaScript 代码
 
-```
+```javascript
 function right_three(str) {
     if (str.length > 1)
     {
@@ -1651,16 +1628,16 @@ function right_three(str) {
     }
     return str;
 }
+
 console.log(right_three("Python"));
 console.log(right_three("JavaScript"));
 console.log(right_three("Hi"));
 ```
 
-# 输出：
+## 输出
 
 honPyt
 iptJavaScr
-
 Hi
 
 ## 计算总和
@@ -1669,7 +1646,7 @@ Hi
 
 ### HTML 代码
 
-```
+```html
 <!DOCTYPE html>
 <html>
 <head>
@@ -1682,9 +1659,9 @@ Hi
 </html>
 ```
 
-### JAVASCRIPT 代码
+### JavaScript 代码
 
-```
+```javascript
 function sum_three(nums)
 {
 	return nums[0] + nums[1] + nums[2];
@@ -1695,7 +1672,7 @@ console.log(sum_three([5, 7, 9]));
 console.log(sum_three([0, 8, -11]));
 ```
 
-# 输出：
+## 输出
 
 62
 
@@ -1707,7 +1684,7 @@ console.log(sum_three([0, 8, -11]));
 
 ### HTML 代码
 
-```
+```html
 <!DOCTYPE html>
 <html>
 <head>
@@ -1720,18 +1697,19 @@ console.log(sum_three([0, 8, -11]));
 </html>
 ```
 
-### JAVASCRIPT 代码
+### JavaScript 代码
 
-```
+```javascript
 function add_two_digits(n)
 {
   return n % 10 + Math.floor(n / 10);
 }
+
 console.log(add_two_digits(25))
 console.log(add_two_digits(50))
 ```
 
-# 输出：
+## 输出
 
 7
 5
@@ -1740,7 +1718,7 @@ console.log(add_two_digits(50))
 
 ### HTML 代码
 
-```
+```html
 <!DOCTYPE html>
 <html>
 <head>
@@ -1752,13 +1730,14 @@ console.log(add_two_digits(50))
 </html>
 ```
 
-### JAVASCRIPT 代码
+### JavaScript 代码
 
-```
+```javascript
 function leapyear(year)
 {
 return (year % 100 === 0) ? (year % 400 === 0) : (year % 4 === 0);
 }
+
 console.log(leapyear(2016));
 console.log(leapyear(2000));
 console.log(leapyear(1700));
@@ -1780,7 +1759,7 @@ false
 
 ### HTML 代码
 
-```
+```html
 <!DOCTYPE html>
 <html>
 <head>
@@ -1793,9 +1772,9 @@ false
 </html>
 ```
 
-### JAVASCRIPT 代码
+### JavaScript 代码
 
-```
+```javascript
 function test37(x)
 {
   if (x % 3 == 0 || x % 7 == 0)
@@ -1813,14 +1792,11 @@ console.log(test37(10));
 console.log(test37(11));
 ```
 
-# 输出：
+## 输出
 
 true
-
 true
-
 false
-
 false
 
 ## 检查字符串是否以 'Java' 开头
@@ -1829,7 +1805,7 @@ false
 
 ### HTML 代码
 
-```
+```html
 <!DOCTYPE html>
 <html>
 <head>
@@ -1842,9 +1818,9 @@ false
 </html>
 ```
 
-### JAVASCRIPT 代码
+### JavaScript 代码
 
-```
+```javascript
 function start_spec_str(str)
 {
   if (str.length < 4)
@@ -1867,7 +1843,7 @@ console.log(start_spec_str("Java"));
 console.log(start_spec_str("Python"));
 ```
 
-# 输出：
+## 输出
 
 true
 true
@@ -1879,7 +1855,7 @@ false
 
 ### HTML 代码
 
-```
+```html
 <!DOCTYPE html>
 <html>
 <head>
@@ -1892,9 +1868,9 @@ false
 </html>
 ```
 
-### JAVASCRIPT 代码
+### JavaScript 代码
 
-```
+```javascript
 function check_numbers(x, y)
 {
     if ((x >= 50 && x <= 99) || (y >= 50 && y <= 99))
@@ -1922,7 +1898,7 @@ true
 
 ### HTML 代码
 
-```
+```html
 <!DOCTYPE html>
 <html>
 <head>
@@ -1935,15 +1911,14 @@ true
 </html>
 ```
 
-### JAVASCRIPT 代码
+### JavaScript 代码
 
-```
+```javascript
 function near_100(x, y) {
     if (x != y)
     {
         x1 = Math.abs(x - 100);
         y1 = Math.abs(y - 100);
-
         if (x1 < y1)
         {
             return x;
@@ -1957,18 +1932,14 @@ function near_100(x, y) {
     else
         return false;
 }
-```
 
-```
 console.log(near_100(90, 89));
 console.log(near_100(-90, -89));
 console.log(near_100(90, 90));
 ```
 
-# 输出：
+## 输出
 
 90
-
 -89
-
 false

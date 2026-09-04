@@ -1,66 +1,32 @@
+
 # 使用 HTML5、CSS3 和 Javascript 制作等轴视角社交实时游戏
-
-
-
-
-
-
-![](img/bc084eea89036c02dab091a0a80afada_0_0.png)
-
-
-
 
 任何熟悉 Zynga 的《农场物语》的人都理解实时社交游戏有多有趣和上瘾。这本实操指南将教你如何仅使用开源工具，从头开始设计并构建这类游戏之一。详细的示例和代码样本将帮助你学习如何渲染图形、使用精灵图制作动画、添加声音、验证分数以防止作弊等。
 
 读完本书后，你将完成一个名为“游客度假村”（Tourist Resort）的项目，它结合了你学到的所有技术。你还将学习如何将游戏与 Facebook 集成。如果你熟悉 JavaScript、HTML5 和 CSS3，就可以开始了。
 
-- 使用 HTML5 的 canvas 使用精灵图构建流畅的动画
+- 使用 HTML5 的 `canvas` 使用精灵图构建流畅的动画
 - 创建等距网格模式以实现高性能图形
 - 设计一个在移动设备和 PC 上运行同样良好的 GUI
-- 使用 HTML5 的 audio 元素为游戏添加声音
-- 使用 WebWorkers 实现游戏的路径查找功能
+- 使用 HTML5 的 `audio` 元素为游戏添加声音
+- 使用 `WebWorkers` 实现游戏的路径查找功能
 - 使用 PHP 和 MySQL 在服务器上构建客户端数据模型
 - 使用动态 CSS3 对象让你的游戏活起来
 
 Twitter: @oreillymedia
 facebook.com/oreilly
 
-
-![](img/bc084eea89036c02dab091a0a80afada_1_0.png)
-
-
-
-
-
 作者：Mario Andrés Pagella
-
-
-
-
-
-
-
-
-
-
 [LSI] [2011-09-02]
-
 131492016
 
 > *献给我的母亲。愿上帝保佑平安，直到我们再次相聚。*
-
-
-
-
-
-
-
 
 ## 前言
 
 成瘾、沮丧。有趣、无聊。参与感、重复。休闲、高要求。
 
-这些词可能是相互矛盾的，但它们表达了实时游戏玩家的情绪起伏。我记得花几个小时玩如 EA/Maxis 的《城市模拟》和《城市模拟2000》、《Chris Sawyer 的《交通大亨》或 Bullfrog Productions 的《主题医院》，并纳闷为什么只有我的几个朋友（通常是极客）玩过这些游戏。
+这些词可能是相互矛盾的，但它们表达了实时游戏玩家的情绪起伏。我记得花几个小时玩如 EA/Maxis 的《城市模拟》和《城市模拟2000》、Chris Sawyer 的《交通大亨》或 Bullfrog Productions 的《主题医院》，并纳闷为什么只有我的几个朋友（通常是极客）玩过这些游戏。
 
 今天，我看到孩子、青少年、祖母和大学男学生坐在电脑前玩如 Zynga 的《农场物语》、《CityVille》，Playdom 的《社交城市》或 Playfish 的《帝国》，他们完全不知道这些游戏前身的存在——那是一个等距实时游戏的黄金时代。
 
@@ -68,9 +34,9 @@ facebook.com/oreilly
 
 近期实时游戏的激增部分归功于 Zynga 在这一特定游戏类型中保留优点并剔除负面因素的卓越能力，部分归功于消费者兴趣的转变。他们将《城市模拟》中那种“没人搬进你的城市”的沮丧感，替换为添加朋友成为你的成长邻居。他们利用 Facebook 的社交功能改变了游戏的本质。通过让玩家不仅可以放置建筑，还能构建建筑并手动收集产生的积分，使无聊的部分变得更具互动性。一段时间后（通常是几周），当游戏开始显得重复时，他们会为你提供任务并让你与朋友互动。最后，你建造的建筑即使你不玩游戏也会一直存在并产生积分。（这一概念在行业中通常被称为*异步游戏或异步机制*。）
 
-当你消除了沮丧、无聊和重复时，你就得到了一种有趣、有参与感且休闲（取决于你如何玩）的游戏类型，由于其社交相关的进度要求，这种游戏可以瞬间走红。难怪 Zynga 在写作时的估值达了 100 亿美元（超过了全球最大的“传统”游戏发行商之一电子艺公司 EA），或者 Playdom 被迪士尼以 7.6 亿美元收购。为每个变量确定正确的数值
+当你消除了沮丧、无聊和重复时，你就得到了一种有趣、有参与感且休闲（取决于你如何玩）的游戏类型，由于其社交相关的进度要求，这种游戏可以瞬间走红。难怪 Zynga 在写作时的估值达了 100 亿美元（超过了全球最大的“传统”游戏发行商之一电子艺公司 EA），或者 Playdom 被迪士尼以 7.6 亿美元收购。
 
-
+为每个变量确定正确的数值
 
 为你自己的游戏设计玩法公式是非常困难的，但当你成功处理好一切时，这种类型社交游戏的本质本身就能让它瞬间走红。
 
@@ -82,7 +48,7 @@ facebook.com/oreilly
 
 在社交等轴游戏系统不断改进的同时，构建它们的技术也在发生变化。
 
-多年来，开发可在浏览器中运行的丰富且高度交互的在线游戏的可用工具一直保持不变：虚拟现实建模语言 (VRML)、Java Applets、Macromedia Shockwave、Adobe Flash、Microsoft Silver、Unity3D 等，意味着需要使用第三方和专有解决方案，如果用户想使用这些应用程序，他们必须下载并安装浏览器插件。更糟糕的是，开发者必须支付非常昂贵的 IDE（集成开发环境）来开发它们。
+多年来，开发可在浏览器中运行的丰富且高度交互的在线游戏的可用工具一直保持不变：虚拟现实建模语言 (VRML)、Java Applets、Macromedia Shockwave、Adobe Flash、Microsoft Silverlight、Unity3D 等，意味着需要使用第三方和专有解决方案，如果用户想使用这些应用程序，他们必须下载并安装浏览器插件。更糟糕的是，开发者必须支付非常昂贵的 IDE（集成开发环境）来开发它们。
 
 HTML、CSS 和 JavaScript 等 Web 技术无法为用户提供与 Adobe Flash 等其他工具可以实现的同等质量体验。浏览器——特别是带有 JavaScript 的浏览器——运行缓慢；它们缺乏对原生视频、音频和本地存储的支持；某些浏览器（如 Internet Explorer）从未支持 PNG 图像的透明度，开发者甚至没有工具执行最基本的位块图像传输（bit-block image transfers）。它们对于最简单的游戏之外的内容尚未准备好。
 
@@ -98,39 +64,38 @@ HTML、CSS 和 JavaScript 等 Web 技术无法为用户提供与 Adobe Flash 等
 
 ## 代码示例
 
-书中所有示例的所有代码和其他支持文件都可以在 https://github.com/andrespagella/Making-Isometric-Real-time-Games 获得。
+书中所有示例的所有代码和其他支持文件都可以在 `https://github.com/andrespagella/Making-Isometric-Real-time-Games` 获得。
 
 ## 开发和调试工具
 
-如果你是一名经验丰富的开发者，几个关键工具会有帮助。虽然你可以使用简单的文本编辑器（如记事本或 TextEdit）和任何支持 HTML5 的网络浏览器来实现这些示例，但如果你打算进行任何严肃的工作，如果拥有语法高亮、JavaScript 控制台、JavaScript 调试器和 Web 检查器将会很好。我强烈建议使用支持（或可以扩展）JavaScript、HTML 和 CSS 的编辑器，如 vic 或 emacs。
+如果你是一名经验丰富的开发者，几个关键工具会有帮助。虽然你可以使用简单的文本编辑器（如记事本或 TextEdit）和任何支持 HTML5 的网络浏览器来实现这些示例，但如果你打算进行任何严肃的工作，如果拥有语法高亮、JavaScript 控制台、JavaScript 调试器和 Web 检查器将会很好。我强烈建议使用支持（或可以扩展）JavaScript、HTML 和 CSS 的编辑器，如 Vim 或 Emacs。
 
 JavaScript 控制台、JavaScript 调试器和 Web 检查器是用于定位和跟踪问题、程序等的工具。幸运的是，大多数现代浏览器都包含了这三者：
 
 ### Mozilla Firefox
 
-在“工具（Tools)”内部，你会找到 JavaScript 控制台和检查（Inspect）；我建议安装 Firebug，这是一个用于高级 Web 开发的扩展，它包含 JavaScript 调试器以及 HTML、CSS 和 DOM 检查器，以及许多其他功能。
+在“工具（Tools）”内部，你会找到 JavaScript 控制台和检查（Inspect）；我建议安装 Firebug，这是一个用于高级 Web 开发的扩展，它包含 JavaScript 调试器以及 HTML、CSS 和 DOM 检查器，以及许多其他功能。
 
 ### Internet Explorer
 
-按下 F12 打开开发人员工具。这包括一个 JavaScript 控制台，允许你在不同的“文档模式”下查看页面，查看你的网站如何处理使用 IE5、IE7 等访问者。
+按下 `F12` 打开开发人员工具。这包括一个 JavaScript 控制台，允许你在不同的“文档模式”下查看页面，查看你的网站如何处理使用 IE5、IE7 等访问者。
 
 ### Google Chrome
 
-如果你访问“查看（View)”菜单（在 OSX）或点击通常位于地址栏旁边的小扳手图标，然后进入“开发者（Developer)”菜单，你将看到 JavaScript 工具和 JavaScript 控制台。它们都是大多数基于 Web 的浏览器包含的工具集。
+如果你访问“查看（View）”菜单（在 OSX）或点击通常位于地址栏旁边的小扳手图标，然后进入“开发者（Developer）”菜单，你将看到 JavaScript 工具和 JavaScript 控制台。它们都是大多数基于 Web 的浏览器包含的工具集。
 
 ### Safari
 
-“偏好设置（Preferences)”的“高级（Advanced）”选项卡底部有一个“在菜单栏中显示开发菜单”的复选框。或者在 OS X 中，你可以通过打开终端窗口并输入 `defaults write com.apple.Safari IncludeDebugMenu 1` 来启用开发者菜单。另一种方法是编辑 `Preferences.plist` 文件，在 `<dict>` 和 `<plist>` XML 结束标签之前添加以下行：`<key>IncludeDebugMenu</key>`。在 OS X 中，`Preferences.plist` 文件通常位于以下目录之一，取决于操作系统的版本：
+“偏好设置（Preferences）”的“高级（Advanced）”选项卡底部有一个“在菜单栏中显示开发菜单”的复选框。或者在 OS X 中，你可以通过打开终端窗口并输入 `defaults write com.apple.Safari IncludeDebugMenu 1` 来启用开发者菜单。另一种方法是编辑 `Preferences.plist` 文件，在 `<dict>` 和 `<plist>` XML 结束标签之前添加以下行：`<key>IncludeDebugMenu</key>`。在 OS X 中，`Preferences.plist` 文件通常位于以下目录之一，取决于操作系统的版本：
 
-- C:\Documents and Settings\USER\Application Data\Apple Computer\Safari，其中 %USER% 是
-- C:\Users\USER%\AppData\Roaming\Apple Computer\Safari，其中 %USER% 是你的账户。
+- `~/Library/Preferences/com.apple.Safari.plist`
+- `~/Library/Safari/Preferences.plist`
 
-在 Microsoft Windows 中，你可以编辑 Safari 快捷方式，在 Safari.exe 路径旁边添加 /enableDebugMenu。
+在 Microsoft Windows 中，你可以编辑 Safari 快捷方式，在 `Safari.exe` 路径旁边添加 `/enableDebugMenu`。
 
 ### Opera
 
-Opera 也包含一个名为 Dragonfly 的优秀调试程序和 Web 检查器。要了解更多信息，请参考 Opera Dragonfly 官网：http://www.opera.com/dragonfly/
-
+Opera 也包含一个名为 Dragonfly 的优秀调试程序和 Web 检查器。要了解更多信息，请参考 Opera Dragonfly 官网：`http://www.opera.com/dragonfly/`
 
 游戏设计是游戏开发中最重要的方面之一（如果不是最重要的话）：没有人想玩无聊的游戏。在这类社交现实策略类游戏中，不仅通过提供良好的用户体验和玩法来吸引用户，还通过将游戏深度整合到用户的社交网络和体验中，是非常重要的。
 
@@ -140,83 +105,70 @@ Opera 也包含一个名为 Dragonfly 的优秀调试程序和 Web 检查器。�
 
 游戏设计是一个比这里能涵盖的广泛得多的话题。关于游戏设计与 Web 应用融合的优秀书籍是 Gabe Zichermann 和 Christopher Cunningham 写的《Gamification by Design》（O'Reilly）。
 
-
 本书使用了以下排版惯例：
 
 - *斜体 (Italic)* 表示新术语、URL、电子邮件地址、文件名和扩展名。
-- **等宽 (Constant width)** 用于程序列表，以及在段落中指代程序元素，如变量或函数名、数据库、数据类型、环境变量、语句和关键字。
-- **等宽粗体 (Constant width bold)*** 显示用户应逐字输入的命令或其他文本。
-- **等宽斜体 (Constant width *italic*)*** 显示应替换为用户提供的值或由上下文确定的值的文本。
+- `等宽 (Constant width)` 用于程序列表，以及在段落中指代程序元素，如变量或函数名、数据库、数据类型、环境变量、语句和关键字。
+- **等宽粗体 (Constant width bold)** 显示用户应逐字输入的命令或其他文本。
+- *等宽斜体 (Constant width italic)* 显示应替换为用户提供的值或由上下文确定的值的文本。
 
-![bc084eea89036c02091a0a80afada12_0.png] 此图标表示提示、建议或普通注释。
+![提示图标] 此图标表示提示、建议或普通注释。
 
-![bc084eea89036c02091a0a80afada12_1.png] 此图标表示警告或注意。
-
+![警告图标] 此图标表示警告或注意。
 
 本书是为了帮助你完成工作。通常情况下，你可以在程序和文档中使用书中的代码。除非你复制了大部分代码，否则你不需要联系我们获取许可。例如，编写一个使用了书书中几块代码的程序不需要许可。销售或分发 O'Reilly 书籍的示例 CD 光盘需要许可。通过引用本书并引用示例代码来回答问题不需要许可。将书中大量的示例代码整合到你的产品文档中则需要许可。
 
-
-
-
 我们感谢署名，但并不要求强制署名。署名通常包括标题、作者、出版商和 ISBN。例如：“Mario Andrés Pagella 著《Making Isometric Social Real-Time Games with HTML5, CSS3, and JavaScript》（O'Reilly 出版）。版权所有 2011 Mario Andrés Pagella, 978-1-449-30475-1。
 
-如果您使用的任何代码示例超出了合理使用范围或上述许可的范围，请随时通过 permissions@oreilly.com 与我们联系。
-
+如果您使用的任何代码示例超出了合理使用范围或上述许可的范围，请随时通过 `permissions@oreilly.com` 与我们联系。
 
 Safari® Books Online 是一个按需数字图书馆，让您能够轻松搜索超过 7,500 本技术和创意类参考书籍及视频，快速找到您所需的答案。
 
 订阅后，您可以在线阅读我们库中的任何页面并观看任何视频。在手机和移动设备上阅读书籍。在书印刷出版前访问新书，并独家访问开发中的手稿对其提供反馈。复制并粘贴代码示例、组织收藏内容、下载章节、书签关键部分、打印页面，并从我们的许多节省功能中获益。
 
-
-
-
-
 我们为本书准备了一个网页，在其中列出了数据、示例和任何额外信息。您可以通过以下访问该页面：
-
 
 如需对本书发表评论或提出技术问题，请发送邮件至：
 
-bookquestions@oreilly.com
+`bookquestions@oreilly.com`
 
-有关我们书籍、课程、会议和新闻的更多信息，请访问我们的网站 http://www.oreilly.com。
+有关我们书籍、课程、会议和新闻的更多信息，请访问我们的网站 `http://www.oreilly.com`。
 
-在 Facebook 上找到我们：http://facebook.com/oreilly
-在 Twitter 上关注我们：http://twitter.com/oreillymedia
-在 YouTube 上观看我们：http://www.youtube.com/oreillymedia
+在 Facebook 上找到我们：`http://facebook.com/oreilly`
+
+在 Twitter 上关注我们：`http://twitter.com/oreillymedia`
+
+在 YouTube 上观看我们：`http://www.youtube.com/oreillymedia`
 
 ## 致谢
 
 感谢我的未婚妻 Regina、我的父亲 Rubén、我的家人、我亲密的朋友和同事们。感谢 Minor Studios 的所有人，特别是 CEO Martín Repetto 和 Xavier Amado。我还想感谢我非常有帮助的编辑 Simon St.Laurent；感谢 Shelley Powers 极其见地的技术评审；以及 O'Reilly 的其他让这一切成为可能。
 
-# 第 1 章
-
-## 图形基础：Canvas 与精灵
+# 第 1 章 图形基础：Canvas 与精灵
 
 HTML5 的 `canvas` 元素使得创建复杂的图形游戏变得简单得多，比依赖于通过文档对象模型（DOM）移动图像的旧方法提供了更大的活性和速度。Canvas 允许您使用 JavaScript 直接在屏幕区域上进行绘图，让您能够在 Web 环境下应用传统的游戏图形方法。尽管它是 HTML 宇宙中最近添加的内容，但在较新的桌面和移动浏览器中已得到广泛支持。
 
-### 使用 canvas 对象工作
+## 使用 canvas 对象工作
 
 `canvas` 元素允许我们在屏幕上定义一个极快速的可绘制区域，可以使用 JavaScript 进行像素级的精确控制。然而，canvas 工作在立即模式下。与可缩放矢量图形（SVG，本书未涵盖）不同，我们对 HTML5 Canvas API 进行的调用会直接在 canvas 中绘制图形，一旦显示出来，就不会再对它们保留任何引用。如果我们想将图形向右移动 10 像素，我们需要清除显示并使用新坐标重新绘制。稍后，我们将讨论一种名为“自适应刷新”的技术，它可以避免仅仅为了修改 canvas 的一小部分就清空整个显示。
 
-你可以将 canvas 看作一张纸；你现在有了许多蜡笔（以及其他工具），可以在上面画画。所以，例如如果你想画一条红线，就拿起红色蜡笔画出这条线。如果你想画一条绿线，就拿起绿色蜡笔。你的绘图“样式”也是同的。如果你想画一条从左上角到右下角的 45 度线，你既可以在不移动纸的情况下画，也可以将纸向右倾斜 45 度，然后从顶部到部画一条直线。（显然，第一种方法更有效。）
+你可以将 canvas 看作一张纸；你现在有了许多蜡笔（以及其他工具），可以在上面画画。所以，例如如果你想画一条红线，就拿起红色蜡笔画出这条线。如果你想画一条绿线，就拿起绿色蜡笔。你的绘图“样式”也是同的。如果你想画一条从左上角到右下角的 45 度线，你既可以在不移动纸的情况下画，也可以将纸向右倾斜 45 度，然后从顶部到底画一条直线。（显然，第一种方法更有效。）
 
 访问 HTML5 Canvas API 非常简单。首先，在您的页面中添加新的 HTML5 `canvas` 标签并为其分配一个 `id` 属性：
 
-```
+```html
 <canvas id="game" width="100" height="100">
   您的浏览器不支持 canvas 标签。
 </canvas>
 ```
 
-`canvas` 标签内部的文本将显示不支持该对象的浏览器。稍后，您将学习如何使用名为 Modernizn 的 JavaScript 库更高效地发现并处理此类不兼容性。
+`canvas` 标签内部的文本将显示不支持该对象的浏览器。稍后，您将学习如何使用名为 Modernizr 的 JavaScript 库更高效地发现并处理此类不兼容性。
 
 您需要在 `canvas` 标签内部指定宽度和高度。尽管您可以使用 CSS 强制 canvas 达到特定的宽度和高度，但当您使用 JavaScript 引用对象时，它将返回默认尺寸（300x150 像素），完全覆盖您可能通过 CSS 分配的任何值。然而，您可以在 JavaScript 中动态地修改 HTML5 Canvas 对象的宽度和高度。
 
-![](img/bc084eea89036c02dab091a0a80afada_17_0.png)
-
 为了开始使用 HTML5 Canvas API，我们只需要通过其 `id` 属性值（myCanvas）引用 `canvas` 标签，这将允许我们获取 2D 绘图上下文的引用（“3D 上下文”是 WebGL，本书未涵盖）。
 
-```
+```javascript
 window.onload = function () {
   var canvas = document.getElementById('game');
   var c = canvas.getContext('2d');
@@ -225,7 +177,7 @@ window.onload = function () {
 
 或者，您可以动态创建一个 HTML5 Canvas 对象：
 
-```
+```javascript
 window.onload = function () {
   var canvas = document.createElement('canvas');
   var c = canvas.getContext('2d');
@@ -244,27 +196,27 @@ window.onload = function () {
 <head>
   <meta charset="UTF-8" />
   <title>Example 1 - Title Screen</title>
-<script>
-  // JavaScript 代码在这里
-</script>
+  <script>
+    // JavaScript 代码在这里
+  </script>
   <style type="text/css" media="screen">
-html { height: 100%; overflow: hidden }
-body {
-  margin: 0px;
-  padding: 0px;
-  height: 100%;
-}
-</style>
+    html { height: 100%; overflow: hidden }
+    body {
+      margin: 0px;
+      padding: 0px;
+      height: 100%;
+    }
+  </style>
 </head>
 <body>
-<canvas id="game" width="100" height="100">
-  您的浏览器不支持 canvas 标签。
-</canvas>
+  <canvas id="game" width="100" height="100">
+    您的浏览器不支持 canvas 标签。
+  </canvas>
 </body>
 </html>
 ```
 
-上述代码中的小型 CSS 块允许我们强制页面达到窗口高度的百分比，并且 **overflow: hidden** 防止在超出屏幕区域时出现垂直或水平滚动条。
+上述代码中的小型 CSS 块允许我们强制页面达到窗口高度的百分比，并且 `overflow: hidden` 防止在超出屏幕区域时出现垂直或水平滚动条。
 
 现在模板已完成，我们可以通过在页面的 `<script>` 标签中添加以下 JavaScript 代码开始使用 HTML5 Canvas API：
 
@@ -292,25 +244,17 @@ window.onload = function () {
 
 让我们逐步分析这段代码。
 
-
-
-
-
 当我们在 HTML 代码中添加 `canvas` 标签时，我们定义的 `height` 和 `width` 属性值为 100，这意味着画布的高度为 100 像素，宽度为 100 像素。然而，我们希望标题界面像浏览器窗口一样高且宽，因此我们需要使用 `document.body.clientWidth` 来指示宽度并使用 `document.body.clientHeight` 来指示高度，动态覆盖这两个值。
 
-在获取 2D 上下文引用后，我们调用了一个名为 `fillStyle()` 的 HTML5 Canvas API 函数。在本章的开头，我们将画布比作一张具有不同颜色的纸进行了对比；现在的情景也是类似的。`fillStyle()` 回调的作用是将颜色设置为黑色，并从位置 (0,0) 开始到位置 (canvas.width, canvas.height) 结束，覆盖整个浏览器窗口。记得我们在上一步中为画布对象设置了新尺寸。
+在获取 2D 上下文引用后，我们调用了一个名为 `fillStyle` 的 HTML5 Canvas API 属性。在本章的开头，我们将画布比作一张具有不同颜色的纸进行了对比；现在的情景也是类似的。`fillStyle` 的作用是将颜色设置为黑色，并从位置 (0,0) 开始到位置 (canvas.width, canvas.height) 结束，覆盖整个浏览器窗口。记得我们在上一步中为画布对象设置了新尺寸。
 
 然后，它设置了我们将要使用的短语，选择了字体（在此情况下为 Arial，备用为 sans-serif，其工作方式与 CSS 完全相同）和大小，并再次更改了颜色，这次是白色。`fillText()` 调用将短语打印在位置 10, 30（从左侧开始 10 像素，从顶部开始 30 像素）。
 
 图 1-1 显示了代码的结果。
 
-![](img/bc084eea89036c02dab091a0a80afada_19_0.png)
-
-图 1-1。游戏的初始界面；内置画布
-
 HTML5 Canvas API 还包含一个非常有用的方法 `measureText(phrase)`，它返回参数 `phrase` 的文本宽度（像素）。我们还需要注意在设置字体大小之后测量文本，而不是之前。使用 `measureText()`，我们可以让文本在屏幕居中：
 
-```
+```javascript
 var phrase = 'Click or tap the screen to start the game';
 c.font = 'bold 16px Arial, sans-serif';
 var mt = c.measureText(phrase);
@@ -319,7 +263,7 @@ c.fillStyle = '#FFFFFF';
 c.fillText(phrase, xcoord, 30);
 ```
 
-所以我们已经绘制了画布，并将一个十六进制颜色值作为 `fillStyle()` 方法的参数。canvas 还支持其他样式：
+所以我们已经绘制了画布，并将一个十六进制颜色值作为 `fillStyle` 属性的参数。canvas 还支持其他样式：
 
 - 颜色可以使用 'red' 或 'black'
 - 格式为 `rgb(Red, Green, Blue)` 的 RGB 值
@@ -335,40 +279,35 @@ c.fillText(phrase, xcoord, 30);
 
 为了创建一个显示黑色背景上漂亮蓝色渐变的示例，我们可以使用以下代码：
 
-```
+```javascript
 var grd = c.createLinearGradient(0, 0, canvas.width, canvas.height);
 grd.addColorStop(0, '#EeeCff');
 grd.addColorStop(1, '#2bc8ff');
-```
-
-```
-c.fillStyle = '#fff';
+c.fillStyle = grd;
 c.fillRect(0, 0, canvas.width, canvas.height);
 ```
 
 在画布上显示图像就像使用 `drawImage()` 方法显示文本一样简单：
 
-```
+```javascript
 var img = new Image();
 img.src = 'image.png';
 c.drawImage(img, 0, 0, img.width, img.height);
 ```
 
-![](img/bc084eea89036c02dab091a0a80afada_20_0.png)
+为了使用 `img.width` 和 `img.height` 属性，`img.onload` 事件必须完成。在最后的游戏实现中，我们将使用完整的资源加载器来处理这一点。资源加载器可以在代码仓库的 `game.js` 文件夹中找到（文件名为 `resourceLoader.js`）。
 
-为了使用 `img.width` 和 `img.height` 属性，`img.ready` 属性必须完成。在最后的游戏实现中，我们将使用完整的资源加载器来处理这一点。资源加载器可以在代码仓库的 `game.js` 文件夹中找到（文件名为 resourceLoader.js）。
-
-HTML5 Canvas API 的 `drawImage()` 方法有三种不同的实现。虽然我们将在接下来的章节中涵盖大部分内容，但此处可以找到解释每种实现的详细文档：http://www.w3.org/TR/2dcontext/#dom-context-2d-drawimage。
+HTML5 Canvas API 的 `drawImage()` 方法有三种不同的实现。虽然我们将在接下来的章节中涵盖大部分内容，但此处可以找到解释每种实现的详细文档：`http://www.w3.org/TR/2dcontext/#dom-context-2d-drawimage`。
 
 如果我们想让图像保持原始大小，只需要按照如下方式将其尺寸乘以 2：
 
-```
+```javascript
 var img = new Image();
 img.src = 'image.png';
 c.drawImage(img, 0, 0, img.width * 2, img.height * 2);
 ```
 
-在我们的情况下，我们将使用官方代码仓库 `img` 目录提供的提供的文件，名为 `logo.png`。我们还将展示图像，使其填充浏览器窗口的 50%，同时保持其宽高高比例，以便它可以在手机、平板电脑以及传统的桌面电脑上优雅地显示。
+在我们的情况下，我们将使用官方代码仓库 `img` 目录提供的文件，名为 `logo.png`。我们还将展示图像，使其填充浏览器窗口的 50%，同时保持其宽高比例，以便它可以在手机、平板电脑以及传统的桌面电脑上优雅地显示。
 
 为了显示标题，创建一个函数 `showIntro()` 来显示蓝色渐变和文本：
 
@@ -377,18 +316,18 @@ function showIntro() {
   var phrase = "Click or tap the screen to start the game";
 
   // 清除画布
-  canvas.clearRect(0, 0, canvas.width, canvas.height);
+  c.clearRect(0, 0, canvas.width, canvas.height);
 
   // 创建一个漂亮的蓝色渐变
-  var grad = canvas.createLinearGradient(0, canvas.height, canvas.width, 0);
+  var grad = c.createLinearGradient(0, canvas.height, canvas.width, 0);
   grad.addColorStop(0, '#cce6ff');
   grad.addColorStop(1, '#52b2ff');
 
-  canvas.fillStyle = grad;
-  canvas.fillRect(0, 0, canvas.width, canvas.height);
+  c.fillStyle = grad;
+  c.fillRect(0, 0, canvas.width, canvas.height);
 
   var logoImg = new Image();
-  logoImg.src = '../img/img/logo.png';
+  logoImg.src = '../img/logo.png';
 
   // 保存原始宽度值，以便稍后保持
   // 相同的宽高比例
@@ -402,14 +341,12 @@ function showIntro() {
   var logo = {
     img: logoImg,
     x: (canvas.width/2) - (logoImg.width/2),
+    y: (canvas.height/2) - (logoImg.height/2)
   };
 }
 ```
 
-
-
 ```javascript
-}
 function doResize() {
   canvas.width = document.body.clientWidth;
   canvas.height = document.body.clientHeight;
@@ -419,36 +356,43 @@ function doResize() {
       break;
   }
 }
+
 function fadeToWhite(alphaVal) {
   // ...
 }
-function showIntro() {
-  // ...
-}
-</script>
-<style type="text/css" media="screen">
-html { height: 100%; overflow: hidden; }
-body {
-  margin: 0px;
-  padding: 0px;
-  height: 100%;
-}
-</style>
 ```
 
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Example 1 - Title Screen</title>
+  <script>
+    // ... JavaScript 代码 ...
+  </script>
+  <style type="text/css" media="screen">
+    html { height: 100%; overflow: hidden; }
+    body {
+      margin: 0px;
+      padding: 0px;
+      height: 100%;
+    }
+  </style>
 </head>
 <body>
-<canvas id="myCanvas" width="100" height="100">
-  您的浏览器不支持 canvas 标签。
-</canvas>
+  <canvas id="myCanvas" width="100" height="100">
+    您的浏览器不支持 canvas 标签。
+  </canvas>
 </body>
 </html>
+```
 
 尽管在这种情况下，正在执行的动画（淡入白色）并不复杂，但如果你在手机设备等移动端设备上运行更复杂的动画，你可能会注意到动画出现了细微的中断，这种现象被称为“掉帧”（frame skipping）。
 
 ### 创建平滑动画
 
-在任何类型的游戏开发中，最大限度地利用资源都是关重要的。无论 canvas 在屏幕上绘制元素的速度有多快，我们仍然需要每秒清除或重绘多次大面积区域；游戏在个人电脑上运行可能不会感到“卡顿”，但手机或平板电脑等移动设备可能难以跟上，这会完全破坏玩家的游戏体验。（在本章的后后部分，你将学习如何大幅提高性能。）
+在任何类型的游戏开发中，最大限度地利用资源都是关键的。无论 canvas 在屏幕上绘制元素的速度有多快，我们仍然需要每秒清除或重绘多次大面积区域；游戏在个人电脑上运行可能不会感到“卡顿”，但手机或平板电脑等移动设备可能难以跟上，这会完全破坏玩家的游戏体验。（在本章的后后部分，你将学习如何大幅提高性能。）
 
 能够运行我们游戏的设备种类多样，这意味着如果我们需要展示一个简单的动画，某些设备可能以每秒 90 帧（FPS）的速度显示它们，而其他设备可能只能达到 15 FPS。
 
@@ -462,101 +406,94 @@ body {
 <head>
   <meta charset="UTF-8" />
   <title>Canvas 示例 2 (FPS 计数)</title>
+  <script>
+    window.onload = function () {
+      var canvas = document.getElementById('myCanvas');
+      var c = canvas.getContext('2d');
 
-<script>
-  window.onload = function () {
-    var canvas = document.getElementById('myCanvas');
-    var c = canvas.getContext('2d');
+      var fpsArray = [];
+      var fpsCount = 0;
+      var stopAt = 10;
+      var fps = 0;
+      var startTime = 0;
 
-    var fpsArray = [];
-    var fpsCount = 0;
-    var stopAt = 10;
-    var fps = 0;
-    var startTime = 0;
+      var date = new Date();
+      startTime = Math.round(date.getTime() / 1000);
 
-    var date = new Date();
-    startTime = Math.round(date.getTime() / 1000);
+      c.font = '20px _sans';
 
-    c.font = '20px _sans';
+      draw(startTime);
 
-    draw(startTime);
+      function draw(timestamp) {
+        var date = new Date();
+        var ts = Math.round(date.getTime() / 1000);
 
-  function draw(timestamp) {
-    var date = new Date();
-    var ts = Math.round(date.getTime() / 1000);
+        if (timestamp != ts) {
+          fps = fpsCount;
+          fpsCount = 0;
+          fpsArray.push(fps);
+        } else {
+          fpsCount++;
+        }
 
-    if (timestamp != ts) {
-      fps = fpsCount;
-      fpsCount = 0;
-      fpsArray.push(fps);
-    } else {
-      fpsCount++;
-    }
+        c.fillStyle = '#000000';
+        c.fillRect(0, 0, canvas.width, canvas.height);
 
-    c.fillStyle = '#000000';
-    c.fillRect(0, 0, canvas.width, canvas.height);
+        c.fillStyle = "#FFFFFF";
+        c.fillText("TS: " + timestamp, 10, 20);
+        c.fillText("FPS: " + fps, 10, 40);
 
-    c.fillStyle = "#FFFFFF";
-    c.fillText("TS: " + timestamp, 10, 20);
-    c.fillText("FPS: " + fps, 10, 40);
-
-    if (startTime <= (startTime + stopAt)) {
-      setTimeout(function() {
-        draw(ts);
-      }, 1);
-    }
-```
-
-```javascript
-} else {
-    showResults(c, canvas);
-}
-
-function showResults() {
-    var mean = 0;
-    var sum = 0;
-
-  c.fillStyle = '#FFFFFF';
-  c.fillRect(0, 0, canvas.width, canvas.height);
-
-  // 对样本排序
-  for (var i = 0; i < fpsArray.length; i++) {
-    for (var j = fpsArray.length - 1; j > i; j--) {
-      if (fpsArray[j - 1] > fpsArray[j]) {
-        fpsArray[j - 1] = fpsArray[j];
+        if (startTime <= (startTime + stopAt)) {
+          setTimeout(function() {
+            draw(ts);
+          }, 1);
+        } else {
+          showResults(c, canvas);
+        }
       }
-    }
-  }
 
-  // 丢弃第一个值，它通常非常低
-  fpsArray = fpsArray.slice(1, fpsArray.length);
+      function showResults(c, canvas) {
+        var mean = 0;
+        var sum = 0;
 
-  for (var i = 0; i < fpsArray.length; i++) {
-    sum = sum + fpsArray[i];
-  }
+        c.fillStyle = '#FFFFFF';
+        c.fillRect(0, 0, canvas.width, canvas.height);
 
-  mean = sum / fpsArray.length;
-```
+        // 对样本排序
+        for (var i = 0; i < fpsArray.length; i++) {
+          for (var j = fpsArray.length - 1; j > i; j--) {
+            if (fpsArray[j - 1] > fpsArray[j]) {
+              var temp = fpsArray[j - 1];
+              fpsArray[j - 1] = fpsArray[j];
+              fpsArray[j] = temp;
+            }
+          }
+        }
 
-```javascript
-c.fillStyle = '#000000';
-c.fillText("MIN: " + fpsArray[0], 10, 20);
-c.fillText("MAX: " + fpsArray[fpsArray.length - 1], 10, 40);
-c.fillText("MEAN: " + (Math.round(mean * 10) / 10), 10, 60);
-```
+        // 丢弃第一个值，它通常非常低
+        fpsArray = fpsArray.slice(1, fpsArray.length);
 
-```html
-</script>
+        for (var i = 0; i < fpsArray.length; i++) {
+          sum = sum + fpsArray[i];
+        }
+
+        mean = sum / fpsArray.length;
+
+        c.fillStyle = '#000000';
+        c.fillText("MIN: " + fpsArray[0], 10, 20);
+        c.fillText("MAX: " + fpsArray[fpsArray.length - 1], 10, 40);
+        c.fillText("MEAN: " + (Math.round(mean * 10) / 10), 10, 60);
+      }
+    };
+  </script>
 </head>
 <body>
-<canvas id="myCanvas" width="160" height="70" style="border: 1px solid black;">
-  您的浏览器不支持 canvas 标签。
-</canvas>
+  <canvas id="myCanvas" width="160" height="70" style="border: 1px solid black;">
+    您的浏览器不支持 canvas 标签。
+  </canvas>
 </body>
 </html>
 ```
-
-
 
 ```html
 <script charset="utf-8" src="sprite.js"></script>
@@ -637,7 +574,7 @@ function draw(timeStamp) {
   green.animate(c, timer);
   green.draw(c);
 
-  c.fillText("Elapsed Time: " + (elapsedTime - startTime) + " Seconds", 10, 40);
+  c.fillText("Elapsed Time: " + (timer.getSeconds() - startTime) + " Seconds", 10, 40);
   c.fillText("FPS: " + fps, 10, 40);
 
   setTimeout(function() {
@@ -651,10 +588,10 @@ function draw(timeStamp) {
 您的浏览器不支持 canvas 标签。
 </canvas>
 </body>
-</html
+</html>
 ```
 
-`sprite.js` 是我们在在本及其他章节中使用的，它看起来如下：
+`sprite.js` 是我们在本及其他章节中使用的，它看起来如下：
 
 ```javascript
 var Sprite = function(src, width, height, offsetX, offsetY, frames, duration) {
@@ -671,7 +608,7 @@ var Sprite = function(src, width, height, offsetX, offsetY, frames, duration) {
   this.shown = true;
   this.zoomLevel = 1;
 
-  this.spritesheet(src);
+  this.setSpritesheet(src);
   this.setOffset(offsetX, offsetY);
   this.setFrames(frames);
   this.setDuration(duration);
@@ -684,7 +621,7 @@ var Sprite = function(src, width, height, offsetX, offsetY, frames, duration) {
   }
 }
 
-Sprite.prototype.spritesheet = function(src) {
+Sprite.prototype.setSpritesheet = function(src) {
   if (src instanceof Image) {
     this.spritesheet = src;
   } else {
@@ -758,19 +695,15 @@ HTML5 Canvas 的另一个强大功能是允许我们访问或设置图像的像�
 
 `getImageData()` 返回一个名为 "ImageData" 的对象，包含以下字段：
 
-- width（只读）：图像宽度（像素）
-- height（只读）：图像的高度（像素）
-
-图 1-4。示例 1-3 的替代版本。
-
-CanvasPixelArray（数组）包含图像内部所有的像素，每个像素由四个索引（R、G、B 和 A）组成。要访问第一个像素的蓝色值，调用 `ImageData.data[2]`。要访问第二个像素的红色值，调用 `ImageData.data[4]`，以此此类推。
+- `width`（只读）：图像宽度（像素）
+- `height`（只读）：图像的高度（像素）
+- `data`（CanvasPixelArray）：包含图像内部所有的像素，每个像素由四个索引（R、G、B 和 A）组成。要访问第一个像素的蓝色值，调用 `ImageData.data[2]`。要访问第二个像素的红色值，调用 `ImageData.data[4]`，以此类推。
 
 遍历整个画布的 ImageData 数组所有值的常用方法如下：
 
 ```javascript
-var img = ImageData(0, 0, canvas.width, canvas.height);
-var data = img.data; // 出性能考虑，将此值
-// 保存到新数组中
+var imgData = c.getImageData(0, 0, canvas.width, canvas.height);
+var data = imgData.data; // 为性能考虑，将此值保存到新数组中
 
 for (var i = 0, len = data.length; i < len; i += 4) {
   var red = data[i + 0];
@@ -781,54 +714,24 @@ for (var i = 0, len = data.length; i < len; i += 4) {
 ```
 
 与其替换图像数据，不如将其插入画布中，你可以：
-`context.putImageData(ImageData.data, x, y);`
+
+`context.putImageData(imgData, x, y);`
 
 或者它的替代实现：
-`context.putImageData(ImageData.data, x, y, dx, dy, dh);`
+
+`context.putImageData(imgData, x, y, dx, dy, dw, dh);`
 
 其中参数为：
 
-- **ImageData.data**: 一个 CanvasPixelArray 对象（像素数组）
-- **x**: 绘制 CanvasPixelArray 的 X 轴起点（左上角）
-- **y**: 绘制 CanvasPixelArray 的 Y 轴起点（左上角）
-- **[Optional] dx "Dirty X"**: 在画布中放置 CanvasPixelArray 的水平位置
-- **[Optional] dy "Dirty Y"**: 在画布中放置 CanvasPixelArray 的垂直位置
-- **[Optional] dw "Dirty Width"**: 允许你在绘制到画布上之前指定 CanvasPixelArray 的宽度（例如，指定原始宽度的/2 将将图像水平方向缩小）
+- **imgData**: 一个 ImageData 对象（像素数组）
+- **x**: 绘制 ImageData 的 X 轴起点（左上角）
+- **y**: 绘制 ImageData 的 Y 轴起点（左上角）
+- **[Optional] dx "Dirty X"**: 在画布中放置 ImageData 的水平位置
+- **[Optional] dy "Dirty Y"**: 在画布中放置 ImageData 的垂直位置
+- **[Optional] dw "Dirty Width"**: 允许你在绘制到画布上之前指定 ImageData 的宽度（例如，指定原始宽度的 /2 将图像水平方向缩小）
+- **[Optional] dh "Dirty Height"**: 允许你在绘制到画布上之前指定 ImageData 的高度
 
-
-
-```html
-ul {
-  list-style: none;
-  margin: 10px 10px 10px 10px;
-  padding: 0px;
-  float: left;
-}
-
-ul li { font-weight: bold; }
-ul li span { font-weight: normal; }
-ul li #preview { width: 50px; height: 50px; border: 1px solid black; }
-}
-</style>
-<head>
-<body>
-  <canvas id="myCanvas" width="300" height="300">
-  您的浏览器不支持 canvas 标签。
-</canvas>
-<ul>
-  <li><div id="preview"></div></li>
-  <li><Red: <span id="r">NULL</span></li></li>
-  <li><Green: <span id="g">NULL</span></li></li>
-  <li><Blue: <span id="b">NULL</span></li></li>
-  <li><Alpha: <span id="a">NULL</span></li></li>
-  <li><Mouse X: <span id="mx">NULL</span></li></li>
-  <li><Mouse Y: <span id="my">NULL</span></li></li>
-</ul>
-</body>
-</html>
-```
-
-关于这些以及其他像素操作函数的更多信息，请参阅相关的 W3C 工作草案章节：http://www.w3.org/TR/2dcontext/pixel-manipulation。
+关于这些以及其他像素操作函数的更多信息，请参阅相关的 W3C 工作草案章节：`http://www.w3.org/TR/2dcontext/pixel-manipulation`。
 
 ### 处理透明性
 
@@ -836,25 +739,19 @@ ul li #preview { width: 50px; height: 50px; border: 1px solid black; }
 
 有了这些工具，有许多方法可以解决这个特定问题，但它们主要包括：
 
--   使用 DOM 函数确定元素的位置，并遍历元素，直到找到与“实心”像素的碰撞
--   跟踪放置对象的位置以及它们呈现的顺序，这是传统游戏开发中使用方法
+- 使用 DOM 函数确定元素的位置，并遍历元素，直到找到与“实心”像素的碰撞
+- 跟踪放置对象的位置以及它们呈现的顺序，这是传统游戏开发中使用方法
 
 第一种方法可以通过使用 `document.elementFromPoint()` DOM 函数来实现，确定点击了哪个元素。如果它是图像或带有背景的对象（实色或可能具有或没有父元素的图像），我们可以使用 `getImageData()` 来检测所选像素是否透明。如果是，我们可以选择该元素（如果不是，我们可以查找兄弟元素）。我们可以遍历 DOM 直到找到“实心”颜色并选择该元素而不是图像。然而，如果出现以下情况，这种方法可能会失效、不实用或低效：
 
--   元素具有大量的兄弟节点或父节点
--   我们正在遍历父元素的 z-index，并且“穿过”该元素应该选择它下方的元素（在这种情况下将是子节点）
+- 元素具有大量的兄弟节点或父节点
+- 我们正在遍历父元素的 z-index，并且“穿过”该元素应该选择它下方的元素（在这种情况下将是子节点）
 
 第二种方法要求我们以与大多数 Web 开发人员习惯完全不同的方式进行：跟踪我们在屏幕上呈现的对象的坐标，并使用点击动作进行命中测试（hit test），查看鼠标的 X 和 Y 坐标是否在任何对象的区域内。这样做的方法是存储每个元素的位置 x、位置 y、宽度和高度，以及它们在屏幕上的呈现顺序。然后，有许多方法可以循环遍历所有元素以查看哪一个被点击了，这允许你创建矩形，稍后可以用这些矩形测试鼠标事件（如 `mousedown`、`mousemove`、`mouseup`、`click` 等）返回的 `clientX` 和 `clientY` 值是否在它们内部。图 1-5 显示了我们如何跟踪屏幕上呈现的所有对象。我们检查 MX 和 MY（鼠标 X 和鼠标 Y）代表点击坐标。然后我们可以检查鼠标坐标是否在其他对象的内部（在这种情况下，被点击的元素将是 #4）。
 
 在我们的情况下，我们通过将 `document.elementFromPoint()` 与 `pointer-events: none` 结合来消除了后两个缺点。后者是一个 CSS 属性，允许浏览器知道鼠标不与单个元素交互，从而消除了遍历 DOM 或跟踪屏幕上每个对象的需要。
 
 图 1-6 显示了我们的页面是如何组织的。在“笑脸”图像的透明区域进行的点击应该穿过图像，我们应该获得“奶酪”div 的引用，除非我们点击穿透了笑脸的透明区域和奶酪的洞，这应该返回 HTML 文档的引用。
-
-图 1-5. 屏幕上的对象跟踪
-
-![](img/bc084eea89036c02dab091a0a80afada_38_0.png)
-
-图 1-6. 多层图形方法。
 
 要做到这一点，我们需要首先检测页面已加载完成：
 
@@ -866,24 +763,25 @@ window.onload = function () {
   var c = canvas.getContext('2d');
 
   document.addEventListener('click', detectElement, false);
+}
 ```
 
+```javascript
+function getElementPosition(obj) {
+  var property = window.getComputedStyle(obj, null).getPropertyValue('background-position').split(' ');
 
+  // 修改代码以查找其是否继承了父元素的属性
+  // 将会非常低效。我们将假设
+  // 如果元素具有 'auto'，则意味着 0
 
+  var left = (property[0] != 'auto') ? parseInt(property[0], 10) : 0;
+  var top = (property[1] != 'auto') ? parseInt(property[1], 10) : 0;
 
-
-/**
-* 修改代码以查找其是否继承了父元素的属性
-* 将会非常低效。我们将假设
-* 如果元素具有 'auto'，则意味着
- */
-var left = (property[0] != 'auto') ? property[0].substr(0, property[0].length - 2) : 0;
-var top = (property[1] != 'auto') ? property[1].substr(0, property[1].length - 2) : 0;
-
-return {
-  x: left,
-  y: top
-};
+  return {
+    x: left,
+    y: top
+  };
+}
 ```
 
 为了简单起见，我们假设所有的背景图像都没有在水平或垂直方向上进行渲染，并且我们将使用单个背景元素（CSS 支持多个背景）。然而，通过将所有背景加载到数组中，可以很容易地扩展该函数以支持多个背景。
@@ -896,7 +794,7 @@ function isPixelTransparent(src, x, y, oWidth, oHeight, offsetX, offsetY) {
   img.src = src;
 
   // 如果没有向此函数传递参数，则使用“默认值”
-  owidth = (!oWidth) ? img.width : oWidth;
+  oWidth = (!oWidth) ? img.width : oWidth;
   oHeight = (!oHeight) ? img.height : oHeight;
   offsetX = (!offsetX) ? 0 : offsetX;
   offsetY = (!offsetY) ? 0 : offsetY;
@@ -914,37 +812,35 @@ function isPixelTransparent(src, x, y, oWidth, oHeight, offsetX, offsetY) {
 }
 ```
 
-最后，`isTransparent()` 函数负责获取位于 document.elementFromPoint() 返回的 X 和 Y 坐标元素，并在调用 `isPixelTransparent()` 之前确定如何解释它。
+最后，`isTransparent()` 函数负责获取位于 `document.elementFromPoint()` 返回的 X 和 Y 坐标元素，并在调用 `isPixelTransparent()` 之前确定如何解释它。
 
 为了正确实现这一点，我们首先需要根据对象在屏幕上的位置计算点击的相对坐标：
 
 ```javascript
 function isTransparent(obj, x, y) {
   var robj = obj;
-  var rx = robj.x;
-var ry = robj-y;
-var offset = { x: 0, y: 0 };
-var padding = { x: 0, y: 0 };
-var margin = { x: 0, y: 0 };
-```
+  var rx = 0;
+  var ry = 0;
+  var offset = { x: 0, y: 0 };
+  var padding = { x: 0, y: 0 };
+  var margin = { x: 0, y: 0 };
 
-```javascript
-// 计算相对于父元素的 X（左）和 Y（顶）坐标，
- 直到到达“顶部”
-if (robj.offsetParent) {
-  rx = 0;
-  ry = 0;
-}
-while(robj.offsetParent) {
-  rx += robj.offsetLeft;
-  ry += robj.offsetTop;
-  robj = robj.offsetParent;
+  // 计算相对于父元素的 X（左）和 Y（顶）坐标，
+  // 直到到达“顶部”
+  if (robj.offsetParent) {
+    rx = 0;
+    ry = 0;
+  }
+
+  while(robj.offsetParent) {
+    rx += robj.offsetLeft;
+    ry += robj.offsetTop;
+    robj = robj.offsetParent;
+  }
 }
 ```
 
 除了对象与其父对象之间的 padding（内边距）或间隔外，它们还可能定义了 margin（外边距），因此我们需要考虑这种可能性。图 1-8 将向你展示特定场景的情况。
-
-![](img/bc084eea89036c02dab091a0a80afada_42_0.png)
 
 图 1-8. 点击一组容器
 
@@ -978,10 +874,6 @@ document.getElementById('ObjectName').style.property
 
 这种方法的问题在于，它没有考虑到内联定义的 CSS 属性。
 
-
-
-
-
 # 示例 1-5. 创建简单的网格
 
 ```html
@@ -992,23 +884,23 @@ document.getElementById('ObjectName').style.property
   <title>示例 6 (生成 20 x 50 的网格)</title>
   <script>
     window.onload = function () {
-    var tileMap = [];
-    var grid = {
-      width: 20,
-      height: 50
-    };
+      var tileMap = [];
+      var grid = {
+        width: 20,
+        height: 50
+      };
 
-    function initializeGrid() {
-      for (var i = 0; i < grid.width; i++) {
-        tileMap[i] = [];
-        for (var j = 0; j < grid.height; j++) {
-          tileMap[i][j] = 0;
+      function initializeGrid() {
+        for (var i = 0; i < grid.width; i++) {
+          tileMap[i] = [];
+          for (var j = 0; j < grid.height; j++) {
+            tileMap[i][j] = 0;
+          }
         }
       }
-    }
 
-    initializeGrid();
-  };
+      initializeGrid();
+    };
   </script>
 </head>
 <body>
@@ -1035,7 +927,7 @@ for (var row = 0; row < grid.length; row++) {
 另一些人则稍微慷慨一点点：
 
 ```javascript
-for (var row = 0, rowspan = grid.length; row < rowspan++) {
+for (var row = 0, rowspan = grid.length; row < rowspan; row++) {
   for (var col = 0, collength = grid[0].length; col < collength; col++) {
     if (tilesInsideScreen(row, col)) {
       displayTile(row, col);
@@ -1075,137 +967,114 @@ for (var row = startRow; row < rowCount; row++) {
 <head>
   <meta charset="UTF-8" />
   <title>示例 7 (生成 2500 × 2500 的网格)</title>
-```
-
-<script>
-window.onload = function () {
-  var tileMap = [];
-
-  var tile = {
-    width: 32,
-    height: 32
-  }
-
-  var grid = {
-    width: 2500,
-    height: 2500
-  }
-
-  var Keys = {
-    UP: 38,
-    DOWN: 40,
-    LEFT: 37,
-    RIGHT: 39
-  }
-
-  var scroll = {
-    x: 0,
-    y: 0
-  }
-
-  var canvas = document.getElementById('myCanvas');
-  var c = canvas.getContext('2d');
-
-  window.addEventListener('keydown', handleKeyDown, false);
-
-  initializeGrid();
-  draw();
-
-function handleKeyDown(e) {
-  switch (e.keyCode) {
-    case Keys.UP:
-      scroll.y -= ((scroll.y - tile.height) >= 0) ? tile.height : 0;
-      break;
-    case Keys.DOWN:
-      scroll.y += tile.height;
-      break;
-    case Keys.LEFT:
-      scroll.x -= ((scroll.x - tile.width) > 0) ? tile.width : 0;
-      break;
-    case Keys.RIGHT:
-      scroll.x += tile.width;
-      break;
-  }
-
-  document.getElementById('scrollx').innerHTML = scroll.x;
-  document.getElementById('scrollY').innerHTML = scroll.y;
-}
-</script>
-
-为我们的图形选择渲染方法 | 33
-
-```javascript
-function initializeGrid() {
-  for (var i = 0; i < grid.width; i++) {
-    tileMap[i] = [];
-    for (var j = 0; j < grid.height; j++) {
-      if ((i % 2) == 0) {
-        tileMap[i][j] = 0;
-      } else {
-        tileMap[i][j] = 1;
+  <script>
+    window.onload = function () {
+      var tileMap = [];
+      var tile = {
+        width: 32,
+        height: 32
       }
-    }
-  }
-}
-```
+      var grid = {
+        width: 2500,
+        height: 2500
+      }
+      var Keys = {
+        UP: 38,
+        DOWN: 40,
+        LEFT: 37,
+        RIGHT: 39
+      }
+      var scroll = {
+        x: 0,
+        y: 0
+      }
+      var canvas = document.getElementById('myCanvas');
+      var c = canvas.getContext('2d');
+      window.addEventListener('keydown', handleKeyDown, false);
+      initializeGrid();
+      draw();
 
-```javascript
-function draw() {
-  c.fillStyle = '#FFFFFF';
-  c.fillRect(0, 0, canvas.width, canvas.height);
-  c.fillStyle = '#000000';
+      function handleKeyDown(e) {
+        switch (e.keyCode) {
+          case Keys.UP:
+            scroll.y -= ((scroll.y - tile.height) >= 0) ? tile.height : 0;
+            break;
+          case Keys.DOWN:
+            scroll.y += tile.height;
+            break;
+          case Keys.LEFT:
+            scroll.x -= ((scroll.x - tile.width) > 0) ? tile.width : 0;
+            break;
+          case Keys.RIGHT:
+            scroll.x += tile.width;
+            break;
+        }
+        document.getElementById('scrollx').innerHTML = scroll.x;
+        document.getElementById('scrollY').innerHTML = scroll.y;
+      }
 
-  var startRow = Math.floor(scroll.x / tile.width);
-  var startCol = Math.floor(scroll.y / tile.height);
-  var rowCount = startRow + Math.floor(canvas.width / tile.width) + 1;
-  var colCount = startCol + Math.floor(canvas.height / tile.height) + 1;
-
-  for (var row = startRow; row < rowCount; row++) {
-    for (var col = startCol; col < colCount; col++) {
-      var tilePositionX = row * tile.width - scroll.x;
-      var tilePositionY = col * tile.height - scroll.y;
-
-      if (tilePositionX >= 0 && tilePositionX < canvas.width && tilePositionY >= 0 && tilePositionY < canvas.height) {
-        if (tileMap[row][col] == 0) {
-          c.strokeRect(tilePositionX, tilePositionY, tile.width, tile.height);
-        } else {
-          c.fillRect(tilePositionX, tilePositionY, tile.width, tile.height);
+      function initializeGrid() {
+        for (var i = 0; i < grid.width; i++) {
+          tileMap[i] = [];
+          for (var j = 0; j < grid.height; j++) {
+            if ((i % 2) == 0) {
+              tileMap[i][j] = 0;
+            } else {
+              tileMap[i][j] = 1;
+            }
+          }
         }
       }
-    }
-  }
-}
-```
-</script>
+
+      function draw() {
+        c.fillStyle = '#FFFFFF';
+        c.fillRect(0, 0, canvas.width, canvas.height);
+        c.fillStyle = '#000000';
+        var startRow = Math.floor(scroll.x / tile.width);
+        var startCol = Math.floor(scroll.y / tile.height);
+        var rowCount = startRow + Math.floor(canvas.width / tile.width) + 1;
+        var colCount = startCol + Math.floor(canvas.height / tile.height) + 1;
+        for (var row = startRow; row < rowCount; row++) {
+          for (var col = startCol; col < colCount; col++) {
+            var tilePositionX = row * tile.width - scroll.x;
+            var tilePositionY = col * tile.height - scroll.y;
+            if (tilePositionX >= 0 && tilePositionX < canvas.width && tilePositionY >= 0 && tilePositionY < canvas.height) {
+              if (tileMap[row][col] == 0) {
+                c.strokeRect(tilePositionX, tilePositionY, tile.width, tile.height);
+              } else {
+                c.fillRect(tilePositionX, tilePositionY, tile.width, tile.height);
+              }
+            }
+          }
+        }
+      }
+    };
+  </script>
 </head>
 <body>
-<canvas id="myCanvas" width="300" height="300"></canvas>
-使用 UP, DOWN, LEFT 和 RIGHT 键滚动
-滚动 X: <span id="scrollx">0</span>
-滚动 Y: <span id="scrollY">0</span>
+  <canvas id="myCanvas" width="300" height="300"></canvas>
+  使用 UP, DOWN, LEFT 和 RIGHT 键滚动
+  滚动 X: <span id="scrollx">0</span>
+  滚动 Y: <span id="scrollY">0</span>
 </body>
 </html>
-
-第 1 章：图形基础：Canvas 与精灵图
-
-
-
+```
 
 将点击事件返回的像素坐标转换为方形网格中的矩阵坐标，可以通过以下公式轻松实现：
 
-```
-var row = Math.floor(mousePositionX) / tileWidth;
-var column = Math.floor(mousePositionY) / tileHeight;
+```javascript
+var row = Math.floor(mousePositionX / tileWidth);
+var column = Math.floor(mousePositionY / tileHeight);
 ```
 
 如果我们需要考虑滚动坐标，只需要将它们加到鼠标位置即可：
 
-```
+```javascript
 var row = Math.floor((mousePositionX + scrollPositionX) / tileWidth);
 var column = Math.floor((mousePositionY + scrollPositionY) / tileHeight);
 ```
 
-移除网格初始化代码后，引出了一个有趣的问题：我们如何跟踪那些修改过的元素？幸运的是，我们不需要从零开始开始数组索引，这意味着我们可以这样做：
+移除网格初始化代码后，引出了一个有趣的问题：我们如何跟踪那些修改过的元素？幸运的是，我们不需要从零开始数组索引，这意味着我们可以这样做：
 
 ```javascript
 tileMap[2423] = [];
@@ -1214,11 +1083,7 @@ tileMap[2423][1803] = 4;
 
 使用这种方法，我们只存储需要的元素。矩阵中其他未设置的位置将仅返回 `undefined` 或 `null`。示例 1-7（代码库中的 `ex8-grid-canvas.html`）展示了如何实现这一想法，结果如图 1-11 所示。
 
-![](img/bc084eea89036c02dab091a0a80afada_52_0.png)
-
-图 1-11。示例 1-8 的截图；红色方块表示玩家点击过的位置。
-
-示例 1-7。仅存储需要的元素
+示例 1-7. 仅存储需要的元素
 
 ```html
 <!DOCTYPE html>
@@ -1226,143 +1091,109 @@ tileMap[2423][1803] = 4;
 <head>
   <meta charset="UTF-8" />
   <title>Example 8</title>
-</head>
-
-<script>
-  window.onload = function () {
-    var tileMap = [];
-
-  var tile = {
-    width: 32,
-    height: 32
-  }
-
-  var grid = {
-    width: 2500,
-    height: 2500
-  }
-
-  var Keys = {
-    UP: 38,
-    DOWN: 40,
-    LEFT: 37,
-    RIGHT: 39
-  }
-
-  var scroll = {
-    x: 0,
-    y: 0
-  }
-
-  var canvas = document.getElementById('myCanvas');
-  var c = canvas.getContext('2d');
-
-canvas.addEventListener('click', handleClick, false);
-window.addEventListener('keydown', handleKeyDown, false);
-
-draw();
-
-function handleClick(e) {
-  // 当检测到点击时，将鼠标
-  // 坐标转换为像素坐标
-  var row = Math.floor(e.clientX + scroll.x) / tile.width;
-  var column = Math.floor(e.clientY + scroll.y) / tile.height;
-
-  if (tileMap[row] == null) {
-    tileMap[row] = [];
-  }
-  tileMap[row][column] = 1;
-}
-
-function handleKeyDown(e) {
-  switch (e.keyCode) {
-    case Keys.UP:
-      scroll.y -= ((scroll.y - tile.height) >= 0) ? tile.height : 0;
-      break;
-    case Keys.DOWN:
-      scroll.y += tile.height;
-      break;
-    case Keys.LEFT:
-      scroll.x = ((scroll.x - tile.width) >= 0) ? tile.width : 0;
-      break;
-    case Keys.RIGHT:
-      scroll.x += tile.width;
-      break;
-  }
-}
-
-```
-
-```javascript
-document.getElementById('scroll').innerHTML = scroll.x;
-document.getElementById('scroll').innerHTML = scroll.y;
-```
-
-```javascript
-function draw() {
-  fillStyle = '#FFFFFF';
-  fillRect(0, 0, canvas.width, canvas.height);
-  fillStyle = '#000000';
-
-  var startRow = Math.floor(scroll.x / tile.width);
-  var startCol = Math.floor(scroll.y / tile.height);
-  var rowCount = startRow + Math.floor(canvas.width / tile.width) + 1;
-  var colCount = startCol + Math.floor(canvas.height / tile.height) + 1;
-
-  rowCount = ((startRow + rowCount) > grid.width) ? grid.width : rowCount;
-  colCount = ((startCol + colCount) > grid.height) ? grid.height : colCount;
-
-  for (var row = startRow; row < rowCount; row++) {
-    for (var col = startCol; col < colCount; col++) {
-      var tilePositionX = tile.width * row;
-      var tilePositionY = tile.height * col;
-
-      tilePositionX -= scroll.x;
-      tilePositionY -= scroll.y;
-
-      if (tileMap[row] != null && tileMap[row][col] != null) {
-        fillStyle = '#C00000';
-        fillRect(tilePositionX, tilePositionY, tile.width, tile.height);
-        fillStyle = '#000000';
-      } else {
-        if ((row % 2) == 0 && (col % 2) == 0) {
-          strokeRect(tilePositionX, tilePositionY, tile.width, tile.height);
-        } else {
-          fillRect(tilePositionX, tilePositionY, tile.width, tile.height);
-        }
+  <script>
+    window.onload = function () {
+      var tileMap = [];
+      var tile = {
+        width: 32,
+        height: 32
       }
-    }
-  }
+      var grid = {
+        width: 2500,
+        height: 2500
+      }
+      var Keys = {
+        UP: 38,
+        DOWN: 40,
+        LEFT: 37,
+        RIGHT: 39
+      }
+      var scroll = {
+        x: 0,
+        y: 0
+      }
+      var canvas = document.getElementById('myCanvas');
+      var c = canvas.getContext('2d');
+      canvas.addEventListener('click', handleClick, false);
+      window.addEventListener('keydown', handleKeyDown, false);
+      draw();
 
-  setTimeout(draw, 1);
-}
-```
-</script>
+      function handleClick(e) {
+        // 当检测到点击时，将鼠标
+        // 坐标转换为像素坐标
+        var row = Math.floor((e.clientX + scroll.x) / tile.width);
+        var column = Math.floor((e.clientY + scroll.y) / tile.height);
+        if (tileMap[row] == null) {
+          tileMap[row] = [];
+        }
+        tileMap[row][column] = 1;
+      }
+
+      function handleKeyDown(e) {
+        switch (e.keyCode) {
+          case Keys.UP:
+            scroll.y -= ((scroll.y - tile.height) >= 0) ? tile.height : 0;
+            break;
+          case Keys.DOWN:
+            scroll.y += tile.height;
+            break;
+          case Keys.LEFT:
+            scroll.x -= ((scroll.x - tile.width) >= 0) ? tile.width : 0;
+            break;
+          case Keys.RIGHT:
+            scroll.x += tile.width;
+            break;
+        }
+        document.getElementById('scrollx').innerHTML = scroll.x;
+        document.getElementById('scrollY').innerHTML = scroll.y;
+      }
+
+      function draw() {
+        c.fillStyle = '#FFFFFF';
+        c.fillRect(0, 0, canvas.width, canvas.height);
+        c.fillStyle = '#000000';
+        var startRow = Math.floor(scroll.x / tile.width);
+        var startCol = Math.floor(scroll.y / tile.height);
+        var rowCount = startRow + Math.floor(canvas.width / tile.width) + 1;
+        var colCount = startCol + Math.floor(canvas.height / tile.height) + 1;
+        rowCount = ((startRow + rowCount) > grid.width) ? grid.width : rowCount;
+        colCount = ((startCol + colCount) > grid.height) ? grid.height : colCount;
+        for (var row = startRow; row < rowCount; row++) {
+          for (var col = startCol; col < colCount; col++) {
+            var tilePositionX = tile.width * row;
+            var tilePositionY = tile.height * col;
+            tilePositionX -= scroll.x;
+            tilePositionY -= scroll.y;
+            if (tileMap[row] != null && tileMap[row][col] != null) {
+              c.fillStyle = '#C00000';
+              c.fillRect(tilePositionX, tilePositionY, tile.width, tile.height);
+              c.fillStyle = '#000000';
+            } else {
+              if ((row % 2) == 0 && (col % 2) == 0) {
+                c.strokeRect(tilePositionX, tilePositionY, tile.width, tile.height);
+              } else {
+                c.fillRect(tilePositionX, tilePositionY, tile.width, tile.height);
+              }
+            }
+          }
+        }
+        setTimeout(draw, 1);
+      }
+    };
+  </script>
 </head>
 <body>
-<canvas id="myCanvas" width="300" height="300"></canvas>
-使用 UP, DOWN, LEFT 和 RIGHT 键进行滚动
-Scroll X: <span id="scroll"></span>
-Scroll Y: <span id="scroll"></span>
+  <canvas id="myCanvas" width="300" height="300"></canvas>
+  使用 UP, DOWN, LEFT 和 RIGHT 键进行滚动
+  Scroll X: <span id="scrollx"></span>
+  Scroll Y: <span id="scrollY"></span>
 </body>
 </html>
 ```
 
 到目前为止，我们所做的优化已经极大提升了游戏的性能，但还有一件事我们需要处理。
 
-`draw()` 循环——我们游戏的心脏和灵魂，允许我们在屏幕上显示元素——每秒会被调用多次。在即时策略游戏中，屏幕上的图形通常是静态的，因此这样做有点没必要；我们通过通过仅在需要时调用 `draw()` 而不是每秒调用多次来避免这一点。然而，也请记住，`draw()` 函数在发生细微变化后都会重新渲染整个网格，特别是当我们只需要动画少数对象而保持其他部分不变时。
-
-第 1 章：图形基础：Canvas 与精灵图
-
-| ID | 名称 | FPS | 内存占用 |
-|---|---|---|---|
-| 5854 | Safari | 27.9 | 25.4 MB |
-| 3871 | Itunes | 28.8 | 42 MB |
-
-图 1-13 显示，即使同时运行三个不同的动画，CPU 占用率也从约 30% 剧减到仅 6.5%。
-
-
-
+`draw()` 循环——我们游戏的心脏和灵魂，允许我们在屏幕上显示元素——每秒会被调用多次。在即时策略游戏中，屏幕上的图形通常是静态的，因此这样做有点没必要；我们通过仅在需要时调用 `draw()` 而不是每秒调用多次来避免这一点。然而，也请记住，`draw()` 函数在发生细微变化后都会重新渲染整个网格，特别是当我们只需要动画少数对象而保持其他部分不变时。
 
 为了简单起见，在书中我们只允许同时存在一个 ATR 坐标，但在专业的复杂的游戏中，`draw()` 函数可能会接受一个包含多个 ATR 坐标的数组，这允许它们通过单个调用刷新许多位置。例如：
 
@@ -1376,13 +1207,15 @@ function draw(atrArray) {
 }
 ```
 
-## 第 2 章 制作等轴测图
+# 第 2 章 制作等轴测图
 
-我们的游戏，以及其他如《西德·梅的文明》、《暴雪的《暗黑破坏神》或 Zynga 的《农场Ville》、《城市Ville》和《咖啡世界》等，使用了一种特殊的等轴投影形式（称为双测投影），在这种投影中，瓦片（通常是菱形或六边形）以 2:1 的比例显示，高度为宽度的一半。
+我们的游戏，以及其他如《西德·梅的文明》、暴雪的《暗黑破坏神》或 Zynga 的《农场物语》、《城市物语》和《咖啡世界》等，使用了一种特殊的等轴投影形式（称为双测投影），在这种投影中，瓦片（通常是菱形或六边形）以 2:1 的比例显示，高度为宽度的一半。
+
+
 
 大多数游戏开发者选择使用这种特定的 2:1 比例显示瓦片，是因为栅格图形中存在一个独特的问题，如果我们了解电脑显示器的工作原理，就能理解这一点。显示器——无论是 CRT、TFT/LCD、LED 还是 OLED——都以与我们游戏中类似的网格方式显示像素，这使得我们能够绘制出完美的垂直或水平线。然而，如果我们需要显示一个非 0° 或 90° 角度的线，情况就会变得复杂。图 2-1 显示了产生的问题。
 
-虽然 90°、45° 和 0° 的线具有规律模式，并且可以与平行线完美地“缝合”，但 30° 线并不如此；它包含了间隙。然而，如果我们使用 2:1 的比例，可以计算 1/2 的反正正切（arctangent）得到 26.5650°，产生如图 2-2 所示的结果。
+虽然 90°、45° 和 0° 的线具有规律模式，并且可以与平行线完美地“缝合”，但 30° 线并不如此；它包含了间隙。然而，如果我们使用 2:1 的比例，可以计算 1/2 的反正切（arctangent）得到 26.5650°，产生如图 2-2 所示的结果。
 
 图 2-1. 按角度绘制的线条中的间隙
 
@@ -1454,19 +1287,21 @@ function draw(atrArray) {
 
 - 西 (West)
   - X: 0
-  - Y: tile.height/2
+  - Y: `tile.height/2`
+
 - 东 (East)
-  - X: tile.width
-  - Y: tile.height/2
+  - X: `tile.width`
+  - Y: `tile.height/2`
 
 图 2-4. 用瓦片构建等轴测网格
 
 - 北 (North)
-  - X: tile.width/2
+  - X: `tile.width/2`
   - Y: 0
+
 - 南 (South)
-  - X: tile.width/2
-  - Y: tile.height/2
+  - X: `tile.width/2`
+  - Y: `tile.height/2`
 
 这意味着如果我们想显示两个瓦片：
 
@@ -1526,7 +1361,6 @@ window.onload = function () {
 
 将等轴测网格中的坐标转换为矩阵坐标比方形网格要复杂一点，特别是在我们处理无限网格时。为了简单起见，我们需要考虑到由于网格居中产生的偏移量。
 
-
 ```javascript
 draw();
 
@@ -1580,18 +1414,10 @@ function draw() {
     }
   }
 }
-}
-}
-}
-<script>
-</head>
-<body>
-<canvas id="myCanvas" width="600" height="300"></canvas>
-</body>
-</html>
 ```
 
 | 60376 |  screencapture | andres | 0.0 | 2 | 2.7 MB Intel (64 bit) |
+
 | 58547 | Safari | andres | 0.0 | 11 | 207.0 MB Intel (64 bit) |
 
 图 2-7. 使用新的瓦片显示方法；CPU 占用率为 0%
@@ -1697,9 +1523,6 @@ for (var row = 0; row < 10; row++) {
 </script>
 ```
 
-
-
-
 ![](img/bc084eea89036c02dab091a0a80afada_75_0.png)
 
 与之前章节中使用的矩形网格不同，在等轴测网格上仅显示我们所在的瓦片需要更多的工作和额外的迭代。图 2-12 显示，如果我们进行滚动并从 1 而不是 0 开始列的迭代，将有一整组瓦片将不会显示，因为它们依赖于列迭代和行的行的迭代。
@@ -1738,7 +1561,7 @@ for (var col = startCol; col < colCount; col++) {
 }
 ```
 
-translatePixelsToMatrix() 函数如下：
+`translatePixelsToMatrix()` 函数如下：
 
 ```
 function translatePixelsToMatrix(canvas, tile, x, y) {
@@ -1772,6 +1595,7 @@ return {
 我们将在后续章节以及最终游戏中使用这种改进方法。
 
 # 第 3 章
+
 界面考虑因素
 
 构建一个外观精美的游戏不仅仅是在网格上布置建筑。一个可运行的游戏需要用户与游戏通信的方式，并且随着游戏向移动端演进，这种通信需求也发生了变化。用户对移动设备的期望通常不同于对桌面计算机的期望，而设备本身增加了新的复杂性。
@@ -1786,7 +1610,6 @@ return {
 - 没有工具提示意味着图标和按钮必须清晰地传达它们将要做。
 - 我们不能依靠右键点击，因为移动设备没有该功能。
 - 在等轴测游戏中，以横屏模式展示游戏比以竖屏模式能更好地利用屏幕空间。
-
 - 重要信息（如账户余额）最好显示在顶部，导航元素最好显示在左下角。（记住，世界上 90% 的人是右手子，他们可能会用左手拿设备，同时用他们灵活的一手——即右手来点击，如图 3-1 所示。）
 
 ![](img/bc084eea89036c02dab091a0a80afada_79_0.png)
@@ -1825,7 +1648,9 @@ HTML 页的 HEAD 部分还将包含一些特殊标签。
 
 由于我们将以不同于某些浏览器的方式处理缩放，我们需要完全禁用默认功能：
 
+```html
 <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+```
 
 像 Apple iPhone、Apple iPad 和某些 Android 手机允许用户将我们的添加到主屏幕。我们可以通过以下标签更改应用程序的图标：
 
@@ -1892,8 +1717,6 @@ ui.addEventListener('mouseup', handler, false);
 </div>
 ```
 
-
-
 ```html
 <ul>
   <li>
@@ -1913,7 +1736,7 @@ ui.addEventListener('mouseup', handler, false);
     </p>
   </li>
 </ul>
-```（注：HTML结构部分已翻译其内部内容）
+```
 
 点击处理函数将看起来像这样：
 
@@ -2225,11 +2048,7 @@ window.onload = function () {
   </div>
 </body>
 </html>
-```（注：HTML结构部分已翻译其内部内容）
-
-
-
-
+```
 
 ### 示例 3-2. 游戏函数 (JavaScript)
 
@@ -2314,7 +2133,9 @@ this.zoomHelper = {
 NORMAL: 1,
 FAR: 0.50,
 CLOSE: 2
+```
 
+```javascript
 // 滚动位置辅助，跟踪滚动状态
 this.scrollPosition = { x: 0, y: 0 };
 
@@ -2389,28 +2210,49 @@ this.draw();
 ```
 
 Game.prototype.handleDrag = function(e) {
+
   var x, y;
+
   e.preventDefault();
+
   if (Modernizr.touch) {
+
     x = e.touches[0].pageX;
+
     y = e.touches[0].pageY;
+
   } else {
+
     x = e.clientX;
+
     y = e.clientY;
+
   }
+
 ```
 
 ```javascript
+
 switch (Tools.current) {
+
   case Tools.MOVE:
+
     if (this.dragHelper.active) {
+
       // 平滑滚动
+
       this.scrollPosition.x -= (this.dragHelper.x - x) / 18;
+
       this.scrollPosition.y -= (this.dragHelper.y - x) / 18;
+
     }
+
     this.draw();
+
     break;
+
 }
+
 ```
 
 Game.prototype.handleMouseUp = function(e) {
@@ -2518,10 +2360,6 @@ Game.prototype.draw = function(srcX, srcY, destX, destY) {
 };
 ```
 
-
-
-
-
 ```javascript
 case this.zoomHelper.FAR:
   return;
@@ -2557,6 +2395,7 @@ mW = (mW === undefined) ? this.grid.width : mW;
 ```
 
 # 第 4 章
+
 ## HTML5 音频与处理优化
 
 HTML5 为游戏设计师带来的远不止是 canvas 元素。对音频（以及视频）的原生支持是关键部分之一，它允许你在与图形相同的 JavaScript 环境中编写游戏。其他部分也改进了你的 JavaScript，无论是通过 Web Workers 分配任务，还是通过本地存储和会话存储让你了解玩家设备上的相关信息。
@@ -2649,10 +2488,6 @@ HTML5 为游戏设计师带来的远不止是 canvas 元素。对音频（以及
 </body>
 </html>
 ```
-
-
-
-
 
 - 一个包含文件本身以及每个文件编码格式的数组
 - 一个开始时间，以秒为单位
@@ -2807,69 +2642,107 @@ window.onload = function () {
 </script>
 
 ```javascript
+
 // 检查当前浏览器是否支持播放 MP3 或 OGG 文件
+
 if (soundIsSupported()) {
+
   // 播放标题界面音乐
+
   playTitleMusic();
+
 }
 
 function playTitleMusic() {
+
   if (su) {
+
     su.play(sources, 0, 16000, globalVolume, false);
+
   }
+
 }
 
 function soundIsSupported() {
+
   var a = new Audio();
+
   var failures = 0;
 
   for (var i = 0; i < sources.length; i++) {
+
     if (a.canPlayType(sources[i][1]) === "maybe" ||
+
         a.canPlayType(sources[i][1]) === "probably") {
+
       failures++;
+
     }
+
   }
+
   return failures === sources.length;
+
 }
 
 function handleClick() {
+
   if (State.current === State.INTRO) {
+
     State.current = State.LOADING;
+
   }
+
 }
 
 function doResize() {
+
   canvas.width = window.clientWidth;
+
   canvas.height = window.innerHeight;
+
 }
 
 function fadeToWhite(alphaVal) {
+
   if (State.current === State.LOADING) {
+
     setTimeout(function() {
+
       State.current = State.LOADED;
+
       showIntro();
+
     }, 30);
+
   }
+
 }
 
 function showIntro() {
+
   if (State.current === State.LOADED) {
+
     c.fillStyle = '#FFFFFF';
+
     c.globalAlpha = 1;
+
     c.fillRect(0, 0, canvas.width, canvas.height);
 
     var phrase = "Click or tap to start";
+
     c.fillStyle = '#000000';
-    c.font = 'bold 16px Arial, sans-serif';
-    var textSize = c.measureText(phrase);
-    var xCoord = (canvas.width / 2) - (textSize.width / 2);
-    c.fillText(phrase, xCoord, (canvas.height / 2) + 50);
-  }
-}
 ```
 
 
 
+`c.font = 'bold 16px Arial, sans-serif';`
+
+`var textSize = c.measureText(phrase);`
+
+`var xCoord = (canvas.width / 2) - (textSize.width / 2);`
+
+`c.fillText(phrase, xCoord, (canvas.height / 2) + 50);`
 
 解决——在 JavaScript 中，它们会产生一种名为“界面锁定”的效果，浏览器会冻结直到操作完成。
 
@@ -2890,7 +2763,7 @@ Workers 并不是能够魔法帮助我们解决那些占用 100% CPU 处理能�
 var worker = new Worker(PATH_TO_A_JS_SCRIPT);
 ```
 
-其中 PATH_TO_A_JS_SCRIPT 可以是 `astar.js`。一旦创建了 worker，我们可以在任何时候通过调用 `worker.close()` 来终止执行。如果 worker 已关闭，我们需要执行新操作或创建一个新的 worker 对象。
+其中 `PATH_TO_A_JS_SCRIPT` 可以是 `astar.js`。一旦创建了 worker，我们可以在任何时候通过调用 `worker.close()` 来终止执行。如果 worker 已关闭，我们需要执行新操作或创建一个新的 worker 对象。
 
 与 Web Workers 之间的双向通信是通过使用 `worker.postMessage(object)` 方法发送消息，并在 `worker.onmessage` 事件上定义回调函数来实现的。此外，你可以定义一个 `onerror` 处理器来处理 worker 错误。
 
@@ -2912,71 +2785,53 @@ var worker = new Worker(PATH_TO_A_JS_SCRIPT);
 <head>
 <meta charset="UTF-8" />
 <title>Example 17 - (在未设置索引的网格上运行 A* web workers)</title>
-
 <script>
-
 window.onload = function () {
   var tileMap = [];
-
   var path = {
     start: null,
     stop: null
-}
-
+  };
   var tile = {
     width: 6,
     height: 6
-}
-
+  };
   var grid = {
     width: 100,
     height: 100
-}
-
+  };
   var canvas = document.getElementById('myCanvas');
   canvas.addEventListener('click', handleClick, false);
-
-```
-
+}
 var c = canvas.getContext('2d');
-
 // Generate 1000 random elements
 for (var i = 0; i < 1000; i++) {
   generateRandomElement();
 }
-
 // Draw the entire grid
 draw();
-
 function handleClick(e) {
   // When a click is detected, translate the mouse
   // coordinates to pixel coordinates
   var row = Math.floor(e.clientX - 10) / tile.width;
   var column = Math.floor(e.clientY - 10) / tile.height;
-
   if (tileMap[row] == null) {
     tileMap[row] = [];
   }
-
   if (tileMap[row][column] != 0 && tileMap[row][column] != 1) {
     tileMap[row][column] = 0;
   }
-
   if (path.start == null) {
     path.start = {x: row, y: column};
   } else {
     path.stop = {x: row, y: column};
   }
-
   callWorker(path, processWorkerResults);
-
   path.start = null;
   path.stop = null;
 }
-
 draw();
 }
-
 function callWorker(path, callback) {
   var w = new Worker('astar.js');
   w.postMessage({
@@ -2990,37 +2845,30 @@ function callWorker(path, callback) {
   });
   w.onmessage = callback;
 }
-
 function processWorkerResults(e) {
   if (e.data.length > 0) {
-
-for (var i = 0, len = e.data.length; i < len; i++) {
-  if (tileMap.data[i].x === undefined) {
-    tileMap[e.data[i].x] = [];
+    for (var i = 0, len = e.data.length; i < len; i++) {
+      if (tileMap.data[i].x === undefined) {
+        tileMap[e.data[i].x] = [];
+      }
+      tileMap[e.data[i].x][e.data[i].y] = 0;
+    }
   }
-
-  tileMap[e.data[i].x][e.data[i].y] = 0;
 }
-}
-
 function getRandomElement() {
   var randRow = Math.floor(Math.random() * (grid.width + 1));
   var randCol = Math.floor(Math.random() * (grid.height + 1));
 }
-
 if (tileMap[randRow] == null) {
   tileMap[randRow] = [];
 }
-
 tileMap[randRow][randCol] = 1;
 }
-
 function draw(srcX, srcY, destX, destY) {
   srcX = (srcX === undefined) ? 0 : srcX;
   srcY = (srcY === undefined) ? 0 : srcY;
   destX = (destX === undefined) ? canvas.width : destX;
   destY = (destY === undefined) ? canvas.height : destY;
-
   c.fillStyle = '#FFFFFF';
   c.fillRect(srcX, srcY, destX, destY);
 }
@@ -3036,25 +2884,20 @@ var n = new Node(this.currentNode, {x: row, y: col});
 n.G = this.currentNode.G + 1;
 n.H = this.getDistance(this.currentNode, n);
 n.F = n.G + n.H;
-
 this.openList.add(n);
 }
-
 while (this.currentNode.parentNode !== null) {
   this.path.add(this.currentNode);
   this.currentNode = this.currentNode.parentNode;
 }
-
 return this.path.list;
 }
 naStar.prototype.checkDifference = function(src, dest) {
   return (src.x === dest.x && src.y === dest.y);
 }
-
 aStar.prototype.getDistance = function(src, dest) {
   return Math.abs(src.x - dest.x) + Math.abs(src.y - dest.y);
 }
-
 function Node(parentNode, src) {
   this.parentNode = parentNode;
   this.x = src.x;
@@ -3063,43 +2906,35 @@ function Node(parentNode, src) {
   this.G = 0;
   this.H = 0;
 }
-
 var nodeList = function(sorted, sortParam) {
   this.sort = (sorted === undefined) ? [] : sorted;
   this.sortParam = (sortParam === undefined) ? 'F' : sortParam;
   this.list = [];
   this.coordMatrix = [];
 }
-
 NodeList.prototype.add = function(element) {
   this.list.push(element);
   if (this.coordMatrix[element.x] === undefined) {
     this.coordMatrix[element.x] = [];
   }
   this.coordMatrix[element.x][element.y] = element;
-
   if (this.sort) {
     var sortBy = this.sort;
     this.list.sort(function(o1, o2) { return o1 - o2; });
   }
 }
-
 NodeList.prototype.remove = function(pos) {
   this.list.splice(pos, 1);
 }
-
 NodeList.prototype.get = function(pos) {
   return this.list[pos];
 }
-
 NodeList.prototype.size = function() {
   return this.list.length;
 }
-
 NodeList.prototype.isEmpty = function() {
   return (this.list.length == 0);
 }
-
 NodeList.prototype.getByCoord = function(x, y) {
   if (this.coordMatrix[x] === undefined) {
     return null;
@@ -3112,12 +2947,12 @@ NodeList.prototype.getByCoord = function(x, y) {
     }
   }
 }
-
 NodeList.prototype.print = function() {
   for (var i = 0; i < this.list.length; i++) {
     console.log(this.list[i].x + ' ' + this.list[i].y);
   }
 }
+```
 ```
 
 ## 本地存储与会话存储
@@ -3177,31 +3012,25 @@ localStorage.clear()
 <head>
 <meta charset="UTF-8">
 <title>Example 1 (localStorage)</title>
-
 <script>
 window.onload = function () {
   var binMatrix = null;
   var matrixSize = 25;
-
   // 这是我们要存储、加载或移除数据的键
   KEY_NAME = "matrix";
-
   var matrix = document.getElementById('matrix');
   var load = document.getElementById('load');
   var save = document.getElementById('save');
   var clear = document.getElementById('clear');
-
   binMatrix = initializeMatrix(matrixSize);
   printMatrix(binMatrix, matrix);
-
   // 处理按钮点击
   load.addEventListener('click', handleLoad);
   save.addEventListener('click', handleSave);
   clear.addEventListener('click', handleError);
-
+}
 function handleLoad() {
   var m = localStorage.getItem(KEY_NAME);
-
   try {
     // 如果还没有设置键，或者已经删除了，变量 m 将为空
     if (m == null) {
@@ -3218,7 +3047,6 @@ function handleLoad() {
     alert("加载时出错：" + e);
   }
 }
-
 function handleSave() {
   try {
     // 读取 "matrix" div 内部复选框的值并相应地更新数组
@@ -3236,19 +3064,15 @@ function handleSave() {
     alert("保存时出错：" + e);
   }
 }
-
 function handleError() {
   if (confirm("确定要清空矩阵吗？")) {
     try {
       localStorage.removeItem(KEY_NAME);
-
       // 清空原始矩阵
       matrix.innerHTML = null;
       binMatrix = null;
-
       // 生成矩阵
       binMatrix = initializeMatrix(matrixSize);
-
       // 重新打印
       printMatrix(binMatrix, matrix);
     } catch (e) {
@@ -3256,23 +3080,19 @@ function handleError() {
     }
   }
 }
-
 /**
  * 通用矩阵初始化程序
  */
 function initializeMatrix(size) {
   var m = [];
-
   for (var i = 0; i < size; i++) {
     m[i] = [];
     for (var j = 0; j < size; j++) {
       m[i][j] = 0;
     }
   }
-
   return m;
 }
-
 /**
 * 下一个函数获取矩阵并转换为复选框的长字符串
 * 插入到 "matrix" <div> 中。
@@ -3283,7 +3103,6 @@ function initializeMatrix(size) {
  */
 function printMatrix(m, elem) {
   var str = "";
-
   for (var i = 0, r = m.length; i < r; i++) {
     for (var j = 0, r = m[i].length; j < r; j++) {
       str += '<input type="checkbox" class="' + i + '-' + j + '">';
@@ -3291,26 +3110,21 @@ function printMatrix(m, elem) {
     }
   }
   str += '<div class="clb">' + str + '</div>';
-
   elem.innerHTML = str;
 }
 </script>
-
 <style type="text/css" media="screen">
 body {
   margin: 20px;
   padding: 0px;
 }
-
 #matrix input {
   float: left;
   padding: 0px;
   margin: 0px;
 }
-
 div.clb { clear: both; }
 </style>
-
 <body>
 <input type="button" id="load" value="Load Matrix" />
 <input type="button" id="save" value="Save Matrix" />
@@ -3319,16 +3133,16 @@ div.clb { clear: both; }
 </body>
 </html>
 ```
+```
 
 本地存储与会话存储 | 103
 
 
-
-
 ```html
-<div id="matrix"></</div>
+<div id="matrix"></div>
 </body>
 </html>
+```
 ```
 
 示例 4-6 的完整代码存储在代码仓库的示例文件夹中的 `ex18-localStorage.html` 中。
@@ -3442,10 +3256,6 @@ result = result * 12 = 3456 gold coins
 
 虽然防止用户修改我们游戏的客户端部分极其困难，甚至是不可能的，但使用之前解释的方法，我们完全防止恶意用户获得比其他玩家不公平的优势，因为他们所做的修改只会影响他们而不会影响服务器。可以添加到此功能中的另一个有用特性是 Zynga 在其某些游戏中使用的一种概念，即不是像这种情况下那样持续产生利润，而是用户必须“收集”由建筑产生的利润。例如，如果一栋建筑每 30 分钟产生 500 金币，而用户 3 天没有玩，那么当他收集时将获得 500 金币。要实现这种方法，我们需要检查时间差的结果是否大于建筑产生的利润；如果是，则将一个标记设为 true。然后用户需要手动“收集”金钱，并将标记重置为 false。
 
-
-
-
-
 对于我们的游戏，我们将使用 MySQL 和 PHP 实现此数据模型以及控制其行为的软件：
 
 - 你可以在你的系统上安装并配置 MySQL；请参阅 http://dev.mysql.com/usingmysql/get_started.html。
@@ -3511,21 +3321,13 @@ source <PATH_TO_SQL_FILE>;
 ```
 mysql source /Users/andres/Desktop/model-filled.sql
 Query OK, 0 rows affected (0.00 sec)
-
 Query OK, 0 rows affected (0.00 sec)
-
 Query OK, 4 rows affected (0.05 sec)
-
 Query OK, 4 rows affected (0.05 sec)
-
 Query OK, 0 rows affected (0.07 sec)
-
 Query OK, 0 rows affected (0.00 sec)
-
 Query OK, 0 rows affected (0.10 sec)
-
 Query OK, 0 rows affected (0.09 sec)
-
 mysql>
 ```
 
@@ -3543,10 +3345,8 @@ GRANT SELECT, INSERT, UPDATE, DELETE ON mygame.* TO 'mygameuser'@'localhost';
 ```
 mysql> CREATE USER 'mygameuser'@'localhost' IDENTIFIED BY 'game123';
 Query OK, 0 rows affected (0.09 sec)
-
 mysql> GRANT SELECT, INSERT, UPDATE, DELETE ON mygame.* TO 'mygameuser'@'localhost';
 Query OK, 0 rows affected (0.07 sec)
-
 mysql>
 ```
 
@@ -3560,9 +3360,6 @@ mysql>
 - classes/class.buildings.php：处理与建筑相关的操作
 - classes/class.operations.php：负责实例化处理
 
-
-
-
 ```javascript
 ResourceLoader.prototype.addResource = function(filePath, fileType, resourceType) {
   var res = {
@@ -3572,26 +3369,22 @@ ResourceLoader.prototype.addResource = function(filePath, fileType, resourceType
   };
   this.resources.push(res);
 }
-
 ResourceLoader.prototype.startPreloading = function() {
   for (var i = 0, len = this.resources.length; i < len; i++) {
     switch(this.resources[i].resourceType) {
       case ResourceType.IMAGE:
         var img = new Image();
         var rl = this;
-
         img.src = this.resources[i].filePath;
         img.addEventListener('load', function() { rl.onResourceLoaded(); }, false);
         break;
       case ResourceType.SOUND:
         var a = new Audio();
-
         // 只预加载我们可以播放的声音文件。
         if (a.canPlayType(this.resources[i].fileType) === "maybe" ||
             a.canPlayType(this.resources[i].fileType) === "probably") {
           a.src = this.resources[i].filePath;
           a.type = this.resources[i].fileType;
-
           var rl = this;
           a.addEventListener('canplaythrough', function() {
             a.removeEventListener('canplaythrough', arguments.callee, false);
@@ -3605,21 +3398,17 @@ ResourceLoader.prototype.startPreloading = function() {
     }
   }
 }
-
 ResourceLoader.prototype.onResourceLoaded = function() {
   this.resourcesLoaded++;
-
   if (this.onPartial != undefined) {
     this.onPartial();
   }
-
   if (this.resourcesLoaded == this.resources.length) {
     if (this.onComplete != undefined) {
       this.onComplete();
     }
   }
 }
-
 ResourceLoader.prototype.isComplete = function() {
   if (this.resources.length == this.resourcesLoaded) {
     return true;
@@ -3632,13 +3421,11 @@ ResourceLoader.prototype.isComplete = function() {
 
 ```javascript
 var rl = new ResourceLoader();
-
 rl.addResource('image1.png', null, ResourceType.IMAGE);
 rl.addResource('image2.jpg', null, ResourceType.IMAGE);
 rl.addResource('image3.gif', null, ResourceType.IMAGE);
 rl.addResource('sound.ogg', 'audio/ogg', ResourceType.SOUND);
 rl.addResource('sound.mp3', 'audio/mp3', ResourceType.SOUND);
-
 rl.startPreloading();
 ```
 
@@ -3670,7 +3457,6 @@ function handleGameState(nextState) {
     GameState.current = nextState;
   }
 }
-
 switch(GameState.current) {
   case GameState.LOADING:
     // ...
@@ -3698,24 +3484,18 @@ switch(GameState.current) {
 function preloadResources(canvas, callback) {
   var c = canvas.getContext('2d');
   var rl = new ResourceLoader(printProgressBar, callback);
-
   rl.addResource('..//title.png', null, ResourceType.IMAGE);
   rl.addResource('..//ui-icons.png', null, ResourceType.IMAGE);
   rl.addResource('..//sprites.png', null, ResourceType.IMAGE);
-
   rl.addResource('../sounds/title.ogg', 'audio/ogg', ResourceType.SOUND);
   rl.addResource('../sounds/title.mp3', 'audio/mp3', ResourceType.SOUND);
-
   rl.startProgressBar();
 }
-
 function printProgressBar() {
   var percent = Math.floor(rl.resourcesLoaded * 100) / rl.resources.length;
   var width = Math.floor(percent * (canvas.width - 1)) / 100;
-
   c.fillStyle = '#000000';
   c.fillRect(0, canvas.height - 30, canvas.width, canvas.height);
-
   c.fillStyle = '#FFFFFF';
   c.fillRect(1, canvas.height - 28, width, canvas.height - 6);
 }
@@ -3723,7 +3503,7 @@ function printProgressBar() {
 
 此函数还会打印图 5-2 所示的进度条。
 
-你还会注意到我们没有加载 `cinema.png` 或 `tree.png`；我们加载的是一个名为 `sprites.png` 的文件。为了减少请求数量，我们没有单独加载每个图像，而是将它们合并到一个文件中。
+你还会注意到我们没有加载 `cinema.png` 或 `tree.png`；我们加载的是一个名为 `sprites.png` 的文件。为了减少请请求数量，我们没有单独加载每个图像，而是将它们合并到一个文件中。
 
 一旦请求完成，`handleGameState()` 将被调用，传入 `GameState.LOADED`。此时，`GameState.LOADED` 负责创建 `Game` 实例。
 
@@ -3733,7 +3513,6 @@ function printProgressBar() {
 var SERVER_PATH_URL = "http://localhost:8080/";
 function request(url, callback) {
   var req = false;
-
   if (window.XMLHttpRequest) {
     try {
       req = new XMLHttpRequest();
@@ -3741,7 +3520,6 @@ function request(url, callback) {
       // 什么都不做。
     }
   }
-
   if (req) {
     req.open("GET", url, true);
     req.send(null);
@@ -3762,11 +3540,8 @@ function request(url, callback) {
 }
 ```
 
-
-
 ```javascript
-}
-else {
+} else {
   // 不支持 XMLHttpRequest
   callback('ERROR');
 }
@@ -3776,11 +3551,9 @@ else {
 // 购买
 function purchase(buildingId, row, col, callback) {
   var url = SERVER_PATH_URL + 'purchase.php';
-
   url += "?buildingId=" + buildingId;
   url += "&x=" + row;
   url += "&y=" + col;
-
   request(url, callback);
 }
 ```
@@ -3789,10 +3562,8 @@ function purchase(buildingId, row, col, callback) {
 // 拆除
 function demolish(row, col) {
   var url = "?file=demolish.php";
-
   url += "?x=" + row;
   url += "&y=" + col;
-
   request(url, callback);
 }
 ```
@@ -3801,7 +3572,6 @@ function demolish(row, col) {
 // 同步
 function sync() {
   var url = SERVER_PATH_URL + 'sync.php';
-
   request(url, callback);
 }
 ```
@@ -3840,7 +3610,6 @@ Game.prototype.checkTileIsBusy = function(obj, row, col) {
 Game.prototype.handleMouseDown = function(e) {
   e.preventDefault();
 }
-
 switch (Tools.current) {
   case Tools.BUILD:
     if (this.buildHelper.current == null) {
@@ -3850,7 +3619,6 @@ switch (Tools.current) {
     if (!this.checkTileIsBusy(this.buildHelper.current, pos.row, pos.col)) {
       var obj = this.buildHelper.current;
       var t = this;
-
       var processResponse = function(resp) {
         if (resp.substr(0, 2) == 'OK') {
           var buildingInstance = resp.substr(3, resp.length);
@@ -3866,7 +3634,6 @@ switch (Tools.current) {
         }
         t.draw();
       }
-
       purchase(obj.buildingTypeId, pos.row, pos.col, processResponse);
     } else {
       alert("在此位置无法购买建筑");
@@ -3885,17 +3652,14 @@ switch (Tools.current) {
     break;
   case Tools.DEMOLISH:
     var pos = this.translatePixelsToMatrix(e.clientX, e.clientY);
-
     if (this.tileMap[pos.row] != undefined && this.tileMap[pos.row][pos.col] != undefined) {
       var obj = this.tileMap[pos.row][pos.col];
-
       // 不是建筑，而是建筑部分。获取建筑的引用。
       if (obj instanceof BuildingPortion) {
         pos.row += obj.x;
         pos.col += obj.y;
         obj = this.tileMap[pos.row][pos.col];
       }
-
       var t = this;
       var processResponse = function(resp) {
         if (resp.substr(0, 2) == "OK") {
@@ -3910,7 +3674,6 @@ switch (Tools.current) {
         }
         t.draw();
       }
-
       demolish(pos.row, pos.col, processResponse);
     }
     break;
@@ -3936,8 +3699,6 @@ function refresh() {
 }
 ```
 
-
-
 ```css
 @keyframes moveLeftFromRight {
   0% {
@@ -3962,31 +3723,26 @@ div.cloud {
   width: 566px;
   height: 243px;
   pointer-events: none;
-
   -webkit-animation-timing-function: linear;
   -webkit-animation-name: moveLeftFromRight;
   -webkit-animation-duration: 2s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-direction: alternate;
-
   -moz-animation-timing-function: linear;
   -moz-animation-name: moveLeftFromRight;
   -moz-animation-duration: 60s;
   -moz-animation-iteration-count: infinite;
   -moz-animation-direction: alternate;
-
   -ms-animation-timing-function: linear;
   -ms-animation-name: moveLeftFromRight;
   -ms-animation-duration: 60s;
   -ms-animation-iteration-count: infinite;
   -ms-animation-direction: alternate;
-
   -o-animation-timing-function: linear;
   -o-animation-name: moveLeftFromRight;
   -o-animation-duration: 60s;
   -o-animation-iteration-count: infinite;
   -o-animation-direction: alternate;
-
   animation-timing-function: linear;
   animation-name: moveLeftFromRight;
   animation-duration: 60s;
@@ -4028,10 +3784,8 @@ if (this.show) {
     if (this.shadow === null) { // 影子尚未创建
       var scnv = document.createElement("canvas");
       var sctx = scnv.getContext("2d");
-
       scnv.width = this.width;
       scnv.height = this.height;
-
       sctx.drawImage(this.spritesheet,
         this.offsetX,
         this.offsetY,
@@ -4041,21 +3795,16 @@ if (this.show) {
         0,
         this.width * this.zoomLevel,
         this.height * this.zoomLevel);
-
       var idata = sctx.getImageData(0, 0, scnv.width, scnv.height);
-
       for (var i = 0, len = idata.data.length; i < len; i += 4) {
         idata.data[i] = 0; // R
         idata.data[i + 1] = 0; // G
         idata.data[i + 2] = 0; // B
       }
-
       sctx.clearRect(0, 0, scnv.width, scnv.height);
       sctx.putImageData(idata, 0, 0);
-
       this.shadow = sctx;
     }
-
     c.save();
     c.globalAlpha = 0.3;
     var sw = this.width * this.zoomLevel;
@@ -4063,7 +3812,6 @@ if (this.show) {
     c.drawImage(this.shadow.canvas, this.posX, this.posY - sh, sw, sh * 2);
     c.restore();
   }
-
   c.drawImage(this.spritesheet,
     this.offsetX,
     this.offsetY,
@@ -4123,9 +3871,6 @@ if (this.show) {
 
 本书侧重于实现服务器端。关于 Facebook 平台支持的认证方案的更多信息，请参阅 http://developers.facebook.com/docs/authentication/。
 
-
-
-
 简而言之，当用户访问 http://apps.facebook.com/tourist-resort 时，Facebook 会自动调用我们的 Canvas URL，传递一些参数以帮助身份验证。
 
 然后，我们只需要包含 Facebook API 文件，使用我们的 Application ID 和 Application Secret 创建一个新的 Facebook 对象实例，就可以获取用户的信息：
@@ -4133,12 +3878,10 @@ if (this.show) {
 ```php
 <?php
 require 'facebook/src/facebook.php';
-
 $fb = new Facebook(array(
     'appid' => '<YOUR_APPLICATION_ID>',
     'secret' => '<YOUR_APPLICATION_SECRET>',
 ));
-
 $user = $fb->getUser();
 echo '<pre>';
 print_r($user);
@@ -4162,7 +3905,7 @@ if ($user) {
 
 $fb->api('/me') 尝试通过查询该用户的 Facebook Graph API 来填充 $user_profile 变量（有关 Facebook Graph API 的更多信息，请参阅 http://developers.facebook.com/docs/reference/api/），并在发生异常时抛出异常。
 
-为了让用户使用其 Facebook 凭据登录我们的应用程序，请添加以下行：
+为了让用户使用其 Facebook 凭据登录我们的应用程请添加以下行：
 
 ```php
 <?php

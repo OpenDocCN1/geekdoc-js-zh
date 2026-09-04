@@ -1,3 +1,4 @@
+
 # 附录 C　初识 AngularJS
 
 AngularJS 是一套符合 MVC 架构的 JavaScript 框架，由 Google 提出与维护。AngularJS 旨在简化 Web App 的开发与测试，它以 HTML 作为视图，并将使用 JavaScript 编写的模型与其绑定在一起。AngularJS 的官方网站为[`angularjs.org/`](https://angularjs.org/)，可以在上面找到最新版的代码和完整的文档。
@@ -52,6 +53,7 @@ AngularJS 使用 HTML 作为视图，HTML 就相当于 MVC 中的 V。在`<html>
 这个视图呈现一个输入框，在这个输入框中输入的任何字符都会立即显示在输入框的后面。
 
 ![enter image description here](img/00063.jpeg)
+
 *一个简单的 AngularJS 视图*
 
 除了直接对数据进行引用外，也可以使用循环来输出一个列表，如：
@@ -65,6 +67,7 @@ AngularJS 使用 HTML 作为视图，HTML 就相当于 MVC 中的 V。在`<html>
 ```
 
 ![enter image description here](img/00064.jpeg)
+
 *在视图中循环输出数据*
 
 下面我们来介绍过滤器。过滤器可以进一步限定展示的数据范围及形式，如下面的例子：
@@ -81,6 +84,7 @@ AngularJS 使用 HTML 作为视图，HTML 就相当于 MVC 中的 V。在`<html>
 这样当在文本框中进行输入时，将只列出包含输入字符的名称：
 
 ![enter image description here](img/00065.jpeg)
+
 *过滤器*
 
 还可以通过`orderBy`来指定排列依据，如：
@@ -96,6 +100,7 @@ AngularJS 使用 HTML 作为视图，HTML 就相当于 MVC 中的 V。在`<html>
 这样最终的显示顺序将与原始数据的顺序无关，会根据给定的属性重新排列：
 
 ![enter image description here](img/00066.jpeg)
+
 *排列顺序*
 
 使用`uppercase`和`lowercase`来限定显示文本大小写格式，如：
@@ -109,9 +114,10 @@ AngularJS 使用 HTML 作为视图，HTML 就相当于 MVC 中的 V。在`<html>
 ```
 
 ![enter image description here](img/00067.jpeg)
+
 *使用大写格式显示文本*
 
-## C.2　$scope
+## C.2　`$scope`
 
 `$scope`是连接视图与控制器的枢纽。在上一节中我们通过`data-ng-init`指定数据，但如何动态指定数据呢？这就需要`$scope`的帮助。
 
@@ -148,7 +154,7 @@ function petController($scope){
 
 `$scope`可以有任意多的属性，只要你喜欢， 同时相应的变量也可以在相应的区间使用。
 
-## C.3　module 与路由
+## C.3　`module`与路由
 
 `module`用来初始化应用，通过`angular.module`方法来创建`module`，如：
 
@@ -247,7 +253,7 @@ myApp.config(function($routeProvider){
 var myApp = angular.module('myApp', [ngRoute]); 
 ```
 
-下面来编写 module.js 脚本：
+下面来编写`module.js`脚本：
 
 ```js
 var myApp = angular.module('myApp', ['ngRoute']);
@@ -275,7 +281,7 @@ myApp.config(function($routeProvider){
 }); 
 ```
 
-最后编写 view1.html 和 view2.html 两个视图，view1.html 视图：
+最后编写`view1.html`和`view2.html`两个视图，`view1.html`视图：
 
 ```js
 <ul>
@@ -283,7 +289,7 @@ myApp.config(function($routeProvider){
 </ul> 
 ```
 
-view2.html 视图：
+`view2.html`视图：
 
 ```js
 <ul>
@@ -291,15 +297,17 @@ view2.html 视图：
 </ul> 
 ```
 
-最后运行的结果如下，默认加载 view1.html 视图：
+最后运行的结果如下，默认加载`view1.html`视图：
 
 ![enter image description here](img/00068.jpeg)
-*默认加载 view1.html 视图*
 
-当点击 Price 链接后加载 view2.html 视图：
+*默认加载`view1.html`视图*
+
+当点击 Price 链接后加载`view2.html`视图：
 
 ![enter image description here](img/00069.jpeg)
-*点击 Price 链接后加载 view2.html 视图*
+
+*点击 Price 链接后加载`view2.html`视图*
 
 由于动态加载视图是通过`XMLHttpRequest`实现的，所以测试时无法在本地运行¹。
 

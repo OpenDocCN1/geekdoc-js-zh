@@ -1,15 +1,16 @@
-# JavaScript 正则表达式使用指南
 
+
+# JavaScript 正则表达式使用指南
 
 ## 修饰符
 
-### ♥ i
+### `i`
 
-☺ 描述
+#### 描述
 
-执行不区分大小写的匹配
+执行不区分大小写的匹配。
 
-☺ 示例代码
+#### 示例代码
 
 ```html
 <!DOCTYPE html>
@@ -30,17 +31,17 @@ function myFunction() {
 </html>
 ```
 
-♣ 输出
+#### 输出
 
 Youtube
 
-### ♥ g
+### `g`
 
-☺ 描述
+#### 描述
 
-执行全局匹配（查找所有匹配项，而不是在第一个匹配后停止）
+执行全局匹配（查找所有匹配项，而不是在第一个匹配后停止）。
 
-☺ 示例代码
+#### 示例代码
 
 ```html
 <!DOCTYPE html>
@@ -61,17 +62,17 @@ function myFunction() {
 </html>
 ```
 
-♣ 输出
+#### 输出
 
 Welcome
 
-### ♥ m
+### `m`
 
-☺ 描述
+#### 描述
 
-执行多行匹配
+执行多行匹配。
 
-☺ 示例代码
+#### 示例代码
 
 ```html
 <!DOCTYPE html>
@@ -92,19 +93,19 @@ function myFunction() {
 </html>
 ```
 
-♣ 输出
+#### 输出
 
 Welcome
 
 ## 方括号
 
-### ♥ [abc]
+### `[abc]`
 
-☺ 描述
+#### 描述
 
-查找方括号内的任意字符
+查找方括号内的任意字符。
 
-☺ 示例代码
+#### 示例代码
 
 ```html
 <!DOCTYPE html>
@@ -125,17 +126,17 @@ function myFunction() {
 </html>
 ```
 
-♣ 输出
+#### 输出
 
 o,o,o,o
 
-### ♥ [^abc]
+### `[^abc]`
 
-☺ 描述
+#### 描述
 
-查找不在方括号内的任意字符
+查找不在方括号内的任意字符。
 
-☺ 示例代码
+#### 示例代码
 
 ```html
 <!DOCTYPE html>
@@ -156,17 +157,17 @@ function myFunction() {
 </html>
 ```
 
-♣ 输出
+#### 输出
 
 W,e,l,c,m,e, ,t, ,m,y, ,b,k,s,!
 
-### ♥ [0-9]
+### `[0-9]`
 
-☺ 描述
+#### 描述
 
-查找方括号内的任意数字
+查找方括号内的任意数字。
 
-☺ 示例代码
+#### 示例代码
 
 ```html
 <!DOCTYPE html>
@@ -187,17 +188,17 @@ function myFunction() {
 </html>
 ```
 
-♣ 输出
+#### 输出
 
 3,4,5
 
-### ♥ [⁰-9]
+### `[^0-9]`
 
-☺ 描述
+#### 描述
 
-查找不在方括号内的任意数字
+查找不在方括号内的任意数字。
 
-☺ 示例代码
+#### 示例代码
 
 ```html
 <!DOCTYPE html>
@@ -209,7 +210,7 @@ function myFunction() {
 <script>
 function myFunction() {
     var str = "1234567890";
-    var pattern = /[³-5]/g;
+    var pattern = /[^3-5]/g;
     var result = str.match(pattern);
     document.getElementById("demo").innerHTML = result;
 }
@@ -218,17 +219,17 @@ function myFunction() {
 </html>
 ```
 
-♣ 输出
+#### 输出
 
 1,2,6,7,8,9,0
 
-### ♥ (x|y)
+### `(x|y)`
 
-☺ 描述
+#### 描述
 
-查找指定的任意一个选项
+查找指定的任意一个选项。
 
-☺ 示例代码
+#### 示例代码
 
 ```html
 <!DOCTYPE html>
@@ -249,19 +250,19 @@ function myFunction() {
 </html>
 ```
 
-♣ 输出
+#### 输出
 
 2,0,2,0
 
 ## 元字符
 
-### ♥ .
+### `.`
 
-☺ 描述
+#### 描述
 
-查找单个字符，除了换行或行终止符
+查找单个字符，除了换行或行终止符。
 
-☺ 示例代码
+#### 示例代码
 
 ```html
 <!DOCTYPE html>
@@ -282,17 +283,17 @@ function myFunction() {
 </html>
 ```
 
-♣ 输出
+#### 输出
 
 Wel,Wel
 
-## ♥ \w
+### `\w`
 
-☺ 描述
+#### 描述
 
-查找单词字符
+查找单词字符。
 
-☺ 示例代码
+#### 示例代码
 
 ```html
 <!DOCTYPE html>
@@ -313,17 +314,17 @@ function myFunction() {
 </html>
 ```
 
-♣ 输出
+#### 输出
 
 W,e,l,c,o,m,e,t,o,m,y,b,o,o,k,s
 
-## ♥ \W
+### `\W`
 
-☺ 描述
+#### 描述
 
-查找非单词字符
+查找非单词字符。
 
-☺ 示例代码
+#### 示例代码
 
 ```html
 <!DOCTYPE html>
@@ -336,31 +337,26 @@ W,e,l,c,o,m,e,t,o,m,y,b,o,o,k,s
 function myFunction() {
     var str = "Welcome to my books!.";
     var pattern = /\W/g;
+    var result = str.match(pattern);
+    document.getElementById("demo").innerHTML = result;
 }
 </script>
 </body>
 </html>
 ```
 
+#### 输出
 
-
-
-
-```
-    var result = str.match(pattern);
-    document.getElementById("demo").innerHTML = result;
-}
-</script>
-</body>
-</html>
-```
-♣ 输出
 , , ,!,.
 
-## ♥ \d
-#### ☺ 描述
-查找一个数字
-#### ☺ 示例代码
+### `\d`
+
+#### 描述
+
+查找一个数字。
+
+#### 示例代码
+
 ```html
 <!DOCTYPE html>
 <html>
@@ -370,22 +366,28 @@ function myFunction() {
 <p id="demo"></p>
 <script>
 function myFunction() {
-    var str = "Welcome to my books! 2nd 3rd 4th";
-    var pattern = /\d/g;
-    var result = str.match(pattern);
-    document.getElementById("demo").innerHTML = result;
+    var str = "Welcome to my books! 2nd 3rd 4th";
+    var pattern = /\d/g;
+    var result = str.match(pattern);
+    document.getElementById("demo").innerHTML = result;
 }
 </script>
 </body>
 </html>
 ```
-♣ 输出
+
+#### 输出
+
 2,3,4
 
-## ♥ \D
-#### ☺ 描述
-查找一个非数字字符
-#### ☺ 示例代码
+### `\D`
+
+#### 描述
+
+查找一个非数字字符。
+
+#### 示例代码
+
 ```html
 <!DOCTYPE html>
 <html>
@@ -394,22 +396,28 @@ function myFunction() {
 <button onclick="myFunction()">测试</button>
 <script>
 function myFunction() {
-var str = "Welcome to my books! 2nd 3rd 4th";
-var pattern = /\D/g;
-var result = str.match(pattern);
-document.getElementById("demo").innerHTML=result;
+    var str = "Welcome to my books! 2nd 3rd 4th";
+    var pattern = /\D/g;
+    var result = str.match(pattern);
+    document.getElementById("demo").innerHTML=result;
 }
 </script>
 </body>
 </html>
 ```
-♣ 输出
+
+#### 输出
+
 W,e,l,c,o,m,e, ,t,o, ,m,y, ,b,o,o,k,s,!, ,n,d, ,r,d, ,t,h
 
-## ♥ \s
-#### ☺ 描述
-查找一个空白字符
-#### ☺ 示例代码
+### `\s`
+
+#### 描述
+
+查找一个空白字符。
+
+#### 示例代码
+
 ```html
 <!DOCTYPE html>
 <html>
@@ -419,22 +427,28 @@ W,e,l,c,o,m,e, ,t,o, ,m,y, ,b,o,o,k,s,!, ,n,d, ,r,d, ,t,h
 <p id="demo"></p>
 <script>
 function myFunction() {
-    var str = "Welcome to my books!";
-    var pattern = /\s/g;
-    var result = str.match(pattern);
-    document.getElementById("demo").innerHTML = result;
+    var str = "Welcome to my books!";
+    var pattern = /\s/g;
+    var result = str.match(pattern);
+    document.getElementById("demo").innerHTML = result;
 }
 </script>
 </body>
 </html>
 ```
-♣ 输出
+
+#### 输出
+
 , ,
 
-## ♥ \S
-#### ☺ 描述
-查找一个非空白字符
-#### ☺ 示例代码
+### `\S`
+
+#### 描述
+
+查找一个非空白字符。
+
+#### 示例代码
+
 ```html
 <!DOCTYPE html>
 <html>
@@ -444,22 +458,28 @@ function myFunction() {
 <p id="demo"></p>
 <script>
 function myFunction() {
-    var str = "Welcome to my books!";
-    var pattern = /\S/g;
-    var result = str.match(pattern);
-    document.getElementById("demo").innerHTML = result;
+    var str = "Welcome to my books!";
+    var pattern = /\S/g;
+    var result = str.match(pattern);
+    document.getElementById("demo").innerHTML = result;
 }
 </script>
 </body>
 </html>
 ```
-♣ 输出
+
+#### 输出
+
 W,e,l,c,o,m,e,t,o,m,y,b,o,o,k,s,!
 
-### ♥ 
-#### ☺ 描述
-查找单词开头或结尾处的匹配
-#### ☺ 示例代码
+### `\b`
+
+#### 描述
+
+查找单词开头或结尾处的匹配。
+
+#### 示例代码
+
 ```html
 <!DOCTYPE html>
 <html>
@@ -469,22 +489,28 @@ W,e,l,c,o,m,e,t,o,m,y,b,o,o,k,s,!
 <p id="demo"></p>
 <script>
 function myFunction() {
-    var str = "Welcome to my books! books.";
-    var pattern = /\bboo/g;
-    var result = str.match(pattern);
-    document.getElementById("demo").innerHTML = result;
+    var str = "Welcome to my books! books.";
+    var pattern = /\bboo/g;
+    var result = str.match(pattern);
+    document.getElementById("demo").innerHTML = result;
 }
 </script>
 </body>
 </html>
 ```
-♣ 输出
+
+#### 输出
+
 boo,boo
 
-## ♥ \B
-#### ☺ 描述
-查找不在单词开头或结尾处的匹配
-#### ☺ 示例代码
+### `\B`
+
+#### 描述
+
+查找不在单词开头或结尾处的匹配。
+
+#### 示例代码
+
 ```html
 <!DOCTYPE html>
 <html>
@@ -493,22 +519,28 @@ boo,boo
 <button onclick="myFunction()">测试</button>
 <script>
 function myFunction() {
-var str = "Welcome to my books!";
-var pattern = /\Bok/g;
-var result = str.match(pattern);
-document.getElementById("demo").innerHTML=result;
+    var str = "Welcome to my books!";
+    var pattern = /\Bok/g;
+    var result = str.match(pattern);
+    document.getElementById("demo").innerHTML=result;
 }
 </script>
 </body>
 </html>
 ```
-♣ 输出
+
+#### 输出
+
 ok
 
-### ♥  
-#### ☺ 描述
-查找 NUL 字符
-#### ☺ 示例代码
+### `\0`
+
+#### 描述
+
+查找 NUL 字符。
+
+#### 示例代码
+
 ```html
 <!DOCTYPE html>
 <html>
@@ -518,23 +550,31 @@ ok
 <p id="demo"></p>
 <script>
 function myFunction() {
-    var str = "Hello JavaScript.\0It is awesome!";
-    var pattern = /\0/;
-    var result = str.search(pattern);
-    document.getElementById("demo").innerHTML = result;
+    var str = "Hello JavaScript.\0It is awesome!";
+    var pattern = /\0/;
+    var result = str.search(pattern);
+    document.getElementById("demo").innerHTML = result;
 }
 </script>
 </body>
 </html>
 ```
-♣ 输出
+
+#### 输出
+
 17
 
-### ♥ 
+### 换行符
 
-#### ☺ 描述
-查找换行符
-#### ☺ 示例代码
+#### 描述
+
+查找换行符。
+
+#### 示例代码
+
+
+
+
 ```html
 <!DOCTYPE html>
 <html>
@@ -544,22 +584,28 @@ function myFunction() {
 <p id="demo"></p>
 <script>
 function myFunction() {
-    var str = "JavaScript.\nIt is awesome!";
-    var pattern = /\n/;
-    var result = str.search(pattern);
-    document.getElementById("demo").innerHTML = result;
+    var str = "JavaScript.\nIt is awesome!";
+    var pattern = /\n/;
+    var result = str.search(pattern);
+    document.getElementById("demo").innerHTML = result;
 }
 </script>
 </body>
 </html>
 ```
+
 ♣ 输出
+
 11
 
-### ♥ 
-#### ☺ 描述
-查找换页符
-#### ☺ 示例代码
+## `\f`
+
+### 描述
+
+查找换页符。
+
+### 示例代码
+
 ```html
 <!DOCTYPE html>
 <html>
@@ -569,22 +615,28 @@ function myFunction() {
 <p id="demo"></p>
 <script>
 function myFunction() {
-    var str = "JavaScript.\fIt is awesome!";
-    var pattern = /\f/;
-    var result = str.search(pattern);
-    document.getElementById("demo").innerHTML = result;
+    var str = "JavaScript.\fIt is awesome!";
+    var pattern = /\f/;
+    var result = str.search(pattern);
+    document.getElementById("demo").innerHTML = result;
 }
 </script>
 </body>
 </html>
 ```
+
 ♣ 输出
+
 11
 
-### ♥ 
-#### ☺ 描述
-查找回车符
-#### ☺ 示例代码
+## `\r`
+
+### 描述
+
+查找回车符。
+
+### 示例代码
+
 ```html
 <!DOCTYPE html>
 <html>
@@ -594,22 +646,28 @@ function myFunction() {
 <p id="demo"></p>
 <script>
 function myFunction() {
-    var str = "JavaScript.\rIt is awesome!";
-    var pattern = /\r/;
-    var result = str.search(pattern);
-    document.getElementById("demo").innerHTML = result;
+    var str = "JavaScript.\rIt is awesome!";
+    var pattern = /\r/;
+    var result = str.search(pattern);
+    document.getElementById("demo").innerHTML = result;
 }
 </script>
 </body>
 </html>
 ```
+
 ♣ 输出
+
 11
 
-### ♥ 	
-#### ☺ 描述
-查找制表符
-#### ☺ 示例代码
+## `\t`
+
+### 描述
+
+查找制表符。
+
+### 示例代码
+
 ```html
 <!DOCTYPE html>
 <html>
@@ -619,22 +677,28 @@ function myFunction() {
 <p id="demo"></p>
 <script>
 function myFunction() {
-    var str = "JavaScript.\tIt is awesome!";
-    var pattern = /\t/;
-    var result = str.search(pattern);
-    document.getElementById("demo").innerHTML = result;
+    var str = "JavaScript.\tIt is awesome!";
+    var pattern = /\t/;
+    var result = str.search(pattern);
+    document.getElementById("demo").innerHTML = result;
 }
 </script>
 </body>
 </html>
 ```
+
 ♣ 输出
+
 11
 
-### ♥ 
-#### ☺ 描述
-查找垂直制表符
-#### ☺ 示例代码
+## `\v`
+
+### 描述
+
+查找垂直制表符。
+
+### 示例代码
+
 ```html
 <!DOCTYPE html>
 <html>
@@ -644,22 +708,28 @@ function myFunction() {
 <p id="demo"></p>
 <script>
 function myFunction() {
-    var str = "JavaScript.\vIt is awesome!";
-    var pattern = /\v/;
-    var result = str.search(pattern);
-    document.getElementById("demo").innerHTML = result;
+    var str = "JavaScript.\vIt is awesome!";
+    var pattern = /\v/;
+    var result = str.search(pattern);
+    document.getElementById("demo").innerHTML = result;
 }
 </script>
 </body>
 </html>
 ```
+
 ♣ 输出
+
 11
 
-## ♥ \xxx
-#### ☺ 描述
-查找由八进制数 xxx 指定的字符
-#### ☺ 示例代码
+## `\xxx`
+
+### 描述
+
+查找由八进制数 `xxx` 指定的字符。
+
+### 示例代码
+
 ```html
 <!DOCTYPE html>
 <html>
@@ -669,22 +739,28 @@ function myFunction() {
 <p id="demo"></p>
 <script>
 function myFunction() {
-    var str = "Welcome to my books!";
-    var pattern = /\127/g;
-    var result = str.match(pattern);
-    document.getElementById("demo").innerHTML = result;
+    var str = "Welcome to my books!";
+    var pattern = /\127/g;
+    var result = str.match(pattern);
+    document.getElementById("demo").innerHTML = result;
 }
 </script>
 </body>
 </html>
 ```
+
 ♣ 输出
+
 W
 
-## ♥ \xdd
-#### ☺ 描述
-查找由十六进制数 dd 指定的字符
-#### ☺ 示例代码
+## `\xdd`
+
+### 描述
+
+查找由十六进制数 `dd` 指定的字符。
+
+### 示例代码
+
 ```html
 <!DOCTYPE html>
 <html>
@@ -694,22 +770,28 @@ W
 <p id="demo"></p>
 <script>
 function myFunction() {
-    var str = "Welcome to my books!";
-    var pattern = /\x57/g;
-    var result = str.match(pattern);
-    document.getElementById("demo").innerHTML = result;
+    var str = "Welcome to my books!";
+    var pattern = /\x57/g;
+    var result = str.match(pattern);
+    document.getElementById("demo").innerHTML = result;
 }
 </script>
 </body>
 </html>
 ```
+
 ♣ 输出
+
 W
 
-## ♥ \uxxxx
-#### ☺ 描述
-查找由十六进制数 xxxx 指定的 Unicode 字符
-#### ☺ 示例代码
+## `\uxxxx`
+
+### 描述
+
+查找由十六进制数 `xxxx` 指定的 Unicode 字符。
+
+### 示例代码
+
 ```html
 <!DOCTYPE html>
 <html>
@@ -719,31 +801,29 @@ W
 <p id="demo"></p>
 <script>
 function myFunction() {
-    var str = "Welcome to my books!";
-    var pattern = /\u0057/g;
-    var result = str.match(pattern);
-    document.getElementById("demo").innerHTML = result;
+    var str = "Welcome to my books!";
+    var pattern = /\u0057/g;
+    var result = str.match(pattern);
+    document.getElementById("demo").innerHTML = result;
 }
 </script>
 </body>
 </html>
 ```
+
 ♣ 输出
+
 W
-
-
-
-
 
 ## 量词
 
-### ♥ n+
+### `n+`
 
-☺ 描述
+#### 描述
 
-匹配任何包含至少一个 `n` 的字符串
+匹配任何包含至少一个 `n` 的字符串。
 
-☺ 示例代码
+#### 示例代码
 
 ```html
 <!DOCTYPE html>
@@ -766,17 +846,17 @@ function myFunction() {
 
 ♣ 输出
 
-```
+```text
 o,o,oo
 ```
 
-### ♥ n*
+### `n*`
 
-☺ 描述
+#### 描述
 
-匹配任何包含零个或多个 `n` 的字符串
+匹配任何包含零个或多个 `n` 的字符串。
 
-☺ 示例代码
+#### 示例代码
 
 ```html
 <!DOCTYPE html>
@@ -799,17 +879,17 @@ function myFunction() {
 
 ♣ 输出
 
-```
+```text
 boo,boo
 ```
 
-### ♥ n?
+### `n?`
 
-☺ 描述
+#### 描述
 
-匹配任何包含零个或一个 `n` 的字符串
+匹配任何包含零个或一个 `n` 的字符串。
 
-☺ 示例代码
+#### 示例代码
 
 ```html
 <!DOCTYPE html>
@@ -820,7 +900,7 @@ boo,boo
 <p id="demo"></p>
 <script>
 function myFunction() {
-   var str = "51, 5000, 350, 35";
+    var str = "51, 5000, 350, 35";
     var pattern = /50?/g;
     var result = str.match(pattern);
     document.getElementById("demo").innerHTML = result;
@@ -832,17 +912,17 @@ function myFunction() {
 
 ♣ 输出
 
-```
+```text
 5,50,50,5
 ```
 
-### ♥ n{X}
+### `n{X}`
 
-☺ 描述
+#### 描述
 
-匹配任何包含连续 X 个 `n` 的字符串
+匹配任何包含连续 `X` 个 `n` 的字符串。
 
-☺ 示例代码
+#### 示例代码
 
 ```html
 <!DOCTYPE html>
@@ -853,7 +933,7 @@ function myFunction() {
 <p id="demo"></p>
 <script>
 function myFunction() {
-   var str = "5,555,5555,555555";
+    var str = "5,555,5555,555555";
     var pattern = /\d{3}/g;
     var result = str.match(pattern);
     document.getElementById("demo").innerHTML = result;
@@ -865,17 +945,17 @@ function myFunction() {
 
 ♣ 输出
 
-```
+```text
 555,555,555,555
 ```
 
-### ♥ n{X,Y}
+### `n{X,Y}`
 
-☺ 描述
+#### 描述
 
-匹配任何包含连续 X 到 Y 个 `n` 的字符串
+匹配任何包含连续 `X` 到 `Y` 个 `n` 的字符串。
 
-☺ 示例代码
+#### 示例代码
 
 ```html
 <!DOCTYPE html>
@@ -898,17 +978,17 @@ function myFunction() {
 
 ♣ 输出
 
-```
+```text
 555,5555,55555,55555
 ```
 
-### ♥ n{X,}
+### `n{X,}`
 
-☺ 描述
+#### 描述
 
-匹配任何包含至少 X 个连续 `n` 的字符串
+匹配任何包含至少 `X` 个连续 `n` 的字符串。
 
-☺ 示例代码
+#### 示例代码
 
 ```html
 <!DOCTYPE html>
@@ -931,17 +1011,17 @@ function myFunction() {
 
 ♣ 输出
 
-```
+```text
 55,555,5555
 ```
 
-### ♥ n$
+### `n$`
 
-☺ 描述
+#### 描述
 
-匹配任何以 `n` 结尾的字符串
+匹配任何以 `n` 结尾的字符串。
 
-☺ 示例代码
+#### 示例代码
 
 ```html
 <!DOCTYPE html>
@@ -964,17 +1044,17 @@ function myFunction() {
 
 ♣ 输出
 
-```
+```text
 me
 ```
 
-### ♥ ^n
+### `^n`
 
-☺ 描述
+#### 描述
 
-匹配任何以 `n` 开头的字符串
+匹配任何以 `n` 开头的字符串。
 
-☺ 示例代码
+#### 示例代码
 
 ```html
 <!DOCTYPE html>
@@ -997,17 +1077,17 @@ function myFunction() {
 
 ♣ 输出
 
-```
+```text
 Welcome
 ```
 
-### ♥ ?=n
+### `?=n`
 
-☺ 描述
+#### 描述
 
-匹配任何后面跟着特定字符串 `n` 的字符串
+匹配任何后面跟着特定字符串 `n` 的字符串。
 
-☺ 示例代码
+#### 示例代码
 
 ```html
 <!DOCTYPE html>
@@ -1030,17 +1110,19 @@ function myFunction() {
 
 ♣ 输出
 
-```
+```text
 is
 ```
 
-### ♥ ?!n
+### `?!n`
 
-☺ 描述
+#### 描述
 
-匹配任何后面不跟着特定字符串 `n` 的字符串
+匹配任何后面不跟着特定字符串 `n` 的字符串。
 
-☺ 示例代码
+#### 示例代码
+
+
 
 ```html
 <!DOCTYPE html>
@@ -1069,21 +1151,21 @@ Is,is
 
 ## RegExp 对象方法
 
-### ♥ exec()
+### ♥ `exec()`
 
-☺ 描述
+#### ☺ 描述
 
-在字符串中测试匹配。返回第一个匹配项
+在字符串中测试匹配。返回第一个匹配项。
 
-☺ 语法
+#### ☺ 语法
 
 `RegExpObject.exec(string)`
 
-☺ 参数
+#### ☺ 参数
 
-`string`：必需，要搜索的字符串
+`string`：必需，要搜索的字符串。
 
-☺ 示例代码
+#### ☺ 示例代码
 
 ```html
 <!DOCTYPE html>
@@ -1111,21 +1193,21 @@ function myFunction() {
 o
 ```
 
-### ♥ test()
+### ♥ `test()`
 
-☺ 描述
+#### ☺ 描述
 
-在字符串中测试匹配。返回 `true` 或 `false`
+在字符串中测试匹配。返回 `true` 或 `false`。
 
-☺ 语法
+#### ☺ 语法
 
 `RegExpObject.test(string)`
 
-☺ 参数
+#### ☺ 参数
 
-`string`：必需，要搜索的字符串
+`string`：必需，要搜索的字符串。
 
-☺ 示例代码
+#### ☺ 示例代码
 
 ```html
 <!DOCTYPE html>
@@ -1153,21 +1235,21 @@ function myFunction() {
 true
 ```
 
-### ♥ toString()
+### ♥ `toString()`
 
-☺ 描述
+#### ☺ 描述
 
-返回正则表达式的字符串值
+返回正则表达式的字符串值。
 
-☺ 语法
+#### ☺ 语法
 
 `RegExpObject.toString()`
 
-☺ 参数
+#### ☺ 参数
 
-无
+无。
 
-☺ 示例代码
+#### ☺ 示例代码
 
 ```html
 <!DOCTYPE html>
@@ -1192,4 +1274,3 @@ function myFunction() {
 ```
 /Welcome to my books!/g
 ```
-

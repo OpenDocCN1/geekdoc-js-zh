@@ -1,23 +1,7 @@
+
 # 5.3 Element 对象
 
 Element 对象对应网页的 HTML 标签元素。每一个 HTML 标签元素，在 DOM 树上都会转化成一个 Element 节点对象（以下简称元素节点）。元素节点的 nodeType 属性都是 1，但是不同 HTML 标签生成的元素节点是不一样的。JavaScript 内部使用不同的构造函数，生成不同的 Element 节点，比如 a 标签的节点对象由 HTMLAnchorElement()构造函数生成，button 标签的节点对象由 HTMLButtonElement()构造函数生成。因此，元素节点不是一种对象，而是一组对象。
-
-*   属性
-    *   attributes，id，tagName
-    *   innerHTML，outerHTML
-    *   children，childElementCount，firstElementChild，lastElementChild
-    *   nextElementSibling，previousElementSibling
-    *   className，classList
-    *   clientHeight，clientLeft，clientTop，clientWidth
-    *   scrollHeight，scrollWidth，scrollLeft，scrollTop
-    *   方法
-        *   hasAttribute()，getAttribute()，removeAttribute()，setAttribute()
-        *   querySelector()，querySelectorAll()，getElementsByClassName()，getElementsByTagName()
-        *   closest()，matches()
-        *   addEventListener()，removeEventListener()，dispatchEvent()
-        *   getBoundingClientRect()，getClientRects()
-        *   insertAdjacentHTML()，remove()
-        *   scrollIntoView()
 
 ## 属性
 
@@ -179,7 +163,7 @@ if (para.children.length) {
 
 （2）childElementCount
 
-childElementCount 属性返回当前元素节点包含的子元素节点的个数。
+childElementCount 属性返回当前元节点包含的子元素节点的个数。
 
 （3）firstElementChild
 
@@ -240,10 +224,15 @@ document.getElementById('myDiv').classList
 classList 对象有下列方法。
 
 *   add()：增加一个 class。
+
 *   remove()：移除一个 class。
+
 *   contains()：检查当前元素是否包含某个 class。
+
 *   toggle()：将某个 class 移入或移出当前元素。
+
 *   item()：返回指定索引位置的 class。
+
 *   toString()：将 class 的列表转为字符串。
 
 ```js
@@ -376,7 +365,7 @@ if (d.hasAttribute("align")) {
 
 （2）getAttribute()
 
-getAttribute 方法返回当前元素节点的指定属性。如果指定属性不存在，则返回 null。
+getAttribute 方法返回当前元素节点的指定属性。如果指属性不存在，则返回 null。
 
 ```js
 var div = document.getElementById("div1");
@@ -566,10 +555,15 @@ var rect = obj.getBoundingClientRect();
 上面代码中，getBoundingClientRect 方法返回的对象，具有以下属性（全部为只读）。
 
 *   bottom：元素底部相对于视口的纵坐标。
+
 *   height：元素高度（等于 bottom 减去 top）。
+
 *   left：元素左上角相对于视口的坐标。
-*   right：元素右边界相对于视口的横坐标。
+
+*   right：元素右边界相对于视口的横坐率。
+
 *   top：元素顶部相对于视口的纵坐标。
+
 *   width：元素宽度（等于 right 减去 left）。
 
 由于元素相对于视口（viewport）的位置，会随着页面滚动变化，因此表示位置的四个属性值，都不是固定不变的。
@@ -621,8 +615,11 @@ element.insertAdjacentHTML(position, text);
 指定位置共有四个。
 
 *   beforebegin：在当前元素节点的前面。
+
 *   afterbegin：在当前元素节点的里面，插在它的第一个子元素之前。
+
 *   beforeend：在当前元素节点的里面，插在它的最后一个子元素之后。
+
 *   afterend：在当前元素节点的后面。'
 
 ```js

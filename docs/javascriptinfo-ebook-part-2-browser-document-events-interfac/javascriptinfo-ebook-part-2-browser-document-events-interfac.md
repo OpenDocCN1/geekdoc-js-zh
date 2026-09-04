@@ -1,27 +1,19 @@
-# Javascript.info Ebook 第 2 部分 浏览器：文档、事件、接口
 
-
-
-
-
-
-
-
+# JavaScript.info Ebook 第 2 部分 浏览器：文档、事件、接口
 
 教程的最新版本位于 https://javascript.info。
 
 我们不断改进教程。如果你发现任何错误，请在我们的 github 上写信反馈。
 
-
 学习如何管理浏览器页面：添加元素、操作它们的尺寸和位置、动态创建接口以及与访问者交互。
 
-# 文档
+## 文档
 
 在这里我们将学习使用 JavaScript 操作网页。
 
-# 浏览器环境、规范
+## 浏览器环境、规范
 
-JavaScript 语言最初是为了 Web浏览器创建的。从那时起，它已经演变成一种具有许多用途和平台的语言。
+JavaScript 语言最初是为了 Web 浏览器创建的。从那时起，它已经演变成一种具有许多用途和平台的语言。
 
 平台可以是浏览器、Web 服务器、洗衣机或其他宿主。每一个都提供特定于平台的功能。JavaScript 规范将其称为“宿主环境”。
 
@@ -31,9 +23,9 @@ JavaScript 语言最初是为了 Web浏览器创建的。从那时起，它已�
 
 ![](img/957480b3759214dc4aa22c653c424343_3_0.png)
 
-有一个名为 window 的“根”对象。它有两个角色：
+有一个名为 `window` 的“根”对象。它有两个角色：
 
-1. 首次，它是 JavaScript 代码的全局对象，如“全局对象”章节所述。
+1. 首先，它是 JavaScript 代码的全局对象，如“全局对象”章节所述。
 2. 其次，它代表“浏览器窗口”并提供控制它的方法。
 
 例如，在这里将其作为全局对象使用：
@@ -55,7 +47,7 @@ alert(window.innerHeight); // 内部窗口高度
 
 还有更多特定的窗口方法和属性，我们稍后介绍。
 
-# DOM (文档对象模型)
+## DOM (文档对象模型)
 
 文档对象提供了对页面内容的访问。我们可以使用它更改或创建页面上的任何内容。
 
@@ -68,7 +60,7 @@ document.body.style.background = "red";
 setTimeout(() => document.body.style.background = "", 1000);
 ```
 
-我们在这里使用了 document.body.style，但还有很多、很多、很多。属性和方法在规范中描述：
+在这里我们使用了 `document.body.style`，但还有很多、很多、很多。属性和方法在规范中描述：
 
 - DOM Living Standard 位于 https://dom.spec.whatwg.org
 
@@ -78,16 +70,16 @@ CSS 规则和样式表的结构与 HTML 不同。有一个独立的规范 CSSOM 
 
 当修改文档的样式规则时，CSSOM 与 DOM 使用。在实践中，很少需要 CSSOM，因为 CSS 规则通常是静态的。我们很少需要从 JavaScript 添加/删除 CSS 规则，所以现在不涵盖它。
 
-# BOM (浏览器对象模型)
+## BOM (浏览器对象模型)
 
 浏览器对象模型 (BOM) 是浏览器（宿主环境）提供的额外对象，用于处理文档之外的所有事物。
 
 例如：
 
-- navigator 提供了关于浏览器和操作系统的背景信息。有很多属性，但最广为人的是：navigator.userAgent – 当前浏览器，以及 navigator.platform – 平台（有助于区分 Windows/Linux/Mac 等）。
-- location 对象允许我们读取当前 URL 并可以将浏览器重定向到新 URL。
+- `navigator` 提供了关于浏览器和操作系统的背景信息。有很多属性，但最广为人知的是：`navigator.userAgent` – 当前浏览器，以及 `navigator.platform` – 平台（有助于区分 Windows/Linux/Mac 等）。
+- `location` 对象允许我们读取当前 URL 并可以将浏览器重定向到新 URL。
 
-这里是我们使用 location 对象的方式：
+这里是我们使用 `location` 对象的方式：
 
 ```javascript
 alert(location.href); // 显示当前 URL
@@ -96,149 +88,24 @@ if (confirm("去 wikipedia吗？")) {
 }
 ```
 
-函数 alert/confirm/prompt 是内置浏览器函数，用于向用户显示对话框。
+函数 `alert`/`confirm`/`prompt` 是内置浏览器函数，用于向用户显示对话框。
 
-- alert(string) 显示一个带有消息和“确定”按钮的对话框。
-- confirm(string) 显示一个带有消息以及“确定”和“取消”按钮的对话框。如果用户点击“确定”，返回 true，否则返回 false。
-- prompt(string, default) 显示一个带有消息和文本框的对话框。如果用户点击“确定”，则返回用户输入的字符串；如果点击“取消”，则返回 null。
+- `alert(string)` 显示一个带有消息和“确定”按钮的对话框。
+- `confirm(string)` 显示一个带有消息以及“确定”和“取消”按钮的对话框。如果用户点击“确定”，返回 `true`，否则返回 `false`。
+- `prompt(string, default)` 显示一个带有消息和文本框的对话框。如果用户点击“确定”，则返回用户输入的字符串；如果点击“取消”，则返回 `null`。
 
-location 对象提供了当前 URL 的信息并允许我们更改它。
+`location` 对象提供了当前 URL 的信息并允许我们更改它。
 
-- href 返回页面的完整 URL。
-- host 返回主机名（例如 "www.example.com"）。
-- pathname 返回路径。
-- search 返回查询字符串（以 ? 开头）。
-- hash 返回标识符（以 # 开头）。
-- protocol 返回协议（例如 https:）。
-- hostname 返回主机名（例如 www.example.com）。
-- port 返回端口号。
+- `href` 返回页面的完整 URL。
+- `host` 返回主机名（例如 `"www.example.com"`）。
+- `pathname` 返回路径。
+- `search` 返回查询字符串（以 `?` 开头）。
+- `hash` 返回标识符（以 `#` 开头）。
+- `protocol` 返回协议（例如 `https:`）。
+- `hostname` 返回主机名（例如 `www.example.com`）。
+- `port` 返回端口号。
 
-我们可以通过设置 location 属性更改 URL：
-
-```javascript
-location.href = "https://google.com"; // 重定向到 Google
-location.pathname = "/contact"; // 路径改为 /contact/
-location.search = "?q=js"; // 添加查询字符串
-location.hash = "#section1"; // 添加标识符
-```
-
-navigator 对象提供了浏览器和操作系统的信息。
-
-- userAgent 返回关于浏览器和系统的字符串。
-- platform 返回操作系统（例如 Win32, Mac）。
-- language 返回浏览器的语言。
-- cookieEnabled 如果启用了 cookies 则返回 true。
-- onLine 如果浏览器在线则返回 true。
-
-geolocation 对象提供了地理位置。
-
-- navigator.geolocation.getCurrentPosition(success, error) 获取用户当前的纬度和经度。
-
-- 变异观察器 (Mutation observer)
-- 选择与范围 (Range)
-- 事件循环：微任务与宏任务
-
-学习如何管理浏览器页面：添加元素、操作它们的尺寸和位置、动态创建接口以及与访问者交互。
-
-# 文档
-
-在这里学习使用 JavaScript 操作网页。
-
-# 浏览器环境、规范
-
-JavaScript 语言最初是为了 Web浏览器创建的。从那时起，它已经演变成一种具有许多用途和平台的语言。
-
-平台可以是浏览器、Web 服务器、洗衣机或其他宿主。每一个都提供特定于平台的功能。JavaScript 规范将其称为“宿主环境”。
-
-宿主环境提供了语言核心之外的特定平台对象和函数。Web 浏览器提供了控制网页手段。Node.js 提供服务器端功能，等等。
-
-以下是 JavaScript 在 Web 浏览器中运行时我们拥有的概览：
-
-![](img/957480b3759214dc4aa22c653c424343_3_0.png)
-
-有一个名为 window 的“根”对象。它有两个角色：
-
-1. 首次，它是 JavaScript 代码的全局对象，如“全局对象”章节所述。
-2. 其次，它代表“浏览器窗口”并提供控制它的方法。
-
-例如，在这里将其作为全局对象使用：
-
-```javascript
-function sayHi() {
-  alert("Hello");
-}
-
-// 全局函数作为 window 的属性访问
-window.sayHi();
-```
-
-在这里将其作为浏览器窗口使用，查看窗口高度：
-
-```javascript
-alert(window.innerHeight); // 内部窗口高度
-```
-
-还有更多特定的窗口方法和属性，我们稍后介绍。
-
-# DOM (文档对象模型)
-
-文档对象提供了对页面内容的访问。我们可以使用它更改或创建页面上的任何内容。
-
-例如：
-
-```javascript
-// 将背景颜色改为红色
-document.body.style.background = "red";
-// 1 秒后改回
-setTimeout(() => document.body.style.background = "", 1000);
-```
-
-在这里我们使用了 document.body.style，但还有很多、很多、很多。属性和方法在规范中描述：
-
-- DOM Living Standard 位于 https://dom.spec.whatwg.org
-
-> DOM 不仅用于浏览器。DOM 规范解释了文档的结构并提供了用于操作它的对象。非浏览器工具也使用它。例如，下载 HTML 页面并对其处理的服务器端工具就会使用 DOM。不过，它们可能只支持规范的一部分。
-
-CSS 规则和样式表的结构与 HTML 不同。有一个独立的规范 CSSOM 解释了它们如何被表示为对象，以及如何读取和写入它们。
-
-当修改文档的样式规则时，CSSOM 与 DOM 使用。在实践中，很少需要 CSSOM，因为 CSS 规则通常是静态的。我们很少需要从 JavaScript 添加/删除 CSS 规则，所以现在不涵盖它。
-
-# BOM (浏览器对象模型)
-
-浏览器对象模型 (BOM) 是浏览器（宿主环境）提供的额外对象，用于处理文档之外的所有事物。
-
-例如：
-
-- navigator 提供了关于浏览器和操作系统的背景信息。有很多属性，但最广为人的是：navigator.userAgent – 当前浏览器，以及 navigator.platform – 平台（有助于区分 Windows/Linux/Mac 等）。
-- location 对象允许我们读取当前 URL 并可以将浏览器重定向到新 URL。
-
-这里是我们使用 location 对象的方式：
-
-```javascript
-alert(location.href); // 显示当前 URL
-if (confirm("去 wikipedia吗？")) {
-  location.href = "https://wikipedia.org"; // 将浏览器重定向到另一个 URL
-}
-```
-
-函数 alert/confirm/prompt 是内置浏览器函数，用于向用户显示对话框。
-
-- alert(string) 显示一个带有消息和“确定”按钮的对话框。
-- confirm(string) 显示一个带有消息以及“确定”和“取消”按钮的对话框。如果用户点击“确定”，返回 true，否则返回 false。
-- prompt(string, default) 显示一个带有消息和文本框的对话框。如果用户点击“确定”，则返回用户输入的字符串；如果点击“取消”，则返回 null。
-
-location 对象提供了当前 URL 的信息并允许我们更改它。
-
-- href 返回页面的完整 URL。
-- host 返回主机名（例如 "www.example.com"）。
-- pathname 返回路径。
-- search 返回查询字符串（以 ? 开头）。
-- hash 返回标识符（以 # 开头）。
-- protocol 返回协议（例如 https:）。
-- hostname 返回主机名（例如 www.example.com）。
-- port 返回端口号。
-
-我们可以通过设置 location 属性更改 URL：
+我们可以通过设置 `location` 属性更改 URL：
 
 ```javascript
 location.href = "https://google.com"; // 重定向到 Google
@@ -247,325 +114,31 @@ location.search = "?q=js"; // 添加查询字符串
 location.hash = "#section1"; // 添加标识符
 ```
 
-navigator 对象提供了浏览器和操作系统的信息。
+`navigator` 对象提供了浏览器和操作系统的信息。
 
-- userAgent 返回关于浏览器和系统的字符串。
-- platform 返回操作系统（例如 Win32, Mac）。
-- language 返回浏览器的语言。
-- cookieEnabled 如果启用了 cookies 则返回 true。
-- onLine 如果浏览器在线则返回 true。
+- `userAgent` 返回关于浏览器和系统的字符串。
+- `platform` 返回操作系统（例如 `Win32`, `Mac`）。
+- `language` 返回浏览器的语言。
+- `cookieEnabled` 如果启用了 cookies 则返回 `true`。
+- `onLine` 如果浏览器在线则返回 `true`。
 
-geolocation 对象提供了地理位置。
+`geolocation` 对象提供了地理位置。
 
-- navigator.geolocation.getCurrentPosition(success, error) 获取用户当前的纬度和经度。
+- `navigator.geolocation.getCurrentPosition(success, error)` 获取用户当前的纬度和经度。
 
 - 变异观察器 (Mutation observer)
 - 选择与范围 (Range)
 - 事件循环：微任务与宏任务
 
-# DOM 树
+## DOM 树
 
 文档将 HTML 表示为一棵树。它的样子如下：
 
 根据文档对象模型 (DOM)，每个标签都是节点。
 
-标签被称为元素节点（或元素）。嵌套标签成为父元素的子元素。结果我们拥有一棵树：<html> 是根，然后 <head> 和 <body> 是它的子元素。
+标签被称为元素节点（或元素）。嵌套标签成为父元素的子元素。结果我们拥有一棵树：`<html>` 是根，然后 `<head>` 和 `<body>` 是它的子元素。
 
-# 浏览器：文档、事件、接口
-
-教程的最新版本位于 https://javascript.info。
-
-我们不断改进教程。如果你发现任何错误，请在我们的 github 上写信反馈。
-
-- 文档
-    - 浏览器环境、规范
-    - DOM 树
-    - 遍历 DOM
-    - 搜索：getElement*,，querySelector*
-    - 节点属性：类型、标签和内容
-    - 属性和属性
-    - 修改文档
-    - 样式和类名
-    - 元素尺寸与滚动
-    - 窗口大小与滚动
-    - 坐标
-- 事件简介
-    - 浏览器事件简介
-    - 冒泡与捕获
-    - 事件委托
-    - 浏览器默认行为
-    - 分发自定义事件
-- UI 事件
-    - 鼠标事件基础
-    - 移动：mouseover/out, mouseenter/leave
-    - 鼠标事件拖放
-    - 键盘：keydown 和 keyup
-    - 滚动
-- 表单、控件
-    - 表单属性和方法
-    - 聚焦：focus/blur
-    - 事件：change, input, cut, copy, paste
-    - 表单：event 事件和 submit 方法
-- 文档与资源加载
-    - 页面：DOMContentLoaded, load, beforeunload, unload
-    - 脚本：async, defer
-    - 资源加载：onload 和 onerror
-    - 其他
-    - 变异观察器 (Mutation observer)
-    - 选择与范围 (Range)
-    - 事件循环：微任务与宏任务
-
-学习如何管理浏览器页面：添加元素、操作它们的尺寸和位置、动态创建接口以及与访问者交互。
-
-# 文档
-
-在这里学习使用 JavaScript 操作网页。
-
-# 浏览器环境、规范
-
-JavaScript 语言最初是为了 Web浏览器创建的。从那时起，它已经演变成一种具有许多用途和平台的语言。
-
-平台可以是浏览器、Web 服务器、洗衣机或其他宿主。每一个都提供特定于平台的功能。JavaScript 规范将其称为“宿主环境”。
-
-宿主环境提供了语言核心之外的特定平台对象和函数。Web 浏览器提供了控制网页手段。Node.js 提供服务器端功能，等等。
-
-以下是 JavaScript 在 Web 浏览器中运行时我们拥有的概览：
-
-![](img/957480b3759214dc4aa22c653c424343_3_0.png)
-
-有一个名为 window 的“根”对象。它有两个角色：
-
-1. 首次，它是 JavaScript 代码的全局对象，如“全局对象”章节所述。
-2. 其次，它代表“浏览器窗口”并提供控制它的方法。
-
-例如，在这里将其作为全局对象使用：
-
-```javascript
-function sayHi() {
-  alert("Hello");
-}
-
-// 全局函数作为 window 的属性访问
-window.sayHi();
-```
-
-在这里将其作为浏览器窗口使用，查看窗口高度：
-
-```javascript
-alert(window.innerHeight); // 内部窗口高度
-```
-
-还有更多特定的窗口方法和属性，我们稍后介绍。
-
-# DOM (文档对象模型)
-
-文档对象提供了对页面内容的访问。我们可以使用它更改或创建页面上的任何内容。
-
-例如：
-
-```javascript
-// 将背景颜色改为红色
-document.body.style.background = "red";
-// 1 秒后改回
-setTimeout(() => document.body.style.background = "", 1000);
-```
-
-在这里我们使用了 document.body.style，但还有很多、很多、很多。属性和方法在规范中描述：
-
-- DOM Living Standard 位于 https://dom.spec.whatwg.org
-
-> DOM 不仅用于浏览器。DOM 规范解释了文档的结构并提供了用于操作它的对象。非浏览器工具也使用它。例如，下载 HTML 页面并对其处理的服务器端工具就会使用 DOM。不过，它们可能只支持规范的一部分。
-
-CSS 规则和样式表的结构与 HTML 不同。有一个独立的规范 CSSOM 解释了它们如何被表示为对象，以及如何读取和写入它们。
-
-当修改文档的样式规则时，CSSOM 与 DOM 使用。在实践中，很少需要 CSSOM，因为 CSS 规则通常是静态的。我们很少需要从 JavaScript 添加/删除 CSS 规则，所以现在不涵盖它。
-
-# BOM (浏览器对象模型)
-
-浏览器对象模型 (BOM) 是浏览器（宿主环境）提供的额外对象，用于处理文档之外的所有事物。
-
-例如：
-
-- navigator 提供了关于浏览器和操作系统的背景信息。有很多属性，但最广为人的是：navigator.userAgent – 当前浏览器，以及 navigator.platform – 平台（有助于区分 Windows/Linux/Mac 等）。
-- location 对象允许我们读取当前 URL 并可以将浏览器重定向到新 URL。
-
-这里是我们使用 location 对象的方式：
-
-```javascript
-alert(location.href); // 显示当前 URL
-if (confirm("去 wikipedia吗？")) {
-  location.href = "https://wikipedia.org"; // 将浏览器重定向到另一个 URL
-}
-```
-
-函数 alert/confirm/prompt 是内置浏览器函数，用于向用户显示对话框。
-
-- alert(string) 显示一个带有消息和“确定”按钮的对话框。
-- confirm(string) 显示一个带有消息以及“确定”和“取消”按钮的对话框。如果用户点击“确定”，返回 true，否则返回 false。
-- prompt(string, default) 显示一个带有消息和文本框的对话框。如果用户点击“确定”，则返回用户输入的字符串；如果点击“取消”，则返回 null。
-
-location 对象提供了当前 URL 的信息并允许我们更改它。
-
-- href 返回页面的完整 URL。
-- host 返回主机名（例如 "www.example.com"）。
-- pathname 返回路径。
-- search 返回查询字符串（以 ? 开头）。
-- hash 返回标识符（以 # 开头）。
-- protocol 返回协议（例如 https:）。
-- hostname 返回主机名（例如 www.example.com）。
-- port 返回端口号。
-
-我们可以通过设置 location 属性更改 URL：
-
-```javascript
-location.href = "https://google.com"; // 重定向到 Google
-location.pathname = "/contact"; // 路径改为 /contact/
-location.search = "?q=js"; // 添加查询字符串
-location.hash = "#section1"; // 添加标识符
-```
-
-navigator 对象提供了浏览器和操作系统的信息。
-
-- userAgent 返回关于浏览器和系统的字符串。
-- platform 返回操作系统（例如 Win32, Mac）。
-- language 返回浏览器的语言。
-- cookieEnabled 如果启用了 cookies 则返回 true。
-- onLine 如果浏览器在线则返回 true。
-
-geolocation 对象提供了地理位置。
-
-- navigator.geolocation.getCurrentPosition(success, error) 获取用户当前的纬度和经度。
-
-- 变异观察器 (Mutation observer)
-- 选择与范围 (Range)
-- 事件循环：微任务与宏任务
-
-# DOM 树
-
-文档将 HTML 表示为一棵树。它的样子如下：
-
-根据文档对象模型 (DOM)，每个标签都是节点。
-
-标签被称为元素节点（或元素）。嵌套标签成为父元素的子元素。结果我们拥有一棵树：<html> 是根，然后 <head> 和 <body> 是它的子元素。
-
-# BOM (浏览器对象模型)
-
-浏览器对象模型 (BOM) 是浏览器（宿主环境）提供的额外对象，用于处理文档之外的所有事物。
-
-例如：
-
-- navigator 提供了关于浏览器和操作系统的背景信息。有很多属性，但最广为人的是：navigator.userAgent – 当前浏览器，以及 navigator.platform – 平台（有助于区分 Windows/Linux/Mac 等）。
-- location 对象允许我们读取当前 URL 并可以将浏览器重定向到新 URL。
-
-这里是我们使用 location 对象的方式：
-
-```javascript
-alert(location.href); // 显示当前 URL
-if (confirm("去 wikipedia吗？")) {
-  location.href = "https://wikipedia.org"; // 将浏览器重定向到另一个 URL
-}
-```
-
-函数 alert/confirm/prompt 是内置浏览器函数，用于向用户显示对话框。
-
-- alert(string) 显示一个带有消息和“确定”按钮的对话框。
-- confirm(string) 显示一个带有消息以及“确定”和“取消”按钮的对话框。如果用户点击“确定”，返回 true，否则返回 false。
-- prompt(string, default) 显示一个带有消息和文本框的对话框。如果用户点击“确定”，则返回用户输入的字符串；如果点击“取消”，则返回 null。
-
-location 对象提供了当前 URL 的信息并允许我们更改它。
-
-- href 返回页面的完整 URL。
-- host 返回主机名（例如 "www.example.com"）。
-- pathname 返回路径。
-- search 返回查询字符串（以 ? 开头）。
-- hash 返回标识符（以 # 开头）。
-- protocol 返回协议（例如 https:）。
-- hostname 返回主机名（例如 www.example.com）。
-- port 返回端口号。
-
-我们可以通过设置 location 属性更改 URL：
-
-```javascript
-location.href = "https://google.com"; // 重定向到 Google
-location.pathname = "/contact"; // 路径改为 /contact/
-location.search = "?q=js"; // 添加查询字符串
-location.hash = "#section1"; // 添加标识符
-```
-
-navigator 对象提供了浏览器和操作系统的信息。
-
-- userAgent 返回关于浏览器和系统的字符串。
-- platform 返回操作系统（例如 Win32, Mac）。
-- language 返回浏览器的语言。
-- cookieEnabled 如果启用了 cookies 则返回 true。
-- onLine 如果浏览器在线则返回 true。
-
-geolocation 对象提供了地理位置。
-
-- navigator.geolocation.getCurrentPosition(success, error) 获取用户当前的纬度和经度。
-
-- 变异观察器 (Mutation observer)
-- 选择与范围 (Range)
-- 事件循环：微任务与宏任务
-
-# 示例
-
-BOM (浏览器对象模型)
-
-浏览器对象模型 (BOM) 是浏览器（宿主环境）提供的额外对象，用于处理文档之外的所有事物。
-
-例如：
-
-- navigator 提供了关于浏览器和操作系统的背景信息。有很多属性，但最广为人的是：navigator.userAgent – 当前浏览器，以及 navigator.platform – 平台（有助于区分 Windows/Linux/Mac 等）。
-- location 对象允许我们读取当前 URL 并可以将浏览器重定向到新 URL。
-
-函数 alert/confirm/prompt  是内置浏览器函数，用于向用户显示对话框。
-
-- alert(string) 显示一个带有消息和“确定”按钮的对话框。
-- confirm(string) 显示一个带有消息以及“确定”和“取消”按钮的对话框。如果用户点击“确定”，返回 true，否则返回 false。
-- prompt(string, default) 显示一个带有消息和文本框的对话框。如果用户点击“确定”，则返回用户输入的字符串；如果点击“取消”，则返回 null。
-
-location 对象提供了当前 URL 的信息并允许我们更改它。
-
-- href 返回页面的完整 URL。
-- host 返回主机名（例如 "www.example.com"）。
-- pathname 返回路径。
-- search 返回查询字符串（以 ? 开头）。
-- hash 返回标识符（以 # 开头）。
-- protocol 返回协议（例如 https:）。
-- hostname 返回主机名（例如 www.example.com）。
-- port 返回端口号。
-
-我们可以通过设置 location 属性更改 URL：
-
-```javascript
-location.href = "https://google.com"; // 重定向到 Google
-location.pathname = "/contact"; // 路径改为 /contact/
-location.search = "?q=js"; // 添加查询字符串
-location.hash = "#section1"; // 添加标识符
-```
-
-navigator 对象提供了浏览器和操作系统的信息。
-
-- userAgent 返回关于浏览器和系统的字符串。
-- platform 返回操作系统（例如 Win32, Mac）。
-- language 返回浏览器的语言。
-- cookieEnabled 如果启用了 cookies 则返回 true。
-- onLine 如果浏览器在线则返回 true。
-
-geolocation 对象提供了地理位置。
-
-- navigator.geolocation.getCurrentPosition(success, error) 获取用户当前的纬度和经度。
-
-# DOM 树
-
-文档将 HTML 表示为一棵树。它的样子如下：
-
-根据文档对象模型 (DOM)，每个标签都是节点。
-
-标签被称为元素节点（或元素）。嵌套标签成为父元素的子元素。结果我们拥有一棵树：<html> 是根，然后 <head> 和 <body> 是它的子元素。
-
-## DOM 示例
+### DOM 示例
 
 ```html
 <!DOCTYPE HTML>
@@ -583,14 +156,14 @@ geolocation 对象提供了地理位置。
 
 元素内部的文本形成文本节点。文本节点只包含一个字符串。它可能没有子元素并且始终是树的叶节点。
 
-例如，<title> 标签具有文本 "About elks"。
+例如，`<title>` 标签具有文本 "About elks"。
 
 请注意文本节点中的特殊字符：
 
-- 换行：↵（在 JavaScript 中称为 \n）
+- 换行：↵（在 JavaScript 中称为 `\n`）
 - 空格：␣
 
-空格和换行是完全有效的字符，它们形成文本节点并成为 DOM 的一部分。例如，在上面的示例中，`<head>` 在 `<title>` 之前包含空格，这变成了一个 #text 节点（它只包含换行和空格）。
+空格和换行是完全有效的字符，它们形成文本节点并成为 DOM 的一部分。例如，在上面的示例中，`<head>` 在 `<title>` 之前包含空格，这变成了一个 `#text` 节点（它只包含换行和空格）。
 
 只有两个顶层排除：
 
@@ -599,19 +172,15 @@ geolocation 对象提供了地理位置。
 
 在其他情况下一切都是直观的——如果文档中有空格（就像任何字符一样），它们就会变成 DOM 中的文本节点，如果我们删除它们，就不会了。
 
-
-
-
-
 边缘空格和中间的空文本通常在工具中被隐藏。
 
 用于 DOM 操作的浏览器工具（很快将介绍）通常不会显示文本开头/结尾的空格，以及标签之间的空文本节点（换行符）。
 
-这是因为它们主要被用于装饰 HTML，并且在大多数情况下）不会影响它的显示方式。
+这是因为它们主要被用于装饰 HTML，并且在大多数情况下不会影响它的显示方式。
 
 在随后的 DOM 图中，在它们无关紧要的地方，我们有时会省略它们，以保持内容简洁。
 
-# 自动纠正
+### 自动纠正
 
 当浏览器遇到不规范的 HTML 时，它在生成 DOM 时会自动对其进行修正。
 
@@ -640,7 +209,7 @@ geolocation 对象提供了地理位置。
 
 ![](img/957480b3759214dc4aa22c653c424343_10_0.png)
 
-### 表格始终带有 tbody；
+#### 表格始终带有 tbody
 
 一个有趣的“特殊情况”是表格。根据 DOM 规范，它们必须拥有 `<tbody>`，但 HTML 文本可以（官方允许）省略它。这时浏览器会在 DOM 中自动创建 `<tbody>`。
 
@@ -654,15 +223,15 @@ DOM 结构将是：
 
 ![](img/957480b3759214dc4aa22c653c424343_10_1.png)
 
-看到了吗？<tbody> 凭空出现了。在处理表格时，你应该记住这一点，以避免意外。
+看到了吗？`<tbody>` 凭空出现了。在处理表格时，你应该记住这一点，以避免意外。
 
-# 其他节点类型
+### 其他节点类型
 
 让我们在页面上添加更多标签和一条注释：
 
-```
+```html
 <!DOCTYPE HTML>
-<html
+<html>
 <body>
   关于麋鹿的真相。
   <ol>
@@ -676,7 +245,7 @@ DOM 结构将是：
 
 ![](img/957480b3759214dc4aa22c653c424343_11_0.png)
 
-在这里我们看到了一种新的树节点类型——**#comment node**（注释节点），被标记为为什么要在 DOM 中添加注释？它对视觉呈现没有任何影响。但有一有一条规则——如果某些内容在 HTML 中，那么它就必须在 DOM 树中。
+在这里我们看到了一种新的树节点类型——`#comment node`（注释节点），被标记为为什么要在 DOM 中添加注释？它对视觉呈现没有任何影响。但有一有一条规则——如果某些内容在 HTML 中，那么它就必须在 DOM 树中。
 
 HTML 中的所有内容，甚至是注释，都会成为 DOM 的一部分。
 
@@ -686,16 +255,16 @@ HTML 中的所有内容，甚至是注释，都会成为 DOM 的一部分。
 
 共有 12 种节点类型。在实践中，我们通常处理其中的 4 种：
 
-- 1. document —— 进入 DOM 的“入口”。
-- 2. element nodes —— HTML 标签，树的构建块。
-- 3. text nodes —— 包含文本。
-- 4. comments —— 注释，有时我们可以把信息放在里面，它不会显示，但 JS 可以从 DOM 中读取它。
+1. `document` —— 进入 DOM 的“入口”。
+2. `element nodes` —— HTML 标签，树的构建块。
+3. `text nodes` —— 包含文本。
+4. `comments` —— 注释，有时我们可以把信息放在里面，它不会显示，但 JS 可以从 DOM 中读取它。
 
-# 亲手尝试
+### 亲手尝试
 
 要实时查看 DOM 结构，请尝试 Live DOM Viewer。只需在文档中输入内容，它就会瞬间显示 DOM。
 
-## 在浏览器检查器中
+#### 在浏览器检查器中
 
 探索 DOM 的另一种方法是使用浏览器开发者工具。实际上，这是我们开发时使用的工具。
 
@@ -707,11 +276,11 @@ HTML 中的所有内容，甚至是注释，都会成为 DOM 的一部分。
 
 你可以看到 DOM，点击元素，查看它们的详情等。请注意，开发者工具中的 DOM 结构是简化的。文本节点直接以文本形式显示。而且完全没有“空白”（仅空格）文本节点。这没关系，因为大多数时候我们感兴趣的是元素节点。
 
-点击左上角的 F 按钮允许使用鼠标（或其他指针设备）从网页上选择一个节点并“检查”它（在 Elements 标签页中滚动到该位置）。当我们有一个巨大的 HTML 页面（以及对应的巨大 DOM）并想查看特定元素在其中的位置时，这种方法非常好。
+点击左上角的按钮允许使用鼠标（或其他指针设备）从网页上选择一个节点并“检查”它（在 Elements 标签页中滚动到该位置）。当我们有一个巨大的 HTML 页面（以及对应的巨大 DOM）并想查看特定元素在其中的位置时，这种方法非常好。
 
 另一种方法是在网页上点击右键，并在右键菜单中选择“检查”（Inspect）。
 
-# 关于麋鹿的真相。
+## 关于麋鹿的真相。
 
 ![](img/957480b3759214dc4aa22c653c424343_14_0.png)
 
@@ -722,94 +291,73 @@ HTML 中的所有内容，甚至是注释，都会成为 DOM 的一部分。
 - **Event Listeners（事件监听器）** —— 查看附加到 DOM 的事件监听器（我们将在下一部分介绍）。
 - ...依此类推。学习它们的最好方法就是到处点击。
 
-## 与控制台交互
+#### 与控制台交互
 
 在探索 DOM 时，我们可能还想对它应用 JavaScript。例如：获取一个节点并运行一些代码来修改它，查看结果。这里有一些在 Elements 标签页和控制台之间跳转的小技巧。
 
 - 选择 Elements 标签页中的第一个元素。
-- 按 Esc 键——它会在下方打开控制台。现在最后一个元素可以作为 $0 使用，上一个选中的是 $1。
+- 按 `Esc` 键——它会在下方打开控制台。现在最后一个元素可以作为 `$0` 使用，上一个选中的是 `$1`。
 
-`style.background = 'red'` 会让选中项目变为红色，如下：
+```javascript
+style.background = 'red'
+```
+会让选中项目变为红色，如下：
 
 ![](img/957480b3759214dc4aa22c653c424343_15_0.png)
 
-在 DOM 中，我们可以使用 $0 访问它，在控制台的另一侧中，我们可以使用 `document.body`：
+在 DOM 中，我们可以使用 `$0` 访问它，在控制台的另一侧中，我们可以使用 `document.body`：
 
 ![](img/957480b3759214dc4aa22c653c424343_16_0.png)
 
-在 DOM 中，我们可以使用 $0 访问它，在控制台的另一侧中，我们可以使用 `document.body`：
-
-![](img/957480b3759214dc4aa22c653c424343_17_0.png)
-
-在 DOM 中，我们可以使用 $0 访问它，在控制台的另一侧中，我们可以使用 `document.body`：
-
-![](img/957480b3759214dc4aa22c653c424343_18_0.png)
-
-在 DOM 中，我们可以使用 $0 访问它，在控制台的另一侧中，我们可以使用 `document.body`：
-
-![](img/957480b3759214dc4aa22c653c424343_19_0.png)
-
-在 DOM 中，我们可以使用 $0 访问它，在控制台的另一侧中，我们可以使用 `document.body`：
-
-![](img/957480b3759214dc4aa22c653c424343_20_0.png)
-
-在 DOM 中，我们可以使用 $0 访问它，在控制台的另一侧中，我们可以使用 `document.body`：
-
-![](img/957480b3759214dc4aa22c653c424343_21_0.png)
-
-在 DOM 中，我们可以使用 $0 访问它，在控制台的另一侧中，我们可以使用 `document.body`：
-
-![](img/957480b3759214dc4aa22c653c424343_22_0.png)
-
-# 总结
+### 总结
 
 HTML 文档以 DOM 树的形式表示：
 
 - 标签成为元素节点。
-- 文本成为。
+- 文本成为文本节点。
+- 注释成为注释节点。
 
 ![](img/957480b3759214dc4aa22c653c424343_23_0.png)
 
-- 标签成为元素节点。
-- 文本成为文本。
-- 注释成为。
+我们可以在开发者工具中学习它们。
 
-我们可以在开发者工具 (https://developers.google.com/devtools) 中学习它们。
-
-# 遍历 DOM
+## 遍历 DOM
 
 DOM 允许我们对元素及其内容进行任何操作，但我们首先需要到达它们。
 
-对 DOM 的所有操作从 document 对象开始。通过它可以访问任何节点。这里是允许在 DOM 节点之间跳转的图片：
+对 DOM 的所有操作从 `document` 对象开始。通过它可以访问任何节点。这里是允许在 DOM 节点之间跳转的图片：
 
 ![](img/957480b3759214dc4aa22c653c424343_24.png)
 
 让我们详细讨论它们。
 
-## 顶部：documentElement 和 body
+### 顶部：documentElement 和 body
 
-顶层树节点直接作为 document 属性可用。
+顶层树节点直接作为 `document` 属性可用。
 
-```
+```javascript
 html = document.documentElement
 ```
 
-顶部节点是 document.documentElement。那是 <html> 标签的 DOM 节点。
+顶部节点是 `document.documentElement`。那是 `<html>` 标签的 DOM 节点。
 
-```
+```javascript
 body = document.body
 ```
 
-另一个被广泛使用的 DOM 节点是 <body> 元素——document.body。
+另一个被广泛使用的 DOM 节点是 `<body>` 元素——`document.body`。
 
-<head> = document.head
-
-<head> 标签作为 document.head 可用。
-
-陷阱：document.body 可能为 null
-脚本无法访问在运行时不存在的元素。特别是，如果脚本在 <head> 中，那么 document.body 是不可用的，因为浏览器还没有读取它。所以，在下面的示例中，第一个 alert 显示为 null：
-
+```javascript
+head = document.head
 ```
+
+`<head>` 标签作为 `document.head` 可用。
+
+#### 陷阱：document.body 可能为 null
+
+脚本无法访问在运行时不存在的元素。特别是，如果脚本在 `<head>` 中，那么 `document.body` 是不可用的，因为浏览器还没有读取它。所以，在下面的示例中，第一个 alert 显示为 null：
+
+```html
 <html>
 <head>
 <script>
@@ -824,14 +372,12 @@ alert("From BODY: " + document.body ); // HTMLBodyElement，现在存在了
 </html>
 ```
 
-## 子节点：childNodes, firstChild, lastChild
+### 子节点：childNodes, firstChild, lastChild
 
 从现在起，我们将使用两个术语：
 
-- 子节点（Child nodes 或 children）——直接子元素。换句话说，它们恰好嵌套在给定元素中。例如，<head> 和 <body> 是 <html> 元素的子。
-- 后代（Descendants）——所有嵌套在给定元素中的元素，包括子节点、它们的子节点等等。
-
-
+- **子节点**（Child nodes 或 children）——直接子元素。换句话说，它们恰好嵌套在给定元素中。例如，`<head>` 和 `<body>` 是 `<html>` 元素的子节点。
+- **后代**（Descendants）——所有嵌套在给定元素中的元素，包括子节点、它们的子节点等等。
 
 例如，这里 `<body>` 有子元素 `<div>` 和 `<ul>`（以及一些空白文本节点）：
 
@@ -849,7 +395,7 @@ alert("From BODY: " + document.body ); // HTMLBodyElement，现在存在了
 
 ...而且 `<body>` 的所有后代不仅包括直接子元素 `<div>` 和 `<ul>`，还包括更深层嵌套的元素，例如 `<li>`（`<ul>` 的子元素）和 `<b>`（`<li>` 的子元素）——整个子树。
 
-`[childNodes](https://developer.example.org/example/childNodes)` 集合提供了对所有子节点的访问，包括文本节点。
+`childNodes` 集合提供了对所有子节点的访问，包括文本节点。
 
 下面的示例展示了 `document.body` 的子节点：
 
@@ -864,17 +410,13 @@ alert("From BODY: " + document.body ); // HTMLBodyElement，现在存在了
 <div>End</div>
 </body>
 </html>
-```
 
-```html
 <script>
 for (let i = 0; i < document.body.childNodes.length; i++) {
   alert(document.body.childNodes[i]); // Text, DIV, Text, UL, ..., SCRIPT
 }
 </script>
-```
 
-```html
 ..more stuff...
 </body>
 </html>
@@ -893,13 +435,13 @@ elem.childNodes[elem.childNodes.length - 1] === elem.lastChild
 
 还有一个特殊函数 **elem.hasChildNodes()** 用来检查是否存在任何子节点。
 
-# DOM 集合
+### DOM 集合
 
 正如我们所见，**childNodes** 看起来像一个数组。但实际上它不是数组，而是一个*集合*（collection）——一种特殊的类数组可迭代对象。
 
 这有两个重要的后果：
 
-- 1. 我们可以使用 `for..of` 来遍历它：
+1. 我们可以使用 `for..of` 来遍历它：
 
 ```javascript
 for (let node of document.body.childNodes) {
@@ -909,7 +451,7 @@ for (let node of document.body.childNodes) {
 
 这是因为它是可迭代的（提供了符合要求的 `Symbol.iterator` 属性）。
 
-- 2. 数组方法不起作用，因为它不是数组：
+2. 数组方法不起作用，因为它不是数组：
 
 ```javascript
 alert(document.body.childNodes.filter); // undefined（没有 filter 方法！）
@@ -921,7 +463,7 @@ alert(document.body.childNodes.filter); // undefined（没有 filter 方法！�
 alert(Array.from(document.body.childNodes).filter); // 现在有了
 ```
 
-## DOM 集合是只读的
+#### DOM 集合是只读的
 
 DOM 集合，甚至可以说——本章列出的*所有*导航属性都是只读的。
 
@@ -929,13 +471,13 @@ DOM 集合，甚至可以说——本章列出的*所有*导航属性都是只�
 
 修改 DOM 需要其他方法。我们将在下一章看到它们。
 
-## DOM 集合是动态的（live）
+#### DOM 集合是动态的（live）
 
 除了例外，几乎所有的 DOM 集合都是*动态的*。也就是说，它们反映了 DOM 的当前状态。
 
 如果我们保留 `elem.childNodes` 的引用，并在 DOM 中添加/删除节点，它们会自动出现在集合中。
 
-## 不要使用 `for..in` 遍历集合
+#### 不要使用 `for..in` 遍历集合
 
 集合可以使用 `for..of` 进行遍历。有时人们尝试使用 `for..in` 这样做。
 
@@ -950,9 +492,9 @@ DOM 集合，甚至可以说——本章列出的*所有*导航属性都是只�
 </body>
 ```
 
-## 兄弟节点与父节点
+### 兄弟节点与父节点
 
-**兄弟节点**是具有相同父节点的节点。例如`<head>` 和 `<body>` 是兄弟节点：
+**兄弟节点**是具有相同父节点的节点。例如 `<head>` 和 `<body>` 是兄弟节点：
 
 - `<body>` 是 `<head>` 的下一个（右侧）兄弟节点，
 - `<head>` 是 `<body>` 的上一个（左侧）兄弟节点。
@@ -968,7 +510,7 @@ DOM 集合，甚至可以说——本章列出的*所有*导航属性都是只�
 // HTML is "dense" to evade extra
 ```
 
-## 仅元素导航
+### 仅元素导航
 
 上述列出的导航属性指向所有节点。例如，在 `childNodes` 中，我们可以看到文本节点、元素节点，甚至注释节点（如果存在的话）。
 
@@ -982,10 +524,8 @@ DOM 集合，甚至可以说——本章列出的*所有*导航属性都是只�
 
 - `children` – 仅包含元素节点的子节点。
 - `firstElementChild`, `lastElementChild` – 第一个和最后一个元素子节点。
-
-
-
-
+- `previousElementSibling`, `nextElementSibling` – 相邻的元素兄弟节点。
+- `parentElement` – 父元素节点。
 
 | 1:1 | 2:1 | 3:1 | 4:1 | 5:1 |
 | 1:2 | 2:2 | 3:2 | 4:2 | 5:2 |
@@ -1000,18 +540,21 @@ DOM 集合，甚至可以说——本章列出的*所有*导航属性都是只�
 ## 搜索：getElement*, querySelector*
 
 DOM 导航属性在元素位置很近时非常有用。
+
 但如果它们并不很近呢？如何获取页面上的任意元素？
+
 有额外的搜索方法可以实现。
 
-## document.getElementById 或直接使用 id
+### document.getElementById 或直接使用 id
 
 如果一个元素具有 `id` 属性，那么就会有一个与该 `id` 命名的全局变量。
+
 我们可以使用它立即访问该元素，无论它在何处：
 
 ```html
 <div id="elem">
 <div id="elem-content">Element</div>
-</</div>
+</div>
 
 <script>
 alert(elem); // DOM 元素 id="elem"
@@ -1024,6 +567,7 @@ alert(window['elem-content']); //...可以使用方括号 [...] 访问
 ```
 
 这种行为在[规范中 ↗]() 中有描述，但它主要是为了兼容性而提供的。浏览器尝试通过混合 JS 和 DOM 的命名空间来帮助我们。
+
 这对于非常简单的脚本有用，但可能会发生命名冲突。此外，当我们在 JS 中使用它且视图中没有 HTML 时，并不清楚该变量是从哪里来的。
 
 如果我们声明一个同名的变量，它的优先级会更高：
@@ -1045,7 +589,7 @@ alert(elem); // 5
 ```html
 <div id="elem">
 <div id="elem-content">Element</div>
-</</div>
+</div>
 
 <script>
 let elem = document.getElementById('elem');
@@ -1057,14 +601,16 @@ elem.style.background = 'red';
 在教程中，我们经常直接使用 id 来引用元素，但这仅是为了保持代码简洁。在现实生活中，`document.getElementById` 是首选方法。
 
 > **只能有一个**
+>
 > id 必须是唯一的。文档中只能有一个具有给定 id 的元素。
+>
+> 如果存在多个具有相同 id 的元素，那么相应方法的行为将是不可预测的。浏览器可能会随机返回其中任何一个。因此，请遵循规则并保持 id 的唯一性。
 
-如果存在多个具有相同 id 的元素，那么相应方法的行为将是不可预测的。浏览器可能会随机返回其中任何一个。因此，请遵循规则并保持 id 的唯一性。
+⚠️ 只有 `document.getElementById`，没有 `anyNode.getElementById`
 
-⚠️ 只有 document.getElementById，没有 anyNode.getElementById
-方法 `getElementById` 只能在 document 对象上调用。它会在整个文档中查找指定的 id。
+方法 `getElementById` 只能在 `document` 对象上调用。它会在整个文档中查找指定的 id。
 
-## querySelectorAll
+### querySelectorAll
 
 到目前为止，最通用的方法 `elem.querySelectorAll(css)` 返回 `elem` 内部所有匹配给定 CSS 选择器的元素。
 
@@ -1091,15 +637,16 @@ elem.style.background = 'red';
 这个方法确实非常强大，因为可以使用任何 CSS 选择器。
 
 > ℹ 也可以使用伪类
+>
 > CSS 选择器中的伪类（如 `:hover` 和 `:active`）也被支持。例如，`document.querySelectorAll(':hover')` 将返回指针当前悬停的元素集合（按嵌套顺序：从最外层的 `<html>` 到最内层的元素）。
 
-## querySelector
+### querySelector
 
 调用 `elem.querySelector(css)` 会返回匹配给定 CSS 选择器的第一个元素。
 
 换句话说，结果等同于 `elem.querySelectorAll(css)[0]`，但后者是查找所有元素并从中挑选一个，而 `elem.querySelector` 只查找一个。所以它写起来更快、代码更短。
 
-## matches
+### matches
 
 之前的方法是在搜索 DOM。
 
@@ -1116,14 +663,14 @@ elem.style.background = 'red';
 <script>
  // 可以是任何集合，而不仅仅 document.body.children
 for (let elem of body.children) {
-  if (elem.matches('a$="zip"]')) {
+  if (elem.matches('a[href$="zip"]')) {
     alert("存档引用: " + elem.href);
   }
 }
 </script>
 ```
 
-## closest
+### closest
 
 元素的祖先是：父元素、父元素的父元素、它的父等等。祖先共同构成了从根节点的父级链。
 
@@ -1145,6 +692,15 @@ for (let elem of body.children) {
 </script>
 ```
 
+### getElementsBy*
+
+还有其他方法，主要是历史原因，它们返回*动态*集合。
+
+- `elem.getElementsByTagName(tag)` 查找具有给定标签的元素，如果 `tag` 为 `"*"` 则返回所有元素。
+- `elem.getElementsByClassName(className)` 返回具有给定 CSS 类的元素。
+- `document.getElementsByName(name)` 返回具有给定 `name` 属性的元素，文档范围内。
+
+例如：
 
 ```html
 <div>First div</div>
@@ -1163,7 +719,7 @@ for (let elem of body.children) {
 
 现在我们可以很容易看到区别。在文档中出现新的 `div` 之后，静态集合并没有增加。
 
-# 总结
+### 总结
 
 在 DOM 中查找节点有 6 种主要方法：
 
@@ -1173,10 +729,10 @@ for (let elem of body.children) {
 | querySelectorAll | CSS选择器 | ✓ | |
 | getElementById | id | | |
 | getElementsByName | name | | ✓ |
-| getElementsByTagName | tag 或 '*' | ✓ | |
-| getElementsByClassName | class | ✓ | |
+| getElementsByTagName | tag 或 '*' | ✓ | ✓ |
+| getElementsByClassName | class | ✓ | ✓ |
 
-为止最常用的方法是 `querySelector` 和 `querySelectorAll`，`getElementById`（配合 `*`）偶尔会有用处，或者在旧脚本中发现。
+目前为止最常用的方法是 `querySelector` 和 `querySelectorAll`，`getElementById`（配合 `*`）偶尔会有用处，或者在旧脚本中发现。
 
 除此之外：
 
@@ -1187,9 +743,9 @@ for (let elem of body.children) {
 
 - `elemA.contains(elemB)` 如果 `elemB` 在 `elemA` 内部（`elemA` 的后代）或当 `elemA == elemB` 时，则返回 true。
 
-# 任务
+## 任务
 
-## 查找元素
+### 查找元素
 
 重要性：4
 
@@ -1214,7 +770,7 @@ for (let elem of body.children) {
 
 在本章中，我们将进一步研究它们是什么以及最常用的属性。
 
-## DOM 节点类
+### DOM 节点类
 
 DOM 节点根据它们的类具有不同的属性。例如，对应标签 `<a>` 的元素节点具有与链接相关的属性，对应 `<input>` 的节点具有与输入相关的属性等。文本节点与元素节点不同。但它们之间也有共同的属性和方法，因为 DOM 节点的类形成了一个单一的层次结构。
 
@@ -1229,13 +785,13 @@ DOM 节点根据它们的类具有不同的属性。例如，对应标签 `<a>` 
 这些类包括：
 
 - `EventTarget` 是根“抽象”类。该创建该类的。它作为一个基础，使得 DOM 节点支持所谓的“事件”，我们稍后学习。
-- `Node` 也是一个“抽象”类，作为 DOM 节点的基类。它提供了树形函数：`parentNode`、`nextSibling`、`childNodes` 等（它们是 getter）。`Node` 类的对象不会被创建。但有具体的节点类派自于它，即：用于文本节点的 `Text`、用于元素节点的 `Element` 以及更奇奇的类，如用于注释节点的 `Comment`。
+- `Node` 也是一个“抽象”类，作为 DOM 节点的基类。它提供了树形函数：`parentNode`、`nextSibling`、`childNodes` 等（它们是 getter）。`Node` 类的对象不会被创建。但有具体的节点类派自于它，即：用于文本节点的 `Text`、用于元素节点的 `Element` 以及更奇特的类，如用于注释节点的 `Comment`。
 - `Element` 是元素类元素的基类。它提供了元素级导航，如 `nextElementSibling`、`children` 以及搜索方法，浏览器不仅支持 HTML，还支持 XML 和 SVG。`Element` 类作为更具体类的基类：`SVGElement`、`XMLElement` 和 `HTMLElement`。
 - `HTMLElement` 是所有 HTML 元素的最终类。它被各种 HTML 元素继承：
   - `HTMLInputElement` 是 `<input>` 元素的类，
   - `HTMLBodyElement` 是 `<body>` 元素的类，
   - `HTMLAnchorElement` 是 `<a>` 元素的类
-  - ...依此类，每个标签都有自己的类，该类可能提供特定的属性和方法。
+  - ...依此类推，每个标签都有自己的类，该类可能提供特定的属性和方法。
 
 因此，给定节点的完整属性和方法是继承的结果。
 
@@ -1257,7 +813,7 @@ alert(document.body.constructor.name); // HTMLBody
 或者我们可以直接将其转换为字符串：
 
 ```javascript
-alert(document.body); // [[object HTMLElement]
+alert(document.body); // [object HTMLElement]
 ```
 
 我们还可以使用 `instanceof` 来检查继承关系：
@@ -1270,8 +826,7 @@ alert(document.body instanceof EventTarget);
 alert(document.body instanceof Object);
 ```
 
-
-
+### innerHTML: 内容
 
 `innerHTML` 属性允许以字符串的形式获取元素内部的 HTML。
 
@@ -1297,15 +852,17 @@ alert(document.body instanceof Object);
 <body>
   <script>
     document.body.innerHTML = '<b>test'; // 忘记闭合标签了
-    alert( document.body.innerHTML ); // b>test</b> (已修复)
+    alert( document.body.innerHTML ); // <b>test</b> (已修复)
   </script>
 </body>
 ```
 
 > > 脚本不会执行
+>
 > 如果 `innerHTML` 向文档中插入了 `<script>` 标签 – 它将成为 HTML 的一部分，但不会执行。
 
-### 注意： “innerHTML+=” 会进行全量覆盖
+#### 注意： “innerHTML+=” 会进行全量覆盖
+
 我们可以通过使用 `elem.innerHTML+=more html` 向元素追加 `innerHTML`。
 
 如下：
@@ -1326,18 +883,18 @@ elem.innerHTML = elem.innerHTML += "...";
 
 换句话说，`innerHTML+=` 执行了以下操作：
 
-- 1. 移除旧内容。
-- 2. 写入新的 `innerHTML`（旧内容的拼接）。
+1. 移除旧内容。
+2. 写入新的 `innerHTML`（旧内容的拼接）。
 
 由于内容被“清零”并从头重写，所有的图像和资源将重新加载。
 
 在上面的 `chatDiv` 示例中，`chatDiv.innerHTML+="How goes?"` 这行重新创建了 HTML 内容并重新加载了 `smile.gif`（希望它已缓存）。如果 `chatDiv` 有很多其他文本和图像，那么重新加载将变得非常明显。
 
-还有其他副作用。例如，如果现有文本被鼠标选中，大多数浏览器会在重写 `innerHTML` 时移除选中状态。如果有一个带有访问者输入的文本 `<input>`，那么文本将被移除。以此此类推。
+还有其他副作用。例如，如果现有文本被鼠标选中，大多数浏览器会在重写 `innerHTML` 时移除选中状态。如果有一个带有访问者输入的文本 `<input>`，那么文本将被移除。以此类推。
 
 幸运的是，除了 `innerHTML` 还有其他添加 HTML 的方法，我们很快就会学习它们。
 
-## outerHTML: 元素的完整 HTML
+### outerHTML: 元素的完整 HTML
 
 `outerHTML` 属性包含元素的完整 HTML。这相当于 `innerHTML` 加上元素本身。
 
@@ -1345,15 +902,12 @@ elem.innerHTML = elem.innerHTML += "...";
 
 ```html
 <div id="elem">Hello <b>World</b></div>
-```
-
-```html
 <script>
-alert(elem.outerHTML); // <div id="elem"> <b>World</b></div>
+alert(elem.outerHTML); // <div id="elem">Hello <b>World</b></div>
 </script>
 ```
 
-### 注意：与 innerHTML 不同，写入 outerHTML 不会改变元素。相反，它会在外部上下文中整体替换它。
+#### 注意：与 innerHTML 不同，写入 outerHTML 不会改变元素。相反，它会在外部上下文中整体替换它。
 
 是的，听起来很奇怪，事实也确实奇怪，这就是为什么我们在这里专门做一个说明。请看这里。
 
@@ -1372,7 +926,7 @@ alert(elem.outerHTML); // <div id="elem"> <b>World</b></div>
 </script>
 ```
 
-在第 (*) 行中，我们获取了 `<div>...</</div>` 的完整 HTML 并将其替换为 `<p>...</p>`。在外部文档中，我们可以看到新内容而不是 `<div>`。旧的 `div` 变量仍然保持不变。
+在第 (*) 行中，我们获取了 `<div>...</div>` 的完整 HTML 并将其替换为 `<p>...</p>`。在外部文档中，我们可以看到新内容而不是 `<div>`。旧的 `div` 变量仍然保持不变。
 
 `outerHTML` 赋值并没有修改 DOM 元素，而是将其从外部上下文中提取，并插入一个新的 HTML 片段来代替它。
 
@@ -1380,7 +934,7 @@ alert(elem.outerHTML); // <div id="elem"> <b>World</b></div>
 
 这在 `innerHTML` 中是可能的，但 `outerHTML` 则不然。
 
-## nodeValue/data: 文本节点内容
+### nodeValue/data: 文本节点内容
 
 `innerHTML` 属性对元素节点有效。
 
@@ -1410,20 +964,64 @@ alert(comment.data); // Comment
 <!-- / -->
 ```
 
-## textContent: 文本节点内容
+### textContent: 纯文本
 
-`innerHTML` 属性对元素节点有效。
+`textContent` 提供对元素内**文本**的访问：仅文本，去除所有 `<tags>`。
 
-其他节点有对应的属性：`nodeValue` 和 `data` 属性。这两个属性在实际使用中几乎相同，只有细微的规范差异。因此我们将使用 `data`，因为它更短。
+例如：
 
+```html
+<div id="news">
+  <h1>Headline!</h1>
+  <p>Martians attack people!</p>
+</div>
 
+<script>
+  alert(news.textContent); // Headline! Martians attack people!
+</script>
+```
 
+写入 `textContent` 更安全，因为它将字符串作为文本写入，而不会将其解析为 HTML。
 
-DOM 节点还根据其类具有其他属性。例如，`<input>` 元素（HTMLInputElement）支持 value、type，而 `<a>` 元素（HTMLAnchorElement）支持 `href` 等。大多数标准的 HTML 属性都有对应的 DOM 属性。
+我们可以使用它安全地插入用户生成的文本，防止 XSS 攻击。
 
-尽管如此，HTML 属性和 DOM 属性并不总是相同的，正如我们在下一章中看到的。
+```html
+<div id="elem1"></div>
+<div id="elem2"></div>
 
-## Tasks
+<script>
+  let name = prompt("你的名字？", "<script>alert('hacked')</script>");
+
+  elem1.textContent = name; // 安全
+  elem2.innerHTML = name; // 不安全
+</script>
+```
+
+- `elem1.textContent = name` 将名称作为文本插入，字面上显示 `<script>alert('hacked')</script>`。
+- `elem2.innerHTML = name` 将其作为 HTML 插入，脚本执行，可能导致 XSS 攻击。
+
+### “hidden” 属性
+
+`hidden` 属性是一个布尔属性。如果为 true，则元素不可见。
+
+它的作用与 `style="display:none"` 相同，但更简短。
+
+例如，下面两个 div 的作用相同：
+
+```html
+<div>Both divs are hidden</div>
+<div hidden>With hidden attribute</div>
+<div style="display:none">With style</div>
+```
+
+我们可以在 JS 中切换它：
+
+```javascript
+elem.hidden = true; // 隐藏
+elem.hidden = false; // 显示
+```
+
+## 任务
 
 重要性: 5
 
@@ -1431,8 +1029,8 @@ DOM 节点还根据其类具有其他属性。例如，`<input>` 元素（HTMLIn
 
 为每个 `<li>` 编写代码，显示：
 
-- 1. 它内部的文本（不包含子树）
-- 2. 嵌套的 `<li>` 数量 —— 所有后代节点，包括深层嵌套的节点。
+1. 它内部的文本（不包含子树）
+2. 嵌套的 `<li>` 数量 —— 所有后代节点，包括深层嵌套的节点。
 
 在新窗口中查看演示
 
@@ -1440,7 +1038,7 @@ DOM 节点还根据其类具有其他属性。例如，`<input>` 元素（HTMLIn
 
 跳转解决方案
 
-## nodeType 中了什么？
+### nodeType 中了什么？
 
 重要性: 5
 
@@ -1458,7 +1056,7 @@ DOM 节点还根据其类具有其他属性。例如，`<input>` 元素（HTMLIn
 
 跳转解决方案
 
-## 注释中的标签
+### 注释中的标签
 
 重要性: 3
 
@@ -1468,14 +1066,14 @@ DOM 节点还根据其类具有其他属性。例如，`<input>` 元素（HTMLIn
 <script>
 let body = document.body;
 
-body.innerHTML = "!-" + tagName + "---";
+body.innerHTML = "<!--" + tagName + "-->";
 alert(body.firstChild.data); // 这里显示什么？
 </script>
 ```
 
 跳转解决方案
 
-## "document" 在层次结构的什么位置？
+### "document" 在层次结构的什么位置？
 
 重要性: 4
 
@@ -1495,7 +1093,7 @@ alert(body.firstChild.data); // 这里显示什么？
 
 但属性与属性的映射并不是一对一的！在本章中，我们将关注区分这两个概念，看看如何操作它们，它们在何时是相同的，以及何时是不同的。
 
-## DOM 属性
+### DOM 属性
 
 我们已经看到了内置的 DOM 属性。它们有很多。但从技术上来说，没有人限制我们，如果不够，我们可以添加自己的。
 
@@ -1538,11 +1136,12 @@ document.body.sayHi(); // Hello, I'm BODY
 - 它们可以有任何值。
 - 它们对大小写敏感（写 `elem.nodeType`，而不是 `elem.noDeTyPe`）。
 
-## HTML 属性
+### HTML 属性
 
 在 HTML 中，标签可以有属性。当浏览器解析 HTML 为标签创建 DOM 对象时，它会识别标准属性并根据它们创建 DOM 属性。
 
 因此，当元素拥有 id 或另一个标准属性时，对应的属性就会被创建。如果属性是非标准的，则不会发生。
+
 例如：
 
 ```html
@@ -1555,7 +1154,7 @@ document.body.sayHi(); // Hello, I'm BODY
 </body>
 ```
 
-请注意，一个元素的标准属性对于另一个元素来说可能是未知的。例如，“type”对于 `<input>` (HTMLInputElement) 是标准的，但对于 `<body>` (HTMLBodyElement) 则。标准属性在对应元素类的规范中进行了描述。
+请注意，一个元素的标准属性对于另一个元素来说可能是未知的。例如，“type”对于 `<input>` (HTMLInputElement) 是标准的，但对于 `<body>` (HTMLBodyElement) 则不是。标准属性在对应元素类的规范中进行了描述。
 
 在这里我们可以看到：
 
@@ -1579,6 +1178,7 @@ document.body.sayHi(); // Hello, I'm BODY
 - `elem.removeAttribute(name)` - 移除属性。
 
 这些方法的操作完全基于 HTML 中编写的内容。
+
 此外，人们可以使用 `elem.attributes` 读取所有属性：这是一个属于内置 Attr 类对象的集合，具有 name 和 value 属性。
 
 这里是读取非标准属性的演示：
@@ -1591,10 +1191,7 @@ document.body.sayHi(); // Hello, I'm BODY
 </body>
 ```
 
-
-
-
-# 非标准属性，数据集
+### 非标准属性，数据集
 
 在编写 HTML 时，我们使用了许多标准属性。但非标准的、自定义的属性呢？首先，让我们看看它们是否有用？是用来做什么的？
 
@@ -1662,7 +1259,7 @@ for(let div of document.querySelectorAll('[show-info]')) {
 
 ```javascript
 // 比移除旧类/添加新类简单一点
-setAttribute('order-state', 'canceled');
+div.setAttribute('order-state', 'canceled');
 ```
 
 但自定义属性可能存在潜在的问题。如果我们为了自己的目的使用了非标准属性，而后来标准引入了它并赋予了它某种用途该怎么办？HTML 语言是活的，它在成长，有更多的属性来适应开发者的需求。在这种情况下可能会出现意外的影响。
@@ -1718,10 +1315,10 @@ order.dataset.orderState = "pending"; // (*)
 
 请注意，我们不仅可以读取，还可以修改 `data` 属性。然后 CSS 会据此更新视图：在上面的示例中，最后一行 (*) 将颜色改为蓝色。
 
-# 总结
+### 总结
 
-- 属性（Attributes）——写在 HTML 中的内容。
-- 属性（Properties）——DOM 对象中的内容。
+- **属性（Attributes）**——写在 HTML 中的内容。
+- **属性（Properties）**——DOM 对象中的内容。
 
 一个简单的比较：
 
@@ -1735,16 +1332,20 @@ order.dataset.orderState = "pending"; // (*)
 - `elem.hasAttribute(name)` – 检查是否存在
 - `elem.getAttribute(name)` – 获取值。
 - `elem.setAttribute(name, value)` – 设置值。
-- `elem.removeAttribute(name)` – 属性。
+- `elem.removeAttribute(name)` – 移除属性。
 - `elem.attributes` 是所有属性的集合。
 
 使用 DOM 属性（Properties）是更优的。只有在确实需要属性（Attributes）时我们才引用它们，例如：
+
 - 我们需要非标准属性。但如果它以 `data-` 开头，那么我们应该使用 `dataset`。
 - 我们想读取 HTML 中“按原书写”的值。DOM 属性的值可能不同，例如，`href` 属性始终是完整的 URL，而我们可能想要获取“原始”值。
 
-# 任务
+## 任务
 
-### 获取属性重要性:5
+### 获取属性
+
+重要性:5
+
 编写代码从文档中选择带有 `data-widget` 的元素并读取其值。
 
 ```html
@@ -1759,11 +1360,18 @@ order.dataset.orderState = "pending"; // (*)
 </html>
 ```
 
-### 解决问题的重要性:3
+### 解决问题
+
+重要性:3
+
 通过修改它们的 `style` 属性将外部链接设置为橙色。
 
 如果满足以下条件，则该链接是外部的：
+
 - 它的 `href` 包含 `://`
+
+
+
 - 但不是以 `internal.com` 开头
 
 示例：
@@ -1779,12 +1387,6 @@ order.dataset.orderState = "pending"; // (*)
 </ul>
 ```
 
-*(注：由于原文后半部分存在大量重复和乱码的片段，此处已根据指令要求进行清理，确保翻译内容核心逻辑清晰)*
-
-
-
-
-
 在 `parentElem` 的子元素中将 `oldChild` 替换为 `node`。
 
 这些方法都会返回被插入的节点。换句话说，`parentElem.appendChild(node)` 返回 `node`。但通常不会使用返回值，我们只是运行了该方法。
@@ -1799,11 +1401,11 @@ order.dataset.orderState = "pending"; // (*)
 
 这组方法提供了更灵活的插入方式：
 
-- node.append(...nodes 或 strings) - 在 node 的末尾添加节点或字符串，
-- node.prepend(...nodes 或 strings) - 在 node 的开头插入节点或字符串，
-- node.before(...nodes 或 strings) -- 在节点之前插入节点或字符串，
-- node.after(...nodes 或 strings) -- 在节点之后插入节点或字符串，
-- node.replaceWith(...nodes 或 strings) -- 用给定的节点或字符串替换节点。
+- `node.append(...nodes 或 strings)` - 在 node 的末尾添加节点或字符串，
+- `node.prepend(...nodes 或 strings)` - 在 node 的开头插入节点或字符串，
+- `node.before(...nodes 或 strings)` - 在节点之前插入节点或字符串，
+- `node.after(...nodes 或 strings)` - 在节点之后插入节点或字符串，
+- `node.replaceWith(...nodes 或 strings)` - 用给定的节点或字符串替换节点。
 
 所有方法都接受 DOM 节点和/或文本字符串列表。如果给定的是字符串，它将作为文本节点插入。
 
@@ -1817,20 +1419,19 @@ order.dataset.orderState = "pending"; // (*)
 </ol>
 
 <script>
-  ol1.before('before');
-  ol1.after('after');
+  ol.before('before');
+  ol.after('after');
 
   let prepend = document.createElement('li');
+  prepend.innerHTML = 'prepend';
+  ol.prepend(prepend);
+  let append = document.createElement('li');
+  append.innerHTML = 'append';
+  ol.append(append);
 </script>
 ```
 
-```html
-prepend.innerHTML = 'prepend';
-ol.prepend(prepend);
-let append = document.createElement('li');
-append.innerHTML = 'append';
-ol.append(append);
-</script> // 注意：此处原文有多余的 </script> 标签
+结果：
 
 before
 
@@ -1850,6 +1451,7 @@ after
 
 ```html
 before
+
 <ol id="ol">
 <li>prepend</li>
 <li>0</li>
@@ -1857,15 +1459,16 @@ before
 <li>2</li>
 <li>append</li>
 </ol>
-```
 
 after
+```
 
 这些方法可以在单次调用中插入多个节点列表和文本片段。
 例如，在这里，插入了一个字符串和一个元素：
 
 ```html
 <div id="div"></div>
+
 <script>
 div.before('<p>Hello</p>', document.createElement('hr'));
 </script>
@@ -1875,7 +1478,7 @@ div.before('<p>Hello</p>', document.createElement('hr'));
 所以最终的 HTML 是：
 
 ```html
-&lt;&gt;&lt;Hello&lt;&gt;
+&lt;p&gt;Hello&lt;/p&gt;
 <hr>
 <div id="div"></div>
 ```
@@ -1887,7 +1490,7 @@ div.before('<p>Hello</p>', document.createElement('hr'));
 ## insertAdjacentHTML/Text/Element
 
 还有另一种非常通用的方法：
-elem.insertAdjacentHTML(where, html)。
+`elem.insertAdjacentHTML(where, html)`。
 
 第一个参数是代码标记，用于指定相对于 `elem` 的插入位置。
 必须是以下之一：
@@ -1898,10 +1501,11 @@ elem.insertAdjacentHTML(where, html)。
 - "afterend" – 在 elem 之后立即插入 html。
 
 第二个参数是一个 HTML 字符串，它将“作为 HTML”被插入。
-例如： 
+例如：
 
 ```html
 <div id="div"></div>
+
 <script>
 div.insertAdjacentHTML('beforebegin', '<p>Hello</p>');
 div.insertAdjacentHTML('afterend', '<p>Bye</p>');
@@ -1926,10 +1530,10 @@ div.insertAdjacentHTML('afterend', '<p>Bye</p>');
 
 该方法有两个“兄弟”：
 
-- elem.insertAdjacentText(where, text) - 语法相同，但插入的是“作为文本”的字符串而不是 HTML，
-- elem.insertAdjacentElement(where, elem) - 语法相同，但插入的是元素。
+- `elem.insertAdjacentText(where, text)` - 语法相同，但插入的是“作为文本”的字符串而不是 HTML，
+- `elem.insertAdjacentElement(where, elem)` - 语法相同，但插入的是元素。
 
-它们存在的主要是为了让语法“统一”。在实践中，只有 `AdjacentHTML` 使用得最频繁。因为对于元素，我们有 `append/prepend/before/after` - 它们写法更短且可以插入节点/文本片段。
+它们存在的主要是为了让语法“统一”。在实践中，只有 `insertAdjacentHTML` 使用得最频繁。因为对于元素，我们有 `append/prepend/before/after` - 它们写法更短且可以插入节点/文本片段。
 
 这里是显示消息的另一种变体：
 
@@ -1943,8 +1547,7 @@ div.insertAdjacentHTML('afterend', '<p>Bye</p>');
   background-color: #dff0d8;
 }
 </style>
-```
-```html
+
 <script>
 document.body.insertAdjacentHTML("afterbegin", '<div class="alert-success">Hi there!</div>');
 </script>
@@ -1970,9 +1573,9 @@ document.body.insertAdjacentHTML("afterbegin", '<div class="alert-success">Hi th
   background-color: #dff0d8;
 }
 </style>
-```
-```html
+
 <div class="alert" id="div">Hi there!</div>
+
 <script>
 let div2 = document.querySelector('.alert').cloneNode(true); // 克隆 alert
 document.body.append(div2); // 在 body 中添加 div2
@@ -1981,27 +1584,20 @@ document.body.append(div2); // 在 body 中添加 div2
 
 ## DocumentFragment
 
-如何插入一个相似的消息？
-我们可以写一个函数并将代码放在里面。但另一种方法是克隆现有的 `div` 并对其进行修改（如果需要）。
-有时当我们有一个很大的元素时，这样可能更快更简单。
-
-- 调用 `elem.cloneNode(true)` 会创建元素的“深”克隆 – 包含所有属性和子元素。如果调用 `elem.cloneNode(false)`，则创建不包含子元素的克隆。
-
 DocumentFragment 是一个包装节点的特殊容器，我们可以向它添加节点。
 请注意，如果我们动态生成一个 `DocumentFragment`，结果如下：
 
 ```html
 <ul id="ul"></ul>
+
 <script>
 function getListContent() {
   let fragment = new DocumentFragment();
-
   for(let i=1; i<=3; i++) {
     let li = document.createElement('li');
     li.textContent = i;
     fragment.appendChild(li);
   }
-
   return fragment;
 }
 ul.append(getListContent());
@@ -2012,16 +1608,15 @@ DocumentFragment 很少被显式使用。为什么不直接返回数组并使用
 
 ```html
 <ul id="ul"></ul>
+
 <script>
 function getListContent() {
   let result = [];
-
   for(let i=1; i<=3; i++) {
     let li = document.createElement('li');
     li.textContent = i;
     result.push(li);
   }
-
   return result;
 }
 ul.append(...getListContent());
@@ -2050,13 +1645,14 @@ ul.append(...getListContent());
 ```html
 <div id="first">First</div>
 <div id="second">Second</div>
+
 <script>
 // 不需要调用 remove
-second.after(first); // 在 #second 插入 #first
+second.after(first); // 在 #second 后插入 #first
 </script>
 ```
 
-让我们我们的消息在秒秒后消失：
+让我们让消息在 1 秒后消失：
 
 ```html
 <style>
@@ -2068,6 +1664,7 @@ second.after(first); // 在 #second 插入 #first
   background-color: #dff0d8;
 }
 </style>
+
 <script>
 let div = document.createElement('div');
 div.className = 'alert alert-success';
@@ -2081,15 +1678,17 @@ setTimeout(() => div.remove(), 1000);
 ## 关于 "document.write" 的几点
 
 另一种非常古老向网页添加内容的方法：
-document.write。
+`document.write`。
 
 语法：
 
 ```html
 <p>页面的某处...</p>
+
 <script>
 document.write('<b>来自 JS 的 Hello</b>');
 </script>
+
 <p>结束</p>
 ```
 
@@ -2097,12 +1696,9 @@ document.write('<b>来自 JS 的 Hello</b>');
 
 该方法源于没有 DOM、没有标准的时代……非常古老的时代。它仍然存在，是因为还有脚本在使用它。
 
+```html
+<p>一秒后，此页面的内容将被替换...</p>
 
-
-
-一秒后，此页面的内容将被替换...
-
-```
 <script>
 // 1秒后执行 document.write
 // 那是在页面加载后，所以它会擦除现有内容
@@ -2141,8 +1737,8 @@ setTimeout(() => document.write('<b>...By this.</b>'), 1000);
 - 给定一组节点和字符串：
 - `node.append(...nodes or strings)` – 插入到节点末尾，
 - `node.prepend(...nodes or strings)` – 插入到节点开头，
-- `node.before(...nodes or strings)` -- 插入到节点之前，
-- `node.after(...nodes or strings)` -- 插入到节点之后，
+- `node.before(...nodes or strings)` – 插入到节点之前，
+- `node.after(...nodes or strings)` – 插入到节点之后，
 - `node.replaceWith(...nodes or strings)` – 替换当前节点。
 - `node.remove()` – 移除节点。
 
@@ -2150,7 +1746,7 @@ setTimeout(() => document.write('<b>...By this.</b>'), 1000);
 
 - 给定一段 HTML：`elem.insertAdjacentHTML(where, html)`，在 `where` 插入：
 - "beforebegin" – 在 `elem` 之前插入 html，
-- "afterbegin" – 将内 html 插入 `elem` 的开头，
+- "afterbegin" – 将 html 插入 `elem` 的开头，
 - "beforeend" – 将 html 插入 `elem` 的末尾，
 - "afterend" – 在 `elem` 之后插入 html。
 
@@ -2183,20 +1779,19 @@ setTimeout(() => document.write('<b>...By this.</b>'), 1000);
 
 创建一个函数 `clear(elem)`，移除该元素中的所有内容。
 
-```
+```html
 <ol id="elem">
   <li>Hello</li>
   <li>World</li>
 </ol>
 
 <script>
-function clear(elem) { /* 你的代码 */
-
+function clear(elem) { /* 你的代码 */ }
 clear(elem); // 清空列表
 </script>
 ```
 
-## 查看答案
+查看答案
 
 ## 为什么 "aaa" 还在那里？
 
@@ -2204,7 +1799,7 @@ clear(elem); // 清空列表
 
 运行示例。为什么 `table.remove()` 没有删除文本 "aaa"？
 
-```
+```html
 <table id="table">
 aaa
 <tr>
@@ -2214,13 +1809,12 @@ aaa
 
 <script>
 alert(table); // 弹窗显示表格，这是符合预期的
-
 table.remove();
-// 为什么为什么文档里仍然有 aaa？
+// 为什么文档里仍然有 aaa？
 </script>
 ```
 
-## 查看答案
+查看答案
 
 ## 创建列表
 
@@ -2240,7 +1834,7 @@ table.remove();
 
 在新窗口中演示 ↗
 
-## 查看答案
+查看答案
 
 ## 从对象创建树
 
@@ -2250,13 +1844,12 @@ table.remove();
 
 例如：
 
-```
+```javascript
 let data = {
   "Fish": {
     "trout": {},
     "salmon": {}
   },
-
   "Tree": {
     "Huge": {
       "sequoia": {},
@@ -2272,7 +1865,7 @@ let data = {
 
 语法如下：
 
-```
+```javascript
 let container = document.getElementById('container');
 createTree(container, data); // 在容器中创建树
 ```
@@ -2280,15 +1873,15 @@ createTree(container, data); // 在容器中创建树
 结果应该像：
 
 - Fish
-- trout
-- salmon
+  - trout
+  - salmon
 - Tree
-- Huge
-  - sequoia
-  - oak
-- Flowering
-  - apple tree
-  - magnolia
+  - Huge
+    - sequoia
+    - oak
+  - Flowering
+    - apple tree
+    - magnolia
 
 选择以下两种解决方法之一：
 
@@ -2297,7 +1890,7 @@ createTree(container, data); // 在容器中创建树
 
 这样很好 P.S. 树不应该有额外的类。
 
-## 查看答案
+查看答案
 
 ## 显示后代
 
@@ -2306,19 +1899,19 @@ createTree(container, data); // 在容器中创建树
 有一个组织为 `ul/li` 的树。编写代码为每个 `<li>` 添加其后代节点的数量。
 
 - Animals
-- Mammals
-  - Cows
-  - Dogs
-  - Tigers
-- Other
-  - Birds
-  - Lizards
-- Fishes
-  - Guppy
-  - Angelfish
-- Sea
+  - Mammals
+    - Cows
+    - Dogs
+    - Tigers
+  - Other
+    - Birds
+    - Lizards
+  - Fishes
+    - Guppy
+    - Angelfish
+  - Sea
 
-## 查看答案
+查看答案
 
 ## 创建日历
 
@@ -2327,7 +1920,7 @@ createTree(container, data); // 在容器中创建树
 编写函数 `createCalendar(elem, year)`。日历应该是 `<table>`，其中日期是 `<th>`。名称如下：
 
 | MO | TU | WE | TH | FR | SA | SU |
-|---|---|---|---|---|---|
+|---|---|---|---|---|---|---|
 | | | | | | | |
 | | | | | | | |
 | | | | | | | |
@@ -2350,7 +1943,7 @@ createTree(container, data); // 在容器中创建树
 
 P.S. 对于此任务，只需生成日历即可，不需要点击。
 
-## 查看答案
+查看答案
 
 ## 使用 setInterval 的彩色时钟
 
@@ -2365,7 +1958,7 @@ Start Stop
 
 使用 HTML/CSS 进行样式设置，JavaScript 只更新元素中的时间。
 
-## 查看答案
+查看答案
 
 ## 在列表中插入 HTML
 
@@ -2373,14 +1966,14 @@ Start Stop
 
 编写代码，在以下两个 `<li>` 之间插入 `<li>2</li><li></li>`：
 
-```
+```html
 <ul id="ul">
   <li>one</li>
   <li>two</li>
 </ul>
 ```
 
-## 查看答案
+查看答案
 
 ## 为表格排序
 
@@ -2397,14 +1990,13 @@ Start Stop
 
 其中可能还有更多行。编写代码按“name”列对其进行排序。
 
-## 查看答案
+查看答案
 
-
-
+## className 和 classList
 
 例如：
 
-```
+```html
 <body class="main page">
 <script>
   alert(document.body.className); // main page
@@ -2425,7 +2017,6 @@ Start Stop
 <script>
   // 添加一个类
   document.body.classList.add('article');
-
   alert(document.body.className); // main page article
 </script>
 </body>
@@ -2490,25 +2081,23 @@ button.style.webkitBorderRadius = '5px';
 ```javascript
 // 如果我们运行这段代码，<body> 会“闪烁”
 document.body.style.display = "none"; // 隐藏
-
 setTimeout(() => document.body.style.display = "", 1000); // 恢复正常
 ```
 
 如果我们将 `display` 设置为空字符串，浏览器将正常应用 CSS 类和其内置样式，就像根本没有这个 `display` 属性一样。
 
 > 使用 style.cssText 完全重写
-> 通常情况下，我们使用 `style.` 来为单个样式属性赋值。我们无法像 `div.style=color: red; width: 100px` 那样设置完整的样式，因为 `div.style` 是一个对象且只只读。
+> 通常情况下，我们使用 `style.` 来为单个样式属性赋值。我们无法像 `div.style=color: red; width: 100px` 那样设置完整的样式，因为 `div.style` 是一个对象且只读。
 > 要作为字符串设置完整的样式，有一个特殊的属性 `style.cssText`：
 
 ```html
 <div id="div">Button</div>
 <script>
   // 我们可以设置特殊的样式标记，如 "important"
-  div.cssText = "color: red !important;
-  background-color: yellow;
-  width: 100px;
+  div.style.cssText = "color: red !important;\
+  background-color: yellow;\
+  width: 100px;\
   text-align: center;";
-
   alert(div.style.cssText);
 </script>
 ```
@@ -2526,22 +2115,21 @@ CSS 单位必须在样式值中提供。例如，我们不应该将 `elem.style.
 <body>
 <script>
 // 不起作用！
-document.body.margin = 20;
-alert(document.body.style); // ''（空字符串，赋值被忽略）
+document.body.style.margin = 20;
+alert(document.body.style.margin); // ''（空字符串，赋值被忽略）
 
 // 添加 CSS 单位 (px) - 就能生效了
-document.body.margin = '20px';
-alert(document.body.style); // 20px
-
+document.body.style.margin = '20px';
+alert(document.body.style.margin); // 20px
 alert(document.body.style.marginTop); // 20px
 </body>
 ```
 
-请注意浏览器如何“解析”`style.margin` 属性，并从中推断出 `style.marginLeft`（以及其他部分）。
+请注意浏览器如何“解析”`style.margin` 属性，并从中推断出 `style.marginTop`（以及其他部分）。
 
 ## 计算样式：getComputedStyle
 
-修改样式很容易。但如何*读取*它们？例如，我们想知道元素的大小、边距、颜色。**style** 属性只作用于 "style" 属性而不经过 CSS 联。因此我们无法通过 `elem.style` 读取任何来自 CSS 类的内容。例如，这里 `style` 看不到 margin：
+修改样式很容易。但如何*读取*它们？例如，我们想知道元素的大小、边距、颜色。**style** 属性只作用于 "style" 属性而不经过 CSS 级联。因此我们无法通过 `elem.style` 读取任何来自 CSS 类的内容。例如，这里 `style` 看不到 margin：
 
 ```html
 <head>
@@ -2563,13 +2151,15 @@ alert(document.body.style.marginTop); // 空
 getComputedStyle(element[, pseudo])
 ```
 
-## element
+### element
 
-用于读取值的元素。（等等，原文描述是"用于读取值的元素"）
+用于读取值的元素。
 
-## pseudo
+### pseudo
 
-如果需要，伪元素，例如 `::before`。空字符串或不传参数表示元素本身。结果是一个带有 style 属性的对象，类似于 `elem.style`，但现在考虑到所有 CSS 类。例如：
+如果需要，伪元素，例如 `::before`。空字符串或不传参数表示元素本身。
+
+结果是一个带有 style 属性的对象，类似于 `elem.style`，但现在考虑到所有 CSS 类。例如：
 
 ```html
 <head>
@@ -2578,9 +2168,7 @@ getComputedStyle(element[, pseudo])
 <body>
 <script>
   let computedStyle = getComputedStyle(document.body);
-
   // 现在我们可以从中读取 margin 和颜色
-
   alert(computedStyle.marginTop); // 5px
   alert(computedStyle.color); // rgb(255, 0, 0)
 </script>
@@ -2589,12 +2177,12 @@ getComputedStyle(element[, pseudo])
 
 ## 计算值与解析值
 
- CSS 中有两个概念：
+CSS 中有两个概念：
 
 1. 计算值（computed value）是在应用所有 CSS 规则和 CSS 继承后的值，是 CSS 层的结果。它看起来像 `height:1em` 或 `font-size:125%`。
 2. 解析值（resolved value）是最终应用于元素的值。`1em` 或 `125%` 是相对值。浏览器获取计算值并将单位固定为绝对值，例如：`height:20px` 或 `font-size:16px`。对于几何属性，解析值可能有浮点，如 `width:50.5px`。
 
-很久以前创建 `getComputedStyle`是为了获取计算值，但结果解析值方便得多，因此标准了。
+很久以前创建 `getComputedStyle` 是为了获取计算值，但结果解析值方便得多，因此标准化了。
 
 现在 `getComputedStyle` 实际上返回属性的解析值。
 
@@ -2633,14 +2221,11 @@ alert(style.margin); // Firefox 中为空字符串
 
 # 任务
 
-# 创建通知
+## 创建通知
 
 优先级：5
 
-编写一个函数 `showNotification(options)`，创建一个带有给定内容的 `<div class="notification">`。该通知
-
-
-应在 1.5 秒后自动消失。
+编写一个函数 `showNotification(options)`，创建一个带有给定内容的 `<div class="notification">`。该通知应在 1.5 秒后自动消失。
 
 选项如下：
 
@@ -2662,7 +2247,7 @@ showNotification({
 
 ## 解决方案
 
-## 元素尺寸与滚动
+# 元素尺寸与滚动
 
 有许多 JavaScript 属性允许我们读取关于元素宽度、高度以及其他几何特征的信息。
 
@@ -2676,6 +2261,7 @@ showNotification({
 <div id="example">
   ...Text...
 </div>
+
 <style>
 #example {
   width: 300px;
@@ -2696,9 +2282,7 @@ showNotification({
 你可以在沙盒中打开文档。
 
 > 上图展示了滚动条最复杂的情况。某些浏览器（并非所有）会通过占用内容区域为其留出空间。
-
 > 所以，如果没有滚动条，内容宽度将是 300px，但如果滚动条宽度为 16px（宽度在设备和浏览器之间可能会变化），则只剩下 300 - 16 = 284px，我们需要考虑这一点。这就是为什么本章的示例假设存在滚动条。如果没有滚动条，情况就会简单一些。
-
 > padding-bottom（内边距边距）区域可能会被文本填充
 > 通常在插图中，内边距显示为空，但如果元素中有大量文本并溢出，浏览器会将“溢出”文本显示在 padding-bottom 位置。
 > 这是一个为了避免混淆的说明，除非另有说明，否则在后续示例中会设置 padding-bottom。
@@ -2719,17 +2303,17 @@ showNotification({
 
 这些属性很少需要，但它们仍然是“最外层”的几何属性，所以我们从它们开始。
 
-offsetParent 是浏览器在渲染期间计算坐标时使用的最近祖先元素。
+`offsetParent` 是浏览器在渲染期间计算坐标时使用的最近祖先元素。
 
 它是指满足以下条件的最近祖先：
 
-- 1. CSS 定位的（position 为 absolute, relative, fixed, sticky）；
-- 2. 或者 <td>, <th>, <table>，
-- 3. 或者 <body>
+1. CSS 定位的（position 为 absolute, relative, fixed, sticky）；
+2. 或者 `<td>`, `<th>`, `<table>`，
+3. 或者 `<body>`
 
-属性 offsetLeft/offsetTop 提供了相对于其左上角的 x/y 坐标。
+属性 `offsetLeft/offsetTop` 提供了相对于其左上角的 x/y 坐标。
 
-在下示例中，内部的 <div> 以 <main> 作为 offsetParent，且 offsetLeft/offsetTop 是相对于其左上角的偏移量 (180)：
+在下示例中，内部的 `<div>` 以 `<main>` 作为 `offsetParent`，且 `offsetLeft/offsetTop` 是相对于其左上角的偏移量 (180)：
 
 ```html
 <main style="position: relative" id="main">
@@ -2737,6 +2321,7 @@ offsetParent 是浏览器在渲染期间计算坐标时使用的最近祖先元�
     <div id="example" style="position: absolute; left: 180px; top: 180px"></div>
   </article>
 </main>
+
 <script>
   alert(example.offsetParent.id); // main
   alert(example.offsetLeft); // 180（注意：是一个数字，而不是字符串 "180px"）
@@ -2744,18 +2329,13 @@ offsetParent 是浏览器在渲染期间计算坐标时使用的最近祖先元�
 </script>
 ```
 
-## offsetParent <MAIN>
+## offsetParent 为 null 的情况
 
-![](img/957480b3759214dc4aa22c653c424343_90_0.png)
+`offsetParent` 为 `null` 的情况有几种：
 
-简介
-此 Ecma 标准基于几种原始技术，最著名的是 JavaScript (Netscape) 和 JavaScript (Microsoft)。该语言由 Brendan Eich 在 Netscape 发明，首次出现在该公司的 Navigator 2.0 浏览器中。它出现在 Netscape 之后的所有浏览器以及微软的所有浏览器中。
-
-offsetParent 为 `null` 的情况有几种：
-
-- 1. 对于未显示的元素 `display:none` 或不在文档中的元素。
-- 2. 对于 <body> 和 <html>。
-- 3. 对于 `position:fixed` 的元素。
+1. 对于未显示的元素 `display:none` 或不在文档中的元素。
+2. 对于 `<body>` 和 `<html>`。
+3. 对于 `position:fixed` 的元素。
 
 ## offsetWidth/Height
 
@@ -2771,38 +2351,27 @@ offsetParent 为 `null` 的情况有几种：
 
 它们包含了内容宽度和内边距，但不包含滚动条。
 
-
-
-
-## 简介
-
-此 Ecma 标准基于几项原始技术，最著名的是 JavaScript (Netscape) 和 Jscript (Microsoft)。该语言由 Brendan Eich 发明，首次出现在该公司的 Navigator 2.0 浏览器中。它出现在 Netscape 之后的所有浏览器以及微软从以下版本开始的所有浏览器中：
-
 ```
-clientWidth:284px = content width
+clientWidth:284px = content width + padding
 CSS width: 300px
 ```
 
 因此，当没有内边距（padding）时，我们可以使用 `clientWidth/clientHeight` 获取内容区域的大小。
 
-## scrollY/Height
+## scrollWidth/Height
 
 - 属性 `clientWidth/clientHeight` 仅考虑元素的可见部分。
 - 属性 `scrollWidth/scrollHeight` 还包含了滚出的（隐藏）部分：
 
-## 简介
-
-此标准基于几项原始 JavaScript (Netscape)。该语言由 Brendan Eich 在 Netscape 发明，首次出现在该公司的 Navigator 2.0 浏览器中。它出现在 Netscape 之后的所有浏览器，以及微软从 Internet Explorer 3.0 开始的所有浏览器中。该标准的开发始于 1996 年 11 月。第一版 Ecma 标准于 1997 年 6 月被采用。该 Ecma 标准被提交给 ISO/IEC JTC 1，通过快速通道程序通过，并于 1998 年 4 月批准为国际标准 ISO/IEC 16262。1998 年 6 月的 Ecma 总会批准了 ECMA-262 的第二版，以保持其与 ISO/IEC 16262 完全一致。第一版和第二版之间的更改属于编辑性质。
-
 在上面的图片中：
 
-- `scroll = 723` 是包含滚动部分的内容区域完整内部高度。
+- `scrollHeight = 723` 是包含滚动部分的内容区域完整内部高度。
 - `scrollWidth = 324` 是完整内部宽度，在这里我们没有水平滚动，所以它等于 `clientWidth`。
 
 我们可以使用这些属性将元素扩展到其完整宽度/高度。如下所示：
 
 ```javascript
-expand the element to the full content height element.style.height = `${element.scrollHeight}px`;
+element.style.height = `${element.scrollHeight}px`;
 ```
 
 ## scrollLeft/scrollTop
@@ -2813,11 +2382,9 @@ expand the element to the full content height element.style.height = `${element.
 
 换句话说，`scrollTop` 是“向上滚动了多少”。
 
-> **scrollLeft/scrollTop** 可以被修改
-
-大多数几何属性在这里是只读的，但 `scrollLeft/scrollTop` 可以被更改，浏览器会滚动元素。
-
-将 **scrollTop** 设置为 0 或 **Infinity** 将使元素分别滚动到最顶部/最底部。
+> **scrollLeft/scrollTop 可以被修改**
+> 大多数几何属性在这里是只读的，但 `scrollLeft/scrollTop` 可以被更改，浏览器会滚动元素。
+> 将 **scrollTop** 设置为 0 或 **Infinity** 将使元素分别滚动到最顶部/最底部。
 
 ## 不要从 CSS 中获取宽度/高度
 
@@ -2835,7 +2402,6 @@ alert(getComputedStyle(elem).width); // 显示 elem 的 CSS 宽度
 为什么我们应该使用几何属性而不是它？原因有两个：
 
 1. 首先，CSS 宽度/高度依赖于另一个属性：`box-sizing`，它定义了“什么是” CSS 宽度和高度。为了 CSS 的目的而更改 `box-sizing` 可能会破坏此类 JavaScript 代码。
-
 2. 第二，CSS 宽度/高度可能是 `auto`，例如对于内联元素：
 
 ```html
@@ -2865,6 +2431,15 @@ alert(getComputedStyle(elem).width); // 显示 elem 的 CSS 宽度
 - `scrollWidth/scrollHeight` – 包含滚动部分的内容完整宽度/高度。
 - `scrollLeft/scrollTop` – 元素隐藏的滚出部分的宽度/高度。
 
+# 文档尺寸与滚动
+
+## 文档的宽度/高度
+
+理论上，文档的根元素是 `document.documentElement`，它包裹了所有内容。所以我们可以使用 `document.documentElement.scrollWidth/scrollHeight` 获取文档的完整宽度/高度。
+
+但在该元素上，这些属性在浏览器中工作方式不一致。在 Chrome/Safari/Opera 中如果没有滚动条，`document.documentElement.scrollHeight` 甚至可能小于 `document.documentElement.clientHeight`！这很奇怪，对吧？
+
+为了可靠地获取完整的文档高度，我们应该取所有可能值的最大值：
 
 ```javascript
 let scrollHeight = Math.max(
@@ -2878,7 +2453,7 @@ alert('Full document height, with scrolled out part: ' + scrollHeight);
 
 为什么这样？别问。这些不一致性源于古代时代，而不是什么“智能”逻辑。
 
-# 获取当前滚动位置
+## 获取当前滚动位置
 
 DOM 元素通过 `elem.scrollLeft/scrollTop` 存储当前的滚动状态。
 
@@ -2896,20 +2471,18 @@ alert('Current scroll from the left: ' + window.pageXOffset);
 ## 滚动：scrollTo, scrollBy, scrollIntoView
 
 > 重要：
-要从 JavaScript 滚动页面，其 DOM 必须已完全构建。
-例如，如果尝试在 `<head>` 中的脚本中滚动页面，它将不起作用。
+> 要从 JavaScript 滚动页面，其 DOM 必须已完全构建。
+> 例如，如果尝试在 `<head>` 中的脚本中滚动页面，它将不起作用。
 
 普通元素可以通过更改 `scrollTop/scrollLeft` 来滚动。
 我们也可以对页面执行相同的操作，如上文所述：
 
 - 对于大多数浏览器（旧版 Webkit 浏览器除外），`document.documentElement.scrollTop/scrollLeft` 是正确的属性。
-
-否则，使用 `document.body.scrollTop/scrollLeft`。
+- 否则，使用 `document.body.scrollTop/scrollLeft`。
 
 这些跨浏览器的兼容性问题并不理想。幸运的是，有一个更简单的通用的解决方案：特殊方法 `window.scrollBy(x,y)` 和 `window.scrollTo(pageX, pageY)`。
 
-- `scroll(x,y)` 方法相对于当前位置滚动页面。例如，`scroll(0,10)` 将页面向下滚动 10px。
-
+- `scrollBy(x,y)` 方法相对于当前位置滚动页面。例如，`scrollBy(0,10)` 将页面向下滚动 10px。
 - `scrollTo(pageX, pageY)` 方法将页面滚动到绝对坐标，使得可见区域的左上角相对于文档左上角的坐标为 `(pageX, pageY)`。这就像设置 `scrollLeft/scrollTop`。
 
 要滚动到最开始，我们可以使用 `scrollTo(0,0)`。
@@ -2923,7 +2496,6 @@ alert('Current scroll from the left: ' + window.pageXOffset);
 调用 `elem.scrollIntoView(top)` 会滚动页面使 `elem` 可见。它接受一个参数：
 
 - 如果 `top=true`（默认值），则页面将滚动，使 `elem` 出现在窗口顶部。元素的上边缘与窗口顶部对齐。
-
 - 如果 `top=false`，则页面将滚动，使 `elem` 出现在底部。元素的下边缘与窗口底部对齐。
 
 ## 禁止滚动
@@ -2943,7 +2515,6 @@ alert('Current scroll from the left: ' + window.pageXOffset);
 几何：
 
 - 文档可见部分的宽度/高度（内容区域宽/高）：`document.documentElement.clientWidth/Height`
-
 - 整个文档（包括滚出的部分）的宽度/高度：
 
 ```javascript
@@ -2957,10 +2528,9 @@ let scrollHeight = Math.max(
 滚动：
 
 - 读取当前滚动位置：`window.pageYOffset/pageXOffset`
-
 - 修改当前滚动位置：
   - `window.scrollTo(pageX, pageY)` - 绝对坐标，
-  - `window.scrollTo(x,y)` - 相对于当前位置滚动，
+  - `window.scrollBy(x,y)` - 相对于当前位置滚动，
   - `elem.scrollIntoView(top)` - 滚动使 elem 可见（与窗口顶部/底部对齐）。
 
 # 坐标
@@ -2968,122 +2538,29 @@ let scrollHeight = Math.max(
 为了移动元素，我们应该熟悉坐标。
 大多数 JavaScript 方法处理两种坐标系之一：
 
-- 1. 相对于窗口（或另一个视口）的顶部/左侧。
+1. 相对于窗口（或另一个视口）的顶部/左侧。
 2. 相对于文档的顶部/左侧。
 
 理解区别以及每种类型的适用位置非常重要。
 
-# 窗口坐标：getBoundingClientRectRect
+# 窗口坐标：getBoundingClientRect
 
 窗口坐标从窗口的左上角开始。
 
 `elem.getBoundingClientRect()` 方法返回 `elem` 的窗口坐标，这是一个包含属性的对象：
 
-- 元素顶边缘的 Y 坐标，
-- 元素左边缘的 X 坐标，
-- 元素右边缘的 X 坐标，
-- 元素底边缘的 Y 坐标。
-
-（注：原文后续部分存在大量重复和 OCR 错误，已根据要求进行去重和清理)*
-
-
-
-
-```javascript
-return message;
-}
-
-// Usage
-// add it for 5 seconds in the document
-let message = createUnder(elem, 'Hello, world!!');
-document.body.append(message);
-setTimeout(() => message.remove(), 5000);
-```
-
-可以修改代码以将消息显示在左侧、右侧、下方，或者应用 CSS 动画实现“淡入”等。这很容易，因为我们拥有该元素的所有坐标和尺寸。
-
-但请注意一个重要的细节：当页面滚动时，消息会离开按钮。
-
-原因是：消息元素依赖于 `position:fixed`（固定定位），因此当页面滚动时，它会留在窗口的相同位置。
-
-要改变这一点，我们需要使用文档坐标和 `position:absolute`（绝对定位）。
-
-## 文档坐标
-
-相对于文档的坐标从文档的左上角开始，而不是窗口。
-
-在 CSS 中，窗口坐标对应 `position:fixed`，而文档坐标类似于顶部的 `position:absolute`。
-
-我们可以使用 `position:absolute` 和 `top/left` 将内容置于文档的某个位置，使其在页面滚动期间保持在那里。我们需要先获取正确的坐标。
-
-为了清晰起见，我们将窗口坐标称为 `(clientX, clientY)`，文档坐标称为 `(pageX, pageY)`。
-
-当页面未滚动时，窗口坐标和文档坐标实际上是相同的。它们的零点也匹配：
-
-# 维基百科，自由的百科
-
-(clientX,clientY) = (0,0)
-
-## 欢迎维基百科，
-
-- 艺术
-- 传记
-- 地理
-- 历史
-- 数学
-- 科学
-
-clientX=220, clientY=450
-pageX=220, pageY=450
-
-> 来自今日特色文章
-
-## 新闻
-
-![](img/957480b3759214dc4aa22c653c424343_110_0.png)
-
-![](img/957480b3759214dc4aa22c653c424343_110_1.png)
-
-保护花植物，通常高达 10 米
-
-如果我们滚动页面，`(clientX,clientY)` 就会改变，因为它们相对于窗口；但 `(pageX, pageY)` 保持不变。
-
-以下是垂直滚动后的相同页面：
-
-## 来自今日特色文章
-
-## 新闻
-
-细叶金果树（Banksia attenuata）是保护花科的一种树。通常高为 10 米（33 英尺），在干旱地区也可以是 0.4 到 2 米（1.3 到 6.6 英尺）的灌木。它有长长的箭形叶子和亮黄色的花序（或花穗）。它分布在西澳西部大部分地区，从卡尔巴里国家公园以北到刘维温角角以南，东到菲兹杰拉德河国家公园，由 Brown 在 1810 年命名了该物种。
-
-TRAPIST-1 行星系统的艺术想象
-- 《月光女孩在奥斯卡奖上获得最佳影片，《爱乐之城》获得六项奖。
-- 土耳烘烤的叙利亚人（等等，原文是土耳烘烤）叙利亚自由军从伊斯兰手中夺得了阿尔巴卜。
-- 天文学家宣布 TRAPIST-1 拥有七颗系外行星（艺术家的...
-
-- 头部“来自今日特色文章”的 `clientY`，因为元素现在位于窗口顶部。
-- `clientX` 没有改变，因为我们是水平滚动的。
-- 元素的 `pageX` 和 `pageY` 坐标仍然相同，因为它们相对于文档的。
-
-## 获取文档坐标
-
-没有标准方法可以获取元素的文档坐标。但它很容易写出来。
-
-这两个坐标系通过以下公式连接：
-
-- `pageY = clientY` + 文档已滚出的垂直部分的高度。
-- `pageX = clientX` + 文档已滚出的水平部分的宽度。
-
-函数 `getCoords(elem)` 将从 `elem.getBoundingClientRect()` 获取窗口坐标，并将当前滚动量加上它们上：
+- `top` - 元素顶边缘的 Y 坐标，
+- `left` - 元素左边缘的 X 坐标，
+- `right` - 元素右边缘的 X 坐标，
+- `bottom` - 元素底边缘的 Y 坐标。
 
 ```javascript
 // 获取元素的文档坐标
 function getCoords(elem) {
   let box = elem.getBoundingClientRect();
-
   return {
-    top: box.top + pageOffsetY,
-    left: box.left + pageXOffset
+    top: box.top + window.pageYOffset,
+    left: box.left + window.pageXOffset
   };
 }
 ```
@@ -3109,7 +2586,7 @@ function getCoords(elem) {
 
 使用 JavaScript 找到箭头指向的角的窗口坐标。
 
-为了方便，文档中实现了一个了一个小功能。点击任何地方都会显示那里的坐标。
+为了方便，文档中实现了一个小功能。点击任何地方都会显示那里的坐标。
 
 点击任何地方获取窗口坐标。
 这是为了测试，以检查你通过 JavaScript 获取的结果。
@@ -3120,7 +2597,8 @@ function getCoords(elem) {
 你的代码应该使用 DOM 获取以下位置的窗口坐标：
 
 1. 左上角外角（这很简单）。
-2. 右下角外角（也很简单）。3. 左上角内角（有点难）。
+2. 右下角外角（也很简单）。
+3. 左上角内角（有点难）。
 4. 右下角内角（有几种方法，选择其一）。
 
 你计算的坐标应该与鼠标点击返回的相同。
@@ -3179,7 +2657,6 @@ P.S. 注释应该使用 `position:fixed`。
 ```javascript
 // 在引用块上方显示注释
 positionAt(blockquote, "top-out", note);
-
 // 在引用块内部顶部显示注释
 positionAt(blockquote, "top-in", note);
 ```
@@ -3199,12 +2676,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Reprehenderit sit augue
 
 作为源代码，采用“在元素附近显示注释（绝对定位）”任务的解决方案。
 
-
-
-
-浏览器事件、事件属性和处理模式的介绍。
-
-## 浏览器事件简介
+# 浏览器事件简介
 
 事件是某个事情发生的信号。所有 DOM 节点都会产生信号（但事件不仅限于 DOM）。
 
@@ -3212,28 +2684,28 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Reprehenderit sit augue
 
 ## 鼠标事件：
 
-- click – 当鼠标点击元素时（触摸屏设备在轻触时产生）。
-- contextmenu – 当鼠标在元素上点击右键菜单时。
-- mouseover / mouseout – 当鼠标光标悬过 / 离开元素时。
-- mousedown / mouseup – 当在元素上按下 / 释放鼠标时。
-- mousemove – 当鼠标移动时。
+- `click` – 当鼠标点击元素时（触摸屏设备在轻触时产生）。
+- `contextmenu` – 当鼠标在元素上点击右键菜单时。
+- `mouseover` / `mouseout` – 当鼠标光标悬过 / 离开元素时。
+- `mousedown` / `mouseup` – 当在元素上按下 / 释放鼠标时。
+- `mousemove` – 当鼠标移动时。
 
 ## 表单元素事件：
 
-- submit – 当访问者提交 <form> 时。
-- focus – 当访问者聚焦元素时，例如聚焦 <input>。
+- `submit` – 当访问者提交 `<form>` 时。
+- `focus` – 当访问者聚焦元素时，例如聚焦 `<input>`。
 
 ## 键盘事件：
 
-- keydown and keyup – 当访问者按下然后释放按键时。
+- `keydown` and `keyup` – 当访问者按下然后释放按键时。
 
 ## 文档事件：
 
-- DOMContentLoaded – 当 HTML 加载并处理，DOM 完全构建完成后。
+- `DOMContentLoaded` – 当 HTML 加载并处理，DOM 完全构建完成后。
 
 ## CSS 事件：
 
-- transitionend – 当 CSS 动画结束时。
+- `transitionend` – 当 CSS 动画结束时。
 
 还有许多其他事件。我们将在接下来的章节中详细介绍特定事件的细节。
 
@@ -3251,7 +2723,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Reprehenderit sit augue
 
 例如，要为 `input` 分配 `click` 处理器，可以使用 `onclick`，如下：
 
-```
+```html
 <input value="Click me" onclick="alert('Click!')" type="button">
 ```
 
@@ -3263,7 +2735,7 @@ HTML 属性并不是编写大量代码的好地方，所以我们最好创建一
 
 这里点击时会运行 `countRabbits()` 函数：
 
-```
+```html
 <script>
 function countRabbits() {
   for(let i=1; i<=3; i++) {
@@ -3273,8 +2745,6 @@ function countRabbits() {
 </script>
 
 <input type="button" onclick="countRabbits()" value="Count rabbits">
-
-Count rabbits!
 ```
 
 众所周知，HTML 属性名是不区分大小写的，所以 ONCLICK 和 `onclick` 的效果一样。……但通常属性是小写的：`onclick`。
@@ -3285,7 +2755,7 @@ Count rabbits!
 
 例如，`elem.onclick`：
 
-```
+```html
 <input id="elem" type="button" value="Click me">
 <script>
   elem.onclick = function() {
@@ -3302,15 +2772,13 @@ Count rabbits!
 
 这两段代码的作用相同：
 
-- 1. 仅限 HTML：
-
-```
+1. 仅限 HTML：
+```html
 <input type="button" onclick="alert('Click!')" value="Button">
 ```
 
-- 2. HTML + JS：
-
-```
+2. HTML + JS：
+```html
 <input type="button" id="button" value="Button">
 <script>
   button.onclick = function() {
@@ -3338,7 +2806,6 @@ Count rabbits!
 function sayThanks() {
   alert('Thanks!');
 }
-
 elem.onclick = sayThanks;
 ```
 
@@ -3350,7 +2817,7 @@ elem.onclick = sayThanks;
 
 在下面的代码中，按钮使用 `this.innerHTML` 显示其内容：
 
-```
+```html
 <button onclick="alert(this.innerHTML)">Click me</button>
 ```
 
@@ -3370,7 +2837,7 @@ button.onclick = sayThanks;
 button.onclick = sayThanks();
 ```
 
-如果我们加上括号，`sayThanks()` 是一个函数调用。所以最后一行实际上获取了函数执行的结果，而该结果是 `undefined`（因为函数没有返回内容），并将其赋值给 `onclick`。这行不起通。
+如果我们加上括号，`sayThanks()` 是一个函数调用。所以最后一行实际上获取了函数执行的结果，而该结果是 `undefined`（因为函数没有返回内容），并将其赋值给 `onclick`。这行不通。
 
 ……但在标记语言中我们需要括号：
 
@@ -3378,7 +2845,44 @@ button.onclick = sayThanks();
 <input type="button" id="button" onclick="sayThanks()">
 ```
 
+## addEventListener
 
+根本问题在于：我们无法为同一事件分配多个处理器。例如，我们想在点击时高亮显示按钮，同时也想在点击时发送分析数据。
+
+使用 `elem.addEventListener(event, handler[, options])` 可以添加多个处理器。
+
+语法：
+
+```javascript
+element.addEventListener(event, handler[, options]);
+```
+
+- `event` - 事件名，例如 `"click"`。
+- `handler` - 处理器函数。
+- `options` - 可选对象，包含属性：
+  - `once`：如果为 true，处理器在执行后自动移除。
+  - `capture`：捕获阶段处理事件（后面会讲）。
+  - `passive`：如果为 true，则处理器永远不会调用 `preventDefault()`。
+
+要移除处理器，使用 `element.removeEventListener(event, handler[, options])`。
+
+```html
+<input id="elem" type="button" value="Click me">
+<script>
+  function handler1() {
+    alert('Thanks!');
+  }
+  function handler2() {
+    alert('Thanks again!');
+  }
+  elem.addEventListener("click", handler1);
+  elem.addEventListener("click", handler2);
+</script>
+```
+
+两个处理器都会运行。
+
+## addEventListener 对比 on<event>
 
 正如我们在上面的示例所示，我们可以通过 DOM 属性或 `addEventListener` 来设置处理函数。但通常我们只使用这两种方法中的一种。
 
@@ -3396,18 +2900,17 @@ input {
   transition: width 1s;
   width: 100px;
 }
-
 .wide {
   width: 300px;
 }
 </style>
 
 <input type="button" id="elem" onclick="this.classList.toggle('wide')" value="">
+
 <script>
 elem.ontransitionend = function() {
   alert("DOM property"); // 不生效
 };
-
 elem.addEventListener("transitionend", function() {
   alert("addEventListener"); // 动画结束时显示
 });
@@ -3424,7 +2927,6 @@ elem.addEventListener("transitionend", function() {
 
 ```html
 <input type="button" value="Click me" id="elem">
-
 <script>
 elem.onclick = function(event) {
   // 显示事件类型、元素和点击坐标
@@ -3436,15 +2938,15 @@ elem.onclick = function(event) {
 
 事件对象的某些属性：
 
-## event.type
+### event.type
 
 事件类型，这里是 "click"。
 
-## event.currentTarget
+### event.currentTarget
 
-处理事件的元素。这与此处的完全相同，除非处理函数是箭头函数，或者它的 `this` 绑定到了其他地方，此时 `event.currentTarget` 就会变得有用。
+处理事件的元素。这与此处的 `this` 完全相同，除非处理函数是箭头函数，或者它的 `this` 绑定到了其他地方，此时 `event.currentTarget` 就会变得有用。
 
-## event.clientX / event.clientY
+### event.clientX / event.clientY
 
 鼠标事件中光标相对于窗口的坐标。
 
@@ -3456,8 +2958,6 @@ elem.onclick = function(event) {
 
 ```html
 <input type="button" onclick="alert(event.type)" value="Event type">
-
-Event type
 ```
 
 这是可行的，因为当浏览器读取该属性时，它会创建一个如下处理函数：`function(event) { alert(event.type) }`。也就是说：它的第一个参数被称为 `"event"`，而函数体取自属性。
@@ -3470,7 +2970,6 @@ Event type
 
 ```html
 <button id="elem">Click me</button>
-
 <script>
 elem.addEventListener('click', {
   handleEvent(event) {
@@ -3486,26 +2985,18 @@ elem.addEventListener('click', {
 
 ```html
 <button id="elem">Click me</button>
-
 <script>
 class Menu {
   handleEvent(event) {
     switch(event.type) {
       case 'mousedown':
         elem.innerHTML = "Mouse button pressed";
+        break;
+      case 'mouseup':
+        elem.innerHTML += "...and released";
+        break;
     }
   }
-}
-</script>
-```
-
-```javascript
-  break;
-  case 'mouseup':
-    elem.innerHTML += "...and released";
-    break;
-}
-}
 }
 
 let menu = new Menu();
@@ -3549,15 +3040,15 @@ elem.addEventListener('mouseup', menu);
 
 有 3 种分配事件处理函数的方法：
 
-- 1. HTML 属性：`onclick="...`
-- 2. DOM 属性：`elem.onclick = function`
-- 3. 方法：`elem.addEventListener(event, handler[, phase])` 用于添加，`removeEventListener` 用于移除。
+1. HTML 属性：`onclick="..."`
+2. DOM 属性：`elem.onclick = function`
+3. 方法：`elem.addEventListener(event, handler[, phase])` 用于添加，`removeEventListener` 用于移除。
 
 HTML 属性使用较少，因为在 HTML 标签中间写 JavaScript 看起来有点奇怪且不自然。此外在里面无法编写大量代码。
 
 DOM 属性的使用还可以，但我们不能为特定事件分配多个处理函数。在很多情况下，这个限制并不致命。
 
-最后一种方法最灵活，但写起来最长。有少数事件仅在在该方法下有效，例如 `transitionend` 和 `DOMContentLoaded`（后将介绍）。此外 `addEventListener` 支持将对象作为事件处理函数。在这种情况下，当事件发生时会调用 `handleEvent` 方法。
+最后一种方法最灵活，但写起来最长。有少数事件仅在该方法下有效，例如 `transitionend` 和 `DOMContentLoaded`（后将介绍）。此外 `addEventListener` 支持将对象作为事件处理函数。在这种情况下，当事件发生时会调用 `handleEvent` 方法。
 
 无论你如何分配处理函数，它都会接收一个事件对象作为第一个参数。该对象包含了发生情况的细节。
 
@@ -3575,7 +3066,7 @@ DOM 属性的使用还可以，但我们不能为特定事件分配多个处理�
 
 ![](img/957480b3759214dc4aa22c653c424343_127_0.png)
 
-[打开任务沙盒](↗
+[打开任务沙盒](↗)
 
 前往解决方案
 
@@ -3630,10 +3121,15 @@ button.onclick = () => alert("2");
 创建一个点击时可以展开/折叠的菜单：
 
 ```html
-▶ Sweeties (点击我)!
 ```
 
+
+
+▶ Sweeties (点击我)!
+
+```
 P.S. 需要修改源文档的 HTML/CSS。
+```
 
 [前往解决方案]()
 
@@ -3655,7 +3151,7 @@ P.S. 需要修改源文档的 HTML/CSS。
 
 ## 猫
 
-猫（拉丁：*Felis catus*）是一种小型、通常有毛的肉肉性哺乳动物。当作为室内宠物饲养时被称为家猫，当不需要与其他猫科动物或猫科动物区分时简单被称为猫。猫因其陪伴作用和捕鼠的能力而被人类重视。
+猫（拉丁：*Felis catus*）是一种小型、通常有毛的肉食性哺乳动物。当作为室内宠物饲养时被称为家猫，当不需要与其他猫科动物或猫科动物区分时简单被称为猫。猫因其陪伴作用和捕鼠的能力而被人类重视。
 
 ## 轮播图
 
@@ -3668,10 +3164,6 @@ P.S. 需要修改源文档的 HTML/CSS。
 稍后我们可以为其添加更多功能：无限滚动、动态加载等。
 
 P.S. 对于这个任务，HTML/CSS 结构实际上占据了解决方案的 90%。
-
-
-
-
 
 为任务打开一个沙箱。↗
 
@@ -3691,7 +3183,7 @@ P.S. 对于这个任务，HTML/CSS 结构实际上占据了解决方案的 90%�
 
 如果你点击了 EM，DIV 上的处理函数就会运行。
 
-这难道不有点奇怪吗？为什么实际点击是在 `<<em>>` 上，`<<div>` 上的处理函数却会运行呢？
+这难道不有点奇怪吗？为什么实际点击是在 `<em>` 上，`<div>` 上的处理函数却会运行呢？
 
 ## 冒泡
 
@@ -3716,20 +3208,16 @@ P.S. 对于这个任务，HTML/CSS 结构实际上占据了解决方案的 90%�
 </form>
 ```
 
-# FORM
-DIV
-p
+点击内部的 `<p>` 会首先运行 `onclick`：
 
-点击内部的 <p> 会首先运行 `onclick`：
-
-1. 在该 <p> 上。
+1. 在该 `<p>` 上。
 2. 然后在外层的 `<div>` 上。
 3. 然后在外层的 `<form>` 上。
-4. 依此类向上，直到 `document` 对象。
+4. 依此类推向上，直到 `document` 对象。
 
 ![](img/957480b3759214dc4aa22c653c424343_132_0.png)
 
-所以，如果我们点击了 <p>，就会看到 3 个弹框：`p` -> `div` -> `form`。
+所以，如果我们点击了 `<p>`，就会看到 3 个弹框：`p` -> `div` -> `form`。
 
 这个过程被称为“冒泡”，因为事件像水中的泡泡一样，从内部元素向上穿过父元素。
 
@@ -3748,7 +3236,7 @@ p
 - `event.target` – 是触发事件的“目标”元素，它在冒泡过程中不会改变。
 - `this` – 是“当前”元素，即正在运行处理函数的那个元素。
 
-例如，如果我们有一个单一的处理函数 `form.onclick`，那么它可以“捕获”表单内部的所有点击。无论点击发生在何处，它都会向上冒泡到 <form> 并运行处理函数。
+例如，如果我们有一个单一的处理函数 `form.onclick`，那么它可以“捕获”表单内部的所有点击。无论点击发生在何处，它都会向上冒泡到 `<form>` 并运行处理函数。
 
 在 `form.onclick` 处理函数中：
 
@@ -3757,7 +3245,7 @@ p
 
 查看示例：https://plkr.co/edit/iaPo3qfpDpHXxu0Jita?p=preview
 
-`event.target` 等于 `this` 是可能的——当直接点击 <form> 元素时。
+`event.target` 等于 `this` 是可能的——当直接点击 `<form>` 元素时。
 
 ## 停止冒泡
 
@@ -3767,7 +3255,7 @@ p
 
 实现的方法是 `event.stopPropagation()`。
 
-例如，如果你点击了 <button>，`body.onclick` 将不起作用：
+例如，如果你点击了 `<button>`，`body.onclick` 将不起作用：
 
 ```html
 <body onclick="alert('冒泡没有传到这里')">
@@ -3783,7 +3271,7 @@ p
 
 为了停止冒泡并防止当前元素上的处理函数运行，有一个 `event.stopImmediatePropagation()` 方法。
 
-## 不要在此需要的情况下停止冒泡！
+## 不要在不需要的情况下停止冒泡！
 
 冒泡非常方便。在没有实际需求的情况下不要停止它：除非是明显且经过良好架构构思的。
 
@@ -3794,18 +3282,16 @@ p
 
 ## 捕获
 
-事件传播的另一个阶段被称为“捕获 (capturing)”。它在实际代码中很少使用。捕获阶段是事件从根部向目标元素移动的过程
+事件传播的另一个阶段被称为“捕获 (capturing)”。它在实际代码中很少使用。捕获阶段是事件从根部向目标元素移动的过程。
 
 1. 捕获阶段 – 事件向下移动到元素。
 2. 目标阶段 – 事件到达元素。
 3. 冒泡阶段 – 事件从元素向上冒泡。
 
-在捕获阶段，处理函数会按照从根到元素的顺序执行。捕获阶段：img/957480b3759214dc4aa22c653c424343_135_0.png)
+在捕获阶段，处理函数会按照从根到元素的顺序执行。
 
-
-
-- event.currentTarget (= this) – 处理事件的当前元素（即带有该处理器的元素）
-- event.eventPhase – 当前阶段（捕获=1，目标=2，冒泡=3）。
+- `event.currentTarget (= this)` – 处理事件的当前元素（即带有该处理器的元素）
+- `event.eventPhase` – 当前阶段（捕获=1，目标=2，冒泡=3）。
 
 任何事件处理器都可以通过调用 `event.stopPropagation()` 来停止事件传播，但并不建议这样做，因为我们无法确定之后是否还会需要它，也许是为了处理完全不同的事情。
 
@@ -3850,7 +3336,7 @@ HTML 如下所示：
 ```html
 <table>
   <tr>
-    <th colspan="3"><<em>八卦</em>图：方向、元素、颜色、意义</strong>...</th>
+    <th colspan="3"><em>八卦</em>图：方向、元素、颜色、意义...</th>
   </tr>
   <tr>
     <td>...<strong>西北</strong>...</td>
@@ -3877,9 +3363,7 @@ let selectedTd;
 
 table.onclick = function(event) {
   let target = event.target; // 点击发生在哪里？
-
-  if (target.tagName != 'TD') return; //不在 TD 上。那么我们就不感兴趣
-
+  if (target.tagName != 'TD') return; // 不在 TD 上。那么我们就不感兴趣
   highlight(target); // 高亮它
 };
 
@@ -3893,7 +3377,7 @@ function highlight(td) {
 }
 ```
 
-这样的代码不在乎表格中有多少单元格。我们可以随时动态添加/删除 `<td>>`，高亮功能仍然有效。
+这样的代码不在乎表格中有多少单元格。我们可以随时动态添加/删除 `<td>`，高亮功能仍然有效。
 
 尽管如此，这有一个缺点。
 
@@ -3919,25 +3403,18 @@ function highlight(td) {
 ```javascript
 table.onclick = function(event) {
   let td = event.target.closest('td'); // (1)
-
   if (!td) return; // (2)
-
   if (!table.contains(td)) return; // (3)
-
   highlight(td); // (4)
 }
 ```
 
 解释：
 
-- 1. 方法方法 `elem.closest(selector)` 返回匹配选择器的最近的祖先。在我们的案例中，我们用它从源元素向上查找 `<td>`。
+- 1. 方法 `elem.closest(selector)` 返回匹配选择器的最近的祖先。在我们的案例中，我们用它从源元素向上查找 `<td>`。
 - 2. 如果 `event.target` 不在任何 `<td>` 内部，则调用将返回 `null`，我们不需要做任何事情。
 - 3. 在嵌套表格的情况下，`event.target` 可能是位于当前表格之外的 `<td>`。因此我们检查它是否真的是我们表格的 `<td>`。
 - 4. `highlight(td)` 调用高亮函数。
-
-
-
-
 
 # 总结
 
@@ -3947,20 +3424,20 @@ table.onclick = function(event) {
 
 算法如下：
 
--   在容器上放置单个处理器函数。
--   在处理器中——检查源元素 `event.target`。
--   如果事件发生在我们感兴趣的元素内部，则处理该事件。
+- 在容器上放置单个处理器函数。
+- 在处理器中——检查源元素 `event.target`。
+- 如果事件发生在我们感兴趣的元素内部，则处理该事件。
 
 优点：
 
--   简化初始化并节省内存：不需要添加许多处理函数。
--   代码更少：在添加或删除元素时，不需要对应的添加/删除处理函数。
--    DOM 修改：我们可以使用 `innerHTML` 等方法批量添加/删除元素。
+- 简化初始化并节省内存：不需要添加许多处理函数。
+- 代码更少：在添加或删除元素时，不需要对应的添加/删除处理函数。
+- DOM 修改：我们可以使用 `innerHTML` 等方法批量添加/删除元素。
 
 当然，事件委托也有其局限性：
 
--   首先，事件必须是冒泡的。某些事件不会冒泡。此外，低级处理器不应使用 `event.stopPropagation()`。
--   第二，委托可能会增加 CPU 负载，因为容器级处理器会对容器内任何位置的事件做出反应，无论这些事件是否对我们感兴趣。但通常这种负载是可以忽略不计的，所以我们不需要考虑。
+- 首先，事件必须是冒泡的。某些事件不会冒泡。此外，低级处理器不应使用 `event.stopPropagation()`。
+- 第二，委托可能会增加 CPU 负载，因为容器级处理器会对容器内任何位置的事件做出反应，无论这些事件是否对我们感兴趣。但通常这种负载是可以忽略不计的，所以我们不需要考虑。
 
 # 任务
 
@@ -3973,11 +3450,12 @@ table.onclick = function(event) {
 如下所示：
 
 | 马 [x] |
-| 马是马属的两种现存亚种之一。它是马科的一种奇蹄目哺乳动物。马马在过去的 4500 万到 5500 万年里，从一种小型多足动物（始马）进化成了今天的大型单蹄动物。 |
+| --- |
+| 马是马属的两种现存亚种之一。它是马科的一种奇蹄目哺乳动物。马在过去的 4500 万到 5500 万年里，从一种小型多足动物（始马）进化成了今天的大型单蹄动物。 |
 | 驴 [x] |
 | 驴（Equus africanus asimus）是马科的一种家化物种。驴的野生祖先是非洲野驴（E. africanus）。驴至少已作为工作动物使用了 5000 年。 |
 | 猫 [x] |
-| 家猫（拉丁语：Felis catus）是一种小型、毛茸茸的肉肉性哺乳动物。当不需要与其他猫科动物和猫科动物区分时，它们通常被称为家猫或室内猫。猫因其伴侣价值和捕猎害虫而被人类所重视。 |
+| 家猫（拉丁语：Felis catus）是一种小型、毛茸茸的肉食性哺乳动物。当不需要与其他猫科动物和猫科动物区分时，它们通常被称为家猫或室内猫。猫因其伴侣价值和捕猎害虫而被人类所重视。 |
 
 注：. 容器上应该只有一个事件监听器，请使用事件委托。
 
@@ -4010,8 +3488,8 @@ table.onclick = function(event) {
 
 要求：
 
--   仅使用一个事件处理器（使用委托）
--   点击节点标题之外（空白区域）不应执行任何操作。
+- 仅使用一个事件处理器（使用委托）
+- 点击节点标题之外（空白区域）不应执行任何操作。
 
 打开任务沙盒。
 
@@ -4062,7 +3540,7 @@ table.onclick = function(event) {
 
 注：. 表格可以是很大的，具有任意数量的行和列。
 
-[打开任务沙盒]()()
+[打开任务沙盒]()
 
 查看解决方案
 
@@ -4091,731 +3569,21 @@ Short button One more button
 
 细节：
 
--   提示框不应超出窗口边缘。通常它应该在元素上方，但如果元素位于页面顶部，则在它下方。
--   提示框提供在 `data-tooltip` 属性中。你需要两个事件：
-    -   `mouseover` 在指针悬停在元素上时触发。
-    -   `mouseout` 在指针离开元素时触发。
+- 提示框不应超出窗口边缘。通常它应该在元素上方，但如果元素位于页面顶部，则在它下方。
+- 提示框提供在 `data-tooltip` 属性中。你需要两个事件：
+  - `mouseover` 在指针悬停在元素上时触发。
+  - `mouseout` 在指针离开元素时触发。
 
 请使用事件委托：在 `document` 上设置处理器，以跟踪所有对带有 `data-tooltip` 的元素的“悬入”和“离开”，并管理提示框。
 
 行为实现后，即使是不熟悉 JavaScript 的人也可以添加。
-
-注：. 行为实现后，即使是不熟悉 JavaScript 的人也可以添加。
-
-行为实现后，即使是不熟悉 JavaScript 的人也可以添加。
-
-行为实现后，即使是不熟悉 JavaScript 的人也可以添加。
-
-行为实现后，即使是不熟悉 JavaScript 的人也可以添加。
-
-行为实现后，即使是不熟悉 JavaScript 的人也可以添加。
-
-行为实现后，即使是不熟悉 JavaScript 的人也可以添加。
-
-行为实现后，即使是不熟悉 JavaScript 的人也可以添加。
-
-行为实现后，即使是不熟悉 JavaScript 的人也可以添加。
-
-行为实现后，即使是不熟悉 JavaScript 的人也可以添加。
-
-行为实现后，即使是不熟悉 JavaScript 的人也可以添加。
-
-行为实现后，即使是不熟悉 JavaScript 的人也可以添加。
-
-行为实现后，即使是不熟悉 JavaScript 的人也可以添加。
-
-行为实现后，即使是不熟悉 JavaScript 的人也可以添加。
-
-行为实现后，即使是不熟悉 JavaScript 的人也可以添加。
-
-行为实现后，即使是不熟悉 JavaScript 的人也可以添加。
-
-行为实现后，即使是不熟悉 JavaScript 的人也可以添加。
-
-行为实现后，即使是不熟悉 JavaScript 的人也可以添加。
-
-行为实现后，即使是不熟悉 JavaScript 的人也可以添加。
-
-行为实现后，即使是不熟悉 JavaScript 的人也可以添加。
-
-行为实现。
-
-行为实现后，即使是不熟悉 JavaScript 的人也可以添加。
-
-行为实现后，即使是不熟悉 JavaScript 的人也可以添加。
-
-行为实现后，即使是不熟悉 JavaScript 的人也可以添加。
-
-行为实现后，即使是不熟悉 JavaScript 的人也可以添加。
-
-行为实现后，即使是不熟悉 JavaScript 的人也可以添加。
-
-行为实现后，即使是不熟悉 JavaScript 的人也可以添加。
-
-行为实现后，即使是不熟悉 JavaScript 的人也可以添加。
-
-行为实现后，即使是不熟悉 JavaScript 的人也可以添加。
-
-行为实现后，即使是不熟悉 JavaScript 的人也可以添加。
-
-行为实现后，即使是不熟悉 JavaScript 的人也可以添加。
-
-行为实现后，即使是不熟悉 JavaScript 的人也可以添加。
-
-行为实现后，即使是不熟悉 JavaScript 的人也可以添加。
-
-行为实现后，即使是不熟悉 JavaScript 的人也可以添加。
-
-行为实现后，即使是不熟悉 JavaScript 的人也可以添加。
-
-行为实现后，即使是不熟悉 JavaScript 的人也可以添加。
-
-行为实现后，即使是不熟悉 JavaScript 的人也可以添加。
-
-行为实现后，即使是不熟悉 JavaScript 的人也可以添加。
-
-行为实现后，即使是不熟悉 JavaScript 的人也可以添加。
-
-行为实现后，即使是不熟悉 JavaScript 的人也可以添加。
-
-行为实现后，即使是不熟悉 JavaScript 的人也可以添加。
-
-行为实现后，即使是不熟悉 JavaScript 的人也可以添加。
-
-行为实现后，即使是不熟悉 JavaScript 的人也可以添加。
-
-行为实现后，即使是不熟悉 JavaScript 的人也可以添加。
-
-行为实现后，即使是不熟悉 JavaScript 的人也可以添加。
-
-行为实现后，即使是不熟悉 JavaScript 的人也可以添加。
-
-行为实现后，即使是不熟悉 JavaScript 的人也可以添加。
-
-行为实现后，即使是不熟悉 JavaScript 的人也可以添加。
-
-行为实现。，即使是不后 JavaScript 的人 的 的。
-
-。。。。。。
-
-，实现后， 的是不 的。。。。
-
-。
-
-，实现后，即使是不 的 JavaScript 的人也可以
-
-。
-
-，实现后，即使是不人 JavaScript 的人也可以添加。
-
-，实现后， JavaScript 的熟悉 JavaScript 的人也可以添加。
-
-行为实现后，即使是不熟悉 JavaScript 的人也可以添加。
-
-行为实现后，即使是不熟悉 JavaScript 的人也可以添加。
-
-行为实现后，即使是不熟悉 JavaScript 的人也可以添加。
-
-行为实现后，即使是不熟悉 JavaScript 的人也可以添加。
-
-行为实现后，即使是不熟悉 JavaScript 的人也可以添加。
-
-行为实现后，即使是不熟悉 JavaScript 的人也可以添加。
-
-行为实现后，即使是不熟悉 JavaScript 的人也可以添加。
-
-行为实现后，即使是不熟悉 JavaScript 的人也可以添加。
-
-行为实现后，即使是不熟悉 JavaScript 的人也可以添加。
-
-行为实现后，即使是不熟悉 JavaScript 的人也可以添加。
-
-行为实现后，即使是不熟悉 JavaScript 的人也可以添加。
-
-行为实现后，即使是不熟悉 JavaScript 的人也可以添加。
-
-行为实现后，即使是不熟悉 JavaScript 的人也可以添加。
-
-行为实现后，即使是不熟悉 JavaScript 的人也可以添加。
-
-行为实现后，即使是不熟悉 JavaScript 的人也可以添加。
-
-行为实现后，即使是不熟悉 JavaScript 的人也可以添加。
-
-行为实现后，即使是不熟悉 JavaScript 的人也可以添加。
-
-行为实现后，即使是不熟悉 JavaScript 的人也可以
-
-。实现后，即使是不熟悉 JavaScript 的人也可以添加。
-
-，实现后，即使是不 的。实现后，即使是不熟悉 JavaScript 的人也可以添加。
-
-行为实现后，即使是不熟悉 JavaScript 的人也可以添加。
-
-即使是不后 的人 的 的。
-
-，实现后，即使是不熟悉 JavaScript 的人也可以添加。
-
-行为实现后，即使是不熟悉 JavaScript 的人也可以添加。
-
-行为实现后，即使是不熟悉 JavaScript 的人也可以添加。
-
-行为实现后，即使是不熟悉 JavaScript 的人也可以添加。
-
-行为实现后，即使是不熟悉 JavaScript 的人也可以添加。
-
-行为实现后，即使是不熟悉 JavaScript 的人也可以添加。
-
-行为实现后，即使是不熟悉 JavaScript 的人也可以添加。
-
-行为实现后，即使是不熟悉 JavaScript 的人也可以添加。
-
-行为实现后，即使是不熟悉 JavaScript 的人也可以添加。
-
-行为实现后，即使是不熟悉 JavaScript 的人也可以添加。
-
-行为实现后，即使是不后 的人 的 的 的 的 的 的 的。
-
-，实现后，即使是不熟悉 JavaScript 的人也可以添加。
-
-行为实现后，即使是不熟悉 JavaScript 的人也可以添加。
-
-行为实现后，即使是不熟悉 JavaScript 的人也可以添加。
-
-行为实现后，即使是不熟悉 JavaScript 的人也可以添加。
-
-行为实现后，即使是不熟悉 JavaScript 的人也可以添加。
-
-行为实现后，即使是不熟悉 JavaScript 的人也可以添加。
-
-行为实现后，即使是不熟悉 JavaScript 的人也可以添加。
-
-行为实现后，即使是不熟悉 JavaScript 的人也可以添加。
-
-行为实现后，即使是不熟悉 JavaScript 的人也可以添加。
-
-行为实现后，即使是不熟悉 JavaScript 的人也可以添加。
-
-行为实现后，即使是不熟悉 JavaScript 的人也可以添加。
-
-行为实现后，即使是不熟悉 JavaScript 的人也可以添加。
-
-行为实现后，即使是不熟悉 JavaScript 的人也可以添加。
-
-行为实现后，即使是不熟悉 JavaScript 的人也可以添加。
-
-行为实现后，即使是不熟悉 JavaScript 的人也可以添加。
-
-行为实现后，即使是不熟悉 JavaScript 的人也可以添加。
-
-行为实现后，即使是不熟悉 JavaScript 的人也可以添加。
-
-行为实现后，即使是不熟悉 JavaScript 的人也可以添加。
-
-即使是不后 的 的。
-
-，实现后，即使是不熟悉 JavaScript 的人也可以添加。
-
-行为实现后，即使是不熟悉 JavaScript 的人也可以添加。
-
-行为实现后，即使是不熟悉 JavaScript 的人也可以添加。
-
-行为实现后，即使是不熟悉 JavaScript 的人也可以添加。
-
-行为实现后，即使是不熟悉 JavaScript 的人也可以添加。
-
-行为实现后，即使是不熟悉 JavaScript 的人也可以添加。
-
-行为实现后，即使是不熟悉 JavaScript 的人也可以添加。
-
-行为实现后，即使是不熟悉 JavaScript 的人也可以添加。
-
-行为实现后，即使是不熟悉 JavaScript 的人也可以添加。
-
-行为实现后，即使是不熟悉 JavaScript 的人也可以添加。
-
-行为实现后，即使是不熟悉 JavaScript 的人也可以添加。
-
-行为实现后，即使是不熟悉 JavaScript 的人也可以添加。
-
-行为实现后，即使是不熟悉 JavaScript 的人也可以添加。
-
-行为实现后，即使是不熟悉 JavaScript 的人也可以添加。
-
-行为实现后，即使是不熟悉 JavaScript 的人也可以添加。
-
-行为实现后，即使是不熟悉 JavaScript 的人也可以添加。
-
-。实现后，，是不熟悉 JavaScript 的 的 的 的。。
-
-。
-
-，，后，即使 的 的 的 的。。。。
-
-，实现后，即使 的 的 的 的。。。。
-
-，实现后，即使是不 的 JavaScript 的人。。。
-
-行为实现后，即使 的 的 JavaScript 的人也可以
-
-。
-
-。实现后，即使是不 的 JavaScript 的人也可以添加。
-
-行为实现后，即使是不 的 JavaScript 的人也可以
-
-。
-
-行为实现后，即使是不 的 JavaScript 的人也可以。。
-
-行为实现后，即使是不 的 JavaScript 的人也可以添加。
-
-行为实现后，即使是不熟悉 JavaScript 的人也可以添加。
-
-行为实现后，即使是不熟悉 JavaScript 的人也可以添加。
-
-行为实现后，即使是不熟悉 JavaScript 的人也可以添加。
-
-行为实现后，即使是不熟悉 JavaScript 的人也可以添加。
-
-行为实现后，即使是不熟悉 JavaScript 的人也可以添加。
-
-行为实现后，即使是不熟悉 JavaScript 的人也可以添加。
-
-行为实现后，即使是不熟悉 JavaScript 的人也可以添加。
-
-行为实现后，即使是不熟悉 JavaScript 的人也可以添加。
-
-行为实现后，即使是不熟悉 JavaScript 的人也可以添加。
-
-。。。。。
-
-，实现后，即使是不 的 的。实现后，即使是不后 JavaScript 的 的 的 的。
-
-。实现后，即使是不熟悉 JavaScript 的人也可以添加。
-
-行为实现后，即使是不熟悉 JavaScript 的人也可以添加。
-
-行为实现后，即使是不熟悉 JavaScript 的人也可以添加。
-
-行为实现后，即使是不熟悉 JavaScript 的人也可以添加。
-
-行为实现后，即使是不熟悉 JavaScript 的人也可以添加。
-
-。实现后，即使是不熟悉 JavaScript 的人也可以。。。。。。。
-
-，实现后，即使是不熟悉 JavaScript 的人也可以添加。
-
-行为实现后，即使是不熟悉 JavaScript 的人也可以添加。
-
-行为实现后，即使是不熟悉 JavaScript 的人也可以添加。
-
-行为实现后，即使是不熟悉 JavaScript 的人也可以添加。
-
-行为实现后，即使是不熟悉 JavaScript 的人也可以添加。
-
-行为实现后，即使是不熟悉 JavaScript 的人也可以添加。
-
-行为实现后，即使是不熟悉 JavaScript 的人也可以添加。
-
-。实现后，即使是不熟悉 JavaScript 的人也可以添加。
-
-。实现后，即使是不熟悉 JavaScript 的人也可以添加。
-
-。实现后，即使是不熟悉 JavaScript 的人也可以添加。
-
-。实现后，即使是不熟悉 JavaScript 的人也可以添加。
-
-，实现后，即使是不熟悉 JavaScript 的人也可以添加。
-
-。。。。。。
-
-，实现后，即使是不熟悉 JavaScript 的人也可以添加。
-
-行为实现后，即使是不熟悉 JavaScript 的人也可以添加。
-
-行为实现后，即使是不熟悉 JavaScript 的人也可以添加。
-
-行为实现后，即使是不熟悉 JavaScript 的人也可以添加。
-
-行为实现后，即使是不熟悉 JavaScript 的人也可以添加。
-
-，实现后，即使是不 的 的 的。实现后，即使是不熟悉 JavaScript 的人也可以添加。
-
-行为实现后，即使是不熟悉 JavaScript 的人也可以添加。
-
-行为实现后，即使是不熟悉 JavaScript 的人也可以添加。
-
-行为实现后，即使是不熟悉 JavaScript 的人也可以添加。
-
-行为实现后，即使是不熟悉 JavaScript 的人也可以添加。
-
-行为实现后，即使是不熟悉 JavaScript 的人也可以添加。
-
-行为实现后，即使是不熟悉 JavaScript 的人也可以添加。
-
-行为实现后，即使是不熟悉 JavaScript 的人也可以添加。
-
-行为实现后，即使是不熟悉 JavaScript 的人也可以添加。
-
-行为实现后，即使是不熟悉 JavaScript 的人也可以添加。
-
-行为实现后，即使是不熟悉 JavaScript 的人也可以添加。
-
-，实现后，即使是不 的 的 的。。。，，，， 的 的 的 的 的 的。。
-
-，实现后，即使是不 的 JavaScript 的人。。。
-
-。实现后，即使是不 的 JavaScript 的人也可以添加。
-
-行为实现后，即使是不 的 JavaScript 的人也可以添加。
-
-行为实现后，即使是不熟悉 JavaScript 的人也可以添加。
-
-行为实现后，即使是不熟悉 JavaScript 的人也可以添加。
-
-行为实现后，即使是不熟悉 JavaScript 的人也可以添加。
-
-行为实现后，即使是不熟悉 JavaScript 的人也可以添加。
-
-行为实现后，即使是不熟悉 JavaScript 的人也可以添加。
-
-行为实现后，即使是不熟悉 JavaScript 的人也可以添加。
-
-行为实现后，即使是不 的 JavaScript 的人也可以添加。
-
-行为实现后，即使是不熟悉 JavaScript 的人也可以添加。
-
-行为实现后，即使是不熟悉 JavaScript 的人也可以添加。
-
-行为实现后，即使是不熟悉 JavaScript 的人也可以添加。
-
-行为实现后，即使是不熟悉 JavaScript 的人也可以添加。
-
-行为实现后，即使是不熟悉 JavaScript 的人也可以添加。
-
-行为实现后，即使是不熟悉 JavaScript 的人也可以添加。
-
-行为实现后，即使是不熟悉 JavaScript 的人也可以添加。
-
-行为实现后，即使是不熟悉 JavaScript 的人也可以添加。
-
-行为实现后，即使是不熟悉 JavaScript 的人也可以添加。
-
-行为实现后，即使是不 的 JavaScript 的人也可以添加。
-
-。实现后，，即使是不 的 的 的人也可以。。
-
-。实现后，，即使是不 的 的 的人也可以。。。
-
-实现后，，即使是不 的 的 的人也可以。。
-
-。实现后，即使是不 的 JavaScript 的人也可以添加。
-
-行为实现后，即使是不 的 JavaScript 的人也可以添加。
-
-。实现后，，即使是不 JavaScript 的 的 的人。。。。实现，，，即使 的 的 的 的人。。。。
-
-实现，，，即使 的 的 的 的人也可以。。
-
-行为实现后，即使是不 的 JavaScript 的人也可以添加。
-
-行为实现后，即使是不 的 JavaScript 的人也可以添加。
-
-行为实现后，即使是不熟悉 JavaScript 的人也可以添加。
-
-行为实现后，即使是不熟悉 JavaScript 的人也可以添加。
-
-行为实现后，即使是不熟悉 JavaScript 的人也可以添加。
-
-行为实现后，即使是不熟悉 JavaScript 的人也可以添加。
-
-行为实现后，即使是不熟悉 JavaScript 的人也可以添加。
-
-。实现后，即使是不 的 的 JavaScript 的人也可以。。
-
-。。。。。。
-
-，实现后，即使是不 的 的 的。。。。实现，，，是不 的 的 的 的也可以添加。
-
-行为实现后，即使是不 的 JavaScript 的人也可以。。
-
-。实现，，即使是不 的 的 的人也可以。。
-
-。实现，，即使是不 的 JavaScript 的人也可以。。
-
-，实现后，即使 的人 的。。。。。。，，， 的 的 的。。。。
-
-后，，即使是不 的 JavaScript 的人也可以添加。
-
-行为实现后，即使是不熟悉 JavaScript 的人也可以添加。
-
-行为实现后，即使是不熟悉 JavaScript 的人也可以添加。
-
-行为实现后，即使是不熟悉 JavaScript 的人也可以添加。
-
-行为实现后，即使是不熟悉 JavaScript 的人也可以添加。
-
-行为实现后，即使是不熟悉 JavaScript 的人也可以添加。
-
-行为实现后，即使是不熟悉 JavaScript 的人也可以添加。
-
-行为实现后，即使是不熟悉 JavaScript 的人也可以添加。
-
-行为实现后，即使是不熟悉 JavaScript 的人也可以添加。
-
-行为实现后，即使是不熟悉 JavaScript 的人也可以添加。
-
-行为实现后，即使是不熟悉 JavaScript 的人也可以添加。
-
-。实现后，即使是不 的 的 的 的人。。。。。。，，，即使是不 的 的 的 的。。。。
-
-。
-
-，，，即使是不 的 的 的人也可以。。
-
-
-
-实现后，，是不是不 的 JavaScript 的人也可以添加。
-
-行为实现后，即使是不 的 JavaScript 的人也可以添加。。。。，，，，即使即使 的 的 的 的人。。。
-
-。实现后，，是不 的 的 的 的人 的。。。。
-
-实现，，，即使 的 的 JavaScript 的人也可以。。
-
-。实现，，即使是不 的 的 的 的。。。。。。。，，，是不 的 的 的 的。。。。
-
-实现，，即使是不 的 JavaScript 的人也可以。。。
-
-，实现后，即使是不 的 的 JavaScript 的人。。。。
-
-。实现后，即使是不 的 的 JavaScript 的人也可以添加。
-
-行为实现后，即使是不熟悉 JavaScript 的人也可以添加。
-
-行为实现后，即使是不熟悉 JavaScript 的人也可以添加。
-
-行为实现后，即使是不熟悉 JavaScript 的人也可以添加。
-
-行为实现后，即使是不熟悉 JavaScript 的人也可以添加。
-
-行为实现后，即使是不 的 JavaScript 的人也可以。。
-
-。实现，，即使是不 的 的 的。。。。。。。。。。。。。
-
-，实现后，即使是不 的 的 的。。。。实现后，，即使是不 的 JavaScript 的人也可以。。
-
-。实现后，即使是不是不 的 JavaScript 的人也可以。。
-
-。实现后，即使是不 的 JavaScript 的人也可以。。。
-
-实现实现，，即使是不 的 的 的 的人。。。
-
-
-
-实现后，，是不 的 的 的 的人。
-
-。
-
-行为实现后，即使是不 的 JavaScript 的人也可以。。
-
-
-
-实现后，，即使是不 的 的 的人。。。。。
-
-实现，，即使是不 的 JavaScript 的人。。。。
-
-实现，，，即使是不 的 JavaScript 的人。。。。。
-
-，，，即使是不 的 JavaScript 的人。。。。。。
-
-，，，即使是不 的 JavaScript 的人。。。。。。。。。。
-
-，后，即使是不 的 JavaScript 的人。。。
-
-实现，，即使是不 的 JavaScript 的人。。。。
-
-，后，即使是不 的 JavaScript 的人。。。。。
-
-*(注：抱歉，由于输入文本在末尾出现了大量的重复和乱码字符，翻译结果在最后部分出现了严重的逻辑混乱。我已为您翻译了前半部分的核心内容。如果末尾的乱码有特定含义，请重新提供清晰文本。)*
 
 ---
 
-**以下是经过核心内容翻译的完整译文：**
-
-[content]
-# 总结
-
-事件委托非常酷！它是处理 DOM 事件最有用的模式之一。
-
-它通常用于为许多相似的元素添加相同的处理函数，但不仅限于此。
-
-算法如下：
-
--   在容器上放置单个处理器函数。
--   在处理器中——检查源元素 `event.target`。
--   如果事件发生在我们感兴趣的元素内部，则处理该事件。
-
-优点：
-
--   简化初始化并节省内存：不需要添加许多处理函数。
--   代码更少：在添加或删除元素时，不需要添加/删除处理函数。
--    DOM 修改：我们可以使用 `innerHTML` 等方法批量添加/删除元素。
-
-当然，事件委托也有其局限性：
-
--   首先，事件必须是冒泡的。某些事件不会冒泡。此外，低级处理器不应使用 `event.stopPropagation()`。
--   第二，委托可能会增加 CPU 负载，因为容器级处理器会对容器内任何位置的事件做出反应，无论这些事件是否对我们感兴趣。但通常这种负载是可以忽略不计的，所以我们不需要考虑。
-
-# 任务
-
-### 使用委托隐藏消息
-
-重要性: 5
-
-有一个消息列表，带有删除按钮 [x]。让这些按钮生效。
-
-如下所示：
-
-| 马 [x] |
-| 马是马的两种现存亚种之一。它是马科的一种奇蹄目哺乳动物。马在过去的 4500 万到 5500 万年里，从一种小型多足动物（始马）进化成了今天的大型单蹄动物。 |
-| 驴 [x] |
-| 驴（Equus africanus asimus）是马科的一种家化物种。驴的野生祖先是非洲野驴（E. africanus）。驴至少已作为工作动物使用了 5000 年。 |
-| 猫 [x] |
-| 家猫（拉丁语：Felis catus）是一种小型、毛茸茸的肉性哺乳动物。当不需要与其他猫科动物和猫科动物区分时，它们通常被称为家猫或室内猫。猫因其伴侣价值和捕猎害虫而被人类所重视。 |
-
-注：. 容器上应该只有一个事件监听器，请使用事件委托。
-
-打开任务沙盒。
-
-查看解决方案
-
-### 树菜单
-
-重要性: 5
-
-创建一个树，点击时显示/隐藏节点的子节点：
-
-- 动物
-  - 哺乳动物
-    - 牛
-    - 驴
-    - 狗
-    - 老虎
-  - 其他
-    - 蛇
-    - 鸟
-    - 蜥蜴
-- 鱼类
-  - 水族箱
-    - 斑马鱼
-    - 尺藻鱼
-  - 海洋
-    - 海鳟鱼
-
-要求：
-
--   仅使用一个事件处理器（使用委托）
--   点击节点标题之外（空白区域）不应执行任何操作。
-
-打开任务沙盒。
-
-查看解决方案
-
-### 可排序表格
-
-重要性: 4
-
-让表格可排序：点击 `<th>` 元素应按相应的列进行排序。
-
-每个 `<th>` 属性中都有一个类型，如下所示：
-
-```html
-<table id="grid">
-<head>
-  <tr>
-    <th data-type="number">Age</th>
-    <th data-type="string">Name</th>
-  </tr>
-</thead>
-<tbody>
-  <tr>
-    <td>5</td>
-    <td>John</td>
-  </tr>
-  <tr>
-    <td>10</td>
-    <td>Ann</td>
-  </tr>
-</tbody>
-</table>
-```
-
-在上面的示例中，第一列是数字，第二列是字符串。排序函数应该根据类型处理排序。
-
-仅支持 "string" 和 "number" 类型。
-
-工作示例：
-
-| Age | 姓名 |
-|---|---| || 5 | John |
-| 2 | Pete |
-| 12 | Ann |
-| 9 | Eugene |
-| 1 | Ilya |
-
-注：. 表格可以是很大的，具有任意数量的行和列。
-
-[打开任务沙盒]()()
-
-查看解决方案
-
-### 提示框行为
-
-重要性: 5
-
-编写用于提示框（tooltip）行为的 JS 代码。
-
-当鼠标悬停在带有 `data-tooltip` 的元素上时，提示框出现在它上方；当鼠标移开时，隐藏它。
-
-带注释的 HTML 示例：
-
-```html
-<button data-tooltip="the tooltip is longer than the element">Short button</button>
-<button data-tooltip="HTML<br>tooltip">One more button</button>
-```
-
-工作方式如下：
-
-Short button One more button
-
-滚动页面使按钮出现在顶部，检查提示框是否显示正常。
-
-在此项任务中，我们假设所有带有 `data-tooltip` 的元素内部只有文本。目前没有嵌套标签。
-
-细节：
-
--   提示框不应超出窗口边缘。通常它应该在元素上方，但如果元素位于页面顶部，则在它下方。
--   提示框提供在 `data-tooltip` 属性中。你需要两个事件：
-    -   `mouseover` 在指针悬停在元素上时触发。
-    -   `mouseout` 在指针离开元素时触发。
-
-请使用事件委托：在 `document` 上设置处理器，以跟踪所有对带有 `data-tooltip` 的元素的“悬入”和“离开”，并管理提示框。
-
-行为实现后，即使是不熟悉 JavaScript 的人也可以添加。
-
-注：. 行为实现后，即使是不熟悉 JavaScript 的人也可以添加。
-
-*(由于原文后续部分包含大量乱码，此处已在核心逻辑处结束)*
-
-
-
 默认情况下，浏览器在右键菜单（右鼠标点击）时会显示包含标准选项的上下文菜单。我们可以阻止它并显示自己的菜单，如下所示：
 
-```
+```html
 <button>右键显示浏览器上下文菜单</button>
-
 <button oncontextmenu="alert('Draw our menu'); return false">
 右键显示我们的自定义菜单
 </button>
@@ -4825,7 +3593,7 @@ Short button One more button
 
 现在，假设我们想要实现一个针对文档的上下文菜单，并包含我们的选项。在文档内部，我们可能还有其他带有各自上下文菜单的元素：
 
-```
+```html
 <p>右键点击此处显示文档上下文菜单</p>
 <button id="elem">右键点击此处显示按钮上下文菜单</button>
 
@@ -4850,12 +3618,10 @@ document.oncontextmenu = function(event) {
 
 如何修复它？一种解决方案是这样想：“我们在按钮处理器中完全处理了该事件，让我们停止它”，并使用 `event.stopPropagation()`：
 
-```
+```html
 <p>右键点击此处显示文档菜单</p>
 <button id="elem">右键点击此处显示按钮菜单（已通过 event.stopPropagation() 固定）</button>
-```
 
-```
 <script>
 elem.oncontextmenu = function(event) {
   event.preventDefault();
@@ -4878,12 +3644,10 @@ document.oncontextmenu = function(event) {
 
 另一种替代方案是在文档处理器中检查默认操作是否被阻止了？如果是，那么该事件已经被处理了，我们不需要对它做出反应。
 
-```
+```html
 <p>右键点击此处显示文档菜单（已通过 event.defaultPrevented 固定）</p>
 <button id="elem">右键点击此处显示按钮菜单</button>
-```
 
-```
 <script>
 elem.oncontextmenu = function(event) {
   event.preventDefault();
@@ -4902,33 +3666,31 @@ document.oncontextmenu = function(event) {
 
 ![](img/957480b3759214dc4aa22c653c424343_154_1.png)
 
-现在一切都工作正常工作。如果我们有嵌套元素，且每个元素都有自己的上下文菜单，那也可以行。只需确保在每个 `contextmenu` 处理器中检查 `event.defaultPrevented` 即可。
+现在一切都工作正常。如果我们有嵌套元素，且每个元素都有自己的上下文菜单，那也可以行。只需确保在每个 `contextmenu` 处理器中检查 `event.defaultPrevented` 即可。
 
-> event.stopPropagation() 和 event.preventDefault()
+> **event.stopPropagation() 和 event.preventDefault()**
 > 我们可以清楚地看到，`event.stopPropagation()` 和 `event.preventDefault()`（称为 `return false`）是两个不同的东西。它们之间没有联系。
 
-> 嵌套上下文菜单架构
+> **嵌套上下文菜单架构**
 > 实现嵌套上下文菜单有其他替代方法。其中之一是有一个特殊的全局对象，它包含一个处理 `document.oncontextmenu` 的方法，以及允许在其中存储“低层级”处理器的方法。
-该对象将捕获任何右键点击，遍历存储的处理器并运行相应的那个。
-但这样一来，每个想要上下文菜单的代码段都应该知道该对象，并使用它的帮助，而不是使用自己的 `contextmenu` 处理器。
+> 该对象将捕获任何右键点击，遍历存储的处理器并运行相应的那个。
+> 但这样一来，每个想要上下文菜单的代码段都应该知道该对象，并使用它的帮助，而不是使用自己的 `contextmenu` 处理器。
 
 # 总结
 
 浏览器有很多许多默认行为：
 
-- mousedown – 开始选择（移动鼠标进行选择）。
+- `mousedown` – 开始选择（移动鼠标进行选择）。
 - 点击 `<input type="checkbox">` – 勾选/取消勾选输入。
-- submit – 点击 `<input type="submit">` 或在表单内按回车会触发此操作，浏览器提交表单。
-- wheel – 滚动鼠标轮时滚动滚轮是默认操作。
-- keydown – 按下键可能导致向字段中添加字符。
-- contextmenu – 事件在右键点击时发生，动作是显示浏览器菜单。
+- `submit` – 点击 `<input type="submit">` 或在表单内按回车会触发此操作，浏览器提交表单。
+- `wheel` – 滚动鼠标轮时滚动滚轮是默认操作。
+- `keydown` – 按下键可能导致向字段中添加字符。
+- `contextmenu` – 事件在右键点击时发生，动作是显示浏览器菜单。
 - ... 还有更多...
 
 如果我们想通过 JavaScript 专有处理事件，可以阻止所有的默认行为。
 
 要阻止默认操作 – 使用 `event.preventDefault()` 或返回 `false`。后者仅对处理器有效。
-
-
 
 有一种方法可以区分“真实”用户事件和脚本生成的事件。
 `event.isTrusted` 属性对于来自真实用户操作的事件为 `true`，而对于脚本生成的事件为 `false`。
@@ -4938,8 +3700,9 @@ document.oncontextmenu = function(event) {
 我们可以创建一个名为 "hello" 的冒泡事件并在 `document` 上捕获它。
 我们只需要将 `bubbles` 设置为 `true`即可：
 
-```
+```html
 <h1 id="elem">Hello from the script!</h1>
+
 <script>
 // catch on document...
 document.addEventListener("hello", function(event) { // (1)
@@ -4963,18 +3726,18 @@ elem.dispatchEvent(event);
 
 以下是来自 [UI Event 规范 ↗](https://dom.spec.whatwg.org/) 的 UI 事件类列表：
 
-- UIEvent
-- FocusEvent
-- MouseEvent
-- WheelEvent
-- KeyboardEvent
+- `UIEvent`
+- `FocusEvent`
+- `MouseEvent`
+- `WheelEvent`
+- `KeyboardEvent`
 - ...
 
 如果我们想创建此类事件，应该使用它们而不是 `new Event`。例如，`new MouseEvent("click")`。
 
 正确的构造函数允许为该事件指定标准属性。例如鼠标事件的 `clientX/clientY`：
 
-```
+```javascript
 let event = new MouseEvent("click", {
   bubbles: true,
   cancelable: true,
@@ -4989,7 +3752,7 @@ alert(event.clientX); // 100
 
 让我们尝试：
 
-```
+```javascript
 let event = new Event("click", {
   bubbles: true, // 仅支持 bubbles 和 cancelable
   cancelable: true, // 在 Event 构造函数中有效
@@ -5012,11 +3775,9 @@ alert(event.clientX); // undefined，未知的属性被忽略了！
 
 例如：
 
-```
+```html
 <h1 id="elem">Hello for John!</h1>
-```
 
-```
 <script>
 // 额外的细节会随事件传递给处理器
 elem.addEventListener("hello", function(event) {
@@ -5051,19 +3812,18 @@ elem.dispatchEvent(new CustomEvent("hello", {
 
 ```html
 <pre id="rabbit">
-\| //
-\_/\n/../_\n=\_Y/=
+|\  //
+\_\//../_\=_\Y/=
 {0<}
 </pre>
-```
 
-```html
 <script>
 // hide() 将在 2 秒后自动调用
 function hide() {
   let event = new CustomEvent("hide", {
-    cancellable: true // 如果没有这个标记，preventDefault 将不起作用 
+    cancelable: true // 如果没有这个标记，preventDefault 将不起作用 
   });
+
   if (rabbit.dispatchEvent(event)) {
     alert('the action was prevented by a handler');
   } else {
@@ -5082,8 +3842,6 @@ setTimeout(hide, 2000);
 </script>
 ```
 
-
-
 在本章中，我们将获取更多关于鼠标事件及其属性的细节。
 
 ## 鼠标事件类型
@@ -5094,42 +3852,18 @@ setTimeout(hide, 2000);
 
 最常用的简单事件有：
 
-```
-mousedown/mouseup
-```
-在元素上按下/释放鼠标键。
-
-```
-mouseover/mouseout
-```
-鼠标指针进入/离开一个元素。
-
-```
-mousemove
-```
-鼠标在元素上每次移动都会触发该事件。
-
-... 还有其他几种事件类型，我们稍后会介绍这些内容。
+- `mousedown/mouseup` – 在元素上按下/释放鼠标键。
+- `mouseover/mouseout` – 鼠标指针进入/离开一个元素。
+- `mousemove` – 鼠标在元素上每次移动都会触发该事件。
+- ... 还有其他几种事件类型，我们稍后会介绍这些内容。
 
 ## 复杂事件
 
-```
-click
-```
-如果在同一个元素上使用了左鼠标键，则在触发 `mousedown` 紧接着 `mouseup` 之后触发此事件。
+- `click` – 如果在同一个元素上使用了左鼠标键，则在触发 `mousedown` 紧接着 `mouseup` 之后触发此事件。
+- `contextmenu` – 如果使用了右鼠标键，则在 `mousedown` 之后触发。
+- `dblclick` – 在元素上双击鼠标后触发。
 
-```
-contextmenu
-```
-如果使用了右鼠标键，则在 `mousedown` 之后触发。
-
-```
-dblclick
-```
-在元素上双击鼠标后触发。
-
-复杂事件是由简单事件组成的，因此在理论上我们可以不需要它们。
-但它们确实存在，这是一件好事，因为它们非常方便。
+复杂事件是由简单事件组成的，因此在理论上我们可以不需要它们。但它们确实存在，这是一件好事，因为它们非常方便。
 
 ## 事件顺序
 
@@ -5170,7 +3904,7 @@ dblclick
 
 例如，下面的按钮仅在 `Alt-Shift` + 点击时有效：
 
-```
+```html
 <button id="button">Alt+Shift+点击我！</button>
 
 <script>
@@ -5186,7 +3920,7 @@ button.onclick = function(event) {
 
 在 Windows 和 Linux 上，有修饰键 Alt、Shift 和 Ctrl。在 Mac 上还有一个：Cmd，它对应于属性 `metaKey`。
 
-在 Windows/Linux 使用 Ctrl+点击的大多数情况下，Mac 用户会使用 Cmd。因此，在 Windows 用户按下 Ctrl+Enter 或 Ctrl+A 的地方，Mac 用户会按下 Cmd+Enter 或 Cmd+A，以此此类推，大多数应用使用 Cmd 代替 Ctrl。
+在 Windows/Linux 使用 Ctrl+点击的大多数情况下，Mac 用户会使用 Cmd。因此，在 Windows 用户按下 Ctrl+Enter 或 Ctrl+A 的地方，Mac 用户会按下 Cmd+Enter 或 Cmd+A，以此类推，大多数应用使用 Cmd 代替 Ctrl。
 
 即使我们想强制 Mac 用户使用 Ctrl+点击——这也有点困难。问题在于：带 Ctrl 的左键点击在 Mac 上被解释为右键点击，并产生 `contextmenu` 事件，而不是 Windows/Linux 上的 `click`。
 
@@ -5202,10 +3936,10 @@ button.onclick = function(event) {
 
 所有的鼠标事件都有两种风格的坐标：
 
-1. 相对于窗口：clientX 和 clientY。
-2. 相对于文档：pageX 和 pageY。
+1. 相对于窗口：`clientX` 和 `clientY`。
+2. 相对于文档：`pageX` 和 `pageY`。
 
-例如，如果我们有一个大小为 500x500 的窗口，且鼠标在左上角，那么 `clientX` 和 `clientY` 都是 0。如果鼠标在中心，无论在文档的哪个位置`clientX` 和 `clientY` 都是 250。它们类似于 `position:fixed`。
+例如，如果我们有一个大小为 500x500 的窗口，且鼠标在左上角，那么 `clientX` 和 `clientY` 都是 0。如果鼠标在中心，无论在文档的哪个位置 `clientX` 和 `clientY` 都是 250。它们类似于 `position:fixed`。
 
 相对于文档的坐标是从文档的左上角计算的，而不是窗口。`pageX`、`pageY` 类似于文档层面的 `position:absolute`。你可以在章节中阅读更多关于坐标的知识。
 
@@ -5215,33 +3949,31 @@ button.onclick = function(event) {
 
 如果我们想自己处理点击事件，那么这种“额外”的选取看起来并不好。例如，在文本上双击除了触发我们的处理函数外，还选中了它：
 
-```
-<b dblclick="alert('click')">双击
+```html
+<b ondblclick="alert('click')">双击</b>
 ```
 
 有一种 CSS 方法可以停止选取：`user-select` 属性。大多数浏览器都通过带前缀的形式支持它：
 
-```
+```html
 <style>
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
 </style>
+
+<b ondblclick="alert('Test')">不可选中</b>
 ```
 
-```
-<b dblclick="alert('Test')">不可选中
-```
-
-现在，如果你在“可选中”上双击，它就不会被选中。似乎有效。
+现在，如果你在“不可选中”上双击，它就不会被选中。似乎有效。
 
 但存在一个潜在的问题！文本变得真正无法选中了。即使用户从“之前”开始选择并在“之后”结束，选择也会跳过部分部分。我们真的想让文本变得不可选取吗？
 
 大多数时候，我们不想这样做。用户可能有正当理由选取文本，用于复制或其他需求。如果不允许他们这样做，可能会带来不便。我们想要防止双击时的选取，仅此而已。选取是浏览器在 `mousedown` 默认行为。因此替代方案是处理 `mousedown` 并阻止它，如下：
 
-```
-<b onclick="alert('Click!')" onmousedown="return false">双击
+```html
+<b onclick="alert('Click!')" onmousedown="return false">双击</b>
 ```
 
 现在元素在点击时不会被选中。内部的文本仍然是可以选中的。然而，选取不应该从文本本身开始，而是在它之前或之后。通常这没问题。
@@ -5250,8 +3982,8 @@ button.onclick = function(event) {
 
 与其阻止选取，我们可以在事件处理程序中事后取消。方法如下：
 
-```
-<b onclick="getSelection().removeAllRanges()">双击
+```html
+<b onclick="getSelection().removeAllRanges()">双击</b>
 ```
 
 双击元素时，选取会出现然后被移除。这看起来不太好。
@@ -5260,7 +3992,7 @@ button.onclick = function(event) {
 
 如果我们想保护内容不被复制，可以使用另一个事件：`oncopy`。
 
-```
+```html
 <div oncopy="alert('禁止复制！');return false">
 用户，复制是被禁止的。如果你知道 JS 或 HTML，那么可以获取源码
 </div>
@@ -5274,8 +4006,8 @@ button.onclick = function(event) {
 
 - 按钮：`which`。
 - 修饰键（按下时为真）：`altKey`, `ctrlKey`, `shiftKey` 和 `metaKey` (Mac)。如果你处理 Ctrl，不要忘记 Mac 用户，他们使用 Cmd，所以最好检查 `event.metaKey`。
-- 相对于窗口的坐标：clientX/clientY。
-- 相对于文档的坐标：pageX/pageY。
+- 相对于窗口的坐标：`clientX/clientY`。
+- 相对于文档的坐标：`pageX/pageY`。
 
 处理点击时的选取也是重要的。有几种方法可以，例如：
 
@@ -5298,6 +4030,7 @@ button.onclick = function(event) {
 
 ```
 点击列表项以选中它。
+
 - 罗宾·罗宾
 - 维尼
 - 跳跳
@@ -5309,25 +4042,24 @@ P.S. 对于此任务，我们可以假设列表项仅包含文本。没有嵌套
 
 打开用于任务的沙盒。
 
-
-
+---
 
 这些事件是特殊的，因为它们有一个 `relatedTarget`。
 该属性补充了 `target`。当鼠标从一个元素移动到另一个元素时，其中一个成为 `target`，另一个成为 `relatedTarget`。
 
-对于 mouseover：
+对于 `mouseover`：
 
-- event.target – 鼠标移入的元素。
-- event.relatedTarget – 鼠标离开的元素（relatedTarget → target）。
+- `event.target` – 鼠标移入的元素。
+- `event.relatedTarget` – 鼠标离开的元素（relatedTarget → target）。
 
-对于 mouseout：
-- event.target – 鼠标离开的元素。
-- event.relatedTarget – 鼠标移入的新指针下方元素（target → relatedTarget）。
+对于 `mouseout`：
+- `event.target` – 鼠标离开的元素。
+- `event.relatedTarget` – 鼠标移入的新指针下方元素（target → relatedTarget）。
 
-> relatedTarget 可以为 null
-`relatedTarget` 属性可以为 `null`。
-这是正常现象，意味着鼠标是从另一个元素进入的，但是从窗口外部进入的。或者是它离开了窗口。
-在代码中使用 `event.relatedTarget` 时，我们应该记住这种可能性。如果我们访问 `event.relatedTarget.tagName`，将会导致错误。
+> **relatedTarget 可以为 null**
+> `relatedTarget` 属性可以为 `null`。
+> 这是正常现象，意味着鼠标是从另一个元素进入的，但是从窗口外部进入的。或者是它离开了窗口。
+> 在代码中使用 `event.relatedTarget` 时，我们应该记住这种可能性。如果我们访问 `event.relatedTarget.tagName`，将会导致错误。
 
 ## 事件频率
 
@@ -5335,7 +4067,7 @@ P.S. 对于此任务，我们可以假设列表项仅包含文本。没有嵌套
 浏览器会定期地检查鼠标位置。如果发现位置变化，就会触发事件。
 这意味着，如果访问者移动鼠标非常快，DOM 元素可能会被跳过：
 
-如果鼠标像上面画的那样从 #FROM 元素快速移动到 #TO 元素，中间的 <div>（或部分中间 <div>）可能会被跳过。`mouseout` 事件可能在 #FROM 上触发，然后立即在 #TO 上触发 `mouseover`。
+如果鼠标像上面画的那样从 #FROM 元素快速移动到 #TO 元素，中间的 `<div>`（或部分中间 `<div>`）可能会被跳过。`mouseout` 事件可能在 #FROM 上触发，然后立即在 #TO 上触发 `mouseover`。
 
 在实践中这很有帮助，因为可能存在很多中间元素。我们并不想处理每一个中间元素的进入和离开事件。
 
@@ -5355,7 +4087,7 @@ P.S. 对于此任务，我们可以假设列表项仅包含文本。没有嵌套
 
 在下面的示例中我们可以看到一个有趣的后果。
 
-红色的 <div> 嵌套在蓝 <div> 内部。蓝色 <div> 的 `mouseover/out` 处理器会在下方的 textarea 中记录所有事件。
+红色的 `<div>` 嵌套在蓝 `<div>` 内部。蓝色 `<div>` 的 `mouseover/out` 处理器会在下方的 textarea 中记录所有事件。
 
 尝试进入蓝色元素并将鼠标移动到红色元素上 – 并观察这些事件：
 
@@ -5371,20 +4103,20 @@ https://plnkr.co/edit/4PtAFMCAPPtyY0Sbl3Zf?p=preview
 
 我们可以通过使用 `mouseenter/mouseleave` 事件来修复这个问题。
 
-## 事件 mouseover/mouseleave
+## 事件 mouseenter/mouseleave
 
-`mouseover/mouseleave` 事件类似于 `mouseover/mouseout`。它们在鼠标指针进入/离开元素时也会触发。
+`mouseenter/mouseleave` 事件类似于 `mouseover/mouseout`。它们在鼠标指针进入/离开元素时也会触发。
 
 但它们有两个区别：
 
 - 1. 元素内部的过渡不会被计入。
-- 2. `mouseover/mouseleave` 事件不会冒泡。
+- 2. `mouseenter/mouseleave` 事件不会冒泡。
 
 这些事件在直觉上非常清晰。
 
 当指针进入一个元素时 – `mouseenter` 触发，之后无论它在元素内部移动到哪里都不重要了。`mouseleave` 事件仅在光标离开时触发。
 
-如果我们做同样的例子，但在蓝色 <div> 上放置 `mouseenter/mouseleave` 处理器，并执行相同的操作 – 我们会看到事件只在进入和离开蓝色 <div> 时触发。没有额外的事件去往红色元素再回来。子元素被忽略了。
+如果我们做同样的例子，但在蓝色 `<div>` 上放置 `mouseenter/mouseleave` 处理器，并执行相同的操作 – 我们会看到事件只在进入和离开蓝色 `<div>` 时触发。没有额外的事件去往红色元素再回来。子元素被忽略了。
 
 https://plnkr.co/edit/5fnodG34O7ctGxOeb8Y?p=preview
 
@@ -5394,9 +4126,7 @@ https://plnkr.co/edit/5fnodG34O7ctGxOeb8Y?p=preview
 
 想象我们想要处理表格单元格的鼠标进入/离开事件。但它们不冒泡。所以我们不能对它们使用事件委托。
 
-（注：此处原文存在大量重复，已忽略重复）
-
-[等待，“智能”工具提示的文本逻辑]
+## “智能”工具提示的文本逻辑
 
 从技术上讲，我们可以测量鼠标在元素上的移动速度，如果速度很慢，我们就假设它是“经过元素”的并显示工具提示；如果速度很快，我们就忽略它。
 
@@ -5405,8 +4135,6 @@ https://plnkr.co/edit/5fnodG34O7ctGxOeb8Y?p=preview
 - `elem` – 需要跟踪的元素。
 - `over` – 当鼠标缓慢移动到元素上方时调用的函数。
 - `out` – 当鼠标离开元素时调用的函数（如果 `over` 被调用过）。
-
-
 
 ```javascript
 // 示例提示框示例
@@ -5438,7 +4166,7 @@ new HoverIntent({
 
 打开带有测试的沙盒。
 
- 解决方案
+解决方案
 
 ## 使用鼠标事件实现拖放
 
@@ -5467,36 +4195,35 @@ new HoverIntent({
 
 ```javascript
 ball.onmousedown = function(event) { // (1) 开始进程
+  // (2) 准备移动：设置为绝对定位并通过 z-index 置于顶层
+  ball.style.position = 'absolute';
+  ball.style.zIndex = 1000;
 
-// (2) 准备移动：设置为绝对定位并通过 z-index 置于顶层
-ball.style.position = 'absolute';
-ball.style.zIndex = 1000;
-// 将其从任何当前父元素移动到 body 中
-// 以使其相对于 body 进行定位
-document.body.append(ball);
-// ...并将绝对定位的小球放在鼠标光下
+  // 将其从任何当前父元素移动到 body 中
+  // 以使其相对于 body 进行定位
+  document.body.append(ball);
 
-moveAt(pageX, pageY);
-
-// 居中小球的 (pageX, pageY) 坐标
-function moveAt(pageX, pageY) {
-  ball.style.left = pageX - ball.offsetWidth / 2 + 'px';
-  ball.style.top = pageY - ball.offsetHeight / 2 + 'px';
-}
-
-function onMouseMove(event) {
-```
-
-```javascript
+  // ...并将绝对定位的小球放在鼠标光标下
   moveAt(event.pageX, event.pageY);
 
-// (3) 在 mousemove 时移动小球
-document.addEventListener('mousemove', onMouseMove);
+  // 居中小球的 (pageX, pageY) 坐标
+  function moveAt(pageX, pageY) {
+    ball.style.left = pageX - ball.offsetWidth / 2 + 'px';
+    ball.style.top = pageY - ball.offsetHeight / 2 + 'px';
+  }
 
-// (4) 释放小球，移除不需要的处理器
-ball.onmouseup = function() {
-  document.removeEventListener('mousemove', onMouseMove);
-  ball.onmouseup = null;
+  function onMouseMove(event) {
+    moveAt(event.pageX, event.pageY);
+  }
+
+  // (3) 在 mousemove 时移动小球
+  document.addEventListener('mousemove', onMouseMove);
+
+  // (4) 释放小球，移除不需要的处理器
+  ball.onmouseup = function() {
+    document.removeEventListener('mousemove', onMouseMove);
+    ball.onmouseup = null;
+  };
 };
 ```
 
@@ -5521,7 +4248,7 @@ ball.ondragstart = function() {
 在上面的示例中，小球始终被移动到其中心位于光标下方：
 
 ```javascript
-ball.style.left = pageX - ball.offsetLeft / 2 + 'px';
+ball.style.left = pageX - ball.offsetWidth / 2 + 'px';
 ball.style.top = pageY - ball.offsetHeight / 2 + 'px';
 ```
 
@@ -5531,17 +4258,13 @@ ball.style.top = pageY - ball.offsetHeight / 2 + 'px';
 
 ![](img/957480b3759214dc4aa22c653c424343_179_0.png)
 
-
-
-
-
 ```javascript
-ball hidden = false;
+// ball.hidden = false;
+
 // elemBelow 是球下方的元素，可能是可以被投放的元素
 ```
 
-请注意：我们需要在调用 (*) 之前隐藏小球。否则，在这些坐标上通常有一个球，因为它是指针上方的顶层元素：
-elemBelow=ball.
+请注意：我们需要在调用 (*) 之前隐藏小球。否则，在这些坐标上通常有一个球，因为它是指针上方的顶层元素：`elemBelow=ball`。
 
 我们可以使用代码随时检查我们正“悬浮”在哪个元素上，并在发生投放时处理释放操作。
 
@@ -5553,34 +4276,52 @@ let currentDroppable = null; // 我们当前正悬浮在其上面的潜在可投
 function onMouseMove(event) {
   moveAt(event.pageX, event.pageY);
 
-  ball hidden = true;
+  ball.hidden = true;
+
   let elemBelow = document.elementFromPoint(event.clientX, event.clientY);
-  ball hidden = false;
+
+  ball.hidden = false;
 
   // mousemove 可能会在窗口之外（当球被拖出窗口时）
   // 如果 clientX/clientY 出了窗口，则 elementFromPoint 返回 null
   if (!elemBelow) return;
 
   // 潜在的可投放元素被标记为类 'droppable'（也可以是其他类）
-  let dropDroppable = elemBelow.closest('.droppable');
+  let droppable = elemBelow.closest('.droppable');
+}
+```
 
-  if (currentDroppable !== dropDroppable) { // 如果发生任何变化
-    // 我们正在移入或移出...
-    // 注意：两个值都可以为 null
-    // 如果在此事件之前我们没有悬浮在可投放元素上，则 currentDroppable=null
-    // 如果在此事件期间我们没有悬浮在可投放元素上，则 dropDroppable=null
 
-    if (currentDroppable) {
-      // 处理“移出”可投放元素的逻辑（移除高亮）
-      leaveDroppable(currentDroppable);
-    }
 
-    currentDroppable = dropDroppable;
-    if (currentDroppable) {
-      // 处理“移入”可投放元素的逻辑
-      enterDroppable(currentDroppable);
-    }
+```javascript
+if (currentDroppable !== dropDroppable) { // 如果发生任何变化
+
+  // 我们正在移入或移出...
+
+  // 注意：两个值都可以为 null
+
+  // 如果在此事件之前我们没有悬浮在可投放元素上，则 currentDroppable=null
+
+  // 如果在此事件期间我们没有悬浮在可投放元素上，则 dropDroppable=null
+
+  if (currentDroppable) {
+
+    // 处理“移出”可投放元素的逻辑（移除高亮）
+
+    leaveDroppable(currentDroppable);
+
   }
+
+  currentDroppable = dropDroppable;
+
+  if (currentDroppable) {
+
+    // 处理“移入”可投放元素的逻辑
+
+    enterDroppable(currentDroppable);
+
+  }
+
 }
 ```
 
@@ -5612,7 +4353,7 @@ function onMouseMove(event) {
 
 # 任务
 
-# 滑块 (Slider)
+## 滑块 (Slider)
 
 重要性：5
 
@@ -5629,7 +4370,7 @@ function onMouseMove(event) {
 
 [查看解决方案]
 
-# 在球地上拖拽超级英雄
+## 在球地上拖拽超级英雄
 
 重要性：5
 
@@ -5664,11 +4405,12 @@ function onMouseMove(event) {
 
 为了更好地理解键盘事件，你可以使用测试台。
 
-# Key 和 keyup
+## Key 和 keyup
 
 `keydown` 在按下键时发生，`keyup` 在松开时发生。
 
-**event.code 和 key**
+### event.code 和 key
+
 `key` 属性允许获取字符，而 `code` 属性允许获取“物理键”。例如，同一个键配合 `Shift` 时，`key` 是不同的，而 `code` 是相同的：
 
 | event.key | event.code |
@@ -5686,7 +4428,7 @@ function onMouseMove(event) {
 
 有多种布局，[字母部分](https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent)提供了更多代码。
 
-# 大写问题 (Case matters)
+## 大写问题 (Case matters)
 
 这显而易见，但人们仍然会犯错。`event.code=='KeyZ'` 可能不起作用：第一个字母必须是大写。如果按键没有任何字符呢？例如，假设我们要处理热键：Ctrl+Z（在 Mac 上是 Cmd+Z）。我们可以在 `keydown` 上创建一个监听器并检查按了哪个键。
 
@@ -5720,9 +4462,6 @@ document.addEventListener('keydown', function(event) {
 | | Y | C | V | B | N | M | | | | |
 | Strg | (Win) Alt | Alt Gr | (Win) Menu Strg |
 
-
-
-
 这听起来很奇怪，事实确实如此。[规范](#) 中显式地提到了这种行为。
 
 - `event.code` 的优点是始终保持不变，绑定到物理按键位置，即使访问者更改了语言也是如此。因此，热键依靠它以便在切换语言时能够正常工作。
@@ -5730,13 +4469,13 @@ document.addEventListener('keydown', function(event) {
 
 因此，为了可靠地跟踪依赖于布局的字符，`event.key` 可能是更好的方法。
 
-# 自动重复 (Auto-repeat)
+## 自动重复 (Auto-repeat)
 
 如果按键被按住足够的时间，它就会开始“自动重复”：`keydown` 会反复触发，当释放按键时，我们最终会得到 `keyup`。因此，出现多个 `keydown` 和单个 `keyup` 是正常的。
 
 对于由自动重复触发的事件，事件对象的 `event.repeat` 属性被设置为 `true`。
 
-# 默认操作 (Default actions)
+## 默认操作 (Default actions)
 
 默认操作各不相同，因为键盘可能会启动许多可能的操作。
 
@@ -5783,7 +4522,7 @@ key == 'ArrowLeft' || key == 'ArrowRight' || key == 'Delete' || key == 'Backspac
 
 但我们仍然可以使用鼠标右键点击 + 粘贴来输入任何内容。因此该过滤器不是 100% 可靠的。我们可以顺其自然，因为大多数时候它是有效的。或者另一种方法是跟踪 `input` 事件——它在任何修改后都会触发。在那里我们可以检查新值，并在无效时对其进行高亮或修改。
 
-# 遗留 (Legacy)
+## 遗留 (Legacy)
 
 在过去，有 `keypress` 事件，以及事件对象的 `KeyCode`、`charCode`、`which` 属性。
 
@@ -5791,7 +4530,7 @@ key == 'ArrowLeft' || key == 'ArrowRight' || key == 'Delete' || key == 'Backspac
 
 曾有一段时间这一章包含了它们的详细描述。但目前，浏览器支持现代事件，因此它们被移除，并替换为更多关于现代事件处理的详细信息。
 
-# 总结 (Summary)
+## 总结 (Summary)
 
 按下键始终会生成键盘事件，无论是符号键还是像 Shift 或 Ctrl 等特殊键。唯一的例外是有时出现在笔记本电脑键盘上的 Fn 键。它没有对应的的键盘事件，因为它通常在比操作系统更低的级别实现。
 
@@ -5811,7 +4550,7 @@ key == 'ArrowLeft' || key == 'ArrowRight' || key == 'Delete' || key == 'Backspac
 
 # 任务 (Tasks)
 
-# 扩展热键 (Extended hotkeys)
+## 扩展热键 (Extended hotkeys)
 
 重要性：5
 
@@ -5848,7 +4587,7 @@ window.addEventListener('scroll', function() {
 
 滚动事件在窗口和可滚动元素上均有效。
 
-# 阻止滚动 (Prevent scrolling)
+## 阻止滚动 (Prevent scrolling)
 
 我们如何让某个内容变得可滚动？我们不能在滚动监听器上使用 `preventDefault()` 来阻止滚动，因为滚动已经发生了。但我们可以通过在引起滚动的事件上 `preventDefault()` 来阻止滚动。
 
@@ -5883,19 +4622,16 @@ img src="placeholder.svg" width="128" height="128" data-src="real.jpg">
 <img src="placeholder.svg" width="128" height="128" data-src="real.jpg">
 ```
 
-
-
 最初，所有图像都是 `placeholder.svg`。当页面滚动到用户可以看到图像的位置时——我们将 `src` 更改为 `data-src` 中的内容，这样图像就会加载。
 
 这是一个在 `iframe` 中的示例：
 
 ```
 Text and pictures are from https://wikipedia.org.
-
 All images with data-src load when become visible.
 ```
 
-## # 太阳系
+## 太阳系
 
 太阳系是一个由太阳以及绕它运行的物体（直接或间接）组成的引力束系统。在这些直接绕太阳运行的物体中，最大的八个是行星，其余的是小得多的物体，例如矮行星和小太阳天体。在直接绕太阳运行的物体中，卫星中有两个比最小的行星水星大。
 
@@ -5915,19 +4651,19 @@ All images with data-src load when become visible.
 
 [打开任务的沙盒。 ]
 
- 解决方案
+解决方案
 
-## # 表单、控件
+# 表单、控件
 
 表单 `<form>` 和控件 `<input>`、`<select>` 等等的特殊属性和事件。
 
-## # 表单属性和方法
+## 表单属性和方法
 
 表单和控件元素（如 `<input>`）有很多特殊属性和事件。
 
 学习它们后，操作表单将变得方便得多。
 
-## # 导航：表单和元素
+## 导航：表单和元素
 
 文档表单是特殊集合 `document.forms` 的成员。
 这是一个所谓的“命名集合”：它既是有命名的也是序的。我们可以使用文档中的名称或索引来获取表单。
@@ -5951,10 +4687,8 @@ document.forms[0] - 文档中的第一个表单
 <script>
 // 获取表单
 let form = document.forms.my; // <form name="my"> 元素
-
 // 获取元素
 let elem = form.elements.one; // <input name="one"> 元素
-
 alert(elem.value); // 1
 </script>
 ```
@@ -5968,44 +4702,39 @@ alert(elem.value); // 1
   <input type="radio" name="age" value="10">
   <input type="radio" name="age" value="20">
 </form>
-
 <script>
   let form = document.forms[0];
-
   let ageElems = form.elements.age;
-
   alert(ageElems[0].value); // 10, 第一个输入值
 </script>
 ```
 
 这些导航属性并不取决于标签结构。所有的元素，无论它们在表单中有多深，都可以在 `form.elements` 中访问。
 
-- 作为“子表单”的 Fieldset
+### 作为“子表单”的 Fieldset
+
 表单内部可以包含一个或多个 `<fieldset>` 元素。它们也支持 `elements` 属性。
 例如：
 
 ```html
-<body><body>
+<body>
   <form id="formFields">
     <fieldset name="userFields">
       <legend>info</legend>
       <input name="login" type="text">
     </fieldset>
   </form>
-
   <script>
     alert(form.elements.login); // <input name="login">
-
     let fieldset = form.elements.userFields;
     alert(fieldset); // HTMLFieldElement
-
     // 我们既可以从表单从 fieldset 获取 input
     alert(fieldset.elements.login == form.elements.login); // true
   </script>
-</</body>
+</body>
 ```
 
-## # 简写：`form.name`
+## 简写：`form.name`
 
 有一种更短的表示法：我们可以通过 `form[index/name]` 访问元素。
 
@@ -6019,16 +4748,12 @@ alert(elem.value); // 1
 <form id="form">
   <input name="login">
 </form>
-
 <script>
   alert(form.elements.login == form.login); // true, 同一个 <input
-
   form.login.name = "username"; // 更改输入的名称
-
   // form.elements 更新了名称：
   alert(form.elements.login); // undefined
   alert(form.elements.username); // input
-
   // 现在直接访问可以使用两个名称：新的和旧的
   alert(form.username == form.login); // true
 </script>
@@ -6036,7 +4761,7 @@ alert(elem.value); // 1
 
 这通常不是一个问题，因为我们很少更改表单元素的名称。
 
-## # 反向引用：element.form
+## 反向引用：element.form
 
 对于任何元素，`element.form` 都是其父级表单。
 当你有一个元素并想知道它属于哪个表单时，这非常有用。
@@ -6045,14 +4770,11 @@ alert(elem.value); // 1
 <form name="form1">
   <input name="input">
 </form>
-
 <script>
   let el = document.getElementsByName("input")[0];
   alert(el.form.name); // form1
 </script>
 ```
-
-
 
 ## 表单导航：
 
@@ -6095,7 +4817,7 @@ alert(elem.value); // 1
 2. 添加一个选项：`<option value="classic">Classic</option>`。
 3. 设为选中状态。
 
-## 聚焦：focus/blur
+# 聚焦：focus/blur
 
 当用户点击元素或使用键盘上的 Tab 键时，元素会获得焦点。还有一个 `autofocus` HTML 属性，它可以在页面加载时默认将焦点赋予元素，以及其他获取焦点的方法。
 
@@ -6123,11 +4845,9 @@ alert(elem.value); // 1
   .invalid { border-color: red; }
   #error { color: red; }
 </style>
-```
-
 您的邮箱：<input type="email" id="input">
-
 <div id="error"></div>
+```
 
 ```javascript
 <script>
@@ -6137,7 +4857,6 @@ alert(elem.value); // 1
       error.innerHTML = '请输入正确的邮箱地址。
     }
   };
-
   input.onfocus = function() {
     if (this.classList.contains('invalid')) {
       // 移除“错误”指示，因为用户想要重新输入
@@ -6194,9 +4913,6 @@ alert(elem.value); // 1
 
 请注意，我们无法通过在 `onblur` 上调用 `event.preventDefault()` 来“防止失去焦点”，因为 `onblur` 是在失去焦点后触发的。
 
-
-
-
 其次，还有 `focusin` 和 `focusout` 事件——它们与 `focus/blur` 完全相同，但它们会冒泡。
 
 请注意，它们必须使用 `elem.addEventListener` 进行赋值，而不是 `onevent`。
@@ -6208,11 +4924,9 @@ alert(elem.value); // 1
   <input type="text" name="name" value="Name">
   <input type="text" name="surname" value="Surname">
 </form>
-
 <style>
   .focused { outline: 1px solid red; }
 </style>
-
 <script>
   form.addEventListener("focusin", () => form.classList.add('focused'));
   form.addEventListener("focusout", () => form.classList.remove('focused'));
@@ -6246,7 +4960,7 @@ alert(elem.value); // 1
 
 为该任务打开沙盒 ↗
 
- 解决方案
+解决方案
 
 ## 点击时编辑 TD
 
@@ -6273,7 +4987,7 @@ alert(elem.value); // 1
 
 为任务打开沙盒 ↗
 
- 解决方案
+解决方案
 
 ## 键盘驱动鼠标
 
@@ -6287,9 +5001,9 @@ alert(elem.value); // 1
 
 为该任务打开沙盒 ↗
 
- 解决方案
+解决方案
 
-## 事件：change、input、剪切、复制、粘贴
+# 事件：change、input、剪切、复制、粘贴
 
 让我们涵盖随数据更新各种事件。
 
@@ -6383,12 +5097,6 @@ alert(elem.value); // 1
 
 创建一个在点击时会变为 `<textarea>` 的 `<div>`。
 ...（其余文本）
-（我将在下方回复框提供最终版本）
-
-
-
-
-# 任务
 
 # 模态框
 
@@ -6444,7 +5152,7 @@ HTML 页面的生命周期有三个重要的事件：
 
 让我们探索这些事件的细节。
 
-# DOMContentLoaded
+## DOMContentLoaded
 
 `DOMContentLoaded` 事件发生在 `document` 对象上。
 我们必须使用 `addEventListener` 来捕获它：
@@ -6460,11 +5168,9 @@ document.addEventListener("DOMContentLoaded", ready);
 <script>
 function ready() {
   alert('DOM is ready');
-
   // 图片尚未加载（除非已缓存），所以大小为 0x0
   alert(`Image size: ${img.offsetWidth}x${img.offsetHeight}`);
 }
-
   document.addEventListener("DOMContentLoaded", ready);
 </script>
 ```
@@ -6479,7 +5185,7 @@ function ready() {
 
 第一个 DOMContentLoaded 事件非常简单。DOM 树已就绪——这就是该事件。不过这里有一些特殊之处。
 
-# DOMContentLoaded 和脚本
+### DOMContentLoaded 和脚本
 
 当浏览器处理 HTML 文档并遇到 `<script>` 标签时，它需要在继续构建 DOM 之前执行它。这是一种预防措施，因为脚本可能想要修改 DOM，甚至用 `document.write` 写入，所以 DOMContentLoaded 必须等待。
 
@@ -6514,7 +5220,7 @@ DOMContentLoaded. JavaScript 模块的行为类似于 defer，它们也不会阻
 或 <script src="..."></script>
 ```
 
-# DOMContentLoaded 和样式
+### DOMContentLoaded 和样式
 
 外部样式不影响 DOM，所以 DOMContentLoaded 不会等待它们。
 
@@ -6532,7 +5238,7 @@ alert(getComputedStyle(document.body).marginTop);
 
 由于 DOMContentLoaded 等待脚本，现在它也会等待它们之前的样式。
 
-# 浏览器内置的自动填充
+### 浏览器内置的自动填充
 
 Firefox、Chrome 和 Opera 在 DOMContentLoaded 时自动填充表单。
 
@@ -6540,7 +5246,7 @@ Firefox、Chrome 和 Opera 在 DOMContentLoaded 时自动填充表单。
 
 所以，如果 DOMContentLoaded 被长时间运行的脚本推迟，自动填充也会等待。你可能在某些网站上见过这种情况（如果你使用浏览器自动填充）——登录/密码字段不会立即填充，而是有一个延迟，直到页面完全加载。这实际上是直到 DOMContentLoaded 的延迟。
 
-# window.onload
+## window.onload
 
 `window` 对象上的 `load` 事件在整个页面加载完成（包括样式、图像和其他资源）时触发。
 
@@ -6550,7 +5256,6 @@ Firefox、Chrome 和 Opera 在 DOMContentLoaded 时自动填充表单。
 <script>
 window.onload = function() {
   alert('Page loaded');
-
   // 此时图片已加载
   alert(`Image size: ${img.offsetWidth}x${img.offsetHeight}`);
 };
@@ -6559,7 +5264,7 @@ window.onload = function() {
 
 <img id="img" src="https://en.js.cx/clipart/train.gif?speed=1&cache=0">
 
-# window.onload / unload
+## window.onload / unload
 
 当访问者离开页面时，`window` 上会触发 `unload` 事件。
 
@@ -6569,7 +5274,6 @@ window.onload = function() {
 
 ```
 let analyticsData = { /* 收集的数据对象 */ };
-
 window.addEventListener("unload", function() {
   navigator.sendBeacon("/analytics", JSON.stringify(analyticsData));
 });
@@ -6583,7 +5287,7 @@ window.addEventListener("unload", function() {
 
 `fetch` 方法中的 `keepalive` 标志用于通用网络请求。你可以在 Fetch API 章节找到更多信息。
 
-# window.onbeforeunload
+## window.onbeforeunload
 
 当访问者开始离开页面或尝试关闭窗口时，`beforeunload` 处理程序会请求额外的确认。
 
@@ -6608,10 +5312,6 @@ window.onbeforeunload = function() {
 ```
 
 这种行为被改变了是因为某些网站滥用了这个事件处理程序，显示误导性且烦人的消息。目前浏览器仍然可能将其显示为消息，但除此之外，无法自定义显示给用户的消息。
-
-
-
-
 
 ## readyState
 
@@ -6649,7 +5349,6 @@ if (document.readyState == 'loading') {
 ```javascript
 // 当前状态
 console.log(document.readyState);
-
 // 打印状态变化
 document.addEventListener('readyStatechange', () => console.log(document.readyState));
 ```
@@ -6663,15 +5362,11 @@ document.addEventListener('readyStatechange', () => console.log(document.readySt
 ```html
 <script>
 log('initialState:' + document.readyState);
-
 document.addEventListener('readyState', () => log('readyState:' + document.readyState));
 document.addEventListener('DOMContentLoaded', () => log('DOMContentLoaded'));
-
 window.onload = () => log('window onload');
 </script>
-
 <iframe src="iframe.html" onload="log('iframe onload')"></iframe>
-
 <img src="http://en.js/clipart/train.gif" id="img">
 <script>
 img.onload = () => log('img onload');
@@ -6695,7 +5390,7 @@ img.onload = () => log('img onload');
 - `document.readyState` 在 DOMContentLoaded 之前变为 `interactive`。这两者实际上含义相同。
 - `document.readyState` 在所有资源（`iframe` 和 `img`）加载后变为 `complete`。我们可以看到它与 `img.onload`（`img` 是最后一个资源）以及 `window.onload` 大约同时发生。切换到 `complete` 状态等同于 `window.onload`。区别在于 `window.onload` 在所有其他 `load` 处理程序之后运行。
 
-# 总结
+## 总结
 
 页面加载事件：
 
@@ -6710,7 +5405,7 @@ img.onload = () => log('img onload');
   - interactive – 文档已解析，与 DOMContentLoaded 大约同时发生，但发生在其之前。
   - complete – 文档和资源已加载，与 window.onload 大约同时发生，但发生在其之前。
 
-## Scripts：async, defer
+# Scripts：async, defer
 
 在现代网站中，脚本通常比 HTML 更“重”：它们的下载体积更大，处理时间也更长。
 
@@ -6731,6 +5426,8 @@ img.onload = () => log('img onload');
 
 有两个属性可以解决这个问题：`defer` 和 `async`。
 
+## defer 属性
+
 `defer` 属性告诉浏览器在后台下载脚本，并仅在文档解析后执行它。如果如果多个脚本都有 `defer`，它们将按文档顺序执行。
 
 ```html
@@ -6748,6 +5445,8 @@ img.onload = () => log('img onload');
 <script src="https://javascript.info/article/script-async-defer/small.js?speed=1" defer></script>
 <p>...脚本之后的内容...</p>
 ```
+
+## async 属性
 
 `async` 属性告诉浏览器在后台下载脚本，并在下载完成后立即执行它，不阻塞 DOM 解析。
 
@@ -6770,11 +5469,7 @@ img.onload = () => log('img onload');
 - 对于依赖于 DOM 或顺序的脚本，使用 `defer`，或者将其放在 `<body>` 的末尾。
 - 对于不依赖其他脚本的独立脚本，使用 `async`。
 
-
-
-
-
-# 动态脚本
+## 动态脚本
 
 我们也可以使用 JavaScript 动态添加脚本：
 
@@ -6786,7 +5481,7 @@ document.body.append(script); // (*)
 
 脚本一旦被添加到文档中就会开始加载 (*)。
 
-# 动态脚本默认以“异步 (async)” 方式运行。
+### 动态脚本默认以“异步 (async)” 方式运行。
 
 这意味着：
 
@@ -6817,7 +5512,7 @@ loadScript("/article/script-async-defer/long.js");
 loadScript("/article/script-async-defer/small.js");
 ```
 
-# 总结
+## 总结
 
 `async` 和 `defer` 有一个共同点：它们都不会阻塞页面渲染。因此用户可以立即阅读页面内容并熟悉页面。
 
@@ -6845,7 +5540,7 @@ loadScript("/article/script-async-defer/small.js");
 - `onload` — 加载成功，
 - `onerror` — 发生错误。
 
-# 加载脚本
+## 加载脚本
 
 假设我们需要加载一个第三方脚本并调用其中定义的函数。
 我们可以这样动态加载它：
@@ -6853,7 +5548,6 @@ loadScript("/article/script-async-defer/small.js");
 ```javascript
 let script = document.createElement('script');
 script.src = "my.js";
-
 document.head.append(script);
 ```
 
@@ -6863,7 +5557,7 @@ document.head.append(script);
 > 对于我们自己的脚本，可以在这里可以使用 JavaScript 模块，但它们并没有
 > 被第三方库广泛采用。
 
-# script.onload
+## script.onload
 
 主要的辅助工具是 `load` 事件。它在脚本加载并执行后触发。
 
@@ -6874,7 +5568,6 @@ let script = document.createElement('script');
 // 可以加载来自任何域的脚本
 script.src = "https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.3.0/lodash.js";
 document.head.append(script);
-
 script.onload = function() {
   // 脚本创建了一个辅助函数 "_"
   alert(_); // 函数已可用
@@ -6885,7 +5578,7 @@ script.onload = function() {
 
 如果加载失败了呢？例如，不存在该脚本（404 错误）或服务器宕机（不可用）。
 
-# Script.onerror
+## Script.onerror
 
 脚本加载过程中发生的错误可以通过 `error` 事件进行跟踪。
 例如，让我们请求一个不存在的脚本：
@@ -6894,7 +5587,6 @@ script.onload = function() {
 let script = document.createElement('script');
 script.src = "https://example.com/404.js"; // 没有这样的脚本
 document.head.append(script);
-
 script.onerror = function() {
   alert("加载错误：" + this.src); // 加载错误 https://example.com/404.js;
 };
@@ -6906,7 +5598,7 @@ script.onerror = function() {
 > `onload/onerror` 事件仅跟踪加载本身。
 > 脚本处理和执行期间的错误不在这些事件的范围范围内。要跟踪脚本错误，可以使用 `window.onerror` 全局处理程序。
 
-# 其他资源
+## 其他资源
 
 加载错误事件也适用于其他资源，基本上适用于任何具有外部 `src` 的资源。
 
@@ -6915,11 +5607,9 @@ script.onerror = function() {
 ```javascript
 let img = document.createElement('img');
 img.src = "https://example.com";
-
 img.onload = function() {
   alert("图片已加载");
 };
-
 img.onerror = function() {
   alert("发生错误");
 };
@@ -6940,7 +5630,7 @@ window onerror = function(message, url, line, col, errorObj) {
 
 现在，假设服务器提供了 `Access-Control-Allow-Origin` 头部，一切一切正常。我们拥有完整的错误报告。
 
-# 总结
+## 总结
 
 图片 `<img>`、外部样式、脚本和其他资源都提供了加载错误事件来跟踪它们的加载情况：
 
@@ -6976,7 +5666,6 @@ img.src = 'my.jpg';
 function loaded() {
   alert("Images loaded")
 }
-
 preLoadImages(["1.jpg", "2.jpg", "3.jpg"], loaded);
 ```
 
@@ -6990,15 +5679,15 @@ preLoadImages(["1.jpg", "2.jpg", "3.jpg"], loaded);
 
 打开任务的沙盒。↗
 
-## 杂杂
+# 杂杂
 
-### MutationObserver
+## MutationObserver
 
-`MutationObserver` 是一个内置对象，用于观察 DOM 元素并在并在发生变化时触发回调。
+`MutationObserver` 是一个内置对象，用于观察 DOM 元素并在发生变化时触发回调。
 
 我们将首先介绍语法，然后探索一个真实的应用用例。
 
-## 语法
+### 语法
 
 `MutationObserver` 很容易使用。
 
@@ -7042,12 +5731,10 @@ observer.observe(node, config);
 
 ```html
 <div contentEditable id="elem">Click and <b></b>, please </div>
-
 <script>
 let observer = new MutationObserver(mutationRecords => {
   console.log(mutationRecords); // console.log(变化内容)
 });
-
 observer.observe(elem, {
   // 观察属性以外的所有
   childList: true,
@@ -7085,13 +5772,13 @@ mutationRecords = [{
 }];
 ```
 
-### MutationObserver
+### MutationObserver 用例
 
 `MutationObserver` 是一个内置对象，用于观察 DOM 元素并在发生变化时触发回调。
 
 我们将首先介绍语法，然后探索一个真实的应用用例。
 
-## 语法
+### 语法
 
 `MutationObserver` 很容易使用。
 
@@ -7135,34 +5822,9 @@ observer.observe(node, config);
 
 ```html
 <div contentEditable id="elem">Click and <b></b>, please </div>
+```
 
 ...（省略重复部分）...
-
-（注：由于原文中存在大量重复的段落，根据指令“不要重复输出原文”的原则，此处仅翻译核心逻辑并保持结构一致。）
-
-## MutationObserver 用例
-
-`MutationObserver` 是一个内置对象，用于观察 DOM 元素并在发生变化时触发回调。
-
-我们将首先介绍语法，然后探索一个真实的应用用例。
-
-## 语法
-
-`MutationObserver` 很容易使用。
-
-首先，我们创建一个带有一个回调函数的观察者：
-
-```javascript
-let observer = new MutationObserver(callback);
-```
-
-然后将其附加到 DOM 节点上：
-
-```javascript
-observer.observe(node, config);
-```
-
-...（后续逻辑一致）...
 
 ## 动态高亮演示
 
@@ -7172,10 +5834,8 @@ observer.observe(node, config);
 
 ```javascript
 let observer = new MutationObserver(mutations => {
-
 for(let mutation of mutations) {
 ```
-
 
 ```javascript
 for(let node of mutation addedNodes) {
@@ -7217,7 +5877,7 @@ demoElement.innerHTML = `A code snippet is below:
 
 现在我们有了 MutationObserver，它可以跟踪被观察元素或整个文档的高亮情况。我们可以无需担心就在 HTML 中添加/移除代码片段。
 
-# 附加方法
+## 附加方法
 
 有一个停止观察节点的方法：
 
@@ -7237,11 +5897,11 @@ let mutationRecords = observer.takeRecords();
 observer.disconnect();
 ```
 
-# 垃圾回收
+## 垃圾回收
 
 观察器内部对节点使用弱引用（weak references）。这意味着：如果一个节点从 DOM 中移除，它将变得不可达，然后会被垃圾回收，而观察器不会阻止这一过程。
 
-# 总结
+## 总结
 
 MutationObserver 可以对 DOM 的变化做出反应：属性、添加/移除的元素、文本内容。
 
@@ -7265,6 +5925,8 @@ JavaScript 可以用它做任何事情：获取现有选择、选择/取消选�
 
 首先，我们可以创建一个范围（构造函数没有参数）：
 
+
+
 ```javascript
 let range = new Range();
 ```
@@ -7281,7 +5943,7 @@ let range = new Range();
 
 ![](img/957480b375921dc4aa22c653c424343_244.0)
 
-让我们选择 "Example: italic"。这是 <p> 的前两个子节点（计算文本节点）：
+让我们选择 "Example: italic"。这是 `<p>` 的前两个子节点（计算文本节点）：
 
 ```html
 <p id="p">Example: <i>italic</i></p> and <b>bold</b></p>
@@ -7302,22 +5964,19 @@ alert(range); // Example: italic
 document.getSelection().addRange(range);
 ```
 
-- `range.setStart(p, 0)` – 将起始设置在 <p> 的第 0 个子节点（即文本节点 "Example: "）。
-- `range.setEnd(p, 2)` – 范围延伸到但不包含 <p> 的第 2 个子节点（那是文本节点 " and " 但结尾不包含，所以最后一个选中的节点是 italic）。
+- `range.setStart(p, 0)` – 将起始设置在 `<p>` 的第 0 个子节点（即文本节点 "Example: "）。
+- `range.setEnd(p, 2)` – 范围延伸到但不包含 `<p>` 的第 2 个子节点（那是文本节点 " and " 但结尾不包含，所以最后一个选中的节点是 italic）。
 
 这里有一个更完整的测试台，你可以尝试各种变体：
 
 <p id="p">Example: <i>italic</i> and <b>bold</b></p>
 
-从 <input id="start" type="number" value=1 - 到 <input id="end" type="number"><button id="button">点击选择</button>
+从 <input id="start" type="number" value=1> 到 <input id="end" type="number"><button id="button">点击选择</button>
 
 ```javascript
 button.onclick = () => {
   let range = new Range();
 ```
-
-
-
 
 ```javascript
 p.innerHTML = `Example: <i>italic</i> and <b>bold</b>`;
@@ -7337,6 +5996,7 @@ for(let method in methods) {
 ```
 
 methods.resetExample();
+
 <script>
 
 点击按钮对选中文执行斜体效果，点击 "resetExample" 重置它。
@@ -7375,12 +6035,12 @@ Range 是一个用于管理选择范围的通用对象。我们可以创建此�
 
 主要的选择属性有：
 
-- anchorNode – 选择开始的节点，
-- anchorOffset – 选择在 anchorNode 中开始的偏移量，
-- focusNode – 选择结束的节点，
-- focusOffset – 选择在 focusNode 中结束的偏移量，
-- isCollapsed – 如果没有选择任何内容（空范围）或不存在则为 true。
-- rangeCount – 选择中的范围计数，在除 Firefox 之外的所有浏览器中最多为 1。
+- `anchorNode` – 选择开始的节点，
+- `anchorOffset` – 选择在 `anchorNode` 中开始的偏移量，
+- `focusNode` – 选择结束的节点，
+- `focusOffset` – 选择在 `focusNode` 中结束的偏移量，
+- `isCollapsed` – 如果没有选择任何内容（空范围）或不存在则为 true。
+- `rangeCount` – 选择中的范围计数，在除 Firefox 之外的所有浏览器中最多为 1。
 
 # Selection may end in the document before start (选择的结束位置可能在起点之前)
 
@@ -7402,17 +6062,17 @@ Range 是一个用于管理选择范围的通用对象。我们可以创建此�
 <p>Example: <i>italic</i> and <b>></b></p>
 ```
 
-这与 Range 对象不同，Range 始终是向前的：范围的起点不能在终点之后。
+这与 `Range` 对象不同，`Range` 始终是向前的：范围的起点不能在终点之后。
 
 # Selection events (选择事件)
 
 有一些用于跟踪选择的事件：
 
-- elem.onselectstart – 选择开始时触发。
-- 可在任何元素上触发。
-- 默认行为将导致选择不开始。
-- document.onselectionchange – 选择发生变化时触发。
-- 仅在 document 上触发。
+- `elem.onselectstart` – 选择开始时触发。
+  - 可在任何元素上触发。
+  - 默认行为将导致选择不开始。
+- `document.onselectionchange` – 选择发生变化时触发。
+  - 仅在 document 上触发。
 
 # Selection tracking demo (选择跟踪演示)
 
@@ -7422,13 +6082,10 @@ Range 是一个用于管理选择范围的通用对象。我们可以创建此�
 
 （注：由于提供的文本存在大量重复和乱码，此处已根据逻辑流进行了去重和翻译）
 
-
-
-
--   "select" – 将选中新插入的文本。
--   "start" – 选取范围收缩到插入文本的正之前。
--   "end" – 选取范围收缩到插入文本的之后。
--   "preserve" – 尝试保留选取。这是默认值。
+- "select" – 将选中新插入的文本。
+- "start" – 选取范围收缩到插入文本的正之前。
+- "end" – 选取范围收缩到插入文本的之后。
+- "preserve" – 尝试保留选取。这是默认值。
 
 在此示例中，使用 `id="area"` 的 `unselect` 事件来跟踪选取：
 
@@ -7496,7 +6153,7 @@ button.onclick = () => {
 
 要使某些内容变为不可选取，三种方法：
 
--   1. 使用 CSS 属性 `user-select: none`。
+1. 使用 CSS 属性 `user-select: none`。
 
 ```html
 <style>
@@ -7511,7 +6168,7 @@ button.onclick = () => {
 
 此时 `elem` 将成为 `document.getSelection()` 的一部分，因此选取实际上发生了，但在复制粘贴时该内容通常会被忽略。
 
--   2. 在 `onselectstart` 或 `mousedown` 事件中阻止默认操作。
+2. 在 `onselectstart` 或 `mousedown` 事件中阻止默认操作。
 
 ```html
 <div id="elem">Unselectable</div> <div>Selectable</div>
@@ -7527,25 +6184,26 @@ elem.onselectstart = () => false;
 
 而且 `elem` 的内容仍然会被复制。
 
--   3. 我们也可以在选取发生后通过 `document.getSelection().empty()` 事后清除选取。这很少使用，因为这会导致选取出现又消失时产生不必要的闪烁。
+3. 我们也可以在选取发生后通过 `document.getSelection().empty()` 事后清除选取。这很少使用，因为这会导致选取出现又消失时产生不必要的闪烁。
 
 # 参考文献
 
--   DOM 规范: Range ↗
--   Selection API ↗
--   HTML 规范: APIs for the text control selections ↗
+- DOM 规范: Range ↗
+- Selection API ↗
+- HTML 规范: APIs for the text control selections ↗
 
 # 总结
 
 我们涵盖了两种用于选取的不同 API：
 
--   1. 针对文档：`Selection` 和 `Range` 对象。
--   2. 针对 `input`, `textarea`：额外的方法和属性。
+1. 针对文档：`Selection` 和 `Range` 对象。
+2. 针对 `input`, `textarea`：额外的方法和属性。
 
 第二个 API 非常简单，因为它处理的是文本。
+
 最常用的配方可能是：
 
--   1. 获取选取内容：
+1. 获取选取内容：
 
 ```javascript
 let selection = document.getSelection();
@@ -7556,7 +6214,7 @@ for (let i = 0; i < selection.rangeCount; i++) {
 }
 ```
 
--   2. 设置选取内容：
+2. 设置选取内容：
 
 ```javascript
 let selection = document.getSelection();
@@ -7591,43 +6249,6 @@ selection.addRange(range);
 
 在本章中，我们首先涵盖关于工作原理的理论细节，然后查看这些知识的实际应用。
 
-# 事件循环
-
-*事件循环* 的概念非常简单。有一个无尽的循环。
-
-理解事件循环如何工作对于优化至关重要，有时对于正确的架构也是如此。
-
-在本章中，我们首先涵盖关于工作原理的理论细节，然后查看这些知识的实际应用。
-
-(注：此处似乎重复了用户提供的待翻译文本中重复的 "Event Loop" 部分，以下为按原文翻译的内容)
-
-[content]
-
-# 事件循环：微任务（microtasks）和宏任务（macrotasks）
-
-浏览器 JavaScript 的执行流（在 Node.js 中也是如此）基于*事件循环*的。
-
-理解事件循环如何工作对于优化至关重要，有时对于正确的架构也是如此。
-
-在本章中，我们首先涵盖关于工作原理的理论细节，然后查看这些知识的实际应用。
-
-# 事件循环
-
-*事件循环* 的概念非常简单。有一个无尽的循环。
-
-理解事件循环如何工作对于优化至关重要，有时对于正确的架构也是如此。
-
-在本章中，我们首先涵盖关于工作原理的理论细节，然后查看这些知识的实际应用。
-
-[/content]
-
-*(注：由于您提供的待翻译文本在“Event loop”之后出现了大量重复内容，我已根据“不要重复输出原文”的原则进行了处理。如果该部分是您需要的完整翻译，请检查原文输入是否完整。)*
-
----
-**更正：重新审视输入文本，发现原文在 `Event loop` 标题后确实存在大量重复段落。以下是基于您提供的最后一段部分的完整翻译：**
-
-[content]
-
 # 事件循环：微任务（microtasks）和宏任务（macrotasks）
 
 浏览器 JavaScript 的执行流（在 Node.js 中也是如此）基于一个*事件循环*的。
@@ -7643,15 +6264,6 @@ selection.addRange(range);
 理解事件循环如何工作对于优化至关重要，有时对于正确的架构也是如此。
 
 在本章中，我们首先涵盖关于工作原理的理论细节，然后查看这些知识的实际应用。
-
-(注：由于原文文本在此处开始出现大量重复的描述，根据“一定不要重复输出原文”的指令，翻译已在此处停止或仅翻译核心逻辑。若需翻译后续特定的重复段，请告知。)
-
-[/content]
-
----
-**抱歉，我发现您提供的原始文本在 `Event loop` 之后包含了大量完全重复的句子。以下是针对您提供的最后一段“Use-case: CPU-hungry tasks”部分的翻译：**
-
-[content]
 
 # 用例：CPU 密集型任务
 
@@ -7696,9 +6308,6 @@ function count() {
 if (i == 1e9) {
 ```
 
-
-
-
 ```javascript
 alert("Done in " + (Date.now() - start) + 'ms');
 else {
@@ -7712,9 +6321,9 @@ count();
 
 单次运行 `count` 执行工作的一部分 (*)，然后在需要时重新调度自己 (**)。
 
-- 1. 第一次运行计数：`i=1...1000000`
-- 2. 第二次运行计数：`i=1000001..2000000`
-- 3. ...依此类推。
+1. 第一次运行计数：`i=1...1000000`
+2. 第二次运行计数：`i=1000001..2000000`
+3. ...依此类推。
 
 现在，如果在引擎忙于执行第 1 部分时出现了新的侧边任务（例如 onclick 事件），它将进入队列，并在第 1 部分完成后、在下一个部分之前执行。在每次执行 `count` 之间周期性地返回循环，为 JavaScript 引擎提供了足够的“呼吸空间”来处理其他事情，响应用户操作。
 
@@ -7778,6 +6387,7 @@ count();
 ```
 
 ...但我们也想在任务期间显示某些内容，例如进度条。
+
 如果我们使用 `setTimeout` 将重型任务拆分成片段，那么更改就会在片段之间被绘制。
 
 这看起来更好看：
@@ -7832,20 +6442,17 @@ onclick = function() {
 
 创建微任务主要有两种方式：
 
-- 1. 当 promise 准备就绪时，其 `.then/catch/finally` 处理器的执行将变成一个微任务。微任务也被用于 `await` 的“掩护”，因为它是 promise 处理的一种形式，类似于 `.then`，但在语法上不同。
-- 2. 有一个特殊的函数 `queueMicrotask(func)`，它将 `func` 队列到微任务队列中执行。
+1. 当 promise 准备就绪时，其 `.then/catch/finally` 处理器的执行将变成一个微任务。微任务也被用于 `await` 的“掩护”，因为它是 promise 处理的一种形式，类似于 `.then`，但在语法上不同。
+2. 有一个特殊的函数 `queueMicrotask(func)`，它将 `func` 队列到微任务队列中执行。
 
 在每个微任务之后，引擎会在运行任何其他任务之前执行微任务队列中的所有任务。
-
-
-
 
 ## 转化为公式
 
 ## 兄弟节点问题
 
-- 1. 是的，正确。元素 `elem.lastChild` 总是是最后一个，它没有 `nextSibling`。
-- 2. 不的，错误的，因为 `elem.children[]` 是元素中的第一个子元素。但在它之前可能存在非元素节点。所以 `previousSibling` 可能是一个文本节点。此外，如果没有子元素，尝试访问 `elem.children[]` 将会……
+1. 是的，正确。元素 `elem.lastChild` 总是是最后一个，它没有 `nextSibling`。
+2. 不的，错误的，因为 `elem.children[0]` 是元素中的第一个子元素。但在它之前可能存在非元素节点。所以 `previousSibling` 可能是一个文本节点。此外，如果没有子元素，尝试访问 `elem.children[0]` 将会……
 
 请注意：对于这两种情况，如果没有子元素，将会报错。
 
@@ -7972,11 +6579,8 @@ alert( body.firstChild.data ); // BODY
 
 执行步骤说明：
 
-- 1. <body> 的内容被替换为注释。注释是 `<!--BODY-->`，因为 `body.tagName` == "BODY"。正如我们记得，在 HTML 中 `tagName` 总是大写的。
-- 2. 注释现在是子节点。
-
-
-
+1. `<body>` 的内容被替换为注释。注释是 `<!--BODY-->`，因为 `body.tagName` == "BODY"。正如我们记得，在 HTML 中 `tagName` 总是大写的。
+2. 注释现在是子节点。
 
 在沙箱中打开解决方案。 ↗
 
@@ -7988,11 +6592,11 @@ alert( body.firstChild.data ); // BODY
 
 算法：
 
-- 1. 使用 `<th>` 和星期名称创建表格表头。
-- 2. 创建日期对象 `d = new Date(year, month-1)`。这是该月的第一天（考虑到 JavaScript 中的月份从 0 开始，而不是 1）。
-- 3. 直到每月第一日的几个单元格 `d.getDay()` 可能是空的。让我们用 `<td></td>` 填充它们。
-- 4. 增加 `d` 中的日期：`d.setDate(d.getDate()+1)`。如果 `d.getMonth()` 不是下个月，则向日历添加新单元格 `<td>`。如果是星期日，则添加换行符 `"</tr>"`。
-- 5. 如果月份已结束，且表格行未满，向其中添加空的 `<td>` 以形成正方形。
+1. 使用 `<th>` 和星期名称创建表格表头。
+2. 创建日期对象 `d = new Date(year, month-1)`。这是该月的第一天（考虑到 JavaScript 中的月份从 0 开始，而不是 1）。
+3. 直到每月第一日的几个单元格 `d.getDay()` 可能是空的。让我们用 `<td></td>` 填充它们。
+4. 增加 `d` 中的日期：`d.setDate(d.getDate()+1)`。如果 `d.getMonth()` 不是下个月，则向日历添加新单元格 `<td>`。如果是星期日，则添加换行符 `"</tr>"`。
+5. 如果月份已结束，且表格行未满，向其中添加空的 `<td>` 以形成正方形。
 
 在沙箱中打开解决方案。 ↗
 
@@ -8080,16 +6684,16 @@ let sortedRows = Array.from(table.rows)
 tableBodies[0].append(...sortedRows);
 ```
 
-- 1. 获取所有的 `<tr>`，例如 `table.querySelectorAll('tr')`，然后将它们转换为数组，因为我们需要数组方法。
-- 2. 第一行 `<tr>` `table.rows[0]` 实际上是表格表头，所以我们通过 `.slice(1)` 获取剩余部分。
-- 3. 然后通过比较第一个 `<td>`（名称字段）的内容来进行排序。
-- 4. 现在通过 `.append(...sortedRows)` 按正确顺序插入节点。
+1. 获取所有的 `<tr>`，例如 `table.querySelectorAll('tr')`，然后将它们转换为数组，因为我们需要数组方法。
+2. 第一行 `<tr>` `table.rows[0]` 实际上是表格表头，所以我们通过 `.slice(1)` 获取剩余部分。
+3. 然后通过比较第一个 `<td>`（名称字段）的内容来进行排序。
+4. 现在通过 `.append(...sortedRows)` 按正确顺序插入节点。
 
 表格总有一个隐式元素，因此我们需要获取它并插入到其中：直接使用 `table.append(...)` 会失败。
 
 请注意：我们不需要删除它们，只需“重新插入”，它们会自动离开原来的位置。
 
-在沙箱中打开解决方案。 
+在沙箱中打开解决方案。
 
 数学公式
 
@@ -8097,7 +6701,7 @@ tableBodies[0].append(...sortedRows);
 
 # 创建通知
 
-在沙箱中打开解决方案。 
+在沙箱中打开解决方案。
 
 数学公式
 
@@ -8140,7 +6744,6 @@ let scrolls = div.offsetWidth - div.clientWidth;
 
 （注：OCR 文本“在列表中插入 HTML”出现在第 281 页，但其后的内容是关于滚动条的。将按要求保留文本。）
 
-
 为了公式
 
 ### 在元素附近显示注释（绝对定位）
@@ -8164,13 +6767,13 @@ let scrolls = div.offsetWidth - div.clientWidth;
 
 # 点击时隐藏
 
-在沙盒中打开解决方案。
+在沙箱中打开解决方案。
 
 为了公式
 
 ### 隐藏自己
 
-在可以在处理函数中使用 `this` 来在此处引用“该元素本身”：
+可以在处理函数中使用 `this` 来在此处引用“该元素本身”：
 
 ```
 <input type="button" onclick="this.hidden=true" value="Click to hide">
@@ -8209,7 +6812,7 @@ button.removeEventListener("click", handler);
 
 这样球将相对于 field 进行定位：
 
-```
+```css
 #field {
   width: 200px;
   height: 150px;
@@ -8224,7 +6827,7 @@ button.removeEventListener("click", handler);
 
 ![](img/957480b3759214dc4aa22c653c424343_285_0.png)
 
-```
+```css
 top: 0;
 transition: all; /* CSS 对 left/top 的动画让球飞起来 */
 }
@@ -8240,7 +6843,7 @@ transition: all; /* CSS 对 left/top 的动画让球飞起来 */
 
 要获取点击相对于 field 的左坐标，我们可以减去 field 的左边缘和边框宽度：
 
-```
+```javascript
 let left = event.clientX - fieldCoords.left - fieldClientLeft;
 ```
 
@@ -8250,7 +6853,7 @@ let left = event.clientX - fieldCoords.left - fieldClientLeft;
 
 所以最终的 left 值将是：
 
-```
+```javascript
 let left = event.clientX - fieldCoords.left - fieldClientLeft - ball.offsetWidth;
 ```
 
@@ -8295,7 +6898,7 @@ let left = event.clientX - fieldCoords.left - fieldClientLeft - ball.offsetWidth
 
 所以如果我们在它上设置了 `onclick`，它将捕捉到文本右侧的点击。
 
-由于 `<<span>>` 具有隐式的 `display: inline`，它恰好占据适应所有文本的空间：Sweeties (click me)!
+由于 `<span>` 具有隐式的 `display: inline`，它恰好占据适应所有文本的空间：Sweeties (click me)!
 
 # 切换菜单
 
@@ -8463,7 +7066,7 @@ let left = event.clientX - fieldCoords.left - fieldClientLeft - ball.offsetWidth
 
 所以如果我们在它上设置了 `onclick`，它将捕捉到文本右侧的点击。
 
-由于 <span> 具有隐式的 `display: inline`，它恰好占据适应所有文本的空间：Sweeties (click me)!
+由于 `<span>` 具有隐式的 `display: inline`，它恰好占据适应所有文本的空间：Sweeties (click me)!
 
 # 切换菜单
 
@@ -8631,175 +7234,7 @@ let left = event.clientX - fieldCoords.left - fieldClientLeft - ball.offsetWidth
 
 所以如果我们在它上设置了 `onclick`，它将捕捉到文本右侧的点击。
 
-由于 <span> 具有隐式的 `display: inline`，它恰好占据适应所有文本的空间：Sweeties (click me)!
-
-# 切换菜单
-
-切换菜单应该改变箭头并显示/隐藏菜单列表。
-
-所有这些变化由 CSS 完美处理。在 JavaScript 中，我们应该通过添加/移除 `.open` 类来标记菜单当前的状态。
-
-如果没有它，菜单将关闭：
-
-```css
-.menu ul {
-  margin: 0;
-  list-style: none;
-  padding-left: 20px;
-  display: none;
-}
-
-.menu .title::before {
-  content: ' ▶';
-  font-size: 80%;
-  color: green;
-}
-```
-
-...而通过 `.open` 箭头会改变且列表会出现：
-
-```css
-.menu.open .title::before {
-  content: ' ▼';
-}
-
-.menu.open ul {
-  display: block;
-}
-```
-
-[在沙盒中打开解决方案。]
-
-为了公式
-
-### 隐藏自己
-
-可以在处理函数中使用 `this` 来在此处引用“该元素本身”：
-
-```html
-<input type="button" onclick="this.hidden=true" value="Click to hide">
-```
-
-为了公式
-
-# 哪些处理函数运行了？
-
-答案是：1 和 2。
-
-第一个处理函数被触发了，因为它没有被 `removeEventListener` 移除。要移除该处理函数，我们需要传递与赋值完全相同的函数。而在代码中传递了一个新函数，它看起来看起来一样，但仍然是另一个函数。
-
-要移除一个函数对象，我们需要存储它的引用，如下所示：
-
-```javascript
-function handler() {
-  alert(1);
-}
-
-button.addEventListener("click", handler);
-button.removeEventListener("click", handler);
-```
-
-处理函数 `button.onclick` 独立工作，并且作为 `addEventListener` 的补充。
-
-为了公式
-
-# 让球跨越球场
-
-首先，我们需要选择一种定位球的方法。
-
-我们不能对它使用 `position:fixed`，因为滚动页面会让球离开球场。
-
-所以我们应该使用 `position:absolute`，为了让定位非常稳固，让 `field` 本身也被定位。
-
-这样球将相对于 field 进行定位：
-
-```css
-#field {
-  width: 200px;
-  height: 150px;
-  position: relative;
-}
-
-#ball {
-  position: absolute;
-  left: 0; /* 相对于最近的已定位祖先 (field) */
-}
-```
-
-![](img/957480b3759214dc4aa22c653c424343_285_0.png)
-
-```css
-top: 0;
-transition: all; /* CSS 对 left/top 的动画让球飞起来 */
-}
-```
-
-接下来我们需要分配正确的 `ball.style.position.left/top`。它们现在包含了相对于 field 的坐标。
-
-这是这张图片：
-
-![](img/957480b3759214dc4aa22c653c424343_286_0.png)
-
-我们有 `event.clientX/clientY` —— 点击相对于窗口坐标。
-
-要获取点击相对于 field 的左坐标，我们可以减去 field 的左边缘和边框宽度：
-
-```javascript
-let left = event.clientX - fieldCoords.left - fieldClientLeft;
-```
-
-通常，`ball.style.position.left` 意味着“元素的左边缘”（球）。如果我们分配 `left`，那么球的边缘而不是中心将位于鼠标光标下方。
-
-我们需要将球向左移动半宽度并向上移动半高度，使其居中。
-
-所以最终的 left 值将是：
-
-```javascript
-let left = event.clientX - fieldCoords.left - fieldClientLeft - ball.offsetWidth;
-```
-
-垂直坐标使用相同的逻辑计算。
-
-请注意，球的宽度/高度在访问 `ball.offsetWidth` 时必须是已。应该在 HTML 或 CSS 中指定。
-
-[在沙盒中打开解决方案。]
-
-为了公式
-
-### 创建滑动菜单
-
-### HTML/CSS
-
-首先让我们创建 HTML/CSS。
-
-菜单是页面上的一个独立的图形化组件，因此最好将其放入单个 DOM 元素中。
-
-菜单项列表可以作为 `ul/li` 列表布局。
-
-这是示例结构：
-
-```html
-<div class="menu">
-  <span class="title">Sweeties (click me)!</span>
-  <ul>
-    <li>Cake</li>
-    <li>Donut</li>
-    <li>Honey</li>
-  </ul>
-</div>
-``` (修复了错误的闭合标签)
-
-我们使用 `<span>` 作为标题，因为 `<div>` 具有隐式的 `display:block` 属性，它将占据 100% 的水平宽度。
-
-如下：
-
-```html
-<div style="border: solid red 1px" onclick="alert(1)">Sweeties (click me)</div>
-```
-
-所以如果我们在它上设置了 `onclick`，它将捕捉到文本右侧的点击。
-
-由于 <span> 具有隐式的 `display: inline`，它恰好占据适应所有文本的空间：Sweeties (click me)!
+由于 `<span>` 具有隐式的 `display: inline`，它恰好占据适应所有文本的空间：Sweeties (click me)!
 
 # 切换菜单
 
@@ -8840,13 +7275,9 @@ let left = event.clientX - fieldCoords.left - fieldClientLeft - ball.offsetWidth
 
 (注：由于原始文本中存在大量完全重复的段落，我已按照要求去除了重复内容，确保输出简洁且完整)
 
-
-
-
-
 # 可选择列表
 
--   在沙箱中打开解决方案。
+- 在沙箱中打开解决方案。
 
 转化为公式
 
@@ -8854,7 +7285,7 @@ let left = event.clientX - fieldCoords.left - fieldClientLeft - ball.offsetWidth
 
 # 改进的提示框行为
 
--   在沙箱中打开解决方案。
+- 在沙箱中打开解决方案。
 
 转化为公式
 
@@ -8862,10 +7293,10 @@ let left = event.clientX - fieldCoords.left - fieldClientLeft - ball.offsetWidth
 
 该算法看起来很简单：
 
-1.  在元素上绑定 `mouseover/out` 处理器。这里也可以使用 `mouseenter/leave`，但它们的通用性较差，如果我们引入了事件委托，它们将无法工作。
-2.  当鼠标光标进入元素时，在 `mousemove` 上开始测量速度。
-3.  如果速度缓慢，则执行 `over`。
-4.  稍后如果我们离开了元素，且执行了 `over`，则执行 `out`。
+1. 在元素上绑定 `mouseover/out` 处理器。这里也可以使用 `mouseenter/leave`，但它们的通用性较差，如果我们引入了事件委托，它们将无法工作。
+2. 当鼠标光标进入元素时，在 `mousemove` 上开始测量速度。
+3. 如果速度缓慢，则执行 `over`。
+4. 稍后如果我们离开了元素，且执行了 `over`，则执行 `out`。
 
 问题是：“如何测量速度？”
 
@@ -9063,7 +7494,7 @@ function populate() {
 
 1. 点击时——将单元格的 `innerHTML` 替换为相同大小且无边框的 `<textarea>`。使用 JavaScript 或 CSS 设置大小。
 2. 将 `td.innerHTML` 设置为 `textarea.value`。
-3.  textarea。
+3. textarea。
 4. 在单元格下方显示确定/取消按钮，处理点击。
 
 # 键盘驱动鼠标
@@ -9075,10 +7506,6 @@ function populate() {
 P.S. 我们也可以将 `mouse.onclick` 替换为 `mouse.onfocus`。
 
 在沙箱中打开解决方案。
-
-
-
-
 
 4. 当计数器值等于源的数量时——我们就完成了：执行`callback()`。
 

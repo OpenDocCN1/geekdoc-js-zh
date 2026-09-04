@@ -1,21 +1,14 @@
+
 # jQuery 精要
-
-
-
-
-
 
 序言：Daniel Jebaraj
 
-
-
-
-
 ## 第8章 插件
-- 构建插件时使用 $ 别名
-- 新插件附加到 jQuery.fn 对象以成为 jQuery 方法
+
+- 构建插件时使用 `$` 别名
+- 新插件附加到 `jQuery.fn` 对象以成为 jQuery 方法
 - 在插件内部，`this` 是对当前 jQuery 对象的引用
-- 使用 each() 遍历 jQuery 对象，并使用 `this` 关键字提供对对象中每个元素的引用
+- 使用 `each()` 遍历 jQuery 对象，并使用 `this` 关键字提供对对象中每个元素的引用
 - 插件返回 jQuery 对象，以便在使用插件后可以链式调用 jQuery 方法或其他插件
 - 默认插件选项
 - 自定义插件选项
@@ -24,6 +17,7 @@
 - 提供回调函数并传递上下文
 
 ## 第9章 效果
+
 - 禁用所有 jQuery 效果方法
 - 深入理解 `stop()` 动画方法
 - 使用 `:animated` 确定元素是否正在执行动画
@@ -33,6 +27,7 @@
 - 深入理解 jQuery 淡入淡出方法
 
 ## 第10章 AJAX
+
 - jQuery 的 `ajax()` 函数是底层抽象
 - jQuery 支持跨域 JSONP
 - 阻止浏览器缓存 XHR 请求
@@ -40,14 +35,17 @@
 ## *Succinctly* 系列书籍背后的故事
 
 Daniel Jebaraj，副总裁
+
 Syncfusion, Inc.
 
 ## 保持技术前沿
+
 正如你们许多人可能知道的，Syncfusion 是微软平台软件组件的提供商。这使我们处于一个令人兴奋但又充满挑战的位置——始终处于技术前沿。
 
 每当微软推出新的平台或工具时——如今这似乎每两周就有一次——我们都必须快速地自我学习。
 
 ## 信息丰富但更难消化
+
 实际上，这意味着大量的图书订单、博客搜索和 Twitter 浏览。
 
 虽然互联网上可用的信息越来越多，出版的书籍也越来越多，甚至包括一些相对较新的话题，但持续阻碍我们的一个方面是找不到简洁的技术概览书籍。
@@ -55,6 +53,7 @@ Syncfusion, Inc.
 我们通常面临两种选择：阅读几本超过500页的书籍，或在网上搜寻相关的博客文章和其他文章。就像其他有工作要做、有客户要服务的人一样，我们发现这相当令人沮丧。
 
 ## *Succinctly* 系列
+
 这种沮丧转化为一种强烈的愿望，即制作一系列简洁的技术书籍，面向在微软平台上工作的开发者。
 
 我们坚信，考虑到这些开发者的背景知识，大多数主题都可以转化为50到100页之间的书籍。
@@ -62,22 +61,24 @@ Syncfusion, Inc.
 这正是我们决心通过 *Succinctly* 系列实现的目标。一切美好的事物难道不都是源于改变现状的深切愿望吗？
 
 ## 最好的作者，最好的内容
+
 每位作者都是从一群与我们有共同愿景的才华横溢的专家中精心挑选出来的。你手中现在拿着的这本书，以及本系列中的其他书籍，都是作者们不懈努力的结果。你会发现原创内容，保证在喝几杯咖啡的时间里就能让你上手并运行。
 
 ## 永久免费
+
 Syncfusion 将致力于制作多个主题的书籍。这些书籍将始终免费。我们发布的任何更新也将是免费的。
 
 ## 免费？有什么陷阱吗？
+
 这里没有陷阱。Syncfusion 在这项工作中有着既得利益。
 
 作为组件供应商，我们独特的主张一直是，我们提供的框架比市场上任何其他供应商都更深入、更广泛。开发者教育极大地帮助我们进行市场营销和销售，与那些承诺“一键启用 AJAX 支持”或“把月亮变成奶酪！”的竞争供应商抗衡。
 
 ## 告诉我们你的想法
+
 如果你有任何感兴趣的话题、想法或反馈，请随时通过 succinctly@syncfusion.com 发送给我们。
 
 我们真诚地希望你喜欢这本书，并希望它能帮助你更好地理解学习主题。感谢你的阅读。
-
-
 
 ## 关于作者
 
@@ -233,11 +234,9 @@ alert(jQuery('span').text()); // 弹出 "I love jQuery!"
 <!DOCTYPE html>
 ```
 
-
-
 ### 等待 DOM 就绪
 
-当 DOM 加载完毕并可供操作时，jQuery 会触发一个名为 **ready** 的自定义事件。操作 DOM 的代码可以放在该事件的处理程序中运行。这是 jQuery 使用中常见的模式。
+当 DOM 加载完毕并可供操作时，jQuery 会触发一个名为 **ready** 的自定事件。操作 DOM 的代码可以放在该事件的处理程序中运行。这是 jQuery 使用中常见的模式。
 
 以下示例展示了此自定义事件的三种使用方式。
 
@@ -397,8 +396,6 @@ src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 
 然而，一旦原始包装集被改变，链式操作的乐趣并不一定要停止。使用 `end()` 方法，你可以退出对原始包装集所做的任何破坏性更改。查看以下示例中 `end()` 方法的用法，以了解如何在 DOM 元素中进退操作。
 
-
-
 ### 示例：sample8.html
 
 ```html
@@ -449,7 +446,9 @@ src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 jQuery 函数具有多面性。我们可以向其传递不同的值和字符串格式，它就能利用这些执行独特的功能。以下是 jQuery 函数的几种用法：
 
 - 使用 CSS 表达式和自定义 jQuery 表达式从 DOM 中选择元素，以及使用 DOM 引用选择元素：`jQuery('p > a')` 或 `jQuery(':first')` 和 `jQuery(document.body)`
+
 - 通过传递 HTML 字符串结构或创建 DOM 元素的 DOM 方法来动态创建 HTML：`jQuery('<div id="nav"></div>')` 或 `jQuery(document.createElement('div'))`
+
 - 通过向 jQuery 函数传递一个函数作为 `ready()` 事件的快捷方式：`jQuery(function($){ /* ready() 的快捷方式 */ })`
 
 下面的代码示例详细说明了每种用法。
@@ -499,7 +498,7 @@ jQuery 函数具有多面性。我们可以向其传递不同的值和字符串�
 </html>
 ```
 
-在传递给 **mouseenter()** 方法的匿名函数内部，我们使用关键字 **this** 来引用当前的 `<a>` 元素。每当鼠标悬停在 "jQuery.com" 文本上时，浏览器将通过识别其 **id** 属性值来警告鼠标悬停在哪个元素上。
+在传递给 **mouseenter()** 方法的匿名函数内部，我们使用关键字 **this** 来引用当前的 `<a>` 元素。每当鼠标悬停在 "jQuery.com" 文本上时，浏览器将通过识别其 **id** 属性值来警告鼠悬停在哪个元素上。
 
 在前面的示例中，也可以获取 **this** 引用并将其传递给 jQuery 函数，以便用 jQuery 功能包装该 DOM 元素。
 
@@ -587,7 +586,7 @@ $('a').get(0).title = 'jQuery.com';
 $('a')[0].title = 'jQuery.com';
 ```
 
-两者都允许访问实际的 DOM 元素。就个人而言，我更喜欢方括号表示法。它更快，因为它使用原生 JavaScript 从数组中检索元素，而不是将其传递给方法。
+两者都允访问实际的 DOM 元素。就个人而言，我更喜欢方括号表示法。它更快，因为它使用原生 JavaScript 从数组中检索元素，而不是将其传递给方法。
 
 然而，**get()** 方法提供了一个巧妙的解决方案，可以将所有 DOM 元素放入一个原生数组中。只需在不传递索引参数的情况下调用 **get()** 方法，该方法将在一个原生 JavaScript 数组中返回包装器集中的所有 DOM 元素。
 
@@ -613,11 +612,15 @@ src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 ```
 
 $(jQuery);
+
 </script>
+
 </body>
+
 </html>
 
 > **注意：**
+
 使用`get()`会结束jQuery的链式调用。它会将包装集转换为一个简单的DOM元素数组，这些元素不再具有jQuery功能的包装。因此，在`.get()`之后使用`.end()`方法无法恢复链式调用。
 
 ### 检查包装集是否为空
@@ -670,6 +673,7 @@ jQuery提供了`noConflict()`方法，它有多种用途——即能够用另一
 ```
 
 > **注意：**
+
 通过向`noConflict()`函数传递一个布尔值true，你可以完全撤销jQuery引入到网页中的内容。这应该只在极端情况下使用，因为它很可能导致jQuery插件出现问题。
 
 ### 当隐式迭代不够时使用.each()
@@ -696,9 +700,10 @@ jQuery提供了`noConflict()`方法，它有多种用途——即能够用另一
 
 这被称为隐式迭代，因为jQuery代码假设你想操作所有三个元素，这需要遍历选定的元素，并用文本"I am a div"设置每个`<div>`的文本节点值。当默认完成此操作时，称为隐式迭代。
 
-这非常方便。在大多数情况下，大多数jQuery方法会应用隐式迭代。然而，其他方法仅应用于包装集中的第一个元素。例如，当用于获取属性值时，jQuery方法`attr()`仅访问包装集中的第一个元素。
+这非常方便。在大多数情况下，大多数jQuery方法会应用隐式迭代。然而，其他方法仅应用于包装集中的第一个元素。例如，当用于获取属值时，jQuery方法`attr()`仅访问包装集中的第一个元素。
 
 > **注意：**
+
 当使用`attr()`方法设置属性时，jQuery实际上会应用隐式迭代来将属性及其值设置给包装集中的所有元素。
 
 在下面的代码中，包装集包含页面中所有的`<div>`元素，但`attr()`方法仅返回包装集中包含的第一个元素的`id`值。
@@ -734,9 +739,9 @@ $divs.eq(1).attr('id');
 $divs.eq(2).attr('id');
 ```
 
-这看起来有点冗长，不是吗？如果我们能够循环遍历包装集，并简单地从每个`<div>`元素中提取**id**属性值，那不是很好吗？通过使用`$().each()`方法，当我们的包装集需要显式迭代来处理多个元素时，我们调用了另一轮迭代。
+这看起来有点冗长，不是吗？如果我们能够循环遍历包装集，并简单地从每个`<div>`元素中提取**id**属性值，那不是很好吗？通过使用$().each()方法，当我们的包装集需要显式迭代来处理多个元素时，我们调用了另一轮迭代。
 
-在下面的代码示例中，我使用`$().each()`方法循环遍历包装集，访问集合中的每个元素，然后提取其**id**属性值。
+在下面的代码示例中，我使用$().each()方法循环遍历包装集，访问集合中的每个元素，然后提取其**id**属性值。
 
 ### 示例：sample18.html
 
@@ -764,7 +769,8 @@ $divs.eq(2).attr('id');
 想象一下，能够随时强制进行迭代，这为你带来的可能性。
 
 > **注意：**
-jQuery还提供了一个`$.each`函数，不要与专门用于迭代jQuery包装集的`$().each`方法混淆。`$.each`方法实际上可以用于迭代任何旧的JavaScript数组或对象。它本质上是原生JavaScript循环的替代品。
+
+jQuery还提供了一个$.each函数，不要与专门用于迭代jQuery包装集的$().each方法混淆。$.each方法实际上可以用于迭代任何旧的JavaScript数组或对象。它本质上是原生JavaScript循环的替代品。
 
 ### jQuery包装集中的元素按文档顺序返回
 
@@ -794,8 +800,6 @@ jQuery还提供了一个`$.each`函数，不要与专门用于迭代jQuery包装
 ### 确定jQuery函数使用的上下文
 
 jQuery函数在选择DOM元素时使用的默认上下文是文档元素（例如，`$('a', document)`）。这意味着如果你没有为jQuery函数（例如，`jQuery()`）提供第二个参数作为DOM查询的上下文，那么使用的默认上下文是文档元素，通常被称为`<body>`。
-
-
 
 可以使用 **context** 属性来确定 jQuery 函数执行 DOM 查询时的上下文。以下我通过两个编码示例展示如何获取 context 属性的值。
 
@@ -930,13 +934,16 @@ $('div').filter(':even');
 很明显，第二个 **alert()** 将返回 false，因为我们的包装器集合中不包含 **id** 属性值为 **i2** 的 **<div>**。**is()** 方法对于判断包装器集合是否包含特定元素非常方便。
 
 > **注意：**
+
 > 从 jQuery 1.3 开始，**is()** 方法支持所有表达式。之前，包含层级选择器（如 +、~ 和 >）的复杂表达式总是返回 **true**。
+
 > 过滤器被其他内部 jQuery 函数使用。因此，适用于那些函数的所有规则，也同样适用于此。
+
 > 一些开发者使用 **is('.class')** 来判断元素是否有特定的类。不要忘记 jQuery 已经有一个执行此操作的方法，叫做 **hasClass('class')**，它可以用于包含多个类值的元素。但说实话，**hasClass()** 只是 **is()** 方法的一个便捷包装器。
 
 ### 你可以向 jQuery 传递多个选择器表达式
 
-你可以向 jQuery 函数的第一个参数提供多个用逗号分隔的表达式：`$('expression, expression, expression')`。换句话说，你不仅限于使用单个表达式来选择元素。例如，在下面的例子中，我向 jQuery 函数传递了三个用逗号分隔的表达式。
+你可以向 jQuery 函数的第一个参数提供多个用逗号分隔的表达式：`$('expression, expression, expression')`。换句话说，你不仅限于使用单个表达式来选择元器。例如，在下面的例子中，我向 jQuery 函数传递了三个用逗号分隔的表达式。
 
 **示例：sample24.html**
 
@@ -982,6 +989,7 @@ $('div').filter(':even');
 ```
 
 > **注意：**
+
 > 如果不明显，length 属性也可以报告包装器集合中的元素数量——换句话说，就是有多少元素被传递给 jQuery 函数的表达式选中。
 
 ### 创建自定义过滤器来选择元素
@@ -1011,11 +1019,7 @@ $('div').filter(':even');
         alert($('div:positionAbsolute').length); // 提示 "2".
 ```
 
-
-
 }
-
-
 
 ### 深入理解 :nth-child() 过滤器
 
@@ -1030,7 +1034,7 @@ $('div').filter(':even');
     <ul>
         <li>1</li>
         <li>2</li>
-        <li>3</li>
+        <li>3</li
         <li>4</li>
         <li>5</li>
         <li>6</li>
@@ -1186,6 +1190,7 @@ src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 ```
 
 > **注意：**
+
 > 使用 **filter()** 时，始终要问自己是否绝对必要。例如，`$('p').filter(':not(:first):not(:last)')` 可以在不使用 **filter()** 的情况下，通过将表达式作为自定义选择器传递给 jQuery 函数来编写：`$('p:not(:first):not(:last)')`。
 
 另一方面，**find()** 方法可用于进一步查找当前选定元素的后代。可以将 **find()** 更多地视为用已经选定的元素内封装的新元素来更新或更改当前包装集。例如，下面的代码将通过使用 **find()** 将包装集从 `<p>` 元素更改为两个 `<strong>` 元素。
@@ -1209,11 +1214,13 @@ src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 ```
 
 > **注意：**
+
 > 实际上，你可以使用 `andSelf()` 将使用 `find()` 方法之前的包装集中的元素与当前元素组合起来——例如，`$('p').find('strong').andSelf()`。
 
 需要记住的概念是，`filter()` 只会减少（或过滤）包装集中当前选定的元素，而 `find()` 实际上可以创建一个全新的包装元素集。
 
 > **注意：**
+
 > `find()` 和 `filter()` 都是破坏性方法，可以通过使用 `end()` 来撤销，这将把包装集恢复到使用 `find()` 或 `filter()` 之前的状态。
 
 ### 向 `filter()` 传递函数而非表达式
@@ -1225,8 +1232,6 @@ src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 你可以创建一个自定义过滤器来完成此任务，或者你可以使用 `filter()` 方法，通过向其传递一个函数来确定元素的父级是否为 `<p>` 元素，如果不是，则在将剩余的 `<img>` 元素用 `<p>` 元素包装之前，从集合中移除该元素。
 
 在以下示例中，我选择 HTML 页面中的每个 `<img>` 元素，然后向 `filter()` 方法传递一个函数，该函数用于迭代包装集中的每个元素（使用 `this`），检查 `<img>` 元素的父元素是否为 `<p>` 元素。
-
-
 
 ### 示例：sample38.html
 
@@ -1283,11 +1288,13 @@ src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 
 ### 向上遍历 DOM
 
-你可以使用 **parent()**、**parents()** 和 **closest()** 方法轻松地向上遍历 DOM 到祖先元素。理解这些方法之间的差异至关重要。请查看下面的代码，并确保你理解这些 jQuery 遍历方法之间的区别。
+
+
+你可以使用 `parent()`、`parents()` 和 `closest()` 方法轻松地向上遍历 DOM 到祖先元素。理解这些方法之间的差异至关重要。请查看下面的代码，并确保你理解这些 jQuery 遍历方法之间的区别。
 
 ### 示例：sample40.html
 
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
 <body>
@@ -1299,8 +1306,7 @@ src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
         </div>
     </div>
 
-    <script
-src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
     <script> (function ($) {
         // 提示 "parent0" 共4次
         alert($('#start').parent().attr('id'));
@@ -1326,21 +1332,22 @@ src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 ```
 
 > 注意：
-> **closest()** 和 **parents()** 可能看起来功能相同，但 **closest()** 实际上会在其过滤中包含当前选中的元素。**closest()** 一旦找到匹配项就停止遍历，而 **parents()** 会获取所有父元素，然后根据你可选的选择器进行过滤。因此，**closest()** 最多只能返回一个元素。
+
+> `closest()` 和 `parents()` 可能看起来功能相同，但 `closest()` 实际上会在其过滤中包含当前选中的元素。`closest()` 一旦找到匹配项就停止遍历，而 `parents()` 会获取所有父元素，然后根据你可选的选择器进行过滤。因此，`closest()` 最多只能返回一个元素。
 
 ### 遍历方法接受 CSS 表达式作为可选参数
 
-CSS 表达式不仅可以传递给 jQuery 函数以选择元素，还可以传递给几个遍历方法。这可能很容易忘记，因为许多遍历方法根本不需要使用任何表达式就能工作——例如 **next()**。对于以下遍历方法，表达式是可选的，但请记住，你有提供表达式进行过滤的选项。
+CSS 表达式不仅可以传递给 jQuery 函数以选择元素，还可以传递给几个遍历方法。这可能很容易忘记，因为许多遍历方法根本不需要使用任何表达式就能工作——例如 `next()`。对于以下遍历方法，表达式是可选的，但请记住，你有提供表达式进行过滤的选项。
 
-- children('expression')
-- next('expression')
-- nextAll('expression')
-- parent('expression')
-- parents('expression')
-- prev('expression')
-- prevAll('expression')
-- siblings('expression')
-- closest('expression')
+- `children('expression')`
+- `next('expression')`
+- `nextAll('expression')`
+- `parent('expression')`
+- `parents('expression')`
+- `prev('expression')`
+- `prevAll('expression')`
+- `siblings('expression')`
+- `closest('expression')`
 
 ## 第4章 操作
 
@@ -1350,12 +1357,11 @@ CSS 表达式不仅可以传递给 jQuery 函数以选择元素，还可以传�
 
 示例：sample41.html
 
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
 <body>
-	<script
-src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 	<script> (function($){
 		alert($('<div><a></a></div>').get(0).nodeName); // 提示 "DIV"。
 		alert($('<div><a></a></div>').length); // 提示 "1"，包装集里有一个 <div>。
@@ -1367,16 +1373,15 @@ src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 
 需要注意的是，当使用 jQuery 函数创建 DOM 结构时，只有结构中的根元素会被添加到包装集中。在前面的代码示例中，只有 `<div>` 元素会是包装集中的唯一元素。
 
-一旦 HTML 结构创建完成，我们可以使用 **find()** 方法来操作其中的任何元素。
+一旦 HTML 结构创建完成，我们可以使用 `find()` 方法来操作其中的任何元素。
 
 示例：sample42.html
 
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
 <body>
-	<script
-src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 	<script>
 		(function ($) {
 			($('<div><a></a></div>')
@@ -1392,7 +1397,7 @@ src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 
 ### 示例：sample43.html
 
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
 <body>
@@ -1408,9 +1413,13 @@ src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 ```
 
 > **注意：**
+
 > 不包含属性的简单元素——例如 `$('<div></div>')`——是通过 `document.createElement` DOM 方法创建的，而所有其他情况都依赖于 `innerHTML` 属性。实际上，你可以直接将 `document.createElement` 创建的元素传递给 jQuery 函数——例如 `$(document.createElement('div'))`。
+
 > 传递给 jQuery 的 HTML 字符串不能包含在 `<div>` 元素内可能被视为无效的元素。
+
 > 传递给 jQuery 函数的 HTML 字符串必须格式良好。
+
 > 传递 jQuery HTML 时，你应该打开并关闭所有 HTML 元素。不这样做可能会导致错误，主要是在 Internet Explorer 中。为了安全起见，始终关闭 HTML 元素，避免编写简写 HTML——例如 `$(<div />)`。
 
 ### 深入理解 `index()` 方法
@@ -1419,7 +1428,7 @@ src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 
 ### 示例：sample44.html
 
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
 <body>
@@ -1440,7 +1449,7 @@ src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 
 ### 示例：sample45.html
 
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
 <body>
@@ -1463,15 +1472,13 @@ src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 </html>
 ```
 
-
-
-### 深入理解 text() 方法
+### 深入理解 `text()` 方法
 
 你可能会错误地假设 `text()` 方法只返回包装器集中第一个元素的文本节点。然而，它实际上会连接包装器集中所有元素的文本节点，然后将连接后的值作为单个字符串返回。请务必了解这一功能，否则可能会得到一些意外的结果。
 
 ### 示例：sample46.html
 
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
 <body>
@@ -1493,7 +1500,7 @@ src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 
 ### 示例：sample47.html
 
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
 <body>
@@ -1516,13 +1523,13 @@ var $p = $('p');
 
 你也可以更新从 `html()` 返回的字符串中包含的任何字符。这意味着你不仅可以更新文本，还可以通过正则表达式更新和替换 DOM 元素。
 
-### 深入理解 .contents() 方法
+### 深入理解 `.contents()` 方法
 
 `.contents()` 方法可用于查找所有子元素节点，包括包含在元素内的文本节点。然而，这里有一个注意事项。如果检索到的内容只包含文本节点，那么选择将作为一个单独的文本节点放置在包装器集中。但是，如果你检索的内容在文本节点之间包含一个或多个元素节点，那么 `.contents()` 方法将包含文本节点和元素节点。请研究下面的代码以掌握此概念。
 
 ### 示例：sample48.html
 
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
 <body>
@@ -1547,7 +1554,7 @@ var $p = $('p');
 
 ### 示例：sample49.html
 
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
 <body>
@@ -1564,13 +1571,13 @@ var $p = $('p');
 </html>
 ```
 
-### 使用 remove() 不会从包装器集中移除元素
+### 使用 `remove()` 不会从包装器集中移除元素
 
 当你使用 `remove()` 时，被移除的 DOM 结构中包含的元素仍然包含在包装器集中。你可以移除一个元素，对该元素进行操作，然后实际上将该元素放回 DOM 中，所有这些都在一个 jQuery 链中完成。
 
 ### 示例：sample50.html
 
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
 <body>
@@ -1591,11 +1598,11 @@ var $p = $('p');
 
 ### 禁用/启用表单元素
 
-使用 jQuery，你可以通过将表单元素的 disabled 属性值设置为 disabled 来轻松禁用表单元素。为此，我们只需选择一个 input，然后使用 `attr()` 方法，将 input 的 disabled 属性设置为值 disabled。
+使用 jQuery，你可以通过将表单元素的 `disabled` 属性值设置为 `disabled` 来轻松禁用表单元素。为此，我们只需选择一个 input，然后使用 `attr()` 方法，将 input 的 `disabled` 属性设置为值 `disabled`。
 
 ### 示例：sample51.html
 
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
 <body>
@@ -1609,11 +1616,11 @@ var $p = $('p');
 </html>
 ```
 
-要启用已禁用的表单元素，我们只需使用 `removeAttr()` 移除 disabled 属性，或使用 `attr()` 将 disabled 属性值设置为空。
+要启用已禁用的表单元素，我们只需使用 `removeAttr()` 移除 `disabled` 属性，或使用 `attr()` 将 `disabled` 属性值设置为空。
 
 ### 示例：sample52.html
 
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
 <body>
@@ -1633,7 +1640,7 @@ var $p = $('p');
 
 ### 示例：sample53.html
 
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
 <body>
@@ -1660,7 +1667,7 @@ var $p = $('p');
 
 ### 示例：sample54.html
 
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
 <body>
@@ -1675,11 +1682,11 @@ var $p = $('p');
 </html>
 ```
 
-要清除单选按钮或复选框，只需使用 `removeAttr()` 方法移除 checked 属性，或将 `checked` 属性值设置为空字符串。
+要清除单选按钮或复选框，只需使用 `removeAttr()` 方法移除 `checked` 属性，或将 `checked` 属性值设置为空字符串。
 
 ### 示例：sample55.html
 
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
 <body>
@@ -1694,11 +1701,11 @@ var $p = $('p');
 
 ### 选择/清除多个复选框或单选按钮
 
-你可以对多个复选框或单选按钮输入使用 jQuery 的 `val()` 来设置这些输入为选中状态。这可以通过向 `val()` 方法传递一个数组来实现，数组包含一个字符串，该字符串与复选框或单选按钮的 value 属性相对应。
+你可以对多个复选框或单选按钮输入使用 jQuery 的 `val()` 来设置这些输入为选中状态。这可以通过向 `val()` 方法传递一个数组来实现，数组包含一个字符串，该字符串与复选框或单选按钮的 `value` 属性相对应。
 
 ### 示例：sample56.html
 
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
 <body>
@@ -1719,15 +1726,13 @@ var $p = $('p');
 </html>
 ```
 
-
-
 ### 判断复选框或单选按钮是否被选中或清除
 
 我们可以通过使用 `:checked` 表单过滤器来确定复选框输入或单选按钮输入是否被选中或清除。请查看下面的代码，了解 `:checked` 过滤器的几种用法。
 
 **注意：** 如果复选框或单选按钮已经被选中，使用 `val()` 不会清除该输入元素。
 
-示例：sample57.html
+### 示例：sample57.html
 
 ```html
 <!DOCTYPE html>
@@ -1754,7 +1759,7 @@ var $p = $('p');
 
 你可以使用 `:hidden` 表单过滤器来判断表单元素是否隐藏。请查看下面的代码，了解 `:checked` 过滤器的几种用法。
 
-示例：sample58.html
+### 示例：sample58.html
 
 ```html
 <!DOCTYPE html>
@@ -1776,7 +1781,7 @@ var $p = $('p');
 
 `val()` 方法可用于设置和获取输入元素（button、checkbox、hidden、image、password、radio、reset、submit、text）的属性值。下面，我使用 `val()` 为每个输入元素设置值，然后使用 `val()` 方法弹出该值。
 
-示例：sample59.html
+### 示例：sample59.html
 
 ```html
 <!DOCTYPE html>
@@ -1823,7 +1828,7 @@ var $p = $('p');
 
 要获取 `<select>` 元素的值，再次使用 `val()` 方法来确定哪个选项被选中。在此场景中，`val()` 方法将返回所选选项的属性值。
 
-### 示例： sample60.html
+### 示例：sample60.html
 
 ```html
 <!DOCTYPE html>
@@ -1848,9 +1853,9 @@ var $p = $('p');
 
 使用 `val()` 方法，你可以通过向 `val()` 方法传递一个包含相应值的数组来设置多选元素的选定值。
 
-要获取多选元素中的选定选项，我们再次使用 `val()` 方法来检索已选定选项的数组。该数组将包含所选选项的 value 属性。
+要获取多选元素中的选定选项，我们再次使用 `val()` 方法来检索已选定选项的数组。该数组将包含所选选项的 `value` 属性。
 
-### 示例： sample61.html
+### 示例：sample61.html
 
 ```html
 <!DOCTYPE html>
@@ -1877,7 +1882,7 @@ var $p = $('p');
 
 你可以通过向 `val()` 方法传递一个文本字符串来设置 `<textarea>` 元素的文本节点内容。要获取 `<textarea>` 元素的值，我们再次使用 `val()` 方法来检索其中包含的文本。
 
-### 示例： sample62.html
+### 示例：sample62.html
 
 ```html
 <!DOCTYPE html>
@@ -1898,9 +1903,10 @@ var $p = $('p');
 ### 设置/获取按钮元素的 value 属性
 
 你可以通过向 `val()` 方法传递一个文本来设置按钮元素的 value 属性。
+
 要获取按钮元素的值，再次使用 `val()` 方法来检索文本。
 
-### 示例： sample63.html
+### 示例：sample63.html
 
 ```html
 <!DOCTYPE html>
@@ -1941,21 +1947,19 @@ $('select option:last').remove();
 $('#select option:first');
 ```
 
-
-
 ### 按类型选择表单元素
 
 可以通过元素类型选择表单元素，例如 `$('input:checkbox')`。jQuery 提供了以下用于按类型选择表单元素的表单类型过滤器。
 
-- :text
-- :password
-- :radio
-- :checkbox
-- :submit
-- :image
-- :reset
-- :file
-- :button
+- `:text`
+- `:password`
+- `:radio`
+- `:checkbox`
+- `:submit`
+- `:image`
+- `:reset`
+- `:file`
+- `:button`
 
 ### 选择所有表单元素
 
@@ -1993,16 +1997,17 @@ $('#select option:first');
 
 ## 第6章 事件
 
-### 不限于单个 **ready()** 事件
+### 不限于单个 `ready()` 事件
 
-请记住，你可以根据需要声明任意多个自定义的 **ready()** 事件。你并不限于在文档上附加单个 **.ready()** 事件。**ready()** 事件按照它们被包含的顺序执行。
+请记住，你可以根据需要声明任意多个自定义的 `ready()` 事件。你并不限于在文档上附加单个 `.ready()` 事件。**ready()** 事件按照它们被包含的顺序执行。
 
 > **注意：**
+
 传递 jQuery 函数的函数——例如 `jQuery(function(){//code here})`——是 `jQuery(document).ready()` 的快捷方式。
 
-### 使用 **bind()** 和 **unbind()** 附加/移除事件
+### 使用 `bind()` 和 `unbind()` 附加/移除事件
 
-使用 **bind()** 方法——例如 `jQuery('a').bind('click',function(){})`——你可以将以下任何标准处理程序添加到相应的 DOM 元素上。
+使用 `bind()` 方法——例如 `jQuery('a').bind('click',function(){})`——你可以将以下任何标准处理程序添加到相应的 DOM 元素上。
 
 - blur
 - focus
@@ -2028,7 +2033,7 @@ $('#select option:first');
 
 显然，根据 DOM 标准，只有特定的处理程序与特定的元素对应。除了这个标准处理程序列表外，你还可以利用 `bind()` 附加 jQuery 自定义处理程序——例如 `mouseenter` 和 `mouseleave`——以及你可能创建的任何自定义处理程序。
 
-要移除标准处理程序或自定义处理程序，我们只需将需要移除的处理程序名称或自定义处理程序名称传递给 `unbind()` 方法——例如 `jQuery('a').unbind('click')`。如果未向 `unbind()` 传递任何参数，它将移除附加到元素的所有处理程序。
+要移除标准处理程序或自定义处理程序，我们只需将需要移除的处理程序名称或自定�处理程序名称传递给 `unbind()` 方法——例如 `jQuery('a').unbind('click')`。如果未向 `unbind()` 传递任何参数，它将移除附加到元素的所有处理程序。
 
 下面的代码示例表达了刚刚讨论的这些概念。
 
@@ -2065,13 +2070,14 @@ $('#select option:first');
 ```
 
 > **注意：**
+
 jQuery 为 `bind()` 方法提供了多种快捷方式，用于处理所有标准 DOM 事件，这不包括像 `mouseenter` 和 `mouseleave` 这样的自定义 jQuery 事件。使用这些快捷方式只需将事件名称作为方法名称即可——例如 `.click()`、`.mouseout()`、`.focus()`。
 
-你可以使用 jQuery 将无限数量的处理程序附加到单个 DOM 元素。jQuery 提供了 one() 事件处理方法，方便地将一个事件绑定到 DOM 元素，该事件将执行一次然后被移除。one() 方法只是 bind() 和 unbind() 的包装器。
+你可以使用 jQuery 将无限数量的处理程序附加到单个 DOM 元素。jQuery 提供了 `one()` 事件处理方法，方便地将一个事件绑定到 DOM 元素，该事件将执行一次然后被移除。`one()` 方法只是 `bind()` 和 `unbind()` 的包装器。
 
 ### 通过短事件方法以编程方式调用特定处理程序
 
-用于将事件处理程序绑定到 DOM 元素的快捷语法——例如 `.click()`、`.mouseout()` 和 `.focus()`——也可以用于以编程方式调用处理程序。为此，只需使用快捷事件方法而不向其传递函数。理论上，这意味着我们可以将一个处理程序绑定到 DOM 元素，然后立即调用该处理程序。下面，我通过 click() 事件来演示这一点。
+用于将事件处理程序绑定到 DOM 元素的快捷语法——例如 `.click()`、`.mouseout()` 和 `.focus()`——也可以用于以编程方式调用处理程序。为此，只需使用快捷事件方法而不向其传递函数。理论上，这意味着我们可以将一个处理程序绑定到 DOM 元素，然后立即调用该处理程序。下面，我通过 `click()` 事件来演示这一点。
 
 ### 示例：sample66.html
 
@@ -2097,34 +2103,35 @@ jQuery 为 `bind()` 方法提供了多种快捷方式，用于处理所有标准
 ```
 
 > **注意：**
-也可以使用事件 trigger() 方法来调用特定的处理程序——例如 `jQuery('a').click(function(){ alert('hi') }).trigger('click')`。这同样适用于带命名空间和自定义的事件。
+
+也可以使用事件 `trigger()` 方法来调用特定的处理程序——例如 `jQuery('a').click(function(){ alert('hi') }).trigger('click')`。这同样适用于带命名空间和自定义的事件。
 
 ### jQuery 对事件对象进行标准化
 
-jQuery 根据 W3C 标准对事件对象进行标准化。这意味着当事件对象被传递给函数处理程序时，你无需担心事件对象的特定浏览器实现（例如 Internet Explorer 的 window.event）。由于 jQuery 对事件对象进行了标准化，你可以放心地使用事件对象的以下属性和方法，而无需担心浏览器差异。
+jQuery 根据 W3C 标准对事件对象进行标准化。这意味着当事件对象被传递给函数处理程序时，你无需担心事件对象的特定浏览器实现（例如 Internet Explorer 的 `window.event`）。由于 jQuery 对事件对象进行了标准化，你可以放心地使用事件对象的以下属性和方法，而无需担心浏览器差异。
 
 ### 事件对象属性
 
-- event.type
-- event.target
-- event.data
-- event.relatedTarget
-- event.currentTarget
-- event.pageX
-- event.pageY
-- event.result
-- event.timeStamp
+- `event.type`
+- `event.target`
+- `event.data`
+- `event.relatedTarget`
+- `event.currentTarget`
+- `event.pageX`
+- `event.pageY`
+- `event.result`
+- `event.timeStamp`
 
 ### 事件对象方法
 
-- event.preventDefault()
-- event.isDefaultPrevented()
-- event.stopPropagation()
-- event.isPropagationStopped()
-- event.stopImmediatePropagation()
-- event.isImmediatePropagationStopped()
+- `event.preventDefault()`
+- `event.isDefaultPrevented()`
+- `event.stopPropagation()`
+- `event.isPropagationStopped()`
+- `event.stopImmediatePropagation()`
+- `event.isImmediatePropagationStopped()`
 
-要访问标准化的 jQuery 事件对象，只需向传递给 jQuery 事件方法的匿名函数传递一个名为 "event"（或你想要的任何名称）的参数。然后，在匿名回调函数内部，使用该参数访问事件对象。下面是此概念的代码示例。
+要访问标准化的 jQuery 事件对象，只需向传递给 jQuery 事件方法的匿名函数传递一个名为 `"event"`（或你想要的任何名称）的参数。然后，在匿名回调函数内部，使用该参数访问事件对象。下面是此概念的代码示例。
 
 ### 示例：sample67.html
 
@@ -2142,7 +2149,7 @@ jQuery 根据 W3C 标准对事件对象进行标准化。这意味着当事件�
 
 ### 理解事件命名空间
 
-通常，DOM 中会有一个对象需要将多个函数绑定到单个事件处理程序上。例如，让我们看看 resize 处理程序。使用 jQuery，我们可以根据需要向 window.resize 处理程序添加任意数量的函数。但当我们需要移除其中一个函数而不是所有函数时会发生什么？如果我们使用 `$(window).unbind('resize')`，所有附加到 window.resize 处理程序的函数都将被移除。通过对处理程序进行命名空间化（例如 `resize.unique`），我们可以为特定函数分配一个唯一的钩子以便移除。
+通常，DOM 中会有一个对象需要将多个函数绑定到单个事件处理程序上。例如，让我们看看 `resize` 处理程序。使用 jQuery，我们可以根据需要向 `window.resize` 处理程序添加任意数量的函数。但当我们需要移除其中一个函数而不是所有函数时会发生什么？如果我们使用 `$(window).unbind('resize')`，所有附加到 `window.resize` 处理程序的函数都将被移除。通过对处理程序进行命名空间化（例如 `resize.unique`），我们可以为特定函数分配一个唯一的钩子以便移除。
 
 ```javascript
 $('#select option:last');
@@ -2164,16 +2171,13 @@ $('select option:eq(1)').after('<option value="">option</option>');
 $('select option:eq(3)').before('<option value="">option</option>');
 ```
 
-
-
 ### 示例：sample68.html
 
 ```html
 <!DOCTYPE html>
 <html lang="en">
 <body>
-    <script
-src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
     <script>  (function ($) {
       $(window).bind('resize', function ()
       { alert('I have no namespace'); });
@@ -2188,9 +2192,9 @@ src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 </html>
 ```
 
-在上面的代码中，我们向 resize 处理程序添加了两个函数。第二个（按文档顺序）添加的 resize 事件使用了事件命名空间，然后立即使用 unbind() 移除该事件。我这样做是为了说明第一个附加的函数并未被移除。事件命名空间使我们能够标记和移除分配给单个 DOM 元素上同一处理程序的独特函数。
+在上面的代码中，我们向 `resize` 处理程序添加了两个函数。第二个（按文档顺序）添加的 `resize` 事件使用了事件命名空间，然后立即使用 `unbind()` 移除该事件。我这样做是为了说明第一个附加的函数并未被移除。事件命名空间使我们能够标记和移除分配给单个 DOM 元素上同一处理程序的独特函数。
 
-除了移除与单个 DOM 元素和处理程序关联的特定函数外，我们还可以使用事件命名空间来专门调用（使用 trigger()）附加到 DOM 元素的特定处理程序和函数。在下面的代码中，两个 click 事件被添加到 `<a>`，然后使用命名空间，只调用其中一个。
+除了移除与单个 DOM 元素和处理程序关联的特定函数外，我们还可以使用事件命名空间来专门调用（使用 `trigger()`）附加到 DOM 元素的特定处理程序和函数。在下面的代码中，两个 `click` 事件被添加到 `<a>`，然后使用命名空间，只调用其中一个。
 
 ### 示例：sample69.html
 
@@ -2199,8 +2203,7 @@ src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 <html lang="en">
 <body>
     <a>click</a>
-    <script
-src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
     <script>  (function ($) {
       $('a').bind('click',
         function () { alert('You clicked me') });
@@ -2213,8 +2216,11 @@ src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 ```
 
 > **注意：**
+
 命名空间的深度或数量没有限制——例如 `resize.layout.headerFooterContent`。
+
 命名空间是保护、调用、移除任何插件可能需要的专属处理程序的绝佳方式。
+
 命名空间既适用于自定义事件，也适用于标准事件——例如 `click.unique` 或 `myclick.unique`。
 
 ### 理解事件委托
@@ -2239,8 +2245,7 @@ src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
         <li><a href="#">remove</a></li>
         <li><a href="#">remove</a></li>
     </ul>
-    <script
-src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
     <script>  (function ($) {
 $('ul').click(function (event) { // 将 click 处理程序附加到 <ul> 并传递事件对象。
     // event.target 是 <a>。
@@ -2260,9 +2265,9 @@ $(event.target).parent('li').remove();
 
 这里的重点是，由于可点击区域包含多个封装的元素，你必须仔细管理被点击的内容，因为你永远无法确切知道用户可能点击哪里。因此，你必须检查以确保点击发生在你预期的元素上。
 
-### 使用 live() 将事件处理程序应用于 DOM 元素（无论 DOM 是否更新）
+### 使用 `live()` 将事件处理程序应用于 DOM 元素（无论 DOM 是否更新）
 
-使用便捷的 live() 事件方法，你可以将处理程序绑定到当前网页中的 DOM 元素以及尚未添加的元素。live() 方法使用事件委托，以确保新添加/创建的 DOM 元素始终响应事件处理程序，无论 DOM 操作或动态更改如何。使用 live() 本质上是手动设置事件委托的快捷方式。例如，使用 live() 我们可以创建一个按钮，该按钮可以无限地创建另一个按钮。
+使用便捷的 `live()` 事件方法，你可以将处理程序绑定到当前网页中的 DOM 元素以及尚未添加的元素。`live()` 方法使用事件委托，以确保新添加/创建的 DOM 元素始终响应事件处理程序，无论 DOM 操作或动态更改如何。使用 `live()` 本质上是手动设置事件委托的快捷方式。例如，使用 `live()` 我们可以创建一个按钮，该按钮可以无限地创建另一个按钮。
 
 ### 示例：sample71.html
 
@@ -2271,8 +2276,7 @@ $(event.target).parent('li').remove();
 <html lang="en">
 <body>
     <button>Add another button</button>
-    <script
-        src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
     <script> (function ($) {
         $('button').live('click', function ()
 { $(this).after("<button>Add another button</button>"); }});
@@ -2288,13 +2292,16 @@ $(event.target).parent('li').remove();
 要理解的概念是，`live()` 方法可用于将事件附加到使用 AJAX 移除和添加的 DOM 元素。这样，你就可以省去在初始页面加载后重新绑定事件到新引入 DOM 的元素的步骤。
 
 > **注意：**
+
 `live()` 支持以下处理程序：`click`、`dblclick`、`mousedown`、`mouseup`、`mousemove`、`mouseover`、`mouseout`、`keydown`、`keypress`、`keyup`。
+
 `live()` 仅对选择器有效。
+
 `live()` 默认会通过在发送给 `live()` 方法的函数中使用 `return false` 来停止传播。
 
 ### 将函数添加到多个事件处理程序
 
-可以将事件 `bind()` 方法传递给多个事件处理程序。这使得将一个编写的相同函数附加到多个处理程序成为可能。在下面的代码示例中，我们附加了一个匿名回调函数到文档的 click、keypress 和 resize 事件处理程序上。
+可以将事件 `bind()` 方法传递给多个事件处理程序。这使得将一个编写的相同函数附加到多个处理程序成为可能。在下面的代码示例中，我们附加了一个匿名回调函数到文档的 `click`、`keypress` 和 `resize` 事件处理程序上。
 
 ### 示例：sample72.html
 
@@ -2311,9 +2318,9 @@ $(event.target).parent('li').remove();
 </html>
 ```
 
-### 使用 preventDefault() 取消默认浏览器行为
+### 使用 `preventDefault()` 取消默认浏览器行为
 
-当点击链接或提交表单时，浏览器将调用与这些事件关联的默认功能。例如，点击 `<a>` 链接，Web 浏览器将尝试在当前浏览器窗口中加载 `<a>` href 属性的值。要阻止浏览器执行此类型的功能，你可以使用 jQuery 规范化事件对象的 preventDefault() 方法。
+当点击链接或提交表文时，浏览器将调用与这些事件关联的默认功能。例如，点击 `<a>` 链接，Web 浏览器将尝试在当前浏览器窗口中加载 `<a>` href 属性的值。要阻止浏览器执行此类型的功能，你可以使用 jQuery 规范化事件对象的 `preventDefault()` 方法。
 
 ### 示例：sample73.html
 
@@ -2331,9 +2338,9 @@ $(event.target).parent('li').remove();
 </html>
 ```
 
-### 使用 stopPropagation() 取消事件传播
+### 使用 `stopPropagation()` 取消事件传播
 
-事件在 DOM 中传播（也称为冒泡）。当为任何给定元素触发事件处理程序时，所有祖先元素的事件处理程序也会被调用。这种默认行为有助于像事件委托这样的解决方案。要禁止这种默认的冒泡行为，你可以使用 jQuery 规范化的事件方法 stopPropagation()。
+事件在 DOM 中传播（也称为冒泡）。当为任何给定元素触发事件处理程序时，所有祖先元素的事件处理程序也会被调用。这种默认行为有助于像事件委托这样的解决方案。要禁止这种默认的冒泡行为，你可以使用 jQuery 规范化的事件方法 `stopPropagation()`。
 
 ### 示例：sample74.html
 
@@ -2362,16 +2369,15 @@ $(event.target).parent('li').remove();
 
 在上述代码示例中，附加到 `<div>` 元素的事件处理程序将不会被触发。
 
-返回 false——例如 `return false`——等同于同时使用 `preventDefault()` 和 `stopPropagation()`。
+返回 `false`——例如 `return false`——等同于同时使用 `preventDefault()` 和 `stopPropagation()`。
 
-示例：sample75.html
+### 示例：sample75.html
 
 ```html
 <!DOCTYPE html>
 <html lang="en">
 <body><span><a href="javascript:alert('You clicked me!')" class="link">click me</a></span>
-<script
-src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 	<script> $(function($){    $('span').click(function(){
 	// 为 <span> 添加点击事件。
 	window.location='http://www.jquery.com';    });
@@ -2386,21 +2392,20 @@ src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 
 如果你注释掉上述代码中的 `return false` 语句，`alert()` 将会被调用，因为默认情况下浏览器会执行 `href` 的值。同时，由于事件冒泡，页面会跳转到 jQuery.com。
 
-### 创建自定义事件并通过 trigger() 触发它们
+### 创建自定义事件并通过 `trigger()` 触发它们
 
 使用 jQuery，你可以使用 `bind()` 方法来创建自定义事件。这可以通过为 `bind()` 方法提供一个唯一的自定义事件名称来实现。
 
 现在，由于这些事件是自定义的，浏览器并不知晓，所以调用自定义事件的唯一方法是使用 jQuery 的 `trigger()` 方法以编程方式触发它们。请查看下面的代码示例，了解如何使用 `trigger()` 调用自定义事件。
 
-示例：sample76.html
+### 示例：sample76.html
 
 ```html
 <!DOCTYPE html>
 <html lang="en">
 <body>
     <div>jQuery</div>
-    <script
-src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
     <script> (function ($) {
     $('div').bind('myCustomEvent', function () {
         // 将自定义事件绑定到 <div>。
@@ -2419,7 +2424,7 @@ src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 
 默认情况下，使用 `clone()` 方法克隆 DOM 结构并不会额外克隆附加到被克隆 DOM 元素的事件。为了克隆元素及其附加的事件，你必须向 `clone()` 方法传递一个布尔值 `true`。
 
-示例：sample77.html
+### 示例：sample77.html
 
 ```html
 <!DOCTYPE html>
@@ -2427,8 +2432,7 @@ src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 <body>
     <button>Add another button</button>
     <a href="#" class="clone">Add another link</a>
-    <script
-src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
     <script> (function ($) {
     $('button').click(function () {
         var $this = $(this);
@@ -2448,16 +2452,15 @@ src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 
 ### 获取鼠标在视口中的 X 和 Y 坐标
 
-通过将 mousemove 事件附加到整个页面（document），你可以获取鼠标指针在画布上移动时的 X 和 Y 坐标。这是通过获取 jQuery 规范化事件对象的 pageY 和 pageX 属性来实现的。
+通过将 `mousemove` 事件附加到整个页面（document），你可以获取鼠标指针在画布上移动时的 X 和 Y 坐标。这是通过获取 jQuery 规范化事件对象的 `pageY` 和 `pageX` 属性来实现的。
 
-示例：sample78.html
+### 示例：sample78.html
 
 ```html
 <!DOCTYPE html>
 <html lang="en">
 <body>
-    <script
-src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
     <script> (function ($) {
 $(document).mousemove(function (e) {
         // e.pageX - 给出 X 位置。
@@ -2473,7 +2476,7 @@ $(document).mousemove(function (e) {
 
 通常需要获取鼠标指针相对于视口或整个文档之外的另一个元素的 X 和 Y 坐标。这通常用于工具提示（ToolTips），其中工具提示显示在鼠标悬停位置的相对位置。这可以通过从视口的 X 和 Y 鼠标坐标中减去相对元素的偏移量轻松实现。
 
-示例：sample79.html
+### 示例：sample79.html
 
 ```html
 <!DOCTYPE html>
@@ -2500,16 +2503,15 @@ $(document).mousemove(function (e) {
 
 ### 禁用右键上下文菜单
 
-使用 JavaScript，你可以禁用浏览器的原生右键上下文菜单。使用 jQuery 来实现这一点非常简单。我们只需取消 **contextmenu** 事件即可。
+使用 JavaScript，你可以禁用浏览器的原生右键上下文菜单。使用 jQuery 来实现这一点非常简单。我们只需取消 `contextmenu` 事件即可。
 
-示例：sample80.html
+### 示例：sample80.html
 
 ```html
 <!DOCTYPE html>
 <html lang="en">
 <body>
-    <script
-src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
     <script>  (function ($) { $(document).bind('contextmenu', function () { return false;
 }); })(jQuery); </script>
 </body>
@@ -2518,9 +2520,26 @@ src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 
 ### 滚动浏览器窗口
 
-虽然有众多用于滚动浏览器窗口的插件，但当只需要简单滚动时，实现这一点可以轻而易举。通过设置 `<html>` 和 `<body>` 元素的 **scrollTop** CSS 属性，可以控制水平或垂直滚动的位置。在下面的代码中，我使用 **animate()** 方法将水平滚动动画化到页面中的特定元素。
+虽然有众多用于滚动浏览器窗口的插件，但当只需要简单滚动时，实现这一点可以轻而易举。通过设置 `<html>` 和 `<body>` 元素的 `scrollTop` CSS 属性，可以控制水平或垂直滚动的位置。在下面的代码中，我使用 `animate()` 方法将水平滚动动画化到页面中的特定元素。
 
-示例：sample81.html
+### 示例：sample81.html
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<body>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script> (function ($) {
+        // 示例代码：使用 animate() 方法将水平滚动动画化到页面中的特定元素
+        $('html, body').animate({
+            scrollLeft: $('#targetElement').offset().left
+        }, 1000);
+    })(jQuery); </script>
+</body>
+</html>
+```
+
+
 
 ```html
 <!DOCTYPE html>
@@ -2582,8 +2601,6 @@ $(this).parent().prev().find('a').offset().top }, 1000); });
 
 基本上，附加到 **jQuery.fn** 的插件允许我们创建自己的自定义方法，类似于 API 中的任何方法。这是因为当我们把插件函数附加到 **jQuery.fn** 时，我们的函数就被包含在原型链中——**$.fn.count = function(){}**——对于使用 jQuery 函数创建的 jQuery 对象。如果这让你感到困惑，只需记住，将函数添加到 **jQuery.fn** 意味着插件函数内部的 **this** 关键字将指向 jQuery 对象本身。
 
-
-
 ### 在插件内部，**this** 是对当前 jQuery 对象的引用
 
 当你将一个插件附加到 **jQuery.fn** 对象时，在附加的插件函数内部使用的关键词 **this** 将引用当前的 jQuery 对象。
@@ -2614,6 +2631,7 @@ $(this).parent().prev().find('a').offset().top }, 1000); });
 ```
 
 > **注意：**
+
 通过将插件添加到 **jQuery.fn** 对象，我们本质上是在说我们的插件希望使用 jQuery 函数来选择一个上下文（DOM 元素）。如果你的插件不需要特定的上下文（换句话说，一组需要在其上操作的 DOM 元素），你可能不需要将此插件附加到 `$.fn`。将其添加为 jQuery 命名空间中的实用函数可能更有意义。
 
 ### 示例： sample84.html
@@ -2636,6 +2654,7 @@ $(this).parent().prev().find('a').offset().top }, 1000); });
 </body>
 </html>
 ```
+
 至关重要的是，你需要完全理解插件函数中关键词 **this** 所指代的内容。
 
 ### 使用 **each()** 遍历 jQuery 对象，并使用 **this** 关键词提供对象中每个元素的引用
@@ -2672,6 +2691,7 @@ $(this).parent().prev().find('a').offset().top }, 1000); });
 </body>
 </html>
 ```
+
 如果你想让插件采用隐式迭代，使用 `each()` 函数至关重要。
 
 ### 插件返回 jQuery 对象，以便 jQuery 方法或其他插件可以在使用插件后进行链式调用
@@ -2708,6 +2728,7 @@ $(this).parent().prev().find('a').offset().top }, 1000); });
 ```
 
 > **注意：**
+
 可以通过简单地不返回 jQuery 对象来使插件成为一个破坏性方法。
 
 ### 默认插件选项
@@ -2747,7 +2768,7 @@ $(this).parent().prev().find('a').offset().top }, 1000); });
 
 ### 自定义插件选项
 
-通常，默认插件选项可以用自定义选项覆盖。在下面的代码中，我将一个 `customOptions` 对象作为参数传递给插件函数。此对象与 `defaultOptions` 对象组合以创建一个单一的 `options` 对象。我们使用 jQuery 实用方法 `extend()` 将多个对象组合成一个对象。`extend()` 方法提供了用新属性覆盖对象的完美工具。有了这段代码，插件现在可以在调用时进行自定义。在示例中，我们向 `count` 插件传递了一个自定义数字 (500)，用作计数的起始点。此自定义选项覆盖了默认选项 (0)。
+通常，默认插件选项可以用自定选项覆盖。在下面的代码中，我将一个 `customOptions` 对象作为参数传递给插件函数。此对象与 `defaultOptions` 对象组合以创建一个单一的 `options` 对象。我们使用 jQuery 实用方法 `extend()` 将多个对象组合成一个对象。`extend()` 方法提供了用新属性覆盖对象的完美工具。有了这段代码，插件现在可以在调用时进行自定义。在示例中，我们向 `count` 插件传递了一个自定义数字 (500)，用作计数的起始点。此自定义选项覆盖了默认选项 (0)。
 
 ### 示例： sample88.html
 
@@ -2797,8 +2818,6 @@ $(this).parent().prev().find('a').offset().top }, 1000); });
     <script>  (function ($) {
         $.fn.count = function (customOptions) {
 ```
-
-
 
 ```javascript
 var options = $.extend({}, $.fn.count.defaultOptions, customOptions);
@@ -2953,6 +2972,7 @@ src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 从代码中移除 **stop()** 方法，然后将鼠标在元素上多次悬停，以查看鬼影动画的发生。在页面中持续将鼠标悬停在元素上会导致动画堆积，这通常不是期望的结果。
 
 **注意：**
+
 此外，不仅可以通过向 **stop()** 方法传递参数 `true` 来停止选定元素队列中的当前动画，还可以停止整个队列。这将有效地停止所有排队的动画，无论是活动还是非活动的。
 
 ### 使用 :animated 判断元素是否正在动画
@@ -3000,25 +3020,36 @@ src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 <body>
 ```
 
-
-
 ### 点我（隐藏动画）
 
 <div>点我（隐藏动画）</div>
+
 <div>点我（无动画隐藏）</div>
+
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+
 <script>
+
 (function ($) {
+
     // 带动画隐藏。
+
     $('div:first').click(function () { $(this).hide(1000) });
+
     // 无动画隐藏。
+
     $('div:last').click(function () { $(this).hide() });
+
 })(jQuery);
+
 </script>
+
 </body>
+
 </html>
 
 > **注意：**
+
 > 当用于 CSS `display` 值为 `inline` 的元素时，jQuery 的 `hide()`、`show()`、`toggle()`、`slideUp()`、`slideDown()`、`slideToggle()` 方法在动画期间会将 `display` 改为 `block`。
 
 ### 理解顺序和非顺序动画
@@ -3079,10 +3110,15 @@ src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 使用此方法时，你需要了解以下内容。
 
 -   只支持接受数值的属性。换句话说，你不能动画化例如 **backgroundColor** 属性的值（至少在不使用[插件](plugin)的情况下不能）。同样，接受多个值的属性（如 **backgroundPosition**）也不能被动画化。
+
 -   你可以在适用的情况下使用 em 和 % 来动画化 CSS 属性。
+
 -   可以使用属性值前的 "+=" 或 "-=" 来指定相对动画。例如，这将相对于其当前位置正向或负向移动一个元素。
+
 -   如果你指定动画持续时间为 0，动画将立即将元素设置为其最终状态。
+
 -   作为快捷方式，如果传递 **toggle** 值，动画将从其当前位置反转并动画化到该终点。
+
 -   通过单个 **animate()** 方法设置的所有 CSS 属性将同时动画化。
 
 ### 理解 jQuery 淡入淡出方法
@@ -3090,7 +3126,9 @@ src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 使用 fadeIn()、fadeOut() 和 fadeTo() 方法时，需要明确三个概念。
 
 -   与其他效果方法不同，淡入淡出方法仅调整元素的透明度。使用这些效果方法时，假设被淡入淡出的任何元素已经具有高度和宽度。
+
 -   淡入淡出动画将从元素的当前透明度开始淡入淡出。
+
 -   使用 fadeOut() 方法将从元素的当前透明度开始淡出，一旦 100% 淡出，它会将元素的 CSS display 属性更改为 "none"。
 
 下面的代码说明了上述每一点。
@@ -3128,14 +3166,19 @@ jQuery ajax() 函数是 XMLHttpRequests（又称 AJAX）可用的最低级别抽
 这些快捷方法是：
 
 -   load()
+
 -   get()
+
 -   getJSON()
+
 -   getScript()
+
 -   post()
 
 需要记住的要点是，虽然快捷方式有时很方便，但它们都在底层使用了 ajax()。并且，当你想要 jQuery 在 AJAX 方面提供的所有功能和自定义选项时，那么你应该直接使用 ajax() 方法。
 
 > **注意：**
+
 > 默认情况下，ajax() 和 load() AJAX 函数都使用 GET HTTP 协议。
 
 ### jQuery 支持跨域 JSONP
@@ -3174,18 +3217,17 @@ http://api.flickr.com/services/feeds/photos_public.gne?tags=resig&tagmode=all&fo
 ```
 
 > **注意：**
+
 > 请务必检查你所使用的服务的 API，以获取回调的正确用法。例如，Flickr 使用名称 **jsoncallback=?**，而 Yahoo! 和 Digg 使用名称 **callback=?**。
 
 ### 阻止浏览器缓存 XHR 请求
 
-进行 XHR 请求时，Internet Explorer 会缓存响应。如果响应包含具有较长保质期的静态内容，缓存可能是件好事。然而，如果请求的内容是动态的，可能每秒都在变化，你将希望确保请求不被浏览器缓存。一个可能的解决方案是在 URL 末尾附加一个唯一的查询字符串值。这将确保对于每个请求，浏览器都请求一个唯一的 URL。
+进行 XHR 请请求时，Internet Explorer 会缓存响应。如果响应包含具有较长保质期的静态内容，缓存可能是件好事。然而，如果请求的内容是动态的，可能每秒都在变化，你将希望确保请求不被浏览器缓存。一个可能的解决方案是在 URL 末尾附加一个唯一的查询字符串值。这将确保对于每个请求，浏览器都请求一个唯一的 URL。
 
 ```javascript
 // 在 URL 末尾添加唯一的查询字符串。
 url:'some?nocache='+(new Date()).getTime()
 ```
-
-
 
 另一种更全局性的解决方案是，默认设置所有AJAX请求都包含我们刚才讨论的无缓存逻辑。为此，可以使用 **ajaxSetup** 函数在全局范围内关闭缓存。
 

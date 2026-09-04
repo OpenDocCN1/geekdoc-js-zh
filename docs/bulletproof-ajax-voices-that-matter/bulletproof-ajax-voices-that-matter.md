@@ -1,12 +1,7 @@
-#  Bulletproof Ajax (Voices That Matter)
 
-Ajax 高级指南（ Voices That Matter）
+# Bulletproof Ajax（Voices That Matter）
 
-
-
-
-
-
+Ajax 高级指南（Voices That Matter）
 
 致 Jessica
 
@@ -28,9 +23,7 @@ Ajax 是一种难以精准定义的技术。我们用于构建网站的大多数
 
 太多的 Ajax 应用程序构建得像纸牌屋一样，完全依赖于浏览器中恰好匹配的技术栈。不支持所需技术的浏览器会被拒之门外，其用户也被拒之门外。为了避免这种情况，你需要使用稳健的 Ajax 来创建灵活的应用程序。
 
-我创建了一个配套网站 (http://bulletproofajax.com/)，你可以在那里下载并尝试本书中使用的所有示例 (http://bulletproofajax.com/code/)。如果你想跟踪 JavaScript 和 Ajax 的最新进展，请访问我的 DOM 脚本博客 http://domscripting.com/blog/。
-
-
+我创建了一个配套网站（`http://bulletproofajax.com/`），你可以在那里下载并尝试本书中使用的所有示例（`http://bulletproofajax.com/code/`）。如果你想跟踪 JavaScript 和 Ajax 的最新进展，请访问我的 DOM 脚本博客 `http://domscripting.com/blog/`。
 
 ## 致谢
 
@@ -68,13 +61,13 @@ Ajax 属于这样一类词汇——就像 Excelsior 和 Excalibur 一样——�
 
 ### 杰西斯·詹姆斯·加勒特的传奇
 
-杰西斯·詹姆斯·加勒特是一位信息架构师、作家，也是旧金山公司 Adaptive Path 的创始合伙人。2005 年 2 月，他在 Adaptive Path 网站上发表了一篇题为*《Ajax：一种全新的 Web 应用方式》*的文章（http://adaptivepath.com/publications/essays/archives/000385.php）。
+杰西斯·詹姆斯·加勒特是一位信息架构师、作家，也是旧金山公司 Adaptive Path 的创始合伙人。2005 年 2 月，他在 Adaptive Path 网站上发表了一篇题为*《Ajax：一种全新的 Web 应用方式》*的文章（`http://adaptivepath.com/publications/essays/archives/000385.php`）。
 
 ![](img/a49921737ab5f27c06f222d93fc0719d_12_0.png)
 
 在这篇文章中，加勒特创造了*Ajax* 这个术语，用来描述一种新型 Web 应用所使用的技术。Google Suggest 和 Google Maps 已经证明，基于浏览器的工具能够提供通常只有桌面应用才具备的交互性和响应速度。但在此之前，还没有一个统一的词来概括让这些应用如此出色的技术。
 
-当这篇开创性的文章最初发表在 Adaptive Path 网站上时，*AJAX* 是用全大写字母书写的。它原本是一个首字母缩略词，代表"Asynchronous JavaScript and XML"（异步 JavaScript 和 XML）。虽然这些词的首字母恰好拼成了我们最喜爱的特洛伊勇士的酷名，但它们并不能有效地描述所涉及的技术。
+当这篇开创性的文章最初发表在 Adaptive Path 网站上时，*AJAX* 是用全大写字母书写的。它原本是一个首字母缩略词，代表“Asynchronous JavaScript and XML”（异步 JavaScript 和 XML）。虽然这些词的首字母恰好拼成了我们最喜爱的特洛伊勇士的酷名，但它们并不能有效地描述所涉及的技术。
 
 诚然，大多数新一代 Web 应用都是异步的。也就是说，交互在后台进行，不会阻塞浏览器。但正如我们稍后将看到的，这并非强制性的。指定同步交互也非常容易。
 
@@ -82,7 +75,7 @@ Ajax 属于这样一类词汇——就像 Excelsior 和 Excalibur 一样——�
 
 杰西斯·詹姆斯·加勒特后来更新了他的文章，明确指出 *Ajax* 并非首字母缩略词。
 
-虽然 *Ajax* 作为首字母缩略词并不合适，但它是一个将一组技术浓缩在一个词中的绝佳方式。但这并没有阻止一些硬核程序员的不满。"这没什么新鲜的，"他们叫嚷道，"我们多年来一直在做这件事，只不过叫它远程脚本（remote scripting）。Ajax 不过是个炒作术语罢了。"
+虽然 *Ajax* 作为首字母缩略词并不合适，但它是一个将一组技术浓缩在一个词中的绝佳方式。但这并没有阻止一些硬核程序员的不满。“这没什么新鲜的，”他们叫嚷道，“我们多年来一直在做这件事，只不过叫它远程脚本（remote scripting）。Ajax 不过是个炒作术语罢了。”
 
 虽然像 *remote scripting* 这样的极客术语永远不可能像特洛伊勇士的名字那样酷，但这些牢骚里确实有几分道理。Ajax 所使用的各项技术没有哪项是特别新的。尽管如此，这并不能成为彻底否定这个术语的理由。
 
@@ -96,7 +89,7 @@ Ajax 属于这样一类词汇——就像 Excelsior 和 Excalibur 一样——�
 
 就在原文发表仅三个月后，Adaptive Path 和 O'Reilly Media 在旧金山组织了一次 Ajax 峰会。开发者和设计师齐聚一堂，展示他们正在做的工作，描述 Ajax 如何改变了他们的工作方式。
 
-会后，与会者德里克·波瓦泽克这样描述 Ajax："如果传统的 Web 是写信，那么 Ajax 就是即时通讯"（http://www.powazek.com/2005/05/000520.html）。
+会后，与会者德里克·波瓦泽克这样描述 Ajax：“如果传统的 Web 是写信，那么 Ajax 就是即时通讯”（`http://www.powazek.com/2005/05/000520.html`）。
 
 在传统网站上，浏览器向服务器请求整个页面。然后，用户点击链接或提交表单，此时浏览器向服务器发送一个新请求，服务器再返回另一个页面。
 
@@ -114,127 +107,125 @@ Ajax 方法论摒弃了这种基于页面的模型。当用户与页面交互（
 
 这是我对 Ajax 的简化定义：一种无需刷新整个页面就能与 Web 服务器通信的方式。
 
-这个定义可能引发两种截然不同的反应。你可能会耸耸肩说："这有什么大不了的？" 也可能会瞪大眼睛惊呼："太不可思议了！这是一个全新的 Web 范式！"
+这个定义可能引发两种截然不同的反应。你可能会耸耸肩说：“这有什么大不了的？”也可能会瞪大眼睛惊呼：“太不可思议了！这是一个全新的 Web 范式！”
 
 Ajax 的真相介于两者之间。它确实是一项令人兴奋的技术。仅刷新网页的一部分来获取服务器信息的能力，可以产生非常好的效果。另一方面，Ajax 只是一个工具，它本身并不能创造出良好的用户体验。内容仍然为王。
 
-
-
 ## OPTIONS
 
-根据我简单的定义，许多技术都属于Ajax的范畴。
+根据我简单的定义，许多技术都属于 Ajax 的范畴。
 
 ## Flash
 
-Adobe Flash影片现在能够与Web服务器进行异步通信。这意味着你无需刷新页面就能更新Flash影片的内容。这听起来就像Ajax。
+Adobe Flash 影片现在能够与 Web 服务器进行异步通信。这意味着你无需刷新页面就能更新 Flash 影片的内容。这听起来就像 Ajax。
 
-Adobe Flex框架赋予了开发者更强大的能力。Flash现在已成为一种可行的技术，可用于交付丰富、响应迅速的Web应用程序。（详细讲解如何构建Flash应用程序需要一整本书的篇幅，这部分内容将留给其他作者。）
+Adobe Flex 框架赋予了开发者更强大的能力。Flash 现在已成为一种可行的技术，可用于交付丰富、响应迅速的 Web 应用程序。（详细讲解如何构建 Flash 应用程序需要一整本书的篇幅，这部分内容将留给其他作者。）
 
 ## Java applets
 
-Java applets是用Java编写的小程序，不要与JavaScript混淆。与Flash影片类似，这些程序可以嵌入到网页中。它们在加载后也能与服务器通信。
+Java applets 是用 Java 编写的小程序，不要与 JavaScript 混淆。与 Flash 影片类似，这些程序可以嵌入到网页中。它们在加载后也能与服务器通信。
 
-这些applets的速度和响应能力根据最终用户机器的配置差异巨大。Java applets从未真正流行起来。
+这些 applets 的速度和响应能力根据最终用户机器的配置差异巨大。Java applets 从未真正流行起来。
 
 ## Frames
 
-还记得frames吗？它们现在用得不多了，主要因为其糟糕的可用性体验。
+还记得 frames 吗？它们现在用得不多了，主要因为其糟糕的可用性体验。
 
-如果你使用frameset构建一个网页，你可以只更新其中一个frame，而无需更新页面中的所有frame。从技术上讲，根据我的定义，这就是Ajax。
+如果你使用 frameset 构建一个网页，你可以只更新其中一个 frame，而无需更新页面中的所有 frame。从技术上讲，根据我的定义，这就是 Ajax。
 
-我并非认真建议使用frames就等同于构建Ajax应用程序，但两者之间确实存在许多相似之处。正如我们稍后将看到的，frames引起的许多可用性问题在Ajax应用中重新出现：例如，书签问题和浏览器返回按钮的意外行为。
+我并非认真建议使用 frames 就等同于构建 Ajax 应用程序，但两者之间确实存在许多相似之处。正如我们稍后将看到的，frames 引起的许多可用性问题在 Ajax 应用中重新出现：例如，书签问题和浏览器返回按钮的意外行为。
 
 ## Hidden iframe
 
-使用内联框架（iframe）比使用frameset前进了一步。iframe也可以用作与Web服务器通信的秘密通道。如果一个网页包含一个极小、几乎不可见的iframe，其源内容可以持续更新。使用JavaScript，父页面可以从更新的iframe中收集信息。
+使用内联框架（iframe）比使用 frameset 前进了一步。iframe 也可以用作与 Web 服务器通信的秘密通道。如果一个网页包含一个极小、几乎不可见的 iframe，其源内容可以持续更新。使用 JavaScript，父页面可以从更新的 iframe 中收集信息。
 
-Google Maps使用一个隐藏的iframe与服务器通信。这是一个巧妙的解决方案，尽管确实感觉有点取巧。
+Google Maps 使用一个隐藏的 iframe 与服务器通信。这是一个巧妙的解决方案，尽管确实感觉有点取巧。
 
 # XMLHttpRequest
 
-`XMLHttpRequest`对象是JavaScript的一个扩展，允许网页与服务器通信。它非常适合创建Ajax应用程序。Jesse James Garrett在创造*Ajax*这个词时，心中所想的正是`XMLHttpRequest`。
+`XMLHttpRequest` 对象是 JavaScript 的一个扩展，允许网页与服务器通信。它非常适合创建 Ajax 应用程序。Jesse James Garrett 在创造 *Ajax* 这个词时，心中所想的正是 `XMLHttpRequest`。
 
-`XMLHttpRequest`最大的问题是它念起来太长了。尽管其中有个*X*，但它永远不可能作为一个流行语火起来。*Ajax*这个词更简短、更响亮，通常与使用`XMLHttpRequest`对象同义。这就是本书将要探讨的那种Ajax。
+`XMLHttpRequest` 最大的问题是它念起来太长了。尽管其中有个 *X*，但它永远不可能作为一个流行语火起来。*Ajax* 这个词更简短、更响亮，通常与使用 `XMLHttpRequest` 对象同义。这就是本书将要探讨的那种 Ajax。
 
-## Ajax工具包
+## Ajax 工具包
 
-`XMLHttpRequest`对象是驱动Ajax的引擎，但它并非孤立存在。正如Jesse James Garrett在他最初的文章中所说：“Ajax不是一种技术。它实际上是多种技术的集合，每一种都独立发展，然后以强大的新方式结合在一起。”
+`XMLHttpRequest` 对象是驱动 Ajax 的引擎，但它并非孤立存在。正如 Jesse James Garrett 在他最初的文章中所说：“Ajax 不是一种技术。它实际上是多种技术的集合，每一种都独立发展，然后以强大的新方式结合在一起。”
 
 ## 任何服务器端语言
 
 很有可能，你希望你的应用程序能对访问者的输入做出智能响应。服务器需要能够决定向浏览器发送哪些具体信息。为此，你需要在服务器上使用某种编程语言。
 
-服务器端语言的选择数不胜数：PHP、Java、Ruby、Python、Perl等等。对于Ajax来说，这些语言没有更适合或更不适合之分。在服务器端，Ajax是语言无关的。选择最适合你或你的编程团队的语言即可。
+服务器端语言的选择数不胜数：PHP、Java、Ruby、Python、Perl 等等。对于 Ajax 来说，这些语言没有更适合或更不适合之分。在服务器端，Ajax 是语言无关的。选择最适合你或你的编程团队的语言即可。
 
 ## 标题为“XML?”
 
-你可能会误以为XML是Ajax应用的关键组件。`XMLHttpRequest`这个术语本身，以及其冗长性，都具有一定的误导性。
+你可能会误以为 XML 是 Ajax 应用的关键组件。`XMLHttpRequest` 这个术语本身，以及其冗长性，都具有一定的误导性。
 
-XML，即eXtensible Markup Language（可扩展标记语言），是一种描述数据的格式。Ajax应用需要某种结构化格式来将信息从服务器传递到客户端。但XML只是众多选择之一。正如我们稍后将看到的，还有其他组织数据的方式，对Ajax来说同样可行。
+XML，即 eXtensible Markup Language（可扩展标记语言），是一种描述数据的格式。Ajax 应用需要某种结构化格式来将信息从服务器传递到客户端。但 XML 只是众多选择之一。正如我们稍后将看到的，还有其他组织数据的方式，对 Ajax 来说同样可行。
 
 ## 合法的标记
 
-完全有可能构建一个不使用XML的Ajax应用。但另一种标记语言对于任何网站（无论是否使用Ajax）都至关重要。
+完全有可能构建一个不使用 XML 的 Ajax 应用。但另一种标记语言对于任何网站（无论是否使用 Ajax）都至关重要。
 
-超文本标记语言（HTML）是万维网的通用语言。它用于为Web上的内容赋予语义结构。在内容本身之后，标记是创建网页最重要和最有价值的工具。
+超文本标记语言（HTML）是万维网的通用语言。它用于为 Web 上的内容赋予语义结构。在内容本身之后，标记是创建网页最重要和最有价值的工具。
 
 在“严肃”的程序员中存在一种令人担忧的趋势，他们将标记视为一种底层技术，应该从开发者那里抽象出来。我完全不同意这种看法。如果结果是用粗心生成的标记提供的，那么服务器端编程再聪明或再快也无关紧要。
 
-格式良好的标记是在客户端操作文档（这正是Ajax所做的）的前提条件。如果文档格式不良，处理过程将变得不必要地复杂且不可预测。
+格式良好的标记是在客户端操作文档（这正是 Ajax 所做的）的前提条件。如果文档格式不良，处理过程将变得不必要地复杂且不可预测。
 
 当元素的嵌套正确时，标记就是格式良好的。标签必须按照其打开顺序的相反顺序关闭。例如，以下标记格式不良：
 
-```
+```html
 <p>I told you to <strong>validate!</p></strong>
 ```
 
-结束`</p>`标签出现在结束`</strong>`标签之前。但开始`<strong>`标签出现在开始`<p>`标签之后。结束标签应该按以下顺序出现：
+结束 `</p>` 标签出现在结束 `</strong>` 标签之前。但开始 `<strong>` 标签出现在开始 `<p>` 标签之后。结束标签应该按以下顺序出现：
 
-```
+```html
 <p>I told you to <strong>validate!</strong></p>
 ```
 
-strong元素现在正确地嵌套在p元素内部了。
+`strong` 元素现在正确地嵌套在 `p` 元素内部了。
 
-确保标记格式良好的最简单方法是确保它是合法的。检查标记合法性的最佳工具来自万维网联盟（W3C）（http://validator.w3.org/）。
+确保标记格式良好的最简单方法是确保它是合法的。检查标记合法性的最佳工具来自万维网联盟（W3C）（`http://validator.w3.org/`）。
 
-如果一个标记文档正确遵守了W3C指定的准则，就被认为是合法的。你可以通过在文档顶部包含文档类型声明（doctype）来确切指定你使用的规范。
+如果一个标记文档正确遵守了 W3C 指定的准则，就被认为是合法的。你可以通过在文档顶部包含文档类型声明（doctype）来确切指定你使用的规范。
 
-有许多不同的规范可以用来验证。这些规范分为两种不同的方言：HTML和可扩展超文本标记语言（XHTML）。
+有许多不同的规范可以用来验证。这些规范分为两种不同的方言：HTML 和可扩展超文本标记语言（XHTML）。
 
-HTML允许你更宽松一些。有些元素不需要结束标签，并且标签可以大写或小写。
+HTML 允许你更宽松一些。有些元素不需要结束标签，并且标签可以大写或小写。
 
-XHTML只是用XML重新表述的HTML。这意味着它更严格一些。所有标签必须小写，并且每个元素都必须关闭。对于像换行和图像这样的独立元素，这是通过在元素末尾加上一个斜杠来实现的：`<br />`, `<img />`。
+XHTML 只是用 XML 重新表述的 HTML。这意味着它更严格一些。所有标签必须小写，并且每个元素都必须关闭。对于像换行和图像这样的独立元素，这是通过在元素末尾加上一个斜杠来实现的：`<br />`、`<img />`。
 
-使用HTML还是XHTML来标记你的页面，完全由你决定。一些狂热者认为XHTML只能以XML MIME类型提供服务。然而，由于某些浏览器无法处理该MIME类型，他们也得出结论，应该完全避免使用XHTML。
+使用 HTML 还是 XHTML 来标记你的页面，完全由你决定。一些狂热者认为 XHTML 只能以 XML MIME 类型提供服务。然而，由于某些浏览器无法处理该 MIME 类型，他们也得出结论，应该完全避免使用 XHTML。
 
-就个人而言，我喜欢XHTML的严格性。所有元素都必须关闭这一事实确保了文档更容易处理。当然，在HTML中关闭每个元素也并无不妥。但使用XHTML doctype，验证器更有可能捕获我标记中的无意错误。
+就个人而言，我喜欢 XHTML 的严格性。所有元素都必须关闭这一事实确保了文档更容易处理。当然，在 HTML 中关闭每个元素也并无不妥。但使用 XHTML doctype，验证器更有可能捕获我标记中的无意错误。
 
 ## 级联样式表
 
-HTML和XHTML非常适合精确描述你的内容是什么。它们允许你说：“这是一个段落”或“这是一个标题”。但它们不应该（也不应该）描述内容如何呈现。实现这一点的技术是级联样式表（CSS）。
+HTML 和 XHTML 非常适合精确描述你的内容是什么。它们允许你说：“这是一个段落”或“这是一个标题”。但它们不应该（也不应该）描述内容如何呈现。实现这一点的技术是级联样式表（CSS）。
 
-使用CSS选择器，你可以选择文档中你希望设置样式的元素。使用元素选择器，你可以为元素的所有出现实例设置样式。ID选择器让你能定位文档中具有唯一标识的元素。`class`选择器找到所有用特定`class`标记的元素。所有这些选择器可以相互组合，以实现精细的呈现控制。
+使用 CSS 选择器，你可以选择文档中你希望设置样式的元素。使用元素选择器，你可以为元素的所有出现实例设置样式。ID 选择器让你能定位文档中具有唯一标识的元素。`class` 选择器找到所有用特定 `class` 标记的元素。所有这些选择器可以相互组合，以实现精细的呈现控制。
 
 一旦选定了元素，就可以使用声明来设置样式。这些声明让你指定字体大小、颜色和位置。
 
-样式通常在外部样式表文件（或多个文件）中声明，然后从标记文档的`head`元素中链接引用。
+样式通常在外部样式表文件（或多个文件）中声明，然后从标记文档的 `head` 元素中链接引用。
 
-大多数Ajax应用不仅更新浏览器中文档的内容，还会更新样式。为了更新文档的结构或呈现，你需要一种客户端编程语言，能够与浏览器、文档及其样式进行交互。这种语言就是JavaScript。
+大多数 Ajax 应用不仅更新浏览器中文档的内容，还会更新样式。为了更新文档的结构或呈现，你需要一种客户端编程语言，能够与浏览器、文档及其样式进行交互。这种语言就是 JavaScript。
 
-## DOM脚本
+## DOM 脚本
 
-大多数网页设计师熟悉CSS、HTML和XHTML。这些W3C批准的技术被称为Web标准。但还有其他不太流行的标准。
+大多数网页设计师熟悉 CSS、HTML 和 XHTML。这些 W3C 批准的技术被称为 Web 标准。但还有其他不太流行的标准。
 
-正如CSS可用于指定文档的呈现方式一样，JavaScript和文档对象模型（DOM）的结合可用于指定文档中元素的行为。
-
-DOM是一个描述文档结构的标准。过去，相互竞争的Web浏览器实现了它们自己的专有模型。控制文档行为的做法被称为动态HTML（DHTML）——这是一个令人困惑的术语，因为它听起来像是HTML的另一种变体。如今，*DOM脚本*一词被用来描述基于标准的行为控制。DOM脚本是Ajax不可或缺的一部分。
+正如 CSS 可用于指定文档的呈现方式一样，JavaScript 和文档对象模型（DOM）的结合可用于指定文档中元素的行为。
 
 
+
+DOM 是一个描述文档结构的标准。过去，相互竞争的 Web 浏览器实现了它们自己的专有模型。控制文档行为的做法被称为动态 HTML（DHTML）——这是一个令人困惑的术语，因为它听起来像是 HTML 的另一种变体。如今，DOM 脚本一词被用来描述基于标准的行为控制。DOM 脚本是 Ajax 不可或缺的一部分。
 
 ## 总结
 
-在本章中，我探讨了 *Ajax* 一词的历史，并尝试定义它的含义。在某些方面，解释 Ajax “不是什么”反而更容易：
+在本章中，我探讨了 Ajax 一词的历史，并尝试定义它的含义。在某些方面，解释 Ajax“不是什么”反而更容易：
 
 - Ajax 不是一项特定的技术。
 - Ajax 不是一个缩写词。
@@ -243,7 +234,7 @@ DOM是一个描述文档结构的标准。过去，相互竞争的Web浏览器�
 
 - HTML 或 XHTML
 - CSS
-- DOM 脚本编写 (DOM Scripting)
+- DOM 脚本编写（DOM Scripting）
 - `XMLHttpRequest`
 
 `XMLHttpRequest` 对象是将服务器与浏览器绑定在一起的纽带。在详细探讨这个神秘对象之前，重要的是要对构建 Ajax 的 Web 标准有良好的基础认知。
@@ -256,7 +247,7 @@ DOM是一个描述文档结构的标准。过去，相互竞争的Web浏览器�
 
 ![](img/a49921737ab5f27c06f222d93fc0719d_23_0.png)
 
-### 回到基础
+## 回到基础
 
 Web 设计师工具箱中最重要的技术是 HTML。如果没有标记语言，你无法给内容赋予任何结构。一旦标记结构就绪，就可以使用其他技术（如 CSS 和 JavaScript）对其进行增强。
 
@@ -270,43 +261,43 @@ HTML 是一种标记语言，而 JavaScript 则是一种编程语言。它不指
 
 与 CSS 类似，JavaScript 可以嵌入在 Web 页面中，通常位于 `head` 元素内。使用 JavaScript 最高效的方式（与 CSS 一样）是将其保存在外部文件中。然后，Web 页面可以使用文档 `head` 中的 `<script>` 标签来引用这些文件：
 
-```
+```html
 <script type="text/javascript" src="/path/to/file.js"></script>
 ```
 
 JavaScript 通常是以过程化方式编写的。这意味着你按照希望发生的顺序指定你想要发生的事情。结果就是一个脚本，非常像戏剧或电影的剧本。
 
-#### 语句 (STATEMENTS)
+### 语句（STATEMENTS）
 
-单条 JavaScript 指令被称为一个 *语句* (statement)。一组语句序列被称为一个 *脚本* (script)。语句应该始终以分号结尾：
+单条 JavaScript 指令被称为一个语句（statement）。一组语句序列被称为一个脚本（script）。语句应该始终以分号结尾：
 
-```
+```javascript
 statement one; statement two;
 ```
 
 如果一个语句没有以分号结尾，但以换行符结尾，JavaScript 会自动插入分号。它将该语句处理为以分号结尾：
 
-```
+```javascript
 statement one
 statement two
 ```
 
 这可能会导致一些糟糕的编程习惯。最好的做法是始终用分号结束语句，即使该语句以换行符结尾：
 
-```
+```javascript
 statement one;
 statement two;
 ```
 
-### 注释 (Comments)
+### 注释（Comments）
 
 JavaScript 中的大多数语句是由机器读取的。为了让语句被成功执行，它必须按照编程语言的语法编写。
 
-*注释* (comment) 是一种特殊的语句，它是面向人类而非机器的。注释是会被解释脚本的机器忽略的语句，但它为阅读脚本的人提供了有价值的信息。注释可以作为程序员的有用提醒，并更清晰地解释脚本试图实现的目标。
+注释（comment）是一种特殊的语句，它是面向人类而非机器的。注释是会被解释脚本的机器忽略的语句，但它为阅读脚本的人提供了有价值的信息。注释可以作为程序员的有用提醒，并更清晰地解释脚本试图实现的目标。
 
 在 JavaScript 中有多种指定注释的方法。如果你想在单行中写注释，只需在该行开头加上两个斜杠：
 
-```
+```javascript
 // this is a comment
 ```
 
@@ -314,7 +305,7 @@ JavaScript 中的大多数语句是由机器读取的。为了让语句被成功
 
 如果你想将多行组合在一起作为一个注释块，可以用一个斜杠后跟一个星号开始块，并用一个星号后跟一个斜杠结束块：
 
-```
+```javascript
 /* This comment block
 spans more than one line */
 ```
@@ -323,33 +314,33 @@ spans more than one line */
 
 与此同时，请记住每条注释都会稍微增加页面的权重和下载时间。不要过度使用注释。你需要根据判断来决定某些代码是自解释的，还是需要额外解释。
 
-### 变量 (VARIABLES)
+### 变量（VARIABLES）
 
-*变量* (Variables) 是任何脚本的构建块。变量是一个指向某个值的标签。即使值发生了变化，它的标签依然保持不变。这使得变量在存储、操作和检索数据时非常有用。
+变量（Variables）是任何脚本的构建块。变量是一个指向某个值的标签。即使值发生了变化，它的标签依然保持不变。这使得变量在存储、操作和检索数据时非常有用。
 
-创建变量被称为 *声明* (declaration)。在 JavaScript 中，你使用 `var` 关键字来声明变量：
+创建变量被称为声明（declaration）。在 JavaScript 中，你使用 `var` 关键字来声明变量：
 
-```
+```javascript
 var variablename;
 ```
 
 变量名可以由字母、数字（但不能以数字开头）、下划线和某些其他字符组成。变量名中不允许出现空格。为了解决这个问题，你可以使用下划线使变量名更具可读性：
 
-```
+```javascript
 var variable_name;
 ```
 
-不过，你不能使用连字符（-）；它会被解释为减号。
+不过，你不能使用连字符（`-`）；它会被解释为减号。
 
-变量命名中另一种提高可读性的方法是 *驼峰命名法* (camelCasing)。我在这里写这个词的方式就是一个自描述的例子。在原本小写的名称中使用孤立的大写字母有助于区分单词：
+变量命名中另一种提高可读性的方法是驼峰命名法（camelCasing）。我在这里写这个词的方式就是一个自描述的例子。在原本小写的名称中使用孤立的大写字母有助于区分单词：
 
-```
+```javascript
 var variableName;
 ```
 
 变量名是区分大小写的，因此以下所有示例都将代表不同的变量：
 
-```
+```javascript
 var variablename;
 var VARIABLENAME;
 var variableNAME;
@@ -358,57 +349,55 @@ var Variablename;
 
 JavaScript 有一些保留字不能用作变量名。其中大多数是语言本身使用的关键字：`if`、`else`、`for`、`while`、`var` 等。
 
-### 数据类型 (DATA TYPES)
+### 数据类型（DATA TYPES）
 
-当变量首次被声明时，其值为 `null`。它不包含任何数据。为变量提供一个值被称为 *赋值* (assignment)。你可以使用等号将值赋给变量。变量的值可以是字符串、数字、布尔值或数组。这些被称为 *数据类型* (data types)。
+当变量首次被声明时，其值为 `null`。它不包含任何数据。为变量提供一个值被称为赋值（assignment）。你可以使用等号将值赋给变量。变量的值可以是字符串、数字、布尔值或数组。这些被称为数据类型（data types）。
 
-一些编程语言要求在声明变量时，必须同时声明它将持有的数据类型。在这些语言中，你之后不能改变主意。如果你指定一个变量将包含字符串，你就不能用它来包含数字。这被称为 *强类型* (strong typing)。
+一些编程语言要求在声明变量时，必须同时声明它将持有的数据类型。在这些语言中，你之后不能改变主意。如果你指定一个变量将包含字符串，你就不能用它来包含数字。这被称为强类型（strong typing）。
 
 JavaScript 是一种弱类型语言。你不需要指定变量将包含什么样的值。你也可以在任何阶段更改变量的数据类型。
 
-### 字符串 (Strings)
+### 字符串（Strings）
 
-*字符串* (string) 是一组字符的集合。字符串中没有禁用字符。字符串可以包含字母、数字、空格和任何其他字符。
+字符串（string）是一组字符的集合。字符串中没有禁用字符。字符串可以包含字母、数字、空格和任何其他字符。
 
 字符串必须包含在引号中。你可以使用单引号或双引号，但在每个字符串内部必须保持一致。如果你用单引号开始一个字符串，就必须用单引号结束：
 
-```
+```javascript
 var name;
 name = 'Jeremy Keith';
 ```
 
 你可以在一个语句中声明变量并为其赋值：
 
-```
+```javascript
 var name = 'Jeremy Keith';
 ```
 
 多个声明和赋值也可以通过使用逗号分隔变量，合并到一个 `var` 语句中：
 
-```
+```javascript
 var first_name = 'Jeremy', last_name = 'Keith';
 ```
 
-因为引号用于指示字符串的开始和结束，你可能会认为它们是字符串中的禁用字符。事实上，你可以在字符串中使用它们，但你需要明确说明它们应该被视为字符串本身的一部分。这被称为 *转义* (escaping)。在 JavaScript 中，反斜杠用于转义字符：
+因为引号用于指示字符串的开始和结束，你可能会认为它们是字符串中的禁用字符。事实上，你可以在字符串中使用它们，但你需要明确说明它们应该被视为字符串本身的一部分。这被称为转义（escaping）。在 JavaScript 中，反斜杠用于转义字符：
 
-```
+```javascript
 var remark = 'That\'s my name';
 ```
 
 在这种情况下，可以通过使用双引号来避免这个问题：
 
-```
+```javascript
 var remark = "That's my name";
 ```
 
 但如果你使用双引号包含字符串，字符串内的任何双引号都需要用反斜杠转义。以下这两个语句在功能上是完全相同的：
 
-```
+```javascript
 var remark = "He is 5'10\" tall";
 var remark = 'He is 5\'10" tall';
 ```
-
-
 
 使用单引号还是双引号完全取决于个人喜好。为了保持代码一致性，最好在整个脚本中坚持使用其中一种，不要来回切换。
 
@@ -416,19 +405,19 @@ var remark = 'He is 5\'10" tall';
 
 如果你想让一个变量包含数字，不需要用单引号、双引号或其他任何符号将值括起来。只需将数字赋值给变量即可：
 
-```
+```javascript
 var year = 2006;
 ```
 
 数字不一定是正数。你可以使用负数：
 
-```
+```javascript
 var score = -50;
 ```
 
 数字也不仅限于整数：
 
-```
+```javascript
 var average = 7.59;
 ```
 
@@ -436,7 +425,7 @@ var average = 7.59;
 
 虽然字符串和数字有无限多种可能的值，但包含布尔值的变量只有两种可能的值：`true` 或 `false`：
 
-```
+```javascript
 var happy = true;
 var rich = false;
 ```
@@ -455,50 +444,50 @@ var rich = false;
 
 你可以使用 `1` 和 `0` 作为 `true` 和 `false` 的替代值：
 
-```
+```javascript
 var happy = 1;
 var rich = 0;
 ```
 
 ## 数组
 
-到目前为止你看到的所有数据类型都称为*标量*。如果一个变量是标量，它只能保存一个值。还有另一种数据类型叫做*数组*。与标量不同，一个数组可以在一个变量中保存多个值。数组中保存的值称为*成员*。
+到目前为止你看到的所有数据类型都称为标量。如果一个变量是标量，它只能保存一个值。还有另一种数据类型叫做数组。与标量不同，一个数组可以在一个变量中保存多个值。数组中保存的值称为成员。
 
 你可以使用 `new` 关键字声明一个数组：
 
-```
+```javascript
 var fruit = new Array();
 ```
 
 或者，你可以使用方括号作为简写：
 
-```
+```javascript
 var fruit = [];
 ```
 
 在数组中，你可以在一条语句中结合声明和赋值，就像在标量中一样。要将成员赋值给数组，请用逗号分隔每个成员：
 
-```
+```javascript
 var fruit = ["apple", "orange", "banana"];
 ```
 
 数组的成员可以是字符串、数字、布尔值或其他变量。你可以在数组中混合使用数据类型：
 
-```
+```javascript
 var details = ["Jeremy Keith", 35, true];
 ```
 
 因为数组本身也是一种变量，所以你可以在数组中存储数组：
 
-```
+```javascript
 var fruit = ["apple", "orange", "banana"];
 var meat = ["beef", "chicken", "lamb"];
 var food = [fruit, meat];
 ```
 
-当你结合数组的声明和赋值时，每个成员会自动获得一个*索引*。索引是一个数字，表示成员在数组中的位置。如果你在声明数组后赋值，则需要为每个成员提供索引：
+当你结合数组的声明和赋值时，每个成员会自动获得一个索引。索引是一个数字，表示成员在数组中的位置。如果你在声明数组后赋值，则需要为每个成员提供索引：
 
-```
+```javascript
 var fruit = [];
 fruit[0] = "apple";
 fruit[1] = "orange";
@@ -509,8 +498,8 @@ fruit[2] = "banana";
 
 要找出数组中有多少个成员，你可以查询数组的 `length` 属性。下面的 `alert` 语句会弹出一个对话框，显示 `fruit` 数组的 `length`：
 
-```
-alert ( fruit.length );
+```javascript
+alert(fruit.length);
 ```
 
 结果为 3。
@@ -521,34 +510,34 @@ alert ( fruit.length );
 
 `fruit` 数组有三个成员。它的 `length` 是 3。第一个成员是 `fruit[0]`，第二个成员是 `fruit[1]`，第三个成员是 `fruit[2]`。没有 `fruit[3]`，即使数组的 `length` 是 3。
 
-还有另一种数组，叫做*关联数组*或*哈希*。在关联数组中，字符串被用作索引，而不是数字：
+还有另一种数组，叫做关联数组或哈希。在关联数组中，字符串被用作索引，而不是数字：
 
-```
+```javascript
 var details = [];
 details["name"] = "Jeremy Keith";
-details["age"] = 35
+details["age"] = 35;
 details["married"] = true;
 ```
 
 然后可以使用索引字符串来检索成员的值：
 
-```
-alert ( details["age"] );
+```javascript
+alert(details["age"]);
 ```
 
 这将返回值 35。
 
 ## 运算符
 
-将值存储在变量中很方便，但编程语言需要做的不止这些。为了让 JavaScript 实现你的目标，它需要执行你设定的任务。最简单的任务称为*操作*。
+将值存储在变量中很方便，但编程语言需要做的不止这些。为了让 JavaScript 实现你的目标，它需要执行你设定的任务。最简单的任务称为操作。
 
 ### 算术
 
-将两个数字相加是一个操作。从一个数字中减去另一个数字也是一个操作。这些例子，以及乘法和除法，都是*数学操作*。
+将两个数字相加是一个操作。从一个数字中减去另一个数字也是一个操作。这些例子，以及乘法和除法，都是数学操作。
 
-每个数学操作都有一个对应的*运算符*。运算符是表示应执行何种操作的符号。加法的运算符是加号。减法的运算符是减号。乘法的运算符是星号，除法的运算符是斜杠。
+每个数学操作都有一个对应的运算符。运算符是表示应执行何种操作的符号。加法的运算符是加号。减法的运算符是减号。乘法的运算符是星号，除法的运算符是斜杠。
 
-```
+```javascript
 var addition = 5 + 3;
 var subtraction = 15 - 7;
 var multiplication = 4 * 2;
@@ -557,7 +546,7 @@ var division = 24 / 3;
 
 最有用的是，你可以对变量执行操作：
 
-```
+```javascript
 var year = 2006;
 var age = 35;
 var birth = year - age;
@@ -565,35 +554,35 @@ var birth = year - age;
 
 有些操作可以用简写指定。要将一个数字减一，可以使用两个减号：
 
-```
+```javascript
 var price = 10;
 price--;
 ```
 
 `price` 的值现在是 9。这等同于写下面的语句：
 
-```
+```javascript
 price = price - 1;
 ```
 
 要将一个值加一，可以使用两个加号：
 
-```
+```javascript
 var year = 2006;
 year++;
 ```
 
 加法运算符（加号）具有双重作用。除了将数字相加，它还可以将字符串连接在一起：
 
-```
+```javascript
 var adjective = "bullet" + "proof";
 ```
 
 变量 `adjective` 现在包含字符串 "bulletproof" 作为其值。
 
-像这样将字符串连接在一起称为*连接*。除了连接字符串，你还可以将字符串与数字连接。数字会自动转换为字符串，因此结果始终是字符串：
+像这样将字符串连接在一起称为连接。除了连接字符串，你还可以将字符串与数字连接。数字会自动转换为字符串，因此结果始终是字符串：
 
-```
+```javascript
 var letters = "thx";
 var numbers = 1138;
 var result = letters + numbers;
@@ -603,35 +592,35 @@ var result = letters + numbers;
 
 ### 比较
 
-并非所有操作都是数学的。有时你会想要比较一个值与另一个值。*比较运算符*允许你这样做。
+并非所有操作都是数学的。有时你会想要比较一个值与另一个值。比较运算符允许你这样做。
 
-使用比较运算符，你可以找出一个值是否大于另一个值，或者一个值是否小于另一个值，或者两个值是否相等。这通过大于号 (`>`)、小于号 (`<`) 或两个等号 (`==`) 这些符号来实现。记住，单个等号用于赋值，而不是比较。
+使用比较运算符，你可以找出一个值是否大于另一个值，或者一个值是否小于另一个值，或者两个值是否相等。这通过大于号（`>`）、小于号（`<`）或两个等号（`==`）这些符号来实现。记住，单个等号用于赋值，而不是比较。
 
-### if
+### `if`
 
 比较的结果始终是一个布尔值，`true` 或 `false`。比较需要包含在一个条件控制结构中。最常见的控制结构是 `if` 语句。
 
-```
-if ( x < y ) {
+```javascript
+if (x < y) {
   // do something
 }
 ```
 
 在 `if` 关键字之后，括号内写一个比较。如果比较的结果为 `true`，则花括号中的所有内容都将被执行。
 
-```
-if ( x == y ) {
-  alert ( x+" has the same value as "+y );
+```javascript
+if (x == y) {
+  alert(x + " has the same value as " + y);
 }
 ```
 
 你可以用 `else` 子句扩展 `if` 语句。如果 `if` 语句中的比较结果为 `false`，则 `else` 子句之后的内容将被执行：
 
-```
-if ( x > y ) {
-  alert ( x+" is greater than "+y );
+```javascript
+if (x > y) {
+  alert(x + " is greater than " + y);
 } else {
-  alert ( x+" is not greater than "+y );
+  alert(x + " is not greater than " + y);
 }
 ```
 
@@ -639,9 +628,9 @@ if ( x > y ) {
 
 如果你想找出两个值是否不相等，你可以使用感叹号否定相等运算符；`!=` 与 `==` 相反。
 
-```
-if ( x != y ) {
-  alert( x+" is not equal to "+y );
+```javascript
+if (x != y) {
+  alert(x + " is not equal to " + y);
 }
 ```
 
@@ -651,7 +640,9 @@ if ( x != y ) {
 
 如果这听起来像天书，也许这个例子会更清楚：
 
-```
+
+
+```javascript
 var x = false;
 var y = 0;
 if ( x == y ) {
@@ -661,21 +652,19 @@ if ( x == y ) {
 
 变量 `x` 的值为 `false`。变量 `y` 的值为 `0`（零）。零是表示 `false` 的另一种方式，因此比较结果为 `true`。
 
-要找出值是否不仅相等，而且全等，可以使用全等运算符，即三个等号 (`===`)。
-
-
+要找出值是否不仅相等，而且全等，可以使用全等运算符，即三个等号（`===`）。
 
 ## 等号
 
 为了回顾，根据使用数量的不同，等号具有不同的含义：
 
--   - 使用 `=` 进行赋值。
+- 使用 `=` 进行赋值。
 - 使用 `==` 来判断两个值是否相等。
 - 使用 `===` 来判断两个值是否相同。
 
 “不相同于”的运算符是 `!==`。
 
-```
+```javascript
 var x = false;
 var y = 0;
 if ( x !== y ) {
@@ -685,43 +674,43 @@ if ( x !== y ) {
 
 ## 逻辑
 
-使用感叹号来否定一个比较是逻辑操作的一个例子。感叹号是 *非* 运算符。还有另外两个逻辑运算符：*或* 和 *与*。
+使用感叹号来否定一个比较是逻辑操作的一个例子。感叹号是*非*运算符。还有另外两个逻辑运算符：*或*和*与*。
 
-*或* 运算符允许你扩大控制结构的范围，例如 `if` 语句。当条件使用 *或* 运算符组合时，只要满足任何一个条件，就会返回 true。*或* 运算符由两个竖线符号表示：
+*或*运算符允许你扩大控制结构的范围，例如 `if` 语句。当条件使用*或*运算符组合时，只要满足任何一个条件，就会返回 `true`。*或*运算符由两个竖线符号表示：
 
-```
+```javascript
 if ( x < y || x > y ) {
   alert ( x+" is less than or greater than "+y );
 }
 ```
 
-*与* 运算符，由两个 `&` 符号（`&&`）表示，会缩小控制结构的范围。当条件使用 *与* 运算符连接时，所有条件必须同时满足，控制结构才会返回 true：
+*与*运算符由两个 `&` 符号（`&&`）表示，会缩小控制结构的范围。当条件使用*与*运算符连接时，所有条件必须同时满足，控制结构才会返回 `true`：
 
-```
+```javascript
 if ( x < y && x > y ) {
   alert ( "This is impossible!" );
 }
 ```
 
-无论括号内连接了多少个条件，`if` 语句只能返回 true 或 false。
+无论括号内连接了多少个条件，`if` 语句只能返回 `true` 或 `false`。
 
 ## 循环
 
-`if` 语句是条件控制结构的一个例子。其他控制结构用于重复执行同一段代码。这些被称为 *循环*。
+`if` 语句是条件控制结构的一个例子。其他控制结构用于重复执行同一段代码。这些被称为*循环*。
 
-## while
+### while
 
-`while` 语句看起来很像 `if` 语句。不同之处在于，只要条件计算结果为 true，花括号内的语句或语句就会被执行：
+`while` 语句看起来很像 `if` 语句。不同之处在于，只要条件计算结果为 `true`，花括号内的语句或语句就会被执行：
 
-```
+```javascript
 while ( x < y ) {
   // do something
 }
 ```
 
-重要的是，花括号内必须有一些操作来改变条件，使其最终计算结果为 false。否则，循环将永远进行下去。下面的例子中，`alert` 语句将循环执行五次：
+重要的是，花括号内必须有一些操作来改变条件，使其最终计算结果为 `false`。否则，循环将永远进行下去。下面的例子中，`alert` 语句将循环执行五次：
 
-```
+```javascript
 var i = 0;
 while ( i < 5 ) {
   alert ( x );
@@ -729,29 +718,29 @@ while ( i < 5 ) {
 }
 ```
 
-如果测试条件在第一次执行时就计算结果为 false，那么花括号内的语句或语句将永远不会被执行：
+如果测试条件在第一次执行时就计算结果为 `false`，那么花括号内的语句或语句将永远不会被执行：
 
-```
+```javascript
 var i = 5;
 while ( i < 5 ) {
   alert ( "You will never see this message." );
 }
 ```
 
-## do...while
+### do...while
 
 `do...while` 控制结构与 `while` 循环非常相似。不同之处在于，花括号内的语句或语句至少会被执行一次：
 
-```
+```javascript
 var i = 5;
 do {
   alert ( "You will see this message once." );
 } while ( i < 5 );
 ```
 
-循环执行一次，然后测试条件被评估。如果测试条件计算结果为 true，循环将再次执行：
+循环执行一次，然后测试条件被评估。如果测试条件计算结果为 `true`，循环将再次执行：
 
-```
+```javascript
 var i = 0;
 do {
   alert ( i );
@@ -759,13 +748,13 @@ do {
 } while ( i < 5 );
 ```
 
-## for
+### for
 
 在我目前展示的循环中，我都是在循环开始前初始化一个变量。循环本身有一个使用该变量的测试条件。在循环内部，该变量的值被修改，以确保循环不会永远执行。
 
 在 `for` 循环中，这三个语句——初始化语句、测试条件和修改语句——都包含在括号中，并用分号分隔：
 
-```
+```javascript
 for ( var i = 0 ; i < 5 ; i++ ) {
   alert ( i );
 }
@@ -773,22 +762,22 @@ for ( var i = 0 ; i < 5 ; i++ ) {
 
 `for` 循环对于遍历数组中的所有元素特别有用：
 
-```
+```javascript
 var fruit = ["apple", "orange", "banana"];
 for ( var i = 0 ; i < fruit.length ; i++ ) {
   alert ( fruit[i] );
 }
 ```
 
-在初始化语句中，我声明了一个名为 `i` 的变量，并将其赋值为 0（零）。测试条件将此值与数组的长度进行比较。只要 `i` 小于数组的长度，循环就会执行。最后，`i` 的值递增 1。循环执行了三次：即 fruit 数组的长度。
+在初始化语句中，我声明了一个名为 `i` 的变量，并将其赋值为 0（零）。测试条件将此值与数组的长度进行比较。只要 `i` 小于数组的长度，循环就会执行。最后，`i` 的值递增 1。循环执行了三次：即 `fruit` 数组的长度。
 
 ## 函数
 
-*函数* 是一个自包含的语句块。函数非常擅长容纳可重用的代码。
+*函数*是一个自包含的语句块。函数非常擅长容纳可重用的代码。
 
 你可以使用 `function` 关键字后跟你想要创建的函数名来声明一个函数：
 
-```
+```javascript
 function myFunction() {
 // do something
 }
@@ -796,15 +785,15 @@ function myFunction() {
 
 之后，你可以这样执行该函数：
 
-```
+```javascript
 myFunction();
 ```
 
-括号用于接收 *参数*。参数是你可以传递给函数的值。在函数内部，它们的作用就像变量一样。
+括号用于接收*参数*。参数是你可以传递给函数的值。在函数内部，它们的作用就像变量一样。
 
 创建函数时，你可以在以逗号分隔的列表中指定它接受多少个参数。下面是一个接受两个参数的函数的例子：
 
-```
+```javascript
 function multiply(x,y) {
   var result = x * y;
   return result;
@@ -813,13 +802,13 @@ function multiply(x,y) {
 
 `multiply` 函数接受参数 `x` 和 `y`，并将它们相乘。除了接受值之外，该函数还在最后使用 `return` 语句返回一个值。函数不一定需要返回值，但如果它返回了，你可以将函数的结果赋值给一个变量：
 
-```
+```javascript
 var days_old = multiply (35, 365);
 ```
 
 函数实际上是一种变量。假设你有一个像这样声明的函数：
 
-```
+```javascript
 function shout() {
   alert( "Hey!" );
 }
@@ -827,7 +816,7 @@ function shout() {
 
 你可以使用 `var` 语句来达到相同的效果：
 
-```
+```javascript
 var shout = function() {
   alert( "Hey!" );
 };
@@ -835,25 +824,25 @@ var shout = function() {
 
 请注意，因为这是一个长的赋值语句，它以分号结尾。函数的执行方式仍然相同：
 
-```
+```javascript
 shout();
 ```
 
 如果你想在不执行函数的情况下引用它，就像对待任何其他变量一样处理它，不要包含括号：
 
-```
+```javascript
 var annoy = shout;
 ```
 
 现在变量 `annoy` 是对函数 `shout` 的引用。变量 `annoy` 有效地是 `shout` 的同义词，并且可以以相同的方式执行：
 
-```
+```javascript
 annoy();
 ```
 
 如果你在将函数赋值给变量时包含括号，JavaScript 会假设你想将函数的结果赋值给该变量。在这里，它不是将对函数 `shout` 的引用赋值给变量 `annoy`，而是立即执行 `shout` 函数：
 
-```
+```javascript
 var annoy = shout();
 ```
 
@@ -861,7 +850,7 @@ var annoy = shout();
 
 假设我将 `shout` 函数重写为接受一个参数 `message`，这是一个将在 `alert` 语句中输出的字符串：
 
-```
+```javascript
 function shout(message) {
     alert( message );
 }
@@ -869,7 +858,7 @@ function shout(message) {
 
 现在我希望变量 `annoy` 存储对该函数的引用，并为 `message` 参数指定一个特定的值。这将不起作用：
 
-```
+```javascript
 var annoy = shout( "Hey!" );
 ```
 
@@ -877,27 +866,27 @@ var annoy = shout( "Hey!" );
 
 解决方案是将 `shout` 函数包装在一个空函数中：
 
-```
+```javascript
 var annoy = function() {
     shout( "Hey!" );
 };
 ```
 
-这被称为 *匿名函数*。正如你稍后将看到的，匿名函数对于将函数分配给事件处理程序非常有用。
+这被称为*匿名函数*。正如你稍后将看到的，匿名函数对于将函数分配给事件处理程序非常有用。
 
 ## 作用域
 
-如果你在函数外部声明一个变量，它是一个 *全局变量*。这意味着它可以在任何地方使用，甚至在函数内部。
+如果你在函数外部声明一个变量，它是一个*全局变量*。这意味着它可以在任何地方使用，甚至在函数内部。
 
-*局部变量* 在函数内部声明。它不能在声明它的函数外部访问。
+*局部变量*在函数内部声明。它不能在声明它的函数外部访问。
 
 乍一看，全局变量似乎更有用，因为它们可以在任何地方使用。在实践中，全局变量引起的问题比它们解决的问题多。很容易在不相关的函数中意外地更改全局变量的值。局部变量更容易跟踪，因为它们被限制在函数内。理想情况下，函数应该是自包含的，因此尽可能使用局部变量是有意义的。
 
-当我们讨论变量可以在哪里使用时，我们讨论的是变量 *作用域*。在函数内声明的变量具有局部作用域。在函数外声明的变量具有全局作用域。
+当我们讨论变量可以在哪里使用时，我们讨论的是变量*作用域*。在函数内声明的变量具有局部作用域。在函数外声明的变量具有全局作用域。
 
 如果你再次查看 `multiply` 函数，你会看到其中唯一的变量 `result` 是在函数内部显式声明的，所以它的作用域是局部的：
 
-```
+```javascript
 function multiply(x, y) {
   var result = x * y;
   return result;
@@ -906,7 +895,7 @@ function multiply(x, y) {
 
 假设我没有使用 `var` 语句：
 
-```
+```javascript
 function multiply(x, y) {
   result = x * y;
   return result;
@@ -917,22 +906,20 @@ function multiply(x, y) {
 
 这可能导致问题。假设我之前在函数外部声明了一个名为 `result` 的变量。我想用它来存储一个值以供以后检索：
 
-```
+```javascript
 var result = 50;
 ```
 
-
-
 接下来，我使用 `multiply` 函数：
 
-```
+```javascript
 var days_old = multiply(35,365);
 alert ( days_old );
 ```
 
 这将输出 12775，这是正确的。但现在请看，如果我输出 `result` 的值会发生什么：
 
-```
+```javascript
 alert ( result );
 ```
 
@@ -940,7 +927,7 @@ alert ( result );
 
 如果我在 `multiply` 函数中使用局部变量，本可以避免这个问题：
 
-```
+```javascript
 function multiply(x,y) {
   var result = x * y;
   return result;
@@ -961,19 +948,19 @@ alert ( result );
 
 方法是属于对象的函数。方法可以像函数一样接受参数。要执行一个方法，必须在其前面加上它所属对象的名称和一个点：
 
-```
+```javascript
 object.method();
 ```
 
 属性使用相同的点表示法来访问：
 
-```
+```javascript
 object.property;
 ```
 
 你已经见过这种表示法在实际中使用了。每次访问数组的 `length` 时，你都是在引用 `Array` 对象的 `length` 属性：
 
-```
+```javascript
 array.length;
 ```
 
@@ -983,7 +970,7 @@ array.length;
 
 每次你创建一个字符串变量时，实际上是在创建一个 `String` 对象的实例。你可以对任何字符串调用无数的方法。例如，`toUpperCase` 方法返回大写的字符串：
 
-```
+```javascript
 var message = "hey!";
 alert ( message.toUpperCase() );
 ```
@@ -992,7 +979,7 @@ alert ( message.toUpperCase() );
 
 字符串和数组是*原生对象*的例子。它们是核心 JavaScript 语言的一部分。JavaScript 还提供了一个 `Math` 对象和一个 `Date` 对象。所有这些对象都带有预设的方法和属性，对于执行常见任务非常有用。例如，`Math` 对象提供了一个 `round` 方法，可用于四舍五入到最接近的整数：
 
-```
+```javascript
 var num = 3.14
 alert ( Math.round(num) );
 ```
@@ -1005,18 +992,18 @@ alert ( Math.round(num) );
 
 首先，创建一个新的对象*类*。类是创建对象的模板。类的创建就像函数一样。
 
-```
+```javascript
 var Car = function() {
 };
 ```
 
-使用 `this` 关键字，你可以为这个类创建属性和方法。关键字 `this` 是 "当前对象" 的缩写：
+使用 `this` 关键字，你可以为这个类创建属性和方法。关键字 `this` 是“当前对象”的缩写：
 
-```
+```javascript
 var Car = function() {
     this.wheels = 4;
     this.start = function() {
-        alert( "Vroom!");
+        alert( "Vroom!" );
     };
 };
 ```
@@ -1025,22 +1012,23 @@ var Car = function() {
 
 要从 `Car` 类创建一个新对象，使用 `new` 关键字：
 
-```
+```javascript
 var mercedes = new Car();
 ```
 
 你可以这样调用 `start` 方法：
 
-```
+```javascript
 mercedes.start();
 ```
 
 第一条语句创建了一个名为 `mercedes` 的 `Car` 类的新实例。
+
 第二条语句执行该对象的 `start` 方法。
 
 同样，你可以使用点表示法来访问 `wheels` 属性：
 
-```
+```javascript
 alert ( mercedes.wheels );
 ```
 
@@ -1060,26 +1048,26 @@ Web 浏览器为 JavaScript 提供的最基本的宿主对象是 `window` 对象
 
 假设你有一个 ID 为 `example` 的 `div` 元素：
 
-```
+```html
 <div id="example">
 </div>
 ```
 
 Netscape Navigator 4 允许你使用此语法在 JavaScript 中访问该元素：
 
-```
+```javascript
 var mydiv = document.layers["example"];
 ```
 
 而 Internet Explorer 4 则坚持使用这个：
 
-```
+```javascript
 var mydiv = document.all["example"];
 ```
 
 两条语句实现相同的结果。为了让代码在浏览器间工作，开发人员不得不使用 `if` 语句来分叉他们的代码：
 
-```
+```javascript
 if (document.all) {
   // 为 IE 做一些事情
 } else if (document.layers) {
@@ -1093,19 +1081,19 @@ if (document.all) {
 
 W3C DOM 超越了任何专有模型。它允许访问文档的任何部分，无论是元素、元素内的文本片段，还是元素的属性。它也不限于网页。任何支持 DOM 的语言都可以使用相同的方法来解析任何类型的标记文档。
 
-DOM 提供了许多访问文档各个组件的方法。这些方法被称为 *getters（获取器）*。
+DOM 提供了许多访问文档各个组件的方法。这些方法被称为*getters（获取器）*。
 
 ### getElementById
 
 要使用 DOM 访问 ID 为 `"example"` 的 `div`，你可以使用 `document` 对象的 `getElementById` 方法：
 
-```
+```javascript
 var mydiv = document.getElementById("example");
 ```
 
 这类似于 CSS 中的 ID 选择器：
 
-```
+```css
 #mydiv {
 }
 ```
@@ -1116,14 +1104,14 @@ var mydiv = document.getElementById("example");
 
 CSS 和 DOM 脚本之间的相似性并不止于 `getElementById`。CSS 使用元素选择器来获取文档中所有具有特定标签名的元素。以下就是 CSS 如何获取文档中所有段落元素的方式：
 
-```
+```css
 p {
 }
 ```
 
 DOM 通过 `getElementsByTagName` 提供了一个等效的方法：
 
-```
+```javascript
 var paragraphs = document.getElementsByTagName("p");
 ```
 
@@ -1131,13 +1119,13 @@ var paragraphs = document.getElementsByTagName("p");
 
 变量 `paragraphs` 现在包含了文档中所有 `p` 元素的集合。你可以像处理数组一样对待这个集合。通过 `length` 属性，你可以查明文档中有多少个段落：
 
-```
+```javascript
 alert ( paragraphs.length );
 ```
 
 你也可以使用 `for` 循环来遍历所有段落：
 
-```
+```javascript
 for ( var i=0; i < paragraphs.length; i++ ) {
     // 对 paragraph[i] 做些操作
 }
@@ -1145,14 +1133,14 @@ for ( var i=0; i < paragraphs.length; i++ ) {
 
 CSS 允许你组合选择器。你可以选中 ID 为 `example` 的元素内的所有段落元素：
 
-```
+```css
 #example p {
 }
 ```
 
 你也可以通过 DOM 来实现这一点：
 
-```
+```javascript
 document.getElementById("example").getElementsByTagName("p")
 ```
 
@@ -1162,31 +1150,31 @@ CSS 允许你为元素应用样式。这就是为什么所有选择器都引用�
 
 假设你用 `title` 属性标记了一个段落：
 
-```
+```html
 <p id="intro" title="introductory message">
 </p>
 ```
 
 使用 `getAttribute` 方法，你可以检索这个属性的值：
 
-```
+```javascript
 var introduction = document.getElementById("intro");
 var title_text = introduction.getAttribute("title");
 ```
 
-变量 `title_text` 现在包含了字符串 "introductory message"。
+变量 `title_text` 现在包含了字符串 `"introductory message"`。
 
 ## NODES
 
 当你使用像 `getElementById`、`getElementsByTagName` 或 `getAttribute` 这样的方法时，你就是在访问文档中的 `节点`。术语 `节点` 通常用于描述网络中的连接点。你可以把网页看作是一个由相互连接的节点组成的网络。
 
-有三种基本类型的节点构成了文档：*元素节点*、*文本节点*和*属性节点*。文本节点和属性节点包含了网页的内容。元素节点是用于构建该内容的基石。
+有三种基本类型的节点构成了文档：元素节点、文本节点和属性节点。文本节点和属性节点包含了网页的内容。元素节点是用于构建该内容的基石。
 
 文档中的每个节点都包含在另一个节点中。这意味着文档中相互连接的节点网络具有非常直接的结构：它是一个节点树。更具体地说，它类似于一个家谱。
 
 看看这个简单的 XHTML 文档：
 
-```
+```html
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html>
@@ -1216,7 +1204,7 @@ DOM 使用家谱术语来描述节点之间的关系。`html` 元素是 `head` �
 
 节点的 `parentNode` 属性将返回对一个元素节点的引用。只有元素节点才能成为父节点。
 
-```
+```javascript
 var introduction = document.getElementById("intro");
 var container = introduction.parentNode;
 ```
@@ -1235,7 +1223,7 @@ var container = introduction.parentNode;
 
 你可以通过在不同的浏览器中测试这段代码来亲自验证这一点：
 
-```
+```javascript
 var introduction = document.getElementById("intro");
 var container = introduction.parentNode;
 var children = container.childNodes;
@@ -1244,13 +1232,13 @@ alert ( children.length );
 
 大多数时候，你可能对获取父节点包含的元素感兴趣。在这种情况下，`childNodes` 属性显得多余，因为它也返回文本节点和属性。相反，请使用 `getElementsByTagName` 方法，并传入通配符，即星号：
 
-```
+```javascript
 var all_elements = document.getElementsByTagName("*");
 ```
 
 变量 `all_elements` 现在包含了文档中所有元素的集合。大多数时候，你不会在整篇文档上使用通配符。相反，你会在特定元素上使用 `getElementsByTagName("*")`。
 
-```
+```javascript
 var introduction = document.getElementById("intro");
 var container = introduction.parentNode;
 var elements = container.getElementsByTagName("*");
@@ -1279,14 +1267,14 @@ alert ( elements.length );
 
 假设我想检索 ID 为 `intro` 的段落内的文本。我可能会想这样使用 `nodeValue` 属性：
 
-```
+```javascript
 var introduction = document.getElementById("intro");
 alert ( introduction.nodeValue );
 ```
 
 但这会产生 `null` 的结果。任何元素节点的 `nodeValue` 都是 `null`。我实际上想获取的是包含在元素中的文本节点的值：
 
-```
+```javascript
 var introduction = document.getElementById("intro");
 var text = introduction.firstChild;
 alert ( text.nodeValue );
@@ -1294,17 +1282,17 @@ alert ( text.nodeValue );
 
 类似地，如果我想获取 `h1` 元素内的文本值，我会这样做：
 
-```
+```javascript
 var headers = document.getElementsByTagName("h1");
 var text = headers[0].firstChild;
 alert ( text.nodeValue );
 ```
 
-我首先获取所有标签名为 "h1" 的元素。在这种情况下，只有一个 `h1` 元素，所以我只关心集合中的第一个元素。这个元素的 `firstChild` 属性就是我试图获取的文本节点。通过访问该文本节点的 `nodeValue`，我就得到了想要的文本字符串。
+我首先获取所有标签名为 `"h1"` 的元素。在这种情况下，只有一个 `h1` 元素，所以我只关心集合中的第一个元素。这个元素的 `firstChild` 属性就是我试图获取的文本节点。通过访问该文本节点的 `nodeValue`，我就得到了想要的文本字符串。
 
 我可以在一条语句中完成所有这些操作，但可读性较差：
 
-```
+```javascript
 alert ( document.getElementsByTagName("h1")[0].firstChild.nodeValue );
 ```
 
@@ -1314,25 +1302,23 @@ alert ( document.getElementsByTagName("h1")[0].firstChild.nodeValue );
 
 有三种创建节点的方法。这些方法对应于构成节点树的三种节点类型：元素节点、文本节点和属性节点。
 
-#### createElement
+### createElement
 
 `createElement` 方法允许你凭空创建一个新的元素节点。它接受一个参数，即你要创建的元素的标签名。
 
 这将创建一个新的段落元素：
 
-```
+```javascript
 var para = document.createElement("p");
 ```
 
 这个新创建的段落元素并不会出现在文档中。它漂浮在 JavaScript 的虚空中，等待被插入到文档的某个地方。
 
-
-
 ### createTextNode
 
 `createTextNode` 方法与 `createElement` 方法类似，正如你所预料的，它创建的是一个文本节点。它接受的唯一参数是一个字符串：
 
-```
+```javascript
 var text = document.createTextNode("I made this!");
 ```
 
@@ -1344,7 +1330,7 @@ var text = document.createTextNode("I made this!");
 
 这将为 `para` 变量引用的段落元素节点设置 `title` 属性：
 
-```
+```javascript
 para.setAttribute("title","generated content");
 ```
 
@@ -1354,7 +1340,7 @@ para.setAttribute("title","generated content");
 
 这将在一个新创建的段落元素中插入一个新建的文本节点：
 
-```
+```javascript
 var para = document.createElement("p");
 var text = document.createTextNode("I made this!");
 para.appendChild(text);
@@ -1366,7 +1352,7 @@ para.appendChild(text);
 
 回到我们的简单文档，假设我需要在 `</body>` 结束标签之前添加一个新的段落，从而更新节点树。这是原始标记：
 
-```
+```html
 <body>
   <h1>Welcome</h1>
   <p id="intro">This is a very simple document.</p>
@@ -1375,7 +1361,7 @@ para.appendChild(text);
 
 以下是我想插入的生成内容：
 
-```
+```javascript
 var para = document.createElement("p");
 var text = document.createTextNode("I made this!");
 para.appendChild(text);
@@ -1384,7 +1370,7 @@ para.setAttribute("title","generated content");
 
 这会创建一段标记，由变量 `para` 引用，看起来像这样：
 
-```
+```html
 <p title="generated content">I made this!</p>
 ```
 
@@ -1392,19 +1378,19 @@ para.setAttribute("title","generated content");
 
 进入文档最简单的方法是访问具有唯一 ID 的元素：
 
-```
+```javascript
 var introduction = document.getElementById("intro");
 ```
 
 现在我可以创建一个对 `body` 元素的引用，因为它是我已访问元素的父节点：
 
-```
+```javascript
 var container = introduction.parentNode;
 ```
 
 最后，我使用 `appendChild` 添加生成的内容：
 
-```
+```javascript
 container.appendChild(para);
 ```
 
@@ -1414,15 +1400,15 @@ container.appendChild(para);
 
 `appendChild` 的相反操作是 `removeChild`。该方法允许你从元素中移除一个指定的子节点。
 
-这将移除 ID 为 "intro" 的段落内的文本节点：
+这将移除 ID 为 `"intro"` 的段落内的文本节点：
 
-```
+```javascript
 var introduction = document.getElementById("intro");
 var text = introduction.firstChild;
 introduction.removeChild(text);
 ```
 
-# Summary
+## Summary
 
 JavaScript 与文档对象模型（Document Object Model）的结合非常强大。在本章中，我介绍了 JavaScript 语言的基础知识，并展示了一些最有用的 DOM 属性和方法。
 
@@ -1438,7 +1424,7 @@ Ajax 涉及与服务器的通信。Ajax 和 DOM 脚本编程密切相关：你�
 
 ## The Object of the Game
 
-[XMLHttpRequest](http://www.w3.org/TR/XMLHttpRequest/) 对象不是 DOM 的一部分。直到最近，它还不是任何 W3C 规范的一部分。Ajax 的成功促使万维网联盟（World Wide Web Consortium）采取了异常迅速的行动。你现在可以在 W3C 网站上找到 [XMLHttpRequest](http://www.w3.org/TR/XMLHttpRequest/) 对象规范的工作草案（www.w3.org/TR/XMLHttpRequest/）。
+[`XMLHttpRequest`](http://www.w3.org/TR/XMLHttpRequest/) 对象不是 DOM 的一部分。直到最近，它还不是任何 W3C 规范的一部分。Ajax 的成功促使万维网联盟（World Wide Web Consortium）采取了异常迅速的行动。你现在可以在 W3C 网站上找到 [`XMLHttpRequest`](http://www.w3.org/TR/XMLHttpRequest/) 对象规范的工作草案（`www.w3.org/TR/XMLHttpRequest/`）。
 
 ## Origins
 
@@ -1452,23 +1438,25 @@ Mozilla 项目的开发者追随了微软的脚步，但他们原生实现了 `X
 
 值得记住的是，仅仅因为访问你网站的用户使用的是技术上支持 Ajax 的浏览器，并不意味着 Ajax 就一定可用。JavaScript 可能被关闭。对于 7 版之前的 Internet Explorer，即使 JavaScript 已开启，ActiveX 支持也可能因安全问题而被禁用。
 
+
+
 ### Create an Instance
 
 在大多数浏览器中，创建 `XMLHttpRequest` 对象的新实例非常简单：
 
-```
+```javascript
 var xhr = new XMLHttpRequest();
 ```
 
 但在 Internet Explorer 中并非如此简单。你需要创建 ActiveX 对象的新实例：
 
-```
+```javascript
 var xhr = new ActiveXObject("Microsoft.XMLHTTP");
 ```
 
 其他浏览器会对此报错。与此同时，Internet Explorer 也会对创建原生对象实例的语法报错。解决方案是在尝试创建实例之前测试该对象是否存在：
 
-```
+```javascript
 if (window.XMLHttpRequest) {
     var xhr = new XMLHttpRequest();
 }
@@ -1476,7 +1464,7 @@ if (window.XMLHttpRequest) {
 
 这被称为对象检测。以下是检测 ActiveX 是否存在的对象检测：
 
-```
+```javascript
 if (window.ActiveXObject) {
     var xhr = new ActiveXObject("Microsoft.XMLHTTP");
 }
@@ -1484,7 +1472,7 @@ if (window.ActiveXObject) {
 
 为了避免每次想执行 Ajax 操作时都要写这些代码，你可以将对象检测封装在一个可复用的函数中：
 
-```
+```javascript
 function getHTTPObject() {
     var xhr = false;
     if (window.XMLHttpRequest) {
@@ -1508,7 +1496,7 @@ function getHTTPObject() {
 
 你可以这样使用这个函数：
 
-```
+```javascript
 var request = getHTTPObject();
 ```
 
@@ -1516,7 +1504,7 @@ var request = getHTTPObject();
 
 `getHTTPObject` 函数仍有可能返回 `false` 值，这意味着执行该脚本的浏览器不具备 Ajax 能力。如果你明确地检查这一点，就可以确保不会要求旧浏览器执行超出其能力的代码：
 
-```
+```javascript
 var request = getHTTPObject();
 if (request) {
   // do some Ajax
@@ -1533,11 +1521,9 @@ Internet Explorer 5 for Mac 就是这种情况。就目前而言，`getHTTPObjec
 
 在这个特定案例中，你可以使用对象检测仅测试 ActiveX 的存在，而不是特定类型的 ActiveX 对象。
 
-
-
 JavaScript 有一种实用的控制结构，适用于这种情况，称为 `try...catch` 语句。使用这个语句，你可以尝试执行一些代码，如果执行失败，就可以捕获错误。该错误不会显示在浏览器中。
 
-```
+```javascript
 if (window.ActiveXObject) {
   try {
     xhr = new ActiveXObject("Microsoft.XMLHTTP");
@@ -1551,7 +1537,7 @@ if (window.ActiveXObject) {
 
 `try...catch` 语句可以进一步精炼 `getHTTPObject` 函数。后续版本的 Internet Explorer 可以使用更新的 ActiveX 对象来处理 Ajax。通过使用一系列 `try...catch` 语句，你可以尝试使用最新版本，如果失败，则回退到旧的方式：
 
-```
+```javascript
 if (window.ActiveXObject) {
   try {
     xhr = new ActiveXObject("Msxml2.XMLHTTP");
@@ -1567,7 +1553,7 @@ if (window.ActiveXObject) {
 
 完整的函数如下所示：
 
-```
+```javascript
 function getHTTPObject() {
   var xhr = false;
   if (window.XMLHttpRequest) {
@@ -1593,9 +1579,9 @@ function getHTTPObject() {
 
 一旦你创建了 `XMLHttpRequest` 的实例，就需要为其与服务器通信做好准备。这一过程有三个关键组成部分：
 
--   1. `onreadystatechange` 事件处理器。
--   2. `open` 方法。
--   3. `send` 方法。
+1. `onreadystatechange` 事件处理器。
+2. `open` 方法。
+3. `send` 方法。
 
 ## ONREADYSTATECHANGE
 
@@ -1613,7 +1599,7 @@ function getHTTPObject() {
 
 如果你将一个函数附加到 `onreadystatechange` 事件处理器，那么每次服务器通过更新向客户端发送信号时，该函数就会执行。下面是一个示例：
 
-```
+```javascript
 var request = getHTTPObject();
 if (request) {
     request.onreadystatechange = doSomething;
@@ -1632,26 +1618,26 @@ if (request) {
 
 这个方法有两个必需参数：
 
--   1. 请求的类型。
--   2. 服务器上文件的位置。
+1. 请求的类型。
+2. 服务器上文件的位置。
 
 ### 方法
 
-`open` 方法的第一个参数是一个字符串，例如 "`GET`" 或 "`POST`"。如果你只想从服务器检索文件，但不需要发送任何数据，请使用 `GET` 请求。如果你想向服务器发送数据，请使用 `POST`。
+`open` 方法的第一个参数是一个字符串，例如 `GET` 或 `POST`。如果你只想从服务器检索文件，但不需要发送任何数据，请使用 `GET` 请求。如果你想向服务器发送数据，请使用 `POST`。
 
-`GET` 和 `POST` 是请求方法的示例，不要与对象的方法混淆。在这个意义上，*方法* 仅仅表示请求的类型。其他方法包括 `PUT`、`DELETE` 和 `HEAD`。
+`GET` 和 `POST` 是请求方法的示例，不要与对象的方法混淆。在这个意义上，方法仅仅表示请求的类型。其他方法包括 `PUT`、`DELETE` 和 `HEAD`。
 
 你可以通过在请求的 URL 末尾附加查询字符串的方式，在 `GET` 请求中发送一些数据。通过这种方式发送到服务器的数据量是有限制的。此外，`GET` 永远不应该用于发送会更新服务器上某些内容的请求，例如编辑或删除数据库中的记录。
 
 ### URL
 
-`open` 方法的第二个参数是一个字符串，包含你要请求的服务器上文件的路径。这个字符串可以是相对路径，如 ".../myfile.html"，或者绝对路径，如 "/files/myfile.html"。
+`open` 方法的第二个参数是一个字符串，包含你要请求的服务器上文件的路径。这个字符串可以是相对路径，如 `.../myfile.html`，或者绝对路径，如 `/files/myfile.html`。
 
 你也可以写出你要请求的文件的完整路径：
 
 `http://www.example.com/files/myfile.html`
 
-你请求的文件必须与发起请求的 JavaScript 文件位于同一域名下。如果 JavaScript 文件是从 foo.com 执行的，它就不能请求 bar.com 的文件。稍后，我将向你展示一些绕过此安全限制的方法，但目前，最好将 `XMLHttpRequest` 视为特定于域名的。
+你请求的文件必须与发起请求的 JavaScript 文件位于同一域名下。如果 JavaScript 文件是从 `foo.com` 执行的，它就不能请求 `bar.com` 的文件。稍后，我将向你展示一些绕过此安全限制的方法，但目前，最好将 `XMLHttpRequest` 视为特定于域名的。
 
 ### 异步
 
@@ -1667,7 +1653,7 @@ if (request) {
 
 以下语句描述了一个对脚本所在目录中文件的异步 `GET` 请求：
 
-```
+```javascript
 request.open("GET", "file.ext", true);
 ```
 
@@ -1677,7 +1663,7 @@ request.open("GET", "file.ext", true);
 
 切勿将敏感信息直接写入 JavaScript 文件中。像这样使用 `open` 方法将是一个糟糕透顶的主意：
 
-```
+```javascript
 request.open("GET", "file.ext", true, "jeremy", "pa55w0rd");
 ```
 
@@ -1687,8 +1673,6 @@ request.open("GET", "file.ext", true, "jeremy", "pa55w0rd");
 
 实际上，你很可能永远不需要使用这些参数。
 
-
-
 ## 发送
 
 `open` 方法指定了 Ajax 请求的详细信息，但它不会发起请求。请使用 `send` 方法来发送你已使用 `open` 方法准备好的请求。
@@ -1697,13 +1681,13 @@ request.open("GET", "file.ext", true, "jeremy", "pa55w0rd");
 
 如果你使用的是 `GET` 请求方法，请不要发送任何数据。相反，向 `send` 方法传递一个 `null` 值：
 
-```
+```javascript
 request.send(null);
 ```
 
 一个完整的 Ajax `GET` 请求如下所示：
 
-```
+```javascript
 var request = getHTTPObject();
 if (request) {
   request.onreadystatechange = doSomething;
@@ -1714,7 +1698,7 @@ if (request) {
 
 如果你需要向服务器发送数据，请使用 `POST` 请求方法。将数据作为查询字符串发送，像这样：
 
-```
+```text
 name=Jeremy+Keith&message=Hello+world
 ```
 
@@ -1728,9 +1712,9 @@ name=Jeremy+Keith&message=Hello+world
 
 这种发送头部信息的能力可以通过一个名为 `setRequestHeader` 的方法在 Ajax 请求中实现。此方法接受两个参数，都是字符串。第一个字符串指定头部信息的名称，第二个字符串是该头部信息的值。
 
-如果你正在使用 POST 请求向服务器发送数据，你需要将 "Content-type" 头部信息的值设置为 "application/x-www-form-urlencoded"：
+如果你正在使用 POST 请求向服务器发送数据，你需要将 `Content-type` 头部信息的值设置为 `application/x-www-form-urlencoded`：
 
-```
+```javascript
 request.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
 ```
 
@@ -1738,7 +1722,7 @@ request.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
 
 一个完整的 Ajax POST 请求如下所示：
 
-```
+```javascript
 var request = getHTTPObject();
 if (request) {
   request.onreadystatechange = doSomething;
@@ -1758,27 +1742,29 @@ if (request) {
 
 `readyState` 属性表示 Ajax 请求的当前状态。它的值是数字：
 
-- 0 未初始化。`open` 方法尚未被调用。
-- 1 加载中。`open` 方法已被调用，但 `send` 方法尚未被调用。
-- 2 已加载。`send` 方法已被调用。请求已开始。
-- 3 交互中。服务器正在发送响应的过程中。
-- 4 完成。服务器已完成响应的发送。
+- `0` 未初始化。`open` 方法尚未被调用。
+- `1` 加载中。`open` 方法已被调用，但 `send` 方法尚未被调用。
+- `2` 已加载。`send` 方法已被调用。请求已开始。
+- `3` 交互中。服务器正在发送响应的过程中。
+- `4` 完成。服务器已完成响应的发送。
 
 每当 `readyState` 的值发生变化，`readystatechange` 事件就会被触发。如果一个函数已被赋给 `onreadystatechange` 事件处理器，那么每当 `readyState` 的值改变时，该函数都会被执行。
 
-理论上，`readyState` 属性的值会按照从 0 到 4 的数字顺序变化。实际上，`readyState` 变化的顺序因浏览器而异。不过，当请求完成时，每个浏览器最终的 `readyState` 值都是 4。
+理论上，`readyState` 属性的值会按照从 `0` 到 `4` 的数字顺序变化。实际上，`readyState` 变化的顺序因浏览器而异。不过，当请求完成时，每个浏览器最终的 `readyState` 值都是 `4`。
 
-与其试图利用 `readyState` 属性的变化做任何巧妙处理，最好只是等到它的值达到 4。那时你就知道服务器已完成响应的发送。
+与其试图利用 `readyState` 属性的变化做任何巧妙处理，最好只是等到它的值达到 `4`。那时你就知道服务器已完成响应的发送。
 
-你可以使用一个简单的 `if` 语句将 `readyState` 属性的值与数字 4 进行比较：
+你可以使用一个简单的 `if` 语句将 `readyState` 属性的值与数字 `4` 进行比较：
 
-```
+```javascript
 function doSomething() {
   if (request.readyState == 4) {
     // 对响应进行处理
   }
 }
 ```
+
+
 
 `doSomething` 函数会被执行多次，因为它已被赋给 `onreadystatechange` 事件处理器：
 
@@ -1788,7 +1774,7 @@ request.onreadystatechange = doSomething;
 
 每次 `readyState` 属性改变，`doSomething` 就会被执行，但函数中的 `if` 语句确保了在 `readyState` 的值为 4 之前不会发生任何事情。
 
-### STATUS
+## STATUS
 
 就像 Web 浏览器发送的每个请求都附带头部信息一样，Web 服务器发送的每个响应也附带头部信息。这些头部信息包含关于服务器的信息，以及关于所提供的文档的信息。此信息包括文档的内容类型（HTML、XML 等）和字符编码（utf-8、iso-8859-1 等）。
 
@@ -1796,7 +1782,7 @@ Web 服务器发送的任何响应中最重要的头部信息是状态码。这�
 
 最常见的状态码是 200，表示“确定”。此代码表明服务器已成功发送了请求的资源。
 
-在 XMLHttpRequest 对象中，服务器发送的状态码可以通过名为 `status` 的属性获取。通过将此属性与值 200 进行比较，你可以确定服务器是否发送了成功的响应：
+在 `XMLHttpRequest` 对象中，服务器发送的状态码可以通过名为 `status` 的属性获取。通过将此属性与值 200 进行比较，你可以确定服务器是否发送了成功的响应：
 
 ```
 function doSomething() {
@@ -1840,7 +1826,7 @@ function doSomething() {
 }
 ```
 
-### RESPONSETEXT
+## RESPONSETEXT
 
 `XMLHttpRequest` 的 `responseText` 属性包含从服务器发送的数据。它是一个字符串。根据服务器发送的内容，这可能是一个 HTML 字符串、一个 XML 字符串，或者只是一个文本字符串。
 
@@ -1858,13 +1844,11 @@ function doSomething() {
 
 在此示例中，`responseText` 属性的内容将显示在 `alert` 消息中。
 
-### RESPONSEXML
+## RESPONSEXML
 
 如果服务器返回的是 XML，那么这些数据将在名为 `responseXML` 的属性中可用。只有当服务器以正确的头部信息发送数据时，`responseXML` 属性才可用。MIME 类型必须是 `text/xml` 或 `application/xml`。
 
 在下一章中，我将向你展示如何从 `responseXML` 属性中解析 XML。
-
-
 
 ## 综合实践
 
@@ -2029,11 +2013,13 @@ function displayResponse(request) {
 将此文档保存为 `index.html`，并与 `ajaxtest.js` 及 `message.txt` 放在同一个目录下。为了使这个示例正常工作，你需要将该目录托管在服务器上。如果你在本地运行 Web 服务器，可以是自己的机器，或者你可以通过 FTP 将文件传输到互联网上的服务器。
 
 ![](img/a49921737ab5f27c06f222d93fc0719d_73_0.png)
+
 **图 3.1** 一个指向文本文件的链接。
 
 使用 Web 浏览器访问 `index.html`。你将看到图 3.1 所示的链接。点击此链接将生成图 3.2 所示的警告对话框。
 
 ![](img/a49921737ab5f27c06f222d93fc0719d_73_1.png)
+
 **图 3.2** 对话框中显示的文本文件内容。
 
 警告消息的内容直接来自 `message.txt` 文件。乍一看，这似乎没什么令人惊叹的地方。警告对话框并没有什么革命性，但其蕴含的意义是巨大的。现在，人们可以在不刷新整个页面的情况下，获取服务器上任何文件的内容并在浏览器中显示。
@@ -2044,9 +2030,11 @@ function displayResponse(request) {
 
 在本章中，你学习了如何在三个步骤中使用 `XMLHttpRequest` 对象：
 
-- 1. 创建一个能在不同浏览器实现中工作的对象实例。
-- 2. 使用 `onreadystatechange` 事件处理器、`open` 方法和 `send` 方法准备请求。
-- 3. 通过 `readyState`、`status`、`responseText` 以及有时使用 `responseXML` 属性处理来自服务器的响应。
+1. 创建一个能在不同浏览器实现中工作的对象实例。
+
+2. 使用 `onreadystatechange` 事件处理器、`open` 方法和 `send` 方法准备请求。
+
+3. 通过 `readyState`、`status`、`responseText` 以及有时使用 `responseXML` 属性处理来自服务器的响应。
 
 这个基础模型在本书后续的所有示例中都将保持不变。创建实用 Ajax 交互的真正技巧在于决定在何时何地发起请求，以及如何最好地处理服务器的响应。
 
@@ -2081,13 +2069,13 @@ XML 代表 eXtensible Markup Language（可扩展标记语言）。它是一种�
 
 需要注意的是，XML 本身并不 *执行* 任何操作。该语言的创建是为了存储数据，而不是操作数据。在这个例子中，XML 文档存储了一个人的联系详情。为了对这些数据进行任何操作，我需要使用编程语言。我将使用 JavaScript 从 XML 文件中提取联系信息并将其放置在 Web 页面中。
 
-
-
- # XML 实战
+## XML 实战
 
 我有一个网页，里面列出了我办公室的人员名单。这个 XHTML 文档通过一个 `script` 元素引用了一个名为 `fetchxml.js` 的 JavaScript 文件：
 
-```
+
+
+```html
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
@@ -2128,26 +2116,26 @@ onclick="grabFile(this.href); return false;">Jeremy</a>
 
 **图 4.1** 网页上的人员列表。
 
-列表中的每个人都链接到一个包含该人联系详情的 XML 文件。我使用 `onclick` 事件处理器将该值传递给 `grabFile` JavaScript 函数：
+列表中的每个人都链接到一个包含该人联系详情的 XML 文件。我使用`onclick`事件处理器将该值传递给`grabFile` JavaScript 函数：
 
-```
+```html
 <a href="files/jeremy.xml"
 onclick="grabFile(this.href); return false;">Jeremy</a>
 ```
 
 这不是一种非常优雅的事件捕获方式。它确实开始在标记中造成混乱。在下一章中，你将看到一种更加不唐突的添加 JavaScript 功能的方式。
 
-我要编写一个脚本，获取一个 XML 文件，解析其内容，并生成标记以在网页中显示联系详情。这些详情将放在列表后面的 `div` 元素中：
+我要编写一个脚本，获取一个 XML 文件，解析其内容，并生成标记以在网页中显示联系详情。这些详情将放在列表后面的`div`元素中：
 
-```
+```html
 <div id="details"></div>
 ```
 
 #### 编写脚本
 
-`fetchxml.js` 文件以你在上一章中看到的 `getHTTPObject` 函数开头：
+`fetchxml.js`文件以你在上一章中看到的`getHTTPObject`函数开头：
 
-```
+```javascript
 function getHTTPObject() {
   var xhr = false;
   if (window.XMLHttpRequest) {
@@ -2167,11 +2155,11 @@ function getHTTPObject() {
 }
 ```
 
-这就完成了跨浏览器 `XMLHttpRequest` 对象的实例化。
+这就完成了跨浏览器`XMLHttpRequest`对象的实例化。
 
-下一个函数是 `grabFile`。它与上一章中的 `grabFile` 函数几乎完全相同。唯一的区别是，`onreadystatechange` 事件处理器现在触发一个名为 `parseResponse` 的函数：
+下一个函数是`grabFile`。它与上一章中的`grabFile`函数几乎完全相同。唯一的区别是，`onreadystatechange`事件处理器现在触发一个名为`parseResponse`的函数：
 
-```
+```javascript
 function grabFile(file) {
   var request = getHTTPObject();
   if (request) {
@@ -2184,129 +2172,129 @@ function grabFile(file) {
 }
 ```
 
-`parseResponse` 函数将获取服务器返回的 XML 并将其转换为 HTML。但首先，我需要确保响应已成功从服务器返回：
+`parseResponse`函数将获取服务器返回的 XML 并将其转换为 HTML。但首先，我需要确保响应已成功从服务器返回：
 
-```
+```javascript
 function parseResponse(request) {
     if (request.readyState == 4) {
         if (request.status == 200 || request.status == 304) {
 ```
 
-XML 可通过 `HTTPRequest` 对象的 `responseXML` 属性访问。我要将此属性赋值给变量 `data`：
+XML 可通过`HTTPRequest`对象的`responseXML`属性访问。我要将此属性赋值给变量`data`：
 
-```
+```javascript
 var data = request.responseXML;
 ```
 
-可以使用与遍历 HTML 文档相同的 DOM 方法来遍历 XML。只要你了解从服务器返回的 XML 结构，就可以使用 `getElementsByTagName` 等方法以及 `nodeValue` 等属性来获取你想要的信息。
+可以使用与遍历 HTML 文档相同的 DOM 方法来遍历 XML。只要你了解从服务器返回的 XML 结构，就可以使用`getElementsByTagName`等方法以及`nodeValue`等属性来获取你想要的信息。
 
 #### 从 XML 中提取数据
 
-我知道 XML 文件中有一个 `name` 元素。我想获取 `<name>` 标签中包含的文本节点。使用 `getElementsByTagName`，我可以获取 XML 中所有 `name` 元素的集合：
+我知道 XML 文件中有一个`name`元素。我想获取`<name>`标签中包含的文本节点。使用`getElementsByTagName`，我可以获取 XML 中所有`name`元素的集合：
 
-```
+```javascript
 data.getElementsByTagName("name")
 ```
 
-我知道只有一个 `name` 元素，所以我只关心第一个匹配项：`data.getElementsByTagName("name")[0]`
+我知道只有一个`name`元素，所以我只关心第一个匹配项：`data.getElementsByTagName("name")[0]`
 
 这个元素包含我想要的文本节点。文本节点是元素的第一个子节点：`data.getElementsByTagName("name")[0].firstChild`
 
-现在，我可以通过查询其 `nodeValue` 属性来获取此文本节点的值：`data.getElementsByTagName("name")[0].firstChild.nodeValue`
+现在，我可以通过查询其`nodeValue`属性来获取此文本节点的值：`data.getElementsByTagName("name")[0].firstChild.nodeValue`
 
-我将此值赋值给变量 `name`：
+我将此值赋值给变量`name`：
 
-```
+```javascript
 var name = data.getElementsByTagName("name")[0].firstChild.nodeValue;
 ```
 
-我可以使用相同的 DOM 方法和属性来检索 `website` 和 `email` 元素中的值：
+我可以使用相同的 DOM 方法和属性来检索`website`和`email`元素中的值：
 
-```
+```javascript
 var website = data.getElementsByTagName("website")[0].firstChild.nodeValue;
 var email = data.getElementsByTagName("email")[0].firstChild.nodeValue;
 ```
 
-变量 `name`、`website` 和 `email` 包含从相应 XML 元素中检索到的文本字符串。我不想输出纯文本，而是想将这些值包裹在 HTML 元素中。
+变量`name`、`website`和`email`包含从相应 XML 元素中检索到的文本字符串。我不想输出纯文本，而是想将这些值包裹在 HTML 元素中。
 
 #### 生成内容
 
-使用 `createElement`、`createTextNode` 和 `appendChild` 等 DOM 方法，我可以构建一段 HTML 来包含我提取的信息。例如，我想像这样输出 `name` 和 `email` 的值：
+使用`createElement`、`createTextNode`和`appendChild`等 DOM 方法，我可以构建一段 HTML 来包含我提取的信息。例如，我想像这样输出`name`和`email`的值：
 
-```
+```html
 <h2><a href="mailto:jeremy@clearleft.com">Jeremy Keith</a></h2>
 ```
 
-`h2` 和 `a` 元素是用 `createElement` 方法创建的：
+`h2`和`a`元素是用`createElement`方法创建的：
 
-```
+```javascript
 var header = document.createElement("h2");
 var mailto = document.createElement("a");
 ```
 
-我使用 `setAttribute` 方法为 `a` 元素设置我想要的 `href` 值：
+我使用`setAttribute`方法为`a`元素设置我想要的`href`值：
 
-```
+```javascript
 mailto.setAttribute("href","mailto:"+email);
 ```
 
-最后，我使用 `createTextNode` 方法创建要放入链接中的文本：
+最后，我使用`createTextNode`方法创建要放入链接中的文本：
 
-```
+```javascript
 var text = document.createTextNode(name);
 ```
 
-现在我可以使用 `appendChild` 方法将这些节点连接起来：
+现在我可以使用`appendChild`方法将这些节点连接起来：
 
-```
+```javascript
 mailto.appendChild(text);
 header.appendChild(mailto);
 ```
 
-我还想像这样输出 `website` 值：
+我还想像这样输出`website`值：
 
-```
+```html
 <a href="http://adactio.com/">http://adactio.com/</a>
 ```
 
 这可以通过同一组 DOM 方法实现：
 
-```
+```javascript
 var link = document.createElement("a");
 link.setAttribute("href",website);
 var linktext = document.createTextNode(website);
 link.appendChild(linktext);
 ```
 
-现在我已经在变量 `header` 和 `link` 中获得了想要的 HTML。我需要将这些元素放入文档中。
+现在我已经在变量`header`和`link`中获得了想要的 HTML。我需要将这些元素放入文档中。
 
-我要将新创建的标记插入到 ID 为 `details` 的 `div` 中：
+我要将新创建的标记插入到 ID 为`details`的`div`中：
 
-```
+```javascript
 var details = document.getElementById("details");
 ```
 
 首先，我会确保这个容器元素是空的：
 
-```
+```javascript
 while (details.hasChildNodes()) {
     details.removeChild(details.lastChild);
 }
 ```
 
-`while` 循环会移除最后一个子节点，直到没有子节点为止。
+`while`循环会移除最后一个子节点，直到没有子节点为止。
 
-现在 `details` 元素已为空，我可以插入我创建的标记了：
+现在`details`元素已为空，我可以插入我创建的标记了：
 
-```
+```javascript
 details.appendChild(header);
 
 details.appendChild(link);
 ```
 
-就是这样。完整的 `parseResponse` 函数看起来是这样的：
+就是这样。完整的`parseResponse`函数看起来是这样的：
 
-```
+```javascript
 function parseResponse(request) {
     if (request.readyState == 4) {
         if (request.status == 200 || request.status == 304) {
@@ -2335,15 +2323,21 @@ function parseResponse(request) {
 }
 ```
 
-
-
+```javascript
 details.appendChild(header);
+
 details.appendChild(link);
-}
-}
+```
+
+```javascript
 }
 
-保存 `fetchxml.js` 文件并刷新浏览器。如果你点击文档中的其中一个链接，现在将得到图 4.2 所示的结果。
+}
+
+}
+```
+
+保存`fetchxml.js`文件并刷新浏览器。如果你点击文档中的其中一个链接，现在将得到图 4.2 所示的结果。
 
 ![img/a49921737ab5f27c06f222d93fc0719d_85_0.png](img/a49921737ab5f27c06f222d93fc0719d_85_0.png)
 
@@ -2355,9 +2349,9 @@ XML 是一种非常通用的数据格式。它不会强制将你的数据放入�
 
 使用 XML 的另一个好处是，你不需要学习一门新语言来解析数据。由于 DOM 的设计初衷就是为了解析任何类型的标记，因此你可以重复利用从 DOM 脚本编写中已经获得的知识。
 
-DOM 让你能够非常精细地控制文档。你可以从 `responseXML` 中提取数据片段，然后更新当前文档的任何部分。在联系详情的示例中，使用请求详情的人员姓名来更新文档的 `h1` 元素将相对容易：
+DOM 让你能够非常精细地控制文档。你可以从`responseXML`中提取数据片段，然后更新当前文档的任何部分。在联系详情的示例中，使用请求详情的人员姓名来更新文档的`h1`元素将相对容易：
 
-```
+```javascript
 document.getElementsByTagName("h1")[0].firstChild.nodeValue = name;
 ```
 
@@ -2365,7 +2359,7 @@ DOM 的精确性结合 XML 的流行，构成了一个非常强大的组合。
 
 #### XML 的劣势
 
-如果你想从服务器发送 XML，必须确保它带有正确的响应头。如果内容类型（content type）不是 "text/xml" 或 "application/xml"，那么 `responseXML` 属性将为空。如果 XML 是由服务器端编程语言动态生成的，很容易忽略这个要求。
+如果你想从服务器发送 XML，必须确保它带有正确的响应头。如果内容类型（content type）不是`"text/xml"`或`"application/xml"`，那么`responseXML`属性将为空。如果 XML 是由服务器端编程语言动态生成的，很容易忽略这个要求。
 
 虽然 DOM 非常适合在 XML 到达浏览器后进行解析，但这个过程可能非常冗长。在联系详情的示例中可以明显看出，仅仅为了生成一小块标记就需要写好几行 JavaScript 代码。每个节点都必须创建并附加。对于处理较长 XML 文件的复杂应用程序，代码可能会迅速变得难以控制。
 
@@ -2387,7 +2381,7 @@ JSON 不是一种需要由 JavaScript 解释的数据格式：JSON *就是* Java
 
 正如你已经看到的，在 JavaScript 中实现某件事总是不止一种方法。以这个函数声明为例：
 
-```
+```javascript
 function person() {
     var name = "Richard Rutter";
     var website = "http://clagnut.com/";
@@ -2397,7 +2391,7 @@ function person() {
 
 这个函数对于完成某个任务来说没什么用，但它是将数据存储在单个全局变量中的便捷方法。它也可以这样写：
 
-```
+```javascript
 var person = function() {
     var name = "Richard Rutter";
     var website = "http://clagnut.com/";
@@ -2405,9 +2399,11 @@ var person = function() {
 };
 ```
 
-为了从函数外部访问所有这些局部变量，将 `person` 转换为一个对象：
+为了从函数外部访问所有这些局部变量，将`person`转换为一个对象：
 
-```
+
+
+```javascript
 var person = function() {
     this.name = "Richard Rutter";
     this.website = "http://clagnut.com/";
@@ -2415,15 +2411,16 @@ var person = function() {
 };
 ```
 
-现在 `name`、`website` 和 `email` 可以作为 `person` 的属性来访问：`person.name`、`person.website` 和 `person.email`。
+现在`name`、`website`和`email`可以作为`person`的属性来访问：`person.name`、`person.website`和`person.email`。
 
 同一个对象也可以写成这样：
 
-```
-{"person":{
-  "name":"Richard Rutter",
-  "website":"http://clagnut.com/",
-  "email":"richard@clearleft.com"
+```json
+{
+  "person": {
+    "name": "Richard Rutter",
+    "website": "http://clagnut.com/",
+    "email": "richard@clearleft.com"
   }
 }
 ```
@@ -2432,11 +2429,11 @@ var person = function() {
 
 存储在对象字面量中的值可以是字符串、数字或布尔值。对象字面量还可以存储函数，这些函数是该对象的方法。但如果你编写一个对象字面量纯粹是为了存储数据，那么你就是在编写 JSON。
 
-#### JSON 实战
+### JSON 实战
 
 回到联系详情页面，我将把链接改为指向 JSON 文件：
 
-```
+```html
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
@@ -2470,23 +2467,23 @@ onclick="grabFile(this.href); return false;">Jeremy</a>
 </html>
 ```
 
-`script` 元素现在指向一个名为 `fetchjson.js` 的文件。这与我之前编写的 `fetchxml.js` 文件非常相似。`getHTTPObject` 和 `grabFile` 函数完全一样。我唯一需要修改的是 `parseResponse` 函数。
+`script`元素现在指向一个名为`fetchjson.js`的文件。这与我之前编写的`fetchxml.js`文件非常相似。`getHTTPObject`和`grabFile`函数完全一样。我唯一需要修改的是`parseResponse`函数。
 
-#### 从 JSON 中提取数据
+### 从 JSON 中提取数据
 
-当我的数据存储在 XML 中时，我解析的是 `responseXML` 属性。JSON 仅仅是一个文本字符串，它在 `responseText` 属性中返回。
+当我的数据存储在 XML 中时，我解析的是`responseXML`属性。JSON 仅仅是一个文本字符串，它在`responseText`属性中返回。
 
-要访问存储在 `responseText` 属性中的 JSON 数据，我需要使用 JavaScript 的 `eval` 语句。`eval` 函数接受一个字符串作为参数，该字符串随后被作为 JavaScript 代码执行。因为 JSON 字符串由 JavaScript 代码组成，所以它可以被求值。
+要访问存储在`responseText`属性中的 JSON 数据，我需要使用 JavaScript 的`eval`语句。`eval`函数接受一个字符串作为参数，该字符串随后被作为 JavaScript 代码执行。因为 JSON 字符串由 JavaScript 代码组成，所以它可以被求值。
 
-在这里，我正在对 `responseText` 属性的内容进行求值，并将结果赋值给变量 `data`：
+在这里，我正在对`responseText`属性的内容进行求值，并将结果赋值给变量`data`：
 
-```
+```javascript
 var data = eval('('+request.responseText+')');
 ```
 
-现在我可以将所有 JSON 值作为 `data` 的属性来访问：
+现在我可以将所有 JSON 值作为`data`的属性来访问：
 
-```
+```javascript
 var name = data.person.name;
 var email = data.person.email;
 var website = data.person.website;
@@ -2494,13 +2491,13 @@ var website = data.person.website;
 
 这种点语法比我在 XML 文件上使用的 DOM 方法更短且更具可读性：
 
-```
+```javascript
 var name = data.getElementsByTagName("name")[0].firstChild.nodeValue;
 ```
 
-一旦数据被提取，`parseResponse` 函数将像之前一样继续执行，生成标记并将其插入文档中：
+一旦数据被提取，`parseResponse`函数将像之前一样继续执行，生成标记并将其插入文档中：
 
-```
+```javascript
 function parseResponse(request) {
     if (request.readyState == 4) {
         if (request.status == 200 || request.status == 304) {
@@ -2531,25 +2528,23 @@ function parseResponse(request) {
 
 最终结果是一样的，如图 4.3 所示。
 
-
-
 图 4.3 JSON 被转换为 HTML。
 
-正如你所看到的，当你使用 XMLHttpRequest 从服务器发送数据时，JSON 和 XML 之间没有太大区别。
+正如你所看到的，当你使用`XMLHttpRequest`从服务器发送数据时，JSON 和 XML 之间没有太大区别。
 
-如果我们不考虑 XMLHttpRequest，JSON 作为一种数据格式有一个巨大的优势：你可以从远程服务器请求 JSON 数据。
+如果我们不考虑`XMLHttpRequest`，JSON 作为一种数据格式有一个巨大的优势：你可以从远程服务器请求 JSON 数据。
 
-#### SCRIPT 标签技巧 (THE SCRIPT TAG HACK)
+### SCRIPT 标签技巧（THE SCRIPT TAG HACK）
 
-安全限制安全策略阻止我们使用 XMLHttpRequest 访问除执行 JavaScript 文件所在的域名以外的任何域名。这意味着我们不能像这样访问远程服务器：
+安全限制安全策略阻止我们使用`XMLHttpRequest`访问除执行 JavaScript 文件所在的域名以外的任何域名。这意味着我们不能像这样访问远程服务器：
 
 ```javascript
 request.open("GET", "http://api.search.yahoo.com/", true);
 ```
 
-我们无法使用 XMLHttpRequest 来访问如今许多网站提供的 Web API。这非常遗憾，因为大多数 API 以 XML 形式返回数据，而这些数据本可以通过 `responseXML` 获取。
+我们无法使用`XMLHttpRequest`来访问如今许多网站提供的 Web API。这非常遗憾，因为大多数 API 以 XML 形式返回数据，而这些数据本可以通过`responseXML`获取。
 
-`script` 元素没有这样的安全限制。可以通过这种方式访问另一个域名的 JavaScript 文件：
+`script`元素没有这样的安全限制。可以通过这种方式访问另一个域名的 JavaScript 文件：
 
 ```html
 <script type="text/javascript" src="http://www.google-analytics.com/urchin.js"></script>
@@ -2557,7 +2552,7 @@ request.open("GET", "http://api.search.yahoo.com/", true);
 
 如果你能从另一个域名请求一个 JavaScript 文件，那么你也可以请求一个 JSON 文件。记住，JSON 不过就是 JavaScript。
 
-使用一些 DOM 脚本，你可以动态生成一个 `script` 元素。这个函数接受一个 URL 作为参数。它创建了一个新的 `script` 元素，将该 URL 作为其 `src` 属性，然后将该元素添加到文档的 `head` 中：
+使用一些 DOM 脚本，你可以动态生成一个`script`元素。这个函数接受一个 URL 作为参数。它创建了一个新的`script`元素，将该 URL 作为其`src`属性，然后将该元素添加到文档的`head`中：
 
 ```javascript
 function getScript(url) {
@@ -2568,11 +2563,11 @@ function getScript(url) {
 }
 ```
 
-#### JSON 与 Web 服务
+### JSON 与 Web 服务
 
-现在一些 API 提供 JSON 作为 XML 的替代方案。如果请求的话，所有 Yahoo 的 Web 服务都可以返回 JSON。如果你想尝试使用 Yahoo 搜索 API，请在 http://api.search.yahoo.com/webservices/register_application 注册一个应用程序 ID。
+现在一些 API 提供 JSON 作为 XML 的替代方案。如果请求的话，所有 Yahoo 的 Web 服务都可以返回 JSON。如果你想尝试使用 Yahoo 搜索 API，请在`http://api.search.yahoo.com/webservices/register_application`注册一个应用程序 ID。
 
-我自己的应用程序 ID 是 `adactio`。请在下面的函数中替换为你自己的 ID：
+我自己的应用程序 ID 是`adactio`。请在下面的函数中替换为你自己的 ID：
 
 ```javascript
 function searchYahoo(query) {
@@ -2585,11 +2580,11 @@ function searchYahoo(query) {
 }
 ```
 
-`searchYahoo` 函数组合了一个带有搜索所需参数的 URL。搜索词本身作为参数 `query` 传递。另一个必需的参数是应用程序 ID `appid`。
+`searchYahoo`函数组合了一个带有搜索所需参数的 URL。搜索词本身作为参数`query`传递。另一个必需的参数是应用程序 ID`appid`。
 
-URL 中还添加了两个可选参数。第一个 `output` 的值为 `json`，表示结果应以 JSON 而非 XML 形式返回。另一个参数 `callback` 表示 JSON 数据应被求值并传递给 `parseResponse` 函数。
+URL 中还添加了两个可选参数。第一个`output`的值为`json`，表示结果应以 JSON 而非 XML 形式返回。另一个参数`callback`表示 JSON 数据应被求值并传递给`parseResponse`函数。
 
-通过将此 URL 传递给 `getScript` 函数，可以从 Yahoo 获取此类 JSON：
+通过将此 URL 传递给`getScript`函数，可以从 Yahoo 获取此类 JSON：
 
 ```json
 {
@@ -2613,7 +2608,7 @@ URL 中还添加了两个可选参数。第一个 `output` 的值为 `json`，�
 }
 ```
 
-这些信息随后在 `parseResponse` 函数中被解析：
+这些信息随后在`parseResponse`函数中被解析：
 
 ```javascript
 function parseResponse(data) {
@@ -2625,7 +2620,7 @@ function parseResponse(data) {
 }
 ```
 
-你可以像这样从 Web 页面触发 `searchYahoo` 函数：
+你可以像这样从 Web 页面触发`searchYahoo`函数：
 
 ```html
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
@@ -2651,9 +2646,9 @@ function parseResponse(data) {
 </html>
 ```
 
-将 `getScript` 和 `searchYahoo` 函数放入 `jsonsearch.js` 文件中。你还需要编写一个扩展版本的 `parseResponse`。
+将`getScript`和`searchYahoo`函数放入`jsonsearch.js`文件中。你还需要编写一个扩展版本的`parseResponse`。
 
-这将把搜索结果转换为 HTML，并将其放置在 ID 为 `results` 的元素内部：
+这将把搜索结果转换为 HTML，并将其放置在 ID 为`results`的元素内部：
 
 ```javascript
 function parseResponse(data) {
@@ -2687,29 +2682,31 @@ function parseResponse(data) {
 
 试着输入搜索词来查看结果，如图 4.4 所示。
 
-**图 4.4** 从 Yahoo News 搜索 *Google* 的结果。
+**图 4.4** 从 Yahoo News 搜索*Google*的结果。
 
-#### JSON 的优点
+### JSON 的优点
 
 作为一种传输数据的格式，JSON 与 XML 非常相似，但它更轻量一些。在 XML 中，每个值都需要一个开始标签和一个结束标签，而 JSON 只需要编写一次名称。
 
 与 XML 不同，JSON 不需要服务器在发送时携带特定的 content-type 响应头。它可以作为纯文本发送。
 
-JSON 最大的资产是其跨域传输的能力。这意味着要放弃 `XMLHttpRequest` 对象而采用 script 标签技巧，但目前，这是直接从另一个服务器检索数据的唯一方法。
 
-#### JSON 的缺点
+
+JSON 最大的资产是其跨域传输的能力。这意味着要放弃`XMLHttpRequest`对象而采用`script`标签技巧，但目前，这是直接从另一个服务器检索数据的唯一方法。
+
+## JSON 的缺点
 
 JSON 的语法非常精确。一个放错位置的逗号或丢失的大括号都会导致整个 JSON 对象失效。你还必须记得转义引号等特殊字符。
 
 与 Douglas Crockford 不同，我不觉得 JSON 非常易读。也许是因为我习惯了 HTML 中的尖括号，但在我看来，XML 基于标签的语法看起来更简洁。
 
-为了提取 JSON 对象的内容，必须对其进行求值。`eval` 函数功能强大，但也潜藏危险。如果你从一个并非完全可信的第三方检索 JSON 数据，它可能包含一些通过 `eval` 执行的恶意 JavaScript 代码。出于这个原因，Douglas Crockford 编写了一个 JSON 解析器，它只解析属性，忽略任何方法 (www.json.org/js.html)。
+为了提取 JSON 对象的内容，必须对其进行求值。`eval`函数功能强大，但也潜藏危险。如果你从一个并非完全可信的第三方检索 JSON 数据，它可能包含一些通过`eval`执行的恶意 JavaScript 代码。出于这个原因，Douglas Crockford 编写了一个 JSON 解析器，它只解析属性，忽略任何方法 (www.json.org/js.html)。
 
-### HTML
+## HTML
 
 如果你是以 XML 或 JSON 形式发送数据，在将其显示在 Web 浏览器中之前，你需要将其转换为 HTML。如果数据本身就是以 HTML 形式发送的，则可以避免这一额外步骤。
 
-#### HTML 示例
+### HTML 示例
 
 对于联系详情页面，数据可以像这样返回：
 
@@ -2718,13 +2715,13 @@ JSON 的语法非常精确。一个放错位置的逗号或丢失的大括号都
 <a href="http://andybudd.com/">http://andybudd.com/</a>
 ```
 
-从技术上讲，这不是一个 HTML 文件。它没有 doctype 声明，没有 `body` 元素，没有 `head` 元素，甚至没有 `html` 元素。将其称为 HTML 片段 (fragment) 或代码片段 (snippet) 会更准确。
+从技术上讲，这不是一个 HTML 文件。它没有`doctype`声明，没有`body`元素，没有`head`元素，甚至没有`html`元素。将其称为 HTML 片段 (fragment) 或代码片段 (snippet) 会更准确。
 
 这个片段可以直接插入到当前文档中。
 
-#### HTML 实战
+### HTML 实战
 
-我更新了联系详情页面，使其指向一个名为 fetchhtml.js 的 JavaScript 文件：
+我更新了联系详情页面，使其指向一个名为`fetchhtml.js`的 JavaScript 文件：
 
 ```html
 <script type="text/javascript" src="fetchhtml.js"></script>
@@ -2747,33 +2744,31 @@ JSON 的语法非常精确。一个放错位置的逗号或丢失的大括号都
 <div id="details"></div>
 ```
 
-在 fetchhtml.js 文件中，`getHTTPObject` 保持不变，`grabFile` 函数也是如此。我唯一需要更新的是 `parseResponse` 函数。
+在`fetchhtml.js`文件中，`getHTTPObject`保持不变，`grabFile`函数也是如此。我唯一需要更新的是`parseResponse`函数。
 
-##### 从 HTML 提取数据
+#### 从 HTML 提取数据
 
-HTML 由纯文本组成。如果服务器通过 XMLHttpRequest 发送 HTML，它将可用作 `responseText` 属性。
+HTML 由纯文本组成。如果服务器通过`XMLHttpRequest`发送 HTML，它将可用作`responseText`属性。
 
-我不需要从 `responseText` 中提取任何数据。它已经按照我想要的方式预先格式化好了。我只需要将其倾倒进我想更新的页面部分即可。
+我不需要从`responseText`中提取任何数据。它已经按照我想要的方式预先格式化好了。我只需要将其倾倒进我想更新的页面部分即可。
 
-在这种情况下，我想更新 ID 为 details 的 div：
+在这种情况下，我想更新 ID 为`details`的`div`：
 
 ```javascript
 var details = document.getElementById("details");
 ```
 
-插入 HTML 片段最简单的方法就是更新该元素的 `innerHTML` 属性。
-
-
+插入 HTML 片段最简单的方法就是更新该元素的`innerHTML`属性。
 
 #### innerHTML
 
-`innerHTML` 属性不是 DOM 的一部分。它不属于任何标准，而是由微软创建的私有扩展。
+`innerHTML`属性不是 DOM 的一部分。它不属于任何标准，而是由微软创建的私有扩展。
 
-通常情况下，我不建议在 JavaScript 代码中使用任何私有扩展（尽管 `XMLHttpRequest` 对象本身也是一个私有扩展）。然而，考虑到 `innerHTML` 是非标准的，它的支持情况却异常之好。事实上，它已经成为了一个事实上的标准：所有主流浏览器都支持它。`innerHTML` 在没有 W3C 背书的情况下能被如此广泛采用的原因是，它在某些情况下非常有用。
+通常情况下，我不建议在 JavaScript 代码中使用任何私有扩展（尽管`XMLHttpRequest`对象本身也是一个私有扩展）。然而，考虑到`innerHTML`是非标准的，它的支持情况却异常之好。事实上，它已经成为了一个事实上的标准：所有主流浏览器都支持它。`innerHTML`在没有 W3C 背书的情况下能被如此广泛采用的原因是，它在某些情况下非常有用。
 
 DOM 方法允许你非常精确地操作文档。你可以一次创建一个元素、属性或文本节点。这非常强大，但也非常耗时。
 
-`innerHTML` 属性则采用“暴力”方式。如果你读取一个元素的 `innerHTML` 属性，你将获得一段 HTML 字符串。这是一个可读写属性，这意味着你也可以将一段 HTML 字符串赋值给一个元素内部：
+`innerHTML`属性则采用“暴力”方式。如果你读取一个元素的`innerHTML`属性，你将获得一段 HTML 字符串。这是一个可读写属性，这意味着你也可以将一段 HTML 字符串赋值给一个元素内部：
 
 ```
 element.innerHTML = "<p>Here's a string of markup.</p>";
@@ -2781,15 +2776,15 @@ element.innerHTML = "<p>Here's a string of markup.</p>";
 
 之前在该元素内部的任何 HTML 都将被抹除，并被该字符串的内容所替换。
 
-如果你使用 `createElement`、`createTextNode` 和 `appendChild` 等 DOM 方法，你无法创建格式错误的标记。但如果你将一段格式错误的 HTML 字符串赋值给元素的 `innerHTML` 属性，你将会弄乱文档的 DOM 树：
+如果你使用`createElement`、`createTextNode`和`appendChild`等 DOM 方法，你无法创建格式错误的标记。但如果你将一段格式错误的 HTML 字符串赋值给元素的`innerHTML`属性，你将会弄乱文档的 DOM 树：
 
 ```
 element.innerHTML = "<p>This is <em>badly formed</p></em>";
 ```
 
-如果使用不慎，`innerHTML` 可能会非常危险。但它确实能节省大量时间。赋值 `innerHTML` 不仅比一个接一个地创建和附加节点花费时间更少，而且它是更新文档的一种更快方式。这种速度差异在不同浏览器之间有所不同，但在处理大块标记时会变得非常明显。
+如果使用不慎，`innerHTML`可能会非常危险。但它确实能节省大量时间。赋值`innerHTML`不仅比一个接一个地创建和附加节点花费时间更少，而且它是更新文档的一种更快方式。这种速度差异在不同浏览器之间有所不同，但在处理大块标记时会变得非常明显。
 
-我将更新 `parseResponse` 函数，以更改 `details` 元素的 `innerHTML` 属性：
+我将更新`parseResponse`函数，以更改`details`元素的`innerHTML`属性：
 
 ```
 function parseResponse(request) {
@@ -2810,27 +2805,27 @@ function parseResponse(request) {
 
 #### HTML 的优点
 
-从服务器发送 HTML 片段可以节省浏览器的大量时间。你不需要编写行行 JavaScript 来解析响应并将其转换为 HTML。数据已经以 HTML 格式排版，只需要插入到文档中即可。通过使用 `innerHTML`，这可以在单行代码中完成。这可以显著减小脚本的文件大小。
+从服务器发送 HTML 片段可以节省浏览器的大量时间。你不需要编写行行 JavaScript 来解析响应并将其转换为 HTML。数据已经以 HTML 格式排版，只需要插入到文档中即可。通过使用`innerHTML`，这可以在单行代码中完成。这可以显著减小脚本的文件大小。
 
 作为一种数据格式，HTML 片段肯定与 XML 或 JSON 一样具有可读性 —— 考虑到 HTML 在 Web 上的普及及其对开发者的熟悉程度，可能更具可读性。
 
-将 HTML 片段与 `innerHTML` 属性结合使用是一种快速且高效的组合。
+将 HTML 片段与`innerHTML`属性结合使用是一种快速且高效的组合。
 
 #### HTML 的缺点
 
 如果你只想更新文档的一个部分，在 Ajax 响应中发送 HTML 片段效果很好。但如果你想更新同一文档的多个部分，这种方法就效果不佳。在这种情况下，最好使用像 XML 或 JSON 这样可以非常精确地解析的数据格式。
 
-使用 HTML 片段最大的问题或许是对 `innerHTML` 的依赖。作为一个坚定的标准主义者，我对使用非标准属性并不完全放心。
+使用 HTML 片段最大的问题或许是对`innerHTML`的依赖。作为一个坚定的标准主义者，我对使用非标准属性并不完全放心。
 
-从技术上讲，`innerHTML` 属性应该仅在 HTML 文档中工作，而不在 XHTML 文档中工作。如果你想追求严谨，你应该提供内容类型标头为 `application/xhtml+xml` 的 XHTML 页面。但如果你这样做，你就无法在旧版本的 Firefox 中使用 `innerHTML`。在实践中，大多数人将 XHTML 作为 HTML 提供，因为 Internet Explorer 无法处理正确的内容类型标头。
+从技术上讲，`innerHTML`属性应该仅在 HTML 文档中工作，而不在 XHTML 文档中工作。如果你想追求严谨，你应该提供内容类型标头为`application/xhtml+xml`的 XHTML 页面。但如果你这样做，你就无法在旧版本的 Firefox 中使用`innerHTML`。在实践中，大多数人将 XHTML 作为 HTML 提供，因为 Internet Explorer 无法处理正确的内容类型标头。
 
 ## 本章小结
 
 在本章中，你看到了在 Ajax 响应中格式化服务器返回信息的三种方式。每种格式都有其优缺点。
 
 - XML 是一种流行的格式，可以使用 DOM 进行解析。
-- 如果使用 `script` 标签黑客技巧，可以使用 JSON 从远程服务器检索数据。
-- HTML 片段可以使用 `innerHTML` 直接丢入页面中。
+- 如果使用`script`标签黑客技巧，可以使用 JSON 从远程服务器检索数据。
+- HTML 片段可以使用`innerHTML`直接丢入页面中。
 
 根据我的经验，使用 HTML 片段通常是在不刷新整个页面的情况下更新部分页面的最快、最简单的方法。从现在起，我向你展示的大多数示例都将使用这种解决方案。
 
@@ -2876,43 +2871,41 @@ CSS 的另一个巨大优势是样式声明可以存储在外部文件中。与�
 
 **图 5.2** 这是 adactio.com 剥离样式后的样子。
 
-
-
 ## 非侵入式 JavaScript
 
-与 CSS 类似，将 JavaScript 代码保存在外部文件中，而不是混写在标记语言中，确实大有裨益。大多数脚本都编写并存储在外部 `.js` 文件中，网页通过 `<script>` 标签来引用这些文件。然而，仍有一些 JavaScript 代码与标记语言混在一起。
+与 CSS 类似，将 JavaScript 代码保存在外部文件中，而不是混写在标记语言中，确实大有裨益。大多数脚本都编写并存储在外部`.js`文件中，网页通过`<script>`标签来引用这些文件。然而，仍有一些 JavaScript 代码与标记语言混在一起。
 
-JavaScript 函数有时会通过 `javascript:` 伪协议从链接中触发，例如：
+JavaScript 函数有时会通过`javascript:`伪协议从链接中触发，例如：
 
 ```
 <a href="javascript:doSomething();">Click me!</a>
 ```
 
-这并非像 `http://` 或 `ftp://` 这样的真实网络协议。它假定浏览器支持 JavaScript。如果 JavaScript 被禁用，最好的情况是什么也不会发生，最坏的情况是浏览器会报错。
+这并非像`http://`或`ftp://`这样的真实网络协议。它假定浏览器支持 JavaScript。如果 JavaScript 被禁用，最好的情况是什么也不会发生，最坏的情况是浏览器会报错。
 
-更常见的做法是将 JavaScript 调用放在像 `onclick` 这样的事件处理属性中。这些事件处理程序常常与无意义的内部链接相关联：
+更常见的做法是将 JavaScript 调用放在像`onclick`这样的事件处理属性中。这些事件处理程序常常与无意义的内部链接相关联：
 
 ```
 <a href="#" onclick="doSomething(); return false;">Click me!</a>
 ```
 
-这比使用 `javascript:` 伪协议稍好一些，但仍然是对 `href` 属性的滥用。如果 JavaScript 被禁用，用户会被导航到当前文档的顶部。
+这比使用`javascript:`伪协议稍好一些，但仍然是对`href`属性的滥用。如果 JavaScript 被禁用，用户会被导航到当前文档的顶部。
 
-`href` 属性应包含对真实资源的引用。如果 JavaScript 不可用，这可以作为后备方案：
+`href`属性应包含对真实资源的引用。如果 JavaScript 不可用，这可以作为后备方案：
 
 ```
 <a href="page.html" onclick="doSomething(); return false;">Click me!</a>
 ```
 
-这种技术并不假定 JavaScript 始终可用。与 `javascript:` 伪协议相比，这是一个关键区别。但它仍然将 JavaScript 函数调用放在了内联事件处理程序中。这相当于在 CSS 中使用内联样式。理想情况下，标记语言和 JavaScript 应该保持分离。这个目标可以通过实践 *非侵入式 JavaScript* 来实现。
+这种技术并不假定 JavaScript 始终可用。与`javascript:`伪协议相比，这是一个关键区别。但它仍然将 JavaScript 函数调用放在了内联事件处理程序中。这相当于在 CSS 中使用内联样式。理想情况下，标记语言和 JavaScript 应该保持分离。这个目标可以通过实践*非侵入式 JavaScript*来实现。
 
 ### 事件处理
 
 你不需要使用内联事件处理程序来触发 JavaScript 函数。你可以使用一些 DOM 脚本技术将函数附加到事件上。
 
-事件总是附加到一个元素上。使用 `getElementById` 和 `getElementsByTagName` 等 DOM 方法，可以相对容易地找到特定的元素或一组元素。每个元素都有一系列事件处理属性：`onclick`、`onmouseover`、`onmouseout` 等等。如果你将一个函数赋值给其中一个事件，当该事件被触发时，该函数就会被执行。
+事件总是附加到一个元素上。使用`getElementById`和`getElementsByTagName`等 DOM 方法，可以相对容易地找到特定的元素或一组元素。每个元素都有一系列事件处理属性：`onclick`、`onmouseover`、`onmouseout`等等。如果你将一个函数赋值给其中一个事件，当该事件被触发时，该函数就会被执行。
 
-下面的代码将 `doSomething` 函数赋值给文档中每个链接的 `click` 事件：
+下面的代码将`doSomething`函数赋值给文档中每个链接的`click`事件：
 
 ```
 var links = document.getElementsByTagName("a");
@@ -2924,13 +2917,13 @@ for (var i=0; i<links.length; i++) {
 }
 ```
 
-我使用了一个匿名函数来存储应由 `click` 事件触发的操作。我也可以传递一个函数的引用：
+我使用了一个匿名函数来存储应由`click`事件触发的操作。我也可以传递一个函数的引用：
 
 ```
 links[i].onclick = doSomething;
 ```
 
-在这种情况下，我需要确保 `doSomething` 函数返回 `false` 值，以防止浏览器实际跟随链接跳转。
+在这种情况下，我需要确保`doSomething`函数返回`false`值，以防止浏览器实际跟随链接跳转。
 
 以下做法是无效的：
 
@@ -2938,13 +2931,13 @@ links[i].onclick = doSomething;
 links[i].onclick = doSomething();
 ```
 
-这并非将 `doSomething` 函数赋值给 `onclick` 事件处理程序，而是立即执行了该函数。当你将函数赋值给事件处理程序时，你需要传递一个函数引用（不带括号）或赋值一个匿名函数。
+这并非将`doSomething`函数赋值给`onclick`事件处理程序，而是立即执行了该函数。当你将函数赋值给事件处理程序时，你需要传递一个函数引用（不带括号）或赋值一个匿名函数。
 
 ### 我们希望页面加载完成
 
 使用外部事件处理程序（而非内联）存在一个问题。只要你使用 DOM 方法，就必须有一个完整的文档对象模型。如果文档尚未完全加载，DOM 就是不完整的。
 
-当浏览器从服务器获取网页时，它会从上到下解析页面，并在此过程中构建节点树。当它处理 `head` 元素时，可能会遇到一个指向外部 JavaScript 文件的 `<script>` 标签。浏览器现在会获取这个 JavaScript 文件并开始从上到下执行它。如果一条 JavaScript 语句使用了 `getElementsByTagName` 或 `getElementById`，浏览器将找不到正在查找的元素，因为它尚未加载完整个文档。
+当浏览器从服务器获取网页时，它会从上到下解析页面，并在此过程中构建节点树。当它处理`head`元素时，可能会遇到一个指向外部 JavaScript 文件的`<script>`标签。浏览器现在会获取这个 JavaScript 文件并开始从上到下执行它。如果一条 JavaScript 语句使用了`getElementsByTagName`或`getElementById`，浏览器将找不到正在查找的元素，因为它尚未加载完整个文档。
 
 以下代码不会返回任何结果：
 
@@ -2952,9 +2945,9 @@ links[i].onclick = doSomething();
 var links = document.getElementsByTagName("a");
 ```
 
-因为浏览器尚未遇到任何一个 `a` 元素。
+因为浏览器尚未遇到任何一个`a`元素。
 
-如果你想使用 DOM 方法，必须等到文档加载完成。幸运的是，通过将函数赋值给 `window` 对象的 `load` 事件，可以轻松实现这一点：
+如果你想使用 DOM 方法，必须等到文档加载完成。幸运的是，通过将函数赋值给`window`对象的`load`事件，可以轻松实现这一点：
 
 ```
 window.onload = prepareLinks;
@@ -2969,27 +2962,13 @@ function prepareLinks() {
 }
 ```
 
-这会将 `prepareLinks` 函数赋值给 `window.onload` 事件处理程序。
+这会将`prepareLinks`函数赋值给`window.onload`事件处理程序。
 
-使用 `window.onload` 的一个问题是，你只能为其赋一个值。你很可能希望在文档加载时排队执行多个函数。为此，你可以使用 `addLoadEvent` 函数：
+使用`window.onload`的一个问题是，你只能为其赋一个值。你很可能希望在文档加载时排队执行多个函数。为此，你可以使用`addLoadEvent`函数：
 
-```
-function addLoadEvent(func) {
-  var oldonload = window.onload;
-  if (typeof window.onload != 'function') {
-    window.onload = func;
-  } else {
-    window.onload = function() {
-      if (oldonload) {
-        oldonload();
-      }
-      func();
-    }
-  }
-}
-```
 
-这个方便的小函数由 Simon Willison 编写 (http://simonwillison.net/)。它接受一个参数，该参数是你希望在文档加载完成后执行的函数的引用：
+
+`function addLoadEvent(func)` 是一个方便的小函数，由 Simon Willison 编写（http://simonwillison.net/）。它接受一个参数，该参数是你希望在文档加载完成后执行的函数的引用：
 
 ```
 addLoadEvent(prepareLinks);
@@ -2997,7 +2976,7 @@ addLoadEvent(prepareLinks);
 
 `prepareLinks` 函数被添加到文档加载后将要执行的函数列表中。
 
-除了使用 `window.onload` 事件处理程序来触发函数外，另一种方法是将你的 `<script>` 标签放在 `</body>` 结束标签之前。然后你可以立即执行你的函数，因为此时 DOM 已经（基本）完整了。
+除了使用`window.onload`事件处理程序来触发函数外，另一种方法是将你的`<script>`标签放在`</body>`结束标签之前。然后你可以立即执行你的函数，因为此时 DOM 已经（基本）完整了。
 
 ## 渐进增强与 Ajax
 
@@ -3017,13 +2996,13 @@ addLoadEvent(prepareLinks);
 
 1.  首先构建一个普通的网页。用户可以使用链接和表单从服务器请求信息以及向服务器发送信息。服务器返回同一页面的更新版本。每次用户点击链接或提交表单时，整个页面都会刷新。
 
-2.  使用 DOM 脚本来拦截（或劫持）那些从服务器请求信息和向服务器发送信息的链接和表单。通过 `XMLHttpRequest` 对象重定向这些请求。服务器只需返回页面中发生变化的部分，而不是整个页面。
+2.  使用 DOM 脚本来拦截（或劫持）那些从服务器请求信息和向服务器发送信息的链接和表单。通过`XMLHttpRequest`对象重定向这些请求。服务器只需返回页面中发生变化的部分，而不是整个页面。
 
 第 1 步不需要 JavaScript、CSS 或任何其他客户端技术。所有处理都在服务器端进行。
 
 在第 2 步中，JavaScript 用于增强用户体验。页面不会整体刷新，而只更新其中一部分。需要注意的是，所有处理仍然在服务器端进行。
 
-`XMLHttpRequest` 对象就像一个小型升降机。它在浏览器和服务器之间来回传输数据，但业务逻辑始终稳固地留在服务器上。
+`XMLHttpRequest`对象就像一个小型升降机。它在浏览器和服务器之间来回传输数据，但业务逻辑始终稳固地留在服务器上。
 
 将核心功能委托给客户端脚本语言并不是一个好主意。浏览器是一个不可预测的环境。你无法确定访问者会使用什么样的浏览器，或者这些浏览器中 JavaScript 是否已开启。你的服务器环境则可预测得多。你知道它的能力，知道它可以执行哪些语言。在可能的情况下，让服务器（而不是浏览器）来完成重要的工作。
 
@@ -3032,10 +3011,6 @@ addLoadEvent(prepareLinks);
 为了使 Hijax 技术良好运行，页面应该在服务器端以模块化的方式构建。这是当今大多数网页的构建方式。
 
 一个典型的网页由一系列组件组成。其中一些组件，如品牌标识、导航和页面底部的细则，从一个页面到另一个页面是保持不变的。其他组件，如正文内容，则是特定于某个页面的。
-
-
-
-![](img/a49921737ab5f27c06f222d93fc0719d_110_0.png)
 
 **图 5.3** 这是一个典型 Web 页面的架构。
 
@@ -3062,11 +3037,9 @@ addLoadEvent(prepareLinks);
 </html>
 ```
 
-![](img/a49921737ab5f27c06f222d93fc0719d_111_0.png)
+请注意，独立的组件通常包含在`<div>`标签中。`div`元素在某种程度上名声不佳，因为经常被过度使用。但它确实具有一定的语义含义：它定义了 Web 页面中一个独立的部分（section）或分区（division）。这些分区可以进一步细分为更小的级别。例如，一个侧边栏可能包含登录表单或购物车等子组件。
 
-请注意，独立的组件通常包含在 `<div>` 标签中。`div` 元素在某种程度上名声不佳，因为经常被过度使用。但它确实具有一定的语义含义：它定义了 Web 页面中一个独立的部分（section）或分区（division）。这些分区可以进一步细分为更小的级别。例如，一个侧边栏可能包含登录表单或购物车等子组件。
-
-这些子组件是根据用户的操作在服务器端生成的。它们是 Hijax 的理想候选对象。它们可能会被包含在各自的 `div` 元素中：
+这些子组件是根据用户的操作在服务器端生成的。它们是 Hijax 的理想候选对象。它们可能会被包含在各自的`div`元素中：
 
 ```
 <div id="sidebar">
@@ -3084,6 +3057,7 @@ addLoadEvent(prepareLinks);
 可以通过遵循以下两条指导原则来解决这个悖论：
 
 1. 从一开始就为 Ajax 做规划。
+
 2. 在最后阶段实现 Ajax。
 
 在项目开始时考虑 Ajax 交互，可以鼓励你将页面视为模块的集合，其中某些模块可以从 Ajax 中获益。但在构建这些页面时，与其立即深入研究 Ajax，不如先使用常规的基于页面的交互。这样一来，你就能确保网站具有向后兼容性。你不需要构建一个单独的非 Ajax 版本，因为它已经存在了。你只需要根据渐进增强（progressive enhancement）的原则应用 Ajax 功能即可。
@@ -3093,7 +3067,9 @@ addLoadEvent(prepareLinks);
 思考满足以下标准的场景：
 
 1. 服务器向浏览器发送一个 Web 页面。
+
 2. 用户可以填写表单或点击带有查询字符串（query string）的链接。
+
 3. 服务器将同一个页面发回浏览器。页面的部分内容已根据用户的请求发生了变化。
 
 使用 Hijax，你可以改变步骤 3。与其请求整个页面，不如使用 Ajax 仅请求更新的组件。
@@ -3102,7 +3078,7 @@ addLoadEvent(prepareLinks);
 
 我将重新审视第 4 章中的联系详情页。我需要从头开始。首先，我要构建这个页面，使其在没有 JavaScript 的情况下也能工作。
 
-现在的链接通过查询字符串将一个名为 `person` 的参数传递给同一个页面：
+现在的链接通过查询字符串将一个名为`person`的参数传递给同一个页面：
 
 ```
 <ul>
@@ -3120,7 +3096,7 @@ addLoadEvent(prepareLinks);
 
 我正将这个页面从静态 HTML 文件更改为动态 PHP 文件。你可以使用任何服务器端编程语言来处理传递的参数。我使用 PHP 是因为我比较熟悉。
 
-在 "details" `div` 内部，我包含了一个名为 `people.php` 的 PHP 文件：
+在 "details" `div`内部，我包含了一个名为`people.php`的 PHP 文件：
 
 ```
 <div id="details">
@@ -3128,7 +3104,7 @@ addLoadEvent(prepareLinks);
 </div>
 ```
 
-该文件包含一段简单的 PHP 代码。它检查查询字符串中是否发送了 `person` 参数。如果发送了，则显示相应的标记：
+该文件包含一段简单的 PHP 代码。它检查查询字符串中是否发送了`person`参数。如果发送了，则显示相应的标记：
 
 ```
 <?php
@@ -3164,7 +3140,7 @@ if (isset($_GET["person"])) {
 
 ## 捕获链接数据
 
-首先，我需要劫持（hijack）人员姓名列表中的链接。如果列表有一个唯一的 ID，使用 DOM 很容易实现。我给列表指定一个 ID 为 `people`。以下是基本的页面结构：
+首先，我需要劫持（hijack）人员姓名列表中的链接。如果列表有一个唯一的 ID，使用 DOM 很容易实现。我给列表指定一个 ID 为`people`。以下是基本的页面结构：
 
 ```
 <h1>People</h1>
@@ -3176,9 +3152,9 @@ if (isset($_GET["person"])) {
 </div>
 ```
 
-现在，我可以结合使用 `getElementById` 和 `getElementsByTagName` 轻松访问列表中的所有链接。
+现在，我可以结合使用`getElementById`和`getElementsByTagName`轻松访问列表中的所有链接。
 
-在一个名为 `ajax.js` 的外部 JavaScript 文件中，我定义了一个名为 `prepareLinks` 的函数：
+在一个名为`ajax.js`的外部 JavaScript 文件中，我定义了一个名为`prepareLinks`的函数：
 
 ```
 function prepareLinks() {
@@ -3208,38 +3184,38 @@ var list = document.getElementById("people");
 var links = list.getElementsByTagName("a");
 ```
 
-我遍历这些链接，并将一个匿名函数附加到它们的 `onclick` 事件处理器上：
+我遍历这些链接，并将一个匿名函数附加到它们的`onclick`事件处理器上：
 
 ```
 for (var i=0; i<links.length; i++) {
   links[i].onclick = function() {
 ```
 
-当链接被点击时，我想从其 `href` 属性中提取查询字符串。我可以使用 JavaScript 的 `split` 函数来实现，该函数将字符串拆分为数组。我将以问号字符为分隔符拆分 `href` 属性。结果数组中的第一个成员（索引为 0）是问号之前的所有内容。第二个成员（索引为 1）包含问号之后的所有内容：
+当链接被点击时，我想从其`href`属性中提取查询字符串。我可以使用 JavaScript 的`split`函数来实现，该函数将字符串拆分为数组。我将以问号字符为分隔符拆分`href`属性。结果数组中的第一个成员（索引为 0）是问号之前的所有内容。第二个成员（索引为 1）包含问号之后的所有内容：
 
 ```
 var query = this.getAttribute("href").split("?")[1];
 ```
 
-现在我可以构造我想要的 Ajax 请求 URL 了。我请求 `people.php` 文件，后面跟着一个问号，以及我刚刚提取的查询字符串：
+现在我可以构造我想要的 Ajax 请求 URL 了。我请求`people.php`文件，后面跟着一个问号，以及我刚刚提取的查询字符串：
 
 ```
 var url = "people.php?"+query;
 ```
 
-这就是我要传递给我们在第 4 章中编写的 `grabFile` 函数的值：
+这就是我要传递给我们在第 4 章中编写的`grabFile`函数的值：
 
 ```
 grabFile(url);
 ```
 
-我要对 `grabFile` 函数做轻微修改。如果浏览器支持 Ajax，它将返回 `true`，否则返回 `false`。为了防止页面刷新，我将使用这个返回值。如果 `grabFile` 返回 `true`，我将通过以下方式取消 `click` 事件的默认浏览器行为：
+我要对`grabFile`函数做轻微修改。如果浏览器支持 Ajax，它将返回`true`，否则返回`false`。为了防止页面刷新，我将使用这个返回值。如果`grabFile`返回`true`，我将通过以下方式取消`click`事件的默认浏览器行为：
 
 ```
 return !grabFile(url);
 ```
 
-这个语句返回的是 `grabFile` 返回值的相反值。如果 `grabFile` 返回 true，该语句则返回 false，从而取消默认的浏览器行为。但如果 `grabFile` 返回 false，该语句则返回 true，浏览器将跳转到该链接。
+这个语句返回的是`grabFile`返回值的相反值。如果`grabFile`返回 true，该语句则返回 false，从而取消默认的浏览器行为。但如果`grabFile`返回 false，该语句则返回 true，浏览器将跳转到该链接。
 
 完整的函数如下所示：
 
@@ -3255,14 +3231,18 @@ function prepareLinks() {
     var links = list.getElementsByTagName("a");
 ```
 
-
-
 for (var i=0; i<links.length; i++) {
+
 	links[i].onclick = function() {
+
 		var query = this.getAttribute("href").split("?")[1];
+
 		var url = "people.php?"+query;
+
 		return !grabFile(url);
+
 	};
+
 }
 
 `prepareLinks`函数需要在文档加载完成后立即执行：
@@ -3272,28 +3252,47 @@ window.onload = prepareLinks;
 从这以后，JavaScript基本保持不变。`getHTTPObject`函数再次使用。`grabFile`函数稍作修改，以返回`true`或`false`：
 
 function grabFile(file) {
+
 	var request = getHTTPObject();
+
 	if (request) {
+
 		request.onreadystatechange = function() {
+
 			parseResponse(request);
+
 		};
+
 		request.open("GET", file, true);
+
 		request.send(null);
+
 		return true;
+
 	} else {
+
 		return false;
+
 	}
+
 }
 
 `parseResponse`函数与之前完全相同：
 
 function parseResponse(request) {
+
 	if (request.readyState == 4) {
+
 		if (request.status == 200 || request.status == 304) {
+
 			var details = document.getElementById("details");
+
 			details.innerHTML = request.responseText;
+
 		}
+
 	}
+
 }
 
 我所要做的只是从我的.php文件的`head`中引用这个JavaScript文件：
@@ -3312,27 +3311,43 @@ Ajax的行为看起来与之前完全相同。点击人名即可显示其联系�
 
 许多网站都有一个联系表单，如图5.5所示。这是一种允许访客提供反馈的便捷方式。
 
-![](img/a49921737ab5f27c06f222d93fc0719d_117_0.png)
-
 以下是联系页面的源代码：
 
+```
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+```
+
+
+
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="enMutableContact us</code></code><code>charset=utf-8" />
+
   <title>Contact Us</title>
+
   <style type="text/css">
+
   @import url("style.css");
+
   </style>
+
 </head>
+
 <body>
+
   <h1>Contact Us</h1>
+
   <div id="container">
+
 <?php include "formlogic.php"; ?>
+
   </div>
+
 </body>
+
 </html>
 
-在本例中，PHP用于在名为"container"的`div`中创建表单。
+在本例中，PHP用于在名为`container`的`div`中创建表单。
 
 `formlogic.php`文件执行多项任务：
 
@@ -3345,6 +3360,7 @@ Ajax的行为看起来与之前完全相同。点击人名即可显示其联系�
 
 表单的标记如下所示：
 
+```
 <form method="post" id="contactform" action="">
   <p>
     <label for="name">Name</label>
@@ -3363,18 +3379,23 @@ Ajax的行为看起来与之前完全相同。点击人名即可显示其联系�
     <input type="submit" name="submit" value="Submit" />
   </p>
 </form>
+```
 
 在本例中，所有三个字段都是必填的。如果表单被提交且其中一个字段未填写，该字段将通过其`label`元素中的额外文本进行高亮显示：
 
+```
 <label for="name">Name
   <strong class="error">is required</strong>
 </label>
+```
 
 一旦所有必填字段都已填写，表单将不再显示。相反，会输出以下信息：
 
+```
 <p class="feedback">
 Thank you for getting in touch
 </p>
+```
 
 此时，通过表单提交的数据可以通过电子邮件发送给网站所有者。这些数据也可以存储在数据库中或记录到文件中。
 
@@ -3384,6 +3405,7 @@ Thank you for getting in touch
 
 我将使用一些Ajax将表单数据直接发送到`formlogic.php`文件。为此，我将编写一个名为`sendData`的函数。这个函数与之前已经看到的`grabFile`函数非常相似。该函数接受一个参数，即将要发送到服务器的数据字符串：
 
+```
 function sendData(data) {
   var request = getHTTPObject();
   if (request) {
@@ -3399,15 +3421,20 @@ function sendData(data) {
     return false;
   }
 }
+```
 
 这一次，向服务器发送的请求使用的是`POST`方法，而非`GET`：
 
+```
 request.open( "POST", "formlogic.php", true );
+```
 
 由于正在发送数据，使用`setRequestHeader`正确设置content-type头部非常重要：
 
+```
 request.setRequestHeader("Content-Type",
   "application/x-www-form-urlencoded");
+```
 
 `sendData`函数返回一个布尔值。如果成功，该函数返回`true`。另一方面，如果无法发起Ajax请求，`sendData`返回`false`。
 
@@ -3415,10 +3442,13 @@ request.setRequestHeader("Content-Type",
 
 我将编写一个名为`prepareForm`的函数，它将在文档加载时执行：
 
+```
 window.onload = prepareForm;
+```
 
 由于我不想对浏览器的能力或当前文档的内容做任何假设，我让此函数先进行一些对象检测：
 
+```
 function prepareForm() {
   if(!document.getElementById) {
     return;
@@ -3427,13 +3457,17 @@ function prepareForm() {
     return;
   }
 }
+```
 
 现在我可以将一个匿名函数分配给表单的`onsubmit`事件处理器：
 
+```
 document.getElementById("contactform").onsubmit = function() {
+```
 
 要从表单中提取数据，我可以利用一个便捷的快捷方式。`elements`数组包含指定表单中的所有表单元素。遍历这一个数组比使用DOM查找所有的`input`元素、`textarea`元素和`select`元素要容易得多：
 
+```
 var data = "";
 for (var i=0; i<this.elements.length; i++) {
   data+= this.elements[i].name;
@@ -3441,6 +3475,7 @@ for (var i=0; i<this.elements.length; i++) {
   data+= escape(this.elements[i].value);
   data+= "&";
 }
+```
 
 变量`data`初始为空字符串。当我遍历表单元素时，每个元素的名称（`name`、`email`、`message`等）被添加到此字符串中。然后，追加一个等号。之后，添加表单元素的值。我使用JavaScript的`escape`函数来确保值在发往服务器的旅程中被正确格式化。最后，添加一个&符号来分隔名称/值对。
 
@@ -3448,12 +3483,15 @@ for (var i=0; i<this.elements.length; i++) {
 
 再一次，我将返回一个布尔值。这与`sendData`返回的值相反：
 
+```
 return !sendData(data);
+```
 
 如果`sendData`正确工作并返回`true`，则此语句返回`false`。默认的浏览器行为将被取消。表单将不会被提交。
 
 以下是完成的函数：
 
+```
 function prepareForm() {
   if(!document.getElementById) {
     return;
@@ -3473,10 +3511,9 @@ function() {
     return !sendData(data);
   };
 }
+```
 
 当表单被提交时，其数据被提取并传递给`sendData`函数。`sendData`函数随后将这些数据发送到`formlogic.php`文件。服务器发回响应，我需要在`parseResponse`函数中处理此响应：
-
-
 
 ```javascript
 function parseResponse(request) {
@@ -3490,99 +3527,101 @@ function parseResponse(request) {
 }
 ```
 
-从服务器返回的 `responseText` 属性通过更新 `innerHTML` 属性被插入到“container” `div` 中。随后 `prepareForm` 函数被再次执行。如果服务器返回的表单包含错误消息，我将需要再次拦截其 `submit` 事件。
+从服务器返回的`responseText`属性通过更新`innerHTML`属性被插入到`container` `div`中。随后`prepareForm`函数被再次执行。如果服务器返回的表单包含错误消息，我将需要再次拦截其`submit`事件。
 
-这些函数 `prepareForm`、`sendData` 和 `parseResponse` 均放置在一个名为 `ajax.js` 的文件中，以及 `getHTTPObject` 函数。我只需要在网页的 `<script>` 标签中引用这个 JavaScript 文件即可：
+这些函数`prepareForm`、`sendData`和`parseResponse`均放置在一个名为`ajax.js`的文件中，以及`getHTTPObject`函数。我只需要在网页的`<script>`标签中引用这个JavaScript文件即可：
 
 ```html
 <script type="text/javascript" src="ajax.js"></script>
 ```
 
-现在，表单处理将在无需任何全页刷新的情况下进行，如图 5.6 所示。
+现在，表单处理将在无需任何全页刷新的情况下进行，如图5.6所示。
 
 ![](img/a49921737ab5f27c06f222d93fc0719d_123_0.png)
-**图 5.6** 必填项在无需整页刷新的情况下被标记。
+
+**图5.6** 必填项在无需整页刷新的情况下被标记。
 
 ## 表单验证
 
-使用 JavaScript 来避免表单处理时的页面刷新并非新鲜事。表单验证是 JavaScript 最早的应用场景之一。但它一直存在一个巨大的缺陷：不可靠性。
+使用JavaScript来避免表单处理时的页面刷新并非新鲜事。表单验证是JavaScript最早的应用场景之一。但它一直存在一个巨大的缺陷：不可靠性。
 
-你不能仅依赖 JavaScript 来验证表单中提交的数据。用户的浏览器可能不支持 JavaScript，或者该功能被直接关闭了。无论在浏览器中使用 JavaScript 进行了怎样的表单验证，一旦信息到达服务器，必须使用另一种编程语言重复一遍。这意味着你要重复编写逻辑，而这绝不是一个好主意。
+你不能仅依赖JavaScript来验证表单中提交的数据。用户的浏览器可能不支持JavaScript，或者该功能被直接关闭了。无论在浏览器中使用JavaScript进行了怎样的表单验证，一旦信息到达服务器，必须使用另一种编程语言重复一遍。这意味着你要重复编写逻辑，而这绝不是一个好主意。
 
-Hijax 方法避免了这种重复。JavaScript 仅被用作一种传输机制，负责将数据发送到服务器并显示随后的响应。
+Hijax方法避免了这种重复。JavaScript仅被用作一种传输机制，负责将数据发送到服务器并显示随后的响应。
 
-如果我想让联系表单的处理变得更智能，我只需要更新我的 `formlogic.php` 文件。我可以添加一个正则表达式来测试 `email` 值是否看起来像一个正确的电子邮件地址。或者我可能会决定 `name` 字段最终并非必填项。这些都属于处理逻辑的决策。将这些处理仅放在服务器上进行要好得多。每次做出新决定，我只需要更新一个文件。因为 JavaScript 文件并没有试图做任何过于复杂的事情，所以它不会受到业务逻辑变化的影响。
+如果我想让联系表单的处理变得更智能，我只需要更新我的`formlogic.php`文件。我可以添加一个正则表达式来测试`email`值是否看起来像一个正确的电子邮件地址。或者我可能会决定`name`字段最终并非必填项。这些都属于处理逻辑的决策。将这些处理仅放在服务器上进行要好得多。每次做出新决定，我只需要更新一个文件。因为JavaScript文件并没有试图做任何过于复杂的事情，所以它不会受到业务逻辑变化的影响。
 
-这也将 JavaScript 文件的大小保持在最低限度。一个非常复杂的表单可能需要大量错综复杂的验证。所有这些都可以在服务器端处理，因为在那里文件大小不是问题。即使表单的复杂度增加，JavaScript 依然保持简单。
+这也将JavaScript文件的大小保持在最低限度。一个非常复杂的表单可能需要大量错综复杂的验证。所有这些都可以在服务器端处理，因为在那里文件大小不是问题。即使表单的复杂度增加，JavaScript依然保持简单。
 
 对于最终用户来说，这一切都是技术细节。最终结果就是在浏览器中获得无需刷新页面的快响应。
 
 ## 具有欺骗性的富客户端
 
-传统上，Web 浏览器在 Web 服务器面前扮演着从属角色。服务器可以处理信息，从数据库中提取动态数据，并将生成的页面发送给浏览器。浏览器仅仅是检索和显示这些页面的容器。在这种关系中，浏览器被称为“瘦客户端”（thin client）。而服务器才是核心操作发生的地方。
+传统上，Web浏览器在Web服务器面前扮演着从属角色。服务器可以处理信息，从数据库中提取动态数据，并将生成的页面发送给浏览器。浏览器仅仅是检索和显示这些页面的容器。在这种关系中，浏览器被称为"瘦客户端"（thin client）。而服务器才是核心操作发生的地方。
 
-随着 JavaScript 的出现，浏览器的能力得到了增强。现在可以直接在浏览器中创建更丰富、更动态的交互。但正如我们所见，JavaScript 的存在不能被视为理所当然。如果以一种非侵入式（unobtrusive）的方式使用 JavaScript，就可以在不破坏基础客户端-服务器模型的情况下添加增强功能，以提升用户体验。从根本上说，浏览器仍然是一个瘦客户端。
+随着JavaScript的出现，浏览器的能力得到了增强。现在可以直接在浏览器中创建更丰富、更动态的交互。但正如我们所见，JavaScript的存在不能被视为理所当然。如果以一种非侵入式（unobtrusive）的方式使用JavaScript，就可以在不破坏基础客户端-服务器模型的情况下添加增强功能，以提升用户体验。从根本上说，浏览器仍然是一个瘦客户端。
 
-一些 Ajax 应用改变了权力平衡。通过利用 JavaScript 和 DOM 的力量，这些应用使用浏览器来执行对于应用程序运行至关重要的复杂编程任务。我认为这是一个错误。
+一些Ajax应用改变了权力平衡。通过利用JavaScript和DOM的力量，这些应用使用浏览器来执行对于应用程序运行至关重要的复杂编程任务。我认为这是一个错误。
 
-在 Ajax 出现之前，一个网站就像一家自助餐厅。每次你想要某些信息，浏览器必须获取一个新页面。在自助餐厅里，每当你想要食物时，你必须走到柜台前点餐。
+在Ajax出现之前，一个网站就像一家自助餐厅。每次你想要某些信息，浏览器必须获取一个新页面。在自助餐厅里，每当你想要食物时，你必须走到柜台前点餐。
 
-给网站添加 Ajax 就像是为餐厅雇佣一名服务员。顾客不再需要走到柜台点餐，服务员会代替他们将订单传给柜台。这带来了更加愉悦的用餐体验。
+给网站添加Ajax就像是为餐厅雇佣一名服务员。顾客不再需要走到柜台点餐，服务员会代替他们将订单传给柜台。这带来了更加愉悦的用餐体验。
 
-仅仅因为你雇佣了一名服务员，并不意味着你可以解雇厨师。但这正是某些 Ajax 应用试图做的事情。他们不满足于让服务员点餐和端菜，还让服务员承担所有的烹饪工作。
+仅仅因为你雇佣了一名服务员，并不意味着你可以解雇厨师。但这正是某些Ajax应用试图做的事情。他们不满足于让服务员点餐和端菜，还让服务员承担所有的烹饪工作。
 
 烹饪应该在厨房进行。应用程序逻辑应该在服务器端。这样对每个人都更好。基于服务器的应用运行起来会更加一致。浏览器的环境实在是太不可预测了。
 
-你的用户只关心一件事：他们在访问你的网站时希望获得愉悦的体验。这正是 Ajax 真正的力量所在。Ajax 允许你创建响应迅速的交互式界面。如果使用正确，Ajax 可以成为一名迷人且周到的服务员。
+你的用户只关心一件事：他们在访问你的网站时希望获得愉悦的体验。这正是Ajax真正的力量所在。Ajax允许你创建响应迅速的交互式界面。如果使用正确，Ajax可以成为一名迷人且周到的服务员。
 
-从用户的角度来看，浏览器现在似乎是一个“富客户端”（rich client）。富客户端就像桌面应用程序一样，能立即在原位（in situ）执行处理指令。一个使用 Hijax 方法增强的网站看起来也是如此。表单被处理，链接被获取，所有这些都无需浏览器刷新。操作似乎发生在浏览器内部。而事实上，所有沉重的计算工作仍然在它本应在的服务器端完成。
+从用户的角度来看，浏览器现在似乎是一个"富客户端"（rich client）。富客户端就像桌面应用程序一样，能立即在原位（in situ）执行处理指令。一个使用Hijax方法增强的网站看起来也是如此。表单被处理，链接被获取，所有这些都无需浏览器刷新。操作似乎发生在浏览器内部。而事实上，所有沉重的计算工作仍然在它本应在的服务器端完成。
 
-Hijax 具有欺骗性。它营造出浏览器是一个富客户端的幻象，而实际上这只是一个门面。不要因为这样欺骗用户而感到不安。借用詹姆斯·卡维尔（James Carville）的话来说，“关键在于用户体验，笨蛋。”这才是真正重要的事情。
+Hijax具有欺骗性。它营造出浏览器是一个富客户端的幻象，而实际上这只是一个门面。不要因为这样欺骗用户而感到不安。借用詹姆斯·卡维尔（James Carville）的话来说，"关键在于用户体验，笨蛋。"这才是真正重要的事情。
 
 ## 本章小结
 
-当渐进增强（progressive enhancement）遇到 Ajax 时，结果就是 Hijax。根据我的经验，这是一种应用 Ajax 的简单但强大的方式。它允许你更新页面的部分内容而不是整个页面，这正是 Ajax 交互的精髓。最重要的是，Hijax 的增强功能可以在不改变页面基本功能的情况下被剥离。你网站的业务逻辑依然坚如磐石。
+当渐进增强（progressive enhancement）遇到Ajax时，结果就是Hijax。根据我的经验，这是一种应用Ajax的简单但强大的方式。它允许你更新页面的部分内容而不是整个页面，这正是Ajax交互的精髓。最重要的是，Hijax的增强功能可以在不改变页面基本功能的情况下被剥离。你网站的业务逻辑依然坚如磐石。
 
 你在本章中看到的示例简单且直接。通过增加一些交互性的趣味元素，它们可以得到极大的提升。在下一章中，我们将研究如何为用户提供更多的反馈。
 
-我还想探讨一些重要问题。Ajax 可以是一个有用的工具，但有时它引入的问题与它解决的问题一样多。使用 Ajax 开发会带来一系列独特的挑战。我将向你展示如何应对它们。
+我还想探讨一些重要问题。Ajax可以是一个有用的工具，但有时它引入的问题与它解决的问题一样多。使用Ajax开发会带来一系列独特的挑战。我将向你展示如何应对它们。
 
 ![](img/a49921737ab5f27c06f222d93fc0719d_128_0.png)
 
-# Ajax 挑战
+# Ajax挑战
 
 # 6
 
 ![](img/a49921737ab5f27c06f222d93fc0719d_129_0.png)
+
 ![](img/a49921737ab5f27c06f222d93fc0719d_129_1.png)
 
 ## 避坑指南
 
-Ajax 允许你探索新的交互形式。你不再受限于基于页面的请求和响应模型，现在可以自由地为网站添加更离散、更聚焦的交互性。这很令人兴奋，但同时也潜在地具有危险性。
+Ajax允许你探索新的交互形式。你不再受限于基于页面的请求和响应模型，现在可以自由地为网站添加更离散、更聚焦的交互性。这很令人兴奋，但同时也潜在地具有危险性。
 
-改变可能令人恐惧。虽然人们很想扫除之前的一切，用闪亮的新 Ajax 界面取而代之，但这将是一个错误。你的用户不会为此感谢你。指望人们能瞬间适应一个“勇敢新世界”般的 Web 环境是不现实的。
+改变可能令人恐惧。虽然人们很想扫除之前的一切，用闪亮的新Ajax界面取而代之，但这将是一个错误。你的用户不会为此感谢你。指望人们能瞬间适应一个"勇敢新世界"般的Web环境是不现实的。
 
-用户的预期是建立在约定（conventions）之上的。Ajax 打破了其中一些约定。这意味着 Ajax 干扰了用户的预期，这很少是一个明智之举。
+用户的预期是建立在约定（conventions）之上的。Ajax打破了其中一些约定。这意味着Ajax干扰了用户的预期，这很少是一个明智之举。
 
-如果我们不小心，Ajax 这种打破约定、颠覆预期的特质会把用户吓跑。如果他们对新 Ajax 界面的初步体验是不舒适的，他们可能永远不会回来。相反，如果对 Ajax 的过渡处理得谨慎且得体，新的增强功能将会显得自然、有用且令人愉悦。
+如果我们不小心，Ajax这种打破约定、颠覆预期的特质会把用户吓跑。如果他们对新Ajax界面的初步体验是不舒适的，他们可能永远不会回来。相反，如果对Ajax的过渡处理得谨慎且得体，新的增强功能将会显得自然、有用且令人愉悦。
 
-
-
-尽管围绕 Ajax 的炒作铺天盖地，有时听起来它仿佛是一剂万能灵药。虽然 Ajax 确实能带来巨大益处，但也引入了许多设计挑战。如果不能巧妙应对这些挑战，你最终可能反而会被这"万能灵药"伤及自身。
+尽管围绕Ajax的炒作铺天盖地，有时听起来它仿佛是一剂万能灵药。虽然Ajax确实能带来巨大益处，但也引入了许多设计挑战。如果不能巧妙应对这些挑战，你最终可能反而会被这"万能灵药"伤及自身。
 
 ## 向后兼容
 
-Ajax 等技术可用于提升用户体验。但这并不意味着该技术应成为访问内容的必要条件。
+Ajax等技术可用于提升用户体验。但这并不意味着该技术应成为访问内容的必要条件。
 
-用户无需 CSS 和 JavaScript 也能访问内容。如果未能周全地应用这些技术，它们可能成为可怕的障碍。但只要以渐进增强原则驱动你的工作流程，最终结果将始终具有向后兼容性。这对于由 Ajax 驱动的网页尤为重要。
+用户无需CSS和JavaScript也能访问内容。如果未能周全地应用这些技术，它们可能成为可怕的障碍。但只要以渐进增强原则驱动你的工作流程，最终结果将始终具有向后兼容性。这对于由Ajax驱动的网页尤为重要。
 
-正如你所见，Hijax 方法允许你将 Ajax 作为增强功能而非必要条件来实现。只要有足够的规划和考量，就不会遗漏任何用户。与任何方法论一样，这里存在一个无法回避的问题：它能大规模应用吗？
+正如你所见，Hijax方法允许你将Ajax作为增强功能而非必要条件来实现。只要有足够的规划和考量，就不会遗漏任何用户。与任何方法论一样，这里存在一个无法回避的问题：它能大规模应用吗？
 
-到目前为止你看到的所有示例都相对简单。驱动联系详情页面或反馈表单的用户交互，无非是点击链接或填写表单。这并不新鲜。万维网本就建立在链接和表单之上：`GET` 和 `POST`。改变的是处理这些请求的方式。得益于 Ajax，浏览器仿佛成为了一个富客户端，能在页面内显示响应而无需刷新整个页面。由于传统链接和表单会触发 Ajax 功能，因此不难确保始终提供备选方案。
+到目前为止你看到的所有示例都相对简单。驱动联系详情页面或反馈表单的用户交互，无非是点击链接或填写表单。这并不新鲜。万维网本就建立在链接和表单之上：`GET`和`POST`。改变的是处理这些请求的方式。得益于Ajax，浏览器仿佛成为了一个富客户端，能在页面内显示响应而无需刷新整个页面。由于传统链接和表单会触发Ajax功能，因此不难确保始终提供备选方案。
 
-我至今给出的示例都是通过 Ajax 增强的传统网站，使其变得更像应用程序。但术语 *Ajax* 也指代那些恰好运行在 Web 上的应用程序。
+我至今给出的示例都是通过Ajax增强的传统网站，使其变得更像应用程序。但术语*Ajax*也指代那些恰好运行在Web上的应用程序。
 
-*Ajax* 是一个广义术语。它涵盖了从响应灵敏的表单到文字处理器和电子邮件客户端的一切。这是一个渐变谱系，一端是简单的网页，另一端是成熟的浏览器内聊天客户端。随着你在此谱系上移动，提供向后兼容性的挑战也随之增加。
+
+
+`Ajax`是一个广义术语。它涵盖了从响应灵敏的表单到文字处理器和电子邮件客户端的一切。这是一个渐变谱系，一端是简单的网页，另一端是成熟的浏览器内聊天客户端。随着你在此谱系上移动，提供向后兼容性的挑战也随之增加。
 
 ## 文档与应用程序
 
@@ -3648,8 +3687,6 @@ Hijax 会将你带入从网页到 Web 应用的渐变谱系中相当远的位置
 
 使用代理的巨大优势在于 JavaScript 并非必要条件。你可以构建一个网站，使用整页请求从 Web 服务检索数据，然后使用 Hijax 来添加 Ajax 交互性。如果不支持 Ajax，数据仍然可以通过传统的整页交互来访问。
 
-
-
 如果你将服务器作为与 Web 服务通信的代理，那么在服务器端解析数据比在客户端使用 JavaScript 更为合理。在服务器上将 XML 转换为 HTML 要比在浏览器中快得多。
 
 ## 反馈
@@ -3658,7 +3695,7 @@ Web 浏览器基于传统的、以页面为单位的内容交付模型构建而�
 
 ![](img/a49921737ab5f27c06f222d93fc0719d_135_0.png)
 
-在大多数 Web 浏览器中，这种反馈以某种动画形式呈现。Apple 的 Safari 会在地址栏背景中显示一条扩展的彩色条纹。在 Microsoft 的 Internet Explorer 中，当用户请求新页面时，角落中normally static的徽标开始旋转。
+在大多数 Web 浏览器中，这种反馈以某种动画形式呈现。Apple 的 Safari 会在地址栏背景中显示一条扩展的彩色条纹。在 Microsoft 的 Internet Explorer 中，当用户请求新页面时，角落中 normally static 的徽标开始旋转。
 
 使用 Ajax 时，浏览器获取整个新页面的默认行为被使用 JavaScript 和事件处理程序编写的自定义操作所取代。由于常规行为被取消，浏览器不再指示有操作正在进行。*我们需要自己提供这种反馈*。
 
@@ -3710,6 +3747,7 @@ function grabFile(file) {
 当点击一个名字时，GIF 动画会出现在 `"details" div` 中，这正是该人物详情将要显示的位置。
 
 ![](img/a49921737ab5f27c06f222d93fc0719d_137_0.png)
+
 **图 6.7** 一个旋转的图标能让访问者放心，知道正在发生某些事情。
 
 一旦 Ajax 调用成功完成，加载图像会在 `parseResponse` 函数中通过使用 `innerHTML` 而被清除：
@@ -3760,6 +3798,7 @@ function sendData(data) {
 现在表单一提交，进度条就会出现。
 
 ![](img/a49921737ab5f27c06f222d93fc0719d_138_0.png)
+
 **图 6.8** 联系表单下方的进度条显示有操作正在进行。
 
 #### 刚刚发生了什么？
@@ -3769,6 +3808,7 @@ function sendData(data) {
 在 37signals 的 Ajax 应用套件中，该公司开创了**黄色渐淡技术**（www.37signals.com）。通过 JavaScript 和 CSS 的结合，Web 页面以黄色背景色显示已更新的元素，然后逐渐淡出为白色。这是显示当前页面哪一部分发生了变化的有效方式。
 
 ![](img/a49921737ab5f27c06f222d93fc0719d_139_0.png)
+
 **图 6.9** 黄色渐淡技术实际应用。
 
 黄色渐淡技术已被相当多的网站采用——以至于它现在成为了一种约定俗成的惯例。这是件好事。用户发现重复的惯例令人安心。视觉反馈技术使用得越多，其含义就越清晰。
@@ -3841,7 +3881,9 @@ if (red == 255 && green == 255 && blue == 255) {
 
 `fadeUp` 函数允许我添加黄色渐淡，或任何其他颜色的渐淡，只要我的文档背景色是白色的。
 
-我可以通过更新 `parseResponse` 函数为联系详情页面添加黄色渐淡效果：
+
+
+我可以通过更新`parseResponse`函数为联系详情页面添加黄色渐淡效果：
 
 ```javascript
 function parseResponse(request) {
@@ -3855,9 +3897,7 @@ function parseResponse(request) {
 }
 ```
 
-我从值为 `rgb(255,255,153)` 的黄色阴影开始。当 Ajax 响应返回时，这种颜色将渐淡为白色。
-
-
+我从值为`rgb(255,255,153)`的黄色阴影开始。当 Ajax 响应返回时，这种颜色将渐淡为白色。
 
 **图 6.10** 添加微妙的淡入效果可以指示页面的哪个部分已更新。
 
@@ -3865,7 +3905,7 @@ function parseResponse(request) {
 
 **图 6.11** 淡红色的淡入效果表示存在问题区域。
 
-我编写的 *fadeIn* 函数非常基础，仅适用于白色背景的文档。要获得更健壮的脚本，请查看 Fade Anything Technique（www.axentric.com/aside/fat/）。
+我编写的`fadeIn`函数非常基础，仅适用于白色背景的文档。要获得更健壮的脚本，请查看 Fade Anything Technique（`www.axentric.com/aside/fat/`）。
 
 ## 浏览器行为
 
@@ -3901,9 +3941,9 @@ Hijax 提供可添加书签的链接这很好，但对大多数用户来说，�
 
 ## 解决方案
 
-许多聪明的 Ajax 开发人员试图解决书签和后退按钮的双重挑战。大多数解决方案涉及向当前 URL 添加内部锚点，以及一些使用隐藏 iframe 的技巧（参见 Brad Neuberg 的文章 "Ajax: How to Handle Bookmarks and Back Buttons"，网址为 http://onjava.com/lpt/a/6293）。
+许多聪明的 Ajax 开发人员试图解决书签和后退按钮的双重挑战。大多数解决方案涉及向当前 URL 添加内部锚点，以及一些使用隐藏`iframe`的技巧（参见 Brad Neuberg 的文章 "Ajax: How to Handle Bookmarks and Back Buttons"，网址为`http://onjava.com/lpt/a/6293`）。
 
-这些解决方案虽然巧妙，但不可避免地很复杂。它们需要如此，以处理不同浏览器表现出的不一致行为（参见 Mike Stenhouse 的文章 "Fixing the Back Button and Enabling Bookmarking for Ajax Apps"，网址为 www.contentwithstyle.co.uk/Articles/38/）。
+这些解决方案虽然巧妙，但不可避免地很复杂。它们需要如此，以处理不同浏览器表现出的不一致行为（参见 Mike Stenhouse 的文章 "Fixing the Back Button and Enabling Bookmarking for Ajax Apps"，网址为`www.contentwithstyle.co.uk/Articles/38/`）。
 
 最好从一开始就避免这种情况。
 
@@ -3925,13 +3965,11 @@ Hijax 提供可添加书签的链接这很好，但对大多数用户来说，�
 
 Web 的传统模型非常适用于纸质原型：一个线框图代表一个网页。一旦 Ajax 加入，这种平衡就被打破了。如何在单个文档中测试多个交互？
 
-正如 Jeffrey Zeldman 简洁地指出的那样，“为 Ajax 绘制线框图是一件麻烦事”（www.alistapart.com/articles/web3point0/）。
+正如 Jeffrey Zeldman 简洁地指出的那样，“为 Ajax 绘制线框图是一件麻烦事”（`www.alistapart.com/articles/web3point0/`）。
 
 我没有这个问题的任何简单解决方案。可能是线框图的实用性被 Ajax 的复杂性所抵消。确实很难想象 Ajax 交互如何在开发过程的早期进行测试。
 
 似乎别无选择，只能尽早开发一个基本原型进行测试。这个原型不需要完全功能齐全，只要它能模拟 Ajax 的效果即可。效果可能很简单，就是根据用户操作隐藏和显示文档的部分内容。这可以通过一些直接的 DOM 脚本来实现，而无需完整的 Ajax 请求。然而，即使是最简单的功能原型也将比简单的线框图需要更多的时间和精力。
-
-
 
 ## 时间之箭
 
@@ -3986,7 +4024,7 @@ Web 的传统模型非常适用于纸质原型：一个线框图代表一个网�
 
 有一种常见的误解，认为屏幕阅读器无法执行 JavaScript。事实上，底层的 Web 浏览器决定了 JavaScript 的执行能力。不过，屏幕阅读器对 JavaScript 事件的响应确实不太稳定。
 
-例如，如果 JAWS 处于虚拟 PC 光标模式，它会响应 `onclick` 事件处理程序并刷新其虚拟缓冲区。其他事件处理程序的表现就没那么好了。作为 Ajax 请求核心的 `onreadystatechange` 事件处理程序不会触发刷新。Window-Eyes 在浏览模式下的情况也类似。
+例如，如果 JAWS 处于虚拟 PC 光标模式，它会响应`onclick`事件处理程序并刷新其虚拟缓冲区。其他事件处理程序的表现就没那么好了。作为 Ajax 请求核心的`onreadystatechange`事件处理程序不会触发刷新。Window-Eyes 在浏览模式下的情况也类似。
 
 ## 屏幕阅读器与 Ajax
 
@@ -3994,15 +4032,15 @@ Web 的传统模型非常适用于纸质原型：一个线框图代表一个网�
 
 向视力正常的用户展示页面的某个部分已更新是很容易的。黄色渐隐技术就是一种方式，它不仅能表明内容已被插入或更改，还能精确地指出更改发生的位置。为屏幕阅读器提供类似的反馈机制则是一个巨大的挑战。
 
-屏幕阅读器对某些元素有所偏好。例如，屏幕阅读器可以直接访问表单字段和链接，因为它们可以获取焦点。表格也被视为特殊情况，因为它们的结构可能非常复杂，使盲人用户难以导航。如果 Ajax 请求的结果是创建或更新了这类元素，屏幕阅读器就更有可能注意到生成的内容。实际上，大多数 Ajax 请求是在 `div` 等普通元素中生成内容。
+屏幕阅读器对某些元素有所偏好。例如，屏幕阅读器可以直接访问表单字段和链接，因为它们可以获取焦点。表格也被视为特殊情况，因为它们的结构可能非常复杂，使盲人用户难以导航。如果 Ajax 请求的结果是创建或更新了这类元素，屏幕阅读器就更有可能注意到生成的内容。实际上，大多数 Ajax 请求是在`div`等普通元素中生成内容。
 
 ## 赋予焦点
 
-利用屏幕阅读器固有偏好性的一种方法是更新页面的标签顺序。这是可聚焦元素（如链接和表单字段）被访问的顺序。每个可聚焦元素都有一个标签索引，通常是自动分配的，但也可以通过 `tabindex` 属性来设置。不过，随意修改文档的默认标签顺序并不是一个好主意。结构良好的网页已经拥有合理的标签顺序。
+利用屏幕阅读器固有偏好性的一种方法是更新页面的标签顺序。这是可聚焦元素（如链接和表单字段）被访问的顺序。每个可聚焦元素都有一个标签索引，通常是自动分配的，但也可以通过`tabindex`属性来设置。不过，随意修改文档的默认标签顺序并不是一个好主意。结构良好的网页已经拥有合理的标签顺序。
 
-有一个略显取巧的技巧，可以让你在不打乱现有标签顺序的情况下使某个元素可聚焦。`tabindex` 属性本应包含一个从零到 32,767 的正值。尽管如此，许多浏览器允许你指定一个负的 `tabindex` 值。在这些浏览器中，将 `tabindex` 值设为 -1 可以使一个元素接受焦点，而不会干扰文档的标签顺序。
+有一个略显取巧的技巧，可以让你在不打乱现有标签顺序的情况下使某个元素可聚焦。`tabindex`属性本应包含一个从零到 32,767 的正值。尽管如此，许多浏览器允许你指定一个负的`tabindex`值。在这些浏览器中，将`tabindex`值设为 -1 可以使一个元素接受焦点，而不会干扰文档的标签顺序。
 
-下面是一个由 `onreadystatechange` 事件处理程序触发的典型函数。`responseText` 属性通过 `innerHTML` 被放入一个名为 "details" 的 `div` 中：
+下面是一个由`onreadystatechange`事件处理程序触发的典型函数。`responseText`属性通过`innerHTML`被放入一个名为 "details" 的`div`中：
 
 ```javascript
 function parseResponse(request) {
@@ -4015,11 +4053,9 @@ function parseResponse(request) {
 }
 ```
 
+一旦`"details"` `div`被更新，给它一个`tabindex`值为负一。然后，可以使用 JavaScript 使该`div`获得焦点：
 
-
-一旦 `"details"` `div 被更新，给它一个 `tabindex` 值为负一。然后，可以使用 JavaScript 使该 `div` 获得焦点：
-
-```
+```javascript
 function parseResponse(request) {
   if (request.readyState == 4) {
     if (request.status == 200 || request.status == 304) {
@@ -4032,21 +4068,21 @@ function parseResponse(request) {
 }
 ```
 
-这种技术并非在所有浏览器中都有效。Safari 会忽略负的 `tabindex` 值。如果像 JAWS 或 Window-Eyes 这样的屏幕阅读器处于使用虚拟缓冲区的模式，元素将获得焦点，但其内容不会被自动读取。用户需要手动请求刷新虚拟缓冲区后，内容才能被读取。如果屏幕阅读器处于不使用虚拟缓冲区的模式，用户无需执行任何操作即可听到新内容。
+这种技术并非在所有浏览器中都有效。Safari 会忽略负的`tabindex`值。如果像 JAWS 或 Window-Eyes 这样的屏幕阅读器处于使用虚拟缓冲区的模式，元素将获得焦点，但其内容不会被自动读取。用户需要手动请求刷新虚拟缓冲区后，内容才能被读取。如果屏幕阅读器处于不使用虚拟缓冲区的模式，用户无需执行任何操作即可听到新内容。
 
-关于不同设备对该技术的反应，欲了解更多信息，请阅读 Steve Faulkner 和 Gez Lemon 的测试结果 ([http://juicystudio.com/article/making-ajax-work-with-screen-readers.php](http://juicystudio.com/article/making-ajax-work-with-screen-readers.php))。
+关于不同设备对该技术的反应，欲了解更多信息，请阅读 Steve Faulkner 和 Gez Lemon 的测试结果（`http://juicystudio.com/article/making-ajax-work-with-screen-readers.php`）。
 
 ## 警报（ALERTING）
 
-`tabindex` 技巧并非在所有情况下都有效。屏幕阅读器的品牌、版本和模式存在许多可能的排列组合，更不用说底层浏览器的所有可能变体了。
+`tabindex`技巧并非在所有情况下都有效。屏幕阅读器的品牌、版本和模式存在许多可能的排列组合，更不用说底层浏览器的所有可能变体了。
 
-另一种方法是使用 `alert` 对话框来通知用户页面的部分内容已更改。这些对话框是操作系统的一部分，因此屏幕阅读器注意到它们的可能性更大。
+另一种方法是使用`alert`对话框来通知用户页面的部分内容已更改。这些对话框是操作系统的一部分，因此屏幕阅读器注意到它们的可能性更大。
 
-使用 `alert` 对话框最大的缺点是它们具有侵入性且令人厌烦。它们几乎肯定应该是一个可选的（opt-in）额外功能。
+使用`alert`对话框最大的缺点是它们具有侵入性且令人厌烦。它们几乎肯定应该是一个可选的（opt-in）额外功能。
 
 例如，你可以用一个复选框和一段文字开始你的文档，询问用户是否希望收到 Ajax 更新通知：
 
-```
+```html
 <p class="opt-in-question">
 <label>
 Would you like to be informed of changes made to the page
@@ -4056,7 +4092,9 @@ by JavaScript?
 </p>
 ```
 
-使用外部 CSS 文件，可以将此消息对视力正常的用户隐藏。不要犯使用 `display: none;` 的错误，因为这会让屏幕阅读器也隐藏该消息。相反，尝试将消息移出屏幕范围：
+
+
+使用外部 CSS 文件，可以将此消息对视力正常的用户隐藏。不要犯使用`display: none;`的错误，因为这会让屏幕阅读器也隐藏该消息。相反，尝试将消息移出屏幕范围：
 
 ```
 .opt-in-question {
@@ -4066,7 +4104,7 @@ by JavaScript?
 }
 ```
 
-现在可以更新 `parseResponse` 函数，以检测复选框是否被勾选。如果被勾选，则显示 `alert` 对话框：
+现在可以更新`parseResponse`函数，以检测复选框是否被勾选。如果被勾选，则显示`alert`对话框：
 
 ```
 function parseResponse(request) {
@@ -4083,29 +4121,29 @@ function parseResponse(request) {
 }
 ```
 
-只要复选框被勾选，每次页面更新时都会弹出 `alert` 对话框。
+只要复选框被勾选，每次页面更新时都会弹出`alert`对话框。
 
 这种技术并没有太大帮助。虽然能通知屏幕阅读器用户文档已更新是很不错，但他们随后必须手动触发对整个文档的刷新阅读。这可能会让人极其沮丧。在许多方面，如果屏幕阅读器用户能够完全绕过 Ajax 功能，对他们来说会更好。
 
-> **注意 (note)**
-
-隐藏表单元素会引入新问题。隐藏的表单元素仍包含在文档的 Tab 索引中。对于使用键盘导航的用户来说，这会令人困惑。肢体障碍者可能无法使用鼠标，而依赖键盘导航。试图帮助一组残障用户（视觉障碍者）而将表单隐藏在屏幕外，会导致另一组用户出现问题。
+> **注意（note）**
+>
+> 隐藏表单元素会引入新问题。隐藏的表单元素仍包含在文档的 Tab 索引中。对于使用键盘导航的用户来说，这会令人困惑。肢体障碍者可能无法使用鼠标，而依赖键盘导航。试图帮助一组残障用户（视觉障碍者）而将表单隐藏在屏幕外，会导致另一组用户出现问题。
 
 ![](img/a49921737ab5f27c06f222d93fc0719d_154_0.png)
 
 **图 7.1** 每当页面更新时，都会显示一个警报对话框。
 
-## 现状 (State of the Art)
+## 现状（State of the Art）
 
 目前屏幕阅读器对 Ajax 的支持水平仍有很大的提升空间。显然，Web 浏览器的进化速度快于辅助技术。
 
-JavaScript 专家 James Edwards（以其绰号 Brothercake 更为人知）测试了当前的一批屏幕阅读器，以研究它们如何处理生成的内容 ([http://www.sitepoint.com/article/ajax-screen-readers-work](http://www.sitepoint.com/article/ajax-screen-readers-work))。
+JavaScript 专家 James Edwards（以其绰号 Brothercake 更为人知）测试了当前的一批屏幕阅读器，以研究它们如何处理生成的内容（[http://www.sitepoint.com/article/ajax-screen-readers-work](http://www.sitepoint.com/article/ajax-screen-readers-work)）。
 
 结果并不乐观。Brothercake 总结了他的发现：
 
 > “我不得不得出结论：除非能找到一种方法通知屏幕阅读器内容已更新，否则 Ajax 技术不能被认为是可访问的，并且在没有向用户预先提供真正的等效非脚本替代方案的情况下，不应在生产站点上使用。”
 
-在 Brothercake 发布其测试用例结果的同时，另一位可访问性专家也发布了一些与 Ajax 相关的材料。$\text{Building Accessible Websites}$ 的作者 Joe Clark 对 37signals 的 Basecamp 应用程序进行了一系列测试。他在 2006 年的 Iceweb 会议上展示了结果 ([http://joeclark.org/access/research/ice/iceweb2006-test-results.html](http://joeclark.org/access/research/ice/iceweb2006-test-results.html))。
+在 Brothercake 发布其测试用例结果的同时，另一位可访问性专家也发布了一些与 Ajax 相关的材料。`Building Accessible Websites` 的作者 Joe Clark 对 37signals 的 Basecamp 应用程序进行了一系列测试。他在 2006 年的 Iceweb 会议上展示了结果（[http://joeclark.org/access/research/ice/iceweb2006-test-results.html](http://joeclark.org/access/research/ice/iceweb2006-test-results.html)）。
 
 Joe 的结论不像 Brothercake 那样悲观：
 
@@ -4113,9 +4151,9 @@ Joe 的结论不像 Brothercake 那样悲观：
 
 尽管如此，结果明确表明，应用程序中 Ajax 的存在对于屏幕阅读器用户来说是一个令人厌烦的障碍。
 
-### 一个谦虚的建议 (A MODEST PROPOSAL)
+### 一个谦虚的建议（A MODEST PROPOSAL）
 
-Derek Featherstone 是 JavaScript、可访问性以及两者交集领域的专家 ([http://boxofchocolates.ca/](http://boxofchocolates.ca/))。
+Derek Featherstone 是 JavaScript、可访问性以及两者交集领域的专家（[http://boxofchocolates.ca/](http://boxofchocolates.ca/)）。
 
 在 2005 年伦敦的 @media 会议上，Derek 对屏幕阅读器技术处理生成内容的方式表达了他的沮丧。正如他所指出的，我们可以处理支持 JavaScript 的用户代理，也可以处理不支持 JavaScript 的用户代理，但我们很难处理像屏幕阅读器这样仅支持 JavaScript 功能子集的用户代理。Derek 提出了一个大胆的建议：我们应该鼓励使用过时屏幕阅读器技术的人关闭 JavaScript。毕竟，如果我们使用渐进增强（progressive enhancement）来构建 Ajax 应用程序，那么一切都会优雅降级。
 
@@ -4123,7 +4161,7 @@ Derek Featherstone 是 JavaScript、可访问性以及两者交集领域的专�
 
 尽管如此，Derek 的观点是正确的。如果 Ajax 对屏幕阅读器用户来说造成的阻碍多于帮助，那么非 Ajax 交互是更好的选择。如果屏幕阅读器不要启动 Ajax 请求，以免稍后在关键点失败，那将是更好的。
 
-## 绕过 AJAX (BYPASSING AJAX)
+## 绕过 AJAX（BYPASSING AJAX）
 
 隐藏的复选框可以被重新用于绕过 Ajax 功能：
 
@@ -4168,8 +4206,6 @@ Google 的 Gmail 应用程序包含一段理论上仅向屏幕阅读器显示的
 
 这是一个周到的补充，但它要求存在一个“独立但平等”的非 Ajax 站点。构建并行应用程序很少是理想的。理想情况下，一个单一的站点应该能够适应访问者的需求。
 
-
-
 ### 检测屏幕阅读器
 
 使用隐藏文本和复选框需要屏幕阅读器用户进行大量操作。仅仅存在过时的屏幕阅读器就应足以触发绕过 Ajax 功能。
@@ -4182,13 +4218,13 @@ Google 的 Gmail 应用程序包含一段理论上仅向屏幕阅读器显示的
 
 ### FlashAid
 
-FlashAid 是由 Aral Balkan (http://osflash.org/flashaid) 编写的概念验证应用程序。
+FlashAid 是由 Aral Balkan（[http://osflash.org/flashaid](http://osflash.org/flashaid)）编写的概念验证应用程序。
 
-一个 1 像素 x 1 像素的小型影片会检查屏幕阅读器的存在，并将结果传递给一个 JavaScript 函数。然后该函数可以根据结果进行相应操作。例如，可以根据 Flash 影片返回的结果，为全局变量赋予 `true` 或 `false` 的布尔值。然后，根据此变量的值，可以执行或绕过 Ajax 请求。
+一个 1 像素 x 1 像素的小型影片会检查屏幕阅读器的存在，并将结果传递给一个 JavaScript 函数。然后该函数可以根据结果进行相应操作。例如，可以根据 Flash 影片返回的结果，为全局变量赋予`true`或`false`的布尔值。然后，根据此变量的值，可以执行或绕过 Ajax 请求。
 
 FlashAid 仍处于起步阶段，需要进行大量测试。弄清楚屏幕阅读器用户中有多少百分比在浏览器中安装了最新版本的 Flash 播放器将会很有用。
 
-已经建立了一个邮件列表，用于进一步推动 FlashAid 的研究和开发 (http://osflash.org/mailman/listinfo/flashaid_osflash.org)。
+已经建立了一个邮件列表，用于进一步推动 FlashAid 的研究和开发（[http://osflash.org/mailman/listinfo/flashaid_osflash.org](http://osflash.org/mailman/listinfo/flashaid_osflash.org)）。
 
 # 未来
 
@@ -4196,7 +4232,7 @@ FlashAid 仍处于起步阶段，需要进行大量测试。弄清楚屏幕阅�
 
 这种情况将会改变。
 
-在 XHTML 2 中，计划嵌入 `role` 和 `state` 值，用于明确声明元素的行为方式。然后屏幕阅读器可以直接读取这些行为信息。
+在 XHTML 2 中，计划嵌入`role`和`state`值，用于明确声明元素的行为方式。然后屏幕阅读器可以直接读取这些行为信息。
 
 以下是来自 W3C 网站的一个作为交互式滑块小部件的元素示例：
 
@@ -4209,7 +4245,7 @@ waistate:valuenow="33">
 </span>
 ```
 
-W3C 已经发布了“可访问富互联网应用程序路线图”(http://www.w3.org/TR/aria-roadmap/)。
+W3C 已经发布了“可访问富互联网应用程序路线图”（[http://www.w3.org/TR/aria-roadmap/](http://www.w3.org/TR/aria-roadmap/)）。
 
 只要浏览器制造商和屏幕阅读器制造商遵循规范，这些补充无疑将使辅助技术用户的生活更美好。
 
@@ -4241,19 +4277,19 @@ Web 开发社区非常幸运，拥有像 Brothercake、Derek Featherstone、Joe 
 
 到目前为止，你已经了解了这些关键领域：
 
--   Ajax 交互所需的代码
--   渐进增强原则
--   Ajax 带来的设计挑战
+- Ajax 交互所需的代码
+- 渐进增强原则
+- Ajax 带来的设计挑战
 
 在本章中，我将把所有这些理论付诸实践。是时候构建一个 Ajax 应用程序了。
 
 我使用 PHP 来创建此应用程序，但你可以使用任何服务器端语言。如果你不理解 PHP，也不用担心。理解我使用的语言不如理解基本概念重要。
 
-你可以从 http://bulletproofajax.com/shop/files/ 下载本章的源代码。
+你可以从[http://bulletproofajax.com/shop/files/](http://bulletproofajax.com/shop/files/)下载本章的源代码。
 
 ### 规划
 
-我正在构建一个名为 Bulletproof Books 的在线书店。你可以在 http://bulletprooffajax.com/shop/ 找到一个可运行的版本。
+我正在构建一个名为 Bulletproof Books 的在线书店。你可以在[http://bulletprooffajax.com/shop/](http://bulletprooffajax.com/shop/)找到一个可运行的版本。
 
 这家书店的目标受众是挑剔的 Web 开发者，因此只提供关于 Web 开发的最优质书籍。它不会是一个很大的商店；事实上，该网站仅由一个页面组成。
 
@@ -4298,9 +4334,9 @@ XHTML 结构如下所示：
 </html>
 ```
 
-我使用 `div` 元素将标记划分为各个部分。这些分区反映在服务器上的文件结构中。一系列文件在服务器上组合以提供完整的文档。
+我使用`div`元素将标记划分为各个部分。这些分区反映在服务器上的文件结构中。一系列文件在服务器上组合以提供完整的文档。
 
-这是框架页面 index.php 的结构：
+这是框架页面`index.php`的结构：
 
 ```
 <h1>Bulletproof Books</h1>
@@ -4315,9 +4351,9 @@ XHTML 结构如下所示：
 </div>
 ```
 
-index.php 中的 `include` 语句引入了两个文件：products.php 和 shoppingcart.php。
+`index.php`中的`include`语句引入了两个文件：`products.php`和`shoppingcart.php`。
 
-products.php 文件为产品组装标记。在真实应用程序中，产品数据可能会存储在数据库中。对于这个例子，我只是将数据存储在一个 PHP 数组中：
+`products.php`文件为产品组装标记。在真实应用程序中，产品数据可能会存储在数据库中。对于这个例子，我只是将数据存储在一个 PHP 数组中：
 
 ```
 <?php
@@ -4339,11 +4375,11 @@ $products = array(
   "cover" => "krug.jpg",
 ```
 
+在每个循环中，我创建了一个名为`$id`的变量，然后包含了一个名为`rating.php`的文件。该文件为每个项目创建一个列表，列表中包含五个可用于对产品进行评分的链接。
+
+以下是由`products.php`和`rating.php`生成的标记示例：
 
 
-在每个循环中，我创建了一个名为 `$id` 的变量，然后包含了一个名为 `rating.php` 的文件。该文件为每个项目创建一个列表，列表中包含五个可用于对产品进行评分的链接。
-
-以下是由 `products.php` 和 `rating.php` 生成的标记示例：
 
 ```html
 <div class="product" id="zeldman">
@@ -4385,7 +4421,7 @@ $products = array(
 
 ![](img/a49921737ab5f27c06f222d93fc0719d_168_0.png)
 
-#### 功能 (FUNCTIONALITY)
+### 功能 (FUNCTIONALITY)
 
 `rating.php` 文件除了显示用于产品评分的数字列表外，还包含存储当前产品评分的功能：
 
@@ -4399,7 +4435,7 @@ if (isset($_GET['product']) && $_GET['product'] == $id) {
 
 同样，如果你不理解这段 PHP 代码也不必担心：底层的功能才是重点。
 
-如果发送的查询字符串包含 *product* 的值且该值与当前产品匹配，并且查询字符串还包含 *rating* 的值，那么该评分值将被存储在一个会话变量（session variable）中。会话变量通常存储为 cookie，是一种快速简便的存储数值的方法。在实际应用中，该值可能会存储在数据库中。
+如果发送的查询字符串包含 `product` 的值且该值与当前产品匹配，并且查询字符串还包含 `rating` 的值，那么该评分值将被存储在一个会话变量（session variable）中。会话变量通常存储为 cookie，是一种快速简便的存储数值的方法。在实际应用中，该值可能会存储在数据库中。
 
 在这种情况下，会话变量的名称是当前产品的 ID，而值是在查询字符串中发送的评分。
 
@@ -4426,7 +4462,7 @@ if (isset($_SESSION[$id])) {
 
 产品评分功能现已就绪。接下来还需要添加购物车功能，这将由 `shoppingcart.php` 文件处理。
 
-#### 购物 (Shopping)
+### 购物 (Shopping)
 
 `shoppingcart.php` 文件引入了一个名为 `Cart.inc` 的文件。这是一个类，使用 `getProducts`、`addProduct`、`removeProduct` 等方法处理所有购物交易：
 
@@ -4499,11 +4535,11 @@ if ($_SESSION["cart"] -> countTotal() < 1) {
 
 通过这种方式，整个页面的标记被输出，并且通过查询字符串和表单接收的信息得到了处理。
 
-#### 演示 (PRESENTATION)
+### 演示 (PRESENTATION)
 
 现在应用程序的结构已经就绪，我可以使用 CSS 为文档添加样式信息。
 
-在页面的 head 元素中，我添加了一个指向 CSS 文件的 `link` 元素：
+在页面的 `head` 元素中，我添加了一个指向 CSS 文件的 `link` 元素：
 
 ```html
 <link rel="stylesheet" media="screen" type="text/css"
@@ -4560,7 +4596,7 @@ href="styles/basic.css" />
 
 `basket.css` 文件包含一些用于购物车表格的基础样式。
 
-#### 评分 (Ratings)
+### 评分 (Ratings)
 
 ![](img/a49921737ab5f27c06f222d93fc0719d_173_0.png)
 
@@ -4603,11 +4639,9 @@ href="styles/basic.css" />
 }
 ```
 
-
-
 列表中每个链接的文本都被隐藏了：
 
-```
+```css
 .rating li {
   margin: 0;
   padding: 0;
@@ -4626,7 +4660,7 @@ href="styles/basic.css" />
 
 列表中每个链接的位置各不相同。随着量表的增加，位置会沿轴向进一步移动：
 
-```
+```css
 .rating a.worst {
   left: 0;
 }
@@ -4646,7 +4680,7 @@ href="styles/basic.css" />
 
 当用户将光标悬停在这些链接中的任何一个上时，会添加一个深色星形重复背景图：
 
-```
+```css
 .rating li a:hover {
   background: transparent url("../images/star.gif")
     left top repeat-x;
@@ -4655,7 +4689,7 @@ href="styles/basic.css" />
 
 链接的宽度根据其在量表中的位置而增加：
 
-```
+```css
 .rating a.worst:hover {
   width: 20px;
 }
@@ -4673,32 +4707,40 @@ href="styles/basic.css" />
 }
 ```
 
-#### 应用 Ajax
+### 应用 Ajax
 
 在这个阶段，Bulletproof Books 已经具备了功能：你可以对书籍进行评分并将其添加到购物车中。如果没有指向结账页面的链接，它几乎没什么用，但毕竟这只是一个示例。
 
 该应用程序是以模块化方式构建的：
 
 - `products.php` 文件输出一段用于显示所有产品的 XHTML 块。
+
 - `rating.php` 文件输出一段用于显示单个产品评分列表的 XHTML 片段。
+
 - `shoppingcart.php` 文件输出一个添加到购物车的商品表格的 XHTML。
 
 当你观察这些独立文件处理的功能时，一个熟悉的 Ajax 模式出现了：
 
 - **评分 (Ratings)。** 每当你点击评分链接时，信息会通过查询字符串发送到服务器。服务器返回同一个页面，仅有一个微小的区别：所选的评分现在与相应的产品一起显示。`rating.php` 文件负责处理此操作。
+
 - **购物 (Shopping)。** 每当你点击“添加到购物车”按钮时，信息会通过表单提交发送到服务器。服务器返回同一个页面，此时购物车已更新以反映新添加的商品。`shoppingcart.php` 文件负责处理此操作。
 
 这两种情况都是进行 Hijax 处理的绝佳候选对象。
 
-#### 可复用的 JavaScript
+### 可复用的 JavaScript
 
 到目前为止，我为每个示例编写了特定的 JavaScript 代码。但所有示例都遵循非常相似的模式：
 
 1. 页面的某一部分是某些链接或表单的**容器 (container)**。
+
 2. 捕获该容器中的**数据 (data)**。
+
 3. 通过 `XMLHttpRequest` 将此数据发送到服务器上的一个 `URL`。
+
 4. 触发一个**加载 (loading)** 函数，让用户知道程序正在运行。
+
 5. 当 Ajax 请求完成时，页面的部分内容被更新。我们称之为**画布 (canvas)**。
+
 6. 触发一个**回调 (callback)** 函数，让用户知道操作已完成。
 
 具体细节因情况而异，但流程保持不变。
@@ -4707,42 +4749,52 @@ href="styles/basic.css" />
 
 我想将一系列变量和函数封装在一个自包含的块中。这听起来正是用户自定义对象的完美用途。
 
-#### 编写对象
+### 编写对象
 
 如果你还记得，JavaScript 有三种类型的对象：
 
 1. 原生对象，如 `Math`、`Date` 和 `Array`，由语言本身提供。
+
 2. 宿主对象，如 `window`，由运行 JavaScript 的环境提供。
+
 3. 用户定义对象，由你（程序员）创建。
 
 将一组变量和函数包装在对象内部是提高代码可移植性的绝佳方式。
 
 我要创建一个处理 Ajax 请求的对象。这个对象的名称是 `Hijax`。创建对象就像创建函数一样：
 
-```
+```javascript
 function Hijax() {
 }
 ```
 
 现在我在一个地方声明所有变量：
 
-```
+```javascript
 function Hijax() {
   var container,url,canvas,data,loading,callback,request;
 }
 ```
 
 - `container` 是页面上的元素，包含 Ajax 请求的触发机制：要么是一个表单，要么是一组链接。
+
 - `url` 是服务器上文件的路径。
+
 - `canvas` 是页面中被更新的部分。
+
 - `data` 要么是 `null`，要么是要发送到服务器的名称/值对字符串。
+
 - `loading` 是在 Ajax 请求开始时触发的函数。
+
 - `callback` 是在 Ajax 请求结束时触发的函数。
+
 - `request` 是 `XMLHttpRequest` 的一个实例。
 
-这些值中的大多数需要从对象外部设置。为了实现这一点，我创建了一系列方法。记住，方法简单来说就是绑定到对象的函数。我使用了 `this` 关键字，它是“当前对象”的简写：
+这些值中的大多数需要从对象外部设置。为了实现这一点，我创建了一系列方法。记住，方法简单来说就是绑定到对象的函数。我使用了 `this` 关键字，它是“当前对象”的简写。
 
-```
+
+
+```javascript
 function Hijax() {
   var container,url,canvas,data,loading,callback,request;
   this.setContainer = function(value) {
@@ -4763,35 +4815,35 @@ function Hijax() {
 }
 ```
 
-这些方法都可以从对象外部访问。假设我创建了 `container`、`url`、`canvas`、`loading` 和 `callback` 的一个新实例。其他值 `data` 和 `request` 在对象内部创建。
+这些方法都可以从对象外部访问。假设我创建了`container`、`url`、`canvas`、`loading`和`callback`的一个新实例。其他值`data`和`request`在对象内部创建。
 
-```
+```javascript
 var myobject = new Hijax();
 ```
 
 现在我可以使用点语法访问它的方法：
 
-```
+```javascript
 myobject.setUrl("rating.php");
 ```
 
-我又创建了一个可以从对象外部访问的方法。它被称为 `captureData`：
+我又创建了一个可以从对象外部访问的方法。它被称为`captureData`：
 
-```
+```javascript
 this.captureData = function() {
 ```
 
-当此方法被触发时，数据将从 `container` 元素中提取。
+当此方法被触发时，数据将从`container`元素中提取。
 
-我首先测试 `container` 的 `nodeName` 属性，看看它是否是一个表单：
+我首先测试`container`的`nodeName`属性，看看它是否是一个表单：
 
-```
+```javascript
 if (container.nodeName.toLowerCase() == "form") {
 ```
 
 如果是，那么我想在表单提交时提取其值：
 
-```
+```javascript
 container.onsubmit = function() {
   var query = "";
   for (var i=0; i<this.elements.length; i++) {
@@ -4802,24 +4854,24 @@ container.onsubmit = function() {
   }
 ```
 
-我已将表单元素的名称和值连接到一个名为 *query* 的变量中。现在我将此值分配给 *data*：
+我已将表单元素的名称和值连接到一个名为`query`的变量中。现在我将此值分配给`data`：
 
-```
+```javascript
 data = query;
 ```
 
 在这一行代码中，我利用了 JavaScript 最强大的能力之一：闭包 (closures)。
 
-#### 闭包
+## 闭包
 
 通常 JavaScript 中有两种变量作用域：
 
 1. **全局 (Global)**。如果变量在函数外部声明，则可以在任何地方访问。
-2. **局部 (Local)**。如果变量在函数内部使用 `var` 关键字声明，则只能在该父函数内部访问。
+2. **局部 (Local)**。如果变量在函数内部使用`var`关键字声明，则只能在该父函数内部访问。
 
 当一个函数嵌套在另一个函数中时，会发生一件有趣的事情。嵌套函数也可以访问属于父函数的任何局部变量：
 
-```
+```javascript
 function test() {
   var foo = "bar";
   function getFoo() {
@@ -4828,13 +4880,13 @@ function test() {
 }
 ```
 
-这是一个闭包的示例。通常 `getFoo` 函数只能访问全局变量或其自身的局部变量。因为 `getFoo` 嵌套在 `test` 函数中，所以它也可以访问 `test` 的局部变量。
+这是一个闭包的示例。通常`getFoo`函数只能访问全局变量或其自身的局部变量。因为`getFoo`嵌套在`test`函数中，所以它也可以访问`test`的局部变量。
 
 可以将闭包看作一种区域作用域：比局部作用域宽，但没有全局作用域那么宽。
 
-得益于闭包，对象内的函数可以访问在同一对象内声明的变量。记住，对象内的函数是方法，对象内的变量是属性。`Hijax` 对象的 `captureData` 方法可以访问 `data` 属性，尽管该属性是在方法外部声明的：
+得益于闭包，对象内的函数可以访问在同一对象内声明的变量。记住，对象内的函数是方法，对象内的变量是属性。`Hijax`对象的`captureData`方法可以访问`data`属性，尽管该属性是在方法外部声明的：
 
-```
+```javascript
 function Hijax() {
   var container,url,canvas,data,loading,callback,request;
   ...
@@ -4856,23 +4908,21 @@ function Hijax() {
 }
 ```
 
-这个特定闭包最显著的特点是，即使在 `onsubmit` 事件处理器内部，作用域依然得以维持。通常情况下，在事件处理函数内部是不可能引用除全局变量以外的任何内容的。得益于闭包的力量，当从对象内部调用事件处理函数时，在对象内声明的所有变量仍然可用。
+这个特定闭包最显著的特点是，即使在`onsubmit`事件处理器内部，作用域依然得以维持。通常情况下，在事件处理函数内部是不可能引用除全局变量以外的任何内容的。得益于闭包的力量，当从对象内部调用事件处理函数时，在对象内声明的所有变量仍然可用。
 
-一旦捕获了表单数据，就会调用另一个名为 `start` 的方法。该方法启动 Ajax 请求。如果 `start` 方法执行成功，它将返回 `true`。在这种情况下，我想取消浏览器对 `submit` 事件的默认行为：
+一旦捕获了表单数据，就会调用另一个名为`start`的方法。该方法启动 Ajax 请求。如果`start`方法执行成功，它将返回`true`。在这种情况下，我想取消浏览器对`submit`事件的默认行为：
 
-```
+```javascript
 return !start();
 ```
 
-如果 `start` 方法返回 `true`，那么 `onsubmit` 事件处理器将返回相反的值，即 `false`。反之，如果 `start` 方法失败并返回 `false`，则 `onsubmit` 事件处理器将返回相反的值。
-
-
+如果`start`方法返回`true`，那么`onsubmit`事件处理器将返回相反的值，即`false`。反之，如果`start`方法失败并返回`false`，则`onsubmit`事件处理器将返回相反的值。
 
 值为 true，这意味着触发默认的浏览器行为，表单将正常提交。
 
-在进入 start 方法之前，我需要完成 captureData 方法的编写。
+在进入`start`方法之前，我需要完成`captureData`方法的编写。
 
-如果容器元素不是表单，那么数据将通过链接传输。通过遍历容器元素内的所有链接，我可以添加一个 onclick 事件处理函数，以捕获查询字符串中包含的任何数据：
+如果容器元素不是表单，那么数据将通过链接传输。通过遍历容器元素内的所有链接，我可以添加一个`onclick`事件处理函数，以捕获查询字符串中包含的任何数据：
 
 ```javascript
 var links = container.getElementsByTagName("a");
@@ -4885,9 +4935,9 @@ for (var i=0; i<links.length; i++) {
 }
 ```
 
-在这种情况下，闭包是 url 属性，它正被链接的查询字符串更新。
+在这种情况下，闭包是`url`属性，它正被链接的查询字符串更新。
 
-完成后的 captureData 方法如下所示：
+完成后的`captureData`方法如下所示：
 
 ```javascript
 this.captureData = function() {
@@ -4917,13 +4967,13 @@ this.captureData = function() {
 };
 ```
 
-我为 Internet Explorer 包含了一点清理工作。该浏览器的 5 和 6 版本在清理对 DOM 节点的引用方面表现不佳。一旦 `captureData` 方法执行完毕，`links` 变量就不再需要了，但与其他浏览器不同，Internet Explorer 不会对该变量进行垃圾回收。一旦 `onclick` 事件处理程序被分配，语句 `links = null` 将手动执行垃圾回收。
+我为 Internet Explorer 包含了一点清理工作。该浏览器的 5 和 6 版本在清理对 DOM 节点的引用方面表现不佳。一旦`captureData`方法执行完毕，`links`变量就不再需要了，但与其他浏览器不同，Internet Explorer 不会对该变量进行垃圾回收。一旦`onclick`事件处理程序被分配，语句`links = null`将手动执行垃圾回收。
 
-#### 发起 Ajax 请求
+## 发起 Ajax 请求
 
-一旦从表单或链接中截获了数据，`start` 方法就会被执行。
+一旦从表单或链接中截获了数据，`start`方法就会被执行。
 
-我可以这样创建 start 方法：
+我可以这样创建`start`方法：
 
 ```javascript
 function start() {
@@ -4939,7 +4989,7 @@ var start = function() {
 
 两者是等价的，但在编写对象的方法时，我更倾向于使用第二种风格。
 
-`start` 方法是一个简单的函数，返回 `true` 或 `false`：
+`start`方法是一个简单的函数，返回`true`或`false`：
 
 ```javascript
 var start = function() {
@@ -4953,9 +5003,9 @@ var start = function() {
 };
 ```
 
-只要为 Ajax 请求指定了 URL，且 `getHTTPObject` 函数成功创建了 `XMLHttpRequest` 的实例，`start` 方法就会返回 `true`。
+只要为 Ajax 请求指定了 URL，且`getHTTPObject`函数成功创建了`XMLHttpRequest`的实例，`start`方法就会返回`true`。
 
-`getHTTPObject` 函数你应该已经非常熟悉了。现在它被嵌套在 `Hijax` 对象中，因此 `getHTTPObject` 成为了 `Hijax` 的一个方法：
+`getHTTPObject`函数你应该已经非常熟悉了。现在它被嵌套在`Hijax`对象中，因此`getHTTPObject`成为了`Hijax`的一个方法：
 
 ```javascript
 var getHTTPObject = function() {
@@ -4977,20 +5027,20 @@ var getHTTPObject = function() {
 };
 ```
 
-在 `start` 方法中，`getHTTPObject` 的结果被赋值给 `request` 属性：
+在`start`方法中，`getHTTPObject`的结果被赋值给`request`属性：
 
 ```javascript
 request = getHTTPObject();
 ```
 
-如果 `getHTTPObject` 返回一个 `XMLHttpRequest` 实例，`start` 方法在返回 `true` 之前会调用一个名为 `initiateRequest` 的方法：
+如果`getHTTPObject`返回一个`XMLHttpRequest`实例，`start`方法在返回`true`之前会调用一个名为`initiateRequest`的方法：
 
 ```javascript
 initiateRequest();
 return true;
 ```
 
-`initiateRequest` 方法是驱动 `Hijax` 对象的引擎。首先，该方法测试当前 `Hijax` 对象的 `loading` 属性是否被分配了一个函数。如果 `loading` 属性有值，现在就是执行它的时机：
+`initiateRequest`方法是驱动`Hijax`对象的引擎。首先，该方法测试当前`Hijax`对象的`loading`属性是否被分配了一个函数。如果`loading`属性有值，现在就是执行它的时机：
 
 ```javascript
 var initiateRequest = function() {
@@ -5000,15 +5050,15 @@ var initiateRequest = function() {
 };
 ```
 
-`initiateRequest` 方法包含了 XMLHttpRequest 的三个构建块：`onreadystatechange`、`open` 和 `send`。
+`initiateRequest`方法包含了 XMLHttpRequest 的三个构建块：`onreadystatechange`、`open`和`send`。
 
-一个指向 `completeRequest` 方法的引用被赋值给 `onreadystatechange` 事件处理程序：
+一个指向`completeRequest`方法的引用被赋值给`onreadystatechange`事件处理程序：
 
 ```javascript
 request.onreadystatechange = completeRequest;
 ```
 
-如果数据是从表单中捕获的，则在 `open` 方法中指定 `POST` 请求，并在 `send` 方法中将 `data` 属性传递给服务器：
+如果数据是从表单中捕获的，则在`open`方法中指定`POST`请求，并在`send`方法中将`data`属性传递给服务器：
 
 ```javascript
 request.open("POST", url, true);
@@ -5017,14 +5067,14 @@ request.setRequestHeader("Content-Type",
 request.send(data);
 ```
 
-如果 `data` 没有值，则指定 `GET` 请求且不向服务器发送数据：
+如果`data`没有值，则指定`GET`请求且不向服务器发送数据：
 
 ```javascript
 request.open("GET", url, true);
 request.send(null);
 ```
 
-确定发起哪种请求是通过一个简单的 `if` 语句来完成的，该语句测试 `data` 的值。完成后的 `initiateRequest` 方法如下所示：
+确定发起哪种请求是通过一个简单的`if`语句来完成的，该语句测试`data`的值。完成后的`initiateRequest`方法如下所示：
 
 ```javascript
 var initiateRequest = function() {
@@ -5046,9 +5096,9 @@ var initiateRequest = function() {
 
 一旦 Ajax 请求被发起，剩下的就是处理来自服务器的响应。
 
-#### 完成 Ajax 请求
+## 完成 Ajax 请求
 
-一个名为 `completeRequest` 的方法已被绑定到 `onreadystatechange` 事件处理程序。和往常一样，这里有一个测试，以检查 `readyState` 属性是否达到 4，以及服务器发送的 `status` 是否为 200 或 304：
+一个名为`completeRequest`的方法已被绑定到`onreadystatechange`事件处理程序。和往常一样，这里有一个测试，以检查`readyState`属性是否达到 4，以及服务器发送的`status`是否为 200 或 304：
 
 ```javascript
 var completeRequest = function() {
@@ -5056,7 +5106,7 @@ var completeRequest = function() {
     if (request.status == 200 || request.status == 304) {
 ```
 
-如果当前 Hijax 对象的 `canvas` 属性已被指定，页面的该部分将使用 `responseText` 的内容进行更新：
+如果当前`Hijax`对象的`canvas`属性已被指定，页面的该部分将使用`responseText`的内容进行更新：
 
 ```javascript
 if (canvas) {
@@ -5064,7 +5114,7 @@ if (canvas) {
 }
 ```
 
-如果当前 Hijax 对象的 `callback` 属性被分配了一个函数，则执行该函数：
+如果当前`Hijax`对象的`callback`属性被分配了一个函数，则执行该函数：
 
 ```javascript
 if (callback) {
@@ -5072,7 +5122,7 @@ if (callback) {
 }
 ```
 
-这就是 `completeRequest` 方法的全部内容：
+这就是`completeRequest`方法的全部内容：
 
 ```javascript
 var completeRequest = function() {
@@ -5089,55 +5139,55 @@ var completeRequest = function() {
 };
 ```
 
-#### 准备页面
+## 准备页面
 
-`Hijax` 对象提供了一种非常便捷且可复用的方式，为 Web 页面添加 Ajax 功能。本书到目前为止的所有示例都可以重新设计为使用 `Hijax`，因为它们都遵循相同的步骤。
+`Hijax`对象提供了一种非常便捷且可复用的方式，为 Web 页面添加 Ajax 功能。本书到目前为止的所有示例都可以重新设计为使用`Hijax`，因为它们都遵循相同的步骤。
 
 在 Bulletproof Books 的案例中，为书籍打分和将书籍添加到购物车都遵循经典的 Ajax 模式：通过表单或链接进行的用户交互会更新同一个页面的某个独立部分。
 
-每本书都有一个相关的评分链接列表，以及一个将该产品添加到购物车的表单。总共有三本书，这意味着总共有六个页面元素需要进行 Hijax 处理。与其逐个指定每个 Ajax 请求的细节，我创建了一个名为 `bookshop` 的函数来封装所有指令：
+每本书都有一个相关的评分链接列表，以及一个将该产品添加到购物车的表单。总共有三本书，这意味着总共有六个页面元素需要进行 Hijax 处理。与其逐个指定每个 Ajax 请求的细节，我创建了一个名为`bookshop`的函数来封装所有指令：
 
 ```javascript
 function bookshop() {
 }
 ```
 
-在 `bookshop` 内部，我有一个名为 `prepareCart` 的方法，它将执行三次，每本书执行一次。该方法接收一个参数，即将被截获的表单元素：
+在`bookshop`内部，我有一个名为`prepareCart`的方法，它将执行三次，每本书执行一次。该方法接收一个参数，即将被截获的表单元素：
 
 ```javascript
 var prepareCart = function(element) {
 };
 ```
 
-我创建了一个 `Hijax` 对象的实例：
+我创建了一个`Hijax`对象的实例：
 
 ```javascript
 var xhr = new Hijax();
 ```
 
-通过使用 `setContainer` 方法，我将表单元素指定为 `container` 属性。这通过 `element` 参数传入：
+通过使用`setContainer`方法，我将表单元素指定为`container`属性。这通过`element`参数传入：
 
 ```javascript
 xhr.setContainer(element);
 ```
 
-该 Ajax 请求的 URL 为 shoppingcart.php：
+
+
+该 Ajax 请求的 URL 为`shoppingcart.php`：
 
 ```javascript
 xhr.setUrl("shoppingcart.php");
 ```
 
-页面中将被更新的部分是购物车，其 ID 为 `basket`。该元素就是 `canvas`：
+页面中将被更新的部分是购物车，其 ID 为`basket`。该元素就是`canvas`：
 
 ```javascript
 xhr.setCanvas(document.getElementById("basket"));
 ```
 
-在 `bookshop` 中，我创建了一个名为 `displayLoading` 的方法，用于显示进度条。在这种情况下，我希望进度条出现在购物车中：
+在`bookshop`中，我创建了一个名为`displayLoading`的方法，用于显示进度条。在这种情况下，我希望进度条出现在购物车中：
 
-
-
-最后，当 Ajax 请求完成时，我想给购物车添加一个黄色渐隐效果。这将使用一个名为 `fadeUp` 的方法来实现。像这样让购物车渐隐就是 `callback` 函数：
+最后，当 Ajax 请求完成时，我想给购物车添加一个黄色渐隐效果。这将使用一个名为`fadeUp`的方法来实现。像这样让购物车渐隐就是`callback`函数：
 
 ```
 xhr.setCallback(function() {
@@ -5145,15 +5195,15 @@ xhr.setCallback(function() {
 });
 ```
 
-所有这些属性都已指定后，是时候应用 `captureData` 方法了：
+所有这些属性都已指定后，是时候应用`captureData`方法了：
 
 ```
 xhr.captureData();
 ```
 
-现在我有了一个 `prepareCart` 方法，可以用来拦截与每个产品相关联的表单中的数据。
+现在我有了一个`prepareCart`方法，可以用来拦截与每个产品相关联的表单中的数据。
 
-为了拦截每本书的评分链接中的数据，我有一个类似的方法叫做 `prepareRating`：
+为了拦截每本书的评分链接中的数据，我有一个类似的方法叫做`prepareRating`：
 
 ```
 var prepareRating = function(element) {
@@ -5172,13 +5222,13 @@ var prepareRating = function(element) {
 };
 ```
 
-在这种情况下，URL 是 rating.php，`container` 元素和 `canvas` 元素是同一个。
+在这种情况下，URL 是`rating.php`，`container`元素和`canvas`元素是同一个。
 
-在我开始向 `prepareCart` 和 `prepareRating` 传递值之前，我需要定义 `loading` 和 `callback` 函数，我分别指定为 `displayLoading` 和 `fadeUp`。
+在我开始向`prepareCart`和`prepareRating`传递值之前，我需要定义`loading`和`callback`函数，我分别指定为`displayLoading`和`fadeUp`。
 
 #### 发生了什么？
 
-`displayLoading` 函数如下所示：
+`displayLoading`函数如下所示：
 
 ```
 var displayLoading = function(element) {
@@ -5190,11 +5240,11 @@ var displayLoading = function(element) {
 };
 ```
 
-这会创建一个新的 `img` 元素，其 `src` 为 `progressbar.gif`。这个新创建的图像随后被插入到指定的页面元素中。
+这会创建一个新的`img`元素，其`src`为`progressbar.gif`。这个新创建的图像随后被插入到指定的页面元素中。
 
 #### 刚刚发生了什么？
 
-`fadeUp` 方法对你来说应该很熟悉，来自前面的示例：
+`fadeUp`方法对你来说应该很熟悉，来自前面的示例：
 
 ```
 var fadeUp = function(element,red,green,blue) {
@@ -5221,9 +5271,9 @@ var fadeUp = function(element,red,green,blue) {
 
 ### 执行
 
-书店（bookshop）的所有方法都就位后，我现在可以将正确的 Ajax 功能分配给正确的页面元素。
+书店（`bookshop`）的所有方法都就位后，我现在可以将正确的 Ajax 功能分配给正确的页面元素。
 
-每本书都有一个相关联的表单，其类名为 shopping。我将它们每一个都传递给 prepareCart 方法：
+每本书都有一个相关联的表单，其类名为`shopping`。我将它们每一个都传递给`prepareCart`方法：
 
 ```
 var all_forms = document.getElementsByTagName("form");
@@ -5234,13 +5284,13 @@ for (var i=0; i<all_forms.length; i++) {
 }
 ```
 
-为了兼容旧版本的 Internet Explorer，我在使用完 all_forms 变量后将其清理掉：
+为了兼容旧版本的 Internet Explorer，我在使用完`all_forms`变量后将其清理掉：
 
 ```
 all_forms = null;
 ```
 
-对于评分功能，我将任何类名为 rating 的 div 传递给 prepareRating 方法：
+对于评分功能，我将任何类名为`rating`的`div`传递给`prepareRating`方法：
 
 ```
 var all_divs = document.getElementsByTagName("div");
@@ -5252,13 +5302,13 @@ for (var i=0; i<all_divs.length; i++) {
 all_divs = null;
 ```
 
-bookshop 函数已经准备就绪。我现在需要做的就是执行它。不过，我不能立即执行；我必须等到文档加载完成：
+`bookshop`函数已经准备就绪。我现在需要做的就是执行它。不过，我不能立即执行；我必须等到文档加载完成：
 
 ```
 window.onload = bookshop;
 ```
 
-更好的是，我可以使用第 5 章中展示给你的 addLoadEvent 函数：
+更好的是，我可以使用第 5 章中展示给你的`addLoadEvent`函数：
 
 ```
 addLoadEvent(bookshop);
@@ -5272,7 +5322,7 @@ addLoadEvent(bookshop);
 
 #### 错误处理
 
-`Hijax` 对象的 `completeRequest` 方法期望服务器发送 `status` 属性为 200 或 304。如果服务器发送了任何其他状态，则什么都不发生。构建某种错误处理来让用户知道请求失败是相当容易的：
+`Hijax`对象的`completeRequest`方法期望服务器发送`status`属性为 200 或 304。如果服务器发送了任何其他状态，则什么都不发生。构建某种错误处理来让用户知道请求失败是相当容易的：
 
 ```
 var completeRequest = function() {
@@ -5291,9 +5341,9 @@ var completeRequest = function() {
 };
 ```
 
-一个 `alert` 语句并不是显示错误消息的最佳方式。你可以将错误消息附加到 `canvas` 元素上。
+一个`alert`语句并不是显示错误消息的最佳方式。你可以将错误消息附加到`canvas`元素上。
 
-更健壮的解决方案是让错误处理能够根据具体情况进行更改。尝试在 `Hijax` 对象中声明一个名为 `errorhandler` 的新变量：
+更健壮的解决方案是让错误处理能够根据具体情况进行更改。尝试在`Hijax`对象中声明一个名为`errorhandler`的新变量：
 
 ```
 var container,url,canvas,data,loading,callback,request,
@@ -5308,7 +5358,7 @@ this.setErrorhandler = function(value) {
 };
 ```
 
-如果已为 `errorhandler` 分配了函数，则在 completeRequest 方法中执行它：
+如果已为`errorhandler`分配了函数，则在`completeRequest`方法中执行它：
 
 ```
 var completeRequest = function() {
@@ -5329,7 +5379,7 @@ var completeRequest = function() {
 };
 ```
 
-你现在可以向 `bookshop` 添加一个方法来处理任何意外的错误：
+你现在可以向`bookshop`添加一个方法来处理任何意外的错误：
 
 ```
 var displayError = function(element) {
@@ -5342,7 +5392,7 @@ var displayError = function(element) {
 };
 ```
 
-在 `prepareCart` 和 `prepareRating` 中分配这个方法：
+在`prepareCart`和`prepareRating`中分配这个方法：
 
 ```
 xhr.setErrorhandler(function() {
@@ -5350,7 +5400,7 @@ xhr.setErrorhandler(function() {
 });
 ```
 
-你可能想使用更有意义的错误消息。你可以更新 `displayError` 方法，使其接受第二个参数——一个文本字符串：
+你可能想使用更有意义的错误消息。你可以更新`displayError`方法，使其接受第二个参数——一个文本字符串：
 
 ```
 var displayError = function(element, errortext) {
@@ -5369,18 +5419,18 @@ var displayError = function(element, errortext) {
 
 在理想的万维网中，网络连接将快速且无缝。在现实中，情况并非总是如此。有时连接会中断，可能是因为服务器问题，也可能是因为用户的网络连接。
 
-Ajax 请求不会自动超时。一旦发起请求，它将保持打开状态，直到 `readyState` 属性达到 4。
+Ajax 请求不会自动超时。一旦发起请求，它将保持打开状态，直到`readyState`属性达到 4。
 
-`XMLHttpRequest` 对象有一个 `abort` 方法，可以取消 Ajax 请求。使用 `setTimeout` 语句，如果请求耗时过长，你可以调用此方法。
+`XMLHttpRequest`对象有一个`abort`方法，可以取消 Ajax 请求。使用`setTimeout`语句，如果请求耗时过长，你可以调用此方法。
 
-向 `Hijax` 对象添加一个名为 `timer` 的新变量：
+向`Hijax`对象添加一个名为`timer`的新变量：
 
 ```
 var container, url, canvas, data, loading, callback, request,
     errorhandler, timer;
 ```
 
-在 `initiateRequest` 方法中，为 `timer` 分配一个 `setTimeout` 语句：
+在`initiateRequest`方法中，为`timer`分配一个`setTimeout`语句：
 
 ```
 var initiateRequest = function() {
@@ -5389,7 +5439,7 @@ var initiateRequest = function() {
     }, 60000);
 ```
 
-这将在 60 秒后中止 Ajax 请求。如果已提供 errorhandler 函数，你可能想在此处调用它：
+这将在 60 秒后中止 Ajax 请求。如果已提供`errorhandler`函数，你可能想在此处调用它：
 
 ```
 timer = setTimeout(function() {
@@ -5400,11 +5450,11 @@ timer = setTimeout(function() {
 }, 60000);
 ```
 
-某些浏览器在调用 abort 时会表现出触发 readystatechange 事件的奇怪行为。为了消除这一点，在取消 Ajax 请求之前，将 onreadystatechange 分配为一个空函数：
+某些浏览器在调用`abort`时会表现出触发`readystatechange`事件的奇怪行为。为了消除这一点，在取消 Ajax 请求之前，将`onreadystatechange`分配为一个空函数：
 
 ```
 timer = setTimeout(function() {
-    request.onreadystatechange = function炅unction() {};
+    request.onreadystatechange = function() {};
     request.abort();
     if (errorhandler) {
         errorhandler();
@@ -5412,10 +5462,10 @@ timer = setTimeout(function() {
 }, 60000);
 ```
 
-现在你有一种处理不成功请求的方法。如果请求按计划进行，你需要在 completeRequest 方法中取消计时器倒计时：
+现在你有一种处理不成功请求的方法。如果请求按计划进行，你需要在`completeRequest`方法中取消计时器倒计时：
 
 ```
-var completeRequest =美颜unction() {
+var completeRequest = function() {
     if (request.readyState == 4) {
         if (request.status == 200 || request.status == 304) {
             clearTimeout(timer);
@@ -5423,10 +5473,11 @@ var completeRequest =美颜unction() {
 
 #### 可访问性
 
-就目前而言，Hijax 对象对视障用户（使用屏幕阅读器）没有任何让步，但正如我们在上一章看到的，没有一种一致的方法可以通知屏幕阅读器页面的一部分已经更新。
+就目前而言，`Hijax`对象对视障用户（使用屏幕阅读器）没有任何让步，但正如我们在上一章看到的，没有一种一致的方法可以通知屏幕阅读器页面的一部分已经更新。
 
-你可以在 completeRequest 方法中使用 tabindex 技巧将焦点设置到 canvas 区域：
+你可以在`completeRequest`方法中使用`tabindex`技巧将焦点设置到`canvas`区域：
 
+```
 var completeRequest = function() {
   if (request.readyState == 4) {
     if (request.status == 200 || request.status == 304) {
@@ -5439,16 +5490,17 @@ var completeRequest = function() {
     }
   }
 }
+```
 
 请记住，这种方法并非在所有屏幕阅读器和 Web 浏览器的组合中都能正常工作。此外，它可能有些过度：你真的想在用户每次添加新产品时都引起她对购物车的注意吗？也许她更愿意从文档当前的位置继续浏览。
 
 ## 小结
 
-Bulletproof Books 是一个很好的例子，展示了如何使用 Ajax 来增强现有应用程序——在这个案例中，是一个Online Shop。没有 Ajax 的情况下，该应用完全可以正常运行；但一旦加入 Ajax，购物体验就会变得更加流畅。
+Bulletproof Books 是一个很好的例子，展示了如何使用 Ajax 来增强现有应用程序——在这个案例中，是一个在线商店。没有 Ajax 的情况下，该应用完全可以正常运行；但一旦加入 Ajax，购物体验就会变得更加流畅。
 
-Hi jax 对象是一个灵活的通用 Ajax 模式集合。你可以将其用于购物车、评分等更多场景。不要将这个对象视为解决你 Ajax 需求的最终方案，而应将其作为起点。
+`Hijax`对象是一个灵活的通用 Ajax 模式集合。你可以将其用于购物车、评分等更多场景。不要将这个对象视为解决你 Ajax 需求的最终方案，而应将其作为起点。
 
-在本章中，我只强调了改进 Hi jax 对象的几种方式。我相信代码还可以进一步精炼。世上没有完美的脚本。编写 Ajax 应该是一个持续评估和迭代的过程。
+在本章中，我只强调了改进`Hijax`对象的几种方式。我相信代码还可以进一步精炼。世上没有完美的脚本。编写 Ajax 应该是一个持续评估和迭代的过程。
 
 或许并不存在真正“防弹”的 Ajax，但它仍然是一个值得追求的目标。永远不要停止质疑，永远不要停止寻找改进代码的方法。我对你充满信心，你可以将我提供的代码作为起点，使其变得更加健壮、优雅和“防弹”。
 
@@ -5458,7 +5510,7 @@ Hi jax 对象是一个灵活的通用 Ajax 模式集合。你可以将其用于�
 
 ## 我们将何去何从？
 
-当你编写越来越多的 Ajax 应用时，你会反复遇到许多相同的问题。每次你解决一个通用问题时，将那段 JavaScript 代码放在一边以便日后复用是很有帮助的。将你的代码抽象为可复用的模块是明智之举——这正是我对 Hi jax 对象所做的。最终，你将在手边拥有便捷可用的代码集合。
+当你编写越来越多的 Ajax 应用时，你会反复遇到许多相同的问题。每次你解决一个通用问题时，将那段 JavaScript 代码放在一边以便日后复用是很有帮助的。将你的代码抽象为可复用的模块是明智之举——这正是我对`Hijax`对象所做的。最终，你将在手边拥有便捷可用的代码集合。
 
 # 构建 JavaScript 库
 
@@ -5466,25 +5518,28 @@ Hi jax 对象是一个灵活的通用 Ajax 模式集合。你可以将其用于�
 
 ### 事件处理
 
-我一直在使用简单的事件处理器，如 `onclick` 和 `onsubmit`。这些在所有浏览器中都能工作，但它们有一个主要缺点：你只能为每个事件处理器分配一个事件。
+我一直在使用简单的事件处理器，如`onclick`和`onsubmit`。这些在所有浏览器中都能工作，但它们有一个主要缺点：你只能为每个事件处理器分配一个事件。
 
-W3C DOM 规范提供了一个名为 `addEventListener` 的方法。Internet Explorer 不支持这个方法。相反，微软提供了一个专有方法，名为 `attachEvent`。这些实现上的差异可以通过使用函数来抽象化，例如来自 John Resig（http://ejohn.org/projects/flexible-javascript-events/）或 Dean Edwards（http://dean.edwards.name/weblog/2005/10/add-event2/）的 `addEvent`。
+W3C DOM 规范提供了一个名为`addEventListener`的方法。Internet Explorer 不支持这个方法。相反，微软提供了一个专有方法，名为`attachEvent`。这些实现上的差异可以通过使用函数来抽象化，例如来自 John Resig（http://ejohn.org/projects/flexible-javascript-events/）或 Dean Edwards（http://dean.edwards.name/weblog/2005/10/add-event2/）的`addEvent`。
 
 ### DOM 操作
 
-如果你不使用 `innerHTML`，生成标记需要做很多工作。你需要使用大量的 DOM 方法，如 `createElement` 和 `appendChild`，结合 DOM 属性，如 `childNodes`、`nodeName` 等。与其反复编写非常相似的代码，不如创建可复用的函数来生成标记。Dan Webb 已经用他的 DOM Builder 脚本做到了这一点（http://www.vivabit.com/bollocks/2006/04/06/introducing-dom-builder）。
 
-### 动画
+
+如果你不使用`innerHTML`，生成标记需要做很多工作。你需要使用大量的 DOM 方法，如`createElement`和`appendChild`，结合 DOM 属性，如`childNodes`、`nodeName`等。与其反复编写非常相似的代码，不如创建可复用的函数来生成标记。Dan Webb 已经用他的 DOM Builder 脚本做到了这一点（http://www.vivabit.com/bollocks/2006/04/06/introducing-dom-builder）。
+
+## 动画
 
 DOM 在浏览器之间的实现相当一致。而 BOM，即浏览器对象模型，则是另一回事。浏览器对浏览器宽度等测量使用不同的属性名称。如果你试图做复杂的动画，这些差异可能会令人沮丧。同样，合乎逻辑的解决方案是用可复用的代码将浏览器差异抽象化。
 
 ## 库、框架和工具包，我的天！
 
-随着时间的推移，所有 JavaScript 开发者都会积累自己的可复用代码库。一些开发者更进一步，将他们的库发布出来供其他开发者使用。这些函数和对象的集合有时被称为工具包，甚至框架。据我所知，*库*、*工具包* 和 *框架* 这些术语是可以互换使用的。
+随着时间的推移，所有 JavaScript 开发者都会积累自己的可复用代码库。一些开发者更进一步，将他们的库发布出来供其他开发者使用。这些函数和对象的集合有时被称为工具包，甚至框架。据我所知，`库`、`工具包`和`框架`这些术语是可以互换使用的。
 
 你可能会使用他人库的原因有两个：
 
 1. 虽然你精通 DOM 脚本和 Ajax，但你需要在某个项目中节省一些时间。与其重新发明轮子，不如使用别人已经编写好的代码来解决类似的问题。你完全理解这些代码的作用，并可以根据自己的需求进行调整和优化。
+
 2. 面对一个问题时，你转向一个声称能提供解决方案的库。使用他人代码的危险在于，你不知道代码是如何工作的，而当某些地方出错时（而且一定会出错），你将无法修复它。
 
 第一种情况说明了库在节省时间和精力方面是多么有用。第二种情况则说明了出于同样的原因，库也可能是多么危险。使用 JavaScript 库就像挥舞一把刀：它可以是一个有用的工具，但在错误的人手中，它可能会造成严重的伤害。
@@ -5495,7 +5550,7 @@ DOM 在浏览器之间的实现相当一致。而 BOM，即浏览器对象模型
 
 37signals 的 Sam Stephenson 创建了 Prototype 库（http://prototype.conio.net/）。Prototype 的诞生与该公司 Ruby on Rails 服务端框架的创建同时发生。两者配合得很好：Rails 使用 Prototype（及其衍生产品 Scriptaculous）来添加 JavaScript 辅助函数。这些辅助函数是以侵入式的方式添加的，但得益于热情的 Rails 社区，现已有一个补丁可用（http://www.ujs4rails.com/）。
 
-Prototype 代码优雅简洁，大小约为 48K。Prototype 旨在通过提供大量快捷方式来让开发者的生活更轻松。例如，你不必编写 `document.getElementById("element_id")`，Prototype 允许你输入 `$("element_id")`。
+Prototype 代码优雅简洁，大小约为 48K。Prototype 旨在通过提供大量快捷方式来让开发者的生活更轻松。例如，你不必编写`document.getElementById("element_id")`，Prototype 允许你输入`$("element_id")`。
 
 Prototype 网站没有提供太多文档，但一群热情的博客作者正在演示如何使用这个库（http://www.prototypedoc.com/）。
 
@@ -5513,11 +5568,11 @@ Bob Ippolito 创建了 MochiKit 库（http://mochikit.com/）。与 Scriptaculou
 
 MochiKit 的设计深受 Python 编程语言的影响。这证明了 JavaScript 的灵活性，它允许自己被这样改造。话虽如此，对我来说，学习 JavaScript 的特性比试图让它表现得像另一种语言更有意义。
 
-MochiKit 提供了 `loadJSONDoc` 和 `doSimpleXMLHttpRequest` 等方法用于 Ajax 请求。它还提供了一个很棒的日志函数，使调试比使用一系列 alert 语句容易得多。所有 MochiKit 方法都在网站上有所记录。
+MochiKit 提供了`loadJSONDoc`和`doSimpleXMLHttpRequest`等方法用于 Ajax 请求。它还提供了一个很棒的日志函数，使调试比使用一系列 alert 语句容易得多。所有 MochiKit 方法都在网站上有所记录。
 
 ### JQUERY
 
-与 Prototype 类似，jQuery 是一个充满快捷方式的 JavaScript 库（http://jquery.com/）。它甚至复制了 Prototype 的 $ 函数。
+与 Prototype 类似，jQuery 是一个充满快捷方式的 JavaScript 库（http://jquery.com/）。它甚至复制了 Prototype 的`$`函数。
 
 jQuery 最有趣的方面在于它允许你在一条语句中链式调用方法。以下是 jQuery 网站首页的一个示例：
 
@@ -5525,7 +5580,7 @@ jQuery 最有趣的方面在于它允许你在一条语句中链式调用方法�
 $("p.surprise").addClass("ohmy").show("slow");
 ```
 
-这会找到所有 class 为 `surprise` 的段落元素，为每个元素添加 `ohmy` 类，然后缓慢地显示它们。这种语法对于为元素附加多个事件和效果非常方便。
+这会找到所有 class 为`surprise`的段落元素，为每个元素添加`ohmy`类，然后缓慢地显示它们。这种语法对于为元素附加多个事件和效果非常方便。
 
 jQuery 有两个版本：压缩版（约 20K），用于生产站点；以及未压缩版（约 52K），可读性更强。
 
@@ -5535,15 +5590,13 @@ YUI 是 Yahoo User Interface 库的缩写（http://developer.yahoo.com/yui/）�
 
 YUI 不是提供一个单一的庞大代码结构，而是分成独立的模块，称为工具。有用于事件、动画、拖放、DOM 操作和 Ajax 的工具。Ajax 工具被称为连接管理器。
 
-与 Prototype 和 jQuery 不同，简洁性不是 YUI 的主要目标。相反，优先确保库的 JavaScript 与你的代码良好协作。所有内容都封装在一个名为 `YAHOO` 的对象中。以下是一个事件处理器的示例：
+与 Prototype 和 jQuery 不同，简洁性不是 YUI 的主要目标。相反，优先确保库的 JavaScript 与你的代码良好协作。所有内容都封装在一个名为`YAHOO`的对象中。以下是一个事件处理器的示例：
 
 ```
 YAHOO.util.event.addEventListener("element_id", "click", myFunction);
 ```
 
 除了核心工具之外，YUI 还为常见的 Web 应用组件提供了控件，如滑块、日历和菜单。
-
-
 
 由于YUI正由一个大型组织积极开发，该库的文档非常详尽。最棒的是，Yahoo的开发者们还记录了工具背后的理论研究（http://developer.yahoo.com/ypatterns/）。这个被称为“设计模式库”的资源，为看似简单的交互（如拖放）背后的复杂性提供了宝贵的见解。
 
@@ -5603,74 +5656,126 @@ Ajax是一项很酷的技术，但这并不是使用它的好理由。Ajax可以
 
 ### 符号
 
-- && (与) 运算符, 25
-- $id 变量, 158
-- * (星号) 在JavaScript中, 16, 22, 39
-- // (斜杠) 在JavaScript中, 16
-- [ ] (方括号) 在数组中, 20
-- _ (下划线) 在JavaScript中, 17
-- { } (花括号)
+- `&&` (与) 运算符, 25
+
+- `$id` 变量, 158
+
+- `*` (星号) 在JavaScript中, 16, 22, 39
+
+- `//` (斜杠) 在JavaScript中, 16
+
+- `[ ]` (方括号) 在数组中, 20
+
+- `_` (下划线) 在JavaScript中, 17
+
+- `{ }` (花括号)
+
     - 在对象字面量中, 79
+
     - 在 while 循环中, 26
-- || (或运算符), 25
-- + (加号) 运算符, 22–23
-- < (小于) 符号运算符, 23
-- <= 复合运算符, 24
-- == (等号) 运算符
+
+- `||` (或运算符), 25
+
+- `+` (加号) 运算符, 22–23
+
+- `<` (小于) 符号运算符, 23
+
+- `<=` 复合运算符, 24
+
+- `==` (等号) 运算符
+
     - 作为比较运算符, 23
-    - 作为恒等运算符 (===), 24
+
+    - 作为恒等运算符 (`===`), 24
+
     - 在JavaScript中的用途, 25
-- != (不恒等于运算符), 25
-- > (大于) 符号运算符, 23
-- >= 复合运算符, 24
-- \ (反斜杠) 在JavaScript中, 18
-- . (点表示法), 在方法和属性中, 32
-- ! (感叹号)
+
+- `!=` (不恒等于运算符), 25
+
+- `>` (大于) 符号运算符, 23
+
+- `>=` 复合运算符, 24
+
+- `\` (反斜杠) 在JavaScript中, 18
+
+- `.` (点表示法), 在方法和属性中, 32
+
+- `!` (感叹号)
+
     - 在 if 语句中, 24
+
     - 作为非运算符, 25
-- " (引号) 在字符串中, 18–19
-- ; (分号)
+
+- `"` (引号) 在字符串中, 18–19
+
+- `;` (分号)
+
     - 在函数中, 29
+
     - 在 for 循环中, 27
+
     - 在语句中, 15
-- , (逗号)
+
+- `,` (逗号)
+
     - 数组与, 20
+
     - 逗号分隔的列表, 28
+
     - 用于分隔变量, 18
-- ( ) (圆括号)
+
+- `( )` (圆括号)
+
     - 参数与, 28
+
     - 在 if 语句中, 23–24
 
 ### A
 
-- abort 方法, 184
+- `abort` 方法, 184
+
 - Ajax的可访问性. *参见 屏幕阅读器*
+
 - Active Scripting, 147
+
 - ActiveX 技术, 47
+
 - Adaptive Path, 3
-- addEvent 函数, 189
-- addEventListener 方法, 189
-- addLoadEvent 函数, 98–99, 181
+
+- `addEvent` 函数, 189
+
+- `addEventListener` 方法, 189
+
+- `addLoadEvent` 函数, 98–99, 181
+
 - Ajax. *另见 应用程序构建（示例）, 2–12*
+
     - 可访问性. *参见 屏幕阅读器*
+
     - Ajax 工具包, 8–11
+
         - CSS 基础, 10–11
+
         - DOM 基础, 11
+
         - 标记语言有效性, 9–10
+
         - 服务器端语言, 8
+
         - XML?, 9
+
 - 定义 Ajax, 5–8
+
 - 设计挑战. *参见 Ajax 的设计挑战*
 
 ## 数字
 
 - 37signals 套件, 130, 190
 
-
-
 Ajax（续）
 
 术语起源，2–4
+
 传统 Web 模型与 Ajax 的对比，5–6
 
 Ajax：一种 Web 应用程序的新方法（Ajax: A New Approach to Web Applications）网站，3
@@ -5680,14 +5785,18 @@ Ajax：一种 Web 应用程序的新方法（Ajax: A New Approach to Web Applica
 Ajax 工具包，8–11
 
 CSS 基础，10–11
+
 DOM 基础，11
+
 标记语言有效性，9–10
+
 服务器端语言，8
+
 XML？，9
 
-ajax.js 文件，114
+`ajax.js` 文件，114
 
-ajax.js JavaScript 文件，105
+`ajax.js` JavaScript 文件，105
 
 alert 对话框，144–145
 
@@ -5695,40 +5804,58 @@ alert 语句，182
 
 alteration 语句，27
 
-and（&&）运算符，25
+and（`&&`）运算符，25
 
 动画
 
 浏览器反馈与，126–127
+
 DOM 和 BOM 与，189
 
 匿名函数，29
 
-appendChild 方法，42–43，74，89，189
+`appendChild` 方法，42–43，74，89，189
 
 Apple Safari
 
 动画与，126
+
 XMLHttpRequest 支持与，47
 
 应用程序构建（示例），155–186
 
 无障碍性（屏幕阅读器），185–186
+
 错误处理，182–184
+
 用于应用程序构建的 JavaScript，167–176
+
 闭包，170–173
+
 完成请求，176
+
 发起请求，173–176
+
 编写对象，168–170
+
 页面准备，177–181
-displayLoading 函数，179
+
+`displayLoading` 函数，179
+
 执行，181
-fadeUp 方法，179–180
+
+`fadeUp` 方法，179–180
+
 规划，155–166
+
 评分和购物车功能，160–162
+
 评分的样式，164–166
+
 样式设计，162–166
+
 XHTML 页面结构，156–159
+
 超时处理，184–185
 
 函数中的参数，28
@@ -5743,11 +5870,11 @@ Array 对象，168
 
 关联数组（哈希），21
 
-JavaScript 中的星号（*），16，22，39
+JavaScript 中的星号（`*`），16，22，39
 
-异步请求（open 方法），54
+异步请求（`open` 方法），54
 
-attachEvent 方法，189
+`attachEvent` 方法，189
 
 属性节点，37
 
@@ -5758,19 +5885,20 @@ attachEvent 方法，189
 背景
 
 更改颜色，180
+
 颜色渐变，130–133
 
-backgroundColor 属性，131
+`backgroundColor` 属性，131
 
-JavaScript 中的反斜杠（\\），18
+JavaScript 中的反斜杠（`\\`），18
 
 Balkan, Aral，149
 
 Basecamp 应用程序，146
 
-basic.css 文件，163
+`basic.css` 文件，163
 
-basket.css 文件，163
+`basket.css` 文件，163
 
 Berners-Lee, Sir Tim，140
 
@@ -5778,17 +5906,17 @@ Berners-Lee, Sir Tim，140
 
 body 元素节点，38
 
-<body> 标签，99
+`<body>` 标签，99
 
 BOM（浏览器对象模型），34，189
 
 书签功能，134–136
 
-bookshop 函数，181
+`bookshop` 函数，181
 
 布尔值，19–20
 
-数组中的方括号（[ ]），20
+数组中的方括号（`[ ]`），20
 
 盲文，与屏幕阅读器，141
 
@@ -5810,30 +5938,31 @@ Bulletproof Web Design（New Riders，2005），vii
 
 回调函数，167，168，178
 
-callback 参数，83
+`callback` 参数，83
 
-callback 属性，176
+`callback` 属性，176
 
 驼峰命名法（camelCasing），17
 
-canvas 元素，167，168，176，177，178
+`canvas` 元素，167，168，176，177，178
 
-captureData 方法，169，171，172–173，178
+`captureData` 方法，169，171，172–173，178
 
-cart.inc 文件，161
+`cart.inc` 文件，161
 
 Carville, James，117
 
 Cascading Style Sheets（CSS）
 
 基础，10–11
+
 与渐进增强，95
 
 命名变量时的区分大小写，17
 
 Cederholm, Dan，vii
 
-childNodes，39
+`childNodes`，39
 
 Clark, Joe，146
 
@@ -5848,129 +5977,129 @@ JavaScript 中的闭包，170–173
 颜色
 
 更改背景色，180
+
 背景色渐变，130–133
 
-逗号（,）
+逗号（`,`）
 
 数组与，20
+
 逗号分隔列表，28
+
 分隔变量，18
 
 JavaScript 中的注释，16
 
+
+
 比较运算符，23–24
 
-completeRequest 方法，175，176，182，183，185
+`completeRequest` 方法，175，176，182，183，185
 
 容器元素，167，168，178
 
-createElement 方法，41，74，89，189
+`createElement` 方法，41，74，89，189
 
-createTextNode 方法，42，74，89
+`createTextNode` 方法，42，74，89
 
 CSS（Cascading Style Sheets）
 
 基础，10–11
+
 与渐进增强，95
 
-花括号（{ }）
+花括号（`{ }`）
 
 对象字面量中的，79
-while 循环中的，26
+
+`while` 循环中的，26
 
 ## D
 
 数据
 
-Hijax 中的数据捕获
-表单数据，111–115
-链接数据，105–108
-数据提取
-从 HTML 中提取，88
-从 JSON 中提取，80–82
-从 XML 中提取，73–74
+### Hijax 中的数据捕获
 
-数据格式，69–92
+- 表单数据，111–115
+- 链接数据，105–108
 
-HTML。参见超文本标记语言（HTML）
+### 数据提取
 
-JSON，77–87
+- 从 HTML 中提取，88
+- 从 JSON 中提取，80–82
+- 从 XML 中提取，73–74
 
-优点，86–87
-示例，78–79
-从 JSON 中提取数据，80–82
-script 标签 hack，82–83
-与 Web 服务，83–86
-使用，79–82
+### 数据格式，69–92
 
-XML。参见可扩展标记语言（XML）
+- HTML。参见超文本标记语言（HTML）
+- JSON，77–87
+  - 优点，86–87
+  - 示例，78–79
+  - 从 JSON 中提取数据，80–82
+  - `script` 标签 hack，82–83
+  - 与 Web 服务，83–86
+  - 使用，79–82
+- XML。参见可扩展标记语言（XML）
 
-JavaScript 数据类型，17–21
+### JavaScript 数据类型，17–21
 
-数组，20–21
-布尔值，19–20
-数字，19
-字符串，18–19
+- 数组，20–21
+- 布尔值，19–20
+- 数字，19
+- 字符串，18–19
 
-Date 对象，168
+`Date` 对象，168
 
 声明，定义，17
 
-DELETE 方法，53
+`DELETE` 方法，53
 
-Ajax 的设计挑战，120–138
+### Ajax 的设计挑战，120–138
 
-向后兼容，121–124
-浏览器行为，134–137
-
-后退按钮，135–137
-书签功能，134–136
-
-浏览器反馈，126–134
-
-动画，126–127
-displayLoading 函数，127，128
-fadeUp 函数，131–134
-背景色渐变，130–133
-parseResponse 函数，128
-sendData 函数，129
-
-Web 服务，125–126
-
-线框图，137–138
+- 向后兼容，121–124
+- 浏览器行为，134–137
+  - 后退按钮，135–137
+  - 书签功能，134–136
+- 浏览器反馈，126–134
+  - 动画，126–127
+  - `displayLoading` 函数，127，128
+  - `fadeUp` 函数，131–134
+  - 背景色渐变，130–133
+  - `parseResponse` 函数，128
+  - `sendData` 函数，129
+- Web 服务，125–126
+- 线框图，137–138
 
 Yahoo 设计模式库（Design Pattern Library），193
 
-details 元素，89
+`details` 元素，89
 
 DHTML（动态 HTML），11
 
-displayLoading 函数，127，128，178，179
+`displayLoading` 函数，127，128，178，179
 
-displayLoading 方法，177
+`displayLoading` 方法，177
 
-div 元素，102，157，158
+`div` 元素，102，157，158
 
-do..while 循环，26–27
+`do..while` 循环，26–27
 
-文档对象模型（DOM），34–43
+### 文档对象模型（DOM），34–43
 
-基础，11
-DOM 脚本编程，83，126
-获取器（getters），35–36
-为 JavaScript 库操作 DOM，189
-节点，36–41
-
-基础，36–38
-childNodes，39
-firstChild 属性，40
-lastChild 属性，40
-nextSibling 属性，40
-nodeValue 属性，40–41
-parentNode 属性，38–39
-previousSibling 属性，40
-
-设置器（setters），41–43
+- 基础，11
+- DOM 脚本编程，83，126
+- 获取器（getters），35–36
+- 为 JavaScript 库操作 DOM，189
+- 节点，36–41
+  - 基础，36–38
+  - `childNodes`，39
+  - `firstChild` 属性，40
+  - `lastChild` 属性，40
+  - `nextSibling` 属性，40
+  - `nodeValue` 属性，40–41
+  - `parentNode` 属性，38–39
+  - `previousSibling` 属性，40
+- 设置器（setters），41–43
 
 文档类型声明（doctype），与标记有效性，10
 
@@ -5982,11 +6111,11 @@ Dolphin Computer Access 屏幕阅读器，141
 
 DOM。参见文档对象模型（DOM）
 
-doSimpleXMLHttpRequest 方法，191
+`doSimpleXMLHttpRequest` 方法，191
 
-doSomething 函数，97
+`doSomething` 函数，97
 
-点号表示法（.），32
+点号表示法（`.`），32
 
 动态 HTML（DHTML），11
 
@@ -6000,88 +6129,79 @@ Edwards, James，146
 
 元素。参见具体元素
 
-else 子句，24
+`else` 子句，24
 
-等号（==）运算符
+等号（`==`）运算符
 
-作为比较运算符，23
-作为全等运算符（===），24
-JavaScript 中的用途，25
+- 作为比较运算符，23
+- 作为全等运算符（`===`），24
+- JavaScript 中的用途，25
 
-相等和全运算符，24–25
+相等和全等运算符，24–25
 
 错误处理，Bulletproof 书籍示例，182–184
 
-errorhandler 变量，182，183
+`errorhandler` 变量，182，183
 
-JavaScript escape 函数，113
+JavaScript `escape` 函数，113
 
 转义，定义，18
 
-JavaScript eval 语句，80
+JavaScript `eval` 语句，80
 
 事件处理程序。参见具体事件处理程序，51–52
 
-事件处理
+### 事件处理
 
-JavaScript 库与，189
-渐进增强与，96–99
+- JavaScript 库与，189
+- 渐进增强与，96–99
 
-示例。参见应用程序构建（示例）
+### 示例。参见应用程序构建（示例）
 
-显示文本文件内容（示例），60–65
+- 显示文本文件内容（示例），60–65
+  - JavaScript，60–63
+  - 标记，63–65
+- 本书示例下载，vii
+- Hijax，103–115
+  - 捕获表单数据，111–115
+  - 捕获链接数据，105–108
+  - 表单，108–110
+- HTML，87
+- 交互式滑块控件，150
+- JSON，78–79
+- XML，69
 
-JavaScript，60–63
-标记，63–65
+感叹号（`!`）
 
-本书示例下载，vii
+- `if` 语句中的，24
+- 作为非运算符，25
 
-Hijax，103–115
+### 可扩展超文本标记语言（XHTML）
 
-捕获表单数据，111–115
-捕获链接数据，105–108
-表单，108–110
+- 与 HTML 的对比，10
+- 页面结构，156–159
 
-HTML，87
+### 可扩展标记语言（XML），69–77
 
-交互式滑块控件，150
-
-JSON，78–79
-
-XML，69
-
-感叹号（!）
-
-if 语句中的，24
-作为非运算符，25
-
-可扩展超文本标记语言（XHTML）
-
-与 HTML 的对比，10
-页面结构，156–159
-
-可扩展标记语言（XML），69–77
-
-优点，76–77
-与 Ajax，9
-缺点，77
-示例，69
-与超文本标记语言（HTML）的对比，10
-使用，70–76
-
-从 XML 中提取数据，73–74
-生成内容，74–76
-编写脚本，72–73
+- 优点，76–77
+- 与 Ajax，9
+- 缺点，77
+- 示例，69
+- 与超文本标记语言（HTML）的对比，10
+- 使用，70–76
+  - 从 XML 中提取数据，73–74
+  - 生成内容，74–76
+  - 编写脚本，72–73
 
 ## F
 
 Fade Anything Technique，134
 
-fade 元素，132
+`fade` 元素，132
 
-fadeUp 函数，132
+`fadeUp` 函数，132
 
-fadeUp 方法，178，179–180
+`fadeUp` 方法，178，179–180
 
 假值（falsey values），19
 
@@ -6089,51 +6209,53 @@ Faulkner, Steve，144
 
 Featherstone, Derek，146
 
-fetchjson.js 文件，80
+`fetchjson.js` 文件，80
 
-fetchxml.js 文件，70，88
+`fetchxml.js` 文件，70，88
 
 文件。参见文本文件，显示内容（示例）
 
-ajax.js 文件，114
-ajax.js JavaScript 文件，105
-Bulletproof 书籍
-basic.css 文件，163
-basket.css 文件，163
-cart.inc 文件，161
-products.css 文件，163
-products.php 文件，166
-rating.php 文件，158，166
-ratings.css 文件，164
-shoppingcart.php 文件，161，166
-fetchjson.js 文件，80
-fetchxml.js 文件，70
-formLogic.php 文件，109，111
+`ajax.js` 文件，114
+
+`ajax.js` JavaScript 文件，105
+
+### Bulletproof 书籍
+
+- `basic.css` 文件，163
+- `basket.css` 文件，163
+- `cart.inc` 文件，161
+- `products.css` 文件，163
+- `products.php` 文件，166
+- `rating.php` 文件，158，166
+- `ratings.css` 文件，164
+- `shoppingcart.php` 文件，161，166
+- `fetchjson.js` 文件，80
+- `fetchxml.js` 文件，70
+- `formLogic.php` 文件，109，111
 
 文件大小，193
 
-firstChild 属性，40
+`firstChild` 属性，40
 
 "Fixing the Back Button and Enabling Bookmarking for Ajax Apps"，作者 Mike Stenhouse，136
 
-Flash
+### Flash
 
-基础，7
-Flash 播放器，124，149
-Flash-JavaScript 桥接，149
-影片，135
-
-FlashAir，与屏幕阅读器，149
+- 基础，7
+- Flash 播放器，124，149
+- Flash-JavaScript 桥接，149
+- 影片，135
+- FlashAir，与屏幕阅读器，149
 
 Flex，124
 
 可聚焦元素和 Tab 键顺序，143–144
 
-for 循环，27
+`for` 循环，27
 
 表单元素，隐藏，145
 
-formLogic.php 文件，109，111
+`formLogic.php` 文件，109，111
 
 表单，Hijax，108–110
 
@@ -6143,26 +6265,26 @@ Freedom Scientific 的 JAWS，141，144
 
 函数。参见具体函数，168
 
-JavaScript 函数，28–31
-嵌套函数，169
+### JavaScript 函数，28–31
 
-垃圾回收，173
+- 嵌套函数，169
+- 垃圾回收，173
 
 Garrett, Jesse James，3–4
 
-GET 请求，52，53，55，121，175
+`GET` 请求，52，53，55，121，175
 
-getAttribute 方法，36
+`getAttribute` 方法，36
 
-getElementById 方法，35，97，98，105
+`getElementById` 方法，35，97，98，105
 
-getElementsByTagName 方法，35–36，97，98，105
+`getElementsByTagName` 方法，35–36，97，98，105
 
-getFoo 函数，170
+`getFoo` 函数，170
 
-getHTTPObject 函数，48–49，60，107，114，174
+`getHTTPObject` 函数，48–49，60，107，114，174
 
-getScript 函数，85
+`getScript` 函数，85
 
 获取器（getters），DOM，35–36
 
@@ -6174,460 +6296,672 @@ Gmail，122，148
 
 Google
 
-Gmail，122，148
-Google 地图，8，123
+- Gmail，122，148
+- Google 地图，8，123
 
-grabFile 函数，72，106，107，127
+`grabFile` 函数，72，106，107，127
 
-大于号（>）运算符，23
+大于号（`>`）运算符，23
 
 GW Micro 的 Window-Eyes，141，144
 
 Dolphin Computer Access 的 Hal，141
 
-head 元素，98，162
+`head` 元素，98，162
 
-head 元素节点，38
+`head` 元素节点，38
 
-HEAD 方法，53
+`HEAD` 方法，53
 
 隐藏 iframe，8
 
 隐藏表单元素，145
 
-Hijax，95–117
+### Hijax，95–117
 
-与书签功能，135
-渐进增强，95，99–103
-
-Web 页面架构，100–102
-Hijax 方法，100
-模式识别，103
-
-不唐突的 JavaScript，96–99
-Web 浏览器增强，115–117
-使用，103–115
-
-捕获表单数据，111–115
-捕获链接数据，105–108
-表单，108–110
+- 与书签功能，135
+- 渐进增强，95，99–103
+  - Web 页面架构，100–102
+- Hijax 方法，100
+- 模式识别，103
+- 不唐突的 JavaScript，96–99
+- Web 浏览器增强，115–117
+- 使用，103–115
+  - 捕获表单数据，111–115
+  - 捕获链接数据，105–108
+  - 表单，108–110
 
 Hijax 对象，168，169，171，176，177，182
 
 宿主对象，33–34，168
 
-
-
 ## K
 
-- 关键字 (keywords)
-  - 在 JavaScript 中, 17
-  - `new` 关键字, 33
-  - `this` 关键字, 33, 168, 169
-  - `var`var` 关键字, 17, 169
+### 关键字（keywords）
+
+- 在 JavaScript 中，17
+- `new` 关键字，33
+- `this` 关键字，33，168，169
+- `var` 关键字，17，169
 
 ## L
 
-- 语言 (languages)。*另请参阅* 可扩展标记语言 (XML)；超文本标记语言 (HTML)
-  - 二进制语言, 19
-  - 标记语言，其有效性, 9–10
-  - Python 编程语言, 191
-  - 服务器端语言, 8
-- `lastChild` 属性, 40
-- Lemon, Gez, 144
-- 数组的长度, 21
-- `length` 属性（子节点）, 39
-- 小于 (<) 符号运算符, 23
-- 库 (libraries)。*参阅* JavaScript 库
-- 链接数据，在 Hijax 中捕获, 105–108
-- 链接元素 (link element), 162
-- 加载事件 (load events), 52, 98
-- `loadJSONDoc` 方法, 191
-- 加载函数 (loading function), 167, 168, 178
-- `loading` 属性, 174
-- 局部变量, 30, 169
-- 逻辑运算符, 25
-- 循环, JavaScript, 26–27
+### 语言（languages）
+
+另请参阅可扩展标记语言（XML）；超文本标记语言（HTML）
+
+- 二进制语言，19
+- 标记语言，其有效性，9–10
+- Python 编程语言，191
+- 服务器端语言，8
+
+`lastChild` 属性，40
+
+Lemon, Gez，144
+
+数组的长度，21
+
+`length` 属性（子节点），39
+
+小于（`<`）符号运算符，23
+
+库（libraries）。参阅 JavaScript 库
+
+链接数据，在 Hijax 中捕获，105–108
+
+链接元素（link element），162
+
+加载事件（load events），52，98
+
+`loadJSONDoc` 方法，191
+
+加载函数（loading function），167，168，178
+
+`loading` 属性，174
+
+局部变量，30，169
+
+逻辑运算符，25
+
+循环，JavaScript，26–27
 
 ## M
 
-- Mac, OS X VoiceOver, 141
-- 标记，以及显示文本文件的内容, 63–65
-- 标记语言，其有效性, 9–10
-- `Math` 对象, 168
-- 数学运算, 22
-- Meebo, 123
-- 数组中的成员, 20
-- 方法，定义, 31–32
-- 微软 (Microsoft)。*参阅* Internet Explorer
-- MochiKit 库, 191
-- Mozilla
-  - Mozilla Firefox 浏览器, 47
-  - 1.0 版本与 `XMLHttpRequest` 对象, 47
-- 乘法函数, 28
+Mac，OS X VoiceOver，141
+
+标记，以及显示文本文件的内容，63–65
+
+标记语言，其有效性，9–10
+
+`Math` 对象，168
+
+数学运算，22
+
+Meebo，123
+
+数组中的成员，20
+
+方法，定义，31–32
+
+微软（Microsoft）。参阅 Internet Explorer
+
+MochiKit 库，191
+
+Mozilla
+
+- Mozilla Firefox 浏览器，47
+- 1.0 版本与 `XMLHttpRequest` 对象，47
+
+乘法函数，28
 
 ## N
 
-- 原生对象, 32, 168
-- 嵌套函数, 169
-- Netscape Navigator
-  - 4 版本的元素访问, 34
-  - 6 版本，作为代码基础, 47
-- Neuberg, Brad, 136
-- `new` 关键字, 33
-- `nextSibling` 属性, 40
-- 节点, DOM, 36–41
-  - 基础知识, 36–38
-  - `childNodes`, 39
-  - `firstChild` 属性, 40
-  - `lastChild` 属性, 40
-  - `nextSibling` 属性, 40
-  - `nodeValue` 属性, 40–41
-  - `parentNode` 属性, 38–39
-  - `previousSibling` 属性, 40
-- `nodeValue` 属性, 40–41
-- 非字母数字字符, 55
-- 不等运算符 (!==), 25
-- 非 (not) 运算符，感叹号 (!), 25
-- `null`, 17, 19
-- 数字, JavaScript, 19
+原生对象，32，168
+
+嵌套函数，169
+
+Netscape Navigator
+
+- 4 版本的元素访问，34
+- 6 版本，作为代码基础，47
+
+Neuberg, Brad，136
+
+`new` 关键字，33
+
+`nextSibling` 属性，40
+
+### 节点，DOM，36–41
+
+- 基础知识，36–38
+- `childNodes`，39
+- `firstChild` 属性，40
+- `lastChild` 属性，40
+- `nextSibling` 属性，40
+- `nodeValue` 属性，40–41
+- `parentNode` 属性，38–39
+- `previousSibling` 属性，40
+
+`nodeValue` 属性，40–41
+
+非字母数字字符，55
+
+不等运算符（`!==`），25
+
+非（not）运算符，感叹号（`!`），25
+
+`null`，17，19
+
+数字，JavaScript，19
 
 ## O
 
-- 对象检测，定义, 48
-- 对象字面量, 79
-- 对象。*另请参阅具体对象*
-  - JavaScript, 31–34
-  - 原生对象, 168
-  - 用户定义, 32–33
-  - 编写, JavaScript, 168–170
-- `onclick` 属性, 96
-- `onclick` 事件处理器, 189
-- `onclick` 属性, 97
-- `onmouseout` 属性, 97
-- `onmouseover` 事件处理器, 51
-- `onmouseover` 属性, 97
-- `onreadystatechange` 事件处理器
-  - 创建实例与此相关, 51–52
-  - `readyState` 值与此相关, 57
-- `onsubmit` 事件处理器, 51, 112, 171, 189
-- `open` 方法
-  - 创建实例与此相关, 52–54
-  - 发起请求与此相关, 175
-- Opera 浏览器，及其 Ajax 能力, 47
-- 运算符, JavaScript, 22–25
-  - 算术, 22–23
-  - 比较, 23–24
-  - 等值与恒等, 24–25
-  - 逻辑, 25
-- 或 (or) 运算符 (||), 25
-- 输出参数, 83
+对象检测，定义，48
+
+对象字面量，79
+
+### 对象
+
+另请参阅具体对象
+
+- JavaScript，31–34
+- 原生对象，168
+- 用户定义，32–33
+- 编写，JavaScript，168–170
+
+`onclick` 属性，96
+
+`onclick` 事件处理器，189
+
+`onclick` 属性，97
+
+`onmouseout` 属性，97
+
+`onmouseover` 事件处理器，51
+
+`onmouseover` 属性，97
+
+### `onreadystatechange` 事件处理器
+
+- 创建实例与此相关，51–52
+- `readyState` 值与此相关，57
+
+### `onsubmit` 事件处理器，51，112，171，189
+
+### `open` 方法
+
+- 创建实例与此相关，52–54
+- 发起请求与此相关，175
+
+Opera 浏览器，及其 Ajax 能力，47
+
+### 运算符，JavaScript，22–25
+
+- 算术，22–23
+- 比较，23–24
+- 等值与恒等，24–25
+- 逻辑，25
+
+或（or）运算符（`||`），25
+
+输出参数，83
 
 ## P
 
-- 页面。*参阅* 网页
-- `pareLinks` 函数, 105
-- 圆括号 ()
-  - 参数与此相关, 28
-  - 在 `if` 语句中, 23–24
-- `parentNode` 属性, 38–39
-- `parseResponse` 函数
-  - 捕获链接数据, Hijax, 107
-  - 来自浏览器的反馈与此相关, 128
-  - 表单与此相关, 114
-  - HTML 与此相关, 89
-  - JSON 与此相关, 80, 81, 83–84
-  - 屏幕阅读器与此相关, 145
-  - XML 与此相关, 73–75
-- 密码参数 (`open` 方法), 54
-- 模式识别, Hijax, 103
-- `person` 参数, 103
-- 加号 (+) 运算符, 22
-- `POST` 方法, 111
-- `POST` 请求, 52, 53, 121, 175
-- Powazek, Derek, 5
-- `prepareCart` 方法, 177, 178, 181
-- `prepareForm` 函数, 112, 114
-- `prepareLinks` 函数, 98, 99, 106
-- `prepareRating` 方法, 178, 181
-- `previousSibling` 属性, 40
-- `products.css` 文件, 163
-- `products.php` 文件, 166
-- `progressbar.gif`, 179
-- 渐进增强 (progressive enhancement), Hijax, 95, 99–103
-  - 网页架构, 100–102
-  - Hijax 方法论, 100
-  - 模式识别, 103
-- 属性。*另请参阅具体属性*
-  - 定义, 31–32
-- prototype 库, 190–191
-- Prototype 网站, 191
-- 代理, 125–126
-- `PUT` 方法, 53
-- Python 编程语言, 191
+页面。参阅网页
+
+`pareLinks` 函数，105
+
+圆括号（`()`）
+
+- 参数与此相关，28
+- 在 `if` 语句中，23–24
+
+`parentNode` 属性，38–39
+
+### `parseResponse` 函数
+
+- 捕获链接数据，Hijax，107
+- 来自浏览器的反馈与此相关，128
+- 表单与此相关，114
+- HTML 与此相关，89
+- JSON 与此相关，80，81，83–84
+- 屏幕阅读器与此相关，145
+- XML 与此相关，73–75
+
+密码参数（`open` 方法），54
+
+模式识别，Hijax，103
+
+`person` 参数，103
+
+加号（`+`）运算符，22
+
+`POST` 方法，111
+
+`POST` 请求，52，53，121，175
+
+Powazek, Derek，5
+
+`prepareCart` 方法，177，178，181
+
+`prepareForm` 函数，112，114
+
+`prepareLinks` 函数，98，99，106
+
+`prepareRating` 方法，178，181
+
+`previousSibling` 属性，40
+
+`products.css` 文件，163
+
+`products.php` 文件，166
+
+`progressbar.gif`，179
+
+### 渐进增强（progressive enhancement），Hijax，95，99–103
+
+- 网页架构，100–102
+- Hijax 方法论，100
+- 模式识别，103
+
+### 属性
+
+另请参阅具体属性
+
+- 定义，31–32
+
+prototype 库，190–191
+
+Prototype 网站，191
+
+代理，125–126
+
+`PUT` 方法，53
+
+Python 编程语言，191
 
 ## Q
 
-- 查询字符串, 55
-- 字符串中的引号 ("), 18–19
+查询字符串，55
+
+字符串中的引号（`"`），18–19
 
 ## R
 
-- 产品评分 (Bulletproof books 示例)
-  - 相关功能, 160–162, 167
-  - 评分类 (rating class), 181
-  - `rating.php` 文件, 158, 166
-  - `ratings.css` 文件, 164
-  - 样式设计, 164–166
-- `readyState` 属性, 52, 56–57, 184
-- `readystatechange` 事件, 185
-- 刷新, 全页, 134
-- `removeChild` 方法, 43
-- 请求方法, 53
-- `request` 属性, 168, 174
-- 请求
-  - Bulletproof books 示例
-    - 完成, 176
-    - 发起, 173–176
-    - 发送, 51–56
-- Resig, John, 89
-- 响应, 对 `XMLHttpRequest` 的响应, 56–59
-- `responseText` 属性, 57–59, 88, 114, 143
-- `responseXML` 属性, 59
-- 可复用代码
-  - Bulletproof books 示例中, 167–176
-    - 闭包, 170–173
-    - 完成请求, 176
-    - 发起请求, 173–176
-    - 编写对象, 168–170
-  - JavaScript 库与此相关, 189–193
-- RGB 值, 131–132
-- 富互联网应用程序 (RIA), 194–195
-- “可访问富互联网应用程序路线图”, 150
-- 屏幕阅读器的角色 (role), 150
-- Ruby on Rails 服务器端框架, 190
-- Russell, Alex, 193
+### 产品评分（Bulletproof books 示例）
+
+- 相关功能，160–162，167
+- 评分类（rating class），181
+- `rating.php` 文件，158，166
+- `ratings.css` 文件，164
+- 样式设计，164–166
+
+`readyState` 属性，52，56–57，184
+
+`readystatechange` 事件，185
+
+刷新，全页，134
+
+`removeChild` 方法，43
+
+请求方法，53
+
+`request` 属性，168，174
+
+### 请求
+
+- Bulletproof books 示例
+  - 完成，176
+  - 发起，173–176
+- 发送，51–56
+
+Resig, John，89
+
+响应，对 `XMLHttpRequest` 的响应，56–59
+
+`responseText` 属性，57–59，88，114，143
+
+`responseXML` 属性，59
+
+### 可复用代码
+
+- Bulletproof books 示例中，167–176
+  - 闭包，170–173
+  - 完成请求，176
+  - 发起请求，173–176
+  - 编写对象，168–170
+- JavaScript 库与此相关，189–193
+
+RGB 值，131–132
+
+富互联网应用程序（RIA），194–195
+
+“可访问富互联网应用程序路线图”，150
+
+屏幕阅读器的角色（role），150
+
+Ruby on Rails 服务器端框架，190
+
+Russell, Alex，193
 
 ## S
 
-- Safari
-  - 动画与此相关, 126
-  - `XMLHttpRequest` 支持与此相关, 47
-- 标量数据类型, 20
-- 变量作用域, 30–31
-- 屏幕阅读器
-  - Ajax 与此相关, 142–145
-  - 基础知识, 141
-  - Bulletproof books 示例, 185–186
-  - 绕过 Ajax, 147–148
-  - 检测, 149
-  - FlashAir 与此相关, 149
-  - 未来技术, 150–151
-  - 最新技术现状, 146–149
-  - Web 浏览器与此相关, 141–142
-- 脚本 (script)
-  - 定义, 15
-  - `script` 元素, 82–83
-  - 脚本标签黑客技巧, JSON, 82–83
-  - `<script>` 标签, 98, 99
-  - 在 XML 中编写, 72–73
-- Scriptaculous 库, 191
-- `searchYahoo` 函数, 83, 84, 85
-- `select` 元素, 112
-- 分号 (;)
-  - 在函数中, 29
-  - 在 `for` 循环中, 27
-  - 在语句中, 15
-- `send` 方法, 55–56
-- `sendData` 函数, 111, 113, 114, 129
-- 服务器端语言, 8
-- 用于存储值的会话变量, 160
-- `setAttribute` 方法, 42, 74
-- `setContainer` 方法, 177
-- `setRequestHeader` 方法, 55–56
-- 设置器 (setters), DOM, 41–43
-- `setTimeout` 函数, 131
-- `setTimeout` 语句, 184
-- 购物车功能 (Bulletproof books 示例), 161–162, 167
-- `shoppingcart.php` 文件, 161, 166
-- JavaScript 中的斜杠 (//), 16
-- 源代码, 第 8 章的下载, 154
-- `split` 函数, JavaScript, 106
-- `start` 方法, 171, 172, 173, 174
-- 状态值, 用于屏幕阅读器, 150
-- 语句, JavaScript, 15–16
-- 状态码, 57–59
-- Stenhouse, Mike, 136
-- Stephenson, Sam, 190
-- 字符串, 18–19
-- 强类型, 17
-- 样式设计 (Bulletproof books 示例), 162–166
-- `submit` 事件, 171
-- 减法运算符, 22
-- SuperNova, 141
-- `surprise` 类, 192
+### Safari
+
+- 动画与此相关，126
+- `XMLHttpRequest` 支持与此相关，47
+
+标量数据类型，20
+
+变量作用域，30–31
+
+### 屏幕阅读器
+
+- Ajax 与此相关，142–145
+- 基础知识，141
+- Bulletproof books 示例，185–186
+- 绕过 Ajax，147–148
+- 检测，149
+- FlashAir 与此相关，149
+- 未来技术，150–151
+- 最新技术现状，146–149
+- Web 浏览器与此相关，141–142
+
+### 脚本（script）
+
+- 定义，15
+- `script` 元素，82–83
+- 脚本标签黑客技巧，JSON，82–83
+- `<script>` 标签，98，99
+
+
+
+- 在 XML 中编写，72–73
+
+- Scriptaculous 库，191
+
+- `searchYahoo` 函数，83、84、85
+
+- `select` 元素，112
+
+- 分号（`;`）
+
+  - 在函数中，29
+  - 在 `for` 循环中，27
+  - 在语句中，15
+
+- `send` 方法，55–56
+
+- `sendData` 函数，111、113、114、129
+
+- 服务器端语言，8
+
+- 用于存储值的会话变量，160
+
+- `setAttribute` 方法，42、74
+
+- `setContainer` 方法，177
+
+- `setRequestHeader` 方法，55–56
+
+- 设置器（setters），DOM，41–43
+
+- `setTimeout` 函数，131
+
+- `setTimeout` 语句，184
+
+- 购物车功能（Bulletproof Books 示例），161–162、167
+
+- `shoppingcart.php` 文件，161、166
+
+- JavaScript 中的斜杠（`//`），16
+
+- 源代码，第 8 章的下载，154
+
+- `split` 函数，JavaScript，106
+
+- `start` 方法，171、172、173、174
+
+- 状态值，用于屏幕阅读器，150
+
+- 语句，JavaScript，15–16
+
+- 状态码，57–59
+
+- Stenhouse，Mike，136
+
+- Stephenson，Sam，190
+
+- 字符串，18–19
+
+- 强类型，17
+
+- 样式设计（Bulletproof Books 示例），162–166
+
+- `submit` 事件，171
+
+- 减法运算符，22
+
+- SuperNova，141
+
+- `surprise` 类，192
 
 ## T
 
-- 标签顺序, 更新, 143–144
-- `tabindex` 属性, 143
-- `tabindex` 黑客技巧, 185
-- `tabindex` 值, 144
-- 测试条件, 在 `for` 循环中, 27
-- 文本文件, 显示内容（示例）, 60–65
-  - JavaScript, 60–63
-  - 标记, 63–65
-- `text` 函数, 170
-- 文本节点, 37
-- `textarea` 元素, 112
-- `this` 关键字, 33, 168, 169
+- 标签顺序，更新，143–144
 
----
+- `tabindex` 属性，143
 
-- `href` 属性, 96
-- 超文本标记语言 (HTML), 87–91
-  - 优点, 91
-  - 基础知识, 9–10
-  - 缺点, 91
-  - 示例, 87
-  - `html` 元素节点, 38
-  - 操作, 88–90
-    - 从中提取数据, 88
-    - `innerHTML` 属性, 89–90
-  - 与 XHTML 的对比, 10
-  - 与 XML 的对比, 10
-- 恒等与等值运算符, 24–25
-- `if` 语句, 23, 175
+- `tabindex` 黑客技巧，185
+
+- `tabindex` 值，144
+
+- 测试条件，在 `for` 循环中，27
+
+- 文本文件，显示内容（示例），60–65
+
+  - JavaScript，60–63
+  - 标记，63–65
+
+- `text` 函数，170
+
+- 文本节点，37
+
+- `textarea` 元素，112
+
+- `this` 关键字，33、168、169
+
+- `href` 属性，96
+
+- 超文本标记语言（HTML），87–91
+
+  - 优点，91
+  - 基础知识，9–10
+  - 缺点，91
+  - 示例，87
+  - `html` 元素节点，38
+  - 操作，88–90
+    - 从中提取数据，88
+    - `innerHTML` 属性，89–90
+  - 与 XHTML 的对比，10
+  - 与 XML 的对比，10
+
+- 恒等与等值运算符，24–25
+
+- `if` 语句，23、175
+
 - `iframes`
-  - 用于书签和后退按钮, 136
-  - 隐藏, 8
-- `img` 元素, 179
-- 包含语句 (include statements), 157
-- 索引, 定义, 21
-- 初始化语句, 27
-- `initiateRequest` 方法, 174, 175
-- `innerHTML` 属性, 89–90, 91, 143, 189
-- `input` 元素, 112
-- 实例, 创建, 48–51
-- 实例化, Bulletproof, 49–51
-- 交互式滑块组件示例, 150
+
+  - 用于书签和后退按钮，136
+  - 隐藏，8
+
+- `img` 元素，179
+
+- 包含语句（include statements），157
+
+- 索引，定义，21
+
+- 初始化语句，27
+
+- `initiateRequest` 方法，174、175
+
+- `innerHTML` 属性，89–90、91、143、189
+
+- `input` 元素，112
+
+- 实例，创建，48–51
+
+- 实例化，Bulletproof，49–51
+
+- 交互式滑块组件示例，150
+
 - Internet Explorer
-  - 动画与此相关, 126
-  - `attachEvent` 方法与此相关, 189
-  - 4 版本中的元素访问, 34
-  - 相关清理工作, 173
-  - Windows 5.0 版本, 47
-- Java applets, 7
-- JavaScript, 15–34
-  - 基础知识, 15
-  - 数据类型, 17–21
-    - 数组, 20–21
-- JavaScript, 数据类型 (续)
-  - 布尔值, 19–20
-  - 数字, 19
-  - 字符串, 18–19
-  - 显示文本文件内容与此相关, 60–63
-  - 函数, 28–31
-  - 循环, 26–27
-  - 对象, 31–34
-  - 运算符, 22–25
-    - 算术, 22–23
-    - 比较, 23–24
-    - 等值与恒等, 24–25
-    - 逻辑, 25
-  - Bulletproof books 示例中的可复用代码, 167–176
-    - 闭包, 170–173
-    - 完成请求, 176
-    - 发起请求, 173–176
-    - 编写对象, 168–170
-  - 语句, 15–16
-  - 其中的变量, 16–17
-- JavaScript 库, 189–195
-  - 选择, 193–194
-  - 库功能文档, 193
-  - Dojo 库, 193
-  - 文件大小, 193
-  - jQuery 库, 192
-  - MochiKit 库, 191
-  - prototype 库, 190–191
-  - Scriptaculous 库, 191
-  - YUI 库, 192–193
-- JavaScript 对象表示法 (JSON), 77–87
-  - 优点, 86–87
-  - 示例, 78–79
-  - 从中提取数据, 80–82
-  - 脚本标签黑客技巧, 82–83
-  - Web 服务与此相关, 83–86
-  - 操作, 79–82
-- `javascript:` 伪协议, 96
-- JAWS (Freedom Scientific), 141, 144
-- jQuery 库, 192
-- JSON。*参阅* JavaScript 对象表示法 (JSON)
 
+  - 动画与此相关，126
+  - `attachEvent` 方法与此相关，189
+  - 4 版本中的元素访问，34
+  - 相关清理工作，173
+  - Windows 5.0 版本，47
 
+- Java applets，7
+
+- JavaScript，15–34
+
+  - 基础知识，15
+  - 数据类型，17–21
+    - 数组，20–21
+  - JavaScript 数据类型（续）
+    - 布尔值，19–20
+    - 数字，19
+    - 字符串，18–19
+    - 显示文本文件内容与此相关，60–63
+    - 函数，28–31
+    - 循环，26–27
+    - 对象，31–34
+    - 运算符，22–25
+      - 算术，22–23
+      - 比较，23–24
+      - 等值与恒等，24–25
+      - 逻辑，25
+    - Bulletproof Books 示例中的可复用代码，167–176
+      - 闭包，170–173
+      - 完成请求，176
+      - 发起请求，173–176
+      - 编写对象，168–170
+    - 语句，15–16
+    - 其中的变量，16–17
+
+- JavaScript 库，189–195
+
+  - 选择，193–194
+  - 库功能文档，193
+  - Dojo 库，193
+  - 文件大小，193
+  - jQuery 库，192
+  - MochiKit 库，191
+  - prototype 库，190–191
+  - Scriptaculous 库，191
+  - YUI 库，192–193
+
+- JavaScript 对象表示法（JSON），77–87
+
+  - 优点，86–87
+  - 示例，78–79
+  - 从中提取数据，80–82
+  - 脚本标签黑客技巧，82–83
+  - Web 服务与此相关，83–86
+  - 操作，79–82
+
+- `javascript:` 伪协议，96
+
+- JAWS（Freedom Scientific），141、144
+
+- jQuery 库，192
+
+- JSON。参阅 JavaScript 对象表示法（JSON）
 
 ## U
 
 - JavaScript 中的下划线（`_`），第 17 页
-- url 元素，第 168 页
-- URL 参数（open 方法），第 53 页
-- url 属性，第 172 页
-- 用户名参数（open 方法），第 54 页
-- 用户自定义对象，第 32–33 页，第 168 页
+
+- `url` 元素，第 168 页
+
+- URL 参数（`open` 方法），第 53 页
+
+- `url` 属性，第 172 页
+
+- 用户名参数（`open` 方法），第 54 页
+
+- 用户自定义对象，第 32–33 页、第 168 页
 
 ## V
 
 - 值
+
   - 假值（falsey），第 19 页
-  - 空值（null），第 17 页，第 19 页
+  - 空值（null），第 17 页、第 19 页
   - 用于存储的会话变量，第 160 页
   - 供屏幕阅读器使用的状态值，第 150 页
-  - tabindex 值，第 144 页
-- var 关键字，第 17 页，第 169 页
-- var 语句，在函数中，第 30 页
+  - `tabindex` 值，第 144 页
+
+- `var` 关键字，第 17 页、第 169 页
+
+- `var` 语句，在函数中，第 30 页
+
 - 变量
-  - $id 变量，第 158 页
+
+  - `$id` 变量，第 158 页
   - JavaScript 基础，第 16–17 页
   - 全局变量，第 169 页
-  - 局部变量，第 30 页，第 169 页
+  - 局部变量，第 30 页、第 169 页
   - 作用域，第 30–31 页
   - 使用会话存储值，第 160 页
   - 真值（truthy），第 20 页
+
 - VoiceOver，Mac 系统，第 141 页
 
 ## W
 
 - W3C（万维网联盟）与标记有效性，第 10 页
+
 - Web 浏览器
+
   - 后退按钮，第 135–137 页
   - 书签功能，第 134–136 页
   - 使用 Hijax 增强，第 115–117 页
   - 来自浏览器的反馈，第 126–134 页
     - 动画，第 126–127 页
-    - displayLoading 函数，第 127 页，第 128 页
-    - fadeUp 函数，第 131–134 页
+    - `displayLoading` 函数，第 127 页、第 128 页
+    - `fadeUp` 函数，第 131–134 页
     - 渐变背景色，第 130–133 页
-    - parseResponse 函数，第 128 页
-    - sendData 函数，第 129 页
+    - `parseResponse` 函数，第 128 页
+    - `sendData` 函数，第 129 页
   - Mozilla Firefox 浏览器，第 47 页
   - Opera 浏览器，第 47 页
   - 屏幕阅读器与浏览器，第 141–142 页
+
 - 网页
+
   - 架构，Hijax，第 100–102 页
   - 准备工作（Bulletproof Books 示例），第 177–181 页
-    - displayLoading 函数，第 179 页
+    - `displayLoading` 函数，第 179 页
     - 执行，第 181 页
-    - fadeUp 方法，第 179–180 页
+    - `fadeUp` 方法，第 179–180 页
   - XHTML 页面结构，第 156–159 页
+
 - Web 服务
+
   - Ajax 的设计挑战与 Web 服务，第 125–126 页
   - JSON 与 Web 服务，第 83–86 页
+
 - 网站
+
   - 用于下载本书示例，第 vii 页
   - 获取更多信息
     - 37signals 应用套件，第 130 页
-    - addEvent 函数，第 189 页
-    - addLoadEvent 函数，第 99 页
+    - `addEvent` 函数，第 189 页
+    - `addLoadEvent` 函数，第 99 页
     - Ajax：Web 应用的新方法，第 3 页
     - Basecamp 应用测试，第 146 页
     - 书签与后退按钮，第 136 页
@@ -6640,72 +6974,78 @@ Hijax 对象，168，169，171，176，177，182
     - FlashAid，第 149 页
     - 标记有效性检查，第 10 页
     - MochiKit 库，第 191 页
-    - Powazek, Derek，第 5 页
-    - Prototype 库，第 190 页，第 191 页
-    - 屏幕阅读器，第 144 页，第 146 页，第 150 页
+    - Powazek，Derek，第 5 页
+    - Prototype 库，第 190 页、第 191 页
+    - 屏幕阅读器，第 144 页、第 146 页、第 150 页
     - Scriptaculous 库，第 191 页
     - 评级样式，第 164 页
     - 线框图，第 137 页
     - XMLHttpRequest，第 46 页
   - 超时，Bulletproof Books 示例，第 184–185 页
-- title 元素节点，第 38 页
+
+- `title` 元素节点，第 38 页
+
 - 工具包，参见 Ajax 工具包
+
 - 真值变量，第 20 页
-- try...catch 语句，第 50 页
 
-Webb, Dan，第 189 页
+- `try...catch` 语句，第 50 页
 
-while 循环，第 26 页
+Webb，Dan，第 189 页
 
-通配符（*），第 39 页
+`while` 循环，第 26 页
 
-Willison, Simon，第 99 页
+通配符（`*`），第 39 页
 
-window 对象，第 33–34 页，第 168 页
+Willison，Simon，第 99 页
 
-Window-Eyes (GW Micro)，第 141 页，第 144 页
+`window` 对象，第 33–34 页、第 168 页
 
-window.onload 事件处理程序，第 52 页，第 98 页
+Window-Eyes（GW Micro），第 141 页、第 144 页
+
+`window.onload` 事件处理程序，第 52 页、第 98 页
 
 线框图，第 137–138 页
 
 "Wireframing Ajax is a bitch" by Jeffrey Zeldman，第 137 页
 
-World Wide Web Consortium (W3C)，与标记有效性，第 10 页
+World Wide Web Consortium（W3C），与标记有效性，第 10 页
 
 World Wide Web，传统模式与 Ajax，第 5 页
 
-Hijax 与...，第 100 页
+Hijax 与……，第 100 页
 
 起源，第 47 页
 
 接收响应，第 56–59 页
-- readyState 属性，第 56–57 页
-- responseText 属性，第 57–59 页
-- responseXML 属性，第 59 页
+
+- `readyState` 属性，第 56–57 页
+- `responseText` 属性，第 57–59 页
+- `responseXML` 属性，第 59 页
 - 状态码，第 57–59 页
 
 发送请求，第 51–56 页
-- onreadystatechange 事件处理程序，第 51–52 页
-- open 方法，第 52–54 页
-- send 方法，第 55–56 页
 
-Web 服务与...，第 125 页
+- `onreadystatechange` 事件处理程序，第 51–52 页
+- `open` 方法，第 52–54 页
+- `send` 方法，第 55–56 页
+
+Web 服务与……，第 125 页
 
 ## X
 
-XHTML (EXtensible HyperText Markup Language)
+XHTML（EXtensible HyperText Markup Language）
 
 - 与 HTML 对比，第 10 页
 - 页面结构，第 156–159 页
 
-XML。参见 EXtensible Markup Language (XML)
+XML。参见 EXtensible Markup Language（XML）
 
 XMLHttpRequest
 
-- 基础，第 8 页，第 12 页
-- 可重用 JavaScript 与...，第 167 页
-- 安全限制与...，第 82 页
+- 基础，第 8 页、第 12 页
+- 可重用 JavaScript 与……，第 167 页
+- 安全限制与……，第 82 页
 
 XMLHttpRequest 实例，第 174 页
 
@@ -6721,39 +7061,40 @@ XMLHttpRequest 对象，第 47–65 页
 Yahoo
 
 - 设计模式库，第 193 页
-- searchYahoo 函数，第 83 页
-- YAHOO 对象，第 192 页
-- Yahoo 用户界面库 (YUI)，第 192–193 页
+- `searchYahoo` 函数，第 83 页
+- `YAHOO` 对象，第 192 页
+- Yahoo 用户界面库（YUI），第 192–193 页
 - Yahoo 的 Web 服务，第 83 页
 
 黄色渐隐技术，第 130 页
 
-YUI 库 (Yahoo 用户界面库)，第 192–193 页
+YUI 库（Yahoo 用户界面库），第 192–193 页
 
 ## Z
 
-Zeldman, Jeffrey，第 137 页
+Zeldman，Jeffrey，第 137 页
 
-零，作为"假值"，第 20 页
+零，作为“假值”，第 20 页
 
 # Bulletproof Ajax
 
 Ajax，或称使你能够创建信息无需刷新整个页面即可更新的网页的技术，是网站设计的最新热潮。但对于非硬核程序员而言，使用 Ajax 增强页面可能是一项挑战。更具挑战性的是确保这些页面对所有用户都有效。
 
-在 *Bulletproof Ajax* 中，Jeremy Keith 展示了熟悉 CSS 和 (X)HTML 的开发者如何在不依赖框架的情况下构建 Ajax 功能，他采用渐进增强的原则来确保页面对所有用户都有效。在这本循序渐进的指南中，他强调的是使用他称之为 **Hijax** 的方法构建 Ajax 页面的最佳实践，这种方法在不牺牲内容可访问性的前提下提供丰富的交互性。
+在 *Bulletproof Ajax* 中，Jeremy Keith 展示了熟悉 CSS 和（X）HTML 的开发者如何在不依赖框架的情况下构建 Ajax 功能，他采用渐进增强的原则来确保页面对所有用户都有效。在这本循序渐进的指南中，他强调的是使用他称之为 `Hijax` 的方法构建 Ajax 页面的最佳实践，这种方法在不牺牲内容可访问性的前提下提供丰富的交互性。
 
 在本书中，你将学习：
 
 - 使用 Web 标准为你的 Ajax 应用程序奠定坚实基础
 - 应用渐进增强以不显式地添加 Ajax
-- 深入了解 XMLHttpRequest 对象的方方面面
-- 识别何时使用 Ajax...以及何时避免使用
+- 深入了解 `XMLHttpRequest` 对象的方方面面
+- 识别何时使用 Ajax……以及何时避免使用
 - 面对 Ajax 交互带来的独特设计挑战
 - 确保你的应用程序在有或没有 JavaScript 的情况下都能正常工作
 
-**Jeremy Keith** 与 Web 咨询公司 Clearleft 合作，使用 Web 标准三驾马车：CSS、(X)HTML 和文档对象模型，创建优雅、易用的网站。他是 Web 标准项目的成员，也是 DOM Scripting 任务组的联合负责人。他在全天研讨会中教授实践性的 Ajax 和 DOM Scripting，并且是 *DOM Scripting: Web Design with JavaScript and the Document Object Model* 一书的作者。
+**Jeremy Keith** 与 Web 咨询公司 Clearleft 合作，使用 Web 标准三驾马车：CSS、（X）HTML 和文档对象模型，创建优雅、易用的网站。他是 Web 标准项目的成员，也是 DOM Scripting 任务组的联合负责人。他在全天研讨会中教授实践性的 Ajax 和 DOM Scripting，并且是 *DOM Scripting: Web Design with JavaScript and the Document Object Model* 一书的作者。
 
 New Riders | VOICES THAT MATTER™
+
 www.newriders.com
 
 书籍级别：面向中级至高级 Web 设计师和开发人员

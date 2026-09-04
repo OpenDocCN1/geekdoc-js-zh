@@ -1,19 +1,13 @@
+
 # JavaScript 教程 - Herong 的教程示例
 
-
-
 ![](img/cover00152.jpeg)
-
-
 
 ![](img/image00133.jpeg)
 
 2.31, 2020
 
-
-
 本书是作者在学习 JavaScript 期间编写的教程示例和笔记集。主题包括 ECMAScript 规范；数据类型、变量和表达式；流程控制语句：`if`、`for`、`switch` 和 `while`；数组和对象的使用；函数的定义与调用；在 HTML 文档中嵌入 JavaScript 代码；`DOM`（文档对象模型）API 级别；在 Web 浏览器中使用 JavaScript 控制台；使用原型创建新对象类型；构建原型继承层次结构；将函数作为对象管理；`jrunscript` JavaScript 壳程序。已于 2020 年更新（版本 2.31），并进行了细微修正。欲获取最新更新和免费示例章节，请访问 http://www.herongyang.com/JavaScript。
-
 
 - 下载和安装 JDK 10
 - "jrunscript" - 脚本壳命令与选项
@@ -22,13 +16,7 @@
 - 使用 jrunscript 运行 JavaScript 代码文件
 - 将函数作为 "Function" 对象使用
 
-
-
-
-
-# JavaScript 教程 - Herong 的教程示例
-
-## 关于本书
+# 关于本书
 
 本节提供了关于本书 -《JavaScript 教程 - Herong 的教程示例》的详细信息。
 
@@ -69,13 +57,11 @@
 *   截至 2013 年 12 月为 613,644 次。
 *   截至 2012 年 12 月为 522,056 次。
 *   截至 2011 年 12 月为 408,260 次。
-*   截至 2011 年 12 月为 408,260 次。
 *   截至 2010 年 12 月为 294,918 次。
 *   截至 2009 年 12 月为 195,636 次。
 *   截至 2008 年 12 月为 90,948 次。
 
 **PDF/EPUB 版本：** [`www.herongyang.com/JavaScript/Full-Version.html`](http://www.herongyang.com/JavaScript/Full-Version.html) - 提供如何获取 PDF、EPUB 或其他格式完整版书籍的信息。
-
 
 ---
 
@@ -107,12 +93,8 @@ Netscape 将 JavaScript 提交给国际电子组织进行标准化，产生了�
 *   `<script type="text/javascript">` 是在 HTML 文档中嵌入 JavaScript 代码的标签。
 *   `document.write()` 是在 HTML 文档中生成动态内容的方法。
 
-
-
-
-
 ```
- JavaScript 1.8.5 July 2010 - ECMA-262 5th edition
+JavaScript 1.8.5 July 2010 - ECMA-262 5th edition
 JavaScript 1.8   June 2008
 JavaScript 1.7   October 2006
 JavaScript 1.6   November 2005
@@ -126,23 +108,15 @@ JavaScript 1.0   March 1996
 
 作为一种编程语言，JavaScript 具有以下独特特性：
 
-* JavaScript 是一种脚本语言 - 源代码是被解释执行的，而不是编译执行。和其他大多数解释型语言一样，它确实支持 `eval(source_code)` 函数。
-
-* JavaScript 是一种动态类型语言 - 数据类型与值关联，而不是与变量关联。换说，声明变量不需要指定特定的数据类型。它可以被赋予任何数据类型的值。
-
-* JavaScript 是一种基于原型的语言 - 使用原型而不是类来定义对象的属性、方法和继承关系。
-
-* JavaScript 使用关联数组来表示对象 - 属性名和值以关联数组元素的形式存储。属性及其值可以在运行时被添加、修改或删除。
-
-* JavaScript 支持函数作为一等公民 - 函数实际上是对象。像普通对象一样，函数可以在执行期间创建、存储在数据结构中并作为参数传递给其他函数。
+*   JavaScript 是一种脚本语言 - 源代码是被解释执行的，而不是编译执行。和其他大多数解释型语言一样，它确实支持 `eval(source_code)` 函数。
+*   JavaScript 是一种动态类型语言 - 数据类型与值关联，而不是与变量关联。换说，声明变量不需要指定特定的数据类型。它可以被赋予任何数据类型的值。
+*   JavaScript 是一种基于原型的语言 - 使用原型而不是类来定义对象的属性、方法和继承关系。
+*   JavaScript 使用关联数组来表示对象 - 属性名和值以关联数组元素的形式存储。属性及其值可以在运行时被添加、修改或删除。
+*   JavaScript 支持函数作为一等公民 - 函数实际上是对象。像普通对象一样，函数可以在执行期间创建、存储在数据结构中并作为参数传递给其他函数。
 
 截至 2020 年，JavaScript 的最新版本是 1.8.5。
 
-JavaScript 教程 - Herong' 教程示例
-
-∟JavaScript 简介
-
-∟第一个 JavaScript - "Hello World!"
+## 第一个 JavaScript - "Hello World!"
 
 本节提供了第一个 JavaScript 教程示例 - 'Hello World!'。
 
@@ -150,46 +124,41 @@ JavaScript 教程 - Herong' 教程示例
 
 1. 输入以下包含一行 JavaScript 代码的 HTML 文档：
 
-```
- <html>
+```html
+<html>
 <head><title>Hello World!</title></head>
 <body>
 <script type="text/javascript">
    document.write('Hello World!');
 </script>
 </body>
-</</html>
+</html>
 ```
 
 2. 将此 HTML 文档保存为 `Hello_World.html`。
-
 3. 在 Web 浏览器中打开 `Hello_World.html`。你将看到：
 
 ```
- Hello World! 
+Hello World! 
 ```
 
 恭喜你，你成功创建并执行了你的第一个 JavaScript 代码！
 
-JavaScript 教程 - Herong' 教程示例
-
-∟JavaScript 简介
-
-∟逐步解析第一个 JavaScript
+## 逐步解析第一个 JavaScript
 
 本节对第一个 JavaScript 'Hello World!' 进行逐步解析。
 
 现在让我逐步解析上一个教程中提供的第一个 JavaScript 代码 "Hello World!"：
 
-```
+```html
  1 <html>
-2 <head><title>Hello World!</title></head>
-3 <body>
-4 <script type="text/javascript">
-5    document.write('Hello World!');
-6 </script>
-7 </body>
-8 </html>
+ 2 <head><title>Hello World!</title></head>
+ 3 <body>
+ 4 <script type="text/javascript">
+ 5    document.write('Hello World!');
+ 6 </script>
+ 7 </body>
+ 8 </html>
 ```
 
 前 3 行是普通的 HTML 标签。
@@ -202,26 +171,21 @@ JavaScript 教程 - Herong' 教程示例
 
 当 Web 浏览器处理此 HTML 文档时，它会解释 `<script>` 标签内所有的 JavaScript 语句。
 
-JavaScript 教程 - Herong' 教程示例
-
-∟JavaScript 简介
-
-∟document.write() 方法
+## document.write() 方法
 
 本节提供了 `document.write()` 方法的简要描述以及一个使用 `document.write()` 方法的简单教程示例。
 
 从上一节的 JavaScript 示例可以看出，`document.write(string)` 方法是一个非常实用的方法。关于该方法的一些说明：
 
-* `document` 是一个内置对象，代表嵌入 JavaScript 的 HTML 文档。
-
-* `write(string)` 是由 `document` 对象提供的方法。它将指定的字符串写入由 `document` 对象表示的 HTML 文档中。
+*   `document` 是一个内置对象，代表嵌入 JavaScript 的 HTML 文档。
+*   `write(string)` 是由 `document` 对象提供的方法。它将指定的字符串写入由 `document` 对象表示的 HTML 文档中。
 
 你可以使用 `document.write(string)` 方法向 HTML 文档写入任何内容，包括 HTML 标签。
 
 这是一个教程示例，展示了如何使用 `document.write()` 方法写入 HTML 文档的一大部分内容：
 
-```
- <html>
+```html
+<html>
 <!-- Document_Write.html
    Copyright (c) HerongYang.com. All Rights Reserved.
 -->
@@ -237,63 +201,42 @@ JavaScript 教程 - Herong' 教程示例
    document.write('</center>');
 </script>
 </body>
-</</html>
+</html>
 ```
 
-[JavaScript 教程 - Herong' 教程示例
-
-∟[ECMAScript 语言规范与 JavaScript 方言]
+# ECMAScript 语言规范与 JavaScript 方言
 
 本章介绍了 ECMAScript 语言规范和 JavaScript 方言的介绍及教程示例。主题包括：JavaScript 历史；方言版本：LiveScript, JavaScript, JScript, JScript .NET；与宿主环境的交互；自动分号插入。
 
 > JavaScript 历史与版本
-
 > 
-
 > ECMAScript 语言规范
-
 > 
-
 > 自动插入分号以结束语句
 
 结论：
 
-* ECMAScript (ECMA-262) 是 JavaScript 语言规范的官方名称。
+*   ECMAScript (ECMA-262) 是 JavaScript 语言规范的官方名称。
+*   JavaScript 最初在 Netscape 中实现，是 ECMAScript 语言规范的源自方言。
+*   JScript 是微软的 ECMAScript 语言规范方言。
+*   ECMAScript 在自动插入分号以结束语句方面有非常有趣的规则。
 
-* JavaScript 最初在 Netscape 中实现，是 ECMAScript 语言规范的源自方言。
-
-* JScript 是微软的 ECMAScript 语言规范方言。
-
-* ECMAScript 在自动插入分号以结束语句方面有非常有趣的规则。
-
-JavaScript 教程 - Herong' 教程示例
-
-∟ECMAScript 语言规范与 JavaScript 方言
-
-∟[JavaScript 历史与版本]
+## JavaScript 历史与版本
 
 本节对 JavaScript 语言规范标准、ECMAScript、JavaScript、LiveScript、JScript 以及版本历史进行了简要描述。
 
 JavaScript 有一个规范和几种方言：
 
-* ECMAScript - JavaScript 语言规范的官方名称，ECMA-262 规范。
-
-* JavaScript - ECMAScript 语言规范的源自方言。JavaScript 在 Netscape 中实现。
-
-* LiveScript - JavaScript 的前身。LiveScript 在 Netscape 3.0 中重命名为 JavaScript。
-
-* JScript - 微软的 ECMAScript 语言规范方言。JScript 最初实现在 1996 年 8 月发布的 Internet Explorer 3.0 浏览器中。
-
-* JScript .NET - 微软 .NET 框架下 JScript 的继任者。
+*   ECMAScript - JavaScript 语言规范的官方名称，ECMA-262 规范。
+*   JavaScript - ECMAScript 语言规范的源自方言。JavaScript 在 Netscape 中实现。
+*   LiveScript - JavaScript 的前身。LiveScript 在 Netscape 3.0 中重命名为 JavaScript。
+*   JScript - 微软的 ECMAScript 语言规范方言。JScript 最初实现在 1996 年 8 月发布的 Internet Explorer 3.0 浏览器中。
+*   JScript .NET - 微软 .NET 框架下 JScript 的继任者。
 
 以下是 JavaScript 历史及其方言版本的简要总结：
 
-
-
-
-
 ```
- 1994   Netscape 1.0 
+1994   Netscape 1.0 
 199?   Netscape 2.0/JavaScript 1.0   ECMA-262 Edition 1, 1997
 1996   IE 3.0/JScript 1.0            ECMA-262 Edition 1, 1997
 199?   Netscape 3.0/JavaScript 1.1   ECMA-262 Edition 1, 1997
@@ -317,10 +260,6 @@ JavaScript 有一个规范和几种方言：
 
 最新版本的 JavaScript 规范是 `ECMA-262 Edition 10`。因此，我们应该将其作为主要的参考来学习 JavaScript。
 
-JavaScript 教程 - Herong 的教程示例
-
-∟ECMAScript 语言规范和 JavaScript 方言
-
 ## ECMAScript 语言规范
 
 本节快速介绍了 ECMAScript 语言规范及其版本历史。
@@ -330,7 +269,7 @@ ECMAScript 语言规范由 `ECMA`（欧洲计算机制造商协会）开发和�
 ### ECMAScript 版本历史：
 
 ```
- 1997   ECMA-262 Edition 1 - 第一版
+1997   ECMA-262 Edition 1 - 第一版
 1998   ECMA-262 Edition 2 - 仅编辑更改
 1999   ECMA-262 Edition 3 - 添加了许多新功能
    ?   ECMA-262 Edition 4 - 废弃
@@ -351,10 +290,6 @@ ECMA 当前对 ECMAScript 的定义：`ECMAScript` 是一种面向对象的编�
 另一个例子，为 Internet 信息服务器 (`IIS`) Web 服务器主机环境设计的 ECMAScript `JScript` 方言添加了 `"request"` 对象及其属性和方法，提供了对服务器当前 HTTP 请求的访问。
 
 如果你想获取 `ECMA-262` (`ECMAScript 语言规范`）第 9 版，请访问 [`www.ecma-international.org/publications/standards/Ecma-262.htm`](http://www.ecma-international.org/publications/standards/Ecma-262.htm)。
-
-JavaScript 教程 - Herong 的教程示例
-
-∟ECMAScript 语言规范和 JavaScript 方言
 
 ## ECMAScript 语言规范 自动分号插入
 
@@ -410,27 +345,26 @@ var b = a
 
 为了避免这些问题，建议在编写 JavaScript 代码时始终显式地使用分号。
 
-
-
+# 数据类型、变量和表达式
 
 JavaScript 是一种动态类型语言。数据类型与值相关，而不是与变量相关。换句话说，声明变量不需要指定特定的数据类型。它们被赋值任何类型的值。
 
 在 JavaScript 源代码中，可以像下面描述的那样以字面量的形式提供不同类型的值。
 
-JavaScript 教程 - Herong 的教程示例
+## 数值字面量
 
-数据类型、变量和表达式
-
-#### 数值字面量
 本节提供了对数值字面量的描述，以及一个关于如何在 JavaScript 代码中使用它们的教程示例。为了在 JavaScript 源代码中提供数字值，你需要使用以下 3 种格式的数值字面量：
 
-#### 整数字面量
+### 整数字面量
+
 跟在可选符号字符之后的数字序列，用于表示从 `-9007199254740991` 到 `9007199254740991` 之间的整数值。例如：`2008`、`-12`。
 
-#### 十进制字面量
+### 十六进制字面量
+
 跟在 `0x` 或 `0X` 之后的十六进制数字序列，表示正整数或浮点值。十六进制字面量也可以带有符号字符。例如：`0x07D8`、`-0x0C`、`0xffffffffffffffff`。
 
-#### 浮点字面量
+### 浮点字面量
+
 实数的科学计数法，语法如下：`(sign)(digits).e(sign)(digits)`。例如：`4.1`、`0.333333`、`-1.5e10`、`4.1e-29`。
 
 在 JavaScript 中，所有数字（包括整数）都以 IEEE754 标准规定的 64 位浮点格式存储。这里有一个 JavaScript 教程示例，展示了如何在 JavaScript 代码中使用不同类型的数字字面量：
@@ -441,7 +375,7 @@ JavaScript 教程 - Herong 的教程示例
    Copyright (c) HerongYang.com. All Rights Reserved.
 -->
 <head><title>Number Literals</title></head>
-<<body>
+<body>
 <pre>
 <script type="text/javascript">
 	document.write(2020);
@@ -478,7 +412,8 @@ JavaScript 教程 - Herong 的教程示例
 4.1e-29
 ```
 
-#### 字符串字面量
+## 字符串字面量
+
 本节提供了对字符串字面量的描述，以及一个关于如何在 JavaScript 代码中使用它们的教程示例。为了在 JavaScript 源代码中提供字符串值，你需要按照以下规则使用字符串值字面量：
 
 1. 字符串字面量是 Unicode 字符序列。
@@ -490,7 +425,7 @@ JavaScript 教程 - Herong 的教程示例
 这里有一个 JavaScript 教程示例，展示了如何在 JavaScript 代码中使用字符串字面量：
 
 ```html
-<html
+<html>
 <!-- String_Literals.html
    Copyright (c) HerongYang.com. All Rights Reserved.
 -->
@@ -528,7 +463,8 @@ Copyright © 2020.
 世界你好！
 ```
 
-#### 声明变量 - "var" 语句
+## 声明变量 - "var" 语句
+
 本节提供了关于变量的描述，以及一个如何使用 `var` 语句声明变量的教程示例。
 
 **什么是变量？** 变量是指指向存储值的符号名称。
@@ -538,7 +474,7 @@ Copyright © 2020.
 这里有一个 JavaScript 教程示例，展示了如何使用 `var` 语句声明变量：
 
 ```html
-<html
+<html>
 <!-- Variables.html
    Copyright (c) HerongYang.com. All Rights Reserved.
 -->
@@ -577,9 +513,6 @@ Herong's Tutorial Examples
 undefined
 ```
 
-
-
-
 # 运算符与表达式 - 示例
 
 本节提供了一个关于使用算术、比较、位运算和赋值运算符的 JavaScript 教程示例。
@@ -587,12 +520,12 @@ undefined
 根据上一节对运算符和表达式的描述，这里有一个 JavaScript 教程示例，向你展示了不同类型的运算符：
 
 ```html
- <html>
+<html>
 <!-- Operators.html
    Copyright (c) HerongYang.com. All Rights Reserved.
 -->
 <head><title>Operators and Expressions</title></head>
-<<body>
+<body>
 <pre>
 <script type="text/javascript">
    document.write(10/3);
@@ -620,14 +553,14 @@ undefined
    document.write('\n');
 </script>
 </pre>
-</</body>
+</body>
 </html>
 ```
 
 此 JavaScript 示例的输出为：
 
 ```
- 3.3333333333333335
+3.3333333333333335
 1
 true
 false
@@ -637,8 +570,6 @@ false
 1
 Assignment is expression
 ```
-
-JavaScript 教程 - Herong 的教程示例
 
 # 流程控制语句
 
@@ -662,10 +593,6 @@ JavaScript 教程 - Herong 的教程示例
 - JavaScript 支持两种类型的条件语句："if ... else if ... else ..." 语句和 "switch ... case ... default ..." 语句。
 - JavaScript 支持两种类型的循环语句："for ..." 语句和 "while ..." 语句。
 
-JavaScript 教程 - Herong 的教程示例
-
-# 流程控制语句](#part0019.xhtml) ](##part0019.xhtml)
-
 ## 什么是语句
 
 本节快速提供了不同类型语句的描述，以及一个关于如何编写表达式和其他语句的教程示例。
@@ -682,7 +609,7 @@ JavaScript 教程 - Herong 的教程示例
 这是一个 JavaScript 教程示例，向你展示了不同类型的语句：
 
 ```html
- <html>
+<html>
 <!-- Statements.html
    Copyright (c) HerongYang.com. All Rights Reserved.
 -->
@@ -709,12 +636,8 @@ JavaScript 教程 - Herong 的教程示例
 </script>
 </pre>
 </body>
-</</html>
+</html>
 ```
-
-JavaScript 教程 - Herong 的教程示例
-
-# 流程控制语句](#part0019.xhtml)
 
 ## 条件 "if" 语句
 
@@ -723,30 +646,37 @@ JavaScript 教程 - Herong 的教程示例
 "if" 语句被称为条件语句。一个 "if" 语句允许你创建一个或多个语句块。执行流将根据条件通过这些语句中的之一。JavaScript 支持 4 种类型的 "if" 语句：
 
 1. 单语句 "if":
+
 ```javascript
 if (condition)
 ```
+
 其中 `condition` 是布尔值。
 
 2. 多语句 "if":
+
 ```javascript
 if (condition) {
    statement1;
    statement2;
 }
 ```
+
 其中 `condition` 是布尔值。
 
 3. "if ... else" 语句:
+
 ```javascript
 if (condition) 
    statement
 else
    statement
 ```
+
 指定了两个语句或块。但只有其中一个会被执行。
 
 4. "if ... else if" 语句:
+
 ```javascript
 if (condition_1)
    statement
@@ -756,31 +686,67 @@ else if (condition_2)
 else
    statement
 ```
+
 指定了多个语句或块。
 
 下一节将提供一个教程示例。
 
-JavaScript 教程 - Herong 的教程示例
+## 条件 "if" 语句示例
 
+本节提供了一个 JavaScript 教程示例，展示如何编写 `if` 语句。
 
+为了帮助你理解 `if` 语句的工作原理，我编写了以下 JavaScript 教程示例 `If_Statements.html`：
 
+```html
+<html>
+<!-- If_Statements.html
+   Copyright (c) HerongYang.com. All Rights Reserved.
+-->
+<head><title>If Statements</title></head>
+<body>
+<pre>
+<script type="text/javascript">
 
+// 使用数值表达式的 if 语句
+   var score = 85;
+   var grade;
+   if (score >= 90) {
+      grade = "A";
+   } else if (score >= 80) {
+      grade = "B";
+   } else if (score >= 70) {
+      grade = "C";
+   } else if (score >= 60) {
+      grade = "D";
+   } else {
+      grade = "F";
+   }
+   document.write("Score: " + score + "\n");
+   document.write("Grade: " + grade + "\n");
+
+// 使用字符串表达式的 if 语句
+   var today = "Friday";
+   if (today == "Saturday" || today == "Sunday") {
+      document.write("Today is " + today + ".\n");
+      document.write("Happy weekend!\n");
+   } else {
+      document.write("Today is " + today + ".\n");
+      document.write("Back to work!\n");
+   }
+</script>
+</pre>
+</body>
+</html>
+```
+
+该 JavaScript 示例的输出是：
 
 ```
- 新年快乐！
-
-打开日志文件。
-写入日志消息。
-关闭日志文件。
-
-显示视图按钮。
-
-图书馆的开放时间为上午 9:00 到下午 9:00。
+Score: 85
+Grade: B
+Today is Friday.
+Back to work!
 ```
-
-# JavaScript 教程 - Herong 的教程示例
-
-# 流程控制语句
 
 ## "switch ... case" 语句
 
@@ -789,7 +755,7 @@ JavaScript 教程 - Herong 的教程示例
 `"switch case"` 语句根据某些条件选择性执行语句的另一种方式。`switch case` 语句具有以下通用语法格式：
 
 ```
- switch (test_expression) {
+switch (test_expression) {
    case expected_value_1:
       statement_11;
       statement_12;
@@ -821,23 +787,19 @@ JavaScript 教程 - Herong 的教程示例
 
 下一节将提供一个教程示例，展示 `switch ... case` 语句的示例。
 
-# JavaScript 教程 - Herong 的教程示例
-
-# 流程控制语句
-
 ### "switch ... case" 语句示例
 
 本节提供了一个 JavaScript 教程示例，展示如何编写 `switch ... case` 语句。
 
 为了帮助你理解 `switch ... case` 语句的工作原理，我编写了以下 JavaScript 教程示例 `Switch_Case_Statements.html`：
 
-```
- <html>
+```html
+<html>
 <!-- Switch_Case_Statements.html
    Copyright (c) HerongYang.com. All Rights Reserved.
 -->
 <head><title>Switch Case Statements</title></head>
-<body
+<body>
 <pre>
 <script type="text/javascript">
 
@@ -874,20 +836,16 @@ JavaScript 教程 - Herong 的教程示例
    document.write("The library is " + open_hours + ".\n");
 </script>
 </pre>
-</</body>
+</body>
 </html>
 ```
 
 该 JavaScript 示例的输出是：
 
 ```
- Today is a weekday.
+Today is a weekday.
 The library is open from 9:00am to 9:00pm.
 ```
-
-# JavaScript 教程 - Herong 的教程示例
-
-# 流程控制语句
 
 ## "for" 循环语句
 
@@ -896,7 +854,7 @@ The library is open from 9:00am to 9:00pm.
 `for` 语句是许多编程语言中非常常见的循环语句。JavaScript 的 `for` 语句具有以下通用语法格式：
 
 ```
- for ([initial_exp]; [loop_condition]; [increment_exp])
+for ([initial_exp]; [loop_condition]; [increment_exp])
    statement or statement_block
 ```
 
@@ -918,22 +876,18 @@ The library is open from 9:00am to 9:00pm.
 
 下一节将提供一个教程示例，展示 `for` 循环语句的示例。
 
-# JavaScript 教程 - Herong 的教程示例
-
-# 流程控制语句
-
 ### "for" 循环语句示例
 
 本节提供了一个 JavaScript 教程示例，展示如何编写 `for` 循环语句。
 
-为了帮助你理解 `for` 循环语句的工作原理，我编写了以下 `Switch_Case_Statements.html`：
+为了帮助你理解 `for` 循环语句的工作原理，我编写了以下 `For_Loop_Statements.html`：
 
-```
- <html>
-<!-- Switch_Case_Statements.html
+```html
+<html>
+<!-- For_Loop_Statements.html
    Copyright (c) HerongYang.com. All Rights Reserved.
 -->
-<head><title>Switch Case Statements</title></head>
+<head><title>For Loop Statements</title></head>
 <body>
 <pre>
 <script type="text/javascript">
@@ -953,7 +907,7 @@ The library is open from 9:00am to 9:00pm.
 </script>
 </pre>
 </body>
-</html
+</html>
 ```
 
 注意：
@@ -968,7 +922,7 @@ The library is open from 9:00am to 9:00pm.
 该 JavaScript 示例的输出是：
 
 ```
- Found prime number: 3.
+Found prime number: 3.
 Found prime number: 5.
 Found prime number: 7.
 Found prime number: 11.
@@ -979,10 +933,6 @@ Found prime number: 23.
 Found prime number: 29.
 ```
 
-# JavaScript 教程 - Herong 的教程示例
-
-# 流程控制语句
-
 ## "while" 循环语句
 
 本节提供了 `while` 循环语句的简要描述。
@@ -990,7 +940,7 @@ Found prime number: 29.
 `while` 语句是许多编程语言中非常常见的循环语句。JavaScript 的 `while` 语句具有以下通用语法格式：
 
 ```
- while (loop_condition)
+while (loop_condition)
    statement or statement_block
 ```
 
@@ -1005,7 +955,7 @@ Found prime number: 29.
 另一种形式的 `while` 循环称为 `do ... while` 循环语句，具有以下语法格式：
 
 ```
- do
+do
    statement or statement_block
 while (loop_condition);
 ```
@@ -1018,27 +968,19 @@ while (loop_condition);
 
 下一节将提供一个教程示例，展示 `while` 循环语句的示例。
 
-
-
-
-
-# JavaScript 教程 - Herong 的教程示例(#part0001.xhtml)
-
-## 控制语句
-
 ### "while" 循环语句示例
 
 本节提供了一个 JavaScript 教程示例，展示如何编写 `while` 循环语句。
 
-为了帮助你理解 `while` 循环语句的工作，我编写了以下 JavaScript 教程示例：`For_Loop_Statements.html`：
+为了帮助你理解 `while` 循环语句的工作，我编写了以下 JavaScript 教程示例：`While_Loop_Statements.html`：
 
 ```html
- <>
+<html>
 <!-- While_Loop_Statements.html
    Copyright (c) HerongYang.com. All Rights Reserved.
 -->
 <head><title>While Loop Statements</title></head>
-<body
+<body>
 <pre>
 <script type="text/javascript">
    var i, j, is_prime;
@@ -1057,16 +999,16 @@ while (loop_condition);
    }
 </script>
 </pre>
-</body
-</>
+</body>
+</html>
 ```
 
-此 JavaScript 使用嵌套的 `while` 语句来计算质数。它的执行逻辑与 `While_Loop_Statements.html` 中的 JavaScript 相同。
+此 JavaScript 使用嵌套的 `while` 语句来计算质数。它的执行逻辑与 `For_Loop_Statements.html` 中的 JavaScript 相同。
 
 此示例 JavaScript 的输出为：
 
 ```
- Found a prime number: 3.
+Found a prime number: 3.
 Found a prime number: 5.
 Found a prime number: 7.
 Found a prime number: 11.
@@ -1077,9 +1019,7 @@ Found a prime number: 23.
 Found a prime number: 29.
 ```
 
-# JavaScript 教程 - Herong 的教程示例(#part0001.xhtml)
-
-## 创建、访问和操作数组
+# 创建、访问和操作数组
 
 本章简要介绍了创建和操作数组的方法。主题包括：什么是数组；创建数组；访问数组元素；扩展和截断数组；调用数组对象方法。
 
@@ -1100,11 +1040,7 @@ Found a prime number: 29.
 - 使用索引访问数组元素：`users[i]`。
 - 数组有许多对象方法，如 `users.sort()`、`users.push("Herong")` 等。
 
-# JavaScript 教程 - Herong 的教程示例(#part0001.xhtml)
-
-## 创建、访问和操作数组
-
-### 什么是数组
+## 什么是数组
 
 本节简要描述了 JavaScript 中什么是数组，并提供了一个展示 JavaScript 数组特性的教程示例。
 
@@ -1123,12 +1059,12 @@ Found a prime number: 29.
 以下是一个 JavaScript 教程示例，展示了上述的一些特征：
 
 ```html
- <>
+<html>
 <!-- Array_Features.html
    Copyright (c) HerongYang.com. All Rights Reserved.
 -->
 <head><title>Array Features</title></head>
-<body
+<body>
 <pre>
 <script type="text/javascript">
 
@@ -1146,22 +1082,18 @@ Found a prime number: 29.
    document.write("Interest rate: "+account[3]*100+"%\n");
 </script>
 </pre>
-</body
-</>
+</body>
+</html>
 ```
 
 此示例 JavaScript 的输出为：
 
 ```
- Account type: Saving
+Account type: Saving
 Interest rate: 5.25%
 ```
 
-# JavaScript 教程 - Herong 的教程示例(#part0001.xhtml)
-
-## 创建、访问和操作数组
-
-### 创建数组对象
+## 创建数组对象
 
 本节提供了一个关于如何创建数组对象的教程示例。
 
@@ -1174,12 +1106,12 @@ Interest rate: 5.25%
 以下是一个展示如何创建数组对象的 JavaScript 教程示例：
 
 ```html
- <>
+<html>
 <!-- Create_Arrays.html
    Copyright (c) HerongYang.com. All Rights Reserved.
 -->
 <head><title>Create Arrays</title></head>
-<body
+<body>
 <pre>
 <script type="text/javascript">
 
@@ -1201,24 +1133,20 @@ Interest rate: 5.25%
    document.write(new_account[0]+": "+new_account[1]+"\n");
 </script>
 </pre>
-</body
-</>
+</body>
+</html>
 ```
 
 此示例 JavaScript 的输出为：
 
 ```
- Checking: 9.99
+Checking: 9.99
 Saving: 999.99
 Stock: 99999.99
 undefined: undefined
 ```
 
-# JavaScript 教程 - Herong 的教程示例(#part0001.xhtml)
-
-## 创建、访问和操作数组
-
-### 通过索引访问数组元素
+## 通过索引访问数组元素
 
 本节提供了一个关于如何通过索引访问数组元素的教程示例。
 
@@ -1231,11 +1159,8 @@ undefined: undefined
 - 如果检索数组元素时指定的索引大于数组长度，将返回 `undefined` 值。
 - 如果存储数组元素时指定的索引大于数组长度，数组将扩展以便在指定的索引处存储元素。
 
-
-
-
 ```html
- <html>
+<html>
 <!-- Access_Array_Elements.html
    Copyright (c) HerongYang.com. All Rights Reserved.
 -->
@@ -1267,17 +1192,13 @@ undefined: undefined
 此 JavaScript 示例的输出是：
 
 ```
- Element at index of 0: JavaScript
+Element at index of 0: JavaScript
 Element at index of 5: undefined
 Element at index of 10: Web
 Element at index of 15: undefined
 ```
 
-JavaScript 教程 - Herong 的教程示例
-
-∟创建、访问和操作数组
-
-∟截断和遍历数组元素
+## 截断和遍历数组元素
 
 本节提供了一个教程示例，介绍了如何使用数组的 `length` 属性来截断和遍历数组元素。
 
@@ -1290,7 +1211,7 @@ JavaScript 教程 - Herong 的教程示例
 例如，使用 `for` 循环遍历数组的所有元素可以这样写：
 
 ```javascript
- for (var i = 0; i < array_name.length; i++) {
+for (var i = 0; i < array_name.length; i++) {
   ... array_name[i];
 }
 ```
@@ -1298,10 +1219,10 @@ JavaScript 教程 - Herong 的教程示例
 这里有一个 JavaScript 教程示例，向你展示如何使用 `length` 属性截断和遍历数组元素：
 
 ```html
- <html>
+<html>
 <!-- Loop_Array_Elements.html
     Copyright (c) HerongYang.com. All Rights Reserved.
-->
+-->
 <head><title>Loop Array Elements</title></head>
 <body>
 <pre>
@@ -1332,49 +1253,132 @@ JavaScript 教程 - Herong 的教程示例
 此 JavaScript 示例的输出是：
 
 ```
- First 10 even numbers: 0, 2, 4, 6, 8, 10, 12, 14, 16, 18, 
+First 10 even numbers: 0, 2, 4, 6, 8, 10, 12, 14, 16, 18, 
 ```
 
-JavaScript 教程 - Herong 的教程示例
-
-∟创建、访问和操作数组
-
-∟数组对象实例方法
+## 数组对象实例方法
 
 本节提供了常用数组对象实例方法的列表，包括 `split()`、`join()`、`sort()` 等。
 
 作为一个对象，数组有几个常用的对象实例方法：
 
-* `this_array.concat(second_array)` - `concat()` 方法通过将指定的第二个数组连接到此数组的末尾来返回一个新数组。
+*   `this_array.concat(second_array)` - `concat()` 方法通过将指定的第二个数组连接到此数组的末尾来返回一个新数组。
+*   `this_array.join(delimiter)` - `join()` 方法通过用指定的 `delimiter` 连接数组中的所有元素来返回一个字符串。
+*   `this_array.pop()` - `pop()` 方法返回数组的最后一个元素，并将其从数组中删除，使数组长度减 1。
+*   `this_array.push(element)` - `push()` 方法将元素添加到数组的末尾并返回新长度。
+*   `this_array.shift()` - `shift()` 方法从数组中移除第一个元素并返回它。
+*   `this_array.reverse()` - `reverse()` 方法反转数组元素的顺序。
+*   `this_array.splice(start, deleteCount, item1)` - `splice()` 方法删除或替换数组中的元素。
+*   `this_array.slice(start, end)` - `slice()` 方法将数组一部分的浅拷贝返回到一个新的数组对象中。
+*   `this_array.indexOf(element)` - `indexOf()` 方法返回在数组中找到给定元素的第一个索引。
+*   `this_array.lastIndexOf(element)` - `lastIndexOf()` 方法返回在数组中找到给定元素的最后一个索引。
+*   `this_array.forEach(callback)` - `forEach()` 方法为数组的每个元素执行一次提供的函数。
+*   `this_array.map(callback)` - `map()` 方法为数组的每个元素执行一次提供的函数，并结果创建一个新数组。
+*   `this_array.filter(callback)` - `filter()` 方法创建一个包含所有通过提供函数测试的元素的数组。
+*   `this_array.reduce(callback, initialValue)` - `reduce()` 方法对数组的每个元素执行用户提供的归约函数，产生单个输出值。
 
-* `this_array.join(delimiter)` - `join()` 方法通过用指定的 `delimiter` 连接数组中的所有元素来返回一个字符串。
+## 数组对象实例方法示例
 
-* `this_array.pop()` - `pop()` 方法返回数组的最后一个元素，并将其从数组中删除，使数组长度减 1。
+本节提供了一个 JavaScript 教程示例，展示如何使用数组对象实例方法。
 
-* `this_array.push(element)` - `push()` 方法将元素添加到数组的末尾并返回新长度。
+```html
+<html>
+<!-- Array_Methods.html
+   Copyright (c) HerongYang.com. All Rights Reserved.
+-->
+<head><title>Array Methods</title></head>
+<body>
+<pre>
+<script type="text/javascript">
+   var a = new Array(1, 2, 3);
+   var b = new Array(4, 5, 6);
 
-* `this_array.shift()` - `shift()` 方法从数组中移除第一个元素并返回它。
+   document.write("a: " + a + "\n");
+   document.write("b: " + b + "\n");
 
-* `this_array.reverse()` - `reverse()` 方法反转数组元素的顺序。
+   var c = a.concat(b);
+   document.write("a.concat(b): " + c + "\n");
 
-* `this_array.splice(start, deleteCount, item1)` - `splice()` 方法删除或替换数组中的元素。
+   document.write("a.join('-'): " + a.join('-') + "\n");
 
-* `this_array.slice(start, end)` - `slice()` 方法将数组一部分的浅拷贝返回到一个新的数组对象中。
+   document.write("a.pop(): " + a.pop() + "\n");
+   document.write("a: " + a + "\n");
 
-* `this_array.indexOf(element)` - `indexOf()` 方法返回在数组中找到给定元素的第一个索引。
+   document.write("a.push(7): " + a.push(7) + "\n");
+   document.write("a: " + a + "\n");
 
-* `this_array.lastIndexOf(element)` - `lastIndexOf()` 方法返回在数组中找到给定元素的最后一个索引。
+   document.write("a.shift(): " + a.shift() + "\n");
+   document.write("a: " + a + "\n");
 
-* `this_array.forEach(callback)` - `forEach()` 方法为数组的每个元素执行一次提供的函数。
+   document.write("a.reverse(): " + a.reverse() + "\n");
+   document.write("a: " + a + "\n");
 
-* `this_array.map(callback)` - `map()` 方法为数组的每个元素执行一次提供的函数，并结果创建一个新数组。
+   document.write("a.splice(1, 1, 8): " + a.splice(1, 1, 8) + "\n");
+   document.write("a: " + a + "\n");
 
-* `this_array.filter(callback)` - `filter()` 方法创建一个包含所有通过提供函数测试的元素的数组。
+   document.write("a.slice(1, 2): " + a.slice(1, 2) + "\n");
+   document.write("a: " + a + "\n");
 
-* `this_array.reduce(callback, initialValue)` - `reduce()` 方法对数组的每个元素执行用户提供的归约函数，产生单个输出值。
+   document.write("a.indexOf(8): " + a.indexOf(8) + "\n");
+   document.write("a.lastIndexOf(8): " + a.lastIndexOf(8) + "\n");
 
+   a.forEach(function(x) { document.write("forEach: " + x + "\n"); });
 
+   var d = a.map(function(x) { return x * 2; });
+   document.write("a.map(x*2): " + d + "\n");
 
+   var e = a.filter(function(x) { return x > 3; });
+   document.write("a.filter(x>3): " + e + "\n");
+
+   var f = a.reduce(function(acc, x) { return acc + x; }, 0);
+   document.write("a.reduce(sum): " + f + "\n");
+</script>
+</pre>
+</body>
+</html>
+```
+
+此 JavaScript 示例的输出是：
+
+```
+a: 1,2,3
+b: 4,5,6
+a.concat(b): 1,2,3,4,5,6
+a.join('-'): 1-2-3
+a.pop(): 3
+a: 1,2
+a.push(7): 3
+a: 1,2,7
+a.shift(): 1
+a: 2,7
+a.reverse(): 7,2
+a: 7,2
+a.splice(1, 1, 8): 2
+a: 7,8
+a.slice(1, 2): 8
+a: 7,8
+a.indexOf(8): 1
+a.lastIndexOf(8): 1
+forEach: 7
+forEach: 8
+a.map(x*2): 14,16
+a.filter(x>3): 7,8
+a.reduce(sum): 15
+```
+
+# 定义和调用函数
+
+本章简要介绍了定义和调用函数的方法。主题包括：定义你自己的函数；调用你自己的函数；按值或按引用传递参数；函数参数作为局部副本传递；未命名参数和 `arguments[]` 数组；函数内部的局部变量作用域。
+
+- 定义你自己的函数
+- 定义你自己的函数 - 示例
+- 调用你自己的函数 - 示例
+- 按值或按引用传递参数
+- 函数参数作为局部副本传递
+- 未命名参数和 `arguments[]` 数组
+- 函数内部的局部变量作用域
+
+结论：
 
 *   `function (...) {...}` 语句允许你定义自己的函数。
 *   调用函数时，基本类型参数通过值传递。而对象参数通过引用传递。
@@ -1383,18 +1387,14 @@ JavaScript 教程 - Herong 的教程示例
 *   未命名参数可以通过函数内部的内置数组 `arguments[]`访问。
 *   在函数内部声明的变量具有局部作用域，局限于函数体。
 
-# JavaScript 教程 - Herong 的教程示例
-
-#### 定义和调用函数
-
-### 定义你自己的函数
+## 定义你自己的函数
 
 本节简要描述了如何定义自己的函数以及 JavaScript 函数的一些基本特征。
 
 与许多许多编程语言一样，JavaScript 允许你定义自己的函数。JavaScript 使用以下语法格式来定义新函数：
 
 ```javascript
- function function_name(parameter_1, parameter_2, ...) {
+function function_name(parameter_1, parameter_2, ...) {
    statement_1; 
    statement_2;
    ...
@@ -1420,10 +1420,6 @@ JavaScript 函数具有以下基本特征：
 
 下一节将给出一个教程示例，展示你如何定义新函数。
 
-# JavaScript 教程 - Herong 的教程示例
-
-#### 定义和调用函数
-
 ### 定义你自己的函数 - 示例
 
 本节提供了一个关于如何定义自己的 JavaScript 函数的教程示例。
@@ -1431,7 +1427,7 @@ JavaScript 函数具有以下基本特征：
 这是一个定义用户函数的 JavaScript 教程示例。
 
 ```html
- <html>
+<html>
 <!-- Define_Functions.html
    Copyright (c) HerongYang.com. All Rights Reserved.
 -->
@@ -1469,10 +1465,6 @@ function f2c(fahrenheit) {
 
 第三个函数 `f2c()` 被定义为执行几件事：接收参数 `fahrenheit`，声明局部变量 `celsius`，将从 `fahrenheit` 转换来的摄氏度值赋值给 `celsius`，向 HTML 文档写入两行文本，返回 `celsius` 中的值。
 
-# JavaScript 教程 - Herong 的教程示例
-
-#### 定义和调用函数
-
 ### 调用你自己的函数 - 示例
 
 本节简要描述了如何调用自己的 JavaScript 函数以及一个调用温度转换函数的教程示例。
@@ -1480,7 +1472,7 @@ function f2c(fahrenheit) {
 一旦定义了函数，你就可以作为表达式的一部分调用它，如此语法格式所示：
 
 ```javascript
- ... function_name(exp1, exp2, ...) ...;
+... function_name(exp1, exp2, ...) ...;
 ```
 
 当求值上述表达式时，将遵循以下步骤：
@@ -1492,7 +1484,7 @@ function f2c(fahrenheit) {
 这是一个教程示例，它定义了一个简单的函数，用于将华氏度温度值转换为摄氏度：
 
 ```html
- <html>
+<html>
 <!-- Define_Call_Functions.html
    Copyright (c) HerongYang.com. All Rights Reserved.
 -->
@@ -1531,7 +1523,7 @@ function f2c(fahrenheit) {
 此教程示例的输出并没有出任何意外：
 
 ```
- Test 1:
+Test 1:
 Converting Fahrenheit = 70
 Returning Celsius = 21.11111111111111
 Received Celsius = 21.11111111111111
@@ -1547,10 +1539,6 @@ Returning Celsius = -17.77777777777778
 Received Celsius = -17.77777777777778
 ```
 
-# JavaScript 教程 - Herong 的教程示例
-
-#### 定义和调用函数
-
 ### 按值或按引用传递参数
 
 本节提供了一个教程示例，展示基本类型参数通过值传递，对象参数通过引用传递。
@@ -1558,7 +1546,7 @@ Received Celsius = -17.77777777777778
 正如我在上一个节中提到的，JavaScript 文档说基本类型参数通过值传递，对象参数通过引用传递。我想用以下 JavaScript 教程示例来测试这些规则：
 
 ```html
- <html>
+<html>
 <!-- Swap_Values_and_Arrays.html
    Copyright (c) HerongYang.com. All Rights Reserved.
 -->
@@ -1605,12 +1593,8 @@ function swap_arrays(left, right) {
 
 这里是该教程示例的输出：
 
-
-
-
-
 ```
- Test 1: Swapping two string variables
+Test 1: Swapping two string variables
    Before call: Black | White
    After call: Black | White
 
@@ -1623,11 +1607,7 @@ Test 2: Swapping two array objects
 
 当执行语句 `swap_arrays(colors,animals);` 时，存储在 `colors` 和 `animals` 中的数组引用会被传递到 `swap_arrays()` 函数中。`swap_arrays()` 内部的交换是在原始数组上进行的。这就是为什么 `colors` 数组现在包含了动物。
 
-# JavaScript 教程 - Herong 的教程示例
-
-#### ∟定义和调用函数](#part0036.xhtml)
-
-##### ∟函数参数作为局部副本传递
+### 函数参数作为局部副本传递
 
 本节简要描述了基本类型参数和对象参数是如何作为原始变量所存储内容的局部副本进行传递的。
 
@@ -1649,33 +1629,33 @@ Test 2: Swapping two array objects
 
 以下 VBScript 代码将使用 `ByRef` 参数交换原始变量：
 
-```
- vFirst = "Dog"
-vSecond = "Cat"
-Call SwapByRef(vFirst, vSecond)
-document.writeln(" After Sub: " & vFirst & " | " & vSecond)
 
-Sub SwapByRef(ByRef vLeft, ByRef vRight)
-vTemp = vLeft
-vLeft = vRight
-vRight = vTemp
-End Sub
-```
-
-如果你尝试编写一个 JavaScript 函数来交换两个对象，你将会失败。请查看下一节我的示例。
 
 # JavaScript 教程 - Herong 的教程示例
 
-#### ∟定义和调用函数](#part0036.xhtml)
+## 定义和调用函数
 
-##### ∟函数参数作为局部副本传递 - 示例
+### 函数参数作为局部副本传递 - 示例
 
 本节提供了一个关于在函数中交换原始基本类型和对象变量的教程示例。
 
 为了证明 JavaScript 函数始终为对象参数创建局部副本，我编写了以下教程示例来尝试交换两个对象：
 
+```vbscript
+vFirst = "Dog"
+vSecond = "Cat"
+Call SwapByRef(vFirst, vSecond)
+document.writeln(" After Sub: " & vFirst & " | " & vSecond)
+
+Sub SwapByRef(ByRef vLeft, ByRef vRight)
+    vTemp = vLeft
+    vLeft = vRight
+    vRight = vTemp
+End Sub
 ```
- <html>
+
+```html
+<html>
 <!-- Swap_Function.html
    Copyright (c) HerongYang.com. All Rights Reserved.
 -->
@@ -1688,23 +1668,23 @@ function swap(left, right) {
    var temp = left;
    left = right;
    right = temp;
-   document.write("   Inside swap(): "+left+" | "+right+"\n");
-   document.write("   Type of argument: "+(typeof left)+"\n"); 
+   document.write("   Inside swap(): " + left + " | " + right + "\n");
+   document.write("   Type of argument: " + (typeof left) + "\n"); 
 }
 
-   var first = "Dog";
-   var second = "Cat";
-   document.write("\nTest 1: Swapping two string variables\n");
-   document.write("   Before call: "+first+" | "+second+"\n");
-   swap(first,second);
-   document.write("   After call: "+first+" | "+second+"\n");
+var first = "Dog";
+var second = "Cat";
+document.write("\nTest 1: Swapping two string variables\n");
+document.write("   Before call: " + first + " | " + second + "\n");
+swap(first, second);
+document.write("   After call: " + first + " | " + second + "\n");
 
-   var one = new String("White");
-   var two = new String("Black");
-   document.write("\nTest 2: Swapping two string objects\n");
-   document.write("   Before call: "+one+" | "+two+"\n");
-   swap(one,two);
-   document.write("   After call: "+one+" | "+two+"\n");
+var one = new String("White");
+var two = new String("Black");
+document.write("\nTest 2: Swapping two string objects\n");
+document.write("   Before call: " + one + " | " + two + "\n");
+swap(one, two);
+document.write("   After call: " + one + " | " + two + "\n");
 </script>
 </pre>
 </body>
@@ -1714,7 +1694,7 @@ function swap(left, right) {
 输出显示，函数参数始终作为原始变量的局部副本传递：
 
 ```
- Test 1: Swapping two string variables
+Test 1: Swapping two string variables
    Before call: Dog | Cat
    Inside swap(): Cat | Dog
    Type of argument: string
@@ -1729,26 +1709,22 @@ Test 2: Swapping two string objects
 
 无论是基本类型变量还是对象变量，没有方法在函数中交换两个原始变量。
 
-# JavaScript 教程 - Herong 的教程示例
-
-#### ∟定义和调用函数](#part0036.xhtml)
-
-##### ∟全局变量和局部变量 - 作用域规则
+### 全局变量和局部变量 - 作用域规则
 
 本节简要描述全局变量和局部变量。提供了关于变量作用域的基本规则。
 
 当在 JavaScript 代码中使用函数时，变量在两个级别进行声明。以下是一些基本规则：
 
-1.  脚本级作用域 - 在任何函数外部使用 `var` 语句声明的变量具有脚本级作用域。脚本级作用域的变量称为全局变量，在脚本的任何地方都有效，即使在函数内部。
-2.  函数级作用域 - 在函数内部使用 `var` 语句声明的变量具有函数级作用域。函数级作用域的变量称为局部变量，在定义的函数内部有效。
-3.  自动声明 - 如果使用变量时不使用 `var` 声明语句，它将自动声明为脚本级作用域，变成全局变量，即使是在函数内部也是如此。但不建议使用这种自动声明全局变量的方法。
-4.  冲突 - 如果在函数内部显式定义的变量与函数外部定义的变量同名，则外部变量在函数函数内将无法访问。
+1.  **脚本级作用域** - 在任何函数外部使用 `var` 语句声明的变量具有脚本级作用域。脚本级作用域的变量称为全局变量，在脚本的任何地方都有效，即使在函数内部。
+2.  **函数级作用域** - 在函数内部使用 `var` 语句声明的变量具有函数级作用域。函数级作用域的变量称为局部变量，在定义的函数内部有效。
+3.  **自动声明** - 如果使用变量时不使用 `var` 声明语句，它将自动声明为脚本级作用域，变成全局变量，即使是在函数内部也是如此。但不建议使用这种自动声明全局变量的方法。
+4.  **冲突** - 如果在函数内部显式定义的变量与函数外部定义的变量同名，则外部变量在函数内部将无法访问。
 
 这些规则产生了一些有趣的后果：
 
-*   规则 1 的优点是，主代码中定义的变量在所有过程中都是自动可的。你不需要将它们作为引用参数传递以便在过程中共享。
+*   规则 1 的优点是，主代码中定义的变量在所有过程中都是自动可用的。你不需要将它们作为引用参数传递以便在过程中共享。
 *   规则 2 的缺点是，如果你在过程中没有显式声明的情况下使用了临时变量，可能会无意中更改同名全局变量的值。
-*   规则 3 帮助我们避免规则 3 的负面影响，前提是你在过程中显式地声明所有临时变量。
+*   规则 3 帮助我们避免规则 2 的负面影响，前提是你在过程中显式地声明所有临时变量。
 
 请查看下一节关于变量作用域规则应用的示例。
 
@@ -1758,12 +1734,8 @@ Test 2: Swapping two string objects
 
 为了观察全局变量在函数内部和外部的行为，我编写了以下教程示例：
 
-
-
-
-
 ```html
- <html>
+<html>
 <!-- Global_Variable_Scope.html
    Copyright (c) HerongYang.com. All Rights Reserved.
 -->
@@ -1771,15 +1743,15 @@ Test 2: Swapping two string objects
 <body>
 <pre>
 <script type="text/javascript">
-   var globalVar;
-   globalVar = "Cat";
-   globalNoVar = "Dog";
+var globalVar;
+globalVar = "Cat";
+globalNoVar = "Dog";
 
-   scopeCheck();
+scopeCheck();
 
-   document.write("\n\nAfter function call:");
-   document.write("\n   globalVar = " + globalVar);
-   document.write("\n   globalNoVar = " + globalNoVar);
+document.write("\n\nAfter function call:");
+document.write("\n   globalVar = " + globalVar);
+document.write("\n   globalNoVar = " + globalNoVar);
 
 function scopeCheck() {
    globalVar = globalVar + " - Updated";
@@ -1798,7 +1770,7 @@ function scopeCheck() {
 这个教程示例测试了两个全局变量：一个使用 `var` 语句声明，另一个没有。这两个变量的行为完全相同。它们在函数内部均有效且可访问。查看输出：
 
 ```
- Updated value in function:
+Updated value in function:
    globalVar = Cat - Updated
    globalNoVar = Dog - Updated
 
@@ -1807,18 +1779,14 @@ After function call:
    globalNoVar = Dog - Updated
 ```
 
-JavaScript 教程 - Herong 的教程示例
-
-∟定义和调用函数
-
-# 局部变量 - 示例
+#### 局部变量 - 示例
 
 本节提供了一个关于局部变量在函数内部外部行为的教程示例。
 
 为了查看局部变量在函数内部和外部的行为，我编写了以下教程示例：
 
 ```html
- <html
+<html>
 <!-- Local_Variable_Scope.html
    Copyright (c) HerongYang.com. All Rights Reserved.
 -->
@@ -1827,16 +1795,16 @@ JavaScript 教程 - Herong 的教程示例
 <pre>
 <script type="text/javascript">
 
-   scopeCheck();
+scopeCheck();
 
-   document.write("\n\nAfter function call:");
+document.write("\n\nAfter function call:");
 
-   // localVar 不是一个有效的变量
-   // document.write("\n   localVar = " + localVar);
-   document.write("\n   localVar is not valid");
+// localVar 不是一个有效的变量
+// document.write("\n   localVar = " + localVar);
+document.write("\n   localVar is not valid");
 
-   // localNoVar 是一个有效的变量，由 scopeCheck() 自动声明
-   document.write("\n   localNoVar = " + localNoVar);
+// localNoVar 是一个有效的变量，由 scopeCheck() 自动声明
+document.write("\n   localNoVar = " + localNoVar);
 
 function scopeCheck() {
    var localVar;
@@ -1859,7 +1827,7 @@ function scopeCheck() {
 这个教程示例测试了两个“局部”变量：一个使用 `var` 语句声明，另一个没有。它们的行为不同。使用 `var` 语句声明的 `localVar` 是真正的局部变量。未使用 `var` 语句自动声明的 `localNoVar` 变成了全局变量。查看输出：
 
 ```
- Updated value in function:
+Updated value in function:
    localVar = Apple - Updated
    localNoVar = Orange - Updated
 
@@ -1868,18 +1836,14 @@ After function call:
    localNoVar = Orange - Updated
 ```
 
-JavaScript 教程 - Herong 的教程示例
-
-∟定义和调用函数
-
-# 全局变量与局部变量的冲突 - 示例
+#### 全局变量与局部变量的冲突 - 示例
 
 本节提供了一个关于 JavaScript 如何处理局部变量与全局变量冲突的教程示例。
 
 为了查看 JavaScript 如何处理函数内部外部具有相同名称的全局和局部变量，我编写了以下教程示例：
 
 ```html
- <html
+<html>
 <!-- Variable_Collision.html
    Copyright (c) HerongYang.com. All Rights Reserved.
 -->
@@ -1887,15 +1851,15 @@ JavaScript 教程 - Herong 的教程示例
 <body>
 <pre>
 <script type="text/javascript">
-   var tempVar;
-   tempVar = "Bird";
-   tempNoVar = "Fish";
+var tempVar;
+tempVar = "Bird";
+tempNoVar = "Fish";
 
-   scopeCheck();
+scopeCheck();
 
-   document.write("\n\nAfter function call:");
-   document.write("\n   tempVar = " + tempVar);
-   document.write("\n   tempNoVar = " + tempNoVar);
+document.write("\n\nAfter function call:");
+document.write("\n   tempVar = " + tempVar);
+document.write("\n   tempNoVar = " + tempNoVar);
 
 function scopeCheck() {
    var tempVar;
@@ -1918,7 +1882,7 @@ function scopeCheck() {
 这个教程示例测试了两组变量。一组在函数外部引入，一组在函数内部。一组的变量名与另一组冲突。两个使用 `var` 语句声明的 `tempVar` 保持为两个变量。但两个未使用 `var` 自动声明的 `tempNoVar` 变成了一个变量。查看输出：
 
 ```
- Updated value in function:
+Updated value in function:
    tempVar = Bird - Updated
    tempNoVar = Fish - Updated
 
@@ -1927,16 +1891,12 @@ After function call:
    tempNoVar = Fish - Updated
 ```
 
-JavaScript 教程 - Herong 的教程示例
-
-∟定义和调用函数
-
-# "return" 语句与返回值
+### "return" 语句与返回值
 
 本节提供了一个关于 `return` 语句如何传递值的教程示例。为了帮助你理解不同类型的返回值，我编写了此教程示例：
 
 ```html
- <html
+<html>
 <!-- Return_Values.html
    Copyright (c) HerongYang.com. All Rights Reserved.
 -->
@@ -1945,14 +1905,14 @@ JavaScript 教程 - Herong 的教程示例
 <pre>
 <script type="text/javascript">
 
-   var resValue = valueReturn();
-   var resObject = objectReturn();
-   var resUndefined = noReturn();
+var resValue = valueReturn();
+var resObject = objectReturn();
+var resUndefined = noReturn();
 
-   document.write("\n\nAfter function calls:");
-   document.write("\n   resValue = " + resValue);
-   document.write("\n   resObject = " + resObject);
-   document.write("\n   resUndefined = " + resUndefined);
+document.write("\n\nAfter function calls:");
+document.write("\n   resValue = " + resValue);
+document.write("\n   resObject = " + resObject);
+document.write("\n   resUndefined = " + resUndefined);
 
 function valueReturn() {
    var value = "String value";
@@ -1975,7 +1935,7 @@ function noReturn() {
 此教程示例的输出并没有任何意外：
 
 ```
- valueReturn()
+valueReturn()
 objectReturn()
 noReturn()
 
@@ -1985,34 +1945,9 @@ After function calls:
    resUndefined = undefined
 ```
 
-JavaScript 教程 - Herong 的教程示例
-
-# 浏览器支持 JavaScript
+## 浏览器支持 JavaScript
 
 本章介绍了 Web 浏览器如何支持嵌入在 HTML 文档中的 JavaScript 代码。主题包括：执行嵌入 `script` 标签中的 JavaScript 代码；通过外部文件引入 JavaScript 代码；DOM API `document` 和 `window` 对象；浏览器事件触发器和监听器；Web 浏览器中的 JavaScript 控制台。
-
-
-
-
-
-#### Google Chrome 中的 JavaScript 控制台
-## Mozilla Firefox 中的 JavaScript 控制台
-## Apple Safari 中的 JavaScript 控制台
-## IE (Internet Explorer) 中的 JavaScript 控制台
-
-## 结论
-
-- 所有流行的 Web 浏览器都支持在 HTML 文档中使用 `<script>` 标签在渲染 HTML 文档时执行 JavaScript 代码。
-- 所有流行的 Web 浏览器都支持 `DOM`（文档对象模型）`API`（应用程序接口），允许 JavaScript 代码与浏览器及 HTML 文档交互。
-- 所有流行的 Web 浏览器都支持事件，在用户与浏览器交互时触发 JavaScript 代码的执行。
-- 所有流行的 Web 浏览器都支持 `"javascript:"` 伪 URL - 在浏览器地址栏中评估 JavaScript 代码。
-- 在 HTML 文档中嵌入 JavaScript 代码时，不应在 JavaScript 代码内部任何地方直接使用 `</script>`。
-- JavaScript 代码可以存储在外部文件中并链接到任何 HTML 文档。
-- 内置对象 `document` 代表嵌入的 HTML 文档，并为你提供操作 HTML 文档的 `DOM`（文档对象模型）`API`。
-- 内置对象 `window` 代表浏览器窗口，并提供属性和方法让你与浏览器窗口交互。
-- 流行的 Web 浏览器都提供了 JavaScript 控制台，允许查看执行错误和日志消息。它还允许你运行 JavaScript 语句与 Web 文档交互。
-
-## JavaScript 教程 - Heron 的教程示例
 
 ### 支持 JavaScript 的 Web 浏览器
 
@@ -2022,15 +1957,15 @@ JavaScript 教程 - Herong 的教程示例
 
 典型的 Web 浏览器通常会在 4 个方面提供 JavaScript 支持：
 
-- 支持 HTML 文档中的 `<script>` 标签，在渲染 HTML 文档时执行 JavaScript 代码。
-- 支持 `DOM`（文档对象模型）`API`（应用程序接口），允许 JavaScript 代码与浏览器及 HTML 文档交互。
-- 支持事件，在用户与浏览器交互时触发 JavaScript 代码的执行。
-- 支持 `"javascript:"` 伪 URL - 在浏览器地址栏中评估 JavaScript 代码。
+*   支持 HTML 文档中的 `<script>` 标签，在渲染 HTML 文档时执行 JavaScript 代码。
+*   支持 `DOM`（文档对象模型）`API`（应用程序接口），允许 JavaScript 代码与浏览器及 HTML 文档交互。
+*   支持事件，在用户与浏览器交互时触发 JavaScript 代码的执行。
+*   支持 `"javascript:"` 伪 URL - 在浏览器地址栏中评估 JavaScript 代码。
 
-让我们用一个简单的 JavaScript 示例来说说明这些领域：
+让我们用一个简单的 JavaScript 示例来说明这些领域：
 
 ```html
- <html>
+<html>
 <!-- DOM_and_Event.html
    Copyright (c) HerongYang.com. All Rights Reserved.
 -->
@@ -2039,15 +1974,15 @@ JavaScript 教程 - Herong 的教程示例
 <script type="text/javascript">
 var colorID = 0;
 function changeColor() {
-   if (colorID == 0 )
+   if (colorID == 0)
       document.body.bgColor = "lightgrey";
-   else if (colorID == 1 )
+   else if (colorID == 1)
       document.body.bgColor = "lightblue";
-   else if (colorID == 2 )
+   else if (colorID == 2)
       document.body.bgColor = "lightgreen";
-   else if (colorID == 3 )
+   else if (colorID == 3)
       document.body.bgColor = "lightyellow";
-   colorID = (colorID+1)%4;
+   colorID = (colorID + 1) % 4;
 }
 </script>
 </head>
@@ -2074,38 +2009,27 @@ function changeColor() {
 
 现在再次查看 JavaScript 示例。浏览器确实在 4 个方面提供了支持：
 
-1. 在渲染 HTML 文档时执行包含在 `"script"` 标签中的 JavaScript 代码：
-
-```html
- <script type="text/javascript">
-   document.write('Hello World!');
-</script>
-```
-
-2. 将 `"document"` 对象作为 `DOM API` 的一部分，允许 JavaScript 代码与 HTML 文档交互：
-
-```javascript
- document.write('Hello World!');
-   document.body.bgColor = "lightgrey";
-   ...
-```
-
-3. 提供 `"onClick"` 事件以允许执行 JavaScript 代码：
-
-```html
- <input type="button" value="Click to change background color"
-   onClick="changeColor();"/>
-```
-
-4. 执行包含在 `"javascript:"` 伪 URL 中的 JavaScript 代码。
-
-```html
- <a href="javascript:alert(document.body.bgColor)">Click here.</a>
-```
-
-## JavaScript 教程 - Heron 的教程示例
-
-### 支持 JavaScript 的 Web 浏览器
+1.  在渲染 HTML 文档时执行包含在 `"script"` 标签中的 JavaScript 代码：
+    ```html
+    <script type="text/javascript">
+       document.write('Hello World!');
+    </script>
+    ```
+2.  将 `"document"` 对象作为 `DOM API` 的一部分，允许 JavaScript 代码与 HTML 文档交互：
+    ```javascript
+    document.write('Hello World!');
+    document.body.bgColor = "lightgrey";
+    ...
+    ```
+3.  提供 `"onClick"` 事件以允许执行 JavaScript 代码：
+    ```html
+    <input type="button" value="Click to change background color"
+       onClick="changeColor();"/>
+    ```
+4.  执行包含在 `"javascript:"` 伪 URL 中的 JavaScript 代码。
+    ```html
+    <a href="javascript:alert(document.body.bgColor)">Click here.</a>
+    ```
 
 #### 使用 HTML "script" 标签包含 JavaScript 代码
 
@@ -2116,25 +2040,25 @@ JavaScript 代码的设计初衷主要是由客户端系统的 Web 浏览器执�
 HTML 文档语言标准支持 `"script"` 标签，允许你在 HTML 文档中包含 JavaScript 代码。`"script"` 标签的语法如下：
 
 ```html
- <script type="text/javascript" ...>
+<script type="text/javascript" ...>
    ... JavaScript 语句 ...
 </script>
 ```
 
 在单个 HTML 文档中，可以将多个带有 JavaScript 代码的 `"script"` 标签放置在不同的位置。`"script"` 标签的确切位置和关系由以下简单规则描述：
 
-- `"script"` 标签可以放置在 `"head"` 标签内部。
-- `"script"` 标签可以放置在许多块级标签内部，如 `"body"`、`p`、`pre`、`div` 等。
-- `"script"` 标签可以放置在许多行内标签内部，如 `"strong"`、`em`、`span` 等。
-- 包含在 `"head"` 标签内 `"script"` 标签中的 JavaScript 代码将在网页主体处理之前执行。
-- 包含在块级和行内标签内 `"script"` 标签中的 JavaScript 代码将在网页主体处理期间执行。
-- 包含在 `"script"` 标签中的 JavaScript 代码将按照它们在 HTML 文档中出现的顺序执行。
-- 来自所有 `"script"` 标签的 JavaScript 代码将被视为同一个执行会话，就像它们包含在单个 `"script"` 标签中一样。
+*   `"script"` 标签可以放置在 `"head"` 标签内部。
+*   `"script"` 标签可以放置在许多块级标签内部，如 `"body"`、`p`、`pre`、`div` 等。
+*   `"script"` 标签可以放置在许多行内标签内部，如 `"strong"`、`em`、`span` 等。
+*   包含在 `"head"` 标签内 `"script"` 标签中的 JavaScript 代码将在网页主体处理之前执行。
+*   包含在块级和行内标签内 `"script"` 标签中的 JavaScript 代码将在网页主体处理期间执行。
+*   包含在 `"script"` 标签中的 JavaScript 代码将按照它们在 HTML 文档中出现的顺序执行。
+*   来自所有 `"script"` 标签的 JavaScript 代码将被视为同一个执行会话，就像它们包含在单个 `"script"` 标签中一样。
 
 基于这些规则，我们可以在文档的 `"head"` 标签中定义用户函数，稍后在同一文档的 `"pre"` 标签中调用它。这是一个显示这种有趣行为的简单教程示例：
 
 ```html
- <html>
+<html>
 <!-- Hello_World_Head.html
    Copyright (c) HerongYang.com. All Rights Reserved.
 -->
@@ -2158,64 +2082,45 @@ function printHello() {
 
 当然，这个示例 JavaScript 页面的输出将是页面上的简单文本：“Hello World!”
 
-## JavaScript 教程 - Heron 的教程示例
-
-### 支持 JavaScript 的 Web 浏览器
-
-#### type="text/javascript" 或 language="JavaScript"
+#### `type="text/javascript"` 或 `language="JavaScript"`
 
 本节描述了 `type='text/javascript'` 或 `language='JavaScript'` 属性的区别。
 
 在使用 `<script>` 标签在 HTML 文档中嵌入脚本代码时，可以通过多种方式指定脚本语言：
 
-1. 仅使用 `type="text/javascript"` 属性 - 浏览器将脚本代码作为 JavaScript 执行：
+1.  仅使用 `type="text/javascript"` 属性 - 浏览器将脚本代码作为 JavaScript 执行：
+    ```html
+    <script type="text/javascript">
+       ... JavaScript 代码 ...
+    </script>
+    ```
+2.  仅使用 `language="JavaScript"` 属性 - 浏览器将脚本代码作为 JavaScript 执行：
+    ```html
+    <script language="JavaScript">
+       ... JavaScript 代码 ...
+    </script>
+    ```
+3.  仅使用 `language="JavaScript1.8"` 属性 - 只有当浏览器支持 JavaScript 1.7 版本时，才会将脚本代码作为 JavaScript 执行：
+    ```html
+    <script language="JavaScript1.8">
+       ... JavaScript 代码 ...
+    </script>
+    ```
+4.  使用 `type="text/javascript"` 和 `language="JavaScript1.8"` 属性 - 网页浏览器将执行 JavaScript 代码，并且 `language="JavaScript1.8"` 属性会被忽略。
+    ```html
+    <script type="text/javascript" language="JavaScript1.8">
+       ... JavaScript code ...
+    </script>
+    ```
 
-```html
- <script type="text/javascript">
-   ... JavaScript 代码 ...
-</script>
-```
-
-2. 仅使用 `language="JavaScript"` 属性 - 浏览器将脚本代码作为 JavaScript 执行：
-
-```html
- <script language="JavaScript">
-   ... JavaScript 代码 ...
-</script>
-```
-
-3. 仅使用 `language="JavaScript1.8"` 属性 - 只有当浏览器支持 JavaScript 1.7 版本时，才会将脚本代码作为 JavaScript 执行：
-
-```html
- <script language="JavaScript1.8">
-   ... JavaScript 代码 ...
-</script>
-```
-
-
-
-
-
-# 4. 使用 type="text/javascript" 和 language="JavaScript1.8" 属性 - 网页浏览器将执行 JavaScript 代码，并且 `language="JavaScript1.8"` 属性会被忽略。
-
-```html
- <script type="text/javascript" language="JavaScript1.8">
-   ... JavaScript code ...
-</script>
-```
-
-JavaScript 教程 - Herong 的教程示例
-
-∟支持 JavaScript 的网页浏览器
-
-∟浏览器支持的 JavaScript 版本
+#### 浏览器支持的 JavaScript 版本
 
 本节描述了 `type='text/javascript'` 或 `language='JavaScript'` 属性之间的差异。
 
 如果你想测试 Web 浏览器支持哪个版本的 JavaScript，可以使用以下脚本示例：
 
-```
- <html>
+```html
+<html>
 <!-- JavaScript_Version_Test.html
    Copyright (c) HerongYang.com. All Rights Reserved.
 -->
@@ -2262,28 +2167,24 @@ JavaScript 教程 - Herong 的教程示例
 以下是我的测试结果：
 
 ```
- Google Chrome: JavaScript1.7
+Google Chrome: JavaScript1.7
 Apple Safari: JavaScript1.7
 Mozilla Firefox: JavaScript1.5 
 Internet Explorer 11: JavaScript1.3 
 ```
 
-JavaScript 教程 - Herong 的教程示例
-
-∟支持 JavaScript 的网页浏览器
-
-∟在字符串面量中包含 'script' 标签
+#### 在字符串面量中包含 'script' 标签
 
 本节提供了一个教程示例，展示了在 HTML 文档字符串面量中包含 'script' 标签的问题。
 
 正如我们在上一节中学到的，JavaScript 代码必须包含在 HTML 文档的 "script" 标签中，例如：`<script ...> JavaScript 代码 </script>`。这对 JavaScript 代码增加了额外的限制：
 
-*切勿在你的 JavaScript 代码的任何地方直接包含 `</script>`。*
+*   **切勿在你的 JavaScript 代码的任何地方直接包含 `</script>`。**
 
 如果你在 JavaScript 代码中直接使用 `</script>`，将导致网页浏览器或服务器提前结束你的 JavaScript 代码，并引起执行错误。以下是直接包含 `</script>` 的教程示例：
 
 ```html
- <html>
+<html>
 <!-- Escape_Script_Tag.html
    Copyright (c) HerongYang.com. All Rights Reserved.
 -->
@@ -2301,7 +2202,7 @@ JavaScript 教程 - Herong 的教程示例
 如果你在浏览器中运行此示例脚本，你将得到：
 
 ```
- ");
+");
    document.writeln("Rate this answer: 1 | 2 | 3 | 4 | 5");
 ```
 
@@ -2313,22 +2214,18 @@ JavaScript 教程 - Herong 的教程示例
 
 请查看下一节了解如何解决这个问题。
 
-JavaScript 教程 - Herong 的教程示例
-
-∟支持 JavaScript 的网页浏览器
-
-∟在字符串面量中转义 'script' 标签
+#### 在字符串面量中转义 'script' 标签
 
 本节提供了一个教程示例，介绍如何在 'script' 标签中使用转义字符来防止浏览器提前结束嵌入的 JavaScript 代码。
 
 现在让我们尝试修复在上一节中发现的问题。
 
-第一个修复方法是使用反斜杠字符（\`）来转义 `</script>` 标签中的（/`。这个额外的反斜杠将阻止浏览器将此标签识别为 JavaScript 代码的结束。同时，JavaScript 引擎将忽略这个反斜杠，并以与没有额外反斜杠相同评估字符串面量。
+第一个修复方法是使用反斜杠字符（`\`）来转义 `</script>` 标签中的 `/`。这个额外的反斜杠将阻止浏览器将此标签识别为 JavaScript 代码的结束。同时，JavaScript 引擎将忽略这个反斜杠，并以与没有额外反斜杠相同评估字符串面量。
 
 以下是带有额外反斜杠字符修改后的 HTML 文档：
 
 ```html
- <html>
+<html>
 <!-- Escape_Script_Tag_Backslash.html
    Copyright (c) HerongYang.com. All Rights Reserved.
 -->
@@ -2346,7 +2243,7 @@ JavaScript 教程 - Herong 的教程示例
 如果你在浏览器中运行此示例脚本，你将得到：
 
 ```
- Question: How to use the 
+Question: How to use the 
 Rate this answer: 1 | 2 | 3 | 4 | 5
 ```
 
@@ -2358,7 +2255,7 @@ Rate this answer: 1 | 2 | 3 | 4 | 5
 换句话说，现在 JavaScript 代码中没有错误。JavaScript 代码插入了以下内容：
 
 ```
- Question: How to use the <script>
+Question: How to use the <script>
 Answer: <script>...Script Code...
 Rate this answer: 1 | 2 | 3 | 4 | 5
 ```
@@ -2367,20 +2264,16 @@ Rate this answer: 1 | 2 | 3 | 4 | 5
 
 请查看下一节如何在 HTML 文档中保护 "script" 标签。
 
-JavaScript 教程 - Herong 的教程示例
-
-∟支持 JavaScript 的网页浏览器
-
-∟使用 HTML 实体来保护 HTML 标签
+#### 使用 HTML 实体来保护 HTML 标签
 
 本节提供了一个教程示例，介绍如何使用 HTML 实体 `&lt;` 和 `&gt;` 来保护 HTML 标签。
 
-为了完全解决我们在上一节看到的问题，我们需要使用 HTML 实体来替换 `<` 和 `>`, 如果你想让某些 HTML 标签显示页面。
+为了完全解决我们在上一节看到的问题，我们需要使用 HTML 实体来替换 `<` 和 `>`，如果你想让某些 HTML 标签显示页面。
 
 以下是使用 `&lt;` 和 `&gt;` 实体的修改后的 HTML 文档：
 
 ```html
- <html>
+<html>
 <!-- Escape_Script_Tag_HTML_Entity.html
    Copyright (c) HerongYang.com. All Rights Reserved.
 -->
@@ -2398,36 +2291,29 @@ JavaScript 教程 - Herong 的教程示例
 如果你在浏览器中运行此示例脚本，你将得到：
 
 ```
- Q: How to use the <script> tag?
+Q: How to use the <script> tag?
 A: <script>...Code...</script>
 Rate this answer: 1 | 2 | 3 | 4 | 5
 ```
 
 最后，我们得到了想要的！
 
-JavaScript 教程 - Herong 的教程示例
+#### 将 JavaScript 代码作为外部文件引入
 
-∟支持 JavaScript 的网页浏览器
-
-∟将 JavaScript 代码作为外部文件引入
-
-本节简要介绍了如何将 JavaScript 代码保存到单独的文件并使用 'script' 标签将其包含在 HTML 文档中提供了一个调用存储在单独 JavaScript 文件中的函数的教程示例。
+本节简要介绍了如何将 JavaScript 代码保存到单独的文件并使用 'script' 标签将其包含在 HTML 文档中，提供了一个调用存储在单独 JavaScript 文件中的函数的教程示例。
 
 为了测试此功能，我编写了以下 JavaScript 代码并保存为文件 `Hello_World_Function.js`：
 
 ```javascript
- function printHello() {
+function printHello() {
    document.write('Hello World!');
 }
 ```
 
+现在我可以修改上一节中的 HTML 文档，使用 `"script"` 标签来引入此文件：
 
-
-
-现在我可以修改上一节中的 HTML 文档，使用 `"script"` 标签来此文件：
-
-```
- <html>
+```html
+<html>
 <!-- Hello_World_Head_Include.html
    Copyright (c) HerongYang.com. All Rights Reserved.
 -->
@@ -2443,22 +2329,18 @@ JavaScript 教程 - Herong 的教程示例
 </script>
 </pre>
 </body>
-</html
+</html>
 ```
 
 当然，修改后的 JavaScript 页面的输出将仍然是文本："Hello World!"。
 
 在测试此 `"script"` 标签的 `"src"` 属性时，我注意到空标签的简写形式不起作用：
 
-```
- <script type="text/javascript" src="JavaScript_file_URL"/>
+```html
+<script type="text/javascript" src="JavaScript_file_URL"/>
 ```
 
 你必须显式使用结束标签 `</script>`！
-
-JavaScript 教程 - Herong 的教程示例
-
-∟支持 JavaScript 的 Web 浏览器
 
 ### DOM API - "document" 对象
 
@@ -2468,15 +2350,15 @@ JavaScript 教程 - Herong 的教程示例
 
 DOM API 中最常用的对象是 `"document"` 对象，它具有以下特性：
 
-*   `"document"` 对象是浏览器内置的对象，代表浏览器中当前的的 HTML 文档。
+*   `"document"` 对象是浏览器内置的对象，代表浏览器中当前的 HTML 文档。
 *   `"document"` 对象以 `"node"` 对象的树形结构表示 HTML 文档中的所有元素。
 *   `"document"` 对象及其它的 `"node"` 对象提供了多种方法，允许你操纵 HTML 文档。
 *   `"document"` 对象在 JavaScript 和其他编程语言中共享相同的编程接口。
 
 为了演示 `"document"` 对象的一些优秀特性，我编写了以下 JavaScript 教程示例：
 
-```
- <html>
+```html
+<html>
 <!-- Document_Object.html
    Copyright (c) HerongYang.com. All Rights Reserved.
 -->
@@ -2496,16 +2378,12 @@ function buildDocument() {
 </script>
 </head>
 <body onLoad="buildDocument();"/>
-</html
+</html>
 ```
 
-如果你在浏览器中运行此 JavaScript ，你将看到浅蓝色背景的 "Hello World!" 段落。
+如果你在浏览器中运行此 JavaScript，你将看到浅蓝色背景的 "Hello World!" 段落。
 
 更多关于 `"document"` 对象的教程示例，请参阅本书中的 DOM API 章节。
-
-JavaScript 教程 - Herong 的教程示例
-
-∟支持 JavaScript 的 Web 浏览器
 
 ### DOM API - "window" 对象
 
@@ -2521,8 +2399,8 @@ Web 浏览器提供的 DOM API 包含另一个名为 `"window"` 的有用对象�
 
 为了演示如何从当前窗口获取属性，我编写了以下 JavaScript 教程示例：
 
-```
- <html>
+```html
+<html>
 <!-- Window_Properties.html
    Copyright (c) HerongYang.com. All Rights Reserved.
 -->
@@ -2531,16 +2409,16 @@ Web 浏览器提供的 DOM API 包含另一个名为 `"window"` 的有用对象�
 <script type="text/javascript">
 function getWindowProperties() {
    var text = "";
-   text += "'document' property: "+ window.document.title+"\n";
-   text += "'location' property: "+ window.location.pathname+"\n";
-   text += "'history' property: "+ window.history.length+"\n";
-   text += "'navigator' property: "+ window.navigator.appCodeName+"\n";
+   text += "'document' property: " + window.document.title + "\n";
+   text += "'location' property: " + window.location.pathname + "\n";
+   text += "'history' property: " + window.history.length + "\n";
+   text += "'navigator' property: " + window.navigator.appCodeName + "\n";
    text += "'outerWidth,outerHeight' property: "
-      + window.outerWidth+","+ window.outerHeight+"\n";
+      + window.outerWidth + "," + window.outerHeight + "\n";
    text += "'innerWidth,innerHeight' property: "
-      + window.innerWidth+","+ window.innerHeight+"\n";
+      + window.innerWidth + "," + window.innerHeight + "\n";
    text += "'screenX,screenY' property: "
-      + window.screenX+","+ window.screenY+"\n";
+      + window.screenX + "," + window.screenY + "\n";
    return text;
 }
 </script>
@@ -2552,36 +2430,26 @@ function getWindowProperties() {
 </script>
 </pre>
 </body>
-</html
+</html>
 ```
 
 在 Firefox 浏览器中运行此 JavaScript 示例，你将得到类似的内容：
 
 ```
- 'document' property: Window Properties
+'document' property: Window Properties
 'location' property: /C:/herong/Window_Properties.html
 'history' property: 1
 'navigator' property: Mozilla
-'outerWidth,outerHeight' property: 1024
-768
-'innerWidth,innerHeight' property: 1024
-754
-'screenX,screenY' property: 0
-0
+'outerWidth,outerHeight' property: 1024,768
+'innerWidth,innerHeight' property: 1024,754
+'screenX,screenY' property: 0,0
 ```
-
-
-
 
 *   点击“关闭窗口”（Close Window）按钮，新的浏览器窗口将被关闭。
 
 关于 `window` 对象的更多教程示例，请参阅本书中的 DOM API 章节。
 
-JavaScript 教程 - 荷教程示例
-
-### ∟支持 JavaScript 的 Web 浏览器
-
-#### #### 事件监听器与对象
+### 事件监听器与对象
 
 本节快速描述了不同 HTML 标签上的事件触发属性，以及代表事件并包含事件详细信息的 `event` 对象。提供了一个教程示例，通过在鼠标按下事件上添加监听器来显示鼠标位置。
 
@@ -2598,350 +2466,320 @@ JavaScript 教程 - 荷教程示例
 
 为了演示事件触发和 `event` 对象的一些优秀特性，我编写了这个 JavaScript 教程示例：
 
-```
- <html>
+```html
+<html>
 <!-- Event_Object_and_Trigger.html
    Copyright (c) HerongYang.com. All Rights Reserved.
 -->
 <head>
 <title>Event Object and Trigger</title>
 </head>
-<body onMouseDown=
-   "window.alert('X: '+event.clientX+', Y: '+event.clientY);">
+<body onMouseDown="window.alert('X: ' + event.clientX + ', Y: ' + event.clientY);">
 <p>点击页面任意位置查看位置坐标。</p>
 </body>
-</</html>>
+</html>
 ```
 
 在此教程示例中，`body` 标签上的 `onMouseDown` 事件触发属性被用于添加一段短的监听器代码，当用户在页面上按下鼠标时执行。监听器代码使用浏览器提供的 `event` 对象来获取位置的 x 和 y 坐标。
 
 通过调用 `window` 对象上的 `alert()` 方法，通过警报框向用户报告坐标。见下图：
 
-![](img/image00134.jpeg)
+![窗口警报框](img/image00134.jpeg)
 
-窗口警报框
+### `javascript:` 伪 URL 地址
 
-JavaScript 教程 - 荷教程示例
-
-### ∟支持 JavaScript 的 Web 浏览器
-
-#### #### ####'javascript:' 伪 URL 地址
-
-本节描述了什么是 `javascript:` 伪 URL 地址，并提供了若干几个有趣的 `javascript:` URL 示例。
+本节描述了什么是 `javascript:` 伪 URL 地址，并提供了若干有趣的 `javascript:` URL 示例。
 
 许多 Web 浏览器还支持形式如下的 `javascript:` 伪 URL 地址：
 
 ```
- javascript:statement;statement;...
+javascript:statement;statement;...
 ```
 
 当给浏览器提供 `javascript:` 伪 URL 时，它将开始评估 URL 中包含的 JavaScript 语句。以下是一些您可以尝试的 `javascript:` 伪 URL 地址示例：
 
-1. 下列 URL 将导致浏览器在小型对话框中显示文本消息。
-
-```
- javascript:alert("Hello World!");
-```
-
-2. 下列 URL 将导致浏览器显示一个带有文本消息的新页面。
-
-```
- javascript:document.write("<html><body>Hello World!</body></html>");
-```
-
-3. 下列 URL 将导致浏览器执行复杂的 JavaScript 代码，从而生成一个包含质数的 HTML 页面。注意，整个 URL 地址必须写在单行中。因此，您需要合并以下行，将其复制并粘贴到浏览器。
-
-```
- javascript:var i, j, is_prime; document.write('<body><pre>'); 
-   for ( i=3; i<=30; i+=2 ) { is_prime = true; for ( j=2; j<=i/2; j++)
-   { is_prime = i%j > 0; if (!is_prime) break;} 
-   if (is_prime) document.writeln('Found a prime number: ' + i); } 
-   document.write('</pre></body>');
-```
+1.  下列 URL 将导致浏览器在小型对话框中显示文本消息。
+    ```
+    javascript:alert("Hello World!");
+    ```
+2.  下列 URL 将导致浏览器显示一个带有文本消息的新页面。
+    ```
+    javascript:document.write("<html><body>Hello World!</body></html>");
+    ```
+3.  下列 URL 将导致浏览器执行复杂的 JavaScript 代码，从而生成一个包含质数的 HTML 页面。注意，整个 URL 地址必须写在单行中。因此，您需要合并以下行，将其复制并粘贴到浏览器。
+    ```
+    javascript:var i, j, is_prime; document.write('<body><pre>'); for ( i=3; i<=30; i+=2 ) { is_prime = true; for ( j=2; j<=i/2; j++) { is_prime = i%j > 0; if (!is_prime) break;} if (is_prime) document.writeln('Found a prime number: ' + i); } document.write('</pre></body>');
+    ```
 
 现在轮到你编写更多 `javascript:` URL 示例了。
 
-JavaScript 教程 - 荷教程示例
+### Google Chrome 中的 JavaScript 控制台
 
-### ∟支持 JavaScript 的 Web 浏览器
+本节提供了教程示例，介绍如何使用 Google Chrome 中的 JavaScript 控制台来查看 JavaScript 执行结果、执行错误和日志消息。你也可以用它运行任何 JavaScript 语句来与 HTML 文档进行交互。
 
-#### #### #### Google Chrome 中的 JavaScript 控制台
+#### 什么是 Google Chrome 中的 JavaScript 控制台？
 
-本节提供了教程示例，介绍如何使用 Google Chrome 中的 JavaScript 控制台来查看 JavaScript 执行结果执行错误和日志消息。你也可以用它运行任何 JavaScript 语句来与 HTML 文档进行交互。
-
-**什么是 Google Chrome 中的 JavaScript 控制台？** Google Chrome 中的 JavaScript 控制台是浏览器为您提供的一个控制台，用于：
+Google Chrome 中的 JavaScript 控制台是浏览器为您提供的一个控制台，用于：
 
 *   查看浏览器在执行嵌入 JavaScript 代码时生成的任何错误或日志消息。
 *   运行任何 JavaScript 代码以交互方式与 Web 文档交互。
 
 以下是我测试 Google Chrome 中 JavaScript 控制台的操作步骤：
 
-1. 运行 Google Chrome 并加载以下 HTML 代码：
-
-```
- <html>
-<head><title>Hello World!</title></head>
-<body>
-<script type="text/javascript">
-   document.write('Hello World! - Document');
-   console.log('Hello World! - Console');
-</script>
-</body>
-</</html>
-```
-
-2. 按下 F12 键。我看到屏幕上显示了开发者面板。
-3. 点击开发者面板上的“Console”选项卡。我看到控制台日志消息显示：“Hello World! - Console”。
-4. 在控制台中输入一些 JavaScript 语句并运行：
-
-```
- Hello World! - Console
-> var msg = document.title;
-< undefined
-> console.log(msg.length);
-  12
-< undefined
-> 
-```
+1.  运行 Google Chrome 并加载以下 HTML 代码：
+    ```html
+    <html>
+    <head><title>Hello World!</title></head>
+    <body>
+    <script type="text/javascript">
+       document.write('Hello World! - Document');
+       console.log('Hello World! - Console');
+    </script>
+    </body>
+    </html>
+    ```
+2.  按下 F12 键。我看到屏幕上显示了开发者面板。
+3.  点击开发者面板上的“Console”选项卡。我看到控制台日志消息显示：“Hello World! - Console”。
+4.  在控制台中输入一些 JavaScript 语句并运行：
+    ```
+    Hello World! - Console
+    > var msg = document.title;
+    < undefined
+    > console.log(msg.length);
+      12
+    < undefined
+    > 
+    ```
 
 很酷。控制台是排查 Google Chrome 上运行的 HTML 页面中 JavaScript 代码问题的很好的工具。
 
-![](img/image00135.jpeg)
+![JavaScript 控制台](img/image00135.jpeg)
 
-JavaScript 控制台
+### Mozilla Firefox 中的 JavaScript 控制台
 
+本节提供了教程示例，介绍如何使用 Mozilla Firefox 中的 JavaScript 控制台来查看 JavaScript 执行产生的错误和日志消息。你也可以使用它来运行任何 JavaScript 语句以与 HTML 文档进行交互。
 
+#### 什么是 Mozilla Firefox 中的 JavaScript 控制台？
 
+Mozilla Firefox 中的 JavaScript 控制台是浏览器为你提供的一个控制台：
 
+*   查看浏览器在执行嵌入 JavaScript 代码时生成的任何错误或日志消息。
+*   运行任何 JavaScript 代码以交互式的方式与 Web 文档交互。
 
-本节提供了教程示例，介绍如何使用 Apple Safari 中的 JavaScript 控制台（Console）来查看 JavaScript 执行产生的错误和日志消息。你也可以使用它来运行任何 JavaScript 语句以与 HTML 文档进行交互。
+以下是我测试 Mozilla Firefox 中 JavaScript 控制台的操作：
 
-## 什么是 Apple Safari 中的 JavaScript 控制台？
+1.  运行 Mozilla Firefox 并加载以下 HTML 代码：
+    ```html
+    <html>
+    <head><title>Hello World!</title></head>
+    <body>
+    <script type="text/javascript">
+       document.write('Hello World! - Document');
+       console.log('Hello World! - Console');
+    </script>
+    </body>
+    </html>
+    ```
+2.  按“Ctrl-Shift-K”组合键（或选择“工具 > Web 开发者 > Web 控制台”菜单）。我在屏幕上显示的开发者面板中看到了“Console”选项卡，上面显示了日志消息：“Hello World! - Console”。
+3.  在控制台中输入一些 JavaScript 语句并运行：
+    ```
+    Hello World! - Console
+    >> var msg = document.title;
+    < undefined
+    >> console.log(msg.length);
+      12
+    < undefined
+    > 
+    ```
+
+酷酷。控制台是排查在 Mozilla Firefox 上运行的 HTML 页面中 JavaScript 代码问题的很好工具。
+
+![Mozilla Firefox 中的 JavaScript 控制台](img/image00136.jpeg)
+
+### Apple Safari 中的 JavaScript 控制台
+
+本节提供了教程示例，介绍如何使用 Apple Safari 中的 JavaScript 控制台来查看 JavaScript 执行产生的错误和日志消息。你也可以使用它来运行任何 JavaScript 语句以与 HTML 文档进行交互。
+
+#### 什么是 Apple Safari 中的 JavaScript 控制台？
 
 Apple Safari 中的 JavaScript 控制台是浏览器为你提供的一个控制台：
 
-* 查看浏览器在执行嵌入 JavaScript 代码时生成的任何错误或日志消息。
-* 运行任何 JavaScript 代码以交互式的方式与 Web 文交互。
+*   查看浏览器在执行嵌入 JavaScript 代码时生成的任何错误或日志消息。
+*   运行任何 JavaScript 代码以交互式的方式与 Web 文档交互。
 
 以下是我测试 Apple Safari 中 JavaScript 控制台的操作：
 
-1. 运行 Apple Safari 并加载以下 HTML 代码：
-
-```html
- <html>
-<head><title>Hello World!</title></head>
-<<body>
-<script type="text/javascript">
-   document.write('Hello World! - Document');
-   console.log('Hello World! - Console');
-</script>
-</body>
-</html>
-```
-
-2. 按“Option-Command-C”组合键（或选择“开发 > 显示 JavaScript 控制台”菜单）。我在屏幕上显示的开发者面板中看到了“Console”选项卡，上面显示了日志消息：“Hello World! - Console”。
-
-3. 在控制台中输入一些 JavaScript 语句并运行：
-
-```
- Hello World! - Console
->> var msg = document.title;
-< undefined
->> console.log(msg.length);
-  12
-< undefined
-> 
-```
+1.  运行 Apple Safari 并加载以下 HTML 代码：
+    ```html
+    <html>
+    <head><title>Hello World!</title></head>
+    <body>
+    <script type="text/javascript">
+       document.write('Hello World! - Document');
+       console.log('Hello World! - Console');
+    </script>
+    </body>
+    </html>
+    ```
+2.  按“Option-Command-C”组合键（或选择“开发 > 显示 JavaScript 控制台”菜单）。我在屏幕上显示的开发者面板中看到了“Console”选项卡，上面显示了日志消息：“Hello World! - Console”。
+3.  在控制台中输入一些 JavaScript 语句并运行：
+    ```
+    Hello World! - Console
+    >> var msg = document.title;
+    < undefined
+    >> console.log(msg.length);
+      12
+    < undefined
+    > 
+    ```
 
 酷酷。控制台是排查在 Apple Safari 上运行的 HTML 页面中 JavaScript 代码问题的很好工具。
 
-![](img/image00137.jpeg)
+![Apple Safari 中的 JavaScript 控制台](img/image00137.jpeg)
 
-Apple Safari 中的 JavaScript 控制台
-
-JavaScript 教程 - Herong 的教程示例
-
-∟支持 JavaScript 的 Web 浏览器
-
-∟ IE (Internet Explorer) 中的 JavaScript 控制台
+### IE (Internet Explorer) 中的 JavaScript 控制台
 
 本节提供了教程示例，介绍如何使用 IE (Internet Explorer) 中的 JavaScript 控制台来查看 JavaScript 执行产生的错误和日志消息。你也可以使用它来运行任何 JavaScript 语句以与 HTML 文档进行交互。
 
-## 什么是 IE (Internet Explorer) 中的 JavaScript 控制台？
+#### 什么是 IE (Internet Explorer) 中的 JavaScript 控制台？
 
 IE 中的 JavaScript 控制台是浏览器为你提供的一个控制台：
 
-* 查看浏览器在执行嵌入 JavaScript 代码时生成的任何错误或日志消息。
-* 运行任何 JavaScript 代码以交互式的方式与 Web 文交互。
+*   查看浏览器在执行嵌入 JavaScript 代码时生成的任何错误或日志消息。
+*   运行任何 JavaScript 代码以交互式的方式与 Web 文档交互。
 
 以下是我测试 IE 中 JavaScript 控制台的操作：
 
-1. 运行 IE 并加载以下 HTML 代码：
-
-```html
- <html>
-<head><title>Hello World!</title></head>
-<body>
-<script type="text/javascript">
-   document.write('Hello World! - Document');
-   console.log('Hello World! - Console');
-</script>
-</body>
-</html>
-```
-
-2. 按 F12 键。我看到屏幕上显示了开发者窗口。
-
-3. 点击开发者窗口上的“Console”选项卡。我看到了控制台日志消息：“Hello World! - Console”。
-
-4. 在控制台中输入一些 JavaScript 语句并运行：
-
-```
- >> var msg = document.title;
-< undefined
->> console.log(msg.length);
-  12
-< undefined
-> 
-```
+1.  运行 IE 并加载以下 HTML 代码：
+    ```html
+    <html>
+    <head><title>Hello World!</title></head>
+    <body>
+    <script type="text/javascript">
+       document.write('Hello World! - Document');
+       console.log('Hello World! - Console');
+    </script>
+    </body>
+    </html>
+    ```
+2.  按 F12 键。我看到屏幕上显示了开发者窗口。
+3.  点击开发者窗口上的“Console”选项卡。我看到了控制台日志消息：“Hello World! - Console”。
+4.  在控制台中输入一些 JavaScript 语句并运行：
+    ```
+    >> var msg = document.title;
+    < undefined
+    >> console.log(msg.length);
+      12
+    < undefined
+    > 
+    ```
 
 酷酷。控制台是排查在 IE 上运行的 HTML 页面中 JavaScript 代码问题的很好工具。
 
-![](img/image00138.jpeg)
+![IE (Internet Explorer) 中的 JavaScript 控制台](img/image00138.jpeg)
 
-IE (Internet Explorer) 中的 JavaScript 控制台
-
-JavaScript 教程 - Herong 的教程示例
-
-∟服务端和客户端 Web 脚本
+## 服务端和客户端 Web 脚本
 
 本章提供了关于服务端和客户端 Web 脚本的介绍和教程示例。主题包括：Web 脚本处理架构概述；服务端和客户端脚本的处理步骤；事件处理脚本；脚本代码返回新的脚本代码。
 
-> Web 脚本架构概览
-> 服务端脚本概述
-> 用于文档更新的客户端脚本
-> 用于事件处理的客户端脚本
-> 经过多次处理的客户端脚本
-> 由两个原始脚本产生的新脚本
-
-结论：
-
-* Web 应用程序可以在三个领域使用脚本：服务端脚本、用于页面文档构建的客户端脚本，以及用于浏览器事件处理的客户端脚本。
-* 在页面文档构建过程中使用 JavaScript 时，浏览器将多轮扫描并执行脚本。
-
-JavaScript 教程 - Herong 的教程示例
-
-∟服务端和客户端 Web 脚本
-
-## Web 脚本架构概览
+### Web 脚本架构概览
 
 本节提供了典型的 Web 脚本处理流程架构概述，显示了服务端和客户端的脚本步骤。
 
 正如我们在之前的章节中看到的，JavaScript 代码可以用于三个领域来帮助构建网站或基于 Web 的应用程序：
 
-* 服务端脚本 - 嵌入在 HTML 文档中的脚本，在发送到客户端（Web 浏览器）之前由 Web 服务器处理。服务端脚本通常用于与数据库或其他后端应用程序交互，并将动态数据引入 HTML 文档。
-* 用于页面文档构建的客户端脚本 - 嵌入在 HTML 文档中的脚本，在浏览器窗口上渲染页面文档之前由 Web 浏览器处理。
-* 用于浏览器事件处理的客户端脚本 - 嵌入在 HTML 文档中的脚本，当用户与浏览器窗口交互时由 Web 浏览器处理。
+*   **服务端脚本** - 嵌入在 HTML 文档中的脚本，在发送到客户端（Web 浏览器）之前由 Web 服务器处理。服务端脚本通常用于与数据库或其他后端应用程序交互，并将动态数据引入 HTML 文档。
+*   **用于页面文档构建的客户端脚本** - 嵌入在 HTML 文档中的脚本，在浏览器窗口上渲染页面文档之前由 Web 浏览器处理。
+*   **用于浏览器事件处理的客户端脚本** - 嵌入在 HTML 文档中的脚本，当用户与浏览器窗口交互时由 Web 浏览器处理。
 
 下面的图显示了服务端脚本和客户端脚本如何共同工作，在典型的 Web 应用程序流程架构中执行不同的功能：
 
-![](img/image00139.jpeg)
-
-Web 脚本流程架构
+![Web 脚本流程架构](img/image00139.jpeg)
 
 图中使用的红线表示可以使用 JavaScript 的地方。此 Web 脚本流程架构图的不同部分将在稍后进行解释。
 
-JavaScript 教程 - Herong 的教程示例
+**结论：**
 
-∟服务端和客户端 Web 脚本
+*   Web 应用程序可以在三个领域使用脚本：服务端脚本、用于页面文档构建的客户端脚本，以及用于浏览器事件处理的客户端脚本。
+*   在页面文档构建过程中使用 JavaScript 时，浏览器将多轮扫描并执行脚本。
 
-## 服务端脚本概述
+### 服务端脚本概述
 
 本节提供了 Web 服务端脚本处理流程的概述。Web 服务器会移除脚本代码并执行它。
 
 服务端脚本发生在下方所示的第 4 步：
 
-![](img/image00140.jpeg)
+![服务端脚本流程](img/image00140.jpeg)
 
-服务端脚本流程
+**步骤 1**：用户输入新的 Web 页面地址或点击需要从 Web 服务器获取新 Web 页面的链接。
 
-步骤 1：用户输入新的 Web 页面地址或点击需要从 Web 服务器获取新 Web 页面的链接。
-步骤 2：Web 浏览器连接到 Web 服务器并发送带有请求 Web 页面路径名的 `HTTP GET` 命令。
-步骤 3： Web 服务器获取请求页面的 HTML 文档，或请求应用程序服务器生成 HTML 文档。
-步骤 4：服务端脚本步骤：Web 服务器扫描 HTML 文档查找其中嵌入的任何服务端脚本代码。Web 服务器将移除嵌入的脚本代码并执行它。
+**步骤 2**：Web 浏览器连接到 Web 服务器并发送带有请求 Web 页面路径名的 `HTTP GET` 命令。
 
-当 Web 服务器执行嵌入的脚本代码时，它将提供许多代表主机环境的主机对象。通过这些主机对象，服务端脚本可以轻松访问载的 HTML 文档、服务器文件系统、任何数据库以及网络计算机。
+**步骤 3**：Web 服务器获取请求页面的 HTML 文档，或请求应用程序服务器生成 HTML 文档。
 
-通常，服务端脚本代码将根据其计算产生的动态数据更新载的 HTML 文档。
+**步骤 4**：服务端脚本步骤：Web 服务器扫描 HTML 文档查找其中嵌入的任何服务端脚本代码。Web 服务器将移除嵌入的脚本代码并执行它。
+
+当 Web 服务器执行嵌入的脚本代码时，它将提供许多代表主机环境的主机对象。通过这些主机对象，服务端脚本可以轻松访问加载的 HTML 文档、服务器文件系统、任何数据库以及网络计算机。
+
+通常，服务端脚本代码将根据其计算产生的动态数据更新加载的 HTML 文档。
 
 在服务端脚本处理步骤结束时，更新后的 HTML 文档准备好发送回客户端——Web 浏览器。
 
-JavaScript 教程 - Herong 的教程示例
-
-∟服务端和客户端 Web 脚本
-
-## 用于文档更新的客户端脚本
+### 用于文档更新的客户端脚本
 
 本节提供了客户端脚本的概述。某些脚本被执行以更新页面文档的最终渲染。某些脚本被注册为事件处理程序以便稍后执行。
 
-用于页面文档更新的服务端脚本发生在下方所示的第 6 步和 7a 步：
+用于页面文档更新的客户端脚本发生在下方所示的第 6 步和 7a 步：
 
-![](img/image00141.jpeg)
+![用于文档更新的客户端脚本](img/image00141.jpeg)
 
-用于文档更新的客户端脚本
+**步骤 5**：Web 服务器将最终的 HTML 文档发送给 Web 浏览器。
 
-步骤 5：Web 服务器将最终的 HTML 文档发送给 Web 浏览器。
+**第 6 步：客户端脚本步骤**
 
+Web 浏览器扫描 HTML 文档，查找其中嵌入的任何客户端脚本代码。Web 浏览器将移除嵌入的脚本代码并执行它。当浏览器执行嵌入的脚本代码时，它会提供许多代表客户端宿主环境的主机对象。通过这些主机对象，客户端脚本代码可以访问承载的 HTML 文档和浏览器窗口。出于安全考虑，客户端脚本代码无法访问文件系统或客户端机器浏览器之外的任何内容。
 
+**第 7a 步**
 
-
-
-# 第 6 ：客户端脚本步骤
-Web 浏览器扫描 HTML 文档，查找其中嵌入的任何客户端脚本代码。Web 浏览器将移除嵌入的脚本代码并执行它。当浏览器执行嵌入的脚本代码时，它会提供许多代表客户端宿主环境机对象。通过这些主机对象，客户端脚本代码可以访问承载的 HTML 文档和浏览器窗口。出于安全考虑，客户端脚本代码无法访问文件系统或客户端机器浏览器之外的任何内容。
-
-### 第 7a 
 某些客户端脚本会在浏览器窗口渲染之前更新页面文档对象（document object）。
 
-### 第 7b 
+**第 7b 步**
+
 某些客户端脚本将被注册为各种事件的处理器，这些事件会在浏览器窗口及其页面 UI 控件上触发。在终端用户触发这些事件之前，这些脚本将不会执行。
-
-JavaScript 教程 - Herong 的教程示例
-
-∟服务器端与客户端 Web 脚本
-
-∟用于事件处理的客户端脚本
-
-本节提供了用于事件处理的客户端脚本的概述。当终端用户在最终的 Web 页面上触发事件时，注册为事件处理程序的脚本将会被执行。
-
-用于窗口事件处理的服务器端脚本发生在第 7b 步和第 10 步，如下所示：
-
-![](img/image00142.jpeg)
 
 ### 用于事件处理的客户端脚本
 
-### 第 7b
+本节提供了用于事件处理的客户端脚本的概述。当终端用户在最终的 Web 页面上触发事件时，注册为事件处理程序的脚本将会被执行。
+
+用于窗口事件处理的客户端脚本发生在第 7b 步和第 10 步，如下所示：
+
+![用于事件处理的客户端脚本](img/image00142.jpeg)
+
+**第 7b 步**
+
 某些客户端脚本将被注册为各种事件的处理器，这些事件会在浏览器窗口及其页面 UI 控件上触发。在终端用户触发这些事件之前，这些脚本将不会执行。
 
-### 第 8
+**第 8 步**
+
 由某些客户端脚本更新的页面文档对象由 Web 浏览器在浏览器窗口上渲染，向用户显示最终的 Web 页面。
 
-### 第 9 
+**第 9 步**
+
 用户在 Web 页面上输入某些内容或点击某些 UI 控件。这将触发一个或多个事件。
 
-### 第 10
-Web 浏览器执行注册为触发事件处理器的客户端脚本。Web 浏览器将提供许多代表客户端宿主环境机对象。通过这些主机对象，事件处理器脚本可以访问页面文档和浏览器窗口。出于安全考虑，客户端脚本代码无法访问文件系统或客户端机器浏览器之外的任何内容。
+**第 10 步**
 
-### 第 7a 
+Web 浏览器执行注册为触发事件处理器的客户端脚本。Web 浏览器将提供许多代表客户端宿主环境的主机对象。通过这些主机对象，事件处理器脚本可以访问页面文档和浏览器窗口。出于安全考虑，客户端脚本代码无法访问文件系统或客户端机器浏览器之外的任何内容。
+
+**第 7a 步（事件处理器中）**
+
 某些事件处理器脚本将更新在浏览器窗口上渲染的页面文档对象。
 
-### 第 11 
+**第 11 步**
+
 某些事件处理器脚本将强制 Web 浏览器请求一个新的 Web 页面。
 
-JavaScript 教程 - Herong 的教程示例
-
-∟服务器端与客户端 Web 脚本
-
-∟多次处理的客户端脚本过程
+### 多次处理的客户端脚本过程
 
 本节提供了一个 JavaScript 代码教程示例，该代码将另一段 JavaScript 代码插入回 HTML 文档中。Web 浏览器会多次执行脚本代码。
 
@@ -2951,8 +2789,8 @@ JavaScript 教程 - Herong 的教程示例
 
 这是一个有趣的 JavaScript 代码教程示例，它将另一段 JavaScript 代码插入 HTML 文档中：
 
-```javascript
- <html
+```html
+<html>
 <!-- Hello_Nested_Scripts.html
    Copyright (c) HerongYang.com. All Rights Reserved.
 -->
@@ -2965,20 +2803,20 @@ JavaScript 教程 - Herong 的教程示例
    document.writeln("<\/script>");
 </script>
 </pre></body>
-</</html>
+</html>
 ```
 
 猜猜如果你运行这个 HTML 文档，你会在浏览器窗口上看到什么。
 
 ```
- Hello World!
+Hello World!
  Hello World!
 ```
 
 发生的情况是，当浏览器完成嵌入的 JavaScript 代码的执行时，它将得到如下 HTML 文档：
 
 ```html
- Hello World!
+Hello World!
 <script type="text/javascript">
 document.writeln(" Hello World!");
 </script>
@@ -2986,11 +2824,7 @@ document.writeln(" Hello World!");
 
 输出中还有另一个 JavaScript 代码。浏览器将再次执行它，导致你之前看到的最终 HTML 文档。
 
-JavaScript 教程 - Herong 的教程示例
-
-∟服务器端与客户端 Web 脚本
-
-∟由两个原始脚本产生的新脚本
+### 由两个原始脚本产生的新脚本
 
 本节提供了一个教程示例，展示了 Web 浏览器如何无法执行由两个原始 JavaScript 代码产生的 JavaScript 代码。
 
@@ -2999,7 +2833,7 @@ JavaScript 教程 - Herong 的教程示例
 这里有一个包含两个 JavaScript 代码的 HTML 文档，它们协同工作返回一个新的 JavaScript 代码：
 
 ```html
- <html
+<html>
 <!-- Hello_Nested_Script_Error.html
    Copyright (c) HerongYang.com. All Rights Reserved.
 -->
@@ -3009,21 +2843,21 @@ JavaScript 教程 - Herong 的教程示例
    document.writeln("-- Before the new script.");
    document.writeln("<script type=\"text/javascript\">");
 </script>
-document.writeln(\"Hello World!\");
+document.writeln("Hello World!");
 <script type="text/javascript">
    document.writeln("<\/script>");
    document.writeln("-- After the new script.");
 </script>
 </pre></body>
-</</html>
+</html>
 ```
 
 在第一轮 JavaScript 执行后，HTML 文档将拥有一个新的 JavaScript 代码：
 
 ```
- -- Before the new script.
+-- Before the new script.
 <script type="text/javascript">
-document.writeln(\"Hello World!\");
+document.writeln("Hello World!");
 </script>
 -- After the new script.
 ```
@@ -3031,7 +2865,7 @@ document.writeln(\"Hello World!\");
 如果 Web 浏览器再次执行 JavaScript 代码，最终的 HTML 文档将如下所示：
 
 ```
- -- Before the new script.
+-- Before the new script.
 Hello World!
 -- After the new script.
 ```
@@ -3039,46 +2873,20 @@ Hello World!
 但 Internet Explorer 和 Firefox 得到的结果是：
 
 ```
- -- Before the new script.
+-- Before the new script.
 ```
 
-结论：如果脚本代码是由两个原始脚本代码产生的，Web 浏览器将无法执行它。
+**结论**：如果脚本代码是由两个原始脚本代码产生的，Web 浏览器将无法执行它。
 
-JavaScript 教程 - Herong 的教程示例
-
-∟对象简介
+## 对象简介
 
 本章提供了 JavaScript 中“对象”类型的介绍和教程示例。主题包括创建“对象”；添加属性和运行方法；命名属性和索引属性；数组的比较。
 
-> 什么是对象？
-> Object 类型的对象
-> 添加和删除属性
-> 添加和删除方法
-> 使用 this 关键字表示当前对象
-> 对象字面量
-> 对象与关联数组
-> 具有索引属性的对象
-> 数组与对象的区别
-> 将数组对象作为对象使用
-
-结论：
-
-* 对象是特殊类型“Object”或任何“原型”类型的实例。
-* “Object”类型是所有“原型”类型的根。
-* 使用对象字面量创建新对象：`{n:v, ...}`。
-* 使用 `Object` 构造函数创建新对象：`New Object()`。
-* 使用点 `.` 操作访问对象的属性或方法。
-* 使用点 `delete` 操作删除对象的属性或方法。
-
-
-
-
-
-## 什么是对象？
+### 什么是对象？
 
 本节简要介绍了 JavaScript 中什么是对象，以及创建和使用对象的一些有趣特性。此外还提供了一个教程示例。
 
-## 什么是对象？
+#### 什么是对象？
 
 对象是特殊数据类型 `"Object"` 或任何 `"prototype"` 数据类型的实例。
 
@@ -3098,10 +2906,10 @@ JavaScript 支持具有以下有趣特性的对象：
 *   可以动态地从一个对象删除现有的属性和方法，而不影响同一原型的其他对象。
 *   JavaScript 提供了几个内置自定义数据类型：`Array`、`Boolean`、`Date`、`Function`、`Math`、`Number`、`RegExp` 和 `String`。
 
-为了向这些特性，我编写了这个简单的教程示例来创建一个 `"Object"` 数据类型的对象，并在这个新对象上添加新属性：
+为了演示这些特性，我编写了这个简单的教程示例来创建一个 `"Object"` 数据类型的对象，并在这个新对象上添加新属性：
 
-```
- <html>
+```html
+<html>
 <!-- Object_Data_Type_and_Value.html
    Copyright (c) HerongYang.com. All Rights Reserved.
 -->
@@ -3112,23 +2920,23 @@ JavaScript 支持具有以下有趣特性的对象：
 <pre>
 <script type="text/javascript">
 
-   // 将基本值赋值给变量
-   var jsSite = "mozilla.org";
+// 将基本值赋值给变量
+var jsSite = "mozilla.org";
 
-   // 创建对象并将其赋值给变量
-   var mySite = new Object();
+// 创建对象并将其赋值给变量
+var mySite = new Object();
 
-   // 为一个对象添加新属性
-   mySite.name = "herongyang.com";
+// 为一个对象添加新属性
+mySite.name = "herongyang.com";
 
-   // 获取对象属性的值
-   document.writeln('"mySite.name" property: '+mySite.name); 
+// 获取对象属性的值
+document.writeln('"mySite.name" property: ' + mySite.name); 
 
-   // 检查 mySite 的数据类型
-   document.writeln('"mySite" data type: '+(typeof mySite)); 
+// 检查 mySite 的数据类型
+document.writeln('"mySite" data type: ' + (typeof mySite)); 
 
-   // 检查 jsSite 的数据类型
-   document.writeln('"jsSite" data type: '+(typeof jsSite)); 
+// 检查 jsSite 的数据类型
+document.writeln('"jsSite" data type: ' + (typeof jsSite)); 
 </script>
 </pre>
 </body>
@@ -3138,16 +2946,12 @@ JavaScript 支持具有以下有趣特性的对象：
 运行此示例，你将得到：
 
 ```
- "mySite.Name" property: herongyang.com
+"mySite.name" property: herongyang.com
 "mySite" data type: object
 "jsSite" data type: string
 ```
 
-JavaScript 教程 - Herong 的教程示例
-
-# 对象介绍
-
-## "Object" 数据类型的对象
+### "Object" 数据类型的对象
 
 本节简要介绍了 `'Object'` 数据类型及其属性和方法。提供了一个如何创建和测试 `'Object'` 数据类型对象的教程示例。要学习如何在 JavaScript 中使用对象，我们需要从 `'Object'` 数据类型开始，它具有以下特性：
 
@@ -3158,8 +2962,8 @@ JavaScript 教程 - Herong 的教程示例
 
 这里是一个显示其中一些特性的教程示例：
 
-```
- <html>
+```html
+<html>
 <!-- Object_Data_Type_and_Value.html
    Copyright (c) HerongYang.com. All Rights Reserved.
 -->
@@ -3170,23 +2974,23 @@ JavaScript 教程 - Herong 的教程示例
 <pre>
 <script type="text/javascript">
 
-   // 将基本值赋值给变量
-   var jsSite = "mozilla.org";
+// 将基本值赋值给变量
+var jsSite = "mozilla.org";
 
-   // 创建对象并将其赋值给变量
-   var mySite = new Object();
+// 创建对象并将其赋值给变量
+var mySite = new Object();
 
-   // 为一个对象添加新属性
-   mySite.name = "herongyang.com";
+// 为一个对象添加新属性
+mySite.name = "herongyang.com";
 
-   // 获取对象属性的值
-   document.writeln('"mySite.name" property: '+mySite.name); 
+// 获取对象属性的值
+document.writeln('"mySite.name" property: ' + mySite.name); 
 
-   // 检查 mySite 的数据类型
-   document.writeln('"mySite" data type: '+(typeof mySite)); 
+// 检查 mySite 的数据类型
+document.writeln('"mySite" data type: ' + (typeof mySite)); 
 
-   // 检查 jsSite 的数据类型
-   document.writeln('"jsSite" data type: '+(typeof jsSite)); 
+// 检查 jsSite 的数据类型
+document.writeln('"jsSite" data type: ' + (typeof jsSite)); 
 </script>
 </pre>
 </body>
@@ -3196,12 +3000,12 @@ JavaScript 教程 - Herong 的教程示例
 运行此示例，你将得到：
 
 ```
- "mySite.Name" property: herongyang.com
+"mySite.name" property: herongyang.com
 "mySite" data type: object
 "jsSite" data type: string
 ```
 
-# 添加和删除对象属性
+### 添加和删除对象属性
 
 本节简要介绍了如何添加、更新和删除属性。
 
@@ -3210,68 +3014,11 @@ JavaScript 教程 - Herong 的教程示例
 
 这里有一个教程示例，展示了如何添加新属性、更新属性值以及删除属性：
 
-```
- <html>
-<!-- Object_Property.html
-   Copyright (c) HerongYang.com. All Rights Reserved.
--->
-<head>
-<title>Object Properties of "Object"</title>
-</head>
-<body>
-<pre>
-<script type="text/javascript">
-
-   // 创建 "Object" 类型的对象
-   var mySite = new Object();
-   var myBook = new Object();
-
-   // 仅为一个对象添加新属性
-   mySite.url = "herongyang.com";
-   myBook.author = "Herong Yang";
-
-   // 更新属性值
-   mySite.url = "www.herongyang.com";
-
-   // 显示属性值
-   document.writeln('mySite.url: '+mySite.url);
-   document.writeln('myBoot.url: '+myBook.url);
-   document.writeln('mySite.author: '+mySite.author);
-   document.writeln('myBook.author: '+myBook.author);
-
-   // 这个属性仅属于一个对象吗？
-   document.writeln('mySite.hasOwnProperty("url"): '
-      +mySite.hasOwnProperty("url"));
-
-   // 仅从一个对象删除属性
-   document.writeln('Deleting mySite.url...');
-   delete mySite.url;
-   document.writeln('mySite.url: '+mySite.url);
-</script>
-</pre>
-</body>
-</html>
-```
-
-结果符合我的预期：
-
-```
- mySite.url: www.herongyang.com
-myBoot.url: undefined
-mySite.author: undefined
-myBook.author: Herong Yang
-mySite.hasOwnProperty("url"): true
-Deleting mySite.url...
-mySite.url: undefined
-```
 
 
+# JavaScript 教程 - Herong 的教程示例
 
-
-
-# JavaScript 教程 - Herong 的教程示例(#part0001.xhtml)
-
-## 对象介绍(#part0073.xhtml)
+## 对象介绍
 
 ### 添加和删除对象方法
 
@@ -3285,7 +3032,7 @@ mySite.url: undefined
 但你可以随时使用所示的赋值操作为一个对象添加更多方法：
 
 ```
- object_name.method_name = function_name;
+object_name.method_name = function_name;
 ```
 
 添加的方法仅适用于该特定对象。其他对象将没有此方法。
@@ -3293,13 +3040,13 @@ mySite.url: undefined
 在对象上调用方法与如下所示调用分配的函数是相同的：
 
 ```
- object_name.method_name(param1, param2, ...);
+object_name.method_name(param1, param2, ...);
 ```
 
 你也可以随时使用所示的删除操作从对象中删除方法：
 
 ```
- delete object_name.method_name;
+delete object_name.method_name;
 ```
 
 这里有一个教程示例，向你如何添加新方法、调用方法以及删除方法。
@@ -3408,7 +3155,7 @@ function showAll() {
 JavaScript 还支持使用如下格式的对象字面量创建 `Object` 类型对象的简单方法：
 
 ```
- {property1: value1, property2: value2, ...}
+{property1: value1, property2: value2, ...}
 ```
 
 其中 `property1` 和 `property2` 是属性或方法名。在 JavaScript 语言中，对象中的属性和方法是以相同的方式管理的。
@@ -3485,10 +3232,6 @@ JavaScript 中的对象实际上是关联数组，它们包含一个键值对的
 
 这里有一个关于如何以关联数组格式访问对象属性和方法的教程示例：
 
-
-
-
-
 ```html
  <html>
 <!-- Object_Associate_Array.html
@@ -3555,10 +3298,6 @@ myBook.toString Type: function
 ```
 
 输出还表明，作为对象的属性，方法的值是函数的定义。
-
-JavaScript 教程 - Herong 的教程示例
-
-∟对象简介
 
 ### 带有索引属性的对象
 
@@ -3633,10 +3372,6 @@ myBook[9]: Programming
 "JavaScript Tutorials" by Herong Yang
 ```
 
-JavaScript 教程 - Herong 的教程示例
-
-∟对象简介
-
 ### “对象”与“数组”之间的区别
 
 本节对 `Array` 和 `Object` 的相似之处和不同进行了简要描述。提供了一个教程示例，说明如何比较 `Array` 对象和 `Object` 对象。
@@ -3683,8 +3418,8 @@ JavaScript 支持许多预定义的核心对象类型。其中，`Object` 和 `A
    // 检查 bookArray
    document.writeln("About the \"Array\" object:");
    document.writeln("   Type: "+(typeof bookArray));
-   document.writeln("   Instance of Object: "+bookArray instanceof Object));
-   document.writeln("   Instance of Array: "+bookArray instanceof Array));
+   document.writeln("   Instance of Object: "+(bookArray instanceof Object));
+   document.writeln("   Instance of Array: "+(bookArray instanceof Array));
    document.writeln("   Members:");
    for (var item in bookArray) {
       document.writeln("      "+item+": "+bookArray[item]);
@@ -3694,8 +3429,8 @@ JavaScript 支持许多预定义的核心对象类型。其中，`Object` 和 `A
    document.writeln();
    document.writeln("About the \"Object\" object:");
    document.writeln("   Type: "+(typeof bookObject));
-   document.writeln("   Instance of Object: "+bookObject instanceof Object));
-   document.writeln("   Instance of Array: "+bookObject instanceof Array));
+   document.writeln("   Instance of Object: "+(bookObject instanceof Object));
+   document.writeln("   Instance of Array: "+(bookObject instanceof Array));
    document.writeln("   Members:");
    for (var item in bookObject) {
       document.writeln("      "+item+": "+bookObject[item]);
@@ -3730,19 +3465,11 @@ About the "Object" object:
       category: Programming
 ```
 
-JavaScript 教程 - Herong 的教程示例
-
-∟对象简介
-
 ### 将“数组”对象作为“对象”使用
 
 本节提供了一个教程示例，说明如何将 `Array` 对象作为 `Object` 对象来命名属性和方法。
 
 正如我在上一节中提到的，`Array` 是 `Object` 的子类。因此，`Array` 对象可以作为 `Object` 对象使用。
-
-
-
-
 
 *   可以为 `"Array"` 对象添加命名属性。
 *   `"Array"` 对象的元素实际上是索引属性。
@@ -3751,7 +3478,7 @@ JavaScript 教程 - Herong 的教程示例
 
 下面是一个 JavaScript 教程示例，向你展示了如何将 `"Array"` 对象当作 `"Object"` 对象使用：
 
-```
+```html
  <html>
 <!-- Object_Array_as_Object.html
    Copyright (c) HerongYang.com. All Rights Reserved.
@@ -3837,9 +3564,7 @@ Calling its methods:
    bookArray[4](): "JavaScript Tutorials" by Herong Yang
 ```
 
-# JavaScript 教程 - Herong 的教程示例
-
-##  定义你自己的对象类型
+## 定义你自己的对象类型
 
 本章提供了关于如何定义你自己的对象类型的介绍和教程示例。主题包括定义构造函数；向对象或构造函数原型添加属性和方法；遍历属性和方法；使用 `'instanceof'` 和 `'typeof'` 运算符。
 
@@ -3848,7 +3573,7 @@ Calling its methods:
 *   定义对象构造函数
 *   向对象添加属性和方法
 *   "for ... in" 和 "for each ... in" 语句
-*   构造函数对象对象的 "prototype" 属性
+*   构造函数对象的 "prototype" 属性
 *   "instanceof" 运算符 - 确定对象类型
 *   "typeof" 运算符和数据类型
 
@@ -3861,10 +3586,6 @@ Calling its methods:
 *   也可以向单个实例添加对象属性和方法。
 *   可以使用 `for (var item in object_name)` 和 `for each (var value in object_name)` 语句来遍历对象中的属性和方法。
 *   构造函数本身是一个对象，它有一个名为 `"prototype"` 的属性，指向原型定义。
-
-# JavaScript 教程 - Herong 的教程示例
-
-## ∟定义你自己的对象类型](#part0084.xhtml)
 
 ### 基于原型的面向对象编程风格
 
@@ -3889,11 +3610,7 @@ JavaScript 是一种基于原型的编程语言，支持如下所述的封装、
 
 请查看本章的其他章节，获取有关 JavaScript 基于原型的编程特性的详细描述和教程示例。
 
-# JavaScript 教程 - Herong 的教程示例
-
-## ∟定义你自己的对象类型
-
-### ∟JavaScript 中基于原型的编程特性
+### JavaScript 中基于原型的编程特性
 
 本节提供了 JavaScript 中一些基于原型的编程特性的列表，例如构造函数、原型对象、对象属性和方法。
 
@@ -3910,22 +3627,13 @@ JavaScript 是一种基于原型的编程语言，支持如下所述的封装、
 *   有一个名为 `Object()` 的内置构造函数，它为所有其他对象类型提供了基础对象类型。
 *   所有函数实际上都是从基础构造函数 `Function()` 创建的对象。
 *   所有类型的对象都继承了由基础构造函数 `Object()` 定义的属性和方法。
-
-
-
-
-
-- 有几个主要的内置对象，它们表示构造函数，包括 `Array()`、`Boolean()`、`Date()`、`Error()`、`Function()`、`Math()`、`Number()`、`Object()`、`RegExp()` 和 `String()`。
-- JavaScript 似乎不支持多重继承。
-- JavaScript 以特殊方式支持私有属性和方法。
+*   有几个主要的内置对象，它们表示构造函数，包括 `Array()`、`Boolean()`、`Date()`、`Error()`、`Function()`、`Math()`、`Number()`、`Object()`、`RegExp()` 和 `String()`。
+*   JavaScript 似乎不支持多重继承。
+*   JavaScript 以特殊方式支持私有属性和方法。
 
 本章稍后将提供几个教程示例来阐明其中一些特性。
 
-JavaScript 教程 - Herong 的教程示例
-
-### ∟定义你自己的对象类型](#part0084.xhtml)
-
-## 定义对象构造函数
+### 定义对象构造函数
 
 本节简要介绍了如何定义对象构造函数。提供了一个教程示例，演示了如何创建一个具有 3 个属性和 1 个方法的 `'Book'` 构造函数。
 
@@ -4012,11 +3720,7 @@ Constructing a "Book" object...
 - 任何构造函数都可以被调用并作为函数执行。
 - 任何函数都可以作为构造函数创建对象。
 
-JavaScript 教程 - Herong 的教程示例
-
-### ∟定义你自己的对象类型](#part0084.xhtml)
-
-## 向对象添加属性和方法
+### 向对象添加属性和方法
 
 本节仅简要介绍了向对象添加属性和方法。提供了一个教程示例，演示了如何向 1 个对象添加 1 个额外的属性和 1 个额外的方法。
 
@@ -4063,7 +3767,7 @@ function getDescription() {
    myBook.getDesc = getDescription;
 
    function showObject(object, name) {
-      document.writeln("\nShowing object \""+name+"\\"");
+      document.writeln("\nShowing object \""+name+"\"");
       document.writeln("   Own Properties and Methods:");
       for (var item in object) {
           document.writeln("      "+item+": "+object[item]);
@@ -4096,11 +3800,7 @@ Showing object "ckBook"
       author: Yosef Cohen
 ```
 
-JavaScript 教程 - Herong 的教程示例
-
-### ∟定义你自己的对象类型](#part0084.xhtml)
-
-## "for ... in" 和 "for each ... in" 语句
+### "for ... in" 和 "for each ... in" 语句
 
 本节简要介绍了用于遍历对象属性和方法的特殊循环语句。提供了一个教程示例来展示相同类型对象的额外属性和方法。
 
@@ -4127,9 +3827,6 @@ for each (var value in object_name) {
 在 `for each ... in` 语句中，嵌入语句会对每个属性和方法执行。变量 `value` 将包含当前属性的值或当前方法的函数。
 
 这里有一个教程示例，它同时使用 `for ... in` 和 `for each ... in` 语句来遍历所有属性和方法：
-
-
-
 
 ```html
 <html
@@ -4207,11 +3904,7 @@ Showing object "myBook"
 
 请注意 `for each ... in` 语句已废用。请不要再使用它。
 
-JavaScript 教程 - Herong 的教程示例
-
-∟定义你自己的对象类型
-
-## 构造函数对象的 "prototype" 属性
+### 构造函数对象的 "prototype" 属性
 
 本节快速介绍了构造函数上内置的 `prototype` 属性。提供了一个教程示例，说明了如何在 `prototype` 属性中存储属性和方法，以便由该构造函数创建的所有对象继承它们。
 
@@ -4222,7 +3915,7 @@ JavaScript 教程 - Herong 的教程示例
 *   每个构造函数都有一个名为 `prototype` 的默认属性。
 *   构造函数的默认 `prototype` 属性是一个对象。
 *   可以向构造函数的 `prototype` 对象中添加新的属性和方法。
-* 构造函数的 `prototype` 对象的所有属性和方法都由从该构造函数创建的所有对象共享。
+*   构造函数的 `prototype` 对象的所有属性和方法都由从该构造函数创建的所有对象共享。
 
 让我们使用以下教程示例来测试一下：
 
@@ -4277,6 +3970,7 @@ function showObject(object, name) {
 
 此教程示例的输出显示了 "prototype" 是是如何被对象继承的：
 
+```
  Showing object "myBook"
    Type: object
    Property/method names and values:
@@ -4299,12 +3993,9 @@ Showing object "Book.prototype"
       getDesc: function getDescription() {
     return "\"" + this.title + "\" by " + this.author;
 }
+```
 
-JavaScript 教程 - Herong 的教程示例
-
-∟定义你自己的对象类型
-
-## "instanceof" 运算符 - 确定对象类型
+### "instanceof" 运算符 - 确定对象类型
 
 本节介绍了 `instanceof` 运算符。提供了一个教程示例，说明了如何使用 `instanceof` 运算符确定对象的类型。
 
@@ -4372,9 +4063,6 @@ function showObject(object, name) {
 </html>
 ```
 
-
-
-
 ```
  Showing object "myBook"
    Instance of Object: true
@@ -4412,11 +4100,7 @@ Showing object "Object.prototype"
 - `"Object"` 是一个函数。因此它是两个对象类型的实例：`"Function"` 和 `"Object"`。
 - 然而 `"Object.prototype"`是一个对象。所以它应该是 `"Object"` 的实例。但输出显示不是。JavaScript 可能为 `"Object.prototype"` 分配了一个内部对象类型。
 
-JavaScript 教程 - Herong 的教程示例
-
-### 定义自己的对象类型
-
-#### "typeof" 运算符和数据类型
+### "typeof" 运算符和数据类型
 
 本节快速介绍了 `typeof` 运算符和 JavaScript 支持的数据类型。提供了一个教程示例来列出所有数据类型：数字、字符串、布尔、对象、函数和未定义。
 
@@ -4478,9 +4162,7 @@ myBook: object
 Book: function
 ```
 
-JavaScript 教程 - Herong 的教程示例
-
-### ### 通过原型对象链实现属性和方法的继承
+## 通过原型对象链实现属性和方法的继承
 
 本章提供了对象属性和方法继承的介绍和教程示例。主题包括：从构造函数的原型继承属性和方法；回顾内置默认属性和方法；使用 `constructor` 属性；添加本地和继承的属性；覆盖继承的属性。
 
@@ -4493,22 +4175,18 @@ JavaScript 教程 - Herong 的教程示例
 - 在对象级别添加本地方法
 - 在原型级别添加继承方法
 - 构建多级原型对象
-- 原型对象链总结](#part0103.xhtml)
+- 原型对象链总结
 
 **结论：**
 
 - 当定义一个构造函数时，你实际上是在定义一个 `"prototype"` 对象。
- 当 当调用构造函数创建新对象时，你正在从构造函数定义的原型中继承属性和方法。
+- 当调用构造函数创建新对象时，你正在从构造函数定义的原型中继承属性和方法。
 - 你可以随时修改构造函数的原型。
-- 对象从它的原型以及原型的原型继承属性和方法，以此此类推。
+- 对象从它的原型以及原型的原型继承属性和方法，以此类推。
 - 根原型有一些内置的属性和方法：`constructor`、`hasOwnProperty()`、`isPrototypeOf()`、`toString()` 和 `valueOf()`。
 - 属性和方法可以本地添加到单个对象实例中。
 
-JavaScript 教程 - Herong 的教程示例
-
-### ### 通过原型对象链实现属性和方法的继承](#part0093.xhtml)
-
-#### #### 从构造函数的原型对象继承
+### 从构造函数的原型对象继承
 
 本节快速介绍了对象如何从其构造函数的原型对象继承属性和方法。提供了一个教程示例和图表来展示对象、其构造函数以及构造函数的原型对象之间的关系。
 
@@ -4582,17 +4260,7 @@ function showObject(object, name) {
 
 ![](img/image00143.jpeg)
 
-从原型继承
-
-JavaScript 教程 - Herong 的教程示例
-
-### ### 通过原型对象链实现属性和方法的继承](#part0093.xhtml)
-
-#### #### 更改构造函数的原型对象
-
-
-
-
+### 更改构造函数的原型对象
 
 本节简要描述什么是默认原型对象以及如何更改它。文中提供了一个教程示例，用于创建你自己的原型对象并替换默认原型对象。
 
@@ -4602,7 +4270,7 @@ JavaScript 教程 - Herong 的教程示例
 
 为了向你展示如何替换默认的 `prototype` 对象，我编写了以下教程示例，允许 `myBook` 继承我自己创建的原型对象中存储的 `year` 属性：
 
-```javascript
+```html
  <html>
 <!-- Inheritance_Change_Prototype.html
    Copyright (c) HerongYang.com. All Rights Reserved.
@@ -4610,7 +4278,7 @@ JavaScript 教程 - Herong 的教程示例
 <head>
 <title>Changing Prototype Object</title>
 </head>
-<body
+<body>
 <pre>
 <script type="text/javascript">
 
@@ -4669,13 +4337,7 @@ function showObject(object, name) {
 
 ![](img/image00144.jpeg)
 
-# 修改原型对象
-
-JavaScript Tutorials - Herong's Tutorial Examples
-
-∟通过原型对象链继承属性和方法
-
-∟从两级原型对象继承属性
+### 从两级原型对象继承属性
 
 本节简要描述了构造函数的原型对象如何形成两级继承。文中提供了一个教程示例，用于展示对象如何从第一级和第二级原型对象继承属性。
 
@@ -4685,7 +4347,7 @@ JavaScript Tutorials - Herong's Tutorial Examples
 
 为了向你展示这种两级继承，我在下面编写了此教程示例，允许 `myBook` 继承第一级原型中的 `price` 属性和第二级原型中的 `copyright` 属性：
 
-```javascript
+```html
  <html>
 <!-- Inheritance_from_Second_Level_Prototype.html
    Copyright (c) HerongYang.com. All Rights Reserved.
@@ -4757,13 +4419,7 @@ function showObject(object, name) {
 
 ![](img/image00145.jpeg)
 
-# 两级原型继承
-
-JavaScript Tutorials - Herong's Tutorial Examples
-
-∟通过原型对象链继承属性和方法
-
-∟"Object.prototype" 中的内置属性和方法
+### "Object.prototype" 中的内置属性和方法
 
 本节简要描述了 `Object.prototype` 中的内置默认属性和方法。提供了一个教程示例来列出 `Object.prototype` 中的内容。
 
@@ -4779,8 +4435,10 @@ JavaScript Tutorials - Herong's Tutorial Examples
 
 让我们先确认这些属性和方法确实存在于 `Object.prototype` 中。为了做到这一点，我编写了以下教程示例来打印它们的值。注意我 `hasOwnProperty()` 方法来区分
 
+
+
 ```javascript
- <html>
+<html>
 <!-- Inheritance_Built_in_Propertie_and_Method.html
    Copyright (c) HerongYang.com. All Rights Reserved.
 -->
@@ -4821,14 +4479,10 @@ function dumpProperty(object, property) {
 </html>
 ```
 
-
-
-
-
 此教程示例的输出告诉我们，这些属性和方法确实存在并存在于 `Object.prototype` 对象。然而，JavaScript 并不会在所有情况下向我们展示它们的值（即函数的定义）。
 
 ```
- Object.prototype's built-in properties:
+Object.prototype's built-in properties:
    constructor: Local: function Object() {
     [native code]
 }
@@ -4855,9 +4509,9 @@ Object.prototype's added properties:
 
 ## 属性和方法
 
-∟通过原型链继承属性和方法
+### 通过原型链继承属性和方法
 
-### 使用 "hasOwnProperty()" 方法测试属性
+#### 使用 "hasOwnProperty()" 方法测试属性
 
 本节简要描述内置方法 `hasOwnProperty()`。教程示例演示了如何使用 `hasOwnProperty()` 方法来测试属性是对象的本地属性还是继承的。
 
@@ -4930,7 +4584,7 @@ function dumpProperty(object, property) {
 这是该教程示例的输出：
 
 ```
- Object.prototype's built-in properties:
+Object.prototype's built-in properties:
    constructor: Local: function Object() {
     [native code]
 }
@@ -4971,10 +4625,6 @@ myBook's built-in properties:
 
 * 但有一个例外。`Book.prototype` 拥有 `constructor` 的本地副本，指向 `Book()`。这告诉我们 JavaScript 在 `Book.prototype` 中创建了一个本地属性 `constructor`，而不是从 `Object.prototype` 继承而来的。
 
-JavaScript 教程 - Herong 的教程示例
-
-∟通过原型对象链继承属性和方法
-
 ### 在 "prototype" 对象中设置 "constructor" 属性
 
 本节简要描述原型对象中 `constructor` 属性的本地副本。教程示例演示了如果你替换了默认的原型对象，应该如何添加 `constructor` 属性。
@@ -4984,21 +4634,17 @@ JavaScript 教程 - Herong 的教程示例
 换句话说，一个构造函数（例如 `Book()`）和它的默认原型对象之间形成了一个循环引用。以下表达式应该返回 "true"：
 
 ```
- Book === Book.prototype.constructor 
+Book === Book.prototype.constructor
 ```
 
 但如果你用自己的原型对象替换了默认的原型对象，你需要通过类似语句手动添加本地 `constructor` 属性：
 
 ```javascript
- Book.prototype.constructor = Book;
+Book.prototype.constructor = Book;
 ```
 
-
-
-
-
 ```html
- <html>
+<html>
 <!-- Inheritance_prototype_constructor_Property.html
    Copyright (c) HerongYang.com. All Rights Reserved.
 -->
@@ -5063,7 +4709,7 @@ function dumpProperty(object, property) {
 </script>
 </pre>
 </body>
-</</html>
+</html>
 ```
 
 修改后的教程示例的输出与之前相同。但现在我们对属性存储在原型层次树中的位置有了更深入的理解。请看下图：
@@ -5072,23 +4718,20 @@ function dumpProperty(object, property) {
 
 ### 原型对象的 constructor 属性
 
-JavaScript 教程 - Herong 的教程示例
-
-∟通过原型对象链继承属性和方法
-
-### ... 在对象层级添加本地方法
+#### 在对象层级添加本地方法
 
 本节简要描述了如何通过构造函数在所有对象上添加本地方法，或直接在某个对象上添加本地方法。
 
 现在我们对属性和方法如何通过继承路径进行存储和访问有了清晰的认识。我们准备好在对象层级添加本地方法——即在对象本身中，而不是它们的原型对象中。这可以通过两种方式实现：
 
 *   在构造函数中添加本地方法，这样由该构造函数创建的所有对象都将拥有此本地方法。
+
 *   仅为一个对象添加本地方法，这样其他对象将不会此本地方法。
 
 让我们尝试像教程示例所示，在 `Book()` 构造函数中添加一个名为 `getDesc` 的方法：
 
 ```html
- <html>
+<html>
 <!-- Inheritance_Add_Local_Method.html
    Copyright (c) HerongYang.com. All Rights Reserved.
 -->
@@ -5147,13 +4790,13 @@ function dumpProperty(object, property) {
 </script>
 </pre>
 </body>
-</</html>
+</html>
 ```
 
 此教程示例的输出证实了 `getDesc` 是对象层级的本地方法：
 
 ```
- Checking Object.prototype...
+Checking Object.prototype...
    getDesc: Inherited: undefined
 
 Checking Book.prototype...
@@ -5170,25 +4813,19 @@ Running myBook.getDesc()...
 
 请参下一节关于如何在原型层级添加方法。
 
-JavaScript 教程 - Herong 的教程示例
+#### 在原型中添加继承方法
 
-∟通过原型对象链继承属性和方法
-
-
-
-` 开始处截断了），我将根据你提供的格式和要求，对已出现的内容进行翻译。如果后续还有内容，请继续提供完整的文本。
-
-[content]
+本节简要描述了如何在原型对象中添加继承方法。
 
 ```html
- <html>
+<html>
 <!-- Inheritance_Add_Inherited_Method.html
    Copyright (c) HerongYang.com. All Rights Reserved.
 -->
 <head>
 <title>在原型中添加继承方法</title>
 </head>
-<body
+<body>
 <pre>
 <script type="text/javascript">
 
@@ -5252,14 +4889,14 @@ function dumpProperty(object, property) {
 }
 </script>
 </pre>
-</</body>
-</</html>
+</body>
+</html>
 ```
 
 此教程示例的输出确认了 `toString` 是原型层面的继承方法：
 
 ```
- Checking Object.prototype...
+Checking Object.prototype...
    getDesc: Inherited: undefined
    toString: Local: function toString() {
     [native code]
@@ -5279,7 +4916,7 @@ Checking myBook...
     return this.author + "/" + this.title + "/" + this.price;
 }
 
-Running myBook.getDesc()...
+Running myBook.getDesc()....
    "JavaScript Tutorials" by Herong Yang
 
 Running myBook.toString()...
@@ -5290,18 +4927,14 @@ Running myBook.toString()...
 
 ![](img/image00148.jpeg)
 
-JavaScript 教程 - Herong 的教程示例
+#### 构建多级原型对象
 
-∟通过原型对象链继承属性和方法
-
-∟构建多级原型对象
-
-本节提供了一个关于如何构建多级级原型对象的教程示例。它还展示了如何用本地属性覆盖继承属性。
+本节提供了一个关于如何构建多级原型对象的教程示例。它还展示了如何用本地属性覆盖继承属性。
 
 作为通过多级原型对象对象属性继承的总结，我编写了此教程示例，使用 `myBook` 作为原型来定义一个 `EBook` 构造函数：
 
 ```html
- <html
+<html>
 <!-- Inheritance_Multiple_Level_Prototypes.html
    Copyright (c) HerongYang.com. All Rights Reserved.
 -->
@@ -5387,30 +5020,11 @@ function dumpProperty(object, property) {
 </html>
 ```
 
-
-
-
+# 'jrunscript' - 来自 JDK 的 JavaScript 命令行
 
 本章介绍了 JDK 软件包中包含的 JavaScript 命令行命令及其教程示例。主题包括下载和安装 JDK；`jrunscript` 命令中使用的 ECMAScript (JavaScript) 引擎；在命令行中运行 JavaScript 代码；交互模式或批模式。
 
-- 下载和安装 JDK 10
-- "jrunscript" - 脚本命令行及选项
-- 使用 'jrunscript' 运行 JavaScript 代码
-- 交互式使用 'jrunscript' 评估 JavaScript 代码
-- 使用 'jrunscript' 运行 JavaScript 代码文件
-
-### 结论：
-
-- JDK（Java 开发工具包）软件包包含一个名为 `jrunscript` 的 JavaScript 执行工具。
-- 你可以使用 `jrunscript` 命令交互式地运行 JavaScript 代码。
-- 你可以使用 `jrunscript -e` 选项在命令行中运行嵌入 JavaScript 代码。
-- 你可以使用 `jrunscript -f` 命令运行存储在文件中的 JavaScript 代码。
-
-# JavaScript 教程 - Herong 的教程示例
-
-∟'jrunscript' - 来自 JDK 的 JavaScript 命令行
-
-### 下载和安装 JDK 10
+## 下载和安装 JDK 10
 
 本节描述了如何在 Windows 上下载和安装 Java SE 1.6 Update 2。
 
@@ -5421,11 +5035,17 @@ function dumpProperty(object, property) {
 以下是我在 Windows 机器上下载并安装 JDK 10 的步骤：
 
 - 使用此 URL 打开 Java SE 下载页面：`http://www.oracle.com/technetwork/java/javase/downloads/`
+
 - 点击 "Java Platform (JDK) 10" 旁边的下载按钮。你会看到一个列出 JDK 10 不同下载文件的的新页面。
+
 - 接受许可协议。
+
 - 点击 "Windows 390.19 MB" 旁 `jdk-10.0.1_windows-x64_bin.exe` 的链接。
+
 - 将 `jdk-10.0.1_windows-x64_bin.exe` 保存到临时目录。
+
 - 双击 `jdk-10.0.1_windows-x64_bin.exe` 启动安装向导。
+
 - 安装向导将引导你完成安装。
 
 要测试安装，打开命令行窗口尝试 `java` 命令。如果你看到以下输出，说明安装成功：
@@ -5437,11 +5057,7 @@ Java(TM) SE Runtime Environment 18.3 (build 10.0.1+10)
 Java HotSpot(TM) 64-Bit Server VM 18.3 (build 10.0.1+10, mixed mode)
 ```
 
-# JavaScript 教程 - Herong 的教程示例
-
-∟'jrunscript' - 来自 JDK 的 JavaScript 命令行
-
-### "jrunscript" - 脚本命令行及选项
+## "jrunscript" - 脚本命令行及选项
 
 本节描述了脚本 shell `jrunscript` 命令及其选项。默认的脚本引擎是 JavaScript - ECMAScript 1.6 实现版本 'Mozilla Rhino' 1.6 release 2。
 
@@ -5471,30 +5087,24 @@ C:\herong>\progra~1\java\jdk-10.0.1\bin\jrunscript -help
 
 如果存在 `[arguments..]` 且没有使用 `-e` 或 `-f` 选项，则第一个参数为脚本文件，其余参数（如果有）将作为脚本参数传递。如果 `[arguments..]` 且使用了 `-e` 或 `-f` 选项，则...
 
-
-
-
-
 请注意，所有的 `jrunscript` 命令都是在单命令行中输入的。我将它们分成多行，是因为书籍的页面宽度有限。
 
-# JavaScript 教程 - Herong 的教程示例
-
-## ['jrunscript' - JDK 中的 JavaScript 壳命令
-
-### 使用 'jrunscript' 交互式评估 JavaScript 代码
+## 使用 'jrunscript' 交互式评估 JavaScript 代码
 
 本节提供了一个如何使用 `jrunscript` 以交互模式评估 JavaScript 代码的教程示例。每一行都会作为表达式进行评估。结果将打印在屏幕上。
 
 使用 `jrunscript` 运行 JavaScript 代码的另一种方法是使用交互模式。关于使用 `jrunscript` 交互模式的几点注意事项：
 
 - 每一行代码都会立即作为表达式进行评估。
+
 - 每一行代码必须是一个或多个完整的语句。单个语句不能跨行输入。
+
 - 如果单行代码中涉及多个表达式，则最后一个表达式的值会在评估结束时打印在屏幕上。
 
 我对 `jrunscript` 交互模式进行了多次测试，并将其中一些结果记录在下方：
 
 ```
- C:\herong>\progra~1\java\jdk-10.0.1\bin\jrunscript 
+C:\herong>\progra~1\java\jdk-10.0.1\bin\jrunscript
 
 nashorn> println("Hello World!");
 Hello World!
@@ -5521,11 +5131,7 @@ nashorn> println(s);
 js> exit();
 ```
 
-# JavaScript 教程 - Herong 的教程示例
-
-## ['jrunscript' - JDK 中的 JavaScript 壳命令
-
-### 使用 'jrunscript' 运行 JavaScript 代码文件
+## 使用 'jrunscript' 运行 JavaScript 代码文件
 
 本节提供了一个如何使用 `jrunscript` 以批模式运行 JavaScript 代码文件的教程示例。
 
@@ -5533,8 +5139,8 @@ js> exit();
 
 为了测试批模式下的 `jrunscript`，我将我现有的一个 JavaScript Web 页面文件修改为纯 JavaScript 代码文件，`For_Loop_Statements.js`：
 
-```
- // For_Loop_Statements.js
+```javascript
+// For_Loop_Statements.js
 // Copyright (c) HerongYang.com. All Rights Reserved.
 
    var i, j, is_prime;
@@ -5553,7 +5159,7 @@ js> exit();
 注意，我必须将 `document.write()` 方法更改为 `print()` 方法，因为只有在 Web 浏览器中执行脚本时 `document` 对象才可用。以下是我如何使用 `jrunscript` 运行此脚本文件的：
 
 ```
- C:\herong>\progra~1\java\jdk-10.0.1\bin\jrunscript \
+C:\herong>\progra~1\java\jdk-10.0.1\bin\jrunscript \
    -f For_Loop_Statements.js
 
 Found a prime number: 3.
@@ -5567,71 +5173,52 @@ Found a prime number: 23.
 Found a prime number: 29.
 ```
 
-# JavaScript 教程 - Herong 的教程示例
-
-## 将函数作为“函数”对象使用
+# 将函数作为“Function”对象使用
 
 本章介绍了作为对象的函数的教程示例。主题包括内置对象类型 `Function`；使用 `Function()` 构造函数创建函数；函数实例以及继承的属性和方法；`function` 语句和运算符。
 
-- 函数是“Function”类型的对象
-- 使用 Function 构造函数
-- 函数对象的继承属性和方法
-- 函数对象的实例属性
-- 使用 "function" 语句创建函数对象
-- 使用 "function" 运算符创建函数对象
-- 比较创建的三种方法
-
-结论：
-
-- JavaScript 函数实际上是 `Function` 对象类型的实例。
-- 你可以通过调用 `Function` 构造函数来创建一个新函数：`new Function("arg_1", "arg_2", ..., "function_body")`。
-- `Function` 对象具有内置属性和方法：`length`、`apply()`、`call()` 和 `toString()`。
-- 你可以为 `Function` 对象实例添加额外的属性和方法。
-- `function` 语句实际上是 `function` 操作的一个表达式，它返回一个指向新 `Function` 对象的引用。
-
-# JavaScript 教程 - Herong 的教程示例
-
-## 将函数作为“函数”对象使用
-
-### 函数是“Function”类型的对象
+## 函数是“Function”类型的对象
 
 本节提供了 JavaScript 语言一个独特性的概述：函数是 `Function` 类型的对象。
 
 JavaScript 语言一个非常有趣的特性是，函数是 `Function` 对象类型的对象。将函数视为对象可以带来若干编程影响：
 
 - JavaScript 支持一种名为 `Function` 的特殊内置对象类型。
+
 - 可以使用 `Function()` 构造函数创建函数。
+
 - 函数具有继承的属性和方法：`length`、`apply()`、`call()` 和 `toString()`。
+
 - 函数可以有自己的实例属性 - 在多次函数调用之间共享值的一种良好方法。
+
 - 函数可以作为表达式的一部分创建。
+
 - 函数可以作为参数传递给其他函数。
 
 函数可以通过 3 种不同的方式创建：
 
 - 使用 `function` 声明语句 - 以传统方式创建函数。
+
 - 使用 `function` 运算符 - 在评估表达式时作为函数字面量动态创建函数。
+
 - 使用 `Function()` 构造函数 - 以面向对象的方式创建函数。
 
-# JavaScript 教程 - Herong 的教程示例
-
-## 将函数作为“函数”对象使用
-
-### 使用 Function 构造函数
+## 使用 Function 构造函数
 
 本节提供了一个如何使用 `Function` 对象类型构造函数定义新函数的教程示例。
 
 JavaScript 提供了 `Function` 作为内置对象类型。`Function` 类型的构造函数具有以下调用签名：
 
 ```
- new Function("arg_1", "arg_2", ..., "function_body");
+new Function("arg_1", "arg_2", ..., "function_body");
 ```
 
 其中最后一个参数是形成新函数体的语句列表，而所有其他参数都是新函数的参数名称。
 
 下面的教程示例向你展示如何使用 `Function` 对象类型构造函数定义新函数：
 
-```
- // Function_Constructor.js
+```javascript
+// Function_Constructor.js
 // Copyright (c) HerongYang.com. All Rights Reserved.
 
 // 定义一个没有参数的新函数
@@ -5658,32 +5245,32 @@ JavaScript 提供了 `Function` 作为内置对象类型。`Function` 类型的�
 在命令行窗口中使用 `jrunscript` 运行此 JavaScript 文件，你将得到：
 
 ```
- Hello World!
+Hello World!
 Converting Fahrenheit = 212
 Returning Celsius = 100
 Received Celsius = 100
 ```
 
-结论：`Function` 对象类型构造函数是有效的。但它非常难以使用，主要因为新函数的语句必须作为单个字符串字面量输入。这些语句中的所有引号都必须用反斜杠 (\) 进行转义。仍然最好使用 `function` 语句通过传统方式来定义新函数。
+结论：`Function` 对象类型构造函数是有效的。但它非常难以使用，主要因为新函数的语句必须作为单个字符串字面量输入。这些语句中的所有引号都必须用反斜杠 (`\`) 进行转义。仍然最好使用 `function` 语句通过传统方式来定义新函数。
 
-
-
-
-
-# 函数对象的继承属性和方法
+## 函数对象的继承属性和方法
 
 本节提供了一个关于如何使用 `Function` 对象继承的属性和方法的教程示例。
 
 由于函数是 `Function` 类型的对象，因此它具有一些有趣的继承的属性和方法：
 
 - `"length"` - 该属性表示此函数预期的参数个数。
+
 - `"apply()"` - 一个方法，用于在指定的对象上使用数组指定的参数调用（执行）此函数。
+
 - `"call()"` - 一个方法，用于在指定的对象上使用指定的参数调用（执行）此函数。
-- `"toString()"` - 一个方法，将函数的体体作为字符串返回。
+
+- `"toString()"` - 一个方法，将函数的体作为字符串返回。
 
 下面的教程示例向你展示了如何使用 `Function` 对象继承的属性和方法：
 
-``` // Function_Properties_and_Methods.js
+```javascript
+// Function_Properties_and_Methods.js
 // Copyright (c) HerongYang.com. All Rights Reserved.
 
    var sign = new Function("name",
@@ -5712,7 +5299,7 @@ Received Celsius = 100
 在命令行窗口中使用 `jrunscript` 运行此 JavaScript 文件，你将得到：
 
 ```
- Function body:
+Function body:
 function anonymous(name) {
     this.signature = name;
 }
@@ -5725,11 +5312,7 @@ pc.signature: IBM
 
 非常酷。一切都符合我的预期。一个小小的惊喜是，用 `Function` 构造函数创建的函数对象的名称是 "anonymous"。
 
-JavaScript 教程 - Herong 的教程示例
-
-将函数作为“函数”对象使用
-
-# 函数实例属性
+## 函数实例属性
 
 本节提供了一个关于如何使用函数的实例属性在多次函数调用之间共享值的教程示例。
 
@@ -5737,7 +5320,8 @@ JavaScript 教程 - Herong 的教程示例
 
 下面的教程示例向你展示了如何使用函数的实例属性在多次函数调用之间共享值。
 
-``` // Function_Own_Properties.js
+```javascript
+// Function_Own_Properties.js
 // Copyright (c) HerongYang.com. All Rights Reserved.
 
    var sign = new Function("name",
@@ -5764,14 +5348,10 @@ JavaScript 教程 - Herong 的教程示例
 在命令行窗口中使用 `jrunscript` 运行此 JavaScript 文件，你将得到：
 
 ```
- Call counts: 3
+Call counts: 3
 ```
 
-JavaScript 教程 - Herong 的教程示例
-
-将函数作为“函数”对象使用
-
-# 使用 "function" 语句创建函数对象
+## 使用 "function" 语句创建函数对象
 
 本节提供了一个关于如何用 'function' 语句创建函数对象的教程示例，该语句还将将对象赋值给变量。
 
@@ -5780,7 +5360,7 @@ JavaScript 教程 - Herong 的教程示例
 函数也可以用 "function" 语句来创建：
 
 ```
- function function_name(parameter_1, parameter_2, ...) {
+function function_name(parameter_1, parameter_2, ...) {
    statement_1; 
    statement_2;
    ...
@@ -5791,13 +5371,17 @@ JavaScript 教程 - Herong 的教程示例
 "function" 语句实际上执行了 4 件事：
 
 - 创建了一个 `Function` 对象。
+
 - 使用 `"function_name"` 为 `Function` 对象命名。
-- 声明了一个名为 `"fucntion_name"` 的变量。
+
+- 声明了一个名为 `"function_name"` 的变量。
+
 - 将 `Function` 对象赋值给变量 `"function_name"`。
 
 下面的教程示例向你展示了如何使用 "function" 语句来创建 `Function` 对象：
 
-``` // Function_Statements.js
+```javascript
+// Function_Statements.js
 // Copyright (c) HerongYang.com. All Rights Reserved.
 
 // 使用 "function" 语句
@@ -5819,17 +5403,13 @@ function f2c(fahrenheit) {
 在命令行窗口中使用 `jrunscript` 运行此 JavaScript 文件，你将得到：
 
 ```
- # of parameters: 1
+# of parameters: 1
 Converting Fahrenheit = 70
 Returning Celsius = 21.11111111111111
 Received Celsius = 21.11111111111111
 ```
 
-JavaScript 教程 - Herong 的教程示例
-
-将函数作为“函数”对象使用
-
-# 使用 "function" 运算符创建函数对象
+## 使用 "function" 运算符创建函数对象
 
 本节提供了一个关于如何用 'function' 运算符创建函数对象的教程示例。用 'function' 运算符定义的函数也称为函数字面量（function literal）或表达式（function expression）。
 
@@ -5838,7 +5418,7 @@ JavaScript 教程 - Herong 的教程示例
 函数也可以用 "function" 运算符来创建：
 
 ```
- function function_name {
+function function_name {
    statement_1; 
    statement_2;
    ...
@@ -5849,6 +5429,7 @@ JavaScript 教程 - Herong 的教程示例
 "function" 运算符实际上只执行了 2 件事：
 
 - 创建了一个 `Function` 对象。
+
 - 使用 `"function_name"` 为 `Function` 对象命名。如果没有提供名称，则该 `Function` 对象将没有名称。
 
 用 "function" 运算符定义的函数也称为函数字面量或函数表达式。
@@ -5857,7 +5438,8 @@ JavaScript 教程 - Herong 的教程示例
 
 下面的教程示例向你展示了如何使用 "function" 运算符创建 `Function` 对象：
 
-``` // Function_Operator.js
+```javascript
+// Function_Operator.js
 // Copyright (c) HerongYang.com. All Rights Reserved.
 
 // 没有引用变量也没有名称的函数
@@ -5889,35 +5471,29 @@ JavaScript 教程 - Herong 的教程示例
 在命令行窗口中使用 `jrunscript` 运行此 JavaScript 文件，你将得到：
 
 ```
- Banana
+Banana
 Orange
 Hello
 Converting Fahrenheit = 70
 Returning Celsius = 21.11111111111111
 ```
 
-JavaScript 教程 - Herong 的教程示例
-
-将函数作为“函数”对象使用
-
-# 比较创建的三种方法
+## 比较创建的三种方法
 
 本节提供了一个教程示例，用于比较创建函数对象的不同方法：'function' 语句、'function' 运算符和 `Function()` 构造函数。
 
 现在我们知道有 3 种创建函数的方法：
 
 - 使用 "function" 声明语句 - 以传统方式创建函数。
+
 - 使用 "function" 运算符 - 在计算表达式时作为函数字面量动态创建函数。
+
 - 使用 "Function()" 构造函数 - 以面向对象的方式创建函数。
-
-
-
-
 
 下方的教程示例展示了如何通过 3 种不同的创建函数：
 
 ```javascript
- // Function_Creation_Facilities.js
+// Function_Creation_Facilities.js
 // Copyright (c) HerongYang.com. All Rights Reserved.
 
 // 使用 "function" 声明语句创建函数
@@ -5953,45 +5529,17 @@ JavaScript 教程 - Herong 的教程示例
 在命令行窗口中使用 `jrunscript` 此 JavaScript 文件，你将得到：
 
 ```
- Converting Fahrenheit = 70
+Converting Fahrenheit = 70
 Returning Celsius = 21.11111111111111
- Converting Fahrenheit = 70
+Converting Fahrenheit = 70
 Returning Celsius = 21.11111111111111
 Converting Fahrenheit = 70
 Returning Celsius = 21.11111111111111
 ```
 
-JavaScript 教程 - Herong 的教程示例
-
 # 内置对象类型简介
 
 本章快速介绍 JavaScript 内置对象。主题包括全局对象及其宿主环境提供的属性；`Math` 对象及其属性；内置对象类型：`Function`、`Array`、`String`、`Boolean`、`Number`、`Date`、`RegExp` 和 `Error`。
-
-* 内置对象类型概述
-* "Object" 对象类型 - 根对象类型
-* "Global" 对象类型 - 不见的全局容器
-* 在 ECMAScript 中定义的全局属性和函数
-* "jrunscript" 提供的全局属性和函数
-* "Function" 对象类型 - 函数是对象
-* "Array" 对象类型 - 数组是对象
-* "JSON" 对象类型 - `parse()` 和 `stringify()`
-* "String" 对象类型 - 不等于字符串原始类型
-* "Boolean" 对象类型 - 将布尔值封装为对象
-* "Number" 对象类型 - 不等于数字原始类型
-* "Date" 对象类型 - 管理日期和时间
-* "RegExp" 对象类型 - 正则表达式模式
-* "Error" 对象类型 - 运行时异常
-* "Math" 对象类型 - 数学容器
-
-结论：
-
-* JavaScript 规范自 ECMAScript 第 3 版起，支持这些内置对象类型：`Object`、`Global`、`Function`、`Array`、`String`、`Boolean`、`Number`、`Date`、`RegExp`、`Error`、`Math`。
-* "Global" 是一个特殊的对象类型，只有一个没有引用变量的默认实例。但你可以通过全局上下文中的 `this` 关键字访问它。
-* "Global" 对象实例用于持有所有内置属性和方法，如 `undefined`、`eval()` 等。
-
-JavaScript 教程 - Herong 的教程示例
-
-# 内置对象类型简介
 
 ## 内置对象类型概述
 
@@ -6000,50 +5548,67 @@ JavaScript 教程 - Herong 的教程示例
 当前的 Mozilla JavaScript 规范定义了以下内置对象类型：
 
 * `Global`: 一个特殊的对象类型，用于创建一个且仅创建一个对象来持有全局内置属性和函数。注意，ECMAScript 仅支持一个 `Global` 类型的单一对象。不允许使用 `Global()` 构造函数创建其他 Global 对象。
+
 * `Object`: 对象类型树中的根对象类型。所有其他对象类型都继承自 `Object` 对象类型。
+
 * `Function`: 用于创建函数的对象类型。所有函数都是 `Function` 对象类型的实例。
+
 * `Boolean`: 用于创建 `Boolean` 对象的对象类型。`Boolean` 对象类型允许将布尔原始值作为对象处理。
+
 * `Symbol`: 用于存储所有可能用 `Object` 属性键的非字符串值的对象类型。
+
 * `Error`、`AggregateError`、`EvalError`、`InternalError`、`RangeError`、`ReferenceError`、`SyntaxError`、`TypeError`、`URIError`: 用于异常处理过程中错误对象的对象类型。
-* `Number`: 用于创建数字对象的对象类型。`Boolean` 对象类型允许将数字原始值作为对象处理。（注：此处原文可能有误，应为 Number）
+
+* `Number`: 用于创建数字对象的对象类型。`Number` 对象类型允许将数字原始值作为对象处理。
+
 * `BigInt`: 用于创建大于 `2⁵³ - 1` 的整数的对象类型。
+
 * `Math`: 一个特殊的对象类型，用于创建一个且仅创建一个对象来持有数学相关的属性和函数。
+
 * `Date`: 用于创建日期和时间对象的对象类型。
+
 * `String`: 用于创建字符串对象的对象类型。`String` 对象类型允许将字符串原始值作为对象处理。
+
 * `RegExp`: 用于文本处理正则表达式对象的对象类型。
+
 * `Array`、`Int8Array`、`Uint8Array`、`Uint8ClampedArray`、`Int16Array`、`Uint16Array`、`Int32Array`、`Uint32Array`、`Float32Array`、`Float64Array`、`BigInt64Array`、`BigUint64Array`: 用于创建数组的对象类型。所有数组都是 `Array` 类型的对象。
+
 * `Map`: 用于存储键值对并记住键的原始插入顺序的对象类型。任何值（对象和原始值）都可以作为键或值。
+
 * `Set`: 用于存储任何类型的唯一值（无论是原始值还是对象引用）的对象类型。
+
 * `ArrayBuffer`、`SharedArrayBuffer`、`Atomics`、`DataView`: 用于表示通用固定长度原始二进制数据的对象类型。
+
 * `JSON`: 用于解析 JavaScript 对象表示法 (JSON) 和将值转换为 JSON 的对象类型。
+
 * `Promise`: 用于表示异步操作最终完成（或失败）及其结果值的对象类型。
+
 * `Generator`、`GeneratorFunction`: 生成器函数返回对象的对象类型。
-* `AsyncFunction`: 创建异步异步函数的对象类型。在 JavaScript 中，每个异步函数实际上都是 `AsyncFunction` 对象。
+
+* `AsyncFunction`: 创建异步函数的对象类型。在 JavaScript 中，每个异步函数实际上都是 `AsyncFunction` 对象。
+
 * `Reflect`: 提供可拦截的 JavaScript 操作方法的对象类型。这些方法与代理处理器（proxy handlers）的方法相同。`Reflect` 不是函数对象，因此不可构造的。
+
 * `Proxy`: 用于为基本操作（例如属性查找、赋值、枚举、函数调用等）定义自定义行为的对象类型。
 
 查看后续章节以获取上述某些内置对象类型的快速介绍。
 
-JavaScript 教程 - Herong 的教程示例
-
-# "Object" 对象类型 - 根对象类型
+## "Object" 对象类型 - 根对象类型
 
 本节提供了 `Object` 内置对象类型的快速描述和教程示例脚本，它是所有其他对象类型的根或基对象类型。
 
 "Object" 对象类型可能是最重要的内置对象类型。它具有以下主要特征：
 
 * `Object` 是对象类型树中的根（或基）对象类型。所有其他对象类型都继承自 `Object` 对象类型。
+
 * `Object` 对象可以通过 `Object()` 构造函数创建。
+
 * `Object` 对象也可以通过对象字面量创建：`{property: value, ...}`。
 
 这是一个教程示例脚本，向你展示了其中一些特征：
 
-
-
-
-
-```
- // Object_Object_Type.js
+```javascript
+// Object_Object_Type.js
 // Copyright (c) HerongYang.com. All Rights Reserved.
 
    // 创建一个 "Object" 类型的对象
@@ -6086,7 +5651,7 @@ function Book(title, author) {
 如果你使用 `jrunscript` 运行此脚本，将得到：
 
 ```
- About the myObject:
+About the myObject:
    Type: object
    Instance Of Object: true
    Properties:
@@ -6107,10 +5672,6 @@ About the myBook:
 
 阅读其他与 "Object" 相关的章节查看更多教程示例。
 
-JavaScript 教程 - Herong 的教程示例
-
-∟内置对象类型介绍
-
 ## "Global" 对象类型 - 不见的全局容器
 
 本节提供了 `Global` 内置对象类型的简要描述和一个教程示例脚本，该类型用于创建一个默认的不可见全局对象，以存储所有的全局属性和函数。
@@ -6118,16 +5679,21 @@ JavaScript 教程 - Herong 的教程示例
 "Global" 对象可能是最神秘的内置对象类型。它具有以下主要特征：
 
 - "Global" 是一个保留对象类型。你不能创建自己的 "Global" 对象。`Global()` 构造函数是不可用的。
+
 - 主环境会创建一个默认的 "Global" 对象，它没有赋值给任何引用变量。因此这个 "Global" 对象是不可见的。
+
 - 然而，通过使用 `this` 关键字，可以在全局执行上下文（任何函数之外）看到这个不可见的 "Global" 对象。
+
 - 你可以使用表达式 `this instanceof Global` 来检查 `this` 的对象类型，因为 `Global()` 是不可用的。
+
 - 创建 "Global" 对象是为了存储主环境提供的所有内置属性和函数，例如 `NaN`、`eval()` 等。
+
 - 从技术上讲，内置属性或函数都定义为 "Global" 对象的属性。但你可以直接使用它们，而无需引用 `Global` 对象。
 
-这里有一个显示其中一些特的教程示例脚本：
+这里有一个显示其中一些特征的教程示例脚本：
 
-```
- // Global_Object_Type.js
+```javascript
+// Global_Object_Type.js
 // Copyright (c) HerongYang.com. All Rights Reserved.
 
    // Global() 构造函数不可用 
@@ -6162,7 +5728,7 @@ JavaScript 教程 - Herong 的教程示例
 如果你使用 `jrunscript` 运行此脚本，将得到：
 
 ```
- About this "this":
+About this "this":
    Type = object
    Instance Of Object: true
    toString() = [object Global]
@@ -6180,43 +5746,64 @@ Testing eval() in two ways:
 
 `this.toString()` 证明 `this` 是一个 `Global` 对象。
 
-JavaScript 教程 - Herong 的教程示例
-
-∟内置对象类型介绍
-
 ## ECMAScript 中定义的全局属性和函数
 
 本节提供了 ECMAScript 规范中提到的所有全局属性和函数的简要描述。
 
 在 ECMAScript 规范中提到的不可见 "Global" 对象中，有 3 个包含原始值的内置全局属性：
 
-- "NaN" - 全局属性，持有特殊的数字值：`NaN`（非数字）。
-- "Infinity" - 全局属性，持有特殊的数字值：`Infinity`（无穷大）。
-- "undefined" - 全局属性，持有未定义值：`undefined`。
+- `NaN` - 全局属性，持有特殊的数字值：`NaN`（非数字）。
+
+- `Infinity` - 全局属性，持有特殊的数字值：`Infinity`（无穷大）。
+
+- `undefined` - 全局属性，持有未定义值：`undefined`。
 
 在 ECMAScript 规范中提到的不可见 "Global" 对象中，包含 9 个常规内置全局函数：
 
 - `eval(x)` - 将指定的字符串作为 JavaScript 表达式求值并返回结果。
+
 - `parseInt(string, radix)` - 根据指定的基数解释字符串参数的内容，产生一个整数值。
+
 - `parseFloat(string)` - 根据对字符串参数内容作为十进制字面量的解释，产生一个数值。
+
 - `isNaN(number)` - 如果指定的数字是 `NaN` 则返回 `true`。
+
 - `isFinite(number)` - 如果指定的数字是有限数字，则返回 `true`。
+
 - `decodeURI(encodedURI)` - 将编码的 URI 字符串解码回 URI 字符串。
+
 - `decodeURIComponent(encodedURIComponent)` - 将编码的 URI 组件字符串解码回 URI 组件字符串。
-- `encodeURI(uri)` - 通过将除以下字符的所有字符（字母、数字、- _ . ! ~ * ' ( ) # ; , / ? : @ & = = + $）替换为转义序列，对 URI 字符串进行编码。
+
+- `encodeURI(uri)` - 通过将除以下字符的所有字符（字母、数字、- _ . ! ~ * ' ( ) # ; , / ? : @ & = + $）替换为转义序列，对 URI 字符串进行编码。
+
 - `encodeURIComponent(uriComponent)` - 通过将除以下字符的所有字符（字母、数字、- _ . ! ~ * ' ( )）替换为转义序列，对 URI 组件字符串进行编码。
 
 在 ECMAScript 规范中提到的不可见 "Global" 对象中，包含 9 个特殊的内置全局函数。这些函数实际上是内置对象类型的构造函数：
 
 - `Object()` - Object 类型的构造函数。
+
 - `Function(...)` - Function 类型的构造函数。
+
 - `Array(...)` - Array 类型的构造函数。
+
 - `String(...)` - String 类型的构造函数。
+
 - `Boolean(...)` - Boolean 类型的构造函数。
+
 - `Number(...)` - Number 类型的构造函数。
+
 - `Date(...)` - Date 类型的构造函数。
-- `RegExp(...)` - RegExp 类型的构造函数。
-- `Error(...)` - Error 类型的构造函数。
+
+
+
+# JavaScript 教程 - Herong 的教程示例
+
+## 内置对象类型介绍
+
+### ECMAScript 规范中的全局属性和函数
+
+- `RegExp(...)` - `RegExp` 类型的构造函数。
+- `Error(...)` - `Error` 类型的构造函数。
 
 在 ECMAScript 规范中提到的不可见 "Global" 对象中，包含 1 个带有对象值的全局属性：
 
@@ -6224,53 +5811,49 @@ JavaScript 教程 - Herong 的教程示例
 
 为了验证这些全局属性和函数，我编写了这个简单的脚本：
 
-
-
-
-
 ```javascript
- // Global_Object_Properties.js
+// Global_Object_Properties.js
 // Copyright (c) HerongYang.com. All Rights Reserved.
 
-   println("\nGlobal primitive-value properties:");
-   println("   NaN: Type = "+(typeof this.NaN) 
-      + ", Value = "+this.NaN);
-   println("   Infinity: Type = "+(typeof this.Infinity) 
-      + ", Value: "+this.Infinity);
-   println("   undefined: Type = "+(typeof this.undefined) 
-      + ", Value = "+this.undefined);
+println("\nGlobal primitive-value properties:");
+println("   NaN: Type = "+(typeof this.NaN)
+   + ", Value = "+this.NaN);
+println("   Infinity: Type = "+(typeof this.Infinity)
+   + ", Value: "+this.Infinity);
+println("   undefined: Type = "+(typeof this.undefined)
+   + ", Value = "+this.undefined);
 
-   println("\nGlobal functions:");
-   println("   eval: Value = "+this.eval);
-   println("   parseInt: Value = "+this.parseInt);
-   println("   parseFloat: Value = "+this.parseFloat);
-   println("   isNaN: Value = "+this.isNaN);
-   println("   isFinite: Value = "+this.isFinite);
-   println("   decodeURI: Value = "+this.decodeURI);
-   println("   decodeURIComponent: Value = "+this.decodeURIComponent);
-   println("   encodeURI: Value = "+this.encodeURI);
-   println("   encodeURIComponent: Value = "+this.encodeURIComponent);
+println("\nGlobal functions:");
+println("   eval: Value = "+this.eval);
+println("   parseInt: Value = "+this.parseInt);
+println("   parseFloat: Value = "+this.parseFloat);
+println("   isNaN: Value = "+this.isNaN);
+println("   isFinite: Value = "+this.isFinite);
+println("   decodeURI: Value = "+this.decodeURI);
+println("   decodeURIComponent: Value = "+this.decodeURIComponent);
+println("   encodeURI: Value = "+this.encodeURI);
+println("   encodeURIComponent: Value = "+this.encodeURIComponent);
 
-   println("\nGlobal constructors:");
-   println("   Object: Value = "+this.Object);
-   println("   Function: Value = "+this.Function);
-   println("   Array: Value = "+this.Array);
-   println("   String: Value = "+this.String);
-   println("   Boolean: Value = "+this.Boolean);
-   println("   Number: Value = "+this.Number);
-   println("   Date: Value = "+this.Object);
-   println("   RegExp: Value = "+this.RegExp);
-   println("   Error: Value = "+this.Error);
+println("\nGlobal constructors:");
+println("   Object: Value = "+this.Object);
+println("   Function: Value = "+this.Function);
+println("   Array: Value = "+this.Array);
+println("   String: Value = "+this.String);
+println("   Boolean: Value = "+this.Boolean);
+println("   Number: Value = "+this.Number);
+println("   Date: Value = "+this.Date);
+println("   RegExp: Value = "+this.RegExp);
+println("   Error: Value = "+this.Error);
 
-   println("\nGlobal object-value property:");
-   println("   Math: Type = "+(typeof this.Math) 
-      + ", Value = "+this.Math);
+println("\nGlobal object-value property:");
+println("   Math: Type = "+(typeof this.Math)
+   + ", Value = "+this.Math);
 ```
 
 如果你使用 `jrunscript` 运行此脚本，将得到：
 
 ```
- Global primitive-value properties:
+Global primitive-value properties:
    NaN: Type = number, Value = NaN
    Infinity: Type = number, Value = Infinity
    undefined: Type = undefined, Value = undefined
@@ -6293,7 +5876,7 @@ Global constructors:
    String: Value = function String() { [native code
    Boolean: Value = function Boolean() { [native code
    Number: Value = function Number() { [native code
-   Date: Value = function Object() { [native code
+   Date: Value = function Date() { [native code
    RegExp: Value = function RegExp() { [native code
    Error: Value = function Error() { [native code
 
@@ -6303,39 +5886,35 @@ Global object-value property:
 
 这证实了 `jrunscript` 支持 `ECMAScript` 规范中提到的所有全局属性和函数。
 
-# JavaScript 教程 - Herong 的教程示例
-
-## 内置对象类型介绍
-
 ### "jrunscript" 提供的全局属性和函数
 
-本节提供了 `jrunscript` 宿环境提供的所有额外全局属性和函数的快速描述。
+本节提供了 `jrunscript` 宿主环境提供的所有额外全局属性和函数的快速描述。
 
 除了 `ECMAScript` 规范中定义的全局属性和函数外，每个 JavaScript 实现都可能向不可见的 `Global` 对象中添加自己的全局属性和函数。
 
 这里是一个教程示例脚本，它列出了 JavaScript 实现提供的所有全局属性和函数：
 
 ```javascript
- // Global_Object_Properties_jrunscript.js
+// Global_Object_Properties_jrunscript.js
 // Copyright (c) HerongYang.com. All Rights Reserved.
 
-   println("\nList of global properties:");
-   for (item in this) {
-      println("   "+item+": "+this[item]);
-   }
+println("\nList of global properties:");
+for (item in this) {
+   println("   "+item+": "+this[item]);
+}
 ```
 
 如果你使用 `jrunscript` 运行此脚本，将得到一个包含 59 个属性和函数的列表。全局函数的函数体也列在输出中。以下是一些示例：
 
 ```
- List of global properties:
+List of global properties:
    ...
 
    javax.script.filename: Global_Object_Properties_jrunscript.js
 
    months: Jan,Feb,Mar,Apr,May,Jun,Jul,Aug,Sep,Oct,Nov,Dec
 
-   cp: 
+   cp:
 function cp(from, to) {
     if (from == to) {
         println("file " + from + " cannot be copied onto itself!");
@@ -6355,7 +5934,7 @@ function cp(from, to) {
     streamClose(out);
 }
 
-   read: 
+   read:
 function read(prompt, multiline) {
     if (!prompt) {
         prompt = ">";
@@ -6381,7 +5960,7 @@ function read(prompt, multiline) {
     }
 }
 
-   print: 
+   print:
 function print(str, newline) {
     if (typeof (str) == "undefined") {
         str = "undefined";
@@ -6398,7 +5977,7 @@ function print(str, newline) {
     out.flush();
 }
 
-   println: 
+   println:
 function println(str) {
     print(str, true);
 }
@@ -6407,10 +5986,6 @@ function println(str) {
 ```
 
 现在我们知道了 `println()` 在 `jrunscript` 中是如何实现的。
-
-# JavaScript 教程 - Herong 的教程示例
-
-## 内置对象类型介绍
 
 ### "Function" 对象类型 - 函数也是对象
 
@@ -6431,47 +6006,43 @@ function function_name { statement_1; statement_2; ... return return_expression 
 
 这里是一个展示其中一些特性的教程示例脚本：
 
-
-
-
-
 ```javascript
- // Function_Object_Type.js
+// Function_Object_Type.js
 // Copyright (c) HerongYang.com. All Rights Reserved.
 
-   // 使用 "Function()" 构造创建一个新函数
-   var sign = new Function("name",
-      "this.signature = name;"
-      + "sign.count++;"
-   )
+// 使用 "Function()" 构造创建一个新函数
+var sign = new Function("name",
+   "this.signature = name;"
+   + "sign.count++;"
+)
 
-   // 为函数添加一个实例属性
-   sign.count = 0;
+// 为函数添加一个实例属性
+sign.count = 0;
 
-   // 检查此对象
-   println("\nAbout this \"sign\":");
-   println("   Type = "+(typeof sign));
-   println("   Instance Of Object: "+(sign instanceof Object));
-   println("   Instance Of Function: "+(sign instanceof Function));
+// 检查此对象
+println("\nAbout this \"sign\":");
+println("   Type = "+(typeof sign));
+println("   Instance Of Object: "+(sign instanceof Object));
+println("   Instance Of Function: "+(sign instanceof Function));
 
-   // 在当前对象上执行
-   sign("Herong");
+// 在当前对象上执行
+sign("Herong");
 
-   // 在另一个对象上调用
-   var pc = new Object();
-   sign.call(pc, "IBM");
+// 在另一个对象上调用
+var pc = new Object();
+sign.call(pc, "IBM");
 
-   // 检查签名
-   println("\nExecution result:");
-   println("   this.signature = " + this.signature);
-   println("   pc.signature = " + pc.signature);
-   println("   # of calls = " + sign.count);
+// 检查签名
+println("\nExecution result:");
+println("   this.signature = " + this.signature);
+println("   pc.signature = " + pc.signature);
+println("   # of calls = " + sign.count);
 ```
 
 如果你使用 `jrunscript` 运行此脚本，你将得到：
 
 ```
- About this "sign":
+About this "sign":
    Type = function
    Instance Of Object: true
    Instance Of Function: true
@@ -6486,58 +6057,54 @@ Execution result:
 
 阅读其他关于 "Function" 的章节以查看更多教程示例。
 
-JavaScript Tutorials - Herong's Tutorial Examples
-
-∟内置对象类型介绍
-
-## "Array" 对象类型 - 数组是对象
+### "Array" 对象类型 - 数组是对象
 
 本节提供了关于 `Array` 内置对象类型的简要描述和教程示例脚本，该类型用于创建数组。
 
 `Array` 对象类型是一种特殊的内置对象类型，用于创建新数组。它具有以下主要特征：
 
--   可以使用 `Array()` 构造函数创建新数组。
--   所有的 `Array` 对象都拥有一个名为 `length` 的继承属性，表示数组的元素个数。
--   所有的 `Array` 对象都有许多继承的方法：`reverse()`、`sort()`、`indexOf()`、`push()`、`pop()`、`shift()` 等。
--   数组中的所有元素实际上都是以索引为属性名的属性。
--   可以使用数组字面量 `[elements...]` 创建 `Array` 对象。
--   可以使用 `Array` 函数 `Array(elements...)` 创建 `Array` 对象。
+- 可以使用 `Array()` 构造函数创建新数组。
+- 所有的 `Array` 对象都拥有一个名为 `length` 的继承属性，表示数组的元素个数。
+- 所有的 `Array` 对象都有许多继承的方法：`reverse()`、`sort()`、`indexOf()`、`push()`、`pop()`、`shift()` 等。
+- 数组中的所有元素实际上都是以索引为属性名的属性。
+- 可以使用数组字面量 `[elements...]` 创建 `Array` 对象。
+- 可以使用 `Array` 函数 `Array(elements...)` 创建 `Array` 对象。
 
 以下是一个展示了其中一些特征的教程示例脚本：
 
 ```javascript
- // Array_Object_Type.js
+// Array_Object_Type.js
 // Copyright (c) HerongYang.com. All Rights Reserved.
 
-   // 创建新数组
-   var colors = new Array("Red", "Green", "Blue");
+// 创建新数组
+var colors = new Array("Red", "Green", "Blue");
 
-   // 检查此对象
-   println("\nAbout this \"colors\":");
-   println("   Type = "+(typeof colors));
-   println("   Instance Of Object: "+(colors instanceof Object));
-   println("   Instance Of Array: "+(colors instanceof Array));
+// 检查此对象
+println("\nAbout this \"colors\":");
+println("   Type = "+(typeof colors));
+println("   Instance Of Object: "+(colors instanceof Object));
+println("   Instance Of Array: "+(colors instanceof Array));
 
-   println("\nList of array properties:");
-   for (item in colors) {
-      println("   "+item+" = "+colors[item]);
-   }
+println("\nList of array properties:");
+for (item in colors) {
+   println("   "+item+" = "+colors[item]);
+}
 
-   // 使用数组继承的属性和方法
-   colors.push("Yellow");
-   colors.sort();
+// 使用数组继承的属性和方法
+colors.push("Yellow");
+colors.sort();
 
-   // 通过索引访问元素
-   println("\nAfter push() and sort():");
-   for (var i=0; i<colors.length; i++) {
-      println("   "+i+" = "+colors[i]);
-   }
+// 通过索引访问元素
+println("\nAfter push() and sort():");
+for (var i=0; i<colors.length; i++) {
+   println("   "+i+" = "+colors[i]);
+}
 ```
 
 如果你使用 `jrunscript` 运行此脚本，你将得到：
 
 ```
- About this "colors":
+About this "colors":
    Type = object
    Instance Of Object: true
    Instance Of Array: true
@@ -6558,11 +6125,7 @@ After push() and sort():
 
 阅读其他关于 "Array" 的章节以查看更多教程示例。
 
-JavaScript Tutorials - Herong's Tutorial Examples
-
-∟内置对象类型介绍
-
-## "JSON" 对象类型 - parse() 和 stringify
+### "JSON" 对象类型 - parse() 和 stringify
 
 本节提供了关于 `JSON` 内置对象类型的简要描述和教程示例脚本，该类型用于解析 JSON 字符串以创建 JavaScript 结构化值，并将 JavaScript 结构化值转换为 JSON 字符串。
 
@@ -6574,7 +6137,7 @@ JavaScript Tutorials - Herong's Tutorial Examples
 以下是一个 JavaScript 代码示例 `JSON.html`，它向你展示如何使用内置的 `JSON` 对象：
 
 ```html
- <html>
+<html>
 <body>
 <script type="text/javascript">
    var object = {"msg":"Hello World!"};
@@ -6591,74 +6154,66 @@ JavaScript Tutorials - Herong's Tutorial Examples
 </html>
 ```
 
-在 浏览器中打开此示例 `JSON.html`。你会看到以下内容：
+在浏览器中打开此示例 `JSON.html`。你会看到以下内容：
 
 ```
- JSON text string from JSON.stringify():
+JSON text string from JSON.stringify():
    str = {"msg":"Hello World!"}
 
 Value from JSON.parse():
    val.msg = Hello World!
 ```
 
-JavaScript Tutorials - Herong's Tutorial Examples
-
-∟内置对象类型介绍
-
-## "String" 对象类型 - 不等于字符串原始类型
+### "String" 对象类型 - 不等于字符串原始类型
 
 本节提供了关于 `String` 内置对象类型的简要描述和教程示例脚本，该类型用于创建 `String` 对象。注意：`String` 对象不是字符串值。
 
 `String` 对象类型是一种特殊的内置对象类型，用于创建 `String` 对象，这与字符串原始类型的字符串值不同。它具有以下主要特征：
 
--   可以使用 `String()` 构造函数创建新的 `String` 对象。注意 `String()` 也是一个普通函数，返回的是字符串值而不是 `String` 对象。
--   所有的 `String` 对象都拥有一个名为 `length` 的继承属性，表示字符串的字符个数。
--   所有的 `String` 对象都有许多继承的方法：`toString()`、`charAt()`、`charCodeAt()`、`concat()`、`indexOf()` 等。访问这些继承方法是使用 `String` 对象而不是字符串值的主要原因。
--   字符串字面量 `"..."` 创建的是字符串值，而不是 `String` 对象。
--   可以使用 `.` 运算符临时将字符串值转换为 `String` 对象，例如：`"string".length`。
+- 可以使用 `String()` 构造函数创建新的 `String` 对象。注意 `String()` 也是一个普通函数，返回的是字符串值而不是 `String` 对象。
+- 所有的 `String` 对象都拥有一个名为 `length` 的继承属性，表示字符串的字符个数。
+- 所有的 `String` 对象都有许多继承的方法：`toString()`、`charAt()`、`charCodeAt()`、`concat()`、`indexOf()` 等。访问这些继承方法是使用 `String` 对象而不是字符串值的主要原因。
+- 字符串字面量 `"..."` 创建的是字符串值，而不是 `String` 对象。
+- 可以使用 `.` 运算符临时将字符串值转换为 `String` 对象，例如：`"string".length`。
 
 以下是一个展示了其中一些特征的教程示例脚本：
 
 ```javascript
- // String_Object_Type.js
+// String_Object_Type.js
 // Copyright (c) HerongYang.com. All Rights Reserved.
 
-   // 创建一个新的新的 String 对象
-   var message = new String("Hello World!");
+// 创建一个新的 String 对象
+var message = new String("Hello World!");
 
-   // 检查此对象
-   println("\nAbout this \"message\":");
-   println("   Type = "+(typeof message));
-   println("   Instance Of Object: "+(message instanceof Object));
-   println("   Instance Of String: "+(message instanceof String));
+// 检查此对象
+println("\nAbout this \"message\":");
+println("   Type = "+(typeof message));
+println("   Instance Of Object: "+(message instanceof Object));
+println("   Instance Of String: "+(message instanceof String));
 
-   // 使用 String 继承的属性和方法
-   var upperMessage = message.toUpperCase();
-   var l = message.length;
-   var subMessage = message.substring(0,l-7);
+// 使用 String 继承的属性和方法
+var upperMessage = message.toUpperCase();
+var l = message.length;
+var subMessage = message.substring(0,l-7);
 
-   println("\nExecution result:");
-   println("   typeof message = "+(typeof message));
-   println("   message.toString() = "+message.toString());
-   println("   typeof upperMessage = "+(typeof upperMessage));
-   println("   upperMessage = "+upperMessage);
-   println("   typeof subMessage = "+(typeof subMessage));
-   println("   subMessage = "+subMessage);
+println("\nExecution result:");
+println("   typeof message = "+(typeof message));
+println("   message.toString() = "+message.toString());
+println("   typeof upperMessage = "+(typeof upperMessage));
+println("   upperMessage = "+upperMessage);
+println("   typeof subMessage = "+(typeof subMessage));
+println("   subMessage = "+subMessage);
 
-   println("\nConverting to String objects on the fly:");
-   println("   \"...\".length = "+("Hello World!".length));
-   println("   \"...\".toUpperCase() = "
-      +("Hello World!".toUpperCase()));
+println("\nConverting to String objects on the fly:");
+println("   \"...\".length = "+("Hello World!".length));
+println("   \"...\".toUpperCase() = "
+   +("Hello World!".toUpperCase()));
 ```
 
 如果你使用 `jrunscript` 运行此脚本，你将得到：
 
-
-
-
-
 ```
- About this "message":
+About this "message":
    Type = object
    Instance Of Object: true
    Instance Of String: true
@@ -6680,54 +6235,50 @@ Converting to String objects on the fly:
 
 阅读与其他 "String" 相关的章节查看更多教程示例。
 
-JavaScript 教程 - Herong 的 教程示例
+### "Boolean" 对象类型 - 将布尔值封装成对象
 
-∟内置对象类型介绍
+本节提供了关于 `Boolean` 内置对象的简要描述以及一个教程示例脚本，该类型用于创建 `Boolean` 对象。
 
-## "Boolean" 对象类型 - 将布尔值封装成对象
+`Boolean` 对象类型是一种特殊的内置对象类型，用于创建 `Boolean` 对象，它与 Boolean 原始类型的 Boolean 值不同。它具有以下主要特征：
 
-本节提供了关于 'Boolean' 内置对象的简要描述以及一个教程示例脚本，该类型用于创建 'Boolean' 对象。
-
-"Boolean" 对象类型是一种特殊的内置对象类型，用于创建 "Boolean" 对象，它与 Boolean 原始类型的 Boolean 值不同。它具有以下主要特征：
-
--   可以使用 `Boolean()` 构造函数创建新的 "Boolean" 对象。注意 `Boolean()` 也是一个普通函数，它返回一个布尔值，而不是 "Boolean" 对象。
--   所有 "Boolean 对象"都有 2 个继承的方法：`toString()` 和 `valueOf()`。
--   可以使用 `.` 运算符临时地将字符串值转换为 "Boolean" 对象，例如：`(2>1).toString()`。
--   "Boolean" 对象类型用于将布尔值封装成对象。使用 "Boolean" 对象没有其他好处。
+- 可以使用 `Boolean()` 构造函数创建新的 `Boolean` 对象。注意 `Boolean()` 也是一个普通函数，它返回一个布尔值，而不是 `Boolean` 对象。
+- 所有 `Boolean` 对象都有 2 个继承的方法：`toString()` 和 `valueOf()`。
+- 可以使用 `.` 运算符临时地将布尔值转换为 `Boolean` 对象，例如：`(2>1).toString()`。
+- `Boolean` 对象类型用于将布尔值封装成对象。使用 `Boolean` 对象没有其他好处。
 
 这里是一个显示其中一些特征的教程示例脚本：
 
-```
- // Boolean_Object_Type.js
+```javascript
+// Boolean_Object_Type.js
 // Copyright (c) HerongYang.com. All Rights Reserved.
 
-   // 创建一个新的 Boolean 对象
-   var isBetter = new Boolean("JavaScript">"Java");
+// 创建一个新的 Boolean 对象
+var isBetter = new Boolean("JavaScript">"Java");
 
-   // 检查此对象
-   println("\nAbout this \"isBetter\":");
-   println("   Type = "+(typeof isBetter));
-   println("   Instance Of Object: "+(isBetter instanceof Object));
-   println("   Instance Of Boolean: "+(isBetter instanceof Boolean));
+// 检查此对象
+println("\nAbout this \"isBetter\":");
+println("   Type = "+(typeof isBetter));
+println("   Instance Of Object: "+(isBetter instanceof Object));
+println("   Instance Of Boolean: "+(isBetter instanceof Boolean));
 
-   // 使用 Boolean 继承的方法
-   var v = isBetter.valueOf();
-   var s = isBetter.toString();
+// 使用 Boolean 继承的方法
+var v = isBetter.valueOf();
+var s = isBetter.toString();
 
-   println("\nExecution result:");
-   println("   typeof isBetter = "+(typeof isBetter));
-   println("   typeof isBetter.valueOf() = "+(typeof v));
-   println("   typeof isBetter.toString() = "+(typeof s));
+println("\nExecution result:");
+println("   typeof isBetter = "+(typeof isBetter));
+println("   typeof isBetter.valueOf() = "+(typeof v));
+println("   typeof isBetter.toString() = "+(typeof s));
 
-   println("\nConverting to Boolean objects on the fly:");
-   println("   \"...\".toString() = "
-      +(("JavaScript">"Java").toString()));
+println("\nConverting to Boolean objects on the fly:");
+println("   \"...\".toString() = "
+   +(("JavaScript">"Java").toString()));
 ```
 
 如果你用 `jrunscript` 运行此脚本，将得到：
 
 ```
- About this "isBetter":
+About this "isBetter":
    Type = object
    Instance Of Object: true
    Instance Of Boolean: true
@@ -6743,62 +6294,58 @@ Converting to Boolean objects on the fly:
 
 现在我们知道如何使用 `Boolean()` 构造函数来创建 "Boolean" 对象了。
 
-JavaScript 教程 - Herong 的 教程示例
+### "Number" 对象类型 - 不等于 Number 原始类型
 
-∟内置对象类型介绍
+本节提供了关于 `Number` 内置对象的简要描述以及一个教程示例脚本，该类型用于创建 `Number` 对象。
 
-## "Number" 对象类型 - 不等于 Number 原始类型
+`Number` 对象类型是一种特殊的内置对象类型，用于创建 `Number` 对象，它与 Number 原始类型的 Number 值不同。它具有以下主要特征：
 
-本节提供了关于 'Number' 内置对象的简要描述以及一个教程示例脚本，该类型用于创建 'Number' 对象。
-
-"Number" 对象类型是一种特殊的内置对象类型，用于创建 "Number" 对象，它与 Number 原始类型的 Number 值不同。它具有以下主要特征：
-
--   可以使用 `Number()` 构造函数创建新的 "Number" 对象。注意 `Number()` 也是一个普通函数，它返回一个 Number 值，而不是 "Number" 对象。
--   所有 "Number 对象"都有多个继承的方法：`toString()`、`valueOf()`、`toFixed()` 等。
--   可以使用 `.` 运算符临时地将数字值转换为 "Number" 对象，例如：`(2/3).toFixed(2)`。
--   `Number` 构造函数提供了自己的属性：`Number.MAX_VALUE`、`Number.MIN_VALUE` 等。
+- 可以使用 `Number()` 构造函数创建新的 `Number` 对象。注意 `Number()` 也是一个普通函数，它返回一个 Number 值，而不是 `Number` 对象。
+- 所有 `Number` 对象都有多个继承的方法：`toString()`、`valueOf()`、`toFixed()` 等。
+- 可以使用 `.` 运算符临时地将数字值转换为 `Number` 对象，例如：`(2/3).toFixed(2)`。
+- `Number` 构造函数提供了自己的属性：`Number.MAX_VALUE`、`Number.MIN_VALUE` 等。
 
 这里是一个显示其中一些特征的教程示例脚本：
 
-```
- // Number_Object_Type.js
+```javascript
+// Number_Object_Type.js
 // Copyright (c) HerongYang.com. All Rights Reserved.
 
-   // 创建一个新的 Number 对象
-   var myObject = new Number(3.14159);
+// 创建一个新的 Number 对象
+var myObject = new Number(3.14159);
 
-   // 检查此对象
-   println("\nAbout this \"myObject\":");
-   println("   Type = "+(typeof myObject));
-   println("   Instance Of Object: "+(myObject instanceof Object));
-   println("   Instance Of Number: "+(myObject instanceof Number));
+// 检查此对象
+println("\nAbout this \"myObject\":");
+println("   Type = "+(typeof myObject));
+println("   Instance Of Object: "+(myObject instanceof Object));
+println("   Instance Of Number: "+(myObject instanceof Number));
 
-   // 使用 Number 继承的方法
-   var v = myObject.valueOf();
-   var s = myObject.toString();
-   var f = myObject.toFixed(2);
+// 使用 Number 继承的方法
+var v = myObject.valueOf();
+var s = myObject.toString();
+var f = myObject.toFixed(2);
 
-   println("\nExecution result:");
-   println("   typeof myObject = "+(typeof myObject));
-   println("   typeof myObject.valueOf() = "+(typeof v));
-   println("   typeof myObject.toString() = "+(typeof s));
-   println("   typeof myObject.toFixed() = "+(typeof f));
-   println("   value of myObject.valueOf() = "+v);
-   println("   value of myObject.toString() = "+s);
-   println("   value of myObject.toFixed() = "+f);
+println("\nExecution result:");
+println("   typeof myObject = "+(typeof myObject));
+println("   typeof myObject.valueOf() = "+(typeof v));
+println("   typeof myObject.toString() = "+(typeof s));
+println("   typeof myObject.toFixed() = "+(typeof f));
+println("   value of myObject.valueOf() = "+v);
+println("   value of myObject.toString() = "+s);
+println("   value of myObject.toFixed() = "+f);
 
-   println("\nConverting to Number objects on the fly:");
-   println("   (2/3).toFixed() = "+((2/3).toFixed(2)));
+println("\nConverting to Number objects on the fly:");
+println("   (2/3).toFixed() = "+((2/3).toFixed(2)));
 
-   println("\nUsing properties of the Number constructor:");
-   println("   Number.MAX_VALUE = "+Number.MAX_VALUE);
-   println("   Number.MIN_VALUE = "+Number.MIN_VALUE);
+println("\nUsing properties of the Number constructor:");
+println("   Number.MAX_VALUE = "+Number.MAX_VALUE);
+println("   Number.MIN_VALUE = "+Number.MIN_VALUE);
 ```
 
 如果你用 `jrunscript` 运行此脚本，将得到：
 
 ```
- About this "myObject":
+About this "myObject":
    Type = object
    Instance Of Object: true
    Instance Of Number: true
@@ -6822,50 +6369,48 @@ Using properties of the Number constructor:
 
 现在我们知道如何使用 `Number()` 构造函数来创建 "Number" 对象了。
 
-
-
-
+### "Date" 对象类型
 
 ```javascript
- // Date_Object_Type.js
+// Date_Object_Type.js
 // Copyright (c) HerongYang.com. All Rights Reserved.
 
-   // Creating a new Date object
-   var myObject = new Date(2008, 0, 1, 2, 3, 4);
+// Creating a new Date object
+var myObject = new Date(2008, 0, 1, 2, 3, 4);
 
-   // Checking this object
-   println("\nAbout this \"myObject\":");
-   println("   Type = "+(typeof myObject));
-   println("   Instance Of Object: "+(myObject instanceof Object));
-   println("   Instance Of Date: "+(myObject instanceof Date));
+// Checking this object
+println("\nAbout this \"myObject\":");
+println("   Type = "+(typeof myObject));
+println("   Instance Of Object: "+(myObject instanceof Object));
+println("   Instance Of Date: "+(myObject instanceof Date));
 
-   // Using Number's inherited methods
-   var v = myObject.valueOf();
-   var s = myObject.toString();
-   var h = myObject.getHours();
+// Using Number's inherited methods
+var v = myObject.valueOf();
+var s = myObject.toString();
+var h = myObject.getHours();
 
-   println("\nExecution result:");
-   println("   typeof myObject = "+(typeof myObject));
-   println("   typeof myObject.valueOf() = "+(typeof v));
-   println("   typeof myObject.toString() = "+(typeof s));
-   println("   typeof myObject.getHours(() = "+(typeof h));
-   println("   value of myObject.valueOf() = "+v);
-   println("   value of myObject.toString() = "+s);
-   println("   value of myObject.toString() = "+h);
+println("\nExecution result:");
+println("   typeof myObject = "+(typeof myObject));
+println("   typeof myObject.valueOf() = "+(typeof v));
+println("   typeof myObject.toString() = "+(typeof s));
+println("   typeof myObject.getHours() = "+(typeof h));
+println("   value of myObject.valueOf() = "+v);
+println("   value of myObject.toString() = "+s);
+println("   value of myObject.getHours() = "+h);
 
-   println("\nUsing methods of the Date constructor:");
-   var myTime = Date.parse("Tue Jan 01 2008");
-   var myDate = new Date(myTime);
-   println("   typeof myTime = "+(typeof myTime));
-   println("   typeof myDate = "+(typeof myDate));
-   println("   myTime = "+myTime);
-   println("   myDate.toString() = "+myDate.toString());
+println("\nUsing methods of the Date constructor:");
+var myTime = Date.parse("Tue Jan 01 2008");
+var myDate = new Date(myTime);
+println("   typeof myTime = "+(typeof myTime));
+println("   typeof myDate = "+(typeof myDate));
+println("   myTime = "+myTime);
+println("   myDate.toString() = "+myDate.toString());
 ```
 
 如果你使用 `jrunscript` 运行此脚本，将得到：
 
 ```
- About this "myObject":
+About this "myObject":
    Type = object
    Instance Of Object: true
    Instance Of Date: true
@@ -6874,118 +6419,109 @@ Execution result:
    typeof myObject = object
    typeof myObject.valueOf() = number
    typeof myObject.toString() = string
-   typeof myObject.getHours(() = number
+   typeof myObject.getHours() = number
    value of myObject.valueOf() = 1199170984000
-   value of myObject.toString() = Tue Jan 01 2008 02:03:04 GMT-0000 
-   value of myObject.toString() = 2
+   value of myObject.toString() = Tue Jan 01 2008 02:03:04 GMT-0000
+   value of myObject.getHours() = 2
 
 Using methods of the Date constructor:
    typeof myTime = number
    typeof myDate = object
    myTime = 1199163600000
-   myDate.toString() = Tue Jan 01 2008 00:00:00 GMT-0000 
+   myDate.toString() = Tue Jan 01 2008 00:00:00 GMT-0000
 ```
 
 现在我们知道如何使用 `Date()` 构造函数创建 "Date" 对象了。
 
 阅读与其他 "Date" 相关的章节查看更多教程示例。
 
-JavaScript 教程 - Herong 的教程示例
-
-∟内置对象类型简介
-
-∟"RegExp" 对象类型 - 正则表达式模式
+### "RegExp" 对象类型 - 正则表达式模式
 
 本节提供了关于 `RegExp` 内置对象类型的快速描述和教程示例脚本，该类型用于创建用于模式匹配操作的 `RegExp` 对象。
 
 `RegExp` 对象类型是一个内置对象类型，用于创建表示正则表达式模式的 `RegExp` 对象。它具有以下主要特征：
 
-*   可以使用 `RegExp()` 构造函数创建新的 `RegExp` 对象。`RegExp()` 也可以用作普通函数，它也会返回一个 `RegExp` 对象。
-
-*   所有的 `RegExp` 对象都有自己的属性：`source`、`global`、`ignoreCase`、`multiline` 和 `lastIndex`。
-
-*   所有的 `RegExp` 对象都有 3 个继承的方法：`test()`、`exec()` 和 `toString()`。
-
-*   可以使用 RegExp 字字量 `/.../i` 创建 `RegExp` 对象。
+* 可以使用 `RegExp()` 构造函数创建新的 `RegExp` 对象。`RegExp()` 也可以用作普通函数，它也会返回一个 `RegExp` 对象。
+* 所有的 `RegExp` 对象都有自己的属性：`source`、`global`、`ignoreCase`、`multiline` 和 `lastIndex`。
+* 所有的 `RegExp` 对象都有 3 个继承的方法：`test()`、`exec()` 和 `toString()`。
+* 可以使用 RegExp 字面量 `/.../i` 创建 `RegExp` 对象。
 
 以下是一个显示这些特征的教程示例脚本：
 
 ```javascript
- // RegExp_Object_Type.js
+// RegExp_Object_Type.js
 // Copyright (c) HerongYang.com. All Rights Reserved.
 
-   // Creating a new RegExp object
-   var myObject = new RegExp('\\S+@.*\.com','i');
+// Creating a new RegExp object
+var myObject = new RegExp('\\S+@.*\\.com','i');
 
-   // Checking this object
-   println("\nAbout this \"myObject\":");
-   println("   Type = "+(typeof myObject));
-   println("   Instance Of Object: "+(myObject instanceof Object));
-   println("   Instance Of RegExp: "+(myObject instanceof RegExp));
+// Checking this object
+println("\nAbout this \"myObject\":");
+println("   Type = "+(typeof myObject));
+println("   Instance Of Object: "+(myObject instanceof Object));
+println("   Instance Of RegExp: "+(myObject instanceof RegExp));
 
-   println("\nProperties of this \"myObject\":");
-   println("   myObject.source = "+myObject.source);
-   println("   myObject.global = "+myObject.global);
-   println("   myObject.ignoreCase = "+myObject.ignoreCase);
-   println("   myObject.multiline = "+myObject.multiline);
-   println("   myObject.lastIndex = "+myObject.lastIndex);
+println("\nProperties of this \"myObject\":");
+println("   myObject.source = "+myObject.source);
+println("   myObject.global = "+myObject.global);
+println("   myObject.ignoreCase = "+myObject.ignoreCase);
+println("   myObject.multiline = "+myObject.multiline);
+println("   myObject.lastIndex = "+myObject.lastIndex);
 
-   // Using RegExp's inherited methods
-   var text = "Please write to me@herongyang.com for help.";
-   var t = myObject.test(text);
-   var e = myObject.exec(text);
+// Using RegExp's inherited methods
+var text = "Please write to me@herongyang.com for help.";
+var t = myObject.test(text);
+var e = myObject.exec(text);
 
-   println("\nExecution result:");
-   println("   typeof myObject = "+(typeof myObject));
-   println("   typeof myObject.test() = "+(typeof t));
-   println("   myObject.toString() = "+myObject.toString());
-   println("   myObject.test() = "+t);
+println("\nExecution result:");
+println("   typeof myObject = "+(typeof myObject));
+println("   typeof myObject.test() = "+(typeof t));
+println("   myObject.toString() = "+myObject.toString());
+println("   myObject.test() = "+t);
 
-   println("\nAbout myObject.exec():");
-   println("   typeof myObject.exec() = "+(typeof e));
-   println("   myObject.exec() instanceOf Array: "+(e instanceof Array));
-   for (var item in e) {
-      println("   "+item+" = "+e[item]);
-   }
+println("\nAbout myObject.exec():");
+println("   typeof myObject.exec() = "+(typeof e));
+println("   myObject.exec() instanceOf Array: "+(e instanceof Array));
+for (var item in e) {
+   println("   "+item+" = "+e[item]);
+}
 ```
 
 如果你使用 `jrunscript` 运行此脚本，将得到：
 
 ```
- About this "myObject":
-   Type = function
+About this "myObject":
+   Type = object
    Instance Of Object: true
    Instance Of RegExp: true
 
 Properties of this "myObject":
-   myObject.source = \S+@.*.com
+   myObject.source = \S+@.*\.com
    myObject.global = false
    myObject.ignoreCase = true
    myObject.multiline = false
    myObject.lastIndex = 0
 
 Execution result:
-   typeof myObject = function
+   typeof myObject = object
    typeof myObject.test() = boolean
-   myObject.toString() = /\S+@.*.com/i
+   myObject.toString() = /\S+@.*\.com/i
    myObject.test() = true
 
 About myObject.exec():
    typeof myObject.exec() = object
    myObject.exec() instanceOf Array: true
-   0 = me@her.com
+   0 = me@herongyang.com
    1 = 16
-   input = Please write to me@herongyang.com
+   input = Please write to me@herongyang.com for help.
 ```
 
-现在我们知道如何使用 `RegExp()` 构造函数创建 "Date" 对象了（注：原文此处应为 RegExp）。输出显示 `typeof myObject` 返回 "function"。
+现在我们知道如何使用 `RegExp()` 构造函数创建 `RegExp` 对象了。输出显示 `typeof myObject` 返回 "object"。
 
-
-
-
+### "Error" 对象类型
 
 ```
- About this "myObject":
+About this "myObject":
    Type = object
    Instance Of Object: true
    Instance Of Error: true
@@ -7007,55 +6543,53 @@ About this "realError":
 
 阅读其他关于 "Error" 的章节查看更多教程示例。
 
-JavaScript 教程 - Herong 的教程示例
+### "Math" 对象类型 - Math 容器
 
-∟内置对象类型介绍
+本节提供了关于 `Math` 内置对象类型的简要描述和教程示例脚本。只有一个名为 `Math` 的默认 `Math` 对象，它包含了所有的数学属性和函数。
 
-## "Math" 对象类型 - Math 容器
+`Math` 对象类型是一个特殊的内置对象类型，由宿主环境创建一个单一的 `Math` 对象，作为许多数学相关属性和函数的容器。它具有以下主要特征：
 
-本节提供了关于 'Math' 内置对象类型的简要描述和教程示例脚本。只有一个名为 `Math` 的默认 'Math' 对象，它包含了所有的数学属性和函数。
-
-"Math" 对象类型是一个特殊的内置对象类型，由宿主环境创建一个单一的 "Math" 对象，作为许多数学相关属性和函数的容器。它具有以下主要特征：
-
-- 你无法创建自己的 "Math" 对象，因为 `Math()` 构造函数是不可用的。
+- 你无法创建自己的 `Math` 对象，因为 `Math()` 构造函数是不可用的。
 - 宿主环境创建默认的 `Math` 对象。
 - 默认的 `Math` 对象具有几个值属性：`E`、`LN10`、`LN2`、`PI`、`SQRT2` 等。
-- 默认的 `Math` 对象有许多函数属性（方法）：`abs()`、`floor()`、`ceil()`、`round()`、`sin()`、`cos()`、`random()` 等。这是一个显示某些功能的教程示例脚本：
+- 默认的 `Math` 对象有许多函数属性（方法）：`abs()`、`floor()`、`ceil()`、`round()`、`sin()`、`cos()`、`random()` 等。
+
+这是一个显示某些功能的教程示例脚本：
 
 ```javascript
- // Math_Object_Type.js
+// Math_Object_Type.js
 // Copyright (c) HerongYang.com. All Rights Reserved.
 
-   // 不允许创建自己的 "Math" 对象
-   // var myObject = new Math();
+// 不允许创建自己的 "Math" 对象
+// var myObject = new Math();
 
-   // 检查此对象
-   println("\nAbout this \"Math\":");
-   println("   Type = "+(typeof Math));
-   println("   Instance Of Object: "+(Math instanceof Object));
-   println("   Instance Of Function: "+(Math instanceof Function));
-   println("   Instance Of Math: "+(Math instanceof Math));
-   println("   toString(): "+Math.toString());
+// 检查此对象
+println("\nAbout this \"Math\":");
+println("   Type = "+(typeof Math));
+println("   Instance Of Object: "+(Math instanceof Object));
+println("   Instance Of Function: "+(Math instanceof Function));
+println("   Instance Of Math: "+(Math instanceof Math));
+println("   toString(): "+Math.toString());
 
-   println("\n\"Math\" value properties:");
-      println("   Math.E = "+Math.E);
-      println("   Math.PI = "+Math.PI);
-      println("   Math.SQRT2 = "+Math.SQRT2);
+println("\n\"Math\" value properties:");
+println("   Math.E = "+Math.E);
+println("   Math.PI = "+Math.PI);
+println("   Math.SQRT2 = "+Math.SQRT2);
 
-   println("\nCalling \"Math\" function properties - methods:");
-      println("   Math.sqrt(2) = "+Math.sqrt(2));
-      println("   Math.sin(Math.PI) = "+Math.sin(Math.PI));
-      println("   Math.abs(-17.78) = "+Math.abs(-17.78));
-      println("   Math.ceil(-17.78) = "+Math.ceil(-17.78));
-      println("   Math.floor(-17.78) = "+Math.floor(-17.78));
-      println("   Math.round(-17.78) = "+Math.round(-17.78));
-      println("   Math.random() = "+Math.random());
+println("\nCalling \"Math\" function properties - methods:");
+println("   Math.sqrt(2) = "+Math.sqrt(2));
+println("   Math.sin(Math.PI) = "+Math.sin(Math.PI));
+println("   Math.abs(-17.78) = "+Math.abs(-17.78));
+println("   Math.ceil(-17.78) = "+Math.ceil(-17.78));
+println("   Math.floor(-17.78) = "+Math.floor(-17.78));
+println("   Math.round(-17.78) = "+Math.round(-17.78));
+println("   Math.random() = "+Math.random());
 ```
 
-如果你用 "jrunscript" 运行此脚本，你将得到：
+如果你用 `jrunscript` 运行此脚本，你将得到：
 
 ```
- About this "Math":
+About this "Math":
    Type = object
    Instance Of Object: true
    Instance Of Function: false
@@ -7077,15 +6611,13 @@ Calling "Math" function properties - methods:
    Math.random() = 0.4715524330340368
 ```
 
-现在我们知道如何使用 "Math" 对象。
+现在我们知道如何使用 `Math` 对象。
 
 阅读其他关于 "Math" 的章节查看更多教程示例。
 
-JavaScript 教程 - Herong 的教程示例
-
 ## W3C 文档对象模型 (DOM) 规范
 
-本节介绍了 W3C 的文档对象模型 (DOM) 规范。主题包括 DOM 规范概述；DOM Level 0, 1, 2 和 3 功能的示例；Web 浏览器支持的 DOM 级别；'Node' 以及其他 DOM API 接口；使用 DOM API 倾储 `document` 对象。
+本节介绍了 W3C 的文档对象模型 (DOM) 规范。主题包括 DOM 规范概述；DOM Level 0, 1, 2 和 3 功能的示例；Web 浏览器支持的 DOM 级别；`Node` 以及其他 DOM API 接口；使用 DOM API 访问 `document` 对象。
 
 - DOM 规范概述
 - DOM Level 0 - 示例
@@ -7100,50 +6632,44 @@ JavaScript 教程 - Herong 的教程示例
 - 在新窗口中输出文档 - 浏览器结果
 - 在新窗口中输出文档 - IE 6.0 结果
 
-### 结论：
+### 结论
 
 - DOM（文档对象模型）是 W3C（万维网联盟）推荐的一套规范，用于为有效的 HTML 和格式良好的 XML 文档定义 API（应用程序编程接口）。
 - 最新的 DOM 规范是 DOM Level 3，分为 21 个模块。它于 2004 年发布。
 - 所有流行的 Web 浏览器都支持 DOM Level 3。
 
-JavaScript 教程 - Herong 的教程示例
-
-∟W3C 文档对象模型 (DOM) 规范
-
-## DOM 规范概述
+### DOM 规范概述
 
 本节提供了 DOM（文档对象模型）规范的概述，这是一套被分为多个级别和模块（功能）的 API。
 
-DOM（文档对象模型）是 W3C（万维网联盟）推荐的一套规范，用于为有效的 HTML 和格式良好的 XML [p.208] 文档定义 API（应用程序编程接口）。
+DOM（文档对象模型）是 W3C（万维网联盟）推荐的一套规范，用于为有效的 HTML 和格式良好的 XML 文档定义 API（应用程序编程接口）。
 
 目前，DOM 有 4 个级别的规范：
 
 **DOM Level 0** - 未发布正式规范：一组由 Netscape Navigator 3.0 版本和 Microsoft Internet Explorer 3.0 版本提供的 HTML 文档功能集。
+
 DOM Level 0 功能示例：`document.bgColor` 和 `document.alinkColor`。
 
 **DOM Level 1** - 最新版本于 1998 年 10 月发布：包含 2 个模块的 API：Core 和 HTML。DOM Level 1 Core 代表用于 XML 文档的功能。DOM Level 1 HTML 将 DOM Level 1 Core 扩展到特定 HTML 文档的功能。
+
 DOM Level 1 功能示例：`document.createElement()` 和 `document.body.bgColor`。
 
 **DOM Level 2** - 于 2000 年 11 月发布：包含 14 个模块的 API：Core, XML, HTML, Views, StyleSheets, CSS, CSS2, Events, User interface Events, Mouse Events, Mutation Events, HTML Events, Range 和 Traversal。
+
 DOM Level 2 功能示例：`document.defaultView`、`document.styleSheets`、`document.getElementById()` 和 `document.body.style`。
 
-**DOM Level 3** - 于 2004 年 4 月发布：包含 21 个模块的 API：Core, XML, HTML, XPath, Travesal, Range, Validation, Load and Save, Asynchronous Load, Views, Stylesheets, CSS, CSS2, Events, HTML Events, Mutation Events, Mutation Name Events, UI Events, Mouse Events, Text Events 和 Keyboard Events。
+**DOM Level 3** - 于 2004 年 4 月发布：包含 21 个模块的 API：Core, XML, HTML, XPath, Traversal, Range, Validation, Load and Save, Asynchronous Load, Views, Stylesheets, CSS, CSS2, Events, HTML Events, Mutation Events, Mutation Name Events, UI Events, Mouse Events, Text Events 和 Keyboard Events。
+
 DOM Level 3 功能示例：`document.xmlVersion`、`document.inputEncoding` 和 `document.title.textContent`。
 
-JavaScript 教程 - Herong 的教程示例
-
-∟DOM Level 0 - 示例
+### DOM Level 0 - 示例
 
 本节提供了在 Netscape 3 和 IE 3 中的 DOM Level 0 对象和属性的教程示例。
 
 这是一个使用 DOM Level 0 对象和属性的教程示例：
 
-
-
-
-
 ```html
- <html>
+<html>
 <!-- DOM_Level_0_Example.html
    Copyright (c) HerongYang.com. All Rights Reserved.
 -->
@@ -7168,7 +6694,7 @@ function changeColor() {
 <body>
 <pre>
 <script type="text/javascript">
-   document.writeln("\"documnet\" attribute initial values:");
+   document.writeln("\"document\" attribute initial values:");
    document.writeln("   alinkColor = "+document.alinkColor);
    document.writeln("   background = "+document.background);
    document.writeln("   bgColor = "+document.bgColor);
@@ -7178,7 +6704,7 @@ function changeColor() {
 </script>
 </pre>
 <form>
-  Current document.bgColor: 
+  Current document.bgColor:
   <input type="text" name="bgcolor" value="#ffffff"><br/>
   <input type="button" value="Click to change background color"
    onClick="changeColor();"/>
@@ -7191,13 +6717,7 @@ function changeColor() {
 
 ![](img/image00150.jpeg)
 
-# DOM Level 0 示例
-
-JavaScript 教程 - Herong 的教程示例
-
-∟W3C 的文档对象模型 (DOM) 规范
-
-∟DOM Level 1 - 示例
+### DOM Level 1 - 示例
 
 本节提供了 Firefox 2.0 支持的 DOM Level 1 对象和属性的教程示例。
 
@@ -7206,7 +6726,7 @@ JavaScript 教程 - Herong 的教程示例
 这是一个使用 DOM Level 1 对象和属性的教程示例：
 
 ```html
- <html>
+<html>
 <!-- DOM_Level_1_Example.html
    Copyright (c) HerongYang.com. All Rights Reserved.
 -->
@@ -7224,7 +6744,7 @@ function changeColor() {
       body.bgColor = "#8888ff";
    else if (colorID == 3 )
       body.bgColor = "#888888";
-   document.forms.item(0).elements.item(0).value 
+   document.forms.item(0).elements.item(0).value
       = document.body.bgColor;
    colorID = (colorID+1)%4;
 }
@@ -7234,7 +6754,7 @@ function changeColor() {
 <pre>
 <script type="text/javascript">
    var body = document.body;
-   document.writeln("\"documnet.body\" attribute initial values:");
+   document.writeln("\"document.body\" attribute initial values:");
    document.writeln("   aLink = "+body.aLink);
    document.writeln("   background = "+body.background);
    document.writeln("   bgColor = "+body.bgColor);
@@ -7244,7 +6764,7 @@ function changeColor() {
 </script>
 </pre>
 <form>
-  Current document.body.bgColor: 
+  Current document.body.bgColor:
   <input type="text" name="bgcolor" value="#ffffff"><br/>
   <input type="button" value="Click to change background color"
    onClick="changeColor();"/>
@@ -7257,27 +6777,23 @@ function changeColor() {
 
 ![](img/image00151.jpeg)
 
-# DOM Level 1 示例
-
 有趣的是，`document.body.color` 在 Firefox 2.0 中未定义。我的猜测是 `document.body.color` 仅在 DOM HTML Level 1 中支持，而不是 Level 2。由于 Firefox 支持 DOM HTML Level 2，因此 `document.body.color` 是未定义的。
 
-JavaScript 教程 - Herong 的教程示例
+### DOM Level 2 - 示例
 
-∟W3C 的文档对象模型 (DOM) 规范
+本节提供了 Firefox 2.0 支持的 DOM Level 2 对象和属性的教程示例。
 
-∟DOM Level 2 - 示例
+`DOM Level 2` - 2000 年 11 月发布：包含 14 个模块的 API：Core, HTML, Views, Stylesheets 等。
 
-本节提供了 Firefox 2.0 支持的 DOM Level 1 对象和属性的教程示例。（注：此处原文描述可能有误，应为 Level 2 对象）
-
-`DOM Level 2` - 2000 年 11 月发布：包含 14 个模块的 API：Core, HTML, Views, Stylesheets。这是一个使用 DOM Level 2 对象和属性的教程示例：
+这是一个使用 DOM Level 2 对象和属性的教程示例：
 
 ```html
- <html>
-<!-- DOM_Level_1_Example.html
+<html>
+<!-- DOM_Level_2_Example.html
    Copyright (c) HerongYang.com. All Rights Reserved.
 -->
 <head>
-<title>DOM Level 1 示例</title>
+<title>DOM Level 2 示例</title>
 <script type="text/javascript">
 var colorID = 0;
 function changeColor() {
@@ -7290,7 +6806,7 @@ function changeColor() {
       body.bgColor = "#8888ff";
    else if (colorID == 3 )
       body.bgColor = "#888888";
-   document.forms.item(0).elements.item(0).value 
+   document.forms.item(0).elements.item(0).value
       = document.body.bgColor;
    colorID = (colorID+1)%4;
 }
@@ -7300,7 +6816,7 @@ function changeColor() {
 <pre>
 <script type="text/javascript">
    var body = document.body;
-   document.writeln("\"documnet.body\" attribute initial values:");
+   document.writeln("\"document.body\" attribute initial values:");
    document.writeln("   aLink = "+body.aLink);
    document.writeln("   background = "+body.background);
    document.writeln("   bgColor = "+body.bgColor);
@@ -7310,7 +6826,7 @@ function changeColor() {
 </script>
 </pre>
 <form>
-  Current document.body.bgColor: 
+  Current document.body.bgColor:
   <input type="text" name="bgcolor" value="#ffffff"><br/>
   <input type="button" value="Click to change background color"
    onClick="changeColor();"/>
@@ -7319,72 +6835,20 @@ function changeColor() {
 </html>
 ```
 
-在 Firefox 2.0 中查看此 JavaScript 页面，支持 DOM 2，将看到：
-
-```html
- <html>
-<!-- DOM_Level_1_Example.html
-   Copyright (c) HerongYang.com. All Rights Reserved.
--->
-<head>
-<title>DOM Level 1 示例</title>
-<script type="text/javascript">
-var colorID = 0;
-function changeColor() {
-   var body = document.body;
-   if (colorID == 0 )
-      body.bgColor = "#ff8888";
-   else if (colorID == 1 )
-      body.bgColor = "#88ff88";
-   else if (colorID == 2 )
-      body.bgColor = "#8888ff";
-   else if (colorID == 3 )
-      body.bgColor = "#888888";
-   document.forms.item(0).elements.item(0).value 
-      = document.body.bgColor;
-   colorID = (colorID+1)%4;
-}
-</script>
-</head>
-<body color="#000000">
-<pre>
-<script type="text/javascript">
-   var body = document.body;
-   document.writeln("\"documnet.body\" attribute initial values:");
-   document.writeln("   aLink = "+body.aLink);
-   document.writeln("   background = "+body.background);
-   document.writeln("   bgColor = "+body.bgColor);
-   document.writeln("   color = "+body.color);
-   document.writeln("   link = "+body.link);
-   document.writeln("   vLink = "+body.vLink);
-</script>
-</pre>
-<form>
-  Current document.body.bgColor: 
-  <input type="text" name="bgcolor" value="#ffffff"><br/>
-  <input type="button" value="Click to change background color"
-   onClick="changeColor();"/>
-</form>
-</body>
-</html>
-```
+在 Firefox 2.0 中查看此 JavaScript 页面，支持 DOM 2，将看到相应界面。
 
 在 IE 11 中查看此 JavaScript 页面将显示相同的结果。但 IE 6 不显示任何值，因为它不支持 DOM 2。
 
-JavaScript 教程 - Herong 的教程示例
+### DOM Level 3 - 示例
 
-∟W3C 的文档对象模型 (DOM) 规范
+本节提供了 DOM Level 3 对象和属性的教程示例。
 
-∟DOM Level 3 - 示例
-
-本节提供了 DOM Level 3 对象和属性的教程示例。目前没有浏览器支持 DOM 3。
-
-`DOM Level 3` - 2004 年 4 月发布：包含 21 个模块的 API：Core, HTML, XPath, Travesal, Range, Validation, Load and Save, Asynchronous Load, Views, Stylesheets, CSS, CSS2, Events, HTML Events, Mutation Events, Mutation Name Events, UI Events, Mouse Events, Text Events, and Keyboard Events.
+`DOM Level 3` - 2004 年 4 月发布：包含 21 个模块的 API：Core, HTML, XPath, Traversal, Range, Validation, Load and Save, Asynchronous Load, Views, Stylesheets, CSS, CSS2, Events, HTML Events, Mutation Events, Mutation Name Events, UI Events, Mouse Events, Text Events, and Keyboard Events.
 
 这是一个使用 DOM Level 3 对象和属性的教程示例：
 
 ```html
- <html>
+<html>
 <!-- DOM_Level_3_Example.html
    Copyright (c) HerongYang.com. All Rights Reserved.
 -->
@@ -7412,7 +6876,7 @@ JavaScript 教程 - Herong 的教程示例
 在 Chrome 68 中，我得到了以下输出：
 
 ```
- New attributes:
+New attributes:
    document.xmlVersion=null
    document.inputEncoding=windows-1252
    document.xmlEncoding=null
@@ -7421,12 +6885,8 @@ JavaScript 教程 - Herong 的教程示例
 
 在 Firefox 61 中，我得到了以下输出：
 
-
-
-
-
 ```
- New attributes:
+New attributes:
    document.xmlVersion=undefined
    document.inputEncoding=windows-1252
    document.xmlEncoding=undefined
@@ -7436,7 +6896,7 @@ JavaScript 教程 - Herong 的教程示例
 在 IE 11 上，我得到了以下输出：
 
 ```
- New attributes:
+New attributes:
    document.xmlVersion=
    document.inputEncoding=WINDOWS-1252
    document.xmlEncoding=
@@ -7445,20 +6905,16 @@ JavaScript 教程 - Herong 的教程示例
 
 我无法在旧版本的浏览器中测试这个 JavaScript 示例页面，因为它们不支持 DOM Level 3。
 
-JavaScript 教程 - Herong 的教程示例
-
-∟W3C 文档对象模型 (DOM) 规范
-
-∟DOM Level 测试 - document.implementation.hasFeature
+### DOM Level 测试 - document.implementation.hasFeature
 
 本节提供了一个使用 `document.implementation.hasFeature()` 方法的教程示例，用于测试特定 Web 浏览器支持的 DOM 级别。
 
-在 DOM Level 1、2 和 3 规范中，有一个方法可以让你测试特定 Web 浏览器支持多哪些 DOM 规范级别：`document.implementation.hasFeature(feature, level)`。如果 Web 浏览器支持指定的特性和级别，它返回 true。请注意，级别必须以点格式指定，如 `1.0`、`2.0` 或 `3.0`。
+在 DOM Level 1、2 和 3 规范中，有一个方法可以让你测试特定 Web 浏览器支持哪些 DOM 规范级别：`document.implementation.hasFeature(feature, level)`。如果 Web 浏览器支持指定的特性和级别，它返回 true。请注意，级别必须以点格式指定，如 `1.0`、`2.0` 或 `3.0`。
 
 我在教程示例使用了此方法来测试我机器上 Web 浏览器支持的 DOM 级别。
 
-```
- <html>
+```html
+<html>
 <!-- DOM_Level_Test.html
    Copyright (c) HerongYang.com. All Rights Reserved.
 -->
@@ -7479,101 +6935,111 @@ JavaScript 教程 - Herong 的教程示例
    }
 </script>
 </pre></body>
-</html
+</html>
 ```
 
 当我使用此脚本测试 Chrome 68 和 Firefox 61 时，结果显示它们支持 DOM Level 1、2 和 3。
 
+
+
+# DOM 测试结果
+
+## DOM Level 0 Test
 ```
- DOM Level 0 Test:
-   document.bgColor = 
+document.bgColor = 
+```
+
+## DOM Level 1.0 Test
+```
+Core 1.0 = true
+HTML 1.0 = true
+```
+
+## DOM Level 2.0 Test
+```
+Core 2.0 = true
+HTML 2.0 = true
+```
+
+## DOM Level 3.0 Test
+```
+Core 3.0 = true
+HTML 3.0 = true
+```
+
+当我使用此脚本测试 `IE 11` 时，结果显示它们支持 DOM Level 1 和 2。Level 3 不支持。
+
+```
+DOM Level 0 Test:
+  document.bgColor = #ffffff
 
 DOM Level 1.0 Test:
-   Core 1.0 = true
-   HTML 1.0 = true
+  Core 1.0 = true
+  HTML 1.0 = true
 
 DOM Level 2.0 Test:
-   Core 2.0 = true
-   HTML 2.0 = true
+  Core 2.0 = true
+  HTML 2.0 = true
 
 DOM Level 3.0 Test:
-   Core 3.0 = true
-   HTML 3.0 = true
+  Core 3.0 = false
+  HTML 3.0 = false
 ```
 
-当我使用此脚本测试 IE 11 时，结果显示它们支持 DOM Level 1 和 2。Level 3 不支持。
+`IE 6.0` 只支持 Level 1：
 
 ```
- DOM Level 0 Test:
-   document.bgColor = #ffffff
+DOM Level 0 Test:
+  document.bgColor = #ffffff
 
 DOM Level 1.0 Test:
-   Core 1.0 = true
-   HTML 1.0 = true
+  Core 1.0 = false
+  HTML 1.0 = true
 
 DOM Level 2.0 Test:
-   Core 2.0 = true
-   HTML 2.0 = true
+  Core 2.0 = false
+  HTML 2.0 = false
 
 DOM Level 3.0 Test:
-   Core 3.0 = false
-   HTML 3.0 = false
+  Core 3.0 = false
+  HTML 3.0 = false
 ```
 
-IE 6.0 只支持 Level 1：
+`Firefox 2.0` 支持 Level 2：
 
 ```
- DOM Level 0 Test:
-   document.bgColor = #ffffff
+DOM Level 0 Test:
+  document.bgColor = #ffffff
 
 DOM Level 1.0 Test:
-   Core 1.0 = false
-   HTML 1.0 = true
+  Core 1.0 = false
+  HTML 1.0 = true
 
 DOM Level 2.0 Test:
-   Core 2.0 = false
-   HTML 2.0 = false
+  Core 2.0 = true
+  HTML 2.0 = true
 
 DOM Level 3.0 Test:
-   Core 3.0 = false
-   HTML 3.0 = false
+  Core 3.0 = false
+  HTML 3.0 = false
 ```
 
-Firefox 2.0 支持 Level 2：
+# JavaScript 教程 - Herong 的教程示例
 
-```
- DOM Level 0 Test:
-   document.bgColor = #ffffff
+## W3C 文档对象模型 (DOM) 规范
 
-DOM Level 1.0 Test:
-   Core 1.0 = false
-   HTML 1.0 = true
-
-DOM Level 2.0 Test:
-   Core 2.0 = true
-   HTML 2.0 = true
-
-DOM Level 3.0 Test:
-   Core 3.0 = false
-   HTML 3.0 = false
-```
-
-JavaScript 教程 - Herong 的教程示例
-
-∟W3C 文档对象模型 (DOM) 规范
-
-∟继承视图与 API 的扁平化视图
+## 继承视图与 API 的扁平化视图
 
 本节提供了 DOM API 的两种不同视图：扁平化视图 - 一切都是节点，以及继承视图 - 继承接口的层级结构。
 
 DOM API 提供了两种表示 XML/HTML 文档的不同方法：
 
-1. “面向对象”方法 - 文档由一组链接对象表示，这些对象具有具有层级结构的不同接口。换句话说，整个 DOM API 可以被视为一个继承接口的层级结构。这被称为“DOM 的继承视图”。
+1. **“面向对象”方法** - 文档由一组链接对象表示，这些对象具有具有层级结构的不同接口。换句话说，整个 DOM API 可以被视为一个继承接口的层级结构。这被称为“DOM 的继承视图”。
 
 在“DOM 的继承视图”中，你只需要学习一组相关的接口：
 
 ```
- interface Node
+interface Node
 ^
 |- interface Document : Node
 |  ^
@@ -7593,12 +7059,12 @@ DOM API 提供了两种表示 XML/HTML 文档的不同方法：
       ...
 ```
 
-2. “一切都是节点”方法 - 文档由对象树表示，这些对象具有名为“Node”的单一接口。换句话说，整个 DOM API 可以被视为单一接口 - `Node` 接口。这被称为“DOM 的扁平化视图”。
+2. **“一切都是节点”方法** - 文档由对象树表示，这些对象具有名为“Node”的单一接口。换句话说，整个 DOM API 可以被视为单一接口 - `Node` 接口。这被称为“DOM 的扁平化视图”。
 
 在“DOM 的扁平化视图”中，你只需要学习一个接口，“Node”：
 
 ```
- interface Node {
+interface Node {
   readonly attribute DOMString        nodeName;
            attribute DOMString        nodeValue;
   readonly attribute unsigned short   nodeType;
@@ -7612,18 +7078,14 @@ DOM API 提供了两种表示 XML/HTML 文档的不同方法：
 };
 ```
 
-JavaScript 教程 - Herong 的教程示例
-
-∟W3C 文档对象模型 (DOM) 规范
-
-∟Web 文档 接口接口树
+## Web 文档接口树
 
 本节提供了一个 JavaScript 教程示例，用于显示元素的 DOM 接口。我们知道一个 Web 页面（文档）是一个元素树（忽略属性）。从面向对象的角度来看，不同的元素由不同类型的对象表示。
 
 现在通过一个简单的 JavaScript 示例遍历树，确定每个元素支持的接口：
 
 ```
- <html
+<html>
 <!-- DOM_API_Oriented_View.html
    Copyright (c) HerongYang.com. All Rights Reserved.
 -->
@@ -7665,55 +7127,47 @@ function show() {
 
 如果你在 Firefox 18 中运行这个 JavaScript 页面并点击“View”按钮，你将获得该 Web 页面使用的 DOM 接口的漂亮树列表：
 
-
-
-
-
 ```
- [object HTMLDocument]
-   [object HTMLHtmlElement]
-      [object Comment]
-      [object HTMLHeadElement]
-         [object Text]
-         [object HTMLTitleElement]
-            [object Text]
-         [object Text]
-         [object HTMLStyleElement]
-            [object Text]
-         [object Text]
-         [object HTMLScriptElement]
-            [object Text]
-         [object Text]
-      [object Text]
-      [object HTMLBodyElement]
-         [object Text]
-         [object HTMLParagraphElement]
-            [object Text]
-         [object Text]
-         [object HTMLFormElement]
-            [object Text]
-            [object HTMLInputElement]
-            [object Text]
-         [object Text]
-         [object HTMLPreElement]
-            [object Text]
-         [object Text]
+[object HTMLDocument]
+  [object HTMLHtmlElement]
+     [object Comment]
+     [object HTMLHeadElement]
+        [object Text]
+        [object HTMLTitleElement]
+           [object Text]
+        [object Text]
+        [object HTMLStyleElement]
+           [object Text]
+        [object Text]
+        [object HTMLScriptElement]
+           [object Text]
+        [object Text]
+     [object Text]
+     [object HTMLBodyElement]
+        [object Text]
+        [object HTMLParagraphElement]
+           [object Text]
+        [object Text]
+        [object HTMLFormElement]
+           [object Text]
+           [object HTMLInputElement]
+           [object Text]
+        [object Text]
+        [object HTMLPreElement]
+           [object Text]
+        [object Text]
 ```
-
-# JavaScript 教程 - Herong 的教程示例
-
-## W3C 文档对象模型 (DOM) 规范
 
 ## 将 Web 文档视为节点树
 
-本节提供了一个 JavaScript 教程示例用于展示 页面是一个节点树。这展示了 DOM API 的简化扁平化视图。
+本节提供了一个 JavaScript 教程示例用于展示页面是一个节点树。这展示了 DOM API 的简化扁平化视图。
 
 我们知道 Web 页面（一个 HTML 文档）是一个元素树（暂时忽略属性）。从简化的角度来看，所有元素都由 `Node` 接口表示。为了区分不同类型的节点，我们可以检查“type”（类型）和“name”（名称）属性。
 
 现在，让我们通过一个简单的 JavaScript 示例遍历树，并将每个元素呈现为带有类型和名称的节点：
 
 ```
- <html>
+<html>
 <!-- DOM_API_Simplified_Node_View.html
    Copyright (c) HerongYang.com. All Rights Reserved.
 -->
@@ -7759,36 +7213,32 @@ function show() {
 如果你在 Firefox 2.0 中运行此 JavaScript 页面并点击 "View" 按钮，你将获得一个包含该 Web 页面节点类型和名称的漂亮树列表：
 
 ```
- [Node type=DOCUMENT name=#document]
-   [Node type=ELEMENT name=HTML]
-      [Node type=ELEMENT name=HEAD]
-         [Node type=COMMENT name=#comment]
-         [Node type=ELEMENT name=TITLE]
-            [Node type=TEXT name=#text]
-         [Node type=TEXT name=#text]
-         [Node type=ELEMENT name=STYLE]
-            [Node type=TEXT name=#text]
-         [Node type=TEXT name=#text]
-         [Node type=ELEMENT name=SCRIPT]
-            [Node type=TEXT name=#text]
-      [Node type=ELEMENT name=BODY]
-         [Node type=TEXT name=#text]
-         [Node type=ELEMENT name=P]
-            [Node type=TEXT name=#text]
-         [Node type=TEXT name=#text]
-         [Node type=ELEMENT name=FORM]
-            [Node type=TEXT name=#text]
-            [Node type=ELEMENT name=INPUT]
-            [Node type=TEXT name=#text]
-         [Node type=TEXT name=#text]
-         [Node type=ELEMENT name=PRE]
-            [Node type=TEXT name=#text]
-         [Node type=TEXT name=#text]
+[Node type=DOCUMENT name=#document]
+  [Node type=ELEMENT name=HTML]
+     [Node type=ELEMENT name=HEAD]
+        [Node type=COMMENT name=#comment]
+        [Node type=ELEMENT name=TITLE]
+           [Node type=TEXT name=#text]
+        [Node type=TEXT name=#text]
+        [Node type=ELEMENT name=STYLE]
+           [Node type=TEXT name=#text]
+        [Node type=TEXT name=#text]
+        [Node type=ELEMENT name=SCRIPT]
+           [Node type=TEXT name=#text]
+     [Node type=ELEMENT name=BODY]
+        [Node type=TEXT name=#text]
+        [Node type=ELEMENT name=P]
+           [Node type=TEXT name=#text]
+        [Node type=TEXT name=#text]
+        [Node type=ELEMENT name=FORM]
+           [Node type=TEXT name=#text]
+           [Node type=ELEMENT name=INPUT]
+           [Node type=TEXT name=#text]
+        [Node type=TEXT name=#text]
+        [Node type=ELEMENT name=PRE]
+           [Node type=TEXT name=#text]
+        [Node type=TEXT name=#text]
 ```
-
-# JavaScript 教程 - Herong 的教程示例
-
-## W3C 文档对象模型 (DOM) 规范
 
 ## 在新窗口中导出文档 - JavaScript 源码
 
@@ -7797,7 +7247,7 @@ function show() {
 为了总结我目前学到的关于 DOM API 规范的知识，我写了一个 JavaScript 页面 `DOM_HTML_Document_Dump.html` 来用 DOM 属性和方法导出浏览器内置的 "document" 对象：
 
 ```
- <html>
+<html>
 <head>
 <!-- DOM_HTML_Document_Dump.html
    Copyright (c) HerongYang.com. All Rights Reserved.
@@ -7856,11 +7306,7 @@ function show() {
 *   对于每个节点，将其作为 XML 元素导出。节点名称变为元素名称。节点属性变为元素属性。节点子列表变为元素子列表。节点值变为元素内容。
 *   导出的 XML 字符串随后在新窗口中显示。
 
-阅读后续章节查看某些流行 浏览器的结果。
-
-# JavaScript 教程 - Herong 的教程示例
-
-## W3C 文档对象模型 (DOM) 规范
+阅读后续章节查看某些流行浏览器的结果。
 
 ## 在新窗口中导出文档 - 浏览器结果
 
@@ -7868,35 +7314,31 @@ function show() {
 
 如果你在 Chrome、Firefox 和 IE (Internet Explorer) Web 浏览器中运行 JavaScript 页面 `DOM_HTML_Document_Dump.html`，你将在新窗口中获得 "document" XML 导出结果：
 
-
-
-
-
 ```
- <#document>
-   <html>
-      <head>
-         <#text>
+<#document>
+  <html>
+     <head>
+        <#text>
 
-         </#text>
-         <#comment>
-             DOM_HTML_Document_Dump.html
+        </#text>
+        <#comment>
+            DOM_HTML_Document_Dump.html
    Copyright (c) HerongYang.com. All Rights Reserved.
 
-         </#comment>
-         <#text>
+        </#comment>
+        <#text>
 
-         </#text>
-         <title>
-            <#text>
-               在新窗口中导出 HTML 文档
-            </#text>
-         </title>
-         <#text>
+        </#text>
+        <title>
+           <#text>
+              在新窗口中导出 HTML 文档
+           </#text>
+        </title>
+        <#text>
 
-         </#text>
-         <script type="text/javascript">
-            <#text>
+        </#text>
+        <script type="text/javascript">
+           <#text>
 
 function nodeToXML(node, indentation, out) {
    out += indentation+"<"+node.nodeName.toLowerCase();
@@ -7932,60 +7374,56 @@ function show() {
    w.document.close();
 }
 
-            </#text>
-         </script>
-         <#text>
+           </#text>
+        </script>
+        <#text>
 
-         </#text>
-      </head>
-      <#text>
+        </#text>
+     </head>
+     <#text>
 
-      </#text>
-      <body>
-         <#text>
+     </#text>
+     <body>
+        <#text>
 
-         </#text>
-         <script type="text/javascript">
-            <#text>
+        </#text>
+        <script type="text/javascript">
+           <#text>
 
    document.write('<p>点击在新窗口中显示文档：</p>');
 
-            </#text>
-         </script>
-         <p>
-            <#text>
-               点击在新窗口中显示文档：
-            </#text>
-         </p>
-         <#text>
+           </#text>
+        </script>
+        <p>
+           <#text>
+              点击在新窗口中显示文档：
+           </#text>
+        </p>
+        <#text>
 
-         </#text>
-         <form>
-            <#text>
+        </#text>
+        <form>
+           <#text>
 
-            </#text>
-            <input value="Show" onclick="show();" type="button">
-            </input>
-            <#text>
+           </#text>
+           <input value="Show" onclick="show();" type="button">
+           </input>
+           <#text>
 
-            </#text>
-         </form>
-         <#text>
+           </#text>
+        </form>
+        <#text>
 
-         </#text>
-      </body>
-   </html>
+        </#text>
+     </body>
+  </html>
 </#document>
 ```
 
 ### 关于此 Firefox 结果的几点说明：
 
-- HTML 标签之间的换行符被保留为空的“text”节点。
-- 由“body”部分中短 JavaScript 的 `document.write()` 函数生成的“p”节点紧接插入在“script”节点之后。
-
-JavaScript 教程 - Herong 的教程示例
-
-∟W3C 文档对象模型 (DOM) 规范
+*   HTML 标签之间的换行符被保留为空的“text”节点。
+*   由“body”部分中短 JavaScript 的 `document.write()` 函数生成的“p”节点紧接插入在“script”节点之后。
 
 ### 在新窗口中导出文档 - IE 6.0 结果
 
@@ -7994,57 +7432,54 @@ JavaScript 教程 - Herong 的教程示例
 如果你在 IE 6.0 中运行 JavaScript 页面 `DOM_HTML_Document_Dump.html`，你将在新窗口中获得“document” XML 导出结果：
 
 ```
- <#document>
-   <html language="" dataFld="" onmouseup="" class="" oncontextmenu=""...
-      <head language="" dataFld="" onmouseup="" class="" oncontextmenu...
-         <title language="" dataFld="" onmouseup="" class="" oncontext...
-         </title>
-         <#comment>
-             DOM_HTML_Document_Dump.html
+<#document>
+  <html language="" dataFld="" onmouseup="" class="" oncontextmenu=""...
+     <head language="" dataFld="" onmouseup="" class="" oncontextmenu...
+        <title language="" dataFld="" onmouseup="" class="" oncontext...
+        </title>
+        <#comment>
+            DOM_HTML_Document_Dump.html
    Copyright (c) HerongYang.com. All Rights Reserved.
 
-         </#comment>
-         <script language="" dataFld="" onmouseup="" class="" oncontex...
-         </script>
-      </head>
-      <body language="" dataFld="" onmouseup="" class="" oncontextmenu...
-         <script language="" dataFld="" onmouseup="" class="" oncontex...
-         </script>
-         <p language="" dataFld="" onmouseup="" class="" oncontextmenu...
-            <#text>
-               点击在新窗口中显示文档： 
-            </#text>
-            <form language="" dataFld="" onmouseup="" class="" onconte...
-               <input language="" dataFld="" onmouseup="" class="" onc...
-               </input>
-               <#text>
+        </#comment>
+        <script language="" dataFld="" onmouseup="" class="" oncontex...
+        </script>
+     </head>
+     <body language="" dataFld="" onmouseup="" class="" oncontextmenu...
+        <script language="" dataFld="" onmouseup="" class="" oncontex...
+        </script>
+        <p language="" dataFld="" onmouseup="" class="" oncontextmenu...
+           <#text>
+              点击在新窗口中显示文档： 
+           </#text>
+           <form language="" dataFld="" onmouseup="" class="" onconte...
+              <input language="" dataFld="" onmouseup="" class="" onc...
+              </input>
+              <#text>
 
-               </#text>
-            </form>
-         </p>
-      </body>
-   </html>
+              </#text>
+           </form>
+        </p>
+     </body>
+  </html>
 </#document>
 ```
 
 ### 关于此 IE 6.0 结果的几点说明：
 
-- 对于每个节点，IE 添加了许多默认属性，如 `language`、`dataFld`、`onmouseup`、`class`、`oncontextmenu` 等。
-- “script”标签的内容未表示为 `nodeValue`。这就是为什么输出中没有包含源代码。
-- HTML 标签之间的换行符被忽略了。
-
-JavaScript 教程 - Herong 的教程示例
+*   对于每个节点，IE 添加了许多默认属性，如 `language`、`dataFld`、`onmouseup`、`class`、`oncontextmenu` 等。
+*   “script”标签的内容未表示为 `nodeValue`。这就是为什么输出中没有包含源代码。
+*   HTML 标签之间的换行符被忽略了。
 
 ### 参考文献
 
 本书使用的参考资料。
 
-- *ECMA-262 - ECMAScript Language 规范*，第三版，1999 年 12 月，ECMA，[`www.ecma-international.org/publications/Ecma-262.htm`](http://www.ecma-international.org/publications/Ecma-262.htm)
-- *JavaScript 参考*，Mozilla，2020 年，[`developer.mozilla.org/en-US/docs/Web/Reference`](https://developer.mozilla.org/en-US/docs/Web/Reference)
-- *JavaScript 1.8 中的新特性*，Mozilla，2008 年，[`developer.mozilla.org/en/docs/New_in_JavaScript_1.8`](http://developer.mozilla.org/en/docs/New_in_JavaScript_1.8)
-- *Core JavaScript 1.5 指南*，Mozilla，[`developer.mozilla.org/en/docs/Core_JavaScript_1.5_Guide`](http://developer.mozilla.org/en/docs/Core_JavaScript_1.5_Guide)
-- *Core JavaScript 1.5 参考*，Mozilla，[`developer.mozilla.org/en/docs/Core_JavaScript_1.5_Reference`](http://developer.mozilla.org/en/docs/Core_JavaScript_1.5_Reference)
-- *文档对象模型 (DOM) 技术报告*，W3C，[`www.w3.org/DOM/DOMTR`](http://www.w3.org/DOM/DOMTR)
-- *Gecko DOM 引用*，Mozilla，2007 年，[`developer.mozilla.org/en/docs/Gecko_DOM_Reference`](http://developer.mozilla.org/en/docs/Gecko_DOM_Reference)
-- *JavaScript 中的私有成员*，Douglas Crockford，2001 年，[`www.crockford.com/javascript/private.html`](http://www.crockford.com/javascript/private.html)
-
+*   *ECMA-262 - ECMAScript Language 规范*，第三版，1999 年 12 月，ECMA，[`www.ecma-international.org/publications/Ecma-262.htm`](http://www.ecma-international.org/publications/Ecma-262.htm)
+*   *JavaScript 参考*，Mozilla，2020 年，[`developer.mozilla.org/en-US/docs/Web/Reference`](https://developer.mozilla.org/en-US/docs/Web/Reference)
+*   *JavaScript 1.8 中的新特性*，Mozilla，2008 年，[`developer.mozilla.org/en/docs/New_in_JavaScript_1.8`](http://developer.mozilla.org/en/docs/New_in_JavaScript_1.8)
+*   *Core JavaScript 1.5 指南*，Mozilla，[`developer.mozilla.org/en/docs/Core_JavaScript_1.5_Guide`](http://developer.mozilla.org/en/docs/Core_JavaScript_1.5_Guide)
+*   *Core JavaScript 1.5 参考*，Mozilla，[`developer.mozilla.org/en/docs/Core_JavaScript_1.5_Reference`](http://developer.mozilla.org/en/docs/Core_JavaScript_1.5_Reference)
+*   *文档对象模型 (DOM) 技术报告*，W3C，[`www.w3.org/DOM/DOMTR`](http://www.w3.org/DOM/DOMTR)
+*   *Gecko DOM 引用*，Mozilla，2007 年，[`developer.mozilla.org/en/docs/Gecko_DOM_Reference`](http://developer.mozilla.org/en/docs/Gecko_DOM_Reference)
+*   *JavaScript 中的私有成员*，Douglas Crockford，2001 年，[`www.crockford.com/javascript/private.html`](http://www.crockford.com/javascript/private.html)

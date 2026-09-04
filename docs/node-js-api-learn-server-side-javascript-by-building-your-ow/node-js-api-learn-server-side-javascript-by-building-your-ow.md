@@ -1,15 +1,5 @@
+
 # Node.js API：通过从零构建自己的 Node.js 服务器学习服务器端 JavaScript
-
-
-
-
-
-
-
-
-
-
-
 
 编辑、志愿者、贡献者：Grace Neufeld。
 
@@ -21,10 +11,7 @@ Learning Curve Books 出版公司的主要目标是为 Web 设计师、软件工
 
 ## 特别优惠与折扣
 
-学校、图书馆和教育机构可能享受特殊价格。请通过 hello@learningcurvebook.net 与我们的发行部门联系。
-
-
-
+学校、图书馆和教育机构可能享受特殊价格。请通过 `hello@learningcurvebook.net` 与我们的发行部门联系。
 
 ## Node.js API
 
@@ -32,15 +19,15 @@ Learning Curve Books 出版公司的主要目标是为 Web 设计师、软件工
 
 学习服务器端 JavaScript 并从零开始构建自己的安全生产级 Node 服务器。
 
-- 从您电脑上的 localhost 托管自定义应用程序。（本地环境）
+- 从您电脑上的 `localhost` 托管自定义应用程序。（本地环境）
 - 在带有 HTTPS 证书的静态域名上托管自定义应用程序。（生产环境）
 - 构建 API 端点服务器 - 自定义应用程序的命。
 - 学习如何编写所有常见的 API 端点，或从 GitHub 下载完整的源代码。
-- 使用在第二台服务器上生成的 AuthToken 对您的 API 调用进行身份验证。
+- 使用在第二台服务器上生成的 `AuthToken` 对您的 API 调用进行身份验证。
 
 GitHub 项目：
-从此书中分支或下载完整的 Node API 源代码：https://www.github.com/javascriptteacher/node
 
+从此书中分支或下载完整的 Node API 源代码：`https://www.github.com/javascriptteacher/node`
 
 这本书介绍了如何从零开始构建您自己的 Node 服务器。
 
@@ -50,21 +37,16 @@ Node API – 如标题所示 – 将重点关注直接使用原生 JavaScript �
 
 这本书适合那些喜欢从底层开始理解基于 Node 的 Web 应用程序如何运作，且不希望添加更多抽象层的人。这里有许多可以学习的课程。即使对于那些以后选择转向 Express、MERN 或 MEAN 栈架构的人也是如此。
 
-编写服务器端应用程序无法通过 Node 完成。在某一点，您将需要与数据库通信以存储用户数据、电子邮件和密码等。由于没有特殊原因，我们决定使用 MySQL 模块。如果您已经熟悉 MongoDB，重写 API 函数以支持它应该并不困难。本书将重点关注整体 API 节点架构。
+编写服务器端应用程序无法通过 Node 完成。在某一点，您将需要与数据库通信以存储用户数据、电子邮件和密码等。由于没有特殊原因，我们决定使用 `MySQL` 模块。如果您已经熟悉 `MongoDB`，重写 API 函数以支持它应该并不困难。本书将重点关注整体 API 节点架构。
 
 尽管将涵盖许多不同的主题，但我认为可以说，这归结底是一本写给初学者的书。适合第一次接触 JavaScript 服务器端编程的人。
 
 Node API 是一本可以作为教程指南来阅读的书：简短章节包含了进入下一步所需的设置或代码。因此，按照线性顺序从头到尾阅读这本书至关重要。
 
-
-  - 2.1 Mac . . . . . . . . . . . . . . . . . . . . . . . . . . . 8
+- 2.1 Mac . . . . . . . . . . . . . . . . . . . . . . . . . . . 8
 - 3.1 项目主目录 . . . . . . . . . . . . . . . . . . . 18
 - 3.7 恭喜！. . . . . . . . . 26
 - 4 构建 API
-
-
-
-
 
 # NODE.JS
 
@@ -78,7 +60,7 @@ Node API 是一本可以作为教程指南来阅读的书：简短章节包含�
 
 对于前端开发者来说，它就像一个产生控制台错误的黑盒。
 
-如果你想在初创公司担任后端工程师，深入了解服务器的工作原理是必不可少的经验。但即使你是一个端端开发者，了解如何设置服务器也会扩展你的技能树，并可能增加获得全栈开发师工作的机会。
+如果你想在初创公司担任后端工程师，深入了解服务器的工作原理是必不可少的经验。但即使你是一个前端开发者，了解如何设置服务器也会扩展你的技能树，并可能增加获得全栈开发师工作的机会。
 
 在今天，前端开发者知道如何与服务器交互已并不罕见。只要你学会了如何设置自己的服务器，你就赢了。
 
@@ -90,23 +72,23 @@ Node API 是一本可以作为教程指南来阅读的书：简短章节包含�
 
 我们将为你提供 `api.js` 模块用于注册用户和验证 HTTP 请求——以便从数据库读取和写入数据。这让你能够创建你想象到的几乎任何应用程序。
 
-本书包含了一些示例，你可以直接将其复制并粘贴到 Mac 的 Terminal 或 Windows 的 cmd.exe（或 Windows 10 的 bash.exe）中，但我们鼓励你手动输入。这是提高命令行操作能力的唯一途径——这项技能会让你成为一名更高效的软件开发人员。
+本书包含了一些示例，你可以直接将其复制并粘贴到 Mac 的 `Terminal` 或 Windows 的 `cmd.exe`（或 Windows 10 的 `bash.exe`）中，但我们鼓励你手动输入。这是提高命令行操作能力的唯一途径——这项技能会让你成为一名更高效的软件开发人员。
 
-你可能需要获取 Web 主机将你的服务器部署到网上，但在 `localhost` 上的过程与在的地方是相同的。只是托管解决方案会额外通过 IP 地址将你的服务器 `localhost` 环境路由到你的浏览器。
+你可能需要获取 Web 主机将你的服务器部署到网上，但在 `localhost` 上的过程与在生产环境的地方是相同的。只是托管解决方案会额外通过 IP 地址将你的服务器 `localhost` 环境路由到你的浏览器。
 
 # 第1 章
 
 ## bash.exe
 
-你知道吗？从 Windows 10 开始，你可以直接在 Windows 电脑上类似于 Linux 的 bash 环境中工作？
+你知道吗？从 Windows 10 开始，你可以直接在 Windows 电脑上类似于 Linux 的 `bash` 环境中工作？
 
 你可以在 Windows 10 控制面板中启用它：
 
 ![](img/aad9680d7dc58780e0f8fc70276d7011_9_0.png)
 
-图 1.1：检查适用于 Linux 的 Windows系统（默认关闭。）
+图 1.1：检查适用于 Linux 的 Windows 子系统（默认关闭。）
 
-现在有了 **bash.exe**，执行时显示如下：
+现在有了 `bash.exe`，执行时显示如下：
 
 ```
 MINGW64:/c/Users/Greg
@@ -126,35 +108,35 @@ IdeaProjects/
 
 在书中，我们将探索在 Mac、Windows 和 Linux 上安装 Node。
 
-只展示一个操作系统的控制台示例是不公平的。章节将在 Windows 的 **bash.exe** 和 Mac 的 **Terminal** 之间来切换。
+只展示一个操作系统的控制台示例是不公平的。章节将在 Windows 的 `bash.exe` 和 Mac 的 `Terminal` 之间来切换。
 
-像 **npm install package_name**（使用 Node 包管理器安装 node 软件包）或 **node index.js**（在 Node 服务器上运行 **index.js**）这样的命令在所有操作系统上都是相同的。
+像 `npm install package_name`（使用 Node 包管理器安装 node 软件包）或 `node index.js`（在 Node 服务器上运行 `index.js`）这样的命令在所有操作系统上都是相同的。
 
 ### 1.0.1 什么是 bash.exe？
 
-**bash.exe** 基于 **Project Astoria**，该项目旨在 Windows 上运行 Android 程序。
+`bash.exe` 基于 `Project Astoria`，该项目旨在 Windows 上运行 Android 程序。
 
-在 Linux 上，我们有 Wine 来运行 Windows 命令。
+在 Linux 上，我们有 `Wine` 来运行 Windows 命令。
 
-但 **bash.exe** 就像 Wine 的反向操作。它允许你在 Windows 上运行基于 Linux 的命令。因此，**bash.exe** 并不是 Linux 内核。它只是在 Windows 上执行相同 Linux 二进制文件的方法。
+但 `bash.exe` 就像 `Wine` 的反向操作。它允许你在 Windows 上运行基于 Linux 的命令。因此，`bash.exe` 并不是 Linux 内核。它只是在 Windows 上执行相同 Linux 二进制文件的方法。
 
 ### 1.0.2 Windows 版 Ubuntu？
 
-等一下。仅仅在 Windows 10 设置中启用 bash.exe 是不够的。这样你只能得到 `ls` 和 `ssh` 等基础命令。如果你只需要登录远程 Linux 主机，可以跳过本节。
+等一下。仅仅在 Windows 10 设置中启用 `bash.exe` 是不够的。这样你只能得到 `ls` 和 `ssh` 等基础命令。如果你只需要登录远程 Linux 主机，可以跳过本节。
 
-然而，使用目前的 bash.exe 你将没有 `sudo`、`apt`、`apt-get` 等许多命令。为了获取它们，你需要从 Windows Store 获取 Ubuntu。
+然而，使用目前的 `bash.exe` 你将没有 `sudo`、`apt`、`apt-get` 等许多命令。为了获取它们，你需要从 Windows Store 获取 Ubuntu。
 
 ![](img/aad9680d7dc58780e0f8fc70276d7011_11_0.png)
 
 图 1.3：适用于 Windows 的 Ubuntu。
 
-Windows 版 Ubuntu 是免费的。只需在 Windows Store 中找到它并下载。按照简单的指令完成安装。恭喜！你现在可以在 Windows 10 的 bash.exe 上使用 Ubuntu 命令了。你可以使用 Debian 等任何 Linux 发行版吗？可以！只需在微软商店查找即可。你甚至可以进行设置，在同一台 Windows 电脑上运行多个发行版。
+Windows 版 Ubuntu 是免费的。只需在 Windows Store 中找到它并下载。按照简单的指令完成安装。恭喜！你现在可以在 Windows 10 的 `bash.exe` 上使用 Ubuntu 命令了。你可以使用 Debian 等任何 Linux 发行版吗？可以！只需在微软商店查找即可。你甚至可以进行设置，在同一台 Windows 电脑上运行多个发行版。
 
 ## 1.1 从 Apache 迁移到 Node
 
 许多人仍在使用 PHP 服务器。这有充分的理由，而且 PHP 本身没有任何问题。
 
-只是 Node 服务器更多地被运行 React 等库的应用程序使用，这可以大幅度加速 UI 组件的开发。我认为即使对于构建个人项目的独立开发者来说，Node 也是更好的，因为你可以同时在前端和后端使用 JavaScript。
+只是 Node 服务器更多地被运行 `React` 等库的应用程序使用，这可以大幅度加速 UI 组件的开发。我认为即使对于构建个人项目的独立开发者来说，Node 也是更好的，因为你可以同时在前端和后端使用 JavaScript。
 
 如果你是从 PHP 转向 Node 的，你可能熟悉 `jQuery.ajax` 和 `fetch` API，用于从 JavaScript 前端调用 PHP 编写的脚本。这意味着你只需要执行一个简单的操作，就必须掌握两种语言！
 
@@ -166,7 +148,7 @@ Windows 版 Ubuntu 是免费的。只需在 Windows Store 中找到它并下载�
 
 ## 1.2 Node 库和框架
 
-在 Terminal 或 cmd（Windows 上）中用一个命令直接安装库或框架是非常诱人的，并看着你的应用程序神奇地出现在浏览器中（在 `localhost`）。
+在 `Terminal` 或 `cmd`（Windows 上）中用一个命令直接安装库或框架是非常诱人的，并看着你的应用程序神奇地出现在浏览器中（在 `localhost`）。
 
 但通过这样做，我们并没有获得服务器整体架构以及整合所有部分时需要做的逻辑的经验。如果你选择这条路线，当错误出现时，你可能不知道发生了什么，并花费几个小时进行调试。
 
@@ -194,15 +176,11 @@ Windows 版 Ubuntu 是免费的。只需在 Windows Store 中找到它并下载�
 
 ## 本地与生产开发环境
 
-你可以将设置 Node 等同于设置你的开发环境。一旦你学会了如何在 `localhost` 上运行服务器，就可以将其部署到远程 IP 地址，并在应用程序的实际域名上运行。不要直接在生产服务器上进行开发。如果你从未担任过软件开发人员，你可能想避免养成这种习惯。在工作环境中，所有软件首先在本地开发，然后提交到如 **GitHub** 之类的分布式版本控制系统中。
-
-
-
-
+你可以将设置 Node 等同于设置你的开发环境。一旦你学会了如何在 `localhost` 上运行服务器，就可以将其部署到远程 IP 地址，并在应用程序的实际域名上运行。不要直接在生产服务器上进行开发。如果你从未担任过软件开发人员，你可能想避免养成这种习惯。在工作环境中，所有软件首先在本地开发，然后提交到如 `GitHub` 之类的分布式版本控制系统中。
 
 ## 2.1 Mac
 
-你可能想要学习如何从命令行安装程序。Mac 和 Linux 可能有不同的程序安装管理器。在 OSX 上，你通常使用 brew、yum 或 port（参见 macports.org）命令。在 Linux 上，通常是 `apt-get`，或者更常见的直接用 `apt`。你可能应该使用 `apt`。
+你可能想要学习如何从命令行安装程序。Mac 和 Linux 可能有不同的程序安装管理器。在 OSX 上，你通常使用 `brew`、`yum` 或 `port`（参见 macports.org）命令。在 Linux 上，通常是 `apt-get`，或者更常见的直接用 `apt`。你可能应该使用 `apt`。
 
 在基于 Linux 的操作系统上以某些方式安装包的原因是由于许多开源发行版（Debian, Ubuntu, Fedora, Arch, CentOS...等）每一个都有其独特的种类和版本历史。
 
@@ -210,7 +188,7 @@ Windows 版 Ubuntu 是免费的。只需在 Windows Store 中找到它并下载�
 
 如果你已经有了 `apt` 但想在 OSX 上使用 `brew` —— 有人认为它更好 —— 请运行 `install linuxbrew-wrapper`。
 
-现在你可以使用 `brew` 安装如 nodejs 等包，例如：
+现在你可以使用 `brew` 安装如 `nodejs` 等包，例如：
 
 只需在 OSX 的终端中运行 `brew install nodejs` 即可安装 Node。
 
@@ -226,21 +204,19 @@ Windows 版 Ubuntu 是免费的。只需在 Windows Store 中找到它并下载�
 
 发生的一切只是定位、下载并将程序文件复制到你的硬盘上。
 
-在安装完 nodejs 和 mysql 等包后，你通常需要配置并运行它们。我们将在书中介绍这一过程！
-
-## 2.2 WINDOWS
+在安装完 `nodejs` 和 `mysql` 等包后，你通常需要配置并运行它们。我们将在书中介绍这一过程！
 
 ## 2.2 Windows
 
 要在 Windows 上开始操作，按住 Windows 键并按 R。
 
-在弹出的框中输入 **cmd** 并按回车。
+在弹出的框中输入 `cmd` 并按回车。
 
 命令行窗口将打开，看起来像这样：
 
 ![](img/aad9680d7dc58780e0f8fc70276d7011_17_0.png)
 
-要查看 node 是否已经安装，输入 **node** 并按回车：
+要查看 node 是否已经安装，输入 `node` 并按回车：
 
 ![](img/aad9680d7dc58780e0f8fc70276d7011_17_1.png)
 
@@ -248,9 +224,7 @@ Windows 版 Ubuntu 是免费的。只需在 Windows Store 中找到它并下载�
 
 ## 2.3 在 Windows 上安装 Node
 
-某些较旧的笔记本电脑或 PC 可能还是 32 位的。所以，如果你不确定，在 **cmd** 窗口中运行以下命令：**wmic os get osarchitecture**
-
-## 第 2 章 安装
+某些较旧的笔记本电脑或 PC 可能还是 32 位的。所以，如果你不确定，在 `cmd` 窗口中运行以下命令：`wmic os get osarchitecture`
 
 ```
 C:\WINDOWS\system32\cmd.exe
@@ -260,9 +234,10 @@ OSArchitecture
 C:\Users\Greg>
 ```
 
-图 2.1: 运行：wmic os get osarchitecture
+图 2.1: 运行：`wmic os get osarchitecture`
 
 看起来我的电脑是 64 位的，正如我想的那样！
+
 要在 Windows 上安装 Node，首先前往 Node 官方网站：
 
 | LTS | | Current |
@@ -273,7 +248,7 @@ C:\Users\Greg>
 | Windows 安装程序 (.msi) | 32-bit | 64-bit |
 | Windows Binary (.zip) | 32-bit | 64-bit |
 
-图 2.2: URL: https://nodejs.org/en/download/
+图 2.2: URL: `https://nodejs.org/en/download/`
 
 只需选择 Windows Installer 和 32-位或 64-位版本。我选择了 64-位版本，因为我的电脑是 64 位的。你的很可能也是。
 
@@ -286,17 +261,17 @@ node-v10.15.3-x64.msi
 
 这将开始 Windows 安装过程。随处点击 Next 即可。
 
-## 2.4. 全局配置 Node 服务器
+## 2.4 全局配置 Node 服务器
 
 ![](img/aad9680d7dc58780e0f8fc70276d7011_19_0.png)
 
-图 2.4: 我选择了默认路径 C:\Program Files\nodejs
+图 2.4: 我选择了默认路径 `C:\Program Files\nodejs`
 
 ## 2.4 全局配置 Node 服务器
 
-有时你希望能够从硬盘上的任何位置调用 node 命令。这是因为你的根应用程序文件夹可能位于任何地方。
+有时你希望能够从硬盘上的任何位置调用 `node` 命令。这是因为你的根应用程序文件夹可能位于任何地方。
 
-既然我们已经用 Windows 安装程序安装了 Node，我们应该能够从命令行运行 node 命令，对吧？
+既然我们已经用 Windows 安装程序安装了 Node，我们应该能够从命令行运行 `node` 命令，对吧？
 
 ```
 C:\WINDOWS\system32\cmd.exe
@@ -312,33 +287,31 @@ C:\Users\Greg>>
 
 我们仍然无法全局启动 node。
 
-为了运行 node 命令，你必须处于安装 Node 的目录，即 node.exe 可执行文件所在的地方。
+为了运行 `node` 命令，你必须处于安装 Node 的目录，即 `node.exe` 可执行文件所在的地方。
 
-早些我们把 Node 安装到了 C:\Program Files\nodejs
+早些我们把 Node 安装到了 `C:\Program Files\nodejs`
 
 通过输入 `cd C:\Program Files\nodejs` 导航到该目录。
 
 ![](img/aad9680d7dc58780e0f8fc70276d7011_20_0.png)
 
-现在我们到了那里，执行 node 命令：
+现在我们到了那里，执行 `node` 命令：
 
 ![](img/aad9680d7dc58780e0f8fc70276d7011_20_1.png)
 
-你的光标将变为右 >
+你的光标将变为右 `>`
 
 这意味着 node 正在运行并等待你的代码！你可以看到 Node 的工作（几乎）就像你在 Chrome 中运行 JavaScript 代码一样。这是因为 Node 运行在与 Chrome 相同的 JavaScript 引擎（V8）（带有有一些细微区别）。
 
 ![](img/aad9680d7dc58780e0f8fc70276d7011_20_2.png)
 
-这意味着我们可以启动 node 并执行 JavaScript 代码。你可以给 node 提供一个 index.js 文件来执行，而不是在 cmd 中输入代码。我们稍后会看。
-
-## 2.5 允许 Node 从任何目录运行
+这意味着我们可以启动 node 并执行 JavaScript 代码。你可以给 node 提供一个 `index.js` 文件来执行，而不是在 cmd 中输入代码。我们稍后会看。
 
 ## 2.5 允许 Node 从任何目录运行
 
 在上一节中，我们在实例化的 node 上运行了一些 JavaScript 代码。但如果你创建了新项目，它们可能位于不同的文件夹，而我们刚刚看到默认情况下 node 无法在其安装文件夹之外运行。
 
-解决方案是将 node.exe 的路径包含你的环境变量中。
+解决方案是将 `node.exe` 的路径包含你的环境变量中。
 
 ```
 C:\WINDOWS\system32\cmd.exe
@@ -348,7 +321,7 @@ C:\Users\Greg>rundll2 sysdm.cpl,EditVariables
 C:\Users\Greg>
 ```
 
-图 2.5: 运行：rundll2 sysdm.cpl,EditVariables
+图 2.5: 运行：`rundll2 sysdm.cpl,EditVariables`
 
 运行命令 `rundll2 sysdm.cpl,EditVariables` 将打开 Windows 变量编辑器：
 
@@ -356,17 +329,15 @@ C:\Users\Greg>
 
 图 2.6: 环境变量窗口的上半。
 
-## 第 2 章 安装
+在环境变量窗口的上部框中（显示 user variables for UserName 的地方），点击 `Path` 并点击 `Edit...`。
 
-在环境变量窗口的上部框中（显示 user variables for UserName 的地方），点击 **Path** 并点击 **Edit...**。
-
-在下一个窗口中，点击 **New** 并在新行输入 **C:\Program Files\nodejs**：
+在下一个窗口中，点击 `New` 并在新行输入 `C:\Program Files\nodejs`：
 
 ![](img/aad9680d7dc58780e0f8fc70276d7011_22_0.png)
 
 图 2.7: 环境变量窗口的底部。
 
-点击 **OK**，然后在底层窗口再次点击 **OK**。
+点击 `OK`，然后在底层窗口再次点击 `OK`。
 
 这就完成了！现在我们可以从硬盘上的任何地方运行 node：
 
@@ -374,19 +345,20 @@ C:\Users\Greg>
 
 图 2.8: 现在你可以从任何地方运行 node。
 
-输入 **node** 然后输入 `console.log("Node Anywhere.")` 查看输出。
+输入 `node` 然后输入 `console.log("Node Anywhere.")` 查看输出。
 
-`console.log` 函数返回 `undefined`因为它不是表达式。如果你想了解更多 JavaScript，请查看 JavaScript Grammar (www.javascriptgrammar.com) 获取副本。
+`console.log` 函数返回 `undefined`因为它不是表达式。如果你想了解更多 JavaScript，请查看 JavaScript Grammar (`www.javascriptgrammar.com`) 获取副本。
 
 ## 2.6 退出 Node
 
 在输入了一些 JavaScript 后，我们仍然停留在 Node 中。
-要退出，连续两次 Ctrl + C 键。
+
+要退出，连续两次 `Ctrl + C` 键。
 
 ```
 Command Prompt
 C:\Users\Greg>node
-> console.log("Hello there.");
+> console.log("Hello there.")
 Hello there.
 undefined
 >(要退出，再次按 ^C 或输入 .exit)
@@ -400,9 +372,9 @@ C:\Users\Greg>
 
 # 第 3 章 运行应用程序
 
-到为止，我们只是在硬盘上安装了一个静止的 node.exe。
+到为止，我们只是在硬盘上安装了一个静止的 `node.exe`。
 
-但我们如何实际运行自己的应用程序，以便在浏览器向其请求时提供 index.html 或系统上的任何其他文件呢？
+但我们如何实际运行自己的应用程序，以便在浏览器向其请求时提供 `index.html` 或系统上的任何其他文件呢？
 
 我们稍后会介绍这一点。但首先，让我们设置项目目录。它可以位于计算机的任何地方——请明智选择。
 
@@ -410,33 +382,29 @@ C:\Users\Greg>
 
 这是我最喜欢的部分。我们将决定 Node 应用程序位于硬盘的哪里。
 
-我知道全局全局安装了 Node，但项目通常位于本地文件夹，例如 C:\app
+我知道全局全局安装了 Node，但项目通常位于本地文件夹，例如 `C:\app`
 
 让我们使用 `cd C:\` 命令导航到 C 盘：
 
 ![](img/aad9680d7dc58780e0f8fc70276d7011_26_0.png)
 
-然后，使用 `mkdir app` 创建新目录 C:\app 并通过 `cd app` 进入。
+然后，使用 `mkdir app` 创建新目录 `C:\app` 并通过 `cd app` 进入。
 
 ## 3.2 通过 Node 运行文件
 
 与其在命令行中输入所有代码，我们可以传递一个 JavaScript 文件让 node 执行。
 
-创建新文件 index.js 作为 C:\app\index.js 并在其中输入：
+创建新文件 `index.js` 作为 `C:\app\index.js` 并在其中输入：
 
 ```
 001 console.log(process); // 输出原生 Node process 对象
 ```
 
-你不需要导入或引入任何模块即可使用 process 对象。
+你不需要导入或引入任何模块即可使用 `process` 对象。
 
 它默认在你的应用程序的模块作用域中可用。
 
-
-
-
-
-## 3.2. 通过 NODE 运行文件
+## 3.2 通过 NODE 运行文件
 
 让我们通过 node 运行 `index.js` 文件看看会发生什么。确保你处于 `C:\app` 目录，并在 cmd 中输入以下命令：
 
@@ -444,7 +412,7 @@ C:\Users\Greg>
 C:\app>node index.js
 ```
 
-图 3.1：运行：node index.js
+图 3.1：运行：`node index.js`
 
 `node index.js` 必须在包含 `index.js` 文件的文件夹中执行。
 
@@ -456,7 +424,7 @@ C:\app>node index.js
 
 ## 3.3 process 对象
 
-在我们的 `index.js` 中，`console.log(process)` 输出 process 对象的内容：
+在我们的 `index.js` 中，`console.log(process)` 输出 `process` 对象的内容：
 
 ```
 C:\app\node index.js
@@ -498,16 +466,17 @@ Module {
   paths: ['C:\app\node_modules', 'C:\node_modules'] } }
 ```
 
-图 3.2：打印 process 对象的内容。
+图 3.2：打印 `process` 对象的内容。
 
-这个 Node process 对象包含了各种实用的配置属性。
+这个 Node `process` 对象包含了各种实用的配置属性。
+
 例如，`process.versions.v8` 告诉你正在运行的 V8 引擎。
 
 ## 3.4 为 INDEX.JS 添加包
 
 Node 默认带有约 349 个包。它们也被称为模块（modules）。模块存储在你的 node 安装文件夹（在我们的案例中为 `C:\Program Files\nodejs`）下的 `node_modules` 中。
 
-你可能也可以在 nodejs\npm 文件夹中找到它们：`C:\Program Files\nodejs\node_modules\npm\node_modules\`
+你可能也可以在 `nodejs\npm` 文件夹中找到它们：`C:\Program Files\nodejs\node_modules\npm\node_modules\`
 
 在浏览器端 JavaScript 代码中，你可以使用 `import / export` 关键字。但除此之外，你还可以使用 `require` 关键字从主 NPM 仓库向你的应用添加实用的模块。
 
@@ -529,11 +498,11 @@ Node 假设 `node_modules` 目录存在 `path` 模块。如果不存在，你可
 c:\app>node index.js
 ```
 
-> 图 3.3：运行：node index.js
+> 图 3.3：运行：`node index.js`
 
 ![](img/aad9680d7dc58780e0f8fc70276d7011_29_0.png)
 
-> 图 3.4：输出：.js
+> 图 3.4：输出：`.js`
 
 ## 3.5 下一步
 
@@ -571,11 +540,12 @@ c:\app>node index.js
 C:\app>node index.js
 ```
 
-注意，我们使用了 127.0.0.1（同于 localhost）和端口 3000。
+注意，我们使用了 `127.0.0.1`（同于 `localhost`）和端口 `3000`。
 
 ## 3.7 恭喜！
 
 现在你的计算机上运行着一个后端服务器。
+
 保持 cmd 窗口打开，并在浏览器中粘贴 `http://127.0.0.1:3000`。
 
 ## 3.8 持续提供文件
@@ -632,12 +602,9 @@ C:\app>node index.js
 047 console.log('Running at ' + ip + ':' + port + '/');
 ```
 
-
-
-
 使用上述代码更新 `index.js`，并再次从浏览器请求 `127.0.0.1:3000/index.html` 或 `localhost:3000/index.html`。
 
-如果 `index.html` 存在于项目根目录（C:\app），它将被发送到你的浏览器并显示内容。
+如果 `index.html` 存在于项目根目录（`C:\app`），它将被发送到你的浏览器并显示内容。
 
 但如果请求的 `index.html` 不存在，浏览器将通过插入空白的 `<html></html>` 标签返回空白页面，以实现空白视图。
 
@@ -677,15 +644,11 @@ C:\app>node index.js
 
 这是一个获取用户信息的 API 端点示例：
 
-```
-http://localhost:3000/api/user/get
-```
+`http://localhost:3000/api/user/get`
 
 这是一个设置用户信息的 API 端点示例：
 
-```
-http://localhost:3000/api/user/set
-```
+`http://localhost:3000/api/user/set`
 
 当请求此种类型的 URL 时，我们将取消提供文件，运行一些服务器端命令并返回结果。
 
@@ -730,11 +693,10 @@ module.exports = API;
 
 静态函数 `API.exec` 将执行命令。
 
-## 4.1. 构建端点 API
-
 ### 4.1.1 将 API 类集成到我们的服务器中
 
 现在我们已经准备好了 API 类，让我们在 `index.js` 中添加 API 功能。
+
 更改很小，它们在下方高亮显示。
 
 在 `index.js` 的第 004 行添加以下行：
@@ -782,7 +744,7 @@ module.exports = API;
 
 ## 4.2 安装 MySQL 模块
 
-在我们继续之前，请确保在你的 cmd 或 Windows Terminal 或 bash.exe（是的，Windows 10+ 拥有自己的 Linux-bash.exe）或 Terminal（OSX/Linux）执行以下命令安装 npm mysql 模块：
+在我们继续之前，请确保在你的 `cmd` 或 Windows Terminal 或 `bash.exe`（是的，Windows 10+ 拥有自己的 Linux-bash.exe）或 `Terminal`（OSX/Linux）执行以下命令安装 npm mysql 模块：
 
 ```
 Command Prompt
@@ -799,9 +761,10 @@ found 0 vulnerabilities
 C:\Users\Greg>_
 ```
 
-图 4.1：在 cmd 上执行 npm install mysql 安装 MySQL。
+图 4.1：在 cmd 上执行 `npm install mysql` 安装 MySQL。
 
 我已经安装了 mysql，你的输出可能会有些不同。
+
 在 mysql 安装期间，你可能需要输入 Y 并按回车键。
 
 ```
@@ -816,50 +779,55 @@ C:\Users\Greg>_
 
 ### 4.2.2 设置 MySQL 服务器
 
-### 4.2.2.1 在 Windows 上本地地安装 MySQL
+#### 4.2.2.1 在 Windows 上本地地安装 MySQL
 
-### 4.2.2.2 在 Ubuntu 上安装 MySQL 服务器
+#### 4.2.2.2 在 Ubuntu 上安装 MySQL 服务器
 
-
-
-## 5.1. MySQL
+## 5.1 MySQL
 
 安装将开始，文件将开始下载到你的硬盘。
+
 此时，你将看到屏幕上流过大量的命令。
+
 如果被问任何问题，请输入 Y / yes 并按回车。
 
 ### 允许 mysql程序的入站和出站流量：
 
-假设 mysql 安装成功，你现在可以使用 ufw 实用程序（代表 Uncomplicated Firewall，即不复杂的防火墙）。
+假设 mysql 安装成功，你现在可以使用 `ufw` 实用程序（代表 Uncomplicated Firewall，即不复杂的防火墙）。
 
 ![](img/aad9680d7dc58780e0f8fc70276d7011_43_0.png)
 
-注意，我们的命令以 `sudo` 开头，这仅仅是使用另一个用户的安全权限运行任何程序（在此例中为 ufw）。
-sudo 原意是 superuser（超级用户），因为在旧版本的 Linux 版本中，它被设计为仅以超级用户（通常是 root）运行。现在，可以使用它使用系统上的任何用户名/密码对来执行命令。由于上述原因，sudo 缩写的含义被优雅地重新定义，用 user 代替了 super。
+注意，我们的命令以 `sudo` 开头，这仅仅是使用另一个用户的安全权限运行任何程序（在此例中为 `ufw`）。
+
+`sudo` 原意是 `superuser`（超级用户），因为在旧版本的 Linux 版本中，它被设计为仅以超级用户（通常是 root）运行。现在，可以使用它使用系统上的任何用户名/密码对来执行命令。由于上述原因，`sudo` 缩写的含义被优雅地重新定义，用 `user` 代替了 `super`。
 
 不复杂的防火墙
-你可以使用 `ufw allow` 和 `ufw disallow` 命令来允许程序的入站和出站流量。在没有任何附加选项的情况下，假设你正在赋予该程序完全访问权限。ufw 命令还有许多其他选项，你甚至可以允许特定端口的连接。如果你需要完整的文档，请在网上查询。
+
+你可以使用 `ufw allow` 和 `ufw disallow` 命令来允许程序的入站和出站流量。在没有任何附加选项的情况下，假设你正在赋予该程序完全访问权限。`ufw` 命令还有许多其他选项，你甚至可以允许特定端口的连接。如果你需要完整的文档，请在网上查询。
 
 ![](img/aad9680d7dc58780e0f8fc70276d7011_43_1.png)
 
 如果你现在只输入 `mysql` 命令，你将进入 mysql 提示符。
+
 但是……重要的是改用 `mysql -u root -p`。
+
 这将让你以 root 用户身份登录，从而赋予你特殊权限。
 
 ![](img/aad9680d7dc58780e0f8fc70276d7011_44_0.png)
 
-图 5.5: mysql -u root -p
+图 5.5: `mysql -u root -p`
 
 系统会提示你输入 MySQL root 用户密码。输入它！
+
 然后你将看到 `mysql >`：
 
 ![](img/aad9680d7dc58780e0f8fc70276d7011_44_1.png)
 
-图 5.6: mysql -u root -p
+图 5.6: `mysql -u root -p`
 
 欢迎来到 mysql 提示符。这意味着你的 MySQL 服务器正在运行，并已准备好接收 MySQL 命令。你可以通过代码执行的所有标准 MySQL 命令在此提示符中也同样有效。
 
-## 5.1. MYSQL
+## 5.1 MySQL
 
 ### 5.1.3 显示现有数据库
 
@@ -869,26 +837,27 @@ sudo 原意是 superuser（超级用户），因为在旧版本的 Linux 版本�
 
 ![](img/aad9680d7dc58780e0f8fc70276d7011_45_0.png)
 
-图 5.7: SHOW DATABASES;
+图 5.7: `SHOW DATABASES;`
 
 ### 5.1.4 创建新数据库
 
 要创建你自己的数据库，运行 `CREATE DATABASE database_name;`
+
 （不要忘记用 `;` 结束你的语句，否则 mysql 提示符将跳转到下一行而不执行命令。）
 
 ![](img/aad9680d7dc58780e0f8fc70276d7011_46_0.png)
 
-图 5.8: CREATE DATABASE myserver;
+图 5.8: `CREATE DATABASE myserver;`
 
 你也可以通过运行 `Select User FROM mysql.user` 来检查当前用户。
 
 ![](img/aad9680d7dc58780e0f8fc70276d7011_46_1.png)
 
-图 5.9: SELECT user FROM mysql.user.
+图 5.9: `SELECT user FROM mysql.user.`
 
 注意，mysql 命令关键字和表名是不区分大小写的。你可以输入 `Select User` 或 `SELECT user`，效果是一样的！
 
-## 5.1. MySQL
+## 5.1 MySQL
 
 ### 5.1.5 创建新的 MySQL 用户
 
@@ -902,7 +871,7 @@ Query OK, 0 rows affected (0.00 sec)
 mysql> 
 ```
 
-CREATE USER 'felix'@'localhost' IDENTIFIED BY 'Password55723!';
+`CREATE USER 'felix'@'localhost' IDENTIFIED BY 'Password55723!';`
 
 现在我们还需要使用 `GRANT` 命令赋予此用户访问权限：
 
@@ -914,10 +883,12 @@ Query OK, 0 rows affected (0.00 sec)
 mysql> 
 ```
 
-#### GRANT ALL PRIVILEGES ON *.* TO 'felix'@'localhost';
+`GRANT ALL PRIVILEGES ON *.* TO 'felix'@'localhost';`
 
-这赋予了 felix 在数据库 (*.*) 中所有表上的管理员级权限。
-现在我们已经有了用户 felix，准备通过 localhost 地址和密码登录数据库。这是你可以在 JavaScript 代码中使用的账户，我们将进入第 6 章：将 MySQL 添加到 api.js。
+这赋予了 felix 在数据库 (`*.*`) 中所有表上的管理员级权限。
+
+现在我们已经有了用户 felix，准备通过 `localhost` 地址和密码登录数据库。这是你可以在 JavaScript 代码中使用的账户，我们将进入第 6 章：将 MySQL 添加到 `api.js`。
+
 我们只需要让我们的数据库对远程访问开放。见下一页！
 
 # 第 5 章，设置 MySQL 服务器
@@ -934,18 +905,15 @@ mysql>
 bind-address = 0.0.0.0
 ```
 
-
-
-
 ## 5.2 表结构示例
 
 为了在 MySQL 数据库上执行查询，我们需要创建一个测试表。在接下来的示例中，我们假设 `user` 表已经存在。
 
-你可以通过命令行创建它，但建议使用基于 UI 的良好数据库管理软件，例如 Mac 上的 Sequel Pro 或 Windows 上的 MySQL Workbench。随着你的应用程序数据表不断演变，从命令行进行编辑可能会变成一种“噩梦”。
+你可以通过命令行创建它，但建议使用基于 UI 的良好数据库管理软件，例如 Mac 上的 `Sequel Pro` 或 Windows 上的 `MySQL Workbench`。随着你的应用程序数据表不断演变，从命令行进行编辑可能会变成一种“噩梦”。
 
 ![](img/aad9680d7dc58780e0f8fc70276d7011_52_0.png)
 
-由于 MySQL 服务器允许远程连接，你可能可以使用之前创建的 `felix` 账户从 Sequel Pro 登录它。如果你在 `localhost` 上设置了 MySQL 服务器，请使用它作为 Host。否则，请使用你的 Web 主机数据库 IP 地址（这通常就是你的 Web 托管服务器的 IP 地址。这是合理的，因为从技术上讲，MySQL 就安装在那里的“localhost”上）。
+由于 MySQL 服务器允许远程连接，你可能可以使用之前创建的 `felix` 账户从 `Sequel Pro` 登录它。如果你在 `localhost` 上设置了 MySQL 服务器，请使用它作为 Host。否则，请使用你的 Web 主机数据库 IP 地址（这通常就是你的 Web 托管服务器的 IP 地址。这是合理的，因为从技术上讲，MySQL 就安装在那里的“localhost”上）。
 
 ## 5.2 表结构示例
 
@@ -1036,11 +1004,8 @@ bind-address = 0.0.0.0
 038   }
 039 }
 ```
+
 （注：OCR 文本在代码块结构上存在严重损坏，我已根据标准的 Node.js 模式和可见的片段进行了清理和重新格式化，使其保持可读。）
-
-
-
-
 
 ## 52 第 6 章 向 API JS 中添加 MySQL
 
@@ -1051,7 +1016,7 @@ Query OK, 0 rows affected (0.00 sec)
 mysql> 
 ```
 
-图 6.3: set global max_connections = 300;
+图 6.3: `set global max_connections = 300;`
 
 如果一切顺利，运行 `show variables like` 指令将产生如下结果：
 
@@ -1067,7 +1032,7 @@ mysql> show variables like "max_connections"
 mysql> 
 ```
 
-图 6.4: show variables like "max_connections";
+图 6.4: `show variables like "max_connections";`
 
 我们刚刚扩展了 MySQL 同时连接的理论数量。创建 MySQL 连接在计算上是昂贵的的。通过增加连接数来外包服务器工作负载的方法可能有效，但这仍然是一种幼稚的策略。而且，通常一个连接就足够处理成千上万次查询了。
 
@@ -1109,9 +1074,9 @@ Promise 的 `.then` 方法允许我们等待结果，并在结果在稍后的时
 
 构建负责与端点相关的 MySQL 查询的函数的方法之一是将其封装在 promise 中，并使用 `resolve` 方法返回结果——仅 JSON 格式的负载。这里是 `action.register_user` 函数的示例，但所有其他操作（登录、推文、评论等）遵循相同的模式：
 
-```
+```javascript
 // 需要 payload.email = <email_address>
-payload.password = <password>
+// payload.password = <password>
 function action_register_user ( request, payload ) {
   return new Promise((resolve, reject) => {
     if (!request || !request.headers || !payload)
@@ -1154,13 +1119,13 @@ function action_register_user ( request, payload ) {
 
 在这里，你将获取用户的密码，使用 SHA3 等算法对其进行加密，并与已经存储在数据库 `password.sha3` 字段下的 SHA3 加密格式的 SHA3 密码进行比较。
 
-登录的主要目的是获取 AuthToken。这将成为你执行其他身份验证操作的关键——关注、推文、转发、点赞、评论、更新用户设置等。
+登录的主要目的是获取 `AuthToken`。这将成为你执行其他身份验证操作的关键——关注、推文、转发、点赞、评论、更新用户设置等。
 
 为了避免重复代码，我编写了这些函数来完成你在编写 Node API 服务器时经常遇到的各种操作。在各个地方使用这些函数有助于减少杂乱并保持代码整洁。
 
 `identify(target, action)`
 
-`target` 参数是数据库表名（如 user、tweet 等）。`Action` 参数是你想要针对的目标的“什么”（get、update、delete 等）。
+`target` 参数是数据库表名（如 `user`、`tweet` 等）。`Action` 参数是你想要针对的目标的“什么”（`get`、`update`、`delete` 等）。
 
 ```
 001 // 检查 API.parts 是否匹配 URL 模式
@@ -1172,7 +1137,7 @@ function action_register_user ( request, payload ) {
 007 }
 ```
 
-> 图 6.5: 从 API.parts 识别 API 端点请求。`API.parts` 数组是全局可用的。它代表被拆分成 3 部分的 API 端点调用。如果匹配，返回值为 true。
+> 图 6.5: 从 `API.parts` 识别 API 端点请求。`API.parts` 数组是全局可用的。它代表被拆分成 3 部分的 API 端点调用。如果匹配，返回值为 true。
 
 `respond(response, content)`
 
@@ -1192,7 +1157,7 @@ function respond( response, content ) {
 
 ### json(chunks)
 
-在 Node 中，POST 数据是流式的而不是作为单个对象接收的。因此我们需要这个 json 函数来将所有接收到的块转换为实际 JSON 对象。
+在 Node 中，POST 数据是流式的而不是作为单个对象接收的。因此我们需要这个 `json` 函数来将所有接收到的块转换为实际 JSON 对象。
 
 ```
 // 将 buffer 转换为 JSON 对象
@@ -1204,10 +1169,6 @@ function json( chunks ) {
 图 6.6: 从流式 POST 数据块形成 JSON 对象。
 
 我刻意保持我的函数名称简短并使用通用名称。这样，当将所有内容整合在一起时，代码会变得非常整洁、易读且易于维护。
-
-
-
-
 
 ## 6.7 向 API 端点发送 POST 数据
 
@@ -1329,7 +1290,7 @@ SSL 帮助你加密从计算机发送到服务器的数据。这为信用卡号�
 
 这，因为除非你实现了 SSL，否则发送到服务器的数据是不安全的。而且 Chrome 和其他浏览器会在你的域名处显示“不安全”。
 
-到目前为止，我们一直使用 Node 的 http 模块。我们在 `index.js` 文件的第一行将变量 `http` 赋值为从 `require('http')` 模块导入的内容。
+到目前为止，我们一直使用 Node 的 `http` 模块。我们在 `index.js` 文件的第一行将变量 `http` 赋值为从 `require('http')` 模块导入的内容。
 
 ```javascript
 let http = require("http");
@@ -1343,24 +1304,21 @@ let http = require("https");
 
 想更改变量名也由你决定，但我们将保持不变，以免破坏我们目前为止编写的所有代码。
 
-
-
-
 ## 6.12 Let's Encrypt
 
 让我们学习如何在基于 Linux 的操作系统上设置免费的 SSL 证书。
 
-这是大多数主机提供商的首选操作系统。然而，本节中描述的命令在 Windows 的 Terminal 和 bash.exe 中是相同的。
+这是大多数主机提供商的首选操作系统。然而，本节中描述的命令在 Windows 的 Terminal 和 `bash.exe` 中是相同的。
 
-要使用 Let's Encrypt，我们必须更新软件包、安装 git（如果你还没有安装的话）、克隆并安装 letsencrypt 存储库，并在 Windows 10 的 Terminal 或 bash 中运行几个命令。
+要使用 Let's Encrypt，我们必须更新软件包、安装 git（如果你还没有安装的话）、克隆并安装 letsencrypt 存储库，并在 Windows 10 的 Terminal 或 `bash` 中运行几个命令。
 
-由于没有特殊原因，我将在 Windows 10 上使用 bash.exe，但你也可以在 OSX 上使用 Terminal。
+由于没有特殊原因，我将在 Windows 10 上使用 `bash.exe`，但你也可以在 OSX 上使用 `Terminal`。
 
-首先，我将从“开始”菜单使用 bash.exe。命令行窗口打开了：
+首先，我将从“开始”菜单使用 `bash.exe`。命令行窗口打开了：
 
 ![](img/aad9680d7dc58780e0f8fc70276d7011_74_0.png)
 
-让我们使用 `ssh` 命令以 root 身份登录你的 Web主机。只需将 XX.XXX.XX.XXX 替换为你托管网站的静态 IP 地址即可。
+让我们使用 `ssh` 命令以 root 身份登录你的 Web主机。只需将 `XX.XXX.XX.XXX` 替换为你托管网站的静态 IP 地址即可。
 
 ![](img/aad9680d7dc58780e0f8fc70276d7011_74_1.png)
 
@@ -1370,7 +1328,7 @@ let http = require("https");
 
 我们现在应该登录到 Web 主机（见下一页的服务器日志）。
 
-## 6.12. LET'S ENCRYPT
+## 6.12 Let's Encrypt
 
 ```
 root@localhost: ~~
@@ -1404,8 +1362,10 @@ root@localhost:-#
 ```
 
 你将看到一个类似这样的屏幕（我运行的是 Ubuntu 18）。
+
 要安装 certbot，我们需要先更新软件包。这是因为 certbot 开发者持续不断改进，你的 Ubuntu 服务器在初始安装时可能没有最新版本。
-运行 **sudo add-apt-repository ppa:certbot/certbot** 命令将 certbot 存储库添加到你的 Ubuntu 服务器中：
+
+运行 `sudo add-apt-repository ppa:certbot/certbot` 命令将 certbot 存储库添加到你的 Ubuntu 服务器中：
 
 ```
 root@localhost:-~
@@ -1432,66 +1392,19 @@ root@localhost:~# sudo apt-get update
 
 如果你发现你在 CentOS 或 Debian 上，可以按照以下方法操作：
 
+
+
 在 CentOS 上运行 `sudo yum update && sudo yum upgrade`
 
 在 Debian 上运行 `sudo apt update && sudo apt upgrade`
 
 这里的 `&&` 符号会导致软件包先更新，然后进行升级，而无需单独执行每个命令。
 
-## 6.12. LET'S ENCRYPT
+## 6.12 Let's Encrypt
 
 ### 6.12.1 安装 certbot
 
-运行 **apt-get install certbot** 安装 certbot 软件包。我们已经以 root 身份登录，因此不需要使用 **sudo** 命令（如果需要，请在前面加上 **sudo**）。
-
-```
-root@localhost:~# apt-get install certbot
-Reading package lists... Done
-Building dependency tree... Done
-Reading state information... Done
-The following packages were automatically installed and are no longer required:
-linux-headers-4.15.0-45-generic
-linux-image-4.15.0-45-generic linux-modules-4.15.0-45-generic
-linux-modules-extra-4.15.0-45-generic
-use 'autoremove' to remove
-The following additional packages will be installed:
-python3-acme python3-certbot python3-configargparse python3-future python3-icu
-python3-josepy python3-mock-python3-mock-ng
-python3-acme python3-certbot python3-configargparse python3-future python3-icu
-python3-josepy python3-mock-python3-mock-ng
-```
-等一下，让我修复上方代码块中的 OCR 错误：
-```
-root@localhost:~# apt-get install certbot
-Reading package lists... Done
-Building dependency tree... Done
-Reading state information... Done
-The following packages were automatically installed and are no longer required:
-linux-headers-4.15.0-45-generic
-linux-image-4.15.0-45-generic linux-modules-4.15.0-45-generic
-linux-modules-extra-4.15.0-45-generic
-use 'autoremove' to remove
-The following additional packages will be installed:
-python3-acme python3-certbot python3-configargparse python3-future python3-icu
-python3-josepy python3-mock-python3-mock-ng
-```
-实际上，OCR 文本有重复或断行。让我彻底地清理一下：
-
-```
-root@localhost:~# apt-get install certbot
-Reading package lists... Done
-Building dependency tree... Done
-Reading state information... Done
-The following packages were automatically installed and are no longer required:
-linux-headers-4.15.0-45-generic
-linux-image-4.15.0-45-generic linux-modules-4.15.0-45-generic
-linux-modules-extra-4.15.0-45-generic
-use 'autoremove' to remove
-The following additional packages will be installed:
-python3-acme python3-certbot python3-configargparse python3-future python3-icu
-python3-josepy python3-mock-python3-mock-ng
-```
-等一下，我将遵循指令保留所有信息但修正“明显的错误”。
+运行 `apt-get install certbot` 安装 certbot 软件包。我们已经以 root 身份登录，因此不需要使用 `sudo` 命令（如果需要，请在前面加上 `sudo`）。
 
 ```
 root@localhost:~# apt-get install certbot
@@ -1508,80 +1421,74 @@ python3-acme python3-certbot python3-configargparse python3-future python3-icu
 python3-josepy python3-mock-python3-mock-ng
 ```
 
-
-
-
-## 6.12. LET'S ENCRYPT
+### 6.12.2 获取证书
 
 重点部分已高亮：
 
 ```
-root@localhost:~/opt/letsencrypt sudo -H - //letsencrypt-auto certonly --standalone \
+root@localhost:~/opt/letsencrypt# sudo -H ./letsencrypt-auto certonly --standalone \
 -d example.com -d www.example.com
 Debug log to /var/log/letsencrypt/letsencrypt.log
 Plugins selected: Authenticator standalone, Installer None
 Obtaining a new certificate
 Performing the following challenges:
 http-01 challenge for example.com
-http-01 challenge for example.com
+http-01 challenge for www.example.com
 Waiting for verification...
 Cleaning up challenges
 
 重要注意事项：
 - 恭喜！您的证书和证书链已保存于：
-- /etc/letsencrypt/live/example.com/fullchain.pem
-您的私钥文件已保存于：
-- /etc/letsencrypt/live/example.com/privkey.pem
-您的证书将于 2020-05-11 过期。将来如需获取新的或调整后的
-证书版本，只需运行
-letsencrypt-auto renew "letsencrypt-auto renew" 来更新您的
-证书，
-如果您使用 Certbot，请考虑通过以下方式支持我们的工作：
-向 ISRG / Let's Encrypt 捐：https://letsencrypt.org/donate
-向 EFF 捐：https://eff.org/donate-le
+  /etc/letsencrypt/live/example.com/fullchain.pem
+- 您的私钥文件已保存于：
+  /etc/letsencrypt/live/example.com/privkey.pem
+- 您的证书将于 2020-05-11 过期。将来如需获取新的或调整后的证书版本，只需运行
+  letsencrypt-auto renew
+- 如果您使用 Certbot，请考虑通过以下方式支持我们的工作：
+  向 ISRG / Let's Encrypt 捐款：https://letsencrypt.org/donate
+  向 EFF 捐款：https://eff.org/donate-le
 
 root@localhost:~/opt/letsencrypt#
 ```
 
-Letsencrypt 创建并验证了 http 挑战（这是为了验证域名所有权所需的，在本例中，它是自动完成的。）
+Let's Encrypt 创建并验证了 HTTP 挑战（这是为了验证域名所有权所需的，在本例中，它是自动完成的）。
 
-接下来……它还为我们的 example.com 域名生成了两个 pem 密钥。
+接下来……它还为我们的 example.com 域名生成了两个 PEM 密钥。
+
 恭喜！到此时，您的域名已启用了 HTTPS。
 
 但还有一件事。让我们检查文件所在的位置，并熟悉生成密钥的目录：
 
 ```
-root@localhost:~/etc/letsencrypt/live
-root@localhost:~ # cd /etc/letsencrypt/live
-root@localhost:~/etc/letsencrypt/live#
+root@localhost:~# cd /etc/letsencrypt/live
+root@localhost:/etc/letsencrypt/live#
 ```
 
-图 6.12：证书文件在 /etc/letsencrypt/live 目录中创建。
+图 6.12：证书文件在 `/etc/letsencrypt/live` 目录中创建。
 
-让我们输出 live 目录的内容。letsencrypt 将服务器上所有域名的证书密钥都存储在各自命名的文件夹下。
+让我们输出 live 目录的内容。Let's Encrypt 将服务器上所有域名的证书密钥都存储在各自命名的文件夹下。
 
 ```
-root@localhost:/etc/letsencrypt/live
 root@localhost:/etc/letsencrypt/live# ls
 example.com README
-root@localhost:/etc/letsencrypt/live# |
+root@localhost:/etc/letsencrypt/live#
 ```
 
-图 6.13：运行 ls 命令列出目录内容。
+图 6.13：运行 `ls` 命令列出目录内容。
 
-在 example.com 目录中，你会发现由 letsencrypt 生成的几个 pem 文件。我们只需要 cert.pem 和 privkey.pem
+在 example.com 目录中，你会发现由 Let's Encrypt 生成的几个 PEM 文件。我们只需要 `cert.pem` 和 `privkey.pem`。
 
-我们已经准备好开始使用证书了。我们只需要向现有的 index.js 文件中添加一些新代码。
+我们已经准备好开始使用证书了。我们只需要向现有的 `index.js` 文件中添加一些新代码。
 
 你可以跳过下一节，直接跳转到“添加 PEM 文件以运行 HTTPS 服务器”章节。
 
-### 6.12.5 ACME 挑战
+### 6.12.3 ACME 挑战
 
 如果你在上一节中完成了安装 SSL 证书的步骤，则就不需要执行下一步。但在某些情况下，ACME 挑战允许你验证自己是域名的所有者。
 
 我重复一遍，跳过它！我提供它仅供参考。
 
-运行 `certbot certonly --manual` 或 `certbot awfully --manual`（注意：这里实际上是下方所示的双横杠，而不是单横杠）。
+运行 `certbot certonly --manual`（注意：这里实际上是双横杠 `--manual`，而不是单横杠）。
 
 ![](img/aad9680d7dc58780e0f8fc70276d7011_83_0.png)
 
@@ -1593,139 +1500,133 @@ root@localhost:/etc/letsencrypt/live# |
 
 输入 Y 并按回车同意并继续。
 
-## 第 6 章，向 API.JS 添加 MYSQL 
+为了验证我们的域名，我们需要手动创建一个名为 `afBX9EvXvQqquzFooe02-22EFJ5TzcniFwCvqlaMXCA` 的文件——只需截图中黄色高亮的点（.）之前的部分。
 
-![](img/aad9680d7dc58780e0f8fc70276d7011_84_0.png)
+将此文件放置在你服务器上的 `.well-known/acme-challenge` 目录下（你网站的根目录）。你可能需要先创建这些文件夹。
 
-为了验证我们的域名，我们需要手动创建一个名为 afBX9EvXvQqquzFooe02-22EFJ5TzcniFwCvqlaMXCA 的文件——只需截图中黄色高亮的点（.）之前的部分。
-
-将此文件放置在你服务器上的 .well-known/acme-challenge 目录下（你网站的根目录）。你可能需要先创建这些文件夹。
-
-现在，通过将 certbot 生成的长字符串粘贴到该文件中来编辑其内容。在我们的案例中，它是长文本 afBX9EvXvQqquzFooe02-22EFJ5TzcniFw7CvqlaMXCA.rX9ThTxJ4y47ALEr7xgEWoCm4v7Jr5kJete4PLA98-0
+现在，通过将 certbot 生成的长字符串粘贴到该文件中来编辑其内容。在我们的案例中，它是长文本 `afBX9EvXvQqquzFooe02-22EFJ5TzcniFw7CvqlaMXCA.rX9ThTxJ4y47ALEr7xgEWoCm4v7Jr5kJete4PLA98-0`。
 
 记住，此文件每次运行 certbot 时都会生成。如果你之前运行过此命令，它应该再次发生变化。
 
 按回车继续。
 
-此时，certbot 将验证该文件是否存在。再次，如果你使用了本节中不带 acme 挑战的第一种方法，那么你就可以正常运行。
+此时，certbot 将验证该文件是否存在。再次，如果你使用了本节中不带 ACME 挑战的第一种方法，那么你就可以正常运行。
 
-### 6.12.6 添加 PEM 文件以运行 HTTPS 服务器
+### 6.12.4 添加 PEM 文件以运行 HTTPS 服务器
 
-导航到 /etc/letsencrypt/live/site.com/ 目录，验证上一节步骤确实生成了 pem 文件。
+导航到 `/etc/letsencrypt/live/site.com/` 目录，验证上一节步骤确实生成了 PEM 文件。
 
-现在我们已经生成了 privkey.pem 和 cert.pem，我们需要使用 options 对象将它们传递给我们的 Node 服务器配置。
+现在我们已经生成了 `privkey.pem` 和 `cert.pem`，我们需要使用 options 对象将它们传递给我们的 Node 服务器配置。
 
 将此添加到现有的服务器代码中：
 
-```
+```javascript
 let http = require('https'); // 提供 https 功能
 let fs = require('fs'); // 提供 fs 功能
-let path = require('path'); // 提供 "string".patext()
+let path = require('path'); // 提供 path 功能
 const ip = 'XXX.X.X.XX'; // 你的静态域名 IP
 const port = 443; // 443
 const key = '/etc/letsencrypt/live/site.com/privkey.pem';
-const cert = '/etc/letsencrypt/live/site.com/cert.pem'; 生成 SSL 证书
-options = {
-key: fs.readFileSync(key),
-cert: fs.readFileSync(cert)
+const cert = '/etc/letsencrypt/live/site.com/cert.pem';
+
+const options = {
+  key: fs.readFileSync(key),
+  cert: fs.readFileSync(cert)
 };
+
 // 使用 http 模块创建服务器
 http.createServer(options, function (request, response) {
   /* 其他代码 */
 }).listen(port);
+
 // 显示服务器运行
-console.log('Running at ' + ip + ':'');
+console.log('Running at ' + ip + ':' + port);
 ```
 
-将 site.com 替换为你的实际域名。
+将 `site.com` 替换为你的实际域名。
 
-对于 https 连接，使用端口 443。
+对于 HTTPS 连接，使用端口 443。
 
 你可能还需要在系统中开启端口 443 以便工作。然而，这是必须的——任何端口号仍然有效。
 
-更新 index.js 文件。导航到应用程序目录并运行 node index。信不信，如果一切顺利，此时你的服务器将通过 https 协议访问，Chrome（以及其他浏览器）中的“不安全”消息将会消失。
+更新 `index.js` 文件。导航到应用程序目录并运行 `node index`。信不信，如果一切顺利，此时你的服务器将通过 HTTPS 协议访问，Chrome（以及其他浏览器）中的“不安全”消息将会消失。
 
 ## 整合一切
 
-现在我们正在运行 https 服务器，可以完成 API 的构建。
+现在我们正在运行 HTTPS 服务器，可以完成 API 的构建。
 
-在之前的章节中，我们开发了一种模式，可以在不修改主服务器代码的情况下添加更多端。
+在之前的章节中，我们开发了一种模式，可以在不修改主服务器代码的情况下添加更多端点。
 
 在现实环境中，你可能会使用另一个库（如 React）或 Angular 框架。许多软件公司选择 Express 作为封装。
 
 ### API 代码
 
-为了保持 API 的整洁，最好每个端都遵循相同的模式。
+为了保持 API 的整洁，最好每个端点都遵循相同的模式。
 
 POST 数据在产生 "end" 事件之前是不可用的。这就是使用辅助函数将块组合成实际 JSON 对象的地方。
 
-要支持更多端只需遵循相同的模式。将它们放在 request.on('end') 回调中，以确保 POST 数据传输完成。
+要支持更多端点只需遵循相同的模式。将它们放在 `request.on('end')` 回调中，以确保 POST 数据传输完成。
 
-```
+```javascript
 // 完成读取数据块
 request.on('end', () => {
   API.parts = request.parts;
 
   if (identify("user", "register")) // 注册（创建）用户
-    action_register_user(request, json(request.chunks ))
-    .then(content => respond(response, content));
+    action_register_user(request, json(request.chunks))
+      .then(content => respond(response, content));
 
   if (identify("user", "login")) // 登录
-    action_login(request, json(request.chunks ))
-    .then(content => respond(response, content));
+    action_login(request, json(request.chunks))
+      .then(content => respond(response, content));
 
   if (identify("user", "logout")) // 注销
-    action_logout(request, json(request.chunks ))
-    .then(content => respond(response, content));
+    action_logout(request, json(request.chunks))
+      .then(content => respond(response, content));
 
   if (identify("user", "delete")) // 删除用户
-    action_delete_user(request, json(request.chunks ))
-    .then(content => respond(response, content));
+    action_delete_user(request, json(request.chunks))
+      .then(content => respond(response, content));
 
   if (identify("user", "get")) // 获取用户数据
-    action_get_user(request, json(request.chunks ))
-    .then(content => respond(response, content));
+    action_get_user(request, json(request.chunks))
+      .then(content => respond(response, content));
 
   if (identify("user", "update")) // 更新用户
-    action_update_user(request, json(request.chunks ))
-    .then(content => respond(response, content));
+    action_update_user(request, json(request.chunks))
+      .then(content => respond(response, content));
 
-  if (identify("session", "create")) // 创建会
-    action_create_session(request, json(request.chunks ))
-    .then(content => respond(response, content));
+  if (identify("session", "create")) // 创建会话
+    action_create_session(request, json(request.chunks))
+      .then(content => respond(response, content));
 
   if (identify("user", "authenticate")) // 验证用户身份
-    action_authenticate_user(request, json(request.chunks ))
-    .then(content => respond(response, content));
+    action_authenticate_user(request, json(request.chunks))
+      .then(content => respond(response, content));
 });
 ```
 
-
-request 和 response 对象从 `index.js` 中的初始调用 `http.createServer(function(request, response)...)` 一直传递而来。换句话说，在 Node 中，它们是由 `createServer` 函数自动创建的。
+`request` 和 `response` 对象从 `index.js` 中的初始调用 `http.createServer(function(request, response)...)` 一直传递而来。换句话说，在 Node 中，它们是由 `createServer` 函数自动创建的。
 
 ## 6.13 完整源代码
 
-要查看我们目前为止构建的 Node 服务器的完整源代码，你可以从本书的公共 GitHub 仓库进行派叉（fork）：
+要查看我们目前为止构建的 Node 服务器的完整源代码，你可以从本书的公共 GitHub 仓库进行派生（fork）：
 
 ```
 https://github.com/javascriptteacher/node
 ```
 
-**注意：** 在你的本地上运行此应用（**cmd > node index.js**）之前，请确保你已经有一个运行中的 MySQL 服务器且其中包含表，并在 **api.js** 中包含了 MySQL 凭据（IP、用户名、密码和数据库名称）。
+**注意：** 在你的本地上运行此应用（`cmd > node index.js`）之前，请确保你已经有一个运行中的 MySQL 服务器且其中包含表，并在 `api.js` 中包含了 MySQL 凭据（IP、用户名、密码和数据库名称）。
 
-**注意：** 这不是一个完整的应用程序，但它提供了足够的脚架让你快速上手。用户 API 对于大多数 Web 应用都是至关重要的。其他的端点将取决于你的应用程序。
+**注意：** 这不是一个完整的应用程序，但它提供了足够的脚手架让你快速上手。用户 API 对于大多数 Web 应用都是至关重要的。其他的端点将取决于你的应用程序。
 
-**注意：** 如果你需要提高用户密码的安全性，应该将 **md5** 替换为 **sha3**。使用 `npm install sha3` 安装 SHA3 模块，该模块也包含了 **Keccak**。
+**注意：** 如果你需要提高用户密码的安全性，应该将 `md5` 替换为 `sha3`。使用 `npm install sha3` 安装 SHA3 模块，该模块也包含了 Keccak。
 
-运行 **node index.js** 后，你应该能看到 **index.html** 打开 **http://localhost:3000**
+运行 `node index.js` 后，你应该能看到 `index.html` 打开 `http://localhost:3000`。
 
 ![](img/aad9680d7dc58780e0f8fc70276d7011_90_0.png)
 
-点击 API 端点测试按钮并观察控制台。记住我们的每个端点都会返回一个 JSON 对象。该对象有一个 "success" 属性，
-
-# 6.13. 完整源代码
-
-其值可以是 `true` 也可以 `false`。"message" 属性将包含关于发生内容的详细信息。
+点击 API 端点测试按钮并观察控制台。记住我们的每个端点都会返回一个 JSON 对象。该对象有一个 "success" 属性，其值可以是 `true` 也可以 `false`。"message" 属性将包含关于发生内容的详细信息。
 
 例如：
 
@@ -1738,29 +1639,29 @@ https://github.com/javascriptteacher/node
 
 这些端点已准备好集成到你自己的前端 UI/UX 中。你可以通过 `onclick` 属性或 JavaScript 代码中的其他地方调用它们。
 
-# 如何运行服务器
+### 如何运行服务器
 
 我建议从零开始手动重写书中的示例。不过，为了快速演示，你可以从你的 GitHub 仓库复制文件，并在几分钟内运行你自己的 Node 服务器！
 
 - 将 GitHub 文件导入你的项目，或将它们复制到一个文件夹中。
 - 从命令行导航到该文件夹。
-- 输入 `node.js`，你应该可以通过浏览器通过 `http://localhost:3000` 访问 `index.html`。
+- 输入 `node index.js`，你应该可以通过浏览器通过 `http://localhost:3000` 访问 `index.html`。
 
 从这里开始，取决于你想要构建前端的其余部分以及想要添加哪些 API 端点。这完全取决于你的应用程序用途。
 
 例如，如果你的应用程序需要图片上传，你可以创建一个新的端点并创建一个名为 `action_image_upload` 的函数。
 
-```
-001 if (identify("image", "upload")) // Upload image
-002 action_upload_image(request, json(request.chunks))
-003 .then(content => respond(response, content));
+```javascript
+if (identify("image", "upload")) // Upload image
+  action_upload_image(request, json(request.chunks))
+    .then(content => respond(response, content));
 ```
 
 Multer 是一个有助于从 HTML 表单上传文件的优秀模块。要获取它，只需在 Terminal 或 cmd.exe/bash.exe 中运行 `npm install multer` 命令。
 
 ## 6.14 构建可扩展的应用程序
 
-到为止，我们学习了如何构建一个使用 MySQL 执行存储和经典 CRUD 数据操作的 API Node 服务器。
+到此为止，我们学习了如何构建一个使用 MySQL 执行存储和经典 CRUD 数据操作的 API Node 服务器。
 
 MySQL、MariaDB、MongoDB 以及其他软件在应用程序的早期阶段运行在单台服务器上可能运行良好。
 
@@ -1768,25 +1669,21 @@ MySQL、MariaDB、MongoDB 以及其他软件在应用程序的早期阶段运行
 
 但一旦你服务器的最大带宽耗尽，如果有更多用户加入并开始使用你的应用程序，它将开始变得缓慢。
 
-在过去，运行《暗黑之魂 I》和《星际争霸 I》的 Battle.net 曾在一个**单服务器**上运行，同时连接着数十万用户。这是资源限制如何鼓励高效代码的示例。
+在过去，运行《暗黑之魂 I》和《星际争霸 I》的 Battle.net 曾在一个单服务器上运行，同时连接着数十万用户。这是资源限制如何鼓励高效代码的示例。
 
 如今的 Web 应用是实时的并不罕见。如果你想构建为数十万甚至数百万同时用户服务的大规模应用程序，必须应用额外的思考和工程手段。
 
 ### 6.14.1 迁移到 RAM
 
-没有没有任何现代实时应用（例如 Twitter）使用 SQL 数据库来为用户提供主要功能。原因非常简单。当对一切都使用 SQL 时，意味着每当有人发出请求时都会有硬盘操作！这可能是过度之的，因为你正在将系统中最慢的部分外包来服务应用程序的关键功能。
+没有任何现代实时应用（例如 Twitter）使用 SQL 数据库来为用户提供主要功能。原因非常简单。当对一切都使用 SQL 时，意味着每当有人发出请求时都会有硬盘操作！这可能是过度的，因为你正在将系统中最慢的部分外包来服务应用程序的关键功能。
 
 解决方案是切换到 SSD 服务器（诚实地说，按照今天的标准，大多数已经是那样的）。但如果我们将所有数据存储在 RAM 中呢？这样我们就可以完全避免接触硬盘（通过在对象中缓存频繁访问的数据）。
 
 当然，原始数据仍然会存储在硬盘上。区别在于，当你启动 Node 服务器时，它会被复制到 JavaScript 对象中。
 
-当客户端请求特定资源时，我们可以直接从该对象提供服务。它将包含原始客户端请求特定资源的副本。（*注：原文此处存在大量重复文本，已按逻辑处理*）
+当客户端请求特定资源时，我们可以直接从该对象提供服务。它将包含原始客户端请求特定资源的副本。
 
-
-
-
-
-## 6.18 JavaScript 语法
+## 6.15 JavaScript 语法
 
 如果你喜欢 Node API，请关注 Learning Curve Books 出版的其他书籍。
 
@@ -1804,8 +1701,7 @@ MySQL、MariaDB、MongoDB 以及其他软件在应用程序的早期阶段运行
 - API 动作函数, 56
 - API 类, 31, 62, 65
 - API 端点往返, 54
-- API 端点, 30
-- API, 端点, 34
+- API 端点, 30, 34, 80
 - api.js, 47, 62, 65
 - apt-get update, 34
 - 架构, 46, 54, 56
@@ -1813,17 +1709,16 @@ MySQL、MariaDB、MongoDB 以及其他软件在应用程序的早期阶段运行
 - AuthToken, 56
 - bash.exe, letsencrypt, 66
 - bash.exe, letsencrypt, certbot, 66
-- bash.ext, 1
+- bash.exe, 1
 - 绑定地址, 41, 42
 - 构建 API, 29
 - certbot, 68
 - 客户端, 46
 - 连接数据库, 34
 - 配置, 11
-- CREATE DATABASE
-- database_name=, 38
+- CREATE DATABASE database_name, 38
 - 'localhost', 39
-- CREATEUSER;, 39
+- CREATE USER, 39
 - CRUD, 43
 - Ctrl + C, 15
 - 数据库, 48
@@ -1836,13 +1731,13 @@ MySQL、MariaDB、MongoDB 以及其他软件在应用程序的早期阶段运行
 - 授权 (grant), 39
 - 授予所有权限, 39
 - 主目录, 18
-- HTTPS, https, SSL, 65
-- HTTPS, https, SSL, pem, keys
+- HTTPS, SSL, 65
+- HTTPS, SSL, pem, keys
 - 安全 (secure), 77
 - IDENTIFIED BY 'Password', 39
 - identify(), 57
 - 安装, 7
-- 安装 mysql npm , 32
+- 安装 mysql npm, 32
 - 安装 mysql server, 32
 - 在 Ubuntu 上安装 mysql server, 34
 - 在 Windows 上安装 mysql server, 33
@@ -1853,14 +1748,14 @@ MySQL、MariaDB、MongoDB 以及其他软件在应用程序的早期阶段运行
 - 在 Windows 上安装, 9
 - 在 Mac 上, 8
 - 在 Windows 上, 9
-- javascript 语法, 88
+- JavaScript 语法, 88
 - json(), 58
 - PHP, 4
 - POST, 59, 60
 - process 对象, 20
 - promise, 56
 - 启动服务器, 19
-- letscrypt, certbot, 66, 67
+- letsencrypt, certbot, 66, 67
 - 库, 4
 - localhost, 44
 - 远程访问, 40
@@ -1877,7 +1772,7 @@ MySQL、MariaDB、MongoDB 以及其他软件在应用程序的早期阶段运行
 - Mac, 8
 - max_connections, 31
 - mime, 28
-- type types, 28
+- mime types, 28
 - 多个端点, 80
 - my.cnf, 40
 - MySQL, 47
@@ -1889,13 +1784,11 @@ MySQL、MariaDB、MongoDB 以及其他软件在应用程序的早期阶段运行
 - mysql grant all privileges, 39
 - MySQL promise, 56
 - MySQL query, 48
-- mysql query, 48
 - mysql 远程访问, 40
 - mysql 表示例, 45
 - mysql user password, 39
 - MySQL 表, 45
 - mysql user table, 45
-- MySQL user table, 45
 - MySQL Workbench, 34
 - mysqld.cnf, 41
 - 保存 mysql .cnf 文件, 42
@@ -1907,7 +1800,7 @@ MySQL、MariaDB、MongoDB 以及其他软件在应用程序的早期阶段运行
 - 提供文件, 26, 46
 - 设置 mysql server, 33
 - 设置 mysql user password, 39
-- SHOW DATABASES;, 37
+- SHOW DATABASES, 37
 - SIGINT, 86, 88
 - sudo apt-get install mysql-server, 34
 - sudo apt-get update, 34
@@ -1921,4 +1814,3 @@ MySQL、MariaDB、MongoDB 以及其他软件在应用程序的早期阶段运行
 - 表 (table), 44
 - ufw, 35
 - Windows, 9
-

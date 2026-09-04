@@ -1,11 +1,10 @@
+
 # Java 编程入门指南
-
-
 
 ![image-I0354B7T.jpg](img/image-I0354B7T.jpg)![image-I0354B7T.jpg](img/image-I0354B7T.jpg)
 
+## 目录
 
-### 目录
 - 介绍
 - 第 1 章：Java
 - 第 2 章：变量
@@ -13,12 +12,6 @@
 - 第 4 章：数组
 - 第 5 章：字符串
 - 结论
-
-
-
-
-
-
 
 ## 介绍
 
@@ -37,6 +30,7 @@
 开始学习 Java 时最困难的事情是确保你已经安装了所有要在 Java 中使用的内容。在能够编写代码之前，你必须拥有所有这些程序，否则你将给自己带来头恼。
 
 ### 虚拟机
+
 Java 平台将独立于任何其他程序。因此，它可以在你可能工作的任何操作系统上运行。得益于 Java 虚拟机，它可以在任何系统上运行。这台机器将为编程提供帮助，以确保你的代码被正确处理。在运行任何 Java 代码之前，必须安装虚拟机程序。
 
 一家名为 Oracle 的公司拥有 Java，在他们的网站上，你可以找到虚拟机的下载链接，它也被称为 Java 运行环境或 `JRE`。
@@ -46,16 +40,19 @@ Java 平台将独立于任何其他程序。因此，它可以在你可能工作
 一旦下载了虚拟机，你需要重启系统以便程序能够正常运行。
 
 ### 软件开发工具包
+
 现在软件已经安装，Java 就能在你的电脑上运行了。但在你编写代码之前，你还需要从 Oracle 网站安装软件开发工具包。
 
 这套工具包被称为标准版，你想要使用的被称为 `NetBeans`。下载文件相当大，但一旦完成，你就可以编写 Java 代码了。
 
 ### Java 的工作原理
+
 Java 代码将在文本编辑器中编写，这些代码被称为源代码。你编写的任何代码都将保存在扩展名为 `.java` 的文件中。`javac` 程序能够将你编写的任何源代码转换为 Java 字节码，这被称为编译。一旦文件编译完成，就会创建一个扩展名为 `.class` 的新文件。
 
 在类文件创建时，虚拟机就可以运行该文件。`NetBeans` 是一个可以为你处理文件创建和编译的程序。但在幕后观察，你会注意到你的源代码会被创建为 Java 文件，然后启动 `javac` 来创建你的类文件。
 
 ### NetBeans
+
 第一次进入 `NetBeans` 时，你需要等待一会儿，因为这个程序并不快。但当它终于加载后，你需要点击 `file`（文件）和 `new project`（新建项目）来创建一个应用程序。
 
 在点击 `Java Application`（Java 应用程序）后，点击 `next`（下一步）按钮进入下一部分。显然你需要为项目命名，这将更改窗口底部的文本使其与你命的项目名称一致。
@@ -70,14 +67,9 @@ Java 代码将在文本编辑器中编写，这些代码被称为源代码。你
 
 你的文件名和类名必须匹配，否则 Java 将不允许其正常工作，并且在编译时你会遇到错误。
 
-
-
-
-
 在你创建了一个新项目后，你会发现文本窗口中有些文字是灰色的，并且包含星号或斜杠。这些区域将成为你的注释，当程序运行时，这些注释将被程序忽略。你可以在注释中输入任何你想输入的内容，但大多数情况下，注释会解释你正在对代码进行的操作。单行注释通过在前面输入两个斜杠来输入。
 
-### Code
-```
+```java
 // this is a comment
 ```
 
@@ -148,667 +140,10 @@ public static void main(String[] args) {
 ```java
 public static void main(String[] args) {
     int last_amount;
-    System.out.println("My Last Project");
-}
-
-程序要求开发者与其通信，告知想要保存一个整数，因此你需要输入 `int` 并在后面加一个空格。然后你将被允许输入你想要命名的变量名称。变量可以命名为你想要的任何名称，但有一组你必须遵守的特定规则：
-
-- 变量名可以有不同的含义。由于名称对大小写敏感，像 `firstname` 或 `FirstName` 这样的名称是两个不同的名称。
-- 变量名不能以金额作为第一个字符。使用单词拼写金额是可以的，但使用实际金额会导致 Java 抛出错误消息。金额将用于 Java 的其他地方。
-- 变量名不允许有空格。`int first amount` 的变量声明将向你抛出错误。你可以使用下划线或随后的大写字母。
-- 不允许使用关键字作为变量名。Java 中有几个关键字，NetBeans 会你的编码中将这些单词显示为蓝色。
-
-当你想要存储一个名为 `last_amount` 的变量时，你要在想要存储的值之前输入一个等号。
-
-```java
-public static void main(String[] args) {
-    int last_amount;
-    last_amount = 10;
-    System.out.println("My Last Project");
-}
-```
-
-当你想要存储一个名为 `last_amount` 的变量时，你要在想要存储的值之前输入一个等号。
-
-```java
-public static void main(String[] args) {
-    int last_amount;
-    last_amount = 10;
-    System.out.println("My Last Project");
-}
-```
-
-当你想要存储一个名为 `last_amount` 的变量时，你要在想要存储的值之前输入一个等号。
-
-```java
-public static void main(String[] args) {
-    int last_amount;
-    last_amount = 10;
-    System.out.println("My Last Project");
-}
-```
-
-当你想要存储一个名为 `last_amount` 的变量时，你要在想要存储的值之前输入一个等号。
-
-```java
-public static void main(String[] args) {
-    int last_amount;
-    last_amount = 10;
-    System.out.println("My Last Project");
-}
-```
-
-当你想要存储一个名为 `last_amount` 的变量时，你要在想要存储的值之前输入一个等号。
-
-```java
-public static void main(String[] args) {
-    int last_amount;
-    last_amount = 10;
-    System.out.println("My Last Project");
-}
-```
-
-当你想要存储一个名为 `last_amount` 的变量时，你要在想要存储的值之前输入一个等号。
-
-```java
-public static void main(String[] args) {
-    int last_amount;
-    last_amount = 10;
-    System.out.println("My Last Project");
-}
-```
-
-当你想要存储一个名为 `last_amount` 的变量时，你要在想要存储的值之前输入一个等号。
-
-```java
-public static void main(String[] args) {
-    int last_amount;
-    last_amount = 10;
-    System.out.println("My Last Project");
-}
-```
-
-当你想要存储一个名为 `last_amount` 的变量时，你要在想要存储的值之前输入一个等号。
-
-```java
-public static void main(String[] args) {
-    int last_amount;
-    last_amount = 10;
-    System.out.println("My Last Project");
-}
-```
-
-当你想要存储一个名为 `last_amount` 的变量时，你要在想要存储的值之前输入一个等号。
-
-```java
-public static void main(String[] args) {
-    int last_amount;
-    last_amount = 10;
-    System.out.println("My Last Project");
-}
-```
-
-当你想要存储一个名为 `last_amount` 的变量时，你要在想要存储的值之前输入一个等号。
-
-```java
-public static void main(String[] args) {
-    int last_amount;
-    last_amount = 10;
-    System.out.println("My Last Project");
-}
-```
-
-当你想要存储一个名为 `last_amount` 的变量时，你要在想要存储的值之前输入一个等号。
-
-```java
-public static void main(String[] args) {
-    int last_amount;
-    last_amount = 10;
-    System.out.println("My Last Project");
-}
-```
-
-当你想要存储一个名为 `last_amount` 的变量时，你要在想要存储的值之前输入一个等号。
-
-```java
-public static void main(String[] args) {
-    int last_amount;
-    last_amount = 10;
-    System.out.println("My Last Project");
-}
-```
-
-当你想要存储一个名为 `last_amount` 的变量时，你要在想要存储的值之前输入一个等号。
-
-```java
-public static void main(String[] args) {
-    int last_amount;
-    last_amount = 10;
-    System.out.println("My Last Project");
-}
-```
-
-当你想要存储一个名为 `last_amount` 的变量时，你要在想要存储的值之前输入一个等号。
-
-```java
-public static void main(String[] args) {
-    int last_amount;
-    last_amount = 10;
-    System.out.println("My Last Project");
-}
-```
-
-当你想要存储一个名为 `last_amount` 的变量时，你要在想要存储的值之前输入一个等号。
-
-```java
-public static void main(String[] args) {
-    int last_amount;
-    last_amount = 10;
-    System.out.println("My Last Project");
-}
-```
-
-当你想要存储一个名为 `last_amount` 的变量时，你要在想要存储的值之前输入一个等号。
-
-```java
-public static void main(String[] args) {
-    int last_amount;
-    last_amount = 10;
-    System.out.println("My Last Project");
-}
-```
-
-当你想要存储一个名为 `last_amount` 的变量时，你要在想要存储的值之前输入一个等号。
-
-```java
-public static void main(String[] args) {
-    int last_amount;
-    last_amount = 10;
-    System.out.println("My Last Project");
-}
-```
-
-当你想要存储一个名为 `last_amount` 的变量时，你要在想要存储的值之前输入一个等号。
-
-```java
-public static void main(String[] args) {
-    int last_amount;
-    last_amount = 10;
-    System.out.println("My Last Project");
-}
-```
-
-当你想要存储一个名为 `last_amount` 的变量时，你要在想要存储的值之前输入一个等号。
-
-```java
-public static void main(String[] args) {
-    int last_amount;
-    last_amount = 10;
-    System.out.println("My Last Project");
-}
-```
-
-当你想要存储一个名为 `last_amount` 的变量时，你要在想要存储的值之前输入一个等号。
-
-```java
-public static void main(String[] args) {
-    int last_amount;
-    last_amount = 10;
-    System.out.println("My Last Project");
-}
-```
-
-当你想要存储一个名为 `last_amount` 的变量时，你要在想要存储的值之前输入一个等号。
-
-```java
-public static void main(String[] args) {
-    int last_amount;
-    last_amount = 10;
-    System.out.println("My Last Project");
-}
-```
-
-当你想要存储一个名为 `last_amount` 的变量时，你要在想要存储的值之前输入一个等号。
-
-```java
-public static void main(String[] args) {
-    int last_amount;
-    last_amount = 10;
-    System.out.println("My Last Project");
-}
-```
-
-当你想要存储一个名为 `last_amount` 的变量时，你要在想要存储的值之前输入一个等号。
-
-```java
-public static void main(String[] args) {
-    int last_amount;
-    last_amount = 10;
-    System.out.println("My Last Project");
-}
-```
-
-当你想要存储一个名为 `last_amount` 的变量时，你要在想要存储的值之前输入一个等号。
-
-```java
-public static void main(String[] args) {
-    int last_amount;
-    last_amount = 10;
-    System.out.println("My Last Project");
-}
-```
-
-当你想要存储一个名为 `last_amount` 的变量时，你要在想要存储的值之前输入一个等号。
-
-```java
-public static void main(String[] args) {
-    int last_amount;
-    last_amount = 10;
-    System.out.println("My Last Project");
-}
-```
-
-当你想要存储一个名为 `last_amount` 的变量时，你要在想要存储的值之前输入一个等号。
-
-```java
-public static void main(String[] args) {
-    int last_amount;
-    last_amount = 10;
-    System.out.println("My Last Project");
-}
-```
-
-当你想要存储一个名为 `last_amount` 的变量时，你要在想要存储的值之前输入一个等号。
-
-```java
-public static void main(String[] args) {
-    int last_amount;
-    last_amount = 10;
-    System.out.println("My Last
-");
-}
-```
-
-当你想要想要一个
- ` `_amountamountamount  ，
-，你
-
-之前的值之前
-一个
-。
-。
-
-
-
-
-public static void main(String[] args) {
-    int last_amount;
-    last_amount = 10;
-    System.out.println("My Last Project");
-}
-```
-
-当你想要存储一个名为 `last_amount` 的变量时，你要在想要存储的值之前输入一个等号。
-
-```java
-public static void main(String[] args) {
-    int last_amount;
-    last_amount = 10;
-    System.out.println("My Last Project");
-}
-```
-
-当你想要存储一个名为 `last_amount` 的变量时，你要在想要存储的值之前输入一个等号。
-
-```java
-public static void main(String[] args) {
-    int last_amount;
-    last_amount = 10;
-    System.out.println("My Last Project");
-}
-```
-
-当你想要存储一个名为 `last_amount` 的变量时，你要在想要存储的值之前输入一个等号。
-
-```java
-public static void main(String[] args) {
-    int last_amount;
-    last_amount = 10;
-    System.out.println("My Last Project");
-}
-```
-
-当你想要存储一个名为 `last_amount` 的变量时，你要在想要存储的值之前输入一个等号。
-
-```java
-public static void main(String[] args) {
-    int last_amount;
-    last_amount = 10;
-    System.out.println("My Last Project");
-}
-```
-
-当你想要存储一个名为 `last_amount` 的变量时，你要在想要存储的值之前输入一个等号。
-
-```java
-public static void main(String[] args) {
-    int last_amount;
-    last_amount = 10;
-    System.out.println("My Last Project");
-}
-```
-
-当你想要存储一个名为 `last_amount` 的变量时，你要在想要存储的值之前输入一个等号。
-
-```java
-public static void main(String[] args) {
-    int last_amount;
-    last_amount = 10;
-    System.out.println("My Last Project");
-}
-```
-
-当你想要存储一个名为 `last_amount` 的变量时，你要在想要存储的值之前输入一个等号。
-
-```java
-public static void main(String[] args) {
-    int last_amount;
-    last_amount = 10;
-    System.out.println("My Last Project");
-}
-```
-
-当你想要存储一个名为 `last_amount` 的变量时，你要在想要存储的值之前输入一个等号。
-
-```java
-public static void main(String[] args) {
-    int last_amount;
-    last_amount = 10;
-    System.out.println("My Last Project");
-}
-```
-
-当你想要存储一个名为 `last_amount` 的变量时，你要在想要存储的值之前输入一个等号。
-
-```java
-public static void main(String[] args) {
-    int last_amount;
-    last_amount = 10;
-    System.out.println("My Last Project");
-}
-```
-
-当你想要存储一个名为 `last_amount` 的变量时，你要在想要存储的值之前输入一个等号。
-
-```java
-public static void main(String[] args) {
-    int last_amount;
-    last_amount = 10;
-    System.out.println("My Last Project");
-}
-```
-
-当你想要存储一个名为 `last_amount` 的变量时，你要在想要存储的值之前输入一个等号。
-
-```java
-public static void main(String[] args) {
-    int last_amount;
-    last_amount = 10;
-    System.out.println("My Last Project");
-}
-```
-
-当你想要存储一个名为 `last_amount` 的变量时，你要在想要存储的值之前输入一个等号。
-
-```java
-public static void main(String[] args) {
-    int last_amount;
-    last_amount = 10;
-    System.out.println("My Last Project");
-}
-```
-
-当你想要存储一个名为 `last_amount` 的变量时，你要在想要存储的值之前输入一个等号。
-
-```java
-public static void main(String[] args) {
-    int last_amount;
-    last_amount = 10;
-    System.out.println("My Last Project");
-}
-```
-
-当你想要存储一个名为 `last_amount` 的变量时，你要在想要存储的值之前输入一个等号。
-
-```java
-public static void main(String[] args) {
-    int last_amount;
-    last_amount = 10;
-    System.out.println("My Last Project");
-}
-```
-
-当你想要存储一个名为 `last_amount` 的变量时，你要在想要存储的值之前输入一个等号。
-
-```java
-public static void main(String[] args) {
-    int last_amount;
-    last_amount = 10;
-    System.out.println("My Last Project");
-}
-```
-
-当你想要存储一个名为 `last_amount` 的变量时，你要在想要存储的值之前输入一个等号。
-
-```java
-public static void main(String[] args) {
-    int last_amount;
-    last_amount = 10;
-    System.out.println("My Last Project");
-}
-```
-
-当你想要存储一个名为 `last_amount` 的变量时，你要在想要存储的值之前输入一个等号。
-
-```java
-public static void main(String[] args) {
-    int last_amount;
-    last_amount = 10;
-    System.out.println("My Last Project");
-}
-```
-
-当你想要存储一个名为 `last_amount` 的变量时，你要在想要存储的值之前输入一个等号。
-
-```java
-public static void main(String[] args) {
-    int last_amount;
-    last_amount = 10;
-    System.out.println("My Last Project");
-}
-```
-
-当你想要存储一个名为 `last_amount` 的变量时，你要在想要存储的值之前输入一个等号。
-
-```java
-public static void main(String[] args) {
-    int last_amount;
-    last_amount = 10;
-    System.out.println("My Last Project");
-}
-```
-
-当你想要存储一个名为 `last_amount` 的变量时，你要在想要存储的值之前输入一个等号。
-
-```java
-public static void main(String[] args) {
-    int last_amount;
-    last_amount = 10;
-    System.out.println("My Last Project");
-}
-```
-
-当你想要存储一个名为 `last_amount` 的变量时，你要在想要存储的值之前输入一个等号。
-
-```java
-public static void main(String[] args) {
-    int last_amount;
-    last_amount = 10;
-    System.out.println("My Last Project");
-}
-```
-
-当你想要存储一个名为 `last_amount` 的变量时，你要在想要存储的值之前输入一个等号。
-
-```java
-public static void main(String[] args) {
-    int last_amount;
-    last_amount = 10;
-    System.out.println("My Last Project");
-}
-```
-
-当你想要存储一个名为 `last_amount` 的变量时，你要在想要存储的值之前输入一个等号。
-
-```java
-public static void main(String[] args) {
-    int last_amount;
-    last_amount = 10;
-    System.out.println("My Last Project");
-}
-```
-
-当你想要存储一个名为 `last_amount` 的变量时，你要在想要存储的值之前输入一个等号。
-
-```java
-public static void main(String[] args) {
-    int last_amount;
-    last_amount = 10;
-    System.out.println("My Last Project");
-}
-```
-
-当你想要存储一个名为 `last_amount` 的变量时，你要在想要存储的值之前输入一个等号。
-
-```java
-public static void main(String[] args) {
-    int last_amount;
-    last_amount = 10;
-    System.out.println("My Last Project");
-}
-```
-
-当你想要存储一个名为 `last_amount` 的变量时，你要在想要存储的值之前输入一个等号。
-
-```java
-public static void main(String[] args) {
-    int last_amount;
-    last_amount = 10;
-    System.out.println("My Last Project");
-}
-```
-
-当你想要存储一个名为 `last_amount` 的变量时，你要在想要存储的值之前输入一个等号。
-
-```java
-public static void main(String[] args) {
-    int last_amount;
-    last_amount = 10;
-    System.out.println("My Last Project");
-}
-```
-
-当你想要存储一个名为 `last_amount` 的变量时，你要在想要存储的值之前输入一个等号。
-
-```java
-public static void main(String[] args) {
-    int last_amount;
-    last_amount = 10;
-    System.out.println("My Last Project");
-}
-```
-
-当你想要存储一个名为 `last_amount` 的变量时，你要在想要存储的值之前输入一个等号。
-
-```java
-public static void main(String[] args) {
-    int last_amount;
-    last_amount = 10;
-    System.out.println("My Last Project");
-}
-```
-
-当你想要存储一个名为 `last_amount` 的变量时，你要在想要存储的值之前输入一个等号。
-
-```java
-public static void main(String[] args) {
-    int last_amount;
-    last_amount = 10;
-    System.out.println("My Last Project");
-}
-```
-
-当你想要存储一个名为 `last_amount` 的变量时，你要在想要存储的值之前输入一个等号。
-
-```java
-public static void main(String[] args) {
-    int last_amount;
-    last_amount = 10;
-    System.out.println("My Last Project");
-}
-```
-
-当你想要存储一个名为 `last_amount` 的变量时，你要在想要存储的值之前输入一个等号。
-
-```java
-public static void main(String[] args) {
-    int last_amount;
-    last_amount = 10;
-    System.out.println("My Last Project");
-}
-```
-
-当你想要存储一个名为 `last_amount` 的变量时，你要在想要存储的值之前输入一个等号。
-
-```java
-public static void main(String[] args) {
-    int last_amount;
-    last_amount = 10;
-    System.out.println("My Last Project");
-}
-```
-
-当你想要存储一个名为 `last_amount` 的变量时，你要在想要存储的值之前输入一个等号。
-
-```java
-public static void main(String[] args) {
-    int last_amount;
-    last_amount = 10;
-    System.out.println("My Last Project");
-}
-```
-
-当你想要存储一个名为 `last_amount` 的变量时，你要在想要存储的值之前输入一个等号。
-
-```java
-public static void main(String[] args) {
-    int last_amount;
-    last_amount = 10;
-    System.out.println("My Last Project");
-}
-```
-
-当你想要存储一个名为 `last_amount` 的变量时，你要在想要存储的值之前输入一个等号。
-
-```java
-public static void main(String[] args) {
-    int last_amount;
     last_amount = 10;
     System.out.println("My Last Project");
 }
 ```
-
-
 
 大量的数值可以存储在 `int` 变量中，但限制是 `2147483647`。你也可以存储负数，能够达到的最低值是 `-2147483648`。更大或更小的数值将使用 `double` 变量类型。
 
@@ -816,7 +151,6 @@ public static void main(String[] args) {
 
 `Double` 变量可以存储从极大到极小的各种数值。你能够达到的最高和最低数值将是 17 后面跟着大约三百零七个零。`double` 变量将用于存储浮点数。如果你尝试将浮点值存储到任何 `int` 变量中，程序将标出代码错误所在的地方，以便你可以在运行之前进行修改并接收错误消息。
 
-### Code
 ```java
 int last_amount, third_amount, result;
 
@@ -837,7 +171,6 @@ result = last_amount + third_amount ;
 
 `Double` 值将用于存储较大的浮点数数值。你将不再使用 `double` 而是使用 `float`。当你存储一个 `float` 变量时，数值末尾需要加上字母 `f`。
 
-### Code
 ```java
 float last_amount, third_amount, result ;
 
@@ -850,16 +183,15 @@ second_number = 20.8f;
 
 当你对变量进行数学运算时，你将使用基本符号进行计算。
 
-* 加法 (`+`)
-* 减法 (`-`)
-* 乘法 (`*`)
-* 除法 (`/`)
+- 加法 (`+`)
+- 减法 (`-`)
+- 乘法 (`*`)
+- 除法 (`/`)
 
 ### 运算符优先级
 
 在 Java 中可以计算两个以上的数值，但在涉及计算内容时你必须小心。
 
-### Code
 ```java
 last_amount = 200;
 
@@ -874,7 +206,6 @@ result = last_amount – third_amount + fourth_amount;
 
 为了确保 Java 按你想要的方式运行，可以使用括号。
 
-### Code
 ```java
 result = (last_amount – third_amount) + fourth_amount
 
@@ -891,34 +222,28 @@ result = last_amount – (third_amount + fourth_amount)
 
 删除所有注释后，你将拥有一个与之前类似的代码窗口。为了创建一个字符串，你将使用单词 `string` 作为你的关键字，后面紧跟变量名。分号仍然会被使用。
 
-### Code
 ```java
 String last_amount;
 
 middle_name = "William";
 ```
 
-### Code
 ```java
 String inherited_name
 ```
 
-### Code
 ```java
 inherited_name = "Shakespeare";
 ```
 
-### Code
 ```java
 System.out.println(middle_name + " ")
 ```
 
-### Code
 ```java
 middle_name = "W"
 ```
 
-### Code
 ```java
 middle_name = "W";
 ```
@@ -927,39 +252,31 @@ middle_name = "W";
 
 当你对变量进行数学运算时，你将使用基本符号进行计算。
 
-### Code
 ```java
 import java.util.Scanner ;
 ```
 
-### Code
 ```java
 public class StringVariables {
 
 }
 ```
 
-### Code
 ```java
 Scanner client_input = new Scanner(System.in)
 ```
 
-### Code
 ```java
 String middle_name;
 
 middle_name = client_input.next() ;
 ```
 
-### Code
 ```java
 System.out.print (" Enter your middle name: " ) ;
 
 middle_name = client_input.next() ;
 ```
-
-
-
 
 ```java
 System.out.print (“Enter your family name: “);
@@ -982,19 +299,15 @@ System.out.println (“You are” + complete_name);
 
 与 `Scanner` 类一样，还有一个 `JOptionPane` 类，在你尝试从客户端获取输入时非常有用。该类会弹出一个输入窗口，让客户端输入正确的数据，并弹出显示类似“Hello”等内容的窗口。
 
-### Code
-
 ```java
 import javax.swing.JOptionPane;
 ```
 
- Java 将被告知你想使用 `JOptionPane` 类，并且它位于 `javax.swing` 库中。
+Java 将被告知你想使用 `JOptionPane` 类，并且它位于 `javax.swing` 库中。
 
 如果你不想更改之前的任何代码，可以再次启动一个新项目来练习这个。当你输入代码时，可能会发现 `import javax.swing.JOptionPane;` 下有下划线。这是因为这段代码尚未被使用。一旦使用了它，下划线就会消失。
 
 为了获得一个允许客户端输入某些类型数据的框，你将从 `JOptionPane` 中选择 `showInputDialog` 方法。这将导致输入的数据直接存储到相应的变量中。
-
-### Code
 
 ```java
 String middle_name;
@@ -1002,8 +315,6 @@ middle_name = JOptionPane.showInputDialog (“ Middle Name “) ;
 ```
 
 在你使用 `JOptionPane` 输入完一个句号后，会弹出一个列表。在这里，你可以双击 `showInputDialog`，这样你就可以在括号之间输入你想显示的消息。像其他任何内容一样，它应该位于双引号之间。
-
-### Code
 
 ```java
 String inherited_name;
@@ -1019,9 +330,7 @@ JOptionPane.showMessageDialog (null, complete_name );
 
 当运行你的代码时，你将得到弹出框，询问你指定的希望客户端输入的数据。一旦点击“确定”按钮，你的输入就会显示出来。再次点击“确定”将程序结束。
 
-# 第三章：
-
-## Java 的控制流 (Control Flow for Java)
+## 第三章：Java 的控制流 (Control Flow for Java)
 
 在此之前你所做的任何编程都将被称为顺序编程（sequential programming），这基本上意味着你输入的代码是从上到下读取的，每一行都按照其书写的方式读取。然而，并不是所有程序都是这样工作的。
 
@@ -1035,7 +344,7 @@ JOptionPane.showMessageDialog (null, complete_name );
 
 一个 `if` 语句看起来如下：
 
-```
+```java
 if ( statement ) {
 }
 ```
@@ -1059,7 +368,7 @@ if( client < 18) {
 
 另一个简写概念是将三角形指向右侧，表示大于。
 
-```
+```java
 if( client > 18) {
 //display message
 }
@@ -1071,7 +380,7 @@ if( client > 18) {
 
 与其使用 `if` 语句，可以使用 `if else` 语句。
 
-```
+```java
 if( condition_to_test) {
 }
 else {
@@ -1084,7 +393,7 @@ else {
 
 可以同时测试多个两个条件。如果你想测试某个年龄范围，将使用 `if else if` 语句。语法如下：
 
-```
+```java
 if(condition_one) {
 }
 else if ( condition_ two ) {
@@ -1096,6 +405,7 @@ else {
 当发送 `if` 语句时，紧随其后的是圆括号。第二个条件位于新的括号之间，但它不会被第一个条件捕获。
 
 你需要使用的条件运算符有：
+
 - 大于 `>`
 - 小于 `<`
 - 大于等于 `>=`
@@ -1105,7 +415,7 @@ else {
 - 等于 `==`
 - 非 `!`
 
-两个与符号 符号将用于同时测试多个条件。
+两个与符号符号将用于同时测试多个条件。
 
 ```java
 else if ( client > 18 && client < 40)
@@ -1137,16 +447,11 @@ if( client < 20) {
 
 ```java
 if( client < 20) {
-```
-
-
-
-
-```java
-if( client > 20 && client < 23 ) {
-    System.out.println( “You are 21 or 22”) ;
-} else {
-    System.out.println (“22 or younger”) ;
+    if( client > 20 && client < 23 ) {
+        System.out.println( “You are 21 or 22”) ;
+    } else {
+        System.out.println (“22 or younger”) ;
+    }
 }
 ```
 
@@ -1162,8 +467,6 @@ Boolean client = true;
 
 你不需要输入 `int`、`string` 或 `double`，你需要使用小写的 b 来输入 `Boolean`。变量名将在赋值为 `true` 或 `false` 之后出现。赋值使用一个等号。但是，如果你要评估该变量且它有值，那么你需要使用两个等号。
 
-### 代码
-
 ```java
 Boolean client = true;
 if ( client == true) {
@@ -1176,8 +479,6 @@ if ( client == true) {
 `if` 语句将检查客户端输入的变量是否为 `true`。`else` 将检查它是否为 `false`。你不需要说 `else if ( client == false)`。当某结果不是 `true` 时，它显然是 `false`。你会使用 `else`，因为在涉及布尔值时只有两种选择。
 
 另一个用于条件的运算符是 `NOT` 运算符，它用于布尔值。
-
-### 代码
 
 ```java
 Boolean client = true ;
@@ -1217,8 +518,6 @@ Switch ( variable_to_test) {
 
 将使用 `default` 值，但它是完全可选的。如果你没有在 switch 语句的其他地方检查它，你可以在变量中包含其他值。
 
-### 代码
-
 ```java
 public static void main(String[] args) {
     int client = 17;
@@ -1240,13 +539,9 @@ public static void main(String[] args) {
 
 代码将设置一个必须测试的值。一个整数变量将被称为 `client`。在这段代码中，值被设置为 `18`。通过 `switch` 语句，将检查变量以查看其内容。
 
-（注：由于原文中存在大量重复和逻辑混乱的描述，此处翻译已根据 Java 语法逻辑进行了修正，以确保技术可读性。）
-
 ### 循环
 
 由于流程是顺序的且向下运行的，如果你不希望是这样，你需要告诉 Java 以不同的方式执行。因此，为了中断这种流程，你可以创建一个循环。通过这种，循环将强制程序返回并重复执行代码行。
-
-### 代码
 
 ```java
 int addition = 1 + 1;
@@ -1263,8 +558,6 @@ for ( beginning_value; last_value ; increment_amount) {
 ```
 
 在圆括号中，你有三个不同的项目：循环的起始值、结束值以及它将遵循的路径。
-
-### 代码
 
 ```java
 package loops ;
@@ -1305,8 +598,6 @@ while ( condition) {
 
 `while` 单词将是小写，你的条件将放在括号之间。
 
-### 代码
-
 ```java
 int loopVal = 0;
 while (loopVal < 5) {
@@ -1316,8 +607,6 @@ while (loopVal < 5) {
 ```
 
 括号中的条件将是正常的，花括号中的代码将是必须打印的代码。循环将永远进行下去，因为没有值为 0 的情况。
-
-
 
 计数器 `loopVal` 将到达条件的末尾。当你不需要计算一个值而是在检查一个值时，`while` 循环非常好用。对于代码来说，当键盘上没有按下按键时，它可以保持循环。但是，字母 `x` 将退出循环。
 
@@ -1337,18 +626,20 @@ do {
 
 Java 将跳出循环而不执行括号内的代码。当你想要测试这一点时，你需要先使用 `while` 循环。在运行代码之前，必须更改 `loopVal` 变量的值。文本将不会被打印。
 
-# 第 4 章：数组
+## 第 4 章：数组
 
 数组一次可以持有多个值；它更像是一个项目列表。当你考虑到数组时，你应该考虑到电子表格以及它的列。你可以有一列，也可以有很多列。
 
 位于单列的数组看起来像这样：
 
+```
 0 – 10
 1 – 14
 2 – 36
 3 – 27
 4 – 43
 5 – 18
+```
 
 就像电子表格一样，每一行都有一个位置索引。位置从零开始，每次增加一。每个位置将像上面的代码一样持有一个值。
 
@@ -1408,7 +699,7 @@ Boolean[] aryBools = {false, true, false, true};
 Boolean[] aryBools = new Boolean[] {false, true, false, true};
 ```
 
-## 循环与数组
+### 循环与数组
 
 数组有自己的循环。当一个值被赋值给数组时，你将使用上一节中看到的语法。虽然这并不完全实际，但在有大量数量需要赋值给数组时，它是可以的。
 
@@ -1431,11 +722,7 @@ public class ArrayTest {
 
 循环将一直持续到 `lottery_amounts.length` 大于 `I`。数组中的每个位置每次循环都会增加一。
 
-
-
-
-
-## 字符串与数组
+### 字符串与数组
 
 数组像整数一样放入字符串中。
 
@@ -1455,7 +742,7 @@ aryString[ 4 ] = “array” ;
 ```java
 int I ;
 for ( I = 0 ; I < aryString.length ; i++ ) {
-System.out.println( aryString[ I ] ) ;
+    System.out.println( aryString[ I ] ) ;
 }
 ```
 
@@ -1468,19 +755,19 @@ package strings1 ;
 import java.util.Arrays ;
 
 public class StringArrays {
-public static void main(String[] args) {
-String[ ] aryString= new String[ 5 ] ;
-aryString[ 0 ] = “This” ;
-aryString[ 1 ] = “is” ;
-aryString[ 2 ] = “a” ;
-aryString[ 3 ] = “string” ;
-aryString[ 4 ] = “array” ;
-Arrays.sort( aryString ) ;
-int I ;
-for ( I = 0; I < aryString.length ; i++) {
-System.out.println ( aryString[ I ] ) ;
-}
-}
+    public static void main(String[] args) {
+        String[ ] aryString= new String[ 5 ] ;
+        aryString[ 0 ] = “This” ;
+        aryString[ 1 ] = “is” ;
+        aryString[ 2 ] = “a” ;
+        aryString[ 3 ] = “string” ;
+        aryString[ 4 ] = “array” ;
+        Arrays.sort( aryString ) ;
+        int I ;
+        for ( I = 0; I < aryString.length ; i++) {
+            System.out.println ( aryString[ I ] ) ;
+        }
+    }
 }
 ```
 
@@ -1554,9 +841,6 @@ listTest.add( 7 );
 
 落在括号中间的内容将被添加到列表中。你只能添加对象。此列表中的前三个项目将作为字符串对象添加。最后一个项目是一个金额，因为有整数金额对象。
 
-
-
-
 当这段代码按字母顺序排序时，`a` 不会排在第一位，因为它是小写的。因此，`a` 的值为 `u\0061`。大写的字母 `T` 的值为 `u\0054`。
 
 在操作具有不同文本的字符串时，你可以使用以下一些方法：
@@ -1574,7 +858,6 @@ listTest.add( 7 );
 
 关于大小写字母，Java 将以一种直观的方式将文本转换为小写或大写，并将使用内置的 `toUpperCase` 和 `toLowerCase` 方法来实现。
 
-### 代码
 ```java
 package prjstrings;
 
@@ -1606,9 +889,9 @@ System.out.println(changeCase.toUpperCase())
 当你想要执行 `toLowerCase` 时，将使用相同的方法。
 
 ### 字符串比较
+
 可以通过十六进制值对字符串进行比较。你只需要使用 `compareTo` 方法即可。
 
-### 代码
 ```java
 package prjstrings;
 
@@ -1641,9 +924,9 @@ result = Word1.compareTo(Word2);
 但是，当比较两个字符串时，Java 将比较十六进制值而不是单词的字母。由于由于两者都包含大写字母，`App` 的 `A` 将排在 `ape` 之前。
 
 ### indexOf
+
 `indexOf` 将定位当前字符串或任何其他字符串中的字符。
 
-### 代码
 ```java
 package prjstrings;
 
@@ -1661,7 +944,7 @@ public class StringManipulation {
 
 这段代码正在检查提供的电子邮件地址中是否存在 `@` 符号。由于使用了单引号，它是一个 `char` 变量。一旦设置好电子邮件，你将得到结果，结果是一个 `int` 变量。因此，得益于 `indexOf` 方法，你的结果是一个整数。
 
-由于这一行的存在，你的 符号位置将是这段代码的结果：
+由于这一行的存在，你的符号位置将是这段代码的结果：
 
 ```java
 result = email_address.indexOf(ampersand);
@@ -1673,7 +956,6 @@ result = email_address.indexOf(ampersand);
 
 如果你要找的字符不存在，那么 `indexOf` 将给你返回负一的结果。
 
-### 代码
 ```java
 package prjstrings;
 
@@ -1690,6 +972,7 @@ public class StringManipulation {
             System.out.println("email address is ok");
         }
     }
+}
 ```
 
 虽然代码看起来完全一样，但你现在将使用字符串变量来包含你想要检查的文本。再次返回负一的结果表示未找到搜索的文本。`IndexOf` 也可以用于测试多个字符。

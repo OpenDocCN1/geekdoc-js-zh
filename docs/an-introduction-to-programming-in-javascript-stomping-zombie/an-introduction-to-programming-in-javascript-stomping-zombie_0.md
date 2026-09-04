@@ -1,12 +1,9 @@
-# Javascript 编程入门指南：变量、循环、函数踩踏僵尸
 
-
-
-
+# JavaScript 编程入门指南：变量、循环、函数踩踏僵尸
 
 ## 你知道还有什么能杀死僵尸吗？
 
-真诚的反馈。喜欢这本书？发现了错误或遗漏？对某些内容仍有疑惑？想夸赞作者（或吐槽其缺乏）的幽默感？请直接发送邮件至 feedback@undead.institute 联系 John。
+真诚的反馈。喜欢这本书？发现了错误或遗漏？对某些内容仍有疑惑？想夸赞作者（或吐槽其缺乏）的幽默感？请直接发送邮件至 `feedback@undead.institute` 联系 John。
 
 ## 更多僵尸化网页开发内容，请访问
 
@@ -31,7 +28,6 @@
 当你订阅我们的电子邮件通讯《网络末日周刊》时，即可获得这份可打印的速查表。它涵盖了 JavaScript 循环、变量、条件语句和函数。借助你自己的末日 JavaScript 速查表，轻松编写 JavaScript。
 
 [`undd.link/intro2js`](https://undd.link/intro2js)
-
 
 ## 你好，人类抵抗细胞
 
@@ -73,7 +69,7 @@ JavaScript 与其他前端网页语言（如 HTML 和 CSS）不同。它更具�
 
 所以你也可以在字符串中包含数字字符，但它们会作为字符串而不是数字来表现——因此你不能直接对它们进行加法或乘法运算，除非先将它们转换回数字。如果某物在引号内，它就是字符串。
 
-**布尔值：** 值为 true 或 false，不能是其他值。这使得它非常适合用作开关，来打开或关闭某些东西。
+**布尔值：** 值为 `true` 或 `false`，不能是其他值。这使得它非常适合用作开关，来打开或关闭某些东西。
 
 JavaScript 中还有几种其他类型的变量，但这些足以让我们开始。
 
@@ -85,7 +81,7 @@ JavaScript 中还有几种其他类型的变量，但这些足以让我们开始
 
 ![](img/livingtip-jsloops.png)
 
-### 活死人之夜小贴士：
+### 活死人之夜小贴士
 
 这类错误常见的一个地方是当你试图将一个数字（`2`）和一个看起来像数字的字符串（`"2"`）相加时。在 JavaScript 中，`2 + "2"` 的结果是 `"22"`。由于其中一个是字符串，它会将另一个也强制转换为字符串，并将它们拼接（连接）在一起。（这在需要为用户构建消息时非常有用。）因此，要小心确保你是在用数字加数字，而不是字符串。
 
@@ -99,7 +95,7 @@ JavaScript 中还有几种其他类型的变量，但这些足以让我们开始
 
 ![](img/livingtip-jsloops.png)
 
-### 活死人之夜小贴士：
+### 活死人之夜小贴士
 
 我们可以利用这一点，采用驼峰命名法。驼峰命名法使多词变量名更易于阅读和理解。在驼峰命名法中，第一个单词全部小写，然后每个后续单词的首字母大写。以下是一些例子：
 
@@ -108,10 +104,6 @@ JavaScript 中还有几种其他类型的变量，但这些足以让我们开始
 变量名的最后一条规则是，你不能使用任何 JavaScript 的保留字——即那些对 JavaScript 有特殊含义、构成语言功能的单词。如果 HTML 有变量，那就好比把你的桶命名为 `<p>`。浏览器将很难理解你什么时候指的是 `p` 标签，什么时候指的是变量/桶，因为你给两者起了相同的名字。
 
 那么如何在 JavaScript 中声明一个变量呢？有三种方式：`var`、`let` 和 `const`。（这些就是不能用作变量/桶名的保留字的例子。）
-
-
-
-
 
 在命名变量之前，你需要学习一些重要的语法规则。与 CSS 类似，JavaScript 的每一行应以分号结尾。此外，JavaScript 中的两个正斜杠（`//`）表示注释，更具体地说，是告诉浏览器忽略这两个斜杠及其之后直到行末的所有内容。CSS 风格的注释在 JavaScript 中同样有效——也就是说，浏览器会忽略从 `/*` 开始到 `*/` 结束的所有内容，无论跨多少行。
 
@@ -144,7 +136,7 @@ const cell2NestRatio = 0.8271;
 
 ![](img/livingtip-jsloops.png)
 
-### 活尸小贴士：
+### 活尸小贴士
 
 你可以通过在变量名之间使用逗号来同时定义多个变量。下面我使用 `let`，但这种方法也适用于 `var` 和 `const`。
 
@@ -170,11 +162,11 @@ let horde = 700, humanityInTrouble = true;
 alert("The zombies are here!");
 ```
 
-会显示
+会显示：
 
 ![显示文本“The zombies are here!”的警告框](img/Image0.png)
 
-### 试试看：
+### 试试看
 
 Codepen 演示：[`codepen.io/undeadinstitute/pen/bGemwXJ`](https://codepen.io/undeadinstitute/pen/bGemwXJ)
 
@@ -192,7 +184,7 @@ document.write("The zombies are here!");
 
 这会将内容打印到页面上，通常这正是你希望看到的地方。缺点是让内容出现在你希望的位置有点复杂（尽管很容易添加到页面底部等位置），而且如果你在生产文件中留下了任何调试代码，僵尸就会获胜，你的用户会看到令人困惑的调试输出。
 
-### 试试看：
+### 试试看
 
 Codepen 演示：[`codepen.io/undeadinstitute/pen/ZEOqBbW`](https://codepen.io/undeadinstitute/pen/ZEOqBbW)
 
@@ -210,7 +202,7 @@ console.log("The zombies are here!");
 
 输出就会出现在控制台中，然后你可以找出程序出错的地方。虽然我仍然建议从生产代码中移除 `console.log` 语句，但如果你忘记了，除了我们这些开发者之外，其他人不太可能看到输出。
 
-### 试试看：
+### 试试看
 
 Codepen 演示：[`codepen.io/undeadinstitute/pen/LYZgber`](https://codepen.io/undeadinstitute/pen/LYZgber)
 
@@ -234,81 +226,77 @@ Codepen 演示：[`codepen.io/undeadinstitute/pen/LYZgber`](https://codepen.io/u
 nextHorde = zombies % hordeSize;
 ```
 
-### 试试看：
+### 试试看
 
 Codepen 演示：[`codepen.io/undeadinstitute/pen/eYzPyLm?editors=0010`](https://codepen.io/undeadinstitute/pen/eYzPyLm?editors=0010)
 
 文件演示：[`undead.institute/files/zombie-programming/004-mathematical-zombies.html`](https://undead.institute/files/zombie-programming/004-mathematical-zombies.html)
 
-
-
-
-
 我们经常做的事情有一些快捷方式。例如，如果我们想给一个变量加上一个数并将新结果保存到该变量，可以这样做：
 
-```
+```javascript
 undead = undead + 12;
 ```
 
 一个快捷方式是使用 `+=` 运算符，其效果与上面相同。
 
-```
+```javascript
 undead += 12;
 ```
 
 这不仅适用于加法，也适用于所有算术运算符。
 
-```
+```javascript
 undead = undead - 7
 ```
 
-等价于
+等价于：
 
-```
+```javascript
 undead -= 7
 ```
 
-```
+```javascript
 undead = undead * 7
 ```
 
-等价于
+等价于：
 
-```
+```javascript
 undead *= 7
 ```
 
-```
+```javascript
 undead = undead / 7
 ```
 
-等价于
+等价于：
 
-```
+```javascript
 undead /= 7
 ```
 
-```
+```javascript
 undead = undead % 7
 ```
 
-等价于
+等价于：
 
-```
+```javascript
 undead %= 7
 ```
 
 有一种算术运算非常常见，以至于它有一个比使用 `+=` 更短的快捷方式。要将值增加 1，可以在变量后添加 `++`（使用 `--` 可以减少 1）。
 
-```
+```javascript
 undead += 1 等价于 undead++
 ```
 
-```
+```javascript
 undead -= 1 等价于 undead--
 ```
 
-### 试试看：
+### 试试看
 
 Codepen 演示：[`codepen.io/undeadinstitute/pen/QWEZPXP`](https://codepen.io/undeadinstitute/pen/QWEZPXP)
 
@@ -316,28 +304,30 @@ Codepen 演示：[`codepen.io/undeadinstitute/pen/QWEZPXP`](https://codepen.io/u
 
 `++` 和 `--` 有一个小特性，偶尔会派上用场。你也可以将 `++` 或 `--` 放在变量前面。
 
-```
+```javascript
 ++undead;
 --undead;
 ```
 
-它仍然会递增或递减变量。但是，如果 `++` 或 `--` 放在变量后面，则变量会在查看变量/桶的内容*之前*递增或递减。如果 `++` 或 `--` 放在变量名前面，则变量/桶会在被查看之前递增或递减（参见下面的示例）。如果语句单独成行，那么是在之前还是之后递增或递减关系不大，这些语句是等价的。但如果它用在另一个 JavaScript 语句中，结果可能会改变。
+
+
+它仍然会递增或递减变量。但是，如果 `++` 或 `--` 放在变量后面，则变量会在查看变量/桶的内容之前递增或递减。如果 `++` 或 `--` 放在变量名前面，则变量/桶会在被查看之前递增或递减（参见下面的示例）。如果语句单独成行，那么是在之前还是之后递增或递减关系不大，这些语句是等价的。但如果它用在另一个 JavaScript 语句中，结果可能会改变。
 
 例如：
 
-```
+```javascript
 let undead = 10; let zombie = 17 + undead++;
 ```
 
 会将 `zombie` 设置为 28，`undead` 设置为 11；而
 
-```
+```javascript
 let undead = 10; let zombie = 17 + ++undead;
 ```
 
 会将 `zombie` 设置为 27，`undead` 设置为 11。
 
-### 试试看：
+### 试试看
 
 Codepen 演示：[`codepen.io/undeadinstitute/pen/WNxYQbw`](https://codepen.io/undeadinstitute/pen/WNxYQbw)
 
@@ -345,11 +335,11 @@ Codepen 演示：[`codepen.io/undeadinstitute/pen/WNxYQbw`](https://codepen.io/u
 
 ## 逻辑混乱的僵尸
 
-由于变量几乎可以保存任何值，因此很难跟踪变量/桶应该保存什么。随着复杂性的增加，这个问题会加剧。但你可以通过使用 if-then 语句来弄清楚变量中有什么。这些语句允许你测试一个条件（if）并根据结果执行某些操作（then）。
+由于变量几乎可以保存任何值，因此很难跟踪变量/桶应该保存什么。随着复杂性的增加，这个问题会加剧。但你可以通过使用 `if-then` 语句来弄清楚变量中有什么。这些语句允许你测试一个条件（if）并根据结果执行某些操作（then）。
 
-以下是 if-then 语句的样子，其中 if 测试 `undead` 和 `zombie` 是否相等（我们稍后会讨论你可以进行的不同测试）：
+以下是 `if-then` 语句的样子，其中 `if` 测试 `undead` 和 `zombie` 是否相等（我们稍后会讨论你可以进行的不同测试）：
 
-```
+```javascript
 if( undead == zombie ) { //停止尸群 }
 ```
 
@@ -357,7 +347,7 @@ if( undead == zombie ) { //停止尸群 }
 
 以下是我们可以使用的逻辑运算符：
 
-### 等于：
+### 等于
 
 `undead == zombie` 和 `undead === zombie` 测试相等性。
 
@@ -365,7 +355,7 @@ if( undead == zombie ) { //停止尸群 }
 
 ![](img/livingtip-jsloops.png)
 
-### 活尸小贴士：
+### 活尸小贴士
 
 事物怎么会或多或少相等（除了《动物农场》之外）？这是因为计算机节省内存的一种方式。我们的桶比喻在这里会有点失效，但假设我们有一个装满复杂东西的桶，比如一条面包。那里有很多信息。它很复杂，而且占用空间。
 
@@ -375,44 +365,44 @@ if( undead == zombie ) { //停止尸群 }
 
 在代码中，简化的版本可能如下所示：
 
-```
+```javascript
 7 == "7" //true
 7 === "7" //false
 ```
 
-### 小于：
+### 小于
 
 `undead < zombie`
 
-假设 `undead` 等于 10。`undead` 的值是否小于 `zombie` 的值？要使此条件返回 true，`zombie` 必须大于 10（例如 11、12、10.1、312 等）。如果 `zombie` 为 10 或更小（例如 9、10、7、-437 等），则返回 false。
+假设 `undead` 等于 10。`undead` 的值是否小于 `zombie` 的值？要使此条件返回 `true`，`zombie` 必须大于 10（例如 11、12、10.1、312 等）。如果 `zombie` 为 10 或更小（例如 9、10、7、-437 等），则返回 `false`。
 
-### 大于：
+### 大于
 
 `undead > zombie`
 
-`undead` 的值是否大于 `zombie` 的值？如果 `undead = 10`，则 true 值包括 9、8、-10、0 等。false 值包括 10、11、412 等。
+`undead` 的值是否大于 `zombie` 的值？如果 `undead = 10`，则 `true` 值包括 9、8、-10、0 等。`false` 值包括 10、11、412 等。
 
-### 小于或等于：
+### 小于或等于
 
 `undead <= zombie`
 
-`undead` 的值是否小于或等于 `zombie` 的值？如果 `undead = 10`，true 值包括 10、11、1017 等。false 值包括 9.9、-78、6 等。（你也可以使用 `<==` 来强制使用更严格的相等形式。）
+`undead` 的值是否小于或等于 `zombie` 的值？如果 `undead = 10`，`true` 值包括 10、11、1017 等。`false` 值包括 9.9、-78、6 等。（你也可以使用 `<==` 来强制使用更严格的相等形式。）
 
-### 大于或等于：
+### 大于或等于
 
 `undead >= zombie`
 
-`undead` 的值是否大于或等于 `zombie` 的值？如果 `undead = 10`，true 值包括 10、9、-7 等。false 值包括 11、10.1、371 等。（你也可以使用 `>==` 来强制使用更严格的相等形式。）
+`undead` 的值是否大于或等于 `zombie` 的值？如果 `undead = 10`，`true` 值包括 10、9、-7 等。`false` 值包括 11、10.1、371 等。（你也可以使用 `>==` 来强制使用更严格的相等形式。）
 
-### 不等于：
+### 不等于
 
 `undead != zombie`
 
-`undead` 和 `zombie` 的值是两个不同的东西。如果 `undead = 10`，true 值包括 9、17、38、-239 等，而 false 值是 10。没有其他 false 值。（你也可以使用 `!==` 来强制使用更严格的不等形式。）
+`undead` 和 `zombie` 的值是两个不同的东西。如果 `undead = 10`，`true` 值包括 9、17、38、-239 等，而 `false` 值是 10。没有其他 `false` 值。（你也可以使用 `!==` 来强制使用不等形式。）
 
-基于 if 你还可以做一件事，但这不是必需的。它被称为 else 语句，它允许你在条件为真时（then）做一件事，在条件为假时（else）做另一件事。它看起来像这样：
+基于 `if` 你还可以做一件事，但这不是必需的。它被称为 `else` 语句，它允许你在条件为真时（then）做一件事，在条件为假时（else）做另一件事。它看起来像这样：
 
-```
+```javascript
 if( undead === zombie ) {
   //停止尸群
 } else {
@@ -422,15 +412,15 @@ if( undead === zombie ) {
 
 因此，如果 `undead` 和 `zombie` 相等，浏览器将“停止尸群”。如果不相等（else），它将“停止传染”。
 
-### 试试看：
+### 试试看
 
 Codepen 演示：[`codepen.io/undeadinstitute/pen/MWezKez`](https://codepen.io/undeadinstitute/pen/MWezKez)
 
 文件演示：[`undead.institute/files/zombie-programming/007-logically-its-the-apocalypse.html`](https://undead.institute/files/zombie-programming/007-logically-its-the-apocalypse.html)
 
-如果你需要测试多个条件，可以使用 else if，从而进一步细分程序的响应方式。例如，如果两个值相等，你可能想要“停止尸群”。但如果它们不相等，你可能想要在其中一个更大时“停止更大的尸群”，在其中一个更小时“停止更小的尸群”。
+如果你需要测试多个条件，可以使用 `else if`，从而进一步细分程序的响应方式。例如，如果两个值相等，你可能想要“停止尸群”。但如果它们不相等，你可能想要在其中一个更大时“停止更大的尸群”，在其中一个更小时“停止更小的尸群”。
 
-```
+```javascript
 if( undead === zombie ) {
   //停止尸群
 } else if (undead > zombie) {
@@ -440,13 +430,13 @@ if( undead === zombie ) {
 }
 ```
 
-你可以根据需要创建任意多个这样的 if-else-if 链。你也可以根据程序中合理的变量来细化你想要执行的操作。
+你可以根据需要创建任意多个这样的 `if-else-if` 链。你也可以根据程序中合理的变量来细化你想要执行的操作。
 
 你可以使用 AND（`&&`）和 OR（`||`）组合条件。
 
 **AND** 表示两个语句都必须为真才能执行 then 部分。AND 由两个与符号表示：
 
-```
+```javascript
 if( undead === zombie && zombie > human ) {
   //停止尸群
 } else {
@@ -454,15 +444,11 @@ if( undead === zombie && zombie > human ) {
 }
 ```
 
-
-
-
-
-`Undead` 和 `zombie` 必须相等，并且 `zombie` 必须大于 `human`，浏览器才会执行“停止尸群”。如果两者都不成立，或者只有其中一个成立，则会执行“停止传染”。
+`undead` 和 `zombie` 必须相等，并且 `zombie` 必须大于 `human`，浏览器才会执行“停止尸群”。如果两者都不成立，或者只有其中一个成立，则会执行“停止传染”。
 
 **OR** 表示如果任一语句为真，或者两者都为真，则执行“停止尸群”。
 
-```
+```javascript
 if( undead === zombie || zombie > human ) {
   //stop horde
 } else {
@@ -470,9 +456,9 @@ if( undead === zombie || zombie > human ) {
 }
 ```
 
-如果 `undead` 和 `zombie` 相等，或者 `zombie` 大于 `human`，或者两者都成立，则执行“停止尸群”。只有当 `undead` 和 `zombie` 不相等 *并且* `human` 大于 `zombie` 时，才会执行“停止传染”。
+如果 `undead` 和 `zombie` 相等，或者 `zombie` 大于 `human`，或者两者都成立，则执行“停止尸群”。只有当 `undead` 和 `zombie` 不相等并且 `human` 大于 `zombie` 时，才会执行“停止传染”。
 
-### 动手试试：
+### 动手试试
 
 Codepen 演示：[`codepen.io/undeadinstitute/pen/OJXaMmO`](https://codepen.io/undeadinstitute/pen/OJXaMmO)
 
@@ -480,11 +466,11 @@ Codepen 演示：[`codepen.io/undeadinstitute/pen/OJXaMmO`](https://codepen.io/u
 
 ![](img/livingtip-jsloops.png)
 
-### 活死人之夜小贴士：
+### 活死人之夜小贴士
 
 由于我们经常测试 `true` 和 `false`，每次测试时都将所有内容改为字面量 `true` 或 `false`，或者编写特定的测试，都会增加额外的工作。因此，作为一种快捷方式，大多数编程语言（包括 JavaScript）会将一些并非严格意义上的 `false` 的值视为 `false`。例如，如果某个表达式或变量求值为 `0`，则被视为 `false`。如果是其他任何数值，则会被视为 `true`。这样，你可能会看到单个值（这个例子有点牵强，但希望你能理解）。
 
-```
+```javascript
 let undead = 0;
 if ( undead ) {
   //stop horde
@@ -497,9 +483,9 @@ if ( undead ) {
 
 其他被视为 `false` 的值包括：`null`（表示空变量/没有值的变量）、`undefined`（从未被赋值的变量）、由两个双引号或单引号相邻表示的空字符串 `“”` 或 `‘’`，以及 `NaN`（表示非数字）。当你尝试对非数字进行数字运算时，就会看到它，例如 `“12” / 2`（记住，引号内的任何内容都被视为字符串，而不是数字），或者出现在被威权人类定居点打上条形码的民众抗议标语上。
 
-**注意：** 这种测试最适用于原始类型：数字、字符串等。对于更复杂的类型（如数组，我们稍后会讨论），可能不适用。
+**注意：**这种测试最适用于原始类型：数字、字符串等。对于更复杂的类型（如数组，我们稍后会讨论），可能不适用。
 
-### 动手试试：
+### 动手试试
 
 Codepen 演示：[`codepen.io/undeadinstitute/pen/ZEOmvjN`](https://codepen.io/undeadinstitute/pen/ZEOmvjN)
 
@@ -513,19 +499,19 @@ JavaScript 以及其他编程语言中下一个重要的内容是循环。循环
 
 ![](img/livingtip-jsloops.png)
 
-### 活死人之夜小贴士：
+### 活死人之夜小贴士
 
 字母 `i`、`j` 和 `k` 传统上用作循环计数器（用于统计迭代次数的变量）。你不必非得使用这些作为计数器值，但如果不使用，请清晰地命名你的计数器。为了代码更清晰，最好不要将 `i`、`j` 或 `k` 用于其他类型的变量。
 
 JavaScript 中传统的 `for` 循环如下所示：
 
-```
+```javascript
 for( let i = 0; i < 10; i++ ) {
   //stop zombies 10 times
 }
 ```
 
-### 动手试试：
+### 动手试试
 
 Codepen 演示：[`codepen.io/undeadinstitute/pen/bGeQaZx`](https://codepen.io/undeadinstitute/pen/bGeQaZx)
 
@@ -533,7 +519,7 @@ Codepen 演示：[`codepen.io/undeadinstitute/pen/bGeQaZx`](https://codepen.io/u
 
 ![](img/livingtip-jsloops.png)
 
-### 活死人之夜小贴士：
+### 活死人之夜小贴士
 
 你会注意到 `i` 计数器从零开始而不是从一开始。这不是强制要求，但从长远来看，这会让事情更简单。原因是计算机从 0 开始计数，而不是从 1 开始。（就像某些僵尸一样，计算机没有手指可以数数。）因此，稍后当我们处理数组时，它们的索引从 0 开始而不是从 1 开始，如果你从 1 开始 `for` 循环，就会跳过第一个数组元素，僵尸就会获胜。（如果这听起来不太明白，别担心，我们后面会讲到。）
 
@@ -541,7 +527,7 @@ Codepen 演示：[`codepen.io/undeadinstitute/pen/bGeQaZx`](https://codepen.io/u
 
 注意不要设置一个永远无法达到的条件，否则循环会无限进行下去，僵尸就会获胜。例如，如果你的条件是 `i < 10`，而你使用了递减而不是递增，那么 `i` 将始终小于 10，循环永远不会退出。（我自己犯这种错误的次数比尸群中的僵尸还多，所以如果你发现浏览器卡住或重复执行远超预期的次数，最好直接关闭浏览器窗口，修复代码，然后重新打开页面。希望你能摆脱那些像饿肚子僵尸一样吞噬你大脑的无限循环。）
 
-```
+```javascript
 let horde = 0;
 let humans = 100;
 for( let i = 0; i < 10; i++) {
@@ -557,7 +543,7 @@ for( let j = 10; j < 1; j--) {
 }
 ```
 
-### 动手试试：
+### 动手试试
 
 Codepen 演示：[`codepen.io/undeadinstitute/pen/JjKepGE`](https://codepen.io/undeadinstitute/pen/JjKepGE)
 
@@ -567,7 +553,7 @@ Codepen 演示：[`codepen.io/undeadinstitute/pen/JjKepGE`](https://codepen.io/u
 
 `while` 循环告诉浏览器在条件为真时持续循环。
 
-```
+```javascript
 let george = “zombie”, stillAZombie = true;
 while( stillAZombie ) {
   if( george == “zombie” ) {
@@ -582,7 +568,7 @@ while( stillAZombie ) {
 
 `while` 循环有一个同父异母的兄弟叫做 `do-while` 循环。当你希望将条件放在循环末尾（即希望循环中的语句至少执行一次）时，可以使用 `do-while` 循环。
 
-```
+```javascript
 let george = “zombie”, stillAzombie = true;
 do {
   if( george == “zombie” ) {
@@ -593,37 +579,38 @@ do {
 } while( stillAZombie );
 ```
 
-### 动手试试：
+### 动手试试
 
-Codepen 演示：[`codepen.io/undeadinstitute/pen/zYBMRoB`](https://codepen.io/undeadinstitute/pen/zYBMRoB)
+Codepen 演示：[`codepen.io/undeadinstitute/pen/zYBMRoB`](https://undead.institute/files/zombie-programming/012-while-zombie-freak-out.html)
 
 文件演示：[`undead.institute/files/zombie-programming/012-while-zombie-freak-out.html`](https://undead.institute/files/zombie-programming/012-while-zombie-freak-out.html)
 
-
-
-
-
 上面的 `do-while` 循环与 `while` 循环功能相同，但确保了 `if` 测试至少执行一次。
+
+
 
 不过要小心这种循环，因为如果 `stillAzombie` 永远不会变成 `false`，那么你的循环将永远持续下去，僵尸们会在佛罗里达过冬，同时以你的名义贷款，毁掉你辛苦挣来的信用评分。你懂的……它们会赢。
 
 ## 僵尸狙击手与变量作用域
 
-在继续之前，我们先谈谈变量作用域——也就是你可以在哪里使用变量。当我们用 `var`、`let` 或 `const` 定义一个“桶”时，就像在桶侧面写上名字。如果你有一大堆侧面写有名字的桶，要找到你想要的那个可能需要花点时间，对吧？所以 JavaScript 允许你创建桶的分组，并将桶名局部化，以便更容易找到，并确保没有冲突。你可以把一组桶想象成两个花括号之间定义的所有桶（变量）。在该组内命名的任何桶都不会在组外使用，但在组外声明的任何变量也可以在组内使用。例如：
+在继续之前，我们先谈谈变量作用域——也就是你可以在哪里使用变量。当我们用 `var`、`let` 或 `const` 定义一个“桶”时，就像在桶侧面写上名字。如果你有一大堆侧面写有名字的桶，要找到你想要的那个可能需要花点时间，对吧？所以 JavaScript 允许你创建桶的分组，并将桶名局部化，以便更容易找到，并确保没有冲突。
 
-```
-let zombie = 0; for( let i = 0; i < 10; i++ ) {
+你可以把一组桶想象成两个花括号之间定义的所有桶（变量）。在该组内命名的任何桶都不会在组外使用，但在组外声明的任何变量也可以在组内使用。例如：
 
-let undead = i;
+```javascript
+let zombie = 0;
 
-zombie = i;
-
+for (let i = 0; i < 10; i++) {
+  let undead = i;
+  zombie = i;
 }
 
-//打印两个变量的内容。 document.write(zombie); //输出为 10 document.write(undead); //输出为 undefined
+// 打印两个变量的内容。
+document.write(zombie); // 输出为 10
+document.write(undead); // 输出为 undefined
 ```
 
-### 动手试试：
+### 动手试试
 
 Codepen 演示：[`codepen.io/undeadinstitute/pen/abZQPye`](https://codepen.io/undeadinstitute/pen/abZQPye)
 
@@ -633,21 +620,31 @@ Codepen 演示：[`codepen.io/undeadinstitute/pen/abZQPye`](https://codepen.io/u
 
 ## 末日结局数组
 
-还有另一种数据类型需要讨论，不过它更应被称为数据结构：数组。你可以把数组想象成一排有序的桶，或者是一排端着空碗的人，等着你最近的人类抵抗组织分发的“有啥炖啥”。这种排队方式能有效地将所有人分组，你可以沿着队伍分发炖菜，也可以喊名字让他们来取，或者派出一排与饥饿人群数量相等的炖菜厨师来分发。无论你用什么方式访问队伍中的人，都能做到，因为他们都在一个地方，并且按你理解的顺序排列。数组就是一行桶或变量。你可以通过索引（在队伍中的位置）按顺序访问所有变量，取出数组中的特定变量（你也可以使用字符串名称作为索引），或者使用 `map` 函数（我们将在下一本书中介绍）一次性对所有变量进行操作。
+还有另一种数据类型需要讨论，不过它更应被称为数据结构：数组。你可以把数组想象成一排有序的桶，或者是一排端着空碗的人，等着你最近的人类抵抗组织分发的“有啥炖啥”。这种排队方式能有效地将所有人分组，你可以沿着队伍分发炖菜，也可以喊名字让他们来取，或者派出一排与饥饿人群数量相等的炖菜厨师来分发。
+
+无论你用什么方式访问队伍中的人，都能做到，因为他们都在一个地方，并且按你理解的顺序排列。数组就是一行桶或变量。你可以通过索引（在队伍中的位置）按顺序访问所有变量，取出数组中的特定变量（你也可以使用字符串名称作为索引），或者使用 `map` 函数（我们将在下一本书中介绍）一次性对所有变量进行操作。
 
 数组使用方括号表示法来指定你当前所在的桶。默认情况下，索引从零开始编号。（空方括号表示创建一个空数组。）
 
-```
-let horde = []; horde[0] = "Bob"; horde[1] = "Fred"; horde[2] = "Leroy"; //horde 数组看起来像 ["Bob", "Fred", "Leroy"]
+```javascript
+let horde = [];
+
+horde[0] = "Bob";
+horde[1] = "Fred";
+horde[2] = "Leroy";
+
+// horde 数组看起来像 ["Bob", "Fred", "Leroy"]
 ```
 
 你也可以这样创建该数组：
 
-```
+```javascript
 let horde = ["Bob", "Fred", "Leroy"];
 ```
 
-但你不限于一排桶。你还可以创建一排排的桶，以及一排排排的桶，以及一排排排排的……你懂的。你可以创建多维数组。二维数组就像一个正方形。如果你见过大多数军事化人类抵抗组织列队作战，或者我们空军最后的飞机以紧密的方形编队飞行，你就会明白我的意思。或者看看这个桶的数组：
+但你不限于一排桶。你还可以创建一排排的桶，以及一排排排的桶，以及一排排排排的……你懂的。你可以创建多维数组。
+
+二维数组就像一个正方形。如果你见过大多数军事化人类抵抗组织列队作战，或者我们空军最后的飞机以紧密的方形编队飞行，你就会明白我的意思。或者看看这个桶的数组：
 
 ![](img/Image1.png)
 
@@ -659,15 +656,16 @@ let horde = ["Bob", "Fred", "Leroy"];
 
 还有一些数组特有的属性可以用来获取数组的信息。其中最常用的是 `length`，它返回数组中的元素数量，使我们能够编写 `for` 循环来搜索整个数组。调用 `length` 的方法是在数组名后面加上一个点号和 `length` 这个词。
 
-```
-let horde = [ 1, 0, 0, 1, 1 ]; let results = []; for( let i = 0; i < horde.length; i++) {
+```javascript
+let horde = [1, 0, 0, 1, 1];
+let results = [];
 
-results[i] = tryToCure( horde[i] );
-
+for (let i = 0; i < horde.length; i++) {
+  results[i] = tryToCure(horde[i]);
 }
 ```
 
-### 动手试试：
+### 动手试试
 
 Codepen 演示：[`codepen.io/undeadinstitute/pen/ExyGryj?editors=0010`](https://codepen.io/undeadinstitute/pen/ExyGryj?editors=0010)
 
@@ -685,7 +683,7 @@ Codepen 演示：[`codepen.io/undeadinstitute/pen/ExyGryj?editors=0010`](https:/
 
 ![](img/livingtip-jsloops.png)
 
-### 活死人小贴士：
+### 活死人小贴士
 
 虽然关于使用函数的最佳方式存在一些分歧——是几乎所有事情都用小函数，还是使用更庞大的函数——但两者各有优势。函数过多可能会使代码难以跟踪，并造成混乱，因为代码不再是线性的，而是会在函数定义的位置之间跳来跳去。另一方面，如果出了问题，问题会被限制在相当小的代码段内。使用更庞大的函数可以更容易地找到问题所在的函数，但该函数通常是一大段代码。
 
@@ -695,37 +693,29 @@ Codepen 演示：[`codepen.io/undeadinstitute/pen/ExyGryj?editors=0010`](https:/
 
 你并不总是需要给函数（或弗雷德或南希）任何信息来执行任务，只需说“开始！”即可。但你可能希望他们瞄准一群僵尸，或者重新装填武器，或者治愈某个特定的僵尸，比如曾经是人类配偶或孩子的僵尸。当你将信息传递给函数，或者将数据交给弗雷德或南希处理时，这些信息或数据被称为参数，你可以有零个、一个、两个或任意数量的参数或输入。
 
+任务完成后，你可能希望弗雷德或南希把某样东西交还给你，或者带回一些信息。这可能是一把重新装填好的武器，或者解药是否对你那位还没“翘辫子”的配偶或孩子起了作用（别担心，解药里注入了 JavaScript 代码，你的配偶/孩子现在正在休息，已经完全康复了）。
 
+如果他们交给你一堆东西，除非这些东西被整理好（例如放进一个数组或类似结构），否则你很难知道每样东西是什么。函数只能返回一个值，但这个值可以是一个数组，从而让你绕过“只能返回一个值”的限制。
 
+函数定义（即定义函数名称及其功能的部分）以关键字 `function` 开头，然后输入你为该函数指定的区分大小写的名称。接着，在括号内以逗号分隔的形式添加任意参数。如果没有参数，只需让括号内保持空白即可。
 
+```javascript
+function tryToCure(person) {
+  let result = Math.random() * 100;
 
-任务完成后，你可能希望弗雷德或南希把某样东西交还给你，或者带回一些信息。这可能是一把重新装填好的武器，或者解药是否对你那位还没“翘辫子”的配偶或孩子起了作用（别担心，解药里注入了 JavaScript 代码，你的配偶/孩子现在正在休息，已经完全康复了）。如果他们交给你一堆东西，除非这些东西被整理好（例如放进一个数组或类似结构），否则你很难知道每样东西是什么。函数只能返回一个值，但这个值可以是一个数组，从而让你绕过“只能返回一个值”的限制。
-
-函数定义（即定义函数名称及其功能的部分）以关键字 *function* 开头，然后输入你为该函数指定的区分大小写的名称。接着，在括号内以逗号分隔的形式添加任意参数。如果没有参数，只需让括号内保持空白即可。
-
-```
-function tryToCure( person ) {
-
-let result = Math.random() * 100;
-
-if(result <= 10) {
-
-return person + " is cured!";
-
-} else {
-
-return person + " is still a zombie";
-
-}
-
+  if (result <= 10) {
+    return person + " is cured!";
+  } else {
+    return person + " is still a zombie";
+  }
 }
 ```
 
 调用该函数时，你可以这样写：
 
-`tryToCure( spouse );`
+`tryToCure(spouse);`
 
-### 动手试试：
+### 动手试试
 
 Codepen 演示：[`codepen.io/undeadinstitute/pen/wvWNvXa`](https://codepen.io/undeadinstitute/pen/wvWNvXa)
 
@@ -735,89 +725,88 @@ Codepen 演示：[`codepen.io/undeadinstitute/pen/wvWNvXa`](https://codepen.io/u
 
 要捕获返回的值，你需要将其保存到一个变量中。返回值是可选的。
 
-`let human = tryToCure( spouse );`
+`let human = tryToCure(spouse);`
 
 如果你没有参数要传给函数，可以这样写：
 
-```
+```javascript
 function cureAllZombies() {
+  // cure all zombies
 
-//cure all zombies
-
-if( allCured == true ) {
-
-return true;
-
-} else {
-
-return false;
-
-}
-
+  if (allCured == true) {
+    return true;
+  } else {
+    return false;
+  }
 }
 ```
 
-如果因为弗雷德治愈了所有僵尸而无需返回值，那么函数中就不需要 return 语句，也无需捕获结果。调用方式如下：
+如果因为弗雷德治愈了所有僵尸而无需返回值，那么函数中就不需要 `return` 语句，也无需捕获结果。调用方式如下：
 
 `cureAllZombies();`
 
 如果有两个或更多参数，需要用逗号分隔参数。
 
-```
-function cureTwoZombies( zombie1, zombie2) {
-
-//cure two zombies
-
+```javascript
+function cureTwoZombies(zombie1, zombie2) {
+  // cure two zombies
 }
 ```
 
 假设不需要返回任何内容，调用方式如下：
 
-`cureTwoZombies( spouse, child );`
+`cureTwoZombies(spouse, child);`
 
 让我们看一个示例程序。出于让这个例子更简单的任意原因，我们神奇地拥有一个数组，里面装满了医院最新测试的僵尸结果。它存储在一维数组中，结果设置如下：1 表示人类，0 表示僵尸（“因为僵尸是零，人类是英雄，”这位酷炫又时髦的作者说道……）。医院需要一个 JavaScript 程序来将数组分类为人类和僵尸，并统计各自的数量。
 
-```
-let patientList = [1, 1, 0, 1, 1, 1, 0, 0, 1, 0, 1, 0 ], i = 0; let humans = 0, zombies = 0; while (patientList[i] != null) {
+```javascript
+let patientList = [1, 1, 0, 1, 1, 1, 0, 0, 1, 0, 1, 0];
+let i = 0;
+let humans = 0;
+let zombies = 0;
 
-if( patientList[i] === 1 ) {
+while (patientList[i] != null) {
+  if (patientList[i] === 1) {
+    humans++;
+  } else {
+    zombies++;
+  }
 
-humans++;
-
-} else {
-
-zombies++;
-
+  i++;
 }
 
-i++
-
-} //Output: humans 7, zombies 5
+// Output: humans 7, zombies 5
 ```
 
-### 动手试试：
+### 动手试试
 
 Codepen 演示：[`codepen.io/undeadinstitute/pen/KKMJwEB`](https://codepen.io/undeadinstitute/pen/KKMJwEB)
 
 文件演示：[`undead.institute/files/zombie-programming/016-sorting-an-array-of-zombies.html`](https://undead.institute/files/zombie-programming/016-sorting-an-array-of-zombies.html)
 
-现在我们对逻辑和编程的工作原理有了一些了解，那么如何将这些内容添加到 HTML 页面中呢？有几种方法，但最重要的是 HTML 的 script 标签。
+现在我们对逻辑和编程的工作原理有了一些了解，那么如何将这些内容添加到 HTML 页面中呢？有几种方法，但最重要的是 HTML 的 `script` 标签。
 
-```
-<script type=“text/javascript”>
-
-cureAllZombies();
-
+```html
+<script type="text/javascript">
+  cureAllZombies();
 </script>
 ```
 
-你也可以使用 script 标签加载一个包含 JavaScript 的文件。
+你也可以使用 `script` 标签加载一个包含 JavaScript 的文件。
 
-`<script src=“thecure.js” type=“text/javascript”></script>`![](img/livingtip-jsloops.png)
+`<script src="thecure.js" type="text/javascript"></script>`
 
-### 活尸之夜小贴士：
+![](img/livingtip-jsloops.png)
 
-你应该尽可能晚地加载 JavaScript 代码——也就是在结束的 body 标签之前。如果过早加载（例如在 head 标签中），可能会阻塞其他资源的下载。无论 JavaScript 放在哪里，总下载时间都是一样的，但如果浏览器因为等待你的 js 文件下载或 js 代码执行而阻塞了下载或渲染，就会阻止页面其余部分的显示，导致用户看到空白屏幕的时间更长。即使页面在 js 加载完成之前无法正常工作，用户也喜欢看到页面正在加载的迹象，浏览器尽可能渲染内容会有所帮助。空白页面，就像僵尸空洞的凝视，通常意味着出了问题，用户也会这么认为。有些 JavaScript 需要在页面加载之前执行，或者用于决定页面的加载方式，因此 head 中也可能有 JavaScript，但如果能将其移到页面底部并且页面仍然能正常工作，那将是最理想的。
+### 活尸之夜小贴士
+
+你应该尽可能晚地加载 JavaScript 代码——也就是在结束的 `body` 标签之前。如果过早加载（例如在 `head` 标签中），可能会阻塞其他资源的下载。
+
+无论 JavaScript 放在哪里，总下载时间都是一样的，但如果浏览器因为等待你的 js 文件下载或 js 代码执行而阻塞了下载或渲染，就会阻止页面其余部分的显示，导致用户看到空白屏幕的时间更长。
+
+即使页面在 js 加载完成之前无法正常工作，用户也喜欢看到页面正在加载的迹象，浏览器尽可能渲染内容会有所帮助。空白页面，就像僵尸空洞的凝视，通常意味着出了问题，用户也会这么认为。
+
+有些 JavaScript 需要在页面加载之前执行，或者用于决定页面的加载方式，因此 `head` 中也可能有 JavaScript，但如果能将其移到页面底部并且页面仍然能正常工作，那将是最理想的。
 
 本书涵盖了入门编程所需的大部分基本工具，并且着眼于在 JavaScript 中实现。虽然语法/编写方式会有所不同，但大多数编程语言都包含这里讨论的所有概念。下一本书《JavaScript 基础：向僵尸头部投掷事件、元素和对象炸弹》将深入探讨 JavaScript 的具体内容及其一些独特特性。
 
@@ -833,7 +822,9 @@ Codepen：[`codepen.io/undeadinstitute/pen/jOrdwrE`](https://codepen.io/undeadin
 
 文件：[`undead.institute/files/zombie-programming/017-our-cells-numbery-biologicy-thingy-results.html`](https://undead.institute/files/zombie-programming/017-our-cells-numbery-biologicy-thingy-results.html)
 
-你的第一个函数 `processPerson` 应该接收受试者的姓名和方便提供的 `NBT`。（在循环中运行它可能有助于你处理所有条目。）由于本练习的任意便利性，`NBT` 可以告诉你两件事：受试者是否会变成僵尸，以及一旦变成僵尸，解药是否对他们有效。
+你的第一个函数 `processPerson` 应该接收受试者的姓名和方便提供的 `NBT`。（在循环中运行它可能有助于你处理所有条目。）
+
+由于本练习的任意便利性，`NBT` 可以告诉你两件事：受试者是否会变成僵尸，以及一旦变成僵尸，解药是否对他们有效。
 
 从 `processPerson` 中，将 `NBT` 传递给一个名为 `willBecomeZombie` 的函数。`willBecomeZombie` 应返回 `true` 或 `false`。如果 `NBT` 模 7 的结果大于等于 2，那么该人如果被感染就会变成僵尸，因此返回 `true`。如果结果为 0 或 1，则返回 `false`。
 
@@ -843,7 +834,7 @@ Codepen：[`codepen.io/undeadinstitute/pen/jOrdwrE`](https://codepen.io/undeadin
 
 一旦你计算出所有信息，调用一个函数，使用 `document.write` 将结果输出到屏幕上。你的输出应列出该人的姓名，并标注每个函数的结果。另外，请确保每个人的信息单独打印在一行。
 
-### 示例答案：
+### 示例答案
 
 Codepen：[`codepen.io/undeadinstitute/pen/xxOMWbd`](https://codepen.io/undeadinstitute/pen/xxOMWbd)
 
@@ -851,20 +842,21 @@ Codepen：[`codepen.io/undeadinstitute/pen/xxOMWbd`](https://codepen.io/undeadin
 
 ### 有问题吗？
 
+加入[亡灵学院 Facebook 群组](https://www.facebook.com/groups/490540551375786/)获取答案。
 
-
-
-加入[亡灵学院 Facebook 群组](https://www.facebook.com/groups/490540551375786/)获取答案。https://www.facebook.com/groups/undeadinstitutehelpforum
+https://www.facebook.com/groups/undeadinstitutehelpforum
 
 ### 你知道还有什么能杀死僵尸吗？
 
-诚实的反馈。喜欢这本书吗？发现了错误或遗漏？还有不明白的地方？想夸赞作者（或吐槽他）的幽默感？直接发邮件给 John：feedback@undead.institute
+诚实的反馈。喜欢这本书吗？发现了错误或遗漏？还有不明白的地方？想夸赞作者（或吐槽他）的幽默感？直接发邮件给 John：`feedback@undead.institute`
 
 ### 在以下网址找到更多僵尸化的 Web 开发内容
 
 [`undead.institute`](https://undead.institute/)
 
 ## 关于作者
+
+
 
 John 是一位兼具设计与开发技能的故事讲述者。白天他设计和构建网站与移动应用，晚上则在 StoryLab（[`storylab.us`](https://storylab.us/)）编写科幻故事，并在[`8wordstories.com`](https://8wordstories.com/)上精心计算字数。他是一颗伪装的菠萝[`pineapplecomics.com`](https://pineapplecomics.com/)，并且（如你所知）试图通过帮助你杀死僵尸[`undead.institute`](https://undead.institute/)来让学习 Web 开发变得有趣。他很幸运地拥有一个妻子、五个孩子，以及六只猫、四条狗和一小群鱼。如果他记得穿裤子，那就是美好的一天。
 

@@ -1,62 +1,63 @@
+
 # 深入浅出 ES6（十二）：代理 Proxies
 
-作者 Jason Orendorff ，译者 刘振涛
+作者 Jason Orendorff，译者 刘振涛
 
-*编者按：ECMAScript 6 已经正式发布了，作为它最重要的方言，Javascript 也即将迎来语法上的重大变革，InfoQ 特开设“[深入浅出 ES6](http://www.infoq.com/cn/es6-in-depth/)”专栏，来看一下 ES6 将给我们带来哪些新内容。本专栏文章来自[Mozilla Web 开发者博客](https://hacks.mozilla.org/category/es6-in-depth/)，由作者授权翻译并发布。*
+*编者按：ECMAScript 6 已经正式发布了，作为它最重要的方言，Javascript 也即将迎来语法上的重大变革，InfoQ 特开设“[深入浅出 ES6](http://www.infoq.com/cn/es6-in-depth/)”专栏，来看一下 ES6 将给我们带来哪些新内容。本专栏文章来自 [Mozilla Web 开发者博客](https://hacks.mozilla.org/category/es6-in-depth/)，由作者授权翻译并发布。*
 
 请看这样一段代码：
 
 ```js
- var obj = new Proxy({}, {
-      get: function (target, key, receiver) {
-        console.log(`getting ${key}!`);
-        return Reflect.get(target, key, receiver);
-      },
-      set: function (target, key, value, receiver) {
-        console.log(`setting ${key}!`);
-        return Reflect.set(target, key, value, receiver);
-      }
-    });
+var obj = new Proxy({}, {
+  get: function (target, key, receiver) {
+    console.log(`getting ${key}!`);
+    return Reflect.get(target, key, receiver);
+  },
+  set: function (target, key, value, receiver) {
+    console.log(`setting ${key}!`);
+    return Reflect.set(target, key, value, receiver);
+  }
+});
 ```
 
 代码乍一看有些复杂，使用了一些陌生的特性，稍后我会详细讲解每一部分。现在，一起来看一下我们创建的对象：
 
 ```js
- > obj.count = 1;
-        setting count!
-    > ++obj.count;
-        getting count!
-        setting count!
-        2
+> obj.count = 1;
+    setting count!
+> ++obj.count;
+    getting count!
+    setting count!
+    2
 ```
 
 显示结果可能与我们的理解不太一样，为什么会输出“`setting count`”和“`getting count`”？其实，我们拦截了这个对象的属性访问方法，然后将“.”运算符重载了。
 
 ## 它是如何做到的？
 
-计算领域最好的的技巧是虚拟化，这种技术一般用来实现惊人的功能。它的工作机制如下：
+计算领域最好的技巧是虚拟化，这种技术一般用来实现惊人的功能。它的工作机制如下：
 
-1.  随便选一张照片。
+1. 随便选一张照片。
 
-    ![](img/1power-plant-500x266.jpg)
+   ![](img/1power-plant-500x266.jpg)
 
-    [图片来源：Martin Nikolaj Bech](https://www.flickr.com/photos/martini_dk/369891979)
+   [图片来源：Martin Nikolaj Bech](https://www.flickr.com/photos/martini_dk/369891979)
 
-2.  在图片中围绕某物勾勒出一个轮廓。
+2. 在图片中围绕某物勾勒出一个轮廓。
 
-    ![](img/power-plant-with-outline-500x266.png)
+   ![](img/power-plant-with-outline-500x266.png)
 
-3.  现在替换掉轮廓中的内容，或者替换掉轮廓外的内容，但是始终要遵循向后兼容的规则，替换前后的图片要尽可能相似，不能让轮廓两侧的图像过于突兀。
+3. 现在替换掉轮廓中的内容，或者替换掉轮廓外的内容，但是始终要遵循向后兼容的规则，替换前后的图片要尽可能相似，不能让轮廓两侧的图像过于突兀。
 
-    ![](img/wind-farm-500x266.png)
+   ![](img/wind-farm-500x266.png)
 
-    [图片来源：Beverley Goodwin](https://www.flickr.com/photos/bevgoodwin/8671334130/)
+   [图片来源：Beverley Goodwin](https://www.flickr.com/photos/bevgoodwin/8671334130/)
 
-你可能在《*[楚门的世界](http://movie.douban.com/subject/1292064/)*》和《*[黑客帝国](http://movie.douban.com/subject/1291843/)*》这类经典的计算机科学电影中见到过类似的 hack 方法，将世界划分为两个部分，主人公生活在内部世界，外部世界被精心编造的常态幻觉所替换。
+你可能在《[楚门的世界](http://movie.douban.com/subject/1292064/)》和《[黑客帝国](http://movie.douban.com/subject/1291843/)》这类经典的计算机科学电影中见到过类似的 hack 方法，将世界划分为两个部分，主人公生活在内部世界，外部世界被精心编造的常态幻觉所替换。
 
 为了满足向后兼容的规则，你需要巧妙地设计填补进去的图片，但是真正的技巧是正确地勾勒轮廓。
 
-我所谓的*轮廓*是指一个 API 边界或接口，接口可以详细说明两段代码的交互方式以及交互双方对另一半的需求。所以如果一旦在系统中设计好了接口，轮廓自然就清晰了，这样就可以任意替换接口两侧的内容而不影响二者的交互过程。
+我所谓的轮廓是指一个 API 边界或接口，接口可以详细说明两段代码的交互方式以及交互双方对另一半的需求。所以如果一旦在系统中设计好了接口，轮廓自然就清晰了，这样就可以任意替换接口两侧的内容而不影响二者的交互过程。
 
 如果没有现成的接口，就需要施展你的创意才华来创造新接口，有史以来最酷的软件 hack 总是会勾勒一些之前从未有过的 API 边界，然后通过大量的工程化实践将接口引入到现有的体系中去。
 
@@ -68,7 +69,7 @@
 
 ## 所以，对象到底是什么？
 
-噢，我是说真的，请花费一点时间仔细想想这个问题的答案。当你清楚自己知道对象是什么的的时候再向下滚动。
+噢，我是说真的，请花费一点时间仔细想想这个问题的答案。当你清楚自己知道对象是什么的时候再向下滚动。
 
 ![](img/thinker-500x274.jpg)
 
@@ -80,97 +81,97 @@
 
 后来，规范中又添加了一个定义：“对象是属性的集合”。这句话没错，目前来说可以这样定义，我们稍后继续讨论。
 
-我之前说过，*想要编写一个 API，你需要充分理解你所面向的对象*。所以在某种程度上，我也算对本文做出一个承诺，我们会一起深入理解对象的细节，然后一起实现酷炫的功能。
+我之前说过，想要编写一个 API，你需要充分理解你所面向的对象。所以在某种程度上，我也算对本文做出一个承诺，我们会一起深入理解对象的细节，然后一起实现酷炫的功能。
 
 那么我们就跟随 ECMAScript 标准委员会的脚步，为 JavaScript 对象定义一个 API，一个接口。问题是我们需要什么方法？对象又可以做什么呢？
 
 这个问题的答案一定程度上取决于对象的类型：DOM 元素对象可以做一部分事情，音频节点对象又可以做另外一部分事情，但是所有对象都会共享一些基础功能：
 
-*   对象都有属性。你可以 get、set 或删除它们或做更多操作。
-*   对象都有原型。这也是 JS 中继承特性的实现方式。
-*   有一些对象是可以被调用的函数或构造函数。
+- 对象都有属性。你可以 get、set 或删除它们或做更多操作。
+- 对象都有原型。这也是 JS 中继承特性的实现方式。
+- 有一些对象是可以被调用的函数或构造函数。
 
 几乎所有处理对象的 JS 程序都是使用属性、原型和函数来完成的。甚至元素或声音节点对象的特殊行为也是通过调用继承自函数属性的方法来进行访问。
 
-所以 ECMAScript 标准委员会定义了一个由 14 种*内部方法*组成的集合，亦即一个适用于所有对象的通用接口，属性、原型和函数这三种基础功能自然成为它们关注的核心。
+所以 ECMAScript 标准委员会定义了一个由 14 种内部方法组成的集合，亦即一个适用于所有对象的通用接口，属性、原型和函数这三种基础功能自然成为它们关注的核心。
 
-我们可以在[ES6 标准列表 5 和 6](http://www.ecma-international.org/ecma-262/6.0/index.html#table-5)中找到全部的 14 种方法，我只会在这里讲解其中一部分。双方括号[[ ]]代表*内部*方法，在一般的 JS 代码中不可见，你可以调用、删除或覆写普通方法，但是无法操作内部方法。
+我们可以在 [ES6 标准列表 5 和 6](http://www.ecma-international.org/ecma-262/6.0/index.html#table-5) 中找到全部的 14 种方法，我只会在这里讲解其中一部分。双方括号 `[[ ]]` 代表内部方法，在一般的 JS 代码中不可见，你可以调用、删除或覆写普通方法，但是无法操作内部方法。
 
-*   **obj.[[Get]](key, receiver)** – 获取属性值。
+- `obj.[[Get]](key, receiver)` – 获取属性值。
 
-    当 JS 代码执行以下方法时被调用：`obj.prop`或`obj[key]`。
+  当 JS 代码执行以下方法时被调用：`obj.prop` 或 `obj[key]`。
 
-    *obj*是当前被搜索的对象，*receiver*是我们首先开始搜索这个属性的对象。有时我们必须要搜索几个对象，*obj*可能是一个在*receiver*原型链上的对象。
+  `obj` 是当前被搜索的对象，`receiver` 是我们首先开始搜索这个属性的对象。有时我们必须要搜索几个对象，`obj` 可能是一个在 `receiver` 原型链上的对象。
 
-*   **obj.[[Set]](key, value, receiver)** – 为对象的属性赋值。
+- `obj.[[Set]](key, value, receiver)` – 为对象的属性赋值。
 
-    当 JS 代码执行以下方法时被调用：`obj.prop = value`或`obj[key] = value`。
+  当 JS 代码执行以下方法时被调用：`obj.prop = value` 或 `obj[key] = value`。
 
-    执行类似`obj.prop += 2`这样的赋值语句时，首先调用[[Get]]方法，然后调用[[Set]]方法。对于++和--操作符来说亦是如此。
+  执行类似 `obj.prop += 2` 这样的赋值语句时，首先调用 `[[Get]]` 方法，然后调用 `[[Set]]` 方法。对于 `++` 和 `--` 操作符来说亦是如此。
 
-*   **obj.[HasProperty]** – 检测对象中是否存在某属性。
+- `obj.[[HasProperty]]` – 检测对象中是否存在某属性。
 
-    当 JS 代码执行以下方法时被调用：`key in obj`。
+  当 JS 代码执行以下方法时被调用：`key in obj`。
 
-*   **obj.[Enumerate]** – 列举对象的可枚举属性。
+- `obj.[[Enumerate]]` – 列举对象的可枚举属性。
 
-    当 JS 代码执行以下方法时被调用：`for (key in obj)` …
+  当 JS 代码执行以下方法时被调用：`for (key in obj)` …
 
-    这个内部方法会返回一个可迭代对象，`for-in`循环可通过这个方法得到对象属性的名称。
+  这个内部方法会返回一个可迭代对象，`for-in` 循环可通过这个方法得到对象属性的名称。
 
-*   **obj.[GetPrototypeOf]** – 返回对象的原型。
+- `obj.[[GetPrototypeOf]]` – 返回对象的原型。
 
-    当 JS 代码执行以下方法时被调用：[`obj.[__proto__]`](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Object/proto)或[`Object.getPrototypeOf`](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Object/GetPrototypeOf)`(obj)`。
+  当 JS 代码执行以下方法时被调用：[`obj.[__proto__]`](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Object/proto) 或 [`Object.getPrototypeOf`](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Object/GetPrototypeOf)`(obj)`。
 
-*   **functionObj.[[Call]](thisValue, arguments)** – 调用一个函数。
+- `functionObj.[[Call]](thisValue, arguments)` – 调用一个函数。
 
-    当 JS 代码执行以下方法时被调用：`functionObj()`或`x.method()`。
+  当 JS 代码执行以下方法时被调用：`functionObj()` 或 `x.method()`。
 
-    可选的。不是每一个对象都是函数。
+  可选的。不是每一个对象都是函数。
 
-*   **constructorObj.[[Construct]](arguments, newTarget)** – 调用一个构造函数。
+- `constructorObj.[[Construct]](arguments, newTarget)` – 调用一个构造函数。
 
-    当 JS 代码执行以下方法时被调用：举个例子，`new Date(2890, 6, 2)`。
+  当 JS 代码执行以下方法时被调用：举个例子，`new Date(2890, 6, 2)`。
 
-    可选的。不是每一个对象都是构造函数。
+  可选的。不是每一个对象都是构造函数。
 
-    参数*newTarget*在子类中起一定作用，我们将在未来的文章中详细讲解。
+  参数 `newTarget` 在子类中起一定作用，我们将在未来的文章中详细讲解。
 
 可能你也可以猜到其它七个内部方法。
 
 在整个 ES6 标准中，只要有可能，任何语法或对象相关的内建函数都是基于这 14 种内部方法构建的。ES6 在对象的中枢系统周围划分了一个清晰的界限，你可以借助代理特性用任意 JS 代码替换标准中枢系统的内部方法。
 
-既然我们马上要开始讨论覆写内部方法的相关问题，请记住，我们要讨论的是诸如`obj.prop`的核心语法、诸如[`Object.keys()`](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Object/keys)的内建函数等的行为。
+既然我们马上要开始讨论覆写内部方法的相关问题，请记住，我们要讨论的是诸如 `obj.prop` 的核心语法、诸如 [`Object.keys()`](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Object/keys) 的内建函数等的行为。
 
 ## 代理 Proxy
 
-ES6 规范定义了一个全新的全局构造函数：[代理](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Proxy)（[Proxy](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy)）。它可以接受两个参数：*目标对象（target）*与*句柄对象（handler）*。请看一个简单的示例：
+ES6 规范定义了一个全新的全局构造函数：[代理](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Proxy)（[Proxy](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy)）。它可以接受两个参数：目标对象（`target`）与句柄对象（`handler`）。请看一个简单的示例：
 
 ```js
- var target = {}, handler = {};
-    var proxy = new Proxy(target, handler);
+var target = {}, handler = {};
+var proxy = new Proxy(target, handler);
 ```
 
-我们先来探讨*代理*和*目标对象*之间的关系，然后再研究句柄对象的功用。
+我们先来探讨代理和目标对象之间的关系，然后再研究句柄对象的功用。
 
-*代理*的行为很简单：将*代理*的所有内部方法转发至*目标*。简单来说，如果调用`proxy.[[Enumerate]]()`，就会返回`target.[[Enumerate]]()`。
+代理的行为很简单：将代理的所有内部方法转发至目标。简单来说，如果调用 `proxy.[[Enumerate]]()`，就会返回 `target.[[Enumerate]]()`。
 
-现在，让我们尝试执行一条能够触发调用`proxy.[[Set]]()`方法的语句。
+现在，让我们尝试执行一条能够触发调用 `proxy.[[Set]]()` 方法的语句。
 
 ```js
- proxy.color = "pink";
+proxy.color = "pink";
 ```
 
-好的，刚刚都发生了什么？`proxy.[[Set]]()`应该调用`target.[[Set]]()`方法，然后在*目标*上创建一个新的属性。实际的结果如何？
+好的，刚刚都发生了什么？`proxy.[[Set]]()` 应该调用 `target.[[Set]]()` 方法，然后在目标上创建一个新的属性。实际的结果如何？
 
 ```js
- > target.color
-        "pink"
+> target.color
+    "pink"
 ```
 
 是的，它做到了！对于所有其它内部方法而言同样可以做到。新创建的代理会尽可能与目标的行为一致。
 
-当然，它们也不完全相同，你会发现`proxy !== target`。有时也有目标能够通过类型检测而代理无法通过的情况发生，举个例子，如果代理的目标是一个 DOM 元素，相应的代理就不是，此时类似`document.body.appendChild(proxy)`的操作会触发类型错误（`TypeError`）。
+当然，它们也不完全相同，你会发现 `proxy !== target`。有时也有目标能够通过类型检测而代理无法通过的情况发生，举个例子，如果代理的目标是一个 DOM 元素，相应的代理就不是，此时类似 `document.body.appendChild(proxy)` 的操作会触发类型错误（`TypeError`）。
 
 ## 代理句柄
 
@@ -178,21 +179,22 @@ ES6 规范定义了一个全新的全局构造函数：[代理](https://develope
 
 句柄对象的方法可以覆写任意代理的内部方法。
 
-举个例子，你可以定义一个[`handler.set()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy/handler/set)方法来拦截所有给对象属性赋值的行为：
+举个例子，你可以定义一个 [`handler.set()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy/handler/set) 方法来拦截所有给对象属性赋值的行为：
 
 ```js
- var target = {};
-    var handler = {
-      set: function (target, key, value, receiver) {
-        throw new Error("请不要为这个对象设置属性。");
-      }
-    };
-    var proxy = new Proxy(target, handler);
-    > proxy.name = "angelina";
-        Error: 请不要为这个对象设置属性。
+var target = {};
+var handler = {
+  set: function (target, key, value, receiver) {
+    throw new Error("请不要为这个对象设置属性。");
+  }
+};
+var proxy = new Proxy(target, handler);
+
+> proxy.name = "angelina";
+    Error: 请不要为这个对象设置属性。
 ```
 
-句柄方法的完整列表可以在[MDN 有关代理的页面](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Proxy#Methods_of_the_handler_object)上找到，一共有 14 种方法，与 ES6 中定义的 14 中内部方法一致。
+句柄方法的完整列表可以在 [MDN 有关代理的页面](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Proxy#Methods_of_the_handler_object) 上找到，一共有 14 种方法，与 ES6 中定义的 14 种内部方法一致。
 
 所有句柄方法都是可选的，没被句柄拦截的内部方法会直接指向目标，与我们之前看到的别无二致。
 
@@ -200,41 +202,42 @@ ES6 规范定义了一个全新的全局构造函数：[代理](https://develope
 
 到目前为止，我们对于代理的了解程度足够尝试去做一些奇怪的事情，实现一些不借助代理根本无法实现的功能。
 
-我们的第一个实践，创建一个`Tree()`函数来实现以下特性：
+我们的第一个实践，创建一个 `Tree()` 函数来实现以下特性：
 
 ```js
- > var tree = Tree();
-    > tree
-        { }
-    > tree.branch1.branch2.twig = "green";
-    > tree
-        { branch1: { branch2: { twig: "green" } } }
-    > tree.branch1.branch3.twig = "yellow";
-        { branch1: { branch2: { twig: "green" },
-                     branch3: { twig: "yellow" }}}
+> var tree = Tree();
+> tree
+    {}
+> tree.branch1.branch2.twig = "green";
+> tree
+    { branch1: { branch2: { twig: "green" } } }
+> tree.branch1.branch3.twig = "yellow";
+    { branch1: { branch2: { twig: "green" },
+                 branch3: { twig: "yellow" }}}
 ```
 
-请注意，当我们需要时，所有中间对象*branch1*、*branch2*和*branch3*都可以自动创建。这固然很方便，但是如何实现呢？
+请注意，当我们需要时，所有中间对象 `branch1`、`branch2` 和 `branch3` 都可以自动创建。这固然很方便，但是如何实现呢？
 
-在这之前，没有可以实现这种特性的方法，但是通过代理，我们只用寥寥几行就可以轻松实现，然后只需要接入`tree.[[Get]]()`就可以。如果你喜欢挑战，在继续阅读前可以尝试自己实现。
+在这之前，没有可以实现这种特性的方法，但是通过代理，我们只用寥寥几行就可以轻松实现，然后只需要接入 `tree.[[Get]]()` 就可以。如果你喜欢挑战，在继续阅读前可以尝试自己实现。
 
 这里是我的解决方案：
 
 ```js
- function Tree() {
-      return new Proxy({}, handler);
+function Tree() {
+  return new Proxy({}, handler);
+}
+
+var handler = {
+  get: function (target, key, receiver) {
+    if (!(key in target)) {
+      target[key] = Tree();  // 自动创建一个子树
     }
-    var handler = {
-      get: function (target, key, receiver) {
-        if (!(key in target)) {
-          target[key] = Tree();  // 自动创建一个子树
-        }
-        return Reflect.get(target, key, receiver);
-      }
-    };
+    return Reflect.get(target, key, receiver);
+  }
+};
 ```
 
-注意最后的`Reflect.get()`调用，在代理句柄方法中有一个极其常见的需求：只执行委托给*目标*的默认行为。所以 ES6 定义了一个新的[`反射（Reflect）对象`](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Reflect)，在其上有 14 种方法，你可以用它来实现这一需求。
+注意最后的 `Reflect.get()` 调用，在代理句柄方法中有一个极其常见的需求：只执行委托给目标的默认行为。所以 ES6 定义了一个新的[反射（`Reflect`）对象](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Reflect)，在其上有 14 种方法，你可以用它来实现这一需求。
 
 ## 小试牛刀（二）：只读视图
 
@@ -242,14 +245,16 @@ ES6 规范定义了一个全新的全局构造函数：[代理](https://develope
 
 这一次我们的赋值语句更复杂：我们需要实现一个函数，`readOnlyView(object)`，它可以接受任何对象作为参数，并返回一个与此对象行为一致的代理，该代理不可被变更，就像这样：
 
+
+
 ```js
- > var newMath = readOnlyView(Math);
-    > newMath.min(54, 40);
-        40
-    > newMath.max = Math.min;
-        Error: can't modify read-only view
-    > delete newMath.sin;
-        Error: can't modify read-only view
+> var newMath = readOnlyView(Math);
+> newMath.min(54, 40);
+    40
+> newMath.max = Math.min;
+    Error: can't modify read-only view
+> delete newMath.sin;
+    Error: can't modify read-only view
 ```
 
 我们如何实现这样的功能？
@@ -257,47 +262,47 @@ ES6 规范定义了一个全新的全局构造函数：[代理](https://develope
 即使我们不会阻断内部方法的行为，但仍然要对其进行干预，所以第一步是拦截可能修改目标对象的五种内部方法。
 
 ```js
- function NOPE() {
-      throw new Error("can't modify read-only view");
-    }
-    var handler = {
-      // 覆写所有五种可变方法。
-      set: NOPE,
-      defineProperty: NOPE,
-      deleteProperty: NOPE,
-      preventExtensions: NOPE,
-      setPrototypeOf: NOPE
-    };
-    function readOnlyView(target) {
-      return new Proxy(target, handler);
-    }
+function NOPE() {
+  throw new Error("can't modify read-only view");
+}
+var handler = {
+  // 覆写所有五种可变方法。
+  set: NOPE,
+  defineProperty: NOPE,
+  deleteProperty: NOPE,
+  preventExtensions: NOPE,
+  setPrototypeOf: NOPE
+};
+function readOnlyView(target) {
+  return new Proxy(target, handler);
+}
 ```
 
 这段代码可以正常运行，它借助只读视图阻止了赋值、属性定义等过程。
 
 这种方案中是否有漏洞？
 
-最大的问题是类似[[Get]]的一些方法可能仍然返回可变对象，所以即使一些对象`x`是只读视图，`x.prop`可能是可变的！这是一个巨大的漏洞。
+最大的问题是类似`[[Get]]`的一些方法可能仍然返回可变对象，所以即使一些对象`x`是只读视图，`x.prop`可能是可变的！这是一个巨大的漏洞。
 
 我们需要添加一个`handler.get()`方法来堵上漏洞：
 
 ```js
- var handler = {
-      ...
-      // 在只读视图中包裹其它结果。
-      get: function (target, key, receiver) {
-        // 从执行默认行为开始。
-        var result = Reflect.get(target, key, receiver);
-        // 确保返回一个不可变对象！
-        if (Object(result) === result) {
-          // result 是一个对象。
-          return readOnlyView(result);
-        }
-        // result 是一个原始原始类型，所以已经具备不可变的性质。
-        return result;
-      },
-      ...
-    };
+var handler = {
+  ...
+  // 在只读视图中包裹其它结果。
+  get: function (target, key, receiver) {
+    // 从执行默认行为开始。
+    var result = Reflect.get(target, key, receiver);
+    // 确保返回一个不可变对象！
+    if (Object(result) === result) {
+      // result 是一个对象。
+      return readOnlyView(result);
+    }
+    // result 是一个原始原始类型，所以已经具备不可变的性质。
+    return result;
+  },
+  ...
+};
 ```
 
 这仍然不够，`getPrototypeOf`和`getOwnPropertyDescriptor`这两个方法也需要进行同样的处理。
@@ -308,23 +313,23 @@ ES6 规范定义了一个全新的全局构造函数：[代理](https://develope
 
 ## 只言片语
 
-*   代理到底好在哪里？
+- **代理到底好在哪里？**
 
-    代理可以帮助你观察或记录对象访问，当调试代码时助你一臂之力，测试框架也可以用代理来创建[模拟对象](https://zh.wikipedia.org/wiki/%E6%A8%A1%E6%8B%9F%E5%AF%B9%E8%B1%A1)（[mock object](https://en.wikipedia.org/wiki/Mock_object)）。
+  代理可以帮助你观察或记录对象访问，当调试代码时助你一臂之力，测试框架也可以用代理来创建[模拟对象](https://zh.wikipedia.org/wiki/%E6%A8%A1%E6%8B%9F%E5对2象)（[mock object](https://en.wikipedia.org/wiki/Mock_object)）。
 
-    代理可以帮助你强化普通对象的能力，例如：惰性属性填充。
+  代理可以帮助你强化普通对象的能力，例如：惰性属性填充。
 
-    我不太想提到这一点，但是如果要想了解代理在代码中的运行方式，将代理的句柄对象包裹在*另一个代理*中是一个非常不错的办法，每当句柄方法被访问时就可以将你想要的信息输出到控制台中。
+  我不太想提到这一点，但是如果要想了解代理在代码中的运行方式，将代理的句柄对象包裹在另一个代理中是一个非常不错的办法，每当句柄方法被访问时就可以将你想要的信息输出到控制台中。
 
-    正如上文中只读视图的示例`readOnlyView`，我们可以用代理来限制对象的访问。当然在应用代码中很少遇到这种用例，但是 Firefox 在内部使用代理来实现不同域名之间的[安全边界](https://developer.mozilla.org/en-US/docs/Mozilla/Gecko/Script_security)，是我们的安全模型的关键组成部分。
+  正如上文中只读视图的示例`readOnlyView`，我们可以用代理来限制对象的访问。当然在应用代码中很少遇到这种用例，但是 Firefox 在内部使用代理来实现不同域名之间的[安全边界](https://developer.mozilla.org/en-US/docs/Mozilla/Gecko/Script_security)，是我们的安全模型的关键组成部分。
 
-*   与 WeakMap 深度结合。在我们的`readOnlyView`示例中，每当对象被访问的时候创建一个新的代理。这种做法可以帮助我们节省在`WeakMap`中创建代理时的缓存内存，所以无论传递多少次对象给`readOnlyView`，只会创建一个代理。
+- **与`WeakMap`深度结合。**在我们的`readOnlyView`示例中，每当对象被访问的时候创建一个新的代理。这种做法可以帮助我们节省在`WeakMap`中创建代理时的缓存内存，所以无论传递多少次对象给`readOnlyView`，只会创建一个代理。
 
-    这也是一个动人的 WeakMap 用例。
+  这也是一个动人的`WeakMap`用例。
 
-*   代理可解除。ES6 规范中还定义了另外一个函数：`Proxy.revocable(target, handler)`。这个函数可以像`new Proxy(target, handler)`一样创建代理，但是创建好的代理后续可被*解除*。（`Proxy.revocable`方法返回一个对象，该对象有一个`.proxy`属性和一个`.revoke`方法。）一旦代理被解除，它即刻停止运行并抛出所有内部方法。
+- **代理可解除。**ES6 规范中还定义了另外一个函数：`Proxy.revocable(target, handler)`。这个函数可以像`new Proxy(target, handler)`一样创建代理，但是创建好的代理后续可被解除。（`Proxy.revocable`方法返回一个对象，该对象有一个`.proxy`属性和一个`.revoke`方法。）一旦代理被解除，它即刻停止运行并抛出所有内部方法。
 
-*   对象不变性。在某些情况下，ES6 需要代理的句柄方法来报告与*目标*对象状态一致的结果，以此来保证所有对象甚至是代理的不变性。举个例子，除非目标不可扩展（inextensible），否则代理不能被声明为不可扩展的。
+- **对象不变性。**在某些情况下，ES6 需要代理的句柄方法来报告与目标对象状态一致的结果，以此来保证所有对象甚至是代理的不变性。举个例子，除非目标不可扩展（inextensible），否则代理不能被声明为不可扩展的。
 
 不变性的规则非常复杂，在此不展开详述，但是如果你看到类似“`proxy can't report a non-existent property as non-configurable`”这样的错误信息，就可以考虑从不变性的角度解决问题，最可能的补救方法是改变代理报告本身，或者在运行时改变目标对象来反射代理的报告指向。
 
@@ -338,9 +343,9 @@ ECMAScript 标准委员会针对这个问题开展了许多研究，搞清楚了
 
 完善后的对象几乎可以表示任何事物。
 
-对象是什么？可能现在最贴切的答案需要用 12 个内部方法进行定义：对象是在 JS 程序中拥有[[Get]]、[[Set]]等操作的实体。
+对象是什么？可能现在最贴切的答案需要用 12 个内部方法进行定义：对象是在 JS 程序中拥有`[[Get]]`、`[[Set]]`等操作的实体。
 
-* * *
+---
 
 我不太确定我们是否比之前更了解对象，但是我们绝对做了许多惊艳的事情，是的，我们实现了旧版 JS 根本做不到的功能。
 
@@ -359,4 +364,3 @@ ECMAScript 标准委员会针对这个问题开展了许多研究，搞清楚了
 下一次，我们将讨论 ES6 中最有争议的特性，有请在 Firefox 中实现这一特性的 Mozilla 工程师 Eric Faust 为大家深入讲解 ES6 中的类特性。
 
 查看原文：[深入浅出 ES6（十二）：代理 Proxies](http://www.infoq.com/cn/articles/es6-in-depth-proxies-and-reflect)
-

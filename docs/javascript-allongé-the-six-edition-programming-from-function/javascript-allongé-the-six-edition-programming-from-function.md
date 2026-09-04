@@ -1,8 +1,5 @@
+
 # JavaScript Allongé：从函数到类的 ECMAScript 2015 编程
-
-
-
-
 
 ![](img/34322ce8d9a7a9a4a308955f2d1f90b3_1_0.png)
 
@@ -15,8 +12,6 @@
 - CoffeeScript Ristretto
 
 ### 咖啡馆打烊：结语
-
-
 
 # 目录
 
@@ -136,8 +131,6 @@ ECMAScript 2015 不仅仅是简单地更新语言，用更简洁的语法处理�
 
 引入如此多的新概念确实需要对本书的组织结构进行重大反思。引入这些新概念也确实显著增加了其篇幅。但即便如此，在某种意义上，它仍在阐释与最初完全相同的理念：程序是由小型、灵活的函数组合而成的。
 
-
-
 ### JavaScript Allongé 是什么。以及不是什么。
 
 ![](img/34322ce8d9a7a9a4a308955f2d1f90b3_11_0.png)
@@ -215,7 +208,9 @@ ECMAScript 6 有三大功能组：
 > – Axel Rauschmayer 博客²、培训师³ 以及 *Exploring ES6⁴* 作者
 
 ²http://www.2ality.com
+
 ³http://ecmanauten.de
+
 ⁴http://exploringjs.com
 
 ### 第一版序言
@@ -383,8 +378,6 @@ true === false
 结果如何！当你输入 `[1, 2, 3]` 或它的任何变体时，你正在输入一个表达式，它生成自己*独一无二*的数组，这个数组与任何其他数组都不相同，即使那个其他数组看起来也是 `[1, 2, 3]`。就好像 JavaScript 在生成底部带序列号的新咖啡杯一样。
 
 它们看起来一样，但如果你用 `===` 检查，就会发现它们是不同的。每次你求值一个表达式（包括输入某些内容）来创建数组时，你都在创建一个全新的、不同的值，即使它*看起来*与某个其他数组值相同。正如我们将要看到的，这对许多其他种类的值也成立，包括本书的主要主题——*函数*。
-
-
 
 ## 馥郁芬芳：基础数字
 
@@ -663,6 +656,7 @@ void (2 + 2)
 第一种形式有效但很笨拙。第二种形式在大多数情况下有效，但通过将 `undefined` 重新赋值为不同的值有可能破坏它，这一点我们将在 [重新赋值与变更](Reassignment%20and%20Mutation) 中讨论。第三种形式保证总是有效，因此这就是我们将使用的。[^19]
 
 [^18]: 经验丰富的 JavaScript 程序员知道还有第四种方式，即使用函数参数。这实际上是 `void` 普及之前首选的机制。
+
 [^19]: 作为读者的练习，我们建议你友善地咨询你身边的编程语言设计师或人因工程专家，解释为什么一个名为 `void` 的关键字用于生成 `undefined` 值，而不是将它们都称为 `void` 或都称为 `undefined`。我们也不知道原因。
 
 ### 回到代码块
@@ -763,9 +757,7 @@ return 语句是我们遇到的第一种语句，它的行为与表达式不同�
 
 [^20]: 你也可以用换行符来分隔语句。经常关注网络论战的读者可能听说过一种叫做 [自动分号插入](https://en.wikipedia.org/wiki/Automatic_semicolon_insertion) 的东西。基本上，JavaScript 有一步骤会查看你的代码并遵循一些规则来猜测你本意是想在何处放置分号，如果你漏掉了的话。这个特性最初是作为一种有帮助的错误纠正功能而创建的。一些程序员辩称，由于它是语言定义的一部分，编写利用它的代码是公平的，因此他们会故意省略任何 JavaScript 会为他们插入的分号。
 
-
-
-```markdown
+```
 (() => return 0)()
 //=> ERROR
 ```
@@ -934,8 +926,6 @@ JavaScript 严格保持这样一个属性：当一个值——任何值——作
 
 ²⁴ http://json.org/
 
-
-
 由于多个引用可以共享同一个值，而且 JavaScript 将引用作为参数传递，因此可以说 JavaScript 实现了“按共享调用”（call by sharing）的语义。按共享调用通常被认为是按值调用的一种特化，这也解释了为什么有些值被称为**值类型**，而另一些值被称为**引用类型**。
 
 至此，我们已经准备好探讨闭包了。当我们把对值类型、引用类型、参数和闭包的理解结合起来时，就能明白为什么下面这个函数无论传入什么参数²⁵，其结果总是为 true：
@@ -1031,6 +1021,7 @@ lambda { |x|
 > `(x) => x` 被称为 I 组合子，或*恒等函数*。`(x) => (y) => x` 被称为 K 组合子，或*黑鸢*。有些人对此如此着迷，以至于为此写整本书，有些很棒ᵃ，有些——我该怎么说呢——如果你使用 Ruby 的话，也挺有趣的ᵇ。
 
 ᵃ http://www.amzn.com/0192801422?tag=raganwald001-20
+
 ᵇ https://leanpub.com/combinators
 
 函数也可以有祖父母：
@@ -1052,6 +1043,7 @@ lambda { |x|
 > 第一个函数是对第二个函数进行[currying/柯里化](https://en.wikipedia.org/wiki/Currying)ᵃ的结果。用只有部分参数的调用方式来调用柯里化函数，有时被称为[部分应用](https://en.wikipedia.org/wiki/Partial_application)ᵇ。有些编程语言会自动对函数进行柯里化和部分求值，无需手动嵌套。
 
 ᵃ https://en.wikipedia.org/wiki/Currying
+
 ᵇ https://en.wikipedia.org/wiki/Partial_application
 
 ### 来自暗影行星的暗影变量
@@ -1307,7 +1299,7 @@ JavaScript 给了我们一种方法来实现这一点，那就是 `const` 关键
 
 到目前为止，我们只见过用作函数主体的块。但还有其他种类的块。可以找到块的地方之一是 if 语句中。在 JavaScript 中，if 语句看起来像这样：
 
-istema```
+```
 (n) => {
   const even = (x) => {
     if (x === 0)
@@ -1350,8 +1342,6 @@ if 语句是一个语句，不是表达式（一个不幸的设计选择），�
   return even(n)
 }
 ```
-
-
 
 这样写也能行：
 
@@ -1622,13 +1612,11 @@ JavaScript 不允许我们重新绑定已通过 `const` 绑定的名称。我们
 
 这很有价值，因为它大大简化了程序的分析——一眼就能看出，当某物通过 `const` 绑定时，我们完全不必担心它的值可能会改变。
 
-
-
 ## 函数命名
 
 我们直奔主题。下面这段代码*并未*为函数命名：
 
-```javascript
+```
 const repeat = (str) => str + str
 ```
 
@@ -1640,13 +1628,13 @@ JavaScript *确实*有一种为函数命名的语法，那就是使用`function`
 
 这是我们用“胖箭头”语法编写的`repeat`函数：
 
-```javascript
+```
 (str) => str + str
 ```
 
 而这是（几乎）完全相同的函数，使用`function`关键字编写：
 
-```javascript
+```
 function (str) { return str + str }
 ```
 
@@ -1660,13 +1648,13 @@ function (str) { return str + str }
 
 如果我们省略`function`关键字后面那个“可选的部分”，就可以将我们见过的所有胖箭头函数转换为`function`关键字函数，例如：
 
-```javascript
+```
 (n) => (1.618**n - -1.618**-n) / 2.236
 ```
 
 可以写成：
 
-```javascript
+```
 function (n) {
   return (1.618**n - -1.618**-n) / 2.236;
 }
@@ -1676,13 +1664,13 @@ function (n) {
 
 以下是我们为示例函数命名的写法：
 
-```javascript
+```
 const repeat = function repeat (str) {
   return str + str;
 };
 ```
 
-```javascript
+```
 const fib = function fib (n) {
   return (1.618**n - -1.618**-n) / 2.236;
 };
@@ -1690,7 +1678,7 @@ const fib = function fib (n) {
 
 在`function`关键字和参数列表之间放置一个名称，就为函数命名了。令人困惑的是，函数的名称与我们可能选择绑定到函数值的名称并不完全相同。例如，我们可以这样写：
 
-```javascript
+```
 const double = function repeat (str) {
   return str + str;
 }
@@ -1700,14 +1688,14 @@ const double = function repeat (str) {
 
 确实，名称*就是*一个属性：
 
-```javascript
+```
 double.name
 //=> 'repeat'
 ```
 
 本书不深入探讨JavaScript的工具链，比如浏览器内置的调试器，但我们会指出，当你在所有现代工具中导航调用栈时，函数的绑定名称会被忽略，但其实际名称会被显示出来。因此，即使函数没有获得正式的绑定，为其命名也是非常有用的，例如：
 
-```javascript
+```
 someBackboneView.on('click', function clickHandler () {
   // ...
 });
@@ -1715,7 +1703,7 @@ someBackboneView.on('click', function clickHandler () {
 
 现在，函数的实际名称对其使用的环境没有影响。具体来说：
 
-```javascript
+```
 const bindingName = function actualName () {
   // ...
 };
@@ -1729,7 +1717,7 @@ actualName
 
 所以，“actualName”在我们使用具名函数表达式的环境中并没有被绑定。它在其他地方被绑定了吗？是的。这是一个判断正整数是否为偶数的函数。我们将在一个IIFE（立即调用函数表达式）中使用它，这样就不必用const将其绑定到一个名称：
 
-```javascript
+```
 (function even (n) {
   if (n === 0) {
     return true
@@ -1749,7 +1737,7 @@ actualName
 
 显然，名称`even`在*函数体内部*绑定到了函数。它在函数体外部绑定到函数了吗？
 
-```javascript
+```
 even
 //=> Can't find variable: even
 ```
@@ -1760,7 +1748,7 @@ even
 
 还有另一种命名和/或定义函数的语法。它被称为*函数声明语句*，看起来很像具名函数表达式，只是我们将其用作语句：
 
-```javascript
+```
 function someName () {
   // ...
 }
@@ -1768,7 +1756,7 @@ function someName () {
 
 它的行为*有点*像：
 
-```javascript
+```
 const someName = function someName () {
   // ...
 }
@@ -1778,7 +1766,7 @@ const someName = function someName () {
 
 考虑这个例子，我们尝试在用`const`将函数绑定到变量`fizzbuzz`之前，就将该变量作为函数使用：
 
-```javascript
+```
 (function () {
   return fizzbuzz();
 
@@ -1791,7 +1779,7 @@ const someName = function someName () {
 
 我们在尝试使用`fizzbuzz`时，实际上还没有将函数绑定到该名称，因此得到了错误。但函数*声明*的行为有所不同：
 
-```javascript
+```
 (function () {
   return fizzbuzz();
 
@@ -1804,7 +1792,7 @@ const someName = function someName () {
 
 尽管`fizzbuzz`是在函数后面声明的，但JavaScript的行为就好像我们写了：
 
-```javascript
+```
 (function () {
   const fizzbuzz = function fizzbuzz () {
     return "Fizz" + "Buzz";
@@ -1820,7 +1808,7 @@ const someName = function someName () {
 
 函数声明理论上只应该出现在我们可能称为函数的“顶层”。尽管一些JavaScript环境允许以下代码，但这个例子在技术上是非法的，绝对是个坏主意：
 
-```javascript
+```
 (function (camelCase) {
   return fizzbuzz();
 
@@ -1844,13 +1832,13 @@ const someName = function someName () {
 
 另一个注意事项是，函数声明不能存在于*任何*表达式内部，否则它就是函数表达式了。所以这是一个函数声明：
 
-```javascript
+```
 function trueDat () { return true }
 ```
 
 但这不是：
 
-```javascript
+```
 (function trueDat () { return true })
 ```
 
@@ -1862,7 +1850,7 @@ function trueDat () { return true }
 
 这是一个非常简单的高阶函数，它接收一个函数作为参数：
 
-```javascript
+```
 const repeat = (num, fn) =>
     (num > 0)
         ? (repeat(num - 1, fn), fn(num))
@@ -1889,10 +1877,10 @@ repeat(3, function (n) {
 如果我们学习组合逻辑，我们会从最基本的组合子开始，如S、κ和I，然后逐步学习实用的组合子。我们会了解到，基本的组合子是以鸟类命名的，这遵循了Raymond Smullyan著名著作《To Mock a Mockingbird》³⁵的先例。
 
 ---
+
 ³⁴ https://en.wikipedia.org/wiki/Combinatory_logic
+
 ³⁵ http://www.amazon.com/gp/product/B00A1P096Y/ref=as_li_ss_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=B00A1P096Y&linkCode=as2&tag=raganwald001-20
-
-
 
 在本书中，我们将使用一个较为宽松的"组合子"定义：即以纯函数为参数并返回函数的高阶纯函数。我们不会严格要求在构造它们时仅使用先前定义过的组合子。
 
@@ -1940,6 +1928,7 @@ const not = (fn) => (x) => !fn(x)
 ```
 
 所以，与其写 !someFunction(42)，我们可以写 not(someFunction)(42)。这 hardly 是进步。
+
 但就像 compose 一样，我们可以写：
 
 ```
@@ -2091,8 +2080,6 @@ args(2,3)
 
 > ⁴²我们后面会深入探讨[数组](#)和[普通旧 JavaScript 对象](#)。
 
-
-
  ```
 const plus = function () {
   return arguments[0] + arguments[1];
@@ -2190,33 +2177,19 @@ row(3)
 #### 函数
 
 - 函数是可以作为表达式的一部分、从其他函数返回等等的值。
-
 - 函数是*引用值*。
-
 - 函数被应用于参数。
-
 - 参数通过共享传递，这也称为"按值传递"。
-
 - 胖箭头函数以表达式或块作为其函数体。
-
 - `function` 关键字函数始终以块作为其函数体。
-
 - 函数体包含零个或多个语句。
-
 - 表达式体的求值结果为该表达式的值。
-
 - 块体的求值结果为使用 `return` 关键字返回的值，或 `undefined`。
-
 - JavaScript 使用 `const` 将值绑定到块作用域内的名称。
-
 - JavaScript 使用函数声明将函数绑定到函数作用域内的名称。函数声明会被"提升"。
-
 - 函数应用创建一个作用域。
-
 - 如果 `const` 语句在块内，块也会创建作用域。
-
 - 作用域是嵌套的，自由变量引用被闭包捕获。
-
 - 变量可以遮蔽封闭作用域中的变量。
 
 ### 基本函数实战示例
@@ -2289,8 +2262,6 @@ const callRight = (fn, ...args) =>
   (...remainingArgs) =>
     fn(...remainingArgs, ...args);
 ```
-
-
 
 ### Unary
 
@@ -2621,13 +2592,11 @@ firstAndButFirst('why', 'hello', 'there', 'little', 'droid')
 
 > ⁵²另一段历史课。"Ye Olde" 中的 "Ye"，在古代实际上不是用 "Y" 拼写的，它用的是一个 "thorn" 字符，发音为 "the"。另一个词 "Ye of little programming faith" 中的 "Ye"，发音为 "ye"，但它完全是另一个词。
 
-
-
 ### 突破限制
 
 有进展固然很好。但如上所述，我们无法写出：
 
-```javascript
+```
 const butLastAndLast = (...butLast, last) =>
   [butLast, last];
 ```
@@ -2636,7 +2605,7 @@ const butLastAndLast = (...butLast, last) =>
 
 当然可以，利用 `rightVariadic` 中的技术就行。注意，我们可以利用现代 JavaScript 来简化代码：
 
-```javascript
+```
 const leftVariadic = (fn) => {
   if (fn.length < 1) {
     return fn;
@@ -2654,7 +2623,7 @@ const leftVariadic = (fn) => {
 }
 ```
 
-```javascript
+```
 const butLastAndLast = leftVariadic((butLast, last) => [butLast, last]);
 
 butLastAndLast('why', 'hello', 'there', 'little', 'droid')
@@ -2667,7 +2636,7 @@ butLastAndLast('why', 'hello', 'there', 'little', 'droid')
 
 为函数收集参数是 JavaScript *解构*数组的方式之一。另一种方式是在给变量赋值时使用，如下所示：
 
-```javascript
+```
 const [first, ...butFirst] = ['why', 'hello', 'there', 'little', 'droid'];
 
 first
@@ -2678,14 +2647,14 @@ butFirst
 
 与参数一样，在解构数组时，我们无法从左侧收集值：
 
-```javascript
+```
 const [...butLast, last] = ['why', 'hello', 'there', 'little', 'droid'];
   //=> Unexpected token
 ```
 
 我们可以用笨办法借助 leftVariadic 来实现：
 
-```javascript
+```
 const [butLast, last] = leftVariadic((butLast, last) => [butLast, last])(...['why', 'hello', 'there', 'little', 'droid']);
 
 butLast
@@ -2697,7 +2666,7 @@ last
 
 但我们也可以运用相同的原理，编写自己的左侧收集函数工具，无需那么繁琐：
 
-```javascript
+```
 const leftGather = (outputArrayLength) => {
   return function (inputArray) {
     return [inputArray.slice(0, inputArray.length - outputArrayLength + 1)].concat(
@@ -2721,30 +2690,30 @@ last
 
 这是我们在[组合子与装饰器](https://)中看到的 B 组合子，也就是 compose：
 
-```javascript
+```
 const compose = (a, b) =>
   (c) => a(b(c))
 ```
 
 如前所述，给定：
 
-```javascript
+```
 const addOne = (number) => number + 1;
 ```
 
-```javascript
+```
 const doubleOf = (number) => number * 2;
 ```
 
 我们不必写成：
 
-```javascript
+```
 const doubleOfAddOne = (number) => doubleOf(addOne(number));
 ```
 
 而是可以写成：
 
-```javascript
+```
 const doubleOfAddOne = compose(doubleOf, addOne);
 ```
 
@@ -2752,14 +2721,14 @@ const doubleOfAddOne = compose(doubleOf, addOne);
 
 如果我们想实现一个 compose3，可以这样写：
 
-```javascript
+```
 const compose3 = (a, b, c) => (d) =>
   a(b(c(d)))
 ```
 
 或者注意到它实际上等价于：
 
-```javascript
+```
 const compose3 = (a, b, c) => compose(a, (compose(b, c)))
 ```
 
@@ -2767,20 +2736,20 @@ const compose3 = (a, b, c) => compose(a, (compose(b, c)))
 
 我们可以用递归来实现可变参数的 compose。推导递归组合最简单的方式是从最小的或*退化*情况开始。如果 compose 只接受一个参数，它看起来像这样：
 
-```javascript
+```
 const compose = (a) => a
 ```
 
 接下来需要一种方式从问题中拆分出一部分。我们可以通过一个可变参数函数来实现：
 
-```javascript
+```
 const compose = (a, ...rest) =>
     "to be determined"
 ```
 
 我们可以测试是否处于退化情况：
 
-```javascript
+```
 const compose = (a, ...rest) =>
     rest.length === 0
         ? a
@@ -2799,7 +2768,7 @@ compose(a, compose(...rest)) === (c) => a(compose(...rest)(c))
 
 这就是我们的解：
 
-```javascript
+```
 const compose = (a, ...rest) =>
     rest.length === 0
         ? a
@@ -2808,7 +2777,7 @@ const compose = (a, ...rest) =>
 
 当然还有其他方式。compose 可以用迭代或 `.reduce` 来实现，例如：
 
-```javascript
+```
 const compose = (...fns) =>
     (value) =>
         fns.reverse().reduce((acc, fn) => fn(acc), value);
@@ -2822,21 +2791,21 @@ const compose = (...fns) =>
 
 另一方面，当使用方法装饰器之类的东西时，这样写会很有帮助：
 
-```javascript
+```
 const setter = compose(fluent, maybe);
 ```
 
-```javascript
+```
 // ...
 ```
 
-```javascript
+```
 SomeClass.prototype.setUser = setter(function (user) {
   this.user = user;
 });
 ```
 
-```javascript
+```
 SomeClass.prototype.setPrivileges = setter(function (privileges) {
   this.privileges = privileges;
 });
@@ -2844,7 +2813,7 @@ SomeClass.prototype.setPrivileges = setter(function (privileges) {
 
 这清楚地表明 setter 为其装饰的每个方法添加了 fluent 和 maybe 的行为，而且读 `const setter = compose(fluent, maybe);` 有时比读以下代码更轻松：
 
-```javascript
+```
 const setter = (fn) => fluent(maybe(fn));
 ```
 
@@ -2856,7 +2825,7 @@ compose 极其方便，但它有一点不足：无法清晰地表达操作的顺
 
 有时按数据流的顺序组合函数更合理，即"值先流过 a，然后流过 b"。为此，我们可以使用 pipeline 函数：
 
-```javascript
+```
 const pipeline = (...fns) =>
   (value) =>
     fns.reduce((acc, fn) => fn(acc), value);
@@ -2876,19 +2845,17 @@ const setter = pipeline(addOne, double);
 
 JavaScript 确实有"布尔"值，写作 `true` 和 `false`：
 
-```javascript
+```
 true
 //=> true
 ```
 
-```javascript
+```
 false
 //=> false
 ```
 
 `true` 和 `false` 是值类型。所有 `true` 的值都与所有其他 `true` 的值 `===`。我们可以通过查看布尔值上的一些运算符来验证这一点：`!`、`&&` 和 `||`。首先，`!` 是一元前缀运算符，用于对其参数取反。所以：
-
-
 
 ### 真值与三元运算符
 
@@ -2944,11 +2911,11 @@ const status = isAuthorized(currentUser) ? deleteRecord(currentRecord) : 'Forbid
 首先，与 `!` 不同，`&&` 和 `||` 不一定计算为 `true` 或 `false`。准确地说：
 
 - `&&` 计算其左侧表达式。
-    - 如果其左侧表达式计算为假值，`&&` 返回其左侧表达式的值，而不计算其右侧表达式。
-    - 如果其左侧表达式计算为真值，`&&` 计算其右侧表达式并返回右侧表达式的值。
+  - 如果其左侧表达式计算为假值，`&&` 返回其左侧表达式的值，而不计算其右侧表达式。
+  - 如果其左侧表达式计算为真值，`&&` 计算其右侧表达式并返回右侧表达式的值。
 - `||` 计算其左侧表达式。
-    - 如果其左侧表达式计算为真值，`||` 返回其左侧表达式的值，而不计算其右侧表达式。
-    - 如果其左侧表达式计算为假值，`||` 计算其右侧表达式并返回右侧表达式的值。
+  - 如果其左侧表达式计算为真值，`||` 返回其左侧表达式的值，而不计算其右侧表达式。
+  - 如果其左侧表达式计算为假值，`||` 计算其右侧表达式并返回右侧表达式的值。
 
 如果我们看上面的例子，当我们向 `&&` 和 `||` 传递 `true` 和 `false` 时，我们确实得到了 `true` 或 `false` 作为结果。但当我们传递其他值时，我们不再得到 `true` 或 `false`：
 
@@ -3029,8 +2996,6 @@ even(7)
 - `!` 是一个逻辑运算符，它总是返回 `true` 或 `false`。
 - 三元运算符（`?:`）、`||` 和 `&&` 是控制流运算符，它们不总是返回 `true` 或 `false`，并且具有短路语义。
 - 函数调用使用即时求值，所以如果我们需要实现自己的控制流语义，我们应该传递函数，而不是表达式。
-
-
 
 ### 数据的组合与分解
 
@@ -3289,6 +3254,7 @@ const [what] = [];
 ```
 
 what
+
 //=> undefined
 
 ```
@@ -3296,6 +3262,7 @@ const [which, what, who] = ["duck feet", "tiger tail"];
 ```
 
 who
+
 //=> undefined
 
 如果使用 `...` 时没有可赋值的项，JavaScript 会赋值一个空数组：
@@ -3305,6 +3272,7 @@ const [...they] = [];
 ```
 
 they
+
 //=> []
 
 ```
@@ -3312,6 +3280,7 @@ const [which, what, ...they] = ["duck feet", "tiger tail"];
 ```
 
 they
+
 //=> []
 
 从诞生之初，JavaScript 就努力避免灾难性错误。因此，它经常强制转换值、传递 `undefined` 或尽其所能地继续执行而不失败。这通常意味着我们必须编写自己的代码来检测故障条件，因为我们无法依赖语言来指出我们何时在做语义上无意义的事情。
@@ -3361,15 +3330,19 @@ const baz = (a, b, c) => ...
 
 它*看起来*像解构。它的行为像解构。只有一个区别：我们还没有尝试收集。让我们来做：
 
- const numbers = (...nums) => nums;
+```
+const numbers = (...nums) => nums;
 
 numbers(1, 2, 3, 4, 5)
+
 //=> [1,2,3,4,5]
 
 const headAndTail = (head, ...tail) => [head, tail];
 
 headAndTail(1, 2, 3, 4, 5)
+
 //=> [1, [2,3,4,5]]
+```
 
 收集操作适用于参数！这确实非常有用，我们马上会看到更多相关内容。<sup>58</sup>
 
@@ -3522,11 +3495,10 @@ Array.isArray(["foo"])
 所以我们对 `flatten` 函数的第一次尝试看起来是这样的：⁶¹
 
 ---
+
 ⁶⁰嗯，*实际上*，原型和类的区别就像样板房和蓝图的区别。但原型并不像样板房。事实上，对象与其原型之间的关系是*委托*（delegation）。所以如果样板房有一个厨房，你让建筑商用样板房作为原型为你建造一所房子，你可以定制自己的厨房。但如果你不想有自己的定制厨房，你只需使用样板房的厨房来做你所有的烹饪。样板房与房屋之间的关系有时被描述为*拼接式继承*（concatenative inheritance），JavaScript 也允许你这样做。
 
 ⁶¹flatten 是一个非常简单的展开（unfold），它是一个接受种子值并将其转换为数组的函数。展开可以被看作是数据结构中的一条"路径"，而扁平化一棵树等价于深度优先遍历。
-
-
 
  ```
 const flatten = ([first, ...rest]) => {
@@ -3746,8 +3718,6 @@ mapWith((x) => x * x, [
 ```
 
 有更好的方法吗？有的。事实上，有几种更好的方法。使算法更快是计算机科学中研究非常深入的领域。我们这里要探讨的方法称为*尾调用优化*，或"TCO"。
-
-
 
 ### 尾调用优化
 
@@ -4008,9 +3978,7 @@ const [first, second = "two"] = ["primus", "secundus"];
 
 这非常有用：就像参数的默认值一样，也可以为解构赋值提供默认值。
 
-
-
- # 垃圾，到处都是垃圾
+# 垃圾，到处都是垃圾
 
 垃圾日
 
@@ -4128,8 +4096,6 @@ cdr(oneToFive)
 ### 总结
 
 虽然我们展示了如何使用尾调用来对数组进行映射和折叠（使用 `[first, ...rest]`），但实际上这不是正确的做法。但它是递归如何工作的一个极其简单的演示，特别是当你拥有自相似的数据结构构建方式时。
-
-
 
 ### 普通的 JavaScript 对象
 
@@ -4411,8 +4377,6 @@ const cons = (a, d) => [a, d],
 
 然后我们可以通过直接属性访问器来执行等同于 `[first, ...rest]` 的操作：
 
-
-
 ### 数据的组合与分解
 
 ```
@@ -4627,6 +4591,7 @@ const OneToFive = { first: 1,
 ```
 
 OneToFive
+
   //=> {"first":1,"rest":{"first":2,"rest":{"first":"three","rest":{"first":"four","rest":{"first":"five","rest":{}}}}}}
 
 ```
@@ -4634,6 +4599,7 @@ const ThreeToFive = OneToFive.rest.rest;
 ```
 
 ThreeToFive
+
   //=> {"first":3,"rest":{"first":4,"rest":{"first":5,"rest":{}}}}
 
 ```
@@ -4643,16 +4609,16 @@ ThreeToFive.rest.rest.first = "five";
 ```
 
 ThreeToFive
+
   //=> {"first":"three","rest":{"first":"four","rest":{"first":"five","rest":{}}}}
 
 OneToFive
+
   //=> {"first":1,"rest":{"first":2,"rest":{"first":"three","rest":{"first":"four","rest":{"first":"five","rest":{}}}}}}
 
 对 ThreeToFive 的更改会影响 OneToFive，因为它们共享相同的结构。当我们写 `ThreeToFive = OneToFive.rest.rest;` 时，我们并没有创建 `{"first":3,"rest":{"first":4,"rest":{"first":5,"rest":{}}}}` 的一个全新副本，我们获得的是对同一个节点链的引用。
 
 这种结构共享使得链表在获取列表除第一项之外的所有元素时非常快：我们没有创建一个新列表，我们只是使用了旧列表的一部分。而使用 `[first, ...rest]` 解构数组确实会创建一个副本，所以：
-
-
 
 ```
 const OneToFive = [1, 2, 3, 4, 5];
@@ -4676,9 +4642,11 @@ OneToFive
 //=> [1,2,3,4,5]
 ```
 
-收集操作 `[a, b, ...ThreeToFive]` 较慢，但*"更安全"*。
 
-因此回到避免可变性的主题。总的来说，不变化的数据更容易推理。我们不必在将其作为值传递给函数或从中提取数据时，特意记住要使用复制操作。我们只需使用数据，而且我们越少修改它，就越少需要考虑做出更改是否*"安全"*。
+
+收集操作`[a, b, ...ThreeToFive]`较慢，但“更安全”。
+
+因此回到避免可变性的主题。总的来说，不变化的数据更容易推理。我们不必在将其作为值传递给函数或从中提取数据时，特意记住要使用复制操作。我们只需使用数据，而且我们越少修改它，就越少需要考虑做出更改是否“安全”。
 
 ### 使用可变性构建结构
 
@@ -4714,9 +4682,9 @@ const copy = (node, head = null, tail = null) => {
 }
 ```
 
-这个算法在遍历过程中复制节点，并修改列表中的最后一个节点，以便将下一个节点拼接上去。向现有列表添加节点是有风险的，正如我们在考虑 `OneToFive` 和 `ThreeToFive` 共享相同节点时所看到的。但当我们在创建全新列表的过程中，我们并没有与任何其他列表共享任何节点，因此我们可以更灵活地使用可变性来节省空间和/或时间。
+这个算法在遍历过程中复制节点，并修改列表中的最后一个节点，以便将下一个节点拼接上去。向现有列表添加节点是有风险的，正如我们在考虑`OneToFive`和`ThreeToFive`共享相同节点时所看到的。但当我们在创建全新列表的过程中，我们并没有与任何其他列表共享任何节点，因此我们可以更灵活地使用可变性来节省空间和/或时间。
 
-有了这个基本的复制实现，我们可以编写 `mapWith`：
+有了这个基本的复制实现，我们可以编写`mapWith`：
 
 ```
 const mapWith = (fn, node, head = null, tail = null) => {
@@ -4747,7 +4715,7 @@ mapWith((x) => 1.0 / x, OneToFive)
 
 与一些命令式编程语言一样，JavaScript 允许你重新赋值绑定到参数的值。我们之前在重新绑定中看到过这一点：
 
-默认情况下，JavaScript 允许我们*重新绑定*新值到通过参数绑定的名称。例如，我们可以写：
+默认情况下，JavaScript 允许我们重新绑定新值到通过参数绑定的名称。例如，我们可以写：
 
 ```
 const evenStevens = (n) => {
@@ -4767,7 +4735,7 @@ evenStevens(42)
 //=> true
 ```
 
-`n = n - 2` 这一行*重新绑定*了一个新值到名称 `n`。我们将在"重新赋值"中更详细地讨论这个问题，但在那之前，让我们尝试对使用 `const` 绑定的名称做类似的事情。我们已经使用 `const` 绑定了 `evenStevens`，让我们尝试重新绑定它：
+`n = n - 2`这一行重新绑定了一个新值到名称`n`。我们将在“重新赋值”中更详细地讨论这个问题，但在那之前，让我们尝试对使用`const`绑定的名称做类似的事情。我们已经使用`const`绑定了`evenStevens`，让我们尝试重新绑定它：
 
 ```
 evenStevens = (n) => {
@@ -4784,9 +4752,9 @@ evenStevens = (n) => {
 //=> ERROR, evenStevens is read-only
 ```
 
-JavaScript 不允许我们重新绑定已使用 `const` 绑定的名称。我们可以通过使用 `const` 声明一个新的绑定来*遮蔽*它，从而创建一个新的函数或块作用域，但我们无法在现有作用域中重新绑定使用 `const` 绑定的名称。
+JavaScript 不允许我们重新绑定已使用`const`绑定的名称。我们可以通过使用`const`声明一个新的绑定来遮蔽它，从而创建一个新的函数或块作用域，但我们无法在现有作用域中重新绑定使用`const`绑定的名称。
 
-通常应避免重新绑定参数，那么在函数内部重新绑定我们声明的名称呢？我们想要的是一个像 `const` 一样工作但允许我们重新绑定变量的语句。JavaScript 有这样的东西，它叫做 `let`：
+通常应避免重新绑定参数，那么在函数内部重新绑定我们声明的名称呢？我们想要的是一个像`const`一样工作但允许我们重新绑定变量的语句。JavaScript 有这样的东西，它叫做`let`：
 
 ```
 let age = 52;
@@ -4812,7 +4780,7 @@ age
   //=> 49
 ```
 
-在代码块内使用 `let` 将 `50` 绑定到 `age` 并不会改变外层环境中 `age` 的绑定，因为代码块内 `age` 的绑定遮蔽了外层环境中 `age` 的绑定，就像 `const` 一样。我们从：
+在代码块内使用`let`将`50`绑定到`age`并不会改变外层环境中`age`的绑定，因为代码块内`age`的绑定遮蔽了外层环境中`age`的绑定，就像`const`一样。我们从：
 
 ```
 {age: 49, '...': global-environment}
@@ -4830,7 +4798,7 @@ age
 {age: 49, '...': global-environment}
 ```
 
-然而，如果我们不用 `let` 遮蔽 `age`，在代码块内重新赋值会改变原始值：
+然而，如果我们不用`let`遮蔽`age`，在代码块内重新赋值会改变原始值：
 
 ```
 (() => {
@@ -4850,7 +4818,7 @@ age
 
 一些程序员不喜欢刻意遮蔽变量。其论点是，遮蔽变量会造成代码混乱。如果你认同这个观点，那么 JavaScript 中遮蔽的工作方式就是为了保护我们在移动代码时不小心遮蔽变量。
 
-如果你不喜欢刻意遮蔽变量，那么你可能对混合使用 `const` 和 `let` 语义来遮蔽变量持更加*反感*的态度：
+如果你不喜欢刻意遮蔽变量，那么你可能对混合使用`const`和`let`语义来遮蔽变量持更加反感的态度：
 
 ```
 (() => {
@@ -4865,7 +4833,7 @@ age
 //=> 51
 ```
 
-用 `const` 遮蔽 `let` 并不会改变我们在原始作用域中重新绑定该变量的能力。而：
+用`const`遮蔽`let`并不会改变我们在原始作用域中重新绑定该变量的能力。而：
 
 ```
 (() => {
@@ -4880,13 +4848,13 @@ age
   //=> ERROR: age is read-only
 ```
 
-用 `let` 遮蔽 `const` 并不会允许它在原始作用域中被重新绑定。
+用`let`遮蔽`const`并不会允许它在原始作用域中被重新绑定。
 
 ### var
 
-JavaScript 还有*一种*将名称绑定到值的方式：`var`。⁷⁰
+JavaScript 还有另一种将名称绑定到值的方式：`var`。
 
-`var` 看起来很像 `let`：
+`var`看起来很像`let`：
 
 ```
 const factorial = (n) => {
@@ -4917,14 +4885,12 @@ const factorial2 = (n) => {
 }
 ```
 
-> ⁷⁰到目前为止我们看到了多少种？嗯，参数绑定名称。函数声明绑定名称。命名函数表达式绑定名称。`const` 和 `let` 绑定名称。所以到目前为止有五种不同的方式。而且还有更多！
-
 ```
 factorial2(5)
   //=> 120
 ```
 
-但当然，它不完全像 `let`。它刚好有足够的不同来造成困惑。首先，`var` 不是块级作用域，而是函数级作用域，就像函数声明一样：
+但当然，它不完全像`let`。它刚好有足够的不同来造成困惑。首先，`var`不是块级作用域，而是函数级作用域，就像函数声明一样：
 
 ```
 (() => {
@@ -4938,7 +4904,7 @@ factorial2(5)
   //=> 50
 ```
 
-声明两次 `age` 不会导致错误（！），而且内部声明不会遮蔽外部声明。所有 `var` 声明的行为就好像它们被提升到函数的顶部，有点像函数声明。
+声明两次`age`不会导致错误，而且内部声明不会遮蔽外部声明。所有`var`声明的行为就好像它们被提升到函数的顶部，有点像函数声明。
 
 但是，再次强调，期望一致性是不明智的。函数声明可以出现在函数内的任何位置，但声明和定义都会被提升。请注意这个使用辅助函数的函数示例：
 
@@ -4962,26 +4928,32 @@ factorial(4)
 ```
 
 JavaScript 将这段代码解释为好像我们写的是：
+
 ```
-
-
-
- ```
 const factorial = (n) => {
+
   let innerFactorial = function innerFactorial (x, y) {
+
     if (x == 1) {
+
       return y;
+
     }
+
     else {
+
       return innerFactorial(x-1, x * y);
+
     }
+
   }
 
   return innerFactorial(n, 1);
+
 }
 ```
 
-JavaScript 会提升 `let` 及其赋值。但 `var` 则不然：
+JavaScript 会提升`let`及其赋值。但`var`则不然：
 
 ```
 const factorial = (n) => {
@@ -4989,18 +4961,27 @@ const factorial = (n) => {
   return innerFactorial(n, 1);
 
   var innerFactorial = function innerFactorial (x, y) {
+
     if (x == 1) {
+
       return y;
+
     }
+
     else {
+
       return innerFactorial(x-1, x * y);
+
     }
+
   }
+
 }
 ```
 
 ```
 factorial(4)
+
 //=> undefined is not a function (evaluating 'innerFactorial(n, 1)')
 ```
 
@@ -5014,54 +4995,73 @@ const factorial = (n) => {
   return innerFactorial(n, 1);
 
   innerFactorial = function innerFactorial (x, y) {
+
     if (x == 1) {
+
       return y;
+
     }
+
     else {
+
       return innerFactorial(x-1, x * y);
+
     }
+
   }
+
 }
 ```
 
 ```
 factorial(4)
+
   //=> undefined is not a function (evaluating 'innerFactorial(n, 1)')
 ```
 
-从这一点来看，`var` 有点像 `const` 和 `let`，我们应该总是在使用之前声明并绑定名称。但它又不像 `const` 和 `let`，因为它是函数作用域，而不是块级作用域。
+从这一点来看，`var`有点像`const`和`let`，我们应该总是在使用之前声明并绑定名称。但它又不像`const`和`let`，因为它是函数作用域，而不是块级作用域。
 
 ### 为什么要发明 `const` 和 `let`
 
-`const` 和 `let` 是 JavaScript 近期新增的语法。在近二十年的时间里，变量都是用 `var` 声明的（当然，不包括参数和函数声明）。然而，它的函数作用域是一个问题。
+`const`和`let`是 JavaScript 近期新增的语法。在近二十年的时间里，变量都是用`var`声明的（当然，不包括参数和函数声明）。然而，它的函数作用域是一个问题。
 
-我们还没看过，但 JavaScript 提供了一个 `for` 循环，供你迭代时愉悦和方便地使用。它看起来很像 C 语言中的 `for` 循环。这里是使用 `var` 的写法：
+我们还没看过，但 JavaScript 提供了一个`for`循环，供你迭代时愉悦和方便地使用。它看起来很像 C 语言中的`for`循环。这里是使用`var`的写法：
 
 ```
 var sum = 0;
+
 for (var i = 1; i <= 100; i++) {
+
   sum = sum + i
+
 }
+
 sum
+
   //=> 5050
 ```
 
-希望你想得到更快计算这个和的方法。而且你可能已经注意到 `var i = 1` 被 tucked away 了，而不是像我们喜欢的那样放在顶部。但这真的有问题吗？
-
-71有一个关于卡尔·弗里德里希·高斯在小学时的著名故事。他的老师对全班发火，让他们把 1 到 100 的数字加起来，并在下课前给他答案。大约 30 秒后，高斯给出了答案。其他孩子是这样加数字的：1 + 2 + 3 + . . . + 99 + 100 = ? 但高斯重新排列了数字，这样加：(1 + 100) + (2 + 99) + (3 + 98) + . . . + (50 + 51) = ? 如果你注意到每一对数字加起来都是 101。一共有 50 对数字，所以答案是 50*101 = 5050。当然，高斯想出答案的速度比其他孩子快大约 20 倍。
+希望你想得到更快计算这个和的方法。而且你可能已经注意到`var i = 1`被 tucked away 了，而不是像我们喜欢的那样放在顶部。但这真的有问题吗？
 
 是的。考虑这个变体：
 
 ```
 var introductions = [],
+
     names = ['Karl', 'Friedrich', 'Gauss'];
 
 for (var i = 0; i < 3; i++) {
+
   introductions[i] = "Hello, my name is " + names[i]
+
 }
+
 introductions
+
   //=> [ 'Hello, my name is Karl',
+
   //    'Hello, my name is Friedrich',
+
   //    'Hello, my name is Gauss' ]
 ```
 
@@ -5069,15 +5069,23 @@ introductions
 
 ```
 var introductions = [],
+
     names = ['Karl', 'Friedrich', 'Gauss'];
 
 for (var i = 0; i < 3; i++) {
+
   introductions[i] = (soAndSo) =>
+
     `Hello, ${soAndSo}, my name is ${names[i]}`
+
 }
+
 introductions
+
   //=> [ [Function],
+
   //    [Function],
+
   //    [Function] ]
 ```
 
@@ -5085,169 +5093,224 @@ introductions
 
 ```
 introductions[1]('Raganwald')
+
   //=> 'Hello, Raganwald, my name is undefined'
 ```
 
-出什么问题了？为什么没有得到 'Hello, Raganwald, my name is Friedrich'？答案就是那个烦人的 var i。记住，i 是在周围环境中绑定的，所以就好像我们写了：
-
-### 组合与分解数据
+出什么问题了？为什么没有得到 'Hello, Raganwald, my name is Friedrich'？答案就是那个烦人的`var i`。记住，`i`是在周围环境中绑定的，所以就好像我们写了：
 
 ```
 var introductions = [],
+
     names = ['Karl', 'Friedrich', 'Gauss'],
+
     i = undefined;
 
 for (i = 0; i < 3; i++) {
+
   introductions[i] = function (soAndSo) {
+
     return "Hello, " + soAndSo + ", my name is " + names[i]
+
   }
+
 }
+
 introductions
 ```
 
-现在，在我们创建每个函数时，i 有一个合理的值，比如 0、1 或 2。但当我们*调用*其中一个函数时，i 的值是 3，这就是循环终止的原因。所以当函数被调用时，JavaScript 在其封闭环境中查找 i（显然是它的闭包），得到的值是 3。这完全不是我们想要的结果。
+现在，在我们创建每个函数时，`i`有一个合理的值，比如 0、1 或 2。但当我们调用其中一个函数时，`i`的值是 3，这就是循环终止的原因。所以当函数被调用时，JavaScript 在其封闭环境中查找`i`（显然是它的闭包），得到的值是 3。这完全不是我们想要的结果。
 
-如果我们一开始就用 `let`，这个错误根本不会存在
+如果我们一开始就用`let`，这个错误根本不会存在：
 
 ```
 let introductions = [],
+
     names = ['Karl', 'Friedrich', 'Gauss'];
 
 for (let i = 0; i < 3; i++) {
+
   introductions[i] = (soAndSo) =>
+
     `Hello, ${soAndSo}, my name is ${names[i]}`
+
 }
+
 introductions[1]('Raganwald')
+
   //=> 'Hello, Raganwald, my name is Friedrich'
 ```
 
-这个小错误经常引起困惑，在没有块级作用域 `let` 的年代，程序员需要知道如何模拟它，通常使用立即执行函数表达式（IIFE）：
+这个小错误经常引起困惑，在没有块级作用域`let`的年代，程序员需要知道如何模拟它，通常使用立即执行函数表达式（IIFE）：
 
 ```
 var introductions = [],
+
     names = ['Karl', 'Friedrich', 'Gauss'];
 
 for (var i = 0; i < 3; i++) {
+
   ((i) => {
+
     introductions[i] = (soAndSo) =>
+
       `Hello, ${soAndSo}, my name is ${names[i]}`
+
     }
+
   })(i)
+
 }
+
 introductions[1]('Raganwald')
+
   //=> 'Hello, Raganwald, my name is Friedrich'
 ```
 
-现在我们创建了一个新的内部参数 `i`，并将其绑定到外部 `i` 的值。这能工作，但 `let` 简单干净得多，以至于它被加入到了 ECMAScript 2015 规范中。
+现在我们创建了一个新的内部参数`i`，并将其绑定到外部`i`的值。这能工作，但`let`简单干净得多，以至于它被加入到了 ECMAScript 2015 规范中。
 
-在这本书中，我们会尽量少用函数声明，并且完全不使用 `var`。但这并不意味着你在自己的代码中应该遵循完全相同的做法：这本书的目的是阐述某些编程原则。你自己的代码的目的是把事情做成。这两个目标经常一致，但并非总是如此。
+在这本书中，我们会尽量少用函数声明，并且完全不使用`var`。但这并不意味着你在自己的代码中应该遵循完全相同的做法：这本书的目的是阐述某些编程原则。你自己的代码的目的是把事情做成。这两个目标经常一致，但并非总是如此。
 
 ### 写时复制
 
-*咖啡牛*
-
 我们已经看到了如何用数组和链表构建列表。我们触及了它们之间的一个重要区别：
 
-- 当你用解构（`[first, ...rest]`）取数组的剩余部分时，你得到的是数组元素的*副本*。
+- 当你用解构（`[first, ...rest]`）取数组的剩余部分时，你得到的是数组元素的副本。
 - 当你用引用取链表的剩余部分时，你得到的是原始列表元素的完全相同节点。
 
-这样做的结果是，如果你有一个数组，你取它的"剩余部分"，你的"子"数组是父数组元素的副本。因此，对父数组的修改不会影响子数组，对子数组的修改也不会影响父数组。
+这样做的结果是，如果你有一个数组，你取它的“剩余部分”，你的“子”数组是父数组元素的副本。因此，对父数组的修改不会影响子数组，对子数组的修改也不会影响父数组。
 
-而如果你有一个链表，你取它的"剩余部分"，你的"子"列表与"父"列表共享节点。因此，对父列表的修改也会修改子列表，对子列表的修改也会修改父列表。
+而如果你有一个链表，你取它的“剩余部分”，你的“子”列表与“父”列表共享节点。因此，对父列表的修改也会修改子列表，对子列表的修改也会修改父列表。
 
 让我们确认一下我们的理解：
 
 ```
 const parentArray = [1, 2, 3];
+
 const [aFirst, ...childArray] = parentArray;
 
 parentArray[2] = "three";
+
 childArray[0] = "two";
 
 parentArray
+
 //=> [1, 2, "three"]
+
 childArray
+
 //=> ["two", 3]
 
 const EMPTY = { first: {}, rest: {} };
+
 const parentList = { first: 1, rest: { first: 2, rest: { first: 3, rest: EMPTY }}};
+
 const childList = parentList.rest;
 
 parentList.rest.rest.first = "three";
+
 childList.first = "two";
 
 parentList
+
 //=> {"first":1,"rest":{"first":"two","rest":{"first":"three","rest":{"first":{},"rest":{}}}}}
+
 childList
+
 //=> {"first":"two","rest":{"first":"three","rest":{"first":{},"rest":{}}}}
 ```
 
-这是非常不安全的。如果我们*知道*一个列表不与其他列表共享任何元素，我们就可以安全地修改它。但我们怎么跟踪这一点呢？添加一堆簿记来跟踪引用？我们最终会发现自己在重新发明引用计数和垃圾回收。
+这是非常不安全的。如果我们知道一个列表不与其他列表共享任何元素，我们就可以安全地修改它。但我们怎么跟踪这一点呢？添加一堆簿记来跟踪引用？我们最终会发现自己在重新发明引用计数和垃圾回收。
 
 ### 一些工具函数
 
 在继续之前，让我们写一些简单的列表工具函数，这样我们就能在稍微高一点的抽象层次上工作了：
 
-### 组合与分解数据
-
 ```
 const copy = (node, head = null, tail = null) => {
+
   if (node === EMPTY) {
+
     return head;
+
   }
+
   else if (tail === null) {
+
     const { first, rest } = node;
+
     const newNode = { first, rest };
+
     return copy(rest, newNode, newNode);
+
   }
+
   else {
+
     const { first, rest } = node;
+
     const newNode = { first, rest };
+
     tail.rest = newNode;
+
     return copy(node.rest, head, newNode);
+
   }
+
 }
 ```
 
 ```
 const first = ({first, rest}) => first;
+
 const rest = ({first, rest}) => rest;
 ```
 
 ```
 const reverse = (node, delayed = EMPTY) =>
+
   node === EMPTY
+
     ? delayed
+
     : reverse(rest(node), { first: first(node), rest: delayed });
 ```
 
 ```
 const mapWith = (fn, node, delayed = EMPTY) =>
+
   node === EMPTY
+
     ? reverse(delayed)
+
     : mapWith(fn, rest(node), { first: fn(first(node)), rest: delayed });
 ```
 
 ```
 const at = (index, list) =>
+
   index === 0
+
     ? first(list)
+
     : at(index - 1, rest(list));
 ```
 
 ```
 const set = (index, value, list, originalList = list) =>
+
   index === 0
+
     ? (list.first = value, originalList)
+
     : set(index - 1, value, rest(list), originalList)
 ```
 
 ```
 const parentList = { first: 1, rest: { first: 2, rest: { first: 3, rest: EMPTY }}};
+
 const childList = rest(parentList);
 ```
-
-
 
 ### 读时复制
 
@@ -5259,18 +5322,22 @@ const rest = ({first, rest}) => copy(rest);
 
 ```
 const parentList = { first: 1, rest: { first: 2, rest: { first: 3, rest: EMPTY }}};
+
 const childList = rest(parentList);
 ```
 
 ```
 const newParentList = set(2, "three", parentList);
+
 set(0, "two", childList);
 ```
 
+```
 parentList
   //=> {"first":1,"rest":{"first":2,"rest":{"first":"three","rest":{"first":{},"rest":{}}}}}
 childList
   //=> {"first":"two","rest":{"first":3,"rest":{"first":{},"rest":{}}}}
+```
 
 这种策略被称为“读时复制”，因为当我们试图“读取”父列表中某个子项的值时，我们会复制该子项并读取副本。此后，我们可以自由地向父列表或子列表副本写入数据。
 
@@ -5284,14 +5351,19 @@ childList
 const rest = ({first, rest}) => rest;
 
 const set = (index, value, list) =>
+
   index === 0
+
     ? { first: value, rest: list.rest }
+
     : { first: list.first, rest: set(index - 1, value, list.rest) };
 
 const parentList = { first: 1, rest: { first: 2, rest: { first: 3, rest: EMPTY }}};
+
 const childList = rest(parentList);
 
 const newParentList = set(2, "three", parentList);
+
 const newChildList = set(0, "two", childList);
 ```
 
@@ -5299,9 +5371,11 @@ const newChildList = set(0, "two", childList);
 
 ```
 parentList
-//=> {"first":1,"rest":{"first":2,"rest":{"first":3,"rest":{"first":{},"rest":{}}}}
-}
+
+//=> {"first":1,"rest":{"first":2,"rest":{"first":3,"rest":{"first":{},"rest":{}}}}}
+
 childList
+
 //=> {"first":2,"rest":{"first":3,"rest":{"first":{},"rest":{}}}}
 ```
 
@@ -5309,30 +5383,33 @@ childList
 
 ```
 newParentList
+
 //=> {"first":1,"rest":{"first":2,"rest":{"first":"three","rest":{"first":{},"rest":{}}}}}
+
 newChildList
+
 //=> {"first":"two","rest":{"first":3,"rest":{"first":{},"rest":{}}}}
 ```
 
 现在，像`mapWith`这样只复制但不修改任何内容的函数就能全速运行了。
+
 这种等待写入时才复制的策略称为写时复制，或“COW”：
 
-> 写时复制是指每当任务试图修改共享信息时，应首先创建该信息的独立（私有）副本，以防止其修改对其他所有任务可见的策略。—— 维基百科<sup>72</sup>
+> 写时复制是指每当任务试图修改共享信息时，应首先创建该信息的独立（私有）副本，以防止其修改对其他所有任务可见的策略。—— 维基百科
 
 与所有策略一样，它需要进行权衡：当你进行少量不频繁的修改时，它比悲观复制结构便宜得多，但如果你倾向于对某些非共享的数据进行大量修改，它的代价就更高了。
 
 再次查看代码，你会发现`copy`函数并不是在写时复制：它遵循的模式是，在构建某样东西时，我们拥有它并可以随意修改。一旦我们完成并将其交给其他人，我们需要保守一些，并采用读时复制或写时复制这样的策略。
 
-> 72https://en.wikipedia.org/wiki/Copy-on-write
-
 ### 乌龟、兔子和瞬移乌龟
 
 很久以前（互联网初创的第一时代），有人问了我一个经典的算法问题。问题是：“编写一个算法，在常数空间内检测链表中的环。”
+
 我几分钟内想不出答案，这并不特别令人意外。面试官做得很好，他没有当场终止面试，而是让我描述一下我脑中在想什么。
 
-我想我当时告诉他，我在试图弄清楚是否可以改编一个哈希算法，比如将所有元素进行异或运算。这是一个关于从列表中找出缺失整数问题的“巧妙答案”，所以我在尝试旧的“将其转化为一个你已经解决过的问题$^{73}$”的元算法。我们从那里继续，他没有透露“解决方案”。
+我想我当时告诉他，我在试图弄清楚是否可以改编一个哈希算法，比如将所有元素进行异或运算。这是一个关于从列表中找出缺失整数问题的“巧妙答案”，所以我在尝试旧的“将其转化为一个你已经解决过的问题”的元算法。我们从那里继续，他没有透露“解决方案”。
 
-我回家后思考这个问题。我想解决它。最终，我想到一个办法，并在我家的电脑上尝试了（用Java！）。我给他发了一封邮件分享我的结果，以展示我坚持到底的能力。然后我就把这件事忘了。过了一段时间，我被告知正确的解决方案是：
+我回家后思考这个问题。我想解决它。最终，我想到一个办法，并在我家的电脑上尝试了（用 Java！）。我给他发了一封邮件分享我的结果，以展示我坚持到底的能力。然后我就把这件事忘了。过了一段时间，我被告知正确的解决方案是：
 
 ```
 const EMPTY = null;
@@ -5342,53 +5419,81 @@ const isEmpty = (node) => node === EMPTY;
 const pair = (first, rest = EMPTY) => ({first, rest});
 
 const list = (...elements) => {
+
   const [first, ...rest] = elements;
 
   return elements.length === 0
+
     ? EMPTY
+
     : pair(first, list(...rest))
+
 }
 
 const forceAppend = (list1, list2) => {
+
   if (isEmpty(list1)) {
+
     return "FAIL!"
+
   }
+
   if (isEmpty(list1.rest)) {
+
     list1.rest = list2;
+
   }
+
   else {
+
     forceAppend(list1.rest, list2);
+
   }
+
 }
 ```
 
-$^{73}$ http://www-users.cs.york.ac.uk/susan/joke/3.htm#boil
-
 ```
 const tortoiseAndHare = (aPair) => {
+
   let tortoisePair = aPair,
+
       harePair = aPair.rest;
 
   while (true) {
+
     if (isEmpty(tortoisePair) || isEmpty(harePair)) {
+
       return false;
+
     }
+
     if (tortoisePair.first === harePair.first) {
+
       return true;
+
     }
 
     harePair = harePair.rest;
 
     if (isEmpty(harePair)) {
+
       return false;
+
     }
+
     if (tortoisePair.first === harePair.first) {
+
       return true;
+
     }
 
     tortoisePair = tortoisePair.rest;
+
     harePair = harePair.rest;
+
   }
+
 };
 ```
 
@@ -5396,105 +5501,137 @@ const tortoiseAndHare = (aPair) => {
 const aList = list(1, 2, 3, 4, 5);
 
 tortoiseAndHare(aList)
+
 //=> false
 
 forceAppend(aList, aList.rest.rest);
 
 tortoiseAndHare(aList);
+
 //=> true
 ```
 
-这个算法被称为“乌龟和兔子”，由罗伯特·弗洛伊德在1960年代发现。你有两个节点引用，其中一个以另一个两倍的速度遍历列表。无论列表有多大，最终快速的引用会等于慢速的引用，从而检测到环。
+这个算法被称为“乌龟和兔子”，由罗伯特·弗洛伊德在 1960 年代发现。你有两个节点引用，其中一个以另一个两倍的速度遍历列表。无论列表有多大，最终快速的引用会等于慢速的引用，从而检测到环。
 
 当时，我想不出任何使用哈希解决这个问题的方法，所以我放弃了，试图将其适配到二的幂次算法中。我的第一个尝试很笨拙，但大致等同于这个：
 
 ```
 const teleportingTurtle = (list) => {
+
   let speed = 1,
+
       rabbit = list,
+
       turtle = rabbit;
 
   while (true) {
+
     for (let i = 0; i <= speed; i += 1) {
+
       rabbit = rabbit.rest;
+
       if (rabbit == null) {
+
         return false;
+
       }
+
       if (rabbit === turtle) {
+
         return true;
+
       }
+
     }
+
     turtle = rabbit;
+
     speed *= 2;
+
   }
+
   return false;
+
 };
 
 const aList = list(1, 2, 3, 4, 5);
 
 teleportingTurtle(aList)
+
   //=> false
 
 forceAppend(aList, aList.rest.rest);
 
 teleportingTurtle(aList);
+
   //=> true
 ```
 
-多年后，我遇到了关于这个算法的讨论，[瞬移乌龟的故事](http://www.penzba.co.uk/Writings/TheTeleportingTurtle.html)[^74]。根据环的大小和某些操作的相对成本，它在某些情况下似乎更快。
+多年后，我遇到了关于这个算法的讨论，瞬移乌龟的故事。根据环的大小和某些操作的相对成本，它在某些情况下似乎更快。
 
-这两个算法的有趣之处在于，它们都*混淆*了两个独立的关注点：如何遍历数据结构，以及如何处理遇到的元素。在[函数式迭代器](http://www.penzba.co.uk/Writings/TheTeleportingTurtle.html)中，我们将研究一种分离这些关注点的模式。
+这两个算法的有趣之处在于，它们都混淆了两个独立的关注点：如何遍历数据结构，以及如何处理遇到的元素。在函数式迭代器中，我们将研究一种分离这些关注点的模式。
 
-> 74http://www.penzba.co.uk/Writings/TheTeleportingTurtle.html
-
-
-
- ## 函数式迭代器
+## 函数式迭代器
 
 让我们考虑一个非常简单的问题：求数组元素的和。在尾递归风格中，它看起来像这样：
 
 ```
 const arraySum = ([first, ...rest], accumulator = 0) =>
+
   first === undefined
+
     ? accumulator
+
     : arraySum(rest, first + accumulator)
 
 arraySum([1, 4, 9, 16, 25])
+
   //=> 55
 ```
 
-正如我们之前看到的，这把遍历数组的机制与求和业务逻辑纠缠在一起。所以我们可以用 `fold` 将它们分离：
+正如我们之前看到的，这把遍历数组的机制与求和业务逻辑纠缠在一起。所以我们可以用`fold`将它们分离：
 
 ```
 const callLeft = (fn, ...args) =>
+
     (...remainingArgs) =>
+
       fn(...args, ...remainingArgs);
 
 const foldArrayWith = (fn, terminalValue, [first, ...rest]) =>
+
   first === undefined
+
     ? terminalValue
+
     : fn(first, foldArrayWith(fn, terminalValue, rest));
 
 const arraySum = callLeft(foldArrayWith, (a, b) => a + b, 0);
 
 arraySum([1, 4, 9, 16, 25])
+
   //=> 55
 ```
 
-这样做的好处是，`arraySum` 的定义主要关注求和，而不是遍历数据集合。但它仍然依赖于 `foldArrayWith`，因此只能对数组求和。
+这样做的好处是，`arraySum`的定义主要关注求和，而不是遍历数据集合。但它仍然依赖于`foldArrayWith`，因此只能对数组求和。
 
 当我们想对一个数字树或数字链表求和时，会发生什么？
 
-嗯，我们使用数组调用 `arraySum`，而它内部固化了遍历数组的方法。也许我们可以将两者都提取出来。让我们稍微重新安排一下代码：
+嗯，我们使用数组调用`arraySum`，而它内部固化了遍历数组的方法。也许我们可以将两者都提取出来。让我们稍微重新安排一下代码：
 
 ```
 const callRight = (fn, ...args) =>
+
   (...remainingArgs) =>
+
     fn(...remainingArgs, ...args);
 
 const foldArrayWith = (fn, terminalValue, [first, ...rest]) =>
+
   first === undefined
+
     ? terminalValue
+
     : fn(first, foldArrayWith(fn, terminalValue, rest));
 
 const foldArray = (array) => callRight(foldArrayWith, array);
@@ -5502,23 +5639,31 @@ const foldArray = (array) => callRight(foldArrayWith, array);
 const sumFoldable = (folder) => folder((a, b) => a + b, 0);
 
 sumFoldable(foldArray([1, 4, 9, 16, 25]))
+
   //=> 55
 ```
 
-我们所做的就是通过 `const foldArray = (array) => callRight(foldArrayWith, array);` 将一个数组转换成一个折叠数组的函数。`sumFoldable` 函数并不关心我们拥有哪种数据结构，只要它是可折叠的就行。
+我们所做的就是通过`const foldArray = (array) => callRight(foldArrayWith, array);`将一个数组转换成一个折叠数组的函数。`sumFoldable`函数并不关心我们拥有哪种数据结构，只要它是可折叠的就行。
 
 这是它对一个数字树求和的例子：
 
 ```
 const callRight = (fn, ...args) =>
+
   (...remainingArgs) =>
+
     fn(...remainingArgs, ...args);
 
 const foldTreeWith = (fn, terminalValue, [first, ...rest]) =>
+
   first === undefined
+
     ? terminalValue
+
     : Array.isArray(first)
+
       ? fn(foldTreeWith(fn, terminalValue, first), foldTreeWith(fn, terminalValue, rest))
+
       : fn(first, foldTreeWith(fn, terminalValue, rest));
 
 const foldTree = (tree) => callRight(foldTreeWith, tree);
@@ -5526,6 +5671,7 @@ const foldTree = (tree) => callRight(foldTreeWith, tree);
 const sumFoldable = (folder) => folder((a, b) => a + b, 0);
 
 sumFoldable(foldTree([1, [4, [9, 16]], 25]))
+
   //=> 55
 ```
 
@@ -5533,110 +5679,153 @@ sumFoldable(foldTree([1, [4, [9, 16]], 25]))
 
 ### 迭代
 
-折叠是一种通用操作，并且只要足够仔细，我们完全可以用折叠来完成任何可以用结构化编程中的支柱——for 循环——完成的任务。尽管如此，将某些算法表达为迭代仍然具有一定的价值。
+折叠是一种通用操作，并且只要足够仔细，我们完全可以用折叠来完成任何可以用结构化编程中的支柱——`for`循环——完成的任务。尽管如此，将某些算法表达为迭代仍然具有一定的价值。
 
-JavaScript 有一个特别底层的 for 循环版本，模仿了 C 语言的语义。对数组元素求和可以通过以下方式完成：
+JavaScript 有一个特别底层的`for`循环版本，模仿了 C 语言的语义。对数组元素求和可以通过以下方式完成：
 
 ```
 const arraySum = (array) => {
+
   let sum = 0;
 
   for (let i = 0; i < array.length; ++i) {
+
     sum += array[i];
+
   }
+
   return sum
+
 }
 ```
 
 ```
 arraySum([1, 4, 9, 16, 25])
+
 //=> 55
 ```
 
 我们再次把遍历数组的代码与计算求和的代码混在一起。最糟糕的是，我们还陷入了一些非常底层的细节，比如要知道数组的元素是用从 0 开始的连续整数索引的。
 
-我们可以用稍微不同的方式写这个，使用 while 循环：
+我们可以用稍微不同的方式写这个，使用`while`循环：
 
 ```
 const arraySum = (array) => {
+
   let done,
+
       sum = 0,
+
       i = 0;
 
   while ((done = i == array.length, !done)) {
+
     const value = array[i++];
+
     sum += value;
+
   }
+
   return sum
+
 }
 ```
 
 ```
 arraySum([1, 4, 9, 16, 25])
+
 //=> 55
 ```
 
-注意，在循环内部，我们绑定了 `done` 和 `value` 这两个名字。我们可以把它们放到一个 POJO（[Plain Old JavaScript Object](http://en.wikipedia.org/wiki/Plain_Old_Java_Object)）中。这会有点别扭，但我们要有耐心：
+注意，在循环内部，我们绑定了`done`和`value`这两个名字。我们可以把它们放到一个 POJO 中。这会有点别扭，但我们要有耐心：
 
 ```
 const arraySum = (array) => {
+
   let iter,
+
       sum = 0,
+
       index = 0;
 
   while (
+
     (eachIteration = {
+
         done: index === array.length,
+
         value: index < array.length ? array[index] : undefined
+
     },
+
     ++index,
+
     !eachIteration.done)
+
   ) {
+
     sum += eachIteration.value;
+
   }
+
   return sum;
+
 }
 ```
 
 ```
 arraySum([1, 4, 9, 16, 25])
+
 //=> 55
 ```
 
-通过这段代码，我们创建了一个具有 `done` 和 `value` 键的 POJO。所有求和代码需要知道的只是加上 `eachIteration.value`。现在我们可以把这些凌乱的东西提取到一个单独的函数中：
+通过这段代码，我们创建了一个具有`done`和`value`键的 POJO。所有求和代码需要知道的只是加上`eachIteration.value`。现在我们可以把这些凌乱的东西提取到一个单独的函数中：
 
 ```
 const arrayIterator = (array) => {
+
   let i = 0;
 
   return () => {
+
     const done = i === array.length;
 
     return {
+
       done,
+
       value: done ? undefined : array[i++]
+
     }
+
   }
+
 }
 ```
 
 ```
 const iteratorSum = (iterator) => {
+
   let eachIteration,
+
       sum = 0;
 
   while ((eachIteration = iterator(), !eachIteration.done)) {
+
     sum += eachIteration.value;
+
   }
-    }
+
     return sum;
+
 }
 
 iteratorSum(arrayIterator([1, 4, 9, 16, 25]))
+
 //=> 55
 ```
 
-现在这变得很不一样了。`arrayIterator` 函数接受一个数组并返回一个我们可以反复调用以获取数组元素的函数。`iteratorSum` 函数通过重复调用 `iterator` 函数来迭代元素，直到它返回 `{ done: true }`。
+现在这变得很不一样了。`arrayIterator`函数接受一个数组并返回一个我们可以反复调用以获取数组元素的函数。`iteratorSum`函数通过重复调用`iterator`函数来迭代元素，直到它返回`{ done: true }`。
 
 我们可以为不同的数据结构编写不同的迭代器。这是一个用于链表的：
 
@@ -5648,47 +5837,65 @@ const isEmpty = (node) => node === EMPTY;
 const pair = (first, rest = EMPTY) => ({first, rest});
 
 const list = (...elements) => {
+
     const [first, ...rest] = elements;
 
     return elements.length === 0
+
         ? EMPTY
+
         : pair(first, list(...rest))
+
 }
 
 const print = (aPair) =>
+
     isEmpty(aPair)
+
         ? ""
+
         : `${aPair.first} ${print(aPair.rest)}`
 
 const listIterator = (aPair) =>
+
     () => {
+
         const done = isEmpty(aPair);
+
         if (done) {
+
             return {done};
+
         }
+
         else {
+
             const {first, rest} = aPair;
 
             aPair = aPair.rest;
+
             return { done, value: first }
+
         }
+
     }
 ```
 
 ```
-  }
-}
-```
-
-```
 const iteratorSum = (iterator) => {
+
   let eachIteration,
+
       sum = 0;;
 
   while ((eachIteration = iterator(), !eachIteration.done)) {
+
     sum += eachIteration.value;
+
   }
+
   return sum
+
 }
 ```
 
@@ -5698,6 +5905,7 @@ const aListIterator = listIterator(list(1, 4, 9, 16, 25));
 
 ```
 iteratorSum(aListIterator)
+
   //=> 55
 ```
 
@@ -5707,6 +5915,7 @@ iteratorSum(aListIterator)
 
 ```
 const NumberIterator = (number = 0) =>
+
   () => ({ done: false, value: number++ })
 ```
 
@@ -5716,14 +5925,23 @@ fromOne = NumberIterator(1);
 
 ```
 fromOne().value;
+
   //=> 1
+
 fromOne().value;
+
   //=> 2
+
 fromOne().value;
+
   //=> 3
+
 fromOne().value;
+
   //=> 4
+
 fromOne().value;
+
   //=> 5
 ```
 
@@ -5731,109 +5949,133 @@ fromOne().value;
 
 ```
 const FibonacciIterator = () => {
+
   let previous = 0,
+
       current = 1;
 
   return () => {
+
     const value = current;
 
     [previous, current] = [current, current + previous];
+
     return {done: false, value};
+
   };
+
 };
 
 const fib = FibonacciIterator()
 
 fib().value
+
   //=> 1
+
 fib().value
+
   //=> 1
+
 fib().value
+
   //=> 2
+
 fib().value
+
   //=> 3
+
 fib().value
+
   //=> 5
 ```
 
-一个从种子开始并将其扩展成数据结构的函数被称为 *unfold*。它是 fold 的反面。编写一个通用的展开机制是可能的，但让我们先看看使用展开的迭代器我们能做些什么。
+一个从种子开始并将其扩展成数据结构的函数被称为 unfold。它是 fold 的反面。编写一个通用的展开机制是可能的，但让我们先看看使用展开的迭代器我们能做些什么。
 
-首先，我们可以对迭代器进行 `map` 操作，就像我们对集合进行 map 一样：
+首先，我们可以对迭代器进行`map`操作，就像我们对集合进行 map 一样：
 
 ```
 const mapIteratorWith = (fn, iterator) =>
+
   () => {
+
     const {done, value} = iterator();
 
     return ({done, value: done ? undefined : fn(value)});
+
   }
 
 const squares = mapIteratorWith((x) => x * x, NumberIterator(1));
 
 squares().value
+
   //=> 1
+
 squares().value
 ```
 
-
-
 ### 用函数构造数据
 
-![](img/34322ce8d9a7a9a4a308955f2d1f90b3_178_0.png)
-
-CERN 粒子加速器提供的咖啡
-
-到目前为止，在我们的代码中，我们一直使用数组和对象来表示数据的结构，并且大量使用三元运算符来编写在到达基本情形时终止的算法。例如，这个 length 函数使用函数来将值绑定到名称，使用普通 JavaScript 对象（POJO）来构建节点，并使用三元函数来检测基本情形——空列表。
+到目前为止，在我们的代码中，我们一直使用数组和对象来表示数据的结构，并且大量使用三元运算符来编写在到达基本情形时终止的算法。例如，这个`length`函数使用函数来将值绑定到名称，使用普通 JavaScript 对象（POJO）来构建节点，并使用三元函数来检测基本情形——空列表。
 
 ```
 const EMPTY = {};
+
 const OneTwoThree = { first: 1, rest: { first: 2, rest: { first: 3, rest: EMPTY } } };
 ```
 
 ```
 OneTwoThree.first
+
 //=> 1
 ```
 
 ```
 OneTwoThree.rest.first
+
 //=> 2
 ```
 
 ```
 OneTwoThree.rest.rest.first
+
 //=> 3
 ```
 
 ```
 const length = (node, delayed = 0) =>
+
   node === EMPTY
+
     ? delayed
+
     : length(node.rest, delayed + 1);
 ```
 
 ```
 length(OneTwoThree)
+
 //=> 3
 ```
 
 很久以前，像阿隆佐·邱奇（Alonzo Church）、摩西·肖恩芬克尔（Moses Schönfinkel）、艾伦·图灵（Alan Turing）和哈斯凯尔·柯里（Haskell Curry）这样的数学家们自问，是否真的需要所有这些特性来进行计算。他们寻找了一组根本性地更为简单的工具，却能够完成所有相同的事情。他们证明了任意计算都可以由一小套公理化的组件来表示。例如，我们不需要用数组来表示列表，甚至不需要用普通 JavaScript 对象来表示链表中的节点。我们仅用函数就可以建模列表。
 
-《*To Mock a Mockingbird*》<sup>75</sup> 为组合子建立了鸣禽的隐喻，从那以后，逻辑学家们就把 K 组合子称为"红隼"（kestrel），B 组合子称为"蓝知更鸟"（bluebird），以此类推。
+《To Mock a Mockingbird》为组合子建立了鸣禽的隐喻，从那以后，逻辑学家们就把 K 组合子称为“红隼”（kestrel），B 组合子称为“蓝知更鸟”（bluebird），以此类推。
 
-[oscin.es](http://oscin.es)<sup>76</sup> 库包含了所有标准组合子的代码，以及使用标准记号进行实验的功能。
+oscin.es 库包含了所有标准组合子的代码，以及使用标准记号进行实验的功能。
 
-让我们从组合逻辑的一些基本构件开始，即 K、I 和 V 组合子，它们分别昵称为"Kestrel"、"Idiot Bird"和"Vireo"：
+让我们从组合逻辑的一些基本构件开始，即 K、I 和 V 组合子，它们分别昵称为“Kestrel”、“Idiot Bird”和“Vireo”：
 
 ```
 const K = (x) => (y) => x;
+
 const I = (x) => (x);
+
 const V = (x) => (y) => (z) => z(x)(y);
 ```
 
 #### 红隼与傻子
 
-**常量函数**是一种无论给定什么参数总是返回相同结果的函数。例如，`(x) => 42` 是一个常量函数，它总是求值为 42。红隼，或者说 K，是一个制造常量函数的函数。你给它一个值，它返回一个返回该值的常量函数。
+常量函数是一种无论给定什么参数总是返回相同结果的函数。例如，`(x) => 42`是一个常量函数，它总是求值为 42。红隼，或者说 K，是一个制造常量函数的函数。你给它一个值，它返回一个返回该值的常量函数。
 
 例如：
 
@@ -5843,79 +6085,91 @@ const K = (x) => (y) => x;
 const fortyTwo = K(42);
 
 fortyTwo(6)
+
   //=> 42
 
 fortyTwo("Hello")
+
   //=> 42
 ```
 
-**恒等函数**是一种求值为所传入参数本身的函数。因此 `I(42) => 42`。非常简单，但很有用。现在我们再向前推进一步：向 K 传入一个值会得到一个函数，再向那个函数传入一个值会得到一个值。
+恒等函数是一种求值为所传入参数本身的函数。因此`I(42) => 42`。非常简单，但很有用。现在我们再向前推进一步：向 K 传入一个值会得到一个函数，再向那个函数传入一个值会得到一个值。
 
 就像这样：
 
 ```
 K(6)(7)
+
   //=> 6
 
 K(12)(24)
+
   //=> 12
 ```
 
-这非常有趣。给定两个值，我们可以说 K 总是返回**第一个**值：`K(x)(y) => x`（这不是有效的 JavaScript，但这本质上是它的工作原理）。
+这非常有趣。给定两个值，我们可以说 K 总是返回第一个值：`K(x)(y) => x`（这不是有效的 JavaScript，但这本质上是它的工作原理）。
 
-现在，当我们把函数相互传递时，有趣的事情发生了。考虑 `K(I)`。根据我们刚才写的，`K(x)(y) => x`，所以 `K(I)(x) => I`。说得通。现在我们再加上一次调用：`K(I)(x)(y)` 是什么？如果 `K(I)(x) => I`，那么 `K(I)(x)(y) === I(y)`，也就是 y。
+现在，当我们把函数相互传递时，有趣的事情发生了。考虑`K(I)`。根据我们刚才写的，`K(x)(y) => x`，所以`K(I)(x) => I`。说得通。现在我们再加上一次调用：`K(I)(x)(y)`是什么？如果`K(I)(x) => I`，那么`K(I)(x)(y) === I(y)`，也就是 y。
 
 因此，`K(I)(x)(y) => y`：
 
 ```
 K(I)(6)(7)
+
   //=> 7
 
 K(I)(12)(24)
+
   //=> 24
 ```
 
 #### 反向性
 
-啊哈！给定两个值，`K(I)` 总是返回**第二个**值。
+啊哈！给定两个值，`K(I)`总是返回第二个值。
 
 如果我们不觉得这有什么学术气息，我们可以给我们的函数命名：
 
-这非常有趣。给定两个值，我们可以说 `K` 总是返回**第一个**值，而给定两个值，`K(I)` 总是返回**第二个**值。
+这非常有趣。给定两个值，我们可以说`K`总是返回第一个值，而给定两个值，`K(I)`总是返回第二个值。
 
-我们的 `first` 和 `second` 函数与大多数人在谈论访问数据的函数时所习惯的不太一样。如果我们将一对值表示为数组，我们会这样写：
+我们的`first`和`second`函数与大多数人在谈论访问数据的函数时所习惯的不太一样。如果我们将一对值表示为数组，我们会这样写：
 
 ```
 K("primus")("secundus")
+
   //=> "primus"
 
 K(I)("primus")("secundus")
+
   //=> "secundus"
 ```
 
 ```
 const first = K,
+
       second = K(I);
 
 first("primus")("secundus")
+
   //=> "primus"
 
 second("primus")("secundus")
+
   //=> "secundus"
 ```
 
-组合与分解数据 160
-
 ```
 const first = ([first, second]) => first,
+
         second = ([first, second]) => second;
 
 const latin = ["primus", "secundus"];
 
 first(latin)
+
   //=> "primus"
 
 second(latin)
+
   //=> "secundus"
 ```
 
@@ -5923,135 +6177,163 @@ second(latin)
 
 ```
 const first = ({first, second}) => first,
+
         second = ({first, second}) => second;
 
 const latin = {first: "primus", second: "secundus"};
 
 first(latin)
+
   //=> "primus"
 
 second(latin)
+
   //=> "secundus"
 ```
 
-在这两种情况下，函数 `first` 和 `second` 都知道数据是如何表示的，无论是数组还是对象。你把数据传给这些函数，它们从中提取。但我们用 `K` 和 `I` 构建的 `first` 和 `second` 不是这样工作的。你调用它们并传入各个部分，它们选择返回什么。因此如果我们想把它们用于一个双元素数组，我们需要有一段代码来调用一些代码。这是第一次尝试：
+在这两种情况下，函数`first`和`second`都知道数据是如何表示的，无论是数组还是对象。你把数据传给这些函数，它们从中提取。但我们用`K`和`I`构建的`first`和`second`不是这样工作的。你调用它们并传入各个部分，它们选择返回什么。因此如果我们想把它们用于一个双元素数组，我们需要有一段代码来调用一些代码。这是第一次尝试：
 
 ```
 const first = K,
+
         second = K(I);
 
 const latin = (selector) => selector("primus")("secundus");
 
 latin(first)
+
   //=> "primus"
 
 latin(second)
+
   //=> "secundus"
 ```
 
-
-
 ## 绿鹃
 
-我们的 `latin` 数据结构不再是一个简单的数据结构，而是一个函数。我们不再把 `latin` 传给 `first` 或 `second`，而是把 `first` 或 `second` 传给 `latin`。这*完全颠倒*了我们编写操作数据的函数的方式。
+我们的`latin`数据结构不再是一个简单的数据结构，而是一个函数。我们不再把`latin`传给`first`或`second`，而是把`first`或`second`传给`latin`。这完全颠倒了我们编写操作数据的函数的方式。
 
-既然我们的 `latin` 数据表示为函数 `(selector) => selector("primus")("secundus")`，那么下一步显然就是创建一个用于生成数据的函数。对于数组，我们会写 `cons = (first, second) => [first, second]`。对于对象，我们会写：`cons = (first, second) => {first, second}`。在这两种情况下，我们都接受两个参数，并返回数据的形式。
+既然我们的`latin`数据表示为函数`(selector) => selector("primus")("secundus")`，那么下一步显然就是创建一个用于生成数据的函数。对于数组，我们会写`cons = (first, second) => [first, second]`。对于对象，我们会写：`cons = (first, second) => {first, second}`。在这两种情况下，我们都接受两个参数，并返回数据的形式。
 
-对于用 `K` 和 `K(I)` 访问的"数据"，我们的"结构"是函数 `(selector) => selector("primus")("secundus")`。让我们把这些提取成参数：
+对于用`K`和`K(I)`访问的“数据”，我们的“结构”是函数`(selector) => selector("primus")("secundus")`。让我们把这些提取成参数：
 
 ```
 (first, second) => (selector) => selector(first)(second)
 ```
 
-为了与组合子函数仅接受一个参数的写法保持一致，我们将对这个函数进行`柯里化`<sup>77</sup>：
+为了与组合子函数仅接受一个参数的写法保持一致，我们将对这个函数进行柯里化：
 
 ```
 (first) => (second) => (selector) => selector(first)(second)
 ```
 
-我们来试试，我们用 `pair` 这个词来表示生成数据的函数（当我们需要引用特定的 pair 时，默认使用名称 `aPair`）：
+我们来试试，我们用`pair`这个词来表示生成数据的函数（当我们需要引用特定的 pair 时，默认使用名称`aPair`）：
 
 ```
 const first = K,
+
     second = K(I),
+
     pair = (first) => (second) => (selector) => selector(first)(second);
 
 const latin = pair("primus")("secundus");
 
 latin(first)
+
 //=> "primus"
 
 latin(second)
+
 //=> "secundus"
 ```
 
-成功了！那么这个 `pair` 函数是什么呢？如果我们把名称改成 `x`、`y` 和 `z`，就得到：`(x) => (y) => (z) => z(x)(y)`。这就是 V 组合子，即绿鹃（Vireo）！所以我们可以写成：
+成功了！那么这个`pair`函数是什么呢？如果我们把名称改成`x`、`y`和`z`，就得到：`(x) => (y) => (z) => z(x)(y)`。这就是 V 组合子，即绿鹃（Vireo）！所以我们可以写成：
 
 ```
 const first = K,
+
       second = K(I),
+
       pair = V;
 
 const latin = pair("primus")("secundus");
 
 latin(first)
+
   //=> "primus"
 
 latin(second)
+
   //=> "secundus"
 ```
 
-顺便一提，绿鹃有点像 JavaScript 的 .apply 函数。它说的是"取这两个值，然后把它们应用到这个函数上"。还有其他类似的、将值应用到函数上的组合子。一个著名的例子是"画眉鸟"或 T 组合子：它取一个值并将其应用到一个函数上。大多数程序员知道它是 .tap。
+顺便一提，绿鹃有点像 JavaScript 的`.apply`函数。它说的是“取这两个值，然后把它们应用到这个函数上”。还有其他类似的、将值应用到函数上的组合子。一个著名的例子是“画眉鸟”或 T 组合子：它取一个值并将其应用到一个函数上。大多数程序员知道它是`.tap`。
 
 仅仅凭借 K、I 和 V，我们就能构建一个容纳两个值的小数据结构，也就是 Lisp 的 cons 单元和链表节点。没有数组，没有对象，只有函数。我们最好实践一下来验证。
 
 ## 用函数作为数据的列表
 
-这里再用 POJO 来看一下链表。我们用 rest 这个词代替 second，但除此之外与上面的相同：
+这里再用 POJO 来看一下链表。我们用`rest`这个词代替`second`，但除此之外与上面的相同：
 
 ```
 const first = ({first, rest}) => first,
+
       rest  = ({first, rest}) => rest,
+
       pair = (first, rest) => ({first, rest}),
+
       EMPTY = ({});
 
 const l123 = pair(1, pair(2, pair(3, EMPTY)));
 
 first(l123)
+
   //=> 1
 
 first(rest(l123))
+
   //=> 2
 
 first(rest(rest(l123)))
+
   //=3
 ```
 
-我们可以为它编写 length 和 mapWith 函数：
+我们可以为它编写`length`和`mapWith`函数：
 
 ```
 const length = (aPair) =>
+
   aPair === EMPTY
+
     ? 0
+
     : 1 + length(rest(aPair));
 ```
 
 ```
 length(l123)
+
 //=> 3
 ```
 
 ```
 const reverse = (aPair, delayed = EMPTY) =>
+
   aPair === EMPTY
+
     ? delayed
+
     : reverse(rest(aPair), pair(first(aPair), delayed));
 ```
 
 ```
 const mapWith = (fn, aPair, delayed = EMPTY) =>
+
   aPair === EMPTY
+
     ? reverse(delayed)
+
     : mapWith(fn, rest(aPair), pair(fn(first(aPair)), delayed));
 ```
 
@@ -6061,16 +6343,19 @@ const doubled = mapWith((x) => x * 2, l123);
 
 ```
 first(doubled)
+
 //=> 2
 ```
 
 ```
 first(rest(doubled))
+
 //=> 4
 ```
 
 ```
 first(rest(rest(doubled)))
+
 //=> 6
 ```
 
@@ -6078,8 +6363,11 @@ first(rest(rest(doubled)))
 
 ```
 const first = K,
+
       rest  = K(I),
+
       pair = V,
+
       EMPTY = (() => {});
 ```
 
@@ -6089,46 +6377,59 @@ const l123 = pair(1)(pair(2)(pair(3)(EMPTY)));
 
 ```
 l123(first)
+
 //=> 1
 ```
 
 ```
 l123(rest)(first)
+
 //=> 2
 ```
 
 ```
 return l123(rest)(rest)(first)
+
 //=> 3
 ```
 
-我们以一种反向的方式编写它们，但似乎奏效。length 怎么样？
+我们以一种反向的方式编写它们，但似乎奏效。`length`怎么样？
 
 ```
 const length = (aPair) =>
+
   aPair === EMPTY
+
     ? 0
+
     : 1 + length(aPair(rest));
 ```
 
 ```
 length(l123)
+
 //=> 3
 ```
 
-那么 mapWith 呢？
+那么`mapWith`呢？
 
 ```
 const reverse = (aPair, delayed = EMPTY) =>
+
   aPair === EMPTY
+
     ? delayed
+
     : reverse(aPair(rest), pair(aPair(first))(delayed));
 ```
 
 ```
 const mapWith = (fn, aPair, delayed = EMPTY) =>
+
   aPair === EMPTY
+
     ? reverse(delayed)
+
     : mapWith(fn, aPair(rest), pair(fn(aPair(first)))(delayed));
 ```
 
@@ -6138,69 +6439,89 @@ const doubled = mapWith((x) => x * 2, l123)
 
 ```
 doubled(first)
+
 //=> 2
 ```
 
 ```
 doubled(rest)(first)
+
 //=> 4
 ```
 
 ```
 doubled(rest)(rest)(first)
+
 //=> 6
 ```
 
-瞧，**我们可以用纯函数来表示链表**。而且如果小心运用，我们能做出惊人的事情，比如用函数表示数字，构建更复杂的数据结构如树，事实上，任何可计算的东西都只用函数就能计算出来。
+瞧，我们可以用纯函数来表示链表。而且如果小心运用，我们能做出惊人的事情，比如用函数表示数字，构建更复杂的数据结构如树，事实上，任何可计算的东西都只用函数就能计算出来。
 
 但不用一路构建到用 JavaScript 函数和没有其他数据结构来写 JavaScript 解释器这种疯狂的程度，让我们换个稍微不同的方向再推进一步。
 
-## 说"请"
+## 说“请”
 
-我们用函数替代了数组和 POJO，但我们仍然使用 JavaScript 的内置运算符来测试相等性（`===`）和进行分支 `?:`。
+我们用函数替代了数组和 POJO，但我们仍然使用 JavaScript 的内置运算符来测试相等性（`===`）和进行分支`?:`。
 
 我们在函数中一直使用相同的模式：`aPair === EMPTY ? doSomething : doSomethingElse`。这遵循了我们用于数据结构的哲学：干活的函数检查数据结构。
 
-我们可以把这个反过来：与其问一个 pair 是否为空然后决定怎么做，我们可以让 pair 替我们做。这是 `length`：
+我们可以把这个反过来：与其问一个 pair 是否为空然后决定怎么做，我们可以让 pair 替我们做。这是`length`：
 
 ```
 const length = (aPair) =>
+
   aPair === EMPTY
+
     ? 0
+
     : 1 + length(aPair(rest));
 ```
 
-假设我们使用一个稍高层次的抽象，我们称其为 `list`。与其写 `length(list)` 然后检查列表，我们会写成这样：
+假设我们使用一个稍高层次的抽象，我们称其为`list`。与其写`length(list)`然后检查列表，我们会写成这样：
 
 ```
 const length = (list) => list(
+
   () => 0,
+
   (aPair) => 1 + length(aPair(rest))
+
 );
 ```
 
-现在我们需要为 list 编写 `first` 和 `rest` 函数，但这些名字会与我们为 pair 写的 `first` 和 `rest` 冲突。所以让我们把名字区分清楚：
+现在我们需要为 list 编写`first`和`rest`函数，但这些名字会与我们为 pair 写的`first`和`rest`冲突。所以让我们把名字区分清楚：
 
 ```
 const pairFirst = K,
+
     pairRest  = K(I),
+
     pair = V;
 
 const first = (list) => list(
+
     () => "ERROR: Can't take first of an empty list",
+
     (aPair) => aPair(pairFirst)
+
   );
 
 const rest = (list) => list(
+
     () => "ERROR: Can't take first of an empty list",
+
     (aPair) => aPair(pairRest)
+
   );
 ```
 
 ```
 const length = (list) => list(
+
     () => 0,
+
     (aPair) => 1 + length(aPair(pairRest))
+
 );
 ```
 
@@ -6208,8 +6529,11 @@ const length = (list) => list(
 
 ```
 const print = (list) => list(
+
     () => "",
+
     (aPair) => `${aPair(pairFirst)} ${print(aPair(pairRest))}`
+
 );
 ```
 
@@ -6223,6 +6547,7 @@ const EMPTYLIST = (whenEmpty, unlessEmpty) => whenEmpty()
 
 ```
 const node = (x) => (y) =>
+
     (whenEmpty, unlessEmpty) => unlessEmpty(pair(x)(y));
 ```
 
@@ -6234,137 +6559,143 @@ const l123 = node(1)(node(2)(node(3)(EMPTYLIST)));
 
 ```
 print(l123)
+
 //=> 1 2 3
 ```
 
-我们也可以写 reverse 和 mapWith。我们在模拟组合逻辑方面不是非常严格，会使用默认参数：
+我们也可以写`reverse`和`mapWith`。我们在模拟组合逻辑方面不是非常严格，会使用默认参数：
 
 ```
 const reverse = (list, delayed = EMPTYLIST) => list(
+
     () => delayed,
+
     (aPair) => reverse(aPair(pairRest), node(aPair(pairFirst))(delayed))
+
 );
 ```
 
 ```
 print(reverse(l123));
+
 //=> 3 2 1
 ```
 
 ```
 const mapWith = (fn, list, delayed = EMPTYLIST) =>
+
     list(
+
         () => reverse(delayed),
+
         (aPair) => mapWith(fn, aPair(pairRest), node(fn(aPair(pairFirst)))(delayed))
+
     );
 
     print(mapWith(x => x * x, reverse(l123)))
+
         //=> 9 4 1
 ```
 
-我们成功提供了与 `===` 和 `?:` 完全相同的功能，但仅用函数就实现了。
+我们成功提供了与`===`和`?:`完全相同的功能，但仅用函数就实现了。
 
 ## 函数并非真正的重点
 
-有很多类似的文本解释如何用函数构建复杂的语义。你可以证明 `K` 和 `K(I)` 可以表示 `true` 和 `false`，用[邱奇数](https://en.wikipedia.org/wiki/Church_encoding)或[超现实数](https://en.wikipedia.org/wiki/Surreal_number)建模数量，并一路构建出打印 FizzBuzz。表面的结论大概是这样的：
+有很多类似的文本解释如何用函数构建复杂的语义。你可以证明`K`和`K(I)`可以表示`true`和`false`，用邱奇数或超现实数建模数量，并一路构建出打印 FizzBuzz。表面的结论大概是这样的：
 
-> 函数是计算的基本构建块。它们是组合逻辑的"公理"，可以用来计算 JavaScript 能计算的任何东西。
+> 函数是计算的基本构建块。它们是组合逻辑的“公理”，可以用来计算 JavaScript 能计算的任何东西。
 
-然而，这里值得注意的不是这个。实际上，像 JavaScript 这样的语言已经提供了带有映射和折叠方法、选择操作以及其他丰富构造的数组。知道如何用函数制作链表对实际工作的程序员来说并非真正必要。（另一方面，知道这是*可以*做到的，对理解计算机科学非常重要。）
+然而，这里值得注意的不是这个。实际上，像 JavaScript 这样的语言已经提供了带有映射和折叠方法、选择操作以及其他丰富构造的数组。知道如何用函数制作链表对实际工作的程序员来说并非真正必要。（另一方面，知道这是可以做到的，对理解计算机科学非常重要。）
 
-知道如何只用函数制作列表，有点像知道光子是电磁力的[规范玻色子](https://en.wikipedia.org/wiki/Gauge_boson)。它是物理学的 QED，支撑着编程的麦克斯韦方程组。极其重要，但当你造桥时不实用。
+知道如何只用函数制作列表，有点像知道光子是电磁力的规范玻色子。它是物理学的 QED，支撑着编程的麦克斯韦方程组。极其重要，但当你造桥时不实用。
 
-那么*什么*是有趣的呢？当我们搞定这些之后，入睡时什么在脑海中萦绕不去？
+那么什么是有趣的呢？当我们搞定这些之后，入睡时什么在脑海中萦绕不去？
 
 ## 回归逆向思维
 
-为了让 pair 工作，我们*反过来*做了，我们把 `first` 和 `rest` 函数传给 pair，然后 pair 调用我们的函数。碰巧的是，pair 是由绿鹃（或 V 组合子）构成的：`(x) => (y) => (z) => z(x)(y)`。
+为了让 pair 工作，我们反过来做了，我们把`first`和`rest`函数传给 pair，然后 pair 调用我们的函数。碰巧的是，pair 是由绿鹃（或 V 组合子）构成的：`(x) => (y) => (z) => z(x)(y)`。
 
 但我们完全可以做完全不同的事。我们可以编写一个将元素存储在数组中的 pair，或者一个将元素存储在 POJO 中的 pair。我们所知道的就是，我们可以给 pair 函数传一个我们自己的函数，它会被 pair 的元素调用。
 
 pair 的确切实现对于使用 pair 的代码是隐藏的。这里，我们来证明：
 
-
-
 ### 数据食谱
-
-多伦多小意大利区的 Café Diplomatico
 
 #### 免责声明
 
-这些食谱出于实用性编写，其实现可能会引入此前正文中尚未讨论的 JavaScript 特性，例如方法和/或原型。每个食谱的整体*用途*将符合截至目前讨论的 JavaScript 语言精神，即使实现方式可能不完全一致。
+这些食谱出于实用性编写，其实现可能会引入此前正文中尚未讨论的 JavaScript 特性，例如方法和/或原型。每个食谱的整体用途将符合截至目前讨论的 JavaScript 语言精神，即使实现方式可能不完全一致。
 
 ### mapWith
 
-在 JavaScript 中，数组有一个 `.map` 方法。`map` 接收一个函数作为参数，将其应用于数组的每个元素，然后将结果返回到另一个数组中。例如：
+在 JavaScript 中，数组有一个`.map`方法。`map`接收一个函数作为参数，将其应用于数组的每个元素，然后将结果返回到另一个数组中。例如：
 
 ```
 [1, 2, 3, 4, 5].map(x => x * x)
+
 //=> [1, 4, 9, 16, 25]
 ```
 
-如果需要，我们可以编写一个行为类似于 `.map` 方法的函数：
+如果需要，我们可以编写一个行为类似于`.map`方法的函数：
 
 ```
 const map = (list, fn) =>
+
   list.map(fn);
 ```
 
-这个食谱不是关于 `map` 的，而是关于 `mapWith` 的——一个围绕 `map` 的包装函数，能将任何其他函数转换为一个映射器（mapper）。`mapWith` 非常简单：<sup>81</sup>
+这个食谱不是关于`map`的，而是关于`mapWith`的——一个围绕`map`的包装函数，能将任何其他函数转换为一个映射器（mapper）。`mapWith`非常简单：
 
 ```
 const mapWith = (fn) => (list) => list.map(fn);
 ```
 
-`mapWith` 与 `map` 有两点不同。它反转了参数顺序，先接收函数，再接收数组。它还对函数进行了"柯里化"（currying）：不再接收两个参数，而是接收一个参数并返回另一个接收参数的函数。
+`mapWith`与`map`有两点不同。它反转了参数顺序，先接收函数，再接收数组。它还对函数进行了“柯里化”（currying）：不再接收两个参数，而是接收一个参数并返回另一个接收参数的函数。
 
-这意味着你可以向 `mapWith` 传递一个函数，并得到一个能将该映射应用于任何数组的函数。例如，我们可能需要一个函数来返回数组中各元素的平方。与其编写 `.map` 的包装器：
+这意味着你可以向`mapWith`传递一个函数，并得到一个能将该映射应用于任何数组的函数。例如，我们可能需要一个函数来返回数组中各元素的平方。与其编写`.map`的包装器：
 
 ```
 const squaresOf = (list) =>
+
   list.map(x => x * x);
 ```
 
 ```
 squaresOf([1, 2, 3, 4, 5])
+
 //=> [1, 4, 9, 16, 25]
 ```
 
-我们可以一步调用 `mapWith`：
-
-<sup>81</sup> 是的，我们在其他地方处理普通集合时也用了 `mapWith` 这个名字。如果我们是在编写函数库，就不得不通过特殊名称、命名空间或模块来区分这两种映射函数。但出于讨论理念的目的，我们可以在两种不同的上下文中使用同一个名字。毕竟，这是同一个概念。
+我们可以一步调用`mapWith`：
 
 ```
 const squaresOf = mapWith(n => n * n);
 
 squaresOf([1, 2, 3, 4, 5])
+
 //=> [1, 4, 9, 16, 25]
 ```
 
-如果我们不使用 `mapWith`，也可以用 `callRight` 配合 `map` 来达到同样的效果：
+如果我们不使用`mapWith`，也可以用`callRight`配合`map`来达到同样的效果：
 
 ```
 const squaresOf = callRight(map, n => n * n);
 
 squaresOf([1, 2, 3, 4, 5])
+
 //=> [1, 4, 9, 16, 25]
 ```
 
-这两种模式都能让我们达到同样的目标：用常见的片段组合函数，而非完全从头构建。`mapWith` 是一种非常方便的抽象，对应着非常常见的模式。
-
-*mapWith 由 ludicast 提出*<sup>82</sup>
-
-<sup>82</sup> http://github.com/ludicast
+这两种模式都能让我们达到同样的目标：用常见的片段组合函数，而非完全从头构建。`mapWith`是一种非常方便的抽象，对应着非常常见的模式。
 
 ### Flip
 
-我们这样编写 `mapWith`：
+我们这样编写`mapWith`：
 
 ```
 const mapWith = (fn) => (list) => list.map(fn);
 ```
 
-让我们考虑这样一种情况：我们有一个自己的 `map` 函数，可能来自 [allong.es](https://github.com/raganwald/allong.es) 库，也可能来自 [Underscore](http://underscorejs.org)。我们可以这样编写函数：
+让我们考虑这样一种情况：我们有一个自己的`map`函数，可能来自 allong.es 库，也可能来自 Underscore。我们可以这样编写函数：
 
 ```
 const mapWith = (fn) => (list) => map(list, fn);
@@ -6376,35 +6707,37 @@ const mapWith = (fn) => (list) => map(list, fn);
 const mapWith = (fn, list) => map(list, fn);
 ```
 
-其次，我们对函数进行了"柯里化"，使得原来定义一个接收两个参数的函数，变成返回一个函数：该函数接收第一个参数，再返回一个接收第二个参数并应用两者的函数，如下：
+其次，我们对函数进行了“柯里化”，使得原来定义一个接收两个参数的函数，变成返回一个函数：该函数接收第一个参数，再返回一个接收第二个参数并应用两者的函数，如下：
 
 ```
 const mapper = (list) => (fn) => map(list, fn);
 ```
 
-让我们回到依赖 `map` 函数而非方法的 `mapWith` 实现：
+让我们回到依赖`map`函数而非方法的`mapWith`实现：
 
 ```
 const mapWith = (fn) => (list) => map(list, fn);
 ```
 
-我们将通过对函数进行重构来Parameterized `map`，从而提取这两个操作。第一步是给参数起通用名称：
+我们将通过对函数进行重构来参数化`map`，从而提取这两个操作。第一步是给参数起通用名称：
 
 ```
 const mapWith = (first) => (second) => map(second, first);
 ```
 
-然后将整个函数包装起来，并提取 `map`：
+然后将整个函数包装起来，并提取`map`：
 
 ```
 const wrapper = (fn) =>
+
   (first) => (second) => fn(second, first);
 ```
 
-现在我们得到一个函数，它接收一个函数，"翻转"其参数顺序，然后进行柯里化。所以让我们称它为 `flipAndCurry`：
+现在我们得到一个函数，它接收一个函数，“翻转”其参数顺序，然后进行柯里化。所以让我们称它为`flipAndCurry`：
 
 ```
 const flipAndCurry = (fn) =>
+
   (first) => (second) => fn(second, first);
 ```
 
@@ -6412,10 +6745,11 @@ const flipAndCurry = (fn) =>
 
 ```
 const flip = (fn) =>
+
   (first, second) => fn(second, first);
 ```
 
-这就很妙了。看看我们现在如何定义 `mapWith`：
+这就很妙了。看看我们现在如何定义`mapWith`：
 
 ```
 var mapWith = flipAndCurry(map);
@@ -6425,54 +6759,79 @@ var mapWith = flipAndCurry(map);
 
 #### 自柯里化 flip
 
-有时我们想要翻转一个函数，但仍保留灵活性：可以用柯里化形式调用（传递一个参数），也可以用非柯里化形式调用（传递两个参数）。我们*可以*将其整合进 `flip`：
+有时我们想要翻转一个函数，但仍保留灵活性：可以用柯里化形式调用（传递一个参数），也可以用非柯里化形式调用（传递两个参数）。我们可以将其整合进`flip`：
 
 ```
 const flip = (fn) =>
+
   function (first, second) {
+
     if (arguments.length === 2) {
+
       return fn(second, first);
+
     }
+
     else {
+
       return function (second) {
+
         return fn(second, first);
+
       };
+
     }
+
   };
 ```
 
-现在如果我们写 `mapWith = flip(map)`，就可以选择调用 `mapWith(fn, list)` 或 `mapWith(fn)(list)`。
+现在如果我们写`mapWith = flip(map)`，就可以选择调用`mapWith(fn, list)`或`mapWith(fn)(list)`。
 
 #### 翻转方法
 
-当我们学习了上下文和方法后，会发现 `flip` 丢弃了当前上下文，因此不能用于翻转方法。一个小小的改动就能解决这个问题：
+当我们学习了上下文和方法后，会发现`flip`丢弃了当前上下文，因此不能用于翻转方法。一个小小的改动就能解决这个问题：
 
 ```
 const flipAndCurry = (fn) =>
+
   (first) =>
+
     function (second) {
+
       return fn.call(this, second, first);
+
     }
 
 const flip = (fn) =>
+
   function (first, second) {
+
     return fn.call(this, second, first);
+
   }
 
 const flip = (fn) =>
+
   function (first, second) {
+
     if (arguments.length === 2) {
+
       return fn.call(this, second, first);
+
     }
+
     else {
+
       return function (second) {
+
         return fn.call(this, second, first);
+
       };
+
     };
+
   };
 ```
-
-
 
 ## Object.assign
 
@@ -6480,11 +6839,15 @@ const flip = (fn) =>
 
 ```
 const inventory = {
+
   apples: 12,
+
   oranges: 12
+
 };
 
 inventory.bananas = 54;
+
 inventory.pears = 24;
 ```
 
@@ -6492,17 +6855,23 @@ inventory.pears = 24;
 
 ```
 for (let fruit in shipment) {
+
   inventory[fruit] = shipment[fruit]
+
 }
 ```
 
-这两种需求都可以通过标准函数 `Object.assign` 来满足。你可以通过扩展一个空对象来复制一个对象：
+这两种需求都可以通过标准函数`Object.assign`来满足。你可以通过扩展一个空对象来复制一个对象：
 
 ```
 Object.assign({}, {
+
   apples: 12,
+
   oranges: 12
+
 })
+
   //=> { apples: 12, oranges: 12 }
 ```
 
@@ -6510,39 +6879,61 @@ Object.assign({}, {
 
 ```
 const inventory = {
+
   apples: 12,
+
   oranges: 12
+
 };
 
 const shipment = {
+
   bananas: 54,
+
   pears: 24
+
 }
 
 Object.assign(inventory, shipment)
+
   //=> { apples: 12,
+
   //    oranges: 12,
+
   //    bananas: 54,
+
   //    pears: 24 }
 ```
 
-当我们讨论原型时，我们将使用 `Object.assign` 将以下代码：
+当我们讨论原型时，我们将使用`Object.assign`将以下代码：
 
 ```
 const Queue = function () {
+
   this.array = [];
+
   this.head = 0;
+
   this.tail = -1
+
 };
 
 Queue.prototype.pushTail = function (value) {
+
   // ...
+
 };
+
 Queue.prototype.pullHead = function () {
+
   // ...
+
 };
+
 Queue.prototype.isEmpty = function () {
+
   // ...
+
 }
 ```
 
@@ -6550,23 +6941,39 @@ Queue.prototype.isEmpty = function () {
 
 ```
 const Queue = function () {
+
   Object.assign(this, {
+
     array: [],
+
     head: 0,
+
     tail: -1
+
   })
+
 };
 
 Object.assign(Queue.prototype, {
+
   pushTail (value) {
+
     // ...
+
   },
+
   pullHead () {
+
     // ...
+
   },
+
   isEmpty () {
+
     // ...
+
   }
+
 });
 ```
 
@@ -6574,12 +6981,15 @@ Object.assign(Queue.prototype, {
 
 ### 为什么？
 
-这是 [典范的 Y 组合子](https://en.wikipedia.org/wiki/Fixed-point_combinator#Example_in_JavaScript)：
+这是典范的 Y 组合子：
 
 ```
 const Y = (f) =>
+
   ( x => f(v => x(x)(v)) )(
+
     x => f(v => x(x)(v))
+
   );
 ```
 
@@ -6587,18 +6997,23 @@ const Y = (f) =>
 
 ```
 const factorial = Y(function (fac) {
+
   return function (n) {
+
     return (n == 0 ? 1 : n * fac(n - 1));
+
   }
+
 });
 
 factorial(5)
+
 //=> 120
 ```
 
 为什么？它允许你创建递归函数，而无需在环境中将函数绑定到一个名称。这在 JavaScript 中几乎没有实际用途，但在组合子逻辑中至关重要：有了定点组合子，无需绑定名称就能计算所有可计算的东西。
 
-那么，再次回到问题：为什么要包含这个配方？嗯，除了组合子提供的所有实际应用之外，还有一件小事叫做*弄明白事情的乐趣*。
+那么，再次回到问题：为什么要包含这个配方？嗯，除了组合子提供的所有实际应用之外，还有一件小事叫做弄明白事情的乐趣。
 
 网上有很多关于 Y 组合子机制的解释，但请抵制住阅读它们的诱惑：自己把它弄明白。把它当作一个借口，去熟悉你开发环境的调试工具。
 
@@ -6606,28 +7021,29 @@ factorial(5)
 
 ```
 const Y = (f) => {
+
   const something = x => f(v => x(x)(v));
 
   return something(something);
+
 };
 ```
 
-这个 something 是什么，它是如何工作的？另一个友好的提示：将其内部的一些箭头函数改为命名函数表达式，以帮助你解析堆栈跟踪。
+这个`something`是什么，它是如何工作的？另一个友好的提示：将其内部的一些箭头函数改为命名函数表达式，以帮助你解析堆栈跟踪。
 
-**自己弄明白！**
+自己弄明白！
 
 ### 一杯热茶：基础字符串与准字面量
 
-咖啡与一本书
-
 > 表达式是任何解析为值的合法代码单元。—Mozilla 开发者网络：表达式和运算符
 
-像大多数编程语言一样，JavaScript 也有字符串字面量，比如 `fubar` 或 `fizzbuzz`。可以通过*转义序列*在字符串字面量中包含特殊字符。例如，转义序列 `\n` 会在字符串字面量中插入一个换行符，就像这样：`first line\nsecond line`。
+像大多数编程语言一样，JavaScript 也有字符串字面量，比如`fubar`或`fizzbuzz`。可以通过转义序列在字符串字面量中包含特殊字符。例如，转义序列`\n`会在字符串字面量中插入一个换行符，就像这样：`first line\nsecond line`。
 
-有一些运算符可以用于字符串。最常见的是 `+`，它执行*连接*：
+有一些运算符可以用于字符串。最常见的是`+`，它执行连接：
 
 ```
 'fu' + 'bar'
+
 //=> 'fubar'
 ```
 
@@ -6635,31 +7051,35 @@ const Y = (f) => {
 
 #### 准字面量
 
-JavaScript 支持*准字面量*字符串，也称为“模板字符串”或“字符串插值表达式”。准字面量字符串看起来像字符串字面量，但实际上是一个表达式。准字面量字符串用反引号表示，并且大多数可以表示为字面量的字符串与准字面量具有完全相同的含义，例如。
+JavaScript 支持准字面量字符串，也称为“模板字符串”或“字符串插值表达式”。准字面量字符串看起来像字符串字面量，但实际上是一个表达式。准字面量字符串用反引号表示，并且大多数可以表示为字面量的字符串与准字面量具有完全相同的含义，例如：
 
 ```
 `foobar`
+
 //=> 'foobar'
 ```
 
 ```
 `fizz` + `buzz`
+
 //=> 'fizzbuzz'
 ```
 
-准字面量的功能远不止于此。一个准字面量可以包含一个待求值的表达式。老派的 Lispers 称之为“反引号”，更现代的术语是“插值”。一个未加引号的表达式通过 `${expression}` 插入到准字面量中。表达式被求值，结果被强制转换为字符串，然后插入到准字符串中。
+准字面量的功能远不止于此。一个准字面量可以包含一个待求值的表达式。老派的 Lispers 称之为“反引号”，更现代的术语是“插值”。一个未加引号的表达式通过`${expression}`插入到准字面量中。表达式被求值，结果被强制转换为字符串，然后插入到准字符串中。
 
 例如：
 
 ```
 `A popular number for nerds is ${40 + 2}`
+
 //=> 'A popular number for nerds is 42'
 ```
 
-一个准字面量在计算上等同于一个使用 `+` 的表达式。所以上面的表达式也可以写成：
+一个准字面量在计算上等同于一个使用`+`的表达式。所以上面的表达式也可以写成：
 
 ```
 'A popular number for nerds is ' + (40 + 2)
+
   //=> 'A popular number for nerds is 42'
 ```
 
@@ -6667,14 +7087,15 @@ JavaScript 支持*准字面量*字符串，也称为“模板字符串”或“�
 
 ```
 'A popular number for nerds is' + (40 + 2)
+
   //=> 'A popular number for nerds is42'
 ```
 
 #### 求值时间
 
-像任何其他表达式一样，准字面量是*延迟*求值的，即在该行或多行代码被求值时才进行。
+像任何其他表达式一样，准字面量是延迟求值的，即在该行或多行代码被求值时才进行。
 
-例如，
+例如：
 
 ```
 const name = "Harry";
@@ -6682,10 +7103,11 @@ const name = "Harry";
 const greeting = (name) => `Hello my name is ${name}`;
 
 greeting('Arthur Dent')
+
   //=> 'Hello my name is Arthur Dent'
 ```
 
-JavaScript 在函数被调用时对准字面量求值，函数体内的准字面量在此时被求值。因此，name 不是绑定到 "Harry"，而是绑定到 'Arthur Dent'，即函数调用时参数的值。
+JavaScript 在函数被调用时对准字面量求值，函数体内的准字面量在此时被求值。因此，`name`不是绑定到 "Harry"，而是绑定到 'Arthur Dent'，即函数调用时参数的值。
 
 如果我们这样写，结果完全符合预期：
 
@@ -6693,18 +7115,17 @@ JavaScript 在函数被调用时对准字面量求值，函数体内的准字面
 const greeting = (name) => 'Hello my name is ' + name;
 
 greeting('Arthur Dent')
+
   //=> 'Hello my name is Arthur Dent'
 ```
 
 ### 搅拌阿洛涅：对象与状态
 
-用咖啡勺丈量的生活
+到目前为止，我们讨论了许多人所谓的“纯函数式”编程，其中每个表达式都必然是幂等的，因为我们使用所研究的工具无法在程序内改变状态。
 
-到目前为止，我们讨论了许多人所谓的“纯函数式”编程，其中每个表达式都必然是[幂等的](https://en.wikipedia.org/wiki/Idempotence)，因为我们使用所研究的工具无法在程序内改变状态。
+我们也探索了那些在自身内部重新绑定名称作为计算一部分的函数。我们还简要触及了在构建对象时对其进行变异的概念。但我们避免了那些旨在被改变的对象，那些模拟状态的对象。
 
-我们也探索了那些在自身内部重新绑定名称作为计算一部分的函数。我们还简要触及了在构建对象时对其进行变异的概念。但我们避免了那些旨在被改变的对象，那些模拟*状态*的对象。
-
-是时候改变*一切*了。
+是时候改变一切了。
 
 ### 用闭包封装状态
 
@@ -6724,9 +7145,7 @@ greeting('Arthur Dent')
 
 许多栈使用一个数组来保存其内容。这是相对稳定的。你可以用链表代替，但在 JavaScript 中，数组效率很高。你可能需要一个索引，也可能不需要。你可以让数组增长和收缩，或者分配一个固定大小的数组，并使用索引来跟踪数组的使用情况。跟踪列表头部的设计选择通常由性能考量驱动。
 
-如果你暴露实现细节，比如是否存在索引，迟早会有程序员发现直接使用索引的优势。例如，她可能需要知道栈的大小。理想的选择是添加一个 size 函数，继续隐藏实现细节。但她很赶时间，所以她直接读取索引。现在她的代码与索引的存在耦合了，所以如果我们希望更改实现以让数组增长和收缩，我们将破坏她的代码。
-
-
+如果你暴露实现细节，比如是否存在索引，迟早会有程序员发现直接使用索引的优势。例如，她可能需要知道栈的大小。理想的选择是添加一个`size`函数，继续隐藏实现细节。但她很赶时间，所以她直接读取索引。现在她的代码与索引的存在耦合了，所以如果我们希望更改实现以让数组增长和收缩，我们将破坏她的代码。
 
 避免这种情况的方法是将数组和索引对其他代码隐藏，只暴露我们认为稳定的操作。如果且当有人需要知道栈的大小时，我们将添加一个`size`函数并将其也暴露出来。
 
@@ -6736,52 +7155,81 @@ greeting('Arthur Dent')
 
 我们已经介绍了 JavaScript 的对象，并且很容易看出对象可以用于建模其他编程语言所谓的记录、结构体、帧或诸如此类的东西。并且鉴于它们的元素是可变的，它们显然可以建模状态。
 
-给定一个持有我们状态（一个数组和一个索引⁹²）的对象，我们可以很容易地将我们的三个操作实现为函数。将函数与状态打包在一起不需要任何特殊的“魔法”特性。JavaScript 对象可以拥有任何类型的元素，包括函数。
+给定一个持有我们状态（一个数组和一个索引）的对象，我们可以很容易地将我们的三个操作实现为函数。将函数与状态打包在一起不需要任何特殊的“魔法”特性。JavaScript 对象可以拥有任何类型的元素，包括函数。
 
 为了让我们的栈工作，我们需要一种方法让我们的函数引用我们的栈。我们将通过确保它有一个名称来做到这一点。我们可以用一个 IIFE 来做到这一点：
 
 ```js
 const stack = (() => {
+
   const obj = {
+
     array: [],
+
     index: -1,
+
     push (value) {
+
       return obj.array[obj.index += 1] = value
+
     },
+
     pop () {
+
       const value = obj.array[obj.index];
 
       obj.array[obj.index] = undefined;
+
       if (obj.index >= 0) {
+
         obj.index -= 1
+
       }
+
       return value
+
     },
+
     isEmpty () {
+
       return obj.index < 0
+
     }
+
   };
 
   return obj;
+
 })();
 ```
 
-⁹² 是的，还有另一种方法来跟踪数组的大小，但我们不需要它来演示封装和隐藏状态。
-
 ```js
 stack.isEmpty()
+
 //=> true
+
 stack.push('hello')
+
 //=> 'hello'
+
 stack.push('JavaScript')
+
 //=> 'JavaScript'
+
 stack.isEmpty()
+
 //=> false
+
 stack.pop()
+
 //=> 'JavaScript'
+
 stack.pop()
+
 //=> 'hello'
+
 stack.isEmpty()
+
 //=> true
 ```
 
@@ -6795,10 +7243,15 @@ stack.isEmpty()
 
 ```js
 {
+
   min: (x, y) =>
+
     x < y ? x : y,
+
   max: (x, y) =>
+
     x > y ? x : y
+
 }
 ```
 
@@ -6808,69 +7261,105 @@ stack.isEmpty()
 
 ```js
 const stack = (() => {
+
   let array = [],
+
       index = -1;
 
   const obj = {
+
     push (value) { return array[index += 1] = value },
+
     pop () {
+
       const value = array[index];
 
       array[index] = undefined;
+
       if (index >= 0) {
+
         index -= 1
+
       }
+
       return value
+
     },
+
     isEmpty () { return index < 0 }
+
   };
 
   return obj;
+
 })();
 
 stack.isEmpty()
+
 //=> true
+
 stack.push('hello')
+
 //=> 'hello'
+
 stack.push('JavaScript')
+
 //=> 'JavaScript'
+
 stack.isEmpty()
+
 //=> false
+
 stack.pop()
+
 //=> 'JavaScript'
+
 stack.pop()
+
 //=> 'hello'
+
 stack.isEmpty()
+
 //=> true
 ```
-
-![咖啡确实长在树上](img/34322ce8d9a7a9a4a308955f2d1f90b3_211_0.png)
-
-咖啡确实长在树上
 
 我们不想每次需要一个栈时都重复这段代码，所以让我们创建一个“栈生成器”。将上述内容包装在函数中的诱惑很大：
 
 ```js
 const Stack = () =>
+
 (() => {
+
   let array = [],
+
       index = -1;
 
   const obj = {
+
     push (value) { return array[index += 1] = value },
+
     pop () {
+
       const value = array[index];
 
       array[index] = undefined;
+
       if (index >= 0) {
+
         index -= 1
+
       }
+
       return value
+
     },
+
     isEmpty () { return index < 0 }
+
   };
 
   return obj;
+
 })();
 ```
 
@@ -6878,300 +7367,461 @@ const Stack = () =>
 
 ```js
 const Stack = () => {
+
     const array = [];
+
     let index = -1;
 
     return {
+
         push (value) { return array[index += 1] = value },
+
         pop () {
+
             const value = array[index];
 
             array[index] = undefined;
+
             if (index >= 0) {
+
                 index -= 1
+
             }
+
             return value
+
         },
+
         isEmpty () { return index < 0 }
+
     }
+
 }
 
 const stack = Stack();
+
 stack.push("Hello");
+
 stack.push("Good bye");
 
 stack.pop()
+
 //=> "Good bye"
+
 stack.pop()
+
 //=> "Hello"
 ```
 
-现在我们可以自由地创建栈，并且我们已经隐藏了它们的内部数据元素。我们有了方法和封装，并且是用 JavaScript 的基本函数和对象构建的它们。在[构造函数与类](Constructors and Classes)中，我们将探讨 JavaScript 对基于类的编程的支持以及函数带来的一些惯用法。
+现在我们可以自由地创建栈，并且我们已经隐藏了它们的内部数据元素。我们有了方法和封装，并且是用 JavaScript 的基本函数和对象构建的它们。在构造函数与类中，我们将探讨 JavaScript 对基于类的编程的支持以及函数带来的一些惯用法。
 
-> **封装是“面向对象的”吗？**
+> 封装是“面向对象的”吗？
 
 我们构建了具有隐藏内部状态和“方法”的东西，所有这些都不需要特殊的`def`或`private`关键字。请注意，我们没有包含各种复杂的机制来支持继承、混入以及其他在网络上辩论唯一真正的面向对象风格本质的机会。
 
-话又说回来，经验丰富的程序员反复强调的关键教训——尽管它常常被忽视——是[组合优于继承](http://www.c2.com/cgi/wiki?CompositionInsteadOfInheritance)⁹⁴。所以也许我们并没有错过太多。
-
-⁹⁴ http://www.c2.com/cgi/wiki?CompositionInsteadOfInheritance
+话又说回来，经验丰富的程序员反复强调的关键教训——尽管它常常被忽视——是组合优于继承。所以也许我们并没有错过太多。
 
 ### 组合与扩展
 
 #### 组合
 
-一个非常根本的实践是将组件构建为更小组件。如何将组件划分为更小组件的选择被称为*分解*，这是数论⁹⁵中的一个操作。
+一个非常根本的实践是将组件构建为更小组件。如何将组件划分为更小组件的选择被称为分解，这是数论中的一个操作。
 
 在 JavaScript 中，从更小组件构建组件的最简单、最直接的方法也是最明显的：每个组件都是一个值，这些组件可以组合成一个单一的对象，或者用一个闭包封装起来。
 
-这是一个支持撤销和重做的抽象“模型”，由一对栈（参见[封装状态](Encapsulating State)）和一个普通旧 JavaScript 对象组合而成：
+这是一个支持撤销和重做的抽象“模型”，由一对栈和一个普通旧 JavaScript 对象组合而成：
 
-我们可以设置和获取模型上的属性
+我们可以设置和获取模型上的属性：
 
 ```js
 // 辅助函数
+
 //
+
 // 对于生产环境使用，请考虑如何处理
+
 // 深拷贝和自身属性
+
 const shallowCopy = (source) => {
+
   const dest = {};
 
   for (let key in source) {
+
     dest[key] = source[key]
+
   }
+
   return dest
+
 };
 
 const Stack = () => {
+
   const array = [];
+
   let index = -1;
 
   return {
+
     push (value) {
+
       array[index += 1] = value
+
     },
+
     pop () {
+
       let value = array[index];
+
       if (index >= 0) {
+
         index -= 1
+
       }
+
       return value
+
     },
+
     isEmpty () {
+
       return index < 0
+
     }
+
   }
+
 }
 
 const Model = function (initialAttributes) {
+
   const redoStack = Stack();
+
   let attributes = shallowCopy(initialAttributes || {});
 
   const undoStack = Stack(),
+
       obj = {
+
         set: (attrsToSet) => {
+
           undoStack.push(shallowCopy(attributes));
+
           if (!redoStack.isEmpty()) {
+
             redoStack.length = 0;
+
           }
+
           for (let key in (attrsToSet || {})) {
+
             attributes[key] = attrsToSet[key]
+
           }
+
           return obj
+
         },
+
         undo: () => {
+
           if (!undoStack.isEmpty()) {
+
             redoStack.push(shallowCopy(attributes));
+
             attributes = undoStack.pop()
+
           }
+
           return obj
+
         },
+
         redo: () => {
+
           if (!redoStack.isEmpty()) {
+
             undoStack.push(shallowCopy(attributes));
+
             attributes = redoStack.pop()
+
           }
+
           return obj
+
         },
+
         get: (key) => attributes[key],
+
         has: (key) => attributes.hasOwnProperty(key),
+
         attributes: () => shallowCopy(attributes)
+
       };
-```
 
-⁹⁵ 当你对一个已经分解的组件进行重新排列，使其被分解成不同的子组件集合而不改变其行为时，你就是在*重构*。
+  return obj
 
-
-
-```
-return obj
 };
 ```
 
 ```
 const model = Model();
+
 model.set({"Doctor": "de Grasse"});
+
 model.set({"Doctor": "Who"});
+
 model.undo()
+
 model.get("Doctor")
+
 //=> "de Grasse"
 ```
 
-用于封装的技巧与组合配合得很好。在本例中，我们有一个"模型"，它隐藏了自己的属性存储以及由撤销栈和重做栈组成的实现。
+用于封装的技巧与组合配合得很好。在本例中，我们有一个“模型”，它隐藏了自己的属性存储以及由撤销栈和重做栈组成的实现。
 
 ### 扩展
 
-另一种被许多人视为基础的实践是*扩展*实现。也就是说，他们希望定义一种新的数据结构，通过向现有数据结构添加新操作和语义来实现。
+另一种被许多人视为基础的实践是扩展实现。也就是说，他们希望定义一种新的数据结构，通过向现有数据结构添加新操作和语义来实现。
 
-考虑一个队列⁴：
+考虑一个队列：
 
 ```
 const Queue = () => {
+
   let array = [],
+
       head = 0,
+
       tail = -1;
 
   return {
+
     pushTail: (value) => array[++tail] = value,
+
     pullHead: () => {
+
       if (tail >= head) {
+
         const value = array[head];
 
         array[head] = undefined;
+
         ++head;
+
         return value
+
       }
+
     },
+
     isEmpty: () => tail < head
+
   }
+
 };
 ```
 
 ```
 const queue = Queue();
+
 queue.pushTail("Hello");
+
 queue.pushTail("JavaScript");
+
 queue.pushTail("Allongé");
 
 queue.pullHead()
+
   //=> "Hello"
+
 queue.pullHead()
+
   //=> "JavaScript"
 ```
 
-现在我们希望通过添加`pullTail`和`pushHead`操作来创建一个[双端队列](https://en.wikipedia.org/wiki/Double-ended_queue)。不幸的是，封装阻止我们添加与隐藏数据结构交互的操作。
+现在我们希望通过添加`pullTail`和`pushHead`操作来创建一个双端队列。不幸的是，封装阻止我们添加与隐藏数据结构交互的操作。
 
 这其实并不令人惊讶：封装的全部意义在于创建一个不透明的数据结构，只能通过其公共接口进行操作。封装和扩展的设计目标始终处于紧张关系中。
 
-让我们"去封装"我们的队列：
+让我们“去封装”我们的队列：
 
 ```
 const Queue = function () {
+
   const queue = {
+
     array: [],
+
     head: 0,
+
     tail: -1,
+
     pushTail: (value) =>
+
       queue.array[++queue.tail] = value,
+
     pullHead: () => {
+
       if (queue.tail >= queue.head) {
+
         const value = queue.array[queue.head];
 
         queue.array[queue.head] = undefined;
+
         queue.head += 1;
+
         return value
+
       }
+
     },
+
     isEmpty: () =>
+
       queue.tail < queue.head
+
   };
+
   return queue
+
 };
 ```
-
-⁹⁵https://en.wikipedia.org/wiki/Double-ended_queue
-
-⁹⁶在你开始纠结双端队列是否"是一个"队列之前，我们还没提到类型和类。这种关系称为 was-a，或者说"由……实现"。
 
 现在我们可以将队列扩展为双端队列：
 
 ```
 const extend = function (consumer, ...providers) {
+
   for (let i = 0; i < providers.length; ++i) {
+
     const provider = providers[i];
+
     for (let key in provider) {
+
       if (provider.hasOwnProperty(key)) {
+
         consumer[key] = provider[key]
+
       }
+
     }
+
   }
+
   return consumer
+
 };
 
 const Dequeue = function () {
+
   const deque = Queue(),
+
         INCREMENT = 4;
 
   return Object.assign(deque, {
+
     size: () => deque.tail - deque.head + 1,
+
     pullTail: () => {
+
       if (!deque.isEmpty()) {
+
         const value = deque.array[deque.tail];
 
         deque.array[deque.tail] = undefined;
+
         deque.tail -= 1;
+
         return value
+
       }
+
     },
+
     pushHead: (value) => {
+
       if (deque.head === 0) {
+
         for (let i = deque.tail; i <= deque.head; i++) {
-父亲的父亲 = 父亲的父亲的父亲;
+
+          deque.array[i + INCREMENT] = deque.array[i];
+
         }
+
         deque.tail += INCREMENT
+
         deque.head += INCREMENT
+
       }
+
       return deque.array[deque.head -= 1] = value
+
     }
+
   })
+
 };
 ```
 
 瞧，我们通过扩展实现了复用，代价是牺牲了封装。
 
-🔑 封装与扩展处于一种自然的紧张状态。具有精心设计的封装的程序能够抵抗破坏，但另一方面也可能难以用其他方式重构。要注意何时最适合**组合**，何时最适合**扩展**。
+封装与扩展处于一种自然的紧张状态。具有精心设计的封装的程序能够抵抗破坏，但另一方面也可能难以用其他方式重构。要注意何时最适合组合，何时最适合扩展。
 
 ### This 与 That
 
-让我们再来看[可扩展对象](link)。下面是一个队列：
+让我们再来看可扩展对象。下面是一个队列：
 
 ```
 const Queue = () => {
+
   const queue = {
+
     array: [],
+
     head: 0,
+
     tail: -1,
+
     pushTail (value) {
+
       return queue.array[++queue.tail] = value
+
     },
+
     pullHead () {
+
       if (queue.tail >= queue.head) {
+
         const value = queue.array[queue.head];
 
         queue.array[queue.head] = undefined;
+
         queue.head += 1;
+
         return value
+
       }
+
     },
+
     isEmpty () {
+
       return queue.tail < queue.head;
+
     }
+
   };
+
   return queue
+
 };
 
 const queue = Queue();
+
 queue.pushTail('Hello');
+
 queue.pushTail('JavaScript');
 ```
 
@@ -7181,6 +7831,7 @@ queue.pushTail('JavaScript');
 const copyOfQueue = Object.assign({}, queue);
 
 queue !== copyOfQueue
+
   //=> true
 ```
 
@@ -7188,8 +7839,11 @@ queue !== copyOfQueue
 
 ```
 copyOfQueue.array = [];
+
 for (let i = 0; i < 2; ++i) {
+
   copyOfQueue.array[i] = queue.array[i]
+
 }
 ```
 
@@ -7197,6 +7851,7 @@ for (let i = 0; i < 2; ++i) {
 
 ```
 queue.pullHead()
+
 //=> 'Hello'
 ```
 
@@ -7204,6 +7859,7 @@ queue.pullHead()
 
 ```
 copyOfQueue.pullHead()
+
 //=> 'JavaScript'
 ```
 
@@ -7215,25 +7871,43 @@ copyOfQueue.pullHead()
 
 ```
 const AmnesiacQueue = () =>
+
   ({
+
     array: [],
+
     head: 0,
+
     tail: -1,
+
     pushTail (myself, value) {
+
       return myself.array[myself.tail += 1] = value
+
     },
+
     pullHead (myself) {
+
       if (myself.tail >= myself.head) {
+
         let value = myself.array[myself.head];
 
         myself.array[myself.head] = void 0;
+
         myself.head += 1;
+
         return value
+
       }
+
     },
+
     isEmpty (myself) {
+
       return myself.tail < myself.head
+
     }
+
   });
 ```
 
@@ -7241,8 +7915,11 @@ const AmnesiacQueue = () =>
 const queueWithAmnesia = AmnesiacQueue();
 
 queueWithAmnesia.pushTail(queueWithAmnesia, 'Hello');
+
 queueWithAmnesia.pushTail(queueWithAmnesia, 'JavaScript');
+
 queueWithAmnesia.pullHead(queueWithAmnesia)
+
 //=> "Hello"
 ```
 
@@ -7252,57 +7929,73 @@ queueWithAmnesia.pullHead(queueWithAmnesia)
 
 ### 这一切是什么？
 
-每当我们不得不一遍又一遍又一遍地重复做同样的事情时，我们工业化的人类就试图建造一台机器来替我们做。JavaScript就是这样一台机器。当我们使用紧凑方法语法编写函数表达式（或者使用`function`关键字而不是胖箭头），然后使用 . 符号调用该函数时，JavaScript会将"方法调用"的"接收者"绑定到特殊名称`this`。
+每当我们不得不一遍又一遍又一遍地重复做同样的事情时，我们工业化的人类就试图建造一台机器来替我们做。JavaScript 就是这样一台机器。当我们使用紧凑方法语法编写函数表达式（或者使用`function`关键字而不是胖箭头），然后使用`.`符号调用该函数时，JavaScript 会将“方法调用”的“接收者”绑定到特殊名称`this`。
 
 我们的`AmnesiacQueue`已经使用了紧凑方法语法。所以，我们将从参数列表中移除`myself`，并在每个函数体内将其重命名为`this`：
 
 ```
 const BetterQueue = () =>
+
 ({
+
   array: [],
+
   head: 0,
+
   tail: -1,
+
   pushTail (value) {
+
     return this.array[this.tail += 1] = value
+
   },
+
   pullHead () {
+
     if (this.tail >= this.head) {
+
       let value = this.array[this.head];
 
       this.array[this.head] = undefined;
+
       this.head += 1;
+
       return value
+
     }
+
   },
+
   isEmpty () {
+
     return this.tail < this.head
+
   }
+
 });
 ```
 
-现在我们依赖JavaScript在我们使用 . 或 [ 和 ] 运算符调用这些函数时设置`this`的值。
+现在我们依赖 JavaScript 在我们使用`.`或`[`和`]`运算符调用这些函数时设置`this`的值。
+
 换句话说，当我们写：
 
 ```
 const betterQueue = BetterQueue();
 
 betterQueue.pushTail('Hello');
+
 betterQueue.pushTail('JavaScript');
+
 betterQueue.pullHead()
 ```
 
-我们期望JavaScript会调用绑定到`pushTail`和`pullHead`的函数，并在其中自动将`betterQueue`绑定到名称`this`。而它确实如此：每次你调用作为对象成员函数时，JavaScript都会将该对象绑定到函数环境中的名称`this`，就好像它是一个参数一样。<sup>97</sup>
+我们期望 JavaScript 会调用绑定到`pushTail`和`pullHead`的函数，并在其中自动将`betterQueue`绑定到名称`this`。而它确实如此：每次你调用作为对象成员函数时，JavaScript 都会将该对象绑定到函数环境中的名称`this`，就好像它是一个参数一样。
 
 现在，这解决了我们的原始问题吗？我们能复制一个对象吗？回顾一下问题：当我们使用闭包作为私有数据时，复制对对象函数的引用意味着我们使用的是仍然指向原始闭包的函数，因此共享相同的私有数据。
 
-<sup>97</sup>JavaScript还会对`this`做其他处理，但目前我们只关心这些。
-```
-
-
-
 ### 调用函数时适用什么上下文？
 
-在[这个与那个](This and That)中，我们了解到当一个函数使用 `function` 关键字定义，并作为对象方法被调用时，名称 `this` 会在其环境中绑定到充当“接收者”的对象。例如：
+在“这个与那个”中，我们了解到当一个函数使用`function`关键字定义，并作为对象方法被调用时，名称`this`会在其环境中绑定到充当“接收者”的对象。例如：
 
 ```javascript
 const someObject = {
@@ -7315,13 +8008,13 @@ someObject.returnMyThis() === someObject
 //=> true
 ```
 
-我们构造了一个方法，它返回被调用时绑定到 `this` 的任何值。正如描述的那样，当被调用时，它返回该对象。
+我们构造了一个方法，它返回被调用时绑定到`this`的任何值。正如描述的那样，当被调用时，它返回该对象。
 
 #### 这完全取决于函数的调用方式
 
-JavaScript 程序员在谈论函数被调用时的“上下文”。`this` 被绑定到该上下文。<sup>98</sup> 需要理解的重要一点是，函数被调用时的上下文是由函数的调用方式决定的，而不是函数本身。
+JavaScript 程序员在谈论函数被调用时的“上下文”。`this`被绑定到该上下文。需要理解的重要一点是，函数被调用时的上下文是由函数的调用方式决定的，而不是函数本身。
 
-这是一个重要的区别。考虑闭包：正如我们在[闭包与作用域](Closures and Scope)中讨论的，函数的自由变量是通过在其外层函数的环境中查找来解析的。通过检查 JavaScript 程序的源代码，你总是可以确定定义自由变量的函数，这就是为什么这种机制被称为[词法作用域]<sup>99</sup>。
+这是一个重要的区别。考虑闭包：正如我们在“闭包与作用域”中讨论的，函数的自由变量是通过在其外层函数的环境中查找来解析的。通过检查 JavaScript 程序的源代码，你总是可以确定定义自由变量的函数，这就是为什么这种机制被称为词法作用域。
 
 函数的上下文无法通过检查 JavaScript 程序的源代码来确定。让我们再看一下我们的例子：
 
@@ -7338,7 +8031,7 @@ someObject.someFunction() === someObject
 //=> true
 ```
 
-函数 `someObject.someFunction` 的上下文是什么？不要说是 someObject！看看这个：
+函数`someObject.someFunction`的上下文是什么？不要说是`someObject`！看看这个：
 
 ```javascript
 const someFunction = someObject.someFunction;
@@ -7367,11 +8060,9 @@ anotherObject.someFunction() === someObject
 //=> false
 ```
 
-所以可以归结为：完全相同的函数可以用两种不同的方式调用，最终得到两个不同的上下文。如果你使用 `someObject.someFunction()` 语法调用它，上下文就被设置为接收者。如果你使用任何其他表达式来解析函数的值（例如 `someFunction()`），你会得到其他东西。
+所以可以归结为：完全相同的函数可以用两种不同的方式调用，最终得到两个不同的上下文。如果你使用`someObject.someFunction()`语法调用它，上下文就被设置为接收者。如果你使用任何其他表达式来解析函数的值（例如`someFunction()`），你会得到其他东西。
 
 让我们研究一下：
-
-有趣！
 
 ```javascript
 const name = 'someFunction';
@@ -7404,7 +8095,7 @@ arr[0]() == arr
 //=> true
 ```
 
-看起来无论你使用 a.b() 还是 a['b']() 还是 a[n]() 或 (a.b)()，你都会得到上下文 a。
+看起来无论你使用`a.b()`还是`a['b']()`还是`a[n]()`或`(a.b)()`，你都会得到上下文`a`。
 
 ```javascript
 const returnThis = function () { return this };
@@ -7422,13 +8113,13 @@ aThirdObject.someFunction() === this
 //=> true
 ```
 
-而如果你不使用 a.b() 或 a['b']() 或 a[n]() 或 (a.b)()，你会得到全局环境作为上下文，而不是执行调用的任何函数的上下文。为了简化，当你使用 . 或 [] 访问调用函数时，你会得到一个对象作为上下文；否则你会得到全局环境。
+而如果你不使用`a.b()`或`a['b']()`或`a[n]()`或`(a.b)()`，你会得到全局环境作为上下文，而不是执行调用的任何函数的上下文。为了简化，当你使用`.`或`[]`访问调用函数时，你会得到一个对象作为上下文；否则你会得到全局环境。
 
 #### 设置你自己的上下文
 
-实际上还有另外两种方法可以设置函数的上下文。同样，这两种方法都是由调用者决定的。在[无处不在的对象？](objects everywhere?)的最后，我们将看到 JavaScript 中的一切都表现得像对象，包括函数。我们将了解到函数本身也有方法，其中之一就是 call。
+实际上还有另外两种方法可以设置函数的上下文。同样，这两种方法都是由调用者决定的。在“无处不在的对象？”的最后，我们将看到 JavaScript 中的一切都表现得像对象，包括函数。我们将了解到函数本身也有方法，其中之一就是`call`。
 
-以下是 call 的实际应用：
+以下是`call`的实际应用：
 
 ```javascript
 returnThis() === aThirdObject
@@ -7441,7 +8132,7 @@ anotherObject.someFunction.call(someObject) === someObject
 //=> true
 ```
 
-当你使用 call 调用函数时，你通过将其作为第一个参数传递来设置上下文。其他参数以正常方式传递给函数。像这样的 call 把戏可以产生很多乐趣：
+当你使用`call`调用函数时，你通过将其作为第一个参数传递来设置上下文。其他参数以正常方式传递给函数。像这样的`call`把戏可以产生很多乐趣：
 
 ```javascript
 const a = [1,2,3],
@@ -7454,11 +8145,11 @@ a.concat.call(b,[2,1])
 //=> [4,5,6,2,1]
 ```
 
-但现在我们彻底理解了 a.b() 真正意味着什么：它等同于 a.b.call(a)。而在浏览器中，c() 等同于 c.call(window)。
+但现在我们彻底理解了`a.b()`真正意味着什么：它等同于`a.b.call(a)`。而在浏览器中，`c()`等同于`c.call(window)`。
 
 #### arguments
 
-JavaScript 在每个函数的环境中还有另一个自动绑定。`arguments` 是一个特殊对象，其行为有点像数组。<sup>100</sup>
+JavaScript 在每个函数的环境中还有另一个自动绑定。`arguments`是一个特殊对象，其行为有点像数组。
 
 例如：
 
@@ -7471,15 +8162,15 @@ third(77, 76, 75, 74, 73)
   //=> 75
 ```
 
-使用 `...` 收集参数可以完成大多数人对使用 `arguments` 特殊绑定的用例，并且，收集参数既适用于箭头函数也适用于 `function` 关键字，而 `arguments` 仅适用于 `function` 关键字。
+使用`...`收集参数可以完成大多数人对使用`arguments`特殊绑定的用例，并且，收集参数既适用于箭头函数也适用于`function`关键字，而`arguments`仅适用于`function`关键字。
 
-有一些事情是 `arguments` 能做而收集参数做不到的，例如如果你声明一个函数为 `function (a, b, c) { ... }`，即使你没有声明要收集的参数，`arguments` 也会保存传递给函数的参数。它与声明的参数并存。
+有一些事情是`arguments`能做而收集参数做不到的，例如如果你声明一个函数为`function (a, b, c) { ... }`，即使你没有声明要收集的参数，`arguments`也会保存传递给函数的参数。它与声明的参数并存。
 
 但总的来说，本书中我们将使用参数收集。
 
 #### 应用与上下文化
 
-稍等一下。JavaScript 还提供了第四种设置函数上下文的方法。`apply` 是每个函数都实现的一个方法，它接受一个上下文作为第一个参数，并接受一个参数的数组或类数组作为第二个参数。这有点绕口，让我们看一个例子：
+稍等一下。JavaScript 还提供了第四种设置函数上下文的方法。`apply`是每个函数都实现的一个方法，它接受一个上下文作为第一个参数，并接受一个参数的数组或类数组作为第二个参数。这有点绕口，让我们看一个例子：
 
 ```javascript
 third.call(this, 1,2,3,4,5)
@@ -7499,7 +8190,7 @@ accrete([4,5])
   //=> 一团糟！
 ```
 
-我们得到的是将 `[4,5]` 连接到一个包含全局环境的数组上的结果。不是我们想要的！看这个：
+我们得到的是将`[4,5]`连接到一个包含全局环境的数组上的结果。不是我们想要的！看这个：
 
 ```javascript
 const contextualize = (fn, context) =>
@@ -7511,7 +8202,7 @@ accrete2([4,5]);
 //=> [ 1, 2, 3, 4, 5 ]
 ```
 
-我们的 `contextualize` 函数返回一个新函数，该函数使用固定的上下文调用函数。它可以用来修复我们上面遇到的一些意外结果。考虑：
+我们的`contextualize`函数返回一个新函数，该函数使用固定的上下文调用函数。它可以用来修复我们上面遇到的一些意外结果。考虑：
 
 ```javascript
 var aFourthObject = {},
@@ -7526,7 +8217,7 @@ aFourthObject.contextualized() === aFourthObject
 //=> true
 ```
 
-两者都为真，因为我们是使用 `aFourthObject` 访问它们的。现在我们写：
+两者都为真，因为我们是使用`aFourthObject`访问它们的。现在我们写：
 
 ```javascript
 var uncontextualized = aFourthObject.uncontextualized,
@@ -7538,11 +8229,11 @@ contextualized() === aFourthObject
 //=> true
 ```
 
-当我们不使用 `aFourthObject.` 调用这些函数时，只有 contextualized 版本保持了 `aFourthObject` 的上下文。
+当我们不使用`aFourthObject.`调用这些函数时，只有`contextualized`版本保持了`aFourthObject`的上下文。
 
-我们稍后将在[绑定](#)中回到上下文化方法。但在我们过于深入地探讨方法的特殊处理之前，我们需要再花点时间看看函数和方法是如何工作的。
+我们稍后将在“绑定”中回到上下文化方法。但在我们过于深入地探讨方法的特殊处理之前，我们需要再花点时间看看函数和方法是如何工作的。
 
-现在我们的函数引用对象的成员，并使用 `this` 来确保它们引用的是接收消息的对象。让我们看看这是否确实允许我们复制对象：
+现在我们的函数引用对象的成员，并使用`this`来确保它们引用的是接收消息的对象。让我们看看这是否确实允许我们复制对象：
 
 ```javascript
 const copyOfQueue = Object.assign({}, betterQueue)
@@ -7558,13 +8249,11 @@ copyOfQueue.pullHead()
   //=> 'Hello'
 ```
 
-瞧，我们现在有了复制数组的方法。通过摆脱闭包并利用 `this`，我们得到了更容易在对象间移植的函数，代码也更简单。**这非常重要。** 能够复制对象是一个更大关注点的例子：能够在对象之间共享函数。这就是类的工作原理。这就是扩展对象的工作原理。能够共享函数意味着能够组合和重用功能。
+瞧，我们现在有了复制数组的方法。通过摆脱闭包并利用`this`，我们得到了更容易在对象间移植的函数，代码也更简单。这非常重要。能够复制对象是一个更大关注点的例子：能够在对象之间共享函数。这就是类的工作原理。这就是扩展对象的工作原理。能够共享函数意味着能够组合和重用功能。
 
-关于 `this`，我们这里讨论的只是冰山一角。我们稍后将在[调用函数时适用什么上下文？](#)中更详细地探讨。
+关于`this`，我们这里讨论的只是冰山一角。我们稍后将在“调用函数时适用什么上下文？”中更详细地探讨。
 
-> 闭包将函数紧密地耦合到它们被创建的环境，限制了它们的灵活性。使用 `this` 可以缓解这种耦合。复制对象只是需要这种灵活性的一个例子。
-
-
+> 闭包将函数紧密地耦合到它们被创建的环境，限制了它们的灵活性。使用`this`可以缓解这种耦合。复制对象只是需要这种灵活性的一个例子。
 
 ### 方法装饰器
 
@@ -7621,7 +8310,7 @@ const maybe = (fn) =>
   };
 ```
 
-现在我们有了一个"真正的函数"，还可以处理可变参数函数和方法。这个变体只有在所有参数都不是`null`或`undefined`时才会调用被装饰的函数：
+现在我们有了一个“真正的函数”，还可以处理可变参数函数和方法。这个变体只有在所有参数都不是`null`或`undefined`时才会调用被装饰的函数：
 
 ```
 const maybe = (fn) =>
@@ -7634,6 +8323,7 @@ const maybe = (fn) =>
 ```
 
 但回到基础。只要我们通过一、使用函数，二、用`.call(this, ...)`或`.apply(this, ...)`调用被装饰函数来正确保留`this`，我们就可以装饰方法以及函数。
+
 现在我们可以这样写：
 
 ```
@@ -7656,13 +8346,11 @@ someObject
   //=> { setSize: [Function], size: 5 }
 ```
 
-使用.call或.apply以及arguments比编写不设置上下文的函数装饰器要慢得多，所以有时编写不能用作方法装饰器的函数装饰器可能是正确的。然而，在实践中，你因未能将上下文传递通过装饰器而引入缺陷的可能性，远大于引入性能劣化的可能性，因此默认选择应该是以"上下文无关"的方式编写所有函数装饰器。
+使用`.call`或`.apply`以及`arguments`比编写不设置上下文的函数装饰器要慢得多，所以有时编写不能用作方法装饰器的函数装饰器可能是正确的。然而，在实践中，你因未能将上下文传递通过装饰器而引入缺陷的可能性，远大于引入性能劣化的可能性，因此默认选择应该是以“上下文无关”的方式编写所有函数装饰器。
 
 在某些情况下，编写方法装饰器还有其他考虑。如果装饰器引入了任何类型的状态（如`once`和`memoize`所做的），当多个对象通过原型机制或通过共享对同一函数的引用而共享同一方法时，必须仔细管理这种情况。
 
 ### 总结
-
-### 🔑 对象、突变与状态
 
 - 状态可以通过闭包封装/隐藏。
 - 封装可以通过组合进行聚合。
@@ -7672,11 +8360,9 @@ someObject
 
 ### 对象、突变与状态的食谱
 
-![意式浓缩咖啡机的内部结构](img/34322ce8d9a7a9a4a308955f2d1f90b3_235_0.png)
-
 #### 免责声明
 
-这些食谱是为实用性而编写的，它们的实现可能会引入到目前为止正文中尚未讨论的JavaScript特性，例如方法和/或原型。每个食谱的整体*使用*将符合到目前为止所讨论的语言精神，即使实现可能不符合。
+这些食谱是为实用性而编写的，它们的实现可能会引入到目前为止正文中尚未讨论的 JavaScript 特性，例如方法和/或原型。每个食谱的整体使用将符合到目前为止所讨论的语言精神，即使实现可能不符合。
 
 ### Memoize
 
@@ -7717,7 +8403,7 @@ const memoized = (fn) => {
 }
 ```
 
-我们可以将`memoized`应用于一个函数，我们会得到一个新的函数，该函数"记忆"其结果，从而永远不必重新计算相同的值两次。它仅适用于"幂等"的函数，即给定相同的参数总是返回相同结果的函数。比如斐波那契：
+我们可以将`memoized`应用于一个函数，我们会得到一个新的函数，该函数“记忆”其结果，从而永远不必重新计算相同的值两次。它仅适用于“幂等”的函数，即给定相同的参数总是返回相同结果的函数。比如斐波那契：
 
 让我们试试：
 
@@ -7735,9 +8421,9 @@ fastFibonacci(45)
 //=> 1134903170
 ```
 
-我们瞬间得到了结果。它奏效了！你可以将memoize与各种"幂等"的纯函数一起使用。默认情况下，它适用于任何接受可以使用JavaScript标准库函数转换为此目的的JSON的参数的函数。
+我们瞬间得到了结果。它奏效了！你可以将 memoize 与各种“幂等”的纯函数一起使用。默认情况下，它适用于任何接受可以使用 JavaScript 标准库函数转换为此目的的 JSON 的参数的函数。
 
-如果你有另一种将参数转换为字符串键的策略，我们需要制作一个允许你提供可选的keymaker函数的版本：
+如果你有另一种将参数转换为字符串键的策略，我们需要制作一个允许你提供可选的 keymaker 函数的版本：
 
 ```
 const memoized = (fn, keymaker = JSON.stringify) => {
@@ -7779,7 +8465,7 @@ var fibonacci = memoized( function fibonacci (n) {
 });
 ```
 
-这是因为绑定到外部环境中名称`fibonacci`的函数已经被记忆化了，但命名函数表达式将名称`fibonacci`绑定在未记忆化的函数内部，所以对`fibonacci`的递归调用*永远*不会被记忆化。因此我们必须写：
+这是因为绑定到外部环境中名称`fibonacci`的函数已经被记忆化了，但命名函数表达式将名称`fibonacci`绑定在未记忆化的函数内部，所以对`fibonacci`的递归调用永远不会被记忆化。因此我们必须写：
 
 ```
 var fibonacci = memoized( function (n) {
@@ -7796,7 +8482,7 @@ var fibonacci = memoized( function (n) {
 
 ### getWith
 
-getWith是一个非常简单的函数。它接受一个属性的名称，并返回一个从对象中提取该属性值的函数：
+`getWith`是一个非常简单的函数。它接受一个属性的名称，并返回一个从对象中提取该属性值的函数：
 
 ```
 const getWith = (attr) => (object) => object[attr]
@@ -7817,7 +8503,7 @@ getWith('oranges')(inventory)
   //=> 144
 ```
 
-这还算不上一个完整的食谱。但让我们将它与mapWith结合：
+这还算不上一个完整的食谱。但让我们将它与`mapWith`结合：
 
 ```
 const inventories = [
@@ -7832,14 +8518,14 @@ mapWith(getWith('oranges'))(inventories)
   //=> [ 144, 54, 12 ]
 ```
 
-这比"冗长"地写出来要好：
+这比“冗长”地写出来要好：
 
 ```
 mapWith((inventory) => inventory.oranges)(inventories)
   //=> [ 144, 54, 12 ]
 ```
 
-getWith与maybe也能很好地配合。考虑一个稀疏数组。你可以使用：
+`getWith`与`maybe`也能很好地配合。考虑一个稀疏数组。你可以使用：
 
 ```
 mapWith(maybe(getWith('oranges')))
@@ -7849,21 +8535,19 @@ mapWith(maybe(getWith('oranges')))
 
 ### 名字里有什么？
 
-为什么这被称为getWith？考虑这个在拥有函数和字典但没有方法的语言中常见的函数：
-
-
+为什么这被称为`getWith`？考虑这个在拥有函数和字典但没有方法的语言中常见的函数：
 
 ```
 const get = (object, attr) => object[attr];
 ```
 
-你可能会问，“为什么用一个函数，而不是直接使用 `[]`？” 答案是，我们可以用操作函数的方式来操作语法无法操作的东西。例如，你还记得从 `flip` 那里，我们可以从 `map` 定义出 `mapWith` 吗？
+你可能会问，“为什么用一个函数，而不是直接使用`[]`？”答案是，我们可以用操作函数的方式来操作语法无法操作的东西。例如，你还记得从`flip`那里，我们可以从`map`定义出`mapWith`吗？
 
 ```
 var mapWith = flip(map);
 ```
 
-我们可以对 `getWith` 做同样的事情，这就是它这样命名的原因：
+我们可以对`getWith`做同样的事情，这就是它这样命名的原因：
 
 ```
 var getWith = flip(get)
@@ -7871,7 +8555,7 @@ var getWith = flip(get)
 
 ### pluckWith
 
-这种将 `mapWith` 和 `getWith` 结合起来的模式在 JavaScript 代码中非常常见。常见到我们可以将其提升到另一个层次：
+这种将`mapWith`和`getWith`结合起来的模式在 JavaScript 代码中非常常见。常见到我们可以将其提升到另一个层次：
 
 ```
 const pluckWith = (attr) => mapWith(getWith(attr));
@@ -7898,7 +8582,7 @@ pluckWith('eggs')(inventories)
   //=> [ 36, 12, 42 ]
 ```
 
-像 Underscore^101 这样的库提供了 `pluck`，它是 `pluckWith` 的翻转版本：
+像 Underscore 这样的库提供了`pluck`，它是`pluckWith`的翻转版本：
 
 ```
 _.pluck(inventories, 'eggs')
@@ -7918,7 +8602,7 @@ const eggsByStore = (inventories) =>
   _.pluck(inventories, 'eggs');
 ```
 
-当然，如果我们有 `pluck`，我们可以用 `flip` 来推导出 `pluckWith`：
+当然，如果我们有`pluck`，我们可以用`flip`来推导出`pluckWith`：
 
 ```
 const pluckWith = flip(_.pluck);
@@ -7926,7 +8610,7 @@ const pluckWith = flip(_.pluck);
 
 ### 深度映射
 
-`mapWith` 是一个出色的工具，但有时你会发现自己处理的是表示树而非列表的数组。例如，这是一个从某种报告中提取的部分销售列表。它以某种神秘的方式分组，我们需要操作报告中的每一项。
+`mapWith`是一个出色的工具，但有时你会发现自己处理的是表示树而非列表的数组。例如，这是一个从某种报告中提取的部分销售列表。它以某种神秘的方式分组，我们需要操作报告中的每一项。
 
 ```
 const report = 
@@ -7952,7 +8636,7 @@ const report =
   { price: 9.99, id: 226 } ] ];
 ```
 
-我们可以嵌套使用一些 `mapWith`，但我们人类是善于使用工具的。如果我们能用一根棍子从洞里挖出美味的蚂蚁来吃，我们也能自动化处理数组：
+我们可以嵌套使用一些`mapWith`，但我们人类是善于使用工具的。如果我们能用一根棍子从洞里挖出美味的蚂蚁来吃，我们也能自动化处理数组：
 
 ```
 const deepMapWith = (fn) => 
@@ -7965,9 +8649,7 @@ const deepMapWith = (fn) =>
   };
 ```
 
-现在我们可以像在扁平数组上使用 `mapWith` 那样，在树上使用 `deepMapWith`：
-
-### 关于对象、变更和状态的实践
+现在我们可以像在扁平数组上使用`mapWith`那样，在树上使用`deepMapWith`：
 
 ```
 deepMapWith(getWith('price'))(report)
@@ -7993,21 +8675,21 @@ deepMapWith(getWith('price'))(report)
         9.99 ] ]
 ```
 
-我们将在讨论[集合](#)的 TreeIterators 时再次审视数据树。
+我们将在讨论集合的 TreeIterators 时再次审视数据树。
 
 ## 咖啡工厂：“面向对象编程”
 
-使用对象和类的编程始于 1960 年代末的挪威，始于 Simula^102 编程语言。它的创造者 Ole-Johan Dahl 和 Kristen Nygaard 并没有用那些词来描述最终将成为计算领域主流范式的东西。
+使用对象和类的编程始于 1960 年代末的挪威，始于 Simula 编程语言。它的创造者 Ole-Johan Dahl 和 Kristen Nygaard 并没有用那些词来描述最终将成为计算领域主流范式的东西。
 
-十年后，Alan Kay 博士创造了“面向对象编程”一词，并共同创建了 Smalltalk^103 编程语言。他有句名言，对他来说，“OOP”就是对象之间通过消息进行通信，而其他语言从 Smalltalk 中复制了不重要的东西，却忽略了他认为重要的东西。
+十年后，Alan Kay 博士创造了“面向对象编程”一词，并共同创建了 Smalltalk 编程语言。他有句名言，对他来说，“OOP”就是对象之间通过消息进行通信，而其他语言从 Smalltalk 中复制了不重要的东西，却忽略了他认为重要的东西。
 
-从那时起，语言要么在现有范式之上强行添加了类似对象的思想（如 Object Pascal^104 和 OCaml^105），要么将它们与其他范式一起烘焙（如 JavaScript），要么完全拥抱对象。
+从那时起，语言要么在现有范式之上强行添加了类似对象的思想（如 Object Pascal 和 OCaml），要么将它们与其他范式一起烘焙（如 JavaScript），要么完全拥抱对象。
 
 话虽如此，关于“面向对象”真的没有一个统一的定义。首先，关于“对象”就没有一个统一的定义。
 
 #### 对象
 
-有些语言，如 Smalltalk 和 Ruby^106，将对象视为一个完全封装的实体。无法访问对象的私有状态，你唯一能做的就是调用它的某个方法。其他语言，如 Java，允许对象访问彼此的状态。
+有些语言，如 Smalltalk 和 Ruby，将对象视为一个完全封装的实体。无法访问对象的私有状态，你唯一能做的就是调用它的某个方法。其他语言，如 Java，允许对象访问彼此的状态。
 
 有些语言（再次，如 Java）的对象和类非常死板，在运行时为对象添加新方法或属性是不可能的或很笨拙的。有些语言在运行时添加方法和属性方面很灵活。还有一些语言将对象视为字典，可以随意添加、修改或删除属性甚至方法。
 
@@ -8015,13 +8697,13 @@ deepMapWith(getWith('price'))(report)
 
 #### 类
 
-“类”的概念在不同语言中也是灵活的。面向对象的语言对于类是否必要、更不用说它们如何工作，并未达成一致。例如，Common Lisp 对象系统用类来定义行为，也用泛型函数来定义行为。[Self](https://en.wikipedia.org/wiki/Self_) 和 [NewtonScript](https://en.wikipedia.org/wiki/NewtonScript) 语言使用原型而非类。
+“类”的概念在不同语言中也是灵活的。面向对象的语言对于类是否必要、更不用说它们如何工作，并未达成一致。例如，Common Lisp 对象系统用类来定义行为，也用泛型函数来定义行为。Self 和 NewtonScript 语言使用原型而非类。
 
 所以一些“OO”语言有对象，但没有类。
 
 C++ 有类，但它们不是“一等实体”。你不能将一个类赋值给一个变量或传递给一个函数。然而，你可以操作类的构造函数，即创建新对象的函数。但你不能操作这些构造函数来改变已经构建的对象的行为，实例行为默认是早期绑定的。
 
-Ruby 有类，并且它们是一等实体。你可以询问一个对象它的类是什么，你可以将一个类放入变量中，传递给一个方法，或从一个方法返回它，就像语言中的任何其他实体一样。Ruby 和 Smalltalk 中的类甚至有自己的类，它们是 Class 的实例！^109^ 实例行为是晚期绑定的，并且是开放扩展的。^110^
+Ruby 有类，并且它们是一等实体。你可以询问一个对象它的类是什么，你可以将一个类放入变量中，传递给一个方法，或从一个方法返回它，就像语言中的任何其他实体一样。Ruby 和 Smalltalk 中的类甚至有自己的类，它们是`Class`的实例！实例行为是晚期绑定的，并且是开放扩展的。
 
 #### 构造函数
 
@@ -8029,26 +8711,13 @@ Ruby 有类，并且它们是一等实体。你可以询问一个对象它的类
 
 #### 原型不是类
 
-像 Self 和 NewtonScript 这样的原型语言完全摒弃了类，使用*原型*来为一组对象定义共同行为。原型和类之间的区别类似于样板房和房屋蓝图之间的区别。
+像 Self 和 NewtonScript 这样的原型语言完全摒弃了类，使用原型来为一组对象定义共同行为。原型和类之间的区别类似于样板房和房屋蓝图之间的区别。
 
 你可以对建筑商说，“给我造一个和那个样板房一模一样的房子”，建筑商就会给你造一个和样板房有很多共同点的房子。然后你可以用额外的个性化装饰你的房子。但样板房本身就是一个房子。虽然你可能选择让它空着，但原则上你可以让一个家庭搬进去。这不同于要求建筑商根据蓝图给你造一个房子。蓝图可能规定了房子的特性，但它本身不是房子。它永远不能被用作房子。
 
-原型就像样板房，而类就像蓝图。类并不像它们所描述的对象。^111^
+原型就像样板房，而类就像蓝图。类并不像它们所描述的对象。
 
-^107^ https://en.wikipedia.org/wiki/Self_
-
-^108^ https://en.wikipedia.org/wiki/NewtonScript
-
-^109^ 如果一个类的类是 Class，那么 Class 的类又是什么类？在 Ruby 中，`Class.class == Class`。在 Smalltalk 中，它是 MetaClass，这为以更深层次的方式改变类的行为提供了可能性。
-
-^110^ 通过扩展内置类的行为来滥用这一特性是一个有争议的话题。
-
-^111^ 嗯，*实际上*，原型和类之间的区别就像样板房和蓝图之间的区别。但原型并不像样板房。实际上，对象和其原型之间的关系是一种*委托*。所以如果一个样板房有一个厨房，而你要求建筑商以该模型为原型为你造一个房子，你可以定制你自己的厨房。但如果你不想要自己的定制厨房，你就会直接使用样板房的厨房来做你所有的烹饪。样板房和房子之间的关系有时被描述为[连接式继承](https://en.wikipedia.org/wiki/Concatenative_inheritance)，JavaScript 也允许你这样做。
-```
-
-
-
- ## “面向对象编程”几乎可以有各种含义
+## “面向对象编程”几乎可以有各种含义
 
 从这场“面向对象编程”的旋风式概览中，我们可以看到，“面向对象编程”背后的思想在编程语言历史上有一些共同的根源，但每种语言都以自己独特的方式实现了各自的特色。
 
@@ -8060,11 +8729,11 @@ JavaScript 拥有对象，默认情况下，这些对象是字典。默认情况
 
 JavaScript 的原型是可选的。原型是对象，就像样板房是房子一样。
 
-在 JavaScript 中，对象字面量和数组字面量分别构造出将行为委托给标准库的对象原型和数组原型的对象。JavaScript 还支持使用 `Object.create` 来构造带有或不带原型的对象，以及使用 `new` 通过构造函数来构造对象。
+在 JavaScript 中，对象字面量和数组字面量分别构造出将行为委托给标准库的对象原型和数组原型的对象。JavaScript 还支持使用`Object.create`来构造带有或不带原型的对象，以及使用`new`通过构造函数来构造对象。
 
-利用原型和构造函数，JavaScript 程序可以模拟其他语言中类的许多特性。JavaScript 还有一个 `class` 关键字，它为以声明式风格编写构造函数和原型提供了语法糖。
+利用原型和构造函数，JavaScript 程序可以模拟其他语言中类的许多特性。JavaScript 还有一个`class`关键字，它为以声明式风格编写构造函数和原型提供了语法糖。
 
-默认情况下，JavaScript 的类是一个与其关联的原型对象组合而成的构造函数。这可以通过 `class` 关键字表示，通过操作函数的默认 `.prototype` 属性，或者独立地组合函数和对象来实现。
+默认情况下，JavaScript 的类是一个与其关联的原型对象组合而成的构造函数。这可以通过`class`关键字表示，通过操作函数的默认`.prototype`属性，或者独立地组合函数和对象来实现。
 
 JavaScript 的类是构造函数，但它们比 C++ 的构造函数功能更多，因为对其原型的操作可以扩展或修改它们所创建的实例的行为。JavaScript 的类对面向对象采取了一种极简主义的方式，就像 JavaScript 的对象对面向对象采取极简主义方式一样。例如，行为可以通过完全相同的机制混入对象、原型或类中，因为对象、原型和构造函数的原型都是可扩展的对象。
 
@@ -8072,67 +8741,91 @@ JavaScript 的类是构造函数，但它们比 C++ 的构造函数功能更多�
 
 ## 壶中乾坤：集合
 
-![](img/34322ce8d9a7a9a4a308955f2d1f90b3_248_0.png)
-
-Antti Nurmesniemi 设计的不同尺寸和颜色的咖啡壶，也许是他最著名的设计作品。
-
 ### 迭代与可迭代对象
-
-![](img/34322ce8d9a7a9a4a308955f2d1f90b3_249_0.png)
-
-Salt Spring 咖啡加工厂的咖啡豆标签
 
 JavaScript 中的许多对象可以模拟事物的集合。集合就像一个装有物品的盒子。有时你只想把盒子搬来搬去。但有时你想打开它并对其内容进行操作。
 
 比如“给这个盒子里的每袋咖啡贴上标签”，或者“打开盒子，取出所有低因咖啡袋，然后做一个只装低因咖啡的新盒子”，又或者“翻遍这个盒子里的袋子，取出第一个标记为‘Espresso’且含有至少 454 克咖啡豆的袋子”。
 
-所有这些操作都涉及逐一查看内容。对集合的元素逐一进行操作称为*迭代内容*，而 JavaScript 有一种标准的方式来迭代集合的内容。
+所有这些操作都涉及逐一查看内容。对集合的元素逐一进行操作称为迭代内容，而 JavaScript 有一种标准的方式来迭代集合的内容。
 
 ### 回顾函数式迭代器
 
-在讨论函数时，我们探讨了编写[函数式迭代器](Functional Iterators)的好处。我们可以对对象做同样的事情。下面是一个具有自己的函数式迭代器方法的栈：
+在讨论函数时，我们探讨了编写函数式迭代器的好处。我们可以对对象做同样的事情。下面是一个具有自己的函数式迭代器方法的栈：
 
 ```
 const Stack1 = () =>
+
   ({
+
     array: [],
+
     index: -1,
+
     push (value) {
+
       return this.array[this.index += 1] = value;
+
     },
+
     pop () {
+
       const value = this.array[this.index];
 
       this.array[this.index] = undefined;
+
       if (this.index >= 0) {
+
         this.index -= 1
+
       }
+
       return value
+
     },
+
     isEmpty () {
+
       return this.index < 0
+
     },
+
     iterator () {
+
       let iterationIndex = this.index;
 
       return () => {
+
         if (iterationIndex > this.index) {
+
           iterationIndex = this.index;
+
         }
+
         if (iterationIndex < 0) {
+
           return {done: true};
+
         }
+
         else {
+
           return {done: false, value: this.array[iterationIndex--]}
+
         }
+
       }
+
     }
+
   });
 
 const stack = Stack1();
 
 stack.push("Greetings");
+
 stack.push("to");
+
 stack.push("you!")
 
 const iter = stack.iterator();
@@ -8140,30 +8833,39 @@ const iter = stack.iterator();
 
 ```
 iter().value
+
   //=> "you!"
+
 iter().value
+
   //=> "to"
 ```
 
-按照我们编写 `.iterator` 方法的方式，每个对象都知道如何为自己返回一个迭代器。
+按照我们编写`.iterator`方法的方式，每个对象都知道如何为自己返回一个迭代器。
 
-> `.iterator()` 方法是用简写形式定义的，等价于 `iterator: function iterator() { ... }`。请注意，它使用了 `function` 关键字，所以当我们用 `stack.iterator()` 调用它时，JavaScript 会将 `this` 设置为 `stack` 的值。但是 `.iterator()` 返回的函数呢？它是用胖箭头 `() => { ... }` 定义的。该函数中的 `this` 值是什么？
+> `.iterator()`方法是用简写形式定义的，等价于`iterator: function iterator() { ... }`。请注意，它使用了`function`关键字，所以当我们用`stack.iterator()`调用它时，JavaScript 会将`this`设置为`stack`的值。但是`.iterator()`返回的函数呢？它是用胖箭头`() => { ... }`定义的。该函数中的`this`值是什么？
 
-由于 JavaScript 不会在胖箭头函数中绑定 `this`，我们遵循与任何其他变量名相同的变量作用域规则：我们在函数的外围环境中查找。虽然 `.iterator()` 方法已经返回，但它的环境正是包围我们的 `() => { ... }` 函数的环境，而 `this` 就是在那里绑定到 `stack` 的值的。
+由于 JavaScript 不会在胖箭头函数中绑定`this`，我们遵循与任何其他变量名相同的变量作用域规则：我们在函数的外围环境中查找。虽然`.iterator()`方法已经返回，但它的环境正是包围我们的`() => { ... }`函数的环境，而`this`就是在那里绑定到`stack`的值的。
 
-因此，由 `.iterator()` 方法返回的迭代器函数将 `this` 绑定到 `stack` 对象，即使我们是用 `iter()` 调用它的。
+因此，由`.iterator()`方法返回的迭代器函数将`this`绑定到`stack`对象，即使我们是用`iter()`调用它的。
 
 下面是实现为对函数式迭代器进行折叠的求和函数：
 
 ```
 const iteratorSum = (iterator) => {
+
   let eachIteration,
+
       sum = 0;
 
   while ((eachIteration = iterator(), !eachIteration.done)) {
+
     sum += eachIteration.value;
+
   }
+
   return sum
+
 }
 ```
 
@@ -8173,31 +8875,41 @@ const iteratorSum = (iterator) => {
 const stack = Stack1();
 
 stack.push(1);
+
 stack.push(2);
+
 stack.push(3);
 
 iteratorSum(stack.iterator())
+
 // => 6
 ```
 
-我们可以更进一步，编写 `collectionSum`，一个可以对任何对象进行折叠的函数，前提是对象实现了 `.iterator` 方法：
+我们可以更进一步，编写`collectionSum`，一个可以对任何对象进行折叠的函数，前提是对象实现了`.iterator`方法：
 
 ```
 const collectionSum = (collection) => {
+
   const iterator = collection.iterator();
 
   let eachIteration,
+
       sum = 0;
 
   while ((eachIteration = iterator(), !eachIteration.done)) {
+
     sum += eachIteration.value;
+
   }
+
   return sum
+
 }
 ```
 
 ```
 collectionSum(stack)
+
 // => 6
 ```
 
@@ -8211,48 +8923,81 @@ collectionSum(stack)
 
 在涉及大量对象集合的程序中，将迭代器实现为对象而非函数会很有用。这样，迭代的机制就可以使用系统中用于分解所有其他对象机制的相同工具来进行分解。
 
-幸运的是，迭代器对象几乎和迭代器函数一样简单。你不是调用一个函数来获取下一个元素，而是拥有一个具有 `.next()` 方法的对象。像这样：
+幸运的是，迭代器对象几乎和迭代器函数一样简单。你不是调用一个函数来获取下一个元素，而是拥有一个具有`.next()`方法的对象。像这样：
 
 ```
 const Stack2 = () =>
+
   ({
+
     array: [],
+
     index: -1,
+
     push (value) {
+
       return this.array[this.index += 1] = value;
+
     },
+
     pop () {
+
       const value = this.array[this.index];
+
       this.array[this.index] = undefined;
+
       if (this.index >= 0) {
+
         this.index -= 1
+
       }
+
       return value
+
     },
+
     isEmpty () {
+
       return this.index < 0
+
     },
+
     iterator () {
+
       let iterationIndex = this.index;
+
       return {
+
         next () {
+
           if (iterationIndex > this.index) {
+
             iterationIndex = this.index;
+
           }
+
           if (iterationIndex < 0) {
+
             return {done: true};
+
           }
+
           else {
+
             return {done: false, value: this.array[iterationIndex--]}
+
           }
+
         }
+
       }
+
     }
+
   });
 ```
 
-
-
+```
 const stack = Stack2();
 
 stack.push(2000);
@@ -8273,60 +9018,91 @@ const collectionSum = (collection) => {
 
 collectionSum(stack)
 //=> 2015
+```
 
-现在我们的 `.iterator()` 方法返回的是一个迭代器对象。在处理对象时，我们采用对象的方式行事。但由于我们最初是从构建函数式迭代器开始的，我们能够理解对象脚手架底层发生了什么。
+现在我们的`.iterator()`方法返回的是一个迭代器对象。在处理对象时，我们采用对象的方式行事。但由于我们最初是从构建函数式迭代器开始的，我们能够理解对象脚手架底层发生了什么。
 
 ### 可迭代对象（iterables）
 
 自 JavaScript 于 1990 年代末首次发布以来，人们就一直在编写迭代器。由于没有特定的标准方式，人们使用了各种各样的方法，而这些方法返回的东西也五花八门：具有各种接口的对象、函数式迭代器，应有尽有。
 
-因此，当 JavaScript 语言新增了编写迭代器的标准方式时，使用 `.iterator()` 这样的方法名就没有意义了：这会与现有代码产生冲突。相反，语言鼓励新代码为集合对象用于返回其迭代器的方法使用一个不同的名称。
+因此，当 JavaScript 语言新增了编写迭代器的标准方式时，使用`.iterator()`这样的方法名就没有意义了：这会与现有代码产生冲突。相反，语言鼓励新代码为集合对象用于返回其迭代器的方法使用一个不同的名称。
 
-为确保该方法不会与任何现有代码冲突，JavaScript 提供了 `symbol`（符号）。Symbol 是唯一的常量，保证不会与现有字符串冲突。Symbol 是编程中一项由来已久的技术，可追溯到 Lisp，其中的 `GENSYM` 函数生成的是……你猜对了……Symbol。
+为确保该方法不会与任何现有代码冲突，JavaScript 提供了`symbol`（符号）。Symbol 是唯一的常量，保证不会与现有字符串冲突。Symbol 是编程中一项由来已久的技术，可追溯到 Lisp，其中的`GENSYM`函数生成的是……你猜对了……Symbol。
 
-表达式 `Symbol.iterator` 求值结果是一个特殊的 symbol，它代表对象在返回迭代器对象时应使用的方法名称。
+表达式`Symbol.iterator`求值结果是一个特殊的 symbol，它代表对象在返回迭代器对象时应使用的方法名称。
 
-112 你可以在 Axel Rauschmayer 的《ECMAScript 2015 中的 Symbol》中了解更多关于 JavaScript Symbol 的内容。
-
-我们的栈实现了这一点，因此我们不将现有的迭代器方法绑定到名称 `iterator`，而是将其绑定到 `Symbol.iterator`。我们将使用 [ ] 语法来实现，该语法允许将表达式用作对象字面量的键：
+我们的栈实现了这一点，因此我们不将现有的迭代器方法绑定到名称`iterator`，而是将其绑定到`Symbol.iterator`。我们将使用`[ ]`语法来实现，该语法允许将表达式用作对象字面量的键：
 
 ```
 const Stack3 = () =>
+
   ({
+
     array: [],
+
     index: -1,
+
     push (value) {
+
       return this.array[this.index += 1] = value;
+
     },
+
     pop () {
+
       const value = this.array[this.index];
 
       this.array[this.index] = undefined;
+
       if (this.index >= 0) {
+
         this.index -= 1
+
       }
+
       return value
+
     },
+
     isEmpty () {
+
       return this.index < 0
+
     },
+
     [Symbol.iterator] () {
+
       let iterationIndex = this.index;
 
       return {
+
         next () {
+
           if (iterationIndex > this.index) {
+
             iterationIndex = this.index;
+
           }
+
           if (iterationIndex < 0) {
+
             return {done: true};
+
           }
+
           else {
+
             return {done: false, value: this.array[iterationIndex--]}
+
           }
+
         }
+
       }
+
     }
+
   });
 
 const stack = Stack3();
@@ -8334,100 +9110,141 @@ const stack = Stack3();
 
 ```
 stack.push(2000);
+
 stack.push(10);
+
 stack.push(5)
 ```
 
 ```
 const collectionSum = (collection) => {
+
   const iterator = collection[Symbol.iterator]();
 
   let eachIteration,
+
       sum = 0;
 
   while ((eachIteration = iterator.next(), !eachIteration.done)) {
+
     sum += eachIteration.value;
+
   }
+
   return sum
+
 }
 ```
 
 ```
 collectionSum(stack)
+
 //=> 2015
 ```
 
-使用 [Symbol.iterator] 而不是 `.iterator` 看起来像是平白无故地增加了一个额外的部分。我们得到了什么回报吗？确实得到了。请看 `for...of` 循环：
+使用`[Symbol.iterator]`而不是`.iterator`看起来像是平白无故地增加了一个额外的部分。我们得到了什么回报吗？确实得到了。请看`for...of`循环：
 
 ```
 const iterableSum = (iterable) => {
+
   let sum = 0;
 
   for (const num of iterable) {
+
     sum += num;
+
   }
+
   return sum
+
 }
 ```
 
 ```
 iterableSum(stack)
+
 //=> 2015
 ```
 
-`for...of` 循环可直接用于任何可迭代对象，也就是说，它适用于任何具有 `Symbol.iterator` 方法并返回对象迭代器的对象。下面是另一个链表，这个是可迭代的：
+`for...of`循环可直接用于任何可迭代对象，也就是说，它适用于任何具有`Symbol.iterator`方法并返回对象迭代器的对象。下面是另一个链表，这个是可迭代的：
 
 ```
 const EMPTY = {
+
   isEmpty: () => true
+
 };
 
 const isEmpty = (node) => node === EMPTY;
 
 const Pair1 = (first, rest = EMPTY) =>
+
   ({
+
     first,
+
     rest,
+
     isEmpty () { return false },
+
     [Symbol.iterator] () {
+
       let currentPair = this;
 
       return {
+
         next () {
+
           if (currentPair.isEmpty()) {
+
             return {done: true}
+
           }
+
           else {
+
             const value = currentPair.first;
 
             currentPair = currentPair.rest;
+
             return {done: false, value}
+
           }
+
         }
+
       }
+
     }
+
   });
 
 const list = (...elements) => {
+
   const [first, ...rest] = elements;
 
   return elements.length === 0
+
     ? EMPTY
+
     : Pair1(first, list(...rest))
+
 }
 
 const someSquares = list(1, 4, 9, 16, 25);
 
 iterableSum(someSquares)
+
 //=> 55
 ```
 
-如我们所见，我们可以像使用栈一样轻松地将 `for...of` 用于链表。还有一点：你记得展开运算符（`...`）可以在数组字面量中展开数组的元素，或在函数调用中作为参数展开。
+如我们所见，我们可以像使用栈一样轻松地将`for...of`用于链表。还有一点：你记得展开运算符（`...`）可以在数组字面量中展开数组的元素，或在函数调用中作为参数展开。
 
 现在是时候注意，我们可以展开任何可迭代对象。因此我们可以将可迭代对象的元素展开到数组字面量中：
 
 ```
 ['some squares', ...someSquares]
+
   //=> ["some squares", 1, 4, 9, 16, 25]
 ```
 
@@ -8435,9 +9252,11 @@ iterableSum(someSquares)
 
 ```
 const firstAndSecondElement = (first, second) =>
+
   ({first, second})
 
 firstAndSecondElement(...stack)
+
   //=> {"first":5,"second":10}
 ```
 
@@ -8453,14 +9272,21 @@ firstAndSecondElement(...stack)
 
 ```
 const Numbers = {
+
   [Symbol.iterator] () {
+
     let n = 0;
 
     return {
+
       next: () =>
+
         ({done: false, value: n++})
+
     }
+
   }
+
 }
 ```
 
@@ -8468,9 +9294,11 @@ const Numbers = {
 
 ```
 ['all the numbers', ...Numbers]
+
 //=> 无限循环！
 
 firstAndSecondElement(...Numbers)
+
 //=> 无限循环！
 ```
 
@@ -8478,141 +9306,193 @@ firstAndSecondElement(...Numbers)
 
 ### 有序集合
 
-我们讨论的可迭代对象代表的是*有序集合*。有序集合的语义属性之一是，每次迭代时，你都会按顺序从头开始获取其元素。例如：
+我们讨论的可迭代对象代表的是有序集合。有序集合的语义属性之一是，每次迭代时，你都会按顺序从头开始获取其元素。例如：
 
 ```
 const abc = ["a", "b", "c"];
 
 for (const i of abc) {
+
   console.log(i)
+
 }
+
 //=>
+
 //  a
+
 //  b
+
 //  c
 
 for (const i of abc) {
+
   console.log(i)
+
 }
+
 //=>
+
 //  a
+
 //  b
+
 //  c
 ```
 
-这在我们自己的集合中是这样实现的：每次调用 `[Symbol.iterator]` 时都返回一个全新的迭代器，并确保我们的迭代器从开头开始并向前遍历。可迭代对象不必代表有序集合。我们可以创建一个代表随机数的无限可迭代对象：
+这在我们自己的集合中是这样实现的：每次调用`[Symbol.iterator]`时都返回一个全新的迭代器，并确保我们的迭代器从开头开始并向前遍历。可迭代对象不必代表有序集合。我们可以创建一个代表随机数的无限可迭代对象：
 
 ```
 const RandomNumbers = {
+
     [Symbol.iterator]: () =>
+
         ({
+
             next () {
+
                 return {value: Math.random()};
+
             }
+
         })
+
 }
 
 for (const i of RandomNumbers) {
+
     console.log(i)
+
 }
+
 //=>
+
     0.494052127469331
+
     0.83545944206208
+
     0.1408337657339871
+
     ...
 
 for (const i of RandomNumbers) {
+
     console.log(i)
+
 }
+
 //=>
+
     0.7845381607767195
+
     0.4956772483419627
+
     0.20259276474826038
+
     ...
 ```
 
-无论你是反复使用同一个迭代器，还是每次都获取一个新的可迭代对象，你得到的都将是新的随机数。因此，`RandomNumbers` 不是一个有序集合。目前我们只关注有序集合。重申一下，有序集合代表一个（可能无限的）按某种顺序排列的元素集合。每次从有序集合获取迭代器时，我们都是从开头开始迭代。
+无论你是反复使用同一个迭代器，还是每次都获取一个新的可迭代对象，你得到的都将是新的随机数。因此，`RandomNumbers`不是一个有序集合。目前我们只关注有序集合。重申一下，有序集合代表一个（可能无限的）按某种顺序排列的元素集合。每次从有序集合获取迭代器时，我们都是从开头开始迭代。
 
 ### 有序集合上的操作
 
-让我们定义一些有序集合上的操作。这是 `mapWith`，它接受一个有序集合，并返回另一个有序集合，代表对原始集合的映射：^[113]
-
-^[113] 是的，我们在其他地方也使用了 `mapWith` 这个名称来处理普通集合。如果我们编写一个函数库，就需要用特殊名称、命名空间或模块来区分这两种映射函数。但为了讨论概念的目的，我们可以在两个不同的上下文中使用相同的名称。毕竟，这是同一个思想。
-
-
+让我们定义一些有序集合上的操作。这是`mapWith`，它接受一个有序集合，并返回另一个有序集合，代表对原始集合的映射：
 
 ### from
 
-遍历一个集合之后，我们是否只能使用 `for..do`，或者把元素收集到数组字面量中，又或者把元素收集到函数的参数里？不，当然不是，我们可以对这些元素做任何我们想做的事。
+遍历一个集合之后，我们是否只能使用`for..do`，或者把元素收集到数组字面量中，又或者把元素收集到函数的参数里？不，当然不是，我们可以对这些元素做任何我们想做的事。
 
-一个有用的做法是编写一个 `.from` 函数，将一个可迭代对象收集到特定的集合类型中。JavaScript 内置的 `Array` 类已经有一个这样的方法：
+一个有用的做法是编写一个`.from`函数，将一个可迭代对象收集到特定的集合类型中。JavaScript 内置的`Array`类已经有一个这样的方法：
 
 ```
 Array.from(UpTo1000) 
+
 //=> [1,81,121,361,441,841,961]
 ```
 
-我们也可以用我们自己的集合来实现同样的功能。如你所知，函数是可变对象。我们可以用 `.` 甚至 `[` 和 `]` 来给函数分配属性。如果我们把一个函数分配给一个属性，我们就创建了一个方法。
+我们也可以用我们自己的集合来实现同样的功能。如你所知，函数是可变对象。我们可以用`.`甚至`[`和`]`来给函数分配属性。如果我们把一个函数分配给一个属性，我们就创建了一个方法。
+
 让我们来这样做：
 
 ```
 Stack3.from = function (iterable) {
+
   const stack = this();
+
   for (let element of iterable) {
+
     stack.push(element);
+
   }
+
   return stack;
+
 }
 
 Pair1.from = (iterable) =>
+
   (function iterationToList (iteration) {
+
     const {done, value} = iteration.next();
+
     return done ? EMPTY : Pair1(value, iterationToList(iteration));
+
   })(iterable[Symbol.iterator]())
 ```
 
-现在我们可以"端到端"地工作了。如果我们想把一个数字链表映射到某些数字的平方的链表，我们可以这样做：
+现在我们可以“端到端”地工作了。如果我们想把一个数字链表映射到某些数字的平方的链表，我们可以这样做：
 
 ```
 const numberList = Pair1.from(untilWith((x) => x > 10, Numbers));
 
 Pair1.from(Squares)
+
 //=> {"first":0,
+
      "rest":{"first":1,
+
        "rest":{"first":4,
+
          "rest":{ ...
 ```
 
 ### summary
 
-迭代器是 JavaScript 的一项特性，它让我们能够将**如何遍历一个集合**与**如何处理集合中的元素**这两个关注点分离开来。*可迭代的*有序集合可以被遍历，或者被收集到另一个集合中。
-用迭代器来分离关注点体现了 JavaScript 的根本特性：这是一门*希望*用小型、单一职责的部件来组合功能的语言，无论这些部件是函数还是用函数构建的对象。
+迭代器是 JavaScript 的一项特性，它让我们能够将如何遍历一个集合与如何处理集合中的元素这两个关注点分离开来。可迭代的有序集合可以被遍历，或者被收集到另一个集合中。
+
+用迭代器来分离关注点体现了 JavaScript 的根本特性：这是一门希望用小型、单一职责的部件来组合功能的语言，无论这些部件是函数还是用函数构建的对象。
 
 ### Generating Iterables
 
-![一张说明迭代器与生成器之间差异的图表](img/34322ce8d9a7a9a4a308955f2d1f90b3_266_0.png)
-
 可迭代对象看起来很酷，但话说回来，当给你精心挑选的例子时，一切看起来都很惊人。它们有什么做得不好的地方呢？
 
-让我们来考虑它们的工作原理。无论 it's a simple functional iterator, or an iterable object with a `.next()` method, 迭代器是我们反复调用，直到它告诉我们已经完成的某个东西。
+让我们来考虑它们的工作原理。无论是简单的函数式迭代器，还是具有`.next()`方法的可迭代对象，迭代器是我们反复调用，直到它告诉我们已经完成的某个东西。
 
 迭代器必须自己安排状态，以便当你调用它们时，它们计算并返回下一个元素。这似乎显而易见且简单。例如，如果你想要数字，你写：
 
 ```
 const Numbers = {
+
   [Symbol.iterator]: () => {
+
     let n = 0;
 
     return {
+
       next: () =>
+
         ({done: false, value: n++})
+
     }
+
   }
+
 };
 ```
 
-这个 Numbers 可迭代对象返回一个对象，该对象更新一个可变变量 n 来逐个提供数字。这能有多难呢？
-好吧，我们把我们的迭代器写成了一个*服务器*。它等待直到收到请求，然后恰好返回一个元素。接着它等待下一个请求。不存在从迭代器*推送*数字出去的概念，只是等待直到某个消费数字的代码从迭代器中*拉取*一个数字。
+这个`Numbers`可迭代对象返回一个对象，该对象更新一个可变变量`n`来逐个提供数字。这能有多难呢？
+
+好吧，我们把我们的迭代器写成了一个服务器。它等待直到收到请求，然后恰好返回一个元素。接着它等待下一个请求。不存在从迭代器推送数字出去的概念，只是等待直到某个消费数字的代码从迭代器中拉取一个数字。
 
 当然，当我们有一些代码要生成一堆东西时，我们通常不会那样写。我们通常只是写点像这样的东西：
 
@@ -8620,59 +9500,81 @@ const Numbers = {
 let n = 0;
 
 while (true) {
+
   console.log(n++)
+
 }
 ```
 
-然后，数字就会神奇地涌出来。我们会*生成*数字。让我们把它放在迭代器代码旁边，去掉可迭代的脚手架：
+然后，数字就会神奇地涌出来。我们会生成数字。让我们把它放在迭代器代码旁边，去掉可迭代的脚手架：
 
 ```
 // 迭代
+
 let n = 0;
 
 () =>
+
   ({done: false, value: n++})
 ```
 
 ```
 // 生成
+
 let n = 0;
 
 while (true) {
+
   console.log(n++)
+
 }
 ```
-
-
 
 ### 递归迭代器
 
 迭代器维护状态，这是它们的功能。生成器也必须管理完全相同数量的状态，但有时，在生成器中管理这种状态要容易得多。其中一种情况是我们必须递归地枚举某些内容。
 
-例如，遍历一棵树。给定一个可能包含数组的数组，假设我们想生成所有"叶子"元素，即元素本身不可迭代。
+例如，遍历一棵树。给定一个可能包含数组的数组，假设我们想生成所有“叶子”元素，即元素本身不可迭代。
 
 ```javascript
 // 生成方式
+
 const isIterable = (something) =>
+
   !!something[Symbol.iterator];
 
 const generate = (iterable) => {
+
   for (let element of iterable) {
+
     if (isIterable(element)) {
+
       generate(element)
+
     }
+
     else {
+
       console.log(element)
+
     }
+
   }
+
 }
 
 generate([1, [2, [3, 4], 5]])
+
 //=>
+
 1
+
 2
+
 3
+
 4
+
 5
 ```
 
@@ -8680,47 +9582,73 @@ generate([1, [2, [3, 4], 5]])
 
 ```javascript
 // 迭代方式
+
 const isIterable = (something) =>
+
   !!something[Symbol.iterator];
 
 const treeIterator = (iterable) => {
+
   const iterators = [ iterable[Symbol.iterator]() ];
 
   return () => {
+
     while (!!iterators[0]) {
+
       const iterationResult = iterators[0].next();
 
       if (iterationResult.done) {
+
         iterators.shift();
+
       }
+
       else if (isIterable(iterationResult.value)) {
+
         iterators.unshift(iterationResult.value[Symbol.iterator]());
+
       }
+
       else {
+
         return iterationResult.value;
+
       }
+
     }
+
     return;
+
   }
+
 }
 
 const i = treeIterator([1, [2, [3, 4], 5]]);
+
 let n;
 
 while (n = i()) {
+
   console.log(n)
+
 }
+
 //=>
+
 1
+
 2
+
 3
+
 4
+
 5
 ```
 
-如果我们剥离掉 `isIterable`，忽略迭代版本使用 `[Symbol.iterator]` 和 `.next` 的方式，剩下的事实是生成版本递归调用自身，而迭代版本维护一个显式栈。本质上，生成和迭代实现都有栈，但生成版本的栈是隐式的，而迭代版本的栈是显式的。
+如果我们剥离掉`isIterable`，忽略迭代版本使用`[Symbol.iterator]`和`.next`的方式，剩下的事实是生成版本递归调用自身，而迭代版本维护一个显式栈。本质上，生成和迭代实现都有栈，但生成版本的栈是隐式的，而迭代版本的栈是显式的。
 
-一个不那么友善的说法是，迭代版本在做一些我们编程语言内置功能的"手工打造"：我们在重新发明使用栈来管理递归，因为将我们的代码写成响应函数调用，使得我们将一个简单的递归算法里外颠倒了。
+一个不那么友善的说法是，迭代版本在做一些我们编程语言内置功能的“手工打造”：我们在重新发明使用栈来管理递归，因为将我们的代码写成响应函数调用，使得我们将一个简单的递归算法里外颠倒了。
 
 ### 状态机
 
@@ -8734,7 +9662,9 @@ while (n = i()) {
 
 ```javascript
 // 生成方式
+
 const fibonacci = () => {
+
   let a, b;
 
   console.log(a = 0);
@@ -8742,87 +9672,134 @@ const fibonacci = () => {
   console.log(b = 1);
 
   while (true) {
+
     [a, b] = [b, a + b];
+
     console.log(b);
+
   }
+
 }
 
 fibonacci()
+
 //=>
+
 0
+
 1
+
 1
+
 2
+
 3
+
 5
+
 8
+
 13
+
 21
+
 34
+
 55
+
 89
+
 144
+
 ...
 ```
 
-这里要注意的是，我们的 `fibonacci` 生成器有三个状态：生成 0，生成 1，以及生成之后的所有内容。这对于迭代器来说不是一个好的选择，因为迭代器只有一个函数入口点，因此我们必须显式地表示这三个状态，也许可以使用[状态模式](https://en.wikipedia.org/wiki/State_pattern)¹¹⁴：
+这里要注意的是，我们的`fibonacci`生成器有三个状态：生成 0，生成 1，以及生成之后的所有内容。这对于迭代器来说不是一个好的选择，因为迭代器只有一个函数入口点，因此我们必须显式地表示这三个状态，也许可以使用状态模式：
 
 我们会保持简单：
 
 ```javascript
 // 迭代方式
+
 let a, b, state = 0;
 
 const fibonacci = () => {
+
   switch (state) {
+
     case 0:
+
       state = 1;
+
       return a = 0;
+
     case 1:
+
       state = 2;
+
       return b = 1;
+
     case 2:
+
       [a, b] = [b, a + b];
+
       return b
+
   }
+
 };
 
 while (true) {
+
   console.log(fibonacci());
+
 }
+
 //=>
+
 0
+
 1
+
 1
+
 2
+
 3
+
 5
+
 8
+
 13
+
 21
+
 34
+
 55
+
 89
+
 144
+
 ...
 ```
 
-¹¹⁴ https://en.wikipedia.org/wiki/State_pattern
-
-再次强调，这并不特别糟糕，但就像递归示例一样，我们在显式地"手工打造"自然的线性状态。在生成器中，我们写"做这个，然后做这个，然后做这个。"在迭代器中，我们必须把这些包装起来，并显式地跟踪我们进行到了哪一步。
+再次强调，这并不特别糟糕，但就像递归示例一样，我们在显式地“手工打造”自然的线性状态。在生成器中，我们写“做这个，然后做这个，然后做这个。”在迭代器中，我们必须把这些包装起来，并显式地跟踪我们进行到了哪一步。
 
 所以我们看到了同样的事情：生成版本有状态，但它是 JavaScript 线性控制流中隐含的。而迭代版本必须使该状态显式化。
 
 ### JavaScript 的生成器
 
-如果我们有时能写一个被调用的 `.next()` 方法作为迭代器，有时能写出一个生成器，那将会非常好。鉴于本章的标题，JavaScript 使这成为可能并不令人惊讶。
+如果我们有时能写一个被调用的`.next()`方法作为迭代器，有时能写出一个生成器，那将会非常好。鉴于本章的标题，JavaScript 使这成为可能并不令人惊讶。
 
-我们可以编写一个迭代器，但使用生成风格的编程。以生成风格编写的迭代器称为*生成器*。要编写生成器，我们编写一个函数，但要做两个改动：
+我们可以编写一个迭代器，但使用生成风格的编程。以生成风格编写的迭代器称为生成器。要编写生成器，我们编写一个函数，但要做两个改动：
 
-1. 我们使用 `function *` 语法声明函数。不是箭头函数。也不是普通的 `function`。
-2. 我们不 `return` 值或将其输出到 `console.log`。我们使用 `yield` 关键字来"产生"值。
+1. 我们使用`function *`语法声明函数。不是箭头函数。也不是普通的`function`。
+2. 我们不`return`值或将其输出到`console.log`。我们使用`yield`关键字来“产生”值。
 
-当我们调用该函数时，会得到一个迭代器对象。让我们从退化示例 `empty` 迭代器开始：¹¹⁵
+当我们调用该函数时，会得到一个迭代器对象。让我们从退化示例`empty`迭代器开始：
 
 ```javascript
 function * empty () {};
@@ -8830,38 +9807,47 @@ function * empty () {};
 
 ```javascript
 empty().next()
+
 //=>
+
   {"done":true}
 ```
 
-当我们调用 `empty` 时，会得到一个没有元素的迭代器。这是合理的，因为 `empty` 从不产生任何东西。我们调用它的 `.next()` 方法，但它立即就完成了。
-生成函数可以接受参数。让我们用这个来说明 `yield`：
+当我们调用`empty`时，会得到一个没有元素的迭代器。这是合理的，因为`empty`从不产生任何东西。我们调用它的`.next()`方法，但它立即就完成了。
 
-> ¹¹⁵ 我们写了一个*生成器声明*。我们也可以写 `const empty = function * () {}` 将匿名生成器绑定到 `empty` 关键字，但这里我们不需要这样做。
+生成函数可以接受参数。让我们用这个来说明`yield`：
 
 ```javascript
 function * only (something) {
+
   yield something;
+
 };
 ```
 
 ```javascript
 only("you").next()
+
   //=>
+
     {"done": false, value: "you"}
 ```
 
-调用 `only("you")` 返回一个我们可以用 `.next()` 调用的迭代器，它产生 "you"。多次调用 only 会每次给我们新的迭代器：
+调用`only("you")`返回一个我们可以用`.next()`调用的迭代器，它产生 "you"。多次调用`only`会每次给我们新的迭代器：
 
 ```javascript
 only("you").next()
+
   //=>
+
     {"done": false, value: "you"}
 ```
 
 ```javascript
 only("the lonely").next()
+
   //=>
+
     {"done": false, value: "the lonely"}
 ```
 
@@ -8873,17 +9859,21 @@ const sixteen = only("sixteen");
 
 ```javascript
 sixteen.next()
+
   //=>
+
     {"done": false, value: "sixteen"}
 ```
 
 ```javascript
 sixteen.next()
+
   //=>
+
     {"done": true}
 ```
 
-它产生 `something` 的值，然后就完成了。
+它产生`something`的值，然后就完成了。
 
 ### 生成器是协程
 
@@ -8891,27 +9881,37 @@ sixteen.next()
 
 ```javascript
 const oneTwoThree = function * () {
+
     yield 1;
+
     yield 2;
+
     yield 3;
+
 };
 ```
 
 ```javascript
 oneTwoThree().next()
+
 //=>
+
     {"done":false, value: 1}
 ```
 
 ```javascript
 oneTwoThree().next()
+
 //=>
+
     {"done":false, value: 1}
 ```
 
 ```javascript
 oneTwoThree().next()
+
 //=>
+
     {"done":false, value: 1}
 ```
 
@@ -8921,150 +9921,202 @@ const iterator = oneTwoThree();
 
 ```javascript
 iterator.next()
+
 //=>
+
     {"done":false, value: 1}
 ```
 
 ```javascript
 iterator.next()
+
 //=>
+
     {"done":false, value: 2}
 ```
 
 ```javascript
 iterator.next()
+
 //=>
+
     {"done":false, value: 3}
 ```
 
 ```javascript
 iterator.next()
+
 //=>
+
     {"done":true}
 ```
 
 这是生成器行为与普通函数截然不同的地方。语义上发生了什么？
 
-1. 我们调用 `oneTwoThree()` 并得到一个迭代器。
-2. 迭代器处于初生或"新生"状态。
-3. 当我们调用 `iterator.next()` 时，生成器的主体开始被求值。
-4. 生成器的主体运行直到它返回、结束，或遇到一个 `yield` 语句，这里是 `yield 1;`。
-   - 迭代器*挂起其执行*。
-   - 迭代器将 `1` 包装在 `{done: false, value: 1}` 中，并从对 `.next()` 的调用中返回。
-   - 程序的其余部分继续执行，直到它再次调用 `iterator.next()`。
-   - 迭代器从产生上一个值的位置*恢复执行*。
-5. 生成器的主体运行直到它返回、结束，或遇到下一个 `yield` 语句，这里是 `yield 2;`。
-   - 迭代器*挂起其执行*。
-   - 迭代器将 `2` 包装在 `{done: false, value: 2}` 中，并从对 `.next()` 的调用中返回。
-   - 程序的其余部分继续执行，直到它再次调用 `iterator.next()`。
-   - 迭代器从产生上一个值的位置*恢复执行*。
-6. 生成器的主体运行直到它返回、结束，或遇到下一个 `yield` 语句，这里是 `yield 3;`。
-   - 迭代器*挂起其执行*。
-   - 迭代器将 `3` 包装在 `{done: false, value: 3}` 中，并从对 `.next()` 的调用中返回。
-   - 程序的其余部分继续执行，直到它再次调用 `iterator.next()`。
-   - 迭代器从产生上一个值的位置*恢复执行*。
-7. 生成器的主体运行直到它返回、结束，或遇到下一个 `yield` 语句。没有更多的代码行了，所以它结束了。
-   - 迭代器从对 `.next()` 的调用返回 `{done: true}`，并且从此以后对该迭代器的任何 `.next()` 方法的调用都将返回 `{done: true}`。
+1. 我们调用`oneTwoThree()`并得到一个迭代器。
+2. 迭代器处于初生或“新生”状态。
+3. 当我们调用`iterator.next()`时，生成器的主体开始被求值。
+4. 生成器的主体运行直到它返回、结束，或遇到一个`yield`语句，这里是`yield 1;`。
+   - 迭代器挂起其执行。
+   - 迭代器将`1`包装在`{done: false, value: 1}`中，并从对`.next()`的调用中返回。
+   - 程序的其余部分继续执行，直到它再次调用`iterator.next()`。
+   - 迭代器从产生上一个值的位置恢复执行。
+5. 生成器的主体运行直到它返回、结束，或遇到下一个`yield`语句，这里是`yield 2;`。
+   - 迭代器挂起其执行。
+   - 迭代器将`2`包装在`{done: false, value: 2}`中，并从对`.next()`的调用中返回。
+   - 程序的其余部分继续执行，直到它再次调用`iterator.next()`。
+   - 迭代器从产生上一个值的位置恢复执行。
+6. 生成器的主体运行直到它返回、结束，或遇到下一个`yield`语句，这里是`yield 3;`。
+   - 迭代器挂起其执行。
+   - 迭代器将`3`包装在`{done: false, value: 3}`中，并从对`.next()`的调用中返回。
+   - 程序的其余部分继续执行，直到它再次调用`iterator.next()`。
+   - 迭代器从产生上一个值的位置恢复执行。
+7. 生成器的主体运行直到它返回、结束，或遇到下一个`yield`语句。没有更多的代码行了，所以它结束了。
+   - 迭代器从对`.next()`的调用返回`{done: true}`，并且从此以后对该迭代器的任何`.next()`方法的调用都将返回`{done: true}`。
 
-这种行为并非 JavaScript 独有，在其他语言中生成器被称为[协程](https://en.wikipedia.org/wiki/Coroutine)：
+这种行为并非 JavaScript 独有，在其他语言中生成器被称为协程：
 
 > 协程是计算机程序组件，它通过允许多个挂起和在特定位置恢复执行的入口点，概括了用于非抢占式多任务处理的子程序。协程非常适合实现更熟悉的程序组件，如协作任务、异常、事件循环、迭代器、无限列表和管道。
 
-我们不是认为存在一个执行上下文，而是可以想象存在两个执行上下文。对于迭代器，我们可以将它们称为*生产者*和*消费者*。迭代器是生产者，而遍历它的代码是消费者。当消费者调用 `.next()` 时，它会"挂起"，然后生产者开始运行。当生产者 `yield` 一个值时，生产者挂起，消费者开始运行，并从调用 `.next()` 的结果中获取该值。
+我们不是认为存在一个执行上下文，而是可以想象存在两个执行上下文。对于迭代器，我们可以将它们称为生产者和消费者。迭代器是生产者，而遍历它的代码是消费者。当消费者调用`.next()`时，它会“挂起”，然后生产者开始运行。当生产者`yield`一个值时，生产者挂起，消费者开始运行，并从调用`.next()`的结果中获取该值。
 
-当然，生成器不必完全按照协程来实现。例如，一个"转译器"可能会将 `oneTwoThree` 实现为一个状态机，有点像这样（生成器还有更多内容，但我们将稍后看到）：
-
-
+当然，生成器不必完全按照协程来实现。例如，一个“转译器”可能会将`oneTwoThree`实现为一个状态机，有点像这样（生成器还有更多内容，但我们将稍后看到）：
 
 ```javascript
 const oneTwoThree = function () {
+
     let state = 'newborn';
 
     return {
+
         next () {
+
             switch (state) {
+
                 case 'newborn':
+
                     state = 1;
+
                     return {value: 1};
+
                 case 1:
+
                     state = 2;
+
                     return {value: 2};
+
                 case 2:
+
                     state = 3;
+
                     return {value: 3};
+
                 case 3:
+
                     return {done: true};
+
             }
+
         }
+
     };
+
 };
 ```
 
-但无论 JavaScript 如何实现它，我们的心智模型是：生成器函数返回一个迭代器，当我们调用 `.next()` 时，它会运行直到返回、结束或产出。如果它产出，它会暂停自身的执行，然后消费代码恢复执行，直到再次调用 `.next()`，此时迭代器从它产出的地方恢复自身的执行。
+但无论 JavaScript 如何实现它，我们的心智模型是：生成器函数返回一个迭代器，当我们调用`.next()`时，它会运行直到返回、结束或产出。如果它产出，它会暂停自身的执行，然后消费代码恢复执行，直到再次调用`.next()`，此时迭代器从它产出的地方恢复自身的执行。
 
 ### 生成器和可迭代对象
 
-我们的生成器函数 `oneTwoThree` 不是迭代器。它是一个在调用时返回迭代器的函数。我们编写函数来 `yield` 值，而不是 `return` 单个值，JavaScript 负责将其转换为一个带有可调用 `.next()` 函数的对象。
+我们的生成器函数`oneTwoThree`不是迭代器。它是一个在调用时返回迭代器的函数。我们编写函数来`yield`值，而不是`return`单个值，JavaScript 负责将其转换为一个带有可调用`.next()`函数的对象。
 
-如果我们多次调用生成器函数，我们会得到新的迭代器。如上所述，我们调用了 `oneTwoThree` 三次，每次都得到了一个从 1 开始计数到 3 的迭代器。回想我们编写有序集合的方式，我们可以创建一个使用生成器函数的集合：
+如果我们多次调用生成器函数，我们会得到新的迭代器。如上所述，我们调用了`oneTwoThree`三次，每次都得到了一个从 1 开始计数到 3 的迭代器。回想我们编写有序集合的方式，我们可以创建一个使用生成器函数的集合：
 
 ```javascript
 const ThreeNumbers = {
+
   [Symbol.iterator]: function * () {
+
     yield 1;
+
     yield 2;
+
     yield 3;
+
   }
+
 }
 
 for (const i of ThreeNumbers) {
+
   console.log(i);
+
 }
+
 //=>
+
   1
+
   2
+
   3
 
 [...ThreeNumbers]
+
   //=>
+
     [1,2,3]
 
 const iterator = ThreeNumbers[Symbol.iterator]();
 
 iterator.next()
+
   //=>
+
     {"done":false, value: 1}
 
 iterator.next()
+
   //=>
+
     {"done":false, value: 2}
 
 iterator.next()
+
   //=>
+
     {"done":false, value: 3}
 
 iterator.next()
+
   //=>
+
     {"done":true}
 ```
 
-现在我们可以在 `for...of` 循环中使用它，将其展开到数组字面量中，或者展开到函数调用中，因为我们编写了一个使用 *生成器* 从其 `[Symbol.iterator]` 方法返回迭代器的 *可迭代对象*。
+现在我们可以在`for...of`循环中使用它，将其展开到数组字面量中，或者展开到函数调用中，因为我们编写了一个使用生成器从其`[Symbol.iterator]`方法返回迭代器的可迭代对象。
 
 这种模式是受到鼓励的，以至于 JavaScript 为对象编写生成器方法提供了简洁的语法：
 
 ```javascript
 const ThreeNumbers = {
+
   *[Symbol.iterator]() {
+
     yield 1;
+
     yield 2;
+
     yield 3;
+
   }
+
 }
 ```
 
-这个对象声明了一个使其可迭代的 `[Symbol.iterator]` 函数。因为它被声明为 `*[Symbol.iterator]`，它是一个 *生成器* 而不是 *迭代器*。
+这个对象声明了一个使其可迭代的`[Symbol.iterator]`函数。因为它被声明为`*[Symbol.iterator]`，它是一个生成器而不是迭代器。
 
-所以总结一下，*ThreeNumbers* 是一个我们通过为 `[Symbol.iterator]` 编写 *生成器* 方法使其 *可迭代* 的对象。
+所以总结一下，`ThreeNumbers`是一个我们通过为`[Symbol.iterator]`编写生成器方法使其可迭代的对象。
 
 ### 更多生成器
 
@@ -9072,75 +10124,131 @@ const ThreeNumbers = {
 
 ```javascript
 const Numbers = {
+
   *[Symbol.iterator]() {
+
     let i = 0;
 
     while (true) {
+
       yield i++;
+
     }
+
   }
+
 };
 
 for (const i of Numbers) {
+
   console.log(i);
+
 }
+
 //=>
+
 0
+
 1
+
 2
+
 3
+
 4
+
 5
+
 6
+
 7
+
 8
+
 9
+
 10
+
 …
 ```
 
-我们的 `OneTwoThree` 示例使用了隐式状态来按顺序输出数字。回想一下我们使用显式状态编写的斐波那契数列：
+我们的`OneTwoThree`示例使用了隐式状态来按顺序输出数字。回想一下我们使用显式状态编写的斐波那契数列：
 
 ```javascript
 const Fibonacci = {
+
   [Symbol.iterator]: () => {
+
     let a = 0, b = 1, state = 0;
 
     return {
+
       next: () => {
+
         switch (state) {
+
           case 0:
+
             state = 1;
+
             return {value: a};
+
           case 1:
+
             state = 2;
+
             return {value: b};
+
           case 2:
+
             [a, b] = [b, a + b];
+
             return {value: b};
+
         }
+
       }
+
     }
+
   }
+
 };
 
 for (let n of Fibonacci) {
+
   console.log(n)
+
 }
+
 //=>
+
 0
+
 1
+
 1
+
 2
+
 3
+
 5
+
 8
+
 13
+
 21
+
 34
+
 55
+
 89
+
 144
+
 ...
 ```
 
@@ -9148,7 +10256,9 @@ for (let n of Fibonacci) {
 
 ```javascript
 const Fibonacci = {
+
     *[Symbol.iterator]() {
+
         let a, b;
 
         yield a = 0;
@@ -9156,29 +10266,51 @@ const Fibonacci = {
         yield b = 1;
 
         while (true) {
+
             [a, b] = [b, a + b]
+
             yield b;
+
         }
+
     }
+
 }
 
 for (const i of Fibonacci) {
+
     console.log(i);
+
 }
+
 //=>
+
 0
+
 1
+
 1
+
 2
+
 3
+
 5
+
 8
+
 13
+
 21
+
 34
+
 55
+
 89
+
 144
+
 …
 ```
 
@@ -9188,6 +10320,7 @@ for (const i of Fibonacci) {
 
 ```javascript
 function * fibonacci () {
+
   let a, b;
 
   yield a = 0;
@@ -9195,28 +10328,49 @@ function * fibonacci () {
   yield b = 1;
 
   while (true) {
+
     [a, b] = [b, a + b]
+
     yield b;
+
   }
+
 }
 
 for (const i of fibonacci()) {
+
   console.log(i);
+
 }
+
 //=>
+
 0
+
 1
+
 1
+
 2
+
 3
+
 5
+
 8
+
 13
+
 21
+
 34
+
 55
+
 89
+
 144
+
 …
 ```
 
@@ -9226,65 +10380,105 @@ for (const i of fibonacci()) {
 
 ```javascript
 const isIterable = (something) =>
+
   !!something[Symbol.iterator];
 
 const TreeIterable = (iterable) =>
+
   ({
+
     [Symbol.iterator]: function * () {
+
       for (const e of iterable) {
+
         if (isIterable(e)) {
+
           for (const ee of TreeIterable(e)) {
+
             yield ee;
+
           }
+
         }
+
         else {
+
           yield e;
+
         }
+
       }
+
     }
+
   })
 
 for (const i of TreeIterable([1, [2, [3, 4], 5]])) {
+
   console.log(i);
+
 }
+
 //=>
+
   1
+
   2
+
   3
+
   4
+
   5
 ```
 
-我们在这里采用了完整的可迭代对象方案，一个 `TreeIterable(iterable)` 返回一个将 `iterable` 视为树的可迭代对象。它工作正常，但正如我们刚刚看到的，一个返回可迭代对象的函数通常可以更简单地写成生成器，而不是返回可迭代对象的函数：¹¹⁷
-
-> ¹¹⁷这可能**不**适用于各种转译器和其他不完整的 ECMAScript 2015 实现。请查阅文档。例如，你必须在 BabelJS 中启用 "high-reslatency" 模式。该模式默认关闭，以便为不需要使用此类功能的代码库提供尽可能高的性能。
+我们在这里采用了完整的可迭代对象方案，一个`TreeIterable(iterable)`返回一个将`iterable`视为树的可迭代对象。它工作正常，但正如我们刚刚看到的，一个返回可迭代对象的函数通常可以更简单地写成生成器，而不是返回可迭代对象的函数：
 
 ```javascript
 function * tree (iterable) {
+
   for (const e of iterable) {
+
     if (isIterable(e)) {
+
       for (const ee of tree(e)) {
+
         yield ee;
+
       }
+
     }
+
     else {
+
       yield e;
+
     }
+
   }
+
 };
 
 for (const i of tree([1, [2, [3, 4], 5]])) {
+
   console.log(i);
+
 }
+
 //=>
+
   1
+
   2
+
   3
+
   4
+
   5
 ```
 
-我们以简单直接的方式利用 `for...of` 循环：对于每个元素 `e`，如果它是可迭代的，就将其视为一棵树并遍历它，产出它的每个元素。如果 `e` 不是可迭代的，就产出 `e`。
+我们以简单直接的方式利用`for...of`循环：对于每个元素`e`，如果它是可迭代的，就将其视为一棵树并遍历它，产出它的每个元素。如果`e`不是可迭代的，就产出`e`。
 
 JavaScript 使用自己的执行栈为我们处理递归。这显然比试图维护自己的栈并记住我们是在使用 shift/unshift 还是 push/pop 要简单得多。
 
@@ -9292,59 +10486,83 @@ JavaScript 使用自己的执行栈为我们处理递归。这显然比试图维
 
 ```javascript
 for (const ee of tree(e)) {
+
   yield ee;
+
 }
 ```
 
-这三行本质上说的是，“按顺序产出 `TreeIterable(e)` 的所有元素。” 当我们拥有由其他集合组成的复合集合时，这很常见。
+这三行本质上说的是，“按顺序产出`TreeIterable(e)`的所有元素。”当我们拥有由其他集合组成的复合集合时，这很常见。
 
 考虑对可迭代对象的这个操作：
 
-由 Pot 提供：集合
-
-262
-
 ```javascript
 function * append (...iterables) {
+
   for (const iterable of iterables) {
+
     for (const element of iterable) {
+
       yield element;
+
     }
+
   }
+
 }
 
 const lyrics = append(["a", "b", "c"], ["one", "two", "three"], ["do", "re", "me"]);
 
 for (const word of lyrics) {
+
   console.log(word);
+
 }
+
   //=>
+
     a
+
     b
+
     c
+
     one
+
     two
+
     three
+
     do
+
     re
+
     me
 ```
 
-`append` 逐个元素地遍历可迭代对象的集合。像数组这样的东西可以很容易地连接起来，但 `append` 是惰性遍历的，所以不需要构造中间结果。其中隐藏着同样的三行习语，用于产出可迭代对象的每个元素。这有一个简写，我们可以使用 `yield *` 来产出可迭代对象的所有元素：
+`append`逐个元素地遍历可迭代对象的集合。像数组这样的东西可以很容易地连接起来，但`append`是惰性遍历的，所以不需要构造中间结果。其中隐藏着同样的三行习语，用于产出可迭代对象的每个元素。这有一个简写，我们可以使用`yield *`来产出可迭代对象的所有元素：
 
 ```javascript
 function * append (...iterables) {
+
   for (const iterable of iterables) {
+
     yield * iterable;
+
   }
+
 }
 
 const lyrics = append(["a", "b", "c"], ["one", "two", "three"], ["do", "re", "me"]);
 
 for (const word of lyrics) {
+
   console.log(word);
+
 }
+
   //=>
+
     a
 ```
 
@@ -9354,18 +10572,27 @@ for (const word of lyrics) {
 
 ```javascript
 const mapWith = (fn, iterable) =>
+
   ({
+
     [Symbol.iterator]: () => {
+
       const iterator = iterable[Symbol.iterator]();
 
       return {
+
         next: () => {
+
           const {done, value} = iterator.next();
 
           return ({done, value: done ? undefined : fn(value)});
+
         }
+
       }
+
     }
+
   });
 ```
 
@@ -9373,245 +10600,375 @@ const mapWith = (fn, iterable) =>
 
 ```javascript
 function * mapWith (fn, iterable) {
+
   for (const element of iterable) {
+
     yield fn(element);
+
   }
+
 }
 ```
 
-无需显式构造一个具有 `[Symbol.iterator]` 方法的对象。无需返回一个带有 `.next()` 方法的对象。无需纠结于 `{done}` 或 `{value}`，只需直接 `yield` 值即可。
+无需显式构造一个具有`[Symbol.iterator]`方法的对象。无需返回一个带有`.next()`方法的对象。无需纠结于`{done}`或`{value}`，只需直接`yield`值即可。
 
-我们可以对 `filterWith` 和 `untilWith` 等其他操作做同样的事情。下面是将我们的可迭代方法重写为生成器后的代码：
+我们可以对`filterWith`和`untilWith`等其他操作做同样的事情。下面是将我们的可迭代方法重写为生成器后的代码：
 
 ```javascript
 function * mapWith(fn, iterable) {
+
   for (const element of iterable) {
+
     yield fn(element);
+
   }
+
 }
 ```
 
 ```javascript
 function * filterWith (fn, iterable) {
+
   for (const element of iterable) {
+
     if (!!fn(element)) yield element;
+
   }
+
 }
 ```
 
 ```javascript
 function * untilWith (fn, iterable) {
+
   for (const element of iterable) {
+
     if (fn(element)) break;
+
     yield fn(element);
+
   }
+
 }
 ```
 
-`first` 直接作用于迭代器，保持不变，但 `rest` 可以重写为生成器：
+`first`直接作用于迭代器，保持不变，但`rest`可以重写为生成器：
 
 ```javascript
 const first = (iterable) =>
+
   iterable[Symbol.iterator]().next().value;
 
 function * rest (iterable) {
+
   const iterator = iterable[Symbol.iterator]();
 
   iterator.next();
+
   yield * iterator;
+
 }
 ```
 
-`yield*` 在编写操作或创建可迭代对象的生成器函数时非常方便。
+`yield*`在编写操作或创建可迭代对象的生成器函数时非常方便。
 
 ### 小结
 
-生成器是定义时使用 `function *` 并使用 `yield`（或 `yield *`）来生成值的函数。使用生成器代替编写具有 `.next()` 方法的迭代器对象，使我们能够编写更简洁的代码，尤其适用于递归迭代或状态模式等场景。而且我们不需要担心将值包装在具有 `.done` 和 `.value` 属性的对象中。这对于创建可迭代对象尤其有用。
+生成器是定义时使用`function *`并使用`yield`（或`yield *`）来生成值的函数。使用生成器代替编写具有`.next()`方法的迭代器对象，使我们能够编写更简洁的代码，尤其适用于递归迭代或状态模式等场景。而且我们不需要担心将值包装在具有`.done`和`.value`属性的对象中。这对于创建可迭代对象尤其有用。
 
 ### 惰性集合与及早集合
 
 对可迭代对象的操作非常有价值，但让我们重申一下我们为什么在意：在 JavaScript 中，我们构建单一职责的对象和单一职责的函数，并将它们组合在一起，以构建功能更完善的对象和算法。
 
-> 将可迭代对象与 `mapIterable` 方法组合，将"如何映射"的职责与链表和栈之间的繁琐差异分离开来
+> 将可迭代对象与`mapIterable`方法组合，将“如何映射”的职责与链表和栈之间的繁琐差异分离开来
 
-在旧式的面向对象编程中，我们构建的是"胖"对象。每个集合都知道如何映射自己（`.map`）、如何折叠自己（`.reduce`）、如何过滤自己（`.filter`）以及如何在其中查找一个元素（`.find`）。如果我们想把集合扁平化为数组，我们会为每种集合类型编写一个 `.toArray` 方法。
+在旧式的面向对象编程中，我们构建的是“胖”对象。每个集合都知道如何映射自己（`.map`）、如何折叠自己（`.reduce`）、如何过滤自己（`.filter`）以及如何在其中查找一个元素（`.find`）。如果我们想把集合扁平化为数组，我们会为每种集合类型编写一个`.toArray`方法。
 
-随着时间的推移，这种非正式的集合"接口"通过累积不断膨胀。有些方法只添加到少数几个集合中，有些则添加到所有集合中。但我们的对象变得越来越臃肿。我们告诉自己，嗯，集合应该知道如何映射自己。
+随着时间的推移，这种非正式的集合“接口”通过累积不断膨胀。有些方法只添加到少数几个集合中，有些则添加到所有集合中。但我们的对象变得越来越臃肿。我们告诉自己，嗯，集合应该知道如何映射自己。
 
-但最终，我们在创建的每个 `.map` 方法、每个 `.reduce` 方法、每个 `.filter` 方法和每个 `.find` 方法中重复创建相同的代码片段。每个方法都有自己的变体，但整体形式是相同的。这表明我们应该在更高的抽象层次上工作，而使用可迭代对象就是那个更高的抽象层次。
+但最终，我们在创建的每个`.map`方法、每个`.reduce`方法、每个`.filter`方法和每个`.find`方法中重复创建相同的代码片段。每个方法都有自己的变体，但整体形式是相同的。这表明我们应该在更高的抽象层次上工作，而使用可迭代对象就是那个更高的抽象层次。
 
-这种"胖对象"风格源于一种误解：当我们说一个集合应该知道如何对自己执行映射时，我们并不需要集合处理每一个细节。这就像说当我们向银行柜员要现金时，他们亲自印刷每一张钞票。
+这种“胖对象”风格源于一种误解：当我们说一个集合应该知道如何对自己执行映射时，我们并不需要集合处理每一个细节。这就像说当我们向银行柜员要现金时，他们亲自印刷每一张钞票。
 
 ### 用迭代实现方法
 
-面向对象的集合确实应该有映射、归约、过滤和查找的方法。而且它们应该知道如何实现预期的结果，但应该通过尽可能多地将工作委托给 `mapWith` 等操作来实现。
+面向对象的集合确实应该有映射、归约、过滤和查找的方法。而且它们应该知道如何实现预期的结果，但应该通过尽可能多地将工作委托给`mapWith`等操作来实现。
 
-将可迭代对象与 `mapIterable` 方法组合，将"如何映射"的职责与链表和栈之间的繁琐差异分离开来。而且如果我们想创建便捷方法，可以复用通用的部分。
+将可迭代对象与`mapIterable`方法组合，将“如何映射”的职责与链表和栈之间的繁琐差异分离开来。而且如果我们想创建便捷方法，可以复用通用的部分。
 
-下面是 `LazyCollection`，一个可用于任何有序且可迭代的集合的混入（mixin）：
+下面是`LazyCollection`，一个可用于任何有序且可迭代的集合的混入（mixin）：
 
 ```javascript
 const extend = function (consumer, ...providers) {
+
   for (let i = 0; i < providers.length; ++i) {
+
     const provider = providers[i];
+
     for (let key in provider) {
+
       if (provider.hasOwnProperty(key)) {
+
         consumer[key] = provider[key]
+
       }
+
     }
+
   }
+
   return consumer
+
 };
 
 const LazyCollection = {
+
   map(fn) {
+
     return Object.assign({
+
       [Symbol.iterator]: () => {
+
         const iterator = this[Symbol.iterator]();
 
         return {
+
           next: () => {
+
             const {
+
               done, value
+
             } = iterator.next();
 
             return ({
+
               done, value: done ? undefined : fn(value)
+
             });
+
           }
+
         }
+
       }
+
     }, LazyCollection);
+
   },
 
   reduce(fn, seed) {
+
     const iterator = this[Symbol.iterator]();
+
     let iterationResult,
+
     accumulator = seed;
 
     while ((iterationResult = iterator.next(), !iterationResult.done)) {
+
       accumulator = fn(accumulator, iterationResult.value);
+
     }
+
     return accumulator;
+
   },
 
   filter(fn) {
+
     return Object.assign({
+
       [Symbol.iterator]: () => {
+
         const iterator = this[Symbol.iterator]();
 
         return {
+
           next: () => {
+
             do {
+
               const {
+
                 done, value
+
               } = iterator.next();
+
             } while (!done && !fn(value));
+
             return {
+
               done, value
+
             };
+
           }
+
         }
+
       }
+
     }, LazyCollection)
+
   },
 
   find(fn) {
+
     return Object.assign({
+
       [Symbol.iterator]: () => {
+
         const iterator = this[Symbol.iterator]();
 
         return {
+
           next: () => {
+
             let {
+
               done, value
+
             } = iterator.next();
 
             done = done || fn(value);
 
             return ({
+
               done, value: done ? undefined : value
+
             });
+
           }
+
         }
+
       }
+
     }, LazyCollection)
+
   },
 
   until(fn) {
+
     return Object.assign({
+
       [Symbol.iterator]: () => {
+
         const iterator = this[Symbol.iterator]();
 
         return {
+
           next: () => {
+
             let {
+
               done, value
+
             } = iterator.next();
 
             done = done || fn(value);
 
             return ({
+
               done, value: done ? undefined : value
+
             });
+
           }
+
         }
+
       }
+
     }, LazyCollection)
+
   },
 
   first() {
+
     return this[Symbol.iterator]().next().value;
+
   },
 
   rest() {
+
     return Object.assign({
+
       [Symbol.iterator]: () => {
+
         const iterator = this[Symbol.iterator]();
 
         iterator.next();
+
         return iterator;
+
       }
+
     }, LazyCollection);
+
   },
 
   take(numberToTake) {
+
     return Object.assign({
+
       [Symbol.iterator]: () => {
+
         const iterator = this[Symbol.iterator]();
+
         let remainingElements = numberToTake;
 
         return {
+
           next: () => {
+
             let {
+
               done, value
+
             } = iterator.next();
 
             done = done || remainingElements-- <= 0;
 
             return ({
+
               done, value: done ? undefined : value
+
             });
+
           }
+
         }
+
       }
+
     }, LazyCollection);
+
   }
+
 }
 ```
 
-要使用 `LazyCollection`，我们将其混入任何可迭代对象。为了简单起见，我们将展示如何将其混入到 `Numbers` 和 `Pair` 中。但它也可以混入到原型（又称"类"）、特质或其他面向对象构造中：
+要使用`LazyCollection`，我们将其混入任何可迭代对象。为了简单起见，我们将展示如何将其混入到`Numbers`和`Pair`中。但它也可以混入到原型（又称“类”）、特质或其他面向对象构造中：
 
 ```javascript
 const Numbers = Object.assign({
+
   [Symbol.iterator]: () => {
+
     let n = 0;
 
     return {
+
       next: () =>
+
         ({done: false, value: n++})
+
     }
+
   }
+
 }, LazyCollection);
 ```
 
@@ -9619,146 +10976,148 @@ const Numbers = Object.assign({
 // Pair，又称链表
 
 const EMPTY = {
+
   isEmpty: () => true
+
 };
 
 const isEmpty = (node) => node === EMPTY;
-```
 
+const Pair = (car, cdr = EMPTY) =>
+  Object.assign({
+    car,
+    cdr,
+    isEmpty: () => false,
+    [Symbol.iterator]: function () {
+      let currentPair = this;
 
+      return {
+        next: () => {
+          if (currentPair.isEmpty()) {
+            return {done: true}
+          }
+          else {
+            const value = currentPair.car;
 
-`const Pair = (car, cdr = EMPTY) =>`
-  `Object.assign({`
-    `car,`
-    `cdr,`
-    `isEmpty: () => false,`
-    `[Symbol.iterator]: function () {`
-      `let currentPair = this;`
+            currentPair = currentPair.cdr;
+            return {done: false, value}
+          }
+        }
+      }
+    }
+  }, LazyCollection);
 
-      `return {`
-        `next: () => {`
-          `if (currentPair.isEmpty()) {`
-            `return {done: true}`
-          `}`
-          `else {`
-            `const value = currentPair.car;`
+Pair.from = (iterable) =>
+  (function iterationToList (iteration) {
+    const {done, value} = iteration.next();
 
-            `currentPair = currentPair.cdr;`
-            `return {done: false, value}`
-          `}`
-        `}`
-      `}`
-    `}`
-  `}, LazyCollection);`
-
-`Pair.from = (iterable) =>`
-  `(function iterationToList (iteration) {`
-    `const {done, value} = iteration.next();`
-
-    `return done ? EMPTY : Pair(value, iterationToList(iteration));`
-  `})(iterable[Symbol.iterator]());`
+    return done ? EMPTY : Pair(value, iterationToList(iteration));
+  })(iterable[Symbol.iterator]());
 
 // 栈
 
-`const Stack = () =>`
-  `Object.assign({`
-    `array: [],`
-    `index: -1,`
-    `push: function (value) {`
-      `return this.array[this.index += 1] = value;`
-    `},`
-    `pop: function () {`
-      `const value = this.array[this.index];`
+const Stack = () =>
+  Object.assign({
+    array: [],
+    index: -1,
+    push: function (value) {
+      return this.array[this.index += 1] = value;
+    },
+    pop: function () {
+      const value = this.array[this.index];
 
-由 Pot 提供支持：集合 272
+      this.array[this.index] = undefined;
+      if (this.index >= 0) {
+          this.index -= 1
+      }
+      return value
+    },
+    isEmpty: function () {
+        return this.index < 0
+    },
+    [Symbol.iterator]: function () {
+        let iterationIndex = this.index;
 
-      `this.array[this.index] = undefined;`
-      `if (this.index >= 0) {`
-          `this.index -= 1`
-      `}`
-      `return value`
-    `},`
-    `isEmpty: function () {`
-        `return this.index < 0`
-    `},`
-    `[Symbol.iterator]: function () {`
-        `let iterationIndex = this.index;`
+        return {
+            next: () => {
+                if (iterationIndex > this.index) {
+                    iterationIndex = this.index;
+                }
+                if (iterationIndex < 0) {
+                    return {done: true};
+                }
+                else {
+                    return {done: false, value: this.array[iterationIndex--]}
+                }
+            }
+        }
+    }
+  }, LazyCollection);
 
-        `return {`
-            `next: () => {`
-                `if (iterationIndex > this.index) {`
-                    `iterationIndex = this.index;`
-                `}`
-                `if (iterationIndex < 0) {`
-                    `return {done: true};`
-                `}`
-                `else {`
-                    `return {done: false, value: this.array[iterationIndex--]}`
-                `}`
-            `}`
-        `}`
-    `}`
-  `}, LazyCollection);`
+Stack.from = function (iterable) {
+    const stack = this();
 
-`Stack.from = function (iterable) {`
-    `const stack = this();`
-
-    `for (let element of iterable) {`
-        `stack.push(element);`
-    `}`
-    `return stack;`
-`}`
+    for (let element of iterable) {
+        stack.push(element);
+    }
+    return stack;
+}
 
 // Pair 和 Stack 的实战应用
 
-`Stack.from([1, 2, 3, 4, 5, 6, 7, 8, 9, 10])`
-    `.map((x) => x * x)`
-    `.filter((x) => x % 2 == 0)`
-    `.first()`
+Stack.from([1, 2, 3, 4, 5, 6, 7, 8, 9, 10])
+    .map((x) => x * x)
+    .filter((x) => x % 2 == 0)
+    .first()
 
 //=> 100
-
-`Pair.from([1, 2, 3, 4, 5, 6, 7, 8, 9, 10])`
-  `.map((x) => x * x)`
-  `.filter((x) => x % 2 == 0)`
-  `.reduce((seed, element) => seed + element, 0)`
-
-//=> 220
-
-### 惰性集合操作
-
-“懒惰”一词用于形容人时，往往带有贬义。但在算法效率方面，它可能是一种极佳的策略。让我们精确一点：*惰性*是指在知道需要结果之前，不执行任何工作的特性。
-
-这里有一个例子。比较以下两者：
-
-```
-[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-  .map((x) => x * x)
-  .filter((x) => x % 2 == 0)
-  .reduce((seed, element) => seed + element, 0)
 
 Pair.from([1, 2, 3, 4, 5, 6, 7, 8, 9, 10])
   .map((x) => x * x)
   .filter((x) => x % 2 == 0)
   .reduce((seed, element) => seed + element, 0)
+
+//=> 220
+```
+
+### 惰性集合操作
+
+“懒惰”一词用于形容人时，往往带有贬义。但在算法效率方面，它可能是一种极佳的策略。让我们精确一点：惰性是指在知道需要结果之前，不执行任何工作的特性。
+
+这里有一个例子。比较以下两者：
+
+```
+[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+  .map((x) => x * x)
+
+  .filter((x) => x % 2 == 0)
+
+  .reduce((seed, element) => seed + element, 0)
+
+Pair.from([1, 2, 3, 4, 5, 6, 7, 8, 9, 10])
+
+  .map((x) => x * x)
+
+  .filter((x) => x % 2 == 0)
+
+  .reduce((seed, element) => seed + element, 0)
 ```
 
 两个表达式的结果都是 220。实际上，数组更快，因为它是一种内置数据类型，在引擎中执行工作，而链表则在 JavaScript 中完成工作。
 
-但剖析一个重要的区别仍然具有说明性：数组的 `.map` 和 `.filter` 方法将结果收集到新数组中。因此，调用 `.map .filter .reduce` 会产生两个临时数组，在 `.reduce` 执行最终计算时被丢弃。
+但剖析一个重要的区别仍然具有说明性：数组的`.map`和`.filter`方法将结果收集到新数组中。因此，调用`.map .filter .reduce`会产生两个临时数组，在`.reduce`执行最终计算时被丢弃。
 
-而 `Pair` 上的 `.map` 和 `.filter` 方法则使用迭代器。它们产生可迭代对象，这些对象回指原始的迭代过程。这减少了内存占用。在处理非常大的集合和许多操作时，这可能很重要。
+而`Pair`上的`.map`和`.filter`方法则使用迭代器。它们产生可迭代对象，这些对象回指原始的迭代过程。这减少了内存占用。在处理非常大的集合和许多操作时，这可能很重要。
 
-当我们使用 `first`、`until` 或 `take` 等方法时，效果更加明显：
+当我们使用`first`、`until`或`take`等方法时，效果更加明显：
 
 ```
 Stack.from([ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9,
-            10, 11, 12, 13, 14, 15, 16, 17, 18, 19,
-            20, 21, 22, 23, 24, 25, 26, 27, 28, 29])
-  .map((x) => x * x)
-  .filter((x) => x % 2 == 0)
-  .first()
-```
+
+
+
+### 惰性集合
 
 这个表达式从一个包含 30 个元素的栈开始。最上面的两个是 29 和 28。它映射了所有 30 个数字的平方，但我们用于映射迭代的代码返回的是一个可迭代对象，该对象可以遍历数字的平方，而不是平方的数组或栈。`.filter` 也是如此，我们得到一个可迭代对象，可以遍历偶数的平方，而不是实际的栈或数组。
 
@@ -9779,7 +11138,6 @@ Stack.from([ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9,
     return x % 2 == 0
   })
   .first()
-
 //=>
   squaring 29
   filtering 841
@@ -9823,7 +11181,7 @@ Stack.from([ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9,
   784
 ```
 
-数组采用读时复制策略，因此每次执行 map 或 filter 时，我们都会得到一个新数组并执行所有计算。这可能代价高昂。
+数组采用读时复制策略，因此每次执行 `map` 或 `filter` 时，我们都会得到一个新数组并执行所有计算。这可能代价高昂。
 
 你记得我们之前简要提到过无限集合的概念吗？让我们来制作可迭代的数字。它们*必须*是惰性的，否则我们就无法写出这样的代码：
 
@@ -9831,7 +11189,6 @@ Stack.from([ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9,
 const Numbers = Object.assign({
   [Symbol.iterator]: () => {
     let n = 0;
-
     return {
       next: () =>
         ({done: false, value: n++})
@@ -9877,7 +11234,6 @@ const EagerCollection = (gatherable) =>
   ({
     map(fn) {
       const original = this;
-
       return gatherable.from(
         (function* () {
           for (let element of original) {
@@ -9886,19 +11242,15 @@ const EagerCollection = (gatherable) =>
         })()
       );
     },
-
     reduce(fn, seed) {
       let accumulator = seed;
-
       for(let element of this) {
         accumulator = fn(accumulator, element);
       }
       return accumulator;
     },
-
     filter(fn) {
       const original = this;
-
       return gatherable.from(
         (function* () {
           for (let element of original) {
@@ -9907,16 +11259,13 @@ const EagerCollection = (gatherable) =>
         })()
       );
     },
-
     find(fn) {
       for (let element of this) {
         if (fn(element)) return element;
       }
     },
-
     until(fn) {
       const original = this;
-
       return gatherable.from(
         (function* () {
           for (let element of original) {
@@ -9926,14 +11275,11 @@ const EagerCollection = (gatherable) =>
         })()
       );
     },
-
     first() {
       return this[Symbol.iterator]().next().value;
     },
-
     rest() {
       const iteration = this[Symbol.iterator]();
-
       iteration.next();
       return gatherable.from(
         (function* () {
@@ -9942,11 +11288,9 @@ const EagerCollection = (gatherable) =>
       );
       return gatherable.from(iterable);
     },
-
     take(numberToTake) {
       const original = this;
       let numberRemaining = numberToTake;
-
       return gatherable.from(
         (function* () {
           for (let element of original) {
@@ -9959,9 +11303,7 @@ const EagerCollection = (gatherable) =>
   });
 ```
 
-这是我们的 Pair 实现。Pair 是可聚集的，因为它实现了 `.from()`。我们混合
-
-将 `EagerCollection(Pair)` 导入其中，这便赋予了我们集合的所有方法，每个方法都返回一个新的键值对列表：
+这是我们的 `Pair` 实现。`Pair` 是可聚集的，因为它实现了 `.from()`。我们混合将 `EagerCollection(Pair)` 导入其中，这便赋予了我们集合的所有方法，每个方法都返回一个新的键值对列表：
 
 ```javascript
 const EMPTY = {
@@ -9977,7 +11319,6 @@ const Pair = (car, cdr = EMPTY) =>
     isEmpty: () => false,
     [Symbol.iterator]: function () {
       let currentPair = this;
-
       return {
         next: () => {
           if (currentPair.isEmpty()) {
@@ -9985,7 +11326,6 @@ const Pair = (car, cdr = EMPTY) =>
           }
           else {
             const value = currentPair.car;
-
             currentPair = currentPair.cdr;
             return {done: false, value}
           }
@@ -9997,7 +11337,6 @@ const Pair = (car, cdr = EMPTY) =>
 Pair.from = (iterable) =>
   (function iterationToList (iteration) {
     const {done, value} = iteration.next();
-
     return done ? EMPTY : Pair(value, iterationToList(iteration));
   })(iterable[Symbol.iterator]());
 
@@ -10018,9 +11357,9 @@ Pair.from([1, 2, 3, 4, 5]).map(x => x * 2)
 
 ### 插曲：木匠的面试经历
 
-"木匠"是一位JavaScript程序员，以其对细节的极致关注和对纯手工、精妙拼接代码的热爱而闻名。木匠通常通过私人推荐工作，但偶尔也会有招聘人员突破他的筛选。鲍勃·普利斯肯就是这样一位招聘人员。鲍勃在Python社区很有名，但他的客户通常需要其他语言的经验。
+"木匠"是一位 JavaScript 程序员，以其对细节的极致关注和对纯手工、精妙拼接代码的热爱而闻名。木匠通常通过私人推荐工作，但偶尔也会有招聘人员突破他的筛选。鲍勃·普利斯肯就是这样一位招聘人员。鲍勃在 Python 社区很有名，但他的客户通常需要其他语言的经验。
 
-普利斯肯为木匠安排了与旧金山一家资金雄厚初创公司的技术面试。木匠提前到达与"Thing软件"的会面地点，并被带到了13号会议室。几分钟后，公司的一位开发人员克里斯汀加入了他。
+普利斯肯为木匠安排了与旧金山一家资金雄厚初创公司的技术面试。木匠提前到达与"Thing 软件"的会面地点，并被带到了 13 号会议室。几分钟后，公司的一位开发人员克里斯汀加入了他。
 
 #### 问题
 
@@ -10036,7 +11375,7 @@ Pair.from([1, 2, 3, 4, 5]).map(x => x * 2)
 
 "那么，"木匠问道，"我需要编写一个算法，它接受一个可能无限的..."
 
-克里斯汀打断了他。"为了节省时间，我们已经用ECMAScript 2015符号为你写好了一个解题模板。请填空。你的代码不应假设游戏板的大小或内容，只知道在while循环的每次迭代中都会给出一个箭头。你可以使用[babeljs.io](https://babeljs.io)¹¹⁹或[ES6Fiddle](https://www.es6fiddle.net)¹²⁰来检查你的工作。"
+克里斯汀打断了他。"为了节省时间，我们已经用 ECMAScript 2015 符号为你写好了一个解题模板。请填空。你的代码不应假设游戏板的大小或内容，只知道在 `while` 循环的每次迭代中都会给出一个箭头。你可以使用 [babeljs.io](https://babeljs.io)¹¹⁹ 或 [ES6Fiddle](https://www.es6fiddle.net)¹²⁰ 来检查你的工作。"
 
 ¹¹⁸ https://www.flickr.com/photos/stigrudeholm/6710684795
 ¹¹⁹ http://babeljs.io
@@ -10046,7 +11385,6 @@ Pair.from([1, 2, 3, 4, 5]).map(x => x * 2)
 
 ```javascript
 const Game = (size = 8) => {
-
   // initialize the board
   const board = [];
   for (let i = 0; i < size; ++i) {
@@ -10055,16 +11393,13 @@ const Game = (size = 8) => {
       board[i][j] = '🡕🡖🡓🡒'[Math.floor(Math.random() * 4)];
     }
   }
-
   // initialize the position
   let initialPosition = [
     2 + Math.floor(Math.random() * (size - 4)),
     2 + Math.floor(Math.random() * (size - 4))
   ];
-
   // ???
   let [x, y] = initialPosition;
-
   const MOVE = {
     "🡕": ([x, y]) => [x - 1, y],
     "🡖": ([x, y]) => [x + 1, y],
@@ -10073,16 +11408,14 @@ const Game = (size = 8) => {
   };
   while (x >= 0 && y >=0 && x < size && y < size) {
     const arrow = board[x][y];
-
     // ???
-
     [x, y] = MOVE[arrow]([x, y]);
   }
   // ???
 };
 ```
 
-克里斯汀问道："你会用什么代码来替换三个`// ???`占位符，以确定游戏是否停止？"
+克里斯汀问道："你会用什么代码来替换三个 `// ???` 占位符，以确定游戏是否停止？"
 
 ### 木匠的解答
 
@@ -10092,7 +11425,7 @@ const Game = (size = 8) => {
 
 事实上，鲍勃曾警告过木匠，"Thing"公司喜欢问两个问题中的一个或两个：如何检测链表中的循环，以及判断棋盘游戏是否会停止。为了节省时间，木匠为这两个问题准备了相同的答案。
 
-木匠轻轻咳嗽了一声，然后开始说道："首先，我将把一个游戏转换成一个生成箭头的可迭代对象，使用生成器的`'*'`符号。我会稍微重构一下，让事情更清晰，例如，我会提取棋盘以便更容易测试："
+木匠轻轻咳嗽了一声，然后开始说道："首先，我将把一个游戏转换成一个生成箭头的可迭代对象，使用生成器的 `'*'` 符号。我会稍微重构一下，让事情更清晰，例如，我会提取棋盘以便更容易测试："
 
 ```javascript
 const MOVE = {
@@ -10103,7 +11436,6 @@ const MOVE = {
 };
 
 const Board = (size = 8) => {
-
   // initialize the board
   const board = [];
   for (let i = 0; i < size; ++i) {
@@ -10112,27 +11444,21 @@ const Board = (size = 8) => {
       board[i][j] = '\u2190\u2192\u2191\u2193'[Math.floor(Math.random() * 4)];
     }
   }
-
   // initialize the position
   const position = [
     Math.floor(Math.random() * size),
     Math.floor(Math.random() * size)
   ];
-
   return {board, position};
 };
 
 const Game = ({board, position}) => {
-
     const size = board[0].length;
-
     return ({
         *[Symbol.iterator] () {
             let [x, y] = position;
-
             while (x >= 0 && y >=0 && x < size && y < size) {
                 const direction = board[y][x];
-
                 yield direction;
                 [x, y] = MOVE[direction]([x, y]);
             }
@@ -10141,7 +11467,7 @@ const Game = ({board, position}) => {
 };
 ```
 
-"现在我们有了一个可迭代对象，就可以将箭头的可迭代对象转换成位置的可迭代对象了。"木匠快速地勾画着。"我们需要获取箭头并将其转换为位置。为此，我们将把Game的可迭代对象映射到位置。`statefulMap`是一个惰性映射，它保留了从一次迭代到下一次迭代的状态。这正是我们需要的，因为我们需要知道当前位置才能将每次移动映射到下一个位置。"
+"现在我们有了一个可迭代对象，就可以将箭头的可迭代对象转换成位置的可迭代对象了。"木匠快速地勾画着。"我们需要获取箭头并将其转换为位置。为此，我们将把 `Game` 的可迭代对象映射到位置。`statefulMap` 是一个惰性映射，它保留了从一次迭代到下一次迭代的状态。这正是我们需要的，因为我们需要知道当前位置才能将每次移动映射到下一个位置。"
 
 "这是一个我们可以从库中获得的标准模式，我们不需要重复造轮子。为了清晰起见，我在这里展示它："
 
@@ -10151,7 +11477,6 @@ const statefulMapWith = (fn, seed, iterable) =>
         *[Symbol.iterator] () {
             let value,
                 state = seed;
-
             for (let element of iterable) {
                 [state, value] = fn(state, element);
                 yield value;
@@ -10159,8 +11484,6 @@ const statefulMapWith = (fn, seed, iterable) =>
         }
     });
 ```
-
-
 
 “有了它，将一个可迭代的方向序列映射为表示位置的可迭代的字符串序列就很简单了：”
 
@@ -10194,7 +11517,7 @@ const positionsOf = (game) =>
 
 **龟兔赛跑**
 
-“有个老笑话说，数学家就是那种会把一个五分钟的问题变成花一个小时证明它等价于anotherivier的问题的人。我就是带着这种精神来处理这个问题的。既然我们现在已经创建了一个可以用 `===` 比较的值的可迭代对象，我就可以给你看这个函数了：”
+“有个老笑话说，数学家就是那种会把一个五分钟的问题变成花一个小时证明它等价于另一个问题的人。我就是带着这种精神来处理这个问题的。既然我们现在已经创建了一个可以用 `===` 比较的值的可迭代对象，我就可以给你看这个函数了：”
 
 ## 由锅端出：集合
 
@@ -10202,20 +11525,15 @@ const positionsOf = (game) =>
 const tortoiseAndHare = (iterable) => {
   const hare = iterable[Symbol.iterator]();
   let hareResult = (hare.next(), hare.next());
-
   for (let tortoiseValue of iterable) {
-
     hareResult = hare.next();
-
     if (hareResult.done) {
       return false;
     }
     if (tortoiseValue === hareResult.value) {
       return true;
     }
-
     hareResult = hare.next();
-
     if (hareResult.done) {
       return false;
     }
@@ -10229,7 +11547,7 @@ const tortoiseAndHare = (iterable) => {
 
 > “很久很久以前，”卡彭特解释道，“有人在面试中问了我一个问题。我从未忘记那个问题，也从未忘记其解决方案的大致形式。问题是，*给定一个链表，检测它是否包含环。使用常量空间。*”
 
-> “当然，这是最常见的解决方案，即[Floyd 判圈算法](https://en.wikipedia.org/wiki/Cycle_detection#Tortoise_and_hare)^[121]，尽管学术界对于 Robert Floyd 是否真的发现了该算法，还是被 Knuth 错误地归因于他，存在一些争议。”
+> “当然，这是最常见的解决方案，即 [Floyd 判圈算法](https://en.wikipedia.org/wiki/Cycle_detection#Tortoise_and_hare)^[121]，尽管学术界对于 Robert Floyd 是否真的发现了该算法，还是被 Knuth 错误地归因于他，存在一些争议。”
 
 > “因此，游戏问题的解决方案是：”
 
@@ -10248,15 +11566,18 @@ const test = [
 
 terminates(Game({board: test, position: [0, 0]}))
     //=> false
+
 terminates(Game({board: test, position: [3, 0]}))
     //=> true
+
 terminates(Game({board: test, position: [0, 3]}))
     //=> false
+
 terminates(Game({board: test, position: [3, 3]}))
     //=> false
 ```
 
-“这个解决方案使用了可迭代对象和单个工具函数`statefulMapWith`。它还干净地将游戏的机制与检测图中环的算法分离开来。”
+“这个解决方案使用了可迭代对象和单个工具函数 `statefulMapWith`。它还干净地将游戏的机制与检测图中环的算法分离开来。”
 
 ## 余波
 
@@ -10272,7 +11593,7 @@ terminates(Game({board: test, position: [3, 3]}))
 
 一段时间后，卡彭特在当地的技术聚会上遇到了鲍勃·普利森。“约翰！Thing 那边怎么了？”鲍勃想知道，“我问他们对你的看法，他们只说，*写的代码难以理解。* 我以为十拿九稳了！我以为你终于能从纽约逃出去了。”
 
-卡彭特笑了。“我把他们忘了，已经有一段时间了。那么，*They Live*吗？”
+卡彭特笑了。“我把他们忘了，已经有一段时间了。那么，*They Live* 吗？”
 
 ![](img/34322ce8d9a7a9a4a308955f2d1f90b3_312_0.png)
 
@@ -10284,7 +11605,7 @@ terminates(Game({board: test, position: [3, 3]}))
 
 “我在 Thing 工作，克里斯汀跟我们讲了你的解决方案。我看了一眼你留在白板上的代码。当然，面试时的白板编程 notoriously 不可靠，所以小的缺陷并不重要。但我忍不住注意到，你的解决方案实际上出于另一个原因并没有满足 stated 的要求：”
 
-“`hasCycle`函数，也就是龟兔赛跑，需要两个独立的迭代器来完成工作。而问题描述中涉及的是单一的方向流。你本质上是在要求玩家 clone 自己，然后并行喊出方向。”
+“`hasCycle` 函数，也就是龟兔赛跑，需要两个独立的迭代器来完成工作。而问题描述中涉及的是单一的方向流。你本质上是在要求玩家 clone 自己，然后并行喊出方向。”
 
 卡彭特想了一会儿。“Kidu，你说得对，这是一个 fantastic 的观察。我应该用 Teleporting Tortoise！”
 
@@ -10294,17 +11615,14 @@ terminates(Game({board: test, position: [3, 3]}))
 const hasCycle = (iterable) => {
   let iterator = iterable[Symbol.iterator](),
       teleportDistance = 1;
-
   while (true) {
     let {value, done} = iterator.next(),
         tortoise = value;
     if (done) return false;
-
     for (let i = 0; i < teleportDistance; ++i) {
       let {value, done} = iterator.next(),
           hare = value;
       if (done) return false;
-
       if (tortoise === hare) return true;
     }
     teleportDistance *= 2;
@@ -10318,7 +11636,6 @@ Kidu 耸了耸肩。“你知道，要求的是有限空间算法，不是常量
 ```javascript
 const hasCycle = (orderedCollection) => {
   const visited = new Set();
-
   for (let element of orderedCollection) {
     if (visited.has(element)) {
       return true;
@@ -10346,8 +11663,6 @@ const hasCycle = (orderedCollection) => {
 第一位玩家总是 o，他们总是把棋子放在左上角，巧合的是编号也为 o：
 
 ^[123] https://en.wikipedia.org/wiki/naughts-and-crosses
-
-
 
 ```
 o |   |
@@ -10543,7 +11858,6 @@ const moveLookupTable = {
   ' ', ' ', ' ',
   'o', ' ', 'x'
 ]]: 3
-
 // ...
 };
 ```
@@ -10592,15 +11906,12 @@ statelessNaughtsAndCrosses([
 
 ```
 const aNaughtsAndCrossesGame = statefulNaughtsAndCrosses();
-
 // our opponent makes the first move
 aNaughtsAndCrossesGame()
   //=> 0
-
 // then we move, and get its next move back
 aNaughtsAndCrossesGame(1)
   //=> 6
-
 // then we move, and get its next move back
 aNaughtsAndCrossesGame(4)
   //=> 3
@@ -10615,7 +11926,6 @@ const statefulNaughtsAndCrosses = () => {
     ' ', ' ', ' ',
     ' ', ' ', ' '
   ];
-
   return (x = false) => {
     if (x) {
       if (state[x] === ' ') {
@@ -10630,15 +11940,12 @@ const statefulNaughtsAndCrosses = () => {
 };
 
 const aNaughtsAndCrossesGame = statefulNaughtsAndCrosses();
-
 // our opponent makes the first move
 aNaughtsAndCrossesGame()
   //=> 0
-
 // then we move, and get its next move back
 aNaughtsAndCrossesGame(1)
   //=> 6
-
 // then we move, and get its next move back
 aNaughtsAndCrossesGame(4)
   //=> 3
@@ -10658,11 +11965,9 @@ aNaughtsAndCrossesGame(4)
 function browserNaughtsAndCrosses () {
   const x1 = parseInt(prompt('o plays 0, where does x play?'));
   switch (x1) {
-
     case 1:
       const x2 = parseInt(prompt('o plays 6, where does x play?'));
       switch (x2) {
-
         case 2:
         case 4:
         case 5:
@@ -10670,24 +11975,20 @@ function browserNaughtsAndCrosses () {
         case 8:
           alert('o plays 3');
           break;
-
         case 3:
           const x3 = parseInt(prompt('o plays 8, where does x play?'));
           switch (x3) {
-
             case 2:
             case 5:
             case 7:
               alert('o plays 4');
               break;
-
             case 4:
               alert('o plays 7');
               break;
           }
       }
       break;
-
     // ...
   }
 }
@@ -10709,11 +12010,9 @@ function browserNaughtsAndCrosses () {
 function* generatorNaughtsAndCrosses () {
   const x1 = yield 0;
   switch (x1) {
-
     case 1:
       const x2 = yield 6;
       switch (x2) {
-
         case 2:
         case 4:
         case 5:
@@ -10721,11 +12020,9 @@ function* generatorNaughtsAndCrosses () {
         case 8:
           yield 3;
           break;
-
         case 3:
           const x3 = yield 8;
           switch (x3) {
-
             case 2:
             case 5:
             case 7:
@@ -10733,8 +12030,7 @@ function* generatorNaughtsAndCrosses () {
               break;
 ```
 
-
-
+```
 case 4:
       yield 7;
       break;
@@ -10849,7 +12145,7 @@ function * take (numberToTake, iterable) {
 
 ```javascript
 function * zip (...iterables) {
-  const iterators = iterables.map(i => i[Symbol.iterator摄取器]();
+  const iterators = iterables.map(i => i[Symbol.iterator]());
 
   while (true) {
     const pairs = iterators.map(j => j.next()),
@@ -10877,7 +12173,7 @@ function * zipWith (zipper, ...iterables) {
 };
 ```
 
-注意：zip 也是 zipWith 的以下特例：
+注意：`zip` 也是 `zipWith` 的以下特例：
 
 ```javascript
 const zip = callFirst(zipWith, (...values) => values);
@@ -10939,7 +12235,7 @@ function memoize (generator) {
 
 "唯一性"在社会和程序中都是重要的品质。
 
-程序员经常花费大量时间试图定义"相同"：JavaScript 程序员知道 `"foo" === "foo"` 总是 true，但 `new String("foo") === new String("foo")` 总是 false，而且当我们说 `{ foo: "bar" }` 与 `{ foo: "bar" }` *语义等价* 时，很难定义我们的确切含义。
+程序员经常花费大量时间试图定义"相同"：JavaScript 程序员知道 `"foo" === "foo"` 总是 `true`，但 `new String("foo") === new String("foo")` 总是 `false`，而且当我们说 `{ foo: "bar" }` 与 `{ foo: "bar" }` *语义等价*时，很难定义我们的确切含义。
 
 程序员对此思考得不多，但实体之间彼此不同也很重要。我们知道 `function () {} !== function () {}`。但拥有我们知道彼此不同的对象可能非常有用。
 
@@ -10947,15 +12243,15 @@ function memoize (generator) {
 
 ### 规则<sup>124</sup>
 
-在旧版本的 JavaScript 中，程序员会使用时间戳、GUID、计数器和其他技巧来拼凑唯一的对象。这些方法单独来看都没有错，但当有 99 种不同的方式来做同一件事，而每个人都最终这样做时，我们代码中重要的部分就会被我们临时的、非正式规范的、充满 bug 的、缓慢实现的 Common Lisp 的 gensym<sup>125</sup> 所掩盖。
+在旧版本的 JavaScript 中，程序员会使用时间戳、GUID、计数器和其他技巧来拼凑唯一的对象。这些方法单独来看都没有错，但当有 99 种不同的方式来做同一件事，而每个人都最终这样做时，我们代码中重要的部分就会被我们临时的、非正式规范的、充满 bug 的、缓慢实现的 Common Lisp 的 `gensym`<sup>125</sup> 所掩盖。
 
-因此，Symbol 被加入到了语言中。在最简单的形式中，Symbol 是一个返回唯一实体的函数。没有两个 symbol 是相同的，永远：
+因此，`Symbol` 被加入到了语言中。在最简单的形式中，`Symbol` 是一个返回唯一实体的函数。没有两个 symbol 是相同的，永远：
 
 ```javascript
 Symbol() !== Symbol()
 ```
 
-Symbol 有字符串表示形式，尽管它们可能看起来难以理解：<sup>126</sup>
+`Symbol` 有字符串表示形式，尽管它们可能看起来难以理解：<sup>126</sup>
 
 ```javascript
 Symbol().toString()
@@ -11022,11 +12318,9 @@ q.tail
   //=> 1
 ```
 
-因为我们使用了紧凑方法语法，pushTail、pullHead 和 isEmpty 属性不是"可枚举的"，所以它们不会显示在控制台中。但其他代码可以访问它们。array、head 和 tail 属性是可枚举且可访问的。
+因为我们使用了紧凑方法语法，`pushTail`、`pullHead` 和 `isEmpty` 属性不是"可枚举的"，所以它们不会显示在控制台中。但其他代码可以访问它们。`array`、`head` 和 `tail` 属性是可枚举且可访问的。
 
 让我们改用 symbol 来表示这些属性：
-
-
 
 ```js
 const array = Symbol(),
@@ -11159,7 +12453,9 @@ sam.rename
 ```
 
 这使我们能够将行为与属性在代码中分离。
+
 我们的 `Person` 对象是一个*混入*，它提供可被混入到对象中的功能，使用 `Object.assign` 等函数即可实现。混入并非以创建每个函数全新副本的方式"复制"到对象中：`Object.assign` 将混入中每个函数的*引用*复制到目标对象中。
+
 我们可以自行验证：
 
 ```js
@@ -11192,6 +12488,7 @@ sam.rename === peck.rename
 ```
 
 这样，许多对象可以混入同一个对象。
+
 事情还不止于此：一个对象可以混入多个对象：
 
 #### 转发
@@ -11308,7 +12605,7 @@ function delegate (receiver, metaobject, ...methods) {
 
 这个新的 `delegate` 函数所做的事与 `forward` 函数完全一样，但执行委托的那一行看起来是这样的：
 
- ```
+```
 receiver[methodName] = (...args) => metaobject[methodName].apply(receiver, args)
 ```
 
@@ -11319,6 +12616,7 @@ receiver[methodName] = (...args) => metaobject[methodName].apply(receiver, args)
 委托和转发非常相似。一个有助于区分它们的比喻是：想象你收到一封邮件，请求你向一个值得捐赠的慈善机构捐款。
 
 - 如果你将邮件*转发*给朋友，朋友捐款的话，朋友是在捐自己的钱，并且会收到自己的税收收据。
+
 - 如果你将回复*委托*给你的会计，会计会捐*你*的钱给慈善机构，而你会收到税收收据。
 
 在这两种情况下，当你收到邮件时，都是另一个实体来完成工作。
@@ -11445,7 +12743,7 @@ investor.netWorth()
 
 ### 状态机
 
-这种委托的一个非常常见的用例是构建[有限状态机](https://en.wikipedia.org/wiki/Finite-state_machine)¹²⁹。正如 Corey Haines 在[《理解简单设计的四条规则》](https://leanpub.com/4rulesofsimpledesign)¹³⁰一书中所描述的，你*可以*使用 if 语句来实现[康威的生命游戏](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life)¹³¹。匆忙地对系统的其他部分挥手示意，你可能会得到：
+这种委托的一个非常常见的用例是构建[有限状态机](https://en.wikipedia.org/wiki/Finite-state_machine)¹²⁹。正如 Corey Haines 在[《理解简单设计的四条规则》](https://leanpub.com/4rulesofsimpledesign)¹³⁰ 一书中所描述的，你*可以*使用 `if` 语句来实现[康威的生命游戏](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life)¹³¹。匆忙地对系统的其他部分挥手示意，你可能会得到：
 
 ```
 const Universe = {
@@ -11534,7 +12832,9 @@ someFsmCell._state = Dead;
 在实践中，状态会批量分配，但这展示了最简单的状态机之一。在实际应用中，大多数业务对象都是状态机，有时具有多个松散耦合的状态。员工可以是：
 
 - 在岗或不在岗；
+
 - 试用期、合同工或正式工；
+
 - 兼职或全职。
 
 委托给代表状态的属性利用后期绑定的优势，将行为分解为 Responsibility 定义更清晰、更小的组件。
@@ -11542,8 +12842,6 @@ someFsmCell._state = Dead;
 ### 后期绑定的转发
 
 完全相同的技术可以用于转发给属性，而且转发给属性也可以用于某些类型的状态机。转发给属性比委托的耦合度更低，在适当的情况下应优先使用。
-
-
 
 ## 通过原型进行委托
 
@@ -11700,8 +12998,11 @@ sam.surname()
 原型是内置于 JavaScript 中的一种特殊委托机制。通过原型进行委托：
 
 1.  方法体是后期绑定的，就像通过方法代理进行委托一样；
+
 2.  方法标识符是后期绑定的，这比通过方法代理进行委托更优越；
+
 3.  在接收者的上下文中求值，就像委托一样；
+
 4.  是开放扩展的，不同于混入、转发和显式委托。
 
 原型通常是许多开发者在 JavaScript 中学习的第一种元对象形式，而且往往也是最后一种。
@@ -11737,7 +13038,7 @@ lowry.hasOwnProperty('fullName');
   //=> true
 ```
 
-元object的目标之一是将领域属性（如 `firstName`）与行为（如 `.fullName()`）分离。我们所有的元对象技术都允许我们在编写的代码中做到这一点，但原型在对象本身的运行时结构中极其有效地做到了这一点。
+元对象的目标之一是将领域属性（如 `firstName`）与行为（如 `.fullName()`）分离。我们所有的元对象技术都允许我们在编写的代码中做到这一点，但原型在对象本身的运行时结构中极其有效地做到了这一点。
 
 这非常有用。
 
@@ -11790,8 +13091,6 @@ bewitched
 
 考虑我们的 `HasCareer` 混入：
 
-
-
 ### 种植园生活：元对象
 
 ```javascript
@@ -11815,6 +13114,7 @@ const HasCareer = {
 让我们从两条原则出发：
 
 1. 任何对象都可以拥有一个对象作为其原型，任何对象也都可以成为原型。
+
 2. 一个对象的行为由其自身的所有行为加上其原型的所有行为组成。
 
 当我们说*任何*对象都可以有原型时，这是否包括用作原型的对象？是的。用作原型的对象也可以拥有自己的原型。
@@ -11872,7 +13172,7 @@ goldie.fullName()
   //=> 'Samuel Goldwyn'
 ```
 
-从理论上讲，JavaScript 引擎会沿着一条链向上查找，从 goldie 对象开始，接着是我们的 PersonWithCareer 原型，然后是我们的 Person 原型。
+从理论上讲，JavaScript 引擎会沿着一条链向上查找，从 `goldie` 对象开始，接着是我们的 `PersonWithCareer` 原型，然后是我们的 `Person` 原型。
 
 ### 树
 
@@ -11972,8 +13272,6 @@ const ManagerOnProbation = Object.assign({}, Manager, Probationary);
 JavaScript 使了一些障眼法。当你做一些将值当作对象来对待的操作时，JavaScript 会检查该值是否真的是对象。如果该值实际上是一个原始类型，JavaScript 会临时创建一个与该原始类型"差不多"的副本，而这个副本拥有方法，于是你暂时被愚弄了，以为 `"Spence Olham"` 拥有 `.split` 方法。
 
 > 回想一下，字符串、数字、布尔值等是值类型和原始类型。我们在这里称它们为原始类型。
-
-
 
 这些类似但不完全相同的副本被称为 String *实例*，而非 String *原始值*。实例拥有方法，而原始值则没有。JavaScript 如何从原始值创建实例呢？当然是用 `new`。¹³⁴ 让我们试试看：
 
@@ -12223,15 +13521,16 @@ Object.assign(Queue.prototype, {
 
 你记得当我们第一次讨论 `this` 时，我们只涵盖了函数属于某个对象并被调用的情况。现在我们看到另一种情况：当函数通过 `new` 操作符调用时，`this` 被设置为正在创建的新对象。因此，我们的 `Queue` 代码初始化了队列。
 
-
-
 你可以明白为什么在 JavaScript 中这如此方便：如果 JavaScript 没有给我们一种简单的方式来引用实例本身，我们将无法在原型中定义能够作用于实例的函数。
 
 ### 构造函数与 Object.create 相比如何？
 
 让我们总结一下已知内容：
+
 当我们将 `new` 关键字与函数一起使用时，我们构造了一个对象。该函数被调用时，其上下文（`this`）被设置为新对象，并且新对象将行为委托给函数 `.prototype` 属性中的任何对象。
+
 当我们使用 `Object.create` 时，我们创建了一个新对象，该对象将其行为委托给我们传递给 `Object.create` 的任何对象。如果我们想对对象进行任何其他初始化，可以在单独的步骤中完成。
+
 大致来说，我们可以使用 `Object.create` 来模拟 `new` 关键字的明显特性。让我们尝试一下。我们将从 `worksLikeNew` 开始，这是一个接受构造函数和一些可选参数的函数，其行为类似于 `new` 关键字：
 
 ```javascript
@@ -12268,7 +13567,9 @@ const times = (a, b) =>
 编程是一个选择和构建抽象的过程，将构造函数与 `new` 关键字结合提供了一个单一的抽象，处理了多个职责：
 
 - 构造函数的原型提供了一个元对象，用于描述用该构造函数创建的每个实例的行为。
+
 - 每个实例的 `.constructor` 属性提供了一个标识符，用于将实例与构造函数关联。
+
 - 构造函数自身的代码为每个实例提供初始化。
 
 我们可以用 `Object.create` 完成所有这些事情，但如果我们只想做这些事情，而很少其他事情，`new` 和构造函数更容易、更简单，并且对其他 JavaScript 程序员来说一眼就能熟悉。
@@ -12280,6 +13581,7 @@ const times = (a, b) =>
 JavaScript 程序员使用构造函数已经有很长时间了。时间长到足以注意到它们的一些缺点：
 
 1. "活动部件"太多。为什么需要先定义构造函数，然后在单独的步骤中操作其原型属性？
+
 2. 为什么原型链如此复杂？
 
 有经验的 JavaScript 程序员通常朝着两个方向之一发展：一些程序员注意到直接使用原型比用构造函数做所有事情更简单，因此倾向于直接使用 `Object.create`，使用我们在元对象部分讨论过的技术。
@@ -12318,7 +13620,7 @@ const clazz = (...args) => {
 }
 ```
 
-使用这个 `clazz` 函数，我们可以这样编写一个 Queue：
+使用这个 `clazz` 函数，我们可以这样编写一个 `Queue`：
 
 ```javascript
 const Queue = clazz({
@@ -12346,7 +13648,7 @@ const Queue = clazz({
 });
 ```
 
-我们可以这样编写一个"继承" Queue 的 Dequeue：
+我们可以这样编写一个"继承" `Queue` 的 `Dequeue`：
 
 ### 喝完这杯：构造函数与类
 
@@ -12386,8 +13688,6 @@ Dequeue.INCREMENT = 4;
 ### 为什么原型是对象是一个优势
 
 例如，我们可以使用 `Object.assign` 将功能混入我们的类中：
-
-351
 
 ```javascript
 const HasManager = {
@@ -12477,11 +13777,6 @@ const MiddleManager = clazz(Manager, Object.assign({
   constructor: function (first, last) {
     Manager.call(this, first, last);
   }
-```
-
-
-
- ```javascript
 }, HasManager));
 
 const Worker = clazz(Person, Object.assign({
@@ -12510,7 +13805,7 @@ const Manager = clazz(Person, {
   removeReport: fluent(function (report) {
     this.reports().delete(report);
   }),
-  function reports () {
+  reports: function () {
     return this._reports || (this._reports = new Set());
   }
 });
@@ -12578,7 +13873,7 @@ class Person {
 };
 ```
 
-下面是一个 Dequeue 来展示"继承"：
+下面是一个 `Dequeue` 来展示"继承"：
 
 ```javascript
 class Dequeue extends Queue {
@@ -12611,7 +13906,7 @@ class Dequeue extends Queue {
 Dequeue.INCREMENT = 4;
 ```
 
-Dequeue 的有趣之处在于，无论我们的 Queue 是这样写的：
+`Dequeue` 的有趣之处在于，无论我们的 `Queue` 是这样写的：
 
 ```javascript
 function Queue () {
@@ -12747,23 +14042,21 @@ const PrivatePerson = (() => {
 })();
 ```
 
-这是做什么的？它创建了一些符号，然后在同一环境中创建一个类（也命名为 Person），并使用这些符号来创建私有属性。然后它返回新创建的类，我们将其绑定到名称 PrivatePerson。这将对其他代码隐藏 firstName 和 lastName 符号。
+这是做什么的？它创建了一些符号，然后在同一环境中创建一个类（也命名为 `Person`），并使用这些符号来创建私有属性。然后它返回新创建的类，我们将其绑定到名称 `PrivatePerson`。这将对其他代码隐藏 `firstName` 和 `lastName` 符号。
 
 还要注意，我们*返回*了类。这暗示（正确地）`class` 关键字创建了一个*类表达式*，而表达式是一个可以在任何地方使用的值，就像命名函数表达式一样。
 
-当然，我们可以将 IIFE 返回的值绑定到任何我们喜欢的名称，甚至是 Person，但我们给它一个不同的名称，只是为了表明我们有一个值，就像任何其他值一样，我们将其绑定到环境中的名称，就像环境中的任何其他名称一样。在这种情况下，甚至名称 Person 也被封装在 IIFE 内。
+当然，我们可以将 IIFE 返回的值绑定到任何我们喜欢的名称，甚至是 `Person`，但我们给它一个不同的名称，只是为了表明我们有一个值，就像任何其他值一样，我们将其绑定到环境中的名称，就像环境中的任何其他名称一样。在这种情况下，甚至名称 `Person` 也被封装在 IIFE 内。
 
 在 JavaScript 中，"类"和"类表达式"就像任何其他值一样是值，这意味着我们可以对它们做任何我们可以对其他值做的事情，比如从函数中返回它们、将它们传递给函数，以及根据需要将它们绑定到不同的名称。
 
-
-
 ### 对象方法
 
-*实例方法*是在构造函数的原型中定义的函数。每个实例都会获得此行为，除非被“覆盖”。实例方法通常与实例有一些交互，例如引用`this`或其他与实例交互的方法。*构造方法*是属于构造函数本身的函数。
+*实例方法*是在构造函数的原型中定义的函数。每个实例都会获得此行为，除非被“覆盖”。实例方法通常与实例有一些交互，例如引用 `this` 或其他与实例交互的方法。*构造方法*是属于构造函数本身的函数。
 
-还有第三种方法，任何对象（显然包括所有实例）都可以拥有。*对象方法*是在对象本身中定义的函数。与实例方法类似，对象方法通常与对象有一些交互，例如引用`this`或其他与对象交互的方法。
+还有第三种方法，任何对象（显然包括所有实例）都可以拥有。*对象方法*是在对象本身中定义的函数。与实例方法类似，对象方法通常与对象有一些交互，例如引用 `this` 或其他与对象交互的方法。
 
-使用普通旧 JavaScript 对象（Plain Old JavaScript Objects）创建对象方法非常简单，因为这是你可以使用的唯一方法类型。回顾[This and That](#)：
+使用普通旧 JavaScript 对象（Plain Old JavaScript Objects）创建对象方法非常简单，因为这是你可以使用的唯一方法类型。回顾 [This and That](#)：
 
 ```
 const BetterQueue = () =>
@@ -12789,13 +14082,13 @@ const BetterQueue = () =>
   });
 ```
 
-`pushTail`、`pullHead`和`isEmpty`是对象方法。同样，来自[encapsulation](#)：
+`pushTail`、`pullHead` 和 `isEmpty` 是对象方法。同样，来自 [encapsulation](#)：
 
-尽管它们没有引用对象，但`push`、`pop`和`isEmpty`在语义上与对象表示的不透明数据结构交互，因此它们也是对象方法。
+尽管它们没有引用对象，但 `push`、`pop` 和 `isEmpty` 在语义上与对象表示的不透明数据结构交互，因此它们也是对象方法。
 
 #### 实例中的对象方法
 
-构造函数的实例也可以有对象方法。通常，对象方法是在构造函数中添加的。这是一个无端的例子，一个具有只读`id`的部件模型：
+构造函数的实例也可以有对象方法。通常，对象方法是在构造函数中添加的。这是一个无端的例子，一个具有只读 `id` 的部件模型：
 
 ```
 const WidgetModel = function (id, attrs) {
@@ -12814,18 +14107,19 @@ Object.assign(WidgetModel.prototype, {
 });
 ```
 
-`set`和`get`是实例方法，但`id`是对象方法：每个对象都有自己`id`闭包，其中`id`通过构造函数的参数`id`绑定到部件的id。这种方法的优点是实例可以有不同的对象方法，或者像本例中具有自己闭包的对象方法。缺点是每个对象都有自己 的方法，这比在所有实例间共享的实例方法消耗更多的内存。
+`set` 和 `get` 是实例方法，但 `id` 是对象方法：每个对象都有自己 `id` 闭包，其中 `id` 通过构造函数的参数 `id` 绑定到部件的 id。这种方法的优点是实例可以有不同的对象方法，或者像本例中具有自己闭包的对象方法。缺点是每个对象都有自己 的方法，这比在所有实例间共享的实例方法消耗更多的内存。
 
-对象方法是在对象内部定义的。因此，如果你有几个同一对象的不同“实例”，每个对象都会有一个对象方法。对象方法可以与任何对象关联，而不仅仅是那些用`new`关键字创建的对象。实例方法适用于实例，即用`new`关键字创建的对象。实例方法在原型中定义，并由所有实例共享。
+对象方法是在对象内部定义的。因此，如果你有几个同一对象的不同“实例”，每个对象都会有一个对象方法。对象方法可以与任何对象关联，而不仅仅是那些用 `new` 关键字创建的对象。实例方法适用于实例，即用 `new` 关键字创建的对象。实例方法在原型中定义，并由所有实例共享。
 
 ### 为什么不用类？
 
 类很流行，如果类能完美地映射我们希望建模的方式，我们就应该使用它们。
+
 话虽如此，还是有一些注意事项需要理解。
 
-#### `class`关键字是最小的表示法
+#### `class` 关键字是最小的表示法
 
-根据设计，`class`关键字提供了实现“类”所需的最基本功能集。其他一切都必须用其他方式完成。例如，如果你直接编写构造函数或原型，你可以使用方法装饰器（如前所见）：
+根据设计，`class` 关键字提供了实现“类”所需的最基本功能集。其他一切都必须用其他方式完成。例如，如果你直接编写构造函数或原型，你可以使用方法装饰器（如前所见）：
 
 ```
 const fluent = (methodBody) =>
@@ -12852,7 +14146,7 @@ const Manager = clazz(Person, {
 });
 ```
 
-但此时，当你使用`class`语法时，你不能使用方法装饰器。有计划为此引入新的、专门设计的装饰器语法，这突出了`class`语法的一个问题：通过在 JavaScript 之上编写一种等效的新语言，它不可避免地要重新发明 JavaScript 中已经可能实现的所有东西。
+但此时，当你使用 `class` 语法时，你不能使用方法装饰器。有计划为此引入新的、专门设计的装饰器语法，这突出了 `class` 语法的一个问题：通过在 JavaScript 之上编写一种等效的新语言，它不可避免地要重新发明 JavaScript 中已经可能实现的所有东西。
 
 #### 类鼓励构建类层次结构
 
@@ -12862,7 +14156,7 @@ const Manager = clazz(Person, {
 
 当一个类扩展另一个类时，它的方法可以访问原型链上任何位置定义的任何属性和方法。给定设计为树状的层次结构，对一个类的更改可能会破坏其下方或上方树中任何类的行为。
 
-当两个或多个元对象通过[开放递归](https://en.wikipedia.org/wiki/Open_recursion#Open_recursion)^136访问同一个基础对象时，它们会变得紧密耦合，因为它们可以通过设置和读取所有基础对象的属性来交互。不可能将它们的交互限制在定义良好的方法集上。
+当两个或多个元对象通过[开放递归](https://en.wikipedia.org/wiki/Open_recursion#Open_recursion)^136 访问同一个基础对象时，它们会变得紧密耦合，因为它们可以通过设置和读取所有基础对象的属性来交互。不可能将它们的交互限制在定义良好的方法集上。
 
 这种耦合存在于包含开放递归的所有元对象模式中，例如混入（mixins）、委托和通过原型的委托。特别是，当朴素原型链形成类层次结构时，这种耦合会导致[脆弱基类问题](https://en.wikipedia.org/wiki/Fragile_base_class)^137。
 
@@ -12876,11 +14170,16 @@ const Manager = clazz(Person, {
 
 #### 实例与类
 
-- `new`关键字将任何函数变成创建*实例*的*构造函数*。
-- 所有函数都有一个`prototype`元素。
+- `new` 关键字将任何函数变成创建*实例*的*构造函数*。
+
+- 所有函数都有一个 `prototype` 元素。
+
 - 实例的行为就好像它们构造函数的原型中的元素是它们自己的元素一样。
-- `class`关键字充当编写构造函数的*语法糖*。
-- 用`class`关键字创建的类实际上是带有可选链式原型的构造函数。
+
+- `class` 关键字充当编写构造函数的*语法糖*。
+
+- 用 `class` 关键字创建的类实际上是带有可选链式原型的构造函数。
+
 - 类应谨慎使用，其语法故意限制了灵活性，并且类层次结构可能导致过度耦合的代码。
 
 ### 构造函数和类的用法示例
@@ -12893,13 +14192,13 @@ const Manager = clazz(Person, {
 
 ### 绑定
 
-早些时候，我们看到了一个能很好地处理属性的[getWith](getWith)食谱：
+早些时候，我们看到了一个能很好地处理属性的 [getWith](getWith) 食谱：
 
 ```
 const getWith = (attr) => (object) => object[attr]
 ```
 
-简单而有用。但既然我们花了一些时间研究带有方法的对象，我们可以看到`get`（和`pluck`）有一个失败模式。具体来说，如果我们想获取一个*方法*，它就不是很有用，因为我们会丢失上下文。考虑一些假设的类：
+简单而有用。但既然我们花了一些时间研究带有方法的对象，我们可以看到 `get`（和 `pluck`）有一个失败模式。具体来说，如果我们想获取一个*方法*，它就不是很有用，因为我们会丢失上下文。考虑一些假设的类：
 
 ```
 function InventoryRecord (apples, oranges, eggs) {
@@ -12938,8 +14237,6 @@ const inventories = [
 ```
 
 现在我们如何获取所有的鸡蛋计数？
-
-
 
 ```markdown
 mapWith(getWith('eggs'))(inventories)
@@ -13115,6 +14412,7 @@ cake.bake();
 ```
 
 像 `setFlavour` 这样的方法返回被设置的值，模拟了赋值的行为，其中 `cake.flavour = 'chocolate'` 是一个表达式，除了设置属性外，其求值结果也为值 `'chocolate'`。
+
 流式风格假定大多数时候，当你执行更新操作时，你对接收者（receiver）要做的其他事情比传递给函数的参数更感兴趣。因此，规则是返回接收者，除非该方法是一个查询：
 
 ```
@@ -13218,15 +14516,12 @@ Pantone 咖啡杯
 我们已经看到函数是 *一等实体*。这意味着我们可以将它们存储在数据结构中，传递给其他函数，并从函数中返回它们。作为函数是一等实体的结果，涌现出了大量非常强大的编程技术。
 
 我们也看到，我们可以利用函数作为一等实体来编写像 [maybe](#) 这样的装饰器：
-```
-
-
 
 ### 蓝色和黄色函数
 
 如果函数真的像那样工作，装饰器将会变得非常混乱。我们将不得不制作颜色编码的装饰器，比如一个蓝色的 `maybe` 和一个黄色的 `maybe`。我们必须仔细追踪哪些函数具有哪些颜色，就像法语等性别化语言中，你需要知道所有无生命物体的性别，以便在谈论它们时使用正确的性语法。
 
-这听起来很糟糕，对于编程工具来说确实如此。¹⁴¹ 一般原则是：** kinds of similar things 要少于类似事物的种类，但要允许你已有的东西以灵活的方式组合。** 你不能只是移除东西，你还必须让组合变得非常容易。函数作为一等实体就是一个很好的例子，因为它们允许你以灵活的方式组合函数。
+这听起来很糟糕，对于编程工具来说确实如此。¹⁴¹ 一般原则是：**kinds of similar things 要少于类似事物的种类，但要允许你已有的东西以灵活的方式组合。** 你不能只是移除东西，你还必须让组合变得非常容易。函数作为一等实体就是一个很好的例子，因为它们允许你以灵活的方式组合函数。
 
 带颜色的函数将是一个反面教材，因为你会通过将函数巴尔干化来使组合变得更困难。¹⁴²
 
@@ -13462,8 +14757,6 @@ const round3 = new CircleRequiringFiniteRadius(3);
 
 > ¹⁴² 参见前文链接的 *The Symmetry of JavaScript Functions*
 
-
-
 ### 受魔法保护（charmed）的函数
 
 请看：
@@ -13489,7 +14782,7 @@ likesToDrink('Peter')
  -antwort- undefined;
 ```
 
-这是一个非常直接的函数，它将 Bob、Carol、Ted 和 Alice 映射到饮品 'Ristretto'、'Cappuccino' 和 'Allongé'。这个映射被隐式地编码在代码的 switch 语句中。
+这是一个非常直接的函数，它将 Bob、Carol、Ted 和 Alice 映射到饮品 'Ristretto'、'Cappuccino' 和 'Allongé'。这个映射被隐式地编码在代码的 `switch` 语句中。
 
 我们可以将它与其他函数组合使用。例如，我们可以找出某人喜欢的饮品的首字母是不是 "c"：
 
@@ -13643,7 +14936,6 @@ const drinks = IterableDictionary(personToDrink);
 for (let name of people) {
   console.log(`${name} prefers to drink ${drinks(name)}`)
 }
-
 //=> 
 Bob prefers to drink Ristretto
 Ted prefers to drink Allongé
@@ -13657,7 +14949,6 @@ Alice prefers to drink Cappuccino
 for (let [name, drink] of personToDrink) {
   console.log(`${name} prefers to drink ${drink}`)
 }
-
 //=> undefined is not a function (evaluating 'personToDrink[Symbol.iterator]()')
 ```
 
@@ -13667,7 +14958,6 @@ for (let [name, drink] of personToDrink) {
 for (let [name, drink] of Object.entries(personToDrink)) {
   console.log(`${name} prefers to drink ${drink}`)
 }
-
 //=>
 Bob prefers to drink Ristretto
 Carol prefers to drink Cappuccino
@@ -13720,8 +15010,6 @@ FiniteCircleFactory(null).scaleBy(3).diameter()
 
 最终，无法避免需要知道哪些函数是函数，哪些实际上是类。工具可以提供帮助：一些 linting 应用可以强制执行命名约定，其中类以大写字母开头，函数以小写字母开头。
 
-
-
 ### 代理集合
 
 代理集合，意指“创建一个行为类似于集合的对象”，这在特定且有限的场景下有效，但若试图创建一个同时充当函数的通用代理，则会变得异常脆弱。
@@ -13764,6 +15052,7 @@ class Person {
 }
 
 const misterRogers = new Person('Fred', 'Rogers');
+
 misterRogers.fullName()
 //=> Fred Rogers
 ```
@@ -13810,7 +15099,7 @@ class Worker extends Person {
 }
 ```
 
-这对我们的公司很有效，以至于我们发展并产生了令人畏惧的“中层经理”，他们既管理其他人，自己也有经理。我们可以用 MiddleManager 来继承 Manager，但 Worker 和 MiddleManager 如何共享拥有经理的功能呢？
+这对我们的公司很有效，以至于我们发展并产生了令人畏惧的“中层经理”，他们既管理其他人，自己也有经理。我们可以用 `MiddleManager` 来继承 `Manager`，但 `Worker` 和 `MiddleManager` 如何共享拥有经理的功能呢？
 
 当然是通过混入：
 
@@ -13910,7 +15199,7 @@ const Coloured = {
 };
 ```
 
-将颜色编码混入我们的 Todo 原型非常简单：
+将颜色编码混入我们的 `Todo` 原型非常简单：
 
 ```js
 Object.assign(Todo.prototype, Coloured);
@@ -13999,9 +15288,7 @@ for (let property in urgent) console.log(property);
 
 函数式混入的一个好处是，我们可以解决这个问题，并透明地使混入的行为像 `class` 一样：
 
-
-
- ```
+```js
 const FunctionalMixin = (behaviour) =>
   function (target) {
     for (let property of Reflect.ownKeys(behaviour))
@@ -14044,7 +15331,7 @@ Todo.DEFAULT_NAME = 'Untitled';
 // Object.defineProperty(Todo, "DEFAULT_NAME", {value: 'Untitled'});
 ```
 
-我们无法对简单的 mixin 做同样的事情，因为简单 mixin 中的所有属性最终都会被默认混合到我们创建的实例的原型中。例如，假设我们想定义 `Coloured.RED`、`Coloured.GREEN` 和 `Coloured.BLUE`。但我们不希望任何具体的彩色实例定义 RED、GREEN 或 BLUE。
+我们无法对简单的 mixin 做同样的事情，因为简单 mixin 中的所有属性最终都会被默认混合到我们创建的实例的原型中。例如，假设我们想定义 `Coloured.RED`、`Coloured.GREEN` 和 `Coloured.BLUE`。但我们不希望任何具体的彩色实例定义 `RED`、`GREEN` 或 `BLUE`。
 
 同样，我们可以通过构建一个函数式 mixin 来解决这个问题。我们的 `FunctionalMixin` 工厂函数将接受一个可选的只读 mixin 属性字典：
 
@@ -14062,11 +15349,13 @@ function FunctionalMixin (behaviour, sharedBehaviour = {}) {
         });
     return target;
   }
+
   for (let property of sharedKeys)
     Object.defineProperty(mixin, property, {
       value: sharedBehaviour[property],
       enumerable: sharedBehaviour.propertyIsEnumerable(property)
     });
+
   return mixin;
 }
 ```
@@ -14094,7 +15383,6 @@ Coloured(Todo.prototype)
 
 const urgent = new Todo("finish blog post");
 urgent.setColourRGB(Coloured.RED);
-
 urgent.getColourRGB()
 //=> {"r":255, "g":0, "b":0}
 ```
@@ -14119,8 +15407,10 @@ urgent instanceof Coloured
 
 ```
 Coloured[Symbol.hasInstance] = (instance) => true
+
 urgent instanceof Coloured
 //=> true
+
 {} instanceof Coloured
 //=> true
 ```
@@ -14143,12 +15433,15 @@ function FunctionalMixin (behaviour, sharedBehaviour = {}) {
     target[typeTag] = true;
     return target;
   }
+
   for (let property of sharedKeys)
     Object.defineProperty(mixin, property, {
       value: sharedBehaviour[property],
       enumerable: sharedBehaviour.propertyIsEnumerable(property)
     });
+
   Object.defineProperty(mixin, Symbol.hasInstance, { value: (instance) => !!instance[typeTag] });
+
   return mixin;
 }
 ```
@@ -14156,17 +15449,18 @@ function FunctionalMixin (behaviour, sharedBehaviour = {}) {
 ```
 urgent instanceof Coloured
   //=> true
+
 {} instanceof Coloured
   //=> false
 ```
 
-你需要实现 instanceof 吗？很可能不需要。"自己造一套多态机制"通常是最后的选择。但它在编写测试用例时会很有用，而且一些大胆的框架开发人员可能正在研究多分发和函数的模式匹配。
+你需要实现 `instanceof` 吗？很可能不需要。"自己造一套多态机制"通常是最后的选择。但它在编写测试用例时会很有用，而且一些大胆的框架开发人员可能正在研究多分发和函数的模式匹配。
 
 ### 总结
 
-对象 mixin 模式的魅力在于其简洁性：它确实不需要在对象字面量和 Object.assign 外面再加一层抽象。
+对象 mixin 模式的魅力在于其简洁性：它确实不需要在对象字面量和 `Object.assign` 外面再加一层抽象。
 
-然而，用 mixin 模式定义的行为与用 class 关键字定义的行为*略有*不同。两个例子就是可枚举性和 mixin 属性（例如常量以及像 [Symbol.hasInstance] 这样的 mixin 方法）。
+然而，用 mixin 模式定义的行为与用 `class` 关键字定义的行为*略有*不同。两个例子就是可枚举性和 mixin 属性（例如常量以及像 `[Symbol.hasInstance]` 这样的 mixin 方法）。
 
 函数式 mixin 提供了实现这类功能的机会，代价是创建函数式 mixin 的 `FunctionalMixin` 函数会有一些复杂性。
 
@@ -14174,7 +15468,7 @@ urgent instanceof Coloured
 
 ### 模拟多重继承
 
-如果你想将行为混入类中，mixin 非常胜任。但有时，人们想要更多。他们想要**多重继承**。也就是说，他们真正想要的是创建一个同时继承 Todo*和* Coloured 的新类。
+如果你想将行为混入类中，mixin 非常胜任。但有时，人们想要更多。他们想要**多重继承**。也就是说，他们真正想要的是创建一个同时继承 `Todo`*和* `Coloured` 的新类。
 
 如果 JavaScript 有多重继承，我们可以通过让类继承多个超类来实现这一点：
 
@@ -14184,17 +15478,14 @@ class Todo {
     this.name = name || 'Untitled';
     this.done = false;
   }
-
   do () {
     this.done = true;
     return this;
   }
-
   undo () {
     this.done = false;
     return this;
   }
-
   toHTML () {
     return this.name; // 非常不安全
   }
@@ -14205,7 +15496,6 @@ class Coloured {
     this.colourCode = {r, g, b};
     return this;
   }
-
   getColourRGB () {
     return this.colourCode;
   }
@@ -14223,7 +15513,6 @@ class TimeSensitiveTodo extends Todo, Coloured {
     super(name);
     this.deadline = deadline;
   }
-
   getColourRGB () {
     let slack = this.deadline - Date.now();
 
@@ -14238,7 +15527,6 @@ class TimeSensitiveTodo extends Todo, Coloured {
     }
     else return green;
   }
-
   toHTML () {
     let rgb = this.getColourRGB();
 
@@ -14269,11 +15557,11 @@ class TimeSensitiveTodo extends ColouredTodo {
 }
 ```
 
-通过让`ColouredTodo`继承`Todo`，`TimeSensitiveTodo`可以继承`ColouredTodo`并覆盖来自两者的方法。这正是大多数程序员会做的事，而且我们知道这是一种反模式，因为它会导致类行为重复和深层次的类继承结构。
+通过让 `ColouredTodo` 继承 `Todo`，`TimeSensitiveTodo` 可以继承 `ColouredTodo` 并覆盖来自两者的方法。这正是大多数程序员会做的事，而且我们知道这是一种反模式，因为它会导致类行为重复和深层次的类继承结构。
 
 但是。
 
-与其手动创建这种继承层次，如果我们使用简单的混入（mixin）来替我们完成呢？我们可以利用[类是表达式](http://raganwald.com/2015/06/04/classes-are-expressions.html)¹⁴⁷这一特性，就像这样：
+与其手动创建这种继承层次，如果我们使用简单的混入（mixin）来替我们完成呢？我们可以利用[类是表达式](http://raganwald.com/2015/06/04/classes-are-expressions.html)¹⁴⁷ 这一特性，就像这样：
 
 ```
 let Coloured = FunctionalMixin({
@@ -14281,7 +15569,6 @@ let Coloured = FunctionalMixin({
     this.colourCode = {r, g, b};
     return this;
   },
-
   getColourRGB () {
     return this.colourCode;
   }
@@ -14292,11 +15579,9 @@ let Coloured = FunctionalMixin({
 let ColouredTodo = Coloured(class extends Todo {});
 ```
 
-这样一来，我们有了一个可以`ColouredTodo`继承和覆盖的`Coloured`子类，同时我们的`Coloured`行为也存在于一个混入中，我们可以在任何需要的地方使用它，而无需在代码中重复其功能。完整的解决方案如下：
+这样一来，我们有了一个可以 `ColouredTodo` 继承和覆盖的 `Coloured` 子类，同时我们的 `Coloured` 行为也存在于一个混入中，我们可以在任何需要的地方使用它，而无需在代码中重复其功能。完整的解决方案如下：
 
 ### Con Panna：组合类行为
-
-410
 
 ```
 class Todo {
@@ -14304,17 +15589,14 @@ class Todo {
     this.name = name || 'Untitled';
     this.done = false;
   }
-
   do () {
     this.done = true;
     return this;
   }
-
   undo () {
     this.done = false;
     return this;
   }
-
   toHTML () {
     return this.name; // highly insecure
   }
@@ -14327,7 +15609,6 @@ let Coloured = FunctionalMixin({
     this.colourCode = {r, g, b};
     return this;
   },
-
   getColourRGB () {
     return this.colourCode;
   }
@@ -14355,7 +15636,6 @@ class TimeSensitiveTodo extends ColouredTodo {
     super(name);
     this.deadline = deadline;
   }
-
   getColourRGB () {
     let slack = this.deadline - Date.now();
 
@@ -14370,7 +15650,6 @@ class TimeSensitiveTodo extends ColouredTodo {
     }
     else return green;
   }
-
   toHTML () {
     let rgb = this.getColourRGB();
 
@@ -14388,7 +15667,7 @@ task.toHTML()
 //=> <span style="color: #FFFF00;">Finish JavaScript Allongé</span>
 ```
 
-关键代码片段是`let ColouredTodo = Coloured(class extends Todo {});`，它将行为转换为一个可以被继承和覆盖的子类。
+关键代码片段是 `let ColouredTodo = Coloured(class extends Todo {});`，它将行为转换为一个可以被继承和覆盖的子类。
 
 ### 子类工厂
 
@@ -14402,7 +15681,7 @@ const SubclassFactory = (behaviour) => {
 }
 ```
 
-使用`SubclassFactory`，我们包装想要扩展的类，而不是声明中的类。像这样：
+使用 `SubclassFactory`，我们包装想要扩展的类，而不是声明中的类。像这样：
 
 ```
 const SubclassFactory = (behaviour) => {
@@ -14418,7 +15697,6 @@ const ColouredAsWellAs = SubclassFactory({
     this.colourCode = {r, g, b};
     return this;
   },
-
   getColourRGB () {
     return this.colourCode;
   }
@@ -14431,7 +15709,6 @@ class TimeSensitiveTodo extends ColouredAsWellAs(ToDo) {
     super(name);
     this.deadline = deadline;
   }
-
   getColourRGB () {
     let slack = this.deadline - Date.now();
 
@@ -14446,7 +15723,6 @@ class TimeSensitiveTodo extends ColouredAsWellAs(ToDo) {
     }
     else return green;
   }
-
   toHTML () {
     let rgb = this.getColourRGB();
 
@@ -14455,7 +15731,7 @@ class TimeSensitiveTodo extends ColouredAsWellAs(ToDo) {
 }
 ```
 
-`class TimeSensitiveTodo extends ColouredAsWellAs(ToDo)`的语法精确表达了我们想表达的：我们既在扩展`Coloured`行为，又在扩展`ToDo`。¹⁴⁸
+`class TimeSensitiveTodo extends ColouredAsWellAs(ToDo)` 的语法精确表达了我们想表达的：我们既在扩展 `Coloured` 行为，又在扩展 `ToDo`。¹⁴⁸
 
 > ¹⁴⁸Justin Fagnani 在他的文章《"Real" Mixins with JavaScript Classes》中将这种模式命名为"subclass factory"。这篇文章非常值得阅读，他的实现还涉及了其他问题，例如在现代 JavaScript 引擎上优化性能。
 
@@ -14501,7 +15777,7 @@ class Author extends Bibliophile {
 }
 ```
 
-我们不太可能尝试使用相同的`._books`属性来同时指代作者写的书和藏书爱好者收藏的书。出于某种奇怪的原因，我们的本体论认为所有作者也都是藏书爱好者，所以自然我们会在设计`Author`时查看`Bibliophile`超类，而且根据定义，所有对`Author`的测试都会在`Bibliophile`的实例上进行。
+我们不太可能尝试使用相同的 `._books` 属性来同时指代作者写的书和藏书爱好者收藏的书。出于某种奇怪的原因，我们的本体论认为所有作者也都是藏书爱好者，所以自然我们会在设计 `Author` 时查看 `Bibliophile` 超类，而且根据定义，所有对 `Author` 的测试都会在 `Bibliophile` 的实例上进行。
 
 但是，对于混入来说情况并非如此。如果我们写：
 
@@ -14531,7 +15807,7 @@ const IsAuthor = {
 };
 ```
 
-这段代码可能会正常运作数月甚至数年。`IsAuthor`可以独立于`Bibliophile`进行测试，两者似乎都能正确运行。直到命运的那一天，有人写了类似这样的代码：
+这段代码可能会正常运作数月甚至数年。`IsAuthor` 可以独立于 `Bibliophile` 进行测试，两者似乎都能正确运行。直到命运的那一天，有人写了类似这样的代码：
 
 ```
 class BookLovingAuthor extends Person {
@@ -14558,87 +15834,16 @@ class Person {
         this.rename(first, last);
     }
     fullName () {
-        return this.firstName + " " + this.lastName;
-    }
-    rename (first, last) {
-        this.firstName = first;
-        this.lastName = last;
-        return this;
-    }
-};
-```
-
-```
-const IsAuthor = (function () {
-    const books = Symbol();
-
-    return {
-        addBook (name) {
-            this.books().push(name);
-            return this;
-        },
-        books () {
-            return this[books] || (this[books] = []);
-        }
-    };
-})();
-```
-
-```
-const IsBibliophile = (function () {
-    const books = Symbol();
-
-    return {
-        addToCollection (name) {
-            this.collection().push(name);
-            return this;
-        },
-        collection () {
-            return this[books] || (this[books] = []);
-        }
-    };
-})();
-```
 
 
 
-```javascript
-};
-})();
-
-class BookLovingAuthor extends Person {
-}
-
-Object.assign(BookLovingAuthor.prototype, IsBibliophile, IsAuthor);
-
-new BookLovingAuthor('Isaac', 'Asimov')
-  .addBook('I Robot')
-  .addToCollection('The Mysterious Affair at Styles')
-  .collection()
-    //=> ["The Mysterious Affair at Styles"]
-  .books().
-    //=> ["I Robot"]
-```
-
-使用 symbol 作为属性键可以消除混入之间的属性冲突。
-
-### 降低耦合
-
-当类以层次结构构建，或混入分散在代码库中时，耦合会随着时间自然产生。通常，随着代码库的演进，每一轮迭代的程序员都会使用前几轮迭代累积成果所提供的方法和属性。
-
-随着时间推移，方法和属性的数量不断增加，每一段新的行为都会触及越来越多的方法和属性。当需要重构代码库时，将行为拆分分离会变得非常困难，因为许多部分自然地相互依赖。
-
-抵御这种耦合自然倾向的一种方式是确保每个元对象只暴露它赋予接收者的方法。所有其他方法和属性都应保持私有。
-
-注意，将属性设为私有并非意识形态问题：这不是"面向对象理论中纯粹性"的问题。这是实际问题：它关乎最小化元对象的接口面积，以最小化它与其他对象产生耦合的方式。
-
-### 使用 symbol 减少耦合属性
+### 使用 Symbol 减少耦合属性
 
 我们已经看到，使用 symbol 作为属性键可以防止混入意外地为不同目的共享相同的属性名称。它们还可以帮助防止程序员*故意*为不同目的使用相同的属性名称。
 
 以下是我们关注此问题的原因。考虑：
 
-```
+```javascript
 class Person {
   constructor (first, last) {
     this.rename(first, last);
@@ -14656,37 +15861,34 @@ class Person {
 class Bibliophile extends Person {
   constructor (first, last) {
     super(first, last);
-```
-
-```
-this._books = [];
-}
-addToCollection (name) {
-  this._books.push(name);
-  return this;
-}
-hasInCollection (name) {
-  return this._books.indexOf(name) >= 0;
-}
+    this._books = [];
+  }
+  addToCollection (name) {
+    this._books.push(name);
+    return this;
+  }
+  hasInCollection (name) {
+    return this._books.indexOf(name) >= 0;
+  }
 }
 ```
 
-```
+```javascript
 const bezos = new Bibliophile('jeff', 'bezos')
   .addToCollection("The Everything Store: Jeff Bezos and the Age of Amazon")
   .hasInCollection("Matthew and the Wellington Boots")
   //=> false
 ```
 
-```
+```javascript
 bezos
   .hasInCollection("The Everything Store: Jeff Bezos and the Age of Amazon")
   //=> true
 ```
 
-注意 ._books 是一个数组。现在考虑：
+注意`._books`是一个数组。现在考虑：
 
-```
+```javascript
 class BookGlutton extends Bibliophile {
   buyInBulk (...names) {
     this.books().push(...names);
@@ -14695,11 +15897,11 @@ class BookGlutton extends Bibliophile {
 }
 ```
 
-藏书狂可以批量购买书籍，普通爱书人不能。到目前为止一切正常。但我们的书籍收藏实现非常简单粗暴：数组是一种线性数据结构，`hasInCollection` 的性能为 O(n)。一旦某个爱书人拥有一个非常大的收藏，操作就会变得极其缓慢。
+藏书狂可以批量购买书籍，普通爱书人不能。到目前为止一切正常。但我们的书籍收藏实现非常简单粗暴：数组是一种线性数据结构，`hasInCollection`的性能为`O(n)`。一旦某个爱书人拥有一个非常大的收藏，操作就会变得极其缓慢。
 
-大大简化地说，如果我们重构 `Bibliophile` 使用 Set 呢？
+大大简化地说，如果我们重构`Bibliophile`使用`Set`呢？
 
-```
+```javascript
 class Bibliophile extends Person {
   constructor (first, last) {
     super(first, last);
@@ -14715,14 +15917,13 @@ class Bibliophile extends Person {
 }
 ```
 
-速度大大提升，但我们刚刚破坏了 `BookGlutton` 子类。这是一个非常小且刻意构造的例子，但这种现象非常真实，而且类层次结构越大，就越容易出现。`BookGlutton` 子类的作者将 `BookGlutton` 耦合到了 `Bibliophile` 的一个实现细节。这是开放递归的一个"特性"，但防止这种情况发生是更明智的做法。
+速度大大提升，但我们刚刚破坏了`BookGlutton`子类。这是一个非常小且刻意构造的例子，但这种现象非常真实，而且类层次结构越大，就越容易出现。`BookGlutton`子类的作者将`BookGlutton`耦合到了`Bibliophile`的一个实现细节。这是开放递归的一个"特性"，但防止这种情况发生是更明智的做法。
 
 当然，我们可以使用与防止意外属性冲突相同的技术来防止子类的故意耦合：Symbol。
 
-```
+```javascript
 const Bibliophile = (function () {
   const books = Symbol("books");
-
   return class Bibliophile extends Person {
     constructor (first, last) {
       super(first, last);
@@ -14739,9 +15940,9 @@ const Bibliophile = (function () {
 })();
 ```
 
-现在，任何继承 `Bibliophile` 的子类都被强烈阻止直接访问 "books" 属性：
+现在，任何继承`Bibliophile`的子类都被强烈阻止直接访问`"books"`属性：
 
-```
+```javascript
 class BookGlutton extends Bibliophile {
   buyInBulk (...names) {
     for (let name of names) {
@@ -14764,13 +15965,13 @@ class BookGlutton extends Bibliophile {
 
 ### 有状态方法装饰器
 
-正如在[方法装饰器](...)中所述，以及在[对称、色彩与魅力](...)中再次提到的，简单的函数装饰器在普通函数上工作得很好。但在 JavaScript 中，函数可以以不同的方式调用，其中一些方式彼此之间略有不兼容。
+正如在方法装饰器中所述，以及在对称、色彩与魅力中再次提到的，简单的函数装饰器在普通函数上工作得很好。但在 JavaScript 中，函数可以以不同的方式调用，其中一些方式彼此之间略有不兼容。
 
-我们非常关注的是 JavaScript 中的*方法*，即用于定义实例行为的函数。当一个函数作为方法被调用时，名称 `this` 会被绑定到该实例，大多数方法都依赖该绑定才能正常工作。
+我们非常关注的是 JavaScript 中的*方法*，即用于定义实例行为的函数。当一个函数作为方法被调用时，名称`this`会被绑定到该实例，大多数方法都依赖该绑定才能正常工作。
 
-例如，考虑简单的装饰器 `requireAll`，如果函数调用时传入的参数少于声明的参数数量，它会抛出异常：
+例如，考虑简单的装饰器`requireAll`，如果函数调用时传入的参数少于声明的参数数量，它会抛出异常：
 
-```
+```javascript
 const requireAll = (fn) =>
   function (...args) {
     if (args.length < fn.length)
@@ -14780,9 +15981,9 @@ const requireAll = (fn) =>
   }
 ```
 
-`requireAll` 与普通函数配合得非常好，即我们所谓的"蓝色"调用。但如果我们想将 `requireAll` 用于方法，我们必须以保留 `this` 的方式来编写它，使其在调用底层函数时保持正确的上下文：
+`requireAll`与普通函数配合得非常好，即我们所谓的"蓝色"调用。但如果我们想将`requireAll`用于方法，我们必须以保留`this`的方式来编写它，使其在调用底层函数时保持正确的上下文：
 
-```
+```javascript
 const requireAll = (fn) =>
   function (...args) {
     if (args.length < fn.length)
@@ -14798,14 +15999,11 @@ const requireAll = (fn) =>
 
 ### 状态问题
 
-正确处理 `this` 并非普通函数装饰器与方法装饰器的唯一区别。有些装饰器是有状态的，比如 `once`。这是一个正确设置 `this` 的版本：
+正确处理`this`并非普通函数装饰器与方法装饰器的唯一区别。有些装饰器是有状态的，比如`once`。这是一个正确设置`this`的版本：
 
-## 更多装饰器
-
-```
+```javascript
 const once = (fn) => {
   let hasRun = false;
-
   return function (...args) {
     if (hasRun) return;
     hasRun = true;
@@ -14816,19 +16014,7 @@ const once = (fn) => {
 
 假设我们只允许一个人的名字被设置一次，我们可能会写：
 
-```
-const once = (fn) => {
-  let hasRun = false;
-
-  return function (...args) {
-    if (hasRun) return;
-    hasRun = true;
-    return fn.apply(this, args);
-  }
-}
-```
-
-```
+```javascript
 class Person {
   setName (first, last) {
     this.firstName = first;
@@ -14841,57 +16027,53 @@ class Person {
 };
 ```
 
-```
+```javascript
 Object.defineProperty(Person.prototype, 'setName', { value: once(Person.prototype.setName) });
 ```
 
-```
+```javascript
 const logician = new Person()
                    .setName('Raymond', 'Smullyan')
                    .setName('Haskell', 'Curry');
 ```
 
-```
+```javascript
 logician.fullName()
   //=> Raymond Smullyan
 ```
 
-## 更多装饰器
+正如我们所预期的，只有第一次调用`.setName`生效，而且它在方法上正常工作。但存在一个微妙的 bug，很容易在编写单元测试时被忽略：
 
-正如我们所预期的，只有第一次调用 `.setName` 生效，而且它在方法上正常工作。但存在一个微妙的 bug，很容易在编写单元测试时被忽略：
-
-```
+```javascript
 const logician = new Person()
                        .setName('Raymond', 'Smullyan');
-
 const musician = new Person()
                        .setName('Miles', 'Davis');
 ```
 
-```
+```javascript
 logician.fullName()
   //=> Raymond Smullyan
 ```
 
-```
+```javascript
 musician.fullName()
   //=> Raymond Smullyan
 ```
 
 !?!?!?
 
-这里发生的情况是，当我们写 `Object.defineProperty(Person.prototype, 'setName', { value: once(Person.prototype.setName) });` 时，我们包装了一个绑定到 `Person.prototype` 的函数。该函数在所有 Person 实例之间共享。这是故意的，这是原型继承的全部意义所在（以及 JavaScript 基于原型构建的"基于类的继承"）。
+这里发生的情况是，当我们写`Object.defineProperty(Person.prototype, 'setName', { value: once(Person.prototype.setName) });`时，我们包装了一个绑定到`Person.prototype`的函数。该函数在所有`Person`实例之间共享。这是故意的，这是原型继承的全部意义所在（以及 JavaScript 基于原型构建的"基于类的继承"）。
 
-由于我们的 once 装饰器返回的装饰函数带有私有状态（`hasRun` 变量），所有实例共享相同的私有状态，因此产生了这个 bug。
+由于我们的`once`装饰器返回的装饰函数带有私有状态（`hasRun`变量），所有实例共享相同的私有状态，因此产生了这个 bug。
 
 ### 编写有状态方法装饰器
 
-如果我们不需要将同一个装饰器同时用于函数和方法，我们可以重写装饰器，使用 [WeakSet](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakSet) 来追踪某个方法是否已被某个实例调用过：
+如果我们不需要将同一个装饰器同时用于函数和方法，我们可以重写装饰器，使用`WeakSet`来追踪某个方法是否已被某个实例调用过：
 
-```
+```javascript
 const once = (fn) => {
   let invocations = new WeakSet();
-
   return function (...args) {
     if (invocations.has(this)) return;
     invocations.add(this);
@@ -14900,51 +16082,39 @@ const once = (fn) => {
 }
 ```
 
-```
+```javascript
 const logician = new Person()
-```
-
-
-
-```
-.setName('Raymond', 'Smullyan');
-
+                   .setName('Raymond', 'Smullyan');
 logician.setName('Haskell', 'Curry');
-
 const musician = new Person()
               .setName('Miles', 'Davis');
-
 logician.fullName()
   //=> Raymond Smullyan
-
 musician.fullName()
   //=> Miles Davis
 ```
 
-现在每个实例都会在 WeakSet 中存储是否调用了 `.setName`，因此 `logician` 和 `musician` 可以共享该方法而无需共享其状态。
+现在每个实例都会在`WeakSet`中存储是否调用了`.setName`，因此`logician`和`musician`可以共享该方法而无需共享其状态。
 
 ### 不兼容性
 
-为了处理方法，我们引入了“意外的复杂性”来处理方法和状态。更糟糕的是，我们为方法实现的 `once` 在“严格”模式下无法与普通函数正常工作：
+为了处理方法，我们引入了“意外的复杂性”来处理方法和状态。更糟糕的是，我们为方法实现的`once`在“严格”模式下无法与普通函数正常工作：
 
-```
+```javascript
 "use strict"
-
 const hello = once(() => 'hello!');
-
 hello()
   //=> undefined is not an object!
 ```
 
-如果你没有将其作为方法调用，在严格模式下，`this` 会被绑定到 `undefined`，而 `undefined` 无法添加到 WeakSet 中。
+如果你没有将其作为方法调用，在严格模式下，`this`会被绑定到`undefined`，而`undefined`无法添加到`WeakSet`中。
 
-修正我们的装饰器以处理 `undefined` 很简单：
+修正我们的装饰器以处理`undefined`很简单：
 
-```
+```javascript
 const once = (fn) => {
   let invocations = new WeakSet(),
       undefinedContext = Symbol('undefined-context');
-
   return function (...args) {
     const context = this === undefined
               ? undefinedContext
@@ -14960,20 +16130,17 @@ const once = (fn) => {
 
 最终，我们要么编写专门为方法设计的特殊装饰器，要么容忍在同一个装饰器中处理方法调用和函数调用所带来的额外复杂性。
 
-151 参见前面链接的 [JavaScript 函数的对称性](The Symmetry of JavaScript Functions)
-
 ### 超越 ES6/ECMAScript 2015 的类装饰器
 
 在函数混入中，我们讨论了将功能*混入* JavaScript 类并修改类。我们观察到，当应用于可能在其他地方使用的类时，这种方法有缺陷，但作为从头开始构建类的技巧时是完全可行的。严格用于构建类时，混入帮助我们将类分解为具有专注职责的更小实体，这些实体可以根据需要在类之间共享。
 
 让我们回顾一下制作函数混入的辅助函数：
 
-```
+```javascript
 function FunctionalMixin (behaviour, sharedBehaviour = {}) {
   const instanceKeys = Reflect.ownKeys(behaviour);
   const sharedKeys = Reflect.ownKeys(sharedBehaviour);
   const typeTag = Symbol("isA");
-
   function mixin (target) {
     for (let property of instanceKeys)
       if (!target[property])
@@ -14994,13 +16161,11 @@ function FunctionalMixin (behaviour, sharedBehaviour = {}) {
 }
 ```
 
-这创建了一个函数，可以将行为混入任何目标，无论是类原型还是独立对象。它具有创建函数的“静态”或“共享”属性的便捷功能，甚至还添加了一些简单的 `hasInstance` 处理，以便 `instanceof` 操作符能够工作。
+这创建了一个函数，可以将行为混入任何目标，无论是类原型还是独立对象。它具有创建函数的“静态”或“共享”属性的便捷功能，甚至还添加了一些简单的`hasInstance`处理，以便`instanceof`操作符能够工作。
 
 这里我们在类的原型上使用它：
 
-## 更多装饰器
-
-```
+```javascript
 const BookCollector = FunctionalMixin({
   addToCollection (name) {
     this.collection().push(name);
@@ -15012,7 +16177,7 @@ const BookCollector = FunctionalMixin({
 });
 ```
 
-```
+```javascript
 class Person {
   constructor (first, last) {
     this.rename(first, last);
@@ -15028,15 +16193,12 @@ class Person {
 };
 ```
 
-```
+```javascript
 BookCollector(Person.prototype);
-
 const president = new Person('Barak', 'Obama')
-
 president
   .addToCollection("JavaScript Allongé")
   .addToCollection("Kestrels, Quirky Birds, and Hopeless Egocentricity");
-
 president.collection()
   //=> ["JavaScript Allongé","Kestrels, Quirky Birds, and Hopeless Egocentricity"]
 ```
@@ -15045,14 +16207,11 @@ president.collection()
 
 我们的混入支持任何类型的目标非常好，但让我们使它们专门针对类：
 
-## 更多装饰器
-
-```
+```javascript
 function ClassMixin (behaviour, sharedBehaviour = {}) {
   const instanceKeys = Reflect.ownKeys(behaviour);
   const sharedKeys = Reflect.ownKeys(sharedBehaviour);
   const typeTag = Symbol("isA");
-
   function mixin (clazz) {
     for (let property of instanceKeys)
       if (!clazz.prototype[property])
@@ -15073,9 +16232,9 @@ function ClassMixin (behaviour, sharedBehaviour = {}) {
 }
 ```
 
-这个版本的 `mixin` 函数将实例行为混入类的原型，因此我们以牺牲灵活性为代价获得了便利：
+这个版本的`mixin`函数将实例行为混入类的原型，因此我们以牺牲灵活性为代价获得了便利：
 
-```
+```javascript
 const BookCollector = ClassMixin({
   addToCollection (name) {
     this.collection().push(name);
@@ -15101,28 +16260,28 @@ class Person {
 };
 ```
 
-```
+```javascript
 BookCollector(Person);
 ```
 
-```
+```javascript
 const president = new Person('Barak', 'Obama')
 ```
 
-```
+```javascript
 president
   .addToCollection("JavaScript Allongé")
   .addToCollection("Kestrels, Quirky Birds, and Hopeless Egocentricity");
 ```
 
-```
+```javascript
 president.collection()
   //=> ["JavaScript Allongé", "Kestrels, Quirky Birds, and Hopeless Egocentricity"]
 ```
 
-到目前为止还不错，但感觉有点事后才添加上的。让我们利用类是表达式152这一事实：
+到目前为止还不错，但感觉有点事后才添加上的。让我们利用类是表达式这一事实：
 
-```
+```javascript
 const BookCollector = ClassMixin({
   addToCollection (name) {
     this.collection().push(name);
@@ -15134,7 +16293,7 @@ const BookCollector = ClassMixin({
 });
 ```
 
-```
+```javascript
 const Person = BookCollector(class {
   constructor (first, last) {
     this.rename(first, last);
@@ -15143,15 +16302,18 @@ const Person = BookCollector(class {
     return this.firstName + " " + this.lastName;
   }
   rename (first, last) {
+    this.firstName = first;
+    this.lastName = last;
+    return this;
+  }
+});
 ```
-
-152 http://raganwald.com/2015/06/04/classes-are-expressions.html
 
 这在结构上更优，它在一个表达式中将行为的混入与类声明绑定在一起，因此我们摆脱了在类创建之后再混入事物的想法。
 
 但是（总是有但是），我们的模式有三个不同的元素（被绑定的名称、混入和被声明的类）。如果我们想混入两种或更多行为，我们就必须像这样嵌套函数：
 
-```
+```javascript
 const Author = ClassMixin({
   writeBook (name) {
     this.books().push(name);
@@ -15163,7 +16325,7 @@ const Author = ClassMixin({
 });
 ```
 
-```
+```javascript
 const Person = Author(BookCollector(class {
   // ...
 }));
@@ -15175,20 +16337,11 @@ const Person = Author(BookCollector(class {
 
 ### 类装饰器
 
-有一个备受推崇的提议153，未来将在 JavaScript 中添加 Python 风格的类装饰器，昵称为“ES.later”。154
+有一个备受推崇的提议，未来将在 JavaScript 中添加 Python 风格的类装饰器，昵称为“ES.later”。
 
 装饰器是一个作用于类的函数。这是来自前述实现的一个非常简单的例子：
 
-153 https://github.com/wycats/javascript-decorators
-
-154 这里的“ES.later”我们指的是未来某个版本的 ECMAScript，它最终可能会被批准，但目前仅存在于 Babel 等转译器中。显然，在生产环境中使用任何 ES.later 特性是一个复杂的决定，需要考虑的因素远超过本书所能列举的。
-```
-
-
-
- ## 更多装饰器
-
-```
+```javascript
 function annotation(target) {
   // Add a property on target
   target.annotated = true;
@@ -15203,13 +16356,13 @@ MyClass.annotated
   //=> true
 ```
 
-如你所见，*annotation* 是一个类装饰器，它接受一个类作为参数。该函数可以做任何事情，包括修改类或类的原型。如果装饰器函数没有返回任何内容，类的名称将绑定到修改后的类。¹⁵⁵
+如你所见，`annotation`是一个类装饰器，它接受一个类作为参数。该函数可以做任何事情，包括修改类或类的原型。如果装饰器函数没有返回任何内容，类的名称将绑定到修改后的类。
 
-一个类通过与定义前加上 `@` 和计算结果为装饰器的表达式来“装饰”该函数。在简单的示例中，我们使用了一个变量名。
+一个类通过与定义前加上`@`和计算结果为装饰器的表达式来“装饰”该函数。在简单的示例中，我们使用了一个变量名。
 
 嗯哼。一个修改类的函数，你是说？让我们试试：
 
-```
+```javascript
 const BookCollector = ClassMixin({
   addToCollection (name) {
     this.collection().push(name);
@@ -15232,6 +16385,7 @@ class Person {
     this.firstName = first;
     this.lastName = last;
     return this;
+  }
 };
 
 const president = new Person('Barak', 'Obama')
@@ -15246,7 +16400,7 @@ president.collection()
 
 你还可以使用装饰器来混入多种行为：
 
-```
+```javascript
 const BookCollector = ClassMixin({
   addToCollection (name) {
     this.collection().push(name);
@@ -15283,17 +16437,15 @@ class Person {
 };
 ```
 
-类装饰器提供了一种紧凑的、"魔法般的"语法，与类的构造紧密相连。它们还需要理解另外一种语法。但有些人认为，为不同的事物使用不同的语法有助于提高可理解性，并且同时拥有用于装饰的 `@foo` 和用于函数调用的 `bar(...)` 是一种优势。
+类装饰器提供了一种紧凑的、"魔法般的"语法，与类的构造紧密相连。它们还需要理解另外一种语法。但有些人认为，为不同的事物使用不同的语法有助于提高可理解性，并且同时拥有用于装饰的`@foo`和用于函数调用的`bar(...)`是一种优势。
 
-装饰器尚未被正式批准，不过目前已经有多种实现可用于将装饰器语法转译为 ES5 语法。这些示例是使用 [Babel](http://babeljs.io) 进行求值的。
-
-> ¹⁵⁵虽然这个例子没有展示，但如果它返回一个构造函数，那将会被赋值给类的名称。这允许创建纯功能的混入以及其他超出本文范围的有趣技术。
+装饰器尚未被正式批准，不过目前已经有多种实现可用于将装饰器语法转译为 ES5 语法。这些示例是使用 Babel 进行求值的。
 
 ### 超越 ES6/ECMAScript 2015 的方法装饰器
 
-在 ES6/ECMAScript 2015 之前，我们以一种简单直接的方式装饰方法。给定一个像 `fluent`（又名 chain）这样的方法装饰器：
+在 ES6/ECMAScript 2015 之前，我们以一种简单直接的方式装饰方法。给定一个像`fluent`（又名 chain）这样的方法装饰器：
 
-```
+```javascript
 const fluent = (method) =>
   function (...args) {
     method.apply(this, args);
@@ -15303,7 +16455,7 @@ const fluent = (method) =>
 
 我们会用装饰器包装函数，并将它们绑定到名称以创建方法，就像这样：
 
-```
+```javascript
 const Person = function () {};
 
 Person.prototype.setName = fluent(function setName (first, last) {
@@ -15316,29 +16468,24 @@ Person.prototype.fullName = function fullName () {
 };
 ```
 
-有了 `class` 关键字，我们有一种更优雅的方式可以一步到位：
+有了`class`关键字，我们有一种更优雅的方式可以一步到位：
 
-```
+```javascript
 class Person {
-
   setName (first, last) {
     this.firstName = first;
     this.lastName = last;
     return this;
   }
-
   fullName () {
     return this.firstName + " " + this.lastName;
   }
-
 }
 ```
 
-由于 ECMAScript 2015 的类语法没有提供任何Advertisement
+由于 ECMAScript 2015 的类语法没有提供任何在声明方法时装饰它的任何方式，我们不得不在声明`Person`之后引入这种丑陋的“事后装饰”：
 
-在声明方法时装饰它的任何方式，我们不得不在声明 Person 之后引入这种丑陋的“事后装饰”：
-
-```
+```javascript
 Object.defineProperty(Person.prototype, 'setName', { value: fluent(Person.prototype.setName) });
 ```
 
@@ -15346,11 +16493,11 @@ Object.defineProperty(Person.prototype, 'setName', { value: fluent(Person.protot
 
 #### es.later 方法装饰器
 
-为了解决由 ECMAScript 2015 造成的问题，方法装饰器¹⁵⁷已被提议用于未来版本的 JavaScript（昵称为 "ES.later"）。¹⁵⁸语法类似于类装饰器，但类装饰器接受一个类作为参数并返回相同（或不同）的类，而方法装饰器实际上在原型上定义属性时进行干预。
+为了解决由 ECMAScript 2015 造成的问题，方法装饰器已被提议用于未来版本的 JavaScript（昵称为 "ES.later"）。语法类似于类装饰器，但类装饰器接受一个类作为参数并返回相同（或不同）的类，而方法装饰器实际上在原型上定义属性时进行干预。
 
-ES.later 装饰器版本的 fluent 看起来像这样：
+ES.later 装饰器版本的`fluent`看起来像这样：
 
-```
+```javascript
 function fluent (target, name, descriptor) {
   const method = descriptor.value;
 
@@ -15363,19 +16510,16 @@ function fluent (target, name, descriptor) {
 
 我们会这样使用它：
 
-```
+```javascript
 class Person {
-
   @fluent
   setName (first, last) {
     this.firstName = first;
     this.lastName = last;
   }
-
   fullName () {
     return this.firstName + " " + this.lastName;
   }
-
 };
 ```
 
@@ -15385,7 +16529,7 @@ class Person {
 
 但并非所有的优雅都丧失了。由于装饰器是表达式，我们可以用一个适配器来缓解痛苦：
 
-```
+```javascript
 const wrapWith = (decorator) =>
   function (target, name, descriptor) {
     descriptor.value = decorator(descriptor.value);
@@ -15399,41 +16543,36 @@ function fluent (method) {
 }
 
 class Person {
-
   @wrapWith(fluent)
   setName (first, last) {
     this.firstName = first;
     this.lastName = last;
   }
-
   fullName () {
     return this.firstName + " " + this.lastName;
   }
-
 };
 ```
 
 或者如果我们更喜欢：
 
-（虽然 ES.later 尚未被批准，但在转译工具中对 ES.later 方法装饰器有广泛的支持。本文中的示例是使用 Babel¹⁵⁹ 进行求值的。）
-
-¹⁵⁹ [http://babeljs.io](http://babeljs.io)
+（虽然 ES.later 尚未被批准，但在转译工具中对 ES.later 方法装饰器有广泛的支持。本文中的示例是使用 Babel 进行求值的。）
 
 ### 轻量级 Traits
 
-> **trait** 是面向对象编程中使用的一个概念：trait 代表一组方法，可用于扩展类的功能。本质上，trait 类似于一个仅由具体方法组成的类，用于以类似于多重继承的机制扩展另一个类，但需要注意名称冲突，因此需要语言对合并时使用的名称冲突解决策略提供一些支持。——[维基百科](https://en.wikipedia.org/wiki/Trait_)
+> **trait** 是面向对象编程中使用的一个概念：trait 代表一组方法，可用于扩展类的功能。本质上，trait 类似于一个仅由具体方法组成的类，用于以类似于多重继承的机制扩展另一个类，但需要注意名称冲突，因此需要语言对合并时使用的名称冲突解决策略提供一些支持。——维基百科
 
-trait 类似于 [mixin](https://en.wikipedia.org/wiki/Mixin)，但使用 trait 时，我们不仅可以定义新行为，还可以定义扩展或覆盖现有行为的方式。Traits 是 [Scala](http://www.scala-lang.org) 等语言中的一等特性。Traits 在其他语言中也作为标准库可用，如 [Racket](http://docs.racket-lang.org/reference/trait.html)。最有趣的是，traits 是 [Self](https://en.wikipedia.org/wiki/Self_(programming_language)#Traits) 编程语言的一个特性，而 Self 是 JavaScript 的灵感来源之一。
+trait 类似于 mixin，但使用 trait 时，我们不仅可以定义新行为，还可以定义扩展或覆盖现有行为的方式。Traits 是 Scala 等语言中的一等特性。Traits 在其他语言中也作为标准库可用，如 Racket。最有趣的是，traits 是 Self 编程语言的一个特性，而 Self 是 JavaScript 的灵感来源之一。
 
 Traits 在撰写本文时还不是 JavaScript 的特性，但我们可以用 JavaScript 已有的特性轻松制作出轻量级的 traits。
 
 我们的问题是，我们希望能够从共享行为中覆盖或扩展功能，无论该共享行为是定义为类还是要混入的功能。
 
-#### 通过 [子类工厂](https://humanwhocodes.com/blog/2015/02/making-javascript-oop-faster-proposing-subclass-factory-function/) 解决
+#### 通过子类工厂解决
 
-从头开始回顾，我们有一个 Todo 类：
+从头开始回顾，我们有一个`Todo`类：
 
-```
+```javascript
 class Todo {
     constructor (name) {
         this.name = name || 'Untitled';
@@ -15446,10 +16585,6 @@ class Todo {
     }
 }
 ```
-
-
-
-## 更多装饰器
 
 ```javascript
 undo () {
@@ -15527,7 +16662,7 @@ class TimeSensitiveTodo extends Todo, Coloured {
 }
 ```
 
-但我们没有多重继承。在难以混入功能的语言中，我们可以通过让 `ColouredTodo` 继承 `Todo` 来伪造一个解决方案：
+但我们没有多重继承。在难以混入功能的语言中，我们可以通过让`ColouredTodo`继承`Todo`来伪造一个解决方案：
 
 ```javascript
 class ColouredTodo extends Todo {
@@ -15607,7 +16742,7 @@ class ColouredMeeting extends Meeting {
 }
 ```
 
-这迫使我们在整个代码库中重复“带颜色”的功能。但多亏了混入（mixin），我们可以两全其美：我们可以让 `ColouredAsWellAs` 成为一种混入，它创建一个新的子类，然后将功能混入该子类。我们称之为“子类工厂”：
+这迫使我们在整个代码库中重复“带颜色”的功能。但多亏了混入（mixin），我们可以两全其美：我们可以让`ColouredAsWellAs`成为一种混入，它创建一个新的子类，然后将功能混入该子类。我们称之为“子类工厂”：
 
 ```javascript
 function ClassMixin (behaviour) {
@@ -15680,7 +16815,7 @@ class TimeSensitiveTodo extends ColouredAsWellAs(Todo) {
 }
 ```
 
-这使我们能够同时覆盖 `Todo` 的方法和 `ColouredAsWellAs` 的方法。而在其他地方，我们可以写：
+这使我们能够同时覆盖`Todo`的方法和`ColouredAsWellAs`的方法。而在其他地方，我们可以写：
 
 ```javascript
 const ColouredMeeting = ColouredAsWellAs(Meeting);
@@ -15700,7 +16835,7 @@ class TimeSensitiveMeeting extends ColouredAsWellAs(Meeting) {
 
 ### 定义轻量级特质
 
-让我们从 `ClassMixin` 开始。我们稍微修改一下，让它绝不尝试定义已存在的方法，并用它创建 `Coloured`——一个定义两个方法的函数：
+让我们从`ClassMixin`开始。我们稍微修改一下，让它绝不尝试定义已存在的方法，并用它创建`Coloured`——一个定义两个方法的函数：
 
 ```javascript
 function Define (behaviour) {
@@ -15738,9 +16873,9 @@ const Coloured = Define({
 });
 ```
 
-Coloured 现在是一个修改类的函数，添加两个方法，前提是它们在类中尚不存在。
+`Coloured`现在是一个修改类的函数，添加两个方法，前提是它们在类中尚不存在。
 
-但我们需要一个变体来“覆盖”`getColourRGB`。我们可以写一个 `Define` 的变体，它总是覆盖目标的方法，并将原始方法作为第一个参数传入。这类似于“环绕式”[方法增强][ma-mj]：
+但我们需要一个变体来“覆盖”`getColourRGB`。我们可以写一个`Define`的变体，它总是覆盖目标的方法，并将原始方法作为第一个参数传入。这类似于“环绕式”方法增强：
 
 ```javascript
 function Override(behaviour) {
@@ -15787,15 +16922,13 @@ const DeadlineSensitive = Override({
 });
 ```
 
-
-
-Define 和 Override 是*协议*：它们定义了方法之间是否可能发生冲突，以及如果发生冲突，如何解决冲突。Define 禁止冲突，迫使我们选择其他协议。Override 允许我们编写一个方法来覆盖现有方法，并（可选地）调用原始方法。
+`Define`和`Override`是*协议*：它们定义了方法之间是否可能发生冲突，以及如果发生冲突，如何解决冲突。`Define`禁止冲突，迫使我们选择其他协议。`Override`允许我们编写一个方法来覆盖现有方法，并（可选地）调用原始方法。
 
 ### 组合协议
 
 我们*现在可以*这样写：
 
-```
+```javascript
 const TimeSensitiveTodo = DeadlineSensitive(
   Coloured(
     class TimeSensitiveTodo extends Todo {
@@ -15810,7 +16943,7 @@ const TimeSensitiveTodo = DeadlineSensitive(
 
 或者：
 
-```
+```javascript
 @DeadlineSensitive
 @Coloured
 class TimeSensitiveTodo extends Todo {
@@ -15821,9 +16954,9 @@ class TimeSensitiveTodo extends Todo {
 }
 ```
 
-但是，如果我们想多次将 DeadlineSensitive 和 Coloured 一起使用，我们可以用管道函数创建一个轻量级的 trait：
+但是，如果我们想多次将`DeadlineSensitive`和`Coloured`一起使用，我们可以用管道函数创建一个轻量级的 trait：
 
-```
+```javascript
 const SensitizeTodos = pipeline(Coloured, DeadlineSensitive);
 
 @SensitizeTodos
@@ -15835,15 +16968,15 @@ class TimeSensitiveTodo extends Todo {
 }
 ```
 
-现在 SensitizeTodos 结合了定义方法和覆盖现有方法：我们通过组合协议构建了一个轻量级的 trait。
+现在`SensitizeTodos`结合了定义方法和覆盖现有方法：我们通过组合协议构建了一个轻量级的 trait。
 
-这就是 trait 的全部：协议的组合。我们不需要一大堆新的关键字或装饰器（如 @overrides）来实现它，我们只需使用 JavaScript 中简单自然的函数式组合。
+这就是 trait 的全部：协议的组合。我们不需要一大堆新的关键字或装饰器（如`@overrides`）来实现它，我们只需使用 JavaScript 中简单自然的函数式组合。
 
 ### 其他协议
 
 我们可以整合其他协议。最常见的两个是在现有方法*之前*添加行为，或在现有方法*之后*添加行为：
 
-```
+```javascript
 function Prepends (behaviour) {
   const instanceKeys = Reflect.ownKeys(behaviour);
 
@@ -15892,7 +17025,7 @@ function Append (behaviour) {
 }
 ```
 
-我们可以使用 Define、Override、Prepend 和 Append 的任何组合来组合轻量级 trait，组合由 `pipeline`（一个简单的函数组合工具）处理。轻量级 trait 不过是以简单易懂的方式组合的协议。然后以直接明了的方式应用于简单的类。
+我们可以使用`Define`、`Override`、`Prepend`和`Append`的任何组合来组合轻量级 trait，组合由`pipeline`（一个简单的函数组合工具）处理。轻量级 trait 不过是以简单易懂的方式组合的协议。然后以直接明了的方式应用于简单的类。
 
 ### 更多装饰器方案
 
@@ -15904,11 +17037,11 @@ function Append (behaviour) {
 
 ### 方法后置建议
 
-考虑这个 Todo 类的基本结构，我们可能将其用作前端应用程序中 ViewModel 的一部分。许多前端库都有特殊功能，允许视图或其他模型将更改持久化到一个或多个实际模型和/或数据存储。
+考虑这个`Todo`类的基本结构，我们可能将其用作前端应用程序中 ViewModel 的一部分。许多前端库都有特殊功能，允许视图或其他模型将更改持久化到一个或多个实际模型和/或数据存储。
 
-我们将简单地假设存在一个 `persist` 方法。它可能是混入的或继承的，我们将其绘制出来以作说明：
+我们将简单地假设存在一个`persist`方法。它可能是混入的或继承的，我们将其绘制出来以作说明：
 
-```
+```javascript
 class Todo {
     constructor (name) {
         this.name = name || 'Untitled';
@@ -15930,7 +17063,7 @@ class Todo {
 
 自然地，更新一个待办事项应该持久化更改。因此我们可以这样写：
 
-```
+```javascript
 class Todo {
     constructor (name) {
         this.name = name || 'Untitled';
@@ -15961,7 +17094,7 @@ class Todo {
 
 这与使方法流式化非常相似。我们正在用横切关注点模糊方法的主要职责。我们可以而且应该将持久化抽象为 ES.next 装饰器：
 
-```
+```javascript
 const persists = function (target, name, descriptor) {
   const method = descriptor.value;
 
@@ -15974,7 +17107,7 @@ const persists = function (target, name, descriptor) {
 }
 ```
 
-```
+```javascript
 class Todo {
   constructor (name) {
     this.name = name || 'Untitled';
@@ -16004,11 +17137,11 @@ class Todo {
 
 ### 装饰器之后
 
-函数的组合子有无限多样的用途和效果。方法组合子也是如此，但无论是出于内在效用还是自定义，某些主题已经浮现出来。其中一个构成了原始 [Lisp Flavors](https://en.wikipedia.org/wiki/Flavors_) 系统的核心部分，也是 [面向切面编程](https://en.wikipedia.org/wiki/Aspect-oriented_programming) 运动的核心，即在方法体执行*之后*装饰一些功能来执行。
+函数的组合子有无限多样的用途和效果。方法组合子也是如此，但无论是出于内在效用还是自定义，某些主题已经浮现出来。其中一个构成了原始 Lisp Flavors 系统的核心部分，也是面向切面编程运动的核心，即在方法体执行*之后*装饰一些功能来执行。
 
 我们上面看到的就是这种模式：我们想用一些功能装饰一个方法。与其每次都从头编写装饰器，不如将包装抽象为一个组合子，制作一个 ES.next 方法装饰器：
 
-```
+```javascript
 const after = (...fns) =>
     function (target, name, descriptor) {
         const method = descriptor.value;
@@ -16026,24 +17159,19 @@ const after = (...fns) =>
 
 现在我们可以这样写：
 
-> [165] https://en.wikipedia.org/wiki/Flavors_
-> [166] https://en.wikipedia.org/wiki/Aspect-oriented_programming
-
-### 更多装饰器方案
-
-```
+```javascript
 const persists = after(function () { this.persist(); });
 ```
 
 或者我们可以这样写：
 
-```
+```javascript
 const persists = after(Todo.prototype.persist);
 ```
 
 或者我们甚至可以内联编写这些内容：
 
-```
+```javascript
 class Todo {
   constructor (name) {
     this.name = name || 'Untitled';
@@ -16071,11 +17199,7 @@ class Todo {
 }
 ```
 
-Todo.prototype.persist 有点笨拙。我们可以特别处理 `after`，允许我们像一些库那样写 `@after('persist')`，但组合子的美妙之处在于它们，嗯，*组合*。回想一下 `send`。它非常适合这里：
-
-
-
-### 更多装饰器技巧
+`Todo.prototype.persist`有点笨拙。我们可以特别处理`after`，允许我们像一些库那样写`@after('persist')`，但组合子的美妙之处在于它们，嗯，*组合*。回想一下`send`。它非常适合这里：
 
 ```javascript
 const send = (methodName, ...args) =>
@@ -16108,11 +17232,11 @@ class Todo {
 }
 ```
 
-`after` 是一个组合器，用于创建 ES.later 方法装饰器，它对于关注点分离非常有用。
+`after`是一个组合器，用于创建 ES.later 方法装饰器，它对于关注点分离非常有用。
 
 ### 前置方法增强（Before Method Advice）
 
-正如我们经常希望用[后置增强](link)来装饰方法一样，我们也经常希望在方法调用之前添加一些行为。最典型（同时也被极度滥用）的例子是记录调用日志。不过让我们考虑另一个例子，一个 Person 类：
+正如我们经常希望用后置增强来装饰方法一样，我们也经常希望在方法调用之前添加一些行为。最典型（同时也被极度滥用）的例子是记录调用日志。不过让我们考虑另一个例子，一个`Person`类：
 
 ```javascript
 const firstName = Symbol('firstName'),
@@ -16136,7 +17260,7 @@ class Person {
 };
 ```
 
-如果我们希望让 `rename` 成为一个可撤销的操作呢？让我们添加一个栈。出于某些只有企业级架构师秘密小团体才知道的原因，我们希望让撤销栈延迟初始化，就像这样：
+如果我们希望让`rename`成为一个可撤销的操作呢？让我们添加一个栈。出于某些只有企业级架构师秘密小团体才知道的原因，我们希望让撤销栈延迟初始化，就像这样：
 
 ```javascript
 const firstName = Symbol('firstName'),
@@ -16185,9 +17309,7 @@ b.fullName()
   //=> 'barak obama'
 ```
 
-我们可以按照后置增强的模式来做：将通用功能提取到一个装饰器中。我们将编写 `before` 组合器来辅助：
-
-### 更多装饰器技巧
+我们可以按照后置增强的模式来做：将通用功能提取到一个装饰器中。我们将编写`before`组合器来辅助：
 
 ```javascript
 const before = (...fns) =>
@@ -16254,13 +17376,13 @@ b.undo()
 console.log(b.fullName())
 ```
 
-当然，我们也可以将功能抽象到一个方法中，然后用 `@after(send('usingUndoStack'))` 来调用，就像我们在后置增强示例中所做的那样。
+当然，我们也可以将功能抽象到一个方法中，然后用`@after(send('usingUndoStack'))`来调用，就像我们在后置增强示例中所做的那样。
 
 ### Provided 和 Unless
 
-`before` 和 `after` 这两种 ES.later 方法装饰器实际上都不会在不抛出异常的情况下终止执行。正常执行总是会导致基础方法被调用。`provided` 和 `unless` 这两个技巧是产生方法装饰器的组合器，它们为执行基础方法体应用前置条件。
+`before`和`after`这两种 ES.later 方法装饰器实际上都不会在不抛出异常的情况下终止执行。正常执行总是会导致基础方法被调用。`provided`和`unless`这两个技巧是产生方法装饰器的组合器，它们为执行基础方法体应用前置条件。
 
-`provided` 组合器将一个函数转换为 ES.later 方法装饰器。该函数（或多个函数）在基础方法之前接收方法参数，并且只有当函数返回真值时，基础方法才会被执行。`unless` 组合器功能相同，但逻辑相反：装饰函数必须不返回真值：
+`provided`组合器将一个函数转换为 ES.later 方法装饰器。该函数（或多个函数）在基础方法之前接收方法参数，并且只有当函数返回真值时，基础方法才会被执行。`unless`组合器功能相同，但逻辑相反：装饰函数必须不返回真值：
 
 ```javascript
 const provided = (...fns) =>
@@ -16294,11 +17416,9 @@ const unless = (...fns) =>
   }
 ```
 
-`provided` 可以用来检查是否为名称提供了非空字符串：
+`provided`可以用来检查是否为名称提供了非空字符串：
 
 > 注意，验证名称是一项艰巨的任务。在将此类想法用于生产环境之前，请先阅读《程序员关于名称的错误认知》。例如，许多人**没有**姓氏。
-
-### 更多装饰器技巧
 
 ```javascript
 const firstName = Symbol('firstName'),
@@ -16393,7 +17513,7 @@ musician.fullName()
   //=> Miles Davis
 ```
 
-我们还看到，如果我们的工具支持 ES.later<sup>168</sup> 装饰器，我们可以这样写：
+我们还看到，如果我们的工具支持 ES.later 装饰器，我们可以这样写：
 
 ```javascript
 const wrapWith = (decorator) =>
@@ -16409,30 +17529,20 @@ function fluent (method) {
 }
 ```
 
-<sup>168</sup>所谓 "ES.later"，是指某个未来版本的 ECMAScript，它最终可能会被批准，但目前仅存在于 Babel 等转译器中。显然，在生产环境中使用任何 ES.later 特性都是一个复杂的决定，需要考虑许多书中无法一一列举的因素。
-
-
-
-```
-    }
-}
-
+```javascript
 class Person {
-
-    @wrapWith(fluent)
-    setName (first, last) {
-        this.firstName = first;
-        this.lastName = last;
-    }
-
-    fullName () {
-        return this.firstName + " " + this.lastName;
-    }
-
+  @wrapWith(fluent)
+  setName (first, last) {
+    this.firstName = first;
+    this.lastName = last;
+  }
+  fullName () {
+    return this.firstName + " " + this.lastName;
+  }
 };
 ```
 
-`wrapWith` 函数接受一个普通的方法装饰器，并将其转换成一个 ES.later 方法装饰器。
+`wrapWith`函数接受一个普通的方法装饰器，并将其转换成一个 ES.later 方法装饰器。
 
 ### 方法装饰器解决了什么问题？
 
@@ -16440,7 +17550,7 @@ ES.later 方法装饰器将装饰直接放置在方法体旁边。这使得回�
 
 但有时，这并非你想要的。考虑像身份验证这样的职责。让我们想象一下，我们在模型类中验证权限。我们可能会写出类似这样的代码：
 
-```
+```javascript
 const wrapWith = (decorator) =>
     function (target, name, descriptor) {
         descriptor.value = decorator(descriptor.value);
@@ -16454,39 +17564,34 @@ const mustBeMe = (method) =>
     }
 
 class Person {
-
-    @wrapWith(mustBeMe)
-    setName (first, last) {
-        this.firstName = first;
-        this.lastName = last;
-    }
-
-    fullName () {
-        return this.firstName + " " + this.lastName;
-    }
-
-    @wrapWith(mustBeMe)
-    setAge (age) {
-        this.age = age;
-    }
-
-    @wrapWith(mustBeMe)
-    age () {
-        return this.age;
-    }
-
+  @wrapWith(mustBeMe)
+  setName (first, last) {
+    this.firstName = first;
+    this.lastName = last;
+  }
+  fullName () {
+    return this.firstName + " " + this.lastName;
+  }
+  @wrapWith(mustBeMe)
+  setAge (age) {
+    this.age = age;
+  }
+  @wrapWith(mustBeMe)
+  age () {
+    return this.age;
+  }
 };
 ```
 
 (显然，真实的权限系统涉及角色和各种其他重要事项。)
 
-现在我们可以查看 `setName`，看到用户只能设置自己的名字，同样，如果我们查看 `setAge`，我们会看到用户只能设置自己的年龄。
+现在我们可以查看`setName`，看到用户只能设置自己的名字，同样，如果我们查看`setAge`，我们会看到用户只能设置自己的年龄。
 
-在一个微小的玩具示例中，下一个问题很容易回答：*哪些方法只能由本人调用？*我们一眼就能看出答案是 `setName`、`setAge` 和 `age`。
+在一个微小的玩具示例中，下一个问题很容易回答：*哪些方法只能由本人调用？*我们一眼就能看出答案是`setName`、`setAge`和`age`。
 
-但随着类的增长，这变得越来越难以回答。如果我们使用 mixin 来分解类，这尤其变得困难。例如，如果 `setAge` 和 `age` 来自一个 [class mixin](https://google.com) 会怎样：
+但随着类的增长，这变得越来越难以回答。如果我们使用 mixin 来分解类，这尤其变得困难。例如，如果`setAge`和`age`来自一个 class mixin 会怎样：
 
-```
+```javascript
 const Person = HasAge(class {
 
   @wrapWith(mustBeMe)
@@ -16502,7 +17607,7 @@ const Person = HasAge(class {
 });
 ```
 
-由 `HasAge` 提供的方法是否被 `mustBeMe` 包装了？很可能没有，因为 mixin 负责定义行为。权限的设置由模型类决定。但你怎么知道它们是否被设置了呢？
+由`HasAge`提供的方法是否被`mustBeMe`包装了？很可能没有，因为 mixin 负责定义行为。权限的设置由模型类决定。但你怎么知道它们是否被设置了呢？
 
 方法装饰器使得回答“这个方法的行为是什么？”这个问题变得容易。但它们不容易回答“哪些方法共享这种行为？”这个问题。
 
@@ -16514,7 +17619,7 @@ const Person = HasAge(class {
 
 在 JavaScript 中，我们可以通过装饰整个类来实现方法建议。我们已经有了用于创建类 mixin 的组合器，它是一个接受类作为参数并返回相同或不同类的函数。我们可以使用相同的技术来编写一个类装饰器，用来装饰传入类的一个或多个方法。（我们将使用 ES.later 语法，但函数式语法同样有效）：
 
-```
+```javascript
 const aroundAll = (behaviour, ...methodNames) =>
   (clazz) => {
     for (let methodName of methodNames)
@@ -16526,7 +17631,7 @@ const aroundAll = (behaviour, ...methodNames) =>
   }
 ```
 
-```
+```javascript
 @HasAge
 @aroundAll(mustBeMe, 'setName', 'setAge', 'age')
 class Person {
@@ -16542,11 +17647,11 @@ class Person {
 }
 ```
 
-现在当你查看 `setName` 时，你看不到适用的权限。然而，当我们查看 `@aroundAll(mustBeMe, 'setName', 'setAge', 'age')` 时，我们看到我们用 `mustBeMe` 包装了 `setName`、`setAge` 和 `age`。
+现在当你查看`setName`时，你看不到适用的权限。然而，当我们查看`@aroundAll(mustBeMe, 'setName', 'setAge', 'age')`时，我们看到我们用`mustBeMe`包装了`setName`、`setAge`和`age`。
 
-这将权限的职责集中在一个地方。当然，我们可以让事情变得更简单。一方面，有些操作只在方法*之前*执行，有些只在方法*之后*执行。我们可以创建像我们的 `before` 和 `after` 方法装饰器一样工作的类装饰器：
+这将权限的职责集中在一个地方。当然，我们可以让事情变得更简单。一方面，有些操作只在方法*之前*执行，有些只在方法*之后*执行。我们可以创建像我们的`before`和`after`方法装饰器一样工作的类装饰器：
 
-```
+```javascript
 const beforeAll = (behaviour, ...methodNames) =>
   (clazz) => {
     for (let methodName of methodNames) {
@@ -16564,7 +17669,7 @@ const beforeAll = (behaviour, ...methodNames) =>
   }
 ```
 
-```
+```javascript
 const afterAll = (behaviour, ...methodNames) =>
   (clazz) => {
     for (let methodName of methodNames) {
@@ -16583,9 +17688,9 @@ const afterAll = (behaviour, ...methodNames) =>
   }
 ```
 
-像 `mustBeMe` 这样的前置条件检查是 `beforeAll` 的好候选者。这是设置为使用 `beforeAll` 的 `mustBeLoggedIn` 和 `mustBeMe`。由于 `beforeAll` 处理了包装，它们变得简单多了：
+像`mustBeMe`这样的前置条件检查是`beforeAll`的好候选者。这是设置为使用`beforeAll`的`mustBeLoggedIn`和`mustBeMe`。由于`beforeAll`处理了包装，它们变得简单多了：
 
-```
+```javascript
 const mustBeLoggedIn = () => {
     if (currentUser() == null)
       throw new PermissionsException("Must be logged in!");
@@ -16615,7 +17720,7 @@ const mustBeLoggedIn = () => {
 
 这种将装饰方法的职责移到单个声明的风格，对 Ruby on Rails 开发者来说会显得很熟悉。如你所见，它不需要“深奥的魔法”或复杂的库，它是一个可以用几行代码写出来的模式。
 
-请注意，总有改进和精益求精的空间。我们可以增强 `beforeAll`、`afterAll` 和 `aroundAll`，以包含便利功能，例如使用正则表达式匹配方法名，或者像 `except:` 或 `only:` 这样的特殊声明，如果我们愿意的话。
+请注意，总有改进和精益求精的空间。我们可以增强`beforeAll`、`afterAll`和`aroundAll`，以包含便利功能，例如使用正则表达式匹配方法名，或者像`except:`或`only:`这样的特殊声明，如果我们愿意的话。
 
 尽管批量装饰方法已经出现在其他语言和范式中，但它并非 JavaScript 专属或陌生的东西，它实际上是我们反复看到的相同模式：通过组合小型和单一职责的实体进行编程，并使用函数来转换和组合这些实体以形成最终形式。
 
@@ -16623,7 +17728,7 @@ const mustBeLoggedIn = () => {
 
 如果我们不想使用 ES.later 装饰器，我们可以将完全相同的装饰器用作*普通函数*，像这样：
 
-```
+```javascript
 const mustBeLoggedIn = () => {
     if (currentUser() == null)
       throw new PermissionsException("Must be logged in!");
@@ -16655,23 +17760,21 @@ const mustBeLoggedIn = () => {
 
 组合（Composition）也可以提供帮助：
 
-### 更多装饰器模式
-
-```
+```javascript
 const mustBeLoggedIn = () => {
     if (currentUser() == null)
         throw new PermissionsException("Must be logged in!");
 }
 ```
 
-```
+```javascript
 const mustBeMe = () => {
     if (currentUser() == null || !currentUser().person().equals(this))
         throw new PermissionsException("Must be me!");
 }
 ```
 
-```
+```javascript
 const Person = compose(
     HasAge,
     beforeAll(mustBeMe, 'setName', 'setAge', 'age'),
@@ -16718,11 +17821,11 @@ const Person = compose(
 
 ### 轻量级方式
 
-在创建新的抽象时（例如 [trait](https://...)），有两种方式：重量级方式和轻量级方式。
+在创建新的抽象时（例如 trait），有两种方式：重量级方式和轻量级方式。
 
 正如本书通篇所阐述的，轻量级方式试图尽可能"JavaScript 化"。例如，使用函数来实现协议，并将它们组合在一起。使用轻量级方式，一切仍然是函数，或对象，或仅仅是带有原型的类。轻量级代码可以 100% 与其他库的代码互操作。轻量级方式可以逐步添加到现有代码库中，在这里重构一点，在那里重构一点。
 
-重量级方式则会[创建](https://...)¹⁶⁹一个内置 trait 支持的特殊类层次结构。重量级方式产生的"类"不容易与其他库或代码互操作，因此你无法渐进式地做出改变：你必须"倾覆整个海洋"，完全投入新的方式。重量级方式通常要求在构建流程中使用新型工具。
+重量级方式则会创建一个内置 trait 支持的特殊类层次结构。重量级方式产生的"类"不容易与其他库或代码互操作，因此你无法渐进式地做出改变：你必须"倾覆整个海洋"，完全投入新的方式。重量级方式通常要求在构建流程中使用新型工具。
 
 当我们采用轻量级方式时，我们对其收益所做的押注非常小。我们可以轻松改变主意，放弃这种方式而选择其他方式。因为我们沿途做出了小的押注，所以我们可以持续收获小的收益：例如，我们不必启动对代码库的大规模重写才能开始使用轻量级 trait。我们只需根据需要或多或少地使用它们，就能立即从中受益。
 
@@ -16742,11 +17845,11 @@ La Marzocco
 
 ### 如何运行示例
 
-在撰写本书时，ECMAScript 2015 尚未广泛可用。本书中的所有示例都使用 [Google Traceur 编译器](https://github.com/google/traceur-compiler)^170^、[Babel](http://babeljs.io/)^171^ 或两者兼用来进行测试。Traceur 和 Babel 都是*转译器*，它们通过解析 ECMAScript 2015 代码，然后输出产生相同语义的有效 ECMAScript-5 代码。
+在撰写本书时，ECMAScript 2015 尚未广泛可用。本书中的所有示例都使用 Google Traceur 编译器、Babel 或两者兼用来进行测试。Traceur 和 Babel 都是*转译器*，它们通过解析 ECMAScript 2015 代码，然后输出产生相同语义的有效 ECMAScript-5 代码。
 
 例如，这段 ECMAScript 2015 代码：
 
-```
+```javascript
 const before = (decoration) =>
   (method) =>
     function () {
@@ -16757,7 +17860,7 @@ const before = (decoration) =>
 
 被翻译成这段 ECMAScript-5 代码：
 
-```
+```javascript
 "use strict"
 
 var before = function (decoration) {
@@ -16774,7 +17877,7 @@ Babel "在线试用"页面
 
 如果我们写得更加地道，可以这样写：
 
-```
+```javascript
 const before = (decoration) =>
   (method) =>
     function (...args) {
@@ -16785,7 +17888,7 @@ const before = (decoration) =>
 
 它会被"转译"为：
 
-```
+```javascript
 var before = function (decoration) {
   return function (method) {
     return function () {
@@ -16804,13 +17907,13 @@ var before = function (decoration) {
 
 因此，与其直接写：
 
-```
+```javascript
 (() => 2 + 2)()
 ```
 
 然后显示 4，你需要写：
 
-```
+```javascript
 console.log(
   (() => 2 + 2)()
 )
@@ -16818,243 +17921,81 @@ console.log(
 
 然后 4 会出现在浏览器的开发控制台中。
 
-你也可以在开发系统上安装这些转译器，并在命令行上配合 Node[^172] 使用[^173]。`node` 和 `npm` 的安装与使用超出了本书的范围，但两个工具都为已经安装了 `node` 的用户提供了清晰的说明。
-
-[^172]: http://nodejs.org/
-[^173]: https://en.wikipedia.org/wiki/REPL
+你也可以在开发系统上安装这些转译器，并在命令行上配合 Node 使用。`node`和`npm`的安装与使用超出了本书的范围，但两个工具都为已经安装了`node`的用户提供了清晰的说明。
 
 ### 致谢！
 
 Daniel Friedman 和 Matthias Felleisen
 
-*JavaScript Allongé* 的灵感来源于 Daniel Friedman 和 Matthias Felleisen 所著的 [The Little Schemer](http://www.amzn.com/0262560992?tag=raganwald001-20)<sup>174</sup>。但 *The Little Schemer* 的主要关注点是递归，而 *JavaScript Allongé* 的主要关注点是**函数作为一等值**。
-
-
+*JavaScript Allongé* 的灵感来源于 Daniel Friedman 和 Matthias Felleisen 所著的 The Little Schemer。但 *The Little Schemer* 的主要关注点是递归，而 *JavaScript Allongé* 的主要关注点是**函数作为一等值**。
 
 ### 理查德·费曼
 
 QED：光和物质的奇妙理论
 
-理查德·费曼的QED[^175]是另一个灵感来源：这本书通过一个简单的方式来解释量子电动力学和"历史求和"方法论——即解释光如何从镜面反射，并展示我们以为正在发生的大多数事情——比如光沿直线传播、反射角等于折射角、光束只与镜面的一小部分发生作用、或者光从平面反射——实际上都是错误的。而且所有内容都以简洁明了的术语来解释，层层递进，逻辑严密。
+理查德·费曼的 QED 是另一个灵感来源：这本书通过一个简单的方式来解释量子电动力学和"历史求和"方法论——即解释光如何从镜面反射，并展示我们以为正在发生的大多数事情——比如光沿直线传播、反射角等于折射角、光束只与镜面的一小部分发生作用、或者光从平面反射——实际上都是错误的。而且所有内容都以简洁明了的术语来解释，层层递进，逻辑严密。
 
-### 在Kindle上阅读《JavaScript Allongé》
+### 在 Kindle 上阅读《JavaScript Allongé》
 
-《JavaScript Allongé》有400多页和大量图片。因此，该书的.mobi版本文件过大，无法通过电子邮件发送到你的Kindle，而这正是LeanPub在你购买书籍时所使用的方式。
+《JavaScript Allongé》有 400 多页和大量图片。因此，该书的 .mobi 版本文件过大，无法通过电子邮件发送到你的 Kindle，而这正是 LeanPub 在你购买书籍时所使用的方式。
 
-发送到Kindle
+发送到 Kindle
 
-所以，如果你想在Kindle上阅读《JavaScript Allongé》：
+所以，如果你想在 Kindle 上阅读《JavaScript Allongé》：
 
-- 将其下载到你的Windows或OS X设备（即"PC"或"Macintosh"）。
-- 使用[Send to Kindle for PC](http://www.amazon.com/gp/sendtokindle/pc)¹⁷⁶或[Send to Kindle for Mac](http://www.amazon.com/gp/sendtokindle/mac)¹⁷⁷将其发送到Kindle。
-- 在编辑过程中，偶尔会有未经压缩的图片混入手稿。当这种情况发生时，.mobi文件可能会超过Send to Kindle桌面应用程序的50MB限制。如果发生这种情况，请用USB数据线将Kindle连接到电脑并直接同步。
+- 将其下载到你的 Windows 或 OS X 设备（即"PC"或"Macintosh"）。
+- 使用 Send to Kindle for PC 或 Send to Kindle for Mac 将其发送到 Kindle。
+- 在编辑过程中，偶尔会有未经压缩的图片混入手稿。当这种情况发生时，.mobi 文件可能会超过 Send to Kindle 桌面应用程序的 50MB 限制。如果发生这种情况，请用 USB 数据线将 Kindle 连接到电脑并直接同步。
 
 谢谢！
 
-¹⁷⁶ http://www.amazon.com/gp/sendtokindle/pc
-¹⁷⁷ http://www.amazon.com/gp/sendtokindle/mac
-
 ### 版权声明
 
-本书中的原创文字版权归Reginald Braithwaite所有，(c) 2012-2019，采用[知识共享署名-相同方式共享3.0未本地化版本许可协议](https://creativecommons.org/licenses/by-sa/3.0/deed.en_US)^178^授权。你可以自由地：
+本书中的原创文字版权归 Reginald Braithwaite 所有，(c) 2012-2019，采用知识共享署名-相同方式共享 3.0 未本地化版本许可协议授权。你可以自由地：
 
 - 分享——复制、传播和传播本作品
 - 演绎——改编本作品
 - 商业性使用——将本作品用于商业用途
 
-前提是你要遵守[许可条款](https://creativecommons.org/licenses/by-sa/3.0/deed.en_US)^179^。
+前提是你要遵守许可条款。
 
 ### 图片
 
-- 作者照片版权归(c) 2008 [Joseph Hurtado](http://www.flickr.com/photos/trumpetca/)^180^所有，保留所有权利。
-- [封面图片](http://www.flickr.com/photos/avlxyz/4907262046)^181^ (c) 2010, avlxyz。[部分权利保留](https://creativecommons.org/licenses/by-sa/2.0/deed.en)^182^。
-- [Double ristretto菜单](http://www.flickr.com/photos/digitalcolony/5054568279/)^183^ (c) 2010, Michael Allen Smith。[部分权利保留](https://creativecommons.org/licenses/by-sa/2.0/deed.en)^184^。
-- [白色钝柄杯中的浓缩咖啡](http://www.flickr.com/photos/everydaylifemodern/1353570874/)^185^ (c) 2007, EVERYDAYLIFEMODERN。[部分权利保留](https://creativecommons.org/licenses/by-nd/2.0/deed.en)^186^。
-- [caffe molinari杯中的浓缩咖啡](http://www.flickr.com/photos/everydaylifemodern/434299813/)^187^ (c) 2007, EVERYDAYLIFEMODERN。[部分权利保留](https://creativecommons.org/licenses/by-nd/2.0/deed.en)^188^。
-- [袋中咖啡豆](http://www.flickr.com/photos/the_rev/2295096211/)^189^ (c) 2008, Stirling Noyes。[部分权利保留](https://creativecommons.org/licenses/by/2.0/deed.en)^190^。
-- [免费样品](http://www.flickr.com/photos/thedigitelmyr/6199419022/)^191^ (c) 2011, Myrtle Bech Digitel。[部分权利保留](https://creativecommons.org/licenses/by-sa/2.0/deed.en)^192^。
-- [免费咖啡](http://www.flickr.com/photos/sagamiono/4391542823/)^193^ 图片 (c) 2010, Michael Francis McCarthy。[部分权利保留](https://creativecommons.org/licenses/by-sa/2.0/deed.en)^194^。
-- [La Marzocco](http://www.flickr.com/photos/digitalcolony/3924227011/)^195^ (c) 2009, Michael Allen Smith。[部分权利保留](https://creativecommons.org/licenses/by-sa/2.0/deed.en)^196^。
-- [Cafe Diplomatico](http://www.flickr.com/photos/15481483@N06/6231443466/)^197^ (c) 2011, Missi。[部分权利保留](https://creativecommons.org/licenses/by-sa/2.0/deed.en)^198^。
-- [Sugar Service](http://www.flickr.com/photos/tjgfernandes/2785677276/)^199^ (c) 2008 Tiago Fernandes。[部分权利保留](https://creativecommons.org/licenses/by/2.0/deed.en)^200^。
-- 架子上的意式脆饼^201^ (c) 2010 Kirsten Loza。部分权利保留^202^。
-- 咖啡勺^203^ (c) 2010 Jenny Downing。部分权利保留^204^。
-- 绘制一杯Doppio^205^ (c) 2008 Osman Bas。部分权利保留^206^。
-- 杯测咖啡^207^ (c) 2011 Dennis Tang。部分权利保留^208^。
-- 三台咖啡烘焙机^209^ (c) 2009 Michael Allen Smith。部分权利保留^210^。
-- 蓝色Diedrich烘焙机^211^ (c) 2010 Michael Allen Smith。部分权利保留^212^。
-- 红色Diedrich烘焙机^213^ (c) 2009 Richard Masoner。部分权利保留^214^。
-- 树叶旁的烘焙机^215^ (c) 2007 ting。部分权利保留^216^。
-- 半杯饮品^217^ (c) 2010 Nicholas Lundgaard。部分权利保留^218^。
-- 期待^219^ (c) 2012 Paul McCoubrie。部分权利保留^220^。
-- 哦！^221^ (c) 2012 Michael Coghlan。部分权利保留^222^。
-- 浓缩咖啡机内部结构^223^ (c) 2011 Angie Chung。部分权利保留^224^。
-- Bezzera浓缩咖啡机^225^ (c) 2011 Andrew Nash。部分权利保留^226^。
-- 枝条上成熟的咖啡豆^227^ (c) 2008 John Pavelka。部分权利保留^228^。
-- Gazotta Della Sport上的焦糖玛奇朵^229^ (c) 2008 Jon Shave。部分权利保留^230^。
-- 咖啡豆罐^231^ (c) 2012 Memphis CVB。部分权利保留^232^。
-- 各类咖啡饮品^233^ (c) 2012 Michael Coghlan。部分权利保留^234^。
-- 咖啡树^235^ (c) 2011 Dave Townsend。部分权利保留^236^。
-
-^178^ http://creativecommons.org/licenses/by-sa/3.0/deed.en_US
-^179^ http://creativecommons.org/licenses/by-sa/3.0/deed.en_US
-^180^ http://www.flickr.com/photos/trumpetca/
-^181^ http://www.flickr.com/photos/avlxyz/4907262046
-^182^ http://creativecommons.org/licenses/by-sa/2.0/deed.en
-^183^ http://www.flickr.com/photos/digitalcolony/5054568279/
-^184^ http://creativecommons.org/licenses/by-sa/2.0/deed.en
-^185^ http://www.flickr.com/photos/everydaylifemodern/1353570874/
-^186^ http://creativecommons.org/licenses/by-nd/2.0/deed.en
-^187^ http://www.flickr.com/photos/everydaylifemodern/434299813/
-^188^ http://creativecommons.org/licenses/by-nd/2.0/deed.en
-^189^ http://www.flickr.com/photos/the_rev/2295096211/
-^190^ http://creativecommons.org/licenses/by/2.0/deed.en
-^191^ http://www.flickr.com/photos/thedigitelmyr/6199419022/
-^192^ http://creativecommons.org/licenses/by-sa/2.0/deed.en
-^193^ http://www.flickr.com/photos/sagamiono/4391542823/
-^194^ http://creativecommons.org/licenses/by-sa/2.0/deed.en
-^195^ http://www.flickr.com/photos/digitalcolony/3924227011/
-^196^ http://creativecommons.org/licenses/by-sa/2.0/deed.en
-^197^ http://www.flickr.com/photos/15481483@N06/6231443466/
-^198^ http://creativecommons.org/licenses/by-sa/2.0/deed.en
-^199^ http://www.flickr.com/photos/tjgfernandes/2785677276/
-^200^ http://creativecommons.org/licenses/by/2.0/deed.en
-^201^ http://www.flickr.com/photos/kirstenloza/4805716699/
-^202^ http://creativecommons.org/licenses/by/2.0/deed.en
-^203^ http://www.flickr.com/photos/jenny-pics/5053954146/
-^204^ http://creativecommons.org/licenses/by/2.0/deed.en
-^205^ http://www.flickr.com/photos/33388953@N04/4017985434/
-^206^ http://creativecommons.org/licenses/by/2.0/deed.en
-^207^ http://www.flickr.com/photos/tangysd/5953453156/
-^208^ http://creativecommons.org/licenses/by-sa/2.0/deed.en
-^209^ http://www.flickr.com/photos/digitalcolony/4000837035/
-^210^ http://creativecommons.org/licenses/by-sa/2.0/deed.en
-^211^ http://www.flickr.com/photos/digitalcolony/4309812256/
-^212^ http://creativecommons.org/licenses/by-sa/2.0/deed.en
-^213^ http://www.flickr.com/photos/bike/3237859728/
-^214^ http://creativecommons.org/licenses/by-sa/2.0/deed.en
-^215^ http://www.flickr.com/photos/lacerabbit/2102801319/
-^216^ http://creativecommons.org/licenses/by-nd/2.0/deed.en
-^217^ http://www.flickr.com/photos/nalundgaard/4785922266/
-^218^ http://creativecommons.org/licenses/by-sa/2.0/deed.en
-^219^ http://www.flickr.com/photos/paulmccoubrie/6828131856/
-^220^ http://creativecommons.org/licenses/by-nd/2.0/deed.en
-^221^ http://www.flickr.com/photos/mikecogh/7676649034/
-^222^ http://creativecommons.org/licenses/by-sa/2.0/deed.en
-^223^ http://www.flickr.com/photos/yellowskyphotography/5641003165/
-^224^ http://creativecommons.org/licenses/by-sa/2.0/deed.en
-^225^ http://www.flickr.com/photos/andynash/6204253236/
-^226^ http://creativecommons.org/licenses/by-sa/2.0/deed.en
-^227^ http://www.flickr.com/photos/28705377@N04/5306009552/
-^228^ http://creativecommons.org/licenses/by/2.0/deed.en
-^229^ http://www.flickr.com/photos/shavejonathan/2343081208/
-^230^ http://creativecommons.org/licenses/by/2.0/deed.en
-^231^ http://www.flickr.com/photos/ilovememphis/7103931235/
-^232^ http://creativecommons.org/licenses/by-nd/2.0/deed.en
-^233^ http://www.flickr.com/photos/mikecogh/7561440544/
-^234^ http://creativecommons.org/licenses/by-sa/2.0/deed.en
-^235^ http://www.flickr.com/photos/dtownsend/6171015997/
-^236^ http://creativecommons.org/licenses/by-sa/2.0/deed.en
-
-
-
- # 金色咖啡脂：附录与后记 486
-
-- Café do Brasil^(237) (c) 2003 Temporalata。保留部分权利^(238)。
-- Brown Cups^(239) (c) 2007 Michael Allen Smith。保留部分权利^(240)。
-- Mirage^(241) (c) 2010 Mira Helder。保留部分权利^(242)。
-- 带弹孔的咖啡车^(243) (c) 2006 Jon Crel。保留部分权利^(244)。
-- 拆解的 Elektra^(245) (c) 2009 Nicholas Lundgaard。保留部分权利^(246)。
-- Nederland Buffalo Bills 咖啡店^(247) (c) 2009 Charlie Stinchcomb。保留部分权利^(248)。
-- 为了对咖啡乂咖啡的热爱^(249) (c) 2007 Lotzman Katzman。保留部分权利^(250)。
-- Saltspring 加工厂图片^(251) (c) 2011 Kris Krug。保留部分权利^(252)。
-- 咖啡与数学^(253) (c) 2007 保留部分权利^(254)。
-- 咖啡与书^(255) (c) 2009 保留部分权利^(256)。
-- 堆叠的咖啡杯^(257) (c) 2010 Sankarshan Sen。保留部分权利^(258)。
-- 咖啡牛^(259) (c) 2012 Candy Schwartz^(260) 保留部分权利^(261)。
-- CERN 咖啡^(262) (c) 2005 Karoly Lorentey^(263) 保留部分权利^(264)。
-- 咖啡标签^(265) (c) 2011 Kris Krüg 保留部分权利^(266)。
-- banco do café^(267) (c) 2008 Fernando Mafra 保留部分权利^(268)。
-- 咖啡壶^(269) (c) 2009 Jonas Forth 保留部分权利^(270)。
-- 5 桶烘焙机^(271) (c) 2013 David Lytle 保留部分权利^(272)。
-
-^(237) http://www.flickr.com/photos/93425126@N00/313053257/
-^(238) http://creativecommons.org/licenses/by-sa/2.0/deed.en
-^(239) http://www.flickr.com/photos/digitalcolony/2833809436/
-^(240) http://creativecommons.org/licenses/by-sa/2.0/deed.en
-^(241) http://www.flickr.com/photos/citizenholder/5006498068/
-^(242) http://creativecommons.org/licenses/by/2.0/deed.en
-^(243) http://www.flickr.com/photos/joncrel/237026246/
-^(244) http://creativecommons.org/licenses/by-nd/2.0/deed.en
-^(245) http://www.flickr.com/photos/nalundgaard/3163852170/
-^(246) http://creativecommons.org/licenses/by-sa/2.0/deed.en
-^(247) http://www.flickr.com/photos/47000103@N05/6525288841/
-^(248) http://creativecommons.org/licenses/by-sa/2.0/deed.en
-^(249) http://www.flickr.com/photos/lotzman/978418891/
-^(250) http://creativecommons.org/licenses/by/2.0/deed.en
-^(251) http://www.flickr.com/photos/kk/sets/72157626168201654/with/5484839102/
-^(252) http://creativecommons.org/licenses/by-sa/2.0/deed.en
-^(253) https://www.flickr.com/photos/kellan/434503323
-^(254) http://creativecommons.org/licenses/by/2.0/deed.en
-^(255) https://www.flickr.com/photos/whitneyinchicago/3835218626
-^(256) http://creativecommons.org/licenses/by/2.0/deed.en
-^(257) https://www.flickr.com/photos/sankarshan/5165312159
-^(258) http://creativecommons.org/licenses/by-sa/2.0/deed.en
-^(259) https://www.flickr.com/photos/candy-s/7619358284
-^(260) https://www.flickr.com/photos/candy-s/
-^(261) http://creativecommons.org/licenses/by/2.0/deed.en
-^(262) https://www.flickr.com/photos/lorentey/22193876
-^(263) https://www.flickr.com/photos/lorentey/
-^(264) http://creativecommons.org/licenses/by/2.0/deed.en
-^(265) https://www.flickr.com/photos/kk/5484876862
-^(266) http://creativecommons.org/licenses/by-sa/2.0/deed.en
-^(267) https://www.flickr.com/photos/f_mafra/2956649121
-^(268) http://creativecommons.org/licenses/by-sa/2.0/deed.en
-^(269) https://www.flickr.com/photos/jforth/3360599750/
-^(270) http://creativecommons.org/licenses/by-nd/2.0/deed.en
-^(271) https://www.flickr.com/photos/dlytle/8720139854
-^(272) http://creativecommons.org/licenses/by/2.0/deed.en
-
-- Pantone 马克杯^(273) (c) 2011 Joe Wolf [保留部分权利](http://creativecommons.org/licenses/by-nd/2.0/deed.en)^(274)。
-- 咖啡与国际象棋^(275) (c) 2013 Adam Tinworth [保留部分权利](http://creativecommons.org/licenses/by-nd/2.0/deed.en)^(276)。
-- 真空壶上室^(277) (c) 2007 Michael Allen Smith [保留部分权利](http://creativecommons.org/licenses/by-sa/2.0/deed.en)^(278)。
-- 低因浓缩咖啡^(279) (c) 2009 Aris Vrakas [保留部分权利](http://creativecommons.org/licenses/by/2.0/deed.en)^(280)。
-- Con Panna（康帕纳）^(281) (c) 2013 Vee Satayamas [保留部分权利](http://creativecommons.org/licenses/by/2.0/deed.en)^(282)。
-- Tiny's 咖啡馆^(283) (c) 2004 Peter Merholz [保留部分权利](http://creativecommons.org/licenses/by-sa/2.0/deed.en)^(284)。
-- 思考编程^(285) (c) 2011 Renaud Camus [保留部分权利](http://creativecommons.org/licenses/by/2.0/deed.en)^(286)。
-- Biscotti og kaffe（意式脆饼与咖啡）^(287) (c) 2008 [保留部分权利](http://creativecommons.org/licenses/by-sa/2.0/deed.en)^(288)。
-- Espresso, Empty（空浓缩咖啡杯）^(289) (c) 2012 Till Westermayer [保留部分权利](http://creativecommons.org/licenses/by-sa/2.0/deed.en)^(290)。
-- 尾声^(291) (c) 2013 peddhapati [保留部分权利](http://creativecommons.org/licenses/by/2.0/deed.en)^(292)。
-- 咖啡的未来是黑色的^(293) (c)2013 mjaysplanet [保留部分权利](http://creativecommons.org/licenses/by-sa/2.0/deed.en)^(294)。
-
-^(273): https://www.flickr.com/photos/joebehr/5504285781
-^(274): http://creativecommons.org/licenses/by-nd/2.0/deed.en
-^(275): https://www.flickr.com/photos/adders/8372085101
-^(276): http://creativecommons.org/licenses/by-nd/2.0/deed.en
-^(277): https://www.flickr.com/photos/digitalcolony/2843767532
-^(278): http://creativecommons.org/licenses/by-sa/2.0/deed.en
-^(279): https://www.flickr.com/photos/arisvrakas/4217869291
-^(280): http://creativecommons.org/licenses/by/2.0/deed.en
-^(281): https://www.flickr.com/photos/vscript/8708520929
-^(282): http://creativecommons.org/licenses/by/2.0/deed.en
-^(283): https://www.flickr.com/photos/peterme/1271652
-^(284): http://creativecommons.org/licenses/by-sa/2.0/deed.en
-^(285): https://www.flickr.com/photos/renaud-camus/6165559492
-^(286): http://creativecommons.org/licenses/by/2.0/deed.en
-^(287): https://www.flickr.com/photos/cyclonebill/2606398721
-^(288): http://creativecommons.org/licenses/by-sa/2.0/deed.en
-^(289): https://www.flickr.com/photos/tillwe/8154272083
-^(290): http://creativecommons.org/licenses/by-sa/2.0/deed.en
-^(291): https://www.flickr.com/photos/peddhapati/11671457605
-^(292): http://creativecommons.org/licenses/by/2.0/deed.en
-^(293): https://www.flickr.com/photos/mjaysplanet/8416343475
-^(294): http://creativecommons.org/licenses/by-sa/2.0/deed.en
+- 作者照片版权归 (c) 2008 Joseph Hurtado 所有，保留所有权利。
+- 封面图片 (c) 2010, avlxyz。部分权利保留。
+- Double ristretto 菜单 (c) 2010, Michael Allen Smith。部分权利保留。
+- 白色钝柄杯中的浓缩咖啡 (c) 2007, EVERYDAYLIFEMODERN。部分权利保留。
+- caffe molinari 杯中的浓缩咖啡 (c) 2007, EVERYDAYLIFEMODERN。部分权利保留。
+- 袋中咖啡豆 (c) 2008, Stirling Noyes。部分权利保留。
+- 免费样品 (c) 2011, Myrtle Bech Digitel。部分权利保留。
+- 免费咖啡 图片 (c) 2010, Michael Francis McCarthy。部分权利保留。
+- La Marzocco (c) 2009, Michael Allen Smith。部分权利保留。
+- Cafe Diplomatico (c) 2011, Missi。部分权利保留。
+- Sugar Service (c) 2008 Tiago Fernandes。部分权利保留。
+- 架子上的意式脆饼 (c) 2010 Kirsten Loza。部分权利保留。
+- 咖啡勺 (c) 2010 Jenny Downing。部分权利保留。
+- 绘制一杯 Doppio (c) 2008 Osman Bas。部分权利保留。
+- 杯测咖啡 (c) 2011 Dennis Tang。部分权利保留。
+- 三台咖啡烘焙机 (c) 2009 Michael Allen Smith。部分权利保留。
+- 蓝色 Diedrich 烘焙机 (c) 2010 Michael Allen Smith。部分权利保留。
+- 红色 Diedrich 烘焙机 (c) 2009 Richard Masoner。部分权利保留。
+- 树叶旁的烘焙机 (c) 2007 ting。部分权利保留。
+- 半杯饮品 (c) 2010 Nicholas Lundgaard。部分权利保留。
+- 期待 (c) 2012 Paul McCoubrie。部分权利保留。
+- 哦！ (c) 2012 Michael Coghlan。部分权利保留。
+- 浓缩咖啡机内部结构 (c) 2011 Angie Chung。部分权利保留。
+- Bezzera 浓缩咖啡机 (c) 2011 Andrew Nash。部分权利保留。
+- 枝条上成熟的咖啡豆 (c) 2008 John Pavelka。部分权利保留。
+- Gazotta Della Sport 上的焦糖玛奇朵 (c) 2008 Jon Shave。部分权利保留。
+- 咖啡豆罐 (c) 2012 Memphis CVB。部分权利保留。
+- 各类咖啡饮品 (c) 2012 Michael Coghlan。部分权利保留。
+- 咖啡树 (c) 2011 Dave Townsend。部分权利保留。
 
 ### 关于作者
 
-当他不在交付面向数百万用户扩展的 JavaScript、Ruby、CoffeeScript 和 Java 应用程序时，Reg "Raganwald" Braithwaite 已经编写了用于 JavaScript、CoffeeScript 和 Ruby 编程的[库](http://github.com/raganwald)，例如 Allong.es、Method Combinators、Katy、JQuery Combinators、YouAreDaChef、andand 等。
+当他不在交付面向数百万用户扩展的 JavaScript、Ruby、CoffeeScript 和 Java 应用程序时，Reg "Raganwald" Braithwaite 已经编写了用于 JavaScript、CoffeeScript 和 Ruby 编程的库，例如 Allong.es、Method Combinators、Katy、JQuery Combinators、YouAreDaChef、andand 等。
 
-他在 "[Raganwald](http://raganwald)" 上撰写关于编程的文章，以及在 "[Braythwayt Dot Com](http://braythwayt.com)" 上发表一般性的思考。
+他在 "Raganwald" 上撰写关于编程的文章，以及在 "Braythwayt Dot Com" 上发表一般性的思考。
 
 #### 联系方式
 

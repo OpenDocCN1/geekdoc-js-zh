@@ -1,9 +1,6 @@
 # Javascript 可读代码编写 100 种技巧
 
-
-
-
-# 引言
+## 引言
 
 可读性强的代码是高效编程的基石。
 
@@ -16,6 +13,7 @@
 使用 `const` 和 `let` 可以确保变量具有块级作用域，从而减少错误并提高代码可读性。`const` 和 `let` 提供块级作用域，有助于防止 `var` 常见的变量提升和作用域泄漏问题。
 
 ### 好代码
+
 ```javascript
 // 使用 const 定义常量
 const MAX_USERS = 100;
@@ -32,6 +30,7 @@ console.log(userCount); // 1
 ```
 
 ### 坏代码
+
 ```javascript
 // 使用 var，它是函数作用域的，可能引发问题
 var MAX_USERS = 100;
@@ -49,6 +48,7 @@ console.log(newUser); // John Doe（此处 newUser 可访问，可能带来问�
 使用 `const` 和 `let` 有助于避免 `var` 的陷阱，例如意外创建全局变量以及因提升导致的意外行为。`const` 用于不应重新赋值的变量，而 `let` 用于可能变化的变量。
 
 **备忘：**
+
 `var` 声明会被提升到其所在函数或全局作用域的顶部，这可能导致令人困惑的错误。`const` 和 `let` 声明也会被提升，但在其定义被求值之前不会被初始化，从而产生“暂时性死区”，在初始化之前访问它们会抛出错误。
 
 ## 2. 利用箭头函数实现更简洁的语法和词法 `this`
@@ -56,6 +56,7 @@ console.log(newUser); // John Doe（此处 newUser 可访问，可能带来问�
 箭头函数提供了简洁的语法，并词法绑定 `this` 值，非常适合回调函数和方法。与传统函数表达式相比，它们语法更短，并自动将 `this` 绑定到周围上下文，从而简化代码并避免 `this` 相关的常见陷阱。
 
 ### 好代码
+
 ```javascript
 // 使用箭头函数实现简洁语法和词法 this
 const users = ['Alice', 'Bob', 'Charlie'];
@@ -71,6 +72,7 @@ user.greet(); // Hello, my name is undefined
 ```
 
 ### 坏代码
+
 ```javascript
 // 使用传统函数表达式
 const users = ['Alice', 'Bob', 'Charlie'];
@@ -90,6 +92,7 @@ user.greet(); // Hello, my name is John Doe
 箭头函数特别适用于编写更短、更易读的代码，尤其是在回调函数和方法中。然而，它们没有自己的 `this` 上下文，这在某些情况下可能有利，也可能带来问题。当需要动态 `this` 上下文时，应使用传统函数表达式。
 
 **备忘：**
+
 箭头函数不能用作构造函数，也没有自己的 `arguments` 对象。它们最适合用于非方法函数和需要词法 `this` 的回调函数。
 
 ## 3. 利用模板字面量简化字符串拼接
@@ -97,6 +100,7 @@ user.greet(); // Hello, my name is John Doe
 使用模板字面量简化字符串拼接并提高可读性。ES6 引入的模板字面量通过反引号和嵌入表达式，使字符串拼接更简单、更易读。
 
 ### 好代码
+
 ```javascript
 // 使用模板字面量进行字符串拼接
 const name = "John";
@@ -106,6 +110,7 @@ console.log(greeting); // 输出：Hello, my name is John and I am 30 years old.
 ```
 
 ### 坏代码
+
 ```javascript
 // 使用传统字符串拼接
 const name = "John";
@@ -117,6 +122,7 @@ console.log(greeting); // 输出：Hello, my name is John and I am 30 years old.
 模板字面量使用反引号（`` ` ``）代替引号，并允许通过 `${expression}` 嵌入表达式。与使用 `+` 运算符的传统字符串拼接相比，这使代码更易读、更易维护。
 
 **备忘：**
+
 模板字面量还支持多行字符串，这对于格式化长字符串或 HTML 片段非常有用。
 
 ## 4. 使用对象和数组的解构赋值编写更简洁的代码
@@ -124,6 +130,7 @@ console.log(greeting); // 输出：Hello, my name is John and I am 30 years old.
 解构赋值允许以简洁易读的方式从对象和数组中提取值。ES6 引入的解构赋值可以将数组中的值或对象中的属性解包到不同的变量中。
 
 ### 好代码
+
 ```javascript
 // 使用对象解构赋值
 const person = { name: "Alice", age: 25, city: "Wonderland" };
@@ -141,6 +148,7 @@ console.log(fourth); // 输出：4
 ```
 
 ### 坏代码
+
 ```javascript
 // 不使用对象解构赋值
 const person = { name: "Alice", age: 25, city: "Wonderland" };
@@ -164,6 +172,7 @@ console.log(fourth); // 输出：4
 解构赋值通过减少重复代码使代码更简洁、更易读。它允许直接从对象和数组中提取值，使代码更清晰、更易理解。
 
 **备忘：**
+
 解构赋值也可以用于函数参数，从而实现更灵活、更易读的函数签名。
 
 ## 5. 应用展开运算符合并数组和对象
@@ -171,6 +180,7 @@ console.log(fourth); // 输出：4
 使用展开运算符（`...`）轻松合并 JavaScript 中的数组和对象。展开运算符允许展开数组的元素或对象的属性，从而无需复杂方法即可轻松合并它们。
 
 ### 好代码
+
 ```javascript
 // 合并数组
 const array1 = [1, 2, 3];
@@ -184,6 +194,7 @@ const mergedObject = { ...object1, ...object2 }; // { a: 1, b: 2, c: 3, d: 4 }
 ```
 
 ### 坏代码
+
 ```javascript
 // 合并数组
 const array1 = [1, 2, 3];
@@ -196,26 +207,19 @@ const object2 = { c: 3, d: 4 };
 const mergedObject = Object.assign({}, object1, object2); // { a: 1, b: 2, c: 3, d: 4 }
 ```
 
-
-
-
 好的示例使用了展开运算符，它更简洁且易于阅读。差的示例使用了较旧的方法，如数组的 `concat` 和对象的 `Object.assign`，这些方法更冗长且不够直观。
 
-<Memo>
+**备忘：**
 
 展开运算符在 ES6（ECMAScript 2015）中引入，此后成为以更可读、更高效的方式处理数组和对象的流行特性。
 
-## 6. 使用有意义的变量名来描述其用途。
-
-* * *
+## 6. 使用有意义的变量名来描述其用途
 
 选择能够清晰描述其用途和内容的变量名。
 
-* * *
-
 有意义的变量名使代码更易读、更易维护。它们能帮助其他开发者理解变量的用途，而无需额外的注释。
 
-< Good Code >
+### 好代码
 
 ```javascript
 // 良好的变量名
@@ -224,7 +228,7 @@ const userAge = 25;
 const isUserLoggedIn = true;
 ```
 
-<Bad Code>
+### 坏代码
 
 ```javascript
 // 糟糕的变量名
@@ -235,21 +239,17 @@ const z = true;
 
 好的示例使用了描述性名称，指明了变量所代表的内容，使代码不言自明。差的示例使用了像 `x`、`y` 和 `z` 这样的通用名称，没有传达任何关于变量用途的有意义信息。
 
-<Memo>
+**备忘：**
 
 使用有意义的变量名是整洁代码原则中的基本实践，正如软件工程专家 Robert C. Martin 在其著作《代码整洁之道》中所倡导的那样。
 
-## 7. 布尔变量以 is、has 或 can 作为前缀。
+## 7. 布尔变量以 `is`、`has` 或 `can` 作为前缀
 
-* * *
+对布尔变量使用 `is`、`has` 或 `can` 等前缀，以明确其用途。
 
-对布尔变量使用 "is"、"has" 或 "can" 等前缀，以明确其用途。
+布尔变量表示真/假值。使用 `is`、`has` 或 `can` 等前缀有助于表明布尔值的性质，使代码更易读、更易理解。
 
-* * *
-
-布尔变量表示真/假值。使用 "is"、"has" 或 "can" 等前缀有助于表明布尔值的性质，使代码更易读、更易理解。
-
-< Good Code >
+### 好代码
 
 ```javascript
 // 良好的布尔变量名示例
@@ -258,7 +258,7 @@ let hasAdminPrivileges = false;
 let canEditProfile = true;
 ```
 
-<Bad Code>
+### 坏代码
 
 ```javascript
 // 糟糕的布尔变量名示例
@@ -267,23 +267,19 @@ let admin = false;
 let edit = true;
 ```
 
-在好的示例中，前缀 "is"、"has" 和 "can" 清楚地表明这些变量是布尔类型。这使得其他开发者一眼就能理解这些变量的用途。在差的示例中，变量名含义模糊，没有明确传达它们是布尔类型，这可能导致混淆。
+在好的示例中，前缀 `is`、`has` 和 `can` 清楚地表明这些变量是布尔类型。这使得其他开发者一眼就能理解这些变量的用途。在差的示例中，变量名含义模糊，没有明确传达它们是布尔类型，这可能导致混淆。
 
-<Memo>
+**备忘：**
 
 为布尔变量使用描述性前缀是许多编程语言中的常见做法，而不仅仅是 JavaScript。它提高了不同代码库中代码的可读性和可维护性。
 
-## 8. 在表示测量值的变量名中包含单位。
-
-* * *
+## 8. 在表示测量值的变量名中包含单位
 
 始终在变量名中包含测量单位，以避免混淆。
 
-* * *
-
 当处理存储测量值的变量时，在变量名中包含单位有助于明确该值代表什么，从而降低出错和误解的风险。
 
-< Good Code >
+### 好代码
 
 ```javascript
 // 变量名中包含单位的良好示例
@@ -292,7 +288,7 @@ let weightInKilograms = 70;
 let timeInSeconds = 120;
 ```
 
-<Bad Code>
+### 坏代码
 
 ```javascript
 // 变量名中不含单位的糟糕示例
@@ -303,21 +299,17 @@ let time = 120;
 
 在好的示例中，变量名包含了单位（米、千克、秒），清楚地表明了每个值代表什么。这种做法有助于防止错误，例如混淆不同的测量单位。在差的示例中，变量名中缺少单位可能导致混淆和潜在错误，因为无法立即清楚这些值代表什么。
 
-<Memo>
+**备忘：**
 
 在科学和工程应用中，精确测量至关重要，因此在变量名中包含单位尤为重要。这种做法有助于确保计算和数据表示的准确性和清晰度。
 
-## 9. 变量使用名词，函数使用动词。
-
-* * *
+## 9. 变量使用名词，函数使用动词
 
 变量使用名词，函数使用动词，使代码更易读、更直观。
 
-* * *
-
 这种技巧确保变量清晰地表示实体或对象，而函数表示动作或过程。这种命名约定有助于其他人快速理解代码中每个元素的用途和用法。
 
-< Good Code >
+### 好代码
 
 ```javascript
 // 良好示例
@@ -331,7 +323,7 @@ function printGreeting(name) { // 函数使用动词
 }
 ```
 
-<Bad Code>
+### 坏代码
 
 ```javascript
 // 糟糕示例
@@ -347,21 +339,17 @@ function age(birthYear) { // 令人困惑的函数名
 
 在好的示例中，`userName` 和 `age` 是清晰的名词，明显表示数据。函数 `calculateAge` 和 `printGreeting` 以动词命名，表示动作。在差的示例中，像 `calc` 和 `user` 这样的名称含义模糊，难以理解它们代表什么或做什么。
 
-<Memo>
+**备忘：**
 
 你知道吗？遵循一致的命名约定不仅能提高可读性，还能帮助高效地维护和调试代码，尤其是在大型项目中。
 
-## 10. 避免使用非通用理解的缩写。
-
-* * *
+## 10. 避免使用非通用理解的缩写
 
 使用清晰的全名而非缩写，可以提高代码的可读性并减少混淆。
 
-* * *
-
 在代码中避免使用非通用缩写，确保任何阅读代码的人都能轻松理解每个变量或函数的作用，而无需猜测或查找其含义。
 
-< Good Code >
+### 好代码
 
 ```javascript
 // 良好示例
@@ -374,7 +362,7 @@ function displayProductDetails(product) { // 清晰且具有描述性
 }
 ```
 
-<Bad Code>
+### 坏代码
 
 ```javascript
 // 糟糕示例
@@ -389,21 +377,17 @@ function dspPD(p) { // 含义不明的缩写
 
 在好的示例中，像 `totalPrice`、`calculateTotalPrice` 和 `displayProductDetails` 这样的名称不言自明。在差的示例中，像 `tp`、`calcTP` 和 `dspPD` 这样的缩写含义不清，使代码更难理解和维护。
 
-<Memo>
+**备忘：**
 
 你知道吗？在代码中始终使用清晰且描述性的名称，可以显著缩短新团队成员的入职时间，因为他们无需解读晦涩的缩写。
 
-## 11. 避免使用像 data、item 或 thing 这样的通用名称。
-
-* * *
+## 11. 避免使用像 `data`、`item` 或 `thing` 这样的通用名称。
 
 使用具体名称使代码更易读、更易维护。
 
-* * *
-
 在本节中，我们将说明为什么使用具体的变量名对于代码清晰度至关重要。
 
-< Good Code >
+**好的代码**
 
 ```javascript
 // 根据用户 ID 获取用户资料
@@ -414,7 +398,7 @@ function getUserProfile(userId) {
 }
 ```
 
-<Bad Code>
+**糟糕的代码**
 
 ```javascript
 // 根据 ID 获取某些内容
@@ -427,23 +411,14 @@ function getData(id) {
 
 在好的代码示例中，`userProfile` 和 `userId` 清楚地表明了函数处理的内容，使代码更易于理解和维护。在差的代码示例中，`data` 和 `id` 过于通用，可能导致对正在处理的数据类型产生混淆。
 
-<Memo>
-
-良好的命名约定可以显著降低开发者的认知负荷，帮助他们快速掌握代码的功能。
+**备忘：** 良好的命名约定可以显著降低开发者的认知负荷，帮助他们快速掌握代码的功能。
 
 ## 12. 命名要具体，避免歧义。
-
-* * *
-
-
-
-
-
-## 命名与代码质量最佳实践
 
 具体的命名有助于理解变量和函数的准确用途与用法。本节将展示命名中的具体性如何防止误解并提升代码清晰度。
 
 ### 优秀代码
+
 ```javascript
 // 将产品添加到购物车
 function addProductToCart(productId, quantity) {
@@ -456,6 +431,7 @@ function addProductToCart(productId, quantity) {
 ```
 
 ### 糟糕代码
+
 ```javascript
 // 添加一个项目
 function addItem(id, num) {
@@ -476,6 +452,7 @@ function addItem(id, num) {
 对变量、函数和类采用统一的命名约定，以增强代码的可读性和可维护性。一致的命名约定有助于开发者快速理解变量和函数的用途，减少阅读和维护代码时的认知负担。
 
 ### 优秀代码
+
 ```javascript
 // 变量和函数使用 camelCase，类使用 PascalCase
 let userName = 'JohnDoe';
@@ -492,6 +469,7 @@ class UserProfile {
 ```
 
 ### 糟糕代码
+
 ```javascript
 // 不一致的命名约定
 let User_name = 'JohnDoe';
@@ -516,6 +494,7 @@ class userprofile {
 用命名常量替换魔法数字，使代码更易理解和维护。魔法数字是缺乏上下文的硬编码值。使用命名常量可以提供有意义的名称，解释这些值的用途。
 
 ### 优秀代码
+
 ```javascript
 // 使用命名常量
 const MAX_USERS = 100;
@@ -531,6 +510,7 @@ setTimeout(() => {
 ```
 
 ### 糟糕代码
+
 ```javascript
 // 使用魔法数字
 function canAddUser(currentUserCount) {
@@ -551,6 +531,7 @@ setTimeout(() => {
 使用描述性的函数名称，清晰传达函数的用途和行为。函数名称应能让阅读代码的其他开发者立即明白其目的和行为。
 
 ### 优秀代码
+
 ```javascript
 // 优秀示例
 function calculateCircleArea(radius) {
@@ -559,6 +540,7 @@ function calculateCircleArea(radius) {
 ```
 
 ### 糟糕代码
+
 ```javascript
 // 糟糕示例
 function doSomething(x) {
@@ -575,6 +557,7 @@ function doSomething(x) {
 在函数定义中使用默认参数值来处理未定义或缺失的参数。默认函数参数允许你为参数提供默认值，使代码更健壮且更易阅读。
 
 ### 优秀代码
+
 ```javascript
 // 优秀示例
 function greetUser(name = 'User') {
@@ -586,6 +569,7 @@ greetUser(); // 输出: Hello, User!
 ```
 
 ### 糟糕代码
+
 ```javascript
 // 糟糕示例
 function greetUser(name) {
@@ -597,15 +581,16 @@ greetUser('Alice'); // 输出: Hello, Alice!
 greetUser(); // 输出: Hello, undefined!
 ```
 
-在优秀示例中，`greetUser` 函数为 `name` 参数使用了默认值 `'User'`。这确保了即使不传参调用函数，其行为也正确。糟糕示例使用逻辑或运算符处理缺失参数，但可能导致意外行为（例如 Hello, undefined!），且可读性较差。
+在优秀示例中，`greetUser` 函数为 `name` 参数使用了默认值 `'User'`。这确保了即使不传参调用函数，其行为也正确。糟糕示例使用逻辑或运算符处理缺失参数，但可能导致意外行为（例如 `Hello, undefined!`），且可读性较差。
 
 **提示：** 默认函数参数在 ECMAScript 2015 (ES6) 中引入，提供了一种更简洁、可读性更高的方式来处理可选参数。
 
-## 使用 async/await 处理异步代码以提高可读性
+## 使用 `async/await` 处理异步代码以提高可读性
 
 `async/await` 简化了异步代码的语法，使其更易阅读和维护。在 JavaScript 中使用 `async/await` 可以提升代码的可读性和结构，比传统的 Promise 链更易理解。
 
 ### 优秀代码
+
 ```javascript
 // 使用 async/await 获取数据
 async function fetchData() {
@@ -622,6 +607,7 @@ fetchData();
 ```
 
 ### 糟糕代码
+
 ```javascript
 // 使用 Promise 获取数据
 function fetchData() {
@@ -642,11 +628,12 @@ fetchData();
 
 **提示：** `async/await` 是建立在 Promise 之上的语法糖。它在 ES2017 (ES8) 中引入，并已成为 JavaScript 中编写异步代码的标准。
 
-## 使用 Map 和 Set 处理集合，而非普通对象和数组
+## 使用 `Map` 和 `Set` 处理集合，而非普通对象和数组
 
 与普通对象和数组相比，`Map` 和 `Set` 提供了更高效、更清晰的方式来处理数据集合。在 JavaScript 中使用 `Map` 和 `Set` 可以为集合提供更好的性能和功能，例如 `Set` 确保元素唯一性，`Map` 维护键值对。
 
 ### 优秀代码
+
 ```javascript
 // 使用 Map 处理键值对
 const userRoles = new Map();
@@ -660,50 +647,47 @@ uniqueNumbers.add(5);
 uniqueNumbers.add(1); // 重复值，不会被添加
 ```
 
-
-
-
-
 ```javascript
 uniqueNumbers.forEach(number => {
-  console.log(number); // Output: 1, 2, 3, 4, 5
+  console.log(number); // 输出: 1, 2, 3, 4, 5
 });
 ```
 
 ### 糟糕的代码
+
 ```javascript
-// Using plain object for key-value pairs
+// 使用普通对象处理键值对
 const userRoles = {
   Alice: 'Admin',
   Bob: 'User'
 };
-console.log(userRoles['Alice']); // Output: Admin
+console.log(userRoles['Alice']); // 输出: Admin
 
-// Using array for unique values
+// 使用数组处理唯一值
 const uniqueNumbers = [1, 2, 3, 3, 4];
 uniqueNumbers.push(5);
 if (!uniqueNumbers.includes(1)) {
-  uniqueNumbers.push(1); // Manually checking for duplicates
+  uniqueNumbers.push(1); // 手动检查重复
 }
 uniqueNumbers.forEach(number => {
-  console.log(number); // Output: 1, 2, 3, 3, 4, 5
+  console.log(number); // 输出: 1, 2, 3, 3, 4, 5
 });
 ```
 
 好的示例使用了 `Map` 和 `Set`，它们分别专为管理键值对集合和唯一值而设计。它们提供了内置方法，可以简化常见任务并提高性能。而糟糕的示例使用了普通对象和数组，在确保唯一性或管理键值对等任务时需要额外的逻辑。
 
-**备忘**
-`Map` 和 `Set` 在 ES6 (ES2015) 中引入。与对象不同，`Maps` 维护键的插入顺序；与数组不同，`Sets` 自动强制执行唯一性。
+**备忘：** `Map` 和 `Set` 在 ES6 (ES2015) 中引入。与对象不同，`Map` 维护键的插入顺序；与数组不同，`Set` 自动强制执行唯一性。
 
-## 19. 利用可选链（optional chaining）处理嵌套对象属性。
+## 19. 利用可选链（optional chaining）处理嵌套对象属性
 
 使用可选链安全地访问深层嵌套的对象属性，而不会导致程序报错。
 
 可选链允许你在无需检查每一层是否存在的情况下访问对象的嵌套属性，使你的代码更简洁、更具可读性。
 
 ### 好的代码
+
 ```javascript
-// Good example using optional chaining
+// 使用可选链的好的示例
 const user = {
   profile: {
     address: {
@@ -711,13 +695,14 @@ const user = {
     }
   }
 };
-// Safely access nested property
+// 安全地访问嵌套属性
 const city = user?.profile?.address?.city; // 'New York'
 ```
 
 ### 糟糕的代码
+
 ```javascript
-// Bad example without optional chaining
+// 不使用可选链的糟糕示例
 const user = {
   profile: {
     address: {
@@ -725,7 +710,7 @@ const user = {
     }
   }
 };
-// Manually checking each level
+// 手动检查每一层
 let city;
 if (user && user.profile && user.profile.address) {
   city = user.profile.address.city; // 'New York'
@@ -734,35 +719,36 @@ if (user && user.profile && user.profile.address) {
 
 好的示例使用可选链 (`?.`) 安全地访问嵌套属性 `city`。如果链中的任何部分是 `null` 或 `undefined`，它将返回 `undefined` 而不是抛出错误。糟糕的示例则手动检查每一层，导致代码冗长且难以阅读。
 
-**备忘**
-可选链在 ECMAScript 2020 (ES11) 中引入，目前在现代 JavaScript 环境中得到了广泛支持。
+**备忘：** 可选链在 ECMAScript 2020 (ES11) 中引入，目前在现代 JavaScript 环境中得到了广泛支持。
 
-## 20. 使用 Array.prototype.map 和 Array.prototype.filter 进行数组转换。
+## 20. 使用 `Array.prototype.map` 和 `Array.prototype.filter` 进行数组转换
 
 利用 `map` 和 `filter` 方法以简洁且可读的方式转换和过滤数组。
 
 `map` 方法创建一个新数组，其元素是调用数组每个元素调用提供函数后的结果。`filter` 方法创建一个新数组，其中包含所有通过提供函数实现的测试的元素。
 
 ### 好的代码
+
 ```javascript
-// Good example using map and filter
+// 使用 map 和 filter 的好的示例
 const numbers = [1, 2, 3, 4, 5];
-// Double each number
+// 将每个数字翻倍
 const doubled = numbers.map(num => num * 2); // [2, 4, 6, 8, 10]
-// Filter out odd numbers
+// 过滤出奇数
 const evens = numbers.filter(num => num % 2 === 0); // [2, 4]
 ```
 
 ### 糟糕的代码
+
 ```javascript
-// Bad example using for loops
+// 使用 for 循环的糟糕示例
 const numbers = [1, 2, 3, 4, 5];
-// Double each number
+// 将每个数字翻倍
 const doubled = [];
 for (let i = 0; i < numbers.length; i++) {
   doubled.push(numbers[i] * 2);
 }
-// Filter out odd numbers
+// 过滤出奇数
 const evens = [];
 for (let i = 0; i < numbers.length; i++) {
   if (numbers[i] % 2 === 0) {
@@ -773,16 +759,17 @@ for (let i = 0; i < numbers.length; i++) {
 
 好的示例使用 `map` 和 `filter` 以简洁且可读的方式转换和过滤数组。糟糕的示例使用 `for` 循环，更加冗长且容易出错。使用 `map` 和 `filter` 使代码更具声明性且更容易理解。
 
-**备忘**
-`map` 和 `filter` 方法是 ECMAScript 5.1 (ES5) 标准的一部分，该标准于 2011 年发布。它们现在是 JavaScript 函数式编程的基础工具。
+**备忘：** `map` 和 `filter` 方法是 ECMAScript 5.1 (ES5) 标准的一部分，该标准于 2011 年发布。它们现在是 JavaScript 函数式编程的基础工具。
 
-## 21. 为复杂函数或代码块注释其目的。
+## 21. 为复杂函数或代码块注释其目的
 
 添加注释来解释复杂函数或代码块的目的，有助于他人理解代码的意图和功能。
 
 在编写复杂函数或代码块时，包含描述其目的的注释至关重要。这种做法有助于代码的维护和调试。
 
 ### 好的代码
+
+
 ```javascript
 // This function calculates the factorial of a number using recursion
 function factorial(n) {
@@ -796,6 +783,7 @@ function factorial(n) {
 ```
 
 ### 糟糕的代码
+
 ```javascript
 function factorial(n) {
     if (n === 0) {
@@ -805,18 +793,20 @@ function factorial(n) {
 }
 ```
 
-在好的示例中，注释清晰地解释了函数的目的以及基础情况（base case）和递归情况（recursive case）背后的逻辑。这使得代码更容易理解和维护。在糟糕的示例中，缺乏注释使得他人难以把握函数的意图和逻辑。
+在好的示例中，注释清晰地解释了函数的目的以及基础情况（`base case`）和递归情况（`recursive case`）背后的逻辑。这使得代码更容易理解和维护。在糟糕的示例中，缺乏注释使得他人难以把握函数的意图和逻辑。
 
 **备忘**
+
 为复杂代码编写注释是软件开发中的最佳实践，并且在编码标准和指南中经常被强调。
 
-## 22. 在注释中解释非显而易见的代码逻辑。
+## 22. 在注释中解释非显而易见的代码逻辑
 
 使用注释来阐明代码中非显而易见或棘手的部分，以帮助他人理解逻辑。
 
 当代码逻辑不能立即被看清时，添加注释来解释推理过程或方法可以防止在未来的维护过程中产生混淆和错误。
 
 ### 好的代码
+
 ```javascript
 // Check if the user is an admin or has a premium account
 function hasAccess(user) {
@@ -834,6 +824,7 @@ function hasAccess(user) {
 ```
 
 ### 糟糕的代码
+
 ```javascript
 function hasAccess(user) {
     if (user.role === 'admin') {
@@ -849,15 +840,17 @@ function hasAccess(user) {
 在好的示例中，注释解释了每个条件背后的逻辑，明确了为什么某些用户拥有访问权限。这有助于其他开发人员理解决策过程。在糟糕的示例中，缺乏注释使得逻辑容易被误解，从而导致错误或错误的假设。
 
 **备忘**
+
 清晰简洁的注释可以显著减少代码审查和调试所需的时间，从而提高开发效率。
 
-## 23. 为函数的预期输入和输出编写文档。
+## 23. 为函数的预期输入和输出编写文档
 
 清晰地记录函数的预期输入参数和输出结果。
 
 为函数的预期输入和输出提供清晰的文档，有助于其他开发人员了解如何正确使用该函数以及对其结果的预期。
 
 ### 好的代码
+
 ```javascript
 /**
 * Calculates the sum of two numbers.
@@ -871,28 +864,27 @@ function add(a, b) {
 ```
 
 ### 糟糕的代码
+
 ```javascript
 function add(a, b) {
     return a + b;
 }
 ```
 
-在好的示例中，函数 `add` 使用注释进行了记录，将输入参数 `a` 和 `b` 描述为数字，将输出描述为数字。这向其他开发人员明确了函数需要什么以及返回什么。在糟糕的示例中，没有文档，使得他人难以理解函数的目的和用法。
+在好的示例中，函数`add`使用注释进行了记录，将输入参数`a`和`b`描述为数字，将输出描述为数字。这向其他开发人员明确了函数需要什么以及返回什么。在糟糕的示例中，没有文档，使得他人难以理解函数的目的和用法。
 
 **备忘**
-使用 JSDoc 注释是 JavaScript 中的常见做法，用于为函数、类和方法提供详细文档。它有助于自动生成 API 文档。
 
-## 24. 用注释标出临时的权宜之计。
+使用`JSDoc`注释是`JavaScript`中的常见做法，用于为函数、类和方法提供详细文档。它有助于自动生成`API`文档。
 
-使用注释来标出代码中任何临时的权宜之计（workarounds）或黑客技巧（hacks）。
+## 24. 用注释标出临时的权宜之计
 
+使用注释来标出代码中任何临时的权宜之计（`workarounds`）或黑客技巧（`hacks`）。
 
-
-
-
-当你实现临时解决方案或权宜之计（hack）时，务必添加注释说明其存在的原因以及未来需要如何替换它。
+当你实现临时解决方案或权宜之计（`hack`）时，务必添加注释说明其存在的原因以及未来需要如何替换它。
 
 ### 良好代码示例
+
 ```javascript
 // 针对问题 #123 的临时解决方案
 // 这是绕过第三方库中 Bug 的权宜之计
@@ -907,6 +899,7 @@ function fetchData() {
 ```
 
 ### 不良代码示例
+
 ```javascript
 function fetchData() {
     setTimeout(() => {
@@ -915,15 +908,16 @@ function fetchData() {
 }
 ```
 
-在良好示例中，注释明确指出了 `setTimeout` 是针对已知问题（#123）的临时解决方案，并包含 `TODO` 注释，提示问题解决后移除该代码。这有助于其他开发者理解代码的上下文和临时性。而在不良示例中，没有任何注释，导致其他开发者不清楚 `setTimeout` 背后的原因以及未来可能需要重新审视这段代码。
+在良好示例中，注释明确指出了`setTimeout`是针对已知问题（#123）的临时解决方案，并包含`TODO`注释，提示问题解决后移除该代码。这有助于其他开发者理解代码的上下文和临时性。而在不良示例中，没有任何注释，导致其他开发者不清楚`setTimeout`背后的原因以及未来可能需要重新审视这段代码。
 
-**备忘录：** 使用 `TODO` 注释是跟踪临时解决方案并确保其在未来更新中得到处理的好习惯。许多代码编辑器和 IDE 可以高亮显示 `TODO` 注释，使其更易于查找。
+**备忘录：** 使用`TODO`注释是跟踪临时解决方案并确保其在未来更新中得到处理的好习惯。许多代码编辑器和`IDE`可以高亮显示`TODO`注释，使其更易于查找。
 
 ## 使用注释标记代码的重要部分
 
 注释有助于突出和解释代码中的重要部分。使用注释标记重要部分可以使代码更易于导航和理解。
 
 ### 良好代码示例
+
 ```javascript
 // 初始化变量
 let total = 0;
@@ -941,6 +935,7 @@ console.log(average);
 ```
 
 ### 不良代码示例
+
 ```javascript
 let total = 0;
 let count = 0;
@@ -961,6 +956,7 @@ console.log(average);
 注释应简短且直接与所描述的代码相关。简洁的注释可以避免混乱，确保代码保持可读性和可维护性。
 
 ### 良好代码示例
+
 ```javascript
 // 对数组中的值求和
 let sum = numbers.reduce((acc, num) => acc + num, 0);
@@ -969,6 +965,7 @@ console.log(sum);
 ```
 
 ### 不良代码示例
+
 ```javascript
 // 这是一个循环，遍历名为 numbers 的数组中的每个元素，并将每个元素加到累加器上，累加器初始值为 0，然后返回数组中所有元素的总和
 let sum = numbers.reduce((acc, num) => acc + num, 0);
@@ -985,6 +982,7 @@ console.log(sum);
 始终更新注释以反映代码的变更，确保其准确且有用。修改代码时，务必更新相关注释，防止给未来的读者带来错误信息和困惑。
 
 ### 良好代码示例
+
 ```javascript
 // 计算矩形的面积
 function calculateArea(width, height) {
@@ -1002,6 +1000,7 @@ function calculateArea(width, height) {
 ```
 
 ### 不良代码示例
+
 ```javascript
 // 计算矩形的面积
 function calculateArea(width, height) {
@@ -1019,13 +1018,14 @@ function calculateArea(width, height) {
 
 在良好示例中，注释已更新以反映新的验证逻辑，确保任何阅读代码的人都能理解当前功能。在不良示例中，注释仍然过时，可能会误导读者对代码行为的理解。
 
-**备忘录：** 持续更新注释有助于维护代码质量，并减少因误解代码目的和功能而导致的 Bug 风险。
+**备忘录：** 持续更新注释有助于维护代码质量，并减少因误解代码目的和功能而导致的`Bug`风险。
 
 ## 避免冗余注释，不要陈述显而易见的内容
 
 避免编写仅仅复述代码功能的注释，因为它们没有增加价值，反而使代码变得杂乱。注释应提供代码本身无法立即明确的额外上下文或解释，而不是陈述显而易见的内容。
 
 ### 良好代码示例
+
 ```javascript
 // 计算矩形的面积
 function calculateArea(width, height) {
@@ -1039,6 +1039,7 @@ function isAdult(age) {
 ```
 
 ### 不良代码示例
+
 ```javascript
 // 此函数计算矩形的面积
 function calculateArea(width, height) {
@@ -1060,6 +1061,7 @@ function isAdult(age) {
 注释应提供代码背后的上下文和理由，而不仅仅是描述代码的功能。
 
 ### 良好代码示例
+
 ```javascript
 // 计算折扣后的总价
 // 这是为了给忠实客户提供更好的优惠
@@ -1069,6 +1071,7 @@ function calculateTotalPrice(price, discount) {
 ```
 
 ### 不良代码示例
+
 ```javascript
 // 从价格中减去折扣
 function calculateTotalPrice(price, discount) {
@@ -1085,6 +1088,7 @@ function calculateTotalPrice(price, discount) {
 注释应使用清晰、语法正确的规范英语编写，以确保所有读者都能轻松理解。
 
 ### 良好代码示例
+
 ```javascript
 // 应用折扣后计算总价。
 // 这确保忠实客户获得最佳优惠。
@@ -1094,13 +1098,10 @@ function calculateTotalPrice(price, discount) {
 ```
 
 ### 不良代码示例
+
 ```javascript
 // 计算折扣后总价
 ```
-
-
-
-
 
 ```javascript
 // this make sure loyal customers get best deal
@@ -1112,15 +1113,17 @@ function calculateTotalPrice(price, discount) {
 在好的示例中，注释使用完整的句子和正确的语法编写，使其清晰且专业。在差的示例中，注释使用简写形式并包含语法错误，这可能导致误解并显得不专业。
 
 **备忘录**
+
 在注释中使用正确的英语不仅提高了可读性，还反映了专业的编码标准，这在协作环境中尤为重要。
 
-## 利用 ES6 类进行面向对象编程。
+## 利用 ES6 类进行面向对象编程
 
-使用 ES6 类在 JavaScript 中创建清晰、模块化和可重用的代码。
+使用`ES6`类在`JavaScript`中创建清晰、模块化和可重用的代码。
 
-ES6 类提供了清晰简洁的语法来创建对象和处理继承，使你的代码更易读和可维护。
+`ES6`类提供了清晰简洁的语法来创建对象和处理继承，使你的代码更易读和可维护。
 
 ### 好的代码
+
 ```javascript
 // Good example using ES6 classes
 class Animal {
@@ -1146,6 +1149,7 @@ dog.speak(); // Rex barks.
 ```
 
 ### 差的代码
+
 ```javascript
 // Bad example using ES5 function constructors
 function Animal(name) {
@@ -1171,18 +1175,22 @@ var dog = new Dog('Rex');
 dog.speak(); // Rex barks.
 ```
 
-好的示例使用了 ES6 类，它提供了一种更直观且不易出错的方式来创建对象和处理继承。差的示例使用了 ES5 函数构造函数和原型链，这更加冗长且难以阅读。
+好的示例使用了`ES6`类，它提供了一种更直观且不易出错的方式来创建对象和处理继承。差的示例使用了`ES5`函数构造函数和原型链，这更加冗长且难以阅读。
 
 **备忘录**
-ES6 类是对 JavaScript 现有基于原型的继承模型的语法糖。它们并没有为语言引入新的面向对象继承模型。
 
-## 使用 Promise.all 并发运行多个 Promise。
+`ES6`类是对`JavaScript`现有基于原型的继承模型的语法糖。它们并没有为语言引入新的面向对象继承模型。
 
-利用 `Promise.all` 高效地并发处理多个异步操作。
+## 使用 Promise.all 并发运行多个 Promise
 
-`Promise.all` 允许你并行运行多个 Promise，并等待所有 Promise 完成或任何一个拒绝，从而更轻松地管理并发异步任务。
+利用`Promise.all`高效地并发处理多个异步操作。
+
+`Promise.all`允许你并行运行多个`Promise`，并等待所有`Promise`完成或任何一个拒绝，从而更轻松地管理并发异步任务。
 
 ### 好的代码
+
+
+
 ```javascript
 // Good example using Promise.all
 const promise1 = fetch('https://api.example.com/data1');
@@ -1200,6 +1208,7 @@ Promise.all([promise1, promise2, promise3])
 ```
 
 ### 差的代码
+
 ```javascript
 // Bad example without using Promise.all
 const promise1 = fetch('https://api.example.com/data1');
@@ -1226,18 +1235,20 @@ promise1
   });
 ```
 
-好的示例使用 `Promise.all` 并发运行所有 `fetch` 请求，效率更高且代码更简洁。差的示例顺序执行 Promise，效率较低且难以阅读。
+好的示例使用`Promise.all`并发运行所有`fetch`请求，效率更高且代码更简洁。差的示例顺序执行`Promise`，效率较低且难以阅读。
 
 **备忘录**
-如果任何一个输入的 Promise 拒绝，`Promise.all` 会立即拒绝；只有当所有输入的 Promise 都解决时，它才会解决。
 
-## 利用 Object.keys 和 Object.values 遍历对象。
+如果任何一个输入的`Promise`拒绝，`Promise.all`会立即拒绝；只有当所有输入的`Promise`都解决时，它才会解决。
 
-使用 `Object.keys` 和 `Object.values` 高效地遍历对象的属性和值。
+## 利用 Object.keys 和 Object.values 遍历对象
 
-在 JavaScript 中处理对象时，使用 `Object.keys` 和 `Object.values` 可以更清晰、更易读地遍历其属性和值。
+使用`Object.keys`和`Object.values`高效地遍历对象的属性和值。
+
+在 JavaScript 中处理对象时，使用`Object.keys`和`Object.values`可以更清晰、更易读地遍历其属性和值。
 
 ### 好的代码
+
 ```javascript
 const user = {
   name: 'Alice',
@@ -1257,6 +1268,7 @@ Object.values(user).forEach(value => {
 ```
 
 ### 差的代码
+
 ```javascript
 const user = {
   name: 'Alice',
@@ -1279,18 +1291,20 @@ for (let key in user) {
 }
 ```
 
-好的示例使用 `Object.keys` 和 `Object.values` 遍历对象的属性和值，使代码更易读，并避免了 `hasOwnProperty` 检查。差的示例使用 `for...in` 循环，需要额外检查以确保只遍历对象自身的属性，代码不够简洁。
+好的示例使用`Object.keys`和`Object.values`遍历对象的属性和值，使代码更易读，并避免了`hasOwnProperty`检查。差的示例使用`for...in`循环，需要额外检查以确保只遍历对象自身的属性，代码不够简洁。
 
 **备忘录**
-`Object.entries` 也可用于同时遍历键和值，返回键值对数组。
 
-## 使用 ??（空值合并）运算符设置默认值。
+`Object.entries`也可用于同时遍历键和值，返回键值对数组。
 
-`??` 运算符提供了一种简洁的方式，在处理 `null` 或 `undefined` 时分配默认值。
+## 使用 ??（空值合并）运算符设置默认值
 
-空值合并运算符（`??`）是 JavaScript 中一个有用的工具，用于在变量为 `null` 或 `undefined` 时设置默认值，使代码更易读，并避免与假值相关的常见陷阱。
+`??`运算符提供了一种简洁的方式，在处理`null`或`undefined`时分配默认值。
+
+空值合并运算符（`??`）是 JavaScript 中一个有用的工具，用于在变量为`null`或`undefined`时设置默认值，使代码更易读，并避免与假值相关的常见陷阱。
 
 ### 好的代码
+
 ```javascript
 let userInput = null;
 let defaultText = 'Default text';
@@ -1301,6 +1315,7 @@ console.log(displayText); // Output: 'Default text'
 ```
 
 ### 差的代码
+
 ```javascript
 let userInput = null;
 let defaultText = 'Default text';
@@ -1310,18 +1325,20 @@ let displayText = userInput || defaultText;
 console.log(displayText); // Output: 'Default text'
 ```
 
-好的示例使用 `??` 运算符仅在 `userInput` 为 `null` 或 `undefined` 时分配 `defaultText`，确保其他假值如 `0` 或 `''` 不会被错误替换。差的示例使用 `||` 运算符，它会替换任何假值，而不仅仅是 `null` 或 `undefined`，可能导致意外行为。
+好的示例使用`??`运算符仅在`userInput`为`null`或`undefined`时分配`defaultText`，确保其他假值如`0`或`''`不会被错误替换。差的示例使用`||`运算符，它会替换任何假值，而不仅仅是`null`或`undefined`，可能导致意外行为。
 
 **备忘录**
-`??` 运算符在 ECMAScript 2020（ES11）中引入，特别适用于 `0`、`false` 或 `''` 是有效值且不应触发默认赋值的情况。
 
-## 使用 fetch 进行网络请求，而非 XMLHttpRequest 等旧方法。
+`??`运算符在 ECMAScript 2020（ES11）中引入，特别适用于`0`、`false`或`''`是有效值且不应触发默认赋值的情况。
 
-使用现代的 `fetch` API 进行网络请求，以编写更清晰、更易读的代码。
+## 使用 fetch 进行网络请求，而非 XMLHttpRequest 等旧方法
 
-`fetch` API 是一种基于 Promise 的现代 JavaScript 网络请求方式。它比旧的 `XMLHttpRequest` 方法更强大、更灵活，并且能带来更易读、更易维护的代码。
+使用现代的`fetch`API 进行网络请求，以编写更清晰、更易读的代码。
+
+`fetch`API 是一种基于 Promise 的现代 JavaScript 网络请求方式。它比旧的`XMLHttpRequest`方法更强大、更灵活，并且能带来更易读、更易维护的代码。
 
 ### 好的代码
+
 ```javascript
 // Good example using fetch
 fetch('https://api.example.com/data')
@@ -1340,6 +1357,7 @@ fetch('https://api.example.com/data')
 ```
 
 ### 差的代码
+
 ```javascript
 // Bad example using XMLHttpRequest
 var xhr = new XMLHttpRequest();
@@ -1356,10 +1374,6 @@ xhr.onreadystatechange = function () {
 };
 ```
 
-
-
-
-
 ```javascript
       console.error('There was a problem with the request:', xhr.statusText);
     }
@@ -1369,17 +1383,18 @@ xhr.onreadystatechange = function () {
 xhr.send();
 ```
 
-`fetch` API 通过使用 Promise 简化了网络请求的过程，使代码更易读，并更容易处理异步操作。相比之下，`XMLHttpRequest` 需要更多的样板代码，且不够直观。`fetch` API 还提供了更好的错误处理和更强大的功能。
+`fetch`API 通过使用 Promise 简化了网络请求的过程，使代码更易读，并更容易处理异步操作。相比之下，`XMLHttpRequest`需要更多的样板代码，且不够直观。`fetch`API 还提供了更好的错误处理和更强大的功能。
 
-> **备忘**：`fetch` API 于 2015 年作为 Fetch 生活标准的一部分引入，现在已被现代浏览器广泛支持。它设计得比 `XMLHttpRequest` 更灵活、更易用。
+> **备忘**：`fetch`API 于 2015 年作为 Fetch 生活标准的一部分引入，现在已被现代浏览器广泛支持。它设计得比`XMLHttpRequest`更灵活、更易用。
 
 ## 使用像 ESLint 这样的 linter 来统一格式化代码
 
-使用像 `ESLint` 这样的 linter 来确保代码格式一致，并及早发现潜在错误。
+使用像`ESLint`这样的 linter 来确保代码格式一致，并及早发现潜在错误。
 
-`ESLint` 是一个流行的 JavaScript linter，它帮助开发者保持一致的代码风格，并在问题出现之前捕获潜在错误。通过将 `ESLint` 集成到你的开发工作流中，你可以确保代码库保持整洁和可读。
+`ESLint`是一个流行的 JavaScript linter，它帮助开发者保持一致的代码风格，并在问题出现之前捕获潜在错误。通过将`ESLint`集成到你的开发工作流中，你可以确保代码库保持整洁和可读。
 
 ### 良好代码
+
 ```javascript
 // Good example with ESLint rules applied
 function add(a, b) {
@@ -1394,6 +1409,7 @@ console.log(result); // Outputs: 5
 ```
 
 ### 糟糕代码
+
 ```javascript
 // Bad example without ESLint rules
 function add(a, b) {
@@ -1407,15 +1423,16 @@ var result = add(2,3)
 console.log(result) // Outputs: 5
 ```
 
-使用 `ESLint` 有助于在整个项目中强制执行一致的编码标准，使多个开发者更容易协作。它可以自动修复一些问题，并为其他问题提供警告，确保你的代码遵循最佳实践。糟糕的示例展示了不一致的缩进、缺少分号以及不当使用 `var` 而非 `const`，这些问题都可以被 `ESLint` 捕获并纠正。
+使用`ESLint`有助于在整个项目中强制执行一致的编码标准，使多个开发者更容易协作。它可以自动修复一些问题，并为其他问题提供警告，确保你的代码遵循最佳实践。糟糕的示例展示了不一致的缩进、缺少分号以及不当使用`var`而非`const`，这些问题都可以被`ESLint`捕获并纠正。
 
-> **备忘**：`ESLint` 由 Nicholas C. Zakas 于 2013 年创建，旨在帮助开发者编写一致且无错误的 JavaScript 代码。它具有高度可配置性，并支持自定义规则，使其成为任何 JavaScript 项目的多功能工具。
+> **备忘**：`ESLint`由 Nicholas C. Zakas 于 2013 年创建，旨在帮助开发者编写一致且无错误的 JavaScript 代码。它具有高度可配置性，并支持自定义规则，使其成为任何 JavaScript 项目的多功能工具。
 
 ## 使用 Prettier 进行自动代码格式化
 
-`Prettier` 是一个代码格式化工具，它通过解析你的代码并按照自己的规则重新打印来强制执行一致的风格。使用 `Prettier` 有助于在整个项目中保持统一的代码风格，使他人更容易阅读和理解你的代码。
+`Prettier`是一个代码格式化工具，它通过解析你的代码并按照自己的规则重新打印来强制执行一致的风格。使用`Prettier`有助于在整个项目中保持统一的代码风格，使他人更容易阅读和理解你的代码。
 
 ### 良好代码
+
 ```javascript
 // Good: Consistent formatting with Prettier
 function greet(name) {
@@ -1426,6 +1443,7 @@ greet('Alice');
 ```
 
 ### 糟糕代码
+
 ```javascript
 // Bad: Inconsistent formatting
 function greet(name) { console.log("Hello, " + name + "!"); }
@@ -1433,15 +1451,16 @@ function greet(name) { console.log("Hello, " + name + "!"); }
 greet( 'Alice' );
 ```
 
-`Prettier` 根据一组规则自动格式化你的代码，确保一致性。在良好示例中，代码格式整洁，缩进和间距适当。在糟糕示例中，代码间距和格式不一致，使其更难阅读。
+`Prettier`根据一组规则自动格式化你的代码，确保一致性。在良好示例中，代码格式整洁，缩进和间距适当。在糟糕示例中，代码间距和格式不一致，使其更难阅读。
 
-> **备忘**：`Prettier` 支持多种语言，并与大多数编辑器集成，使其成为维护代码质量的多功能工具。
+> **备忘**：`Prettier`支持多种语言，并与大多数编辑器集成，使其成为维护代码质量的多功能工具。
 
 ## 使用一致的缩进来组织代码
 
 一致的缩进提高了代码的可读性，并有助于理解代码的结构和流程。适当的缩进对于使代码可读和可维护至关重要。它在视觉上分隔了代码块，使逻辑更易于跟踪。
 
 ### 良好代码
+
 ```javascript
 // Good: Consistent indentation
 if (true) {
@@ -1453,6 +1472,7 @@ if (true) {
 ```
 
 ### 糟糕代码
+
 ```javascript
 // Bad: Inconsistent indentation
 if (true) {
@@ -1472,6 +1492,7 @@ console.log('Nested block is also not properly indented.');
 通过将相关的函数、变量和类分组来组织代码。将相关代码分组有助于理解程序的结构和流程。它使代码更易于维护和导航。
 
 ### 良好代码
+
 ```javascript
 // User-related functions
 function createUser(name, age) {
@@ -1493,6 +1514,7 @@ function getProduct(id) {
 ```
 
 ### 糟糕代码
+
 ```javascript
 function createUser(name, age) {
     return { name, age };
@@ -1520,6 +1542,7 @@ function getProduct(id) {
 保持代码行简短，理想情况下不超过 80 个字符，以增强可读性。长代码行可能难以阅读和理解。将它们拆分为更短的行使代码更易读和可维护。
 
 ### 良好代码
+
 ```javascript
 // Good: Short lines of code
 function calculateTotal(price, taxRate) {
@@ -1533,6 +1556,9 @@ console.log(totalPrice);
 ```
 
 ### 糟糕代码
+
+
+
 ```javascript
 // Bad: Long line of code
 function calculateTotal(price, taxRate) { const tax = price * taxRate; const total = price + tax; return total; } const totalPrice = calculateTotal(100, 0.08); console.log(totalPrice);
@@ -1547,6 +1573,7 @@ function calculateTotal(price, taxRate) { const tax = price * taxRate; const tot
 通过使用提前返回而不是深层嵌套的 `if` 语句来简化代码。深层嵌套的 `if` 语句会使代码难以阅读和理解。使用提前返回可以简化逻辑并提高可读性。
 
 ### 良好代码
+
 ```javascript
 function processValue(value) {
     if (value === null) {
@@ -1563,6 +1590,7 @@ function processValue(value) {
 ```
 
 ### 糟糕代码
+
 ```javascript
 function processValue(value) {
     if (value !== null) {
@@ -1576,10 +1604,6 @@ function processValue(value) {
     }
 }
 ```
-
-
-
-
 
 ```javascript
             }
@@ -1622,29 +1646,29 @@ function processValue(value) {
 ```javascript
 function getFruitColor(fruit) {
 
-    switch (fruit) {
+    switch (fruit) {
 
-        case 'apple':
+        case 'apple':
 
-            return 'red';
+            return 'red';
 
-        case 'banana':
+        case 'banana':
 
-            return 'yellow';
+            return 'yellow';
 
-        case 'grape':
+        case 'grape':
 
-            return 'purple';
+            return 'purple';
 
-        case 'orange':
+        case 'orange':
 
-            return 'orange';
+            return 'orange';
 
-        default:
+        default:
 
-            return 'unknown';
+            return 'unknown';
 
-    }
+    }
 
 }
 ```
@@ -1654,27 +1678,27 @@ function getFruitColor(fruit) {
 ```javascript
 function getFruitColor(fruit) {
 
-    if (fruit === 'apple') {
+    if (fruit === 'apple') {
 
-        return 'red';
+        return 'red';
 
-    } else if (fruit === 'banana') {
+    } else if (fruit === 'banana') {
 
-        return 'yellow';
+        return 'yellow';
 
-    } else if (fruit === 'grape') {
+    } else if (fruit === 'grape') {
 
-        return 'purple';
+        return 'purple';
 
-    } else if (fruit === 'orange') {
+    } else if (fruit === 'orange') {
 
-        return 'orange';
+        return 'orange';
 
-    } else {
+    } else {
 
-        return 'unknown';
+        return 'unknown';
 
-    }
+    }
 
 }
 ```
@@ -1704,33 +1728,33 @@ function getFruitColor(fruit) {
 
 function processRow(row) {
 
-  row.forEach(cell => {
+  row.forEach(cell => {
 
-    // Process each cell
+    // Process each cell
 
-    console.log(cell);
+    console.log(cell);
 
-  });
+  });
 
 }
 
 function processTable(table) {
 
-  table.forEach(row => {
+  table.forEach(row => {
 
-    processRow(row);
+    processRow(row);
 
-  });
+  });
 
 }
 
 const table = [
 
-  [1, 2, 3],
+  [1, 2, 3],
 
-  [4, 5, 6],
+  [4, 5, 6],
 
-  [7, 8, 9]
+  [7, 8, 9]
 
 ];
 
@@ -1744,23 +1768,23 @@ processTable(table);
 
 const table = [
 
-  [1, 2, 3],
+  [1, 2, 3],
 
-  [4, 5, 6],
+  [4, 5, 6],
 
-  [7, 8, 9]
+  [7, 8, 9]
 
 ];
 
 for (let i = 0; i < table.length; i++) {
 
-  for (let j = 0; j < table[i].length; j++) {
+  for (let j = 0; j < table[i].length; j++) {
 
-    // Process each cell
+    // Process each cell
 
-    console.log(table[i][j]);
+    console.log(table[i][j]);
 
-  }
+  }
 
 }
 ```
@@ -1790,17 +1814,17 @@ for (let i = 0; i < table.length; i++) {
 
 function parseJSON(jsonString) {
 
-  try {
+  try {
 
-    const data = JSON.parse(jsonString);
+    const data = JSON.parse(jsonString);
 
-    console.log('Parsed data:', data);
+    console.log('Parsed data:', data);
 
-  } catch (error) {
+  } catch (error) {
 
-    console.error('Failed to parse JSON:', error.message);
+    console.error('Failed to parse JSON:', error.message);
 
-  }
+  }
 
 }
 
@@ -1820,9 +1844,9 @@ parseJSON(invalidJsonString);
 
 function parseJSON(jsonString) {
 
-  const data = JSON.parse(jsonString);
+  const data = JSON.parse(jsonString);
 
-  console.log('Parsed data:', data);
+  console.log('Parsed data:', data);
 
 }
 
@@ -1860,7 +1884,7 @@ parseJSON(invalidJsonString); // This will throw an error and crash the applicat
 
 function calculateRectangleArea(width, height) {
 
-    return width * height;
+    return width * height;
 
 }
 
@@ -1868,7 +1892,7 @@ function calculateRectangleArea(width, height) {
 
 function calculateCircleArea(radius) {
 
-    return Math.PI * radius * radius;
+    return Math.PI * radius * radius;
 
 }
 ```
@@ -1880,17 +1904,17 @@ function calculateCircleArea(radius) {
 
 function calculateArea(shape, width, height, radius) {
 
-    if (shape === 'rectangle') {
+    if (shape === 'rectangle') {
 
-        return width * height;
+        return width * height;
 
-    } else if (shape === 'circle') {
+    } else if (shape === 'circle') {
 
-        return Math.PI * radius * radius;
+        return Math.PI * radius * radius;
 
-    }
+    }
 
-    return 0;
+    return 0;
 
 }
 ```
@@ -1920,7 +1944,7 @@ function calculateArea(shape, width, height, radius) {
 
 function fetchUserData(userId) {
 
-    // Implementation to fetch user data
+    // Implementation to fetch user data
 
 }
 
@@ -1928,7 +1952,7 @@ function fetchUserData(userId) {
 
 function isValidEmail(email) {
 
-    // Implementation to validate email
+    // Implementation to validate email
 
 }
 ```
@@ -1940,7 +1964,7 @@ function isValidEmail(email) {
 
 function getData(id) {
 
-    // Implementation to fetch user data
+    // Implementation to fetch user data
 
 }
 
@@ -1948,7 +1972,7 @@ function getData(id) {
 
 function checkEmail(e) {
 
-    // Implementation to validate email
+    // Implementation to validate email
 
 }
 ```
@@ -1978,7 +2002,7 @@ function checkEmail(e) {
 
 function add(a, b) {
 
-    return a + b; // Always returns the same output for the same inputs
+    return a + b; // Always returns the same output for the same inputs
 
 }
 
@@ -1987,13 +2011,10 @@ console.log(add(2, 3)); // 5
 console.log(add(2, 3)); // 5
 ```
 
-
-
-
-
 ### 不纯函数示例
 
 **糟糕的代码**
+
 ```javascript
 let sum = 0;
 
@@ -2010,6 +2031,7 @@ add(2, 3); // 再次输出 5 并改变 sum
 纯函数更容易测试和调试，因为它们不依赖或改变其作用域之外的状态。糟糕的示例展示了一个不纯函数，它修改了全局变量并输出到控制台，使得其行为更难预测和测试。
 
 **备忘**
+
 纯函数是函数式编程中的一个基本概念，它强调不可变性和使用纯函数来创建可预测且可靠的代码。
 
 ---
@@ -2019,6 +2041,7 @@ add(2, 3); // 再次输出 5 并改变 sum
 全局变量由于其广泛的影响范围，可能导致代码难以理解和维护。全局变量在整个代码库中都可访问，这可能导致意外的交互和错误。最好使用局部变量或将变量作为参数传递给函数。
 
 **良好的代码**
+
 ```javascript
 // 使用局部变量的函数
 function calculateTotal(price, tax) {
@@ -2031,6 +2054,7 @@ console.log(calculateTotal(200, 20)); // 220
 ```
 
 **糟糕的代码**
+
 ```javascript
 let total = 0; // 全局变量
 
@@ -2049,6 +2073,7 @@ console.log(total); // 220
 使用全局变量可能导致意外行为并使调试变得困难，因为代码的任何部分都可以更改它们的值。良好的示例将变量限制在函数作用域内，使函数的行为更可预测且更隔离。
 
 **备忘**
+
 JavaScript 的 `let` 和 `const` 关键字有助于限制变量的作用域，减少意外创建全局变量的可能性，并提高代码的可维护性。
 
 ---
@@ -2058,6 +2083,7 @@ JavaScript 的 `let` 和 `const` 关键字有助于限制变量的作用域，�
 对不变的值使用常量可以提高代码的可读性和可维护性。当一个值在程序执行过程中不应改变时，最好将其声明为常量。这种做法有助于其他开发者理解该值是固定的，不应被修改。
 
 **良好的代码**
+
 ```javascript
 // 良好示例：对固定值使用常量
 const MAX_USERS = 100;
@@ -2073,6 +2099,9 @@ console.log(`最大用户数为 ${MAX_USERS}`);
 ```
 
 **糟糕的代码**
+
+
+
 ```javascript
 // 糟糕示例：对固定值使用变量
 let maxUsers = 100;
@@ -2090,6 +2119,7 @@ console.log(`最大用户数为 ${maxUsers}`);
 在良好示例中，`MAX_USERS` 和 `API_URL` 使用 `const` 声明为常量，表明它们的值不应改变。这使得代码更易于理解和维护。在糟糕示例中，`maxUsers` 和 `apiUrl` 使用 `let` 声明，暗示它们的值可能会改变，可能引起混淆。
 
 **备忘**
+
 在 JavaScript 中，常量是块级作用域的，类似于使用 `let` 声明的变量。它们不能被重新赋值，但如果常量是对象或数组，其内容仍然可以被修改。
 
 ---
@@ -2099,6 +2129,7 @@ console.log(`最大用户数为 ${maxUsers}`);
 异步生成器提供了一种强大的方式来处理异步迭代，使代码更易读且更高效。异步生成器允许你使用 `for await...of` 循环遍历异步数据源。这种技术简化了异步操作的处理，例如从 API 获取数据，允许你在数据可用时逐条处理。
 
 **良好的代码**
+
 ```javascript
 // 良好示例：使用异步生成器进行异步迭代
 async function* fetchData() {
@@ -2118,6 +2149,7 @@ async function* fetchData() {
 ```
 
 **糟糕的代码**
+
 ```javascript
 // 糟糕示例：使用 Promise 而不使用异步生成器
 const urls = ['https://api.example.com/data1', 'https://api.example.com/data2'];
@@ -2134,6 +2166,7 @@ fetchData().then(dataArray => {
 在良好示例中，使用异步生成器函数 `fetchData` 从多个 URL 获取数据。`for await...of` 循环允许在获取每条数据时进行处理，使代码更易读且更高效。在糟糕示例中，使用 `Promise.all` 一次性获取所有数据，可能效率较低且更难阅读。
 
 **备忘**
+
 异步生成器是在 ECMAScript 2018（ES9）中引入的。它们结合了生成器和异步函数的能力，允许你以更自然、更易读的方式处理异步数据流。
 
 ---
@@ -2143,6 +2176,7 @@ fetchData().then(dataArray => {
 `WeakMap` 和 `WeakSet` 允许你管理对象键而不阻止其垃圾回收，从而提高内存效率。使用 `WeakMap` 和 `WeakSet` 可以帮助管理对象键和引用，同时确保这些对象在不再需要时可以被垃圾回收。这对于缓存或跟踪对象以避免内存泄漏特别有用。
 
 **良好的代码**
+
 ```javascript
 // 良好示例：使用 WeakMap 存储对象的元数据
 const metadata = new WeakMap();
@@ -2162,6 +2196,7 @@ console.log(getMetadata(obj1)); // 输出：{ role: 'admin' }
 ```
 
 **糟糕的代码**
+
 ```javascript
 // 糟糕示例：使用常规 Map 会阻止垃圾回收
 const metadata = new Map();
@@ -2183,6 +2218,7 @@ console.log(getMetadata(obj1)); // 输出：{ role: 'admin' }
 在良好示例中，`WeakMap` 允许 `obj1` 在不再使用时被垃圾回收，因为 `WeakMap` 持有对对象的弱引用。在糟糕示例中，使用常规 `Map` 会阻止 `obj1` 被垃圾回收，因为 `Map` 持有强引用。
 
 **备忘**
+
 `WeakMap` 的键必须是对象，而不能是原始值。这是因为 `WeakMap` 的设计目的是允许键（对象）被垃圾回收，而原始值不适用。
 
 ---
@@ -2192,17 +2228,11 @@ console.log(getMetadata(obj1)); // 输出：{ role: 'admin' }
 JavaScript 中的 `Proxy` 对象允许你为基本操作（如属性查找、赋值、枚举和函数调用）定义自定义行为。使用 `Proxy` 对象可以帮助你拦截并重新定义对象的操作。这对于日志记录、验证或实现可观察对象等应用非常有用。
 
 **良好的代码**
+
 ```javascript
 // 良好示例：使用 Proxy 记录属性访问
 const handler = {
   get(target, property) {
-```
-
-
-
-
-
-```javascript
     console.log(`属性 ${property} 已被访问。`);
     return target[property];
   }
@@ -2216,6 +2246,7 @@ console.log(proxy.age);  // 日志：属性 age 已被访问。输出：30
 ```
 
 ### 糟糕的代码
+
 ```javascript
 // 糟糕示例：在每个属性访问中直接添加日志
 const obj = { name: 'John', age: 30 };
@@ -2237,7 +2268,8 @@ console.log(getAge());  // 日志：属性 age 已被访问。输出：30
 在优秀示例中，使用 `Proxy` 拦截属性访问操作，提供了一种干净且可复用的方式来添加自定义行为。而在糟糕示例中，日志被直接添加到函数中，导致代码可维护性差，且随着属性增多难以扩展。
 
 **备忘录：**
-Proxy 还可用于创建虚拟对象，这些对象没有真实属性，但能动态响应属性访问。这在实现基于数据库的对象或复杂缓存机制等场景中非常有用。
+
+`Proxy` 还可用于创建虚拟对象，这些对象没有真实属性，但能动态响应属性访问。这在实现基于数据库的对象或复杂缓存机制等场景中非常有用。
 
 ---
 
@@ -2248,6 +2280,7 @@ Proxy 还可用于创建虚拟对象，这些对象没有真实属性，但能�
 JavaScript 中的 `Symbols` 提供了一种为对象属性创建唯一标识符的方法，确保这些键是唯一的，并避免与其他键发生潜在冲突。
 
 ### 优秀代码
+
 ```javascript
 // 创建一个唯一的 Symbol
 const uniqueKey = Symbol('uniqueKey');
@@ -2262,6 +2295,7 @@ console.log(myObject[uniqueKey]); // 输出：这是一个唯一的属性值
 ```
 
 ### 糟糕的代码
+
 ```javascript
 // 使用字符串作为属性键
 const myObject = {
@@ -2276,6 +2310,7 @@ console.log(myObject.uniqueKey); // 输出：这被覆盖了
 使用 `Symbols` 作为属性键可以确保每个键都是唯一的，且不会被意外覆盖。在糟糕示例中，使用字符串键导致 `uniqueKey` 属性被覆盖，而在优秀示例中，`Symbol` 确保了键的唯一性。
 
 **备忘录：**
+
 `Symbols` 是 ECMAScript 2015（ES6）引入的原始数据类型，且不可枚举，这意味着它们不会出现在 `for...in` 循环中。
 
 ---
@@ -2287,6 +2322,7 @@ console.log(myObject.uniqueKey); // 输出：这被覆盖了
 JavaScript 中的带标签模板字面量提供了一种强大的方式来处理和净化模板字面量，这对于创建安全的 HTML 或 SQL 模板尤其有用。
 
 ### 优秀代码
+
 ```javascript
 // 用于转义 HTML 的标签函数
 function escapeHTML(literals, ...placeholders) {
@@ -2310,6 +2346,7 @@ console.log(safeHTML); // 输出：<div>Hello, &lt;script&gt;alert(&quot;xss&quo
 ```
 
 ### 糟糕的代码
+
 ```javascript
 // 直接将变量嵌入 HTML 模板
 const name = '<script>alert("xss")</script>';
@@ -2320,6 +2357,7 @@ console.log(unsafeHTML); // 输出：<div>Hello, <script>alert("xss")</script>!<
 带标签的模板字面量允许你在嵌入值之前使用标签函数处理模板字面量。这对安全性至关重要，如优秀示例所示，`escapeHTML` 函数对输入进行了净化。而在糟糕示例中，直接嵌入可能导致 XSS 等安全漏洞。
 
 **备忘录：**
+
 带标签的模板字面量是 ECMAScript 2015（ES6）引入的高级特性，允许使用标签函数对模板字面量进行自定义处理。
 
 ---
@@ -2331,6 +2369,7 @@ console.log(unsafeHTML); // 输出：<div>Hello, <script>alert("xss")</script>!<
 与其直接使用对象属性访问器，不如使用 `Reflect` API 以更清晰的方式执行对象操作。
 
 ### 优秀代码
+
 ```javascript
 const obj = { x: 1, y: 2 };
 
@@ -2346,6 +2385,7 @@ console.log(Reflect.has(obj, 'y')); // 输出：true
 ```
 
 ### 糟糕的代码
+
 ```javascript
 const obj = { x: 1, y: 2 };
 
@@ -2363,6 +2403,7 @@ console.log('y' in obj); // 输出：true
 `Reflect` API 提供了一种更函数式的方式来处理对象，使代码更易读、更易维护。它还允许更好地处理边界情况，并提供一致的对象操作方式。
 
 **备忘录：**
+
 `Reflect` API 在 ECMAScript 6（ES6）中引入，是标准库的一部分。
 
 ---
@@ -2374,6 +2415,7 @@ console.log('y' in obj); // 输出：true
 通过将变量声明在靠近其使用的位置，可以更好地理解变量的作用域和用途，使代码更易读、更易维护。
 
 ### 优秀代码
+
 ```javascript
 function calculateArea(radius) {
   const PI = 3.14159; // 将 PI 常量声明在靠近其使用的位置
@@ -2387,6 +2429,7 @@ console.log(circleArea); // 输出：78.53975
 ```
 
 ### 糟糕的代码
+
 ```javascript
 const PI = 3.14159; // 将 PI 常量声明在远离其使用的位置
 
@@ -2403,6 +2446,7 @@ console.log(circleArea); // 输出：78.53975
 将变量声明在靠近其使用的位置，通过提供上下文并减少理解代码所需的认知负荷，提高了代码的可读性。它还有助于防止命名冲突，并使变量的作用域推理更加容易。
 
 **备忘录：**
+
 这一原则在软件工程中常被称为“最小惊讶原则”或“就近原则”。
 
 ---
@@ -2414,6 +2458,7 @@ console.log(circleArea); // 输出：78.53975
 编写循环时，通常使用单字母变量如 `i`、`j` 或 `k` 作为循环计数器。然而，使用更具描述性的名称可以使代码更易于理解，尤其是对于不熟悉代码库的人。
 
 ### 优秀代码
+
 ```javascript
 // 遍历学生数组
 for (let studentIndex = 0; studentIndex < students.length; studentIndex++) {
@@ -2422,15 +2467,13 @@ for (let studentIndex = 0; studentIndex < students.length; studentIndex++) {
 ```
 
 ### 糟糕的代码
+
 ```javascript
 // 遍历学生数组
 for (let i = 0; i < students.length; i++) {
     console.log(students[i].name);
 }
 ```
-
-
-
 
 在好的示例中，`studentIndex` 清晰地表明循环计数器与数组中学生的索引相关。这使得代码更易读、更易理解。而在差的示例中，`i` 的描述性较差，导致一眼难以理解循环的用途。
 
@@ -2443,6 +2486,12 @@ for (let i = 0; i < students.length; i++) {
 在同一作用域内为不同目的重复使用同一个变量会使代码难以阅读和维护，还可能引入难以发现的错误。相反，应为不同任务使用不同的变量，以保持代码清晰易懂。
 
 ### 好的代码
+
+
+# JavaScript 代码质量改进指南
+
+## 使用有意义的变量名
+
 ```javascript
 let totalScore = 0;
 let averageScore = 0;
@@ -2460,6 +2509,7 @@ console.log("平均分:", averageScore);
 ```
 
 ### 差的代码
+
 ```javascript
 let score = 0;
 
@@ -2486,6 +2536,7 @@ console.log("平均分:", score);
 在声明变量时进行初始化有助于防止与未定义值相关的错误，并使代码更易于理解。
 
 ### 好的代码
+
 ```javascript
 // 好的示例：变量在声明时初始化
 let count = 0; // count 初始化为 0
@@ -2494,6 +2545,7 @@ let isActive = true; // isActive 初始化为 true
 ```
 
 ### 差的代码
+
 ```javascript
 // 差的示例：变量声明时未初始化
 let count; // count 为 undefined
@@ -2512,6 +2564,7 @@ let isActive; // isActive 为 undefined
 将配置值存储在常量中可以使代码更易于维护，并降低意外修改这些值的风险。
 
 ### 好的代码
+
 ```javascript
 // 好的示例：配置值存储在常量中
 const MAX_USERS = 100; // 最大用户数
@@ -2520,6 +2573,7 @@ const TIMEOUT = 5000; // 超时时间（毫秒）
 ```
 
 ### 差的代码
+
 ```javascript
 // 差的示例：配置值硬编码在代码中
 let users = 100; // 最大用户数
@@ -2538,6 +2592,7 @@ let timeout = 5000; // 超时时间（毫秒）
 当函数试图完成过多任务时，它们会变得难以阅读、理解和维护。将它们拆分为更小的函数可以提高清晰度和可重用性。
 
 ### 好的代码
+
 ```javascript
 // 好的示例：函数被拆分为更小的、单一用途的函数。
 function getUserData(userId) {
@@ -2561,6 +2616,7 @@ function loadUser(userId) {
 ```
 
 ### 差的代码
+
 ```javascript
 // 差的示例：单个函数做了太多事情。
 function loadUser(userId) {
@@ -2586,6 +2642,7 @@ function loadUser(userId) {
 分离关注点意味着将代码划分为不同的部分（模块），每个部分处理应用程序的特定方面。这增强了代码的可维护性、可重用性和可读性。
 
 ### 好的代码
+
 ```javascript
 // userData.js
 export function getUserData(userId) {
@@ -2612,6 +2669,7 @@ function loadUser(userId) {
 ```
 
 ### 差的代码
+
 ```javascript
 // 差的示例：所有代码都在一个文件中。
 function loadUser(userId) {
@@ -2628,9 +2686,6 @@ function loadUser(userId) {
 
 在好的示例中，功能被拆分到不同的模块（`userData.js`、`render.js` 和 `main.js`）中。这使得代码库更加模块化，更易于管理。差的示例将所有功能放在一个地方，使其更难维护和扩展。
 
-
-
-
 模块化编程提倡使用模块来改善代码的组织和管理。JavaScript 的 ES6 引入了模块，有助于封装代码和依赖关系。
 
 ## 限制函数参数数量
@@ -2640,6 +2695,7 @@ function loadUser(userId) {
 参数过多的函数会变得难以阅读和维护。通过限制参数数量，你可以让代码更易于理解和使用。
 
 ### 良好代码
+
 ```javascript
 // 良好示例：使用选项对象来限制参数
 function createUser({ name, age, email }) {
@@ -2651,6 +2707,7 @@ createUser({ name: "John", age: 30, email: "john@example.com" });
 ```
 
 ### 糟糕代码
+
 ```javascript
 // 糟糕示例：参数过多
 function createUser(name, age, email, address, phone, isAdmin) {
@@ -2672,6 +2729,7 @@ createUser("John", 30, "john@example.com", "123 Main St", "555-5555", false);
 函数中的复杂逻辑会使其难以阅读和理解。将复杂逻辑拆分为更小、可复用的辅助函数，能增强清晰度和可维护性。
 
 ### 良好代码
+
 ```javascript
 // 良好示例：使用辅助函数
 function calculateTotal(items) {
@@ -2696,6 +2754,7 @@ console.log(calculateTotal(items)); // 输出: 22
 ```
 
 ### 糟糕代码
+
 ```javascript
 // 糟糕示例：所有逻辑都在一个函数中
 function calculateTotal(items) {
@@ -2725,6 +2784,7 @@ console.log(calculateTotal(items)); // 输出: 22
 编写单元测试可以确保代码库中的每个函数都按预期工作，使代码更可靠、更易于维护。
 
 ### 良好代码
+
 ```javascript
 // 两数相加的函数
 function add(a, b) {
@@ -2742,6 +2802,7 @@ testAdd();
 ```
 
 ### 糟糕代码
+
 ```javascript
 // 两数相加的函数
 function add(a, b) {
@@ -2763,6 +2824,7 @@ function add(a, b) {
 JavaScript 模块允许你将代码拆分为多个文件，每个文件负责特定功能。这提高了代码的可读性和可维护性。
 
 ### 良好代码
+
 ```javascript
 // math.js - 模块文件
 export function add(a, b) {
@@ -2781,6 +2843,7 @@ console.log(subtract(5, 2)); // 3
 ```
 
 ### 糟糕代码
+
 ```javascript
 // 所有函数都在一个文件中
 function add(a, b) {
@@ -2808,6 +2871,7 @@ Async 函数为编写异步代码提供了更简洁的语法，使其更易于�
 与使用回调或 Promise 链不同，async 函数允许你编写看起来和行为类似于同步代码的异步代码。
 
 ### 良好代码
+
 ```javascript
 async function fetchData() {
   try {
@@ -2823,6 +2887,8 @@ fetchData();
 ```
 
 ### 糟糕代码
+
+
 ```javascript
 function fetchData() {
   fetch('https://api.example.com/data')
@@ -2834,17 +2900,18 @@ function fetchData() {
 fetchData();
 ```
 
-函数前的 `async` 关键字使其成为异步函数。在异步函数内部，你可以使用 `await` 关键字暂停执行，等待 `Promise` 解析后再继续。这使得代码更易读、更易推理，因为它避免了深层嵌套的回调或 Promise 链。`try...catch` 块用于处理异步操作期间可能发生的任何错误。
+函数前的`async`关键字使其成为异步函数。在异步函数内部，你可以使用`await`关键字暂停执行，等待`Promise`解析后再继续。这使得代码更易读、更易推理，因为它避免了深层嵌套的回调或 Promise 链。`try...catch`块用于处理异步操作期间可能发生的任何错误。
 
-**提示：** Async 函数是在 ECMAScript 2017（ES8）中引入的，为 `Promises` 提供了语法糖。
+**提示：** Async 函数是在 ECMAScript 2017（ES8）中引入的，为`Promises`提供了语法糖。
 
 ## 利用 for...of 遍历可迭代对象
 
-`for...of` 循环提供了一种简洁的方式来遍历可迭代对象，使代码更具可读性和表现力。
+`for...of`循环提供了一种简洁的方式来遍历可迭代对象，使代码更具可读性和表现力。
 
-`for...of` 循环专为遍历可迭代对象而设计，例如数组、字符串、Map、Set 以及其他实现了可迭代协议的对象。
+`for...of`循环专为遍历可迭代对象而设计，例如数组、字符串、Map、Set 以及其他实现了可迭代协议的对象。
 
 ### 良好代码
+
 ```javascript
 const fruits = ['apple', 'banana', 'orange'];
 
@@ -2854,6 +2921,7 @@ for (const fruit of fruits) {
 ```
 
 ### 糟糕代码
+
 ```javascript
 const fruits = ['apple', 'banana', 'orange'];
 
@@ -2862,34 +2930,29 @@ for (let i = 0; i < fruits.length; i++) {
 }
 ```
 
+在遍历数组或其他可迭代对象时，`for...of`循环比传统的`for`循环更简洁、更具表现力。它会自动从可迭代对象中获取值，无需手动索引。这使得代码更易读，且不易出现差一错误。此外，`for...of`循环还可用于其他可迭代对象，如字符串、映射和集合。
 
+**备忘：**
 
-
-
-在遍历数组或其他可迭代对象时，`for...of` 循环比传统的 `for` 循环更简洁、更具表现力。它会自动从可迭代对象中获取值，无需手动索引。这使得代码更易读，且不易出现差一错误。此外，`for...of` 循环还可用于其他可迭代对象，如字符串、映射和集合。
-
-<Memo>
-`for...of` 循环是在 ECMAScript 2015 (ES6) 中引入的，是 JavaScript 新迭代协议的一部分。
-</Memo>
-
-69
+`for...of`循环是在 ECMAScript 2015 (ES6) 中引入的，是 JavaScript 新迭代协议的一部分。
 
 ## 使用 `Array.prototype.reduce` 累加数组值
 
-使用 `Array.prototype.reduce` 累加数组中的值，以提高可读性和可维护性。
+使用`Array.prototype.reduce`累加数组中的值，以提高可读性和可维护性。
 
-`Array.prototype.reduce` 是一个强大的方法，它可以将数组中的值累加为单个结果。它特别适用于求和、拼接字符串或合并对象。
+`Array.prototype.reduce`是一个强大的方法，它可以将数组中的值累加为单个结果。它特别适用于求和、拼接字符串或合并对象。
 
-<Good Code>
+### 良好代码
+
 ```javascript
 // 好的示例：使用 reduce 对数组值求和
 const numbers = [1, 2, 3, 4, 5];
 const sum = numbers.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
 console.log(sum); // 输出: 15
 ```
-</Good Code>
 
-<Bad Code>
+### 糟糕代码
+
 ```javascript
 // 不好的示例：使用 for 循环对数组值求和
 const numbers = [1, 2, 3, 4, 5];
@@ -2899,23 +2962,21 @@ for (let i = 0; i < numbers.length; i++) {
 }
 console.log(sum); // 输出: 15
 ```
-</Bad Code>
 
-好的示例使用了 `reduce`，它更简洁且更具表现力，清晰地表达了累加值的意图。不好的示例使用了 `for` 循环，更冗长且不够声明式。
+好的示例使用了`reduce`，它更简洁且更具表现力，清晰地表达了累加值的意图。不好的示例使用了`for`循环，更冗长且不够声明式。
 
-<Memo>
-`Array.prototype.reduce` 还可用于更复杂的操作，例如展平数组或从数组创建查找表。
-</Memo>
+**备忘：**
 
-70
+`Array.prototype.reduce`还可用于更复杂的操作，例如展平数组或从数组创建查找表。
 
 ## 使用 `Object.assign` 合并对象
 
-使用 `Object.assign` 将多个对象合并为一个，以提高代码清晰度和效率。
+使用`Object.assign`将多个对象合并为一个，以提高代码清晰度和效率。
 
-`Object.assign` 是一个方法，它将一个或多个源对象的所有可枚举自有属性复制到目标对象。它对于合并对象以及创建具有组合属性的新对象非常有用。
+`Object.assign`是一个方法，它将一个或多个源对象的所有可枚举自有属性复制到目标对象。它对于合并对象以及创建具有组合属性的新对象非常有用。
 
-<Good Code>
+### 良好代码
+
 ```javascript
 // 好的示例：使用 Object.assign 合并对象
 const obj1 = { a: 1, b: 2 };
@@ -2923,9 +2984,9 @@ const obj2 = { b: 3, c: 4 };
 const mergedObj = Object.assign({}, obj1, obj2);
 console.log(mergedObj); // 输出: { a: 1, b: 3, c: 4 }
 ```
-</Good Code>
 
-<Bad Code>
+### 糟糕代码
+
 ```javascript
 // 不好的示例：手动合并对象
 const obj1 = { a: 1, b: 2 };
@@ -2939,15 +3000,12 @@ for (let key in obj2) {
 }
 console.log(mergedObj); // 输出: { a: 1, b: 3, c: 4 }
 ```
-</Bad Code>
 
-好的示例使用了 `Object.assign`，更简洁且避免了手动合并可能出现的错误。不好的示例使用了 `for` 循环，更冗长且容易出错。
+好的示例使用了`Object.assign`，更简洁且避免了手动合并可能出现的错误。不好的示例使用了`for`循环，更冗长且容易出错。
 
-<Memo>
-`Object.assign` 执行的是浅拷贝，即只复制第一层的属性。对于深克隆，需要使用其他方法或库，如 `lodash`。
-</Memo>
+**备忘：**
 
-71
+`Object.assign`执行的是浅拷贝，即只复制第一层的属性。对于深克隆，需要使用其他方法或库，如`lodash`。
 
 ## 将长条件表达式拆分为多行
 
@@ -2955,7 +3013,8 @@ console.log(mergedObj); // 输出: { a: 1, b: 3, c: 4 }
 
 长条件表达式难以阅读和理解。将其拆分为多行可以使代码更易读、更易维护。
 
-<Good Code>
+### 良好代码
+
 ```javascript
 // 好的示例：将长条件表达式拆分为多行
 if (
@@ -2968,9 +3027,9 @@ if (
     console.log("用户处于活跃状态、已验证且拥有有效订阅。");
 }
 ```
-</Good Code>
 
-<Bad Code>
+### 糟糕代码
+
 ```javascript
 // 不好的示例：长条件表达式写在一行
 if (user.isActive && user.isVerified && user.hasSubscription && user.subscription.isValid) {
@@ -2978,15 +3037,12 @@ if (user.isActive && user.isVerified && user.hasSubscription && user.subscriptio
     console.log("用户处于活跃状态、已验证且拥有有效订阅。");
 }
 ```
-</Bad Code>
 
 在好的示例中，条件表达式被拆分为多行，使得每个条件更易于阅读和理解。在不好的示例中，整个表达式写在一行，难以阅读和调试。
 
-<Memo>
-将长条件表达式拆分为多行不仅是 JavaScript 中的良好实践，在其他编程语言中也是如此。它有助于维护代码，并使他人更容易理解逻辑。
-</Memo>
+**备忘：**
 
-72
+将长条件表达式拆分为多行不仅是 JavaScript 中的良好实践，在其他编程语言中也是如此。它有助于维护代码，并使他人更容易理解逻辑。
 
 ## 使用临时变量保存表达式中的中间结果
 
@@ -2994,7 +3050,8 @@ if (user.isActive && user.isVerified && user.hasSubscription && user.subscriptio
 
 通过将中间结果存储在临时变量中，可以简化复杂表达式。这使代码更易于阅读和调试。
 
-<Good Code>
+### 良好代码
+
 ```javascript
 // 好的示例：使用临时变量保存中间结果
 const isUserActive = user.isActive;
@@ -3005,9 +3062,9 @@ if (isUserActive && isUserVerified && hasValidSubscription) {
     console.log("用户处于活跃状态、已验证且拥有有效订阅。");
 }
 ```
-</Good Code>
 
-<Bad Code>
+### 糟糕代码
+
 ```javascript
 // 不好的示例：没有使用临时变量的复杂表达式
 if (user.isActive && user.isVerified && user.hasSubscription && user.subscription.isValid) {
@@ -3015,15 +3072,12 @@ if (user.isActive && user.isVerified && user.hasSubscription && user.subscriptio
     console.log("用户处于活跃状态、已验证且拥有有效订阅。");
 }
 ```
-</Bad Code>
 
 在好的示例中，中间结果存储在临时变量中，使得最终的条件表达式更简单、更易读。在不好的示例中，复杂表达式直接写在条件语句中，难以阅读和维护。
 
-<Memo>
-使用临时变量不仅提高了可读性，还有助于调试，因为你可以记录中间结果并了解逻辑可能在哪里失败。
-</Memo>
+**备忘：**
 
-73
+使用临时变量不仅提高了可读性，还有助于调试，因为你可以记录中间结果并了解逻辑可能在哪里失败。
 
 ## 将复杂表达式重构为辅助函数
 
@@ -3031,7 +3085,8 @@ if (user.isActive && user.isVerified && user.hasSubscription && user.subscriptio
 
 复杂表达式难以阅读和维护。将其重构为辅助函数可以提高可读性和可复用性。
 
-<Good Code>
+### 良好代码
+
 ```javascript
 // 辅助函数：计算折扣
 function calculateDiscount(price, discountRate) {
@@ -3048,9 +3103,9 @@ const price = 100;
 const discountRate = 10;
 console.log(getTotalPrice(price, discountRate)); // 输出: 90
 ```
-</Good Code>
 
-<Bad Code>
+### 糟糕代码
+
 ```javascript
 // 复杂表达式直接写在主函数中
 function getTotalPrice(price, discountRate) {
@@ -3061,23 +3116,21 @@ const price = 100;
 const discountRate = 10;
 console.log(getTotalPrice(price, discountRate)); // 输出: 90
 ```
-</Bad Code>
 
-在好的示例中，复杂的折扣计算被重构为辅助函数 `calculateDiscount`，使得主函数 `getTotalPrice` 更易于阅读和理解。在不好的示例中，复杂表达式直接嵌入主函数，难以阅读和维护。
+在好的示例中，复杂的折扣计算被重构为辅助函数`calculateDiscount`，使得主函数`getTotalPrice`更易于阅读和理解。在不好的示例中，复杂表达式直接嵌入主函数，难以阅读和维护。
 
-<Memo>
+**备忘：**
+
 将复杂表达式重构为辅助函数不仅提高了可读性，还使得测试代码的各个部分更加容易。
-</Memo>
-
-74
 
 ## 避免链式使用多个三元运算符
 
-使用 `if-else` 语句代替链式多个三元运算符，以提高可读性。
+使用`if-else`语句代替链式多个三元运算符，以提高可读性。
 
-链式使用多个三元运算符会使代码难以阅读和理解。使用 `if-else` 语句可以提高清晰度。
+链式使用多个三元运算符会使代码难以阅读和理解。使用`if-else`语句可以提高清晰度。
 
-<Good Code>
+### 良好代码
+
 ```javascript
 // 使用 if-else 语句提高清晰度
 function getStatusMessage(status) {
@@ -3091,22 +3144,13 @@ function getStatusMessage(status) {
         return '未知状态。';
     }
 }
-```
-</Good Code>
-
-
-
-
-
-```javascript
-    }
-}
 
 const status = 'error';
-console.log(getStatusMessage(status)); // 输出：There was an error.
+console.log(getStatusMessage(status)); // 输出：出现错误。
 ```
 
-### 糟糕的代码
+### 糟糕代码
+
 ```javascript
 // 链式使用多个三元运算符
 function getStatusMessage(status) {
@@ -3120,12 +3164,11 @@ const status = 'error';
 console.log(getStatusMessage(status)); // 输出：出现错误。
 ```
 
-在好的示例中，使用 `if-else` 语句使逻辑清晰易懂。在糟糕的示例中，链式使用多个三元运算符使代码更难阅读和理解，尤其对于不熟悉该语法的人。
+在好的示例中，使用`if-else`语句使逻辑清晰易懂。在糟糕的示例中，链式使用多个三元运算符使代码更难阅读和理解，尤其对于不熟悉该语法的人。
 
 **备忘：**
-三元运算符适用于简单的条件赋值，但对于更复杂的逻辑，通常更推荐使用 `if-else` 语句以提高可读性。
 
----
+三元运算符适用于简单的条件赋值，但对于更复杂的逻辑，通常更推荐使用`if-else`语句以提高可读性。
 
 ## 使用括号明确运算顺序
 
@@ -3133,13 +3176,15 @@ console.log(getStatusMessage(status)); // 输出：出现错误。
 
 编写复杂表达式时，运算的执行顺序有时可能不清晰。使用括号可以确保意图明确，减少出错的可能性并提高可读性。
 
-### 好的代码
+### 良好代码
+
 ```javascript
 // 好：使用括号使运算顺序清晰
 let result = (a + b) * (c - d); // 先做加法和减法，再做乘法
 ```
 
-### 糟糕的代码
+### 糟糕代码
+
 ```javascript
 // 差：运算顺序不直观
 let result = a + b * c - d; // 乘法先执行，但一眼看不出来
@@ -3148,9 +3193,8 @@ let result = a + b * c - d; // 乘法先执行，但一眼看不出来
 在好的示例中，使用括号明确指定了运算的执行顺序，使代码更易读易懂。在糟糕的示例中，缺少括号使得确定运算顺序更加困难，可能导致误解和潜在错误。
 
 **备忘：**
-在 JavaScript 中，运算顺序遵循标准数学规则：乘法和除法优先于加法和减法。然而，使用括号可以覆盖此顺序以确保清晰。
 
----
+在 JavaScript 中，运算顺序遵循标准数学规则：乘法和除法优先于加法和减法。然而，使用括号可以覆盖此顺序以确保清晰。
 
 ## 将无关功能封装到独立函数中
 
@@ -3158,7 +3202,8 @@ let result = a + b * c - d; // 乘法先执行，但一眼看不出来
 
 当代码的不同部分执行不同任务时，最好将这些任务封装到独立的函数中。这种做法使代码更模块化、更易读，也更易于维护或调试。
 
-### 好的代码
+### 良好代码
+
 ```javascript
 // 好：将无关任务分离到独立函数
 function calculateSum(a, b) {
@@ -3173,7 +3218,8 @@ let sum = calculateSum(5, 10);
 printMessage(`总和是 ${sum}`);
 ```
 
-### 糟糕的代码
+### 糟糕代码
+
 ```javascript
 // 差：无关任务混合在单个函数中
 function calculateAndPrint(a, b) {
@@ -3184,20 +3230,20 @@ function calculateAndPrint(a, b) {
 calculateAndPrint(5, 10);
 ```
 
-在好的示例中，`calculateSum` 和 `printMessage` 函数各自执行单一、定义明确的任务。这种分离使代码更易于理解和维护。在糟糕的示例中，将计算和打印合并到一个函数中，降低了模块化程度，也更难复用或测试。
+在好的示例中，`calculateSum`和`printMessage`函数各自执行单一、定义明确的任务。这种分离使代码更易于理解和维护。在糟糕的示例中，将计算和打印合并到一个函数中，降低了模块化程度，也更难复用或测试。
 
 **备忘：**
-模块化代码是软件工程中的关键原则。它允许开发者在应用程序的不同部分复用函数，减少冗余并提高可维护性。
 
----
+模块化代码是软件工程中的关键原则。它允许开发者在应用程序的不同部分复用函数，减少冗余并提高可维护性。
 
 ## 使用工具库处理常见任务
 
-利用像 `Lodash` 这样的工具库来处理数组、对象、字符串等常见操作。
+利用像`Lodash`这样的工具库来处理数组、对象、字符串等常见操作。
 
 与其为常见任务编写自定义函数，不如使用提供优化且经过充分测试实现的工具库。
 
-### 好的代码
+### 良好代码
+
 ```javascript
 // 使用 Lodash
 const _ = require('lodash');
@@ -3212,7 +3258,34 @@ const users = [
 const userNames = _.map(users, 'name'); // ['Alice', 'Bob', 'Charlie']
 ```
 
-### 糟糕的代码
+### 糟糕代码
+
+```javascript
+// 手动实现 map 功能
+const numbers = [1, 2, 3, 4, 5];
+const doubledNumbers = [];
+for (let i = 0; i < numbers.length; i++) {
+  doubledNumbers.push(numbers[i] * 2);
+}
+
+const users = [
+  { name: 'Alice', age: 25 },
+  { name: 'Bob', age: 30 },
+  { name: 'Charlie', age: 35 }
+];
+const userNames = [];
+for (let i = 0; i < users.length; i++) {
+  userNames.push(users[i].name);
+}
+```
+
+在好的示例中，使用`Lodash`的`_.map`函数简化了代码，使其更简洁且不易出错。在糟糕的示例中，手动实现`map`功能导致代码冗长且重复，增加了出错的可能性。
+
+**备忘：**
+
+使用工具库如`Lodash`不仅可以减少代码量，还能利用其经过充分测试和优化的实现，提高代码的可靠性和性能。
+
+
 ```javascript
 // 自定义实现
 const numbers = [1, 2, 3, 4, 5];
@@ -3235,6 +3308,7 @@ for (let i = 0; i < users.length; i++) {
 像 `Lodash` 这样的工具库提供了大量用于常见操作的函数，节省开发时间并减少代码重复。它们针对性能进行了优化，并经过全面测试，确保行为可靠。
 
 **备忘：**
+
 `Lodash` 是 JavaScript 中流行的工具库，但也有其他替代方案，如 `Ramda` 和 `Underscore.js`。
 
 ---
@@ -3246,6 +3320,7 @@ for (let i = 0; i < users.length; i++) {
 重复的代码会使代码库更难阅读和维护。通过将此类代码抽象为可复用的函数，可以提高代码清晰度并减少重复。
 
 ### 好的代码
+
 ```javascript
 function calculateTotal(items, taxRate) {
   let total = 0;
@@ -3270,6 +3345,7 @@ const total2 = calculateTotal(cart2, 0.1); // 49.5
 ```
 
 ### 糟糕的代码
+
 ```javascript
 const cart1 = [
   { name: '商品 1', price: 10 },
@@ -3297,6 +3373,7 @@ total2 *= 1.1; // 49.5
 通过将重复代码提取到函数中，可以在代码库的多个地方复用该函数。这不仅减少了重复，还使代码更易读、更易维护。如果逻辑需要更新，只需在一个地方修改即可。
 
 **备忘：**
+
 “不要重复自己”（DRY）原则是软件工程中的一个基本概念，它鼓励代码复用和抽象以减少冗余。
 
 ---
@@ -3308,6 +3385,7 @@ total2 *= 1.1; // 49.5
 将数据获取与 UI 渲染分离有助于维护清晰且易于管理的代码库。它使组件更易于测试、调试和复用。
 
 ### 好的代码
+
 ```javascript
 // 数据获取函数
 async function fetchData(url) {
@@ -3332,6 +3410,7 @@ main();
 ```
 
 ### 糟糕的代码
+
 ```javascript
 async function main() {
   const response = await fetch('https://api.example.com/data');
@@ -3343,10 +3422,6 @@ async function main() {
 main();
 ```
 
-
-
-
-
 在好的示例中，数据获取逻辑与 UI 渲染逻辑分离，使代码更具模块化且更易于维护。在坏的示例中，两种逻辑被混合在单个函数中，这可能会导致测试和调试困难。
 
 > **Memo**：这种关注点分离（Separation of Concerns）是软件工程中的一个基本原则，通常被称为单一职责原则（SRP）。
@@ -3356,6 +3431,7 @@ main();
 实现设计模式，以标准化的方式解决重复出现的问题。设计模式为软件设计中的常见问题提供了经过验证的解决方案。使用它们可以提高代码的可读性、可重用性和可维护性。
 
 ### 好的代码
+
 ```javascript
 // Singleton Pattern
 class Singleton {
@@ -3376,6 +3452,7 @@ console.log(instance1 === instance2); // true
 ```
 
 ### 坏的代码
+
 ```javascript
 class Singleton {
   constructor() {
@@ -3400,6 +3477,7 @@ console.log(instance1 === instance2); // false
 使用 `async` 关键字使函数返回一个 promise，从而实现异步操作。`async` 关键字用于定义异步函数，允许你以更具可读性和可维护性的方式编写异步代码。
 
 ### 好的代码
+
 ```javascript
 // Good example using async keyword
 async function fetchData() {
@@ -3415,6 +3493,7 @@ fetchData();
 ```
 
 ### 坏的代码
+
 ```javascript
 // Bad example without async keyword
 function fetchData() {
@@ -3439,6 +3518,7 @@ fetchData();
 `await` 关键字会暂停 `async` 函数的执行，直到 promise 被解析（resolved），使异步代码看起来像同步代码。`await` 关键字在 `async` 函数内部使用，用于等待 promise 解析，从而简化异步操作的处理。
 
 ### 好的代码
+
 ```javascript
 // Good example using await keyword
 async function getUserData(userId) {
@@ -3454,6 +3534,7 @@ getUserData(1);
 ```
 
 ### 坏的代码
+
 ```javascript
 // Bad example without await keyword
 function getUserData(userId) {
@@ -3480,6 +3561,7 @@ getUserData(1);
 在 JavaScript 中处理对象时，理解浅拷贝（shallow copy）和深拷贝（deep copy）之间的区别至关重要。浅拷贝创建一个新对象，但该对象与原对象引用相同的嵌套对象和数组。相比之下，深拷贝创建一个新对象，其中嵌套的对象和数组都是全新的实例。
 
 ### 好的代码
+
 ```javascript
 // Original object
 const original = {
@@ -3502,6 +3584,7 @@ console.log('Deep Copy:', deepCopy);
 ```
 
 ### 坏的代码
+
 ```javascript
 // Original object
 const original = {
@@ -3529,22 +3612,20 @@ console.log('Shallow Copy:', shallowCopy);
 
 在坏的代码示例中，我们尝试使用展开运算符 (`{ ...original }`) 来创建副本。然而，这种方法仅创建了浅拷贝，其中嵌套的对象和数组仍然引用原对象。因此，当我们修改原对象中的嵌套属性 `address.city` 时，浅拷贝也会受到影响，因为它们共享同一个嵌套 `address` 对象的引用。
 
-
-
-
-
 需要注意的是，使用 `JSON.stringify` 和 `JSON.parse` 的方法存在局限性。它无法处理循环引用、函数，以及某些数据类型，例如 `undefined`、`Infinity` 和 `NaN`。此外，对于包含特殊字符或不是有效 JSON 键的对象属性，该方法可能会引发问题。
 
 > **备忘录**
-> 使用 `JSON.stringify` 和 `JSON.parse` 进行对象的深拷贝是 JavaScript 中广泛使用的技术，但并非实现深拷贝的唯一方法。其他方法包括使用像 Lodash 的 `_.cloneDeep` 函数，或者实现一个自定义的深拷贝函数，以递归方式复制嵌套对象和数组。
+
+> 使用`JSON.stringify`和`JSON.parse`进行对象的深拷贝是 JavaScript 中广泛使用的技术，但并非实现深拷贝的唯一方法。其他方法包括使用像 Lodash 的`_.cloneDeep`函数，或者实现一个自定义的深拷贝函数，以递归方式复制嵌套对象和数组。
 
 ## 利用 Array.prototype.some 和 Array.prototype.every 进行条件检查
 
-使用 `Array.prototype.some` 和 `Array.prototype.every` 方法对数组执行高效的条件检查，从而减少对复杂循环和条件语句的需求。
+使用`Array.prototype.some`和`Array.prototype.every`方法对数组执行高效的条件检查，从而减少对复杂循环和条件语句的需求。
 
-在 JavaScript 中，你经常需要对数组进行条件检查，例如检查数组中是否至少有一个元素满足某个条件，或者是否所有元素都满足某个条件。`Array.prototype.some` 和 `Array.prototype.every` 方法提供了一种简洁且可读性高的方式来进行这些检查，无需编写复杂的循环和条件语句。
+在 JavaScript 中，你经常需要对数组进行条件检查，例如检查数组中是否至少有一个元素满足某个条件，或者是否所有元素都满足某个条件。`Array.prototype.some`和`Array.prototype.every`方法提供了一种简洁且可读性高的方式来进行这些检查，无需编写复杂的循环和条件语句。
 
 ### 好代码
+
 ```javascript
 const numbers = [1, 2, 3, 4, 5];
 
@@ -3572,6 +3653,7 @@ console.log(allOverEighteen); // 输出: true
 ```
 
 ### 坏代码
+
 ```javascript
 const numbers = [1, 2, 3, 4, 5];
 
@@ -3596,26 +3678,28 @@ for (let i = 0; i < numbers.length; i++) {
 console.log(allPositive); // 输出: true
 ```
 
-`Array.prototype.some` 方法测试数组中是否至少有一个元素通过了由提供的函数实现的测试。它对数组中的每个元素执行一次提供的函数，直到找到某个元素使函数返回真值，此时它返回 `true` 并停止迭代。如果没有元素通过测试，则返回 `false`。
+`Array.prototype.some`方法测试数组中是否至少有一个元素通过了由提供的函数实现的测试。它对数组中的每个元素执行一次提供的函数，直到找到某个元素使函数返回真值，此时它返回`true`并停止迭代。如果没有元素通过测试，则返回`false`。
 
-`Array.prototype.every` 方法测试数组中的所有元素是否都通过了由提供的函数实现的测试。它对数组中的每个元素执行一次提供的函数，直到找到某个元素使函数返回假值，此时它返回 `false` 并停止迭代。如果所有元素都通过了测试，则返回 `true`。
+`Array.prototype.every`方法测试数组中的所有元素是否都通过了由提供的函数实现的测试。它对数组中的每个元素执行一次提供的函数，直到找到某个元素使函数返回假值，此时它返回`false`并停止迭代。如果所有元素都通过了测试，则返回`true`。
 
-在好代码示例中，我们演示了如何使用 `some` 和 `every` 对数字数组和对象数组进行条件检查。代码简洁、可读性强，并且避免了复杂的循环和条件语句。
+在好代码示例中，我们演示了如何使用`some`和`every`对数字数组和对象数组进行条件检查。代码简洁、可读性强，并且避免了复杂的循环和条件语句。
 
-在坏代码示例中，我们使用传统的 `for` 循环和条件语句实现了相同的功能。虽然这种方法可行，但它更冗长、更难阅读，并且更容易出错。
+在坏代码示例中，我们使用传统的`for`循环和条件语句实现了相同的功能。虽然这种方法可行，但它更冗长、更难阅读，并且更容易出错。
 
-使用 `some` 和 `every` 不仅使代码更易读，而且在某些情况下还能提供更好的性能，因为这些方法可以短路。
+使用`some`和`every`不仅使代码更易读，而且在某些情况下还能提供更好的性能，因为这些方法可以短路。
 
 > **备忘录**
-> `Array.prototype.some` 和 `Array.prototype.every` 方法是 ECMAScript 5（ES5）规范的一部分。它们在现代浏览器中得到广泛支持，并且可以通过 polyfill 或像 `Babel` 这样的转译器在较旧的环境中使用。
+
+> `Array.prototype.some`和`Array.prototype.every`方法是 ECMAScript 5（ES5）规范的一部分。它们在现代浏览器中得到广泛支持，并且可以通过 polyfill 或像`Babel`这样的转译器在较旧的环境中使用。
 
 ## 利用 Array.prototype.find 定位数组中的元素
 
-使用 `Array.prototype.find` 高效地定位数组中的元素。
+使用`Array.prototype.find`高效地定位数组中的元素。
 
-JavaScript 数组中的 `find` 方法可以帮助你定位满足给定条件的第一个元素，使代码更简洁、更易读。
+JavaScript 数组中的`find`方法可以帮助你定位满足给定条件的第一个元素，使代码更简洁、更易读。
 
 ### 好代码
+
 ```javascript
 // 好示例：使用 Array.prototype.find 定位元素
 const users = [
@@ -3628,6 +3712,7 @@ console.log(user); // { id: 2, name: 'Bob' }
 ```
 
 ### 坏代码
+
 ```javascript
 // 坏示例：使用 for 循环定位元素
 const users = [
@@ -3645,10 +3730,11 @@ for (let i = 0; i < users.length; i++) {
 console.log(user); // { id: 2, name: 'Bob' }
 ```
 
-好示例使用了 `Array.prototype.find`，与坏示例中的 `for` 循环相比，它更简洁且更易读。`find` 方法抽象了迭代逻辑，使代码更清晰，并减少了出错的可能性。
+好示例使用了`Array.prototype.find`，与坏示例中的`for`循环相比，它更简洁且更易读。`find`方法抽象了迭代逻辑，使代码更清晰，并减少了出错的可能性。
 
 > **备忘录**
-> 如果没有元素满足条件，`find` 方法会返回 `undefined`，因此在代码中处理这种情况很重要。
+
+> 如果没有元素满足条件，`find`方法会返回`undefined`，因此在代码中处理这种情况很重要。
 
 ## 为有序数据集合选择数组
 
@@ -3657,6 +3743,7 @@ console.log(user); // { id: 2, name: 'Bob' }
 JavaScript 中的数组非常适合存储有序的数据集合，允许你通过索引访问元素，并执行排序、过滤等各种操作。
 
 ### 好代码
+
 ```javascript
 // 好示例：使用数组存储有序数据
 const fruits = ['Apple', 'Banana', 'Cherry'];
@@ -3666,6 +3753,7 @@ console.log(fruits[2]); // 'Cherry'
 ```
 
 ### 坏代码
+
 ```javascript
 // 坏示例：使用对象存储有序数据
 const fruits = {
@@ -3681,7 +3769,8 @@ console.log(fruits[2]); // 'Cherry'
 好示例使用了数组，这是存储有序集合的合适数据结构。数组提供了内置的迭代、排序和其他操作方法。坏示例使用了对象，而对象并非为有序集合设计，且缺乏这些便捷的方法。
 
 > **备忘录**
-> JavaScript 中的数组是零索引的，这意味着第一个元素通过索引 `0` 访问。这是许多编程语言中的常见特性。
+
+> JavaScript 中的数组是零索引的，这意味着第一个元素通过索引`0`访问。这是许多编程语言中的常见特性。
 
 ## 使用对象存储键值对
 
@@ -3690,6 +3779,7 @@ console.log(fruits[2]); // 'Cherry'
 在 JavaScript 中，使用对象存储键值对是一种常见做法。它允许轻松访问和操作数据。
 
 ### 好代码
+
 ```javascript
 // 好示例：使用对象存储键值对
 const user = {
@@ -3703,6 +3793,7 @@ console.log(user.age);  // 输出: 30
 ```
 
 ### 坏代码
+
 ```javascript
 // 坏示例：为每个键值对使用单独的变量
 const userName = 'John Doe';
@@ -3713,29 +3804,19 @@ console.log(userName); // 输出: John Doe
 console.log(userAge);  // 输出: 30
 ```
 
-
-
-
-
 使用对象存储键值对可以使代码更有序且更易读。它将相关数据分组在一起，便于管理和访问。相比之下，为每条数据使用单独的变量会导致代码库杂乱且难以维护。
 
-<Memo>
+> **备忘录**
 
-JavaScript 中的对象是无序的键值对集合，其中键是字符串或符号，值可以是任何类型。
+> JavaScript 中的对象是无序的键值对集合，其中键是字符串或符号，值可以是任何类型。
 
-88
+## 当需要有序的键值对时，选择`Map`
 
-## 当需要有序的键值对时，选择 `Map`
+`Map`维护键值对的顺序，并允许使用任何类型的键。
 
-* * *
+当键值对的顺序很重要，或者需要使用非字符串键时，使用`Map`比使用对象更合适。
 
-`Map` 维护键值对的顺序，并允许使用任何类型的键。
-
-* * *
-
-当键值对的顺序很重要，或者需要使用非字符串键时，使用 `Map` 比使用对象更合适。
-
-< Good Code >
+### 好代码
 
 ```javascript
 // 好例子：使用 Map 存储有序的键值对
@@ -3749,7 +3830,7 @@ console.log(userMap.get('name')); // 输出: John Doe
 console.log(userMap.get('age'));  // 输出: 30
 ```
 
-<Bad Code>
+### 坏代码
 
 ```javascript
 // 坏例子：在顺序重要时使用对象
@@ -3764,25 +3845,19 @@ console.log(user.name); // 输出: John Doe
 console.log(user.age);  // 输出: 30
 ```
 
-`Map` 维护键值对的插入顺序，这在某些应用中至关重要。它们还允许使用任何类型的键，而不仅仅是字符串。这使得 `Map` 在处理有序数据或非字符串键时比对象更灵活。
+`Map`维护键值对的插入顺序，这在某些应用中至关重要。它们还允许使用任何类型的键，而不仅仅是字符串。这使得`Map`在处理有序数据或非字符串键时比对象更灵活。
 
-<Memo>
+> **备忘录**
 
-`Map` 是 ES6（ECMAScript 2015）规范的一部分，在频繁添加和删除键值对时，其性能优于对象。
+> `Map`是 ES6（ECMAScript 2015）规范的一部分，在频繁添加和删除键值对时，其性能优于对象。
 
-89
+## 使用`Set`存储唯一值，避免重复
 
-## 使用 `Set` 存储唯一值，避免重复
+使用`Set`对象存储唯一值，确保没有重复项。
 
-* * *
+JavaScript 中的`Set`对象允许你存储任何类型的唯一值，无论是原始值还是对象引用。当你需要确保集合中不包含重复项时，这尤其有用。
 
-使用 `Set` 对象存储唯一值，确保没有重复项。
-
-* * *
-
-JavaScript 中的 `Set` 对象允许你存储任何类型的唯一值，无论是原始值还是对象引用。当你需要确保集合中不包含重复项时，这尤其有用。
-
-< Good Code >
+### 好代码
 
 ```javascript
 // 使用 Set 存储唯一值
@@ -3791,7 +3866,7 @@ const uniqueNumbers = new Set(numbers);
 console.log(uniqueNumbers); // 输出: Set { 1, 2, 3, 4, 5 }
 ```
 
-<Bad Code>
+### 坏代码
 
 ```javascript
 // 使用数组存储唯一值（效率低）
@@ -3805,25 +3880,19 @@ numbers.forEach((num) => {
 console.log(uniqueNumbers); // 输出: [1, 2, 3, 4, 5]
 ```
 
-好例子使用 `Set` 自动处理重复项，使代码更简洁高效。坏例子手动使用数组检查重复项，效率较低且代码冗长。
+好例子使用`Set`自动处理重复项，使代码更简洁高效。坏例子手动使用数组检查重复项，效率较低且代码冗长。
 
-<Memo>
+> **备忘录**
 
-`Set` 对象在 ECMAScript 2015（ES6）中引入，相比传统数组，它提供了一种更高效的方式来处理唯一值集合。
+> `Set`对象在 ECMAScript 2015（ES6）中引入，相比传统数组，它提供了一种更高效的方式来处理唯一值集合。
 
-90
+## 优先使用`WeakMap`和`WeakSet`以高效管理内存
 
-## 优先使用 `WeakMap` 和 `WeakSet` 以高效管理内存
+使用`WeakMap`和`WeakSet`通过允许垃圾回收未使用的对象来高效管理内存。
 
-* * *
+`WeakMap`和`WeakSet`类似于`Map`和`Set`，但它们通过持有对象的“弱”引用来实现高效的内存管理。这意味着如果存储在`WeakMap`或`WeakSet`中的对象没有其他引用，它就可以被垃圾回收。
 
-使用 `WeakMap` 和 `WeakSet` 通过允许垃圾回收未使用的对象来高效管理内存。
-
-* * *
-
-`WeakMap` 和 `WeakSet` 类似于 `Map` 和 `Set`，但它们通过持有对象的“弱”引用来实现高效的内存管理。这意味着如果存储在 `WeakMap` 或 `WeakSet` 中的对象没有其他引用，它就可以被垃圾回收。
-
-< Good Code >
+### 好代码
 
 ```javascript
 // 使用 WeakMap 高效管理内存
@@ -3836,7 +3905,7 @@ obj = null; // obj 可以被垃圾回收
 // weakMap 不再持有对 obj 的强引用
 ```
 
-<Bad Code >
+### 坏代码
 
 ```javascript
 // 使用 Map 持有强引用
@@ -3849,25 +3918,19 @@ obj = null; // obj 无法被垃圾回收，因为 map 持有强引用
 // map 仍然持有对 obj 的强引用
 ```
 
-好例子使用 `WeakMap`，允许对象在不再需要时被垃圾回收，从而更高效地管理内存。坏例子使用 `Map`，它持有对对象的强引用，阻止了垃圾回收。
+好例子使用`WeakMap`，允许对象在不再需要时被垃圾回收，从而更高效地管理内存。坏例子使用`Map`，它持有对对象的强引用，阻止了垃圾回收。
 
-<Memo>
+> **备忘录**
 
-`WeakMap` 和 `WeakSet` 在 ECMAScript 2015（ES6）中引入，特别适用于希望将数据与对象关联而不阻止其垃圾回收的场景。
+> `WeakMap`和`WeakSet`在 ECMAScript 2015（ES6）中引入，特别适用于希望将数据与对象关联而不阻止其垃圾回收的场景。
 
-91
+## 使用`try`/`catch`块处理异常
 
-## 使用 `try`/`catch` 块处理异常
+使用`try`/`catch`块有助于优雅地管理错误，确保程序能够处理意外情况而不会崩溃。
 
-* * *
+在 JavaScript 代码中实现`try`/`catch`块可以让你捕获并处理异常，从而提供一种管理错误并维持程序流程的方式。
 
-使用 `try`/`catch` 块有助于优雅地管理错误，确保程序能够处理意外情况而不会崩溃。
-
-* * *
-
-在 JavaScript 代码中实现 `try`/`catch` 块可以让你捕获并处理异常，从而提供一种管理错误并维持程序流程的方式。
-
-< Good Code >
+### 好代码
 
 ```javascript
 try {
@@ -3880,7 +3943,7 @@ try {
 }
 ```
 
-<Bad Code>
+### 坏代码
 
 ```javascript
 // 尝试解析 JSON 但没有错误处理
@@ -3888,25 +3951,19 @@ let data = JSON.parse(jsonString);
 console.log(data);
 ```
 
-在好例子中，`try`/`catch` 块用于处理 JSON 解析过程中可能发生的任何错误。如果发生错误，它会被捕获并记录，防止程序崩溃。在坏例子中，没有错误处理，因此如果 JSON 解析失败，程序将抛出未捕获的异常并可能崩溃。
+在好例子中，`try`/`catch`块用于处理 JSON 解析过程中可能发生的任何错误。如果发生错误，它会被捕获并记录，防止程序崩溃。在坏例子中，没有错误处理，因此如果 JSON 解析失败，程序将抛出未捕获的异常并可能崩溃。
 
-<Memo>
+> **备忘录**
 
-JavaScript 在 ECMAScript 3 中引入了 `try`/`catch` 块，使开发者更容易处理运行时错误并提高代码的健壮性。
-
-92
+> JavaScript 在 ECMAScript 3 中引入了`try`/`catch`块，使开发者更容易处理运行时错误并提高代码的健壮性。
 
 ## 提供有意义的错误信息
 
-* * *
-
 有意义的错误信息有助于开发者理解出了什么问题以及如何修复，从而提高代码的可维护性和调试效率。
-
-* * *
 
 在处理错误时，提供清晰且信息丰富的错误消息可以显著帮助快速诊断和解决问题。
 
-< Good Code >
+### 好代码
 
 ```javascript
 try {
@@ -3918,7 +3975,7 @@ try {
 }
 ```
 
-<Bad Code>
+### 坏代码
 
 ```javascript
 try {
@@ -3932,19 +3989,14 @@ try {
 
 在好例子中，错误消息清楚地说明了问题所在，并提供了关于未定义对象的上下文。这有助于开发者快速识别并修复问题。在坏例子中，通用的错误消息没有提供任何有用信息，使得诊断问题更加困难。
 
-<Memo>
+> **备忘录**
 
-提供有意义的错误信息是软件开发中的最佳实践，对于有效的调试和维护至关重要。在大型代码库和协作项目中尤其重要。
-
-93
+> 提供有意义的错误信息是软件开发中的最佳实践，对于有效的调试和维护至关重要。在大型代码库和协作项目中尤其重要。
 
 ## 将错误记录到控制台或日志服务
 
-* * *
 
 始终将错误记录到控制台或日志服务，以帮助调试和监控。
-
-* * *
 
 记录错误有助于开发者理解出了什么问题以及在哪里发生。这对于调试和维护代码质量至关重要。
 
@@ -3976,11 +4028,7 @@ try {
 
 <Memo>
 
-
-
-
-
-## 94 优雅地使用 .catch 处理被拒绝的 Promise。
+## 94 优雅地使用 `.catch` 处理被拒绝的 Promise
 
 ---
 
@@ -4012,13 +4060,13 @@ fetch('https://api.example.com/data')
 // 没有 .catch 来处理潜在的错误
 ```
 
-在好的示例中，使用了 `.catch` 方法来处理 fetch 操作期间发生的任何错误，确保错误被记录并可被处理。在坏的示例中，没有使用 `.catch` 方法，因此任何错误都会导致未处理的 Promise 拒绝，进而可能导致应用程序崩溃。
+在好的示例中，使用了 `.catch` 方法来处理 `fetch` 操作期间发生的任何错误，确保错误被记录并可被处理。在坏的示例中，没有使用 `.catch` 方法，因此任何错误都会导致未处理的 Promise 拒绝，进而可能导致应用程序崩溃。
 
 <Memo>
 
 在 Node.js 中，可以使用 `process.on('unhandledRejection', handler)` 事件全局捕获未处理的 Promise 拒绝，但更好的做法是使用 `.catch` 在本地处理它们。
 
-## 95 验证函数输入以防止错误。
+## 95 验证函数输入以防止错误
 
 ---
 
@@ -4063,7 +4111,7 @@ console.log(add(2, '3')); // '23'（意外结果）
 
 输入验证是许多编程语言中的常见实践，对于编写安全可靠的代码至关重要。它通过确保输入符合预期标准，有助于防止错误和安全漏洞。
 
-## 96 编写可在不同项目中复用的模块化代码。
+## 96 编写可在不同项目中复用的模块化代码
 
 ---
 
@@ -4114,7 +4162,7 @@ console.log(subtract(10, 7)); // 3
 
 模块化编程是一种软件设计技术，强调将功能分离为独立、可互换的模块。这种方法在现代软件开发中被广泛使用，以增强代码的可维护性和可扩展性。
 
-## 97 使用高阶函数创建可复用的函数模式。
+## 97 使用高阶函数创建可复用的函数模式
 
 ---
 
@@ -4174,7 +4222,7 @@ console.log(applySquare(5)); // 25
 
 JavaScript 内置的数组方法如 `map`、`filter` 和 `reduce` 就是高阶函数的例子。
 
-## 98 使用混入（Mixins）在多个类中复用代码。
+## 98 使用混入（Mixins）在多个类中复用代码
 
 ---
 
@@ -4262,10 +4310,6 @@ animal.walk(); // Walking...
 
 继承允许基于现有类创建新类，复用代码并促进模块化。
 
-
-
-
-
 当创建一个与现有类共享属性或方法的新类时，请考虑扩展现有类，而不是重复代码。
 
 < 好代码 >
@@ -4332,15 +4376,11 @@ dog.speak(); // Output: Buddy barks.
 
 继承是面向对象编程（OOP）的核心原则之一，与封装和多态并列。
 
-100
+## 100 利用函数组合从简单函数创建复杂功能
 
-## 利用函数组合从简单函数创建复杂功能
-
-* * *
+---
 
 函数组合允许将多个简单函数组合起来，以创建更复杂的功能，促进代码复用和模块化。
-
-* * *
 
 在处理复杂操作时，考虑将其分解为更小、可复用的函数，并将它们组合起来以实现所需功能。
 
@@ -4399,19 +4439,16 @@ console.log(total); // Output: $64.80
 
 函数组合是函数式编程中的一个基本概念，其中函数被视为一等公民，可以作为参数传递给其他函数，或从函数中返回。
 
-101
+## 101 使用默认参数处理缺失参数
 
-## 使用默认参数处理缺失参数
-
-* * *
+---
 
 为函数参数提供默认值，以处理参数缺失或为 `undefined` 的情况。
-
-* * *
 
 当调用函数时未提供所有必需参数，JavaScript 会将缺失参数赋值为 `undefined`。这可能导致错误或意外行为。默认参数允许你为缺失参数指定一个回退值。
 
 < 好代码 >
+
 
 ```javascript
 function greet(name = 'Guest') {
@@ -4445,11 +4482,7 @@ greet(undefined); // Output: Hello, Guest!
 
 ## 避免副作用以使函数可复用
 
-* * *
-
 编写不修改外部状态或数据的纯函数，以确保它们可复用且可预测。
-
-* * *
 
 纯函数是指给定相同输入，总是返回相同输出且没有副作用的函数。副作用是对函数作用域之外的外部状态或数据的更改。避免副作用使函数更容易推理、测试和在不同上下文中复用。
 
@@ -4481,8 +4514,6 @@ const anotherResult = incrementCounter(); // anotherResult 为 2
 
 后记
 
-◆
-
 感谢您花时间阅读这本包含 100 种提升 JavaScript 代码可读性技巧的合集。
 
 在本书中，我们探讨了多种利用 JavaScript 独特特性和语法编写更清晰、更易理解代码的方法。
@@ -4496,4 +4527,3 @@ const anotherResult = incrementCounter(); // anotherResult 为 2
 我们相信，本书中分享的见解和技巧将在您的编程之旅中发挥重要作用，让您的代码对每个遇到它的人来说都更易理解、更令人愉悦。
 
 祝编码愉快！
-

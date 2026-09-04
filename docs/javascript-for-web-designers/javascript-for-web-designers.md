@@ -1,33 +1,7 @@
+
 # Web 设计师的 JavaScript
 
-
-
-
-
-Lara Hogan 前言
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-前言
+## 前言
 
 我认识 Matt Marquis 很多年，他一直是我过的最有天赋的设计师之一。Matt 在理解设计与技术的交汇点方面具有独特的天赋，他能够将复杂的想法转化为美丽且实用的数字体验。他的工作给我带来了巨大的灵感，我很荣幸能为这本书写序言。
 
@@ -35,7 +9,9 @@ Matt 对设计社区做出了巨大贡献，他的工作帮助了许多人提高
 
 我深信，这本书对于任何想要学习更多网页设计的人来说都将是一个宝贵的资源，我期待 Matt 未来的表现。
 
-引言
+—— Lara Hogan
+
+## 引言
 
 在过去的几十年里，网页发生了巨大的变化。它最初只是简单的静态页面的集合，现在已演变成了一个复杂的动态平台，用于我们生活的几乎方方面。这种变化是由技术的飞速进步以及对更具互动性和参与感的数字体验日益增长的需求驱动的。
 
@@ -47,17 +23,14 @@ Matt 对设计社区做出了巨大贡献，他的工作帮助了许多人提高
 
 我希望你喜欢这本书，就像我喜欢阅读它一样。
 
-Lara Hogan
-
-
-
-
+—— Lara Hogan
 
 ## HTML 基础
 
 HTML (HyperText Markup Language) 是用于构建网页结构的标准标记语言。它通过各种标签（Tags）来定义页面的元素。
 
 ### 常用 HTML 标签
+
 - `<html>`: 页面的根元素。
 - `<head>`: 包含文档元数据（如标题、样式表等）。
 - `<body>`: 包含网页的可可见内容。
@@ -74,6 +47,7 @@ HTML (HyperText Markup Language) 是用于构建网页结构的标准标记语�
 CSS (Cascading Style Sheets) 用于控制网页的呈现样式、布局和视觉效果。
 
 ### CSS 常用属性
+
 - `color`: 设置文本颜色。
 - `background-color`: 设置背景颜色。
 - `font-size`: 设置字体大小。
@@ -87,7 +61,9 @@ CSS (Cascading Style Sheets) 用于控制网页的呈现样式、布局和视觉
 JavaScript 是一门脚本语言，用于为网页添加交互功能。
 
 ### DOM 操作
+
 DOM (Document Object Model) 允许 JavaScript 动态访问 HTML 结构。
+
 - `document.getElementById(id)`: 通过 ID 获取元素。
 - `document.querySelector(selector)`: 通过选择器获取元素。
 - `element.addEventListener()`: 添加事件监听。
@@ -116,10 +92,6 @@ DOM (Document Object Model) 允许 JavaScript 动态访问 HTML 结构。
 </html>
 ```
 
-
-
-
-
 ## 1. 什么是 JavaScript?
 
 JavaScript 是一种轻量级的解释型编程语言，遵循 ECMAScript 。它和 HTML 以及 CSS 一样，是网页的核心技术之一。虽然它主要用于制作交互网页，但也通过 Node.js 用于服务器端开发。
@@ -141,6 +113,7 @@ JavaScript 是一种轻量级的解释型编程语言，遵循 ECMAScript 。它
 - `defer` 属性允许脚本在后台下载，但会在 HTML 文档完全解析后才执行。
 
 示例：
+
 ```html
 <script src="script.js" async></script>
 <script src="script.js" defer></script>
@@ -291,10 +264,6 @@ async function fetchData() {
 }
 ```
 
-
-
-
-
 ## JavaScript 基础
 
 JavaScript 是一种允许你创建交互式网页的编程语言。它主要用于客户端脚本，但也可以通过 Node.js 在服务器端使用。
@@ -345,7 +314,7 @@ let person = { name: "Alice", age: 30 };
 
 ### 函数
 
-函数是用于执行特定任务的代块。你可以使用 `function` 关键字定义函数。
+函数是用于执行特定任务的代码块。你可以使用 `function` 关键字定义函数。
 
 ```javascript
 function greet(name) {
@@ -448,10 +417,6 @@ async function fetchData() {
 }
 ```
 
-
-
-
-
 ### 1. 变量
 
 变量是存储数据值的容器。在 JavaScript 中，你可以使用 `let`、`const` 和 `var` 来声明变量。
@@ -461,6 +426,7 @@ async function fetchData() {
 - `var`: 声明变量的旧方式（在现代 JS 中已避免使用）。
 
 示例：
+
 ```javascript
 let x = 10;
 x = 20; // Allowed
@@ -482,6 +448,7 @@ const y = 5;
 - Array（数组): 列表类数据。
 
 示例：
+
 ```javascript
 let name = "Alice";
 let age = 25;
@@ -496,7 +463,8 @@ let colors = ["red", "green", "blue"];
 
 运算符用于对变量和值执行操作。
 
-### 算术运算符
+#### 算术运算符
+
 | 运算符 | 描述 | 示例 | 结果 |
 | :--- | :--- | :--- | :--- |
 | `+` | 加法 | `5 + 2` | 7 |
@@ -508,7 +476,8 @@ let colors = ["red", "green", "blue"];
 | `++` | 增一 | `x++` | 6 |
 | `--` | 减一 | `x--` | 4 |
 
-### 比较运算符
+#### 比较运算符
+
 - `==`: 等于（仅检查值）。
 - `===`: 严格相等（检查值和类型）。
 - `!=`: 不等于。
@@ -518,23 +487,26 @@ let colors = ["red", "green", "blue"];
 - `>=`: 大于等于。
 - `<=`: 小于等于。
 
-### 赋值运算符
+#### 赋值运算符
+
 - `=`: 赋值。
 - `+=`: 加并赋值。
 - `-=`: 减并赋值。
 - `*=`: 乘并赋值。
 - `/=`: 除并赋值。
 
-### 逻辑运算符
+#### 逻辑运算符
+
 - `&&`: 与（当两个操作数都为真时为真）。
-- `||`: 或（当其中一个操作数为为真时为真）。
+- `||`: 或（当其中一个操作数为真时为真）。
 - `!`: 非（反转结果）。
 
 ### 4. 控制流
 
 控制结构决定代码的执行路径。
 
-### 条件语句 (if...else)
+#### 条件语句 (if...else)
+
 ```javascript
 let age = 18;
 if (age >= 18) {
@@ -544,7 +516,8 @@ if (age >= 18) {
 }
 ```
 
-### 循环 (for, while)
+#### 循环 (for, while)
+
 循环用于重复执行一段代码块。
 
 ```javascript
@@ -643,22 +616,20 @@ JavaScript 是动态类型语言，这意味着变量可以动态地更改类型
 - `symbol`: 唯一标识符。
 - `bigint`: 用于大整数。
 
-### 特殊值
+#### 特殊值
+
 - `NaN`: 不是数字（无效数学运算的结果）。
 - `Infinity`: 比任何数字都大的值。
 - `-Infinity`: 比任何数字都小的值。
 - `undefined`: 自动赋值给未初始变量。
 - `null`: 有意的缺失。
 
-### 基本类型 vs 非基本类型
+#### 基本类型 vs 非基本类型
+
 - **基本类型 (Primitives)**: 不可变的并按值存储（String, Number, Boolean, undefined, null, symbol, bigint）。
 - **非基本类型 (Objects)**: 可变的并按引用存储（Object, Array, Function）。
 
-
-
-
-
-### 无穷与 NaN
+#### 无穷与 NaN
 
 在 JavaScript 中，`Infinity` 是一个表示比任何数字都大的数值。当数学运算产生的数值过大时，就会创建它。
 
@@ -699,9 +670,9 @@ console.log(i); // NaN
 
 2021 年，JavaScript 引入了几个新特性，使代码更加简洁和富有表现力。
 
-### 逻辑赋值运算符
+#### 逻辑赋值运算符
 
-逻辑赋值运算符（`&&=`、`||=` `、`??=`）允许你根据变量的当前值和逻辑条件给变量赋值。
+逻辑赋值运算符（`&&=`、`||=`、`??=`）允许你根据变量的当前值和逻辑条件给变量赋值。
 
 ```javascript
 let a = 1;
@@ -721,7 +692,7 @@ d ??= 3; // d 保持 0，因为 d 不是 null 或 undefined
 console.log(d); // 0
 ```
 
-### String.prototype.replaceAll()
+#### String.prototype.replaceAll()
 
 `replaceAll()` 方法返回一个新字符串，其中所有模式或正则表达式的出现都被替换为指定的字符串。
 
@@ -735,7 +706,7 @@ let result2 = text2.replaceAll(/x/g, "cat");
 console.log(result2); // "the cat brown fox"
 ```
 
-### Array.prototype.at()
+#### Array.prototype.at()
 
 `at()` 方法返回指定索引处的元素。它支持负整数从数组末尾倒数。
 
@@ -746,7 +717,7 @@ console.log(arr.at(-1)); // 30 (最后一个元素)
 console.log(arr.at(-2)); // 20 (倒第二个元素)
 ```
 
-### Promise.any()
+#### Promise.any()
 
 `Promise.any()` 返回一个 promise，只要可迭代对象中的任何一个 promise 变为完成，它就会完成。
 
@@ -762,11 +733,11 @@ Promise.any([p1, p2, p3]).then((value) => {
 });
 ```
 
-### WeakMap 和 WeakSet
+#### WeakMap 和 WeakSet
 
 `WeakMap` 和 `WeakSet` 是对对象持有弱引用的集合。这允许垃圾回收器在对象不再其他不再被引用时回收内存。
 
-### WeakMap
+##### WeakMap
 
 ```javascript
 let wm = new WeakMap();
@@ -777,7 +748,7 @@ console.log(wm.get(obj)); // "some data"
 obj = null; // 对象可以被垃圾回收
 ```
 
-### WeakSet
+##### WeakSet
 
 ```javascript
 let ws = new WeakSet();
@@ -788,7 +759,7 @@ console.log(ws.has(obj2)); // true
 obj2 = null; // 对象可以被垃圾回收
 ```
 
-### globalThis 属性
+#### globalThis 属性
 
 `globalThis` 属性提供了全局对象，无论环境如何（浏览器、Node.js 等）。
 
@@ -798,7 +769,7 @@ globalThis.myVar = "hello";
 console.log(globalThis.myVar); // "hello"
 ```
 
-### 类字段 (Class Fields)
+#### 类字段 (Class Fields)
 
 现在可以使用 `#` 前缀定义私有字段和方法。
 
@@ -820,7 +791,7 @@ console.log(user.getName()); // "Alice"
 // console.log(user.#name); // 错误
 ```
 
-### 私有静态字段
+#### 私有静态字段
 
 静态字段和方法也可以 `#` 进行私有化。
 
@@ -842,7 +813,7 @@ console.log(Counter.getCount()); // 1
 // console.log(Counter.#count); // 错误
 ```
 
-### 数字分隔符
+#### 数字分隔符
 
 可以使用下划线作为数字分隔符来增加数字的可读性。
 
@@ -854,7 +825,7 @@ let price = 1_250.5;
 console.log(price); // 1250.5
 ```
 
-### BigInt
+#### BigInt
 
 `BigInt` 是用于表示大于 `Number` 类型最大整数的数据类型。通过附加 `n` 创建。
 
@@ -862,8 +833,9 @@ console.log(price); // 1250.5
 let big1 = 9007199254740991n;
 let big2 = BigInt("9007199254740991");
 console.log(big1 + 1n); // 9007199254740992n
+```
 
-### 可选链和空值合并
+#### 可选链和空值合并
 
 可选链（`?.`）允许在不检查每个引用是否有效的情况下读取属性值。空值合并（`??`）当左侧操作数为 `null` 或 `undefined` 时返回右侧操作数。
 
@@ -880,8 +852,9 @@ console.log(user?.profile?.age); // undefined
 let count = 0;
 console.log(count ?? 10); // 0
 console.log(null ?? 10); // 10
+```
 
-### Array.prototype.flat()
+#### Array.prototype.flat()
 
 `flat()` 方法创建一个拼接指定深度子数组元素的新数组。
 
@@ -891,7 +864,7 @@ console.log(arr.flat()); // [1, 2, 3, [4], 5]
 console.log(arr.flat(2)); // [1, 2, 3, 4, 5]
 ```
 
-### Array.prototype.flatMap()
+#### Array.prototype.flatMap()
 
 `flatMap()` 方法等于调用 `map()` 然后再调用 `flat()`，深度为 1。
 
@@ -901,7 +874,7 @@ let result = arr.flatMap(x => [x, x * 2]);
 console.log(result); // [1, 2, 2, 4, 3, 8]
 ```
 
-### String.prototype.repeat()
+#### String.prototype.repeat()
 
 `repeat()` 方法返回一个重复指定次数的字符串。
 
@@ -910,7 +883,7 @@ let str = "abc";
 console.log(str.repeat(3)); // "abcabcabc"
 ```
 
-### String.prototype.padStart() and padEnd()
+#### String.prototype.padStart() and padEnd()
 
 `padStart()` 和 `padEnd()` 在开头或结尾填充另一个字符串直到字符串达到给定长度。
 
@@ -920,7 +893,7 @@ console.log(str.padStart(3, "0")); // "005"
 console.log(str.padEnd(5, "!")); // "5!!!!"
 ```
 
-### Object.entries()
+#### Object.entries()
 
 `Object.entries()` 静态方法返回对象的可枚举字符串键的[键, 值]对数组。
 
@@ -929,7 +902,7 @@ let obj = { a: 1, b: 2 };
 console.log(Object.entries(obj)); // [["a", 1], ["b", 2]]
 ```
 
-### Object.keys()
+#### Object.keys()
 
 `Object.keys()` 返回对象的可枚举字符串属性名的数组。
 
@@ -938,7 +911,7 @@ let obj = { a: 1, b: 2 };
 console.log(Object.keys(obj)); // ["a", "b"]
 ```
 
-### Object.values()
+#### Object.values()
 
 `Object.values()` 静态方法返回对象的可枚举字符串属性值的数组。
 
@@ -947,7 +920,7 @@ let obj = { a: 1, b: 2 };
 console.log(Object.values(obj)); // [1, 2]
 ```
 
-### Object.fromEntries()
+#### Object.fromEntries()
 
 `Object.fromEntries()` 从键值对的列表创建对象。
 
@@ -956,7 +929,7 @@ let entries = [["a", 1], ["b", 2]];
 console.log(Object.fromEntries(entries)); // { a: 1, b: 2 }
 ```
 
-### Array.prototype.includes()
+#### Array.prototype.includes()
 
 `includes()` 方法确定数组是否包含其元素中的某个值，返回 true。
 
@@ -966,7 +939,7 @@ console.log(arr.includes(2)); // true
 console.log(arr.includes(4)); // false
 ```
 
-### Array.prototype.find()
+#### Array.prototype.find()
 
 `find()` 方法返回提供的数组中满足测试函数的第一个元素。
 
@@ -976,7 +949,7 @@ let found = numbers.find(element => element > 10);
 console.log(found); // 12
 ```
 
-### Array.prototype.findIndex()
+#### Array.prototype.findIndex()
 
 `findIndex()` 方法返回数组中满足测试函数的元素的索引。
 
@@ -989,7 +962,7 @@ let index = users.findIndex(user => user.age < 30);
 console.log(index); // 1
 ```
 
-### Array.prototype.some()
+#### Array.prototype.some()
 
 `some()` 方法测试数组中至少有一个元素通过了测试函数。
 
@@ -1003,7 +976,7 @@ let hasEvenOdd = oddNumbers.some(element => element % 2 === 0);
 console.log(hasEvenOdd); // false
 ```
 
-### Array.prototype.every()
+#### Array.prototype.every()
 
 `every()` 方法测试数组中的所有元素是否通过了测试函数。
 
@@ -1017,10 +990,6 @@ let allEvenMixed = mixedNumbers.every(element => element % 2 === 0);
 console.log(allEvenMixed); // false
 ```
 
-
-
-
-
 ## JavaScript 变量
 
 在 JavaScript 中，有三种声明变量的方法：`var`、`let` 和 `const`。在 ES6 (2015) 之前，`var` 关键字是声明变量的唯一方式。
@@ -1030,7 +999,7 @@ var foo;
 console.log(foo); // undefined
 ```
 
-当你在声明变量时不为其赋值时，它的值值为 `undefined`。
+当你在声明变量时不为其赋值时，它的值为 `undefined`。
 
 ```javascript
 var bar;
@@ -1177,7 +1146,7 @@ console.log(user.name); // Alice
 console.log(user["age"]); // 30
 ```
 
-对象还可以拥有方法，即作为属性存储存储的函数。
+对象还可以拥有方法，即作为属性存储的函数。
 
 ```javascript
 var person = {
@@ -1285,15 +1254,11 @@ button.addEventListener("click", () => {
 });
 ```
 
-
-
-
-
 ## 数组
 
-数组是JavaScript中用于存储多个值的数据结构。数组可以存储任何类型的值，包括字符串、数字、布尔值，甚至是另一个数组或对象。数组是有序的，这意味着每个元素都有特定的索引（index）。
+数组是 JavaScript 中用于存储多个值的数据结构。数组可以存储任何类型的值，包括字符串、数字、布尔值，甚至是另一个数组或对象。数组是有序的，这意味着每个元素都有特定的索引（index）。
 
-- 数组的索引从0开始计数的。
+- 数组的索引从 0 开始计数。
 - 数组可以动态地改变长度。
 - 数组提供了许多内置方法来操作其中的元素。
 
@@ -1304,13 +1269,16 @@ button.addEventListener("click", () => {
 ```javascript
 var myFirstArray = [ "item1", 2, 3, true, "last item" ];
 ```
+
 `*undefined*`
+
 `myFirstArray`
+
 `["item1", 2, 3, true, "last item"]*`
 
 ### 访问元素
 
-你可以通过索引来访问数组中的元素。索引从0开始。
+你可以通过索引来访问数组中的元素。索引从 0 开始。
 
 ```javascript
 myFirstArray[ 0 ];
@@ -1330,8 +1298,11 @@ myFirstArray[ 2 ];
 ```javascript
 var mySecondArray = [ "first", "second", "third" ];
 ```
+
 `*undefined*`
+
 `mySecondArray;`
+
 `["first", "second", "third"]*`
 
 ```javascript
@@ -1348,7 +1319,9 @@ mySecondArray[ 3 ] = "date";
 ```javascript
 var mySecondArray = [ "first", "second", "third" ];
 ```
+
 `mySecondArray.length;`
+
 *3*`
 
 ### 添加元素
@@ -1358,7 +1331,9 @@ var mySecondArray = [ "first", "second", "third" ];
 ```javascript
 mySecondArray.push("date");
 ```
+
 `mySecondArray;`
+
 `["first", "second", "third", "date"]*`
 
 ### 删除元素
@@ -1368,7 +1343,9 @@ mySecondArray.push("date");
 ```javascript
 mySecondArray.pop();
 ```
+
 `mySecondArray;`
+
 `["first", "second", "third"]*`
 
 ### Shift 方法
@@ -1378,7 +1355,9 @@ mySecondArray.pop();
 ```javascript
 mySecondArray.shift();
 ```
+
 `mySecondArray;`
+
 `["second", "third"]*`
 
 ### Unshift 方法
@@ -1388,7 +1367,9 @@ mySecondArray.shift();
 ```javascript
 mySecondArray.unshift("apple");
 ```
+
 `mySecondArray;`
+
 `["apple", "second", "third"]*`
 
 ### Splice 方法
@@ -1399,7 +1380,9 @@ mySecondArray.unshift("apple");
 var mySecondArray = [ "first", "second", "third" ];
 mySecondArray.splice(1, 1, "new item");
 ```
+
 `mySecondArray;`
+
 `["first", "new item", "third"]*`
 
 ### Slice 方法
@@ -1410,7 +1393,9 @@ mySecondArray.splice(1, 1, "new item");
 var mySecondArray = [ "first", "second", "third" ];
 var result = mySecondArray.slice(1, 3);
 ```
+
 `result;`
+
 `["second", "third"]*`
 
 ### Join 方法
@@ -1421,7 +1406,9 @@ var result = mySecondArray.slice(1, 3);
 var myFirstArray = [ "item1", 2, 3 ];
 var str = myFirstArray.join("-");
 ```
+
 `str;`
+
 *"item1-2-3"*
 
 ### IndexOf 方法
@@ -1432,7 +1419,9 @@ var str = myFirstArray.join("-");
 var myFirstArray = [ "item1", 2, 3 ];
 var index = myFirstArray.indexOf(2);
 ```
+
 `index;`
+
 *1*`
 
 ### Find 方法
@@ -1443,7 +1432,9 @@ var index = myFirstArray.indexOf(2);
 var myFirstArray = [ "item1", 2, 3 ];
 var item = myFirstArray.find(function(element) { return element > 1; });
 ```
+
 `item;`
+
 *2*`
 
 ### Filter 方法
@@ -1454,7 +1445,9 @@ var item = myFirstArray.find(function(element) { return element > 1; });
 var myFirstArray = [ 1, 2, 3 ];
 var filtered = myFirstArray.filter(function(element) { return element > 1; });
 ```
+
 `filtered;`
+
 *[2, 3]*`
 
 ### Map 方法
@@ -1465,7 +1458,9 @@ var filtered = myFirstArray.filter(function(element) { return element > 1; });
 var myFirstArray = [ 1, 2, 3 ];
 var doubled = myFirstArray.map(function(element) { return element * 2; });
 ```
+
 `doubled;`
+
 *[2, 4, 6]*`
 
 ### ForEach 方法
@@ -1477,9 +1472,9 @@ var myFirstArray = [ "item1", 2, 3 ];
 myFirstArray.forEach(function(element) { console.log(element); });
 ```
 
-### 对象
+## 对象
 
-对象是JavaScript中存储键值对（key-value pairs）的数据结构。每个属性由一个键（也称为属性名）和一个值组成。
+对象是 JavaScript 中存储键值对（key-value pairs）的数据结构。每个属性由一个键（也称为属性名）和一个值组成。
 
 ### 创建对象
 
@@ -1526,7 +1521,8 @@ myDog.isHappy = true;
 
 ```javascript
 myDog.breed;
-*"Golden Retriever"*```
+*"Golden Retriever"*
+```
 
 ### 删除属性
 
@@ -1571,16 +1567,20 @@ myDog.name.last;
 *"Marquis"*
 ```
 
-
-
-
-
+```javascript
 var myDog = new Object();
+```
+
 *undefined*
+
+```javascript
 myDog.nickname = "Falsy";
+```
+
 *"Falsy"*
 
 如果属性不存在：
+
 ```javascript
 var myDog = {
   "nickname": "Falsy"
@@ -1589,6 +1589,7 @@ var myDog = {
 ```
 
 如果给对象添加一个属性：
+
 ```javascript
 var myDog = {
   "name": "Zero"
@@ -1603,7 +1604,7 @@ myDog.name;
 *Zero*
 ```
 
-当访问访问对象的某个属性时，它会返回该属性的值。如果该属性不存在，它将返回 undefined。该对象拥有属性 "name"如下：
+当访问对象的某个属性时，它会返回该属性的值。如果该属性不存在，它将返回 undefined。该对象拥有属性 "name" 如下：
 
 ```javascript
 var myDog = {
@@ -1682,7 +1683,7 @@ var carKey = "car" + 2;
 cars[carKey] = "yellow";
 ```
 
-**函数**
+### 函数
 
 当你定义一个函数时，可以调用它来执行代码：
 
@@ -1716,10 +1717,6 @@ var greet = function(username) {
 greet();
 *Hello again, undefined.*
 ```
-
-
-
-
 
 ### 条件语句
 
@@ -1813,13 +1810,9 @@ if (lunch == "gravel") {
 }
 ```
 
-
-
-
-
 在 JavaScript 中，比较运算符用于比较两个值并返回一个布尔值。
 
-### 比较运算符
+#### 比较运算符
 
 - `==` 检查两个值在执行类型转换后是否相等。
 - `===` 检查两个值在不执行类型转换的情况下是否相等。
@@ -1832,7 +1825,7 @@ if (lunch == "gravel") {
 
 例如，`5 == "5"` 为 `true`，因为字符串转换为了数字。然而，`5 === "5"` 为 `false`，因为类型不同（数字和字符串）。
 
-### 等等运算符：`==` 和 `===`
+#### 等等运算符：`==` 和 `===`
 
 `==` 运算符在类型转换后检查相等性。`===` 运算符（严格相等）同时检查值和类型。
 
@@ -1843,7 +1836,7 @@ console.log(null == undefined); // true
 console.log(null === undefined); // false
 ```
 
-### 不等运算符：`!=` 和 `!==`
+#### 不等运算符：`!=` 和 `!==`
 
 `!=` 运算符在类型转换后检查不等性。`!==` 运算符（严格不等）在不进行类型转换的情况下检查不等性。
 
@@ -1854,7 +1847,7 @@ console.log(null != undefined); // false
 console.log(null !== undefined); // true
 ```
 
-### 关系运算符：>`, `<`, `>=`, `<=`
+#### 关系运算符：>`, `<`, `>=`, `<=`
 
 这些运算符用于比较数字或字符串（基于字典序顺序）。
 
@@ -1865,7 +1858,7 @@ console.log(10 >= 5); // true
 console.log(5 <= 10); // true
 ```
 
-### 字符串比较
+#### 字符串比较
 
 在比较字符串时，JavaScript 根据它们的 Unicode 值按字典序进行比较。
 
@@ -1874,9 +1867,9 @@ console.log("apple" > "banana"); // false
 console.log("Banana" > "apple"); // true (大写字母在小写字母之前)
 ```
 
-### 特殊值：null, undefined, NaN
+#### 特殊值：null, undefined, NaN
 
-JavaScript 有一些在比较中行为独特的的特殊值。
+JavaScript 有一些在比较中行为独特的特殊值。
 
 | 值 | `==` | `===` | `!=` | `!==` |
 | :--- | :--- | :--- | :--- | :--- |
@@ -1899,9 +1892,9 @@ greetUser("Muscles Touchdown"); // Welcome, Muscles Touchdown!
 greetUser(); // Welcome, whoever you are!
 ```
 
-### 假值与真值 (Falsy and Truthy Values)
+#### 假值与真值 (Falsy and Truthy Values)
 
-在 JavaScript 中，某些值在布尔上下文中求时为“假值 (falsy)”。唯一的假值为：
+在 JavaScript 中，某些值在布尔上下文中求值时为“假值 (falsy)”。唯一的假值为：
 
 - `false`
 - `0`
@@ -1924,7 +1917,7 @@ greetUser("Muscles Touchdown"); // Welcome, Muscles Touchdown!
 greetUser(undefined); // Welcome, whoever you are!
 ```
 
-### 默认参数
+#### 默认参数
 
 你可以为函数参数定义默认值，自动处理 `undefined` 参数。
 
@@ -1937,7 +1930,7 @@ greetUser("Muscles Touchdown"); // Welcome, Muscles Touchdown!
 greetUser(); // Welcome, whoever you are!
 ```
 
-### 逻辑运算符
+#### 逻辑运算符
 
 逻辑 `&&`（与）和 `||`（或）运算符用于组合比较结果。
 
@@ -1951,7 +1944,7 @@ console.log(true == 1); // true
 console.log(false == 0); // false
 ```
 
-### 比较运算符（续）
+#### 比较运算符（续）
 
 运算符 `>=`（大于或等于）和 `<=`（小于或等于）对于范围检查非常有用。
 
@@ -1960,7 +1953,7 @@ console.log(10 >= 5); // true
 console.log(5 <= 5); // true
 ```
 
-### 严格相等 vs 宽松相等
+#### 严格相等 vs 宽松相等
 
 `==` 和 `===` 之间的区别是类型转换。通常优选 `===` 以避免由意外类型转换导致的意外 bug。
 
@@ -1968,7 +1961,6 @@ console.log(5 <= 5); // true
 console.log(0 == ""); // true
 console.log(0 === ""); // false
 ```
-
 
 ```javascript
 var bikeName = "Bonneville";
@@ -1978,8 +1970,9 @@ if( bikeName.length <= 10 ) {
 }
 ```
 
-### 逻辑运算符
+#### 逻辑运算符
 
+```javascript
 `if` `else`
 
 `5 < 2 || 10 > 2`
@@ -1987,77 +1980,89 @@ if( bikeName.length <= 10 ) {
 
 `10 > 5 && "toast" === 2`
 *false*
+```
 
+```javascript
 var lunch = "tacos";
+
 if (lunch === "tacos") {
   console.log("I am hungry");
 } else {
   console.log("I am not hungry");
 }
+```
 
+```javascript
 var lunch = "taco";
+
 if (lunch === "tacos") {
   console.log("I am hungry");
 } else {
   console.log("I am not hungry");
 }
+```
 
+```javascript
 var lunch = "tacos";
+
 if (lunch === "tacos") {
   console.log("I am hungry");
 } else {
   console.log("I am not hungry");
 }
+```
 
+```javascript
 var lunch = "tacos";
+
 if (lunch === "tacos") {
   console.log("I am hungry");
 } else {
   console.log("I am not hungry");
 }
+```
 
+```javascript
 var lunch = "tacos";
+
 if (lunch === "tacos") {
   console.log("I am hungry");
 } else {
   console.log("I am not hungry");
 }
+```
 
+```javascript
 var lunch = "tacos";
+
 if (lunch === "tacos") {
   console.log("I am hungry");
 } else {
   console.log("I am not hungry");
 }
+```
 
+```javascript
 var lunch = "tacos";
+
 if (lunch === "tacos") {
   console.log("I am hungry");
 } else {
   console.log("I am not hungry");
 }
+```
 
+```javascript
 var lunch = "tacos";
+
 if (lunch === "tacos") {
   console.log("I am hungry");
 } else {
   console.log("I am not hungry");
 }
+```
 
-var lunch = "tacos";
-if (lunch === "tacos") {
-  console.log("I am hungry");
-} else {
-  console.log("I am not hungry");
-}
-
-var lunch = "tacos";
-if (lunch === "tacos") {
-  console.log("I am hungry");
-} else {
-  console.log("I am not hungry");
-}
-
+```javascript
 function mealChecker(lunch) {
   if (lunch !== "gravel" && (lunch === "burrito" || lunch === "tacos")) {
     console.log("Delicious.");
@@ -2065,21 +2070,31 @@ function mealChecker(lunch) {
 }
 
 mealChecker("tacos");
+```
 
+```javascript
 var foo = "A String";
-foo.toLowerCase();
-"THIS IS A STRING".toLowerCase(); // "this is a string"
 
+foo.toLowerCase();
+```
+
+`"THIS IS A STRING".toLowerCase(); // "this is a string"`
+
+```javascript
 function mealChecker(lunch) {
   let lowerLunch = lunch.toLowerCase();
+
   if (lowerLunch !== "gravel" && (lowerLunch === "burrito" || lowerLunch === "tacos")) {
     console.log("Delicious.");
   }
 }
 
 mealChecker("TACOS");
+```
 
+```javascript
 var theNumber = 5;
+
 switch(theNumber) {
   case 1:
     console.log("This is the number one.");
@@ -2097,9 +2112,9 @@ switch(theNumber) {
 }
 ```
 
-
 ```javascript
 let theNumber = 0;
+
 while (theNumber < 5) {
   if (number > 2) {
     console.log("the number is large");
@@ -2114,6 +2129,7 @@ while (theNumber < 5) {
 
 ```javascript
 let theNumber = 1;
+
 switch (theNumber) {
   case 1:
     console.log("this is one");
@@ -2131,6 +2147,7 @@ switch (theNumber) {
 
 ```javascript
 let theNumber = 1;
+
 switch (theNumber) {
   case 1:
     console.log("This is number.");
@@ -2140,6 +2157,12 @@ switch (theNumber) {
     break;
 }
 ```
+
+
+
+# JavaScript 循环与控制流
+
+## switch 语句
 
 ```javascript
 function daysPassedThisWeek(numericDay) {
@@ -2165,7 +2188,9 @@ function daysPassedThisWeek(numericDay) {
 }
 ```
 
+```javascript
 daysPassedThisWeek(3); // 今天是周的第三天。本周已经过了以下的日子：周二、周一、周日。
+```
 
 ```javascript
 function movePlayer(keyCode) {
@@ -2186,6 +2211,8 @@ function movePlayer(keyCode) {
 }
 ```
 
+## while 循环
+
 ```javascript
 let score = 0;
 while (score < 10) {
@@ -2202,15 +2229,16 @@ while (score < 10) {
 }
 ```
 
+## for 循环
+
 ```javascript
 for (let i = 0; i < 5; i++) {
   daysPassedThisWeek(5); // 今天是周的第五天。本周已经过了以下的日子：周四、周三、周二、周一、周日。
 }
 ```
 
-
 ```javascript
-for(var i = 0; i < 3; i++) {
+for (var i = 0; i < 3; i++) {
   console.log("This loop will run three times.")
 }
 ```
@@ -2252,7 +2280,7 @@ for (var color of colors) {
 ```
 
 ### for...in 循环
-`for...in` 循环用于遍历对象的可枚举属性。在循环中定义的变量代表每个属性的。
+`for...in` 循环用于遍历对象的可枚举属性。在循环中定义的变量代表每个属性的键名。
 
 ```javascript
 var person = {name: "John", age: 30, city: "New York"};
@@ -2291,7 +2319,7 @@ for (var i = 0; i < 10; i++) {
 ```
 
 ### 嵌套循环
-嵌套循环是在另一个内部的循环。这通常在处理多维数组或矩阵时使用。
+嵌套循环是在另一个循环内部的循环。这通常在处理多维数组或矩阵时使用。
 
 ```javascript
 for (var i = 0; i < 3; i++) {
@@ -2301,40 +2329,52 @@ for (var i = 0; i < 3; i++) {
 }
 ```
 
-### 数组方法
+## 数组方法
 JavaScript 提供了几个用于遍历数组的内置方法，例如 `forEach`、`map`、`filter` 和 `reduce`。
 
-*(1) 循环*
+### (1) 循环
+```javascript
 var loopArray = ["first", "second", "third"];
 for (var i = 0; i < loopArray.length; i++) {
   console.log(loopArray[i]);
 }
+```
 
-*(2) forEach 方法*
+### (2) forEach 方法
+```javascript
 var loopArray = ["first", "second", "third"];
 loopArray.forEach(function(item) {
   console.log(item);
 });
+```
 
-*(3) map 方法*
+### (3) map 方法
+```javascript
 var loopArray = ["first", "second", "third"];
 var newArray = loopArray.map(function(item) {
   return item + "!";
 });
+```
 
-*(4) filter 方法*
+### (4) filter 方法
+```javascript
 var loopArray = ["first", "second", "third"];
 var filteredArray = loopArray.filter(function(item) {
   return item !== "second";
 });
+```
 
-*(5) reduce 方法*
+### (5) reduce 方法
+```javascript
 var loopArray = [1, 2, 3];
 var sum = loopArray.reduce(function(accumulator, current) {
   return accumulator + current;
 }, 0);
+```
 
-### 对象
+## 对象遍历
+
+```javascript
 var nameObject = {
   "first": "Mat",
   "last": "Marquis"
@@ -2343,8 +2383,10 @@ var nameObject = {
 for (var key in nameObject) {
   console.log(nameObject[key]);
 }
+```
 
-*(1) 循环*
+### (1) 循环
+```javascript
 var nameObject = {
   "first": "Mat",
   "last": "Marquis"
@@ -2352,8 +2394,10 @@ var nameObject = {
 for (var key in nameObject) {
   console.log(nameObject[key]);
 }
+```
 
-*(2) 循环*
+### (2) 循环
+```javascript
 var nameObject = {
   "first": "Mat",
   "last": "Marquis"
@@ -2361,8 +2405,11 @@ var nameObject = {
 for (var key in nameObject) {
   console.log(nameObject[key]);
 }
+```
 
-### 字符串
+## 字符串/对象遍历示例
+
+```javascript
 var fullName = {
   "first": "Mat",
   "last": "Marquis"
@@ -2370,38 +2417,39 @@ var fullName = {
 for (var name in fullName) {
   console.log(name + ": " + fullName[name]);
 }
+```
 
-
+## 原型与继承
 
 ```javascript
 myObject.toString();
-*"[object Object]"*
+// *"[object Object]"*
 
 myObject.toString = function() {
   console.log( "I just broke JavaScript a little." );
 };
 
 myObject.toString();
-*I just broke JavaScript a little.*
+// *I just broke JavaScript a little.*
 
 otherObject.toString();
-*"[object Object]"*
+// *"[object Object]"*
 
 var myObject = {};
 var unrelatedObject = {};
 
 myObject.toString();
-*"[object Object]"*
+// *"[object Object]"*
 
 myObject.__proto__.toString = function() {
   console.log( "I just broke JavaScript a LOT." );
 };
 
 myObject.toString();
-*I just broke JavaScript a LOT.*
+// *I just broke JavaScript a LOT.*
 
 unrelatedObject.toString(); // Uh oh.
-*I just broke JavaScript a LOT.*
+// *I just broke JavaScript a LOT.*
 ```
 
 当我们调用 `unrelatedObject.toString()` 时，JavaScript 首先会在 `unrelatedObject` 对象本身查找 `toString` 方法。如果没有找到，就会去它的原型（`__proto__`）查找。由于我们修改了 `Object.prototype` 的 `toString` 方法，因此 `unrelatedObject` 继承了被修改后的方法。
@@ -2415,17 +2463,17 @@ var myObject = {};
 var unrelatedObject = {};
 
 myObject.toString();
-*"[object Object]"*
+// *"[object Object]"*
 
 myObject.__proto__.toString = function() {
   console.log( "I just broke JavaScript a LOT." );
 };
 
 myObject.toString();
-*I just broke JavaScript a LOT.*
+// *I just broke JavaScript a LOT.*
 
 unrelatedObject.toString(); // Uh oh.
-*I just broke JavaScript a LOT.*
+// *I just broke JavaScript a LOT.*
 ```
 
 在这种情况下，`unrelatedObject` 继承了 `myObject` 的原型链中的 `toString` 方法，因为我们修改的是 `myObject` 的原型，而不是全局的 `Object.prototype`。
@@ -2438,7 +2486,7 @@ unrelatedObject.toString(); // Uh oh.
 Object.prototype.containsName = function() {
   var result = false;
   for( var key in this ) {
-    if( key === "name" {
+    if( key === "name" ) {
       result = true;
     }
   }
@@ -2503,7 +2551,6 @@ var swamp = {
   "bunk2": "BJ",
   "bunk3": "Frank"
 };
-
 // 遍历原型链的逻辑
 ```
 
@@ -2523,12 +2570,11 @@ while(i < 3) {
 }
 ```
 
+## while 循环详解
 
+`while` 循环只要指定的条件为真，就会一直执行代码块。
 
-
-
-- `while` 循环只要指定的条件为真，就会一直执行代码块。
-- 在下面的示例中，循环将一直持续，直到随机数等于 3。
+在下面的示例中，循环将一直持续，直到随机数等于 3。
 
 ```javascript
 var random = Math.floor( Math.random() * 10 );
@@ -2553,11 +2599,12 @@ while(random !== 5){
 }
 console.log( "Got it!" );
 ```
-
 *Is it... 1*
 *Is it... 4*
 *Is it... 7*
 *Is it... 3*
+
+## do...while 循环
 
 `do...while` 循环与 `while` 循环相似，但有一个关键区别：它在检查条件之前至少会执行一次代码块。
 
@@ -2585,6 +2632,8 @@ console.log( "Got it!" );
 *Is it... 0*
 *Is it... 3*
 
+## break 和 continue 详解
+
 `break` 语句可用于提前退出循环，无论条件是否仍然为真。
 
 ```javascript
@@ -2598,6 +2647,7 @@ while(true){
   i++;
 }
 ```
+
 在下面的示例中，`break` 语句用于在 `i` 达到 5 时退出循环。
 
 ```javascript
@@ -2711,6 +2761,8 @@ while(true) {
 *aaa*
 *aaaa*
 
+## 无限循环
+
 无限循环是指条件始终为真而永远不会结束的循环。
 
 ```javascript
@@ -2732,71 +2784,67 @@ while(true) {
 }
 ```
 
-### window: 全局上下文
+# 浏览器全局对象
+
+## window: 全局上下文
+
 `window` 对象是浏览器中的全局上下文。它包含了浏览器中可用的全局变量和函数。
 
 ```javascript
 window
 ```
+
 `window` 对象是浏览器中的全局上下文。它包含了浏览器中可用的全局变量和函数。
 
 ```javascript
 window
 ```
+
 `window` 对象是浏览器中的全局上下文。它包含了浏览器中可用的全局变量和函数。
 
 ```javascript
 window
 ```
+
 `window` 对象是浏览器中的全局上下文。它包含了浏览器中可用的全局变量和函数。
 
+```javascript
+window.localVar;
+// *undefined*
 
-
-
-
-`window.localVar;`
-
-`*undefined*`
-
-`window.globalVar;`
-
-`*我是全局变量。`
+window.globalVar;
+// *我是全局变量。
+```
 
 ```javascript
 // Get the global window object
 var win = window;
-
 // Get the document object
 var doc = win.document;
-
 // Get the body of the document
 var body = doc.body;
-
 // Get the head of the document
 var head = doc.head;
-
 // Get all paragraph elements in the document
 var paragraphs = doc.getElementsByTagName("p");
-
 // Get the first paragraph
 var firstParagraph = paragraphs[0];
-
 // Get the last paragraph using length minus 1
 var lastParagraph = paragraphs[paragraphs.length - 1];
-
 // Change the content of the first paragraph
 firstParagraph.innerHTML = "Listen up, chumps:";
-
-// Change the content of the last paragraph ownlastParagraph.innerHTML = "And that's how I spent my vacation.";
-
+// Change the content of the last paragraph
+lastParagraph.innerHTML = "And that's how I spent my vacation.";
 // Example of manipulating the DOM
-var newDiv = document.createElement("div"); ownnewDiv.innerHTML = "This is a new div";
+var newDiv = document.createElement("div");
+newDiv.innerHTML = "This is a new div";
 body.appendChild(newDiv);
 ```
 
 ```html
 <!DOCTYPE html>
-<html><head>
+<html>
+<head>
   <meta charset="utf-8">
   <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
@@ -2806,25 +2854,23 @@ body.appendChild(newDiv);
 </html>
 ```
 
-## 面向设计师的 JavaScript
+# 面向设计师的 JavaScript
 
 坦率地说，我应该在书的开头向大家道歉——不是向你，读者，尽管我不怀疑在我们读到结尾时，我至少还会欠你一个道歉。对于我在职业生涯早期对 JavaScript 说过的那些话，我向它表达了深表歉意，其中有些话犀利得简直能刻在玻璃上。
 
 这是我一种并不含蓄的方式，想表达 JavaScript 的学习是一件棘手的事情……
 
-
-
-
+## “阅读更多”链接实现
 
 要创建一个“阅读更多”链接，请使用以下代码：
 
 ```javascript
 var newLink = document.createElement( "a" );
-**newLink.setAttribute( "href", "#");**
-**newLink.innerHTML = "Read more";**
+newLink.setAttribute( "href", "#");
+newLink.innerHTML = "Read more";
 ```
 
-首先，使用 `document.getElementsByTagName("p")` 页面上所有的段落。然后，选择第一个段并将“阅读更多”链接附加到它：
+首先，使用 `document.getElementsByTagName("p")` 获取页面上所有的段落。然后，选择第一个段落并将“阅读更多”链接附加到它：
 
 ```javascript
 var newLink = document.createElement( "a" );
@@ -2839,11 +2885,10 @@ firstParagraph.appendChild(newLink);
 
 ```javascript
 var newLink = document.createElement( "a" );
-**var allParagraphs = document.getElementsByTagName("p");**
-**var firstParagraph = allParagraphs[ 0 ];**
+var allParagraphs = document.getElementsByTagName("p");
+var firstParagraph = allParagraphs[ 0 ];
 newLink.setAttribute( "href", "#");
 newLink.innerHTML = "Read more";
-
 var text = firstParagraph.innerHTML;
 if (text.length > 100) {
   firstParagraph.innerHTML = text.substring(0, 100) + "... ";
@@ -2860,7 +2905,6 @@ var firstParagraph = allParagraphs[ 0 ];
 newLink.setAttribute( "href", "#");
 newLink.innerHTML = "Read more";
 firstParagraph.appendChild(newLink);
-
 newLink.onclick = function() {
   firstParagraph.innerHTML = "The full text goes here...";
   this.remove();
@@ -2875,8 +2919,8 @@ var allParagraphs = document.getElementsByTagName("p");
 var firstParagraph = allParagraphs[ 0 ];
 newLink.setAttribute( "href", "#");
 newLink.innerHTML = "Read more";
-**newLink.style.display = "inline-block";**
-**newLink.style.marginLeft = "10px";**
+newLink.style.display = "inline-block";
+newLink.style.marginLeft = "10px";
 firstParagraph.appendChild(newLink);
 ```
 
@@ -2887,7 +2931,6 @@ firstParagraph.appendChild(newLink);
   color: blue;
   text-decoration: underline;
 }
-
 .more-link:hover {
   color: darkblue;
 }
@@ -2900,7 +2943,7 @@ var newLink = document.createElement( "a" );
 var allParagraphs = document.getElementsByTagName("p");
 var firstParagraph = allParagraphs[ 0 ];
 newLink.setAttribute( "href", "#");
-**newLink.setAttribute( "class", "more-link");**
+newLink.setAttribute( "class", "more-link");
 newLink.innerHTML = "Read more";
 firstParagraph.appendChild(newLink);
 ```
@@ -2921,7 +2964,6 @@ var firstParagraph = allParagraphs[ 0 ];
 newLink.setAttribute( "href", "#");
 newLink.innerHTML = "Read more";
 firstParagraph.appendChild(newLink);
-
 for (var i = 1; i < allParagraphs.length; i++) {
   allParagraphs[i].style.display = "none";
 }
@@ -2936,7 +2978,6 @@ var firstParagraph = allParagraphs[ 0 ];
 newLink.setAttribute( "href", "#");
 newLink.innerHTML = "Read more";
 firstParagraph.appendChild(newLink);
-
 newLink.onclick = function() {
   for (var i = 1; i < allParagraphs.length; i++) {
     allParagraphs[i].style.display = "block";
@@ -2945,42 +2986,34 @@ newLink.onclick = function() {
 };
 ```
 
+# JavaScript 实现方案
 
-
-
-
-
-## JavaScript 实现方案
+## 基础实现
 
 ```javascript
 var newLink = document.createElement("a");
 var allParagraphs = document.getElementsByTagName("p");
 var firstParagraph = allParagraphs[0];
-
 newLink.setAttribute("href", "#");
 newLink.setAttribute("class", "more-link");
 newLink.innerHTML = "Read more";
-
 for(var i = 0; i < allParagraphs.length; i++) {
     allParagraphs[i].style.display = "none";
 }
-
 firstParagraph.appendChild(newLink);
 ```
 
 ### 展开逻辑实现
 
-为了实现点击“Read更多”时展开隐藏段落的功能，可以使用以下代码：
+为了实现点击“Read more”时展开隐藏段落的功能，可以使用以下代码：
 
 ```javascript
 var newLink = document.createElement("a");
 var allParagraphs = document.getElementsByTagName("p");
 var firstParagraph = allParagraphs[0];
-
 newLink.setAttribute("href", "#");
 newLink.setAttribute("class", "more-link");
 newLink.innerHTML = "Read more";
-
 for(var i = 0; i < allParagraphs.length; i++) {
     if(i === 0) {
         continue;
@@ -3007,7 +3040,6 @@ newLink.setAttribute("href", "#");
 newLink.setAttribute("class", "more-link");
 newLink.innerHTML = "Read more";
 newLink.addEventListener("click", revealCopy);
-
 for(var i = 0; i < allParagraphs.length; i++) {
     if(i === 0) {
         continue;
@@ -3017,7 +3049,7 @@ for(var i = 0; i < allParagraphs.length; i++) {
 firstParagraph.appendChild(newLink);
 ```
 
-### 进阶：处理MouseEvent
+### 进阶：处理 MouseEvent
 
 在复杂的交互中，可能需要处理 `MouseEvent` 对象及其数据传输：
 
@@ -3028,13 +3060,12 @@ var firstParagraph = allParagraphs[0];
 
 function revealCopy(e) {
     e.preventDefault();
-};
+}
 
 newLink.setAttribute("href", "#");
 newLink.setAttribute("class", "more-link");
 newLink.innerHTML = "Read more";
 newLink.addEventListener("click", revealCopy);
-
 for(var i = 0; i < allParagraphs.length; i++) {
     if(i === 0) {
         continue;
@@ -3044,13 +3075,7 @@ for(var i = 0; i < allParagraphs.length; i++) {
 firstParagraph.appendChild(newLink);
 ```
 
-
-
-
-
-The original text is corrupted, so the body cannot be displayed.
-
-
+### 完整切换实现
 
 ```javascript
 var newLink = document.createElement("a");
@@ -3085,6 +3110,9 @@ toggleCopy();
 firstParagraph.appendChild(newLink);
 ```
 
+### IIFE 封装版本
+
+```javascript
 (function() {
   var newLink = document.createElement("a");
   var allParagraphs = document.getElementsByTagName("p");
@@ -3117,12 +3145,11 @@ firstParagraph.appendChild(newLink);
   toggleCopy();
   firstParagraph.appendChild(newLink);
 })();
+```
 
-渐进式增强
+## 渐进式增强
 
-
-
-## 4A7 
+# 可持续能源发展 (4A7)
 
 可持续能源的发展一直是全球各国政府的关注重点。近年来，可再生能源显著增加，特别是太阳能和风能。然而，向完全可持续的能源系统转型面临着许多挑战。主要的障碍之一是可再生能源的间歇性；太阳并非总是照耀，风也并非一直吹。这意味着需要储能解决方案来储存能量，以便在没有时使用。
 
@@ -3140,34 +3167,28 @@ firstParagraph.appendChild(newLink);
 
 ## 资源
 
-国际能源署（IEA）提供了关于全球能源趋势的数据和分析。他们的报告对于任何想要了解当前能源状况的人来说都是非常有价值的资源。政府间气候变化委员会（IPCC）也提供了关于气候变化及其影响的关键信息。他们的发现对于理解向可持续能源转型的迫性至关重要。
+国际能源署（IEA）提供了关于全球能源趋势的数据和分析。他们的报告对于任何想要了解当前能源状况的人来说都是非常有价值的资源。政府间气候变化委员会（IPCC）也提供了关于气候变化及其影响的关键信息。他们的发现对于理解向可持续能源转型的迫切性至关重要。
 
 国际可再生能源机构（IRENA）为向可再生能源转型提供信息和支持。他们的资源对于想要了解该领域最新进展的人很有帮助。世界能源论坛（WEF）还对全球能源问题提供了全面分析。他们的报告对于理解能源格局中的挑战和机遇非常有用。
 
-****
-
-
-
-
+# 数字摄影指南
 
 本书的目的是为数字摄影世界提供一份全面的指南。它专为初学者以及那些希望精进其对技术方面和创作技巧理解的读者设计。本书涵盖了从基础相机设置到高级编辑软件的所有内容。
 
 通过学习这些章节，读者将获得信心来捕捉惊人的图像，并表达他们独特的艺术愿景。我们希望这本书能成为你摄影旅程中一份宝贵的资源。
 
-参考文献
-
-参考文献
+## 参考文献
 
 - Smith, J. (2018). *数字摄影的艺术*. 纽约：Photo Press。
-- Jones, A. (2019). *初学者摄影技术*.伦敦：Creative Media。
-- Brown, R. (2021). *精通你的相机*.东京：Vision Publishing。
-- Davis, L. (2017). *数字后期处理秘密*.巴黎：Design Hub。
-- Wilson, M. (2020). *构图的科学*.柏林：Art Hall。
-- Miller, S. (2016). *光影与色彩*.旧金山：Light House。
-- Taylor, K. (2022). *现代人像摄影*.多伦：Lens & Focus。
-- White, P. (2019). *风景摄影大师*.悉尼：Nature Prints。
+- Jones, A. (2019). *初学者摄影技术*. 伦敦：Creative Media。
+- Brown, R. (2021). *精通你的相机*. 东京：Vision Publishing。
+- Davis, L. (2017). *数字后期处理秘密*. 巴黎：Design Hub。
+- Wilson, M. (2020). *构图的科学*. 柏林：Art Hall。
+- Miller, S. (2016). *光影与色彩*. 旧金山：Light House。
+- Taylor, K. (2022). *现代人像摄影*. 多伦多：Lens & Focus。
+- White, P. (2019). *风景摄影大师*. 悉尼：Nature Prints。
 
-索引
+## 索引
 
 光圈：12, 45, 68
 平衡：22, 34
@@ -3175,7 +3196,7 @@ firstParagraph.appendChild(newLink);
 数字：10, 25, 39, 50, 64
 编辑：18, 31, 47, 59, 75
 曝光：14, 29, 42, 58, 71
-对：11, 27, 43, 61, 74
+对焦：11, 27, 43, 61, 74
 ISO：13, 30, 44, 60, 77
 镜头：17, 32, 48, 56, 73
 布光：16, 33, 46, 57, 79
@@ -3183,73 +3204,64 @@ ISO：13, 30, 44, 60, 77
 快门速度：19, 36, 51, 65, 80
 白平衡：20, 37, 52, 66, 78
 
-## 第1章：相机简介
+## 章节目录
 
+### 第1章：相机简介
 - 相机历史
 - 相机类型（单反 vs 无反）
 - 了解你的相机机身
 
-## 第2章：曝光三角
-
+### 第2章：曝光三角
 - 光圈
 - 快门速度
 - ISO 敏感度
 - 三者如何平衡
 
-## 第3章：对焦技巧
-
+### 第3章：对焦技巧
 - 自动对焦 vs 手动对焦
 - 单点对焦 vs 连续对焦
 - 深度解析
 
-## 第4章：构图规则
-
+### 第4章：构图规则
 - 三分法
 - 引导线
 - 对称与图案
 - 主框架
 
-## 第5章：光光
-
+### 第5章：光光
 - 自然光
 - 人造光
 - 使用反光板和闪光灯
 - 理解黄金时刻
 
-## 第6章：人像摄影
-
+### 第6章：人像摄影
 - 模特造型
 - 选择合适的焦距
 - 捕捉情感
 - 背景选择
 
-## 第7章：后期处理与编辑
-
+### 第7章：后期处理与编辑
 - 编辑软件介绍
 - RAW vs JPEG 文件
 - 基础校正
 - 色彩分级与修图
 
-## 第8章：高级技巧
-
+### 第8章：高级技巧
 - 长曝光
 - 微距摄影
 - 夜景摄影
 - 高动态范围
 
-## 第9章：寻找你自己的风格
-
+### 第9章：寻找你自己的风格
 - 开发视觉语言
 - 通过照片讲述故事
 - 作品集
 
-## 第10章：前方的路
-
+### 第10章：前方的路
 - 在线分享你的作品
 - 职业摄影生涯
 - 持续你的教育
 
-关于作者
+## 关于作者
 
 作者担任职业旅游摄影师已有十五多年。由于他们访问过三十多个国家，其作品曾刊登于众多国际杂志。他们热衷于教他人如何通过镜头观察世界。
-

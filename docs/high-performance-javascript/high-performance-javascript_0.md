@@ -1,3 +1,4 @@
+
 # 高性能 JavaScript
 
 ## 前言
@@ -40,9 +41,6 @@ JavaScript 最初的目标是改善网页的用户体验。对于表单验证这
 
 尽管更新的 JavaScript 引擎让我们得以一窥更快速互联网的未来，但当今的性能经验教训在可预见的未来仍将具有相关性和重要性。
 
-
-
-
 本书所教授的技术和方法涉及 JavaScript 的多个不同方面，包括执行时间、下载、与 DOM 的交互、页面生命周期等。在这些主题中，只有一小部分与核心（ECMAScript）性能相关的内容可能会因 JavaScript 引擎的进步而变得无关紧要，但这种情况尚未发生。
 
 其他主题涉及更快的 JavaScript 引擎无法帮助的领域：DOM 交互、网络延迟、JavaScript 的阻塞和并发下载等。这些主题不仅将继续保持相关性，而且随着底层 JavaScript 执行时间的不断改善，它们将成为进一步关注和研究的领域。
@@ -51,11 +49,11 @@ JavaScript 最初的目标是改善网页的用户体验。对于表单验证这
 
 本书的章节按照正常的 JavaScript 开发生命周期组织。从第 1 章开始，介绍将 JavaScript 加载到页面的最佳方式。第 2 章到第 8 章专注于特定的编程技术，帮助你的 JavaScript 代码尽可能快地运行。第 9 章讨论了构建和部署 JavaScript 文件到生产环境的最佳方式，第 10 章涵盖了性能工具，可以在代码部署后帮助你识别进一步的问题。其中有五章由贡献作者撰写：
 
-*   第 3 章，*DOM 脚本*，作者：Stoyan Stefanov
-*   第 5 章，*字符串与正则表达式*，作者：Steven Levithan
-*   第 7 章，*Ajax*，作者：Ross Harmes
-*   第 9 章，*构建与部署高性能 JavaScript 应用*，作者：Julien Lecomte
-*   第 10 章，*工具*，作者：Matt Sweeney
+- 第 3 章，*DOM 脚本*，作者：Stoyan Stefanov
+- 第 5 章，*字符串与正则表达式*，作者：Steven Levithan
+- 第 7 章，*Ajax*，作者：Ross Harmes
+- 第 9 章，*构建与部署高性能 JavaScript 应用*，作者：Julien Lecomte
+- 第 10 章，*工具*，作者：Matt Sweeney
 
 这些作者都是经验丰富的 Web 开发者，为整个 Web 开发社区做出了重要贡献。他们的名字出现在各自章节的首页，以便更容易识别他们的工作。
 
@@ -113,41 +111,33 @@ JavaScript 中性能问题的一个主要来源是编写不佳的代码，使用
 
 > 表示应替换为用户提供的值或由上下文确定的值的文本。
 
-* * *
+---
 
 ### 提示
 
 此图标表示提示、建议或一般性说明。
 
-* * *
-
-* * *
+---
 
 ### 警告
 
 此图标表示警告或注意。
 
-* * *
+---
 
 ## 使用代码示例
-
-
 
 本书旨在帮助你完成工作。通常情况下，你可以在自己的程序和文档中使用本书中的代码。除非你复制了代码中的大部分内容，否则无需联系我们获取许可。例如，编写一个使用本书中若干代码段的程序无需许可。销售或分发包含 O'Reilly 书籍示例的 CD-ROM 则需要许可。引用本书并引用示例代码来回答问题无需许可。将本书中的大量示例代码整合到你的产品文档中则需要许可。
 
 我们感谢但不强制要求注明出处。出处通常包括书名、作者、出版商和 ISBN。例如：“*《高性能 JavaScript》*，作者 Nicholas C. Zakas。版权所有 2010 Yahoo!, Inc.，978-0-596-80279-0。”
 
-如果你认为你对代码示例的使用超出了合理使用范围或此处授予的权限，请随时通过 *permissions@oreilly.com* 联系我们。
+如果你认为你对代码示例的使用超出了合理使用范围或此处授予的权限，请随时通过 `permissions@oreilly.com` 联系我们。
 
 ## Safari® Books Online
-
-* * *
 
 ### 注意
 
 Safari Books Online 是一个按需数字图书馆，让你能够轻松搜索超过 7,500 本技术和创意参考书籍及视频，快速找到你需要的答案。
-
-* * *
 
 订阅后，你可以在线阅读我们图书馆中的任何页面和观看任何视频。在手机和移动设备上阅读书籍。在新书印刷版上市前抢先阅读，并独家访问开发中的手稿，向作者提供反馈。复制粘贴代码示例、整理收藏、下载章节、标记关键部分、创建笔记、打印页面，并享受众多其他省时功能。
 
@@ -158,6 +148,7 @@ O'Reilly Media 已将本书上传至 Safari Books Online 服务。要获得本�
 请将有关本书的评论和问题发送给出版商：
 
 | O’Reilly Media, Inc. |
+| --- |
 | 1005 Gravenstein Highway North |
 | Sebastopol, CA 95472 |
 | 800-998-9938（美国或加拿大） |
@@ -166,15 +157,15 @@ O'Reilly Media 已将本书上传至 Safari Books Online 服务。要获得本�
 
 我们为本书设立了一个网页，其中列出了勘误、示例和任何附加信息。你可以通过以下地址访问该页面：
 
-| [`www.oreilly.com/catalog/9780596802790`](http://www.oreilly.com/catalog/9780596802790) |
+[`www.oreilly.com/catalog/9780596802790`](http://www.oreilly.com/catalog/9780596802790)
 
 如需对本书发表评论或提出技术问题，请发送电子邮件至：
 
-| bookquestions@oreilly.com |
+`bookquestions@oreilly.com`
 
 有关我们的书籍、会议、资源中心和 O'Reilly 网络的更多信息，请访问我们的网站：
 
-| [`www.oreilly.com`](http://www.oreilly.com) |
+[`www.oreilly.com`](http://www.oreilly.com)
 
 ## 致谢
 
@@ -186,13 +177,13 @@ O'Reilly Media 已将本书上传至 Safari Books Online 服务。要获得本�
 
 还要感谢 O'Reilly 和 Yahoo! 的每一位让本书得以问世的人。自 2006 年加入 Yahoo! 以来，我一直想为 Yahoo! 写一本书，而 Yahoo! Press 是实现这一目标的绝佳途径。
 
-## 第 1 章 加载与执行
+# 第 1 章 加载与执行
 
 浏览器中的 JavaScript 性能可以说是开发者面临的最重要的可用性问题。由于 JavaScript 的阻塞特性，即执行 JavaScript 代码时其他任何事情都无法进行，这个问题变得复杂。事实上，大多数浏览器使用单个进程来处理用户界面（UI）更新和 JavaScript 执行，因此在任何给定时刻只能进行其中一项操作。JavaScript 执行时间越长，浏览器能够响应用户输入的时间就越长。
 
 从基本层面来看，这意味着 `<script>` 标签的存在本身就足以让页面等待脚本被解析和执行。无论实际的 JavaScript 代码是内联在标签中还是包含在外部文件中，页面下载和渲染都必须停止并等待脚本完成才能继续。这是页面生命周期中必要的一部分，因为脚本在执行时可能会引起页面变化。典型的例子是在页面中间使用 `document.write()`（常用于广告）。例如：
 
-```
+```html
 <html>
 <head>
    <title>脚本示例</title>
@@ -209,19 +200,17 @@ O'Reilly Media 已将本书上传至 Safari Books Online 服务。要获得本�
 
 当浏览器遇到像这个 HTML 页面中的 `<script>` 标签时，无法知道 JavaScript 是否会向 `<p>` 中插入内容、引入额外元素，甚至可能关闭标签。因此，浏览器会在页面加载时停止处理，执行 JavaScript 代码，然后继续解析和渲染页面。对于使用 `src` 属性加载的 JavaScript 也是如此：浏览器必须首先从外部文件下载代码（这需要时间），然后解析并执行代码。在此期间，页面渲染和用户交互完全被阻塞。
 
-* * *
-
 ### 注意
 
 关于 JavaScript 影响页面下载性能的两个主要信息来源是 Yahoo! 卓越性能团队（[`developer.yahoo.com/performance/`](http://developer.yahoo.com/performance/)）和 Steve Souders，他是《*[高性能网站建设指南](http://oreilly.com/catalog/9780596529307/)*》（O'Reilly）和《*[更高效网站](http://oreilly.com/catalog/9780596522315/)*》（O'Reilly）的作者。本章深受他们共同研究的影响。
 
-* * *
-
 ## 脚本放置
+
+
 
 HTML 4 规范指出，`<script>` 标签可以放置在 HTML 文档的 `<head>` 或 `<body>` 标签内，并且可以在每个标签内出现任意次数。传统上，用于加载外部 JavaScript 文件的 `<script>` 标签会出现在 `<head>` 中，同时还有用于加载外部 CSS 文件的 `<link>` 标签以及其他关于页面的元信息。其理论是，最好将尽可能多的样式和行为依赖放在一起，先加载它们，这样页面就能以正确的外观和行为呈现。例如：
 
-```
+```html
 <html>
 <head>
    <title>脚本示例</title>
@@ -237,10 +226,9 @@ HTML 4 规范指出，`<script>` 标签可以放置在 HTML 文档的 `<head>` �
 </html>
 ```
 
+虽然这段代码看起来无害，但实际上存在严重的性能问题：`<head>` 中加载了三个 JavaScript 文件。由于每个 `<script>` 标签都会阻塞页面继续渲染，直到该脚本完全下载并执行完毕，因此页面的感知性能会受到影响。请记住，浏览器在遇到开头的 `<body>` 标签之前，不会开始渲染页面上的任何内容。以这种方式将脚本放在页面顶部通常会导致明显的延迟，通常表现为空白页面，用户甚至无法开始阅读或与页面交互。
 
-
-
-虽然这段代码看起来无害，但实际上存在严重的性能问题：`<head>` 中加载了三个 JavaScript 文件。由于每个 `<script>` 标签都会阻塞页面继续渲染，直到该脚本完全下载并执行完毕，因此页面的感知性能会受到影响。请记住，浏览器在遇到开头的 `<body>` 标签之前，不会开始渲染页面上的任何内容。以这种方式将脚本放在页面顶部通常会导致明显的延迟，通常表现为空白页面，用户甚至无法开始阅读或与页面交互。为了深入理解这一过程，查看显示每个资源下载时间的水 fall 图会很有帮助。图 1-1 展示了页面加载时每个脚本和样式表文件的下载情况。
+为了深入理解这一过程，查看显示每个资源下载时间的 waterfall 图会很有帮助。图 1-1 展示了页面加载时每个脚本和样式表文件的下载情况。
 
 图 1-1. JavaScript 代码执行会阻塞其他文件下载
 
@@ -250,7 +238,7 @@ Internet Explorer 8、Firefox 3.5、Safari 4 和 Chrome 2 都允许并行下载 
 
 由于脚本会阻塞页面上所有资源类型的下载，建议将所有 `<script>` 标签尽可能靠近 `<body>` 标签的底部放置，以免影响整个页面的下载。例如：
 
-```
+```html
 <html>
 <head>
    <title>脚本示例</title>
@@ -273,13 +261,9 @@ Internet Explorer 8、Firefox 3.5、Safari 4 和 Chrome 2 都允许并行下载 
 
 由于每个 `<script>` 标签在初始下载期间会阻塞页面渲染，因此限制页面中包含的 `<script>` 标签总数是有帮助的。这既适用于内联脚本，也适用于外部文件中的脚本。每次在解析 HTML 页面时遇到 `<script>` 标签，都会在执行代码时产生延迟；最小化这些延迟可以提高页面的整体性能。
 
-* * *
-
 ### 注意
 
 Steve Souders 还发现，将内联脚本放在引用外部样式表的 `<link>` 标签之后，会导致浏览器在等待样式表下载时阻塞。这样做是为了确保内联脚本能够获得最准确的样式信息。Souders 建议因此永远不要将内联脚本放在 `<link>` 标签之后。
-
-* * *
 
 处理外部 JavaScript 文件时，问题略有不同。每个 HTTP 请求都会带来额外的性能开销，因此下载一个 100 KB 的文件比下载四个 25 KB 的文件更快。为此，限制页面引用的外部脚本文件数量是有帮助的。
 
@@ -289,7 +273,7 @@ Yahoo! 创建了 combo handler，用于通过其内容分发网络（CDN）分�
 
 该 URL 加载了 `yahoo-min.js` 和 `event-min.js` 文件的 2.7.0 版本。这些文件在服务器上单独存在，但在请求此 URL 时会被合并。无需使用两个 `<script>` 标签（每个加载一个文件），可以使用单个 `<script>` 标签加载两者：
 
-```
+```html
 <html>
 <head>
    <title>脚本示例</title>
@@ -316,13 +300,9 @@ JavaScript 倾向于阻塞浏览器进程（包括 HTTP 请求和 UI 更新）�
 
 ### 延迟脚本
 
-
-
-
-
 HTML 4 为 `<script>` 标签定义了一个名为 `defer` 的额外属性。`defer` 属性表示元素中包含的脚本不会修改 DOM，因此可以安全地延迟执行，直到稍后的时间点。`defer` 属性仅在 Internet Explorer 4+ 和 Firefox 3.5+ 中得到支持，这使得它不太适合通用的跨浏览器解决方案。在其他浏览器中，`defer` 属性会被直接忽略，因此 `<script>` 标签会按默认（阻塞）方式处理。不过，如果你的目标浏览器支持它，这个解决方案仍然有用。以下是一个示例用法：
 
-```
+```html
 <script type="text/javascript" src="file1.js" defer></script>
 ```
 
@@ -330,7 +310,7 @@ HTML 4 为 `<script>` 标签定义了一个名为 `defer` 的额外属性。`def
 
 任何标记了 `defer` 的 `<script>` 元素都不会执行，直到 DOM 完全加载完成；这一点对内联脚本和外部脚本文件都适用。以下简单页面演示了 `defer` 属性如何改变脚本的行为：
 
-```
+```html
 <html>
 <head>
     <title>脚本延迟示例</title>
@@ -351,7 +331,7 @@ HTML 4 为 `<script>` 标签定义了一个名为 `defer` 的额外属性。`def
 </html>
 ```
 
-这段代码在页面处理过程中会显示三个警告框。在不支持 `defer` 的浏览器中，警告框的顺序是 *“defer”*、*“script”* 和 *“load”*。在支持 `defer` 的浏览器中，警告框的顺序是 *“script”*、*“defer”* 和 *“load”*。请注意，延迟的 `<script>` 元素直到第二个脚本之后才执行，但在 `onload` 事件处理程序被调用之前执行。
+这段代码在页面处理过程中会显示三个警告框。在不支持 `defer` 的浏览器中，警告框的顺序是“defer”、“script”和“load”。在支持 `defer` 的浏览器中，警告框的顺序是“script”、“defer”和“load”。请注意，延迟的 `<script>` 元素直到第二个脚本之后才执行，但在 `onload` 事件处理程序被调用之前执行。
 
 如果你的目标浏览器只包括 Internet Explorer 和 Firefox 3.5，那么以这种方式延迟脚本会很有帮助。如果你需要支持更广泛的浏览器，还有其他更一致的解决方案。
 
@@ -359,7 +339,7 @@ HTML 4 为 `<script>` 标签定义了一个名为 `defer` 的额外属性。`def
 
 文档对象模型（DOM）允许你使用 JavaScript 动态创建 HTML 文档的几乎任何部分。从根本上说，`<script>` 元素与页面上的其他元素并无不同：可以通过 DOM 获取引用，可以移动、从文档中删除，甚至创建。使用标准的 DOM 方法可以非常容易地创建一个新的 `<script>` 元素：
 
-```
+```javascript
 var script = document.createElement("script");
 script.type = "text/javascript";
 script.src = "file1.js";
@@ -368,19 +348,15 @@ document.getElementsByTagName("head")[0].appendChild(script);
 
 这个新的 `<script>` 元素会加载源文件 `file1.js`。一旦元素被添加到页面，文件就会开始下载。这项技术的重要之处在于，无论下载从何处发起，文件都会在不阻塞其他页面进程的情况下下载并执行。你甚至可以将这段代码放在文档的 `<head>` 中，而不会影响页面的其余部分（除了用于下载文件的一个 HTTP 连接）。
 
-* * *
-
 ### 注意
 
 通常，将新的 `<script>` 节点添加到 `<head>` 元素比添加到 `<body>` 更安全，尤其是在页面加载期间执行这段代码时。如果 `<body>` 的内容尚未完全加载，Internet Explorer 可能会遇到“操作已中止”错误。^([1])
-
-* * *
 
 当使用动态脚本节点下载文件时，检索到的代码通常会立即执行（Firefox 和 Opera 除外，它们会等待之前的动态脚本节点执行完毕）。当脚本是自执行时，这很有效，但如果代码只包含供页面上其他脚本使用的接口，则可能会出现问题。在这种情况下，你需要跟踪代码何时完全下载并准备好使用。这可以通过动态 `<script>` 节点触发的事件来实现。
 
 Firefox、Opera、Chrome 和 Safari 3+ 在 `<script>` 元素的 `src` 被检索到时都会触发一个 `load` 事件。因此，你可以通过监听此事件来获知脚本何时准备就绪：
 
-```
+```javascript
 var script = document.createElement("script")
 script.type = "text/javascript";
 
@@ -417,7 +393,7 @@ Internet Explorer 支持另一种实现，它会触发 `readystatechange` 事件
 
 微软关于 `readyState` 及其每个可能值的文档似乎表明，并非所有状态都会在 `<script>` 元素的生命周期中使用，但没有说明哪些状态会被始终使用。在实践中，最受关注的两个状态是 `"loaded"` 和 `"complete"`。Internet Explorer 在这两个 `readyState` 值中哪个表示最终状态上并不一致，因为有时 `<script>` 元素会达到 `"loaded"` 状态但从未达到 `"complete"`，而其他时候则会达到 `"complete"` 而从未使用过 `"loaded"`。使用 `readystatechange` 事件最安全的方法是检查这两个状态，并在任一状态发生时移除事件处理程序（以确保事件不会被处理两次）：
 
-```
+```javascript
 var script = document.createElement("script")
 script.type = "text/javascript";
 
@@ -435,7 +411,7 @@ document.getElementsByTagName("head")[0].appendChild(script);
 
 在大多数情况下，你会希望使用单一的方法来动态加载 JavaScript 文件。以下函数封装了标准功能和 IE 特有的功能：
 
-```
+```javascript
 function loadScript(url, callback){
 
     var script = document.createElement("script")
@@ -461,7 +437,7 @@ function loadScript(url, callback){
 
 这个函数接受两个参数：要检索的 JavaScript 文件的 URL，以及 JavaScript 完全加载后要执行的回调函数。使用特性检测来确定哪个事件处理程序应该监控脚本的进度。最后一步是分配 `src` 属性并将 `<script>` 元素添加到页面。`loadScript()` 函数的使用方式如下：
 
-```
+```javascript
 loadScript("file1.js", function(){
     alert("文件已加载！");
 });
@@ -469,10 +445,9 @@ loadScript("file1.js", function(){
 
 
 
-
 你可以在一个页面上动态加载任意数量的 JavaScript 文件，但必须确保考虑文件加载的顺序。在所有主流浏览器中，只有 Firefox 和 Opera 能保证脚本的执行顺序与你指定的顺序一致。其他浏览器会按照从服务器返回的顺序下载并执行各个代码文件。你可以通过链式下载来保证顺序，例如：
 
-```
+```javascript
 loadScript("file1.js", function(){
     loadScript("file2.js", function(){
         loadScript("file3.js", function(){
@@ -482,7 +457,7 @@ loadScript("file1.js", function(){
 });
 ```
 
-这段代码会等待 `file1.js` 可用后再开始加载 `file2.js`，并等待 `file2.js` 可用后再下载 `file3.js`。虽然可行，但如果需要下载并执行多个文件，这种方法会变得有些难以管理。
+这段代码会等待`file1.js`可用后再开始加载`file2.js`，并等待`file2.js`可用后再下载`file3.js`。虽然可行，但如果需要下载并执行多个文件，这种方法会变得有些难以管理。
 
 如果多个文件的顺序很重要，推荐的做法是将这些文件合并成一个文件，其中每个部分按正确顺序排列。然后下载这个单一文件，一次性获取所有代码（由于这是异步进行的，文件更大并不会带来额外惩罚）。
 
@@ -490,9 +465,9 @@ loadScript("file1.js", function(){
 
 ### XMLHttpRequest 脚本注入
 
-另一种非阻塞脚本的方法是使用 `XMLHttpRequest`（XHR）对象获取 JavaScript 代码，然后将脚本注入页面。该技术包括创建一个 XHR 对象，下载 JavaScript 文件，然后通过动态 `<script>` 元素将 JavaScript 代码注入页面。以下是一个简单示例：
+另一种非阻塞脚本的方法是使用`XMLHttpRequest`（XHR）对象获取 JavaScript 代码，然后将脚本注入页面。该技术包括创建一个 XHR 对象，下载 JavaScript 文件，然后通过动态`<script>`元素将 JavaScript 代码注入页面。以下是一个简单示例：
 
-```
+```javascript
 var xhr = new XMLHttpRequest();
 xhr.open("get", "file1.js", true);
 xhr.onreadystatechange = function(){
@@ -509,17 +484,17 @@ xhr.onreadystatechange = function(){
 xhr.send(null);
 ```
 
-这段代码向文件 `file1.js` 发送一个 `GET` 请求。`onreadystatechange` 事件处理程序检查 `readyState` 是否为 4，然后验证 HTTP 状态码是否有效（200 范围内的任何值表示有效响应，304 表示缓存响应）。如果收到有效响应，则创建一个新的 `<script>` 元素，并将其 `text` 属性设置为从服务器接收到的 `responseText`。这样做实际上创建了一个包含内联代码的 `<script>` 元素。一旦新的 `<script>` 元素被添加到文档中，代码就会执行并可供使用。
+这段代码向文件`file1.js`发送一个`GET`请求。`onreadystatechange`事件处理程序检查`readyState`是否为 4，然后验证 HTTP 状态码是否有效（200 范围内的任何值表示有效响应，304 表示缓存响应）。如果收到有效响应，则创建一个新的`<script>`元素，并将其`text`属性设置为从服务器接收到的`responseText`。这样做实际上创建了一个包含内联代码的`<script>`元素。一旦新的`<script>`元素被添加到文档中，代码就会执行并可供使用。
 
-这种方法的主要优点是你可以下载 JavaScript 代码而不立即执行它。由于代码是在 `<script>` 标签之外返回的，它不会在下载时自动执行，从而允许你推迟执行直到准备就绪。另一个优点是相同的代码在所有现代浏览器中都能工作，没有例外情况。
+这种方法的主要优点是你可以下载 JavaScript 代码而不立即执行它。由于代码是在`<script>`标签之外返回的，它不会在下载时自动执行，从而允许你推迟执行直到准备就绪。另一个优点是相同的代码在所有现代浏览器中都能工作，没有例外情况。
 
 这种方法的主要限制是 JavaScript 文件必须与请求它的页面位于同一域中，这使得无法从 CDN 下载。因此，XHR 脚本注入通常不用于大型 Web 应用程序。
 
 ### 推荐的非阻塞模式
 
-向页面加载大量 JavaScript 的推荐方法是两步过程：首先，包含动态加载 JavaScript 所需的代码，然后加载页面初始化所需的其他 JavaScript 代码。由于第一部分代码尽可能小，可能只包含 `loadScript()` 函数，它下载和执行速度很快，因此不会对页面造成太多干扰。一旦初始代码就位，就使用它来加载剩余的 JavaScript。例如：
+向页面加载大量 JavaScript 的推荐方法是两步过程：首先，包含动态加载 JavaScript 所需的代码，然后加载页面初始化所需的其他 JavaScript 代码。由于第一部分代码尽可能小，可能只包含`loadScript()`函数，它下载和执行速度很快，因此不会对页面造成太多干扰。一旦初始代码就位，就使用它来加载剩余的 JavaScript。例如：
 
-```
+```html
 <script type="text/javascript" src="loader.js"></script>
 <script type="text/javascript">
     loadScript("the-rest.js", function(){
@@ -528,11 +503,11 @@ xhr.send(null);
 </script>
 ```
 
-将此加载代码放在结束的 `</body>` 标签之前。这样做有几个好处。首先，如前所述，这确保了 JavaScript 执行不会阻止页面其余部分的显示。其次，当第二个 JavaScript 文件下载完成时，应用程序所需的所有 DOM 都已创建并准备好进行交互，从而无需检查另一个事件（如 `window.onload`）来知道页面何时准备好进行初始化。
+将此加载代码放在结束的`</body>`标签之前。这样做有几个好处。首先，如前所述，这确保了 JavaScript 执行不会阻止页面其余部分的显示。其次，当第二个 JavaScript 文件下载完成时，应用程序所需的所有 DOM 都已创建并准备好进行交互，从而无需检查另一个事件（如`window.onload`）来知道页面何时准备好进行初始化。
 
-另一种选择是将 `loadScript()` 函数直接嵌入页面，从而避免额外的 HTTP 请求。例如：
+另一种选择是将`loadScript()`函数直接嵌入页面，从而避免额外的 HTTP 请求。例如：
 
-```
+```html
 <script type="text/javascript">
     function loadScript(url, callback){
 
@@ -565,32 +540,32 @@ xhr.send(null);
 
 如果你决定采用后一种方法，建议使用诸如 YUI Compressor（参见第 9 章）之类的工具来压缩初始脚本，以最小化对页面的字节大小影响。
 
-一旦页面初始化的代码完全下载完毕，你就可以继续使用 `loadScript()` 根据需要加载额外的功能到页面中。
+一旦页面初始化的代码完全下载完毕，你就可以继续使用`loadScript()`根据需要加载额外的功能到页面中。
 
 #### YUI 3 方法
 
 页面上少量初始代码随后下载额外功能的概念是 YUI 3 设计的核心。要在你的页面上使用 YUI 3，首先包含 YUI 种子文件：
 
-```
+```html
 <script type="text/javascript"
 src="http://yui.yahooapis.com/combo?3.0.0/build/yui/yui-min.js"></script>
 ```
 
-种子文件大约 10 KB（gzip 后 6 KB），包含足够的功能来从 Yahoo! CDN 下载任何其他 YUI 组件。例如，如果你想使用 DOM 工具，你可以使用 YUI 的 `use()` 方法指定其名称（`"dom"`），然后提供一个回调函数，该函数在代码准备好时执行：
+种子文件大约 10 KB（gzip 后 6 KB），包含足够的功能来从 Yahoo! CDN 下载任何其他 YUI 组件。例如，如果你想使用 DOM 工具，你可以使用 YUI 的`use()`方法指定其名称（`"dom"`），然后提供一个回调函数，该函数在代码准备好时执行：
 
-```
+```javascript
 YUI().use("dom", function(Y){
     Y.DOM.addClass(docment.body, "loaded");
 });
 ```
 
-此示例创建一个新的 `YUI` 对象实例，然后调用 `use()` 方法。种子文件包含所有关于文件名和依赖关系的信息，因此指定 `"dom"` 实际上会构建一个包含所有正确依赖文件的组合处理程序 URL，并创建一个动态脚本元素来下载和执行这些文件。当所有代码可用时，回调方法被调用，并将 `YUI` 实例作为参数传入，允许你立即开始使用新下载的功能。
+此示例创建一个新的`YUI`对象实例，然后调用`use()`方法。种子文件包含所有关于文件名和依赖关系的信息，因此指定`"dom"`实际上会构建一个包含所有正确依赖文件的组合处理程序 URL，并创建一个动态脚本元素来下载和执行这些文件。当所有代码可用时，回调方法被调用，并将`YUI`实例作为参数传入，允许你立即开始使用新下载的功能。
 
 #### LazyLoad 库
 
-作为一个更通用的工具，Yahoo! Search 的 Ryan Grove 创建了 LazyLoad 库（可在 [`http://github.com/rgrove/lazyload/`](http://github.com/rgrove/lazyload/) 获取）。LazyLoad 是 `loadScript()` 函数的一个更强大的版本。压缩后，LazyLoad 文件大约 1.5 KB（压缩后，未 gzip）。示例用法：
+作为一个更通用的工具，Yahoo! Search 的 Ryan Grove 创建了 LazyLoad 库（可在[`http://github.com/rgrove/lazyload/`](http://github.com/rgrove/lazyload/)获取）。LazyLoad 是`loadScript()`函数的一个更强大的版本。压缩后，LazyLoad 文件大约 1.5 KB（压缩后，未 gzip）。示例用法：
 
-```
+```html
 <script type="text/javascript" src="lazyload-min.js"></script>
 <script type="text/javascript">
     LazyLoad.js("the-rest.js", function(){
@@ -599,11 +574,9 @@ YUI().use("dom", function(Y){
 </script>
 ```
 
+LazyLoad 还能下载多个 JavaScript 文件，并确保它们在所有浏览器中以正确的顺序执行。要加载多个 JavaScript 文件，只需向`LazyLoad.js()`方法传递一个 URL 数组：
 
-
-LazyLoad 还能下载多个 JavaScript 文件，并确保它们在所有浏览器中以正确的顺序执行。要加载多个 JavaScript 文件，只需向 `LazyLoad.js()` 方法传递一个 URL 数组：
-
-```
+```html
 <script type="text/javascript" src="lazyload-min.js"></script>
 <script type="text/javascript">
     LazyLoad.js(["first-file.js", "the-rest.js"], function(){
@@ -614,19 +587,15 @@ LazyLoad 还能下载多个 JavaScript 文件，并确保它们在所有浏览�
 
 尽管这些文件是通过动态脚本加载以非阻塞方式下载的，但仍建议尽可能减少文件数量。每次下载仍然是一个独立的 HTTP 请求，并且回调函数只有在所有文件下载并执行完毕后才会被调用。
 
-* * *
-
 ### 注意
 
 LazyLoad 还能动态加载 CSS 文件。这通常不是什么大问题，因为 CSS 文件的下载总是并行进行的，并且不会阻塞其他页面活动。
-
-* * *
 
 ### LABjs 库
 
 另一种非阻塞 JavaScript 加载方案是 LABjs（[`labjs.com/`](http://labjs.com/)），这是一个由 Kyle Simpson 编写、Steve Souders 提供建议的开源库。该库提供了对加载过程更精细的控制，并尽可能多地并行下载代码。LABjs 也非常小巧，仅 4.5 KB（压缩后，未 gzip），因此对页面体积影响很小。使用示例：
 
-```
+```html
 <script type="text/javascript" src="lab.js"></script>
 <script type="text/javascript">
     $LAB.script("the-rest.js")
@@ -636,9 +605,9 @@ LazyLoad 还能动态加载 CSS 文件。这通常不是什么大问题，因为
 </script>
 ```
 
-`$LAB.script()` 方法用于定义要下载的 JavaScript 文件，而 `$LAB.wait()` 用于指示执行应等待文件下载并执行完毕后，再运行给定的函数。LABjs 鼓励链式调用，因此每个方法都返回对 `$LAB` 对象的引用。要下载多个 JavaScript 文件，只需链式调用另一个 `$LAB.script()`：
+`$LAB.script()`方法用于定义要下载的 JavaScript 文件，而`$LAB.wait()`用于指示执行应等待文件下载并执行完毕后，再运行给定的函数。LABjs 鼓励链式调用，因此每个方法都返回对`$LAB`对象的引用。要下载多个 JavaScript 文件，只需链式调用另一个`$LAB.script()`：
 
-```
+```html
 <script type="text/javascript" src="lab.js"></script>
 <script type="text/javascript">
     $LAB.script("first-file.js")
@@ -649,11 +618,11 @@ LazyLoad 还能动态加载 CSS 文件。这通常不是什么大问题，因为
 </script>
 ```
 
-LABjs 的独特之处在于其管理依赖关系的能力。使用 `<script>` 标签的正常包含方式意味着每个文件（如前所述，要么顺序下载，要么并行下载）然后按顺序执行。在某些情况下这确实是必要的，但在其他情况下则不然。
+LABjs 的独特之处在于其管理依赖关系的能力。使用`<script>`标签的正常包含方式意味着每个文件（如前所述，要么顺序下载，要么并行下载）然后按顺序执行。在某些情况下这确实是必要的，但在其他情况下则不然。
 
-LABjs 允许你通过 `wait()` 指定哪些文件应等待其他文件。在前面的示例中，`first-file.js` 中的代码并不保证在 `the-rest.js` 中的代码之前执行。要确保这一点，你必须在第一个 `script()` 之后添加一个 `wait()` 调用：
+LABjs 允许你通过`wait()`指定哪些文件应等待其他文件。在前面的示例中，`first-file.js`中的代码并不保证在`the-rest.js`中的代码之前执行。要确保这一点，你必须在第一个`script()`之后添加一个`wait()`调用：
 
-```
+```html
 <script type="text/javascript" src="lab.js"></script>
 <script type="text/javascript">
     $LAB.script("first-file.js").wait()
@@ -664,62 +633,56 @@ LABjs 允许你通过 `wait()` 指定哪些文件应等待其他文件。在前�
 </script>
 ```
 
-现在，`first-file.js` 中的代码保证在 `the-rest.js` 中的代码之前执行，尽管文件的内容是并行下载的。
+现在，`first-file.js`中的代码保证在`the-rest.js`中的代码之前执行，尽管文件的内容是并行下载的。
 
 ## 总结
 
-在浏览器中管理 JavaScript 很棘手，因为代码执行会阻塞其他浏览器进程，例如 UI 绘制。每当遇到 `<script>` 标签时，页面必须停下来等待代码下载（如果是外部文件）并执行，然后才能继续处理页面的其余部分。不过，有几种方法可以最大限度地减少 JavaScript 对性能的影响：
+在浏览器中管理 JavaScript 很棘手，因为代码执行会阻塞其他浏览器进程，例如 UI 绘制。每当遇到`<script>`标签时，页面必须停下来等待代码下载（如果是外部文件）并执行，然后才能继续处理页面的其余部分。不过，有几种方法可以最大限度地减少 JavaScript 对性能的影响：
 
-*   将所有 `<script>` 标签放在页面底部，紧挨着结束的 `</body>` 标签之前。这可以确保在脚本开始执行之前，页面几乎可以完全渲染完毕。
-
-*   将脚本分组。页面上的 `<script>` 标签越少，页面加载和变得可交互的速度就越快。这既适用于加载外部 JavaScript 文件的 `<script>` 标签，也适用于包含内联代码的标签。
-
-*   有几种方法可以以非阻塞方式下载 JavaScript：
-
-    *   使用 `<script>` 标签的 `defer` 属性（仅限 Internet Explorer 和 Firefox 3.5+）
-
-    *   动态创建 `<script>` 元素来下载并执行代码
-
-    *   使用 `XHR` 对象下载 JavaScript 代码，然后将代码注入页面
+- 将所有`<script>`标签放在页面底部，紧挨着结束的`</body>`标签之前。这可以确保在脚本开始执行之前，页面几乎可以完全渲染完毕。
+- 将脚本分组。页面上的`<script>`标签越少，页面加载和变得可交互的速度就越快。这既适用于加载外部 JavaScript 文件的`<script>`标签，也适用于包含内联代码的标签。
+- 有几种方法可以以非阻塞方式下载 JavaScript：
+  - 使用`<script>`标签的`defer`属性（仅限 Internet Explorer 和 Firefox 3.5+）。
+  - 动态创建`<script>`元素来下载并执行代码。
+  - 使用`XHR`对象下载 JavaScript 代码，然后将代码注入页面。
 
 通过使用这些策略，你可以极大地改善需要大量 JavaScript 代码的 Web 应用程序的感知性能。
 
-^([1]) 有关此问题的更深入讨论，请参见“可怕的操作中止错误”，网址为 [`www.nczonline.net/blog/2008/03/17/the-dreaded-operation-aborted-error/`](http://www.nczonline.net/blog/2008/03/17/the-dreaded-operation-aborted-error/)。
+^([1]) 有关此问题的更深入讨论，请参见“可怕的操作中止错误”，网址为[`www.nczonline.net/blog/2008/03/17/the-dreaded-operation-aborted-error/`](http://www.nczonline.net/blog/2008/03/17/the-dreaded-operation-aborted-error/)。
 
 ## 第 2 章 数据访问
 
 经典的计算机科学问题之一是确定数据应存储在何处以实现最佳读写。数据存储的位置与代码执行期间检索数据的速度有关。由于数据存储的选项较少，这个问题在 JavaScript 中有所简化。不过，与其他语言类似，数据存储的位置会极大地影响后续访问数据的速度。在 JavaScript 中，数据可以从四个基本位置访问：
 
-字面量值
+### 字面量值
 
-> 任何仅表示自身且不存储在特定位置的值。JavaScript 可以将字符串、数字、布尔值、对象、数组、函数、正则表达式以及特殊值 `null` 和 `undefined` 表示为字面量。
+> 任何仅表示自身且不存储在特定位置的值。JavaScript 可以将字符串、数字、布尔值、对象、数组、函数、正则表达式以及特殊值`null`和`undefined`表示为字面量。
 
-变量
+### 变量
 
-> 任何开发者定义的、用于存储数据的位置，通过 `var` 关键字创建。
+> 任何开发者定义的、用于存储数据的位置，通过`var`关键字创建。
 
-数组项
+### 数组项
 
-> JavaScript `Array` 对象中按数字索引的位置。
+> JavaScript `Array`对象中按数字索引的位置。
 
-对象成员
+### 对象成员
 
 > JavaScript 对象中按字符串索引的位置。
 
 这些数据存储位置中的每一个都与涉及数据的读写操作有特定的成本。在大多数情况下，从字面量值访问信息与从局部变量访问信息之间的性能差异微乎其微。从数组项和对象成员访问信息的成本更高，但究竟哪个更昂贵在很大程度上取决于浏览器。图 2-1 显示了在各种浏览器中从这四个位置分别读取 200,000 个值的相对速度。
 
-![从不同数据位置读取 200,000 次所需时间](img/00006.gif)  
+![从不同数据位置读取 200,000 次所需时间](img/00006.gif)
+
 图 2-1. 从不同数据位置读取 200,000 次所需时间
 
 使用更传统 JavaScript 引擎的旧版浏览器（如 Firefox 3、Internet Explorer 和 Safari 3.2）在访问值时花费的时间远多于使用优化 JavaScript 引擎的浏览器。然而，总体趋势在所有浏览器中保持一致：字面量值和局部变量的访问速度通常快于数组项和对象成员的访问速度。唯一的例外是 Firefox 3，它优化了数组项访问，使其速度更快。即便如此，一般建议是尽可能使用字面量值和局部变量，并在关注执行速度时限制对数组项和对象成员的使用。为此，你需要在代码中寻找、避免并优化几种模式。
 
 ### 管理作用域
 
-作用域的概念对于理解 JavaScript 不仅是从性能角度，而且是从功能角度都至关重要。作用域在 JavaScript 中有许多影响，从确定函数可以访问哪些变量到分配 `this` 的值。在处理 JavaScript 作用域时也存在性能方面的考虑，但要理解速度与作用域的关系，有必要确切了解作用域的工作原理。
+作用域的概念对于理解 JavaScript 不仅是从性能角度，而且是从功能角度都至关重要。作用域在 JavaScript 中有许多影响，从确定函数可以访问哪些变量到分配`this`的值。在处理 JavaScript 作用域时也存在性能方面的考虑，但要理解速度与作用域的关系，有必要确切了解作用域的工作原理。
 
 #### 作用域链与标识符解析
-
-
 
 
 
@@ -736,7 +699,9 @@ function add(num1, num2){
 
 当 `add()` 函数被创建时，其作用域链被填充了一个变量对象：表示所有全局定义的变量的全局对象。这个全局对象包含 `window`、`navigator` 和 `document` 等条目，仅举几例。图 2-2 展示了这种关系（注意，该图中的全局对象仅显示少数全局变量作为示例；实际上还有很多其他变量）。
 
-![add() 函数的作用域链](img/00016.jpeg)图 2-2. add() 函数的作用域链
+![add() 函数的作用域链](img/00016.jpeg)
+
+图 2-2. `add()` 函数的作用域链
 
 `add` 函数的作用域链随后在函数执行时被使用。假设执行以下代码：
 
@@ -748,23 +713,27 @@ var total = add(5, 10);
 
 执行上下文拥有自己的作用域链，用于标识符解析。当执行上下文被创建时，其作用域链被初始化为包含正在执行的函数的 `[[Scope]]` 属性中的对象。这些值按照它们在函数中出现的顺序被复制到执行上下文的作用域链中。完成后，会为执行上下文创建一个称为*活动对象*的新对象。活动对象充当本次执行的变量对象，包含所有局部变量、命名参数、`arguments` 集合以及 `this` 的条目。然后该对象被推送到作用域链的前端。当执行上下文被销毁时，活动对象也随之销毁。图 2-3 展示了前面示例代码的执行上下文及其作用域链。
 
-![执行 add() 时的作用域链](img/00026.jpeg)图 2-3. 执行 add() 时的作用域链
+![执行 add() 时的作用域链](img/00026.jpeg)
+
+图 2-3. 执行 `add()` 时的作用域链
 
 每次在函数执行过程中遇到变量时，都会进行标识符解析过程，以确定在哪里检索或存储数据。在此过程中，会在执行上下文的作用域链中搜索具有相同名称的标识符。搜索从作用域链的前端开始，即执行函数的活动对象。如果找到，则使用具有指定标识符的变量；如果未找到，则继续搜索作用域链中的下一个对象。此过程持续进行，直到找到标识符或没有更多变量对象可搜索为止，在后一种情况下，该标识符被视为未声明。对于函数执行过程中遇到的每个标识符，都采用相同的方法，因此在之前的示例中，会对 `sum`、`num1` 和 `num2` 进行此操作。正是这个搜索过程影响了性能。
-
-* * *
 
 ### 注意
 
 请注意，两个同名的变量可能存在于作用域链的不同部分。在这种情况下，标识符会绑定到作用域链遍历中首先找到的变量，并且第一个变量被称为*遮蔽*了第二个变量。
 
-* * *
-
 ### 标识符解析性能
 
 标识符解析并非没有代价，事实上没有任何计算机操作是完全不带性能开销的。标识符在执行上下文作用域链中的位置越深，读取和写入的访问速度就越慢。因此，局部变量在函数内部总是访问最快的，而全局变量通常是最慢的（优化型 JavaScript 引擎能够在某些情况下对此进行调整）。请记住，全局变量始终存在于执行上下文作用域链的最后一个变量对象中，因此它们总是最远的解析目标。图 2-4 和 2-5 显示了基于作用域链深度的标识符解析速度。深度 1 表示局部变量。
 
-![写操作的标识符解析](img/00037.gif)图 2-4. 写操作的标识符解析![读操作的标识符解析](img/00047.gif)图 2-5. 读操作的标识符解析
+![写操作的标识符解析](img/00037.gif)
+
+图 2-4. 写操作的标识符解析
+
+![读操作的标识符解析](img/00047.gif)
+
+图 2-5. 读操作的标识符解析
 
 所有浏览器的总体趋势是：标识符在作用域链中的位置越深，读取或写入的速度就越慢。具有优化型 JavaScript 引擎的浏览器（如 Chrome 和 Safari 4）在访问作用域外的标识符时没有这种性能损失，而 Internet Explorer、Safari 3.2 及其他浏览器则表现出更显著的影响。值得注意的是，早期浏览器（如 Internet Explorer 6 和 Firefox 2）的曲线斜率非常陡峭，如果将其数据包含在内，它们甚至不会出现在该图表的范围内。
 
@@ -811,9 +780,6 @@ function initUI(){
 }
 ```
 
-
-
-
 `initUI()` 的更新版本首先将 `document` 的引用存储在局部变量 `doc` 中。这样，原本需要三次访问全局变量，现在减少到一次。访问 `doc` 比访问 `document` 更快，因为它是局部变量。当然，这个简单的函数不会带来巨大的性能提升，因为它做的事情不多，但想象一下更大的函数，其中反复访问数十个全局变量；那时才会发现更显著的性能改进。
 
 ### 作用域链增强
@@ -847,7 +813,9 @@ function initUI(){
 
 当代码执行流入 `with` 语句时，执行上下文的作用域链会被临时增强。会创建一个新的变量对象，其中包含指定对象的所有属性。然后该对象被推送到作用域链的前端，这意味着函数的所有局部变量现在都位于第二个作用域链对象中，因此访问它们的成本更高（参见图 2-6）。
 
-![with 语句中增强的作用域链](img/00002.jpeg)图 2-6. with 语句中增强的作用域链
+![with 语句中增强的作用域链](img/00002.jpeg)
+
+图 2-6. `with` 语句中增强的作用域链
 
 通过将 `document` 对象传入 `with` 语句，一个包含 `document` 对象所有属性的新变量对象被推送到作用域链的前端。这使得访问 `document` 的属性非常快，但访问局部变量（如 `bd`）则变慢。因此，最好避免使用 `with` 语句。如前所示，将 `document` 存储在局部变量中同样简单，并且能获得性能提升。
 
@@ -928,17 +896,17 @@ function assignEvents(){
 
 当 `assignEvents()` 执行时，会创建一个活动对象，其中包含 `id` 变量以及其他内容。这成为执行上下文作用域链中的第一个对象，全局对象紧随其后。当闭包被创建时，其 `[[Scope]]` 属性被初始化为这两个对象（参见图 2-7）。
 
-![assignEvents() 执行上下文和闭包的作用域链](img/00032.jpeg)图 2-7. assignEvents() 执行上下文和闭包的作用域链
+![assignEvents() 执行上下文和闭包的作用域链](img/00032.jpeg)
 
-
-
-
+图 2-7. `assignEvents()` 执行上下文和闭包的作用域链
 
 由于闭包的 `[[Scope]]` 属性包含与执行上下文作用域链相同的对象引用，因此会产生一个副作用。通常，当执行上下文被销毁时，函数的激活对象也会被销毁。然而，当涉及闭包时，激活对象不会被销毁，因为闭包的 `[[Scope]]` 属性中仍然存在一个引用。这意味着闭包在脚本中比非闭包函数需要更多的内存开销。在大型 Web 应用中，这可能会成为一个问题，尤其是在 Internet Explorer 中。IE 将 DOM 对象实现为非原生 JavaScript 对象，因此闭包可能导致内存泄漏（更多信息请参见第 3 章）。
 
 当闭包被执行时，会创建一个执行上下文，其作用域链使用 `[[Scope]]` 中引用的相同两个作用域链对象进行初始化，然后为闭包本身创建一个新的激活对象（参见图 2-8）。
 
-![执行闭包](img/00044.jpeg)图 2-8. 执行闭包
+![执行闭包](img/00044.jpeg)
+
+图 2-8. 执行闭包
 
 请注意，闭包中使用的两个标识符 `id` 和 `saveDocument` 都存在于作用域链的第一个对象之后。这是闭包的主要性能问题：你经常访问许多超出作用域的标识符，因此每次访问都会产生性能损失。
 
@@ -971,13 +939,17 @@ alert(book.toString());   //"[object Object]"
 
 在这段代码中，`book` 对象有两个实例成员：`title` 和 `publisher`。注意，没有定义 `toString()` 方法，但该方法被调用并正确执行，没有抛出错误。`toString()` 方法是 `book` 对象继承的原型成员。图 2-9 展示了这种关系。
 
-![实例与原型之间的关系](img/00055.jpeg)图 2-9. 实例与原型之间的关系
 
-解析对象成员的过程与解析变量非常相似。当调用 `book.toString()` 时，对名为“toString”的成员的搜索从对象实例开始。由于 `book` 没有名为 `toString` 的成员，搜索随后流向原型对象，在那里找到并执行 `toString()` 方法。这样，`book` 就可以访问其原型上的每个属性或方法。
 
-你可以通过使用 `hasOwnProperty()` 方法并传入成员名称来确定对象是否具有给定名称的实例成员。要确定对象是否可以访问给定名称的属性，可以使用 `in` 运算符。例如：
+![实例与原型之间的关系](img/00055.jpeg)
 
-```
+图 2-9. 实例与原型之间的关系
+
+解析对象成员的过程与解析变量非常相似。当调用`book.toString()`时，对名为“toString”的成员的搜索从对象实例开始。由于`book`没有名为`toString`的成员，搜索随后流向原型对象，在那里找到并执行`toString()`方法。这样，`book`就可以访问其原型上的每个属性或方法。
+
+你可以通过使用`hasOwnProperty()`方法并传入成员名称来确定对象是否具有给定名称的实例成员。要确定对象是否可以访问给定名称的属性，可以使用`in`运算符。例如：
+
+```javascript
 var book = {
     title: "High Performance JavaScript",
     publisher: "Yahoo! Press"
@@ -990,13 +962,13 @@ alert("title" in book);       //true
 alert("toString" in book);    //true
 ```
 
-在这段代码中，当传入“title”时，`hasOwnProperty()` 返回 `true`，因为 title 是一个实例属性；当传入“toString”时，该方法返回 `false`，因为它不存在于实例上。当每个属性名与 `in` 运算符一起使用时，两次结果都是 `true`，因为它会搜索实例和原型。
+在这段代码中，当传入“title”时，`hasOwnProperty()`返回`true`，因为`title`是一个实例属性；当传入“toString”时，该方法返回`false`，因为它不存在于实例上。当每个属性名与`in`运算符一起使用时，两次结果都是`true`，因为它会搜索实例和原型。
 
 ### 原型链
 
-对象的原型决定了它是哪个或哪些类型的实例。默认情况下，所有对象都是 `Object` 的实例，并继承所有基本方法，如 `toString()`。你可以通过定义并使用构造函数来创建另一个类型的原型。例如：
+对象的原型决定了它是哪个或哪些类型的实例。默认情况下，所有对象都是`Object`的实例，并继承所有基本方法，如`toString()`。你可以通过定义并使用构造函数来创建另一个类型的原型。例如：
 
-```
+```javascript
 function Book(title, publisher){
     this.title = title;
     this.publisher = publisher;
@@ -1016,48 +988,51 @@ book1.sayTitle();         //"High Performance JavaScript"
 alert(book1.toString());  //"[object Object]"
 ```
 
-`Book` 构造函数用于创建 `Book` 的新实例。`book1` 实例的原型（`__proto__`）是 `Book.prototype`，而 `Book.prototype` 的原型是 `Object`。这创建了一个原型链，`book1` 和 `book2` 都从中继承它们的成员。图 2-10 展示了这种关系。
+`Book`构造函数用于创建`Book`的新实例。`book1`实例的原型（`__proto__`）是`Book.prototype`，而`Book.prototype`的原型是`Object`。这创建了一个原型链，`book1`和`book2`都从中继承它们的成员。图 2-10 展示了这种关系。
 
-![原型链](img/00009.jpeg)图 2-10. 原型链
+![原型链](img/00009.jpeg)
 
-请注意，`Book` 的两个实例共享同一个原型链。每个实例都有自己的 `title` 和 `publisher` 属性，但其他所有内容都通过原型继承。现在当调用 `book1.toString()` 时，搜索必须深入原型链以解析对象成员“toString”。正如你可能猜到的，成员在原型链中越深，检索速度就越慢。图 2-11 展示了原型中成员深度与访问成员时间之间的关系。
+图 2-10. 原型链
 
-![深入原型链的数据访问](img/00019.gif)图 2-11. 深入原型链的数据访问
+请注意，`Book`的两个实例共享同一个原型链。每个实例都有自己的`title`和`publisher`属性，但其他所有内容都通过原型继承。现在当调用`book1.toString()`时，搜索必须深入原型链以解析对象成员“toString”。正如你可能猜到的，成员在原型链中越深，检索速度就越慢。图 2-11 展示了原型中成员深度与访问成员时间之间的关系。
 
+![深入原型链的数据访问](img/00019.gif)
 
-
+图 2-11. 深入原型链的数据访问
 
 尽管具有优化 JavaScript 引擎的新浏览器能够很好地执行此任务，但旧版浏览器（尤其是 Internet Explorer 和 Firefox 3.5）在原型链上每增加一步都会带来性能损失。请记住，查找实例成员的过程仍然比从字面量或局部变量访问数据更昂贵，因此增加遍历原型链的开销只会放大这种影响。
 
 ### 嵌套成员
 
-由于对象成员可能包含其他成员，因此在 JavaScript 代码中经常看到诸如 `window.location.href` 这样的模式。这些嵌套成员会导致 JavaScript 引擎在每次遇到点号时都要执行对象成员解析过程。图 2-12 展示了对象成员深度与访问时间之间的关系。
+由于对象成员可能包含其他成员，因此在 JavaScript 代码中经常看到诸如`window.location.href`这样的模式。这些嵌套成员会导致 JavaScript 引擎在每次遇到点号时都要执行对象成员解析过程。图 2-12 展示了对象成员深度与访问时间之间的关系。
 
-![访问时间与属性深度的关系](img/00029.jpeg)图 2-12. 访问时间与属性深度的关系
+![访问时间与属性深度的关系](img/00029.jpeg)
 
-因此，嵌套成员越深，数据访问速度越慢，这并不令人意外。评估 `location.href` 总是比 `window.location.href` 快，而 `window.location.href` 又比 `window.location.href.toString()` 快。如果这些属性不在对象实例上，那么成员解析将花费更长时间，因为每次都需要搜索原型链。
+图 2-12. 访问时间与属性深度的关系
 
-* * *
+因此，嵌套成员越深，数据访问速度越慢，这并不令人意外。评估`location.href`总是比`window.location.href`快，而`window.location.href`又比`window.location.href.toString()`快。如果这些属性不在对象实例上，那么成员解析将花费更长时间，因为每次都需要搜索原型链。
+
+---
 
 ### 注意
 
 在大多数浏览器中，使用点号表示法（`object.name`）与使用方括号表示法（`object["name"]`）访问对象成员之间没有明显区别。Safari 是唯一一个点号表示法始终更快的浏览器，但差异并不足以建议不要使用方括号表示法。
 
-* * *
+---
 
 ### 缓存对象成员值
 
 考虑到对象成员相关的所有性能问题，很容易认为应尽可能避免使用它们。更准确地说，你应该只在必要时谨慎使用对象成员。例如，在单个函数中多次读取对象成员的值是没有理由的：
 
-```
+```javascript
 function hasEitherClass(element, className1, className2){
     return element.className == className1 || element.className == className2;
 }
 ```
 
-在这段代码中，`element.className` 被访问了两次。显然，这个值在函数执行过程中不会改变，但仍然执行了两次对象成员查找。你可以通过将值存储在局部变量中并使用该变量来消除一次属性查找：
+在这段代码中，`element.className`被访问了两次。显然，这个值在函数执行过程中不会改变，但仍然执行了两次对象成员查找。你可以通过将值存储在局部变量中并使用该变量来消除一次属性查找：
 
-```
+```javascript
 function hasEitherClass(element, className1, className2){
     var currentClassName = element.className;
     return currentClassName == className1 || currentClassName == className2;
@@ -1070,7 +1045,7 @@ function hasEitherClass(element, className1, className2){
 
 JavaScript 命名空间（例如 YUI 中使用的技术）是频繁访问嵌套属性的来源。例如：
 
-```
+```javascript
 function toggle(element){
     if (YAHOO.util.Dom.hasClass(element, "selected")){
         YAHOO.util.Dom.removeClass(element, "selected");
@@ -1082,9 +1057,9 @@ function toggle(element){
 }
 ```
 
-这段代码重复了三次 `YAHOO.util.Dom` 来访问三个不同的方法。每个方法都有三次成员查找，总共九次，使得这段代码效率相当低。更好的方法是将 `YAHOO.util.Dom` 存储在局部变量中，然后访问该局部变量：
+这段代码重复了三次`YAHOO.util.Dom`来访问三个不同的方法。每个方法都有三次成员查找，总共九次，使得这段代码效率相当低。更好的方法是将`YAHOO.util.Dom`存储在局部变量中，然后访问该局部变量：
 
-```
+```javascript
 function toggle(element){
     var Dom = YAHOO.util.Dom;
     if (Dom.hasClass(element, "selected")){
@@ -1099,29 +1074,24 @@ function toggle(element){
 
 这段代码中的成员查找总数从九次减少到了五次。除非值可能发生变化，否则永远不应在单个函数中多次查找对象成员。
 
-* * *
+---
 
 ### 注意
 
-有一点需要提醒：不建议对对象方法使用此技术。许多对象方法使用 `this` 来确定它们被调用的上下文，将方法存储在局部变量中会导致 `this` 绑定到 `window`。改变 `this` 的值会导致程序错误，因为 JavaScript 引擎将无法解析它可能依赖的适当对象成员。
+有一点需要提醒：不建议对对象方法使用此技术。许多对象方法使用`this`来确定它们被调用的上下文，将方法存储在局部变量中会导致`this`绑定到`window`。改变`this`的值会导致程序错误，因为 JavaScript 引擎将无法解析它可能依赖的适当对象成员。
 
-* * *
+---
 
 ## 总结
 
 在 JavaScript 中存储和访问数据的位置会对代码的整体性能产生可衡量的影响。有四种数据访问位置：字面量、变量、数组项和对象成员。这些位置具有不同的性能考量。
 
-*   字面量和局部变量的访问速度非常快，而数组项和对象成员的访问速度较慢。
-
-*   局部变量的访问速度比作用域外的变量快，因为它们存在于作用域链的第一个变量对象中。变量在作用域链中越深，访问所需的时间就越长。全局变量始终是最慢的，因为它们始终位于作用域链的最后。
-
-*   避免使用 `with` 语句，因为它会扩充执行上下文的作用域链。同时，要小心 `try-catch` 语句的 `catch` 子句，因为它具有相同的效果。
-
-*   嵌套对象成员会带来显著的性能影响，应尽量减少使用。
-
-*   属性或方法在原型链中越深，访问速度就越慢。
-
-*   一般来说，你可以通过将频繁使用的对象成员、数组项和作用域外的变量存储在局部变量中来提高 JavaScript 代码的性能。然后，你可以比原始数据更快地访问这些局部变量。
+- 字面量和局部变量的访问速度非常快，而数组项和对象成员的访问速度较慢。
+- 局部变量的访问速度比作用域外的变量快，因为它们存在于作用域链的第一个变量对象中。变量在作用域链中越深，访问所需的时间就越长。全局变量始终是最慢的，因为它们始终位于作用域链的最后。
+- 避免使用`with`语句，因为它会扩充执行上下文的作用域链。同时，要小心`try-catch`语句的`catch`子句，因为它具有相同的效果。
+- 嵌套对象成员会带来显著的性能影响，应尽量减少使用。
+- 属性或方法在原型链中越深，访问速度就越慢。
+- 一般来说，你可以通过将频繁使用的对象成员、数组项和作用域外的变量存储在局部变量中来提高 JavaScript 代码的性能。然后，你可以比原始数据更快地访问这些局部变量。
 
 通过使用这些策略，你可以显著改善需要大量 JavaScript 代码的 Web 应用程序的感知性能。
 
@@ -1131,11 +1101,9 @@ function toggle(element){
 
 DOM 脚本编程开销很大，并且是富 Web 应用程序中常见的性能瓶颈。本章讨论 DOM 脚本编程中可能对应用程序响应性产生负面影响的领域，并给出如何改善响应时间的建议。本章讨论的三类问题包括：
 
-*   访问和修改 DOM 元素
-
-*   修改 DOM 元素的样式并导致重绘和重排
-
-*   通过 DOM 事件处理用户交互
+- 访问和修改 DOM 元素
+- 修改 DOM 元素的样式并导致重绘和重排
+- 通过 DOM 事件处理用户交互
 
 但首先——什么是 DOM，为什么它很慢？
 
@@ -1145,10 +1113,7 @@ DOM 脚本编程开销很大，并且是富 Web 应用程序中常见的性能�
 
 尽管 DOM 是一种与语言无关的 API，但在浏览器中，该接口是用 JavaScript 实现的。由于客户端脚本编程的大部分工作都与底层文档有关，因此 DOM 是日常 JavaScript 编码的重要组成部分。
 
-
-
-
-在浏览器中，DOM 和 JavaScript 的实现通常是相互独立的。例如，在 Internet Explorer 中，JavaScript 的实现被称为 JScript，位于名为 `jscript.dll` 的库文件中，而 DOM 的实现则位于另一个库 `mshtml.dll`（内部称为 `Trident`）中。这种分离使得其他技术和语言（如 VBScript）能够利用 DOM 以及 Trident 提供的渲染功能。Safari 使用 WebKit 的 `WebCore` 进行 DOM 和渲染，并拥有独立的 `JavaScriptCore` 引擎（其最新版本称为 `SquirrelFish`）。Google Chrome 也使用 WebKit 的 `WebCore` 库来渲染页面，但实现了自己的 JavaScript 引擎，名为 `V8`。在 Firefox 中，`SpiderMonkey`（最新版本称为 `TraceMonkey`）是 JavaScript 的实现，它是 `Gecko` 渲染引擎的一个独立部分。
+在浏览器中，DOM 和 JavaScript 的实现通常是相互独立的。例如，在 Internet Explorer 中，JavaScript 的实现被称为 JScript，位于名为`jscript.dll`的库文件中，而 DOM 的实现则位于另一个库`mshtml.dll`（内部称为`Trident`）中。这种分离使得其他技术和语言（如 VBScript）能够利用 DOM 以及 Trident 提供的渲染功能。Safari 使用 WebKit 的`WebCore`进行 DOM 和渲染，并拥有独立的`JavaScriptCore`引擎（其最新版本称为`SquirrelFish`）。Google Chrome 也使用 WebKit 的`WebCore`库来渲染页面，但实现了自己的 JavaScript 引擎，名为`V8`。在 Firefox 中，`SpiderMonkey`（最新版本称为`TraceMonkey`）是 JavaScript 的实现，它是`Gecko`渲染引擎的一个独立部分。
 
 ### 天生缓慢
 
@@ -1162,7 +1127,7 @@ DOM 脚本编程开销很大，并且是富 Web 应用程序中常见的性能�
 
 为了让你对 DOM 脚本编程的问题规模有一个概念，请考虑这个简单的例子：
 
-```
+```javascript
 function innerHTMLLoop() {
     for (var count = 0; count < 15000; count++) {
         document.getElementById('here').innerHTML += 'a';
@@ -1170,11 +1135,11 @@ function innerHTMLLoop() {
 }
 ```
 
-这个函数在循环中更新页面元素的内容。这段代码的问题在于，每次循环迭代中，元素被访问了两次：一次读取 `innerHTML` 属性的值，一次写入它。
+这个函数在循环中更新页面元素的内容。这段代码的问题在于，每次循环迭代中，元素被访问了两次：一次读取`innerHTML`属性的值，一次写入它。
 
 这个函数的一个更高效的版本是使用局部变量来存储更新后的内容，然后在循环结束时只写入一次：
 
-```
+```javascript
 function innerHTMLLoop2() {
     var content = '';
     for (var count = 0; count < 15000; count++) {
@@ -1184,34 +1149,40 @@ function innerHTMLLoop2() {
 }
 ```
 
-这个新版本的函数在所有浏览器中运行速度都会快得多。图 3-1 显示了在不同浏览器中测量到的时间改进结果。图中的 y 轴（与本章所有图表一样）表示执行时间的改进，即使用一种方法比另一种方法快多少。例如，在这个例子中，使用 `innerHTMLLoop2()` 在 IE6 中比 `innerHTMLLoop()` 快 155 倍。
+这个新版本的函数在所有浏览器中运行速度都会快得多。图 3-1 显示了在不同浏览器中测量到的时间改进结果。图中的 y 轴（与本章所有图表一样）表示执行时间的改进，即使用一种方法比另一种方法快多少。例如，在这个例子中，使用`innerHTMLLoop2()`在 IE6 中比`innerHTMLLoop()`快 155 倍。
 
-![留在 ECMAScript 中的一个好处：innerHTMLLoop2() 比 innerHTMLLoop() 快数百倍](img/00041.gif)图 3-1. 留在 ECMAScript 中的一个好处：innerHTMLLoop2() 比 innerHTMLLoop() 快数百倍
+![留在 ECMAScript 中的一个好处：innerHTMLLoop2() 比 innerHTMLLoop() 快数百倍](img/00041.gif)
+
+图 3-1. 留在 ECMAScript 中的一个好处：innerHTMLLoop2()比`innerHTMLLoop()`快数百倍
 
 这些结果清楚地表明，你访问 DOM 的次数越多，代码执行得越慢。因此，一般经验法则是：轻触 DOM，尽可能留在 ECMAScript 中。
 
 ### innerHTML 与 DOM 方法
 
-多年来，Web 开发社区一直在争论这个问题：是使用非标准但支持良好的 `innerHTML` 属性来更新页面的一部分更好，还是只使用纯粹的 DOM 方法（如 `document.createElement()`）更好？抛开 Web 标准讨论不谈，这对性能有影响吗？答案是：影响越来越小，但除了最新的基于 WebKit 的浏览器（Chrome 和 Safari）之外，`innerHTML` 在所有浏览器中仍然更快。
+多年来，Web 开发社区一直在争论这个问题：是使用非标准但支持良好的`innerHTML`属性来更新页面的一部分更好，还是只使用纯粹的 DOM 方法（如`document.createElement()`）更好？抛开 Web 标准讨论不谈，这对性能有影响吗？答案是：影响越来越小，但除了最新的基于 WebKit 的浏览器（Chrome 和 Safari）之外，`innerHTML`在所有浏览器中仍然更快。
 
 让我们考察一个示例任务，用两种方式创建一个包含 1000 行的表格：
 
-* 通过拼接 HTML 字符串并使用 `innerHTML` 更新 DOM
-* 通过仅使用标准 DOM 方法，如 `document.createElement()` 和 `document.createTextNode()`
+- 通过拼接 HTML 字符串并使用`innerHTML`更新 DOM
+- 通过仅使用标准 DOM 方法，如`document.createElement()`和`document.createTextNode()`
 
 我们的示例表格内容类似于来自内容管理系统（CMS）的内容。最终结果如图 3-2 所示。
 
-![生成一个包含 1000 行和 5 列的 HTML 表格的最终结果](img/00052.jpeg)图 3-2. 生成一个包含 1000 行和 5 列的 HTML 表格的最终结果
+![生成一个包含 1000 行和 5 列的 HTML 表格的最终结果](img/00052.jpeg)
 
-使用 `innerHTML` 生成表格的代码如下：
+图 3-2. 生成一个包含 1000 行和 5 列的 HTML 表格的最终结果
 
-```
+使用`innerHTML`生成表格的代码如下：
+
+
+
+```javascript
 function tableInnerHTML() {
     var i, h = ['<table border="1" width="100%">'];
 
     h.push('<thead>');
 
-h.push('<tr><th>id<\/th><th>yes?<\/th><th>name<\/th><th>url<\/th><th>action<\/th>
+    h.push('<tr><th>id<\/th><th>yes?<\/th><th>name<\/th><th>url<\/th><th>action<\/th>
 <\/tr>');
     h.push('<\/thead>');
     h.push('<tbody>');
@@ -1243,18 +1214,13 @@ h.push('<tr><th>id<\/th><th>yes?<\/th><th>name<\/th><th>url<\/th><th>action<\/th
 
 为了仅使用 DOM 方法生成相同的表格，代码会稍微冗长一些：
 
-
-
-
-```
+```javascript
 function tableDOM() {
-
     var i, table, thead, tbody, tr, th, td, a, ul, li;
 
     tbody = document.createElement('tbody');
 
     for (i = 1; i <= 1000; i++) {
-
         tr = document.createElement('tr');
         td = document.createElement('td');
         td.appendChild(document.createTextNode((i % 2) ? 'yes' : 'no'));
@@ -1323,28 +1289,29 @@ function tableDOM() {
 };
 ```
 
-使用 `innerHTML` 生成 HTML 表格与使用纯 DOM 方法的结果对比如图 3-3 所示。在较旧的浏览器版本中，`innerHTML` 的优势更明显（在 IE6 中 `innerHTML` 快 3.6 倍），但在较新版本中优势不那么显著。而在基于 WebKit 的新浏览器中情况则相反：使用 DOM 方法稍快一些。因此，选择哪种方法取决于用户常用的浏览器以及你的编码偏好。
+使用`innerHTML`生成 HTML 表格与使用纯 DOM 方法的结果对比如图 3-3 所示。在较旧的浏览器版本中，`innerHTML`的优势更明显（在 IE6 中`innerHTML`快 3.6 倍），但在较新版本中优势不那么显著。而在基于 WebKit 的新浏览器中情况则相反：使用 DOM 方法稍快一些。因此，选择哪种方法取决于用户常用的浏览器以及你的编码偏好。
 
-在需要更新 HTML 页面大部分内容的性能关键操作中，使用 `innerHTML` 在大多数浏览器中会获得更快的执行速度。但对于大多数日常情况，差异并不大，因此在决定方法时，应考虑可读性、维护性、团队偏好和编码规范。
+在需要更新 HTML 页面大部分内容的性能关键操作中，使用`innerHTML`在大多数浏览器中会获得更快的执行速度。但对于大多数日常情况，差异并不大，因此在决定方法时，应考虑可读性、维护性、团队偏好和编码规范。
 
-![使用 innerHTML 比使用 DOM 方法创建 1000 行表格的优势；在 IE6 中 innerHTML 快三倍以上，而在最新的 WebKit 浏览器中稍慢](img/00007.gif)图 3-3. 使用 innerHTML 比使用 DOM 方法创建 1000 行表格的优势；在 IE6 中 innerHTML 快三倍以上，而在最新的 WebKit 浏览器中稍慢
+![使用 innerHTML 比使用 DOM 方法创建 1000 行表格的优势；在 IE6 中 innerHTML 快三倍以上，而在最新的 WebKit 浏览器中稍慢](img/00007.gif)
+
+图 3-3. 使用`innerHTML`比使用 DOM 方法创建 1000 行表格的优势；在 IE6 中`innerHTML`快三倍以上，而在最新的 WebKit 浏览器中稍慢
 
 ### 克隆节点
 
-使用 DOM 方法更新页面内容的另一种方式是克隆现有 DOM 元素而不是创建新元素——换句话说，使用 `element.cloneNode()`（其中 `element` 是现有节点）代替 `document.createElement()`。
+使用 DOM 方法更新页面内容的另一种方式是克隆现有 DOM 元素而不是创建新元素——换句话说，使用`element.cloneNode()`（其中`element`是现有节点）代替`document.createElement()`。
 
 在大多数浏览器中，克隆节点效率更高，但提升幅度不大。通过只创建一次重复元素然后复制它们来重新生成前面示例中的表格，执行时间略有缩短：
 
-*   在 IE8 中提升 2%，但在 IE6 和 IE7 中没有变化
-*   在 Firefox 3.5 和 Safari 4 中提升高达 5.5%
-*   在 Opera 中提升 6%（但在 Opera 10 中没有节省）
-*   在 Chrome 2 中提升 10%，在 Chrome 3 中提升 3%
+- 在 IE8 中提升 2%，但在 IE6 和 IE7 中没有变化。
+- 在 Firefox 3.5 和 Safari 4 中提升高达 5.5%。
+- 在 Opera 中提升 6%（但在 Opera 10 中没有节省）。
+- 在 Chrome 2 中提升 10%，在 Chrome 3 中提升 3%。
 
-作为示例，以下是使用 `element.cloneNode()` 生成表格的部分代码：
+作为示例，以下是使用`element.cloneNode()`生成表格的部分代码：
 
-```
+```javascript
 function tableClonedDOM() {
-
     var i, table, thead, tbody, tr, th, td, a, ul, li,
         oth = document.createElement('th'),
         otd = document.createElement('td'),
@@ -1356,7 +1323,6 @@ function tableClonedDOM() {
     tbody = document.createElement('tbody');
 
     for (i = 1; i <= 1000; i++) {
-
         tr = otr.cloneNode(false);
         td = otd.cloneNode(false);
         td.appendChild(document.createTextNode((i % 2) ? 'yes' : 'no'));
@@ -1369,7 +1335,6 @@ function tableClonedDOM() {
         tr.appendChild(td);
 
         // ... 循环的其余部分 ...
-
     }
 
     // ... 表格生成的其余部分 ...
@@ -1380,37 +1345,37 @@ function tableClonedDOM() {
 
 HTML 集合是包含 DOM 节点引用的类数组对象。集合的示例包括以下方法返回的值：
 
-*   `document.getElementsByName()`
-*   `document.getElementsByClassName()`
-*   `document.getElementsByTagName()`
+- `document.getElementsByName()`
+- `document.getElementsByClassName()`
+- `document.getElementsByTagName()`
 
 以下属性也返回 HTML 集合：
 
 `document.images`
 
-> 页面上的所有 `img` 元素
+> 页面上的所有`img`元素。
 
 `document.links`
 
-> 所有带有 `href` 属性的 `a` 和 `area` 元素
+> 所有带有`href`属性的`a`和`area`元素。
 
 `document.forms`
 
-> 所有表单
+> 所有表单。
 
 `document.forms[0].elements`
 
-> 页面上第一个表单中的所有字段
+> 页面上第一个表单中的所有字段。
 
-这些方法和属性返回 `HTMLCollection` 对象，它们是类数组列表。它们不是数组（因为它们没有 `push()` 或 `slice()` 等方法），但提供 `length` 属性，就像数组一样，并允许通过索引访问列表中的元素。例如，`document.images[1]` 返回集合中的第二个元素。根据 DOM 标准，HTML 集合“被认为是*动态的*，这意味着当底层文档更新时，它们会自动更新”（参见 [`www.w3.org/TR/DOM-Level-2-HTML/html.html#ID-75708506`](http://www.w3.org/TR/DOM-Level-2-HTML/html.html#ID-75708506)）。
+这些方法和属性返回`HTMLCollection`对象，它们是类数组列表。它们不是数组（因为它们没有`push()`或`slice()`等方法），但提供`length`属性，就像数组一样，并允许通过索引访问列表中的元素。例如，`document.images[1]`返回集合中的第二个元素。根据 DOM 标准，HTML 集合“被认为是*动态的*，这意味着当底层文档更新时，它们会自动更新”（参见[`www.w3.org/TR/DOM-Level-2-HTML/html.html#ID-75708506`](http://www.w3.org/TR/DOM-Level-2-HTML/html.html#ID-75708506)）。
 
-HTML 集合实际上是对文档的查询，每次需要最新信息（例如集合中的元素数量，即集合的 `length`）时，这些查询都会重新执行。这可能是效率低下的一个来源。
+HTML 集合实际上是对文档的查询，每次需要最新信息（例如集合中的元素数量，即集合的`length`）时，这些查询都会重新执行。这可能是效率低下的一个来源。
 
 #### 昂贵的集合
 
 为了演示集合是动态的，请考虑以下代码片段：
 
-```
+```javascript
 // 一个意外的无限循环
 var alldivs = document.getElementsByTagName('div');
 for (var i = 0; i < alldivs.length; i++) {
@@ -1418,19 +1383,15 @@ for (var i = 0; i < alldivs.length; i++) {
 }
 ```
 
-这段代码看起来只是将页面上的 `div` 元素数量翻倍。它遍历现有的 `div`，每次创建一个新的 `div` 并将其附加到 `body`。但这实际上是一个无限循环，因为循环的退出条件 `alldivs.length` 每次迭代都会增加 1，反映了底层文档的当前状态。
+这段代码看起来只是将页面上的`div`元素数量翻倍。它遍历现有的`div`，每次创建一个新的`div`并将其附加到`body`。但这实际上是一个无限循环，因为循环的退出条件`alldivs.length`每次迭代都会增加 1，反映了底层文档的当前状态。
 
 像这样遍历 HTML 集合可能会导致逻辑错误，而且由于每次迭代都需要运行查询，速度也会更慢（参见图 3-4）。
-
-
-
-
 
 如第 4 章所述，不建议在循环控制条件中访问数组的`length`属性。访问集合的`length`甚至比访问普通数组的`length`更慢，因为这意味着每次都要重新执行查询。下面的例子演示了这一点：它获取一个集合`coll`，将其复制到数组`arr`中，然后比较遍历两者所需的时间。
 
 考虑一个将 HTML 集合复制到普通数组的函数：
 
-```
+```javascript
 function toArray(coll) {
     for (var i = 0, a = [], len = coll.length; i < len; i++) {
         a[i] = coll[i];
@@ -1441,14 +1402,14 @@ function toArray(coll) {
 
 以及创建一个集合及其副本：
 
-```
+```javascript
 var coll = document.getElementsByTagName('div');
 var ar   = toArray(coll);
 ```
 
 要比较的两个函数如下：
 
-```
+```javascript
 // 较慢
 function loopCollection() {
     for (var count = 0; count < coll.length; count++) {
@@ -1464,11 +1425,13 @@ function loopCopiedArray() {
 }
 ```
 
-![遍历数组比遍历相同大小和内容的 HTML 集合快得多](img/00017.gif)图 3-4. 遍历数组比遍历相同大小和内容的 HTML 集合快得多
+![遍历数组比遍历相同大小和内容的 HTML 集合快得多](img/00017.gif)
+
+图 3-4. 遍历数组比遍历相同大小和内容的 HTML 集合快得多
 
 每次迭代访问集合的`length`时，会导致集合被更新，并在所有浏览器中产生显著的性能损失。优化方法是简单地将集合的`length`缓存到一个变量中，并在循环的退出条件中使用该变量进行比较：
 
-```
+```javascript
 function loopCacheLengthCollection() {
     var coll = document.getElementsByTagName('div'),
         len = coll.length;
@@ -1488,12 +1451,14 @@ function loopCacheLengthCollection() {
 
 前面的例子只使用了空循环，但如果循环内访问了集合的元素，会发生什么？
 
+
+
 一般来说，对于任何类型的 DOM 访问，当多次访问同一个 DOM 属性或方法时，最好使用局部变量。在遍历集合时，第一个优化是将集合存储在局部变量中，并在循环外缓存`length`，然后在循环内对多次访问的元素使用局部变量。
 
 在下一个例子中，循环内访问了每个元素的三个属性。最慢的版本每次都访问全局`document`，优化版本缓存了对集合的引用，最快的版本还将集合的当前元素存储到一个变量中。所有三个版本都缓存了集合的`length`。
 
 ```
-// 慢
+/ 慢
 function collectionGlobal() {
 
     var coll = document.getElementsByTagName('div'),
@@ -1543,7 +1508,9 @@ function collectionNodesLocal() {
 
 图 3-5 展示了优化集合循环的好处。第一个柱状图表示通过局部引用访问集合的速度提升倍数，第二个柱状图显示当多次访问集合项时，缓存这些项还有额外的好处。
 
-![在循环中使用局部变量存储对集合及其元素的引用的好处](img/00027.gif)图 3-5. 在循环中使用局部变量存储对集合及其元素的引用的好处
+![在循环中使用局部变量存储对集合及其元素的引用的好处](img/00027.gif)
+
+图 3-5. 在循环中使用局部变量存储对集合及其元素的引用的好处
 
 ### 遍历 DOM
 
@@ -1597,10 +1564,6 @@ DOM 属性如`childNodes`、`firstChild`和`nextSibling`不区分元素节点和
 | `firstElementChild` | `firstChild` |
 | `lastElementChild` | `lastChild` |
 | `nextElementSibling` | `nextSibling` |
-
-
-
-
 | `previousElementSibling` | `previousSibling` |
 
 表 3-1 中列出的所有属性在 Firefox 3.5、Safari 4、Chrome 2 和 Opera 9.62 中均受支持。在这些属性中，IE 6、7 和 8 仅支持`children`。
@@ -1651,7 +1614,9 @@ for (var i = 0, len = divs.length; i < len; i++) {
 
 比较这两段代码可以看出，使用选择器 API 在所有浏览器中快 2 到 6 倍（图 3-6）。
 
-![使用选择器 API 而非遍历`getElementsbyTagName()`结果的好处](img/00038.gif)图 3-6. 使用选择器 API 而非遍历`getElementsbyTagName()`结果的好处
+![使用选择器 API 而非遍历`getElementsbyTagName()`结果的好处](img/00038.gif)
+
+图 3-6. 使用选择器 API 而非遍历`getElementsbyTagName()`结果的好处
 
 选择器 API 在以下版本的浏览器中得到了原生支持：Internet Explorer 8、Firefox 3.5、Safari 3.1、Chrome 1 和 Opera 10。
 
@@ -1665,15 +1630,15 @@ for (var i = 0, len = divs.length; i < len; i++) {
 
 一旦浏览器下载了页面的所有组件——HTML 标记、JavaScript、CSS、图片——它就会解析这些文件并创建两个内部数据结构：
 
-DOM 树
+### DOM 树
 
 > 页面结构的表示
 
-渲染树
+### 渲染树
 
 > DOM 节点如何显示的表示
 
-渲染树为 DOM 树中每个需要显示的节点至少有一个节点（隐藏的 DOM 元素在渲染树中没有对应节点）。渲染树中的节点被称为*帧*或*盒子*，这符合 CSS 模型，该模型将页面元素视为具有内边距、外边距、边框和位置的盒子。一旦 DOM 树和渲染树构建完成，浏览器就可以在页面上显示（“绘制”）元素。
+渲染树为 DOM 树中每个需要显示的节点至少有一个节点（隐藏的 DOM 元素在渲染树中没有对应节点）。渲染树中的节点被称为`帧`或`盒子`，这符合 CSS 模型，该模型将页面元素视为具有内边距、外边距、边框和位置的盒子。一旦 DOM 树和渲染树构建完成，浏览器就可以在页面上显示（“绘制”）元素。
 
 当 DOM 更改影响元素的几何形状（宽度和高度）时——例如边框厚度变化或向段落添加更多文本导致增加一行——浏览器需要重新计算该元素的几何形状以及可能受更改影响的其他元素的几何形状和位置。浏览器会使渲染树中受更改影响的部分失效，并重新构建渲染树。这个过程称为*回流*。回流完成后，浏览器会重新绘制屏幕的受影响部分，这个过程称为*重绘*。
 
@@ -1685,12 +1650,12 @@ DOM 树
 
 如前所述，每当布局和几何形状发生变化时，就需要回流。这发生在以下情况：
 
-*   可见的 DOM 元素被添加或移除
-*   元素改变位置
-*   元素改变大小（由于外边距、内边距、边框厚度、宽度、高度等的变化）
-*   内容发生变化，例如文本改变或图片被替换为不同尺寸的图片
-*   页面初始渲染
-*   浏览器窗口大小改变
+- 可见的 DOM 元素被添加或移除
+- 元素改变位置
+- 元素改变大小（由于外边距、内边距、边框厚度、宽度、高度等的变化）
+- 内容发生变化，例如文本改变或图片被替换为不同尺寸的图片
+- 页面初始渲染
+- 浏览器窗口大小改变
 
 根据更改的性质，渲染树中较小或较大的部分需要重新计算。某些更改可能导致整个页面回流：例如，当滚动条出现时。
 
@@ -1698,12 +1663,10 @@ DOM 树
 
 由于每次回流相关的计算成本，大多数浏览器通过将更改排队并批量执行来优化回流过程。然而，你可能会（通常是无意中）强制刷新队列，要求所有计划的更改立即应用。当你想要获取布局信息时，就会刷新队列，这意味着使用以下任何属性：
 
-*   `offsetTop`, `offsetLeft`, `offsetWidth`, `offsetHeight`
-*   `scrollTop`, `scrollLeft`, `scrollWidth`, `scrollHeight`
-*   `clientTop`, `clientLeft`, `clientWidth`, `clientHeight`
-*   `getComputedStyle()`（在 IE 中为`currentStyle`）
-
-
+- `offsetTop`、`offsetLeft`、`offsetWidth`、`offsetHeight`
+- `scrollTop`、`scrollLeft`、`scrollWidth`、`scrollHeight`
+- `clientTop`、`clientLeft`、`clientWidth`、`clientHeight`
+- `getComputedStyle()`（在 IE 中为`currentStyle`）
 
 这些属性和方法返回的布局信息必须是最新的，因此浏览器需要执行渲染队列中的待处理更改并重新回流，才能返回正确的值。
 
@@ -1751,7 +1714,9 @@ tmp = computed.backgroundAttachment;
 
 回流和重绘可能代价高昂，因此响应式应用的良好策略是减少它们的次数。为了最小化次数，应将多个 DOM 和样式更改合并为一批，并一次性应用。
 
-![通过延迟访问布局信息来防止回流的好处](img/00048.gif)图 3-7. 通过延迟访问布局信息来防止回流的好处
+![通过延迟访问布局信息来防止回流的好处](img/00048.gif)
+
+图 3-7. 通过延迟访问布局信息来防止回流的好处
 
 #### 样式更改
 
@@ -1765,6 +1730,8 @@ el.style.padding = '5px';
 ```
 
 这里更改了三个样式属性，每个都会影响元素的几何形状。在最坏的情况下，这会导致浏览器回流三次。大多数现代浏览器会针对此类情况进行优化，只回流一次，但在旧浏览器中，或者同时发生独立的异步进程（例如使用计时器）时，仍可能效率低下。如果在此代码运行时其他代码请求布局信息，可能会导致多达三次回流。此外，代码四次访问 DOM，可以进行优化。
+
+
 
 实现相同结果的更高效方法是将所有更改合并，一次性应用，只修改一次 DOM。这可以通过`cssText`属性实现：
 
@@ -1786,21 +1753,21 @@ var el = document.getElementById('mydiv');
 el.className = 'active';
 ```
 
-#### 批量处理 DOM 更改
+### 批量处理 DOM 更改
 
 当需要对 DOM 元素进行多项更改时，可以通过以下步骤减少重绘和回流的次数：
 
-1.  将元素从文档流中移除。
-2.  应用多项更改。
-3.  将元素重新放回文档流。
+1. 将元素从文档流中移除。
+2. 应用多项更改。
+3. 将元素重新放回文档流。
 
 这个过程会导致两次回流——一次在步骤 1，一次在步骤 3。如果省略这些步骤，步骤 2 中的每次更改都可能导致自己的回流。
 
 有三种基本方法可以在文档之外修改 DOM：
 
-*   隐藏元素，应用更改，然后再次显示。
-*   使用文档片段在活动 DOM 之外构建子树，然后将其复制到文档中。
-*   将原始元素复制到文档外节点，修改副本，然后替换原始元素。
+* 隐藏元素，应用更改，然后再次显示。
+* 使用文档片段在活动 DOM 之外构建子树，然后将其复制到文档中。
+* 将原始元素复制到文档外节点，修改副本，然后替换原始元素。
 
 为了说明文档外操作，考虑一个需要更新更多信息的链接列表：
 
@@ -1868,8 +1835,6 @@ document.getElementById('mylist').appendChild(fragment);
 
 第三种解决方案是创建要更新节点的副本，在副本上操作，然后完成后用新更新的副本替换旧节点：
 
-
-
 ```
 var old = document.getElementById('mylist');
 var clone = old.cloneNode(true);
@@ -1883,9 +1848,9 @@ old.parentNode.replaceChild(clone, old);
 
 如前所述，浏览器会通过将更改排队并批量执行来尽量减少重排次数。但当你请求布局信息（如偏移量、滚动值或计算后的样式值）时，浏览器会刷新队列并应用所有更改，以返回更新后的值。最好尽量减少对布局信息的请求次数，当确实需要请求时，将其赋值给局部变量，然后使用局部值进行操作。
 
-考虑一个示例：将元素 `myElement` 沿对角线方向每次移动一个像素，从位置 100×100px 开始，到 500×500px 结束。在超时循环的主体中，你可以使用：
+考虑一个示例：将元素`myElement`沿对角线方向每次移动一个像素，从位置 100×100px 开始，到 500×500px 结束。在超时循环的主体中，你可以使用：
 
-```
+```javascript
 // 低效方式
 myElement.style.left = 1 + myElement.offsetLeft + 'px';
 myElement.style.top = 1 + myElement.offsetTop + 'px';
@@ -1894,10 +1859,10 @@ if (myElement.offsetLeft >= 500) {
 }
 ```
 
-但这并不高效，因为每次元素移动时，代码都会请求偏移值，导致浏览器刷新渲染队列，无法利用其优化。更好的做法是只获取一次起始位置值，并将其赋值给一个变量，例如 `var current = myElement.offsetLeft;`。然后在动画循环中，使用 `current` 变量，不再请求偏移值：
+但这并不高效，因为每次元素移动时，代码都会请求偏移值，导致浏览器刷新渲染队列，无法利用其优化。更好的做法是只获取一次起始位置值，并将其赋值给一个变量，例如`var current = myElement.offsetLeft;`。然后在动画循环中，使用`current`变量，不再请求偏移值：
 
-```
-current++
+```javascript
+current++;
 myElement.style.left = current + 'px';
 myElement.style.top = current + 'px';
 if (current >= 500) {
@@ -1913,37 +1878,39 @@ if (current >= 500) {
 
 避免页面大部分区域重排的一种技术是采用以下步骤：
 
-1.  对要动画化的元素使用绝对定位，将其从页面的布局流中移出。
-2.  对元素进行动画处理。当它展开时，会暂时覆盖页面的一部分。这只是一次重绘，且只涉及页面的一小部分，而不是对整个大块页面进行重排和重绘。
-3.  动画完成后，恢复定位，这样只需将文档的其余部分向下推一次。
+1. 对要动画化的元素使用绝对定位，将其从页面的布局流中移出。
+2. 对元素进行动画处理。当它展开时，会暂时覆盖页面的一部分。这只是一次重绘，且只涉及页面的一小部分，而不是对整个大块页面进行重排和重绘。
+3. 动画完成后，恢复定位，这样只需将文档的其余部分向下推一次。
 
-### IE 与 :hover
+### IE 与`:hover`
 
-从版本 7 开始，IE 可以在任何元素上应用 `:hover` CSS 伪选择器（在严格模式下）。然而，如果有大量元素使用了 `:hover`，响应性能会下降。在 IE 8 中问题更为明显。
+从版本 7 开始，IE 可以在任何元素上应用`:hover` CSS 伪选择器（在严格模式下）。然而，如果有大量元素使用了`:hover`，响应性能会下降。在 IE 8 中问题更为明显。
 
-例如，如果你创建一个包含 500–1000 行和 5 列的表格，并使用 `tr:hover` 来改变背景颜色并高亮用户所在的行，那么当用户在表格上移动时，性能会下降。高亮效果应用缓慢，CPU 使用率会升至 80%–90%。因此，在处理大量元素（如大型表格或长列表）时，应避免使用此效果。
+例如，如果你创建一个包含 500–1000 行和 5 列的表格，并使用`tr:hover`来改变背景颜色并高亮用户所在的行，那么当用户在表格上移动时，性能会下降。高亮效果应用缓慢，CPU 使用率会升至 80%–90%。因此，在处理大量元素（如大型表格或长列表）时，应避免使用此效果。
 
 ## 事件委托
 
-当页面上有大量元素，且每个元素都绑定了一个或多个事件处理程序（例如 `onclick`）时，这可能会影响性能。绑定每个处理程序都是有代价的——要么导致页面更重（更多的标记或 JavaScript 代码），要么增加运行时执行时间。你需要接触和修改的 DOM 节点越多，应用程序就越慢，尤其是事件绑定阶段通常发生在 `onload`（或 `DOMContentReady`）事件中，而这对每个交互丰富的网页来说都是一个繁忙的时刻。绑定事件需要处理时间，此外，浏览器还需要跟踪每个处理程序，这会占用内存。而且最终，这些事件处理程序中的很大一部分可能永远不需要（例如，用户只点击了一个按钮或链接，而不是全部 100 个），因此大量工作可能是不必要的。
+当页面上有大量元素，且每个元素都绑定了一个或多个事件处理程序（例如`onclick`）时，这可能会影响性能。绑定每个处理程序都是有代价的——要么导致页面更重（更多的标记或 JavaScript 代码），要么增加运行时执行时间。你需要接触和修改的 DOM 节点越多，应用程序就越慢，尤其是事件绑定阶段通常发生在`onload`（或`DOMContentReady`）事件中，而这对每个交互丰富的网页来说都是一个繁忙的时刻。绑定事件需要处理时间，此外，浏览器还需要跟踪每个处理程序，这会占用内存。而且最终，这些事件处理程序中的很大一部分可能永远不需要（例如，用户只点击了一个按钮或链接，而不是全部 100 个），因此大量工作可能是不必要的。
 
 处理 DOM 事件的一种简单而优雅的技术是事件委托。它基于事件会冒泡并由父元素处理这一事实。通过事件委托，你只需在包装元素上绑定一个处理程序，即可处理该父包装器下所有子元素发生的事件。
 
 根据 DOM 标准，每个事件有三个阶段：
 
-*   捕获阶段
-*   目标阶段
-*   冒泡阶段
+* 捕获阶段
+* 目标阶段
+* 冒泡阶段
 
 IE 不支持捕获阶段，但冒泡阶段足以用于委托。考虑一个具有如图 3-8 所示结构的页面。
 
-![一个示例 DOM 树](img/00003.jpeg)图 3-8. 一个示例 DOM 树
+![一个示例 DOM 树](img/00003.jpeg)
 
-当用户点击“菜单 #1”链接时，点击事件首先由 `<a>` 元素接收。然后它沿着 DOM 树向上冒泡，依次被 `<li>` 元素、`<ul>` 元素、`<div>` 元素等接收，一直到达文档顶部甚至 `window` 对象。这允许你只在一个父元素上绑定一个事件处理程序，就能接收所有子元素发生的事件通知。
+图 3-8. 一个示例 DOM 树
 
-假设你想为图中所示的文档提供渐进增强的 Ajax 体验。如果用户禁用了 JavaScript，那么菜单中的链接正常工作并重新加载页面。但如果 JavaScript 已启用且用户代理足够强大，你希望拦截所有点击，阻止默认行为（即跟随链接），发送 Ajax 请求获取内容，并更新页面的一部分而无需刷新。使用事件委托，你可以将点击监听器绑定到包含所有链接的 UL “menu” 元素上，并检查所有点击是否来自链接。
+当用户点击“菜单 #1”链接时，点击事件首先由`<a>`元素接收。然后它沿着 DOM 树向上冒泡，依次被`<li>`元素、`<ul>`元素、`<div>`元素等接收，一直到达文档顶部甚至`window`对象。这允许你只在一个父元素上绑定一个事件处理程序，就能接收所有子元素发生的事件通知。
 
-```
+假设你想为图中所示的文档提供渐进增强的 Ajax 体验。如果用户禁用了 JavaScript，那么菜单中的链接正常工作并重新加载页面。但如果 JavaScript 已启用且用户代理足够强大，你希望拦截所有点击，阻止默认行为（即跟随链接），发送 Ajax 请求获取内容，并更新页面的一部分而无需刷新。使用事件委托，你可以将点击监听器绑定到包含所有链接的 UL “menu”元素上，并检查所有点击是否来自链接。
+
+```javascript
 document.getElementById('menu').onclick = function(e) {
 
     // 跨浏览器目标
@@ -1980,20 +1947,18 @@ document.getElementById('menu').onclick = function(e) {
 
 如你所见，事件委托技术并不复杂；你只需要检查事件是否来自你感兴趣的元素。这里有一些冗长的跨浏览器代码，但如果你将这部分代码移到可复用的库中，代码就会变得相当简洁。跨浏览器部分包括：
 
-*   访问事件对象并识别事件源（目标）
-*   取消向文档树冒泡（可选）
-*   阻止默认行为（可选，但在此例中是必需的，因为任务是捕获链接而不跟随它们）
+* 访问事件对象并识别事件源（目标）
+* 取消向文档树冒泡（可选）
+* 阻止默认行为（可选，但在此例中是必需的，因为任务是捕获链接而不跟随它们）
 
 ## 总结
-
-
 
 DOM 访问和操作是现代 Web 应用的重要组成部分。但每次从 ECMAScript 跨入 DOM 领域时，都会付出代价。为了减少与 DOM 脚本相关的性能开销，请牢记以下几点：
 
 * 尽量减少 DOM 访问，尽可能在 JavaScript 中完成操作。
 * 使用局部变量存储需要重复访问的 DOM 引用。
-* 处理 HTML 集合时要小心，因为它们代表实时、底层的文档。将集合的 `length` 缓存到变量中，并在迭代时使用它；对于集合上的繁重操作，将集合复制到数组中。
-* 尽可能使用更快的 API，例如 `querySelectorAll()` 和 `firstElementChild`。
+* 处理 HTML 集合时要小心，因为它们代表实时、底层的文档。将集合的`length`缓存到变量中，并在迭代时使用它；对于集合上的繁重操作，将集合复制到数组中。
+* 尽可能使用更快的 API，例如`querySelectorAll()`和`firstElementChild`。
 * 注意重绘和重排；批量处理样式变更，“离线”操作 DOM 树，并缓存和最小化对布局信息的访问。
 * 在动画期间使用绝对定位。
 * 使用事件委托来减少事件处理程序的数量。
@@ -2010,7 +1975,7 @@ DOM 访问和操作是现代 Web 应用的重要组成部分。但每次从 ECMA
 
 ### 循环类型
 
-ECMA-262 第 3 版（定义 JavaScript 基本语法和行为的规范）定义了四种循环类型。第一种是标准的 `for` 循环，其语法与其他类 C 语言相同：
+ECMA-262 第 3 版（定义 JavaScript 基本语法和行为的规范）定义了四种循环类型。第一种是标准的`for`循环，其语法与其他类 C 语言相同：
 
 ```javascript
 for (var i=0; i < 10; i++){
@@ -2018,17 +1983,13 @@ for (var i=0; i < 10; i++){
 }
 ```
 
-`for` 循环往往是最常用的 JavaScript 循环结构。`for` 循环有四个部分：初始化、前置条件、后执行和循环体。遇到 `for` 循环时，首先执行初始化代码，然后检查前置条件。如果前置条件求值为 `true`，则执行循环体。执行完循环体后，运行后执行代码。`for` 循环的封装性使其成为开发者的最爱。
+`for`循环往往是最常用的 JavaScript 循环结构。`for`循环有四个部分：初始化、前置条件、后执行和循环体。遇到`for`循环时，首先执行初始化代码，然后检查前置条件。如果前置条件求值为`true`，则执行循环体。执行完循环体后，运行后执行代码。`for`循环的封装性使其成为开发者的最爱。
 
-***
+> **注意**
+>
+> 请注意，在`for`循环的初始化部分放置`var`语句会创建一个函数级变量，而不是循环级变量。JavaScript 只有函数级作用域，因此在`for`循环内部定义新变量与在循环外部定义新变量相同。
 
-#### 注意
-
-请注意，在 `for` 循环的初始化部分放置 `var` 语句会创建一个函数级变量，而不是循环级变量。JavaScript 只有函数级作用域，因此在 `for` 循环内部定义新变量与在循环外部定义新变量相同。
-
-***
-
-第二种循环类型是 `while` 循环。`while` 循环是一个简单的前置测试循环，由前置条件和循环体组成：
+第二种循环类型是`while`循环。`while`循环是一个简单的前置测试循环，由前置条件和循环体组成：
 
 ```javascript
 var i = 0;
@@ -2038,9 +1999,9 @@ while(i < 10){
 }
 ```
 
-在执行循环体之前，会评估前置条件。如果条件求值为 `true`，则执行循环体；否则跳过循环体。任何 `for` 循环也可以写成 `while` 循环，反之亦然。
+在执行循环体之前，会评估前置条件。如果条件求值为`true`，则执行循环体；否则跳过循环体。任何`for`循环也可以写成`while`循环，反之亦然。
 
-第三种循环类型是 `do-while` 循环。`do-while` 循环是 JavaScript 中唯一的后置测试循环，由两部分组成：循环体和后置条件：
+第三种循环类型是`do-while`循环。`do-while`循环是 JavaScript 中唯一的后置测试循环，由两部分组成：循环体和后置条件：
 
 ```javascript
 var i = 0;
@@ -2049,9 +2010,9 @@ do {
 } while (i++ < 10);
 ```
 
-在 `do-while` 循环中，循环体至少执行一次，后置条件决定是否应再次执行循环。
+在`do-while`循环中，循环体至少执行一次，后置条件决定是否应再次执行循环。
 
-第四种也是最后一种循环是 `for-in` 循环。此循环有一个非常特殊的目的：枚举任何对象的命名属性。基本格式如下：
+第四种也是最后一种循环是`for-in`循环。此循环有一个非常特殊的目的：枚举任何对象的命名属性。基本格式如下：
 
 ```javascript
 for (var prop in object){
@@ -2059,13 +2020,13 @@ for (var prop in object){
 }
 ```
 
-每次执行循环时，`prop` 变量都会被填充为 `object` 上存在的另一个属性名称（字符串），直到所有属性都被返回。返回的属性既包括对象实例上存在的属性，也包括通过其原型链继承的属性。
+每次执行循环时，`prop`变量都会被填充为`object`上存在的另一个属性名称（字符串），直到所有属性都被返回。返回的属性既包括对象实例上存在的属性，也包括通过其原型链继承的属性。
 
 ### 循环性能
 
-关于循环性能的一个持续争论是使用哪种循环。在 JavaScript 提供的四种循环类型中，只有一种明显比其他循环慢：`for-in` 循环。
+关于循环性能的一个持续争论是使用哪种循环。在 JavaScript 提供的四种循环类型中，只有一种明显比其他循环慢：`for-in`循环。
 
-由于每次迭代都会在实例或原型上进行属性查找，`for-in` 循环每次迭代的开销相当大，因此比其他循环慢。对于相同数量的循环迭代，`for-in` 循环可能比其他循环类型慢七倍。因此，建议避免使用 `for-in` 循环，除非你的目的是遍历未知数量的对象属性。如果你有一个有限且已知的属性列表需要遍历，使用其他循环类型并采用如下模式会更快：
+由于每次迭代都会在实例或原型上进行属性查找，`for-in`循环每次迭代的开销相当大，因此比其他循环慢。对于相同数量的循环迭代，`for-in`循环可能比其他循环类型慢七倍。因此，建议避免使用`for-in`循环，除非你的目的是遍历未知数量的对象属性。如果你有一个有限且已知的属性列表需要遍历，使用其他循环类型并采用如下模式会更快：
 
 ```javascript
 var props = ["prop1", "prop2"],
@@ -2076,22 +2037,22 @@ while (i < props.length){
 }
 ```
 
-此代码创建一个数组，其成员是属性名称。`while` 循环用于遍历这一小部分属性，并处理 `object` 上的相应成员。代码不是查找 `object` 上的每个属性，而是只关注感兴趣的属性，从而节省循环开销和时间。
+此代码创建一个数组，其成员是属性名称。`while`循环用于遍历这一小部分属性，并处理`object`上的相应成员。代码不是查找`object`上的每个属性，而是只关注感兴趣的属性，从而节省循环开销和时间。
 
-***
+
 
 #### 注意
 
-永远不要使用 `for-in` 来遍历数组的成员。
+永远不要使用`for-in`来遍历数组的成员。
 
-***
+---
 
-除了 `for-in` 循环之外，所有其他循环类型都具有相似的性能特征，因此试图确定哪种最快是没有意义的。循环类型的选择应基于你的需求，而不是性能考虑。
+除了`for-in`循环之外，所有其他循环类型都具有相似的性能特征，因此试图确定哪种最快是没有意义的。循环类型的选择应基于你的需求，而不是性能考虑。
 
 如果循环类型不影响循环性能，那什么会影响呢？实际上只有两个因素：
 
-* 每次迭代的工作量
-* 迭代次数
+- 每次迭代的工作量
+- 迭代次数
 
 通过减少其中一个或两个，你可以积极影响循环的整体性能。
 
@@ -2122,16 +2083,14 @@ do {
 
 1. 控制条件中的一次属性查找（`items.length`）
 2. 控制条件中的一次比较（`i < items.length`）
-3. 一次比较以查看控制条件是否求值为 `true`（`i < items.length == true`）
+3. 一次比较以查看控制条件是否求值为`true`（`i < items.length == true`）
 4. 一次递增操作（`i++`）
 5. 一次数组查找（`items[i]`）
 6. 一次函数调用（`process(items[i])`）
 
+这些简单循环的每次迭代中都有很多操作，尽管代码量不大。代码执行速度很大程度上取决于`process()`对每个元素所做的操作，但即便如此，减少每次迭代的操作总数也能显著提升循环的整体性能。
 
-
-这些简单循环的每次迭代中都有很多操作，尽管代码量不大。代码执行速度很大程度上取决于 `process()` 对每个元素所做的操作，但即便如此，减少每次迭代的操作总数也能显著提升循环的整体性能。
-
-优化循环工作量的第一步是尽量减少对象成员和数组元素的查找次数。正如第 2 章所讨论的，在大多数浏览器中，访问这些内容比访问局部变量或字面量要慢得多。前面的例子每次循环都要对 `items.length` 进行一次属性查找，这样做很浪费，因为该值在循环执行期间不会改变，因此造成了不必要的性能损失。只需进行一次属性查找，将值存储在局部变量中，然后在控制条件中使用该变量，就能轻松提升循环性能：
+优化循环工作量的第一步是尽量减少对象成员和数组元素的查找次数。正如第 2 章所讨论的，在大多数浏览器中，访问这些内容比访问局部变量或字面量要慢得多。前面的例子每次循环都要对`items.length`进行一次属性查找，这样做很浪费，因为该值在循环执行期间不会改变，因此造成了不必要的性能损失。只需进行一次属性查找，将值存储在局部变量中，然后在控制条件中使用该变量，就能轻松提升循环性能：
 
 ```
 // 减少属性查找
@@ -2173,24 +2132,20 @@ do {
 } while (k--);
 ```
 
-这个例子中的循环被反转，并将控制条件与递减操作合并。现在每个控制条件只是与零进行比较。控制条件与值 `true` 进行比较，任何非零数字都会自动转换为 `true`，因此零相当于 `false`。实际上，控制条件从两次比较（迭代器是否小于总数？以及该值是否等于 `true`？）减少为一次比较（该值是否为 `true`？）。每次迭代从两次比较减少到一次，进一步加快了循环速度。通过反转循环和减少属性查找，你可以看到执行时间比原始版本快 50%–60%。
+这个例子中的循环被反转，并将控制条件与递减操作合并。现在每个控制条件只是与零进行比较。控制条件与值`true`进行比较，任何非零数字都会自动转换为`true`，因此零相当于`false`。实际上，控制条件从两次比较（迭代器是否小于总数？以及该值是否等于`true`？）减少为一次比较（该值是否为`true`？）。每次迭代从两次比较减少到一次，进一步加快了循环速度。通过反转循环和减少属性查找，你可以看到执行时间比原始版本快 50%–60%。
 
 与原始版本相比，以下是这些循环每次迭代执行的操作：
 
-1.  控制条件中的一次比较（`i == true`）
-2.  一次递减操作（`i--`）
-3.  一次数组查找（`items[i]`）
-4.  一次函数调用（`process(items[i])`）
+1. 控制条件中的一次比较（`i == true`）
+2. 一次递减操作（`i--`）
+3. 一次数组查找（`items[i]`）
+4. 一次函数调用（`process(items[i])`）
 
 新的循环代码每次迭代减少了两个操作，随着迭代次数的增加，性能提升也会更加明显。
 
-* * *
-
 ### 注意
 
-当循环复杂度为 `O(n)` 时，减少每次迭代的工作量最为有效。当循环复杂度高于 `O(n)` 时，建议将注意力集中在减少迭代次数上。
-
-* * *
+当循环复杂度为`O(n)`时，减少每次迭代的工作量最为有效。当循环复杂度高于`O(n)`时，建议将注意力集中在减少迭代次数上。
 
 #### 减少迭代次数
 
@@ -2219,9 +2174,9 @@ do {
 } while (iterations--);
 ```
 
-这种达夫设备实现的基本思想是，每次循环最多允许调用 `process()` 八次。循环的迭代次数由总元素数除以八决定。由于并非所有数字都能被八整除，`startAt` 变量保存余数，并指示第一次循环中会调用多少次 `process()`。如果有 12 个元素，那么第一次循环会调用 `process()` 4 次，第二次循环调用 8 次，总共两次循环，而不是 12 次。
+这种达夫设备实现的基本思想是，每次循环最多允许调用`process()`八次。循环的迭代次数由总元素数除以八决定。由于并非所有数字都能被八整除，`startAt`变量保存余数，并指示第一次循环中会调用多少次`process()`。如果有 12 个元素，那么第一次循环会调用`process()`4 次，第二次循环调用 8 次，总共两次循环，而不是 12 次。
 
-该算法的一个稍快版本去掉了 `switch` 语句，将余数处理与主处理分开：
+该算法的一个稍快版本去掉了`switch`语句，将余数处理与主处理分开：
 
 ```
 // 致谢：Jeff Greenberg
@@ -2248,13 +2203,13 @@ while(iterations){
 }
 ```
 
-尽管这个实现现在有两个循环而不是一个，但由于去掉了循环体中的 `switch` 语句，它比原始版本运行得更快。
+尽管这个实现现在有两个循环而不是一个，但由于去掉了循环体中的`switch`语句，它比原始版本运行得更快。
 
 是否值得使用达夫设备（无论是原始版本还是修改版本），很大程度上取决于你已有的迭代次数。当循环迭代次数少于 1000 时，与使用常规循环结构相比，你可能只会看到微不足道的性能提升。然而，当迭代次数超过 1000 时，达夫设备的效果会显著增强。例如，在 500,000 次迭代时，执行时间比常规循环最多减少 70%。
 
 ### 基于函数的迭代
 
-ECMA-262 第五版在原生 `array` 对象上引入了一个名为 `forEach()` 的新方法。该方法遍历数组的每个成员，并对每个成员运行一个函数。要运行的函数作为参数传递给 `forEach()`，调用时会接收三个参数：数组元素的值、数组元素的索引以及数组本身。以下是一个使用示例：
+ECMA-262 第五版在原生`array`对象上引入了一个名为`forEach()`的新方法。该方法遍历数组的每个成员，并对每个成员运行一个函数。要运行的函数作为参数传递给`forEach()`，调用时会接收三个参数：数组元素的值、数组元素的索引以及数组本身。以下是一个使用示例：
 
 ```
 items.forEach(function(value, index, array){
@@ -2262,11 +2217,7 @@ items.forEach(function(value, index, array){
 });
 ```
 
-`forEach()` 方法在 Firefox、Chrome 和 Safari 中已原生实现。此外，大多数 JavaScript 库都有逻辑等效的实现：
-
-
-
-
+`forEach()`方法在 Firefox、Chrome 和 Safari 中已原生实现。此外，大多数 JavaScript 库都有逻辑等效的实现：
 
 ```
 //YUI 3
@@ -2299,11 +2250,11 @@ $each(items, function(value, index){
 
 ## 条件语句
 
-与循环类似，条件语句决定了 JavaScript 的执行流程。关于使用 `if-else` 语句还是 `switch` 语句的传统争论同样适用于 JavaScript，正如它适用于其他语言一样。由于不同浏览器实现了不同的流程控制优化，因此并不总是清楚该使用哪种技术。
+与循环类似，条件语句决定了 JavaScript 的执行流程。关于使用`if-else`语句还是`switch`语句的传统争论同样适用于 JavaScript，正如它适用于其他语言一样。由于不同浏览器实现了不同的流程控制优化，因此并不总是清楚该使用哪种技术。
 
-### `if-else` 与 `switch` 对比
+### `if-else`与`switch`对比
 
-关于使用 `if-else` 还是 `switch` 的主流理论基于所测试条件的数量：条件数量越多，就越倾向于使用 `switch` 而非 `if-else`。这通常归结为哪种代码更易读。争论点在于，当条件较少时 `if-else` 更易读，而当条件数量较多时 `switch` 更易读。考虑以下代码：
+关于使用`if-else`还是`switch`的主流理论基于所测试条件的数量：条件数量越多，就越倾向于使用`switch`而非`if-else`。这通常归结为哪种代码更易读。争论点在于，当条件较少时`if-else`更易读，而当条件数量较多时`switch`更易读。考虑以下代码：
 
 ```
 if (found){
@@ -2322,7 +2273,7 @@ switch(found){
 }
 ```
 
-尽管两段代码执行相同的任务，但许多人会认为 `if-else` 语句比 `switch` 更易读。然而，增加条件数量通常会逆转这种看法：
+尽管两段代码执行相同的任务，但许多人会认为`if-else`语句比`switch`更易读。然而，增加条件数量通常会逆转这种看法：
 
 ```
 if (color == "red"){
@@ -2359,15 +2310,15 @@ switch (color){
 }
 ```
 
-大多数人会认为这段代码中的 `switch` 语句比 `if-else` 语句更具可读性。
+大多数人会认为这段代码中的`switch`语句比`if-else`语句更具可读性。
 
-事实证明，在大多数情况下，`switch` 语句比 `if-else` 更快，但只有在条件数量很大时才会显著更快。两者性能的主要区别在于，`if-else` 每增加一个条件的增量成本比 `switch` 更大。因此，我们在考虑性能时，自然倾向于在条件数量少时使用 `if-else`，在条件数量多时使用 `switch` 语句，这恰恰是正确的建议。
+事实证明，在大多数情况下，`switch`语句比`if-else`更快，但只有在条件数量很大时才会显著更快。两者性能的主要区别在于，`if-else`每增加一个条件的增量成本比`switch`更大。因此，我们在考虑性能时，自然倾向于在条件数量少时使用`if-else`，在条件数量多时使用`switch`语句，这恰恰是正确的建议。
 
-一般来说，当需要测试两个离散值或几个不同的值范围时，最好使用 `if-else`。当需要测试的离散值超过两个时，`switch` 语句是最优选择。
+一般来说，当需要测试两个离散值或几个不同的值范围时，最好使用`if-else`。当需要测试的离散值超过两个时，`switch`语句是最优选择。
 
-### 优化 `if-else`
+### 优化`if-else`
 
-在优化 `if-else` 时，目标始终是尽量减少在找到正确路径之前需要评估的条件数量。因此，最简单的优化是确保最常见的条件放在最前面。考虑以下代码：
+在优化`if-else`时，目标始终是尽量减少在找到正确路径之前需要评估的条件数量。因此，最简单的优化是确保最常见的条件放在最前面。考虑以下代码：
 
 ```
 if (value < 5) {
@@ -2379,9 +2330,9 @@ if (value < 5) {
 }
 ```
 
-这段代码仅在 `value` 最常小于 5 时才是最优的。如果 `value` 通常大于或等于 10，那么每次都需要评估两个条件才能找到正确路径，最终增加了该语句的平均执行时间。`if-else` 中的条件应始终按从最可能到最不可能的顺序排列，以确保最快的执行速度。
+这段代码仅在`value`最常小于 5 时才是最优的。如果`value`通常大于或等于 10，那么每次都需要评估两个条件才能找到正确路径，最终增加了该语句的平均执行时间。`if-else`中的条件应始终按从最可能到最不可能的顺序排列，以确保最快的执行速度。
 
-另一种减少条件评估的方法是，将 `if-else` 组织成一系列嵌套的 `if-else` 语句。使用单个大型 `if-else` 通常会导致整体执行时间变慢，因为每个附加条件都会被评估。例如：
+另一种减少条件评估的方法是，将`if-else`组织成一系列嵌套的`if-else`语句。使用单个大型`if-else`通常会导致整体执行时间变慢，因为每个附加条件都会被评估。例如：
 
 ```
 if (value == 0){
@@ -2409,7 +2360,7 @@ if (value == 0){
 }
 ```
 
-对于这个 `if-else` 语句，需要评估的最大条件数量是 10。如果假设 `value` 的可能值在 0 到 10 之间均匀分布，这会降低平均执行时间。为了尽量减少需要评估的条件数量，可以将代码重写为一系列嵌套的 `if-else` 语句，例如：
+对于这个`if-else`语句，需要评估的最大条件数量是 10。如果假设`value`的可能值在 0 到 10 之间均匀分布，这会降低平均执行时间。为了尽量减少需要评估的条件数量，可以将代码重写为一系列嵌套的`if-else`语句，例如：
 
 ```
 if (value < 6){
@@ -2452,19 +2403,19 @@ if (value < 6){
 }
 ```
 
-重写后的 `if-else` 语句每次最多只需要评估四个条件。这是通过应用类似二分查找的方法实现的，将可能的值分成一系列范围进行检查，然后在该范围内进一步深入。当值在 0 到 10 之间均匀分布时，执行这段代码的平均时间大约是执行之前 `if-else` 语句的一半。这种方法最适合测试值范围的情况（与离散值相对，离散值情况下通常更适合使用 `switch` 语句）。
+
+
+重写后的`if-else`语句每次最多只需要评估四个条件。这是通过应用类似二分查找的方法实现的，将可能的值分成一系列范围进行检查，然后在该范围内进一步深入。当值在 0 到 10 之间均匀分布时，执行这段代码的平均时间大约是执行之前`if-else`语句的一半。这种方法最适合测试值范围的情况（与离散值相对，离散值情况下通常更适合使用`switch`语句）。
 
 ### 查找表
 
-有时处理条件语句的最佳方法是完全避免使用 `if-else` 和 `switch`。当需要测试大量离散值时，`if-else` 和 `switch` 都比使用查找表慢得多。查找表可以在 JavaScript 中使用数组或普通对象创建，从查找表中访问数据比使用 `if-else` 或 `switch` 快得多，尤其是在条件数量很大时（参见图 4-1）。
+有时处理条件语句的最佳方法是完全避免使用`if-else`和`switch`。当需要测试大量离散值时，`if-else`和`switch`都比使用查找表慢得多。查找表可以在 JavaScript 中使用数组或普通对象创建，从查找表中访问数据比使用`if-else`或`switch`快得多，尤其是在条件数量很大时（参见图 4-1）。
 
-![数组项查找与在 Internet Explorer 7 中使用 if-else 或 switch 的对比](img/00012.gif)图 4-1. 数组项查找与在 Internet Explorer 7 中使用 if-else 或 switch 的对比
+![数组项查找与在 Internet Explorer 7 中使用 if-else 或 switch 的对比](img/00012.gif)
 
-与 `if-else` 和 `switch` 相比，查找表不仅速度非常快，而且在需要测试大量离散值时，还有助于使代码更具可读性。例如，当 `switch` 语句变得庞大时，会显得笨重，比如：
+图 4-1. 数组项查找与在 Internet Explorer 7 中使用 if-else 或 switch 的对比
 
-
-
-
+与`if-else`和`switch`相比，查找表不仅速度非常快，而且在需要测试大量离散值时，还有助于使代码更具可读性。例如，当`switch`语句变得庞大时，会显得笨重，比如：
 
 ```
 switch(value){
@@ -2493,20 +2444,20 @@ switch(value){
 }
 ```
 
-这段 `switch` 语句在代码中占据的空间可能与其重要性不成比例。整个结构可以用一个数组作为查找表来替代：
+这段`switch`语句在代码中占据的空间可能与其重要性不成比例。整个结构可以用一个数组作为查找表来替代：
 
 ```
-//define the array of results
+/* define the array of results */
 var results = [result0, result1, result2, result3, result4, result5, result6,
-               result7, result8, result9, result10]
+               result7, result8, result9, result10];
 
-//return the correct result
+/* return the correct result */
 return results[value];
 ```
 
 使用查找表时，你完全消除了所有条件判断。操作变成了数组项查找或对象成员查找。这是查找表的一大优势：由于没有条件需要评估，随着可能值的数量增加，几乎没有额外的开销。
 
-当单个键与单个值之间存在逻辑映射时（如前面的示例），查找表最为有用。而当每个键需要执行独特的操作或一组操作时，`switch` 语句更为合适。
+当单个键与单个值之间存在逻辑映射时（如前面的示例），查找表最为有用。而当每个键需要执行独特的操作或一组操作时，`switch`语句更为合适。
 
 ## 递归
 
@@ -2528,18 +2479,20 @@ function factorial(n){
 
 JavaScript 引擎支持的递归深度各不相同，并且与 JavaScript 调用栈的大小直接相关。除了 Internet Explorer（其调用栈与可用系统内存相关）之外，所有其他浏览器都有静态的调用栈限制。与旧版浏览器相比，最新浏览器版本的调用栈大小相对较高（例如，Safari 2 的调用栈大小为 100）。图 4-2 显示了主要浏览器的调用栈大小。
 
-![JavaScript 浏览器中的调用栈大小](img/00023.gif)图 4-2. 浏览器中的 JavaScript 调用栈大小
+![JavaScript 浏览器中的调用栈大小](img/00023.gif)
+
+图 4-2. 浏览器中的 JavaScript 调用栈大小
 
 当通过引入过多递归超出最大调用栈大小时，浏览器会报错，并显示以下消息之一：
 
-*   Internet Explorer：“第 x 行堆栈溢出”
-*   Firefox：“递归过多”
-*   Safari：“超出最大调用栈大小”
-*   Opera：“中止（控制堆栈溢出）”
+- Internet Explorer：“第 x 行堆栈溢出”
+- Firefox：“递归过多”
+- Safari：“超出最大调用栈大小”
+- Opera：“中止（控制堆栈溢出）”
 
 Chrome 是唯一在超出调用栈大小时不向用户显示消息的浏览器。
 
-堆栈溢出错误最有趣的部分可能是，在某些浏览器中它们是实际的 JavaScript 错误，因此可以使用 `try-catch` 语句捕获。异常类型因使用的浏览器而异。在 Firefox 中，它是 `InternalError`；在 Safari 和 Chrome 中，它是 `RangeError`；而 Internet Explorer 抛出通用的 `Error` 类型。（Opera 不抛出错误，只是停止 JavaScript 引擎。）这使得可以直接从 JavaScript 处理此类错误：
+堆栈溢出错误最有趣的部分可能是，在某些浏览器中它们是实际的 JavaScript 错误，因此可以使用`try-catch`语句捕获。异常类型因使用的浏览器而异。在 Firefox 中，它是`InternalError`；在 Safari 和 Chrome 中，它是`RangeError`；而 Internet Explorer 抛出通用的`Error`类型。（Opera 不抛出错误，只是停止 JavaScript 引擎。）这使得可以直接从 JavaScript 处理此类错误：
 
 ```
 try {
@@ -2551,17 +2504,13 @@ try {
 
 如果未处理，这些错误会像其他错误一样向上冒泡（在 Firefox 中，最终出现在 Firebug 和错误控制台中；在 Safari/Chrome 中，显示在 JavaScript 控制台中），但 Internet Explorer 除外。IE 不仅会显示 JavaScript 错误，还会显示一个看起来像带有堆栈溢出消息的警告对话框。
 
-* * *
-
 ### 注意
 
 尽管可以在 JavaScript 中捕获这些错误，但不建议这样做。任何可能超出最大调用栈大小的脚本都不应部署。
 
-* * *
-
 ### 递归模式
 
-当你遇到调用栈大小限制时，第一步应该是识别代码中的任何递归实例。为此，需要注意两种递归模式。第一种是直接的递归模式，如前面 `factorial()` 函数所示，即函数调用自身。一般模式如下：
+当你遇到调用栈大小限制时，第一步应该是识别代码中的任何递归实例。为此，需要注意两种递归模式。第一种是直接的递归模式，如前面`factorial()`函数所示，即函数调用自身。一般模式如下：
 
 ```
 function recurse(){
@@ -2624,12 +2573,12 @@ function mergeSort(items){
 }
 ```
 
-这段归并排序代码相当简单直接，但 `mergeSort()` 函数本身最终会被频繁调用。递归函数是浏览器中堆栈溢出错误的常见原因。
+这段归并排序代码相当简单直接，但`mergeSort()`函数本身最终会被频繁调用。递归函数是浏览器中堆栈溢出错误的常见原因。
 
 遇到堆栈溢出错误并不一定意味着整个算法必须改变；它只是意味着递归不是最佳实现。归并排序算法也可以使用迭代实现，例如：
 
 ```
-//uses the same merge() function from previous example
+/* uses the same merge() function from previous example */
 
 function mergeSort(items){
 
@@ -2641,30 +2590,26 @@ function mergeSort(items){
     for (var i=0, len=items.length; i < len; i++){
         work.push([items[i]]);
     }
-    work.push([]);  //in case of odd number of items
+    work.push([]);  /* in case of odd number of items */
 
     for (var lim=len; lim > 1; lim = Math.floor((lim+1)/2)){
         for (var j=0,k=0; k < lim; j++, k+=2){
             work[j] = merge(work[k], work[k+1]);
         }
-        work[j] = [];  //in case of odd number of items
+        work[j] = [];  /* in case of odd number of items */
     }
 
     return work[0];
 }
 ```
 
-
-
-
-
-这个 `mergeSort()` 的实现与之前的版本功能相同，但没有使用递归。虽然归并排序的迭代版本可能比递归版本稍慢，但它不会像递归版本那样对调用栈造成同样的影响。将递归算法改为迭代算法只是避免栈溢出错误的方法之一。
+这个`mergeSort()`的实现与之前的版本功能相同，但没有使用递归。虽然归并排序的迭代版本可能比递归版本稍慢，但它不会像递归版本那样对调用栈造成同样的影响。将递归算法改为迭代算法只是避免栈溢出错误的方法之一。
 
 ### 记忆化
 
 避免工作是性能优化的最佳技巧。代码需要做的工作越少，执行速度就越快。同理，避免重复工作也很有意义。多次执行相同的任务是对执行时间的浪费。记忆化是一种通过缓存先前计算结果以供后续重用，从而避免重复工作的方法，这使得记忆化成为递归算法中一项有用的技术。
 
-当递归函数在代码执行过程中被多次调用时，往往会产生大量重复工作。前面在递归中介绍的 `factorial()` 函数就是一个很好的例子，展示了递归函数如何重复执行相同的工作。考虑以下代码：
+当递归函数在代码执行过程中被多次调用时，往往会产生大量重复工作。前面在递归中介绍的`factorial()`函数就是一个很好的例子，展示了递归函数如何重复执行相同的工作。考虑以下代码：
 
 ```
 var fact6 = factorial(6);
@@ -2672,9 +2617,9 @@ var fact5 = factorial(5);
 var fact4 = factorial(4);
 ```
 
-这段代码计算了三个阶乘，导致 `factorial()` 函数总共被调用了 18 次。最糟糕的是，所有必要的工作都在第一行完成了。由于 6 的阶乘等于 6 乘以 5 的阶乘，因此 5 的阶乘被计算了两次。更糟的是，4 的阶乘被计算了三次。更合理的做法是保存这些计算结果并重用它们，而不是每次函数调用都从头开始。
+这段代码计算了三个阶乘，导致`factorial()`函数总共被调用了 18 次。最糟糕的是，所有必要的工作都在第一行完成了。由于 6 的阶乘等于 6 乘以 5 的阶乘，因此 5 的阶乘被计算了两次。更糟的是，4 的阶乘被计算了三次。更合理的做法是保存这些计算结果并重用它们，而不是每次函数调用都从头开始。
 
-你可以按如下方式重写 `factorial()` 函数以利用记忆化：
+你可以按如下方式重写`factorial()`函数以利用记忆化：
 
 ```
 function memfactorial(n){
@@ -2694,7 +2639,7 @@ function memfactorial(n){
 }
 ```
 
-这个记忆化版本的阶乘函数的关键在于创建了一个 `cache` 对象。该对象存储在函数本身，并预先填充了两个最简单的阶乘值：0 和 1。在计算阶乘之前，会检查 `cache` 是否已经执行过该计算。如果没有缓存值，则说明需要首次计算，并将结果存入 `cache` 以供后续使用。该函数的使用方式与原始 `factorial()` 函数相同：
+这个记忆化版本的阶乘函数的关键在于创建了一个`cache`对象。该对象存储在函数本身，并预先填充了两个最简单的阶乘值：0 和 1。在计算阶乘之前，会检查`cache`是否已经执行过该计算。如果没有缓存值，则说明需要首次计算，并将结果存入`cache`以供后续使用。该函数的使用方式与原始`factorial()`函数相同：
 
 ```
 var fact6 = memfactorial(6);
@@ -2702,9 +2647,9 @@ var fact5 = memfactorial(5);
 var fact4 = memfactorial(4);
 ```
 
-这段代码返回了三个不同的阶乘值，但总共只调用了 `memfactorial()` 八次。由于所有必要的计算都在第一行完成，接下来的两行无需执行任何递归，因为返回的是缓存的值。
+这段代码返回了三个不同的阶乘值，但总共只调用了`memfactorial()`八次。由于所有必要的计算都在第一行完成，接下来的两行无需执行任何递归，因为返回的是缓存的值。
 
-每个递归函数的记忆化过程可能略有不同，但通常遵循相同的模式。为了更方便地对函数进行记忆化，你可以定义一个 `memoize()` 函数来封装基本功能。例如：
+每个递归函数的记忆化过程可能略有不同，但通常遵循相同的模式。为了更方便地对函数进行记忆化，你可以定义一个`memoize()`函数来封装基本功能。例如：
 
 ```
 function memoize(fundamental, cache){
@@ -2721,37 +2666,31 @@ function memoize(fundamental, cache){
 }
 ```
 
-这个 `memoize()` 函数接受两个参数：一个需要记忆化的函数和一个可选的 `cache` 对象。如果你希望预先填充一些值，可以传入 `cache` 对象；否则会创建一个新的 `cache` 对象。然后创建一个 `shell` 函数，它包装了原始函数（`fundamental`），并确保只有在从未计算过的情况下才计算新结果。返回这个 `shell` 函数，以便你可以直接调用它，例如：
+这个`memoize()`函数接受两个参数：一个需要记忆化的函数和一个可选的`cache`对象。如果你希望预先填充一些值，可以传入`cache`对象；否则会创建一个新的`cache`对象。然后创建一个`shell`函数，它包装了原始函数（`fundamental`），并确保只有在从未计算过的情况下才计算新结果。返回这个`shell`函数，以便你可以直接调用它，例如：
 
 ```
-// 对阶乘函数进行记忆化
+/* 对阶乘函数进行记忆化 */
 var memfactorial = memoize(factorial, { "0": 1, "1": 1 });
 
-// 调用新函数
+/* 调用新函数 */
 var fact6 = memfactorial(6);
 var fact5 = memfactorial(5);
 var fact4 = memfactorial(4);
 ```
 
-这种通用记忆化方式不如针对特定函数手动优化算法，因为 `memoize()` 函数会缓存特定参数下的函数调用结果。因此，只有当 `shell` 函数多次以相同参数调用时，递归调用才会被保存。因此，对于存在显著性能问题的函数，最好手动实现记忆化，而不是应用通用的记忆化方案。
+这种通用记忆化方式不如针对特定函数手动优化算法，因为`memoize()`函数会缓存特定参数下的函数调用结果。因此，只有当`shell`函数多次以相同参数调用时，递归调用才会被保存。因此，对于存在显著性能问题的函数，最好手动实现记忆化，而不是应用通用的记忆化方案。
 
 ## 总结
 
 与其他编程语言一样，代码的组织方式和所选算法会影响 JavaScript 的执行时间。与其他编程语言不同，JavaScript 可用的资源有限，因此优化技术更为重要。
 
-*   `for`、`while` 和 `do-while` 循环具有相似的性能特征，因此没有哪种循环类型明显快于或慢于其他类型。
-
-*   除非需要遍历未知数量的对象属性，否则避免使用 `for-in` 循环。
-
-*   提高循环性能的最佳方法是减少每次迭代的工作量以及减少循环迭代次数。
-
-*   一般来说，`switch` 总是比 `if-else` 快，但并非总是最佳解决方案。
-
-*   查找表是使用 `if-else` 或 `switch` 进行多重条件求值的更快替代方案。
-
-*   浏览器调用栈大小限制了 JavaScript 允许的递归深度；栈溢出错误会阻止其余代码的执行。
-
-*   如果遇到栈溢出错误，请将方法改为迭代算法，或使用记忆化来避免重复工作。
+- `for`、`while`和`do-while`循环具有相似的性能特征，因此没有哪种循环类型明显快于或慢于其他类型。
+- 除非需要遍历未知数量的对象属性，否则避免使用`for-in`循环。
+- 提高循环性能的最佳方法是减少每次迭代的工作量以及减少循环迭代次数。
+- 一般来说，`switch`总是比`if-else`快，但并非总是最佳解决方案。
+- 查找表是使用`if-else`或`switch`进行多重条件求值的更快替代方案。
+- 浏览器调用栈大小限制了 JavaScript 允许的递归深度；栈溢出错误会阻止其余代码的执行。
+- 如果遇到栈溢出错误，请将方法改为迭代算法，或使用记忆化来避免重复工作。
 
 执行的代码量越大，使用这些策略带来的性能提升就越大。
 
@@ -2763,13 +2702,9 @@ var fact4 = memfactorial(4);
 
 在 JavaScript 中，对于任何超出简单字符串处理的任务，正则表达式都是必不可少的。因此，本章的大部分内容将帮助你理解正则表达式引擎^([2])如何在内部处理你的字符串，并向你展示如何利用这些知识编写正则表达式。
 
-* * *
-
 ### 注意
 
 由于术语 *regular expression* 有点冗长，通常用 *regex* 作为简称，复数形式为 *regexes*。
-
-* * *
 
 此外，在本章中，你还将了解用于拼接和修剪字符串的最快跨浏览器方法，发现如何通过减少回溯来提高正则表达式性能，并掌握许多其他高效处理字符串和正则表达式的技巧。
 
@@ -2783,64 +2718,62 @@ var fact4 = memfactorial(4);
 
 | 方法 | 示例 |
 | --- | --- |
-
-
-
-
-
 | `+` 运算符 | `str = "a" + "b" + "c";` |
-| `+=` 运算符 | `str = "a";``str += "b";``str += "c";` |
+| `+=` 运算符 | `str = "a";`<br>`str += "b";`<br>`str += "c";` |
+
+
+
+| 方法 | 示例 |
+| --- | --- |
 | `array.join()` | `str = ["a", "b", "c"].join("");` |
-| `string.concat()` | `str = "a";``str = str.concat("b", "c");` |
+| `string.concat()` | `str = "a";`<br>`str = str.concat("b", "c");` |
 
 所有这些方法在零星拼接几个字符串时都很快，因此对于日常使用，选择最实用的方式即可。然而，随着需要合并的字符串长度和数量增加，某些方法开始显现其优势。
 
-### 加号（+）与加等号（+=）运算符
+### 加号（`+`）与加等号（`+=`）运算符
 
 这些运算符提供了最简单的字符串拼接方法。事实上，除 IE7 及更早版本外，所有现代浏览器都对其进行了充分优化，你无需考虑其他选项。不过，有几种技巧可以最大化这些运算符的效率。
 
 首先看一个示例。以下是常见的拼接字符串赋值方式：
 
-```
+```javascript
 str += "one" + "two";
 ```
 
 执行这段代码时，会经历四个步骤：
 
-1.  在内存中创建一个临时字符串。
-2.  将拼接后的值 `"onetwo"` 赋给临时字符串。
-3.  将临时字符串与 `str` 的当前值拼接。
-4.  将结果赋给 `str`。
+1. 在内存中创建一个临时字符串。
+2. 将拼接后的值 `"onetwo"` 赋给临时字符串。
+3. 将临时字符串与 `str` 的当前值拼接。
+4. 将结果赋给 `str`。
 
 这实际上是浏览器实现该任务的近似过程，但已经很接近了。
 
 下面的代码通过两条独立的语句直接追加到 `str`，避免了临时字符串（列表中的步骤 1 和 2）。在大多数浏览器中，这能提升约 10%–40% 的性能：
 
-```
+```javascript
 str += "one";
 str += "two";
 ```
 
 实际上，你也可以用一条语句获得相同的性能提升，如下所示：
 
-```
+```javascript
 str = str + "one" + "two";
 // 等价于 str = ((str + "one") + "two")
 ```
 
 这避免了临时字符串，因为赋值表达式以 `str` 为基础，每次追加一个字符串，从左到右依次执行中间拼接。如果以不同顺序拼接（例如 `str = "one" + str + "two"`），则会失去这种优化。这是因为浏览器在合并字符串时分配内存的方式不同。除 IE 外，浏览器会尝试扩展表达式左侧字符串的内存分配，并将第二个字符串直接复制到其末尾（参见图 5-1）。如果在循环中，基础字符串始终位于最左侧，就可以避免重复复制逐渐变大的基础字符串。
 
-![拼接字符串时的内存使用示例：s1 被复制到 s2 末尾以创建 s3；基础字符串 s2 未被复制](img/00033.gif)图 5-1. 拼接字符串时的内存使用示例：s1 被复制到 s2 末尾以创建 s3；基础字符串 s2 未被复制
+![拼接字符串时的内存使用示例：s1 被复制到 s2 末尾以创建 s3；基础字符串 s2 未被复制](img/00033.gif)
+
+图 5-1. 拼接字符串时的内存使用示例：s1 被复制到 s2 末尾以创建 s3；基础字符串 s2 未被复制
 
 这些技巧不适用于 IE。在 IE8 中它们几乎没有效果，在 IE7 及更早版本中甚至可能拖慢速度。这是因为 IE 在底层执行拼接的方式不同。在 IE8 的实现中，拼接字符串仅存储对组成新字符串的现有字符串部分的引用。在最后一刻（实际使用拼接后的字符串时），这些字符串部分才会被复制到一个新的“真实”字符串中，然后替换之前存储的字符串引用，这样就不必在每次使用该字符串时都执行组装。
-
-* * *
 
 ### 注意
 
 IE8 的实现可能会干扰合成基准测试——使拼接看起来比实际更快——除非你在构建完测试字符串后强制进行拼接。例如，可以通过对最终字符串调用 `toString()` 方法、检查其 `length` 属性或将其插入 DOM 来实现。
-
-* * *
 
 IE7 及更早版本使用了一种较差的拼接实现，其中每对拼接的字符串都必须复制到新的内存位置。你将在后续章节中看到其潜在的重大影响。对于 IE8 之前的实现，本节中的建议可能会拖慢速度，因为将短字符串先拼接再与较大的基础字符串合并（从而避免多次复制大字符串）会更快。例如，对于 `largeStr = largeStr + s1 + s2`，IE7 及更早版本必须将大字符串复制两次：先与 `s1` 合并，再与 `s2` 合并。相反，`largeStr += s1 + s2` 先合并两个较小的字符串，然后将结果与大字符串拼接。创建 `s1 + s2` 的中间字符串对性能的影响远小于复制大字符串两次。
 
@@ -2848,7 +2781,7 @@ IE7 及更早版本使用了一种较差的拼接实现，其中每对拼接的�
 
 当赋值表达式中所有拼接的字符串都是编译时常量时，Firefox 会在编译时自动合并它们。以下是一个演示示例：
 
-```
+```javascript
 function foldingDemo() {
     var str = "compile" + "time" + "folding";
     str += "this" + "works" + "too";
@@ -2867,13 +2800,9 @@ function foldingDemo() {
 
 当字符串像这样折叠时，运行时不会产生中间字符串，拼接所花费的时间和内存降为零。这虽然很好，但并不常见，因为更常见的是从运行时数据构建字符串，而不是编译时常量。
 
-* * *
-
 ### 注意
 
 YUI Compressor 在构建时执行此优化。有关此工具的更多信息，请参见 JavaScript 压缩。
-
-* * *
 
 ### 数组连接
 
@@ -2883,7 +2812,7 @@ YUI Compressor 在构建时执行此优化。有关此工具的更多信息，�
 
 以下示例代码展示了数组连接所解决的性能问题：
 
-```
+```javascript
 var str = "I'm a thirty-five character string.",
     newStr = "",
     appends = 5000;
@@ -2895,7 +2824,9 @@ while (appends--) {
 
 这段代码拼接了 5000 个 35 字符的字符串。图 5-2^([3]) 显示了在 IE7 中完成此测试所需的时间，从 5000 次拼接开始，然后逐渐增加次数。
 
-![在 IE7 中使用 += 拼接字符串的时间](img/00045.gif)图 5-2. 在 IE7 中使用 += 拼接字符串的时间
+![在 IE7 中使用 `+=` 拼接字符串的时间](img/00045.gif)
+
+图 5-2. 在 IE7 中使用 `+=` 拼接字符串的时间
 
 IE7 的朴素拼接算法要求浏览器在每次循环中反复复制和分配越来越大的字符串内存，导致运行时间和内存消耗呈二次增长。
 
@@ -2903,7 +2834,7 @@ IE7 的朴素拼接算法要求浏览器在每次循环中反复复制和分配�
 
 现在考虑以下测试，它通过数组连接生成相同的字符串：
 
-```
+```javascript
 var str = "I'm a thirty-five character string.",
     strs = [],
     newStr,
@@ -2918,19 +2849,17 @@ newStr = strs.join("");
 
 图 5-3 显示了此测试在 IE7 中的运行时间。
 
+![在 IE7 中使用数组合并拼接字符串的时间](img/00056.gif)
 
-
-
-
-![在 IE7 中使用数组合并拼接字符串的时间](img/00056.gif)图 5-3. 在 IE7 中使用数组合并拼接字符串的时间
+图 5-3. 在 IE7 中使用数组合并拼接字符串的时间
 
 这种显著的性能提升源于避免了重复为越来越大的字符串分配内存和复制。当合并数组时，浏览器会分配足够的内存来容纳完整的字符串，并且最终字符串的同一部分不会被复制超过一次。
 
-### String.prototype.concat
+### `String.prototype.concat`
 
 原生的字符串 `concat` 方法接受任意数量的参数，并将每个参数追加到调用该方法的字符串上。这是最灵活的字符串拼接方式，因为你可以用它来追加一个字符串、一次追加几个字符串，或者追加整个字符串数组。
 
-```
+```javascript
 // 追加一个字符串
 str = str.concat(s1);
 
@@ -2945,7 +2874,7 @@ str = String.prototype.concat.apply(str, array);
 
 ## 正则表达式优化
 
-不谨慎编写的正则表达式可能成为主要的性能瓶颈（接下来的章节 失控回溯 中包含几个示例，展示了这可能有多严重），但你可以采取很多措施来提高正则表达式的效率。两个正则表达式匹配相同的文本并不意味着它们以相同的速度匹配。
+不谨慎编写的正则表达式可能成为主要的性能瓶颈（接下来的章节“失控回溯”中包含几个示例，展示了这可能有多严重），但你可以采取很多措施来提高正则表达式的效率。两个正则表达式匹配相同的文本并不意味着它们以相同的速度匹配。
 
 许多因素影响正则表达式的效率。首先，正则表达式所应用的文本本身就有很大差异，因为正则表达式在部分匹配上花费的时间比明显的非匹配要多。每个浏览器的正则表达式引擎也有不同的内部优化。^([4])
 
@@ -2957,19 +2886,19 @@ str = String.prototype.concat.apply(str, array);
 
 为了高效地使用正则表达式，理解它们是如何施展魔法的很重要。以下是正则表达式经历的基本步骤的快速概述：
 
-步骤 1：编译
+#### 步骤 1：编译
 
 > 当你创建一个正则表达式对象（使用正则表达式字面量或 `RegExp` 构造函数）时，浏览器会检查你的模式是否有错误，然后将其转换为用于实际执行匹配的原生代码例程。如果你将正则表达式赋值给一个变量，就可以避免对给定模式多次执行此步骤。
 
-步骤 2：设置起始位置
+#### 步骤 2：设置起始位置
 
 > 当正则表达式被使用时，第一步是确定目标字符串中搜索应该开始的位置。这最初是字符串的开头或由正则表达式的 `lastIndex` 属性指定的位置，^([5]) 但当从步骤 4 返回此处时（由于匹配尝试失败），位置是上一次尝试开始位置之后的一个字符。浏览器制造商在其正则表达式引擎中内置的优化可以通过早期决定跳过某些不必要的工作来避免在此阶段进行大量无谓的工作。例如，如果正则表达式以 `^` 开头，IE 和 Chrome 通常可以确定在字符串开头之后无法找到匹配，从而避免愚蠢地搜索后续位置。另一个例子是，如果所有可能的匹配都包含 `x` 作为第三个字符，一个智能的实现可能能够确定这一点，快速搜索下一个 `x`，并将起始位置设置在找到它的位置之前两个字符处（例如，最新版本的 Chrome 包含了这种优化）。
 
-步骤 3：匹配每个正则表达式标记
+#### 步骤 3：匹配每个正则表达式标记
 
 > 一旦正则表达式知道从哪里开始，它就会逐步遍历文本和正则表达式模式。当某个特定标记匹配失败时，正则表达式会尝试回溯到匹配尝试中的先前点，并沿着正则表达式的其他可能路径继续。
 
-步骤 4：成功或失败
+#### 步骤 4：成功或失败
 
 > 如果在字符串的当前位置找到了完全匹配，正则表达式宣布成功。如果已经尝试了正则表达式的所有可能路径但未找到匹配，正则表达式引擎会回到步骤 2，在字符串的下一个字符处再次尝试。只有当这个循环对字符串中的每个字符（以及最后一个字符之后的位置）都完成，并且没有找到任何匹配时，正则表达式才宣布整体失败。
 
@@ -2987,23 +2916,21 @@ str = String.prototype.concat.apply(str, array);
 
 下面是一个示例，演示了分支情况下这个过程是如何进行的。
 
-```
+```javascript
 /h(ello|appy) hippo/.test("hello there, happy hippo");
 ```
 
+这个正则表达式匹配“hello hippo”或“happy hippo”。它通过搜索一个 `h` 开始测试，这个 `h` 立即在目标字符串的第一个字符处找到。接下来，子表达式 `(ello|appy)` 提供了两种前进方式。正则表达式选择最左边的选项（交替总是从左到右工作），并检查 `ello` 是否匹配字符串中的后续字符。匹配成功，正则表达式也能匹配接下来的空格字符。然而，此时它遇到了死胡同，因为 `hippo` 中的 `h` 无法匹配字符串中接下来的 `t`。但正则表达式还不能放弃，因为它还没有尝试所有选项，所以它回溯到上一个决策点（就在它匹配了开头的 `h` 之后），并尝试匹配第二个交替选项。这也不成功，由于没有更多选项可尝试，正则表达式确定无法从字符串的第一个字符开始找到匹配，于是继续从第二个字符开始尝试。那里没有找到 `h`，所以它继续搜索，直到到达第 14 个字符，在那里它匹配了“happy”中的 `h`。然后它再次遍历各个选项。这次 `ello` 不匹配，但在回溯并尝试第二个选项后，它能够继续，直到匹配整个字符串“happy hippo”（参见图 5-4）。成功。
 
+![带有交替的回溯示例](img/00010.gif)
 
-
-
-这个正则表达式匹配“hello hippo”或“happy hippo”。它通过搜索一个`h`开始测试，这个`h`立即在目标字符串的第一个字符处找到。接下来，子表达式`(ello|appy)`提供了两种前进方式。正则表达式选择最左边的选项（交替总是从左到右工作），并检查`ello`是否匹配字符串中的后续字符。匹配成功，正则表达式也能匹配接下来的空格字符。然而，此时它遇到了死胡同，因为`hippo`中的`h`无法匹配字符串中接下来的`t`。但正则表达式还不能放弃，因为它还没有尝试所有选项，所以它回溯到上一个决策点（就在它匹配了开头的`h`之后），并尝试匹配第二个交替选项。这也不成功，由于没有更多选项可尝试，正则表达式确定无法从字符串的第一个字符开始找到匹配，于是继续从第二个字符开始尝试。那里没有找到`h`，所以它继续搜索，直到到达第 14 个字符，在那里它匹配了“happy”中的`h`。然后它再次遍历各个选项。这次`ello`不匹配，但在回溯并尝试第二个选项后，它能够继续，直到匹配整个字符串“happy hippo”（参见图 5-4）。成功。
-
-![带有交替的回溯示例](img/00010.gif)图 5-4. 带有交替的回溯示例
+图 5-4. 带有交替的回溯示例
 
 #### 重复与回溯
 
 下一个示例展示了回溯如何与重复量词一起工作。
 
-```
+```javascript
 var str = "<p>Para 1.</p>" +
           "<img src='smiley.jpg'>" +
           "<p>Para 2.</p>" +
@@ -3012,22 +2939,26 @@ var str = "<p>Para 1.</p>" +
 /<p>.*<\/p>/i.test(str);
 ```
 
-这里，正则表达式首先匹配字符串开头的三个字面字符`<p>`。接下来是`.*`。点号匹配除换行符以外的任何字符，贪婪的星号量词将其重复零次或多次——尽可能多地重复。由于目标字符串中没有换行符，这吞噬了字符串的其余部分！然而，正则表达式模式中还有更多内容需要匹配，所以正则表达式尝试匹配`<`。这在字符串末尾不起作用，因此正则表达式一次回溯一个字符，不断尝试匹配`<`，直到它回到`</div>`标签开头的`<`。然后它尝试匹配`\/`（一个转义的正斜杠），成功，接着匹配`p`，失败。正则表达式再次回溯，重复这个过程，直到最终匹配第二个段落末尾的`</p>`。匹配成功返回，范围从第一个段落的开头一直延伸到最后一个段落的结尾，这很可能不是你想要的。
+这里，正则表达式首先匹配字符串开头的三个字面字符 `<p>`。接下来是 `.*`。点号匹配除换行符以外的任何字符，贪婪的星号量词将其重复零次或多次——尽可能多地重复。由于目标字符串中没有换行符，这吞噬了字符串的其余部分！然而，正则表达式模式中还有更多内容需要匹配，所以正则表达式尝试匹配 `<`。这在字符串末尾不起作用，因此正则表达式一次回溯一个字符，不断尝试匹配 `<`，直到它回到 `</div>` 标签开头的 `<`。然后它尝试匹配 `\/`（一个转义的正斜杠），成功，接着匹配 `p`，失败。正则表达式再次回溯，重复这个过程，直到最终匹配第二个段落末尾的 `</p>`。匹配成功返回，范围从第一个段落的开头一直延伸到最后一个段落的结尾，这很可能不是你想要的。
 
-你可以通过将贪婪的`*`量词替换为懒惰的（又称非贪婪的）`*?`来更改正则表达式以匹配单个段落。懒惰量词的回溯工作方式相反。当正则表达式`/<p>.*?<\/p>/`遇到`.*?`时，它首先尝试完全跳过它，继续匹配`<\/p>`。它这样做是因为`*?`将其前面的元素重复零次或多次，尽可能*少*地重复，而可能的最少重复次数是零。然而，当接下来的`<`在字符串的这个位置匹配失败时，正则表达式回溯并尝试匹配下一个最少的字符数：一个。它像这样向前回溯，直到量词后面的`<\/p>`能够在第一个段落的末尾完全匹配。
+你可以通过将贪婪的 `*` 量词替换为懒惰的（又称非贪婪的）`*?` 来更改正则表达式以匹配单个段落。懒惰量词的回溯工作方式相反。当正则表达式 `/<p>.*?<\/p>/` 遇到 `.*?` 时，它首先尝试完全跳过它，继续匹配 `<\/p>`。它这样做是因为 `*?` 将其前面的元素重复零次或多次，尽可能*少*地重复，而可能的最少重复次数是零。然而，当接下来的 `<` 在字符串的这个位置匹配失败时，正则表达式回溯并尝试匹配下一个最少的字符数：一个。它像这样向前回溯，直到量词后面的 `<\/p>` 能够在第一个段落的末尾完全匹配。
 
 你可以看到，即使目标字符串中只有一个段落，因此该正则表达式的贪婪版本和懒惰版本是等价的，它们也会以不同的方式找到匹配（参见图 5-5）。
 
-![带有贪婪和懒惰量词的回溯示例](img/00020.gif)图 5-5. 带有贪婪和懒惰量词的回溯示例
+![带有贪婪和懒惰量词的回溯示例](img/00020.gif)
+
+图 5-5. 带有贪婪和懒惰量词的回溯示例
 
 ### 失控回溯
 
-当一个正则表达式让你的浏览器停滞数秒、数分钟甚至更长时间时，问题很可能是一个糟糕的失控回溯案例。为了演示这个问题，考虑以下正则表达式，它旨在匹配整个 HTML 文件。为了适应页面宽度，正则表达式被跨多行书写。与大多数其他正则表达式风格不同，JavaScript 没有让点号匹配任何字符（包括换行符）的选项，因此这个示例使用`[\s\S]`来匹配任何字符。
+当一个正则表达式让你的浏览器停滞数秒、数分钟甚至更长时间时，问题很可能是一个糟糕的失控回溯案例。为了演示这个问题，考虑以下正则表达式，它旨在匹配整个 HTML 文件。为了适应页面宽度，正则表达式被跨多行书写。与大多数其他正则表达式风格不同，JavaScript 没有让点号匹配任何字符（包括换行符）的选项，因此这个示例使用 `[\s\S]` 来匹配任何字符。
 
-```
+```javascript
 /<html>[\s\S]*?<head>[\s\S]*?<title>[\s\S]*?<\/title>[\s\S]*?<\/head>
 [\s\S]*?<body>[\s\S]*?<\/body>[\s\S]*?<\/html>/
 ```
+
+
 
 这个正则表达式在匹配合适的 HTML 字符串时工作正常，但当字符串缺少一个或多个必需的标签时，情况就变得糟糕了。例如，如果缺少`</html>`标签，最后一个`[\s\S]*?`会扩展到字符串的末尾，因为找不到`</html>`标签，然后，正则表达式并没有放弃，而是发现之前的每个`[\s\S]*?`序列都记住了允许它们进一步扩展的回溯位置。正则表达式尝试扩展倒数第二个`[\s\S]*?`——用它来匹配之前由正则表达式中的字面模式`<\/body>`匹配的`</body>`标签——并继续扩展它以寻找第二个`</body>`标签，直到再次到达字符串末尾。当所有这些都失败时，倒数第三个`[\s\S]*?`扩展到字符串末尾，依此类推。
 
@@ -3048,10 +2979,7 @@ var str = "<p>Para 1.</p>" +
 
 #### 使用前瞻和反向引用模拟原子组
 
-
-
-
-某些正则表达式引擎（包括 .NET、Java、Oniguruma、PCRE 和 Perl）支持一种名为`原子分组`（atomic grouping）的功能。原子组——写法为 `(?>...)`，其中省略号表示任何正则表达式模式——是具有特殊之处之处的非捕获分组。一旦正则表达式离开原子组，该组内的任何回溯位置都会被丢弃。这为 HTML 正则表达式的回溯问题提供了一个得好的解决方案：如果你将每个 `[\s\S]*?` 序列及其随后的 HTML 标签一起放在原子组内部，那么每当找到一个所需的 HTML 标签时，到为止的匹配内容基本上就被锁定了。如果正则表达式的后续部分匹配失败，原子组内的量词将不会记住任何回溯位置，因此 `[\s\S]*?` 序列将无法尝试扩展到超出已匹配的内容。
+某些正则表达式引擎（包括 .NET、Java、Oniguruma、PCRE 和 Perl）支持一种名为`原子分组`（atomic grouping）的功能。原子组——写法为`(?>...)`，其中省略号表示任何正则表达式模式——是具有特殊之处之处的非捕获分组。一旦正则表达式离开原子组，该组内的任何回溯位置都会被丢弃。这为 HTML 正则表达式的回溯问题提供了一个得好的解决方案：如果你将每个`[\s\S]*?`序列及其随后的 HTML 标签一起放在原子组内部，那么每当找到一个所需的 HTML 标签时，到为止的匹配内容基本上就被锁定了。如果正则表达式的后续部分匹配失败，原子组内的量词将不会记住任何回溯位置，因此`[\s\S]*?`序列将无法尝试扩展到超出已匹配的内容。
 
 这很棒，但 JavaScript 不支持原子分组，也没有提供任何其他消除无效回溯的功能。然而，事实证明你可以通过利用先行断言（lookahead）的一种不为人知的行为来模拟原子分组：即先行断言*就是*原子分组。区别在于，先行断言不会作为整体匹配的一部分消耗任何字符；它们仅仅是检查其包含的模式在该位置是否可以匹配。但是，你可以通过将先行断言的模式封装在一个捕获分组内部，并在先行断言外部对其添加一个反向引用来绕过这个问题。它的 own 如下：
 
@@ -3069,11 +2997,11 @@ var str = "<p>Para 1.</p>" +
 (?=([\s\S]*?<\/body>))\6[\s\S]*?<\/html>/
 ```
 
-现在，如果没有末尾的 `</html>` 且最后一个 `[\s\S]*?` 扩展到字符串末尾，正则表达式将立即失败，因为没有可以返回的回溯点。每当正则表达式找到中间标签并离开先行断言时，它都会丢弃先行断言内部所有的回溯位置。随后的反向引用只是重新匹配先行断言内找到字面字符，使其成为实际匹配的一部分。
+现在，如果没有末尾的`</html>`且最后一个`[\s\S]*?`扩展到字符串末尾，正则表达式将立即失败，因为没有可以返回的回溯点。每当正则表达式找到中间标签并离开先行断言时，它都会丢弃先行断言内部所有的回溯位置。随后的反向引用只是重新匹配先行断言内找到字面字符，使其成为实际匹配的一部分。
 
 #### 嵌套量词与失控回溯
 
-所谓的嵌套量词（nested quantifiers）总是需要额外的关注和小心，以确保你没有创建出失控回溯的可能。当一个量词出现在一个本身被另一个量词重复的分组内部（例如 `(x+)*`）时，该量词就是嵌套的。
+所谓的嵌套量词（nested quantifiers）总是需要额外的关注和小心，以确保你没有创建出失控回溯的可能。当一个量词出现在一个本身被另一个量词重复的分组内部（例如`(x+)*`）时，该量词就是嵌套的。
 
 嵌套量词本身并不是一种性能隐患。然而，如果不小心，在尝试匹配字符串时，它很容易创建出一种在内部和外部量词之间划分文本的海量方式。
 
@@ -3083,25 +3011,21 @@ var str = "<p>Para 1.</p>" +
 /<(?:[^>"']|"[^"]*"|'[^']*')*>/
 ```
 
-这可能过于简单了，因为它没有正确处理所有有效和无效标记的情况，但如果仅用于处理有效 HTML 片段，它可能运行良好。它相比于如 `/<[^>]*>/` 这样更幼稚的解决方案，优势在于它考虑了出现在属性值内部的 `>` 字符。它是通过非捕获分组中的第二个和第三替代方案实现的，这些方案单步匹配整个双引号和单引号属性值，允许除各自的引号类型以外的所有字符出现在其中。
+这可能过于简单了，因为它没有正确处理所有有效和无效标记的情况，但如果仅用于处理有效 HTML 片段，它可能运行良好。它相比于如`/<[^>]*>/`这样更幼稚的解决方案，优势在于它考虑了出现在属性值内部的`>`字符。它是通过非捕获分组中的第二个和第三替代方案实现的，这些方案单步匹配整个双引号和单引号属性值，允许除各自的引号类型以外的所有字符出现在其中。
 
-到目前为止，尽管存在嵌套的 `*` 量词，但还没有失控回溯的风险。第二个和第三替代选项在组的每次重复中精确匹配一个引号字符串序列，因此潜在的回溯点数量随目标字符串的长度线性增加。
+到目前为止，尽管存在嵌套的`*`量词，但还没有失控回溯的风险。第二个和第三替代选项在组的每次重复中精确匹配一个引号字符串序列，因此潜在的回溯点数量随目标字符串的长度线性增加。
 
-然而，看看非捕获分组中的第一个替代方案：`[^>"']`。它一次只能匹配一个字符，这看起来有点低效。你可能会认为在该字符类末尾添加一个 `+` 量词更好，这样在组的每次重复中（以及在正则表达式在目标字符串中找到匹配的位置处）就可以匹配多个合适的字符——你是对的。通过一次匹配多个字符，你将让正则表达式在通往成功匹配的途中跳过许多不必要的步骤。
+然而，看看非捕获分组中的第一个替代方案：`[^>"']`。它一次只能匹配一个字符，这看起来有点低效。你可能会认为在该字符类末尾添加一个`+`量词更好，这样在组的每次重复中（以及在正则表达式在目标字符串中找到匹配的位置处）就可以匹配多个合适的字符——你是对的。通过一次匹配多个字符，你将让正则表达式在通往成功匹配的途中跳过许多不必要的步骤。
 
-可能没有显而易见的是，这种变化可能导致的负面后果。如果正则表达式匹配了起始字符 `<`，但后面没有后续的 `>` 允许匹配尝试成功完成，那么由于新的内部量词与外部量词（跟随非捕获分组）组合以匹配 `<` 之后文本的方式巨大，失控回溯将进入高速状态。正则表达式在放弃匹配尝试之前必须尝试所有这些排列组合。小心！
+可能没有显而易见的是，这种变化可能导致的负面后果。如果正则表达式匹配了起始字符`<`，但后面没有后续的`>`允许匹配尝试成功完成，那么由于新的内部量词与外部量词（跟随非捕获分组）组合以匹配`<`之后文本的方式巨大，失控回溯将进入高速状态。正则表达式在放弃匹配尝试之前必须尝试所有这些排列组合。小心！
 
 ##### 变本加糟
 
-对于嵌套量词导致失控回溯的更极端的例子，请将正则表达式 `/(A+A+)+B/` 应用于一个只包含 `A` 的字符串。虽然这个正则表达式写成 `/AA+B/` 会更好，但为了讨论起见，假设这两个 `A` 代表能够匹配某些相同字符串的不同模式。
+对于嵌套量词导致失控回溯的更极端的例子，请将正则表达式`/(A+A+)+B/`应用于一个只包含`A`的字符串。虽然这个正则表达式写成`/AA+B/`会更好，但为了讨论起见，假设这两个`A`代表能够匹配某些相同字符串的不同模式。
 
-当应用于一个由 10 个 `A` 组成的字符串（`"AAAAAAAAAA"`）时，正则表达式首先使用第一个 `A+` 匹配所有 10 个字符。然后正则表达式回溯一个字符，让第二个 `A+` 匹配最后一个。分组接着尝试重复，但由于没有更多的 `A` 且组的 `+` 量词已经满足了至少匹配一次的要求，正则表达式接着寻找 `B`。它没有找到 `B`，但不能放弃，因为还有更多未尝试过的正则表达式路径。如果第一个 `A+` 匹配了 8 个字符而第二个匹配了 2 个呢？或者如果第一个匹配了 3 个，第二个匹配了 2 个，且组重复了两次呢？如果在第一次重复中，组的第一个匹配了 2 个，第二个匹配了 4 个呢？虽然对你我来说认为任何回溯都能产生缺失的 `B` 显然是愚蠢的，但正则表达式会尽职地检查这些无效选项以及更多。该正则表达式的最坏情况复杂度是惊人的 $O(2^n)$，即 2 的 $n$ 次，其中 $n$ 是字符串的长度。使用这里使用的 10 个 `A$，正则表达式需要 1024 次回溯步骤才能匹配失败，而使用 20 个 `A`，这个数字就会爆炸到百万以上。35 个 `A` 就足以让 Chrome、IE、Firefox 和 Opera 卡住至少 10 分钟（如果不是永久的话），因为它们需要处理超过 340 亿次的回溯步骤。例外是最新版本的 Safari，它能够检测到正则表达式正在循环并快速中止匹配（Safari 还会对允许的回溯步骤设置上限限制，并在超过此限制时中止匹配尝试）。
+当应用于一个由 10 个`A`组成的字符串（`"AAAAAAAAAA"`）时，正则表达式首先使用第一个`A+`匹配所有 10 个字符。然后正则表达式回溯一个字符，让第二个`A+`匹配最后一个。分组接着尝试重复，但由于没有更多的`A`且组的`+`量词已经满足了至少匹配一次的要求，正则表达式接着寻找`B`。它没有找到`B`，但不能放弃，因为还有更多未尝试过的正则表达式路径。如果第一个`A+`匹配了 8 个字符而第二个匹配了 2 个呢？或者如果第一个匹配了 3 个，第二个匹配了 2 个，且组重复了两次呢？如果在第一次重复中，组的第一个匹配了 2 个，第二个匹配了 4 个呢？虽然对你我来说认为任何回溯都能产生缺失的`B`显然是愚蠢的，但正则表达式会尽职地检查这些无效选项以及更多。该正则表达式的最坏情况复杂度是惊人的`O(2^n)`，即 2 的`n`次，其中`n`是字符串的长度。使用这里使用的 10 个`A`，正则表达式需要 1024 次回溯步骤才能匹配失败，而使用 20 个`A`，这个数字就会爆炸到百万以上。35 个`A`就足以让 Chrome、IE、Firefox 和 Opera 卡住至少 10 分钟（如果不是永久的话），因为它们需要处理超过 340 亿次的回溯步骤。例外是最新版本的 Safari，它能够检测到正则表达式正在循环并快速中止匹配（Safari 还会对允许的回溯步骤设置上限限制，并在超过此限制时中止匹配尝试）。
 
-防止此类问题的关键是确保正则表达式的两个部分不能匹配字符串的相同部分。对于这个正则表达式，修复方法是将其重写为 `/AA+B/`，但对于复杂的正则表达式，这个问题可能更难避免。添加模拟原子分组通常可以作为最后的手段，尽管在可行的情况下，其他解决方案通常会让你的正则表达式更容易理解。对于这个正则表达式，这样做看起来是 `/((?=(A+A+))\2)+B/`，并且完全消除了回溯问题。
-
-
-
-
+防止此类问题的关键是确保正则表达式的两个部分不能匹配字符串的相同部分。对于这个正则表达式，修复方法是将其重写为`/AA+B/`，但对于复杂的正则表达式，这个问题可能更难避免。添加模拟原子分组通常可以作为最后的手段，尽管在可行的情况下，其他解决方案通常会让你的正则表达式更容易理解。对于这个正则表达式，这样做看起来是`/((?=(A+A+))\2)+B/`，并且完全消除了回溯问题。
 
 由于正则表达式的性能会因所应用的文本而有很大差异，因此没有直接的方法来对正则表达式进行相互基准测试。为了获得最佳结果，你需要在不同长度的测试字符串上对正则表达式进行基准测试，这些字符串包括匹配、不匹配以及近似匹配的情况。
 
@@ -3111,90 +3035,86 @@ var str = "<p>Para 1.</p>" +
 
 以下是各种额外的正则表达式效率技巧。其中几点已经在回溯讨论中提及。
 
-> 专注于更快地失败
+#### 专注于更快地失败
 
-> 正则表达式处理缓慢通常是由缓慢的失败而非缓慢的匹配引起的。此外，如果你使用正则表达式来匹配大字符串中的小部分，那么正则表达式在更多位置上会失败而非成功。一个使正则表达式匹配更快但失败更慢的改动（例如，通过增加尝试所有正则表达式排列所需的回溯步骤）通常是一种得不偿失的权衡。
+正则表达式处理缓慢通常是由缓慢的失败而非缓慢的匹配引起的。此外，如果你使用正则表达式来匹配大字符串中的小部分，那么正则表达式在更多位置上会失败而非成功。一个使正则表达式匹配更快但失败更慢的改动（例如，通过增加尝试所有正则表达式排列所需的回溯步骤）通常是一种得不偿失的权衡。
 
-> 以简单、必需的标记开头
+#### 以简单、必需的标记开头
 
-> 理想情况下，正则表达式中的前导标记应该能够快速测试并排除尽可能多的明显不匹配位置。适合此目的的起始标记包括锚点（`^` 或 `$`）、特定字符（例如 `x` 或 `\u263A`）、字符类（例如 `[a-z]` 或像 `\d` 这样的简写）以及单词边界（`\b`）。如果可能，避免以分组或可选标记开头，并避免顶级交替，例如 `/one|two/`，因为这迫使正则表达式考虑多个前导标记。Firefox 对前导标记上任何量词的使用都很敏感，并且能够更好地优化，例如 `\s\s*` 优于 `\s+` 或 `\s{1,}`。其他浏览器大多会优化掉这些差异。
+理想情况下，正则表达式中的前导标记应该能够快速测试并排除尽可能多的明显不匹配位置。适合此目的的起始标记包括锚点（`^` 或 `$`）、特定字符（例如`x`或`\u263A`）、字符类（例如`[a-z]`或像`\d`这样的简写）以及单词边界（`\b`）。如果可能，避免以分组或可选标记开头，并避免顶级交替，例如`/one|two/`，因为这迫使正则表达式考虑多个前导标记。Firefox 对前导标记上任何量词的使用都很敏感，并且能够更好地优化，例如`\s\s*`优于`\s+`或`\s{1,}`。其他浏览器大多会优化掉这些差异。
 
-> 使量化的模式及其后续标记互斥
+#### 使量化的模式及其后续标记互斥
 
-> 当相邻标记或子表达式能够匹配的字符重叠时，正则表达式尝试在它们之间划分文本的方式数量会增加。为了帮助避免这种情况，请尽可能使你的模式具体化。当你真正想要的是 `"[^"\r\n]*"` 时，不要使用 `".*?"`（它依赖于回溯）。
+当相邻标记或子表达式能够匹配的字符重叠时，正则表达式尝试在它们之间划分文本的方式数量会增加。为了帮助避免这种情况，请尽可能使你的模式具体化。当你真正想要的是`"[^"\r\n]*"`时，不要使用`".*?"`（它依赖于回溯）。
 
-> 减少交替的数量和范围
+#### 减少交替的数量和范围
 
-> 使用竖线 `|` 的交替可能需要在字符串的每个位置测试所有交替选项。你可以通过使用字符类和可选组件，或者将交替推后到正则表达式的更后面（允许一些匹配尝试在到达交替之前失败）来减少对交替的需求。下表展示了这些技术的示例。
+使用竖线`|`的交替可能需要在字符串的每个位置测试所有交替选项。你可以通过使用字符类和可选组件，或者将交替推后到正则表达式的更后面（允许一些匹配尝试在到达交替之前失败）来减少对交替的需求。下表展示了这些技术的示例。
 
-> | 代替 | 使用 |
-> | --- | --- |
-> | `cat|bat` | `[cb]at` |
-> | `red|read` | `rea?d` |
-> | `red|raw` | `r(?:ed|aw)` |
-> | `(.|\r|\n)` | `[\s\S]` |
+| 代替 | 使用 |
+| --- | --- |
+| `cat|bat` | `[cb]at` |
+| `red|read` | `rea?d` |
+| `red|raw` | `r(?:ed|aw)` |
+| `(.|\r|\n)` | `[\s\S]` |
 
-> * * *
+---
 
-> ### 注意
+##### 注意
 
-> 匹配任意字符的字符类（例如 `[\s\S]`、`[\d\D]`、`[\w\W]` 或 `[\0-\uFFFF]`）实际上等价于 `(?:.|\r|\n|\u2028|\u2029)`。这包括点号不匹配的四个字符（回车、换行、行分隔符和段落分隔符）。
+匹配任意字符的字符类（例如`[\s\S]`、`[\d\D]`、`[\w\W]`或`[\0-\uFFFF]`）实际上等价于`(?:.|\r|\n|\u2028|\u2029)`。这包括点号不匹配的四个字符（回车、换行、行分隔符和段落分隔符）。
 
-> * * *
+---
 
-> 字符类比交替更快，因为它们使用位向量（或其他快速实现）而不是回溯来实现。当需要交替时，如果这不会影响正则表达式匹配的内容，请将频繁出现的选项放在前面。交替选项是从左到右尝试的，因此一个选项预期匹配的频率越高，你就越希望它尽早被考虑。请注意，Chrome 和 Firefox 会自动执行其中一些优化，因此受手动调整交替技术的影响较小。
+字符类比交替更快，因为它们使用位向量（或其他快速实现）而不是回溯来实现。当需要交替时，如果这不会影响正则表达式匹配的内容，请将频繁出现的选项放在前面。交替选项是从左到右尝试的，因此一个选项预期匹配的频率越高，你就越希望它尽早被考虑。请注意，Chrome 和 Firefox 会自动执行其中一些优化，因此受手动调整交替技术的影响较小。
 
-> 使用非捕获组
+#### 使用非捕获组
 
-> 捕获组会花费时间和内存来记住反向引用并保持其更新。如果你不需要反向引用，请使用非捕获组来避免这种开销——即使用 `(?:…)` 而不是 `(…)`。有些人喜欢在需要反向引用整个匹配时，将正则表达式包裹在捕获组中。这是不必要的，因为你可以通过例如 `regex.exec()` 返回的数组中的第零个元素或替换字符串中的 `$&` 来引用完整匹配。将捕获组替换为非捕获组在 Firefox 中影响很小，但在处理长字符串时，在其他浏览器中可能会产生很大差异。
+捕获组会花费时间和内存来记住反向引用并保持其更新。如果你不需要反向引用，请使用非捕获组来避免这种开销——即使用`(?:…)`而不是`(…)`。有些人喜欢在需要反向引用整个匹配时，将正则表达式包裹在捕获组中。这是不必要的，因为你可以通过例如`regex.exec()`返回的数组中的第零个元素或替换字符串中的`$&`来引用完整匹配。将捕获组替换为非捕获组在 Firefox 中影响很小，但在处理长字符串时，在其他浏览器中可能会产生很大差异。
 
-> 捕获感兴趣的文本以减少后处理
+#### 捕获感兴趣的文本以减少后处理
 
-> 作为上一条技巧的补充说明，如果你需要引用匹配的*部分*，那么请务必捕获这些部分并使用生成的反向引用。例如，如果你正在编写代码来处理由正则表达式匹配的带引号字符串的内容，请使用 `/"([^"]*)"/` 并处理第一个反向引用，而不是使用 `/"[^"]*"/` 然后手动从结果中去除引号。在循环中使用时，这种减少工作量的方式可以节省大量时间。
+作为上一条技巧的补充说明，如果你需要引用匹配的*部分*，那么请务必捕获这些部分并使用生成的反向引用。例如，如果你正在编写代码来处理由正则表达式匹配的带引号字符串的内容，请使用`/"([^"]*)"/`并处理第一个反向引用，而不是使用`/"[^"]*"/`然后手动从结果中去除引号。在循环中使用时，这种减少工作量的方式可以节省大量时间。
 
-> 暴露必需的标记
+#### 暴露必需的标记
 
-> 为了帮助正则表达式引擎做出关于如何优化搜索例程的明智决策，请尽量使确定哪些标记是必需的变得容易。当标记用于子表达式或交替中时，正则表达式引擎更难确定它们是否是必需的，并且有些引擎不会费心去这样做。例如，正则表达式 `/^(ab|cd)/` 暴露了其字符串起始锚点。IE 和 Chrome 看到这一点，并阻止正则表达式在字符串起始之后尝试查找匹配，从而使此搜索几乎瞬间完成，无论字符串长度如何。然而，由于等价的正则表达式 `/(^ab|^cd)/` 没有暴露其 `^` 锚点，IE 不会应用相同的优化，最终会在字符串的每个位置无意义地搜索匹配。
+为了帮助正则表达式引擎做出关于如何优化搜索例程的明智决策，请尽量使确定哪些标记是必需的变得容易。当标记用于子表达式或交替中时，正则表达式引擎更难确定它们是否是必需的，并且有些引擎不会费心去这样做。例如，正则表达式`/^(ab|cd)/`暴露了其字符串起始锚点。IE 和 Chrome 看到这一点，并阻止正则表达式在字符串起始之后尝试查找匹配，从而使此搜索几乎瞬间完成，无论字符串长度如何。然而，由于等价的正则表达式`/(^ab|^cd)/`没有暴露其`^`锚点，IE 不会应用相同的优化，最终会在字符串的每个位置无意义地搜索匹配。
 
-> 使用适当的量词
+#### 使用适当的量词
 
-> 如前面章节重复与回溯所述，贪婪量词和懒惰量词在查找匹配时方式不同，即使它们匹配相同的字符串。在它们同样正确的情况下，使用更合适的量词类型（基于预期的回溯量）可以显著提高性能，尤其是在处理长字符串时。在 Opera 9.`x` 及更早版本中，懒惰量词特别慢，但 Opera 10 消除了这一弱点。
+如前面章节重复与回溯所述，贪婪量词和懒惰量词在查找匹配时方式不同，即使它们匹配相同的字符串。在它们同样正确的情况下，使用更合适的量词类型（基于预期的回溯量）可以显著提高性能，尤其是在处理长字符串时。在 Opera 9.`x`及更早版本中，懒惰量词特别慢，但 Opera 10 消除了这一弱点。
 
-> 通过将正则表达式赋值给变量来重用它们
+#### 通过将正则表达式赋值给变量来重用它们
 
-> 将正则表达式赋值给变量可以避免重复编译它们。有些人会过度使用正则表达式缓存方案，旨在避免多次编译给定的模式和标志组合。不必费心；正则表达式编译很快，这样的方案可能增加的开销比它们避免的还要多。重要的是避免在循环内重复编译正则表达式。换句话说，不要这样做：
+将正则表达式赋值给变量可以避免重复编译它们。有些人会过度使用正则表达式缓存方案，旨在避免多次编译给定的模式和标志组合。不必费心；正则表达式编译很快，这样的方案可能增加的开销比它们避免的还要多。重要的是避免在循环内重复编译正则表达式。换句话说，不要这样做：
 
-> ```
-> while (/regex1/.test(str1)) {
->     /regex2/.exec(str2);
->     ...
-> }
-> ```
+```javascript
+while (/regex1/.test(str1)) {
+    /regex2/.exec(str2);
+    ...
+}
+```
 
-> 而应该这样做：
+而应该这样做：
 
-> ```
-> var regex1 = /regex1/,
->     regex2 = /regex2/;
-> while (regex1.test(str1)) {
->     regex2.exec(str2);
->     ...
-> }
-> ```
+```javascript
+var regex1 = /regex1/,
+    regex2 = /regex2/;
+while (regex1.test(str1)) {
+    regex2.exec(str2);
+    ...
+}
+```
 
-> 将复杂的正则表达式拆分为更简单的部分
+#### 将复杂的正则表达式拆分为更简单的部分
 
-> 尽量避免用一个正则表达式做太多事情。需要条件逻辑的复杂搜索问题，当拆分为两个或多个正则表达式时，每个正则表达式在上一个匹配结果中搜索，通常更容易解决且更高效。在一个模式中完成所有事情的正则表达式怪物难以维护，并且容易出现与回溯相关的问题。
+尽量避免用一个正则表达式做太多事情。需要条件逻辑的复杂搜索问题，当拆分为两个或多个正则表达式时，每个正则表达式在上一个匹配结果中搜索，通常更容易解决且更高效。在一个模式中完成所有事情的正则表达式怪物难以维护，并且容易出现与回溯相关的问题。
 
 ### 何时不使用正则表达式
 
-
-
-
-
 如果使用得当，正则表达式的速度非常快。然而，当你仅仅是在搜索字面字符串时，它们通常就大材小用了。如果你事先知道要测试字符串的哪个部分，这一点尤其明显。例如，如果你想检查一个字符串是否以分号结尾，你可以使用类似这样的代码：
 
-```
+```javascript
 endsWithSemicolon = /;$/.test(str);
 ```
 
@@ -3202,25 +3122,27 @@ endsWithSemicolon = /;$/.test(str);
 
 在这种情况下，更好的方法是跳过正则表达式所需的所有中间步骤，直接检查最后一个字符是否为分号：
 
-```
+```javascript
 endsWithSemicolon = str.charAt(str.length - 1) == ";";
 ```
 
 对于较小的目标字符串，这比基于正则表达式的测试只快一点点，但更重要的是，字符串的长度不再影响执行测试所需的时间。
 
-这个例子使用了 `charAt` 方法来读取特定位置的字符。当你想要提取并检查特定位置多个字符的值时，字符串方法 `slice`、`substr` 和 `substring` 非常有用。此外，`indexOf` 和 `lastIndexOf` 方法非常适合查找字面字符串的位置或检查它们是否存在。所有这些字符串方法都很快，并且可以帮助你在搜索不依赖复杂正则特性的字面字符串时，避免调用正则表达式带来的开销。
+这个例子使用了`charAt`方法来读取特定位置的字符。当你想要提取并检查特定位置多个字符的值时，字符串方法`slice`、`substr`和`substring`非常有用。此外，`indexOf`和`lastIndexOf`方法非常适合查找字面字符串的位置或检查它们是否存在。所有这些字符串方法都很快，并且可以帮助你在搜索不依赖复杂正则特性的字面字符串时，避免调用正则表达式带来的开销。
 
 ## 字符串修剪
 
-去除字符串开头和结尾的空白字符是一个简单但常见的任务。虽然 ECMAScript 5 添加了原生的字符串 `trim` 方法（因此你应该开始在即将推出的浏览器中看到这个方法），但 JavaScript 历史上并没有包含它。对于当前的浏览器版本，仍然需要自己实现一个 `trim` 方法，或者依赖包含该方法的库。
+去除字符串开头和结尾的空白字符是一个简单但常见的任务。虽然 ECMAScript 5 添加了原生的字符串`trim`方法（因此你应该开始在即将推出的浏览器中看到这个方法），但 JavaScript 历史上并没有包含它。对于当前的浏览器版本，仍然需要自己实现一个`trim`方法，或者依赖包含该方法的库。
 
 字符串修剪通常不是性能瓶颈，但它作为正则表达式优化的一个不错案例，因为实现它的方式多种多样。
 
 ### 使用正则表达式进行修剪
 
-正则表达式允许你用很少的代码实现一个 `trim` 方法，这对于注重文件大小的 JavaScript 库来说很重要。可能最好的全面解决方案是使用两次替换——一次去除开头的空白，另一次去除结尾的空白。这样既简单又快速，尤其是在处理长字符串时。
+正则表达式允许你用很少的代码实现一个`trim`方法，这对于注重文件大小的 JavaScript 库来说很重要。可能最好的全面解决方案是使用两次替换——一次去除开头的空白，另一次去除结尾的空白。这样既简单又快速，尤其是在处理长字符串时。
 
-```
+
+
+```javascript
 if (!String.prototype.trim) {
     String.prototype.trim = function() {
         return this.replace(/^\s+/, "").replace(/\s+$/, "");
@@ -3234,22 +3156,22 @@ var str = " \t\n  test string  ".trim();
 alert(str == "test string"); // 弹出 "true"
 ```
 
-这段代码周围的 `if` 块避免了在 `trim` 方法已存在时覆盖它，因为原生方法经过优化，通常比你用 JavaScript 函数自己实现的任何方法都要快得多。后续的示例实现都假设这个条件判断已经存在，尽管每次都没有写出来。
+这段代码周围的`if`块避免了在`trim`方法已存在时覆盖它，因为原生方法经过优化，通常比你用 JavaScript 函数自己实现的任何方法都要快得多。后续的示例实现都假设这个条件判断已经存在，尽管每次都没有写出来。
 
-你可以通过将 `/\s+$/`（第二个正则表达式）替换为 `/\s\s*$/`，使 Firefox 的性能提升大约 35%（具体取决于目标字符串的长度和内容）^([8])。虽然这两个正则表达式在功能上是相同的，但 Firefox 对以非量化标记开头的正则表达式提供了额外的优化。在其他浏览器中，差异不那么显著，或者被完全优化掉了。然而，将匹配字符串开头的正则表达式改为 `/^\s\s*/` 并没有产生可测量的差异，因为开头的 `^` 锚点已经负责快速排除不匹配的位置（从而避免了在长字符串中数千次匹配尝试中累积的微小性能差异）。
+你可以通过将`/\s+$/`（第二个正则表达式）替换为`/\s\s*$/`，使 Firefox 的性能提升大约 35%（具体取决于目标字符串的长度和内容）^([8])。虽然这两个正则表达式在功能上是相同的，但 Firefox 对以非量化标记开头的正则表达式提供了额外的优化。在其他浏览器中，差异不那么显著，或者被完全优化掉了。然而，将匹配字符串开头的正则表达式改为`/^\s\s*/`并没有产生可测量的差异，因为开头的`^`锚点已经负责快速排除不匹配的位置（从而避免了在长字符串中数千次匹配尝试中累积的微小性能差异）。
 
-以下是另外几种基于正则表达式的 `trim` 实现，它们是你可能会遇到的一些常见替代方案。你可以在本节末尾的表 5-2 中看到这里描述的所有 `trim` 实现的跨浏览器性能数据。事实上，除了这里列出的方法之外，还有很多种编写正则表达式来帮助修剪字符串的方式，但在处理长字符串时，它们无一例外地比使用两次简单替换更慢（或者至少跨浏览器的一致性更差）。
+以下是另外几种基于正则表达式的`trim`实现，它们是你可能会遇到的一些常见替代方案。你可以在本节末尾的表 5-2 中看到这里描述的所有`trim`实现的跨浏览器性能数据。事实上，除了这里列出的方法之外，还有很多种编写正则表达式来帮助修剪字符串的方式，但在处理长字符串时，它们无一例外地比使用两次简单替换更慢（或者至少跨浏览器的一致性更差）。
 
-```
+```javascript
 // trim 2
 String.prototype.trim = function() {
     return this.replace(/^\s+|\s+$/g, "");
 }
 ```
 
-这可能是最常见的解决方案。它通过交替将两个简单的正则表达式合并，并使用 `/g`（全局）标志来替换所有匹配，而不仅仅是第一个（当目标字符串同时包含开头和结尾空白时，它会匹配两次）。这种方法并不差，但在处理长字符串时，它比使用两次简单替换要慢，因为每个字符位置都需要测试两个交替选项。
+这可能是最常见的解决方案。它通过交替将两个简单的正则表达式合并，并使用`/g`（全局）标志来替换所有匹配，而不仅仅是第一个（当目标字符串同时包含开头和结尾空白时，它会匹配两次）。这种方法并不差，但在处理长字符串时，它比使用两次简单替换要慢，因为每个字符位置都需要测试两个交替选项。
 
-```
+```javascript
 // trim 3
 String.prototype.trim = function() {
     return this.replace(/^\s*([\s\S]*?)\s*$/, "$1");
@@ -3258,23 +3180,20 @@ String.prototype.trim = function() {
 
 这个正则表达式通过匹配整个字符串，并捕获从第一个到最后一个非空白字符（如果有的话）的序列作为反向引用一。通过用反向引用一替换整个字符串，你就得到了修剪后的字符串。
 
-这种方法概念上很简单，但捕获组内的惰性量词使得正则表达式做了大量额外的工作（即回溯），因此对于长目标字符串，这种方法往往很慢。当正则表达式进入捕获组后，`[\s\S]` 类的惰性 `*?` 量词要求它尽可能少地重复。因此，正则表达式一次匹配一个字符，每匹配一个字符后就停下来尝试匹配剩余的 `\s*$` 模式。如果因为字符串中当前位置之后还存在非空白字符而失败，正则表达式就会再匹配一个字符，更新反向引用，然后再次尝试剩余的模式。
+这种方法概念上很简单，但捕获组内的惰性量词使得正则表达式做了大量额外的工作（即回溯），因此对于长目标字符串，这种方法往往很慢。当正则表达式进入捕获组后，`[\s\S]`类的惰性`*?`量词要求它尽可能少地重复。因此，正则表达式一次匹配一个字符，每匹配一个字符后就停下来尝试匹配剩余的`\s*$`模式。如果因为字符串中当前位置之后还存在非空白字符而失败，正则表达式就会再匹配一个字符，更新反向引用，然后再次尝试剩余的模式。
 
 在 Opera 9.x 及更早版本中，惰性重复尤其缓慢。因此，在 Opera 9.64 中使用这种方法修剪长字符串，其性能大约比其他主流浏览器慢 10 到 100 倍。Opera 10 修复了这个长期存在的弱点，使该方法的性能与其他浏览器保持一致。
 
-```
+```javascript
 // trim 4
 String.prototype.trim = function() {
     return this.replace(/^\s*([\s\S]*\S)?\s*$/, "$1");
 }
 ```
 
-这与上一个正则表达式类似，但出于性能考虑，它将惰性量词替换为贪婪量词。为了确保捕获组仍然只匹配到最后一个非空白字符，需要添加一个尾随的 `\S`。然而，由于正则表达式必须能够匹配仅包含空白的字符串，因此整个捕获组通过添加一个尾随的问号量词变为可选。
+这与上一个正则表达式类似，但出于性能考虑，它将惰性量词替换为贪婪量词。为了确保捕获组仍然只匹配到最后一个非空白字符，需要添加一个尾随的`\S`。然而，由于正则表达式必须能够匹配仅包含空白的字符串，因此整个捕获组通过添加一个尾随的问号量词变为可选。
 
-这里，`[\s\S]*` 中的贪婪星号将其任意字符模式重复到字符串末尾。然后正则表达式一次回溯一个字符，直到能够匹配后面的 `\S`，或者回溯到组内匹配的第一个字符（之后它会跳过该组）。
-
-
-
+这里，`[\s\S]*`中的贪婪星号将其任意字符模式重复到字符串末尾。然后正则表达式一次回溯一个字符，直到能够匹配后面的`\S`，或者回溯到组内匹配的第一个字符（之后它会跳过该组）。
 
 除非存在比其他文本更多的尾部空白，否则这种方法通常比之前使用惰性量词的解决方案更快。实际上，它在 IE、Safari、Chrome 和 Opera 10 中甚至比使用两次替换还要快。这是因为这些浏览器对匹配任意字符的字符类贪婪重复进行了特殊优化。正则表达式引擎会直接跳到字符串末尾，而不评估中间字符（尽管仍需记录回溯位置），然后适当地回溯。不幸的是，这种方法在 Firefox 和 Opera 9 中明显较慢，因此至少目前，使用两次替换在跨浏览器方面仍然表现更好。
 
@@ -3287,9 +3206,9 @@ String.prototype.trim = function() {
 
 这是一种相对常见的方法，但没有充分的理由使用它，因为在所有浏览器中，它始终是这里展示的选项中最慢的方法之一。它与最后两个正则表达式类似，都是匹配整个字符串并用你想要保留的部分替换它，但由于内部组每次只匹配一个单词，正则表达式必须执行许多离散步骤。在修剪短字符串时，性能影响可能不明显，但在包含许多单词的长字符串中，这个正则表达式可能会成为性能问题。
 
-将内部组改为非捕获组——即将 `(\s+\S+)` 改为 `(?:\s+\S+)`——会有所帮助，在 Opera、IE 和 Chrome 中大约减少 20%–45% 的时间，在 Safari 和 Firefox 中也有轻微改进。尽管如此，非捕获组无法挽救这个实现。注意，外部组不能转换为非捕获组，因为它在替换字符串中被引用。
+将内部组改为非捕获组——即将`(\s+\S+)`改为`(?:\s+\S+)`——会有所帮助，在 Opera、IE 和 Chrome 中大约减少 20%–45% 的时间，在 Safari 和 Firefox 中也有轻微改进。尽管如此，非捕获组无法挽救这个实现。注意，外部组不能转换为非捕获组，因为它在替换字符串中被引用。
 
-### 不使用正则表达式的修剪
+## 不使用正则表达式的修剪
 
 尽管正则表达式很快，但考虑不使用正则表达式进行修剪的性能也是值得的。以下是一种实现方式：
 
@@ -3313,13 +3232,13 @@ String.prototype.trim = function() {
 }
 ```
 
-这段代码中的 `ws` 变量包含了 ECMAScript 5 定义的所有空白字符。为了提高效率，在确定修剪版本的起始和结束位置之前，避免复制字符串的任何部分。
+这段代码中的`ws`变量包含了 ECMAScript 5 定义的所有空白字符。为了提高效率，在确定修剪版本的起始和结束位置之前，避免复制字符串的任何部分。
 
-事实证明，当字符串两端只有少量空白时，这种方法远超正则表达式。原因是，虽然正则表达式非常适合从字符串开头移除空白，但在从长字符串末尾修剪时速度并不快。正如 何时不使用正则表达式 一节所述，正则表达式无法在不考虑沿途字符的情况下跳到字符串末尾。然而，这个实现正是这样做的，第二个 `while` 循环从字符串末尾向后工作，直到找到非空白字符。
+事实证明，当字符串两端只有少量空白时，这种方法远超正则表达式。原因是，虽然正则表达式非常适合从字符串开头移除空白，但在从长字符串末尾修剪时速度并不快。正如“何时不使用正则表达式”一节所述，正则表达式无法在不考虑沿途字符的情况下跳到字符串末尾。然而，这个实现正是这样做的，第二个`while`循环从字符串末尾向后工作，直到找到非空白字符。
 
 尽管这个版本不受字符串整体长度的影响，但它有自己的弱点：长前导和尾部空白。这是因为循环遍历字符检查它们是否为空白，无法与正则表达式优化搜索代码的效率相媲美。
 
-### 混合解决方案
+## 混合解决方案
 
 本节最后的方法是将正则表达式在修剪前导空白方面的通用效率与非正则方法在修剪尾部字符方面的速度结合起来。
 
@@ -3340,9 +3259,9 @@ String.prototype.trim = function() {
 
 这种混合方法在仅修剪少量空白时仍然非常快，并且消除了长前导空白和仅空白字符串的性能风险（尽管它仍然存在长尾部空白字符串的弱点）。注意，这个解决方案在循环中使用正则表达式来检查字符串末尾的字符是否为空白。虽然使用正则表达式会增加一些性能开销，但它让你可以将空白字符列表委托给浏览器，以保持简洁和兼容性。
 
-这里描述的所有 `trim` 方法的总体趋势是：在基于正则表达式的解决方案中，字符串整体长度比要修剪的字符数影响更大；而基于非正则表达式、从字符串末尾向后工作的解决方案不受整体长度影响，但受要修剪的空白量影响更大。使用两次正则表达式替换的简单方法在不同字符串内容和长度下，跨浏览器提供了始终如一的可靠性能，因此可以说是最全面的解决方案。混合方法在处理长字符串时异常快速，但代价是代码稍长，并且在某些浏览器中处理长尾部空白时存在弱点。有关所有详细数据，请参见 表 5-2。
+这里描述的所有`trim`方法的总体趋势是：在基于正则表达式的解决方案中，字符串整体长度比要修剪的字符数影响更大；而基于非正则表达式、从字符串末尾向后工作的解决方案不受整体长度影响，但受要修剪的空白量影响更大。使用两次正则表达式替换的简单方法在不同字符串内容和长度下，跨浏览器提供了始终如一的可靠性能，因此可以说是最全面的解决方案。混合方法在处理长字符串时异常快速，但代价是代码稍长，并且在某些浏览器中处理长尾部空白时存在弱点。有关所有详细数据，请参见“表 5-2”。
 
-表 5-2. 各种 trim 实现的跨浏览器性能
+**表 5-2. 各种`trim`实现的跨浏览器性能**
 
 | 浏览器 | Trim 1^([[b]](#part0042.html_ftn.CHP-5-FNOTE-10)) | Trim 2 | Trim 3 | Trim 4 | Trim 5^([[c]](#part0042.html_ftn.CHP-5-FNOTE-11)) | Trim 6 | Trim 7 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -3358,7 +3277,7 @@ String.prototype.trim = function() {
 
 ^([[a]](#part0042.html_CHP-5-FNOTE-9)) 报告的时间是通过修剪一个大字符串（40 KB）100 次得到的，首先在两端各添加 10 个空格，然后各添加 1000 个空格。
 
-^([[b]](#part0042.html_ftn.CHP-5-FNOTE-10)) 测试时未使用 `/\s\s*$/` 优化。
+^([[b]](#part0042.html_ftn.CHP-5-FNOTE-10)) 测试时未使用`/\s\s*$/`优化。
 
 ^([[c]](#part0042.html_ftn.CHP-5-FNOTE-11)) 测试时未使用非捕获组优化。
 
@@ -3366,21 +3285,13 @@ String.prototype.trim = function() {
 
 密集的字符串操作和草率编写的正则表达式可能成为主要的性能障碍，但本章的建议有助于你避免常见陷阱。
 
-*   当连接大量或大型字符串时，数组连接是 IE7 及更早版本中唯一具有合理性能的方法。
-
-*   如果不需要担心 IE7 及更早版本，数组连接是连接字符串最慢的方法之一。请改用简单的 `+` 和 `+=` 运算符，并避免不必要的中间字符串。
-
-*   回溯既是正则表达式匹配的基本组成部分，也是正则表达式效率低下的常见来源。
-
-*   失控的回溯可能导致通常能快速找到匹配的正则表达式运行缓慢，甚至在应用于部分匹配的字符串时导致浏览器崩溃。避免此问题的技术包括：使相邻的标记互斥，避免允许以多种方式匹配字符串同一部分的嵌套量词，以及通过重新利用前瞻的原子性来消除不必要的回溯。
-
-
-
-
-
-*   存在多种技术可以通过帮助正则表达式更快地找到匹配项并减少考虑不匹配位置的时间来提高正则表达式的效率（参见更多提高正则表达式效率的方法）。
-*   正则表达式并非总是完成工作的最佳工具，尤其是在你仅仅搜索字面字符串时。
-*   尽管有多种方法可以修剪字符串，但使用两个简单的正则表达式（一个用于去除前导空白，另一个用于去除尾部空白）在字符串内容和长度变化的情况下，提供了简洁性与跨浏览器效率的良好结合。从字符串末尾循环查找第一个非空白字符，或者将这种技术与正则表达式结合使用，是一种很好的替代方案，受整体字符串长度的影响较小。
+- 当连接大量或大型字符串时，数组连接是 IE7 及更早版本中唯一具有合理性能的方法。
+- 如果不需要担心 IE7 及更早版本，数组连接是连接字符串最慢的方法之一。请改用简单的`+`和`+=`运算符，并避免不必要的中间字符串。
+- 回溯既是正则表达式匹配的基本组成部分，也是正则表达式效率低下的常见来源。
+- 失控的回溯可能导致通常能快速找到匹配的正则表达式运行缓慢，甚至在应用于部分匹配的字符串时导致浏览器崩溃。避免此问题的技术包括：使相邻的标记互斥，避免允许以多种方式匹配字符串同一部分的嵌套量词，以及通过重新利用前瞻的原子性来消除不必要的回溯。
+- 存在多种技术可以通过帮助正则表达式更快地找到匹配项并减少考虑不匹配位置的时间来提高正则表达式的效率（参见“更多提高正则表达式效率的方法”）。
+- 正则表达式并非总是完成工作的最佳工具，尤其是在你仅仅搜索字面字符串时。
+- 尽管有多种方法可以修剪字符串，但使用两个简单的正则表达式（一个用于去除前导空白，另一个用于去除尾部空白）在字符串内容和长度变化的情况下，提供了简洁性与跨浏览器效率的良好结合。从字符串末尾循环查找第一个非空白字符，或者将这种技术与正则表达式结合使用，是一种很好的替代方案，受整体字符串长度的影响较小。
 
 # 第 6 章 响应式界面
 
@@ -3394,7 +3305,7 @@ JavaScript 和用户界面更新共享的进程通常被称为浏览器 UI 线�
 
 考虑一个简单的界面，其中点击按钮会在屏幕上显示一条消息：
 
-```
+```html
 <html>
 <head>
     <title>浏览器 UI 线程示例</title>
@@ -3416,7 +3327,9 @@ JavaScript 和用户界面更新共享的进程通常被称为浏览器 UI 线�
 
 当此示例中的按钮被点击时，它会触发 UI 线程创建两个任务并将其添加到队列中。第一个任务是按钮的 UI 更新，需要改变外观以指示它被点击了；第二个是 JavaScript 执行任务，包含`handleClick()`的代码，因此唯一执行的代码就是这个方法及其调用的任何内容。假设 UI 线程空闲，第一个任务被取出并执行以更新按钮的外观，然后 JavaScript 任务被取出并执行。在执行过程中，`handleClick()`创建一个新的`<div>`元素并将其附加到`<body>`元素，从而有效地进行了另一个 UI 更改。这意味着在 JavaScript 执行期间，一个新的 UI 更新任务被添加到队列中，以便在 JavaScript 执行完成后更新 UI。参见图 6-1。
 
-![用户与页面交互时，UI 线程任务被添加](img/00030.jpeg)图 6-1. 用户与页面交互时，UI 线程任务被添加
+![用户与页面交互时，UI 线程任务被添加](img/00030.jpeg)
+
+图 6-1. 用户与页面交互时，UI 线程任务被添加
 
 当所有 UI 线程任务执行完毕后，进程进入空闲状态，等待更多任务被添加到队列中。空闲状态是理想的，因为所有用户操作都会立即触发 UI 更新。如果用户试图在任务执行期间与页面交互，不仅不会有即时的 UI 更新，甚至可能不会创建和排队新的 UI 更新任务。事实上，大多数浏览器在 JavaScript 执行期间会停止为 UI 线程排队任务，这意味着必须尽快完成 JavaScript 任务，以免对用户体验产生不利影响。
 
@@ -3424,19 +3337,19 @@ JavaScript 和用户界面更新共享的进程通常被称为浏览器 UI 线�
 
 浏览器对 JavaScript 执行的时间设置了限制。这是一个必要的限制，以确保恶意编码者无法通过执行永远不会结束的密集操作来锁定用户的浏览器或计算机。存在两种这样的限制：*调用栈大小限制*（在第 4 章中讨论）和*长时间运行脚本限制*。长时间运行脚本限制有时被称为长时间运行脚本计时器或失控脚本计时器，但其基本思想是浏览器跟踪脚本运行的时间，并在达到某个限制时停止它。当达到限制时，会向用户显示一个对话框，例如图 6-2 中的对话框。
 
-![当执行超过 500 万条语句时，会显示 Internet Explorer 的长时间运行脚本警告对话框](img/00042.jpeg)图 6-2. 当执行超过 500 万条语句时，会显示 Internet Explorer 的长时间运行脚本警告对话框
+![当执行超过 500 万条语句时，会显示 Internet Explorer 的长时间运行脚本警告对话框](img/00042.jpeg)
+
+图 6-2. 当执行超过 500 万条语句时，会显示 Internet Explorer 的长时间运行脚本警告对话框
+
+
 
 有两种衡量脚本执行时间的方法。第一种是跟踪自脚本开始以来执行的语句数量。这种方法意味着脚本在不同机器上可能运行不同的时间，因为可用内存和 CPU 速度会影响执行单个语句所需的时间。第二种方法是跟踪脚本执行的总时间。在设定的时间内可以处理的脚本数量也因用户机器的性能而异，但脚本总是在设定的时间后停止。毫不奇怪，每个浏览器对长时间运行脚本的检测方法略有不同：
 
-*   Internet Explorer 从版本 4 开始，默认限制为 500 万条语句；此限制存储在 Windows 注册表设置中，键为`HKEY_CURRENT_USER\Software\Microsoft\InternetExplorer\Styles\MaxScriptStatements`。
-*   Firefox 的默认限制为 10 秒；此限制存储在浏览器的配置设置中（通过在地址栏输入`about:config`访问），键为`dom.max_script_run_time`。
-*   Safari 的默认限制为 5 秒；此设置无法更改，但你可以通过启用*开发*菜单并选择*禁用失控 JavaScript 计时器*来禁用计时器。
-*   Chrome 没有单独的长时间运行脚本限制，而是依赖其通用的崩溃检测系统来处理此类情况。
-*   Opera 没有长时间运行脚本限制，会继续执行 JavaScript 代码直到完成，但由于 Opera 的架构，这不会在执行完成期间导致系统不稳定。
-
-
-
-
+- Internet Explorer 从版本 4 开始，默认限制为 500 万条语句；此限制存储在 Windows 注册表设置中，键为 `HKEY_CURRENT_USER\Software\Microsoft\InternetExplorer\Styles\MaxScriptStatements`。
+- Firefox 的默认限制为 10 秒；此限制存储在浏览器的配置设置中（通过在地址栏输入 `about:config` 访问），键为 `dom.max_script_run_time`。
+- Safari 的默认限制为 5 秒；此设置无法更改，但你可以通过启用“开发”菜单并选择“禁用失控 JavaScript 计时器”来禁用计时器。
+- Chrome 没有单独的长时间运行脚本限制，而是依赖其通用的崩溃检测系统来处理此类情况。
+- Opera 没有长时间运行脚本限制，会继续执行 JavaScript 代码直到完成，但由于 Opera 的架构，这不会在执行完成期间导致系统不稳定。
 
 当浏览器达到长时间运行脚本的限制时，会向用户显示一个对话框，无论页面上是否有其他错误处理代码。这是一个主要的可用性问题，因为大多数互联网用户并不精通技术，因此会对错误消息的含义以及哪个选项（停止脚本或允许其继续）合适感到困惑。
 
@@ -3454,13 +3367,9 @@ Nielsen 指出，如果界面在 100 毫秒内响应用户输入，用户会感�
 
 每个浏览器的行为大致相同。当脚本执行时，UI 不会因用户交互而更新。在此期间由用户交互创建的 JavaScript 任务会被排队，然后在原始 JavaScript 任务完成后按顺序执行。由用户交互引起的 UI 更新此时会自动跳过，因为优先级被赋予页面的动态方面。因此，在脚本执行时单击的按钮永远不会看起来像被单击过，即使它的 `onclick` 处理程序会被执行。
 
-* * *
-
 ### 注意
 
 Internet Explorer 会限制由用户交互触发的 JavaScript 任务，使其仅连续识别两次重复操作。例如，在脚本执行时单击按钮四次，会导致 `onclick` 事件处理程序仅被调用两次。
-
-* * *
 
 尽管浏览器在这些情况下试图做一些合乎逻辑的事情，但所有这些行为都会导致脱节的用户体验。因此，最好的方法是通过将任何 JavaScript 任务限制在 100 毫秒或更短来防止此类情况发生。这个测量应该在必须支持的最慢浏览器上进行（有关测量 JavaScript 性能的工具，请参见第 10 章）。
 
@@ -3474,7 +3383,7 @@ Internet Explorer 会限制由用户交互触发的 JavaScript 任务，使其�
 
 定时器与 UI 线程交互的方式有助于将长时间运行的脚本分解为更短的片段。调用 `setTimeout()` 或 `setInterval()` 会告诉 JavaScript 引擎等待一定时间，然后将一个 JavaScript 任务添加到 UI 队列中。例如：
 
-```
+```javascript
 function greeting(){
     alert("Hello world!");
 }
@@ -3484,7 +3393,7 @@ setTimeout(greeting, 250);
 
 这段代码在 250 毫秒后向 UI 队列插入一个执行 `greeting()` 函数的 JavaScript 任务。在此之前，所有其他 UI 更新和 JavaScript 任务都会被执行。请记住，第二个参数指示任务何时应被添加到 UI 队列，这并不一定是它被执行的时间；该任务必须等待队列中所有其他任务执行完毕，就像任何其他任务一样。考虑以下代码：
 
-```
+```javascript
 var button = document.getElementById("my-button");
 button.onclick = function(){
 
@@ -3500,7 +3409,7 @@ button.onclick = function(){
 
 请记住，定时器代码永远无法在创建它的函数完全执行完毕之前执行。例如，如果修改前面的代码，使定时器延迟更小，并且在创建定时器之后还有另一个函数调用，那么定时器代码有可能在 `onclick` 事件处理程序执行完毕之前就被排队：
 
-```
+```javascript
 var button = document.getElementById("my-button");
 button.onclick = function(){
 
@@ -3514,25 +3423,21 @@ button.onclick = function(){
 };
 ```
 
-![`setTimeout()` 的第二个参数指示新的 JavaScript 任务何时应被插入到 UI 队列中](img/00053.jpeg)图 6-3. `setTimeout()` 的第二个参数指示新的 JavaScript 任务何时应被插入到 UI 队列中
+![`setTimeout()` 的第二个参数指示新的 JavaScript 任务何时应被插入到 UI 队列中](img/00053.jpeg)
 
-
-
-
+图 6-3. `setTimeout()` 的第二个参数指示新的 JavaScript 任务何时应被插入到 UI 队列中
 
 如果 `anotherMethod()` 的执行时间超过 50 毫秒，那么定时器代码会在 `onclick` 处理程序完成之前被添加到队列中。其效果是，定时器代码几乎在 `onclick` 处理程序完全执行后立即执行，没有明显的延迟。图 6-4 说明了这种情况。
 
 无论哪种情况，创建定时器都会导致 UI 线程在从一个任务切换到下一个任务时产生暂停。因此，定时器代码会重置所有相关的浏览器限制，包括长时间运行脚本的定时器。此外，定时器代码内部的调用栈会被重置为零。这些特性使得定时器成为处理长时间运行 JavaScript 代码的理想跨浏览器解决方案。
 
-* * *
-
 ### 注意
 
 `setInterval()` 函数与 `setTimeout()` 几乎相同，区别在于前者会重复将 JavaScript 任务添加到 UI 队列中。主要区别在于，如果同一个 `setInterval()` 调用创建的任务已经存在于 UI 队列中，则不会再次添加该任务。
 
-* * *
+![如果调用 `setTimeout()` 的函数执行时间比定时器延迟更长，则定时器代码的执行可能没有明显延迟](img/00013.jpeg)
 
-![如果调用 `setTimeout()` 的函数执行时间比定时器延迟更长，则定时器代码的执行可能没有明显延迟](img/00013.jpeg)图 6-4. 如果调用 `setTimeout()` 的函数执行时间比定时器延迟更长，则定时器代码的执行可能没有明显延迟
+图 6-4. 如果调用 `setTimeout()` 的函数执行时间比定时器延迟更长，则定时器代码的执行可能没有明显延迟
 
 ### 定时器精度
 
@@ -3548,7 +3453,7 @@ Windows 系统上的定时器分辨率为 15 毫秒，这意味着它会根据�
 
 典型的循环遵循简单的模式，例如：
 
-```
+```javascript
 for (var i=0, len=items.length; i < len; i++){
     process(items[i]);
 }
@@ -3556,12 +3461,12 @@ for (var i=0, len=items.length; i < len; i++){
 
 由于 `process()` 的复杂性、`items` 的大小或两者兼有，这种结构的循环可能执行时间过长。在我的书《Professional JavaScript for Web Developers》第二版（Wrox 2009）中，我提出了两个决定因素，用于判断一个循环是否可以使用定时器异步执行：
 
-*   处理过程是否必须同步进行？
-*   数据是否必须按顺序处理？
+- 处理过程是否必须同步进行？
+- 数据是否必须按顺序处理？
 
 如果这两个问题的答案都是“否”，那么该代码就非常适合使用定时器来拆分工作。异步代码执行的基本模式如下：
 
-```
+```javascript
 var todo = items.concat();  //创建原始数组的副本
 
 setTimeout(function(){
@@ -3581,17 +3486,13 @@ setTimeout(function(){
 
 该模式的基本思想是创建原始数组的副本，并将其用作待处理项目的队列。第一次调用 `setTimeout()` 会创建一个定时器来处理数组中的第一个项目。调用 `todo.shift()` 会返回第一个项目并将其从数组中移除。该值被传递给 `process()`。处理完项目后，检查是否还有更多项目需要处理。如果 `todo` 数组中还有项目，则创建另一个定时器。由于下一个定时器需要运行与原始定时器相同的代码，因此将 `arguments.callee` 作为第一个参数传入。该值指向正在执行代码的匿名函数。如果没有更多项目需要处理，则调用 `callback()` 函数。
 
-* * *
-
 ### 注意
 
 每个定时器的实际延迟时间很大程度上取决于你的使用场景。一般来说，最好至少使用 25 毫秒，因为更小的延迟留给大多数 UI 更新的时间太少。
 
-* * *
-
 由于这种模式比常规循环需要更多的代码，因此封装此功能非常有用。例如：
 
-```
+```javascript
 function processArray(items, process, callback){
     var todo = items.concat();   //创建原始数组的副本
 
@@ -3610,7 +3511,7 @@ function processArray(items, process, callback){
 
 `processArray()` 函数以可重用的方式实现了上述模式，并接受三个参数：要处理的数组、对每个项目调用的函数，以及处理完成时执行的回调函数。该函数可以如下使用：
 
-```
+```javascript
 var items = [123, 789, 323, 778, 232, 654, 219, 543, 321, 160];
 
 function outputValue(value){
@@ -3624,19 +3525,15 @@ processArray(items, outputValue, function(){
 
 这段代码使用 `processArray()` 方法将数组值输出到控制台，然后在所有处理完成后打印一条消息。通过将定时器代码封装在函数内部，可以在多个地方重复使用，而无需多次实现。
 
-* * *
-
 ### 注意
 
 使用定时器处理数组的一个副作用是处理数组的总时间会增加。这是因为每个项目处理完后 UI 线程会被释放，并且在处理下一个项目之前会有延迟。然而，这是为了避免锁定浏览器导致用户体验不佳而必须做出的权衡。
-
-* * *
 
 ### 拆分任务
 
 我们通常认为的一个任务往往可以分解为一系列子任务。如果单个函数执行时间过长，请检查它是否可以分解为一系列更小的函数，这些函数在更短的时间内完成。这通常很简单，只需将单行代码视为一个原子任务，尽管多行代码通常可以组合成一个任务。有些函数已经可以根据它们调用的其他函数轻松分解。例如：
 
-```
+```javascript
 function saveDocument(id){
 
     //保存文档
@@ -3651,11 +3548,7 @@ function saveDocument(id){
 
 如果这个函数执行时间过长，可以通过将各个方法分解到单独的定时器中，轻松地将其拆分为一系列更小的步骤。你可以通过将每个函数添加到一个数组中，然后使用类似于上一节中数组处理模式的模式来实现这一点：
 
-
-
-
-
-```
+```javascript
 function saveDocument(id){
 
     var tasks = [openDocument, writeText, closeDocument, updateUI];
@@ -3676,7 +3569,7 @@ function saveDocument(id){
 
 这个版本的函数将每个方法放入 `tasks` 数组，然后每次定时器只执行一个方法。本质上，这变成了一个数组处理模式，唯一的区别是处理每个项时执行的是该项中包含的函数。如上一节所述，这种模式可以封装起来以便复用：
 
-```
+```javascript
 function multistep(steps, args, callback){
 
     var tasks = steps.concat();   //克隆数组
@@ -3697,9 +3590,11 @@ function multistep(steps, args, callback){
 }
 ```
 
-`multistep()` 函数接受三个参数：一个待执行的函数数组、一个参数数组（在执行每个函数时传入），以及一个在过程完成时调用的回调函数。该函数可以像下面这样使用：
 
-```
+
+`multistep()`函数接受三个参数：一个待执行的函数数组、一个参数数组（在执行每个函数时传入），以及一个在过程完成时调用的回调函数。该函数可以像下面这样使用：
+
+```javascript
 function saveDocument(id){
 
     var tasks = [openDocument, writeText, closeDocument, updateUI];
@@ -3709,7 +3604,7 @@ function saveDocument(id){
 }
 ```
 
-注意，`multistep()` 的第二个参数必须是一个数组，因此这里创建了一个只包含 `id` 的数组。与数组处理类似，当任务可以异步执行且不会影响用户体验或导致依赖代码出错时，这个函数最为适用。
+注意，`multistep()`的第二个参数必须是一个数组，因此这里创建了一个只包含`id`的数组。与数组处理类似，当任务可以异步执行且不会影响用户体验或导致依赖代码出错时，这个函数最为适用。
 
 ### 定时代码
 
@@ -3717,9 +3612,9 @@ function saveDocument(id){
 
 如果你将 100 毫秒视为 JavaScript 允许连续运行的最长时间上限，那么就可以开始优化之前的模式。我的建议是将这个数字减半，绝不让任何 JavaScript 代码连续执行超过 50 毫秒，以确保代码永远不会接近影响用户体验的程度。
 
-通过使用原生的 `Date` 对象，可以跟踪一段代码已经运行了多长时间。这是大多数 JavaScript 性能分析工具的工作方式：
+通过使用原生的`Date`对象，可以跟踪一段代码已经运行了多长时间。这是大多数 JavaScript 性能分析工具的工作方式：
 
-```
+```javascript
 var start = +new Date(),
     stop;
 
@@ -3734,11 +3629,11 @@ if(stop-start < 50){
 }
 ```
 
-由于每个新的 `Date` 对象都会用当前系统时间初始化，你可以通过定期创建新的 `Date` 对象并比较它们的值来对代码计时。加号运算符（`+`）将 `Date` 对象转换为数值表示，这样后续的算术运算就不需要再进行类型转换了。同样的基本技术可以用来优化之前的定时器模式。
+由于每个新的`Date`对象都会用当前系统时间初始化，你可以通过定期创建新的`Date`对象并比较它们的值来对代码计时。加号运算符（`+`）将`Date`对象转换为数值表示，这样后续的算术运算就不需要再进行类型转换了。同样的基本技术可以用来优化之前的定时器模式。
 
-`processArray()` 方法可以通过加入时间检查来增强，使其每个定时器处理多个项：
+`processArray()`方法可以通过加入时间检查来增强，使其每个定时器处理多个项：
 
-```
+```javascript
 function timedProcessArray(items, process, callback){
     var todo = items.concat();   //创建原始数组的克隆
 
@@ -3759,7 +3654,7 @@ function timedProcessArray(items, process, callback){
 }
 ```
 
-在这个函数中增加了一个 `do-while` 循环，可以在处理每个项之后检查时间。当定时器函数执行时，数组中至少会有一个项，因此后测试循环比前测试循环更合理。在 Firefox 3 中运行时，这个函数处理一个包含 1000 个项的数组（其中 `process()` 是一个空函数）只需 38–43 毫秒；而原来的 `processArray()` 函数处理同样的数组需要超过 25000 毫秒。这就是在将任务分解成更小的块之前进行时间检查的强大之处。
+在这个函数中增加了一个`do-while`循环，可以在处理每个项之后检查时间。当定时器函数执行时，数组中至少会有一个项，因此后测试循环比前测试循环更合理。在 Firefox 3 中运行时，这个函数处理一个包含 1000 个项的数组（其中`process()`是一个空函数）只需 38–43 毫秒；而原来的`processArray()`函数处理同样的数组需要超过 25000 毫秒。这就是在将任务分解成更小的块之前进行时间检查的强大之处。
 
 ### 定时器与性能
 
@@ -3781,23 +3676,18 @@ Web Workers 为 Web 应用带来了巨大的性能提升潜力，因为每个新
 
 由于 Web Workers 不绑定到 UI 线程，这也意味着它们无法访问许多浏览器资源。JavaScript 和 UI 更新共享同一个进程的部分原因是它们之间经常相互影响，因此无序执行这些任务会导致糟糕的用户体验。Web Workers 如果从外部线程修改 DOM，可能会引入用户界面错误，但每个 Web Worker 都有自己的全局环境，其中只包含 JavaScript 功能的一个子集。Worker 环境由以下部分组成：
 
-*   一个 `navigator` 对象，只包含四个属性：`appName`、`appVersion`、`userAgent` 和 `platform`
-
-
-
-
-
-*   一个 `location` 对象（与 `window` 上的相同，但所有属性均为只读）
-*   一个指向全局 worker 对象的 `self` 对象
-*   一个用于加载外部 JavaScript 以供 worker 使用的 `importScripts()` 方法
-*   所有 ECMAScript 对象，例如 `Object`、`Array`、`Date` 等
-*   `XMLHttpRequest` 构造函数
-*   `setTimeout()` 和 `setInterval()` 方法
-*   一个用于立即停止 worker 的 `close()` 方法
+- 一个`navigator`对象，只包含四个属性：`appName`、`appVersion`、`userAgent`和`platform`
+- 一个`location`对象（与`window`上的相同，但所有属性均为只读）
+- 一个指向全局 worker 对象的`self`对象
+- 一个用于加载外部 JavaScript 以供 worker 使用的`importScripts()`方法
+- 所有 ECMAScript 对象，例如`Object`、`Array`、`Date`等
+- `XMLHttpRequest`构造函数
+- `setTimeout()`和`setInterval()`方法
+- 一个用于立即停止 worker 的`close()`方法
 
 由于 Web Worker 拥有不同的全局环境，你不能从任意 JavaScript 代码中创建它。实际上，你需要创建一个完全独立的 JavaScript 文件，其中仅包含 worker 要执行的代码。要创建一个 Web Worker，你必须传入 JavaScript 文件的 URL：
 
-```
+```javascript
 var worker = new Worker("code.js");
 ```
 
@@ -3805,9 +3695,9 @@ var worker = new Worker("code.js");
 
 ### Worker 通信
 
-Worker 与网页代码之间的通信通过事件接口建立。网页代码可以通过 `postMessage()` 方法向 worker 传递数据，该方法接受一个参数，表示要传入 worker 的数据。同时还有一个 `onmessage` 事件处理程序，用于接收来自 worker 的信息。例如：
+Worker 与网页代码之间的通信通过事件接口建立。网页代码可以通过`postMessage()`方法向 worker 传递数据，该方法接受一个参数，表示要传入 worker 的数据。同时还有一个`onmessage`事件处理程序，用于接收来自 worker 的信息。例如：
 
-```
+```javascript
 var worker = new Worker("code.js");
 worker.onmessage = function(event){
     alert(event.data);
@@ -3815,32 +3705,28 @@ worker.onmessage = function(event){
 worker.postMessage("Nicholas");
 ```
 
-Worker 通过触发 `message` 事件来接收这些数据。定义 `onmessage` 事件处理程序后，事件对象包含一个 `data` 属性，其中存放传入的数据。Worker 可以通过自己的 `postMessage()` 方法将信息传回网页：
+Worker 通过触发`message`事件来接收这些数据。定义`onmessage`事件处理程序后，事件对象包含一个`data`属性，其中存放传入的数据。Worker 可以通过自己的`postMessage()`方法将信息传回网页：
 
-```
+```javascript
 // 在 code.js 内部
 self.onmessage = function(event){
     self.postMessage("Hello, " + event.data + "!");
 };
 ```
 
-最终的字符串会出现在 worker 的 `onmessage` 事件处理程序中。这种消息传递系统是网页与 worker 之间唯一的通信方式。
+最终的字符串会出现在 worker 的`onmessage`事件处理程序中。这种消息传递系统是网页与 worker 之间唯一的通信方式。
 
-只有特定类型的数据可以通过 `postMessage()` 传递。你可以传递原始值（字符串、数字、布尔值、`null` 和 `undefined`）以及 `Object` 和 `Array` 的实例；不能传递其他数据类型。有效数据会被序列化，传输到 worker 或从 worker 传出，然后再反序列化。尽管看起来对象是直接传递的，但这些实例实际上是同一数据的完全独立的表示。尝试传递不支持的数据类型会导致 JavaScript 错误。
+只有特定类型的数据可以通过`postMessage()`传递。你可以传递原始值（字符串、数字、布尔值、`null`和`undefined`）以及`Object`和`Array`的实例；不能传递其他数据类型。有效数据会被序列化，传输到 worker 或从 worker 传出，然后再反序列化。尽管看起来对象是直接传递的，但这些实例实际上是同一数据的完全独立的表示。尝试传递不支持的数据类型会导致 JavaScript 错误。
 
-* * *
-
-### 注意
-
-Safari 4 的 worker 实现只允许通过 `postMessage()` 传递字符串。规范在此之后进行了更新，允许传递可序列化的数据，这也是 Firefox 3.5 实现 worker 的方式。
-
-* * *
+> **注意**
+>
+> Safari 4 的 worker 实现只允许通过`postMessage()`传递字符串。规范在此之后进行了更新，允许传递可序列化的数据，这也是 Firefox 3.5 实现 worker 的方式。
 
 ### 加载外部文件
 
-通过 `importScripts()` 方法可以将额外的 JavaScript 文件加载到 worker 中，该方法接受一个或多个要加载的 JavaScript 文件的 URL。在 worker 内部，`importScripts()` 的调用是阻塞的，因此脚本会等到所有文件加载并执行完毕后才会继续。由于 worker 在 UI 线程之外运行，因此这种阻塞不会影响 UI 的响应性。例如：
+通过`importScripts()`方法可以将额外的 JavaScript 文件加载到 worker 中，该方法接受一个或多个要加载的 JavaScript 文件的 URL。在 worker 内部，`importScripts()`的调用是阻塞的，因此脚本会等到所有文件加载并执行完毕后才会继续。由于 worker 在 UI 线程之外运行，因此这种阻塞不会影响 UI 的响应性。例如：
 
-```
+```javascript
 // 在 code.js 内部
 importScripts("file1.js", "file2.js");
 
@@ -3857,7 +3743,7 @@ Web Worker 适用于任何长时间运行、处理纯数据且与浏览器 UI �
 
 例如，考虑解析一个大型 JSON 字符串（JSON 解析将在第 7 章中进一步讨论）。假设数据足够大，解析至少需要 500 毫秒。这显然太长，不允许 JavaScript 在客户端运行，因为它会干扰用户体验。这个特定任务很难用定时器分解成小块，因此 worker 是理想的解决方案。以下代码展示了在网页中的用法：
 
-```
+```javascript
 var worker = new Worker("jsonparser.js");
 
 // 当数据可用时，调用此事件处理程序
@@ -3876,7 +3762,7 @@ worker.postMessage(jsonText);
 
 负责 JSON 解析的 worker 代码如下：
 
-```
+```javascript
 // 在 jsonparser.js 内部
 
 // 当 JSON 数据可用时，调用此事件处理程序
@@ -3893,15 +3779,15 @@ self.onmessage = function(event){
 };
 ```
 
-请注意，即使 `JSON.parse()` 可能需要 500 毫秒或更长时间，也无需编写任何额外的代码来拆分处理。此执行发生在单独的线程上，因此你可以让它运行任意长时间，而不会干扰用户体验。
+请注意，即使`JSON.parse()`可能需要 500 毫秒或更长时间，也无需编写任何额外的代码来拆分处理。此执行发生在单独的线程上，因此你可以让它运行任意长时间，而不会干扰用户体验。
 
-页面通过 `postMessage()` 将 JSON 字符串传入 worker。Worker 在其 `onmessage` 事件处理程序中将该字符串作为 `event.data` 接收，然后进行解析。完成后，生成的 JSON 对象通过 worker 的 `postMessage()` 方法传回页面。该对象随后在页面的 `onmessage` 事件处理程序中作为 `event.data` 可用。请记住，目前这仅在 Firefox 3.5 及更高版本中有效，因为 Safari 4 和 Chrome 3 的实现只允许在页面和 worker 之间传递字符串。
+页面通过`postMessage()`将 JSON 字符串传入 worker。Worker 在其`onmessage`事件处理程序中将该字符串作为`event.data`接收，然后进行解析。完成后，生成的 JSON 对象通过 worker 的`postMessage()`方法传回页面。该对象随后在页面的`onmessage`事件处理程序中作为`event.data`可用。请记住，目前这仅在 Firefox 3.5 及更高版本中有效，因为 Safari 4 和 Chrome 3 的实现只允许在页面和 worker 之间传递字符串。
 
 解析大型字符串只是 Web Worker 可以受益的众多任务之一。其他一些可能性包括：
 
-*   编码/解码大型字符串
-*   复杂的数学计算（包括图像或视频处理）
-*   对大型数组进行排序
+- 编码/解码大型字符串
+- 复杂的数学计算（包括图像或视频处理）
+- 对大型数组进行排序
 
 每当一个过程需要超过 100 毫秒才能完成时，你都应该考虑使用 worker 解决方案是否比基于定时器的方案更合适。当然，这取决于浏览器的能力。
 
@@ -3909,16 +3795,12 @@ self.onmessage = function(event){
 
 JavaScript 和用户界面更新在同一个进程中运行，因此一次只能执行一个操作。这意味着当 JavaScript 代码执行时，用户界面无法对输入做出反应，反之亦然。有效管理 UI 线程意味着确保 JavaScript 不会运行过长时间而影响用户体验。为此，应牢记以下几点：
 
-*   任何 JavaScript 任务的执行时间都不应超过 100 毫秒。更长的执行时间会导致 UI 更新出现明显延迟，并对整体用户体验产生负面影响。
-*   在 JavaScript 执行期间，浏览器对用户交互的反应方式各不相同。无论行为如何，当 JavaScript 执行时间过长时，用户体验都会变得混乱且不连贯。
-*   定时器可用于安排代码稍后执行，这允许你将长时间运行的脚本拆分为一系列较小的任务。
-*   Web Worker 是较新浏览器中的一项功能，允许你在 UI 线程之外执行 JavaScript 代码，从而防止 UI 锁定。
+- 任何 JavaScript 任务的执行时间都不应超过 100 毫秒。更长的执行时间会导致 UI 更新出现明显延迟，并对整体用户体验产生负面影响。
+- 在 JavaScript 执行期间，浏览器对用户交互的反应方式各不相同。无论行为如何，当 JavaScript 执行时间过长时，用户体验都会变得混乱且不连贯。
+- 定时器可用于安排代码稍后执行，这允许你将长时间运行的脚本拆分为一系列较小的任务。
+- Web Worker 是较新浏览器中的一项功能，允许你在 UI 线程之外执行 JavaScript 代码，从而防止 UI 锁定。
 
 Web 应用程序越复杂，主动管理 UI 线程就越关键。没有任何 JavaScript 代码重要到应该对用户体验产生不利影响。
-
-
-
-
 
 ^([9]) Miller, R. B., “人机对话事务中的响应时间,” *Proc. AFIPS Fall Joint Computer Conference*, Vol. 33 (1968), 267–277. 可查阅 [`portal.acm.org/citation.cfm?id=1476589.1476628`](http://portal.acm.org/citation.cfm?id=1476589.1476628).
 
@@ -3944,19 +3826,22 @@ Ajax 最基本的形式是一种在不卸载当前页面的情况下与服务器
 
 从服务器请求数据有五种常用技术：
 
-*   `XMLHttpRequest` (`XHR`)
-*   动态脚本标签插入
-*   iframes
-*   Comet
-*   多部分 `XHR`
+- `XMLHttpRequest`（`XHR`）
+
+
+
+- 动态脚本标签插入
+- iframes
+- Comet
+- 多部分 `XHR`
 
 在现代高性能 JavaScript 中常用的三种技术是 `XHR`、动态脚本标签插入和多部分 `XHR`。Comet 和 iframes（作为数据传输技术）的使用通常非常特定于场景，这里不再赘述。
 
-#### XMLHttpRequest
+### XMLHttpRequest
 
-`XMLHttpRequest` (`XHR`) 是目前最常用的技术，它允许你异步发送和接收数据。它在所有现代浏览器中都得到良好支持，并且可以对发送的请求和接收的数据进行精细控制。你可以向请求添加任意标头和参数（包括 `GET` 和 `POST`），并读取服务器返回的所有标头以及响应文本本身。以下是一个使用示例：
+`XMLHttpRequest`（`XHR`）是目前最常用的技术，它允许你异步发送和接收数据。它在所有现代浏览器中都得到良好支持，并且可以对发送的请求和接收的数据进行精细控制。你可以向请求添加任意标头和参数（包括 `GET` 和 `POST`），并读取服务器返回的所有标头以及响应文本本身。以下是一个使用示例：
 
-```
+```javascript
 var url = '/data.php';
 var params = [
     'id=934875',
@@ -3982,7 +3867,7 @@ req.send(null); // 发送请求。
 
 通过监听 `readyState` 3，可以在服务器响应仍在传输过程中时与之交互。这称为流式传输，是提高数据请求性能的强大工具：
 
-```
+```javascript
 req.onreadystatechange = function() {
 
     if (req.readyState === 3) { // 已收到部分数据，但并非全部。
@@ -4000,17 +3885,17 @@ req.onreadystatechange = function() {
 
 尽管存在这些缺点，`XHR` 仍然是最常用的请求数据技术，也是最强大的。它应该是你首先考虑的技术。
 
-##### 使用 `XHR` 时的 `POST` 与 `GET`
+#### 使用 `XHR` 时的 `POST` 与 `GET`
 
-使用 `XHR` 请求数据时，你可以选择使用 `POST` 或 `GET`。对于不改变服务器状态且仅拉取数据的请求（这称为*幂等操作*），请使用 `GET`。`GET` 请求会被缓存，如果多次获取相同数据，这可以提高性能。
+使用 `XHR` 请求数据时，你可以选择使用 `POST` 或 `GET`。对于不改变服务器状态且仅拉取数据的请求（这称为幂等操作），请使用 `GET`。`GET` 请求会被缓存，如果多次获取相同数据，这可以提高性能。
 
 仅当 URL 和参数的长度接近或超过 2048 个字符时，才应使用 `POST` 来获取数据。这是因为 Internet Explorer 将 URL 限制为该长度，超出该长度会导致请求被截断。
 
-#### 动态脚本标签插入
+### 动态脚本标签插入
 
-这种技术克服了 `XHR` 的最大限制：它可以从不同域的服务器请求数据。这是一种 hack；不是实例化一个专用对象，而是使用 JavaScript 创建一个新的脚本标签，并将其 src 属性设置为不同域的 URL。
+这种技术克服了 `XHR` 的最大限制：它可以从不同域的服务器请求数据。这是一种 hack；不是实例化一个专用对象，而是使用 JavaScript 创建一个新的脚本标签，并将其 `src` 属性设置为不同域的 URL。
 
-```
+```javascript
 var scriptElement = document.createElement('script');
 scriptElement.src = 'http://any-domain.com/javascript/lib.js';
 document.getElementsByTagName('head')[0].appendChild(scriptElement);
@@ -4018,9 +3903,9 @@ document.getElementsByTagName('head')[0].appendChild(scriptElement);
 
 但动态脚本标签插入提供的控制比 `XHR` 少得多。你不能在请求中发送标头。参数只能通过 `GET` 传递，不能使用 `POST`。你不能设置超时或重试请求；事实上，你甚至不一定知道它是否失败。你必须等待所有数据返回后才能访问任何数据。你无法访问响应标头，也无法将整个响应作为字符串访问。
 
-最后一点尤其重要。由于响应被用作脚本标签的源，它*必须*是可执行的 JavaScript。你不能使用纯 XML，甚至不能使用纯 JSON；任何数据，无论格式如何，都必须包含在回调函数中。
+最后一点尤其重要。由于响应被用作脚本标签的源，它必须是可执行的 JavaScript。你不能使用纯 XML，甚至不能使用纯 JSON；任何数据，无论格式如何，都必须包含在回调函数中。
 
-```
+```javascript
 var scriptElement = document.createElement('script');
 scriptElement.src = 'http://any-domain.com/javascript/lib.js';
 document.getElementsByTagName('head')[0].appendChild(scriptElement);
@@ -4033,14 +3918,11 @@ function jsonCallback(data) {
 
 在此示例中，`lib.js` 文件会将数据封装在 `jsonCallback` 函数中：
 
-```
+```javascript
 jsonCallback({ "status": 1, "colors": [ "#fff", "#000", "#ff0000" ] });
 ```
 
 尽管存在这些限制，这种技术可能非常快。响应作为 JavaScript 执行；它不会被当作需要进一步处理的字符串。因此，它有可能成为获取数据并将其解析为客户端可访问内容的最快方式。我们将在本章后面的 JSON 部分比较动态脚本标签插入与 `XHR` 的性能。
-
-
-
 
 请注意，使用此技术从您无法直接控制的服务器请求数据时需谨慎。JavaScript 没有权限或访问控制的概念，因此通过动态脚本标签插入到页面中的任何代码都将完全控制该页面。这包括修改任何内容、将用户重定向到其他网站，甚至跟踪用户在此页面上的操作并将数据发送给第三方。在从外部来源引入代码时，请务必极其小心。
 
@@ -4050,7 +3932,7 @@ jsonCallback({ "status": 1, "colors": [ "#fff", "#000", "#ff0000" ] });
 
 让我们从头到尾跟踪这个过程。首先，向服务器发出请求以获取多个图像资源：
 
-```
+```javascript
 var req = new XMLHttpRequest();
 
 req.open('GET', 'rollup_images.php', true);
@@ -4066,7 +3948,7 @@ req.send(null);
 
 接下来，在服务器端，读取图像并将其转换为字符串：
 
-```
+```php
 // 读取图像并将其转换为 base64 编码的字符串。
 
 $images = array('kitten.jpg', 'sunset.jpg', 'baby.jpg');
@@ -4090,7 +3972,7 @@ echo implode($newline, $payloads);
 
 一旦到达客户端，数据由 `splitImages` 函数处理：
 
-```
+```javascript
 function splitImages(imageString) {
 
     var imageData = imageString.split("\u0001");
@@ -4105,11 +3987,11 @@ function splitImages(imageString) {
 }
 ```
 
-此函数接收连接后的字符串，并将其再次拆分为三个部分。每个部分用于创建一个图像元素，然后将该图像元素插入页面。图像*不会*从 base64 字符串转换回二进制数据；而是通过 `data:` URL 和 `image/jpeg` MIME 类型传递给图像元素。
+此函数接收连接后的字符串，并将其再次拆分为三个部分。每个部分用于创建一个图像元素，然后将该图像元素插入页面。图像不会从 base64 字符串转换回二进制数据；而是通过 `data:` URL 和 `image/jpeg` MIME 类型传递给图像元素。
 
 最终结果是，三个图像通过单个 HTTP 请求传递给了浏览器。这可以扩展到 20 个或 100 个图像；响应会更大，但仍然只需要一个 HTTP 请求。它还可以扩展到其他类型的资源。JavaScript 文件、CSS 文件、HTML 片段以及多种类型的图像都可以合并到一个响应中。任何可以由 JavaScript 作为字符串处理的数据类型都可以发送。以下是用于处理 JavaScript 代码、CSS 样式和图像的字符串，并将其转换为浏览器可用资源的函数：
 
-```
+```javascript
 function handleImageData(data, mimeType) {
     var img = document.createElement('img');
     img.src = 'data:' + mimeType + ';base64,' + data;
@@ -4132,7 +4014,7 @@ function handleJavaScript(data) {
 
 随着 MXHR 响应变得越来越大，有必要在接收到每个资源时立即处理，而不是等待整个响应。这可以通过监听 `readyState` 3 来实现：
 
-```
+```javascript
 var req = new XMLHttpRequest();
 var getLatestPacketInterval, lastLength = 0;
 
@@ -4181,25 +4063,20 @@ function getLatestPacket() {
 
 尽管存在这些缺点，但在某些情况下，MXHR 仍然能显著提高整体页面性能：
 
-*   包含大量在网站其他地方未使用的资源（因此不需要缓存）的页面，尤其是图像
-
-*   已经在每个页面上使用独特的打包 JavaScript 或 CSS 文件以减少 HTTP 请求的网站；由于每个页面都是唯一的，除非重新加载该特定页面，否则永远不会从缓存中读取
+- 包含大量在网站其他地方未使用的资源（因此不需要缓存）的页面，尤其是图像。
+- 已经在每个页面上使用独特的打包 JavaScript 或 CSS 文件以减少 HTTP 请求的网站；由于每个页面都是唯一的，除非重新加载该特定页面，否则永远不会从缓存中读取。
 
 由于 HTTP 请求是 Ajax 中最严重的瓶颈之一，减少所需请求的数量对整体页面性能有很大影响。当您能够将 100 个图像请求转换为单个多部分 XHR 请求时，这一点尤其明显。在现代浏览器上使用大量图像进行的临时测试表明，此技术比单独请求快 4 到 10 倍。您可以在 [`techfoolery.com/mxhr/`](http://techfoolery.com/mxhr/) 自行运行这些测试。
 
 ## 发送数据
 
-有时您并不关心检索数据，而只想将数据发送到服务器。您可能正在发送用户的非个人信息以供后续分析，或者捕获所有发生的脚本错误并将其详细信息发送到服务器以进行记录和警报。当只需要将数据发送到服务器时，有两种广泛使用的技术：XHR 和信标。
+有时您并不关心检索数据，而只想将数据发送到服务器。您可能正在发送用户的非个人信息以供后续分析，或者捕获所有发生的脚本错误并将其详细信息发送到服务器以进行记录和警报。当只需要将数据发送到服务器时，有两种广泛使用的技术：`XHR` 和信标。
 
 ### XMLHttpRequest
 
+虽然 `XHR` 主要用于从服务器请求数据，但它也可以用来发送数据。数据可以通过 `GET` 或 `POST` 方式发送，也可以放在任意数量的 HTTP 标头中。这为你提供了极大的灵活性。当你要发送的数据量超过浏览器中 URL 的最大长度时，`XHR` 尤其有用。在这种情况下，你可以将数据作为 `POST` 请求发送：
 
-
-
-
-虽然 `XHR` 主要用于从服务器请求数据，但它也可以用来发送数据。数据可以通过 GET 或 POST 方式发送，也可以放在任意数量的 HTTP 标头中。这为你提供了极大的灵活性。当你要发送的数据量超过浏览器中 URL 的最大长度时，`XHR` 尤其有用。在这种情况下，你可以将数据作为 POST 请求发送：
-
-```
+```javascript
 var url = '/data.php';
 var params = [
     'id=934875',
@@ -4228,7 +4105,9 @@ req.send(data);
 
 如本例所示，如果 POST 失败，我们什么也不做。当 `XHR` 用于收集广泛的用户统计数据时，这通常没问题，但如果数据必须到达服务器，你可以添加代码在失败时重试：
 
-```
+
+
+```javascript
 function xhrPost(url, params, callback) {
 
     var req = new XMLHttpRequest();
@@ -4257,13 +4136,13 @@ function xhrPost(url, params, callback) {
 }
 ```
 
-使用 `XHR` 将数据发送回服务器时，使用 GET 更快。这是因为对于少量数据，GET 请求会通过单个数据包发送到服务器。而 POST 至少需要两个数据包，一个用于标头，另一个用于 POST 正文。POST 更适合向服务器发送大量数据，因为额外的数据包影响不大，而且 Internet Explorer 的 URL 长度限制使得长 GET 请求不可行。
+使用`XHR`将数据发送回服务器时，使用 GET 更快。这是因为对于少量数据，GET 请求会通过单个数据包发送到服务器。而 POST 至少需要两个数据包，一个用于标头，另一个用于 POST 正文。POST 更适合向服务器发送大量数据，因为额外的数据包影响不大，而且 Internet Explorer 的 URL 长度限制使得长 GET 请求不可行。
 
-#### 信标（Beacons）
+### 信标（Beacons）
 
-这种技术非常类似于动态脚本标签插入。JavaScript 用于创建一个新的 `Image` 对象，其 `src` 设置为服务器上某个脚本的 URL。该 URL 包含我们想要以键值对 GET 格式发送回的数据。注意，无需创建或插入 `img` 元素到 DOM 中。
+这种技术非常类似于动态脚本标签插入。JavaScript 用于创建一个新的`Image`对象，其`src`设置为服务器上某个脚本的 URL。该 URL 包含我们想要以键值对 GET 格式发送回的数据。注意，无需创建或插入`img`元素到 DOM 中。
 
-```
+```javascript
 var url = '/status_tracker.php';
 var params = [
     'step=2',
@@ -4275,11 +4154,11 @@ var params = [
 
 服务器接收这些数据并存储；它不必向客户端发送任何内容，因为图像实际上并不显示。这是将信息发送回服务器的最有效方式。开销非常小，而且服务器端错误完全不会影响客户端。
 
-图像信标的简单性也意味着你能做的事情受到限制。你不能发送 POST 数据，因此在达到最大允许 URL 长度之前，你只能使用相当少的字符。你*可以*接收返回的数据，但方式非常有限。可以监听 `Image` 对象的 `load` 事件，它会告诉你服务器是否成功接收了数据。你还可以检查服务器返回的图像的宽度和高度（如果返回了图像），并用这些数字来了解服务器的状态。例如，宽度为 1 可能表示“成功”，宽度为 2 可能表示“重试”。
+图像信标的简单性也意味着你能做的事情受到限制。你不能发送 POST 数据，因此在达到最大允许 URL 长度之前，你只能使用相当少的字符。你*可以*接收返回的数据，但方式非常有限。可以监听`Image`对象的`load`事件，它会告诉你服务器是否成功接收了数据。你还可以检查服务器返回的图像的宽度和高度（如果返回了图像），并用这些数字来了解服务器的状态。例如，宽度为 1 可能表示“成功”，宽度为 2 可能表示“重试”。
 
-如果不需要在响应中返回数据，你应该发送 `204 No Content` 响应码，并且不包含消息体。这样可以防止客户端等待永远不会到来的消息体：
+如果不需要在响应中返回数据，你应该发送`204 No Content`响应码，并且不包含消息体。这样可以防止客户端等待永远不会到来的消息体：
 
-```
+```javascript
 var url = '/status_tracker.php';
 var params = [
     'step=2',
@@ -4303,7 +4182,7 @@ beacon.onerror = function() {
 };
 ```
 
-信标是将数据发送回服务器最快、最高效的方式。服务器根本不需要返回任何响应体，因此你不必担心向客户端下载数据。唯一的缺点是你能接收的响应类型有限。如果需要向客户端传递大量数据，请使用 `XHR`。如果只关心向服务器发送数据（可能只需要非常简单的响应），请使用图像信标。
+信标是将数据发送回服务器最快、最高效的方式。服务器根本不需要返回任何响应体，因此你不必担心向客户端下载数据。唯一的缺点是你能接收的响应类型有限。如果需要向客户端传递大量数据，请使用`XHR`。如果只关心向服务器发送数据（可能只需要非常简单的响应），请使用图像信标。
 
 ## 数据格式
 
@@ -4317,7 +4196,7 @@ beacon.onerror = function() {
 
 以下是我们用户列表编码为 XML 的示例：
 
-```
+```xml
 <?xml version="1.0" encoding='UTF-8'?>
 <users total="4">
     <user id="1">
@@ -4349,11 +4228,7 @@ beacon.onerror = function() {
 
 以下是将这个特定的 XML 响应解析为对象的示例：
 
-
-
-
-
-```
+```javascript
 function parseXML(responseXML) {
 
     var users = [];
@@ -4402,9 +4277,9 @@ function parseXML(responseXML) {
 
 如你所见，它需要检查每个标签是否存在，然后才能读取其值。这种方法严重依赖于 XML 的结构。
 
-更高效的做法是将每个值编码为 `<user>` 标签的属性。这样，在数据量相同的情况下，文件体积会更小。下面是一个将值编码为属性的用户列表示例：
+更高效的做法是将每个值编码为`<user>`标签的属性。这样，在数据量相同的情况下，文件体积会更小。下面是一个将值编码为属性的用户列表示例：
 
-```
+```xml
 <?xml version="1.0" encoding='UTF-8'?>
 <users total="4">
     <user id="1" username="alice" realname="Alice Smith"
@@ -4420,7 +4295,7 @@ function parseXML(responseXML) {
 
 解析这种简化后的 XML 响应要容易得多：
 
-```
+```javascript
 function parseXML(responseXML) {
 
     var users = [];
@@ -4441,7 +4316,7 @@ function parseXML(responseXML) {
 
 #### XPath
 
-虽然这超出了本章的范围，但在解析 XML 文档时，XPath 可能比 `getElementsByTagName` 快得多。需要注意的是，XPath 并非在所有浏览器中都得到支持，因此你还必须编写使用旧式 DOM 遍历的回退代码。目前，Firefox、Safari、Chrome 和 Opera 已经实现了 DOM Level 3 XPath。Internet Explorer 8 有一个类似但功能稍弱的接口。
+虽然这超出了本章的范围，但在解析 XML 文档时，XPath 可能比`getElementsByTagName`快得多。需要注意的是，XPath 并非在所有浏览器中都得到支持，因此你还必须编写使用旧式 DOM 遍历的回退代码。目前，Firefox、Safari、Chrome 和 Opera 已经实现了 DOM Level 3 XPath。Internet Explorer 8 有一个类似但功能稍弱的接口。
 
 #### 响应大小与解析时间
 
@@ -4452,13 +4327,13 @@ function parseXML(responseXML) {
 | 冗长 XML | 582,960 字节 | 999.4 毫秒 | 343.1 毫秒 | 1342.5 毫秒 |
 | 简洁 XML | 437,960 字节 | 475.1 毫秒 | 83.1 毫秒 | 558.2 毫秒 |
 
-* * *
+---
 
 ### 注意
 
-每种数据类型都使用长度为 100、500、1,000 和 5,000 的用户列表进行了测试。每个列表在同一个浏览器中下载并解析了 10 次，并取下载时间、解析时间和文件大小的平均值。所有数据格式和传输技术的完整结果，以及你可以自行运行的测试，都可以在 [`techfoolery.com/formats/`](http://techfoolery.com/formats/) 找到。
+每种数据类型都使用长度为 100、500、1,000 和 5,000 的用户列表进行了测试。每个列表在同一个浏览器中下载并解析了 10 次，并取下载时间、解析时间和文件大小的平均值。所有数据格式和传输技术的完整结果，以及你可以自行运行的测试，都可以在[`techfoolery.com/formats/`](http://techfoolery.com/formats/)找到。
 
-* * *
+---
 
 如你所见，优先使用属性而非子标签可以减小文件体积并显著加快解析速度。这主要是因为你不必在 XML 结构上过多地遍历 DOM，而只需直接读取属性即可。
 
@@ -4468,7 +4343,7 @@ function parseXML(responseXML) {
 
 JSON 由 Douglas Crockford 正式定义并推广，是一种轻量级且易于解析的数据格式，使用 JavaScript 对象和数组字面量语法编写。下面是用 JSON 编写的用户列表示例：
 
-```
+```json
 [
     { "id": 1, "username": "alice", "realname": "Alice Smith",
         "email": "alice@alicesmith.com" },
@@ -4481,25 +4356,27 @@ JSON 由 Douglas Crockford 正式定义并推广，是一种轻量级且易于�
 ]
 ```
 
-用户被表示为对象，用户列表是一个数组，就像在 JavaScript 中写出任何其他数组或对象一样。这意味着，当被 `eval` 或包裹在回调函数中时，JSON 数据就是可执行的 JavaScript 代码。在 JavaScript 中解析 JSON 字符串就像使用 `eval()` 一样简单：
+用户被表示为对象，用户列表是一个数组，就像在 JavaScript 中写出任何其他数组或对象一样。这意味着，当被`eval`或包裹在回调函数中时，JSON 数据就是可执行的 JavaScript 代码。在 JavaScript 中解析 JSON 字符串就像使用`eval()`一样简单：
 
-```
+```javascript
 function parseJSON(responseText) {
     return eval('(' + responseText + ')');
 }
 ```
 
-* * *
+---
 
 ### 警告
 
-关于 JSON 和 `eval` 的说明：在代码中使用 `eval` 是危险的，尤其是在用它评估第三方 JSON 数据时（这些数据可能包含恶意或格式错误的代码）。只要可能，请使用 `JSON.parse()` 方法原生解析字符串。该方法会捕获 JSON 中的语法错误，并允许你传入一个函数来过滤或转换结果。目前，Firefox 3.5、Internet Explorer 8 和 Safari 4 已经实现了该方法。大多数 JavaScript 库都包含 JSON 解析代码，如果原生版本可用，则会调用它，否则会调用一个功能稍弱的非原生版本。非原生版本的参考实现可以在 [`json.org/json2.js`](http://json.org/json2.js) 找到。为了保持一致性，代码示例中将使用 `eval`。
 
-* * *
+
+关于 JSON 和`eval`的说明：在代码中使用`eval`是危险的，尤其是在用它评估第三方 JSON 数据时（这些数据可能包含恶意或格式错误的代码）。只要可能，请使用`JSON.parse()`方法原生解析字符串。该方法会捕获 JSON 中的语法错误，并允许你传入一个函数来过滤或转换结果。目前，Firefox 3.5、Internet Explorer 8 和 Safari 4 已经实现了该方法。大多数 JavaScript 库都包含 JSON 解析代码，如果原生版本可用，则会调用它，否则会调用一个功能稍弱的非原生版本。非原生版本的参考实现可以在[`json.org/json2.js`](http://json.org/json2.js)找到。为了保持一致性，代码示例中将使用`eval`。
+
+---
 
 与 XML 一样，也可以将这种格式简化为更简单的版本。在这种情况下，我们可以将属性名称替换为缩写版本（虽然可读性较差）：
 
-```
+```json
 [
     { "i": 1, "u": "alice", "r": "Alice Smith", "e": "alice@alicesmith.com" },
     { "i": 2, "u": "bob", "r": "Bob Jones", "e": "bob@bobjones.com" },
@@ -4511,11 +4388,7 @@ function parseJSON(responseText) {
 
 这样，我们得到了相同的数据，但结构更少，传输到浏览器的总字节数也更少。我们甚至可以更进一步，完全去掉属性名称。这种格式的可读性比前两种更差，也更加脆弱，但文件体积小得多：几乎是冗长 JSON 格式的一半。
 
-
-
-
-
-```
+```json
 [
     [ 1, "alice", "Alice Smith", "alice@alicesmith.com" ],
     [ 2, "bob", "Bob Jones", "bob@bobjones.com" ],
@@ -4526,7 +4399,7 @@ function parseJSON(responseText) {
 
 成功解析要求必须保持数据的顺序。也就是说，将这个格式转换为与第一种 JSON 格式保持相同属性名的格式是很容易的：
 
-```
+```javascript
 function parseJSON(responseText) {
 
     var users = [];
@@ -4545,7 +4418,7 @@ function parseJSON(responseText) {
 }
 ```
 
-在这个例子中，我们使用 `eval()` 将字符串转换为原生的 JavaScript 数组。然后将这个数组的数组转换为对象数组。本质上，你是用更小的文件大小和更快的 `eval()` 时间来换取更复杂的解析函数。下表列出了三种 JSON 格式在使用 XHR 传输时的性能数据。
+在这个例子中，我们使用`eval()`将字符串转换为原生的 JavaScript 数组。然后将这个数组的数组转换为对象数组。本质上，你是用更小的文件大小和更快的`eval()`时间来换取更复杂的解析函数。下表列出了三种 JSON 格式在使用 XHR 传输时的性能数据。
 
 | 格式 | 大小 | 下载时间 | 解析时间 | 总加载时间 |
 | --- | --- | --- | --- | --- |
@@ -4555,11 +4428,11 @@ function parseJSON(responseText) {
 
 使用数组构成的 JSON 在每个类别中都胜出：文件大小最小、平均下载时间最快、平均解析时间最快。尽管解析函数必须遍历列表中所有 5000 个条目，但解析速度仍然快了 30% 以上。
 
-#### JSON-P
+### JSON-P
 
-JSON 可以被原生执行这一事实对性能有几个重要的影响。当使用 XHR 时，JSON 数据以字符串形式返回。然后使用 `eval()` 对该字符串求值，将其转换为原生对象。然而，当使用动态脚本标签插入时，JSON 数据被视为另一个 JavaScript 文件，并作为原生代码执行。为了实现这一点，数据必须包装在一个回调函数中。这被称为“带填充的 JSON”，即 JSON-P。以下是我们用户列表的 JSON-P 格式：
+JSON 可以被原生执行这一事实对性能有几个重要的影响。当使用 XHR 时，JSON 数据以字符串形式返回。然后使用`eval()`对该字符串求值，将其转换为原生对象。然而，当使用动态脚本标签插入时，JSON 数据被视为另一个 JavaScript 文件，并作为原生代码执行。为了实现这一点，数据必须包装在一个回调函数中。这被称为“带填充的 JSON”，即 JSON-P。以下是我们用户列表的 JSON-P 格式：
 
-```
+```javascript
 parseJSON([
     { "id": 1, "username": "alice", "realname": "Alice Smith",
         "email": "alice@alicesmith.com" },
@@ -4584,17 +4457,17 @@ JSON-P 通过回调包装器给文件大小增加了一点点，但与改进的�
 
 最快的 JSON 格式是使用数组构成的 JSON-P。虽然这仅比使用 XHR 传输的 JSON 稍快，但随着列表大小的增加，这种差异会增大。如果你正在处理一个需要包含 10,000 或 100,000 个元素的列表的项目，请优先选择 JSON-P 而不是 JSON。
 
-有一个与性能无关的理由要避免使用 JSON-P：由于 JSON-P 必须是可执行的 JavaScript，任何人都可以调用它，并通过动态脚本标签插入将其包含在任何网站中。另一方面，JSON 在被 `eval` 之前不是有效的 JavaScript，并且只能通过 XHR 作为字符串获取。不要在 JSON-P 中编码任何敏感数据，因为你无法确保其隐私性，即使使用随机 URL 或 cookie 也不行。
+有一个与性能无关的理由要避免使用 JSON-P：由于 JSON-P 必须是可执行的 JavaScript，任何人都可以调用它，并通过动态脚本标签插入将其包含在任何网站中。另一方面，JSON 在被`eval`之前不是有效的 JavaScript，并且只能通过 XHR 作为字符串获取。不要在 JSON-P 中编码任何敏感数据，因为你无法确保其隐私性，即使使用随机 URL 或 cookie 也不行。
 
-#### 你应该使用 JSON 吗？
+### 你应该使用 JSON 吗？
 
 与 XML 相比，JSON 有几个优点。它是一种更小的格式，整体响应大小中用于结构的部分更少，而数据部分更多。当数据包含数组而不是对象时尤其如此。JSON 具有极强的互操作性，大多数服务器端语言都有可用的编码和解码库。在客户端解析它很容易，让你有更多时间编写代码来实际处理数据。而且，对于 Web 开发者来说最重要的是，它是性能最好的格式之一，既因为它在网络上相对较小，也因为解析速度非常快。JSON 是高性能 Ajax 的基石，尤其是与动态脚本标签插入一起使用时。
 
-### HTML
+## HTML
 
-通常，你请求的数据将被转换为 HTML 以在页面上显示。在 JavaScript 中将大型数据结构转换为简单的 HTML 可以相对快速地完成，但在服务器上可以更快地完成。一种值得考虑的技术是在服务器上生成所有 HTML，然后将其完整地传递给客户端；JavaScript 只需使用 `innerHTML` 将其放入适当位置即可。以下是用户列表编码为 HTML 的示例：
+通常，你请求的数据将被转换为 HTML 以在页面上显示。在 JavaScript 中将大型数据结构转换为简单的 HTML 可以相对快速地完成，但在服务器上可以更快地完成。一种值得考虑的技术是在服务器上生成所有 HTML，然后将其完整地传递给客户端；JavaScript 只需使用`innerHTML`将其放入适当位置即可。以下是用户列表编码为 HTML 的示例：
 
-```
+```html
 <ul class="users">
     <li class="user" id="1">
         <a href="http://www.site.com/alice/" class="username">alice</a>
@@ -4628,13 +4501,9 @@ JSON-P 通过回调包装器给文件大小增加了一点点，但与改进的�
 
 在另一个极端情况下，你有在服务器上创建的 HTML。这种格式在网络上要大得多，下载时间也更长，但一旦下载完成，在页面上显示它只需要一个操作：
 
-```
+```javascript
 document.getElementById('data-container').innerHTML = req.responseText;
 ```
-
-
-
-
 
 下表展示了使用 HTML 编码的用户列表的性能数据。请记住，这种格式与其他格式的主要区别在于：这里的“解析”指的是将 HTML 插入 DOM 的操作。此外，与原生 JavaScript 数组不同，HTML 无法轻松或快速地遍历。
 
@@ -4644,27 +4513,27 @@ document.getElementById('data-container').innerHTML = req.responseText;
 
 如你所见，HTML 在传输时体积明显更大，并且解析时间也很长。这是因为将 HTML 插入 DOM 的单一操作看似简单；尽管它只是一行代码，但将如此多的数据加载到页面中仍然需要相当长的时间。这些性能数据与其他格式略有不同，因为最终结果不是数据数组，而是页面上显示的 HTML 元素。尽管如此，它们仍然说明了 HTML 作为一种数据格式，既缓慢又臃肿。
 
-### 自定义格式
+## 自定义格式
 
 理想的数据格式应包含足够的结构，以便将各个字段彼此分离。你可以通过简单地用分隔符连接数据来轻松创建这样的格式：
 
-```
+```text
 Jacob;Michael;Joshua;Matthew;Andrew;Christopher;Joseph;Daniel;Nicholas;
 Ethan;William;Anthony;Ryan;David;Tyler;John
 ```
 
 这些分隔符本质上创建了一个数据数组，类似于逗号分隔的列表。通过使用不同的分隔符，你可以创建多维数组。以下是我们以字符分隔的自定义格式编码的用户列表：
 
-```
+```text
 1:alice:Alice Smith:alice@alicesmith.com;
 2:bob:Bob Jones:bob@bobjones.com;
 3:carol:Carol Williams:carol@carolwilliams.com;
 4:dave:Dave Johnson:dave@davejohnson.com
 ```
 
-这种格式极其简洁，提供了非常高的数据与结构比（显著高于除纯文本外的任何其他格式）。自定义格式在网络上下载速度快，解析起来也快速简单；你只需在字符串上调用 `split()`，并将分隔符作为参数传入。更复杂的自定义格式（包含多个分隔符）需要循环来拆分所有数据（但请记住，这些循环在 JavaScript 中执行速度极快）。`split()` 是最快的字符串操作之一，通常可以在几毫秒内处理包含 10,000 多个元素的分隔符列表。以下是如何解析上述格式的示例：
+这种格式极其简洁，提供了非常高的数据与结构比（显著高于除纯文本外的任何其他格式）。自定义格式在网络上下载速度快，解析起来也快速简单；你只需在字符串上调用`split()`，并将分隔符作为参数传入。更复杂的自定义格式（包含多个分隔符）需要循环来拆分所有数据（但请记住，这些循环在 JavaScript 中执行速度极快）。`split()`是最快的字符串操作之一，通常可以在几毫秒内处理包含 10,000 多个元素的分隔符列表。以下是如何解析上述格式的示例：
 
-```
+```javascript
 function parseCustomFormat(responseText) {
 
     var users = [];
@@ -4689,7 +4558,7 @@ function parseCustomFormat(responseText) {
 
 在创建自己的自定义格式时，最重要的决策之一是选择什么作为分隔符。理想情况下，每个分隔符应是一个字符，并且不应自然出现在你的数据中。低编号的 ASCII 字符效果很好，并且在大多数服务器端语言中易于表示。例如，以下是在 PHP 中使用 ASCII 字符的方法：
 
-```
+```php
 function build_format_custom($users) {
 
     $row_delimiter = chr(1); // JavaScript 中的 \u0001。
@@ -4706,9 +4575,9 @@ $user['email']);
 }
 ```
 
-这些控制字符在 JavaScript 中使用 Unicode 表示法表示（例如 `\u0001`）。`split()` 函数可以接受字符串或正则表达式作为参数。如果你预计数据中会有空字段，请使用字符串；如果分隔符作为正则表达式传递，在 IE 中，当两个分隔符相邻时，`split()` 会忽略第二个分隔符。在其他浏览器中，这两种参数类型是等效的。
+这些控制字符在 JavaScript 中使用 Unicode 表示法表示（例如`\u0001`）。`split()`函数可以接受字符串或正则表达式作为参数。如果你预计数据中会有空字段，请使用字符串；如果分隔符作为正则表达式传递，在 IE 中，当两个分隔符相邻时，`split()`会忽略第二个分隔符。在其他浏览器中，这两种参数类型是等效的。
 
-```
+```javascript
 // 正则表达式分隔符。
 var rows = req.responseText.split(/\u0001/);
 
@@ -4720,18 +4589,22 @@ var rows = req.responseText.split("\u0001");
 
 | 格式 | 大小 | 下载时间 | 解析时间 | 总加载时间 |
 | --- | --- | --- | --- | --- |
+
+
+
+
 | 自定义格式（XHR） | 222,892 字节 | 63.1 毫秒 | 14.5 毫秒 | 77.6 毫秒 |
+| --- | --- | --- | --- | --- |
 | 自定义格式（脚本插入） | 222,912 字节 | 66.3 毫秒 | 11.7 毫秒 | 78.0 毫秒 |
 
-这种格式可以同时使用 XHR 或动态脚本标签插入。由于在这两种情况下响应都是作为字符串解析的，因此性能上没有实际差异。对于非常大的数据集，它无疑是最快的格式，在解析速度和总加载时间上甚至超过了原生执行的 JSON。这种格式使得在极短时间内将大量数据发送到客户端成为可能。
+这种格式可以同时使用`XHR`或动态脚本标签插入。由于在这两种情况下响应都是作为字符串解析的，因此性能上没有实际差异。对于非常大的数据集，它无疑是最快的格式，在解析速度和总加载时间上甚至超过了原生执行的`JSON`。这种格式使得在极短时间内将大量数据发送到客户端成为可能。
 
 ### 数据格式结论
 
-总体上倾向于轻量级格式；最佳选择是 JSON 和字符分隔的自定义格式。如果数据集很大且解析时间成为问题，请使用以下两种技术之一：
+总体上倾向于轻量级格式；最佳选择是`JSON`和字符分隔的自定义格式。如果数据集很大且解析时间成为问题，请使用以下两种技术之一：
 
-*   JSON-P 数据，通过动态脚本标签插入获取。这将数据视为可执行的 JavaScript，而不是字符串，从而实现极快的解析。这可以跨域使用，但不应用于敏感数据。
-
-*   字符分隔的自定义格式，通过 XHR 或动态脚本标签插入获取，并使用 `split()` 解析。这种技术解析非常大的数据集比 JSON-P 技术稍快，并且通常文件大小更小。
+* `JSON-P`数据，通过动态脚本标签插入获取。这将数据视为可执行的`JavaScript`，而不是字符串，从而实现极快的解析。这可以跨域使用，但不应用于敏感数据。
+* 字符分隔的自定义格式，通过`XHR`或动态脚本标签插入获取，并使用`split()`解析。这种技术解析非常大的数据集比`JSON-P`技术稍快，并且通常文件大小更小。
 
 下表和图 7-1 再次显示了所有性能数据（按从慢到快的顺序），以便你可以在一个地方比较每种格式。HTML 被排除在外，因为它与其他格式不直接可比。请注意，大小和下载时间针对的是未压缩（非 gzip）的数据。
 
@@ -4748,9 +4621,11 @@ var rows = req.responseText.split("\u0001");
 | 自定义格式（脚本插入） | 222,912 字节 | 66.3 毫秒 | 11.7 毫秒 | 78.0 毫秒 |
 | 自定义格式（XHR） | 222,892 字节 | 63.1 毫秒 | 14.5 毫秒 | 77.6 毫秒 |
 
-![数据格式下载与解析时间对比](img/00024.gif)图 7-1. 数据格式下载与解析时间对比
+![数据格式下载与解析时间对比](img/00024.gif)
 
-请记住，这些数字来自单个浏览器中的单次测试运行。结果应作为性能的一般指标，而非硬性数据。你可以在 [`techfoolery.com/formats/`](http://techfoolery.com/formats/) 自行运行这些测试。
+图 7-1. 数据格式下载与解析时间对比
+
+请记住，这些数字来自单个浏览器中的单次测试运行。结果应作为性能的一般指标，而非硬性数据。你可以在[`techfoolery.com/formats/`](http://techfoolery.com/formats/)自行运行这些测试。
 
 ## Ajax 性能指南
 
@@ -4760,47 +4635,42 @@ var rows = req.responseText.split("\u0001");
 
 最快的 Ajax 请求是无需发出的请求。有两种主要方法可以避免不必要的请求：
 
-*   在服务器端，设置 HTTP 头以确保你的响应将在浏览器中被缓存。
-
-
-
-
-
-*   在客户端，将获取到的数据存储在本地，这样就不必再次请求。
+* 在服务器端，设置 HTTP 头以确保你的响应将在浏览器中被缓存。
+* 在客户端，将获取到的数据存储在本地，这样就不必再次请求。
 
 第一种技术最容易设置和维护，而第二种技术则能提供最高程度的控制。
 
 #### 设置 HTTP 头部
 
-如果你希望浏览器缓存 Ajax 响应，必须使用 `GET` 发起请求。但仅仅使用 `GET` 还不够，你还必须在响应中发送正确的 HTTP 头部。`Expires` 头部告诉浏览器响应可以被缓存多长时间。其值是一个日期；超过该日期后，对该 URL 的任何请求将不再从缓存中提供，而是转发到服务器。以下是 `Expires` 头部的示例：
+如果你希望浏览器缓存 Ajax 响应，必须使用`GET`发起请求。但仅仅使用`GET`还不够，你还必须在响应中发送正确的 HTTP 头部。`Expires`头部告诉浏览器响应可以被缓存多长时间。其值是一个日期；超过该日期后，对该 URL 的任何请求将不再从缓存中提供，而是转发到服务器。以下是`Expires`头部的示例：
 
-```
+```http
 Expires:    Mon, 28 Jul 2014 23:30:00 GMT
 ```
 
-这个特定的 `Expires` 头部告诉浏览器将此响应缓存到 2014 年 7 月。这被称为*远期* `Expires` 头部，适用于永远不会改变的内容，例如图片或静态数据集。
+这个特定的`Expires`头部告诉浏览器将此响应缓存到 2014 年 7 月。这被称为*远期* `Expires`头部，适用于永远不会改变的内容，例如图片或静态数据集。
 
-`Expires` 头部中的日期是 GMT 日期。可以使用以下 PHP 代码进行设置：
+`Expires`头部中的日期是 GMT 日期。可以使用以下 PHP 代码进行设置：
 
-```
+```php
 $lifetime = 7 * 24 * 60 * 60; // 7 天，以秒为单位。
 header('Expires: ' . gmdate('D, d M Y H:i:s', time() + $lifetime) . ' GMT');
 ```
 
-这将告诉浏览器将文件缓存 7 天。要设置一个远期 `Expires` 头部，可以将生命周期设置得更长；以下示例告诉浏览器将文件缓存 10 年：
+这将告诉浏览器将文件缓存 7 天。要设置一个远期`Expires`头部，可以将生命周期设置得更长；以下示例告诉浏览器将文件缓存 10 年：
 
-```
+```php
 $lifetime = 10 * 365 * 24 * 60 * 60; // 10 年，以秒为单位。
 header('Expires: ' . gmdate('D, d M Y H:i:s', time() + $lifetime) . ' GMT');
 ```
 
-`Expires` 头部是确保 Ajax 响应在浏览器中被缓存的最简单方法。你无需更改客户端代码，可以继续正常发起 Ajax 请求，因为浏览器只有在文件不在缓存中时才会将请求发送到服务器。在服务器端实现也很简单，因为所有语言都允许你以某种方式设置头部。这是确保数据被缓存的最简单方法。
+`Expires`头部是确保 Ajax 响应在浏览器中被缓存的最简单方法。你无需更改客户端代码，可以继续正常发起 Ajax 请求，因为浏览器只有在文件不在缓存中时才会将请求发送到服务器。在服务器端实现也很简单，因为所有语言都允许你以某种方式设置头部。这是确保数据被缓存的最简单方法。
 
 #### 本地存储数据
 
-除了依赖浏览器处理缓存，你也可以采用更手动的方式，即存储从服务器接收到的响应。这可以通过将响应文本放入一个对象中，并以用于获取它的 URL 作为键来实现。以下是一个 `XHR` 包装器的示例，它首先检查某个 URL 是否已被获取过：
+除了依赖浏览器处理缓存，你也可以采用更手动的方式，即存储从服务器接收到的响应。这可以通过将响应文本放入一个对象中，并以用于获取它的 URL 作为键来实现。以下是一个`XHR`包装器的示例，它首先检查某个 URL 是否已被获取过：
 
-```
+```javascript
 var localCache = {};
 
 function xhrRequest(url, callback) {
@@ -4839,9 +4709,9 @@ function xhrRequest(url, callback) {
 }
 ```
 
-总体而言，设置 `Expires` 头部是更好的解决方案。它更容易实现，并且能在页面加载和会话之间缓存响应。但在某些情况下，手动缓存可能很有用，比如当你希望以编程方式使缓存过期并获取新数据时。想象一个场景：你希望每次请求都使用缓存数据，除非用户执行了某个操作导致一个或多个缓存响应失效。在这种情况下，从缓存中移除这些响应非常简单：
+总体而言，设置`Expires`头部是更好的解决方案。它更容易实现，并且能在页面加载和会话之间缓存响应。但在某些情况下，手动缓存可能很有用，比如当你希望以编程方式使缓存过期并获取新数据时。想象一个场景：你希望每次请求都使用缓存数据，除非用户执行了某个操作导致一个或多个缓存响应失效。在这种情况下，从缓存中移除这些响应非常简单：
 
-```
+```javascript
 delete localCache['/user/friendlist/'];
 delete localCache['/user/contactlist/'];
 ```
@@ -4850,13 +4720,13 @@ delete localCache['/user/contactlist/'];
 
 ### 了解 Ajax 库的局限性
 
-所有 JavaScript 库都为你提供了访问 Ajax 对象的途径，该对象标准化了浏览器之间的差异，并提供了统一的接口。大多数情况下，这是一件好事，因为它让你能够专注于项目，而不是关注 `XHR` 在某些小众浏览器中的工作细节。然而，在提供统一接口的同时，这些库也必须简化接口，因为并非每个浏览器都实现了所有功能。这阻止了你访问 `XMLHttpRequest` 的全部能力。
+所有 JavaScript 库都为你提供了访问 Ajax 对象的途径，该对象标准化了浏览器之间的差异，并提供了统一的接口。大多数情况下，这是一件好事，因为它让你能够专注于项目，而不是关注`XHR`在某些小众浏览器中的工作细节。然而，在提供统一接口的同时，这些库也必须简化接口，因为并非每个浏览器都实现了所有功能。这阻止了你访问`XMLHttpRequest`的全部能力。
 
-本章介绍的一些技术只能通过直接访问 `XHR` 对象来实现。其中最值得注意的是多部分 `XHR` 的流式传输功能。通过监听 `readyState` 3，我们可以在大型响应完全接收之前开始对其进行分片。这使我们能够实时处理响应的各个部分，这也是 `MXHR` 能够大幅提升性能的原因之一。然而，大多数 JavaScript 库并不允许你直接访问 `readystatechange` 事件。这意味着你必须等到*整个*响应被接收（可能需要相当长的时间）之后，才能开始使用其中的任何部分。
+本章介绍的一些技术只能通过直接访问`XHR`对象来实现。其中最值得注意的是多部分`XHR`的流式传输功能。通过监听`readyState` 3，我们可以在大型响应完全接收之前开始对其进行分片。这使我们能够实时处理响应的各个部分，这也是`MXHR`能够大幅提升性能的原因之一。然而，大多数 JavaScript 库并不允许你直接访问`readystatechange`事件。这意味着你必须等到*整个*响应被接收（可能需要相当长的时间）之后，才能开始使用其中的任何部分。
 
-直接使用 `XMLHttpRequest` 对象并不像看起来那么困难。除了一些小问题外，所有主流浏览器的最新版本都以相同的方式支持 `XMLHttpRequest` 对象，并且都提供了对不同 `readyState` 的访问。只需多写几行代码，你就可以支持旧版本的 IE。以下是一个返回 `XHR` 对象的函数示例，你可以直接与之交互（这是 YUI 2 Connection Manager 所用代码的修改版本）：
+直接使用`XMLHttpRequest`对象并不像看起来那么困难。除了一些小问题外，所有主流浏览器的最新版本都以相同的方式支持`XMLHttpRequest`对象，并且都提供了对不同`readyState`的访问。只需多写几行代码，你就可以支持旧版本的 IE。以下是一个返回`XHR`对象的函数示例，你可以直接与之交互（这是 YUI 2 Connection Manager 所用代码的修改版本）：
 
-```
+```javascript
 function createXhrObject() {
 
     var msxml_progid = [
@@ -4885,9 +4755,9 @@ function createXhrObject() {
 }
 ```
 
-这将首先尝试支持 `readyState` 3 的 `XMLHttp` 版本，如果这些版本不可用，则回退到不支持 `readyState` 3 的版本。
+这将首先尝试支持`readyState` 3 的`XMLHttp`版本，如果这些版本不可用，则回退到不支持`readyState` 3 的版本。
 
-直接与 `XHR` 对象交互还能减少函数开销，进一步提升性能。但要注意，放弃使用 Ajax 库可能会在较旧或小众浏览器中遇到一些问题。
+直接与`XHR`对象交互还能减少函数开销，进一步提升性能。但要注意，放弃使用 Ajax 库可能会在较旧或小众浏览器中遇到一些问题。
 
 ## 总结
 
@@ -4895,20 +4765,16 @@ function createXhrObject() {
 
 作为数据格式，纯文本和 HTML 具有很强的场景依赖性，但它们可以节省客户端的 CPU 周期。XML 广泛可用且几乎在所有地方都得到支持，但它极其冗长且解析缓慢。JSON 轻量且解析快速（当作为原生代码而非字符串处理时），并且几乎与 XML 一样具有互操作性。自定义分隔符格式极其轻量，对于大型数据集解析最快，但可能需要在服务器端进行格式化并在客户端进行解析，从而增加额外的编程工作。
 
-
-
-
-
-在请求数据时，XHR 在从页面所在域拉取数据时提供了最大的控制和灵活性，但它将所有传入数据视为字符串，可能会减慢解析速度。另一方面，动态脚本标签插入允许跨域请求以及 JavaScript 和 JSON 的原生执行，但其接口不够健壮，且无法读取头部或响应码。多部分 XHR 可用于减少请求数量，并能在单个响应中处理不同的文件类型，但不会缓存接收到的资源。在发送数据时，图像信标是一种简单高效的方法。XHR 也可用于通过 POST 发送大量数据。
+在请求数据时，`XHR`在从页面所在域拉取数据时提供了最大的控制和灵活性，但它将所有传入数据视为字符串，可能会减慢解析速度。另一方面，动态脚本标签插入允许跨域请求以及 JavaScript 和 JSON 的原生执行，但其接口不够健壮，且无法读取头部或响应码。多部分`XHR`可用于减少请求数量，并能在单个响应中处理不同的文件类型，但不会缓存接收到的资源。在发送数据时，图像信标是一种简单高效的方法。`XHR`也可用于通过`POST`发送大量数据。
 
 除了这些格式和传输技术外，还有一些指导原则有助于让你的 Ajax 看起来更快：
 
-*   通过合并 JavaScript 和 CSS 文件，或使用 MXHR，减少请求数量。
-*   通过使用 Ajax 在页面其余部分加载完成后获取次要文件，改善页面的感知加载时间。
-*   确保你的代码优雅地失败，并能处理服务器端的问题。
-*   知道何时使用健壮的 Ajax 库，何时编写自己的底层 Ajax 代码。
+* 通过合并 JavaScript 和 CSS 文件，或使用`MXHR`，减少请求数量。
+* 通过使用 Ajax 在页面其余部分加载完成后获取次要文件，改善页面的感知加载时间。
+* 确保你的代码优雅地失败，并能处理服务器端的问题。
+* 知道何时使用健壮的 Ajax 库，何时编写自己的底层 Ajax 代码。
 
-Ajax 为网站性能优化提供了最大的潜力之一，这不仅因为许多网站大量使用异步请求，还因为它能为一些看似不相关的问题（例如资源加载过多）提供解决方案。创造性地使用 XHR 可以区分一个迟缓、不友好的页面和一个响应迅速、高效的页面；也可以区分一个用户讨厌交互的网站和一个用户喜爱的网站。
+Ajax 为网站性能优化提供了最大的潜力之一，这不仅因为许多网站大量使用异步请求，还因为它能为一些看似不相关的问题（例如资源加载过多）提供解决方案。创造性地使用`XHR`可以区分一个迟缓、不友好的页面和一个响应迅速、高效的页面；也可以区分一个用户讨厌交互的网站和一个用户喜爱的网站。
 
 ## 第 8 章 编程实践
 
@@ -4916,9 +4782,9 @@ Ajax 为网站性能优化提供了最大的潜力之一，这不仅因为许多
 
 ## 避免双重求值
 
-JavaScript 与许多脚本语言一样，允许你获取包含代码的字符串，并在运行中的代码内执行它。有四种标准方法可以实现这一点：`eval()`、`Function()` 构造函数、`setTimeout()` 和 `setInterval()`。这些函数都允许你传入一段 JavaScript 代码字符串并执行它。例如：
+JavaScript 与许多脚本语言一样，允许你获取包含代码的字符串，并在运行中的代码内执行它。有四种标准方法可以实现这一点：`eval()`、`Function()`构造函数、`setTimeout()`和`setInterval()`。这些函数都允许你传入一段 JavaScript 代码字符串并执行它。例如：
 
-```
+```javascript
 var num1 = 5,
     num2 = 6,
 
@@ -4937,9 +4803,9 @@ setInterval("sum = num1 + num2", 100);
 
 每当你在 JavaScript 代码内部求值 JavaScript 代码时，就会产生双重求值的开销。这段代码首先被正常求值，然后在执行过程中，另一次求值会执行包含在字符串中的代码。双重求值是一种代价高昂的操作，比原生包含相同代码要慢得多。
 
-作为对比，访问数组项所需的时间因浏览器而异，但使用 `eval()` 访问数组项时，时间差异会变得非常显著。例如：
+作为对比，访问数组项所需的时间因浏览器而异，但使用`eval()`访问数组项时，时间差异会变得非常显著。例如：
 
-```
+```javascript
 // 更快
 var item = array[0];
 
@@ -4947,11 +4813,11 @@ var item = array[0];
 var item = eval("array[0]");
 ```
 
-如果使用 `eval()` 而不是原生代码读取 10,000 个数组项，不同浏览器之间的差异会变得非常显著。表 8-1 显示了此操作的不同时间。
+如果使用`eval()`而不是原生代码读取 10,000 个数组项，不同浏览器之间的差异会变得非常显著。表 8-1 显示了此操作的不同时间。
 
-表 8-1. 原生代码与 `eval()` 访问 10,000 个数组项的速度对比
+表 8-1. 原生代码与`eval()`访问 10,000 个数组项的速度对比
 
-| 浏览器 | 原生代码（毫秒） | `eval()` 代码（毫秒） |
+| 浏览器 | 原生代码（毫秒） | `eval()`代码（毫秒） |
 | --- | --- | --- |
 | Firefox 3 | 10.57 | 822.62 |
 | Firefox 3.5 | 0.72 | 141.54 |
@@ -4964,11 +4830,11 @@ var item = eval("array[0]");
 | Safari 3.2 | 30.37 | 360.6 |
 | Safari 4 | 22.16 | 54.47 |
 
-数组项访问时间的巨大差异是由于每次调用 `eval()` 时都会创建一个新的解释器/编译器实例。`Function()`、`setTimeout()` 和 `setInterval()` 也会发生同样的过程，自动导致代码执行变慢。
+数组项访问时间的巨大差异是由于每次调用`eval()`时都会创建一个新的解释器/编译器实例。`Function()`、`setTimeout()`和`setInterval()`也会发生同样的过程，自动导致代码执行变慢。
 
-大多数情况下，不需要使用 `eval()` 或 `Function()`，最好尽可能避免使用它们。对于另外两个函数 `setTimeout()` 和 `setInterval()`，建议将函数作为第一个参数传入，而不是字符串。例如：
+大多数情况下，不需要使用`eval()`或`Function()`，最好尽可能避免使用它们。对于另外两个函数`setTimeout()`和`setInterval()`，建议将函数作为第一个参数传入，而不是字符串。例如：
 
-```
+```javascript
 setTimeout(function(){
     sum = num1 + num2;
 }, 100);
@@ -4980,19 +4846,18 @@ setInterval(function(){
 
 避免双重求值是实现最佳 JavaScript 运行时性能的关键。
 
-* * *
-
 ### 注意
 
-优化 JavaScript 引擎通常会缓存使用 `eval()` 重复求值代码的结果。如果你重复求值相同的代码字符串，在 Safari 4 和所有版本的 Chrome 中会看到更大的性能提升。
-
-* * *
+优化 JavaScript 引擎通常会缓存使用`eval()`重复求值代码的结果。如果你重复求值相同的代码字符串，在 Safari 4 和所有版本的 Chrome 中会看到更大的性能提升。
 
 ## 使用对象/数组字面量
 
 在 JavaScript 中创建对象和数组有多种方法，但没有什么比创建对象和数组字面量更快。如果不使用字面量，典型的对象创建和赋值如下所示：
 
-```
+
+
+
+```javascript
 // 创建一个对象
 var myObject = new Object();
 myObject.name = "Nicholas";
@@ -5010,7 +4875,7 @@ myArray[3] = null;
 
 虽然这种方法在技术上没有错，但字面量的求值速度更快。额外的好处是，字面量在代码中占用的空间更少，因此整体文件大小更小。前面的代码可以使用字面量重写如下：
 
-```
+```javascript
 // 创建一个对象
 var myObject = {
     name: "Nicholas",
@@ -5031,7 +4896,7 @@ var myArray = ["Nicholas", 50, true, null];
 
 最常见的重复工作类型是浏览器检测。许多代码根据浏览器能力进行分支。以事件处理程序的添加和移除为例。用于此目的的典型跨浏览器代码如下所示：
 
-```
+```javascript
 function addHandler(target, eventType, handler){
     if (target.addEventListener){  //DOM2 事件
         target.addEventListener(eventType, handler, false);
@@ -5049,18 +4914,15 @@ function removeHandler(target, eventType, handler){
 }
 ```
 
+该代码通过检测`addEventListener()`和`removeEventListener()`来判断是否支持 DOM Level 2 事件，除 Internet Explorer 外，所有现代浏览器都支持这些方法。如果`target`上不存在这些方法，则假定为 IE，并使用 IE 特有的方法。
 
-
-
-该代码通过检测 `addEventListener()` 和 `removeEventListener()` 来判断是否支持 DOM Level 2 事件，除 Internet Explorer 外，所有现代浏览器都支持这些方法。如果 `target` 上不存在这些方法，则假定为 IE，并使用 IE 特有的方法。
-
-乍一看，这些函数似乎针对其目的进行了相当优化。隐藏的性能问题在于每次调用任一函数时都会重复执行相同的工作。每次都会进行相同的检查，以确定某个方法是否存在。如果你假设 `target` 的唯一值实际上是 DOM 对象，并且用户在页面加载期间不会神奇地更换浏览器，那么这种评估就是重复的。如果第一次调用 `addHandler()` 时存在 `addEventListener()`，那么后续每次调用时它都会存在。每次调用函数时重复相同的工作是浪费的，有几种方法可以避免这种情况。
+乍一看，这些函数似乎针对其目的进行了相当优化。隐藏的性能问题在于每次调用任一函数时都会重复执行相同的工作。每次都会进行相同的检查，以确定某个方法是否存在。如果你假设`target`的唯一值实际上是 DOM 对象，并且用户在页面加载期间不会神奇地更换浏览器，那么这种评估就是重复的。如果第一次调用`addHandler()`时存在`addEventListener()`，那么后续每次调用时它都会存在。每次调用函数时重复相同的工作是浪费的，有几种方法可以避免这种情况。
 
 ### 惰性加载
 
-消除函数中重复工作的第一种方法是通过*惰性加载*。惰性加载意味着在需要信息之前不进行任何工作。在前面的例子中，只有在有人调用函数时，才需要确定附加或分离事件处理程序的方式。前面函数的惰性加载版本如下所示：
+消除函数中重复工作的第一种方法是通过惰性加载。惰性加载意味着在需要信息之前不进行任何工作。在前面的例子中，只有在有人调用函数时，才需要确定附加或分离事件处理程序的方式。前面函数的惰性加载版本如下所示：
 
-```
+```javascript
 function addHandler(target, eventType, handler){
 
     //覆盖现有函数
@@ -5096,15 +4958,15 @@ function removeHandler(target, eventType, handler){
 }
 ```
 
-这两个函数实现了惰性加载模式。第一次调用任一方法时，会进行检查以确定附加或分离事件处理程序的适当方式。然后，原始函数被一个新函数覆盖，该函数仅包含适当的操作步骤。第一次函数调用的最后一步是使用原始参数执行新函数。后续每次调用 `addHandler()` 或 `removeHandler()` 都避免了进一步的检测，因为检测代码已被新函数覆盖。
+这两个函数实现了惰性加载模式。第一次调用任一方法时，会进行检查以确定附加或分离事件处理程序的适当方式。然后，原始函数被一个新函数覆盖，该函数仅包含适当的操作步骤。第一次函数调用的最后一步是使用原始参数执行新函数。后续每次调用`addHandler()`或`removeHandler()`都避免了进一步的检测，因为检测代码已被新函数覆盖。
 
 调用惰性加载函数第一次总是花费更长时间，因为它必须运行检测，然后调用另一个函数来完成任务。然而，后续对同一函数的调用要快得多，因为它们没有检测逻辑。惰性加载最适合在函数不会立即在页面上使用的情况下使用。
 
 ### 条件预加载
 
-惰性加载函数的一种替代方案是*条件预加载*，它在脚本加载时提前进行检测，而不是等待函数调用。检测仍然只进行一次，但它在过程中更早发生。例如：
+惰性加载函数的一种替代方案是条件预加载，它在脚本加载时提前进行检测，而不是等待函数调用。检测仍然只进行一次，但它在过程中更早发生。例如：
 
-```
+```javascript
 var addHandler = document.body.addEventListener ?
                  function(target, eventType, handler){
                      target.addEventListener(eventType, handler, false);
@@ -5122,7 +4984,7 @@ var removeHandler = document.body.removeEventListener ?
                  };
 ```
 
-此示例检查 `addEventListener()` 和 `removeEventListener()` 是否存在，然后使用该信息分配最合适的函数。如果这些方法存在，三元运算符返回 DOM Level 2 函数，否则返回 IE 特有的函数。结果是所有对 `addHandler()` 和 `removeHandler()` 的调用速度都相同，因为检测成本发生在前面。
+此示例检查`addEventListener()`和`removeEventListener()`是否存在，然后使用该信息分配最合适的函数。如果这些方法存在，三元运算符返回 DOM Level 2 函数，否则返回 IE 特有的函数。结果是所有对`addHandler()`和`removeHandler()`的调用速度都相同，因为检测成本发生在前面。
 
 条件预加载确保对函数的所有调用花费相同的时间。其代价是检测发生在脚本加载时，而不是稍后。预加载最适合在函数即将被使用，并且在页面生命周期中频繁使用的情况下使用。
 
@@ -5136,9 +4998,9 @@ var removeHandler = document.body.removeEventListener ?
 
 JavaScript 数字都以 IEEE-754 64 位格式存储。然而，对于位运算，数字会被转换为有符号的 32 位表示。然后每个运算符直接对这个 32 位表示进行操作以获得结果。尽管有转换，但与 JavaScript 中的其他数学和布尔运算相比，这个过程非常快。
 
-如果你不熟悉数字的二进制表示，JavaScript 可以轻松地通过使用 `toString()` 方法并传入数字 2 将数字转换为包含其二进制等效项的字符串。例如：
+如果你不熟悉数字的二进制表示，JavaScript 可以轻松地通过使用`toString()`方法并传入数字 2 将数字转换为包含其二进制等效项的字符串。例如：
 
-```
+```javascript
 var num1 = 25,
     num2 = 3;
 
@@ -5150,25 +5012,25 @@ alert(num2.toString(2));    //   "11"
 
 JavaScript 中有四个位逻辑运算符：
 
-按位与
+#### 按位与
 
 > 返回一个数字，其中两个数字都为 1 的位为 1
 
-按位或
+#### 按位或
 
 > 返回一个数字，其中任一数字为 1 的位为 1
 
-按位异或
+#### 按位异或
 
 > 返回一个数字，其中恰好一个数字为 1 的位为 1
 
-按位非
+#### 按位非
 
 > 返回一个数字，其中数字为 0 的位为 1，反之亦然
 
 这些运算符的使用方式如下：
 
-```
+```javascript
 //按位与
 var result1 = 25 & 3;           //1
 alert(result.toString(2));      //"1"
@@ -5188,7 +5050,7 @@ alert(result4.toString(2));     //"-11010"
 
 有几种方法可以使用位运算符来加速你的 JavaScript。第一种是使用位运算代替纯数学运算。例如，通常通过计算给定数字模 2 来交替表格行颜色，如下所示：
 
-```
+```javascript
 for (var i=0, len=rows.length; i < len; i++){
     if (i % 2) {
         className = "even";
@@ -5200,13 +5062,9 @@ for (var i=0, len=rows.length; i < len; i++){
 }
 ```
 
-
-
-
-
 计算模 2 需要将数字除以 2 来确定余数。如果查看数字的底层 32 位表示，一个数字是偶数当且仅当其第一位为 0，是奇数当且仅当其第一位为 1。这可以通过对给定数字与数字 1 执行按位与运算轻松确定。当数字为偶数时，按位与 1 的结果为 0；当数字为奇数时，结果为 1。这意味着之前的代码可以重写如下：
 
-```
+```javascript
 for (var i=0, len=rows.length; i < len; i++){
     if (i & 1) {
         className = "odd";
@@ -5220,9 +5078,9 @@ for (var i=0, len=rows.length; i < len; i++){
 
 虽然代码改动很小，但按位与版本的执行速度比原始版本快高达 50%（取决于浏览器）。
 
-使用位运算符的第二种方法是一种称为*位掩码*的技术。位掩码是计算机科学中一种流行的技术，适用于同时存在多个布尔选项的情况。其思想是利用单个数字的每一位来指示该选项是否存在，从而有效地将数字转换为一个布尔标志数组。每个选项被赋予一个等于 2 的幂的值，以便掩码正常工作。例如：
+使用位运算符的第二种方法是一种称为位掩码的技术。位掩码是计算机科学中一种流行的技术，适用于同时存在多个布尔选项的情况。其思想是利用单个数字的每一位来指示该选项是否存在，从而有效地将数字转换为一个布尔标志数组。每个选项被赋予一个等于 2 的幂的值，以便掩码正常工作。例如：
 
-```
+```javascript
 var OPTION_A = 1;
 var OPTION_B = 2;
 var OPTION_C = 4;
@@ -5232,13 +5090,13 @@ var OPTION_E = 16;
 
 定义好选项后，可以使用按位或运算符创建一个包含多个设置的单一数字：
 
-```
+```javascript
 var options = OPTION_A | OPTION_C | OPTION_D;
 ```
 
 然后，可以使用按位与运算符检查某个选项是否可用。如果选项未设置，运算返回 0；如果已设置，则返回 1：
 
-```
+```javascript
 //is option A in the list?
 if (options & OPTION_A){
     //do something
@@ -5252,19 +5110,15 @@ if (options & OPTION_B){
 
 诸如此类的位掩码操作非常快，因为如前所述，这些操作是在系统的较低层级进行的。如果有多个选项需要一起保存并频繁检查，位掩码有助于加速整体处理。
 
-* * *
-
 ### 注意
 
 JavaScript 还支持左移（`<<`）、右移（`>>`）和无符号右移（`>>>`）位运算符。
-
-* * *
 
 ### 原生方法
 
 无论你的 JavaScript 代码多么优化，它永远不会比 JavaScript 引擎提供的原生方法更快。原因很简单：JavaScript 的原生部分——即在你编写任何代码之前浏览器中已经存在的部分——都是用 C++ 等低级语言编写的。这意味着这些方法作为浏览器的一部分被编译成机器码，因此没有 JavaScript 代码的那些限制。
 
-经验不足的 JavaScript 开发人员常犯的一个错误是在代码中执行复杂的数学运算，而内置的 `Math` 对象上已有性能更好的版本可用。`Math` 对象包含旨在简化数学运算的属性和方法。有几个可用的数学常量：
+经验不足的 JavaScript 开发人员常犯的一个错误是在代码中执行复杂的数学运算，而内置的`Math`对象上已有性能更好的版本可用。`Math`对象包含旨在简化数学运算的属性和方法。有几个可用的数学常量：
 
 | 常量 | 含义 |
 | --- | --- |
@@ -5281,59 +5135,50 @@ JavaScript 还支持左移（`<<`）、右移（`>>`）和无符号右移（`>>>
 
 | 方法 | 含义 |
 | --- | --- |
-| `Math.abs(num)` | *num* 的绝对值 |
-| `Math.exp(num)` | `Math.E`^(*num*) |
-| `Math.log(num)` | *num* 的对数 |
-| `Math.pow(num, power)` | *num*^(*power*) |
-| `Math.sqrt(num)` | *num* 的平方根 |
-| `Math.acos(x)` | *x* 的反余弦 |
-| `Math.asin(x)` | *x* 的反正弦 |
-| `Math.atan(x)` | *x* 的反正切 |
-| `Math.atan2(y, x)` | *y/x* 的反正切 |
-| `Math.cos(x)` | *x* 的余弦 |
-| `Math.sin(x)` | *x* 的正弦 |
-| `Math.tan(x)` | *x* 的正切 |
+| `Math.abs(num)` | `num` 的绝对值 |
+| `Math.exp(num)` | `Math.E`^(`num`) |
+| `Math.log(num)` | `num` 的对数 |
+| `Math.pow(num, power)` | `num`^(`power`) |
+| `Math.sqrt(num)` | `num` 的平方根 |
+| `Math.acos(x)` | `x` 的反余弦 |
+| `Math.asin(x)` | `x` 的反正弦 |
+| `Math.atan(x)` | `x` 的反正切 |
+| `Math.atan2(y, x)` | `y/x` 的反正切 |
+| `Math.cos(x)` | `x` 的余弦 |
+| `Math.sin(x)` | `x` 的正弦 |
+| `Math.tan(x)` | `x` 的正切 |
 
-使用这些方法比在 JavaScript 代码中重新实现相同功能更快。每当需要执行复杂的数学计算时，应首先考虑使用 `Math` 对象。
+使用这些方法比在 JavaScript 代码中重新实现相同功能更快。每当需要执行复杂的数学计算时，应首先考虑使用`Math`对象。
 
-另一个例子是选择器 API，它允许使用 CSS 选择器查询 DOM 文档。CSS 查询在 JavaScript 中原生实现，并由 jQuery JavaScript 库真正推广开来。jQuery 引擎被广泛认为是最快的 CSS 查询引擎，但它仍然比原生方法慢得多。原生 `querySelector()` 和 `querySelectorAll()` 方法完成其任务的平均时间仅为基于 JavaScript 的 CSS 查询所需时间的 10%。^([13]) 现在大多数 JavaScript 库已转向在可用时使用原生功能，以提升整体性能。
+另一个例子是选择器 API，它允许使用 CSS 选择器查询 DOM 文档。CSS 查询在 JavaScript 中原生实现，并由 jQuery JavaScript 库真正推广开来。jQuery 引擎被广泛认为是最快的 CSS 查询引擎，但它仍然比原生方法慢得多。原生`querySelector()`和`querySelectorAll()`方法完成其任务的平均时间仅为基于 JavaScript 的 CSS 查询所需时间的 10%。^([13]) 现在大多数 JavaScript 库已转向在可用时使用原生功能，以提升整体性能。
 
 始终尽可能使用原生方法，尤其是在数学计算和 DOM 操作中。用编译代码完成的工作越多，你的代码运行速度就越快。
 
-* * *
-
 ### 注意
 
-Chrome 实际上用 JavaScript 实现了相当多的原生 JavaScript 功能。由于 Chrome 对原生功能和你的代码都使用即时 JavaScript 编译器，两者之间的性能差异有时很小。
 
-* * *
+
+Chrome 实际上用 JavaScript 实现了相当多的原生 JavaScript 功能。由于 Chrome 对原生功能和你的代码都使用即时 JavaScript 编译器，两者之间的性能差异有时很小。
 
 ## 总结
 
 JavaScript 在代码组织方式上带来了一些独特的性能挑战。随着 Web 应用程序变得越来越复杂，包含越来越多的 JavaScript 代码行才能运行，一些模式与反模式也随之出现。需要牢记的一些编程实践：
 
-*   避免使用 `eval()` 和 `Function()` 构造函数，从而避免双重求值的性能损失。同时，向 `setTimeout()` 和 `setInterval()` 传递函数而非字符串。
-
-*   创建新对象和数组时，使用对象字面量和数组字面量。它们比非字面量形式创建和初始化得更快。
-
-*   避免重复执行相同的工作。当需要浏览器检测逻辑时，使用惰性加载或条件预加载。
-
-*   执行数学运算时，考虑使用直接操作数字底层表示的位运算符。
-
-*   原生方法总是比你在 JavaScript 中编写的任何代码更快。尽可能使用原生方法。
+- 避免使用`eval()`和`Function()`构造函数，从而避免双重求值的性能损失。同时，向`setTimeout()`和`setInterval()`传递函数而非字符串。
+- 创建新对象和数组时，使用对象字面量和数组字面量。它们比非字面量形式创建和初始化得更快。
+- 避免重复执行相同的工作。当需要浏览器检测逻辑时，使用惰性加载或条件预加载。
+- 执行数学运算时，考虑使用直接操作数字底层表示的位运算符。
+- 原生方法总是比你在 JavaScript 中编写的任何代码更快。尽可能使用原生方法。
 
 与本书涵盖的许多技术和方案一样，当这些优化应用于频繁执行的代码时，你将看到最大的性能提升。
 
-^([13]) 根据 SlickSpeed 测试套件，网址为 [`www2.webkit.org/perf/slickspeed/`](http://www2.webkit.org/perf/slickspeed/)。
+^([13]) 根据 SlickSpeed 测试套件，网址为[`www2.webkit.org/perf/slickspeed/`](http://www2.webkit.org/perf/slickspeed/)。
 
 ## 第 9 章 构建和部署高性能 JavaScript 应用程序
 
 ### Julien Lecomte
 
 根据雅虎卓越性能团队 2007 年的一项研究，雅虎 40%–60% 的用户拥有空缓存体验，并且大约 20% 的页面浏览量是在空缓存情况下完成的（[`yuiblog.com/blog/2007/01/04/performance-research-part-2/`](http://yuiblog.com/blog/2007/01/04/performance-research-part-2/)）。此外，雅虎搜索团队的另一项较新研究（经谷歌的 Steve Souders 独立确认）表明，美国大型网站提供的内容中约有 15% 未经压缩传输。
-
-
-
 
 这些事实强调了确保基于 JavaScript 的 Web 应用程序尽可能高效交付的必要性。虽然这部分工作在设计及开发周期中已完成，但构建和部署阶段同样至关重要且常被忽视。如果在此关键阶段不够谨慎，无论你为提升速度投入了多少精力，应用程序的性能都会受到影响。
 
@@ -5424,14 +5269,11 @@ Apache Ant 通过`concat`任务提供了合并多个文件的能力。然而，�
 
 ## 预处理 JavaScript 文件
 
-> 在计算机科学中，预处理器是一种程序，它处理输入数据以生成输出，该输出用作另一个程序的输入。输出被称为输入数据的预处理形式，通常被后续程序（如编译器）使用。处理的数量和类型取决于预处理器的性质；有些预处理器只能执行相对简单的文本替换和宏展开，而另一些则具有完整编程语言的能力。—— [`en.wikipedia.org/wiki/Preprocessor`](http://en.wikipedia.org/wiki/Preprocessor)
+> 在计算机科学中，预处理器是一种程序，它处理输入数据以生成输出，该输出用作另一个程序的输入。输出被称为输入数据的预处理形式，通常被后续程序（如编译器）使用。处理的数量和类型取决于预处理器的性质；有些预处理器只能执行相对简单的文本替换和宏展开，而另一些则具有完整编程语言的能力。——[`en.wikipedia.org/wiki/Preprocessor`](http://en.wikipedia.org/wiki/Preprocessor)
 
 预处理 JavaScript 源文件本身并不会使你的应用程序更快，但它能让你有条件地检测代码，从而衡量应用程序的性能。
 
 由于没有专门为 JavaScript 设计的预处理器，因此有必要使用一个足够灵活的词汇预处理器，以便可以自定义其词法分析规则，或者使用一个为词法语法与 JavaScript 自身词法语法足够接近的语言而设计的预处理器。由于 C 编程语言的语法与 JavaScript 接近，C 预处理器（`cpp`）是一个不错的选择。以下是 Ant 目标的样子：
-
-
-
 
 ```
 <target name="js.preprocess" depends="js.concatenate">
@@ -5507,23 +5349,27 @@ function myFunction(arg) {
 
 JavaScript 压缩是一个过程，通过该过程，JavaScript 文件中所有对执行无贡献的内容都被剥离。这包括注释和不必要的空白。该过程通常将文件大小减少一半，从而加快下载速度，并鼓励程序员编写更好、更广泛的内联文档。
 
-`JSMin`（[`www.crockford.com/javascript/jsmin.html`](http://www.crockford.com/javascript/jsmin.html)）由 Douglas Crockford 开发，长期以来一直是 JavaScript 压缩的标准。然而，随着 Web 应用程序规模和复杂性的不断增长，许多人认为有必要将 JavaScript 压缩推进一步。这就是开发 `YUI Compressor`（[`developer.yahoo.com/yui/compressor/`](http://developer.yahoo.com/yui/compressor/)）的主要原因，该工具执行各种智能操作，以完全安全的方式提供比其他工具更高的压缩率。除了剥离注释和不必要的空白外，`YUI Compressor` 还提供以下功能：
+`JSMin`（[`www.crockford.com/javascript/jsmin.html`](http://www.crockford.com/javascript/jsmin.html)）由 Douglas Crockford 开发，长期以来一直是 JavaScript 压缩的标准。然而，随着 Web 应用程序规模和复杂性的不断增长，许多人认为有必要将 JavaScript 压缩推进一步。这就是开发`YUI Compressor`（[`developer.yahoo.com/yui/compressor/`](http://developer.yahoo.com/yui/compressor/)）的主要原因，该工具执行各种智能操作，以完全安全的方式提供比其他工具更高的压缩率。除了剥离注释和不必要的空白外，`YUI Compressor`还提供以下功能：
 
-*   将局部变量名替换为更短的（一个、两个或三个字符）变量名，以优化下游的 gzip 压缩
-*   尽可能将方括号表示法替换为点表示法（例如，`foo["bar"]` 变为 `foo.bar`）
-*   尽可能替换带引号的字面属性名（例如，`{"foo":"bar"}` 变为 `{foo:"bar"}`）
-*   替换字符串中的转义引号（例如，`'aaa\'bbb'` 变为 `"aaa'bbb"`）
-*   常量折叠（例如，`"foo"+"bar"` 变为 `"foobar"`）
+- 将局部变量名替换为更短的（一个、两个或三个字符）变量名，以优化下游的 gzip 压缩。
+- 尽可能将方括号表示法替换为点表示法（例如，`foo["bar"]`变为`foo.bar`）。
+- 尽可能替换带引号的字面属性名（例如，`{"foo":"bar"}`变为`{foo:"bar"}`）。
+- 替换字符串中的转义引号（例如，`'aaa\'bbb'`变为`"aaa'bbb"`）。
+- 常量折叠（例如，`"foo"+"bar"`变为`"foobar"`）。
 
-与 `JSMin` 相比，通过 `YUI Compressor` 运行你的 JavaScript 代码无需任何额外操作即可获得巨大的节省。考虑 YUI 库核心文件（版本 2.7.0，可从 [`developer.yahoo.com/yui/`](http://developer.yahoo.com/yui/) 获取）的以下数据：
+与`JSMin`相比，通过`YUI Compressor`运行你的 JavaScript 代码无需任何额外操作即可获得巨大的节省。考虑 YUI 库核心文件（版本 2.7.0，可从[`developer.yahoo.com/yui/`](http://developer.yahoo.com/yui/)获取）的以下数据：
 
-| 原始 `yahoo.js`、`dom.js` 和 `event.js` | 192,164 字节 |
-| `yahoo.js`、`dom.js` 和 `event.js` + `JSMin` | 47,316 字节 |
-| `yahoo.js`、`dom.js` 和 `event.js` + `YUI Compressor` | 35,896 字节 |
+| 文件及处理方式 | 大小 |
+| --- | ---: |
+| 原始`yahoo.js`、`dom.js`和`event.js` | 192,164 字节 |
+| `yahoo.js`、`dom.js`和`event.js` + `JSMin` | 47,316 字节 |
+| `yahoo.js`、`dom.js`和`event.js` + `YUI Compressor` | 35,896 字节 |
 
-在这个例子中，`YUI Compressor` 开箱即用比 `JSMin` 节省了 24%。然而，你还可以采取一些措施来进一步增加字节节省。存储对象/值的局部引用、将代码包装在闭包中、对重复值使用常量、避免使用 `eval`（及其相关函数，如 `Function` 构造函数、`setTimeout` 和 `setInterval` 当第一个参数是字符串字面量时）、`with` 关键字以及 JScript 条件注释，都有助于使压缩后的文件更小。考虑以下函数，用于切换指定 DOM 元素上的 `selected` 类（220 字节）：
+在这个例子中，`YUI Compressor`开箱即用比`JSMin`节省了 24%。然而，你还可以采取一些措施来进一步增加字节节省。存储对象/值的局部引用、将代码包装在闭包中、对重复值使用常量、避免使用`eval`（及其相关函数，如`Function`构造函数、`setTimeout`和`setInterval`当第一个参数是字符串字面量时）、`with`关键字以及 JScript 条件注释，都有助于使压缩后的文件更小。考虑以下函数，用于切换指定 DOM 元素上的`selected`类（220 字节）：
 
-```
+
+
+```javascript
 function toggle (element) {
     if (YAHOO.util.Dom.hasClass(element, "selected")){
         YAHOO.util.Dom.removeClass(element, "selected");
@@ -5535,7 +5381,7 @@ function toggle (element) {
 
 `YUI Compressor` 会将此代码转换为以下内容（147 字节）：
 
-```
+```javascript
 function toggle(a){if(YAHOO.util.Dom.hasClass(a,"selected")){
 YAHOO.util.Dom.removeClass(a,"selected")}else{YAHOO.util.Dom.
 addClass(a,"selected")}};
@@ -5543,7 +5389,7 @@ addClass(a,"selected")}};
 
 如果你通过存储 `YAHOO.util.Dom` 的局部引用并对 `"selected"` 值使用常量来重构原始版本，代码变为（232 字节）：
 
-```
+```javascript
 function toggle (element) {
     var YUD = YAHOO.util.Dom, className = "selected";
     if (YUD.hasClass(element, className)){
@@ -5556,74 +5402,97 @@ function toggle (element) {
 
 这个版本在使用 `YUI Compressor` 压缩后显示出更大的节省（115 字节）：
 
-```
+```javascript
 function toggle(a){var c=YAHOO.util.Dom,b="selected";if(c.hasClass(a,b)){
 c.removeClass(a,b)}else{c.addClass(a,b)}};
 ```
 
-压缩率从 33% 提高到 48%，考虑到所需的工作量很小，这是一个惊人的结果。然而，需要注意的是，下游的 gzip 压缩可能会产生矛盾的结果；换句话说，最小的压缩文件不一定总是产生最小的 gzip 文件。这个奇怪的结果是降低原始文件中冗余度的直接后果。此外，这种微优化会带来少量的运行时开销，因为现在使用变量代替字面值，需要额外的查找。因此，我通常建议不要滥用这些技术，尽管在向不支持（或声明支持）gzip 压缩的用户代理提供内容时，仍然值得考虑它们。
+压缩率从 33% 提高到 48%，考虑到所需的工作量很小，这是一个惊人的结果。然而，需要注意的是，下游的 `gzip` 压缩可能会产生矛盾的结果；换句话说，最小的压缩文件不一定总是产生最小的 `gzip` 文件。这个奇怪的结果是降低原始文件中冗余度的直接后果。
 
+此外，这种微优化会带来少量的运行时开销，因为现在使用变量代替字面值，需要额外的查找。因此，我通常建议不要滥用这些技术，尽管在向不支持（或声明支持）`gzip` 压缩的用户代理提供内容时，仍然值得考虑它们。
 
+2009 年 11 月，谷歌发布了一款更先进的压缩工具，名为 `Closure Compiler`（[`code.google.com/closure/compiler/`](http://code.google.com/closure/compiler/)）。这款新工具在使用其高级优化选项时，比 `YUI Compressor` 更进一步。
 
+在这种模式下，`Closure Compiler` 在转换代码和重命名符号方面极为激进。虽然它能带来惊人的体积缩减，但要求开发者非常谨慎，确保输出代码与输入代码行为一致。同时，由于几乎所有符号都被重命名，调试也变得更加困难。
 
-2009 年 11 月，谷歌发布了一款更先进的压缩工具，名为 Closure Compiler（[`code.google.com/closure/compiler/`](http://code.google.com/closure/compiler/)）。这款新工具在使用其高级优化选项时，比 YUI Compressor 更进一步。在这种模式下，Closure Compiler 在转换代码和重命名符号方面极为激进。虽然它能带来惊人的体积缩减，但要求开发者非常谨慎，确保输出代码与输入代码行为一致。同时，由于几乎所有符号都被重命名，调试也变得更加困难。Closure 库附带了一个名为 Closure Inspector（[`code.google.com/closure/compiler/docs/inspector.html`](http://code.google.com/closure/compiler/docs/inspector.html)）的 Firebug 扩展，它提供了混淆符号与原始符号之间的映射。然而，该扩展仅在 Firefox 浏览器上可用，在调试特定浏览器的代码路径时可能会成为问题，而且调试难度仍然高于其他不那么激进的压缩工具。
+`Closure` 库附带了一个名为 `Closure Inspector`（[`code.google.com/closure/compiler/docs/inspector.html`](http://code.google.com/closure/compiler/docs/inspector.html)）的 `Firebug` 扩展，它提供了混淆符号与原始符号之间的映射。然而，该扩展仅在 `Firefox` 浏览器上可用，在调试特定浏览器的代码路径时可能会成为问题，而且调试难度仍然高于其他不那么激进的压缩工具。
 
 ## 构建时与运行时构建流程
 
-拼接、预处理和压缩这些步骤既可以在构建时进行，也可以在运行时进行。运行时构建流程在开发过程中非常有用，但出于可扩展性考虑，通常不建议在生产环境中使用。构建高性能应用的一般原则是：所有能在构建时完成的工作都不应在运行时进行。
+拼接、预处理和压缩这些步骤既可以在构建时进行，也可以在运行时进行。运行时构建流程在开发过程中非常有用，但出于可扩展性考虑，通常不建议在生产环境中使用。
 
-虽然 Apache Ant 绝对是一个离线构建程序，但本章末尾介绍的敏捷构建工具代表了一种折中方案：同一工具既可用于开发，也可用于创建最终将在生产环境中使用的资源。
+构建高性能应用的一般原则是：所有能在构建时完成的工作都不应在运行时进行。
+
+虽然 `Apache Ant` 绝对是一个离线构建程序，但本章末尾介绍的敏捷构建工具代表了一种折中方案：同一工具既可用于开发，也可用于创建最终将在生产环境中使用的资源。
 
 ## JavaScript 压缩
 
-当 Web 浏览器请求资源时，它通常会发送一个 `Accept-Encoding` HTTP 头（从 HTTP/1.1 开始），以告知 Web 服务器它支持哪些编码转换。此信息主要用于允许文档被压缩，从而实现更快的下载速度，进而提升用户体验。`Accept-Encoding` 值的可能标记包括：`gzip`、`compress`、`deflate` 和 `identity`（这些值由互联网号码分配机构 IANA 注册）。
+当 Web 浏览器请求资源时，它通常会发送一个 `Accept-Encoding` HTTP 头（从 `HTTP/1.1` 开始），以告知 Web 服务器它支持哪些编码转换。此信息主要用于允许文档被压缩，从而实现更快的下载速度，进而提升用户体验。
+
+`Accept-Encoding` 值的可能标记包括：`gzip`、`compress`、`deflate` 和 `identity`（这些值由互联网号码分配机构 `IANA` 注册）。
 
 如果 Web 服务器在请求中看到此头，它将选择最合适的编码方法，并通过 `Content-Encoding` HTTP 头将决定通知给 Web 浏览器。
 
-`gzip` 是目前最流行的编码方式。它通常能将有效负载大小减少 70%，因此成为提升 Web 应用性能的首选武器。请注意，gzip 压缩应主要应用于文本响应，包括 JavaScript 文件。其他文件类型（如图像或 PDF 文件）不应进行 gzip 压缩，因为它们已经过压缩，再次尝试压缩只会浪费服务器资源。
+`gzip` 是目前最流行的编码方式。它通常能将有效负载大小减少 70%，因此成为提升 Web 应用性能的首选武器。请注意，`gzip` 压缩应主要应用于文本响应，包括 JavaScript 文件。
 
-如果你使用 Apache Web 服务器（目前最流行的），启用 gzip 压缩需要安装并配置 `mod_gzip` 模块（适用于 Apache 1.3，可从 [`www.schroepl.net/projekte/mod_gzip/`](http://www.schroepl.net/projekte/mod_gzip/) 获取）或 `mod_deflate` 模块（适用于 Apache 2）。
+其他文件类型（如图像或 PDF 文件）不应进行 `gzip` 压缩，因为它们已经过压缩，再次尝试压缩只会浪费服务器资源。
 
-Yahoo! Search 和 Google 最近独立进行的研究表明，美国大型网站交付的内容中约有 15% 未经压缩。这主要是由于请求中缺少 `Accept-Encoding` HTTP 头，该头被某些企业代理、防火墙甚至 PC 安全软件剥离。尽管 gzip 压缩对 Web 开发者来说是一个强大的工具，但必须注意这一事实，并努力编写尽可能简洁的代码。另一种技术是向无法从 gzip 压缩中受益的用户提供替代的 JavaScript 内容，让他们获得更轻量的体验（尽管应允许用户选择切换回完整版本）。
+如果你使用 `Apache` Web 服务器（目前最流行的），启用 `gzip` 压缩需要安装并配置 `mod_gzip` 模块（适用于 `Apache 1.3`，可从 [`www.schroepl.net/projekte/mod_gzip/`](http://www.schroepl.net/projekte/mod_gzip/) 获取）或 `mod_deflate` 模块（适用于 `Apache 2`）。
 
-为此，有必要提一下 Packer（[`dean.edwards.name/packer/`](http://dean.edwards.name/packer/)），这是由 Dean Edwards 开发的一款 JavaScript 压缩器。Packer 能够将 JavaScript 文件压缩到 YUI Compressor 无法达到的程度。以下是对 jQuery 库（版本 1.3.2，可从 [`www.jquery.com/`](http://www.jquery.com/) 获取）的测试结果：
+Yahoo! Search 和 Google 最近独立进行的研究表明，美国大型网站交付的内容中约有 15% 未经压缩。这主要是由于请求中缺少 `Accept-Encoding` HTTP 头，该头被某些企业代理、防火墙甚至 PC 安全软件剥离。
+
+尽管 `gzip` 压缩对 Web 开发者来说是一个强大的工具，但必须注意这一事实，并努力编写尽可能简洁的代码。另一种技术是向无法从 `gzip` 压缩中受益的用户提供替代的 JavaScript 内容，让他们获得更轻量的体验（尽管应允许用户选择切换回完整版本）。
+
+为此，有必要提一下 `Packer`（[`dean.edwards.name/packer/`](http://dean.edwards.name/packer/)），这是由 Dean Edwards 开发的一款 JavaScript 压缩器。`Packer` 能够将 JavaScript 文件压缩到 `YUI Compressor` 无法达到的程度。
+
+以下是对 `jQuery` 库（版本 1.3.2，可从 [`www.jquery.com/`](http://www.jquery.com/) 获取）的测试结果：
 
 | jQuery | 120,180 字节 |
-| --- | --- |
+| --- | ---: |
 | jQuery + YUI Compressor | 56,814 字节 |
 | `jQuery + Packer` | `39,351 字节` |
 | 原始 jQuery + gzip | 34,987 字节 |
 | `jQuery + YUI Compressor + gzip` | `19,457 字节` |
 | `jQuery + Packer + gzip` | `19,228 字节` |
 
-经过 gzip 压缩后，使用 Packer 或 YUI Compressor 处理 jQuery 库得到的结果非常相似。然而，使用 Packer 压缩的文件会产生固定的运行时开销（在我现代的笔记本电脑上大约为 200 到 300 毫秒）。因此，将 YUI Compressor 与 gzip 结合使用总能获得最佳效果。不过，对于使用不支持 gzip 压缩的慢速网络的用户来说，Packer 可以成功应用，因为解包的开销与下载大量代码的开销相比微不足道。为不同用户提供不同 JavaScript 内容的唯一缺点是增加了质量保证成本。
+经过 `gzip` 压缩后，使用 `Packer` 或 `YUI Compressor` 处理 `jQuery` 库得到的结果非常相似。然而，使用 `Packer` 压缩的文件会产生固定的运行时开销（在我现代的笔记本电脑上大约为 200 到 300 毫秒）。
+
+因此，将 `YUI Compressor` 与 `gzip` 结合使用总能获得最佳效果。不过，对于使用不支持 `gzip` 压缩的慢速网络的用户来说，`Packer` 可以成功应用，因为解包的开销与下载大量代码的开销相比微不足道。
+
+为不同用户提供不同 JavaScript 内容的唯一缺点是增加了质量保证成本。
 
 ## 缓存 JavaScript 文件
 
-使 HTTP 组件可缓存将极大改善重复访问你网站的用户体验。具体来说，加载 Yahoo! 首页（[`www.yahoo.com/`](http://www.yahoo.com/)）时，使用完整缓存比使用空缓存所需的 HTTP 请求减少 90%，下载的字节数减少 83%。往返时间（从请求页面到触发 `onload` 事件之间的时间）从 2.4 秒降至 0.9 秒（[`yuiblog.com/blog/2007/01/04/performance-research-part-2/`](http://yuiblog.com/blog/2007/01/04/performance-research-part-2/)）。虽然缓存最常用于图像，但它应应用于所有静态组件，包括 JavaScript 文件。
+使 HTTP 组件可缓存将极大改善重复访问你网站的用户体验。具体来说，加载 Yahoo! 首页（[`www.yahoo.com/`](http://www.yahoo.com/)）时，使用完整缓存比使用空缓存所需的 HTTP 请求减少 90%，下载的字节数减少 83%。
 
-Web 服务器使用 `Expires` HTTP 响应头来告知客户端资源可以缓存多长时间。其格式为 RFC 1123 格式的绝对时间戳。使用示例为：`Expires: Thu, 01 Dec 1994 16:00:00 GMT`。要将响应标记为“永不过期”，Web 服务器会发送一个大约在响应发送时间之后一年的 `Expires` 日期。根据 HTTP 1.1 RFC（RFC 2616，第 14.21 节），Web 服务器不应发送超过未来一年的 `Expires` 日期。
+往返时间（从请求页面到触发 `onload` 事件之间的时间）从 2.4 秒降至 0.9 秒（[`yuiblog.com/blog/2007/01/04/performance-research-part-2/`](http://yuiblog.com/blog/2007/01/04/performance-research-part-2/)）。
 
-如果你使用 Apache Web 服务器，`ExpiresDefault` 指令允许你设置相对于当前日期的过期日期。以下示例将此指令应用于图像、JavaScript 文件和 CSS 样式表：
+虽然缓存最常用于图像，但它应应用于所有静态组件，包括 JavaScript 文件。
 
-```
+Web 服务器使用 `Expires` HTTP 响应头来告知客户端资源可以缓存多长时间。其格式为 `RFC 1123` 格式的绝对时间戳。使用示例为：`Expires: Thu, 01 Dec 1994 16:00:00 GMT`。
+
+要将响应标记为“永不过期”，Web 服务器会发送一个大约在响应发送时间之后一年的 `Expires` 日期。根据 `HTTP 1.1 RFC`（`RFC 2616`，第 14.21 节），Web 服务器不应发送超过未来一年的 `Expires` 日期。
+
+如果你使用 `Apache` Web 服务器，`ExpiresDefault` 指令允许你设置相对于当前日期的过期日期。以下示例将此指令应用于图像、JavaScript 文件和 CSS 样式表：
+
+```apache
 <FilesMatch "\.(jpg|jpeg|png|gif|js|css|htm|html)$">
     ExpiresActive on
     ExpiresDefault "access plus 1 year"
 </FilesMatch>
 ```
 
-某些 Web 浏览器，尤其是在移动设备上运行时，可能具有有限的缓存能力。例如，iPhone 上的 Safari 浏览器不会缓存未压缩大小超过 25KB 的组件（参见 [`yuiblog.com/blog/2008/02/06/iphone-cacheability/`](http://yuiblog.com/blog/2008/02/06/iphone-cacheability/)），对于 iPhone 3.0 操作系统则为 15KB。在这种情况下，需要考虑在 HTTP 组件数量与其可缓存性之间进行权衡，通过将组件拆分为更小的块来实现。
+某些 Web 浏览器，尤其是在移动设备上运行时，可能具有有限的缓存能力。例如，iPhone 上的 Safari 浏览器不会缓存未压缩大小超过 25KB 的组件（参见 [`yuiblog.com/blog/2008/02/06/iphone-cacheability/`](http://yuiblog.com/blog/2008/02/06/iphone-cacheability/)），对于 iPhone 3.0 操作系统则为 15KB。
+
+在这种情况下，需要考虑在 HTTP 组件数量与其可缓存性之间进行权衡，通过将组件拆分为更小的块来实现。
 
 如果客户端存储机制可用，你也可以考虑使用它们，此时 JavaScript 代码本身必须处理过期问题。
 
+最后，另一种技术是使用 HTML 5 离线应用缓存，该功能已在 `Firefox 3.5`、`Safari 4.0` 以及从 iPhone OS 2.1 开始的 iPhone 上实现。
 
+此技术依赖于一个清单文件，其中列出了要缓存的资源。清单文件通过向 `<html>` 标签添加 `manifest` 属性来声明（注意使用 HTML 5 DOCTYPE）：
 
-
-
-最后，另一种技术是使用 HTML 5 离线应用缓存，该功能已在 Firefox 3.5、Safari 4.0 以及从 iPhone OS 2.1 开始的 iPhone 上实现。此技术依赖于一个清单文件，其中列出了要缓存的资源。清单文件通过向 `<html>` 标签添加 `manifest` 属性来声明（注意使用 HTML 5 DOCTYPE）：
-
-```
+```html
 <!DOCTYPE html>
 <html manifest="demo.manifest">
 ```
@@ -5634,9 +5503,11 @@ Web 服务器使用 `Expires` HTTP 响应头来告知客户端资源可以缓存
 
 适当的缓存控制确实能提升用户体验，但它也有一个缺点：当升级应用时，你需要确保用户获得最新版本的静态内容。这可以通过在静态资源发生变化时重命名它们来实现。
 
-大多数情况下，开发者会在文件名中添加版本号或构建号。也有人喜欢附加校验和。就我个人而言，我喜欢使用时间戳。这个任务可以通过 Ant 自动化。以下目标通过附加 `yyyyMMddhhmm` 格式的时间戳来重命名 JavaScript 文件：
+大多数情况下，开发者会在文件名中添加版本号或构建号。也有人喜欢附加校验和。就我个人而言，我喜欢使用时间戳。
 
-```
+这个任务可以通过 `Ant` 自动化。以下目标通过附加 `yyyyMMddhhmm` 格式的时间戳来重命名 JavaScript 文件：
+
+```xml
 <target name="js.copy">
     <!-- 创建时间戳 -->
     <tstamp/>
@@ -5650,21 +5521,25 @@ Web 服务器使用 `Expires` HTTP 响应头来告知客户端资源可以缓存
 
 ## 使用内容分发网络
 
-内容分发网络（CDN）是一个在地理上分布于互联网上的计算机网络，负责向最终用户交付内容。使用 CDN 的主要原因包括可靠性、可扩展性，以及最重要的性能。事实上，通过从离用户最近的位置提供内容，CDN 能够显著降低网络延迟。
+内容分发网络（CDN）是一个在地理上分布于互联网上的计算机网络，负责向最终用户交付内容。使用 CDN 的主要原因包括可靠性、可扩展性，以及最重要的性能。
 
-一些大型公司维护着自己的 CDN，但通常使用第三方 CDN 提供商（如 Akamai Technologies ([`www.akamai.com/`](http://www.akamai.com/)) 或 Limelight Networks ([`www.limelightnetworks.com/`](http://www.limelightnetworks.com/))）更具成本效益。
+事实上，通过从离用户最近的位置提供内容，CDN 能够显著降低网络延迟。
+
+一些大型公司维护着自己的 CDN，但通常使用第三方 CDN 提供商（如 Akamai Technologies（[`www.akamai.com/`](http://www.akamai.com/)）或 Limelight Networks（[`www.limelightnetworks.com/`](http://www.limelightnetworks.com/)））更具成本效益。
 
 切换到 CDN 通常只需进行相当简单的代码更改，并且有可能显著改善最终用户的响应时间。
 
-值得注意的是，最流行的 JavaScript 库都可以通过 CDN 访问。例如，YUI 库直接从 Yahoo! 网络提供（服务器名为 `yui.yahooapis.com`，详情请访问 [`developer.yahoo.com/yui/articles/hosting/`](http://developer.yahoo.com/yui/articles/hosting/)），而 jQuery、Dojo、Prototype、Script.aculo.us、MooTools、YUI 等库都可以通过 Google 的 CDN 直接获取（服务器名为 `ajax.googleapis.com`，详情请访问 [`code.google.com/apis/ajaxlibs/`](http://code.google.com/apis/ajaxlibs/)）。
+值得注意的是，最流行的 JavaScript 库都可以通过 CDN 访问。例如，YUI 库直接从 Yahoo! 网络提供（服务器名为 `yui.yahooapis.com`，详情请访问 [`developer.yahoo.com/yui/articles/hosting/`](http://developer.yahoo.com/yui/articles/hosting/)），而 `jQuery`、`Dojo`、`Prototype`、`Script.aculo.us`、`MooTools`、YUI 等库都可以通过 Google 的 CDN 直接获取（服务器名为 `ajax.googleapis.com`，详情请访问 [`code.google.com/apis/ajaxlibs/`](http://code.google.com/apis/ajaxlibs/)）。
 
 ## 部署 JavaScript 资源
 
 JavaScript 资源的部署通常涉及将文件复制到一个或多个远程主机，有时还需要在这些主机上运行一组 shell 命令，尤其是在使用 CDN 时，以便将新添加的文件分发到整个交付网络。
 
-Apache Ant 提供了多种将文件复制到远程服务器的选项。你可以使用 `copy` 任务将文件复制到本地挂载的文件系统，或者使用可选的 `FTP` 或 `SCP` 任务。我个人倾向于直接使用 `scp` 工具，该工具在所有主流平台上都可用。以下是一个简单的示例：
+`Apache Ant` 提供了多种将文件复制到远程服务器的选项。你可以使用 `copy` 任务将文件复制到本地挂载的文件系统，或者使用可选的 `FTP` 或 `SCP` 任务。
 
-```
+我个人倾向于直接使用 `scp` 工具，该工具在所有主流平台上都可用。以下是一个简单的示例：
+
+```xml
 <apply executable="scp" failonerror="true" parallel="true">
     <fileset dir="${build.dir}" includes="*.js"/>
     <srcfile/>
@@ -5674,7 +5549,7 @@ Apache Ant 提供了多种将文件复制到远程服务器的选项。你可以
 
 最后，为了在运行 SSH 守护进程的远程主机上执行 shell 命令，你可以使用可选的 `SSHEXEC` 任务，或者直接调用 `ssh` 工具，如下例所示，用于在 Unix 主机上重启 Apache Web 服务器：
 
-```
+```xml
 <exec executable="ssh" failonerror="true">
     <arg line="${live.server}"/>
     <arg line="sudo service httpd restart"/>
@@ -5683,11 +5558,17 @@ Apache Ant 提供了多种将文件复制到远程服务器的选项。你可以
 
 ## 敏捷 JavaScript 构建流程
 
-传统的构建工具很棒，但大多数 Web 开发者觉得它们非常繁琐，因为每次代码更改后都需要手动编译解决方案。相反，更可取的做法是只需刷新浏览器窗口，完全跳过编译步骤。因此，很少有 Web 开发者使用本章概述的技术，导致应用或网站性能不佳。幸运的是，编写一个结合所有这些高级技术的工具相当简单，使 Web 开发者能够高效工作，同时仍能从其应用中获得最佳性能。
+传统的构建工具很棒，但大多数 Web 开发者觉得它们非常繁琐，因为每次代码更改后都需要手动编译解决方案。
 
-`smasher` 是一个基于 Yahoo! Search 内部工具的 PHP5 应用程序。它可以合并多个 JavaScript 文件，对它们进行预处理，并可选地压缩其内容。它可以从命令行运行，也可以在开发期间处理 Web 请求并动态自动合并资源。源代码可在 [`github.com/jlecomte/smasher`](http://github.com/jlecomte/smasher) 找到，包含以下文件：
+相反，更可取的做法是只需刷新浏览器窗口，完全跳过编译步骤。因此，很少有 Web 开发者使用本章概述的技术，导致应用或网站性能不佳。
 
-`smasher.php`
+幸运的是，编写一个结合所有这些高级技术的工具相当简单，使 Web 开发者能够高效工作，同时仍能从其应用中获得最佳性能。
+
+`smasher` 是一个基于 Yahoo! Search 内部工具的 `PHP5` 应用程序。它可以合并多个 JavaScript 文件，对它们进行预处理，并可选地压缩其内容。
+
+它可以从命令行运行，也可以在开发期间处理 Web 请求并动态自动合并资源。源代码可在 [`github.com/jlecomte/smasher`](http://github.com/jlecomte/smasher) 找到，包含以下文件：
+
+`sm​​asher.php`
 
 > 核心文件
 
@@ -5705,7 +5586,9 @@ Apache Ant 提供了多种将文件复制到远程服务器的选项。你可以
 
 `smasher` 需要一个 XML 配置文件，其中包含要合并的文件组的定义，以及一些关于系统的杂项信息。以下是该文件的一个示例：
 
-```
+
+
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <smasher>
     <temp_dir>/tmp/</temp_dir>
@@ -5732,19 +5615,19 @@ Apache Ant 提供了多种将文件复制到远程服务器的选项。你可以
 </smasher>
 ```
 
-每个 `group` 元素包含一组 JavaScript 和/或 CSS 文件。顶层元素 `root_dir` 包含这些文件所在目录的路径。可选地，`group` 元素还可以包含预处理宏定义的列表。
+每个`group`元素包含一组 JavaScript 和/或 CSS 文件。顶层元素`root_dir`包含这些文件所在目录的路径。可选地，`group`元素还可以包含预处理宏定义的列表。
 
-保存此配置文件后，你可以从命令行运行 `smasher`。如果运行时不带任何必需参数，它将在退出前显示一些使用信息。以下示例展示了如何合并、预处理和压缩核心 YUI JavaScript 文件：
+保存此配置文件后，你可以从命令行运行`smasher`。如果运行时不带任何必需参数，它将在退出前显示一些使用信息。以下示例展示了如何合并、预处理和压缩核心 YUI JavaScript 文件：
 
-```
+```bash
 $ ./smasher -c smasher.xml -g yui-core -t js
 ```
 
-如果一切顺利，输出文件将位于工作目录中，并以组名（本例中为 `yui-core`）命名，后跟时间戳和适当的文件扩展名（例如 `yui-core-200907191539.js`）。
+如果一切顺利，输出文件将位于工作目录中，并以组名（本例中为`yui-core`）命名，后跟时间戳和适当的文件扩展名（例如`yui-core-200907191539.js`）。
 
-类似地，你可以在开发期间使用 `smasher` 处理 Web 请求，方法是将文件 `smasher_web.php` 放置在 Web 服务器文档根目录下的某个位置，并使用类似以下的 URL：
+类似地，你可以在开发期间使用`smasher`处理 Web 请求，方法是将文件`smasher_web.php`放置在 Web 服务器文档根目录下的某个位置，并使用类似以下的 URL：
 
-```
+```text
 http://<host>/smasher_web.php?conf=smasher.xml&group=yui-core&type=css&nominify
 ```
 
@@ -5752,16 +5635,13 @@ http://<host>/smasher_web.php?conf=smasher.xml&group=yui-core&type=css&nominify
 
 ## 总结
 
-
-
-
 构建和部署过程对基于 JavaScript 的应用程序性能有着巨大影响。该过程中最重要的步骤包括：
 
-*   合并 JavaScript 文件以减少 HTTP 请求数量
-*   使用 YUI Compressor 压缩 JavaScript 文件
-*   以压缩格式（gzip 编码）提供 JavaScript 文件
-*   通过设置适当的 HTTP 响应头使 JavaScript 文件可缓存，并通过在文件名后附加时间戳来解决缓存问题
-*   使用内容分发网络（CDN）提供 JavaScript 文件；CDN 不仅能提升性能，还应为你管理压缩和缓存
+- 合并 JavaScript 文件以减少 HTTP 请求数量
+- 使用 YUI Compressor 压缩 JavaScript 文件
+- 以压缩格式（gzip 编码）提供 JavaScript 文件
+- 通过设置适当的 HTTP 响应头使 JavaScript 文件可缓存，并通过在文件名后附加时间戳来解决缓存问题
+- 使用内容分发网络（CDN）提供 JavaScript 文件；CDN 不仅能提升性能，还应为你管理压缩和缓存
 
 所有这些步骤都应使用公开可用的构建工具（如 Apache Ant）或根据你的特定需求定制的自定义构建工具来自动化。如果你让构建过程为你服务，你将能够显著提升需要大量 JavaScript 代码的 Web 应用或网站的性能。
 
@@ -5771,15 +5651,10 @@ http://<host>/smasher_web.php?conf=smasher.xml&group=yui-core&type=css&nominify
 
 拥有合适的软件对于识别脚本加载和运行过程中的瓶颈至关重要。许多浏览器厂商和大型网站已经分享了相关技术和工具，以帮助 Web 变得更快、更高效。本章重点介绍一些可用的免费工具，用于：
 
-性能分析
+- **性能分析**：对脚本执行过程中的各种函数和操作进行计时，以识别可优化的区域。
+- **网络分析**：检查图片、样式表和脚本的加载情况，以及它们对整体页面加载和渲染的影响。
 
-> 对脚本执行过程中的各种函数和操作进行计时，以识别可优化的区域
-
-网络分析
-
-> 检查图片、样式表和脚本的加载情况，以及它们对整体页面加载和渲染的影响
-
-当某个特定脚本或应用程序性能不佳时，性能分析器可以帮助确定优化的优先级。由于支持的浏览器范围广泛，这可能会变得棘手，但许多厂商现在都在其调试工具中提供了性能分析器。在某些情况下，性能问题可能特定于某个浏览器；在其他情况下，症状可能跨多个浏览器出现。请记住，针对一个浏览器所做的优化*可能*对其他浏览器也有益，但也可能产生相反的效果。性能分析器不是假设哪些函数或操作较慢，而是确保优化时间花在系统中影响最多浏览器的最慢区域。
+当某个特定脚本或应用程序性能不佳时，性能分析器可以帮助确定优化的优先级。由于支持的浏览器范围广泛，这可能会变得棘手，但许多厂商现在都在其调试工具中提供了性能分析器。在某些情况下，性能问题可能特定于某个浏览器；在其他情况下，症状可能跨多个浏览器出现。请记住，针对一个浏览器所做的优化可能对其他浏览器也有益，但也可能产生相反的效果。性能分析器不是假设哪些函数或操作较慢，而是确保优化时间花在系统中影响最多浏览器的最慢区域。
 
 虽然本章大部分内容聚焦于性能分析工具，但网络分析器在帮助确保脚本和页面尽可能快地加载和运行方面也非常有效。在深入调整代码之前，你应该确保所有脚本和其他资源都以最佳方式加载。图片和样式表的加载会影响脚本的加载，具体取决于浏览器允许的并发请求数量以及正在加载的资源数量。
 
@@ -5787,9 +5662,9 @@ http://<host>/smasher_web.php?conf=smasher.xml&group=yui-core&type=css&nominify
 
 ## JavaScript 性能分析
 
-所有 JavaScript 实现自带的工具就是语言本身。使用 `Date` 对象，可以在脚本中的任何给定点进行测量。在其他工具出现之前，这是对脚本执行进行计时的常用方法，并且现在偶尔仍然有用。默认情况下，`Date` 对象返回当前时间，将一个 `Date` 实例减去另一个实例可以得到以毫秒为单位的经过时间。考虑以下示例，该示例比较了从头创建元素与从现有元素克隆（参见第 3 章，*DOM 脚本编程*）：
+所有 JavaScript 实现自带的工具就是语言本身。使用`Date`对象，可以在脚本中的任何给定点进行测量。在其他工具出现之前，这是对脚本执行进行计时的常用方法，并且现在偶尔仍然有用。默认情况下，`Date`对象返回当前时间，将一个`Date`实例减去另一个实例可以得到以毫秒为单位的经过时间。考虑以下示例，该示例比较了从头创建元素与从现有元素克隆（参见第 3 章，*DOM 脚本编程*）：
 
-```
+```javascript
 var start = new Date(),
     count = 10000,
     i, element, time;
@@ -5810,9 +5685,9 @@ time = new Date() - start;
 alert('created ' + count + ' in ' + time + 'ms');
 ```
 
-这种类型的性能分析实现起来很繁琐，因为它需要手动编写自己的计时代码。一个处理时间计算并存储数据的 `Timer` 对象将是下一步的好选择。
+这种类型的性能分析实现起来很繁琐，因为它需要手动编写自己的计时代码。一个处理时间计算并存储数据的`Timer`对象将是下一步的好选择。
 
-```
+```javascript
 Var Timer = {
     _data: {},
 
@@ -5841,15 +5716,15 @@ Timer.stop('createElement');
 alert('created ' + count + ' in ' + Timer.getTime('createElement');
 ```
 
-如你所见，这仍然需要手动编写代码，但它提供了一种构建纯 JavaScript 性能分析器的模式。通过扩展 `Timer` 对象的概念，可以构建一个性能分析器，用于注册函数并为其添加计时代码。
+如你所见，这仍然需要手动编写代码，但它提供了一种构建纯 JavaScript 性能分析器的模式。通过扩展`Timer`对象的概念，可以构建一个性能分析器，用于注册函数并为其添加计时代码。
 
 ## YUI Profiler
 
 YUI Profiler（[`developer.yahoo.com/yui/profiler/`](http://developer.yahoo.com/yui/profiler/)）由 Nicholas Zakas 贡献，是一个用 JavaScript 编写的 JavaScript 性能分析器。除了计时功能外，它还提供了用于分析函数、对象和构造函数的接口，以及性能分析数据的详细报告。它支持跨多种浏览器进行性能分析，并支持数据导出以实现更强大的报告和分析。
 
-YUI Profiler 提供了一个通用计时器来收集性能数据。`Profiler` 提供了用于启动和停止命名计时以及检索性能分析数据的静态方法。
+YUI Profiler 提供了一个通用计时器来收集性能数据。`Profiler`提供了用于启动和停止命名计时以及检索性能分析数据的静态方法。
 
-```
+```javascript
 var count = 10000, i, element;
     Y.Profiler.start('createElement');
 
@@ -5863,48 +5738,44 @@ var count = 10000, i, element;
             Y.Profiler.getAverage('createElement') + 'ms');
 ```
 
-这明显改进了内联的 `Date` 和 `Timer` 方法，并提供了关于调用次数以及平均、最小和最大时间的额外性能分析数据。这些数据被收集起来，并可以与其他性能分析结果一起分析。
+这明显改进了内联的`Date`和`Timer`方法，并提供了关于调用次数以及平均、最小和最大时间的额外性能分析数据。这些数据被收集起来，并可以与其他性能分析结果一起分析。
 
-函数也可以注册以进行性能分析。注册的函数会被添加收集性能数据的代码。例如，要分析第 2 章中的全局 `initUI` 方法，只需提供名称：
+函数也可以注册以进行性能分析。注册的函数会被添加收集性能数据的代码。例如，要分析第 2 章中的全局`initUI`方法，只需提供名称：
 
-```
+```javascript
 Y.Profiler.registerFunction("initUI");
 ```
 
-许多函数都绑定到对象上，以防止污染全局命名空间。对象方法可以通过将对象作为第二个参数传递给 `registerFunction` 来注册。例如，假设有一个名为 `uiTest` 的对象，它实现了两种 `initUI` 方法，分别为 `uiTest.test1` 和 `uiTest.test2`。每个方法都可以单独注册：
+许多函数都绑定到对象上，以防止污染全局命名空间。对象方法可以通过将对象作为第二个参数传递给`registerFunction`来注册。例如，假设有一个名为`uiTest`的对象，它实现了两种`initUI`方法，分别为`uiTest.test1`和`uiTest.test2`。每个方法都可以单独注册：
 
-```
+```javascript
 Y.Profiler.registerFunction("test1", uiTest);
 Y.Profiler.registerFunction("test2", uiTest);
 ```
 
-这已经足够好了，但对于分析许多函数或整个应用程序来说，扩展性并不好。`registerObject` 方法会自动注册绑定到对象上的所有方法：
+这已经足够好了，但对于分析许多函数或整个应用程序来说，扩展性并不好。`registerObject`方法会自动注册绑定到对象上的所有方法：
 
-```
+```javascript
 Y.Profiler.registerObject("uiTest", uiTest);
 ```
 
-第一个参数是对象的名称（用于报告目的），第二个参数是对象本身。这将为所有 `uiTest` 方法添加性能分析代码。
+第一个参数是对象的名称（用于报告目的），第二个参数是对象本身。这将为所有`uiTest`方法添加性能分析代码。
 
 依赖原型继承的对象需要特殊处理。YUI 的性能分析器允许注册一个构造函数，该函数将为该对象的所有实例上的所有方法添加性能分析代码：
 
-```
+```javascript
 Y.Profiler.registerConstructor("MyWidget", myNameSpace);
 ```
 
+现在，`myNameSpace.MyWidget`每个实例上的每个函数都会被测量并报告。单个报告可以作为一个对象获取：
 
-
-
-
-现在，`myNameSpace.MyWidget` 每个实例上的每个函数都会被测量并报告。单个报告可以作为一个对象获取：
-
-```
+```javascript
 var initUIReport = Y.Profiler.getReport("initUI");
 ```
 
-这会返回一个包含性能分析数据的对象，其中包括一个 `points` 数组，该数组按调用顺序记录了每次调用的耗时。这些数据点可以通过其他有趣的方式绘制和分析，以检查时间变化。该对象包含以下字段：
+这会返回一个包含性能分析数据的对象，其中包括一个`points`数组，该数组按调用顺序记录了每次调用的耗时。这些数据点可以通过其他有趣的方式绘制和分析，以检查时间变化。该对象包含以下字段：
 
-```
+```javascript
 {
     min: 100,
     max: 250,
@@ -5914,9 +5785,9 @@ var initUIReport = Y.Profiler.getReport("initUI");
 };
 ```
 
-有时你可能只需要某个特定字段的值。静态的 `Profiler` 方法提供了每个函数或方法的离散数据：
+有时你可能只需要某个特定字段的值。静态的`Profiler`方法提供了每个函数或方法的离散数据：
 
-```
+```javascript
 var uiTest1Report = {
     calls: Y.Profiler.getCalls("uiTest.test1"),
     avg: Y.Profiler.getAvg("uiTest.test1")
@@ -5925,13 +5796,13 @@ var uiTest1Report = {
 
 为了正确分析脚本的性能，真正需要的是一个能够突出显示代码中最慢部分的视图。还可以获取在对象或构造函数上调用的所有已注册函数的报告：
 
-```
+```javascript
 var uiTestReport = Y.Profiler.getReport("uiTest");
 ```
 
 这会返回一个包含以下数据的对象：
 
-```
+```javascript
 {
     test1: {
         min: 100,
@@ -5950,7 +5821,7 @@ var uiTestReport = Y.Profiler.getReport("uiTest");
 
 这提供了以更有意义的方式对数据进行排序和查看的机会，从而可以更仔细地审查代码中较慢的部分。还可以生成所有当前性能分析数据的完整报告。然而，这可能包含无用的信息，例如被调用零次或已经满足性能预期的函数。为了尽量减少这类噪音，可以传入一个可选的函数来过滤数据：
 
-```
+```javascript
 var fullReport = Y.Profiler.getFullReport(function(data) {
     return (data.calls > 0 && data.avg > 5);
 });
@@ -5960,21 +5831,21 @@ var fullReport = Y.Profiler.getFullReport(function(data) {
 
 当性能分析完成后，可以单独注销函数、对象和构造函数，清除性能分析数据：
 
-```
+```javascript
 Y.Profiler.unregisterFunction("initUI");
 Y.Profiler.unregisterObject("uiTests");
 Y.Profiler.unregisterConstructor("MyWidget");
 ```
 
-`clear()` 方法会保留当前的性能分析注册表，但清除关联的数据。该函数可以针对每个函数或计时单独调用：
+`clear()`方法会保留当前的性能分析注册表，但清除关联的数据。该函数可以针对每个函数或计时单独调用：
 
-```
+```javascript
 Y.Profiler.clear("initUI");
 ```
 
 或者，通过省略名称参数，可以一次性清除所有数据：
 
-```
+```javascript
 Y.Profiler.clear();
 ```
 
@@ -5982,7 +5853,7 @@ Y.Profiler.clear();
 
 值得注意的是，匿名函数对于这类性能分析器来说尤其麻烦，因为没有名称可供报告。YUI Profiler 提供了一种机制来检测匿名函数，使其能够被分析。注册匿名函数会返回一个包装函数，可以代替匿名函数调用：
 
-```
+```javascript
 var instrumentedFunction =
     Y.Profiler.instrument("anonymous1", function(num1, num2){
         return num1 + num2;
@@ -5992,7 +5863,7 @@ instrumentedFunction(3, 5);
 
 这会将匿名函数的数据添加到 Profiler 的结果集中，使其能够像其他性能分析数据一样被检索：
 
-```
+```javascript
 var report = Y.Profiler.getReport("anonymous1");
 ```
 
@@ -6002,7 +5873,7 @@ var report = Y.Profiler.getReport("anonymous1");
 
 比较内联函数：
 
-```
+```javascript
 myNode.onclick = function() {
     myApp.loadData();
 };
@@ -6010,18 +5881,18 @@ myNode.onclick = function() {
 
 与方法调用：
 
-```
+```javascript
 myApp._onClick = function() {
     myApp.loadData();
 };
 myNode.onclick = myApp._onClick;
 ```
 
-使用方法调用允许任何经过审查的性能分析器自动检测 `onclick` 处理程序。但这并不总是可行的，因为可能需要大量的重构才能启用性能分析。
+使用方法调用允许任何经过审查的性能分析器自动检测`onclick`处理程序。但这并不总是可行的，因为可能需要大量的重构才能启用性能分析。
 
 对于自动检测匿名函数的性能分析器，添加内联名称可以使报告更具可读性：
 
-```
+```javascript
 myNode.onclick = function myNodeClickHandler() {
     myApp.loadData();
 };
@@ -6029,43 +5900,45 @@ myNode.onclick = function myNodeClickHandler() {
 
 这也适用于声明为变量的函数，某些性能分析器难以从中提取名称：
 
-```
+```javascript
 var onClick = function myNodeClickHandler() {
     myApp.loadData();
 };
 ```
 
-现在匿名函数有了 `名称`，为大多数性能分析器提供了有意义的内容，可以与性能分析结果一起显示。这些名称几乎不需要付出什么努力就能实现，甚至可以作为调试构建过程的一部分自动插入。
-
-* * *
+现在匿名函数有了`名称`，为大多数性能分析器提供了有意义的内容，可以与性能分析结果一起显示。这些名称几乎不需要付出什么努力就能实现，甚至可以作为调试构建过程的一部分自动插入。
 
 ### 注意
 
 始终使用脚本的未压缩版本进行调试和性能分析。这将确保你的函数易于识别。
 
-* * *
-
 ## Firebug
 
-Firefox 是开发者中流行的浏览器，部分原因是 Firebug 插件（可在 [`www.getfirebug.com/`](http://www.getfirebug.com/) 获取），该插件最初由 Joe Hewitt 开发，现在由 Mozilla 基金会维护。该工具通过提供前所未有的代码洞察，提高了全球 Web 开发者的生产力。
+
+
+Firefox 是开发者中流行的浏览器，部分原因是 Firebug 插件（可在[`www.getfirebug.com/`](http://www.getfirebug.com/)获取），该插件最初由 Joe Hewitt 开发，现在由 Mozilla 基金会维护。该工具通过提供前所未有的代码洞察，提高了全球 Web 开发者的生产力。
 
 Firebug 提供了一个用于记录输出的控制台、当前页面的可遍历 DOM 树、样式信息、内省 DOM 和 JavaScript 对象的能力等。它还包括一个性能分析器和网络分析器，这将是本节的重点。Firebug 还具有高度可扩展性，可以轻松添加自定义面板。
 
 ### 控制台面板性能分析器
 
-Firebug 性能分析器是控制台面板的一部分（参见 图 10-1）。它测量并报告页面上 JavaScript 的执行情况。报告详细列出了性能分析器运行时调用的每个函数，提供了高度准确的性能数据，以及对可能导致脚本运行缓慢的原因的宝贵见解。
+Firebug 性能分析器是控制台面板的一部分（参见图 10-1）。它测量并报告页面上 JavaScript 的执行情况。报告详细列出了性能分析器运行时调用的每个函数，提供了高度准确的性能数据，以及对可能导致脚本运行缓慢的原因的宝贵见解。
 
-![Firebug 控制台面板](img/00022.jpeg)图 10-1. Firebug 控制台面板
+![Firebug 控制台面板](img/00022.jpeg)
 
-运行性能分析的一种方法是单击“Profile”按钮，触发脚本，然后再次单击“Profile”按钮停止分析。图 10-2 显示了性能分析数据的典型报告。其中包括 `Calls`（函数被调用的次数）、`Own Time`（函数本身花费的时间）和 `Time`（函数及其可能调用的任何函数所花费的总时间）。性能分析是在浏览器 chrome 级别进行检测的，因此从控制台面板进行性能分析时开销最小。
+图 10-1. Firebug 控制台面板
 
-![Firebug 性能分析面板](img/00039.jpeg)图 10-2. Firebug 性能分析面板
+运行性能分析的一种方法是单击“Profile”按钮，触发脚本，然后再次单击“Profile”按钮停止分析。图 10-2 显示了性能分析数据的典型报告。其中包括`Calls`（函数被调用的次数）、`Own Time`（函数本身花费的时间）和`Time`（函数及其可能调用的任何函数所花费的总时间）。性能分析是在浏览器 chrome 级别进行检测的，因此从控制台面板进行性能分析时开销最小。
+
+![Firebug 性能分析面板](img/00039.jpeg)
+
+图 10-2. Firebug 性能分析面板
 
 ### 控制台 API
 
 Firebug 还提供了一个 JavaScript 接口来启动和停止性能分析器。这允许更精确地控制正在测量的代码部分。这还提供了命名报告选项，这在比较各种优化技术时很有价值。
 
-```
+```javascript
 console.profile("regexTest");
 regexTest('foobar', 'foo');
 console.profileEnd();
@@ -6074,24 +5947,17 @@ indexOfTest('foobar', 'foo');
 console.profileEnd();
 ```
 
-
-
-
-在更感兴趣的时机启动和停止分析器，可以最大限度地减少其他可能正在运行的脚本带来的副作用和干扰。以这种方式调用分析器时需要注意的一点是，它确实会给脚本增加开销。这主要是由于调用 `profileEnd()` 后生成报告所需的时间，该过程会阻塞后续执行，直到报告生成完毕。较大的报告生成时间更长，可以考虑将对 `profileEnd()` 的调用包装在 `setTimeout` 中，使报告生成异步化并解除脚本执行的阻塞。
-
-* * *
+在更感兴趣的时机启动和停止分析器，可以最大限度地减少其他可能正在运行的脚本带来的副作用和干扰。以这种方式调用分析器时需要注意的一点是，它确实会给脚本增加开销。这主要是由于调用`profileEnd()`后生成报告所需的时间，该过程会阻塞后续执行，直到报告生成完毕。较大的报告生成时间更长，可以考虑将对`profileEnd()`的调用包装在`setTimeout`中，使报告生成异步化并解除脚本执行的阻塞。
 
 ### 注意
 
 JavaScript 接口也可以通过 Firebug 控制台命令行使用。
 
-* * *
-
 结束分析后，会生成一份新报告，显示每个函数花费的时间、调用次数、占总开销的百分比以及其他有趣的数据。这将有助于了解应在哪些方面投入时间优化函数速度并减少调用次数。
 
-与 YUI Profiler 类似，Firebug 的 `console.time()` 函数可以帮助测量分析器未监控的循环和其他操作。例如，以下代码对包含循环的一小段代码进行计时：
+与 YUI Profiler 类似，Firebug 的`console.time()`函数可以帮助测量分析器未监控的循环和其他操作。例如，以下代码对包含循环的一小段代码进行计时：
 
-```
+```javascript
 console.time("cache node");
 for (var box = document.getElementById("box"),
         i = 0;
@@ -6104,7 +5970,7 @@ console.timeEnd("cache node");
 
 计时结束后，时间会输出到控制台。这在比较各种优化方法时非常有用。可以捕获额外的计时结果并记录到控制台，从而轻松地并排分析结果。例如，要比较缓存节点引用与缓存节点样式引用的效果，只需编写实现代码并插入计时代码即可：
 
-```
+```javascript
 console.time("cache style");
 for (var style = document.getElementById("box").style,
         i = 0;
@@ -6117,45 +5983,41 @@ console.timeEnd("cache style");
 
 控制台 API 为程序员提供了在不同层次上植入分析代码的灵活性，并将结果整合到报告中，可以通过多种有趣的方式进行分析。
 
-* * *
-
 ### 注意
 
 点击某个函数会在源文件上下文中显示该函数。这对于匿名或名称模糊的函数尤其有用。
-
-* * *
 
 ### 网络面板
 
 在遇到性能问题时，通常最好退一步审视代码，从更宏观的角度观察。Firebug 在网络面板中提供了网络资源的视图（图 10-3）。该面板可视化了脚本与其他资源之间的停顿，从而更深入地了解脚本对其他文件加载以及整个页面的影响。
 
-![Firebug 网络面板](img/00049.jpeg)图 10-3. Firebug 网络面板
+![Firebug 网络面板](img/00049.jpeg)
 
-每个资源旁边的彩色条将加载生命周期分解为各个阶段（DNS 查找、等待响应等）。第一条垂直线（显示为蓝色）表示页面的 `DOMContentLoaded` 事件已触发。该事件表明页面的 DOM 树已解析并准备就绪。第二条垂直线（红色）表示窗口的 `load` 事件已触发，这意味着 DOM 已就绪且所有外部资源已完成加载。这有助于了解解析和执行所花费的时间与页面渲染时间的对比。
+图 10-3. Firebug 网络面板
+
+每个资源旁边的彩色条将加载生命周期分解为各个阶段（DNS 查找、等待响应等）。第一条垂直线（显示为蓝色）表示页面的`DOMContentLoaded`事件已触发。该事件表明页面的 DOM 树已解析并准备就绪。第二条垂直线（红色）表示窗口的`load`事件已触发，这意味着 DOM 已就绪且所有外部资源已完成加载。这有助于了解解析和执行所花费的时间与页面渲染时间的对比。
 
 如图所示，有许多脚本正在下载。根据时间线，每个脚本似乎都在等待前一个脚本完成后才开始下一个请求。提高加载性能的最简单优化是减少请求数量，尤其是脚本和样式表请求，因为它们会阻塞其他资源和页面渲染。在可能的情况下，将所有脚本合并到一个文件中，以最小化请求总数。这也适用于样式表和图片。
 
 ## Internet Explorer 开发者工具
 
-从版本 8 开始，Internet Explorer 提供了一个包含分析器的开发工具包。该工具包内置于 IE 8 中，因此无需额外下载或安装。与 Firebug 类似，IE 分析器包含函数分析功能，并提供详细报告，包括调用次数、花费时间和其他数据点。它还增加了以调用树形式查看报告、分析原生函数以及导出分析数据的功能。虽然缺少网络分析器，但可以使用诸如 Fiddler 之类的通用工具来补充分析器，本章后面会介绍 Fiddler。更多详情请参见 [`msdn.microsoft.com/en-us/library/dd565628(VS.85).aspx`](http://msdn.microsoft.com/en-us/library/dd565628(VS.85).aspx)。
+从版本 8 开始，Internet Explorer 提供了一个包含分析器的开发工具包。该工具包内置于 IE 8 中，因此无需额外下载或安装。与 Firebug 类似，IE 分析器包含函数分析功能，并提供详细报告，包括调用次数、花费时间和其他数据点。它还增加了以调用树形式查看报告、分析原生函数以及导出分析数据的功能。虽然缺少网络分析器，但可以使用诸如 Fiddler 之类的通用工具来补充分析器，本章后面会介绍 Fiddler。更多详情请参见[`msdn.microsoft.com/en-us/library/dd565628(VS.85).aspx`](http://msdn.microsoft.com/en-us/library/dd565628(VS.85).aspx)。
 
 IE 8 的分析器可以在开发者工具（工具 → 开发者工具）中找到。按下“开始分析”按钮后，所有后续的 JavaScript 活动都会被监控和分析。点击“停止分析”（同一按钮，新标签）会停止分析器并生成新报告。默认情况下，F5 启动分析器，Shift+F5 结束分析。
 
 报告提供了每个调用的时间和持续时间的平面函数视图，以及显示函数调用栈的树形视图。树形视图允许你遍历调用栈并识别慢速代码路径（参见图 10-4）。当函数没有名称时，IE 分析器会使用变量名。
 
-![IE 8 分析器调用树](img/00004.jpeg)图 10-4. IE 8 分析器调用树
+![IE 8 分析器调用树](img/00004.jpeg)
 
-* * *
+图 10-4. IE 8 分析器调用树
 
 ### 注意
 
 右键单击分析结果表格可以添加和删除列。
 
-* * *
+IE 分析器还提供了对原生 JavaScript 对象方法的洞察。这使你除了实现代码之外，还可以分析原生对象，从而可以比较`String::indexOf`与`RegExp::test`来确定 HTML 元素的`className`属性是否以某个值开头：
 
-IE 分析器还提供了对原生 JavaScript 对象方法的洞察。这使你除了实现代码之外，还可以分析原生对象，从而可以比较 `String::indexOf` 与 `RegExp::test` 来确定 HTML 元素的 `className` 属性是否以某个值开头：
-
-```
+```javascript
 var count = 10000,
     element = document.createElement('div'),
     result, i, time;
@@ -6177,11 +6039,13 @@ for (i = 0; i < count; i++) {
 
 如图 10-5 所示，这些不同方法之间的时间差异很大。请注意，每次调用的平均时间为零。原生方法通常是最不需要优化的地方，但在比较不同方法时，这可能是一个有趣的实验。同时要注意，由于数字很小，结果可能因舍入误差和系统内存波动而不确定。
 
-![原生方法的分析结果](img/00014.jpeg)图 10-5. 原生方法的分析结果
+![原生方法的分析结果](img/00014.jpeg)
 
-尽管 IE 分析器目前不提供 JavaScript API，但它确实有一个具有日志记录功能的控制台 API。可以利用这一点将 Firebug 的 `console.time()` 和 `console.timeEnd()` 函数移植过来，从而在 IE 中运行相同的测试。
+图 10-5. 原生方法的分析结果
 
-```
+尽管 IE 分析器目前不提供 JavaScript API，但它确实有一个具有日志记录功能的控制台 API。可以利用这一点将 Firebug 的`console.time()`和`console.timeEnd()`函数移植过来，从而在 IE 中运行相同的测试。
+
+```javascript
 if (console && !console.time) {
     console._timers = {};
     console.time = function(name) {
@@ -6194,17 +6058,11 @@ if (console && !console.time) {
 }
 ```
 
-* * *
-
 ### 注意
 
-IE 8 的分析结果可以使用“导出数据”按钮以 `*.csv` 格式导出。
-
-* * *
+IE 8 的分析结果可以使用“导出数据”按钮以`*.csv`格式导出。
 
 ## Safari Web Inspector
-
-
 
 Safari 从版本 4 开始，在其捆绑的 Web 检查器中提供了分析器以及其他工具，包括网络分析器。与 Internet Explorer 开发者工具类似，Web 检查器会对原生函数进行分析，并提供可展开的调用树。它还包含一个类似 Firebug 的控制台 API，具有分析功能，以及一个用于网络分析的资源面板。
 
@@ -6214,31 +6072,25 @@ Safari 从版本 4 开始，在其捆绑的 Web 检查器中提供了分析器�
 
 点击“分析”按钮会弹出分析面板（图 10-6）。点击“启用分析”按钮以启用分析面板。要开始分析，请点击“开始分析”按钮（右下角的深色圆圈）。点击“停止分析”（同一按钮，此时变为红色）即可停止分析并显示报告。
 
-* * *
-
 ### 注意
 
 你也可以按 Option-Shift-Command-P 来开始/停止分析。
 
-* * *
+![Safari Web 检查器分析面板](img/00025.jpeg)
 
-![Safari Web 检查器分析面板](img/00025.jpeg)图 10-6. Safari Web 检查器分析面板
+图 10-6. Safari Web 检查器分析面板
 
-Safari 模拟了 Firebug 的 JavaScript API（`console.profile()`、`console.time()` 等），以便以编程方式开始和停止分析。其功能与 Firebug 相同，允许你为报告和计时命名，以便更好地管理分析。
-
-* * *
+Safari 模拟了 Firebug 的 JavaScript API（`console.profile()`、`console.time()`等），以便以编程方式开始和停止分析。其功能与 Firebug 相同，允许你为报告和计时命名，以便更好地管理分析。
 
 ### 注意
 
-也可以向 `console.profileEnd()` 传递一个名称。当运行多个分析时，这将停止特定的分析。
-
-* * *
+也可以向`console.profileEnd()`传递一个名称。当运行多个分析时，这将停止特定的分析。
 
 Safari 提供了分析函数的“重（自底向上）”视图和调用栈的“树（自顶向下）”视图。默认的“重”视图首先对最慢的函数进行排序，并允许向上遍历调用栈，而“树”视图则允许从最外层的调用者向下深入到代码的执行路径。分析调用树有助于发现与一个函数如何调用另一个函数相关的更微妙的性能问题。
 
-Safari 还增加了对 `displayName` 属性的支持，用于分析目的。这提供了一种为匿名函数添加名称的方法，这些名称将用于报告输出。考虑以下赋值给变量 `foo` 的函数：
+Safari 还增加了对`displayName`属性的支持，用于分析目的。这提供了一种为匿名函数添加名称的方法，这些名称将用于报告输出。考虑以下赋值给变量`foo`的函数：
 
-```
+```javascript
 var foo = function() {
     return 'foo!';
 };
@@ -6250,46 +6102,56 @@ console.profileEnd();
 
 如图 10-7 所示，由于缺少函数名称，生成的分析报告难以理解。点击函数右侧的 URL 可在源代码上下文中查看该函数。
 
-![Web 检查器分析面板显示匿名函数](img/00036.jpeg)图 10-7. Web 检查器分析面板显示匿名函数
+![Web 检查器分析面板显示匿名函数](img/00036.jpeg)
 
-添加 `displayName` 将使报告变得可读。这也允许使用更具描述性的名称，而不限于有效的函数名称。
+图 10-7. Web 检查器分析面板显示匿名函数
 
-```
+添加`displayName`将使报告变得可读。这也允许使用更具描述性的名称，而不限于有效的函数名称。
+
+```javascript
 var foo = function() {
     return 'foo!';
 };
 foo.displayName = '我是 foo';
 ```
 
-如图 10-8 所示，`displayName` 现在取代了匿名函数。然而，此属性仅在基于 Webkit 的浏览器中可用。它还需要重构真正的匿名函数，但这并不推荐。如前所述，内联添加名称是命名匿名函数的最简单方法，并且这种方法适用于其他分析器：
+如图 10-8 所示，`displayName`现在取代了匿名函数。然而，此属性仅在基于 Webkit 的浏览器中可用。它还需要重构真正的匿名函数，但这并不推荐。如前所述，内联添加名称是命名匿名函数的最简单方法，并且这种方法适用于其他分析器：
 
-```
+```javascript
 var foo = function foo() {
     return 'foo!';
 };
 ```
 
-![Web 检查器分析面板显示 displayName](img/00046.jpeg)图 10-8. Web 检查器分析面板显示 displayName
+![Web 检查器分析面板显示 displayName](img/00046.jpeg)
+
+图 10-8. Web 检查器分析面板显示 displayName
 
 ### 资源面板
 
 资源面板帮助你更好地理解 Safari 如何加载和解析脚本以及其他外部资源。与 Firebug 的网络面板类似，它提供了资源的视图，显示请求何时发起以及耗时多久。资源按颜色编码以增强可读性。Web 检查器的资源面板将大小图表与时间分开，减少了视觉干扰（参见图 10-9）。
 
-![Safari 资源面板](img/00001.jpeg)图 10-9. Safari 资源面板
+![Safari 资源面板](img/00001.jpeg)
+
+图 10-9. Safari 资源面板
 
 请注意，与某些浏览器不同，Safari 4 并行加载脚本且不阻塞。Safari 通过确保脚本按正确顺序执行来绕过阻塞要求。请记住，这仅适用于最初嵌入在 HTML 中的脚本（在加载时）；动态添加的脚本既不会阻塞加载也不会阻塞执行（参见第 1 章）。
 
 ## Chrome 开发者工具
 
-Google 也为其 Chrome 浏览器提供了一套开发工具，其中部分基于 WebKit/Safari Web 检查器。除了用于监控网络流量的资源面板外，Chrome 还增加了所有页面和网络事件的时间线视图。Chrome 包含了 Web 检查器的分析面板，并增加了获取当前内存“堆”快照的功能。与 Safari 一样，Chrome 对原生函数进行分析，并实现了 Firebug 控制台 API，包括 `console.profile` 和 `console.time`。
+Google 也为其 Chrome 浏览器提供了一套开发工具，其中部分基于 WebKit/Safari Web 检查器。除了用于监控网络流量的资源面板外，Chrome 还增加了所有页面和网络事件的时间线视图。Chrome 包含了 Web 检查器的分析面板，并增加了获取当前内存“堆”快照的功能。与 Safari 一样，Chrome 对原生函数进行分析，并实现了 Firebug 控制台 API，包括`console.profile`和`console.time`。
 
 如图 10-10 所示，时间线面板提供了所有活动的概览，分为“加载”、“脚本”或“渲染”三类。这使得开发者能够快速聚焦于系统中最慢的方面。某些事件包含其他事件行的子树，可以在记录视图中展开或隐藏以获取更多或更少的细节。
 
-![Chrome 开发者工具时间线面板](img/00011.jpeg)图 10-10. Chrome 开发者工具时间线面板
+![Chrome 开发者工具时间线面板](img/00011.jpeg)
+
+图 10-10. Chrome 开发者工具时间线面板
 
 点击 Chrome 分析面板上的眼睛图标可获取当前 JavaScript 内存堆的快照（图 10-11）。结果按构造函数分组，并可展开以显示每个实例。可以使用分析面板底部的“与快照比较”选项来比较快照。+/- 计数和大小列显示了快照之间的差异。
 
-![Chrome 开发者工具 JavaScript 堆快照](img/00021.jpeg)图 10-11. Chrome 开发者工具 JavaScript 堆快照
+![Chrome 开发者工具 JavaScript 堆快照](img/00021.jpeg)
+
+图 10-11. Chrome 开发者工具 JavaScript 堆快照
 
 ## 脚本阻塞
 
@@ -6299,21 +6161,27 @@ Google 也为其 Chrome 浏览器提供了一套开发工具，其中部分基�
 
 ## 页面速度
 
+Page Speed 是一款最初为 Google 内部使用而开发的工具，后来作为 Firebug 插件发布。与 Firebug 的“网络”面板类似，它能提供网页上正在加载的资源信息。不过，除了加载时间和 HTTP 状态之外，它还能显示解析和执行 JavaScript 所花费的时间，识别可延迟的脚本，并报告未被使用的函数。这些宝贵信息有助于确定需要进一步调查、优化以及可能重构的区域。请访问[`code.google.com/speed/page-speed/`](http://code.google.com/speed/page-speed/)获取安装说明及其他产品详情。
 
 
-Page Speed 是一款最初为 Google 内部使用而开发的工具，后来作为 Firebug 插件发布。与 Firebug 的“网络”面板类似，它能提供网页上正在加载的资源信息。不过，除了加载时间和 HTTP 状态之外，它还能显示解析和执行 JavaScript 所花费的时间，识别可延迟的脚本，并报告未被使用的函数。这些宝贵信息有助于确定需要进一步调查、优化以及可能重构的区域。请访问 [`code.google.com/speed/page-speed/`](http://code.google.com/speed/page-speed/) 获取安装说明及其他产品详情。
 
-Page Speed 面板上的 `Profile Deferrable JavaScript` 选项可以识别出可延迟或拆分的文件，以便减少初始加载的数据量。通常，渲染初始视图只需要页面上一小部分脚本。在 图 10-12 中，你可以看到大部分加载的代码在窗口的 `load` 事件触发之前并未被使用。延迟那些非立即使用的代码，可以让初始页面加载得更快。脚本和其他资源可以在后续按需选择性加载。
+Page Speed 面板上的 `Profile Deferrable JavaScript` 选项可以识别出可延迟或拆分的文件，以便减少初始加载的数据量。通常，渲染初始视图只需要页面上一小部分脚本。在图 10-12 中，你可以看到大部分加载的代码在窗口的 `load` 事件触发之前并未被使用。延迟那些非立即使用的代码，可以让初始页面加载得更快。脚本和其他资源可以在后续按需选择性加载。
 
-![Page Speed 可延迟 JavaScript 摘要](img/00031.jpeg)图 10-12. Page Speed 可延迟 JavaScript 摘要
+![Page Speed 可延迟 JavaScript 摘要](img/00031.jpeg)
+
+图 10-12. Page Speed 可延迟 JavaScript 摘要
 
 Page Speed 还在 Firebug 中添加了一个“Page Speed 活动”面板。该面板与 Firebug 自带的“网络”面板类似，但提供了每个请求更细粒度的数据。其中包括每个脚本生命周期的分解，包括解析和执行阶段，详细说明了脚本之间的间隔。这有助于确定需要进行性能分析和可能重构的区域。如图例所示，图 10-13 用红色显示解析脚本所花费的时间，用蓝色显示执行时间。较长的执行时间可能值得用性能分析器进一步仔细检查。
 
-![Page Speed 解析和执行时间](img/00043.jpeg)图 10-13. Page Speed 解析和执行时间
+![Page Speed 解析和执行时间](img/00043.jpeg)
+
+图 10-13. Page Speed 解析和执行时间
 
 在页面渲染完成之前，可能会花费大量时间解析和初始化那些尚未使用的脚本。Page Speed 活动面板还可以提供一份报告，显示哪些函数从未被调用，以及哪些函数可能可以延迟，依据是它们被解析的时间与首次被调用的时间之间的对比（图 10-14）。
 
-![可延迟和未调用函数的报告](img/00054.jpeg)图 10-14. 可延迟和未调用函数的报告
+![可延迟和未调用函数的报告](img/00054.jpeg)
+
+图 10-14. 可延迟和未调用函数的报告
 
 这些报告显示了初始化那些从未被调用或可以稍后调用的函数所花费的时间。考虑重构代码，移除未调用的函数，并延迟那些在初始渲染和设置阶段不需要的代码。
 
@@ -6325,23 +6193,23 @@ Fiddler 是一个 HTTP 调试代理，用于检查网络传输中的资源，并
 
 与 Firebug、Web Inspector 和 Page Speed 类似，Fiddler 提供了一个瀑布图，可以深入了解哪些资源加载时间更长，以及哪些资源可能影响其他资源的加载（图 10-15）。
 
-![Fiddler 瀑布图](img/00008.jpeg)图 10-15. Fiddler 瀑布图
+![Fiddler 瀑布图](img/00008.jpeg)
+
+图 10-15. Fiddler 瀑布图
 
 从左侧面板中选择一个或多个资源，它们会显示在主视图中。单击“时间线”选项卡可以可视化网络传输中的资源。此视图显示了每个资源相对于其他资源的时间，使你可以研究不同加载策略的效果，并更清楚地看到何时有阻塞。
 
 “统计”选项卡显示了所有选定资源的实际性能的详细视图——提供 DNS 查找和 TCP/IP 连接时间的洞察——以及所请求的各种资源的大小和类型的细分（图 10-16）。
 
-![Fiddler 统计选项卡](img/00018.jpeg)图 10-16. Fiddler 统计选项卡
+![Fiddler 统计选项卡](img/00018.jpeg)
+
+图 10-16. Fiddler 统计选项卡
 
 这些数据有助于你决定哪些区域需要进一步调查。例如，较长的 DNS 查找和 TCP/IP 连接时间可能表明网络存在问题。资源图表可以清楚地显示哪些类型的资源构成了页面加载的大部分内容，从而识别出可能适合延迟加载或性能分析（对于脚本而言）的候选对象。
-
-* * *
 
 ### 注意
 
 由于 Fiddler 仅适用于 Windows，因此值得一提的是一个名为 Charles Proxy 的共享软件产品，它同时适用于 Windows 和 Mac。请访问 [`www.charlesproxy.com/`](http://www.charlesproxy.com/) 获取免费试用版和详细文档。
-
-* * *
 
 ## YSlow
 
@@ -6351,18 +6219,19 @@ YSlow 对页面外部资产的加载进行评分，提供页面性能报告，�
 
 图 10-17 显示了 YSlow 对已分析网页的默认视图。它会提出优化页面加载和渲染速度的建议。每个评分都包含一个详细视图，其中包含附加信息和规则原理的解释。
 
-![YSlow：所有结果](img/00028.jpeg)图 10-17. YSlow：所有结果
+![YSlow：所有结果](img/00028.jpeg)
 
-通常，提高总体评分将导致脚本加载和执行速度更快。图 10-18 显示了按 JAVASCRIPT 选项过滤后的结果，并附带了一些关于如何优化脚本交付和执行的建议。
+图 10-17. YSlow：所有结果
 
-![YSlow：JavaScript 结果](img/00040.jpeg)图 10-18. YSlow：JavaScript 结果
+通常，提高总体评分将导致脚本加载和执行速度更快。图 10-18 显示了按 `JAVASCRIPT` 选项过滤后的结果，并附带了一些关于如何优化脚本交付和执行的建议。
+
+![YSlow：JavaScript 结果](img/00040.jpeg)
+
+图 10-18. YSlow：JavaScript 结果
 
 在解释结果时，请记住可能存在需要考虑的例外情况。这些可能包括决定何时对脚本进行多次请求与合并为单个请求，以及哪些脚本或函数应延迟到页面渲染之后。
 
 ## dynaTrace Ajax 版
-
-
-
 
 dynaTrace 是一款强大的 Java/.NET 性能诊断工具，其开发者发布了一个“Ajax 版本”，用于测量 Internet Explorer 的性能（Firefox 版本即将推出）。这款免费工具提供端到端的性能分析，涵盖网络、页面渲染、运行时脚本以及 CPU 使用率。报告将所有方面整合在一起，方便您快速定位可能存在的瓶颈。结果可以导出，以便进一步剖析和分析。如需下载，请访问 [`ajax.dynatrace.com/pages/`](http://ajax.dynatrace.com/pages/)。
 
@@ -6370,102 +6239,128 @@ dynaTrace 是一款强大的 Java/.NET 性能诊断工具，其开发者发布�
 
 图 10-20 所示的网络视图提供了高度详细的报告，分解了网络生命周期中每个环节所花费的时间，包括 DNS 查找、连接和服务器响应时间。这有助于您定位网络中可能需要调整的具体区域。报告下方的面板显示了请求和响应头（左侧）以及实际的请求响应（右侧）。
 
-![dynaTrace Ajax Edition: 摘要报告](img/00050.jpeg)图 10-19. dynaTrace Ajax Edition: 摘要报告
+![dynaTrace Ajax Edition: 摘要报告](img/00050.jpeg)
+
+图 10-19. dynaTrace Ajax Edition: 摘要报告
 
 选择 JavaScript 触发器视图会显示跟踪期间触发的每个事件的详细报告（参见图 10-21）。从这里，您可以深入查看特定事件（`load`、`click`、`mouseover` 等），以找到运行时性能问题的根本原因。
 
 此视图包括事件可能触发的任何动态（Ajax）请求，以及作为请求结果可能执行的任何脚本 `callback`。这有助于您更好地理解用户感知的整体性能，由于 Ajax 的异步特性，这些性能在脚本分析报告中可能并不明显。
 
-![dynaTrace Ajax Edition: 网络报告](img/00005.jpeg)图 10-20. dynaTrace Ajax Edition: 网络报告![dynaTrace Ajax Edition PurePaths 面板](img/00015.jpeg)图 10-21. dynaTrace Ajax Edition PurePaths 面板
+![dynaTrace Ajax Edition: 网络报告](img/00005.jpeg)
+
+图 10-20. dynaTrace Ajax Edition: 网络报告
+
+![dynaTrace Ajax Edition PurePaths 面板](img/00015.jpeg)
+
+图 10-21. dynaTrace Ajax Edition PurePaths 面板
 
 ## 摘要
 
 当网页或应用程序开始感觉缓慢时，分析通过网络传输的资源并分析运行中的脚本，可以让您将优化工作集中在最需要的地方。
 
-*   使用网络分析器来识别脚本和其他页面资源加载中的瓶颈；这有助于确定是否需要延迟脚本或进行分析。
-*   尽管传统观点认为应尽量减少 HTTP 请求数量，但尽可能延迟脚本可以让页面更快渲染，为用户提供更好的整体体验。
-*   使用分析器来识别脚本执行中的缓慢区域，检查每个函数花费的时间、函数被调用的次数以及调用栈本身，这些都能为优化工作的重点提供大量线索。
-*   虽然花费的时间和调用次数通常是最有价值的数据，但更仔细地观察函数的调用方式可能会发现其他优化候选。
+- 使用网络分析器来识别脚本和其他页面资源加载中的瓶颈；这有助于确定是否需要延迟脚本或进行分析。
+- 尽管传统观点认为应尽量减少 HTTP 请求数量，但尽可能延迟脚本可以让页面更快渲染，为用户提供更好的整体体验。
+- 使用分析器来识别脚本执行中的缓慢区域，检查每个函数花费的时间、函数被调用的次数以及调用栈本身，这些都能为优化工作的重点提供大量线索。
+- 虽然花费的时间和调用次数通常是最有价值的数据，但更仔细地观察函数的调用方式可能会发现其他优化候选。
 
 这些工具有助于揭开现代代码必须运行的通常不友好的编程环境的神秘面纱。在开始优化之前使用它们，将确保开发时间花在解决正确的问题上。
 
 ## 索引
 
-* * *
-
 ### 关于数字索引的说明
 
 索引条目中的链接显示为该条目所在的章节标题。由于某些章节有多个索引标记，一个条目可能包含指向同一章节的多个链接。点击任何链接都会直接跳转到标记所在的文本位置。
 
-* * *
-
 ### 符号
 
 `+`（加号）运算符，字符串拼接–Firefox 与编译时折叠
+
 `+=`（加等于）运算符，字符串拼接–Firefox 与编译时折叠
 
 ### A
 
 激活对象，作用域链与标识符解析
+
 `add()` 函数，作用域链与标识符解析
+
 `addEventListener()` 函数，避免重复工作
+
 敏捷 JavaScript 构建流程，敏捷 JavaScript 构建流程
+
 Ajax（异步 JavaScript 与 XML），Ajax–摘要
 
 > 数据格式，数据格式–数据格式结论
+
 > 数据传输，数据传输–信标
+
 > 性能，Ajax 性能指南–了解 Ajax 库的局限性
 
 算法，算法与流程控制–摘要
 
 > 条件语句，条件语句–查找表
+
 > 循环，循环–基于函数的迭代
+
 > 递归，递归–记忆化
 
 交替
 
 > 与回溯，交替与回溯
+
 > 性能，提高正则表达式效率的更多方法
 
 动画，元素与流，将元素移出动画流
+
 匿名函数
 
 > 关于，匿名函数
+
 > YUI 分析器，YUI 分析器
 
 Apache Ant，Apache Ant，部署 JavaScript 资源
+
 Apache Web 服务器，`ExpiresDefault` 指令，缓存 JavaScript 文件
+
 API
 
 > 控制台 API：Firebug，控制台 API
+
 > CSS 选择器，选择器 API
+
 > DOM，浏览器世界中的 DOM
 
 数组项，定义，数据访问
+
 数组合并，数组合并
+
 数组处理，使用定时器，使用定时器处理数组
+
 `array.join()` 方法，字符串拼接
+
 数组
 
 > 与 `HTMLCollection` 对象比较，HTML 集合
+
 > 双重求值，使用对象/数组字面量
+
 > for-in 循环，循环性能
 
 `assignEvents()` 函数，闭包、作用域与内存
+
 异步 JavaScript 与 XML（参见 Ajax）
+
 原子分组，模拟，使用前瞻和后向引用模拟原子分组
 
 ### B
 
 后向引用，模拟原子分组，使用前瞻和后向引用模拟原子分组
+
 回溯，理解回溯–从糟糕到更糟
 
 > 关于，理解回溯
+
 > 失控回溯，失控回溯–从糟糕到更糟
-
-
-
-
 
 批量 DOM 更改，批量 DOM 更改信标，发送数据，信标基准测试，正则表达式，基准测试说明最佳实践（参见编程实践）位掩码，位运算符位运算符，位运算符–位运算符阻塞脚本，脚本阻塞 BOM（浏览器对象模型），对象成员，对象成员括号表示法与点表示法，嵌套成员浏览器，加载与执行
 
@@ -6509,10 +6404,6 @@ API
 
 数据类型：函数、方法和属性，对象成员`Date` 对象，JavaScript 性能分析延迟脚本，延迟脚本委托，事件，事件委托部署 JavaScript 资源，部署 JavaScript 资源`displayName` 属性，分析面板 do-while 循环，循环类型文档片段，批量 DOM 更改，批量 DOM 更改 DOM（文档对象模型），对象成员，对象成员 DOM 脚本编程，DOM 脚本编程–总结
 
-
-
-
-
 > 访问文档结构，遍历 DOM–选择器 API 浏览器，浏览器世界中的 DOM 克隆节点，克隆节点 事件委托，事件委托 HTML 集合，HTML 集合–访问集合元素时的局部变量 `innerHTML`，innerHTML 与 DOM 方法–innerHTML 与 DOM 方法 重绘与回流，重绘与回流–IE 与 :hover
 
 点号表示法与方括号表示法，嵌套成员 双重求值，避免双重求值–避免双重求值 下载，加载外部文件
@@ -6549,279 +6440,466 @@ Firebug，Firebug–网络面板 Firefox
 
 流（参见回流）刷新渲染树更改，排队与刷新渲染树更改 折叠，编译时折叠与 Firefox，Firefox 与编译时折叠 for 循环，循环类型 for-in 循环，循环类型，循环性能 `forEach()` 方法，基于函数的迭代 `Function()` 构造函数，避免双重求值 函数，拆分任务
 
-> （另请参阅方法；语句）`add()` 函数，作用域链与标识符解析 `addEventListener()` 函数，不要重复工作 匿名函数，YUI Profiler，匿名函数 `assignEvents()` 函数，闭包、作用域与内存 缓存对象成员值，缓存对象成员值 `console.time()` 函数，控制台 API 数据类型，对象成员 `eval()` 函数，动态作用域，JSON，避免双重求值 `execute()` 函数，动态作用域 `factorial()` 函数，递归模式，记忆化 `initUI()` 函数，标识符解析性能 `loadScript()` 函数，推荐的非阻塞模式 `mergeSort()` 函数，迭代 `multistep()` 函数，拆分任务 `processArray()` 函数，使用定时器处理数组 `profileEnd()` 函数，控制台 API `removeEventListener()` 函数，不要重复工作 `setInterval()` 函数，定时器基础，避免双重求值 `setTimeout()` 函数，定时器基础，避免双重求值 任务，拆分任务 执行中的变量，作用域链与标识符解析
+
+
+> （另请参阅方法；语句）
+>
+> - `add()` 函数，作用域链与标识符解析
+> - `addEventListener()` 函数，不要重复工作
+> - 匿名函数，YUI Profiler
+> - 匿名函数，`assignEvents()` 函数，闭包、作用域与内存
+> - 缓存对象成员值，缓存对象成员值
+> - `console.time()` 函数，控制台 API
+> - 数据类型，对象成员
+> - `eval()` 函数，动态作用域，JSON，避免双重求值
+> - `execute()` 函数，动态作用域
+> - `factorial()` 函数，递归模式，记忆化
+> - `initUI()` 函数，标识符解析性能
+> - `loadScript()` 函数，推荐的非阻塞模式
+> - `mergeSort()` 函数，迭代
+> - `multistep()` 函数，拆分任务
+> - `processArray()` 函数，使用定时器处理数组
+> - `profileEnd()` 函数，控制台 API
+> - `removeEventListener()` 函数，不要重复工作
+> - `setInterval()` 函数，定时器基础，避免双重求值
+> - `setTimeout()` 函数，定时器基础，避免双重求值
+> - 任务，拆分任务
+> - 执行中的变量，作用域链与标识符解析
 
 ### G
 
-
-
-
-使用 XHR 时的 GET 与 POST，使用 XHR 时的 POST 与 GET 全局变量，性能，标识符解析性能 Google Chrome 开发者工具，Chrome 开发者工具 Google Closure Compiler，JavaScript 压缩脚本分组，脚本分组 gzip 压缩，JavaScript 压缩，JavaScript 压缩
+- 使用 XHR 时的 GET 与 POST，使用 XHR 时的 POST 与 GET
+- 全局变量，性能，标识符解析性能
+- Google Chrome 开发者工具，Chrome 开发者工具
+- Google Closure Compiler，JavaScript 压缩
+- 脚本分组，脚本分组
+- gzip 压缩，JavaScript 压缩，JavaScript 压缩
 
 ### H
 
-`handleClick()` 方法，浏览器 UI 线程`hasOwnProperty()` 方法，原型头部
-
-> Expires 头部，设置 HTTP 头部 HTTP 头部，设置 HTTP 头部
-
-:hover，IE，IE 与 :hoverHTML 集合
-
-> 昂贵的集合，昂贵的集合局部变量，访问集合元素时的局部变量
-
-HTML，数据格式，HTMLHTTP 头部，Ajax，设置 HTTP 头部
+- `handleClick()` 方法，浏览器 UI 线程
+- `hasOwnProperty()` 方法，原型
+- 头部
+  - `Expires` 头部，设置 HTTP 头部
+  - HTTP 头部，设置 HTTP 头部
+- `:hover`，IE，IE 与 `:hover`
+- HTML 集合
+  - 昂贵的集合，昂贵的集合
+  - 局部变量，访问集合元素时的局部变量
+- HTML，数据格式，HTML
+- HTTP 头部，Ajax，设置 HTTP 头部
 
 ### I
 
-幂等操作，使用 XHR 时的 POST 与 GET 标识符解析，作用域，作用域链与标识符解析–标识符解析性能 IE（Internet Explorer）
-
-> 数组合并，数组合并动态脚本元素，动态脚本元素`nextSibling`，遍历 DOM 重排，IE 与 :hover 重复操作，多长时间算太长？时间限制，浏览器限制使用，Internet Explorer 开发者工具 XHR 对象，了解 Ajax 库的限制
-
-if-else
-
-> 优化，优化 if-else 与 switch 对比，if-else 与 switch 对比
-
-`initUI()` 函数，标识符解析性能注入非阻塞脚本，XMLHttpRequest 脚本注入`innerHTML`
-
-> 数据格式，HTML 与 DOM 对比，innerHTML 与 DOM 方法–innerHTML 与 DOM 方法
-
-接口（参见用户界面）Internet Explorer（参见 IE）互操作性，JSON，应该使用 JSON 吗？iPhone（参见 Safari）迭代
-
-> 基于函数的迭代，基于函数的迭代循环性能，减少每次迭代的工作量–减少迭代次数递归，迭代
+- 幂等操作，使用 XHR 时的 POST 与 GET
+- 标识符解析，作用域，作用域链与标识符解析–标识符解析性能
+- IE（Internet Explorer）
+  - 数组合并，数组合并
+  - 动态脚本元素，动态脚本元素
+  - `nextSibling`，遍历 DOM
+  - 重排，IE 与 `:hover`
+  - 重复操作，多长时间算太长？
+  - 时间限制，浏览器限制
+  - 使用，Internet Explorer 开发者工具
+  - XHR 对象，了解 Ajax 库的限制
+- `if-else`
+  - 优化，优化
+  - `if-else` 与 `switch` 对比，`if-else` 与 `switch` 对比
+- `initUI()` 函数，标识符解析性能
+- 注入非阻塞脚本，XMLHttpRequest 脚本注入
+- `innerHTML`
+  - 数据格式，HTML
+  - `innerHTML` 与 DOM 对比，`innerHTML` 与 DOM 方法
+  - `innerHTML` 与 DOM 方法
+- 接口（参见用户界面）
+- Internet Explorer（参见 IE）
+- 互操作性，JSON，应该使用 JSON 吗？
+- iPhone（参见 Safari）
+- 迭代
+  - 基于函数的迭代，基于函数的迭代
+  - 循环性能，减少每次迭代的工作量–减少迭代次数
+  - 递归，迭代
 
 ### J
 
-JavaScript 文件
-
-> 缓存，缓存 JavaScript 文件合并，合并 JavaScript 文件预处理，预处理 JavaScript 文件
-
-JavaScript 命名空间，嵌套属性，缓存对象成员值 JavaScript 性能分析，JavaScript 性能分析数组合并，数组合并 jQuery 库，gzip 压缩，JavaScript 压缩 JSMin，JavaScript 压缩 JSON（JavaScript 对象表示法），数据格式，JSON–应该使用 JSON 吗？JSON-P（填充式 JSON），JSON-P
+- JavaScript 文件
+  - 缓存，缓存
+  - JavaScript 文件合并，合并 JavaScript 文件
+  - 预处理，预处理 JavaScript 文件
+- JavaScript 命名空间，嵌套属性，缓存对象成员值
+- JavaScript 性能分析，JavaScript 性能分析
+- 数组合并，数组合并
+- jQuery 库，gzip 压缩，JavaScript 压缩
+- JSMin，JavaScript 压缩
+- JSON（JavaScript 对象表示法），数据格式，JSON–应该使用 JSON 吗？
+- JSON-P（填充式 JSON），JSON-P
 
 ### L
 
-`$LAB.script()` 方法，LABjs 库`$LAB.wait()` 方法，LABjs 库 LABjs 库，加载 JavaScript，LABjs 库布局，缓存，缓存布局信息懒加载，懒加载 LazyLoad 库，加载 JavaScript，LazyLoad 库`length` 属性，昂贵的集合库
-
-> Ajax，了解 Ajax 库的限制 LABjs 库，LABjs 库 LazyLoad 库，LazyLoad 库
-
-限制
-
-> 调用栈大小限制，调用栈限制长时间运行脚本限制，浏览器限制
-
-字面值，定义，数据访问加载，加载外部文件
-
-> （另请参见 DOM 脚本；下载；非阻塞脚本；脚本）条件预加载，条件预加载 CSS 文件，LazyLoad 库外部文件，加载外部文件 JavaScript，推荐的非阻塞模式懒加载，懒加载脚本，资源面板
-
-`loadScript()` 函数，推荐的非阻塞模式局部变量
-
-> HTML 集合，访问集合元素时的局部变量性能，标识符解析性能，DOM 访问与修改
-
-长时间运行脚本限制，浏览器限制前瞻，模拟原子组，使用前瞻和反向引用模拟原子组查找表，查找表循环，循环–基于函数的迭代
-
-> 基于函数的迭代，基于函数的迭代使用 `console.time()` 测量时间，控制台 API 性能，循环性能–减少迭代次数类型，循环类型
+- `$LAB.script()` 方法，LABjs 库
+- `$LAB.wait()` 方法，LABjs 库
+- LABjs 库，加载 JavaScript，LABjs 库
+- 布局，缓存，缓存布局信息
+- 懒加载，懒加载
+- LazyLoad 库，加载 JavaScript，LazyLoad 库
+- `length` 属性，昂贵的集合
+- 库
+  - Ajax，了解 Ajax 库的限制
+  - LABjs 库，LABjs 库
+  - LazyLoad 库，LazyLoad 库
+- 限制
+  - 调用栈大小限制，调用栈限制
+  - 长时间运行脚本限制，浏览器限制
+- 字面值，定义，数据访问
+- 加载，加载外部文件
+  - （另请参见 DOM 脚本；下载；非阻塞脚本；脚本）
+  - 条件预加载，条件预加载
+  - CSS 文件，LazyLoad 库
+  - 外部文件，加载外部文件
+  - JavaScript，推荐的非阻塞模式
+  - 懒加载，懒加载
+  - 脚本，资源面板
+- `loadScript()` 函数，推荐的非阻塞模式
+- 局部变量
+  - HTML 集合，访问集合元素时的局部变量
+  - 性能，标识符解析性能，DOM 访问与修改
+- 长时间运行脚本限制，浏览器限制
+- 前瞻，模拟原子组，使用前瞻和反向引用模拟原子组
+- 查找表，查找表
+- 循环，循环
+  - 基于函数的迭代，基于函数的迭代
+  - 使用 `console.time()` 测量时间，控制台 API
+  - 性能，循环性能–减少迭代次数
+  - 类型，循环类型
 
 ### M
 
-数学常量和方法，列表，原生方法记忆化，递归，记忆化`mergeSort()` 函数，迭代消息事件，Worker 通信方法，原生方法
-
-
-
-
-
-> （另请参阅函数；对象成员；属性；语句）`Array.prototype.join` 方法，数组连接 `concat` 方法，`String.prototype.concat` 数据类型，对象成员 `forEach()` 方法，基于函数的迭代 `handleClick()` 方法，浏览器 UI 线程 `hasOwnProperty()` 方法，原型 `$LAB.script()` 方法，LABjs 库 `$LAB.wait()` 方法，LABjs 库 数学方法，原生方法 原生方法，原生方法 `postMessage()` 方法，Worker 通信 `querySelector()` 方法，原生方法 `querySelectorAll()` 方法，选择器 API，原生方法 字符串连接，字符串连接 对象方法中的 this，缓存对象成员值 `toString()` 方法，原型 `trim` 方法，字符串修剪
-
-压缩，JavaScript 压缩 `multistep()` 函数，拆分任务 MXHR（多部分 XHR），多部分 XHR–多部分 XHR
+- 数学常量和方法，列表，原生方法
+- 记忆化，递归，记忆化
+- `mergeSort()` 函数，迭代
+- 消息事件，Worker 通信
+- 方法，原生方法
+  > （另请参阅函数；对象成员；属性；语句）
+  >
+  > - `Array.prototype.join` 方法，数组连接
+  > - `concat` 方法，`String.prototype.concat`
+  > - 数据类型，对象成员
+  > - `forEach()` 方法，基于函数的迭代
+  > - `handleClick()` 方法，浏览器 UI 线程
+  > - `hasOwnProperty()` 方法，原型
+  > - `$LAB.script()` 方法，LABjs 库
+  > - `$LAB.wait()` 方法，LABjs 库
+  > - 数学方法，原生方法
+  > - 原生方法，原生方法
+  > - `postMessage()` 方法，Worker 通信
+  > - `querySelector()` 方法，原生方法
+  > - `querySelectorAll()` 方法，选择器 API，原生方法
+  > - 字符串连接，字符串连接
+  > - 对象方法中的 `this`，缓存对象成员值
+  > - `toString()` 方法，原型
+  > - `trim` 方法，字符串修剪
+- 压缩，JavaScript 压缩
+- `multistep()` 函数，拆分任务
+- MXHR（多部分 XHR），多部分 XHR–多部分 XHR
 
 ### N
 
-命名空间，嵌套属性，缓存对象成员值 原生方法，原生方法 嵌套对象成员，嵌套成员 嵌套量词，失控回溯，嵌套量词与失控回溯 网络面板，Firebug，网络面板 Nielsen, Jakob，关于 UI 响应时间，多久算太久？ 节点，克隆，克隆节点 非阻塞脚本，非阻塞脚本–LABjs 库
-
-> 延迟脚本，延迟脚本 动态脚本元素，动态脚本元素–动态脚本元素 加载 JavaScript，推荐的非阻塞模式 `XMLHttpRequest` 脚本注入，`XMLHttpRequest` 脚本注入
-
-非捕获组，提高正则表达式效率的更多方法
+- 命名空间，嵌套属性，缓存对象成员值
+- 原生方法，原生方法
+- 嵌套对象成员，嵌套成员
+- 嵌套量词，失控回溯，嵌套量词与失控回溯
+- 网络面板，Firebug，网络面板
+- Nielsen, Jakob，关于 UI 响应时间，多久算太久？
+- 节点，克隆，克隆节点
+- 非阻塞脚本，非阻塞脚本–LABjs 库
+  - 延迟脚本，延迟脚本
+  - 动态脚本元素，动态脚本元素–动态脚本元素
+  - 加载 JavaScript，推荐的非阻塞模式
+  - `XMLHttpRequest` 脚本注入，`XMLHttpRequest` 脚本注入
+- 非捕获组，提高正则表达式效率的更多方法
 
 ### O
 
-对象成员，对象成员
-
-> （另请参阅方法；属性）缓存对象成员值，缓存对象成员值 数据访问，对象成员–缓存对象成员值 定义，数据访问 嵌套，嵌套成员 原型链，原型链 原型，原型
-
-对象
-
-> 激活对象，作用域链与标识符解析 `Date` 对象，JavaScript 性能分析 `HTMLCollection`，HTML 集合 编程实践，使用对象/数组字面量 `XHR` 对象，了解 Ajax 库的局限性
-
-onmessage 事件，Worker 通信 Opera，时间限制，浏览器限制 运算符
-
-> 位运算符，位运算符–位运算符 加号（`+`）与加等号（`+=`）运算符，字符串连接–Firefox 与编译时折叠
-
-优化（参见性能）作用域外变量，闭包、作用域与内存
+- 对象成员，对象成员
+  > （另请参阅方法；属性）
+  >
+  > - 缓存对象成员值，缓存对象成员值
+  > - 数据访问，对象成员–缓存对象成员值
+  > - 定义，数据访问
+  > - 嵌套，嵌套成员
+  > - 原型链，原型链
+  > - 原型，原型
+- 对象
+  - 激活对象，作用域链与标识符解析
+  - `Date` 对象，JavaScript 性能分析
+  - `HTMLCollection`，HTML 集合
+  - 编程实践，使用对象/数组字面量
+  - `XHR` 对象，了解 Ajax 库的局限性
+- `onmessage` 事件，Worker 通信
+- Opera，时间限制，浏览器限制
+- 运算符
+  - 位运算符，位运算符–位运算符
+  - 加号（`+`）与加等号（`+=`）运算符，字符串连接–Firefox 与编译时折叠
+- 优化（参见性能）
+- 作用域外变量，闭包、作用域与内存
 
 ### P
 
-Page Speed，Page Speed 面板
-
-> 控制台面板分析器：Firebug，控制台面板分析器 网络面板：Firebug，网络面板 性能分析面板，性能分析面板 资源面板：Safari Web Inspector，资源面板
-
-解析时间，XML，响应大小与解析时间 解析，`eval()` 函数与 JSON，JSON
-
-性能
-
-> Ajax，Ajax 性能指南–了解 Ajax 库的局限性 数组连接，数组连接 浏览器，数据访问 闭包，闭包、作用域与内存 DOM 脚本，DOM 脚本，天生缓慢 格式比较，数据格式结论 HTML 格式，HTML 标识符解析，标识符解析性能 JavaScript 引擎，动态作用域 浏览器中的 JavaScript，加载与执行 JSON 格式，JSON JSON-P 格式，JSON-P 循环，循环性能–减少迭代次数 原生代码与 `eval()`，避免双重求值 嵌套成员，嵌套成员 正则表达式，正则表达式优化，关于基准测试的说明 定时器，定时器与性能 `trim` 实现，混合解决方案 XHR 格式，自定义格式化 XML，响应大小与解析时间
-
-
-
-
-
-加号（`+`）运算符，字符串拼接–Firefox 与编译时折叠加等号（`+=`）运算符，字符串拼接–Firefox 与编译时折叠定位，脚本，脚本定位使用 XHR 时的 POST 与 GET，使用 XHR 时的 POST 与 GET`postMessage()` 方法，Worker 通信预处理 JavaScript 文件，预处理 JavaScript 文件前置条件，循环，循环类型`processArray()` 函数，使用定时器处理数组`profileEnd()` 函数，控制台 API`Profiler`（YUI），YUI Profiler–YUI ProfilerProfiles 面板，Safari Web Inspector，Profiles 面板性能分析，JavaScript，JavaScript 性能分析编程实践，编程实践–总结
-
-> 位运算符，位运算符–位运算符双重求值，避免双重求值–避免双重求值原生方法，原生方法对象/数组字面量，使用对象/数组字面量重复工作，不要重复工作
-
-`prop` 变量，循环类型属性，对象成员
-
-> （另请参阅方法；对象成员）`cssText` 属性，样式更改数据类型，对象成员`displayName` 属性，Profiles 面板 DOM 属性，元素节点`innerHTML` 属性，`innerHTML` 与 DOM 方法`length` 属性，昂贵的集合原型，原型在函数中读取，缓存对象成员值`readyState` 属性（`<script>` 元素），动态脚本元素`[[Scope]]` 属性，作用域链与标识符解析，闭包、作用域与内存
-
-原型链，对象成员，原型链原型，对象成员，原型
+- Page Speed，Page Speed 面板
+  - 控制台面板分析器：Firebug，控制台面板分析器
+  - 网络面板：Firebug，网络面板
+  - 性能分析面板，性能分析面板
+  - 资源面板：Safari Web Inspector，资源面板
+- 解析时间，XML，响应大小与解析时间
+- 解析，`eval()` 函数与 JSON，JSON
+- 性能
+  - Ajax，Ajax 性能指南–了解 Ajax 库的局限性
+  - 数组连接，数组连接
+  - 浏览器，数据访问
+  - 闭包，闭包、作用域与内存
+  - DOM 脚本，DOM 脚本，天生缓慢
+  - 格式比较，数据格式结论
+  - HTML 格式，HTML
+  - 标识符解析，标识符解析性能
+  - JavaScript 引擎，动态作用域
+  - 浏览器中的 JavaScript，加载与执行
+  - JSON 格式，JSON
+  - JSON-P 格式，JSON-P
+  - 循环，循环性能–减少迭代次数
+  - 原生代码与 `eval()`，避免双重求值
+  - 嵌套成员，嵌套成员
+  - 正则表达式，正则表达式优化，关于基准测试的说明
+  - 定时器，定时器与性能
+  - `trim` 实现，混合解决方案
+  - XHR 格式，自定义格式化
+  - XML，响应大小与解析时间
+- 加号（`+`）运算符，字符串拼接–Firefox 与编译时折叠
+- 加等号（`+=`）运算符，字符串拼接–Firefox 与编译时折叠
+- 定位，脚本，脚本定位
+- 使用 XHR 时的 POST 与 GET，使用 XHR 时的 POST 与 GET
+- `postMessage()` 方法，Worker 通信
+- 预处理 JavaScript 文件，预处理 JavaScript 文件
+- 前置条件，循环，循环类型
+- `processArray()` 函数，使用定时器处理数组
+- `profileEnd()` 函数，控制台 API
+- `Profiler`（YUI），YUI Profiler–YUI Profiler
+- Profiles 面板，Safari Web Inspector，Profiles 面板
+- 性能分析，JavaScript，JavaScript 性能分析
+- 编程实践，编程实践–总结
+  > - 位运算符，位运算符–位运算符
+  > - 双重求值，避免双重求值–避免双重求值
+  > - 原生方法，原生方法
+  > - 对象/数组字面量，使用对象/数组字面量
+  > - 重复工作，不要重复工作
+- `prop` 变量，循环类型
+- 属性，对象成员
+  > （另请参阅方法；对象成员）
+  >
+  > - `cssText` 属性，样式更改
+  > - 数据类型，对象成员
+  > - `displayName` 属性，Profiles 面板
+  > - DOM 属性，元素节点
+  > - `innerHTML` 属性，`innerHTML` 与 DOM 方法
+  > - `length` 属性，昂贵的集合
+  > - 原型，原型
+  > - 在函数中读取，缓存对象成员值
+  > - `readyState` 属性（`<script>` 元素），动态脚本元素
+  > - `[[Scope]]` 属性，作用域链与标识符解析，闭包、作用域与内存
+- 原型链，对象成员，原型链
+- 原型，对象成员，原型
 
 ### Q
 
-量词
-
-> 嵌套量词，嵌套量词与失控回溯性能，提高正则表达式效率的更多方法
-
-查询，HTML 集合，HTML 集合`querySelector()` 方法，原生方法`querySelectorAll()` 方法，选择器 API，原生方法
+- 量词
+  - 嵌套量词，嵌套量词与失控回溯
+  - 性能，提高正则表达式效率的更多方法
+- 查询，HTML 集合，HTML 集合
+- `querySelector()` 方法，原生方法
+- `querySelectorAll()` 方法，选择器 API，原生方法
 
 ### R
 
-`readyState`
-
-> MXHR，多部分 XHRXHR，`XMLHttpRequest``XMLHttpRequest`，了解 Ajax 库的局限性
-
-`readyState` 属性（`<script>` 元素），动态脚本元素`readystatechange` 事件，IE，动态脚本元素递归，递归–记忆化
-
-> 调用栈大小限制，调用栈限制迭代，迭代记忆化，记忆化模式，递归模式
-
-重排，重绘与重排–IE 与 :hover
-
-> 缓存布局信息，缓存布局信息元素，将元素移出动画流 IE，IE 与 :hover 最小化，最小化重绘与重排–批量处理 DOM 更改排队与刷新渲染树更改，排队与刷新渲染树更改
-
-正则表达式（regexes），正则表达式优化–何时不使用正则表达式
-
-> 关于，正则表达式的工作原理原子分组，使用前瞻和后向引用模拟原子分组回溯，理解回溯，理解回溯，失控回溯基准测试，关于基准测试的说明性能，正则表达式优化，关于基准测试的说明，何时不使用正则表达式重复，重复与回溯修剪字符串，使用正则表达式修剪，使用正则表达式修剪，混合解决方案何时不使用，何时不使用正则表达式
-
-`removeEventListener()` 函数，不要重复工作渲染树
-
-> DOM，重绘与重排重排，排队与刷新渲染树更改
-
-重绘，最小化，最小化重绘与重排–批量处理 DOM 更改重复工作，不要重复工作重复与回溯，重复与回溯请求数据，Ajax，请求数据–多部分 XHRResources 面板：Safari Web Inspector，Resources 面板失控回溯，失控回溯运行时构建与构建时过程，构建时与运行时构建过程
+- `readyState`
+  - MXHR，多部分 XHR
+  - XHR，`XMLHttpRequest`
+  - `XMLHttpRequest`，了解 Ajax 库的局限性
+- `readyState` 属性（`<script>` 元素），动态脚本元素
+- `readystatechange` 事件，IE，动态脚本元素
+- 递归，递归–记忆化
+  - 调用栈大小限制，调用栈限制
+  - 迭代，迭代
+  - 记忆化，记忆化模式，递归模式
+- 重排，重绘与重排–IE 与 `:hover`
+  - 缓存布局信息，缓存布局信息
+  - 元素，将元素移出动画流
+  - IE，IE 与 `:hover`
+  - 最小化，最小化重绘与重排–批量处理 DOM 更改
+  - 排队与刷新，渲染树更改
+- 正则表达式（regexes），正则表达式优化–何时不使用正则表达式
+  - 关于，正则表达式的工作原理
+  - 原子分组，使用前瞻和后向引用模拟原子分组
+  - 回溯，理解回溯
+  - 回溯，失控回溯
+  - 基准测试，关于基准测试的说明
+  - 性能，正则表达式优化，关于基准测试的说明，何时不使用正则表达式
+  - 重复，重复与回溯
+  - 修剪字符串，使用正则表达式修剪
+  - 修剪，使用正则表达式修剪，混合解决方案
+  - 何时不使用，何时不使用正则表达式
+- `removeEventListener()` 函数，不要重复工作
+- 渲染树
+  - DOM，重绘与重排
+  - 重排，排队与刷新渲染树更改
+- 重绘，最小化，最小化重绘与重排–批量处理 DOM 更改
+- 重复工作，不要重复工作
+- 重复与回溯，重复与回溯
+- 请求数据，Ajax，请求数据–多部分 XHR
+- Resources 面板：Safari Web Inspector，Resources 面板
+- 失控回溯，失控回溯
+- 运行时构建与构建时过程，构建时与运行时构建过程
 
 ### S
 
-Safari
-
-> 缓存能力，缓存 JavaScript 文件加载脚本，Resources 面板传递字符串，Worker 通信以编程方式启动和停止性能分析，Profiles 面板时间限制，浏览器限制
-
-Safari Web Inspector，Safari Web Inspector–Resources 面板作用域，管理作用域–闭包、作用域与内存
-
-
-
-
-
-> 闭包，闭包、作用域与内存动态作用域，动态作用域标识符解析，作用域链与标识符解析–标识符解析性能
-
-作用域链
-
-> 增强，作用域链增强标识符解析，作用域链与标识符解析性能，标识符解析性能
-
-`[[Scope]]` 属性，闭包、作用域与内存，闭包、作用域与内存脚本阻塞，脚本阻塞脚本标签，动态插入，动态脚本标签插入`<script>` 元素
-
-> `defer` 选项，延迟脚本 DOM，动态脚本元素性能，加载与执行，脚本分组放置位置，脚本定位
-
-脚本，加载与执行–总结
-
-> （另请参阅 DOM 脚本）调试与性能分析，匿名函数分组，脚本分组加载，资源面板非阻塞脚本，非阻塞脚本–LABjs 库定位，脚本定位
-
-选择器，CSS，选择器 API 发送数据，Ajax，发送数据–信标`setInterval()` 函数，定时器基础，避免双重求值`setTimeout()` 函数，定时器基础，避免双重求值压缩工具，敏捷 JavaScript 构建流程速度（参见性能）栈，调用栈大小限制，调用栈限制语句，拆分任务
-
-> （另请参阅条件语句；函数；方法）`try-catch` 语句，作用域链增强，调用栈限制`var` 语句，循环类型`with` 语句，作用域链增强
-
-`string.concat()` 方法，字符串拼接字符串
-
-> 拼接，字符串拼接–`String.prototype.concat`在 Safari 中传递，Worker 通信修剪，字符串修剪–混合解决方案
-
-样式，重绘与回流，样式更改开关，`if-else` 与 `switch`，if-else 对比 switch
+- Safari
+  - 缓存能力，缓存 JavaScript 文件
+  - 加载脚本，Resources 面板
+  - 传递字符串，Worker 通信
+  - 以编程方式启动和停止性能分析，Profiles 面板
+  - 时间限制，浏览器限制
+- Safari Web Inspector，Safari Web Inspector–Resources 面板
+- 作用域，管理作用域–闭包、作用域与内存
+  - 闭包，闭包、作用域与内存
+  - 动态作用域，动态作用域
+  - 标识符解析，作用域链与标识符解析–标识符解析性能
+- 作用域链
+  - 增强，作用域链增强
+  - 标识符解析，作用域链与标识符解析
+  - 性能，标识符解析性能
+- `[[Scope]]` 属性，闭包、作用域与内存，闭包、作用域与内存
+- 脚本阻塞，脚本阻塞
+- 脚本标签，动态插入，动态脚本标签插入
+- `<script>` 元素
+  - `defer` 选项，延迟脚本
+  - DOM，动态脚本元素
+  - 性能，加载与执行，脚本分组
+  - 放置位置，脚本定位
+- 脚本，加载与执行–总结
+  > （另请参阅 DOM 脚本）
+  >
+  > - 调试与性能分析，匿名函数
+  > - 分组，脚本分组
+  > - 加载，资源面板
+  > - 非阻塞脚本，非阻塞脚本–LABjs 库
+  > - 定位，脚本定位
+- 选择器，CSS，选择器 API
+- 发送数据，Ajax，发送数据–信标
+- `setInterval()` 函数，定时器基础，避免双重求值
+- `setTimeout()` 函数，定时器基础，避免双重求值
+- 压缩工具，敏捷 JavaScript 构建流程
+- 速度（参见性能）
+- 栈，调用栈大小限制，调用栈限制
+- 语句，拆分任务
+  > （另请参阅条件语句；函数；方法）
+  >
+  > - `try-catch` 语句，作用域链增强，调用栈限制
+  > - `var` 语句，循环类型
+  > - `with` 语句，作用域链增强
+- `string.concat()` 方法，字符串拼接
+- 字符串
+  - 拼接，字符串拼接–`String.prototype.concat`
+  - 在 Safari 中传递，Worker 通信
+  - 修剪，字符串修剪–混合解决方案
 
 ### T
 
-表格，查找表，查找表标签，动态脚本标签插入
-
-> （另请参阅元素）`<user>` 标签，XML 动态脚本标签插入，动态脚本标签插入
-
-`this`，对象方法，缓存对象成员值 Thomas, Neil，关于多个重复定时器，定时器与性能线程，浏览器 UI 线程，浏览器 UI 线程时间限制，浏览器，浏览器限制–多久算太久？定时器
-
-> 性能，定时器与性能通过定时器让步，通过定时器让步–定时器与性能
-
-令牌，暴露，提高正则表达式效率的更多方法工具，工具–总结
-
-> 与匿名函数配合使用，匿名函数 Chrome 开发者工具，Chrome 开发者工具 dynaTrace，dynaTrace Ajax 版 Fiddler，FiddlerFirebug，Firebug–网络面板 IE（Internet Explorer），Internet Explorer 开发者工具 JavaScript 性能分析，JavaScript 性能分析 Page Speed，Page SpeedSafari Web Inspector，Safari Web Inspector–资源面板脚本阻塞，脚本阻塞 YSlow，YSlowYUI Profiler，YUI Profiler–YUI Profiler
-
-`toString()` 方法，原型树（参见渲染树）修剪字符串，字符串修剪–混合解决方案，使用正则表达式修剪，混合解决方案`try-catch` 语句，作用域链增强，调用栈限制
+- 表格，查找表，查找表
+- 标签，动态脚本标签插入
+  > （另请参阅元素）
+  >
+  > - `<user>` 标签，XML
+  > - 动态脚本标签插入，动态脚本标签插入
+- `this`，对象方法，缓存对象成员值
+- Thomas, Neil，关于多个重复
+- 定时器，定时器与性能
+  - 线程，浏览器 UI 线程，浏览器 UI 线程
+  - 时间限制，浏览器，浏览器限制–多久算太久？
+  - 性能，定时器与性能
+  - 通过定时器让步，通过定时器让步–定时器与性能
+- 令牌，暴露，提高正则表达式效率的更多方法
+- 工具，工具–总结
+  > - 与匿名函数配合使用，匿名函数
+  > - Chrome 开发者工具，Chrome 开发者工具
+  > - dynaTrace，dynaTrace Ajax 版
+  > - Fiddler，Fiddler
+  > - Firebug，Firebug–网络面板
+  > - IE（Internet Explorer），Internet Explorer 开发者工具
+  > - JavaScript 性能分析，JavaScript 性能分析
+  > - Page Speed，Page Speed
+  > - Safari Web Inspector，Safari Web Inspector–资源面板
+  > - 脚本阻塞，脚本阻塞
+  > - YSlow，YSlow
+  > - YUI Profiler，YUI Profiler–YUI Profiler
+- `toString()` 方法，原型
+- 树（参见渲染树）
+- 修剪字符串，字符串修剪–混合解决方案，使用正则表达式修剪，混合解决方案
+- `try-catch` 语句，作用域链增强，调用栈限制
 
 ### U
 
-用户界面，响应式界面–总结
-
-> 浏览器 UI 线程，浏览器 UI 线程–多久算太久？Web Worker，Web Worker–实际用途通过定时器让步，通过定时器让步–定时器与性能
-
-`<user>` 标签，XML
+- 用户界面，响应式界面–总结
+  > - 浏览器 UI 线程，浏览器 UI 线程–多久算太久？
+  > - Web Worker，Web Worker–实际用途
+  > - 通过定时器让步，通过定时器让步–定时器与性能
+- `<user>` 标签，XML
 
 ### V
 
-值，缓存对象成员值，缓存对象成员值`var` 语句，循环类型变量，标识符解析性能
-
-> （另请参阅局部变量）定义，数据访问函数执行，作用域链与标识符解析局部变量与全局变量，标识符解析性能作用域外变量，闭包、作用域与内存`prop` 变量，循环类型
+- 值，缓存对象成员值，缓存对象成员值
+- `var` 语句，循环类型
+- 变量，标识符解析性能
+  > （另请参阅局部变量）
+  >
+  > - 定义，数据访问
+  > - 函数执行，作用域链与标识符解析
+  > - 局部变量与全局变量，标识符解析性能
+  > - 作用域外变量，闭包、作用域与内存
+  > - `prop` 变量，循环类型
 
 ### W
 
-Web Inspector（Safari），Safari Web Inspector–资源面板 Web Worker，Web Worker–实际用途
-
-
-
-
-> 通信，Worker 通信环境，Worker 环境加载外部文件，加载外部文件用途，实际用途
-
-基于 WebKit 的浏览器，`innerHTML`，`innerHTML` 与 DOM 方法 while 循环，循环类型，循环性能 with 语句，作用域链增强
+- Web Inspector（Safari），Safari Web Inspector–资源面板
+- Web Worker，Web Worker–实际用途
+  > - 通信，Worker 通信
+  > - 环境，Worker 环境
+  > - 加载外部文件，加载外部文件
+  > - 用途，实际用途
+- 基于 WebKit 的浏览器，`innerHTML`，`innerHTML` 与 DOM 方法
+- `while` 循环，循环类型，循环性能
+- `with` 语句，作用域链增强
 
 ### X
 
-`XHR` (`XMLHttpRequest`)
-
-> 关于，`XMLHttpRequest`
-
-`MXHR`，多部分 `XHR`–多部分 `XHR`
-
-POST 与 GET，使用 `XHR` 时的 POST 与 GET
-
-发送数据，发送数据–信标
-
-`XHR` 对象，IE，了解你的 Ajax 库的局限性
-
-XML 数据格式，XML–响应大小和解析时间
-
-`XMLHttpRequest`，`XMLHttpRequest`，了解你的 Ajax 库的局限性
-
-`XMLHttpRequest` 脚本注入，`XMLHttpRequest` 脚本注入
-
-`XPath`，`XPath`
+- `XHR`（`XMLHttpRequest`）
+  > - 关于，`XMLHttpRequest`
+- `MXHR`，多部分 `XHR`–多部分 `XHR`
+- POST 与 GET，使用 `XHR` 时的 POST 与 GET
+- 发送数据，发送数据–信标
+- `XHR` 对象，IE，了解你的 Ajax 库的局限性
+- XML 数据格式，XML–响应大小和解析时间
+- `XMLHttpRequest`，`XMLHttpRequest`，了解你的 Ajax 库的局限性
+- `XMLHttpRequest` 脚本注入，`XMLHttpRequest` 脚本注入
+- `XPath`，`XPath`
 
 ### Y
 
-使用定时器让步，使用定时器让步–定时器与性能
-
-YSlow，YSlow
-
-YUI 3，加载 JavaScript，YUI 3 方法
-
-YUI Profiler，YUI Profiler–YUI Profiler
+- 使用定时器让步，使用定时器让步–定时器与性能
+- YSlow，YSlow
+- YUI 3，加载 JavaScript，YUI 3 方法
+- YUI Profiler，YUI Profiler–YUI Profiler
 
 ## 关于作者
+
+
 
 **Nicholas C. Zakas** 是一位 Web 软件工程师，专攻使用 JavaScript、动态 HTML、CSS、XML 和 XSLT 的 Web 应用程序的用户界面设计与实现。他目前是 Yahoo! 首页的首席前端工程师，并且是 Yahoo! 用户界面（YUI）库的贡献者，编写了 Cookie 工具、分析器（Profiler）和 YUI Test。
 
@@ -6867,7 +6945,7 @@ Nutshell Handbook、Nutshell Handbook 徽标和 O'Reilly 徽标是 O'Reilly Medi
 
 尽管在编写本书时已采取一切预防措施，但出版商和作者对错误、遗漏或因使用本书所含信息而造成的损害不承担任何责任。
 
-Yahoo Press 
+Yahoo Press
 
 2013-05-02T19:37:49-07:00
 

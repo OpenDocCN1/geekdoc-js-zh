@@ -1,114 +1,111 @@
-#  JavaScript 深度探索：理论与技术
 
 
-
-
-
-## 理论与技术
-
-
+# JavaScript 深度探索：理论与技术
 
 ## V 面向对象编程：技术
 
-- **13 类实例化技术** 131
-    - 13.1 问题：异步初始化属性 131
-    - 13.2 解决方案：基于 Promise 的构造函数 132
-    - 13.3 解决方案：静态工厂方法 133
-    - 13.4 继承基于 Promise 的构造函数（可选） 137
-    - 13.5 结论 138
-    - 13.6 延伸阅读 138
+### 13 类实例化技术
 
-- **14 复制类实例：`.clone()` 与复制构造函数** 141
-    - 14.1 `.clone()` 方法 141
-    - 14.2 静态工厂方法 142
-    - 14.3 致谢 143
+- 13.1 问题：异步初始化属性
+- 13.2 解决方案：基于 Promise 的构造函数
+- 13.3 解决方案：静态工厂方法
+- 13.4 继承基于 Promise 的构造函数（可选）
+- 13.5 结论
+- 13.6 延伸阅读
 
-- **15 集合的不可变包装器** 145
-    - 15.1 包装对象 145
-    - 15.2 Map 的不可变包装器 146
-    - 15.3 Array 的不可变包装器 147
+### 14 复制类实例：`.clone()` 与复制构造函数
+
+- 14.1 `.clone()` 方法
+- 14.2 静态工厂方法
+- 14.3 致谢
+
+### 15 集合的不可变包装器
+
+- 15.1 包装对象
+- 15.2 `Map` 的不可变包装器
+- 15.3 `Array` 的不可变包装器
 
 ## VI 正则表达式
 
-- **16 正则表达式：通过示例理解环视断言** 151
-    - 16.1 备忘单：环视断言 151
-    - 16.2 本章警告 152
-    - 16.3 示例：指定匹配之前或之后的内容（正环视） 152
-    - 16.4 示例：指定匹配之前或之后不能是什么（负环视） 153
-    - 16.5 插曲：环视断言向内指向 154
-    - 16.6 示例：匹配不以 'abc' 开头的字符串 154
-    - 16.7 示例：匹配不包含 '.mjs' 的子字符串 155
+### 16 正则表达式：通过示例理解环视断言
 
+- 16.1 备忘单：环视断言
+- 16.2 本章警告
+- 16.3 示例：指定匹配之前或之后的内容（正环视）
+- 16.4 示例：指定匹配之前或之后不能是什么（负环视）
+- 16.5 插曲：环视断言向内指向
+- 16.6 示例：匹配不以 `'abc'` 开头的字符串
+- 16.7 示例：匹配不包含 `'.mjs'` 的子字符串
+- 16.8 示例：使用注释跳过行
+- 16.9 示例：智能引号
+- 16.10 致谢
+- 16.11 延伸阅读
 
+### 17 通过 `re-template-tag` 构建正则表达式（额外内容）
 
-- 16.8 示例：使用注释跳过行 . . . . . . . . . . . . . . . . . . . . . . . . . 155
-- 16.9 示例：智能引号 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 156
-- 16.10 致谢 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 157
-- 16.11 延伸阅读 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 157
+- 17.1 基础知识
+- 17.2 功能概览
+- 17.3 为什么这很有用？
+- 17.4 `re` 与具名捕获组
 
-## 17 通过 re-template-tag 构建正则表达式（额外内容） 159
+## VII 杂项话题
 
-- 17.1 基础知识 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 159
-- 17.2 功能概览 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 160
-- 17.3 为什么这很有用？ . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 160
-- 17.4 re 与具名捕获组 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 160
+### 18 通过实现 `Promise` 来探索 `Promise`
 
-## VII 杂项话题 163
+- 18.1 复习：`Promise` 的状态
+- 18.2 版本 1：独立 `Promise`
+- 18.3 版本 2：链式调用 `.then()`
+- 18.4 便捷方法 `.catch()`
+- 18.5 省略反应处理
+- 18.6 具体实现
+- 18.7 版本 3：展平 `.then()` 回调返回的 `Promise`
+- 18.8 版本 4：反应回调中抛出的异常
+- 18.9 版本 5：揭示构造函数模式（Revealing constructor pattern）
 
-## 18 通过实现 Promise 来探索 Promise 165
+### 19 使用 `Proxy` 进行元编程（早期访问）
 
-- 18.1 复习：Promise 的状态 . . . . . . . . . . . . . . . . . . . . . . . . . . . 166
-- 18.2 版本 1：独立 Promise . . . . . . . . . . . . . . . . . . . . . . . . . . . . 166
-- 18.3 版本 2：链式调用 .then() . . . . . . . . . . . . . . . . . . . . . . . . 169
-- 18.4 便捷方法 .catch() . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 170
-- 18.5 省略反应处理 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 170
-- 18.6 具体实现 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 171
-- 18.7 版本 3：展平 .then() 回调返回的 Promise . . . . . . . . . . . . . . . 172
-- 18.8 版本 4：反应回调中抛出的异常 . . . . . . . . . . . . . . . . . . . . . . 175
-- 18.9 版本 5：揭示构造函数模式 (Revealing constructor pattern) . . . . 177
+- 19.1 概述
+- 19.2 编程与元编程
+- 19.3 `Proxy` 详解
+- 19.4 `Proxy` 的使用场景
+- 19.5 `Proxy` API 的设计
+- 19.6 FAQ：`Proxy`
+- 19.7 参考：`Proxy` API
+- 19.8 结语
+- 19.9 延伸阅读
 
-## 19 使用 Proxy 进行元编程（早期访问） 179
+### 20 函数的 `.name` 属性（额外内容）
 
-- 19.1 概述 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 180
-- 19.2 编程与元编程 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 181
-- 19.3 Proxy 详解 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 182
-- 19.4 Proxy 的使用场景 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 190
-- 19.5 Proxy API 的设计 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 200
-- 19.6 FAQ：Proxy . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 209
-- 19.7 参考：Proxy API . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 209
-- 19.8 结语 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 215
-- 19.9 延伸阅读 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 215
-
-## 20 函数的 .name 属性（额外内容） 217
-
-- 20.1 函数的名称 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 218
-- 20.2 为函数提供名称的结构 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 219
-- 20.3 函数名称需要注意的事项 . . . . . . . . . . . . . . . . . . . . . . . . . . . 223
-- 20.4 修改函数名称 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 223
-- 20.5 ECMAScript 规范中的函数属性 .name . . . . . . . . . . . . . . . . . . . 224
+- 20.1 函数的名称
+- 20.2 为函数提供名称的结构
+- 20.3 函数名称需要注意的事项
+- 20.4 修改函数名称
+- 20.5 ECMAScript 规范中的函数属性 `.name`
 
 # 第一部分
+
 # 前言
 
 # 第 1 章
+
 ## 关于本书
 
 ## 目录
 
-- 1.1 本书的主页在哪里？ ................... 9
-- 1.2 本书包含什么内容？ ............................... 9
-- 1.3 我付费购买能获得什么？ ......................... 10
-- 1.4 如何预览内容？ ...................... 10
-- 1.5 如何报告错误？ ............................... 10
-- 1.6 阅读技巧 ...................................... 10
-- 1.7 符号与约定 ........................... 10
-    - 1.7.1 什么是类型签名？为什么我在本书中看到了静态类型？ ........... 10
-    - 1.7.2 带图标的注释是什么意思？ ................ 11
-- 1.8 致谢 .................................... 11
+- 1.1 本书的主页在哪里？
+- 1.2 本书包含什么内容？
+- 1.3 我付费购买能获得什么？
+- 1.4 如何预览内容？
+- 1.5 如何报告错误？
+- 1.6 阅读技巧
+- 1.7 符号与约定
+  - 1.7.1 什么是类型签名？为什么我在本书中看到了静态类型？
+  - 1.7.2 带图标的注释是什么意思？
+- 1.8 致谢
 
 ### 1.1 本书的主页在哪里？
 
-《Deep JavaScript》的主页是 [exploringjs.com/deep-js/](exploringjs.com/deep-js/)
+《Deep JavaScript》的主页是 [exploringjs.com/deep-js/](https://exploringjs.com/deep-js/)。
 
 ### 1.2 本书包含什么内容？
 
@@ -123,10 +120,10 @@
 如果你购买本书，你将获得：
 
 - 当前内容的四个无 DRM 版本：
-    - PDF 文件
-    - 包含无广告 HTML 的 ZIP 压缩包
-    - EPUB 文件
-    - MOBI 文件
+  - PDF 文件
+  - 包含无广告 HTML 的 ZIP 压缩包
+  - EPUB 文件
+  - MOBI 文件
 - 以后添加到此版本的任何新内容。我能添加多少内容取决于本书的销售情况。
 
 当前价格为首发价。随着更多内容的加入，价格将会上涨。
@@ -151,7 +148,7 @@
 
 例如，你可能会看到：
 
-```
+```javascript
 Number.isFinite(num: number): boolean
 ```
 
@@ -162,21 +159,27 @@ Number.isFinite(num: number): boolean
 #### 1.7.2 带图标的注释是什么意思？
 
 **阅读指南**
+
 解释如何更好地阅读内容。
 
 **外部内容**
+
 指向额外的外部内容。
 
 **提示**
+
 提供与当前内容相关的技巧。
 
 **问题**
+
 提出并回答与当前内容相关的问题（类似于 FAQ）。
 
 **警告**
+
 警告潜在的陷阱等。
 
 **详情**
+
 提供补充当前内容的额外细节。类似于脚注。
 
 ### 1.8 致谢
@@ -185,30 +188,32 @@ Number.isFinite(num: number): boolean
 - 更多贡献者在各章节中得到了致谢。
 
 # 第二部分
+
 # 类型、值、变量
 
 # 第 2 章
+
 ## JavaScript 中的类型强制转换
 
 | 目录 | 节 | 页码 |
 | :--- | :--- | :--- |
 | **2.1** | **什么是类型强制转换？** | 15 |
-| | 2.1.1 处理类型强制转换 | 17 |
+|  | 2.1.1 处理类型强制转换 | 17 |
 | **2.2** | **ECMAScript 规范中辅助实现强制转换的操作** | 18 |
-| | 2.2.1 转换为原始类型和对象 | 18 |
-| | 2.2.2 转换为数值类型 | 18 |
-| | 2.2.3 转换为属性键 | 19 |
-| | 2.2.4 转换为数组索引 | 19 |
-| | 2.2.5 转换为类型化数组元素 | 20 |
+|  | 2.2.1 转换为原始类型和对象 | 18 |
+|  | 2.2.2 转换为数值类型 | 18 |
+|  | 2.2.3 转换为属性键 | 19 |
+|  | 2.2.4 转换为数组索引 | 19 |
+|  | 2.2.5 转换为类型化数组元素 | 20 |
 | **2.3** | **间奏：用 JavaScript 表达规范算法** | 20 |
 | **2.4** | **强制转换算法示例** | 21 |
-| | 2.4.1 `ToPrimitive()` | 21 |
-| | 2.4.2 `ToString()` 及相关操作 | 24 |
-| | 2.4.3 `ToPropertyKey()` | 28 |
-| | 2.4.4 `ToNumeric()` 及相关操作 | 28 |
+|  | 2.4.1 `ToPrimitive()` | 21 |
+|  | 2.4.2 `ToString()` 及相关操作 | 24 |
+|  | 2.4.3 `ToPropertyKey()` | 28 |
+|  | 2.4.4 `ToNumeric()` 及相关操作 | 28 |
 | **2.5** | **执行强制转换的操作** | 29 |
-| | 2.5.1 加法运算符 (+) | 29 |
-| | 2.5.2 抽象相等比较 (==) | 30 |
+|  | 2.5.1 加法运算符 (`+`) | 29 |
+|  | 2.5.2 抽象相等比较 (`==`) | 30 |
 | **2.6** | **术语表：类型转换相关术语** | 32 |
 
 在本章中，我们将探讨类型*强制转换*（coercion）在 JavaScript 中的作用。我们将深入研究这个主题，例如，探讨 ECMAScript 规范是如何处理强制转换的。
@@ -253,7 +258,8 @@ function multiply(x, y) {
 }
 ```
 
-在 (3) 中，该操作执行了隐式类型转换。这被称为 *类型强制转换（type coercion）*。
+在 (3) 中，该操作执行了隐式类型转换。这被称为*类型强制转换（type coercion）*。
+
 JavaScript 最初没有异常机制，这就是为什么它在大多数操作中使用强制转换和错误值的原因：
 
 ```javascript
@@ -267,36 +273,64 @@ assert.equal(Number('xyz'), NaN);
 
 然而，在某些情况下（尤其是涉及新特性时），如果参数类型不正确，它也会抛出异常：
 
-- 访问 null 或 undefined 的属性：
-  > undefined.prop
-  TypeError: Cannot read property 'prop' of undefined
-  > null.prop
-  TypeError: Cannot read property 'prop' of null
-  > 'prop' in null
-  TypeError: Cannot use 'in' operator to search for 'prop' in null
+- 访问 `null` 或 `undefined` 的属性：
+
+  > `undefined.prop`
+
+  `TypeError: Cannot read property 'prop' of undefined`
+
+  > `null.prop`
+
+  `TypeError: Cannot read property 'prop' of null`
+
+  > `'prop' in null`
+
+  `TypeError: Cannot use 'in' operator to search for 'prop' in null`
 
 ### 2.1 什么是类型强制转换？
 
-- 使用 Symbol：
-  > 6 / Symbol()
-  TypeError: Cannot convert a Symbol value to a number
-- 混合使用 BigInt 和 Number：
-  > 6 / 3n
-  TypeError: Cannot mix BigInt and other types
-- 对不支持该操作的值进行 new 调用或函数调用：
-  > 123()
-  TypeError: 123 is not a function
-  > (class {})()
-  TypeError: Class constructor cannot be invoked without 'new'
-  > new 123
-  TypeError: 123 is not a constructor
-  > new (() => {})
-  TypeError: (intermediate value) is not a constructor
+- 使用 `Symbol`：
+
+  > `6 / Symbol()`
+
+  `TypeError: Cannot convert a Symbol value to a number`
+
+- 混合使用 `BigInt` 和 `Number`：
+
+  > `6 / 3n`
+
+  `TypeError: Cannot mix BigInt and other types`
+
+- 对不支持该操作的值进行 `new` 调用或函数调用：
+
+  > `123()`
+
+  `TypeError: 123 is not a function`
+
+  > `(class {})()`
+
+  `TypeError: Class constructor cannot be invoked without 'new'`
+
+  > `new 123`
+
+  `TypeError: 123 is not a constructor`
+
+  > `new (() => {})`
+
+  `TypeError: (intermediate value) is not a constructor`
+
 - 修改只读属性（仅在严格模式下抛出）：
-  > 'abc'.length = 1
-  TypeError: Cannot assign to read only property 'length'
-  > Object.freeze({prop:3}).prop = 1
-  TypeError: Cannot assign to read only property 'prop'
+
+  > `'abc'.length = 1`
+
+  `TypeError: Cannot assign to read only property 'length'`
+
+  > `Object.freeze({prop:3}).prop = 1`
+
+
+
+
+`TypeError: Cannot assign to read only property 'prop'`
 
 ### 2.1.1 处理类型强制转换
 
@@ -318,7 +352,7 @@ let y = '2';
 assert.equal(x * y, 6);
 ```
 
-我通常更倾向于前者，因为它可以明确我的意图：我预料到 x 和 y 可能不是数字，但我想将两个数字相乘。
+我通常更倾向于前者，因为它可以明确我的意图：我预料到`x`和`y`可能不是数字，但我想将两个数字相乘。
 
 ### 2.2 ECMAScript 规范中帮助实现强制转换的操作
 
@@ -345,11 +379,11 @@ function isNaN(number) {
 
 每当预期为原始类型或对象时，会使用以下转换函数：
 
-- ToBoolean()
-- ToNumber()
-- ToBigInt()
-- ToString()
-- ToObject()
+- `ToBoolean()`
+- `ToNumber()`
+- `ToBigInt()`
+- `ToString()`
+- `ToObject()`
 
 这些内部函数在 JavaScript 中有非常相似的对应项：
 
@@ -365,111 +399,126 @@ true
 123
 ```
 
-在引入了与 number 并存的 bigint 之后，规范在之前使用 `ToNumber()` 的地方经常改为使用 `ToNumeric()`。详情请参阅后文。
+在引入了与`number`并存的`bigint`之后，规范在之前使用`ToNumber()`的地方经常改为使用`ToNumeric()`。详情请参阅后文。
 
 #### 2.2.2 转换为数值类型
 
-目前，JavaScript 有[两种内置数值类型](https://)：number 和 bigint。
+目前，JavaScript 有[两种内置数值类型](https)：`number`和`bigint`。
 
-- `ToNumeric()` 返回一个数值 num。它的调用者通常会调用 num 规范类型的一个方法 mthd：
+- `ToNumeric()`返回一个数值`num`。它的调用者通常会调用`num`规范类型的一个方法`mthd`：
 
 ```javascript
 Type(num)::mthd(···)
 ```
 
-其中，以下操作使用了 ToNumeric：
+其中，以下操作使用了`ToNumeric`：
 
-- 前缀和后缀 ++ 运算符
-- * 运算符
+- 前缀和后缀`++`运算符
+- `*`运算符
 
-每当预期一个没有小数部分的数字时，就会使用 ToInteger(x)。结果的范围通常在之后会进一步限制。
+每当预期一个没有小数部分的数字时，就会使用`ToInteger(x)`。结果的范围通常在之后会进一步限制。
 
-- 它调用 ToNumber(x) 并去掉小数部分（类似于 Math.trunc()）。
-- 使用 ToInteger() 的操作：
-    - Number.prototype.toString(radix?)
-    - String.prototype.codePointAt(pos)
-    - Array.prototype.slice(start, end)
-    - 等等。
+- 它调用`ToNumber(x)`并去掉小数部分（类似于`Math.trunc()`）。
+- 使用`ToInteger()`的操作：
+  - `Number.prototype.toString(radix?)`
+  - `String.prototype.codePointAt(pos)`
+  - `Array.prototype.slice(start, end)`
+  - 等等。
 
-ToInt32() 和 ToUint32() 将数字强制转换为 32 位整数，并被按位运算符使用（见表 2.1）。
+`ToInt32()`和`ToUint32()`将数字强制转换为 32 位整数，并被按位运算符使用（见表 2.1）。
 
-- ToInt32()：有符号，范围 [-2³¹, 2³¹-1]（包含边界）
-- ToUint32()：无符号（因此有 U），范围 [0, 2³²-1]（包含边界）
+- `ToInt32()`：有符号，范围 [-2³¹, 2³¹-1]（包含边界）
+- `ToUint32()`：无符号（因此有 U），范围 [0, 2³²-1]（包含边界）
 
 表 2.1：按位数字运算符的操作数强制转换（BigInt 运算符不限制位数）。
 
 | 运算符 | 左操作数 | 右操作数 | 结果类型 |
 | :--- | :--- | :--- | :--- |
-| << | ToInt32() | ToUint32() | Int32 |
-| 有符号 >> | ToInt32() | ToUint32() | Int32 |
-| 无符号 >>> | ToInt32() | ToUint32() | Uint32 |
-| &, ^, \| | ToInt32() | ToUint32() | Int32 |
-| ~ | — | ToInt32() | Int32 |
+| `<<` | `ToInt32()` | `ToUint32()` | `Int32` |
+| 有符号`>>` | `ToInt32()` | `ToUint32()` | `Int32` |
+| 无符号`>>>` | `ToInt32()` | `ToUint32()` | `Uint32` |
+| `&`、`^`、`\|` | `ToInt32()` | `ToUint32()` | `Int32` |
+| `~` | — | `ToInt32()` | `Int32` |
 
 #### 2.2.3 转换为属性键
 
-ToPropertyKey() 返回一个字符串或一个 symbol，并被以下项使用：
+`ToPropertyKey()`返回一个字符串或一个 symbol，并被以下项使用：
 
-- 方括号运算符 []
+- 方括号运算符`[]`
 - 对象字面量中的计算属性名
-- in 运算符的左侧
-- Object.defineProperty(_, P, _)
-- Object.fromEntries()
-- Object.getOwnPropertyDescriptor()
-- Object.prototype.hasOwnProperty()
-- Object.prototype.propertyIsEnumerable()
-- Reflect 的多个方法
+- `in`运算符的左侧
+- `Object.defineProperty(_, P, _)`
+- `Object.fromEntries()`
+- `Object.getOwnPropertyDescriptor()`
+- `Object.prototype.hasOwnProperty()`
+- `Object.prototype.propertyIsEnumerable()`
+- `Reflect`的多个方法
 
 #### 2.2.4 转换为数组索引
 
-ToLength() 主要（直接）用于字符串索引。
+`ToLength()`主要（直接）用于字符串索引。
 
-- ToIndex() 的辅助函数
-- 结果 l 的范围：0 ≤ l ≤ 2⁵³-1
-
-- ToIndex() 用于类型化数组（Typed Array）索引。
-    - 与 ToLength() 的主要区别：如果参数超出范围则抛出异常。
-    - 结果 i 的范围：0 ≤ i ≤ 2⁵³-1
-- ToUint32() 用于普通数组索引。
-    - 结果 i 的范围：0 ≤ i < 2³²-1（不含上限，为 .length 留出空间）
+- `ToIndex()`的辅助函数
+- 结果`l`的范围：0 ≤ `l` ≤ 2⁵³-1
+- `ToIndex()`用于类型化数组（Typed Array）索引。
+  - 与`ToLength()`的主要区别：如果参数超出范围则抛出异常。
+  - 结果`i`的范围：0 ≤ `i` ≤ 2⁵³-1
+- `ToUint32()`用于普通数组索引。
+  - 结果`i`的范围：0 ≤ `i` < 2³²-1（不含上限，为`.length`留出空间）
 
 #### 2.2.5 转换为类型化数组元素
 
 当我们设置类型化数组元素的值时，会使用以下转换函数之一：
 
-- ToInt8()
-- ToUint8()
-- ToUint8Clamp()
-- ToInt16()
-- ToUint16()
-- ToInt32()
-- ToUint32()
-- ToBigInt64()
-- ToBigUint64()
+- `ToInt8()`
+- `ToUint8()`
+- `ToUint8Clamp()`
+- `ToInt16()`
+- `ToUint16()`
+- `ToInt32()`
+- `ToUint32()`
+- `ToBigInt64()`
+- `ToBigUint64()`
 
 ### 2.3 间奏：用 JavaScript 表达规范算法
 
 在本章的剩余部分，我们会遇到几个规范算法，但它们被“实现”为 JavaScript。以下列表显示了一些常用模式如何从规范翻译到 JavaScript：
 
 - 规范：If Type(value) is String
-  JavaScript：`if (typeof(value) === 'string')`
-  （非常宽松的翻译；TypeOf() 在下方定义）
-- 规范：If IsCallable(method) is true
-  JavaScript：`if (IsCallable(method))`
-  （IsCallable() 在下方定义）
-- 规范：Let numValue be ToNumber(value)
-  JavaScript：`let numValue = Number(value)`
-- 规范：Let isArray be IsArray(O)
-  JavaScript：`let isArray = Array.isArray(O)`
-- 规范：If O has a [[NumberData]] internal slot
-  JavaScript：`if ('__NumberData__' in O)`
-- 规范：Let tag be Get(O, @@toStringTag)
-  JavaScript：`let tag = O[Symbol.toStringTag]`
-- 规范：Return the string-concatenation of "[object ", tag, and "]".
-  JavaScript：return '[object ' + tag + ']';
 
-使用 let（而不是 const）是为了匹配规范的语言。
-某些内容被省略了——例如，ReturnIfAbrupt 的简写符号 ? 和 !。
+  JavaScript：`if (typeof(value) === 'string')`
+
+  （非常宽松的翻译；`TypeOf()`在下方定义）
+
+- 规范：If IsCallable(method) is true
+
+  JavaScript：`if (IsCallable(method))`
+
+  （`IsCallable()`在下方定义）
+
+- 规范：Let numValue be ToNumber(value)
+
+  JavaScript：`let numValue = Number(value)`
+
+- 规范：Let isArray be IsArray(O)
+
+  JavaScript：`let isArray = Array.isArray(O)`
+
+- 规范：If O has a [[NumberData]] internal slot
+
+  JavaScript：`if ('__NumberData__' in O)`
+
+- 规范：Let tag be Get(O, @@toStringTag)
+
+  JavaScript：`let tag = O[Symbol.toStringTag]`
+
+- 规范：Return the string-concatenation of "[object ", tag, and "]".
+
+  JavaScript：`return '[object ' + tag + ']'`;
+
+使用`let`（而不是`const`）是为了匹配规范的语言。
+
+某些内容被省略了——例如，ReturnIfAbrupt 的简写符号`?`和`!`。
 
 ```javascript
 /**
@@ -498,13 +547,13 @@ function IsCallable(x) {
 
 ### 2.4 强制转换算法示例
 
-#### 2.4.1 ToPrimitive()
+#### 2.4.1 `ToPrimitive()`
 
-ToPrimitive() 操作是许多强制转换算法的中间步骤（其中一些我们将在本章后面看到）。它将任意值转换为原始值。
+`ToPrimitive()`操作是许多强制转换算法的中间步骤（其中一些我们将在本章后面看到）。它将任意值转换为原始值。
 
-ToPrimitive() 在规范中经常被使用，因为大多数运算符只能与原始值一起工作。例如，我们可以使用加法运算符 (+) 来相加数字和拼接字符串，但我们不能用它来拼接数组。
+`ToPrimitive()`在规范中经常被使用，因为大多数运算符只能与原始值一起工作。例如，我们可以使用加法运算符（`+`）来相加数字和拼接字符串，但我们不能用它来拼接数组。
 
-以下是 ToPrimitive() 的 JavaScript 版本：
+以下是`ToPrimitive()`的 JavaScript 版本：
 
 ```typescript
 /**
@@ -516,9 +565,7 @@ function ToPrimitive(input: any,
   if (TypeOf(input) === 'object') {
 ```
 
-
-
- ```
+```javascript
 let exoticToPrim = input[Symbol.toPrimitive]; // (A)
 if (exoticToPrim !== undefined) {
     let result = exoticToPrim.call(input, hint);
@@ -537,9 +584,9 @@ return OrdinaryToPrimitive(input, hint);
 }
 ```
 
-ToPrimitive() 允许对象通过 Symbol.toPrimitive 覆盖对原始值的转换（第 A 行）。如果对象没有这样做，则将其传递给 OrdinaryToPrimitive()：
+`ToPrimitive()`允许对象通过`Symbol.toPrimitive`覆盖对原始值的转换（第 A 行）。如果对象没有这样做，则将其传递给`OrdinaryToPrimitive()`：
 
-```
+```javascript
 function OrdinaryToPrimitive(O: object, hint: 'string' | 'number') {
     let methodNames;
     if (hint === 'string') {
@@ -560,43 +607,43 @@ function OrdinaryToPrimitive(O: object, hint: 'string' | 'number') {
 }
 ```
 
-##### 2.4.1.1 ToPrimitive() 的调用者使用哪个 hint？
+##### 2.4.1.1 `ToPrimitive()`的调用者使用哪个 hint？
 
-参数 hint 可以具有以下三个值之一：
+参数`hint`可以具有以下三个值之一：
 
-- 'number' 表示：如果可能，input 应被转换为数字。
-- 'string' 表示：如果可能，input 应被转换为字符串。
-- 'default' 表示：对返回的数字或字符串类型没有偏好。
+- `'number'`表示：如果可能，`input`应被转换为数字。
+- `'string'`表示：如果可能，`input`应被转换为字符串。
+- `'default'`表示：对返回的数字或字符串类型没有偏好。
 
-以下是各种操作如何使用 ToPrimitive() 的一些示例：
+以下是各种操作如何使用`ToPrimitive()`的一些示例：
 
-- hint === 'number'。以下操作偏好数字：
-  - ToNumeric()
-  - ToNumber()
-  - ToBigInt(), BigInt()
-  - 抽象关系比较 (<)
+- `hint === 'number'`。以下操作偏好数字：
+  - `ToNumeric()`
+  - `ToNumber()`
+  - `ToBigInt()`、`BigInt()`
+  - 抽象关系比较（`<`）
 
-- hint === 'string'。以下操作偏好字符串：
-  - ToString()
-  - ToPropertyKey()
+- `hint === 'string'`。以下操作偏好字符串：
+  - `ToString()`
+  - `ToPropertyKey()`
 
-- hint === 'default'。以下操作对返回的原始值的类型是中立的：
-  - 抽象相等比较 (==)
-  - 加法运算符 (+)
-  - new Date(value)（value 可以是数字或字符串）
+- `hint === 'default'`。以下操作对返回的原始值的类型是中立的：
+  - 抽象相等比较（`==`）
+  - 加法运算符（`+`）
+  - `new Date(value)`（`value`可以是数字或字符串）
 
-正如我们所见，默认行为是将 'default' 当作 'number' 处理。只有 Symbol 和 Date 的实例会覆盖此行为（稍后展示）。
+正如我们所见，默认行为是将`'default'`当作`'number'`处理。只有 Symbol 和 Date 的实例会覆盖此行为（稍后展示）。
 
 ##### 2.4.1.2 将对象转换为原始值时会调用哪些方法？
 
-如果没有通过 Symbol.toPrimitive 覆盖对原始值的转换，OrdinaryToPrimitive() 会调用以下两个方法中的一个或两个：
+如果没有通过`Symbol.toPrimitive`覆盖对原始值的转换，`OrdinaryToPrimitive()`会调用以下两个方法中的一个或两个：
 
-- 如果 hint 表示我们希望原始值是字符串，则首先调用 'toString'。
-- 如果 hint 表示我们希望原始值是数字，则首先调用 'valueOf'。
+- 如果`hint`表示我们希望原始值是字符串，则首先调用`'toString'`。
+- 如果`hint`表示我们希望原始值是数字，则首先调用`'valueOf'`。
 
 以下代码演示了它的工作原理：
 
-```
+```javascript
 const obj = {
   toString() { return 'a' },
   valueOf() { return 1 },
@@ -609,20 +656,20 @@ assert.equal(String(obj), 'a');
 assert.equal(Number(obj), 1);
 ```
 
-具有属性键 Symbol.toPrimitive 的方法会覆盖常规的对原始值的转换。这在标准库中只做了两次：
+具有属性键`Symbol.toPrimitive`的方法会覆盖常规的对原始值的转换。这在标准库中只做了两次：
 
-- Symbol.prototype[Symbol.toPrimitive](hint)
+- `Symbol.prototype[Symbol.toPrimitive](hint)`
   - 如果接收者（receiver）是 Symbol 的实例，此方法始终返回被包装的 symbol。
-  - 其原因在于 Symbol 的实例有一个 .toString() 方法，它返回字符串。但即使 hint 是 'string'，也不应调用 .toString()，以免意外地将 Symbol 的实例转换为字符串（字符串是一种完全不同的属性键）。
+  - 其原因在于 Symbol 的实例有一个`.toString()`方法，它返回字符串。但即使`hint`是`'string'`，也不应调用`.toString()`，以免意外地将 Symbol 的实例转换为字符串（字符串是一种完全不同的属性键）。
 
-- Date.prototype[Symbol.toPrimitive](hint)
+- `Date.prototype[Symbol.toPrimitive](hint)`
   - 接下来将更详细地解释。
 
-##### 2.4.1.3 `Date.prototype[Symbol.toPrimitive]()`
+##### 2.4.1.3 `Date.prototype[Symbol.toPrimitive]()` 
 
 Date 处理转换为原始值的方式如下：
 
-```
+```javascript
 Date.prototype[Symbol.toPrimitive] = function (
   hint: 'default' | 'string' | 'number') {
   let O = this;
@@ -641,11 +688,11 @@ Date.prototype[Symbol.toPrimitive] = function (
 };
 ```
 
-与默认算法唯一的区别是 `'default'` 变成了 `'string'`（而不是 `'number'`）。如果我们使用将 hint 设置为 `'default'` 的操作，就可以观察到这一点：
+与默认算法唯一的区别是`'default'`变成了`'string'`（而不是`'number'`）。如果我们使用将`hint`设置为`'default'`的操作，就可以观察到这一点：
 
-- `==` 运算符会将对象强制转换为原始值（使用默认 hint），前提是另一个操作数是除 undefined、null 和 boolean 以外的原始值。在以下交互中，我们可以看到强制转换日期后的结果是字符串：
+- `==`运算符会将对象强制转换为原始值（使用默认`hint`），前提是另一个操作数是除 undefined、null 和 boolean 以外的原始值。在以下交互中，我们可以看到强制转换日期后的结果是字符串：
 
-```
+```javascript
 const d = new Date('2222-03-27');
 assert.equal(
   d == 'Wed Mar 27 2222 01:00:00 GMT+0100'
@@ -653,9 +700,9 @@ assert.equal(
   true);
 ```
 
-- `+` 运算符会将两个操作数都强制转换为原始值（使用默认 hint）。如果其中一个结果是字符串，则执行字符串拼接（否则执行数字加法）。在以下交互中，我们可以看到强制转换日期后的结果是字符串，因为该运算符返回了一个字符串。
+- `+`运算符会将两个操作数都强制转换为原始值（使用默认`hint`）。如果其中一个结果是字符串，则执行字符串拼接（否则执行数字加法）。在以下交互中，我们可以看到强制转换日期后的结果是字符串，因为该运算符返回了一个字符串。
 
-```
+```javascript
 const d = new Date('2222-03-27');
 assert.equal(
   123 + d,
@@ -663,17 +710,19 @@ assert.equal(
     + ' (Central European Standard Time)');
 ```
 
-#### 2.4.2 `ToString()` 及相关操作
+#### 2.4.2 `ToString()`及相关操作
 
-这是 ToString() 的 JavaScript 版本：
+这是`ToString()`的 JavaScript 版本：
 
-```
+```javascript
 function ToString(argument) {
   if (argument === undefined) {
     return 'undefined';
 ```
 
 ### 2.4 强制转换算法示例
+
+
 
 ```
 } else if (argument === null) {
@@ -698,9 +747,9 @@ function ToString(argument) {
 }
 ```
 
-请注意，此函数对于对象，在将原始结果转换为字符串之前，如何使用 ToPrimitive() 作为中间步骤（第 A 行）。
+请注意，此函数对于对象，在将原始结果转换为字符串之前，如何使用`ToPrimitive()`作为中间步骤（第 A 行）。
 
-ToString() 与 String() 的工作方式有一个有趣的差异：如果 argument 是一个 symbol，前者会抛出 TypeError，而后者不会。为什么会这样？Symbol 的默认行为是将其转换为字符串时会抛出异常：
+`ToString()`与`String()`的工作方式有一个有趣的差异：如果`argument`是一个 symbol，前者会抛出`TypeError`，而后者不会。为什么会这样？Symbol 的默认行为是将其转换为字符串时会抛出异常：
 
 ```
 > const sym = Symbol('sym');
@@ -711,7 +760,7 @@ TypeError: Cannot convert a Symbol value to a string
 TypeError: Cannot convert a Symbol value to a string
 ```
 
-这个默认值在 String() 和 Symbol.prototype.toString() 中被覆盖（两者将在接下来的小节中描述）：
+这个默认值在`String()`和`Symbol.prototype.toString()`中被覆盖（两者将在接下来的小节中描述）：
 
 ```
 > String(sym)
@@ -720,7 +769,7 @@ TypeError: Cannot convert a Symbol value to a string
 'Symbol(sym)'
 ```
 
-##### 2.4.2.1 `String()`
+### 2.4.2.1 `String()`
 
 ```
 function String(value) {
@@ -747,9 +796,9 @@ return StringCreate(s, new.target.prototype); // 简化版！
 }
 ```
 
-String() 的工作方式取决于它是通过函数调用还是通过 new 调用的。它使用 new.target 来区分这两种情况。
+`String()`的工作方式取决于它是通过函数调用还是通过`new`调用的。它使用`new.target`来区分这两种情况。
 
-这些是辅助函数 StringCreate() 和 SymbolDescriptiveString()：
+这些是辅助函数`StringCreate()`和`SymbolDescriptiveString()`：
 
 ```
 /**
@@ -771,9 +820,9 @@ function SymbolDescriptiveString(sym) {
 }
 ```
 
-##### 2.4.2.2 `Symbol.prototype.toString()`
+### 2.4.2.2 `Symbol.prototype.toString()`
 
-除了 String()，我们还可以使用 .toString() 方法将 symbol 转换为字符串。其规范如下所示。
+除了`String()`，我们还可以使用`.toString()`方法将 symbol 转换为字符串。其规范如下所示。
 
 ```
 Symbol.prototype.toString = function () {
@@ -787,8 +836,6 @@ function thisSymbolValue(value) {
     if (TypeOf(value) === 'object' && '__SymbolData__' in value) {
 ```
 
-
-
 ## 2.4 强制类型转换算法示例
 
 ```javascript
@@ -798,9 +845,9 @@ return s;
 }
 ```
 
-#### 2.4.2.3 Object.prototype.toString
+### 2.4.2.3 Object.prototype.toString
 
-`.toString()` 的默认规范如下所示：
+`.toString()`的默认规范如下所示：
 
 ```javascript
 Object.prototype.toString = function () {
@@ -857,7 +904,7 @@ assert.equal(
   String(new MyClass()), '[object Object]');
 ```
 
-通常，我们会重写 `.toString()` 以配置 `MyClass` 的字符串表示形式，但我们也可以通过修改方括号内 “object” 之后的内容来改变它：
+通常，我们会重写`.toString()`以配置`MyClass`的字符串表示形式，但我们也可以通过修改方括号内 “object” 之后的内容来改变它：
 
 ```javascript
 class MyClass {}
@@ -866,7 +913,7 @@ assert.equal(
   String(new MyClass()), '[object Custom!]');
 ```
 
-将重写版本的 `.toString()` 与 `Object.prototype` 中的原始版本进行对比会很有趣：
+将重写版本的`.toString()`与`Object.prototype`中的原始版本进行对比会很有趣：
 
 ```javascript
 > ['a', 'b'].toString()
@@ -880,9 +927,9 @@ assert.equal(
 '[object RegExp]'
 ```
 
-#### 2.4.3 ToPropertyKey()
+### 2.4.3 ToPropertyKey()
 
-`ToPropertyKey()` 被方括号运算符等操作所使用。其工作原理如下：
+`ToPropertyKey()`被方括号运算符等操作所使用。其工作原理如下：
 
 ```javascript
 function ToPropertyKey(argument) {
@@ -896,9 +943,9 @@ function ToPropertyKey(argument) {
 
 同样地，对象在与原语（primitives）协同工作之前会被转换为原语。
 
-#### 2.4.4 ToNumeric() 及相关操作
+### 2.4.4 ToNumeric() 及相关操作
 
-`ToNumeric()` 被乘法运算符 (`*`) 等操作所使用。其工作原理如下：
+`ToNumeric()`被乘法运算符 (`*`) 等操作所使用。其工作原理如下：
 
 ```javascript
 function ToNumeric(value) {
@@ -910,9 +957,9 @@ function ToNumeric(value) {
 }
 ```
 
-##### 2.4.4.1 ToNumber()
+#### 2.4.4.1 ToNumber()
 
-`ToNumber()` 的工作原理如下：
+`ToNumber()`的工作原理如下：
 
 ```javascript
 function ToNumber(argument) {
@@ -940,7 +987,7 @@ function ToNumber(argument) {
 }
 ```
 
-`ToNumber()` 的结构与 `ToString()` 的结构类似。
+`ToNumber()`的结构与`ToString()`的结构类似。
 
 ### 2.5 强制转换操作
 
@@ -969,9 +1016,11 @@ function Addition(leftHandSide, rightHandSide) {
 
 - 两个操作数都被转换为原语值。
 - 如果其中一个结果是字符串，则两者都转换为字符串并进行拼接（行 A）。
-- 否则，两个操作数都被转换为数值并相加（行 B）。`Type()` 返回 `lnum` 的 ECMAScript 规范类型。`.add()` 是数值类型的一个方法。
+- 否则，两个操作数都被转换为数值并相加（行 B）。`Type()`返回`lnum`的 ECMAScript 规范类型。`.add()`是数值类型的一个方法。
 
 #### 2.5.2 抽象相等比较 (==)
+
+
 
 ```javascript
 /** 宽松相等 (==) */
@@ -1058,18 +1107,23 @@ function abstractEqualityComparison(x, y) {
 
 现在我们详细研究了 JavaScript 的类型强制转换是如何工作的，让我们以一个关于类型转换的简短术语表作为结束：
 
-- 在*类型转换 (type conversion)* 中，我们希望输出值具有给定的类型。如果输入值已经具有该类型，则原样返回。否则，它将被转换为具有目标类型的值。
-- *显式类型转换 (Explicit type conversion)* 指程序员使用某种操作（函数、运算符等）来触发类型转换。显式转换可以是：
-  - *检查的 (Checked)：* 如果值无法转换，则抛出异常。
-  - *不检查的 (Unchecked)：* 如果值无法转换，则返回一个错误值。
-- *类型强制转换 (type casting)* 的定义取决于编程语言。例如，在 Java 中，它是显式的检查类型转换。
-- *类型强制转换 (Type coercion)* 是隐式类型转换：操作会自动将其参数转换为所需的类型。可以是检查的，不检查的，或者介于两者之间。
+- 在类型转换（type conversion）中，我们希望输出值具有给定的类型。如果输入值已经具有该类型，则原样返回。否则，它将被转换为具有目标类型的值。
+
+- 显式类型转换（Explicit type conversion）指程序员使用某种操作（函数、运算符等）来触发类型转换。显式转换可以是：
+
+  - 检查的（Checked）：如果值无法转换，则抛出异常。
+
+  - 不检查的（Unchecked）：如果值无法转换，则返回一个错误值。
+
+- 类型强制转换（type casting）的定义取决于编程语言。例如，在 Java 中，它是显式的检查类型转换。
+
+- 类型强制转换（Type coercion）是隐式类型转换：操作会自动将其参数转换为所需的类型。可以是检查的，不检查的，或者介于两者之间。
 
 [来源：[Wikipedia](https://en.wikipedia.org/wiki/Type_conversion)]
 
 # 第 3 章：解构算法
 
-目录
+## 目录
 
 - 3.1 为模式匹配算法做准备 33
   - 3.1.1 使用声明式规则指定匹配算法 34
@@ -1082,8 +1136,8 @@ function abstractEqualityComparison(x, y) {
 - 3.3 空对象模式和数组模式 37
 - 3.4 应用算法 38
   - 3.4.1 背景：通过匹配传递参数 38
-  - 3.4.2 使用 move2() 39
-  - 3.4.3 使用 move1() 39
+  - 3.4.2 使用 `move2()` 39
+  - 3.4.3 使用 `move1()` 39
   - 3.4.4 结论：默认值是模式部分的特性 40
 
 在本章中，我们将从另一个角度看待解构：将其视为一个递归的模式匹配算法。
@@ -1095,21 +1149,17 @@ function move({x=0, y=0} = {}) { ... }
 function move({x, y} = { x: 0, y: 0 }) { ... }
 ```
 
-### 3.1 为模式匹配算法做准备
+## 3.1 为模式匹配算法做准备
 
 解构赋值看起来像这样：
 
-```
+```text
 «pattern» = «value»
 ```
 
-
-
-## 3 解构算法
-
 我们希望使用模式（pattern）从值中提取数据。
 
-现在我们将研究一种执行此类赋值的算法。在函数式编程中，这种算法被称为 *模式匹配*（*pattern matching*，简称 *matching*）。它定义了一个运算符 ←（“匹配”），将模式与值进行匹配，并在匹配过程中为变量赋值：
+现在我们将研究一种执行此类赋值的算法。在函数式编程中，这种算法被称为模式匹配（pattern matching，简称 matching）。它定义了一个运算符 ←（“匹配”），将模式与值进行匹配，并在匹配过程中为变量赋值：
 
 `<<pattern>> ← <<value>>`
 
@@ -1117,36 +1167,42 @@ function move({x, y} = { x: 0, y: 0 }) { ... }
 
 匹配运算符的规范由一组声明式规则组成，这些规则会递归进入两个操作数的结构中。这种声明式记法可能需要一段时间来适应，但它使规范更加简洁。
 
-#### 3.1.1 使用声明式规则指定匹配算法
+### 3.1.1 使用声明式规则指定匹配算法
 
 本章中使用的声明式规则作用于输入，并通过副作用产生算法结果。以下就是这样一个规则（稍后我们还会再次看到）：
 
-- (2c) {key: <<pattern>>, <<properties>>} ← obj
-    <<pattern>> ← obj.key
-    {<<properties>>} ← obj
+- (2c) `{key: <<pattern>>, <<properties>>} ← obj`
+
+  ```text
+  <<pattern>> ← obj.key
+  {<<properties>>} ← obj
+  ```
 
 该规则包含以下部分：
 
-- (2c) 是规则的 *编号*。编号用于引用该规则。
-- *头部*（第一行）描述了输入必须是什么样子才能应用此规则。
-- *主体*（剩余行）描述了应用此规则后会发生什么。
+- (2c) 是规则的编号。编号用于引用该规则。
+- 头部（第一行）描述了输入必须是什么样子才能应用此规则。
+- 主体（剩余行）描述了应用此规则后会发生什么。
 
 在规则 (2c) 中，头部意味着：如果存在一个具有至少一个属性（其键为 key）以及零个或多个剩余属性的对象模式，则可以应用此规则。该规则的效果是：执行继续进行，将属性值模式与 `obj.key` 匹配，将剩余属性与 `obj` 匹配。
 
 让我们再看一个本章中的规则：
 
-- (2e) {} ← obj (无剩余属性)
-    // 我们已完成
+- (2e) `{}` ← obj（无剩余属性）
+
+  ```javascript
+  // 我们已完成
+  ```
 
 在规则 (2e) 中，头部意味着：如果空对象模式 `{}` 与值 `obj` 匹配，则执行此规则。主体意味着在这种情况下，我们已经完成了。
 
 规则 (2c) 和规则 (2e) 共同构成了一个声明式循环，遍历箭头左侧模式的属性。
 
-#### 3.1.2 基于声明式规则评估表达式
+### 3.1.2 基于声明式规则评估表达式
 
 完整的算法是通过一系列声明式规则指定的。假设我们要评估以下匹配表达式：
 
-```
+```text
 {first: f, last: l} ↱ obj
 ```
 
@@ -1154,65 +1210,95 @@ function move({x, y} = { x: 0, y: 0 }) { ... }
 
 有时头部包含一个条件，该条件同样决定了规则是否适用 —— 例如：
 
-- (3a) {«elements»} ↱ non_iterable
-  if (!isIterable(non_iterable))
-  throw new TypeError();
+- (3a) `{«elements»} ↱ non_iterable`
 
-### 3.2 模式匹配算法
+  ```javascript
+  if (!isIterable(non_iterable)) {
+    throw new TypeError();
+  }
+  ```
 
-#### 3.2.1 模式
+## 3.2 模式匹配算法
+
+### 3.2.1 模式
 
 模式可以是：
 
-- 一个变量：x
-- 一个对象模式：{«properties»}
-- 一个数组模式：[«elements»]
+- 一个变量：`x`
+- 一个对象模式：`{«properties»}`
+- 一个数组模式：`[«elements»]`
 
 接下来的三个章节指定了在匹配表达式中处理这三种情况的规则。
 
-#### 3.2.2 变量规则
+### 3.2.2 变量规则
 
-- (1) x ↱ value (包括 undefined 和 null)
-  x = value
+- (1) `x ↱ value`（包括 `undefined` 和 `null`）
 
-#### 3.2.3 对象模式规则
+  ```javascript
+  x = value;
+  ```
 
-- (2a) {«properties»} ↱ undefined (非法值)
+### 3.2.3 对象模式规则
+
+- (2a) `{«properties»} ↱ undefined`（非法值）
+
+  ```javascript
   throw new TypeError();
-- (2b) {«properties»} ↱ null (非法值)
+  ```
+
+- (2b) `{«properties»} ↱ null`（非法值）
+
+  ```javascript
   throw new TypeError();
-- (2c) {key: «pattern», «properties»} ↱ obj
+  ```
+
+- (2c) `{key: «pattern», «properties»} ↱ obj`
+
+  ```text
   «pattern» ↱ obj.key
   {«properties»} ↱ obj
-- (2d) {key: «pattern» = default_value, «properties»} ↱ obj
+  ```
 
-```javascript
-const tmp = obj.key;
-if (tmp !== undefined) {
-  «pattern» ← tmp
-} else {
-  «pattern» ← default_value
-}
-{«properties»} ← obj
-```
+- (2d) `{key: «pattern» = default_value, «properties»} ↱ obj`
 
-- (2e) {} ← obj (无剩余属性)
+  ```javascript
+  const tmp = obj.key;
+  if (tmp !== undefined) {
+    «pattern» ← tmp;
+  } else {
+    «pattern» ← default_value;
+  }
+  {«properties»} ← obj;
+  ```
+
+- (2e) `{}` ← obj（无剩余属性）
+
+  ```javascript
   // 我们已完成
+  ```
 
 规则 2a 和 2b 处理非法值。规则 2c–2e 循环遍历模式的属性。在规则 2d 中，我们可以看到默认值提供了一个替代方案，如果在 `obj` 中没有匹配的属性，则与之匹配。
 
-#### 3.2.4 数组模式规则
+### 3.2.4 数组模式规则
 
 数组模式与可迭代对象。数组解构算法始于一个数组模式和一个可迭代对象：
 
-- (3a) [«elements»] ← non_iterable (非法值)
-  if (!isIterable(non_iterable))
-    throw new TypeError();
+- (3a) `[«elements»] ← non_iterable`（非法值）
 
-- (3b) [«elements»] ← iterable
-  if (isIterable(iterable))
+  ```javascript
+  if (!isIterable(non_iterable)) {
+    throw new TypeError();
+  }
+  ```
+
+- (3b) `[«elements»] ← iterable`
+
+  ```javascript
+  if (isIterable(iterable)) {
     const iterator = iterable[Symbol.iterator]();
-    «elements» ← iterator
+    «elements» ← iterator;
+  }
+  ```
 
 辅助函数：
 
@@ -1231,32 +1317,51 @@ function isIterable(value) {
 
 规则如下：
 
-- (3c) «pattern», «elements» ← iterator
+- (3c) `«pattern», «elements» ← iterator`
+
+  ```text
   «pattern» ← getNext(iterator) // 最后一个元素之后为 undefined
   «elements» ← iterator
+  ```
 
-- (3d) «pattern» = default_value, «elements» ← iterator
+- (3d) `«pattern» = default_value, «elements» ← iterator`
+
+  ```javascript
   const tmp = getNext(iterator);  // 最后一个元素之后为 undefined
+
   if (tmp !== undefined) {
-    «pattern» ← tmp
+    «pattern» ← tmp;
   } else {
-    «pattern» ← default_value
+    «pattern» ← default_value;
   }
-  «elements» ← iterator
 
-- (3e) , «elements» ← iterator (空洞，省略)
+  «elements» ← iterator;
+  ```
+
+- (3e) `, «elements» ← iterator`（空洞，省略）
+
+  ```javascript
   getNext(iterator); // 跳过
-  «elements» ← iterator
+  «elements» ← iterator;
+  ```
 
-- (3f) ...«pattern» ← iterator (永远是最后一部分！)
+- (3f) `...«pattern» ← iterator`（永远是最后一部分！）
+
+  ```javascript
   const tmp = [];
+
   for (const elem of iterator) {
     tmp.push(elem);
   }
-  «pattern» ← tmp
 
-- (3g) ← iterator (无剩余元素)
+  «pattern» ← tmp;
+  ```
+
+- (3g) `← iterator`（无剩余元素）
+
+  ```javascript
   // 我们已完成
+  ```
 
 辅助函数：
 
@@ -1269,7 +1374,7 @@ function getNext(iterator) {
 
 迭代器结束类似于对象中缺失属性的情况。
 
-### 3.3 空对象模式和空数组模式
+## 3.3 空对象模式和空数组模式
 
 算法规则的一个有趣后果是：我们可以使用空对象模式和空数组模式进行解构。
 
@@ -1297,7 +1402,7 @@ assert.throws(
 
 换句话说：空解构模式强制要求值具有某些特性，但没有其他效果。
 
-### 3.4 应用该算法
+## 3.4 应用该算法
 
 在 JavaScript 中，命名参数是通过对象模拟的：调用者使用对象字面量，被调用者使用解构。这种模拟在《JavaScript for impatient programmers》中详细解释。以下代码展示了一个示例：`move1()` 有两个命名参数 `x` 和 `y`：
 
@@ -1330,112 +1435,112 @@ function move2({x, y} = { x: 0, y: 0 }) {
 
 为了明白为什么 `move1()` 是正确的，我们将通过两个示例来同时使用这两个函数。在此之前，让我们看看参数传递如何通过匹配来解释。
 
-#### 3.4.1 背景：通过匹配传递参数
+### 3.4.1 背景：通过匹配传递参数
 
-对于函数调用，形式参数（函数定义内部）与实际参数（函数调用内部）进行匹配。例如，看以下函数定义和函数调用。
+对于函数调用，形式参数（函数定义内部）与实际参数（函数调用内部）进行匹配。例如，看以下函数定义和函数调用：
 
 ```javascript
 function func(a=0, b=0) { ... }
 func(1, 2);
 ```
 
-
-
-```
+```text
 [a=0, b=0] ← [1, 2]
 ```
 
-#### 3.4.2 使用 move2()
+### 3.4.2 使用 `move2()`
 
 让我们来考察 `move2()` 的解构工作原理。
 
 **示例 1。** 调用函数 `move2()` 会导致如下解构：
 
-```
+```text
 [{x, y} = { x: 0, y: 0 }] ← []
 ```
 
 左侧的数组元素在右侧没有匹配项，这就是为什么 `{x, y}` 是与默认值进行匹配，而不是与右侧的数据匹配（规则 3b、3d）：
 
-```
+```text
 {x, y} ← { x: 0, y: 0 }
 ```
 
-左侧包含了*属性值简写*。它是以下形式的缩写：
+左侧包含了属性值简写。它是以下形式的缩写：
 
-```
+
+
+```text
 {x: x, y: y} ← { x: 0, y: 0 }
 ```
 
 此解构导致以下两个赋值（规则 2c、1）：
 
-```
+```js
 x = 0;
 y = 0;
 ```
 
 这正是我们想要的结果。然而，在下一个示例中，我们就没有这么幸运了。
 
-**示例 2。** 让我们考察函数调用 `move2({z: 3})`，它导致如下解构：
+**示例 2。** 让我们考察函数调用`move2({z: 3})`，它导致如下解构：
 
-```
+```text
 [{x, y} = { x: 0, y: 0 }] ← [{z: 3}]
 ```
 
 右侧的索引 0 处有一个数组元素。因此，忽略了默认值，下一步是（规则 3d）：
 
-```
+```text
 {x, y} ← { z: 3 }
 ```
 
-这导致 `x` 和 `y` 都被设置为 `undefined`，这不是我们想要的。问题在于 `{x, y}` 不再与默认值匹配，而是与 `{z: 3}` 匹配。
+这导致`x`和`y`都被设置为`undefined`，这不是我们想要的。问题在于`{x, y}`不再与默认值匹配，而是与`{z: 3}`匹配。
 
-#### 3.4.3 使用 move1()
+### 3.4.3 使用`move1()`
 
-让我们试试 `move1()`。
+让我们试试`move1()`。
 
-**示例 1:** `move1()`
+**示例 1：** `move1()`
 
-属性 `x` 和属性 `y` 在右侧都没有匹配项。因此，使用默认值，接下来执行以下解构（规则 2d）：
+属性`x`和属性`y`在右侧都没有匹配项。因此，使用默认值，接下来执行以下解构（规则 2d）：
 
-```
+```text
 x ← 0
 y ← 0
 ```
 
 这导致以下赋值（规则 1）：
 
-```
+```js
 x = 0
 y = 0
 ```
 
 这里，我们得到了想要的结果。让我们看看在下一个示例中，好运是否能延续。
 
-**示例 2**: `move1({z: 3})`
+**示例 2：** `move1({z: 3})`
 
-```
+```text
 [ {x=0, y=0} ] ← [ {z: 3} ]
 ```
 
 数组模式的第一个元素在右侧有匹配项，该匹配项被用于继续解构（规则 3d）：
 
-```
+```text
 {x=0, y=0} ← {z: 3}
 ```
 
-像示例 1 一样，右侧没有属性 `x` 和 `y`，使用了默认值：
+像示例 1 一样，右侧没有属性`x`和`y`，使用了默认值：
 
-```
+```text
 x = 0
 y = 0
 ```
 
-它按预期工作了！这一次，模式 `x` 和 `y` 与 `{z: 3}` 匹配不是问题，因为它们有自己的局部默认值。
+它按预期工作了！这一次，模式`x`和`y`与`{z: 3}`匹配不是问题，因为它们有自己的局部默认值。
 
-#### 3.4.4 结论：默认值是模式部分的一个特性
+### 3.4.4 结论：默认值是模式部分的一个特性
 
-这些示例证明，默认值是模式部分（对象属性或数组元素）的一个特性。如果一个部分没有匹配项，或者匹配到 `undefined`，那么就会使用默认值。也就是说，模式会与默认值进行匹配。
+这些示例证明，默认值是模式部分（对象属性或数组元素）的一个特性。如果一个部分没有匹配项，或者匹配到`undefined`，那么就会使用默认值。也就是说，模式会与默认值进行匹配。
 
 # 第 4 章
 
@@ -1446,7 +1551,7 @@ y = 0
 - 4.1 作用域 ……………………………………………………… 41
 - 4.2 词法环境 …………………………… 42
 - 4.3 全局对象 ……………………………………… 42
-- 4.4 在浏览器中，globalThis 并不直接指向全局对象 … 42
+- 4.4 在浏览器中，`globalThis`并不直接指向全局对象 … 42
 - 4.5 全局环境 …………………………… 43
   - 4.5.1 脚本作用域与模块作用域 ………… 44
   - 4.5.2 创建变量：声明式记录 vs 对象记录 … 44
@@ -1461,21 +1566,18 @@ y = 0
 
 变量的*词法作用域*（简称*作用域*）是程序中可以访问该变量的区域。JavaScript 的作用域是*静态的*（它们不会在运行时改变），并且可以嵌套——例如：
 
-```
+```js
 function func() { // (A)
   const aVariable = 1;
   if (true) { // (B)
     const anotherVariable = 2;
-```
-
-```
   }
 }
 ```
 
-`if` 语句引入的作用域（行 B）嵌套在函数 `func()` 的作用域（行 A）内部。
+`if`语句引入的作用域（行 B）嵌套在函数`func()`的作用域（行 A）内部。
 
-一个作用域 S 最近的外部环绕作用域称为 S 的*外部作用域*。在这个例子中，`func` 是 `if` 的外部作用域。
+一个作用域 S 最近的外部环绕作用域称为 S 的*外部作用域*。在这个例子中，`func`是`if`的外部作用域。
 
 ### 4.2 词法环境
 
@@ -1490,22 +1592,22 @@ function func() { // (A)
 
 全局对象是一个对象，其属性会成为全局变量。（我们很快就会探讨它如何融入环境树中。）可以通过以下全局变量访问它：
 
-- 在所有平台上可用：`globalThis`。这个名称基于这样一个事实：它在全局作用域中与 `this` 具有相同的值。
+- 在所有平台上可用：`globalThis`。这个名称基于这样一个事实：它在全局作用域中与`this`具有相同的值。
 - 其他用于引用全局对象的变量并非在所有平台上都可用：
-  - `window` 是引用全局对象的经典方式。它在普通浏览器代码中有效，但在 *Web Workers*（与普通浏览器进程并发运行的进程）和 Node.js 中不起作用。
-  - `self` 在浏览器中的任何地方（包括在 Web Workers 中）都可用。但 Node.js 不支持它。
-  - `global` 仅在 Node.js 上可用。
+  - `window`是引用全局对象的经典方式。它在普通浏览器代码中有效，但在*Web Workers*（与普通浏览器进程并发运行的进程）和 Node.js 中不起作用。
+  - `self`在浏览器中的任何地方（包括在 Web Workers 中）都可用。但 Node.js 不支持它。
+  - `global`仅在 Node.js 上可用。
 
-### 4.4 在浏览器中，globalThis 并不直接指向全局对象
+### 4.4 在浏览器中，`globalThis`并不直接指向全局对象
 
-在浏览器中，`globalThis` 并不直接指向全局对象，存在一个间接层。例如，考虑一个网页上的 iframe：
+在浏览器中，`globalThis`并不直接指向全局对象，存在一个间接层。例如，考虑一个网页上的 iframe：
 
-- 每当 iframe 的 `src` 改变时，它就会获得一个新的全局对象。
-- 然而，`globalThis` 始终具有相同的值。这个值可以从 iframe 外部检查，如下所示（灵感来源于 [globalThis 提案中的一个示例](https://example.com)）。
+- 每当 iframe 的`src`改变时，它就会获得一个新的全局对象。
+- 然而，`globalThis`始终具有相同的值。这个值可以从 iframe 外部检查，如下所示（灵感来源于 [globalThis 提案中的一个示例](https://example.com)）。
 
-文件 parent.html：
+文件`parent.html`：
 
-```
+```html
 <iframe src="iframe.html?first"></iframe>
 <script>
   const iframe = document.querySelector('iframe');
@@ -1534,24 +1636,24 @@ function func() { // (A)
 </script>
 ```
 
-文件 iframe.html：
+文件`iframe.html`：
 
-```
+```html
 <script>
   globalThis.iframeName = location.search.slice(1);
 </script>
 ```
 
-浏览器如何确保 `globalThis` 在这种情况下不会改变？它们在内部区分两个对象：
+浏览器如何确保`globalThis`在这种情况下不会改变？它们在内部区分两个对象：
 
-- `Window` 是全局对象。每当位置改变时，它就会改变。
-- `WindowProxy` 是一个将所有访问转发到当前 `Window` 的对象。这个对象永远不会改变。
+- `Window`是全局对象。每当位置改变时，它就会改变。
+- `WindowProxy`是一个将所有访问转发到当前`Window`的对象。这个对象永远不会改变。
 
-在浏览器中，`globalThis` 指向 `WindowProxy`；在其他地方，它直接指向全局对象。
+在浏览器中，`globalThis`指向`WindowProxy`；在其他地方，它直接指向全局对象。
 
 ### 4.5 全局环境
 
-全局作用域是“最外层”的作用域——它没有外部作用域。它的环境是*全局环境*。每个环境都通过一个由外部环境引用连接起来的环境链与全局环境相连。全局环境的外部环境引用为 `null`。
+全局作用域是“最外层”的作用域——它没有外部作用域。它的环境是*全局环境*。每个环境都通过一个由外部环境引用连接起来的环境链与全局环境相连。全局环境的外部环境引用为`null`。
 
 全局环境记录使用两个环境记录来管理其变量：
 
@@ -1566,7 +1668,7 @@ function func() { // (A)
 
 如果我们忽略变量绑定如何添加到全局环境的相对复杂的规则，那么全局作用域和模块作用域的工作方式就像嵌套的代码块：
 
-```
+```js
 { // 全局作用域（*所有*脚本的作用域）
 
   // （全局变量）
@@ -1585,10 +1687,10 @@ function func() { // (A)
 
 为了创建一个真正全局的变量，我们必须处于全局作用域——这只在脚本的顶层才会发生：
 
-- 顶层的 `const`、`let` 和 `class` 在声明式环境记录中创建绑定。
-- 顶层的 `var` 和 `function` 声明在对象环境记录中创建绑定。
+- 顶层的`const`、`let`和`class`在声明式环境记录中创建绑定。
+- 顶层的`var`和`function`声明在对象环境记录中创建绑定。
 
-```
+```html
 <script>
   const one = 1;
   var two = 2;
@@ -1599,46 +1701,37 @@ function func() { // (A)
   console.log(two); // 2
 
   // 并非所有声明都会创建全局对象的属性：
-```
-
-
-
- ## 4.6 结论：为什么 JavaScript 既有普通全局变量又有全局对象？
-
-全局对象通常被认为是一个设计失误。因此，较新的结构（如 `const`、`let` 和 `class`）在脚本作用域中会创建普通全局变量。
-
-```
-console.log(globalThis.one); // undefined
-console.log(globalThis.two); // 2
+  console.log(globalThis.one); // undefined
+  console.log(globalThis.two); // 2
 </script>
 ```
 
-#### 4.5.3 获取或设置变量
+### 4.5.3 获取或设置变量
 
 当我们获取或设置一个变量，且两个环境记录（environment records）中都有该变量的绑定时，声明式记录（declarative record）优先：
 
-```
+```html
 <script>
-let myGlobalVariable = 1; // 声明式环境记录
-globalThis.myGlobalVariable = 2; // 对象环境记录
+  let myGlobalVariable = 1; // 声明式环境记录
+  globalThis.myGlobalVariable = 2; // 对象环境记录
 
-console.log(myGlobalVariable); // 1 (声明式记录优先)
-console.log(globalThis.myGlobalVariable); // 2
+  console.log(myGlobalVariable); // 1 (声明式记录优先)
+  console.log(globalThis.myGlobalVariable); // 2
 </script>
 ```
 
-#### 4.5.4 全局 ECMAScript 变量与全局宿主变量
+### 4.5.4 全局 ECMAScript 变量与全局宿主变量
 
-除了通过 `var` 和函数声明创建的变量外，全局对象还包含以下属性：
+除了通过`var`和函数声明创建的变量外，全局对象还包含以下属性：
 
 - 所有 ECMAScript 的内置全局变量
 - 所有宿主平台（浏览器、Node.js 等）的内置全局变量
 
-使用 `const` 或 `let` 可以确保全局变量的声明不会影响（也不会被影响）ECMAScript 和宿主平台的内置全局变量。
+使用`const`或`let`可以确保全局变量的声明不会影响（也不会被影响）ECMAScript 和宿主平台的内置全局变量。
 
-例如，浏览器有一个全局变量 `location`：
+例如，浏览器有一个全局变量`location`：
 
-```
+```js
 // 更改当前文档的位置：
 var location = 'https://example.com';
 
@@ -1646,15 +1739,15 @@ var location = 'https://example.com';
 let location = 'https://example.com';
 ```
 
-如果变量已经存在（例如本例中的 `location`），那么带有初始化值的 `var` 声明的行为就像一次赋值。这就是为什么我们在该示例中会遇到问题。
+如果变量已经存在（例如本例中的`location`），那么带有初始化值的`var`声明的行为就像一次赋值。这就是为什么我们在该示例中会遇到问题。
 
-请注意，这仅在全局作用域中是个问题。在模块中，我们永远不在全局作用域中（除非我们使用 `eval()` 或类似方法）。
+请注意，这仅在全局作用域中是个问题。在模块中，我们永远不在全局作用域中（除非我们使用`eval()`或类似方法）。
 
 图 4.1 总结了我们在本节中学习的所有内容。
 
 ### 4.6 结论：为什么 JavaScript 既有普通全局变量又有全局对象？
 
-全局对象通常被认为是一个设计失误。因此，较新的结构（如 `const`、`let` 和 `class`）在脚本作用域中会创建普通全局变量。
+全局对象通常被认为是一个设计失误。因此，较新的结构（如`const`、`let`和`class`）在脚本作用域中会创建普通全局变量。
 
 ![图 4.1：全局作用域的环境通过*全局环境记录*来管理其绑定，而全局环境记录又基于两个环境记录：一个其绑定存储在全局对象中的*对象环境记录*，以及一个使用内部存储其绑定的*声明式环境记录*。因此，可以通过向全局对象添加属性或通过各种声明来创建全局变量。全局对象在初始化时包含 ECMAScript 和宿主平台的内置全局变量。每个 ECMAScript 模块都有自己的环境，其外部环境是全局环境。](img/b76f3160639f29d768796a49c9c2d2ba_47_0.png)
 
@@ -1668,7 +1761,7 @@ ECMAScript 规范中的环境和全局对象：
 - “Global Environment Records”章节涵盖了全局环境。
 - “ECMAScript Standard Built-in Objects”章节描述了 ECMAScript 如何管理其内置对象（包括全局对象）。
 
-globalThis：
+`globalThis`：
 
 - 2ality 文章 "[ES feature: globalThis](https://2ality.com/2020/05/es-feature-globalthis.html)"
 - 访问全局 this 值的各种方式：Mathias Bynens 的 "[A horrifying globalThis polyfill in universal JavaScript](https://mathiasbynens.be/notes/globalthis-polyfill)"
@@ -1677,7 +1770,7 @@ globalThis：
 
 - 关于浏览器中发生情况的背景资料：Anne van Kesteren 的 "[Defining the WindowProxy, Window, and Location objects](https://www.w3.org/TR/web-platform-tests/)"
 - 非常专业：WHATWG HTML 标准中的 “Realms, settings objects, and global objects” 章节
-- 在 ECMAScript 规范中，我们可以看到 Web 浏览器如何自定义全局 this： “InitializeHostDefinedRealm()” 章节
+- 在 ECMAScript 规范中，我们可以看到 Web 浏览器如何自定义全局 this：“InitializeHostDefinedRealm()”章节
 
 # 第 5 章
 
@@ -1685,28 +1778,28 @@ globalThis：
 
 ### 目录
 
-- 5.1 取余运算符 `rem` 与取模运算符 `mod` 49
+- 5.1 取余运算符`rem`与取模运算符`mod` 49
 - 5.2 对取余操作的直观理解 50
 - 5.3 对取模操作的直观理解 50
-- 5.4 `rem` 和 `mod` 的异同 51
+- 5.4 `rem`和`mod`的异同 51
 - 5.5 取余和取模背后的等式 51
-  - 5.5.1 `rem` 和 `mod` 执行整数除法的方式不同 52
-  - 5.5.2 实现 `rem` 52
-  - 5.5.3 实现 `mod` 52
-- 5.6 `rem` 和 `mod` 在编程语言中哪里被使用？ 53
-  - 5.6.1 JavaScript 的 `%` 运算符计算的是余数（remainder） 53
-  - 5.6.2 Python 的 `%` 运算符计算的是模数（modulus） 53
+  - 5.5.1 `rem`和`mod`执行整数除法的方式不同 52
+  - 5.5.2 实现`rem` 52
+  - 5.5.3 实现`mod` 52
+- 5.6 `rem`和`mod`在编程语言中哪里被使用？ 53
+  - 5.6.1 JavaScript 的`%`运算符计算的是余数（remainder） 53
+  - 5.6.2 Python 的`%`运算符计算的是模数（modulus） 53
   - 5.6.3 取模操作在 JavaScript 中的用途 53
 - 5.7 本章的进一步阅读和资源 54
 
-取余（Remainder）和取模（Modulo）是两种相似的操作。本章将探讨它们的工作原理，并揭示 JavaScript 的 `%` 运算符计算的是余数，而非模数。
+取余（Remainder）和取模（Modulo）是两种相似的操作。本章将探讨它们的工作原理，并揭示 JavaScript 的`%`运算符计算的是余数，而非模数。
 
-### 5.1 取余运算符 `rem` 与取模运算符 `mod`
+### 5.1 取余运算符`rem`与取模运算符`mod`
 
 在本章中，我们假设 JavaScript 拥有以下两个运算符：
 
-- 取余运算符 `rem`
-- 取模运算符 `mod`
+- 取余运算符`rem`
+- 取模运算符`mod`
 
 这将帮助我们研究底层的操作是如何工作的。
 
@@ -1714,58 +1807,60 @@ globalThis：
 
 取余运算符的操作数被称为*被除数（dividend）*和*除数（divisor）*：
 
-```
+```text
 remainder = dividend rem divisor
 ```
 
 结果是如何计算的？考虑以下表达式：
 
-```
+```text
 7 rem 3
 ```
 
 我们从被除数中不断减去 3，直到剩下的值小于 3：
 
-```
+```text
 7 rem 3 = 4 rem 3 = 1 rem 3 = 1
 ```
 
 如果被除数是负数，我们该怎么做？
 
-```
+```text
 -7 rem 3
 ```
 
 这一次，我们向被除数不断加上 3，直到得到一个小于 -3 的值：
 
-```
+```text
 -7 rem 3 = -4 rem 3 = -1 rem 3 = -1
 ```
 
 为固定除数绘制结果图会很有启发：
 
-```
+```text
 x:      -7 -6 -5 -4 -3 -2 -1  0 1  2 3  4 5  6  7
 x rem 3: -1  0 -2 -1  0 -2 -1  0 1  2 0  1 2  0  1
 ```
 
-在这些结果中，我们可以看到一种对称性：`x` 和 `-x` 产生相同的结果，但符号相反。
+在这些结果中，我们可以看到一种对称性：`x`和`-x`产生相同的结果，但符号相反。
 
 ### 5.3 对取模操作的直观理解
 
-同样，操作数被称为*被除数*和*除数*（这暗示了 rem 和 mod 是多么相似）：
+同样，操作数被称为*被除数*和*除数*（这暗示了`rem`和`mod`是多么相似）：
 
-```
+```text
 modulus = dividend mod divisor
 ```
 
 考虑以下示例：
 
-```
+```text
 x mod 3
 ```
 
-此操作将 `x` 映射到以下范围：
+此操作将`x`映射到以下范围：
+
+
 
 ```
 [0,3) = {0,1,2}
@@ -1805,13 +1900,14 @@ x:      -7 -6 -5 -4 -3 -2 -1  0  1  2  3  4  5  6  7
 x mod 3:  2  0  1  2  0  1  2  0  1  2  0  1  2  0  1
 ```
 
-注意范围 [0,3) 是如何一遍又一遍重复的。
+注意范围 `[0,3)` 是如何一遍又一遍重复的。
 
-### 5.4 rem 和 mod 的异同
+### 5.4 `rem` 和 `mod` 的异同
 
 `rem` 和 `mod` 非常相似——它们仅在被除数和除数符号不同时才有区别：
 
 - 对于 `rem`，结果与被除数（第一个操作数）的符号相同：
+
   ```
   > 5 rem 4
   1
@@ -1824,6 +1920,7 @@ x mod 3:  2  0  1  2  0  1  2  0  1  2  0  1  2  0  1
   ```
 
 - 对于 `mod`，结果与除数（第二个操作数）的符号相同：
+
   ```
   > 5 mod 4
   1
@@ -1846,31 +1943,35 @@ dividend = (divisor * quotient) + remainder
 
 给定一个被除数和一个除数，我们该如何计算余数和模数？
 
-remainder = dividend - (divisor * quotient)
-quotient = dividend div divisor
+`remainder = dividend - (divisor * quotient)`
 
-div 运算符执行整数除法。
+`quotient = dividend div divisor`
 
-#### 5.5.1 rem 和 mod 执行整数除法的方式不同
+`div` 运算符执行整数除法。
 
-这些等式如何能同时包含*两种*运算的解？如果变量 remainder 不为零，等式总是允许它有两个值：一个正数，一个负数。要理解原因，我们转向确定商时提出的问题：
+#### 5.5.1 `rem` 和 `mod` 执行整数除法的方式不同
+
+这些等式如何能同时包含*两种*运算的解？如果变量 `remainder` 不为零，等式总是允许它有两个值：一个正数，一个负数。要理解原因，我们转向确定商时提出的问题：
 
 > 我们需要将除数乘以多少次，才能尽可能接近被除数？
 
 例如，对于被除数 -2 和除数 3，这给出两个不同的结果：
 
 - `-2 rem 3 = -2`
+
   3 × 0 让我们接近 -2。0 和被除数 -2 之间的差是 -2。
+
 - `-2 mod 3 = 1`
+
   3 × -1 也让我们接近 -2。-3 和被除数 -2 之间的差是 1。
 
 对于被除数 2 和除数 -3，它也给出两个不同的结果：
 
-注意，整数除法还有其他可能的方式（例如，基于 Math.ceil() 或 Math.round()）。这意味着存在更多类似于 rem 和 mod 的运算。
+注意，整数除法还有其他可能的方式（例如，基于 `Math.ceil()` 或 `Math.round()`）。这意味着存在更多类似于 `rem` 和 `mod` 的运算。
 
-### 5.6 rem 和 mod 在编程语言中哪里使用？
+### 5.6 `rem` 和 `mod` 在编程语言中哪里使用？
 
-#### 5.6.1 JavaScript 的 % 运算符计算余数
+#### 5.6.1 JavaScript 的 `%` 运算符计算余数
 
 例如（Node.js REPL）：
 
@@ -1881,7 +1982,7 @@ div 运算符执行整数除法。
 -1
 ```
 
-#### 5.6.2 Python 的 % 运算符计算模数
+#### 5.6.2 Python 的 `%` 运算符计算模数
 
 例如（Python REPL）：
 
@@ -1896,33 +1997,33 @@ div 运算符执行整数除法。
 
 ECMA 规范多次使用取模运算——例如：
 
-- 将 >>> 运算符的操作数转换为无符号 32 位整数（x mod 2**32）：
+- 将 `>>>` 运算符的操作数转换为无符号 32 位整数（`x mod 2**32`）：
 
-```
-> 2**32 >>> 0
-0
-> (2**32)+1 >>> 0
-1
-> (-1 >>> 0) === (2**32)-1
-true
-```
+  ```
+  > 2**32 >>> 0
+  0
+  > (2**32)+1 >>> 0
+  1
+  > (-1 >>> 0) === (2**32)-1
+  true
+  ```
 
-- 转换任意数字以使其适合类型化数组。例如，x mod 2**8 用于将数字转换为无符号 8 位整数（首先将它们转换为整数后）：
+- 转换任意数字以使其适合类型化数组。例如，`x mod 2**8` 用于将数字转换为无符号 8 位整数（首先将它们转换为整数后）：
 
-```
-const tarr = new Uint8Array(1);
+  ```js
+  const tarr = new Uint8Array(1);
 
-tarr[0] = 256;
-assert.equal(tarr[0], 0);
+  tarr[0] = 256;
+  assert.equal(tarr[0], 0);
 
-tarr[0] = 257;
-assert.equal(tarr[0], 1);
-```
+  tarr[0] = 257;
+  assert.equal(tarr[0], 1);
+  ```
 
 ### 5.7 本章进一步阅读和来源
 
 - 维基百科上关于“取模运算”的页面包含大量信息。
-- ECMAScript 规范提到 % 是通过“截断除法”计算的。
+- ECMAScript 规范提到 `%` 是通过“截断除法”计算的。
 - “JavaScript for impatient programmers” 中的“舍入”章节描述了 JavaScript 中的几种舍入方式。
 
 # 第三部分：处理数据
@@ -1930,16 +2031,17 @@ assert.equal(tarr[0], 1);
 ## 第 6 章：复制对象和数组
 
 ### 目录
-- 6.1 浅复制与深复制 . . . . . . . . . . . . . . . . . . . . . . . . 57
-- 6.2 JavaScript 中的浅复制 . . . . . . . . . . . . . . . . . . . . . . . . . . . . 58
-    - 6.2.1 通过展开语法复制普通对象和数组 . . . . . . . . . . . . . 58
-    - 6.2.2 通过 Object.assign() 进行浅复制（可选） . . . . . . . . . . . . . . . 61
-    - 6.2.3 通过 Object.getOwnPropertyDescriptors() 和 Object.defineProperties() 进行浅复制（可选） . . . . . . . . . . . . . . . . . . . . . . . 61
-- 6.3 JavaScript 中的深复制 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 62
-    - 6.3.1 通过嵌套展开语法手动深复制 . . . . . . . . . . . . . . . . . . 62
-    - 6.3.2 技巧：通过 JSON 进行通用深复制 . . . . . . . . . . . . . . . . . . . . . . 62
-    - 6.3.3 实现通用深复制 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 63
-- 6.4 进一步阅读 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 65
+
+- 6.1 浅复制与深复制........................................57
+- 6.2 JavaScript 中的浅复制..................................58
+  - 6.2.1 通过展开语法复制普通对象和数组......................58
+  - 6.2.2 通过 `Object.assign()` 进行浅复制（可选）............61
+  - 6.2.3 通过 `Object.getOwnPropertyDescriptors()` 和 `Object.defineProperties()` 进行浅复制（可选）............61
+- 6.3 JavaScript 中的深复制..................................62
+  - 6.3.1 通过嵌套展开语法手动深复制..........................62
+  - 6.3.2 技巧：通过 JSON 进行通用深复制......................62
+  - 6.3.3 实现通用深复制....................................63
+- 6.4 进一步阅读............................................65
 
 在本章中，我们将学习如何在 JavaScript 中复制对象和数组。
 
@@ -1960,7 +2062,7 @@ assert.equal(tarr[0], 1);
 
 我们可以将对象字面量和数组字面量展开来制作副本：
 
-```
+```js
 const copyOfObject = {...originalObject};
 const copyOfArray = [...originalArray];
 ```
@@ -1971,7 +2073,7 @@ const copyOfArray = [...originalArray];
 
 例如：
 
-```
+```js
 class MyClass {}
 
 const original = new MyClass();
@@ -1983,14 +2085,14 @@ assert.equal(copy instanceof MyClass, false);
 
 注意以下两个表达式是等效的：
 
-```
+```js
 obj instanceof SomeClass
 SomeClass.prototype.isPrototypeOf(obj)
 ```
 
 因此，我们可以通过给副本与原始对象相同的原型来修复此问题：
 
-```
+```js
 class MyClass {}
 
 const original = new MyClass();
@@ -2002,17 +2104,17 @@ const copy = {
 assert.equal(copy instanceof MyClass, true);
 ```
 
-或者，我们可以在创建副本后，通过 Object.setPrototypeOf() 设置其原型。
+或者，我们可以在创建副本后，通过 `Object.setPrototypeOf()` 设置其原型。
 
-#### 6.2.1.2 许多内置对象具有特殊的“内部槽”，对象展开不会复制这些槽
+##### 6.2.1.2 许多内置对象具有特殊的“内部槽”，对象展开不会复制这些槽
 
 此类内置对象的示例包括正则表达式和日期。如果我们制作它们的副本，就会丢失存储在其中的大部分数据。
 
 ##### 6.2.1.3 对象展开只复制自有（非继承）属性
 
-根据原型链的工作方式，这通常是正确的方法。但我们仍然需要意识到这一点。在下面的示例中，original 的继承属性 .inheritedProp 在 copy 中不可用，因为我们只复制自有属性而不保留原型。
+根据原型链的工作方式，这通常是正确的方法。但我们仍然需要意识到这一点。在下面的示例中，`original` 的继承属性 `.inheritedProp` 在 `copy` 中不可用，因为我们只复制自有属性而不保留原型。
 
-```
+```js
 const proto = { inheritedProp: 'a' };
 const original = {__proto__: proto, ownProp: 'b'};
 assert.equal(original.inheritedProp, 'a');
@@ -2025,9 +2127,9 @@ assert.equal(copy.ownProp, 'b');
 
 ##### 6.2.1.4 对象展开只复制可枚举属性
 
-例如，数组实例的自有属性 .length 是不可枚举的，因此不会被复制。在下面的示例中，我们通过对象展开复制数组 arr（行 A）：
+例如，数组实例的自有属性 `.length` 是不可枚举的，因此不会被复制。在下面的示例中，我们通过对象展开复制数组 `arr`（行 A）：
 
-```
+```js
 const arr = ['a', 'b'];
 assert.equal(arr.length, 2);
 assert.equal({}.hasOwnProperty.call(arr, 'length'), true);
@@ -2036,10 +2138,10 @@ const copy = {...arr}; // (A)
 assert.equal({}.hasOwnProperty.call(copy, 'length'), false);
 ```
 
-这也很少构成限制，因为大多数属性都是可枚举的。如果需要复制不可枚举属性，我们可以使用 Object.getOwnPropertyDescriptors() 和 Object.defineProperties() 来复制对象（如何操作将在后面解释）：
+这也很少构成限制，因为大多数属性都是可枚举的。如果需要复制不可枚举属性，我们可以使用 `Object.getOwnPropertyDescriptors()` 和 `Object.defineProperties()` 来复制对象（如何操作将在后面解释）：
 
 - 它们考虑所有属性（不仅仅是 value），因此可以正确复制 getter、setter、只读属性等。
-- Object.getOwnPropertyDescriptors() 检索可枚举和不可枚举属性。
+- `Object.getOwnPropertyDescriptors()` 检索可枚举和不可枚举属性。
 
 有关可枚举性的更多信息，请参见 §12“属性的可枚举性”。
 
@@ -2047,9 +2149,9 @@ assert.equal({}.hasOwnProperty.call(copy, 'length'), false);
 
 无论属性的特性如何，其副本始终是可写且可配置的数据属性。
 
-例如，这里我们创建属性 original.prop，其特 writable 和 configurable 为 false：
+例如，这里我们创建属性 `original.prop`，其特性 `writable` 和 `configurable` 为 `false`：
 
-```
+```js
 const original = Object.defineProperties(
   {}, {
     prop: {
@@ -2062,9 +2164,9 @@ const original = Object.defineProperties(
 assert.deepEqual(original, {prop: 1});
 ```
 
-如果我们复制 .prop，那么 writable 和 configurable 都将为 true：
+如果我们复制 `.prop`，那么 `writable` 和 `configurable` 都将为 `true`：
 
-```
+```js
 const copy = {...original};
 // 副本的特性 `writable` 和 `configurable` 不同：
 assert.deepEqual(
@@ -2081,7 +2183,7 @@ assert.deepEqual(
 
 因此，getter 和 setter 也不会被忠实地复制：
 
-```
+```js
 const original = {
   get myGetter() { return 123 },
   set mySetter(x) {},
@@ -2092,13 +2194,13 @@ assert.deepEqual({...original}, {
 });
 ```
 
-前述的 Object.getOwnPropertyDescriptors() 和 Object.defineProperties() 总是传输自有属性并保持所有特性不变（如后面所示）。
+前述的 `Object.getOwnPropertyDescriptors()` 和 `Object.defineProperties()` 总是传输自有属性并保持所有特性不变（如后面所示）。
 
 ##### 6.2.1.6 复制是浅的
 
 副本拥有原始对象中每个键值条目的新版本，但原始对象的值本身并没有被复制。例如：
 
-```
+```js
 const original = {name: 'Jane', work: {employer: 'Acme'}};
 const copy = {...original};
 
@@ -2110,8 +2212,6 @@ assert.deepEqual(original,
 assert.deepEqual(copy,
   {name: 'John', work: {employer: 'Acme'}});
 ```
-
-
 
 ## 6.2 JavaScript 中的浅拷贝
 
@@ -2127,7 +2227,7 @@ assert.deepEqual(
 
 我们将在本章稍后讨论深拷贝。
 
-#### 6.2.2 通过 Object.assign() 进行浅拷贝（可选）
+#### 6.2.2 通过 `Object.assign()` 进行浅拷贝（可选）
 
 `Object.assign()` 的工作方式与对象展开 mostly 类似。也就是说，以下两种复制方式大体等效：
 
@@ -2159,7 +2259,7 @@ assert.equal(Object.getPrototypeOf(copy2), null);
 
 通过在行 A 中使用计算属性键，我们将 `.__proto__` 创建为自有属性，而不调用继承的 setter。然而，当 `Object.assign()` 复制该属性时，它确实调用了 setter。（有关 `.__proto__` 的更多信息，请参阅《JavaScript for impatient programmers》。）
 
-#### 6.2.3 通过 Object.getOwnPropertyDescriptors() 和 Object.defineProperties() 进行浅拷贝（可选）
+#### 6.2.3 通过 `Object.getOwnPropertyDescriptors()` 和 `Object.defineProperties()` 进行浅拷贝（可选）
 
 JavaScript 允许我们通过*属性描述符*来创建属性，属性描述符是指定属性属性的对象。例如，通过我们已经见过的 `Object.defineProperties()`。如果将该方法与 `Object.getOwnPropertyDescriptors()` 结合使用，我们可以更忠实地进行复制：
 
@@ -2174,6 +2274,8 @@ function copyAllOwnProperties(original) {
 
 首先，自有属性的所有属性都被正确复制。因此，我们现在可以复制自有 getter 和自有 setter：
 
+
+
 ```js
 const original = {
   get myGetter() { return 123 },
@@ -2182,7 +2284,7 @@ const original = {
 assert.deepEqual(copyAllOwnProperties(original), original);
 ```
 
-其次，得益于 `Object.getOwnPropertyDescriptors()`，不可枚举的属性也会被复制：
+其次，得益于`Object.getOwnPropertyDescriptors()`，不可枚举的属性也会被复制：
 
 ```js
 const arr = ['a', 'b'];
@@ -2213,7 +2315,7 @@ assert.ok(original.work !== copy.work);
 
 #### 6.3.2 技巧：通过 JSON 实现通用深拷贝
 
-这是一个技巧，但在紧要关头，它提供了一个快速解决方案：为了深拷贝一个对象 `original`，我们首先将其转换为 JSON 字符串，然后解析该 JSON 字符串：
+这是一个技巧，但在紧要关头，它提供了一个快速解决方案：为了深拷贝一个对象`original`，我们首先将其转换为 JSON 字符串，然后解析该 JSON 字符串：
 
 ```js
 function jsonDeepCopy(original) {
@@ -2252,7 +2354,7 @@ assert.throws(
 
 #### 6.3.3 实现通用深拷贝
 
-以下函数对值 `original` 进行通用深拷贝：
+以下函数对值`original`进行通用深拷贝：
 
 ```js
 function deepCopy(original) {
@@ -2277,11 +2379,11 @@ function deepCopy(original) {
 
 该函数处理三种情况：
 
-- 如果 `original` 是 Array，我们创建一个新的 Array，并将 `original` 的元素深拷贝到其中。
-- 如果 `original` 是对象，我们采用类似的方法。
-- 如果 `original` 是原始值，我们什么都不用做。
+- 如果`original`是 Array，我们创建一个新的 Array，并将`original`的元素深拷贝到其中。
+- 如果`original`是对象，我们采用类似的方法。
+- 如果`original`是原始值，我们什么都不用做。
 
-让我们试试 `deepCopy()`：
+让我们试试`deepCopy()`：
 
 ```js
 const original = {a: 1, b: {c: 2, d: {e: 3}}};
@@ -2297,13 +2399,13 @@ assert.ok(copy.b  !== original.b);
 assert.ok(copy.b.d !== original.b.d);
 ```
 
-注意，`deepCopy()` 只修复了展开的一个问题：浅拷贝。其他问题仍然存在：原型未被复制，特殊对象仅被部分复制，不可枚举的属性被忽略，大多数属性属性被忽略。
+注意，`deepCopy()`只修复了展开的一个问题：浅拷贝。其他问题仍然存在：原型未被复制，特殊对象仅被部分复制，不可枚举的属性被忽略，大多数属性属性被忽略。
 
 完全通用地实现复制通常是不可能的：并非所有数据都是树形结构，有时我们并不想复制所有属性等。
 
-##### 6.3.3.1 更简洁版本的 `deepCopy()`
+##### 6.3.3.1 更简洁版本的`deepCopy()`
 
-如果我们使用 `.map()` 和 `Object.fromEntries()`，可以使之前实现的 `deepCopy()` 更加简洁：
+如果我们使用`.map()`和`Object.fromEntries()`，可以使之前实现的`deepCopy()`更加简洁：
 
 ```js
 function deepCopy(original) {
@@ -2322,14 +2424,12 @@ function deepCopy(original) {
 
 ### 6.4 延伸阅读
 
-- §14 "Copying instances of classes: .clone() vs. copy constructors" 解释了基于类的复制模式。
-- 《JavaScript for impatient programmers》中的 "Spreading into object literals" 章节
-- 《JavaScript for impatient programmers》中的 "Spreading into Array literals" 章节
-- 《JavaScript for impatient programmers》中的 "Prototype chains" 章节
+- §14 "Copying instances of classes: `.clone()` vs. copy constructors"解释了基于类的复制模式。
+- 《JavaScript for impatient programmers》中的 "Spreading into object literals"章节
+- 《JavaScript for impatient programmers》中的 "Spreading into Array literals"章节
+- 《JavaScript for impatient programmers》中的 "Prototype chains"章节
 
-## 第 7 章
-
-## 破坏性与非破坏性更新数据
+# 第 7 章：破坏性与非破坏性更新数据
 
 | 章节 | 标题 | 页码 |
 |---|---|---|
@@ -2345,7 +2445,7 @@ function deepCopy(original) {
 
 后一种方式类似于先复制一份数据，然后进行破坏性修改，但它同时完成了这两件事。
 
-### 7.1 示例：破坏性与非破坏性地更新对象
+## 7.1 示例：破坏性与非破坏性地更新对象
 
 以下代码展示了破坏性更新对象属性的函数，并在对象上使用了它。
 
@@ -2359,8 +2459,6 @@ const obj = {city: 'Berlin', country: 'Germany'};
 setPropertyDestructively(obj, 'city', 'Munich');
 assert.deepEqual(obj, {city: 'Munich', country: 'Germany'});
 ```
-
-
 
 以下代码演示了如何**非破坏性地更新**一个对象：
 
@@ -2385,7 +2483,7 @@ assert.deepEqual(updatedObj, {city: 'Munich', country: 'Germany'});
 assert.deepEqual(obj, {city: 'Berlin', country: 'Germany'});
 ```
 
-使用扩展运算符可以使 `setPropertyNonDestructively()` 更简洁：
+使用扩展运算符可以使`setPropertyNonDestructively()`更简洁：
 
 ```javascript
 function setPropertyNonDestructively(obj, key, value) {
@@ -2393,9 +2491,9 @@ function setPropertyNonDestructively(obj, key, value) {
 }
 ```
 
-`setPropertyNonDestructively()` 的两个版本都进行*浅层*更新：它们只更改对象的顶层。
+`setPropertyNonDestructively()`的两个版本都进行*浅层*更新：它们只更改对象的顶层。
 
-### 7.2 示例：破坏性与非破坏性地更新数组
+## 7.2 示例：破坏性与非破坏性地更新数组
 
 以下代码展示了一个**破坏性地更新**数组元素的函数，并将其应用于一个数组。
 
@@ -2426,7 +2524,7 @@ assert.deepEqual(updatedArr, ['a', 'b', 'x', 'd', 'e']);
 assert.deepEqual(arr, ['a', 'b', 'c', 'd', 'e']);
 ```
 
-`.slice()` 和扩展运算符使 `setElementNonDestructively()` 更简洁：
+`.slice()`和扩展运算符使`setElementNonDestructively()`更简洁：
 
 ```javascript
 function setElementNonDestructively(arr, index, value) {
@@ -2436,11 +2534,11 @@ function setElementNonDestructively(arr, index, value) {
 }
 ```
 
-`setElementNonDestructively()` 的两个版本都进行*浅层*更新：它们只更改数组的顶层。
+`setElementNonDestructively()`的两个版本都进行*浅层*更新：它们只更改数组的顶层。
 
-### 7.3 手动深度更新
+## 7.3 手动深度更新
 
-到目前为止，我们只进行了浅层数据更新。让我们来处理**深度更新**。以下代码展示了如何手动完成。我们要更改 `name` 和 `employer`。
+到目前为止，我们只进行了浅层数据更新。让我们来处理**深度更新**。以下代码展示了如何手动完成。我们要更改`name`和`employer`。
 
 ```javascript
 const original = {name: 'Jane', work: {employer: 'Acme'}};
@@ -2459,7 +2557,7 @@ assert.deepEqual(
     updatedOriginal, {name: 'John', work: {employer: 'Spectre'}});
 ```
 
-### 7.4 实现通用的深度更新
+## 7.4 实现通用的深度更新
 
 以下函数实现了一个通用的深度更新。
 
@@ -2492,9 +2590,9 @@ function deepUpdate(original, keys, value) {
 }
 ```
 
-如果我们将 `value` 视为我们正在更新的树的根，那么 `deepUpdate()` 只深度更改单个分支（行 A 和 C）。所有其他分支都是浅层复制的（行 B 和 D）。
+如果我们将`value`视为我们正在更新的树的根，那么`deepUpdate()`只深度更改单个分支（行 A 和 C）。所有其他分支都是浅层复制的（行 B 和 D）。
 
-以下是使用 `deepUpdate()` 的示例：
+以下是使用`deepUpdate()`的示例：
 
 ```javascript
 const original = {name: 'Jane', work: {employer: 'Acme'}};
@@ -2504,20 +2602,23 @@ assert.deepEqual(copy, {name: 'Jane', work: {employer: 'Spectre'}});
 assert.deepEqual(original, {name: 'Jane', work: {employer: 'Acme'}});
 ```
 
-# 第8章：共享可变状态的问题及如何避免它们
+# 第 8 章：共享可变状态的问题及如何避免它们
 
 ## 目录
 
 - 8.1 **什么是共享可变状态，它为什么有问题？** . . . . . 71
 - 8.2 **通过复制数据来避免共享** . . . . . . . . . . . . . . . . . . 73
-    - 8.2.1 复制如何帮助解决共享可变状态问题？ . . . . . . 73
+  - 8.2.1 复制如何帮助解决共享可变状态问题？ . . . . . . 73
 - 8.3 **通过非破坏性更新来避免变更** . . . . . . . . . . . . . . 75
-    - 8.3.1 非破坏性更新如何帮助解决共享可变状态问题？ . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 75
-- 8.4 **通过使数据不可变来防止变更** . . . . . . . . . . . . . 76
-    - 8.4.1 不可变性如何帮助解决共享可变状态问题？ . . . 76
+  - 8.3.1 非破坏性更新如何帮助解决共享可变状态问题？ . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 75
+- 8.4 **通过使数据不可变来防止变更** . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 76
+  - 8.4.1 不可变性如何帮助解决共享可变状态问题？ . . . 76
+
+
+
 - 8.5 **用于避免共享可变状态的库** . . . . . . . . . . . . . 76
-    - 8.5.1 Immutable.js . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 76
-    - 8.5.2 Immer . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 77
+  - 8.5.1 Immutable.js . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 76
+  - 8.5.2 Immer . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 77
 
 本章回答以下问题：
 
@@ -2588,14 +2689,14 @@ main();
 >
 > 关于在 JavaScript 中复制数据的背景知识，请参考本书中的以下两章：
 >
-> * §6 "复制对象和数组"
-> * §14 "复制类的实例：.clone() 与 拷贝构造函数"
+> - §6 "复制对象和数组"
+> - §14 "复制类的实例：`.clone()` 与 拷贝构造函数"
 
 #### 8.2.1 复制如何帮助解决共享可变状态问题？
 
-只要我们只是从共享状态中*读取*，就不会有任何问题。在*修改*它之前，我们需要通过复制（尽可能深地复制）来“取消共享”。
+只要我们只是从共享状态中`读取`，就不会有任何问题。在`修改`它之前，我们需要通过复制（尽可能深地复制）来“取消共享”。
 
-*防御性复制*是一种在*可能*出现问题时总是进行复制的技术。其目标是保持当前实体（函数、类等）的安全：
+`防御性复制`是一种在`可能`出现问题时总是进行复制的技术。其目标是保持当前实体（函数、类等）的安全：
 
 - **输入**：复制传递给我们的（可能）共享数据，使我们能够在不受外部实体干扰的情况下使用该数据。
 - **输出**：在将内部数据暴露给外部方之前复制它们，意味着该方无法扰乱我们的内部活动。
@@ -2629,11 +2730,9 @@ function logElements(arr) {
 
 现在，如果 `logElements()` 在 `main()` 内部被调用，它就不会再引起问题了。
 
+## 8 共享可变状态的问题及其避免方法
 
-
- ## 8 共享可变状态的问题及其避免方法
-
-```
+```javascript
 function main() {
   const arr = ['banana', 'orange', 'apple'];
 
@@ -2662,7 +2761,7 @@ main();
 
 让我们从一个没有复制其暴露内部数据的 `StringBuilder` 类开始（第 A 行）：
 
-```
+```javascript
 class StringBuilder {
   _data = [];
   add(str) {
@@ -2680,7 +2779,7 @@ class StringBuilder {
 
 只要不使用 `.getParts()`，一切运行良好：
 
-```
+```javascript
 const sb1 = new StringBuilder();
 sb1.add('Hello');
 sb1.add(' world!');
@@ -2689,7 +2788,7 @@ assert.equal(sb1.toString(), 'Hello world!');
 
 然而，如果 `.getParts()` 的结果被修改（第 A 行），那么 `StringBuilder` 将无法正常工作：
 
-```
+```javascript
 const sb2 = new StringBuilder();
 sb2.add('Hello');
 sb2.add(' world!');
@@ -2699,7 +2798,7 @@ assert.equal(sb2.toString(), ''); // not OK
 
 解决方案是在暴露内部 `_data` 之前对其进行防御性复制（第 A 行）：
 
-```
+```javascript
 class StringBuilder {
   _data = [];
   add(str) {
@@ -2717,7 +2816,7 @@ class StringBuilder {
 
 现在，修改 `.getParts()` 的结果不再会干扰 `sb` 的运行了：
 
-```
+```javascript
 const sb = new StringBuilder();
 sb.add('Hello');
 sb.add(' world!');
@@ -2739,7 +2838,7 @@ assert.equal(sb.toString(), 'Hello world!'); // OK
 
 有趣的是，复制数据变得极其简单：
 
-```
+```javascript
 const original = {city: 'Berlin', country: 'Germany'};
 const copy = original;
 ```
@@ -2790,7 +2889,7 @@ Immutable.js 提供了如下不可变数据结构：
 
 在下面的示例中，我们使用一个不可变 Map：
 
-```
+```javascript
 import {Map} from 'immutable/dist/immutable.es.js';
 const map0 = Map([
   [false, 'no'],
@@ -2828,7 +2927,7 @@ Immer 帮助非破坏性地更新（可能是嵌套的）纯对象、数组、�
 
 使用 Immer 的方式如下：
 
-```
+```javascript
 import {produce} from 'immer/dist/immer.module.js';
 
 const people = [
@@ -2841,14 +2940,14 @@ const modifiedPeople = produce(people, (draft) => {
 });
 ```
 
-```
+```javascript
 assert.deepEqual(modifiedPeople, [
   {name: 'Jane', work: {employer: 'Cyberdyne'}},
   {name: 'John', work: {employer: 'Spectre'}},
 ]);
 ```
 
-```
+```javascript
 assert.deepEqual(people, [
   {name: 'Jane', work: {employer: 'Acme'}},
 ]);
@@ -2895,30 +2994,30 @@ assert.deepEqual(people, [
   - 9.8.2 通过对象字面量创建的自有属性 ....................... 93
   - 9.8.3 数组的自有属性 `.length` ........................... 93
 
-
-
 ### 9.1 对象的结构
 
 在本章中，我们将深入探讨 ECMAScript 规范是如何看待 JavaScript 对象的。特别地，在规范中，属性（property）并不是原子的，而是由多个*属性描述符*（attributes，可以想象成记录中的字段）组成的。甚至数据属性的值也是存储在一个属性描述符中的！
 
-在 [ECMAScript 规范](https://tc39.es/ecma262/#sec-object-internal-methods-and-internal-slots) 中，一个对象由以下部分组成：
+
+
+在[ECMAScript 规范](https://tc39.es/ecma262/#sec-object-internal-methods-and-internal-slots)中，一个对象由以下部分组成：
 
 - *内部槽位*（Internal slots），这些是无法通过 JavaScript 访问的存储位置，仅能由规范中的操作访问。
 - 一个*属性*（properties）集合。每个属性将一个*键*（key）与*属性描述符*（attributes，可以想象成记录中的字段）相关联。
 
-#### 9.1.1 内部槽位
+## 9.1.1 内部槽位
 
 [规范](https://tc39.es/ecma262/#sec-object-internal-methods-and-internal-slots)对内部槽位的描述如下。我添加了项目符号并强调了其中一部分：
 
 - 内部槽位对应于与对象相关联并被各种 ECMAScript 规范算法使用的内部状态。
 - 内部槽位不是对象属性，且它们不可被继承。
 - 根据具体内部槽位的规范，此类状态可能由以下内容组成：
-    - 任何 ECMAScript 语言类型的值，或
-    - 特定 ECMAScript 规范类型的值。
+  - 任何 ECMAScript 语言类型的值，或
+  - 特定 ECMAScript 规范类型的值。
 - 除非另有明确规定，否则内部槽位是在创建对象过程中分配的，且不能动态地添加到对象中。
 - 除非另有规定，否则内部槽位的初始值为 `undefined`。
 - 本规范中的各种算法会创建具有内部槽位的对象。然而，**ECMAScript 语言没有提供将内部槽位与对象直接关联的直接方法。**
-- 本规范中使用双方括号 [[ ]] 括起来的名称来标识内部方法和内部槽位。
+- 本规范中使用双方括号 `[[ ]]` 括起来的名称来标识内部方法和内部槽位。
 
 内部槽位有两种类型：
 
@@ -2927,23 +3026,23 @@ assert.deepEqual(people, [
 
 普通对象具有以下数据槽位：
 
-- `.[[Prototype]]`: null | object
-    - 存储对象的原型。
-    - 可以通过 `Object.getPrototypeOf()` 和 `Object.setPrototypeOf()` 间接访问。
-- `.[[Extensible]]`: boolean
-    - 指示是否可以向对象添加属性。
-    - 可以通过 `Object.preventExtensions()` 设置为 `false`。
-- `.[[PrivateFieldValues]]`: EntryList
-    - 用于管理 [私有类字段](https://tc39.es/proposal-class-fields/#sec-private-field-objects)。
+- `.[[Prototype]]: null | object`
+  - 存储对象的原型。
+  - 可以通过 `Object.getPrototypeOf()` 和 `Object.setPrototypeOf()` 间接访问。
+- `.[[Extensible]]: boolean`
+  - 指示是否可以向对象添加属性。
+  - 可以通过 `Object.preventExtensions()` 设置为 `false`。
+- `.[[PrivateFieldValues]]: EntryList`
+  - 用于管理[私有类字段](https://tc39.es/proposal-class-fields/#sec-private-field-objects)。
 
-#### 9.1.2 属性键
+## 9.1.2 属性键
 
 属性的键要么是：
 
 - 字符串
 - Symbol
 
-#### 9.1.3 属性描述符
+## 9.1.3 属性描述符
 
 属性分为两种，它们由其描述符来区分：
 
@@ -2954,24 +3053,24 @@ assert.deepEqual(people, [
 
 | 属性类型 | 描述符名称及类型 | 默认值 |
 | :--- | :--- | :--- |
-| 数据属性 | value: any | undefined |
-| | writable: boolean | false |
-| 访问器属性 | get: (this: any) => any | undefined |
-| | set: (this: any, v: any) => void | undefined |
-| 所有属性 | configurable: boolean | false |
-| | enumerable: boolean | false |
+| 数据属性 | `value: any` | `undefined` |
+|  | `writable: boolean` | `false` |
+| 访问器属性 | `get: (this: any) => any` | `undefined` |
+|  | `set: (this: any, v: any) => void` | `undefined` |
+| 所有属性 | `configurable: boolean` | `false` |
+|  | `enumerable: boolean` | `false` |
 
 我们已经接触过 `value`、`get` 和 `set` 描述符。其他描述符的作用如下：
 
 - `writable` 决定数据属性的值是否可以被更改。
 - `configurable` 决定属性的描述符是否可以被更改。如果为 `false`，则：
-    - 我们不能删除该属性。
-    - 我们不能将属性从数据属性改为访问器属性，反之亦然。
-    - 除了 `value` 之外，我们不能更改任何其他描述符。
-    - 但是，允许一种额外的描述符更改：我们可以将 `writable` 从 `true` 改为 `false`。这个异常情况背后的原因是[历史原因](https://stackoverflow.com/questions/34701610/why-is-array-length-non-configurable)：数组的 `.length` 属性一直具有 `writable` 且 `non-configurable` 的特性。允许更改其 `writable` 描述符使我们能够冻结数组。
+  - 我们不能删除该属性。
+  - 我们不能将属性从数据属性改为访问器属性，反之亦然。
+  - 除了 `value` 之外，我们不能更改任何其他描述符。
+  - 但是，允许一种额外的描述符更改：我们可以将 `writable` 从 `true` 改为 `false`。这个异常情况背后的原因是[历史原因](https://stackoverflow.com/questions/34701610/why-is-array-length-non-configurable)：数组的 `.length` 属性一直具有 `writable` 且 `non-configurable` 的特性。允许更改其 `writable` 描述符使我们能够冻结数组。
 - `enumerable` 影响某些操作（例如 `Object.keys()`）。如果为 `false`，则这些操作会忽略该属性。大多数属性是可枚举的（例如通过赋值或对象字面量创建的属性），这就是为什么你在实践中很少注意到这个描述符的原因。如果你仍然对它的工作原理感兴趣，请参阅 §12 “属性的可枚举性”。
 
-##### 9.1.3.1 陷阱：继承的不可写属性会阻止通过赋值创建自有属性
+### 9.1.3.1 陷阱：继承的不可写属性会阻止通过赋值创建自有属性
 
 如果一个继承的属性是不可写的（non-writable），我们就不能使用赋值来创建具有相同键的自有属性：
 
@@ -2992,7 +3091,7 @@ assert.throws(
 
 更多信息请参阅 §11.3.4 “继承的只读属性会阻止通过赋值创建自有属性”。
 
-### 9.2 属性描述符对象
+## 9.2 属性描述符对象
 
 *属性描述符*（property descriptor）将属性的描述符编码为一个 JavaScript 对象。它们的 TypeScript 接口如下：
 
@@ -3014,9 +3113,9 @@ type PropertyDescriptor = DataPropertyDescriptor | AccessorPropertyDescriptor;
 
 问号表示所有属性都是可选的。§9.7 “省略描述符属性”描述了如果省略它们会发生什么。
 
-### 9.3 获取属性的描述符
+## 9.3 获取属性的描述符
 
-#### 9.3.1 Object.getOwnPropertyDescriptor()：获取单个属性的描述符
+### 9.3.1 `Object.getOwnPropertyDescriptor()`：获取单个属性的描述符
 
 考虑以下对象：
 
@@ -3059,7 +3158,7 @@ assert.deepEqual(
 
 在 A 行中使用实用函数 `desc()` 可以确保 `.deepEqual()` 正常工作。
 
-#### 9.3.2 Object.getOwnPropertyDescriptors()：获取对象所有属性的描述符
+### 9.3.2 `Object.getOwnPropertyDescriptors()`：获取对象所有属性的描述符
 
 ```javascript
 const legoBrick = {
@@ -3099,14 +3198,14 @@ assert.deepEqual(
 
 在 A 行中使用辅助函数 `desc()` 可以确保 `.deepEqual()` 正常工作。
 
-### 9.4 通过描述符定义属性
+## 9.4 通过描述符定义属性
 
 如果我们通过属性描述符 `propDesc` 定义一个键为 `k` 的属性，那么发生的情况取决于：
 
 - 如果不存在键为 `k` 的属性，则创建一个具有 `propDesc` 指定描述符的新自有属性。
 - 如果存在键为 `k` 的属性，定义操作将更改该属性的描述符，使其与 `propDesc` 匹配。
 
-#### 9.4.1 Object.defineProperty()：通过描述符定义单个属性
+### 9.4.1 `Object.defineProperty()`：通过描述符定义单个属性
 
 首先，让我们通过描述符创建一个新属性：
 
@@ -3119,8 +3218,6 @@ Object.defineProperty(car, 'color', {
   configurable: true,
 });
 ```
-
-
 
 ```javascript
 assert.deepEqual(
@@ -3182,9 +3279,9 @@ assert.deepEqual(
 
 我们使用了与赋值相同的属性。
 
-#### 9.4.2 Object.defineProperties()：通过描述符定义多个属性
+### 9.4.2 `Object.defineProperties()`：通过描述符定义多个属性
 
-Object.defineProperties() 是 Object.defineProperty() 的多属性版本：
+`Object.defineProperties()` 是 `Object.defineProperty()` 的多属性版本：
 
 ```javascript
 const legoBrick1 = {};
@@ -3225,9 +3322,9 @@ assert.deepEqual(
   });
 ```
 
-### 9.5 Object.create()：通过描述符创建对象
+## 9.5 `Object.create()`：通过描述符创建对象
 
-Object.create() 创建一个新对象。它的第一个参数指定该对象的原型。可选的第二个参数指定该对象属性的描述符。在下面的例子中，我们创建的对象与上一个例子中的相同。
+`Object.create()` 创建一个新对象。它的第一个参数指定该对象的原型。可选的第二个参数指定该对象属性的描述符。在下面的例子中，我们创建的对象与上一个例子中的相同。
 
 ```javascript
 const legoBrick2 = Object.create(
@@ -3260,13 +3357,13 @@ const legoBrick2 = Object.create(
 assert.deepEqual(legoBrick1, legoBrick2); // 是的！
 ```
 
-### 9.6 Object.getOwnPropertyDescriptors() 的用例
+## 9.6 `Object.getOwnPropertyDescriptors()` 的用例
 
-将 Object.getOwnPropertyDescriptors() 与 Object.defineProperties() 或 Object.create() 结合使用，可以帮助我们应对两个用例。
+将 `Object.getOwnPropertyDescriptors()` 与 `Object.defineProperties()` 或 `Object.create()` 结合使用，可以帮助我们应对两个用例。
 
-#### 9.6.1 用例：将属性复制到对象中
+### 9.6.1 用例：将属性复制到对象中
 
-自 ES6 起，JavaScript 已经有一个用于复制属性的工具方法：Object.assign()。然而，该方法使用简单的 get 和 set 操作来复制键为 key 的属性：
+自 ES6 起，JavaScript 已经有一个用于复制属性的工具方法：`Object.assign()`。然而，该方法使用简单的 get 和 set 操作来复制键为 `key` 的属性：
 
 ```javascript
 target[key] = source[key];
@@ -3274,10 +3371,10 @@ target[key] = source[key];
 
 这意味着它只能在以下 faithful 地复制属性：
 
-- 其 writable 属性为 true，且 enumerable 属性为 true（因为这是赋值创建属性的方式）。
+- 其 `writable` 属性为 `true`，且 `enumerable` 属性为 `true`（因为这是赋值创建属性的方式）。
 - 它是一个数据属性。
 
-下面的例子说明了这一限制。对象 source 有一个 setter，其键为 data。
+下面的例子说明了这一限制。对象 `source` 有一个 setter，其键为 `data`。
 
 ```javascript
 const source = {
@@ -3287,6 +3384,8 @@ const source = {
 };
 ```
 
+
+
 ```javascript
 // 属性 `data` 存在，因为只有 setter，
 // 但它的值为 `undefined`。
@@ -3294,7 +3393,7 @@ assert.equal('data' in source, true);
 assert.equal(source.data, undefined);
 ```
 
-如果我们使用 Object.assign() 来复制属性 data，那么 accessor 属性 data 将被转换为数据属性：
+如果我们使用`Object.assign()`来复制属性`data`，那么 accessor 属性`data`将被转换为数据属性：
 
 ```javascript
 const target1 = {};
@@ -3323,7 +3422,7 @@ assert.deepEqual(
   });
 ```
 
-幸运的是，将 Object.getOwnPropertyDescriptors() 与 Object.defineProperties() 一起使用可以 faithful 地复制属性 data：
+幸运的是，将`Object.getOwnPropertyDescriptors()`与`Object.defineProperties()`一起使用可以 faithful 地复制属性`data`：
 
 ```javascript
 const target2 = {};
@@ -3340,15 +3439,15 @@ assert.deepEqual(
   });
 ```
 
-##### 9.6.1.1 陷阱：复制使用 super 的方法
+##### 9.6.1.1 陷阱：复制使用`super`的方法
 
-使用 super 的方法与其所属对象（存储它的对象）紧密相连。目前没有办法将这种方法复制或移动到不同的对象。
+使用`super`的方法与其所属对象（存储它的对象）紧密相连。目前没有办法将这种方法复制或移动到不同的对象。
 
-#### 9.6.2 Object.getOwnPropertyDescriptors() 的用例：克隆对象
+#### 9.6.2 `Object.getOwnPropertyDescriptors()`的用例：克隆对象
 
-浅克隆与复制属性类似，因此 Object.getOwnPropertyDescriptors() 同样是一个很好的选择。
+浅克隆与复制属性类似，因此`Object.getOwnPropertyDescriptors()`同样是一个很好的选择。
 
-要创建克隆，我们使用 Object.create()：
+要创建克隆，我们使用`Object.create()`：
 
 ```javascript
 const original = {
@@ -3464,9 +3563,9 @@ assert.deepEqual(
 );
 ```
 
-#### 9.8.3 数组的自有属性 .length
+#### 9.8.3 数组的自有属性`.length`
 
-数组的自有属性 .length 是 non-enumerable，因此不会被 Object.assign()、展开运算和其他类似操作复制。它也是 non-configurable：
+数组的自有属性`.length`是 non-enumerable，因此不会被`Object.assign()`、展开运算和其他类似操作复制。它也是 non-configurable：
 
 ```javascript
 > Object.getOwnPropertyDescriptor([], 'length')
@@ -3475,7 +3574,7 @@ assert.deepEqual(
 { value: 3, writable: false, enumerable: false, configurable: false }
 ```
 
-.length 是一种特殊的数据属性，因为它受到（并影响）其他自有属性（特别是索引属性）的影响。
+`.length`是一种特殊的数据属性，因为它受到（并影响）其他自有属性（特别是索引属性）的影响。
 
 #### 9.8.4 内置类的原型属性
 
@@ -3491,11 +3590,9 @@ assert.deepEqual(
 );
 ```
 
+#### 9.8.5 用户定义类的原型属性与实例属性
 
-
- # 9.8.5 用户定义类的原型属性与实例属性
-
-```
+```javascript
 class DataContainer {
   accessCount = 0;
   constructor(data) {
@@ -3524,9 +3621,9 @@ assert.deepEqual(
   });
 ```
 
-请注意，`DataContainer` 实例的所有自有属性都是可写的（writable）、可枚举的（enumerable）且可配置的（configurable）：
+请注意，`DataContainer`实例的所有自有属性都是可写的（writable）、可枚举的（enumerable）且可配置的（configurable）：
 
-```
+```javascript
 const dc = new DataContainer('abc')
 assert.deepEqual(
   Object.getOwnPropertyDescriptors(dc),
@@ -3553,9 +3650,9 @@ assert.deepEqual(
 
 - `Object.defineProperty(obj: object, key: string|symbol, propDesc: PropertyDescriptor): object` [ES5]
 
-在 `obj` 上创建或修改一个键为 `key` 且属性由 `propDesc` 指定的属性。返回修改后的对象。
+在`obj`上创建或修改一个键为`key`且属性由`propDesc`指定的属性。返回修改后的对象。
 
-```
+```javascript
 const obj = {};
 const result = Object.defineProperty(
   obj, 'happy', {
@@ -3574,9 +3671,9 @@ assert.deepEqual(obj, {
 
 - `Object.defineProperties(obj: object, properties: {[k: string|symbol]: PropertyDescriptor}): object` [ES5]
 
-`Object.defineProperty()` 的批量版本。`properties` 对象的每个属性 `p` 指定了一个要添加到 `obj` 中的属性：`p` 的键指定了属性的键，`p` 的值是一个指定该属性属性的描述符。
+`Object.defineProperty()`的批量版本。`properties`对象的每个属性`p`指定了一个要添加到`obj`中的属性：`p`的键指定了属性的键，`p`的值是一个指定该属性属性的描述符。
 
-```
+```javascript
 const address1 = Object.defineProperties({}, {
   street: { value: 'Evergreen Terrace', enumerable: true },
   number: { value: 742, enumerable: true },
@@ -3585,9 +3682,9 @@ const address1 = Object.defineProperties({}, {
 
 - `Object.create(proto: null|object, properties?: {[k: string|symbol]: PropertyDescriptor}): object` [ES5]
 
-首先，创建一个原型为 `proto` 的对象。然后，如果提供了可选参数 `properties`，则以与 `Object.defineProperties()` 相同的方式向其添加属性。最后，返回结果。例如，以下代码片段产生的结果与前一个片段相同：
+首先，创建一个原型为`proto`的对象。然后，如果提供了可选参数`properties`，则以与`Object.defineProperties()`相同的方式向其添加属性。最后，返回结果。例如，以下代码片段产生的结果与前一个片段相同：
 
-```
+```javascript
 const address2 = Object.create(Object.prototype, {
   street: { value: 'Evergreen Terrace', enumerable: true },
   number: { value: 742, enumerable: true },
@@ -3597,9 +3694,9 @@ assert.deepEqual(address1, address2);
 
 `Object.getOwnPropertyDescriptor(obj: object, key: string|symbol): undefined|PropertyDescriptor` [ES5]
 
-返回 `obj` 的自有（非继承）属性的描述符，该属性的键为 `key`。如果没有这样的属性，则返回 `undefined`。
+返回`obj`的自有（非继承）属性的描述符，该属性的键为`key`。如果没有这样的属性，则返回`undefined`。
 
-```
+```javascript
 assert.deepEqual(
   Object.getOwnPropertyDescriptor(Object.prototype, 'toString'),
   {
@@ -3615,9 +3712,9 @@ assert.equal(
 
 `Object.getOwnPropertyDescriptors(obj: object): {[k: string|symbol]: PropertyDescriptor}` [ES2017]
 
-返回一个对象，其中 `obj` 的每个属性键 `k` 都映射到 `obj.k` 的属性描述符。结果可以用作 `Object.defineProperties()` 和 `Object.create()` 的输入。
+返回一个对象，其中`obj`的每个属性键`k`都映射到`obj.k`的属性描述符。结果可以用作`Object.defineProperties()`和`Object.create()`的输入。
 
-```
+```javascript
 const propertyKey = Symbol('propertyKey');
 const obj = {
   [propertyKey]: 'abc',
@@ -3643,7 +3740,7 @@ assert.deepEqual(
   });
 ```
 
-在 A 行中使用 `desc()` 是一种权宜之计，目的是为了让 `.deepEqual()` 能够正常工作。
+在 A 行中使用`desc()`是一种权宜之计，目的是为了让`.deepEqual()`能够正常工作。
 
 ### 9.10 延伸阅读
 
@@ -3653,16 +3750,12 @@ assert.deepEqual(
 - §11 “属性：赋值与定义”
 - §12 “属性的可枚举性”
 
-## 第 10 章
-
-## 防止对象被修改
+## 第 10 章：防止对象被修改
 
 ### 目录
 
 - 10.1 保护级别：防止扩展、密封、冻结 . . . . . . . . . . 99
 - 10.2 防止对象扩展 . . . . . . . . . . . .
-
-
 
 ```javascript
 configurable: false
@@ -3676,7 +3769,7 @@ configurable: false
 });
 ```
 
-我们仍然可以更改 `.first` 属性的值：
+我们仍然可以更改`.first`属性的值：
 
 ```javascript
 obj.first = 'John';
@@ -3685,6 +3778,8 @@ assert.deepEqual(
 ```
 
 但我们无法更改其属性（attributes）：
+
+
 
 ```javascript
 assert.throws(
@@ -3698,7 +3793,7 @@ assert.throws(
 Object.isSealed(obj: any): boolean
 ```
 
-检查 `obj` 是否被密封 —— 例如：
+检查`obj`是否被密封——例如：
 
 ```javascript
 > const obj = {};
@@ -3716,8 +3811,8 @@ true
 Object.freeze<T>(obj: T): T;
 ```
 
-- 如果 `obj` 不是一个对象，此方法立即返回 `obj`。
-- 否则，它会将所有属性设置为不可写（non-writable），密封 `obj` 并返回它。也就是说，`obj` 不可扩展，所有属性均为只读，且无法更改此状态。
+- 如果`obj`不是一个对象，此方法立即返回`obj`。
+- 否则，它会将所有属性设置为不可写（non-writable），密封`obj`并返回它。也就是说，`obj`不可扩展，所有属性均为只读，且无法更改此状态。
 
 ```javascript
 const point = { x: 17, y: -5 };
@@ -3746,7 +3841,7 @@ assert.throws(
 Object.isFrozen(obj: any): boolean
 ```
 
-检查 `obj` 是否被冻结 —— 例如：
+检查`obj`是否被冻结——例如：
 
 ```javascript
 > const point = { x: 17, y: -5 };
@@ -3760,7 +3855,7 @@ true
 
 #### 10.4.2 冻结是浅层的
 
-`Object.freeze(obj)` 仅冻结 `obj` 及其自身的属性。它不会冻结这些属性的值 —— 例如：
+`Object.freeze(obj)`仅冻结`obj`及其自身的属性。它不会冻结这些属性的值——例如：
 
 ```javascript
 const teacher = {
@@ -3806,7 +3901,7 @@ function deepFreeze(value) {
 }
 ```
 
-回顾前一节的示例，我们可以检查 `deepFreeze()` 是否真的实现了深冻结：
+回顾前一节的示例，我们可以检查`deepFreeze()`是否真的实现了深冻结：
 
 ```javascript
 const teacher = {
@@ -3824,7 +3919,7 @@ assert.throws(
 
 - 关于防止数据结构被更改的模式的更多信息：§15 “集合的不可变包装器 (Immutable wrappers for collections)”
 
-## 第 11 章：属性：赋值与定义
+# 第 11 章：属性：赋值与定义
 
 ## 目录
 
@@ -3841,11 +3936,11 @@ assert.throws(
   - 11.3.4 继承的只读属性会阻止通过赋值创建自身属性 ........................................ 113
 - 11.4 哪些语言结构使用定义，哪些使用赋值？ ... 114
   - 11.4.1 对象字面量的属性是通过定义添加的 ... 114
-  - 11.4.2 赋值运算符 = 始终使用赋值 ...... 114
+  - 11.4.2 赋值运算符`=`始终使用赋值 ...... 114
   - 11.4.3 公有类字段是通过定义添加的 .............. 115
 - 11.5 本章的延伸阅读与资源 ...................... 115
 
-创建或更改对象 `obj` 的属性 `prop` 有两种方式：
+创建或更改对象`obj`的属性`prop`有两种方式：
 
 - 赋值（Assigning）：`obj.prop = true`
 - 定义（Defining）：`Object.defineProperty(obj, 'prop', {value: true})`
@@ -3853,29 +3948,30 @@ assert.throws(
 本章将解释它们是如何工作的。
 
 > 必备知识：属性属性 (property attributes) 和属性描述符 (property descriptors)
+
 在本章中，你应该熟悉属性属性和属性描述符。如果你还不熟悉，请查看 §9 “属性属性：简介”。
 
 ### 11.1 赋值与定义
 
 #### 11.1.1 赋值
 
-我们使用赋值运算符 `=` 将值 `value` 赋值给对象 `obj` 的属性 `.prop`：
+我们使用赋值运算符`=`将值`value`赋值给对象`obj`的属性`.prop`：
 
 ```javascript
 obj.prop = value
 ```
 
-该运算符根据 `.prop` 的状态而产生不同的行为：
+该运算符根据`.prop`的状态而产生不同的行为：
 
-- 更改属性：如果存在一个自身的数值属性 `.prop`，赋值会将其值更改为 `value`。
-- 调用 setter：如果存在一个自身或继承的 `.prop` 的 setter，赋值会调用该 setter。
-- 创建属性：如果没有自身的数值属性 `.prop`，也没有其自身或继承的 setter，赋值会创建一个新的自身数值属性。
+- 更改属性：如果存在一个自身的数据属性`.prop`，赋值会将其值更改为`value`。
+- 调用 setter：如果存在一个自身或继承的`.prop`的 setter，赋值会调用该 setter。
+- 创建属性：如果没有自身的数据属性`.prop`，也没有其自身或继承的 setter，赋值会创建一个新的自身数据属性。
 
 也就是说，赋值的主要目的是进行更改。这就是为什么它支持 setter。
 
 #### 11.1.2 定义
 
-要定义对象 `obj` 中键为 `propKey` 的属性，我们使用如下方法等操作：
+要定义对象`obj`中键为`propKey`的属性，我们使用如下方法等操作：
 
 ```javascript
 Object.defineProperty(obj, propKey, propDesc)
@@ -3883,15 +3979,16 @@ Object.defineProperty(obj, propKey, propDesc)
 
 此方法的行为取决于属性的状态：
 
-- 更改属性：如果存在键为 `propKey` 的自身属性，定义会根据属性描述符 `propDesc` 更改其属性属性（如果可行）。
-- 创建属性：否则，定义会创建具有 `propDesc` 指定属性的自身属性（如果可行）。
+- 更改属性：如果存在键为`propKey`的自身属性，定义会根据属性描述符`propDesc`更改其属性属性（如果可行）。
+- 创建属性：否则，定义会创建具有`propDesc`指定属性的自身属性（如果可行）。
 
 也就是说，定义的主要目的是创建一个自身属性（即使存在继承的 setter 也会被忽略）以及更改属性属性。
 
 ### 11.2 理论上的赋值与定义（可选）
 
 > ECMAScript 规范中的属性描述符
-在规范操作中，属性描述符不是 JavaScript 对象，而是 *记录 (Records)*，这是一种具有 *字段 (fields)* 的规范内部数据结构。字段的键用双方括号表示。例如，`Desc.[[Configurable]]` 访问 `Desc` 的 `.[[Configurable]]` 字段。在与外部世界交互时，这些记录会被转换为 JavaScript 对象，反之亦然。
+
+在规范操作中，属性描述符不是 JavaScript 对象，而是*记录 (Records)*，这是一种具有*字段 (fields)*的规范内部数据结构。字段的键用双方括号表示。例如，`Desc.[[Configurable]]`访问`Desc`的`.[[Configurable]]`字段。在与外部世界交互时，这些记录会被转换为 JavaScript 对象，反之亦然。
 
 #### 11.2.1 对属性进行赋值
 
@@ -3901,66 +3998,60 @@ Object.defineProperty(obj, propKey, propDesc)
 
 参数如下：
 
-- O 是当前正在访问的对象。
-- P 是我们要赋值的属性键。
-- V 是我们要赋值的值。
-- Receiver 是赋值操作开始的对象。
-- ownDesc 是 O[P] 的描述符，如果该属性不存在则为 null。
+- `O`是当前正在访问的对象。
+- `P`是我们要赋值的属性键。
+- `V`是我们要赋值的值。
+- `Receiver`是赋值操作开始的对象。
+- `ownDesc`是`O[P]`的描述符，如果该属性不存在则为`null`。
 
-返回值是一个布尔值，指示操作是否成功。正如本章稍后解释的，如果 `OrdinarySetWithOwnDescriptor()` 失败，严格模式下的赋值会抛出 `TypeError`。
+返回值是一个布尔值，指示操作是否成功。正如本章稍后解释的，如果`OrdinarySetWithOwnDescriptor()`失败，严格模式下的赋值会抛出`TypeError`。
 
 这是该算法的高层概括：
 
-- 它遍历 `Receiver` 的原型链，直到找到键为 P 的属性。遍历是通过递归调用 `OrdinarySetWithOwnDescriptor()` 完成的。在递归过程中，O 会改变并指向当前访问的对象，但 `Receiver` 保持不变。
-- 根据遍历的结果，在 `Receiver`（递归开始的地方）中创建一个自身属性，或者发生其他情况。
+- 它遍历`Receiver`的原型链，直到找到键为`P`的属性。遍历是通过递归调用`OrdinarySetWithOwnDescriptor()`完成的。在递归过程中，`O`会改变并指向当前访问的对象，但`Receiver`保持不变。
+- 根据遍历的结果，在`Receiver`（递归开始的地方）中创建一个自身属性，或者发生其他情况。
 
 更详细地，该算法的工作流程如下：
 
-- 如果 `ownDesc` 为 `undefined`，说明我们还没有找到键为 P 的属性：
-  - 如果 O 有原型父类，则返回 `parent.[[Set]](P, V, Receiver)`。这会继续我们的搜索。该方法调用通常最终会递归地调用 `OrdinarySetWithOwnDescriptor()`。
-  - 否则，我们对 P 的搜索失败，我们将 `ownDesc` 设置为：`{ [[Value]]: undefined, [[Writable]]: true, [[Enumerable]]: true, [[Configurable]]: true }`。凭借这个 `ownDesc`，接下来的 if 语句将在 `Receiver` 中创建一个自身属性。
-- 如果 `ownDesc` 指定了一个数值属性，那么我们找到了一个属性：
-  - 如果 `ownDesc.[[Writable]]` 为 `false`，则返回 `false`。这意味着任何不可写属性 P（无论是自身的还是继承的！）都会阻止赋值。
-  - 令 `existingDescriptor` 为 `Receiver.[[GetOwnProperty]](P)`。也就是说，检索赋值开始处该属性的描述符。
-```
+- 如果`ownDesc`为`undefined`，说明我们还没有找到键为`P`的属性：
+  - 如果`O`有原型父类，则返回`parent.[[Set]](P, V, Receiver)`。这会继续我们的搜索。该方法调用通常最终会递归地调用`OrdinarySetWithOwnDescriptor()`。
+  - 否则，我们对`P`的搜索失败，我们将`ownDesc`设置为：`{ [[Value]]: undefined, [[Writable]]: true, [[Enumerable]]: true, [[Configurable]]: true }`。凭借这个`ownDesc`，接下来的 if 语句将在`Receiver`中创建一个自身属性。
 
-
+- 如果`ownDesc`指定了一个数据属性，那么我们找到了一个属性：
+  - 如果`ownDesc.[[Writable]]`为`false`，则返回`false`。这意味着任何不可写属性`P`（无论是自身的还是继承的！）都会阻止赋值。
+  - 令`existingDescriptor`为`Receiver.[[GetOwnProperty]](P)`。也就是说，检索赋值开始处该属性的描述符。
 
 拥有：
 
-- 一方面是当前对象 O 和当前的属性描述符 ownDesc。
-- 另一方面是原始对象 Receiver 和原始属性描述符 existingDescriptor。
+- 一方面是当前对象`O`和当前的属性描述符`ownDesc`。
+- 另一方面是原始对象`Receiver`和原始属性描述符`existingDescriptor`。
 
-- 如果 existingDescriptor 不是 undefined：
-  - （如果我们走到这一步，说明我们仍处于原型链的起点 —— 只有在 Receiver 没有属性 P 时我们才会递归。）
-  - 以下两个 if 条件永远不应该为真，因为 ownDesc 和 existingDesc 应该是相等的：
-    - 如果 existingDescriptor 指定了一个访问器，返回 false。
-    - 如果 existingDescriptor.[[Writable]] 为 false，返回 false。
-  - 返回 Receiver.[[DefineOwnProperty]](P, { [[Value]]: V })。这个内部方法执行定义操作，我们用它来更改属性 Receiver[P] 的值。定义算法在下一小节中描述。
+- 如果`existingDescriptor`不是`undefined`：
+  - （如果我们走到这一步，说明我们仍处于原型链的起点——只有在`Receiver`没有属性`P`时我们才会递归。）
+  - 以下两个 if 条件永远不应该为真，因为`ownDesc`和`existingDesc`应该是相等的：
+    - 如果`existingDescriptor`指定了一个访问器，返回`false`。
+    - 如果`existingDescriptor.[[Writable]]`为`false`，返回`false`。
+  - 返回`Receiver.[[DefineOwnProperty]](P, { [[Value]]: V })`。这个内部方法执行定义操作，我们用它来更改属性`Receiver[P]`的值。定义算法在下一小节中描述。
 - 否则：
-  - （如果我们走到这一步，说明 Receiver 没有键为 P 的自有属性。）
-  - 返回 CreateDataProperty(Receiver, P, V)。(此操作在其第一个参数中创建一个自有数据属性。)
+  - （如果我们走到这一步，说明`Receiver`没有键为`P`的自有属性。）
+  - 返回`CreateDataProperty(Receiver, P, V)`。（此操作在其第一个参数中创建一个自有数据属性。）
 
-- （如果我们走到这一步，说明 ownDesc 描述了一个自有或继承的访问器属性。）
+- （如果我们走到这一步，说明`ownDesc`描述了一个自有或继承的访问器属性。）
+- 令`setter`为`ownDesc.[[Set]]`。
+- 如果`setter`是`undefined`，返回`false`。
+- 执行`Call(setter, Receiver, «V»)`。`Call()`调用函数对象`setter`，将`this`设置为`Receiver`，并传入单个参数`V`（规范中使用法式引号`« »`表示列表）。
+- 返回`true`。
 
-- 令 setter 为 ownDesc.[[Set]]。
-
-- 如果 setter 是 undefined，返回 false。
-
-- 执行 Call(setter, Receiver, «V»)。Call() 调用函数对象 setter，将 this 设置为 Receiver，并传入单个参数 V（规范中使用法式引号 « » 表示列表）。
-
-- 返回 true。
-
-## 11.2.1.1 我们如何从赋值操作进入 OrdinarySetWithOwnDescriptor()？
+#### 11.2.1.1 我们如何从赋值操作进入`OrdinarySetWithOwnDescriptor()`？
 
 评估一个不含解构的赋值操作涉及以下步骤：
 
-- 在规范中，评估始于 [关于 AssignmentExpression 运行时语义的章节](#)。该章节处理为匿名函数提供名称、解构等操作。
-- 如果没有解构模式，则使用 PutValue() 来执行赋值。
-- 对于属性赋值，PutValue() 调用内部方法 .[[Set]]()。
-- 对于普通对象，.[[Set]]() 调用 OrdinarySet()（后者又调用 OrdinarySetWithOwnDescriptor()）并返回结果。
+- 在规范中，评估始于[关于 AssignmentExpression 运行时语义的章节](#)。该章节处理为匿名函数提供名称、解构等操作。
+- 如果没有解构模式，则使用`PutValue()`来执行赋值。
+- 对于属性赋值，`PutValue()`调用内部方法`.[[Set]]()`。
+- 对于普通对象，`.[[Set]]()`调用`OrdinarySet()`（后者又调用`OrdinarySetWithOwnDescriptor()`）并返回结果。
 
-值得注意的是，在严格模式下，如果 .[[Set]]() 的结果为 false，PutValue() 会抛出 TypeError。
+值得注意的是，在严格模式下，如果`.[[Set]]()`的结果为`false`，`PutValue()`会抛出`TypeError`。
 
 ### 11.2 理论上的赋值与定义（可选）
 
@@ -3968,43 +4059,45 @@ Object.defineProperty(obj, propKey, propDesc)
 
 定义属性的实际工作是通过 ECMAScript 规范中的以下操作处理的：
 
-```
+```text
 ValidateAndApplyPropertyDescriptor(O, P, extensible, Desc, current)
 ```
 
+
+
 参数如下：
 
-- 对象 O，即我们想要定义属性的对象。有一种特殊的仅验证模式，其中 O 为 undefined。我们在这里忽略该模式。
-- 属性键 P，即我们想要定义的属性的键。
-- extensible 表示 O 是否可扩展。
-- Desc 是一个属性描述符，指定我们希望该属性具有的特性。
-- current 包含自有属性 O[P] 的属性描述符（如果存在）。否则，current 为 undefined。
+- 对象 `O`，即我们想要定义属性的对象。有一种特殊的仅验证模式，其中 `O` 为 `undefined`。我们在这里忽略该模式。
+- 属性键 `P`，即我们想要定义的属性的键。
+- `extensible` 表示 `O` 是否可扩展。
+- `Desc` 是一个属性描述符，指定我们希望该属性具有的特性。
+- `current` 包含自有属性 `O[P]` 的属性描述符（如果存在）。否则，`current` 为 `undefined`。
 
-该操作的结果是一个布尔值，指示是否成功。失败可能会有不同的后果。某些调用者会忽略结果。而另一些调用者（如 Object.defineProperty()）如果在结果为 false 时会抛出异常。
+该操作的结果是一个布尔值，指示是否成功。失败可能会有不同的后果。某些调用者会忽略结果。而另一些调用者（如 `Object.defineProperty()`）如果在结果为 `false` 时会抛出异常。
 
 这是该算法的摘要：
 
-- 如果 current 是 undefined，则属性 P 当前不存在，必须创建。
-  - 如果 extensible 为 false，返回 false，表示无法添加该属性。
-  - 否则，检查 Desc 并创建数据属性或访问器属性。
-  - 返回 true。
-- 如果 Desc 没有一个字段，返回 true 表示操作成功（因为无需进行任何更改）。
-- 如果 current.[[Configurable]] 为 false：
-  - （Desc 不允许更改除 value 以外的特性。）
-  - 如果 Desc.[[Configurable]] 存在，它必须与 current.[[Configurable]] 具有相同的值。否则，返回 false。
-  - 同样检查：Desc.[[Enumerable]]
-- 接下来，我们验证属性描述符 Desc：current 所描述的特性能否更改为 Desc 指定的值？如果不能，返回 false。如果能，继续执行。
+- 如果 `current` 是 `undefined`，则属性 `P` 当前不存在，必须创建。
+  - 如果 `extensible` 为 `false`，返回 `false`，表示无法添加该属性。
+  - 否则，检查 `Desc` 并创建数据属性或访问器属性。
+  - 返回 `true`。
+- 如果 `Desc` 没有一个字段，返回 `true` 表示操作成功（因为无需进行任何更改）。
+- 如果 `current.[[Configurable]]` 为 `false`：
+  - （`Desc` 不允许更改除 `value` 以外的特性。）
+  - 如果 `Desc.[[Configurable]]` 存在，它必须与 `current.[[Configurable]]` 具有相同的值。否则，返回 `false`。
+  - 同样检查：`Desc.[[Enumerable]]`
+- 接下来，我们验证属性描述符 `Desc`：`current` 所描述的特性能否更改为 `Desc` 指定的值？如果不能，返回 `false`。如果能，继续执行。
   - 如果描述符是通用的（没有针对数据属性或访问器属性的特定特性），则验证成功，可以继续。
   - 否则，如果一个描述符指定了数据属性而另一个指定了访问器属性：
-    - 当前属性必须是可配置的（否则其特性无法按需更改）。如果不可配置，返回 false。
-    - 将当前属性从数据属性更改为访问器属性，反之亦然。在这样做时，`.[[Configurable]]` 和 `.[[Enumerable]]` 的值被保留，所有其他特性获得默认值（对象值特性为 undefined，布尔值特性为 false）。
+    - 当前属性必须是可配置的（否则其特性无法按需更改）。如果不可配置，返回 `false`。
+    - 将当前属性从数据属性更改为访问器属性，反之亦然。在这样做时，`.[[Configurable]]` 和 `.[[Enumerable]]` 的值被保留，所有其他特性获得默认值（对象值特性为 `undefined`，布尔值特性为 `false`）。
   - 否则，如果两个描述符都指定了数据属性：
-    - 如果 `current.[[Configurable]]` 和 `current.[[Writable]]` 均为 false，则不允许进行任何更改，且 `Desc` 和 `current` 必须指定相同的特性：
+    - 如果 `current.[[Configurable]]` 和 `current.[[Writable]]` 均为 `false`，则不允许进行任何更改，且 `Desc` 和 `current` 必须指定相同的特性：
       - （由于 `current.[[Configurable]]` 为 `false`，`Desc.[[Configurable]]` 和 `Desc.[[Enumerable]]` 之前已被检查过且具有正确的值。）
       - 如果 `Desc.[[Writable]]` 存在且为 `true`，则返回 `false`。
       - 如果 `Desc.[[Value]]` 存在且与 `current.[[Value]]` 的值不同，则返回 `false`。
       - 没有更多工作要做。返回 `true` 表示算法执行成功。
-    - （注意，通常情况下，除了值以外，我们不能更改不可配置属性的任何特性。此规则的唯一例外是我们总是可以将 writable 更改为 non-writable。该算法正确处理了这一例外。）
+    - （注意，通常情况下，除了值以外，我们不能更改不可配置属性的任何特性。此规则的唯一例外是我们总是可以将 `writable` 更改为 `non-writable`。该算法正确处理了这一例外。）
   - 否则（两个描述符都指定了访问器属性）：
     - 如果 `current.[[Configurable]]` 为 `false`，则不允许进行任何更改，且 `Desc` 和 `current` 必须指定相同的特性：
       - （由于 `current.[[Configurable]]` 为 `false`，`Desc.[[Configurable]]` 和 `Desc.[[Enumerable]]` 之前已被检查过且具有正确的值。）
@@ -4020,11 +4113,13 @@ ValidateAndApplyPropertyDescriptor(O, P, extensible, Desc, current)
 
 #### 11.3.1 只有定义允许我们创建具有任意特性的属性
 
-如果我们通过赋值创建自有属性，它总是创建 writable、enumerable 和 configurable 均为 true 的属性。
+如果我们通过赋值创建自有属性，它总是创建 `writable`、`enumerable` 和 `configurable` 均为 `true` 的属性。
 
 ```javascript
 const obj = {};
+
 obj.dataProp = 'abc';
+
 assert.deepEqual(
   Object.getOwnPropertyDescriptor(obj, 'dataProp'),
   {
@@ -4041,14 +4136,14 @@ assert.deepEqual(
 
 #### 11.3.2 赋值运算符不会更改原型中的属性
 
-让我们考虑以下设置，其中 obj 继承了来自 proto 的属性 prop。
+让我们考虑以下设置，其中 `obj` 继承了来自 `proto` 的属性 `prop`。
 
 ```javascript
 const proto = { prop: 'a' };
 const obj = Object.create(proto);
 ```
 
-我们不能通过对 obj.prop 赋值来（破坏性地）更改 proto.prop。这样做会创建一个新的自有属性：
+我们不能通过对 `obj.prop` 赋值来（破坏性地）更改 `proto.prop`。这样做会创建一个新的自有属性：
 
 ```javascript
 assert.deepEqual(
@@ -4070,16 +4165,13 @@ assert.equal(proto.prop, 'a');
 
 #### 11.3.3 赋值调用 setter，定义则不调用
 
-定义 obj 的 .prop 属性与对其赋值有什么区别？
+定义 `obj` 的 `.prop` 属性与对其赋值有什么区别？
 
-如果我们使用定义，那么我们的意图是创建或更改 obj 的一个自有（非继承）属性。因此，定义会忽略以下内容中 .prop 的继承 setter：
+如果我们使用定义，那么我们的意图是创建或更改 `obj` 的一个自有（非继承）属性。因此，定义会忽略以下内容中 `.prop` 的继承 setter：
 
-
-
- ```markdown
 示例：
 
-```
+```javascript
 let setterWasCalled = false;
 const proto = {
   get prop() {
@@ -4104,7 +4196,7 @@ assert.equal(obj.prop, 'objData');
 
 相反，如果我们对 `.prop` 进行赋值，那么我们的意图通常是更改已经存在的内容，并且该更改应该由 setter 处理：
 
-```
+```javascript
 let setterWasCalled = false;
 const proto = {
   get prop() {
@@ -4130,7 +4222,7 @@ assert.equal(obj.prop, 'protoGetter');
 
 如果 `.prop` 在原型中是只读的会发生什么？
 
-```
+```javascript
 const proto = Object.defineProperty(
   {}, 'prop', {
     value: 'protoValue',
@@ -4140,7 +4232,7 @@ const proto = Object.defineProperty(
 
 在任何从 `proto` 继承了只读 `.prop` 的对象中，我们不能使用赋值来创建具有相同键的自有属性——例如：
 
-```
+```javascript
 const obj = Object.create(proto);
 assert.throws(
   () => obj.prop = 'objValue',
@@ -4151,7 +4243,7 @@ assert.throws(
 
 然而，定义 `.prop` 仍然有效并允许我们进行覆盖：
 
-```
+```javascript
 Object.defineProperty(
   obj, 'prop', { value: 'objValue' });
 assert.equal(obj.prop, 'objValue');
@@ -4159,7 +4251,7 @@ assert.equal(obj.prop, 'objValue');
 
 没有 setter 的访问器属性也被认为是只读的：
 
-```
+```javascript
 const proto = {
   get prop() {
     return 'protoValue';
@@ -4172,7 +4264,9 @@ assert.throws(
 ```
 
 > ⚙️ “覆盖错误 (override mistake)”：利与弊
+>
 > 只读属性会阻止原型链中较早位置的赋值，这一事实被命名为 *override mistake*：
+>
 > - 它在 ECMAScript 5.1 中引入。
 > - 一方面，这种行为与原型继承和 setter 的工作方式是一致的。（所以，可以说它 *不是* 一个错误。）
 > - 另一方面，由于这种行为，深度冻结全局对象会导致不必要的副作用。
@@ -4190,7 +4284,7 @@ assert.throws(
 
 当我们通过对象字面量创建属性时，JavaScript 总是使用定义（因此永远不会调用继承的 setter）：
 
-```
+```javascript
 let lastSetterArgument;
 const proto = {
   set prop(x) {
@@ -4204,11 +4298,11 @@ const obj = {
 assert.equal(lastSetterArgument, undefined);
 ```
 
-#### 11.4.2 赋值运算符 = 总是使用赋值
+#### 11.4.2 赋值运算符 `=` 总是使用赋值
 
 赋值运算符 `=` 总是使用赋值来创建或更改属性。
 
-```
+```javascript
 let lastSetterArgument;
 const proto = {
   set prop(x) {
@@ -4224,7 +4318,7 @@ assert.equal(lastSetterArgument, 'abc');
 // 通过解构赋值：
 ```
 
-```
+```javascript
 [obj.prop] = ['def'];
 assert.equal(lastSetterArgument, 'def');
 ```
@@ -4233,7 +4327,7 @@ assert.equal(lastSetterArgument, 'def');
 
 遗憾的是，尽管公有类字段具有与赋值相同的语法，但它们并不使用赋值来创建属性，而是使用定义（就像对象字面量中的属性一样）：
 
-```
+```javascript
 let lastSetterArgument1;
 let lastSetterArgument2;
 class A {
@@ -4254,7 +4348,7 @@ class B extends A {
 new B();
 ```
 
-```
+```javascript
 // 公有类字段使用定义：
 assert.equal(lastSetterArgument1, undefined);
 // 在构造函数内部，我们触发了赋值：
@@ -4263,16 +4357,14 @@ assert.equal(lastSetterArgument2, 'two');
 
 ### 11.5 本章的延伸阅读与来源
 
-- 《JavaScript for impatient programmers》中的 “Prototype chains” 章节
+- 《JavaScript for impatient programmers》中的 “Prototype chains” 章节。
 - Allen Wirfs-Brock 发给 es-discuss 邮件列表的邮件：“赋值与定义之间的区别 [...] 在 ES 只有数据属性且 ES 代码无法操纵属性属性时并不重要。” [这一点在 ECMAScript 5 中发生了变化。]
 
-11 属性：赋值 vs. 定义
+# 11 属性：赋值 vs. 定义
 
-## 第 12 章
+## 第 12 章：属性的可枚举性
 
-## 属性的可枚举性
-
-## 目录
+### 目录
 
 - 12.1 可枚举性如何影响属性迭代结构 117
   - 12.1.1 仅考虑可枚举属性的操作 118
@@ -4289,14 +4381,16 @@ assert.equal(lastSetterArgument2, 'two');
 可枚举性是对象属性的一个 *属性（attribute）*。在本章中，我们将详细探讨它是如何被使用的，以及它如何影响 `Object.keys()` 和 `Object.assign()` 等操作。
 
 > 👁️ **必要知识：属性属性**
-> 
+>
 > 在阅读本章之前，你应该熟悉属性属性。如果还不熟悉，请查看 §9 “属性属性：入门”。
 
 ### 12.1 可枚举性如何影响属性迭代结构
 
 为了演示各种操作如何受可枚举性的影响，我们使用以下对象 `obj`，其原型为 `proto`。
 
-```
+
+
+```js
 const protoEnumSymbolKey = Symbol('protoEnumSymbolKey');
 const protoNonEnumSymbolKey = Symbol('protoNonEnumSymbolKey');
 const proto = Object.defineProperties({}, {
@@ -4342,9 +4436,9 @@ const obj = Object.create(proto, {
 
 #### 12.1.1 仅考虑可枚举属性的操作
 
-## 表 12.1：忽略不可枚举属性的操作。
+**表 12.1：忽略不可枚举属性的操作**
 
-| 操作 | | 字符串键 | Symbol 键 | 继承属性 |
+| 操作 |  | 字符串键 | Symbol 键 | 继承属性 |
 | :--- | :--- | :---: | :---: | :---: |
 | `Object.keys()` | ES5 | ✓ | ✗ | ✗ |
 | `Object.values()` | ES2017 | ✓ | ✗ | ✗ |
@@ -4358,126 +4452,141 @@ const obj = Object.create(proto, {
 
 - `Object.keys()` [ES5] 返回可枚举自有字符串键属性的键。
 
-    > Object.keys(obj)
-    [ 'objEnumStringKey' ]
+  ```js
+  Object.keys(obj)
+  // [ 'objEnumStringKey' ]
+  ```
 
 - `Object.values()` [ES2017] 返回可枚举自有字符串键属性的值。
 
-    > Object.values(obj)
-    [ 'objEnumStringKeyValue' ]
+  ```js
+  Object.values(obj)
+  // [ 'objEnumStringKeyValue' ]
+  ```
 
 - `Object.entries()` [ES2017] 返回可枚举自有字符串键属性的键值对。（注意 `Object.fromEntries()` 确实接受 symbol 作为键，但仅创建可枚举属性。）
 
-    > Object.entries(obj)
-    [ [ 'objEnumStringKey', 'objEnumStringKeyValue' ] ]
+  ```js
+  Object.entries(obj)
+  // [ [ 'objEnumStringKey', 'objEnumStringKeyValue' ] ]
+  ```
 
 - 展开到对象字面量 [ES2018] 仅考虑自有可枚举属性（具有字符串键或 symbol 键）。
 
-    > const copy = { ...obj };
-    > Reflect.ownKeys(copy)
-    [ 'objEnumStringKey', 'objEnumSymbolKey' ]
+  ```js
+  const copy = { ...obj };
+
+  Reflect.ownKeys(copy)
+  // [ 'objEnumStringKey', 'objEnumSymbolKey' ]
+  ```
 
 - `Object.assign()` [ES6] 仅复制可枚举自有属性（无论是字符串键还是 symbol 键）。
 
-    > const copy = Object.assign({}, obj);
-    > Reflect.ownKeys(copy)
-    [ 'objEnumStringKey', 'objEnumSymbolKey' ]
+  ```js
+  const copy = Object.assign({}, obj);
+
+  Reflect.ownKeys(copy)
+  // [ 'objEnumStringKey', 'objEnumSymbolKey' ]
+  ```
 
 - `JSON.stringify()` [ES5] 仅将具有字符串键的可枚举自有属性序列化为字符串。
 
-    > JSON.stringify(obj)
-    '{"objEnumStringKey": "objEnumStringKeyValue"}'
+  ```js
+  JSON.stringify(obj)
+  // '{"objEnumStringKey": "objEnumStringKeyValue"}'
+  ```
 
 - `for-in` 循环 [ES1] 遍历自有及继承的可枚举字符串键属性的键。
-```
 
+  ```js
+  const propKeys = [];
 
+  for (const propKey in obj) {
+    propKeys.push(propKey);
+  }
 
- ```
-const propKeys = [];
-for (const propKey in obj) {
-  propKeys.push(propKey);
-}
-assert.deepEqual(
-  propKeys, ['objEnumStringKey', 'protoEnumStringKey']);
-```
+  assert.deepEqual(
+    propKeys,
+    ['objEnumStringKey', 'protoEnumStringKey'],
+  );
+  ```
 
 `for-in` 是唯一一个在处理继承属性时会考虑可枚举性（enumerability）的内置操作。所有其他操作仅对自身属性生效。
 
 #### 12.1.2 同时考虑可枚举和不可枚举属性的操作
 
-表 12.2：同时考虑可枚举和不可枚举属性的操作。
+**表 12.2：同时考虑可枚举和不可枚举属性的操作**
 
 | 操作 |  | 字符串键 | 符号键 | 继承属性 |
 | --- | --- | --- | --- | --- |
-| Object.getOwnPropertyNames() | ES5 | ✔ | ✖ | ✖ |
-| Object.getOwnPropertySymbols() | ES6 | ✖ | ✔ | ✖ |
-| Reflect.ownKeys() | ES6 | ✔ | ✔ | ✖ |
-| Object.getOwnPropertyDescriptors() | ES2017 | ✔ | ✔ | ✖ |
+| `Object.getOwnPropertyNames()` | ES5 | ✔ | ✖ | ✖ |
+| `Object.getOwnPropertySymbols()` | ES6 | ✖ | ✔ | ✖ |
+| `Reflect.ownKeys()` | ES6 | ✔ | ✔ | ✖ |
+| `Object.getOwnPropertyDescriptors()` | ES2017 | ✔ | ✔ | ✖ |
 
 以下操作（汇总于表 12.2）会同时考虑可枚举和不可枚举属性：
 
 - `Object.getOwnPropertyNames()` [ES5] 列出所有自身字符串键属性的键。
 
-```
-> Object.getOwnPropertyNames(obj)
-[ 'objEnumStringKey', 'objNonEnumStringKey' ]
-```
+  ```js
+  Object.getOwnPropertyNames(obj)
+  // [ 'objEnumStringKey', 'objNonEnumStringKey' ]
+  ```
 
 - `Object.getOwnPropertySymbols()` [ES6] 列出所有自身符号键属性的键。
 
-```
-> Object.getOwnPropertySymbols(obj)
-[ objEnumSymbolKey, objNonEnumSymbolKey ]
-```
+  ```js
+  Object.getOwnPropertySymbols(obj)
+  // [ objEnumSymbolKey, objNonEnumSymbolKey ]
+  ```
 
 - `Reflect.ownKeys()` [ES6] 列出所有自身属性的键。
 
-```
-> Reflect.ownKeys(obj)
-[
-  'objEnumStringKey',
-  'objNonEnumStringKey',
-  objEnumSymbolKey,
-  objNonEnumSymbolKey
-]
-```
+  ```js
+  Reflect.ownKeys(obj)
+  // [
+  //   'objEnumStringKey',
+  //   'objNonEnumStringKey',
+  //   objEnumSymbolKey,
+  //   objNonEnumSymbolKey
+  // ]
+  ```
 
 - `Object.getOwnPropertyDescriptors()` [ES2017] 列出所有自身属性的属性描述符。
 
-```
-> Object.getOwnPropertyDescriptors(obj)
-{
-  objEnumStringKey: {
-    value: 'objEnumStringKeyValue',
-    writable: false,
-    enumerable: true,
-    configurable: false
-  },
-  objNonEnumStringKey: {
-    value: 'objNonEnumStringKeyValue',
-    writable: false,
-    enumerable: false,
-    configurable: false
-  },
-  [objEnumSymbolKey]: {
-    value: 'objEnumSymbolKeyValue',
-    writable: false,
-    enumerable: true,
-    configurable: false
-  },
-  [objNonEnumSymbolKey]: {
-    value: 'objNonEnumSymbolKeyValue',
-    writable: false,
-    enumerable: false,
-    configurable: false
-  }
-}
-```
+  ```js
+  Object.getOwnPropertyDescriptors(obj)
+  // {
+  //   objEnumStringKey: {
+  //     value: 'objEnumStringKeyValue',
+  //     writable: false,
+  //     enumerable: true,
+  //     configurable: false
+  //   },
+  //   objNonEnumStringKey: {
+  //     value: 'objNonEnumStringKeyValue',
+  //     writable: false,
+  //     enumerable: false,
+  //     configurable: false
+  //   },
+  //   [objEnumSymbolKey]: {
+  //     value: 'objEnumSymbolKeyValue',
+  //     writable: false,
+  //     enumerable: true,
+  //     configurable: false
+  //   },
+  //   [objNonEnumSymbolKey]: {
+  //     value: 'objNonEnumSymbolKeyValue',
+  //     writable: false,
+  //     enumerable: false,
+  //     configurable: false
+  //   }
+  // }
+  ```
 
 #### 12.1.3 内省操作的命名规则
 
-内省（Introspection）使程序能够在运行时检查值的结构。这是一种 *元编程（metaprogramming）*：普通编程是关于编写程序，而元编程是关于检查和/或修改程序。
+内省（Introspection）使程序能够在运行时检查值的结构。这是一种元编程（metaprogramming）：普通编程是关于编写程序，而元编程是关于检查和/或修改程序。
 
 在 JavaScript 中，常用的内省操作名称较短，而很少使用的操作名称较长。忽略不可枚举属性是常态，这就是为什么执行该操作的方法名称较短，而不执行该操作的方法名称较长：
 
@@ -4488,9 +4597,9 @@ assert.deepEqual(
 
 此外，还做了以下区分（自引入 Symbol 的 ES6 起）：
 
-- *属性键（Property keys）* 可以是字符串或符号。
-- *属性名（Property names）* 是字符串类型的属性键。
-- *属性符号（Property symbols）* 是符号类型的属性键。
+- 属性键（Property keys）可以是字符串或符号。
+- 属性名（Property names）是字符串类型的属性键。
+- 属性符号（Property symbols）是符号类型的属性键。
 
 因此，`Object.keys()` 现在一个更好的名称应该是 `Object.names()`。
 
@@ -4498,13 +4607,13 @@ assert.deepEqual(
 
 在本节中，我们将把 `Object.getOwnPropertyDescriptor()` 简写为：
 
-```
+```js
 const desc = Object.getOwnPropertyDescriptor.bind(Object);
 ```
 
 大多数数据属性在创建时具有以下属性：
 
-```
+```js
 {
   writable: true,
   enumerable: false,
@@ -4523,23 +4632,31 @@ const desc = Object.getOwnPropertyDescriptor.bind(Object);
 
 - 内置类的原型属性
 
-  > desc(Object.prototype, 'toString').enumerable
-  > false
+  ```js
+  desc(Object.prototype, 'toString').enumerable
+  // false
+  ```
 
 - 通过用户定义类创建的原型属性
 
-  > desc(class {foo() {}}.prototype, 'foo').enumerable
-  > false
+  ```js
+  desc(class { foo() {} }.prototype, 'foo').enumerable
+  // false
+  ```
 
 - 数组的 `.length` 属性：
 
-  > Object.getOwnPropertyDescriptor([], 'length')
-  > { value: 0, writable: true, enumerable: false, configurable: false }
+  ```js
+  Object.getOwnPropertyDescriptor([], 'length')
+  // { value: 0, writable: true, enumerable: false, configurable: false }
+  ```
 
 - 字符串的 `.length` 属性（注意原语值的所有属性都是只读的）：
 
-  > Object.getOwnPropertyDescriptor('', 'length')
-  > { value: 0, writable: false, enumerable: false, configurable: false }
+  ```js
+  Object.getOwnPropertyDescriptor('', 'length')
+  // { value: 0, writable: false, enumerable: false, configurable: false }
+  ```
 
 接下来我们将探讨可枚举性的使用场景，这将告诉我们为什么某些属性是可枚举的，而另一些则不是。
 
@@ -4549,16 +4666,18 @@ const desc = Object.getOwnPropertyDescriptor.bind(Object);
 
 #### 12.3.1 使用场景：在 `for-in` 循环中隐藏属性
 
-`for-in` 循环会遍历一个对象 *所有* 可枚举的字符串键属性，包括自身属性和继承属性。因此，`enumerable` 属性被用来隐藏那些不应被遍历的属性。这就是在 ECMAScript 1 中引入可枚举性的原因。
+`for-in` 循环会遍历一个对象所有可枚举的字符串键属性，包括自身属性和继承属性。因此，`enumerable` 属性被用来隐藏那些不应被遍历的属性。这就是在 ECMAScript 1 中引入可枚举性的原因。
 
 总的来说，最好避免使用 `for-in`。接下来的两个小节将解释原因。以下函数将帮助我们演示 `for-in` 的工作方式。
 
-```
+```js
 function listPropertiesViaForIn(obj) {
   const result = [];
+
   for (const key in obj) {
     result.push(key);
   }
+
   return result;
 }
 ```
@@ -4567,42 +4686,51 @@ function listPropertiesViaForIn(obj) {
 
 `for-in` 会迭代所有属性，包括继承属性：
 
-```
-const proto = {enumerableProtoProp: 1};
+```js
+const proto = { enumerableProtoProp: 1 };
+
 const obj = {
   __proto__: proto,
   enumerableObjProp: 2,
 };
+
 assert.deepEqual(
   listPropertiesViaForIn(obj),
-  ['enumerableObjProp', 'enumerableProtoProp']);
+  ['enumerableObjProp', 'enumerableProtoProp'],
+);
 ```
 
 对于普通的纯对象，`for-in` 看不到像 `Object.prototype.toString()` 这样的继承方法，因为它们都是不可枚举的：
 
-```
+```js
 const obj = {};
+
 assert.deepEqual(
   listPropertiesViaForIn(obj),
-  []);
+  [],
+);
 ```
 
 在用户定义类中，所有继承属性同样是不可枚举的，因此会被忽略：
 
-```
+```js
 class Person {
   constructor(first, last) {
     this.first = first;
     this.last = last;
   }
+
   getName() {
     return this.first + ' ' + this.last;
   }
 }
+
 const jane = new Person('Jane', 'Doe');
+
 assert.deepEqual(
   listPropertiesViaForIn(jane),
-  ['first', 'last']);
+  ['first', 'last'],
+);
 ```
 
 **结论：** 在对象中，`for-in` 会考虑继承属性，而我们通常希望忽略它们。因此，更好的做法是将 `for-of` 循环与 `Object.keys()`、`Object.entries()` 等结合使用。
@@ -4611,38 +4739,47 @@ assert.deepEqual(
 
 在数组和字符串中，自身属性 `.length` 是不可枚举的，因此被 `for-in` 忽略：
 
-```
-> listPropertiesViaForIn(['a', 'b'])
-[ '0', '1' ]
-> listPropertiesViaForIn('ab')
-[ '0', '1' ]
+```js
+listPropertiesViaForIn(['a', 'b'])
+// [ '0', '1' ]
+
+listPropertiesViaForIn('ab')
+// [ '0', '1' ]
 ```
 
 然而，通常不安全地使用 `for-in` 来迭代数组的索引，因为它会同时考虑继承属性以及非索引的自身属性。以下示例演示了如果数组具有一个非索引的自身属性会发生什么：
 
-```
+```js
 const arr1 = ['a', 'b'];
+
 assert.deepEqual(
   listPropertiesViaForIn(arr1),
-  ['0', '1']);
+  ['0', '1'],
+);
 ```
 
-```
+```js
 const arr2 = ['a', 'b'];
+
 arr2.nonIndexProp = 'yes';
+
 assert.deepEqual(
   listPropertiesViaForIn(arr2),
-  ['0', '1', 'nonIndexProp']);
+  ['0', '1', 'nonIndexProp'],
+);
 ```
 
 **结论：** 不应使用 `for-in` 来迭代数组的索引，因为它会同时考虑索引属性和非索引属性：
 
 - 如果你对数组的键感兴趣，请使用数组方法 `.keys()`：
 
-```
-> [...['a', 'b', 'c'].keys()]
-[ 0, 1, 2 ]
-```
+  ```js
+  [...['a', 'b', 'c'].keys()]
+  // [ 0, 1, 2 ]
+  ```
+
+
+
 
 - 如果你想迭代数组的元素，请使用 `for-of` 循环，它还有一个额外好处，就是同样适用于其他可迭代数据结构。
 
@@ -4654,38 +4791,40 @@ assert.deepEqual(
 
 [Prototype](https://prototypejs.org/) 是一个由 Sam Stephenson 在 2005 年 2 月创建的 JavaScript 框架，作为 Ruby on Rails 中 Ajax 支持基础的一部分。
 
-
-
 ## 12.3 可枚举性的用例
 
 Prototype 的 `Object.extend(destination, source)` 将 source 的所有可枚举的自有属性和继承属性复制到 destination 的自有属性中。其实现如下：
 
-```
+```js
 function extend(destination, source) {
   for (var property in source)
     destination[property] = source[property];
+
   return destination;
 }
 ```
 
 如果我们对一个对象使用 `Object.extend()`，可以看到它将继承属性复制为自有属性，并忽略不可枚举属性（它同样会忽略以 Symbol 为键的属性）。这一切都源于 `for-in` 的工作方式。
 
-```
+```js
 const proto = Object.defineProperties({}, {
   enumProtoProp: {
     value: 1,
     enumerable: true,
   },
+
   nonEnumProtoProp: {
     value: 2,
     enumerable: false,
   },
 });
+
 const obj = Object.create(proto, {
   enumObjProp: {
     value: 3,
     enumerable: true,
   },
+
   nonEnumObjProp: {
     value: 4,
     enumerable: false,
@@ -4710,10 +4849,10 @@ jQuery 的 `$.extend(target, source1, source2, ...)` 工作方式与 `Object.ext
 将复制操作建立在可枚举性之上有几个缺点：
 
 - 虽然可枚举性对于隐藏继承属性很有用，但主要以这种方式使用是因为我们通常只想将自有属性复制为自有属性。通过忽略继承属性可以更好地实现相同的效果。
-- 复制哪些属性通常取决于当前的任务；为所有用例设置一个统一的标志很少是有意义的。更好的选择是提供一个带有*谓词*（一个返回布尔值的回调函数）的复制操作，用以告知何时忽略属性。
+- 复制哪些属性通常取决于当前的任务；为所有用例设置一个统一的标志很少是有意义的。更好的选择是提供一个带有谓词（一个返回布尔值的回调函数）的复制操作，用以告知何时忽略属性。
 - 可枚举性在复制时很方便地隐藏了数组的自有属性 `.length`。但这是一个极其罕见的特例：一个既影响兄弟属性又被其影响的魔法属性。如果我们自己实现这种魔法，我们会使用（继承的）getter 和/或 setter，而不是（自有的）数据属性。
 
-##### 12.3.2.4 Object.assign() [ES6]
+##### 12.3.2.4 `Object.assign()` [ES6]
 
 在 ES6 中，`Object.assign(target, source_1, source_2, ...)` 可用于将多个源合并到目标对象中。源对象的所有自有可枚举属性都会被考虑（无论键是字符串还是 Symbol）。`Object.assign()` 使用 “get” 操作从源中读取值，并使用 “set” 操作将值写入目标。
 
@@ -4728,9 +4867,10 @@ jQuery 的 `$.extend(target, source1, source2, ...)` 工作方式与 `Object.ext
 不可枚举性有帮助的情况很少。一个罕见的例子是 [fs-extra 库最近遇到的一个问题](https://github.com/jprichardson/node-fs-extra/issues/583)：
 
 - Node.js 内置的 `fs` 模块有一个 `.promises` 属性，其中包含一个基于 Promise 的 `fs` API 对象。在问题发生时，读取 `.promise` 会导致控制台记录以下警告：
-  > ExperimentalWarning: The fs.promises API is experimental
-- 除了提供自身功能外，`fs-extra` 还重新导出 `fs` 中的所有内容。对于 CommonJS 模块，这意味着将 `fs` 的所有属性复制到 `fs-extra` 的 `module.exports` 中（通过 [Object.assign()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/assign)）。而当 `fs-extra` 这样做时，触发了该警告。这令人困惑，因为每次加载 `fs-extra` 时都会发生。
 
+  > ExperimentalWarning: The fs.promises API is experimental
+
+- 除了提供自身功能外，`fs-extra` 还重新导出 `fs` 中的所有内容。对于 CommonJS 模块，这意味着将 `fs` 的所有属性复制到 `fs-extra` 的 `module.exports` 中（通过 [Object.assign()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/assign)）。而当 `fs-extra` 这样做时，触发了该警告。这令人困惑，因为每次加载 `fs-extra` 时都会发生。
 - 一个快速修复方案是将 `fs.promises` 属性设置为不可枚举。之后，`fs-extra` 就忽略了它。
 
 #### 12.3.3 将属性标记为私有
@@ -4750,19 +4890,22 @@ jQuery 的 `$.extend(target, source1, source2, ...)` 工作方式与 `Object.ext
 
 作为可枚举性的替代方案，对象可以实现 `.toJSON()` 方法，而 `JSON.stringify()` 会将该方法返回的内容（而不是对象本身）转换为字符串。下一个示例演示了其工作原理。
 
-```
+```js
 class Point {
   static fromJSON(json) {
     return new Point(json[0], json[1]);
   }
+
   constructor(x, y) {
     this.x = x;
     this.y = y;
   }
+
   toJSON() {
     return [this.x, this.y];
   }
 }
+
 assert.equal(
   JSON.stringify(new Point(8, -3)),
   '[8,-3]'
@@ -4782,27 +4925,23 @@ assert.equal(
 
 也就是说，我们自然而然地遵循了最佳实践。
 
-# 第五部分
+# 第五部分：OOP：技巧
 
-# OOP：技巧
-
-# 第 13 章
-
-## 类实例化的技巧
+# 第 13 章：类实例化的技巧
 
 ## 目录
 
 - 13.1 问题：异步初始化属性 . . . . . . . . 131
 - 13.2 解决方案：基于 Promise 的构造函数 . . . . . . . . . . . . . . . . 132
   - 13.2.1 使用立即执行的异步箭头函数 . 133
-- 13.3 解决方案：静态工厂方法 . . . . . . . . . . . . . . . . . . . . . . 133
-  - 13.3.1 改进：通过秘密令牌实现私有构造函数 . . . . . 134
-  - 13.3.2 改进：构造函数抛出异常，工厂方法借用类原型 . . . . . . . . . . . . . . . . . . . . . . . 135
-  - 13.3.3 改进：实例默认处于非活动状态，由工厂方法激活 . . . . . . . . . . . . . . . . . . . . . . . 135
-  - 13.3.4 变体：独立的工厂函数 . . . . . . . . . . . . . 136
-- 13.4 子类化基于 Promise 的构造函数（可选） . . . . . . . . 137
-- 13.5 结论 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 138
-- 13.6 延伸阅读 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 138
+- 13.3 解决方案：静态工厂方法 . . . . . . . . . . . . . . . . . . . . . . . 133
+  - 13.3.1 改进：通过秘密令牌实现私有构造函数 . . . . . . . . . . . 134
+  - 13.3.2 改进：构造函数抛出异常，工厂方法借用类原型 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 135
+  - 13.3.3 改进：实例默认处于非活动状态，由工厂方法激活 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 135
+  - 13.3.4 变体：独立的工厂函数 . . . . . . . . . . . . . . . . . . . . . . . . . 136
+- 13.4 子类化基于 Promise 的构造函数（可选） . . . . . . . . . . . . . . . . 137
+- 13.5 结论 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 138
+- 13.6 延伸阅读 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 138
 
 在本章中，我们将探讨创建类实例的几种方法：构造函数、工厂函数等。我们将通过多次解决同一个具体问题来实现这一目标。本章的重点是类，因此将忽略类的替代方案。
 
@@ -4810,28 +4949,27 @@ assert.equal(
 
 下面的容器类旨在异步接收其属性 `.data` 的内容。这是我们的第一次尝试：
 
-```
+```js
 class DataContainer {
   #data; // (A)
+
   constructor() {
     Promise.resolve('downloaded')
-```
+      .then(data => this.#data = data); // (B)
+  }
 
-
-
- .then(data => this.#data = data); // (B)
-}
-getData() {
-  return 'DATA: '+this.#data; // (C)
-}
+  getData() {
+    return 'DATA: ' + this.#data; // (C)
+  }
 }
 ```
 
 这段代码的关键问题是：属性 `.data` 最初是 `undefined`。
 
-```
+```js
 const dc = new DataContainer();
 assert.equal(dc.getData(), 'DATA: undefined');
+
 setTimeout(() => assert.equal(
   dc.getData(), 'DATA: downloaded'), 0);
 ```
@@ -4844,9 +4982,10 @@ setTimeout(() => assert.equal(
 
 如果我们延迟访问 `DataContainer` 实例，直到它完全初始化为止会怎样？我们可以通过让构造函数返回一个 Promise 来实现。默认情况下，构造函数返回其所属类的一个新实例。如果我们显式地返回一个对象，就可以覆盖这个行为：
 
-```
+```js
 class DataContainer {
   #data;
+
   constructor() {
     return Promise.resolve('downloaded')
       .then(data => {
@@ -4854,10 +4993,12 @@ class DataContainer {
         return this; // (A)
       });
   }
+
   getData() {
-    return 'DATA: '+this.#data;
+    return 'DATA: ' + this.#data;
   }
 }
+
 new DataContainer()
   .then(dc => assert.equal( // (B)
     dc.getData(), 'DATA: downloaded'));
@@ -4879,18 +5020,18 @@ new DataContainer()
 
 与其直接使用 Promise API 来创建构造函数返回的 Promise，我们也可以使用一个立即执行的异步箭头函数：
 
-```
+```js
 constructor() {
-    return (async () => {
-        this.#data = await Promise.resolve('downloaded');
-        return this;
-    })();
+  return (async () => {
+    this.#data = await Promise.resolve('downloaded');
+    return this;
+  })();
 }
 ```
 
 ### 13.3 解决方案：静态工厂方法
 
-类 C 的*静态工厂方法*用于创建 C 的实例，它是 `new C()` 的一种替代方案。JavaScript 中静态工厂方法的常用名称包括：
+类 C 的静态工厂方法用于创建 C 的实例，它是 `new C()` 的一种替代方案。JavaScript 中静态工厂方法的常用名称包括：
 
 - `.create()`：创建新实例。例如：`Object.create()`
 - `.from()`：通过复制和/或转换另一个对象来创建新实例。例如：`Array.from()`
@@ -4898,26 +5039,29 @@ constructor() {
 
 在下面的示例中，`DataContainer.create()` 是一个静态工厂方法。它返回 `DataContainer` 实例的 Promise：
 
-```
+```js
 class DataContainer {
-    #data;
-    static async create() {
-        const data = await Promise.resolve('downloaded');
-        return new this(data);
-    }
-    constructor(data) {
-        this.#data = data;
-    }
-    getData() {
-        return 'DATA: ' + this.#data;
-    }
+  #data;
+
+  static async create() {
+    const data = await Promise.resolve('downloaded');
+    return new this(data);
+  }
+
+  constructor(data) {
+    this.#data = data;
+  }
+
+  getData() {
+    return 'DATA: ' + this.#data;
+  }
 }
 ```
 
-```
+```js
 DataContainer.create()
-    .then(dc => assert.equal(
-        dc.getData(), 'DATA: downloaded'));
+  .then(dc => assert.equal(
+    dc.getData(), 'DATA: downloaded'));
 ```
 
 这一次，所有异步功能都包含在 `.create()` 中，这使得类的其余部分可以是完全同步的，从而更加简单。
@@ -4931,46 +5075,52 @@ DataContainer.create()
 
 如果我们想确保实例总是被正确设置，就必须确保只有 `DataContainer.create()` 能调用 `DataContainer` 的构造函数。我们可以通过一个秘密令牌（secret token）来实现：
 
-```
+```js
 const secretToken = Symbol('secretToken');
+
 class DataContainer {
-    #data;
-    static async create() {
-        const data = await Promise.resolve('downloaded');
-        return new this(secretToken, data);
+  #data;
+
+  static async create() {
+    const data = await Promise.resolve('downloaded');
+    return new this(secretToken, data);
+  }
+
+  constructor(token, data) {
+    if (token !== secretToken) {
+      throw new Error('Constructor is private');
     }
 
-    constructor(token, data) {
-        if (token !== secretToken) {
-            throw new Error('Constructor is private');
-        }
-        this.#data = data;
-    }
+    this.#data = data;
+  }
 
-    getData() {
-        return 'DATA: ' + this.#data;
-    }
+  getData() {
+    return 'DATA: ' + this.#data;
+  }
 }
 ```
 
-```
+```js
 DataContainer.create()
-    .then(dc => assert.equal(
-        dc.getData(), 'DATA: downloaded'));
+  .then(dc => assert.equal(
+    dc.getData(), 'DATA: downloaded'));
 ```
 
-如果 `secretToken` 和 `DataContainer` 位于同一个模块中，且只有后者被导出，那么外部人员将无法访问 `secretToken`，因此无法创建 `DataContainer` 的实例。
+
+
+
+如果`secretToken`和`DataContainer`位于同一个模块中，且只有后者被导出，那么外部人员将无法访问`secretToken`，因此无法创建`DataContainer`的实例。
 
 优点和缺点：
 
 - 优点：安全且直接。
 - 缺点：略显冗长。
 
-#### 13.3.2 改进：构造函数抛出错误，工厂方法借用类原型
+### 13.3.2 改进：构造函数抛出错误，工厂方法借用类原型
 
-以下解决方案的变体禁用了 `DataContainer` 的构造函数，并使用一个小技巧通过另一种方式创建实例（A 行）：
+以下解决方案的变体禁用了`DataContainer`的构造函数，并使用一个小技巧通过另一种方式创建实例（A 行）：
 
-```
+```js
 class DataContainer {
   static async create() {
     const data = await Promise.resolve('downloaded');
@@ -4995,20 +5145,20 @@ DataContainer.create()
   });
 ```
 
-在内部，`DataContainer` 的一个实例就是任何原型为 `DataContainer.prototype` 的对象。这就是为什么我们可以通过 `Object.create()` 创建实例（A 行），以及为什么 B 行中的 `instanceof` 能正常工作。
+在内部，`DataContainer`的一个实例就是任何原型为`DataContainer.prototype`的对象。这就是为什么我们可以通过`Object.create()`创建实例（A 行），以及为什么 B 行中的`instanceof`能正常工作。
 
 优点和缺点：
 
-- 优点：优雅；`instanceof` 可用。
+- 优点：优雅；`instanceof`可用。
 - 缺点：
-  - 无法完全阻止创建实例。不过公平地说，之前的解决方案同样可以使用 `Object.create()` 绕过。
-  - 我们不能在 `DataContainer` 中使用私有字段和私有方法，因为这些只能为通过构造函数创建的实例正确设置。
+  - 无法完全阻止创建实例。不过公平地说，之前的解决方案同样可以使用`Object.create()`绕过。
+  - 我们不能在`DataContainer`中使用私有字段和私有方法，因为这些只能为通过构造函数创建的实例正确设置。
 
-#### 13.3.3 改进：实例默认不激活，由工厂方法激活
+### 13.3.3 改进：实例默认不激活，由工厂方法激活
 
-另一种更冗长的变体是：默认情况下，实例通过标志 `.#active` 处于关闭状态。将其开启的初始化方法 `.#init()` 无法从外部访问，但 `DataContainer.create()` 可以调用它：
+另一种更冗长的变体是：默认情况下，实例通过标志`.#active`处于关闭状态。将其开启的初始化方法`.#init()`无法从外部访问，但`DataContainer.create()`可以调用它：
 
-```
+```js
 class DataContainer {
   #data;
   static async create() {
@@ -5039,15 +5189,15 @@ DataContainer.create()
     dc.getData(), 'DATA: downloaded'));
 ```
 
-标志 `#active` 通过私有方法 `#check()` 来强制执行，该方法必须在每个方法的开始处调用。
+标志`#active`通过私有方法`#check()`来强制执行，该方法必须在每个方法的开始处调用。
 
-这个方案的主要缺点是冗长。此外，还存在在每个方法中忘记调用 `#check()` 的风险。
+这个方案的主要缺点是冗长。此外，还存在在每个方法中忘记调用`#check()`的风险。
 
-#### 13.3.4 变体：独立的工厂函数
+### 13.3.4 变体：独立的工厂函数
 
 为了完整起见，我将展示另一种变体：除了使用静态方法作为工厂外，你还可以使用一个独立的函数。
 
-```
+```js
 const secretToken = Symbol('secretToken');
 class DataContainer {
   #data;
@@ -5063,14 +5213,14 @@ class DataContainer {
 }
 ```
 
-```
+```js
 async function createDataContainer() {
   const data = await Promise.resolve('downloaded');
   return new DataContainer(secretToken, data);
 }
 ```
 
-```
+```js
 createDataContainer()
   .then(dc => assert.equal(
     dc.getData(), 'DATA: downloaded'));
@@ -5078,18 +5228,18 @@ createDataContainer()
 
 独立的工厂函数有时很有用，但在这种情况下，我更倾向于使用静态方法：
 
-- 独立函数无法访问 `DataContainer` 的私有成员。
-- 我更喜欢 `DataContainer.create()` 的写法。
+- 独立函数无法访问`DataContainer`的私有成员。
+- 我更喜欢`DataContainer.create()`的写法。
 
-### 13.4 子类化基于 Promise 的构造函数（可选）
+## 13.4 子类化基于 Promise 的构造函数（可选）
 
 通常情况下，子类化应该谨慎使用。
 
-使用独立的工厂函数时，扩展 `DataContainer` 相对简单。
+使用独立的工厂函数时，扩展`DataContainer`相对简单。
 
-遗憾的是，扩展一个带有基于 Promise 的构造函数的类会导致严重的限制。在下面的示例中，我们子类化了 `DataContainer`。子类 `SubDataContainer` 拥有自己的私有字段 `.#moreData`，它通过挂载到超类构造函数返回的 Promise 来异步初始化该字段。
+遗憾的是，扩展一个带有基于 Promise 的构造函数的类会导致严重的限制。在下面的示例中，我们子类化了`DataContainer`。子类`SubDataContainer`拥有自己的私有字段`.#moreData`，它通过挂载到超类构造函数返回的 Promise 来异步初始化该字段。
 
-```
+```js
 class DataContainer {
   #data;
   constructor() {
@@ -5105,7 +5255,7 @@ class DataContainer {
 }
 ```
 
-```
+```js
 class SubDataContainer extends DataContainer {
   #moreData;
   constructor() {
@@ -5114,9 +5264,7 @@ class SubDataContainer extends DataContainer {
     return promise
 ```
 
-
-
-```
+```js
 .then(_this => {
   return Promise.resolve('more')
     .then(moreData => {
@@ -5127,7 +5275,7 @@ class SubDataContainer extends DataContainer {
 }
 ```
 
-```
+```js
 getData() {
   return super.getData() + ', ' + this.#moreData;
 }
@@ -5136,7 +5284,7 @@ getData() {
 
 可惜的是，我们无法实例化这个类：
 
-```
+```js
 assert.rejects(
   () => new SubDataContainer(),
   {
@@ -5147,17 +5295,17 @@ assert.rejects(
 );
 ```
 
-为什么会失败？构造函数总是会将私有字段添加到它的 `this` 上。然而，这里子构造函数中的 `this` 是超构造函数返回的 Promise（而不是通过 Promise 传递的 SubDataContainer 实例）。
+为什么会失败？构造函数总是会将私有字段添加到它的`this`上。然而，这里子构造函数中的`this`是超构造函数返回的 Promise（而不是通过 Promise 传递的`SubDataContainer`实例）。
 
-但是，如果 SubDataContainer 没有任何私有字段，这种方法仍然有效。
+但是，如果`SubDataContainer`没有任何私有字段，这种方法仍然有效。
 
-### 13.5 结论
+## 13.5 结论
 
 对于本章讨论的场景，我倾向于使用基于 Promise 的构造函数，或者使用静态工厂方法加上通过秘密令牌实现的私有构造函数。
 
 不过，这里介绍的其他技术在其他场景中仍然很有用。
 
-### 13.6 延伸阅读
+## 13.6 延伸阅读
 
 - 异步编程：
   - 《JavaScript for impatient programmers》中的 "Promises for asynchronous programming" 章节
@@ -5172,26 +5320,26 @@ assert.rejects(
 
 ## 第 14 章
 
-## 类的实例复制：`.clone()` 与复制构造函数
+## 类的实例复制：`.clone()`与复制构造函数
 
 ## 目录
 
 | 小节 | 页码 |
-|------|------|
-| 14.1 `.clone()` 方法 | 141 |
+|---|---|
+| 14.1 `.clone()`方法 | 141 |
 | 14.2 静态工厂方法 | 142 |
 | 14.3 致谢 | 143 |
 
 在本章中，我们将介绍两种为类实例实现复制的技术：
 
-- `.clone()` 方法
-- 所谓的*复制构造函数*，即接收当前类的另一个实例并用它来初始化当前实例的构造函数。
+- `.clone()`方法
+- 所谓的复制构造函数，即接收当前类的另一个实例并用它来初始化当前实例的构造函数。
 
-### 14.1 `.clone()` 方法
+### 14.1 `.clone()`方法
 
-这种技术为每个需要被复制的类引入一个 `.clone()` 方法。它返回 `this` 的深拷贝。以下示例展示了三个可以被克隆的类。
+这种技术为每个需要被复制的类引入一个`.clone()`方法。它返回`this`的深拷贝。以下示例展示了三个可以被克隆的类。
 
-```
+```js
 class Point {
   constructor(x, y) {
     this.x = x;
@@ -5225,11 +5373,11 @@ A 行展示了该技术的一个重要方面：复合实例属性值也必须递
 
 ### 14.2 静态工厂方法
 
-复制构造函数是一种使用当前类的另一个实例来设置当前实例的构造函数。复制构造函数在 C++ 和 Java 等静态语言中很流行，在这些语言中你可以通过静态重载提供多个版本的构造函数。这里的"静态"意味着选择使用哪个版本是在编译时决定的。
+复制构造函数是一种使用当前类的另一个实例来设置当前实例的构造函数。复制构造函数在 C++ 和 Java 等静态语言中很流行，在这些语言中你可以通过静态重载提供多个版本的构造函数。这里的“静态”意味着选择使用哪个版本是在编译时决定的。
 
 在 JavaScript 中，我们必须在运行时做出这个决定，这会导致不够优雅的代码：
 
-```
+```js
 class Point {
   constructor(...args) {
     if (args[0] instanceof Point) {
@@ -5248,17 +5396,17 @@ class Point {
 
 以下是使用这个类的方式：
 
-```
+```js
 const original = new Point(-1, 4);
 const copy = new Point(original);
 assert.deepEqual(copy, original);
 ```
 
-静态工厂方法是构造函数的一种替代方案，在这种情况下效果更好，因为我们可以直接调用所需的功能。（这里，*静态*意味着这些工厂方法是类方法。）
+静态工厂方法是构造函数的一种替代方案，在这种情况下效果更好，因为我们可以直接调用所需的功能。（这里，“静态”意味着这些工厂方法是类方法。）
 
-在以下示例中，Point、Color 和 ColorPoint 三个类各自拥有一个静态工厂方法 `.from()`：
+在以下示例中，`Point`、`Color`和`ColorPoint`三个类各自拥有一个静态工厂方法`.from()`：
 
-```
+```js
 class Point {
   constructor(x, y) {
     this.x = x;
@@ -5290,9 +5438,9 @@ class ColorPoint extends Point {
 
 在 A 行中，我们再次进行了递归复制。
 
-以下是 ColorPoint.from() 的使用方式：
+以下是`ColorPoint.from()`的使用方式：
 
-```
+```js
 const original = new ColorPoint(-1, 4, new Color('red'));
 const copy = ColorPoint.from(original);
 assert.deepEqual(copy, original);
@@ -5319,12 +5467,12 @@ assert.deepEqual(copy, original);
 
 如果我们有一个想要缩减其接口的对象，可以采用以下方法：
 
-- 创建一个新对象，将原始对象存储在一个私有字段中。这个新对象被称为*包装*原始对象。新对象称为*包装器*（wrapper），原始对象称为*被包装对象*（wrapped object）。
+- 创建一个新对象，将原始对象存储在一个私有字段中。这个新对象被称为包装原始对象。新对象称为包装器（wrapper），原始对象称为被包装对象（wrapped object）。
 - 包装器只将它接收到的部分方法调用转发给被包装对象。
 
 包装的示例如下：
 
-```
+```js
 class Wrapper {
   #wrapped;
   constructor(wrapped) {
@@ -5342,24 +5490,26 @@ class Wrapper {
 相关软件设计模式：
 
 - 包装与[四人帮设计模式——外观模式（Facade）](https://en.wikipedia.org/wiki/Facade_pattern)有关。
-- 我们使用*转发*来实现*委托*。委托意味着一个对象让另一个对象（*被委托者*）处理它的一部分工作。它是继承的一种替代方案，用于共享代码。
+- 我们使用转发来实现委托。委托意味着一个对象让另一个对象（被委托者）处理它的一部分工作。它是继承的一种替代方案，用于共享代码。
 
 #### 15.1.1 通过包装使集合不可变
 
 要使集合不可变，我们可以使用包装并从其接口中移除所有破坏性操作。
 
-该技术的一个重要用例是一个对象拥有内部可变数据结构，它希望在不复制数据的情况下安全地导出该结构。导出保持"活跃"（live）也可能是一个目标。对象可以通过包装内部数据结构并使其不可变来实现这些目标。
+该技术的一个重要用例是一个对象拥有内部可变数据结构，它希望在不复制数据的情况下安全地导出该结构。导出保持“活跃”（live）也可能是一个目标。对象可以通过包装内部数据结构并使其不可变来实现这些目标。
 
-接下来的两节展示了 Map 和 Array 的不可变包装器。它们都有以下局限性：
+接下来的两节展示了`Map`和`Array`的不可变包装器。它们都有以下局限性：
 
 - 它们是示例代码。要使其适合实际使用还需要更多工作：更好的检查、对更多方法的支持等。
 - 它们是浅层的：每一个包装器都使被包装对象不可变，但不会使其返回的数据不可变。这可以通过包装方法返回的部分结果来解决。
 
 ### 15.2 Map 的不可变包装器
 
-ImmutableMapWrapper 类为 Map 生成包装器：
+`ImmutableMapWrapper`类为`Map`生成包装器：
 
-```
+
+
+```javascript
 class ImmutableMapWrapper {
   static _setUpPrototype() {
     // Only forward non-destructive methods to the wrapped Map:
@@ -5374,13 +5524,12 @@ class ImmutableMapWrapper {
   constructor(wrappedMap) {
     this.#wrappedMap = wrappedMap;
   }
+}
 ```
-
-
 
 ### 15.3 数组的不可变包装器
 
-对于数组 `arr`，普通的包装是不够的，因为我们不仅需要拦截方法调用，还需要拦截属性访问，例如 `arr[1] = true`。[JavaScript 代理 (Proxies)](chapter_proxies.html) 使我们能够实现这一点：
+对于数组`arr`，普通的包装是不够的，因为我们不仅需要拦截方法调用，还需要拦截属性访问，例如`arr[1] = true`。[JavaScript 代理 (Proxies)](chapter_proxies.html) 使我们能够实现这一点：
 
 ```javascript
 const RE_INDEX_PROP_KEY = /^[0-9]+$/;
@@ -5443,13 +5592,13 @@ assert.throws(
 - 16.2 本章注意事项 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 152
 - 16.3 示例：指定匹配之前或之后的内容（正向环视） . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 152
 - 16.4 示例：指定匹配之前或之后不含的内容（负向环视） . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 153
-    - 16.4.1 负向环视断言没有简单的替代方案 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 153
+  - 16.4.1 负向环视断言没有简单的替代方案 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 153
 - 16.5 间奏：将环视断言向内指向 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 154
 - 16.6 示例：匹配不以 'abc' 开头的字符串 . . . . . . . . . . . . . . . . . . . . . . . . . . . . 154
 - 16.7 示例：匹配不包含 '.mjs' 的子字符串 . . . . . . . . . . . . . . . . . . . . . . . . . . . 155
 - 16.8 示例：跳过包含注释的行 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 155
 - 16.9 示例：智能引号 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 156
-    - 16.9.1 支持通过反斜杠进行转义 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 156
+  - 16.9.1 支持通过反斜杠进行转义 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 156
 - 16.10 致谢 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 157
 - 16.11 延伸阅读 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 157
 
@@ -5461,19 +5610,19 @@ assert.throws(
 
 | 模式 | 名称 | 版本 |
 | :--- | :--- | :--- |
-| (?=«pattern») | 正向前瞻 (Positive lookahead) | ES3 |
-| (?!«pattern») | 负向前瞻 (Negative lookahead) | ES3 |
-| (?<=«pattern») | 正向后顾 (Positive lookbehind) | ES2018 |
-| (?<!«pattern») | 负向后顾 (Negative lookbehind) | ES2018 |
+| `(?=«pattern»)` | 正向前瞻 (Positive lookahead) | ES3 |
+| `(?!«pattern»)` | 负向前瞻 (Negative lookahead) | ES3 |
+| `(?<=«pattern»)` | 正向后顾 (Positive lookbehind) | ES2018 |
+| `(?<!«pattern»)` | 负向后顾 (Negative lookbehind) | ES2018 |
 
 共有四种环视断言（表 16.1）：
 
 - 前瞻断言 (Lookahead assertions, ECMAScript 3)：
-    - 正向前瞻：`(?=«pattern»)` 如果模式匹配输入字符串中当前位置之后的内容，则匹配。
-    - 负向前瞻：`(?!«pattern»)` 如果模式不匹配输入字符串中当前位置之后的内容，则匹配。
+  - 正向前瞻：`(?=«pattern»)` 如果模式匹配输入字符串中当前位置之后的内容，则匹配。
+  - 负向前瞻：`(?!«pattern»)` 如果模式不匹配输入字符串中当前位置之后的内容，则匹配。
 - 后顾断言 (Lookbehind assertions, ECMAScript 2018)：
-    - 正向后顾：`(?<=«pattern»)` 如果模式匹配输入字符串中当前位置之前的内容，则匹配。
-    - 负向后顾：`(?<!«pattern»)` 如果模式不匹配输入字符串中当前位置之前的内容，则匹配。
+  - 正向后顾：`(?<=«pattern»)` 如果模式匹配输入字符串中当前位置之前的内容，则匹配。
+  - 负向后顾：`(?<!«pattern»)` 如果模式不匹配输入字符串中当前位置之前的内容，则匹配。
 
 ### 16.2 本章注意事项
 
@@ -5495,7 +5644,7 @@ assert.throws(
 - `(?<=")` “必须前面有一个引号”
 - `(?=")` “必须后面有一个引号”
 
-环视断言对于 `/g` 模式下的 `.match()` 特别方便，因为该模式返回整个匹配项（捕获组 0）。环视断言模式匹配的任何内容都不会被捕获。如果没有环视断言，引号会出现在结果中：
+环视断言对于`/g`模式下的`.match()`特别方便，因为该模式返回整个匹配项（捕获组 0）。环视断言模式匹配的任何内容都不会被捕获。如果没有环视断言，引号会出现在结果中：
 
 ```javascript
 > 'how "are" "you" doing'.match(/([a-z]+)/g)
@@ -5506,8 +5655,8 @@ assert.throws(
 
 我们如何实现与前一节相反的操作，即从字符串中提取所有未被引号包裹的单词？
 
-- 输入：'how "are" "you" doing'
-- 输出：['how', 'doing']
+- 输入：`'how "are" "you" doing'`
+- 输出：`['how', 'doing']`
 
 我们的第一次尝试是简单地将正向环视断言转换为负向环视断言。遗憾的是，这失败了：
 
@@ -5516,7 +5665,7 @@ assert.throws(
 [ 'how', 'r', 'o', 'doing' ]
 ```
 
-问题在于我们提取的是没有被引号包裹的字符序列。这意味着在字符串 "are" 中，中间的 "r" 被认为是未被引号包裹的，因为它前面是 "a"，后面是 "e"。
+问题在于我们提取的是没有被引号包裹的字符序列。这意味着在字符串`"are"`中，中间的`"r"`被认为是未被引号包裹的，因为它前面是`"a"`，后面是`"e"`。
 
 我们可以通过规定前缀和后缀既不能是引号也不能是字母来修复这个问题：
 
@@ -5525,7 +5674,7 @@ assert.throws(
 [ 'how', 'doing' ]
 ```
 
-另一种解决方案是通过 `\b` 要求字符序列 `[a-z]+` 在单词边界开始和结束：
+另一种解决方案是通过`\b`要求字符序列`[a-z]+`在单词边界开始和结束：
 
 ```javascript
 > 'how "are" "you" doing'.match(/((?<!\b)[a-z]+\b(!?)" )/g)
@@ -5561,16 +5710,16 @@ assert.deepEqual(unquotedWords, ['how', 'doing']);
 
 ### 16.6 示例：匹配不以 'abc' 开头的字符串
 
-假设我们要匹配所有不以 'abc' 开头的字符串。我们的第一次尝试可以是正则表达式 `/^(?!abc)/`。
+假设我们要匹配所有不以`'abc'`开头的字符串。我们的第一次尝试可以是正则表达式`/^(?!abc)/`。
 
-这对于 `.test()` 运行良好：
+这对于`.test()`运行良好：
 
 ```javascript
 > /^(?!abc)/.test('xyz')
 true
 ```
 
-然而，`.exec()` 会给我们一个空字符串：
+然而，`.exec()`会给我们一个空字符串：
 
 ```javascript
 > /^(?!abc)/.exec('xyz')
@@ -5586,7 +5735,7 @@ true
 { 0: 'xyz', index: 0, input: 'xyz', groups: undefined }
 ```
 
-正如预期，这个新的正则表达式会拒绝以 'abc' 为前缀的字符串：
+正如预期，这个新的正则表达式会拒绝以`'abc'`为前缀的字符串：
 
 ```javascript
 > /^(?!abc).*$/.exec('abc')
@@ -5602,17 +5751,15 @@ null
 { 0: 'ab', index: 0, input: 'ab', groups: undefined }
 ```
 
-
-
- ## 16.7 示例：匹配不包含 '.mjs' 的子字符串
+### 16.7 示例：匹配不包含 '.mjs' 的子字符串
 
 在下面的示例中，我们想要找到：
 
-import ··· from '«module-specifier»';
+`import ··· from '«module-specifier»';`
 
-其中 module-specifier 不以 '.mjs' 结尾。
+其中 module-specifier 不以`'.mjs'`结尾。
 
-```
+```javascript
 const code = `
 import {transform} from './util';
 import {Person} from './person.mjs';
@@ -5626,13 +5773,13 @@ assert.deepEqual(
   ]);
 ```
 
-这里，先行断言 `(?!\.mjs)` 起到了守护（guard）的作用，防止正则表达式匹配在当前位置包含 '.mjs' 的字符串。
+这里，先行断言`(?!\.mjs)`起到了守护（guard）的作用，防止正则表达式匹配在当前位置包含`'.mjs'`的字符串。
 
 ### 16.8 示例：跳过包含注释的行
 
 场景：我们想要解析包含设置的行，同时跳过注释。例如：
 
-```
+```javascript
 const RE_SETTING = /^(?!#)([^:]*):(.*)$/
 
 const lines = [
@@ -5654,7 +5801,7 @@ for (const line of lines) {
 // 'KEY: "whitespace" VALUE: " trim"'
 ```
 
-我们是如何得出正则表达式 `RE_SETTING` 的？
+我们是如何得出正则表达式`RE_SETTING`的？
 
 我们首先使用了以下用于匹配设置的正则表达式：
 
@@ -5684,7 +5831,7 @@ for (const line of lines) {
 **true**
 ```
 
-我们可以通过在前缀添加 `(?!#)` 作为守护来修复这个问题。直观地说，这意味着：“输入字符串中的当前位置后面不能紧跟字符 #。”
+我们可以通过在前缀添加`(?!#)`作为守护来修复这个问题。直观地说，这意味着：“输入字符串中的当前位置后面不能紧跟字符 #。”
 
 新的正则表达式按预期工作：
 
@@ -5699,6 +5846,8 @@ for (const line of lines) {
 
 - 输入：`"yes"` 和 `"no"`
 - 输出：`“yes”` 和 `“no”`
+
+
 
 这是我们的第一次尝试：
 
@@ -5783,8 +5932,6 @@ for (const line of lines) {
 
 - 17.1 基础知识 . . . . . . . . . . . .
 
-
-
 Promise 的实现是类 `ToyPromise`。为了更容易理解，它没有完全匹配 API。但它已经足够接近，仍然能让我们深入了解 Promise 的工作原理。
 
 ## 代码仓库
@@ -5800,7 +5947,9 @@ Promise 的实现是类 `ToyPromise`。为了更容易理解，它没有完全�
 我们首先从 Promise 状态如何工作的简化版本开始（图 18.1）：
 
 - Promise 最初处于 *pending* 状态。
+
 - 如果 Promise 被用值 `v` *resolve*，它就变为 *fulfilled*（稍后，我们会看到 resolve 也可能导致 reject）。`v` 现在是该 Promise 的 *fulfillment value*（兑现值）。
+
 - 如果 Promise 被用错误 `e` *reject*，它就变为 *rejected*。`e` 现在是该 Promise 的 *rejection value*（拒绝值）。
 
 ### 18.2 版本 1：独立的 Promise
@@ -5808,14 +5957,19 @@ Promise 的实现是类 `ToyPromise`。为了更容易理解，它没有完全�
 我们的第一个实现是一个具有最小功能的独立 Promise：
 
 - 我们可以创建 Promise。
+
 - 我们可以 resolve 或 reject 一个 Promise，而且只能执行一次。
+
 - 我们可以通过 `.then()` 注册 *reactions*（回调）。无论 Promise 是否已经 settled，注册都必须正确处理。
+
 - `.then()` 尚不支持链式调用——它不会返回任何内容。
 
 `ToyPromise1` 是一个具有三个原型方法的类：
 
 - `ToyPromise1.prototype.resolve(value)`
+
 - `ToyPromise1.prototype.reject(reason)`
+
 - `ToyPromise1.prototype.then(onFulfilled, onRejected)`
 
 也就是说，`resolve` 和 `reject` 是方法（而不是作为构造函数回调参数传入的函数）。
@@ -5853,6 +6007,7 @@ tp2.resolve('def');
 让我们先考察 `.then()`。它必须处理两种情况：
 
 - 如果 Promise 仍处于 pending 状态，它会将 `onFulfilled` 和 `onRejected` 的调用入队。它们将在稍后 Promise settled 时使用。
+
 - 如果 Promise 已经 fulfilled 或 rejected，`onFulfilled` 或 `onRejected` 可以立即调用。
 
 ```javascript
@@ -5929,6 +6084,7 @@ _clearAndEnqueueTasks(tasks) {
 在以下示例中：
 
 - 第一个 `.then()`：我们在 fulfillment reaction 中返回一个值。
+
 - 第二个 `.then()`：我们通过 fulfillment reaction 接收该值。
 
 ```javascript
@@ -5946,6 +6102,7 @@ new ToyPromise2()
 在以下示例中：
 
 - 第一个 `.then()`：我们在 rejection reaction 中返回一个值。
+
 - 第二个 `.then()`：我们通过 fulfillment reaction 接收该值。
 
 ```javascript
@@ -6025,9 +6182,12 @@ someAsyncFunction()
 这一切在底层是如何处理的？
 
 - `.then()` 返回一个 Promise，该 Promise 由 `onFulfilled` 或 `onRejected` 返回的内容来 resolve。
+
 - 如果 `onFulfilled` 或 `onRejected` 缺失，它们本应接收的内容会传递给 `.then()` 返回的 Promise。
 
 只有 `.then()` 发生了变化：
+
+
 
 ```javascript
 then(onFulfilled, onRejected) {
@@ -6059,8 +6219,6 @@ then(onFulfilled, onRejected) {
 }
 ```
 
-
-
 ```javascript
 return resultPromise; // [new]
 }
@@ -6068,16 +6226,16 @@ return resultPromise; // [new]
 
 `.then()` 会创建并返回一个新的 Promise（该方法的第一行和最后一行）。此外：
 
--   fulfillmentTask 的行为有所不同。现在在 fulfill 之后发生的是：
-    -   如果提供了 onFulfilled，则会调用它，并使用其结果来 resolve resultPromise。
-    -   如果缺少 onFulfilled，我们使用当前 Promise 的 fulfillment 值来 resolve resultPromise。
--   rejectionTask 的行为有所不同。现在在 reject 之后发生的是：
-    -   如果提供了 onRejected，则会调用它，并使用其结果来 resolve resultPromise。注意 resultPromise 并不会被 reject：我们假设 onRejected() 已经修复了存在的问题。
-    -   如果缺少 onRejected，我们使用当前 Promise 的 rejection 值来 reject resultPromise。
+- `fulfillmentTask` 的行为有所不同。现在在 fulfill 之后发生的是：
+  - 如果提供了 `onFulfilled`，则会调用它，并使用其结果来 resolve `resultPromise`。
+  - 如果缺少 `onFulfilled`，我们使用当前 Promise 的 fulfillment 值来 resolve `resultPromise`。
+- `rejectionTask` 的行为有所不同。现在在 reject 之后发生的是：
+  - 如果提供了 `onRejected`，则会调用它，并使用其结果来 resolve `resultPromise`。注意 `resultPromise` 并不会被 reject：我们假设 `onRejected()` 已经修复了存在的问题。
+  - 如果缺少 `onRejected`，我们使用当前 Promise 的 rejection 值来 reject `resultPromise`。
 
-### 18.7 版本 3：展平 .then() 回调返回的 Promise
+### 18.7 版本 3：展平 `.then()` 回调返回的 Promise
 
-#### 18.7.1 从 .then() 的回调中返回 Promise
+#### 18.7.1 从 `.then()` 的回调中返回 Promise
 
 Promise 展平主要是为了让链式调用更加方便：如果我们想将一个值从一个 `.then()` 回调传递到下一个回调，我们就在前一个回调中返回它。之后，`.then()` 会将其放入已经返回的 Promise 中。
 
@@ -6123,30 +6281,32 @@ Promise API 如何处理展平？
 
 如果一个 Promise P 用一个 Promise Q 来 resolve，则 P 不会包装 Q，P "变成"了 Q：P 的状态和 settlement 值现在始终与 Q 相同。这对我们使用 `.then()` 很有帮助，因为 `.then()` 会用其某个回调返回的值来 resolve 它返回的 Promise。
 
-P 如何变成 Q？通过 *锁定* 在 Q 上：P 变为不可外部 resolve 的状态，而 Q 的 settlement 会触发 P 的 settlement。锁定是一个额外的不可见 Promise 状态，使得状态变得更加复杂。
+P 如何变成 Q？通过锁定在 Q 上：P 变为不可外部 resolve 的状态，而 Q 的 settlement 会触发 P 的 settlement。锁定是一个额外的不可见 Promise 状态，使得状态变得更加复杂。
 
-Promise API 还有一个附加特性：Q 不必是一个 Promise，只需是一个所谓的 *thenable*。thenable 是一个具有 `.then()` 方法的对象。这种额外灵活性的原因是为了让不同的 Promise 实现能够协同工作（这在 Promise 最初被添加到语言中时很重要）。
+Promise API 还有一个附加特性：Q 不必是一个 Promise，只需是一个所谓的 thenable。thenable 是一个具有 `.then()` 方法的对象。这种额外灵活性的原因是为了让不同的 Promise 实现能够协同工作（这在 Promise 最初被添加到语言中时很重要）。
 
 图 18.4 展示了新的状态。
 
-注意，*resolving* 的概念也变得更加复杂了。Resolve 一个 Promise 现在只意味着它不能被直接 settlement：
+注意，resolving 的概念也变得更加复杂了。Resolve 一个 Promise 现在只意味着它不能被直接 settlement：
 
--   Resolve 可能会 reject 一个 Promise：我们可以用一个 rejected Promise 来 resolve 一个 Promise。
--   Resolve 甚至可能不会 settlement 一个 Promise：我们可以用另一个始终处于 pending 状态的 Promise 来 resolve 一个 Promise。
+- Resolve 可能会 reject 一个 Promise：我们可以用一个 rejected Promise 来 resolve 一个 Promise。
+- Resolve 甚至可能不会 settlement 一个 Promise：我们可以用另一个始终处于 pending 状态的 Promise 来 resolve 一个 Promise。
 
 ECMAScript 规范是这样表述的："一个未 resolve 的 Promise 始终处于 pending 状态。一个已 resolve 的 Promise 可能是 pending、fulfilled 或 rejected。"
 
 #### 18.7.3 实现 Promise 展平
 
-图 18.5 展示了 ToyPromise3 如何处理展平。
+图 18.5 展示了 `ToyPromise3` 如何处理展平。
 
 我们通过以下函数检测 thenable：
 
 ![](img/b76f3160639f29d768796a49c9c2d2ba_175_0.png)
-图 18.4：Promise 的所有状态：Promise 展平引入了不可见的伪状态"locked-in"（锁定）。当一个 Promise P 用一个 thenable Q 来 resolve 时，就会达到该状态。之后，P 的状态和 settlement 值始终与 Q 相同。
+
+图 18.4：Promise 的所有状态：Promise 展平引入了不可见的伪状态 "locked-in"（锁定）。当一个 Promise P 用一个 thenable Q 来 resolve 时，就会达到该状态。之后，P 的状态和 settlement 值始终与 Q 相同。
 
 ![](img/b76f3160639f29d768796a49c9c2d2ba_175_1.png)
-图 18.5：ToyPromise3 展平已 resolve 的 Promise：如果第一个 Promise 用一个 thenable x1 来 resolve，它会锁定在 x1 上，并使用 x1 的 settlement 值来 settlement。如果第一个 Promise 用一个非 thenable 的值来 resolve，则一切照旧。
+
+图 18.5：`ToyPromise3` 展平已 resolve 的 Promise：如果第一个 Promise 用一个 thenable `x1` 来 resolve，它会锁定在 `x1` 上，并使用 `x1` 的 settlement 值来 settlement。如果第一个 Promise 用一个非 thenable 的值来 resolve，则一切照旧。
 
 ```javascript
 function isThenable(value) { // [new]
@@ -6178,8 +6338,8 @@ resolve(value) { // [new]
 
 如果 `value` 是一个 thenable，那么我们将当前 Promise 锁定在它上面：
 
--   如果 `value` 以一个结果 fulfill，当前 Promise 也以该结果 fulfill。
--   if `value` 以一个错误 reject，当前 Promise 也以该错误 reject。
+- 如果 `value` 以一个结果 fulfill，当前 Promise 也以该结果 fulfill。
+- if `value` 以一个错误 reject，当前 Promise 也以该错误 reject。
 
 Settlement 通过私有方法 `._doFulfill()` 和 `._doReject()` 来执行，以绕过 `._alreadyResolved` 的保护。
 
@@ -6201,7 +6361,8 @@ _doFulfill(value) { // [new]
 作为最后一个特性，我们希望我们的 Promise 能够将用户代码中的异常作为 rejection 来处理（图 18.6）。在本章中，"用户代码"指的是 `.then()` 的两个回调参数。
 
 ![](img/b76f3160639f29d768796a49c9c2d2ba_177_0.png)
-图 18.6：ToyPromise4 将 Promise reaction 中的异常转换为 `.then()` 返回的 Promise 的 rejection。
+
+图 18.6：`ToyPromise4` 将 Promise reaction 中的异常转换为 `.then()` 返回的 Promise 的 rejection。
 
 ```javascript
 new ToyPromise4()
@@ -6215,7 +6376,7 @@ new ToyPromise4()
   })
 ```
 
-`.then()` 现在通过辅助方法 `._runReactionSafely()` 安全地运行 Promise reaction onFulfilled 和 onRejected——例如：
+`.then()` 现在通过辅助方法 `._runReactionSafely()` 安全地运行 Promise reaction `onFulfilled` 和 `onRejected`——例如：
 
 ```javascript
 const fulfillmentTask = () => {
@@ -6244,7 +6405,7 @@ _runReactionSafely(resultPromise, reaction) { // [new]
 
 ### 18.9 版本 5：揭示构造函数模式
 
-我们跳过了最后一步：如果我们想将 `ToyPromise` 变成一个真正的 Promise 实现，我们仍然需要实现揭示构造函数模式：JavaScript Promise 不是通过方法来 resolve 和 reject 的，而是通过传递给*执行器*（executor，即构造函数的回调参数）的函数来实现的。
+我们跳过了最后一步：如果我们想将 `ToyPromise` 变成一个真正的 Promise 实现，我们仍然需要实现揭示构造函数模式：JavaScript Promise 不是通过方法来 resolve 和 reject 的，而是通过传递给执行器（executor，即构造函数的回调参数）的函数来实现的。
 
 ```javascript
 const promise = new Promise(
@@ -6255,48 +6416,48 @@ const promise = new Promise(
 
 如果执行器抛出异常，则 `promise` 会被 reject。
 
+# 第 19 章：使用代理进行元编程（抢先体验）
 
-
-# 第19章
-## 使用代理进行元编程（抢先体验）
-
-### 内容
+## 内容
 
 - 19.1 概述 .......................................................................................... 180
 - 19.2 编程与元编程 ....................................................................................... 181
-    - 19.2.1 元编程的种类 ................................................................ 181
+  - 19.2.1 元编程的种类 ................................................................ 181
 - 19.3 代理详解 ...................................................................................... 182
-    - 19.3.1 示例 .......................................................................................... 183
-    - 19.3.2 函数特定的陷阱 ........................................................................ 183
-    - 19.3.3 拦截方法调用 .................................................................... 184
-    - 19.3.4 可撤销代理 ................................................................................ 185
-    - 19.3.5 作为原型的代理 .......................................................................... 185
-    - 19.3.6 转发被拦截的操作 ...................................................... 186
-    - 19.3.7 陷阱：并非所有对象都能被代理透明包装 187
+  - 19.3.1 示例 .......................................................................................... 183
+  - 19.3.2 函数特定的陷阱 ........................................................................ 183
+  - 19.3.3 拦截方法调用 .................................................................... 184
+  - 19.3.4 可撤销代理 ................................................................................ 185
+  - 19.3.5 作为原型的代理 .......................................................................... 185
+  - 19.3.6 转发被拦截的操作 ...................................................... 186
+  - 19.3.7 陷阱：并非所有对象都能被代理透明包装 187
 - 19.4 代理的用例 ..................................................................................... 190
-    - 19.4.1 追踪属性访问（get、set） ...................................................... 191
-    - 19.4.2 对未知属性发出警告（get、set） ........................................ 193
-    - 19.4.3 负数组Literals-Array 索引（get） ................................................................ 194
-    - 19.4.4 数据绑定（set） .................................................................................. 195
-    - 19.4.5 访问 RESTful Web 服务（方法调用） ........................................ 196
-    - 19.4.6 可撤销引用 ............................................................................. 197
-    - 19.4.7 在 JavaScript 中实现 DOM ...................................................... 199
-    - 19.4.8 更多用例 ...................................................................................... 199
-    - 19.4.9 使用代理的库 ............................................................ 200
+  - 19.4.1 追踪属性访问（`get`、`set`） ...................................................... 191
+  - 19.4.2 对未知属性发出警告（`get`、`set`） ........................................ 193
+  - 19.4.3 负数组 Literals-Array 索引（`get`） ................................................................ 194
+  - 19.4.4 数据绑定（`set`） .................................................................................. 195
+
+
+
+- 19.4.5 访问 RESTful Web 服务（方法调用） ........................................ 196
+- 19.4.6 可撤销引用 ............................................................................. 197
+- 19.4.7 在 JavaScript 中实现 DOM ...................................................... 199
+- 19.4.8 更多用例 ...................................................................................... 199
+- 19.4.9 使用代理的库 ............................................................ 200
 - 19.5 代理 API 的设计 ............................................................................. 200
-    - 19.5.1 分层：将基础层和元层分开 .................... 200
-    - 19.5.2 虚拟对象与包装器 ............................................................ 202
-    - 19.5.3 透明虚拟化和处理程序封装 ............................ 202
-    - 19.5.4 元对象协议与代理陷阱 ............................................... 203
-    - 19.5.5 强制代理的不变性 ............................................................ 205
+  - 19.5.1 分层：将基础层和元层分开 .................... 200
+  - 19.5.2 虚拟对象与包装器 ............................................................ 202
+  - 19.5.3 透明虚拟化和处理程序封装 ............................ 202
+  - 19.5.4 元对象协议与代理陷阱 ............................................... 203
+  - 19.5.5 强制代理的不变性 ............................................................ 205
 - 19.6 常见问题：代理 ............................................................................................... 209
-    - 19.6.1 enumerate 陷阱在哪里？ ............................................................... 209
+  - 19.6.1 `enumerate` 陷阱在哪里？ ............................................................... 209
 - 19.7 参考：代理 API ............................................................................. 209
-    - 19.7.1 创建代理 ................................................................................. 209
-    - 19.7.2 处理程序方法 .................................................................................. 209
-    - 19.7.3 处理程序方法的不变性 .............................................................. 210
-    - 19.7.4 影响原型链的操作 ............................................ 212
-    - 19.7.5 Reflect ................................................................................................. 213
+  - 19.7.1 创建代理 ................................................................................. 209
+  - 19.7.2 处理程序方法 .................................................................................. 209
+  - 19.7.3 处理程序方法的不变性 .............................................................. 210
+  - 19.7.4 影响原型链的操作 ............................................ 212
+  - 19.7.5 `Reflect` ................................................................................................. 213
 - 19.8 结论 ................................................................................................... 215
 - 19.9 延伸阅读 ........................................................................................... 215
 
@@ -6306,11 +6467,11 @@ const promise = new Promise(
 
 在以下示例中：
 
-- proxy 是一个空对象。
-- handler 可以通过实现特定方法来拦截对 proxy 执行的操作。
-- 如果处理程序未拦截某个操作，则会将其转发给 target。
+- `proxy` 是一个空对象。
+- `handler` 可以通过实现特定方法来拦截对 `proxy` 执行的操作。
+- 如果处理程序未拦截某个操作，则会将其转发给 `target`。
 
-我们只拦截一种操作——get（获取属性）：
+我们只拦截一种操作——`get`（获取属性）：
 
 ```javascript
 const logged = [];
@@ -6346,21 +6507,21 @@ assert.deepEqual(
 - 在*基础层*（也称为：*应用层*），代码处理用户输入。
 - 在*元层*，代码处理基础层代码。
 
-基础层和元层可以是不同的语言。在以下元程序中，元编程语言是 JavaScript，基础编程语言是 Java。
+基础层和元层可以是不同的语言。在以下元程序中，元编程语言是 `JavaScript`，基础编程语言是 `Java`。
 
 ```javascript
 const str = 'Hello' + '!'.repeat(3);
 console.log('System.out.println("'+str+'")');
 ```
 
-元编程可以采取不同的形式。在前面的示例中，我们将 Java 代码打印到控制台。让我们将 JavaScript 同时用作元编程语言和基础编程语言。这方面的经典示例是 `eval()` 函数，它让我们能够即时求值/编译 JavaScript 代码。在下面的交互中，我们用它来求值表达式 5 + 2。
+元编程可以采取不同的形式。在前面的示例中，我们将 `Java` 代码打印到控制台。让我们将 `JavaScript` 同时用作元编程语言和基础编程语言。这方面的经典示例是 `eval()` 函数，它让我们能够即时求值/编译 `JavaScript` 代码。在下面的交互中，我们用它来求值表达式 `5 + 2`。
 
 ```javascript
 > eval('5 + 2')
 7
 ```
 
-其他 JavaScript 操作可能看起来不像元编程，但仔细观察实际上确实是：
+其他 `JavaScript` 操作可能看起来不像元编程，但仔细观察实际上确实是：
 
 ```javascript
 // 基础层
@@ -6376,7 +6537,7 @@ for (const key of Object.keys(obj)) {
 }
 ```
 
-该程序在运行时检查自身的结构。这看起来不像元编程，因为 JavaScript 中编程构造与数据结构之间的界限很模糊。所有 `Object.*` 方法都可以被视为元编程功能。
+该程序在运行时检查自身的结构。这看起来不像元编程，因为 `JavaScript` 中编程构造与数据结构之间的界限很模糊。所有 `Object.*` 方法都可以被视为元编程功能。
 
 #### 19.2.1 元编程的种类
 
@@ -6390,7 +6551,7 @@ for (const key of Object.keys(obj)) {
 
 **示例：内省。** `Object.keys()` 执行内省（见前面的示例）。
 
-**示例：自修改。** 以下函数 `moveProperty` 将属性从源对象移动到目标对象。它通过用于属性访问的括号运算符、赋值运算符和 delete 运算符执行自修改。（在生产代码中，我们可能会使用[属性描述符](https://exploringjs.com/es6/ch_proxy.html)来完成此任务。）
+**示例：自修改。** 以下函数 `moveProperty` 将属性从源对象移动到目标对象。它通过用于属性访问的括号运算符、赋值运算符和 `delete` 运算符执行自修改。（在生产代码中，我们可能会使用[属性描述符](https://exploringjs.com/es6/ch_proxy.html)来完成此任务。）
 
 ```javascript
 function moveProperty(source, propertyName, target) {
@@ -6418,25 +6579,23 @@ ECMAScript 5 不支持调解；代理正是为了填补这一空白而创建的�
 
 ### 19.3 代理详解
 
-代理为 JavaScript 带来了调解功能。它们的工作原理如下。我们可以对对象 `obj` 执行许多操作——例如：
+代理为 `JavaScript` 带来了调解功能。它们的工作原理如下。我们可以对对象 `obj` 执行许多操作——例如：
 
-- 获取对象 `obj` 的属性 `prop`（`obj.prop`）
-- 检查对象 `obj` 是否具有属性 `prop`（`'prop' in obj`）
+- 获取对象 `obj` 的属性 `prop`（`obj.prop`）。
+- 检查对象 `obj` 是否具有属性 `prop`（`'prop' in obj`）。
 
 代理是特殊的对象，允许我们自定义其中一些操作。代理通过两个参数创建：
 
-- handler：对于每个操作，都有一个相应的处理程序方法——如果存在——执行该操作。这种方法*拦截*操作（在到达目标之前）并被称为*陷阱*——这个术语借用了操作系统领域的说法。
-- target：如果处理程序未拦截某个操作，则会在目标上执行该操作。也就是说，它充当处理程序的备用。从某种意义上说，代理包装了目标。
+- `handler`：对于每个操作，都有一个相应的处理程序方法——如果存在——执行该操作。这种方法*拦截*操作（在到达目标之前）并被称为*陷阱*——这个术语借用了操作系统领域的说法。
+- `target`：如果处理程序未拦截某个操作，则会在目标上执行该操作。也就是说，它充当处理程序的备用。从某种意义上说，代理包装了目标。
 
 > 注意："intercession" 的动词形式是 "to intercede"。Interceding 本质上是双向的。Intercepting 本质上是单向的。
-
-
 
 ## 19.3 Proxy 详解
 
 #### 19.3.1 示例
 
-在下面的示例中，handler 拦截了 `get` 和 `has` 操作。
+在下面的示例中，`handler` 拦截了 `get` 和 `has` 操作。
 
 ```javascript
 const logged = [];
@@ -6458,7 +6617,7 @@ const handler = {
 const proxy = new Proxy(target, handler);
 ```
 
-如果我们获取一个属性（行 A）或使用 `in` 运算符（行 B），handler 会拦截这些操作：
+如果我们获取一个属性（行 A）或使用 `in` 运算符（行 B），`handler` 会拦截这些操作：
 
 ```javascript
 assert.equal(proxy.age, 123); // (A)
@@ -6471,7 +6630,7 @@ assert.deepEqual(
     ]);
 ```
 
-由于 handler 没有实现 `set` 陷阱（设置属性），因此对 `proxy.age` 的赋值操作会被转发给 `target`，从而导致 `target.age` 被设置：
+由于 `handler` 没有实现 `set` 陷阱（设置属性），因此对 `proxy.age` 的赋值操作会被转发给 `target`，从而导致 `target.age` 被设置：
 
 ```javascript
 proxy.age = 99;
@@ -6483,20 +6642,20 @@ assert.equal(target.age, 99);
 如果目标是一个函数，还可以拦截另外两种操作：
 
 - `apply`：执行函数调用。通过以下方式触发：
-    - `proxy(…)`
-    - `proxy.call(…)`
-    - `proxy.apply(…)`
-- `construct`: 执行构造函数调用。通过以下方式触发：
-    - `new proxy(…)`
+  - `proxy(…)`
+  - `proxy.call(…)`
+  - `proxy.apply(…)`
+- `construct`：执行构造函数调用。通过以下方式触发：
+  - `new proxy(…)`
 
 这些陷阱仅针对函数目标启用，原因很简单：否则，我们将无法转发 `apply` 和 `construct` 操作。
 
 #### 19.3.3 拦截方法调用
 
-如果我们想通过 Proxy 拦截方法调用，会面临一个挑战：并没有专门用于方法调用的陷阱。相反，方法调用被视为两个连续操作：
+如果我们想通过 `Proxy` 拦截方法调用，会面临一个挑战：并没有专门用于方法调用的陷阱。相反，方法调用被视为两个连续操作：
 
-- 一个 `get` 操作用于检索函数
-- 一个 `apply` 操作用于调用该函数
+- 一个 `get` 操作用于检索函数。
+- 一个 `apply` 操作用于调用该函数。
 
 因此，如果我们想拦截方法调用，需要拦截这两个操作：
 
@@ -6524,7 +6683,7 @@ function traceMethodCalls(obj) {
 }
 ```
 
-我们在第二次拦截中没有使用 Proxy，而只是简单地将原方法包装在一个函数中。
+我们在第二次拦截中没有使用 `Proxy`，而只是简单地将原方法包装在一个函数中。
 
 让我们使用以下对象来尝试 `traceMethodCalls()`：
 
@@ -6543,9 +6702,9 @@ assert.equal(
     tracedObj.squared(9), 81);
 ```
 
-#### 19.3.4 可撤销代理 (Revocable Proxies)
+#### 19.3.4 可撤销代理（Revocable Proxies）
 
-Proxy 可以被 *撤销*（关闭）：
+`Proxy` 可以被*撤销*（关闭）：
 
 ```javascript
 const {proxy, revoke} = Proxy.revocable(target, handler);
@@ -6572,7 +6731,7 @@ assert.throws(
 
 #### 19.3.5 作为原型的 Proxy
 
-Proxy `proto` 可以成为对象 `obj` 的原型。某些在 `obj` 中开始的操作可能会在 `proto` 中继续。其中一个这样的操作就是 `get`。
+`Proxy` `proto` 可以成为对象 `obj` 的原型。某些在 `obj` 中开始的操作可能会在 `proto` 中继续。其中一个这样的操作就是 `get`。
 
 ```javascript
 const proto = new Proxy({}, {
@@ -6595,25 +6754,27 @@ obj.weight;
 
 #### 19.3.6 转发拦截操作
 
-handler 未实现陷阱的操作会自动转发给目标对象。有时我们希望在转发操作之余执行某些任务。例如，拦截并记录所有操作，但不阻止它们到达目标对象：
+`handler` 未实现陷阱的操作会自动转发给目标对象。有时我们希望在转发操作之余执行某些任务。例如，拦截并记录所有操作，但不阻止它们到达目标对象：
 
 ```javascript
 const handler = {
-	deleteProperty(target, propKey) {
-		console.log('DELETE ' + propKey);
-		return delete target[propKey];
-	},
-	has(target, propKey) {
-		console.log('HAS ' + propKey);
-		return propKey in target;
-	},
-	// 其他陷阱：类似
+    deleteProperty(target, propKey) {
+        console.log('DELETE ' + propKey);
+        return delete target[propKey];
+    },
+    has(target, propKey) {
+        console.log('HAS ' + propKey);
+        return propKey in target;
+    },
+    // 其他陷阱：类似
 }
 ```
 
-##### 19.3.6.1 改进：使用 Reflect.*
+##### 19.3.6.1 改进：使用 `Reflect.*`
 
-对于每个陷阱，我们先记录操作名称，然后通过手动执行来转发它。JavaScript 提供了一个类模块对象 `Reflect` 来辅助转发。
+
+
+对于每个陷阱，我们先记录操作名称，然后通过手动执行来转发它。JavaScript 提供了一个类模块对象`Reflect`来辅助转发。
 
 对于每个陷阱：
 
@@ -6621,13 +6782,13 @@ const handler = {
 handler.trap(target, arg_1, ..., arg_n)
 ```
 
-`Reflect` 都有一个对应的方法：
+`Reflect`都有一个对应的方法：
 
 ```javascript
 Reflect.trap(target, arg_1, ..., arg_n)
 ```
 
-如果我们使用 `Reflect`，之前的示例将如下所示：
+如果我们使用`Reflect`，之前的示例将如下所示：
 
 ```javascript
 const handler = {
@@ -6642,9 +6803,9 @@ const handler = {
 }
 ```
 
-##### 19.3.6.2 改进：使用 Proxy 实现 handler
+### 19.3.6.2 改进：使用 Proxy 实现 handler
 
-现在，每个陷阱所做的事情如此相似，以至于我们可以通过 Proxy 来实现 handler：
+现在，每个陷阱所做的事情如此相似，以至于我们可以通过`Proxy`来实现`handler`：
 
 ```javascript
 const handler = new Proxy({}, {
@@ -6659,9 +6820,9 @@ const handler = new Proxy({}, {
 });
 ```
 
-对于每个陷阱，Proxy 都会通过 `get` 操作请求一个 handler 方法，而我们给它一个。也就是说，所有的 handler 方法都可以通过单个元方法 `get` 来实现。Proxy API 的目标之一就是让这种虚拟化变得简单。
+对于每个陷阱，`Proxy`都会通过`get`操作请求一个`handler`方法，而我们给它一个。也就是说，所有的`handler`方法都可以通过单个元方法`get`来实现。Proxy API 的目标之一就是让这种虚拟化变得简单。
 
-让我们使用这个基于 Proxy 的 handler：
+让我们使用这个基于`Proxy`的`handler`：
 
 ```javascript
 const target = {};
@@ -6681,15 +6842,15 @@ assert.equal(
 // 'GET distance'
 ```
 
-#### 19.3.7 陷阱：并非所有对象都能被 Proxy 透明包装
+## 19.3.7 陷阱：并非所有对象都能被 Proxy 透明包装
 
-Proxy 对象可以被视为拦截对其目标对象执行的操作——Proxy 包装了目标。Proxy 的 handler 对象就像 Proxy 的观察者或监听器。它通过实现相应的方法（如读取属性的 `get` 等）来指定哪些操作应该被拦截。如果某个操作缺失了 handler 方法，则该操作不会被拦截，而是直接转发给目标。
+Proxy 对象可以被视为拦截对其目标对象执行的操作——Proxy 包装了目标。Proxy 的`handler`对象就像 Proxy 的观察者或监听器。它通过实现相应的方法（如读取属性的`get`等）来指定哪些操作应该被拦截。如果某个操作缺失了`handler`方法，则该操作不会被拦截，而是直接转发给目标。
 
-因此，如果 handler 是一个空对象，Proxy 应该透明地包装目标。可惜，情况并非总是如此。
+因此，如果`handler`是一个空对象，Proxy 应该透明地包装目标。可惜，情况并非总是如此。
 
-##### 19.3.7.1 包装对象会影响 `this`
+### 19.3.7.1 包装对象会影响 `this`
 
-在深入研究之前，让我们快速回顾一下包装目标如何影响 `this`：
+在深入研究之前，让我们快速回顾一下包装目标如何影响`this`：
 
 ```javascript
 const target = {
@@ -6704,7 +6865,7 @@ const handler = {};
 const proxy = new Proxy(target, handler);
 ```
 
-如果我们直接调用 `target.myMethod()`，`this` 指向 `target`：
+如果我们直接调用`target.myMethod()`，`this`指向`target`：
 
 ```javascript
 assert.deepEqual(
@@ -6714,7 +6875,7 @@ assert.deepEqual(
   });
 ```
 
-如果我们通过 Proxy 调用该方法，`this` 指向 `proxy`：
+如果我们通过 Proxy 调用该方法，`this`指向`proxy`：
 
 ```javascript
 assert.deepEqual(
@@ -6724,15 +6885,15 @@ assert.deepEqual(
   });
 ```
 
-也就是说，如果 Proxy 将方法调用转发给目标，`this` 不会改变。结果是，如果目标对象使用了 `this`（例如调用另一个方法），Proxy 将继续留在调用环中。
+也就是说，如果 Proxy 将方法调用转发给目标，`this`不会改变。结果是，如果目标对象使用了`this`（例如调用另一个方法），Proxy 将继续留在调用环中。
 
-##### 19.3.7.2 无法透明包装的对象
+### 19.3.7.2 无法透明包装的对象
 
-通常，带有空 handler 的 Proxy 能透明地包装目标：我们感觉不到它们的存在，它们也不会改变目标的行为。
+通常，带有空`handler`的 Proxy 能透明地包装目标：我们感觉不到它们的存在，它们也不会改变目标的行为。
 
-然而，如果目标对象通过一种不受 Proxy 控制的机制将信息与 `this` 关联，问题就来了：程序会运行失败，因为根据目标是否被包装，关联的信息会有所不同。
+然而，如果目标对象通过一种不受 Proxy 控制的机制将信息与`this`关联，问题就来了：程序会运行失败，因为根据目标是否被包装，关联的信息会有所不同。
 
-例如，以下 `Person` 类将私有信息存储在 WeakMap `_name` 中（关于此技术的更多信息请参阅 *JavaScript for impatient programmers*）：
+例如，以下`Person`类将私有信息存储在 WeakMap`_name`中（关于此技术的更多信息请参阅 *JavaScript for impatient programmers*）：
 
 ```javascript
 const _name = new WeakMap();
@@ -6741,16 +6902,9 @@ class Person {
     _name.set(this, name);
   }
   get name() {
-```
-
-
-
-## 19.3 代理机制详解
-
-```javascript
-return _name.get(this);
-    }
+    return _name.get(this);
   }
+}
 ```
 
 Person 的实例无法被透明地包装：
@@ -6763,7 +6917,7 @@ const proxy = new Proxy(jane, {});
 assert.equal(proxy.name, undefined);
 ```
 
-jane.name 与被包装后的 proxy.name 结果不同。以下实现方式则没有这个问题：
+`jane.name`与被包装后的`proxy.name`结果不同。以下实现方式则没有这个问题：
 
 ```javascript
 class Person2 {
@@ -6782,7 +6936,7 @@ const proxy = new Proxy(jane, {});
 assert.equal(proxy.name, 'Jane');
 ```
 
-#### 19.3.7.3 包装内置构造函数的实例
+### 19.3.7.3 包装内置构造函数的实例
 
 大多数内置构造函数的实例也使用了一种不会被代理拦截的机制。因此，它们同样无法被透明地包装。我们可以使用 Date 的实例来观察这一点：
 
@@ -6803,15 +6957,15 @@ assert.throws(
 O.[[GetPrototypeOf]]()
 ```
 
-与属性不同，访问内部槽不是通过普通的“get”和“set”操作完成的。如果通过代理调用 `.getFullYear()`，它无法在 `this` 上找到所需的内部槽，并会抛出类型错误。
+与属性不同，访问内部槽不是通过普通的“get”和“set”操作完成的。如果通过代理调用`.getFullYear()`，它无法在`this`上找到所需的内部槽，并会抛出类型错误。
 
 对于 Date 方法，[语言规范规定：](https://tc39.es/ecma262/#sec-date.prototype)
 
 > 除非另有明确说明，否则下面定义的 Date 原型对象的方法不是泛型的，传递给它们的 this 值必须是一个具有 `[[DateValue]]` 内部槽的对象，且该槽已初始化为时间值。
 
-#### 19.3.7.4 一种变通方法
+### 19.3.7.4 一种变通方法
 
-作为变通方法，我们可以改变处理器转发方法调用的方式，有选择地将 `this` 设置为目标对象而非代理：
+作为变通方法，我们可以改变处理器转发方法调用的方式，有选择地将`this`设置为目标对象而非代理：
 
 ```javascript
 const handler = {
@@ -6826,9 +6980,9 @@ const proxy = new Proxy(new Date('2030-12-24'), handler);
 assert.equal(proxy.getFullYear(), 2030);
 ```
 
-这种方法的缺点是，方法在 `this` 上执行的任何操作都不会经过代理。
+这种方法的缺点是，方法在`this`上执行的任何操作都不会经过代理。
 
-#### 19.3.7.5 数组可以被透明地包装
+### 19.3.7.5 数组可以被透明地包装
 
 与其他内置对象不同，数组可以被透明地包装：
 
@@ -6842,15 +6996,15 @@ p.length = 0;
 assert.equal(p.length, 0);
 ```
 
-数组可以被包装的原因是，尽管属性访问被自定义以使 `.length` 能够工作，但数组方法不依赖于内部槽——它们是泛型的。
+数组可以被包装的原因是，尽管属性访问被自定义以使`.length`能够工作，但数组方法不依赖于内部槽——它们是泛型的。
 
-### 19.4 代理的用例
+## 19.4 代理的用例
 
 本节将展示代理可以用于什么场景。这将为我们提供一个实际查看 API 的机会。
 
-#### 19.4.1 跟踪属性访问（get, set）
+### 19.4.1 跟踪属性访问（get, set）
 
-假设我们有一个函数 `tracePropertyAccesses(obj, propKeys)`，它在 `obj` 的键位于数组 `propKeys` 中的属性被设置或读取时进行日志记录。在下面的代码中，我们将该函数应用于 `Point` 类的一个实例：
+假设我们有一个函数`tracePropertyAccesses(obj, propKeys)`，它在`obj`的键位于数组`propKeys`中的属性被设置或读取时进行日志记录。在下面的代码中，我们将该函数应用于`Point`类的一个实例：
 
 ```javascript
 class Point {
@@ -6870,7 +7024,7 @@ const point = new Point(5, 7);
 const tracedPoint = tracePropertyAccesses(point, ['x', 'y']);
 ```
 
-获取和设置被跟踪对象 p 的属性会产生以下效果：
+获取和设置被跟踪对象`p`的属性会产生以下效果：
 
 ```javascript
 assert.equal(tracedPoint.x, 5);
@@ -6883,7 +7037,7 @@ tracedPoint.x = 21;
 // 'SET x=21'
 ```
 
-有趣的是，当 Point 内部访问属性时，跟踪也有效，因为此时 `this` 指向被跟踪的对象，而不是 Point 的实例：
+有趣的是，当 Point 内部访问属性时，跟踪也有效，因为此时`this`指向被跟踪的对象，而不是 Point 的实例：
 
 ```javascript
 assert.equal(
@@ -6897,9 +7051,9 @@ assert.equal(
 // 'GET y'
 ```
 
-##### 19.4.1.1 不使用代理实现 tracePropertyAccesses()
+#### 19.4.1.1 不使用代理实现 tracePropertyAccesses()
 
-如果不使用代理，我们会如下实现 `tracePropertyAccesses()`。我们将每个属性替换为一个跟踪访问的 getter 和 setter。setter 和 getter 使用一个额外的对象 `propData` 来存储属性数据。注意，我们是在破坏性地改变原始实现，这意味着我们正在进行元编程。
+如果不使用代理，我们会如下实现`tracePropertyAccesses()`。我们将每个属性替换为一个跟踪访问的 getter 和 setter。setter 和 getter 使用一个额外的对象`propData`来存储属性数据。注意，我们是在破坏性地改变原始实现，这意味着我们正在进行元编程。
 
 ```javascript
 function tracePropertyAccesses(obj, propKeys, log=console.log) {
@@ -6924,7 +7078,7 @@ return obj;
 }
 ```
 
-参数 `log` 使得此函数更容易进行单元测试：
+参数`log`使得此函数更容易进行单元测试：
 
 ```javascript
 const obj = {};
@@ -6944,7 +7098,7 @@ assert.deepEqual(
     ]);
 ```
 
-##### 19.4.1.2 使用代理实现 tracePropertyAccesses()
+#### 19.4.1.2 使用代理实现 tracePropertyAccesses()
 
 代理为我们提供了一个更简单的解决方案。我们拦截属性的获取和设置，而无需改变实现。
 
@@ -6968,14 +7122,14 @@ function tracePropertyAccesses(obj, propKeys, log=console.log) {
 }
 ```
 
-#### 19.4.2 关于未知属性的警告（get, set）
+### 19.4.2 关于未知属性的警告（get, set）
 
 在属性访问方面，JavaScript 非常宽容。例如，如果我们尝试读取一个属性但拼错了它的名称，我们不会得到异常——我们得到的结果是 undefined。
 
-我们可以使用代理在这种情况下获得异常。其工作原理如下。我们使代理成为一个对象的原型。如果属性在对象中找不到，则会触发代理的 get 陷阱：
+我们可以使用代理在这种情况下获得异常。其工作原理如下。我们使代理成为一个对象的原型。如果属性在对象中找不到，则会触发代理的`get`陷阱：
 
 - 如果该属性在代理之后的原型链中都不存在，那么它确实是缺失的，我们抛出异常。
-- 否则，我们返回继承属性的值。我们通过将 get 操作转发给目标来实现这一点（代理从目标获取其原型）。
+- 否则，我们返回继承属性的值。我们通过将`get`操作转发给目标来实现这一点（代理从目标获取其原型）。
 
 以下是此方法的一个实现：
 
@@ -6992,7 +7146,7 @@ const propertyCheckerHandler = {
 const PropertyChecker = new Proxy({}, propertyCheckerHandler);
 ```
 
-让我们将 PropertyChecker 用于一个对象：
+让我们将`PropertyChecker`用于一个对象：
 
 ```javascript
 const jane = {
@@ -7000,6 +7154,8 @@ const jane = {
   name: 'Jane',
 };
 ```
+
+
 
 ```javascript
 // 自身属性：
@@ -7023,9 +7179,9 @@ assert.equal(
 );
 ```
 
-##### 19.4.2.1 将 PropertyChecker 作为类
+##### 19.4.2.1 将 `PropertyChecker` 作为类
 
-如果我们把 PropertyChecker 变成一个构造函数，我们可以通过 extends 在类中使用它：
+如果我们把 `PropertyChecker` 变成一个构造函数，我们可以通过 `extends` 在类中使用它：
 
 ```javascript
 // 我们不能改变类的 .prototype，所以我们使用一个函数
@@ -7048,7 +7204,7 @@ assert.throws(
 );
 ```
 
-这是 point 的原型链：
+这是 `point` 的原型链：
 
 ```javascript
 const p = Object.getPrototypeOf.bind(Object);
@@ -7061,19 +7217,17 @@ assert.equal(p(p(p(point))), Object.prototype);
 
 如果我们担心意外创建属性，我们有两个选择：
 
-- 我们可以围绕对象包装一个代理来拦截 set 操作。
-- 或者我们可以使用 `Object.preventExtensions(obj)` 使对象 obj 不可扩展，这意味着 JavaScript 不允许我们向 obj 添加新的（自有）属性。
+- 我们可以围绕对象包装一个代理来拦截 `set` 操作。
+- 或者我们可以使用 `Object.preventExtensions(obj)` 使对象 `obj` 不可扩展，这意味着 JavaScript 不允许我们向 `obj` 添加新的（自有）属性。
 
-#### 19.4.3 数组负索引（get）
+#### 19.4.3 数组负索引（`get`）
 
-某些数组方法允许我们通过 -1 引用最后一个元素，通过 -2 引用倒数第二个元素，以此类推。例如：
+某些数组方法允许我们通过 `-1` 引用最后一个元素，通过 `-2` 引用倒数第二个元素，以此类推。例如：
 
 ```javascript
 > ['a', 'b', 'c'].slice(-1)
 [ 'c' ]
 ```
-
-
 
 ## 19.4 代理的应用场景
 
@@ -7104,7 +7258,7 @@ assert.equal(
   arr.length, 3);
 ```
 
-### 19.4.4 数据绑定（set）
+### 19.4.4 数据绑定（`set`）
 
 数据绑定是指在对象之间同步数据。一个流行的应用场景是基于 MVC（模型-视图-控制器）模式的组件：通过数据绑定，当我们更改模型（组件可视化的数据）时，视图（组件）会保持最新状态。
 
@@ -7305,25 +7459,19 @@ function createRevocableReference(target) {
 代理还有更多应用场景。例如：
 
 - 远程过程调用：本地占位符对象将方法调用转发给远程对象。这个应用场景类似于 Web 服务的示例。
-
-
-
 - 数据库数据访问对象：读取和写入该对象即是对数据库的读写。此用例与网络服务示例类似。
-
 - 性能分析：拦截方法调用以跟踪每个方法的耗时。此用例与跟踪示例类似。
 
 ### 19.4.9 使用代理的库
 
 - [Immer](https://immerjs.github.io/immer/)（由 Michel Weststrate 开发）有助于非破坏性地更新数据。需要应用的更改通过调用方法、设置属性、设置数组元素等操作在一个（可能嵌套的）*草稿状态*上来指定。草稿状态通过代理实现。
-
 - [MobX](https://mobx.js.org/)（由 Michel Weststrate 开发）允许您观察对象、数组和类实例等数据结构的变化。这是通过代理实现的。
-
 - [Alpine.js](https://alpinejs.dev/)（由 Caleb Porzio 开发）是一个通过代理实现数据绑定的前端库。
-
 - [on-change](https://github.com/sindresorhus/on-change)（由 Sindre Sorhus 开发）观察对象的变化（通过代理）并进行报告。
 
-- [Env utility](https://github.com/nicolo-ribaudo/env)（由 Nicholas C. Zakas 开发）允许您通过属性访问环境变量，并在变量不存在时抛出异常。这是通过代理实现的。
 
+
+- [Env utility](https://github.com/nicolo-ribaudo/env)（由 Nicholas C. Zakas 开发）允许您通过属性访问环境变量，并在变量不存在时抛出异常。这是通过代理实现的。
 - [LDflex](https://ldflex.github.io/)（由 Ruben Verborgh 和 Ruben Taelman 开发）为关联数据（可理解为语义网）提供查询语言。流畅的查询 API 是通过代理实现的。
 
 ### 19.5 代理 API 的设计
@@ -7388,7 +7536,6 @@ assert.equal(
 ```
 
 - `func.call(..., func.apply(...))`：对于这两个方法，问题和解决方案与 `hasOwnProperty()` 相同。
-
 - `obj.__proto__`：在普通对象中，`__proto__` 是一个特殊属性，允许我们获取和设置接收者的原型。因此，当我们将普通对象用作字典时，必须避免将 `__proto__` 用作属性键。
 
 至此，应该清楚为什么使（基础层）属性键变得特殊是有问题的。因此，代理是*分层的*：基础层（代理对象）和元层（处理程序对象）是分离的。
@@ -7479,9 +7626,7 @@ __Get__(propKey, receiver) {
 
 **基本操作与派生操作。** 我们可以看到 [[Get]]() 调用了其他 MOP 操作。执行此操作的操作称为*派生*操作。不依赖其他操作的操作称为*基本*操作。
 
-
-
-##### 19.5.4.1 Proxy 的元对象协议
+##### 19.5.4.1 `Proxy` 的元对象协议
 
 [Proxy 的元对象协议](https://example.com)与普通对象的元对象协议不同。对于普通对象，派生操作会调用其他操作。而对于 Proxy，每个操作（无论它是基础操作还是派生操作）要么会被处理器方法拦截，要么会被转发到目标对象。
 
@@ -7506,8 +7651,8 @@ Proxy 的拦截是*选择性的*：我们无法拦截每一个语言操作。为
 
 如果我们想通过 Proxy 创建虚拟方法，就必须从 get 陷阱中返回函数。这就引出了一个问题：为什么不引入一个额外的陷阱用于方法调用（例如 `invoke`）呢？这样我们就能区分：
 
-- 通过 `obj.prop` 获取属性（陷阱 `get`）
-- 通过 `obj.prop()` 调用方法（陷阱 `invoke`）
+- 通过 `obj.prop` 获取属性（陷阱 `get`）。
+- 通过 `obj.prop()` 调用方法（陷阱 `invoke`）。
 
 不这样做的原因有两个。
 
@@ -7557,8 +7702,8 @@ const result = boundMethod();
 
 - 不可扩展性保护对象：如果一个对象不可扩展，我们就不能添加属性，也不能更改其原型。
 - 不可配置性保护属性（更准确地说，保护它们的属性）：
-    - 布尔属性 `writable` 控制是否可以更改属性的值。
-    - 布尔属性 `configurable` 控制是否可以更改属性的属性。
+  - 布尔属性 `writable` 控制是否可以更改属性的值。
+  - 布尔属性 `configurable` 控制是否可以更改属性的属性。
 
 有关此主题的更多信息，请参见 §10“保护对象不被更改”。
 
@@ -7578,31 +7723,34 @@ const result = boundMethod();
 以下两种不变量涉及不可扩展性和不可配置性。它们通过使用目标对象进行记录来强制执行：处理器方法返回的结果必须与目标对象基本保持一致。
 
 - 不变量：如果 `Object.preventExtensions(obj)` 返回 true，那么所有未来的调用必须返回 false，并且 `obj` 现在必须不可扩展。
-    - 对于 Proxy，如果处理器返回 true 但目标对象不可扩展，则通过抛出 `TypeError` 来强制执行。
+  - 对于 Proxy，如果处理器返回 true 但目标对象不可扩展，则通过抛出 `TypeError` 来强制执行。
 - 不变量：一旦对象被设为不可扩展，`Object.isExtensible(obj)` 必须始终返回 false。
-    - 对于 Proxy，如果处理器返回的结果（强制转换后）与 `Object.isExtensible(target)` 不同，则通过抛出 `TypeError` 来强制执行。
+  - 对于 Proxy，如果处理器返回的结果（强制转换后）与 `Object.isExtensible(target)` 不同，则通过抛出 `TypeError` 来强制执行。
 
 ##### 19.5.5.4 通过检查返回值强制执行的两种不变量
 
 以下两种不变量通过检查返回值来强制执行：
 
 - 不变量：`Object.isExtensible(obj)` 必须返回布尔值。
-    - 对于 Proxy，通过将处理器返回的值强制转换为布尔值来强制执行。
+  - 对于 Proxy，通过将处理器返回的值强制转换为布尔值来强制执行。
 - 不变量：`Object.getOwnPropertyDescriptor(obj, ...)` 必须返回对象或 undefined。
-    - 对于 Proxy，如果处理器没有返回适当的值，则通过抛出 `TypeError` 来强制执行。
+  - 对于 Proxy，如果处理器没有返回适当的值，则通过抛出 `TypeError` 来强制执行。
 
 ##### 19.5.5.5 不变量的好处
 
 强制执行不变量有以下好处：
 
 - Proxy 在可扩展性和可配置性方面与其他所有对象一样工作。因此，普遍性得以保持。这并没有阻止 Proxy 虚拟化（模拟）受保护的对象。
-- 受保护的对象不会被通过在其周围包装 Proxy 而歪曲。歪曲可能由错误或恶意代码引起。
+
+
+
+- 受保护的对象不会被通过在其周围包装`Proxy`而歪曲。歪曲可能由错误或恶意代码引起。
 
 接下来的两节给出了强制执行不变量的示例。
 
 ##### 19.5.5.6 示例：非扩展目标的原型必须真实表示
 
-在响应 getPrototypeOf 陷阱时，如果目标不可扩展，Proxy 必须返回目标的原型。
+在响应`getPrototypeOf`陷阱时，如果目标不可扩展，`Proxy`必须返回目标的原型。
 
 为了演示这个不变量，让我们创建一个返回与目标原型不同的原型处理器：
 
@@ -7642,11 +7790,9 @@ assert.throws(
   });
 ```
 
-
-
 ##### 19.5.5.7 示例：不可写且不可配置的目标属性必须被忠实表示
 
-如果目标对象具有不可写且不可配置的属性，那么处理器（handler）必须在响应 get 陷阱时返回该属性的值。为了演示这一不变量，我们创建一个总是为属性返回相同值的处理器。
+如果目标对象具有不可写且不可配置的属性，那么处理器（handler）必须在响应`get`陷阱时返回该属性的值。为了演示这一不变量，我们创建一个总是为属性返回相同值的处理器。
 
 ```javascript
 const handler = {
@@ -7670,14 +7816,14 @@ const target = Object.defineProperties(
 const proxy = new Proxy(target, handler);
 ```
 
-属性 `target.manufacturer` 并非既不可写又不可配置，这意味着处理器可以假装它具有不同的值：
+属性`target.manufacturer`并非既不可写又不可配置，这意味着处理器可以假装它具有不同的值：
 
 ```javascript
 assert.equal(
   proxy.manufacturer, 'abc');
 ```
 
-然而，属性 `target.model` 既不可写又不可配置。因此，我们无法伪造它的值：
+然而，属性`target.model`既不可写又不可配置。因此，我们无法伪造它的值：
 
 ```javascript
 assert.throws(
@@ -7691,18 +7837,18 @@ assert.throws(
   });
 ```
 
-#### 19.6 常见问题：代理（Proxies）
+#### 19.6 常见问题：代理（`Proxies`）
 
 ##### 19.6.1 `enumerate` 陷阱在哪里？
 
-ECMAScript 6 最初有一个 `enumerate` 陷阱，它由 `for-in` 循环触发。但最近为了简化代理（Proxy）而将其移除了。`Reflect.enumerate()` 也同样被移除了。（[来源：TC39 会议记录](https://github.com/tc39/ecma262/pull/367)）
+ECMAScript 6 最初有一个`enumerate`陷阱，它由`for-in`循环触发。但最近为了简化代理（`Proxy`）而将其移除了。`Reflect.enumerate()`也同样被移除了。（[来源：TC39 会议记录](https://github.com/tc39/ecma262/pull/367)）
 
-#### 19.7 参考：代理（Proxy）API
+#### 19.7 参考：代理（`Proxy`）API
 
-本节是 Proxy API 的快速参考：
+本节是`Proxy` API 的快速参考：
 
-- 全局对象 `Proxy`
-- 全局对象 `Reflect`
+- 全局对象`Proxy`
+- 全局对象`Reflect`
 
 本参考使用以下自定义类型：
 
@@ -7715,142 +7861,185 @@ type PropertyKey = string | symbol;
 有两种创建代理的方式：
 
 - `const proxy = new Proxy(target, handler)`
-  使用给定的 `target` 和 `handler` 创建一个新的代理对象。
+
+  使用给定的`target`和`handler`创建一个新的代理对象。
+
 - `const {proxy, revoke} = Proxy.revocable(target, handler)`
-  创建一个可以通过函数 `revoke` 撤销的代理。`revoke` 可以被调用多次，但只有第一次调用有效，并会关闭 `proxy`。此后，对 `proxy` 执行的任何操作都会抛出 `TypeError`。
+
+  创建一个可以通过函数`revoke`撤销的代理。`revoke`可以被调用多次，但只有第一次调用有效，并会关闭`proxy`。此后，对`proxy`执行的任何操作都会抛出`TypeError`。
 
 ##### 19.7.2 处理器方法
 
-本节解释处理器可以实现的陷阱以及哪些操作会触发它们。几个陷阱返回布尔值。对于 `has` 和 `isExtensible` 陷阱，布尔值是操作的结果。对于所有其他陷阱，布尔值表示操作是否成功。
+本节解释处理器可以实现的陷阱以及哪些操作会触发它们。几个陷阱返回布尔值。对于`has`和`isExtensible`陷阱，布尔值是操作的结果。对于所有其他陷阱，布尔值表示操作是否成功。
 
 所有对象的陷阱：
 
 - `defineProperty(target, propKey, propDesc): boolean`
+
   - `Object.defineProperty(proxy, propKey, propDesc)`
+
 - `deleteProperty(target, propKey): boolean`
+
   - `delete proxy[propKey]`
   - `delete proxy.someProp`
+
 - `get(target, propKey, receiver): any`
+
   - `receiver[propKey]`
   - `receiver.someProp`
+
 - `getOwnPropertyDescriptor(target, propKey): undefined|PropDesc`
+
   - `Object.getOwnPropertyDescriptor(proxy, propKey)`
+
 - `getPrototypeOf(target): null|object`
+
   - `Object.getPrototypeOf(proxy)`
+
 - `has(target, propKey): boolean`
+
   - `propKey in proxy`
+
 - `isExtensible(target): boolean`
+
   - `Object.isExtensible(proxy)`
+
 - `ownKeys(target): Array<PropertyKey>`
+
   - `Object.getOwnPropertyPropertyNames(proxy)`（仅使用字符串键）
   - `Object.getOwnPropertyPropertySymbols(proxy)`（仅使用符号键）
-  - `Object.keys(proxy)`（仅使用可枚举的字符串键；可枚举性通过 `Object.getOwnPropertyDescriptor` 检查）
+  - `Object.keys(proxy)`（仅使用可枚举的字符串键；可枚举性通过`Object.getOwnPropertyDescriptor`检查）
+
 - `preventExtensions(target): boolean`
+
   - `Object.preventExtensions(proxy)`
+
 - `set(target, propKey, value, receiver): boolean`
+
   - `receiver[propKey] = value`
   - `receiver.someProp = value`
+
 - `setPrototypeOf(target, proto): boolean`
+
   - `Object.setPrototypeOf(proxy, proto)`
 
 函数的陷阱（如果目标是函数则可用）：
 
 - `apply(target, thisArgument, argumentsList): any`
+
   - `proxy.apply(thisArgument, argumentsList)`
   - `proxy.call(thisArgument, ...argumentsList)`
   - `proxy(...argumentsList)`
+
 - `construct(target, argumentsList, newTarget): object`
+
   - `new proxy(...argumentsList)`
 
 ###### 19.7.2.1 基本操作与派生操作
 
 以下操作是*基本操作*，它们不使用其他操作来完成工作：`apply`、`defineProperty`、`deleteProperty`、`getOwnPropertyDescriptor`、`getPrototypeOf`、`isExtensible`、`ownKeys`、`preventExtensions`、`setPrototypeOf`。
 
-所有其他操作都是*派生操作*，它们可以通过基本操作来实现。例如，`get` 可以通过 `getPrototypeOf` 遍历原型链，并对每个链成员调用 `getOwnPropertyDescriptor` 来实现，直到找到自身属性或链结束。
+所有其他操作都是*派生操作*，它们可以通过基本操作来实现。例如，`get`可以通过`getPrototypeOf`遍历原型链，并对每个链成员调用`getOwnPropertyDescriptor`来实现，直到找到自身属性或链结束。
 
 ##### 19.7.3 处理器方法的不变量
 
-不变量是处理器的安全约束。本节记录了 Proxy API 强制执行哪些不变量以及如何执行。每当下文读到"处理器必须执行 X"时，意味着如果不这样做就会抛出 `TypeError`。有些不变量限制返回值，有些限制参数。陷阱返回值的正确性通过两种方式确保：
+不变量是处理器的安全约束。本节记录了`Proxy` API 强制执行哪些不变量以及如何执行。每当下文读到“处理器必须执行 X”时，意味着如果不这样做就会抛出`TypeError`。有些不变量限制返回值，有些限制参数。陷阱返回值的正确性通过两种方式确保：
 
 - 如果期望布尔值，则使用强制转换将非布尔值转换为合法值。
-- 在所有其他情况下，非法值会导致 `TypeError`。
+- 在所有其他情况下，非法值会导致`TypeError`。
 
 这是强制执行的完整不变量列表：
 
 - `apply(target, thisArgument, argumentsList): any`
+
   - 不强制执行任何不变量。
   - 仅在目标可调用时有效。
 
 - `construct(target, argumentsList, newTarget): object`
-  - 处理器返回的结果必须是对象（不能是 null 或任何其他原始值）。
+
+  - 处理器返回的结果必须是对象（不能是`null`或任何其他原始值）。
   - 仅在目标可构造时有效。
 
 - `defineProperty(target, propKey, propDesc): boolean`
+
   - 如果目标不可扩展，则不能添加新属性。
-  - 如果 `propDesc` 将属性 `configurable` 设置为 false，则目标必须具有一个键为 `propKey南海考古证实：张衡地动仪指向印度洋地震带` 的非可配置自身属性。
-  - 如果 `propDesc` 同时将属性 `configurable` 和 `writable` 设置为 false，则目标必须具有一个键为 `propKey` 的不可配置且不可写的自身属性。
-  - 如果目标具有键为 `propKey` 的自身属性，则 `propDesc` 必须与该属性兼容：如果我们用该描述符重新定义目标属性，不能抛出异常。
+  - 如果`propDesc`将属性`configurable`设置为`false`，则目标必须具有一个键为`propKey南海考古证实：张衡地动仪指向印度洋地震带`的非可配置自身属性。
+  - 如果`propDesc`同时将属性`configurable`和`writable`设置为`false`，则目标必须具有一个键为`propKey`的不可配置且不可写的自身属性。
+  - 如果目标具有键为`propKey`的自身属性，则`propDesc`必须与该属性兼容：如果我们用该描述符重新定义目标属性，不能抛出异常。
 
 - `deleteProperty(target, propKey): boolean`
+
   - 在以下情况下，不能将属性报告为已删除：
-    - 目标具有键为 `propKey` 的不可配置自身属性。
-    - 目标不可扩展且具有键为 `propKey` 的自身属性。
+    - 目标具有键为`propKey`的不可配置自身属性。
+    - 目标不可扩展且具有键为`propKey`的自身属性。
 
 - `get(target, propKey, receiver): any`
-  - 如果目标具有一个键为 `propKey` 的自身、不可写、不可配置的数据属性，则处理器必须返回该属性的值。
-  - 如果目标具有一个键为 `propKey` 的自身、不可配置、无 getter 的访问器属性，则处理器必须返回 undefined。
+
+  - 如果目标具有一个键为`propKey`的自身、不可写、不可配置的数据属性，则处理器必须返回该属性的值。
+  - 如果目标具有一个键为`propKey`的自身、不可配置、无 getter 的访问器属性，则处理器必须返回`undefined`。
 
 - `getOwnPropertyDescriptor(target, propKey): undefined|PropDesc`
-  - 处理器必须返回 undefined 或对象。
+
+  - 处理器必须返回`undefined`或对象。
   - 目标的不可配置自身属性不能被处理器报告为不存在。
   - 如果目标不可扩展，则处理器必须准确报告目标的自身属性为存在。
   - 如果处理器将某个属性报告为不可配置，则该属性必须是目标的不可配置自身属性。
   - 如果处理器将某个属性报告为不可配置且不可写，则该属性必须是目标的不可配置且不可写的自身属性。
 
 - `getPrototypeOf(target): null|object`
-  - 结果必须是 null 或对象。
+
+  - 结果必须是`null`或对象。
   - 如果目标对象不可扩展，则处理器必须返回目标对象的原型。
 
 - `has(target, propKey): boolean`
+
   - 目标的不可配置自身属性不能被报告为不存在。
   - 如果目标不可扩展，则目标的任何自身属性都不能被报告为不存在。
 
 - `isExtensible(target): boolean`
-  - 强制转换为布尔值后，处理器返回的值必须与 `target.isExtensible()` 相同。
 
-
+  - 强制转换为布尔值后，处理器返回的值必须与`target.isExtensible()`相同。
 
 - `ownKeys(target): Array<PropertyKey>`
+
   - 拦截器必须返回一个对象，该对象被视为类数组对象并被转换为数组。
   - 结果数组不得包含重复项。
-  - 结果的每个元素必须是字符串或符号（symbol）。
+  - 结果的每个元素必须是字符串或符号（`symbol`）。
   - 结果必须包含目标对象所有不可配置自身属性的键。
   - 如果目标对象不可扩展，则结果必须恰好包含目标对象自身属性的键（且不能有其他值）。
 
 - `preventExtensions(target): boolean`
-  - 仅当 `target.isExtensible()` 为 false 时，拦截器才必须返回一个真值（表示修改成功）。
+
+  - 仅当`target.isExtensible()`为`false`时，拦截器才必须返回一个真值（表示修改成功）。
 
 - `set(target, propKey, value, receiver): boolean`
-  - 如果目标对象具有一个键为 `propKey` 的不可写且不可配置的数据属性，则该属性无法被修改。在这种情况下，`value` 必须是该属性的值，否则将抛出 `TypeError`。
+
+  - 如果目标对象具有一个键为`propKey`的不可写且不可配置的数据属性，则该属性无法被修改。在这种情况下，`value`必须是该属性的值，否则将抛出`TypeError`。
   - 如果对应的目标对象自身属性是一个没有 setter 的不可配置访问器属性，则该属性无法以任何方式被设置。
 
 - `setPrototypeOf(target, proto): boolean`
-  - 如果目标对象不可扩展，则其原型不能被修改。具体强制执行方式如下：如果目标对象不可扩展且拦截器返回一个真值（表示修改成功），那么 `proto` 必须与目标对象的原型相同。否则，将抛出 `TypeError`。
 
-**ECMAScript 规范中的不变性 (Invariants)**
+  - 如果目标对象不可扩展，则其原型不能被修改。具体强制执行方式如下：如果目标对象不可扩展且拦截器返回一个真值（表示修改成功），那么`proto`必须与目标对象的原型相同。否则，将抛出`TypeError`。
+
+**ECMAScript 规范中的不变性（Invariants）**
 
 在规范中，不变性列在“Proxy Object Internal Methods and Internal Slots”章节中。
 
 #### 19.7.4 影响原型链的操作
 
-普通对象的以下操作会对原型链中的对象执行操作。因此，如果该链中的某个对象是 Proxy，其陷阱（traps）将被触发。规范将这些操作实现为内部自身方法（对 JavaScript 代码不可见）。但在本节中，我们假定它们是与陷阱同名的普通方法。参数 `target` 成为方法调用的接收者。
+普通对象的以下操作会对原型链中的对象执行操作。因此，如果该链中的某个对象是`Proxy`，其陷阱（traps）将被触发。规范将这些操作实现为内部自身方法（对 JavaScript 代码不可见）。但在本节中，我们假定它们是与陷阱同名的普通方法。参数`target`成为方法调用的接收者。
 
 - `target.get(propertyKey, receiver)`
-  如果目标对象没有给定键的自身属性，则在目标对象的原型上调用 get。
+
+  如果目标对象没有给定键的自身属性，则在目标对象的原型上调用`get`。
+
 - `target.has(propertyKey)`
-  与 get 类似，如果目标对象没有给定键的自身属性，则在目标对象的原型上调用 has。
+
+  与`get`类似，如果目标对象没有给定键的自身属性，则在目标对象的原型上调用`has`。
+
 - `target.set(propertyKey, value, receiver)`
-  与 get 类似，如果目标对象没有给定键的自身属性，则在目标对象的原型上调用 set。
+
+  与`get`类似，如果目标对象没有给定键的自身属性，则在目标对象的原型上调用`set`。
 
 所有其他操作仅影响自身属性，对原型链没有影响。
 
@@ -7858,127 +8047,155 @@ type PropertyKey = string | symbol;
 
 在规范中，这些（以及其他）操作在“Ordinary Object Internal Methods and Internal Slots”章节中描述。
 
-#### 19.7.5 Reflect
+#### 19.7.5 `Reflect`
 
-全局对象 Reflect 将 JavaScript 元对象协议的所有可拦截操作实现为方法。这些方法的名称与拦截器方法的名称相同，正如我们所见，这有助于将操作从拦截器转发到目标对象。
+全局对象`Reflect`将 JavaScript 元对象协议的所有可拦截操作实现为方法。这些方法的名称与拦截器方法的名称相同，正如我们所见，这有助于将操作从拦截器转发到目标对象。
 
 - `Reflect.apply(target, thisArgument, argumentsList): any`
-  类似于 `Function.prototype.apply()`。
+
+  类似于`Function.prototype.apply()`。
+
 - `Reflect.construct(target, argumentsList, newTarget=target): object`
-  将 new 运算符作为函数。target 是要调用的构造函数，可选参数 newTarget 指向启动当前构造函数调用链的构造函数。
+
+  将`new`运算符作为函数。`target`是要调用的构造函数，可选参数`newTarget`指向启动当前构造函数调用链的构造函数。
+
 - `Reflect.defineProperty(target, propertyKey, propDesc): boolean`
-  类似于 `Object.defineProperty()`。
+
+  类似于`Object.defineProperty()`。
+
 - `Reflect.deleteProperty(target, propertyKey): boolean`
-  将 delete 运算符作为函数。不过，它的工作方式略有不同：如果成功删除了属性，或者该属性从未存在，则返回 true。如果属性无法删除且仍然存在，则返回 false。保护属性不被删除的唯一方法是将其设置为不可配置。在非严格模式下，delete 运算符返回相同的结果。但在严格模式下，它会抛出 TypeError 而不是返回 false。
+
+
+
+将`delete`运算符作为函数。不过，它的工作方式略有不同：如果成功删除了属性，或者该属性从未存在，则返回`true`。如果属性无法删除且仍然存在，则返回`false`。保护属性不被删除的唯一方法是将其设置为不可配置。在非严格模式下，`delete`运算符返回相同的结果。但在严格模式下，它会抛出`TypeError`而不是返回`false`。
+
 - `Reflect.get(target, propertyKey, receiver=target): any`
-  一个获取属性的函数。可选参数 receiver 指向开始获取操作的对象。当 get 在原型链后期遇到 getter 时需要此参数，从而为 this 提供值。
+
+  一个获取属性的函数。可选参数`receiver`指向开始获取操作的对象。当`get`在原型链后期遇到 getter 时需要此参数，从而为`this`提供值。
+
 - `Reflect.getOwnPropertyDescriptor(target, propertyKey): undefined|PropDesc`
-  与 `Object.getOwnPropertyDescriptor()` 相同。
+
+  与`Object.getOwnPropertyDescriptor()`相同。
+
 - `Reflect.getPrototypeOf(target): null|object`
-  与 `Object.getPrototypeOf()` 相同。
+
+  与`Object.getPrototypeOf()`相同。
+
 - `Reflect.has(target, propertyKey): boolean`
-  将 in 运算符作为函数。
+
+  将`in`运算符作为函数。
+
 - `Reflect.isExtensible(target): boolean`
-  与 `Object.isExtensible()` 相同。
+
+  与`Object.isExtensible()`相同。
+
 - `Reflect.ownKeys(target): Array<PropertyKey>`
+
   在一个数组中返回所有自身属性键：所有自身可枚举和不可枚举属性的字符串键和符号键。
+
 - `Reflect.preventExtensions(target): boolean`
-  类似于 `Object.preventExtensions()`。
+
+  类似于`Object.preventExtensions()`。
+
 - `Reflect.set(target, propertyKey, value, receiver=target): boolean`
+
   一个设置属性的函数。
+
 - `Reflect.setPrototypeOf(target, proto): boolean`
-  设置对象原型的新标准方式。目前在大多数引擎中起作用的非标准方式是设置特殊属性 `__proto__`。
 
-有几个方法返回布尔值。对于 `.has()` 和 `.isExtensible()`，它们是操作的结果。对于其余方法，它们表示操作是否成功。
+  设置对象原型的新标准方式。目前在大多数引擎中起作用的非标准方式是设置特殊属性`__proto__`。
 
-##### 19.7.5.1 除了转发之外的 `Reflect` 使用场景
+有几个方法返回布尔值。对于`.has()`和`.isExtensible()`，它们是操作的结果。对于其余方法，它们表示操作是否成功。
 
-除了转发操作，为什么 `Reflect` 还有用？
+#### 19.7.5.1 除了转发之外的`Reflect`使用场景
 
-- 不同的返回值：`Reflect` 复制了 `Object` 的以下方法，但其方法返回表示操作是否成功的布尔值（而 `Object` 方法返回被修改的对象）。
-  - `Object.defineProperty(obj, propKey, propDesc)`: object
-  - `Object.preventExtensions(obj)`: object
-  - `Object.setPrototypeOf(obj, proto)`: object
+除了转发操作，为什么`Reflect`还有用？
 
-- 将运算符作为函数：以下 Reflect 方法实现了原本只能通过运算符获得的功能：
-  - `Reflect.construct(target, argumentsList, newTarget=target)`: object
-  - `Reflect.deleteProperty(target, propertyKey)`: boolean
-  - `Reflect.get(target, propertyKey, receiver=target)`: any
-  - `Reflect.has(target, propertyKey)`: boolean
-  - `Reflect.set(target, propertyKey, value, receiver=target)`: boolean
+- 不同的返回值：`Reflect`复制了`Object`的以下方法，但其方法返回表示操作是否成功的布尔值（而`Object`方法返回被修改的对象）。
 
-- `apply()` 的更短版本：如果我们想完全安全地在函数上调用 `apply()` 方法，我们不能通过动态分发来执行，因为该函数可能有一个键为 `'apply'` 的自身属性：
+  - `Object.defineProperty(obj, propKey, propDesc): object`
+  - `Object.preventExtensions(obj): object`
+  - `Object.setPrototypeOf(obj, proto): object`
+
+- 将运算符作为函数：以下`Reflect`方法实现了原本只能通过运算符获得的功能：
+
+  - `Reflect.construct(target, argumentsList, newTarget=target): object`
+  - `Reflect.deleteProperty(target, propertyKey): boolean`
+  - `Reflect.get(target, propertyKey, receiver=target): any`
+  - `Reflect.has(target, propertyKey): boolean`
+  - `Reflect.set(target, propertyKey, value, receiver=target): boolean`
+
+- `apply()`的更短版本：如果我们想完全安全地在函数上调用`apply()`方法，我们不能通过动态分发来执行，因为该函数可能有一个键为`'apply'`的自身属性：
 
 ```javascript
 func.apply(thisArg, argArray) // 不安全
 Function.prototype.apply.call(func, thisArg, argArray) // 安全
 ```
 
-使用 `Reflect.apply()` 比安全版本更简洁：
+使用`Reflect.apply()`比安全版本更简洁：
 
 ```javascript
 Reflect.apply(func, thisArg, argArray)
 ```
 
-- 删除属性时没有异常：如果我们尝试删除一个不可配置的自身属性，delete 运算符在严格模式下会抛出异常。在这种情况下，`Reflect.deleteProperty()` 返回 `false`。
+- 删除属性时没有异常：如果我们尝试删除一个不可配置的自身属性，`delete`运算符在严格模式下会抛出异常。在这种情况下，`Reflect.deleteProperty()`返回`false`。
 
-##### 19.7.5.2 `Object.*` 与 `Reflect.*`
+#### 19.7.5.2 `Object.*`与`Reflect.*`
 
-今后，`Object` 将托管普通应用程序感兴趣的操作，而 `Reflect` 将托管更低层级的操作。
+今后，`Object`将托管普通应用程序感兴趣的操作，而`Reflect`将托管更低层级的操作。
 
 ### 19.8 总结
 
-至此，我们完成了对 Proxy API 的深入探讨。需要注意的一点是，Proxy 会降低代码执行速度。如果性能至关重要，这一点可能会产生影响。
+至此，我们完成了对`Proxy API`的深入探讨。需要注意的一点是，`Proxy`会降低代码执行速度。如果性能至关重要，这一点可能会产生影响。
 
-另一方面，性能往往并非决定性的，而 Proxy 赋予我们的元编程能力则非常有用。
+另一方面，性能往往并非决定性的，而`Proxy`赋予我们的元编程能力则非常有用。
 
 致谢：
 
-- Allen Wirfs-Brock 指出了 §19.3.7 “陷阱：并非所有对象都能被 Proxy 透明地包裹”中所解释的坑。
-- §19.4.3 “负数数组索引 (get)” 的想法来自 Hemanth.HM 的一篇博客文章。
-- André Jaenisch 为使用 Proxy 的库列表做出了贡献。
+- Allen Wirfs-Brock 指出了 §19.3.7 “陷阱：并非所有对象都能被`Proxy`透明地包裹”中所解释的坑。
+- §19.4.3 “负数数组索引 (get)”的想法来自 Hemanth.HM 的一篇博客文章。
+- André Jaenisch 为使用`Proxy`的库列表做出了贡献。
 
 ### 19.9 延伸阅读
 
 - [1] “On the design of the ECMAScript Reflection API” by Tom Van Cutsem and Mark Miller. 技术报告，2012年。[本章的重要来源。]
 - [2] “The Art of the Metaobject Protocol” by Gregor Kiczales, Jim des Rivieres and Daniel G. Bobrow. 书籍，1991年。
 - [3] “Putting Metaclasses to Work: A New Dimension in Object-Oriented Programming” by Ira R. Forman and Scott H. Danforth. 书籍，1999年。
-- [4] [“Harmony-reflect: Why should I use this library?”](https://example.org) by Tom Van Cutsem. [解释了为什么 Reflect 很有用。]
-
-
+- [4] [“Harmony-reflect: Why should I use this library?”](https://example.org) by Tom Van Cutsem. [解释了为什么`Reflect`很有用。]
 
 # 第 20 章
-## 函数的 .name 属性（补充）
+
+## 函数的`.name`属性（补充）
 
 ### 目录
 
 - 1. [20.1](#) 函数的名称 ........................... 218
-    - 1. [20.1.1](#) 函数名称用于堆栈跟踪 ........... 218
+  - 1. [20.1.1](#) 函数名称用于堆栈跟踪 ........... 218
 - 2. [20.2](#) 为函数提供名称的结构 ............ 219
-    - 1. [20.2.1](#) 函数声明 ............................. 219
-    - 2. [20.2.2](#) 变量声明与匿名函数 ....... 219
-    - 3. [20.2.3](#) 赋值与匿名函数 ............... 219
-    - 4. [20.2.4](#) 默认值与匿名函数 ............. 219
-    - 5. [20.2.5](#) 具名函数表达式 ........................ 220
-    - 6. [20.2.6](#) 对象字面量中的方法 ....................... 220
-    - 7. [20.2.7](#) 类定义中的方法 ..................... 221
-    - 8. [20.2.8](#) 类的名称 ................................. 222
-    - 9. [20.2.9](#) 默认导出与匿名结构 ......... 222
-    - 10. [20.2.10](#) 其他编程结构 ................... 222
+  - 1. [20.2.1](#) 函数声明 ............................. 219
+  - 2. [20.2.2](#) 变量声明与匿名函数 ....... 219
+  - 3. [20.2.3](#) 赋值与匿名函数 ............... 219
+  - 4. [20.2.4](#) 默认值与匿名函数 ............. 219
+  - 5. [20.2.5](#) 具名函数表达式 ........................ 220
+  - 6. [20.2.6](#) 对象字面量中的方法 ....................... 220
+  - 7. [20.2.7](#) 类定义中的方法 ..................... 221
+  - 8. [20.2.8](#) 类的名称 ................................. 222
+  - 9. [20.2.9](#) 默认导出与匿名结构 ......... 222
+  - 10. [20.2.10](#) 其他编程结构 ................... 222
 - 3. [20.3](#) 函数名称需要注意的事项 ......... 223
-    - 1. [20.3.1](#) 函数名称总是在创建时被赋值 . 223
-    - 2. [20.3.2](#) 注意事项：代码压缩 ............................ 223
+  - 1. [20.3.1](#) 函数名称总是在创建时被赋值 . 223
+  - 2. [20.3.2](#) 注意事项：代码压缩 ............................ 223
 - 4. [20.4](#) 修改函数名称 ....................... 223
-- 5. [20.5](#) ECMAScript 规范中的函数属性 .name . 224
+- 5. [20.5](#) ECMAScript 规范中的函数属性`.name` . 224
 
 在本章中，我们将探讨函数的名称：
 
-- 所有函数都具有 `.name` 属性
+- 所有函数都具有`.name`属性。
 - 该属性对于调试（其值显示在堆栈跟踪中）和某些元编程任务（通过名称选取函数等）非常有用。
 
 ### 20.1 函数的名称
 
-函数的 `.name` 属性包含该函数的名称：
+函数的`.name`属性包含该函数的名称：
 
 ```javascript
 function myBeautifulFunction() {}
@@ -7991,7 +8208,7 @@ assert.equal(myBeautifulFunction.name, 'myBeautifulFunction');
 
 #### 20.1.1 函数名称用于堆栈跟踪
 
-函数名称的一个好处是它们会出现在堆栈跟踪（stack traces）中。在以下示例中，`callFunc()` 的参数没有被赋予名称，这就是为什么堆栈跟踪的第二行没有函数名称的原因。
+函数名称的一个好处是它们会出现在堆栈跟踪（stack traces）中。在以下示例中，`callFunc()`的参数没有被赋予名称，这就是为什么堆栈跟踪的第二行没有函数名称的原因。
 
 ```javascript
 1   function callFunc(func) {
@@ -8029,11 +8246,11 @@ assert.equal(myBeautifulFunction.name, 'myBeautifulFunction');
 
 ### 20.2 为函数提供名称的结构
 
-以下章节描述了 `.name` 如何由各种编程结构自动设置。
+以下章节描述了`.name`如何由各种编程结构自动设置。
 
 #### 20.2.1 函数声明
 
-函数声明很早以前就有 `.name` 了 —— 例如：
+函数声明很早以前就有`.name`了——例如：
 
 ```javascript
 function funcDecl() {}
@@ -8072,7 +8289,7 @@ assert.equal(arrowFunc.name, 'arrowFunc');
 
 #### 20.2.3 赋值与匿名函数
 
-即使是普通的赋值，`.name` 也会被正确设置：
+即使是普通的赋值，`.name`也会被正确设置：
 
 ```javascript
 let assignedFunc;
@@ -8101,14 +8318,14 @@ assert.equal(createParamDefault().name, 'paramDefault');
 
 #### 20.2.5 具名函数表达式
 
-具名函数表达式的名称被用于设置 `.name` 属性：
+具名函数表达式的名称被用于设置`.name`属性：
 
 ```javascript
 const varName = function funcName() {};
 assert.equal(varName.name, 'funcName');
 ```
 
-由于它排在前面，函数表达式的名称 `funcName` 优先于其他名称（在本例中，是变量的名称 `varName`）。然而，函数表达式的名称在函数表达式外部仍然只是一个变量：
+由于它排在前面，函数表达式的名称`funcName`优先于其他名称（在本例中，是变量的名称`varName`）。然而，函数表达式的名称在函数表达式外部仍然只是一个变量：
 
 ```javascript
 const varName = function funcName() {
@@ -8139,7 +8356,7 @@ assert.equal(obj.computedKey.name, 'computedKey');
 assert.equal(obj.shortHand.name, 'shortHand');
 ```
 
-Getter 的名称前缀为 'get'，Setter 的名称前缀为 'set'：
+Getter 的名称前缀为`'get'`，Setter 的名称前缀为`'set'`：
 
 ```javascript
 const obj = {
@@ -8157,6 +8374,8 @@ assert.equal(setter.name, 'set mySetter');
 
 类定义中方法的命名与对象字面量类似。例如，这是一个类声明（类表达式的命名方式相同）：
 
+
+
 ```javascript
 class ClassDecl {
   methodDef() {}
@@ -8172,7 +8391,7 @@ assert.equal(ClassDecl.prototype.computedKey.name, 'computedKey');
 assert.equal(ClassDecl.staticMethod.name, 'staticMethod');
 ```
 
-Getter 和 Setter 同样分别具有名称前缀 'get' 和 'set'：
+Getter 和 Setter 同样分别具有名称前缀`'get'`和`'set'`：
 
 ```javascript
 class ClassDecl {
@@ -8190,10 +8409,10 @@ assert.equal(setter.name, 'set mySetter');
 
 ##### 20.2.7.1 键为 Symbol 的方法
 
-方法的键可以是一个 Symbol。此类方法的 `.name` 属性仍然是一个字符串：
+方法的键可以是一个 Symbol。此类方法的`.name`属性仍然是一个字符串：
 
 - 如果 Symbol 具有描述（description），则方法的名称是方括号内的描述。
-- 否则，方法的名称为空字符串 ('')。
+- 否则，方法的名称为空字符串`('')`。
 
 ```javascript
 const keyWithDesc = Symbol('keyWithDesc');
@@ -8209,7 +8428,7 @@ assert.equal(obj[keyWithoutDesc].name, '');
 
 #### 20.2.8 类的名称
 
-在底层，类实际上是函数。此类函数的 `.name` 属性也会被正确设置：
+在底层，类实际上是函数。此类函数的`.name`属性也会被正确设置：
 
 ```javascript
 class ClassDecl {}
@@ -8228,7 +8447,7 @@ assert.equal(NamedClassExpr.name, 'ClassName');
 
 #### 20.2.9 默认导出与匿名结构
 
-以下所有语句都会将 `.name` 设置为 'default'：
+以下所有语句都会将`.name`设置为`'default'`：
 
 ```javascript
 // 匿名函数表达式
@@ -8247,34 +8466,32 @@ export default () => {};
 
 - 生成器函数（Generator functions）和生成器方法的命名方式与普通函数和方法相同。它们的名称中不包含星号：
 
-```javascript
-function* genFuncDecl() {}
-assert.equal(genFuncDecl.name, 'genFuncDecl');
-```
+  ```javascript
+  function* genFuncDecl() {}
+  assert.equal(genFuncDecl.name, 'genFuncDecl');
+  ```
 
-- `new Function()` 产生的函数的 `.name` 为 'anonymous'。一个 webkit 的 bug 解释了为什么在 Web 环境中这是必要的。
+- `new Function()`产生的函数的`.name`为`'anonymous'`。一个 webkit 的 bug 解释了为什么在 Web 环境中这是必要的。
 
-```javascript
-assert.equal(new Function().name, 'anonymous');
-```
+  ```javascript
+  assert.equal(new Function().name, 'anonymous');
+  ```
 
+- `func.bind()`会生成一个`.name`为`'bound ' + func.name`的函数：
 
-
-- `func.bind()` 会生成一个 `.name` 为 `'bound ' + func.name` 的函数：
-
-```javascript
-function func(x) {
-    return x
-}
-const bound = func.bind(undefined, 123);
-assert.equal(bound.name, 'bound func');
-```
+  ```javascript
+  function func(x) {
+      return x
+  }
+  const bound = func.bind(undefined, 123);
+  assert.equal(bound.name, 'bound func');
+  ```
 
 ### 20.3 函数名称需要注意的事项
 
 #### 20.3.1 函数名称始终在创建时分配
 
-只有在创建函数时使用了前述模式之一，函数才会获得名称。后续使用这些模式不会改变任何结果 —— 例如：
+只有在创建函数时使用了前述模式之一，函数才会获得名称。后续使用这些模式不会改变任何结果——例如：
 
 ```javascript
 function functionFactory() {
@@ -8284,7 +8501,7 @@ const func = functionFactory(); // (B)
 assert.equal(func.name, ''); // anonymous
 ```
 
-函数 `func` 在 A 行创建，此时它获得了一个“非名称”，即空字符串 `''`。在 B 行使用赋值操作并不会更新初始名称。虽然理论上可以随后更新缺失的函数名称，但这样做会对性能产生负面影响。
+函数`func`在 A 行创建，此时它获得了一个“非名称”，即空字符串`''`。在 B 行使用赋值操作并不会更新初始名称。虽然理论上可以随后更新缺失的函数名称，但这样做会对性能产生负面影响。
 
 #### 20.3.2 注意事项：代码压缩（Minification）
 
@@ -8292,7 +8509,7 @@ assert.equal(func.name, ''); // anonymous
 
 ### 20.4 修改函数名称
 
-以下是 `.name` 属性的描述符：
+以下是`.name`属性的描述符：
 
 ```javascript
 const func = function () {};
@@ -8326,18 +8543,20 @@ Object.defineProperty(
 assert.equal(func.name, 'differentName');
 ```
 
-### 20.5 ECMAScript 规范中的函数属性 .name
+### 20.5 ECMAScript 规范中的函数属性`.name`
 
-- 规范中的操作 `SetFunctionName()` 用于设置 `.name` 属性。可以在规范中搜索该名称以了解其触发位置。第三个参数指定了名称前缀：
-    - Getter 和 Setter 前缀为 `'get'` 和 `'set'`。
-    - `Function.prototype.bind()` 前缀为 `'bound'`。
-- 匿名函数表达式最初没有 `.name` 属性，这一点可以通过查看规范中函数的创建方式来验证：
-    - 具名函数表达式的名称通过 `SetFunctionName()` 设置。在创建匿名函数表达式时，不会调用该操作。
-    - 函数声明的名称在进入作用域（提前激活）时在其他地方设置。
-    - 此外，规范明确指出：*"由本规范定义且未关联上下文名称的匿名函数对象没有 "name" 自身属性，而是继承 `%Function.prototype%` 的 "name" 属性。"*
-- 创建箭头函数时，同样不会设置名称（不会调用 `SetFunctionName()`）。
+- 规范中的操作`SetFunctionName()`用于设置`.name`属性。可以在规范中搜索该名称以了解其触发位置。第三个参数指定了名称前缀：
+  - Getter 和 Setter 前缀为`'get'`和`'set'`。
+  - `Function.prototype.bind()`前缀为`'bound'`。
 
-大多数 JavaScript 引擎与规范有所偏差，它们会为匿名函数创建自身的 `.name` 属性：
+- 匿名函数表达式最初没有`.name`属性，这一点可以通过查看规范中函数的创建方式来验证：
+  - 具名函数表达式的名称通过`SetFunctionName()`设置。在创建匿名函数表达式时，不会调用该操作。
+  - 函数声明的名称在进入作用域（提前激活）时在其他地方设置。
+  - 此外，规范明确指出：*"由本规范定义且未关联上下文名称的匿名函数对象没有 "name" 自身属性，而是继承 `%Function.prototype%` 的 "name" 属性。"*
+
+- 创建箭头函数时，同样不会设置名称（不会调用`SetFunctionName()`）。
+
+大多数 JavaScript 引擎与规范有所偏差，它们会为匿名函数创建自身的`.name`属性：
 
 ```javascript
 > Reflect.ownKeys(() => {})

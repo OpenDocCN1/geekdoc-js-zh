@@ -1,8 +1,5 @@
+
 # JavaScript 入门指南：面向初学者的编程
-
-
-
-
 
 ## 第一章：JavaScript 简介
 
@@ -12,7 +9,7 @@ JavaScript 是一种轻量级、解释型、面向对象的语言，具有第一
 
 JavaScript 最初由网景公司在 20 世纪 90 年代中期开发，如今已与 HTML 和 CSS 一起成为网络的三大核心技术之一。
 
-```
+```javascript
 console.log("Hello, World!");
 ```
 
@@ -32,7 +29,7 @@ JavaScript 也是进入编程世界的绝佳起点。它拥有相对简洁的语
 
 JavaScript 语法是构建 JavaScript 程序的一系列规则：
 
-```
+```javascript
 var x = 5; // 声明一个变量
 var y = 6; // 声明另一个变量
 var z = x + y; // 将变量相加
@@ -44,7 +41,7 @@ console.log(z); // 将结果打印到控制台
 
 JavaScript 具有动态类型。这意味着你不需要在声明变量时指定其数据类型，而且你可以更改已声明变量的数据类型。
 
-```
+```javascript
 var length = 16; // 数字
 var lastName = "Johnson"; // 字符串
 var x = {firstName:"John", lastName:"Doe"}; // 对象
@@ -60,20 +57,20 @@ var x = {firstName:"John", lastName:"Doe"}; // 对象
 
 变量是存储数据值的容器。在 JavaScript 中，我们使用 `var` 关键字声明变量，后跟变量名。让我们看看如何创建一个变量。
 
-```
+```javascript
 var name = "John Doe";
 ```
 
 在上面的例子中，我们创建了一个名为 `name` 的变量，并为其赋值 "John Doe"。我们也可以在不赋值的情况下声明一个变量，然后再为其赋值。
 
-```
+```javascript
 var name;
 name = "John Doe";
 ```
 
 JavaScript 还提供了另外两个声明变量的关键字 - `let` 和 `const`。`let` 关键字类似于 `var`，但它具有块级作用域。另一方面，`const` 用于声明常量，即不能重新赋值的变量。
 
-```
+```javascript
 let age = 25;
 const country = "USA";
 ```
@@ -82,17 +79,17 @@ const country = "USA";
 
 JavaScript 有几种数据类型，包括：
 
-- 1. 数字 - 表示数值。例如：`var num = 25;`。
-- 2. 字符串 - 表示字符序列。例如：`var str = "Hello World";`。
-- 3. 布尔值 - 表示逻辑值。只能是 `true` 或 `false`。例如：`var isTrue = true;`。
-- 4. 未定义 - 表示尚未赋值的变量。例如：`var x;`。
-- 5. 空值 - 表示空值。例如：`var y = null;`。
-- 6. 对象 - 表示一个实例，通过它可以访问方法。例如：`var obj = {name: "John", age: 25, country: "USA"};`。
-- 7. 数组 - 表示列表中一组相似的项目。例如：`var arr = [1, 2, 3, 4, 5];`。
+1. 数字 - 表示数值。例如：`var num = 25;`。
+2. 字符串 - 表示字符序列。例如：`var str = "Hello World";`。
+3. 布尔值 - 表示逻辑值。只能是 `true` 或 `false`。例如：`var isTrue = true;`。
+4. 未定义 - 表示尚未赋值的变量。例如：`var x;`。
+5. 空值 - 表示空值。例如：`var y = null;`。
+6. 对象 - 表示一个实例，通过它可以访问方法。例如：`var obj = {name: "John", age: 25, country: "USA"};`。
+7. 数组 - 表示列表中一组相似的项目。例如：`var arr = [1, 2, 3, 4, 5];`。
 
 让我们看一些这些数据类型的例子。
 
-```
+```javascript
 // 数字
 var num = 25;
 
@@ -117,7 +114,7 @@ var arr = [1, 2, 3, 4, 5];
 
 在 JavaScript 中，我们可以使用 `typeof` 运算符来查找变量的类型。
 
-```
+```javascript
 console.log(typeof num); // 返回 "number"
 console.log(typeof str); // 返回 "string"
 console.log(typeof isTrue); // 返回 "boolean"
@@ -139,9 +136,9 @@ console.log(typeof arr); // 返回 "object"
 
 在 JavaScript 中，有三种方式声明变量：
 
-- 1. 使用 `var`
-- 2. 使用 `let`
-- 3. 使用 `const`
+1. 使用 `var`
+2. 使用 `let`
+3. 使用 `const`
 
 让我们逐一了解它们。
 
@@ -149,7 +146,7 @@ console.log(typeof arr); // 返回 "object"
 
 在 ES6 之前，`var` 是 JavaScript 中声明变量的唯一方式。这里有一个例子：
 
-```
+```javascript
 var name = "John Doe";
 ```
 
@@ -157,7 +154,7 @@ var name = "John Doe";
 
 `let` 在 ES6 中引入，现在是声明变量的首选方式。它比 `var` 有更多的限制，有助于防止代码中的错误。这里有一个例子：
 
-```
+```javascript
 let name = "John Doe";
 ```
 
@@ -165,7 +162,7 @@ let name = "John Doe";
 
 `const` 也在 ES6 中引入，用于声明常量，即不能重新赋值的变量。这里有一个例子：
 
-```
+```javascript
 const PI = 3.14159;
 ```
 
@@ -173,19 +170,19 @@ const PI = 3.14159;
 
 JavaScript 有一些基本数据类型，包括：
 
-- 1. 数字
-- 2. 字符串
-- 3. 布尔值
-- 4. 对象
-- 5. 空值
-- 6. 未定义
-- 7. 符号 (ES6 中新增)
+1. 数字
+2. 字符串
+3. 布尔值
+4. 对象
+5. 空值
+6. 未定义
+7. 符号 (ES6 中新增)
 
 ### 数字
 
 JavaScript 中的数字可以带小数点，也可以不带。例如：
 
-```
+```javascript
 let num1 = 5; // 不带小数
 let num2 = 5.5; // 带小数
 ```
@@ -194,7 +191,7 @@ let num2 = 5.5; // 带小数
 
 字符串是字符序列，必须用引号括起来。例如：
 
-```
+```javascript
 let str1 = "Hello"; // 双引号
 let str2 = 'Hello'; // 单引号
 ```
@@ -203,7 +200,7 @@ let str2 = 'Hello'; // 单引号
 
 布尔值只能是 `true` 或 `false`。例如：
 
-```
+```javascript
 let isReading = true;
 let isSleeping = false;
 ```
@@ -212,7 +209,7 @@ let isSleeping = false;
 
 对象是复合数据类型，允许组合其他数据类型。例如：
 
-```
+```javascript
 let person = {firstName: "John", lastName: "Doe", age: 30};
 ```
 
@@ -220,13 +217,13 @@ let person = {firstName: "John", lastName: "Doe", age: 30};
 
 在 JavaScript 中，`null` 表示“无”。它需要被赋值：
 
-```
+```javascript
 let nothing = null;
 ```
 
 `undefined` 表示一个变量尚未被赋值：
 
-```
+```javascript
 let something;
 console.log(something); // 输出: undefined
 ```
@@ -235,7 +232,7 @@ console.log(something); // 输出: undefined
 
 `Symbol` 数据类型在 ES6 中引入，它产生一个唯一的值：
 
-```
+```javascript
 let symbol1 = Symbol('symbol');
 ```
 
@@ -251,7 +248,12 @@ let symbol1 = Symbol('symbol');
 
 这里是一个函数的简单例子：
 
-
+```javascript
+function greet(name) {
+  console.log("Hello, " + name + "!");
+}
+greet("World"); // 输出: Hello, World!
+```
 
 ## 第五章：JavaScript 中的函数
 
@@ -261,7 +263,7 @@ let symbol1 = Symbol('symbol');
 
 在 JavaScript 中，你可以使用 `function` 关键字来定义一个函数，后跟函数的名称、括在括号 `( )` 内的参数列表，以及括在花括号 `{}` 内的定义函数的 JavaScript 语句。
 
-```
+```javascript
 function functionName(parameter1, parameter2, parameter3) {
     // code to be executed
 }
@@ -271,7 +273,7 @@ function functionName(parameter1, parameter2, parameter3) {
 
 要在 JavaScript 中调用一个函数，你只需使用函数名后跟括号 `()`。
 
-```
+```javascript
 functionName();
 ```
 
@@ -283,19 +285,17 @@ functionName();
 
 这是一个例子：
 
-```
+```javascript
 function greet(name) {
   console.log("Hello, " + name + "!");
 }
-```
 
-```
 greet("Alice"); // Outputs: Hello, Alice!
 ```
 
 在这个例子中，`name` 是参数，而 `"Alice"` 是实参。
 
-```
+```javascript
 function myFunction(x, y) {
   return x * y;
 }
@@ -311,7 +311,7 @@ console.log(myFunction(5, 6)); // Outputs: 30
 
 这是一个例子：
 
-```
+```javascript
 function square(number) {
   return number * number;
 }
@@ -321,7 +321,7 @@ console.log(square(5)); // Outputs: 25
 
 在这个例子中，`square` 是一个函数，它接受一个参数 `number`，并返回该数字的平方。
 
-```
+```javascript
 function myFunction(x, y) {
     return x * y;
 }
@@ -333,7 +333,7 @@ var z = myFunction(5, 6); // z equals to 30
 
 在 JavaScript 中，函数可以在声明之前被调用。这是因为函数声明会被提升到当前作用域的顶部。
 
-```
+```javascript
 console.log(myFunction(5, 6)); // Outputs: 30
 
 function myFunction(x, y) {
@@ -345,7 +345,7 @@ function myFunction(x, y) {
 
 在 JavaScript 中，函数也可以使用函数表达式来定义。这是一个例子：
 
-```
+```javascript
 var square = function(number) {
   return number * number;
 };
@@ -361,7 +361,7 @@ ES6 引入了箭头函数，这是一种使用 `=>` 语法编写函数的更简�
 
 这是一个例子：
 
-```
+```javascript
 const square = (number) => {
   return number * number;
 };
@@ -369,7 +369,7 @@ const square = (number) => {
 console.log(square(5)); // Outputs: 25
 ```
 
-```
+```javascript
 const myFunction = (x, y) => x * y;
 
 console.log(myFunction(5, 6)); // Outputs: 30
@@ -387,7 +387,7 @@ console.log(myFunction(5, 6)); // Outputs: 30
 
 在 JavaScript 中，数组是一种数据结构，可以在单个变量中存储多个值。这些值可以是任何数据类型，每个值都被赋予一个从 0 开始的唯一索引。让我们看一个例子：
 
-```
+```javascript
 let fruits = ["Apple", "Banana", "Cherry"];
 console.log(fruits[0]); // Output: "Apple"
 ```
@@ -398,30 +398,30 @@ console.log(fruits[0]); // Output: "Apple"
 
 JavaScript 中有几种方法可以让你操作数组。以下是一些例子：
 
--   `push()`：此方法用于在数组末尾添加新项目。
+- `push()`：此方法用于在数组末尾添加新项目。
 
-```
+```javascript
 fruits.push("Dragonfruit");
 console.log(fruits); // Output: ["Apple", "Banana", "Cherry", "Dragonfruit"]
 ```
 
--   `pop()`：此方法用于移除数组的最后一个项目。
+- `pop()`：此方法用于移除数组的最后一个项目。
 
-```
+```javascript
 fruits.pop();
 console.log(fruits); // Output: ["Apple", "Banana", "Cherry"]
 ```
 
--   `shift()`：此方法用于移除数组的第一个项目。
+- `shift()`：此方法用于移除数组的第一个项目。
 
-```
+```javascript
 fruits.shift();
 console.log(fruits); // Output: ["Banana", "Cherry"]
 ```
 
--   `unshift()`：此方法用于在数组开头添加新项目。
+- `unshift()`：此方法用于在数组开头添加新项目。
 
-```
+```javascript
 fruits.unshift("Apple");
 console.log(fruits); // Output: ["Apple", "Banana", "Cherry"]
 ```
@@ -434,7 +434,7 @@ console.log(fruits); // Output: ["Apple", "Banana", "Cherry"]
 
 `for` 循环是遍历数组的最基本方式。
 
-```
+```javascript
 for (let i = 0; i < fruits.length; i++) {
   console.log(fruits[i]);
 }
@@ -447,7 +447,7 @@ for (let i = 0; i < fruits.length; i++) {
 
 `for...of` 循环是遍历数组的一种更简单的语法。
 
-```
+```javascript
 for (let fruit of fruits) {
   console.log(fruit);
 }
@@ -460,7 +460,7 @@ for (let fruit of fruits) {
 
 `forEach()` 方法为每个数组元素执行一次提供的函数。
 
-```
+```javascript
 fruits.forEach(function(fruit) {
   console.log(fruit);
 });
@@ -481,7 +481,7 @@ fruits.forEach(function(fruit) {
 
 以下是我们如何在 JavaScript 中定义一个对象：
 
-```
+```javascript
 let car = {
   make: 'Toyota',
   model: 'Corolla',
@@ -501,7 +501,7 @@ JavaScript 中的类是一种函数，但我们不是使用 `function` 关键字
 
 让我们为我们的汽车对象创建一个类：
 
-```
+```javascript
 class Car {
   constructor(make, model, color) {
     this.make = make;
@@ -521,13 +521,11 @@ class Car {
 
 要从类创建一个新对象，我们使用 `new` 关键字：
 
-```
+```javascript
 let myCar = new Car('Toyota', 'Corolla', 'Blue');
 console.log(myCar.make); // Toyota
 myCar.start(); // Car is started
 ```
-
-
 
 ### JavaScript 中的继承
 
@@ -557,7 +555,7 @@ mySportsCar.turboStart(); // Turbo is started
 
 在本章中，我们已经介绍了 JavaScript 中面向对象编程的基础知识，包括对象、类和继承。在下一章中，我们将深入探讨面向对象编程，并探索更高级的概念，如封装和多态。
 
-## 第8章：JavaScript 中的循环
+## 第八章：JavaScript 中的循环
 
 循环是任何编程语言中的一个基本概念，JavaScript 也不例外。循环的目的是重复执行一段代码块，直到满足某个条件为止。
 
@@ -565,11 +563,11 @@ mySportsCar.turboStart(); // Turbo is started
 
 在 JavaScript 中，我们有几种类型的循环：
 
-- 1. **For 循环：** 这是最常见的循环，它重复执行直到指定的条件求值为 false。
-- 2. **While 循环：** 只要指定的条件求值为 true，while 循环就执行指令。
-- 3. **Do-while 循环：** 这类似于 while 循环，但它保证循环至少运行一次。
-- 4. **For-in 循环：** for-in 循环用于遍历对象的属性。
-- 5. **For-of 循环：** for-of 循环用于遍历可迭代对象，如数组、字符串等。
+1. **For 循环：** 这是最常见的循环，它重复执行直到指定的条件求值为 false。
+2. **While 循环：** 只要指定的条件求值为 true，while 循环就执行指令。
+3. **Do-while 循环：** 这类似于 while 循环，但它保证循环至少运行一次。
+4. **For-in 循环：** for-in 循环用于遍历对象的属性。
+5. **For-of 循环：** for-of 循环用于遍历可迭代对象，如数组、字符串等。
 
 ### For 循环
 
@@ -651,7 +649,7 @@ for (let i of arr) {
 
 在下一章中，我们将通过研究函数来继续探索 JavaScript。
 
-## 第9章：Async 和 Await
+## 第九章：Async 和 Await
 
 在本章中，我们将深入探讨 JavaScript 中的 Async 和 Await。这些是强大的工具，可以让你编写更易读、更易维护的异步代码。异步 JavaScript 对初学者来说可能有点难以理解，但别担心，我们会将其分解成更简单的术语，并使用大量示例，使其尽可能清晰。
 
@@ -713,15 +711,15 @@ myFunction()
 
 如你所见，Async 和 Await 可以使你的异步代码更具可读性且更易于理解。在下一章中，我们将深入探讨 Async 和 Await，涵盖错误处理以及如何在循环中使用 Async 和 Await 等主题。
 
-## 第10章：Javascript 中的面向对象编程
+## 第十章：JavaScript 中的面向对象编程
 
-在本章中，我们将深入探讨 Javascript 中面向对象编程（OOP）的概念和应用。在本章结束时，你应该理解 OOP 的原则以及如何在你的 Javascript 代码中实践它们。
+在本章中，我们将深入探讨 JavaScript 中面向对象编程（OOP）的概念和应用。在本章结束时，你应该理解 OOP 的原则以及如何在你的 JavaScript 代码中实践它们。
 
 ### 面向对象编程简介
 
 面向对象编程（OOP）是一种基于“对象”概念的编程范式。对象可以包含数据和代码：数据以属性（也称为属性或字段）的形式存在，代码以方法（与对象关联的函数）的形式存在。
 
-在 Javascript 中，几乎所有东西都是对象。布尔值、数字、字符串、日期、数学、正则表达式、数组、函数和对象都是对象。这使得 Javascript 成为一种强大的面向对象编程语言。
+在 JavaScript 中，几乎所有东西都是对象。布尔值、数字、字符串、日期、数学、正则表达式、数组、函数和对象都是对象。这使得 JavaScript 成为一种强大的面向对象编程语言。
 
 ```javascript
 var person = {
@@ -736,23 +734,31 @@ var person = {
 
 在上面的代码中，`person` 是一个对象。`firstName`、`lastName` 和 `id` 是属性，`fullName` 是一个方法。
 
-### Javascript 中的类
+### JavaScript 中的类
 
 类是创建对象的模板。它们将数据与代码封装在一起。因此，对象是类的一个具体实例；它包含实际的值而不是变量。
 
-在 Javascript 中，类使用 `class` 关键字声明。
+在 JavaScript 中，类使用 `class` 关键字声明。
 
+```javascript
 class Car {
+
   constructor(brand) {
+
     this.carName = brand;
+
   }
 
   present() {
+
     return 'I have a ' + this.carName;
+
   }
+
 }
 
 let myCar = new Car("Ford");
+```
 
 在上面的代码中，`Car` 是一个类。`constructor` 和 `present` 是 `Car` 类中的方法。`myCar` 是 `Car` 类的一个实例（对象）。
 
@@ -784,7 +790,7 @@ let myCar = new Model("Ford", "Mustang");
 
 接下来，我们将探讨 JavaScript 面向对象编程中一个更高级的概念——原型。
 
-# 第 11 章：Promise 与异步编程
+## 第 11 章：Promise 与异步编程
 
 在本章中，我们将讨论 JavaScript 中的 Promise 和异步编程。JavaScript 是一种单线程语言，但它可以通过回调函数、Promise 和 async/await 来执行非阻塞操作。我们可以使用这些特性来管理诸如读取文件、发起 HTTP 请求或查询数据库等异步操作。
 
@@ -792,9 +798,9 @@ let myCar = new Model("Ford", "Mustang");
 
 `Promise` 是一个代表异步操作最终完成或失败的对象。它作为操作结果的占位符。`Promise` 处于以下状态之一：
 
--   **等待中（Pending）**：`Promise` 的结果尚未确定。
--   **已完成（Fulfilled）**：操作成功完成。
--   **已失败（Rejected）**：操作失败。
+- **等待中（Pending）**：`Promise` 的结果尚未确定。
+- **已完成（Fulfilled）**：操作成功完成。
+- **已失败（Rejected）**：操作失败。
 
 这是一个创建 `Promise` 的简单示例：
 
@@ -833,9 +839,7 @@ async function foo() {
     console.log(e);
   }
 }
-```
 
-```javascript
 foo();
 ```
 
@@ -843,7 +847,7 @@ foo();
 
 在下一章中，我们将学习 JavaScript 中的事件驱动编程。
 
-# 第 12 章：JavaScript 中的 Promise
+## 第 12 章：JavaScript 中的 Promise
 
 JavaScript 中的 Promise 代表了一种现代、强大且灵活的方式来处理异步操作。它们为我们提供了一种以更具可读性和可维护性的方式组织代码的方法。在本章中，我们将深入探讨 Promise 以及如何在 JavaScript 中使用它们。
 
@@ -853,9 +857,9 @@ JavaScript 中的 Promise 代表了一种现代、强大且灵活的方式来处
 
 `Promise` 处于以下状态之一：
 
--   **等待中（Pending）**：初始状态，既未完成也未拒绝。
--   **已完成（Fulfilled）**：表示操作成功完成。
--   **已失败（Rejected）**：表示操作失败。
+- **等待中（Pending）**：初始状态，既未完成也未拒绝。
+- **已完成（Fulfilled）**：表示操作成功完成。
+- **已失败（Rejected）**：表示操作失败。
 
 这是一个简单的 `Promise` 示例：
 
@@ -938,7 +942,7 @@ cleanRoom().then(function(result) {
 
 本章仅仅触及了 Promise 的皮毛。它们是 JavaScript 的一个强大特性，理解它们对于掌握这门语言至关重要。
 
-# 第 13 章：Promise 与异步编程
+## 第 13 章：Promise 与异步编程
 
 在本章中，我们将深入探讨 JavaScript 中的 Promise 和异步编程。异步编程是 JavaScript 的一个关键方面，它使我们能够同时处理多个任务，而不会阻塞其他任务的执行。我们将探索 Promise 如何帮助我们更高效地管理异步操作。
 
@@ -946,9 +950,9 @@ cleanRoom().then(function(result) {
 
 `Promise` 是一个代表异步操作最终完成或失败的对象。它作为操作结果的占位符。`Promise` 始终处于以下状态之一：
 
--   **等待中（Pending）**：`Promise` 的结果尚未确定。
--   **已完成（Fulfilled）**：操作成功完成。
--   **已失败（Rejected）**：操作失败。
+- **等待中（Pending）**：`Promise` 的结果尚未确定。
+- **已完成（Fulfilled）**：操作成功完成。
+- **已失败（Rejected）**：操作失败。
 
 这是一个创建 Promise 的例子。
 
@@ -991,13 +995,11 @@ doSomething()
 .catch(failureCallback);
 ```
 
-
-
 ### 错误处理
 
 catch 方法是 then(null, rejection) 的简写形式。它用于捕获 Promise 中发生的错误。
 
-```
+```javascript
 promise.catch(function(reason) {
   console.log('在此处处理被拒绝的Promise（'+reason+'）');
 });
@@ -1005,7 +1007,7 @@ promise.catch(function(reason) {
 
 在下一章中，我们将探讨 JavaScript 中更高级的主题，例如闭包和立即调用函数表达式（IIFE）。随着你继续学习 JavaScript，请记住理解这些概念对于编写高效、可维护的代码至关重要。
 
-## 第14章：在 JavaScript 中使用 JSON
+## 第十四章：在 JavaScript 中使用 JSON
 
 JSON（JavaScript 对象表示法）是一种轻量级的数据交换格式，它易于人类阅读和编写，也易于机器解析和生成。JSON 是一种完全独立于语言的文本格式，但使用了 C 语言家族（包括 C、C++、C#、Java、JavaScript、Perl、Python 等许多语言）的程序员所熟悉的约定。
 
@@ -1017,7 +1019,7 @@ JSON 是一种用于存储和交换数据的语法。JSON 数据以键值对的�
 
 这是一个简单的 JSON 数据示例：
 
-```
+```javascript
 let user = {
     "name": "John Doe",
     "age": 30,
@@ -1031,7 +1033,7 @@ let user = {
 
 `JSON.parse()` 方法可以在 JavaScript 中用于将 JSON 字符串转换为 JavaScript 对象。下面是一个例子：
 
-```
+```javascript
 let json = '{"name":"John", "age":30, "city":"New York"}';
 let obj = JSON.parse(json);
 console.log(obj.name); // John
@@ -1043,7 +1045,7 @@ console.log(obj.name); // John
 
 `JSON.stringify()` 方法可以在 JavaScript 中用于将 JavaScript 对象转换为 JSON 字符串。下面是一个例子：
 
-```
+```javascript
 let obj = {name: "John", age: 30, city: "New York"};
 let json = JSON.stringify(obj);
 console.log(json); // {"name":"John","age":30,"city":"New York"}
@@ -1055,7 +1057,7 @@ console.log(json); // {"name":"John","age":30,"city":"New York"}
 
 JSON 也可以表示数组：
 
-```
+```javascript
 let users = [
   {"name": "John", "age": 30, "city": "New York"},
   {"name": "Jane", "age": 32, "city": "Chicago"},
@@ -1065,7 +1067,7 @@ let users = [
 
 我们可以使用 `JSON.parse()` 将这个 JSON 数组转换为 JavaScript 数组：
 
-```
+```javascript
 let json = '[{"name":"John", "age":30, "city":"New York"},{"name":"Jane", "age":32, "city":"Chicago"},{"name":"Mike", "age":23, "city":"Los Angeles"}]';
 let arr = JSON.parse(json);
 console.log(arr[1].name); // Jane
@@ -1073,7 +1075,7 @@ console.log(arr[1].name); // Jane
 
 在下一章中，我们将学习 JavaScript Promise，以及如何使用它们来处理 JavaScript 中的异步操作。
 
-## 第15章：JavaScript 高级主题
+## 第十五章：JavaScript 高级主题
 
 在前面的章节中，我们涵盖了 JavaScript 的基础知识，从变量和数据类型到函数和对象。在本章中，我们将深入探讨一些更高级的主题，包括闭包、Promise 和 `this` 的概念。
 
@@ -1083,7 +1085,7 @@ console.log(arr[1].name); // Jane
 
 这是一个闭包的示例：
 
-```
+```javascript
 function outerFunction(outerVariable) {
   return function innerFunction(innerVariable) {
     console.log('outerVariable:', outerVariable);
@@ -1103,7 +1105,7 @@ Promise 是在 JavaScript 中处理异步操作的一种方式。Promise 是一�
 
 以下是创建一个 promise 的示例：
 
-```
+```javascript
 let promise = new Promise(function(resolve, reject) {
   // 当 promise 被构造时，该函数会自动执行
 
@@ -1123,7 +1125,7 @@ promise.then(alert); // 1秒后显示 "done"
 
 这是一个简单的例子：
 
-```
+```javascript
 let myObject = {
   property: 'I am a JavaScript object',
   myMethod: function() {
@@ -1138,7 +1140,7 @@ myObject.myMethod(); // 输出：I am a JavaScript object
 
 这些只是 JavaScript 中的一些高级主题。随着你不断学习和实践，你会对这些概念更加熟悉，并开始看到它们在实际编码场景中的应用。
 
-## 第16章：在 JavaScript 中处理错误和异常
+## 第十六章：在 JavaScript 中处理错误和异常
 
 在本章中，我们将深入探讨 JavaScript 中处理错误和异常的主题。在编码过程中，错误是不可避免的。即使是最有经验的开发者也会遇到代码中的错误和 bug。幸运的是，JavaScript 提供了一套工具，可以帮助我们在错误发生时管理和处理它们。
 
@@ -1148,7 +1150,7 @@ myObject.myMethod(); // 输出：I am a JavaScript object
 
 这是一个错误发生时的基本示例：
 
-```
+```javascript
 console.log(x);
 ```
 
@@ -1158,7 +1160,7 @@ console.log(x);
 
 JavaScript 提供了 `try/catch/finally` 语句，可用于捕获和处理错误。以下是基本语法：
 
-```
+```javascript
 try {
   // 尝试执行的代码
 } catch(error) {
@@ -1170,7 +1172,7 @@ try {
 
 这是一个例子：
 
-```
+```javascript
 try {
     console.log(x);
 } catch(error) {
@@ -1188,13 +1190,13 @@ try {
 
 这是通过使用 `throw` 语句完成的。以下是基本语法：
 
-```
+```javascript
 throw new Error("这是一条自定义错误消息");
 ```
 
 这是一个例子：
 
-```
+```javascript
 try {
     throw new Error("这是一条自定义错误消息");
 } catch(error) {
@@ -1208,9 +1210,7 @@ try {
 
 错误处理是任何编程语言（包括 JavaScript）的基本组成部分。通过理解和使用 JavaScript 提供的工具，例如 `try/catch/finally` 语句和 `throw` 语句，你可以有效地管理和处理代码中的错误。
 
-
-
-## 第17章：JavaScript中的错误处理
+## 第十七章：JavaScript中的错误处理
 
 在任何编程语言中，错误都不可避免。它们可能因为代码不正确而发生，也可能因为超出你控制范围的事件（如API请求失败）而发生。理解如何处理这些错误将使你的程序更加健壮和可靠。本章将深入探讨JavaScript如何处理错误，以及你如何在代码中使用错误处理。
 
@@ -1218,7 +1218,7 @@ try {
 
 在JavaScript中，当发生错误时会创建一个错误对象。该对象包含两个属性：`name`和`message`。`name`属性告诉你错误的类型，`message`属性提供错误的描述。
 
-```
+```javascript
 try {
   // 可能会抛出错误的代码
 } catch (error) {
@@ -1231,7 +1231,7 @@ try {
 
 JavaScript提供了`try...catch`语句，允许你“尝试”一段代码并“捕获”发生的任何错误。
 
-```
+```javascript
 try {
   // 可能会抛出错误的代码
 } catch (error) {
@@ -1241,7 +1241,7 @@ try {
 
 你也可以在`catch`块之后添加一个`finally`块。`finally`块中的代码无论是否发生错误都会运行。
 
-```
+```javascript
 try {
   // 可能会抛出错误的代码
 } catch (error) {
@@ -1255,14 +1255,14 @@ try {
 
 除了JavaScript提供的内置错误之外，你还可以使用`throw`关键字创建自己的自定义错误。
 
-```
+```javascript
 throw 'Error2';  // 字符串类型
 throw 42;    // 数字类型
 throw true;  // 布尔类型
 throw {toString: function() { return "I'm an object!"; } };
 ```
 
-```
+```javascript
 // 创建一个带有自定义消息的Error类型
 throw new Error('The message');
 ```
@@ -1271,7 +1271,7 @@ throw new Error('The message');
 
 JavaScript有几个内置的错误构造函数，包括`Error()`、`RangeError()`、`TypeError()`和`SyntaxError()`。这些错误中的每一个都有特定的用例，它们都继承自基础的`Error`构造函数。
 
-```
+```javascript
 throw new Error('This is a generic error');
 throw new TypeError('This error indicates a type mismatch');
 throw new RangeError('This error indicates a numeric variable has exceeded its allowed range');
@@ -1279,7 +1279,7 @@ throw new RangeError('This error indicates a numeric variable has exceeded its a
 
 在本章中，我们介绍了JavaScript中错误处理的基础知识，包括`try...catch`和`finally`块、抛出错误以及内置错误类型。理解这些概念对于编写可靠、健壮的JavaScript代码至关重要。
 
-## 第18章：库和API
+## 第十八章：库和API
 
 在本章中，我们将探索JavaScript库和API（应用程序编程接口）的强大功能。库是你可以用来简化编码过程的预写代码集合。而API是一组规则和协议，使软件应用程序能够相互通信。
 
@@ -1291,7 +1291,7 @@ JavaScript库是节省时间和简化编码过程的好方法。它们本质上�
 
 最受欢迎的JavaScript库之一是jQuery。它简化了遍历HTML文档、处理事件、创建动画和执行Ajax交互的过程。
 
-```
+```javascript
 // 使用jQuery更改按钮的文本
 $('#myButton').click(function() {
     $(this).text('You clicked me!');
@@ -1302,7 +1302,7 @@ $('#myButton').click(function() {
 
 React是一个用于构建用户界面的JavaScript库，主要用于单页应用程序。它用于处理Web和移动应用程序中的视图层。React允许你为应用程序中的每个状态设计简单的视图。
 
-```
+```javascript
 // 一个简单的React组件
 class HelloMessage extends React.Component {
   render() {
@@ -1326,7 +1326,7 @@ API（应用程序编程接口）是一组允许不同软件应用程序相互�
 
 例如，你可以使用Fetch API从远程服务器检索数据。
 
-```
+```javascript
 // 使用Fetch API从远程服务器获取数据
 fetch('https://api.github.com/users/github')
   .then(response => response.json())
@@ -1338,7 +1338,7 @@ fetch('https://api.github.com/users/github')
 
 总之，库和API是强大的工具，可以极大地增强你的JavaScript程序。它们可以为你节省时间，简化你的代码，并使你的应用程序能够与其他程序或服务进行交互。
 
-## 第19章：在JavaScript中处理JSON
+## 第十九章：在JavaScript中处理JSON
 
 JavaScript对象表示法，即JSON，是一种常见的数据格式，在数据操作和通信中有多种用途。作为JavaScript的原生格式，在JavaScript中处理JSON数据自然轻松。在本章中，我们将探讨如何解析JSON数据、如何将JavaScript对象转换为字符串，以及如何处理从API获取的JSON数据。
 
@@ -1348,7 +1348,7 @@ JSON代表JavaScript对象表示法。它是一种标准的数据交换格式，
 
 一个JSON对象的示例：
 
-```
+```javascript
 const person = {
   "name": "John Doe",
   "age": 30,
@@ -1360,7 +1360,7 @@ const person = {
 
 要将JSON文本转换为JavaScript对象，我们使用`JSON.parse()`方法。
 
-```
+```javascript
 const jsonString = '{"name":"John Doe","age":30,"city":"New York"}';
 const jsonObject = JSON.parse(jsonString);
 console.log(jsonObject.name); // 输出: "John Doe"
@@ -1370,7 +1370,7 @@ console.log(jsonObject.name); // 输出: "John Doe"
 
 将JavaScript对象编码为JSON文本的过程称为字符串化。这是通过`JSON.stringify()`方法完成的。
 
-```
+```javascript
 const person = {
   name: 'John Doe',
   age: 30,
@@ -1384,7 +1384,7 @@ console.log(jsonString); // 输出: '{"name":"John Doe","age":30,"city":"New Yor
 
 通常，你将处理从Web服务器获取的JSON数据。为此，我们可以使用`fetch()`方法，它返回一个Promise。
 
-```
+```javascript
 fetch('https://api.example.com/data')
   .then(response => response.json()) // 将数据解析为JSON
   .then(data => console.log(data)) // 处理JSON数据
@@ -1397,7 +1397,7 @@ fetch('https://api.example.com/data')
 
 本章向你介绍了在JavaScript中处理JSON的基础知识。随着你继续JavaScript的学习之旅，你会发现无论你是向API发送数据，还是接收和处理数据，JSON都是Web开发中不可或缺的一部分。
 
-## 第20章：JavaScript设计模式
+## 第二十章：JavaScript设计模式
 
 设计模式是针对软件设计中常见问题的可重用解决方案。它们是经验丰富的开发者随着时间的推移学到的最佳实践，现在提供给经验较少的开发者。学习设计模式是编写更好JavaScript代码的关键一步。在本章中，我们将讨论JavaScript中一些最常用的设计模式。
 
@@ -1407,9 +1407,7 @@ fetch('https://api.example.com/data')
 
 以下是模块模式的一个示例：
 
-
-
-```
+```javascript
 var myModule = (function() {
   var privateVar = 'I am private...';
   var publicVar = 'I am public!';
@@ -1434,11 +1432,11 @@ myModule.publicMethod(); // Accessed private method
 
 ### 原型模式
 
-JavaScript 是一门基于原型的语言，JavaScript 中的每个对象都有一个隐藏的 [[Prototype]] 属性，用于实现继承。
+JavaScript 是一门基于原型的语言，JavaScript 中的每个对象都有一个隐藏的 `[[Prototype]]` 属性，用于实现继承。
 
 以下是原型模式的示例：
 
-```
+```javascript
 function Person(firstName, lastName) {
   this.firstName = firstName;
   this.lastName = lastName;
@@ -1458,7 +1456,7 @@ console.log(person1.getFullName()); // John Doe
 
 以下是观察者模式的示例：
 
-```
+```javascript
 var Subject = function() {
   this.observers = [];
 

@@ -1,19 +1,5 @@
-# 13.4 npm 模块管理器
 
-*   简介
-*   npm info
-*   npm search
-*   npm list
-*   npm install
-*   语义版本（SemVer）
-*   npm update，npm uninstall
-*   npm shrinkwrap
-*   npm prune
-*   npm run
-*   npm link
-*   npm publish
-*   npm version
-*   参考链接
+# 13.4 npm 模块管理器
 
 ## 简介
 
@@ -141,6 +127,7 @@ $ npm install sax@">=0.1.0 <0.2.0"
 install 命令可以使用不同参数，指定所安装的模块属于哪一种性质的依赖关系，即出现在 packages.json 文件的哪一项中。
 
 *   --save：模块名将被添加到 dependencies，可以简化为参数`-S`。
+
 *   --save-dev: 模块名将被添加到 devDependencies，可以简化为参数`-D`。
 
 ```js
@@ -176,7 +163,9 @@ npm 采用”语义版本“管理软件包。所谓语义版本，就是指版�
 npm 允许使用特殊符号，指定所要使用的版本范围，假定当前版本是 1.0.4。
 
 *   只接受补丁包：1.0 或者 1.0.x 或者 ~1.0.4
+
 *   只接受小版本和补丁包：1 或者 1.x 或者 ¹.0.4
+
 *   接受所有更新：* or x
 
 对于~和^，要注意区分。前者表示接受当前小版本（如果省略小版本号，则是当前大版本）的最新补丁包，后者表示接受当前大版本的最新小版本和最新补丁包。
@@ -325,7 +314,7 @@ npm start
 npm test
 ```
 
-如果希望一个操作的输出，是另一个操作的输入，可以借用 Linux 系统的管道命令，将两个操作连在一起。
+如果希望一个操作的输出，是另一个操作的输入，可以借用 Linux 系统的管道命将两个操作连在一起。
 
 ```js
 "build-js": "browserify browser/main.js | uglifyjs -mc > static/bundle.js"
@@ -367,7 +356,7 @@ browserify browser/main.js | uglifyjs -mc > static/bundle.js
 "build-js": "bin/build.sh"
 ```
 
-`npm run`为每条命令提供了 pre 和 post 两个钩子（hook）。以`npm run lint`为例，执行这条命令之前，npm 会先查看有没有定义 prelint 和 postlint 两个钩子，如果有的话，就会先执行`npm run prelint`，然后执行`npm run lint`，最后执行`npm run postlint`。所有命令都是这样，包括`npm test`（即实际存在`npm run pretest`、`npm run test`、`npm run posttest`三条命令）。如果执行过程出错，就不会执行排在后面的命令，即如果 pretest 命令执行出错，就不会接着执行 test 和 posttest 命令。不能在 pre 命令之前再加 pre，即 prepretest 命令不起作用。另外，还可以为一些内部命令指定 pre 和 post 的钩子：install、uninstall、publish、update。
+`npm run`为每条命令提供了 pre 和 post 两个钩子（hook）。以`npm run lint`为例，执行这条命令之前，npm 会先查看有没有定义 prelint 和 postlint 两个钩子，如果有的话，就会先执行`npm run prelint`，然后执行`npm run lint`，最后执行`npm run postlint`。所有命令都是这样，包括`npm test`（即实际存在`npm run pretest`、`npm run test`、`npm run posttest`三条命令）。如果执行过程出错，就不会执行排在后面的命令，即如果 pretest 命令执行出错，就不会接着执行 test 和 posttest 命令。不能在 pre 命令之前再加 pre，即 prepretest 命令不起作用。另外，还可以为一些内部命指定 pre 和 post 的钩子：install、uninstall、publish、update。
 
 ```js
 "scripts": {
@@ -409,7 +398,7 @@ src/myModule$ npm link
 /usr/local/lib/node_modules/myModule -> src/myModule
 ```
 
-然后，切换到你需要放置该模块的项目目录，再次运行 npm link 命令，并指定模块名。
+然后，切换到你需要放置该模块的项目目录，再次运行 npm link 命令，并指指定模块名。
 
 ```js
 src/myProject$ npm link myModule
@@ -515,7 +504,9 @@ $ npm version <update_type> -m "<message>"
 `npm version`命令的 update_type 参数有三个选项：patch、minor、major。
 
 *   `npm version patch`增加一位补丁号（比如 1.1.1 -> 1.1.2）
+
 *   `npm version minor`增加一位小版本号（比如 1.1.1 -> 1.2.0）
+
 *   `npm version major`增加一位大版本号（比如 1.1.1 -> 2.0.0）。
 
 下面是一个例子。
@@ -533,5 +524,7 @@ $ npm version patch -m "Version %s - xxxxxx"
 ## 参考链接
 
 *   James Halliday, [task automation with npm run](http://substack.net/task_automation_with_npm_run): npm run 命令（package.json 文件的 script 属性）的用法
+
 *   Keith Cirkel, [How to Use npm as a Build Tool](http://blog.keithcirkel.co.uk/how-to-use-npm-as-a-build-tool/)
+
 *   justjs, [npm link: developing your own npm modules without tears](http://justjs.com/posts/npm-link-developing-your-own-npm-modules-without-tears)

@@ -1,6 +1,5 @@
-# 第六章：模板字符串
 
-# 模板字符串
+# 第六章：模板字符串
 
 模板字符串仅仅勉强值得拥有自己的章节。它们既不是一种类型，也不是 TypeScript 提供的支持面向对象编程的任何构建块之一。然而，它们非常有用。本书中接下来的大部分示例都会使用它们。
 
@@ -10,17 +9,17 @@
 
 以下是一个示例：
 
-```
+```typescript
 const userName: string = "Paul";
 const helloTemplate: string = `Hello, ${userName}!`;
 console.log(helloTemplate); 
 ```
 
-在运行时，代码将`userName`替换为 userName 的实际值。
+在运行时，代码将`userName`替换为`userName`的实际值。
 
 这里有另一个示例，它将模板字符串作为参数传递给`console.log()`。
 
-```
+```typescript
 function getRandomName() {
     const names: string[] = ["Paul","Aidan","Kelly", "Amina"];
     return names[Math.floor((Math.random() * 4));
@@ -32,7 +31,7 @@ console.log(`Hello, ${getRandomName()}`!);
 
 这是一个很好的快捷方式，特别是当您将其与普通 JS 等效对比时：
 
-```
+```typescript
 function getRandomName(): string {
     var names: string[] = ["Paul","Aidan","Kelly", "Amina"];
     return names[Math.floor((Math.random() * 4));
@@ -42,7 +41,7 @@ console.log("Hello, " + getRandomName() + "!");
 
 您可以使用任意数量的占位符：
 
-```
+```typescript
 const name: string = "Paul";
 const graduatedYear: number = 1987;
 

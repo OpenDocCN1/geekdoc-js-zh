@@ -1,145 +1,176 @@
+
 # JavaScript 精通终极指南：初学者之路
-
-
 
 ![](img/cover.jpg)
 
-
-
-
-
 # 第 2 章：循环、数组与对象的实战
+
 ## 2.1 JavaScript 中的循环
+
 ### 2.1.1 For 循环
+
 ### 2.1.2 While 循环
+
 ### 2.1.3 Do-While 循环
+
 ## 2.2 JavaScript 中的数组
+
 ### 2.2.1 创建数组
+
 ### 2.2.2 方法
+
 ### 2.2.3 遍历数组
+
 ## 2.3 JavaScript 中的对象
+
 ### 2.3.1 创建对象
+
 ### 2.3.2 访问属性
+
 ### 2.3.3 修改属性
+
 ### 2.3.4 遍历对象
+
 ## 2.4 总结
 
 # 第 3 章：进阶 JavaScript 概念：函数、作用域与闭包
+
 ## 3.1 深入理解函数
+
 ### 3.1.1 定义函数
-### 函数声明
-### 函数表达式
-### 箭头函数
+
+#### 函数声明
+
+#### 函数表达式
+
+#### 箭头函数
+
 ## 3.2 JavaScript 中的作用域
+
 ### 3.2.1 全局作用域
+
 ### 3.2.2 局部作用域
+
 ### 3.2.3 块级作用域
+
 ## 3.3 JavaScript 中的闭包
+
 ### 3.3.1 理解闭包
+
 ### 3.3.2 闭包的实际用途
+
 ## 3.4 JavaScript 中的 `this` 关键字
+
 ### 3.4.1 全局上下文
+
 ### 3.4.2 对象下文
+
 ### 3.4.3 构造函数
+
 ## 3.5 总结
 
 # 第 4 章：在 JavaScript 中操作 DOM（文档对象模型）
+
 ## 4.1 理解 DOM
+
 ## 4.2 访问 DOM 元素
+
 ### 4.2.1 `getElementById`
+
 ### 4.2.2 `getElementsByClassName`
+
 ### 4.2.3 `querySelector` 和 `querySelectorAll`
+
 ## 4.3 操作元素
+
 ### 4.3.1 修改内容
+
 ### 4.3.2 修改样式
+
 ### 4.3.3 修改属性
+
 ## 4.4 创建与删除元素
+
 ### 4.4.1 创建元素
+
 ### 4.4.2 移除元素
+
 ## 4.5 在 DOM 中处理事件
+
 ### 4.5.1 添加事件监听器
+
 ### 4.5.2 事件对象
+
 ### 4.5.3 移除事件监听器
+
 ## 4.6 总结
 
 # 第 5 章：异步 JavaScript 与 Promises
+
 ## 5.1 什么是异步编程？
+
 ## 5.2 JavaScript 回调函数简介
+
 ### 示例：使用回调函数
+
 ## 5.3 理解 Promises
+
 ### 创建一个 Promise
+
 ### 示例：使用 Promises
+
 ## 5.4 Promise 链式
+
 ### 示例：Promise 链式
+
 ## 5.5 Async/Await
+
 ### 5.5.1 `async` 函数
+
 ### 示例：使用 `async` 和 `await`
+
 ## 5.6 使用 `try` 和 `catch` 处理错误
 
-
-
-
-
-# 示例：使用 try 和 catch 处理错误
+### 示例：使用 `try` 和 `catch` 处理错误
 
 ## 5.7 处理多个 Promise
 
-### 5.7.1 Promise.all()
+### 5.7.1 `Promise.all()`
 
-### 5.7.2 Promise.race()
+### 5.7.2 `Promise.race()`
 
 ## 5.8 结论
 
-# 第 6 章：面向对象的 JavaScript (OOP)
+# 第 6 章：面向对象的 JavaScript（OOP）
 
 ## 6.1 什么是面向对象编程？
 
 ## 6.2 理解 JavaScript 中的对象
 
 ### 创建对象
+
 ### 示例：使用字面量语法创建对象
 
-## 6.3 在 JavaScript 中使用类 (Classes)
-
-### 定义类
-### 示例：定义类
-
-## 6.4 JavaScript 中的继承
-
-### 创建子类
-### 示例：JavaScript 中的继承
-
-## 6.5 封装与私有属性
-
-### 使用私有属性
-### 示例：使用私有字段
-
-## 6.6 JavaScript 中的多态
-
-### 示例：方法重写
-
-## 6.7 结论
-
-## 6.2 理解 JavaScript 中的对象
-
-### 创建对象
-### 示例：使用字面量语法创建对象
 ### 示例：修改对象
 
-## 6.3 在 JavaScript 中使用类 (Classes)
+## 6.3 在 JavaScript 中使用类（Classes）
 
 ### 定义类
+
 ### 示例：定义类
+
 ### 为类添加方法
 
 ## 6.4 JavaScript 中的继承
 
 ### 创建子类
+
 ### 示例：JavaScript 中的继承
 
 ## 6.5 封装与私有属性
 
 ### 使用私有属性
+
 ### 示例：使用私有字段
 
 ## 6.6 JavaScript 中的多态
@@ -153,109 +184,151 @@
 # 第 7 章：异步 JavaScript 与 Promises
 
 ## 7.1 什么是异步 JavaScript？
-### 事件循环 (Event Loop)
 
-## 7.2 回调函数 (Callbacks)
+### 事件循环（Event Loop）
+
+## 7.2 回调函数（Callbacks）
+
 ### 示例：使用回调函数
-### 回调地狱 (Callback Hell)
+
+### 回调地狱（Callback Hell）
 
 ## 7.3 Promises
+
 ### Promise 的状态
+
 ### 示例：使用 Promise
+
 ### Promise 链式调用
 
 ## 7.4 Async/Await
+
 ### 示例：使用 Async/Await
+
 ### 使用 Async/Await 处理错误
 
-### 7.5 将 Async/Await 与其他函数结合
+## 7.5 将 Async/Await 与其他函数结合
+
 ### 示例：结合 Async/Await 使用 `fetch()`
+
 ### 示例：在循环中使用 Async/Await
 
 ## 7.6 结论
+
 ### 额外说明：
 
 # 第 8 章：使用 API 和 Fetch
 
 ## 8.1 什么是 API？
 
-### 8.2 `fetch()` API
+## 8.2 `fetch()` API
+
 ### `fetch()` 的基础用法
+
 ### 处理响应
+
 ### 示例：检查响应状态
 
-### 8.3 发起 POST 请求
+## 8.3 发起 POST 请求
+
 ### 示例：通过 POST 请求发送数据
 
 ## 8.4 处理 API 请求中的错误
+
 ### 示例：处理网络错误
 
-### 8.5 处理 JSON
+## 8.5 处理 JSON
+
 ### 示例：解析 JSON
 
-### 8.6 在 `fetch()` 中使用 async/await
+## 8.6 在 `fetch()` 中使用 async/await
+
 ### 示例：在 `fetch()` 中使用 async/await
 
 ## 8.7 在循环中进行 API 调用
+
 ### 示例：获取多个资源
 
 ## 8.8 结论
+
 ### 额外说明：
 
-## 第 9 章：处理异步 JavaScript
+# 第 9 章：处理异步 JavaScript
 
 ## 9.1 什么是异步 JavaScript？
 
-### 9.2 理解回调函数
+## 9.2 理解回调函数
+
 ### 示例：回调函数的基本用法
+
 ### 回调地狱
 
 ## 9.3 理解 Promises
+
 ### 创建 Promise
+
 ### 处理 Promise
+
 ### Promise 链式调用
 
 ## 9.4 Async/Await 语法
+
 ### `async` 关键字
+
 ### `await` 关键字
+
 ### 使用 `async/await` 处理错误
 
 ## 9.5 实际示例：从多个 API 获取数据
+
 ### 示例：使用 `async/await` 从多个 API 获取数据
 
-### 9.6 结论
-###  额外说明：
+## 9.6 结论
 
-## 结论：掌握用于现代 Web 的 JavaScript
+### 额外说明：
 
-### 10.1 学习回顾
+# 结论：掌握用于现代 Web 的 JavaScript
 
-### 10.2 前景：你 JavaScript 之旅的下一步是什么？
+## 10.1 学习回顾
+
+## 10.2 前景：你 JavaScript 之旅的下一步是什么？
+
 ### 10.2.1 进阶 JavaScript 话题
+
 ### 10.2.2 实践与项目构建
 
-### 10.3 为什么 JavaScript 很重要
+## 10.3 为什么 JavaScript 很重要
 
-### 10.4 总结
+## 10.4 总结
 
 ## 感谢
 
 # 附录
-### 附录 A：JavaScript 速查表
+
+## 附录 A：JavaScript 速查表
+
 ### 变量与常量
+
 ### 数据类型
+
 ### 函数
 
 ## 附录 B：常见 JavaScript 错误与调试技巧
+
 ### 常见错误
+
 ### 调试技巧
 
 ## 附录 C：JavaScript 资源
+
 ### 文档与指南
+
 ### 书籍
+
 ### 在线课程
 
 ## 附录 D：JavaScript 最佳实践
+
 1. 使用一致的命名规范
 2. 避免全局变量
 3. 保持函数短小且专注
@@ -263,9 +336,6 @@
 5. 为代码编写注释
 
 ## 附录 E：JavaScript 术语表
-
-
-
 
 在本书中，你将接触 JavaScript 的基础概念和核心原理，使你能够编写自己的脚本并操作网页内容。这种方法侧重于实践和实用，通过清晰的解释和真实世界的示例帮助你理解 JavaScript 的工作原理。
 
@@ -279,13 +349,10 @@ JavaScript 已经从一个简单的脚本工具成长变为功能完全、多用
 
 在本书中，你将学习：
 
-● JavaScript 核心概念：你将熟悉语法、数据类型、操作符和控制结构，这些是任何 JavaScript 程序的基石。
-
-● DOM 操作：你将发现 JavaScript 如何与网页结构交互，以及你如何使用它来动态更改内容、样式并响应用户交互。
-
-● 函数：你将学习如何定义和使用函数，这是有效组织和复用代码的关键。
-
-● 高级主题：随着学习的深入，你将探索更高级的概念，如回调（callbacks）、承诺（promises）和 API，让你能够应对更复杂的编程挑战。
+- JavaScript 核心概念：你将熟悉语法、数据类型、操作符和控制结构，这些是任何 JavaScript 程序的基石。
+- DOM 操作：你将发现 JavaScript 如何与网页结构交互，以及你如何使用它来动态更改内容、样式并响应用户交互。
+- 函数：你将学习如何定义和使用函数，这是有效组织和复用代码的关键。
+- 高级主题：随着学习的深入，你将探索更高级的概念，如回调（callbacks）、承诺（promises）和 API，让你能够应对更复杂的编程挑战。
 
 每一章将引入一个新概念，从最基础开始逐步过渡到高级主题。你还会在书中发现实用的练习和示例，让你将所学知识应用到真实场景中。
 
@@ -305,8 +372,6 @@ JavaScript 已经从一个简单的脚本工具成长变为功能完全、多用
 
 欢迎来到你 JavaScript 之旅的第一章！在本章中，我们将设置编写和运行 JavaScript 代码所需的开发环境。我们还将向你介绍 JavaScript 语法和结构的基础，以便你开始编写第一行代码。
 
-***
-
 ## 1.1 设置你的开发环境
 
 在开始编码之前，你需要设置一个开发环境。幸运的是，JavaScript 对初学者非常友好，你不需要任何复杂的软件即可开始。你只需要文本编辑器和一个浏览器。JavaScript 直接在浏览器中运行，所以你可以立即测试你的代码。
@@ -315,13 +380,11 @@ JavaScript 已经从一个简单的脚本工具成长变为功能完全、多用
 
 文本编辑器是你编写 JavaScript 代码的地方。一些 JavaScript 最流行的文本编辑器有：
 
-● Visual Studio Code (VSCode)：一个免费的开源编辑器，对 JavaScript 有极佳的支持。它带有语法高亮、代码建议和用于扩展功能的插件等特性。
+- Visual Studio Code（VSCode）：一个免费的开源编辑器，对 JavaScript 有极佳的支持。它带有语法高亮、代码建议和用于扩展功能的插件等特性。
+- Sublime Text：一个轻量、快速且易于使用的文本编辑器。
+- Atom：另一个免费的开源编辑器，具有可定制性和用户友好的界面。
 
-● Sublime Text：一个轻量、快速且易于使用的文本编辑器。
-
-● Atom：另一个免费的开源编辑器，具有可定制性和用户友好的界面。
-
-考虑到本书，我们将使用 Visual Studio Code (VSCode)，因为它在行业内被广泛使用，并为 JavaScript 开发提供了许多实用的功能。
+考虑到本书，我们将使用 Visual Studio Code（VSCode），因为它在行业内被广泛使用，并为 JavaScript 开发提供了许多实用的功能。
 
 一旦安装了文本编辑器，打开它并创建一个新文件。以 `.html` 扩展保存文件，例如 `index.html`。该文件将同时包含你的 HTML（用于构建页面）和 JavaScript（用于添加交互性）。
 
@@ -353,8 +416,6 @@ console.log("Hello from JavaScript!");
 
 `<script>` 标签是你编写 JavaScript 代码的地方。`console.log()` 函数是 JavaScript 中基础的命令之一——它将消息打印到控制台。
 
-***
-
 ## 1.2 语法和结构
 
 现在你已经设置好了环境，让我们深入学习 JavaScript 的语法基础。在开始编写代码之前，理解结构至关重要。
@@ -363,9 +424,9 @@ console.log("Hello from JavaScript!");
 
 在 JavaScript 中，变量用于存储数据。你可以将变量看作存储不同类型数据的容器。声明变量有三种：
 
-● `var`：声明变量的老方法（现代开发中不常用）。
-● `let`：声明变量的现代方式，允许块作用域变量。
-● `const`：用于声明不可重新赋值的变量。
+- `var`：声明变量的老方法（现代开发中不常用）。
+- `let`：声明变量的现代方式，允许块作用域变量。
+- `const`：用于声明不可重新赋值的变量。
 
 你可以这样声明变量：
 
@@ -378,13 +439,13 @@ const myConstant = "Hello!";
 
 JavaScript 支持多种数据类型。常见的有：
 
-● Number（数字）：表示数值。
-● String（字符串）：表示文本。
-● Boolean（布尔）：表示真或假的值。
-● Object（对象）：用于以键值对的形式存储数据。
-● Array（数组）：有序的值集合。
-● null：表示值的缺失。
-● undefined（未定义）：表示未赋值的变量。
+- Number（数字）：表示数值。
+- String（字符串）：表示文本。
+- Boolean（布尔）：表示真或假的值。
+- Object（对象）：用于以键值对的形式存储数据。
+- Array（数组）：有序的值集合。
+- `null`：表示值的缺失。
+- `undefined`（未定义）：表示未赋值的变量。
 
 例如：
 
@@ -404,18 +465,13 @@ let colors = ["red", "green", "blue"]; // Array
 
 这些运算符用于执行数学计算。基础算术运算符包括：
 
-● `+`（加法）：将两个值相加。
-● `-`（减法）：从一个值中减去另一个。
-● `*`（乘法）：将两个值相乘。
-● `/`（除法）：用一个值除以另一个值。
-
-
-
-
-
-- `%` (取模运算符): 返回一个数值除以另一个数值后的余。
-- `++` (自增运算符): 将一个值增加一。
-- `—` (自减运算符): 将一个值减一。
+- `+`（加法）：将两个值相加。
+- `-`（减法）：从一个值中减去另一个。
+- `*`（乘法）：将两个值相乘。
+- `/`（除法）：用一个值除以另一个值。
+- `%`（取模运算符）：返回一个数值除以另一个数值后的余。
+- `++`（自增运算符）：将一个值增加一。
+- `—`（自减运算符）：将一个值减一。
 
 示例：
 
@@ -433,14 +489,14 @@ let remainder = x % y; // 0
 
 这些运算符用于比较两个值并返回一个布尔值（true 或 false）。
 
-- `==` (等于): 如果两个值相等，则返回 true。
-- `===` (严格相等): 如果两个值及其类型相等，返回 true。
-- `!=` (不等于): 如果两个值不相等，则返回 true。
-- `!==` (严格不等于): 如果两个值或它们的类型不相等，则返回 true。
-- `>` (大于): 如果左侧的值大于右侧，则返回 true。
-- `<` (小于): 如果左侧的值小于右侧，则返回 true。
-- `>=` (大于等于): 如果左侧的值大于或等于右侧，则返回 true。
-- `<=` (小于等于): 如果左侧的值小于或等于右侧，则返回 true。
+- `==`（等于）：如果两个值相等，则返回 true。
+- `===`（严格相等）：如果两个值及其类型相等，返回 true。
+- `!=`（不等于）：如果两个值不相等，则返回 true。
+- `!==`（严格不等于）：如果两个值或它们的类型不相等，则返回 true。
+- `>`（大于）：如果左侧的值大于右侧，则返回 true。
+- `<`（小于）：如果左侧的值小于右侧，则返回 true。
+- `>=`（大于等于）：如果左侧的值大于或等于右侧，则返回 true。
+- `<=`（小于等于）：如果左侧的值小于或等于右侧，则返回 true。
 
 示例：
 
@@ -456,9 +512,9 @@ let isGreater = a > b; // true
 
 逻辑运算符用于组合多个条件或表达式：
 
-- `&&` (逻辑与): 如果两个条件都为真，则返回 true。
-- `||` (逻辑或): 如果至少有一个条件为真，则返回 true。
-- `!` (逻辑非): 反转布尔值。
+- `&&`（逻辑与）：如果两个条件都为真，则返回 true。
+- `||`（逻辑或）：如果至少有一个条件为真，则返回 true。
+- `!`（逻辑非）：反转布尔值。
 
 示例：
 
@@ -470,9 +526,9 @@ let result2 = x || y; // true (至少有一个为真)
 let result3 = !x; // false (反转值)
 ```
 
-***
-
 ## 1.4 控制流：条件语句
+
+
 
 条件语句允许你根据特定条件执行某些代码块。在 JavaScript 中，有几种类型的条件语句：
 
@@ -522,7 +578,7 @@ switch (day) {
 }
 ```
 
-***
+---
 
 ## 1.5 JavaScript 中的函数
 
@@ -559,7 +615,7 @@ const multiply = (a, b) => a * b;
 let result = multiply(4, 3); // result = 12
 ```
 
-***
+---
 
 ## 1.6 总结
 
@@ -567,7 +623,7 @@ let result = multiply(4, 3); // result = 12
 
 在你继续 JavaScript 编程之旅的过程中，这些基础知识将为更复杂的话提供基础。在下一章中，我们将深入探讨。
 
-第 2 章：循环、数组和对象
+# 第 2 章：循环、数组和对象
 
 在本章中，我们将探索重要的概念：循环、数组和对象。
 
@@ -585,7 +641,8 @@ for (let i = 0; i < 5; i++) {
 }
 ```
 
-在此示例中，循环将运行五次，打印 0 到 4。for 循环由三部分组成：
+在此示例中，循环将运行五次，打印 0 到 4。`for` 循环由三部分组成：
+
 - 初始化：`let i = 0` —— 设置循环的起点。
 - 条件：`i < 5` —— 决定循环何时停止。
 - 递增：`i++` —— 迭代后更新变量 `i`。
@@ -618,7 +675,7 @@ do {
 
 在这种情况下，循环也会打印 0 到 4，但它保证即使初始条件为假，代码也会执行一次。
 
-***
+---
 
 ## 2.2 JavaScript 中的数组
 
@@ -640,9 +697,6 @@ console.log(fruits[1]); // 输出: banana
 ```
 
 ### 2.2.2 数组方法
-
-
-
 
 JavaScript 提供了几个内置方法来操作数组。一些最常用的方法包括：
 
@@ -699,7 +753,7 @@ colors.forEach(function(color) {
 });
 ```
 
-***
+---
 
 ## 2.3 JavaScript 中的对象
 
@@ -758,7 +812,7 @@ for (let key in person) {
 
 该循环将输出 `person` 对象的每个键值对。
 
-***
+---
 
 ## 2.4 总结
 
@@ -769,8 +823,6 @@ for (let key in person) {
 # 第 3 章：高级 JavaScript 概念：函数、作用域和闭包
 
 在本章中，我们将深入探讨掌握该语言至关重要的高级 JavaScript 主题：函数、作用域和闭包。这些概念对于编写模块化、高效且可维护的 JavaScript 代码至关重要。理解函数如何工作、作用域的含义以及闭包如何实现强大的模式，将增强你构建复杂应用程序的能力。
-
-***
 
 ## 3.1 深入函数
 
@@ -825,8 +877,6 @@ console.log(applyOperation(5, 3, function(x, y) {
 
 在上面的示例中，`applyOperation` 是一个高阶函数，因为它接收另一个函数。
 
-***
-
 ## 3.2 JavaScript 中的作用域
 
 作用域是指变量定义的上下文以及决定可以在哪里访问它的规则。JavaScript 有两种作用域：全局作用域和局部作用域。
@@ -870,30 +920,26 @@ console.log(blockScopedVar); // 错误: blockScopedVar is not defined
 
 这与使用 `var` 定义的不同，`var` 没有块作用域，而是具有函数作用域。
 
-***
-
 ## 3.3 JavaScript 中的闭包
 
 闭包是一个“记住”其词法作用域的函数，即使该函数是在该作用域之外执行的。这一强大功能允许函数在外部函数执行完毕后仍访问其变量。
 
 ### 3.3.1 理解闭包
 
-
-
-
 # 第 3 章：高级 JavaScript Concept：函数、作用域与闭包
 
 JavaScript 提供了一系列强大的功能，超越了变量和循环等基础知识。要成为一名精通的 JavaScript 开发者，你需要掌握更高级的概念，如函数、作用域和闭包。在本章中，我们将深入探讨这些主题，解释它们的工作原理，以及你如何利用它们来编写整洁高效的代码。
 
-* * *
-
 ## 3.1 JavaScript 中的函数
+
 函数是 JavaScript 编程的构建块。它们允许你将一组指令组合并在以后执行，并且可以带有不同的输入。函数还可以返回值，使其具有高度的可重用性。
 
 ### 3.1.1 定义函数
+
 在 JavaScript 中，有多种定义函数的方法。常用的方法是使用 `function` 关键字。
 
 #### 函数声明（Function Declaration）：
+
 函数声明定义了一个可以通过其名称调用的函数。
 
 ```javascript
@@ -905,6 +951,7 @@ console.log(greet("Alice")); // 输出: Hello, Alice!
 ```
 
 #### 函数表达式（Function Expression）：
+
 函数表达式定义了一个函数并将其赋值给变量。除非你给它起名，否则这种函数是匿名的。
 
 ```javascript
@@ -916,98 +963,109 @@ console.log(greet("Bob")); // 输出: Hello, Bob!
 ```
 
 #### 箭头函数（Arrow Functions）：
+
 箭头函数在 ECMAScript 6 中引入，提供了更简洁的函数语法。
 
 ```javascript
 const greet = (name) => "Hello, " + name + "!";
 console.log(greet("Charlie")); // 输出: Hello, Charlie!
 ```
+
 箭头函数通常用于较短的函数表达式，特别是在将函数作为参数时。
 
-* * *
-
 ## 3.2 JavaScript 中的作用域
+
 作用域指的是变量在代码不同部分的可访问性。JavaScript 有两种主要的作用域：全局作用域和局部作用域。此外，随着 ECMAScript 6 引入 `let` 和 `const`，还引入了块级作用域。
 
 ### 3.2.1 全局作用域
+
 在任何函数或块之外声明的变量被认为在全局作用域中。这些变量可以在代码的任何地方访问。
+
+
 
 ```javascript
 let globalVar = "I am global!";
 
 function showGlobalVar() {
-console.log(globalVar);
+  console.log(globalVar);
 }
 
 showGlobalVar();
 ```
+
 在这个示例中，`globalVar` 在 `showGlobalVar()` 函数内部和外部都可以访问。
 
 ### 3.2.2 局部作用域
+
 在函数内部声明的变量是该函数的局部变量，不能在函数外部访问。
 
 ```javascript
 function myFunction() {
-let localVar = "I am local!";
-console.log(localVar); // 输出: I am local!
+  let localVar = "I am local!";
+  console.log(localVar); // 输出: I am local!
 }
 
 myFunction();
 // localVar 是 undefined
 ```
+
 在这里，`localVar` 仅在 `myFunction` 内部可用。
 
 ### 3.2.3 块级作用域
+
 通过 `let` 和 `const`，你可以定义局限于声明块的变量，例如 `if` 语句或循环内部。
 
 ```javascript
 if (true) {
-let blockScopedVar = "I am block-scoped!";
-console.log(blockScopedVar); // 输出: I am block-scoped!
+  let blockScopedVar = "I am block-scoped!";
+  console.log(blockScopedVar); // 输出: I am block-scoped!
 }
 // console.log(blockScopedVar); // 错误: blockScopedVar is not defined
 ```
+
 在这种情况下，变量 `blockScopedVar` 仅在 `if` 块内部可用。
 
-* * *
-
 ## 3.3 JavaScript 中的闭包
+
 闭包是一个在外部函数执行完毕后仍保留访问其词法作用域变量的函数。闭包是 JavaScript 中一个强大的特性，能够实现高级编程模式，如数据封装和函数工厂。
 
 ### 3.3.1 理解闭包
+
 当函数被创建时，它可以访问其自身作用域、外部函数作用域以及全局作用域的变量。这就形成了闭包。这是一个示例：
 
 ```javascript
 function outer() {
-let outerVar = "I am from the outer function";
-return function inner() {
-console.log(outerVar); // 访问外部函数的变量
-};
+  let outerVar = "I am from the outer function";
+  return function inner() {
+    console.log(outerVar); // 访问外部函数的变量
+  };
 }
 
 const closureFunc = outer();
 closureFunc(); // 输出: I am from the outer function
 ```
+
 在这个示例中，即使在 `outer` 执行完成后，`inner` 函数仍然可以访问 `outerVar`。这就是闭包的精髓。
 
 ### 3.3.2 闭包的实际应用
+
 闭包通常用于创建私有变量或模拟数据封装，这有助于防止外部意外访问变量。
 
 示例：
 
 ```javascript
 function counter() {
-let count = 0;
-return {
-increment: function() {
-count++;
-console.log(count);
-},
-decrement: function() {
-count--;
-console.log(count);
-}
-};
+  let count = 0;
+  return {
+    increment: function() {
+      count++;
+      console.log(count);
+    },
+    decrement: function() {
+      count--;
+      console.log(count);
+    }
+  };
 }
 
 const myCounter = counter();
@@ -1015,14 +1073,15 @@ myCounter.increment(); // 输出: 1
 myCounter.increment(); // 输出: 2
 myCounter.decrement(); // 输出: 1
 ```
+
 在这个示例中，`count` 变量是私有的，只能通过 `increment` 和 `decrement` 方法进行访问和修改。这是使用闭包在 JavaScript 中创建私有状态的示例。
 
-* * *
+## 3.4 JavaScript 中的 `this` 关键字
 
-## 3.4 JavaScript 中的 this 关键字
 `this` 关键字指向执行函数的上下文。理解它是如何工作的对于处理面向对象的 JavaScript 至关重要。
 
 ### 3.4.1 全局上下文
+
 在全局上下文中（任何函数或对象之外），`this` 指向全局对象。在浏览器中，全局对象是 `window`。
 
 ```javascript
@@ -1030,27 +1089,30 @@ console.log(this); // 在浏览器中，它输出 window 对象
 ```
 
 ### 3.4.2 对象上下文
+
 当函数作为对象的方法被调用时，`this` 指向对象本身。
 
 ```javascript
 const person = {
-name: "Alice",
-greet: function() {
-console.log("Hello, " + this.name);
-}
+  name: "Alice",
+  greet: function() {
+    console.log("Hello, " + this.name);
+  }
 };
 
 person.greet(); // 输出: Hello, Alice
 ```
+
 在这种情况下，`this.name` 指向 `person` 对象的 `name` 属性。
 
 ### 3.4.3 构造函数
+
 在构造函数的情况下，`this` 指向新创建的对象。
 
 ```javascript
 function Person(name, age) {
-this.name = name;
-this.age = age;
+  this.name = name;
+  this.age = age;
 }
 
 const john = new Person("John", 30);
@@ -1058,15 +1120,11 @@ console.log(john.name); // 输出: John
 console.log(john.age); // 输出: 30
 ```
 
-* * *
-
 ## 3.5 总结
+
 在本章中，我们了 JavaScript 中一些重要的高级概念：函数、作用域、闭包和 `this` 关键字。掌握这些主题将使你能够编写更高效的代码，并帮助你理解 JavaScript 行为的微妙之处。
 
 掌握了这些概念后，你已经准备好迎接更复杂的 JavaScript 挑战。在下一章中，我们将探索 JavaScript 的事件驱动特性、操作 DOM（文档对象模型）以及处理异步操作。
-
-
-
 
 闭包可以用于创建私有变量和函数，提供了一种封装数据并限制其向外部暴露的方法。这种技术在 JavaScript 中经常用于实现模块模式或在函数中维护状态。
 
@@ -1093,9 +1151,7 @@ myCounter.decrement(); // Output: 1
 
 在这里，`count` 变量被封装在闭包内部，只能通过 `increment` 和 `decrement` 函数进行修改。
 
-***
-
-## 3.4 JavaScript 中的 this 关键字
+## 3.4 JavaScript 中的 `this` 关键字
 
 `this` 关键字指向函数的当前执行上下文。它的值取决于函数是如何调用的，理解它的工作原理对于精通面向对象的 JavaScript 至关重要。
 
@@ -1141,8 +1197,6 @@ console.log(john.age);  // Output: 30
 
 在这个示例中，`this` 指向由 `Person` 构造函数创建的新对象。
 
-***
-
 ## 3.5 结论
 
 在本章中，我们探索了 JavaScript 中一些本质的高概念，包括函数、作用域、闭包和 `this` 关键字。这些概念是编写整洁、高效且可维护的 JavaScript 代码的基础。
@@ -1157,9 +1211,7 @@ console.log(john.age);  // Output: 30
 
 ![image](img/chapter_title_below.png)
 
-文档对象模型 (DOM) 是一个强大的 API，允许 JavaScript 与 HTML 文档交互并操作其内容。它提供了一种结构化的方式，将网页表示为对象树。本章将重点关注如何使用 JavaScript 访问、操作和修改 DOM，以便创建动态、交互式的 Web 应用。
-
-***
+文档对象模型（DOM）是一个强大的 API，允许 JavaScript 与 HTML 文档交互并操作其内容。它提供了一种结构化的方式，将网页表示为对象树。本章将重点关注如何使用 JavaScript 访问、操作和修改 DOM，以便创建动态、交互式的 Web 应用。
 
 ## 4.1 理解 DOM
 
@@ -1197,13 +1249,11 @@ document
 
 这种层次结构允许 JavaScript 通过遍历树轻松访问和操作页面上的任何元素。
 
-***
-
 ## 4.2 访问 DOM 中的元素
 
 要操作 DOM 中的元素，首先需要访问它们。JavaScript 提供了多种方法来选择 DOM 元素，例如 `getElementById`、`getElementsByClassName`、`querySelector` 和 `querySelectorAll`。
 
-### 4.2.1 getElementById
+### 4.2.1 `getElementById`
 
 `getElementById` 方法通过 `id` 属性选择元素。它返回单个元素，因为 ID 在页面内预期是唯一的。
 
@@ -1212,7 +1262,7 @@ const element = document.getElementById("content");
 console.log(element); // Output: <div id="content">...</div>
 ```
 
-### 4.2.2 getElementsByClassName
+### 4.2.2 `getElementsByClassName`
 
 `getElementsByClassName` 方法通过类名选择元素。它返回一个实时的元素 `HTMLCollection`，这意味着如果 DOM 更新了（例如添加了元素），该集合也会更新。
 
@@ -1220,7 +1270,7 @@ console.log(element); // Output: <div id="content">...</div>
 const paragraphs = document.getElementsByClassName("text");
 ```
 
-### 4.2.3 querySelector 和 querySelectorAll
+### 4.2.3 `querySelector` 和 `querySelectorAll`
 
 `querySelector` 方法允许你使用 CSS 选择器选择元素。它返回第一个匹配的元素。`querySelectorAll` 在 `NodeList` 中返回所有匹配的元素。
 
@@ -1231,11 +1281,9 @@ console.log(firstParagraph); // Output: <p>...</p>
 const allParagraphs = document.querySelectorAll("p");
 ```
 
-***
-
 ## 4.3 操作 DOM 中的元素
 
-一旦访问了元素，你就可以各种方式对其进行操作，例如更改其内容、样式或属性。JavaScript 提供了各种属性和方法来实现此目的。
+一旦访问了元素，你就可以以各种方式对其进行操作，例如更改其内容、样式或属性。JavaScript 提供了各种属性和方法来实现此目的。
 
 ### 4.3.1 修改内容
 
@@ -1280,8 +1328,6 @@ const srcValue = document.querySelector("img").getAttribute("src");
 console.log(srcValue); // 输出: 图片当前的 src 值
 ```
 
-***
-
 ## 4.4 创建和删除元素
 
 JavaScript 允许在 DOM 中动态创建和删除元素。
@@ -1293,9 +1339,6 @@ JavaScript 允许在 DOM 中动态创建和删除元素。
 ```javascript
 const newDiv = document.createElement("div");
 ```
-
-
-
 
 ```javascript
 newDiv.textContent = "This is a dynamically created div.";
@@ -1324,7 +1367,9 @@ JavaScript 允许你通过事件处理与用户操作交互，例如点击、按
 
 ### 4.5.1 添加事件监听器
 
-`addEventListener` 方法用于将事件绑定到元素，允许你指定事件发生时应该发生什么。
+
+
+`addEventListener`方法用于将事件绑定到元素，允许你指定事件发生时应该发生什么。
 
 ```javascript
 const button = document.querySelector("button");
@@ -1348,7 +1393,7 @@ button.addEventListener("click", function(event) {
 
 ### 4.5.3 移除事件监听器
 
-如果你不再需要事件监听器，可以使用 `removeEventListener` 方法将其移除。
+如果你不再需要事件监听器，可以使用`removeEventListener`方法将其移除。
 
 ```javascript
 function handleClick() {
@@ -1366,7 +1411,7 @@ button.removeEventListener("click", handleClick);
 
 # 第 5 章：异步 JavaScript 与 Promises
 
-异步编程是 JavaScript 中的一个核心概念，特别是在处理需要时间才能完成的任务时，例如发送 HTTP 请求、读取文件或等待用户输入。在�本章中，我们将探索异步编程的概念，重点关注 promises、async/await 以及如何在 JavaScript 中处理异步操作。
+异步编程是 JavaScript 中的一个核心概念，特别是在处理需要时间才能完成的任务时，例如发送 HTTP 请求、读取文件或等待用户输入。在本章中，我们将探索异步编程的概念，重点关注 promises、async/await 以及如何在 JavaScript 中处理异步操作。
 
 ## 5.1 什么是异步编程？
 
@@ -1396,17 +1441,17 @@ function processData() {
 fetchData(processData); // 获取数据，然后在 2 秒后进行处理
 ```
 
-在这个示例中，`fetchData` 模拟异步获取数据（使用 `setTimeout`），一旦数据获取完成，它就会调用 `processData` 函数。
+在这个示例中，`fetchData`模拟异步获取数据（使用`setTimeout`），一旦数据获取完成，它就会调用`processData`函数。
 
-虽然回调函数运行良好，但在更复杂的应用程序中它们可能会变得难以管理。这就是 Promises 大显用场的地方
+虽然回调函数运行良好，但在更复杂的应用程序中它们可能会变得难以管理。这就是 Promises 大显用场的地方。
 
 ## 5.3 理解 Promises
 
-Promise 是 JavaScript 中处理异步操作的现代方式。Promise 代表异步操作的最终完成（或失败），并允许你附加 `.then()` 和 `.catch()` 处理程序来分别处理结果或处理错误。
+Promise 是 JavaScript 中处理异步操作的现代方式。Promise 代表异步操作的最终完成（或失败），并允许你附加`.then()`和`.catch()`处理程序来分别处理结果或处理错误。
 
 ### 创建 Promise
 
-你可以使用 `Promise` 构造函数来创建一个 promise。`Promise` 构造函数接受一个带有两个参数的函数：`resolve` 和 `reject`。当异步操作成功完成时，你调用 `resolve` 表示成功。如果失败了，你调用 `reject` 表示失败。
+你可以使用`Promise`构造函数来创建一个 promise。`Promise`构造函数接受一个带有两个参数的函数：`resolve`和`reject`。当异步操作成功完成时，你调用`resolve`表示成功。如果失败了，你调用`reject`表示失败。
 
 ### 示例：使用 Promises
 
@@ -1433,11 +1478,11 @@ fetchData()
   });
 ```
 
-在这个示例中，`fetchData` 返回一个两秒后 resolve 的 promise。如果操作成功，将记录消息 "Data fetched successfully"。如果发生错误，将记录消息 "Error fetching data"。
+在这个示例中，`fetchData`返回一个两秒后 resolve 的 promise。如果操作成功，将记录消息 "Data fetched successfully"。如果发生错误，将记录消息 "Error fetching data"。
 
 ## 5.4 链式调用 Promises
 
-Promise 最强大的功能之一是可以使用 `.then()` 将多个异步操作链式连接。每个 `.then()` 块都会返回一个新的 promise，允许你按顺序链式执行多个操作。
+Promise 最强大的功能之一是可以使用`.then()`将多个异步操作链式连接。每个`.then()`块都会返回一个新的 promise，允许你按顺序链式执行多个操作。
 
 ### 示例：链式调用 Promises
 
@@ -1459,7 +1504,7 @@ fetchData()
   });
 ```
 
-在这个示例中，获取数据后，程序继续处理数据并最终记录结果。每个 `then()` 块都会接收上一个块的返回值并可以链接后续操作。
+在这个示例中，获取数据后，程序继续处理数据并最终记录结果。每个`then()`块都会接收上一个块的返回值并可以链接后续操作。
 
 ## 5.5 Async/Await
 
@@ -1467,11 +1512,7 @@ async 和 await 是现代 JavaScript 特性，它们简化了异步代码的处�
 
 ### 5.5.1 async 函数
 
-`async` 函数总是返回一个 promise。在函数内部，你可以使用 `await` 关键字暂停函数的执行，直到 promise resolve 或 reject。
-
-
-
-
+`async`函数总是返回一个 promise。在函数内部，你可以使用`await`关键字暂停函数的执行，直到 promise resolve 或 reject。
 
 ### 示例：使用 async 和 await
 
@@ -1493,13 +1534,11 @@ async function fetchData() {
 fetchData();
 ```
 
-在这个示例中，`fetchData` 函数被标记为 `async`，并使用 `await` 关键字来等待 `promise` 解析后再记录结果。这使得异步代码在看起来和行为上都更像同步代码。
-
-***
+在这个示例中，`fetchData`函数被标记为`async`，并使用`await`关键字来等待`promise`解析后再记录结果。这使得异步代码在看起来和行为上都更像同步代码。
 
 ## 5.6 使用 try 和 catch 处理错误
 
-在使用 `async` 和 `await` 时，你可以使用 `try...catch` 块来处理错误，这与你在同步代码中处理错误的方式类似。如果在等待 promise 时发生错误，执行将将跳转到 `catch` 块。
+在使用`async`和`await`时，你可以使用`try...catch`块来处理错误，这与你在同步代码中处理错误的方式类似。如果在等待 promise 时发生错误，执行将跳转到`catch`块。
 
 ### 示例：使用 try 和 catch 处理错误
 
@@ -1525,17 +1564,15 @@ async function fetchData() {
 fetchData();
 ```
 
-在这个示例中，`promise` 被拒绝（rejected），错误消息在 `catch` 块中被捕获。
-
-***
+在这个示例中，`promise`被拒绝（rejected），错误消息在`catch`块中被捕获。
 
 ## 5.7 处理多个 Promise
 
-JavaScript 提供了 `Promise.all()` 和 `Promise.race()` 等方法来并发处理多个 promise。
+JavaScript 提供了`Promise.all()`和`Promise.race()`等方法来并发处理多个 promise。
 
 ### 5.7.1 Promise.all()
 
-`Promise.all()` 接收一个 promise 数组并返回一个新的 promise，当数组中的所有 promise 都解析后，该 promise 就会解析。如果任何一个 promise 被拒绝，整个 promise 都将被拒绝。
+`Promise.all()`接收一个 promise 数组并返回一个新的 promise，当数组中的所有 promise 都解析后，该 promise 就会解析。如果任何一个 promise 被拒绝，整个 promise 都将被拒绝。
 
 ```javascript
 const promise1 = Promise.resolve("Data 1");
@@ -1552,10 +1589,10 @@ Promise.all([promise1, promise2, promise3])
 
 ### 5.7.2 Promise.race()
 
-`Promise.race()` 接收一个 promise 数组并返回一个新的 promise，一旦其中任何一个 promise 解析或拒绝，该 promise 就会立即解析或拒绝。
+`Promise.race()`接收一个 promise 数组并返回一个新的 promise，一旦其中任何一个 promise 解析或拒绝，该 promise 就会立即解析或拒绝。
 
 ```javascript
-const promise1 = new Promise((resolve) => setTimeout(resolve, 1000, "Data 1");
+const promise1 = new Promise((resolve) => setTimeout(resolve, 1000, "Data 1"));
 const promise2 = new Promise((resolve) => setTimeout(resolve, 500, "Data 2"));
 Promise.race([promise1, promise2])
   .then((value) => {
@@ -1566,13 +1603,11 @@ Promise.race([promise1, promise2])
   });
 ```
 
-在这个示例中，第二个 promise 先解析，因此 `Promise.race()` 的结果是 "Data 2"。
-
-***
+在这个示例中，第二个 promise 先解析，因此`Promise.race()`的结果是 "Data 2"。
 
 ## 5.8 结论
 
-在本章中，我们涵盖了 JavaScript 异步编程的基础，包括回调函数（callbacks）、promises 以及 `async/await` 语法的使用。通过掌握这些技术，你可以编写出更高效、响应更快的代码，能够处理耗时任务而不会阻塞主程序流。
+在本章中，我们涵盖了 JavaScript 异步编程的基础，包括回调函数（callbacks）、promises 以及`async/await`语法的使用。通过掌握这些技术，你可以编写出更高效、响应更快的代码，能够处理耗时任务而不会阻塞主程序流。
 
 异步编程是现代 Web 开发的一项关键技能，特别是在处理 API、从服务器获取数据或同时处理多个操作时。在下一章中，我们将探索 JavaScript 的高级特性，例如闭包、高阶函数以及函数编程的强大概念。
 
@@ -1580,28 +1615,27 @@ Promise.race([promise1, promise2])
 
 面向对象编程 (OOP) 是一种广泛应用于 JavaScript 和许多其他语言的编程范式。在本章中，我们将探索 JavaScript 中 OOP 的核心概念，如对象、类、继承和封装，以及如何应用它们来构建高效且可重用的代码。
 
-***
-
 ## 6.1 什么是面向对象编程？
 
-面向对象编程是一种使用“对象”来表示数据以及操作这些数据的方法编程方法。OOP 的主要目标是在代码中对现实世界的实体建模，使得设计和维护复杂的软件系统变得更容易。
+面向对象编程是一种使用“对象”来表示数据以及操作这些数据的方法的编程方法。OOP 的主要目标是在代码中对现实世界的实体建模，使得设计和维护复杂的软件系统变得更容易。
 
 OOP 的核心原则包括：
 
 1. **封装**：将数据和操作该数据的方法封装在单个单元（`class`）中。
-2. **抽象**：隐藏复杂的实现细节，只向用户展示必要的部分。
-3. **继承**：基于现有类创建新类的能力，并继承其属性和方法。
-4. **多态**：使用单一接口表示不同类型对象的能力。
 
-***
+2. **抽象**：隐藏复杂的实现细节，只向用户展示必要的部分。
+
+3. **继承**：基于现有类创建新类的能力，并继承其属性和方法。
+
+4. **多态**：使用单一接口表示不同类型对象的能力。
 
 ## 6.2 理解 JavaScript 中的对象
 
-在 JavaScript 中，对象是键值对的集合，其中每个键（key）都是字符串（或 `Symbol`），值（value）可以是任何有效的 JavaScript 数据类型，包括函数（通常称为方法）。
+在 JavaScript 中，对象是键值对的集合，其中每个键（key）都是字符串（或`Symbol`），值（value）可以是任何有效的 JavaScript 数据类型，包括函数（通常称为方法）。
 
 ### 创建对象
 
-你可以使用对象字面量语法或 `new Object()` 语法来创建对象。
+你可以使用对象字面量语法或`new Object()`语法来创建对象。
 
 ### 示例：使用字面量语法创建对象
 
@@ -1618,17 +1652,15 @@ const person = {
 person.greet(); // 输出: Hello, my name is John Doe.
 ```
 
-在这个示例中，`person` 对象包含了 `firstName`、`lastName` 以及一个可以打印问候信息的 `greet` 方法。
-
-***
+在这个示例中，`person`对象包含了`firstName`、`lastName`以及一个可以打印问候信息的`greet`方法。
 
 ## 6.3 在 JavaScript 中使用类
 
-类是创建对象的蓝图，提供了定义属性的方法的方法。JavaScript 类是在 ECMAScript 6 (ES6) 中引入的，与构造函数相比，它是处理对象的更现代的方式。
+类是创建对象的蓝图，提供了定义属性和方法的方式。JavaScript 类是在 ECMAScript 6 (ES6) 中引入的，与构造函数相比，它是处理对象的更现代的方式。
 
 ### 定义类
 
-你可以使用 `class` 关键字定义类，后面跟着类名以及包含构造方法和其他方法的代码块。
+你可以使用`class`关键字定义类，后面跟着类名以及包含构造方法和其他方法的代码块。
 
 ### 示例：定义类
 
@@ -1648,9 +1680,7 @@ const john = new Person("John", "Doe", 30);
 john.greet(); // 输出: Hello, my name is John Doe.
 ```
 
-在这个示例中，`Person` 类有一个构造方法来初始化对象属性，以及一个 `greet()` 方法。使用 `new` 关键字来创建 `Person` 类的实例。
-
-***
+在这个示例中，`Person`类有一个构造方法来初始化对象属性，以及一个`greet()`方法。使用`new`关键字来创建`Person`类的实例。
 
 ## 6.4 JavaScript 中的继承
 
@@ -1658,9 +1688,11 @@ john.greet(); // 输出: Hello, my name is John Doe.
 
 ### 创建子类
 
-你可以通过 `extends` 关键字创建子类，它允许一个类从另一个类继承。
+你可以通过`extends`关键字创建子类，它允许一个类从另一个类继承。
 
 ### 示例：JavaScript 中的继承
+
+
 
 ```javascript
 class Animal {
@@ -1688,12 +1720,7 @@ dog.speak(); // 输出: Buddy barks.
 
 在这个示例中，`Dog` 类扩展了 `Animal` 类，继承了它的属性和方法。`super()` 函数用于调用父类的构造函数，并且 `speak()` 方法被重写以为狗狗提供更具体的实现。
 
-***
-
 ## 6.5 封装与私有属性
-
-
-
 
 封装是将数据和操作该数据的方法组合在单个单元（类）中，并限制对对象某些部分的访问。这有助于保护对象的内部状态，并确保它仅能通过定义良好的方法进行修改。
 
@@ -1733,8 +1760,6 @@ console.log(account.getBalance()); // Output: 100
 
 在此示例中，`#balance` 属性是私有的，无法从类外部直接访问。这确保了余额只能通过 `deposit()` 方法进行修改，从而对对象的状态提供了更好的控制。
 
-***
-
 ## 6.6 JavaScript 中的多态
 
 多态允许单个函数或方法作用于不同类型的对象。在 JavaScript 中，多态通过方法重写实现，子类可以为父类中定义的方法提供其自己的实现。
@@ -1768,11 +1793,9 @@ dog.speak(); // Output: Dog barks.
 
 在此示例中，`Cat` 和 `Dog` 类都重写了 `Animal` 类的 `speak()` 方法，以提供它们特定的行为。
 
-***
-
 ## 6.7 结论
 
-面向对象编程 (OOP) 是一种强大的范式，有助于以更易管理和可扩展的方式组织和构建代码。通过理解 JavaScript 中 OOP 的核心原则（包括对象、类、继承、封装和多态），你可以编写更具维护性和可重用的代码。
+面向对象编程（OOP）是一种强大的范式，有助于以更易管理和可扩展的方式组织和构建代码。通过理解 JavaScript 中 OOP 的核心原则（包括对象、类、继承、封装和多态），你可以编写更具维护性和可重用的代码。
 
 在本章中，我们涵盖了 JavaScript 中 OOP 的基础，从对象和类到继承和封装等更高级的话。在下一章中，我们将深入研究 JavaScript 强大的数组方法，这些方法允许对数据进行高效且函数的操作。
 
@@ -1814,11 +1837,9 @@ console.log(person);
 
 这演示了你如何与对象属性交互并动态地操作数据。
 
-***
-
 ## 6.3 在 JavaScript 中使用类
 
-类是创建对象的蓝图，提供了一种定义属性和方法的方法。JavaScript 类是在 ECMAScript 6 (ES6) 中引入的。
+类是创建对象的蓝图，提供了一种定义属性和方法的方法。JavaScript 类是在 ECMAScript 6（ES6）中引入的。
 
 ### 定义类
 
@@ -1871,8 +1892,6 @@ console.log(myCircle.getCircumference()); // Output: 31.41592653589793
 
 在这里，`Circle` 类包含了两个方法 `getArea()` 和 `getCircumference()`，分别计算面积和周长。
 
-***
-
 ## 6.4 JavaScript 中的继承
 
 继承允许类从另一个类继承属性和方法。这实现了代码复用和更有层次结构的对象组织。
@@ -1911,9 +1930,6 @@ dog.speak(); // Output: Buddy barks.
 
 在此示例中，`Dog` 类扩展了 `Animal` 类，继承了它的属性和方法。`super()` 函数用于调用父类的构造函数，并且 `speak()` 方法被重写以为狗提供更特定的实现。
 
-
-
-
 ```javascript
 if (amount > 0) {
   this.#balance += amount;
@@ -1938,8 +1954,6 @@ console.log(account.getBalance()); // Output: 100
 在例例中，`#balance` 属性是私有的，无法从类外部直接访问。这确保了余额只能通过 `deposit()` 方法进行修改，从而对对象的状态提供了更好的控制。
 
 封装有助于确保对象以受控的方式被使用，防止其内部状态受到意外或恶意的修改。
-
-***
 
 ## 6.6 JavaScript 中的多态
 
@@ -1974,8 +1988,6 @@ dog.speak(); // Output: Dog barks.
 
 在此例中，`Cat` 和 `Dog` 类都重写了 `Animal` 类的 `speak()` 方法，以提供它们特定的行为。多态允许你在不同对象类型中使用相同的方法名但具有不同的行为，提供了灵活性并简化了代码结构。
 
-***
-
 ## 6.7 结论
 
 面向对象编程（OOP）是一种强大的范式，有助于以更易管理和可扩展的方式组织和结构化代码。通过理解 JavaScript 中 OOP 的核心原则（包括对象、类、继承、封装和多态），你可以编写出更具维护性和可复用的代码。
@@ -1984,13 +1996,10 @@ dog.speak(); // Output: Dog barks.
 
 在下一章中，我们将深入探讨 JavaScript 强大的数组方法，这些方法允许对数据进行更高效、更函数式的操作。
 
-***
+### 补充说明
 
-### 补充说明：
-
-● **练习**：在你继续学习 JavaScript OOP 时，请通过构建更复杂的类和子类来练习。你与这些概念接触得越多，就会对它们的使用场景越得越熟悉。
-
-● **真实世界示例**：为了更好地理解 OOP，尝试将这些概念应用到构建简单项目中，例如学生管理系统或电子商务购物车。这将让你在处理 OOP 方面获得实践经验。
+- **练习**：在你继续学习 JavaScript OOP 时，请通过构建更复杂的类和子类来练习。你与这些概念接触得越多，就会对它们的使用场景越得越熟悉。
+- **真实世界示例**：为了更好地理解 OOP，尝试将这些概念应用到构建简单项目中，例如学生管理系统或电子商务购物车。这将让你在处理 OOP 方面获得实践经验。
 
 ![image](img/chapter_title_corner_decoration_left.png) | | ![image](img/chapter_title_corner_decoration_right.png)
 
@@ -2004,8 +2013,6 @@ dog.speak(); // Output: Dog barks.
 
 在本章中，我们将探索异步 JavaScript 的工作原理，包括回调（callbacks）、Promises 和 async/await 等概念。理解这些概念对于处理需要时间的任务（如网络请求和大型计算）至关重要。
 
-***
-
 ## 7.1 什么是异步 JavaScript？
 
 异步编程允许程序在等待耗时操作完成的同时继续执行其他任务。这在与外部资源（如 API、数据库或文件）交互时特别有用，因为延迟在那里很常见。
@@ -2015,8 +2022,6 @@ dog.speak(); // Output: Dog barks.
 ### 事件循环（Event Loop）
 
 事件循环是允许 JavaScript 执行非阻塞操作的机制。当启动一个任务（例如网络请求）时，事件循环会将任务移交给浏览器的 Web APIs（如 `fetch()`、`setTimeout()` 等）。任务在后台执行，而 JavaScript 引擎继续执行其他代码。一旦任务完成，事件循环会将回调或 Promise 的解析（resolution）放入队列中，当 JavaScript 引擎准备就绪时就会执行它。
-
-***
 
 ## 7.2 回调（Callbacks）
 
@@ -2055,21 +2060,21 @@ fetchData(function(data) {
 
 在这种情况下，代码难以追踪且容易出错。这就是 promises 和 async/await 发挥作用的地方，提供了更整洁的替代方案。
 
-***
-
 ## 7.3 Promises
 
-Promise 是一个代表异步操作最终完成（或失败）及其结果的 get。Promise 是回调更整洁的替代方案，并允许对多个异步操作进行链。
+
+
+`Promise` 是一个代表异步操作最终完成（或失败）及其结果的 `get`。`Promise` 是回调更整洁的替代方案，并允许对多个异步操作进行链。
 
 ### Promise 的状态
 
-Promise 可以处于以下三种状态之一：
+`Promise` 可以处于以下三种状态之一：
 
 1. **等待中（Pending）**：异步操作完成之前的状态。
-2. **已解决（Resolved/Fulfilled）**：操作成功完成，Promise 拥有结果。
-3. **已拒绝（Rejected）**：操作失败，Promise 拥有错误原因。
+2. **已解决（Resolved/Fulfilled）**：操作成功完成，`Promise` 拥有结果。
+3. **已拒绝（Rejected）**：操作失败，`Promise` 拥有错误原因。
 
-### 示例：使用 Promises
+### 示例：使用 `Promise`
 
 ```javascript
 function fetchData() {
@@ -2090,11 +2095,11 @@ fetchData()
   });
 ```
 
-在此例中，`fetchData()` 返回一个 promise。`then()` 方法用于处理 promise 的成功解析，而 `catch()` 用于处理发生的任何错误。
+在此例中，`fetchData()` 返回一个 `promise`。`then()` 方法用于处理 `promise` 的成功解析，而 `catch()` 用于处理发生的任何错误。
 
 ### Promise 链（Chaining Promises）
 
-Promises 允许链式，这意味着你可以顺序执行多个异步操作，将上一个操作的结果传递给下一个。
+`Promise` 允许链式，这意味着你可以顺序执行多个异步操作，将上一个操作的结果传递给下一个。
 
 ```javascript
 fetchData()
@@ -2110,26 +2115,18 @@ fetchData()
   });
 ```
 
-
-
-
-
 ```javascript
 console.error(error);
-
-});
 ```
 
-与上一个示例中的嵌套回调相比，这种 promise 链式使得代码更具可读性和可维护性。
-
-***
+与上一个示例中的嵌套回调相比，这种 `promise` 链式使得代码更具可读性和可维护性。
 
 ## 7.4 Async/Await
 
-Async/await 是 JavaScript 较新引入的特性，发布于 `ECMAScript 2017`。它构建在 promise 之上，提供了一种更简洁、更直观的方式来处理异步代码。
+`Async/await` 是 JavaScript 较新引入的特性，发布于 `ECMAScript 2017`。它构建在 `promise` 之上，提供了一种更简洁、更直观的方式来处理异步代码。
 
-- **Async**: `async` 关键字放在函数之前，表示该函数返回一个 promise 并且包含异步操作。
-- **Await**: `await` 关键字只能在 `async` 函数内部使用。它会暂停函数的执行，直到 promise 解析完成并返回结果。
+- **Async**: `async` 关键字放在函数之前，表示该函数返回一个 `promise` 并且包含异步操作。
+- **Await**: `await` 关键字只能在 `async` 函数内部使用。它会暂停函数的执行，直到 `promise` 解析完成并返回结果。
 
 ### 示例：使用 Async/Await
 
@@ -2144,7 +2141,7 @@ async function fetchData() {
 fetchData();
 ```
 
-在这个示例中，`fetchData()` 是一个异步函数。`await` 关键字会等待 promise 解析完成后，再继续执行下一行代码。
+在这个示例中，`fetchData()` 是一个异步函数。`await` 关键字会等待 `promise` 解析完成后，再继续执行下一行代码。
 
 ### 使用 Async/Await 处理错误
 
@@ -2167,15 +2164,13 @@ fetchData();
 
 这种方法比使用 `.then()` 和 `.catch()` 要清晰得多且易于阅读。
 
-***
-
 ## 7.5 将 Async/Await 与其他函数结合
 
-Async/await 可以与其他 JavaScript 函数结合使用，包括 `setTimeout()`、`fetch()`，甚至可以在循环中使用。这种灵活性使得 async/await 成为管理异步操作的最强大的工具之一。
+`Async/await` 可以与其他 JavaScript 函数结合使用，包括 `setTimeout()`、`fetch()`，甚至可以在循环中使用。这种灵活性使得 `async/await` 成为管理异步操作的最强大的工具之一。
 
 ### 示例：结合 Async/Await 使用 fetch()
 
-`fetch()` API 通常用于在 JavaScript 中发送网络请求。它返回一个 promise，该 promise 解析的结果为请求的响应。
+`fetch()` API 通常用于在 JavaScript 中发送网络请求。它返回一个 `promise`，该 `promise` 解析的结果为请求的响应。
 
 ```javascript
 async function getUserData() {
@@ -2195,7 +2190,7 @@ getUserData();
 
 ### 示例：在循环中使用 Async/Await
 
-你也可以在循环内部使用 async/await 来按顺序处理异步任务。
+你也可以在循环内部使用 `async/await` 来按顺序处理异步任务。
 
 ```javascript
 async function fetchMultipleData() {
@@ -2215,30 +2210,23 @@ fetchMultipleData();
 
 在这种情况下，循环会顺序地从多个 URL 获取数据，在移动到下一个请求之前会等待每个请求完成。
 
-***
-
 ## 7.6 结论
 
-异步编程是 JavaScript 的一个至关重要的方面，它允许你处理原本会阻塞程序执行的操作。通过掌握回调、promise 和 async/await，你可以编写出更高效、更可维护的代码。
+异步编程是 JavaScript 的一个至关重要的方面，它允许你处理原本会阻塞程序执行的操作。通过掌握回调、`promise` 和 `async/await`，你可以编写出更高效、更可维护的代码。
 
-在本章中，我们学习了事件循环、回调、promise 和 async/await。这些工具和技术对于构建现代的非阻塞应用程序至关重要。异步编程将成为你 JavaScript 开发之旅中的基础性部分，特别是在处理 API、数据库以及任何需要等待结果的任务时。
+在本章中，我们学习了事件循环、回调、`promise` 和 `async/await`。这些工具和技术对于构建现代的非阻塞应用程序至关重要。异步编程将成为你 JavaScript 开发之旅中的基础性部分，特别是在处理 API、数据库以及任何需要等待结果的任务时。
 
 在下一章中，我们将深入研究 JavaScript 的错误处理机制，并探索调试和编写健壮代码的实践实践。
-
-***
 
 ### 补充：
 
 - **练习**：为了巩固对异步 JavaScript 的理解，请尝试创建一些涉及发送网络请求、处理多个异步操作以及使用 `async/await` 编写简洁代码的小项目。
-- **真实应用场景**：异步 JavaScript 通常用于构建与外部 API 交互的应用程序，例如天气应用、社交媒体平台或电子商务网站。请尝试在这些真实场景中实验本章中学到的技术。
 
-***
+- **真实应用场景**：异步 JavaScript 通常用于构建与外部 API 交互的应用程序，例如天气应用、社交媒体平台或电子商务网站。请尝试在这些真实场景中实验本章中学到的技术。
 
 # 第 8 章：使用 API 和 Fetch
 
-在现代 Web 开发中，API（应用程序编程接口）在实现不同软件系统之间的通信方面起着核心作用。API 允许开发者与数据库、第三方平台甚至外部应用程序等服务交互。在 JavaScript 中与 API 通 通常用方法之一是通过 `fetch()` API。在本章中，我们将探索如何使用 `fetch()` 与 API 交互、如何处理响应以及如何处理 JSON 数据。在本章结束时，你将掌握将 API 集成到 Web 应用程序中的知识。
-
-***
+在现代 Web 开发中，API（应用程序编程接口）在实现不同软件系统之间的通信方面起着核心作用。API 允许开发者与数据库、第三方平台甚至外部应用程序等服务交互。在 JavaScript 中与 API 通信最常用方法之一是通过 `fetch()` API。在本章中，我们将探索如何使用 `fetch()` 与 API 交互、如何处理响应以及如何处理 JSON 数据。在本章结束时，你将掌握将 API 集成到 Web 应用程序中的知识。
 
 ## 8.1 什么是 API？
 
@@ -2246,17 +2234,17 @@ API 是一套协议和工具，允许不同的软件应用程序相互进行通�
 
 API 可以分为不同的类型：
 
-1. **RESTful APIs（表述状态转移）**：REST 是一种使用标准 HTTP 方法（如 `GET`、`POST`、`PUT` 和 `DELETE`）的架构风格。REST API 是无状态，允许客户端和服务器之间进行通信。
+1. **RESTful APIs（表述状态转移）**：REST 是一种使用标准 HTTP 方法（如 `GET`、`POST`、`PUT` 和 `DELETE`）的架构风格。REST API 是无状态的，允许客户端和服务器之间进行通信。
+
 2. **GraphQL APIs**：与 REST 不同，GraphQL 允许客户端请求特定的数据字段而不是获取整组数据，提供了更高的灵活性效率。
+
 3. **WebSocket APIs**：WebSockets 实现了客户端与服务器之间的双向通信，允许实时更新。
 
 为了本章的演示，我们将关注常用于 Web 开发的 REST APIs。
 
-***
-
 ## 8.2 fetch() API
 
-`fetch()` 函数是 JavaScript 中发送 HTTP 请求的现代方式。它内置于浏览器中，与 `XMLHttpRequest` 等旧方法相比，它更易访问且更易使用。`fetch()` 返回一个 promise，该 promise 解析的结果为请求的响应。
+`fetch()` 函数是 JavaScript 中发送 HTTP 请求的现代方式。它内置于浏览器中，与 `XMLHttpRequest` 等旧方法相比，它更易访问且更易使用。`fetch()` 返回一个 `promise`，该 `promise` 解析的结果为请求的响应。
 
 ### fetch() 的基本用法
 
@@ -2269,11 +2257,11 @@ fetch('https://jsonplaceholder.typicode.com/posts')
   .catch(error => console.error('Error:', error)); // 处理任何错误
 ```
 
-在这个示例中，使用 `fetch()` 函数从 `jsonplaceholder` API 获取数据，这是一个用于测试和原型设计的虚虚拟在线 REST API。`response.json()` 方法用于解析响应。
+在这个示例中，使用 `fetch()` 函数从 `jsonplaceholder` API 获取数据，这是一个用于测试和原型设计的虚拟在线 REST API。`response.json()` 方法用于解析响应。
 
 ### 处理响应
 
-###fetch()` 函数返回一个 promise，该 promise 解析为一个 `Response` 对象。`Response` 对象包含了多个与响应数据交互的属性和方法，例如 `status`、`statusText` 和 `json()`（将体解析为 JSON）。
+`fetch()` 函数返回一个 `promise`，该 `promise` 解析为一个 `Response` 对象。`Response` 对象包含了多个与响应数据交互的属性和方法，例如 `status`、`statusText` 和 `json()`（将体解析为 JSON）。
 
 #### 示例：检查响应状态
 
@@ -2286,19 +2274,10 @@ fetch('https://jsonplaceholder.typicode.com/posts')
     return response.json();
   })
   .then(data => console.log(data))
-```
-
-
-
-
-
-```javascript
-.catch(error => console.error('There was a problem with the fetch operation:', error));
+  .catch(error => console.error('There was a problem with the fetch operation:', error));
 ```
 
 在这个示例中，我们检查了 `response.ok` 属性，这是一个布尔值，用于表示响应是否成功（状态码 200–299）。如果响应未成功，我们会抛出一个错误。
-
-***
 
 ## 8.3 发送 POST 请求
 
@@ -2308,35 +2287,24 @@ fetch('https://jsonplaceholder.typicode.com/posts')
 
 ```javascript
 const data = {
-
-title: 'New Post',
-
-body: 'This is the content of the post.',
-
-userId: 11};
+  title: 'New Post',
+  body: 'This is the content of the post.',
+  userId: 11
+};
 
 fetch('https://jsonplaceholder.typicode.com/posts', {
-
-method: 'POST',
-
-headers: {
-
-'Content-Type': 'application/json'
-
-},
-
-body: JSON.stringify(data)
-
+  method: 'POST',
+  headers: {
+    'Content-Type': 'application/json'
+  },
+  body: JSON.stringify(data)
 })
-.then(response => response.json())
-
-.then(data => console.log('Post created:', data))
-.catch(error => console.error('Error:', error));
+  .then(response => response.json())
+  .then(data => console.log('Post created:', data))
+  .catch(error => console.error('Error:', error));
 ```
 
 在这个示例中，我们发送了一个 POST 请求来创建一个新帖子。数据包含在请求正文中，并且我们指定了内容类型为 JSON。服务器将返回创建的帖子，我们将其打印到控制台。
-
-***
 
 ## 8.4 处理 API 请求中的错误
 
@@ -2346,26 +2314,17 @@ body: JSON.stringify(data)
 
 ```javascript
 fetch('https://jsonplaceholder.typicode.com/posts')
-
-.then(response => {
-
-if (!response.ok) {
-
-throw new Error(`HTTP error! Status: ${response.status}`);
-
-}
-
-return response.json();
-
-})
-.then(data => console.log(data))
-
-.catch(error => console.error('Error:', error));
+  .then(response => {
+    if (!response.ok) {
+      throw new Error(`HTTP error! Status: ${response.status}`);
+    }
+    return response.json();
+  })
+  .then(data => console.log(data))
+  .catch(error => console.error('Error:', error));
 ```
 
 在这个示例中，我们捕获了 `fetch` 操作期间发生的任何错误（无论是网络错误还是 HTTP 错误），并在控制台中显示错误信息。
-
-***
 
 ## 8.5 与 JSON 协作
 
@@ -2375,105 +2334,103 @@ API 通常以 JSON（JavaScript 对象表示法）格式发送和接收数据。
 
 ```javascript
 fetch('https://jsonplaceholder.typicode.com/posts')
-
-.then(response => response.json()) // 解析 JSON 响应
-
-.then(data => {
-
-data.forEach(post => {
-
-console.log(post.title);
-
-});
-
-})
-
-.catch(error => console.error('Error:', error));
+  .then(response => response.json()) // 解析 JSON 响应
+  .then(data => {
+    data.forEach(post => {
+      console.log(post.title);
+    });
+  })
+  .catch(error => console.error('Error:', error));
 ```
 
 在这个示例中，我们使用 `.json()` 方法将响应解析为 JSON，然后遍历数据以打印每个帖子的标题。
 
-***
-
 ## 8.6 在 fetch() 中使用 async/await
 
-`async/await` 语法可以与 `fetch()` 使用，让异步代码看起来更像同步代码，从而更容易阅读和维护。`await` 关键字会暂停代码的执行，直到 promise 解决（resolved）。
+`async/await` 语法可以与 `fetch()` 使用，让异步代码看起来更像同步代码，从而更容易阅读和维护。`await` 关键字会暂停代码的执行，直到 `promise` 解决（resolved）。
 
 ### 示例：在 fetch() 中使用 async/await
 
 ```javascript
 async function getPosts() {
-
-try {
-
-const response = await fetch('https://jsonplaceholder.typicode.com/posts');
-
-if (!response.ok) {
-
-throw new Error('Network response was not ok');
-
-}
-
-const data = await response.json();
-
-console.log(data);
-
-} catch (error) {
-
-console.error('There was a problem with the fetch operation:', error);
-
-}
-
+  try {
+    const response = await fetch('https://jsonplaceholder.typicode.com/posts');
+    if (!response.ok) {
+      throw new Error('Network response was not ok');
+    }
+    const data = await response.json();
+    console.log(data);
+  } catch (error) {
+    console.error('There was a problem with the fetch operation:', error);
+  }
 }
 
 getPosts();
 ```
 
-在这个示例中，我们使用 `async/await` 来处理 `fetch` 请求。`await` 关键字用于等待 `fetch()` promise 的解决，然后我们将响应处理为 JSON 对象。
+在这个示例中，我们使用 `async/await` 来处理 `fetch` 请求。`await` 关键字用于等待 `fetch()` `promise` 的解决，然后我们将响应处理为 JSON 对象。
 
-***
-
-## 8.7 在循环中进行 API 调用用
+## 8.7 在循环中进行 API 调用
 
 有时你需要进行多次 API 请求，例如当为多个资源获取数据时。你可以使用循环进行多次 `fetch` 调用，而 `async/await` 有助于确保每个请求在移动到下一个请求之前完成。
 
 ### 示例：获取多个资源
 
 ```javascript
+async function fetchMultipleResources() {
+  const urls = [
+    'https://jsonplaceholder.typicode.com/posts',
+    'https://jsonplaceholder.typicode.com/comments'
+  ];
+  
+  for (const url of urls) {
+    try {
+      const response = await fetch(url);
+      if (!response.ok) {
+        throw new Error(`HTTP error! Status: ${response.status}`);
+      }
+      const data = await response.json();
+      console.log(`Data from ${url}:`, data);
+    } catch (error) {
+      console.error(`Error fetching ${url}:`, error);
+    }
+  }
+}
+
+fetchMultipleResources();
+```
+
+在这个示例中，我们遍历了一个 URL 数组，并使用 `async/await` 按顺序从每个 URL 获取数据。`for...of` 循环确保每个请求在移动到下一个请求之前完成。
+
+
+
+```javascript
 async function getMultiplePosts() {
-
-const postIds = [1, 2, 3, 4, 5];
-
-for (let id of postIds) {
-
-const response = await fetch(`https://jsonplaceholder.typicode.com/posts/${id}`);
-
-const post = await response.json();
-
-console.log(post.title);
-
+  const postIds = [1, 2, 3, 4, 5];
+  for (let id of postIds) {
+    const response = await fetch(`https://jsonplaceholder.typicode.com/posts/${id}`);
+    const post = await response.json();
+    console.log(post.title);
+  }
 }
-
-}
-
 getMultiplePosts();
 ```
 
-在这个示例中，我们使用 `for...of` 循环来遍历 `postIds` 数组。对于每个 `id`，我们发起 API 请求来获取特定的帖子。
+在这个示例中，我们使用`for...of`循环来遍历`postIds`数组。对于每个`id`，我们发起 API 请求来获取特定的帖子。
 
-***
+---
 
 ## 8.8 结论
 
-在本章中，我们探索了如何使用 JavaScript 中的 `fetch()` 函数与 API 交互。我们涵盖了发送 GET 和 POST 请求的基础、处理响应、处理 JSON 数据以及处理错误。我们还介绍了 `async/await` 语法，它简化了异步代码的处理。
+在本章中，我们探索了如何使用 JavaScript 中的`fetch()`函数与 API 交互。我们涵盖了发送 GET 和 POST 请求的基础、处理响应、处理 JSON 数据以及处理错误。我们还介绍了`async/await`语法，它简化了异步代码的处理。
 
 API 是现代 Web 应用的关键组件，实现了动态内容以及与第三方服务的交互。通过本章获得的知识，你可以开始将 API 集成到你自己的项目中，允许你构建更具动态和交互性的 Web 应用。
 
 在下一章中，我们将讨论优化 JavaScript 代码和提高性能的高级技术，包括处理大型数据集和优化请求的提示。
 
-***
+---
 
-### 注意事项：
+### 注意事项
 
 - **练习**：尝试向 OpenWeather API、SpaceX API 或 GitHub API 发请求。这将巩固你对 API 的理解。
 - **真实世界应用**：从社交平台到天气应用，许多应用程序都高度依赖 API。在你的项目中尝试 API 以创建更丰富的交互体验。
@@ -2494,7 +2451,7 @@ JavaScript 有几种处理异步任务的关键技术：
 2. Promise (Promises)
 3. Async/Await
 
-每种技术都有自己的优点和适用场景，它们都助于更有效地管理异步操作。
+每种技术都有自己的优点和适用场景，它们都有助于更有效地管理异步操作。
 
 ## 9.2 理解回调
 
@@ -2504,30 +2461,20 @@ JavaScript 有几种处理异步任务的关键技术：
 
 ```javascript
 function fetchData(callback) {
-
-setTimeout(() => {
-
-const data = 'Data fetched from server';
-
-callback(data);
-
-}, 2000); // 模拟 2 秒的延迟
-
+  setTimeout(() => {
+    const data = 'Data fetched from server';
+    callback(data);
+  }, 2000); // 模拟 2 秒的延迟
 }
 
 function displayData(data) {
-
-console.log(data);
-
+  console.log(data);
 }
 
 fetchData(displayData); // 将 displayData 函数作为回调传递
 ```
 
-
-
-
-在这个示例中，`fetchData` 使用 `setTimeout` 模拟了一个异步操作（例如从服务器获取数据）。一旦获取到数据，它就会调用 `displayData` 函数并将数据作为参数传递。。
+在这个示例中，`fetchData`使用`setTimeout`模拟了一个异步操作（例如从服务器获取数据）。一旦获取到数据，它就会调用`displayData`函数并将数据作为参数传递。
 
 ### 回调地狱 (Callback Hell)
 
@@ -2545,11 +2492,11 @@ fetchData(function(data1) {
 
 这种方法很容易出错并且让代码更难调试。幸运的是，JavaScript 提供了更好的处理异步操作的方法，例如 promises。
 
-* * *
+---
 
 ## 9.3 理解 Promises
 
-`Promise` 是一个代表异步操作最终完成（或失败）的对象。与回调函数相比，`Promises` 提供了一种更简洁、更易管理的方法来处理异步代码。一个 promise 可以处于三种状态之一：
+`Promise`是一个代表异步操作最终完成（或失败）的对象。与回调函数相比，`Promises`提供了一种更简洁、更易管理的方法来处理异步代码。一个 promise 可以处于三种状态之一：
 
 1. `Pending`：初始状态，操作完成之前的状态。
 2. `Fulfilled`：操作成功完成。
@@ -2557,7 +2504,7 @@ fetchData(function(data1) {
 
 ### 创建一个 Promise
 
-你可以使用 `new Promise()` 构造函数创建一个 promise。在构造函数内部，你提供一个函数（称为执行器），它带有两个参数：`resolve` 和 `reject`。当操作成功时调用 `resolve`，操作失败时调用 `reject`。
+你可以使用`new Promise()`构造函数创建一个 promise。在构造函数内部，你提供一个函数（称为执行器），它带有两个参数：`resolve`和`reject`。当操作成功时调用`resolve`，操作失败时调用`reject`。
 
 ```javascript
 let myPromise = new Promise((resolve, reject) => {
@@ -2572,7 +2519,7 @@ let myPromise = new Promise((resolve, reject) => {
 
 ### 处理 Promises
 
-你可以使用 `.then()` 方法处理 promise 的成功结果，使用 `.catch()` 处理错误。这两个方法都会返回一个新的 promise，从而允许链式调用。
+你可以使用`.then()`方法处理 promise 的成功结果，使用`.catch()`处理错误。这两个方法都会返回一个新的 promise，从而允许链式调用。
 
 ```javascript
 myPromise
@@ -2602,17 +2549,17 @@ fetchData()
   });
 ```
 
-在这个示例中，第二个 `fetchData` 操作只有在第一个操作成功完成后后才会运行。
+在这个示例中，第二个`fetchData`操作只有在第一个操作成功完成后才会运行。
 
-* * *
+---
 
 ## 9.4 Async/Await 语法
 
-虽然 promises 大大改进了异步代码，但在处理多个操作时它们仍然可能很繁琐。ES2017 引入的 `async` 和 `await` 关键字通过允许以类似于同步的方式编写异步代码，简化了对 promises 的操作。
+虽然 promises 大大改进了异步代码，但在处理多个操作时它们仍然可能很繁琐。ES2017 引入的`async`和`await`关键字通过允许以类似于同步的方式编写异步代码，简化了对 promises 的操作。
 
 ### async 关键字
 
-`async` 关键字用于定义异步函数。一个 `async` 函数总是返回一个 promise。如果函数返回一个值，则 promise 将以该值解析。如果函数抛出错误，则 promise 将拒绝。
+`async`关键字用于定义异步函数。一个`async`函数总是返回一个 promise。如果函数返回一个值，则 promise 将以该值解析。如果函数抛出错误，则 promise 将拒绝。
 
 ```javascript
 async function myAsyncFunction() {
@@ -2623,7 +2570,7 @@ myAsyncFunction().then(result => console.log(result)); // 'Hello, world!'
 
 ### await 关键字
 
-`await` 关键字用于 `async` 函数内部，暂停函数的执行，直到 promise 解析完成。它简化了对 promises 的操作，使得异步代码更易阅读和理解。
+`await`关键字用于`async`函数内部，暂停函数的执行，直到 promise 解析完成。它简化了对 promises 的操作，使得异步代码更易阅读和理解。
 
 ```javascript
 async function fetchData() {
@@ -2634,11 +2581,11 @@ async function fetchData() {
 fetchData();
 ```
 
-在这个示例中，`await` 等待 `fetch()` promise 解析完成后，再继续将响应解析为 JSON。
+在这个示例中，`await`等待`fetch()` promise 解析完成后，再继续将响应解析为 JSON。
 
 ### 使用 async/await 处理错误
 
-你可以使用 `try/catch` 块在 `async/await` 函数中处理错误，这比使用 promises 的 `.catch()` 使错误处理更加简洁。
+你可以使用`try/catch`块在`async/await`函数中处理错误，这比使用 promises 的`.catch()`使错误处理更加简洁。
 
 ```javascript
 async function fetchData() {
@@ -2653,9 +2600,9 @@ async function fetchData() {
 fetchData();
 ```
 
-在这个示例中，`try` 块包含了异步代码，`catch` 块捕获了执行 `async` 函数期间发生的任何错误。
+在这个示例中，`try`块包含了异步代码，`catch`块捕获了执行`async`函数期间发生的任何错误。
 
-* * *
+---
 
 ## 9.5 实际示例：从多个 API 获取数据
 
@@ -2679,9 +2626,9 @@ async function fetchDataFromApis() {
 fetchDataFromApis();
 ```
 
-在这个示例中，第二个 `fetchData` 操作只有在第一个操作成功完成后后才会运行。
+在这个示例中，第二个`fetchData`操作只有在第一个操作成功完成后才会运行。
 
-* * *
+---
 
 ## 9.6 总结
 
@@ -2693,12 +2640,12 @@ fetchDataFromApis();
 
 异步编程是 JavaScript 开发者的一项重要技能，能够让你构建更快、响应更强的应用程序。在下一章中，我们将探索 JavaScript 中的错误处理，以及如何在同步和异步代码中有效处理异常。
 
-* * *
+---
 
-### 注意事项：
+### 注意事项
 
-- **实验**：练习使用 `promises` 和 `async/await` 请求 API 并处理响应。
-- **实际应用**：异步 JavaScript 广泛应用于，从获取用户数据到处理表单提交和实时更新。精通异步编程将提升你处理复杂动态应用程序的能力。
+- **实验**：练习使用`promises`和`async/await`请求 API 并处理响应。
+- **实际应用**：异步 JavaScript 广泛应用于从获取用户数据到处理表单提交和实时更新。精通异步编程将提升你处理复杂动态应用程序的能力。
 
 | ![image](img/chapter_title_corner_decoration_left.png) |  | ![image](img/chapter_title_corner_decoration_right.png) |
 
@@ -2710,30 +2657,21 @@ fetchDataFromApis();
 
 在我们结束这本全面的 JavaScript 指南之际，回顾一下我们所经历的历程以及你所获得的基础知识是重要的。从理解 JavaScript 的核心语法和数据结构到探索异步编程等更高级的概念，我们涵盖了广泛的主题，将使你能够编写高效、简洁且易于维护的代码。
 
-* * *
+---
 
 ## 10.1 所学知识回顾
 
 在本书中，我们探索了各种 JavaScript 主题，从基础开始到更复杂的技术：
 
 1. **JavaScript 基础**：我们从基本语法开始，包括变量、数据类型和运算符。这些构建模块是所有 JavaScript 应用程序的基础。
+2. **控制流与函数**：理解如何通过循环、条件和函数控制程序的执行流对于任何开发者来说至关重要。我们学习了如何创建函数、传递参数和返回值，以及如何编写更具动态且可重用的代码。
+3. **对象和数组**：这些是 JavaScript 中的主要数据结构。我们研究了如何创建和操作对象与数组，允许我们以结构化的方式存储和访问数据。
+4. **DOM 操作**：通过文档对象模型 (DOM)，我们学习了如何通过编程与 HTML 和 CSS 交互，使我们能够动态更新和修改网页内容。
+5. **事件处理**：我们探索了 JavaScript 如何处理点击、鼠标移动和键盘输入等用户交互。事件监听器允许我们响应用户操作并构建交互式应用程序。
+6. **异步 JavaScript**：这可能是现代 JavaScript 最强大的方面之一，异步编程允许我们执行网络请求、文件处理等耗时任务，而不会阻塞应用程序的主线程。我们涵盖了回调 (callbacks)、`promises`和`async/await`语法，它们共同为处理异步操作提供了一种更易于管理的方法。
+7. **错误处理**：我们还讨论了在同步和异步代码中错误处理的重要性。学习如何优雅地捕获和处理错误可以确保你的应用程序更加健壮且对用户友好。
 
-
-
-
-## 2. 控制流与函数：理解如何通过循环、条件和函数控制程序的执行流对于任何开发者来说至关重要。我们学习了如何创建函数、传递参数和返回值，以及如何编写更具动态且可重用的代码。
-
-## 3. 对象和数组：这些是 JavaScript 中的主要数据结构。我们研究了如何创建和操作对象与数组，允许我们以结构化的存储和访问数据。
-
-## 4. DOM 操作：通过文档对象模型 (DOM)，我们学习了如何通过编程与 HTML 和 CSS 交互，使我们能够动态更新和修改网页内容。
-
-## 5. 事件处理：我们探索了 JavaScript 如何处理点击、鼠标移动和键盘输入等用户交互。事件监听器允许我们响应用户操作并构建交互式应用程序。
-
-## 6. 异步 JavaScript：这可能是现代 JavaScript 最强大的方面之一，异步编程允许我们执行网络请求、文件处理等耗时任务，而不会阻塞应用程序的主线程。我们涵盖了回调 (callbacks)、`promises` 和 `async/await` 语法，它们共同为处理异步操作提供了一种更易于管理的方法。
-
-## 7. 错误处理：我们还讨论了在同步和异步代码中错误处理的重要性。学习如何优雅地捕和处理错误可以确保你的应用程序更加健壮且对用户友好。
-
-***
+---
 
 ## 10.2 前行之路：你的 JavaScript 之旅程下一步是什么？
 
@@ -2745,38 +2683,40 @@ fetchDataFromApis();
 
 - ES6+ 特性：JavaScript 不断更新，定期引入新特性。学习现代 JavaScript 特性，如类、模块、解构和模板字符串将帮助你与语言保持同步。
 - 函数式编程：JavaScript 支持函数式编程范式，强调不可变性、一等函数和高阶函数。理解这些概念将允许你编写更具表达力且简洁的代码。
-- JavaScript 框架：许多现代 Web 应用是使用 `React`、`Angular` 和 `Vue` 等 JavaScript 框架构建的。这些框架抽象了 JavaScript 的某些复杂性，并为构建大型应用提供了工具。
-- Node.js：如果你对全栈开发感兴趣，学习 `Node.js` 将允许你编写服务器端 JavaScript。`Node.js` 在构建快速、可扩展的 Web 服务器和 API 非常流行。
+- JavaScript 框架：许多现代 Web 应用是使用`React`、`Angular`和`Vue`等 JavaScript 框架构建的。这些框架抽象了 JavaScript 的某些复杂性，并为构建大型应用提供了工具。
+- Node.js：如果你对全栈开发感兴趣，学习`Node.js`将允许你编写服务器端 JavaScript。`Node.js`在构建快速、可扩展的 Web 服务器和 API 非常流行。
 
-***
+---
 
 ### 10.2.2 实践与构建项目
 
 提高 JavaScript 技能的最好方法是通过真实项目应用你所学的内容。这里是一些想法：
 
 - 构建 Web 应用：创建一个能够 API 调用并动态显示结果的简单 Web 应用。这可以是从天气应用到电影搜索应用的任何内容。
-- 游戏开发：JavaScript 被广泛用于构建浏览器的游戏。你可以尝试构建简单的游戏，如井井棋、吃蛇游戏，甚至使用 `Phaser` 等框架构建更复杂的游戏。
+- 游戏开发：JavaScript 被广泛用于构建浏览器的游戏。你可以尝试构建简单的游戏，如井字棋、贪吃蛇游戏，甚至使用`Phaser`等框架构建更复杂的游戏。
 - 贡献开源：贡献开源项目是与其他开发者协作、学习最佳实践和提高技能的极佳方式。
 
-***
+---
 
 ## 10.3 为什么 JavaScript 很重要
 
-JavaScript 是现代 Web 开发的骨柱。它允许开发者创建交互式动态的网页、移动应用，甚至是服务器端应用程序。它的多功能性结合巨大的库和框架生态系统，使得 JavaScript 成为开发者工具箱中最强大的工具之一。
+JavaScript 是现代 Web 开发的骨干。它允许开发者创建交互式动态的网页、移动应用，甚至是服务器端应用程序。它的多功能性结合巨大的库和框架生态系统，使得 JavaScript 成为开发者工具箱中最强大的工具之一。
 
-无论你是在寻找构建简单的网站还是复杂的 Web 应用，JavaScript 都提供了你所需的功能和灵活性。对 JavaScript 开发者的需求持续增长，使其成为任何对科技行业感兴趣的人来说必不可缺的语言。
+无论你是在寻找构建简单的网站还是复杂的 Web 应用，JavaScript 都提供了你所需的功能和灵活性。对 JavaScript 开发者的需求持续增长，使其成为任何对科技行业感兴趣的人来说必不可少的语言。
 
-***
+---
 
 ## 10.4 结语
 
-掌握 JavaScript 需要时间和实践，但你在书中学到的技能将带你走上通成为熟练开发者的道路。当你继续实验、构建项目和探索新技术时，请记住学习是一个持续的过程。不断挑战你用 JavaScript 能成就的边界。
+掌握 JavaScript 需要时间和实践，但你在书中学到的技能将带你走上成为熟练开发者的道路。当你继续实验、构建项目和探索新技术时，请记住学习是一个持续的过程。不断挑战你用 JavaScript 能成就的边界。
 
-在这段旅程结束时，你不仅对 JavaScript 有深入的理解，还有信心应对更复杂的挑战。继续编码，继续学习，继续创造惊不起的事吧！
+在这段旅程结束时，你不仅对 JavaScript 有深入的理解，还有信心应对更复杂的挑战。继续编码，继续学习，继续创造了不起的事吧！
 
-***
+---
 
 ### 感谢
+
+
 
 感谢选择这本书来指导你的 JavaScript 学习体验。我们希望你获得的知识将帮助你作为开发者不断成长，并启发你为 Web 创建创新的解决方案。编码愉快！
 
@@ -2794,13 +2734,13 @@ JavaScript 是现代 Web 开发的骨柱。它允许开发者创建交互式动�
 
 ## 附录 A：JavaScript 快速查表
 
-此快速查表包含了 JavaScript 语法和概念的快速参考指南。它的设计旨在帮助你在在使用 JavaScript 时轻松回忆重要信息。
+此快速查表包含了 JavaScript 语法和概念的快速参考指南。它的设计旨在帮助你在使用 JavaScript 时轻松回忆重要信息。
 
 ### 变量与常量
 
-- `var`: 声明变量（可以重新赋值）。
-- `let`: 声明块作用域变量（可以重新赋值）。
-- `const`: 声明块作用域常量（不能重新赋值）。
+- `var`：声明变量（可以重新赋值）。
+- `let`：声明块作用域变量（可以重新赋值）。
+- `const`：声明块作用域常量（不能重新赋值）。
 
 ```javascript
 let myVar = 'Hello!';
@@ -2809,13 +2749,13 @@ const myConst = 42;
 
 ### 数据类型
 
-- `String`: 字符序列。
-- `Number`: 数值（整数或浮点数）。
-- `Boolean`: 真或假。
-- `Object`: 键值对集合。
-- `Array`: 有序值列表。
-- `Null`: 表示无值或对象的特殊值。
-- `Undefined`: 未被赋值的变量。
+- `String`：字符序列。
+- `Number`：数值（整数或浮点数）。
+- `Boolean`：真或假。
+- `Object`：键值对集合。
+- `Array`：有序值列表。
+- `Null`：表示无值或对象的特殊值。
+- `Undefined`：未被赋值的变量。
 
 ```javascript
 let myString = "JavaScript";
@@ -2829,18 +2769,23 @@ let myUndefined;
 ### 函数
 
 - 函数声明：
+
 ```javascript
 function greet(name) {
   return `Hello, ${name}!`;
 }
 ```
+
 - 函数表达式：
+
 ```javascript
 const greet = function(name) {
   return `Hello, ${name}!`;
 };
 ```
+
 - 箭头函数：
+
 ```javascript
 const greet = (name) => `Hello, ${name}!`;
 ```
@@ -2853,114 +2798,132 @@ const greet = (name) => `Hello, ${name}!`;
 
 ### 常见错误
 
-语法错误 (SyntaxError)：当代码语法出现错误时发生。
+**语法错误 (SyntaxError)**：当代码语法出现错误时发生。
 
 示例：
+
 ```javascript
 let name = "John;
 ```
+
 解决方案：确保所有引号都正确关闭。
 
 ```javascript
 let name = "John";
 ```
 
-引用错误 (ReferenceError)：当尝试访问不存在或未声明的变量时发生。
+**引用错误 (ReferenceError)**：当尝试访问不存在或未声明的变量时发生。
 
 示例：
+
 ```javascript
 console.log(nonExistentVariable);
 ```
-解决方案：确保在在使用变量前已对其声明。
 
-类型错误 (TypeError)：当你尝试对类型错误的变量执行操作时发生。
+解决方案：确保在使用变量前已对其声明。
+
+**类型错误 (TypeError)**：当你尝试对类型错误的变量执行操作时发生。
 
 示例：
+
 ```javascript
 let myNumber = 10;
 myNumber.toUpperCase();
 ```
 
+解决方案：确保你调用了适用于数据类型的方法。
 
-
-
-
-## 1. 解决方案：确保你调用了适用于数据类型的方法。
-
-`RangeError`：当值超出有效范围时发生此错误。
+**`RangeError`**：当值超出有效范围时发生此错误。
 
 示例：
+
 ```javascript
 let myArray = [1, 2, 3];
 console.log(myArray[5]);
 ```
 
-## 1. 解决方案：确保索引在数组范围内。
+解决方案：确保索引在数组范围内。
 
 ### 调试技巧
 
-- 使用 `console.log()`：这是调试代码最简单且有效的方法。添加 `console.log()` 语句来检查程序中不同位置变量的值。
+- 使用`console.log()`：这是调试代码最简单且有效的方法。添加`console.log()`语句来检查程序中不同位置变量的值。
 
 ```javascript
 let myNumber = 10;
 console.log(myNumber); // 检查 myNumber 的值
 ```
 
-- 使用**断点 (Breakpoints)**：如果你正在使用浏览开发者工具，可以在代码中设置断点。这允许你暂停代码执行并逐步检查变量。
+- 使用**断点 (Breakpoints)**：如果你正在使用浏览器开发者工具，可以在代码中设置断点。这允许你暂停代码执行并逐步检查变量。
 
-- 使用 `debugger` 关键字：你也可以在代码中添加 `debugger` 关键字。这会在该处暂停执行并打开调试工具。
+- 使用`debugger`关键字：你也可以在代码中添加`debugger`关键字。这会在该处暂停执行并打开调试工具。
 
 ```javascript
 debugger;
 ```
 
-- 2. 检查常见错误：如果你遇到似乎无法解决的问题，请检查常见的 JavaScript 错误，例如括号不匹配、漏掉分号或变量声明不正确。
+- 检查常见错误：如果你遇到似乎无法解决的问题，请检查常见的 JavaScript 错误，例如括号不匹配、漏掉分号或变量声明不正确。
 
 ***
 
 ## 附录 C：JavaScript 资源
 
-是一些用于继续学习 JavaScript 的优质在线资源，无论你是初学者还是高级开发人员。
+以下是一些用于继续学习 JavaScript 的优质在线资源，无论你是初学者还是高级开发人员。
 
 ### 文档与指南
 
 1. **MDN Web Docs (Mozilla 网络)**
-   `MDN` 是 JavaScript 文档、教程和指南最全面、最新的资源。
-[MDN JavaScript 指南](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+
+   `MDN`是 JavaScript 文档、教程和指南最全面、最新的资源。
+
+   [MDN JavaScript 指南](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 
 2. **JavaScript.info**
+
    该网站提供完整的教程系列，涵盖了从基础到高级的 JavaScript 全语言主题。
-[JavaScript.info](https://javascript.info/)
+
+   [JavaScript.info](https://javascript.info/)
 
 3. **W3Schools**
+
    学习 JavaScript 基础的友好资源。
-W3Schools JavaScript 教程
+
+   [W3Schools JavaScript 教程](https://www.w3schools.com/js/)
 
 ### 书籍
 
-1. "**You Don’t Know JS**”（Kyle Simpson 著）
+1. **"You Don’t Know JS"**（Kyle Simpson 著）
+
    对 JavaScript 进行深度解析，涵盖了语言的基础和高级方面。想要真正理解 JavaScript 的开发者必读。
 
-2. "**Eloquent JavaScript****（Marijn Haverbeke 著）
-   一本学习 JavaScript 的优秀书籍，带有交互式示例和挑战。可以在网上免费阅读。
-[Eloquent JavaScript](https://eloquentjavascript.net/)
+2. **"Eloquent JavaScript"**（Marijn Haverbeke 著）
 
-3. "**JavaScript: The Good Parts****（Douglas Crockford 著）
+   一本学习 JavaScript 的优秀书籍，带有交互式示例和挑战。可以在网上免费阅读。
+
+   [Eloquent JavaScript](https://eloquentjavascript.net/)
+
+3. **"JavaScript: The Good Parts"**（Douglas Crockford 著）
+
    此书专注于 JavaScript 最优雅、最强大的功能，提供了语言的简洁概述。
 
 ### 在线课程
 
 1. **freeCodeCamp**
-   `freeCodeCamp` 提供了一个完全免费的 JavaScript 课程，带你从基础主题到高级主题。
-freeCodeCamp JavaScript 课程
+
+   `freeCodeCamp`提供了一个完全免费的 JavaScript 课程，带你从基础主题到高级主题。
+
+   [freeCodeCamp JavaScript 课程](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/)
 
 2. **Codecademy**
-   `Codecademy` 提供 JavaScript 的交互式课程，包括实际练习。
-Codecademy JavaScript
+
+   `Codecademy`提供 JavaScript 的交互式课程，包括实际练习。
+
+   [Codecademy JavaScript](https://www.codecademy.com/learn/introduction-to-javascript)
 
 3. **Udemy**
-   `Udemy` 拥有广泛的 JavaScript 课程，从入门到高级不等，其中许多课程优惠且提供永久访问权限。
-Udemy JavaScript 课程
+
+   `Udemy`拥有广泛的 JavaScript 课程，从入门到高级不等，其中许多课程优惠且提供永久访问权限。
+
+   [Udemy JavaScript 课程](https://www.udemy.com/topic/javascript/)
 
 ***
 
@@ -2970,24 +2933,27 @@ Udemy JavaScript 课程
 
 ### 1. 使用一致的命名规范
 
-- **驼峰命名法 (CamelCase)**：变量和函数名使用 `camelCase`。这意味着以小字母开头，后续单词的首字母大写。
-示例：`let myVariableName = "Hello";`
+- **驼峰命名法 (CamelCase)**：变量和函数名使用`camelCase`。这意味着以小写字母开头，后续单词的首字母大写。
 
-- **帕斯驼命名法 (PascalCase)**：类名和构造函数使用 `PascalCase`。
-示例：`class MyClass {}`
+  示例：`let myVariableName = "Hello";`
+
+- **帕斯卡命名法 (PascalCase)**：类名和构造函数使用`PascalCase`。
+
+  示例：`class MyClass {}`
 
 ### 2. 避免全局变量
 
-全局变量会导致不可预测的行为，特别是当你的代码库变得时。使用 `let` 或 `const` 在块或函数内部声明变量以避免污染全局作用域。
+全局变量会导致不可预测的行为，特别是当你的代码库变得庞大时。使用`let`或`const`在块或函数内部声明变量以避免污染全局作用域。
 
 ### 3. 保持函数短小专注
 
-函数应该执行单一且定义良好的任务。如果一个函数执行过多，将难以理解和维护。将较大的函数拆分为较小的函数，使代码更具模块化。
+函数应该执行单一且定义良好的任务。如果一个函数执行过多操作，将难以理解和维护。将较大的函数拆分为较小的函数，使代码更具模块化。
 
 ### 4. 使用描述性的变量名
 
-为变量和函数选择有意义的名字。避免使用如 `x` 或 `temp` 等模糊的名称。相反，使用描述变量内容的名称。
-示例：`let userAge = 30;`
+为变量和函数选择有意义的名字。避免使用如`x`或`temp`等模糊的名称。相反，使用描述变量内容的名称。
+
+  示例：`let userAge = 30;`
 
 ### 5. 为你的代码注释
 
@@ -3008,9 +2974,9 @@ function calculateArea(width, height) {
 
 - **API** (应用程序编程接口)：一组协议和工具，允许不同的软件应用程序相互进行通信。
 - **回调函数 (Callback)**：作为参数传递给另一个函数，并在操作完成后执行。
-- **Promise** (承诺)：一个代表异步操作最终最终完成或失败的对象。
+- **Promise** (承诺)：一个代表异步操作最终完成或失败的对象。
 - **DOM** (文档对象模型)：用于 Web 文档的编程接口，允许你操作网页的结构、样式和内容。
-- **闭包 (Closure)**：函数保留了对其词法作用域变量的访问权限，即使在外部函数执行完毕后也是。
+- **闭包 (Closure)**：函数保留了对其词法作用域变量的访问权限，即使在外部函数执行完毕后也是如此。
 - **事件监听器 (Event Listener)**：等待并响应事件（如用户点击或按键）的函数。
 
 ***
@@ -3021,5 +2987,4 @@ function calculateArea(width, height) {
 
 我们重视你的反馈！
 
-如果你觉得这本书有帮助，请考虑留下评价。你的反馈帮助我们改进，并让其他人发现学习 JavaScript 的价值资源。感谢你的支持，并祝你的编程之旅一风顺！
-
+如果你觉得这本书有帮助，请考虑留下评价。你的反馈帮助我们改进，并让其他人发现学习 JavaScript 的价值资源。感谢你的支持，并祝你的编程之旅一帆风顺！

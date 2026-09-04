@@ -1,22 +1,5 @@
-# 7.7 SSE：服务器发送事件
 
-*   概述
-*   客户端代码
-    *   概述
-    *   建立连接
-    *   open 事件
-    *   message 事件
-    *   error 事件
-    *   自定义事件
-    *   close 方法
-    *   数据格式
-        *   概述
-        *   data：数据栏
-        *   id：数据标识符
-        *   event 栏：自定义信息类型
-        *   retry：最大间隔时间
-    *   服务器代码
-    *   参考链接
+# 7.7 SSE：服务器发送事件
 
 ## 概述
 
@@ -26,7 +9,7 @@
 
 简单说，所谓 SSE，就是浏览器向服务器发送一个 HTTP 请求，然后服务器不断单向地向浏览器推送“信息”（message）。这种信息在格式上很简单，就是“信息”加上前缀“data: ”，然后以“\n\n”结尾。
 
-```js
+```
 $ curl http://example.com/dates
 data: 1394572346452
 
@@ -354,7 +337,11 @@ sendMsg($serverTime, 'server time: ' . date("h:i:s", time()));
 ## 参考链接
 
 *   Colin Ihrig, [Implementing Push Technology Using Server-Sent Events](http://jspro.com/apis/implementing-push-technology-using-server-sent-events/)
+
 *   Colin Ihrig，[The Server Side of Server-Sent Events](http://cjihrig.com/blog/the-server-side-of-server-sent-events/)
+
 *   Eric Bidelman, [Stream Updates with Server-Sent Events](http://www.html5rocks.com/en/tutorials/eventsource/basics/)
+
 *   MDN，[Using server-sent events](https://developer.mozilla.org/en-US/docs/Server-sent_events/Using_server-sent_events)
+
 *   Segment.io, [Server-Sent Events: The simplest realtime browser spec](https://segment.io/blog/2014-04-03-server-sent-events-the-simplest-realtime-browser-spec/)

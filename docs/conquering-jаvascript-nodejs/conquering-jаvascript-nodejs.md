@@ -1,43 +1,37 @@
+
 # Node.js 征服指南
-
-
-
-
-
-
 
 ![](img/0910e964adc1d4e011635b07233a41cb_0_0.png)
 
+毫无疑问，JavaScript 是当今最突出、最常用的客户端编程语言之一。近年来，JavaScript 的应用范围不断扩大，现已扩展到服务器端开发领域。Node.js 是一个极其流行的 JS 框架，专为快速的 Web 和应用程序开发而设计。
 
-毫无疑问，JavaScript是当今最突出、最常用的客户端编程语言之一。近年来，JavaScript的应用范围不断扩大，现已扩展到服务器端开发领域。Node.js是一个极其流行的JS框架，专为快速的Web和应用程序开发而设计。
-
-**征服JavaScript：Node.js**帮助读者掌握Node.js框架，以实现更快、更稳健的开发。本书是一本详尽的指南，旨在帮助开发者和程序员利用Node.js完成更多工作。书中简要讨论了基础知识，随后深入到更高级、更详细的实践练习，帮助读者快速获得所需知识。
+**征服 JavaScript：Node.js** 帮助读者掌握 Node.js 框架，以实现更快、更稳健的开发。本书是一本详尽的指南，旨在帮助开发者和程序员利用 Node.js 完成更多工作。书中简要讨论了基础知识，随后深入到更高级、更详细的实践练习，帮助读者快速获得所需知识。
 
 **主要特点：**
 
--   探讨如何将Node.js用于解决实际问题
--   全面覆盖全栈开发
--   涵盖使用Node.js进行服务器端开发
+- 探讨如何将 Node.js 用于解决实际问题
+- 全面覆盖全栈开发
+- 涵盖使用 Node.js 进行服务器端开发
 
-本书对于Node.js开发者以及参与游戏开发、移动应用、渐进式应用，乃至桌面应用开发的人员来说，都是一本宝贵的参考书。
+本书对于 Node.js 开发者以及参与游戏开发、移动应用、渐进式应用，乃至桌面应用开发的人员来说，都是一本宝贵的参考书。
 
 # 关于本系列
 
-征服JavaScript系列涵盖与JavaScript编程生态系统相关的广泛主题，例如框架和库。本系列的每一本书都聚焦于一个特定主题，并对其进行深入探讨，特别强调实际应用和代码导向的方法，遵循行业标准的编码范式，以帮助学习者获得可直接应用于实际项目的实用技能。
+征服 JavaScript 系列涵盖与 JavaScript 编程生态系统相关的广泛主题，例如框架和库。本系列的每一本书都聚焦于一个特定主题，并对其进行深入探讨，特别强调实际应用和代码导向的方法，遵循行业标准的编码范式，以帮助学习者获得可直接应用于实际项目的实用技能。
 
 本系列书籍的一些关键特点是：
 
--   文字清晰明了，涵盖按相关性排序的各种JavaScript主题。
--   特别注重实践练习，提供大量代码示例和程序。
--   通过分步教程和演练，引导JS编码过程。
--   高度强调技能的实际效用，剔除冗余和很少使用的概念及臃肿功能。
--   提供广泛的参考资料和资源，帮助读者从书中获得最大收益。
+- 文字清晰明了，涵盖按相关性排序的各种 JavaScript 主题。
+- 特别注重实践练习，提供大量代码示例和程序。
+- 通过分步教程和演练，引导 JS 编码过程。
+- 高度强调技能的实际效用，剔除冗余和很少使用的概念及臃肿功能。
+- 提供广泛的参考资料和资源，帮助读者从书中获得最大收益。
 
-*征服JavaScript*系列书籍假定读者具备基本的编码基础知识。
+*征服 JavaScript* 系列书籍假定读者具备基本的编码基础知识。
 
-*征服JavaScript*由Sufyan bin Uzayr编辑，他是一位在计算机领域拥有超过十年经验的作家和教育工作者。Sufyan拥有多个学位，曾在全球多所大学和机构任教。迄今为止，他已撰写和编辑了超过50本书，为本系列带来了丰富的经验。您可以在[sufyanism.com](http://sufyanism.com)了解更多关于他的作品。
+*征服 JavaScript* 由 Sufyan bin Uzayr 编辑，他是一位在计算机领域拥有超过十年经验的作家和教育工作者。Sufyan 拥有多个学位，曾在全球多所大学和机构任教。迄今为止，他已撰写和编辑了超过 50 本书，为本系列带来了丰富的经验。您可以在 [sufyanism.com](http://sufyanism.com) 了解更多关于他的作品。
 
-https://www.routledge.com/Conquering-JavaScript/book-series/CRCCONJAV
+<https://www.routledge.com/Conquering-JavaScript/book-series/CRCCONJAV>
 
 ![](img/0910e964adc1d4e011635b07233a41cb_3_0.png)
 
@@ -45,14 +39,7 @@ https://www.routledge.com/Conquering-JavaScript/book-series/CRCCONJAV
 
 ![](img/0910e964adc1d4e011635b07233a41cb_6_0.png)
 
-
-
-
-
-
-## 第1章
-
-## 简介
+# 第 1 章 简介
 
 ## 本章内容
 
@@ -66,7 +53,7 @@ JavaScript 无疑是当前最知名、使用最广泛的客户端编程语言之
 
 近年来，JavaScript 的应用范围不断扩大，现在也用于服务器端开发。毫无疑问，Node.js 是推动 Web 开发这一巨大变革的关键力量。
 
-在开发者社区中，有人将 Node.js 这一技术誉为"下一个 Ruby on Rails"。然而，它并非万能钥匙，并不适用于所有编程场景。由于该框架是基于广泛使用的 JavaScript 构建的，入门门槛出奇地低，而且使用 Node 构建应用——尤其是低延迟、实时应用——的理由也变得越来越有说服力。
+在开发者社区中，有人将 Node.js 这一技术誉为“下一个 Ruby on Rails”。然而，它并非万能钥匙，并不适用于所有编程场景。由于该框架是基于广泛使用的 JavaScript 构建的，入门门槛出奇地低，而且使用 Node 构建应用——尤其是低延迟、实时应用——的理由也变得越来越有说服力。
 
 Node.js 是一个开源、跨平台的 JavaScript 运行时环境，几乎适用于任何任务。Node.js 在浏览器之外运行 V8 JavaScript 引擎，而该引擎正是 Google Chrome 的核心。因此，Node.js 速度极快。
 
@@ -74,15 +61,15 @@ Node.js 是一个开源、跨平台的 JavaScript 运行时环境，几乎适用
 
 Node.js 还附带了更大的 JavaScript 模块库，极大地简化了 Node.js Web 应用的构建过程。
 
-```
+```text
 Node.js = Runtime Environment + JavaScript Library
 ```
 
-简而言之，这意味着整个站点可以在单一"技术栈"上运行，让你能够专注于项目的业务目标，而非开发和维护。由于 Node.js 是开源的，它完全免费使用，并由全球开发者社区不断更新和改进。需要记住的是，Node.js 是一个运行时环境，而不是像传统应用软件那样的框架或库。
+简而言之，这意味着整个站点可以在单一“技术栈”上运行，让你能够专注于项目的业务目标，而非开发和维护。由于 Node.js 是开源的，它完全免费使用，并由全球开发者社区不断更新和改进。需要记住的是，Node.js 是一个运行时环境，而不是像传统应用软件那样的框架或库。
 
 运行时环境（也称为 RTE）是一组开发者可用于编写代码的 Web API，以及一个用于读取代码的 JavaScript 引擎。这使其轻量级、适应性强且易于部署，所有这些都将帮助你优化和加速应用项目。
 
-**数据类型**：Node.js 包含多种与 JavaScript 中类似的数据类型。
+**数据类型：** Node.js 包含多种与 JavaScript 中类似的数据类型。
 
 - 布尔值（Boolean）
 - 未定义（Undefined）
@@ -90,81 +77,89 @@ Node.js = Runtime Environment + JavaScript Library
 - 字符串（String）
 - 数字（Number）
 
-**松散类型**：Node.js 采用松散类型，这意味着你无需事先定义变量中将存放何种数据。在 Node.js 中，我们使用 var 关键字来声明任何类型的变量。
+**松散类型：** Node.js 采用松散类型，这意味着你无需事先定义变量中将存放何种数据。在 Node.js 中，我们使用 `var` 关键字来声明任何类型的变量。
 
-### 示例：
+### 示例
 
-```
+```javascript
 // Variable store number data type
 var a = 40;
 console.log(typeof a);
+
 // Variable store string data type
 a = "GOOD MORNING";
 console.log(typeof a);
+
 // Variable store Boolean data type
 a = False;
 console.log(typeof a);
+
 // Variable store undefined (no value) data type
 b = No value;
 console.log(typeof a);
 ```
 
-**对象和函数**：Node.js 对象与 JavaScript 对象相同，类似于变量，包含多个以名称:值对形式键入的值。程序中的名称和值之间用冒号分隔，每对之间用逗号分隔。
+**对象和函数：** Node.js 对象与 JavaScript 对象相同，类似于变量，包含多个以名称:值对形式键入的值。程序中的名称和值之间用冒号分隔，每对之间用逗号分隔。
 
-### 示例：
+### 示例
 
-```
+```javascript
 var company = {
     Name: "JOHNNY DEPP",
     Address: "LOS ANGELIS",
     Contact: "+119865432109",
     Email: "johnny.depp@yahoo.org"
 };
+
 // Display the object information
 console.log("Data of Customer:", customer);
+
 // Display the type of variable
 console.log("Data of Customer:", typeof customer);
 ```
 
-**函数**：Node.js 中的函数通过 function 关键字定义，后跟函数名和参数。在 Node.js 中，我们不必为参数声明数据类型，也不必检查接收到的参数数量。Node.js 函数遵循适用于 JavaScript 函数的所有规则。
+**函数：** Node.js 中的函数通过 `function` 关键字定义，后跟函数名和参数。在 Node.js 中，我们不必为参数声明数据类型，也不必检查接收到的参数数量。Node.js 函数遵循适用于 JavaScript 函数的所有规则。
 
-**示例：**
+### 示例
 
-```
+```javascript
 function divide(num1, num2) {
-// It returns the division
-// of num1 and num2
-return num1 / num2;
+    // It returns the division
+    // of num1 and num2
+    return num1 / num2;
 }
+
 // Declare variable
 var a = 4;
 var b = 16;
+
 // Display the answer returned by
 // divide function
-console.log ("Division of", a,
+console.log("Division of", a,
             "and", b, "is", multiply(a, b));
 ```
 
-正如上面的示例所示，我们创建了一个名为"multiply"的函数，其参数与 JavaScript 中的相同。
+正如上面的示例所示，我们创建了一个名为“multiply”的函数，其参数与 JavaScript 中的相同。
 
-**字符串和字符串函数：** 我们可以使用双引号（""）和单引号（''）将值赋给字符串变量，并且它包含许多用于操作字符串的函数。
+**字符串和字符串函数：** 我们可以使用双引号（`""`）和单引号（`''`）将值赋给字符串变量，并且它包含许多用于操作字符串的函数。
 
 在 Node.js 中，以下是定义字符串变量和函数的示例。
 
-```
+```javascript
 var a = "Welcome to LOS ANGLIS ";
 var b = 'City in Unites States of America';
 var c = ['United', 'States', 'of', 'America'];
+
 console.log(a);
 console.log(b);
 console.log("Concat Using (+) :", (a + b));
 console.log("Concat Using Function :", (a.concat(b)));
 console.log("Split string: ", a.split(' '));
 console.log("Join string: ", c.join(', '));
-console.log("Char At Index 6: ", x.charAt(6) );
+console.log("Char At Index 6: ", x.charAt(6));
 ```
 
-**缓冲区（Buffer）：** Node.js 中的数据类型"Buffer"用于存储二进制数据，在从文件读取数据或通过网络接收数据包时非常方便。
+**缓冲区（Buffer）：** Node.js 中的数据类型“Buffer”用于存储二进制数据，在从文件读取数据或通过网络接收数据包时非常方便。
 
 - ANGULAR 应用 149
   - Angular 和 Node API 的协同工作 152
@@ -183,7 +178,7 @@ Sufyan 精通多种技术，如 JavaScript、Dart、WordPress、Drupal、Linux �
 
 Sufyan 是一名数字游民，他的时间分配在四个国家之间。他曾在全球多所大学和教育机构生活和教学。Sufyan 对技术、政治、文学、历史和体育有着浓厚的兴趣，在业余时间，他喜欢教年轻学生编程和英语。
 
-了解更多请访问 [sufyanism.com](http://sufyanism.com)
+了解更多请访问 [sufyanism.com](http://sufyanism.com)。
 
 ## 致谢
 
@@ -201,7 +196,7 @@ Sufyan bin Uzayr
 
 ## Zeba Academy —— 征服 JavaScript
 
-"征服 JavaScript"系列丛书由 Zeba Academy 团队成员撰写，在 Sufyan bin Uzayr 的带领下，团队成员包括：
+“征服 JavaScript”系列丛书由 Zeba Academy 团队成员撰写，在 Sufyan bin Uzayr 的带领下，团队成员包括：
 
 - Divya Sachdeva
 - Jaskiran Kaur
@@ -215,24 +210,22 @@ Zeba Academy 是一个教育科技企业，主要为 STEM 领域的学习者开�
 
 此外，Zeba Academy 积极在独联体国家开展 IT 学校项目，目前正在与众多大学和机构合作。
 
-更多信息，请访问 https://zeba.academy
+更多信息，请访问 <https://zeba.academy>。
 
-
-
- ## 使用 Node.js 编写的控制台应用程序：
+## 使用 Node.js 编写的控制台应用程序
 
 创建一个包含以下代码的 `console.js` 文件：
 
-```
+```javascript
 console.log('Hello this is the United States of America');
 console.log('This is a country');
 ```
 
-// 在控制台中，将打印上述两行内容。
+在控制台中，将打印上述两行内容。
 
-要启动此文件，请打开 node.js 命令提示符并导航到 `console.js` 文件所在的文件夹，然后输入下方提到的命令：
+要启动此文件，请打开 Node.js 命令提示符并导航到 `console.js` 文件所在的文件夹，然后输入下方提到的命令：
 
-```
+```text
 C:\Users\Name of the user\File location\file name>filename_console.js
 Hello this is the United States of America
 This is a country
@@ -240,27 +233,30 @@ This is a country
 
 `console` 类的 `console.log()` 方法在控制台中显示传递给它的消息。
 
-## Node.js Web 应用程序：
+## Node.js Web 应用程序
 
-Node.js Web 应用程序具有多种类型的模块，这些模块使用 `require ()` 指令加载，我们必须建立一个服务器并编写代码来处理读取请求并交付响应。
+Node.js Web 应用程序具有多种类型的模块，这些模块使用 `require()` 指令加载，我们必须建立一个服务器并编写代码来处理读取请求并交付响应。
 
 创建一个包含以下代码的 `web.js` 文件：
 
-```
+```javascript
 // Require HTTP module
 var HTTP = require("HTTP");
+
 // Create server
 HTTP.createServer(function (req, res) {
-// Send the HTTP header
-// HTTP Status: 400: OK
-// Content-Type: text/plain
-res.writeHead (400, {'Content-Type': 'text/plain'});
-// Send the response body as "This is a USA');
-// and this is country"
-res.end('Hello this is the United States of America');
-// Console will display the message
+    // Send the HTTP header
+    // HTTP Status: 400: OK
+    // Content-Type: text/plain
+    res.writeHead(400, {'Content-Type': 'text/plain'});
+
+    // Send the response body as "This is a USA');
+    // and this is country"
+    res.end('Hello this is the United States of America');
+
+    // Console will display the message
 }).listen(4000,
-()=> console.log('Server running at
+    () => console.log('Server running at
 http://125.0.0.2:4000/'));
 ```
 
@@ -268,10 +264,10 @@ http://125.0.0.2:4000/'));
 
 按照以下说明运行此文件：
 
-- 在搜索栏中输入 `node.js` 并按 Enter 键启动 node.js 命令提示符。
+- 在搜索栏中输入 `node.js` 并按 Enter 键启动 Node.js 命令提示符。
 - 在命令提示符中使用 `cd` 命令导航到文件夹并输入 `node web.js`。
 
-```
+```text
 C:\Users\Name of the user >cd
 C:\Users\Name of the user\file location >cd "file name"
 C:\Users\Name of the user\file location\>filename_console.js
@@ -282,18 +278,18 @@ Server running at http://125.0.0.2:4000/
 
 在浏览器中，您将看到从 `web.js` 发回的响应。如果您对 `web.js` 文件进行了任何修改，请再次执行 `node web.js` 命令并刷新浏览器标签页。
 
-## NODE.JS 环境搭建
+# Node.js 环境搭建
 
 要开始学习 Node.js，您不需要搭建自己的环境。原因很简单：我们已经在网上搭建了一个 Node.js 环境，因此您可以运行所有可访问的示例并边做边学。请随意更改任何示例并尝试其他选项以查看结果。
 
 使用下方示例代码框（在我们的网站上）右上角的 Live Demo 按钮来尝试以下示例。
 
-```
+```javascript
 /* Hello World! program in Node.js */
 console.log("Hello World!");
 ```
 
-### 本地环境搭建
+## 本地环境搭建
 
 如果您仍想在计算机上搭建 Node.js 环境，则需要以下两个程序：
 
@@ -306,7 +302,7 @@ console.log("Hello World!");
 
 ## Node.js 运行时
 
-JavaScript 用于编写源文件中的源代码。您的 JavaScript 代码将使用 Node.js 解释器进行解释和执行。Node.js 发行版支持 SunOS、Linux、Mac OS X 和 Windows 操作系统，支持 32 位 (386) 和 64 位 (amd64) x86 CPU 架构。
+JavaScript 用于编写源文件中的源代码。您的 JavaScript 代码将使用 Node.js 解释器进行解释和执行。Node.js 发行版支持 SunOS、Linux、Mac OS X 和 Windows 操作系统，支持 32 位（386）和 64 位（amd64）x86 CPU 架构。
 
 ## Node.js 压缩包可在此下载
 
@@ -314,12 +310,17 @@ Node.js 下载页面提供最新版本的 Node.js 安装 zip 文件。在编写�
 
 | 操作系统 | 压缩包名称 |
 |---|---|
-| Windows | node-v18.2.0-x64.msi |
-| Linux | node-v18.2.0-Linux-x64.tar.gz |
-| Mac | node-v18.2.0-darwin-x64.tar.gz |
-| SunOS | node-v18.2.0-sunos-x64.tar.gz |
+| Windows | `node-v18.2.0-x64.msi` |
+| Linux | `node-v18.2.0-Linux-x64.tar.gz` |
 
-## UNIX/LINUX/MAC OS X 和 SUNOS 安装
+
+
+| 操作系统 | 安装包 |
+| --- | --- |
+| Mac | `node-v18.2.0-darwin-x64.tar.gz` |
+| SunOS | `node-v18.2.0-sunos-x64.tar.gz` |
+
+## UNIX/Linux/Mac OS X 和 SunOS 安装
 
 根据您的操作系统架构，将 `node-v6.3.1-osname.tar.gz` 压缩包下载并解压到 `/tmp`，然后将解压的文件移动到 `/usr/local/nodejs` 目录。
 
@@ -353,7 +354,7 @@ Node.js 被证明是极佳技术合作伙伴的领域如下：
 - 基于 JSON API 的应用程序
 - 单页应用程序 (SPA)
 
-## NODE.JS 的优势
+## Node.js 的优势
 
 CTO 或技术专业人员在为 Web 应用程序考虑 Node.js 的优缺点时，必须考虑多个因素，例如技术的可扩展性、速度、性能、应用程序限制等。您在这一阶段做出的决定决定了您的应用程序进入市场的速度。
 
@@ -370,8 +371,6 @@ Node.js 最吸引人的特性是程序员可以非常轻松地对应用程序进
 大多数前端工程师都熟悉 JavaScript，因为这是最常用的编程语言之一。
 
 这将使他们非常容易上手使用 Node.js 进行后端开发。学习 Node.js 相当简单，且开发耗时更短。
-
-
 
 ## 10 征服 JavaScript
 
@@ -409,7 +408,7 @@ Node.js 对开发者的另一个优势是其在创建应用程序和软件方面
 
 Node.js 以其可扩展性而闻名，这意味着你可以修改和扩展它以满足你的个人需求。JSON 也可以用作 Web 服务器和客户端之间数据交换的一种方式。它还内置了用于创建 HTTP、TCP 和 DNS 服务器等的 API。
 
-## NODE.JS 的缺点
+## Node.js 的缺点
 
 使用 Node.js 有许多优点，但也有一些你应该注意的不那么完美的方面。在决定是否使用 Node.js 时，了解这些缺点会很有帮助。
 
@@ -447,7 +446,7 @@ Node.js 以其可扩展性而闻名，这意味着你可以修改和扩展它以
 
 凭借其简洁的结构，npm 帮助了 Node.js 生态系统的发展，npm 注册中心现在存储了超过 100 万个开源包，你可以免费使用。
 
-## NODE.JS 历史的简要概述
+## Node.js 历史的简要概述
 
 信不信由你，Node.js 只有 13 年的历史。JavaScript 有 26 年的历史，而万维网则有 33 年的历史。在技术世界里，13 年并不算长，但 Node.js 似乎已经存在了很长时间。为了全面了解情况，我们在本章中构建了 Node.js 历史的大致框架。
 
@@ -457,13 +456,11 @@ JavaScript 是由 Netscape 开发的一种计算机语言，作为 Netscape Navi
 
 随着浏览器竞争为用户提供最佳性能，JavaScript 引擎得到了极大的改进。主要的浏览器开发团队不知疲倦地工作，以增强 JavaScript 支持并寻找加速 JavaScript 执行的方法。由于这种竞争，Node.js 引擎 V8（也称为 Chrome V8，因为它是 Chromium 项目的开源 JavaScript 引擎）得到了显著改进。
 
-
-
 ## 如何安装 Node.js
 
 Node.js 可以通过多种方式安装。所有主流平台的官方安装包均可在 [https://nodejs.dev/en/download/](https://nodejs.dev/en/download/) 获取。使用包管理器是安装 Node.js 非常便捷的方式。每个操作系统都有自己的包管理器。针对 macOS、Linux 和 Windows 的其他包管理器可在 [https://nodejs.nodejs.dev/en/download/package-manager/](https://nodejs.dev/en/download/package-manager/) 找到。
 
-Node.js 通常使用 `nvm` 运行。它使你可以轻松切换 Node.js 版本并安装新版本，以便在出现问题时回滚。用旧版本 Node.js 测试你的代码确实也是一个好主意。有关此选项的更多信息，请参阅 [https://github.com/nvm-sh/nvm](https://github.com/nvm-sh/nvm)。无论如何，Node.js 安装完成后，你就可以使用命令行来运行 node 可执行应用程序。
+Node.js 通常使用 `nvm` 运行。它使你可以轻松切换 Node.js 版本并安装新版本，以便在出现问题时回滚。用旧版本 Node.js 测试你的代码确实也是一个好主意。有关此选项的更多信息，请参阅 [https://github.com/nvm-sh/nvm](https://github.com/nvm-sh/nvm)。无论如何，Node.js 安装完成后，你就可以使用命令行来运行 `node` 可执行应用程序。
 
 ## 使用 Node.js 需要掌握多少 JavaScript？
 
@@ -513,7 +510,7 @@ Node.js 是一个基于 JavaScript 的平台，用于构建 I/O 密集型的 Web
 
 ### Node.js 服务器架构
 
-Node.js 使用"单线程事件循环"设计来管理多个并发客户端。Node.js 处理模型使用 JavaScript 基于事件的模型和 JavaScript 回调机制。它基于两个关键理念：
+Node.js 使用“单线程事件循环”设计来管理多个并发客户端。Node.js 处理模型使用 JavaScript 基于事件的模型和 JavaScript 回调机制。它基于两个关键理念：
 
 - 异步模型
 - I/O 活动不被阻塞
@@ -535,11 +532,19 @@ npm i async
 **示例：** 在 Node.js 中创建一个异步函数来计算整数的平方。
 
 - 为我们的项目创建一个文件夹。
-- 运行以下命令在项目文件夹中初始化 package.json 文件：
-  `npm init -y`
+- 运行以下命令在项目文件夹中初始化 `package.json` 文件：
+
+  ```bash
+  npm init -y
+  ```
+
 - 使用以下命令安装 async：
-  `npm i async`
-- 创建一个 server.js 文件，并将以下代码粘贴到其中。
+
+  ```bash
+  npm i async
+  ```
+
+- 创建一个 `server.js` 文件，并将以下代码粘贴到其中。
 
 使用 `npm start` 运行以下代码：
 
@@ -560,11 +565,13 @@ async function output(A) {
 output(16);
 ```
 
+
+
 在学习开发异步代码时，有几个关键注意事项需要牢记；否则，你的代码经常会以意想不到的方式执行。
 
-### 避免使用同步函数，改用异步函数
+## 避免使用同步函数，改用异步函数
 
-Node.js 核心中的许多函数都有同步和异步版本。在大多数情况下，使用异步函数会更有益；否则，你为什么要使用 Node.js？以 `fs.readFile` 为例来对比两者：
+Node.js 核心中的许多函数都有同步和异步版本。在大多数情况下，使用异步函数会更有益；否则，你为什么要使用 Node.js？以`fs.readFile`为例来对比两者：
 
 ```javascript
 var fs = require('fs');
@@ -594,7 +601,7 @@ console.log(document);
 
 ## 事件发射器
 
-Node.js 中的另一个基本习语是事件发射器（Event Emitters）。`require('events')` 是 Node.js 核心中的一个函数 `Object() {[native code]}`：EventEmitter。当响应包含多个部分时，通常会使用事件发射器（因为通常我们只想调用一次回调）。
+Node.js 中的另一个基本习语是事件发射器（Event Emitters）。`require('events')`是 Node.js 核心中的一个函数`Object() {[native code]}`：EventEmitter。当响应包含多个部分时，通常会使用事件发射器（因为通常我们只想调用一次回调）。
 
 ## 异步代码有一个陷阱
 
@@ -608,7 +615,7 @@ for (var j = 1; j < 6; j++) {
 }
 ```
 
-令人惊讶的结果如下：6。这是因为每个超时都是先建立的，然后 j 才递增。当回调执行时，它查找的 j 值是 6。解决方法是创建一个闭包来保存当前的 j 值。考虑以下场景：
+令人惊讶的结果如下：6。这是因为每个超时都是先建立的，然后`j`才递增。当回调执行时，它查找的`j`值是 6。解决方法是创建一个闭包来保存当前的`j`值。考虑以下场景：
 
 ```javascript
 for (var j = 1; j < 6; j++) {
@@ -624,7 +631,7 @@ for (var j = 1; j < 6; j++) {
 
 ## 非阻塞 I/O 操作
 
-Node.js 标准库中所有 I/O 方法的异步版本都是非阻塞的，并接受回调函数。某些方法有对应的阻塞版本，其名称末尾带有 sync。非阻塞 I/O 操作使单个进程能够同时处理多个请求。系统不会阻塞进程并等待 I/O 操作完成，而是将 I/O 操作委托给进程，允许进程继续执行下一段代码。当非阻塞 I/O 操作完成时，会调用回调函数。
+Node.js 标准库中所有 I/O 方法的异步版本都是非阻塞的，并接受回调函数。某些方法有对应的阻塞版本，其名称末尾带有`sync`。非阻塞 I/O 操作使单个进程能够同时处理多个请求。系统不会阻塞进程并等待 I/O 操作完成，而是将 I/O 操作委托给进程，允许进程继续执行下一段代码。当非阻塞 I/O 操作完成时，会调用回调函数。
 
 ## 回调
 
@@ -648,11 +655,11 @@ fs.readFile('/file.md', function callback(error, document) {
 moreWork(); // 在 console.log 之前执行
 ```
 
-在第一个示例中，回调方法直接在 greetings 外部函数中被调用，并在 `moreWork()` 执行之前记录到控制台。
+在第一个示例中，回调方法直接在`greetings`外部函数中被调用，并在`moreWork()`执行之前记录到控制台。
 
 在第二个示例中，`fs.readFile`（Node 的异步方法）读取文件，完成后将错误或文件内容返回给回调函数。与此同时，软件可以继续执行代码。当事件发生时或任务完成时，会调用异步回调。它通过允许其他代码在后台运行来避免阻塞。
 
-避免"回调地狱"，即回调被埋在多层其他回调中，使代码难以理解、维护和调试。这些特性都提高了 Node.js Web 应用程序的可扩展性、性能和吞吐量。
+避免“回调地狱”，即回调被埋在多层其他回调中，使代码难以理解、维护和调试。这些特性都提高了 Node.js Web 应用程序的可扩展性、性能和吞吐量。
 
 Node.js 架构由以下组件组成：
 
@@ -664,6 +671,7 @@ Node.js 架构由以下组件组成：
 - 外部资源：外部资源用于解决阻塞的客户端请求。它们可以是任何类型（计算、存储等）。
 
 ![](img/0910e964adc1d4e011635b07233a41cb_42_0.png)
+
 *Node.js 服务器的工作流程。*
 
 - 用户向服务器发出请求（阻塞或非阻塞）以执行任务。
@@ -673,27 +681,25 @@ Node.js 架构由以下组件组成：
 - 为阻塞请求分配单个线程，以便使用外部资源完成任务。
 - 当过程完成后，请求被路由回事件循环，事件循环将响应返回给客户端。
 
-## NODE.JS 是前端还是后端框架？
+## Node.js 是前端还是后端框架？
 
-Node.js 有时被开发者误解为仅用于构建服务器的后端工具。这是不正确的：Node.js 可以在前端和后端都使用。Node.js 框架之所以在开发灵活且可扩展的后端的开发者中受欢迎，原因之一是它们的事件驱动、非阻塞特性。另一方面，前端开发者在自己的工作中同样能清楚地体验到这些 Node.js 的优势。Node.js 包含 `env property`，它保存了进程启动时设置的所有环境变量。
+Node.js 有时被开发者误解为仅用于构建服务器的后端工具。这是不正确的：Node.js 可以在前端和后端都使用。Node.js 框架之所以在开发灵活且可扩展的后端的开发者中受欢迎，原因之一是它们的事件驱动、非阻塞特性。另一方面，前端开发者在自己的工作中同样能清楚地体验到这些 Node.js 的优势。Node.js 包含`env property`，它保存了进程启动时设置的所有环境变量。
 
 让我们看看 Node.js 适合后端和前端开发的一些原因：
 
 - JavaScript 是开发后端和前端代码的通用语言，这要归功于 Express.js 和 Meteor.js 等框架。一些著名的技术栈，如 MERN，使用 Express.js 作为后端（Node.js 框架）。可以在前端和后端之间重用多个组件。
-- **开发效率和生产力：** 通过减少在多种语言之间切换上下文，可以节省大量的开发者时间。由于许多后端和前端技术相似，将 JavaScript 用于两者可以提高性能。
-- **庞大的社区：** 在线社区的规模会影响成功开发周期的完成速度。如果你遇到一个问题，很可能其他人已经解决了它并在 Stack Overflow 上分享了他们的解决方案。Node.js 在流行的运行时及其包方面，主要依赖这个活跃且参与的社区。
+- **开发效率和生产力：**通过减少在多种语言之间切换上下文，可以节省大量的开发者时间。由于许多后端和前端技术相似，将 JavaScript 用于两者可以提高性能。
+- **庞大的社区：**在线社区的规模会影响成功开发周期的完成速度。如果你遇到一个问题，很可能其他人已经解决了它并在 Stack Overflow 上分享了他们的解决方案。Node.js 在流行的运行时及其包方面，主要依赖这个活跃且参与的社区。
 
-## 何时应该使用 NODE.JS？
+## 何时应该使用 Node.js？
 
-- **聊天：** 聊天应用程序是 Node.js 的最佳示例之一。它是一个数据密集型、轻量级、高流量的应用程序，可在多个平台上运行。它也是学习的好用例，因为它简单且涵盖了 Node.js 应用程序中通常不常见的大多数特性和范式。
-- **基于对象数据库构建的 API：** 除了实时应用程序之外，Node.js 还可以用于公开对象数据库中的数据。由于 JSON 存储的数据库，Node.js 可以无需数据转换或阻抗不匹配即可工作。例如，如果我们使用 Rails，我们将需要把 JSON 模型转换为二进制模型。
+- **聊天：**聊天应用程序是 Node.js 的最佳示例之一。它是一个数据密集型、轻量级、高流量的应用程序，可在多个平台上运行。它也是学习的好用例，因为它简单且涵盖了 Node.js 应用程序中通常不常见的大多数特性和范式。
+- **基于对象数据库构建的 API：**除了实时应用程序之外，Node.js 还可以用于公开对象数据库中的数据。由于 JSON 存储的数据库，Node.js 可以无需数据转换或阻抗不匹配即可工作。例如，如果我们使用 Rails，我们将需要把 JSON 模型转换为二进制模型。
 
-    只有当数据被 AngularJS、Backbone.js 和其他框架使用时，你才能通过 HTTP 将它们发布为 JSON。我们可以使用 Node.js 来提供 JSON 对象，以及供客户端使用的 REST API。此外，在写入或读取数据库时，我们不必担心转换 JSON。总而言之，我们对服务器-客户端和数据库通信使用统一的数据序列化格式。
-- **流数据：** 在典型的 Web 平台中，HTTP 响应和请求被作为单独的事件处理。从更字面意义上讲，它们是流。这可以用来创建一些真正令人难以置信的功能。例如，我们可以在文件上传时处理它们。这是因为数据以流的形式传递，允许我们实时处理它。对于实时视频和音频编码，这是可能的。这也可以用于在不同来源之间代理数据。
+  只有当数据被 AngularJS、Backbone.js 和其他框架使用时，你才能通过 HTTP 将它们发布为 JSON。我们可以使用 Node.js 来提供 JSON 对象，以及供客户端使用的 REST API。此外，在写入或读取数据库时，我们不必担心转换 JSON。总而言之，我们对服务器-客户端和数据库通信使用统一的数据序列化格式。
+- **流数据：**在典型的 Web 平台中，HTTP 响应和请求被作为单独的事件处理。从更字面意义上讲，它们是流。这可以用来创建一些真正令人难以置信的功能。例如，我们可以在文件上传时处理它们。这是因为数据以流的形式传递，允许我们实时处理它。对于实时视频和音频编码，这是可能的。这也可以用于在不同来源之间代理数据。
 
-
-
-## NODE.JS 框架及其各种形式
+## Node.js 框架及其各种形式
 
 每种 Web 应用技术都伴随着一套框架，这些框架在开发过程中辅助特定的用例。当涉及到 Node.js 时，有三种类型的框架可供选择。
 
@@ -727,7 +733,7 @@ Socket.io 是一个 JavaScript 库，允许您创建实时应用程序并实现�
 
 Hapi 是一个 Web 应用程序服务器，既是开源的，也是商业可用的。它以创建 REST API、代理服务器和各种其他桌面应用程序而闻名。由于 Hapi 非常可靠和安全，它包含许多内置插件，因此我们不必担心使用未经批准的中间件。
 
-## 如何选择 NODE.JS 托管服务？
+## 如何选择 Node.js 托管服务？
 
 一旦我们决定将 Node.js 用于我们的应用程序开发项目，我们就必须选择一个托管服务。
 
@@ -739,75 +745,74 @@ Hapi 是一个 Web 应用程序服务器，既是开源的，也是商业可用�
 
 使用 Amazon Web Services (AWS) Elastic Beanstalk 服务，我们可以安装一个高可用性的 Node.js Web 应用程序。这是一个容器技术，可以相对简单地将打包应用程序部署到 AWS 作为平台即服务 (PaaS)。我们完全控制运行应用程序的服务器，并且我们可以在同一服务器上同时运行多个应用程序，从而降低运营成本。
 
-- **优点：** 价格合理，可通过论坛、计划和文档获得大量帮助。
-- **缺点：** AWS 的学习曲线很陡峭，特别是对于以前从未使用过它的人来说，对于那些从未负责过自己服务器管理的人来说更是如此。
+- **优点：**价格合理，可通过论坛、计划和文档获得大量帮助。
+- **缺点：**AWS 的学习曲线很陡峭，特别是对于以前从未使用过它的人来说，对于那些从未负责过自己服务器管理的人来说更是如此。
 
 ### Google Cloud Platform
 
 GCP（Google Cloud Platform）是一家基于云的公司，专门从事容器支持、分析、大数据、机器学习和 Google Kubernetes Engine。由于 Google 是 Docker 的忠实粉丝，并创建了 Kubernetes（一种用于自动化应用程序部署、可扩展性和管理的流行技术），因此 GCP 集成是一流的。它也是 Google，并且在分析、统计和机器学习领域很擅长。如果项目的范围或资金有限，还可以使用 GCP 的免费层。
 
-- **优点：** Google Kubernetes Engine 是开始使用 Kubernetes 最直接的方法。大数据有大量工具。出色的机器学习解决方案已经就位并准备就绪。
-- **缺点：** GCP 是该群体中最新的。
+- **优点：**Google Kubernetes Engine 是开始使用 Kubernetes 最直接的方法。大数据有大量工具。出色的机器学习解决方案已经就位并准备就绪。
+- **缺点：**GCP 是该群体中最新的。
 
 ### Heroku
 
 Heroku 最初仅支持 Ruby on Rails，但现在已扩展到包括各种语言和环境，包括 Node.js。Heroku 允许与各种第三方服务（如 SendGrid 和 Redis）轻松集成以及多区域部署。
 
-- **优点：** Heroku 有一个免费层，并且非常易于使用（即使是新手开发人员）。有优秀的免费支持文档，以及可以立即安装的大量插件和服务。
-- **缺点：** 一旦我们离开免费层，Heroku 就会迅速变得过于昂贵。此外，虽然开始使用 Heroku 很快，但大型应用程序往往需要更长的时间来部署。
+- **优点：**Heroku 有一个免费层，并且非常易于使用（即使是新手开发人员）。有优秀的免费支持文档，以及可以立即安装的大量插件和服务。
+- **缺点：**一旦我们离开免费层，Heroku 就会迅速变得过于昂贵。此外，虽然开始使用 Heroku 很快，但大型应用程序往往需要更长的时间来部署。
 
 ### Microsoft Azure
 
 Microsoft Azure 是一个基于云的平台，允许开发人员快速轻松地创建、安装和管理复杂的网站和 Web 应用程序。这是一个可靠的平台，具有高可用性和跨不同地理位置的灵活性。由于支持 Windows 和 Linux 计算机，您可以实时监控托管在 Azure 上的所有 Node.js 应用程序，并实现自动扩展。
 
-- **优点：** 一项可靠的免费服务，允许您在每个数据中心最多托管十个应用程序。在 Azure 中扩展或缩小 Node.js 应用程序也很简单，或者只需激活自动扩展，Azure 就会根据流量进行扩展。
-- **缺点：** 部署可能需要很长时间，因此如果您需要快速周转您的项目，这可能不是最佳选择。
+- **优点：**一项可靠的免费服务，允许您在每个数据中心最多托管十个应用程序。在 Azure 中扩展或缩小 Node.js 应用程序也很简单，或者只需激活自动扩展，Azure 就会根据流量进行扩展。
+- **缺点：**部署可能需要很长时间，因此如果您需要快速周转您的项目，这可能不是最佳选择。
 
 ### RedHat OpenShift Online
 
 RedHat OpenShift Online 在初次开发人员中很受欢迎，它免费提供 Node.js 托管——没有试用期，就是免费。PaaS 允许无忧的云托管，使我们可以专注于增强您的应用程序。
 
-- **优点：** OpenShift Online 是另一个支持自动扩展的平台，因此如果您的应用程序流量意外激增，您可以受到保护。免费访问内置私有数据库并支持多个区域。
-- **缺点：** 尽管托管是免费的，但我们仅限于一个项目。
+- **优点：**OpenShift Online 是另一个支持自动扩展的平台，因此如果您的应用程序流量意外激增，您可以受到保护。免费访问内置私有数据库并支持多个区域。
+- **缺点：**尽管托管是免费的，但我们仅限于一个项目。
 
 ### ZEIT
 
 来自 Next.js JavaScript 框架的制造商，提供了一个零配置托管平台。它开箱即支持单仓库，部署速度很快。它还具有有竞争力的定价和大量的免费层。ZEIT 现在甚至可以为您处理 CI/CD（持续集成，持续交付），使我们能够轻松地实现无服务器。现在是一个由 AWS 和 Microsoft Azure 支持的基于云的服务；对初学者和专家来说都是一个绝佳的选择。
 
-- **优点：** 单页应用程序 API 的绝佳解决方案。它非常易于使用、设置，并在几分钟内获得 CI/CD。免费层提供了很多价值。
-- **缺点：** 目前，重点是无状态和静态应用程序。它们不提供数据库或长期存储选项。我们将不得不依赖
-
-基于云的解决方案，如 MongoDB Atlas、AWS CosmosDB、Google Cloud SQL 或类似产品。
+- **优点：**单页应用程序 API 的绝佳解决方案。它非常易于使用、设置，并在几分钟内获得 CI/CD。免费层提供了很多价值。
+- **缺点：**目前，重点是无状态和静态应用程序。它们不提供数据库或长期存储选项。我们将不得不依赖基于云的解决方案，如 MongoDB Atlas、AWS CosmosDB、Google Cloud SQL 或类似产品。
 
 ## DigitalOcean
 
 DigitalOcean 是一家 VPS 提供商，同时也提供一些专门针对 Node.js 的功能和产品。我们可以在其简单的设置过程中使用一键 Node.js 安装方法，这将在新创建的 droplet 上为我们安装并准备好一切。DigitalOcean Spaces 也是存储文件的绝佳选择。他们还提供 Kubernetes 集群，可用于更复杂的架构。
 
-**优点：** 成本——虚拟专用服务器通常设置起来更便宜。用户界面简洁明了，DigitalOcean 提供多种一键镜像，帮助我们快速上手。
+- **优点：**成本——虚拟专用服务器通常设置起来更便宜。用户界面简洁明了，DigitalOcean 提供多种一键镜像，帮助我们快速上手。
+- **缺点：**与云提供商相比，它需要更高的知识水平和更多的参与。
 
-**缺点：** 与云提供商相比，它需要更高的知识水平和更多的参与。
+## V8 JavaScript 引擎
 
-## V8  JavaScript 引擎
 
-驱动 Google Chrome 的 JavaScript 引擎被称为 V8。它是解释我们的 JavaScript 并在 Chrome 中运行它的组件。JavaScript 引擎，即 V8，负责解析和执行 JavaScript 代码。浏览器提供 DOM 和其他 Web 平台 API（它们共同构成运行时环境）。JavaScript 引擎的独特之处在于，它的运行不受其所处浏览器的影响。这一关键特性促进了 Node.js 的诞生。V8 在 2009 年被选为 Node.js 的引擎，随着 Node.js 的普及，V8 逐渐发展成为如今驱动着数量惊人的服务器端 JavaScript 代码的引擎。得益于 V8，桌面应用也因 Electron 等项目而变得庞大，Node.js 生态系统极为广阔。
+
+驱动 Google Chrome 的 JavaScript 引擎被称为 `V8`。它是解释我们的 JavaScript 并在 Chrome 中运行它的组件。JavaScript 引擎，即 `V8`，负责解析和执行 JavaScript 代码。浏览器提供 DOM 和其他 Web 平台 API（它们共同构成运行时环境）。JavaScript 引擎的独特之处在于，它的运行不受其所处浏览器的影响。这一关键特性促进了 Node.js 的诞生。`V8` 在 2009 年被选为 Node.js 的引擎，随着 Node.js 的普及，`V8` 逐渐发展成为如今驱动着数量惊人的服务器端 JavaScript 代码的引擎。得益于 `V8`，桌面应用也因 Electron 等项目而变得庞大，Node.js 生态系统极为广阔。
 
 ## 其他 JS 框架
 
 其他浏览器有各自的 JavaScript 引擎，如下所示：
 
-- SpiderMonkey 用于 Firefox。
-- JavaScriptCore 用于 Safari（也称为 Nitro）。
-- Edge 最初基于 Chakra；但最近已使用 Chromium 和 V8 引擎重建。
+- `SpiderMonkey` 用于 Firefox。
+- `JavaScriptCore` 用于 Safari（也称为 `Nitro`）。
+- Edge 最初基于 `Chakra`；但最近已使用 Chromium 和 `V8` 引擎重建。
 
 还有更多类似的引擎。所有这些引擎都支持 ECMA ES-262 标准，通常称为 ECMAScript，这与 JavaScript 的标准相同。
 
 ## 追求卓越
 
-V8 使用 C++ 编写，并定期更新。它可移植，适用于 Mac、Windows、Linux 和多种其他操作系统。在本 V8 介绍中，我们将忽略 V8 的实现细节，因为这些内容可以在更权威的网站上找到（例如，V8 官方网站），而且它们随时间变化，往往变化很大。与其他 JavaScript 引擎一样，V8 不断改进以优化 Web 和 Node.js 环境。多年来，网络上一直存在性能竞赛，我们（作为用户和开发者）从中受益匪浅，因为我们每年都能获得更快、优化更好的机器。
+`V8` 使用 C++ 编写，并定期更新。它可移植，适用于 Mac、Windows、Linux 和多种其他操作系统。在本 `V8` 介绍中，我们将忽略 `V8` 的实现细节，因为这些内容可以在更权威的网站上找到（例如，`V8` 官方网站），而且它们随时间变化，往往变化很大。与其他 JavaScript 引擎一样，`V8` 不断改进以优化 Web 和 Node.js 环境。多年来，网络上一直存在性能竞赛，我们（作为用户和开发者）从中受益匪浅，因为我们每年都能获得更快、优化更好的机器。
 
 ## 编译
 
-尽管 JavaScript 通常被认为是一种解释型语言，但现代 JavaScript 引擎所做的不仅仅是解释它；它们还对其进行编译。这始于 2009 年，当时 Spider Monkey JavaScript 编译器被纳入 Firefox 3.5，此后所有人都在效仿。V8 内部使用即时编译来加速 JavaScript 的执行。这听起来可能违反直觉，但自 2004 年 Google Maps 发布以来，JavaScript 已从一种通常执行几十行代码的语言，发展到现在在浏览器中运行数万到数十万行代码的完整程序。我们的应用程序现在可以在浏览器中运行数小时，而不仅仅是一些表单验证规则或简单脚本。在这个新世界中，编译 JavaScript 完全合理，因为虽然准备 JavaScript 可能需要稍长一点时间，但一旦完成，它的性能将显著优于纯解释执行的代码。
+尽管 JavaScript 通常被认为是一种解释型语言，但现代 JavaScript 引擎所做的不仅仅是解释它；它们还对其进行编译。这始于 2009 年，当时 `SpiderMonkey` JavaScript 编译器被纳入 Firefox 3.5，此后所有人都在效仿。`V8` 内部使用即时编译来加速 JavaScript 的执行。这听起来可能违反直觉，但自 2004 年 Google Maps 发布以来，JavaScript 已从一种通常执行几十行代码的语言，发展到现在在浏览器中运行数万到数十万行代码的完整程序。我们的应用程序现在可以在浏览器中运行数小时，而不仅仅是一些表单验证规则或简单脚本。在这个新世界中，编译 JavaScript 完全合理，因为虽然准备 JavaScript 可能需要稍长一点时间，但一旦完成，它的性能将显著优于纯解释执行的代码。
 
 ## 使用命令行运行 Node.js 程序
 
@@ -815,29 +820,29 @@ V8 使用 C++ 编写，并定期更新。它可移植，适用于 Mac、Windows�
 
 您可以通过输入以下命令将主 Node.js 应用文件命名为 `app.js`：
 
-```
+```bash
 node app.js
 ```
 
-在上面的命令中，我们明确告诉 shell 使用 `node` 运行我们的脚本。"shebang" 行也可以用于将此信息集成到您的 JavaScript 程序中。"shebang" 是文件的首行，它通知操作系统运行脚本时使用哪个解释器。JavaScript 的第一行如下：
+在上面的命令中，我们明确告诉 shell 使用 `node` 运行我们的脚本。`shebang` 行也可以用于将此信息集成到您的 JavaScript 程序中。`shebang` 是文件的首行，它通知操作系统运行脚本时使用哪个解释器。JavaScript 的第一行如下：
 
-```
- rockets #!/usr/bin/node
+```bash
+#!/usr/bin/node
 ```
 
 上面，我们明确说明了解释器的绝对路径。虽然 `node` 可能不在每个操作系统的 bin 文件夹中，但所有系统都应包含 `env`。我们可以指示操作系统运行带有参数 `node` 的 `env`：
 
-```
+```bash
 #!/usr/bin/env node
 ```
 
-```
+```javascript
 //your code
 ```
 
-要使用 shebang，文件必须具有可执行权限。通过运行以下命令，我们可以授予 `app.js` 可执行权限：
+要使用 `shebang`，文件必须具有可执行权限。通过运行以下命令，我们可以授予 `app.js` 可执行权限：
 
-```
+```bash
 chmod u+x app.js
 ```
 
@@ -849,13 +854,13 @@ chmod u+x app.js
 
 将 `nodemon` 模块全局安装到系统路径：
 
-```
+```bash
 npm i -g nodemon
 ```
 
-Nodemon 也可以作为开发依赖安装：
+`Nodemon` 也可以作为开发依赖安装：
 
-```
+```bash
 npm i --save-dev nodemon
 ```
 
@@ -863,25 +868,25 @@ npm i --save-dev nodemon
 
 输入 `nodemon` 后跟应用文件名来运行程序：
 
-```
+```bash
 nodemon app.js
 ```
 
-## 在销售和服务团队中，人工智能可以创造一个"隐性谷歌"，让每个员工变得更聪明、更有经验
+## 在销售和服务团队中，人工智能可以创造一个“隐性谷歌”，让每个员工变得更聪明、更有经验
 
-以一家印度公司为例，该公司使用名为 nurture 的平台，让销售团队在几秒钟内检索到完整且高质量的销售提案，或者找到客户经理针对某类问题常用的客户函件模板。nurture 的学习算法利用集体智慧，通过分析销售活动中使用内部知识库、创建新内容和卖出产品的模式进行学习，并将最佳实践与别人分享。
+以一家印度公司为例，该公司使用名为 `nurture` 的平台，让销售团队在几秒钟内检索到完整且高质量的销售提案，或者找到客户经理针对某类问题常用的客户函件模板。`nurture` 的学习算法利用集体智慧，通过分析销售活动中使用内部知识库、创建新内容和卖出产品的模式进行学习，并将最佳实践与别人分享。
 
 这不仅与产品相关，而是普遍适用的原则。如果一位客户技术支持人员加入一家销售自动化软件公司，他可能并不了解如何对客户的营销软件进行技术集成的问题。但如果他以前曾为类似客户服务过，或者对于类似集成有很多案例记录，他就可以参考这些信息，给出能帮助到客户的完美回复。
 
 利用人工智能引导的团队拥有更多的智慧，使整个团队在第一天就能表现得像是这个领域的专家。
 
-有如此多的事情正在发生，人类却不可能掌握全部信息，因此我们需要一个"隐性谷歌"，一个隐藏在组织内部的搜索引擎。人工智能可以让员工从中吸取集体智慧，一夜之间提高他们的工作效率。
+有如此多的事情正在发生，人类却不可能掌握全部信息，因此我们需要一个“隐性谷歌”，一个隐藏在组织内部的搜索引擎。人工智能可以让员工从中吸取集体智慧，一夜之间提高他们的工作效率。
 
 在某些方面，许多公司已经在利用类似的技术，尝试提供基于人工智能的知识辅助解决方案。比如，Quilliam 事务所利用算法为金融公司提供正确的信息；Pitchbot 在创业者与投资者交谈之前对其进行训练，并为话题提供建议。
 
 ### 维护人际关系，不被机器人抢走饭碗
 
-2018年，普华永道开始对4.1万名员工作出情感测试。情感智能（Emotionally Intelligent，EQ）是一种能够理解、表达和管理自我情绪的智能。这样的思维模型可以用于人际关系中，预测对方可能的行动，表达同理心并协助控制。
+2018 年，普华永道开始对 4.1 万名员工作出情感测试。情感智能（Emotionally Intelligent，EQ）是一种能够理解、表达和管理自我情绪的智能。这样的思维模型可以用于人际关系中，预测对方可能的行动，表达同理心并协助控制。
 
 ```javascript
 const express = require('express');
@@ -897,7 +902,7 @@ process.on('SIGTERM', () => {
 });
 ```
 
-`SIGKILL` 是一个通知进程立即停止工作的信号，它理想情况下应该表现得像一个进程：`exit()`。信号 `SIGTERM` 指示进程优雅地退出。这是由进程管理器（如 upstart、supervisors 等）发送的信号。这个信号可以从程序内部、在另一个函数中发送：
+`SIGKILL` 是一个通知进程立即停止工作的信号，它理想情况下应该表现得像一个进程：`exit()`。信号 `SIGTERM` 指示进程优雅地退出。这是由进程管理器（如 `upstart`、`supervisors` 等）发送的信号。这个信号可以从程序内部、在另一个函数中发送：
 
 ```javascript
 process.kill(process.pid, 'SIGTERM');
@@ -911,13 +916,11 @@ process.kill(process.pid, 'SIGTERM');
 
 简而言之，Node.js 通过使用 WebSockets 上的推送技术，在实时在线应用中表现出色。但什么让它如此独特？它的独特之处在于，它使基于无状态 Web 和请求-响应的古老标准现代化。借助 Node.js，我们终于进入了具有双向连接的实时 Web 应用领域。
 
-
-
 在这种模式下，服务器和客户端都可以通过自由共享数据来发起通信。此前，只有客户端有权发起通信，情况则截然不同。
 
 然而，Node.js 与其他技术的不同之处在于，许多知名公司已经采用了它。这种情况非常罕见，而这正是 Node.js 区别于所有其他技术的特点。
 
-Node.js 是一项经过验证的能够助力业务增长的技术，全球 70% 的企业认为它提高了开发者的生产力。全球 58% 的开发时间都使用了 Node JS。每年，所有版本的 Node JS 下载量大约增加 10%。
+Node.js 是一项经过验证的能够助力业务增长的技术，全球 70% 的企业认为它提高了开发者的生产力。全球 58% 的开发时间都使用了 Node.js。每年，所有版本的 Node.js 下载量大约增加 10%。
 
 ## 总结
 
@@ -925,7 +928,7 @@ Node.js 是一项经过验证的能够助力业务增长的技术，全球 70% �
 
 ## 笔记
 
-- 1. 什么是 V8 – V8。
+- 1. 什么是 V8 – `V8`。
 - 2. Node.js v18.2.0 文档 – Node.js。
 
 # 应用程序开发 I
@@ -938,15 +941,15 @@ Node.js 是一项经过验证的能够助力业务增长的技术，全球 70% �
 
 在上一章中，我们初步了解了 Node.js 及其特性、优点和缺点。本章将描述 Node.js 的利用如何适用于广泛的应用程序。
 
-Node.js 是一个为 JavaScript 提供的非阻塞输入/输出 (I/O) 运行时环境，可以在单线程中处理多个并发事件。它基于事件驱动编程。由于其非阻塞 I/O，Node.js 在处理各种在线应用程序中的数据密集型和 I/O 密集型任务时，速度极快、轻量且具有可扩展性和高效性。Node.js 包含了构建复杂的实时聊天所需的所有必要元素。特别是 Node 拥有一个强大的 Event API，使得创建特定类型的对象（“发射器” $\text{emitters}$）变得简单，这些对象会发射被事件处理器定期“监听”的命名事件。在即时通讯和其他实时应用中无处不在的服务器端事件和推送通知，使用 Node.js 可以轻松创建。
+Node.js 是一个为 JavaScript 提供的非阻塞输入/输出（I/O）运行时环境，可以在单线程中处理多个并发事件。它基于事件驱动编程。由于其非阻塞 I/O，Node.js 在处理各种在线应用程序中的数据密集型和 I/O 密集型任务时，速度极快、轻量且具有可扩展性和高效性。Node.js 包含了构建复杂的实时聊天所需的所有必要元素。特别是 Node 拥有一个强大的 `Event API`，使得创建特定类型的对象（“发射器” `emitters`）变得简单，这些对象会发射被事件处理器定期“监听”的命名事件。在即时通讯和其他实时应用中无处不在的服务器端事件和推送通知，使用 Node.js 可以轻松创建。
 
 DOI: 10.1201/9781003357469-2
 
-WebSockets 协议支持客户端和服务器在同一个开放连接上快速地双向交换消息，Node 的基于事件的架构与其配合良好。在服务器端和客户端安装 WebSockets 库，使我们能够构建比大多数其他传统方法具有更低开销、更低延迟和更少数据传输量的实时通信。得益于 socket.io、ws 和 WebSocket-node 等包，WebSockets 在 Node 中表现如此出色，允许用户轻松创建实时聊天和应用程序。例如，要使用 socket.io 构建一个基础的实时聊天，我们只需要在 Web 服务器和客户端都安装 socket.io 库，然后创建事件发射器和广播器，通过 WebSockets 开放连接推送消息。这种基础功能仅需几行代码即可实现。
+WebSockets 协议支持客户端和服务器在同一个开放连接上快速地双向交换消息，Node 的基于事件的架构与其配合良好。在服务器端和客户端安装 WebSockets 库，使我们能够构建比大多数其他传统方法具有更低开销、更低延迟和更少数据传输量的实时通信。得益于 `socket.io`、`ws` 和 `WebSocket-node` 等包，WebSockets 在 Node 中表现如此出色，允许用户轻松创建实时聊天和应用程序。例如，要使用 `socket.io` 构建一个基础的实时聊天，我们只需要在 Web 服务器和客户端都安装 `socket.io` 库，然后创建事件发射器和广播器，通过 WebSockets 开放连接推送消息。这种基础功能仅需几行代码即可实现。
 
-## 使用 NODE.JS 构建应用程序
+## 使用 Node.js 构建应用程序
 
-开发实时通信技术有几种方法。HTTP 长轮询 (Long polling) 和 WebSockets 是两种最普遍的方式。本章将引导您完成一个简单的 Socket.io 教程以创建实时聊天。那么，让我们开始编写代码，以更好地理解其工作原理和设计。
+开发实时通信技术有几种方法。HTTP 长轮询（Long polling）和 WebSockets 是两种最普遍的方式。本章将引导您完成一个简单的 `Socket.io` 教程以创建实时聊天。那么，让我们开始编写代码，以更好地理解其工作原理和设计。
 
 ## 什么是 WebSockets 以及如何使用它们？
 
@@ -958,28 +961,28 @@ WebSockets API 是一种允许客户端和服务器以双向方式通信的技�
 
 ## 什么是 WebSockets 以及它们如何工作？
 
-通常，客户端在建立新连接时请求数据，随后连接断开。发送数据的服务器也仅在交换期间连接。在使用 WebSockets 时，除了接收传入数据外，socket.io 客户端还会与后端服务器建立初始连接。这个过程被称为 WebSockets 握手。请求中包含 Upgrade 标头。这就是客户端连接到服务器并告知其需要建立连接的方式。
+通常，客户端在建立新连接时请求数据，随后连接断开。发送数据的服务器也仅在交换期间连接。在使用 WebSockets 时，除了接收传入数据外，`socket.io` 客户端还会与后端服务器建立初始连接。这个过程被称为 WebSockets 握手。请求中包含 `Upgrade` 标头。这就是客户端连接到服务器并告知其需要建立连接的方式。
 
 ## 要求
 
-- 需要掌握 HTML, CSS, JavaScript, jQuery 和 Node.js 技能。
+- 需要掌握 HTML、CSS、JavaScript、jQuery 和 Node.js 技能。
 - 本地电脑应安装 Node.js。
 
-## 在 NODE.JS 中，如何创建 WebSockets API？
+## 在 Node.js 中，如何创建 WebSockets API？
 
 当你听到“实时 Web 应用”时，首先想到的是什么？当然是 WebSockets。通知、消息系统和界面的实时修改，仅仅是这种通信方式被应用的几个例子。只要我们不将其用于复杂的过程，它相对简单易于处理。
 
-但如果你想在应用中*仅*使用 WebSockets 呢？那完全是另一回事。
+但如果你想在应用中仅使用 WebSockets 呢？那完全是另一回事。
 
-WebSockets 常用于通知、聊天和消息系统等功能。在大多数情况下，我们最终会得到一个 WebSocket 网关，它将消息广播给所有或一部分连接的 WebSocket 客户端。事实上，大部分通信是单向的。消息从 Web 服务器 (WebSocket 服务器) 传输到连接的客户端。这就是一个 WebSocket 连接，更准确地说，是多个 WebSocket 连接。
+WebSockets 常用于通知、聊天和消息系统等功能。在大多数情况下，我们最终会得到一个 WebSocket 网关，它将消息广播给所有或一部分连接的 WebSocket 客户端。事实上，大部分通信是单向的。消息从 Web 服务器（WebSocket 服务器）传输到连接的客户端。这就是一个 WebSocket 连接，更准确地说，是多个 WebSocket 连接。
 
 那么，如果我们决定使用新的 WebSocket 服务器在发送消息之外，还用来传输和接收指令，会发生什么？
 
-## 被低估的 REST (UnderRESTimated)
+## 被低估的 REST（UnderRESTimated）
 
 REST 架构是实现 API 最典型的技术。它是标准化的，简单易学，知名度高且被广泛使用。有时你甚至会忘记它有多有用。如果我告诉你 REST 可以帮你让架构变得更简洁呢？这看起来像个谎言，但事实并非如此。
 
-当你使用 REST 时，每个端点仅对一个操作负责，该操作由 HTTP 方法和 URL 决定。用户创建由端点 `POST/users` 处理，而 `GET/users` 则返回用户列表。这不是很简单吗？
+当你使用 REST 时，每个端点仅对一个操作负责，该操作由 HTTP 方法和 URL 决定。用户创建由端点 `POST /users` 处理，而 `GET /users` 则返回用户列表。这不是很简单吗？
 
 大多数 API 框架在实现时需要你拆分每个端点。Express 就是一个绝佳的例子。它是最广泛使用的 Node.js API 框架。尽管它不包含像 MVC 和 ADR 这样的流行方案，但它鼓励我们编写更简洁的代码。你知道是怎么做到的吗？让我们来看看我们拥有什么。
 
@@ -1018,36 +1021,35 @@ io.on("connection", socket => {
 });
 ```
 
-
-
 它仅适用于简单的警报或广播服务。但如果我们加入命令会怎样？考虑以下场景：我们希望根据用户消息执行一些操作。
 
-```
+```javascript
 io.on("connection", socket => {
   socket.join("general");
   socket.on("message", message => {
-   if (message.type === "CREATE_USER") {
-     // create user logic
-   } if (message.type === "GET_USER") {
-     // retrieve user logic
-   }
-   if (message.type === "DELETE_USER") {
-     // delete user logic
-   }
- });
+    if (message.type === "CREATE_USER") {
+      // create user logic
+    }
+    if (message.type === "GET_USER") {
+      // retrieve user logic
+    }
+    if (message.type === "DELETE_USER") {
+      // delete user logic
+    }
+  });
   socket.on("disconnect", () => {
-   // handle disconnected user
+    // handle disconnected user
   });
 });
 ```
 
-如果处理不当，代码会变得杂乱无章。即使你将业务逻辑转移到服务层，那些 if 语句依然会存在。那么，你有什么解决方案呢？
+如果处理不当，代码会变得杂乱无章。即使你将业务逻辑转移到服务层，那些 `if` 语句依然会存在。那么，你有什么解决方案呢？
 
 ## 将消息视为契约
 
 我们首先要做的是改变消息的结构。我们可以将它们视为一种契约，而不是发送随机数据。这是 RPC 通信协议的常见特性，我们不仅可以描述输入数据，还可以描述我们想要执行的操作。以下是一个结构良好的消息示例：
 
-```
+```json
 {
   "type": "create-new-game",
   "payload": {
@@ -1056,9 +1058,11 @@ io.on("connection", socket => {
 }
 ```
 
-每个动作都应该分配一个单独的处理程序。例如，如果我们想要创建一个新游戏，我们需要发送一条包含 create-new-game 操作类型的消息，并为其构建一个处理程序。
+每个动作都应该分配一个单独的处理程序。例如，如果我们想要创建一个新游戏，我们需要发送一条包含 `create-new-game` 操作类型的消息，并为其构建一个处理程序。
 
-```
+
+
+```javascript
 class CreateNewGameHandler {
   constructor(games) {
     this.games = games;
@@ -1072,7 +1076,7 @@ module.exports = CreateNewGameHandler;
 
 下一步是消除 WebSocket 消息处理代码中的 if 语句混乱。利用契约-处理程序配对，我们可以从条件语句切换到使用 Set。
 
-```
+```javascript
 const CreateNewGameHandler = require("./engine/handler/create-new-game.handler");
 const handlersSet = {
   [CreateNewGameHandler.TYPE]: new CreateNewGameHandler(games)
@@ -1081,7 +1085,7 @@ const handlersSet = {
 
 在这个对象中，操作类型是键，其处理程序是值。当然，我们应该仔细检查是否支持某个特定操作。一个简单的类就可以处理这个问题。
 
-```
+```javascript
 class Handlers {
   constructor(handlers) {
     this.handlers = handlers
@@ -1097,7 +1101,7 @@ module.exports = Handlers
 
 最后，你可以将 if 条件重构为更易读的形式。
 
-```
+```javascript
 const Handlers = require("./engine/handlers");
 const CreateNewGameHandler = require("./engine/handler/create-new-game.handler");
 const LeaveGameHandler = require("./engine/handler/leave-game.handler");
@@ -1129,7 +1133,7 @@ io.on("connection", socket => {
 
 可以使用 EventEmitter 或 RxJS 的 Subject 来实现这种通信。只需要一个发布者实例注入到你的处理程序中。
 
-```
+```javascript
 const Handlers = require("./engine/handlers");
 const CreateNewGameHandler = require("./engine/handler/create-new-game.handler");
 const LeaveGameHandler = require("./engine/handler/leave-game.handler");
@@ -1155,7 +1159,7 @@ io.on("connection", socket => {
 
 然后，直接从我们的处理程序中，你可以发布任意数量的事件。
 
-```
+```javascript
 class CreateNewGameHandler {
   constructor(games, eventBus) {
     this.games = games;
@@ -1178,7 +1182,7 @@ module.exports = CreateNewGameHandler;
 
 订阅者应该监听这些事件，并将它们转换为 WebSocket 消息，然后再提供给客户端。
 
-```
+```javascript
 const { Subject } = require("rxjs");
 const eventBus = new Subject();
 eventBus.subscribe(message => {
@@ -1201,20 +1205,20 @@ eventBus.subscribe(message => {
 
 ## 代码教程
 
-你必须从使用默认的 package.json 文件创建项目开始。现在让我们来谈谈这个项目中使用的模块。
+你必须从使用默认的`package.json`文件创建项目开始。现在让我们来谈谈这个项目中使用的模块。
 
-- 根据 expressjs.com 的说法，Express 是一个快速、无约束、简单的 Node Web 框架。
+- 根据`expressjs.com`的说法，Express 是一个快速、无约束、简单的 Node Web 框架。
 - Nodemon 是一个帮助开发基于 Node.js 应用的实用工具，当检测到目录中的文件更改时，它会自动重启应用。
-- **Babel**——Babel 是一个工具链，它将 ECMAScript 2015+ 代码转换为向后兼容的 JavaScript 版本，以支持现代和传统浏览器及环境。
+- Babel——Babel 是一个工具链，它将 ECMAScript 2015+ 代码转换为向后兼容的 JavaScript 版本，以支持现代和传统浏览器及环境。
 - Socket.IO 提供实时的双向事件驱动通信。
 
 ## Socket.IO 不是什么？
 
 Socket.IO 不是 WebSocket 实现。尽管 Socket.IO 在可能的情况下使用 WebSocket 作为传输方式，但每个数据包都包含额外的元数据。因此，WebSocket 客户端无法连接到 Socket.IO 服务器，Socket.IO 客户端也无法连接到普通的 WebSocket 服务器。
 
-完成这一步后，我们需要设置服务器并安装所有必需的依赖项。首先，我们需要创建一个 index.js 文件，并安装 socket.io 和 express。可以使用以下命令：`npm install express socket.io` 和 `npm install --save-dev nodemon` 以及 `touch index.js`，我们需要在 index.js 中设置一个本地服务器和简单的 socket 连接。目前，后端只需要做这些。一旦你提交合适的请求，连接就应该建立。这将通过已记录的消息变得明显（如下所示）。
+完成这一步后，我们需要设置服务器并安装所有必需的依赖项。首先，我们需要创建一个`index.js`文件，并安装`socket.io`和`express`。可以使用以下命令：`npm install express socket.io`和`npm install --save-dev nodemon`以及`touch index.js`，我们需要在`index.js`中设置一个本地服务器和简单的 socket 连接。目前，后端只需要做这些。一旦你提交合适的请求，连接就应该建立。这将通过已记录的消息变得明显（如下所示）。
 
-```
+```javascript
 const express = require("express");
 const socket = require("socket.io");
 // App setup
@@ -1222,9 +1226,7 @@ const PORT = 5000;
 const app = express();
 ```
 
-
-
- ```javascript
+```javascript
 const server = app.listen(PORT, function () {
     console.log('Listening on port ${PORT}');
     console.log('http://localhost:${PORT}');
@@ -1240,9 +1242,9 @@ io.on("connection", function (socket) {
 
 ## 现在你必须准备前端部分
 
-让我们从创建 `public` 文件夹以及 `index.html` 和 `main.js` 文件开始。我们还可以包含 `style.css`。`index.html` 的骨架如下所示。我们只需要一些 HTML 标签作为引用，以及在项目中引入一些 Socket.io 脚本。在包含了 WebSockets 脚本后，`index.html` 文件的外观应该是这样的。
+让我们从创建`public`文件夹以及`index.html`和`main.js`文件开始。我们还可以包含`style.css`。`index.html`的骨架如下所示。我们只需要一些 HTML 标签作为引用，以及在项目中引入一些 Socket.io 脚本。在包含了 WebSockets 脚本后，`index.html`文件的外观应该是这样的。
 
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -1275,7 +1277,7 @@ io.on("connection", function (socket) {
 </html>
 ```
 
-然后，在前端，你必须设置连接。在 `main` 中，我们只需要一行代码：js 中的 `const socket = io();`。
+然后，在前端，你必须设置连接。在`main`中，我们只需要一行代码：js 中的`const socket = io();`。
 
 我们可以看到，在访问页面并加载脚本后，连接就建立了。下一步是处理新用户连接、新消息，以及最后但同样重要的——正在输入的用户。
 
@@ -1298,9 +1300,9 @@ io.on("connection", function (socket) {
 });
 ```
 
-当用户连接时，他们会发送一个包含其用户名信息的事件。在 socket 上，你应该设置 `userId` 属性。当用户断开连接时，这将是必需的。为了实现这一点，将用户名添加到活跃用户集合中，并发送一个包含所有活跃用户列表的事件。
+当用户连接时，他们会发送一个包含其用户名信息的事件。在 socket 上，你应该设置`userId`属性。当用户断开连接时，这将是必需的。为了实现这一点，将用户名添加到活跃用户集合中，并发送一个包含所有活跃用户列表的事件。
 
-我们在 `main.js` 中构建了两个函数和两个 socket 监听器。
+我们在`main.js`中构建了两个函数和两个 socket 监听器。
 
 ```javascript
 const socket = io();
@@ -1335,6 +1337,8 @@ socket.on("user disconnected", function (userName) {
 首先，我们生成了一个新用户并发送了带有该用户名的事件（我们可以通过添加一个输入真实用户名的提示来简单地扩展功能）。此外，我们将他们包含在所有活跃用户的侧边栏中。在服务器端，当用户断开连接时，其用户名将从当前用户集合中移除，并发送一个断开连接事件。随后，他们将从客户端的侧边栏中被删除。既然我们已经处理好了用户如何连接和断开，现在是时候处理新消息了。
 
 在服务器端，你只需要添加如下所示的监听器。
+
+
 
 ```javascript
 socket.on("chat message", function (data) {
@@ -1406,7 +1410,6 @@ const server = app.listen(PORT, function () {
 // Static files
 app.use(express.static("public"));
 
-
 // Socket setup
 const io = socket(server);
 const activeUsers = new Set();
@@ -1440,9 +1443,7 @@ const inputField = document.querySelector(".message_form__input");
 const messageForm = document.querySelector(".message_form");
 ```
 
-
-
-```
+```javascript
 const messageBox = document.querySelector(".messages__history");
 const fallback = document.querySelector(".fallback");
 
@@ -1530,7 +1531,7 @@ socket.on("typing", function (data) {
 
 # 52 ◼ 征服 JavaScript
 
-# 摘要
+## 摘要
 
 正如我们所见，使用 Socket.io 创建一个具有基本聊天消息功能的聊天应用（或任何其他 Web 应用）并不困难。我们希望这个简短的 Socket.io 教程展示了使用这种策略是多么简单。凭借 JavaScript 和对 Node.js 的少许了解，你可以做很多有趣的事情。上述所有的代码片段、提示和技巧都应该是不言自明的。正如我们所见，对这个方法做一些简单的调整，可以使 WebSockets 代码更加灵活和易于维护。
 
@@ -1540,14 +1541,14 @@ socket.on("typing", function (data) {
 
 Taylor & Francis 集团
 
-http://taylorandfrancis.com
+`http://taylorandfrancis.com`
 
 # 应用开发 II
 
 ## 本章内容
 
 - 流媒体应用
-- 使用 Node.js 构建应用
+- 使用 `Node.js` 构建应用
 - 关键字和语法
 
 在上一章中，我们学习了使用 Socket.io 开发基于聊天的应用。在本章中，我们将探讨另一种基于视频流的应用开发。在深入代码部分之前，我们必须先了解一些关于流媒体应用及其基本需求的知识。
@@ -1594,21 +1595,19 @@ OTT 和 VOD 应用帮助用户获得了更多基于选择的流媒体服务，�
 
 例如，如果流媒体服务具有社交登录功能，我们将需要社交媒体 API 连接和双因素认证等安全功能。可以使用身份验证系统，通过向用户设备发送密码或一次性密码来添加额外的用户验证层。
 
-同样，个性化功能应允许用户添加多个账户个人资料以进行个人资料管理。用户还可以指定他们的位置，从而可以根据本地流媒体市场定制内容。识别此类功能需要了解不同的服务集成，例如用于用户位置更新的地图服务集成。我们还可以添加通知和评论功能，人们可以在其中评论他们喜欢的电影、剧集、歌曲和其他内容。当新标题添加到你的
+同样，个性化功能应允许用户添加多个账户个人资料以进行个人资料管理。用户还可以指定他们的位置，从而可以根据本地流媒体市场定制内容。识别此类功能需要了解不同的服务集成，例如用于用户位置更新的地图服务集成。我们还可以添加通知和评论功能，人们可以在其中评论他们喜欢的电影、剧集、歌曲和其他内容。当新标题添加到你的目录或当实时电竞直播活动正在进行时，具体取决于使用场景。
 
-目录或当实时电竞直播活动正在进行时，具体取决于使用场景。
-
-以YouTube为例，其整个应用模型都基于用户生成的内容，因此视频上传选项不可或缺。除了该功能外，还需要考虑一些重要的支持性服务，例如视频格式选项、添加描述、视频缩略图、音频以及元数据（标题和标签）。
+以 YouTube 为例，其整个应用模型都基于用户生成的内容，因此视频上传选项不可或缺。除了该功能外，还需要考虑一些重要的支持性服务，例如视频格式选项、添加描述、视频缩略图、音频以及元数据（标题和标签）。
 
 ## 可选附加功能
 
 根据使用场景，流媒体应用还需要一系列复杂的功能。例如，高级搜索工具可以让您的客户在节目中找到他们喜欢的标题和节目。除了高级搜索选项外，还有其他功能。
 
-- 多种支付方式：为客户提供多种支付选择，使他们能够轻松订阅您的流媒体服务或在线购买特定内容。我们甚至可以接受加密货币作为支付方式，因为数字货币目前在许多国家已被接受。
-- 多语言支持是面向全球消费者的流媒体应用必备的功能。例如，Netflix为其网站上的标题提供了不同语言的音频。
-- 应用内聊天：通过启用应用内聊天，用户将能够与平台上的其他用户建立联系，并分享他们对各种类型内容的体验。
-- 主播可以在其频道上主持或广播流媒体内容，供其他用户消费。主播可以在Twitch和YouTube等应用上为其他用户广播直播流。
-- 私人直播是一项允许主播将视频私密地广播给单个用户、一组用户或指定地区的功能。Discord就是提供此类私人直播选项的软件之一。
+- **多种支付方式**：为客户提供多种支付选择，使他们能够轻松订阅您的流媒体服务或在线购买特定内容。我们甚至可以接受加密货币作为支付方式，因为数字货币目前在许多国家已被接受。
+- **多语言支持**是面向全球消费者的流媒体应用必备的功能。例如，Netflix 为其网站上的标题提供了不同语言的音频。
+- **应用内聊天**：通过启用应用内聊天，用户将能够与平台上的其他用户建立联系，并分享他们对各种类型内容的体验。
+- **主播**可以在其频道上主持或广播流媒体内容，供其他用户消费。主播可以在 Twitch 和 YouTube 等应用上为其他用户广播直播流。
+- **私人直播**是一项允许主播将视频私密地广播给单个用户、一组用户或指定地区的功能。Discord 就是提供此类私人直播选项的软件之一。
 
 ## 第三步：技术栈的完善
 
@@ -1623,87 +1622,82 @@ OTT 和 VOD 应用帮助用户获得了更多基于选择的流媒体服务，�
 
 ### 在线视频流媒体协议
 
+
+
 流媒体是将数据传送到您的设备上，然后再下载或加载的过程。这减少了内存占用，并允许您不间断地以流的方式访问数据。执行此类流媒体的标准方法被称为流媒体协议。
 
 ### MPEG-DASH
 
-MPEG-DASH是一种流媒体协议，全称为"基于HTTP的动态自适应流媒体"。它将视频内容分成小块，并根据网络强度调整质量以实现不间断的流媒体传输。数据库或源服务器会将视频流分成多个几秒钟的部分。此外，服务器会对这些片段进行索引，并为不同的设备以不同的编码标准进行编码以便流式传输。
+MPEG-DASH 是一种流媒体协议，全称为“基于 HTTP 的动态自适应流媒体”。它将视频内容分成小块，并根据网络强度调整质量，以实现不间断的流媒体传输。数据库或源服务器会将视频流分成多个几秒钟的部分。此外，服务器会对这些片段进行索引，并为不同的设备以不同的编码标准进行编码，以便流式传输。
 
 ### HLS
 
-HLS，即HTTP实时流媒体，是一种与MPEG-DASH类似的流媒体协议。它将视频转换为可下载的HTTP文件，并使用HTTP协议将其发送到用户的设备。这些设备能够以播放视频的方式来播放HTTP文件。因此，由于HLS可以在任何具有互联网连接的设备上运行，它是开发流媒体应用的绝佳选择。
+HLS，即 HTTP 实时流媒体，是一种与 MPEG-DASH 类似的流媒体协议。它将视频转换为可下载的 HTTP 文件，并使用 HTTP 协议将其发送到用户的设备。这些设备能够以播放视频的方式来播放 HTTP 文件。因此，由于 HLS 可以在任何具有互联网连接的设备上运行，它是开发流媒体应用的绝佳选择。
 
 ### RTMP
 
-RTMP（实时消息传输协议）用于实时视频直播。例如，大多数高清音乐会直播都使用RTMP协议。然而，流媒体源和用户设备之间存在10-20秒的延迟。同时使用RTMP和HLS协议是直播应用减少延迟的最佳方式之一。RTMP协议支持高清直播，而HLS使用自适应比特率流媒体来减少延迟。
+RTMP（实时消息传输协议）用于实时视频直播。例如，大多数高清音乐会直播都使用 RTMP 协议。然而，流媒体源和用户设备之间存在 10–20 秒的延迟。同时使用 RTMP 和 HLS 协议是直播应用减少延迟的最佳方式之一。RTMP 协议支持高清直播，而 HLS 使用自适应比特率流媒体来减少延迟。
 
 ### WebRTC
 
-WebRTC是一种使用流媒体协议的实时通信协议。对于数据馈送流媒体，它作为插件工作，不需要原生应用程序。WebRTC通过允许实时传输音频/视频馈送来实现点对点通信。WebRTC被用于Google Meet、Zoom及类似应用中的视频会议。
+WebRTC 是一种使用流媒体协议的实时通信协议。对于数据馈送流媒体，它作为插件工作，不需要原生应用程序。WebRTC 通过允许实时传输音频/视频馈送来实现点对点通信。WebRTC 被用于 Google Meet、Zoom 及类似应用中的视频会议。
 
 ## 流媒体平台
 
 这些是允许内容进行流式传输的平台。例如，基于云的解决方案是支持可变比特率（VBR）的视频流媒体应用的理想选择。为了适应复杂的视频部分，它会修改数据传输速率。因此，在复杂片段处它将获取更多数据，而在数据传输需求较少时编码器会降低速率以进行优化。我们可以使用基于云的服务，通过自定义处理函数来开发触发功能。这样的触发功能可以实现流媒体应用中用于改善视频质量的比特率控制。
 
-相应地，我们需要选择用于流媒体应用的分发基础设施。例如，如果您真的想在Google Play商店上发布应用，那么我们需要一个与Android兼容的原生流媒体平台。同时还需要考虑iOS、桌面操作系统等其他平台。
+相应地，我们需要选择用于流媒体应用的分发基础设施。例如，如果您真的想在 Google Play 商店上发布应用，那么我们需要一个与 Android 兼容的原生流媒体平台。同时还需要考虑 iOS、桌面操作系统等其他平台。
 
 ## 内容分发网络
 
-像HLS或MPEG-DASH这样的流媒体协议将视频拼接成小块，通过内容分发网络（CDN）传送到设备。CDN指的是全球分布的服务器集合，能够实现更快速的互联网内容交付。CDN不仅有助于传输视频内容，还可以传输HTML页面、JavaScript文件、样式表、图片和音频文件。
+像 HLS 或 MPEG-DASH 这样的流媒体协议将视频拼接成小块，通过内容分发网络（CDN）传送到设备。CDN 指的是全球分布的服务器集合，能够实现更快速的互联网内容交付。CDN 不仅有助于传输视频内容，还可以传输 HTML 页面、JavaScript 文件、样式表、图片和音频文件。
 
-因此，如果我们试图了解和探索如何为公司制作流媒体应用，CDN就成为软件栈中最重要的部分之一。用户可以从配置好的CDN中受益，因为它们可以帮助实现无缝的流媒体播放和安全的数据访问。
+因此，如果我们试图了解和探索如何为公司制作流媒体应用，CDN 就成为软件栈中最重要的部分之一。用户可以从配置好的 CDN 中受益，因为它们可以帮助实现无缝的流媒体播放和安全的数据访问。
 
-以下是选择正确CDN的一些优势：
+以下是选择正确 CDN 的一些优势：
 
-- CDN使用全球分布的服务器来减轻单个服务器的压力，同时确保低延迟。
+- CDN 使用全球分布的服务器来减轻单个服务器的压力，同时确保低延迟。
 - 它允许收集用户统计数据，例如实时负载数据、内容资产的需求信息、每个客户的容量、趋势和消费模式等。
-- 然而，流媒体源和用户设备之间存在20-30秒的延迟。
+- 然而，流媒体源和用户设备之间存在 20–30 秒的延迟。
 - 分布式基础设施使得全球客户的内容可用性成为现实，有助于扩展您的流媒体业务。
 
-流媒体应用最佳CDN包括：
+流媒体应用最佳 CDN 包括：
 
-- Amazon Cloudfront是一个全服务平台，支持流媒体平台，支持HLS、DASH、HDS和MSS广播，在42个国家拥有216个接入点。
-- Limelight Networks在70个国家拥有130个接入点，是流媒体平台领先的CDN服务提供商之一。
-- Microsoft Azure在65个国家拥有约129个接入点，提供全服务平台和存储，支持HLS、DASH、HDS和MSS流。
-- KeyCDN仅支持HLS协议，在23个国家拥有34个接入点，并提供充足的文档帮助您入门。
-- Akamai在130个国家设有服务器，支持HLS、HDS和DASH协议，是流媒体平台的主要CDN服务之一。
-- 在30个国家通过60个接入点提供HLS、MSS（Microsoft Streaming Hosting）、HDS和DASH流媒体协议。
+- Amazon CloudFront 是一个全服务平台，支持流媒体平台，支持 HLS、DASH、HDS 和 MSS 广播，在 42 个国家拥有 216 个接入点。
+- Limelight Networks 在 70 个国家拥有 130 个接入点，是流媒体平台领先的 CDN 服务提供商之一。
+- Microsoft Azure 在 65 个国家拥有约 129 个接入点，提供全服务平台和存储，支持 HLS、DASH、HDS 和 MSS 流。
+- KeyCDN 仅支持 HLS 协议，在 23 个国家拥有 34 个接入点，并提供充足的文档帮助您入门。
+- Akamai 在 130 个国家设有服务器，支持 HLS、HDS 和 DASH 协议，是流媒体平台的主要 CDN 服务之一。
+- 在 30 个国家通过 60 个接入点提供 HLS、MSS（Microsoft Streaming Hosting）、HDS 和 DASH 流媒体协议。
 
 ## 数据库和托管
 
-如果您想构建视频流媒体平台，我们将需要一个可靠的托管服务。它能为我们的观众提供无缝的流媒体体验。同样，在开发流媒体平台之前必须了解数据库需求。在考虑我们服务的可扩展性时，我们应该考虑基于云的选择，例如Amazon S3。当我们要服务大量观众同时确保持续的流媒体播放时，此类服务可以提供帮助。
+如果您想构建视频流媒体平台，我们将需要一个可靠的托管服务。它能为我们的观众提供无缝的流媒体体验。同样，在开发流媒体平台之前必须了解数据库需求。在考虑我们服务的可扩展性时，我们应该考虑基于云的选择，例如 Amazon S3。当我们要服务大量观众同时确保持续的流媒体播放时，此类服务可以提供帮助。
 
 ## 第四步：开发与设计
 
-精心规划对于设计我们的流媒体应用至关重要，以包含这些功能并提供良好的用户体验。从设计阶段开始，为可视化创建用户界面（UI）线框图。然后，在获得客户同意后，应用开发公司可以继续开发最小可行产品。在设计UI时需要考虑以下几点：
+精心规划对于设计我们的流媒体应用至关重要，以包含这些功能并提供良好的用户体验。从设计阶段开始，为可视化创建用户界面（UI）线框图。然后，在获得客户同意后，应用开发公司可以继续开发最小可行产品。在设计 UI 时需要考虑以下几点：
 
-- 以人为本的设计：将用户置于UI设计流程的中心有助于创建易于使用的程序。
-- 组织目标：UI设计必须基于使用场景和业务需求来扩展组织逻辑。
-- 考虑用户地理位置和种族的UI设计可以通过熟悉感对其用户体验产生重大影响。
+- 以人为本的设计：将用户置于 UI 设计流程的中心有助于创建易于使用的程序。
+- 组织目标：UI 设计必须基于使用场景和业务需求来扩展组织逻辑。
+- 考虑用户地理位置和种族的 UI 设计可以通过熟悉感对其用户体验产生重大影响。
+- 空间启发式：充分利用 UI 空间的各种元素会大有裨益；例如，你可以引入留白空间以获得更具沉浸感的体验。
+- 我们可以通过考虑流媒体应用的内容可访问性来构建提供最佳体验的 UI。
 
+## 第 5 步：测试与维护
 
-
- - 空间启发式：充分利用UI空间的各种元素会大有裨益；例如，你可以引入留白空间以获得更具沉浸感的体验。
-
-- 我们可以通过考虑流媒体应用的内容可访问性来构建提供最佳体验的UI。
-
-## 第5步：测试与维护
-
-流媒体应用测试是我们开发策略的重要环节，因为它能确保我们的UI、后端服务器、API集成及其他组件运行良好。在此过程中，使用Selenium和Appium等自动化技术将有助于我们缩短运行各种测试所需的时间，使我们能够对应用性能进行精细调优。
+流媒体应用测试是我们开发策略的重要环节，因为它能确保我们的 UI、后端服务器、API 集成及其他组件运行良好。在此过程中，使用 Selenium 和 Appium 等自动化技术将有助于我们缩短运行各种测试所需的时间，使我们能够对应用性能进行精细调优。
 
 我们需要对流媒体应用运行多种类型的测试，包括：
 
-- UX测试用于确保所有设备上的用户体验保持一致。必须在各平台上测试一致性、导航和功能性。
-
+- UX 测试用于确保所有设备上的用户体验保持一致。必须在各平台上测试一致性、导航和功能性。
 - 负载测试模拟系统高峰期的需求，以检查你的应用能否应对增加的负载。当数百万用户从多个地点通过你的应用消费内容时，负载测试变得至关重要。
-
 - 性能测试检查在响应用户内容请求时的可靠性、稳定性和服务器性能，无论带宽或平台如何。此类测试将使我们能够确保流媒体服务无差错运行，并提升应用性能。
-
 - 本地化测试包括检查语言清晰度、内容的文化适当性、个性化设置，以及面向本地用户的正确货币支付格式。这是一项关键检查，确保内容本地化符合用户的偏好。
 
-保持最佳性能需要跟踪多个KPI并微调应用的功能。另一方面，维护则需要了解程序的技术栈和架构设计，以确保应用功能正常运行。
+保持最佳性能需要跟踪多个 KPI 并微调应用的功能。另一方面，维护则需要了解程序的技术栈和架构设计，以确保应用功能正常运行。
 
-64 ■ 精通JavaScript
+64 ■ 精通 JavaScript
 
 ## 开发一个流媒体应用需要多少成本？
 
@@ -1711,79 +1705,79 @@ WebRTC是一种使用流媒体协议的实时通信协议。对于数据馈送�
 
 ## 基于功能的成本
 
-在决定如何开发流媒体应用时，功能至关重要。例如，如果我们正在创建一个SVOD OTT应用，我们需要为不同人群的用户提供多种功能。多种视频分辨率选项（如4K或1080P）以及多语言音频调整可能需要较长的开发时间。基本功能（如用户登录和个人资料管理）由于复杂度较低，设计所需时间更少。问题是，我们如何确定准确的成本？答案是开发时间。然而，它会因应用类型、规模和特性而有所不同。建立流媒体应用的成本不仅包括基于功能的成本，还包括市场调研、创意构思、测试和维护等成本。
+在决定如何开发流媒体应用时，功能至关重要。例如，如果我们正在创建一个 SVOD OTT 应用，我们需要为不同人群的用户提供多种功能。多种视频分辨率选项（如 4K 或 1080P）以及多语言音频调整可能需要较长的开发时间。基本功能（如用户登录和个人资料管理）由于复杂度较低，设计所需时间更少。问题是，我们如何确定准确的成本？答案是开发时间。然而，它会因应用类型、规模和特性而有所不同。建立流媒体应用的成本不仅包括基于功能的成本，还包括市场调研、创意构思、测试和维护等成本。
 
-## 使用Node.js进行应用开发
+## 使用 Node.js 进行应用开发
 
-如果我们打算创建一个同时运行多个连接的流媒体Web应用，Node人才无疑将对我们大有裨益。当涉及到在Web应用中播放视频时，Node.js是理想的选择，因为它将数据分割成片段并快速播放大型视频。
+如果我们打算创建一个同时运行多个连接的流媒体 Web 应用，Node 人才无疑将对我们大有裨益。当涉及到在 Web 应用中播放视频时，Node.js 是理想的选择，因为它将数据分割成片段并快速播放大型视频。
 
 ## 视频流
 
-流的工作方式是将数据分段发送给客户端，而非一次性全部发送。在Node.js中，有一些流以难以使用甚至更难以理解而闻名。Dominic Tarr认为："流是Node最大也最被低估的概念。"即使是Redux的创建者、React.js核心团队成员Dan Abramov，也对Node流感到畏惧。
+流的工作方式是将数据分段发送给客户端，而非一次性全部发送。在 Node.js 中，有一些流以难以使用甚至更难以理解而闻名。Dominic Tarr 认为：“流是 Node 最大也最被低估的概念。”即使是 Redux 的创建者、React.js 核心团队成员 Dan Abramov，也对 Node 流感到畏惧。
 
 ## 流到底是什么？
 
-流是Node.js应用构建的核心原则之一。它们是一种按顺序读取输入或写入输出的数据处理方法。流是一种高效处理文件读写、网络通信或任何其他类型端到端数据流的技术。流的显著特点在于
-- 流的显著特点在于，它们不像传统方法那样将整个文件一次性读入内存，而是逐段读取数据，在不将内容完全存储在内存中的情况下进行处理。这使得流在处理海量数据时极为有用。例如，一个文件的大小可能超出你分配的内存空间，如果不将整个文件读入内存就难以处理。流在这种情况下就能派上用场。通过使用流处理较小的数据块，可以读取更大的文件。以YouTube或Netflix等"流媒体"服务为例：这些服务不需要你一次性下载视频和音频流。相反，浏览器以连续的分块流形式接收影片，使观看者几乎可以立即开始观看和/或收听。
+流是 Node.js 应用构建的核心原则之一。它们是一种按顺序读取输入或写入输出的数据处理方法。流是一种高效处理文件读写、网络通信或任何其他类型端到端数据流的技术。流的显著特点在于：
 
-然而，流不仅仅用于处理视频或大规模数据。它们还为我们提供了编写"可组合"代码的机会。当我们以可组合性为出发点进行设计时，我们是在确保多个组件可以以特定方式组合以获得相同的结果。在Node.js中使用流，你可以通过将数据在较小的代码块之间进行管道传输来创建功能强大的代码块。
+- 流的显著特点在于，它们不像传统方法那样将整个文件一次性读入内存，而是逐段读取数据，在不将内容完全存储在内存中的情况下进行处理。这使得流在处理海量数据时极为有用。例如，一个文件的大小可能超出你分配的内存空间，如果不将整个文件读入内存就难以处理。流在这种情况下就能派上用场。通过使用流处理较小的数据块，可以读取更大的文件。以 YouTube 或 Netflix 等“流媒体”服务为例：这些服务不需要你一次性下载视频和音频流。相反，浏览器以连续的分块流形式接收影片，使观看者几乎可以立即开始观看和/或收听。
+
+然而，流不仅仅用于处理视频或大规模数据。它们还为我们提供了编写“可组合”代码的机会。当我们以可组合性为出发点进行设计时，我们是在确保多个组件可以以特定方式组合以获得相同的结果。在 Node.js 中使用流，你可以通过将数据在较小的代码块之间进行管道传输来创建功能强大的代码块。
 
 为什么使用流而不是其他数据处理方法？与其他数据处理方法相比，流有两个显著优势：
 
 - 内存效率：这意味着我们不必在处理数据之前将大量数据加载到内存中。
-
 - 时间效率：在收到数据后立即开始处理，比等待整个负载传输完成要快得多，从而大大节省时间。
 
-在Node.js中，有四种不同类型的流：
+在 Node.js 中，有四种不同类型的流：
 
 - 可写流（Writable）：可以向流中写入数据。例如，`fs.createWriteStream()` 允许我们使用流将数据写入文件。
-
 - 可读流（Readable）：可以从中读取数据的流。例如，`fs.createReadStream()` 允许我们读取文件内容。
-
 - 双工流（Duplex）：可以同时进行读写操作的双向流。例如，互联网就是一个典型的例子。
-
 - 转换流（Transform）：可以在读写过程中修改或转换数据的流。例如，在文件压缩的情况下，我们可以将压缩数据写入文件，并从中获取解压缩后的数据。
 
-如果我们之前使用过Node.js，很可能已经接触过流。例如，在基于Node.js的HTTP服务器中，请求是一个可读流，响应是一个可写流。我们可能使用过fs模块，它允许你与可读和可写文件流进行交互。每当你使用Express与客户端进行交互时，都会使用流，因为TCP套接字、TLS协议栈以及其他连接都建立在Node.js流的基础上。我们能接触到的每个数据库连接驱动程序中也都使用了流。
+如果我们之前使用过 Node.js，很可能已经接触过流。例如，在基于 Node.js 的 HTTP 服务器中，请求是一个可读流，响应是一个可写流。我们可能使用过 `fs` 模块，它允许你与可读和可写文件流进行交互。每当你使用 Express 与客户端进行交互时，都会使用流，因为 TCP 套接字、TLS 协议栈以及其他连接都建立在 Node.js 流的基础上。我们能接触到的每个数据库连接驱动程序中也都使用了流。
 
 ## 一个实际案例
 
 创建可读流的最有效方法是什么？
 
-我们首先创建并初始化Readable流。
+我们首先创建并初始化 `Readable` 流。
 
-```
+```javascript
 const Stream = require('stream')
 const readableStream = new Stream.Readable()
 ```
 
 初始化完成后，我们就可以向流中传输数据了：
 
-```
+```javascript
 readableStream.push('ping!')
 readableStream.push('pong!')
 ```
 
 ## 异步迭代器
 
-在使用流时，强烈建议使用异步迭代器。Axel Rauschmayer博士认为，异步迭代是一种异步检索数据容器内容的机制（意味着当前"任务"在获取某个项目之前可能会被中断）。同样值得注意的是，readable事件在流异步
+在使用流时，强烈建议使用异步迭代器。Axel Rauschmayer 博士认为，异步迭代是一种异步检索数据容器内容的机制（意味着当前“任务”在获取某个项目之前可能会被中断）。同样值得注意的是，`readable` 事件在流异步迭代器实现。
 
+当从可读流读取时，我们可以使用异步迭代器：
 
-
-# **使用 Readable.from() 从可迭代流创建可读流**
-
-迭代器实现。当从可读流读取时，我们可以使用异步迭代器：
+# 使用 `Readable.from()` 从可迭代流创建可读流
 
 ```javascript
 import * as fs from 'fs';
+
 async function logChunks(readable) {
   for await (const chunk of readable) {
     console.log(chunk);
   }
 }
+
 const readable = fs.createReadStream(
-  'tmp/test.txt', {encoding: 'utf8'});
+  'tmp/test.txt', { encoding: 'utf8' }
+);
+
 logChunks(readable);
+
 // Output:
 // 'This is a test!\n'
 ```
@@ -1791,31 +1785,42 @@ logChunks(readable);
 同样，可以使用字符串来捕获可读流的内容：
 
 ```javascript
-import {Readable} from 'stream';
+import { Readable } from 'stream';
+
 async function readableToString2(readable) {
   let result = '';
+
   for await (const chunk of readable) {
     result += chunk;
   }
+
   return result;
 }
-const readable = Readable.from('Good noon !',
-{encoding: 'utf8'});
-assert.equal(await readableToString2(readable),
-'Good morning!');
+
+const readable = Readable.from('Good noon !', {
+  encoding: 'utf8'
+});
+
+assert.equal(
+  await readableToString2(readable),
+  'Good morning!'
+);
 ```
 
-因为我们打算返回一个 Promise，所以在这个场景中必须使用异步函数。关键在于不要将异步方法与 EventEmitter 混用，因为目前没有机制能在事件处理器内检测到拒绝，这会导致难以追踪的问题和内存泄漏。当前的最佳实践是将异步函数的内容封装在 try/catch 块中并以此处理问题，尽管这容易出错。这个拉取请求旨在解决这个问题，一旦进入 Node 核心。
+因为我们打算返回一个 Promise，所以在这个场景中必须使用异步函数。关键在于不要将异步方法与 EventEmitter 混用，因为目前没有机制能在事件处理器内检测到拒绝，这会导致难以追踪的问题和内存泄漏。当前的最佳实践是将异步函数的内容封装在 `try/catch` 块中并以此处理问题，尽管这容易出错。这个拉取请求旨在解决这个问题，一旦进入 Node 核心。
 
 `Readable.from(iterable, [options])` 是一个便捷函数，用于从持有可迭代数据的迭代器构建可读流。可迭代有两种类型：同步和异步。`options` 参数是可选的，可用于指定文本编码等。
 
 ```javascript
 const { Readable } = require('stream');
-async function * generate() {
+
+async function* generate() {
   yield 'hello';
   yield 'streams';
 }
+
 const readable = Readable.from(generate());
+
 readable.on('data', (chunk) => {
   console.log(chunk);
 });
@@ -1830,27 +1835,32 @@ readable.on('data', (chunk) => {
 - 在流动模式下，数据会尽快从底层系统读取，并通过 EventEmitter 接口使用事件传递给应用程序。
 - 在暂停模式下，必须直接使用 `stream.read()` 方法从流中读取数据块。
 
-要在流动模式下从流中读取数据，我们可以监听 data 事件并附加一个回调函数。当一块数据可用时，可读流会广播一个 data 事件，然后你的回调函数执行。看一下：
+要在流动模式下从流中读取数据，我们可以监听 `data` 事件并附加一个回调函数。当一块数据可用时，可读流会广播一个 `data` 事件，然后你的回调函数执行。看一下：
 
 ```javascript
 var fs = require("fs");
 var data = '';
 var readerStream = fs.createReadStream('file.txt'); // 创建一个可读流
+
 readerStream.setEncoding('UTF8'); // 设置编码为 utf8。
+
 // 处理流事件 --> data, end, 和 error
 readerStream.on('data', function(chunk) {
     data += chunk;
 });
+
 readerStream.on('end', function() {
     console.log(data);
 });
+
 readerStream.on('error', function(err) {
     console.log(err.stack);
 });
+
 console.log("程序结束");
 ```
 
-`fs.createReadStream()` 函数创建一个可读流。流最初处于静态状态。一旦我们监听 data 事件并附加回调函数，它就开始流动。之后，数据块被读取并传递给回调函数。data 事件发出的频率由流实现者决定。例如，一个 HTTP 请求可能在读取每几 KB 数据时产生一个 data 事件。在从文件读取数据时，我们可能选择在读取完一行后广播一个 data 事件。当没有更多数据可读取时，流会产生一个 end 事件。我们在上面的代码片段中监听这个事件以在结束时得到通知。当没有更多数据可读取时，流会产生一个 end 事件。我们在上面的代码片段中监听这个事件以在结束时得到通知。
+`fs.createReadStream()` 函数创建一个可读流。流最初处于静态状态。一旦我们监听 `data` 事件并附加回调函数，它就开始流动。之后，数据块被读取并传递给回调函数。`data` 事件发出的频率由流实现者决定。例如，一个 HTTP 请求可能在读取每几 KB 数据时产生一个 `data` 事件。在从文件读取数据时，我们可能选择在读取完一行后广播一个 `data` 事件。当没有更多数据可读取时，流会产生一个 `end` 事件。我们在上面的代码片段中监听这个事件以在结束时得到通知。当没有更多数据可读取时，流会产生一个 `end` 事件。我们在上面的代码片段中监听这个事件以在结束时得到通知。
 
 此外，如果发生错误，流会发出并警告用户。
 
@@ -1861,32 +1871,36 @@ var fs = require('fs');
 var readableStream = fs.createReadStream('file.txt');
 var data = '';
 var chunk;
+
 readableStream.on('readable', function() {
-    while ((chunk=readableStream.read()) != null) {
+    while ((chunk = readableStream.read()) != null) {
         data += chunk;
     }
 });
+
 readableStream.on('end', function() {
-    console.log(data)
+    console.log(data);
 });
 ```
 
-`read()` 函数返回从内部缓冲区读取的数据。如果没有数据可读，它返回 null。因此，我们在 while 循环中检查 null 并结束循环。当流中的一块数据可以被读取时，readable 事件被发出。所有可读流开始时都处于暂停模式，但可以通过以下几种方式之一转换为流动模式：
+`read()` 函数返回从内部缓冲区读取的数据。如果没有数据可读，它返回 `null`。因此，我们在 `while` 循环中检查 `null` 并结束循环。当流中的一块数据可以被读取时，`readable` 事件被发出。所有可读流开始时都处于暂停模式，但可以通过以下几种方式之一转换为流动模式：
 
-- 为 "data" 事件添加处理器。
+- 为 `data` 事件添加处理器。
 - 使用 `stream.resume()` 方法。
 - 使用 `stream.pipe()` 方法将数据发送到可写流。
 
 可以使用以下方法之一将可读流转回暂停模式：
 
-- 如果没有 pipe 目的地，使用 `stream.pause()` 方法。
-- 如果有 pipe 目的地，移除所有 pipe 目的地。可以使用 `stream.unpipe()` 方法删除多个 pipe 目的地。
+- 如果没有 `pipe` 目的地，使用 `stream.pause()` 方法。
+- 如果有 `pipe` 目的地，移除所有 `pipe` 目的地。可以使用 `stream.unpipe()` 方法删除多个 `pipe` 目的地。
 
-需要记住的关键点是，可读流不会产生数据，除非它有吸收或忽略数据的机制。如果消费机制被禁用或移除，可读流将尝试停止生成数据。当我们添加 readable 事件处理器时，流将停止流动，数据将使用 `readable.read()` 被消费。如果 "readable" 事件处理器被移除，并且存在 "data" 事件处理器，流将恢复流动。
+需要记住的关键点是，可读流不会产生数据，除非它有吸收或忽略数据的机制。如果消费机制被禁用或移除，可读流将尝试停止生成数据。当我们添加 `readable` 事件处理器时，流将停止流动，数据将使用 `readable.read()` 被消费。如果 `readable` 事件处理器被移除，并且存在 `data` 事件处理器，流将恢复流动。
 
 ## 创建可写流最有效的方法是什么？
 
-我们必须在流对象上执行 `write()` 来将数据写入可写流。例如，考虑以下：
+
+
+我们必须在流对象上执行`write()`来将数据写入可写流。例如，考虑以下：
 
 ```javascript
 var fs = require('fs');
@@ -1898,9 +1912,9 @@ readableStream.on('data', function(chunk) {
 });
 ```
 
-上面显示的代码很简单。它只是从输入流读取数据块并使用 `write()` 将它们发布到目标。如果过程成功，此函数返回一个布尔值。如果是这种情况，写入成功，我们可以继续写入数据。如果返回 false，则表示出了问题，我们现在无法发布任何内容。可写流将通过广播 drain 事件来通知我们何时可以开始写入更多数据。
+上面显示的代码很简单。它只是从输入流读取数据块并使用`write()`将它们发布到目标。如果过程成功，此函数返回一个布尔值。如果是这种情况，写入成功，我们可以继续写入数据。如果返回`false`，则表示出了问题，我们现在无法发布任何内容。可写流将通过广播`drain`事件来通知我们何时可以开始写入更多数据。
 
-当我们调用 `writable.end()` 方法时，我们是在告诉可写流不会再有数据写入它。如果指定了回调函数，它将作为 "finish" 事件的监听器附加。
+当我们调用`writable.end()`方法时，我们是在告诉可写流不会再有数据写入它。如果指定了回调函数，它将作为`finish`事件的监听器附加。
 
 ```javascript
 // 写入 'hello, ' 然后以 'world!' 结束。
@@ -1958,11 +1972,11 @@ assert.equal(
     'One line of text.\n');
 ```
 
-## pipeline()
+## `pipeline()`
 
-管道是一种方法，允许我们将一个流的输出输入到另一个流。它通常用于从一个流获取数据并将该流的输出传递给另一个流。管道操作的数量是不受限制的。换句话说，管道是一种在多个阶段处理流数据的技术。stream.pipeline 在 Node 10.x 中引入。这是一个模块方法，用于在流之间进行管道传输、传输失败、正确清理并在管道完成时提供回调。
+管道是一种方法，允许我们将一个流的输出输入到另一个流。它通常用于从一个流获取数据并将该流的输出传递给另一个流。管道操作的数量是不受限制的。换句话说，管道是一种在多个阶段处理流数据的技术。`stream.pipeline`在 Node 10.x 中引入。这是一个模块方法，用于在流之间进行管道传输、传输失败、正确清理并在管道完成时提供回调。
 
-以下是 pipeline 如何使用的一个示例：
+以下是`pipeline`如何使用的一个示例：
 
 ```javascript
 const { pipeline } = require('stream');
@@ -1973,9 +1987,8 @@ const Zlib = require('zlib');
 // 用于高效地 gzip 压缩一个可能很大的视频文件的管道：
 ```
 
-
-
-```pipeline(
+```javascript
+pipeline(
   fs.createReadStream('The.Matrix.720p.mkv'),
   zlib.createGzip(),
   fs.createWriteStream('The.Matrix.720p.mkv.gz'),
@@ -1989,45 +2002,45 @@ const Zlib = require('zlib');
 );
 ```
 
-因为 `pipe` 存在危险，所以应该改用 `pipeline`。
+因为`pipe`存在危险，所以应该改用`pipeline`。
 
 ## Stream 模块
 
-它是软件的一部分，允许我们在 Node.js 中创建流模块，该模块是所有流式 API 的基础。`stream` 模块是一个原生的 Node.js 模块，已预装。流对象是 `EventEmitter` 类的一个实例，在 Node 中用于处理异步事件。因此，流本质上是基于事件的。
+它是软件的一部分，允许我们在 Node.js 中创建流模块，该模块是所有流式 API 的基础。`stream`模块是一个原生的 Node.js 模块，已预装。流对象是`EventEmitter`类的一个实例，在 Node 中用于处理异步事件。因此，流本质上是基于事件的。
 
-要使用 stream 模块，请转到：
+要使用`stream`模块，请转到：
 
-```
+```javascript
 const stream = require('stream');
 ```
 
-`stream` 模块可用于创建新的流实例。要消费流，我们通常不需要使用 `stream` 模块。
+`stream`模块可用于创建新的流实例。要消费流，我们通常不需要使用`stream`模块。
 
 ## 使用流的 Node API
 
 许多 Node.js 核心模块都包含原生的流处理能力，因为它们具有显著的优势，其中最值得注意的是：
 
-- `net.Socket` 是构建流的主要 Node API，它支撑了后续的大部分 API。
-- `stdin` 命令返回一个连接到 stdin 进程的流。
-- `stdout` 函数返回一个连接到 stdout 进程的流。
+- `net.Socket`是构建流的主要 Node API，它支撑了后续的大部分 API。
+- `stdin`命令返回一个连接到 stdin 进程的流。
+- `stdout`函数返回一个连接到 stdout 进程的流。
 
 ## 掌握 JavaScript
 
-- `stderr` 函数返回一个附加到 stderr 文件系统的流。
-- `createReadStream()` 在文件系统中创建一个可读流。
-- `createWriteStream()` 建立一个具有可写流的文件网络。
-- `connect()` 建立一个流连接。
-- `HTTP.request()` 返回一个可写流，它是 `HTTP.ClientRequest` 类的一个实例。
-- `zlib.createGzip()` 使用 gzip（压缩算法）将数据压缩到流中。
-- `zlib.createGunzip()` 是一个用于解压 gzip 流的函数。
-- `zlib.createDeflate()` 使用 deflate（一种压缩方法）将数据压缩到流中。
-- `zlib.createInflate()` 是一个用于解压 deflate 流的函数。
+- `stderr`函数返回一个附加到 stderr 文件系统的流。
+- `createReadStream()`在文件系统中创建一个可读流。
+- `createWriteStream()`建立一个具有可写流的文件网络。
+- `connect()`建立一个流连接。
+- `HTTP.request()`返回一个可写流，它是`HTTP.ClientRequest`类的一个实例。
+- `zlib.createGzip()`使用 gzip（压缩算法）将数据压缩到流中。
+- `zlib.createGunzip()`是一个用于解压 gzip 流的函数。
+- `zlib.createDeflate()`使用 deflate（一种压缩方法）将数据压缩到流中。
+- `zlib.createInflate()`是一个用于解压 deflate 流的函数。
 
 以下是可读流历史中的一些关键日期：
 
-- `error` – 发出信号以表示发生了写入/管道错误。
-- `pipeline` – 当可读流被管道传输到可写流时，此事件由可写流发出。
-- `unpipe` – 当读取流被取消管道传输以防止其管道传输到目标流时发出。
+- `error`– 发出信号以表示发生了写入/管道错误。
+- `pipeline`– 当可读流被管道传输到可写流时，此事件由可写流发出。
+- `unpipe`– 当读取流被取消管道传输以防止其管道传输到目标流时发出。
 
 以上都是关于流的基础知识。Node.js 最基本、最强大的元素是流、管道和链式操作。流确实可以帮助你编写干净且高性能的 I/O 代码。还有一个名为 BOB 的 Node.js 战略计划，旨在改善 Node.js 流数据接口，包括内部接口和未来的公共 API。
 
@@ -2035,9 +2048,9 @@ const stream = require('stream');
 
 ## 项目概览
 
-在开始编码之前，让我们先从高层次了解一下我们的应用将如何工作。上图中左侧是浏览器，右侧是服务器。你的网站上将有一个 HTML5 视频元素，其 `source` 指向 `/video` 端点。
+在开始编码之前，让我们先从高层次了解一下我们的应用将如何工作。上图中左侧是浏览器，右侧是服务器。你的网站上将有一个 HTML5 视频元素，其`source`指向`/video`端点。
 
-视频元素首先向服务器发送一个请求，然后响应头从视频中传递所需数量的字节。例如，视频开始时请求的范围将是从第 0 个字节开始，因此是 `0-`。服务器将返回一个 206 HTTP 状态码，表示它正在返回部分内容，并带有适当的响应头，包括范围和内容长度。视频元素从响应头接收一条消息，表明视频尚未完成。因此，视频元素将播放先前下载的内容。视频元素将继续发出请求，直到没有更多可用的字节，届时该循环将重复。
+视频元素首先向服务器发送一个请求，然后响应头从视频中传递所需数量的字节。例如，视频开始时请求的范围将是从第 0 个字节开始，因此是`0-`。服务器将返回一个 206 HTTP 状态码，表示它正在返回部分内容，并带有适当的响应头，包括范围和内容长度。视频元素从响应头接收一条消息，表明视频尚未完成。因此，视频元素将播放先前下载的内容。视频元素将继续发出请求，直到没有更多可用的字节，届时该循环将重复。
 
 ## 应用程序的优缺点
 
@@ -2053,15 +2066,15 @@ const stream = require('stream');
 
 我们将从创建一个新文件夹并安装 npm 开始：
 
-```
+```bash
 npm init
 ```
 
 **76 ■ 掌握 JavaScript**
 
-现在安装 `nodemon` 和 `express`：
+现在安装`nodemon`和`express`：
 
-```
+```bash
 npm install —save express nodemon
 ```
 
@@ -2093,11 +2106,11 @@ npm install —save express nodemon
 </html>
 ```
 
-## /Video 端点
+## `/Video`端点
 
-接下来，将编写 `/video` 端点。当我们运行上面的 HTML 代码时，屏幕上最终应该会显示一个媒体元素。
+接下来，将编写`/video`端点。当我们运行上面的 HTML 代码时，屏幕上最终应该会显示一个媒体元素。
 
-为了使其工作，我们需要创建一个新的服务器文件，其中包含我们所有的函数。为了使其工作，我们需要创建一个包含所有函数的新 JavaScript 文件。在这个新文件中，我们将导入 `express` 和 `fs`（代表文件系统）。运行以下代码：
+为了使其工作，我们需要创建一个新的服务器文件，其中包含我们所有的函数。为了使其工作，我们需要创建一个包含所有函数的新 JavaScript 文件。在这个新文件中，我们将导入`express`和`fs`（代表文件系统）。运行以下代码：
 
 ```javascript
 const express = require("express");
@@ -2114,7 +2127,7 @@ app.listen(7000, function () {
 });
 ```
 
-我们现在将为 `/video` 端点制作一个函数。我们必须确保存在一个 `range` 头。如果我们不这样做，我们将无法告诉客户端你希望发送回视频的哪个部分。`if` 语句处理了这一点，返回 400 错误并告知客户端需要 `range` 头：
+我们现在将为`/video`端点制作一个函数。我们必须确保存在一个`range`头。如果我们不这样做，我们将无法告诉客户端你希望发送回视频的哪个部分。`if`语句处理了这一点，返回 400 错误并告知客户端需要`range`头：
 
 ```javascript
 app.get("/video", function (req, res) {
@@ -2138,8 +2151,6 @@ const videoSize = fs.statSync("Chris-Do.mp4").size;
 const express = require("express");
 const app = express();
 ```
-
-
 
 **78 ■ 征服 JavaScript**
 
@@ -2173,14 +2184,14 @@ const start = Number(range.replace(/\D/g, ""));
 现在我们将解析 range 头部信息以获取第一个字节。由于它是字符串，我们必须通过以下代码将其转换为数字：
 
 ```javascript
- const start = Number(range.replace(/\D/g, ""));
+const start = Number(range.replace(/\D/g, ""));
 ```
 
 由于那是最后一个字节，我们必须在最后一块中从视频大小中减去一。因为在计算机科学中我们从零开始计数，如果视频有 100 个字节，第 99 个字节就是最后一个。
 
 我们现在必须计算将要返回的最后一个字节。首先，将起始块乘以块大小，即 1 MB。如果服务器持续向起始块发送 1 MB，发送的字节总数最终可能会超过电影的大小。
 
-在这种情况下，我们必须返回视频大小。我们可以通过使用 `Math.min` 函数来实现这一点，该函数返回给定两个参数中的较小值，如以下代码所述：
+在这种情况下，我们必须返回视频大小。我们可以通过使用`Math.min`函数来实现这一点，该函数返回给定两个参数中的较小值，如以下代码所述：
 
 ```javascript
 const end = Math.min(start + CHUNK_SIZE, videoSize - 1);
@@ -2188,7 +2199,7 @@ const end = Math.min(start + CHUNK_SIZE, videoSize - 1);
 
 ## 创建响应头部
 
-我们现在必须创建将要发送回的响应头部。首先，将 `end - start + 1` 作为内容长度。然后创建 headers 对象。我们必须在内容范围中使用初始字节、结束字节和视频大小，如下所示：
+我们现在必须创建将要发送回的响应头部。首先，将`end - start + 1`作为内容长度。然后创建`headers`对象。我们必须在内容范围中使用初始字节、结束字节和视频大小，如下所示：
 
 ```javascript
 const headers = {
@@ -2199,7 +2210,9 @@ const headers = {
 };
 ```
 
-视频播放器使用上述代码根据视频大小确定其进度。接下来，我们将指定要发送回的数据类型。添加视频类型和项目的长度。你的 headers 对象代码应该看起来像这样：
+视频播放器使用上述代码根据视频大小确定其进度。接下来，我们将指定要发送回的数据类型。添加视频类型和项目的长度。你的`headers`对象代码应该看起来像这样：
+
+
 
 ```javascript
 const headers = {
@@ -2217,15 +2230,10 @@ const headers = {
 res.writeHead(206, headers);
 ```
 
-我们将使用文件系统库，以视频路径作为参数，并将 `start` 和 `end` 作为 options 对象中的选项来生成读取流：
+我们将使用文件系统库，以视频路径作为参数，并将 `start` 和 `end` 作为 `options` 对象中的选项来生成读取流：
 
 ```javascript
-```
-
-
-
-const videoStream = fs.createReadStream(videoPath,
-{ start, end });
+const videoStream = fs.createReadStream(videoPath, { start, end });
 ```
 
 `videoStream` 是完全独立的。我们必须将其管道化到函数开头接收到的响应中：
@@ -2274,7 +2282,7 @@ app.listen(8000, function () {
 });
 ```
 
-在结束之前，只需向你的 package.json 文档中添加 `"start": "nodemon index.js"`：
+在结束之前，只需向你的 `package.json` 文档中添加 `"start": "nodemon index.js"`：
 
 ```json
 "scripts": {
@@ -2289,19 +2297,19 @@ app.listen(8000, function () {
 
 ## 小结
 
-在本课中，我们学习了如何使用 Node.js 创建我们自己的视频流服务器。我们首先详细介绍了项目架构，然后讨论了使用简单方法的优缺点。然后，通过构建视频端点、解析 range 和创建 veggie 头部，我们可以开始构建我们的应用程序。
+在本课中，我们学习了如何使用 Node.js 创建我们自己的视频流服务器。我们首先详细介绍了项目架构，然后讨论了使用简单方法的优缺点。然后，通过构建视频端点、解析 `range` 和创建 veggie 头部，我们可以开始构建我们的应用程序。
 
 Taylor & Francis
 
 Taylor & Francis Group
 
-http://taylorandfrancis.com
+`http://taylorandfrancis.com`
 
-## 第 4 章
+# 第 4 章
 
 ## 应用程序开发 III
 
-## 本章内容
+### 本章内容
 
 - IoT 的概念
 - 使用 Node.js 构建应用
@@ -2334,8 +2342,6 @@ Node.js 还拥有庞大的开发者社区、多个 IoT 库，并且能够在项�
 ### IoT 协议与 Node.js 易于集成
 
 集成是 IoT 最重要的方面之一。Node.js 支持 MQTT 协议，该协议被 IoT 应用程序广泛使用，使其能够简单地访问第三方服务，并为 inclusion 到各种场景中做好准备。后端集成得以实现。
-
-
 
 MQTT.js 被所有主流云服务提供商的 Node.js IoT SDK 所使用。AWS IoT Node.js 就是这种集成的一个例子。借助 MQTT，它可以可靠地分析和路由数百万条消息到 AWS 端点及其他设备。
 
@@ -2394,21 +2400,16 @@ Node.js 的另一个优势是能够构建 API。例如，LinkedIn 的开发者�
 
 在启动物联网项目时，由每个人决定哪些功能应该优先。然而，为我们的项目使用多个不同的数据库并不是坏事。一个项目的设计可能非常复杂，以至于只有一个数据库能够满足所有功能需求。重要提示：对于简单的操作，您不需要功能强大的数据库；相反，应使用高度专业化的数据库。
 
-- **InfluxDB**：自 2013 年以来，InfluxDB 一直是物联网编程的最佳数据库。它是一个用 Go 编程语言开发的开源时序数据库。它为物联网进行了出色的设计，这为其持续受欢迎做出了贡献。
-
-- **CrateDB** 是一个以开源代码形式分发的 SQL 数据库，使用 Java 开发。其主要优势在于提供的库列表，例如 Facebook Presto、Apache Lucene 和 ElasticSearch，这些不需要任何额外配置，让您的生活轻松许多。这个数据库非常适合集成到各种物联网平台中。
-
-- **MongoDB** 是一个免费使用的 NoSQL 数据库。它是每个至少编写过一个 Node.js 项目的开发者的**最佳伙伴**。它易于使用，具有类似 JSON 的架构，与 JavaScript 配合良好。MongoDB 可能不是构建物联网平台的最佳解决方案，但它是将 Node.js 集成到平台中的最佳选择。
-
-- **Amazon DynamoDB** 是一个闭源的时序数据库，是亚马逊的在线服务之一。最好与公司提供的其他服务一起使用，与其他类似产品一样（Cloud Bigtable 或 IBM Informix）。在这种情况下，AWS IoT 与 DynamoDB 结合提供了一个强大的框架，用于构建高负载的物联网项目。单独使用这个数据库是不明智的，但有许多不同的类似产品可以达到同样的目的。
+- `InfluxDB`：自 2013 年以来，InfluxDB 一直是物联网编程的最佳数据库。它是一个用 Go 编程语言开发的开源时序数据库。它为物联网进行了出色的设计，这为其持续受欢迎做出了贡献。
+- `CrateDB` 是一个以开源代码形式分发的 SQL 数据库，使用 Java 开发。其主要优势在于提供的库列表，例如 Facebook Presto、Apache Lucene 和 ElasticSearch，这些不需要任何额外配置，让您的生活轻松许多。这个数据库非常适合集成到各种物联网平台中。
+- `MongoDB` 是一个免费使用的 NoSQL 数据库。它是每个至少编写过一个 Node.js 项目的开发者的最佳伙伴。它易于使用，具有类似 JSON 的架构，与 JavaScript 配合良好。MongoDB 可能不是构建物联网平台的最佳解决方案，但它是将 Node.js 集成到平台中的最佳选择。
+- `Amazon DynamoDB` 是一个闭源的时序数据库，是亚马逊的在线服务之一。最好与公司提供的其他服务一起使用，与其他类似产品一样（Cloud Bigtable 或 IBM Informix）。在这种情况下，AWS IoT 与 DynamoDB 结合提供了一个强大的框架，用于构建高负载的物联网项目。单独使用这个数据库是不明智的，但有许多不同的类似产品可以达到同样的目的。
 
 在比较了几种现代物联网数据库之后，我们能得出什么结论？它们都适合物联网平台开发，但每种都有其独特的能力。因此，请根据您的需求做出明智的决定。
 
 ## 如何让大数据为物联网项目服务
 
-那么，在我们的物联网项目中，我们选择了主要的技术栈，仔细考虑了数据库和服务器的架构，现在到了
-
-开始开发。第一步是确定项目的哪个部分负载最高以及如何对其进行优化。如果我们采用复杂的解决方案（例如，结合 DynamoDB 的 AWS IoT），AWS 将承担大部分需求压力，确保无论数据量如何，所有数据都能得到妥善处理。相反，如果我们自己在服务器上构建架构，则有几种方案可以提供帮助。让我们记住以下几点，以使优化过程更加顺利。
+那么，在我们的物联网项目中，我们选择了主要的技术栈，仔细考虑了数据库和服务器的架构，现在到了开始开发。第一步是确定项目的哪个部分负载最高以及如何对其进行优化。如果我们采用复杂的解决方案（例如，结合 DynamoDB 的 AWS IoT），AWS 将承担大部分需求压力，确保无论数据量如何，所有数据都能得到妥善处理。相反，如果我们自己在服务器上构建架构，则有几种方案可以提供帮助。让我们记住以下几点，以使优化过程更加顺利。
 
 ## 项目的未来架构应具备随之扩展的能力
 
@@ -2458,6 +2459,8 @@ Uber 的主要行程执行引擎基于 Node.js。做出这一决定的关键原�
 
 现在你创建的每个应用都有几个关键组件：
 
+
+
 - 后端有一个面向客户端的应用（你在浏览器或手机屏幕上看到的）。
 - 传入的客户端请求和信息通过 Web 服务器路由。
 - 信息存储在可以查询的数据库中。
@@ -2466,7 +2469,7 @@ MongoDB 将作为你的后端数据库。它更容易理解，并为地理空间
 
 对于后端逻辑，我们将使用 Node.js。由于前端和后端使用同一种语言编写，我们无需担心学习新的语言或语法。
 
-前端将使用 HTML5, CSS3, JavaScript 以及 Google Maps 和 Places API。
+前端将使用 HTML5、CSS3、JavaScript 以及 Google Maps 和 Places API。
 
 我们假设用户已经熟悉 JavaScript，并对 Node.js 和 MongoDB 的工作原理有基本了解。让我们开始吧！
 
@@ -2482,23 +2485,23 @@ MongoDB 是我最喜欢的数据库之一，因为它能帮助我快速地构建
 
 让我们创建一个 `citizensData` 集合用于收集公民信息，以及一个 `policeData` 集合用于存储警员信息。现在，打开终端窗口并输入 `mongo` 来启动 mongo shell。启动后，输入以下命令查看现有 MongoDB 数据库列表：
 
-```
+```bash
 show dbs
 ```
 
 为了存储应用数据，你需要一个新数据库。我们将其命名为 `myUberApp`。可以通过输入以下内容来创建数据库：
 
-```
+```bash
 use myUberApp
 ```
 
 如果数据库尚不存在，`use` 命令将生成一个新数据库。如果已存在，则指示 Mongo 在该数据库上运行后续操作。Mongo 将数据组织成集合 (collections)。集合类似于表。要查看现有集合，请输入：
 
-```
+```bash
 show collections
 ```
 
-警徽 ID (badge-id) 也可以作为警察的用户名。出于身份验证目的，你可以提供一个电子邮件地址字段和一个密码字段（密码不会被公开）。保存警员相关信息的 JSON 数据集。
+警徽 ID (badge-id) 也可以作为警察的用户名。出于身份验证目的，你可以提供一个电子邮件地址字段和一个密码字段（密码不会被公开）。保存警员相关信息的 JSON 数据集：
 
 ```json
 {
@@ -2534,8 +2537,6 @@ show collections
     }
 }
 ```
-
-
 
 ```json
 {
@@ -2622,7 +2623,7 @@ show collections
 
 在终端中，输入以下命令从该 JSON 文件导入数据：
 
-```
+```bash
 mongoimport --db myUberApp --collection policeData --drop --file ./path/to/jsonfile.json
 ```
 
@@ -2634,13 +2635,13 @@ mongoimport --db myUberApp --collection policeData --drop --file ./path/to/jsonf
 
 因此，如果你输入以下命令：
 
-```
+```javascript
 db.policeData.find().pretty()
 ```
 
 将返回 `policeData` 集合中包含的所有文档，即所有警员的完整列表。我们可以使用命令 `db.policeData.find({userId: "01"})` 来获取 `userId` 为 01 的特定警员的信息：
 
-```
+```json
 {
   "_id" : ObjectId("57e75eb5af8eb1b840694406943"),
   "userId" : "01",
@@ -2668,13 +2669,13 @@ db.policeData.find().pretty()
 
 因此，在你的 mongo shell 中，输入：
 
-```
+```javascript
 db.policeData.createIndex({"location": "2dsphere"})
 ```
 
 要根据给定的一组坐标，获取从最近到最远的文档，请使用以下语法：
 
-```
+```javascript
 db.<collectionName>.find({
     <fieldName>: {
         $near: {
@@ -2689,9 +2690,9 @@ db.<collectionName>.find({
 }).pretty()
 ```
 
-`$minDistance` 和 `$maxDistance` 是两个可用于计算距离的变量。像 `distance` 这样的字段是可选的。现在，运行此命令以查找纬度 12.9718915 和经度 77.64115449999997 附近 2 公里内的所有警员。
+`$minDistance` 和 `$maxDistance` 是两个可用于计算距离的变量。像 `distance` 这样的字段是可选的。现在，运行此命令以查找纬度 12.9718915 和经度 77.64115449999997 附近 2 公里内的所有警员：
 
-```
+```javascript
 db.policeData.find({
     location: {
         $near: {
@@ -2705,9 +2706,9 @@ db.policeData.find({
 }).pretty()
 ```
 
-就这么简单：输出将包含一个文档列表。太棒了！让我们将同样的逻辑应用于 Web 服务器。应当下载此 `package.json` 文件并将其保存到项目文件夹的根目录下（命名为 `package.json`），然后 `cd` 到包含该文件的目录并从终端执行。
+就这么简单：输出将包含一个文档列表。太棒了！让我们将同样的逻辑应用于 Web 服务器。应当下载此 `package.json` 文件并将其保存到项目文件夹的根目录下（命名为 `package.json`），然后 `cd` 到包含该文件的目录并从终端执行：
 
-```
+```bash
 npm install
 ```
 
@@ -2757,12 +2758,11 @@ app.engine('html',consolidate.underscore);
 var portNumber = 7000; //for localhost:7000
 ```
 
+# 第五章
 
+## 代码优化
 
-## 第五章
-代码优化
-
-本章内容
+### 本章内容
 
 - 高效编写代码
 - 错误处理
@@ -2772,17 +2772,19 @@ var portNumber = 7000; //for localhost:7000
 
 当设计 Web 应用程序时，JavaScript 是唯一能立刻想到的编程语言。因为它易于学习，是 Web 应用程序开发中最受欢迎的编程语言，能与其他语言很好地配合，并且可以用来创建各种广泛的应用程序。然而，根据近期的趋势和调查，Node.js 不仅正在开启一种新趋势，而且在后端编程领域势头正盛。
 
-随着市场竞争日益激烈，企业正积极寻找工具、技术和框架，以便通过单一解决方案来牢固掌控众多运行平台。此外，许多组织认为 Node.js 是服务器端开发的理想选择，以满足对跨所有平台平稳、高效运行的应用程序的持续需求。
 
-由于 Node.js 是一个高度稳定和可靠的 JavaScript 框架，像 eBay、微软、雅虎、Netflix 和 LinkedIn 这样的高流量大公司都渴望聘请 Node.js 应用开发者。在设计网站和应用程序时，性能至关重要。我们需要了解用户使用了我们应用多长时间、他们离开的频率以及他们做出响应所需的时间。最初的 10 秒对于决定一个人是放弃我们的网站还是继续与之交互至关重要。显然，我们必须加快网站速度，在最初的 10 秒内提供价值，并吸引消费者在网页上停留更长时间。尽管 Node.js 有许多优点，但我们应该意识到 Node.js 定时机制的复杂性。我们将在这里讨论 Node.js 的性能问题。
+
+随着市场竞争日益激烈，企业正积极寻找工具、技术和框架，以便通过单一解决方案来牢固掌控众多运行平台。此外，许多组织认为`Node.js`是服务器端开发的理想选择，以满足对跨所有平台平稳、高效运行的应用程序的持续需求。
+
+由于`Node.js`是一个高度稳定和可靠的 JavaScript 框架，像 eBay、微软、雅虎、Netflix 和 LinkedIn 这样的高流量大公司都渴望聘请`Node.js`应用开发者。在设计网站和应用程序时，性能至关重要。我们需要了解用户使用了我们应用多长时间、他们离开的频率以及他们做出响应所需的时间。最初的 10 秒对于决定一个人是放弃我们的网站还是继续与之交互至关重要。显然，我们必须加快网站速度，在最初的 10 秒内提供价值，并吸引消费者在网页上停留更长时间。尽管`Node.js`有许多优点，但我们应该意识到`Node.js`定时机制的复杂性。我们将在这里讨论`Node.js`的性能问题。
 
 ## 什么让 Node.js 的性能如此特殊？
 
-Node.js 由 Google 的 V8 引擎驱动，这是目前可用的最快的 JavaScript 引擎之一。
+`Node.js`由 Google 的 V8 引擎驱动，这是目前可用的最快的 JavaScript 引擎之一。
 
 ## 运行至完成，单线程行为
 
-让我们来看一下单线程的概念。线程能够在应用程序内实现并行处理，但 Node.js 没有这个能力。相反，我们可以使用异步代码和事件循环来创建多任务应用程序。
+让我们来看一下单线程的概念。线程能够在应用程序内实现并行处理，但`Node.js`没有这个能力。相反，我们可以使用异步代码和事件循环来创建多任务应用程序。
 
 ## 检测内存泄漏
 
@@ -2790,14 +2792,14 @@ Node.js 由 Google 的 V8 引擎驱动，这是目前可用的最快的 JavaScri
 
 我们可以使用 V8 引擎将其暴露给 JavaScript。
 
-为了解决其局限性，V8 引擎使用了两种类型的垃圾回收。
+为了解决其局限性，V8 引擎使用了两种类型的垃圾回收：
 
 - 标记-清除：比 Scavenge 慢，但会清除工作内存中的所有垃圾。
 - Scavenge：速度快，但不会移除所有未引用的项目。换句话说，它是不彻底的。
 
 # 102 ■ 征服 JavaScript
 
-为此，我们需要在请求中将坐标作为查询字符串传递。我们将在一个单独的文件中编写数据库操作。因此，创建一个名为 DB-operations.js 的新文件，并写入以下内容：
+为此，我们需要在请求中将坐标作为查询字符串传递。我们将在一个单独的文件中编写数据库操作。因此，创建一个名为`DB-operations.js`的新文件，并写入以下内容：
 
 ```javascript
 function fetchNearestCops(DB, coordinates, callback) {
@@ -2826,9 +2828,9 @@ function fetchNearestCops(DB, coordinates, callback) {
 exports.fetchNearestCops = fetchNearestCops;
 ```
 
-此函数接受三个参数：一个 DB 实例、一个按 [经度, 纬度] 顺序排列的坐标数组，以及一个将查询结果返回其中的回调函数。如果我们之前已经在所选字段上创建了索引，你可能希望在查询前跳过 createIndex 步骤。
+此函数接受三个参数：一个`DB`实例、一个按[经度, 纬度]顺序排列的坐标数组，以及一个将查询结果返回其中的回调函数。如果我们之前已经在所选字段上创建了索引，你可能希望在查询前跳过`createIndex`步骤。
 
-现在我们需要做的就是从你的处理程序中调用这个函数。因此，为此修改我们的 routes.js 代码：
+现在我们需要做的就是从你的处理程序中调用这个函数。因此，为此修改我们的`routes.js`代码：
 
 ```javascript
 var dbOperations = require('./db-operations');
@@ -2850,7 +2852,7 @@ function initialize(app, DB) {
 exports.initialize = initialize;
 ```
 
-就是这样！在 node.js 中运行 app.js，登录浏览器并从你的终端访问 http://localhost:8000/cops?lat=12.9718915&lng=77.64115449999997。
+就是这样！在`node.js`中运行`app.js`，登录浏览器并从你的终端访问`http://localhost:8000/cops?lat=12.9718915&lng=77.64115449999997`。
 
 我们应该会收到一个包含空数组或包含警察数据数组的 JSON 响应，具体取决于你提供的查询字符串。同时，请查看 GitHub 仓库获取源代码！
 
@@ -2858,94 +2860,126 @@ exports.initialize = initialize;
 
 在本章中，我们试图涵盖与物联网项目开发相关的广泛主题，这些主题可用于高负载系统。首先，开发者必须认识物联网平台所需的功能，并使用可用的工具来实现它。编程世界不会停滞不前，每天都会出现解决各种问题的新方案。我们必须始终关注所有新出现的事物，否则我们将会落后。物联网平台训练我们变得有纪律性，并且不容忍错误。丢失数据或错误处理数据可能对公司和所有依赖该解决方案的用户造成灾难性影响。开发团队必须始终以最佳方式处理项目，预见平台可能遇到的所有问题。首先，确定架构，以及要使用的外部解决方案及其管理方式。我们永远无法百分之百确定你的解决方案是否完全正常工作，但在实际项目中进行测试总比事后后悔要好。当然，情况并非总是如此；在某些情况下，开发者必须偏离指导方针，但他们必须证明自己所设定的目标是合理的。永远不要过于依赖单一技术或服务，并且始终愿意尝试新事物。也许一个新的库或框架可以解决你一直使用旧技术时遇到的所有问题。决定我们将如何测试这一点，因为无论如何，大数据的构建和监控都是困难的。如果我们对一切都持谨慎态度，那我们将一切顺利。
 
+```javascript
 http.createServer(app).listen(portNumber, function(){
+
     //creating the server which is listening to the port
+
     //number: 7000, and calls a function within which
+
     //calls the initialize(app) function in the router module
+
     console.log('Server listening at port '+ portNumber);
+
     var url = 'mongodb://localhost:27417/myUberApp';
+
     MongoClient.connect(url, function(err, db) {
+
         //a connection with the mongodb is established here.
+
         console.log("Connected to Database");
+
         routes.initialize(app, db);
+
         //function defined in routes.js which is exported to be accessed by other modules
+
     });
+
 });
 ```
 
-```
+```text
 /* 1. (consolidate) 是一个命令，它使模板引擎以一致的方式工作。
+
 它没有任何自己的模块，任何要使用的模板引擎都必须单独安装。 */
 ```
 
-在这个例子中，我们将从 MongoDB 模块构建一个新的 MongoClient 对象实例。一旦 Web 服务器启动，我们就可以使用你的 MongoClient 实例公开的 connect 函数连接到我们的 MongoDB 数据库。该函数在初始化连接后，在回调中返回一个 Db 实例。我们现在可以将 app 和 DB 实例都发送到你 routes.js 文件的 initialize 函数。
+在这个例子中，我们将从 MongoDB 模块构建一个新的`MongoClient`对象实例。一旦 Web 服务器启动，我们就可以使用你的`MongoClient`实例公开的`connect`函数连接到我们的 MongoDB 数据库。该函数在初始化连接后，在回调中返回一个`Db`实例。我们现在可以将`app`和`DB`实例都发送到你`routes.js`文件的`initialize`函数。
 
-然后，在一个名为 routes.js 的新文件中，粘贴以下代码：
+然后，在一个名为`routes.js`的新文件中，粘贴以下代码：
 
 ```javascript
 function initialize(app, DB) {
+
     //A GET request to /officers must return a list of local cops.
+
     app.get('/cops', function(req, res){
+
         /* retrieve the latitude and longitude info from
+
         the request. Then, fetch the nearest cops using
+
         MongoDB's geospatial queries and return it back to the
+
         client.
+
         */
+
     });
+
 }
+
 exports.initialize = initialize;
 ```
-
-
 
 我们可以通过利用 V8 剖析器（profiler）的 Node.js profile 来收集调试性能数据，并致力于 JavaScript 的性能优化。
 
 ## 什么是事件循环以及它是如何工作的？
 
-事件循环（event loop）是一种将长时间运行的操作分解为可管理块的技术。它可以作为线程的替代方案。这种技术类似于脉冲；Node.js 以毫秒级扫描工作队列并启动新任务。如果需要执行任何工作，Node.js 会将其引导至调用栈并完成任务。事件循环允许 Node.js 实现多任务处理，这意味着无需等待第一个任务完成即可开始额外的任务。
+事件循环（event loop）是一种将长时间运行的操作分解为可管理块的技术。它可以作为线程的替代方案。这种技术类似于脉冲；`Node.js`以毫秒级扫描工作队列并启动新任务。如果需要执行任何工作，`Node.js`会将其引导至调用栈并完成任务。事件循环允许`Node.js`实现多任务处理，这意味着无需等待第一个任务完成即可开始额外的任务。
 
 ## 事件循环与 Node.js 性能
 
-为了避免长时间运行的同步操作（如写入文件、发起网络查询和执行大规模计算），理解 Node.js 的单线程特性至关重要。让我们来看一个例子：我们想创建一个具有两个端点的 Node.js 应用程序：一个用于文件上传，另一个用于搜索用户个人资料。
+为了避免长时间运行的同步操作（如写入文件、发起网络查询和执行大规模计算），理解`Node.js`的单线程特性至关重要。让我们来看一个例子：我们想创建一个具有两个端点的`Node.js`应用程序：一个用于文件上传，另一个用于搜索用户个人资料。
 
-通常情况下，获取用户个人资料的 API 的使用频率会高于文件上传端点。如果该 API 的响应时间长于预期，它将继续阻止所有用户加载页面。用户预期文件上传 API 需要一些时间，但他们不会接受缓慢的页面加载。如果在编写 Node.js 程序时不使用事件循环流程，当用户与文件上传 API 交互时，Node.js 可能会垄断用户个人资料 API。
+通常情况下，获取用户个人资料的 API 的使用频率会高于文件上传端点。如果该 API 的响应时间长于预期，它将继续阻止所有用户加载页面。用户预期文件上传 API 需要一些时间，但他们不会接受缓慢的页面加载。如果在编写`Node.js`程序时不使用事件循环流程，当用户与文件上传 API 交互时，`Node.js`可能会垄断用户个人资料 API。
 
 ## 为 Node.js 应用程序设置、运行和分析性能测试
 
-现在我们将逐步学习如何为您的 Node.js 应用程序设置、执行和分析性能测试。
+现在我们将逐步学习如何为您的`Node.js`应用程序设置、执行和分析性能测试。
 
 - 选择 Node.js 性能测试工具：有很多性能优化工具，每种工具都有其优缺点。当涉及到从外部网络测试 Node.js 的速度时，您的性能测试工具是用 Node.js 编写的与否并不重要。
+- 让我们从一个简单的性能测试工具开始：`Artillery`。它是用 Node.js 编程语言编写的。
+- 在设置`Artillery`时，它会定期向您的 Node.js 应用程序发送查询。
+- 我们可以告诉`Artillery`请求哪些端点、请求频率以及持续时间等。
 
-- 让我们从一个简单的性能测试工具开始：Artillery。它是用 Node.js 编程语言编写的。
+让我们看看一个基本的测试配置：
 
-- 在设置 Artillery 时，它会定期向您的 Node.js 应用程序发送查询。
-
-- 我们可以告诉 Artillery 请求哪些端点、请求频率以及持续时间等。
-
-让我们看看一个基本的测试配置。
-
-```
+```yaml
 Config:
+
 target: 'https://artillery.io'
+
 phases:
+
   - duration: 45
+
     arrivalRate: 15
+
 defaults:
+
   headers:
+
     x-my-service-auth: '987401838271002188298567'
+
 scenarios:
+
   - flow:
+
     - get:
+
       URL: "/docs"
 ```
 
-我们是在告诉 Artillery 以 15 的速率请求您的端点，持续 45 秒，这大约相当于 15 个访客到达该 URL。
+我们是在告诉`Artillery`以 15 的速率请求您的端点，持续 45 秒，这大约相当于 15 个访客到达该 URL。
 
 然后运行以下命令进行测试：
 
-```
+```bash
 run We're config.yml with artillery
 ```
+
+
 
 ## 在 Node.js 中创建性能测试配置文件
 
@@ -2997,7 +3031,7 @@ run We're config.yml with artillery
 
 ## CSS 模块和预处理器
 
-在减少页面加载期间的浏览器请求方面，CSS 的压缩与此没有区别。CSS 预处理器（如 post-CSS、Sass 和 LESS）提供了变量、函数和混入（mix-ins），使 CSS 代码的维护和修改更加容易。它们还将所有文件合并到单个 .css 文件中，减少了浏览器交付文件所需的往返次数。使用现代 Node.js 技术（如上述打包工具），可以将范围限定的 CSS 名称更改为全局唯一名称。现在，就像任何其他 JavaScript 模块一样，将 CSS 模块 `require` 或 `import` 到组件的局部作用域中就变得非常简单。
+在减少页面加载期间的浏览器请求方面，CSS 的压缩与此没有区别。CSS 预处理器（如 post-CSS、Sass 和 LESS）提供了变量、函数和混入（mix-ins），使 CSS 代码的维护和修改更加容易。它们还将所有文件合并到单个 `.css` 文件中，减少了浏览器交付文件所需的往返次数。使用现代 Node.js 技术（如上述打包工具），可以将范围限定的 CSS 名称更改为全局唯一名称。现在，就像任何其他 JavaScript 模块一样，将 CSS 模块 `require` 或 `import` 到组件的局部作用域中就变得非常简单。
 
 ## 图片
 
@@ -3015,9 +3049,7 @@ HTTP/2 具有以下特性：
 
 多路复用用于减少发送到服务器的请求数量。建立 HTTP 连接所需的时间通常比发送数据所需的时间更昂贵。传输层
 
-
-
- 112 ■ 征服 JavaScript
+112 ■ 征服 JavaScript
 
 安全传输层协议（TLS）和安全套接层协议（SSL）是使用 HTTP/2 所必需的。Node.js 的基本功能使得搭建 HTTP/2 服务器变得轻而易举。
 
@@ -3028,7 +3060,7 @@ HTTP/2 具有以下特性：
 这是通过 HTTP 缓存请求头来实现的。缓存请求头分为两类。
 
 - 过期日期：表示资源必须何时重新请求。
-- 缓存控制：max age 表示资源的有效时长。
+- 缓存控制：`max age` 表示资源的有效时长。
 
 除非资源具有缓存请求头，否则浏览器只能在缓存过期日期之后重新请求该资源。这种方法存在一些缺点。例如，当资源发生变化时会怎样？缓存必须以某种方式失效。通过在资源 URL 中添加版本号，我们可以使用缓存破坏方法来解决这个问题。当 URL 变化时，资源会重新下载。使用 Node.js 技术如 webpack，这很容易实现。即使启用了客户端缓存，应用服务器仍然需要为每个不同的用户渲染数据；因此，必须实现服务器端缓存。Redis 可以与 Node.js 配合使用来存储临时数据，这被称为对象缓存。为了获得更好的性能，我们通常可以结合客户端缓存和服务器端缓存。
 
@@ -3036,7 +3068,7 @@ HTTP/2 具有以下特性：
 
 - Redis 缓存旨在以单线程处理缓存数据请求，并且是完全异步的。考虑尝试一下。它是一个易于使用的 API，用于管理我们的客户端和服务器端缓存。
 - Memcached 是一个分布式内存系统，可以在多个节点上保存数据。它利用具有哈希表功能的哈希方案。这些确保了添加或删除服务器节点不会影响键-服务器节点映射。
-- Node-set、cache 的 get 和 delete 方法与 Memcached 几乎等同。它有一个超时机制，当超时期限时从缓存中删除数据。
+- Node-set、cache 的 `get` 和 `delete` 方法与 Memcached 几乎等同。它有一个超时机制，当超时期限时从缓存中删除数据。
 - Nginx 将有助于负载均衡。Nginx 有助于缓存静态文件，使应用服务器能够专注于其他任务。它具有较小的内存占用和较高的并发性。
 
 ## 改进数据管理技术
@@ -3053,9 +3085,9 @@ HTTP/2 具有以下特性：
 
 ## 负载均衡
 
-创建能够处理大量连接的高性能应用是一个常见的挑战。为了维持连接，一种常见的选择是分配流量。这种方法称为负载均衡。为了管理多个连接，Node.js 允许我们克隆应用实例。这可以在单个多核服务器或多个服务器上完成。引入的 cluster 模块可用于在多核服务器上扩展 Node.js 应用，通过生成称为工作进程的新进程（每个 CPU 核心一个），它们同时运行并连接到单个主进程，使进程能够共享相同的服务器端口。它充当一个大型多线程 Node.js 服务器。我们可以使用 cluster 模块来实现负载均衡，并使用轮询技术将传入连接分配到环境多个 CPU 核心的所有工作进程上。
+创建能够处理大量连接的高性能应用是一个常见的挑战。为了维持连接，一种常见的选择是分配流量。这种方法称为负载均衡。为了管理多个连接，Node.js 允许我们克隆应用实例。这可以在单个多核服务器或多个服务器上完成。引入的 `cluster` 模块可用于在多核服务器上扩展 Node.js 应用，通过生成称为工作进程的新进程（每个 CPU 核心一个），它们同时运行并连接到单个主进程，使进程能够共享相同的服务器端口。它充当一个大型多线程 Node.js 服务器。我们可以使用 `cluster` 模块来实现负载均衡，并使用轮询技术将传入连接分配到环境多个 CPU 核心的所有工作进程上。
 
-使用 PM2 进程管理器无限期保持应用运行是另一种选择。这通过在代码更新或错误发生时重启应用来防止停机。PM2 包含一个集群功能，允许我们在所有核心上运行多个进程，而无需修改代码以使用原生 cluster 模块。单集群设计存在缺点；我们应该计划从单服务器架构过渡到具有反向代理-负载均衡的多服务器架构。
+使用 PM2 进程管理器无限期保持应用运行是另一种选择。这通过在代码更新或错误发生时重启应用来防止停机。PM2 包含一个集群功能，允许我们在所有核心上运行多个进程，而无需修改代码以使用原生 `cluster` 模块。单集群设计存在缺点；我们应该计划从单服务器架构过渡到具有反向代理-负载均衡的多服务器架构。
 
 它（NGINX）允许在多个 Node.js 服务器之间进行负载均衡，以及多种负载均衡策略，例如：
 
@@ -3091,24 +3123,26 @@ Node.js 采用单线程并发架构。为了提供非阻塞的操作流程，Nod
 
 请看以下示例：
 
-
-
 使用 Node.js 文件系统，我们在两种模式中都使用了文件读取操作。
 
 ## 同步 (Synchronous)
 
-```
+```javascript
 const fs = require('fs');
+
 const content = fs.readFileSync("app.txt", "utf8");
+
 console.log(content);
+
 console.log('waiting for the file to read........');
 ```
 
 ## 异步 (Asynchronous)
 
-```
+```javascript
 //include file system module
 const fs = require('fs');
+
 //readFile() reads the file
 fs.readFile("app.txt", "utf8", function (err, content)
 {
@@ -3118,6 +3152,7 @@ fs.readFile("app.txt", "utf8", function (err, content)
     //read the file
     console.log(content);
 });
+
 console.log('waiting for the file to read.....');
 ```
 
@@ -3133,47 +3168,49 @@ console.log('waiting for the file to read.....');
 
 ### 应尽力避免使用 SELECT *
 
-这看起来像是选择列最明显的方法，对吧？然而，我们应该记住这个查询可能会多么耗时。请使用更具体的技术来查询表中的列。使用 SELECT 语句精确查询我们需要的数据，避免额外的数据库获取负载。考虑一个名为 Customers 的表，其中包含 FirstName, LastName, City, State, Zip, PhoneNumber 和 Notes 字段。以下两个查询都可以用来 SELECT 字段 FirstName, LastName, City, State 和 Zip。
+这看起来像是选择列最明显的方法，对吧？然而，我们应该记住这个查询可能会多么耗时。请使用更具体的技术来查询表中的列。使用 `SELECT` 语句精确查询我们需要的数据，避免额外的数据库获取负载。考虑一个名为 `Customers` 的表，其中包含 `FirstName`, `LastName`, `City`, `State`, `Zip`, `PhoneNumber` 和 `Notes` 字段。以下两个查询都可以用来 `SELECT` 字段 `FirstName`, `LastName`, `City`, `State` 和 `Zip`。
 
 第一个查询
 
-```
+```sql
 SELECT *
 FROM Customers
 ```
 
 第二个查询
 
-```
+```sql
 SELECT FirstName, LastName, Address, City, State, Zip
 FROM Customers
 ```
 
-即使我们不需要数据库中的所有字段，第一个查询也会全部拉取。由于第二个查询仅返回所需的字段，因此它是执行 SELECT 语句更高效的方法。在使用 INSERT 和 UPDATE 命令时，也应应用同样的原则。
+即使我们不需要数据库中的所有字段，第一个查询也会全部拉取。由于第二个查询仅返回所需的字段，因此它是执行 `SELECT` 语句更高效的方法。在使用 `INSERT` 和 `UPDATE` 命令时，也应应用同样的原则。
 
 ### 使用 WHERE 子句
 
-查询的目的是从数据库中检索相关记录。WHERE 子句有助于记录过滤，并根据约束条件限制拉取的记录数量。WHERE 子句起到了 HAVING 子句的作用，它在过滤数据集之前选择记录。SQL 中的 WHERE 语句速度更快，因为它们减少了数据库引擎需要处理的数据量。
+查询的目的是从数据库中检索相关记录。`WHERE` 子句有助于记录过滤，并根据约束条件限制拉取的记录数量。`WHERE` 子句起到了 `HAVING` 子句的作用，它在过滤数据集之前选择记录。SQL 中的 `WHERE` 语句速度更快，因为它们减少了数据库引擎需要处理的数据量。
 
 ### 使用 LIMIT 对查询结果进行采样
 
-LIMIT 仅返回指定数量的记录。在使用 LIMIT 对数据集强制执行限制时，请确保结果是理想且相关的。例如，如果我们的 Customer 表有 500 条记录，而我们只需要前 100 条，那么 LIMIT 是一种高效的技术，可以在采样所需结果的同时，避免选择剩余的 400 条记录。示例如下：
+`LIMIT` 仅返回指定数量的记录。在使用 `LIMIT` 对数据集强制执行限制时，请确保结果是理想且相关的。例如，如果我们的 `Customer` 表有 500 条记录，而我们只需要前 100 条，那么 `LIMIT` 是一种高效的技术，可以在采样所需结果的同时，避免选择剩余的 400 条记录。示例如下：
 
-```
+```sql
 SELECT FirstName, LastName, Address, City, State, Zip FROM Customers LIMIT 100
 ```
 
 ### 避免选择唯一选项 (DISTINCT)
 
-SELECT DISTINCT 通过对记录进行分组来消除重复记录，从而产生唯一结果。以我们的表中的客户为例。
+`SELECT DISTINCT` 通过对记录进行分组来消除重复记录，从而产生唯一结果。以我们的表中的客户为例。
 
-```
+
+
+```sql
 SELECT DISTINCT Name, Surname, State, Zip FROM Customers
 ```
 
 一些常见的姓名，例如 Johnny Depp，可能会被分在一组。结果，记录数量将会不正确。当表中包含大量名为 "David Smith" 的客户时，此查询可能需要很长时间才能运行。请使用更精确且高效的查询，例如：
 
-```
+```sql
 SELECT FirstName, LastName, State, Zip FROM Customers
 ```
 
@@ -3181,21 +3218,21 @@ SELECT FirstName, LastName, State, Zip FROM Customers
 
 ### 根据需要使用通配符（百分号）字符
 
-如果我们想 SELECT 名字以字母 "Avi" 开头的消费者，
+如果我们想 SELECT 名字以字母 "Avi" 开头的消费者：
 
 **第一个查询**
 
-```
+```sql
 SELECT FirstName from Customers where FirstName like '%avi%'
 ```
 
 **第二个查询**
 
-```
+```sql
 SELECT FirstName from Customers where FirstName like 'avi%'
 ```
 
-第一个查询将检索到如 Avishek, Avinash 或 Avik 等名字。这种方法效率低下，因为如果名字中包含字母 "Avi"（如 David, Xavier 或 Davin），它可能会返回意外的结果。使用第二个查询可以更高效地执行此通配符操作。
+第一个查询将检索到如 Avishek、Avinash 或 Avik 等名字。这种方法效率低下，因为如果名字中包含字母 "Avi"（如 David、Xavier 或 Davin），它可能会返回意外的结果。使用第二个查询可以更高效地执行此通配符操作。
 
 ### 利用非高峰时段运行查询
 
@@ -3203,11 +3240,11 @@ SELECT FirstName from Customers where FirstName like 'avi%'
 
 请阅读这篇关于 MySQL 查询性能增强的文章。它包含重要的 MySQL 提示，将帮助我们提高编写查询的能力。
 
-### 摒弃 Session (会话)
+### 摒弃 Session（会话）
 
-Session 信息保存在内存中。随着我们应用流量的增加，会产生更多的 session，可能会导致严重的服务器负担。我们必须要么找到保存 session 数据的方法，要么找到减少 session 中保留数据量的方法。借助 Express.js 等模块可以创建无状态服务器协议。无状态协议不保存或存储来自先前访问的数据。请改用外部 session 存储，如 Redis, Nginx 或 MongoDB。为了提高速度，建议尽可能避免在服务器上存储 session 状态。
+Session 信息保存在内存中。随着我们应用流量的增加，会产生更多的 session，可能会导致严重的服务器负担。我们必须要么找到保存 session 数据的方法，要么找到减少 session 中保留数据量的方法。借助 Express.js 等模块可以创建无状态服务器协议。无状态协议不保存或存储来自先前访问的数据。请改用外部 session 存储，如 Redis、Nginx 或 MongoDB。为了提高速度，建议尽可能避免在服务器上存储 session 状态。
 
-### 脚本的追踪与日志记录 (Tracing and Logging)
+### 脚本的追踪与日志记录（Tracing and Logging）
 
 我们可以使用日志记录来跟踪应用程序的活动和流量。在程序执行过程中可能会发生致命错误（即使我们的应用在生产测试后运行正常）。我们必须快速接收这些反馈，确定哪个代码包含错误，并在用户发现系统问题之前对其进行修正。
 
@@ -3217,7 +3254,7 @@ Session 信息保存在内存中。随着我们应用流量的增加，会产生
 
 ### Winston
 
-Winston 是一个简单、通用且极其灵活的多传输异步日志记录器。它提高了日志记录的灵活性和可扩展性。根据 NPM 统计，它是最受欢迎的日志记录器。Winston 拥有多个传输器 (transporters)，每个传输器都有不同的默认消息优先级级别。
+Winston 是一个简单、通用且极其灵活的多传输异步日志记录器。它提高了日志记录的灵活性和可扩展性。根据 NPM 统计，它是最受欢迎的日志记录器。Winston 拥有多个传输器（transporters），每个传输器都有不同的默认消息优先级级别。
 
 ![](img/0910e964adc1d4e011635b07233a41cb_141_0.png)
 
@@ -3231,13 +3268,11 @@ Winston 的多个传输器级别。
 
 Bunyan 是一个简单的日志记录器，以 JSON 格式保存日志条目。可以通过其页面获取更多关于代码的详细信息。²
 
-### 并行 (Parallelism)
+### 并行（Parallelism）
 
 在请求远程服务、数据库调用或文件系统访问时，请确保并行执行流。任务并行化可以降低延迟并消除任何阻塞过程。“并行操作”是指多个任务的同时执行。由于我们的代码被调整为同时运行任务，我们将无法控制哪个任务先完成。在大多数情况下，Node.js 并不是真正地同时执行这些活动。每个任务随后被投入异步事件循环中，无法预知哪个任务会先完成。如果一个或多个任务必须在其他任务之前完成，请考虑使用异步执行。
 
-
-
-## NODE.JS 加密指南
+## Node.js 加密指南
 
 Node.js 与其他编程语言或框架一样，容易受到各种 Web 应用程序攻击。尽管 Node.js 默认是安全的，但第三方包可能需要额外的安全措施来保护我们的网站。
 
@@ -3279,7 +3314,7 @@ Node.js 与其他编程语言或框架一样，容易受到各种 Web 应用程�
 
 **解决方案**
 
-可以使用诸如 eslint-plugin-security 之类的 Linter。如果我们使用了不安全的编程方式，这种安全 Linter 会提醒我们。
+可以使用诸如 `eslint-plugin-security` 之类的 Linter。如果我们使用了不安全的编程方式，这种安全 Linter 会提醒我们。
 
 ### 为每个请求实施访问控制
 
@@ -3351,9 +3386,7 @@ Node.js 中的安全性还包括日志记录和监控。毕竟，我们的目标
 
 安全配置错误漏洞发生在 Web 服务器或应用程序未受保护或用不足的安全标准保护时。由于此缺陷，应用程序堆栈的多个方面（应用程序容器、数据库、服务器等）都容易受到攻击。薄弱的构建管道是安全配置错误攻击的常见入口，例如临时或开发区域凭据进入生产环境。这会将应用程序暴露为临时或开发区域设置，从而导致安全松懈。
 
-
-
- ## 解决方案
+### 解决方案
 
 如果我们让三个环境（开发、预生产和生产）保持一致，仅使用不同的凭证和访问级别，那是最好的。如果 Node.js 应用使用了默认的包设置和用户账户密码，黑客就可能对登录表单采用暴力字典攻击。而默认的包设置，也会为恶意黑客留下可利用的漏洞。
 
@@ -3363,46 +3396,55 @@ Node.js 是一种流行的轻量级 JavaScript 框架，让我们能够构建复
 
 ### 审视我们的命名规范
 
-检查我们如何命名 JavaScript 组件（如类、函数、常量和变量）是编写整洁且一致的 Node.js 代码的绝佳起点。在这里，最佳策略是遵循一个在 JavaScript 社区中广泛接受编码标准和规则的风格指南。命名函数和变量时使用 lowerCamelCase。它们的名称应具有描述性但不宜过长。应避免使用单字符变量名和晦涩的缩写。
+检查我们如何命名 JavaScript 组件（如类、函数、常量和变量）是编写整洁且一致的 Node.js 代码的绝佳起点。在这里，最佳策略是遵循一个在 JavaScript 社区中广泛接受编码标准和规则的风格指南。命名函数和变量时使用 `lowerCamelCase`。它们的名称应具有描述性但不宜过长。应避免使用单字符变量名和晦涩的缩写。
 
-```
+```javascript
 // 错误
+
 function set_Price() {
+
 }
+
 // 正确
+
 function setPrice() {
+
 }
 ```
 
-类名使用 UpperCamelCase，首字母大写，如下所示：
+类名使用 `UpperCamelCase`，首字母大写，如下所示：
 
-```
+```javascript
 class SomeClassExample {}
 ```
 
 命名常量时，我们可以使用全大写，如下所示：
 
-```
+```javascript
 // 错误
+
 function set_Price() {
+
 }
 ```
 
-```
+```javascript
 // 正确
+
 function setPrice() {
+
 }
 ```
 
 我们在声明时用下划线来区分包含多个名称的常量和变量的名称。
 
-```
+```javascript
 var DAYS_UNTIL_TOMORROW = 1;
 ```
 
 ### 函数应何时进行模块化处理
 
-为每个操作创建一个函数是简化代码的简单方法。如果函数名暗示它执行了多个操作，我们应该拆分功能并创建新函数。保持更小的功能模块会让我们的代码看起来更整洁。我们还可以使用主 init() 函数来保存应用的结构。这样我们就不用编写重复代码，可以复用程序。执行单一操作的函数也更容易调试或修改，因为无需扫描代码库查找依赖关系，也无需弄清楚哪块代码执行特定操作。
+为每个操作创建一个函数是简化代码的简单方法。如果函数名暗示它执行了多个操作，我们应该拆分功能并创建新函数。保持更小的功能模块会让我们的代码看起来更整洁。我们还可以使用主 `init()` 函数来保存应用的结构。这样我们就不用编写重复代码，可以复用程序。执行单一操作的函数也更容易调试或修改，因为无需扫描代码库查找依赖关系，也无需弄清楚哪块代码执行特定操作。
 
 ### 以正确的方式注释
 
@@ -3410,7 +3452,7 @@ var DAYS_UNTIL_TOMORROW = 1;
 
 ### 调试时注意上下文
 
-在软件开发中，调试是不可避免的，但并不总是容易的。编写 Node.js 代码时，还的日志，控制台可能会变得一团糟。我们还应该考虑实现生产环境调试。控制台无法为我们提供足够的信息来判断实时应用中的错误严重程度。这并不是说我们不应该使用控制台，而是说我们应该使用能提供所有调试信息的工具，以便找出问题所在。使用 Raygun 等调试工具，我们可以了解代码出了什么问题。
+在软件开发中，调试是不可避免的，但并不总是容易的。编写 Node.js 代码时，日志和控制台可能会变得一团糟。我们还应该考虑实现生产环境调试。控制台无法为我们提供足够的信息来判断实时应用中的错误严重程度。这并不是说我们不应该使用控制台，而是说我们应该使用能提供所有调试信息的工具，以便找出问题所在。使用 Raygun 等调试工具，我们可以了解代码出了什么问题。
 
 ### 解构
 
@@ -3426,16 +3468,23 @@ var DAYS_UNTIL_TOMORROW = 1;
 
 应该像这样：
 
-```
+```javascript
 module.exports = function (dragonName, callback) {
+
   // do some stuff here
+
   var dragon = createDragon(dragonName);
+
   // The first parameter is the error
+
   // which is null
+
   // in this case, but if an error happens, a new Error
+
   // should be supplied here.
 
   return callback(null, dragon);
+
 }
 ```
 
@@ -3443,49 +3492,71 @@ module.exports = function (dragonName, callback) {
 
 为了进一步理解为什么需要这样做，我们先从一个各方面都有问题的示例开始，然后修复它。
 
-```
+```javascript
 // This example is **BROKEN**; we'll repair it as soon
+
 // as possible:)
+
 var fs = require('fs');
+
 function readJSON(filePath, callback) {
+
   fs.readFile(filePath, function(err, data) {
+
     callback(JSON.parse(data));
 ```
 
-这个 readJSON 函数的首要问题是它从不检查执行过程中是否发生了错误。要始终留意它们。
+这个 `readJSON` 函数的首要问题是它从不检查执行过程中是否发生了错误。要始终留意它们。
 
 改进版本是：
 
-```
+```javascript
 // this example is still broken, but we're working on
+
 // improving it!
+
 function readJSON(filePath, callback) {
+
   fs.readFile(filePath, function(err, data) {
+
     // Here we check to see if there was an error
+
     if (err) {
+
       // transmit the error to the callback
+
       // keep in mind that error-first callbacks are
+
       // preferred.
+
       callback(err);
+
     }
+
     // no error, pass a null and the JSON
+
     callback(null, JSON.parse(data));
+
   });
+
 }
 ```
 
 ### 在回调处返回
 
-前面示例的一个问题是，如果发生错误，执行不会在 if 语句中停止，而是继续执行。这可能导致各种意外后果。经验法则是：始终在回调处返回。
+前面示例的一个问题是，如果发生错误，执行不会在 `if` 语句中停止，而是继续执行。这可能导致各种意外后果。经验法则是：始终在回调处返回。
 
-```
-// This example is still broken, but we're working on
-// improving it!
+
+
+// This example is still broken, but we're working on improving it!
+
+```javascript
 function readJSON(filePath, callback) {
   fs.readFile(filePath, function(err, data) {
     if (err) {
       return callback(err);
     }
+
     return callback(null, JSON.parse(data));
   });
 }
@@ -3493,28 +3564,37 @@ function readJSON(filePath, callback) {
 
 ### 仅在同步代码中使用 Try-Catch
 
-我们快完成了！另一个需要考虑的事项是 `JSON.parse` 函数。如果 `JSON.parse` 无法将提供的字符串转换为合适的 JSON 格式，它会抛出异常。因为 `JSON.parse` 是同步的，我们可以将其包裹在 try-catch 块中。请注意，这仅适用于同步代码块；回调中无法这样操作。
+我们快完成了！另一个需要考虑的事项是`JSON.parse`函数。如果`JSON.parse`无法将提供的字符串转换为合适的 JSON 格式，它会抛出异常。因为`JSON.parse`是同步的，我们可以将其包裹在 try-catch 块中。请注意，这仅适用于同步代码块；回调中无法这样操作。
 
-```
-// this example **WORKS**! :)
+```javascript
+// this example WORKS! :)
+
 function readJSON(filePath, callback) {
-    fs.readFile(filePath, function(err, data) {
-        var parsedJson;
-        // Handle error
-        if (err) {
-            return callback(err);
-        }
-        // Parse JSON
-        try {
-            parsedJson = JSON.parse(data);
-        } catch (exception) {
-            return callback(exception);
-        }
-        // Everything is ok
-        return callback(null, parsedJson);
-    });
+  fs.readFile(filePath, function(err, data) {
+    var parsedJson;
+
+    // Handle error
+
+    if (err) {
+      return callback(err);
+    }
+
+    // Parse JSON
+
+    try {
+      parsedJson = JSON.parse(data);
+    } catch (exception) {
+      return callback(exception);
+    }
+
+    // Everything is ok
+
+    return callback(null, parsedJson);
+  });
 }
 ```
+
+
 
 ### 尽可能远离它
 
@@ -3524,7 +3604,7 @@ function readJSON(filePath, callback) {
 
 ### 有效利用异步模式
 
-使用 `async`
+使用`async`
 
 ## 错误纠正
 
@@ -3568,7 +3648,7 @@ function readJSON(filePath, callback) {
 - 使用最新稳定版本的 Node.js 更新。
 - 使用 Node.js 定时器调度任务。
 - 优先访问局部变量。
-- 移除不再使用的 any.js 库。
+- 移除不再使用的`any.js`库。
 - 删除不再使用的任何代码行。
 - 通过定义良好的执行上下文来避免全局变量。
 
@@ -3793,8 +3873,6 @@ Node.js 是一个灵活的 JavaScript 工具，可用于构建：
 
 - 流媒体应用程序
 
-
-
 - 用于发短信的应用
 - 用于即时聊天的应用
 - 用于社交媒体的应用
@@ -3850,43 +3928,50 @@ Angular 是一个用于开发在线应用程序的 JavaScript 框架，不需要
 
 该项目的 GitHub 页面可以在这里找到。我们可以克隆它并在自己的机器上运行它。
 
-```
-// clone the project
-https://github.com/bbachi/angular-Node.js-example.git
+
+
+## 克隆项目
+
+```bash
+git clone https://github.com/bbachi/angular-Node.js-example.git
 ```
 
-```
-// install and start the project
+## 安装并启动项目
+
+```bash
 npm install
 npm start
 ```
 
 这个项目只需要少量的 Node.js。如果我们刚接触 Node.js，别担心；这个简短的说明将帮助我们快速上手这个项目。如果我们已经熟悉 Node.js，可以跳过这一部分。Node.js 是一个用于服务器端应用程序的异步事件驱动 JavaScript 运行时环境。最新版本的 Node.js 是 12，我们可以从这个链接下载。我们可以下载 Node.js 包并安装在我们的笔记本电脑上，点击任何 LTS 链接即可。命令 `node -v` 可用于确定 Node 的版本。通过在 CLI 上运行命令 `node`，我们可以在 node REPL 上运行 JavaScript。
 
-我们已经完成了安装 node 并学习了如何使用 JavaScript。JavaScript 文件也可以运行。让我们将上述命令放入 sample.js 文件并用 `node sample.js` 运行它。
+我们已经完成了安装 node 并学习了如何使用 JavaScript。JavaScript 文件也可以运行。让我们将上述命令放入 `sample.js` 文件并用 `node sample.js` 运行它。
 
 ```javascript
 var x = 10;
+
 var y = 20;
+
 var z = x + y;
+
 console.log(z);
 ```
 
-### 开发阶段
+## 开发阶段
 
 通常，我们在开发、构建和生产环境中运行的方式大不相同。因此，我想将过程分为两个阶段：开发和生产。
 
 在开发期间，我们在不同的端口上运行 Node.js 服务器和 Angular 应用程序。以这种方式开发更容易、更快捷。如图所示，Angular 应用程序在 Webpack 开发服务器的支持下运行在 4200 端口，而 Node.js 服务器运行在 3080 端口。
 
-### 项目结构
+## 项目结构
 
 让我们看一下这个项目结构。将有两个包可用。有两个 JSON 文件，一个用于 Angular，另一个用于 Node.js API。为每个包完全独立的 node 模块总是一个好主意。如果我们这样做，就不会有任何合并问题或其他 Web 和服务器 node 模块冲突的问题。
 
-### NODE.JS API
+## Node.js API
 
-在服务器端，我们使用 express 和 nodemon。Express 是一个快速、简洁、简单的 Node.js Web 框架，而 nodemon 是一个使我们的 API 在文件更改时自动刷新的库。让我们安装这两个依赖项。将 nodemon 作为 dev 依赖安装，因为它仅用于开发。
+在服务器端，我们使用 `express` 和 `nodemon`。Express 是一个快速、简洁、简单的 Node.js Web 框架，而 nodemon 是一个使我们的 API 在文件更改时自动刷新的库。让我们安装这两个依赖项。将 nodemon 作为 dev 依赖安装，因为它仅用于开发。
 
-```
+```bash
 npm install express --save
 npm install nodemon --save-dev
 ```
@@ -3895,87 +3980,88 @@ npm install nodemon --save-dev
 
 ```json
 {
-	"name": "angular-Node.js-example",
-	"version": "1.0.0",
-	"description": "node server",
-	"main": "index.js",
-	"scripts": {
-		"start": "node index.js",
-		"dev": "nodemon ./server.js localhost 3080",
-		"test": "echo \"Error: no test specified\" && exit 1"
-	},
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/bbachi/angular-Node.js-example.git"
-	},
-	"author": "Bhargav Bachina",
-	"license": "ISC",
-	"bugs": {
-		"url": "https://github.com/bbachi/angular-Node.js-example/issues"
-	},
-	"homepage": "https://github.com/bbachi/angular-Node.js-example#readme",
-	"dependencies": {
-		"express": "^4.17.1"
-	},
-	"devDependencies": {
-		"nodemon": "^2.0.2"
-	}
+  "name": "angular-Node.js-example",
+  "version": "1.0.0",
+  "description": "node server",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon ./server.js localhost 3080",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bbachi/angular-Node.js-example.git"
+  },
+  "author": "Bhargav Bachina",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bbachi/angular-Node.js-example/issues"
+  },
+  "homepage": "https://github.com/bbachi/angular-Node.js-example#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  }
 }
 ```
 
+导入 `express` 并定义两个路由：`/api/users` 和 `/api/user`，以及一个监听 3080 端口的服务器。`server.js` 文件可以在此处找到。为了处理 HTTP 请求对象中的数据，我们使用 `body-parser`。
 
-
-导入 express 并定义两个路由：/api/users 和 /api/user，以及一个监听 3080 端口的服务器。server.js 文件可以在此处找到。为了处理 HTTP 请求对象中的数据，我们使用 body-parser。
-
-```
+```javascript
 const express = require('express');
+
 const app = express(),
-    bodyParser = require("body-parser"),
-    port = 3080;
+  bodyParser = require('body-parser'),
+  port = 3080;
 
 const users = [];
 
 app.use(bodyParser.json());
 
 app.get('/api/users', (req, res) => {
-    res.json(users);
+  res.json(users);
 });
 
 app.post('/api/user', (req, res) => {
-    const user = req.body.user;
-    users.push(user);
-    res.json("user added");
+  const user = req.body.user;
+
+  users.push(user);
+
+  res.json('user added');
 });
 
-app.get('/', (req,res) => {
-    res.send('App Works !!!!');
+app.get('/', (req, res) => {
+  res.send('App Works !!!!');
 });
 
 app.listen(port, () => {
-    console.log(`Server listening on the port: ${port}`);
+  console.log(`Server listening on the port: ${port}`);
 });
 ```
 
 当我们使用命令 `npm run dev` 启动 Node.js API 时，无论我们修改哪个文件，都会自动更新。
 
-## ANGULAR 应用程序
+## Angular 应用程序
 
-Node.js API 现在可以通过 3080 端口访问。现在让我们来看看 Angular 应用。完整的 Angular 应用位于 my-app 文件夹中。使用命令 `ng new my-app`，我们可以构建一个新的应用。我不会在这里发布所有文件；相反，我们可以在上面的 Github 网站或这里查看它们。
+Node.js API 现在可以通过 3080 端口访问。现在让我们来看看 Angular 应用。完整的 Angular 应用位于 `my-app` 文件夹中。使用命令 `ng new my-app`，我们可以构建一个新的应用。我不会在这里发布所有文件；相反，我们可以在上面的 Github 网站或这里查看它们。
 
 **150 ■ 征服 JavaScript**
 
 让我们来看一些关键文件。这是使用 node API 的服务文件。
 
-```
+```typescript
 import { Injectable } from '@angular/core';
+
 import { HttpClient } from '@angular/common/http';
 
 @Injectable({
   providedIn: 'root'
 })
 export class AppService {
-
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient) {}
 
   rootURL = '/api';
 
@@ -3984,20 +4070,22 @@ export class AppService {
   }
 
   addUser(user: any) {
-    return this.http.post(this.rootURL + '/user',
-    {user});
+    return this.http.post(this.rootURL + '/user', { user });
   }
-
 }
 ```
 
 以下代码展示了订阅这些请求并从 API 检索数据的 app 组件：
 
-```
+```typescript
 import { Component, OnDestroy } from '@angular/core';
+
 import { FormGroup, FormControl, Validators } from '@angular/forms';
+
 import { AppService } from './app.service';
+
 import { takeUntil } from 'rxjs/operators';
+
 import { Subject } from 'rxjs';
 
 @Component({
@@ -4007,48 +4095,62 @@ import { Subject } from 'rxjs';
 })
 ```
 
-```
+```typescript
 export class AppComponent implements OnDestroy {
+  constructor(private appService: AppService) {}
 
-    constructor(private appService: AppService) {}
+  title = 'angular-Node.js-example';
 
-    title = 'angular-Node.js-example';
+  userForm = new FormGroup({
+    firstName: new FormControl(
+      '',
+      Validators.nullValidator && Validators.required
+    ),
+    lastName: new FormControl(
+      '',
+      Validators.nullValidator && Validators.required
+    ),
+    email: new FormControl(
+      '',
+      Validators.nullValidator && Validators.required
+    )
+  });
 
-    userForm = new FormGroup({
-        firstName: new FormControl('', Validators.
-nullValidator && Validators.required),
-        lastName: new FormControl('', Validators.
-nullValidator && Validators.required),
-        email: new FormControl('', Validators.
-nullValidator && Validators.required)
-    });
+  users: any[] = [];
 
-    users: any[] = [];
-    userCount = 0;
+  userCount = 0;
 
-    destroy$: Subject<boolean> = new Subject<boolean>();
+  destroy$: Subject<boolean> = new Subject<boolean>();
 
-    onSubmit() {
-        this.appService.addUser(this.userForm.value).
-pipe(takeUntil(this.destroy$)).subscribe((data => {
-            console.log('message::: ', data);
-            this.userCount = this.userCount + 1;
-            console.log(this.userCount);
-            this.userForm.reset();
-        }));
-    }
+  onSubmit() {
+    this.appService
+      .addUser(this.userForm.value)
+      .pipe(takeUntil(this.destroy$))
+      .subscribe((data) => {
+        console.log('message::: ', data);
 
-    getAllUsers() {
-        this.appService.getUsers().pipe(takeUntil(this.
-destroy$)).subscribe((users: any[]) => {
-            this.users = users;
-        }));
-    }
+        this.userCount = this.userCount + 1;
 
-    ngOn balances() {
-        this.destroy$.next(true);
-        this.destroy$.unsubscribe();
-    }
+        console.log(this.userCount);
+
+        this.userForm.reset();
+      });
+  }
+
+  getAllUsers() {
+    this.appService
+      .getUsers()
+      .pipe(takeUntil(this.destroy$))
+      .subscribe((users: any[]) => {
+        this.users = users;
+      });
+  }
+
+  ngOn balances() {
+    this.destroy$.next(true);
+
+    this.destroy$.unsubscribe();
+  }
 }
 ```
 
@@ -4056,23 +4158,24 @@ destroy$)).subscribe((users: any[]) => {
 
 在开发过程中，Angular 应用在 webpack 开发服务器的支持下运行在 4200 端口，Node.js API 运行在 3080 端口。
 
-这两者应该以某种方式进行交互。所有 API 调用都可以代理到 Node.js API。Angular 内置了代理技术。首先，我们必须定义以下代理。`proxy.conf.json` 位于 my-app 文件夹中。
+这两者应该以某种方式进行交互。所有 API 调用都可以代理到 Node.js API。Angular 内置了代理技术。首先，我们必须定义以下代理。`proxy.conf.json` 位于 `my-app` 文件夹中。
 
-```
+```json
 {
-    "/api": {
-        "target": "http://localhost:3080",
-        "secure": false狰狞
-    }
+  "/api": {
+    "target": "http://localhost:3080",
+    "secure": false狰狞
+  }
 }
 ```
 
-如果我们查看该文件，会发现所有以 `/api` 开头的路径都被重定向到 `http://localhost:3080`，即 Node.js API 的运行位置。然后，我们必须在 `angular.json` 的 serve 部分下定义 proxyConfig 键。
+如果我们查看该文件，会发现所有以 `/api` 开头的路径都被重定向到 `http://localhost:3080`，即 Node.js API 的运行位置。然后，我们必须在 `angular.json` 的 serve 部分下定义 `proxyConfig` 键。
 
-```
-// Node.js API (终端 1)
+```bash
+# Node.js API（终端 1）
 npm run dev
-// Angular 应用 (终端 2)
+
+# Angular 应用（终端 2）
 npm start
 ```
 
@@ -4080,778 +4183,705 @@ npm start
 
 在 webpack 开发服务器的支持下，Angular 应用运行在 4200 端口。在生产环境中运行时，情况并非如此。我们必须构建 Angular 项目，并使用 node 服务器加载静态资源。让我们逐一查看它们。
 
-首先，我们必须使用命令 `npm run build` 构建 Angular 项目，这将把所有生成的资源放在 dist 文件夹中。
+首先，我们必须使用命令 `npm run build` 构建 Angular 项目，这将把所有生成的资源放在 `dist` 文件夹中。
 
-- 其次，我们需要在服务器端进行一些调整。修改后的 server.js 文件可以在这里找到。
+- 其次，我们需要在服务器端进行一些调整。修改后的 `server.js` 文件可以在这里找到。
 - 我们需要使用 `express.static` 告诉 express，Angular 构建有一个 dist 文件夹和资产。
 - 为默认路径加载 `index.html`。
 
-```
+```javascript
 const express = require('express');
+
 const app = express(),
-    bodyParser = require("body-parser")
-    port = 3080;
+  bodyParser = require('body-parser'),
+  port = 3080;
 
 const users = [];
 
 app.use(bodyParser.json());
-app.use(express.static(process.cwd() + "/my-app/dist/angular-Node.js-example/"));
+
+app.use(
+  express.static(process.cwd() + '/my-app/dist/angular-Node.js-example/')
+);
 
 app.get('/api/users', (req, res) => {
-    res.json(users);
+  res.json(users);
 });
 
 app.post('/api/user', (req, res) => {
-    const user = req.body.user;
-    users.push(user);
-    res.json("user added");
+  const user = req.body.user;
+
+  users.push(user);
+
+  res.json('user added');
 });
 
 app.get('/', (req, res) => {
-    res.sendFile(process.cwd() + "/my-app/dist/angular-Node.js-example/index.html");
+  res.sendFile(
+    process.cwd() + '/my-app/dist/angular-Node.js-example/index.html'
+  );
 });
 
 app.listen(port, () => {
-    console.log(`Server listening on the port:${port}`);
+  console.log(`Server listening on the port:${port}`);
 });
 ```
 
-在我们完成上述修改后，我们可以使用 3080 端口上的 node.js 服务器执行整个项目，如下所示，因为 node.js 也可以作为 Web 服务器工作。
+
+
+在我们完成上述修改后，我们可以使用`3080`端口上的`Node.js`服务器执行整个项目，如下所示，因为`Node.js`也可以作为 Web 服务器工作。
 
 ## 总结
 
-Node.js 是一个企业级的移动应用开发框架，同时支持服务器端和客户端 JavaScript。尽管 Node.js 框架并非后端开发所必需，但它们显著提高了开发效率、产品性能和代码质量。如果开发人员能够访问模板、库、模块和中间件，他们可以大幅加快开发进程。他们可以轻松管理数百个请求和回调，并将 Node.js 与客户端框架结合使用。
+`Node.js` 是一个企业级的移动应用开发框架，同时支持服务器端和客户端 JavaScript。尽管`Node.js`框架并非后端开发所必需，但它们显著提高了开发效率、产品性能和代码质量。如果开发人员能够访问模板、库、模块和中间件，他们可以大幅加快开发进程。他们可以轻松管理数百个请求和回调，并将`Node.js`与客户端框架结合使用。
 
 ## 参考文献
 
-1. Node.js 简介 – https://www.w3schools.com/nodejs/nodejs_intro.asp, 访问日期：2022 年 7 月 15 日。
-2. 什么是 Node.js – https://www.tutorialspoint.com/nodejs/nodejs_introduction.htm, 访问日期：2022 年 7 月 15 日。
-3. Node.js 应用程序 – https://nodejs.dev/en/learn/introduction-to-nodejs/, 访问日期：2022 年 7 月 15 日。
-4. JavaScript 历史 – https://www.infoworld.com/article/3210589/what-is-nodejs-javascript-runtime-explained.html, 访问日期：2022 年 7 月 15 日。
-5. 为什么选择 Node.js？ – https://medium.com/free-code-camp/what-exactly-is-node-js-ae36e97449f5, 访问日期：2022 年 7 月 15 日。
-6. Node.js 基础 – https://www.educative.io/blog/what-is-nodejs, 访问日期：2022 年 7 月 15 日。
-7. Node.js 基本概念 – https://www.tutorialsteacher.com/nodejs/nodejs-basics, 访问日期：2022 年 7 月 15 日。
-8. Node.js 数据类型 – https://www.etutorialspoint.com/index.php/nodejs/node-js-datatype, 访问日期：2022 年 7 月 15 日。
-9. Node.js 函数 – https://www.simplilearn.com/tutorials/nodejs-tutorial/nodejs-functions, 访问日期：2022 年 7 月 16 日。
-10. Node.js 字符串函数 – http://www.java2s.com/Tutorials/Javascript/Node.js_Tutorial/0050__Node.js_String_Functions.htm, 访问日期：2022 年 7 月 16 日。
-11. Node.js split() 函数 – https://www.geeksforgeeks.org/node-js-split-function/, 访问日期：2022 年 7 月 16 日。
-12. JavaScript 字符串 – https://www.tutorialsteacher.com/javascript/javascript-string, 访问日期：2022 年 7 月 16 日。
-13. 如何在 Node.js 中使用 HTTP 模块创建 Web 服务器 – https://www.digitalocean.com/community/tutorials/how-to-create-a-web-server-in-node-js-with-the-http-module, 访问日期：2022 年 7 月 16 日。
-14. 环境搭建 – https://www.tutorialspoint.com/nodejs/nodejs_environment_setup.htm, 访问日期：2022 年 7 月 16 日。
-15. 设置 Node 开发环境 – https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs/development_environment, 访问日期：2022 年 7 月 17 日。
-16. JavaScript 运行时环境 – https://www.codecademy.com/article/introduction-to-javascript-runtime-environments, 访问日期：2022 年 7 月 17 日。
-
-
-
-## 参考文献
-
-17. 安装 Node.js 的五种方法 – https://www.nodejsdesignpatterns.com/blog/5-ways-to-install-node-js/, 访问于2022年7月17日。
-
-18. Node.js 概述 – https://en.wikipedia.org/wiki/Node.js, 访问于2022年7月17日。
-
-19. 最新长期支持版本：18.14.0 – https://nodejs.org/en/download/, 访问于2022年7月17日。
-
-20. Node.js 与浏览器的区别 – https://nodejs.dev/en/learn/differences-between-nodejs-and-the-browser/, 访问于2022年7月20日。
-
-21. Node.js 用于前端还是后端？ – https://www.simplilearn.com/tutorials/nodejs-tutorial/nodejs-backend#:~:text=Frontend%20or%20Backend?-,Node,,as%20well%20as%20the%20backend, 访问于2022年7月18日。
-
-22. Anna Dziuba – Node.js 的用途是什么？ – https://relevant.software/blog/why-and-when-to-use-node-js/#:~:text=Real-time%20applications,,users%20at%20the%20same%20time, 访问于2022年7月18日。
-
-23. MVC 框架简介 – https://www.tutorialspoint.com/mvc_framework/mvc_framework_introduction.htm, 访问于2022年7月18日。
-
-24. 四大末日框架 – https://www.toptal.com/nodejs/nodejs-frameworks-comparison, 访问于2022年7月18日。
-
-25. Kristopher Sandoval – 用于构建 Web API 的 Node.js 框架 – https://nordicapis.com/13-node-js-frameworks-to-build-web-apis/, 访问于2022年7月18日。
-
-26. 什么是 Google Cloud Platform (GCP)？ – https://www.edureka.co/blog/what-is-google-cloud-platform/, 访问于2022年7月18日。
-
-27. Shailendra Chauhan – 什么是 Microsoft Azure？ – https://www.dotnettricks.com/learn/azure/getting-started-with-microsoft-azure-platform, 访问于2022年7月18日。
-
-28. Shyamli Jha – 什么是 Microsoft Azure：工作原理与服务 – https://www.simplilearn.com/tutorials/azure-tutorial/what-is-azure, 访问于2022年7月19日。
-
-29. Red Hat OpenShift Online – https://access.redhat.com/products/openshift-online-red-hat, 访问于2022年7月19日。
-
-30. V8 JavaScript 引擎 – https://nodejs.dev/en/learn/the-v8-javascript-engine/, 访问于2022年7月19日。
-
-31. Mahipal Nehra – 为何选择 NodeJS 开发物联网应用 – https://www.decipherzone.com/blog-detail/nodejs-for-iot-applications#:~:text=The%20preliminary%20reason%20for%20NodeJS,,machine%20code%20with%20faster%20execution, 访问于2022年7月19日。
-
-32. Sandeep Panda – 提升 Node.js Web 应用速度的贴士 – https://www.sitepoint.com/10-tips-make-node-js-web-app-faster/, 访问于2022年7月19日。
-
-33. Roshan Kumar – 为您的物联网系统选择合适数据库的步骤 – https://thenewstack.io/4-steps-to-select-the-right-database-for-your-internet-of-things-system/, 访问于2022年7月19日。
-
-34. Traci Ruether – 什么是 CDN，为什么它对直播至关重要？ – https://www.wowza.com/blog/cdn-live-streaming, 访问于2022年7月19日。
-
-35. 为什么 Node.js 是单线程的？ – https://www.quora.com/Why-is-Node-js-single-threaded-Is-it-a-constraint-of-the-V8-engine-or-of-the-JavaScript-language-itself, 访问于2022年7月19日。
-
-36. 为什么使用 Node Js 开发物联网应用？ – https://evontech.com/component/easyblog/why-use-node-js-development-for-iot-applications-top-reasons.html?Itemid=159, 访问于2022年7月19日。
-
-37. Sandeep Panda – 让您的 Node.js Web 应用更快 – https://www.sitepoint.com/10-tips-make-node-js-web-app-faster/, 访问于2022年7月19日。
-
-38. 使用 Node.js 构建视频流服务器 – https://blog.logrocket.com/build-video-streaming-server-node/, 访问于2022年7月19日。
-
-39. Max Wilbert – 用于直播活动的私有流媒体平台 – https://www.dacast.com/blog/7-live-streaming-solutions-for-private-events/, 访问于2022年7月20日。
-
-40. Node.js 事件循环 – https://www.geeksforgeeks.org/node-js-event-loop/, 访问于2022年7月20日。
-
-41. Ben Lutkevich – CDN（内容分发网络） – https://www.techtarget.com/searchnetworking/definition/CDN-content-delivery-network, 访问于2022年7月20日。
-
-42. 开源安全解读 – https://snyk.io/series/open-source-security/, 访问于2022年7月20日。
-
-43. Hardik Shah – 如何制作流媒体应用：功能、技术栈与成本分析 – https://www.simform.com/blog/how-to-make-a-streaming-app/, 访问于2022年7月20日。
-
-44. 如何成为全栈开发者 – https://bootcamp.cvn.columbia.edu/blog/how-to-become-a-full-stack-developer/, 访问于2022年7月20日。
-
-45. 使用 Node.js 和 Express.js 轻松搭建 HTTP/2 服务器 – https://webapplog.com/http2-node/, 访问于2022年7月20日。
-
-46. Oskar Petr – 如何使用 Node.js 创建您的第一个现代 Angular 应用 – https://javascript.plainenglish.io/how-to-create-your-first-modern-angular-app-with-node-js-b9824869cbfa?gi=5a8c5ad8f92, 访问于2022年7月20日。
-
-47. 选择 Node.js 进行 Web 开发的五个理由 – https://edwisor.medium.com/5-reasons-to-choose-node-js-for-web-development-747e5d8e2fd6, 访问于2022年7月21日。
-
-48. WebSocket API – https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API, 访问于2022年7月21日。
-
-49. Mateusz Pigula – Socket.io 教程：Web 开发中的实时通信 – https://tsh.io/blog/socket-io-tutorial-real-time-communication/, 访问于2022年7月21日。
-
-50. Martin Fietkiewicz – WebSockets 与 HTTP：优缺点比较 – https://ably.com/topic/websockets-vs-http, 访问于2022年7月21日。
+1. Node.js 简介 – https://www.w3schools.com/nodejs/nodejs_intro.asp，访问日期：2022 年 7 月 15 日。
+2. 什么是 Node.js – https://www.tutorialspoint.com/nodejs/nodejs_introduction.htm，访问日期：2022 年 7 月 15 日。
+3. Node.js 应用程序 – https://nodejs.dev/en/learn/introduction-to-nodejs/，访问日期：2022 年 7 月 15 日。
+4. JavaScript 历史 – https://www.infoworld.com/article/3210589/what-is-nodejs-javascript-runtime-explained.html，访问日期：2022 年 7 月 15 日。
+5. 为什么选择 Node.js？ – https://medium.com/free-code-camp/what-exactly-is-node-js-ae36e97449f5，访问日期：2022 年 7 月 15 日。
+6. Node.js 基础 – https://www.educative.io/blog/what-is-nodejs，访问日期：2022 年 7 月 15 日。
+7. Node.js 基本概念 – https://www.tutorialsteacher.com/nodejs/nodejs-basics，访问日期：2022 年 7 月 15 日。
+8. Node.js 数据类型 – https://www.etutorialspoint.com/index.php/nodejs/node-js-datatype，访问日期：2022 年 7 月 15 日。
+9. Node.js 函数 – https://www.simplilearn.com/tutorials/nodejs-tutorial/nodejs-functions，访问日期：2022 年 7 月 16 日。
+10. Node.js 字符串函数 – http://www.java2s.com/Tutorials/Javascript/Node.js_Tutorial/0050__Node.js_String_Functions.htm，访问日期：2022 年 7 月 16 日。
+11. Node.js `split()` 函数 – https://www.geeksforgeeks.org/node-js-split-function/，访问日期：2022 年 7 月 16 日。
+12. JavaScript 字符串 – https://www.tutorialsteacher.com/javascript/javascript-string，访问日期：2022 年 7 月 16 日。
+13. 如何在 Node.js 中使用 HTTP 模块创建 Web 服务器 – https://www.digitalocean.com/community/tutorials/how-to-create-a-web-server-in-node-js-with-the-http-module，访问日期：2022 年 7 月 16 日。
+14. 环境搭建 – https://www.tutorialspoint.com/nodejs/nodejs_environment_setup.htm，访问日期：2022 年 7 月 16 日。
+15. 设置 Node 开发环境 – https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs/development_environment，访问日期：2022 年 7 月 17 日。
+16. JavaScript 运行时环境 – https://www.codecademy.com/article/introduction-to-javascript-runtime-environments，访问日期：2022 年 7 月 17 日。
+17. 安装 Node.js 的五种方法 – https://www.nodejsdesignpatterns.com/blog/5-ways-to-install-node-js/，访问于 2022 年 7 月 17 日。
+18. Node.js 概述 – https://en.wikipedia.org/wiki/Node.js，访问于 2022 年 7 月 17 日。
+19. 最新长期支持版本：18.14.0 – https://nodejs.org/en/download/，访问于 2022 年 7 月 17 日。
+20. Node.js 与浏览器的区别 – https://nodejs.dev/en/learn/differences-between-nodejs-and-the-browser/，访问于 2022 年 7 月 20 日。
+21. Node.js 用于前端还是后端？ – https://www.simplilearn.com/tutorials/nodejs-tutorial/nodejs-backend#:~:text=Frontend%20or%20Backend?-,Node,,as%20well%20as%20the%20backend，访问于 2022 年 7 月 18 日。
+22. Anna Dziuba – Node.js 的用途是什么？ – https://relevant.software/blog/why-and-when-to-use-node-js/#:~:text=Real-time%20applications,,users%20at%20the%20same%20time，访问于 2022 年 7 月 18 日。
+23. MVC 框架简介 – https://www.tutorialspoint.com/mvc_framework/mvc_framework_introduction.htm，访问于 2022 年 7 月 18 日。
+24. 四大末日框架 – https://www.toptal.com/nodejs/nodejs-frameworks-comparison，访问于 2022 年 7 月 18 日。
+25. Kristopher Sandoval – 用于构建 Web API 的 Node.js 框架 – https://nordicapis.com/13-node-js-frameworks-to-build-web-apis/，访问于 2022 年 7 月 18 日。
+26. 什么是 Google Cloud Platform (GCP)？ – https://www.edureka.co/blog/what-is-google-cloud-platform/，访问于 2022 年 7 月 18 日。
+27. Shailendra Chauhan – 什么是 Microsoft Azure？ – https://www.dotnettricks.com/learn/azure/getting-started-with-microsoft-azure-platform，访问于 2022 年 7 月 18 日。
+28. Shyamli Jha – 什么是 Microsoft Azure：工作原理与服务 – https://www.simplilearn.com/tutorials/azure-tutorial/what-is-azure，访问于 2022 年 7 月 19 日。
+29. Red Hat OpenShift Online – https://access.redhat.com/products/openshift-online-red-hat，访问于 2022 年 7 月 19 日。
+30. V8 JavaScript 引擎 – https://nodejs.dev/en/learn/the-v8-javascript-engine/，访问于 2022 年 7 月 19 日。
+31. Mahipal Nehra – 为何选择 NodeJS 开发物联网应用 – https://www.decipherzone.com/blog-detail/nodejs-for-iot-applications#:~:text=The%20preliminary%20reason%20for%20NodeJS,,machine%20code%20with%20faster%20execution，访问于 2022 年 7 月 19 日。
+32. Sandeep Panda – 提升 Node.js Web 应用速度的贴士 – https://www.sitepoint.com/10-tips-make-node-js-web-app-faster/，访问于 2022 年 7 月 19 日。
+33. Roshan Kumar – 为您的物联网系统选择合适数据库的步骤 – https://thenewstack.io/4-steps-to-select-the-right-database-for-your-internet-of-things-system/，访问于 2022 年 7 月 19 日。
+34. Traci Ruether – 什么是 CDN，为什么它对直播至关重要？ – https://www.wowza.com/blog/cdn-live-streaming，访问于 2022 年 7 月 19 日。
+35. 为什么 Node.js 是单线程的？ – https://www.quora.com/Why-is-Node-js-single-threaded-Is-it-a-constraint-of-the-V8-engine-or-of-the-JavaScript-language-itself，访问于 2022 年 7 月 19 日。
+36. 为什么使用 Node Js 开发物联网应用？ – https://evontech.com/component/easyblog/why-use-node-js-development-for-iot-applications-top-reasons.html?Itemid=159，访问于 2022 年 7 月 19 日。
+37. Sandeep Panda – 让您的 Node.js Web 应用更快 – https://www.sitepoint.com/10-tips-make-node-js-web-app-faster/，访问于 2022 年 7 月 19 日。
+38. 使用 Node.js 构建视频流服务器 – https://blog.logrocket.com/build-video-streaming-server-node/，访问于 2022 年 7 月 19 日。
+39. Max Wilbert – 用于直播活动的私有流媒体平台 – https://www.dacast.com/blog/7-live-streaming-solutions-for-private-events/，访问于 2022 年 7 月 20 日。
+40. Node.js 事件循环 – https://www.geeksforgeeks.org/node-js-event-loop/，访问于 2022 年 7 月 20 日。
+41. Ben Lutkevich – CDN（内容分发网络） – https://www.techtarget.com/searchnetworking/definition/CDN-content-delivery-network，访问于 2022 年 7 月 20 日。
+42. 开源安全解读 – https://snyk.io/series/open-source-security/，访问于 2022 年 7 月 20 日。
+43. Hardik Shah – 如何制作流媒体应用：功能、技术栈与成本分析 – https://www.simform.com/blog/how-to-make-a-streaming-app/，访问于 2022 年 7 月 20 日。
+44. 如何成为全栈开发者 – https://bootcamp.cvn.columbia.edu/blog/how-to-become-a-full-stack-developer/，访问于 2022 年 7 月 20 日。
+45. 使用 Node.js 和 Express.js 轻松搭建 HTTP/2 服务器 – https://webapplog.com/http2-node/，访问于 2022 年 7 月 20 日。
+46. Oskar Petr – 如何使用 Node.js 创建您的第一个现代 Angular 应用 – https://javascript.plainenglish.io/how-to-create-your-first-modern-angular-app-with-node-js-b9824869cbfa?gi=5a8c5ad8f92，访问于 2022 年 7 月 20 日。
+47. 选择 Node.js 进行 Web 开发的五个理由 – https://edwisor.medium.com/5-reasons-to-choose-node-js-for-web-development-747e5d8e2fd6，访问于 2022 年 7 月 21 日。
+48. WebSocket API – https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API，访问于 2022 年 7 月 21 日。
+49. Mateusz Pigula – Socket.io 教程：Web 开发中的实时通信 – https://tsh.io/blog/socket-io-tutorial-real-time-communication/，访问于 2022 年 7 月 21 日。
+50. Martin Fietkiewicz – WebSockets 与 HTTP：优缺点比较 – https://ably.com/topic/websockets-vs-http，访问于 2022 年 7 月 21 日。
 
 ## 索引
 
 - A
-  - 访问控制, 123–124
-  - Adonis.js, 142–143
-  - 使用 node.js 框架的优势, 138
-  - 聚合日志, 110
-  - Amazon Cloudfront, 61
-  - Amazon DynamoDB, 88
-  - 亚马逊 Web 服务 (AWS), 26–27
-  - Angular 应用, 146, 149
-    - 用于 Node.js 的 API, 148
-    - 与 Node API 协同工作, 152
-    - 开发阶段, 147
-    - 先决条件, 146
-    - 生产就绪项目，创建, 152–153
-    - 项目练习, 146–147
-    - 项目结构, 147
-  - API, 86, 108, 148
-  - 应用开发, 35, 55, 64, 83
-    - 应用的优缺点, 75
-    - 异步方式中的迭代器, 66–68
-    - 使用 node.js 构建应用, 36
-      - WebSocket, 36
-      - WebSocket 的定义, 36
-      - WebSocket 的工作原理, 36
-    - 特征，识别, 57
-      - 基本特征, 57–58
-      - 可选附加功能, 58
-    - 代码教程, 44
-    - 内容分发网络 (CDN), 61
-    - 数据库和托管, 62
-    - 开发和设计, 62–63
-    - 响应头，创建, 79–81
-    - 物联网 (IoT)，node.js 用于物联网的优势, 84
-      - 使用 node.js 创建 API, 86
-      - node.js 提供的数据安全性, 85
-      - 使用 node.js 开发物联网项目, 86–87
-      - 物联网协议与 node.js 的集成, 84–85
-      - 让大数据为物联网项目服务, 88–89
-      - MongoDB 中的地理空间索引, 97–103
-      - 为物联网选择最佳数据库, 87–88
-      - node.js 作为强大且快速的编程语言, 85
-      - 项目代码，处理, 89
-      - 项目的未来架构, 89
-      - 实时物联网分析, 89–90
-      - node.js 作为可扩展且资源高效的编程语言, 85
-      - 模式设计, 92–97
-      - 服务器端认证, 86
-      - Uber, 90
-    - 物联网 (IoT) 解决方案，node.js 作为, 83–84
-    - 市场研究，执行, 56
-      - 电子竞技流媒体应用, 57
-      - 音乐流媒体应用, 56–57
-    - 使用流的 Node API, 75–75
-    - pipeline(), 72–73
-    - 范围，确定, 78
-
-
-
-## 索引
-
--   阅读模式，68–70
--   真实案例，66
--   需求，37
--   Socket.IO，44
-    -   准备前端部分，45–53
--   流媒体，平台，60–61
--   流媒体应用，制作成本，64
--   流模块，73
--   流，65–66
-    -   HTTP实时流媒体（HLS），59
-    -   MPEG-DASH，59
-    -   在线视频流媒体，资源，59
-    -   RTMP（实时消息协议），59–60
-    -   WebRTC，60
--   测试与维护，63
--   /video端点，76–78
--   视频游戏，流媒体，64
--   WebSockets API，37
-    -   聊天室应用和Socket.io教程，43
-    -   HTTP与WebSockets对比，43
-    -   内部通信，41–43
-    -   消息结构，39–41
-    -   单点故障，38–39
-    -   被低估，37–38
--   可写流，70–72
--   应用监控，109
--   Node.js归档，7
--   异步，99
--   异步编码，20–21，116–117
--   异步模式，迭代器，66–68
--   异步函数，19–20
--   异步模型，17–19
--   异步性，132–133
--   异步模式，有效利用，132
--   认证，125–126
--   AWS，参见亚马逊网络服务
--   缓存的优势，10
--   社区支持，庞大活跃的node.js群体提供，10
--   提供卓越成果，10
--   灵活性，11
--   全栈js node的优势，10
--   同时处理大量请求，11
--   构建自己的应用，11
--   可扩展性与node.js，9
--   简单易懂，9
--   单一编程语言，node.js作为，10
--   大数据与物联网项目，88–89
--   布尔值，71
--   浏览器，node.js与，16–17
--   node.js中的“Buffer”，4
--   缺陷，132
--   Bunyan，121
-
-### B
--   Babel，44
--   node.js的优势，9
-
-### C
--   缓存的get方法，113
--   缓存，112–113
-    -   优势，10
--   回调函数规范，129
--   回调地狱，12，22，99，117
--   回调函数，20，21–23，129
-    -   异步模式，有效利用，132
-    -   小模块，制作，131–132
-    -   返回，130
-    -   同步代码，仅在同步代码中使用try-catch，131
--   node.js的职业前景，135
-    -   对Node.js的需求，136
-    -   成为全栈开发者，137
-    -   JavaScript，137
-    -   node.js开发中的工作机会，136–137
-    -   薪资待遇，有吸引力，137
--   CDN，参见内容分发网络
--   内容分发网络
-    -   特征，识别，57
-        -   基本特征，57–58
-        -   可选附加功能，58
--   聊天应用，24
--   聊天室应用和Socket.io教程，43
--   公民-警察应用，91
--   客户端认证，115
--   代码优化，105
-    -   异步编码，116–117
-    -   回调函数规范，129
-    -   客户端认证，115
-    -   正确注释，128
-    -   数据库性能/优化
-        -   提升的基本策略，118
-        -   LIMIT，118–119
-        -   使用非高峰时段，120
-        -   SELECT语句，118
-        -   WHERE子句，118
-        -   使用通配符，119–120
-    -   调试，128–129
-        -   解构赋值，129
-        -   复查回调函数问题，129
-        -   异步模式，有效利用，132
-        -   回调函数，返回，130
-        -   小模块，制作，131–132
-        -   同步代码，仅在同步代码中使用try-catch，131
-    -   加密指南，122
-    -   错误纠正，132
-        -   异步性，132–133
-        -   操作中的错误，132
-        -   编程中的错误，132–133
-    -   处理操作错误，132
-    -   处理程序员错误，133
-    -   事件循环，107
-        -   事件循环与node.js性能，107
-        -   缓存，112–113
-    -   改进数据管理技术，113
-    -   HTTP/2和SSL/TLS，111–112
-    -   图片，111
-        -   大规模分布式系统，复制，109
-        -   使node.js运行更快，110
-        -   CSS的模块和预处理器，111
-    -   创建性能测试概况，108
-    -   运行测试，110
-    -   设置、运行和分析性能测试，107–108
-    -   设置node.js性能测试环境，110
-    -   任务运行器和模块打包器，110–111
-    -   前端工具，110
-    -   函数，128
-    -   负载均衡，114–115
-    -   保持代码轻量级和紧凑，115–116
-    -   命名约定，127–128
-    -   并行性，121
-    -   查询增强，117
-    -   程序模式中的重复消除，129
-    -   脚本，跟踪和日志记录，120
-        -   Bunyan，121
-        -   Morgan，121
-        -   Winston，120–121
--   node.js的安全关注点和建议，122
-    -   认证，125–126
-    -   使用fluid构建安全补丁管道，126–127
-    -   数据泄露，123
-    -   使用加密进行反序列化，124
-    -   HTTP响应头，124–125
-    -   创建日志记录和监控系统，125
-    -   请求实现访问控制，123–124
-    -   定期扫描应用漏洞，126
-    -   利用安全限制，123
-    -   XSS攻击，验证用户输入以限制，122–123
--   node.js的安全问题，122
--   node.js的特长，106
-    -   检测内存泄漏，106–107
-    -   单线程、运行到完成的行为，106
--   同步编码，116，117
--   WebSockets，实现高效服务器通信，116
--   社区支持，10
--   紧凑代码，115–116
--   Connect()，74
--   connect-redis，100
--   Console.log()，120
--   使用Node.js编写的控制台应用，5
--   内容分发网络（CDN），112
--   内容分发网络（CDN），61
-    -   数据库和托管，62
--   核心概念，12–13
--   CradeDB，88
--   CreateReadStream()，74
--   CreateWriteStream()，74
--   CSS，模块和预处理器，111
+  - 访问控制，123–124
+  - Adonis.js，142–143
+  - 使用`Node.js`框架的优势，138
+  - 聚合日志，110
+  - Amazon Cloudfront，61
+  - Amazon DynamoDB，88
+  - 亚马逊 Web 服务 (AWS)，26–27
+  - Angular 应用，146，149
+    - 用于`Node.js`的 API，148
+    - 与 Node API 协同工作，152
+    - 开发阶段，147
+    - 先决条件，146
+    - 生产就绪项目，创建，152–153
+    - 项目练习，146–147
+    - 项目结构，147
+  - API，86，108，148
+  - 应用开发，35，55，64，83
+    - 应用的优缺点，75
+    - 异步方式中的迭代器，66–68
+    - 使用`Node.js`构建应用，36
+      - WebSocket，36
+      - WebSocket 的定义，36
+      - WebSocket 的工作原理，36
+    - 特征，识别，57
+      - 基本特征，57–58
+      - 可选附加功能，58
+    - 代码教程，44
+    - 内容分发网络 (CDN)，61
+    - 数据库和托管，62
+    - 开发和设计，62–63
+    - 响应头，创建，79–81
+    - 物联网 (IoT)，`Node.js`用于物联网的优势，84
+      - 使用`Node.js`创建 API，86
+      - `Node.js`提供的数据安全性，85
+      - 使用`Node.js`开发物联网项目，86–87
+      - 物联网协议与`Node.js`的集成，84–85
+      - 让大数据为物联网项目服务，88–89
+      - `MongoDB`中的地理空间索引，97–103
+      - 为物联网选择最佳数据库，87–88
+      - `Node.js`作为强大且快速的编程语言，85
+      - 项目代码，处理，89
+      - 项目的未来架构，89
+      - 实时物联网分析，89–90
+      - `Node.js`作为可扩展且资源高效的编程语言，85
+      - 模式设计，92–97
+      - 服务器端认证，86
+      - Uber，90
+    - 物联网 (IoT) 解决方案，`Node.js`作为，83–84
+    - 市场研究，执行，56
+      - 电子竞技流媒体应用，57
+      - 音乐流媒体应用，56–57
+    - 使用流的 Node API，75
+    - `pipeline()`，72–73
+    - 范围，确定，78
+  - 阅读模式，68–70
+  - 真实案例，66
+  - 需求，37
+  - `Socket.IO`，44
+    - 准备前端部分，45–53
+  - 流媒体，平台，60–61
+  - 流媒体应用，制作成本，64
+  - 流模块，73
+  - 流，65–66
+    - HTTP实时流媒体（HLS），59
+    - MPEG-DASH，59
+    - 在线视频流媒体，资源，59
+    - RTMP（实时消息协议），59–60
+    - WebRTC，60
+  - 测试与维护，63
+  - `/video`端点，76–78
+  - 视频游戏，流媒体，64
+  - WebSockets API，37
+    - 聊天室应用和`Socket.io`教程，43
+    - HTTP与WebSockets对比，43
+    - 内部通信，41–43
+    - 消息结构，39–41
+    - 单点故障，38–39
+    - 被低估，37–38
+  - 可写流，70–72
+  - 应用监控，109
+  - `Node.js`归档，7
+  - 异步，99
+  - 异步编码，20–21，116–117
+  - 异步模式，迭代器，66–68
+  - 异步函数，19–20
+  - 异步模型，17–19
+  - 异步性，132–133
+  - 异步模式，有效利用，132
+  - 认证，125–126
+  - AWS，参见亚马逊网络服务
+  - 缓存的`get`方法，113
+  - 缓存，112–113
+    - 优势，10
+  - 回调函数规范，129
+  - 回调地狱，12，22，99，117
+  - 回调函数，20，21–23，129
+    - 异步模式，有效利用，132
+    - 小模块，制作，131–132
+    - 返回，130
+    - 同步代码，仅在同步代码中使用`try-catch`，131
+  - `Node.js`的职业前景，135
+    - 对`Node.js`的需求，136
+    - 成为全栈开发者，137
+    - JavaScript，137
+    - `Node.js`开发中的工作机会，136–137
+    - 薪资待遇，有吸引力，137
+  - CDN，参见内容分发网络
+  - 内容分发网络
+    - 特征，识别，57
+      - 基本特征，57–58
+      - 可选附加功能，58
+  - 聊天应用，24
+  - 聊天室应用和`Socket.io`教程，43
+  - 公民-警察应用，91
+  - 客户端认证，115
+  - 代码优化，105
+    - 异步编码，116–117
+    - 回调函数规范，129
+    - 客户端认证，115
+    - 正确注释，128
+    - 数据库性能/优化
+      - 提升的基本策略，118
+      - `LIMIT`，118–119
+      - 使用非高峰时段，120
+      - `SELECT`语句，118
+      - `WHERE`子句，118
+      - 使用通配符，119–120
+    - 调试，128–129
+      - 解构赋值，129
+      - 复查回调函数问题，129
+      - 异步模式，有效利用，132
+      - 回调函数，返回，130
+      - 小模块，制作，131–132
+      - 同步代码，仅在同步代码中使用`try-catch`，131
+    - 加密指南，122
+    - 错误纠正，132
+      - 异步性，132–133
+      - 操作中的错误，132
+      - 编程中的错误，132–133
+    - 处理操作错误，132
+    - 处理程序员错误，133
+    - 事件循环，107
+      - 事件循环与`Node.js`性能，107
+      - 缓存，112–113
+    - 改进数据管理技术，113
+    - HTTP/2和SSL/TLS，111–112
+    - 图片，111
+      - 大规模分布式系统，复制，109
+      - 使`Node.js`运行更快，110
+      - CSS的模块和预处理器，111
+    - 创建性能测试概况，108
+    - 运行测试，110
+    - 设置、运行和分析性能测试，107–108
+    - 设置`Node.js`性能测试环境，110
+    - 任务运行器和模块打包器，110–111
+    - 前端工具，110
+    - 函数，128
+    - 负载均衡，114–115
+    - 保持代码轻量级和紧凑，115–116
+    - 命名约定，127–128
+    - 并行性，121
+    - 查询增强，117
+    - 程序模式中的重复消除，129
+    - 脚本，跟踪和日志记录，120
+      - Bunyan，121
+      - Morgan，121
+      - Winston，120–121
+  - `Node.js`的安全关注点和建议，122
+    - 认证，125–126
+    - 使用 fluid 构建安全补丁管道，126–127
+    - 数据泄露，123
+    - 使用加密进行反序列化，124
+    - HTTP响应头，124–125
+    - 创建日志记录和监控系统，125
+    - 请求实现访问控制，123–124
+    - 定期扫描应用漏洞，126
+    - 利用安全限制，123
+    - XSS攻击，验证用户输入以限制，122–123
+  - `Node.js`的安全问题，122
+  - `Node.js`的特长，106
+    - 检测内存泄漏，106–107
+    - 单线程、运行到完成的行为，106
+  - 同步编码，116，117
+  - WebSockets，实现高效服务器通信，116
+  - 社区支持，10
+  - 紧凑代码，115–116
+  - `Connect()`，74
+  - `connect-redis`，100
+  - `Console.log()`，120
+  - 使用`Node.js`编写的控制台应用，5
+  - 内容分发网络（CDN），112
+  - 内容分发网络（CDN），61
+    - 数据库和托管，62
+  - 核心概念，12–13
+  - CradeDB，88
+  - `CreateReadStream()`，74
+  - `CreateWriteStream()`，74
+  - CSS，模块和预处理器，111
 
 ### D
--   数据库性能/优化，提升策略，118
-    -   LIMIT，118–119
-    -   SELECT语句，118
-    -   使用非高峰时段运行查询，120
-    -   WHERE子句，118
-    -   使用通配符，119–120
--   数据泄露，123
--   改进数据管理技术，113
--   node.js提供的数据安全，85
--   数据类型，2
--   调试，99
--   调试，128–129
--   删除方法，113
--   对node.js的需求，136
--   Derby.js，141–142
--   使用加密进行反序列化，124
--   解构赋值，129
--   DigitalOcean，29
--   node.js的缺点，11
-    -   API不稳定，11
-    -   代码更难维护，12
-    -   损害代码质量，11–12
-    -   执行繁重计算任务时性能下降，12
--   下载，Node.js，7
--   软件开发的DRY原则，129
+
+- 数据库性能/优化，提升策略，118
+  - `LIMIT`，118–119
+  - `SELECT`语句，118
+  - 使用非高峰时段运行查询，120
+  - `WHERE`子句，118
+  - 使用通配符，119–120
+- 数据泄露，123
+- 改进数据管理技术，113
+- `Node.js`提供的数据安全，85
+- 数据类型，2
+- 调试，99
+- 调试，128–129
+- 删除方法，113
+- 对`Node.js`的需求，136
+- Derby.js，141–142
+- 使用加密进行反序列化，124
+- 解构赋值，129
+- DigitalOcean，29
+- `Node.js`的缺点，11
+  - API不稳定，11
+  - 代码更难维护，12
+  - 损害代码质量，11–12
+  - 执行繁重计算任务时性能下降，12
+- 下载，Node.js，7
+- 软件开发的 DRY 原则，129
 
 ### E
--   ECMAScript，13，30
--   生态系统，变化，16–17
--   加密
-    -   使用加密进行反序列化，124
-    -   指南，122
--   结束node.js程序，32–33
--   node.js的环境设置，6
-    -   node.js归档，7
-    -   本地环境，设置，6
-    -   node.js运行时，7
-    -   文本编辑器，7
--   错误纠正，132
-    -   异步性，132–133
-    -   编程错误，132–133
-    -   处理操作错误，132
-    -   操作中的错误，132
-    -   处理程序员错误，133
--   电竞流媒体应用，57
--   EventEmitter，20，42，67
-    -   异步代码，20–21
--   事件循环，22，107
--   事件循环与node.js性能，107
-    -   缓存，112–113
-    -   CSS，模块和预处理器，111
-    -   改进数据管理技术，113
-    -   前端工具，110
-    -   HTTP/2和SSL/TLS，111–112
-    -   图片，111
-    -   大规模分布式系统，复制，109
-    -   使node.js运行更快，110
-    -   创建性能测试概况，108
-    -   运行测试，110
-    -   设置、运行和分析性能测试，107–108
-    -   设置node.js性能测试环境，110
-    -   任务运行器和模块打包器，110–111
--   事件队列，22
-    -   发射器，事件，20–21
-    -   异步代码，20–21
--   node.js作为卓越的技术合作伙伴，8–9
--   提供卓越成果，node.js，10
--   Express，44
--   Express.js，25，138–139，148
--   外部资源，22
+
+- ECMAScript，13，30
+- 生态系统，变化，16–17
+- 加密
+  - 使用加密进行反序列化，124
+  - 指南，122
+- 结束`Node.js`程序，32–33
+- `Node.js`的环境设置，6
+  - `Node.js`归档，7
+  - 本地环境，设置，6
+  - `Node.js`运行时，7
+  - 文本编辑器，7
+- 错误纠正，132
+  - 异步性，132–133
+  - 编程错误，132–133
+  - 处理操作错误，132
+  - 操作中的错误，132
+  - 处理程序员错误，133
+- 电竞流媒体应用，57
+- `EventEmitter`，20，42，67
+  - 异步代码，20–21
+- 事件循环，22，107
+- 事件循环与`Node.js`性能，107
+  - 缓存，112–113
+  - CSS，模块和预处理器，111
+  - 改进数据管理技术，113
+  - 前端工具，110
+  - HTTP/2和SSL/TLS，111–112
+  - 图片，111
+  - 大规模分布式系统，复制，109
+  - 使`Node.js`运行更快，110
+  - 创建性能测试概况，108
+  - 运行测试，110
+  - 设置、运行和分析性能测试，107–108
+  - 设置`Node.js`性能测试环境，110
+  - 任务运行器和模块打包器，110–111
+- 事件队列，22
+  - 发射器，事件，20–21
+  - 异步代码，20–21
+- `Node.js`作为卓越的技术合作伙伴，8–9
+- 提供卓越成果，`Node.js`，10
+- Express，44
+- Express.js，25，138–139，148
+- 外部资源，22
 
 ### F
--   node.js的特性，8
--   过滤，113
--   node.js的灵活性，11
--   node.js框架，25
-    -   模型-视图-控制器（MVC）框架，25
-    -   REST API，框架，25
-    -   Express.js，25
-    -   Hapi.js，26
-    -   Koa.js，25–26
-    -   Socket.io，26
--   前端工具，110
--   前端/后端框架，23–24
--   准备前端部分，45–53
--   成为全栈开发者，137
--   全栈js node的优势，10
--   功能性，64
--   Node.js中的函数，3–4，128
+
+- `Node.js`的特性，8
+- 过滤，113
+- `Node.js`的灵活性，11
+- `Node.js`框架，25
+  - 模型-视图-控制器（MVC）框架，25
+  - REST API，框架，25
+  - Express.js，25
+  - Hapi.js，26
+  - Koa.js，25–26
+  - Socket.io，26
+- 前端工具，110
+- 前端/后端框架，23–24
+- 准备前端部分，45–53
+- 成为全栈开发者，137
+- 全栈 JS Node 的优势，10
+- 功能性，64
+- `Node.js`中的函数，3–4，128
 
 ### G
--   GCP，参见谷歌云平台
--   GeoJSON对象，97
--   MongoDB中的地理空间索引，97–103
--   GitHub页面，146
--   GitHub wiki页面，8
--   谷歌云平台（GCP），27
--   谷歌Kubernetes引擎，27
--   GraphQL，114
+
+- GCP，参见谷歌云平台
+- GeoJSON对象，97
+- `MongoDB`中的地理空间索引，97–103
+- GitHub页面，146
+- GitHub wiki页面，8
+- 谷歌云平台（GCP），27
+- 谷歌 Kubernetes 引擎，27
+- GraphQL，114
 
 ### H
--   Hapi.js框架，26，141
--   创建响应头，79–81
--   Heroku，27
--   node.js的历史，13
-    -   安装node.js，14
-    -   JavaScript知识，15–16
--   HLS，参见HTTP实时流媒体
--   选择托管服务，26
-    -   亚马逊网络服务（AWS），26–27
-    -   DigitalOcean，29
-    -   谷歌云平台（GCP），27
-    -   Heroku，27
-    -   微软Azure，28
-    -   RedHat OpenShift Online，28
-    -   ZEIT，28–29
--   HTTP.request()，74
--   HTTP/2和SSL/TLS，111–112
--   HTTP头压缩，111
--   HTTP实时流媒体（HLS），59
--   HTTP响应头，124–125
--   HTTP与WebSockets对比，43
+
+- Hapi.js框架，26，141
+- 创建响应头，79–81
+- Heroku，27
+- `Node.js`的历史，13
+  - 安装`Node.js`，14
+  - JavaScript知识，15–16
+- HLS，参见HTTP实时流媒体
+- 选择托管服务，26
+  - 亚马逊网络服务（AWS），26–27
+  - DigitalOcean，29
+  - 谷歌云平台（GCP），27
+  - Heroku，27
+  - 微软Azure，28
+  - RedHat OpenShift Online，28
+  - ZEIT，28–29
+- `HTTP.request()`，74
+- HTTP/2和SSL/TLS，111–112
+- HTTP头压缩，111
+- HTTP实时流媒体（HLS），59
+- HTTP响应头，124–125
+- HTTP与WebSockets对比，43
 
 ### I
--   图片，111
--   应用内聊天，58
--   index.js文件，44
--   InfluxDB，88
--   基础设施数据，109
--   安装node.js，14
--   内部通信，41–43
--   物联网（IoT），node.js的优势，84
-    -   使用node.js创建API，86
-    -   代码教程，91
-    -   模式设计，92–97
-    -   node.js提供的数据安全，85
-    -   在node.js中开发物联网项目，86–87
-    -   基于node.js的物联网应用示例？90
-    -   Uber，90
--   物联网协议与node.js集成，84–85
 
+- 图片，111
+- 应用内聊天，58
+- `index.js`文件，44
+- InfluxDB，88
+- 基础设施数据，109
+- 安装`Node.js`，14
+- 内部通信，41–43
+- 物联网（IoT），`Node.js`的优势，84
+  - 使用`Node.js`创建API，86
+  - 代码教程，91
+  - 模式设计，92–97
+  - `Node.js`提供的数据安全，85
+  - 在`Node.js`中开发物联网项目，86–87
+  - 基于`Node.js`的物联网应用示例？90
+  - Uber，90
+- 物联网协议与`Node.js`集成，84–85
 
-
-## 索引
-
-- 为物联网项目提供大数据解决方案，88-89
-- MongoDB，地理空间索引，97-103
-- 为物联网选择最佳数据库，87-88
-- 强大且快速的编程语言——node.js，85
-- 项目代码，使用方法，89
-- 项目的未来架构，89
-- 实时物联网数据分析，89-90
-- 可扩展且资源高效的编程语言——node.js，85
-- 服务器端身份验证，86
-- 物联网（IoT）解决方案——node.js，83-84
-
-## J
+### J
 
 - JavaScript，1，9，10，13，16，23，137
-  - JavaScript 知识，15-16
+  - JavaScript 知识，15–16
 - JavaScript 对象表示法（JSON），140
-- node.js 开发中的工作机会，136-137
-- JSON，*参见* JavaScript 对象表示法
-- JSON.parse 函数，131
+- `Node.js`开发中的工作机会，136–137
+- JSON，参见 JavaScript 对象表示法
+- `JSON.parse`函数，131
 
-## K
+### K
 
-- Koa.js，25-26
-- Koa Web 应用程序，140-141
+- Koa.js，25–26
+- Koa Web 应用程序，140–141
 
-## L
+### L
 
 - 大型分布式系统，复制，109
 - 库，13
-- 轻量化，保持，115-116
+- 轻量化，保持，115–116
 - Limelight Networks，61
-- LIMIT，118-119
+- `LIMIT`，118–119
 - 语言清晰度，检查，63
-- 负载均衡，114-115
+- 负载均衡，114–115
 - 负载测试，63
 - 本地环境，搭建，6
 - 日志和监控系统，创建，125
 - LoopBack，142
 - 松散类型，3
-- lowerCamelCase，127
+- `lowerCamelCase`，127
 
-## M
+### M
 
 - 市场研究，执行，56
   - 电竞流媒体应用，57
-  - 音乐流媒体应用，56-57
-- Math.min 函数，78
+  - 音乐流媒体应用，56–57
+- `Math.min`函数，78
 - Memcached，113
-- 内存泄漏，检测，106-107
+- 内存泄漏，检测，106–107
 - Meteor，139
 - Microsoft Azure，28
 - 模型视图控制器（MVC）框架，25
-- 模块打包器，110-111
-- MongoDB，88，91-92
-  - 地理空间索引，97-103
+- 模块打包器，110–111
+- `MongoDB`，88，91–92
+  - 地理空间索引，97–103
 - Morgan，121
 - MPEG-DASH，59
 - MQTT.js，85
 - 多语言支持，58
 - 多视频分辨率选项，64
 - 多路复用，111
-- 音乐流媒体应用，56-57
-- MVC 框架，*参见* 模型视图控制器框架
+- 音乐流媒体应用，56–57
+- MVC 框架，参见模型视图控制器框架
 
-## N
+### N
 
-- 命名规范，127-128
+- 命名规范，127–128
 - Nest.js，140
-- Net.Socket，73
+- `Net.Socket`，73
 - Netscape LiveWire，13
 - Netscape Navigator 浏览器，13
 - Nginx，dwarf，114
-- Node.js 架构，22
-- 使用流的 Node API，73-75
-- NodeJS，91-92
+- `Node.js`架构，22
+- 使用流的 Node API，73–75
+- NodeJS，91–92
 - Nodemon，44
 - Node 包管理器（NPM），85
 - Node-RED，85
 - Node-set，113
 - 非阻塞 I/O 操作，21
-  - 回调，21-23
-- NPM，*参见* Node 包管理器
+  - 回调，21–23
+- NPM，参见 Node 包管理器
 
-## O
+### O
 
 - 对象数据库，24
 - 使用非高峰时段运行查询，120
 - 在线视频流媒体，协议，59
 - 优化，113
-- OTT 服务，*参见* 过顶服务
+- OTT 服务，参见过顶服务
 - 过顶（OTT）服务，55
-- 自主应用——node.js 允许构建，11
+- 自主应用——`Node.js`允许构建，11
 
-## P
+### P
 
 - 分页，113
 - 并行处理，121
 - 并行操作，121
-- PATH 环境变量，8
+- `PATH`环境变量，8
 - 支付选项，58
 - 性能测试，63
 - 性能测试配置，创建，108
-- pipeline()，72-73
+- `pipeline()`，72–73
 - 平台即服务（PaaS），27
 - PM2 进程管理器，114
-- 强大的编程语言——node.js，85
+- 强大的编程语言——`Node.js`，85
 - 私有流媒体，58
-- Process.exit，32
-- 生产就绪项目，创建，152-153
+- `Process.exit`，32
+- 生产就绪项目，创建，152–153
 - 程序员错误，处理，133
 - 项目代码，使用方法，89
 - 项目的未来架构，89
 
-## Q
+### Q
 
 - 查询
   - 增强，117
   - 使用非高峰时段运行，120
-- 快速编程语言——node.js，85
+- 快速编程语言——`Node.js`，85
 
-## R
+### R
 
 - 范围，识别，78
 - React
-  - node.js 与 React 的兼容性，144
-  - 使用 node.js 和 React 共同开发 Web 应用，144-145
-- read() 函数，70
-- 可读流，68-69，70
-- readFileSync()，117
-- 读取模式，68-70
-- readJSON 函数，130
-- 实时物联网数据分析，89-90
-- 实时消息协议（RTMP），59-60
+  - `Node.js`与 React 的兼容性，144
+  - 使用`Node.js`和 React 共同开发 Web 应用，144–145
+- `read()`函数，70
+- 可读流，68–69，70
+- `readFileSync()`，117
+- 读取模式，68–70
+- `readJSON`函数，130
+- 实时物联网数据分析，89–90
+- 实时消息协议（RTMP），59–60
 - RedHat OpenShift Online，28
 - Redis 缓存，113
 - 程序模式中的重复消除，129
-- 资源高效的编程语言——node.js，85
+- 资源高效的编程语言——`Node.js`，85
 - REST API，框架，25
   - Express.js，25
   - Hapi.js，26
-  - Koa.js，25-26
+  - Koa.js，25–26
   - Socket.io，26
 - REST 架构，37
-- RTE，*参见* 运行时环境
-- RTMP，*参见* 实时消息协议
+- RTE，参见运行时环境
+- RTMP，参见实时消息协议
 - 运行时环境（RTE），2
-- node.js 的运行时，7
-- 运行至完成——node.js 的单线程行为，106
+- `Node.js`的运行时，7
+- 运行至完成——`Node.js`的单线程行为，106
 
-## S
+### S
 
 - Sails，140
 - 薪资待遇，有吸引力的，137
-- 可扩展性与 node.js，9
-- 可扩展高效的编程语言——node.js，85
+- 可扩展性与`Node.js`，9
+- 可扩展高效的编程语言——`Node.js`，85
 - 定期扫描应用漏洞，126
-- Schema 设计，92-97
+- Schema 设计，92–97
 - 脚本，跟踪和日志记录，120
   - Bunyan，121
   - Morgan，121
-  - Winston，120-121
+  - Winston，120–121
 - 安全套接字层（SSL），112
-- node.js 的安全问题和建议，122
-  - 身份验证，125-126
-  - 构建安全补丁流水线，126-127
+- `Node.js`的安全问题和建议，122
+  - 身份验证，125–126
+  - 构建安全补丁流水线，126–127
   - 数据泄漏，123
   - 使用加密进行反序列化，124
-  - HTTP 响应头，124-125
+  - HTTP响应头，124–125
   - 日志和监控系统，创建，125
-  - 请求实现访问控制，123-124
+  - 请求实现访问控制，123–124
   - 定期扫描应用漏洞，126
   - 安全检查工具，利用，123
-  - XSS 攻击——验证用户输入以限制，122-123
-- node.js 的安全问题，122
+  - XSS攻击——验证用户输入以限制，122–123
+- `Node.js`的安全问题，122
 - 安全检查工具，利用，123
-- SELECT DISTINCT，119
-- SELECT 语句，118
+- `SELECT DISTINCT`，119
+- `SELECT`语句，118
 - 服务器架构，17
-  - 异步模型，17-19
+  - 异步模型，17–19
 - 服务器端身份验证，86
-- "Shebang" 行，31
-- SIGKILL，33
-- SIGTERM，信号，32
-- 单一编程语言——node.js，10
+- `"Shebang"`行，31
+- `SIGKILL`，33
+- `SIGTERM`，信号，32
+- 单一编程语言——`Node.js`，10
 - 单线程范式，43
-- Socket.io，26，36，43，44，55，99
+- `Socket.io`，26，36，43，44，55，99
   - 聊天室应用，43
-  - 前端部分，准备，45-53
-- node.js 的专有特性，50
-- 检测内存泄漏，106-107
+  - 前端部分，准备，45–53
+- `Node.js`的专有特性，50
+- 检测内存泄漏，106–107
 - 运行至完成——单线程行为，106
 - Spider Monkey JavaScript 编译器，30
-- SSL，*参见* 安全套接字层
+- SSL，参见安全套接字层
 - 字符串和字符串函数，4
-- 同步代码——仅在其中使用 try-catch，131
+- 同步代码——仅在其中使用`try-catch`，131
 - 同步编码，116，117
-- 同步函数，19-20
+- 同步函数，19–20
 
-## T
+### T
 
-- 任务运行器，110-111
+- 任务运行器，110–111
 - 技术栈，完成，58
   - HTTP 实时流媒体（HLS），59
   - MPEG-DASH，59
   - 在线视频流媒体，协议，59
-  - RTMP（实时消息协议），59-60
+  - RTMP（实时消息协议），59–60
   - WebRTC，60
 - 文本，编辑器，7
-- /video 端点，76-78
+- `/video`端点，76–78
 - 线程池，22
-- TLS，*参见* 传输层安全
+- TLS，参见传输层安全
 - Total Platform，143
-- 传输层安全（TLS），111-112
+- 传输层安全（TLS），111–112
 
-## U
+### U
 
 - Uber，90
 - Uber 类应用，91
-- UI 线框图，*参见* 用户界面线框图
-- UNDEREstimated，37-38
+- UI 线框图，参见用户界面线框图
+- `"UNDEREstimated"`，37–38
 - Unix/Linux/Mac OS X 和 SunOS 安装，7
-- node.js 作为优秀技术合作伙伴，8-9
-- node.js 的特性，8
+- `Node.js`作为优秀技术合作伙伴，8–9
+- `Node.js`的特性，8
 - GitHub wiki 页面，8
-- Windows 安装，7-8
+- Windows 安装，7–8
 - 用户界面（UI）线框图，62
 - UX 测试，63
 
-## V
+### V
 
-- V8 JavaScript 引擎，29-30
+- V8 JavaScript 引擎，29–30
   - 自动重启应用，31
   - 编译，30
   - 追求卓越，30
-  - 使用命令行运行 node.js 程序，30-31
+  - 使用命令行运行`Node.js`程序，30–31
 - 电子游戏，流媒体，64
-- videoStream，80
+- `videoStream`，80
 
-## W
+### W
 
 - Waterline，140
-- "Web 2.0" 服务，13
+- `"Web 2.0"`服务，13
 - Web 应用开发，138
-  - Adonis.js，142-143
-  - Derby.js，141-142
-  - Express.js，138-139
-  - Hapi.js 框架，141
-  - Koa Web 应用程序，140-141
+  - Adonis.js，142–143
+  - Derby.js，141–142
+  - Express.js，138–139
+  - Hapi.js框架，141
+  - Koa Web 应用程序，140–141
   - LoopBack，142
   - Meteor，139
   - Nest.js，140
   - Sails，140
   - Total Platform，143
-  - 使用 node.js 和 React 共同开发，144-145
-- 使用 node.js 的 Web 应用架构，5，17
-  - 异步函数，19
-  - 异步代码，20-21
-    - 回调，20
-    - 事件发射器，20
-  - node.js 服务器架构，17
-    - 异步模型，17-19
-  - 非阻塞 I/O 操作，21
-    - 回调，21-23
-- Web 应用框架，143-144
+  - 使用`Node.js`和 React 共同开发，144–145
+- Web 应用框架，143–144
 - WebRTC，60
 - WebSocket 消息，30
 - WebSockets，36，116，140
@@ -4860,30 +4890,30 @@ Node.js 是一个企业级的移动应用开发框架，同时支持服务器端
   - 聊天室应用和 Socket.io 教程，43
   - 定义，36
   - HTTP 与 WebSockets 对比，43
-  - 内部通信，41-43
-  - 消息结构，39-41
-  - 单点故障，38-39
-  - undeRESTimated，37-38
+  - 内部通信，41–43
+  - 消息结构，39–41
+  - 单点故障，38–39
+  - undeRESTimated，37–38
   - 工作原理，36
-- WHERE 子句，118
-- 通配符，使用，119-120
-- Windows 安装，7-8
-- Winston，120-121
-- writableEnd() 方法，71
-- 可写流，70-72
+- `WHERE`子句，118
+- 通配符，使用，119–120
+- Windows 安装，7–8
+- Winston，120–121
+- `writableEnd()`方法，71
+- 可写流，70–72
 
-## X
+### X
 
-- XSS 攻击——验证用户输入以限制，122-123
+- XSS 攻击——验证用户输入以限制，122–123
 
-## Y
+### Y
 
 - YouTube，58
 
-## Z
+### Z
 
-- ZEIT，28-29
-- Zlib.createDeflate()，74
-- Zlib.createGunzip()，74
-- Zlib.createGzip()，74
-- Zlib.createInflate()，74
+- ZEIT，28–29
+- `Zlib.createDeflate()`，74
+- `Zlib.createGunzip()`，74
+- `Zlib.createGzip()`，74
+- `Zlib.createInflate()`，74

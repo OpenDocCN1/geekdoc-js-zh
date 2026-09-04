@@ -1,26 +1,25 @@
+
 # JavaScript 基础学习：初学者指南及 JavaScript 考试与面试习题集
-
-
 
 ![](img/cover00136.jpeg)
 
-
 ## 目录
-- Javascript 教程
-- Javascript 示例
-- Javascript 注释
-- Javascript 变量
-- Javascript 数据类型
-- Javascript 运算符
+
+- JavaScript 教程
+- JavaScript 示例
+- JavaScript 注释
+- JavaScript 变量
+- JavaScript 数据类型
+- JavaScript 运算符
 - 逻辑运算符
-- Javascript If Else
-- Javascript Switch 语句
-- Javascript 循环
+- JavaScript If Else
+- JavaScript Switch 语句
+- JavaScript 循环
 - do while 循环
 - JavaScript 函数
 - 带参数的函数
-- Javascript 对象
-- Javascript 数组
+- JavaScript 对象
+- JavaScript 数组
 - JavaScript 练习册
 - 首字母大写
 - 小时和分钟
@@ -44,12 +43,18 @@
 - 乘法和除法
 - 温度转换
 
-## Javascript 教程-这节 JavaScript 课程让初学者和专家都能轻松学习 JavaScript。
+## JavaScript 教程
+
+这节 JavaScript 课程让初学者和专家都能轻松学习 JavaScript。
 
 ### 什么是 JavaScript？它是如何工作的？
+
 JavaScript 是一种用于计算机的动态编程语言。它是一种轻量级、跨平台的基于对象的脚本语言。
+
 通过 JavaScript，我们可以让网站更有活力和吸引力。
-由 Netscape 员工 Brendan Eich 于 1995 年设计。它是一种用于创建交互式网站的编程语言。它最常用的用途包括：
+
+由 Netscape 员工 `Brendan Eich` 于 1995 年设计。它是一种用于创建交互式网站的编程语言。它最常用的用途包括：
+
 - 客户端验证。
 - 动态下拉菜单。
 - 显示当前日期和时间。
@@ -62,11 +67,13 @@ JavaScript 是一种用于计算机的动态编程语言。它是一种轻量级
 - 移动端游戏和应用开发。
 
 ### JavaScript 特性
+
 - 区分大小写。
 - 它是轻量级的。
 - 基于对象的。
 
 ### JavaScript 的优点
+
 - 它是脚本语言。
 - 是在浏览器中运行的。
 - 它是动态的。
@@ -89,58 +96,9 @@ JavaScript 是一种用于计算机的动态编程语言。它是一种轻量级
 - 它是安全的。
 - 它是开源的。
 - 它是标准化的。
-- 它是。
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
--
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
 
 ### JavaScript 示例
+
 ```html
 <!DOCTYPE html>
 <html>
@@ -159,6 +117,7 @@ function myFunction() {
 ```
 
 ### JavaScript 示例
+
 ```html
 <!DOCTYPE html>
 <html>
@@ -175,6 +134,7 @@ document.write(firstName + " " + lastName);
 ```
 
 ### JavaScript 示例
+
 ```html
 <!DOCTYPE html>
 <html>
@@ -190,6 +150,7 @@ document.body.style.backgroundColor = color;
 ```
 
 ### JavaScript 示例
+
 ```html
 <!DOCTYPE html>
 <html>
@@ -205,6 +166,7 @@ document.write(fruits[0]);
 ```
 
 ### JavaScript 示例
+
 ```html
 <!DOCTYPE html>
 <html>
@@ -224,6 +186,7 @@ document.write(person.name);
 ```
 
 ### JavaScript 示例
+
 ```html
 <!DOCTYPE html>
 <html>
@@ -240,6 +203,7 @@ for (var i = 0; i < 5; i++) {
 ```
 
 ### JavaScript 示例
+
 ```html
 <!DOCTYPE html>
 <html>
@@ -258,6 +222,7 @@ while (i < 5) {
 ```
 
 ### JavaScript 示例
+
 ```html
 <!DOCTYPE html>
 <html>
@@ -275,6 +240,7 @@ document.write(add(5, 10));
 ```
 
 ### JavaScript 示例
+
 ```html
 <!DOCTYPE html>
 <html>
@@ -292,6 +258,7 @@ document.write(greet("Alice"));
 ```
 
 ### JavaScript 示例
+
 ```html
 <!DOCTYPE html>
 <html>
@@ -311,6 +278,7 @@ if (x > 5) {
 ```
 
 ### JavaScript 示例
+
 ```html
 <!DOCTYPE html>
 <html>
@@ -335,6 +303,7 @@ switch (t) {
 ```
 
 ### JavaScript 示例
+
 ```html
 <!DOCTYPE html>
 <html>
@@ -353,6 +322,7 @@ do {
 ```
 
 ### JavaScript 示例
+
 ```html
 <!DOCTYPE html>
 <html>
@@ -370,6 +340,7 @@ for (var i = 0; i < colors.length; i++) {
 ```
 
 ### JavaScript 示例
+
 ```html
 <!DOCTYPE html>
 <html>
@@ -387,6 +358,7 @@ fruits.forEach(function(fruit) {
 ```
 
 ### JavaScript 示例
+
 ```html
 <!DOCTYPE html>
 <html>
@@ -405,6 +377,7 @@ console.log(doubled);
 ```
 
 ### JavaScript 示例
+
 ```html
 <!DOCTYPE html>
 <html>
@@ -423,6 +396,7 @@ console.log(filtered);
 ```
 
 ### JavaScript 示例
+
 ```html
 <!DOCTYPE html>
 <html>
@@ -441,6 +415,7 @@ console.log(sum);
 ```
 
 ### JavaScript 示例
+
 ```html
 <!DOCTYPE html>
 <html>
@@ -456,6 +431,7 @@ console.log(str.toUpperCase()); // 输出: "HELLO WORLD"
 ```
 
 ### JavaScript 示例
+
 ```html
 <!DOCTYPE html>
 <html>
@@ -472,6 +448,7 @@ console.log(firstChar); // 输出: "J"
 ```
 
 ### JavaScript 示例
+
 ```html
 <!DOCTYPE html>
 <html>
@@ -488,6 +465,7 @@ console.log(index); // 输出: 6
 ```
 
 ### JavaScript 示例
+
 ```html
 <!DOCTYPE html>
 <html>
@@ -504,6 +482,7 @@ console.log(substring); // 输出: "Hello"
 ```
 
 ### JavaScript 示例
+
 ```html
 <!DOCTYPE html>
 <html>
@@ -520,6 +499,7 @@ console.log(replaced); // 输出: "Hello JavaScript"
 ```
 
 ### JavaScript 示例
+
 ```html
 <!DOCTYPE html>
 <html>
@@ -536,6 +516,7 @@ console.log(words); // 输出: ["Hello", "world"]
 ```
 
 ### JavaScript 示例
+
 ```html
 <!DOCTYPE html>
 <html>
@@ -554,6 +535,7 @@ console.log(user.name); // 输出: "Alice"
 ```
 
 ### JavaScript 示例
+
 ```html
 <!DOCTYPE html>
 <html>
@@ -570,6 +552,7 @@ console.log(arr); // 输出: [1, 2, 3, 4]
 ```
 
 ### JavaScript 示例
+
 ```html
 <!DOCTYPE html>
 <html>
@@ -585,7 +568,8 @@ console.log(arr); // 输出: [1, 2, 3]
 </html>
 ```
 
-### JASCRIPT 练习册
+### JavaScript 练习册
+
 ```html
 <!DOCTYPE html>
 <html>
@@ -598,6 +582,7 @@ console.log(arr); // 输出: [1, 2, 3]
 ```
 
 ### 练习 1：首字母大写
+
 ```javascript
 function capitalize(str) {
   return str.charAt(0).toUpperCase() + str.slice(1);
@@ -606,6 +591,7 @@ console.log(capitalize("hello")); // 输出: "Hello"
 ```
 
 ### 练习 2：统计元音数量
+
 ```javascript
 function countVowels(str) {
   let count = 0;
@@ -621,6 +607,7 @@ console.log(countVowels("hello")); // 输出: 2
 ```
 
 ### 练习 3：创建一个新字符串
+
 ```javascript
 function createString(str1, str2) {
   return str1 + str2;
@@ -629,6 +616,7 @@ console.log(createString("Hello ", "World")); // 输出: "Hello World"
 ```
 
 ### 练习 4：拼接两个字符串
+
 ```javascript
 function concatenateStrings(str1, str2) {
   return str1 + " " + str2;
@@ -637,6 +625,7 @@ console.log(concatenateStrings("Hello", "World")); // 输出: "Hello World"
 ```
 
 ### 练习 5：第一个非重复字符
+
 ```javascript
 function firstNonRepeatedChar(str) {
   let charCount = {};
@@ -654,6 +643,7 @@ console.log(firstNonRepeatedChar("swiss")); // 输出: "w"
 ```
 
 ### 练习 6：找到最长单词
+
 ```javascript
 function findLongestWord(str) {
   let words = str.split(" ");
@@ -669,6 +659,7 @@ console.log(findLongestWord("The quick brown fox jumps over the lazy dog")); // 
 ```
 
 ### 练习 7：统计元音个数
+
 ```javascript
 function countVowels(str) {
   let count = 0;
@@ -684,6 +675,7 @@ console.log(countVowels("JavaScript programming")); // 输出: 5
 ```
 
 ### 练习 8：检查数字是否为素数
+
 ```javascript
 function isPrime(num) {
   if (num <= 1) return false;
@@ -696,6 +688,7 @@ console.log(isPrime(11)); // 输出: true
 ```
 
 ### JavaScript: 获取数据类型
+
 ```javascript
 console.log(typeof 42); // 输出: "number"
 console.log(typeof "hello"); // 输出: "string"
@@ -705,6 +698,7 @@ console.log(typeof []); // 输出: "object"
 ```
 
 ### 寻找第二小和第二大
+
 ```javascript
 function findSecondLowestAndGreatest(arr) {
   let uniqueArr = [...new Set(arr)].sort((a, b) => a - b);
@@ -718,6 +712,7 @@ console.log(findSecondLowestAndGreatest([1, 5, 2, 8, 3, 1])); // 输出: {second
 ```
 
 ### 两个数字相加
+
 ```javascript
 function addDigits(a, b) {
   return a + b;
@@ -726,6 +721,7 @@ console.log(addDigits(5, 10)); // 输出: 15
 ```
 
 ### 闰年检查
+
 ```javascript
 function isLeapYear(year) {
   return (year % 4 === 0 && year % 100 !== 0) || (year % 400 === 0);
@@ -735,6 +731,7 @@ console.log(isLeapYear(2023)); // 输出: false
 ```
 
 ### 检查给定的正数
+
 ```javascript
 function isPositive(num) {
   return num > 0;
@@ -744,6 +741,7 @@ console.log(isPositive(-3)); // 输出: false
 ```
 
 ### 字符串以 'Java' 开头 - 检查
+
 ```javascript
 function startsWithJava(str) {
   return str.startsWith("Java");
@@ -753,6 +751,7 @@ console.log(startsWithJava("Python")); // 输出: false
 ```
 
 ### 两个给定的整数值 - 检查
+
 ```javascript
 function areIntegers(a, b) {
   return Number.isInteger(a) && Number.isInteger(b);
@@ -762,6 +761,7 @@ console.log(areIntegers(5, 10.5)); // 输出: false
 ```
 
 ### 寻找接近 100 的值
+
 ```javascript
 function nearestTo100(num) {
   if (Math.abs(100 - num) <= 49) {
@@ -775,6 +775,7 @@ console.log(nearestTo100(150)); // 输出: 100
 ```
 
 ### 正数 - 检查
+
 ```javascript
 function isPositive(num) {
   return num > 0;
@@ -783,7 +784,9 @@ console.log(isPositive(10)); // 输出: true
 ```
 
 ### 字符串以 'Java' 开头 - 检查
+
 (此处与上方重复，保持逻辑一致)
+
 ```javascript
 function startsWithJava(str) {
   return str.startsWith("Java");
@@ -792,6 +795,7 @@ console.log(startsWithJava("JavaScript")); // 输出: true
 ```
 
 ### 乘法和除法
+
 ```javascript
 function multiply(a, b) {
   return a * b;
@@ -805,6 +809,7 @@ console.log(divide(10, 2)); // 输出: 5
 ```
 
 ### 温度转换
+
 ```javascript
 function celsiusToFahrenheit(c) {
   return (c * 9/5) + 32;
@@ -816,9 +821,6 @@ console.log(celsiusToFahrenheit(25)); // 输出: 77
 console.log(fahrenheitToCelsius(77)); // 输出: 25
 ```
 
-
-
-
 ```html
 <script>  
   /* 这是一个多行注释。  
@@ -826,7 +828,7 @@ console.log(fahrenheitToCelsius(77)); // 输出: 25
   document.write ("Example of JavaScript multi line comment");  
 </script>  
 </body>  
-</html
+</html>
 ```
 
 ## JavaScript 变量
@@ -837,15 +839,17 @@ console.log(fahrenheitToCelsius(77)); // 输出: 25
 var name;
 ```
 
-变量有 2  类型：
+变量有 2 类型：
 
 1. 局部变量
 2. 全局变量
 
 ### 局部变量
+
 它在函数或块内部声明。
 
-### 示例
+#### 示例
+
 ```html
 <script>  
 function abc(){  
@@ -854,9 +858,11 @@ function abc(){
 ```
 
 ### 全局变量
+
 它具有全局作用域，意味着可以在 JavaScript 代码的任何地方定义。在函数外部声明的变量。
 
-### 示例
+#### 示例
+
 ```html
 <!DOCTYPE html>  
 <html>  
@@ -877,15 +883,19 @@ b();
 ```
 
 ### 在 JavaScript 中，在函数内部声明全局变量
+
 若要在函数内部声明 JavaScript 全局变量，我们必须使用 `window` 对象。
 
-### 示例
+#### 示例
+
 ```javascript
 window.value=90;
 ```
+
 现在可以在任何函数内部声明它，并从任何函数内部访问。
 
-### 示例
+#### 示例
+
 ```html
 <!DOCTYPE html>  
 <html>  
@@ -913,19 +923,24 @@ b();
 
 由于 JavaScript 是动态类型语言，我们不需要定义变量的类型，因为 JavaScript 引擎会动态使用它。在这种情况下，使用 `var` 指定数据类型。它可以存储任何类型的值，包括数字、字符串和对象。
 
-### 示例
+#### 示例
+
 ```javascript
-var a=Ram; //String  
+var a="Ram"; //String  
 var b=20; //Number  
 var x= {FirstName:'Ram', lastName:'Doe'}; //Object
 ```
 
 ### JavaScript - 原始数据类型
+
 在 JavaScript 中，有五种不同的原始数据类型。
+
 ![](img/image00101.jpeg)
 
 ### JavaScript 非原始数据类型
+
 有 3 种非原始数据类型如下：
+
 ![](img/image00102.jpeg)
 
 ## JavaScript 运算符
@@ -942,23 +957,33 @@ JavaScript 运算符如下：
 6. 特殊运算符。
 
 ### 算术运算符
+
 我们在算术运算符对操作数使用算术操作。
+
 ![](img/image00103.jpeg)
 
 ### 比较运算符
+
 在比较运算符中，比较两个操作数 `A` 和 `B`。
+
 ![](img/image00104.jpeg)
 
 ### 赋值运算符
+
 JavaScript 支持以下 - 赋值运算符。
+
 ![](img/image00105.jpeg)
 
 ### 位运算符
+
 JavaScript 支持以下 - 位运算符：
+
 ![](img/image00106.jpeg)
 
 ### 逻辑运算符
+
 布尔值通常与逻辑运算符配合使用。以下是 逻辑运算符-
+
 ![](img/image00107.jpeg)
 
 ## JavaScript If Else
@@ -970,6 +995,7 @@ JavaScript 中的条件语句用于根据标准执行不同的活动。在 JavaS
 3. `if else if` 语句。
 
 ### if 语句
+
 如果条件为真或假，JavaScript 中使用 `if` 语句来运行函数。
 
 ```javascript
@@ -977,9 +1003,11 @@ if (condition){ //
   // 等待评估的内容
 }
 ```
+
 ![](img/image0108.jpeg)
 
 #### 示例:
+
 ```html
 <!DOCTYPE html>  
 <html>  
@@ -993,9 +1021,11 @@ if(x>30){
 </body>  
 </html>
 ```
+
 输出：Value of x is greater than 30
 
 ### if else 语句
+
 如果条件为真或假，使用 if else 语句。
 
 ```javascript
@@ -1005,9 +1035,11 @@ if(condition) {
   // 语句组
 }
 ```
+
 ![](img/image109.jpeg)
 
 #### 示例:
+
 ```html
 <!DOCTYPE html>  
 <html>  
@@ -1021,9 +1053,11 @@ if(x%2==0){
 </body>  
 </html>
 ```
+
 输出：x is even
 
 ### if else if
+
 如果条件为真或假，使用 if else 语句。
 
 ```javascript
@@ -1037,6 +1071,7 @@ if(condition) {
 ```
 
 #### 示例:
+
 ```html
 <!DOCTYPE html>  
 <html>  
@@ -1054,14 +1089,17 @@ if(x>30){
 </body>  
 </html>
 ```
+
 输出：value of x is greater than 30
 
 ## JavaScript Switch 语句
 
 JavaScript 中的 `switch` 语句用于在多个条件下执行单个代码。它与 `else if` 语句相同，但更容易记忆。
+
 ![](img/image0110.jpeg)
 
 #### 语法：
+
 ```javascript
 switch (expression) {
   case 1:语句(s)
@@ -1074,9 +1112,11 @@ switch (expression) {
   default:语句(s)
 }
 ```
+
 **注意：** 在 switch-case 语句中，`break` 语句非常重要。
 
 ### 示例
+
 ```html
 <!DOCTYPE html>  
 <html>  
@@ -1102,6 +1142,7 @@ document.write(result);
 </body>  
 </html>
 ```
+
 输出：B Grade
 
 ## JavaScript 循环
@@ -1115,10 +1156,13 @@ document.write(result);
 3. do-while 循环
 
 ### while 循环
+
 代码在 while 循环中执行直到表达式为真。如果迭代次数未知，应使用它。
+
 ![](img/image00111.jpeg)
 
 #### 语法：
+
 ```javascript
 while (condition){
   如果表达式为真则执行语句(s)
@@ -1126,6 +1170,7 @@ while (condition){
 ```
 
 ### 示例
+
 ```html
 <!DOCTYPE html>  
 <html>  
@@ -1140,7 +1185,9 @@ while (i<=10) {
 </body>  
 </html>
 ```
+
 输出：
+
 1
 2
 3
@@ -1154,19 +1201,16 @@ while (i<=10) {
 
 ### for 循环
 
-
-
-
-
 它初始化了变量，检查了条件，然后在 `for` 循环中递增或减少了值。
 
 它运行固定的时间。
 
 ![Image 5.jpg](img/image00112.jpeg)
 
-## for
+### for
 
-### 语法
+#### 语法
+
 ```javascript
 for (initialization; condition; increment)
 {
@@ -1174,7 +1218,8 @@ for (initialization; condition; increment)
 }
 ```
 
-### 示例
+#### 示例
+
 ```html
 <!DOCTYPE html>
 <html>
@@ -1189,7 +1234,8 @@ for (i=1; i<=12; i++)
 </html>
 ```
 
-### 输出
+#### 输出
+
 1
 2
 3
@@ -1204,11 +1250,13 @@ for (i=1; i<=12; i++)
 12
 
 ### do while 循环
+
 `while` 循环会无限执行项目，而 `do while` 循环只执行一次代码，无论条件是真还是假。当我们需要至少执行一次语句块时，我们使用 `do-while`。
 
 ![Image 6.jpg](img/image00113.jpeg)
 
-### 语法
+#### 语法
+
 ```javascript
 do{
   // 要执行的代码
@@ -1216,7 +1264,8 @@ do{
 } while (condition);
 ```
 
-### 示例
+#### 示例
+
 ```html
 <!DOCTYPE html>
 <html>
@@ -1232,7 +1281,8 @@ do{
 </html>
 ```
 
-### 输出
+#### 输出
+
 11
 12
 13
@@ -1240,15 +1290,18 @@ do{
 15
 
 ## JavaScript 函数
+
 在 `<script>...</script>` 标签内定义新函数的能力是 JavaScript 的一个重要特性。在 JavaScript 中，使用 `function` 关键字来声明函数。
 
 为了重用代码，我们多次调用该 JavaScript 方法。
 
 ### 优点 - JavaScript 函数
+
 1. **代码可重用性**：我们多次使用相同的方法来节省时间和代码量。
 2. **更少的代码**：结果我们的应用程序被压缩了。当我们执行例行任务时，不需要编写大量的代码。
 
 ### 语法
+
 ```javascript
 function 函数名(参数或无参数)
 {
@@ -1257,6 +1310,7 @@ function 函数名(参数或无参数)
 ```
 
 ### 示例
+
 ```html
 <!DOCTYPE html>
 <html>
@@ -1272,11 +1326,14 @@ function msg()
 </html>
 ```
 
-### 输出
+#### 输出
+
 Hello world!
 
 ### 带参数的函数
+
 通过传递参数调用函数。
+
 ```html
 <!DOCTYPE html>
 <html>
@@ -1293,10 +1350,13 @@ function getcube(number)
 </body>
 </html>
 ```
-### 输出
+
+#### 输出
+
 27
 
 ### 示例
+
 ```html
 <!DOCTYPE html>
 <html>
@@ -1316,7 +1376,9 @@ function getname()
 ```
 
 ### 带返回值的函数
+
 调用返回值的函数并在程序中使用它。
+
 ```html
 <!DOCTYPE html>
 <html>
@@ -1333,13 +1395,17 @@ document.write(getInfo());
 </body>
 </html>
 ```
-### 输出
+
+#### 输出
+
 Hello Raj! How are you?
 
 ## Function() 构造函数
+
 函数语句不仅用于定义函数，还可以使用 `Function()` 构造函数和 `new` 运算符来动态定义函数。
 
 ### 语法
+
 ```javascript
 <script>
 var name = new Function(Arg1, Arg2..., "函数体内容");
@@ -1347,6 +1413,7 @@ var name = new Function(Arg1, Arg2..., "函数体内容");
 ```
 
 ### 示例
+
 ```html
 <!DOCTYPE html>
 <html>
@@ -1371,10 +1438,13 @@ function secondFunction(){
 ```
 
 ## 函数字面量
+
 函数字面量的概念（构造函数的另一种方式）在 JavaScript 1.2 中引入。它是一个定义无名函数的表达式。
+
 函数字面量的语法与函数语句相似，区别在于它是作为表达式而不是语句使用的，并且不需要函数名。
 
 ### 语法
+
 ```javascript
 <script>
 var name = function (参数列表){
@@ -1384,6 +1454,7 @@ var name = function (参数列表){
 ```
 
 ### 示例
+
 ```html
 <!DOCTYPE html>
 <html>
@@ -1408,18 +1479,23 @@ function secondFunction(){
 ```
 
 ## JavaScript 对象
+
 对象是状态和行为的实体。JavaScript 是一种关注对象的脚本语言。尽管它是基于模板而非类的，但它允许我们直接创建对象。
 
 ### 语法 - 添加属性 - 添加对象
+
 ```javascript
 对象名.属性名 = 属性值
 ```
+
 我们使用 `write()` 方法向文档写入对象内容。
+
 ```javascript
 document.write("Hello world")
 ```
 
 ### 示例 以下示例显示了如何创建一个对象。
+
 ```html
 <!DOCTYPE html>
 <html>
@@ -1439,11 +1515,14 @@ document.write("书籍作者为：" + book.author + "<br>");
 </body>
 </html>
 ```
-### 输出
+
+#### 输出
+
 书籍名称为：JavaScript 入门
 书籍作者为：Chetan Bharti
 
 ### 对象的方法
+
 ```html
 <!DOCTYPE html>
 <html>
@@ -1473,19 +1552,17 @@ document.write("书籍价格为：" + myBook.price + "<br>");
 ```
 
 ## JavaScript 数组
+
 数组用于在单元或内存区域表示元素集合。
 
 进入数组的每个元素将以唯一索引（从零开始）存储在数组中。我们可以通过索引来存储数据。
 
 在 JavaScript 中，我们必须使用 `new` 关键字来声明数组。我们使用 `new Array` 来构造数组 (n)。
 
-
-
-
-
 数组中的槽位数量由 `n` 表示。
 
 ### 语法
+
 ```javascript
 myarray = new array(n);
 ```
@@ -1493,6 +1570,7 @@ myarray = new array(n);
 注意：当我们在 JavaScript 中构建数组而不指定大时，我们会创建一个大小为零的数组对象。
 
 ### 示例
+
 ```html
 <!DOCTYPE html>
 <html>
@@ -1512,13 +1590,15 @@ for (i=0; i<emp.length; i++) {
 </html>
 ```
 
-### 输出
+#### 输出
+
 Ajay
 Abhay
 Arun
 Shipra
 
 ### 示例
+
 ```html
 <!DOCTYPE html>
 <html>
@@ -1546,13 +1626,17 @@ alert(sum)
 ```
 
 ### 数组中使用的函数
+
 ![](img/image00114.jpeg)
 
-## JAVASCRIPT 笔记本
+## JavaScript 笔记本
+
 ### 每个单词的首字母大写
 
 #### 针对给定字符串
+
 ### HTML 代码
+
 ```html
 <!DOCTYPE html>
 <html>
@@ -1564,7 +1648,9 @@ alert(sum)
 <body></body>
 </html>
 ```
-### JAVASCRIPT 代码
+
+### JavaScript 代码
+
 ```javascript
 function capital_letter(str) {
   str = str.split(" ");
@@ -1574,12 +1660,17 @@ function capital_letter(str) {
   return str.join(" ");
 }
 ```
+
 ### ![](img/image00116.jpeg)
+
 ### 输出
+
 输出：![](img/image00117.jpeg)
 
 ### 小时和分钟
+
 ### HTML 代码
+
 ```html
 <!DOCTYPE html>
 <html>
@@ -1591,7 +1682,9 @@ function capital_letter(str) {
 <body></body>
 </html>
 ```
-### JAVASCRIPT 代码
+
+### JavaScript 代码
+
 ```javascript
 function time_convert(num) {
   var hours = Math.floor(num / 60); 
@@ -1602,13 +1695,17 @@ console.log(time_convert(71));
 console.log(time_convert(450));
 console.log(time_convert(1441));
 ```
-### 输出
+
+#### 输出
+
 1:11
 7:30
 24:1
 
 ### 统计元音
+
 ### HTML 代码
+
 ```html
 <!DOCTYPE html>
 <html>
@@ -1620,7 +1717,9 @@ console.log(time_convert(1441));
 <body></body>
 </html>
 ```
-### JAVASCRIPT 代码
+
+### JavaScript 代码
+
 ```javascript
 function vowel_Count(str) {
   return str.replace(/[^aeiou]/g, "").length;
@@ -1628,12 +1727,16 @@ function vowel_Count(str) {
 console.log(vowel_Count("Python"));
 console.log(vowel_Count("html.com"));
 ```
+
 #### 输出：
+
 1
 5
 
 ### 创建新字符串
+
 ### HTML 代码
+
 ```html
 <!DOCTYPE html>
 <html>
@@ -1645,7 +1748,9 @@ console.log(vowel_Count("html.com"));
 <body></body>
 </html>
 ```
-### JAVASCRIPT 代码
+
+### JavaScript 代码
+
 ```javascript
 function without_first_end(str) {
   return str.substring(1, str.length - 1);
@@ -1654,12 +1759,16 @@ console.log(without_first_end('JavaScript'));
 console.log(without_first_end('JS'));
 console.log(without_first_end('PHP'));
 ```
+
 #### 输出：
+
 avaScript
 H
 
 ### 合并两个字符串并排除第一个字符
+
 ### HTML 代码
+
 ```html
 <!DOCTYPE html>
 <html>
@@ -1671,7 +1780,9 @@ H
 <body></body>
 </html>
 ```
-### JAVASCRIPT 代码
+
+### JavaScript 代码
+
 ```javascript
 function concatenate(str1, str2) {
   str1 = str1.substring(1, str1.length);
@@ -1679,10 +1790,13 @@ function concatenate(str1, str2) {
   return str1 + str2; // 修正：原文逻辑不完整，此处按原意翻译
 }
 ```
+
 *(注：原文代码片段似乎存在缺失，此处已按代码结构翻译)*
 
 ### 重复的字符
+
 ### HTML 代码
+
 ```html
 <!DOCTYPE html>
 <html>
@@ -1694,7 +1808,9 @@ function concatenate(str1, str2) {
 <body></body>
 </html>
 ```
-### JAVASCRIPT 代码
+
+### JavaScript 代码
+
 ```javascript
 function find_Repeated(str) {
   var arra1 = str.split('');
@@ -1706,10 +1822,13 @@ function find_Repeated(str) {
   }
 }
 ```
+
 *(注：原文代码不完整)*
 
 ### 查找字符串中最长的单词
+
 ### HTML 代码
+
 ```html
 <!DOCTYPE html>
 <html>
@@ -1719,7 +1838,9 @@ function find_Repeated(str) {
   <title>查找最长的单词</title>
 </head>
 ```
-### JAVASCRIPT 代码
+
+### JavaScript 代码
+
 ```javascript
 function find_longest_word(str) {
   var arra1 = str.split(' ');
@@ -1733,10 +1854,6 @@ function find_longest_word(str) {
 }
 ```
 
-
-
-
-
 ```javascript
 return typeof value;
 }
@@ -1747,6 +1864,7 @@ console.log(detect_data_type(false));
 ```
 
 ### 输出
+
 number
 string
 Boolean
@@ -1756,6 +1874,7 @@ Boolean
 ![](img/image0012.jpeg)
 
 ### HTML 代码
+
 ```html
 <!DOCTYPE html>
 <html>
@@ -1768,7 +1887,8 @@ Boolean
 </html>
 ```
 
-### JAVASCRIPT 代码
+### JavaScript 代码
+
 ```javascript
 function Second_Greatest_Lowest(arr_num) {
   arr_num.sort(function(x,y) {
@@ -1787,7 +1907,8 @@ function Second_Greatest_Lowest(arr_num) {
 console.log(Second_Greatest_Lowest([1,2,3,4,5]));
 ```
 
-### 输出
+#### 输出
+
 2,4
 
 ### 计算给定正整数的两个数字之和
@@ -1795,6 +1916,7 @@ console.log(Second_Greatest_Lowest([1,2,3,4,5]));
 ### 长度为二
 
 ### HTML 代码
+
 ```html
 <!DOCTYPE html>
 <html>
@@ -1808,7 +1930,8 @@ console.log(Second_Greatest_Lowest([1,2,3,4,5]));
 </html>
 ```
 
-### JAVASCRIPT 代码
+### JavaScript 代码
+
 ```javascript
 function add_two_digits(n) {
   return n % 10 + Math.floor(n / 10);
@@ -1817,13 +1940,15 @@ console.log(add_two_digits(25))
 console.log(add_two_digits(50))
 ```
 
-### 输出:
+#### 输出:
+
 7
 5
 
 ### 闰年检查
 
 ### HTML 代码
+
 ```html
 <!DOCTYPE html>
 <html>
@@ -1836,7 +1961,8 @@ console.log(add_two_digits(50))
 </html>
 ```
 
-### JAVASCRIPT 代码
+### JavaScript 代码
+
 ```javascript
 function leapyear(year) {
   return (year % 100 === 0) ? (year % 400 === 0) : (year % 4 === 0);
@@ -1848,7 +1974,8 @@ console.log(leapyear(1800));
 console.log(leapyear(100));
 ```
 
-### 输出
+#### 输出
+
 true
 true
 false
@@ -1860,6 +1987,7 @@ false
 ### ![](img/image00125.jpeg)
 
 ### HTML 代码
+
 ```html
 <!DOCTYPE html>
 <html>
@@ -1873,7 +2001,8 @@ false
 </html>
 ```
 
-### JAVASCRIPT 代码
+### JavaScript 代码
+
 ```javascript
 function test37(x) {
   if (x % 3 == 0 || x % 7 == 0) {
@@ -1889,7 +2018,8 @@ console.log(test37(10));
 console.log(test37(11));
 ```
 
-### 输出:
+#### 输出:
+
 true
 true
 false
@@ -1898,6 +2028,7 @@ false
 ### 字符串以 'Java' 开头 - 是 true 否则返回 false
 
 ### HTML 代码
+
 ```html
 <!DOCTYPE html>
 <html>
@@ -1911,7 +2042,8 @@ false
 </html>
 ```
 
-### JAVASCRIPT 代码
+### JavaScript 代码
+
 ```javascript
 function start_spec_str(str) {
   if (str.length < 4) {
@@ -1930,7 +2062,8 @@ console.log(start_spec_str("Java"));
 console.log(start_spec_str("Python"));
 ```
 
-### 输出:
+#### 输出:
+
 true
 true
 false
@@ -1940,6 +2073,7 @@ false
 ### ![](img/image00126.jpeg)
 
 ### HTML 代码
+
 ```html
 <!DOCTYPE html>
 <html>
@@ -1953,7 +2087,8 @@ false
 </html>
 ```
 
-### JAVASCRIPT 代码
+### JavaScript 代码
+
 ```javascript
 function check_numbers(x, y) {
   if ((x >= 50 && x <= 99) || (y >= 50 && y <= 99)) {
@@ -1968,7 +2103,8 @@ console.log(check_numbers(52, 80));
 console.log(check_numbers(15, 99));
 ```
 
-### 输出
+#### 输出
+
 false
 true
 true
@@ -1976,6 +2112,7 @@ true
 ### 寻找最接近 100 的数值
 
 ### HTML 代码
+
 ```html
 <!DOCTYPE html>
 <html>
@@ -1989,7 +2126,8 @@ true
 </html>
 ```
 
-### JAVASCRIPT 代码
+### JavaScript 代码
+
 ```javascript
 function near_100(x, y) {
   if (x != y) {
@@ -2011,7 +2149,8 @@ console.log(near_100(-90, -89));
 console.log(near_100(90, 90));
 ```
 
-### 输出:
+#### 输出:
+
 90
 -89
 false
@@ -2021,6 +2160,7 @@ false
 ### ![](img/image00129.jpeg)
 
 ### HTML 代码
+
 ```html
 <!DOCTYPE html>
 <html>
@@ -2034,7 +2174,8 @@ false
 </html>
 ```
 
-### JAVASCRIPT 代码
+### JavaScript 代码
+
 ```javascript
 function test37(x) {
   if (x % 3 == 0 || x % 7 == 0) {
@@ -2050,7 +2191,8 @@ console.log(test37(10));
 console.log(test37(11));
 ```
 
-### 输出:
+#### 输出:
+
 true
 true
 false
@@ -2059,6 +2201,7 @@ false
 ### 两个数字的乘法和除法
 
 ### HTML 代码
+
 ```html
 <!DOCTYPE html>
 <html>
@@ -2083,7 +2226,8 @@ false
 </html>
 ```
 
-### JAVASCRIPT 代码
+### JavaScript 代码
+
 ```javascript
 function multiplyBy() {
   num1 = document.getElementById("firstNumber").value;
@@ -2091,10 +2235,6 @@ function multiplyBy() {
   document.getElementById("result").innerHTML = num1 * num2;
 }
 ```
-
-
-
-
 
 ### function divideBy()
 
@@ -2106,7 +2246,8 @@ function divideBy() {
 }
 ```
 
-### 输出
+#### 输出
+
 ![](img/image00133.jpeg)
 
 ### 转换温度
@@ -2114,19 +2255,21 @@ function divideBy() {
 ### ![](img/image00134.jpeg)
 
 ### HTML 代码
+
 ```html
 <!DOCTYPE html>
-<html
-  <head>
+<html>
+<head>
   <meta charset="utf-8">
   <title>编写一个 JavaScript 程序，在摄氏度和华氏度之间进行温度转换</title>
-  </head>
-  <body>
+</head>
+<body>
 </body>
-</</html>
+</html>
 ```
 
-### JAVASCRIPT 代码
+### JavaScript 代码
+
 ```javascript
 function cToF(celsius) {
   var cTemp = celsius;
@@ -2144,6 +2287,6 @@ cToF(60);
 fToC(45);
 ```
 
-### 输出
-![](img/image00135.jpeg)
+#### 输出
 
+![](img/image00135.jpeg)

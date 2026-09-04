@@ -1,23 +1,9 @@
+
 # Svelte：初学者指南
-
-
 
 ![](img/svelte1.jpg)
 
-
-
-
-
-
-
-
-
-
-
 ![SitePoint logo](img/sitepoint-logo-2012.png)
-
-
-
 
 ## 关于 SitePoint
 
@@ -25,13 +11,13 @@ SitePoint 专门为 Web 专业人士编写有趣、实用且易于理解的内�
 
 ## 关于作者
 
-Simon 对 Web 前充满热情。他在 `Angular` 和 `Svelte` 方面拥有专家知识，并精通其他框架，曾领导多个项目取得成功。他还是 Svelte 维护团队的一员，他最重要的贡献是了 `VS Code` 扩展。
+Simon 对 Web 前充满热情。他在`Angular`和`Svelte`方面拥有专家知识，并精通其他框架，曾领导多个项目取得成功。他还是 Svelte 维护团队的一员，他最重要的贡献是了`VS Code`扩展。
 
 # 前言
 
 ## 谁应该读这本书？
 
-本书面向具有 `JavaScript` 经验的开发者。如果你已经使用过如 `React` 等 JavaScript 框架，你会发现这本书很容易读，但它也适合没有此类框架经验的读者。
+本书面向具有`JavaScript`经验的开发者。如果你已经使用过如`React`等 JavaScript 框架，你会发现这本书很容易读，但它也适合没有此类框架经验的读者。
 
 ## 使用的约定
 
@@ -68,7 +54,7 @@ Simon 对 Web 前充满热情。他在 `Angular` 和 `Svelte` 方面拥有专家
 ## 补充材料
 
 * [`www.sitepoint.com/community/`](https://www.sitepoint.com/community/) 是 SitePoint 的论坛，用于解决任何棘手问题提供帮助。
-* **books@sitepoint.com** 是我们的邮箱地址，如果你需要联系我们报告问题或出于其他原因。
+* `books@sitepoint.com` 是我们的邮箱地址，如果你需要联系我们报告问题或出于其他原因。
 
 # 第 1 章：开始使用 Svelte
 
@@ -82,7 +68,7 @@ Svelte 以其较小的包体积、卓越的性能和易用性吸引了开发者�
 
 首先，简单介绍一下 Svelte 的背景。虽然它直到 2020 年初才进入主流视野，但 Svelte 已经存在了很久。
 
-第一次提交到 GitHub 是 2016 年底。它的创建者是 Rich Harris，一位开源魔法师，他最著名的其他发明是现代打包器 `Rollup`。当时，Rich Harris 在新闻杂志《英国卫报报》（*The Guardian*）担任图形编辑。他的日常工作是为网站创建交互式可视化图形，他希望有一种工具，可以在不牺牲包体积或速度的情况下轻松编写这些内容。同时，他希望它是易于上手的，以便其他技术不太精通的同事能够快速创建可视化。
+第一次提交到 GitHub 是 2016 年底。它的创建者是 Rich Harris，一位开源魔法师，他最著名的其他发明是现代打包器`Rollup`。当时，Rich Harris 在新闻杂志《英国卫报报》（*The Guardian*）担任图形编辑。他的日常工作是为网站创建交互式可视化图形，他希望有一种工具，可以在不牺牲包体积或速度的情况下轻松编写这些内容。同时，他希望它是易于上手的，以便其他技术不太精通的同事能够快速创建可视化。
 
 由于这些需求，Svelte 诞生了。从新闻室开始，Svelte 迅速在开源社区中聚集了一小群粉丝。但直到 2019 年 4 月，Svelte 才真正为人所知。该日期标志着版本 3 的发布，这是一个完全重写的版本，专注于开发者体验和易用性。从那时起，Svelte 的人气增加了，维护者加入了，Rich Harris 甚至加入了 Vercel 全职开发 Svelte。
 
@@ -94,7 +80,7 @@ Svelte 以其较小的包体积、卓越的性能和易用性吸引了开发者�
 
 我们将从项目模板脚手搭建项目。我们将使用官方的 [Svelte 模板](https://github.com/sveltejs/template/)。其他替代方案是使用 [基于 Vite 的模板](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-svelte) 或使用 [SvelteKit](https://kit.svelte.dev/)（构建在 Svelte 之上的框架，但在本教程中我们将保持最简单）。
 
-下载模板后，进入其文件夹并运行 `npm install`，下载我们需要的所有包。然后切换到 `App.svelte`，我们将内容替换为纯 HTML 版本，以布局我们想要的视觉效果：
+下载模板后，进入其文件夹并运行`npm install`，下载我们需要的所有包。然后切换到`App.svelte`，我们将内容替换为纯 HTML 版本，以布局我们想要的视觉效果：
 
 ```html
 <h4>添加书籍</h4>
@@ -105,7 +91,6 @@ Svelte 以其较小的包体积、卓越的性能和易用性吸引了开发者�
 </ul>
 ```
 
-```html
 > 我们可以直接在 Svelte 文件的顶层编写上述代码；不需要添加任何包装元素。Svelte 的语法是 HTML 的超集，因此任何在 HTML 文件中有效的代码在 Svelte 文件中都是有效的。
 
 现在的问题是如何将动态部分加入其中。我们首先在脚本中添加一个静态列表，并通过循环进行渲染：
@@ -119,6 +104,7 @@ Svelte 以其较小的包体积、卓越的性能和易用性吸引了开发者�
   <h4>添加书籍</h4>
   <input type="text" />
 </label>
+
 <h4>我的书籍</h4>
 <ul>
   {#each books as book}
@@ -127,18 +113,15 @@ Svelte 以其较小的包体积、卓越的性能和易用性吸引了开发者�
 </ul>
 ```
 
-
-
-
-我们添加了一个 `script` 标签，并在其中放入了与组件相关的 JavaScript 逻辑。该逻辑会在组件每次挂载时执行。我们还使用特殊的 Svelte 语法增强了 HTML，创建一个循环并打印每本书的标题。如你所见，Svelte 的控制流块有独特的语法，与 Vue 或 Angular 不同，后者通过特殊属性的形式添加此类功能。这使得代码更具读性，因为你可以更容易发现它。它意味着如果你想在控制流块中包含多个顶层级项，就不需要创建包装元素了。
+我们添加了一个`script`标签，并在其中放入了与组件相关的 JavaScript 逻辑。该逻辑会在组件每次挂载时执行。我们还使用特殊的 Svelte 语法增强了 HTML，创建一个循环并打印每本书的标题。如你所见，Svelte 的控制流块有独特的语法，与 Vue 或 Angular 不同，后者通过特殊属性的形式添加此类功能。这使得代码更具读性，因为你可以更容易发现它。它意味着如果你想在控制流块中包含多个顶层级项，就不需要创建包装元素了。
 
 书的标题通过用大括号包裹变量来输出。通常情况下，每当你在模板中遇到大括号时，你就知道自己正在进入与 Svelte 相关的内容。我们将在本系列教程的第 2 部分更详细介绍模板语法。
 
 ## 响应用户输入
 
-我们现在可以渲染由 `books` 变量定义的任意书名列表。那么添加新书呢？要做到这一点，我们需要增强 `<script>` 标签中的逻辑，并将其与 `<input>` 元素连接：
+我们现在可以渲染由`books`变量定义的任意书名列表。那么添加新书呢？要做到这一点，我们需要增强`<script>`标签中的逻辑，并将其与`<input>`元素连接：
 
-```
+```html
 <script>
   let books = ['Learning Svelte', 'The Zen of Cooking Tea'];
   let newBook = '';
@@ -155,6 +138,7 @@ Svelte 以其较小的包体积、卓越的性能和易用性吸引了开发者�
   <h4>Add Book</h4>
   <input type="text" bind:value={newBook} on:keydown={addBook} />
 </label>
+
 <h4>My Books</h4>
 <ul>
   {#each books as book}
@@ -163,15 +147,15 @@ Svelte 以其较小的包体积、卓越的性能和易用性吸引了开发者�
 </ul>
 ```
 
-我们添加了一个名为 `newBook` 的新变量，它应该镜像输入值。为了做到这一点，我们通过编写 `bind:value={newBook}` 将其绑定到 `<input>`。这建立了双向绑定，因此每当用户向 `<input>` 输入文本时，`newBook` 就会更新；如果 `newBook` 在 `<script>` 标签中更新，`<input>` 的显示值就会改变。我们可以使用简单的动态属性实现同样的功能，但这种方法节省了一些代码——你会在 Svelte 中经常遇到这种思维模式。
+我们添加了一个名为`newBook`的新变量，它应该镜像输入值。为了做到这一点，我们通过编写`bind:value={newBook}`将其绑定到`<input>`。这建立了双向绑定，因此每当用户向`<input>`输入文本时，`newBook`就会更新；如果`newBook`在`<script>`标签中更新，`<input>`的显示值就会改变。我们可以使用简单的动态属性实现同样的功能，但这种方法节省了一些代码——你会在 Svelte 中经常遇到这种思维模式。
 
-当用户按下 `enter` 键时，我们想要将新标题添加到列表中。为了做到这一点，我们添加了一个 DOM 事件监听器。要告诉 Svelte 挂钩该事件，我们只需要在 `on` 和事件名称部分之间添加一个冒号——在这种情况下是 `on:keydown`。之后，我们使用大括号并将函数名放在其中。每次事件触发时都会调用该函数。关于此模板语法的更多信息可以在本系列教程的第 2 部分找到。
+当用户按下`enter`键时，我们想要将新标题添加到列表中。为了做到这一点，我们添加了一个 DOM 事件监听器。要告诉 Svelte 挂钩该事件，我们只需要在`on`和事件名称部分之间添加一个冒号——在这种情况下是`on:keydown`。之后，我们使用大括号并将函数名放在其中。每次事件触发时都会调用该函数。关于此模板语法的更多信息可以在本系列教程的第 2 部分找到。
 
-这种情况下调用的函数是 `addBook`，在其中我们检查键盘事件，如果用户确实按了 `enter`，我们就更新 `books` 变量。注意，这里没有 Angular 或 Vue 2 中那样的 `this` 上下文，没有 Vue 3 那样的特殊值对象，也没有 React 中的 `setState`。在在这种情况下，Svelte 不需要额外的语法来感知变量已更新。这听起来可能像魔法，但同时也像“纯粹且简单的 JavaScript”。
+这种情况下调用的函数是`addBook`，在其中我们检查键盘事件，如果用户确实按了`enter`，我们就更新`books`变量。注意，这里没有 Angular 或 Vue 2 中那样的`this`上下文，没有 Vue 3 那样的特殊值对象，也没有 React 中的`setState`。在在这种情况下，Svelte 不需要额外的语法来感知变量已更新。这听起来可能像魔法，但同时也像“纯粹且简单的 JavaScript”。
 
-要理解 Svelte 是如何实现这一点的，我们需要查看其内部机制。Svelte 实际上对 `.svelte` 文件做了什么，以及在什么时候处理它？答案是：Svelte 实际上是一个编译器！在你的代码加载到浏览器之前，它已经完成了大部分工作。Svelte 解析代码并将其转换为普通的 JavaScript。在解析过程中，它能够看到如 `newBook` 之类的变量被用于模板中，因此对它的赋值将导致重新渲染。因此，编译输出会将这些赋值封装在 `$$invalidate` 函数的调用中，该函数将为下一次浏览器绘制调度该组件的重新渲染。这就是 Svelte 卓越性能的秘密：它预先知道哪些部分可能会触发重新渲染，只需要在这些精确的位置执行工作，手术式地更新 DOM。这也是 Svelte 应用包大小如此之小的原因：所有不需要的内容都不会包含在输出中，因此 Svelte 可以舍弃其微小运行时中每个不需要的部分。一个 Svelte Hello World! 应用的包大小仅为 2.5KB！
+要理解 Svelte 是如何实现这一点的，我们需要查看其内部机制。Svelte 实际上对`.svelte`文件做了什么，以及在什么时候处理它？答案是：Svelte 实际上是一个编译器！在你的代码加载到浏览器之前，它已经完成了大部分工作。Svelte 解析代码并将其转换为普通的 JavaScript。在解析过程中，它能够看到如`newBook`之类的变量被用于模板中，因此对它的赋值将导致重新渲染。因此，编译输出会将这些赋值封装在`$$invalidate`函数的调用中，该函数将为下一次浏览器绘制调度该组件的重新渲染。这就是 Svelte 卓越性能的秘密：它预先知道哪些部分可能会触发重新渲染，只需要在这些精确的位置执行工作，手术式地更新 DOM。这也是 Svelte 应用包大小如此之小的原因：所有不需要的内容都不会包含在输出中，因此 Svelte 可以舍弃其微小运行时中每个不需要的部分。一个 Svelte Hello World! 应用的包大小仅为 2.5KB！
 
-唯一注意的是，Svelte 只查找赋值操作。这就是为什么我们需要执行 `books = [...books, newBook];` 或 `books.push(newBook); books = books;`。否则，Svelte 将不知道 `books` 已经更新。
+唯一注意的是，Svelte 只查找赋值操作。这就是为什么我们需要执行`books = [...books, newBook];`或`books.push(newBook); books = books;`。否则，Svelte 将不知道`books`已经更新。
 
 ![编译输出](img/svelte1-compilation-output.png)
 
@@ -179,9 +163,8 @@ Svelte 以其较小的包体积、卓越的性能和易用性吸引了开发者�
 
 我们做到了！我们现在可以查看并向列表添加书籍了！不过看起来没那么漂亮，所以让我们给 UI 做一些最后的修饰。首先，我们将添加一些 CSS 来美化元素：
 
-```
+```html
 <!-- script and html code... -->
-
 <style>
   input {
     padding: 5px 10px;
@@ -195,9 +178,7 @@ Svelte 以其较小的包体积、卓越的性能和易用性吸引了开发者�
 </style>
 ```
 
-如你所见，我们只需要在 `.svelte` 文件中添加 `<style>` 标签并继续编写普通的 CSS。（注：原文中存在大量重复内容，此处已清理）。
-
-
+如你所见，我们只需要在`.svelte`文件中添加`<style>`标签并继续编写普通的 CSS。（注：原文中存在大量重复内容，此处已清理）。
 
 正如你所见，Svelte 为我们所有的需求提供了解决方案，我们将在本系列中介绍这些方案。
 
@@ -255,7 +236,7 @@ Svelte 以其较小的包体积、卓越的性能和易用性吸引了开发者�
 
 ### 控制流语法
 
-首先，我们想让列表动态化，并将文本条数组渲染为我们的待办事项列表。为了实现这一点，我们需要添加一个`<script>` 块，以便将待办事项列表放入变量中。我们在第一章中看到，我们可以在 `<script>` 标签的内容中编写普通的 JavaScript 代码，其变量和函数随后可以在模板中可用。然后我们使用 `#each` 块——目前 Svelte 中四种控制流块之一——来在模板中遍历待办事项列表：
+首先，我们想让列表动态化，并将文本条数组渲染为我们的待办事项列表。为了实现这一点，我们需要添加一个`<script>`块，以便将待办事项列表放入变量中。我们在第一章中看到，我们可以在`<script>`标签的内容中编写普通的 JavaScript 代码，其变量和函数随后可以在模板中可用。然后我们使用`#each`块——目前 Svelte 中四种控制流块之一——来在模板中遍历待办事项列表：
 
 ```html
 <script>
@@ -263,7 +244,6 @@ Svelte 以其较小的包体积、卓越的性能和易用性吸引了开发者�
 </script>
 
 <!-- ... -->
-
 <ul>
     <!-- 语法：{#each <arrayname> as <entry>} -->
     {#each todos as todo}
@@ -278,7 +258,7 @@ Svelte 以其较小的包体积、卓越的性能和易用性吸引了开发者�
 
 #### 寻找大括号！
 
-让我们使用另一个控制流块来解决第二个任务：即当我们还没有待办事项时显示消息。我们将使用 `#if` 块：
+让我们使用另一个控制流块来解决第二个任务：即当我们还没有待办事项时显示消息。我们将使用`#if`块：
 
 ```html
 <script>
@@ -286,23 +266,27 @@ Svelte 以其较小的包体积、卓越的性能和易用性吸引了开发者�
 </script>
 
 <!-- ... -->
-
 {#if todos.length === 0}
     <p>你想处理些什么？</p>
+```
+
+
+
+```svelte
 {:else}
-    <ul>
-        {#each todos as todo}
-            <li>{todo}</li>
-        {/each}
-    </ul>
+  <ul>
+    {#each todos as todo}
+      <li>{todo}</li>
+    {/each}
+  </ul>
 {/if}
 ```
 
 ### 更多控制流
 
-`if` 块读起来非常像普通的 JavaScript `if` 块。块以 `{#if ..}` 开始，并可以有多个 `{:else ..}` 分支以及一个最终的 `{:else}` 分支。和普通的 if 块一样，后两者是可选的。通过编写 `{/if}` 关闭块。通常，控制流语法是 `{#<name> ..} .. {:<possibly something>} .. {/<name>}`。井号标记块的开始，冒号标记可选分支（冒号后面的文本取决于控制流块），斜杠标记块的结束。
+`if` 块读起来非常像普通的 JavaScript `if` 块。块以 `{#if ..}` 开始，并可以有多个 `{:else ..}` 分支以及一个最终的 `{:else}` 分支。和普通的 `if` 块一样，后两者是可选的。通过编写 `{/if}` 关闭块。通常，控制流语法是 `{#<name> ..} .. {:<possibly something>} .. {/<name>}`。井号标记块的开始，冒号标记可选分支（冒号后面的文本取决于控制流块），斜杠标记块的结束。
 
-`#if` 和 `#each` 可能是你最常使用的，但还有两个控制流块在某些也会派上用场。
+`#if` 和 `#each` 可能是你最常使用的，但还有两个控制流块在某些场景下也会派上用场。
 
 第一个是 `#await` 块，它允许你在标记中使用 Promise：
 
@@ -316,17 +300,15 @@ Svelte 以其较小的包体积、卓越的性能和易用性吸引了开发者�
 {/await}
 ```
 
-
-
-如上所示，我们可以处理 promise 的所有状态，从加载结果到捕获错误。就像我们在 `#if` 中看到的那样，其语法和语义与在普通 JavaScript 中使用 promise 高密对应：你对 promise 进行 `#await`，`{:then ...}` 非常类似于 promise 对象的 `.then(..)` 函数，而 `{:catch ...}` 非常类似于 promise 对象对应的 `.catch(..)` 函数。这些分支都是可选的，你也可以通过 `{#await somePromise then result}..{/await}` 来跳过显示加载分支。
+如上所示，我们可以处理 Promise 的所有状态，从加载结果到捕获错误。就像我们在 `#if` 中看到的那样，其语法和语义与在普通 JavaScript 中使用 Promise 高度类似：你对 Promise 进行 `#await`，`{:then ...}` 非常类似于 Promise 对象的 `.then(..)` 函数，而 `{:catch ...}` 非常类似于 Promise 对象对应的 `.catch(..)` 函数。这些分支都是可选的，你也可以通过 `{#await somePromise then result}..{/await}` 来跳过显示加载分支。
 
 ![Svelte 与 JavaScript 控制流块之间的语法相似性](img/syntax-similarities.png)
 
 最后一个控制流块是 `#key`，它是最近添加的。如果传递给它的值发生变化，它将销毁并重建其内部的所有内容：
 
-```
+```svelte
 {#key someValue}
-  每当 someValue 变化时，我会被销毁并重建
+  每当 `someValue` 变化时，我会被销毁并重建
 {/key}
 ```
 
@@ -334,25 +316,27 @@ Svelte 以其较小的包体积、卓越的性能和易用性吸引了开发者�
 
 让我们回到示例，它现在看起来如下：
 
-```
+```svelte
 <script>
-    let todos = ['Learn Svelte', 'Create great things'];
+  let todos = ['Learn Svelte', 'Create great things'];
 </script>
 
 <label>
-    新待办事项
-    <!-- 实现：让此操作更新列表 -->
-    <input type="text" />
+  新待办事项
+
+  <!-- 实现：让此操作更新列表 -->
+
+  <input type="text" />
 </label>
 
 {#if todos.length === 0}
-    <p>你想做点什么？</p>
+  <p>你想做点什么？</p>
 {:else}
-    <ul>
-        {#each todos as todo}
-            <li>{todo}</li>
-        {/each}
-    </ul>
+  <ul>
+    {#each todos as todo}
+      <li>{todo}</li>
+    {/each}
+  </ul>
 {/if}
 ```
 
@@ -360,24 +344,26 @@ Svelte 以其较小的包体积、卓越的性能和易用性吸引了开发者�
 
 ## 使用事件和绑定添加新的待办事项
 
-剩下的工作是能够向列表添加新的待办事项。当我们在文本框中输入内容并按下 `enter` 键时，我们希望将该文本作为新项目添加到列表中。第一个版本看起来如下：
+剩下的工作是能够向列表添加新的待办事项。当我们在文本框中输入内容并按下 `Enter` 键时，我们希望将该文本作为新项目添加到列表中。第一个版本看起来如下：
 
-```
+```svelte
 <script>
-    let todos = ['Learn Svelte', 'Create great things'];
-    let newTodo = '';
-    function handleKeyup(evt) {
-        if (evt.key === 'Enter') {
-            todos = [...todos, newTodo];
-            newTodo = '';
-        }
-        newTodo = evt.target.value;
+  let todos = ['Learn Svelte', 'Create great things'];
+  let newTodo = '';
+
+  function handleKeyup(evt) {
+    if (evt.key === 'Enter') {
+      todos = [...todos, newTodo];
+      newTodo = '';
     }
+
+    newTodo = evt.target.value;
+  }
 </script>
 
 <label>
-    新待办事项
-    <input type="text" value={newTodo} on:keyup={handleKeyup} />
+  新待办事项
+  <input type="text" value={newTodo} on:keyup={handleKeyup} />
 </label>
 
 <!-- ... -->
@@ -389,31 +375,30 @@ Svelte 以其较小的包体积、卓越的性能和易用性吸引了开发者�
 
 接下来，我们监听 input 的 `keyup` 事件。有许多 DOM 事件，都以 `on` 开头——在这种情况下是 `onkeyup`。要告诉 Svelte 挂钩该事件，我们只需要在 `on` 和事件名的其余部分之间添加冒号——因此在这里是 `on:keyup`。之后，我们使用大括号并将函数名放在里面。每当事件触发时都会调用该函数。如果你喜欢，也可以在里面放置一个匿名函数。
 
-在 `handleKeyup` 内部，我们随后监听 `keyup` 事件并采取相应的行动。每当我们输入一个字符时，都会更新 `newTodo`，当我们按下 `enter` 时，我们将文本添加到待办事项列表中，然后重置输入值。注意，我们不需要任何像 `setState` 这样的额外函数来告诉 Svelte 变量变化进行重新渲染。Svelte 通过查找赋值运算符来判断何时需要重新渲染，因此它知道哪个变量是“脏”（dirty）。在编译 Svelte 组件时，它会将这些赋值封装在一个函数调用中，告诉运行时在下一次浏览器绘制时重新渲染。但要小心，这意味着仅执行 `todos.push(newTodo)` 是不起作用的：Svelte 只会将通过赋值更新的变量标记为脏。因此，编写 `todos.push(newTodo); todos = todos;` 就可以。
+在 `handleKeyup` 内部，我们随后监听 `keyup` 事件并采取相应的行动。每当我们输入一个字符时，都会更新 `newTodo`，当我们按下 `Enter` 时，我们将文本添加到待办事项列表中，然后重置输入值。注意，我们不需要任何像 `setState` 这样的额外函数来告诉 Svelte 变量变化进行重新渲染。Svelte 通过查找赋值运算符来判断何时需要重新渲染，因此它知道哪个变量是“脏”（dirty）。在编译 Svelte 组件时，它会将这些赋值封装在一个函数调用中，告诉运行时在下一次浏览器绘制时重新渲染。但要小心，这意味着仅执行 `todos.push(newTodo)` 是不起作用的：Svelte 只会将通过赋值更新的变量标记为脏。因此，编写 `todos.push(newTodo); todos = todos;` 就可以。
 
 上面的代码可以工作，但我们可以做得更好。我们与其通过监听 `keyup` 事件来手动保持 `newTodo` 与输入值的同步，还可以使用绑定。结果如下：
 
-```
+```svelte
 <script>
-    let todos = ['Learn Svelte', 'Create great things'];
-    let newTodo = '';
-    function handleKeyup(evt) {
-        if (evt.key === 'Enter') {
-            todos = [...todos, newTodo];
-            newTodo = '';
-        }
+  let todos = ['Learn Svelte', 'Create great things'];
+  let newTodo = '';
+
+  function handleKeyup(evt) {
+    if (evt.key === 'Enter') {
+      todos = [...todos, newTodo];
+      newTodo = '';
     }
+  }
 </script>
 
 <label>
-    新待办事项
-    <input type="text" bind:value={newTodo} on:keyup={handleKeyup} />
+  新待办事项
+  <input type="text" bind:value={newTodo} on:keyup={handleKeyup} />
 </label>
 
 <!-- ... -->
 ```
-
-
 
 有了这些工具，你现在准备好为你的 HTML 丰富动态内容和行为了！在下一章中，我们将介绍响应式语句（reactive statements）以及它们如何帮助我们推导出计算变量或响应变量的变化，以及 Svelte 如何再次利用其独特优势——作为编译器——来让编写这些代码的开发者体验尽可能良好。
 
@@ -421,15 +406,16 @@ Svelte 以其较小的包体积、卓越的性能和易用性吸引了开发者�
 
 到目前为止，我们已经了解到 `Svelte` 能够将组件内部普通的变量赋值编译为能够自动更新视图的内容。每当你给一个变量赋值时，`Svelte` 都会注意到这一点，并为下一次浏览器绘制调度一次重新渲染（rerender）。随后我们仔细查看了组件语法，了解了如何向 HTML 代码中添加动态行为。在本章中，我们将关注 `<script>` 标签的内容，并查看我们如何响应变量的变化来运行其他代码。
 
-你是否曾经需要对变量的变化做出响应？可能每天都以某种形式需要过。`Svelte` 已经通过重新渲染视图来很好地响应变量的变化了。但如果我们我们需要在 `<script>` 标签内部显式地对变量变化做出响应呢？例如：计数翻倍、在 ID 变化时从后端获取新对象——这里有很多用例。这就是响应式语句大显身场的地方。它们看起来像：
+你是否曾经需要对变量的变化做出响应？可能每天都以某种形式需要过。`Svelte` 已经通过重新渲染视图来很好地响应变量的变化了。但如果我们需要在 `<script>` 标签内部显式地对变量变化做出响应呢？例如：计数翻倍、在 ID 变化时从后端获取新对象——这里有很多用例。这就是响应式语句大显身场的地方。它们看起来像：
 
 ```javascript
 <script>
   // 响应式声明
   $: foo = bar;
+
   // 响应式语句
   $: {
-      something = somethingElse;
+    something = somethingElse;
   }
 </script>
 ```
@@ -442,7 +428,7 @@ Svelte 以其较小的包体积、卓越的性能和易用性吸引了开发者�
 
 `响应式声明` 定义了一个值依赖于其他变量的变量。一个简单的响应式声明可能像这样：
 
-```javascript
+```svelte
 <script>
   let count = 0;
   $: doubled = count * 2;
@@ -457,37 +443,43 @@ Svelte 以其较小的包体积、卓越的性能和易用性吸引了开发者�
 
 ## 响应式语句
 
-`响应式语句`并不定义计算变量。相反，它定义了一个当依赖项变化时应该重新运行的块。在响应式语句块内部为了计算结果而被读取（*而不是*写入）的每一个变量都是依赖项。响应式语句看起来像这样：
+`响应式语句` 并不定义计算变量。相反，它定义了一个当依赖项变化时应该重新运行的块。在响应式语句块内部为了计算结果而被读取（*而不是*写入）的每一个变量都是依赖项。响应式语句看起来像这样：
 
-```javascript
+```svelte
 <script>
   let count = 0;
   let prevCount = 0;
   let countWentUp = false;
+
   // 语句
   $: console.log('Count is' + count);
+
   // 块语句
   $: {
-      countWentUp = prevCount < count;
-      prevCount = count;
+    countWentUp = prevCount < count;
+    prevCount = count;
   }
 </script>
 
 <p>Count: {count}</p>
 <p>Count went {countWentUp ? 'up' : 'down'}</p>
+
 <button on:click={() => count += 1}>Increase count</button>
 <button on:click={() => count -= 1}>Decrease count</button>
 ```
 
 如你所示，响应式语句本质上是在特定时间重新运行的任意代码。在上面的示例中，`console.log` 语句每当 `count` 变化时都会重新运行。在块语句内部，我们响应 `count` 的变化来更新两个变量。首先，我们将之前的计数与当前计数进行比较，以确定计数增加还是减少，然后我们将当前计数存储为下一次运行的新之前的计数。你可以使用响应式语句来表达副作用，或者运行那些不适合简单的声明语句的、或涉及多个变量的计算。本质上，响应式语句是响应式声明的超集：你可以将每个响应式声明重写为响应式语句。以下代码在语义角度上是完全相同的：
 
-```javascript
+```svelte
 <script>
   let something = 'something';
+
   // 这 ...
   $: declaration = something;
+
   // 等于这个
   let statement;
+
   $: {
     statement = something;
   }
@@ -500,9 +492,10 @@ Svelte 以其较小的包体积、卓越的性能和易用性吸引了开发者�
 
 从数学上来说，这被称为变量的**拓扑排序**（topological ordering）。如果 `Svelte` 无法通过这种方式确定顺序——例如，因为语句没有依赖项——它们将按照你写的顺序执行：
 
-```javascript
+```svelte
 <script>
   let count = 0;
+
   $: quadrupled = doubled * 2; // 第 2 次运行
   $: doubled = count * 2; // 第 1 次运行
   $: console.log(quadrupled); // 第 3 次运行
@@ -512,7 +505,7 @@ Svelte 以其较小的包体积、卓越的性能和易用性吸引了开发者�
 
 可能会出现某些情况，我们需要从依赖项中隐藏一个变量。在下面的任意（但简单）的示例中，我们希望 `multiplied` 只在我们增加 `count` 时更新，而在改变 `multiplyBy` 时不更新。我们通过将变量 `multiplyBy` 移动到函数中从直接依赖项中隐藏它来实现：
 
-```javascript
+```svelte
 <script>
   let count = 0;
   let multiplyBy = 2;
@@ -520,7 +513,7 @@ Svelte 以其较小的包体积、卓越的性能和易用性吸引了开发者�
   $: multiplied = multiply(count);
 
   function multiply(value) {
-      return value * multiplyBy;
+    return value * multiplyBy;
   }
 </script>
 ```
@@ -529,33 +522,33 @@ Svelte 以其较小的包体积、卓越的性能和易用性吸引了开发者�
 
 反之也可能成立：我们可能希望即使在一个不直接导致结果的变量发生变化时也重新触发响应式语句。在这种情况下，我们可以通过让该变量出现在响应式语句中来添加该变量：
 
-```javascript
+```svelte
 <script>
   // ...
+
   $: variableWhichShouldTriggerRecalculation, retriggerCalculation();
+
   // ...
 </script>
 ```
 
-由于响应式语句是普通的 JavaScript，你还可以使用 `if`-块来对语句的重新运行时进行更多控制，仅在满足特定条件时才执行其主体。
-
-
-
-
+由于响应式语句是普通的 JavaScript，你还可以使用 `if` 块来对语句的重新运行时进行更多控制，仅在满足特定条件时才执行其主体。
 
 ```html
 <script>
   // ...
+
   $: if (someVariable < 100) {
     // ...
   }
+
   // ...
 </script>
 ```
 
 上述代码会在 `someVariable` 或响应式语句中的任何内容发生更新时执行，但只有在满足 `if` 条件时才会进入语句体。你可以将其用作替代方案，用于从语句中隐藏变量；同时，还可以通过将其作为 `if` 语句中的一个占位条件（dummy condition），在正体中未使用的变量发生变化时重新运行该语句。
 
-大多数情况下，你不需要关心依赖关系。与 `React` 相比，这让人轻松很多，因为在 hooks 的上下文中，你需要非常显式地声明依赖项。在 Svelte 中，大多数情况下它都会像你预期的那样“自动运行”，如果你需要微调执行行为，可以通过使用上面显示的技术之一轻松地调整代码。
+大多数情况下，你不需要关心依赖关系。与 `React` 相比，这让人轻松很多，因为在 hooks 的上下文中，你需要非常显式地声明依赖项。在 `Svelte` 中，大多数情况下它都会像你预期的那样“自动运行”，如果你需要微调执行行为，可以通过使用上面显示的技术之一轻松地调整代码。
 
 让我们通过看另一个例子来总结这些发现。下面的截图显示了响应式语句运行的顺序。箭头表示对其他响应式语句的依赖。`multiplied` 先运行，因为它依赖于 `count`。`doubleMultiplied` 第二个运行，因为它依赖于 `multiplied`。`refreshDetails()` 第三个运行，因为它依赖于 `doubleMultiplied`。`console.log(count)` 最后运行，因为它写在所有其他响应式语句之后，且没有其他语句需要它先运行。当 `multiplyBy` 发生变化时，没有任何语句会重新运行，因为它们没有一个对它有直接依赖。
 
@@ -563,18 +556,23 @@ Svelte 以其较小的包体积、卓越的性能和易用性吸引了开发者�
 
 ## 响应式语句只运行一次
 
-在之前的章节中不清楚但可能重要的有一点是响应式语句的执行时机。如果一个普通变量被重新赋值，Svelte 会在下一次浏览器绘制（paint）时调度更新。在调度和绘制之间就是响应式语句执行的时间——但它们只执行一次。这意味着，如果一个响应式语句写入之前运行过的响应式语句正在读取的变量，那么该响应式语句将不会重新运行。这防止了无限循环、性能问题，并且使得某些响应式语句编写可行。让我们再次看看上面的响应式语句：
+在之前的章节中不清楚但可能重要的有一点是响应式语句的执行时机。如果一个普通变量被重新赋值，`Svelte` 会在下一次浏览器绘制（paint）时调度更新。在调度和绘制之间就是响应式语句执行的时间——但它们只执行一次。这意味着，如果一个响应式语句写入之前运行过的响应式语句正在读取的变量，那么该响应式语句将不会重新运行。这防止了无限循环、性能问题，并且使得某些响应式语句编写可行。让我们再次看看上面的响应式语句：
 
 ```html
 <script>
   let count = 0;
-  let prevCount = 0;
-  let countWentUp = false;
-  $: {
-      countWentUp = prevCount < count;
-      prevCount = count;
-  }
-</script>
+
+
+
+`let prevCount = 0;`
+
+`let countWentUp = false;`
+
+```
+$: {
+    countWentUp = prevCount < count;
+    prevCount = count;
+}
 ```
 
 这个响应式语句读取 `prevCount`，但也写入了 `prevCount`。如果该语句运行多次，将意味着它会立即再次失效，导致无限循环，并且最终始终给 `countWentUp` 赋值为 `false`，这违背了它的初衷。就像依赖关系一样，大多数情况下这不需要担心，因为编写响应式语句感觉非常自然。但一旦你进入更复杂的用例，记住这一点是有好处的。
@@ -599,18 +597,20 @@ Svelte 在 Svelte 组件内部的响应式是直观且容易的。因为 Svelte 
 
 这个应用肯定不会为我们赢得任何设计奖，但它帮助我们展示了在这个应用程序中处理全局状态的问题。应用程序的根部如下：
 
-```html
+```
 <script>
     import Topbar from './Topbar.svelte';
     import AuthOnly from './AuthOnly.svelte';
 </script>
 
 <Topbar />
+
 <div>
     <p>
         页面的这部分始终可见
     </p>
 </div>
+
 <div>
     <p>
         这部分仅对登录用户可见
@@ -630,7 +630,7 @@ Svelte 在 Svelte 组件内部的响应式是直观且容易的。因为 Svelte 
 
 `Topbar.svelte` 看起来如下：
 
-```html
+```
 <div>
     如何在这里获取用户名？
 </div>
@@ -646,7 +646,7 @@ Svelte 在 Svelte 组件内部的响应式是直观且容易的。因为 Svelte 
 
 而 `AuthOnly.svelte` 看起来如下：
 
-```html
+```
 <script>
     let authenticated = false;
 </script>
@@ -666,8 +666,9 @@ Svelte 在 Svelte 组件内部的响应式是直观且容易的。因为 Svelte 
 
 创建一个包含如下内容的 `user.js`：
 
-```javascript
+```
 export let user = { loggedIn: false };
+
 export function login() {
   user = { loggedIn: true, name: "Dr. Svelte" };
 }
@@ -675,7 +676,7 @@ export function login() {
 
 我们还在 `Topbar.svelte` 中导入了 `user` 状态：
 
-```html
+```
 <script>
   import { user } from './user';
 </script>
@@ -683,16 +684,12 @@ export function login() {
 <div>
     {user.name || '未登录'}
 </div>
-
 <!-- style... -->
 ```
 
-
-
-
 我们在 `AuthOnly.svelte` 中执行了同样的操作，在那里调用了 `login` 函数：
 
-```svelte
+```
 <script>
     import { user, login } from './user';
     let authenticated = user.loggedIn;
@@ -715,7 +712,7 @@ Svelte 提供了一个非常简单的 API 来初始化和更新 store。`store` 
 
 Svelte store API 的核心是 `writable` 函数，它提供了这种功能。调用 `writable` 函数时传入初始状态，它会返回一个包含 `set`、`update` 和 `subscribe` 方法的对象。`set` 被调用时传入新的期望状态。`update` 调用时传入一个函数，该函数获取当前状态并预期返回下一个状态。`subscribe` 调用时传入一个回调函数，该函数每当状态改变时就会被调用，并返回一个可以用来取消订阅的函数：
 
-```javascript
+```
 import { writable } from "svelte/store";
 
 const store = writable("initial value");
@@ -725,11 +722,9 @@ const unsubscribe = store.subscribe((value) =>
 );
 
 store.set("new value");
-
 store.update((value) => value + " 2");
 
 unsubscribe();
-
 store.set("another value");
 ```
 
@@ -737,9 +732,11 @@ store.set("another value");
 
 让我们把 `writable` 应用到我们的用例：
 
-```javascript
+```
 import { writable } from "svelte/store";
+
 export let user = writable({ loggedIn: false });
+
 export function login() {
   user.set({ loggedIn: true, name: "Dr. Svelte" });
 }
@@ -747,10 +744,11 @@ export function login() {
 
 我们更改了 JavaScript 文件中的代码，并用 `writable` 包裹了状态。这意味着我们需要调整 Svelte 组件来订阅该状态。这是在 `Topbar.svelte` 中的第一次尝试：
 
-```svelte
+```
 <script>
   import { user } from './user';
   import { onDestroy } from 'svelte';
+
   let _user;
   const unsubscribe = user.subscribe(u => _user = u);
   onDestroy(unsubscribe);
@@ -759,13 +757,12 @@ export function login() {
 <div>
     {_user.name || '未登录'}
 </div>
-
 <!-- style... -->
 ```
 
 这起作用了！如果在 `AuthOnly.svelte` 内部按下 `login`，我们将在顶部栏看到“Dr. Svelte”的名字。不过，这个解决方案有点模板化：我们必须订阅 store，将其赋值给本地变量，并记住在组件销毁时取消订阅。我们能做得更好吗？这又是 Svelte 的大优势大用武之地：它是一个编译器。既然编译器无论会将 Svelte 文件转换为 JavaScript 文件，它也可以进行转换以消除这些订阅的模板代码。我们只需要在 store 前面加一个美元符号 `$`，Svelte 就会处理其余工作：
 
-```svelte
+```
 <script>
   import { user } from './user';
 </script>
@@ -773,7 +770,6 @@ export function login() {
 <div>
     {$user.name || '未登录'}
 </div>
-
 <!-- style... -->
 ```
 
@@ -783,7 +779,7 @@ export function login() {
 
 通过美元符号语法订阅 store 不仅适用于 Svelte stores。每个满足 store 契约的对象（换句话说，提供了 `subscribe` 方法）都可以以这种方式使用。例如，如果你倾向于使用 RxJS，你可以使用完全相同的 `$user` 语法来订阅观察者。我们可以利用这一点来创建自己的封装好的用户 API。现在，每个人都能直接更新用户状态，因为我们暴露了整个 `writable`。为了确保每个使用用户状态的人都通过 API 来更新状态，我们可以这样创建自己的 store：
 
-```javascript
+```
 import { writable } from "svelte/store";
 
 let _user = writable({ loggedIn: false });
@@ -800,9 +796,10 @@ export const user = {
 
 然后我们像这样调整 `AuthOnly.svelte` 组件：
 
-```svelte
+```
 <script>
   import { user } from './user';
+
   $: authenticated = $user.loggedIn;
 </script>
 
@@ -825,7 +822,7 @@ export const user = {
 
 有时我们可能想要创建一个无法从外部更新的 store。一个用例是确保没有人（不包括文件内部）从外部更新 store，因为它们应该是自包含的——例如一个每秒更新一次且无法从外部重置或调整的时钟。在这种情况下，可以使用 `readable`：
 
-```javascript
+```
 import { readable } from "svelte/store";
 
 const time = readable(null, (set) => {
@@ -841,12 +838,9 @@ const time = readable(null, (set) => {
 
 上面的代码创建一个没有 `set` 或 `update` 方法只有 `subscribe` 方法的 store。我们无法从外部设置。`readable` 的初始状态通过第一个参数设置；第二个参数是一个在订阅计数从 0 变为 1 时调用的函数。它被传递一个 `set` 函数，我们可以用它从内部更新状态——在本例中，每秒更新当前时间。我们可以返回一个在订阅计数从 1 变为 0 时调用的函数。在这种情况下，我们清理了定时器。
 
-
-
-
 一旦我们开始使用 store（存储器），我们可能还想要将一些 store 组合，或者从某个 store 派出一个不同的值。在这种情况下，我们可以使用 `derived`。假设我们的用户名被分为姓（surname）和名（lastname），但我们希望在应用的不同地方显示组合后的名称。为了避免重复代码，我们使用一个 `derived` store 将它们合并在一起：
 
-```svelte
+```
 import { derived } from "svelte/store";
 import { user } from "./user";
 
@@ -860,18 +854,15 @@ export const username = derived(
 
 这是一个示例：
 
-```svelte
-import { derived } from "svelte/store";
-// ...
-
-export const itemDetails = derived(
-  itemId,
-  (_itemId, set) => {
-    getItemDetails(_itemId).then((details) => set(details));
-  },
-  "Loading..."
-);
 ```
+import { derived } from "svelte/store";
+
+// ...
+```
+
+
+
+`export const itemDetails = derived(itemId, (_itemId, set) => { getItemDetails(_itemId).then((details) => set(details)); }, "Loading...");`
 
 上面的代码创建了一个 `derived` store，每当 ID 变化时，它都会根据 ID 获取项目的详情，并初始显示 `"Loading..."`。
 
@@ -879,15 +870,15 @@ export const itemDetails = derived(
 
 就是这些！在本系列教程第四个教程中，我们深入研究了 Svelte stores。我们学习了可以使用 `writable` 让状态在多个 Svelte 组件间可用，而这些组件只需在变量名后添加一个美元符号 `$` 即可响应更新。
 
-我们看到，它并不非得是一个 Svelte store。相反，任何实现了 `subscribe` 契约的对象都可以在 Svelte 组件中那样使用。这允许我们使用诸如 `RxJS` 的其他库，或者创建自定义对象。Svelte stores 帮助我们管理状态，为健壮的状态管理解决方案提供了原语。
+我们看到，它并不非得是一个 Svelte store。相反，任何实现了 `subscribe` 契约的对象都可以在 Svelte 组件中那样使用。这允许我们使用诸如`RxJS`的其他库，或者创建自定义对象。Svelte stores 帮助我们管理状态，为健壮的状态管理解决方案提供了原语。
 
-我们还查看了 `readable` store，它帮助我们创建从外部无法更改的状态；以及 `derived` store，它为从传入的 store 创建派生状态提供了选项。Svelte store API 的核心非常易理解，但也能扩展到更复杂的用例。
+我们还查看了`readable` store，它帮助我们创建从外部无法更改的状态；以及`derived` store，它为从传入的 store 创建派生状态提供了选项。Svelte store API 的核心非常易理解，但也能扩展到更复杂的用例。
 
 你现在准备好创建 store 来处理跨不同组件共享的状态了！在下一章中，我们将查看除使用 store 之外的组件交互，以构建健壮的应用。
 
 # 第 5 章：组件交互概念
 
-组件是 `Svelte` 等前端框架的核心。它们是组织和实现视图层的主要单元。组件封装了特定的 UI 和/或行为——例如按钮的外观、包含任意元素的列表，或页面的特定部分。
+组件是`Svelte`等前端框架的核心。它们是组织和实现视图层的主要单元。组件封装了特定的 UI 和/或行为——例如按钮的外观、包含任意元素的列表，或页面的特定部分。
 
 在书的前半部分，我们关注的是单个组件的内部细节。我们在第 2 章中查看了模板语法，在第 3 章中查看了响应式语句。在第 4 章中，我们查看了 Svelte stores，它为实现状态管理提供了一个方便的 API，并且可以跨组件更新。当然，还有更多方法可以将组件进行相互集成——我们将在本教程中介绍它们。读完本章后，你将能够为正确的工作使用正确的组件 API。
 
@@ -903,11 +894,9 @@ export const itemDetails = derived(
 <SomeOtherComponent />
 ```
 
-
-
 列表现在已经显示了，我们可以重新加载它，但列表项的样式是固定的；我们无法从外部更改它。为了改变这一点，我们使用了插槽（slots）。`slot` 就像一个占位符，其内容由父组件决定。让我们先在列表组件中定义插槽：
 
-```
+```svelte
 <script>
   // ...
 </script>
@@ -915,6 +904,7 @@ export const itemDetails = derived(
 {#if showReload}
   <button on:click>Reload list</button>
 {/if}
+
 <ul>
   {#each items as item}
     <li>
@@ -945,7 +935,7 @@ export const itemDetails = derived(
 
 上面的插槽是默认插槽。我们还可以使用具名插槽（named slots）来提供多个插槽，它们可以出现在不同的区域。给插槽命名只需要写 `<slot name="desiredName" />`，而使用它同样一样，只需在父组件的元素上添加 `slot="desiredName"` 属性，该元素就会进入特定的插槽。如果有一个“空列表占位符”插槽，它看起来会像这样：
 
-```html
+```svelte
 <!-- ... -->
 <List items={list} showReload={true} on:reload={reloadList} let:item>
   <b>{item}</b>
@@ -960,11 +950,12 @@ export const itemDetails = derived(
 
 ## 使用 Module 脚本管理相同组件的实例
 
-列表的重新加载功能非常成功——确实很大，以至于老板现在要求在页面顶部某处添加一个“全部刷新”按钮。对于这种情况——即我们需要管理和/或协调多个相同类型的组件实例，或者在组件生命周期之外运行代码但将其与组件放在一起——我们可以使用 `module` 脚本标签。这是另一个带有额外 `context="module"` 属性的脚本标签。该脚本标签内部的代码只运行一次且立即执行。可以将其看作一个独立的 JavaScript 文件，但它与 Svelte 组件位于同一处。让我们用它来实现“全部刷新”的行为：
+列表的重新加载功能非常成功——确实很大，以至于老板现在要求在页面顶部某处添加一个“全部刷新”按钮。对于这种情况——即我们需要管理和/或协调多个相同类型的组件实例，或者在组件生命周期之外运行代码但将其与组件放在一起——我们可以使用`module`脚本标签。这是另一个带有额外`context="module"`属性的脚本标签。该脚本标签内部的代码只运行一次且立即执行。可以将其看作一个独立的 JavaScript 文件，但它与 Svelte 组件位于同一处。让我们用它来实现“全部刷新”的行为：
 
 ```svelte
 <script context="module">
   let reloads = new Set();
+
   export function reloadAll() {
     reloads.forEach((reload) => reload());
   }
@@ -981,6 +972,7 @@ export const itemDetails = derived(
   onMount(() => {
     const reload = () => dispatch("reload");
     reloads.add(reload);
+
     return () => reloads.delete(reload);
   });
 </script>
@@ -988,7 +980,7 @@ export const itemDetails = derived(
 <!-- ... -->
 ```
 
-我们创建了一个包含所有“刷新” `dispatch` 函数的 `Set`。每当创建一个列表实例时，我们就封装 `dispatch` 函数并将其添加到 `Set` 中。当组件实例销毁时，我们将其移除。现在剩下的工作是在实现“全部刷新”按钮的地方使用导出的 `reloadAll` 函数：
+我们创建了一个包含所有“刷新”`dispatch`函数的`Set`。每当创建一个列表实例时，我们就封装`dispatch`函数并将其添加到`Set`中。当组件实例销毁时，我们将其移除。现在剩下的工作是在实现“全部刷新”按钮的地方使用导出的`reloadAll`函数：
 
 ```svelte
 <script>
@@ -998,7 +990,7 @@ export const itemDetails = derived(
 <button on:click={reloadAll}>全部刷新</button>
 ```
 
-Svelte 组件的默认导入是组件构造函数本身。具名导入是从模块脚本导出的内容。这样，我们就可以轻松地导入 `reloadAll` 并在适当调用它。
+Svelte 组件的默认导入是组件构造函数本身。具名导入是从模块脚本导出的内容。这样，我们就可以轻松地导入`reloadAll`并在适当调用它。
 
 ![模块脚本与实例脚本的关系](img/svelte5-module-script.png)
 
@@ -1012,6 +1004,7 @@ Svelte 组件的默认导入是组件构造函数本身。具名导入是从模�
 <!-- 在某个父组件中 -->
 <script>
   import { setContext } from 'svelte';
+
   setContext('partOfAll', someCalculationThatReturnsBoolean());
   // ...
 </script>
@@ -1020,29 +1013,34 @@ Svelte 组件的默认导入是组件构造函数本身。具名导入是从模�
 <script>
   import { getContext, onMount } from 'svelte';
   // ...
+
   const isPartOfAll = getContext('partOfAll');
+
   onMount(() => {
     if (!isPartOfAll) {
       return;
     }
+
     const reload = () => dispatch("reload");
     reloads.add(reload);
+
     return () => reloads.delete(reload);
   });
 </script>
 ```
 
-这两个函数——`setContext` 和 `getContext`——允许我们为提供组件的所有子组件提供特定内容。这类似于 React 中的 `useContext`、Vue 中的 `provide`/`inject` 或 Angular 中的服务。注意需要在组件初始化期间调用这些函数。你不能在生命周期后期或异步调用它们。
+这两个函数——`setContext`和`getContext`——允许我们为提供组件的所有子组件提供特定内容。这类似于 React 中的`useContext`、Vue 中的`provide`/`inject`或 Angular 中的服务。注意需要在组件初始化期间调用这些函数。你不能在生命周期后期或异步调用它们。
 
 ![上下文可视化](img/svelte5-context.png)
 
-在上面的示例中，我们使用字符串作为键，但也可以使用 `Symbol` 或其他保证唯一的类型。值可以是任何内容。在这个例中，它是一个简单的布尔值，但也可以是一个函数或 store。上下文和 store 是提供随时间变化且子组件能够做出响应的值良好方法。这是一个例子：
+在上面的示例中，我们使用字符串作为键，但也可以使用`Symbol`或其他保证唯一的类型。值可以是任何内容。在这个例中，它是一个简单的布尔值，但也可以是一个函数或 store。上下文和 store 是提供随时间变化且子组件能够做出响应的值良好方法。这是一个例子：
 
 ```svelte
 <!-- 在某个父组件中 -->
 <script>
   import { setContext } from 'svelte';
   import { writable } from 'svelte/store';
+
   const count = writable(1);
   setContext('count', count);
   // ...
@@ -1051,8 +1049,10 @@ Svelte 组件的默认导入是组件构造函数本身。具名导入是从模�
 <!-- 在某个子组件中 -->
 <script>
   import { getContext } from 'svelte';
+
   const count = getContext('count');
 </script>
+
 <p>计数是 {$count}</p>
 ```
 
@@ -1063,14 +1063,9 @@ Svelte 组件的默认导入是组件构造函数本身。具名导入是从模�
 这是一个很长的篇章！在本教程中，我们学习了许多组件交互概念。总结一下：
 
 *   使用组件属性和事件来实现基础组件交互。
-
 *   当你需要从父组件在子组件的特定位置提供自定义 UI 时，请使用插槽。
-
-
-
-
-*   当你需要管理或协调同一组件的多个实例，或者导出与其相关的命令式逻辑时，使用 `<script context="module">` 标签。
-*   当你需要为应用的某个子部分提供某些值并希望避免属性层传递（property drilling）时，请使用 `setContext` 和 `getContext`。
+*   当你需要管理或协调同一组件的多个实例，或者导出与其相关的命令式逻辑时，使用`<script context="module">`标签。
+*   当你需要为应用的某个子部分提供某些值并希望避免属性层传递（property drilling）时，请使用`setContext`和`getContext`。
 
 有了这些工具，你现在准备好以最好的方式来构建和组织你的组件了。
 
@@ -1084,11 +1079,11 @@ Svelte 组件的默认导入是组件构造函数本身。具名导入是从模�
 
 ## 测试金字塔
 
-在进入技术细节之前，让我们先后退一步，思考我们测试应用程序的方法。事实证明，并没有一种真正的方法。相反，测试有不同的层级。这实际上有一个专门的名字，你可能已经遇到过：“测试金字塔”。
+在进入技术细节之前，让我们先后退一步，思考我们测试应用程序的方法。事实证明，并没有一种真正的方法。相反，测试有不同的层级。这实际上有一个专门的名字，你可能已经遇到过："测试金字塔"。
 
 ![测试金字塔](img/testing-pyramid.png)
 
-`testing pyramid` 帮助我们分类各种测试方式。
+`testing pyramid`帮助我们分类各种测试方式。
 
 在底部是`单元测试`（unit tests），它们一次只查看应用程序的一小部分——例如隔离测试某个特定的函数。
 
@@ -1096,15 +1091,15 @@ Svelte 组件的默认导入是组件构造函数本身。具名导入是从模�
 
 金字塔的最顶层是`端到端测试`（end-to-end tests，缩写 E2E），它们比集成测试更进一步一步，不仅运行应用程序的一部分，还运行整个应用程序并从终端用户的视角进行测试。挑战在于让整个应用程序在测试条件下运行。优势是它们需要的模拟（mock）更少：只需要后端，或者如果你愿意，甚至后端也可以作为 E2E 测试的一部分运行。
 
-它之所以被称为“测试金字塔”而不是简单的“测试层级”，是因为其理念是低层级的测试应该比高层级更多。有些人说，你应该追求 60% 的单元测试、30% 的集成测试和 10% 的 E2E 测试。然而，这没有单一的正确方法，特别是对于前端测试，甚至有人完全挑战金字塔理论，认为 E2E 测试是测试 Web 应用最简单、最稳健的方法——特别是在实现变化方面——所以你应该最关注这些。
+它之所以被称为"测试金字塔"而不是简单的"测试层级"，是因为其理念是低层级的测试应该比高层级更多。有些人说，你应该追求 60% 的单元测试、30% 的集成测试和 10% 的 E2E 测试。然而，这没有单一的正确方法，特别是对于前端测试，甚至有人完全挑战金字塔理论，认为 E2E 测试是测试 Web 应用最简单、最稳健的方法——特别是在实现变化方面——所以你应该最关注这些。
 
 最后，如何组织你的测试取决于你，我们将在本教程的剩余部分中专注于为每个层级提供一个示例。
 
 ## 测试设置
 
-我们将使用 [Jest](https://jestjs.io/) 进行单元测试和集成测试。Jest 是目前前端代码最流行的测试库。如果你在使用 SvelteKit，可以通过 [svelte-add-jest](https://github.com/rossyman/svelte-add-jest) 在 SvelteKit 项目根目录下运行以下命令来设置并安装 Jest 测试所需的所有依赖：
+我们将使用[Jest](https://jestjs.io/)进行单元测试和集成测试。Jest 是目前前端代码最流行的测试库。如果你在使用 SvelteKit，可以通过[svelte-add-jest](https://github.com/rossyman/svelte-add-jest)在 SvelteKit 项目根目录下运行以下命令来设置并安装 Jest 测试所需的所有依赖：
 
-```
+```bash
 npx apply rossyman/svelte-add-jest
 npm install @testing-library/svelte -D
 ```
@@ -1113,13 +1108,13 @@ npm install @testing-library/svelte -D
 
 如果你没有使用 SvelteKit，还有一些手动步骤需要执行。首先，安装所有所需的依赖。如果你使用 JavaScript，依赖如下：
 
-```
+```bash
 npm install jest svelte-jester @babel/core @babel/preset-env babel-jest @testing-library/svelte -D
 ```
 
-`jest` 是核心测试框架，`svelte-jester` 是为了支持 Svelte 而对应的插件。需要 Babel 来转换较新的 ES 模块代码。正如我们稍后看到的，`testing-library` 包将帮助我们编写更健壮的测试。然后，创建一个包含以下内容的 `jest.config.js`，以告诉 Jest 正确处理 Svelte 文件：
+`jest`是核心测试框架，`svelte-jester`是为了支持 Svelte 而对应的插件。需要 Babel 来转换较新的 ES 模块代码。正如我们稍后看到的，`testing-library`包将帮助我们编写更健壮的测试。然后，创建一个包含以下内容的`jest.config.js`，以告诉 Jest 正确处理 Svelte 文件：
 
-```
+```javascript
 module.exports = {
   testEnvironment: "jsdom",
   transform: {
@@ -1129,9 +1124,9 @@ module.exports = {
 };
 ```
 
-然后创建一个 `.babelrc` 并添加以下代码，这是为了将较新的 JavaScript 语法编译为 Jest 能理解的内容：
+然后创建一个`.babelrc`并添加以下代码，这是为了将较新的 JavaScript 语法编译为 Jest 能理解的内容：
 
-```
+```json
 {
   "presets": [["@babel/preset-env", { "targets": { "node": "current" } }]]
 }
@@ -1139,9 +1134,11 @@ module.exports = {
 
 这些是使用 JavaScript 时创建测试的步骤。如果你使用的是 TypeScript，设置看起来会有所不同。首先，你需要安装以下包：
 
-```
+```bash
 npm install typescript svelte-preprocess jest ts-jest svelte-jester @testing-library/svelte -D
 ```
+
+
 
 你可能已经有了 `typescript` 和 `svelte-preprocess`，因为开发 Svelte 应用程序需要它们。B 依赖被 `ts-jest` 取代，它负责正确转换代码。之后，在项目根目录下添加以下配置文件：
 
@@ -1183,10 +1180,6 @@ module.exports = {
 
 这是它背后的代码：
 
-
-
-
-
 ```svelte
 <script>
   import { fade } from 'svelte/transition';
@@ -1202,37 +1195,35 @@ module.exports = {
   }
 </script>
 
-<h2>
-    我的小书签应用
-</h2>
-<div>
-    <label>
-        <h4>添加书籍</h4>
-        <input type="text" bind:value={newBook} on:keydown={addBook} />
-    </label>
+<h2>我的小书签应用</h2>
 
-    <h4>我的书籍</h4>
-    <ul>
-        {#each books as book}
-            <li transition:fade>{book}</li>
-        {/each}
-    </ul>
+<div>
+  <label>
+    <h4>添加书籍</h4>
+    <input type="text" bind:value={newBook} on:keydown={addBook} />
+  </label>
+  <h4>我的书籍</h4>
+  <ul>
+    {#each books as book}
+      <li transition:fade>{book}</li>
+    {/each}
+  </ul>
 </div>
 
 <style>
-    div {
-        display: inline-block;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    h2 {
-        background: rgb(9,111,121);
-        padding: 5px 10px;
-        text-align: center;
-        color:white;
-        font-weight: bold;
-        margin:0;
-    }
+  div {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  h2 {
+    background: rgb(9,111,121);
+    padding: 5px 10px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    margin: 0;
+  }
   input {
     padding: 5px 10px;
   }
@@ -1242,12 +1233,12 @@ module.exports = {
   ul {
     padding: 5px 0;
   }
-    :global(body){
-        background: rgb(9,111,121);
-        background: linear-gradient(180deg, rgba(9,111,121,1) 0%, rgba(255,241,242,1) 60%, rgba(255,241,242,1) 100%);
-        display:flex;
-        flex-direction: column;
-    }
+  :global(body) {
+    background: rgb(9,111,121);
+    background: linear-gradient(180deg, rgba(9,111,121,1) 0%, rgba(255,241,242,1) 60%, rgba(255,241,242,1) 100%);
+    display: flex;
+    flex-direction: column;
+  }
 </style>
 ```
 
@@ -1255,7 +1246,7 @@ module.exports = {
 
 如何处理？第一个想法可能是以某种方式访问组件的编译版本，然后更新并调用所需的变量和函数。然而，由于我们与组件的实现细节紧密绑定，这种方法非常脆弱。如果我们可以通过渲染后的 HTML 在高一个抽象层上进行测试，效果会更好。这意味着我们模拟与 HTML 的交互，然后检查它是否已正确更新。
 
-在我们的情况下，这意味着我们要模拟在输入框中打字、按下 `enter`，然后检查更新后的 HTML 是否有新的书籍条目。`@testing-library/svelte` 将帮助我们完成。它是 `Testing Library` API 的封装，该 API 提供了一套用于与 HTML 交互的实用程序。如果你已经使用围绕该库的其他封装器编写了测试（例如使用 React 或 Vue），下面的代码片段对你来说非常熟悉：
+在我们的情况下，这意味着要模拟在输入框中打字、按下 `enter`，然后检查更新后的 HTML 是否有新的书籍条目。`@testing-library/svelte` 将帮助我们完成。它是 `Testing Library` API 的封装，该 API 提供了一套用于与 HTML 交互的实用程序。如果你已经使用围绕该库的其他封装器编写了测试（例如使用 React 或 Vue），下面的代码片段对你来说非常熟悉：
 
 ```javascript
 import { render, fireEvent } from "@testing-library/svelte";
@@ -1265,14 +1256,17 @@ describe("Book App", () => {
   test("can add book", async () => {
     // 实例化并渲染组件
     const app = render(App);
+
     // 检查最初没有列表项
     expect(() => app.getAllByRole("listitem")).toThrow();
+
     // 模拟用户输入
     const input = await app.findByLabelText("Add Book");
     await fireEvent.input(input, {
       target: { value: "Writing Svelte Tests" },
     });
     await fireEvent.keyDown(input, { key: "Enter" });
+
     // 检查现在有一个列表项
     expect(app.getAllByRole("listitem").length).toBe(1);
     expect(app.getByText("Writing Svelte Tests")).toBeDefined();
@@ -1294,9 +1288,9 @@ describe("Book App", () => {
 
 [Selenium](https://www.selenium.org/) 是一个用于自动化浏览器的开源框架。它允许使用各种编程语言编写测试并在不同的浏览器中运行。[Playwright](https://playwright.dev/) 是微软推出的用于现代应用端到端测试的框架。它快速、可靠并支持多种浏览器。
 
-如果你想使用相同的样式获取 HTML 元素，Testing Library 可以提供。只需安装 `@testing-library/cypress`，你就可以可以使用熟悉的查询方法。
+如果你想使用相同的样式获取 HTML 元素，Testing Library 可以提供。只需安装 `@testing-library/cypress`，你就可以使用熟悉的查询方法。
 
-Cypress 运行在特定的，因此我们在 `cypress/integration` 中创建一个新的 `.spec.js` 文件，并继续编写之前的相同测试，这次使用 Cypress：
+Cypress 运行在特定的环境中，因此我们在 `cypress/integration` 中创建一个新的 `.spec.js` 文件，并继续编写之前的相同测试，这次使用 Cypress：
 
 ```javascript
 /// <reference types="cypress" />
@@ -1310,8 +1304,10 @@ describe("Books App", () => {
   it("can add book", () => {
     // 检查最初没有项
     cy.get("li").should("have.length", 0);
+
     // 模拟用户输入
     cy.get("input").type("Writing Svelte Tests{enter}");
+
     // 检查现在有一个列表项
     cy.get("li")
       .should("have.length", 1)
@@ -1327,11 +1323,8 @@ describe("Books App", () => {
 
 ## 结语
 
-
-
-
 目前关于 Svelte 应用测试的内容就到这里！我们学习了如何使用 `Jest` 进行单元测试和集成测试，如何使用 `Cypress` 进行 E2E 测试来构建正确的测试环境，并使用每种工具编写了简单的测试。我们学习了测试金字塔，它展示了测试中不同层次的抽象，并通过这两个测试工具亲身体验了它们之间的区别。我们还了解到良好的测试和良好的代码往往相互影响，而脆弱和/或难以编写的测试可能意味着你的代码需要一些重构。
 
 本书到此结束了！我们已经走了很长一段路。我们学习了模板语法的方方面面，以及如何为 HTML 添加动态行为。我们学习了响应式语句，它们能帮助我们计算派生值或响应其他变量的变化，并发现编写它们是多么简单。在使用 Svelte store 时我们也看到了同样的特性：订阅它们非常简单，以及如何基于它们构建健壮的状态管理解决方案。我们还学习了不同的组件交互概念，这些概念有助于你组织和扩展应用程序。最后，在本章中，我们学习了如何测试 Svelte 应用。
 
-有了了这些新知识，你现在准备好构建可扩展的 Svelte 应用了。祝你好运，玩得开心！
+有了这些新知识，你现在准备好构建可扩展的 Svelte 应用了。祝你好运，玩得开心！

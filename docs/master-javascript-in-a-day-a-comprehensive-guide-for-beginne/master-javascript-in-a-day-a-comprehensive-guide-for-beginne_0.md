@@ -1,48 +1,55 @@
+
 # 一日精通 JavaScript：初学者综合指南
-
-
 
 ![](img/image_rsrc5N6.jpg)
 
 # 目录
 
 ## JavaScript 语句
+
 - JavaScript 语句示例：
     - 1. 变量声明
     - 2. 条件语句
     - 3. 循环
 
 ## JavaScript 语法
+
 - JavaScript 语法示例：
     - 1. 函数定义
     - 2. 对象字面量
     - 3. 数组声明
 
 ## JavaScript 注释
+
 - JavaScript 注释示例：
     - 1. 单行注释
     - 2. 多行注释
     - 3. 注释代码
 
 ## JavaScript 变量
+
 - JavaScript 变量示例：
     - 1. 声明与赋值
     - 2. 字符串变量
     - 3. 对象变量
 
 ## JavaScript let
+
 - JavaScript 中的 let 示例
 
 ## JavaScript const
+
 - JavaScript 中的 const 示例
 
 ## JavaScript 运算符
+
 - JavaScript 运算符示例：
     - 1. 算术运算符
     - 2. 比较运算符
     - 3. 逻辑运算符
 
 ## JS 算术
+
 - JS 算术示例：
     - 加法
     - 减法
@@ -51,491 +58,709 @@
     - 取模（余数）
 
 ## JS 赋值
+
 - JS 赋值示例：
     - 为变量赋值
     - 为表达式结果赋值
 
 ## JS 数据类型
+
 - JS 数据类型示例：
     - 基本数据类型
     - 复杂数据类型
 
 ## JS 函数
+
 - JS 函数示例：
     - 函数声明
     - 函数调用
     - 箭头函数
 
 ## JS 对象
+
 - JS 对象示例：
     - 对象声明
     - 访问对象属性
     - 调用对象方法
 
 ## JS 事件
+
 - JS 事件示例：
     - 点击事件
     - 输入事件
 
 ## JS 字符串
+
 - JS 字符串示例：
     - 声明字符串变量
     - 字符串拼接
 
 ## JS 字符串方法
+
 - JS 字符串方法示例：
     - `toUpperCase()` 方法
     - `substring()` 方法
 
 ## JS 字符串搜索
+
 - JS 字符串搜索示例：
     - `indexOf()` 方法
     - `includes()` 方法
 
 ## JS 字符串模板
+
 - JS 字符串模板示例：
     - 基础模板字面量
     - 多行模板字面量
 
 ## JS 数字
+
 - JS 数字示例：
     - 整数
     - 小数
     - 科学计数法
 
 ## JS BigInt
+
 - JS BigInt 示例：
     - 创建 BigInt
     - 使用 BigInt 进行运算
 
 ## 数字方法
+
 - JS 数字方法示例：
     - `toFixed()` 方法
     - `parseInt()` 方法
 
 ## 数字属性
+
 - JS 数字属性示例：
     - `Number.MAX_VALUE`
     - `Number.MIN_VALUE`
 
 ## JS 数组
+
 - JS 数组示例：
     - 声明
     - 访问元素
     - 修改元素
 
 ## JS 数组方法
+
 - JS 数组方法示例：
     - `push()` 方法
     - `pop()` 方法
     - `splice()` 方法
 
 ## JS 数组排序
+
 - JS 数组排序示例：
     - 排序数字
     - 排序字符串
 
 ## JS 数组迭代
+
 - JS 数组迭代示例：
     - `forEach()` 方法
     - `map()` 方法
 
 ## JS 数组 Const
+
 - JS 数组 const 示例
 
 ## JS 日期
+
 - JS 日期示例：
     - 创建日期对象
     - 创建特定日期
 
 ## JS 日期格式
+
 - JS 日期格式示例：
     - 格式化为字符串
     - 格式化为本地字符串
 
 ## JS 日期获取方法
+
 - JS 日期获取方法示例：
     - `getFullYear()` 方法
     - `getMonth()` 方法
 
 ## JS 日期设置方法
+
 - JS 日期设置方法示例：
     - `setFullYear()` 方法
     - `setMonth()` 方法
 
 ## JS 数学
+
 - JS 数学示例：
     - `Math.PI` 属性
     - `Math.sqrt()` 方法
 
 ## JS 随机
+
 - JS 随机示例：
     - 生成随机数
     - 生成随机整数
 
 ## JS 布尔
+
 - JS 布尔示例：
     - 声明
     - 比较
 
 ## JS 比较
+
 - JS 比较示例：
     - `==` (相等运算符)
     - `===` (全相等运算符)
 
 ## JS If Else
+
 - JS If Else 示例：
     - 基础 `if...else`
     - 嵌套 `if...else`
 
 ## JS Switch
+
 - JS Switch 示例：
     - 基础 `switch`
 
 ## For 循环
+
 - JS 循环示例：
     - 基础 `for`
     - 遍历数组元素
 
 ## For In 循环
+
 - JS For In 循环示例：
     - 遍历对象属性
 
 ## For Of 循环
+
 - JS For Of 循环示例：
     - 遍历数组元素
 
 ## While 循环
+
 - JS While 循环示例：
     - 基础 `while` 循环
 
 ## JS Break
+
 - JS Break 示例：
     - 在循环中使用 `break`
 
 ## JS 可迭代对象
+
 - JS 可迭代对象示例：
     - 在 `for...of` 使用迭代对象
 
 ## JS Set
+
 - JS Set 示例：
     - 创建一个 Set
-
-
-
-
 
 ## 遍历集合
 
 ## JS Maps
+
 ### JS Maps 示例
+
 ### 创建 Map
+
 ### 遍历 Map
 
 ## JS Typeof
+
 ### JS Typeof 示例
+
 ### 使用 `typeof`
 
 ## JS 类型转换
+
 ### JS 类型转换示例
+
 ### 字符串转数字
+
 ### 数字转字符串
 
 ## JS 位运算符
+
 ### JS 位运算符示例
+
 ### 位与运算符 (&)
+
 ### 位或运算符 (|)
 
 ## JS RegExp
+
 ### JS RegExp 示例
+
 ### 创建正则表达式
+
 ### 使用 RegExp 测试字符串
 
 ## JS 优先级
+
 ### JS 优先级示例
+
 ### 算术优先级
 
 ## JS 错误
+
 ### JS 错误示例
+
 ### 语法错误 (Syntax Error)
+
 ### 引用错误 (Reference Error)
 
 ## JS 作用域
+
 ### JS 作用域示例
+
 ### 全局作用域
 
 ## JS 提升 (Hoisting)
+
 ### JS 提升示例
+
 ### 提升
+
 ### 函数提升
 
 ## JS 严格模式
+
 ### JS 严格模式示例
+
 ### 开启严格模式
+
 在函数内部使用严格模式
 
 ## JS this 关键字
+
 ### JS this 关键字示例
+
 在对象中使用 `this`
 
 ## JS 箭头函数
+
 ### JS 箭头函数示例
+
 ### 基础箭头函数
+
 多行箭头函数
 
 ## JS 类 (Classes)
+
 ### JS 类示例
+
 ### 类声明
 
 ## JS 模块
+
 ### JS 模块示例
+
 ### 导出模块
+
 ### 模块
 
 ## JS JSON
+
 ### JS JSON 示例
+
 解析 JSON
+
 将对象转为 JSON 字符串
 
 ## JS 调试
+
 ### JS 调试示例
+
 使用 `console.log()` 调试
+
 使用浏览器开发者工具
 
 ## JS 风格指南
+
 ### JS 风格指南示例
+
 命名规范
+
 缩进
 
 ## JS 最佳实践
+
 ### JS 最佳实践示例
+
 使用有意义的变量名
+
 避免全局变量
 
 ## JS 错误
+
 ### JS 错误示例
+
 缺少分号
+
 未初始化的变量
 
 ## JS 性能
+
 ### JS 性能示例
+
 减少 DOM 操作
+
 使用高效算法
 
 ## JS 留关键字
+
 ### JS 留关键字示例
+
 `let`, `const`, `function`, `class` 等
 
 ## JS 对象
+
 ### 对象定义
+
 使用对象字面量创建对象
+
 使用 Object 构造函数
+
 ### 属性
+
 ### 属性示例
-###访问属性
+
+### 访问属性
+
 添加或修改属性
+
 ### 方法
+
 方法示例
+
 ### 访问方法
+
 给对象添加方法
+
 ### 对象显示
+
 对象显示示例
+
 使用 `console.log()`
+
 使用 JSON 序列化
+
 ### 对象访问器 (Accessors)
+
 ### 对象访问器示例
+
 使用 Getters 和 Setters
+
 ### 对象构造函数
+
 ### 对象构造函数示例
+
 使用构造函数
+
 ### 对象原型
+
 ### 对象原型示例
+
 在原型链上添加方法
+
 ### 对象迭代器
+
 ### 对象迭代器示例
+
 使用 `for...in` 循环
+
 使用 `Object.keys()`
 
 ## 对象集合 (Sets)
+
 ### 对象集合示例
+
 创建 Set
+
 检查集合成员关系
 
 ## 对象映射 (Maps)
+
 ### 对象映射示例
+
 创建 Map
+
 从 Map 中获取值
 
 ## 对象引用
+
 ### 对象引用示例
+
 引用对象
+
 通过引用更改对象
 
 ## JS 函数
+
 ### 函数定义
+
 ### 函数声明
+
 ### 函数表达式
+
 ### 箭头函数
+
 ### 函数参数
+
 函数参数示例
+
 单参数
+
 多参数
+
 ### 函数调用
+
 函数调用示例
+
 调用函数
+
 ### 函数调用
+
 函数调用示例
+
 使用 `call()`
+
 ### 函数 Apply
+
 函数 Apply 示例
+
 使用 `apply()`
+
 ### 函数 Bind
+
 函数 Bind 示例
+
 使用 `bind()`
+
 ### 函数闭包
+
 ### 函数闭包示例
+
 闭包示例
-
-
-
 
 ## 修改元素样式
 
 ## DOM HTML
+
 ## 修改 HTML 属性
+
 ## DOM 表单
+
 ### 访问表单元素
 
 ## DOM CSS
+
 ### 修改 CSS 类
 
 ## DOM 动画
+
 ### 元素动画
 
 ## DOM 事件
+
 ### 点击事件处理
+
 ### DOM 事件监听器
+
 ### 鼠标悬入事件处理
 
 ## DOM 导航
+
 ### 遍历子元素
 
 ## DOM 节点
+
 ### 创建新节点
 
 ## DOM 集合
+
 ### 访问集合元素
 
 ## DOM 节点列表
+
 ### 访问节点列表元素
 
 ## JS Browser BOM
+
 ## JS Window
+
 ### 访问窗口属性
 
 ## JS Screen
+
 ### 访问屏幕属性
 
 ## JS Location
+
 ### 访问位置信息
 
 ## JS History
+
 ### 访问历史方法
 
 ## JS Navigator
+
 ### 访问导航属性
 
 ## JS Popup Alert
+
 ### 显示警框
 
 ## JS 定计时
+
 ### 使用 `setTimeout()`
+
 ### 使用 `setInterval()`
 
 ## JS Cookies
+
 ### 设置 Cookie
+
 ### 访问 Cookie
 
 ## JS Web APIs
+
 ### Web API 简介
+
 ### 访问 Web API:
 
 ## Web Forms API
+
 ### 访问表单元素
 
 ## Web History API
+
 ### 修改浏览器历史
 
 ## Web Storage API
+
 ### 使用 `localStorage`
 
 ## Web Worker API
+
 ### 创建 Web Worker
 
 ## Web Fetch API
+
 ### 发起 GET 请求
 
 ## Web Geolocation API
+
 ### 获取用户位置
 
 ## JS AJAX
+
 ### AJAX 简介
-###get AJAX 请求
+
+### get AJAX 请求
+
 ### AJAX XMLHttp
+
 ### 使用 `XMLHttpRequest`
+
 ### AJAX 请求
+
 ### 发送 POST 请求
+
 ### AJAX 响应
+
 ### 处理 JSON 响应
+
 ### AJAX XML 文件
+
 ### 获取 XML 文件
+
 ## AJAX PHP
+
 ### 在 PHP 中处理 AJAX
 
 ## AJAX ASP
+
 ### 结合 AJAX
 
 ## AJAX Database
+
 ### 与数据库交互
 
 ## AJAX 应用
+
 ### 实时聊天应用
 
 ## AJAX 示例
+
 ### AJAX 示例 1
+
 ### AJAX 示例 2
+
 ### AJAX 示例 3: 动态内容加载
+
 ### AJAX 示例 4: 使用 AJAX 提交表单
+
 ### AJAX 示例 5: 获取 JSON
+
 ### AJAX 示例 6: 使用 AJAX 图片
+
 ### AJAX 示例 7: 自动完成
+
 ### AJAX 示例 8: 实时数据
+
 ### AJAX 示例 9: 无限滚动
+
 ### AJAX 示例 10: 带有进度条的文件上传
+
 ### AJAX 示例 11: 动态显示
 
 ## JS JSON
+
 ### JSON 简介
+
 ### JSON 数据示例：JSON 语法
+
 ### JSON 语法示例：JSON vs XML
+
 ### JSON 与 XML 示例：JSON 数据
+
 ### JSON 中不同类型的示例
+
 ### JSON 解析
+
 ### JSON 解析示例：JSON Stringify
+
 ### JSON Stringify
+
 ### JSON 字符串化示例：JSON 对象
+
 ### JSON 数组
+
 ### JSON 数组示例：JSON Server
+
 ### 从服务器获取 JSON 数据示例：JSON PHP
+
 ### PHP 中 JSON 的编码与解码
 
 ## JSON HTML
+
 ### 在 HTML 中使用 JSON 示例
 
 ## JSONP
+
 ### JSONP 请求示例
 
 ## JSON JSON
+
 1. 创建 JSON 对象
 2. 访问 JSON 对象属性
 3. 嵌套 JSON 对象
@@ -558,26 +783,40 @@
 20. 将 JSON 数据映射到另一种结构
 
 ## JavaScript vs jQuery：全面对比
+
 ### JavaScript 概述
+
 ### JavaScript 功能示例
+
 ### jQuery 概述
+
 ### jQuery 功能示例
+
 ### JavaScript 与 jQuery 之间的差异
+
 1. 语法
 2. DOM 操作
 3. 浏览器兼容性
 4. 学习曲线
 
 ## jQuery 选择器
+
 ### jQuery 选择器示例
+
 ## jQuery HTML 操作
+
 ### jQuery HTML 操作示例
+
 ## jQuery CSS 操作
+
 ### jQuery CSS 操作示例
+
 ## jQuery DOM 遍历
+
 ### jQuery 遍历示例
 
 ## 结论
+
 1. 通过 ID 选择元素
 2. 通过类选择多个元素
 3. 添加事件监听器
@@ -585,10 +824,6 @@
 5. 创建新元素
 6. 删除元素
 7. 操作 CSS 类
-
-
-
-
 
 # 目录
 
@@ -602,16 +837,23 @@
 - 20. 点击更改背景颜色
 
 ## JavaScript 图形库：详解
+
 ### 1. JavaScript 图形
+
 ### 2. JS Canvas
+
 ### 3. JS Plotly
+
 ### 4. JS Chart.js
+
 ### 5. JS Google Chart
+
 ### 6. JS D3.js
 
 ## 结论
 
 ## 示例
+
 - Canvas 示例
 - Plotly 示例
 - Chart.js 示例
@@ -624,6 +866,7 @@
 - D3.js 示例
 
 ## 基础示例
+
 - 字符串操作
 - 数组操作
 - 函数
@@ -782,10 +1025,6 @@ age: 30
 ```javascript
 const numbers = [1, 2, 3, 4, 5];
 ```
-
-
-
-
 
 JavaScript 中的变量用于存储数据值。它们可以持有各种类型的数据，如数字、字符串、对象等。
 
@@ -1129,10 +1368,6 @@ JavaScript 有一些与数字相关的内置属性。
 ```javascript
 console.log(Number.MAX_VALUE);  // 输出: 1.7976931348623157e+308
 ```
-
-
-
-
 
 ### `Number.MIN_VALUE` 属性：
 
@@ -1541,10 +1776,6 @@ JavaScript 中的迭代对象可以使用循环遍历的对象。
 let iterable  = [10, 20, 30];
 ```
 
-
-
-
-
 ```javascript
 for (let value of iterable) {
   console.log(value);
@@ -1690,6 +1921,7 @@ let result  = 5 + 3 * 2;  // 输出: 11 (乘法的优先级更高)
 ```javascript
 let x  = 10
 ```
+
 由于缺少分号，这将抛出语法错误。
 
 ### 引用错误 (Reference Error):
@@ -1697,6 +1929,7 @@ let x  = 10
 ```javascript
 console.log(undefinedVariable);
 ```
+
 由于 `undefinedVariable` 未定义，这将抛出引用错误。
 
 # JS Scope
@@ -1916,6 +2149,7 @@ JavaScript 中常见的错误以及避免它们的方法。
 ```javascript
 let x = 5
 ```
+
 记得在语句末尾添加分号。
 
 ### 未初始变量:
@@ -1938,9 +2172,6 @@ JavaScript 性能优化涉及优化代码以提高速度和效率。
 ### 使用高效算法:
 
 为操作选择具有更好时间复杂度的算法。
-
-
-
 
 };
 
@@ -2298,8 +2529,6 @@ return innerFunction;
 let closure  = outerFunction();
 closure();
 ```
-
-
 
 JavaScript 类中的静态方法是在类本身上调用的，而不是在类的实例上调用。
 
@@ -2703,9 +2932,6 @@ DOM 中的节点列表与集合相似，包含节点或元素。
 
 ## JS Window
 
-
-
-
 `window` 对象是浏览器 JavaScript 环境中的全局对象。
 
 ### 访问 Window 属性：
@@ -2720,6 +2946,8 @@ console.log(window.innerWidth);  // 输出：窗口内部宽度
 `screen` 对象代表设备的屏幕。
 
 ### 访问 Screen 属性：
+
+
 
 ```javascript
 console.log(screen.width);  // 输出：像素单位的屏幕宽度
@@ -2769,7 +2997,7 @@ JavaScript 中的弹出警报框向用户显示消息。
 alert("This is an alert message");
 ```
 
-# JS Timing
+## JS Timing
 
 JavaScript 的定时函数允许调度代码执行。
 
@@ -2802,7 +3030,7 @@ document.cookie = "username=John Doe; expires=Thu, 18 Dec 2023 12:00:00 UTC; pat
 ### 访问 Cookie：
 
 ```javascript
-let username =  document.cookie.split(';')[0].split('=')[1];
+let username = document.cookie.split(';')[0].split('=')[1];
 console.log(username);  // 输出：'John Doe'
 ```
 
@@ -2810,7 +3038,7 @@ console.log(username);  // 输出：'John Doe'
 
 ## JS Web APIs
 
-Web APIs 是 浏览器提供的工具和接口集，用于与浏览器或设备的各种功能进行交互。
+Web APIs 是浏览器提供的工具和接口集，用于与浏览器或设备的各种功能进行交互。
 
 ### Web API 简介
 
@@ -2835,8 +3063,8 @@ Web Forms API 提供了操作 HTML 表单元素的方法和属性。
 ### 访问表单元素：
 
 ```javascript
-let form =  document.getElementById("myForm");
-let inputField =  form.elements["username"];
+let form = document.getElementById("myForm");
+let inputField = form.elements["username"];
 console.log(inputField.value);
 ```
 
@@ -2858,7 +3086,7 @@ Web Storage API 在浏览器中存储数据的方法。
 
 ```javascript
 localStorage.setItem("key", "value");
-let data =  localStorage.getItem("key");
+let data = localStorage.getItem("key");
 ```
 
 ## Web Worker API
@@ -2875,7 +3103,7 @@ self.onmessage = function (event) {
 };
 
 // main.js
-let worker =  new Worker("worker.js");
+let worker = new Worker("worker.js");
 worker.onmessage = function (event) {
   console.log("Message received from worker:", event.data);
 };
@@ -2916,16 +3144,12 @@ AJAX（异步 JavaScript 和 XML）是一种在不刷新页面的情况下与服
 
 ### AJAX 简介
 
-AJAX 允许在不刷新 own 的情况下更新页面内容。
-
-### AJAX 请求
-
-AJAX 允许在不刷新 own 情况下更新页面内容。
+AJAX 允许在不刷新页面的情况下更新页面内容。
 
 ### 简单 AJAX 请求：
 
 ```javascript
-let xhttp =  new XMLHttpRequest();
+let xhttp = new XMLHttpRequest();
 xhttp.onreadystatechange = function() {
   if (this.readyState == 4 && this.status == 200) {
     document.getElementById("demo").innerHTML = this.responseText;
@@ -2942,7 +3166,7 @@ xhttp.send();
 ### 使用 `XMLHttpRequest`：
 
 ```javascript
-let xhttp =  new XMLHttpRequest();
+let xhttp = new XMLHttpRequest();
 xhttp.onreadystatechange = function() {
   if (this.readyState == 4 && this.status == 200) {
     console.log(this.responseText);
@@ -2951,14 +3175,10 @@ xhttp.onreadystatechange = function() {
 xhttp.open("GET", "data.txt");
 ```
 
-### AJAX 请求
-
-AJAX 请求在浏览器和服务器之间交换数据。
-
 ### POST 请求：
 
 ```javascript
-let xhttp =  new XMLHttpRequest();
+let xhttp = new XMLHttpRequest();
 xhttp.onreadystatechange = function() {
   if (this.readyState == 4 && this.status == 200) {
     console.log(this.responseText);
@@ -2976,10 +3196,10 @@ xhttp.send("name=John&age=30");
 ### JSON 响应：
 
 ```javascript
-let xhttp =  new XMLHttpRequest();
+let xhttp = new XMLHttpRequest();
 xhttp.onreadystatechange = function() {
   if (this.readyState == 4 && this.status == 200) {
-    let data =  JSON.parse(this.responseText);
+    let data = JSON.parse(this.responseText);
     console.log(data);
   }
 };
@@ -2994,10 +3214,10 @@ AJAX 可获取并处理 XML 文件。
 ### 获取 XML 文件：
 
 ```javascript
-let xhttp =  new XMLHttpRequest();
+let xhttp = new XMLHttpRequest();
 xhttp.onreadystatechange = function() {
   if (this.readyState == 4 && this.status == 200) {
-    let xmlDoc =  this.responseXML;
+    let xmlDoc = this.responseXML;
     console.log(xmlDoc);
   }
 };
@@ -3012,7 +3232,7 @@ AJAX 可以与 PHP 等服务器端技术进行交互。
 ### 在 PHP 中处理 AJAX：
 
 ```javascript
-let xhttp =  new XMLHttpRequest();
+let xhttp = new XMLHttpRequest();
 xhttp.onreadystatechange = function() {
   if (this.readyState == 4 && this.status == 200) {
     console.log(this.responseText);
@@ -3036,36 +3256,20 @@ echo "Hello from PHP!";
 ### 使用 ASP 进行 AJAX：
 
 ```javascript
-let xhttp =  new XMLHttpRequest();
+let xhttp = new XMLHttpRequest();
 xhttp.onreadystatechange = function() {
   if (this.readyState == 4 && this.status == 200) {
-```
-
-
-
-
-
-```javascript
-console.log(this.responseText);
-
-}
-
+    console.log(this.responseText);
+  }
 };
-
 xhttp.open("GET", "process.asp", true);
-
 xhttp.send();
 ```
 
-asp 代码
-
-<!-- process.asp -->
-
 ```asp
+<!-- process.asp -->
 <%
-
 Response.Write("Hello from ASP!")
-
 %>
 ```
 
@@ -3075,31 +3279,21 @@ AJAX 可以与服务器上的数据库进行交互。
 
 ### 使用 AJAX 进行数据库交互：
 
-javascript 代码
-
 ```javascript
 let xhttp = new XMLHttpRequest();
-
 xhttp.onreadystatechange = function() {
   if (this.readyState == 4 && this.status == 200) {
     console.log(this.responseText);
   }
 };
-
 xhttp.open("GET", "fetch_data.php", true);
-
 xhttp.send();
 ```
 
-php 代码
-
 ```php
 // fetch_data.php
-
 <?php
-
 // 从数据库获取数据并以 JSON 格式返回
-
 ?>
 ```
 
@@ -3108,8 +3302,6 @@ php 代码
 AJAX 能够构建带有实时数据的交互式 Web 应用程序。
 
 ### 实时聊天应用：
-
-javascript 代码
 
 ```javascript
 setInterval(() => {
@@ -3123,15 +3315,11 @@ setInterval(() => {
 
 ### AJAX 示例 1：
 
-javascript 代码
-
 ```javascript
 // 从 API 获取天气数据并显示在网页上
 ```
 
 ### AJAX 示例 2：
-
-javascript 代码
 
 ```javascript
 // 获取用户特定数据并动态更新个人信息
@@ -3141,9 +3329,7 @@ javascript 代码
 
 ### AJAX 示例 3：动态内容加载
 
-### HTML:
-
-html 代码
+#### HTML:
 
 ```html
 <!DOCTYPE html>
@@ -3170,9 +3356,7 @@ function loadContent() {
 </html>
 ```
 
-### content.html (示例内容):
-
-html 代码
+#### content.html (示例内容):
 
 ```html
 <h2>欢迎来到动态内容</h2>
@@ -3183,9 +3367,7 @@ html 代码
 
 ### AJAX 示例 4：使用 AJAX 提交表单
 
-### HTML:
-
-html 代码
+#### HTML:
 
 ```html
 <!DOCTYPE html>
@@ -3217,13 +3399,10 @@ function submitForm() {
 </html>
 ```
 
-### processForm.php (服务器端处理):
-
-php 代码
+#### processForm.php (服务器端处理):
 
 ```php
 <?php
-
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
   $username = $_POST["username"];
   $password = $_POST["password"];
@@ -3232,7 +3411,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 } else {
   echo "无效请求！";
 }
-
 ?>
 ```
 
@@ -3240,9 +3418,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 ### AJAX 示例 5：获取 JSON 数据
 
-### JavaScript:
-
-javascript 代码
+#### JavaScript:
 
 ```javascript
 fetch('data.json')
@@ -3254,9 +3430,7 @@ fetch('data.json')
   .catch(error => console.error('错误:', error));
 ```
 
-### data.json (示例 JSON 数据):
-
-json 代码
+#### data.json (示例 JSON 数据):
 
 ```json
 {
@@ -3272,9 +3446,7 @@ json 代码
 
 ### AJAX 示例 6：带 AJAX 的图片库
 
-### HTML:
-
-html 代码
+#### HTML:
 
 ```html
 <!DOCTYPE html>
@@ -3307,9 +3479,7 @@ function loadImages() {
 </html>
 ```
 
-### images.json (示例 JSON 数据):
-
-json 代码
+#### images.json (示例 JSON 数据):
 
 ```json
 [
@@ -3328,9 +3498,7 @@ json 代码
 
 ### AJAX 示例 7：自动补全搜索
 
-### HTML:
-
-html 代码
+#### HTML:
 
 ```html
 <!DOCTYPE html>
@@ -3365,9 +3533,7 @@ function search() {
 </html>
 ```
 
-### search.php (服务器端脚本):
-
-php 代码
+#### search.php (服务器端脚本):
 
 ```php
 <?php
@@ -3379,7 +3545,6 @@ $results = [
 ]; // 根据需要添加更多结果
 
 echo json_encode($results); // 以 JSON 格式返回
-
 ?>
 ```
 
@@ -3387,9 +3552,7 @@ echo json_encode($results); // 以 JSON 格式返回
 
 ### AJAX 示例 8：实时数据更新
 
-### HTML:
-
-html 代码
+#### HTML:
 
 ```html
 <!DOCTYPE html>
@@ -3417,9 +3580,7 @@ window.onload = updateData;
 </html>
 ```
 
-### live_data.php (服务器端脚本):
-
-php 代码
+#### live_data.php (服务器端脚本):
 
 ```php
 <?php
@@ -3427,25 +3588,15 @@ echo json_encode(["value" => date("H:i:s")]);
 ?>
 ```
 
-
-
-
-
-# php 代码
-
 ```php
 <?php
-
-//  模拟实时数据更新
-
-$data = ['value' => rand(1, 100)];  //  生成随机值
-
+// 模拟实时数据更新
+$data = ['value' => rand(1, 100)];  // 生成随机值
 echo json_encode($data);  // 以 JSON 格式返回实时数据
-
 ?>
 ```
 
-示例演示了如何使用 AJAX 定隔在网页上更新实时数据。JavaScript 函数 `updateData` 使用 `setInterval` 每 5 秒从服务器端 PHP 脚本（`live_data.php`）获取更新的数据，并将其显示在网页上。
+示例演示了如何使用 AJAX 定时在网页上更新实时数据。JavaScript 函数 `updateData` 使用 `setInterval` 每 5 秒从服务器端 PHP 脚本（`live_data.php`）获取更新的数据，并将其显示在网页上。
 
 ## AJAX 示例 9：无限滚动
 
@@ -3458,33 +3609,33 @@ echo json_encode($data);  // 以 JSON 格式返回实时数据
 <title>无限滚动</title>
 <style>
 #content {
-height:  200px;
-overflow-y:  scroll;
+  height: 200px;
+  overflow-y: scroll;
 }
 </style>
 <script>
-let page  =  1;
-function loadMoreContent()  {
-let content  =  document.getElementById('content');
-let scrollHeight  =  content.scrollHeight;
-let scrollTop  =  content.scrollTop;
-let offsetHeight  =  content.offsetHeight;
-if (scrollHeight  -  scrollTop  ===  offsetHeight)  {
-fetch(`content.php?page=${page}`)
-.then(response => response.text())
-.then(data => {
-content.innerHTML +=  data;
-page++;
-})
-.catch(error => console.error('Error:', error));
+let page = 1;
+function loadMoreContent() {
+  let content = document.getElementById('content');
+  let scrollHeight = content.scrollHeight;
+  let scrollTop = content.scrollTop;
+  let offsetHeight = content.offsetHeight;
+  if (scrollHeight - scrollTop === offsetHeight) {
+    fetch(`content.php?page=${page}`)
+      .then(response => response.text())
+      .then(data => {
+        content.innerHTML += data;
+        page++;
+      })
+      .catch(error => console.error('Error:', error));
+  }
 }
-}
-window.onscroll =  loadMoreContent;
+window.onscroll = loadMoreContent;
 </script>
 </head>
 <body>
 <div id="content" onscroll="loadMoreContent()">
-<!--  初始加载的内容  -->
+<!-- 初始加载的内容 -->
 </div>
 </body>
 </html>
@@ -3494,18 +3645,16 @@ window.onscroll =  loadMoreContent;
 
 ```php
 <?php
-
-$page =  $_GET['page'];  //  获取页码
-$limit =  10;  //  每页项目数
-$start = ($page -  1) *  $limit;  //  计算起始索引
-//  根据页码和限制获取内容
-//  示例：  $results  =  fetchDataFromDatabase($start, $limit);
-//  生成示例内容用于演示
-$results =  range($start +  1, $start +  $limit);
-foreach ($results as $result)  {
-echo "<p>项目 $result</p>";
+$page = $_GET['page'];  // 获取页码
+$limit = 10;  // 每页项目数
+$start = ($page - 1) * $limit;  // 计算起始索引
+// 根据页码和限制获取内容
+// 示例：$results = fetchDataFromDatabase($start, $limit);
+// 生成示例内容用于演示
+$results = range($start + 1, $start + $limit);
+foreach ($results as $result) {
+  echo "<p>项目 $result</p>";
 }
-
 ?>
 ```
 
@@ -3523,27 +3672,27 @@ echo "<p>项目 $result</p>";
 <head>
 <title>带进度的文件上传</title>
 <script>
-function uploadFile()  {
-let fileInput  =  document.getElementById('fileInput');
-let file  =  fileInput.files[0];
-let formData  =  new FormData();
-formData.append('file', file);
-let xhr  =  new XMLHttpRequest();
-xhr.open('POST', 'upload.php', true);
-xhr.upload.onprogress =  function(e)  {
-if (e.lengthComputable)  {
-let percentComplete  = (e.loaded / e.total) * 100;
-document.getElementById('progressBar').style.width =  percentComplete  +  '%';
-}
-};
-xhr.onload =  function()  {
-if (xhr.status ===  200)  {
-alert('文件上传成功！');
-} else {
-alert('文件上传失败。');
-}
-};
-xhr.send(formData);
+function uploadFile() {
+  let fileInput = document.getElementById('fileInput');
+  let file = fileInput.files[0];
+  let formData = new FormData();
+  formData.append('file', file);
+  let xhr = new XMLHttpRequest();
+  xhr.open('POST', 'upload.php', true);
+  xhr.upload.onprogress = function(e) {
+    if (e.lengthComputable) {
+      let percentComplete = (e.loaded / e.total) * 100;
+      document.getElementById('progressBar').style.width = percentComplete + '%';
+    }
+  };
+  xhr.onload = function() {
+    if (xhr.status === 200) {
+      alert('文件上传成功！');
+    } else {
+      alert('文件上传失败。');
+    }
+  };
+  xhr.send(formData);
 }
 </script>
 </head>
@@ -3561,17 +3710,15 @@ xhr.send(formData);
 
 ```php
 <?php
-
-if ($_SERVER['REQUEST_METHOD'] ===  'POST' && isset($_FILES['file']))  {
-$targetDir =  'uploads/';
-$targetFile =  $targetDir .  basename($_FILES['file']['name']);
-if (move_uploaded_file($_FILES['file']['tmp_name'], $targetFile))  {
-echo '文件上传成功！';
-} else {
-echo '文件上传失败。';
+if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_FILES['file'])) {
+  $targetDir = 'uploads/';
+  $targetFile = $targetDir . basename($_FILES['file']['name']);
+  if (move_uploaded_file($_FILES['file']['tmp_name'], $targetFile)) {
+    echo '文件上传成功！';
+  } else {
+    echo '文件上传失败。';
+  }
 }
-}
-
 ?>
 ```
 
@@ -3587,17 +3734,17 @@ echo '文件上传失败。';
 <head>
 <title>动态显示时间</title>
 <script>
-function displayTime()  {
-let timeDisplay  =  document.getElementById('timeDisplay');
-setInterval(() => {
-fetch('getTime.php')
-.then(response => response.text())
-.then(data => {
-timeDisplay.innerHTML =  data;
-})
-.catch(error => console.error('Error:', error));
-}, 1000);
-
+function displayTime() {
+  let timeDisplay = document.getElementById('timeDisplay');
+  setInterval(() => {
+    fetch('getTime.php')
+      .then(response => response.text())
+      .then(data => {
+        timeDisplay.innerHTML = data;
+      })
+      .catch(error => console.error('Error:', error));
+  }, 1000);
+}
 displayTime();
 </script>
 </head>
@@ -3616,10 +3763,6 @@ echo date("H:i:s");
 ```
 
 此示例演示了如何使用 AJAX 动态显示当前时间。JavaScript 中的 `setInterval` 函数每秒从 `getTime.php` 获取当前时间，并更新 `timeDisplay` 元素的内容，无需刷新页面。
-
-
-
-
 
 ```json
 { "city": "London" }
@@ -3642,7 +3785,7 @@ JSON 数组是封装在方括号 `[]` 中的有序值列表。这些值可以是
 ### 来自服务器的 JSON 数据示例：
 
 ```json
-//  从服务器 API 端点接收
+// 从服务器 API 端点接收
 {
   "id": 1,
   "title": "Sample Post",
@@ -3657,11 +3800,11 @@ JSON 数组是封装在方括号 `[]` 中的有序值列表。这些值可以是
 ### 在 PHP 中编码和解码 JSON 的示例：
 
 ```php
-//  将 PHP 数组编码为 JSON
+// 将 PHP 数组编码为 JSON
 $data = array("name"=> "Peter", "age"=> 28);
 $jsonData = json_encode($data);
 
-//  将 JSON 解码为 PHP 数组
+// 将 JSON 解码为 PHP 数组
 $jsonString = '{"name": "Alice", "age": 30}';
 $decodedData = json_decode($jsonString, true);
 ```
@@ -3704,7 +3847,7 @@ script.src = 'https://example.com/data?callback=handleData';
 document.head.appendChild(script);
 ```
 
-本综合指南详细介绍了 JSON（JavaScript 对象表示），包括介绍、与 XML 的比较、数据类型、解析、字符串化、JSON 对象和数组、以及在 PHP、HTML 和 JSONP 等服务器端技术中使用 JSON，并为每个主题提供了了示例和解释。由于其简单性、易用性以及广泛的支持，JSON 在 Web 开发的数据交换中起着至关重要的作用。
+本综合指南详细介绍了 JSON（JavaScript 对象表示），包括介绍、与 XML 的比较、数据类型、解析、字符串化、JSON 对象和数组、以及在 PHP、HTML 和 JSONP 等服务器端技术中使用 JSON，并为每个主题提供了示例和解释。由于其简单性、易用性以及广泛的支持，JSON 在 Web 开发的数据交换中起着至关重要的作用。
 
 ### 1. 创建 JSON 对象：
 
@@ -3719,8 +3862,8 @@ let person = {
 ### 2. 访问 JSON 对象属性：
 
 ```javascript
-console.log(person.name); //  输出: John
-console.log(person.age); //  输出: 30
+console.log(person.name); // 输出: John
+console.log(person.age); // 输出: 30
 ```
 
 ### 3. 嵌套 JSON 对象：
@@ -3750,23 +3893,23 @@ let books = [
 
 ```javascript
 let jsonString = JSON.stringify(person);
-console.log(jsonString); //  输出: {"name":"John","age":30,"city":"New York"}
+console.log(jsonString); // 输出: {"name":"John","age":30,"city":"New York"}
 ```
 
 ### 6. 将 JSON 字符串解析为对象：
 
 ```javascript
 let jsonObject = JSON.parse('{"name":"Alice","age":25,"city":"London"}');
-console.log(jsonObject.name); //  输出: Alice
+console.log(jsonObject.name); // 输出: Alice
 ```
 
 ### 7. 从 URL 获取 JSON 数据（使用 Fetch API）：
 
 ```javascript
 fetch('data.json')
-.then(response => response.json())
-.then(data => console.log(data))
-.catch(error => console.error('Error:', error));
+  .then(response => response.json())
+  .then(data => console.log(data))
+  .catch(error => console.error('Error:', error));
 ```
 
 ### 8. 在 HTML 中动态显示 JSON 数据：
@@ -3814,7 +3957,7 @@ let employees = [
   { "name": "Alice", "department": "HR" },
   { "name": "Bob", "department": "HR" }
 ];
-let hrEmployees = employees.filter(employee => employee.department ===HR");
+let hrEmployees = employees.filter(employee => employee.department === "HR");
 console.log(hrEmployees);
 ```
 
@@ -3884,8 +4027,8 @@ console.log(jsonString);
 
 ```javascript
 axios.get('https://api.example.com/data')
-.then(response => console.log(response.data))
-.catch(error => console.error('Error:', error));
+  .then(response => console.log(response.data))
+  .catch(error => console.error('Error:', error));
 ```
 
 ### 19. 合并 JSON 对象：
@@ -3911,21 +4054,18 @@ console.log(mappedData);
 
 这些示例展示了 JavaScript 中使用 JSON 的不同方面，包括创建、操作、解析以及在各种场景下处理 JSON 数据。
 
-
-
-
+## JavaScript 和 jQuery
 
 JavaScript 和 jQuery 都是 Web 开发中强大的工具。JavaScript 是一种编程语言，而 jQuery 是使用 JavaScript 构建的一个库。理解它们区别、功能和使用场景对于开发者来说至关重要。
 
-## JavaScript 概述
+### JavaScript 概述
 
 JavaScript 是一种多功能的编程语言，主要用于增强网页的交互性。它是 Web 开发的核心技术，能够实现动态内容更新、用户交互以及处理客户端各项功能。
 
-### JavaScript 功能示例：
+#### JavaScript 功能示例：
 
 ```javascript
-//  JavaScript code to change text color on button click
-
+// JavaScript code to change text color on button click
 function changeColor() {
   document.getElementById("text").style.color = "blue";
 }
@@ -3933,38 +4073,37 @@ function changeColor() {
 
 JavaScript 提供了原生方法和 API 来与文档对象模型 (DOM) 交互并操作 HTML 元素，允许开发者创建动态 Web 应用。
 
-## jQuery 概述
+### jQuery 概述
 
 另一方面，jQuery 是一个快速、轻量级的 JavaScript 库，旨在简化客户端脚本和 DOM 操作过程。它抽象了 JavaScript 的许多复杂性，并为常见任务提供了简洁的语法。
 
-### jQuery 功能示例：
+#### jQuery 功能示例：
 
 ```javascript
-//  jQuery code to change text color on button click
-
+// jQuery code to change text color on button click
 $("#text").css("color", "blue");
 ```
 
 jQuery 简化了常见的 JavaScript 任务，如事件处理、动画、AJAX 请求和 DOM 操作，与原生 JavaScript 相比提供了更简洁的语法。
 
-## JavaScript 和 jQuery 的区别
+### JavaScript 和 jQuery 的区别
 
-### 1. 语法：
+#### 1. 语法：
 
 * JavaScript：使用语言提供的原生语法和方法。
 * jQuery：为常见任务提供了简单的语法和简洁的方法，使代码更短更具可读性。
 
-### 2. DOM 操作：
+#### 2. DOM 操作：
 
 * JavaScript：使用 `getElementById` 和 `querySelector` 等方法提供直接的 DOM 操作。
 * jQuery：通过 `$()` 等方法简化 DOM 遍历和操作，允许更轻松地选择和修改元素。
 
-### 3. 浏览器兼容性：
+#### 3. 浏览器兼容性：
 
 * JavaScript：适用于所有现代浏览器，但处理跨浏览器兼容性可能需要额外的代码。
 * jQuery：开箱即跨浏览器兼容性，减少了显式兼容性处理的需求。
 
-### 4. 学习曲线：
+#### 4. 学习曲线：
 
 * JavaScript：需要理解核心语言概念，对初学者来说学习曲线可能更陡峭。
 * jQuery：由于其简洁的语法和对复杂 JavaScript 操作的抽象，学习曲线更简单。
@@ -3976,12 +4115,10 @@ jQuery 提供了强大的选择器，允许开发者高效地定位和操作 HTM
 ### jQuery 选择器示例：
 
 ```javascript
-//  Selecting elements with class 'example'
-
+// Selecting elements with class 'example'
 $(".example").css("font-size", "16px");
 
-//  Selecting all <p> elements inside <div> with ID 'content'
-
+// Selecting all <p> elements inside <div> with ID 'content'
 $("#content p").addClass("highlight");
 ```
 
@@ -3994,12 +4131,10 @@ jQuery 通过提供插入、删除和修改 HTML 元素及其内容的方法，�
 ### jQuery HTML 操作示例：
 
 ```javascript
-//  Appending a new <li> element to an unordered list
-
+// Appending a new <li> element to an unordered list
 $("ul").append("<li>New Item</li>");
 
-//  Changing text content inside a <div> element
-
+// Changing text content inside a <div> element
 $("#content").text("Updated content");
 ```
 
@@ -4012,12 +4147,10 @@ jQuery 促进了 CSS 操作，允许动态更改元素样式。
 ### jQuery CSS 操作示例：
 
 ```javascript
-//  Changing the background color of an element
-
+// Changing the background color of an element
 $("#box").css("background-color", "#f2fff2");
 
-//  Toggling a CSS class on an element
-
+// Toggling a CSS class on an element
 $("#toggleBtn").click(function() {
   $("#content").toggleClass("active");
 });
@@ -4032,12 +4165,10 @@ jQuery 简化了 DOM 遍历，允许在元素及其在 DOM 中的关系之间轻
 ### jQuery DOM 遍历示例：
 
 ```javascript
-//  Finding the next sibling element
-
+// Finding the next sibling element
 $("#current").next().addClass("highlight");
 
-//  Traversing up the DOM to find parent elements
-
+// Traversing up the DOM to find parent elements
 $("a").closest("div").addClass("parent-div");
 ```
 
@@ -4047,19 +4178,21 @@ $("a").closest("div").addClass("parent-div");
 
 JavaScript 和 jQuery 在 Web 开发中各有优势和用场景。JavaScript 是基础语言，提供了构建复杂应用程序的广泛能力。jQuery 作为构建在 JavaScript 之上的库，简化了常见任务（特别是 DOM 操作），提供了更简洁的语法。
 
-对于现代开发，由于 Web 标准的进步，JavaScript 的原生功能通常更青青，而 jQuery 在旧项目或需要考虑与旧浏览器兼容性时仍然适用。理解 JavaScript 和 jQuery 能让开发者能够根据任务选择正确的工具，并构建健壮、交互式的 Web 应用。
+对于现代开发，由于 Web 标准的进步，JavaScript 的原生功能通常更受青睐，而 jQuery 在旧项目或需要考虑与旧浏览器兼容性时仍然适用。理解 JavaScript 和 jQuery 能让开发者能够根据任务选择正确的工具，并构建健壮、交互式的 Web 应用。
 
 ## 各种示例中的 JavaScript 和 jQuery：
 
 ### 1. 通过 ID 选择元素：
 
 #### JavaScript:
+
 ```javascript
 let element = document.getElementById("myElement");
 element.style.color = "blue";
 ```
 
 #### jQuery:
+
 ```javascript
 $("#myElement").css("color", "blue");
 ```
@@ -4067,6 +4200,7 @@ $("#myElement").css("color", "blue");
 ### 2. 通过类选择多个元素：
 
 #### JavaScript:
+
 ```javascript
 let elements = document.getElementsByClassName("myClass");
 for (let i = 0; i < elements.length; i++) {
@@ -4075,6 +4209,7 @@ for (let i = 0; i < elements.length; i++) {
 ```
 
 #### jQuery:
+
 ```javascript
 $(".myClass").css("font-weight", "bold");
 ```
@@ -4082,6 +4217,7 @@ $(".myClass").css("font-weight", "bold");
 ### 3. 添加事件监听器：
 
 #### JavaScript:
+
 ```javascript
 document.getElementById("myButton").addEventListener("click", function() {
   alert("Button clicked!");
@@ -4089,31 +4225,35 @@ document.getElementById("myButton").addEventListener("click", function() {
 ```
 
 #### jQuery:
+
 ```javascript
 $("#myButton").on("click", function() {
   alert("Button clicked!");
 });
 ```
 
-### 4. 就绪绪：
+### 4. DOM 就绪：
 
 #### JavaScript:
+
 ```javascript
 document.addEventListener("DOMContentLoaded", function() {
-  //  Code to execute when DOM is ready
+  // Code to execute when DOM is ready
 });
 ```
 
 #### jQuery:
+
 ```javascript
 $(document).ready(function() {
-  //  Code to execute when DOM is ready
+  // Code to execute when DOM is ready
 });
 ```
 
 ### 5. 创建新元素：
 
 #### JavaScript:
+
 ```javascript
 let newElement = document.createElement("div");
 newElement.textContent = "New Content";
@@ -4121,6 +4261,7 @@ document.body.appendChild(newElement);
 ```
 
 #### jQuery:
+
 ```javascript
 $("body").append("<div>New Content</div>");
 ```
@@ -4128,12 +4269,14 @@ $("body").append("<div>New Content</div>");
 ### 6. 移除一个元素：
 
 #### JavaScript:
+
 ```javascript
 let elementToRemove = document.getElementById("toBeRemoved");
 elementToRemove.parentNode.removeChild(elementToRemove);
 ```
 
 #### jQuery:
+
 ```javascript
 $("#toBeRemoved").remove();
 ```
@@ -4141,11 +4284,13 @@ $("#toBeRemoved").remove();
 ### 7. 操作 CSS 类：
 
 #### JavaScript:
+
 ```javascript
 document.getElementById("myDiv").classList.add("active");
 ```
 
 #### jQuery:
+
 ```javascript
 $("#myDiv").addClass("active");
 ```
@@ -4153,11 +4298,13 @@ $("#myDiv").addClass("active");
 ### 8. 修改文本内容：
 
 #### JavaScript:
+
 ```javascript
 document.getElementById("mySpan").textContent = "Updated Text";
 ```
 
 #### jQuery:
+
 ```javascript
 $("#mySpan").text("Updated Text");
 ```
@@ -4165,11 +4312,13 @@ $("#mySpan").text("Updated Text");
 ### 9. 隐藏一个元素：
 
 #### JavaScript:
+
 ```javascript
 document.getElementById("toHide").style.display = "none";
 ```
 
 #### jQuery:
+
 ```javascript
 $("#toHide").hide();
 ```
@@ -4177,6 +4326,7 @@ $("#toHide").hide();
 ### 10. 渐入元素：
 
 #### JavaScript:
+
 ```javascript
 let elementToFade = document.getElementById("toFade");
 elementToFade.style.opacity = 0;
@@ -4185,6 +4335,7 @@ elementToFade.style.opacity = 1;
 ```
 
 #### jQuery:
+
 ```javascript
 $("#toFade").fadeIn(1000);
 ```
@@ -4192,28 +4343,19 @@ $("#toFade").fadeIn(1000);
 ### 11. AJAX GET 请求：
 
 #### JavaScript:
+
 ```javascript
 let xhr = new XMLHttpRequest();
 xhr.onreadystatechange = function() {
+  if (this.readyState === 4 && this.status === 200) {
+    console.log(this.responseText);
+  }
 };
-```
-
-
-
-
-
-```javascript
-if (this.readyState === 4 && this.status === 200) {
-  console.log(this.responseText);
-}
-};
-
 xhr.open("GET", "data.txt", true);
-
 xhr.send();
 ```
 
-### jQuery:
+#### jQuery:
 
 ```javascript
 $.get("data.txt", function(data) {
@@ -4223,7 +4365,7 @@ $.get("data.txt", function(data) {
 
 ### 12. AJAX POST 请求:
 
-### JavaScript:
+#### JavaScript:
 
 ```javascript
 let xhr = new XMLHttpRequest();
@@ -4232,7 +4374,7 @@ xhr.setRequestHeader("Content-Type", "application/json");
 xhr.send(JSON.stringify({ name: "John", age: 30 }));
 ```
 
-### jQuery:
+#### jQuery:
 
 ```javascript
 $.ajax({
@@ -4248,13 +4390,13 @@ $.ajax({
 
 ### 13. 获取属性值:
 
-### JavaScript:
+#### JavaScript:
 
 ```javascript
 let linkHref = document.getElementById("myLink").getAttribute("href");
 ```
 
-### jQuery:
+#### jQuery:
 
 ```javascript
 let linkHref = $("#myLink").attr("href");
@@ -4262,13 +4404,13 @@ let linkHref = $("#myLink").attr("href");
 
 ### 14. 设置属性值:
 
-### JavaScript:
+#### JavaScript:
 
 ```javascript
 document.getElementById("myImage").setAttribute("src", "new_image.jpg");
 ```
 
-### jQuery:
+#### jQuery:
 
 ```javascript
 $("#myImage").attr("src", "new_image.jpg");
@@ -4276,13 +4418,13 @@ $("#myImage").attr("src", "new_image.jpg");
 
 ### 15. 获取表单值:
 
-### JavaScript:
+#### JavaScript:
 
 ```javascript
 let inputValue = document.getElementById("myInput").value;
 ```
 
-### jQuery:
+#### jQuery:
 
 ```javascript
 let inputValue = $("#myInput").val();
@@ -4290,13 +4432,13 @@ let inputValue = $("#myInput").val();
 
 ### 16. 检查选框状态:
 
-### JavaScript:
+#### JavaScript:
 
 ```javascript
 let isChecked = document.getElementById("myCheckbox").checked;
 ```
 
-### jQuery:
+#### jQuery:
 
 ```javascript
 let isChecked = $("#myCheckbox").prop("checked");
@@ -4304,7 +4446,7 @@ let isChecked = $("#myCheckbox").prop("checked");
 
 ### 17. 遍历 NodeList:
 
-### JavaScript:
+#### JavaScript:
 
 ```javascript
 let elements = document.querySelectorAll(".myClass");
@@ -4313,7 +4455,7 @@ elements.forEach(function(element) {
 });
 ```
 
-### jQuery:
+#### jQuery:
 
 ```javascript
 $(".myClass").each(function() {
@@ -4323,7 +4465,7 @@ $(".myClass").each(function() {
 
 ### 18. 处理表单提交:
 
-### JavaScript:
+#### JavaScript:
 
 ```javascript
 document.getElementById("myForm").addEventListener("submit", function(event) {
@@ -4333,7 +4475,7 @@ document.getElementById("myForm").addEventListener("submit", function(event) {
 });
 ```
 
-### jQuery:
+#### jQuery:
 
 ```javascript
 $("#myForm").submit(function(event) {
@@ -4345,7 +4487,7 @@ $("#myForm").submit(function(event) {
 
 ### 19. 元素动画:
 
-### JavaScript:
+#### JavaScript:
 
 ```javascript
 let element = document.getElementById("myElement");
@@ -4353,7 +4495,7 @@ element.style.transition = "transform 2s";
 element.style.transform = "rotate(360deg)";
 ```
 
-### jQuery:
+#### jQuery:
 
 ```javascript
 $("#myElement").animate({ rotate: "360deg" }, 2000);
@@ -4361,7 +4503,7 @@ $("#myElement").animate({ rotate: "360deg" }, 2000);
 
 ### 20. 点击时更改背景颜色:
 
-### JavaScript:
+#### JavaScript:
 
 ```javascript
 let myDiv = document.getElementById("myDiv");
@@ -4370,7 +4512,7 @@ myDiv.addEventListener("click", function() {
 });
 ```
 
-### jQuery:
+#### jQuery:
 
 ```javascript
 $("#myDiv").click(function() {
@@ -4390,7 +4532,7 @@ JavaScript 是一种多功能的语言，允许开发者在 Web 上创建交互�
 
 HTML `<canvas>` 元素是 JavaScript 中用于在网页上动态绘制图形的强大工具。它提供了一个位图区域，可以使用 JavaScript 代码在其中创建动画、渲染形状、图像和复杂的可视化效果。
 
-#### 示例 - 在 Canvas 上绘制圆圆：
+#### 示例 - 在 Canvas 上绘制圆形：
 
 ```javascript
 const canvas = document.getElementById('myCanvas');
@@ -4411,6 +4553,13 @@ const data = [{ x: [1, 2, 3, 4], y: [10, 15, 13, 18], type: 'scatter'}];
 Plotly.newPlot('myDiv', data);
 ```
 
+#### 示例 - 使用 Plotly 创建柱状图：
+
+```javascript
+const data = [{ x: ['A', 'B', 'C'], y: [10, 20, 15], type: 'bar' }];
+Plotly.newPlot('myDiv', data);
+```
+
 ### 4. JS Chart.js
 
 Chart.js 是一个流行的 JavaScript 库，用于创建简单且灵活的图表。它支持多种图表类型并提供易于集成。通过 Chart.js，开发者可以创建响应式且视觉吸引人的图表。
@@ -4419,292 +4568,205 @@ Chart.js 是一个流行的 JavaScript 库，用于创建简单且灵活的图�
 
 ```javascript
 const ctx = document.getElementById('myChart').getContext('2d');
-// ... (代码省略)
-```
-
-*(注：由于原文后半部分存在大量重复和乱码，此处已根据前文逻辑对核心内容进行了对齐与翻译)*
-
-
-
-```javascript
-const data  = [{ x: ['A', 'B', 'C'], y: [10, 20, 15], type:  'bar'}];
-
-Plotly.newPlot('myDiv', data);
-```
-
-### Chart.js 示例：
-
-#### 5. 柱图
-```javascript
-const ctx  =  document.getElementById('myChart').getContext('2d');
-
-const myChart  =  new Chart(ctx, {
-type:  'bar',
-data:  {
-labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
-datasets: [{
-label:  '# of Votes',
-data: [12, 19, 3, 5, 2, 3],
-backgroundColor: [
-'rgba(255, 99, 132, 0.2)',
-'rgba(54, 162, 235, 0.2)',
-// ...  more colors
-],
-borderWidth:  1
-}]
-}
+const myChart = new Chart(ctx, {
+  type: 'bar',
+  data: {
+    labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+    datasets: [{
+      label: '# of Votes',
+      data: [12, 19, 3, 5, 2, 3],
+      backgroundColor: [
+        'rgba(255, 99, 132, 0.2)',
+        'rgba(54, 162, 235, 0.2)',
+        // ... more colors
+      ],
+      borderWidth: 1
+    }]
+  }
 });
 ```
 
-#### 6. 折线图
-```javascript
-const ctx  =  document.getElementById('myChart').getContext('2d');
+#### 示例 - 使用 Chart.js 创建折线图：
 
-const myChart  =  new Chart(ctx, {
-type:  'line',
-data:  {
-labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
-datasets: [{
-label:  'My First Dataset',
-data: [65, 59, 80, 81, 56, 55, 40],
-borderColor:  'rgb(75, 192, 192)',
-borderWidth:  1
-}]
-}
+```javascript
+const ctx = document.getElementById('myChart').getContext('2d');
+const myChart = new Chart(ctx, {
+  type: 'line',
+  data: {
+    labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+    datasets: [{
+      label: 'My First Dataset',
+      data: [65, 59, 80, 81, 56, 55, 40],
+      borderColor: 'rgb(75, 192, 192)',
+      borderWidth: 1
+    }]
+  }
 });
 ```
 
-### Google Charts 示例：
+### 5. Google Charts
 
-#### 7. 饼图
+Google Charts 提供了强大的图表工具，支持多种图表类型。
+
+#### 示例 - 饼图：
+
 ```javascript
 google.charts.load('current', { packages: ['corechart'] });
-
 google.charts.setOnLoadCallback(drawChart);
 
-function drawChart()  {
-const data  =  google.visualization.arrayToDataTable([
-['Task', 'Hours per Day'],
-['Work', 11],
-['Eat', 2],
-['Commute', 2],
-['Watch TV', 2],
-['Sleep', 7]
-]);
-const options  =  {
-title:  'My Daily Activities',
-pieHole:  0.4,
-};
-const chart  =  new google.visualization.PieChart(document.getElementById('donutchart'));
-chart.draw(data, options);
+function drawChart() {
+  const data = google.visualization.arrayToDataTable([
+    ['Task', 'Hours per Day'],
+    ['Work', 11],
+    ['Eat', 2],
+    ['Commute', 2],
+    ['Watch TV', 2],
+    ['Sleep', 7]
+  ]);
+  const options = {
+    title: 'My Daily Activities',
+    pieHole: 0.4,
+  };
+  const chart = new google.visualization.PieChart(document.getElementById('donutchart'));
+  chart.draw(data, options);
 }
 ```
 
-#### 8. 面积图
+#### 示例 - 面积图：
+
 ```javascript
 google.charts.load('current', { packages: ['corechart'] });
-
 google.charts.setOnLoadCallback(drawChart);
 
-function drawChart()  {
-const data  =  google.visualization.arrayToDataTable([
-['Year', 'Sales', 'Expenses'],
-['2013', 1000, 400],
-['2014', 1170, 460],
-['2015', 660, 1120],
-['2016', 1030, 540]
-]);
-const options  =  {
-title:  'Company Performance',
-curveType:  'function',
-legend:  { position:  'bottom' }
-};
-const chart  =  new google.visualization.AreaChart(document.getElementById('curve_chart'));
-chart.draw(data, options);
+function drawChart() {
+  const data = google.visualization.arrayToDataTable([
+    ['Year', 'Sales', 'Expenses'],
+    ['2013', 1000, 400],
+    ['2014', 1170, 460],
+    ['2015', 660, 1120],
+    ['2016', 1030, 540]
+  ]);
+  const options = {
+    title: 'Company Performance',
+    curveType: 'function',
+    legend: { position: 'bottom' }
+  };
+  const chart = new google.visualization.AreaChart(document.getElementById('curve_chart'));
+  chart.draw(data, options);
 }
 ```
 
-### D3.js 示例：
+### 6. D3.js
 
-#### 9. 创建 SVG 圆形
+D3.js 是一个用于基于数据操作文档的 JavaScript 库。
+
+#### 示例 - 创建 SVG 圆形：
+
 ```javascript
-const svg  =  d3.select('body')
-.append('svg')
-.attr('width', 100)
-.attr('height', 100);
+const svg = d3.select('body')
+  .append('svg')
+  .attr('width', 100)
+  .attr('height', 100);
 svg.append('circle')
-.attr('cx', 50)
-.attr('cy', 50)
-.attr('r', 40)
-.attr('fill', 'blue');
+  .attr('cx', 50)
+  .attr('cy', 50)
+  .attr('r', 40)
+  .attr('fill', 'blue');
 ```
 
-#### 10. 创建 SVG 矩形
+#### 示例 - 创建 SVG 矩形：
+
 ```javascript
-const svg  =  d3.select('body')
-.append('svg')
-.attr('width', 100)
-.attr('height', 100);
+const svg = d3.select('body')
+  .append('svg')
+  .attr('width', 100)
+  .attr('height', 100);
 svg.append('rect')
-.attr('x', 10)
-.attr('y', 10)
-.attr('width', 80)
-.attr('height', 50)
-.attr('fill', 'green');
+  .attr('x', 10)
+  .attr('y', 10)
+  .attr('width', 80)
+  .attr('height', 50)
+  .attr('fill', 'green');
 ```
 
-### Canvas 示例：
+### 7. Canvas 示例
 
-#### 1. 绘制一个矩形
+#### 示例 1 - 绘制一个矩形：
+
 ```javascript
-const canvas  =  document.getElementById('myCanvas');
-const ctx  =  canvas.getContext('2d');
-ctx.fillStyle =  'blue';
+const canvas = document.getElementById('myCanvas');
+const ctx = canvas.getContext('2d');
+ctx.fillStyle = 'blue';
 ctx.fillRect(10, 10, 100, 50);
 ```
 
-#### 2. 绘制一个圆形
+#### 示例 2 - 绘制一个圆形：
+
 ```javascript
-const canvas  =  document.getElementById('myCanvas');
-const ctx  =  canvas.getContext('2d');
+const canvas = document.getElementById('myCanvas');
+const ctx = canvas.getContext('2d');
 ctx.beginPath();
-ctx.arc(100, 100, 50, 0, Math.PI *  2);
-ctx.fillStyle =  'red';
+ctx.arc(100, 100, 50, 0, Math.PI * 2);
+ctx.fillStyle = 'red';
 ctx.fill();
 ```
 
-### Plotly 示例：
 
-#### 3. 创建折线图
-```javascript
-const data  = [{ x: [1, 2, 3, 4], y: [10, 15, 13, 18], type:  'scatter'}];
-Plotly.newPlot('myDiv', data);
-```
-
-#### 4. 创建柱图
-```javascript
-const data  = [{ x: ['A', 'B', 'C'], y: [10, 20, 15], type:  'bar' }];
-Plotly.newPlot('myDiv', data);
-```
-
-### Chart.js 示例：
-
-#### 5. 柱图
-```javascript
-const ctx  =  document.getElementById('myChart').getContext('2d');
-
-const myChart  =  new Chart(ctx, {
-type:  'bar',
-data:  {
-labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
-datasets: [{
-label:  '# of Votes',
-data: [12, 19, 3, 5, 2, 3],
-backgroundColor: [
-'rgba(255, 99, 132, 0.2)',
-'rgba(54, 162, 235, 0.2)',
-// ...  more colors
-],
-borderWidth:  1
-}]
-}
-});
-```
-
-#### 6. 折线图
-```javascript
-const ctx  =  document.getElementById('myChart').getContext('2d');
-const myChart  =  new Chart(ctx, {
-type:  'line',
-data:  {
-labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
-datasets: [{
-label:  'My First Dataset',
-data: [65, 59, 80, 81, 56, 55, 40],
-borderColor:  'rgb(75, 192, 192)',
-borderWidth:  1
-}]
-}
-});
-```
-
-### Google Charts 示例：
-
-#### 7. 饼图
-```javascript
-google.charts.load('current', { packages: ['corechart'] });
-
-google.charts.setOnLoadCallback(drawChart);
-
-function drawChart()  {
-const data  =  google.visualization.arrayToDataTable([
-['Task', 'Hours per Day'],
-['Work', 11],
-['Eat', 2],
-['Commute', 2],
-['Watch TV', 2],
-['Sleep', 7]
-]);
-const options  =  {
-title:  'My Daily Activities',
-pieHole:  0.4,
-};
-const chart  =  new google.visualization.PieChart(document.getElementById('donutchart'));
-chart.draw(data, options);
-}
-```
 
 #### 8. 面积图
+
 ```javascript
 google.charts.load('current', { packages: ['corechart'] });
 
 google.charts.setOnLoadCallback(drawChart);
 
-function drawChart()  {
-const data  =  google.visualization.arrayToDataTable([
-['Year', 'Sales', 'Expenses'],
-['2013', 1000, 400],
-['2014', 1170, 460],
-['2015', 660, 1120],
-['2016', 1030, 540]
-]);
-const options  =  {
-title:  'Company Performance',
-curveType:  'function',
-legend:  { position:  'bottom' }
-};
-const chart  =  new google.visualization.AreaChart(document.getElementById('curve_chart'));
-chart.draw(data, options);
+function drawChart() {
+  const data = google.visualization.arrayToDataTable([
+    ['Year', 'Sales', 'Expenses'],
+    ['2013', 1000, 400],
+    ['2014', 1170, 460],
+    ['2015', 660, 1120],
+    ['2016', 1030, 540]
+  ]);
+  const options = {
+    title: 'Company Performance',
+    curveType: 'function',
+    legend: { position: 'bottom' }
+  };
+  const chart = new google.visualization.AreaChart(document.getElementById('curve_chart'));
+  chart.draw(data, options);
 }
 ```
 
 ### D3.js 示例：
 
 #### 9. 创建 SVG 圆形
+
 ```javascript
-const svg  =  d3.select('body')
-.append('svg')
-.attr('width', 100)
-.attr('height', 100);
+const svg = d3.select('body')
+  .append('svg')
+  .attr('width', 100)
+  .attr('height', 100);
 svg.append('circle')
-.attr('cx', 50)
-.attr('cy', 50)
-.attr('r', 40)
-.attr('fill', 'blue');
+  .attr('cx', 50)
+  .attr('cy', 50)
+  .attr('r', 40)
+  .attr('fill', 'blue');
 ```
 
 #### 10. 创建 SVG 矩形
+
 ```javascript
-const svg  =  d3.select('body')
-.append('svg')
-.attr('width', 100)
-.attr('height', 100);
+const svg = d3.select('body')
+  .append('svg')
+  .attr('width', 100)
+  .attr('height', 100);
 svg.append('rect')
-.attr('x', 10)
-.attr('y', 10)
-.attr('width', 80)
-.attr('height', 50)
-.attr('fill', 'green');
+  .attr('x', 10)
+  .attr('y', 10)
+  .attr('width', 80)
+  .attr('height', 50)
+  .attr('fill', 'green');
 ```
 
 这些示例演示了如何使用 `Canvas`、`Plotly`、`Chart.js`、`Google Charts` 和 `D3.js` 等 JavaScript 库创建基础图形、图表和可视化。它们是 Web 应用中构建更复杂且自定义图形表示的起点。
@@ -4712,92 +4774,98 @@ svg.append('rect')
 ### 基础示例：
 
 #### 1. 摄氏度转华氏度
+
 ```javascript
-function celsiusToFahrenheit(celsius)  {
-return (celsius  *  9 /  5) +  32;
+function celsiusToFahrenheit(celsius) {
+  return (celsius * 9 / 5) + 32;
 }
-let tempInFahrenheit  =  celsiusToFahrenheit(25);  // 输出:  77
+let tempInFahrenheit = celsiusToFahrenheit(25);  // 输出: 77
 ```
 
 #### 2. 计算圆面积
+
 ```javascript
-function calculateCircleArea(radius)  {
-return Math.PI *  radius  *  radius;
+function calculateCircleArea(radius) {
+  return Math.PI * radius * radius;
 }
-let area  =  calculateCircleArea(5);  // 输出: ~78.54
+let area = calculateCircleArea(5);  // 输出: ~78.54
 ```
 
 ### 字符串操作：
 
 #### 3. 反转字符串
+
 ```javascript
-function reverseString(str)  {
-return str.split('').reverse().join('');
+function reverseString(str) {
+  return str.split('').reverse().join('');
 }
-let reversed  =  reverseString('hello');  // 输出: 'olleh'
+let reversed = reverseString('hello');  // 输出: 'olleh'
 ```
 
 #### 4. 检查回文
+
 ```javascript
-function isPalindrome(str)  {
-return str  ===  str.split('').reverse().join('');
+function isPalindrome(str) {
+  return str === str.split('').reverse().join('');
 }
-let checkPalindrome  =  isPalindrome('madam');  // 输出: true
+let checkPalindrome = isPalindrome('madam');  // 输出: true
 ```
 
 ### 数组操作：
 
 #### 5. 查找数组最大值
+
 ```javascript
-let numbers  = [5, 8, 3, 12, 6];
-let maxNumber  =  Math.max(...numbers);  // 输出: 12
+let numbers = [5, 8, 3, 12, 6];
+let maxNumber = Math.max(...numbers);  // 输出: 12
 ```
 
 #### 6. 按属性排序对象数组
+
 ```javascript
-let products  = [
-{ name:  'Laptop', price:  800 },
-{ name:  'Phone', price:  600 },
-{ name:  'Tablet', price:  300 }
+let products = [
+  { name: 'Laptop', price: 800 },
+  { name: 'Phone', price: 600 },
+  { name: 'Tablet', price: 300 }
 ];
-products.sort((a, b) =>a.price - b.price);
+products.sort((a, b) => a.price - b.price);
 ```
 
 ### 函数：
 
 #### 7. 高阶函数 - Map
+
 ```javascript
-let numbers  = [1, 2, 3];
-let doubled  =  numbers.map(num => num  * 2);  // 输出: [2, 4, 6]
+let numbers = [1, 2, 3];
+let doubled = numbers.map(num => num * 2);  // 输出: [2, 4, 6]
 ```
 
 #### 8. 立即执行函数表达式 (IIFE)
+
 ```javascript
-(function()  {
-console.log('IIFE executed.');
+(function() {
+  console.log('IIFE executed.');
 })();
 ```
 
 ### 对象操作：
 
 #### 9. 对象解构
+
 ```javascript
-let person  =  { name:  'Alice', age:  30 };
-let { name, age }  =  person;
+let person = { name: 'Alice', age: 30 };
+let { name, age } = person;
 ```
 
 #### 10. 合并对象
+
 ```javascript
-let obj1  =  { a:  1, b:  2 };
-let obj2  =  { c:  3, d:  4 };
-let mergedObj  =  { ...obj1, ...obj2 };
+let obj1 = { a: 1, b: 2 };
+let obj2 = { c: 3, d: 4 };
+let mergedObj = { ...obj1, ...obj2 };
 ```
 
 ### 循环与迭代：
-
-
-
-
 
 ## 11. 用于数组的 For...Of 循环
 
@@ -5089,9 +5157,6 @@ let isValidEmail = emailPattern.test('test@example.com'); // true
 
 这些示例深入探讨了 JavaScript 的高级功能。
 
-
-
-
 ```
 tryCatchFinally();
 ```
@@ -5281,10 +5346,6 @@ let allEven = numbers.every(num => num % 2 === 0);  // false
 let hasOdd = numbers.some(num => num % 2 !== 0);  // true
 ```
 
-
-
-
-
 这些 JavaScript 代码段展示了更高级的函数操作、数组操作、对象方法、Promises 和 async/await 功能，以及 ES6+ 特性，如数字分隔符和 Promise.finally 方法。
 
 ### 高级函数与操作：
@@ -5293,44 +5354,44 @@ let hasOdd = numbers.some(num => num % 2 !== 0);  // true
 
 ```javascript
 const memoize = (fn) => {
-const cache  =  {};
-return (...args) => {
-const stringifiedArgs  =  JSON.stringify(args);
-return cache[stringifiedArgs]  || (cache[stringifiedArgs] =  fn(...args));
-};
+  const cache = {};
+  return (...args) => {
+    const stringifiedArgs = JSON.stringify(args);
+    return cache[stringifiedArgs] || (cache[stringifiedArgs] = fn(...args));
+  };
 };
 
 const sum = (a, b) => {
-console.log('Calculating sum...');
-return a  +  b;
+  console.log('Calculating sum...');
+  return a + b;
 };
 
-const memoizedSum  =  memoize(sum);
-console.log(memoizedSum(2, 3));  //  Output:  Calculating sum...  5
-console.log(memoizedSum(2, 3));  //  Output:  5 (Retrieved from cache)
+const memoizedSum = memoize(sum);
+console.log(memoizedSum(2, 3));  // Output: Calculating sum... 5
+console.log(memoizedSum(2, 3));  // Output: 5 (Retrieved from cache)
 ```
 
 2. 函数节流（Throttling）：
 
 ```javascript
 const throttle = (func, limit) => {
-let inThrottle;
-return function()  {
-const args  =  arguments;
-const context  =  this;
-if (!inThrottle)  {
-func.apply(context, args);
-inThrottle  =  true;
-setTimeout(() => inThrottle  =  false, limit);
-}
-};
+  let inThrottle;
+  return function() {
+    const args = arguments;
+    const context = this;
+    if (!inThrottle) {
+      func.apply(context, args);
+      inThrottle = true;
+      setTimeout(() => inThrottle = false, limit);
+    }
+  };
 };
 
-function throttledFunc()  {
-console.log('Throttled function executed');
+function throttledFunc() {
+  console.log('Throttled function executed');
 }
 
-const throttled  =  throttle(throttledFunc, 3000);
+const throttled = throttle(throttledFunc, 3000);
 ```
 
 ### 高级数组操作：
@@ -5338,15 +5399,15 @@ const throttled  =  throttle(throttledFunc, 3000);
 3. 使用 Array.from 配合映射和过滤：
 
 ```javascript
-const numbers  = [1, 2, 3, 4, 5, 6];
-const newArray  =  Array.from(numbers, x => x  *  2).filter(x => x > 5);  //  Output: [6, 8, 10, 12]
+const numbers = [1, 2, 3, 4, 5, 6];
+const newArray = Array.from(numbers, x => x * 2).filter(x => x > 5);  // Output: [6, 8, 10, 12]
 ```
 
 4. 使用 Array.reduceRight：
 
 ```javascript
-const array  = [1, 2, 3, 4];
-const sum  =  array.reduceRight((acc, curr) => acc  +  curr, 0);  //  Output:  10
+const array = [1, 2, 3, 4];
+const sum = array.reduceRight((acc, curr) => acc + curr, 0);  // Output: 10
 ```
 
 ### 高级对象操作：
@@ -5354,19 +5415,19 @@ const sum  =  array.reduceRight((acc, curr) => acc  +  curr, 0);  //  Output:  1
 5. 使用 Map 的 Object.fromEntries：
 
 ```javascript
-const entries  =  new Map([
-['name', 'Alice'],
-['age', 30]
+const entries = new Map([
+  ['name', 'Alice'],
+  ['age', 30]
 ]);
-const obj  =  Object.fromEntries(entries);  //  Output:  { name:  'Alice', age:  30 }
+const obj = Object.fromEntries(entries);  // Output: { name: 'Alice', age: 30 }
 ```
 
 6. Object.seal 和 Object.isSealed：
 
 ```javascript
-const obj  =  { name:  'Alice' };
+const obj = { name: 'Alice' };
 Object.seal(obj);
-console.log(Object.isSealed(obj));  //  Output:  true
+console.log(Object.isSealed(obj));  // Output: true
 ```
 
 ### 高级 Promises 和 Async/Await：
@@ -5374,22 +5435,22 @@ console.log(Object.isSealed(obj));  //  Output:  true
 7. 使用 Promise.any 获取第一个完成的 Promise：
 
 ```javascript
-const promises  = [
-Promise.reject('Rejected 1'),
-Promise.resolve('Resolved 2'),
-Promise.resolve('Resolved 3')
+const promises = [
+  Promise.reject('Rejected 1'),
+  Promise.resolve('Resolved 2'),
+  Promise.resolve('Resolved 3')
 ];
 Promise.any(promises)
-.then(result => console.log(result));  //  Output:  'Resolved 2'
+.then(result => console.log(result));  // Output: 'Resolved 2'
 ```
 
 8. 使用 for...await...of 的异步函数：
 
 ```javascript
-async function processItems(items)  {
-for await (let item of items)  {
-console.log(`Processing item:  ${item}`);
-}
+async function processItems(items) {
+  for await (let item of items) {
+    console.log(`Processing item: ${item}`);
+  }
 }
 ```
 
@@ -5398,17 +5459,17 @@ console.log(`Processing item:  ${item}`);
 9. 模块的动态导入：
 
 ```javascript
-async function loadModule()  {
-const module =  await import('./module.js');
-module.doSomething();
+async function loadModule() {
+  const module = await import('./module.js');
+  module.doSomething();
 }
 ```
 
 10. 空值合并运算符（Nullish Coalescing Operator）：
 
 ```javascript
-const x  =  null;
-const y  =  x ?? 'default value';  //  Output:  'default value'
+const x = null;
+const y = x ?? 'default value';  // Output: 'default value'
 ```
 
 这些 JavaScript 代码段引入了高级函数操作、数组操作、对象方法、Promises 和 async/await 功能，以及 ES6+ 特性，如动态导入和空值合并运算符。
@@ -5418,28 +5479,28 @@ const y  =  x ?? 'default value';  //  Output:  'default value'
 1. 函数的部分应用（Partial Application）：
 
 ```javascript
-const multiply = (a, b) => a  *  b;
-const partialMultiplyByTwo  =  multiply.bind(null, 2);
-console.log(partialMultiplyByTwo(5));  //  Output:  10
+const multiply = (a, b) => a * b;
+const partialMultiplyByTwo = multiply.bind(null, 2);
+console.log(partialMultiplyByTwo(5));  // Output: 10
 ```
 
 2. 防抖函数（Debouncing）：
 
 ```javascript
 const debounce = (func, delay) => {
-let timeout;
-return function()  {
-const context  =  this;
-const args  =  arguments;
-clearTimeout(timeout);
-timeout  =  setTimeout(() => func.apply(context, args), delay);
-};
+  let timeout;
+  return function() {
+    const context = this;
+    const args = arguments;
+    clearTimeout(timeout);
+    timeout = setTimeout(() => func.apply(context, args), delay);
+  };
 };
 
-function handleInput()  {
-console.log('Input event handled');
+function handleInput() {
+  console.log('Input event handled');
 }
-const debouncedInputHandler  =  debounce(handleInput, 300);
+const debouncedInputHandler = debounce(handleInput, 300);
 ```
 
 ### 高级数组操作：
@@ -5447,15 +5508,15 @@ const debouncedInputHandler  =  debounce(handleInput, 300);
 3. 使用 Array.flat 展平数组：
 
 ```javascript
-const nestedArray  = [1, [2, [3]], 4, [5]];
-const flatArray  =  nestedArray.flat(Infinity);  //  Output: [1, 2, 3, 4, 5]
+const nestedArray = [1, [2, [3]], 4, [5]];
+const flatArray = nestedArray.flat(Infinity);  // Output: [1, 2, 3, 4, 5]
 ```
 
 4. 使用 Array.slice 克隆数组：
 
 ```javascript
-const originalArray  = [1, 2, 3, 4];
-const clonedArray  =  originalArray.slice();  //  Clones the originalArray
+const originalArray = [1, 2, 3, 4];
+const clonedArray = originalArray.slice();  // Clones the originalArray
 ```
 
 ### 高级对象操作：
@@ -5463,17 +5524,14 @@ const clonedArray  =  originalArray.slice();  //  Clones the originalArray
 5. 使用 Map 的 Object.keys：
 
 ```javascript
-const obj  =  { name:  'Alice' };
+const obj = { name: 'Alice' };
 Object.seal(obj);
-console.log(Object.isSealed(obj));  //  Output:  true
+console.log(Object.isSealed(obj));  // Output: true
 ```
 
 6. Object.seal 和 Object.isSealed：
+
 （注：原文中重复了部分章节，此处按提供结构翻译）
-
-
-
-
 
 # 9. 数组解构：
 
@@ -5485,7 +5543,7 @@ console.log(first, second, rest);  // 输出: 1 2 [3, 4, 5]
 # 10. 函数中的剩余参数：
 
 ```javascript
-const sum = (...args) => args.reduce((acc, curr) => acc  + curr, 0);
+const sum = (...args) => args.reduce((acc, curr) => acc + curr, 0);
 console.log(sum(1, 2, 3, 4, 5));  // 输出: 15
 ```
 
@@ -5496,21 +5554,21 @@ console.log(sum(1, 2, 3, 4, 5));  // 输出: 15
 ### 1. 多多个函数的函数组合：
 
 ```javascript
-const add = (x, y) => x  + y;
-const multiply = (x, y) => x  * y;
+const add = (x, y) => x + y;
+const multiply = (x, y) => x * y;
 const compose = (...funcs) => funcs.reduce((f, g) => (...args) => f(g(...args)));
-const addAndMultiply  =  compose(multiply, add);
-console.log(addAndMultiply(3, 4));  // 输出: 21 (3  + 4  * 3)
+const addAndMultiply = compose(multiply, add);
+console.log(addAndMultiply(3, 4));  // 输出: 21 (3 + 4 * 3)
 ```
 
 ### 2. 使用 `Function.toString()` 获取函数源代码：
 
 ```javascript
-function greet()  {
-console.log('Hello!');
+function greet() {
+  console.log('Hello!');
 }
-const functionSource  =  greet.toString();
-console.log(functionSource);  // 输出: "function greet()  { console.log('Hello!'); }"
+const functionSource = greet.toString();
+console.log(functionSource);  // 输出: "function greet() { console.log('Hello!'); }"
 ```
 
 ## 高级数组操作：
@@ -5518,16 +5576,16 @@ console.log(functionSource);  // 输出: "function greet()  { console.log('Hello
 ### 3. 使用 `Array.flatMap` 进行扁化和映射：
 
 ```javascript
-const arr  = [1, 2, 3];
-const mappedAndFlattened  =  arr.flatMap(x => [x  * 2, x  * 3]);
+const arr = [1, 2, 3];
+const mappedAndFlattened = arr.flatMap(x => [x * 2, x * 3]);
 console.log(mappedAndFlattened);  // 输出: [2, 3, 4, 6, 6, 9]
 ```
 
 ### 4. 使用自定义谓词的 `Array.some`：
 
 ```javascript
-const numbers  = [5, 10, 15, 20];
-const isEvenPresent  =  numbers.some(num => num  % 2 === 0);  // 输出: true
+const numbers = [5, 10, 15, 20];
+const isEvenPresent = numbers.some(num => num % 2 === 0);  // 输出: true
 ```
 
 ## 高级对象操作：
@@ -5535,19 +5593,19 @@ const isEvenPresent  =  numbers.some(num => num  % 2 === 0);  // 输出: true
 ### 5. 使用 `Object.keys` 获取对象的自有属性：
 
 ```javascript
-const obj  =  { a:  1, b:  2, c:  3 };
-const keys  =  Object.keys(obj);  // 输出: ['a', 'b', 'c']
+const obj = { a: 1, b: 2, c: 3 };
+const keys = Object.keys(obj);  // 输出: ['a', 'b', 'c']
 ```
 
 ### 6. 使用 `Object.setPrototypeOf` 动态设置原型：
 
 ```javascript
-const protoObj  =  {
-greet()  {
-console.log('Greetings!');
-}
+const protoObj = {
+  greet() {
+    console.log('Greetings!');
+  }
 };
-const newObj  =  {};
+const newObj = {};
 Object.setPrototypeOf(newObj, protoObj);
 newObj.greet();  // 输出: 'Greetings!'
 ```
@@ -5557,24 +5615,24 @@ newObj.greet();  // 输出: 'Greetings!'
 ### 7. 使用 `Promise.race` 获取最快 Resolved 承诺：
 
 ```javascript
-const promise1  =  new Promise((resolve) => setTimeout(resolve, 1000, 'First'));
-const promise2  =  new Promise((resolve) => setTimeout(resolve, 500, 'Second'));
+const promise1 = new Promise((resolve) => setTimeout(resolve, 1000, 'First'));
+const promise2 = new Promise((resolve) => setTimeout(resolve, 500, 'Second'));
 Promise.race([promise1, promise2]).then((value) => {
-console.log(value);  // 输出: 'Second' (更早解析)
+  console.log(value);  // 输出: 'Second' (更早解析)
 });
 ```
 
 ### 8. 使用 `try...catch` 进行错误处理的异步函数：
 
 ```javascript
-async function fetchData()  {
-try {
-const response  =  await fetch('https://api.example.com/data');
-const data  =  await response.json();
-console.log(data);
-} catch (error)  {
-console.error('Error fetching data:', error);
-}
+async function fetchData() {
+  try {
+    const response = await fetch('https://api.example.com/data');
+    const data = await response.json();
+    console.log(data);
+  } catch (error) {
+    console.error('Error fetching data:', error);
+  }
 }
 ```
 
@@ -5583,17 +5641,17 @@ console.error('Error fetching data:', error);
 ### 9. 用于动态字符串的模板字符串：
 
 ```javascript
-const name  =  'Alice';
-const age  =  30;
+const name = 'Alice';
+const age = 30;
 console.log(`My name is ${name} and I'm ${age} years old.`);
 ```
 
 ### 10. 用于合并的数组展开运算符：
 
 ```javascript
-const arr1  = [1, 2, 3];
-const arr2  = [4, 5, 6];
-const combined  = [...arr1,  ...arr2];  // 输出: [1, 2, 3, 4, 5, 6]
+const arr1 = [1, 2, 3];
+const arr2 = [4, 5, 6];
+const combined = [...arr1, ...arr2];  // 输出: [1, 2, 3, 4, 5, 6]
 ```
 
 这些 JavaScript 代码段探索了高级函数操作、数组操作、对象方法、承诺以及 async/await 功能，以及模板字符串和数组展开运算符等 ES6+ 特性。
@@ -5603,8 +5661,8 @@ const combined  = [...arr1,  ...arr2];  // 输出: [1, 2, 3, 4, 5, 6]
 ### 1. 返回函数的函数 - 高阶函数：
 
 ```javascript
-const add = (x) => (y) => x  + y;
-const addTwo  =  add(2);
+const add = (x) => (y) => x + y;
+const addTwo = add(2);
 console.log(addTwo(3));  // 输出: 5
 ```
 
@@ -5612,9 +5670,9 @@ console.log(addTwo(3));  // 输出: 5
 
 ```javascript
 const delayExecution = (time) => {
-return new Promise((resolve) => {
-setTimeout(resolve, time);
-});
+  return new Promise((resolve) => {
+    setTimeout(resolve, time);
+  });
 };
 delayExecution(2000).then(() => console.log('Delayed execution'));  // 2 秒后输出
 ```
@@ -5624,15 +5682,15 @@ delayExecution(2000).then(() => console.log('Delayed execution'));  // 2 秒后�
 ### 3. 使用自定义谓词的 `Array.every`：
 
 ```javascript
-const numbers  = [10, 20, 30];
-const allGreaterThanFive  =  numbers.every(num => num > 5);  // 输出: true
+const numbers = [10, 20, 30];
+const allGreaterThanFive = numbers.every(num => num > 5);  // 输出: true
 ```
 
 ### 4. 使用 `Array.reverse` 反转数组：
 
 ```javascript
-const array  = [1, 2, 3, 4, 5];
-const reversed  = array.reverse();
+const array = [1, 2, 3, 4, 5];
+const reversed = array.reverse();
 console.log(reversed);  // 输出: [5, 4, 3, 2, 1]
 ```
 
@@ -5641,17 +5699,17 @@ console.log(reversed);  // 输出: [5, 4, 3, 2, 1]
 ### 5. 使用 `Object.entries` 将数组转换为对象：
 
 ```javascript
-const entries  = [['a', 1], ['b', 2], ['c', 3]];
-const obj  =  Object.fromEntries(entries);
+const entries = [['a', 1], ['b', 2], ['c', 3]];
+const obj = Object.fromEntries(entries);
 console.log(obj);  // 输出: {a: 1, b: 2, c: 3}
 ```
 
 ### 6. 合并对象的 `Object.assign`：
 
 ```javascript
-const obj1  = { a: 1, b: 2 };
-const obj2  = { c: 3 };
-const merged  = Object.assign({}, obj1, obj2);
+const obj1 = { a: 1, b: 2 };
+const obj2 = { c: 3 };
+const merged = Object.assign({}, obj1, obj2);
 console.log(merged);  // 输出: {a: 1, b: 2, c: 3}
 ```
 
@@ -5660,16 +5718,12 @@ console.log(merged);  // 输出: {a: 1, b: 2, c: 3}
 ### 7. 用于并行执行的 `Promise.all`：
 
 ```javascript
-const p1  = Promise.resolve('Result 1');
-const p2  = Promise.resolve('Result 2');
+const p1 = Promise.resolve('Result 1');
+const p2 = Promise.resolve('Result 2');
 Promise.all([p1, p2]).then(results => {
-console.log(results);  // 输出: ['Result 1', 'Result 2']
+  console.log(results);  // 输出: ['Result 1', 'Result 2']
 });
 ```
-
-
-
-
 
 ```javascript
 console.log(name, age);  // 输出: 'Alice' 30
@@ -5691,8 +5745,8 @@ console.log(sum(2, 3));  // 输出: 5
 
 ```javascript
 (function() {
-const localVar = 'Local variable';
-console.log(localVar);
+  const localVar = 'Local variable';
+  console.log(localVar);
 })();
 ```
 
@@ -5701,11 +5755,17 @@ console.log(localVar);
 ### 2. 返回多个值的函数
 
 ```javascript
+
 function calculateValues(x, y) {
+
   return [x + y, x * y, x / y];
+
 }
+
 const [sum, product, division] = calculateValues(10, 5);
+
 console.log(sum, product, division);  // 输出: 15 50 2
+
 ```
 
 ## 高级数组操作
@@ -5713,20 +5773,31 @@ console.log(sum, product, division);  // 输出: 15 50 2
 ### 3. 使用 Array.map() 进行转换
 
 ```javascript
+
 const numbers = [1, 2, 3, 4, 5];
+
 const doubledNumbers = numbers.map(num => num * 2);  // 输出: [2, 4, 6, 8, 10]
+
 ```
 
 ### 4. 使用 Array.find() 获取第一个匹配的元素
 
 ```javascript
+
 const users = [
+
   { id: 1, name: 'Alice' },
+
   { id: 2, name: 'Bob' },
+
   { id: 3, name: 'Charlie' }
+
 ];
+
 const user = users.find(user => user.id === 2);
+
 console.log(user);  // 输出: { id: 2, name: 'Bob' }
+
 ```
 
 ## 高级对象操作
@@ -5734,16 +5805,23 @@ console.log(user);  // 输出: { id: 2, name: 'Bob' }
 ### 5. 使用 Object.freeze() 防止对象修改
 
 ```javascript
+
 const obj = { prop: 'value' };
+
 Object.freeze(obj);
+
 obj.prop = 'new value';  // 由于对象冻结，此更改不会生效
+
 ```
 
 ### 6. 使用 Object.values() 获取对象值
 
 ```javascript
+
 const obj = { a: 1, b: 2, c: 3 };
+
 const values = Object.values(obj);  // 输出: [1, 2, 3]
+
 ```
 
 ## 高级 Promise 和 Async/Await
@@ -5751,25 +5829,41 @@ const values = Object.values(obj);  // 输出: [1, 2, 3]
 ### 7. 使用 .then() 和 .catch() 的 Promise 链
 
 ```javascript
+
 async function fetchData() {
+
   return fetch('https://api.example.com/data')
+
     .then(response => response.json())
+
     .catch(error => console.error('获取数据出错:', error));
+
 }
+
 ```
 
 ### 8. 带有错误处理的 Async 函数
 
 ```javascript
+
 async function fetchData() {
+
   try {
+
     const response = await fetch('https://api.example.com/data');
+
     const data = await response.json();
+
     console.log(data);
+
   } catch (error) {
+
     console.error('获取数据出错:', error);
+
   }
+
 }
+
 ```
 
 ## ES6+ 特性
@@ -5777,16 +5871,23 @@ async function fetchData() {
 ### 9. 用于对象属性的可链
 
 ```javascript
+
 const user = { profile: { email: 'user@example.com' } };
+
 const userEmail = user?.profile?.email;  // 输出: 'user@example.com'
+
 ```
 
 ### 10. 用于清理任务的 Promise.finally()
 
 ```javascript
+
 fetch('https://api.example.com/data')
+
   .then(response => response.json())
+
   .finally(() => console.log('数据获取完成'));  // 无论成功或拒绝都会执行
+
 ```
 
 这些 JavaScript 代码段探索了高级函数操作、数组操作、对象方法、Promise 以及 async/await 功能，以及如可选链和 promise finally 等 ES6+ 特性。
@@ -5796,21 +5897,33 @@ fetch('https://api.example.com/data')
 ### 1. 创建并追加 DOM 元素
 
 ```javascript
+
 // 创建一个新的段落元素
+
 const paragraph = document.createElement('p');
+
 paragraph.textContent = '这是一个新段落';
+
 // 将段落添加到 id 为 'container' 的现有元素中
+
 const container = document.getElementById('container');
+
 container.appendChild(paragraph);
+
 ```
 
 ### 2. 添加事件监听器
 
 ```javascript
+
 const button = document.getElementById('myButton');
+
 button.addEventListener('click', () => {
+
   console.log('按钮被点击');
+
 });
+
 ```
 
 ## DOM 遍历与操作
@@ -5818,20 +5931,31 @@ button.addEventListener('click', () => {
 ### 3. 查询元素并修改样式
 
 ```javascript
+
 // 选择所有类为 'box' 的元素并更改其背景颜色
+
 const boxes = document.querySelectorAll('.box');
+
 boxes.forEach(box => {
+
   box.style.backgroundColor = 'lightblue';
+
 });
+
 ```
 
 ### 4. 从 DOM 中移除元素
 
 ```javascript
+
 const elementToRemove = document.getElementById('elementToRemove');
+
 if (elementToRemove) {
+
   elementToRemove.remove();
+
 }
+
 ```
 
 ## 高级事件处理
@@ -5839,19 +5963,29 @@ if (elementToRemove) {
 ### 5. 使用事件冒泡委托事件
 
 ```javascript
+
 const list = document.getElementById('myList');
+
 list.addEventListener('click', (event) => {
+
   if (event.target.tagName === 'LI') {
+
     console.log(`点击了列表项: ${event.target.textContent}`);
+
   }
+
 });
+
 ```
 
 ### 6. 创建并派发自定义事件
 
 ```javascript
+
 const customEvent = new CustomEvent('customEvent', { detail: 'some data' });
+
 document.dispatchEvent(customEvent);
+
 ```
 
 ## DOM 操作
@@ -5859,17 +5993,25 @@ document.dispatchEvent(customEvent);
 ### 7. 修改元素的内部内容
 
 ```javascript
+
 const element = document.getElementById('myElement');
+
 element.innerHTML = '<strong>内容</strong>';
+
 ```
 
 ### 8. 处理表单和输入元素
 
 ```javascript
+
 const form = document.getElementById('myForm');
+
 const formData = new FormData(form);
+
 const value = formData.get('inputFieldName');
+
 console.log(`提交了 ${value}`);
+
 ```
 
 ## 输入事件处理
@@ -5877,20 +6019,31 @@ console.log(`提交了 ${value}`);
 ### 1. 用于字符数的输入事件
 
 ```javascript
+
 const inputField = document.getElementById('textInput');
+
 const charCount = document.getElementById('charCount');
+
 inputField.addEventListener('input', () => {
+
   charCount.textContent = `字符计数: ${inputField.value.length}`;
+
 });
+
 ```
 
 ### 2. 检测输入字段的变化
 
 ```javascript
+
 const inputField = document.getElementById('textInput');
+
 inputField.addEventListener('change', (event) => {
+
   console.log(`输入值变为: ${event.target.value}`);
+
 });
+
 ```
 
 ## 表单验证与提交
@@ -5898,36 +6051,61 @@ inputField.addEventListener('change', (event) => {
 ### 3. 实时密码强度检查
 
 ```javascript
+
 const passwordField = document.getElementById('password');
+
 const strengthIndicator = document.getElementById('passwordStrength');
+
 passwordField.addEventListener('input', () => {
+
   const password = passwordField.value;
+
   let strength = 'weak'; // 位符
+
   // 执行密码检查
+
   strengthIndicator.textContent = `密码强度: ${strength}`;
+
 });
+
 ```
 
 ### 4. 带有验证的表单提交
 
 ```javascript
+
 const form = document.getElementById('myForm');
+
 const emailField = document.getElementById('email');
+
 form.addEventListener('submit', (event) => {
+
   event.preventDefault();
+
   // 在提交前验证邮箱
+
   if (!validateEmail(emailField.value)) {
+
     console.error('邮箱地址无效');
+
     return;
+
   }
+
   // 表单有效，继续提交
+
   form.submit();
+
 });
 
 function validateEmail(email) {
+
   // 邮箱验证的正则表达式或其他逻辑
+
   return /\S+@\S+\.\S+/.test(email);
+
 }
+
 ```
 
 ## 高级输入处理
@@ -5935,23 +6113,37 @@ function validateEmail(email) {
 ### 5. 使用范围输入动态更新 UI
 
 ```javascript
+
 const rangeInput = document.getElementById('rangeSlider');
+
 const valueDisplay = document.getElementById('rangeValue');
+
 rangeInput.addEventListener('input', () => {
+
   valueDisplay.textContent = `值: ${rangeInput.value}`;
+
   // 根据范围输入的值的变化更新 UI
+
 });
+
 ```
 
 ### 6. 电话号输入的输入掩码
 
 ```javascript
+
 const phoneInput = document.getElementById('phoneNumber');
+
 phoneInput.addEventListener('input', () => {
+
   let value = phoneInput.value.replace(/\D/g, '');
+
   value = value.slice(0, 10);  // 电话限制限制 10 位数字
+
   phoneInput.value = value;
+
 });
+
 ```
 
 
@@ -5964,37 +6156,55 @@ phoneInput.addEventListener('input', () => {
 1. 创建并添加新的图像元素：
 
 ```javascript
-const image  =  document.createElement('img');
-image.src =  'path/to/image.jpg';
-image.alt =  'Image Description';
-const container  =  document.getElementById('imageContainer');
+
+const image = document.createElement('img');
+
+image.src = 'path/to/image.jpg';
+
+image.alt = 'Image Description';
+
+const container = document.getElementById('imageContainer');
+
 container.appendChild(image);
+
 ```
 
 2. 向 Select 元素中添加新选项：
 
 ```javascript
-const select  =  document.getElementById('mySelect');
-const option  =  document.createElement('option');
-option.value =  'value1';
-option.text =  'Option Text';
+
+const select = document.getElementById('mySelect');
+
+const option = document.createElement('option');
+
+option.value = 'value1';
+
+option.text = 'Option Text';
+
 select.appendChild(option);
+
 ```
 
 ## 高级对象操作
 
-3. 为 HTML 元素设置自定义属性：
+3. 为 HTML 元素设置自定属性：
 
 ```javascript
-const element  =  document.getElementById('myElement');
+
+const element = document.getElementById('myElement');
+
 element.setAttribute('data-custom', 'customValue');
+
 ```
 
 4. 从元素中移除特定属性：
 
 ```javascript
-const element  =  document.getElementById('myElement');
+
+const element = document.getElementById('myElement');
+
 element.removeAttribute('data-custom');
+
 ```
 
 ## 为 HTML 对象设置样式
@@ -6002,17 +6212,25 @@ element.removeAttribute('data-custom');
 5. 修改元素的 CSS 属性：
 
 ```javascript
-const element  =  document.getElementById('myElement');
-element.style.backgroundColor =  'blue';
-element.style.color =  'white';
+
+const element = document.getElementById('myElement');
+
+element.style.backgroundColor = 'blue';
+
+element.style.color = 'white';
+
 ```
 
 6. 添加和移除 CSS 类：
 
 ```javascript
-const element  =  document.getElementById('myElement');
+
+const element = document.getElementById('myElement');
+
 element.classList.add('newClass');
+
 element.classList.remove('oldClass');
+
 ```
 
 ## 事件处理与交互
@@ -6020,20 +6238,31 @@ element.classList.remove('oldClass');
 7. 创建并处理鼠标悬停效果：
 
 ```javascript
-const element  =  document.getElementById('myElement');
-element.addEventListener('mouseenter',  () => {
-element.style.backgroundColor =  'red';
+
+const element = document.getElementById('myElement');
+
+element.addEventListener('mouseenter', () => {
+
+  element.style.backgroundColor = 'red';
+
 });
-element.addEventListener('mouseleave',  () => {
-element.style.backgroundColor =  'blue';
+
+element.addEventListener('mouseleave', () => {
+
+  element.style.backgroundColor = 'blue');
+
 });
+
 ```
 
 8. 通过代码触发点击事件：
 
 ```javascript
-const button  =  document.getElementById('myButton');
+
+const button = document.getElementById('myButton');
+
 button.click();  // 在按钮元素上触发点击事件
+
 ```
 
 ## 高级内容操作
@@ -6041,16 +6270,23 @@ button.click();  // 在按钮元素上触发点击事件
 9. 使用 InnerHTML 设置 HTML 内容：
 
 ```javascript
-const element  =  document.getElementById('myElement');
-element.innerHTML =  '<strong>New HTML Content</strong>';
+
+const element = document.getElementById('myElement');
+
+element.innerHTML = '<strong>New HTML Content</strong>';
+
 ```
 
 10. 向元素中添加文本节点：
 
 ```javascript
-const element  =  document.getElementById('myElement');
-const textNode  =  document.createTextNode('Text Content');
+
+const element = document.getElementById('myElement');
+
+const textNode = document.createTextNode('Text Content');
+
 element.appendChild(textNode);
+
 ```
 
 这些 JavaScript 代码段演示了创建、操作和与 HTML 对象交互的高技术，包括 DOM 创建、对象操作、样式设置、事件处理和内容操作。
@@ -6060,21 +6296,33 @@ element.appendChild(textNode);
 1. 键盘事件处理 - 按按下：
 
 ```javascript
+
 document.addEventListener('keypress', (event) => {
-console.log(`Key pressed:  ${event.key}`);
+
+  console.log(`Key pressed: ${event.key}`);
+
 });
+
 ```
 
 2. 处理焦点事件 - 输入聚焦与失焦：
 
 ```javascript
-const inputField  =  document.getElementById('myInput');
-inputField.addEventListener('focus',  () => {
-console.log('Input field focused');
+
+const inputField = document.getElementById('myInput');
+
+inputField.addEventListener('focus', () => {
+
+  console.log('Input field focused');
+
 });
-inputField.addEventListener('blur',  () => {
-console.log('Input field blurred');
+
+inputField.addEventListener('blur', () => {
+
+  console.log('Input field blurred');
+
 });
+
 ```
 
 ## 事件委托与冒泡
@@ -6082,21 +6330,33 @@ console.log('Input field blurred');
 3. 使用点击事件进行事件委托：
 
 ```javascript
-const list  =  document.getElementById('myList');
+
+const list = document.getElementById('myList');
+
 list.addEventListener('click', (event) => {
-if (event.target.tagName ===  'LI') {
-console.log(`Clicked on list item:  ${event.target.textContent}`);
-}
+
+  if (event.target.tagName === 'LI') {
+
+    console.log(`Clicked on list item: ${event.target.textContent}`);
+
+  }
+
 });
+
 ```
 
 4. 事件冒泡 - 父元素上的点击事件：
 
 ```javascript
-const parent  =  document.getElementById('parentElement');
+
+const parent = document.getElementById('parentElement');
+
 parent.addEventListener('click', (event) => {
-console.log(`Clicked on parent element`);
+
+  console.log(`Clicked on parent element`);
+
 });
+
 ```
 
 ## 与文档事件
@@ -6104,17 +6364,25 @@ console.log(`Clicked on parent element`);
 5. 窗口加载事件：
 
 ```javascript
-window.addEventListener('load',  () => {
-console.log('Page fully loaded');
+
+window.addEventListener('load', () => {
+
+  console.log('Page fully loaded');
+
 });
+
 ```
 
 6. 文档就绪事件 (DOMContentLoaded)：
 
 ```javascript
-document.addEventListener('DOMContentLoaded',  () => {
-console.log('DOM fully loaded and parsed');
+
+document.addEventListener('DOMContentLoaded', () => {
+
+  console.log('DOM fully loaded and parsed');
+
 });
+
 ```
 
 ## 表单事件
@@ -6122,25 +6390,41 @@ console.log('DOM fully loaded and parsed');
 7. 表单提交与阻止默认行为：
 
 ```javascript
-const form  =  document.getElementById('myForm');
+
+const form = document.getElementById('myForm');
+
 form.addEventListener('submit', (event) => {
-event.preventDefault();
-console.log('Form submitted');
-// 执行表单数据处理或验证
+
+  event.preventDefault();
+
+  console.log('Form submitted');
+
+  // 执行表单数据处理或验证
+
 });
+
 ```
 
 8. 用于实时验证的输入事件：
 
 ```javascript
-const emailField  =  document.getElementById('email');
-emailField.addEventListener('input',  () => {
-if (!emailField.validity.valid) {
-emailField.setCustomValidity('Enter a valid email address');
-} else {
-emailField.setCustomValidity('');
-}
+
+const emailField = document.getElementById('email');
+
+emailField.addEventListener('input', () => {
+
+  if (!emailField.validity.valid) {
+
+    emailField.setCustomValidity('Enter a valid email address');
+
+  } else {
+
+    emailField.setCustomValidity('');
+
+  }
+
 });
+
 ```
 
 这些 JavaScript 代码段展示了各种事件处理技术，包括键盘事件、聚焦与模糊事件、事件委托、冒泡、窗口和文档事件，以及用于提交和输入验证的表单事件。
@@ -6150,19 +6434,29 @@ emailField.setCustomValidity('');
 1. 打开新浏览器窗口：
 
 ```javascript
-const openWindowButton  =  document.getElementById('openWindowButton');
-openWindowButton.addEventListener('click',  () => {
-window.open('https://example.com', '_blank', 'width=500,height=500');
+
+const openWindowButton = document.getElementById('openWindowButton');
+
+openWindowButton.addEventListener('click', () => {
+
+  window.open('https://example.com', '_blank', 'width=500,height=500');
+
 });
+
 ```
 
 2. 关闭浏览器窗口：
 
 ```javascript
-const closeWindowButton  =  document.getElementById('closeWindowButton');
-closeWindowButton.addEventListener('click',  () => {
-window.close();
+
+const closeWindowButton = document.getElementById('closeWindowButton');
+
+closeWindowButton.addEventListener('click', () => {
+
+  window.close();
+
 });
+
 ```
 
 ## Navigator 对象
@@ -6170,20 +6464,31 @@ window.close();
 3. 访问浏览器信息：
 
 ```javascript
-console.log(`Browser name:  ${navigator.appName}`);
-console.log(`Browser version:  ${navigator.appVersion}`);
-console.log(`User Agent:  ${navigator.userAgent}`);
-console.log(`Language:  ${navigator.language}`);
+
+console.log(`Browser name: ${navigator.appName}`);
+
+console.log(`Browser version: ${navigator.appVersion}`);
+
+console.log(`User Agent: ${navigator.userAgent}`);
+
+console.log(`Language: ${navigator.language}`);
+
 ```
 
 4. 检查地理定位可用性：
 
 ```javascript
+
 if ('geolocation' in navigator) {
-console.log('Geolocation is supported');
+
+  console.log('Geolocation is supported');
+
 } else {
-console.log('Geolocation is not supported');
+
+  console.log('Geolocation is not supported');
+
 }
+
 ```
 
 ## Location 对象操作
@@ -6191,18 +6496,27 @@ console.log('Geolocation is not supported');
 5. 跳转到另一个页面：
 
 ```javascript
+
 function redirectToPage() {
-window.location.href =  'https://example.com';
+
+  window.location.href = 'https://example.com';
+
 }
+
 ```
 
 6. 访问当前 URL 信息：
 
 ```javascript
-console.log(`Current URL:  ${window.location.href}`);
-console.log(`Hostname:  ${window.location.hostname}`);
-console.log(`Protocol:  ${window.location.protocol}`);
-console.log(`Pathname:  ${window.location.pathname}`);
+
+console.log(`Current URL: ${window.location.href}`);
+
+console.log(`Hostname: ${window.location.hostname}`);
+
+console.log(`Protocol: ${window.location.protocol}`);
+
+console.log(`Pathname: ${window.location.pathname}`);
+
 ```
 
 ## Screen 对象属性
@@ -6210,19 +6524,29 @@ console.log(`Pathname:  ${window.location.pathname}`);
 7. 获取屏幕尺寸：
 
 ```javascript
-console.log(`Screen width:  ${window.screen.width}`);
-console.log(`Screen height:  ${window.screen.height}`);
+
+console.log(`Screen width: ${window.screen.width}`);
+
+console.log(`Screen height: ${window.screen.height}`);
+
 ```
 
 8. 进入全屏模式：
 
 ```javascript
-const fullScreenButton  =  document.getElementById('fullScreenButton');
-fullScreenButton.addEventListener('click',  () => {
-if (document.fullscreenEnabled) {
-document.documentElement.requestFullscreen();
-}
+
+const fullScreenButton = document.getElementById('fullScreenButton');
+
+fullScreenButton.addEventListener('click', () => {
+
+  if (document.fullscreenEnabled) {
+
+    document.documentElement.requestFullscreen();
+
+  }
+
 });
+
 ```
 
 这些 JavaScript 代码段展示了使用浏览器对象模型 (BOM) 操作浏览器、navigator 和 location 对象、屏幕属性、打开/关闭窗口、浏览器信息、地理定位可用性、URL 操作以及全屏功能。
@@ -6238,10 +6562,6 @@ JavaScript 是一种在浏览器中运行的解释型编程语言。由于它不
 访问 [Visual Studio Code 网站](https://code.visual.com/) 下载适用于你操作系统的安装程序。运行安装程序并按照安装说明进行。
 
 ### 2. 安装 Node.js（可选但推荐用于开发）：
-
-
-
-
 
 Node.js 是一个 JavaScript 运行时环境，允许在浏览器之外执行 JavaScript。你可以从[官方网站](https://nodejs.org/) 下载 Node.js 并进行安装，它将附带 Node 软件包管理器 (`npm`)。这对于在本地运行 JavaScript 程序和管理依赖非常有用。
 
@@ -6262,9 +6582,12 @@ Node.js 是一个 JavaScript 运行时环境，允许在浏览器之外执行 Ja
 * 要运行 JavaScript 代码，打开 Visual Studio Code 中的集成终端（`Terminal > New Terminal`），导航到项目目录，并使用 Node.js 运行 JavaScript 文件。例如：
 
 ```bash
+
 node script.js
+
 ```
-* 如果要在浏览器中执行 JavaScript 代码，请创建一个 HTML 文件（`index.html`），并使用 `<script>` 标签其中链接你的 JavaScript 文件。在优好的浏览器中打开该 HTML 文件即可。
+
+* 如果要在浏览器中执� JavaScript 代码，请创建一个 HTML 文件（`index.html`），并使用 `<script>` 标签其中链接你的 JavaScript 文件。在优好的浏览器中打开该 HTML 文件即可。
 
 ### 6. 调试 JavaScript
 
@@ -6276,4 +6599,3 @@ node script.js
 这就是使用 Visual Studio Code 开始编写 JavaScript 代码的基础配置。请记住，JavaScript 开发通常涉及 Web 开发，你需要在 HTML/CSS 文件中编写 JavaScript 代码。对于基于 Web 的开发，你通常使用 VS Code 来管理整个项目结构。
 
 此外，对于更高级的开发或大型项目，使用如 `Webpack` 这样的模块打包器或如 `Gulp` 这样的任务运行器可能会进一步增强你的开发环境。
-

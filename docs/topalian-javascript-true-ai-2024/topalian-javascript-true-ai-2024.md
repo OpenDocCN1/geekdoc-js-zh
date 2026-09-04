@@ -1,14 +1,7 @@
+
 # Topalian JavaScript 真正 AI 2024
 
-
-
-
-
-
-
-
 ![](img/a5e700354e2f5d8a8c279b4edad9e6c6_0_0.png)[](img/a5e700354e2f5d8a8c279b4edad9e6c6_0_1.png)[](img/a5e700354e2f5d8a8c279b4edad9e6c6_0_2.png)
-
 
 献给父神
 
@@ -16,27 +9,20 @@
 
 ![](img/a5e700354e2f5d8a8c279b4edad9e6c6_2_0.png)[](img/a5e700354e2f5d8a8c279b4edad9e6c6_2_1.png)
 
-
 | 0 | 0 | 0 | 1 | 0 | 1 | 0 | 1 | 1 | 0 | 1 | 0 | 0 | 1 | 0 | 1 | 1 | 0 |
 | 0 | 1 | 0 | 1 | 1 | 0 | 1 | 0 | 0 | 1 | 0 | 1 | 1 | 0 | 1 | 0 | 0 | 1 |
 | 1 | 0 | 0 | 1 | 1 | 0 | 1 | 0 | 0 | 1 | 0 | 1 | 1 | 0 | 0 | 1 | 0 | 1 |
 | 1 | 1 | 1 | 0 | 1 | 0 | 0 | 1 | 1 | 0 | 1 | 0 | 1 | 0 | 1 | 0 | 1 | 0 |
 
-- if (a == 1 && b == 1) 仅当两者皆为真时才成立
+- `if (a == 1 && b == 1)` 仅当两者皆为真时才成立
 
 ## 真人工智能系统
 
 ![](img/a5e700354e2f5d8a8c279b4edad9e6c6_3_0.png)[](img/a5e700354e2f5d8a8c279b4edad9e6c6_3_1.png)[](img/a5e700354e2f5d8a8c279b4edad9e6c6_3_2.png)[](img/a5e700354e2f5d8a8c279b4edad9e6c6_3_3.png)
 
-
-
-
-
-
-
 ## 游戏中
 
-异或门 (Xor) 的反门是：异异门 (Xnor)
+异或门 (`Xor`) 的反门是：异异门 (`Xnor`)
 
 | 0 | 0 | 0 | 1 | 0 | 1 | 0 | 1 |
 | 0 | 1 | 0 | 1 | 1 | 0 | 1 | 0 |
@@ -44,6 +30,7 @@
 | 1 | 1 | 1 | 0 | 1 | 0 | 0 | 1 |
 
 ### 逆蕴含
+
 - 逆非蕴含
 - 质蕴含
 - 实非蕴含
@@ -51,18 +38,16 @@
 - 右补集
 - 左投影
 - 左补集
-
 - 永真式
 - 矛盾
 
-if ((a == 1 && b == 0) || (a == 0 && b == 1))
-    XOR
+`if ((a == 1 && b == 0) || (a == 0 && b == 1))`
 
+`XOR`
 
 真人工智能系统
 
 ![](img/a5e700354e2f5d8a8c279b4edad9e6c6_8_0.png)[](img/a5e700354e2f5d8a8c279b4edad9e6c6_8_1.png)[](img/a5e700354e2f5d8a8c279b4edad9e6c6_8_2.png)[](img/a5e700354e2f5d8a8c279b4edad9e6c6_8_3.png)[](img/a5e700354e2f5d8a8c279b4edad9e6c6_8_4.png)
-
 
 Topalian JavaScript 真人工智能
 
@@ -74,6 +59,7 @@ Topalian JavaScript 真人工智能
 | 1 | 1 | 1 | 0 | 1 | 0 | 0 | 1 |
 
 ### 逆蕴含
+
 - 逆非蕴含
 - 质蕴含
 - 实非蕴含
@@ -81,16 +67,15 @@ Topalian JavaScript 真人工智能
 - 右补集
 - 左投影
 - 左补集
-
 - 永真式
 - 矛盾
 
-if (a == 1 || b == 0)
-
+`if (a == 1 || b == 0)`
 
 ![](img/a5e700354e2f5d8a8c279b4edad9e6c6_9_0.png)[](img/a5e700354e2f5d8a8c279b4edad9e6c6_9_1.png)[](img/a5e700354e2f5d8a8c279b4edad9e6c6_9_2.png)[](img/a5e700354e2f5d8a8c279b4edad9e6c6_9_3.png)
 
 左投影
+
 反门是：左补集
 
 | 0 | 0 | 0 | 1 | 0 | 1 | 0 | 1 |
@@ -99,6 +84,7 @@ if (a == 1 || b == 0)
 | 1 | 1 | 1 | 0 | 1 | 0 | 0 | 1 |
 
 ### 逆蕴含
+
 - 逆非蕴含
 - 质蕴含
 - 实非蕴含
@@ -106,18 +92,19 @@ if (a == 1 || b == 0)
 - 右补集
 - 左投影
 - 左补集
-
 - 永真式
 - 矛盾
 
-10 == 1
-11 == 1
-if (a == 1)
+`10 == 1`
 
+`11 == 1`
+
+`if (a == 1)`
 
 ![](img/a5e700354e2f5d8a8c279b4edad9e6c6_10_0.png)[](img/a5e700354e2f5d8a8c279b4edad9e6c6_10_1.png)[](img/a5e700354e2f5d8a8c279b4edad9e6c6_10_2.png)[](img/a5e700354e2f5d8a8c279b4edad9e6c6_10_3.png)
 
 左投影
+
 反门是：左补集
 
 | 0 | 0 | 0 | 1 | 0 | 1 | 0 | 1 |
@@ -126,6 +113,7 @@ if (a == 1)
 | 1 | 1 | 1 | 0 | 1 | 0 | 0 | 1 |
 
 ### 逆蕴含
+
 - 逆非蕴含
 - 质蕴含
 - 实非蕴含
@@ -133,23 +121,22 @@ if (a == 1)
 - 右补集
 - 左投影
 - 左补集
-
 - 永真式
 - 矛盾
 
-10 == 0
-11 == 1
-if (a == 1)
+`10 == 0`
 
+`11 == 1`
+
+`if (a == 1)`
 
 ![](img/a5e700354e2f5d8a8c279b4edad9e6c6_11_0.png)[](img/a5e700354e2f5d8a8c279b4edad9e6c6_11_1.png)[](img/a5e700354e2f5d8a8c279b4edad9e6c6_11_2.png)[](img/a5e700354e2f5d8a8c279b4edad9e6c6_11_3.png)
-
 
 Topalian JavaScript 真人工智能
 
 ## 游戏中
 
-异或门 (Xor) 的反门是：异异门 (Xnor)
+异或门 (`Xor`) 的反门是：异异门 (`Xnor`)
 
 | 0 | 0 | 0 | 1 | 0 | 1 | 0 | 1 |
 | 0 | 1 | 0 | 1 | 1 | 0 | 1 | 0 |
@@ -157,6 +144,7 @@ Topalian JavaScript 真人工智能
 | 1 | 1 | 1 | 0 | 1 | 0 | 0 | 1 |
 
 ### 逆蕴含
+
 - 逆非蕴含
 - 质蕴含
 - 实非蕴含
@@ -164,94 +152,101 @@ Topalian JavaScript 真人工智能
 - 右补集
 - 左投影
 - 左补集
-
 - 永真式
 - 矛盾
 
-10 == 0
-11 == 1
-if (a == 1)
+`10 == 0`
 
+`11 == 1`
 
-
-
-
-
-
+`if (a == 1)`
 
 分享 查看
 
-Topalian_JavaScript... > Topalian_JavaScript_True_AI
+`Topalian_JavaScript... > Topalian_JavaScript_True_AI`
 
-搜索 Topalian_...
+搜索 `Topalian_...`
 
 指令
 
-css
-js
-media
+`css`
 
-Topalian_JavaScript_True_AI.html
+`js`
 
+`media`
+
+`Topalian_JavaScript_True_AI.html`
 
 ![](img/a5e700354e2f5d8a8c279b4edad9e6c6_14_0.png)[](img/a5e700354e2f5d8a8c279b4edad9e6c6_14_1.png)[](img/a5e700354e2f5d8a8c279b4edad9e6c6_14_2.png)[](img/a5e700354e2f5d8a8c279b4edad9e6c6_14_3.png)[](img/a5e700354e2f5d8a8c279b4edad9e6c6_14_4.png)[](img/a5e700354e2f5d8a8c279b4edad9e6c6_14_5.png)[](img/a5e700354e2f5d8a8c279b4edad9e6c6_14_6.png)
 
-
-js
+`js`
 
 分享 查看
 
-Topalian_JavaScript_True_AI > js
+`Topalian_JavaScript_True_AI > js`
 
 - 
 
-搜索 js
+搜索 `js`
 
 1 快捷方式
-JS
-4
-dataFunctions
 
+`JS`
+
+4
+
+`dataFunctions`
 
 ![](img/a5e700354e2f5d8a8c279b4edad9e6c6_15_0.png)[](img/a5e700354e2f5d8a8c279b4edad9e6c6_15_1.png)[](img/a5e700354e2f5d8a8c279b4edad9e6c6_15_2.png)[](img/a5e700354e2f5d8a8c279b4edad9e6c6_15_3.png)[](img/a5e700354e2f5d8a8c279b4edad9e6c6_15_4.png)[](img/a5e700354e2f5d8a8c279b4edad9e6c6_15_5.png)
 
-
+```javascript
 // 献给父神
 //
 // https://github.com/ChristopherAndrewTopalian
-n
-// HowToCombineJSFiles.js
+```
 
-## 教程：如何合并 js 文件夹中所有文件夹下的所有 .js 文件。
+`n`
+
+```javascript
+// HowToCombineJSFiles.js
+```
+
+## 教程：如何合并 `js` 文件夹中所有文件夹下的所有 `.js` 文件。
 
 ### 准备工作：
 
-
 ![](img/a5e700354e2f5d8a8c279b4edad9e6c6_16_0.png)[](img/a5e700354e2f5d8a8c279b4edad9e6c6_16_1.png)
+
 Christopher Topalian
+
 我们应该在每个脚本的末尾添加两个空行。这样在脚本之间就能很好地合并。
 
-第一步：打开我们的 js 文件夹。
+第一步：打开我们的 `js` 文件夹。
 
-第二步：在 js 文件夹的地址栏输入 cmd 并按回车。在命令提示符中打开 js 文件夹。
+第二步：在 `js` 文件夹的地址栏输入 `cmd` 并按回车。在命令提示符中打开 `js` 文件夹。
 
 第三步：在命令提示符中输入以下命令并按回车
-`for /r "%CD%" (*.js) do type "%i" >> main.js`脚本、音乐与科学学院
+
+`for /r "%CD%" (*.js) do type "%i" >> main.js`
+
+脚本、音乐与科学学院
 
 ![](img/a5e700354e2f5d8a8c279b4edad9e6c6_17_0.png)[](img/a5e700354e2f5d8a8c279b4edad9e6c6_17_1.png)
 
-现在我们有一个名为 main.js 的新文件，它包含了所有的 js 文件。这使得上传我们的应用程序变得简单，并且容易找到项目有多少行代码。
+现在我们有一个名为 `main.js` 的新文件，它包含了所有的 `js` 文件。这使得上传我们的应用程序变得简单，并且容易找到项目有多少行代码。
 
-要使用我们的 main.js 文件，在我们的 html 文件中包含它：
-`<script src='js/main.js'></script>`快乐脚本
+要使用我们的 `main.js` 文件，在我们的 `html` 文件中包含它：
 
+`<script src='js/main.js'></script>`
+
+快乐脚本
 
 ![](img/a5e700354e2f5d8a8c279b4edad9e6c6_18_0.png)[](img/a5e700354e2f5d8a8c279b4edad9e6c6_18_1.png)
 
+```html
 <!-- 献给父神 -->
 <html>
 <head>
-
 
 ![](img/a5e700354e2f5d8a8c279b4edad9e6c6_19_0.png)[](img/a5e700354e2f5d8a8c279b4edad9e6c6_19_1.png)
 
@@ -260,17 +255,19 @@ Christopher Topalian
 
 ![](img/a5e700354e2f5d8a8c279b4edad9e6c6_20_0.png)[](img/a5e700354e2f5d8a8c279b4edad9e6c6_20_1.png)
 
-
-
 ![](img/a5e700354e2f5d8a8c279b4edad9e6c6_21_0.png)[](img/a5e700354e2f5d8a8c279b4edad9e6c6_21_1.png)
 
 </head>
 <body onload="Loaded()">
 
-
 ![](img/a5e700354e2f5d8a8c279b4edad9e6c6_22_0.png)[](img/a5e700354e2f5d8a8c279b4edad9e6c6_22_1.png)
+</body>
+</html>
+```
 
-style01.css
+`style01.css`
+
+```css
 body {
     background-color: rgb(40, 40, 40);
     font-family: Arial;
@@ -283,6 +280,7 @@ a {
     color: rgb(100, 100, 100);
     text-decoration: none;
 }
+
 a:hover {
     text-decoration: underline;
 }
@@ -290,10 +288,11 @@ a:hover {
 input {
     padding: 10px;
 }
-
+```
 
 ![](img/a5e700354e2f5d8a8c279b4edad9e6c6_24_0.png)[](img/a5e700354e2f5d8a8c279b4edad9e6c6_24_1.png)
 
+```css
 body {
     background-color: rgb(0, 0, 0);
     border: 1px solid rgb(100, 100, 100);
@@ -314,10 +313,7 @@ textarea {
     font-size: 20px;
     font-weight: bold;
 }
-
-
-
-
+```
 
 ```css
 {
@@ -340,9 +336,7 @@ textarea {
 }
 ```
 
-
 ![](img/a5e700354e2f5d8a8c279b4edad9e6c6_26_0.png)[](img/a5e700354e2f5d8a8c279b4edad9e6c6_26_1.png)
-
 
 ```css
 .logicGateButton {
@@ -366,9 +360,7 @@ textarea {
 }
 ```
 
-
 ![](img/a5e700354e2f5d8a8c279b4edad9e6c6_27_0.png)[](img/a5e700354e2f5d8a8c279b4edad9e6c6_27_1.png)
-
 
 ```javascript
 // 献给父亲
@@ -390,7 +382,6 @@ function ba(whichElement) {
 }
 ```
 
-
 ![](img/a5e700354e2f5d8a8c279b4edad9e6c6_29_0.png)[](img/a5e700354e2f5d8a8c279b4edad9e6c6_29_1.png)
 
 ```javascript
@@ -400,8 +391,9 @@ function ba(whichElement) {
 let online = false;
 ```
 
-
 ![](img/a5e700354e2f5d8a8c279b4edad9e6c6_31_0.png)[](img/a5e700354e2f5d8a8c279b4edad9e6c6_31_1.png)
+
+
 
 ```javascript
 // 献给父亲
@@ -428,8 +420,7 @@ let logic = [
   },
 ```
 
-
-![](img/a5e700354e2f5d8a8c279b4edad9e6c6_32_0.png)[](img/a5e700354e2f5d8a8c279b4edad9e6c6_32_1.png)
+![](img/a5e700354e2f5d8a8c279b4edad9e6c6_32_0.png) ![](img/a5e700354e2f5d8a8c279b4edad9e6c6_32_1.png)
 
 ```javascript
   {
@@ -503,25 +494,26 @@ let logic = [
 ];
 ```
 
+![](img/a5e700354e2f5d8a8c279b4edad9e6c6_33_0.png) ![](img/a5e700354e2f5d8a8c279b4edad9e6c6_33_1.png)
 
-![](img/a5e700354e2f5d8a8c279b4edad9e6c6_33_0.png)[](img/a5e700354e2f5d8a8c279b4edad9e6c6_33_1.png)
-![](img/a5e700354e2f5d8a8c279b4edad9e6c6_34_0.png)[](img/a5e700354e2f5d8a8c279b4edad9e6c6_34_1.png)
-![](img/a5e700354e2f5d8a8c279b4edad9e6c6_35_0.png)[](img/a5e700354e2f5d8a8c279b4edad9e6c6_35_1.png)
-![](img/a5e700354e2f5d8a8c279b4edad9e6c6_36_0.png)[](img/a5e700354e2f5d8a8c279b4edad9e6c6_36_1.png)
+![](img/a5e700354e2f5d8a8c279b4edad9e6c6_34_0.png) ![](img/a5e700354e2f5d8a8c279b4edad9e6c6_34_1.png)
 
+![](img/a5e700354e2f5d8a8c279b4edad9e6c6_35_0.png) ![](img/a5e700354e2f5d8a8c279b4edad9e6c6_35_1.png)
 
+![](img/a5e700354e2f5d8a8c279b4edad9e6c6_36_0.png) ![](img/a5e700354e2f5d8a8c279b4edad9e6c6_36_1.png)
 
+`truthTableFormatted`：
 
-
-**truthTableFormatted**: '
+```text
 | A | B |
-|---|---|---|
+|---|---|
 | 0 | 0 | 0 |
 | 0 | 1 | 1 |
 | 1 | 0 | 1 |
 | 1 | 1 | 0 |
-'
+```
 
+```json
 {
   "name": "异否门",
   "imgSrcOffline": "media/textures/topalianDiagrams/xnor.png",
@@ -530,16 +522,18 @@ let logic = [
   "formula": "if((a==0&&b==0)||(a==1&&b==1))",
   "opposite": "异或门",
   "truthTable": "1001",
-  "truthTableFormatted": '
+  "truthTableFormatted": "
 | A | B |
-|---|---|---|
+|---|---|
 | 0 | 0 | 1 |
 | 0 | 1 | 0 |
 | 1 | 0 | 0 |
 | 1 | 1 | 1 |
-'
-},
+"
+}
+```
 
+```json
 {
   "name": "逆蕴含",
   "imgSrcOffline": "media/textures/topalianDiagrams/converse_implication.png",
@@ -548,16 +542,18 @@ let logic = [
   "formula": "if(a==1||b==0)",
   "opposite": "逆非蕴含",
   "truthTable": "1011",
-  "truthTableFormatted": '
+  "truthTableFormatted": "
 | A | B |
-|---|---|---|
+|---|---|
 | 0 | 0 | 1 |
 | 0 | 1 | 0 |
 | 1 | 0 | 1 |
 | 1 | 1 | 1 |
-'
+"
 }
+```
 
+```json
 {
   "name": "逆非蕴含",
   "imgSrcOffline": "media/textures/topalianDiagrams/converse_non_implication.png",
@@ -566,16 +562,18 @@ let logic = [
   "formula": "if(a==0&&b==1)",
   "opposite": "逆蕴含",
   "truthTable": "0100",
-  "truthTableFormatted": '
+  "truthTableFormatted": "
 | A | B |
-|---|---|---|
+|---|---|
 | 0 | 0 | 0 |
 | 0 | 1 | 1 |
 | 1 | 0 | 0 |
 | 1 | 1 | 0 |
-'
-},
+"
+}
+```
 
+```json
 {
   "name": "实质蕴含",
   "imgSrcOffline": "media/textures/topalianDiagrams/material_implication.png",
@@ -584,16 +582,18 @@ let logic = [
   "formula": "if(a==0||b==1)",
   "opposite": "实质非蕴含",
   "truthTable": "1101",
-  "truthTableFormatted": '
+  "truthTableFormatted": "
 | A | B |
-|---|---|---|
+|---|---|
 | 0 | 0 | 1 |
 | 0 | 1 | 1 |
 | 1 | 0 | 0 |
 | 1 | 1 | 1 |
-'
-},
+"
+}
+```
 
+```json
 {
   "name": "实质非蕴含",
   "imgSrcOffline": "media/textures/topalianDiagrams/material_non_implication.png",
@@ -602,16 +602,18 @@ let logic = [
   "formula": "if(a==1&&b==0)",
   "opposite": "实质蕴含",
   "truthTable": "0010",
-  "truthTableFormatted": '
+  "truthTableFormatted": "
 | A | B |
-|---|---|---|
+|---|---|
 | 0 | 0 | 0 |
 | 0 | 1 | 0 |
 | 1 | 0 | 1 |
 | 1 | 1 | 0 |
-'
-},
+"
+}
+```
 
+```json
 {
   "name": "右投影",
   "imgSrcOffline": "media/textures/topalianDiagrams/right_projection.png",
@@ -620,16 +622,18 @@ let logic = [
   "formula": "if((a==0&&b==1)||(a==1&&b==1))",
   "opposite": "右补集",
   "truthTable": "0101",
-  "truthTableFormatted": '
+  "truthTableFormatted": "
 | A | B |
-|---|---|---|
+|---|---|
 | 0 | 0 | 0 |
 | 0 | 1 | 1 |
 | 1 | 0 | 0 |
 | 1 | 1 | 1 |
-'
-},
+"
+}
+```
 
+```json
 {
   "name": "右补集",
   "imgSrcOffline": "media/textures/topalianDiagrams/right_complementation.png",
@@ -638,16 +642,18 @@ let logic = [
   "formula": "if((a==0&&b==0)||(a==1&&b==0))",
   "opposite": "右投影",
   "truthTable": "1010",
-  "truthTableFormatted": '
+  "truthTableFormatted": "
 | A | B |
-|---|---|---|
+|---|---|
 | 0 | 0 | 1 |
 | 0 | 1 | 0 |
 | 1 | 0 | 1 |
 | 1 | 1 | 0 |
-'
-},
+"
+}
+```
 
+```json
 {
   "name": "左投影",
   "imgSrcOffline": "media/textures/topalianDiagrams/left_projection.png",
@@ -656,16 +662,18 @@ let logic = [
   "formula": "if(a==1)",
   "opposite": "左补集",
   "truthTable": "0011",
-  "truthTableFormatted": '
+  "truthTableFormatted": "
 | A | B |
-|---|---|---|
+|---|---|
 | 0 | 0 | 0 |
 | 0 | 1 | 0 |
 | 1 | 0 | 1 |
 | 1 | 1 | 1 |
-'
-},
+"
+}
+```
 
+```json
 {
   "name": "左补集",
   "imgSrcOffline": "media/textures/topalianDiagrams/left_complementation.png",
@@ -673,12 +681,9 @@ let logic = [
   "function": "gateLc(a, b)",
   "formula": "if(a==0)"
 }
+```
 
-
-
-
-
-
+```json
 {
   "opposite": "左射投影",
   "truthTable": "1100",
@@ -686,9 +691,12 @@ let logic = [
   "name": "永真式",
   "imgSrcOffline": "media/textures/topalianDiagrams/tautology.png"
 }
-![](img/a5e700354e2f5d8a8c279b4edad9e6c6_49_0.png)![](img/a5e700354e2f5d8a8c279b4edad9e6c6_49_1.png)
+```
 
+![](img/a5e700354e2f5d8a8c279b4edad9e6c6_49_0.png) ![](img/a5e700354e2f5d8a8c279b4edad9e6c6_49_1.png)
 
+```json
+{
   "imgSrcOnline": "https://collegeofscripting.weebly.com/uploads/6/4/4/8/64482293/tautology_orig.png",
   "function": "gateTautology(a, b)",
   "formula": "if((a==0 && b==0) || (a==0 && b==1) || (a==1 && b==0) || (a==1 && b==1))",
@@ -696,23 +704,35 @@ let logic = [
   "truthTable": "1111",
   "truthTableFormatted": "| A B |\n|---||\n| 0 0 | 1 |\n| 0 1 | 1 |\n| 1 0 | 1 |\n| 1 1 | 1 |"
 }
-![](img/a5e700354e2f5d8a8c279b4edad9e6c6_50_0.png)![](img/a5e700354e2f5d8a8c279b4edad9e6c6_50_1.png)
+```
 
+![](img/a5e700354e2f5d8a8c279b4edad9e6c6_50_0.png) ![](img/a5e700354e2f5d8a8c279b4edad9e6c6_50_1.png)
 
+```json
 {
   "name": "矛盾式",
   "imgSrcOffline": "media/textures/topalianDiagrams/contradiction.png",
   "imgSrcOnline": "https://collegeofscripting.weebly.com/uploads/6/4/4/8/64482293/contradiction_orig.png",
   "function": "gateContradiction(a, b)",
-  "formula": "if((a==0 && b==0) || (a==0 && b==1) || (a==1 && b==0) || (a==1 && b==1))",
-  "opposite": "永真式",
-  "truthTable": "0000",
-  "truthTableFormatted": "| A B |\n|---||\n| 0 0 | 0 |\n| 0 1 | 0 |\n| 1 0 | 0 |\n| 1 1 | 0 |"
+  "formula": "if((a==0 && b==0) || (a==0 && b==1) || (a==1 && b==0) || (a==1 && b==1))"
 }
+```
+
+
+
+`"opposite": "永真式"`
+
+`"truthTable": "0000"`
+
+`"truthTableFormatted": "| A B |\n|---||\n| 0 0 | 0 |\n| 0 1 | 0 |\n| 1 0 | 0 |\n| 1 1 | 0 |"`
+
 ![](img/a5e700354e2f5d8a8c279b4edad9e6c6_51_0.png)![](img/a5e700354e2f5d8a8c279b4edad9e6c6_51_1.png)
 
+```javascript
 // 献给父神
+
 // logicGates.js
+
 function gateAnd(a, b) {
   if (a==1 && b==1) {
     return "Both True";
@@ -797,11 +817,6 @@ function gateMni(a, b) {
 function gateRp(a, b) {
 }
 
-
-
-
-
-```javascript
 if ((a == 0 && b == 1) || (a == 1 && b == 1)) {
   return "BTrueorBothTrue";
 }
@@ -931,11 +946,9 @@ function makeLogicCalculator(whichItem) {
 }
 ```
 
-
-
-
 Christopher Topalian
 
+```javascript
 ////-
 
 let textBox001 = createElement("input");
@@ -949,12 +962,19 @@ textBox001.placeholder = "A";
 textBox001.style.width = '50px';
 
 textBox001.style.marginRight = '3px';
+
 textBox001.onkeyup = function() {
+
     let a = textBox001.value;
+
     let b = textBox002.value;
+
     if (b != '') {
+
         getElementById("textBoxResult").value = eval(logic[findIndexByName(logic, whichItem)].function);
+
     }
+
 };
 
 textboxDiv.append(textBox001);
@@ -970,15 +990,25 @@ textBox002.id = "textBox002";
 textBox002.placeholder = "B";
 
 textBox002.style.width = '50px';
+
 textBox002.onkeyup = function() {
+
     let a = textBox001.value;
+
     let b = textBox002.value;
+
     if (a != '' && b != '') {
+
         getElementById("textBoxResult").value = eval(logic[findIndexByName(logic, whichItem)].function);
+
     }
+
     else {
+
         getElementById("textBoxResult").value = '';
+
     }
+
 };
 
 textboxDiv.append(textBox002);
@@ -992,13 +1022,21 @@ textBoxResult.id = "textBoxResult";
 textBoxResult.placeholder = "结果";
 
 textBoxResult.style.width = '200px';
+
 textBoxResult.onchange = function() {
+
     if (getElementById('textBoxResult').value == 0) {
+
         getElementById('textBoxResult').style.borderColor = 'rgb(255,255,255)';
+
     }
+
     else {
+
         getElementById('textBoxResult').style.borderColor = 'rgb(0,255,255)';
+
     }
+
 };
 
 logicCalcDiv.append(textBoxResult);
@@ -1014,11 +1052,15 @@ truthTableAbbreviated.id = 'truthTableAbbreviated';
 truthTableAbbreviated.style.position = 'absolute';
 
 truthTableAbbreviated.style.left = '140px';
+
 truthTableAbbreviated.style.top = '40px';
+
 truthTableAbbreviated.style.color = 'rgb(150,150,150)';
 
 if (getElementById('truthTableAbbreviated')) {
+
     getElementById('truthTableAbbreviated').remove();
+
 }
 
 appendChild(truthTableAbbreviated);
@@ -1034,11 +1076,15 @@ truthTableComplete.id = 'truthTableComplete';
 truthTableComplete.style.position = 'absolute';
 
 truthTableComplete.style.left = '-30px';
+
 truthTableComplete.style.top = '15px';
+
 truthTableComplete.style.color = 'rgb(150,150,150)';
 
 if (getElementById('truthTableComplete')) {
+
     getElementById('truthTableComplete').remove();
+
 }
 
 appendChild(truthTableComplete);
@@ -1054,12 +1100,17 @@ booleanGate.id = 'booleanGate';
 booleanGate.style.position = 'absolute';
 
 booleanGate.style.left = '25px';
+
 booleanGate.style.top = '310px';
+
 booleanGate.style.width = '400px';
+
 booleanGate.style.color = 'rgb(0,255,255)';
 
 if (getElementById('booleanGate')) {
+
     getElementById('booleanGate').remove();
+
 }
 
 appendChild(booleanGate);
@@ -1067,7 +1118,11 @@ appendChild(booleanGate);
 ////-
 
 let oppositeGate = createElement('div');
+```
 
+
+
+```javascript
 oppositeGate.innerHTML = '反向门: ' + logic[findIndexByName(logic, whichItem)].opposite;
 
 oppositeGate.id = 'oppositeGate';
@@ -1075,7 +1130,9 @@ oppositeGate.id = 'oppositeGate';
 oppositeGate.style.position = 'absolute';
 
 oppositeGate.style.left = '280px';
+
 oppositeGate.style.top = '3px';
+
 oppositeGate.style.color = 'rgb(100,100,100)';
 
 if (getElementById('oppositeGate')) {
@@ -1084,7 +1141,7 @@ if (getElementById('oppositeGate')) {
 
 appendChild(oppositeGate);
 
-////-
+// //-
 
 let topalianDiagram = createElement('img');
 
@@ -1092,142 +1149,162 @@ topalianDiagram.id = 'topalianDiagram';
 
 if (online == false) {
     topalianDiagram.src = logic[findIndexByName(logic, whichItem)].imgSrcOffline;
-}
-else {
+} else {
     // 处理在线 src 的逻辑
 }
 
-
-```javascript
 topalianDiagram.src = findIndexByName(logic, whichItem).imgSrcOnline;
 }
+
 topalianDiagram.style.position = 'absolute';
 topalianDiagram.style.left = '458px';
 topalianDiagram.style.top = '283px';
 topalianDiagram.style.width = '115px';
+
 ba(topalianDiagram);
 }
 ```
 
 脚本音乐科学学院
+
 CollegeOfScripting.weebly.com
 
-![](img/a5e700354e2f5d8a8c279b4edad9e6c6_83_0.png)[](img/a5e700354e2f5d8a8c279b4edad9e6c6_83_1.png)
+![](img/a5e700354e2f5d8a8c279b4edad9e6c6_83_0.png)![](img/a5e700354e2f5d8a8c279b4edad9e6c6_83_1.png)
 
 // 献给父神
+
 // 版权所有 Christopher Andrew Topalian Copyright 2000-2024
+
 // https://github.com/ChristopherTopalian
+
 // https://github.com/ChristopherAndrewTopalianian
 
 // makeLogicGateButtons.js
+
+```javascript
 function makeLogicGateButtons()
 {
     let logicButtonsDiv = ce("div");
+
     logicButtonsDiv.id = "logicButtonsDiv";
-```
 
-脚本音乐科学学院
-CollegeOfScripting.weebly.com
+    logicButtonsDiv.className = "logicButtonsDiv";
 
-![](img/a5e700354e2f5d8a8c279b4edad9e6c6_84_0.png)[](img/a5e700354e2f5d8a8c279b4edad9e6c6_84_1.png)
-
-```javascript
-logicButtonsDiv.className = "logicButtonsDiv";
     logicButtonsDiv.style.position = 'absolute';
+
     logicButtonsDiv.style.left = '217px';
+
     logicButtonsDiv.style.top = '40px';
+
     logicButtonsDiv.style.width = '375px';
+
     ba(logicButtonsDiv);
+
     //-//
+
     for (let x = 0; x < logic.length; x++)
     {
         let logicGateButton = ce("button");
+
         logicGateButton.innerHTML = logic[x].name;
+
         logicGateButton.id = "logicGateButton" + logic[x].name;
-```
 
-脚本音乐科学学院
-CollegeOfScripting.weebly.com
+        logicGateButton.className = "logicGateButton";
 
-![](img/a5e700354e2f5d8a8c279b4edad9e6c6_85_0.png)[](img/a5e700354e2f5d8a8c279b4edad9e6c6_85_1.png)
+        logicGateButton.onclick = function()
+        {
+            ge('sfx_blip_001').play();
 
-```javascript
-logicGateButton.className = "logicGateButton";
-    logicGateButton.onclick = function() 
-    {
-        ge('sfx_blip_001').play();
-        makeLogicCalculator(logic[x].name);
-    };
-    logicGateButton.onmouseover = function()
-    {
-        ge('sfx_warp_001').play();
-    };
-    logicButtonsDiv.append(logicGateButton); 
+            makeLogicCalculator(logic[x].name);
+        };
+
+        logicGateButton.onmouseover = function()
+        {
+            ge('sfx_warp_001').play();
+        };
+
+        logicButtonsDiv.append(logicGateButton);
     }
 }
 ```
 
 脚本音乐科学学院
+
 CollegeOfScripting.weebly.com
 
-![](img/a5e700354e2f5d8a8c279b4edad9e6c6_86_0.png)[](img/a5e700354e2f5d8a8c279b4edad9e6c6_86_1.png)
+![](img/a5e700354e2f5d8a8c279b4edad9e6c6_84_0.png)![](img/a5e700354e2f5d8a8c279b4edad9e6c6_84_1.png)
 
 ```javascript
 // 献给父神
+
 // 版权所有 Christopher Andrew Topalian Copyright 2000-2024
+
 // https://github.com/ChristopherTopalian
+
 // https://github.com/ChristopherAndrewTopalianian
 
 // makeTrueAiDiagram.js
+
 function makeTrueAiDiagram()
 {
     let trueAiDiagram = ce('img');
+
     trueAiDiagram.id = 'trueAiDiagram';
+
     if (online == false)
-```
-
-脚本音乐科学学院
-CollegeOfScripting.weebly.com
-
-![](img/a5e700354e2f5d8a8c279b4edad9e6c6_87_0.png)[](img/a5e700354e2f5d8a8c279b4edad9e6c6_87_1.png)
-
-```javascript
-trueAiDiagram.src = 'media/textures/true_ai_by_christalian.png';
+    {
+        trueAiDiagram.src = 'media/textures/true_ai_by_christalian.png';
+    }
     else
     {
         trueAiDiagram.src = 'https://collegeofscripting.weebly.com/uploads/6/4/8/6448293/true-ai-by-topalian.png';
     }
+
     trueAiDiagram.style.position = 'absolute';
+
     trueAiDiagram.style.left = '598px';
+
     trueAiDiagram.style.top = '40px';
+
     trueAiDiagram.style.width = '400px';
+
     ba(trueAiDiagram);
 }
 ```
 
 脚本音乐科学学院
+
 CollegeOfScripting.weebly.com
 
-![](img/a5e700354e2f5d8a8c279b4edad9e6c6_88_0.png)[](img/a5e700354e2f5d8a8c279b4edad9e6c6_88_1.png)
+![](img/a5e700354e2f5d8a8c279b4edad9e6c6_86_0.png)![](img/a5e700354e2f5d8a8c279b4edad9e6c6_86_1.png)
 
 ```javascript
 // 献给父神
+
 // 版权所有 Christopher Andrew Topalian Copyright 2000-2024
+
 // https://github.com/ChristopherTopalian
+
 // https://github.com/ChristopherAndrewTopalianian
 
 // loadSounds.js
+
 function loadSounds()
 {
     let sounds = [
         {
             name: 'sfx_blip_001',
+
             soundFileOffline: 'media/sounds/sfx_blip_001.mp4',
+
             soundFileOnline: 'https://collegeofscripting.weebly.com/uploads/6/4/8/6448293/sfx_blip_001.mp4'
         },
         {
             name: 'sfx_warp_001',
+
             soundFileOffline: 'media/sounds/sfx_warp_001.mp4',
+
             soundFileOnline: 'https://collegeofscripting.weebly.com/uploads/6/4/8/6448293/sfx_warp_001.mp4'
         }
     ];
@@ -1235,6 +1312,7 @@ function loadSounds()
     for (let x = 0; x < sounds.length; x++)
     {
         let theSound = ce('audio');
+
         if (online == false)
         {
             theSound.src = sounds[x].soundFileOffline;
@@ -1243,52 +1321,54 @@ function loadSounds()
         {
             theSound.src = sounds[x].soundFileOnline;
         }
+
         theSound.id = sounds[x].name;
+
         theSound.loop = false;
+
         theSound.volume = 1.0;
+
         ba(theSound);
     }
 }
 ```
 
 脚本音乐科学学院
+
 CollegeOfScripting.weebly.com
 
-![](img/a5e700354e2f5d8a8c279b4edad9e6c6_89_0.png)[](img/a5e700354e2f5d8a8c279b4edad9e6c6_89_1.png)
+![](img/a5e700354e2f5d8a8c279b4edad9e6c6_89_0.png)![](img/a5e700354e2f5d8a8c279b4edad9e6c6_89_1.png)
 
 ```javascript
 // 献给父神
+
 // 版权所有 Christopher Andrew Topalian Copyright 2000-2024
+
 // https://github.com/ChristopherTopalian
+
 // https://github.com/ChristopherAndrewTopalianian
 
 // whenLoaded.js
+
 function whenLoaded()
 {
     loadSounds();
+
     makeLogicCalculator("And");
-```
 
-脚本音乐科学学院
-CollegeOfScripting.weebly.com
-
-![](img/a5e700354e2f5d8a8c279b4edad9e6c6_93_0.png)[](img/a5e700354e2f5d8a8c279b4edad9e6c6_93_1.png)
-
-```javascript
     makeLogicGateButtons();
+
     makeTrueAiDiagram();
+
     makeCredits();
 }
 ```
 
 脚本音乐科学学院
+
 CollegeOfScripting.weebly.com
 
-![](img/a5e700354e2f5d8a8c279b4edad9e6c6_94_0.png)[](img/a5e700354e2f5d8a8c279b4edad9e6c6_94_1.png)
-
-
-
-
+![](img/a5e700354e2f5d8a8c279b4edad9e6c6_93_0.png)![](img/a5e700354e2f5d8a8c279b4edad9e6c6_93_1.png)
 
 Christopher Topalian
 
@@ -1314,6 +1394,7 @@ Christopher Topalian
 | RPH | 0101 |
 
 脚本、音乐与科学学院
+
 CollegeOfScripting.weebly.com
 
 ![](img/a5e700354e2f5d8a8c279b4edad9e6c6_95_0.png)![](img/a5e700354e2f5d8a8c279b4edad9e6c6_95_1.png)![](img/a5e700354e2f5d8a8c279b4edad9e6c6_95_2.png)![](img/a5e700354e2f5d8a8c279b4edad9e6c6_95_3.png)![](img/a5e700354e2f5d8a8c279b4edad9e6c6_95_4.png)![](img/a5e700354e2f5d8a8c279b4edad9e6c6_95_5.png)![](img/a5e700354e2f5d8a8c279b4edad9e6c6_95_6.png)![](img/a5e700354e2f5d8a8c279b4edad9e6c6_95_7.png)![](img/a5e700354e2f5d8a8c279b4edad9e6c6_95_8.png)![](img/a5e700354e2f5d8a8c279b4edad9e6c6_95_9.png)![](img/a5e700354e2f5d8a8c279b4edad9e6c6_95_10.png)![](img/a5e700354e2f5d8a8c279b4edad9e6c6_95_11.png)![](img/a5e700354e2f5d8a8c279b4edad9e6c6_95_12.png)![](img/a5e700354e2f5d8a8c279b4edad9e6c6_95_13.png)![](img/a5e700354e2f5d8a8c279b4edad9e6c6_95_14.png)![](img/a5e700354e2f5d8a8c279b4edad9e6c6_95_15.png)![](img/a5e700354e2f5d8a8c279b4edad9e6c6_95_16.png)
@@ -1321,6 +1402,7 @@ CollegeOfScripting.weebly.com
 Christopher Topalian
 
 **获取更多教程：**
+
 - CollegeOfScripting.weebly.com
 - CollegeOfScripting.wordpress.com
 - Youtube.com/ScriptingCollege
@@ -1330,6 +1412,7 @@ Christopher Topalian
 - Sites.google.com/view/CollegeOfScripting
 
 脚本、音乐与科学学院
+
 CollegeOfScripting.weebly.com
 
 ![](img/a5e700354e2f5d8a8c279b4edad9e6c6_96_0.png)![](img/a5e700354e2f5d8a8c279b4edad9e6c6_96_1.png)
@@ -1355,8 +1438,9 @@ Christopher Topalian
 写下它，输入它，说出来，看到它，梦到它。
 
 CollegeOfScripting.weebly.com
+
 脚本、音乐与科学学院
+
 CollegeOfScripting.weebly.com
 
 ![](img/a5e700354e2f5d8a8c279b4edad9e6c6_97_0.png)![](img/a5e700354e2f5d8a8c279b4edad9e6c6_97_1.png)
-

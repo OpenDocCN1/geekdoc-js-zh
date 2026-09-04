@@ -1,14 +1,15 @@
+
 # 六、数学
 
 ## 数学常数
 
 ### 问题
 
-你需要使用常见的数学常数，比如 π 或者 e 。
+你需要使用常见的数学常数，比如`π`或者`e`。
 
 ### 解决方案
 
-使用 Javascript 的 Math object 来提供通常需要的数学常数。
+使用 Javascript 的`Math` object 来提供通常需要的数学常数。
 
 ```js
 Math.PI
@@ -51,7 +52,7 @@ Math.LOG10E
 
 ### 问题
 
-你想计算出 Fibonacci 数列中的数值 N ，但需迅速地算出结果。
+你想计算出 Fibonacci 数列中的数值`N`，但需迅速地算出结果。
 
 ### 解决方案
 
@@ -59,17 +60,17 @@ Math.LOG10E
 
 这里给出一些关于该算法和改进方法的链接：
 
-*   [`bosker.wordpress.com/2011/04/29/the-worst-algorithm-in-the-world/`](http://bosker.wordpress.com/2011/04/29/the-worst-algorithm-in-the-world/)
-*   [`www.math.rutgers.edu/~erowland/fibonacci`](http://www.math.rutgers.edu/~erowland/fibonacci)
-*   [`jsfromhell.com/classes/bignumber`](http://jsfromhell.com/classes/bignumber)
-*   [`www.math.rutgers.edu/~erowland/fibonacci`](http://www.math.rutgers.edu/~erowland/fibonacci)
-*   [`bigintegers.blogspot.com/2010/11/square-division-power-square-root`](http://bigintegers.blogspot.com/2010/11/square-division-power-square-root)
-*   [`bugs.python.org/issue3451`](http://bugs.python.org/issue3451)
+- [`bosker.wordpress.com/2011/04/29/the-worst-algorithm-in-the-world/`](http://bosker.wordpress.com/2011/04/29/the-worst-algorithm-in-the-world/)
+- [`www.math.rutgers.edu/~erowland/fibonacci`](http://www.math.rutgers.edu/~erowland/fibonacci)
+- [`jsfromhell.com/classes/bignumber`](http://jsfromhell.com/classes/bignumber)
+- [`www.math.rutgers.edu/~erowland/fibonacci`](http://www.math.rutgers.edu/~erowland/fibonacci)
+- [`bigintegers.blogspot.com/2010/11/square-division-power-square-root`](http://bigintegers.blogspot.com/2010/11/square-division-power-square-root)
+- [`bugs.python.org/issue3451`](http://bugs.python.org/issue3451)
 
 以下的代码来源于：[`gist.github.com/1032685`](https://gist.github.com/1032685)
 
 ```js
- ###
+###
 
 Author: Jason Giedymin <jasong _a_t_ apache -dot- org>
         http://www.jasongiedymin.com
@@ -85,7 +86,7 @@ Todo:
 - BZ and Newton mods.
 - Timing
 
- ###
+###
 
 MAXIMUM_JS_FIB_N = 1476
 
@@ -153,24 +154,24 @@ console.log "[#{calc_value}] took #{diff} ms."
 
 相比于传统的，该算法在性能上更胜一筹，这归功于使用的机器及其精确度。
 
-运行的时候使用 coffee -c script.coffee 来编译 script：
+运行的时候使用`coffee -c script.coffee`来编译 script：
 
 然后复制粘贴编译的 JS 代码到浏览器的 JavaScript 控制台。
 
-注意：你需要一个支持[类型数组](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Typed_arrays)的浏览器
+注意：你需要一个支持[类型数组](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Typed_arrays)的浏览器。
 
 参考：
 
-1.  ftp://ftp.idsoftware.com/idstuff/source/quake3-1.32b-source.zip
-2.  [`www.lomont.org/Math/Papers/2003/InvSqrt.pdf`](http://www.lomont.org/Math/Papers/2003/InvSqrt.pdf)
-3.  [`en.wikipedia.org/wiki/Newton%27s_method`](http://en.wikipedia.org/wiki/Newton%27s_method)
-4.  [`developer.mozilla.org/en/JavaScripttypedarrays`](https://developer.mozilla.org/en/JavaScripttypedarrays)
-5.  [`en.wikipedia.org/wiki/Fastinversesquare_root`](http://en.wikipedia.org/wiki/Fastinversesquare_root)
+1. ftp://ftp.idsoftware.com/idstuff/source/quake3-1.32b-source.zip
+2. [`www.lomont.org/Math/Papers/2003/InvSqrt.pdf`](http://www.lomont.org/Math/Papers/2003/InvSqrt.pdf)
+3. [`en.wikipedia.org/wiki/Newton%27s_method`](http://en.wikipedia.org/wiki/Newton%27s_method)
+4. [`developer.mozilla.org/en/JavaScripttypedarrays`](https://developer.mozilla.org/en/JavaScripttypedarrays)
+5. [`en.wikipedia.org/wiki/Fastinversesquare_root`](http://en.wikipedia.org/wiki/Fastinversesquare_root)
 
 以下的代码来源于：[`gist.github.com/1036533`](https://gist.github.com/1036533)
 
 ```js
- ###
+###
 
 Author: Jason Giedymin <jasong _a_t_ apache -dot- org>
         http://www.jasongiedymin.com
@@ -190,7 +191,7 @@ Author: Jason Giedymin <jasong _a_t_ apache -dot- org>
 
 注意：你需要一个支持类型数组 [4](https://developer.mozilla.org/en/JavaScript_typed_arrays) 的浏览器
 
- ###
+###
 
 approx_const_quake_32 = 0x5f3759df # See [1]
 approx_const_32 = 0x5f375a86 # See [2]
@@ -211,7 +212,7 @@ fastInvSqrt_typed = (n, precision=1) ->
 
     return y[0]
 
- ### 单次运行示例
+### 单次运行示例
 
 testSingle = () ->
     example_n = 10
@@ -233,7 +234,7 @@ testSingle()
 
 ### 解决方案
 
-编写你自己的随机数生成器。当然有很多方法可以做到这一点，这里给出一个简单的示例。 *该发生器绝对不可以以加密为目的！*
+编写你自己的随机数生成器。当然有很多方法可以做到这一点，这里给出一个简单的示例。该发生器绝对不可以以加密为目的！
 
 ```js
 class Rand
@@ -255,7 +256,7 @@ class Rand
     # new_seed = (a * seed + c) % m
     @seed = (@multiplier*@seed + @offset) % @modulo
 
- # 返回一个随机浮点满足 0 <= f < 1.0
+  # 返回一个随机浮点满足 0 <= f < 1.0
   randf: ->
     this.randn() / @modulo
 
@@ -263,30 +264,30 @@ class Rand
   rand: (n) ->
     Math.floor(this.randf() * n)
 
-  #返回一个随机的整数满足 min <= f < max
+  # 返回一个随机的整数满足 min <= f < max
   rand2: (min, max) ->
     min + this.rand(max-min)
 ```
 
 ### 讨论
 
-JavaScript 和 CoffeeScript 都不提供可产生随机数的发生器。编写发生器对于我们来说将是一个挑战，在于权衡量的随机性与发生器的简单性。对随机性的全面讨论已超出了本书的范围。如需进一步阅读，可参考 Donald Kunth 的 *The Art of Computer Programming* 第 Ⅱ 卷第三章的 “ Random Numbers ” ，以及 *Numerical Recipes in C* 第二版本第七章的“ Random Numbers ”。
+JavaScript 和 CoffeeScript 都不提供可产生随机数的发生器。编写发生器对于我们来说将是一个挑战，在于权衡量的随机性与发生器的简单性。对随机性的全面讨论已超出了本书的范围。如需进一步阅读，可参考 Donald Kunth 的 *The Art of Computer Programming* 第 Ⅱ 卷第三章的“Random Numbers”，以及 *Numerical Recipes in C* 第二版本第七章的“Random Numbers”。
 
-但是，对于这个随机数发生器只有简单的解释。这是一个线性同余伪随机数发生器，其运行源于一条数学公式 I[j+1] = (aI[j]+c) % m，其中 a 是乘数，c 是加法偏移量，m 是模数。每次请求随机数时就会执行很大的乘法和加法运算——这里的“很大”与密钥空间有关——得到的结果将以模数的形式被返回密钥空间。
+但是，对于这个随机数发生器只有简单的解释。这是一个线性同余伪随机数发生器，其运行源于一条数学公式`I[j+1] = (aI[j]+c) % m`，其中`a`是乘数，`c`是加法偏移量，`m`是模数。每次请求随机数时就会执行很大的乘法和加法运算——这里的“很大”与密钥空间有关——得到的结果将以模数的形式被返回密钥空间。
 
-这个发生器的周期为 232。虽然它绝对不能以加密为目的，但是对于最简单的随机性要求来说，它是相当足够的。randn() 在循环之前将遍历整个密钥空间，下一个数由上一个来确定。
+这个发生器的周期为`232`。虽然它绝对不能以加密为目的，但是对于最简单的随机性要求来说，它是相当足够的。`randn()`在循环之前将遍历整个密钥空间，下一个数由上一个来确定。
 
-如果你想修补这个发生器，强烈建议你去阅读 Knuth 的 * The Art of Computer Programming * 中的第三章。随机数生成是件很容易弄糟的事情，然而 Knuth 会解释如何区分好的和坏的随机数生成。
+如果你想修补这个发生器，强烈建议你去阅读 Knuth 的 *The Art of Computer Programming* 中的第三章。随机数生成是件很容易弄糟的事情，然而 Knuth 会解释如何区分好的和坏的随机数生成。
 
 不要把发生器的输出结果变成模数。如果你需要一个整数的范围，应使用分割的方法。线性同余发生器的低位是不具有随机性的。特别的是，它总是从偶数种子产生奇数，反之亦然。所以如果你需要一个随机的 0 或者 1，不要使用：
 
 ```js
- # NOT random! Do not do this!
+# NOT random! Do not do this!
 
 r.randn() % 2
 ```
 
-因为你肯定得不到随机数字。反而，你应该使用 r.rand(2)。
+因为你肯定得不到随机数字。反而，你应该使用`r.rand(2)`。
 
 ## 生成随机数
 
@@ -296,7 +297,7 @@ r.randn() % 2
 
 ### 解决方案
 
-使用 JavaScript 的 Math.random() 来获得浮点数，满足 0<=X<1.0 。使用乘法和 Math.floor 得到在一定范围内的数字。
+使用 JavaScript 的`Math.random()`来获得浮点数，满足`0<=X<1.0`。使用乘法和`Math.floor`得到在一定范围内的数字。
 
 ```js
 probability = Math.random()
@@ -324,9 +325,12 @@ range = Math.random() * (max - min) + min
 
 对于 JavaScript 来说，它更直接更快。
 
-需要注意到 JavaScript 的 Math.random() 不能通过发生器生成随机数种子来得到特定值。详情可参考[产生可预测的随机数](http://coffeescript-cookbook.github.io/chapters/math/generating-predictable-random-numbers)。
+
+
+需要注意到 JavaScript 的`Math.random()`不能通过发生器生成随机数种子来得到特定值。详情可参考[产生可预测的随机数](http://coffeescript-cookbook.github.io/chapters/math/generating-predictable-random-numbers)。
 
 产生一个从 0 到 n（不包括在内）的数，乘以 n。
+
 产生一个从 1 到 n（包含在内）的数，乘以 n 然后加上 1。
 
 ## 转换弧度和度
@@ -337,24 +341,24 @@ range = Math.random() * (max - min) + min
 
 ### 解决方案
 
-使用 JavaScript 的 Math.PI 和一个简单的公式来转换两者。
+使用 JavaScript 的`Math.PI`和一个简单的公式来转换两者。
 
 ```js
- # 弧度转换成度
+# 弧度转换成度
 
 radiansToDegrees = (radians) ->
     degrees = radians * 180 / Math.PI
 
 radiansToDegrees(1)
- # => 57.29577951308232
+# => 57.29577951308232
 
- # 度转换成弧度
+# 度转换成弧度
 
 degreesToRadians = (degrees) ->
     radians = degrees * Math.PI / 180
 
 degreesToRadians(1)
- # => 0.017453292519943295
+# => 0.017453292519943295
 ```
 
 ## 一个随机整数函数
@@ -374,10 +378,10 @@ randomInt = (lower, upper) ->
   Math.floor(Math.random() * (upper - lower + 1) + lower) # 最后一条语句是一个返回值
 
 (randomInt(1) for i in [0...10])
- # => [0,1,1,0,0,0,1,1,1,0]
+# => [0,1,1,0,0,0,1,1,1,0]
 
 (randomInt(1, 10) for i in [0...10])
- # => [7,3,9,1,8,5,4,10,10,8]
+# => [7,3,9,1,8,5,4,10,10,8]
 ```
 
 ## 指数对数运算
@@ -388,33 +392,33 @@ randomInt = (lower, upper) ->
 
 ### 解决方案
 
-使用 JavaScript 的 Math 对象来提供常用的数学函数。
+使用 JavaScript 的`Math`对象来提供常用的数学函数。
 
 ```js
- # Math.pow(x, y) 返回 x^y
+# Math.pow(x, y) 返回 x^y
 
 Math.pow(2, 4)
- # => 16
+# => 16
 
- # Math.exp(x) 返回 E^x ，被简写为 Math.pow(Math.E, x)
+# Math.exp(x) 返回 E^x，被简写为 Math.pow(Math.E, x)
 
 Math.exp(2)
- # => 7.38905609893065
+# => 7.38905609893065
 
- # Math.log returns the natural (base E) log
+# Math.log returns the natural (base E) log
 
 Math.log(5)
- # => 1.6094379124341003
+# => 1.6094379124341003
 
 Math.log(Math.exp(42))
- # => 42
+# => 42
 
- # To get a log with some other base n, divide by Math.log(n)
+# To get a log with some other base n, divide by Math.log(n)
 
 Math.log(100) / Math.log(10)
- # => 2
+# => 2
 ```
 
 ### 讨论
 
-若想了解关于数学对象的更多信息，请参阅 [Mozilla 开发者网络](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math)上的文档。另可参阅[数学常量](http://coffeescript-cookbook.github.io/chapters/math/constants)关于数学对象中各种常量的讨论。
+若想了解关于数学对象的更多信息，请参阅[Mozilla 开发者网络](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math)上的文档。另可参阅[数学常量](http://coffeescript-cookbook.github.io/chapters/math/constants)关于数学对象中各种常量的讨论。

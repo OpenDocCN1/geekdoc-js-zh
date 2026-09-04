@@ -1,25 +1,5 @@
-# 8.9 JavaScript 程序测试
 
-*   为什么要写测试？
-*   测试的类型
-    *   单元测试
-    *   集成测试
-    *   功能测试
-    *   开发模式
-        *   TDD
-        *   BDD
-    *   断言
-    *   Mocha.js
-    *   WebDriver
-        *   定制测试环境
-        *   操作浏览器的方法
-        *   网页元素的定位
-        *   网页元素的方法
-        *   页面跳转的方法
-        *   cookie 的方法
-        *   浏览器窗口的方法
-        *   弹出窗口
-        *   鼠标和键盘的方法
+# 8.9 JavaScript 程序测试
 
 ## 为什么要写测试？
 
@@ -80,10 +60,10 @@ TDD 开发的测试覆盖率通常在 90%以上，这意味着维护代码和新
 
 TDD 接口提供以下四个方法。
 
-*   suite()
-*   test()
-*   setup()
-*   teardown()
+*   `suite()`
+*   `test()`
+*   `setup()`
+*   `teardown()`
 
 下面代码是测试计数器是否加 1。
 
@@ -105,12 +85,12 @@ BDD 认为，不应该针对代码的实现细节写测试，而是要针对行�
 
 BDD 接口提供以下四个方法。
 
-*   describe()
-*   it()
-*   before()
-*   after()
-*   beforeEach()
-*   afterEach()
+*   `describe()`
+*   `it()`
+*   `before()`
+*   `after()`
+*   `beforeEach()`
+*   `afterEach()`
 
 下面是测试计数器是否加 1 的 BDD 写法。
 
@@ -189,13 +169,13 @@ beverages.should.have.property('tea').with.length(3);
 
 Mocha 是一个测试框架，也就是运行测试的工具。它使用下面的命令安装。
 
-```js
+```bash
 $ npm install -g mocha
 ```
 
 Mocha 自身不带断言库，所以还需要安装一个断言库，这里选用 Chai.js。
 
-```js
+```bash
 $ npm install -g chai
 ```
 
@@ -203,20 +183,20 @@ Mocha 默认执行 test 目录的脚本文件，所以我们将所有测试脚�
 
 Mocha 允许指定测试脚本文件，可以使用通配符，同时指定多个文件。
 
-```js
+```bash
 $ mocha --reporter spec spec/{my,awesome}.js
 $ mocha --ui tdd test/unit/*.js etc
 ```
 
 如果希望测试非存放于 test 子目录的测试用例，可以在 test 子目录中新建 Mocha 的配置文件 mocha.opts。在该文件中写入以下内容。
 
-```js
+```
 server-tests
 ```
 
 上面代码指定 Mocha 默认测试 server-tests 子目录的测试脚本。
 
-```js
+```
 server-tests
 --recursive
 ```
@@ -225,7 +205,7 @@ server-tests
 
 report 参数用于指定 Mocha 的报告格式。
 
-```js
+```bash
 $ mocha --reporter spec server-test/*.js
 ```
 
@@ -233,7 +213,7 @@ $ mocha --reporter spec server-test/*.js
 
 grep 参数用于搜索测试用例的名称（即 it 方法的第一个参数），然后只执行匹配的测试用例。
 
-```js
+```bash
 $ mocha --reporter spec --grep "Fnord:" server-test/*.js
 ```
 
@@ -241,7 +221,7 @@ $ mocha --reporter spec --grep "Fnord:" server-test/*.js
 
 invert 参数表示只运行不符合条件的测试脚本。
 
-```js
+```bash
 $ mocha --grep auth --invert
 ```
 
@@ -309,31 +289,31 @@ DesiredCapabilities 对象用于定制测试环境。
 
 WebDriver 提供以下方法操作浏览器。
 
-close()：退出或关闭当前浏览器窗口。
+`close()`：退出或关闭当前浏览器窗口。
 
 ```js
 driver.close();
 ```
 
-quit()：关闭所有浏览器窗口，中止当前浏览器 driver 和 session。
+`quit()`：关闭所有浏览器窗口，中止当前浏览器 driver 和 session。
 
 ```js
 driver.quit();
 ```
 
-getTitle()：返回当前网页的标题。
+`getTitle()`：返回当前网页的标题。
 
 ```js
 driver.getTitle();
 ```
 
-getCurrentUrl()：返回当前网页的网址。
+`getCurrentUrl()`：返回当前网页的网址。
 
 ```js
 driver.getCurrentUrl();
 ```
 
-getPageSource()：返回当前网页的源码。
+`getPageSource()`：返回当前网页的源码。
 
 ```js
 // 断言是否含有指定文本
@@ -341,7 +321,7 @@ assert(driver.getPageSource().contains("Hello World"),
   "预期含有文本 Hello World");
 ```
 
-click()：模拟鼠标点击。
+`click()`：模拟鼠标点击。
 
 ```js
 // 例一
@@ -356,7 +336,7 @@ driver.findElement(By.id("sblsbb"))
   .click();
 ```
 
-clear()：清空文本输入框。
+`clear()`：清空文本输入框。
 
 ```js
 // 例一
@@ -372,14 +352,14 @@ driver.findElement(By.name("q"))
   .sendKeys("testing");
 ```
 
-sendKeys()：在文本输入框输入文本。
+`sendKeys()`：在文本输入框输入文本。
 
 ```js
 driver.findElement(By.locatorType("path"))
   .sendKeys("your text");
 ```
 
-submit()：提交表单，或者用来模拟按下回车键。
+`submit()`：提交表单，或者用来模拟按下回车键。
 
 ```js
 // 例一
@@ -393,14 +373,14 @@ driver.findElement(By.name("q"))
 element.submit();
 ```
 
-findElement()：返回选中的第一个元素。
+`findElement()`：返回选中的第一个元素。
 
 ```js
 driver.get("https://www.google.com");
 driver.findElement(By.id("lst-ib"));
 ```
 
-findElements()：返回选中的所有元素（0 个或多个）。
+`findElements()`：返回选中的所有元素（0 个或多个）。
 
 ```js
 // 例一
@@ -446,14 +426,14 @@ for(int i=0;i<linkSize;i++){
 
 WebDriver 提供 8 种定位器，用于定位网页元素。
 
-*   By.id：HTML 元素的 id 属性
-*   By.name：HTML 元素的 name 属性
-*   By.xpath：使用 XPath 语法选中 HTML 元素
-*   By.cssSelector：使用 CSS 选择器语法
-*   By.className：HTML 元素的 class 属性
-*   By.linkText：链接文本（只用于选中链接）
-*   By.tagName：HTML 元素的标签名
-*   By.partialLinkText：部分链接文本（只用于选中链接）
+*   `By.id`：HTML 元素的 id 属性
+*   `By.name`：HTML 元素的 name 属性
+*   `By.xpath`：使用 XPath 语法选中 HTML 元素
+*   `By.cssSelector`：使用 CSS 选择器语法
+*   `By.className`：HTML 元素的 class 属性
+*   `By.linkText`：链接文本（只用于选中链接）
+*   `By.tagName`：HTML 元素的标签名
+*   `By.partialLinkText`：部分链接文本（只用于选中链接）
 
 下面是一个使用 id 定位器，选中网页元素的例子。
 
@@ -465,7 +445,7 @@ driver.findElement(By.id("sblsbb")).click();
 
 以下方法属于网页元素的方法，而不是 webDriver 实例的方法。需要注意的是，有些方法是某些元素特有的，比如只有文本框才能输入文字。如果在网页元素上调用不支持的方法，WebDriver 不会报错，也不会给出给出任何提示，只会静静地忽略。
 
-getAttribute()：返回网页元素指定属性的值。
+`getAttribute()`：返回网页元素指定属性的值。
 
 ```js
 driver.get("https://www.google.com");
@@ -473,13 +453,13 @@ driver.findElement(By.xpath("//div[@id='lst-ib']"))
   .getAttribute("class");
 ```
 
-getText()：返回网页元素的内部文本。
+`getText()`：返回网页元素的内部文本。
 
 ```js
 driver.findElement(By.locatorType("path")).getText();
 ```
 
-getTagName()：返回指定元素的标签名。
+`getTagName()`：返回指定元素的标签名。
 
 ```js
 driver.get("https://www.google.com");
@@ -487,7 +467,7 @@ driver.findElement(By.xpath("//div[@class='sbib_b']"))
   .getTagName();
 ```
 
-isDisplayed()：返回一个布尔值，表示元素是否可见。
+`isDisplayed()`：返回一个布尔值，表示元素是否可见。
 
 ```js
 driver.get("https://www.google.com");
@@ -496,7 +476,7 @@ assert(driver.findElement(By.name("q"))
   '搜索框应该可选择');
 ```
 
-isEnabled()：返回一个布尔值，表示文本框是否可编辑。
+`isEnabled()`：返回一个布尔值，表示文本框是否可编辑。
 
 ```js
 driver.get("https://www.google.com");
@@ -509,14 +489,14 @@ if (Element.isEnabled()) {
 }
 ```
 
-isSelected()：返回一个布尔值，表示一个元素是否可选择。
+`isSelected()`：返回一个布尔值，表示一个元素是否可选择。
 
 ```js
 driver.findElement(By.xpath("//select[@name='jump']/option[1]"))
   .isSelected()
 ```
 
-getSize()：返回一个网页元素的宽度和高度。
+`getSize()`：返回一个网页元素的宽度和高度。
 
 ```js
 var dimensions=driver.findElement(By.locatorType("path"))
@@ -525,7 +505,7 @@ dimensions.width;
 dimensions.height;
 ```
 
-getLocation()：返回网页元素左上角的 x 坐标和 y 坐标。
+`getLocation()`：返回网页元素左上角的 x 坐标和 y 坐标。
 
 ```js
 var point = driver.findElement(By.locatorType("path")).getLocation();
@@ -533,7 +513,7 @@ point.x; // 等同于 point.getX();
 point.y; // 等同于 point.getY();
 ```
 
-getCssValue()：返回网页元素指定的 CSS 属性的值。
+`getCssValue()`：返回网页元素指定的 CSS 属性的值。
 
 ```js
 driver.get("https://www.google.com");
@@ -548,31 +528,31 @@ console.log(element.getCssValue("background-size"));
 
 以下方法用来跳转到某一个页面。
 
-get()：要求浏览器跳到某个网址。
+`get()`：要求浏览器跳到某个网址。
 
 ```js
 driver.get("URL");
 ```
 
-navigate().back()：浏览器回退。
+`navigate().back()`：浏览器回退。
 
 ```js
 driver.navigate().back();
 ```
 
-navigate().forward()：浏览器前进。
+`navigate().forward()`：浏览器前进。
 
 ```js
 driver.navigate().forward();
 ```
 
-navigate().to()：跳转到浏览器历史中的某个页面。
+`navigate().to()`：跳转到浏览器历史中的某个页面。
 
 ```js
 driver.navigate().to("URL");
 ```
 
-navigate().refresh()：刷新当前页面。
+`navigate().refresh()`：刷新当前页面。
 
 ```js
 driver.navigate().refresh();
@@ -586,28 +566,28 @@ driver.findElement(By.locatorType("path"))
 
 ### cookie 的方法
 
-getCookies()：获取 cookie
+`getCookies()`：获取 cookie
 
 ```js
 driver.get("https://www.google.com");
 driver.manage().getCookies();
 ```
 
-getCookieNamed() ：返回指定名称的 cookie。
+`getCookieNamed()` ：返回指定名称的 cookie。
 
 ```js
 driver.get("https://www.google.com");
 console.log(driver.manage().getCookieNamed("NID"));
 ```
 
-addCookie()：将 cookie 加入当前页面。
+`addCookie()`：将 cookie 加入当前页面。
 
 ```js
 driver.get("https://www.google.com");
 driver.manage().addCookie(cookie0);
 ```
 
-deleteCookie()：删除指定的 cookie。
+`deleteCookie()`：删除指定的 cookie。
 
 ```js
 driver.get("https://www.google.co.in");
@@ -616,20 +596,20 @@ driver.manage().deleteCookieNamed("NID");
 
 ### 浏览器窗口的方法
 
-maximize()：最大化浏览器窗口。
+`maximize()`：最大化浏览器窗口。
 
 ```js
 var driver = new FirefoxDriver();
 driver.manage().window().maximize();
 ```
 
-getSize()：返回浏览器窗口、图像、网页元素的宽和高。
+`getSize()`：返回浏览器窗口、图像、网页元素的宽和高。
 
 ```js
 driver.manage().window().getSize();
 ```
 
-getPosition()：返回浏览器窗口左上角的 x 坐标和 y 坐标。
+`getPosition()`：返回浏览器窗口左上角的 x 坐标和 y 坐标。
 
 ```js
 console.log("Position X: " + driver.manage().window().getPosition().x);
@@ -638,7 +618,7 @@ console.log("Position X: " + driver.manage().window().getPosition().getX());
 console.log("Position Y: " + driver.manage().window().getPosition().getY());
 ```
 
-setSize()：定制浏览器窗口的大小。
+`setSize()`：定制浏览器窗口的大小。
 
 ```js
 var d = new Dimension(320, 480);
@@ -646,7 +626,7 @@ driver.manage().window().setSize(d);
 driver.manage().window().setSize(new Dimension(320, 480));
 ```
 
-setPosition()：移动浏览器左上角到指定位置。
+`setPosition()`：移动浏览器左上角到指定位置。
 
 ```js
 var p = new Point(200, 200);
@@ -654,21 +634,21 @@ driver.manage().window().setPosition(p);
 driver.manage().window().setPosition(new Point(300, 150));
 ```
 
-getWindowHandle()：返回当前浏览器窗口。
+`getWindowHandle()`：返回当前浏览器窗口。
 
 ```js
 var parentwindow = driver.getWindowHandle();
 driver.switchTo().window(parentwindow);
 ```
 
-getWindowHandles()：返回所有浏览器窗口。
+`getWindowHandles()`：返回所有浏览器窗口。
 
 ```js
 var childwindows =  driver.getWindowHandles();
 driver.switchTo().window(childwindow);
 ```
 
-switchTo.window()：在浏览器窗口之间切换。
+`switchTo.window()`：在浏览器窗口之间切换。
 
 ```js
 driver.SwitchTo().Window(childwindow);
@@ -680,35 +660,35 @@ driver.SwitchTo().Window(parentWindow);
 
 以下方法处理浏览器的弹出窗口。
 
-dismiss() ：关闭弹出窗口。
+`dismiss()` ：关闭弹出窗口。
 
 ```js
 var alert = driver.switchTo().alert();
 alert.dismiss();
 ```
 
-accept()：接受弹出窗口，相当于按下接受 OK 按钮。
+`accept()`：接受弹出窗口，相当于按下接受 OK 按钮。
 
 ```js
 var alert = driver.switchTo().alert();
 alert.accept();
 ```
 
-getText()：返回弹出窗口的文本值。
+`getText()`：返回弹出窗口的文本值。
 
 ```js
 var alert = driver.switchTo().alert();
 alert.getText();
 ```
 
-sendKeys()：向弹出窗口发送文本字符串。
+`sendKeys()`：向弹出窗口发送文本字符串。
 
 ```js
 var alert = driver.switchTo().alert();
 alert.sendKeys("Text to be passed");
 ```
 
-authenticateUsing()：处理 HTTP 认证。
+`authenticateUsing()`：处理 HTTP 认证。
 
 ```js
 var user = new UserAndPassword("USERNAME", "PASSWORD");
@@ -719,15 +699,15 @@ alert.authenticateUsing(user);
 
 以下方法模拟鼠标和键盘的动作。
 
-*   click()：鼠标在当前位置点击。
-*   clickAndHold()：按下鼠标不放
-*   contextClick()：右击鼠标
-*   doubleClick()：双击鼠标
-*   dragAndDrop()：鼠标拖放到目标元素
-*   dragAndDropBy()：鼠标拖放到目标坐标
-*   keyDown()：按下某个键
-*   keyUp()：从按下状态释放某个键
-*   moveByOffset()：移动鼠标到另一个坐标位置
-*   moveToElement()：移动鼠标到另一个网页元素
-*   release()：释放拖拉的元素
-*   sendKeys()：控制键盘输出
+*   `click()`：鼠标在当前位置点击。
+*   `clickAndHold()`：按下鼠标不放
+*   `contextClick()`：右击鼠标
+*   `doubleClick()`：双击鼠标
+*   `dragAndDrop()`：鼠标拖放到目标元素
+*   `dragAndDropBy()`：鼠标拖放到目标坐标
+*   `keyDown()`：按下某个键
+*   `keyUp()`：从按下状态释放某个键
+*   `moveByOffset()`：移动鼠标到另一个坐标位置
+*   `moveToElement()`：移动鼠标到另一个网页元素
+*   `release()`：释放拖拉的元素
+*   `sendKeys()`：控制键盘输出

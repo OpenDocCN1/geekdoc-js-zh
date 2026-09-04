@@ -1,42 +1,23 @@
+
 # 精通 JavaScript：完整编程指南，包含 jQuery、AJAX、Web 设计、脚本编写和移动应用开发
-
-
 
 ![](img/00001.jpeg)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-`startsWith`, `endsWith`, `includes` 将返回给定字符串是否位于字符串的开头、结尾或包含在其中。
+`startsWith`、`endsWith`、`includes` 将返回给定字符串是否位于字符串的开头、结尾或包含在其中。
 
 [`concat`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/concat) 将合并两个给定字符串并返回一个新字符串。
 
-[`fromCharCode`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/fromCharCode), [`fromCodePoint`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/fromCodePoint) 将根据给定的值序列（Unicode）构造字符串。这是一个字符串类方法，而不是实例方法。
+[`fromCharCode`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/fromCharCode)、[`fromCodePoint`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/fromCodePoint) 将根据给定的值序列（Unicode）构造字符串。这是一个字符串类方法，而不是实例方法。
 
 `split` 将字符串对象分割为子字符串以创建一个字符串数组。
 
 `slice` 将提取字符串的指定部分并将其作为新字符串返回。
 
-[`substring`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/substring), [`substr`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/substr) 将返回指定的子集；可以指定开始和结束索引，也可以指定开始和长度。
+[`substring`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/substring)、[`substr`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/substr) 将返回指定的子集；可以指定开始和结束索引，也可以指定开始和长度。
 
-`match`, `matchAll`, `replace`, `search`允许字符串对象与正则表达式配合工作。
+`match`、`matchAll`、`replace`、`search` 允许字符串对象与正则表达式配合工作。
 
-`toLowerCase`, `toUpperCase` 将返回小写或大写的字符串。
+`toLowerCase`、`toUpperCase` 将返回小写或大写的字符串。
 
 `normalize` 将返回调用字符串值的 Unicode 规范化形式。
 
@@ -44,13 +25,13 @@
 
 `trim` 将移除字符串开头和结尾的所有空白字符。
 
-### 多行模板字符串字量
+## 多行模板字符串字面量
 
-模板字符串字量（Template literal）是一种允许嵌入表达式的字符串字量，它们可以用于字符串插值和多行字符串。不再使用引号，而是使用反引号（`` ` ``）来包裹模板字符串字量，并且它们可以包含占位符，例如 `${expression}` ——美元符号和花括号表示占位符。
+模板字符串字面量（Template literal）是一种允许嵌入表达式的字符串字面量，它们可以用于字符串插值和多行字符串。不再使用引号，而是使用反引号（`` ` ``）来包裹模板字符串字面量，并且它们可以包含占位符，例如 `${expression}` ——美元符号和花括号表示占位符。
 
-#### 多行
+### 多行
 
-如果在源中插入换行符，它将被视为模板字符串字量的一部分。对于普通字符串，多行字符串将使用以下语法：
+如果在源中插入换行符，它将被视为模板字符串字面量的一部分。对于普通字符串，多行字符串将使用以下语法：
 
 ```javascript
 console.log('string text line 1\n\
@@ -70,7 +51,7 @@ string text line 2`);
 // string text line 2"
 ```
 
-#### 嵌入表达式
+### 嵌入表达式
 
 要在普通字符串中嵌入表达式，你会使用这种语法：
 
@@ -81,7 +62,7 @@ console.log('Fifteen is ' + (five + ten) + ' and not ' + (2 * five + ten) + '.')
 // "Fifteen is 15 and not 20."
 ```
 
-使用模板字符串字量，你可以让语法变得更加易读易理解：
+使用模板字符串字面量，你可以让语法变得更加易读易理解：
 
 ```javascript
 const five = 5;
@@ -94,9 +75,9 @@ console.log(`Fifteen is ${five + ten} and not ${2 * five + ten}.`);
 
 ECMAScript 国际化 API 提供了三个主要功能：数字格式化、时间和日期格式化以及语言敏感的字符串比较。命名空间是 `Intl` 对象，`DateTimeFormat`、`NumberFormat` 和 `Collator` 构造函数都是 `Intl` 的属性。
 
-### 格式化数据和时间
+### 格式化日期和时间
 
-为了格式化日期时间，我们使用 `DateTimeFormat` 对象。下一个示例将以美式英语格式化日期——注意不同时区的的结果会有不同：
+为了格式化日期时间，我们使用 `DateTimeFormat` 对象。下一个示例将以美式英语格式化日期——注意不同时区的结果会有不同：
 
 ```javascript
 const msPerDay = 24 * 60 * 60 * 1000;
@@ -119,8 +100,7 @@ const gasPrice = new Intl.NumberFormat('en-US',
 console.log(gasPrice.format(5.25));
 ```
 
-
-
+## 正则表达式特殊字符
 
 这些是正则表达式中可以使用的特殊字符以及它们用法的完整描述：
 
@@ -131,7 +111,7 @@ console.log(gasPrice.format(5.25));
 | `$` | 用于匹配输入的结尾。如果多行标志被设置为 true，它也会匹配在任何换行符之前的的位置。<br>- 例如，`/t$/` 不会匹配“heater”中的 `t`，但它会匹配“heat”。 |
 | `*` | 这将匹配其前随的表达式 0 次或多次，等同于 `{0,}`。<br>- 例如，`/bo*/` 会匹配 `boon`，且它会匹配“a bird sang”中的 `b`，但不会匹配“a cat meowed”中的任何内容。 |
 | `+` | 这将匹配其前随的表达式 1 次或多次，等同于 `{1,}`。<br>- 例如，`/b+/` 会匹配“banded”中的 `b`，并且会匹配“bbbbbanded”中所有的 `b`，但不会匹配“anded”中的任何内容。 |
-| `?` | 这将匹配其前随的表达式 0 次或 1 次，等同于 `{0,1}`。<br>- 例如 `/e?de/` 会匹配‘banded’中的 `ed` 和‘ceded’中的 `de`，它还会匹配‘code’中的 `e`。<br>- 如果紧跟在量词 - `*`、`?`、`+` 或 `{}` 之后使用它，它将确保量词匹配最少数量的字符（即量词是非贪婪的）；默认是匹配尽可能多的字符（即贪婪的）。例如，如果你对‘123abc’应用 `/d+/`，它会匹配‘123’；但如果你对‘123’abc’应用 `/\d+?/`，它将只匹配‘1’。<br>- 这也用于后瞻断言（lookahead assertions），稍后将在 `x(?!y)` 和 `x(?=y)` 条目下进行描述。 |
+| `?` | 这将匹配其前随的表达式 0 次或 1 次，等同于 `{0,1}`。<br>- 例如 `/e?de/` 会匹配‘banded’中的 `ed` 和‘ceded’中的 `de`，它还会匹配‘code’中的 `e`。<br>- 如果紧跟在量词 - `*`、`?`、`+` 或 `{}` 之后使用它，它将确保量词匹配最少数量的字符（即量词是非贪婪的）；默认是匹配尽可能多的字符（即贪婪的）。例如，如果你对‘123abc’应用 `/\d+/`，它会匹配‘123’；但如果你对‘123abc’应用 `/\d+?/`，它将只匹配‘1’。<br>- 这也用于后瞻断言（lookahead assertions），稍后将在 `x(?!y)` 和 `x(?=y)` 条目下进行描述。 |
 | `.` | 小句点字符默认匹配任意一个字符，但换行符除外。<br>- 例如，`/.n/` 会匹配字符串“nay, it is an apple on the plate, not an orange”中的‘an’和‘on’，但不会匹配“nay”。<br>- 如果你将 s` (“dotAll”) 标志设置为 true，它将匹配换行符。 |
 | `(x)` | 这将匹配 `x` 并且如你在下面的示例所示，它会记住匹配内容。在这种情况下，括号被称为“捕获分组”（capturing parentheses）。<br>- 在模式 `/(foo)(bar)\1\2/` 中，`(foo)` 和 `(bar)` 将会被匹配，并且字符串“foo bar foo bar”中的前两个单词会被记住。`\1` 和 `\2` 指向括号中匹配的第一个和第二个子字符串——`foo` 和 `bar`——与字符串末尾的两个单词匹配。 |
 | `(?x)` | 这将匹配 `x` 但匹配结果不会被记住。在这种情况下，括号是“非捕获的”（non-capturing），它们允许你定义一个可以与表达式正则操作符使用的子表达式。例如，表达式 `/(?:foo){1,2}/`。如果该表达式为 `/foo{1,2}`，匹配将仅适用于单词‘foo’中的最后一个‘o’。通过使用非捕获括号，`{1,2}` 应用于整个单词。 |
@@ -141,72 +121,26 @@ console.log(gasPrice.format(5.25));
 | `(?<!y)x` | 这是否定后瞻（negated lookbehind），只有在 `x` 前面不跟着 `y` 时才能匹配 `x`。<br>- 例如，`(?<!-)\d+` 只有在数字前面不是连字符时才会匹配。`(?<!-)\d+` 可以匹配正数。 |
 | `[xyz]` | 这是字符集类型，它将匹配括号内的任意字符，包括任何转义序列。在字符集中运行时，特殊字符如星号 `*` 和点 `.` 不被视为特殊字符，不需要转义。正如示例所示，你可以使用连字符来指定字符范围。<br>- 模式 `[a-d]` 等同于 `[abcd]`，并会匹配“banded”中的 `b` 和“candy”中的 `c`。使用 `/[a-z.]+/` 和 `/[\w.]` 模式时，整个字符串“test.i.ng”会被匹配。 |
 | `[^xyz]` | 这是否定字符集，意味着它匹配括号之外的任意字符。可以使用连字符指定字符范围，任何适用于标准字符集的方法也适用于此情况。<br>- 例如，`[^abc]` 和 `[^a-c]` 是相同的，并且最初会匹配“bricks”中的 `r` 和“change”中的 `h`。 |
-| `[\b]` | 这将匹配 U+0008，即退格符，但如果你想匹配字面上的退格字符，必须使用方括号。<br>- 它还匹配单词边界。这些边界位于单词字符与非单词字符（或反之）之间。它们也会匹配字符串的开头和/或结尾。单词边界不是要匹配的字符。将它们视为锚点，而不是要包含的内容。这意味着匹配到的单词边界长度为零。 | |
-
-
-
-
-以下示例使用了输入字符串 ‘moon’。`/\bm/` 将匹配成功，因为 `b` 位于字符串的开头。`/oo\b/` - `b` 不匹配，因为它前面是一个单词字符，后面也是一个单词字符。`/oon\b/` - `b` 匹配，因为它位于字符串的末尾。`/\w\b\w/` - `b` 无法匹配任何内容，因为它前面是一个单词字符，后面也是一个单词字符。
-
-`\B` 这将匹配非单词边界，并匹配以下情况：
-
-- 在字符串第一个字符之前
-- 在字符串最后一个一个字符之后
-- 在一对单词字符之间
-- 在一对非单词字符之间
-- 一个空字符串
-
-例如，`/\B…/` 将匹配 ‘moon’ 中的 `oo`，而 `/y\B./` 将匹配 ‘yesterday’ 中的 `ye`。
-
-`\cX` 这里的 X 将是 A 到 Z 之间的任意一个字符；它将匹配字符串中某处的控制字符。
-
-例如，`/\cM/` 将匹配任何字符串中的控制字符 `-M` (u+000D)。
-
-`\d` 匹配任何数字字符，等于 `[0-9]`。
-
-例如，`/\d` 或 `/[0-9]` 将匹配 “B2 is the room number” 中的 `2`。
-
-`\D` 匹配任何非数字字符，等于 `[˄0-9]`。
-
-例如，`/\D` 或 `/[˄0-9]` 将匹配 “B2 is the room number” 中的 `B`。
-
-`\f` 这将匹配分页符或 U+000C。
-
-`\n` 这将匹配换行符或 U+000A。
-
-`\r` 这将匹配回车符或 U+000D。
-
-`\s` 将匹配空白字符，包括空格、分页符、制表符或换行符，相当于 `[\f\n\r\t\v\u00a0\u1680\u2000-\u200a\u2028\u2029\u202f\u205f\u3000\ufeff]`。
-
-例如，`/\s\w*/` 将匹配字符串 ‘foo bar’ 中的单词 `bar`。
-
-`\S` 将匹配任何非空白字符，相当于 `[\f\n\r\t\v\u00a0\u1680\u2000-\u200a\u2028\u2029\u202f\u205f\u3000\ufeff]`。
-
-例如，`/\S*/` 将匹配字符串 ‘foo bar’ 中的单词 `foo`。
-
-`\t` 将匹配制表符或 U+0009。
-
-`\v` 将匹配垂直制表符或 U+000B。
-
-`\w` 将匹配任何字母数字字符，包括下划线；相当于 `[A-Za-z0-9_]`。
-
-例如，`/\w/` 将匹配 band’ 中的 `a`、$6.85 中的 `6` 以及 ‘2D’ 中的 `2`。
-
-`\W` 将匹配任何非单词字符，相当于 `[˄A-Za-z0-9_]`。
-
-例如，`/\W/` 或 `/[˄A-Za-z0-9_]` 将匹配 ‘25%’ 中的 `%`。
-
-`\n` 这是对正则表达式中匹配 `(n)` 括号表达式的最后一个子字符串的反向引用，通过对左括号的数量进行计数（当 `n` 为正整数时）。
-
-例如，`/banana(,)\spineapple\1/` 将匹配字符串 “apple, pineapple, peach, pear” 中的 “apple, pineapple”。
-
-`\0` 将匹配 NULL 或 U+0000 字符。这不能跟在另一个数字之前，因为 `\0<digits>` 实际上是一个八进制转义序列，相反，你应该使用 `\x00`。
-
-`\xhh` 这将匹配具有两个十六进制数字或 `hh` 代码的字符。
-
-`\uhhhh` 这将匹配具有四个十六进制数字或 `hhhh` 代码的字符。
-
-`\u{hhhh}` 当设置了 `u` 标志时，这将匹配一个 Unicode 值为 `hhhh` 或十六进制数字的字符。
+| `[\b]` | 这将匹配 U+0008，即退格符，但如果你想匹配字面上的退格字符，必须使用方括号。<br>- 它还匹配单词边界。这些边界位于单词字符与非单词字符（或反之）之间。它们也会匹配字符串的开头和/或结尾。单词边界不是要匹配的字符。将它们视为锚点，而不是要包含的内容。这意味着匹配到的单词边界长度为零。 |
+| `\b` | 这将匹配单词边界。<br>以下示例使用了输入字符串 ‘moon’。`/\bm/` 将匹配成功，因为 `b` 位于字符串的开头。`/oo\b/` - `b` 不匹配，因为它前面是一个单词字符，后面也是一个单词字符。`/oon\b/` - `b` 匹配，因为它位于字符串的末尾。`/\w\b\w/` - `b` 无法匹配任何内容，因为它前面是一个单词字符，后面也是一个单词字符。 |
+| `\B` | 这将匹配非单词边界，并匹配以下情况：<br>- 在字符串第一个字符之前<br>- 在字符串最后一个字符之后<br>- 在一对单词字符之间<br>- 在一对非单词字符之间<br>- 一个空字符串<br>例如，`/\B…/` 将匹配 ‘moon’ 中的 `oo`，而 `/y\B./` 将匹配 ‘yesterday’ 中的 `ye`。 |
+| `\cX` | 这里的 X 将是 A 到 Z 之间的任意一个字符；它将匹配字符串中某处的控制字符。<br>例如，`/\cM/` 将匹配任何字符串中的控制字符 `-M` (u+000D)。 |
+| `\d` | 匹配任何数字字符，等于 `[0-9]`。<br>例如，`/\d` 或 `/[0-9]` 将匹配 “B2 is the room number” 中的 `2`。 |
+| `\D` | 匹配任何非数字字符，等于 `[^0-9]`。<br>例如，`/\D` 或 `/[^0-9]` 将匹配 “B2 is the room number” 中的 `B`。 |
+| `\f` | 这将匹配分页符或 U+000C。 |
+| `\n` | 这将匹配换行符或 U+000A。 |
+| `\r` | 这将匹配回车符或 U+000D。 |
+| `\s` | 将匹配空白字符，包括空格、分页符、制表符或换行符，相当于 `[\f\n\r\t\v\u00a0\u1680\u2000-\u200a\u2028\u2029\u202f\u205f\u3000\ufeff]`。<br>例如，`/\s\w*/` 将匹配字符串 ‘foo bar’ 中的单词 `bar`。 |
+| `\S` | 将匹配任何非空白字符，相当于 `[^\f\n\r\t\v\u00a0\u1680\u2000-\u200a\u2028\u2029\u202f\u205f\u3000\ufeff]`。<br>例如，`/\S*/` 将匹配字符串 ‘foo bar’ 中的单词 `foo`。 |
+| `\t` | 将匹配制表符或 U+0009。 |
+| `\v` | 将匹配垂直制表符或 U+000B。 |
+| `\w` | 将匹配任何字母数字字符，包括下划线；相当于 `[A-Za-z0-9_]`。<br>例如，`/\w/` 将匹配 band’ 中的 `a`、$6.85 中的 `6` 以及 ‘2D’ 中的 `2`。 |
+| `\W` | 将匹配任何非单词字符，相当于 `[^A-Za-z0-9_]`。<br>例如，`/\W/` 或 `/[^A-Za-z0-9_]` 将匹配 ‘25%’ 中的 `%`。 |
+| `\n` | 这是对正则表达式中匹配 `(n)` 括号表达式的最后一个子字符串的反向引用，通过对左括号的数量进行计数（当 `n` 为正整数时）。<br>例如，`/banana(,)\spineapple\1/` 将匹配字符串 “apple, pineapple, peach, pear” 中的 “apple, pineapple”。 |
+| `\0` | 将匹配 NULL 或 U+0000 字符。这不能跟在另一个数字之前，因为 `\0<digits>` 实际上是一个八进制转义序列，相反，你应该使用 `\x00`。 |
+| `\xhh` | 这将匹配具有两个十六进制数字或 `hh` 代码的字符。 |
+| `\uhhhh` | 这将匹配具有四个十六进制数字或 `hhhh` 代码的字符。 |
+| `\u{hhhh}` | 当设置了 `u` 标志时，这将匹配一个 Unicode 值为 `hhhh` 或十六进制数字的字符。 |
 
 为了转义正则表达式中被视为字面量字符串的用户输入（通常这些会被视为特殊字符），你可以使用简单的替换：
 
@@ -236,10 +170,6 @@ console.log('The value of lastIndex is ' + myRe.lastIndex);
 ```
 // "The value of the lastIndex is 5"
 
-
-
-
-
 但如果你是这样写：
 
 ```javascript
@@ -258,7 +188,7 @@ console.log('The value of the lastIndex is ' + /d(b+)d/g.lastIndex);
 
 ```javascript
 var re = /(\w+)\s(\w+)/;
-var str = 'Bilbo Baggins’;
+var str = 'Bilbo Baggins';
 var newstr = str.replace(re, '$2, $1');
 console.log(newstr);
 // "Baggins, Bilbo"
@@ -266,7 +196,7 @@ console.log(newstr);
 
 ### 使用标志的高级搜索
 
-使用正则表达式，你拥有至少六个可选标志用于不同的功能，例如不区分大小写和全局搜索。你可以一起使用这些标志，也可以单独使用它们；如果你选择一起使用它们，只要它们是正则表达式的一部分，你可以按任何你顺序使用它们。
+使用正则表达式，你拥有至少六个可选标志用于不同的功能，例如不区分大小写和全局搜索。你可以一起使用这些标志，也可以单独使用它们；如果你选择一起使用它们，只要它们是正则表达式的一部分，你可以按任何顺序使用它们。
 
 | 标志 | 说明 |
 | :--- | :--- |
@@ -277,7 +207,7 @@ console.log(newstr);
 | u | 表示“unicode”，且模式应被视为代码点序列（Unicode） |
 | y | 表示“粘性”（sticky）搜索；它从字符串中目标搜索匹配项的当前点开始。 |
 
-如果你想在正则表达式中包含一个标志，你应该使用这种这种语法：
+如果你想在正则表达式中包含一个标志，你应该使用这种语法：
 
 ```javascript
 var re = /pattern/flags;
@@ -302,13 +232,17 @@ console.log(myArray);
 ```
 
 下面的行可以被：
+
 ```javascript
 var re = /\w+\s/g;
 ```
+
 替换为此行：
+
 ```javascript
 var re = new RegExp('\\w+\\s', 'g');
 ```
+
 并且你会得到完全相同的结果。
 
 当你配合 `exec()` 方法使用 `g` 标志时，它的行为会有所不同，即“类”和“参数”的角色会反转。在 `match()` 方法中，数据类型或字符串类将拥有该方法，正则表达式是参数；而在 `exec()` 方法中，正则表达式拥有该方法，字符串是参数。如果我们想进行迭代推进，我们会在 `exec()` 中使用 `g`：
@@ -347,23 +281,13 @@ var nameList = names.split(pattern);
 pattern = /(\w+)\s+(\w+)/
 ```
 
-
-
-
-```html
-<input id="phone"><button onclick="testInfo(document.getElementById('phone'));">Check</button>
-</form>
-</body>
-</html>
-```
-
 ## 索引集合
 
 在这一部分中，我们将介绍使用索引值排序的数据集合。这包括所有数组以及任何类数组的结构，例如 `TypedArray` 和 `Array` 对象。
 
 ### 数组对象
 
-数组是指定顺序的一组值，通过名称和索引进行引用。例如，一个名为 `emp` 的数组包含了一个员工姓名列表，其索引为员工的数字工号。在这种情况下，`emp[1]` 是第一个员工，`emp[2]` 是第二个员工，以此此类推。
+数组是指定顺序的一组值，通过名称和索引进行引用。例如，一个名为 `emp` 的数组包含了一个员工姓名列表，其索引为员工的数字工号。在这种情况下，`emp[1]` 是第一个员工，`emp[2]` 是第二个员工，以此类推。
 
 JavaScript 中没有用于数组的显式数据类型，但你可以使用已经定义的 `Array` 对象以及它用于处理数组的方法。`Array` 对象提供了许多方法，帮助你以不同的方式操作数组，例如合并、排序和反转。它还包含一个决定数组长度的属性，以及若干其他可以与正则表达式配合使用的属性。
 
@@ -371,7 +295,7 @@ JavaScript 中没有用于数组的显式数据类型，但你可以使用已经
 
 以下语句都会创建一个数组：
 
-```
+```javascript
 var arr = new Array(element0, element1, ..., elementN);
 var arr = Array(element0, element1, ..., elementN);
 var arr = [element0, element1, ..., elementN];
@@ -465,8 +389,6 @@ var myArray = ['Banana', 'Pineapple', 'Lemon'];
 var myArray = ['Wind', 'Rain', 'Snow'];
 ```
 
-（注：原文此处存在大量重复段落，翻译已按核心逻辑处理）
-
 ### 理解数组长度
 
 `length` 属性返回数组中元素的数量。例如，`myArray` 的 `length` 属性为 3。
@@ -511,6 +433,7 @@ for (var i = 0, div = divs[i]; i++) {
   /* 处理 div */
 }
 ```
+
 这消除了检查数组长度的需求，并确保每次循环时，`div` 变量都会重新赋值为当前项。
 
 另一种遍历数组的方法是使用 `forEach()` 方法：
@@ -552,9 +475,6 @@ array.forEach(function(element) {
 // fourth
 ```
 
-
-
-
 由于 JavaScript 中的元素被保存为标准对象属性，因此你不应该使用 `for…in` 循环来遍历数组；如果你这样做，将得到包含所有普通元素和可枚举属性的列表。
 
 ### 数组方法
@@ -562,6 +482,7 @@ array.forEach(function(element) {
 数组对象拥有以下方法：
 
 * `concat()` – 这将数组合并并返回一个全新的数组：
+
 ```javascript
 var myArray = new Array('4', '5', '6');
 myArray = myArray.concat('d', 'e', 'f');
@@ -569,18 +490,21 @@ myArray = myArray.concat('d', 'e', 'f');
 ```
 
 * `join(delimiter = ‘,’)` – 这将所有数组元素合并为一个字符串：
+
 ```javascript
 var myArray = new Array('Wind', 'Rain', 'Snow');
 var list = myArray.join(' - '); // list is "Wind - Rain - Snow"
 ```
 
 * `push()` – 这将向数组末尾添加至少一个元素并返回数组的新长度：
+
 ```javascript
 var myArray = new Array('4', '5');
 myArray.push('6'); // myArray is now ["4", "5", "6"]
 ```
 
 * `pop()` – 这将移除数组最后一个元素并将其作为值返回：
+
 ```javascript
 var myArray = new Array('4', '5', '6');
 var last = myArray.pop();
@@ -588,6 +512,7 @@ var last = myArray.pop();
 ```
 
 * `shift()` – 这将移除数组第一个元素并将其作为值返回：
+
 ```javascript
 var myArray = new Array('4', '5', '6');
 var first = myArray.shift();
@@ -595,6 +520,7 @@ var first = myArray.shift();
 ```
 
 * `unshift()` – 这将向数组开头添加至少一个元素，返回数组的新长度：
+
 ```javascript
 var myArray = new Array('4', '5', '6');
 myArray.unshift('7', '8');
@@ -602,6 +528,7 @@ myArray.unshift('7', '8');
 ```
 
 * `slice(start_index_upto_index)` – 这将提取数组的特定部分并返回新数组：
+
 ```javascript
 var myArray = new Array('a', 'b', 'c', 'd', 'e');
 myArray = myArray.slice(4, 7); // 从索引 4 开始并提取所有元素
@@ -609,6 +536,7 @@ myArray = myArray.slice(4, 7); // 从索引 4 开始并提取所有元素
 ```
 
 * `splice(index, count_to_remove, addElement4, addElement5, …)` – 这将从数组中删除指定的元素，如果需要（可选），将替换它们。它将返回删除的项：
+
 ```javascript
 var myArray = new Array('4', '5', '6', '7', '8');
 myArray.splice(4, 6, 'a', 'b', 'c', 'd');
@@ -619,6 +547,7 @@ myArray.splice(4, 6, 'a', 'b', 'c', 'd');
 ```
 
 * `reverse()` – 这将原地反转数组元素——第一个元素将变成最后一个，反之亦然；返回数组引用：
+
 ```javascript
 var myArray = new Array('4', '5', '6');
 myArray.reverse();
@@ -626,13 +555,14 @@ myArray.reverse();
 ```
 
 * `sort()` – 这将原地对数组元素排序，返回数组引用：
+
 ```javascript
 var myArray = new Array('Wind', 'Rain', 'Snow');
 myArray.sort();
 // sorts the array so that myArray = ["Snow", "Rain", "Wind"]
 ```
 
-`sort()` 方法还可以通过通过回调函数来确定元素之间是如何比较的。
+`sort()` 方法还可以通过回调函数来确定元素之间是如何比较的。
 
 这种方法以及所有其他接受回调的方法（见下文）被称为迭代方法。这是因为以某种方式或其他方式，它们将遍历整个数组。每个方法都会接收一个名为 `thisObject` 的第二个可选参数；如果提供了 `thisObject`，则 `thisObject` 将成为回调函数体内部 `this` 关键字的值。如果没有提供，就像其他函数在显式对象的上下文中外部调用的情况一样，当使用箭头函数作为回调函数时，它指向 `window` 或全局对象；当使用普通函数时，它指向 `undefined`。
 
@@ -649,31 +579,22 @@ myArray.sort(sortFn);
 ```
 
 在这里：
+
 如果排序系统确定 `a` 小于 `b`，则返回 `-1` 或另一个负数；
+
 如果排序系统确定 `a` 大于 `b`，则返回 `1` 或另一个正数。
+
 如果 `a` 和 `b` 等价，则返回 `0`。
 
-* `indexOf(searchElement, fromIndex)` – 如果排序系统确定 `a` 小于 `b`，则返回 `-1` 或另一个负数；如果排序系统确定 `a` 大于 `b`，则返回 `1` 或另一个正数。如果 `a` 和 `b` 等价，则返回 `0`。
-
+* `indexOf(searchElement, fromIndex)` – 返回在数组中可以找到给定元素的第一个索引，如果不存在则返回 -1。
 * `lastIndexOf(searchElement, fromIndex)` – 工作方式与 `indexOf` 类似，但从末尾开始。
-
 * `forEach(callback, thisObject)` – 这为每个数组元素执行一次提供的函数。
-
 * `map(callback, thisObject)` – 这创建一个新数组，其元素是对每个数组元素调用提供的函数的结果。
-
 * `filter(callback, thisObject)` – 这创建一个包含所有通过提供函数测试的元素的新数组。
-
 * `every(callback, thisObject)` – 这测试数组中的所有元素是否通过了所提供函数的测试。
-
 * `some(callback, thisObject)` – 这测试数组中至少有一个元素通过了所提供函数的测试。
-
 * `reduce(callback, initialValue)` – 这在数组的每个元素上执行还原器函数，产生单一输出值。
-
 * `reduceRight(callback, initialValue)` – 它的工作方式与 `reduce()` 相同，但从最后一个元素开始。
-
-
-
-
 
 `reduce()` 和 `reduceRight()` 都是迭代方法中最不直观的，它们实际上应该用于那些通过递归组合两个值以将序列减少为单个值的算法。
 
@@ -693,9 +614,13 @@ for (i = 0; i < 4; i++) {
 ```
 
 这个示例展示了一个包含以下行的数组：
+
 行 0: [0, 0] [0, 1] [0, 2] [0, 3]
+
 行 1: [1, 0] [1, 1] [1, 2] [1, 3]
+
 行 2: [2, 0] [2, 1] [2, 2] [2, 3]
+
 行 3: [3, 0] [3, 1] [3, 2] [3, 3]
 
 ### 数组与正则表达式
@@ -724,7 +649,7 @@ Array.prototype.forEach.call('a string', function(chr) {
 });
 ```
 
-### 类型数组 (Typed Arrays)
+### 类型数组
 
 JavaScript 中的类型数组是一种类数组对象，为我们提供了访问原始二进制数据的手段。你知道数组对象会动态地缩小和扩大，并可能包含任何有效的 JS 值。JS 引擎还可以进行优化使数组运行非常快，但随着 Web 应用功能的增强，不断加入视频和音频处理功能，显然我们可以使用 JS 代码非常容易且快速地操作类型数组中包含的原始二进制数据。
 
@@ -752,13 +677,13 @@ JavaScript 中的类型数组是一种类数组对象，为我们提供了访问
 - `Float32Array` – 32 位单精度浮点数
 - `Float64Array` – 64 位双精度浮点数
 
-### 键值集合 (Keyed Collections)
+## 键值集合
 
 在本节中我们将查看键值集合。传统上，我们使用对象将字符串映射到值。
 
-#### Map
+### Map
 
-ECMAScript 2015 引入了一种新的数据结构 Map。在接下来的示例中，我们可以看到对 Map 的一些操作
+ECMAScript 2015 引入了一种新的数据结构 Map。在接下来的示例中，我们可以看到对 Map 的一些操作：
 
 ```javascript
 var sayings = new Map();
@@ -787,7 +712,7 @@ sayings.clear();
 sayings.size; // 0
 ```
 
-#### Map 与 对象
+### Map 与 对象
 
 如何决定使用 map 还是对象？这些提示可以帮助你：
 
@@ -799,14 +724,11 @@ sayings.size; // 0
 - 如果你需要将原始值作为键，请使用 Map。对象会将每个键都视为独立的字符串，无论它是布尔值、数字还是任何原始值。
 - 如果逻辑需要对单个元素执行操作，请使用 Map。
 
-#### WeakMap 对象
+### WeakMap 对象
 
 这是一个包含键值对的集合，其中键仅可以是对象，但值可以是任何任意值。对对象的引用是弱持有的，这意味着如果没有对该对象的其他引用，它们可能会被垃圾回收器命中。WeakMap 和 Map 的 API 是相同的。
 
 WeakMap 和 Map 的区别之一是 WeakMap 的键是不可枚举的；这意味着没有方法可以为你提供键的列表。如果键是可枚举的，结果列表将取决于垃圾回收的状态。
-
-
-
 
 ```javascript
 const privates = new WeakMap();
@@ -847,7 +769,7 @@ for (let item of mySet) console.log(item);
 
 ### 数组与 Set 之间的转换
 
-可以使用展开运算符或 `Array.from` 从 `Set` 创建数组。`Set` 构造函数也可以接收数组以进行相反的转换。不要忘记 `Set` 对象存储的值是是，，因此如果在转换过程中存在任何重复元素，它们将会被删除。
+可以使用展开运算符或 `Array.from` 从 `Set` 创建数组。`Set` 构造函数也可以接收数组以进行相反的转换。不要忘记 `Set` 对象存储的值是唯一的，因此如果在转换过程中存在任何重复元素，它们将会被删除。
 
 ```javascript
 Array.from(mySet);
@@ -872,15 +794,15 @@ mySet2 = new Set([1, 2, 3, 4]);
 
 - `Set` 包含对象和值，而 `WeakSet` 只有对象。
 - `WeakSet` 是弱引用；对象引用是被弱引用的，如果其他地方没有其他引用，它们将会被垃圾回收。
-- `WeakSets` 是可枚举的，集合内部目前没有存储的对象列表。
+- `WeakSets` 是不可枚举的，集合内部目前没有存储的对象列表。
 
-`WeakSet` 对象的用途有限。因为它们不会内存内存，可以使用 DOM 元素作为键并进行标记以便跟踪。
+`WeakSet` 对象的用途有限。因为它们不会泄漏内存，可以使用 DOM 元素作为键并进行标记以便跟踪。
 
 ### Map 和 Set 的键/值相等性
 
 `Map` 对象的键相等性和 `Set` 对象的值相等性都基于“相同值零算法”：
 
-- 等等判断的方式与恒等比较运算符 `===` 相同。
+- 判断的方式与恒等比较运算符 `===` 相同。
 - `-0` 和 `+0` 被视为相等的。
 - `NaN` 被视为等于它本身，这与 `===` 相反。
 
@@ -925,11 +847,7 @@ myCar['model'] = 'Vectra';
 myCar['year'] = 2008;
 ```
 
-对象属性的名称可以是任何 JavaScript 字符串，只要它是合法的。...（注：此处原文文本存在多处重复和乱码，翻译已根据语境进行了逻辑处理，保持了技术术语的准确性）。
-
-
-
-
+对象属性的名称可以是任何 JavaScript 字符串，只要它是合法的。
 
 在 ECMAScript 5 之前，列出对象属性唯一的方法是使用下面示例中的函数，因为没有原生方法可以列出它们：
 
@@ -947,13 +865,13 @@ function listAllProperties(o) {
 }
 ```
 
-这是显示任何隐藏属性的有用方法，即原型链中由于由于存在同名属性而无法通过对象访问的属性。要列出所有可访问的属性，只需从数组中删除重复项即可。
+这是显示任何隐藏属性的有用方法，即原型链中由于存在同名属性而无法通过对象访问的属性。要列出所有可访问的属性，只需从数组中删除重复项即可。
 
 ### 创建新对象
 
 在 JavaScript 中有几个预定义的对象，但你也可以通过对象初始化器创建自己的对象。另一种方法是先创建一个构造函数，然后通过 `new` 运算符通过对象实例化来调用该函数。
 
-## 使用对象初始化器
+#### 使用对象初始化器
 
 另一种方法是使用对象初始化器，有时称为使用字面量符号（literal notation）来创建对象。
 
@@ -984,11 +902,11 @@ var myBMW = {color: 'black', wheels: 4, engine: {cylinders: 6, size: 2.5}};
 
 对象初始化器也可以用于创建数组。
 
-## 使用构造函数
+#### 使用构造函数
 
 或者，尝试以下两个步骤创建对象：
 
-1. 编写构造函数来定义对象类型。按照惯，使用大写字母作为首字母
+1. 编写构造函数来定义对象类型。按照惯例，使用大写字母作为首字母
 2. 使用 `new` 创建对象实例
 
 通过为类型创建一个函数来定义对象类型；该函数将指定名称、属性和方法。例如，如果你想为汽车创建一个类型，可以命名为 `Car`，属性将为 `make`、`model` 和 `year`。这是你要写的函数：
@@ -1006,16 +924,16 @@ function Car(make, model, year) {
 现在可以创建一个名为 `mycar` 的对象：
 
 ```javascript
-var mycar = new Car('Mercedes', ‘Compressor’, 2000);
+var mycar = new Car('Mercedes', 'Compressor', 2000);
 ```
 
-在语句中，我们创建了名为 `mycar` 的对象，然后将值赋值给属性。`mycar.make` 的值将是字符串“Mercedes”，`mycar.year` 将是整数 2000，以此此类推。
+在语句中，我们创建了名为 `mycar` 的对象，然后将值赋值给属性。`mycar.make` 的值将是字符串“Mercedes”，`mycar.year` 将是整数 2000，以此类推。
 
 通过调用 `new`，你可以创建任意数量的 `Car` 对象，例如：
 
 ```javascript
 var mickscar = new Car('BMW', 'X5', 2005);
-var samscar = new Car(‘Audi', 'A4', 2007);
+var samscar = new Car('Audi', 'A4', 2007);
 ```
 
 对象还可以拥有本身也是对象的属性。例如，你可以这样定义一个名为 `person` 的对象：
@@ -1028,22 +946,7 @@ function Person(name, age, sex) {
 }
 ```
 
-然后你可以实例化两个新的 `Person` 对象，如下所示：
-
-```javascript
-var rand = new Person(‘Simon Templ’);
-```
-
-等待，原文在 `Person` 部分存在一些杂乱的重复。让我们根据提供的文本清理核心逻辑：
-
-```javascript
-function Person(name, age, sex) {
-  this.name = name;
-  this.age = age;
-// ... (其余逻辑)
-```
-
-## 使用 Object.create
+#### 使用 Object.create
 
 最后，可以使用 `Object.create()` 方法来创建你的对象。这是一个非常有用的方法，因为你可以选择你想要的原型：
 
@@ -1063,6 +966,7 @@ animal1.displayType(); // 输出:Invertebrates
 var fish = Object.create(Animal);
 fish.type = 'Fishes';
 fish.displayType();
+```
 
 ### 对象的属性索引
 
@@ -1080,12 +984,9 @@ fish.displayType();
 
 可以使用 `prototype` 属性向你之前定义的对象添加属性。这将为所有指定类型的对象定义一个共享属性，而不仅仅是单个对象实例。
 
-
-
-
 下一个示例为所有类型为 `Car` 的对象添加一个名为“color”的属性，然后为名为 `car1` 的对象的新属性赋值一个值：
 
-```
+```javascript
 Car.prototype.color = null;
 car1.color = 'black';
 ```
@@ -1102,7 +1003,7 @@ car1.color = 'black';
 var myObj = {
   myMethod: function(params) {
     // ...执行某些操作
-  }
+  },
   // 这样写也可以
   myOtherMethod(params) {
     // ...执行另一些操作
@@ -1186,7 +1087,7 @@ function validate(obj, lowval, hival) {
 
 Getter 用于获取指定属性值的方法，而 Setter 是用于设置指定属性值的方法。只要支持添加新属性，就可以在任何预定义的核心对象上，或在任何用户自定义的对象上定义 getter 和 setter。
 
-定义两者的语法都使用了对象字量量的语法。
+定义两者的语法都使用了对象字面量的语法。
 
 在接下来的示例中，你可以看到 getter 和 setter 在一个名为 `o` 的自定义对象上的工作：
 
@@ -1201,7 +1102,6 @@ var o = {
   }
 };
 
-```
 console.log(o.a); // 7
 console.log(o.b); // 8
 o.c = 50;
@@ -1209,6 +1109,7 @@ console.log(o.a); // 25
 ```
 
 `o` 对象的属性为：
+
 * `o.a` – 这是一个数字
 * `o.b` – 这是一个 getter，将返回 `o.a + 1`
 * `o.c` – 这是一个 setter，会将 `o.a` 的值设置为 `o.c` 赋值值的一半
@@ -1259,9 +1160,6 @@ g = 17;
 delete g;
 ```
 
-
-
-
 ## 比较对象
 
 在 `JavaScript` 中，对象是引用类型，两个不同的对象永远不会相等，即使它们的属性相同。产生 `true` 的唯一方法是将对象引用自身进行比较：
@@ -1269,25 +1167,20 @@ delete g;
 ```javascript
 // 两个变量，两个不同的对象但属性相同
 var fruit = {name: 'peach'};
-
 var fruitbear = {name: 'peach'};
 
 fruit == fruitbear; // 返回 false
-
 fruit === fruitbear; // 返回 false
 
 // 两个变量，同一个对象
 var fruit = {name: 'peach'};
-
 var fruitbear = fruit;  // 将 fruit 对象引用赋值给 fruitbear
 
 // 在这里 fruit 和 fruitbear 都指向同一个对象
 fruit == fruitbear; // 返回 true
-
 fruit === fruitbear; // 返回 true
 
 fruit.name = 'blueberry';
-
 console.log(fruitbear);    // 输出 { name: "blueberry" } 而不是 { name: "peach" }
 ```
 
@@ -1306,7 +1199,7 @@ console.log(fruitbear);    // 输出 { name: "blueberry" } 而不是 { name: "pe
 
 ## 定义类
 
-在基于类的语言中，`类`是在单独的定义中定义的。可以在定义中指定 `Constructors`（构造函数），以便创建类实例。`Constructor` 方法将指定实例属性的初始值，并在创建时执行任何适当的处理。`new` 运算符配合构造方法方法用于创建类的实例。
+在基于类的语言中，`类`是在单独的定义中定义的。可以在定义中指定 `Constructors`（构造函数），以便创建类实例。`Constructor` 方法将指定实例属性的初始值，并在创建时执行任何适当的处理。`new` 运算符配合构造方法用于创建类的实例。
 
 `JavaScript` 执行了类似的操作，但类定义和构造函数并不是分开的。相反，通过定义一个构造函数来创建一个具有特定初始属性及其值的对象。你可以使用 `JavaScript` 中的任何函数作为构造函数，并且始终使用 `new` 运算符配合构造函数来创建新对象。
 
@@ -1318,7 +1211,7 @@ console.log(fruitbear);    // 输出 { name: "blueberry" } 而不是 { name: "pe
 
 ## 添加和删除属性
 
-在基于类的语言中，`类` 往往在编译时创建，随后在编译或运行时实例化类实例。一旦类类，属性的数量和类型就无法更改。相比之下，在 `JavaScript` 中，可以在运行时添加或删除对象属性。如果向原型对象（针对一组对象）添加属性，这些对象也将接收到该属性。
+在基于类的语言中，`类` 往往在编译时创建，随后在编译或运行时实例化类实例。一旦类定型，属性的数量和类型就无法更改。相比之下，在 `JavaScript` 中，可以在运行时添加或删除对象属性。如果向原型对象（针对一组对象）添加属性，这些对象也将接收到该属性。
 
 在本节的剩余部分，我们将查看如何在 `JavaScript` 中使用构造函数和原型创建对象层级，并与 `Java` 的实现方式进行比较。从现在起我们将继续使用员工层级。
 
@@ -1350,24 +1243,24 @@ console.log(fruitbear);    // 输出 { name: "blueberry" } 而不是 { name: "pe
 
 ```javascript
 function Employee() {
-  � this.name = '';
-  � this.dept = 'general';
+  this.name = '';
+  this.dept = 'general';
 }
 ```
 
 ```java
 public class Employee {
-    public String name = "";
-    public String dept = "general";
+   public String name = "";
+   public String dept = "general";
 }
 ```
 
-
-
-
-在 `Worker` 和 `Manager` 的定义中，你可以看到指定继承链中更上层对象的方式存在差异。在 JavaScript 中，原型实例是作为构造函数的 `prototype` 属性值添加的。这可以在定义构造函数后的任何时间进行。随后，会覆盖构造函数的 `prototype.constructor`。在 Java 中，超类是在类定义中指的，且该超类无法在类定义之外被更改。
+在 `Worker` 和 `Manager` 的定义中，你可以看到指定继承链中更上层对象的方式存在差异。在 JavaScript 中，原型实例是作为构造函数的 `prototype` 属性值添加的。这可以在定义构造函数后的任何时间进行。随后，会覆盖构造函数的 `prototype.constructor`。在 Java 中，超类是在类定义中指定的，且该超类无法在类定义之外被更改。
 
 ### JavaScript
+
+
+
 ```javascript
 function Manager() {
   Employee.call(this);
@@ -1387,6 +1280,7 @@ Worker.prototype.constructor = Worker;
 ```
 
 ### Java
+
 ```java
 public class Manager extends Employee {
   public Employee[] reports = new Employee[0];
@@ -1397,9 +1291,10 @@ public class Worker extends Employee {
 }
 ```
 
-对象是在 `Salesperson` 和 `Engineer` 的定义中创建的；这些对象是 `Works` 的后代，结果它们也是 `Employee` 的后代。这些类型中的任何对象都具有层次链中其之前的所有对象的属性。这些定义还使用特定于对象的新值覆盖了继承的 `dept` 属性值。
+对象是在 `Salesperson` 和 `Engineer` 的定义中创建的；这些对象是 `Worker` 的后代，结果它们也是 `Employee` 的后代。这些类型中的任何对象都具有层次链中其之前的所有对象的属性。这些定义还使用特定于对象的新值覆盖了继承的 `dept` 属性值。
 
 ### JavaScript
+
 ```javascript
 function Salesperson() {
   Worker.call(this);
@@ -1421,6 +1316,7 @@ Engineer.prototype.constructor = Engineer;
 ```
 
 ### Java
+
 ```java
 public class Salesperson extends Worker {
   public String dept = "sales";
@@ -1436,12 +1332,17 @@ public class Engineer extends Worker {
 通过这些定义，可以创建出接收默认属性值的对象实例。
 
 ### 对象层次结构
+
 该层次结构是通过下面的代码示例创建的：
 
 `Employee`
+
 `Manager`
+
 `Worker`
+
 `Salesperson`
+
 `Engineer`
 
 各个对象是 `John`、`Shelley`、`Michael`、`George`、`Julie` 等，实例是通过构造函数创建的：
@@ -1477,16 +1378,18 @@ var Julie = new Engineer;
 ```
 
 ### 对象属性
+
 现在我们将观察对象如何从原型链中的一个或多个其他对象继承属性，然后查看在运行时添加属性的结果。
 
 #### 继承属性
+
 假设你使用下述语句创建了一个名为 `Michael` 的 `Worker` 对象：
 
 ```javascript
 var Michael = new Worker;
 ```
 
-当看到 `new` 操作符时，JavaScript 将创建一个通用对象，并将内部的 `[[Prototype]]` 值隐式地设置为 `Worker.prototype`；然后该对象将作为 `this` 关键字的值传递给 `Worker` 构造函数。内部的 `[[prototype]]` 属性将决定由何种类型的原型链返回属性值；一旦这些属性中的其中一个被设置，就会返回新对象，并使用赋值语句将变量 `Michael` 设置为该对象。
+当看到 `new` 操作符时，JavaScript 将创建一个通用对象，并将内部的 `[[Prototype]]` 值隐式地设置为 `Worker.prototype`；然后该对象将作为 `this` 关键字的值传递给 `Worker` 构造函数。内部的 `[[Prototype]]` 属性将决定由何种类型的原型链返回属性值；一旦这些属性中的其中一个被设置，就会返回新对象，并使用赋值语句将变量 `Michael` 设置为该对象。
 
 这样做并不会将那些从原型链继承的属性值显式地置于 `Michael` 对象中。当你请求一个属性值时，JavaScript 会首先检查该值是否在对象中。如果是，则返回它。如果不存在请求名称的属性，JavaScript 会告诉你对象中没有该属性。通过这样做，名为 `Michael` 的对象将具有这些属性和对应的值：
 
@@ -1507,6 +1410,7 @@ Michael.projects = ['navigator'];
 ```
 
 #### 添加属性
+
 在 JavaScript 中，可以在运行时向对象添加属性，你并不局限于仅使用构造函数提供的属性。为对象添加特定的属性是通过给对象赋值来实现的：
 
 ```javascript
@@ -1516,9 +1420,11 @@ Michael.bonus = 2500;
 我们现在为 `Michael` 对象提供了一个名为 `bonus` 的属性；其他将没有此属性。
 
 #### 灵活构造函数
+
 到目前为止，我们的构造函数允许在创建实例时为属性指定任何值。JavaScript 允许为构造函数提供参数以初始化属性。可以通过这种方式实现：
 
 ### JavaScript
+
 ```javascript
 function Employee(name, dept) {
   this.name = name || '';
@@ -1527,6 +1433,7 @@ function Employee(name, dept) {
 ```
 
 ### Java
+
 ```java
 public class Employee {
   public String name;
@@ -1548,6 +1455,7 @@ public class Employee {
 ```
 
 ### JavaScript
+
 ```javascript
 function Worker(projs) {
   this.projects = projs || [];
@@ -1557,6 +1465,7 @@ Worker.prototype = new Employee();
 ```
 
 ### Java
+
 ```java
 public class Worker extends Employee {
   public String[] projects;
@@ -1572,6 +1481,7 @@ public class Worker extends Employee {
 ```
 
 ### JavaScript
+
 ```javascript
 function Engineer(mach) {
   this.dept = 'engineering';
@@ -1582,6 +1492,7 @@ Engineer.prototype = new Worker();
 ```
 
 ### Java
+
 ```java
 public class Engineer extends Worker {
   public String machine;
@@ -1599,13 +1510,12 @@ public class Engineer extends Worker {
 ```
 
 注意
+
 JavaScript 在设置默认值使用的定义中使用了一种特殊的术语：
 
 `this.name = name || '';`
 
 逻辑或（`||`）运算符会评估第一个参数；如果它求值为真，则返回它；如果为假，则返回第二个参数的值。
-
-
 
 如果你在调用构造函数时传入了求值为虚假的参数（例如 `0` 或空字符串），你可能会发现它并没有按照你预期的方式工作。在这种情况下，将赋予默认值。
 
@@ -1648,11 +1558,17 @@ var Julie = new Engineer('Donalds, Julie', ['navigator', 'javascript'], 'belau')
 这些是 JavaScript 采取的步骤：
 
 1. 通过 `new` 操作符创建了一个通用对象，并将 `__proto__` 属性设置为 `Engineer.prototype`。
+
 2. `new` 操作符将新对象作为 `this` 关键字的值传递给 `Engineer` 构造函数。
+
 3. 构造函数为该对象创建了一个名为 `base` 的新属性，并把 `Worker` 构造函数的值赋值给该新属性。这反过来使得 worker 构造函数变成了 `Engineer` 对象的方法。
+
 4. 构造函数调用了 `base` 方法，该方法将构造函数的两个参数作为方法参数传递——“Donalds, Julie”和 `["navigator", "javascript"]`，以及名为“engineering”的字符串。在构造函数中显式地使用“engineering”表示所有的 `Engineer` 对象都共享继承自 `dept` 属性的相同值。从 `Employee` 继承来的值被 `dept` 属性值覆盖。
+
 5. 被调用的方法 `base` 是 `Engineer` 方法，正因为如此，当调用 `base` 时，`this` 关键字绑定到第一步创建的新对象上。这样，`Worker` 函数会将这两个参数传递给 `Employee` 构造函数。从该函数返回后，`Worker` 函数将使用剩余参数设置名为 `projects` 的属性。
+
 6. 从调用的方法 `base` 返回后，`Engineer` 构造函数将对象的 `machine` 属性初始化为“belau”。
+
 7. 最后，从构造函数返回后，JavaScript 将新对象赋值给变量 `Julie`。
 
 你可能误认为，一旦从 `Engineer` 构造函数调用了 `Worker` 构造函数，所有的 `Engineer` 对象就已经正确设置了继承。然而并没有。当你调用 `Worker` 构造函数时，你所做的只是确保 `Engineer` 对象拥有从一开始被调用的每个构造函数中指定的属性。然而，如果你在日后向 `Worker` 或 `Employee` 的原型上添加新属性，`Engineer` 对象将不会继承这些新属性。让我们假设我们有这些语句，例如：
@@ -1709,8 +1625,11 @@ function Engineer(name, projs, mach) {
 快速概述一下，当你访问对象的属性时，JavaScript 会执行以下步骤：
 
 1. 首先检查是否存在本地属性；如果有，则返回它。
+
 2. 如果没有本地属性，则检查 `__proto__` 链。
+
 3. 如果在链中找到了提供该属性的对象，则返回该值。
+
 4. 如果链中没有找到该属性，则该对象没有该属性。
 
 这种结果取决于你在构造函数中的定义方式。假设使用了这些定义：
@@ -1777,9 +1696,6 @@ Employee.prototype.name = 'Unknown';
 从这些示例可以看出，如果你希望对象属性具有默认值，并且在运行时有更改值的选项，这些属性必须设置在原型上，而不是构造函数中。
 
 ### 确定实例关系
-
-
-
 
 在 JavaScript 中，属性查找涉及在对象自身的属性中查找；如果找不到指定的属性名，JavaScript 将移动到 `__proto__` 属性，这是该对象的特殊属性。这一过程会递归进行，被称为“原型链中的查找”。
 
@@ -1953,9 +1869,6 @@ function successCallback(result) {
 }
 ```
 
-
-
-
 ```javascript
 function failureCallback(error) {
   console.log("Error generating audio file: " + error);
@@ -1984,7 +1897,9 @@ promise.then(successCallback, failureCallback);
 Promise 具有某些旧的传递回调的方法不具备的特定保证：
 
 - 回调函数在当前 JS 事件循环运行结束之前，不会被调用
+
 - 使用 `then` 方法添加的回调函数将像上面一样被调用，即使异步操作失败也会被调用
+
 - 若要添加多个回调函数，只需为每个回调使用 `then()` 方法即可（例如，4 个回调 = 4 个 `then()` 方法）。每个回调都按照插入顺序一个接一个执行。
 
 Promise 最好的特性之一是链式调用，
@@ -2074,8 +1989,11 @@ new Promise((resolve, reject) => {
 ```
 
 输出将是：
+
 Initial
+
 Do that
+
 Do this, whatever happened earlier
 
 你没有看到 "Do this" 文本显示，是因为由 "Something failed" 错误导致了拒绝。
@@ -2105,7 +2023,7 @@ try {
 }
 ```
 
-异步和同步代码之间的对称性产生了 ECMAScript 2017 的语法糖 `async/_await`：
+异步和同步代码之间的对称性产生了 ECMAScript 2017 的语法糖 `async/await`：
 
 ```javascript
 async function foo() {
@@ -2164,13 +2082,9 @@ Promise.all([func1(), func2(), func3()])
 
 我们所做的是将一个包含异步函数的数组归约为一个 promise 链，其等效于 `Promise.resolve().then(func1).then(func2).then(func3)`。
 
-
-
-
-
 我们可以将其转换为编程中常用的可重用函数，特别是在函数式编程中：
 
-```
+```javascript
 const applyAsync = (acc,val) => acc.then(val);
 
 const composeAsync = (...funcs) => x => funcs.reduce(applyAsync, Promise.resolve(x));
@@ -2184,7 +2098,7 @@ const transformData = composeAsync(func1, func2, func3);
 const result3 = transformData(data);
 ```
 
-通过 ECMAScript 2017，我们可以使用 `async/wait` 非常简单地实现顺序组合：
+通过 ECMAScript 2017，我们可以使用 `async/await` 非常简单地实现顺序组合：
 
 ```javascript
 let result;
@@ -2272,7 +2186,7 @@ doSomething()
 
 在此处，`() => x` 是 `() => {return x;}` 的简写版本。
 
-我们现在拥有一个确定性的且具有正确错误处理的链。当你使用 `async/_wait` 时，大多数问题（并非全部）都可以得到解决，而最常见的权衡是——在该语法中忘记使用 `await` 关键字。
+我们现在拥有一个确定性的且具有正确错误处理的链。当你使用 `async/await` 时，大多数问题（并非全部）都可以得到解决，而最常见的权衡是——在该语法中忘记使用 `await` 关键字。
 
 ### 迭代器与生成器 (Iterators and Generators)
 
@@ -2315,9 +2229,6 @@ while (!result.done) {
 
 console.log("遍历的序列大小为: ", result.value); // 5
 ```
-
-
-
 
 虽然自定义迭代器是很好的工具，但创建它们需要非常小心的编程，因为显式维护内部状态至关重要。生成器函数（generator function）是一种极其强大的替代方案，因为它允许你编写一个非连续执行的函数来定义迭代算法。我们使用 `function*` 语法来编写生成器函数，当它们第一次被调用时，没有任何代码会被执行；相反，会返回一个名为生成器的器类型。当调用生成器的 `next()` 方法时，值会被消耗，函数将继续执行，直到遇到 `yield` 关键字。
 
@@ -2458,8 +2369,11 @@ console.log(p.a, p.b); // 1, 49
 当我们谈论 Proxy 功能时，可能会遇到这些术语：
 
 - `handler`：带有陷阱（traps）的占位对象。
+
 - `traps`：用于访问属性的方法。这与操作系统使用的陷阱相似。
+
 - `target`：被 Proxy 虚拟化的对象。目标通常是代理的存储后端。
+
 - `Invariants`（不变性）：在实现自定义操作时不会发生语义。如果违反了 handler 的不变性，则会抛出 `TypeError`。
 
 #### 处理器与陷阱 (Handlers and Traps)
@@ -2467,32 +2381,32 @@ console.log(p.a, p.b); // 1, 49
 以下是 Proxy 对象可用的陷阱：
 
 - `handler.getPrototypeOf()`：拦截 `Object.getPrototypeOf()`、`Reflect.getPrototypeOf()`、`__proto__`、`Object.prototype.isPrototypeOf()` 和 `instanceof`。不变性是 `get.getPrototypeOf()`，且方法必须返回 null 或对象。
+
 - `handler.setPrototypeOf()`：拦截 `Object.setPrototypeOf()` 和 `Reflect.setPrototypeOf()`。如果目标是不可扩展，则原型参数必须具有 `Object.getPrototypeOf(target)` 相同的值。
+
 - `handler.isExtensible()`：拦截 `Object.isExtensible()` 和 `Reflect.isExtensible()`。不变性是 `Object.isExtensible(proxy)`，它必须返回 `Object.isExtensible(target)` 的值。
+
 - `handler.preventExtensions()`：拦截 `Object.preventExtensions()` 和 `Reflect.preventExtensions()`。不变性是 `Object.preventExtensions(proxy)`，只有当 `Object.isExtensible(proxy)` 为 false 时，它才会返回 true。
 
+- `handler.getOwnPropertyDescriptor()`：拦截了 `Object.getOwnPropertyDescriptor()` 和 `Reflect.getOwnPropertyDescriptor()`。它有一个关于 `getOwnPropertyDescriptor()` 的不变性，该方法必须返回 `undefined` 或一个对象。如果一个属性作为目标对象的自有属性存在且不可配置，则它不能同时被报告为不存在的属性。如果它也作为目标对象的自有属性存在且目标对象是不可扩展的，它也不能被报告为不存在。如果它在作为不可扩展的目标对象的自有属性时不存在，则它不能被报告为存在，且如果一个属性不存在于目标对象的自有属性，或者它是一个可配置的目标对象自有属性，则该属性可能可能不会被报告为不可配置的。`Object.getOwnPropertyDescriptor(target)` 的结果可以使用 `Object.defineProperty` 应用于目标对象，且不会抛出任何异常。
 
+- `handler.defineProperty()`：拦截了 `Object.defineProperty()` 和 `Reflect.defineProperty()`。如果目标对象是不可扩展的，可能无法添加属性。如果该属性不是目标对象的不可配置属性，则不能将其作为不可配置属性添加，或将其修改为不可配置。如果存在与之对应的目标对象可配置属性，它也不能变为不可配置。如果对应的属性存在，`Object.defineProperty(target, prop, descriptor)` 不会抛出异常。如果 `defineProperty` 处理器在严格模式下返回 `false` 值，则会抛出 `TypeError` 异常。
 
+- `handler.has()`：拦截了 `Object.create(proxy)` 和 `Reflect.has()`，其中代理中有一个名为 `query: foo` 的属性，且在两次拦截中都有继承的属性 `query: foo`。如果属性作为目标对象的不可配置自有属性存在，或者它作为目标对象的自有属性存在且对象本身是不可扩展的，则可能不会报告为不存在。
 
-*   `Handler.getOwnPropertyDescriptor()` – 拦截了 `Object.getOwnPropertyDescriptor()` 和 `Reflect.getOwnPropertyDescriptor()`。它有一个关于 `getOwnPropertyDescriptor()` 的不变性，该方法必须返回 `undefined` 或一个对象。如果一个属性作为目标对象的自有属性存在且不可配置，则它不能同时被报告为不存在的属性。如果它也作为目标对象的自有属性存在且目标对象是不可扩展的，它也不能被报告为不存在。如果它在作为不可扩展的目标对象的自有属性时不存在，则它不能被报告为存在，且如果一个属性不存在于目标对象的自有属性，或者它是一个可配置的目标对象自有属性，则该属性可能可能不会被报告为不可配置的。`Object.getOwnPropertyDescriptor(target)` 的结果可以使用 `Object.defineProperty` 应用于目标对象，且不会抛出任何异常。
+- `handler.get()`：拦截了 `proxy.bar` 和 `proxy[foo]` 的属性访问，并在 `Object.create(proxy[foo])` 中具有继承访问，以及对 `Reflect.get()` 的拦截。属性的报告值必须与其对应的目标对象的值相同，其中目标属性是一个不可写或不可配置的数据属性。如果对应的目标对象是一个不可配置的访问器属性且其 `[[Get]]` 属性为 `undefined`，则属性值必须是 `undefined`。
 
-*   `handler.defineProperty()` – 拦截了 `Object.defineProperty()` 和 `Reflect.defineProperty()`。如果目标对象是不可扩展的，可能无法添加属性。如果该属性不是目标对象的不可配置属性，则不能将其作为不可配置属性添加，或将其修改为不可配置。如果存在与之对应的目标对象可配置属性，它也不能变为不可配置。如果对应的属性存在，`Object.defineProperty(target, prop, descriptor)` 不会抛出异常。如果 `defineProperty` 处理器在严格模式下返回 `false` 值，则会抛出 `TypeError` 异常。
+- `handler.set()`：拦截了 `proxy[foo] = bar` 和 `proxy.foo = bar` 的属性赋值。它在 `Object.create(proxy[foo] = bar)` 中具有继承的属性赋值以及对 `Reflect.set()` 的拦截。如果对应的对象是一个不可写或不可配置的数据属性，则属性值不能更改为不同目标对象的值。如果对应的目标对象是一个不可配置的访问器属性且 `[[Set]]` 属性为 `undefined`，则无法设置属性值。如果 `set` 处理器在严格模式下返回 `false` 值，则会抛出 `TypeError` 异常。
 
-*   `handler.has()` – 拦截了 `Object.create(proxy)` 和 `Reflect.has()`，其中代理中有一个名为 `query: foo` 的属性，且在两次拦截中都有继承的属性 `query: foo`。如果属性作为目标对象的不可配置自有属性存在，或者它作为目标对象的自有属性存在且对象本身是不可扩展的，则可能不会报告为不存在。
+- `handler.deleteProperty()`：拦截了属性 `proxy[foo]` 和 `Reflect.deleteProperty()` 的删除。删除是通过 `proxy.foo` 进行的。如果属性作为目标对象的不可配置自有属性存在，则无法被删除。
 
-*   `handler.get()` – 拦截了 `proxy.bar` 和 `proxy[foo]` 的属性访问，并在 `Object.create(proxy[foo])` 中具有继承访问，以及对 `Reflect.get()` 的拦截。属性的报告值必须与其对应的目标对象的值相同，其中目标属性是一个不可写或不可配置的数据属性。如果对应的目标对象是一个不可配置的访问器属性且其 `[[Get]]` 属性为 `undefined`，则属性值必须是 `undefined`。
+- `handler.enumerate()`：拦截了 `/for…in (var name in proxy) {…}` 的属性枚举以及 `Reflect.enumerate()` 的拦截。`enumerate` 方法必须返回一个对象。
 
-*   `handler.set()` – 拦截了 `proxy[foo] = bar` 和 `proxy.foo = bar` 的属性赋值。它在 `Object.create(proxy[foo] = bar)` 中具有继承的属性赋值以及对 `Reflect.set()` 的拦截。如果对应的对象是一个不可写或不可配置的数据属性，则属性值不能更改为不同目标对象的值。如果对应的目标对象是一个不可配置的访问器属性且 `[[Set]]` 属性为 `undefined`，则无法设置属性值。如果 `set` 处理器在严格模式下返回 `false` 值，则会抛出 `TypeError` 异常。
+- `handler.ownKeys()`：拦截了 `Object.getOwnPropertyNames()`、`Object.keys()`、`Object.getOwnPropertySymbols()` 和 `Reflect.ownKeys`。`ownKeys` 将产生一个列表，且列表中每个元素的类型将是 `symbol` 或 `string`。`List` 结果必须包含目标对象不可配置自有属性的键。如果目标对象不可扩展的，`List` 必须包含目标对象自有属性的键——不能有任何其他值。
 
-*   `handler.deleteProperty()` – 拦截了属性 `proxy[foo]` 和 `Reflect.deleteProperty()` 的删除。删除是通过 `proxy.foo` 进行的。如果属性作为目标对象的不可配置自有属性存在，则无法被删除。
+- `handler.apply()`：拦截了 `proxy(…args)`。包括 `Reflect.apply()`、`Function.prototype.call()` 和 `Function.prototype.apply()`。`handler.apply()` 方法没有任何不变性。
 
-*   `handler.enumerate()` – 拦截了 `/for…in (var name in proxy) {…}` 的属性枚举以及 `Reflect.enumerate()` 的拦截。`enumerate` 方法必须返回一个对象。
-
-*   `handler.ownKeys()` – 拦截了 `Object.getOwnPropertyNames()`、`Object.keys()`、`Object.getOwnPropertySymbols()` 和 `Reflect.ownKeys`。`ownKeys` 将产生一个列表，且列表中每个元素的类型将是 `symbol` 或 `string`。`List` 结果必须包含目标对象不可配置自有属性的键。如果目标对象不可扩展的，`List` 必须包含目标对象自有属性的键——不能有任何其他值。
-
-*   `handler.apply()` – 拦截了 `proxy(…args)`。包括 `Reflect.apply()`、`Function.prototype.call()` 和 `Function.prototype.apply()`。`handler.apply()` 方法没有任何不变性。
-
-*   `handler.construct()` - 拦截了 `proxy(…args)` 和 `Reflect.construct()`。`handler.construct()` 的结果必须是一个对象。
+- `handler.construct()`：拦截了 `proxy(…args)` 和 `Reflect.construct()`。`handler.construct()` 的结果必须是一个对象。
 
 ### 可撤销代理 (Revocable Proxy)
 
@@ -2558,9 +2472,6 @@ if (Reflect.defineProperty(target, property, attributes)) {
 ```
 
 在本节的剩余部分中，我们将查看 JSON 是什么以及如何使用它。之后，我们将构建一个弹小游戏，这将让你有机会练习所学的内容，然后简要查看 API。
-
-
-
 
 JSON 以字符串格式存在，这对于在网络上传输数据非常有用。当你想要或需要访问其中包含的数据时，必须首先将其转换为原生对象。为了帮助你完成这一点，JavaScript 中有一个全局 `JSON` 对象，它提供了在它们之间转换所需的方法。
 
@@ -2631,9 +2542,13 @@ JSON 对象可以存储在它们自己的文件中，这些文件仅仅是扩展
 拆解这一结构：
 
 * 首先是变量名 – `superHeroes`
+
 * 接下来，我们需要访问变量中的 `members` 属性，因此使用了 `["members"]`。
+
 * `"members"` 内部是一个填充了对象的数组。我们想要该数组中的第二个对象，因此使用了 `[1]`
+
 * 在该对象内部，我们想要访问名为 `powers` 的属性，因此使用了 `["powers"]`
+
 * 在 `powers` 属性中有一个数组，包含了所选英雄的超能力。我们想要第三种超能力，因此使用了 `[2]`
 
 ## 作为 JSON 的数组
@@ -2672,21 +2587,16 @@ JSON 对象可以存储在它们自己的文件中，这些文件仅仅是扩展
 以下是你在使用 JSON 时应该学习的重点要点：
 
 * JSON 仅是一种数据格式，不包含任何方法，只有属性。
+
 * JSON 的要求是在属性名和字符串周围使用双引号。你不能使用单引号，因为它们是无效的。
+
 * 如果你在 JSON 文件中错放任何一个冒号或逗号，事情就会出现问题，文件将无法工作。当你尝试使用数据时，请务必使用如 `JSONLint` 等应用程序对其进行验证。顺便提一下，只要生成程序按预期方式运行，计算机生成的 JSON 几乎不会出现错误。
-* JSON 仅是一种数据格式，不包含任何方法，只有属性。
-* JSON 的要求是在属性名和字符串周围使用双引号。你不能使用单引号，因为它们是无效的。
-* 如果你在 JSON 文件中错放任何一个冒号或逗号，事情就会出现问题，文件将无法工作。当你尝试使用数据时，请务必使用如 `JSONLint` 等应用程序对其进行验证。顺便提一下，只要生成程序按预期方式运行，计算机生成的 JSON 几乎不会出现错误。
-*(注：原文后续重复内容已根据指令要求未进行重复输出)*
 
 ## 一个 JSON 示例
 
 ## 开始
 
 ## 获取 JSON
-
-
-
 
 ```javascript
 showHeroes(superHeroes);
@@ -2717,6 +2627,8 @@ function populateHeader(jsonObj) {
 ## 创建信息卡片 (Creating Information Cards)
 
 为了创建并显示信息卡片，我们将此函数添加到代码的末尾：
+
+
 
 ```javascript
 function showHeroes(jsonObj) {
@@ -2760,9 +2672,6 @@ function showHeroes(jsonObj) {
 ### 注意 (Note)
 
 如果你在跟我们这里使用的点符号/括号表示法（dot/bracket notation）感到困难，在单独的标签页或文本编辑器中打开 `superheroes.json` 文件有助于你在操作时参考它。你也可以回过关于“对象 (Objects)”的章节。
-
-
-
 
 首先，你需要为这些文件创建本地副本：[index.html](https://github.com/mdn/learning-area/blob/master/javascript/oojs/bouncing-balls/index.html), [style.css](https://github.com/mdn/learning-area/blob/master/javascript/oojs/bouncing-balls/style.css) 和 [main.js](https://github.com/mdn/learning-area/blob/master/javascript/oojs/bouncing-balls/main.js)。这些文件包含：
 
@@ -2840,90 +2749,11 @@ Ball.prototype.draw = function() {
 *   然后使用 `arc()` 方法在纸上画一个弧。它有四个参数：
     *   弧圆心的 `X` 和 `y` 位置 – 这些是球的 `x` 和 `y` 属性
     *   弧的半径 – 这是球的 `size` 属性
-    *   最后两个用于指定弧绕圆圆绘制的起始角度和结束角度数。我们指定了 0 度和 `2 * PI`。这等于 360 度，且你必须使用弧度。
-
-*   第一步是使用 `beginPath()` 方法；这表示我们想在纸上画一个形状
-*   第二，我们使用 `fillStyle()` 定义我们想要形状的颜色。这被设置为我们想要球的颜色属性
-*   然后使用 `arc()` 方法在纸上画一个弧。它有四个参数：
-    *   弧圆心的 `X` 和 `y` 位置 – 这些是球的 `x` 和 `y` 属性
-    *   弧的半径 – 这是球的 `size` 属性
-    *   最后两个用于指定弧绕圆绘制的起始角度和结束角度数。我们指定了 0 度和 `2 * PI`。这等于 360 度，且你必须使用弧度。
-
-*   第一步是使用 `beginPath()` 方法；这表示我们想在纸上画一个形状
-*   第二，我们使用 `fillStyle()` 定义我们想要形状的颜色。这被设置为我们想要球的颜色属性
-*   然后使用 `arc()` 方法在纸上画一个弧。它有四个参数：
-    *   弧圆心的 `X` 和 `y` 位置 – 这些是球的 `x` 和 `y` 属性
-    *   弧的半径 – 这是球的 `size` 属性
-    *   最后两个用于指定弧绕圆绘制的起始角度和结束角度数。我们指定了 0 度和 `2 * PI`。这等于 360 度，且你必须使用弧度。
-
-*   第一步是使用 `beginPath()` 方法；这表示我们想在纸上画一个形状
-*   第二，我们使用 `fillStyle()` 定义我们想要形状的颜色。这被设置为我们想要球的颜色属性
-*   然后使用 `arc()` 方法在纸上画一个弧。它有四个参数：
-    *   弧圆心的 `X` 和 `y` 位置 – 这些是球的 `x` 和 `y` 属性
-    *   弧的半径 – 这是球的 `size` 属性
-    *   最后两个用于指定弧绕圆绘制的起始角度和结束角度数。我们指定了 0 度和 `2 * PI`。这等于 360 度，且你必须使用弧度。
-
-*   第一步是使用 `beginPath()` 方法；这表示我们想在纸上画一个形状
-*   第二，我们使用 `fillStyle()` 定义我们想要形状的颜色。这被设置为我们想要球的颜色属性
-*   然后使用 `arc()` 方法在纸上画一个弧。它有四个参数：
-    *   弧圆心的 `X` 和 `y` 位置 – 这些是球的 `x` 和 `y` 属性
-    *   弧的半径 – 这是球的 `size` 属性
-    *   最后两个用于指定弧绕圆绘制的起始角度和结束角度数。我们指定了 0 度和 `2 * PI`。这等于 360 度，且你必须使用弧度。
-
-*   第一步是使用 `beginPath()` 方法；这表示我们想在纸上画一个形状
-*   第二，我们使用 `fillStyle()` 定义我们想要形状的颜色。这被设置为我们想要球的颜色属性
-*   然后使用 `arc()` 方法在纸上画一个弧。它有四个参数：
-    *   弧圆心的 `X` 和 `y` 位置 – 这些是球的 `x` 和 `y` 属性
-    *   弧的半径 – 这是球的 `size` 属性
-    *   最后两个用于指定弧绕圆绘制的起始角度和结束角度数。我们指定了 0 度和 `2 * PI`。这等于 360 度，且你必须使用弧度。
-
-*   第一步是使用 `beginPath()` 方法；这表示我们想在纸上画一个形状
-*   第二，我们使用 `fillStyle()` 定义我们想要形状的颜色。这被设置为我们想要球的颜色属性
-*   然后使用 `arc()` 方法在纸上画一个弧。它有四个参数：
-    *   弧圆心的 `X` 和 `y` 位置 – 这些是球的 `x` 和 `y` 属性
-    *   弧的半径 – 这是球的 `size` 属性
-    *   最后两个用于指定弧绕圆绘制的起始角度和结束角度数。我们指定了 0 度和 `2 * PI`。这等于 360 度，且你必须使用弧度。
-
-*   第一步是使用 `beginPath()` 方法；这表示我们想在纸上画一个形状
-*   第二，我们使用 `fillStyle()` 定义我们想要形状的颜色。这被设置为我们想要球的颜色属性
-*   然后使用 `arc()` 方法在纸上画一个弧。它有四个参数：
-    *   弧圆心的 `X` 和 `y` 位置 – 这些是球的 `x` 和 `y` 属性
-    *   弧的半径 – 这是球的 `size` 属性
-    *   最后两个用于指定弧绕圆绘制的起始角度和结束角度数。我们指定了 0 度和 `2 * PI`。这等于 360 度，且你必须使用弧度。
-
-*   第一步是使用 `beginPath()` 方法；这表示我们想在纸上画一个形状
-*   第二，我们使用 `fillStyle()` 定义我们想要形状的颜色。这被设置为我们想要球的颜色属性
-*   然后使用 `arc()` 方法在纸上画一个弧。它有四个参数：
-    *   弧圆心的 `X` 和 `y` 位置 – 这些是球的 `x` 和 `y` 属性
-    *   弧的半径 – 这是球的 `size` 属性
-    *   最后两个用于指定弧绕圆绘制的起始角度和结束角度数。我们指定了 0 度和 `2 * PI`。这等于 360 度，且你必须使用弧度。
-
-*   第一步是使用 `beginPath()` 方法；这表示我们想在纸上画一个形状
-*   第二，我们使用 `fillStyle()` 定义我们想要形状的颜色。这被设置为我们想要球的颜色属性
-*   然后使用 `arc()` 方法在纸上画一个弧。它有四个参数：
-    *   弧圆心的 `X` 和 `y` 位置 – 这些是球的 `x` 和 `y` 属性
-    *   弧的半径 – 这是球的 `size` 属性
-    *   最后两个用于指定弧绕圆绘制的起始角度和结束角度数。我们指定了 0 度和 `2 * PI`。这等于 360 度，且你必须使用弧度。
-
-*   第一步是使用 `beginPath()` 方法；这表示我们想在纸上画一个形状
-*   第二，我们使用 `fillStyle()` 定义我们想要形状的颜色。这被设置为我们想要球的颜色属性
-*   然后使用 `arc()` 方法在纸上画一个弧。它有四个参数：
-    *   弧圆心的 `X` 和 `y` 位置 – 这些是球的 `x` 和 `y` 属性
-    *   弧的半径 – 这是球的 `size` 属性
-    *   最后两个用于指定弧绕圆绘制的起始角度和结束角度数。我们指定了 0 度和 `2 * PI`。这等于 360 度，且你必须使用弧度。
-
-*   第一步是使用 `beginPath()` 方法；这表示我们想在纸上画一个形状
-*   第二，我们使用 `fillStyle()` 定义我们想要形状的颜色。这被设置为我们想要球的颜色属性
-*   然后使用 `arc()` 方法在纸上画一个弧。它有四个参数：
-    *   弧圆心的 `X` 和 `y` 位置 – 这些是球的 `x` 和 `y` 属性
-    *   弧的半径 – 这是球的 `size` 属性
     *   最后两个用于指定弧绕圆绘制的起始角度和结束角度数。我们指定了 0 度和 `2 * PI`。这等于 360 度，且你必须使用弧度。
 
 ### 让球体动起来
 
 现在我们要玩点有趣的。我们将在画布上添加一些球并为它们提供一些动画。
-
-
 
 1. 第一步是创建一个存储小球的地方，我们通过下面的数组来实现，因此将其添加到你代码的末尾：
 
@@ -2962,11 +2792,8 @@ function loop() {
 这个 `loop` 函数执行了以下操作：
 
 - 画布填充颜色设置为半透明黑色。然后绘制一个该颜色的矩形来覆盖整个画布的高度和宽度。这是使用 `fillRect()` 实现的，它有四个参数，提供矩形的起始坐标、高度和宽度。这样做是在绘制下一帧之前覆盖掉上一帧的绘制内容。如果漏掉了这一步，你将在屏幕上看不到任何小球，只有来回蠕曲的长虫子！填充颜色设置为 `rgba(0,0,0,0.25)`，它是半透明的，这让最后几帧稍微显露出来；这就是小球移动时留下的轨迹。如果你用 1 代替 0.25，你就再也看不它们了。试着改变这个数字看看会有什么效果。
-
 - 使用 `random()` 函数生成的随机值创建一个新的 `Ball()` 实例。使用 `push()` 函数将新实例添加到 `balls` 数组的末尾，但只有当数组中的小球少于 25 个时才会发生。所以，当你看到屏幕上有 25 个小球时，就不会再添加新的。同样，尝试修改 `balls.length<25` 中的数字看看发生什么——屏幕上的小球更多或更少。需要注意的是你的电脑和/或浏览器的处理能力；如果你指定了几千个小球，可能会发现动画显著缓慢！
-
 - 接下来，遍历数组中的所有小球，并对每个球运行 `draw()` 函数和 `update()` 函数，从而将球绘制在屏幕上。然后更新位置和速度，为下一帧的出现做好准备。
-
 - 使用 `requestAnimationFrame()` 方法再次运行函数。当你不断运行此方法并连续传递相同的函数名时，该函数每秒运行指定的次数，从而创建流畅的动画。这通常是通过递归实现的，这意味着函数每次运行时都会调用自己，从而导致它重复运行。
 
 3. 最后，在你的 JS 程序末尾输入这段代码以便调用该函数；这将启动动画：
@@ -3034,15 +2861,9 @@ balls[i].collisionDetect();
 第一步是修改已有的 `Ball()` 构造函数将其转换为 `Shape()` 构造函数，然后我们添加另一个 `Ball()` 构造函数：
 
 1. 确保你的 `Shape()` 构造函数定义 `x`、`y`、`velX` 和 `velY` 属性的方式与 `Ball()` 完全相同，但不要定义大小和颜色的属性。
-
 2. 确保它还定义了一个名为 `exists` 的新属性。这将跟踪演示中小球的存在，即那些尚未被我们的恶圆消耗掉的小球。这必须是一个返回真或假的布尔值。
-
-
-
 3. 确保你的 `Ball()` 构造函数可以继承 `x`、`y`、`velX` 和 `velY` 的属性，以及来自 `Shape()` 的 `exists` 属性。
-
 4. `Color` 和大小属性必须以与第一个 `Ball()` 构造函数相同的方式定义。
-
 5. 确保 `Ball()` 构造函数的原型（prototype）和构造函数本身已正确设置。
 
 ball 中用于 `draw()`、`collisionDetect()` 和 `update()` 的方法定义可以保持原样。
@@ -3115,7 +2936,7 @@ window.onkeydown = function(e) {
 * 不再需要检查被迭代的球是否是正在检查的那个，因为我们不再有球了——我们有一个恶性圆。因此，在外部的 `if` 语句中，你需要包含某种测试来查看被检查的球是否真的存在——思考你会使用哪个属性来实现此。如果它不存在，说明恶性圆已经消耗了它，所以你不需要再次运行检查。
 * 我们不再需要让对象在碰撞时改变颜色。
 
-###整合 (Bringing Together)
+### 整合 (Bringing Together)
 
 现在恶性圆已经定义，我们希望它出现在游戏。。为了这一点，`loop()` 函数需要进行一些更改：
 
@@ -3157,8 +2978,6 @@ p {
 我们将首先简要介绍 API，发现它是什么、如何工作的、如何在你的代码中使用的以及它的结构。我们将查看主要的 API 类及其用途。
 
 什么是 API？
-
-
 
 应用程序编程接口（API）是计算机编程语言中的一种结构，它允许程序/应用程序开发者更好地创建更具复杂性的功能。`API` 会抽象掉大量的复杂代码，并向你提供更易用的语法来替代它们。
 
@@ -3205,16 +3024,9 @@ p {
 
 *   `文档操作 APIs` – 这些将操作你加载到浏览器的任何文档。最明显的是 `DOM API`（文档对象模型），允许操作 `CSS` 和 `HTML`，例如创建 `HTML`、删除和更改它、为网页动态应用新的样式等。每当网页上弹出窗口或你看到新内容时，例如，都是 `DOM API` 在工作。
 *   `从服务器获取数据的 APIs` – 这些可以独立更新网页的一个小部分，是非常常见的 `APIs`。一个微小的细节就能对网站的行为和性能产生巨大影响；例如，如果你想更新股票列表或书籍列表，立即完成它要好得多，而无需从服务器重新加载整个页面或网站——这会让你的网站看起来更敏捷，对用户的响应更及时。这一类中的一些 `APIs` 包括 `Fetch` 和 `XMLHttpRequest`。
-
-
-
-
 *   用于操作图形和绘制图形的 API – 这些 API 现在在浏览器中获得了大量的支持，最常用的 API 是 `WebGL` 和 `Canvas`，它们都允许你更新 `<canvas>`（HTML）元素内部的像素数据，以创建 2D 和 3D 场景。例如，你可以绘制圆形、矩形或其他形状，将图像导入画布中，并使用 `Canvas` API 对它们应用过滤器（如灰度或色褐色调），而通过 `WebGL` API，你可以创建一个极其复杂的 3D 场景，包括纹理、光照等。这类类型的 API 往往会与其他帮助创建动画循环的 API 结合使用，例如 `window.requestAnimationFrame()`，以及那些帮助对游戏和动画片等场景进行持续更新的 API。
-
 *   视频和音频 API – 这些包括 `Web Audio API`、`HTMLMediaElement` 和 `WebRTC`，允许你对多媒体进行一些酷炫的操作。你可以创建自定义的用户界面控件来播放音频和视频，可以在视频中显示文本，显示轨道名称、字幕、说明等。你可以从网络摄像头获取视频，并使用另一个 API 通过 `canvas` 对其进行处理，并在另一台计算机的视频会议中显示。你可以为音频轨道添加某些效果，如失真、平移、增益等。
-
 *   设备 API – 这些是用于操作或从硬件中检索数据的 API，以便以有用的方式在 Web 应用程序中使用。一个例子是通过 `Notification APIs` 使用系统通知用户有可用更新，或者在移动设备上，使用 `Vibration API`。
-
 *   客户端存储 API – 这些在浏览器中变得越来越常见。能够在客户端存储数据对于那些你希望应用程序在每次页面加载之间保存自己的状态、甚至在设备离线时也能运行的情况来说非常有用。有几个选项可以选择，例如使用 `Web Storage API` 保存键值对数据，以及使用 `IndexedDB API` 存储稍微复杂的数据（例如表格化数据）。
 
 ### 第三方 API
@@ -3229,7 +3041,7 @@ p {
 
 JavaScript 中所有不同的 API 工作方式都不同，但总来说，它们在工作原理上具有共同的主题和特征。
 
-基于 基于对象
+#### 基于 对象
 
 你使用 API 编写的任何代码都将至少使用一个 JavaScript 对象与这些 API 交互。这些对象可以被视为容器，用于存放 API 使用的数据（对象属性）以及存放 API 提供的功能（对象方法）。
 
@@ -3316,10 +3128,7 @@ volumeSlider.addEventListener('input', function() {
 audioSource.connect(gainNode).connect(audioCtx.destination);
 ```
 
-*   可识别的入口点
-
-
-
+#### 可识别的入口点
 
 当你使用 API 时，必须始终确保你确切知道它的入口点在哪里。以 `Web Audio API` 为例；这个入口点非常简单——`AudioContext` 对象——每当你进行任何种的音频处理时都必须使用它。
 
@@ -3389,7 +3198,7 @@ request.onload = function() {
 
 `HTMLMediaElement` 和 `Web Audio APIs` 都受到`自动播放策略`（autoplay policy）安全机制的限制。这意味着音频在网页加载时不能自动播放；你的用户必须使用某种控件（如按钮）来启动它。这是因为音频自动播放可能会非常干扰人，用户不应该受到这种影响。
 
-注意
+## 注意
 
 这些安全机制中的甚至可以阻止示例在本地运行，尽管这将取决于你浏览器的严格程度。例如，如果在浏览器中加载的是本地示例文件而不是从 Web 服务器运行。
 
@@ -3434,8 +3243,6 @@ request.onload = function() {
 *   兼容所有主流浏览器——`jQuery` 在创建和更新时考虑了所有主流浏览器。它可以无缝地用于 Chrome、Safari、Edge、Internet Explorer 和 Mozilla 等。
 *   它是免费的——下载和使用 `jQuery` 永远不会任何费用变化
 
-
-
 当您使用 JavaScript 选择 HTML 文档中的元素时，通常需要几行代码；而使用 jQuery，只需利用选择器机制即可遍历 DOM 树，并快速方便地获取用于操作的元素。
 
 ## 本节涵盖内容
@@ -3473,7 +3280,7 @@ request.onload = function() {
 </html>
 ```
 
-**提示**
+## 提示
 
 您可能注意到我们在 `<script>` 标签中跳过了 `type="text/javascript"` 属性，这是因为 HTML5 不再需要它。HTML5 和大多数浏览器的默认语言是 JavaScript，但您仍然可以使用该属性使您的代码更易于阅读和理解。
 
@@ -3592,14 +3399,14 @@ $(document).ready(function(){
 
 在这个示例中，只有当在“Replace Text”按钮上发生点击事件时，段落文本才会被替换，即用户点击按钮时。
 
-
-
 以上是对 jQuery 基础知识的介绍；现在我们将进行更深入的探讨。
 
 ## 注意
+
 请确保你的 jQuery 代码位于文档就绪事件（document ready event）中，否则当文档准备好进行操作时，代码将不会执行。
 
 ## jQuery 选择器
+
 在本节中，我们将介绍如何使用 jQuery 选择 HTML 元素。
 
 JavaScript 最常用的用途是获取或修改页面上 HTML 元素的内容或值，然后应用显示/隐藏、动画等效果。在执行这些操作之前，你需要找到并选择目标 HTML 元素。
@@ -3607,11 +3414,13 @@ JavaScript 最常用的用途是获取或修改页面上 HTML 元素的内容或
 你可以使用传统的 JavaScript 方法来实现，但我可以向你保证这将会非常痛苦！这正是 jQuery 减轻痛苦并让事情变得奇妙简单的地方。jQuery 最强大的功能之一就是能够能够快速方便地选择 DOM 元素。
 
 ### 提示
+
 jQuery 支持 CSS3 规范中定义的几乎所有选择器，并且包含了了自己的选择器。自定义选择器提供了增强 HTML 元素选择的能力。
 
 在接下来的几个章节中，我们将详细介绍选择元素的常用方法。
 
 ### 使用 ID 选择
+
 ID 选择器可以使用唯一 ID 进行单元素选择。例如，接下来的示例将选择一个元素并高亮它，前提是它具有 `id="mark"` 属性，且文档已准备好操作：
 
 ```html
@@ -3626,6 +3435,7 @@ $(document).ready(function(){
 在这个示例中，`$(document).ready()` 事件用于使用 jQuery 安全地操作页面。此事件中的任何代码只有在页面 DOM 正确就绪时才会运行——有关事件的更多将在将在介绍。
 
 ### 通过类名选择
+
 如果我们想选择具有指定类的元素，将使用类选择器。例如，接下来的代码将在文档准备好后，选择并高亮具有 `class="mark"` 属性的元素：
 
 ```html
@@ -3638,6 +3448,7 @@ $(document).ready(function(){
 ```
 
 ### 通过名称选择
+
 如果你想根据名称选择元素，将使用元素选择器。接下来的代码将在文档准备好后，选择并高亮任何段落或 `<p>` 元素：
 
 ```html
@@ -3650,6 +3461,7 @@ $(document).ready(function(){
 ```
 
 ### 通过属性选择
+
 属性选择器用于根据 HTML 属性选择元素，例如链接的 `target` 属性或输入框的 `type` 属性。在接下来的代码中，当文档准备好后，我们选择并高亮所有具有 `type="text"` 属性的文本输入或 `<input>` 元素：
 
 ```html
@@ -3662,6 +3474,7 @@ $(document).ready(function(){
 ```
 
 ### 组合 CSS 选择
+
 CSS 选择器也可以组合使得操作更加精确。例如，类选择器可以与元素选择器之一组合，以找到具有指定类型和类的文档元素。
 
 ```html
@@ -3684,6 +3497,7 @@ $(document).ready(function(){
 ```
 
 ### 自定义选择器
+
 除了 CSS 定义的选择器外，jQuery 中还有自定义选择器可以让元素选择变得更好。例如：
 
 ```html
@@ -3700,9 +3514,11 @@ $(document).ready(function(){
 ```
 
 ## jQuery 事件
+
 在本节中，我们将查看 jQuery 事件。事件通常在用户与网页交互时触发；例如，他们可能点击链接或点击鼠标按钮、在框中输入文本、在框中进行选择、按下键盘上的键，或移动鼠标指针。有时，浏览器也会触发事件。
 
 通常，我们可以将事件分为四组：
+
 1. 鼠标事件
 2. 键盘事件
 3. 表单事件
@@ -3711,9 +3527,11 @@ $(document).ready(function(){
 在下部分，我们将详细介绍每组事件，并提供相关的方法。
 
 ### 鼠标事件
+
 当用户点击页面元素或移动鼠标指针时，会触发鼠标事件。常用于处理这些事件的 jQuery 方法包括：
 
 #### 点击 (Click)
+
 该方法为选择元素绑定任何点击事件的处理函数。函数仅在用户点击指定的元素时执行。例如，在这段代码中，点击时 `<p>` 元素会隐藏：
 
 ```html
@@ -3725,9 +3543,11 @@ $(document).ready(function(){
 });
 </script>
 ```
+
 注意：`this` 关键字已在 jQuery 函数（事件处理器）中使用，用于引用事件对应的元素。
 
 #### 双击 (dblclick)
+
 该方法为给元素绑定任何双击事件的处理函数。只有当用户双击指定的元素时，函数才会执行。在接下来的示例中，双击 `<p>` 元素时它们会隐藏：
 
 ```html
@@ -3741,6 +3561,7 @@ $(document).ready(function(){
 ```
 
 #### 悬停 (hover)
+
 该方法为给元素绑定至少一个、通常是两个事件处理函数。函数仅在鼠标指针进入和离开指定的元素时执行。当用户的鼠标指针悬停在元素上时执行第一个函数，当鼠标指针离开元素时执行第二个函数。
 
 在接下来的示例中，当鼠标指针停放在 `<p>` 元素上时，元素会被高亮，当光标移开时，高亮消失：
@@ -3757,12 +3578,10 @@ $(document).ready(function(){
 </script>
 ```
 
-
-
-
 `hover()` 方法可以被认为是另外两个 jQuery 方法的组合——`mouseenter()` 和 `mouseleave()`。
 
-### mouseenter()
+#### mouseenter()
+
 该方法将事件处理器绑定到指定的元素。此函数仅在鼠标进入元素时执行，例如当鼠标光标悬停在元素上方。此示例展示了当光标悬停在 `<p>` 元素上时该元素会被高亮：
 
 ```javascript
@@ -3775,7 +3594,8 @@ $(document).ready(function(){
 </script>
 ```
 
-### mouseleave()
+#### mouseleave()
+
 该方法将事件处理器绑定到指定的元素；当鼠标光标离开元素时，将执行该元素。在此示例中，当鼠标光标离开元素时，`<p>` 元素将不再高亮显示：
 
 ```javascript
@@ -3789,9 +3609,11 @@ $(document).ready(function(){
 ```
 
 ### 键盘事件
+
 当用户按下键盘上的按键或释放按键时，会触发键盘事件。常用于处理键盘事件的 jQuery 方法包括：
 
 #### keypress()
+
 `keypress()` 方法将事件处理程序函数绑定到指定的元素（这些元素通常是表单控件）。这些函数仅在浏览器接收到用户的键盘输入时执行。在接下来的示例中，当触发 `keypress` 事件时，会显示一条消息，告诉你在键盘上按下特定按键时事件触发了多少次：
 
 ```javascript
@@ -3806,10 +3628,12 @@ $(document).ready(function(){
 </script>
 ```
 
-**注意**
+## 注意
+
 `keypress()` 事件与 `keydown()` 事件非常相似，但有一个例外——修饰键和非打印键（如 Esc、SHIFT、Del、Back 格键、方向箭头键等）——不会触发 `keypress()` 事件，只会触发 `keydown()` 事件。
 
 #### keydown()
+
 `keydown()` 方法将事件处理程序函数绑定到指定的元素（这些元素通常是表单控件）。这些函数在键盘上第一次按下按键后执行。在接下来的示例中，当在键盘上按下按键触发事件时，会显示一条消息，告诉它触发了多少次。
 
 ```javascript
@@ -3825,6 +3649,7 @@ $("p").show().fadeOut();
 ```
 
 #### keyup()
+
 该方法将事件处理程序函数绑定到指定的元素（通常是表单控件）。它仅在用户释放在键盘上按住的按键时执行。在接下来的示例中，当释放键盘上的按键时，会触发事件并显示一条消息以确认这一点以及触发了多少次。
 
 ```javascript
@@ -3839,13 +3664,16 @@ $("p").show().fadeOut();
 </script>
 ```
 
-**提示**
+## 提示
+
 你可以将键盘事件绑定到任何元素，但它们只会被设置到拥有焦点的元素上。这就是为什么键盘事件通常绑定到表单控件，如 textarea 或文本输入框。
 
 ### 表单事件
+
 当表单控件获得或失去焦点，或者当用户修改表单控件的值时，会触发表单事件，例如在文本输入框中输入某些文本、选择选择框中的一个选项等。一些常用的表单事件 jQuery 方法有：
 
 #### change()
+
 `change()` 方法将事件处理程序函数绑定到三个元素之一——`<textarea>`、`<input>` 和 `<select>`。这些函数仅在元素的值改变时执行。如在接下来的示例所示，当选择下拉选择菜单中的任何选项时，会显示一个警告消息：
 
 ```javascript
@@ -3859,10 +3687,12 @@ $(document).ready(function(){
 </script>
 ```
 
-**注意**
+## 注意
+
 对于复选框、选择框和单选按钮，事件在用户使用鼠标做出选择的瞬间就会触发。对于 textarea 和文本输入，事件仅在元素失去焦点后才会触发。
 
 #### focus()
+
 `focus()` 方法将事件处理程序函数绑定到指定的元素，这些元素通常是链接或表单控件。函数在获得焦点时执行。在接下来的示例中，一旦文本输入框获得焦点，就会显示一条消息：
 
 ```javascript
@@ -3876,6 +3706,7 @@ $(document).ready(function(){
 ```
 
 #### blur()
+
 `blur()` 方法用于将事件处理程序函数绑定到指定的元素，如 `<select>`、`<textarea>` 和 `<input>`。执行发生在失去焦点时。在接下来的示例中，失去焦点时会显示一条消息：
 
 ```javascript
@@ -3889,26 +3720,36 @@ script>
 ```
 
 #### submit()
+
+
+
 `submit()` 方法用于将事件处理程序函数绑定到表单元素。这些函数在用户尝试提交表单时执行。在接下来的示例中，根据输入的值显示一条消息：
 
 ```javascript
 <script  type="text/javascript">
 $(document).ready(function(){
- $("form").submit(function(event){
- var regex = /a-zA-Z]+$/;
- currentValue = $("#firstName").val();
- if(regex.test(currentValue) == false){
- $("#result").html('<p class="error">Not valid!</p>').show(1000);
- // 防止提交
-    ```
+    $("form").submit(function(event){
+        var regex = /a-zA-Z]+$/;
+        currentValue = $("#firstName").val();
+        if(regex.test(currentValue) == false){
+            $("#result").html('<p class="error">Not valid!</p>').show(1000);
+            // 防止提交
+        }
+    });
+});
+</script>
+```
 
 **提示**
+
 表单可以通过两种方式提交——点击提交按钮，或者在某些元素获得焦点时按下 Enter 键。
 
 ### 文档和窗口事件
+
 事件也可以在页面文档模型（即 DOM）就绪，或当用户滚动或调整浏览器大小时触发。一些与这些事件常用的方法有：
 
 #### ready()
+
 `ready()` 方法用于指定 DOM 加载完成后执行的函数。在此示例中，当 DOM 构建完成并就绪时，段落的文本将被替换：
 
 ```javascript
@@ -3920,6 +3761,7 @@ $(document).ready(function(){
 ```
 
 #### resize()
+
 `resize()` 方法用于将事件处理程序函数绑定到窗口元素。这些函数仅在浏览器窗口大小发生变化时执行。在接下来的示例中，当尝试拖动角落调整大小时，会显示浏览器窗口的宽度和高度：
 
 ```javascript
@@ -3935,6 +3777,7 @@ $(document).ready(function(){
 ```
 
 #### scroll()
+
 `scroll()` 方法用于将事件处理程序函数绑定到窗口，或可以滚动的元素或 iframe。当元素的滚动位置改变时，将执行此函数。在接下来的示例中，当滚动浏览器窗口时，会显示一条消息：
 
 ```javascript
@@ -3946,9 +3789,6 @@ $(document).ready(function(){
 });
 </script>
 ```
-
-
-
 
 现在我们简单地查看如何使用 jQuery 来显示和隐藏 HTML 元素。我们使用两种方法来实现这一点——`show()` 和 `hide()`。使用 `hide()` 方法时，你只需要为指定的元素设置内联样式 `display: none`。相比之下，`show()` 将这些匹配元素集的显示属性恢复到它们应用 `display: none` 之前的初始状态，通常是内联 `inline`、`block` 或 `inline-block`。看这个示例：
 
@@ -3993,6 +3833,7 @@ $(document).ready(function(){
 ```
 
 #### Note
+
 使用字符串“fast”作为速度或持续时间表示时长为 200 毫秒，而“slow”表示时长为 600 毫秒。还可以指定回调函数，在 `show()` 或 `hide()` 完成后执行——稍后会介绍更多信息。
 
 ```javascript
@@ -4017,6 +3858,7 @@ $(document).ready(function(){
 ```
 
 ### toggle()
+
 我们使用 `toggle()` 方法来显示或隐藏元素，如果元素初始是显示的，则它会被隐藏；如果它是隐藏的，则它会被显示。换句话说，它会在可见性之间切换。
 
 ```javascript
@@ -4064,9 +3906,11 @@ $(document).ready(function(){
 ```
 
 ## jQuery 淡入淡出效果
+
 是时候学习如何让元素淡入和淡出了。
 
 ### fadeIn() 和 fadeOut 方法
+
 这两个方法可以用于通过增加透明度来显示元素或通过降低透明度来隐藏元素。这里有一个示例：
 
 ```javascript
@@ -4110,6 +3954,7 @@ $(document).ready(function(){
 ```
 
 #### Note
+
 你可能会发现 `fadeIn()` 和 `fadeOut()` 方法与 `show()` 和 `hide()` 方法相似；区别在于 `fadeIn()` 和 `fadeOut()` 方法只动画元素的透明度，而不像 `show()` 和 `hide()` 方法那样改变尺寸。还可以指定回调函数在方法完成后执行——稍后会详细介绍。现在来看这个示例：
 
 ```javascript
@@ -4134,6 +3979,7 @@ $(document).ready(function(){
 ```
 
 ### jQuery fadeToggle() 方法
+
 `fadeToggle()` 方法通过透明度动画来显示或隐藏元素，使得显示的元素会淡出，而隐藏的元素会淡入：
 
 ```javascript
@@ -4179,9 +4025,6 @@ $(".toggle-btn").click(function(){
 });
 </script>
 ```
-
-
-
 
 `fadeTo()` 方法与 `fadeIn()` 方法非常相似，但有一个不同——后者允许你将元素渐变到指定的透明度。
 
@@ -4245,10 +4088,10 @@ $(document).ready(function(){
     // 以不同的速度向下滑动隐藏的段落
     $(".down-btn").click(function(){
         $("p.normal").slideDown();
-        $("p.fast").slideDown("fast");
-        $("p.slow").slideDown("slow");
-        $("p.very-fast").slideDown(50);
-        $("p.very-slow").slideDown(2000);
+        ("p.fast").slideDown("fast");
+        ("p.slow").slideDown("slow");
+        ("p.very-fast").slideDown(50);
+        ("p.very-slow").slideDown(2000);
     });
 });
 </script>
@@ -4268,7 +4111,7 @@ $(document).ready(function(){
     });
     // 在向下滑动段落后显示警报消息
     $(".down-btn").click(function(){
-        $("p").slideDown("slow",  function(){
+        ("p").slideDown("slow",  function(){
             // 要执行的代码
             alert("The slide-down effect is completed.");
         });
@@ -4301,11 +4144,11 @@ $(document).ready(function(){
 $(document).ready(function(){
     // 以不同的速度滑动切换段落
     $(".toggle-btn").click(function(){
-        $("p.normal").slideToggle();
-        $("p.fast").slideToggle("fast");
-        $("p.slow").slideToggle("slow");
-        $("p.very-fast").slideToggle(50);
-        $("p.very-slow").slideToggle(2000);
+        ("p.normal").slideToggle();
+        ("p.fast").slideToggle("fast");
+        ("p.slow").slideToggle("slow");
+        ("p.very-fast").slideToggle(50);
+        ("p.very-slow").slideToggle(2000);
     });
 });
 </script>
@@ -4317,8 +4160,8 @@ $(document).ready(function(){
 <script type="text/javascript">
 $(document).ready(function(){
     // 在切换后显示警报消息
-    $(".toggle-btn").click(function(){
-        $("p").slideToggle(100,  function(){
+    ("toggle-btn").click(function(){
+        ("p").slideToggle(100,  function(){
             // 要执行的代码
             alert("The slide-toggle effect is completed.");
         });
@@ -4340,11 +4183,15 @@ $(document).ready(function(){
 语法
 
 基础 `animate()` 方法的语法为：
+
 `$(selector).animate({ properties }, duration, callback);`
 
 方法的每个参数含义如下：
+
 - 必填属性的参数将定义要动画化的 CSS 属性。
+
 - `duration` 参数是可选的；如果使用，它将指定动画运行的时间。你可以使用两种方式指定持续时间——毫秒（数值越高，动画越慢），或使用预定义的字符串“slow”或“fast”。
+
 - `callback` 参数也是可选的，它是一个在动画方法完成后被调用的函数。
 
 下面是一个使用 `animate()` 方法对图像进行动画的简单示例，只需点击按钮即可从其位置向右移动 300 像素：
@@ -4394,20 +4241,16 @@ $(document).ready(function(){
 ```javascript
 <script type="text/javascript">
 $(document).ready(function(){
-
-
-
-
-```javascript
-$("button").click(function(){
-    $(".box")
-        .animate({width: "300px"})
-        .animate({height: "300px"})
-        .animate({marginLeft: "150px"})
-        .animate({borderWidth: "10px"})
-        .animate({opacity: 0.5});
+    $("button").click(function(){
+        $(".box")
+            .animate({width: "300px"})
+            .animate({height: "300px"})
+            .animate({marginLeft: "150px"})
+            .animate({borderWidth: "10px"})
+            .animate({opacity: 0.5});
+    });
 });
-//});
+</script>
 ```
 
 ### 使用相对值
@@ -4417,6 +4260,7 @@ $("button").click(function(){
 例如
 
 ```javascript
+<script type="text/javascript">
 $(document).ready(function(){
     $("button").click(function(){
         $(".box").animate({              
@@ -4427,6 +4271,7 @@ $(document).ready(function(){
         });
     });
 });
+</script>
 ```
 
 ### 使用预定义值
@@ -4436,6 +4281,7 @@ $(document).ready(function(){
 例如
 
 ```javascript
+<script type="text/javascript">
 $(document).ready(function(){
     $("button").click(function(){
         $(".box").animate({
@@ -4443,6 +4289,7 @@ $(document).ready(function(){
         });
     });
 });
+</script>
 ```
 
 ## jQuery 停止动画
@@ -4465,24 +4312,26 @@ $(document).ready(function(){
 下面是一个显示 `stop()` 方法使用的示例——通过点击按钮启动并停止动画：
 
 ```javascript
+<script type="text/javascript">
 $(document).ready(function(){
     // 开始动画
     $(".start-btn").click(function(){
-      $("img").animate({left: "+=150px"}, 2000);
+        $("img").animate({left: "+=150px"}, 2000);
     });
     // 停止运行中的动画
     $(".stop-btn").click(function(){
-      $("img").stop();
+        $("img").stop();
     });
     // 反向启动动画
     $(".back-btn").click(function(){
-      $("img").animate({left: "-=150px"}, 2000);
+        $("img").animate({left: "-=150px"}, 2000);
     });
     // 重置为默认
     $(".reset-btn").click(function(){
-      $("img").animate({left: "0"}, "fast");
+        $("img").animate({left: "0"}, "fast");
     });
 });
+</script>
 ```
 
 注意
@@ -4492,28 +4341,32 @@ $(document).ready(function(){
 这是 `stop()` 方法的另一个示例；在这一例中，如果在动画开始但在完成之前点击了“Slide Toggle”（滑动切换）按钮，动画将从保存的起始点向反方向运行：
 
 ```javascript
+<script type="text/javascript">
 $(document).ready(function(){
     // 杀死并切换当前的滑动动画
     $(".toggle-btn").on("click", function(){
-      $(".box").stop().slideToggle(100);
+        $(".box").stop().slideToggle(100);
     });
 });
+</script>
 ```
 
 ### 创建平滑悬停效果
 
-当你创建一个动画悬停效果时，你可能会遇到一个问题——当鼠标指针移入和移出时会产生多个动画。发生这种情况的原因是 `mouseleave` 和 `mouseenter` 在动画完成之前触发得非常快。为了防止这种情况发生并创建一个平滑的悬停，请在链中添加另一个方法——`stop(true, true)` 方法。
+当你创建一个动画悬停效果时，你可能会遇到一个问题——当鼠标指针移入和移出时会产生多个动画。发生这种情况的原因是 `mouseleave` 和 `mouseenter` 在动画完成之前触得非常快。为了防止这种情况发生并创建一个平滑的悬停，请在链中添加另一个方法——`stop(true, true)` 方法。
 
 例如
 
 ```javascript
+<script type="text/javascript">
 $(document).ready(function(){
     $(".box").hover(function(){
-      $(this).find("img").stop(true, true).fadeOut();
+        $(this).find("img").stop(true, true).fadeOut();
     }, function(){
-      $(this).find("img").stop(true, true).fadeIn();
+        $(this).find("img").stop(true, true).fadeIn();
     });
 });
+</script>
 ```
 
 注意
@@ -4527,11 +4380,13 @@ jQuery 的另一个强大功能是方法链式。这种方法允许我们使用�
 例如：
 
 ```javascript
+<script type="text/javascript">
 $(document).ready(function(){
     $("button").click(function(){
-      $("p").animate({width: "100%"}).animate({fontSize: "46px"}).animate({borderWidth: 30});
+        $("p").animate({width: "100%"}).animate({fontSize: "46px"}).animate({borderWidth: 30});
     });
 });
+</script>
 ```
 
 我们在这里展示的是三个 `animate()` 方法链式连接在一起。当用户点击触发按钮时，`<p>` 标签将扩展到 100% 宽。一旦完成，字体大小将开始动画，一旦动画结束，边框动画将开始。
@@ -4543,14 +4398,16 @@ $(document).ready(function(){
 单行代码也可以拆分为多行以变得更简单。请看下一个示例，它展示了上一个方法的另一种写法：
 
 ```javascript
+<script type="text/javascript">
 $(document).ready(function(){
     $("button").click(function(){
-      $("p")
-        .animate({width: "100%"})
-        .animate({fontSize: "46px"})
-        .animate({borderWidth: 30});
+        $("p")
+            .animate({width: "100%"})
+            .animate({fontSize: "46px"})
+            .animate({borderWidth: 30});
     });
 });
+</script>
 ```
 
 某些 jQuery 方法不会返回 jQuery 对象。通常情况下，在选择时赋值值的 setter（设置）会返回 jQuery 对象，你可以在其上继续调用方法。相反，getter（获取器）将返回请求的值，因此无法在该值上调用方法。
@@ -4560,14 +4417,16 @@ $(document).ready(function(){
 例如
 
 ```javascript
+<script type="text/javascript">
 $(document).ready(function(){
     $("button").click(function(){
-      // 这可以工作
-      $("h1").html("Hello World!").addClass("test");
-      // 这将无法工作
-      $("p").html().addClass("test");
+        // 这可以工作
+        $("h1").html("Hello World!").addClass("test");
+        // 这将无法工作
+        $("p").html().addClass("test");
     });
 });
+</script>
 ```
 
 ## jQuery 回调
@@ -4585,16 +4444,15 @@ JavaScript 中的语句都是按行执行的。然而，jQuery 效果可能需�
 看看这个示例。我们将两个语句放在一起——`slideToggle()` 和 `alert()`。运行这段代码的结果是，点击触发按钮时立即显示 alert；它不会等待滑动切换效果完成：
 
 ```javascript
+<script type="text/javascript">
 $(document).ready(function(){
     $("button").click(function(){
-      $("p").slideToggle("slow");
-      alert("滑动切换效果已完成。");
+        $("p").slideToggle("slow");
+        alert("滑动切换效果已完成。");
     });
 });
+</script>
 ```
-
-
-
 
 现在我们有了这个示例的修改版本；`alert()` 语句现在位于 `slideToggle()` 的回调函数内部。现在，`slideToggle()` 将在显示 alert 消息之前完成：
 
@@ -4620,10 +4478,11 @@ $(document).ready(function(){
 <script type="text/javascript">
 $(document).ready(function(){
     $("button").click(function(){
-    $("h1, p").slideToggle("slow", function(){
-        // 效果完成后将执行的代码
-        alert("The slide toggle effect has completed.");
-    }); });
+        $("h1, p").slideToggle("slow", function(){
+            // 效果完成后将执行的代码
+            alert("The slide toggle effect has completed.");
+        });
+    });
 });
 </script>
 ```
@@ -4752,10 +4611,11 @@ $(document).ready(function(){
 $(document).ready(function(){
     // 为图片添加类和标题
     $("button").click(function(){
-    $("img").attr({
-        "class": "frame",
-        "title": "Hot Air Balloons"
-    }); });
+        $("img").attr({
+            "class": "frame",
+            "title": "Hot Air Balloons"
+        });
+    });
 });
 </script>
 ```
@@ -4819,9 +4679,6 @@ jQuery 提供了许多方法帮助我们向已存在的元素中添加新内容�
 
 ### jQuery append() 方法
 
-
-
-
 我们使用 `append()` 方法在指定元素的末尾插入新内容。此示例向你展示了如何在文档就绪时向所有段落添加 HTML，并在点击按钮时向容器元素添加一些文本：
 
 ```javascript
@@ -4829,7 +4686,6 @@ jQuery 提供了许多方法帮助我们向已存在的元素中添加新内容�
 $(document).ready(function(){
     // 为所有段落添加内容
     $("p").append(' <a href="#">read more...</a>');
-
     // 为 ID 为 container 的元素添加内容
     $("button").click(function(){
         $("#container").append("This is demo text.");
@@ -4842,14 +4698,13 @@ $(document).ready(function(){
 使用 `append()` 或 `prepend()` 方法插入内容或元素时，它们会被添加到指定元素的内部内部。
 
 ### jQuery `prepend()` 方法
-我们使用 `prepend()` 方法在指定元素的开头插入内容。在接下来的示例中，我们在文档就绪时向每个段落开头添加 HTML，并在点击按钮时向容器元素添加文本。
+我们使用 `prepend()` 方法在指元素的开头插入内容。在接下来的示例中，我们在文档就绪时向每个段落开头添加 HTML，并在点击按钮时向容器元素添加文本。
 
 ```javascript
 <script type="text/javascript">
 $(document).ready(function(){
     // 为所有段落前添加内容
     $("p").prepend("<strong>Note:</strong> ");
-
     // 为 ID 为 container 的元素前添加内容
     $("button").click(function(){
         $("#container").prepend("This is demo text.");
@@ -4879,9 +4734,8 @@ $(document).ready(function(){
 ```javascript
 <script type="text/javascript">
 $(document).ready(function(){
-    // 在 ID 为 container 的元素之前添加内容
+    // 在 ID 为 container 的元器之前添加内容
     $("#container").before("<p>&mdash; The Beginning &mdash;</p>");
-
     // 在标题之前添加内容
     $("button").click(function(){
         $("h1").before('<img src="images/marker-left.gif" alt="Symbol">');
@@ -4901,7 +4755,6 @@ $(document).ready(function(){
 $(document).ready(function(){
     // 在 ID 为 container 的元素之后添加内容
     $("#container").after("<p>&mdash; The End &mdash;</p>");
-
     // 在标题之后添加内容
     $("button").click(function(){
         $("h1").after('<img src="images/marker-right.gif" alt="Symbol">');
@@ -4931,12 +4784,12 @@ $(document).ready(function(){
 ```javascript
 <script type="text/javascript">
 $(document).ready(function(){
-// 包裹元素
-$(".container").wrap("<div>");
-// 包裹内部内容
-$("p").wrap("b");
-// 再次包裹 em 中
-$("b").wrap("em");
+    // 包裹元素
+    $(".container").wrap("<div>");
+    // 包裹内部内容
+    $("p").wrap("b");
+    // 再次包裹 em 中
+    $("b").wrap("em");
 });
 </script>
 ```
@@ -5010,9 +4863,6 @@ $(document).ready(function(){
 是时候介绍如何使用 jQuery 添加和移除 CSS 类了。jQuery 中有几个方法可以用来操作分配给 HTML 元素的 CSS 类，如 `addClass()`、`toggleClass()`、`removeClass()` 等。
 
 ### jQuery `addClass()` 方法
-
-
-
 
 ## 介绍
 `addClass()` 方法允许我们为指定的元素添加至少一个类，在接下来的示例中，我们演示了这一操作。点击按钮后，名为 `.page-header` 的类会被添加到 `<h1>` 元素中，名为 `.highlight` 的类会被添加到带有 `.hint`类的 `<p>` 元素中。
@@ -5271,11 +5121,6 @@ $(document).ready(function(){
 </html>
 ```
 
-
-
-
-[content]
-
 ### 设置多个 CSS 属性和值
 
 可以使用 `css()` 方法同时设置多个 CSS 属性。为元素设置多个属性时使用的语法如下
@@ -5366,6 +5211,8 @@ $(document).ready(function(){
 });
 ```
 
+
+
 同样，也可以通过将值作为参数传递给 `innerWidth()` 和 `innerHeight()` 方法来设置内部宽度和高度。这些方法的作用都是更改元素内容区域的宽度或高度，使其匹配该值。例如，一个元素的宽度为 300 像素，左右内边距之和等于 50 像素。一旦 `innerWidth` 被设置为 400 像素，新宽度将变为 350 像素，即：新宽度等于 内部宽度。当设置内部高度时，对高度也可以执行相同的操作。
 
 ```javascript
@@ -5421,9 +5268,6 @@ $(document).ready(function(){
 - 被包含的 `div` 元素是 `p`、`h1` 和 `ul` 元素的父元素，它也是 `body` 元素的子元素。
 - `p`、`h1` 和 `ul` 元素都是兄弟元素，因为它们有相同的父元素。
 
-
-
-
 `<h1>` 元素是 `<div>` 元素的子，也是 `<body>` 元素的后代。它没有子元素。
 
 `<p>` 元素是 `<em>` 元素的父级、`<div>` 元素的子以及 `<body>` 元素的后代。包含它的 `<em>` 元素是 `<p>` 元素的子，也是 `<div>` 和 `<body>` 元素的后代。
@@ -5442,7 +5286,7 @@ $(document).ready(function(){
 
 我们将从向上遍历 DOM 树开始。在逻辑关系中，祖先是父母、祖父母、曾祖父母等。通过 jQuery，我们使用一些方法来向上遍历 DOM 树，一次一级或多级，这样我们就可以轻松地获取层级结构中的祖先元素。其中一些方法是 `parent()`、`parents()` 和 `parentsUntil()`。
 
-### jQuery parent() 方法
+### jQuery `parent()` 方法
 
 我们使用 `parent()` 方法来获取指定元素的直接父元素。在下一个示例中，`<li>` 的直接父元素被高亮了；父元素是 `<ul>`，我们通过在文档就绪时添加名为 `.highlight` 的类来实现。
 
@@ -5477,7 +5321,7 @@ $(document).ready(function(){
 </html>
 ```
 
-### jQuery parents() 方法
+### jQuery `parents()` 方法
 
 该方法用于获取指定元素的祖先元素。在我们的示例中，在 `<li>` 的祖先元素周围添加了边框。这些祖先元素是 `<ul>`、`<body>`、`<div>` 和 `<html>`。
 
@@ -5551,7 +5395,7 @@ $(document).ready(function(){
 </html>
 ```
 
-### jQuery parentsUntil() 方法
+### jQuery `parentsUntil()` 方法
 
 `parentsUntil()` 方法用于获取直到匹配元素（但不包含该元素）的祖先。简单来说，返回的是 DOM 中指定的两个元素之间的每一个祖先元素。在我们的示例中，在 `<li>` 的祖先元素周围添加了边框，但不包含 `<html>`。换句话说，边框添加在 `<body>`、`<div>` 和 `<ul>` 元素周围。
 
@@ -5589,24 +5433,20 @@ $(document).ready(function(){
 </html>
 ```
 
-## 遍历后代
+## jQuery 遍历后代
 
 现在你对 DOM 树元素之间的关系有了更好的理解，可以开始学习遍历操作是如何工作的，例如使用 jQuery 在 DOM 树中左右移动、向上或向下移动。
 
-## 遍历祖先
+### jQuery `children()` 方法
 
-在逻辑关系中，祖先是父母、祖父母、曾祖父母等。通过 jQuery，我们有一些方法可以向上遍历 DOM 树，一次一级或多级，这样我们就可以轻松地获取层级结构中的祖先元素。其中一些方法是 `parent()`、`parents()` 和 `parentsUntil()`。
-
-### jQuery() 方法
-
-我们使用 `parent()` 方法来获取指定元素的直接父元素。在下一个示例中，`<li>` 的直接父元素被高亮了；父元素是 `<ul>`，我们通过在文档就绪时添加名为 `.highlight` 的类来实现。
+我们使用 `children()` 方法来获取指定元素的直接子元素。在下一个示例中，`<ul>` 的直接子元素被高亮了；子元素是 `<li>`，我们通过在文档就绪时添加名为 `.highlight` 的类来实现。
 
 ```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>jQuery parent() Demo</title>
+<title>jQuery children() Demo</title>
 <style type="text/css">
     .highlight{
         background: yellow;
@@ -5632,240 +5472,9 @@ $(document).ready(function(){
 </html>
 ```
 
-### jQuery() 方法
+### jQuery `find()` 方法
 
-该方法用于获取指定元素的直接子元素。在我们的示例中，`<ul>` 的直接子元素被高亮了；子元素是 `<li>`，我们通过在文档就绪时添加名为 `.highlight` 的类来实现。
-
-（注：此处根据上下文逻辑，原文示例可能混淆了 children 和 parents，翻译时保持对应关系）
-
-可选地，可以将一个或多个选择器作为参数包含在 `parents()` 方法中。这将帮助你过滤祖先。在下一个示例中，边框应用在作为 `<div>` 元素的 `<li>` 元素周围。
-
-（此处省略重复 HTML 代码块翻译，保持逻辑一致）
-
-### jQueryUntil() 方法
-
-`parentsUntil()` 方法用于获取直到匹配元素（但不包含该元素）的祖先。简单来说，返回的是 DOM 中指定的两个元素之间的每一个祖先元素。在我们的示例中，在 `<li>` 的祖先元素周围添加了边框，但不包含 `<html>`。换句话说，边框添加在 `<body>`、`<div>` 和 `<ul>` 元素周围。
-
-## 遍历后代
-
-现在你对 DOM 树元素之间的关系有了更好的理解，可以开始学习遍历操作是如何工作的，例如使用 jQuery 在 DOM 树中左右移动、向上或向下移动。
-
-## 遍历祖先
-
-在逻辑关系中，祖先是父母、祖父母、曾祖父母等。通过 jQuery，我们有一些方法可以向上遍历 DOM 树，一次一级或多级，这样我们就可以轻松地获取层级结构中的祖先元素。其中一些方法是 `parent()`、`parents()` 和 `parentsUntil()`。
-
-### jQuery() 方法
-
-我们使用 `parent()` 方法来获取指定元素的直接父元素。在下一个示例中，`<li>` 的直接父元素被高亮了；父元素是 `<ul>`，我们通过在文档就绪时添加名为 `.highlight` 的类来实现。
-
-（此处省略重复 HTML 代码块翻译）
-
-### jQuery() 方法
-
-该方法用于获取指定元素的直接子元素。在我们的示例中，`<ul>` 的直接子元素被高亮了；子元素是 `<li>`，我们通过在文档就绪时添加名为 `.highlight` 的类来实现。
-
-（此处省略重复 HTML 代码块翻译）
-
-### jQueryUntil() 方法
-
-`parentsUntil()` 方法用于获取直到匹配元素（但不包含该元素）的祖先。简单来说，返回的是 DOM 中指定的两个元素之间的每一个祖先元素。在我们的示例中，在 `<li>` 的祖先元素周围添加了边框，但不包含 `<html>`。换句话说，边框添加在 `<body>`、`<div>` 和 `<ul>` 元素周围。
-
-## 遍历后代
-
-现在你对 DOM 树元素之间的关系有了更好的理解，可以开始学习遍历操作是如何工作的，例如使用 jQuery 在 DOM 树中左右移动、向上或向下移动。
-
-## 遍历祖先
-
-在逻辑关系中，祖先是父母、祖父母、曾祖父母等。通过 jQuery，我们有一些方法可以向上遍历 DOM 树，一次一级或多级，这样我们就可以轻松地获取层级结构中的祖先元素。其中一些方法是 `parent()`、`parents()` 和 `parentsUntil()`。
-
-### jQuery() 方法
-
-我们使用 `parent()` 方法来获取指定元素的直接父元素。在下一个示例中，`<li>` 的直接父元素被高亮了；父元素是 `<ul>`，我们通过在文档就绪时添加名为 `.highlight` 的类来实现。
-
-（此处省略重复 HTML 代码块翻译）
-
-### jQuery() 方法
-
-该方法用于获取指定元素的直接子元素。在我们的示例中，`<ul>` 的直接子元素被高亮了；子元素是 `<li>`，我们通过在文档就绪时添加名为 `.highlight` 的类来实现。
-
-（此处省略重复 HTML 代码块翻译）
-
-### jQueryUntil() 方法
-
-`parentsUntil()` 方法用于获取直到匹配元素（但不包含该元素）的祖先。简单来说，返回的是 DOM 中指定的两个元素之间的每一个祖先元素。在我们的示例中，在 `<li>` 的祖先元素周围添加了边框，但不包含 `<html>`。换句话说，边框添加在 `<body>`、`<div>` 和 `<ul>` 元素周围。
-
-（注：由于提供的原文中存在大量重复的段落和示例，为了遵循“不要重复输出原文”且“翻译内容”的原则，上方展示了核心内容的翻译。）
-
-**以下是针对给定文本的完整合并翻译：**
-
-[content]
-`<h1>` 元素是 `<div>` 元素的子，也是 `<body>` 元素的后代。它没有子元素。
-
-`<p>` 元素是 `<em>` 元素的父级、`<div>` 元素的子以及 `<body>` 元素的后代。包含它的 `<em>` 元素是 `<p>` 元素的子，也是 `<div>` 和 `<body>` 元素的后代。
-
-同样，`<ul>` 元素是 `<li>` 元素的父级、`<div>` 元素的子以及 `<body>` 元素的后代。包含它的 `<li>` 元素都是 `<ul>` 元素的子，并且是 `<body>` 和 `<div>` 元素的后代。此外，`<li>` 元素之间还是兄弟关系。
-
-## 注意
-
-当关系是逻辑关系时，祖先是指父母、祖父母、曾祖父母等。后代是指孩子、孙子、曾孙子等，而兄弟是指所有具有相同父级的元素。
-
-## 遍历 DOM 树
-
-现在你已经对 DOM 树元素之间的关系有了更好的理解，可以开始学习遍历操作是如何工作的，例如使用 jQuery 在 DOM 树中左右移动、向上或向下移动。
-
-## jQuery 遍历祖先
-
-我们将从向上遍历 DOM 树开始。在逻辑关系中，祖先是父母、祖父母、曾祖父母等。通过 jQuery，我们有一些方法可以向上遍历 DOM 树，一次一级或多级，这样我们就可以轻松地获取层级结构中的祖先元素。其中一些方法是 `parent()`、`parents()` 和 `parentsUntil()`。
-
-### jQuery parent() 方法
-
-我们使用 `parent()` 方法来获取指定元素的直接父元素。在下一个示例中，`<li>` 的直接父元素被高亮了；父元素是 `<ul>`，我们通过在文档就绪时添加名为 `.highlight` 的类来实现。
-
-```html
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<title>jQuery parent() Demo</title>
-<style type="text/css">
-    .highlight{
-        background: yellow;
-    }      
-</style>
-<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-<script type="text/javascript">
-$(document).ready(function(){
-    $("li").parent().addClass("highlight");
-});
-</script>
-</head>
-<body>
-    <div class="container">
-        <h1>Hello World</h1>
-        <p>This is a <em>simple paragraph</em>.</p>
-        <ul>
-            <li>Item One</li>
-            <li>Item Two</li>
-        </ul>
-    </div>
-</body>
-</html>
-```
-
-### jQuery parents() 方法
-
-该方法用于获取指定元素的祖先元素。在我们的示例中，在 `<li>` 的祖先元素周围添加了边框。这些祖先元素是 `<ul>`、`<body>`、`<div>` 和 `<html>`。
-
-```html
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<title>jQuery parents() Demo</title>
-<style type="text/css">
-    *{
-        margin: 10px;
-    }
-    .frame{
-        border: 2px solid green;
-    }      
-</style>
-<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-<script type="text/javascript">
-$(document).ready(function(){
-    $("li").parents().addClass("frame");
-});
-</script>
-</head>
-<body>
-    <div class="container">
-        <h1>Hello World</h1>
-        <p>This is a <em>simple paragraph</em>.</p>
-        <ul>
-            <li>Item One</li>
-            <li>Item Two</li>
-        </ul>
-    </div>
-</body>
-</html>
-```
-
-可选地，可以将一个或多个选择器作为参数包含在 `parents()` 方法中。这将帮助你过滤祖先。在下一个示例中，边框应用在作为 `<div>` 元素的 `<li>` 元素周围。
-
-```html
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<title>parents() Demo</title>
-<style type="text/css">
-    *{
-        margin: 10px;
-    }
-    .frame{
-        border: 2px solid green;
-    }  
-</style>
-<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-<script type="text/javascript">
-$(document).ready(function(){
-    var arr = $("li").parents("div").addClass("frame");
-});
-</script>
-</head>
-<body>
-    <div class="container">
-        <h1>Hello World</h1>
-        <p>This is a <em>simple paragraph</em>.</p>
-        <ul>
-            <li>Item One</li>
-            <li>Item Two</li>
-        </ul>
-    </div>
-</body>
-</html>
-```
-
-### jQuery parentsUntil() 方法
-
-`parentsUntil()` 方法用于获取直到匹配元素（但不包含该元素）的祖先。简单来说，返回的是 DOM 中指定的两个元素之间的每一个祖先元素。在我们的示例中，在 `<li>` 的祖先元素周围添加了边框，但不包含 `<html>`。换句话说，边框添加在 `<body>`、`<div>` 和 `<ul>` 元素周围。
-
-```html
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<title>parentsUntil() Demo</title>
-<style type="text/css">
-    *{
-        margin: 10px;
-    }
-    .frame{
-        border: 2px solid green;
-    }  
-</style>
-<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-<script type="text/javascript">
-$(document).ready(function(){
-    $("li").parentsUntil("html").addClass("frame");
-});
-</script>
-</head>
-<body>
-    <div class="container">
-        <h1>Hello World</h1>
-        <p>This is a <em>simple paragraph</em>.</p>
-        <ul>
-            <li>Item One</li>
-            <li>Item Two</li>
-        </ul>
-    </div>
-</body>
-</html>
-```
-
-
-
+该方法用于获取指定元素的后代元素，一路向下直到最后一个后代。在我们的示例中，`<div>` 的所有后代元素都被添加了边框。
 
 ```html
 <!DOCTYPE html>
@@ -5874,7 +5483,7 @@ $(document).ready(function(){
 <meta charset="utf-8">
 <title>jQuery find() Demo</title>
 <style type="text/css">
-    **{
+    *{
         margin: 10px;
     }
     .frame{
@@ -5890,22 +5499,22 @@ $(document).ready(function(){
 </head>
 <body>
     <div class="container">
-        <h1>Hello World</h1>h1>
+        <h1>Hello World</h1>
         <p>This is a <em>simple</em>.</p>
         <ul>
             <li>Item One</li>
             <li>Item Two</li>
         </ul>
-    <//div>
+    </div>
 </body>
 </html>
 ```
 
-# jQuery 遍历遍历同级元素 (Traversing Siblings)
+## jQuery 遍历同级元素 (Traversing Siblings)
 
 接下来，我们来查看如何横向遍历 DOM 树。在逻辑关系中，同级元素是指具有相同父元素的所有元素。jQuery 提供了许多方法用于横向遍历，包括 `next()`、`siblings()`、`nextAll()`、`nextUntil()`、`prev()`、`prevAll()` 和 `prevUntil()`。
 
-## jQuery siblings() 方法
+### jQuery `siblings()` 方法
 
 我们使用 jQuery 的 `siblings()` 方法来获取指定元素的所有兄弟元素。在示例中，`<p>` 元素的同级元素被高亮了；这些是 `<ul>` 和 `<h1>` 元素，我们通过在文档就绪（document ready）时添加名为 `.highlight` 类来实现。
 
@@ -5929,13 +5538,13 @@ $(document).ready(function(){
 </head>
 <body>
     <div class="container">
-        <h1>Hello World</h1>h1>
+        <h1>Hello World</h1>
         <p>This is a <em>simple</em>.</p>
         <ul>
             <li>Item One</li>
             <li>Item Two</li>
         </ul>
-    <//div>
+    </div>
 </body>
 </html>
 ```
@@ -5962,18 +5571,18 @@ $(document).ready(function(){
 </head>
 <body>
     <div class="container">
-        <h1>Hello World</h1>h1>
+        <h1>Hello World</h1>
         <p>This is a <em>simple</em>.</p>
         <ul>
             <li>Item One</li>
             <li>Item Two</li>
         </ul>
-    <//div>
+    </div>
 </body>
 </html>
 ```
 
-## jQuery next() 方法
+### jQuery `next()` 方法
 
 我们使用 `next()` 方法来获取紧随其后的同级元素，即指定元素的下一个元素。在下面的示例中，下一个 `<p>` 同级元素被高亮了；这是 `<ul>` 元素。
 
@@ -5997,18 +5606,18 @@ $(document).ready(function(){
 </head>
 <body>
     <div class="container">
-        <h1>Hello World</h1>h1>
+        <h1>Hello World</h1>
         <p>This is a <em>simple</em>.</p>
         <ul>
             <li>Item One</li>
             <li>Item Two</li>
         </ul>
-    <//div>
+    </div>
 </body>
 </html>
 ```
 
-## jQuery nextAll() 方法
+### jQuery `nextAll()` 方法
 
 `nextAll()` 方法用于获取指定元素之后的所有元素。在示例中，我们高亮了所有后续在后面的 `<p>` 同级元素。
 
@@ -6032,19 +5641,19 @@ $(document).ready(function(){
 </head>
 <body>
     <div class="container">
-        <h1>Hello World</h1>h1>
+        <h1>Hello World</h1>
         <p>This is a <em>simple</em>.</p>
         <p>This is another paragraph.</p>
         <ul>
             <li>Item One</li>
             <li>Item Two</li>
         </ul>
-    <//div>
+    </div>
 </body>
 </html>
 ```
 
-## jQuery nextUntil() 方法
+### jQuery `nextUntil()` 方法
 
 通过 `nextUntil()` 方法，我们可以获取直到匹配选择器之前的同级元素，但不包括该元素本身。简单来说，它会返回两个指定元素之间的所有后续同级元素。
 
@@ -6068,19 +5677,19 @@ $(document).ready(function(){
 </head>
 <body>
     <div class="container">
-        <h1>Hello World</h1>h1>
+        <h1>Hello World</h1>
         <p>This is a <em>simple</em>.</p>
         <p>This is another paragraph.</p>
         <ul>
             <li>Item One</li>
             <li>Item Two</li>
         </ul>
-    <//div>
+    </div>
 </body>
 </html>
 ```
 
-## jQuery prev() 方法
+### jQuery `prev()` 方法
 
 我们使用 `prev()` 方法来获取指定元素之前的上同级元素。在后续示例中，`<ul>` 同级元素 `<p>` 被高亮了。
 
@@ -6104,19 +5713,19 @@ $(document).ready(function(){
 </head>
 <body>
     <div class="container">
-        <h1>Hello World</h1>h1>
+        <h1>Hello World</h1>
         <p>This is a <em>simple</em>.</p>
         <p>This is another paragraph.</p>
         <ul>
             <li>Item One</li>
             <li>Item Two</li>
         </ul>
-    <//div>
+    </div>
 </body>
 </html>
 ```
 
-## jQuery prevAll() 方法
+### jQuery `prevAll()` 方法
 
 我们可以使用 `prevAll()` 方法来获取选择元素之前的所有同级元素。在下一个示例中，在它之前的 `<ul>` 同级元素被高亮了：
 
@@ -6140,27 +5749,23 @@ $(document).ready(function(){
 </head>
 <body>
     <div class="container">
-        <h1>Hello World</h1>h1>
+        <h1>Hello World</h1>
         <p>This is a <em>simple</em>.</p>
         <p>This is another paragraph.</p>
         <ul>
             <li>Item One</li>
             <li>Item Two</li>
         </ul>
-    <//div>
+    </div>
 </body>
 </html>
 ```
 
-## jQuery prevUntil() 方法
+### jQuery `prevUntil()` 方法
 
 最后，`prevUntil()` 方法用于获取直到匹配选择器元素之前的元素，但不包括匹配的元素。简单来说，它会返回两个指定元素之间的所有之前的同级元素。
 
 在下一个示例中，`<ul>` 元素之前的同级元素被高亮了。两个 `<p>` 元素都被高亮了，但 `<h1>` 元素没有。
-
-
-
-
 
 ```html
 <!DOCTYPE html>
@@ -6194,13 +5799,11 @@ $(document).ready(function(){
 </html>
 ```
 
-（注：HTML 部分保持不变）
-
 ## jQuery 过滤
 
 现在我们来看看如何使用 jQuery 来过滤选定的元素。通过 jQuery，我们有许多方法可以缩小元素搜索范围，包括 `filter()`、`first()`、`last()`、`slice()`、`eq()`、`not()`、`has()` 等。
 
-## jQuery first() 方法
+### jQuery `first()` 方法
 
 我们使用 `first()` 方法来过滤匹配的元素集并返回第一个。在下一个示例中，只有 `<ul>` 元素内部的第一个 `<li>` 元素被高亮；为了实现这一点，我们在文档就绪时添加了名为 `.highlight` 的类。
 
@@ -6233,7 +5836,7 @@ $(document).ready(function(){
 </html>
 ```
 
-## jQuery last() 方法
+### jQuery `last()` 方法
 
 通过 `last()` 方法，我们可以过滤匹配的元素集并返回最后一个元素。在下一个示例中，只有 `<ul>` 元素中的最后一个 `<li>` 元素被高亮；同样，我们通过文档就绪时添加了名为 `.highlight` 的类。
 
@@ -6266,7 +5869,7 @@ $(document).ready(function(){
 </html>
 ```
 
-## jQuery eq() 方法
+### jQuery `eq()` 方法
 
 通过 `eq()` 方法，可以过滤匹配的元素集，仅返回具有给定索引数字的单个元素。在示例中，`<ul>` 元素中的第二个 `<li>` 元素被高亮；在文档就绪时添加了 `.highlight` 类。
 
@@ -6299,7 +5902,8 @@ $(document).ready(function(){
 </html>
 ```
 
-### 注意：
+### 注意
+
 传递给 `eq()` 方法的索引用于指示元素从 0 开始的位置；这意味着索引 0 对应第一个元素，索引 1 对应第二个元素，依此类推。此外，索引还指向元素在 jQuery 对象中的位置，而不是 DOM 树。也可以指定负索引；这些索引表示集合末尾而不是开头的位置。例如， `eq(-2)` 将指示集合中倒数第二个元素。
 
 ```html
@@ -6331,7 +5935,7 @@ $(document).ready(function(){
 </html>
 ```
 
-## filter() 方法
+### jQuery `filter()` 方法
 
 `filter()` 方法接收一个函数或选择器；它将根据提供的条件过滤集合中的元素。它会对集合中的每个元素单独进行测试。
 
@@ -6397,7 +6001,7 @@ $(document).ready(function(){
 </html>
 ```
 
-## has() 方法
+### jQuery `has()` 方法
 
 `has()` 方法用于过滤集合并返回具有指定后代的元素。在下一个示例中，所有包含后代 `<ul>` 元素的 `<li>` 元素都被高亮了。
 
@@ -6406,7 +6010,7 @@ $(document).ready(function(){
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>jQuery filter() Demo</title>
+<title>jQuery has() Demo</title>
 <style type="text/css">
     .highlight{
         background: yellow;
@@ -6436,12 +6040,9 @@ $(document).ready(function(){
 </html>
 ```
 
-## not() 方法
+### jQuery `not()` 方法
 
 通过 `not()` 方法，我们可以过滤元素集并返回所有**不符合**指定条件的元素。可以将函数或选择器作为方法的参数。
-
-
-
 
 传递给 `not()` 的函数或选择器将用于对元素集中的每一个元素进行单独测试；所有**不匹配**选择器或不符合函数测试的元素将返回在结果中。
 
@@ -6579,27 +6180,27 @@ $(document).ready(function(){
 
 在开始创建 Ajax 之前，我们将先查看 Ajax 是什么以及它如何与 jQuery 工作。
 
-## 什么是 Ajax？
+### 什么是 Ajax？
 
 Ajax 是异步 JavaScript 和 XML（Asynchronous JavaScript and XML）的缩写。它实际上是一种在不需要重新加载整个网页的情况下从服务器加载数据到网络浏览器的方法。
 
 简而言之，Ajax 使用 `XMLHttpRequest` 对象（基于 JavaScript）来异步发送数据并接收数据，从而更新页面部分而无需刷新。
 
-## 配合 jQuery 使用 Ajax
+### 配合 jQuery 使用 Ajax
 
-在 jQuery 中，Ajax 提供了许多方法来执行异步请求。最常用的方法是 `ajax()`，但它提供了更快捷的 `get()`、`post()`、`ajaxBefore()` 等方法，这些方法实际上都是 `ajax()` 方法的快捷方式。
+在 jQuery 中，Ajax 提供了许多方法来执行异步请求。最常用的方法是 `ajax()`，但它提供了更快捷的 `get()`、`post()` 等方法，这些方法实际上都是 `ajax()` 方法的快捷方式。
 
 **提示**：Ajax 允许你在不刷新页面的情况下发送请求。当请求完成后，它会触发回调函数。
 
 ### jQuery `load()` 方法
 
-`load()` 方法用于从服务器加载数据并放入指定的元素中。基本语法如下
+`load()` 方法用于从服务器加载数据并放入指定的元素中。基本语法如下：
 
 ```javascript
 $(selector).load(URL, data, complete);
 ```
 
-`load()` 方法的参数有
+`load()` 方法的参数有：
 
 * `URL` 参数是必须的；它指定要加载的文件的 URL。
 * `data` 参数是可选的；它指定一组查询字符串（例如键值对列表），这些字符串将随请求发送到服务器。
@@ -6641,16 +6242,16 @@ $(document).ready(function(){
 
 最后，在浏览器中打开该页面并点击写着“load content”的按钮。DIV 框的内容将被你的 `test-content.html` 文件的 HTML 内容替换。
 
-
-
-
 ### 提示
-为了测试此示例，HTML 文件必须存放在 Web 服务器上。如果你想在你的计算机上设置本地服务器，请安装 XAMPP 或 WampServer。由于 Ajax 仅发送 HTTP 请求，因此演示文件必须使用 `http://.` 打开。
+
+为了测试此示例，HTML 文件必须存放在 Web 服务器上。如果你想在你的计算机上设置本地服务器，请安装 XAMPP 或 WampServer。由于 Ajax 仅发送 HTTP 请求，因此演示文件必须使用 `http://` 打开。
 
 ### 注意事项
+
 你只能向与发送请求的页面相同的 Web 服务器上的文件发送 Ajax 请求。出于安全考虑，这些请求无法向远程或外部服务器发送，这被称为“同源策略”（same-origin policy）。
 
 回调函数还可以接收三个参数：
+
 * `responseTxt` – 如果请求成功，它将包含请求产生的内容
 * `statusTxt` – 它将包含每个请求的状态，例如错误或成功
 * `jqXHR` – 它将包含 `XMLHttpRequest` 对象。
@@ -6679,7 +6280,7 @@ $(document).ready(function(){
 });
 </script>
 </head>
-<body
+<body>
     <div id="box">
         <h2>点击按钮在 DIV 框内加载新内容</h2>
     </div>
@@ -6689,6 +6290,7 @@ $(document).ready(function(){
 ```
 
 ### 加载页面片段
+
 我们也可以使用 `load()` 方法仅获取文档的一小部分，这非常简单——只需在 URL 参数后添加一个空格和一个 jQuery 选择器。下一个示例会让这一点更清晰：
 
 ```html
@@ -6706,7 +6308,7 @@ $(document).ready(function(){
 });
 </script>
 </head>
-<body
+<body>
     <div id="box">
         <h2>点击按钮在 DIV 框内加载新内容</h2>
     </div>
@@ -6715,9 +6317,10 @@ $(document).ready(function(){
 </html>
 ```
 
-我们在这里在 URL 参数中使用了一个名为 `#hint` 的选择器。它被用于指定“test-content” 文件中我们想要放入 DIV 框的部分。这是一个具有 `id` 属性且值为 `hint` 的元素，例如 `id-“hint"`（参见我们的第一个示例）。
+我们在这里在 URL 参数中使用了一个名为 `#hint` 的选择器。它被用于指定“test-content” 文件中我们想要放入 DIV 框的部分。这是一个具有 `id` 属性且值为 `hint` 的元素，例如 `id="hint"`（参见我们的第一个示例）。
 
-### jQuery $.get() 和 $.post() 方法
+### jQuery `$.get()` 和 `$.post()` 方法
+
 GET 和 POST 方法用于通过 Ajax 向 Web 服务器发送数据并从其接收数据。这两种方法非常相似，只有一个很大的区别——`$.get()` 使用 HTTP GET 发起 Ajax 请求，而 `$.post()` 使用 HTTP POST。
 
 这些方法的语法为：
@@ -6725,11 +6328,13 @@ GET 和 POST 方法用于通过 Ajax 向 Web 服务器发送数据并从其接�
 `$.post(URL, data, success);`
 
 这些方法中的参数为：
+
 * `URL` 参数是必须的；它用于指定将请求发送到哪个 URL。
 * `data` 参数是可选的；它用于指定随请求发送到服务器的查询字符串。
 * `success` 参数也是可选的；这是一个回调函数，仅在请求成功时执行，用于检索返回的数据。
 
 ### 使用 jQuery 执行 GET 请求
+
 在下一个示例中，我们使用 `$.get()` 方法向名为“date-time.php”的文件发送 Ajax 请求；为了实现这一点，我们使用了 HTTP GET 方法。它所做的只是检索或获取服务器返回的数据和时间，并在浏览器中显示。
 
 ```html
@@ -6750,7 +6355,7 @@ $(document).ready(function(){
 });
 </script>
 </head>
-<body
+<body>
     <div id="result">
         <h2>结果框的内容将被来自服务器的日期和时间替换</h2>
     </div>
@@ -6760,17 +6365,12 @@ $(document).ready(function(){
 ```
 
 供参考的 `date-time.php` 文件如下：
-```php
-<?php
-// 返回当前日期和时间
-echo date("Y-m-d H:i:s");
-```
 
-供参考的`date-time.php` 文件是：
 ```php
 <?php
 // 返回当前日期和时间
 echo date("Y-m-d H:i:s");
+?>
 ```
 
 你也可以使用请求向服务器发送某些数据。在下一个示例中，代码向 `create-table.php` 发送请求。
@@ -6793,7 +6393,7 @@ $(document).ready(function(){
 });
 </script>
 </head>
-<body
+<body>
     <div id="result">
         <h2>结果框的内容将被来自服务器的日期和时间替换</h2>
     </div>
@@ -6802,14 +6402,17 @@ $(document).ready(function(){
 </html>
 ```
 
-供参考的`date-time.php` 文件是：
+供参考的 `date-time.php` 文件是：
+
 ```php
 <?php
 // 返回当前日期和时间
 echo date("Y-m-d H:i:s");
+?>
 ```
 
 ### 使用 jQuery 执行 POST 请求
+
 POST 请求与 GET 请求非常相同，因此使用哪种完全取决于你的服务器端代码。如果你有大量数据需要传输（例如表单数据），你必须使用 POST，因为 GET 对传输的数据量有限制。
 
 ```html
@@ -6846,26 +6449,24 @@ $(document).ready(function(){
 </html>
 ```
 
-供参考的`display-comment.php` 文件如下：
+供参考的 `display-comment.php` 文件如下：
+
 ```php
 <?php
 $name = htmlspecialchars($_POST["name"]);
 $comment = htmlspecialchars($_POST["comment"]);
-echo "你好, $name。你的评论已成功接收。"<br>";
+echo "你好, $name。你的评论已成功接收。<br>";
 echo "这是你输入的评论：$comment";
 ?>
 ```
 
 现在你已经了解了如何使用基础 jQuery 方法异步执行 Ajax 操作（如加载数据、提交表单等），接下来我们将进入无冲突模式（No-Conflict mode）。
 
-
-
-
 ## jQuery 无冲突模式
 
 学习非常重要的一点是如何避免 jQuery 与任何其他 JavaScript 框架或库之间的冲突。正如你已经学到的，`$`（美元符号）被用作 jQuery 的简写。因此，如果你在与 jQuery 库相同的页面上同样使用 `$` 作为快捷方式的库，你可能会发现它们之间发生了冲突。再次，jQuery 出现营救并为我们提供了一个处理此问题的特殊方法。
 
-## jQuery noConflict() 方法
+### jQuery `noConflict()` 方法
 
 此方法会将 `$` 标识符的完全控制权返回给使用的其他库。在下一个示例中，第 10 行在 jQuery 加载到页面时立即将其置于无模式；分配一个新变量名 `$j` 来代替 `$`，这样就不会与 prototype 框架产生冲突：
 
@@ -6877,29 +6478,58 @@ echo "这是你输入的评论：$comment";
 <title>jQuery noConflict() Demo</title>
 <script src="js/prototype.js"></script>
 <script src="js/jquery.js"></script>
-<script type="text/javascript">
-// 为 jQuery 定义新的别名
-var $j = jQuery.noConflict();
-$j(document).ready(function(){
-    // 当点击 ID 为 foo 的元素时显示警告消息
-    $j("#foo").click(function(){
-        alert("jQuery is working OK with prototype.");
-    });
-});
-//一些 prototype 框架代码
-document.observe("dom:loaded", function(){
-    // 当点击 ID 为 bar 的元素时显示警告消息
-    $(bar).observe('click', function(event){
-        alert("Prototype is working OK with jQuery.");
-    });
-});
-</script>
 </head>
+</html>
+```
+
+
+
+<script type="text/javascript">
+
+// 为 jQuery 定义新的别名
+
+var `$j = jQuery.noConflict()`;
+
+`$j(document).ready(function(){`
+
+    // 当点击 ID 为 foo 的元素时显示警告消息
+
+    `$j("#foo").click(function(){`
+
+        `alert("jQuery is working OK with prototype.");`
+
+    `});`
+
+`});`
+
+//一些 prototype 框架代码
+
+`document.observe("dom:loaded", function(){`
+
+    // 当点击 ID 为 bar 的元素时显示警告消息
+
+    `$(bar).observe('click', function(event){`
+
+        `alert("Prototype is working OK with jQuery.");`
+
+    `});`
+
+`});`
+
+</script>
+
+</head>
+
 <body>
+
     <button type="button" id="foo">Run jQuery Code</button>
+
     <button type="button" id="bar">Run Prototype Code</button>
+
 </body>
-</</html>
+
+</html>
+
 ```
 
 如果你不想采取为 jQuery 定义新快捷方式的路线（可能是因为你不希望你的代码被修改，或者你觉得 `$` 使用起来简单快速），还有另一种方法可以实现——将 `$` 传递给 `jQuery(document).ready()` 函数，如下例所示：
@@ -6933,10 +6563,10 @@ document.observe("dom:loaded", function(){
     <button type="button" id="foo">Run jQuery Code</button>
     <button type="button" id="bar">Run Prototype Code</button>
 </body>
-</</html>
+</html>
 ```
 
-虽然这些解决方案可以避免冲突，但它们依赖于 prototype.js 在 jQuery 之前加载。你可以通过在代码中包含 jQuery 的全称，在任何其他库之前先加载 jQuery——这可以在无需调用 no-conflict() 的情况下避免冲突。然而，在这种情况下，`$` 将使用其他库定义的含义。
+虽然这些解决方案可以避免冲突，但它们依赖于 prototype.js 在 jQuery 之前加载。你可以通过在代码中包含 jQuery 的全称，在任何其他库之前先加载 jQuery——这可以在无需调用 `no-conflict()` 的情况下避免冲突。然而，在这种情况下，`$` 将使用其他库定义的含义。
 
 ```html
 <!DOCTYPE html>
@@ -6966,13 +6596,10 @@ document.observe("dom:loaded", function(){
     <button type="button" id="foo">Run jQuery Code</button>
     <button type="button" id="bar">Run Prototype Code</button>
 </body>
-</</html>
+</html>
 ```
 
 ## XHR 特性检测
-
-
-
 
 历史介绍到此为止，让我们进入使用 Ajax 加载页面内容。
 
@@ -6983,7 +6610,7 @@ document.observe("dom:loaded", function(){
 1. 创建 `XHR` 对象的新实例
 2. 等待 `XHR` 状态变为 `4`
 3. 等待服务器返回 `200` 响应状态
-4. 使用 `onreadystatechange` 将所有内容整合在一起。” ”
+4. 使用 `onreadystatechange` 将所有内容整合在一起
 
 让我们逐一查看这些步骤。
 
@@ -7044,13 +6671,9 @@ Web 服务器会发送多个响应码，每个都采用数字格式。对于 Aja
 ```javascript
 // sample01/scripts.js
 var getArticleInfo = new XMLHttpRequest();
-
 getArticleInfo.onreadystatechange = loadText;
-
 getArticleInfo.open("GET", "articleName.txt");
-
 getArticleInfo.send();
-
 function loadText() {
   var text = document.getElementById("textTarget");
   if (getArticleInfo.readyState === 4) {
@@ -7073,9 +6696,7 @@ var getArticleInfo = new XMLHttpRequest();
 
 ```javascript
 getArticleInfo.onreadystatechange = loadText;
-
 getArticleInfo.open("GET", "articleName.txt");
-
 getArticleInfo.send();
 ```
 
@@ -7091,21 +6712,14 @@ getArticleInfo.send();
 
 在本节中，我们将查看为什么不应该同时对状态和 readyState 进行检查。这纯粹是一个演示，对示例没有任何影响或作用。
 
-
-
-
-
 我们使用的代码首先检查了 `readyState` 值，然后继续检查服务器的状态码。一些开发者使用 `&&`（即逻辑与运算符）来同时检查这两个值。
 
 代码看起来像这样：
 
 ```javascript
 // sample04/scripts.js
-
 // 仅更新 getArticleInfo.onreadystatechange 回调函数
-
 ...
-
 getArticleInfo.onreadystatechange = function() {
   var text = document.getElementById("textTarget");
   if ((getArticleInfo.readyState === 4) && (getArticleInfo.status === 200)) {
@@ -7135,14 +6749,13 @@ getArticleInfo.onreadystatechange = function() {
 加载 HTML 文件
 
 ```html
-<div id="textTarget"></div
+<div id="textTarget"></div>
 ```
 
 我们在这里添加了一个 ID 为 `getHTMLFile` 的 `button` 标签，并将其添加到 `<div id="textTarget">` 之上。当点击此按钮时，指定的 HTML 文件的内容就会加载到 div 标签中。
 
 ```javascript
 // sample05/scripts.js
-
 function loadHTML() {
   var getInfo = new XMLHttpRequest();
   getInfo.open("GET", "articleName.html");
@@ -7158,7 +6771,6 @@ function loadHTML() {
     }
   }
 }
-
 // 点击按钮时加载数据的代码
 document.getElementById("getHTMLFile").addEventListener("click", loadHTML);
 ```
@@ -7178,29 +6790,25 @@ document.getElementById("getHTMLFile").addEventListener("click", loadHTML);
 加载文本文件
 
 ```html
-<div id="textTarget"></div
+<div id="textTarget"></div>
 ```
 
 新增了一个新的 `button` 标签；它的 ID 为 `getTextFile`，并被放置在 `<div id="textTarget">` 正上方。当点击此按钮时，div 标签中的文本文件内容就会加载。
 
 ```javascript
 // sample06/scripts.js
-
 // 向 loadFile 传递参数并在 getInfo.open() 中引用它
 function loadFile(file) {
   var getInfo = new XMLHttpRequest();
   getInfo.open("GET", file);
   ...
 }
-
 ...
-
 // 在 scripts.js 底部添加了一个新按钮
 // 每个按钮都将运行 loadFile() 来加载不同的文件
 document.getElementById("getHTMLFile").onclick = function() {
   loadFile("articleName.html");
 };
-
 document.getElementById("getTextFile").onclick = function() {
   loadFile("articleName.txt");
 };
@@ -7223,7 +6831,7 @@ document.getElementById("getTextFile").onclick = function() {
 加载文本文件
 
 ```html
-<div id="textTarget"></div
+<div id="textTarget"></div>
 ```
 
 ...
@@ -7236,7 +6844,6 @@ sample07/scripts.js
 // sample07/scripts.js
 // 不要修改 loadFile 函数
 var getButtons = document.querySelectorAll(".btn");
-
 for (key in getButtons) {
   var singleButton = getButtons[key];
   singleButton.onclick = function() {
@@ -7292,13 +6899,8 @@ Ajax 足够多样可以处理多种数据类型，但最常用的是 JSON。JSON
 
 数据不是从文本或 HTML 文件加载，而是直接从 JSON 文件加载的。
 
-
-
-
-
 ```javascript
 // sample08/scripts.js
-
 (function(){
     var getPlayerInfo = new XMLHttpRequest();
     getPlayerInfo.open("GET", "soccerplayers.json");
@@ -7324,7 +6926,6 @@ Ajax 足够多样可以处理多种数据类型，但最常用的是 JSON。JSON
 ```javascript
 (function(){
 ...
-
 })();
 ```
 
@@ -7396,10 +6997,7 @@ getPlayerInfo.onreadystatechange = function() {
 </html>
 ```
 
-
-
-
-`jQuery.post` 用于处理与服务器的交互；我们在这里不会讨论它，因为它超出了本书的范范围。
+`jQuery.post` 用于处理与服务器的交互；我们在这里不会讨论它，因为它超出了本书的范围。
 
 ### .load
 
@@ -7435,7 +7033,7 @@ $("#textTarget").load("articleName.html");
 
 ...
 
- 加载 HTML 文件
+加载 HTML 文件
 ```html
 <div id="textTarget"></div>
 ```
@@ -7451,14 +7049,14 @@ $("#getHTMLFile").click(function(){
 
 `jQuery` 的 `.click` 方法绑定到了新添加的按钮上，点击时会运行一个回调函数，该函数随后运行上一个示例中的 `.load` 代码。
 
-### 使用 .load 为多个按钮创建可复代码
+### 使用 .load 为多个按钮创建可复用代码
 
 使用原生 JavaScript 创建单独的按钮，允许通过 Ajax 加载不同的内容。但使用原生 JavaScript 创建用于加载内容的共享函数要高效得多。
 
 ...
 
- 加载 HTML 文件
- 加载文本文件
+加载 HTML 文件
+加载文本文件
 ```html
 <div id="textTarget"></div>
 ```
@@ -7496,7 +7094,6 @@ $(".btn").click(function(){
 ...
 
 我们使用一个仅包含 `<div id="textTarget">` 元素的页面：
-
 初学者 Ajax 教程
 作者 John Jay Smith
 
@@ -7509,27 +7106,24 @@ $("#textTarget").load("article.html #author");
 
 `.load` 方法用于将 Ajax 加载到名为 `article.html` 的文件中，但并不是获取整个文件，我们只加载来自 `<div id="author">` 元素的内容。
 
-`<a href="http://api.jquery.com/load/" target="_blank" title="Read more about jQuery’s '.load' method">了解更多关于 jQuery 的“.load()”方法</a>`
+<a href="http://api.jquery.com/load/" target="_blank" title="Read more about jQuery’s '.load' method">了解更多关于 jQuery 的“.load()”方法</a>
 
 ### 使用 jQuery.get
 
 `.get` 和 `.load` 之间存在几点不同：
 
-*   `.load` 是一个方法，而 `.get` 是一个全局函数。这意味着，如果你想启动一个 `jQuery` 代码块，使用 `.get`，但 `.load` 被用作链式方法。
-*   `.load` 是一个方法，而 `.get` 是一个全局函数。这意味着，如果你想启动一个 `jQuery` 代码块，使用 `.get`，但 `.load` 被用作链式方法。
-*   `.load` 是一个方法，而 `.get` 是一个全局函数。这意味着，如果你想启动一个 `jQuery` 代码块，使用 `.get`，但 `.load` 被用作链式方法。（*注：此处原文存在逻辑重复，已按原样翻译*）
+* `.load` 是一个方法，而 `.get` 是一个全局函数。这意味着，如果你想启动一个 `jQuery` 代码块，使用 `.get`，但 `.load` 被用作链式方法。
+* `.load` 是一个方法，而 `.get` 是一个全局函数。这意味着，如果你想启动一个 `jQuery` 代码块，使用 `.get`，但 `.load` 被用作链式方法。
+* `.load` 是一个方法，而 `.get` 是一个全局函数。这意味着，如果你想启动一个 `jQuery` 代码块，使用 `.get`，但 `.load` 被用作链式方法。（注：此处原文存在逻辑重复，已按原样保留）
 
 （注：由于原文文本中某些段落存在重复，译文保留了这些结构以确保翻译的完整性。）
-
-
-
 
 `Index.html` 看起来和之前几乎完全一样，但现在我们添加了一个名为 `loadFile.js` 的文件，同时更新了 `scripts.js`。
 
 ...
 
 ```html
-<div id="textTarget"></div
+<div id="textTarget"></div>
 ```
 
 ...
@@ -7538,11 +7132,9 @@ $("#textTarget").load("article.html #author");
 
 ```javascript
 // sample16/loadFile.js
-
 function getHtmlFile() {
   $("#textTarget").load("articleName.html");
 };
-
 function setText() {
   $("#textTarget").css({
     "color": "red",
@@ -7555,7 +7147,6 @@ function setText() {
 
 ```javascript
 // sample16/scripts.js
-
 $.getScript("loadFile.js", function() {
   getHtmlFile();
   $("#textTarget").click(function(){
@@ -7577,11 +7168,9 @@ loadFile.js?=1421161342213
 
 ```javascript
 // sample17/scripts.js
-
 $.ajaxSetup({
   cache: true
 });
-
 $.getScript("loadFile.js", function() {
   getHtmlFile();
   $("#textTarget").click(function(){
@@ -7654,7 +7243,6 @@ API 最重要的部分之一是 `Promises`。它们是 jQuery 中 `Deferred` 对
 
 ```javascript
 // sample18/scripts.js
-
 $.getScript("loadFile.js", function() {
   getHtmlFile();
   $("#textTarget").click(function(){
@@ -7665,15 +7253,12 @@ $.getScript("loadFile.js", function() {
 
 在 `$.getScript("loadFile.js", function())` 中，使用了 `getScript` 方法来加载 `loadFile.js`。执行了一个回调函数，该函数立即运行 `getHtmlFile()`，从而加载了 `articleName.html`。当点击 `<div id="textTarget">` 时，该函数也会运行 `setText`。
 
-
-
+...
 
 <!-- 移除上一个示例中使用的 <div id="textTarget02"> -->
 
 ...
-
 <div id="textTarget"></div>
-
 ...
 
 我们从 `index.html` 中删除了 `<div id="textTarget02">` 元素。
@@ -7702,7 +7287,6 @@ $.getJSON("soccerplayers.json").then(
 - 第三个描述当 `Promise` 仍在进行中（progress）时会发生什么
 
 由于存在 `soccerplayers.json` 的文件，`Promise` 会自行解析，但如果找不到该文件，它就会被拒绝。如果我们删除了那个 `.json` 文件，第二个参数内部的将在页面上显示以下消息：
-
 数据加载失败。
 
 由于 JSON 数据量非常小，很难演示第三个进度函数，但让你理解这一点至关重要：即如果 `Promise` 被拒绝或解析，将显示一条提示“数据正在加载”的消息。
@@ -7758,8 +7342,6 @@ HTML 标签通常是成对出现的。有一个起始标签（`<name of tag>`）
 <table>创建一个 HTML 表格 – 类似于标准的电子表格</table>
 ```
 
-HTML
-
 HTML 标签不仅用于文本的放置或格式化，还可以用于包含视频、动画、音频、Flash 和多媒体程序。
 
 ### HTML 页面的结构
@@ -7813,9 +7395,6 @@ HTML 页面通常分为两个主要部分：
 
 #### 步骤三 – 查看你的页面
 在此阶段，你可以双击打开页面，或者打开你的网页浏览器，点击“文件”菜单，选择“打开文件”然后找到你的文件。你的页面将打开，你可以看到它现在的样子。如果什么都没看到，回去检查你输入的代码是否正确。
-
-
-
 
 这是你构建的第一个页面，现在我们可以开始构建一个完整的网站了。
 
@@ -7927,14 +7506,9 @@ HTML 页面通常分为两个主要部分：
 当你的网站构建好后，下一步是将其发布到网上，为了这一点你需要域名。每个网站都必须有一个域名，你选择的名称可以决定人们发现你网站的难易程度。以下是选择良好域名的建议：
 
 - 名称应该给出关于网站内容的线索。搜索引擎喜欢这样的名称，访问者也更容易找到你。例如，如果你正在构建一个五金网站，你不会想要像 `prettypinkUnicorn` 这样的名字。它没有告诉人们网站关于什么的，而 `discountHardware` 则是。
+- 你的名称不需要包含你的业务名称——它只需要清晰且易于记忆。
 
-
-
-
-
-*   你的名称不需要包含你的业务名称——它只需要清晰且易于记忆。
-
-## 8. 注册你的域名名称
+### 8. 注册你的域名名称
 
 这并没有你想象中那么简单，因为大多数好名字都被占用了。放弃拥有一个全球通用名称的想法吧，因为它们是最先被抢光的。想几个凑用的名字；很率情况下，你需要尝试几个才能找到一个还没被占用的。
 
@@ -7946,31 +7520,31 @@ HTML 页面通常分为两个主要部分：
 
 确定你所选域名是否已被占的最快方法是将其输入搜索引擎并查看搜索结果。如果不行，去你选择的域名注册商查看哪些是可用的。
 
-## 9. 寻找你的托管公司
+### 9. 寻找你的托管公司
 
 如今，网站托管并不贵，远比以前便宜。现在，根据你的需求，你可以获得成本几乎不计甚至免费的托管，也可以选择贵的软件包——由你决定。
 
 网站托管的定价涉及许多因素：
 
-*   流量——你的网站获取的流量越多，每月的费用就越高，但如果这要对你产生任何影响，你需要拥有一个非常受欢迎的网站，尤其是你还是这方面的新手。
-*   额外服务和功能——托管提供商提供各种功能和服务，其中许多你可能根本不需要。选择时要务必小心——你以后可以随时升级。
+* 流量——你的网站获取的流量越多，每月的费用就越高，但如果这要对你产生任何影响，你需要拥有一个非常受欢迎的网站，尤其是你还是这方面的新手。
+* 额外服务和功能——托管提供商提供各种功能和服务，其中许多你可能根本不需要。选择时要务必小心——你以后可以随时升级。
 
 无论成本如何，选择最适合你网站的。
 
-## 10. 上传你的网站
+### 10. 上传你的网站
 
 你的网站已经创建，你已经支付了费用并注册了域名，并且准备好了托管计划。现在是时候将网站上传到你选择的托管服务器了。你的提供商将为你提供此所需的所有帮助。
 
 ### 快速贴士
 
-*   保持网页短小
-*   保持你的 `<h2>` 标题标签清晰准确
-*   保持文本段落短小
-*   将所有的联系信息集中在所有页面的相同位置
-*   保持每个页面的结构和视觉效果一致
-*   确保你的网站有一个“首页”按钮，让用户轻松回到起点
-*   始终为你的链接加下划线，永远不要使用 `CSS` 来删除下划线——大多数人往往认为所有带下划线的文本都是链接
-*   在所有页面上都有你的网站 Logo，并使其链接到首页
+* 保持网页短小
+* 保持你的 `<h2>` 标题标签清晰准确
+* 保持文本段落短小
+* 将所有的联系信息集中在所有页面的相同位置
+* 保持每个页面的结构和视觉效果一致
+* 确保你的网站有一个“首页”按钮，让用户轻松回到起点
+* 始终为你的链接加下划线，永远不要使用 `CSS` 来删除下划线——大多数人往往认为所有带下划线的文本都是链接
+* 在所有页面上都有你的网站 Logo，并使其链接到首页
 
 现在你已经了解建立网站是怎么回事了，让我们开始学习 CSS 。级联样式表（Cascading Style Sheets）是让你的网页设计看起来专业的最佳方式。
 
@@ -8029,9 +7603,6 @@ color: #FF0000;
 
 只需创建一个文本文档并重命名为 `.css` 即可。
 
-
-
-
 所以你看到，重新定义 HTML 标签并改变它们的样式非常简单，这是一种非常强大的功能：
 
 ```css
@@ -8042,10 +7613,10 @@ div {
 }
 ```
 
-现在，使用这段代码，任何 `<div>` 标签将具有 `rgb(204,205,255)` 背景色、`0.5em` 的内边距以及 1 像素的实色边框。让我们简单回顾一下几点：在 CSS 中有多种表达颜色的方法
+现在，使用这段代码，任何 `<div>` 标签将具有 `rgb(204,204,255)` 背景色、`0.5em` 的内边距以及 1 像素的实色边框。让我们简单回顾一下几点：在 CSS 中有多种表达颜色的方法
 
 - 使用十六进制（Hex），例如 `#000000` 是黑色，`#FF0000` 是红色
-- 使用 rgb，例如 `rgb(204,205,255)` 是浅紫色
+- 使用 rgb，例如 `rgb(204,204,255)` 是浅紫色
 - 使用实际的颜色名称，如 blue 或 red
 
 `Hex` 是最常用的方法。其次是使用实际的颜色单词，所以我们可以把上一个例子写成这样：
@@ -8083,7 +7654,7 @@ div {
 CSS Templates
 ```
 
-这告诉浏览器和搜索引擎该页面主要关于 CSS 模板（CSS Templates）。每个浏览器对 `<h>` 标签都有其自己的默认大小，通常每个的大小都不同，这决定了标签之间文本的渲染方式。许多默认设置是不可用的，比如 `<h1>`，因为它们太大了。但正是 CSS 发挥用场的地方，帮助我们把文本处理成我们想要的样子。
+这告诉浏览器和搜索引擎该页面主要关于 CSS 模板（CSS Templates）。每个浏览器对 `<h>` 标签都有其自己的默认大小，通常每个的大小都不同，这决定了标签之间文本的渲染方式。许多默极设置是不可用的，比如 `<h1>`，因为它们太大了。但正是 CSS 发挥用场的地方，帮助我们把文本处理成我们想要的样子。
 
 `<p>`。我们使用段落标签将页面的特定部分标记为段落。这些是块级元素，意味着它们表现为块，在每个 `<p>` 标签之前和之后会自动插入空格。你在之前的示例中见过它，在未来的示例中也会看到更多。
 
@@ -8111,10 +7682,6 @@ CSS Templates
 
 `<!DOCTYPE html>`。`<!DOCTYPE html>` 声明告诉浏览器文档是一个 HTML5 文档。它不是一个标签，而是一个声明。
 
-
-
-
-
 ```css
 font-weight: bold;
 color: #000000;
@@ -8127,32 +7694,27 @@ a:link {
   text-decoration: underline;
   font-weight: bold;
 }
-
 li a:link {
   color: #00CC00;
   text-decoration: none;
   font-weight: bold;
 }
-
 a:visited {
   color: #00CC00;
   text-decoration: underline;
   font-weight: bold;
 }
-
 li a:visited {
   color: #00CC00;
   text-decoration: none;
   font-weight: bold;
 }
-
 a:hover {
   color: rgb(0, 96, 255);
   padding-bottom: 5px;
   font-weight: bold;
   text-decoration: underline;
 }
-
 li a:hover {
   display: block;
   color: rgb(0, 96, 255);
@@ -8162,7 +7724,6 @@ li a:hover {
   border-bottom-style: solid;
   border-bottom-color: #C6EC8C;
 }
-
 a:active {
   color: rgb(255, 0, 102);
   font-weight: bold;
@@ -8178,7 +7739,6 @@ a:active {
   border-right: 1px solid #C6EC8C;
   font-weight: normal;
 }
-
 #centerDoc {
   position: absolute;
   z-index: 15;
@@ -8234,7 +7794,7 @@ a:active {
 </body>
 ```
 
-**注意：** 
+**注意：**
 
 使用你的 HTML 练习页面来边练习并构建这个页面。
 
@@ -8250,9 +7810,6 @@ a:active {
 
 1. ID 可以分配给任何 HTML 标签，无论它是什么。
 2. 你在一个页面中应该只使用一次 ID。我的意思是，一个 ID 不能用于多个元素，因为 ID 旨在用作页面元素的唯一标识符符。因此，在上一个示例中，我们知道只有一个页面元素的 ID 为 `navigation`，且只有一个页面元素的 ID 为 `centerDoc`。使用能够清晰标识元素的 ID 更好，这样你就能确切知道正在发生什么。
-
-
-
 
 试着玩一下，更改边界颜色看看效果如何。所有这些尝试都是你学习的过程，所以不要害怕做实验。
 
@@ -8372,15 +7929,17 @@ list-style-image: url(../images/arrowSmall.gif);
 list-style-image: url(../images/arrowSmall.gif);
 ```
 
-你也可以使用内置选项之一——正方形（square）、圆形（circle）或实圆（disc）。
 
-接下来，我们需要在导航的 `div` 标签之间放置一个 `<ul></ul>` 无序列表，位于 HTML 页面上“Main Navigation”（主导航）标题下方：
+
+你也可以使用内置选项之一——正方形（`square`）、圆形（`circle`）或实圆（`disc`）。
+
+接下来，我们需要在导航的 `<div>` 标签之间放置一个 `<ul></ul>` 无序列表，位于 HTML 页面上“Main Navigation”（主导航）标题下方：
 
 ```html
 <h2>The Main Navigation</h2>
 <ul>
-<li><a href="cssTutorialPage1.php">Page One</a></li>
-<li><a href="cssTutorialPage2.php">Page Two</a></li>
+  <li><a href="cssTutorialPage1.php">Page One</a></li>
+  <li><a href="cssTutorialPage2.php">Page Two</a></li>
 </ul>
 ```
 
@@ -8388,8 +7947,8 @@ list-style-image: url(../images/arrowSmall.gif);
 
 ```css
 li {
-list-style-type: disc;
-line-height: 150%;
+  list-style-type: disc;
+  line-height: 150%;
 }
 ```
 
@@ -8401,25 +7960,20 @@ line-height: 150%;
 
 在下部分，我们将查看 HTML 标签以及所需的其他内容。
 
-##网页设计师的 HTML 标签
+## 网页设计师的 HTML 标签
 
 HTML 不是一种困难的技术，学习它并不需要花费太多精力。一旦你有了基础知识，就可以进入网页设计而不需要过多思考。大多数网页设计师并没有充分利用 CSS 和 HTML 提供的功能，这不仅浪费了时间，还让生活变得复杂。
 
 逻辑标签和物理标签之间的区别是任何网页设计师都可以受益的基础 HTML 概念之一。逻辑标签用于告诉浏览器标签所包含文本的含义。例如，`<strong>` 标签就是一个逻辑标签。当你把文本放在这些标签中时，浏览器就知道这些文本非常重要。
 
-默认情况下，浏览器会将强 标签内的任何文本加粗，使其显眼出来，这就是强 标签的作用——向浏览器传达内容的重要性。这为搜索引擎在对你的页面进行排名时提供了更多参考，因为它们在研究你的网页主题时会考虑标签。
+默认情况下，浏览器会将 `<strong>` 标签内的任何文本加粗，使其显眼出来，这就是 `<strong>` 标签的作用——向浏览器传达内容的重要性。这为搜索引擎在对你的页面进行排名时提供了更多参考，因为它们在研究你的网页主题时会考虑标签。
 
 有几个逻辑标签，包括：
 
-*   强 - `<strong>` - 传达标签内文本的重要性
-
-
-
-
-
-* `Emphasize` - `<em>` - 渲染文本，让网页访问者以斜体看到它
-* `Neutral inline container` - `<span>` - 稍后讨论
-* `Neutral block element` - `<div>` - 稍后讨论
+*   **强** - `<strong>` - 传达标签内文本的重要性
+*   **Emphasize** - `<em>` - 渲染文本，让网页访问者以斜体看到它
+*   **Neutral inline container** - `<span>` - 稍后讨论
+*   **Neutral block element** - `<div>` - 稍后讨论
 
 逻辑标签始终有一个默认的渲染方法，即浏览器解释它们并在页面上显示它们的方式。然而，应该理解的是，我们使用 `CSS` 对这些标签进行样式设计，以达到我们想要的效果。
 
@@ -8427,10 +7981,10 @@ HTML 不是一种困难的技术，学习它并不需要花费太多精力。一
 
 相比之下，物理标签为浏览器提供了关于文本如何显示的的非常具体的细节。一些常用的物理标签包括：
 
-* `Bold` - `<b>` - 使包含的文本加**粗**
-* `Big` - `<big>` - 使文本比周围的文本至少大一号
-* `Font` - `<font>` - 应用指定的字体（如 `Helvetica`、`Georgia`、`Arial` 等）以及字体颜色
-* `Italics` - `<i>` - 使文本变为斜体
+*   `Bold` - `<b>` - 使包含的文本加**粗**
+*   `Big` - `<big>` - 使文本比周围的文本至少大一号
+*   `Font` - `<font>` - 应用指定的字体（如 `Helvetica`、`Georgia`、`Arial` 等）以及字体颜色
+*   `Italics` - `<i>` - 使文本变为斜体
 
 正如你从描述中可以看出，这些比逻辑标签要直观得多——所见即所得！
 
@@ -8442,7 +7996,7 @@ HTML 不是一种困难的技术，学习它并不需要花费太多精力。一
 
 ### 块级标签与内联标签 (Block-Level vs Inline Tags)
 
-我们真的需要在标签分类中区分“内联”（inline）这个描述吗？在 `HTML` 中，标签是两种情况之一：块级或内联。
+我们真的需要在标签分类中区分“内联”（`inline`）这个描述吗？在 `HTML` 中，标签是两种情况之一：块级或内联。
 
 #### 块级 HTML 标签
 
@@ -8462,31 +8016,31 @@ HTML 不是一种困难的技术，学习它并不需要花费太多精力。一
 
 每个网站都应该具备这些元素：
 
-* 结构整洁、易读且易于更新
-* 设计应该是易用的
-* 你应该拥有加载快速的轻量页面
-* 智能地使用技术。例如，如果你的页面不需要 `Flash`，不要仅仅因为觉得它很酷就使用它
-* 你的网站应该立即传达它的含义
+*   结构整洁、易读且易于更新
+*   设计应该是易用的
+*   你应该拥有加载快速的轻量页面
+*   智能地使用技术。例如，如果你的页面不需要 `Flash`，不要仅仅因为觉得它很酷就使用它
+*   你的网站应该立即传达它的含义
 
 让我们来拆解一下：
 
-1. **整洁的结构 (A Clean Structure)**
+1.  **整洁的结构 (A Clean Structure)**
 
 在不久以前，你打开的几乎每个网页都有奇怪的动画；虽然在当时看起来可能很有趣，但现在，设计师们实际上已经开始使用设计原则并创建纤细、极简的网站。困难之处在于，设计并没有它所应该是的灵活。因为网站在不断变化，如果仅仅添加一个导航按钮就要花费大量工作，那么你就需要重新考虑你的设计了。元素应该能够自由地添加和删除，没有任何困难。
 
-2. **易用的设计 (A Usable Design)**
+2.  **易用的设计 (A Usable Design)**
 
-易用性（Usability）可能是最新的流行词之一，但对于网页设计来说，它同样重要。这意味着访问者应该能够轻松地浏览你的网站，而不必四处寻找东西。如果他们做不到，那是你的错，是归因于设计糟糕。
+易用性（`Usability`）可能是最新的流行词之一，但对于网页设计来说，它同样重要。这意味着访问者应该能够轻松地浏览你的网站，而不必四处寻找东西。如果他们做不到，那是你的错，是归因于设计糟糕。
 
-3. **加载快速的轻量页面 (Light Pages That Load Fast)**
+3.  **加载快速的轻量页面 (Light Pages That Load Fast)**
 
 这是最老的规则之一，也是你必须遵守的规则。如果你的网页加载时间过长（我指的是超过几秒钟），人们就会离开并寻找其他内容。在高速互联网下这不是一个大问题，但在所有网络速度下，加载速度始终是一个需要考虑的问题。
 
-4. **智能地使用技术 (Using Technology Intelligently)**
+4.  **智能地使用技术 (Using Technology Intelligently)**
 
 这对大多数人来说是常识。仅仅因为技术在那儿，并不意味着你需要把它们都放在网页上。设计的核心在于智能，在于只使用你制作理想页面所需的工具，而不是当时的时尚潮流。
 
-5. **立即传达你的含义 (Get Your Meaning Across Immediately)**
+5.  **立即传达你的含义 (Get Your Meaning Across Immediately)**
 
 没有什么比打开一个网页并试图弄清楚它是关于什么的更糟糕的。设计可能很完美，但如果没人能看，那都是浪费时间。
 
@@ -8496,18 +8050,15 @@ HTML 不是一种困难的技术，学习它并不需要花费太多精力。一
 
 网页设计不需要特殊的硬件；一台连接了互联网的普通电脑就绰有余了。当然，如果你想花几千美元买一台新的 `OC` 也可以但在那之前，请理解：
 
-* 一个 `HTML` 页面仅仅是一个文本文档
+*   一个 `HTML` 页面仅仅是一个文本文档
 
 网页设计更多是关于创建 `HTML` 页面，而不是华丽的动画和设计。
-
-
-
 
 真的没有所谓的“一刀切”方法，尤其是在为移动设备开发 Web 应用程序时。是的，当然，有很多可以考虑的最佳实践，而且并非所有这些都是技术层面的。首先，你的目标受众是谁？他们是想要一个移动版本的应用，还是一个原生移动应用？混合应用和原生应用之间有什么区别？你手头有哪些哪些开发资源？他们对哪些移动技术最熟悉？你是否构思过许可和销售模型？它是什么？
 
 我还可以继续下去，但总的来说，除一两个例外外，移动 Web 应用是最快且最廉的路径，比原生移动应用更是如此，特别是当你的主要目标是支持尽可能多的不同设备时。硬币的另一面可能存在像运动传感器等移动设备特有的功能，这些功能对应用至关重要，但只能通过原生应用访问——这会让移动 Web 应用变得无从选择。
 
-如果我们跳出 Web 与原生应用的话题，还有混合应用（Hybrid App）。取决于你的需求以及资源限制，这可能是你正在寻找的答案。像原生移动应用一样，混合应用运行在移动设备上而不是浏览器中，但它是使用 CSS、HTML5 和 JavaScript Web 技术构建的。通常，它们由混合框架支撑并在原生容器中运行。同时，它们利用了设备上浏览器引擎的力量，但不是通过浏览器来渲染 HTML 和本地处理 JavaScript。抽象层的加入使得移动 Web 应用中无法访问的设备功能得以被使用，这包括本地存储、加速度计、摄像头等。
+如果我们跳出 Web 与原生应用的话题，还有混合应用（`Hybrid App`）。取决于你的需求以及资源限制，这可能是你正在寻找的答案。像原生移动应用一样，混合应用运行在移动设备上而不是浏览器中，但它是使用 CSS、HTML5 和 JavaScript Web 技术构建的。通常，它们由混合框架支撑并在原生容器中运行。同时，它们利用了设备上浏览器引擎的力量，但不是通过浏览器来渲染 HTML 和本地处理 JavaScript。抽象层的加入使得移动 Web 应用中无法访问的设备功能得以被使用，这包括本地存储、加速度计、摄像头等。
 
 无论你选择移动 Web 应用、原生移动应用还是混合应用路线，你都必须确保在开始之前妥善研究并确认你的这些假设。假设你选择开发一个原生移动电商应用来销售你的产品。根据 HubSpot 的数据，超过 70% 的使用移动设备购物的用户是通过移动 Web 应用而不是原生应用完成的，因此你的应用可能会在第一个关卡上就折戟。研究是关键。
 
@@ -8561,26 +8112,17 @@ only screen and (min-device-pixel-ratio: 2) {
 
 ### 移动 Web 应用性能优化
 
-
-
-
 作为一名移动应用开发者，你最不想听到的字就是：“为什么这这么慢？！”为了确保你永远不会听到这些话，你必须非常仔细地考虑如何减少和优化每一个字节，并且你必须对每一次服务器传输进行同样的操作，以确保用户不会被无故等待。期望所有传输都通过 Wi-Fi 网络进行是不切实际的；许多用户更倾向于使用移动数据，或者只有这一种选择；而且值得记住，超过 60% 的移动 Web 应用用户期望网站在 3 秒内在他们的设备上加载。同样，Google 的研究表明，应用或网站每多花 5 秒钟加载，流量就会下降约 20%。搜索引擎在计算页面质量评分时，也将加载时间作为考量因素之一。
 
 以下是一些可以帮助你优化移动 Web 应用性能并将延迟降至绝对最低的技巧：
 
-*   图像优化 - 应用内图像的加载时间是影响移动设备加载时间最大的问题之一。你可以使用如 `smushit.com` 这样的在线优化器来帮助优化图像。
-
-*   代码压缩 – 如果你能够压缩 `CSS` 和 `JavaScript` 文件，就可以显著提高性能。
-
-*   数据库查询 – 并非所有移动设备接受的 Cookie 数量与桌面浏览器相同，这可能导致更多的数据库查询。确保为移动 Web 应用客户端配备服务器端缓存至关重要。还要记住，你需要使用正确的过滤器来防止 `SQL` 注入，因为这会严重损害你的服务器和网站安全。
-
-*   CDN – 如果你打算在应用中使用大量的视频、音频文件、图像和其他媒体类型，你应该认真考虑使用内容分发网络（CDN）。一些最好的商业性 CDN 包括 `Microsoft Windows Axure`、`Amazon S3` 和 `MaxCDN`，其益处是巨大的：
-
-*   更好的下载性能 – 当你使用 `CDN` 提供的资源时，你可以分发 Web 应用加载，使用更少的带宽并获得得多的性能。高端 CDN 提供更高水平的可用性、更低的丢包率和更低的延迟，而且许多 CDN 在全球范围内都拥有数据中心，允许用户从距离其最近的服务器下载。
-
-*   并发下载 – 通常，浏览器会限制单个域名允许的并发连接数；超过此限制后，任何其他下载都会被阻塞。尝试从一个网站下载许多大文件，你可能会看到这种现象。在不同域名上每增加一个 `CDN`，就可以允许更多的并发下载。
-
-*   更强大的分析 – 某些商业 CDN 提供使用报告，你可以在网站分析之外额外使用这些报告。
+*   **图像优化** - 应用内图像的加载时间是影响移动设备加载时间最大的问题之一。你可以使用如 `smushit.com` 这样的在线优化器来帮助优化图像。
+*   **代码压缩** – 如果你能够压缩 `CSS` 和 `JavaScript` 文件，就可以显著提高性能。
+*   **数据库查询** – 并非所有移动设备接受的 Cookie 数量与桌面浏览器相同，这可能导致更多的数据库查询。确保为移动 Web 应用客户端配备服务器端缓存至关重要。还要记住，你需要使用正确的过滤器来防止 `SQL` 注入，因为这会严重损害你的服务器和网站安全。
+*   **CDN** – 如果你打算在应用中使用大量的视频、音频文件、图像和其他媒体类型，你应该认真考虑使用内容分发网络（`CDN`）。一些最好的商业性 CDN 包括 `Microsoft Windows Axure`、`Amazon S3` 和 `MaxCDN`，其益处是巨大的：
+    *   **更好的下载性能** – 当你使用 `CDN` 提供的资源时，你可以分发 Web 应用加载，使用更少的带宽并获得得多的性能。高端 CDN 提供更高水平的可用性、更低的丢包率和更低的延迟，而且许多 CDN 在全球范围内都拥有数据中心，允许用户从距离其最近的服务器下载。
+    *   **并发下载** – 通常，浏览器会限制单个域名允许的并发连接数；超过此限制后，任何其他下载都会被阻塞。尝试从一个网站下载许多大文件，你可能会看到这种现象。在不同域名上每增加一个 `CDN`，就可以允许更多的并发下载。
+    *   **更强大的分析** – 某些商业 CDN 提供使用报告，你可以在网站分析之外额外使用这些报告。
 
 ## 移动 Web 应用开发工具
 
@@ -8596,17 +8138,12 @@ only screen and (min-device-pixel-ratio: 2) {
 
 将 `jQuery` 与 `Sencha Touch` 比较，我们可以看到几点根本区别：
 
-*   外观和感受 – 一般来说，`Sencha Touch` 应用的外观和感受优于 `jQuery Mobile`，但这种反应是主观的。
-
-*   扩展性 – `jQuery Mobile` 提供了大量的第三方扩展并具有高度的可扩展性；而 `Sencha Touch` 是一个更封闭的框架。
-
-*   设备支持 – `jQuery Mobile` 支持的移动设备比 `Sencha Touch` 多。
-
-*   HTML vs JavaScript – `jQuery` 更偏向 `HTML`，主要用于在 `JavaScript` 中操作和扩展 `HTML` 代码。`Sencha Touch` 完全基于 `JavaScript` —— 还记得之前我提到过你需要考虑自己的开发资源吗？当你组建团队时，考虑一下这些问题。
-
-*   外部依赖 – `jQuery Mobile` 需要 `jQuery` 和 `jQuery UI` 来操作 `DOM`，而 `Sencha` 没有任何外部依赖。
-
-*   学习曲线 – 对于大多数开发者来说，`jQuery` 比 `Sencha Touch` 更容易学习，也许是因为许多开发者已经已经熟悉了许多 `jQuery` 库。
+*   **外观和感受** – 一般来说，`Sencha Touch` 应用的外观和感受优于 `jQuery Mobile`，但这种反应是主观的。
+*   **扩展性** – `jQuery Mobile` 提供了大量的第三方扩展并具有高度的可扩展性；而 `Sencha Touch` 是一个更封闭的框架。
+*   **设备支持** – `jQuery Mobile` 支持的移动设备比 `Sencha Touch` 多。
+*   **HTML vs JavaScript** – `jQuery` 更偏向 `HTML`，主要用于在 `JavaScript` 中操作和扩展 `HTML` 代码。`Sencha Touch` 完全基于 `JavaScript` —— 还记得之前我提到过你需要考虑自己的开发资源吗？当你组建团队时，考虑一下这些问题。
+*   **外部依赖** – `jQuery Mobile` 需要 `jQuery` 和 `jQuery UI` 来操作 `DOM`，而 `Sencha` 没有任何外部依赖。
+*   **学习曲线** – 对于大多数开发者来说，`jQuery` 比 `Sencha Touch` 更容易学习，也许是因为许多开发者已经已经熟悉了许多 `jQuery` 库。
 
 ### 响应式框架与移动 Web 应用
 
@@ -8614,31 +8151,25 @@ only screen and (min-device-pixel-ratio: 2) {
 
 `Foundation` 和 `Bootstrap` 的一些根本区别在于：
 
-*   目标平台 – `Bootstrap` 确实支持平板、智能手机和桌面电脑，但其重点是桌面端；而 `Foundation` 设计适用于几乎所有类型和尺寸的屏幕。
-
-*   浏览器兼容性 – `Bootstrap` 支持 `IE7` 及以上，而 `Foundation` 限于 `IE9` 及以上。
-
-*   布局与组件 – `Bootstrap` 提供的 UI 集合比 `Foundation` 多。
-
-*   自动调整 – 在 `Foundation` 中，网格会根据浏览器的高度和宽度进行拉伸或缩小；而在 `Bootstrap` 中，仅支持基于标准屏幕尺寸集的预定义网格大小。
+*   **目标平台** – `Bootstrap` 确实支持平板、智能手机和桌面电脑，但其重点是桌面端；而 `Foundation` 设计适用于几乎所有类型和尺寸的屏幕。
+*   **浏览器兼容性** – `Bootstrap` 支持 `IE7` 及以上，而 `Foundation` 限于 `IE9` 及以上。
+*   **布局与组件** – `Bootstrap` 提供的 UI 集合比 `Foundation` 多。
+*   **自动调整** – 在 `Foundation` 中，网格会根据浏览器的高度和宽度进行拉伸或缩小；而在 `Bootstrap` 中，仅支持基于标准屏幕尺寸集的预定义网格大小。
 
 ### 移动 Web 应用的调试与测试
 
 调试移动应用并不总是总是易的，整个过程可能非常沮丧。如果你需要找到多种不同类型和尺寸的设备进行测试，或者需要安装 `SDK` 来模拟目标平台，情况会更加棘手——而且这些工具通常离完美还有很远！
 
-
-
-
 在这种背景下，开发移动 Web 应用与开发原生应用相比具有明显的优势——可以使用基于浏览器的标准开发工具进行调试。远程调试是一种常见的形式，对于这种调试，最好的工具之一就是 `Chrome` 其非常流行的 `DevTools`。你也可以在 `Firefox` 中使用 `Firebug`，在 `Opera` 中使用 `Dragonfly`。
 
 `Chrome DevTools` 最受欢迎，是因为：
 
-*   移动模拟器 – 仅此一点就是 `DevTools` 成为开发者首选的主要原因。它是调试移动 Web 应用的极佳方式，其一些最佳功能包括触控事件仿真、网络带宽限制、用户代理伪装、地理定位和设备方向覆盖、CSS 媒体类型仿真等。
-*   交互式编辑器 – 你可以在编写代码的过程中直接编辑 `CSS` 和 `JavaScript`。
-*   JavaScript 调试器 – 也是最好的调试器之一。这个调试器允许你在执行时对 `JavaScript` 进行性能分析，并允许设置 DOM 断点。
-*   `JSON` 和 `XML` 查看器 – 这意味着不需要使用插件来检查服务器响应。
-*   通过 USB 支持 `ADB` 协议 – Android 调试桥（Android Debug Bridge）使得实例化调试会话变得简单。
-*   动态资源检查 – 你可以检查应用的本地数据源，包括 `Web SQL` 和 `IndexedDB` 数据库、`cookies`、`local storage`、`session storage` 以及应用程序缓存资源。此外，你还可以快速访问应用的视觉资源，如字体、图像和 `style sheets`，这样你可以轻松查看是否存在任何问题。
+*   **移动模拟器** – 仅此一点就是 `DevTools` 成为开发者首选的主要原因。它是调试移动 Web 应用的极佳方式，其一些最佳功能包括触控事件仿真、网络带宽限制、用户代理伪装、地理定位和设备方向覆盖、CSS 媒体类型仿真等。
+*   **交互式编辑器** – 你可以在编写代码的过程中直接编辑 `CSS` 和 `JavaScript`。
+*   **JavaScript 调试器** – 也是最好的调试器之一。这个调试器允许你在执行时对 `JavaScript` 进行性能分析，并允许设置 DOM 断点。
+*   **`JSON` 和 `XML` 查看器** – 这意味着不需要使用插件来检查服务器响应。
+*   **通过 USB 支持 `ADB` 协议** – Android 调试桥（`Android Debug Bridge`）使得实例化调试会话变得简单。
+*   **动态资源检查** – 你可以检查应用的本地数据源，包括 `Web SQL` 和 `IndexedDB` 数据库、`cookies`、`local storage`、`session storage` 以及应用程序缓存资源。此外，你还可以快速访问应用的视觉资源，如字体、图像和 `style sheets`，这样你可以轻松查看是否存在任何问题。
 
 还有许多在线工具可以用来测试你的移动 Web 应用的跨浏览器兼容性和布局。其中一种工具称为 `BrowserStack`；只需输入你的应用程序 URL，选择你的浏览器、操作系统等，你将获得一个仿真视图，包括你的应用在指定环境中的加载速度。
 
@@ -8649,18 +8180,23 @@ only screen and (min-device-pixel-ratio: 2) {
 ## 最后的概述
 
 ### 什么是移动 Web 应用？
+
 这些是经过优化可以在移动设备上运行的 Web 应用程序。它们并不是移动应用；而是使用 `CSS` 和 `HTML` 编写并运行在浏览器中的网站。它们的设计旨在看起来和用像移动应用，但实际上与移动应用几乎没有什么共同点。
 
 ### 什么是原生应用？
+
 原生应用是为特定平台使用该平台特定的 `APIs` 编写的应用程序。
 
 ### 什么是混合应用？
+
 混合应用是使用 Web 技术（如 `CSS` 和 `HTML`）编写的，但通过一个薄的原生 Web 浏览器将其封装起来。这些应用可以非常快速地移植到多个平台，并在使用相同代码库的情况下运行。
 
 ### 原生应用和移动 Web 应用之间的用户体验是否存在差异？
+
 移动 Web 应用是针对移动设备运行优化的网站，如果做得恰当，其用户体验类似于混合应用或原生应用。
 
 ### 为什么原生应用在性能方面通常更优？
+
 因为它们是使用特定的 `APIs` 为特定平台开发的。混合应用往往更慢，且 更多，因为它们必须经过许多容器并层层过关才能工作。
 
 实际开发移动应用不在本书的范围之内，主要是因为这并不是一个“一刀切”的情况。变体太多，需要考虑的平台也太多，它确实需要比我们在这里提供的提供的多得空间。希望你现在对如何开发移动 Web 应用有了一个概念，现在我们进入响应式设计部分。
@@ -8677,7 +8213,7 @@ only screen and (min-device-pixel-ratio: 2) {
 
 ### 响应式 vs. 自适应 vs. 移动
 
-“响应式”（responsive）一词对某些人来说并不新，另一些人更熟悉“自适应”（adaptive）或“移动”（mobile）术语。这可能让你产生疑问，这三者之间有什么区别？
+“响应式”（`responsive`）一词对某些人来说并不新，另一些人更熟悉“自适应”（`adaptive`）或“移动”（`mobile`）术语。这可能让你产生疑问，这三者之间有什么区别？
 
 自适应设计和响应式设计非常接近，你经常看到这两个术语被用于同一事物。通常，响应式意味着对变化的快速且积极的反应，而自适应意味着为了新情况（如变化）易于更改或修改。响应式设计的网站会根据各种因素连续且流畅地变化，而自适应的网站是使用一组预定义的因素构建的。理想的情况是结合这两种实践构建网站，因为这将为功能完整的网站提供完美的结合。因此，答案是，使用哪个术语没有太大区别。
 
@@ -8689,18 +8225,14 @@ only screen and (min-device-pixel-ratio: 2) {
 
 我们可以将响应式 Web 设计分为三个主要部分，第一部分是灵活布局。这是一种围绕使用灵活网格构建网站布局的实践。这种网格会在需要时动态调整到所需的宽度。为了构建灵活网格，我们需要相对长度单位，通常是 `em` 单位或百分比。这些单位随后被用于声明常用网格属性的值，如 `padding`、`margin` 或 `width`。
 
-相对视口长度
+#### 相对视口长度
 
+通过 CSS3，我们获得了一些专门与设备或浏览器视口大小相关的相对长度单位。这些单位包括 `vw`、`vh`、`vmin` 和 `vmax`。目前，对这些单位的支持并不完美，但正在不断提高，最终，它们将在响应式网站构建中发挥重要作用。
 
-
-
-
-通过 CSS3，我们获得了一些专门与设备或浏览器视口大小相关的相对长度单位。这些单位包括 `vw`、`vh`、`vmin` 和 `vmax`。目前，对这些单位的支持并不完美，但正在不断提高，最终，它们将在响应式网站构建中发挥重要作用。**
-
-- `vw` – 视口宽度
-- `vh` – 视口高度
-- `vmin` – 视口高度和宽的
-- `vmax` – 视口高度和宽的最大
+*   `vw` – 视口宽度
+*   `vh` – 视口高度
+*   `vmin` – 视口高度和宽的
+*   `vmax` – 视口高度和宽的最大
 
 在使用弹性布局时，你不应该使用固定测量单位（如英寸或像素）。为什么呢？因为视口的高度和宽度会根据所使用的设备而不断变化。所有的网站布局都需要能够轻松地适应这种变化，而固定值就太具有限制性了。然而，我们可以使用一个非常简单的公式，通过相对值来确定弹性布局的比例。
 
@@ -8710,9 +8242,10 @@ only screen and (min-device-pixel-ratio: 2) {
 
 ## 弹性网格
 
-让我们尝试在一个双列布局中使用一下这种方法。在下面的示例中，我们有一个父元素，类名为 `container`，它包裹着类名为 `aside` 和 `section` 的元素。我们想要实现的是让 `section` 元素位于左侧，aside` 元素位于右侧，并在它们之间保持等间距。通常，这种布局的 HTML 和 CSS 样式和标记如下：
+让我们尝试在一个双列布局中使用一下这种方法。在下面的示例中，我们有一个父元素，类名为 `container`，它包裹着类名为 `aside` 和 `section` 的元素。我们想要实现的是让 `section` 元素位于左侧，`aside` 元素位于右侧，并在它们之间保持等间距。通常，这种布局的 HTML 和 CSS 样式和标记如下：
 
 ### HTML
+
 ```html
 <div class="container">
   <section>...</section>
@@ -8721,6 +8254,7 @@ only screen and (min-device-pixel-ratio: 2) {
 ```
 
 ### CSS
+
 ```css
 .container {
   width: 538px;
@@ -8767,10 +8301,10 @@ aside {
 
 我们还可以将弹性布局的概念和公式重新应用于网格的不同部分。其结果将是一个完全动态的网站，可以轻松缩放以适应所有尺寸的视口。你还可以进一步，通过利用许多属性来对弹性布局进行更多的控制，即：
 
-- `min-width`
-- `max-width`
-- `min-height`
-- `max-height`
+*   `min-width`
+*   `max-width`
+*   `min-height`
+*   `max-height`
 
 但仅使用这种布局是不够的。有时浏览器的视口宽度太小，无法进行比例缩放，你将得到无法正确显示内容的微小列。如果布局太小甚至太大，文本将变得不可读，而且布局还有可能会崩溃的风险。在这种情况下，我们可以使用媒体查询来构建得更好的布局。
 
@@ -8782,19 +8316,21 @@ aside {
 
 使用媒体查询有多种方法：
 
-- 在已有的样式表中使用 `@media` 规则
-- 使用 `@import` 规则导入全新的样式表
-- 从 HTML 文档链接到样式表
+*   在已有的样式表中使用 `@media` 规则
+*   使用 `@import` 规则导入全新的样式表
+*   从 HTML 文档链接到样式表
 
 最常见的方法是第一种，在已有的样式表中使用 `@media` 规则，因为这可以避免产生更多的 HTTP 请求：
 
 ### HTML
+
 ```html
 <!-- 独立的 CSS 文件 -->
 <link href="styles.css" rel="stylesheet" media="all and (max-width: 1024px)">
 ```
 
 ### CSS
+
 ```css
 /* @media 规则 */
 @media all and (max-width: 1024px) {...}
@@ -8805,17 +8341,13 @@ aside {
 
 每个查询可能包含一个媒体类型，其后面至少跟着一个表达式。常见的媒体类型包括：
 
-- All（全部）
-- Screen（屏幕）
-- Print（打印）
-- Tv（电视）
-- Braille（盲文）
+*   All（全部）
+*   Screen（屏幕）
+*   Print（打印）
+*   Tv（电视）
+*   Braille（盲文）
 
 HTML5 规范中还包含了新类型，其中包括 3D 眼镜。如果没有指定媒体类型，查询将使用媒体默认值，即 screen（屏幕）。
-
-
-
-
 
 我们可以在许多媒体特性上使用 `min` 和 `max` 前缀。`min` 前缀用于表示大于或等于的值，而 `max` 前缀用于表示小于或等于的值。当我们使用这些前缀时，可以避免与通常使用的 HTML 语法产生冲突，具体来说就是避免使用 `< >` 符号。
 
@@ -8823,7 +8355,7 @@ HTML5 规范中还包含了新类型，其中包括 3D 眼镜。如果没有指�
 
 此特性用于判断设备处于何种方向模式——横屏或竖屏。当显示器宽度大于高度时，触发横屏模式；当设备高度大于宽度时，触发竖屏模式。这对于移动设备来说是一个重要的特性：
 
-```
+```css
 @media all and (orientation: landscape) {...}
 ```
 
@@ -8833,7 +8365,7 @@ HTML5 规范中还包含了新类型，其中包括 3D 眼镜。如果没有指�
 
 宽高比特性的值由一对正整数组成，中间用正斜杠 `/` 分隔。第一个整数标识像素宽度，第二个整数标识像素高度。
 
-```
+```css
 @media all and (min-device-aspect-ratio: 16/9) {...}
 ```
 
@@ -8841,7 +8373,7 @@ HTML5 规范中还包含了新类型，其中包括 3D 眼镜。如果没有指�
 
 除了宽高比特性外，我们还有像素比例特性。除了 `min` 前缀和 `max` 前缀，这些特性还包含 `device-pixel-ratio` 特性。具体来说，这个像素比例特性是识别具有高分辨率显示设备（包括 Retina 显示）的极佳工具。实现此目的的媒体查询如下：
 
-```
+```css
 @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min-device-pixel-ratio: 1.3) {...}
 ```
 
@@ -8849,7 +8381,7 @@ HTML5 规范中还包含了新类型，其中包括 3D 眼镜。如果没有指�
 
 我们使用 `resolution` 媒体特性来指定输出设备的像素密度分辨率，这也被称为 `DPI` 或 `dots-per-inch`。该特性同时接受 `min` 和 `max` 特性，并且接受每像素点 (`1.3dppx`)、每厘米点 (`118dpcm`) 以及许多其他基于长度的像素值。
 
-```
+```css
 @media print and (min-resolution: 300dpi) {...}
 ```
 
@@ -8869,7 +8401,7 @@ HTML5 规范中还包含了新类型，其中包括 3D 眼镜。如果没有指�
 
 让我们实践起来，再次使用媒体查询编写我们之前的灵活布局。目前演示中最大的问题之一是，在较小的视口中，`aside` 的宽度有时变得太小，以至于毫无用处。我们可以通过包含一个针对宽度小于 `420px` 的视口的媒体查询来改变这一点——关闭浮动并更改 `aside` 和 `section` 的宽度：
 
-```
+```css
 @media all and (max-width: 420px) {
   section, aside {
     float: none;
@@ -8888,7 +8420,7 @@ HTML5 规范中还包含了新类型，其中包括 3D 眼镜。如果没有指�
 
 ## 移动优先 (Mobile First)
 
-使用媒体查询的最流行技术之一被称为“移动优先”（mobile first）。这种方法利用了针对小视口的样式，并将这些样式设置为网站的默认样式；媒体查询则用于在视口尺寸增大时添加新样式。
+使用媒体查询的最流行技术之一被称为“移动优先”（`mobile first`）。这种方法利用了针对小视口的样式，并将这些样式设置为网站的默认样式；媒体查询则用于在视口尺寸增大时添加新样式。
 
 移动优先设计背后的核心理念是：当用户在使用智能手机或平板电脑（视口要小得多）时，他们不应该先加载桌面端样式，稍后又被移动端样式覆盖。这完全是浪费时间和宝贵的带宽——对于任何追求快速网站的人来说，这是一个非常重要的因素。
 
@@ -8932,10 +8464,12 @@ aside {
   .container {
     max-width: 538px;
   }
+
   section {
     float: left;
     width: 63.197026%;
   }
+
   aside {
     float: right;
     width: 29.3680297%;
@@ -8949,15 +8483,11 @@ aside {
 
 如今的移动设备很好地显示了任何网站，但客观地说，它们有时确实需要帮助，特别是在识别比例、视口大小和分辨率方面。Apple 为这个问题提供了一个“良方”——视口元标签。
 
-
-
-
-
-当你将 `viewport` 标签与 `width` 或 `height` 值一起使用时，就会定义视口（viewport）的宽度或高度。这些值中的每一个都接受一个关键字或正值。对于 `height`，该属性将接受关键字 `device-height` 值；对于 `width`，该属性将接受关键字 `device-width` 值。当你使用这些关键词时，可以确保继承设备的默认宽度和高度值。
+当你将 `viewport` 标签与 `width` 或 `height` 值一起使用时，就会定义视口（`viewport`）的宽度或高度。这些值中的每一个都接受一个关键字或正值。对于 `height`，该属性将接受关键字 `device-height` 值；对于 `width`，该属性将接受关键字 `device-width` 值。当你使用这些关键词时，可以确保继承设备的默认宽度和高度值。
 
 为了获得最佳效果并确保你的网站看起来最完美，你应该使用设备默认值，这通过应用 `device-width` 和 `device-height` 值来实现。
 
-```
+```html
 <meta name="viewport" content="width=device-width">
 ```
 
@@ -8965,20 +8495,20 @@ aside {
 
 如果你希望对网站在移动设备上的缩放以及用户如何缩放进行更多控制，你应该使用这些属性：
 
-- `Minimum-scale`
-- `Maximum-scale`
-- `Initial-scale`
-- `User-scalable`
+*   `Minimum-scale`
+*   `Maximum-scale`
+*   `Initial-scale`
+*   `User-scalable`
 
 最初，网站的缩放比例应该应该设置为 `1`，因为这定义了竖屏模式下 `device-height` 与视口大小之间的比例。如果设备恰好处于横屏模式，则比例将是设备 `width` 与视口大小之间的比例。`Initial-scale` 值必须是 `0` 到 `10` 之间的正整数。
 
-```
+```html
 <meta name="viewport" content="initial-scale=2">
 ```
 
 `minimum-scale` 和 `maximum-scale` 的值应该决定视口的最小和最大缩放比例。当你使用 `minimum-scale` 时，你使用的值应该是一个小于或等于 `initial-scale` 值的正整数。同样，`maximum-scale` 的值应该是一个大于或等于 `initial-scale` 的正整数。这两个值都应该在 `0` 到 `10` 之间。
 
-```
+```html
 <meta name="viewport" content="minimum-scale=0">
 ```
 
@@ -8986,7 +8516,7 @@ aside {
 
 你永远不要在网站上禁用缩放能力，因为这会损害可用性和可访问性，并导致某些残障人士无法查看你的网站。
 
-```
+```html
 <meta name="viewport" content="user-scalable=yes">
 ```
 
@@ -8994,15 +8524,15 @@ aside {
 
 允许浏览器根据视口的缩放值来决定网站应如何缩放是一件好事。如果你需要更多控制，特别是在涉及设备分辨率时，请使用 `target-densitydpi` 值。此视口将接受多个不同的值，包括：
 
-- `Device-dpi`
-- `High-dpi`
-- `Medium-dpi`
-- `Low-dpi`
-- 一个 DPI 数字
+*   `Device-dpi`
+*   `High-dpi`
+*   `Medium-dpi`
+*   `Low-dpi`
+*   一个 DPI 数字
 
 虽然使用 `target-densitydpi` 值的情况并不常见，但如果你需要进行像素级的控制，它是非常有用的。
 
-```
+```html
 <meta name="viewport" content="target-densitydpi=device-dpi">
 ```
 
@@ -9010,7 +8540,7 @@ aside {
 
 你可以为视口 meta 标签提供单个和多个值，这允许你同时设置多个视口属性。要做到这一点，每个值都必须在 `content` 属性的值内部用逗号分隔。你可以从下文中看到视口值的推荐大纲，它同时使用了 `initial-scale` 和 `width` 属性。
 
-```
+```html
 <meta name="viewport" content="width=device-width, initial-scale=1">
 ```
 
@@ -9070,9 +8600,6 @@ iframe {
 }
 ```
 
-
-
-
 浏览器环境是 JavaScript 倾向于集成的地方，这意味着它们可以获取有关 HTML 页面和浏览器的信息。这些信息可以被修改，而屏幕上的内容正是这样变化的。能够访问这些信息意味着 JavaScript 要强大得多，并赋予了你对浏览体验的更多控制权，能够在用户点击鼠标、指向页面上的特定元素或其他事件时提供快速的响应。
 
 也许更重要的是，JavaScript 真的非常容易学习和使用。它确实有技术性，但只要花一点时间，你很快就能像专家一样编写脚本了。
@@ -9101,7 +8628,7 @@ Java 和 JavaScript 还具有其他相似之处。其中最重要的一点是两
 
 这些每一个对象都有自己的属性，而这些属性具有定义长度、颜色等的值。JavaScript 具有读取和修改这些属性的能力，或者它可以对对象上发生的事情做出反应，在浏览器窗口中瞬间更改对象。脚本可以独立运行，也可以对用户交互做出反应。
 
-脚本对对象执行或通过对象进行的每一个动作都被称为方法（method）。方法是构建在对象中的函数。用户控制的事件（如鼠标移动、点击等）是通过事件处理器处理的，而事件处理器也是命令。汇合在一起，这些概念构成了 JavaScript 编程的基础。
+脚本对对象执行或通过对象进行的每一个动作都被称为方法（`method`）。方法是构建在对象中的函数。用户控制的事件（如鼠标移动、点击等）是通过事件处理器处理的，而事件处理器也是命令。汇合在一起，这些概念构成了 JavaScript 编程的基础。
 
 `DOM` 赋予你访问所有不同页面对象的能力。正如之前提到的，曾经出现过这种情况：两个最大的浏览器支持不同的 `DOM` 版本。Netscape 的 `DOM` 无法与 Microsoft 的 `DOM` 正常工作，这意味着为一个浏览器编写的动态 HTML 无法在另一个浏览器中运行。最近，该模型被标准化，因此创建了 DOM 层 1。关于这一点稍后会介绍，但目前你不需要太担心，除非你打算创建一个由 JavaScript 驱动的大型网站。
 
@@ -9113,11 +8640,8 @@ Java 和 JavaScript 还具有其他相似之处。其中最重要的一点是两
 
 ```html
 <script type="text/javascript">
-
 <!--
-
 document.write("<i>Hello World!</i>");
-
 //-->
 </script>
 ```
@@ -9142,38 +8666,30 @@ Hello World!
 
 考虑结束标签；通常的抽象优势同样适用。该脚本文件可以更新，你的所有页面都会随之更改。脚本文件会被缓存，这意味着对于任何需要它的页面，都不需要再次下载。
 
-
-
-
 首先，我们接管了文档对象的控制权，并利用其中的 `write()` 方法将文本输出到文档中。括在双引号内的文本是一个字符串，它将被添加到网页中。听起来很简单，对吧？通过使用对象的方法或属性，我们编写对象的名称，后跟一个点，然后是属性或方法的名称。脚本中的每行代码都以分号结束。这非常重要——JavaScript 中没有没有余地；如果某行代码写错了，将抛出错误代码，所以请小心。
 
 在结束这一部分之前，再来看一个例子。新脚本创建了 HTML 和文本。
 
 ```html
 <script type="text/javascript">
-
 <!--
-
 document.write("<h1>Main Title</h1>");
-
 document.write("<p align='right'>Body</p>");
-
 //-->
-
 </script>
 ```
 
 注意：当属性值被引用时，必须使用单引号。如果你使用双引号，`write()` 方法将认为字符串提前结束，并抛出错误。
 
-<noscript>
+### `<noscript>`
 
 `<noscript>` 标签是一种方法，当浏览器不支持 JavaScript 或在现代浏览器中禁用了 JavaScript 时，为浏览器提供替代内容。它的工作方式非常简单——旧浏览器不理解这个标签，因此它们会忽略它，只显示里面的内容；而现代浏览器会理解该标签并跳过其中的内容。它可以像这样使用：
 
+```html
 <noscript>
-
 <p>对不起，您的浏览器不支持 JavaScript。</p>
-
 </noscript>
+```
 
 你还可以做的另一件事是提供与脚本产生产物类似的内容。在某些情况下，没有有意义的等效物，这意味着 `<noscript>` 标签是完全无关紧的。尽管如此，请尽可能地使用该标签，因为它可以确保你的内容始终是可访问的。
 
@@ -9211,8 +8727,6 @@ document.write("<p align='right'>Body</p>");
 
 如果你在网页上使用处理器，你可能会发现，当状态栏被设置后，它不会改变。`return` 规则有一个例外——写入状态栏的文本。你可能会认为设置为 `false` 会停止显示 `href` 的默认行为，但事实并非如此。为了处理器执行，它必须返回 `true`。
 
-（注：原文此处存在大量重复段落，译文已根据要求去重并保持逻辑）
-
 ### 表单事件
 
 事件还可以由窗口在卸载开始时触发，这会在链接被跳转或窗口被关闭时发生。这对于在用户离开你的网站时打开更多窗口非常有用。
@@ -9220,8 +8734,6 @@ document.write("<p align='right'>Body</p>");
 ```html
 <input type="text" value="Change me" onchange="alert('You\'ve changed, man');">
 ```
-
-
 
 注意，警框文本中使用了一个单引号。通常你无法这样做，因为这会过早结束字符串，所以我们使用反斜杠 `\` 来转义该字符。这在编程中非常常见，且反斜杠永远不会显示在警框中——它的作用仅仅是为了能够使用单引号。
 
@@ -9231,7 +8743,7 @@ document.write("<p align='right'>Body</p>");
 
 ## 现代事件
 
-大多数现代浏览器都允许你为任何 HTML 元素分配事件处理器，这与早期仅限于表单和链接的情况有所不同。浏览器的能力还增加了一些全新的事件，以增加可以实现的交互性。。
+大多数现代浏览器都允许你为任何 HTML 元素分配事件处理器，这与早期仅限于表单和链接的情况有所不同。浏览器的能力还增加了一些全新的事件，以增加可以实现的交互性。
 
 除了 `click`、`mouseOver` 和 `fadeOut` 之外，我们还可以添加一个名为 `dblClick` 的事件，正如你所猜的那样，它的意思是双击。此外，通过 `mouseUp` 和 `mouseDown`，你可以对点击事件获得更好的控制。这些事件对应于鼠标按钮的按下（`mouseDown`）和释放（`mouseUp`）。你还可以对 `mouseMove` 做出。你已经知道如何为这些操作创建事件了——只需在事件名称前加上“on”即可。
 
@@ -9348,16 +8860,11 @@ document.write(a + (3 + 2));
 
 更多方法：
 
-- `string.lastIndexOf('x')`：提供字符串中字符最后一次实例的索引
-- `string.charAt(0)`：提供给定索引处的字符
-- `string.substring(0, 10)`：这将使用原始字符串创建一个新字符串；从第一个数字开始，在第二个数字处结束但不包含它。如果省略了第二个数字，字符串将打印到末尾
-
-
-
-
-
-- `string.substr(4, 6)` - 这类似于子字符串（substring），但第二个字符表示要取多少个字符，而不是结束索引。
-- `string.toLowerCase()` – 这会将字符串中的每个字符转换为小写。`toUppercase` 则会执行相反的操作。
+*   `string.lastIndexOf('x')`：提供字符串中字符最后一次实例的索引
+*   `string.charAt(0)`：提供给定索引处的字符
+*   `string.substring(0, 10)`：这将使用原始字符串创建一个新字符串；从第一个数字开始，在第二个数字处结束但不包含它。如果省略了第二个数字，字符串将打印到末尾
+*   `string.substr(4, 6)` - 这类似于子字符串（`substring`），但第二个字符表示要取多少个字符，而不是结束索引。
+*   `string.toLowerCase()` – 这会将字符串中的每个字符转换为小写。`toUppercase` 则会执行相反的操作。
 
 最有用的方法之一是 `split()`，它允许你将一个非常长的字符串分成多个较小的字符串。你需要在括号中使用参数来指定字符串在哪个字符处进行分割。必须创建一个新数组来存放字符串的各个部分：
 
@@ -9377,15 +8884,15 @@ frags[0] = "Let\’s";frags[1] = "get";frags[2] = "busy";
 
 ## 语句 (Statements)
 
-语句（Statement）是构成每个脚本的结构，JavaScript 中有两个重要的语句，它们都是控制语句——`if()` 和 `for()` 循环。这些非常常见，但在我们学习它们之前，你需要理解布尔逻辑：
+语句（`Statement`）是构成每个脚本的结构，JavaScript 中有两个重要的语句，它们都是控制语句——`if()` 和 `for()` 循环。这些非常常见，但在我们学习它们之前，你需要理解布尔逻辑：
 
 ### 逻辑布尔 (Boolean Logic)
 
-我们使用布尔逻辑来找到多个条件语句的答案。布尔值只有真（true）或假（false），它们不能是任何其他值。在计算机编程中，我们通常比较两个或多个值以查看它们是否相等，以及哪个更大或更小。例如，如果 `x` 等于 1，`x == 1` 将求值为 `true`；否则，将求值为 `false`。我们还可以使用 `>` 表示大于，`<` 表示小于，`==` 表示大于等于以及 `<==` 表示小于等于。JavaScript 中还有三个求值运算符：
+我们使用布尔逻辑来找到多个条件语句的答案。布尔值只有真（`true`）或假（`false`），它们不能是任何其他值。在计算机编程中，我们通常比较两个或多个值以查看它们是否相等，以及哪个更大或更小。例如，如果 `x` 等于 1，`x == 1` 将求值为 `true`；否则，将求值为 `false`。我们还可以使用 `>` 表示大于，`<` 表示小于，`==` 表示大于等于以及 `<==` 表示小于等于。JavaScript 中还有三个求值运算符：
 
-- 与 (AND) - `&&` - 如果所有元素都为真，则结果为 `true`。例如：`(x == 2 && y <= 18)`
-- 或 (OR) - `||` - 如果一个或多个元素为真，则结果结果为 `true`。例如：`(x == 4) || (y > 0)`
-- 非 (NOT) - `!=` - 如果元素为假，则求值为 `true`。例如：`(X != 0) && (y !=0) || !(x < 0)`
+*   与 (AND) - `&&` - 如果所有元素都为真，则结果为 `true`。例如：`(x == 2 && y <= 18)`
+*   或 (OR) - `||` - 如果一个或多个元素为真，则结果结果为 `true`。例如：`(x == 4) || (y > 0)`
+*   非 (NOT) - `!=` - 如果元素为假，则求值为 `true`。例如：`(X != 0) && (y !=0) || !(x < 0)`
 
 可以声明布尔变量，例如 `var x = true;`。当你在变量或等号前面加上感叹号时，你会改变布尔值。在这种情况下，`!x` 为 `false`。
 
@@ -9489,18 +8996,14 @@ function popup()
 
 当函数返回时，它将不再执行；即使定义中 `return` 语句之后还有其他代码行，它们也不会被执行。字符串和布尔变量也可以被返回。例如，当你验证表单时，你可以通过函数确保表单已正确填写，并返回真或假，以决定是否应该提交表单。
 
-
-
-
-
 `return` 可用于在脚本运行过多之前停止它。包含页面元素的 Internet Explorer 对象被称为 `document.all`，它是微软的专有 DOM 结构。因此，如果我们编写一个包含此 IE DOM 的脚本，我们需要确保没有其他浏览器尝试执行该脚本代码——如果它们真的这样做了，就会抛出各种错误。为了做到这一点，我们需要测试是否支持 `document.all`。如果不支持，脚本将结束；如果支持，浏览器将继续执行直到达到真正的返回值：
 
 ```javascript
 if (!document.all) {
   return;
 }
-```
 // Internet Explorer 特有的 DHTML 从这里开始
+```
 
 我们稍后会查看更多支持检测
 
@@ -9515,7 +9018,7 @@ JavaScript 错误分为两类——语法错误和运行时错误。语法错误
 通常有两种情况会引起错误：
 
 *   使用会自动在代码侧边添加页边距的文本编辑器。为了正常工作，JavaScript 命令必须位于代码的最左侧。
-*   代码中间的换行。一个命令必须在一行内，否则将抛出错误。尝试使用具有自动换行（word-wrap）功能的编辑器；这不仅让你无需水平滚动代码，而且还会添加虚拟换行符而不会破坏代码结构。
+*   代码中间的换行。一个命令必须在一行内，否则将抛出错误。尝试使用具有自动换行（`word-wrap`）功能的编辑器；这不仅让你无需水平滚动代码，而且还会添加虚拟换行符而不会破坏代码结构。
 
 要找到包含错误的行，请从文档的第一行开始向下计数。空行也是一行，必须包含在内。看看下例示例，第 6 行有一个错误：
 
@@ -9531,6 +9034,8 @@ JavaScript 错误分为两类——语法错误和运行时错误。语法错误
 </html>
 ```
 
+
+
 你能看出它是什么吗？命令结束的行与它开始的行不同。一旦定位了错误，请检查任何拼写错误的单词、不该存在的换行符、函数和变量名的大小写是否正确、变量是否已定义、使用了正确的引号、字符串中的撇号是否已正确转义等。
 
 如果你发现同时出现多个错误，不要担心。大多数情况下，它们是由脚本早期的阶段某一个或两个错误引起的。总是从顶部开始，一旦发现并修复了一个错误，就重新运行脚本。每次运行，错误计数都会减少，直到完美无缺。
@@ -9545,7 +9050,7 @@ JavaScript 错误分为两类——语法错误和运行时错误。语法错误
 
 DOM 或文档对象模型（Document Object Model）是对页面上的对象如何连接并工作的一种描述。DOM 可用于访问每个对象的属性和方法，并对其进行修改。
 
-多年年来，出现过多个版本的 DOM，从 Netscape 2 中的 Level 0 开始。Level 0 DOM 被所有浏览器支持，在它刚出来时，它允许我们访问页面上的表单字段和对象。从那时起，它被赋予了更广泛的范围，现在包含了其他元素；编写 JavaScript 脚本使用的正是这种模型。
+多年来，出现过多个版本的 DOM，从 Netscape 2 中的 Level 0 开始。Level 0 DOM 被所有浏览器支持，在它刚出来时，它允许我们访问页面上的表单字段和对象。从那时起，它被赋予了更广泛的范围，现在包含了其他元素；编写 JavaScript 脚本使用的正是这种模型。
 
 随着时间的推移，浏览器之间的战争升级了。Netscape 和微软拒绝合作制定一个标准模型，结果我们得到了两个新的 DOM，且两者都完全不兼容。这带来了很多困惑，并引发了跨浏览器运行 DHTML 将变得极其困难的威胁。
 
@@ -9553,7 +9058,7 @@ DOM 或文档对象模型（Document Object Model）是对页面上的对象如�
 
 ### 对象层次结构
 
-课程结束，让我们继续。我们已经看过了 document 是如何被 window 持有的，并且已经知道 document 包含了每个单独的页面元素：
+课程结束，让我们继续。我们已经看过了 `document` 是如何被 `window` 持有的，并且已经知道 `document` 包含了每个单独的页面元素：
 
 *   `Window`
 *   `Document`
@@ -9568,19 +9073,15 @@ DOM 或文档对象模型（Document Object Model）是对页面上的对象如�
 
 一旦文档加载，浏览器将为表单、图像、锚点等一切创建数组。所有对象按类型分类并放入数组；它们的索引与源代码中的完全一致。例如，页面上的第一张图像是 `document.images[0]`，第四张是 `document.images[3]`。
 
-你也可以使用 name 属性为每个元素提供文本引用。假设你的源代码中有 `<img src="cat.gif" name="cat1">`；访问该元素可以通过 `document.images["cat1"]` 实现，这让事情变得简单得多——只需记住给名称加上引号。在较新的浏览器中，你也可以忘记数组表示法，将其引用为 `document.cat1`。
+你也可以使用 `name` 属性为每个元素提供文本引用。假设你的源代码中有 `<img src="cat.gif" name="cat1">`；访问该元素可以通过 `document.images["cat1"]` 实现，这让事情变得简单得多——只需记住给名称加上引号。在较新的浏览器中，你也可以忘记数组表示法，将其引用为 `document.cat1`。
 
 在 `forms[]` 数组中，每个条目都包含另一个数组 `elements[]`。每个索引都是构成页面的按钮和表单。使用我们上面的基本图表，如果你想访问第一个字段，将使用 `document.forms[0].elements[0]`，或者可以使用 `document.forms["form"].elements["field"]`，甚至可以使用 `document.form.field`。所有这些方法都是相同的，且含义相同。
 
 ### 常用方法与属性
 
-我们看过了 document 对象的 `write()` 方法；事实上，我们一直都在使用它。每个方法名都遵循相同的命名规范，后面跟着一组括号，包含方法的参数或参数。在 `write()` 方法的例中，它被给了一个字符串参数，而该字符串被打印在页面上。
+我们看过了 `document` 对象的 `write()` 方法；事实上，我们一直都在使用它。每个方法名都遵循相同的命名规范，后面跟着一组括号，包含方法的参数或参数。在 `write()` 方法的例子中，它被给了一个字符串参数，而该字符串被打印在页面上。
 
-两个最常用的属性是表单字段的 `values` 和图像的 `src`。获取或设置文本框内的文本字符串需要如下所示引用：
-
-
-
-
+两个最常用的属性是表单字段的 `value` 和图像的 `src`。获取或设置文本框内的文本字符串需要如下所示引用：
 
 `document.myform.myfield.value`
 
@@ -9593,9 +9094,9 @@ DOM 或文档对象模型（Document Object Model）是对页面上的对象如�
 </form>
 ```
 
-这创建了一个表单，其中有一个我们可以输入文本的框。而那个至关重要的‘src’是鼠标悬停效果背后的关键组件——访问它们的方式正如你预期的一样，使用类似于 `document.images[2].src` 这样的代码。
+这创建了一个表单，其中有一个我们可以输入文本的框。而那个至关重要的 `src` 是鼠标悬停效果背后的关键组件——访问它们的方式正如你预期的一样，使用类似于 `document.images[2].src` 这样的代码。
 
-## 表单验证 (Form Validation)
+## 表单验证
 
 JavaScript 的主要原因之一是检查用户在页面表单中输入的值是否正确，这避免了使用冗长的 CGI 程序来为你进行检查。在本节中，我们将通过使用一个名为 `onSubmit` 的事件处理程序，查看我们用于验证表单输入的方法。
 
@@ -9613,7 +9114,7 @@ CGI 脚本总是会远可靠得多，因为无论客户端是否启用了 JavaSc
 <form action="script.cgi" onSubmit="return checkform()">
 ```
 
-`checkform` 是我们将要创建的函数名称，你应该能推推出我们将返回一个布尔值——真（true）或假（false）。`submit` 事件的默认操作是提交数据，但只要你给 `onSubmit` 赋值返回 `false` 的值，数据就不会提交。
+`checkform` 是我们将要创建的函数名称，你应该能推推出我们将返回一个布尔值——真（`true`）或假（`false`）。`submit` 事件的默认操作是提交数据，但只要你给 `onSubmit` 赋值返回 `false` 的值，数据就不会提交。
 
 我无法给你一个确定的脚本，因为所有的表单都是不同的；它们的结构不同，而且它们都有不同的值。我可以做的是给你一个基础的脚本布局，你可以根据你的表单需求对其进行修改。它看起来如下：
 
@@ -9637,7 +9138,7 @@ function checkform() {
 
 如果你有一个复杂的表单，脚本将会很长，但对于所有实例，基础都是完全相同的——使用 `if` 和 `else` 语句遍历每个表单字段，以检查输入是否为空。当当前字段通过测试时，脚本移动到下一个字段。
 
-如果某个字段有问题问题，脚本将返回 `false` 并停止；除非所有字段都正确，否则它不会继续返回 `true`。你的错误信息需要针对每个字段进行定制，并为任何常见错误提供解决方案。
+如果某个字段有问题，脚本将返回 `false` 并停止；除非所有字段都正确，否则它不会继续返回 `true`。你的错误信息需要针对每个字段进行定制，并为任何常见错误提供解决方案。
 
 ### 获取值
 
@@ -9669,18 +9170,17 @@ if (document.feedback.field.value == '') {
 
 这就是如何检查值是否等于空字符串，或者中间什么都没有的一对单引号。
 
-#### 选择框 (Select Boxes)
+#### 选择框
 
-这些稍微难一点。在下拉框中，每个每个单独的元素在数组内部都有自己的索引。你从该索引获取元素值，如下所示：
+这些稍微难一点。在下拉框中，每个单独的元素在数组内部都有自己的索引。你从该索引获取元素值，如下所示：
 
-`document.feedback.field.options`
-`[document.feedback.field.selectedIndex].value`
+`document.feedback.field.options[document.feedback.field.selectedIndex].value`
 
 你可以使用 JavaScript 更改指定的索引；如果你想将其设置为第一个选项，执行以下代码：
 
 `document.feedback.field.selectedIndex = 0;`
 
-#### 复选框 (Check Boxes)
+#### 复选框
 
 复选框与其他元素不同，因为它们的行为方式。你需要检查布尔值来判断它是真还是假：
 
@@ -9694,7 +9194,7 @@ if (!document.feedback.field.checked) {
 
 `document.feedback.field.checked = true;`
 
-#### 单选按钮 (Radio Buttons)
+#### 单选按钮
 
 最后是单选按钮，你会失望地发现没有简单的方法可以找出这些按钮中的哪一个被选中。你必须使用布尔运算符遍历每个元素。在下面的示例中，我们检查是否没有任何按钮被选中：
 
@@ -9709,17 +9209,17 @@ if (!document.feedback.field[0].checked &&
 
 单选按钮的检查方法与复选框相同。
 
-## 高级 DOM (Advanced DOMs)
+## 高级 DOM
 
 我们查看 Level 0 DOM 是为了访问页面上的属性和对象，但如果你想让脚本真正动态，需要的不仅仅是表单元素、链接和图像——你需要访问每个页面元素。我们将查看三个高级 DOM。
 
 ### 一个新的 DOM
 
-虽然 Level 0 DOM 可以完成工作，但它也有局限性，只能访问图像、锚和表单字段。所有支持 JavaScript 的浏览器都会支持此 DOM，但如果我们想访问更多内容，例如表格、特定的段落或标题，它就不行了。当 DHTML（稍后会介绍介绍）出现时，……
+虽然 Level 0 DOM 可以完成工作，但它也有局限性，只能访问图像、锚和表单字段。所有支持 JavaScript 的浏览器都会支持此 DOM，但如果我们想访问更多内容，例如表格、特定的段落或标题，它就不行了。当 DHTML（稍后会介绍）出现时，……
 
 ### Level 1 DOM
 
-Level 1 DOM 支持所有主要的浏览器，并且这是我们在可预见的未来将使用的。访问其中的元素也并不困难。事实上，它非常简单。首先，你使用 ID 属性提供你想要访问的 HTML 元素：
+Level 1 DOM 支持所有主要的浏览器，并且这是我们在可预见的未来将使用的。访问其中的元素也并不困难。事实上，它非常简单。首先，你使用 `id` 属性提供你想要访问的 HTML 元素：
 
 ```html
 <p id="introduction">
@@ -9727,13 +9227,9 @@ Level 1 DOM 支持所有主要的浏览器，并且这是我们在可预见的�
 </p>
 ```
 
+`id` 属性有一个限制，即页面上的每个指定值只能由一个元素拥有。这意味着浏览器始终能够知道你指的是的是哪一个元素。如果我们使用上面的示例，那么该页面上不能有任何其他 `id` 值为“Introduction”的元素。
 
-
-
-
-`ID` 属性有一个限制，即页面上的每个指定值只能由一个元素拥有。这意味着浏览器始终能够知道你指的是的是哪一个元素。如果我们使用上面的示例，那么该页面上不能有任何其他 `ID` 值为“Introduction”的元素。
-
-使用 Level 1 DOM，我们可以将 `ID` 传递给名为 `getElementById` 的方法来访问它：
+使用 Level 1 DOM，我们可以将 `id` 传递给名为 `getElementById` 的方法来访问它：
 
 ```javascript
 document.getElementById('introduction')
@@ -9759,7 +9255,7 @@ document.all['introduction'].style.color = 'red';
 
 为了对比起见，我还是会告诉你们它。Netscape 引入了一个名为 `<layer>` 的新元素，旨在创建“层”，但这种元素很快就被废弃了。这种效果是使用 `<div>` 创建的，并且必须被赋予一个名为 `position` 的样式属性以及 `id` 属性。
 
-要访问页面元素，你需要访问包含该元素的 `layer`元素——嵌套文档。这种额外的层在其他 DOM 中是并不需要的，它只是让事情变得相当复杂。
+要访问页面元素，你需要访问包含该元素的 `layer` 元素——嵌套文档。这种额外的层在其他 DOM 中是并不需要的，它只是让事情变得相当复杂。
 
 假设我们想要访问包含在 `<div>` 中的一个段落。相应的，该 `<div>` 又包含另一个在页面上被赋予了绝对位置的 `<div>` 中。你的 HTML 看起来如下：
 
@@ -9787,7 +9283,7 @@ window.document.header.document.masthead.document.hello
 if (document.getElementById || document.all || document.layers) {
   if (document.getElementById) {
     // Level 1 DOM 代码
-}
+  }
   else if (document.all) {
     // Microsoft DOM 代码
   }
@@ -9797,7 +9293,7 @@ if (document.getElementById || document.all || document.layers) {
 }
 ```
 
-为了确保你的理智完好，请使用 JavaScript 库（如 `jQuery` 或 `prototype`来引用元素。这意味着你不需要编写任何代码分支；只需将函数放在被包含的外部脚本文件中，以便每个页面都可以使用它。
+为了确保你的理智完好，请使用 JavaScript 库（如 `jQuery` 或 `prototype`）来引用元素。这意味着你不需要编写任何代码分支；只需将函数放在被包含的外部脚本文件中，以便每个页面都可以使用它。
 
 ### 支持检测
 
@@ -9817,7 +9313,7 @@ if (document.getElementById || document.all || document.layers) {
 
 如果浏览器不支持 JavaScript 1.2 方法，整个代码块本应应该被跳过。然而，由于 Netscape 和微软之间的浏览器大战，这种检测方法是徒用的；在急于提供支持的情况下，没有任何浏览器考虑过支持相同的内容，这意味着设置它“JavaScript”。
 
-这是正确的做法
+这是正确的做法：
 
 假设我们想要为图片设置脚本。如果它要工作，则需要 `document.images` 数组。此数组用于访问页面上的每个图片，所以我们首先需要检查它是否存在：
 
@@ -9847,13 +9343,9 @@ if (window.focus) window.focus();
 
 ### 检测 DHTML 支持
 
-稍我们会讨论 DHTML，但目前足够知道，由于版本 4 浏览器推出了了自己的 DOM，实现这一点是困难的。
+稍后我们会讨论 DHTML，但目前足够知道，由于版本 4 浏览器推出了了自己的 DOM，实现这一点是困难的。
 
-
-
-
-
-在万网刚起步不久，浏览器检测是那时的主流做法，它被认为是一种避免编写一个能在所有浏览器上运行的脚本的简单方法。开发者实际上会选择编写同一个页面的两个版本，并根据浏览器检测的结果，向用户发送他们认为（以及希望）是正确的那个版本。这种脚本在过去是、现在也仍然是不可靠的。
+在万维网刚起步不久，浏览器检测是那时的主流做法，它被认为是一种避免编写一个能在所有浏览器上运行的脚本的简单方法。开发者实际上会选择编写同一个页面的两个版本，并根据浏览器检测的结果，向用户发送他们认为（以及希望）是正确的那个版本。这种脚本在过去是、现在也仍然是不可靠的。
 
 在大多数情况下，浏览器检测会如预期般工作。例如，屏幕上可能会出现这样一条消息：
 
@@ -9869,13 +9361,13 @@ navigator.userAgent= Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.3
 
 这一切仅仅是让脚本变得完全不可靠，因为你会有一个不兼容的浏览器尝试运行一个它根本没有机会成功的页面。因此，显而易见，浏览器检测现在已经过时，而且随着时间的推移只会变得糟糕，尤其是当新浏览器不断发布时。
 
-每次都有效的对象检测（object detection），因此这始终应该是首选。
+每次都有效的对象检测，因此这始终应该是首选。
 
 ## 弹出窗口
 
 允许用户在无需离开网页的情况下查看额外信息的流行方法之一是打开一个弹出窗口。JavaScript 允许你指定弹出窗口的位置、尺寸以及哪些工具栏是可见的。你还可以将代码直接写在窗口中，并让两个窗口协同工作。
 
-## 打开新窗口
+### 打开新窗口
 
 使用原生 HTML，打开新窗口非常简单；你只需要在链接上使用 `target` 属性，如下所示：
 
@@ -9888,10 +9380,9 @@ navigator.userAgent= Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.3
 ```javascript
 var newwindow;
 
-function poptastic(url)
-{
-  newwindow=window.open(url,'name','height=400,width=200');
-  if (window.focus) {newwindow.focus()}
+function poptastic(url) {
+  newwindow = window.open(url, 'name', 'height=400,width=200');
+  if (window.focus) { newwindow.focus(); }
 }
 ```
 
@@ -9915,34 +9406,35 @@ function poptastic(url)
 
 对于第三个参数，有几种选项。当定义其中任何一个时，所有剩余的布尔值（可以设置为：
 
-* True 或 false
-* Yes 或 no
-* 1 或 0）都将被设置为 false、no、o。无论你选择什么，每个选项将进入一个带引号的字符串，每个值之间用逗号分隔，且没有空格。
+* `true` 或 `false`
+* `yes` 或 `no`
+* `1` 或 `0`）都将被设置为 `false`、`no`、`0`。无论你选择什么，每个选项将进入一个带引号的字符串，每个值之间用逗号分隔，且没有空格。
 
 * `height` – 用于定义以像素为单位的窗口高度——不要使用百分比，它们不起作用。
 * `width` – 用于定义窗口宽度，同样是以像素为单位。
 * `left` – 用于设置窗口距离屏幕左侧的距离，以像素为单位。支持 4 或更高版本的浏览器。
 * `top` – 用于将窗口推送到屏幕顶部。
-* `resizable` – 设置为 true 或 false，可以给用户自行调整窗口大小的选项。
-* `scrollbars` – 这是一个布尔值，用于为窗口提供滚动条。如果你显示的内容多于窗口尺寸，则应将其设置为 yes。
-* `toolbar` – 指定允许用户在页面间后退和前进的工具栏是否显示。如果你的页面包含链接，请将其设置为 yes。
+* `resizable` – 设置为 `true` 或 `false`，可以给用户自行调整窗口大小的选项。
+* `scrollbars` – 这是一个布尔值，用于为窗口提供滚动条。如果你显示的内容多于窗口尺寸，则应将其设置为 `yes`。
+* `toolbar` – 指定允许用户在页面间后退和前进的工具栏是否显示。如果你的页面包含链接，请将其设置为 `yes`。
 * `menubar` – 指定主窗口工具栏是否显示。
-* `location` - 用于指定是否显示地址栏。
-* `status` – 用于指定窗口上是否有状态栏。你应该将其设置为 yes。
+* `location` – 用于指定是否显示地址栏。
+* `status` – 用于指定窗口上是否有状态栏。你应该将其设置为 `yes`。
 * `directories` – 用于指定是否显示目录。
 * `fullscreen` – IE 的布尔属性，允许全屏显示。
 * `dependent` – Netscape 的属性，设置弹出窗口依赖主窗口。
-* `screen` & `screen` – 这些是 Netscape 的属性，用于定义窗口的位置。
+* `screenX` & `screenY` – 这些是 Netscape 的属性，用于定义窗口的位置。
 
 ```javascript
 resizable=yes,scrollbars=yes,toolbar=yes,status=yes
+```
 
 ### 焦点与关闭
 
 有两个非常重要的小技巧可以确保你的弹出窗口更加易用。首先，在我们节开始创建的函数中，当窗口创建时执行了以下代码：
 
 ```javascript
-if (window.focus) {newwindow.focus()}
+if (window.focus) { newwindow.focus(); }
 ```
 
 首先，我们想知道是否支持 `focus()` 方法——这非常重要，因为可以防止 JavaScript 错误。如果支持 `focus()` 方法，会将焦点设置在新窗口上；一旦这种情况发生，新窗口将出现在最前面。如果漏掉这个方法，你的新窗口可能会留在主窗口后面，被隐藏，尽管这取决于同时正在发生什么。
@@ -9973,10 +9465,7 @@ if (window.focus) {newwindow.focus()}
 
 ## 可访问的弹出窗口
 
-
-
-
-到目前为止，通过所有这些示例，我们使用了 `javascript:` 链接样式。这是在 Java 中执行函数最简单的方法之一，而不是使用事件处理器并链接到虚位锚点：
+到目前为止，通过所有这些示例，我们使用了 `javascript:` 链接样式。这是在 JavaScript 中执行函数最简单的方法之一，而不是使用事件处理器并链接到虚位锚点：
 
 ```html
 <a href="#" onClick="poptastic('page.html');">Pop it</a>
@@ -9991,7 +9480,7 @@ if (window.focus) {newwindow.focus()}
 这是展示弹出窗口工作原理的最佳方法之一，但对于实际操作来说，并不是最佳实践。你不应该使用 `javascript:` 机制来创建弹出窗口，这里有两个非常糟糕的原因：
 
 1. 如果用户使用的浏览器不支持 JavaScript 或禁用了它，他们将无法点击链接。这意味着他们可能会错过可能显示在你的弹出窗口中的某些宝贵信息。
-2. 大多数浏览器允许用户右键点击链接并在新标签页或新窗口中打开。这些链接没有适当的 `href` 值，因此它们只会打开一个空白窗口，没有比比这更令人生恼的了。
+2. 大多数浏览器允许用户右键点击链接并在新标签页或新窗口中打开。这些链接没有适当的 `href` 值，因此它们只会打开一个空白窗口，没有比这更令人生恼的了。
 
 正如此，有一种更好的方法来链接到弹出窗口，这种方法让链接支持双向操作。在理想的世界中，上面的链接看起来应该是这样的：
 
@@ -10001,27 +9490,26 @@ if (window.focus) {newwindow.focus()}
 
 这样做是创建一个链接，它在不支持 JavaScript 的浏览器中将作为标准页面在弹出窗口中打开。在现代浏览器中，这种行为会被抑制，页面将按照你想要的方式弹出。要打开的 URL 被设置为 `this.href`，这让 JavaScript 知道它查看当前链接的 `href` 值并使用它。这意味着不需要重复编写同一个 URL。
 
-#### 写入窗口
+### 写入窗口
 
 使用已存在页面的代码生成全新的页面具有明显的优势。首先，你不需要为每个弹出窗口都创建新页面，而且弹出窗口中的内容在主页面打开时就已经加载了。
 
 首先，我们生成一个页面：
 
 ```javascript
-function dirtypop()
-{
-  var generator=window.open('','name','height=400,width=500');
+function dirtypop() {
+  var generator = window.open('', 'name', 'height=400,width=500');
   generator.document.write('<html><head><title>Popup</title>');
   generator.document.write('<link rel="stylesheet" href="style.css">');
   generator.document.write('</head><body>');
-  generator.document.write('<p>This page was generated by
-    the main window.</p>');
-  generator.document.write('<p><a href="javascript:self.close()">
-    Close</a the popup.</p>');
+  generator.document.write('<p>This page was generated by the main window.</p>');
+  generator.document.write('<p><a href="javascript:self.close()">Close</a> the popup.</p>');
   generator.document.write('</body></html>');
   generator.document.close();
 }
+```
 
+```html
 <a href="javascript:dirtypop();">Generate!</a>
 ```
 
@@ -10043,11 +9531,11 @@ function dirtypop()
 
 在 DHTML 出现之前，我们只有静态 `HTML` 选项。当页面加载时，除了偶尔的 `javascript` 鼠标悬停效果外，在打开下一个页面之前，视图永远不会改变。元素以自然的方式按照它们的顺序排列在页面上。因为 DHTML 是动态的，你可以通过用户交互中断流程，移除页面上的元素并让出现在其他地方。
 
-所以，既然 DHTML 如此出色，为什么它在主流中应用如此少呢？答案在于它的过去，而且它并不总是一干二净。当它随第 4 版浏览器发布时，引起了相当轰动；人们认为这将是静态图像和文本网页的终结。DHTML 作为一种技术的问题从这一刻开始，因为第 3 版浏览器并不支持它，而这些浏览器仍然占据着很大的市场。这使得在商业网站上使用它变得不实际，更此外，由于微软和网景都没有意图在 DHTML 方法上进行合作，因此，在一个浏览器中运行的脚本无法在另一个浏览器中运行。
+所以，既然 DHTML 如此出色，为什么它在主流中应用如此少呢？答案在于它的过去，而且它并不总是一干二净。当它随第 4 版浏览器发布时，引起了相当轰动；人们认为这将是静态图像和文本网页的终结。DHTML 作为一种技术的问题从这一刻开始，因为第 3 版浏览器并不支持它，而这些浏览器仍然占据着很大的市场。这使得在商业网站上使用它变得不实际，此外，由于微软和网景都没有意图在 DHTML 方法上进行合作，因此，在一个浏览器中运行的脚本无法在另一个浏览器中运行。
 
-Netscape 的 DHTML 实现与 IE 4 相比毫无无值，但因为发布得稍早一点，而且文档更完整，它被采纳为 DHTML 标准。然而，人们很快就意识到，编写一种全新类型的脚本并非易事，再加上糟糕的浏览器支持，DHTML 在还没来得及发展之前就传出了已经死掉的消息。
+Netscape 的 DHTML 实现与 IE 4 相比毫无价值，但因为发布得稍早一点，而且文档更完整，它被采纳为 DHTML 标准。然而，人们很快就意识到，编写一种全新类型的脚本并非易事，再加上糟糕的浏览器支持，DHTML 在还没来得及发展之前就传出了已经死掉的消息。
 
-也有人争论这一点，认为 DHTML 需要时间来成长、证明证明自己。公平地说，DHTML 没有被归类为优雅降级（gracefully degrading）技术，所以确保你的大多数受众都能支持它是非常重要的。对于更现代的浏览器来说这不会是一个太的问题，但你可能仍会有旧版本的用户。
+也有人争论这一点，认为 DHTML 需要时间来成长、证明自己。公平地说，DHTML 没有被归类为优雅降级技术，所以确保你的大多数受众都能支持它是非常重要的。对于更现代的浏览器来说这不会是一个太大的问题，但你可能仍会有旧版本的用户。
 
 #### 是时候变得动态了
 
@@ -10057,12 +9545,9 @@ Netscape 的 DHTML 实现与 IE 4 相比毫无无值，但因为发布得稍早�
 div#main {color: #000000; border-left: 1px solid red; }
 ```
 
-
-
-
 如果我们想更改它的外观，首先需要通过 DOM 访问该元素。由于不同的浏览器支持不同的模型，通常你可能需要进行一些代码分支处理，通过三种方式来确保 DHTML 在所有浏览器中都能正常工作。我们在这里使用的是 Level 1 DOM。接下来，访问 `style` 属性，然后为想要修改的属性赋一个新值。让我们改变文本的颜色：
 
-```
+```javascript
 document.getElementById('main').style.color = '#ff0000';
 ```
 
@@ -10086,7 +9571,7 @@ div#nav {position: absolute; top: 20px; left: 120px; }
 document.getElementById('nav').style.left = 300;
 ```
 
-我们在这里做的是给属性赋一个数值值，而不是我们一直以来使用的字符串。当使用数字时，浏览器会自动假设你使用的是像素（pixels），这让你能够对值进行计算，例如在当前值的基础上加上 20。我们也可以使用 `element.style.left = ‘300px’` 来设置值。
+我们在这里做的是给属性赋一个数值，而不是我们一直以来使用的字符串。当使用数字时，浏览器会自动假设你使用的是像素，这让你能够对值进行计算，例如在当前值的基础上加上 20。我们也可以使用 `element.style.left = '300px'` 来设置值。
 
 ### Netscape 4 DHTML
 
@@ -10100,13 +9585,13 @@ Netscape 4.7 在涉及 DHTML 方面有点不靠谱。它不支持使用 DHTML �
 document.layers['main'].left = 200;
 ```
 
-## 脚本帧 (Scripting Frames)
+## 脚本帧
 
-这些 JavaScript 中的特殊情况，每个脚本帧的行为都与其所属的文档完全相同。这意味着，如果你想修改另一个帧中的内容，你就需要通过帧树（frame tree）来获取当前帧的控制权。
+这些 JavaScript 中的特殊情况，每个脚本帧的行为都与其所属的文档完全相同。这意味着，如果你想修改另一个帧中的内容，你就需要通过帧树来获取当前帧的控制权。
 
 ### 设置
 
-你现在应该知道帧（frame）是 HTML 中的一种技术，它允许将页面划分为几个包含的窗口。每个窗口都有自己的 HTML 文件。所有页面都显示在一起，但它们之间不共享连接，因此，如果你在一个窗口中执行一个函数，它对其他任何窗口都不会产生影响。所以，你需要使用 DOM 的一部分来获取对每个帧的控制；这部分 DOM 将将占据窗口层。
+你现在应该知道帧是 HTML 中的一种技术，它允许将页面划分为几个包含的窗口。每个窗口都有自己的 HTML 文件。所有页面都显示在一起，但它们之间不共享连接，因此，如果你在一个窗口中执行一个函数，它对其他任何窗口都不会产生影响。所以，你需要使用 DOM 的一部分来获取对每个帧的控制；这部分 DOM 将占据窗口层。
 
 首先，你所有的帧都必须有一个 `name` 属性。这可能已经在每个帧中安装了，因为对于跨帧链接至关重要，但请再次检查一下。像这样的代码即可：
 
@@ -10121,13 +9606,14 @@ document.layers['main'].left = 200;
 
 假设你有一个页面，上面有两个帧：
 
-navcontent
+nav content
 
 帧树看起来像这样：
 
 ```
 top
-  navcontent
+  nav
+  content
 ```
 
 很简单，对吧？名为 `top` 的对象有两个元素——`nav` 和 `content` 的名称是提供给这些元素的名称值。你只需要理解一个帧相对于其他帧的相对位置即可。
@@ -10142,24 +9628,26 @@ top
 parent
 ```
 
-某些帧还有子帧（children frames），正如你预期的，它们是位于下方的帧。在上面的示例中，`top` 有两个子帧，一个叫 `nav`，一个叫 `content`。访问子帧的情况只需编写：
+某些帧还有子帧，正如你预期的，它们是位于下方的帧。在上面的示例中，`top` 有两个子帧，一个叫 `nav`，一个叫 `content`。访问子帧的情况只需编写：
 
 ```javascript
-Self.childName
+self.childName
 ```
 
 显然，将 `childName` 替换为实际名称。
 
 让我们来看一个更复杂的例子：
 
-one nav-two three
+one nav two three
 
 树看起来如下：
 
 ```
 top
-  navcontent
-    onetwo
+  nav
+  content
+    one
+    two
       three
 ```
 
@@ -10174,17 +9662,12 @@ parent.parent.nav
 ```javascript
 parent.parent.top
 ```
-*(注：原文此处 Self 应为 self，此处根据语境推测并修正以保持逻辑一致或保持原样，按翻译逻辑通常为 self)*
 
 访问帧的最后一种方法是从顶端开始向下查找，直到到达目标帧。如果你在一个复杂的树的深处，需要访问上方的帧，这是一个很好的快捷方法。你只需要从顶部开始向下查找：
 
 ```javascript
 top.content.two
 ```
-
-
-
-
 
 当从你用过的服务器请求文件时，相关 cookie 中的数据将随请求一起发送到 Web 服务器。通过这种方式，任何如用 `PHP` 或 `Perl` 编写的服务器端请求都能读取 cookie，并判断是否应该授予访问该网页的权限。
 
@@ -10213,7 +9696,7 @@ alert(document.cookie);
 让我们再添加另一个条目，这次使用不同的名称，如下：
 
 ```javascript
-document.cookie = "testvalue2=Nah; expires=Wed, 03 Apr 201905:28:21 UTC; path=/";
+document.cookie = "testvalue2=Nah; expires=Wed, 03 Apr 2019 05:28:21 UTC; path=/";
 ```
 
 如果你现在检查 cookie 的内容，你会发现第一个值仍然在那里，那是因为我们使用了不同的名称。如果我们使用了相同的名称，它将覆盖初始值，而不是添加另一个条目。
@@ -10234,19 +9717,19 @@ document.cookie = "testvalue2=Whatever; expires=Wed, 27 Feb 2019 05:28:21 UTC; p
 function createCookie(name, value, days) {
   if (days) {
     var date = new Date();
-    date.setTime(date.getTime()+(days*24*60*60*1000));
-    var expires = "; expires="+date.toGMTString();
+    date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+    var expires = "; expires=" + date.toGMTString();
   }
   else var expires = "";
-  document.cookie = name+"="+value+expires+"; path=/";
+  document.cookie = name + "=" + value + expires + "; path=/";
 }
 
 function readCookie(name) {
   var ca = document.cookie.split(';');
   var nameEQ = name + "=";
-  for(var i=0; i < ca.length; i++) {
+  for (var i = 0; i < ca.length; i++) {
     var c = ca[i];
-    while (c.charAt(0)==' ') c = c.substring(1, c.length); //delete spaces
+    while (c.charAt(0) == ' ') c = c.substring(1, c.length); // delete spaces
     if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
   }
   return null;
@@ -10261,73 +9744,79 @@ function eraseCookie(name) {
 
 # 第 6 部分：UX
 
-UX，或用户体验（User Experience），是任何网站的基础组成部分，特别是那些必须满足不断增长和不断变化的需求的网站。我们认为网站理应提供最好的服务，但你是否停下来思考过它到底是什么？作为网站开发者和设计师，了解这一切是非常重要的。
+UX，或用户体验，是任何网站的基础组成部分，特别是那些必须满足不断增长和不断变化的需求的网站。我们认为网站理应提供最好的服务，但你是否停下来思考过它到底是什么？作为网站开发者和设计师，了解这一切是非常重要的。
 
 ## 为什么 UX 设计如此重要？
 
 UX 设计有一个主要目标 —— 为用户创建一个愉悦、无缝、无摩擦的体验。
 
-一个例子；页面响应延迟一秒会导致客户满意度下降 16%。仅仅一秒；这就就是全部。还有文章或网站上的那个标题？它负责了 80% 以上的转化。搞砸了它，你的网站从一开始就会失败。
+一个例子；页面响应延迟一秒会导致客户满意度下降 16%。仅仅一秒；这就是全部。还有文章或网站上的那个标题？它负责了 80% 以上的转化。搞砸了它，你的网站从一开始就会失败。
 
-
-
-
-对于内容更复杂的网站，UX（用户体验）更为重要，因为用户需要能够非常快速地找到路径。他们最不想看到的就是混乱、杂乱、毫无意义且无法导航的网站。
+对于内容更复杂的网站，UX 更为重要，因为用户需要能够非常快速地找到路径。他们最不想看到的就是混乱、杂乱、毫无意义且无法导航的网站。
 
 以电子商务网站为例。它们不仅必须看起来吸引人且易于导航，还必须为潜在客户提供一种简单的方式，以便尽快进行并完成购买。
 
 ## 设计流程中的 UX
+
 最大的问题是，你该如何开始为你自己的在线平台构建最佳的 UX 方法？你首先需要考虑的是这一点——你希望访问者进入你的网站时想什么？希望他们有什么感觉？思考你网站的每一个独立组件以及上面的所有内容。
 
 一旦你确定了想让每个组件引发的情绪，你就可以开始测试它们的有效性。此外，考虑是否引发了正确的情绪、这种情绪是否强烈、它带来的益处，以及这种体验是否可以通用，也是非常重要的。
 
 ## UX 并不是什么，以及它不能做什么
+
 并非所有的 UX 方法都适用于所有类型的客户。我们都是不同的个体，对事物的反应也不同，虽然一个设计元素可能对某组人有效，但对另一组人可能无效。这意味着你不应该试图将一种可能不合适的方法强加给可能不愿接受的观众，而应该专注于为特定的交互场景进行设计，并鼓励特定类型的行动。
 
 你无法尝试复制在另一个网站上效果极佳的 UX 方法，因为每个网站都提供独特的用户体验。如果你不能顾及自己的利益、技能、产品等，你就无法合理地期望新访问者想要留。
 
 同样，仅通过页面访问量、跳出率和转化统计等分析和数据，是无法确定网站的价值的。诚然，你可以生成估算，也可以请求用户提供帮助，但目前还没有工具可以让你直接处理用户交互过程。
 
-UX 和可用性（usability）在多年来似乎已经交织在一起，但它们实际上并不是一回事。基于 UX 的方法旨在考虑用户的感受，例如他们对资源或服务的感受如何；而可用性完全关乎他们能多快地学会使用你的网站。
+UX 和可用性在多年来似乎已经交织在一起，但它们实际上并不是一回事。基于 UX 的方法旨在考虑用户的感受，例如他们对资源或服务的感受如何；而可用性完全关乎他们能多快地学会使用你的网站。
 
 坦诚地说，如果你想提供你可能提供的最佳 UX，那么你需要理解你的用户的需求，以及你如何以最少的努力满足这些需求。简单而精妙才是关键。
 
 ## UX 技能
+
 我们知道，现在 UX 设计的需求比以往任何时候都要大，对于所有 UX 设计师来说，开发多样化的技能是必不可少的，其中有 10 项是绝对的必备技能。
 
 严肃地说，如果你对 UX 设计真正感兴趣，你不想成为一个什么都懂一点的油油。但你不能只顾着学习一种；如果你想获得真正的成功，你需要学习几项关键技能。如果你不知道自己需要知道什么、需要什么技能，请看这里，这些是所有 UX 设计师都需要的 10 项必备技能：
 
 ### UX 研究
+
 你需要做的最重要的事情之一是在 UX 研究方面提升你的水准。移动端 App 和网站需要大量的创作，而 UX 设计师做出的决策绝非凭空产生。UX 设计师花费大量时间进行思考、学习和研究，以确保每一步万无一失。
 
 ### 协作
+
 有句古话，“人不是孤岛”，这对 UX 设计师来说也是如此。如果你不知道如何设计、编码、管理项目，或者不了解产品的构成和市场营销，你就需要协作，这意味着要引入他人帮助你达到成功的顶峰。研究会带你走过一段路，但协作才是关键；这是你进入其他领域的机会，与其他拥有不同技能且完美互补你的人一起工作，将所学知识付诸实践。
 
 ### 线框图与 UI 原型
-如果你想让人们认真对待一名 UX 设计师，线框图（wireframing）和原型制作（prototyping）是两项非常需要学习的技能。原型制作是在设计交给开发人员构建之前，学习和理解其关键功能的最佳方式之一。原型制作工具非常丰富，你应该好好利用它们。
+
+如果你想让人们认真对待一名 UX 设计师，线框图和原型制作是两项非常需要学习的技能。原型制作是在设计交给开发人员构建之前，学习和理解其关键功能的最佳方式之一。原型制作工具非常丰富，你应该好好利用它们。
 
 ### UX 写作
+
 任何认为设计中不包含写作的人显然从没有真正接触过 UX 设计。编码是一项伟大的技能，你不应该断然拒绝它，但写作是一种真正的才华，只需较少的时间就能为用户创造出一些出色的体验。拿起你的平板电脑或手机，看看上面的某一个 App。看看任何网站。你看到了什么？没错，有大量的词汇，经过精心构思以为用户提供所需的一切，而这一切都是由某人编写的。你以前可能从未真正注意到这一点，那就是优秀的 UX 写作的结果——它不应该是易被察觉的。可以在 Apple、Dropbox 和 MailChimp 找到一些这方面的最佳例子。
 
 ### 视觉沟通
+
 如果你不理解视觉沟通，你在 UX 设计上就走不远。视觉沟通是其核心，归根结底，人类都是视觉动物。提升你的技能，帮助你创建最好的素材、演示稿、图标、完全交互的原型和模型图，你将会走得很远。
 
 ### 用户同理心
-你能设身地用户的用户吗？如果你可以，你就走在了理解他们想要什么、不想要什么的道路上。当你理解这一点，你就为找到行之有效的解决方案打开了道路。同理心是 UX 设计中最重要的技能之一；如果你完全脱离用户，你就不可能为他们的需求进行合理的设计。反之，你所做的只是为他们创造最糟糕的体验。归根结底，你的用户是你生活中最重要的人——迎合他们的每一个需求。
+
+你能设身处地为用户着想吗？如果你可以，你就走在了理解他们想要什么、不想要什么的道路上。当你理解这一点，你就为找到行之有效的解决方案打开了道路。同理心是 UX 设计中最重要的技能之一；如果你完全脱离用户，你就不可能为他们的需求进行合理的设计。反之，你所做的只是为他们创造最糟糕的体验。归根结底，你的用户是你生活中最重要的人——迎合他们的每一个需求。
 
 ### 交互设计
-所以，你可以画出一个看起来很棒的设计，但你知道你的用户将如何与之交互吗？交互设计和 UX 之间有很多重叠；前者侧重于用户与产品服务的交互方式，这就是为什么使用交互线框图是帮助你迭代交互的一种极方法。有很多 UX 课程可以在此提供帮助并引导走向正确的方向。
+
+所以，你可以画出一个看起来很棒的设计，但你知道你的用户将如何与之交互吗？交互设计和 UX 之间有很多重叠；前者侧重于用户与产品服务的交互方式，这就是为什么使用交互线框图是帮助你迭代交互的一种极好方法。有很多 UX 课程可以在此提供帮助并引导走向正确的方向。
 
 ### 编码
+
 大多数 UX 设计师都能胜任多项工作，而且在如今，我们生活在一个技术设计师变得稀少的世界里。所以，设计师兼开发人员是答案吗？编码在这里起着巨大的作用，根据最近发布的一份报告，至少三分之一的现有设计师还接受过全面的工程培训，因此设计师和开发人员之间的界限正变得模糊。保持编码技能更新永远不是坏主意！
 
 ### 分析
+
 你不会只是创建一个网站或 App，然后把它推出去让世界看并置不管。你想测试它，想知道你的努力是否付诸成效，以及你的设计是否有效。这就是分析大显用场的地方，这意味着你需要对数字、比例和百分比有一定的了解。很多 UX 设计师对数字有病态恐惧，但真的没必要——这些数字可能成为你获得过的最大的帮助。利用这些分析信息来帮助你的设计。
 
-
-
-
-最后，虽然核心设计和研究技能非常重要，但时间管理和项目管理等业务技能同样重要。但真正能让任何 UX 设计师脱颖而出的技能是沟通能力。想一一下那些公共演讲者和进行公开演示的人。只要你能以积极的方式利用反馈，能够自信且在合适的时间向听众传达你的信息是无价之宝。
+最后，虽然核心设计和研究技能非常重要，但时间管理和项目管理等业务技能同样重要。但真正能让任何 UX 设计师脱颖而出的技能是沟通能力。想一想那些公共演讲者和进行公开演示的人。只要你能以积极的方式利用反馈，能够自信且在合适的时间向听众传达你的信息是无价之宝。
 
 UX 是 Web 开发中一个困难的部分，在大多数情况下，这项工作会被“外包”给专门的设计师。不过，尝试一下并没有错，只要你掌握了这些技能，你就走在了正确的道路上。
 

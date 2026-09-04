@@ -1,13 +1,10 @@
+
 # 3天快速学会 JavaScript：快速上手学习课程
-
-
 
 ![](img/00001.jpeg)
 
-
-
-
 ## 引言
+
 JavaScript 是帮助你让浏览器执行你想要操作的语言之一。这是一门容易学习的语言，现在我将教你。我的语言将是易于用户的，我会尝试用简单的语言和示例来解释复杂的内容。让我们一个一个地开始 JavaScript 课程。这是一份 3 天 JavaScript 基础课程。
 
 在开始学习 JavaScript 之前，我假设你至少具有 `HTML` & `CSS` 的基础知识。如果你没有 `HTML` & `CSS` 知识，那么你应该先通过在线教程学习它们。你可以在 2-3 天内学会基础的 `HTML` & `CSS`。
@@ -17,9 +14,11 @@ JavaScript 是帮助你让浏览器执行你想要操作的语言之一。这是
 - 第 3 天 = 学习第 6, 7 & 8 章
 
 ## 第一章：JavaScript 基础
+
 JavaScript 可以改变 HTML 内容。如果你是 PHP 开发者，并且想在不刷新页的情况下完成某些工作，或者你想让 `HTML` & `CSS` 执行任务，那么你需要 JavaScript。
 
 ### `<script>` 标签
+
 JavaScript 可以放在 `body` 和 `head` 标签中。JavaScript 代码应该放在 `<script>` 和 `</script>` 标签之间。
 
 ```html
@@ -29,6 +28,7 @@ document.getElementById("demo").innerHTML = "My First JavaScript Code";
 ```
 
 ### JavaScript 事件
+
 JavaScript 代码是由事件触发的。当人执行某项操作时就会触发事件。浏览器提供了许多事件，如 `onclick`、`onmouseover`、`onkeyup`、`onkeydown`、`ondoubleclick` 等。当事件发生时，JavaScript 执行代码。
 
 ```html
@@ -36,6 +36,7 @@ JavaScript 代码是由事件触发的。当人执行某项操作时就会触发
 ```
 
 ### JavaScript 函数
+
 JavaScript 函数是放在 `<script>` 和 `</script>` 标签内的。
 
 ```html
@@ -47,6 +48,7 @@ document.getElementById("demo").innerHTML = "My First JavaScript Code";
 ```
 
 ### JavaScript 的最佳位置
+
 JavaScript 在 `<script>` 标签内。
 
 ```html
@@ -58,6 +60,7 @@ document.getElementById("demo").innerHTML = "My First JavaScript Code";
 ```
 
 ### 外部文件
+
 JavaScript 在 `<script>` 标签。
 
 ```html
@@ -65,9 +68,11 @@ JavaScript 在 `<script>` 标签。
 ```
 
 ## 第二章：JavaScript 输出/显示代码
+
 JavaScript 有四种输出方式。
 
 ### 第一种方式：`document.write()`
+
 它用于在网页上写入任何内容。
 
 ```html
@@ -77,9 +82,11 @@ document.write(6);
 }
 </script>
 ```
+
 解释：点击按钮时，`document.write()` 输出。
 
 ### 第二种方式：`window.alert()`
+
 它用于在警告框中显示消息。
 
 ```html
@@ -87,9 +94,11 @@ document.write(6);
 window.alert("Warning");
 </script>
 ```
+
 解释：打开网页时，`window.alert()` 显示“警告”。
 
 ### 第三种方式：`innerHTML`
+
 该方法用于在 HTML 元素（如段落、`textarea` 等）内部写入。
 
 ```html
@@ -99,9 +108,11 @@ document.getElementById("demo").innerHTML = "Paragraph is filled";
 }
 </script>
 ```
+
 解释：点击按钮时，`getElementById()` 获取 ID 并通过 `innerHTML` 写入。
 
 ### 第四种方式：`console.log()`
+
 用于在控制台中写入，在你的 firefox、chrome 浏览器中按 F12 键。
 
 ```html
@@ -109,24 +120,30 @@ document.getElementById("demo").innerHTML = "Paragraph is filled";
 console.log(2+2);
 </script>
 ```
+
 解释：点击 F12 键并在控制台标签查看结果。
 
 ## 第三章：JavaScript 变量、语句、注释与关键字
+
 ### JavaScript 变量
+
 变量在任何语言中用于存储数据。JavaScript 中的变量与 C 等其他语言相似。变量以 `int`、`str` 等数据类型的形式存储，但在 JS 中，你可以使用 `var` 关键字处理所有数据类型。
 
 写入字符串：写入字符串时需要使用单引号或双引号。
 
 示例：
+
 ```javascript
 var x = "This is a Boy.";
 var y = 'This is a Girl.';
 ```
+
 注意：分号 `;` 用于结束行。
 
 写入数字：写入数字不需要双引号或单引号。如果你使用了，JS 将其视为字符串。
 
 示例：
+
 ```javascript
 var x = 8;
 var y = 6;
@@ -134,13 +151,15 @@ var z = x+y;
 ```
 
 ### JavaScript 语句
+
 JavaScript 语句是浏览器执行的指令集。
 
 示例 1：改变 HTML 内容
+
 想象一下，你想通过点击按钮在 HTML 的任何地方添加某些内容。你可以通过 PHP 轻松地完成此工作，但页面会刷新。借助 JavaScript，你可以在不刷新页面的情况下完成此工作。
 
 ```html
-<<<html>
+<html>
 <body>
 <h1>Change Content of Box</h1>
 <p id="demo">JavaScript will change HTML content.</p>
@@ -150,10 +169,6 @@ Press Me!
 </body>
 </html>
 ```
-
-
-
-
 
 ### 解释
 
@@ -207,23 +222,18 @@ function changeImage() {
 <button type="button" onclick="changeImage()">点击我！</button>
 </body>
 </html>
-``` (注：原文中示例 3 的 HTML 代码块存在逻辑混乱和截断，翻译时已根据要求保留代码块不变，仅翻译其描述文本)
+```
 
 ### 解释
 
-（注：原文示例 3 下方的解释文本存在大量乱码和重复，此处根据指令“不要漏掉任何一行”且“不要重复输出原文”的原则，对可读部分进行了翻译）
-
 如果你对之前的两个示例留意，你将获得许多有助于你前进的知识。如果你正在匆忙学习，请等一下看看之前的两个示例。如果你理解了基础，在接下来的代码中将不会感到任何困难。
-
-
-
-
 
 `var x = " ";` // `x` 是空值
 
 ### `Null` – `Null` 仅仅是类型为对象的空。
 
 示例：
+
 ```javascript
 var x = null; // `x` 是 null
 ```
@@ -233,6 +243,7 @@ var x = null; // `x` 是 null
 JavaScript 具有许多运算符，如算术运算符、赋值运算符、字符串运算符、逻辑运算符和比较运算符。
 
 ## 1. 算术运算符
+
 – 对数字进行某些数学运算的运算符称为算术运算符。
 
 示例：
@@ -248,6 +259,7 @@ JavaScript 具有许多运算符，如算术运算符、赋值运算符、字符
 | `--` | 递减 |
 
 ## 2. 赋值运算符
+
 – 赋值运算符用于赋值。
 
 示例：
@@ -262,9 +274,11 @@ JavaScript 具有许多运算符，如算术运算符、赋值运算符、字符
 | `%=` |
 
 ## 3. 字符串运算符
+
 – 你可以使用 `+` 运算符拼接字符串。
 
 示例：
+
 ```javascript
 var name = "Jonnie";
 var surname = "Smith";
@@ -289,15 +303,18 @@ var full name = "Jonnie" + "Smith";
 函数是用于执行任何任务的代码块，并且可以在许多地方重用。函数在被调用时执行。语法非常简单，如下所示：
 
 ### 语法：
+
 ```javascript
 function myFun(parameter1, parameter2, parameter3, ...)
 {
     //代码块
 }
 ```
+
 这里，`myFun` 是函数名，`parameter1`、`parameter2` 和 `parameter3` 是参数（是可选的），然后大括号开始并结束。在大括号之间将是会在函数被调用时执行的代码。
 
 ### 示例：
+
 ```html
 <html>
 <head>
@@ -316,14 +333,17 @@ function myFun(parameter1, parameter2, parameter3, ...)
 </body>
 </html>
 ```
+
 在这里，当我们点击“点击这里!”(Press IT!)按钮时，会生成一个 `onclick` 事件并执行 `myFun(5,10)` 函数。当函数执行时，我们向函数传递两个带有值的参数，这些值将变成函数的 `x` 和 `y`，最后存储在变量 `z` 中并进入 `p` 标签。
 
 ### 函数返回
+
 函数在遇到 `return` 语句时停止执行。`Return` 是用于停止执行并向函数返回值的内置语句。你可以认为“函数的整体值”可以用 `return` 语句来表示。
 
 示例：
+
 ```html
-<html
+<html>
 <head>
 </head>
 <body>
@@ -340,6 +360,7 @@ function myFun(parameter1, parameter2, parameter3, ...)
 </body>
 </html>
 ```
+
 在这里，`myFun(5,0)` 的值将赋值给 id 为 `demo` 的元素。在这里你看到我在 `body` 标签内部编写了脚本，因为 `head` 标签在调用时执行，而 `body` 标签在 body 加载时会自动执行。在这里，我没有提供任何如 `onclick` 之类的事件，因此将整个脚本写在了 `body` 标签内部。
 
 # 第 6 章：JavaScript 对象
@@ -347,16 +368,20 @@ function myFun(parameter1, parameter2, parameter3, ...)
 将对象想象成真实的物体，例如 `car`（汽车）就是一个对象。它可以执行任何任务；它拥有属性和方法。属性如它的 `color`（颜色）、`model`（型号），方法如 `start`（启动）、`stop`（停止）等。
 
 ### 对象属性
+
 ```javascript
 var car = {color:"red", model:"552", weight:"900kgs"};
 ```
+
 属性通过两种语法类型调用：
+
 1. `Object.property`
 2. `Object["property"]`
 
 示例：
+
 ```html
-<html
+<html>
 <head>
 </head>
 <body>
@@ -370,11 +395,15 @@ var car = {color:"red", model:"552", weight:"900kgs"};
 ```
 
 ### 对象方法
-对象方法是对象内部用于执行特定任务的函数。它的调用语法是 `object.method()`。
+
+
+
+对象方法是对象内部用于执行特定任务的函数。它的调用语法是`object.method()`。
 
 示例：
+
 ```html
-<html
+<html>
 <head>
 </head>
 <body>
@@ -395,7 +424,9 @@ var car = {color:"red", model:"552", weight:"900kgs"};
 ```
 
 ### 对象构造函数
-`Constructor` 用于创建对象。
+
+`Constructor`用于创建对象。
+
 ```javascript
 function person(name, model, weight) {
     this.name = name;
@@ -403,14 +434,18 @@ function person(name, model, weight) {
     this.weight = weight;
 }
 ```
-这里 `person` 用于创建对象。
+
+这里`person`用于创建对象。
+
 ```javascript
 var myFriend = new person("Jonnie", "552", "900kgs");
 ```
-`myFriend` 拥有属性 `name`、`model` 和 `weight`。
+
+`myFriend`拥有属性`name`、`model`和`weight`。
 
 ### JavaScript 原型
-所有的 JavaScript 原型表示类似于 `object.prototype`。
+
+所有的 JavaScript 原型表示类似于`object.prototype`。
 
 ```javascript
 function person(name, model, weight) {
@@ -419,16 +454,14 @@ function person(name, model, weight) {
     this.weight = weight;
 }
 ```
+
 你可以向现有对象添加一些方法。
+
 ```javascript
 person.prototype.stop = function() {
     console.log("汽车停止");
 };
 ```
-
-
-
-
 
 ```javascript
 var cars = Array("BMW", "Volvo", "Jeep");
@@ -487,7 +520,7 @@ If(condition){
 示例：如果年龄大于 18 岁，则该人员可以投票；如果人员年龄小于 18 岁，则无法投票。
 
 ```html
-<<html>
+<html>
     <head>
         <title>投票资格</title>
     </head>
@@ -561,7 +594,7 @@ If(condition 1){
 
 ### Switch 语句
 
-当有多个条件时，可以使用 `switch` 语句。它根据表达式的值执行不同的代码块。`default` 在在所有条件都不满足时执行。
+当有多个条件时，可以使用`switch`语句。它根据表达式的值执行不同的代码块。`default`在所有条件都不满足时执行。
 
 语法：
 
@@ -651,7 +684,9 @@ JavaScript 循环通过改变值来多次执行一段代码。例如，你想在
 在上例中，你看到循环需要三个语句。
 
 - 第一个语句：初始化值
+
 - 第二个语句：检查条件
+
 - 第三个语句：增加或减少计数器
 
 语法：
@@ -662,11 +697,11 @@ for (statement 1; statement 2; statement 3) {
 }
 ```
 
-在上示例中，循环从语句 1 开始，即 `var i=1`，这里我们初始化 `i` 的值，然后语句 2 检查条件，如果条件满足则执行代码块。在这里语句 3 在代码块执行后运行，然后语句 3 用于增加或减少 `i` 的值。
+在上示例中，循环从语句 1 开始，即`var i=1`，这里我们初始化`i`的值，然后语句 2 检查条件，如果条件满足则执行代码块。在这里语句 3 在代码块执行后运行，然后语句 3 用于增加或减少`i`的值。
 
 ### while 循环
 
-当我们需要在任何条件满足时执行代码块时，我们使用 while 循环。
+当我们需要在任何条件满足时执行代码块时，我们使用`while`循环。
 
 语法：
 
@@ -700,15 +735,11 @@ while (condition) {
 </html>
 ```
 
-
-
-
-
-在这里，`while` 语句检查条件并执行代码，然后增加 `i` 的值，再次检查语句并执行代码，以此此类推……
+在这里，`while`语句检查条件并执行代码，然后增加`i`的值，再次检查语句并执行代码，以此类推……
 
 ## do while 循环
 
-`do while` 循环用于需要至少执行一次代码块的场景，首先执行 `do` 语句，然后由 `while` 语句检查条件。
+`do while`循环用于需要至少执行一次代码块的场景，首先执行`do`语句，然后由`while`语句检查条件。
 
 ### 语法
 
@@ -721,7 +752,7 @@ do{
 ### 示例
 
 ```html
-<<html>
+<html>
     <head>
         <title>Example</title>
     </head>
@@ -744,9 +775,8 @@ do{
 </html>
 ```
 
-在这里，首先执行 `do` 语句，然后检查条件；如果条件为真，则执行 `do` 语句中的代码。
+在这里，首先执行`do`语句，然后检查条件；如果条件为真，则执行`do`语句中的代码。
 
 ## 总结
 
 你已经成功学会了 JavaScript，现在可以编写自己的 JS 代码并在实际场景中工作了。希望你喜欢这三天的课程。
-

@@ -1,738 +1,5 @@
-# JQuery Mobile 开发与设计指南
-
-
-
-![](img/9780132947046.jpg)
-
-![cover-image](img/9780132947046.jpg)
-
-
-
-![Image](img/pub.jpg)
-
-
-
-
-1249 Eighth Street
-Berkeley, CA 94710
-510/524-2178
-510/524-2221 (fax)
-
-在网络上访问我们：[www.peachpit.com](http://www.peachpit.com)
-
-如需报告错误，请邮件至：errata@peachpit.com
-
-Peachpit Press 是 Pearson Education 的分部门。
-
-版权所有 © 2012 Kris Hadlock
-
-**版权收购编辑:** Michael Nolan
-**项目编辑:** Rebecca Gulick
-**开发编辑:** Robyn G. Thomas
-**撰稿作者:** Jay Blanchard
-**技术审核员:** Jay Blanchard
-**制作协调:** Myrna Vladic
-**排字员:** David Van Ness
-**文字编辑:** Gretchen Dykstra
-**校对:** Patricia Pane
-**索引员:** Valerie Haynes-Perry
-**封面设计:** Aren Howell Straiger
-**内页设计:** Mimi Heft
-
-## 权利声明
-
-版权所有。未经出版者书面许可，不得以任何形式或通过任何手段（电子、机械、复印、录制或其他）复制或传输本书的任何部分。有关转载和摘录许可的信息，请联系 permissions@peachpit.com。
-
-## 免责声明
-
-书中的信息按“原样”提供，不提供任何保证。虽然在准备本书的过程中已采取一切预防措施，但对于因书中包含的指令或书中描述计算机软件和硬件产品而直接或间接导致的任何损失或损害，作者或 Peachpit Press 对任何个人或实体不承担任何责任。
-
-## 商标
-
-制造商和销售商区分其产品的许多标记均主张为商标。当这些标记出现在书中且 Peachpit 知晓该商标主张权时，这些标记将按照商标所有者的要求出现。书中识别的所有其他产品名称和服务仅出于编辑目的，并为了此类公司的利益，无意侵犯该商标。此类使用或对任何商业名称的使用均不表示对本书的认可或其他附属关系。
-
-ISBN-13: 978-0-321-82041-9
-ISBN-10: 0-321-82041-X
-9 8 7 6 5 4 3 2 1
-
-美国印刷并装订
-
-*献给我的妻子 Lisa，在我写这本书时，她怀着我们的第一个孩子。只有真爱才能抵受在拥有新生宝宝的同时撰写一本书所花费的漫长时间。献给我的儿子 Lucas，语言无法表达我内你的爱。*
-
-## 谢谢
-
-有许多人，由于他们在在这本书写作之前、期间和之后为我提供的机会和帮助，我想向他们表示感谢：Neil Salkind，他帮助我进入出版世界并在我写作期间提供支持。Robyn Thomas 她的耐心。Jay Blanchard 在需要时介入并提供出色的技术审核。Rebecca Gulick 帮助推进进度。Michael Nolan 处理了细节。我所有的客户，感谢他们理解我有多忙。当然，还有 Peachpit 给了我为你们写作的机会。
-
-## 关于作者
-
-**Kris Hadlock** 自 1996 年以来一直是 Web 开发人员和设计师，曾为 SPIN Magazine、IKEA、美国航空、摩根大通银行、尼康和凤凰儿童医院等公司提供服务。Kris 是许多网站和设计杂志的特约专栏作家作家，包括 Peachpit.com、InformIT.com、IBM developerWorks (*[www.ibm.com/developerworks](http://www.ibm.com/developerworks)*) 以及 *Practical Web Design* 杂志。他的其他书籍《Ajax for Web Application Developers》和《The ActionScript 3.0 Migration Guide》。他是 Studio Sedition ([www.studiosedition.com](http://www.studiosedition.com)) 的创始人兼首席开发设计师，专注于形式与功能的融合。
-
-# 第 14 章 使用暴露的方法
-### 程序化切换页面
-### 静默加载页面
-### 使用实用方法
-## 总结
-
-# 第四部分 jQuery Mobile CMS
-## 第 15 章 安装移动版 WordPress 主题
-## 入门指南
-### 安装 WordPress
-### 创建 jQuery Mobile 主题
-### 添加博客文章和页面
-## 总结
-
-## 第 16 章 安装移动版 Drupal 主题
-## 入门指南
-### 安装 Drupal
-### 使用 jQuery Mobile 为 Drupal 设计主题
-### 安装 jQuery Mobile 模块
-### 安装 jQuery Mobile 主题
-### 自定义设置
-### 添加内容
-## 总结
-
-# 第五部分 超 jQuery Mobile
-## 第 17 章 检测移动设备
-### 使用 PHP
-### 识别浏览器
-### 调用 PHP 函数
-### 使用 JavaScript 检测特定设备
-### 使用 JavaScript 检测移动设备
-### 使用 jQuery 检测浏览器功能
-## 总结
-
-## 第 18 章 使用模拟器测试
-### 探索你的选项
-## 寻找模拟器
-### 使用模拟器
-## 使用模拟器进行测试
-### 使用模拟器
-## 使用模拟器进行测试
-## 总结
-
-## 索引
-
-## 介绍 Web 开发的未来
-
-大多数 Web 开发和设计师都认为，浏览器和跨平台测试不是他们愿意花费时间的事情。想象一下所有可能访问你网站的设备，然后想象一下每次构建网站时都要测试所有的平台——这将是极其艰辛且极其耗时的。jQuery Mobile 从一开始就为你提供这种支持，因为该团队以框架支持多种移动平台而自豪。该框架构建在整洁、语义化的 HTML 之上，确保了与大多数网络设备的兼容性。
-
-该框架还包含了无障碍功能，例如 `WAI-ARIA`（Web 可访问性富交互应用程序），这是万维网联盟发布的关于提高网页可访问性的技术规范，它们已集成到框架中，以支持屏幕阅读器（如 Apple iOS 上的 VoiceOver）和其他辅助技术。只需在你的网站中引入 jQuery Mobile 框架，即可轻松地将你的代码从语义 HTML 转换为使用 jQuery 和 CSS 的丰富、交互且无障碍的移动体验。
-
-### 为什么选择 jQuery Mobile？
-
-jQuery Mobile 不仅适用于 Web 开发人员；Web 设计师可以使用 UI，对移动应用程序进行完全的设计控制。内置组件（如列表视图、对话框、工具栏、搜索机制和全套表单元素）都可以通过主题框架进行自定义。在书的后部分，你还将学习 ThemeRoller，它可以让你通过简单的 Web 界面创建多达 26 个主题色块。用户体验（UX）设计师也得到了照顾，可以获得 OmniGraffle 和 Visio 的模板。当然，如果你想深入钻研，应用程序编程接口（API）可供 Web 开发人员使用。作为一名 Web 开发人员，你可以配置默认值，处理许多不同的事件，并使用多个暴露的方法和属性进行工作。
-
-
-
-
-
-一个新兴的社区正在通过许多第三方应用和框架来支持该框架，你可以使用这些工具构建 jQuery Mobile 应用。此外，兼容 jQuery Mobile 的插件和扩展也层出不穷，帮助 Web 开发人员集成自定义组件并为现有的核心功能添加能力。
-
-一个非常重要的第三方框架正在模糊原生开发与移动 Web 开发之间的界限。作为一个 HTML5 应用平台，`PhoneGap` 允许你使用 Web 技术编写原生应用程序。通过 `PhoneGap`，你的 Web 应用程序可以轻松转换为原生应用，并实现获取联系人信息、访问摄像头、使用地理位置、存储数据等功能。要了解更多关于 `PhoneGap` 的信息，请访问 `phonegap.com`。jQuery Mobile 的在线文档中甚至有一个关于它的章节。有了这些可能性，你不再需要为原生应用编写多个版本。这使得原生应用开发变得不再那么吸引人，因为你为 iPhone 开发的应用程序需要为 Android、BlackBerry、Windows Mobile 等其他平台完全重新开发。哦，别忘记每个新版本都需要为这些不同的平台进行更新。jQuery Mobile 框架通过让你通过浏览器浏览器即可访问 Web 应用程序和网站，消除了下载和安装移动应用的需求，提供了可以与原生应用开发竞争的移动 Web 体验。
-
-## 本书适用读者
-本书适用于具有基础 HTML 经验并兴趣使用 jQuery Mobile 框架创建移动网站的人。
-
-## 本书不适用读者
-本书不适用于从未创建过网页的人。
-
-## 你将如何学习
-在本书中，你将通过实践来学习。每一章都包含示例代码和描述，帮助你深入理解其工作原理。你也可以在书籍的网站上找到代码示例（[www.peachpit.com/jquerymobile](http://www.peachpit.com/jquerymobile)）。
-
-## 你将学习到什么
-本书将教你从创建页面的基础知识到自定义主题，再到使用 `WordPress` 和 `Drupal` 开发你自己的 jQuery Mobile 内容管理系统的的一切。当你读完这本书时，你将成为一名 jQuery Mobile 专家。
-
-## 结语
-jQuery Mobile 框架是一个强大的框架，受到了移动行业领导者的支持。它可以轻松地添加到现有网站中，创建一个不仅支持触摸，而且在大多数主流移动平台上支持并无残障人士访问的移动 Web 体验。通过该框架易用的功能和内置的渐进式增强技术，设计控制、页面过渡、组件集成、脚本、API 访问等许多功能都触手可及。
-
-## 支持的 jQuery Mobile 平台
-jQuery Mobile 框架支持大多数现代桌面、智能手机、平板电脑和电子阅读器平台。与其花费时间在测试多个设备上，你大可以从从开始就为许多平台提供支持。这是因为 jQuery Mobile 平台采用了渐进式增强方法，这不仅为设备带来了丰富的交互体验，还为旧版浏览器和手机提供了支持。当浏览器无法识别某些特定的 HTML5 代码时，该网页将渲染为简单但功能完备的网页。旧手机或浏览器用户习惯于有限的 Web 体验，因此这种方法在这种情况下仍然会渲染出一个合格的基础 HTML 网页。
-
-目前，`Android` 和 `Apple iOS` 是领先的移动操作系统。`Android` 拥有最大的操作系统市场份额（44.2%），而 `Apple` 在美国拥有最大的手机市场份额（28.6%）。`Windows`、`BlackBerry`、`SymbianOS` 和 `Palm/HP webOS` 操作系统占据了剩余的大部分智能手机市场份额（图 1）。所有这些平台/操作系统都得到了 jQuery Mobile 框架的支持。
-
-![Image](img/jquery-opener-1.jpg)
-
-图 1. 2011 年操作系统市场份额。
-
-### 主要平台
-以下列表提供了有关受 jQuery Mobile 框架完全支持的主要平台的更多信息。
-
-![Image](img/jquery-opener-2.jpg)
-
-### IOS
-`iOS` 是苹果的移动操作系统。它最初为 `iPhone` 开发，现已扩展到支持其他苹果设备，如 `iPod Touch`、`iPad` 和 `Apple TV`。`iOS` 使用 `Safari` 作为其 浏览器。
-
-![Image](img/jquery-opener-3.jpg)
-
-### ANDROID
-`Android` 是由 `Google` 领导的开源软件项目和操作系统。自根据 `Apache` 许可证发布以来，它已用于大量的手机、平板电脑和其他设备。`Android` 使用 `Google Chrome` 作为其 浏览器。
-
-![Image](img/jquery-opener-4.jpg)
-
-### WINDOWS PHONE
-`Windows Phone` 是微软的移动操作系统。该系统与第三方以及微软服务集成。`Windows Phone` 使用 `Internet Explorer Mobile` 作为其 浏览器。
-
-![Image](img/jquery-opener-5.jpg)
-
-### BLACKBERRY
-`BlackBerry` 由一种专有的移动操作系统驱动，在其自己的智能手机和平板电脑上提供。
-
-![Image](img/jquery-opener-6.jpg)
-
-### WEBOS
-`webOS` 是 Palm 设备使用的开源操作系统。`webOS` 在其浏览器中使用 `WebKit` 布局引擎，简单名为 `Web`。
-
-### 分级支持
-jQuery Mobile 使用三级列表列出框架支持的平台。级别分为 `A`、`B` 和 `C`。`A` 包含完整的体验，并可以选择基于 `Ajax` 的页面过渡；`B` 包含相同的体验，但不包含 `Ajax` 的页面过渡；而 `C` 是基础但功能完备的 HTML 体验。
-
-`A` 级支持之前提到的所有主要移动操作系统以及，包括 `Apple iOS`、`Android`、`Windows Phone`、`BlackBerry`、`Palm/HP webOS`、`Kindle 3`、`Kindle Fire` 等。`B` 级支持包括 `BlackBerry 5`、`Opera Mini` 和 `Nokia SymbianOS`。`C` 级支持包括 `BlackBerry 4`、`Windows Mobile` 以及所有旧款智能手机和功能手机。此列表不断演进；要查看最新列表，请访问 [jquerymobile.com](http://jquerymobile.com)。
-
-# 第一部分：jQuery Mobile 基础
-
-## 1. 理解 jQuery
-jQuery 框架是 jQuery Mobile 框架的骨干，因此在开发 jQuery Mobile 网站之前，了解 jQuery 框架的基础知识会有帮助。虽然不是必须的，但理解 jQuery 将使使用 jQuery Mobile 变得更加简单，特别是如果你对编写任何自定义功能感兴趣的话。
-
-`jQuery` 是一个强大且轻量级的 JavaScript 库，简化了 JavaScript 代码并扩展了层级样式表（CSS）的功能。此外，它消除了跨浏览器兼容性问题并符合 CSS3 标准。这意味着脚本更快、测试更少，针对不同浏览器处理某些功能编写的代码也更少。`jQuery` 框架是 Web 开发应该有的典范：你每次都能得到你所期望的结果。
-
-### 开始学习
-
-
-
-
-
-要开始使用 jQuery，你首先需要从 [jquery.com](http://jquery.com) 下载框架并将其包含在网页中，或者你也可以通过 Google、Microsoft 或 jQuery 内容分发网络（CDN）引用它。我推荐并经常通过 CDN 引用该库，因为它更快。CDN 会将你的内容分发到多个地理分散的服务器上，因此用户将接收到最近的文件。此外，Google 和 Microsoft 都提供了通过 HTTPS 支持安全套接层 (SSL) 的版本，如果你在 SSL 下进行任何类型的开发，这是必不可少的。要通过 CDN 引入库（我们以 Google 为例），使用 `script` 元素将其包含在 `<head>` 元素内或网页末尾。
-
-点击此处查看代码图片
-
-```html
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js">
-</script>
-```
-
-在 `<head>` 元素中包含 JavaScript 文件是传统方法。但根据 Yahoo! 的说法，“终端用户响应时间的 80% 都在前端。”大部分时间花在了下载资源上，如样式表、图像、脚本等。减少资源数量显然是重要的，但在 HTML 文件末尾包含 JavaScript 变得变得越来越常见。这是因为脚本会阻塞并行下载，这意味着在每个脚本被单独下载之前，其他资源将不会下载。为了确保你将脚本放置在正确的位置，只需在闭合的 `</html>` 标签之前包含它们。
-
-在生产环境中使用压缩后的版本（minified version）是最好的，因为它比源版本更小。此外，虽然包版本（packed version）比压缩后的版本更小，但它需要客户端处理时间来解压缩文件，而且在最新版本中已不可用。根据 Yahoo! 的说法，“在对十个美国顶级网站的调查中，代码压缩实现了 21% 的体积缩减。”
-
-## jQuery 基础
-
-如果你熟悉编写 JavaScript 和 CSS，那么编写第一个 jQuery 脚本会感到非常熟悉，但可能稍微有一点奇异。jQuery 框架是一个 JavaScript 库，这意味着它是用 JavaScript 构建的。基础知识是相同的，因为你本质上仍然在编写 JavaScript，只是恰好你编写的方式使用了 jQuery 框架。换句话说，虽然对某些基础知识可能增加了增强，但 JavaScript 的核心——变量、函数、条件语句等——并没有改变。所以，你仍然将使用 `var` 关键字、`if` 和 `switch` 语句以及函数，但你一定会注意到许多额外的增强和不同的编写方式，即访问 HTML 元素。
-
-jQuery 为 JavaScript 语言提供了许多增强，正如前面提到的，最棒的部分是它是跨浏览器兼容的，因此你再也不需要为处理不同的浏览器编写同一个脚本的多个版本了，这确实让人松了一气。这在处理事件、Ajax（本章稍后会讨论）以及其他传统上需要一些条件语句来确定浏览器如何解释代码的功能时 特别有用。
-
-### 选择 HTML 元素
-
-与其不断使用 `document.getElementById()` 来访问网页中的 HTML 元素，你只需简单地使用 jQuery 选择器 `jquery()` 或 `$()` 函数，后者是简写版本，也是我将在本书中一直使用的版本。使用 jQuery 选择器不仅让你编写的字符更少，还让你能做比通过 `id` 访问元素多多的事情。通过 jQuery 选择器，你还可以访问 HTML 元素数组，或者通过名称访问元素或对象。jQuery 选择器将一个元素或一组元素封装成一个 jQuery 对象，允许你对对象本身应用 jQuery 方法。而且不仅如此：你甚至可以通过类名访问元素，或使用 CSS 选择器，如 `:first-child`、`:nth-child` 等。以下是几个示例：
-
--   要使用 jQuery 选择器通过 ID 访问元素，使用 `#id` 选择器，就像你在 CSS 中通过 ID 为元素附加类名一样：
-
-```javascript
-$('#foo');
-```
-
--   要通过类名访问元素，使用 `.class` 选择器，就像你在创建 CSS 类时一样。如果你有多个具有相同类名的元素，它们都将被选中。
-
-```javascript
-$('.foo');
-```
-
--   要选取带有特定类名的特定元素，在类名之前添加元素名称：
-
-```javascript
-$('div.foo');
-```
-
--   你甚至可以使用元素选择器选取特定的元素或一组元素：
-
-```javascript
-$('div');
-```
-
-如果你熟悉 CSS，你可能开始看到这种模式的展开和无尽的可能性。构建 CSS 类时的可用选项与你使用 jQuery 选择器访问 HTML 元素时使用的选项是相同的。这就是 jQuery 如何增强 JavaScript 和 CSS 的——它将两者并将它们的语法合并成一种新语言，当然，在合理使用的情况下，这增强了整体用户体验。
-
-### 管理事件和函数
-
-jQuery 使用事件来响应网页上的用户交互，例如鼠标点击。在 jQuery 中，事件非常容易管理，而且它们在所有主流浏览器中都是可靠的，这是一件大事，因为在传统的 JavaScript 中并不总是如此。jQuery 赋予你从任何现有的 HTML 元素拦截许多不同事件的能力。通常，事件被用于执行某种函数。在下面的示例中，一个 `click` 事件被绑定到类名为 `foo` 的 `div` 元素上：
-
-点击此处查看代码图片
-
-```javascript
-$('div.foo').click(function(e) {
-    // 你的代码
-});
-```
-
-通过将 `click` 事件绑定到 `div`，为点击该 `div` 关联了一个函数。因此，每当点击 `div.foo` 时，你的自定义代码就会执行。
-
-如果你熟悉传统的 JavaScript，这种语法看起来很奇怪。别担心——我刚开始时也是这样，但一旦学会了，我就喜欢它了。一旦你熟悉了它，你会发现这种语法封装良好、易于理解且易于编写。让我们分解一下之前的示例：
-
-1. jQuery 选择器用于选取 `div.foo`，然后变成一个 jQuery 对象。
-2. `div.foo` jQuery 对象在 `div.foo` 被点击时使用 `click` 方法触发处理函数。
-3. 处理函数用于执行自定义代码。处理函数还可以访问 `eventObject`，它是作为参数传递的。在示例中，它是处理函数中的参数 `e`。
-
-如果你使用 jQuery 选择器选择一个多个 HTML 元素使用的类名并分配鼠标事件，该鼠标事件将自动绑定到所有这些元素。因此，在上面的示例中，如果你有多个类名为 `foo` 的 `div` 元素，`click` 事件将绑定到所有它们。在处理绑定到多个元素的事件时，考虑作用域是重要的，以确保你执行的任何自定义代码都应用于目标元素。
-
-点击此处查看代码图片
-
-```javascript
-$('div.foo').click(function(e) {
-    alert($(this).html());
-});
-```
-
-在此示例中，`$(this)` 用于访问作用范围内的当前元素。
-
-* *
-
-![Image](img/note.jpg) 注意
-
-作用域是值所关联的上下文。在这种情况下，函数是上下文，而 `$(this)` 是值。
-
-
-
-
-
-`$(this)` 与在 JavaScript 中使用 `this` 关键字相同；在这种情况下，它适用于当前触发 `click` 事件的元素。在考虑作用域时，`this` 始终指向与闭包上下文相关的对象。在示例中，`div.foo` 是对象，而 `click` 事件的处理器函数就是闭包上下文。jQuery 会自动在你的匿名处理函数内部将被点击的元素赋值为 `$(this)`。这使得你能够访问执行事件的元素，即使相同的代码被应用于多个元素上也是如此。函数用于作为事件的结果或对函数的简单直接的调用来执行脚本或一组脚本。
-
-### `bind` 方法与自定义事件
-
-正如你将在本书的后续部分学到的，`bind` 方法经常被 `jQuery Mobile` 框架用于处理自定义事件。
-
-#### jQuery Mobile 自定义事件
-
-`jQuery Mobile`提供的自定义事件为框架原生功能之外的开发提供了非常有钩子，这意味着你可以拦截某些现有的事件并添加自己的自定义代码。这些事件包括 `touch`、`mouse` 和 `window` 事件，你将在本书的后续部分学习如何扩展它们。jQuery 中 `bind` 方法的语法与之前的代码示例非常相似。
-
-点击此处查看代码图片
-
-```javascript
-$('div.foo').bind('click', function(e) {
-    // 在此处编写你的自定义代码
-});
-```
-
-区别在于，你可以使用同一个处理器对多个事件做出反应：
-
-点击此处查看代码图片
-
-```javascript
-$('div.foo').bind('mouseenter mouseleave', function(e) {
-    // 在此处编写你的自定义代码
-});
-```
-
-***
-
-![Image](img/note.jpg) 备注
-
-函数与方法之间的区别在于，函数是独立的，而方法与对象关联的。在这种情况下，`bind` 方法与 `jQuery` 对象关联联。
-
-***
-
-#### 处理自定义事件
-
-或者你也可以处理自定义事件，例如由 `jQuery Mobile` 框架实现的：
-
-点击此处查看代码图片
-
-```javascript
-$('div.foo').bind('displayMyName', function(e, myName) {
-    alert('My name is: '+ myName);
-});
-
-$('button').click(function () {
-    $('div.foo').trigger('displayMyName', ['John Smith']);
-});
-```
-
-当我们讨论如何将 `jQuery Mobile` 事件与自定义处理函数绑定时，将更深入地介绍绑定事件的内容。
-
-### 等待文档就绪
-
-开发者之间的一种常见做法是在执行任何 JavaScript 之前等待网页加载。这样做的原因是确保在尝试访问或操作网页元素之前，这些元素是可用的。尝试访问不可用的文档元素可能会导致意想不到的行为，并可能破坏你后续所有的 JavaScript 代码。在传统的 JavaScript 中，等待页面加载的最常用方法是使用 `window.onload` 事件。然而，这种方法是在文档加载之后发生的，因为它实际上在等待网页内内的所有图像和横幅加载，这会极大地延迟你的脚本执行。幸运的是，jQuery 提供了一个 `ready` 事件，让你的代码在文档可用时立即做出响应。
-
-点击此处查看代码图片
-
-```javascript
-$(document).ready(function() {
-    // 在此处编写你的自定义代码
-});
-```
-
-首先，你需要选择文档对象本身，然后应用 `ready` 事件。当 `ready` 事件触发时，它将执行包含你自定义代码的函数。继续之前的示例，你需要将自定义代码添加到 `ready` 事件中，以确保在尝试应用 `click` 事件之前文档是就绪的：
-
-点击此处查看代码图片
-
-```javascript
-$(document).ready(function() {
-    $('div.foo').click(function() {
-        alert($(this).html());
-    });
-});
-```
-
-或者你可以使用简写版本，它消除了访问 `document` 和设置 `ready` 事件的需要。
-
-点击此处查看代码图片
-
-```javascript
-$(function() {
-    $('div.foo').click(function() {
-        alert($(this).html());
-    });
-});
-```
-
-使用 `ready` 事件是任何 jQuery 开发中的事实标准。这种方法不仅确保了你的代码会在适当的时间触发，还利于创建完全不干扰的代码，这意味着你可以将所有的 jQuery 代码写在一个独立的外部文件中，只需从你的 HTML 网页中简单引用它即可。
-
-### 应用特殊特效
-
-`jQuery` 以其允许你在不使用第三方插件（如 `Flash`）的情况下创建特殊特效而闻名。该库提供了许多将动画整合到网页中的技术。动画可以创建一个更具视觉吸引力的网页，也可以用于其他更具实用的目的，例如为用户交互提供视觉反馈。`jQuery` 框架包含了许多预置的动画方法，例如 `fadeIn`、`fadeOut`、`fadeTo`、`show`、`toggle`、`slideUp` 和 `slideDown` 等。
-
-```javascript
-$(document).ready(function() {
-    $('div.foo').fadeIn();
-});
-```
-
-尽管这些预置方法看起来是独立的，但它们许多内部是由 `animate` 方法驱动的。`animate` 方法可以用于对任何数值 CSS 属性进行动画处理，例如 `height`、`opacity`、`left` 和 `right`。
-
-点击此处查看代码图片
-
-```javascript
-$(document).ready(function() {
-    $('div.foo').click(function() {
-        $(this).animate({
-            height: '50'
-        }, 1000, function() {
-            // 动画完成后执行的自定义代码
-        });
-    });
-});
-```
-
-在这个示例中，当 `div.foo` 被点击时，它的 `height` 属性将在 1 秒（1000 毫秒）内增加 50 像素，动画完成后，回调函数将执行你的自定义代码。这种功能非常强大；你不仅可以在事件触发时执行动画，还可以在动画完成后触发函数甚至另一个事件，以此类推。
-
-#### 队列方法
-
-`queue` 方法提供了一种队列连续效果的方法，这意味着可以在队列中运行多个效果，或者通过 `clearQueue` 方法停止队列。`queue` 方法主要由 `FX` 队列（即默认队列）使用，但也可以通过 `jQuery` API 可用。
-
-`queue` 和 `dequeue` 方法旨在与特定的元素或对象关联。使用 `queue` 方法时，你需要分配一个参数作为参数，例如一个匿名函数：
-
-```javascript
-$(document).ready(function() {
-    $('div.foo').fadeOut().queue(function(){
-        $('div.foo').fadeIn();
-        next();
-    });
-});
-```
-
-这种功能让你能够不使用 JavaScript 函数（如 `setTimeout` 或 `setInterval`）来产生基于时间线的动画。
-
-这些示例仅涵盖了动画方法。`jQuery` 包含了创建队列以提供额外功能的方法。**表 1.1** 列出了 jQuery 中可用的队列方法。
-
-表 1.1 队列方法
-
-![Image](img/01tab01.jpg)
-
-正如提到的，尽管队列通常用于效果并在 jQuery 文档中列在效果下，但它们也可以用于队列其他功能，例如一系列异步方法调用，这引导我们进入使用 jQuery Ajax。
-
-#### 使用 Ajax
-
-
-
-
-
-Ajax 是异步 JavaScript 和 XML（asynchronous JavaScript and XML）的缩写。异步意味着你可以通过超文本传输协议（`HTTP`）向服务器发送请求，并在等待响应的同时处理其他数据。例如，你可以调用服务器端脚本以 XML 格式从数据库检索数据，将数据发送到服务器端脚本存储在数据库中，或者简单地加载 XML 文件以在不刷新网页的情况下填充网站页面。通过 `jQuery` 框架提供的功能使得 Ajax 开发比传统的 JavaScript 简单得多，因为它需要更少的代码，并提供了额外的方法和事件处理器来涵盖任何情况。与传统的 JavaScript 相比，即使在开发复杂功能时，处理 Ajax 所需的 `jQuery` 代码极少，这最终加快了开发速度。
-
-使用传统的 JavaScript，由于不同浏览器之间存在各种差异，Ajax 需要大量的冗余代码来构建请求和处理响应。要发送请求并处理响应，你需要编写类似以下的代码：
-
-点击此处查看代码图像
-
-```javascript
-if(window.XMLHttpRequest) {
-    request = new XMLHttpRequest();
-}
-else if(window.ActiveXObject) {
-    request = new ActiveXObject('MSXML2.XMLHTTP');
-}
-
-request.onreadystatechange = onResponse;
-request.open('GET', 'url for request', true);
-request.send(null);
-
-function checkReadyState(obj) {
-    if(obj.readyState == 0) { // Sending Request }
-    if(obj.readyState == 1) { // Loading Response }
-    if(obj.readyState == 2) { // Response Loaded }
-    if(obj.readyState == 3) { // Response Ready }
-    if(obj.readyState == 4) {
-        if(obj.status == 200) {
-            return true;
-        }
-        else if(obj.status == 404) {
-            // File not found
-        }
-        else {
-            // There was a problem retrieving the XML
-        }
-    }
-}
-
-function onResponse() {
-    if(checkReadyState(request)) {
-        // Handle the response with one of the following properties
-        //alert(request.responseXML);
-        //alert(request.responseText);
-    }
-}
-```
-
-`jQuery` 实现了与传统的 JavaScript 相同的功能，但你无需担心编写其大部分代码。这并不是说 JavaScript 难以编写，而是要写的内容太多，而且往往会变得混乱，尤其是当你将其与使用 `jQuery` 编写请求和响应的简单程度进行比较时。以下是一个使用 `jQuery` 的 Ajax 请求示例，与之前的 JavaScript 示例非常相似：
-
-点击此处查看代码图像
-
-```javascript
-jQuery.ajax({
-    url: 'url for request',
-    success: function(xml) {
-        // Parse the response
-    }
-});
-```
-
-此代码使用了 `jQuery` 对象的 `ajax` 方法，包含用于请求的 `url` 属性，并使用匿名函数处理 `success` 回调。在 `jQuery` 对象的 `ajax` 方法中可以使用许多更多属性，例如请求的 `type`（`POST` 或默认的 `GET`）、`username` 和 `password` 以及 `crossDomain`。然而，这个示例展示了 `ajax` 方法的最基本形式，以说明 `jQuery` Ajax 调用的用的性。
-
-Ajax 在 `jQuery Mobile` 框架中用于处理页面更改以及加载或预加载页面。该框架通过应用程序编程接口（`API`）提供处理此类功能的访问，我们将在本书的后续部分详细介绍。
-
-## 总结
-
-`jQuery` 通过简化 JavaScript 并将其与 `CSS` 语法结合，使用户界面增强变得更加容易。该框架提供了一种编写更少代码、花费更少测试时间并在更时间内实现更复杂结果的方法。`jQuery` 让你通过轻松添加自定义交互以及自定义效果为用户提供视觉反馈，从而增强网页，最终创造出更好的用户体验。
-
-本书并非教授 `jQuery` 框架，但本章回顾了理解和使用 `jQuery Mobile` 框架所必需的概念。要了解更多关于 `jQuery` 框架的信息，请访问 jquery.com。
-
-
-
-
-你可以在一个独立的移动网站中包含 `viewport` 元标记标签，以适应较小的浏览器显示，但这通常超出了许多公司的能力范围，因为这增加了的时间和成本。此外，管理两个独立的网站通常是难以应付的负担。目前，正确渲染你网站的标准选项是使用 `viewport` 元标记标签。该标签告诉浏览器根据在该浏览器中查看时的最佳宽度来优化你的网站。要使用 `viewport` 元标记标签设置显示，请将元标记的 `name` 属性设置为 `viewport`，然后使用 `content` 属性来设置符合你需求的属性和值。在 `content` 属性中，你可以定义想要为布局设置的属性和值。如需向 `viewport` 元标记标签添加多个属性，你需要创建一个用逗号分隔的属性和值对列表。以下是移动开发中 `viewport` 元标记标签最常见的设置：
-
-点击此处查看代码图片
-
-```html
-<meta name="viewport" content="width=device-width, initial-scale=1">
-```
-
-要将此标签包含在 HTML5 模板中，请将其添加到 `head` 元素中：
-
-点击此处查看代码图片
-
-```html
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Page Title</title>
-    </head>
-<body>
-
-</body>
-</html>
-```
-
-要设置的最重要属性是 `width`，对于移动网站，它应该被设置为 `device-width`。第二个属性是 `initial-scale`，它定义了网站首次加载时的状态，之后用户可以放大或缩小比例。例如，如果你将 `initial-scale` 设置为 2 而不是 1，那么默认情况下网站将缩放 2 倍（即 2 将用作缩放的倍数）。表 2.1 详细描述了这些和其他元 `viewport` 属性。
-
-表 2.1. 元 viewport 属性
-
-![Image](img/02tab01.jpg)
-
-在为移动网站设计或开发时，了解你的内容如何在不同设备上显示非常重要。记住，手持设备有很多形状和大小，而且有竖屏和横屏模式需要处理。我总是考虑使用 CSS 和/或 `viewport` 属性来创建可缩布局。然而，通过使用代码示例中的 `viewport` 元标记代码结合 jQuery Mobile 框架，你可以确保你的网站可以在广泛设备上尽可能准确渲染。
-
-### 理解数据属性 (data-Attributes)
-
-HTML5 `data-` 属性允许你存储用户不可见的自定义数据。换句话说，这些数据不会被浏览器渲染，甚至不会被使用。在之前的 HTML 版本中，自定义数据通常存储在 `title`、`rel`、`class` 或 `id` 属性中，或者隐藏的 HTML 元素中。存储在这些属性中的数据可以被 JavaScript 访问。通过 JavaScript 访问自定义数据有许多用处；它可以在后台创建自定义功能，或者在发生特定交互时向用户显示。在网页中使用自定义数据的一个很好的例子是图片画廊：可以为图片添加标题和描述，然后使用 JavaScript 显示用户正在查看的图片信息。归根结底是，这是对这些 HTML 属性的误用，但到目前为止，它是处理某些不受支持功能的唯一方法。幸运的是，在 `data-` 属性的支持下，开发者可以开始恰当地使用 HTML 属性。
-
-你现在不必使用具有其他预定义用途的属性，而是可以创建与你的数据更相关的自定义 `data-` 属性，并且仍然渲染出有效的 HTML。HTML5 规范支持任何以 `data-` 开头的属性作为数据存储区域。你想要附加到 `data-` 前缀的任何名称都将被支持。例如，如果你为属于图片画廊的图片标签添加自定义的 `data-` 属性，你可以添加自定义的 `data-title` 和 `data-description` 属性，并给它们赋予任何自定义值。
-
-点击此处查看代码图片
-
-```html
-<img src="image-path/img.jpg" data-title="My image title" data-description="My image description">
-```
-
-![Image](img/note.jpg) 注意
-
-创建自定义 `data-` 属性的唯一限制是属性的自定义部分必须至少有一个字符，且不能包含大写字母。
-
-属性值可以是任何字符串，并且如既往一样，你需要对字符串中的任何双引号进行转义。
-
-记住潜在的命名冲突。随着 `data-` 属性变得越来越流行，JavaScript 库可能会寻找具有相似名称的属性，特别是当使用通用属性名称时，例如 `data-description`。解决此问题的良好方法是在 `data-` 属性的名称中使用自定义命名空间。例如，如果你正在为 `jquerymobile` 开发网站，你可以使用 `data-jquerytv-`：
-
-```text
-data-jquerytv-
-```
-
-随着 `data-` 属性变得越来越流行，JavaScript 库可能会寻找具有相似名称的属性，特别是当使用通用属性名称时，例如 `data-description`。解决此问题的良好方法是在 `data-` 属性的名称中使用自定义命名空间。例如，如果你正在为 `jquerymobile` 开发网站，你可以使用 `data-jquerytv-`：
-
-```text
-data-jquerytv-
-```
-
-如果你不使用命名空间，结果将不会在命名空间和值之间包含连字符，因此你的 `data-` 属性将难以阅读，jQuery Mobile 会寻找这样的属性：
-
-```text
-data-jquerytvfoo
-```
-
-jQuery Mobile 框架对组件使用了许多 `data-` 属性。框架本身允许你使用名为 `ns` 的全局配置选项定义自定义命名空间。`ns` 选项可以设置为任何自定义值，例如 `jquerymobile-`。如果你使用自定义命名空间，最好在结尾使用连字符：
-
-```text
-jquerymobile-
-```
-
-请注意，选择自定义命名空间意味着你在编码时必须承诺。例如，在定义 jQuery Mobile 头部时，你通常使用：
-
-```html
-data-role="header"
-```
-
-要将此属性添加到你的 HTML5 模板中，只需添加一个包含该属性的 `div`：
-
-```html
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>Page Title</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-    </head>
-<body>
-    <div data-role="header">
-        <h1>Header</h1>
-    </div>
-</body>
-</html>
-```
-
-然而，如果你在配置中定义了自定义命名空间，你将需要定义头部为：
-
-```html
-data-jquerymobiletv-role="header"
-```
-
-我们将在书的后续部分详细讨论配置选项，包括 `ns` 选项。
-
-由于 `data-` 属性的引入，开发者对添加到网页中的数据有了更多的控制权。自定义属性提供了一种方法，可以在支持语义化 HTML 的同时，通过前端脚本语言（如 JavaScript）增强网页。
-
-## 总结
-
-
-
-
-
-认为你需要理解 HTML5 和 jQuery 才能使用 jQuery Mobile 框架可能令人望而生畏。幸运的是，该框架的设计方式支持不同技能水平的开发者。你不一定得知道 HTML5 和 jQuery，因为框架提供了一个可以直接从 [jquerymobile.com](http://jquerymobile.com) 下载的 HTML5 模板，而 jQuery 对于想要使用它的开发者来说是可用的。唯一绝对必要的条件是理解如何使用 `data-` 属性，因为这是在不使用 jQuery 的情况下向网页添加小组件的方法。
-
-## 3. 快速上手 jQuery Mobile
-
-在之前的章节中，我们涵盖了基础 jQuery、如何创建 HTML5 模板、如何为移动端浏览添加 `viewport` 元标记，以及如何使用 `data-` 属性。现在，你已经准备好深入研究 jQuery Mobile，看看这些语言、元素和属性是如何通过框架被利用和增强的。jQuery Mobile 框架的优点之一是，它的核心是基础的 HTML5 标记和 JavaScript，所有主流浏览器都支持它们。对于基础的 jQuery Mobile 开发，老实说并没有多少东西要学。本章涵盖了几个步骤，并对幕后的运作提供了一些背景介绍。在后面的章节中，你将看到如何扩展这些基础概念，以创建更高级的 jQuery Mobile 网站甚至是移动 Web 应用。
-
-### jQuery Mobile 如何工作
-
-构建 jQuery Mobile 网站有许多方法。然而，在最简单的形式中，框架运行在 HTML5 和 jQuery 库之上，将带有 `data-` 属性的元素转换为组件，使其非常容易整合到你现有的 Web 开发实践中。框架中最基本的组件是页面（pages）和工具栏（toolbars），它们将在本章稍后详细介绍。首先，让我们看看如何将 jQuery Mobile 框架整合到 HTML5 网页中。
-
-### 为你的网站添加 jQuery Mobile 框架
-
-首先，jQuery Mobile 框架可以在 [jquerymobile.com](http://jquerymobile.com) 获取。有两种方法可以将 jQuery Mobile 框架添加到你的网页中。
-
-第一种方法是下载单独包，包含了 JavaScript 库和 CSS 文件的完整版本和压缩版本。你还需要从 [jquery.com](http://jquery.com) 下载 jQuery 库。
-
-第二种（推荐）选项是包含指向 CDN 托管文件的直接引用，如下所示：
-
-点击此处查看代码图像
-
-```html
-<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.css" />
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-<script src="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.js"></script>
-```
-
-![Image](img/note.jpg) 注意
-
-请记住，在本书编写时，jQuery Mobile 框架的最新版本是最终版 1。要获取包含这些文件的最新代码，请访问 [jquerymobile.com](http://jquerymobile.com)，你可以直接将其复制并粘贴到你的网页中。
-
-要将框架添加到你在第二章 中创建的 HTML5 模板“HTML5 的角色”中，请将其添加到 `head` 元素内：
-
-点击此处查看代码图像
-
-```html
-<!DOCTYPE html>
-<html
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Page Title</title>
-        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.css" />
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-        <script src="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.js"></script>
-    </head>
-<body>
-
-</body>
-</html>
-```
-
-推荐使用内容分发网络（CDN）托管文件的主要原因是加载速度更快。CDN 会将你的内容分布在多个地理分散的服务器上，因此访问你网页的用户将接收到最近的 Web 文件。
-
-如果你正在开发 Microsoft .net 应用程序，可以使用 Microsoft CDN 托管的 jQuery Mobile 文件，目前可以在 [`www.asp.net/ajaxLibrary/CDNjQueryMobile10.ashx`](http://www.asp.net/ajaxLibrary/CDNjQueryMobile10.ashx) 获取。
-
-有了 jQuery Mobile 框架后，你就可以开始将 HTML5 标记转换为丰富的移动组件。让我们来看看最常见的组件：页面和工具栏。
-
-### 页面和工具栏
-
-在 jQuery Mobile 中，页面字面意思是由一个 `data-role` 属性为 `page` 的元素定义。我不确定是否还能比这更简单了。jQuery Mobile 将将这个 `<div>` 转换为页面。下面的示例了使用这些 `data-roles` 的典型 HTML 结构：
-
-```html
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Page Title - jQuery Mobile</title>
-        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.css" />
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-        <script src="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.js"></script>
-    </head>
-<body>
-    <div data-role="page">
-        <div data-role="header">
-            <h1>Page title</h1>
-        </div>
-        <div data-role="content">
-            Body copy
-        </div>
-        <div data-role="footer">
-            Copyright
-        </div>
-    </div>
-</body>
-</html>
-```
-
-代码与我们之前的示例非常相似，增加了 `page`、`header`、`content` 和 `footer` 元素。jQuery Mobile 对这些标记的视觉转换可以在 **图 3.1** 中看到。
-
-![Image](img/jquery-3-1.jpg)
-
-图 3.1。jQuery Mobile 在视觉上转换带有特定 data- 属性的标记。
-
-`header`、`content` 和 `footer` 都被转换为一种基础布局，在视觉上分隔了每个部分。这是默认的 jQuery Mobile 主题；在本书后后部分，你将学习如何创建自定义主题。
-
-
-
-` 标签开头处截断了）。根据您提供的上下文，我为您翻译了已给出的部分。如果您有后续文本，请继续提供。
-
-[content]
 
 构建 jQuery Mobile 网页结构有两种方式。第一种是将所有页面整合在同一个文件中；第二种是像典型网站一样创建独立的文件。要在单个 HTML 文件中创建多个页面，你可以定义多个 `page` `data-roles`，这允许每个 `page` `data-role` 包含自己的页眉（header）、内容（content）、页脚（footer）等。以下示例展示了如何在单个 HTML 文件中创建多页 jQuery Mobile 网站的基本思路：
-
-点击此处查看代码图片
 
 ```html
 <!DOCTYPE html>
@@ -768,8 +35,6 @@ data-jquerymobiletv-role="header"
 
 当使用独立的 HTML 文件构建网页时，`page` `data-role` 被用作容器，框架会将其他网页加载到容器中。例如，假设你有两个独立的 HTML 文件，`page-1.html` 和 `page-2.html`。然后你向两个文件中都添加 `page` `data-role` 属性，并将 `page-1.html` 超链接链到 `page-2.html`：
 
-点击此处查看代码图片
-
 ```html
 <!DOCTYPE HTML>
 <html>
@@ -800,9 +65,11 @@ data-jquerymobiletv-role="header"
 在包含 jQuery Mobile 框架后，`page-1.html` 的 `page` `data-role` 将自动成为容器，通过 `XMLHttpRequest` 加载 `page-2.html` 中 `page` `data-role` 内的标记。`XMLHttpRequest` 是 Ajax 用于与服务器交换数据而无需刷新网页的方法；它就像是通往后端的门户。图 3.2 显示了当 `page-1.html` 链接 `page-2.html` 时产生的 `XMLHttpRequest` 示例。该请求使用 Chrome 开发者工具记录。在此例中，使用 Chrome 开发者工具是为了查看点击指向 `page-2.html` 的链接是由 jQuery Mobile 发起的 `XMLHttpRequest`。Chrome 开发者工具是测试和调试代码的极佳方法。
 
 ![Image](img/jquery-3-2.jpg)
+
 图 3.2. jQuery Mobile 使用 `XMLHttpRequest` 加载后续页面。
 
 ![Image](img/note.jpg)
+
 注意 Chrome 开发者工具是 Chrome 浏览器内置的集成 Web 开发环境。HTML 页面本身被请求，jQuery Mobile 使用其内容来显示新页面。关于这个简单的请求有很多值得学习的地方，我们将在后续章节中进行详细介绍。
 
 ## 总结
@@ -810,9 +77,23 @@ data-jquerymobiletv-role="header"
 包含 jQuery Mobile 框架后，`page-1.html` 的 `page` `data-role` 将自动成为容器，通过 `XMLHttpRequest` 加载 `page-2.html` 中 `page` `data-role` 内的标记。`XMLHttpRequest` 是 Ajax 用于与服务器交换数据而无需刷新网页的方法；它就像是通往后端的门户。图 3.2 显示了当 `page-1.html` 链接 `page-2.html` 时产生的 `XMLHttpRequest` 示例。该请求使用 Chrome 开发者工具记录。在此例中，使用 Chrome 开发者工具是为了查看点击指向 `page-2.html` 的链接是由 jQuery Mobile 发起的 `XMLHttpRequest`。Chrome 开发者工具是测试和调试代码的极佳方法。
 
 ![Image](img/jquery-3-2.jpg)
+
 图 3.2. jQuery Mobile 使用 `XMLHttpRequest` 加载后续页面。
 
 ![Image](img/note.jpg)
+
+注意 Chrome 开发者工具是 Chrome 浏览器内置的集成 Web 开发环境。HTML 页面本身被请请求，jQuery Mobile 使用其内容来显示新页面。关于这个简单的请求有很多值得学习的地方，我们将在后续章节中进行详细介绍。
+
+## 总结
+
+包含 jQuery Mobile 框架后，`page-1.html` 的 `page` `data-role` 将自动成为容器，通过 `XMLHttpRequest` 加载 `page-2.html` 中 `page` `data-role` 内的标记。`XMLHttpRequest` 是 Ajax 用于与服务器交换数据而无需刷新网页的方法；它就像是通往后端的门户。图 3.2 显示了当 `page-1.html` 链接 `page-2.html` 时产生的 `XMLHttpRequest` 示例。该请求使用 Chrome 开发者工具记录。在此例中，使用 Chrome 开发者工具是为了查看点击指向 `page-2.html` 的链接是由 jQuery Mobile 发起的 `XMLHttpRequest`。Chrome 开发者工具是测试和调试代码的极佳方法。
+
+![Image](img/jquery-3-2.jpg)
+
+图 3.2. jQuery Mobile 使用 `XMLHttpRequest` 加载后续页面。
+
+![Image](img/note.jpg)
+
 注意 Chrome 开发者工具是 Chrome 浏览器内置的集成 Web 开发环境。HTML 页面本身被请求，jQuery Mobile 使用其内容来显示新页面。关于这个简单的请求有很多值得学习的地方，我们将在后续章节中进行详细介绍。
 
 ## 总结
@@ -820,213 +101,23 @@ data-jquerymobiletv-role="header"
 包含 jQuery Mobile 框架后，`page-1.html` 的 `page` `data-role` 将自动成为容器，通过 `XMLHttpRequest` 加载 `page-2.html` 中 `page` `data-role` 内的标记。`XMLHttpRequest` 是 Ajax 用于与服务器交换数据而无需刷新网页的方法；它就像是通往后端的门户。图 3.2 显示了当 `page-1.html` 链接 `page-2.html` 时产生的 `XMLHttpRequest` 示例。该请求使用 Chrome 开发者工具记录。在此例中，使用 Chrome 开发者工具是为了查看点击指向 `page-2.html` 的链接是由 jQuery Mobile 发起的 `XMLHttpRequest`。Chrome 开发者工具是测试和调试代码的极佳方法。
 
 ![Image](img/jquery-3-2.jpg)
+
 图 3.2. jQuery Mobile 使用 `XMLHttpRequest` 加载后续页面。
 
 ![Image](img/note.jpg)
-注意 Chrome 开发者工具是 Chrome 浏览器内置的集成 Web 开发环境。HTML 页面本身被请求，jQuery Mobile 使用其内容来显示新页面。关于这个简单的请求有很多值得学习的地方，我们将在后续章节中进行详细介绍。
 
-## 总结
-
-包含 jQuery Mobile 框架后，`page-1.html` 的 `page` `data-role` 将自动成为容器，通过 `XMLHttpRequest` 加载 `page-2.html` 中 `page` `data-role` 内的标记。`XMLHttpRequest` 是 Ajax 用于与服务器交换数据而无需刷新网页的方法；它就像是通往后端的门户。图 3.2 显示了当 `page-1.html` 链接 `page-2.html` 时产生的 `XMLHttpRequest` 示例。该请求使用 Chrome 开发者工具记录。在此例中，使用 Chrome 开发者工具是为了查看点击指向 `page-2.html` 的链接是由 jQuery Mobile 发起的 `XMLHttpRequest`。Chrome 开发者工具是测试和调试代码的极佳方法。
-
-![Image](img/jquery-3-2.jpg)
-图 3.2. jQuery Mobile 使用 `XMLHttpRequest` 加载后续页面。
-
-![Image](img/note.jpg)
 注意 Chrome 开发者工具是 Chrome 浏览器内置的集成 Web 开发环境。HTML 页面本身被请求，jQuery Mobile 使用其内容来显示新页面。关于这个简单的请求有很多值得学习的地方，我们将在后续章节中进行详细介绍。
 
 ## 总结
 
 （由于您提供的原文在起始处截断且存在重复，以上仅为对已出现部分的翻译。请提供完整的文本以获得准确的完整翻译。）
-[/content]
-
-**注：** 您提供的待翻译文本在 `[content]` 标签开始处出现了截断，且后面有大量的重复内容。我根据您提供的逻辑对有效部分进行了翻译，如下：
-
-[content]
-构建 jQuery Mobile 网页结构有两种方式。第一种是将所有页面整合在同一个文件中；第二种是像典型网站一样创建独立的文件。要在单个 HTML 文件中创建多个页面，你可以定义多个 `page` `data-roles`，这允许每个 `page` `data-role` 包含自己的页眉（header）、内容（content）、页脚（footer）等。以下示例展示了如何在单页 HTML 文件中创建多页 jQuery Mobile 网站的基本思路：
-
-点击此处查看代码图片
-
-```html
-<!DOCTYPE html>
-<html>
-<head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Page Title</title>
-    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.css" />
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script src="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.js"></script>
-</head>
-<body>
-    <div data-role="page" id="page-one">
-        <div data-role="header">
-            <h1>Page 1</h1>
-        </div>
-        <div data-role="content">Body copy for page 1</div>
-        <div data-role="footer">Copyright</div>
-    </div>
-    <div data-role="page" id="page-two">
-        <div data-role="header">
-            <h1>Page 2</h1>
-        </div>
-        <div data-role="content">Body copy for page 2</div>
-        <div data-role="footer">Copyright</div>
-    </div>
-</body>
-</html>
-```
-
-这种方法并不被推荐，因为这种结构的文件通常会变得难以管理，且文件体积大得多，最终导致加载时间更长。对于演示或原型设计，这可能是一个选项，但强烈建议你将移动网站或应用程序构建为独立的 HTML 文件。
-
-当使用独立的 HTML 文件构建网页时，`page` `data-role` 被用作容器，框架会将其他网页加载到容器中。例如，假设你有两个独立的 HTML 文件，`page-1.html` 和 `page-2.html`。然后你向两个文件中都添加 `page` `data-role` 属性，并将 `page-1.html` 超链接链到 `page-2.html`：
-
-点击此处查看代码图片
-
-```html
-<!DOCTYPE HTML>
-<html>
-<head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Page 1 - jQuery Mobile: Design and Develop</title>
-    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.css" />
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/ jquery.min.js"></script>
-    <script src="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.js"></script>
-</head>
-<body>
-    <div data-role="page">
-        <div data-role="header">
-            <h1>Page 1</h1>
-        </div>
-        <div data-role="content">
-            <a href="page-2.html">Link to page 2</a>
-        </div>
-        <div data-role="footer">
-            Copyright
-        </div>
-    </div>
-</body>
-</html>
-```
-
-在包含 jQuery Mobile 框架后，`page-1.html` 的 `page` `data-role` 将自动成为容器，通过 `XMLHttpRequest` 加载 `page-2.html` 中 `page` `data-role` 内的标记。`XMLHttpRequest` 是 Ajax 用于与服务器交换数据而无需刷新网页的方法；它就像是通往后端的门户。图 3.2 显示了当 `page-1.html` 链接 `page-2.html` 时产生的 `XMLHttpRequest` 示例。该请求使用 Chrome 开发者工具记录。在此例中，使用 Chrome 开发者工具是为了查看点击指向 `page-2.html` 的链接是由 jQuery Mobile 发起的 `XMLHttpRequest`。Chrome 开发者工具是测试和调试代码的极佳方法。
-
-![Image](img/jquery-3-2.jpg)
-图 3.2. jQuery Mobile 使用 `XMLHttpRequest` 加载后续页面。
-
-![Image](img/note.jpg)
-注意 Chrome 开发者工具是 Chrome 浏览器内置的集成 Web 开发环境。HTML 页面本身被请求，jQuery Mobile 使用其内容来显示新页面。关于这个简单的请求有很多值得学习的地方，我们将在后续章节中进行详细介绍。
-
-## 总结
-
-（由于输入文本截断且重复，此处翻译至有效逻辑结束）
 
 
 
 
-```html
-<a href="#page-one">Link to page 1</a>
-</div>
-<div data-role="footer">
-    Copyright
-</div>
-</div>
-</body>
-</html>
-```
+# jQuery Mobile 页面导航与组件详解
 
-在这个多页模板中，包含了两个由自定义 `id` 的 `div` 元素定义的页面。jQuery Mobile 框架一次只显示这些页面中的一个，并使用 `data-title` 属性来动态更改页面标题。默认显示的页面由源代码的顺序决定。在示例中，第一个页面的 `id` 为 `page-one`，但如果交换此文件中页面的顺序，使得 `id` 为 `page-two` 的元素排在最前面，那么它将成为默认加载的页面。换句话说，`id` 属性的值并不决定默认显示的页面；默认页面仅取决于源代码的顺序。然而，`id` 还用于其他重要用途，例如页面之间的链接。
-
-这就是 jQuery Mobile 页面开始像独立的网页一样工作的地方。请注意，原始模板已添加了超链接，以便从一个页面链接到另一个页面。这类似于 JavaScript 开发中常见的切换功能，在那种功能中，`id` 值被用于隐藏和显示某些 HTML 元素。这里的区别是 jQuery Mobile 为你处理了这些功能。要从一个页面链接到另一个页面，你只需要：
-
-1. 创建超链接。
-2. 输入井号（`#`）。
-3. 指定你想要链接的页面的 `id` 值。
-
-最终结果如下：
-
-点击此处查看代码图片
-
-<a href="#page-two">Link to page 2</a>
-
-这与创建页面锚点类似；区别在于你引用的是另一个页面的 `id` 值。请记住，每个页面都需要一个唯一的 `id` 值。在这种情况下，我使用了 `page-one` 和 `page-two`，但你可以使用更具描述性且与 jQuery Mobile 页面内容相关的名称。jQuery Mobile 框架的酷之处在于，它可以动态地从一个页面切换到另一个页面，而不需要你编写任何代码。**图 4.1** 展示了这种代码在页面视图以及页面间切换中的示例。
-
-![Image](img/jquery-4-1.jpg)
-
-图 4.1. 一个带有两个页面的多页模板以及之间的过渡。
-
-### 单页模板
-
-单页模板是独立的 HTML 文件，作为独立的网页运行，就像任何标准网页一样。主要的区别在于 jQuery Mobile 如何使用 Ajax 连接网页。与多页模板一样，单页模板中基于 Ajax 的导航使用井号（hashtag）来创建页面历史。jQuery Mobile 使用的 Ajax 导航是默认开启，但可以通过将配置中的 `ajaxEnabled` 设置为 `false` 来关闭它。你将在书的后续部分学习更多关于配置设置的内容。
-
-Ajah 有时 Asynchronous JavaScript and HTML 的缩写。Ajah 本质上是去掉了 XML 的 Ajax；它仍然使用 `XMLHttpRequest`，但与服务器交换的是 HTML 而不是 XML。这就是 jQuery Mobile 在用户浏览独立网页时所使用的技术。我们在上一章中简要介绍了 jQuery Mobile 框架如何使用 `XMLHttpRequest` 加载后续页面，但关于这个简单的请求，有很多需要学习和理解的内容。
-
-jQuery Mobile 框架的一个大优势是它是如何跟踪历史的：它支持后退和按钮！此外，在加载后续页面时，框架提供了默认的加载消息和页面间的过渡。默认的页面过渡是在两个页面之间滑动，而默认的加载消息是一个带有“loading...”消息的旋转图标。这两个选项都是可配置的，你将在下一章中学习到。现在，让我们看看井号和历史在 jQuery Mobile 中是如何工作的。
-
-### 井号与历史
-
-jQuery Mobile 使用井号（hashtags）来管理单页和多页模板中的历史。`window` 对象的 `location.hash` 用于更改和更新历史，因此后退和前进按钮可以像常一样工作，这在其他基于 Ajax 的系统中是不常见的。本质上，jQuery Mobile 防止了所有超链接的默认功能，并使用井号功能来处理历史。这不仅更新了历史，井号系统还会创建一个可以书签以便以后参考的有效 URL。
-
-jQuery Mobile 基于井号的导航唯一问题是它不支持深度链接（deep linking）。然而，你可以使用一些通方法来支持此功能。在 jQuery 的帮助下，你可以为网页添加类似下面的脚本，这样你的深度链接就能正常工作了：
-
-点击此处查看代码图片
-
-```javascript
-$(document).ready(function() {
-    $('a[href^="#"]').bind('click vclick', function () {
-        location.hash = $(this).attr('href');
-    });
-});
-```
-
-在 HTML 中，所有第一个字符为井号（`#`）的超链接都被识别为锚点。此脚本使用正则表达式来识别它们。回调函数将 `window` 对象的 `location.hash` 设置为锚点的值并返回 `false`。
-
-![Image](img/note.jpg) 注意事项
-
-脱字符（`^`）在正则表达式中经常用于指定字符串的开头。
-
-`vclick` 事件是支持触摸事件的设备在 jQuery Mobile 中使用的选项。它支持更快的页面更改，并在页面过渡期间保持地址栏隐藏。
-
-从单页模板到启用 Ajax 的多页模板的超链接只会加载源代码中的第一个页面。要从单页模板链接到多页模板，必须使用 `rel="external"` 或 `data-ajax="false"`。
-
-### 链接类型
-
-jQuery Mobile 支持标准的 HTML 链接类型，以及许多与移动体验相关的自定义链接类型。下表提供了 jQuery Mobile 框架提供的链接类型列表。每个表格根据其结果或对 Ajax 的支持进行分类。**表 4.1** 描述了支持 Ajax 的链接。
-
-表 4.1. 支持 Ajax 的链接类型
-
-![Image](img/04tab01.jpg)
-
-### 分级支持
-
-正如本书引言提到的，jQuery Mobile 对支持的平台使用了三级分类列表：A、B 和 C。A 包含完整的体验，并可以选择基于 Ajax 的页面过渡；B 包含相同的体验，但没有基于 Ajax 的页面过渡；C 是基础但有效的 HTML 体验。
-
-A 级支持之前提到的所有移动操作系统以及其他，包括 Apple iOS、Android、Windows Phone、BlackBerry、Palm WebOS、Kindle 3 和 Kindle Fire。B 级支持 BlackBerry 5、Opera Mini 和 Nokia Symbian。C 级支持 BlackBerry 4、Windows Mobile 以及所有旧智能手机和功能手机。访问 [jquerymobile.com](http://jquerymobile.com) 查看最新的支持平台列表。
-
-**表 4.2** 描述了禁用 Ajax 页面功能的超链接列表。这些链接对于外部域名的页面、在新窗口中打开的页面、从单页到多页模板的链接，或者链接到不想使用 Ajax 的页面非常有用。
-
-
-
-
-
-## 表 4.2. 禁用 Ajax 的链接类型
-
-![Image](img/04tab02.jpg)
-
-表 4.3 包含了在基础 HTML 超链接基础上添加特定属性的链接类型。
-
-### 表 4.3. 杂链接类型
-
-![Image](img/04tab03.jpg)
-
-jQuery Mobile 框架使用了许多超链接属性对普通的 HTML 网页进行增强。这就是为什么 jQuery Mobile 比从零开始创建移动网站更有吸引力的另一个原因。它让你能够专注于重要的事情，而消除了在每次创建新的移动网站时都编写核心功能的需求。
-
-以下示例展示了表中涵盖的几种链接类型。
-
-此网页提供了三种可以在 jQuery Mobile 中使用的链接类型示例：内部链接、外部链接以及一个禁用 Ajax 的链接：
-
-点击此处查看代码图片
+## 单页模板与链接类型
 
 ```html
 <!DOCTYPE html>
@@ -1045,9 +136,9 @@ jQuery Mobile 框架使用了许多超链接属性对普通的 HTML 网页进行
             <h1>Page 1</h1>
         </div>
         <div data-role="content">
-            <p><a href="single-page-2.html">链接到页面 2</a>a></p>
-            <p><a href="single-page-2.html" rel="external">到页面 2 的外部链接</a>a></p>
-            <p><a href="single-page-2.html" data-ajax="false">禁用 Ajax 的链接到页面 2</a>a></p>
+            <p><a href="single-page-2.html">链接到页面 2</a></p>
+            <p><a href="single-page-2.html" rel="external">到页面 2 的外部链接</a></p>
+            <p><a href="single-page-2.html" data-ajax="false">禁用 Ajax 的链接到页面 2</a></p>
         </div>
         <div data-role="footer">
             Copyright
@@ -1060,8 +151,6 @@ jQuery Mobile 框架使用了许多超链接属性对普通的 HTML 网页进行
 内部链接不需要特殊的标记，框架将在该处介入，并在当前页面与被链接的页面之间创建页面过渡。外部链接是需要 `rel` 属性的链接，该属性的值必须设置为 `external`。将超链接设置为外部链接会禁用 Ajax，将其从页面哈希历史记录（hashtag history）中移除，并在点击链接时刷新网页。禁用 Ajax 的链接需要一个值为 `false` 的 `data-ajax` 属性。这也会禁用 Ajax，将其从页面哈希历史记录中移除并刷新网页，与上一个示例相同，主要区别在于 `rel="external"` 属性可以在 jQuery 的轻微帮助下，作为一种符合标准的方式来创建目标为新窗口的超链接。
 
 在接下来的示例中，有一个内部链接和一个充当返回按钮的超链接：
-
-点击此处查看代码图片
 
 ```html
 <!DOCTYPE html>
@@ -1093,11 +182,9 @@ jQuery Mobile 框架使用了许多超链接属性对普通的 HTML 网页进行
 
 将 `data-rel` 属性设置为 `back` 会创建一个像返回按钮的超链接。当点击此链接时，jQuery Mobile 框架会自动链接到历史记录中的上一个页面。
 
-### 预加载与缓存
+## 预加载与缓存
 
 在处理任何基于内容的操作时，页面缓存非常重要。缓存指的是收集文件的隐藏存储区域。默认情况下，浏览器通过将关联文件放在用户计算机的本地目录中来处理网页缓存，以便网页及其关联资源在访问时加载得更快。jQuery Mobile 将这一概念进一步了一步：框架允许页面在被链接或在浏览器中显示之前就进行缓存。利用此功能就像使用一个名为 `data-prefetch` 的 HTML 属性一样简单。只需将其添加到网页中的任何超链接中，一旦网页加载，这些超链接指向的 URL 就会被预加载并缓存。下一行代码显示了如何向超链接添加此属性，以预加载并缓存其指向的页面：
-
-点击此处查看代码图片
 
 ```html
 <a href="page2.html" data-prefetch>链接到页面 2</a>
@@ -1111,15 +198,15 @@ jQuery Mobile 框架使用了许多超链接属性对普通的 HTML 网页进行
 
 框架还提供了一种通过应用程序接口（API）处理页面预加载的方法。我们将在书后更具体地讨论 API，但了解如何访问它非常重要。
 
-![Image](img/note.jpg) 注意：应用程序接口（API）允许多个软件之间进行通信。
+> **注意**：应用程序接口（API）允许多个软件之间进行通信。
 
 要通过程序化预加载页面，你首先需要访问 jQuery Mobile 对象：
 
-`.mobile`
+```javascript
+$.mobile
+```
 
 一旦文档对象准备就绪，使用 `loadPage` 方法传递你想预加载的 URL，并为请求定义若干属性：
-
-点击此处查看代码图片
 
 ```javascript
 $(document).ready(function() {
@@ -1139,8 +226,6 @@ $(document).ready(function() {
 
 除了提供文件加载控制外，jQuery Mobile 框架还提供了在文档对象模型（DOM）中缓存的控制。就像预加载选项一样，你可以通过 HTML 属性或 jQuery Mobile API 定义是否应在 DOM 中缓存页面。以下示例显示了如何在 `page` 标签中使用该属性来缓存网页：
 
-点击此处查看代码图片
-
 ```html
 <div data-role="page" data-dom-cache="true">
 ```
@@ -1159,13 +244,9 @@ $('#my-page').page(true);
 
 在处理单页模板时，jQuery Mobile 还会管理它预加载的页面，以防止 DOM 过大。如果许多页面保留在 DOM 中，浏览器的内存使用可能会失控，浏览器可能会变慢或崩溃。为了管理内存大小，框架会在访问者离开页面时，通过 `pagehide` 事件自动将 Ajax 加载的页面从 DOM 中移除。你将在书的后部分学习更多关于这一点以及其他事件的内容。
 
-
-
-
-
 预加载和缓存页面有很多益处。它们加载速度更快，并且可以防止访问者尝试访问预加载页面时出现 Ajax 加载提示。然而，重要的是，每个预加载的页面都会创建一个额外的 HTTP 请求，这会消耗更多带宽。因此，只有在你认为访问者可能会查看后续网页时，才对页面进行预加载。
 
-### 使用页面过渡
+## 使用页面过渡
 
 jQuery Mobile 框架可以使用多种页面过渡。所有的页面过渡都是基于 CSS 的效果。在使用 Ajax 导航时，页面过渡发生在链接页面或表单提交之间。表 4.5 列出了框架中可用的页面过渡。
 
@@ -1175,9 +256,7 @@ jQuery Mobile 框架可以使用多种页面过渡。所有的页面过渡都是
 
 使用 `flip` 过渡时要小心，因为只有支持 3D CSS 变换渲染的浏览器才支持它。
 
-* 这些页面过渡中的每一个都可以使用 `defaultPageTransition` 属性全局地设置为默认值。要正确设置它，必须绑定到 `mobileinit` 事件，可以通过 jQuery Mobile  API 访问该事件：
-
-点击此处查看代码图片
+这些页面过渡中的每一个都可以使用 `defaultPageTransition` 属性全局地设置为默认值。要正确设置它，必须绑定到 `mobileinit` 事件，可以通过 jQuery Mobile API 访问该事件：
 
 ```javascript
 $(document).bind("mobileinit", function() {
@@ -1187,8 +266,6 @@ $(document).bind("mobileinit", function() {
 
 事件处理器的绑定需要在 jQuery Mobile 库加载之前执行。因此，在你的 HTML 文件中，请按特定顺序安排 JavaScript 文件：
 
-点击此处查看代码图片
-
 ```html
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 <script src="assets/js/custom-jqm-transitions.js"></script>
@@ -1197,15 +274,11 @@ $(document).bind("mobileinit", function() {
 
 也可以基于单个链接进行设置，以覆盖默认页面过渡。此选项在许多情况下非常有用，例如创建一个使用 `pop` 过渡的弹出窗口：
 
-点击此处查看代码图片
-
 ```html
 <a href="popup.html" data-transition="pop">Pop-up</a>
 ```
 
 或者，使用 `flip` 过渡的表单提交：
-
-点击此处查看代码图片
 
 ```html
 <form action="" method="get" data-transition="flip">
@@ -1215,8 +288,6 @@ $(document).bind("mobileinit", function() {
 ```
 
 甚至可以将页面过渡设置为 `none`，以禁用特定超链接或表单提交的页面过渡：
-
-点击此处查看代码图片
 
 ```html
 <form action="" method="get" data-transition="none">
@@ -1228,8 +299,6 @@ $(document).bind("mobileinit", function() {
 jQuery 会在按下返回键时自动应用相同的页面过渡，从而创建一个反向过渡。
 
 全局和单个页面过渡的完整示例代码如下：
-
-点击此处查看代码图片
 
 ```html
 <!DOCTYPE html>
@@ -1258,12 +327,9 @@ jQuery 会在按下返回键时自动应用相同的页面过渡，从而创建�
 </html>
 ```
 
-
-
+## 对话框
 
 对话框（Dialog windows）可以像多页模板一样包含在单个 HTML 文件的一个或多个页面中，也可以像单页模板一样是外部网页。要创建一个包含对话框窗口的多页模板，你只需要添加另一个 jQuery Mobile 页面——区别在于你链接到它的方式。换句话说，任何页面都可以是对话框；它之所以成为对话框，取决于它的打开方式。以下示例显示了一个带有 `data-rel` 属性的超链接，它可以在对话框窗口中打开页面：
-
-点击此处查看代码图像
 
 ```html
 <!DOCTYPE html>
@@ -1302,8 +368,6 @@ jQuery 会在按下返回键时自动应用相同的页面过渡，从而创建�
 
 如所述，对话框窗口也可以通过带有 `data-rel="dialog"` 属性和值的超链接链接到外部网页。接下来的示例与上一个非常相似，主要区别是超链接现在指向了一个名为 `dialog-window.html` 的外部 HTML 文件：
 
-点击此处查看代码图像
-
 ```html
 <!DOCTYPE html>
 <html>
@@ -1328,8 +392,6 @@ jQuery 会在按下返回键时自动应用相同的页面过渡，从而创建�
 ```
 
 被链接的 HTML 文件可以像任何 jQuery Mobile 一样设置：
-
-点击此处查看代码图像
 
 ```html
 <!DOCTYPE html>
@@ -1356,8 +418,6 @@ jQuery 会在按下返回键时自动应用相同的页面过渡，从而创建�
 图 5.2。单页窗口。
 
 对话框窗口也可以通过带有 `data-rel="dialog"` 属性和值的超链接链接到外部网页。对话框可以通过带有 `data-rel="dialog"` 属性的链接，在下面的示例中，它在对话框窗口中打开了：
-
-点击此处查看代码图像
 
 ```html
 <!DOCTYPE html>
@@ -1392,8 +452,6 @@ jQuery 会在按下返回键时自动应用相同的页面过渡，从而创建�
 
 对话框具有预定义的宽度，但可以通过 `.ui-dialog` 类进行覆盖。被加载的 HTML 文件包含了奥马总统就职演视频。由于移动设备的宽度可能比 640 像素小得多，弹出窗口中的 iframe 宽度被设置为 100%。
 
-点击此处查看代码图像
-
 ```html
 <!DOCTYPE html>
 <html>
@@ -1420,11 +478,9 @@ jQuery 会在按下返回键时自动应用相同的页面过渡，从而创建�
 <a href="popup-window.html" data-rel="dialog" data-transition="slidedown">Play now &gt;</a>
 ```
 
-
+## 按钮
 
 jQuery Mobile 提供了一种通过 HTML 锚点元素和输入元素创建按钮的方法。通过创建更大的可点击区域，按钮为标准链接和输入框提供了更易用的替代方案。要将超链接转换为按钮，请将 `data-role` 属性设置为 `button` (图 5.4)：
-
-点击此处查看代码图像
 
 ```html
 <a href="#" data-role="button">Hyperlink button</a>
@@ -1435,8 +491,6 @@ jQuery Mobile 提供了一种通过 HTML 锚点元素和输入元素创建按钮
 图 5.4。一个 `data-role` 为 `button` 的链接元素。
 
 默认情况下，按钮占据容器元素的全宽度，但你可以使用 `data-inline` 属性将其设置为行内显示。当该属性设置为 `true` 时，创建的按钮宽度将由链接中的文本决定 (图 5.5)：
-
-点击此处查看代码图像
 
 ```html
 <a href="#" data-role="button" data-inline="true">Hyperlink button</a>
@@ -1453,8 +507,6 @@ jQuery Mobile 提供了一种通过 HTML 锚点元素和输入元素创建按钮
 ![Image](img/05tab01.jpg)
 
 输入按钮与超链接的区别在于，它们默认都是按钮。接例的提交（Submit）按钮默认为 jQuery Mobile 按钮：
-
-点击此处查看代码图像
 
 ```html
 <input type="submit" value="Submit button">
@@ -1488,8 +540,6 @@ jQuery Mobile 提供了一种通过 HTML 锚点元素和输入元素创建按钮
 
 也可以通过 CSS 使用自定义图标。要创建自定义图标，你首先需要选择一个名称值。为了本次演示，我们将使用 `checkmark`。在使用了按钮插件的链接或输入框中，在 `data-icon` 属性中使用该值会生成一个 CSS 类。该 CSS 类在自定义值之前包含 `ui-icon-`，因此我们定义的自定义值的 CSS 类为 `ui-icon-checkmark`。有了这个类，你可以轻松地定位到该类并添加背景图像作为图标：
 
-点击此处查看代码图像
-
 ```css
 .ui-icon-checkmark {
     background-image: url("5-custom-icon.png");
@@ -1504,8 +554,6 @@ jQuery Mobile 提供了一种通过 HTML 锚点元素和输入元素创建按钮
 
 现在我们已经创建了这个图标以及与其关联的 CSS 类，可以将图标分配给按钮了。要将新图标分配给按钮，我们只需使用 `data-icon` 属性并设置为 `checkmark`：
 
-点击此处查看代码图像
-
 ```html
 <a href="#checkmark" data-role="button" data-icon="checkmark">Checkmark example</a>
 ```
@@ -1516,20 +564,19 @@ jQuery Mobile 提供了一种通过 HTML 锚点元素和输入元素创建按钮
 
 图 5.9。一个自定义的点选图标。
 
+---
+
+# 工具栏
+
 ## 总结
 
 本章的内容是任何移动网站的基础。
-
-
-
 
 另一个明显的区别是标题元素包含一个 `ui-title` 类。该类设置了一系列组合属性，可以使文本居中、添加外边距、为溢出的文本创建省略号等。框架还添加了 `tabindex`，它通过创建逻辑性的选项卡切换顺序，自动使网页更具可访问性，该顺序会被像 iOS 带有内置“下一步”按钮的移动设备使用。页眉还可以包含标题元素以外的元素；例如，按钮可以是你工具栏中重要的补充。
 
 ### 添加按钮
 
-通过第 5 章中讨论的按钮选项、“**对话框和按钮]”以及无限数量的自定义图标，你可以满足想象到的任何功能需求。页眉是移动 Web 应用中突出显示重要按钮的绝佳位置，使用 jQuery Mobile 可以轻松实现。以下示例显示了如何在编辑用户个人资料的对话框页眉元素中添加保存（Save）按钮：
-
-点击此处查看代码图像
+通过第 5 章中讨论的按钮选项、“对话框和按钮”以及无限数量的自定义图标，你可以满足想象到的任何功能需求。页眉是移动 Web 应用中突出显示重要按钮的绝佳位置，使用 jQuery Mobile 可以轻松实现。以下示例显示了如何在编辑用户个人资料的对话框页眉元素中添加保存（Save）按钮：
 
 ```html
 <!DOCTYPE html>
@@ -1584,8 +631,6 @@ jQuery Mobile 提供了一种通过 HTML 锚点元素和输入元素创建按钮
 
 按钮也可以进行分组，而不是单独显示。要对按钮进行分组，只需在它们周围添加一个 `div` 作为容器，并应用一个值为 `controlgroup` 的 `data-role`，同时将 `data-type` 设置为 `horizontal`：
 
-点击此处查看代码图像
-
 ```html
 <div data-role="header">
     <div data-role="controlgroup" data-type="horizontal">
@@ -1602,8 +647,6 @@ jQuery Mobile 提供了一种通过 HTML 锚点元素和输入元素创建按钮
 图 6.5。分组的按钮。
 
 也可以向工具栏中添加多个组组，以便在视觉上将这些组相互隔离开：
-
-点击此处查看代码图像
 
 ```html
 <div data-role="header">
@@ -1649,8 +692,6 @@ jQuery Mobile 提供了一种通过 HTML 锚点元素和输入元素创建按钮
 
 正如页眉工具栏中的标题，添加到页脚工具栏的任何文本都需要标题元素来包含间距、对齐等。以下代码示例显示了框架增强后的页脚工具栏：
 
-点击此处查看代码图像
-
 ```html
 <div data-role="footer" class="ui-footer-a" role="contentinfo">
     <h4 class="ui-title" tabindex="0" role="heading" aria-level="1">Copyright</h4>
@@ -1660,8 +701,6 @@ jQuery Mobile 提供了一种通过 HTML 锚点元素和输入元素创建按钮
 ### 工具定位
 
 你可以将工具栏设置为固定（fixed）或全屏（fullscreen）。固定工具栏在网页上始终可见。当页眉工具栏是固定的，即使页面滚动，它也始终出现在顶部。当页脚工具栏是固定的，它始终显示在网络浏览器的底部。要为工具栏添加固定定位，只需要一个值为 `fixed` 的 `data-position` 属性：
-
-点击此处查看代码图像
 
 ```html
 <div data-role="page">
@@ -1685,13 +724,7 @@ jQuery Mobile 提供了一种通过 HTML 锚点元素和输入元素创建按钮
 
 此代码的结果以类似于 CSS 中的固定定位的方式工作，但 jQuery Mobile 并没有使用 CSS 实现此功能。由于许多移动浏览器不支持固定定位，jQuery Mobile 使用动态重新定位来代替。
 
-
-
-
-
 你也可以通过 jQuery Mobile API 更新工具栏的位置。这种方法有时是必要的，例如当小部件（如手风琴）展开并导致页面高度发生变化时。你可以调用以下代码来更新工具栏的位置：
-
-点击此处查看代码图像
 
 ```javascript
 $.mobile.fixedToolbars.show(true);
@@ -1700,8 +733,6 @@ $.mobile.fixedToolbars.show(true);
 当你正在构建动态内容时，这段代码非常好用。
 
 除了固定工具栏外，你还可以创建全屏固定页眉。全屏固定页眉与固定头部相同，唯一区别是内容位于工具栏之后，因此内容仍然是全屏的，而工具栏是透明的。点击页面时，工具栏也会消失。要创建全屏固定工具栏，只需添加 `data-fullscreen` 属性并将其设置为 `true`：
-
-点击此处查看代码图像
 
 ```html
 <div data-role="header" data-fullscreen="true" data-position="fixed">
@@ -1714,8 +745,6 @@ $.mobile.fixedToolbars.show(true);
 ### 创建导航栏
 
 导航在网页页眉中显示得最为显著。jQuery Mobile 提供了一个名为 `navbar` 的部件来创建导航。导航栏并不要求位于页眉工具栏中，但它们通常出现在页眉或页脚中。让我们看看如何有效地将其用作移动网站页眉中的页面导航。导航栏本质上是一个包含在带有 `data-role` 值为 `navbar` 的元素中的简单无序列表：
-
-点击此处查看代码图像
 
 ```html
 <div data-role="header">
@@ -1744,8 +773,6 @@ jQuery Mobile 再次通过添加单个属性，使其能够极其轻松地将简
 这在某种上是一个局限性，但它也是一种幸运，因为移动设备没有足够的水平空间来容纳这么多按钮。
 
 页眉导航栏的另一个优点是，它们不需要你移除页面标题。你仍然可以使用带有页面标题的标题元素，然后在下方添加导航栏。或者，更好的是，你可以添加一个 Logo 然后添加一个导航栏，就像你在整个网络上通常看到的那样：
-
-点击此处查看代码图像
 
 ```html
 <div data-role="header">
@@ -1776,12 +803,11 @@ jQuery Mobile 再次通过添加单个属性，使其能够极其轻松地将简
 
 工具栏可以帮助你建立页面上的一致性。除了固定工具栏外，你还可以创建全屏固定页眉。全屏固定页眉与固定头部相同，唯一区别是内容位于工具栏之后，因此内容仍然是全屏的，而工具栏是透明的。点击页面时，工具栏也会消失。
 
-### 布局选项
+---
+
+# 布局选项
 
 jQuery Mobile 的灵活之处在于它支持标准 HTML，同时也提供了自定义布局。当你需要将内容组织成网格时，网格非常有用。你可以通过定义你想要的列数来创建一个网格。以下示例显示了如何创建一个网格布局。
-
-
-
 
 图 7.1。双列网格。
 
@@ -1793,12 +819,10 @@ jQuery Mobile 的灵活之处在于它支持标准 HTML，同时也提供了自�
 
 列本身是非常单调的，但你可以添加预定义的 jQuery Mobile 类，或者为现有的类编写你自己的 CSS。例如，jQuery Mobile 框架包含一个名为 `ui-bar` 的类，它添加了内边距，还有另一组类可以通过在末尾添加字母来定制主题，这会影响背景、杂项字体样式等。我们将在书的后部分学习更多关于 jQuery Mobile 主题的内容。接的示例使用 `ui-bar-a` 类来添加蓝色背景渐变、字体样式以及其他的 CSS 更新：
 
-点击此处查看代码图像
-
 ```html
 <div class="ui-grid-a">
     <div class="ui-block-a">
-        <div class="ui-bar ui-bar-b"><<strong>双列</strong></div>
+        <div class="ui-bar ui-bar-b"><strong>双列</strong></div>
     </div>
     <div class="ui-block-b">
         <div class="ui-bar ui-bar-b">列</div>
@@ -1813,8 +837,6 @@ jQuery Mobile 的灵活之处在于它支持标准 HTML，同时也提供了自�
 图 7.3。带有 `ui-bar` 类的双列网格。
 
 在网格列中添加自定义 CSS 是非常简单的。由于网格是标准的 HTML 标记，你可以向任何元素添加自定义 CSS 类。在接下来的示例中，已向第一列添加了自定义类 `block-title`，并向网格中的所有 `div` 元素添加了另一个类：
-
-点击此处查看代码图像
 
 ```html
 <!DOCTYPE html>
@@ -1841,8 +863,8 @@ jQuery Mobile 的灵活之处在于它支持标准 HTML，同时也提供了自�
         </div>
         <div data-role="content">
             <div class="ui-grid-a">
-                <div class="ui-block-a block-title">2-Column</div></div>
-                <div class="ui-block-b">Column</div></div>
+                <div class="ui-block-a block-title">2-Column</div>
+                <div class="ui-block-b">Column</div>
             </div>
         </div>
         <div data-role="footer" data-position="fixed">
@@ -1860,8 +882,6 @@ jQuery Mobile 的灵活之处在于它支持标准 HTML，同时也提供了自�
 图 7.4。带有自定义 CSS 的双列网格。
 
 使用双列网格是处理 第 5 章 对话框与按钮 中按钮组功能的更好方法。与其使用浮动（floats）来对齐控制组，不如使用网格将它们隔离开。下面的代码展示了如何使用网格在工具栏内创建布局：
-
-点击此处查看代码图像
 
 ```html
 <!DOCTYPE html>
@@ -1911,8 +931,6 @@ jQuery Mobile 的灵活之处在于它支持标准 HTML，同时也提供了自�
 ### 行
 
 在网格列中添加自定义 CSS 是简单的。由于网格是标准的 HTML 标记，你可以向任何元素添加自定义 CSS 类。在接下来的示例中，已向第一列添加了自定义类 `block-title`，并向网格中的所有 `div` 元素添加了另一个类：
-
-点击此处查看代码图像
 
 ```html
 <!DOCTYPE html>
@@ -1980,7 +998,7 @@ jQuery Mobile 也允许你创建具有多个列的网格。例如，为了创建
 
 图 7.6。具有多个行和列的网格。
 
-### 折叠内容
+## 折叠内容
 
 jQuery Mobile 提供了一个组件，允许开发者创建可以展开和收叠的内容。这种组件被称为折叠内容，包含一个头部和一个内容区域；头部作为可以点击以展开或收叠内容区域的按钮。创建一个折叠内容区域，将 `data-role` 属性的值设置为 `collapsible` 应用到包含标题和内容区域的 `div` 上。在接的示例中，`data-role` 设置为 `collapsible` 的容器元素包含标题和一个段落元素：
 
@@ -1991,23 +1009,19 @@ jQuery Mobile 提供了一个组件，允许开发者创建可以展开和收叠
 </div>
 ```
 
-
-
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent non dolor quis elit suscipit commodo a eu velit. Nulla sodales velit arcu, at accumsan nisi. Donec porta tempus lorem, eget luctus diam luctus ac. Nunc et aliquam massa. Duis enim felis, varius quis pharetra quis, iaculis ac nulla. Morbi congue suscipit elit vel porta. Proin lacinia scelerisque risus, at elementum diam elementum et.
 
 通过在容器上添加 `collapsible` `data-role`，标题元素将自动转换为按钮，用于展开和收起段落。在视觉上，该示例将产生如图 7.7 所示的序列。
 
 ![Image](img/jquery-7-7.jpg)
 
-图 7.7\.. 用于节省空间的折叠内容按钮。
+图 7.7。用于节省空间的折叠内容按钮。
 
 可折叠内容是组织大量信息的极佳方法。一次性显示大量数据可能会让人无从从备，并阻止人们访问您的宝贵内容。通过在用户首次加载网页时隐藏内容，可以保持内容的整洁，让用户只显示他们感兴趣的内容区域。
 
 可折叠内容区域还可以包含一个名为 `data-collapsed` 的属性。默认情况下，折叠内容区域在网页首次加载时是折叠的。`data-collapsed` 属性提供了一种在页面首次加载时展开折叠区域的方法。以下示例显示了实现此目的的标记：
 
-点击此处查看代码图像
-
-```
+```html
 <div data-role="collapsible" data-collapsed="false">
     <h3>折叠内容页眉</h3>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent non dolor quis elit suscipit commodo a eu velit. Nulla sodales velit arcu, at accumsan nisi. Donec porta tempus lorem, eget luctus diam luctus ac. Nunc et aliquam massa. Duis enim felis, varius quis pharetra quis, iaculis ac nulla. Morbi congue suscipit elit vel porta. Proin lacinia scelerisque risus, at elementum diam elementum et.</p>
@@ -2016,9 +1030,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent non dolor quis
 
 通过在另一个折叠内容区域内部添加另一个折叠内容区域，也可以嵌套折叠内容。以下示例显示了如何编写标记来创建嵌套折叠内容区域：
 
-点击此处查看代码图像
-
-```
+```html
 <div data-role="collapsible" data-collapsed="false">
     <h3>折叠内容页眉</h3>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
@@ -2037,19 +1049,17 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent non dolor quis
 
 ![Image](img/jquery-7-8.jpg)
 
-图 7.8\. 在打开嵌套折叠内容区域时发生的事件序列。
+图 7.8。在打开嵌套折叠内容区域时发生的事件序列。
 
 还可以进行更深层的嵌套；事实上，你可以根据需要进行任意深嵌套。
 
-### 创建手风琴
+## 创建手风琴
 
 可折叠内容区域还可以分组以创建手风琴。手风琴本质上是一组相互感知的折叠内容区域。例如，当其中一个折叠内容区域展开时，任何已展开的区域都会关闭，因此每次只有一个内容区域是展开的。
 
 要定义手风琴，必须创建一个容器元素来包含一组可折叠内容区域。在该容器元素上，必须将 `data-role` 设置为值 `collapsible-set`。就这样。以下代码显示了带有两个折叠内容区域的手风琴的标记：
 
-点击此处查看代码图像
-
-```
+```html
 <div data-role="collapsible-set">
     <div data-role="collapsible">
         <h3>头部 #1</h3>
@@ -2066,23 +1076,23 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent non dolor quis
 
 ![Image](img/jquery-7-9)
 
-图 7.9\. 手风琴示例
+图 7.9。手风琴示例
 
 ## 总结
 
 jQuery Mobile 让 JavaScript 变得极其易用。使用 `data-` 属性，内容可以折叠。
 
-## 8. 使用列表
+---
+
+# 8. 使用列表
 
 列表被频繁使用。jQuery Mobile 提供了大量的选项来实现任何设计，例如链接列表、编号列表、内嵌列表、分割列表、带分隔符的列表，以及带有缩略图和图标的列表。你在 jQuery Mobile 中看到的的最常见模式之一是链接列表。
 
-### 基础列表
+## 基础列表
 
 你在 jQuery Mobile 中看到的常见模式之一是链接列表。以下标记显示了使用 `data-role` 的链接列表：
 
-点击此处查看代码图像
-
-```
+```html
 <ul data-role="listview">
     <li><a href="#">首页</a></li>
     <li><a href="#">文章</a></li>
@@ -2096,13 +1106,11 @@ jQuery Mobile 让 JavaScript 变得极其易用。使用 `data-` 属性，内容
 
 ![Image](img/8-1.jpg)
 
-图 8.1\. 链接列表。
+图 8.1。链接列表。
 
-增强会改变标记，产生不同的 HTML。下一个示例显示了框架增强后的标记片段。显示了列表标签和第一个列表项以提供增强示例，而新部分被高亮显示以显示代码进行了代码。注意缺失的列表项（`<!-- etc. -->）都以与第一个列表相同的方式进行了更改：
+增强会改变标记，产生不同的 HTML。下一个示例显示了框架增强后的标记片段。显示了列表标签和第一个列表项以提供增强示例，而新部分被高亮显示以显示代码进行了代码。注意缺失的列表项（`<!-- etc. -->`）都以与第一个列表相同的方式进行了更改：
 
-点击此处查看代码图像
-
-```
+```html
 <ul data-role="listview" class="ui-listview">
     <li data-theme="c" class="ui-btn ui-icon-right ui-li-has-arrow ui-li ui-btn-up-c">
         <div class="ui-btn-inner ui-li" aria-hidden="true">
@@ -2115,8 +1123,6 @@ jQuery Mobile 让 JavaScript 变得极其易用。使用 `data-` 属性，内容
 </ul>
 ```
 
-
-
 正如你所看到的，框架对代码进行了大量补充以实现视觉增强。首先，添加了 `ui-listview` 类来设置页边距，并传递了 `list-style`。然后更新了列表项，将 `data-theme` 属性设置为 `c` 主题，并添加了一组 CSS 类。我们将在书的后部分学习更多关于 jQuery Mobile 主题的内容。添加的类包括 `ui-btn`、`ui-btn-icon-right`、`ui-li-has-arrow`、`ui-li` 和 `ui-btn-up-c`。这些名称基本上已经解释了一切；例如，`ui-btn` 添加了指针光标，将 `display` 设置为 `block`，并添加了一些间距使其更易点击，而 `ui-btn-icon-right` 则告诉 `span` 元素与箭头图标右对齐。你可以通过像 Chrome 开发者工具之类的代码检查器深入查看这些 CSS 类中的每一个一个。图 8.2 显示了列表项的一些类及其属性。
 
 ![Image](img/jquery-8-2.jpg)
@@ -2126,8 +1132,6 @@ jQuery Mobile 让 JavaScript 变得极其易用。使用 `data-` 属性，内容
 ## 数字有序列表
 
 你可以使用 `listview` 的 `data-role` 从相同的代码创建有序列表：只需将 `ul` 转换为 `ol` 即可。下面的示例显示了带有数字列表项的修改后的代码：
-
-点击此处查看代码图像
 
 ```html
 <ol data-role="listview">
@@ -2148,8 +1152,6 @@ jQuery Mobile 让 JavaScript 变得极其易用。使用 `data-` 属性，内容
 ## 嵌套列表
 
 嵌套列表默认是隐藏的，并像额外的页面一样加载。当列表嵌套在另一个列表项内部时，父列表项将变成指向子列表的超链接，框架会为该列表生成一个新的 `ui-page`。要创建嵌套列表，只需取任何列表项并向其添加另一个无序或有序列表。在以下示例中，我们之前示例中的“更多”列表项被配置为 `h2` 标题，并带有描述和一个嵌套的无序列表：
-
-点击此处查看代码图像
 
 ```html
 <ul data-role="listview">
@@ -2180,8 +1182,6 @@ jQuery Mobile 让 JavaScript 变得极其易用。使用 `data-` 属性，内容
 
 默认情况下，列表的宽度设置为查看列表的设备宽度；换句话说，它们的宽度始终被设置为 100%。你可以添加一个属性来创建所谓的“内缩列表（inset list）”，它看起来是内缩在页面之内的（而不是延伸到设备边缘），并且具有圆角。下面的示例显示了一个 `data-inset` 属性设置为 `true` 的基础链接列表：
 
-点击此处查看代码图像
-
 ```html
 <ul data-role="listview" data-inset="true">
     <li><a href="#">首页</a></li>
@@ -2189,7 +1189,7 @@ jQuery Mobile 让 JavaScript 变得极其易用。使用 `data-` 属性，内容
     <li><a href="#">视频</a></li>
     <li><a href="#">书籍</a></li>
     <li><a href="#">更多</a></li>
-</ul
+</ul>
 ```
 
 将此属性设置为 `true` 会产生 图 8.5 所示视觉效果。
@@ -2205,8 +1205,6 @@ jQuery Mobile 让 JavaScript 变得极其易用。使用 `data-` 属性，内容
 ### 分割列表
 
 分割列表（Split lists）是带有更多选项的列表。你可以通过取任何列表项并添加另一个无序或有序列表来创建嵌套列表。如下示例所示：
-
-点击此处查看代码图像
 
 ```html
 <ul data-role="listview" data-inset="true">
@@ -2243,8 +1241,6 @@ jQuery Mobile 让 JavaScript 变得极其易用。使用 `data-` 属性，内容
 
 列表分隔符可以对你的列表项进行分类，是基础列表的另一个有用补充。例如，你可以对列表项进行排序并使用分隔符按字母进行分组，或者使用分隔符按类型对音乐列表进行分组。下面的示例显示了作为分隔符的乐队以及每个乐队的一些专辑标题：
 
-点击此处查看代码图像
-
 ```html
 <ul data-role="listview">
     <li data-role="list-divider">The Beatles</li>
@@ -2268,10 +1264,6 @@ jQuery Mobile 让 JavaScript 变得极其易用。使用 `data-` 属性，内容
 
 此代码示例中的高亮部分包含一个值为 `list-divider` 的 `data-role`。使用 `data-role` 属性值 `list-divider` 会在视觉上将其与其他列表项区分开来。图 8.8 显示了 `list-divider` `data-role` 如何创建这种隔离。
 
-
-
-
-
 ![Image](img/jquery-8-8.jpg)
 
 图 8.8。带有列表分隔符的长列表。
@@ -2279,8 +1271,6 @@ jQuery Mobile 让 JavaScript 变得极其易用。使用 `data-` 属性，内容
 ### 计数气泡、缩略图和图标
 
 你可以通过计数气泡、缩略图和图标在列表中创建不同的视觉样式。要在列表项中添加计数气泡，只需使用 `ul-li-count` 类。要将计数气泡与列表项文本分开，请使用 `span` 元素来包含计数气泡的值：
-
-点击此处查看代码图片
 
 ```html
 <ul data-role="listview">
@@ -2313,9 +1303,11 @@ jQuery Mobile 让 JavaScript 变得极其易用。使用 `data-` 属性，内容
 
 图 8.9。带有计数气泡的简单列表。
 
-邮件文件夹是可以使用计数气泡的列表项 Excellent 示例——在这种情况下，用于显示每个区域有多少封邮件——但计数气泡也可用于许多情况。例如，带有条带及其专辑的列表分隔符示例可以转换为嵌套列表，父元素可以显示每个父列表项中有多少专辑/子列表项：
 
-点击此处查看代码图片
+
+# 邮件文件夹与列表视图
+
+邮件文件夹是可以使用计数气泡的列表项 Excellent 示例——在这种情况下，用于显示每个区域有多少封邮件——但计数气泡也可用于许多情况。例如，带有条带及其专辑的列表分隔符示例可以转换为嵌套列表，父元素可以显示每个父列表项中有多少专辑/子列表项：
 
 ```html
 <ul data-role="listview">
@@ -2353,15 +1345,13 @@ jQuery Mobile 让 JavaScript 变得极其易用。使用 `data-` 属性，内容
 </ul>
 ```
 
-此示例的结果如 图 8.10 所示，在同一个列表项中包含计数气泡和嵌套列表。
+此示例的结果如图 8.10 所示，在同一个列表项中包含计数气泡和嵌套列表。
 
 ![Image](img/jquery-8-10.jpg)
 
 图 8.10。带有计数气泡的简单列表。
 
 你可以像向 HTML 页面添加图像一样添加缩略图。只需向列表项添加锚点元素，添加一张作为缩略图的图像，并添加你想显示在图标旁边的标题和文本：
-
-点击此处查看代码图片
 
 ```html
 <ul data-role="listview">
@@ -2382,15 +1372,13 @@ jQuery Mobile 让 JavaScript 变得极其易用。使用 `data-` 属性，内容
 </ul>
 ```
 
-jQuery Mobile 确切知道如何处理此类设置的列表，因为它会将图像转换为 `listview` 中列表项的缩略图。此代码的结果如 图 8.11 所示。
+jQuery Mobile 确切知道如何处理此类设置的列表，因为它会将图像转换为 `listview` 中列表项的缩略图。此代码的结果如图 8.11 所示。
 
 ![Image](img/jquery-8-11.jpg)
 
 图 8.11。带有列表项缩略图的列表。
 
 图标的添加方式与缩略图相同；不同之处在于图像元素上使用了 `ui-li-icon` 类：
-
-点击此处查看代码图片
 
 ```html
 <ul data-role="listview">
@@ -2415,13 +1403,13 @@ jQuery Mobile 确切知道如何处理此类设置的列表，因为它会将图
 
 ## 总结
 
-列表对移动设备至关重要。正如你在本章看到的，jQuery 依赖列表。
+列表对移动设备至关重要。正如你在本章看到的，jQuery Mobile 依赖列表。
 
-## 搜索过滤
+# 搜索过滤
 
 基础搜索功能是网站的常见功能，但开发非常耗时。幸运的是，jQuery Mobile 在用户输入时提供建议。
 
-### 创建过滤栏
+## 创建过滤栏
 
 正如提到的，该框架为列表添加搜索过滤非常简单：只需为列表添加 `data-filter` 属性并将值设置为 `true`。以下示例是一个歌曲列表：
 
@@ -2443,7 +1431,7 @@ jQuery Mobile 确切知道如何处理此类设置的列表，因为它会将图
     <li>Baby It's You</li>
     <li>Baby, You're A Rich Man</li>
     <li>Baby's In Black</li>
-    <li>Back In The U.S.R.</li>
+    <li>Back In The U.S.S.R.</li>
     <li>Bad Boy</li>
     <li>The Ballad Of John And Yoko</li>
     <li>Because</li>
@@ -2454,14 +1442,9 @@ jQuery Mobile 确切知道如何处理此类设置的列表，因为它会将图
 </ul>
 ```
 
-正如你可以想象的，这个列表非常长；但是 `data-filter` 属性会在列表顶部添加一个搜索过滤栏，帮助用户找到他想要的内容。**图 9.1** 显示了用户在过滤字段中输入时视觉上发生的事件示例。随着字母的输入，结果会缩小，只显示与搜索文本匹配的项。
-
-
-
+正如你可以想象的，这个列表非常长；但是 `data-filter` 属性会在列表顶部添加一个搜索过滤栏，帮助用户找到他想要的内容。图 9.1 显示了用户在过滤字段中输入时视觉上发生的事件示例。随着字母的输入，结果会缩小，只显示与搜索文本匹配的项。
 
 如你所见，框架为搜索过滤器输入框添加了“过滤项目...”的默认值。你可以通过一个名为 `data-filter-placeholder` 的额外属性更改此默认文本，该属性可以使用在无序列表（`<ul>`）或有序列表（`<ol>`）元素。下面的示例显示了在之前的披头士歌曲列表中包含此属性的代码：
-
-点击此处查看代码图像
 
 ```html
 <ul data-role="listview" data-filter="true" data-filter-placeholder="Search the song list...">
@@ -2490,12 +1473,10 @@ jQuery Mobile 确切知道如何处理此类设置的列表，因为它会将图
     <li>Birthday</li>
     <li>Blackbird</li>
     <!-- etc. -->
-</ul
+</ul>
 ```
 
 框架允许你通过 API 更改搜索过滤器文本。要做到这一点，必须在 `mobileinit` 事件触发后访问 `listview` 组件。你将在书的后部分学习更多关于 jQuery Mobile API 的知识，但现在重要的是要理解在成功访问 API 之前必须初始化框架。一旦访问了 `listview`，就可以更改它的选项。其中一个选项是 `filterPlaceholder` 属性，可以用于更新搜索过滤器文本。下面的代码显示了如何编写代码的完整示例，包括绑定到 `mobileinit` 事件：
-
-点击此处查看代码图像
 
 ```javascript
 $(document).bind("mobileinit", function() {
@@ -2507,15 +1488,15 @@ $(document).bind("mobileinit", function() {
 
 ![Image](img/jquery-9-2.jpg)
 
-图 9.2.（左）一个带有自定义占位符文本的基础搜索过滤器。
+图 9.2。（左）一个带有自定义占位符文本的基础搜索过滤器。
 
 搜索过滤器栏的另一个棒功能是，你不仅可以过滤基本的 `listview`，还可以过滤包含自定义格式的 `listview`。在自定义格式列表上的搜索过滤器实际上会搜索每个列表项中的所有文本，无论是标题、段落还是其他内容——只要你想到的，框架就会进行过滤。图 9.3 显示了一个带有搜索过滤器的自定义格式 `listview` 的示例序列。结果包含来自段落复制和标题的匹配文本的列表项。
 
 ![Image](img/jquery-9-3.jpg)
 
-图 9.3.（右）在自定义格式 `listview` 上的基础搜索过滤器。
+图 9.3。（右）在自定义格式 `listview` 上的基础搜索过滤器。
 
-### 创建自定义搜索过滤器
+## 创建自定义搜索过滤器
 
 jQuery Mobile 框架为你提供了两种创建自定义搜索过滤器的选项。`listview` 包含一个 `filterCallback` 选项，可以使用自定义回调函数对其进行扩展。通过扩展此回调函数，两个参数——`text` 和 `searchValue` 变得可用，并可用于编写自定义搜索准则。`text` 参数是当前列表项的值，而 `searchValue` 是输入到搜索过滤器中的文本值。当用户在搜索过滤器中输入内容时，`listview` 会遍历列表，比较列表项文本和搜索值，并根据需要过滤结果。图 9.4 显示了当 jQuery Mobile 比较搜索值和每个列表项文本时的 `console.log` 示例。
 
@@ -2588,16 +1569,11 @@ $('#my-listview').listview('option', myCallback);
 </html>
 ```
 
-现在，让我们尝试使用 `listview` 函数为披头士列表添加自定义搜索过滤器。**
-
-
-
+现在，让我们尝试使用 `listview` 函数为披头士列表添加自定义搜索过滤器。
 
 此示例使用了默认搜索标准来记录文本和 `searchValue` 以供测试。除去 `console.log` 之后，这正是 jQuery Mobile 在用户输入搜索过滤栏时用于过滤结果的完全精确代码。首先，将文本转换为小写以实现不区分大小写的搜索，然后使用 JavaScript 原生的 `indexOf` 函数在文本中查找与 `searchValue` 匹配的字符串。
 
 现在让我们来看看如何编写自定义回调函数。这次，我们将使用上一个示例中的自定义格式化 `listview`，并对其应用过滤器，该过滤器仅搜索正文内容，而将列表项标题排除在搜索条件之外：
-
-点击此处查看代码图像
 
 ```javascript
 $(document).bind("mobileinit", function() {
@@ -2618,8 +1594,6 @@ String.prototype.trim = function() {
 在例示例中，我们只需要等待 `mobileinit` 事件，因为所有 `listviews` 的 `filterCallback` 属性在 jQuery Mobile 框架增强页面标记之前就可以访问了。（在上一个示例中，我们针对的特定 `listview` 必须在框架对其进行增强后才能访问。）一旦触发了 `mobileinit` 事件，我们将 `filterCallback` 设置为 `onlyBody`，这是一个自定义回调函数，它的结构可以像任何其他函数一样，但它将接收两个参数：`text` 和 `searchValue`。通过这些参数，我们可以编写任何所需的规则。在这种情况下，我们将拆分 `text` 参数，并仅对包含之前的自定义格式列表示例中 `p` 元素中的正文内容匹配结果。
 
 除了创建自定义过滤回调函数外，jQuery Mobile 还提供了一个名为 `data-filtertext` 的属性用于过滤列表项。该属性的之处在于，它实际上是发送给 `filterCallback` 函数的文本值。换句话说，`data-filtertext` 属性中的值变成了 `filterCallback` 函数在比较期间使用的值：
-
-点击此处查看代码图像
 
 ```html
 <ul data-role="listview" data-filter="true">
@@ -2644,19 +1618,17 @@ String.prototype.trim = function() {
 
 搜索过滤栏提供了如果通过编程来实现将相当复杂且耗时的功能。jQuery Mobile 让添加甚至自定义此项功能变得极其简单。除了节省时间外，此小部件还为任何大量数据提供了额外价值，并提供了极佳的可用性增强，帮助用户快速高效地找到他们需要的内容。有时，无法精简所有需要放在移动网站上的内容。当出现这种情况且你有一个非常长、似乎几乎无法使用的列表时，搜索过滤栏将是处理该问题的绝佳方法。
 
-## 10. 表单元素
+# 10. 表单元素
 
-jQuery Mobile 框架为每个表单元素暴露了许多内部方法和事件，这意味着你可以从自定义代码中访问它们。这些方法和事件允许你更改和扩展 jQuery Mobile 表单元素的核心功能，创建让你的移动应用程序与众脱颖出的定制功能。本章涵盖了你可以使用的每个暴露表单元素方法和事件。
+jQuery Mobile 框架为每个表单元素暴露了许多内部方法和事件，这意味着你可以从自定义代码中访问它们。这些方法和事件允许你更改和扩展 jQuery Mobile 表单元素的核心功能，创建让你的移动应用程序与众脱颖而出的定制功能。本章涵盖了你可以使用的每个暴露表单元素方法和事件。
 
-### 文本输入
+## 文本输入
 
 jQuery Mobile 支持许多不同的文本输入类型，包括 HTML5 输入，如数字、电子邮件、URL、电话以及一些与时间和日期相关的输入。框架增强了所有表单元素，使其在移动设备上更易用。识别具有特定元素类型的表单元素的一个主要优势是键盘会变化。以下是不同的文本输入以及经过 jQuery Mobile 增强后关联 iOS 键盘的一些示例。
 
 设置元素类型是通过添加名为 `type` 的属性完成的。以下是不同的文本输入以及经过 jQuery Mobile 增强后关联 iOS 键盘的一些示例。
 
 设置元素类型是通过添加名为 `type` 的属性完成的。这里：
-
-点击此处查看代码图像
 
 ```html
 <input type="number">
@@ -2670,8 +1642,6 @@ jQuery Mobile 支持许多不同的文本输入类型，包括 HTML5 输入，�
 
 设置元素类型是通过添加名为 `type` 的属性完成的。这里：
 
-点击此处查看代码图像
-
 ```html
 <input type="number" pattern="0-9]*">
 ```
@@ -2683,8 +1653,6 @@ jQuery Mobile 支持许多不同的文本输入类型，包括 HTML5 输入，�
 图 10.2 应用了 `pattern` 属性时的数字键盘。
 
 设置元素类型是通过添加名为 `type` 的属性完成的。这里：
-
-点击此处查看代码图像
 
 ```html
 <input type="email">
@@ -2700,8 +1668,6 @@ jQuery Mobile 支持许多不同的文本输入类型，包括 HTML5 输入，�
 
 在本书出版之前，jQuery Mobile 框架发布了一个新版本 1.1.0 正式版。为了从一些新的表单元素选项中受益，当需要在页面中包含框架、CSS 和 jQuery 时必须使用以下代码：
 
-点击此处查看代码图像
-
 ```html
 <link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.css" />
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
@@ -2713,10 +1679,6 @@ jQuery Mobile 框架不断升级。在启动项目之前，检查 jquerymobile.c
 *   `url` 元素类型显示带有正斜杠和 .com 键的字母键盘。图 10.4。
 *   `tel` 元素类型显示用于电话号码的电话键盘。图 10.5。
 
-
-
-
-
 `time`、`month`、`date` 和 `datetime` 元素类型都会显示与相应值对应的菜单（图 10.6）。
 
 ![Image](img/jquery-10-5.jpg)
@@ -2727,11 +1689,9 @@ jQuery Mobile 框架不断升级。在启动项目之前，检查 jquerymobile.c
 
 图 10.6。iOS 中与时间和日期相关的菜单。
 
-#### 选项
+### 选项
 
 文本输入包含两个选项：`initSelector` 和 `theme`。通过 `$.mobile` 对象访问 `textinput` 时，这两个选项可用。以下代码显示了如何通过 `textinput` 访问这些选项：
-
-点击此处查看代码
 
 ```
 $.mobile.textinput.prototype.options
@@ -2739,15 +1699,11 @@ $.mobile.textinput.prototype.options
 
 一旦你访问了这些选项，就可以单独访问它们中的每一个。例如，如果你想获取 `initSelector` 选项，可以在上一行代码的末尾添加该选项：
 
-点击此处查看代码
-
 ```
 $.mobile.textinput.prototype.options.initSelector
 ```
 
 `initSelector` 选项定义了框架初始化时初始化的选择器。该选项的暴露允许你定义想要哪些选择器初始化为文本输入。这让你对核心功能具有很好的控制力，允许你根据特定情况定义初始化内容，最终最大限度地减少初始化时间。你不仅可以定义初始化哪些元素类型，还可以对数据角色（data roles）进行同样的操作。以下代码排除了所有 `number` 元素类型的 `textinputs`：
-
-点击此处查看代码
 
 ```javascript
 $( document ).bind("mobileinit", function() {
@@ -2755,13 +1711,9 @@ $( document ).bind("mobileinit", function() {
 });
 ```
 
-***
-
 ![Image](img/note.jpg) 注意
 
 在 jQuery Mobile 中，可以使用 `textinput` 元素创建多种不同的元素类型，包括 `text`、`search`、`number`、`password`、`email`、`url` 和 `tel`。此外，`textarea` 也归类为 jQuery Mobile 中的 `textinput` 表单元素类别。这意味着每个元素类型都包含了本章文本输入部分的选项、方法和事件。
-
-***
 
 图 10.7 显示了一个未经过增强的 `number` 元素类型示例。
 
@@ -2777,8 +1729,6 @@ $( document ).bind("mobileinit", function() {
 
 `textinput` 还包含一个 `theme` 选项，你可以在选择文本输入元素时访问它。`theme` 的值可以根据包含 a–z 的任何预建或自定义色块进行设置：
 
-点击此处查看代码
-
 ```javascript
 $('.my-textinput').textinput({theme: 'a'});
 ```
@@ -2787,13 +1737,11 @@ $('.my-textinput').textinput({theme: 'a'});
 
 从 1.1.0 版本开始，jQuery Mobile 还包含了两个新选项：`mini` 和 `preventFocusZoom`。可以使用名为 `mini` 的 `data-` 属性设置单个表单元素设置。将表单元素设置为 `mini` 会创建一个更紧凑的版本。要用代码将表单元素设置为 `mini`，只需选择文本输入，然后使用 `textinput` 方法设置 `mini` 的值：
 
-点击此处查看代码
-
 ```javascript
 $('.my-textinput').textinput({mini: true});
 ```
 
-此代码在文本输入上的结果与 图 10.9 中的右侧输入相似，该图显示了普通文本输入和 `mini` 文本输入的对比。
+此代码在文本输入上的结果与图 10.9 中的右侧输入相似，该图显示了普通文本输入和 `mini` 文本输入的对比。
 
 ![Image](img/jquery-10-9.jpg)
 
@@ -2801,21 +1749,17 @@ $('.my-textinput').textinput({mini: true});
 
 文本输入的最后一个选项是 `preventFocusZoom` 布尔值。当仅在 iOS 中设置为 `true` 时，该选项可以防止网页在用户选择文本输入时被放大。这不是默认设置：通常 iOS 会将网页放大到输入框处，以便完全关注表单元素。这种行为通常没有必要，幸运的是 jQuery Mobile 团队提供了一个禁用它的选项。你也可以通过名为 `prevent-focus-zoom` 的 `data-` 属性在单个表单元素上设置此选项：
 
-点击此处查看代码
-
 ```javascript
 $('.my-textinput').textinput({preventFocusZoom: true});
 ```
 
 除了这些选项，文本输入还有一个特定的 `clearSearchText` 用于清除搜索。只需像之前那样设置它：
 
-点击此处查看代码
-
 ```javascript
 $('.my-textinput').textinput({clearSearchText: 'this can be any text'});
 ```
 
-#### 方法
+### 方法
 
 jQuery Mobile 为 `textinput` 提供了两个方法：`enable` 和 `disable`。`enable` 方法激活输入并允许用户输入：
 
@@ -2829,7 +1773,7 @@ $('.my-textinput').textinput('enable');
 $('.my-textinput').textinput('disable');
 ```
 
-我们已经在 图 10.8 中见过一个启用的文本输入；禁用的元素看起来像 图 10.10。（见下图）
+我们已经在图 10.8 中见过一个启用的文本输入；禁用的元素看起来像图 10.10。（见下图）
 
 ### 事件
 
@@ -2851,13 +1795,9 @@ $('.my-textinput').textinput({
 });
 ```
 
-
-
-
+## 复选框和单选按钮
 
 要向单选按钮或复选框组添加问题或说明，你可以使用 `legend` 元素。要将图例与输入元素分组，可以使用一个 `data-role` 为 `controlgroup` 的 `fieldset`。最后，用 `data-role` 为 `fieldcontain` 的 `div` 包围 `fieldset` 元素，可以为组披萨配料中的元素添加一些样式，例如外边距和下边框：
-
-点击此处查看代码图像
 
 ```html
 <div data-role="fieldcontain">
@@ -2883,8 +1823,6 @@ $('.my-textinput').textinput({
 
 还可以创建所谓的水平切换集（horizontal toggle set）。它将元素分组并仅作为文本选项显示它们，而不是包含实际的单选按钮或复选框图标。要创建切换集，为 `fieldset` 添加 `data-type` 为 `horizontal`。以下标记是关于你何时以及为何使用这种格式的的良好示例：
 
-点击此处查看代码图像
-
 ```html
 <div data-role="fieldcontain">
     <fieldset data-role="controlgroup" data-type="horizontal">
@@ -2900,8 +1838,6 @@ $('.my-textinput').textinput({
 ```
 
 这种格式提供了可以切换的类似按钮的功能，在这种情况下，用于开启和关闭字体样式。如果没有一些 CSS 格式化，这段代码将是不完整的；在这种情况下，以下 CSS 将应用到标签上：
-
-点击此处查看代码图像
 
 ```css
 <style type="text/css">
@@ -2925,8 +1861,6 @@ $('.my-textinput').textinput({
 
 复选框和单选按钮比文本输入简单，因为它们只有 `theme` 和 `mini` 选项，这两者也可以作为 `data-` 属性可用。这两种元素都不包含不同的类型；元素类型要是 `checkbox` 要是 `radio`，因此不需要 `initSelector`。为复选框或单选按钮设置主题与为文本输入设置主题相似。主要区别在于你需要访问 `checkboxradio` 而不是 `textinput`。以下代码为所有复选框和单选按钮设置主题，并将它们都设为 `mini`：
 
-点击此处查看代码图像
-
 ```javascript
 $("input[type='checkbox'], input[type='radio']").checkboxradio({
     mini: "true",
@@ -2936,19 +1870,15 @@ $("input[type='checkbox'], input[type='radio']").checkboxradio({
 
 在方法方面，复选框和单选按钮都有 `enable` 和 `disable` 方法。然而，它们还包含一个 `refresh` 方法，你可以用它在视觉上操纵元素后更新该元素。例如，如果我们取披萨配料的示例并想要预选奶酪，可以使用带有 `refresh` 的以下代码：
 
-点击此处查看代码图像
-
 ```javascript
 $("input#cheese").attr("checked", true).checkboxradio("refresh");
 ```
 
 该方法确保了对复选框进行了视觉更新，以便用户看到它是被选中的。复选框和单选按钮元素包含了与文本输入相同的事件。这些包括绑定标准 JavaScript 事件的能力，如 `change`、`blur`、`focus`。这些元素还有一个 `create` 事件，你可以在它们在 jQuery Mobile 中被创建时使用它。
 
-### 选择菜单 (Select Menus)
+## 选择菜单 (Select Menus)
 
 选择菜单的调整一直以来非常困难。最后，jQuery Mobile 提供了一种视觉效果，这种效果不需要额外的 CSS。为 jQuery Mobile 创建选择菜单，创建一个普通的 HTML `select`。以下示例展示了用于选择类型的选择菜单：
-
-点击此处查看代码图像
 
 ```html
 <label for="select-cabin">Cabin type:</label>
@@ -2982,11 +1912,7 @@ $("input#cheese").attr("checked", true).checkboxradio("refresh");
 
 图 10.15。在 fieldcontain 中的选择菜单。
 
-这段标记的结果看起来和功能上如图 10.15 所示。
-
 你也可以像对复选框和单选按钮一样对选择菜单分组。只需为 `fieldset` 添加 `controlgroup data-role` 并为该组菜单创建一个图例：
-
-点击此处查看代码图像
 
 ```html
 <div data-role="fieldcontain">
@@ -3021,24 +1947,21 @@ $("input#cheese").attr("checked", true).checkboxradio("refresh");
 
 图 10.16。（左）controlgroup 中的选择菜单。
 
-
-
-
-或者，此组可以是一个水平的可选输入项组，它非常适用于长度只有几个字符的项，例如出生日期（图 10.17`）。
+或者，此组可以是一个水平的可选输入项组，它非常适用于长度只有几个字符的项，例如出生日期（图 10.17）。
 
 ![Image](img/jquery-10-17.jpg)
 
 图 10.17。（右侧）水平分组的下拉菜单。
 
-#### 选项
+### 选项
 
-你还可以通过 API 提供的选项或 `data-` 属性的等效项对下拉菜单进行相当的自定义。为下拉菜单可以设置的选项可以在`表 10.1`所示。所有这些选项都可以通过 `selectmenu` 方法设置，但 `initSelector` 选项除外，该选项设置方法与文本输入相同。
+你还可以通过 API 提供的选项或 `data-` 属性的等效项对下拉菜单进行相当的自定义。为下拉菜单可以设置的选项可以在表 10.1 所示。所有这些选项都可以通过 `selectmenu` 方法设置，但 `initSelector` 选项除外，该选项设置方法与文本输入相同。
 
 表 10.1 下拉菜单选项
 
 ![Image](img/10tab01.jpg)
 
-#### 方法
+### 方法
 
 下拉菜单的功能比文本输入、复选框或单选按钮更丰富，因此与之关联的方法更多。它包含了标准的 `enable` 和 `disable` 方法，但该元素还包含了 `close`、`open` 和 `refresh`。当下拉菜单被重新构建时，可以使用 `refresh`，例如，如果使用 Ajax 根据 Web 表单中之前的选择来更新下拉菜单。或者，如果进行了视觉更新，可以使用此方法来刷新菜单。`open` 和 `close` 方法是自言自明的，但这里有一个如何使用 `open` 方法的示例：
 
@@ -3050,18 +1973,16 @@ $('select').selectmenu('open');
 
 我们已经涵盖了所有的下拉菜单事件。此表单元素包含了绑定到标准 JavaScript 事件的选项，并包含一个 `create` 事件。
 
-### 滑块
+## 滑块
 
 滑块是可以通过 jQuery Mobile 增强的表单元素组的一项极佳补充。可以使用滑块在特定范围范围内选择一个数字，因为它会将该数字设置在相应的数字输入框中。要创建一个滑块，你必须将元素类型设置为 `range` 并包含 `min` 和 `max` 值：
-
-点击此处查看代码图像
 
 ```html
 <label for="my-slider">My slider</label>
 <input type="range" name="slider" id="my-slider" value="50" min="0" max="100" />
 ```
 
-也可以添加默认值，它会设置滑块在轨道上的位置。此示例中的滑块显示类似于`图 10.18`。
+也可以添加默认值，它会设置滑块在轨道上的位置。此示例中的滑块显示类似于图 10.18。
 
 ![Image](img/jquery-10-18.jpg)
 
@@ -3069,16 +1990,12 @@ $('select').selectmenu('open');
 
 你还可以为返回的数值添加步长。例如，如果你不想返回 0 到 100 之间的每一个数字，你可以将 `step` 属性设置为 10，这将返回每隔十个数的数字：
 
-点击此处查看代码图像
-
 ```html
 <label for="my-slider">My slider</label>
 <input type="range" name="slider" id="my-slider" value="50" min="0" max="100" step="10" />
 ```
 
-除了这些属性外，你还可以添加填充高亮，它会高亮滑块左侧的轨道区域（`图 10.19`）：
-
-点击此处查看代码图像
+除了这些属性外，你还可以添加填充高亮，它会高亮滑块左侧的轨道区域（图 10.19）：
 
 ```html
 <label for="my-slider">My slider</label>
@@ -3089,11 +2006,9 @@ $('select').selectmenu('open');
 
 图 10.19 带有填充高亮的滑块。
 
-#### 选项
+### 选项
 
 滑块元素有一系列相当的选项，你可以通过 API 或 `data-role` 属性进行设置，包括 `disabled`、`highlight`、`initSelector`、`mini`、`theme` 和 `trackTheme`。默认情况下，`disabled` 选项设置为 `false`。`highlight` 选项默认为 `false`；但是，如果设置为 `true`，则可以用于高亮所有滑块中滑块左侧的轨道，如下例例所示：
-
-点击此处查看代码图像
 
 ```
 $('.selector').slider({ highlight: "true" });
@@ -3101,11 +2016,9 @@ $('.selector').slider({ highlight: "true" });
 
 我们已经涵盖了 `initSelector`、`mini` 和 `theme` 选项。`trackTheme` 选项是滑块特有的；你可以用它将轨道的主设置为与滑块其他部分不同的主题。
 
-#### 方法和事件
+### 方法和事件
 
 滑块插件包含了三个你可以用来修改 `slider` 元素的方法：`enable`、`disable` 和 `refresh`。`enable` 方法可以启用被禁用的滑块：
-
-点击此处查看代码图像
 
 ```
 $('.selector').slider('enable');
@@ -3113,15 +2026,11 @@ $('.selector').slider('enable');
 
 `disable` 方法可以禁用滑块，使用户无法与其交互：
 
-点击此处查看代码图像
-
 ```
 $('.selector').slider('disable');
 ```
 
 `refresh` 方法可以在滑块被更新后用于刷新它：
-
-点击此处查看代码图像
 
 ```
 $('.selector').slider('refresh');
@@ -3129,11 +2038,9 @@ $('.selector').slider('refresh');
 
 滑块可用的事件与其他元素类似，滑块插件还包含一个 `create` 事件，当滑块创建时可以使用。
 
-### 翻转开关
+## 翻转开关
 
-翻转开关是表单元素的另一项实用的补充。它们为二值数据提供了极佳的解决方案，例如是/否、开启/关闭或/假。开关可以从一个位置移动到另一个位置，或者用户可以点击它使其切换到选定位置。制作翻转开关很简单：只需创建一个包含两个选项的滑块，因为它会根据文本调整大小：
-
-点击此处查看代码图像
+翻转开关是表单元素的另一项实用的补充。它们为二值数据提供了极佳的解决方案，例如是/否、开启/关闭或真/假。开关可以从一个位置移动到另一个位置，或者用户可以点击它使其切换到选定位置。制作翻转开关很简单：只需创建一个包含两个选项的滑块，因为它会根据文本调整大小：
 
 ```html
 <label for="flip-switch">Do you like pizza?</label>
@@ -3143,7 +2050,7 @@ $('.selector').slider('refresh');
 </select>
 ```
 
-产生翻转开关的代码是一个 `data-role` 设置为 `slider` 值的下拉菜单，当然，关键在于包含两个选项。此滑块的视觉结果如`图 10.20`所示。
+产生翻转开关的代码是一个 `data-role` 设置为 `slider` 值的下拉菜单，当然，关键在于包含两个选项。此滑块的视觉结果如图 10.20 所示。
 
 ![Image](img/jquery-10-20.jpg)
 
@@ -3155,21 +2062,17 @@ $('.selector').slider('refresh');
 
 jQuery Mobile 为表单输入提供了极佳的元素选项。设备根据输入类型响应相应的键盘时，可用性大大提高。另一个益处是，所有这些表单元素在无法处理它们的浏览器中查看时都会降级，因此你永远不需要担心由于某人没有使用最新、最强大的手机而导致你的网页崩溃，例如。这仅仅是 jQuery Mobile 帮助消除通用的 Web 开发中伴随的一些常见困扰的又一种方式。
 
-## 11\. 为 jQuery Mobile 设置主题
+# 11. 为 jQuery Mobile 设置主题
 
 jQuery Mobile 包含一个完整的主题框架，允许你自定义色板和图标集，以创建自定义主题的页面、工具栏、内容、表单元素、列表、按钮等。该框架使用 CSS3 许多许多增强功能，例如阴影、渐变和圆角，因此不使用图像来实现这些视觉效果，这使得主题更加轻量且加载速度更快。
 
 本章提供了现有色板的概述，并详细说明了如何创建自定义主题。自定义主题允许你创建与桌面版本具有相同品牌设计的移动版本网站，从而在你的网站之间创建统一的设计。
 
-### 核心色板
-
-
+## 核心色板
 
 jQuery Mobile 有一个包含五个色块（swatches）的主题系统，这些色块由字母“a”到“e”定义。单个网页中混合使用这些色块以实现完全自定义。默认色块都包含颜色和纹理、内边距以及预定义的尺寸，以便将它们区分开来。表 11.1
 
 使用色块就像使用 `data-theme` 属性一样简单，它可以用于任何带有 jQuery Mobile 框架的 HTML 元素。以下代码显示了一组五个按钮，每个按钮都有不同的默认主题：
-
-点击查看代码图像
 
 ```html
 <a href="#" data-role="button" data-theme="a">Swatch A</a>
@@ -3185,9 +2088,7 @@ jQuery Mobile 有一个包含五个色块（swatches）的主题系统，这些�
 
 图 11.1 分配了不同主题色块的按钮组。
 
-你可以更新现有的色块或创建自定义色块。要创建自定义色块，只需从 jQuery Mobile 样式表中复制一个现有主题色块并将其更新为尚未作为默认色块使用的字母（即“f”到“z”或任何自定义名称）。首先，你需要在表中找到想要复制的色块；在本例中我们使用“a”色块。我们要获取色块的样式表是全书中一直附加到所有示例中的那一个。唯一的区别是，我们将查看未压缩的版本，以便更容易找到色块的开始和结束位置。你可以在 [`code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.css`](http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.css) 找到该样式表的未压缩版本，这与一直以来包含的地址相同，只是缺少了文件名中的 `.min` 部分。要创建色块的副本，只需将许多 CSS 色块类复制粘贴到新的 CSS 文件中，对后缀 `-a` 进行搜索并替换，替换为“f”到“z”之间的字母。例如，要创建一个“f”色块，你会将 `-a` 搜索并替换为 `-f`，所有的 CSS 色块类将得到更新，从而得到一个新的“f”色块。以下是 `ui-bar` 类在为“f”色块修改后的示例：
-
-点击查看代码图像
+你可以更新现有的色块或创建自定义色块。要创建自定义色块，只需从 jQuery Mobile 样式表中复制一个现有主题色块并将其更新为尚未作为默认色块使用的字母（即“f”到“z”或任何自定义名称）。首先，你需要在表中找到想要复制的色块；在本例中我们使用“a”色块。我们要获取色块的样式表是全书中一直附加到所有示例中的那一个。唯一的区别是，我们将查看未压缩的版本，以便更容易找到色块的开始和结束位置。你可以在 `code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.css` 找到该样式表的未压缩版本，这与一直以来包含的地址相同，只是缺少了文件名中的 `.min` 部分。要创建色块的副本，只需将许多 CSS 色块类复制粘贴到新的 CSS 文件中，对后缀 `-a` 进行搜索并替换，替换为“f”到“z”之间的字母。例如，要创建一个“f”色块，你会将 `-a` 搜索并替换为 `-f`，所有的 CSS 色块类将得到更新，从而得到一个新的“f”色块。以下是 `ui-bar` 类在为“f”色块修改后的示例：
 
 ```css
 .ui-bar-f {
@@ -3207,8 +2108,6 @@ jQuery Mobile 有一个包含五个色块（swatches）的主题系统，这些�
 
 现在由你来自定义这些类的属性。一旦你有了新色块，就可以像下方的按钮示例一样在任何 jQuery Mobile 元素上轻松使用：
 
-点击查看代码图像
-
 ```html
 <a href="#" data-role="button" data-theme="f">Custom Swatch F</a>
 ```
@@ -3221,10 +2120,6 @@ jQuery Mobile 有一个包含五个色块（swatches）的主题系统，这些�
 
 ThemeRoller 工具是创建自定义主题的一种简单方法，但可能很难理解底层的 CSS。ThemeRoller 提供了一个视觉化界面，无需编写任何代码即可修改颜色、字体、圆角等。
 
-
-
-
-
 图 11.4 显示了使用 `data-theme` 修改此标记后的结果。
 
 ![Image](img/jquery-11-4.jpg)
@@ -3233,12 +2128,10 @@ ThemeRoller 工具是创建自定义主题的一种简单方法，但可能很�
 
 与页面一样，包含在工具栏中的任何组件都会继承工具栏的主题。以下示例显示了一个带有不同主题和主页图标的页眉：
 
-点击此处查看代码图像
-
 ```html
 <div data-role="header" data-theme="b">
-     <h1>jQueryMobile.tv</h1>
-     <a href="#" data-theme="e" data-icon="home">Home</a>
+     <h1>jQueryMobile.tv</h1>
+     <a href="#" data-theme="e" data-icon="home">Home</a>
 </div>
 ```
 
@@ -3248,29 +2141,26 @@ ThemeRoller 工具是创建自定义主题的一种简单方法，但可能很�
 
 图 11.5。一个带有具有不同 `data-theme` 色块按钮的工具栏组件。
 
-### 内容主题化
+## 内容主题化
 
 主内容区域或任何包含 `data-role="content"` 的元素都可以通过添加 `data-theme` 属性来设置主题。这允许内容区域对其及其组件覆盖继承的页面组件主题。以下示例显示了内容主题以及其包含的任何组件如何覆盖页面主题：
 
-点击此处查看代码图像
-
 ```html
 <div data-role="page" data-theme="b">
-     <div data-role="header" data-theme="b">
-         <h1>jQueryMobile.tv</h1>
-         <a href="#" data-theme="e" data-icon="home">Home</a>
-     </div></div>
-     <div data-role="content" data-theme="d">
-         <h3>Header</h3>
-         <p>这是一个示例，页面和工具栏应用了“b”色块，内容区域应用了“d”色块。</p>
-         <a href="#" data-role="button" data-inline="true">Button</a>
-     </div>
-     <div data-role="collapsible" data-collapsed="true" data-theme="c" data-content-theme="c">
-                     <h3>Collapsible header</h3>
-                     <p>我使用 data-content-theme 来匹配我的页眉</p>
-                    </div></div>
-     </div>
-     <div data-role="footer" data-theme="b"><h2>Copyright</h2>h2></div>
+    <div data-role="header" data-theme="b">
+        <h1>jQueryMobile.tv</h1>
+        <a href="#" data-theme="e" data-icon="home">Home</a>
+    </div>
+    <div data-role="content" data-theme="d">
+        <h3>Header</h3>
+        <p>这是一个示例，页面和工具栏应用了“b”色块，内容区域应用了“d”色块。</p>
+        <a href="#" data-role="button" data-inline="true">Button</a>
+    </div>
+    <div data-role="collapsible" data-collapsed="true" data-theme="c" data-content-theme="c">
+        <h3>Collapsible header</h3>
+        <p>我使用 data-content-theme 来匹配我的页眉</p>
+    </div>
+    <div data-role="footer" data-theme="b"><h2>Copyright</h2></div>
 </div>
 ```
 
@@ -3282,24 +2172,22 @@ ThemeRoller 工具是创建自定义主题的一种简单方法，但可能很�
 
 除了标准内容区域外，折叠内容区域可以包含自定义主题，以区别于其父元素：
 
-点击此处查看代码图像
-
 ```html
 <div data-role="page" data-theme="b">
-     <div data-role="header" data-theme="b">
-         <h1>jQueryMobile.tv</h1>
-         <a href="#" data-theme="e" data-icon="home">Home</a>
-     </div></div>
-     <div data-role="content" data-theme="d">
-         <h3>Header</h3>
-         <p>这是一个示例，页面和工具栏应用了“b”色块，内容区域应用了“d”色块。</p>
-         <div data-role="collapsible" data-collapsed="true" data-theme="c" data-content-theme="c">
-                     <h3>Collapsible header</h3>
-                     <p>我使用 data-content-theme 来匹配我的页眉</p>
-                    </div></div>
-     </div>
-     <div data-role="footer" data-theme="b"><h2>Copyright</h2>h2></div>
-</div
+    <div data-role="header" data-theme="b">
+        <h1>jQueryMobile.tv</h1>
+        <a href="#" data-theme="e" data-icon="home">Home</a>
+    </div>
+    <div data-role="content" data-theme="d">
+        <h3>Header</h3>
+        <p>这是一个示例，页面和工具栏应用了“b”色块，内容区域应用了“d”色块。</p>
+        <div data-role="collapsible" data-collapsed="true" data-theme="c" data-content-theme="c">
+            <h3>Collapsible header</h3>
+            <p>我使用 data-content-theme 来匹配我的页眉</p>
+        </div>
+    </div>
+    <div data-role="footer" data-theme="b"><h2>Copyright</h2></div>
+</div>
 ```
 
 默认情况下，折叠内容区域的页眉包含自定义的 `data-theme`；但如果没有 `data-content-theme`，折叠内容区域体将与内容区域相同。图 11.7 显示了具有自定义 `data-theme` 和 `data-content-theme` 的折叠内容区域示例。
@@ -3308,26 +2196,26 @@ ThemeRoller 工具是创建自定义主题的一种简单方法，但可能很�
 
 图 11.7。带有折叠内容区域的页面。
 
-### 表单主题化
+## 表单主题化
 
 jQuery Mobile 允许你创建单个表单。与其他一样，表单和元素继承它们所属的页面组件主题。然而，可以使用 `data-theme` 来定制单个表单、所有表单或某些元素的外。让我们从整个表单开始。以下代码显示了一个包含“e”主题的表单，而页面组件包含“b”主题。注意表单元素包含了自己的 `data-role`，否则它将继承内容区域的主题：
 
 ```html
 <div data-role="page" data-theme="b">
-     <div data-role="header" data-theme="b">
-           <h1>jQueryMobile.tv</h1>
-           <a href="#" data-theme="e" data-icon="home">Home</a>
-     </div></div>
-     <div data-role="content" data-theme="d">
-           <p>此内容区域包含“d”色块。</p>
-           <form data-role="content" data-theme="e">
-               <label for="my-text-input">Text input</label>
-               <input type="text" name="name" id="my-text-input" value="" />
-               <a href="#" type="submit" data-role="button" data-inline="true">Button</a>
-                  </form>
-       </div>
-       <div data-role="footer" data-theme="b"><h2>Copyright</h2>h2></div>
-</div
+    <div data-role="header" data-theme="b">
+        <h1>jQueryMobile.tv</h1>
+        <a href="#" data-theme="e" data-icon="home">Home</a>
+    </div>
+    <div data-role="content" data-theme="d">
+        <p>此内容区域包含“d”色块。</p>
+        <form data-role="content" data-theme="e">
+            <label for="my-text-input">Text input</label>
+            <input type="text" name="name" id="my-text-input" value="" />
+            <a href="#" type="submit" data-role="button" data-inline="true">Button</a>
+        </form>
+    </div>
+    <div data-role="footer" data-theme="b"><h2>Copyright</h2></div>
+</div>
 ```
 
 为嵌套内容区域分配不同的 `data-theme` 值是有用的。表单显示了如何使用它们来区分某些内容 图 11.8。
@@ -3338,10 +2226,9 @@ jQuery Mobile 允许你创建单个表单。与其他一样，表单和元素继
 
 要更改单个表单元素的色块，只需在实际元素上应用 `data-theme` 即可。
 
-点击此处查看代码图像
-
 ```html
-<a href="#" type="submit" data-role="button" data-inline="true" data-theme="b">```
+<a href="#" type="submit" data-role="button" data-inline="true" data-theme="b">
+```
 
 这会将按钮设置为与表单其他部分不同的主题。在这种情况下，它有助于识别表单内的按钮，并在视觉上吸引注意力 图 11.9。
 
@@ -3349,29 +2236,27 @@ jQuery Mobile 允许你创建单个表单。与其他一样，表单和元素继
 
 图 11.9。使用 data-theme 属性设置单个表单元素的色块值。
 
-### 列表
+## 列表
 
 列表可能是 jQuery Mobile 中复杂的组件，因为它们是唯一包含主题选项额外属性的元素。例如，`listview` 不仅可以包含列表项，还可以包含分割线、计数气泡和分割按钮，我们在本节中看到它们都有自己的主题选项。首先，像本章之前的组件一样，`listview` 本可以包含 `data-theme`，任何包含的项目都会继承它：
 
-点击此处查看代码图像
-
 ```html
 <div data-role="page" data-theme="b">
-     <div data-role="header" data-theme="b">
-         <h1>jQueryMobile.tv</h1>
-         <a href="#" data-theme="e" data-icon="home">Home</a>
-     </div></div>
-     <div data-role="content" data-theme="d">
-            <p>此内容区域包含“d”色块。</p>
-            <ul data-role="listview" data-inset="true" data-theme="e">
-                    <li><a href="#">List item</a></li>
-                    <li><a href="#">List item</a></li>
-                    <li><a href="#">List item</a></li>
-                    <li><a href="#">List item</a></li>
-                </ul>
-       </div>
-     <div data-role="footer" data-theme="b"><h2>Copyright</h2>h2></div>
-</div
+    <div data-role="header" data-theme="b">
+        <h1>jQueryMobile.tv</h1>
+        <a href="#" data-theme="e" data-icon="home">Home</a>
+    </div>
+    <div data-role="content" data-theme="d">
+        <p>此内容区域包含“d”色块。</p>
+        <ul data-role="listview" data-inset="true" data-theme="e">
+            <li><a href="#">List item</a></li>
+            <li><a href="#">List item</a></li>
+            <li><a href="#">List item</a></li>
+            <li><a href="#">List item</a></li>
+        </ul>
+    </div>
+    <div data-role="footer" data-theme="b"><h2>Copyright</h2></div>
+</div>
 ```
 
 图 11.10 显示了此标记在移动设备上渲染的示例。正如你所看到的，列表可以有自己的主题，与页面其他部分分开。然而，如果没有定义 `data-theme`，`listview` 将简单继承页面或其内容容器的主题。
@@ -3391,10 +2276,6 @@ jQuery Mobile 允许你创建单个表单。与其他一样，表单和元素继
 </ul>
 ```
 
-
-
-
-
 图 11.11 显示此 `listview` 的示例，它包含“e”色块作为其数据主题（data-theme），以及一个用“a”色块覆盖该主题的列表项。在特定情况下，此功能非常有用，因为它突出并吸引了特定列表项的注意。
 
 ![Image](img/jquery-11-11.jpg)
@@ -3402,8 +2283,6 @@ jQuery Mobile 允许你创建单个表单。与其他一样，表单和元素继
 图 11.11。带有列表项的 listview，该列表项分配了不同的 `data-theme`。
 
 要为分隔符设置主题，有一个名为 `data-divider-theme` 的特殊属性。可以将此属性添加到 `listview` 中，为所有列表分隔符设置主题：
-
-点击此处查看代码图片
 
 ```html
 <ul data-role="listview" data-inset="true" data-theme="e" data-divider-theme="b">
@@ -3423,15 +2302,13 @@ jQuery Mobile 允许你创建单个表单。与其他一样，表单和元素继
 
 计数泡可以使用 `data-count-theme` 属性设置主题，该属性可以应用于 `listview` 的 `ul` 元素，为列表中的所有的计数泡设置主题：
 
-点击此处查看代码图片
-
 ```html
 <ul data-role="listview" data-inset="true" data-theme="e" data-divider-theme="b" data-count-theme="b">
     <li data-role="list-divider" role="heading">我的数字列表</li>
-    <li>列表项 <span class="ui-li-count">5</span></span></li>
-    <li>列表项 <span class="ui-li-count">20</span></span></li>
-    <li>列表项 <span class="ui-li-count">75</span></span></li>
-    <li data-theme="a">总量 <span class="ui-li-count">100</span></span></li>
+    <li>列表项 <span class="ui-li-count">5</span></li>
+    <li>列表项 <span class="ui-li-count">20</span></li>
+    <li>列表项 <span class="ui-li-count">75</span></li>
+    <li data-theme="a">总量 <span class="ui-li-count">100</span></li>
 </ul>
 ```
 
@@ -3443,15 +2320,13 @@ jQuery Mobile 允许你创建单个表单。与其他一样，表单和元素继
 
 拆分按钮（Split buttons）允许你在同一个列表项中设置两个独立的链接。要为这些拆分按钮创建一个独立的主题，你可以向 `listview ul` 元素添加 `data-split-theme` 属性：
 
-点击此处查看代码图片
-
 ```html
 <ul data-role="listview" data-inset="true" data-theme="e" data-split-theme="b">
-    <li
+    <li>
         <a href="#link1">列表项</a>
         <a href="#link1Alt">拆分示例</a>
     </li>
-    <li
+    <li>
         <a href="#link2">列表项</a>
         <a href="#link2Alt">拆分示例</a>
     </li>
@@ -3478,8 +2353,6 @@ jQuery Mobile 主题既易于使用又强大。每个组件都可以设置主题
 
 如之前介绍的，jQuery Mobile 包含一个名为 `mobileinit` 的初始化事件，它在 jQuery 的 `document.ready` 事件之前加载。这让你能够覆盖并扩展 jQuery Mobile 的默认选项，而这正是自定义的开始。要扩展 `mobileinit` 事件，你需要正确安排 JavaScript 文件的顺序。你的自定义 JavaScript 事件处理程序必须在 jQuery Mobile 加载之前且在框架加载之后包含：
 
-点击此处查看代码图片
-
 ```html
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 <script src="assets/js/custom-qm.js"></script>
@@ -3488,8 +2361,6 @@ jQuery Mobile 主题既易于使用又强大。每个组件都可以设置主题
 
 要扩展 `mobileinit` 事件，你必须先向它绑定一个匿名函数，以便在事件触发时执行你的自定义代码：
 
-点击此处查看代码图片
-
 ```javascript
 $(document).bind("mobileinit", function() {
     // 在此处覆盖全局选项
@@ -3497,8 +2368,6 @@ $(document).bind("mobileinit", function() {
 ```
 
 一旦你成功地为 `mobileinit` 事件绑定了回调函数，你就可以轻松地覆盖全局选项。`$.mobile` 对象是设置所有属性的起点。你将在这里覆盖影响网站运行方式的全局选项。要覆盖全局选项，你可以使用 jQuery 的 `extend` 方法来扩展 `$.mobile` 对象：
-
-点击此处查看代码图片
 
 ```javascript
 $(document).bind("mobileinit", function() {
@@ -3509,8 +2378,6 @@ $(document).bind("mobileinit", function() {
 ```
 
 或者，你可以直接通过 `$.mobile` 对象来覆盖全局选项：
-
-点击此处查看代码图片
 
 ```javascript
 $(document).bind("mobileinit", function() {
@@ -3525,8 +2392,6 @@ $(document).bind("mobileinit", function() {
 
 HTML5 `data-` 属性（例如 `data-role`）可以通过命名空间进行自定义。命名空间允许你在 `data-` 和 `-role` 部分之间添加一个自定义名称。这种属性对于自定义你的代码非常有用。当更多的第三方插件被开发并可能包含在项目中时，它可以防止命名冲突。用于自定义命名空间的 `$.mobile` 属性是 `ns`：
 
-点击此处查看代码图片
-
 ```javascript
 $(document).bind("mobileinit", function() {
     $.mobile.ns = "-";
@@ -3537,7 +2402,18 @@ $(document).bind("mobileinit", function() {
 
 选择自定义命名空间要求你在编码时就投入该命名空间。在编码期间，你将在标记中为任何 `data-` 属性都包含此自定义命名空间。再次，这不仅自定义了你的标记，在使用第三方插件时还可以防止命名冲突。这里是一个显示 `jquerymobiletv-` 命名空间的示例：
 
-点击此处查看代码图片
+```html
+<div data-jquerymobiletv-role="page" id="home">
+    <div data-jquerymobiletv-role="header">
+        <h1>jQueryMobile.tv</h1>
+    </div>
+    <div data-jquerymobiletv-role="content">
+        <p>Welcome to jQueryMobile.tv!</p>
+    </div>
+</div>
+```
+
+
 
 ```html
 <!DOCTYPE html>
@@ -3567,10 +2443,6 @@ $(document).bind("mobileinit", function() {
 </html>
 ```
 
-
-
-
-
 ```html
 <div data-jquerymobiletv-role="page">
     <div data-jquerymobiletv-role="header"><h1>页面名称</h1></div>
@@ -3578,7 +2450,7 @@ $(document).bind("mobileinit", function() {
     <div data-jquerymobiletv-role="footer">版权所有</div>
 </div>
 </body>
-</html
+</html>
 ```
 
 使用自定义命名空间的好处是不需要进行任何其他修改；代码的结果与使用默认命名空间运行 jQuery Mobile 网页的结果相同。
@@ -3617,7 +2489,7 @@ $(document).bind("mobileinit", function() {
 
 ```html
 <!DOCTYPE html>
-<html
+<html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -3632,7 +2504,7 @@ $(document).bind("mobileinit", function() {
         <div data-jquerymobiletv-role="header"><h1>页面名称</h1></div>
         <div data-jquerymobiletv-role="content">
             <ul data-jquerymobiletv-role="listview" id="my-list"></ul>
-        </div>>
+        </div>
         <div data-jquerymobiletv-role="footer">版权所有</div>
     </div>
     <script type="text/javascript">
@@ -3658,7 +2530,7 @@ $(document).bind("mobileinit", function() {
 
 `subPageKey` 是一个 URL 查询参数，用作 jQuery 组件生成的子页面的引用（这些组件在书中前面介绍过）。该参数的默认键为 `ui-page`。然而，可以通过 `subPageKey` 属性更改此键，该属性是 `$.mobile` 对象的一个属性。可以使用字符串值来更新此属性的值，该更改将反映在组件生成的子页面中。创建一个自定义的 `subPageKey`：
 
-例如，通过 `subPageKey` 属性更改此键，ui-page 就会变为 `my-page-key`
+例如，通过 `subPageKey` 属性更改此键，`ui-page` 就会变为 `my-page-key`
 
 你甚至可以使用级联样式表（CSS）选择器来选择包含自定义 `data-` 属性的特定 HTML 元素。例如，你可以选择一个 jQuery Mobile 页面元素并对其应用 CSS：
 
@@ -3674,9 +2546,7 @@ $(document).bind("mobileinit", function() {
 
 ### 使用激活页面和类
 
-在 jQuery Mobile 中，页面初始化是默认自动发生的。该框架包含一个名为 `autoInitializePage` 的属性，它决定了是否应该初始化网页。默认情况下，该属性的值设置为 `true`，因此当文档准备就绪时页面始终会被初始化。然而，通过扩展 `$.mobile` 对象...
-
-然而，通过扩展 `$.mobile` 对象，可以将此属性设置为 `false` 并在之后处理页面初始化。
+在 jQuery Mobile 中，页面初始化是默认自动发生的。该框架包含一个名为 `autoInitializePage` 的属性，它决定了是否应该初始化网页。默认情况下，该属性的值设置为 `true`，因此当文档准备就绪时页面始终会被初始化。然而，通过扩展 `$.mobile` 对象，可以将此属性设置为 `false` 并在之后处理页面初始化。
 
 你可以在其他脚本运行期间临时延迟页面初始化，这正是将 `autoInitializePage` 属性设置为 `false` 的完美场景：
 
@@ -3690,81 +2560,17 @@ $(document).bind("mobileinit", function() {
 });
 ```
 
-### 使用激活页面和类
-
-在 jQuery Mobile 中，页面初始化是默认自动发生的。该框架包含一个名为 `autoInitializePage` 的属性，它决定了是否应该初始化网页。默认情况下，该属性的值设置为 `true`，因此当文档准备就绪时页面始终会被初始化。然而，通过扩展 `$.mobile` 对象...
-
-### 使用激活页面和类
-
-在 jQuery Mobile 中，页面初始化是默认自动发生的。该框架包含一个名为 `autoInitializePage` 的属性，它决定了是否应该初始化网页。默认情况下，该属性的值设置为 `true`，因此当文档准备就绪时页面始终会被初始化。然而，通过扩展 `$.mobile` 对象...
-
-### 使用激活页面和类
-
-在 jQuery Mobile 中，页面初始化是默认自动发生的。该框架包含一个名为 `autoInitializePage` 的属性，它决定了是否应该初始化网页。默认情况下，该属性的值设置为 `true`，因此当文档准备就绪时页面始终会被初始化。然而，通过扩展 `$.mobile` 对象...
-
-### 使用激活页面和类
-
-在 jQuery Mobile 中，页面初始化是默认自动发生的。该框架包含一个名为 `autoInitializePage` 的属性，它决定了是否应该初始化网页。默认情况下，该属性的值设置为 `true`，因此当文档准备就绪时页面始终会被初始化。然而，通过扩展 `$.mobile` 对象...
-
-### 使用激活页面和类
-
-在 jQuery Mobile 中，页面初始化是默认自动发生的。该框架包含一个名为 `autoInitializePage` 的属性，它决定了是否应该初始化网页。默认情况下，该属性的值设置为 `true`，因此当文档准备就绪时页面始终会被初始化。然而，通过扩展 `$.mobile` 对象...
-
-### 使用激活页面和类
-
-在 jQuery Mobile 中，页面初始化是默认自动发生的。该框架包含一个名为 `autoInitializePage` 的属性，它决定了是否应该初始化网页。默认情况下，该属性的值设置为 `true`，因此当文档准备就绪时页面始终会被初始化。然而，通过扩展 `$.mobile` 对象...
-
-### 使用激活页面和类
-
-在 jQuery Mobile 中，页面初始化是默认自动发生的。该框架包含一个名为 `autoInitializePage` 的属性，它决定了是否应该初始化网页。默认情况下，该属性的值设置为 `true`，因此当文档准备就绪时页面始终会被初始化。然而，通过扩展 `$.mobile` 对象...
-
-### 使用激活页面和类
-
-在 jQuery Mobile 中，页面初始化是默认自动发生的。该框架包含一个名为 `autoInitializePage` 的属性，它决定了是否应该初始化网页。默认情况下，该属性的值设置为 `true`，因此当文档准备就绪时页面始终会被初始化。然而，通过扩展 `$.mobile` 对象...
-
-### 使用激活页面和类
-
-在 jQuery Mobile 中，页面初始化是默认自动发生的。该框架包含一个名为 `autoInitializePage` 的属性，它决定了是否应该初始化网页。默认情况下，该属性的值设置为 `true`，因此当文档准备就绪时页面始终会被初始化。然而，通过扩展 `$.mobile` 对象...
-
-### 使用激活页面和类
-
-在 jQuery Mobile 中，页面初始化是默认自动发生的。该框架包含一个名为 `autoInitializePage` 的属性，它决定了是否应该初始化网页。默认情况下，该属性的值设置为 `true`，因此当文档准备就绪时页面始终会被初始化。然而，通过扩展 `$.mobile` 对象...
-
-### 使用激活页面和类
-
-在 jQuery Mobile 中，页面初始化是默认自动发生的。该框架包含一个名为 `autoInitializePage` 的属性，它决定了是否应该初始化网页。默认情况下，该属性的值设置为 `true`，因此当文档准备就绪时页面始终会被初始化。然而，通过扩展 `$.mobile` 对象...
-
-### 使用激活页面和类
-
-在 jQuery Mobile 中，页面初始化是默认自动发生的。该框架包含一个名为 `autoInitializePage` 的属性，它决定了是否应该初始化网页。默认情况下，该属性的值设置为 `true`，因此当文档准备就绪时页面始终会被初始化。然而，通过扩展 `$.mobile` 对象...
-
-### 使用激活页面和类
-
-在 jQuery Mobile 中，页面初始化是默认自动发生的。该框架包含一个名为 `autoInitializePage` 的属性，它决定了是否应该初始化网页。默认情况下，该属性的值设置为 `true`，因此当文档准备就绪时页面始终会被初始化。然而，通过扩展 `$.mobile` 对象...
-
-### 使用激活页面和类
-
-（此处重复）
-
-在 jQuery Mobile 中，页面初始化是默认自动发生的。该框架包含一个名为 `autoInitializePage` 的属性，它决定了是否应该初始化网页。默认情况下，该属性的值设置为 `true`，因此当文档准备就绪时页面始终会被初始化。然而，通过扩展 `$.mobile` 对象...
-
-（注：由于输入文本中存在大量重复的段落，译文已根据逻辑提取核心翻译，并确保了 Markdown 格式的完整性。）
-
-
-
-
-
 图 12.2 显示了框架如何转换标记，以包含我们创建并对其应用 CSS 的新类。
 
 ![Image](img/jquery-12-2.jpg)
 
-图 12.2。框架根据全局配置设置插入的自定义活动页面类。
+图 12.2 框架根据全局配置设置插入的自定义活动页面类。
 
 另一个名为 `activeBtnClass` 的属性与 `activePageClass` 的工作原理完全相同。你可以在 `mobileinit` 回调中设置它。它可以包含任何字符串值，且该字符串值最终可以关联到包含在 CSS 文件中的自定义 CSS 类。`activePageClass` 和 `activeBtnClass` 属性唯一的区别在于，`activeBtnClass` 允许你对使用的任何按钮的活动状态进行样式设置。
 
-## 启用禁用 Ajax 导航
+## 启用/禁用 Ajax 导航
 
-默认情况下，使用 `$.mobile` 对象的 `ajaxEnabled` 属性将基于 Ajax 的导航设置为 `true`。然而，你可以在配置文件中此此设置为 `false`：
+默认情况下，使用 `$.mobile` 对象的 `ajaxEnabled` 属性将基于 Ajax 的导航设置为 `true`。然而，你可以在配置文件中将此设置为 `false`：
 
 点击此处查看代码图片
 
@@ -3838,14 +2644,16 @@ jQuery Mobile 框架易于使用，但不要被它的简单性欺骗了——幕
 
 ## 13. 挂钩事件
 
-jQuery Mobile 提供了你可以使用的自定义事件，用于扩展框架的功能，包括触摸、滚动、设备方向、页面过渡和页面初始化等。挂钩 jQuery 事件打开了通过基础设置无法实现的整个机会世界。了解网页在任何给定时间的状态可以提供一种你可用于扩展现有功能的控制水平。本章将向你展示如何挂钩到这些事件中的每一个。有许多触摸事件可以挂钩到 jQuery Mobile。请记住，这些事件仅对支持触摸的设备可用，因此桌面用户可能无法体验到这些事件或通过事件挂钩添加的任何自定义内容。尽管如此，触摸事件不会在桌面设备上引起错误：它们只是不会起，因为鼠标事件主导了桌面体验。这些事件可以触发一个包含任何 JavaScript 的回调函数。表 13.1 描述了通过 jQuery Mobile API 可的五个触摸事件。
+jQuery Mobile 提供了你可以使用的自定义事件，用于扩展框架的功能，包括触摸、滚动、设备方向、页面过渡和页面初始化等。挂钩 jQuery 事件打开了通过基础设置无法实现的整个机会世界。了解网页在任何给定时间的状态可以提供一种你可用于扩展现有功能的控制水平。本章将向你展示如何挂钩到这些事件中的每一个。有许多触摸事件可以挂钩到 jQuery Mobile。请记住，这些事件仅对支持触摸的设备可用，因此桌面用户可能无法体验到这些事件或通过事件挂钩添加的任何自定义内容。尽管如此，触摸事件不会在桌面设备上引起错误：它们只是不会起作用，因为鼠标事件主导了桌面体验。这些事件可以触发一个包含任何 JavaScript 的回调函数。表 13.1 描述了通过 jQuery Mobile API 可用的五个触摸事件。
 
-表 13.1. 触摸事件
+表 13.1 触摸事件
+
 ![Image](img/13tab01.jpg)
 
 表 13.2 描述了在表 13.1 中提到的 `swipe` 事件属性。
 
-表 13.2. swipe 属性
+表 13.2 swipe 属性
+
 ![Image](img/13tab02.jpg)
 
 要绑定这些触摸事件中的任何一个，你必须使用 `document.ready` 事件。一旦文档就绪，你就可以访问 HTML 元素并绑定你选择的触摸事件：
@@ -3891,19 +2699,15 @@ $(document).ready(function(){
 
 正如你所见，页面包含了一个 `listview`，其中包含一个类名为 `test-tap-hold` 的列表项。
 
-
-
-
-
 表 13.1 中的事件允许你将自定义代码挂接到移动网站的任何状态中。了解用户何时以及如何与屏幕交互，可以为你响应这些交互奠定基础。
 
-### 方向事件 (Orientation Events)
+### 方向事件
 
 jQuery Mobile 框架包含一个名为 `orientationchange` 的单一方向事件。每当设备垂直或水平旋转时，该事件就会触发（图 13.2）。
 
 ![Image](img/jquery-13-2.jpg)
 
-图 13.2。网页可以根据设备的方向垂直显示或水平显示。
+图 13.2 网页可以根据设备的方向垂直显示或水平显示。
 
 在旋转过程中，可以通过访问 `orientationchange` 事件中的 `orientation` 属性来确定设备的方向。该属性返回一个只读值：`portrait`（竖屏）或 `landscape`（横屏）。要挂钩 `orientationchange` 事件，必须将 `body` 绑定到该事件：
 
@@ -3932,15 +2736,13 @@ $(document).ready(function(){
 
 在文档就绪后手动触发该事件，使得在页面首次加载时自动确定方向成为可能，而在其他情况下这是不会发生的。方向值还会被添加到网页内的 `html` 元素中，因此可以通过 CSS 访问。这提供了一种通过 jQuery Mobile 和 CSS 通过所谓的“响应式设计”来响应设备方向的方法。
 
-***
-
-### 响应式设计 (Responsive Design)
+### 响应式设计
 
 随着如今市场上可用设备的激增，设计在所有不同格式下都能正常显示的网站变得越来越重要。响应式设计正如其名：根据设备格式显示内容。这包括设备尺寸、设备方向，甚至你的网站对桌面机器上浏览器窗口缩放的反应方式。实现响应式设计的常用方法是通过 CSS 媒体查询或简单地提供一个备用网站。jQuery Mobile 提供了一个自动响应的解决方案。
 
 换句话说，在任何给定时刻知道设备的方向有助于决定如何渲染内容的布局。有了这种能力，就没有必要为处理不同的设备而准备多个网站了。
 
-### 滚动事件 (Scroll Events)
+### 滚动事件
 
 jQuery Mobile 提供了两个在用户滚动网页时触发的滚动事件：`scrollstart` 和 `scrollstop`。当页面滚动开始时，触发 `scrollstart` 事件。与 `orientationchange` 事件一样，`scrollstart` 事件必须在文档就绪后绑定到 `body` 元素上：
 
@@ -4002,7 +2804,7 @@ function lazyLoad() {
 }
 ```
 
-### 页面过渡事件 (Page Transition Events)
+### 页面过渡事件
 
 想象一下，在页面过渡发生之前就知道它将要发生。此外，预先知道页面何时隐藏。通过页面过渡事件，这是可能的。jQuery Mobile 页面动画由页面过渡驱动。页面之间切换期间使用的动画在之前的章节中已经定义，但也与过渡的每一步都相关事件。事件会在每个页面过渡之前之后发生，并可以在此过程的任何时间执行自定义代码。如图 13.3 所示，有四个事件与页面过渡相关，并且按顺序发生。
 
@@ -4026,10 +2828,6 @@ $(document).ready(function() {
 });
 ```
 
-
-
-
-
 ```javascript
 pageshow: function(event, ui) {
     console.log('This page was just hidden: '+ ui.prevPage);
@@ -4039,8 +2837,7 @@ pagebeforehide: function(event, ui) {
 },
 pagehide: function(event, ui) {
     console.log('This page was just shown: '+ ui.nextPage);
-  }
-�});
+}
 });
 ```
 
@@ -4094,27 +2891,28 @@ $(document).ready(function() {
         },
         pagehide: function(event, ui) {
             console.log('This page was just shown: '+ ui.nextPage);
-            console.log('thethePage: +
-Previous););
-
+            console.log('thePreviousPage: '+ thePreviousPage);
+        }
+    });
+});
 ```
 
-如你所见，这种功能可能非常强大，但实现非常实现。页面过渡事件允许你在 jQuery Mobile 生命周期期间的任何时间点利用页面数据。
+如你所见，这种功能可能非常强大，但实现非常简单。页面过渡事件允许你在 jQuery Mobile 生命周期期间的任何时间点利用页面数据。
 
 ### 页面初始化与自定义组件
 
-jQuery Mobile 框架增强了 HTML 标记。这种标记增强发生在页面初始化时。页面初始化有三个步骤；它们按照 图 13.4 中定义的顺序发生。
+jQuery Mobile 框架增强了 HTML 标记。这种标记增强发生在页面初始化时。页面初始化有三个步骤；它们按照图 13.4 中定义的顺序发生。
 
 ![Image](img/jquery-13-4.jpg)
 
-图 13.4. jQuery Mobile 页面初始化的三个步骤。
+图 13.4 jQuery Mobile 页面初始化的三个步骤。
 
 `pagecreatebefore` 事件在页面插入到 DOM 时发生，在 jQuery Mobile 初始化插件并增强网页之前发生。`pagecreatebefore` 事件提供了一个在 jQuery Mobile 接管并进行增强之前向网页中添加标记的绝佳机会：
 
 点击此处查看代码图片
 
 ```javascript
-$('div#my-page').on('pagecreate', function(event) {
+$('div#my-page').on('pagecreatebefore', function(event) {
     console.log('This page is about to be created');
     $('div#my-page').attr('data-title', 'My Page');
 });
@@ -4147,8 +2945,8 @@ $('div#my-page').on('pagecreate', function(event) {
     });
     // pagecreate 事件用于初始化实例
     $(document).bind("pagecreate", function(e) {
-        $(document).trigger("logobreate");
-        return $("jqmData(role='logo')", e.target).logo();
+        $(document).trigger("logocreate");
+        return $(":jqmData(role='logo')", e.target).logo();
     });
 })(jQuery);
 ```
@@ -4163,6 +2961,8 @@ $('div#my-page').on('pagecreate', function(event) {
 
 框架还包含了 `pageinit` 方法，页面初始化过程的最后一步。此事件在页面被框架增强后触发，包含了所有现有和自定义组件的增强：
 
+点击此处查看代码图片
+
 ```javascript
 $('div#my-page').on('pageinit', function(event) {
     console.log('This page was just enhanced');
@@ -4171,21 +2971,17 @@ $('div#my-page').on('pageinit', function(event) {
 
 ## 总结
 
-
-
-
-
-钩入 jQuery Mobile 事件会开启一个机会世界。当你理解了如何钩入 jQuery Mobile 事件时，你可以创建你想象的任何任何自定义功能。从触摸事件到设备方向再到页面更改和过渡，所有事件都源自用户。了解何时以及如何对这些事件做出反应是无价的。
+钩入 jQuery Mobile 事件会开启一个机会世界。当你理解了如何钩入 jQuery Mobile 事件时，你可以创建你想象的任何自定义功能。从触摸事件到设备方向再到页面更改和过渡，所有事件都源自用户。了解何时以及如何对这些事件做出反应是无价的。
 
 ## 14. 使用暴露的方法
 
-jQuery Mobile 框架包含了许多在 `$.mobile` 对象上暴露的方法和属性。暴露一个方法意味着允许第三方对其进行访问。换句话说，jQuery Mobile 为第三方开发者提供了对在其整个框架中使用的某些内部方法的的访问权限。这些方法和属性让你能够利用一些 jQuery Mobile 的核心功能来创建让你的移动应用程序脱颖而出的定制功能。本章涵盖了切换页面、预加载页面以及许多实用方法和属性。
+jQuery Mobile 框架包含了许多在 `$.mobile` 对象上暴露的方法和属性。暴露一个方法意味着允许第三方对其进行访问。换句话说，jQuery Mobile 为第三方开发者提供了对在其整个框架中使用的某些内部方法的访问权限。这些方法和属性让你能够利用一些 jQuery Mobile 的核心功能来创建让你的移动应用程序脱颖而出的定制功能。本章涵盖了切换页面、预加载页面以及许多实用方法和属性。
 
 ### 程序化切换页面
 
 程序化切换页面意味着你可以使用代码在有或无用户交互的情况下引导浏览器跳转到另一个页面。jQuery Mobile 框架中暴露的方法之一是 `changePage`，它通过提供程序化切换页的方式，为标准链接和表单提交添加了功能。在基础 JavaScript 中，该方法的等效实现是 `document.location`，它有时用于实现程序化的页面切换。除了基本的页面切换外，通过框架的 API 程序化切换页面时，典型的 jQuery Mobile 视觉效果（如页面加载和页面过渡）也可用。`changePage` 方法在内容动态添加到页面时非常有用。让我们为第 13 章创建的“钩入事件”`logo` 组件添加一个 `click` 事件，这样你就可以使用 `changePage` 程序化切换页面了：
 
-点击此处代码图片
+点击此处查看代码图片
 
 ```javascript
 (function($){
@@ -4216,19 +3012,19 @@ jQuery Mobile 框架包含了许多在 `$.mobile` 对象上暴露的方法和属
 })(jQuery);
 ```
 
-有了 `changePage` 方法，组件可以在用户选择它时切换页面。在例示例中，预期的链接是一个 HTML 属性，因为组件有一个支持此选项的额外属性。通过此选项，组件的每个实例都可以在 `data-hyperlink` 属性中包含自己的自定义链接：
+有了 `changePage` 方法，组件可以在用户选择它时切换页面。在示例中，预期的链接是一个 HTML 属性，因为组件有一个支持此选项的额外属性。通过此选项，组件的每个实例都可以在 `data-hyperlink` 属性中包含自己的自定义链接：
 
-点击此处代码图片
+点击此处查看代码图片
 
 ```html
 <div data-role="logo" data-image="assets/img/trademark-jquerymobiletv.png" data-width="200" data-height="30" data-hyperlink="http://www.jquery.tv"></div>
 ```
 
-虽然这可能不是最实用的示例，但它向你展示了创建一个自定义组件来处理任何功能。`changePage` 方法至少一个名为 `to` 的参数，用于指定请求期间要切换的页面。`to` 参数的值可以是一个字符串（如本例所示），也可以是一个 jQuery 对象。`changePage` 还有其他用于自定义请求的可选参数。表 14.1. `changePage` 属性。
+虽然这可能不是最实用的示例，但它向你展示了创建一个自定义组件来处理任何功能。`changePage` 方法至少需要一个名为 `to` 的参数，用于指定请求期间要切换的页面。`to` 参数的值可以是一个字符串（如本例所示），也可以是一个 jQuery 对象。`changePage` 还有其他用于自定义请求的可选参数。表 14.1 `changePage` 属性。
 
 在 `options` 参数中添加属性非常简单，只需使用 JavaScript 对象 (JSON) 创建一个逗号分隔的属性列表并设置特定值即可。JSON 是一种轻量级数据格式，可用于系统或数据库之间交换数据。jQuery 在整个库中使用 JSON 来传递数据和设置值。这些可选参数可以提供复杂的功能。例如，你可以设置请求类型来提交值：
 
-点击此处代码图片
+点击此处查看代码图片
 
 ```javascript
 $(document).ready(function() {
@@ -4243,7 +3039,7 @@ $(document).ready(function() {
 
 这在多步骤过程中可能很有帮助，其中表单值从一个页面传递到另一个页面。以下示例包含一个带有电子邮件地址输入字段的表单。该表单没有提交按钮，而是包含一个 `id` 为 `next-btn` 的锚点元素，点击它时，会触发上一个示例中的 `changePage` 方法：
 
-点击此处代码图片
+点击此处查看代码图片
 
 ```html
 <!DOCTYPE HTML>
@@ -4272,7 +3068,7 @@ $(document).ready(function() {
 
 `changePage` 方法设置为切换到名为 `step2.php` 的页面，其中 `type` 属性设置为 post 请求，`data` 属性设置为表单序列数据。表单包含一个名为 `emailAddress` 的输入框；当页面切换时，`emailAddress` 输入的值会被发送到 `step2.php`：
 
-点击此处代码图片
+点击此处查看代码图片
 
 ```html
 <!DOCTYPE HTML>
@@ -4302,9 +3098,6 @@ $(document).ready(function() {
 </html>
 ```
 
-
-
-
 `step2.php` 页面包含了额外的表单输入字段，以便在用户正式提交表单之前获取其更多信息。这个示例可以用于新闻邮件的订阅表单，例如先收集电子邮件地址，然后在实际提交表单之前询问姓和名。`emailAddress` 通过 PHP 的 `$_POST` 数组从上一个页面传递并写入相应的字段中。
 
 `changePage` 方法是一种强大的手段，不仅可以处理页面切换，还可以处理表单提交。它允许你以许多有趣且独特的方式自定义页面切换。
@@ -4321,13 +3114,13 @@ $(document).ready(function() {
 });
 ```
 
-这种方法极其易用并具有巨大的处。接的示例嵌入了一个包含 `loadPage` 代码的 JavaScript 文件：
+这种方法极其易用并具有巨大的优势。接的示例嵌入了一个包含 `loadPage` 代码的 JavaScript 文件：
 
 点击此处查看代码图片
 
 ```html
 <!DOCTYPE HTML>
-<html
+<html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -4342,118 +3135,114 @@ $(document).ready(function() {
         <div data-role="header"><h1>Page Header</h1></div>
         <div data-role="content">
             <a href="page2.html">Link to another page</a>
-        </>
+        </div>
         <div data-role="footer">Copyright</div>
     </div>
 </body>
 </html>
 ```
 
-页面一一加载完成且文档就绪，`page2.html` 文件就会在点击任何链接之前在后台静默加载。当用户点击链接到 `page2.html` 页面的锚点元素时，该文件会立即显示。**图 14.1** 显示了通过 `loadPage` 方法加载页面后的标记示例。你可以看到，页面已经加载并插入到当前页面的底部。
+页面一加载完成且文档就绪，`page2.html` 文件就会在点击任何链接之前在后台静默加载。当用户点击链接到 `page2.html` 页面的锚点元素时，该文件会立即显示。图 14.1 显示了通过 `loadPage` 方法加载页面后的标记示例。你可以看到，页面已经加载并插入到当前页面的底部。
 
 ![Image](img/jquery-14-1.jpg)
 
-图 14.1。使用 `loadPage` 方法加载 page2.html 示例后的标记示例。如所示，页面已加载，但目前尚未显示。
+图 14.1 使用 `loadPage` 方法加载 page2.html 示例后的标记示例。如所示，页面已加载，但目前尚未显示。
 
-`loadPage` 方法包含一个必需的 `url` 参数，它可以是表示相对或绝对 URL 的字符串，也可以是一个对象。**表 14.2** 列出了 `loadPage` 请求中可用的属性。
+`loadPage` 方法包含一个必需的 `url` 参数，它可以是表示相对或绝对 URL 的字符串，也可以是一个对象。表 14.2 列出了 `loadPage` 请求中可用的属性。
 
-表 14.2。loadPage 属性 
+表 14.2 loadPage 属性
 
 ![Image](img/14tab02.jpg)
 
 ### 使用工具方法
 
-jQuery Mobile 具有多个内置工具方法，在开发网站时提供实用的功能。**表 14.3** 列出了该框架支持的当前工具方法以及每个方法的用途描述。
+jQuery Mobile 具有多个内置工具方法，在开发网站时提供实用的功能。表 14.3 列出了该框架支持的当前工具方法以及每个方法的用途描述。
 
-表 14.3。工具方法
+表 14.3 工具方法
 
 ![Image](img/14tab03.jpg)
 
 除了提到的工具方法外，还有 `$.mobile.activePage` 属性，它作为当前视图页面的引用。
 
-**表 14.4** 列出了与调用 `$.mobile.path.parseUrl` 方法返回的对象相关的属性。
+表 14.4 列出了与调用 `$.mobile.path.parseUrl` 方法返回的对象相关的属性。
 
-表 14.4。loadPage 属性
+表 14.4 parseUrl 返回对象属性
 
-![Image](img/14tab02.jpg)
+![Image](img/14tab04.jpg)
 
 ## 总结
 
-`loadPage` 方法包含一个必需的 `url` 参数，它可以是表示相对或绝对 URL 的字符串，也可以是一个对象。**表 14.2** 列出了 `loadPage` 请求中可用的属性。（等等，提供的文本似乎有重复/重叠，我将根据提供的的内容结构保持其格式。）
-
-
-
-
+`loadPage` 方法包含一个必需的 `url` 参数，它可以是表示相对或绝对 URL 的字符串，也可以是一个对象。表 14.2 列出了 `loadPage` 请求中可用的属性。
 
 数据库设置好后，访问网站并通过添加站点标题和创建管理员用户完成安装过程（图 15.3）。记住你创建此账户时使用的密码，因为在安装完成后你需要用到它。
 
 ![Image](img/jquery-15-3.jpg)
 
-图 15.3。WordPress 安装过程。
+图 15.3 WordPress 安装过程。
 
 大功告成！安装好 WordPress 后，你现在可以使用刚刚输入的用户名和密码登录 WordPress 管理区域了。在管理区域内，你可以完全管理你的网站。例如，你可以创建网页、博客文章和用户，还可以安装插件和主题。尽管如此，现在是时候为我们的示例网站设置 `jQuery Mobile` 主题了。
 
 ### 创建 jQuery Mobile 主题
 
-在 WordPress 中添加主题非常简单。你所做的就是下载、购买或创建一个主题，然后将其上传到 WordPress 站点内的 `/wp-content/themes/` 目录。一旦到达那里，你只需要激活该主题，大功告成了。接下来的示例使用了来自 Francis Robert 的 `jQuery Mobile` 主题，他是一位自由 Web 程序员，他拥有我目前为止发现的功能最强大的 `jQuery Mobile` WordPress 主题。你可以在他博客的 WordPress 分类中找到它：[`frobert.com`](http://frobert.com。（感谢，Francis！看到开发者们互相分享优秀的东西真是太棒了。）
+在 WordPress 中添加主题非常简单。你所做的就是下载、购买或创建一个主题，然后将其上传到 WordPress 站点内的 `/wp-content/themes/` 目录。一旦到达那里，你只需要激活该主题，大功告成了。接下来的示例使用了来自 Francis Robert 的 `jQuery Mobile` 主题，他是一位自由 Web 程序员，他拥有我目前为止发现的功能最强大的 `jQuery Mobile` WordPress 主题。你可以在他博客的 WordPress 分类中找到它：`frobert.com`。（感谢，Francis！看到开发者们互相分享优秀的东西真是太棒了。）
 
-一旦你下载了 `jQuery Mobile` 主题，就可以像之前提到的那样将其到 `/wp-content/themes/` 目录。上传主题后，登录 WordPress 管理区域，并从左侧边栏访问“外观 > 主题”（Appearance > Themes）页面。到达后，选择 `jQuery Mobile` 主题下方的“激活”（Activate）链接（图 15.4）。
+一旦你下载了 `jQuery Mobile` 主题，就可以像之前提到的那样将其上传到 `/wp-content/themes/` 目录。上传主题后，登录 WordPress 管理区域，并从左侧边栏访问“外观 > 主题”（Appearance > Themes）页面。到达后，选择 `jQuery Mobile` 主题下方的“激活”（Activate）链接（图 15.4）。
 
 ![Image](img/jquery-15-4.jpg)
 
-图 15.4。激活 jQuery Mobile WordPress 主题。
+图 15.4 激活 jQuery Mobile WordPress 主题。
 
-激活后，WordPress 网站将包含 `jQuery Mobile` 主题，该主题默认使用预构建的“a”主题。要更改此，你可以从 WordPress 管理区域左侧边栏访问“外观 > 编辑器”（Appearance > Editor）页面。在编辑器页面的右侧边栏中，有一个名为 `preferences.php` 的文件。点击此文件名，它将加载到页面中间的文本区域中。你可以编辑此文件并保存更改。图 15.5 显示了 WordPress 管理区域中 `jQuery Mobile` 主题的编辑模式的貌。编辑 `$jqtheme` 值将分配相应的 `jQuery Mobile` 主题并更改网站的外观。
+激活后，WordPress 网站将包含 `jQuery Mobile` 主题，该主题默认使用预构建的“a”主题。要更改此，你可以从 WordPress 管理区域左侧边栏访问“外观 > 编辑器”（Appearance > Editor）页面。在编辑器页面的右侧边栏中，有一个名为 `preferences.php` 的文件。点击此文件名，它将加载到页面中间的文本区域中。你可以编辑此文件并保存更改。图 15.5 显示了 WordPress 管理区域中 `jQuery Mobile` 主题的编辑模式的样子。编辑 `$jqtheme` 值将分配相应的 `jQuery Mobile` 主题并更改网站的外观。
 
 ![Image](img/jquery-15-5.jpg)
 
-图 15.5。（左）配置 jQuery Mobile WordPress 主题。
+图 15.5 配置 jQuery Mobile WordPress 主题。
 
 一旦安装、激活并配置完成，`jQuery Mobile` 主题会自动将你的 WordPress 网站的前端转换为 `jQuery Mobile` WordPress 网站。图 15.6 显示了带有 Francis Robert 的 `jQuery Mobile` 主题的默认 WordPress 安装示例。这些是非常强大的功能。
 
 ![Image](img/jquery-15-6.jpg)
 
-图 15.6。（右）带有 Francis Robert 的 jQuery Mobile WordPress 主题的默认 WordPress 安装。
+图 15.6 带有 Francis Robert 的 jQuery Mobile WordPress 主题的默认 WordPress 安装。
 
-图 15.6 还说明了当访问者从首页选择一个链接列表项时发生的发生顺序。首页包含了一篇标题为“Hello world!”的默认博客文章。通过选择此文章作为链接列表项，页面将跳转到博客文章，可以在那里阅读完整的描述和评论；甚至可以从该页面发表评论。
+图 15.6 还说明了当访问者从首页选择一个链接列表项时发生的顺序。首页包含了一篇标题为“Hello world!”的默认博客文章。通过选择此文章作为链接列表项，页面将跳转到博客文章，可以在那里阅读完整的描述和评论；甚至可以从该页面发表评论。
 
 ### 添加博客文章和页面
 
-要创建更多页面和博客文章，你只需要登录 WordPress 管理区域。登录后，你可以通过左侧边栏的导航管理你所有的内容。要创建新的博客文章，请选择 `文章 > 写写`（Posts > Add New）（图 15.7）。
+要创建更多页面和博客文章，你只需要登录 WordPress 管理区域。登录后，你可以通过左侧边栏的导航管理你所有的内容。要创建新的博客文章，请选择 `文章 > 写文章`（Posts > Add New）（图 15.7）。
 
 ![Image](img/jquery-15-7.jpg)
 
-图 15.7。（左）创建新的博客文章。
+图 15.7 创建新的博客文章。
 
 从此网页，你可以添加标题和描述，并选择分类和标签。你可以点击右上角模块中的蓝色“发布”（Publish）按钮将博客文章保存为草稿或将其发布。一旦发布，你可以通过访问 WordPress 网站的首页来查看博客文章（图 15.8）。
 
 ![Image](img/jquery-15-8.jpg)
 
-图 15.8。（右）查看新的博客文章。
+图 15.8 查看新的博客文章。
 
 要在 WordPress 中创建网页，请访问左侧边栏的“页面 > 新页面”（Pages > Add New）（图 15.9）。和博客文章一样，你可以添加标题和描述，但对于页面，还可以选择父页面并设置页面在网站主菜单中显示的顺序。完成后，点击右上角模块中的蓝色“发布”（Publish）按钮发布网页。
 
 ![Image](img/jquery-15-9.jpg)
 
-图 15.9。（左）创建新的网页。
+图 15.9 创建新的网页。
 
 当新页面发布时，它将出现在网站顶部的主菜单中（图 15.10）。
 
 ![Image](img/jquery-15-10.jpg)
 
-图 15.10。（右）查看新网页。
+图 15.10 查看新网页。
 
 默认情况下，博客文章按日期列在首页。要更改首页显示的内容，访问“设置 > 阅读”（Settings > Reading），将首页设置为一个网页，并将博客文章设置为一个特定的网页。在这种情况下，使用了标题为“博客”的页面（图 15.11）。
 
 ![Image](img/jquery-15-11.jpg)
 
-图 15.11。（左）设置首页和博客。
+图 15.11 设置首页和博客。
 
 完成后，标题为“首页”的页面将成为首页，标题为“博客”的页面将是列出博客文章的页面（图 15.12）。
 
 ![Image](img/jquery-15-12.jpg)
 
-图 15.12。（右）WordPress 网站。
+图 15.12 WordPress 网站。
 
 ## 安装移动 Drupal 主题
 
@@ -4461,82 +3250,79 @@ Drupal 是另一个内容管理系统（CMS），驱动着数百万网站和应�
 
 ### 入门
 
-
-
-
-一旦你设置好了 Web 服务器，就不需要上传 Drupal 文件，然后下载一个 MySQL 数据库来配置 Drupal。有很多免费的 MySQL 应用程序供你下载并用于数据库。本示例使用了适用于 Mac OS 的 `Sequel Pro`，你可以在 [www.sequelpro.com](http://www.sequelpro.com) 找到它。对于本章的示例，我们将使用 `Sequel Pro` 创建名为 `jqm-drupal` 的数据库，如图图 16.1 所示。
+一旦你设置好了 Web 服务器，就需要上传 Drupal 文件，然后创建一个 MySQL 数据库来配置 Drupal。有很多免费的 MySQL 应用程序供你下载并用于数据库。本示例使用了适用于 Mac OS 的 `Sequel Pro`，你可以在 `www.sequelpro.com` 找到它。对于本章的示例，我们将使用 `Sequel Pro` 创建名为 `jqm-drupal` 的数据库，如图 16.1 所示。
 
 ![Image](img/jquery-16-1.jpg)
 
-图 16.1。添加了一个名为 `jqm-drupal` 的数据库以存储 Drupal 数据。
+图 16.1 添加了一个名为 `jqm-drupal` 的数据库以存储 Drupal 数据。
 
-数据库设置完成后，访问网站并完成六步安装过程。第一步是选择配置（图 16.2）。除非你完全清楚自己想要什么，否则请选择 `Standard` 选项，因为它包含了常用功能，可以防止你在 Drupal 配置上浪费时间去重复造轮。
+数据库设置完成后，访问网站并完成六步安装过程。第一步是选择配置（图 16.2）。除非你完全清楚自己想要什么，否则请选择 `Standard` 选项，因为它包含了常用功能，可以防止你在 Drupal 配置上浪费时间去重复造轮子。
 
 ![Image](img/jquery-16-2.jpg)
 
-图 16.2。为 Drupal 安装过程选择配置。
+图 16.2 为 Drupal 安装过程选择配置。
 
 现在是选择语言的时间（图 16.3）。默认情况下，英语是唯一的选项，但你可以点击此网页上的链接来了解如何使用其他语言安装 Drupal。
 
 ![Image](img/jquery-16-3.jpg)
 
-图 16.3。为 Drupal 安装过程选择语言。
+图 16.3 为 Drupal 安装过程选择语言。
 
 选择语言后，系统将验证技术要求。如果技术要求未通过验证，将显示一个问题列表。在移动到下一个安装步骤之前，你需要解决所有问题。问题通常是需要调整的简单文件权限。一旦验证过程完成，下一步是数据库配置（图 16.4）。这一步包括选择数据库类型，在本例中为 MySQL。输入数据库登录信息，包括数据库名称 `jqm-drupal` 以及你创建数据库时使用的数据库用户名和密码。
 
 ![Image](img/jquery-16-4.jpg)
 
-图 16.4。（左）Drupal 安装过程的数据库配置步骤。
+图 16.4 Drupal 安装过程的数据库配置步骤。
 
 现在是输入站点信息的时间（图 16.5），例如站点名称和用于自动电子邮件（如注册信息）的站点电子邮件地址，以及管理员账户的用户名、电子邮件地址和密码。记住这些登录信息非常重要：你需要它们来登录 Drupal 管理区域。
 
 ![Image](img/jquery-16-5.jpg)
 
-图 16.5。（右）Drupal 安装过程的站点配置步骤。
+图 16.5 Drupal 安装过程的站点配置步骤。
 
 最后，你将看到一个祝贺屏幕，并查看你的新 Drupal 网站（图 16.6）。
 
 ![Image](img/jquery-16-6.jpg)
 
-图 16.6。Drupal 安装过程已成功完成。
+图 16.6 Drupal 安装过程已成功完成。
 
 安装 Drupal 后，你可以使用刚刚输入的用户名和密码登录 Drupal 管理区域。在管理区域内，你可以完全管理你的网站：你可以创建网页、博客文章和用户，还可以安装模块和主题。现在是为我们的示例网站设置 jQuery Mobile 主题了。
 
-字体 使用 jQuery Mobile 为 Drupal 主题化
+### 使用 jQuery Mobile 为 Drupal 主题化
 
 在 Drupal 中添加 jQuery Mobile 主题相当简单，但没有 WordPress 那么容易。Drupal 需要安装两个项目才能使用 jQuery Mobile 主题：jQuery Mobile 模块和 `jQM` 主题。
 
 ### 安装 jQuery Mobile 模块
 
-创建 jQuery Mobile 模块是为了增强主题并提供管理功能，例如选择框架版本、设置色块（swatches），甚至对单个菜单和其他布局元素进行主题化。你可以在 [`drupal.org/project/jquerymobile`](http://drupal.org/project/jquerymobile) 找到更多该模块的信息。下载后，需要将此模块放在 Drupal 安装的 `sites/all/modules/` 目录下。在模块文件夹内有一个名为 `README.txt` 的文件，列出了完成安装的步骤（图 16.7）。
+创建 jQuery Mobile 模块是为了增强主题并提供管理功能，例如选择框架版本、设置色块（swatches），甚至对单个菜单和其他布局元素进行主题化。你可以在 `drupal.org/project/jquerymobile` 找到更多该模块的信息。下载后，需要将此模块放在 Drupal 安装的 `sites/all/modules/` 目录下。在模块文件夹内有一个名为 `README.txt` 的文件，列出了完成安装的步骤（图 16.7）。
 
 ![Image](img/jquery-16-7.jpg)
 
-图 16.7。jQuery Mobile 模块安装过程。
+图 16.7 jQuery Mobile 模块安装过程。
 
 此过程的第一步是在 `sites/all` 目录下创建一个名为 `libraries` 的目录（图 16.8）。
 
 ![Image](img/jquery-16-8.jpg)
 
-图 16.8。创建一个 `libraries` 目录。
+图 16.8 创建一个 `libraries` 目录。
 
 在该目录下，创建一个名为 `jquery` 的目录（图 16.9）。
 
 ![Image](img/jquery-16-9.jpg)
 
-图 16.9。创建一个 `jquery` 目录。
+图 16.9 创建一个 `jquery` 目录。
 
 将 jQuery Mobile 框架和 jQuery 库下载并复制到你刚刚创建的 `jquery` 目录中（图 16.10）。
 
 ![Image](img/jquery-16-10.jpg)
 
-图 16.10。（左）jQuery Mobile 框架和 jQuery 库。
+图 16.10 jQuery Mobile 框架和 jQuery 库。
 
 在 `jquery` 目录下创建一个名为 `custom` 的目录（图 16.11）。
 
 ![Image](img/jquery-16-11.jpg)
 
-图 16.11。（右）创建一个 `custom` 目录。
+图 16.11 创建一个 `custom` 目录。
 
 在 `settings.php` 文件中，你可以添加以下变量：
 
@@ -4560,38 +3346,35 @@ $conf['jquerymobile_errorMessage'] = '';
 
 ![Image](img/jquery-16-12.jpg)
 
-图 16.12。激活 jQuery Mobile 模块。
+图 16.12 激活 jQuery Mobile 模块。
 
 ### 安装 jQuery Mobile 主题
 
-在 jQuery Mobile 模块安装、配置并激活后，该是主题的时间了。你可以从 [`drupal.org/project/jqm`](http://drupal.org/project/jqm) 下载 `jQM` 主题。此主题将网站的前端转换为 jQuery Mobile 体验。该主题需要 `jquerymobile` 模块，因此在使用此主题之前下载并安装它是重要的。幸运的是我们刚刚完成了，现在是设置主题了。
+在 jQuery Mobile 模块安装、配置并激活后，该是主题的时间了。你可以从 `drupal.org/project/jqm` 下载 `jQM` 主题。此主题将网站的前端转换为 jQuery Mobile 体验。该主题需要 `jquerymobile` 模块，因此在使用此主题之前下载并安装它是重要的。幸运的是我们刚刚完成了，现在是设置主题了。
 
 下载主题后，将其放在 Drupal 安装的 `sites/all/themes/jqm/` 目录下。要激活主题，进入 Drupal 管理区域的 Appearance 页面并选择主题下方的 `Enable` 链接（图 16.13）。
 
 ![Image](img/jquery-16-13.jpg)
 
-图 16.13。（左）激活 jQuery Mobile 主题。
+图 16.13 激活 jQuery Mobile 主题。
 
 默认情况下主题不会包含任何页面或文章，因此当你访问网站时将看到登录屏幕。然而，你应该看到 jQuery Mobile 主题现在已激活并驱动着页眉、页脚、文本框和按钮的样式（图 16.14）。
 
 ![Image](img/jquery-16-14.jpg)
 
-图 16.14。（右）带有 jQuery Mobile 主题的默认 Drupal 安装。
+图 16.14 带有 jQuery Mobile 主题的默认 Drupal 安装。
 
-
-
-
-在安装了 jQuery Mobile 模块和主题后，你可以自定义各种设置。主题允许你为不同的表单元素配置许多色块（swatches）。如果你访问 Drupal 管理区域的“Appearance”页面并点击 jQuery Mobile 主题旁边的“Settings”链接，你将在 JQM Settings 部分看到一组选项，如图图 16.15 所示。
+在安装了 jQuery Mobile 模块和主题后，你可以自定义各种设置。主题允许你为不同的表单元素配置许多色块（swatches）。如果你访问 Drupal 管理区域的“Appearance”页面并点击 jQuery Mobile 主题旁边的“Settings”链接，你将在 JQM Settings 部分看到一组选项，如图 16.15 所示。
 
 ![Image](img/jquery-16-15.jpg)
 
-图 16.15。（左）Drupal 安装中的 jQuery Mobile 主题设置。
+图 16.15 Drupal 安装中的 jQuery Mobile 主题设置。
 
-你还可以在 jQuery Mobile 模块中配置设置。要编辑这些设置，请访问“Modules”页面，向下滚动找到 jQuery Mobile 模块，并选择模块旁边的“Configuration”链接。在该页面，你将看到一个名为 `File Settings` 的区域，如图 16.16 所示。如果你选择此标题，它将展开并显示文本框，你可以使用这些框来设置 jQuery 库和 jQuery Mobile 框架的版本，以及上传到 Drupal 安装的文件的路径位置，如图图 16.10 所示。
+你还可以在 jQuery Mobile 模块中配置设置。要编辑这些设置，请访问“Modules”页面，向下滚动找到 jQuery Mobile 模块，并选择模块旁边的“Configuration”链接。在该页面，你将看到一个名为 `File Settings` 的区域，如图 16.16 所示。如果你选择此标题，它将展开并显示文本框，你可以使用这些框来设置 jQuery 库和 jQuery Mobile 框架的版本，以及上传到 Drupal 安装的文件的路径位置，如图 16.10 所示。
 
 ![Image](img/jquery-16-16.jpg)
 
-图 16.16。（右）Drupal 安装中的 jQuery Mobile 模块设置。
+图 16.16 Drupal 安装中的 jQuery Mobile 模块设置。
 
 ### 添加内容
 
@@ -4599,31 +3382,31 @@ $conf['jquerymobile_errorMessage'] = '';
 
 ![Image](img/jquery-16-17.jpg)
 
-图 16.17。（左）在 Drupal 中创建博客文章。
+图 16.17 在 Drupal 中创建博客文章。
 
-默认情况下，这篇博客文章出现在你的 Drupal 网站首页上（[图 16.18）。
+默认情况下，这篇博客文章出现在你的 Drupal 网站首页上（图 16.18）。
 
 ![Image](img/jquery-16-18.jpg)
 
-图 16.18。（右）带有博客文章的 Drupal 站点。
+图 16.18 带有博客文章的 Drupal 站点。
 
-要创建一个页面，返回“Content”，选择“Add Content”并选择 Basic page。使用页面上的 Web 表单创建你的页面。在示例中，我们正在创建一个名为“Home”的页面，它最终将成为网站的首页（[图 16.19]）。
+要创建一个页面，返回“Content”，选择“Add Content”并选择 Basic page。使用页面上的 Web 表单创建你的页面。在示例中，我们正在创建一个名为“Home”的页面，它最终将成为网站的首页（图 16.19）。
 
 ![Image](img/jquery-16-19.jpg)
 
-图 16.19. 在 Drupal 中创建一个基本页面。
+图 16.19 在 Drupal 中创建一个基本页面。
 
-你可以使用此新页面作为 Drupal 安装的首页。要将某个页面定义为首页，请访问“Configuration”页面，选择“Site information”，并向下滚动直到看到“Default front page”。在这里，你会看到你的 Drupal 网站的 URL，并带有一个文本框，用于输入你想要使用的页面的节点 ID（node ID）。在查看任何基本页面时，你可以在浏览器地址栏中找到此节点 ID；在本示例中，我们的节点 ID 是 1，因此我们在文本框中输入了 `node/1`（[图 16.20]）。
+你可以使用此新页面作为 Drupal 安装的首页。要将某个页面定义为首页，请访问“Configuration”页面，选择“Site information”，并向下滚动直到看到“Default front page”。在这里，你会看到你的 Drupal 网站的 URL，并带有一个文本框，用于输入你想要使用的页面的节点 ID（node ID）。在查看任何基本页面时，你可以在浏览器地址栏中找到此节点 ID；在本示例中，我们的节点 ID 是 1，因此我们在文本框中输入了 `node/1`（图 16.20）。
 
 ![Image](img/jquery-16-20.jpg)
 
-图 16.20. 在 Drupal 中设置自定义首页。
+图 16.20 在 Drupal 中设置自定义首页。
 
-就是这样！[图 16.21]]显示了带有自定义首页的最终 Drupal 网站。
+就是这样！图 16.21 显示了带有自定义首页的最终 Drupal 网站。
 
 ![Image](img/16fig21.jpg)
 
-图 16.21. 带有自定义首页的最终 jQuery Mobile Drupal 网站。
+图 16.21 带有自定义首页的最终 jQuery Mobile Drupal 网站。
 
 ## 总结
 
@@ -4641,6 +3424,8 @@ $conf['jquerymobile_errorMessage'] = '';
 
 点击此处查看代码图片
 
+
+
 ```
 function mobile_detect(){
     $mobile_devices = '/(alcatel|amoi|android|avantgo|blackberry|benq|cell|cricket|docomo|elaine|htc|iemobile|iphone|ipad|ipaq|ipod|j2me|java|midp|mini|mmp|mobi|motorola|nec|nokia|palm|panasonic|philips|phone|sagem|sharp|smartphone|symbian|telus|vodafone|wap|webos|wireless|xda|xoom|zte)/i';
@@ -4651,13 +3436,14 @@ function mobile_detect(){
     }
 }
 ```
-*(注：此处原文代码中存在一些语法错误，如多余的括号和引号，在翻译时已保持其原始逻辑或进行了微调以符合可读性，但根据指令“代码块不需要翻译”的原则，此处保留了代码的逻辑结构。)*
+
+*(注：此处原文代码中存在一些语法错误，如多余的括号和引号，在翻译时已保持其原始逻辑或进行了微调以符合可读性，但根据指令“代码块不需要翻译”的原则，此处保留了代码的逻辑结构。*
 
 ### 世界上有多少种移动设备类型？
 
-示例中的正则表达式并没有涵盖所有的移动设备类型。今天有成百上千不同的可以上网的类型。管道符号（|`）表示设备之间的“或”关系。
+示例中的正则表达式并没有涵盖所有的移动设备类型。今天有成百上千不同的可以上网的类型。管道符号（`|`）表示设备之间的“或”关系。
 
-你如何决定将哪些设备包含在测试中？坦率地说，只有你自己知道答案，因为这取决于你的移动网站受众。你可以找到许多在线来源。其中一个来源是 [useragentstring.com](https://www.useragentstring.com)，该网站定期更新且非常准确。你可以在 [www.useragentstring.com/pages/Browserlist/](http://www.useragentstring.com/pages/Browserlist/) 找到它。
+你如何决定将哪些设备包含在测试中？坦率地说，只有你自己知道答案，因为这取决于你的移动网站受众。你可以找到许多在线来源。其中一个来源是 [`useragentstring.com`](https://www.useragentstring.com)，该网站定期更新且非常准确。你可以在 [`www.useragentstring.com/pages/Browserlist/`](http://www.useragentstring.com/pages/Browserlist/) 找到它。
 
 ### 识别浏览器
 
@@ -4669,11 +3455,7 @@ function mobile_detect(){
 
 虽然学习正则表达式可能枯燥且可怕，但它可以是你编程工具箱中非常有价值的一部分。幸运的是，网上有很多资源。以下是一些推荐的网站：
 
-
-
-
-
-[www.regular-expressions.info/](http://www.regular-expressions.info/) 涵盖了开发、测试和使用正则表达式的广泛材料。
+[`www.regular-expressions.info/`](http://www.regular-expressions.info/) 涵盖了开发、测试和使用正则表达式的广泛材料。
 
 [`regexlib.com/`](http://regexlib.com/) 提供了一个可搜索的常用正则表达式库——非常适合不想自己写表达式的开发者！
 
@@ -4730,7 +3512,7 @@ if(mobile_device) {
 }
 ```
 
-如你所见，你正在使用正则表达式来查找用户代理字符串的匹配项。JavaScript 在其 `navigator` 对象中收集用户代理信息，你可以在 `navigator.userAgent` 中访问该信息。
+如你所见，你正在使用正则表达式来查找用户代理字符串的匹配项。JavaScript 在其 `navigator` 对象中收集用户代器信息，你可以在 `navigator.userAgent` 中访问该信息。
 
 在运行 Safari 浏览器的 iPhone 4 上，用户代理字符串可能看起来如下所示：
 
@@ -4776,7 +3558,7 @@ switch(true) {
 
 ### 使用 jQuery 检测浏览器功能
 
-既然你已经知道如何测试特定的移动设备，你就可以在网站中构建功能，允许为那些设备提供自定义信息和交互。当你需要知道是哪个移动设备正在访问你的网站时，使用纯 JavaScript 检测设备是更好的选择。你可以进一步使用 jQuery 判断是否支持某些功能。
+既然你已经知道如何测试特定的移动设备，你就可以在网站中构建功能，允许为那些设备提供自定信息和交互。当你需要知道是哪个移动设备正在访问你的网站时，使用纯 JavaScript 检测设备是更好的选择。你可以进一步使用 jQuery 判断是否支持某些功能。
 
 从技术上讲，你无法用 jQuery 进行设备检测，但你可以判断浏览器是否支持某些功能。
 
@@ -4799,8 +3581,11 @@ if(!box_model) {
 这里是可以使用 `.support` 检测的功能部分列表：
 
 - `ajax` 如果浏览器支持 `XMLHttpRequest`，则为 `true`。
+
 - `cors` 如果浏览器支持跨域 `XMLHttpRequest`，则为 `true`。
+
 - `opacity` 如果浏览器支持此 CSS 属性，则为 `true`（所有 IE 浏览器将返回 false）。
+
 - `submitBubbles` 如果提交事件可以向上 DOM 树冒泡，则为 true。
 
 要找到其余 jQuery `.support` 属性的完整列表，请访问 [`api.jquery.com/jQuery.support/`](http://api.jquery.com/jQuery.support/)。
@@ -4812,10 +3597,6 @@ if(!box_model) {
 你现在拥有许多很好的工具来配置和测试正则表达式，并深入研究用户代理字符串。掌握了这些工具，为任何网站开发移动设备检测都是很容易的。
 
 下一个问题是，“我如何在尽可能多的移动设备上测试我的网站？”我们大多数人负担不起购买所有的移动设备，因此我们将把注意力转向移动设备模拟器。接下来就是这个！
-
-
-
-
 
 # 18. 使用模拟器进行测试
 
@@ -4853,7 +3634,7 @@ if(!box_model) {
 
 以下是你在网上找到的一些较好的模拟器：
 
--   **位于 [www.mobilephoneemulator.com/](http://www.mobilephoneemulator.com/) 的 Cowemo**
+-   **位于 [`www.mobilephoneemulator.com/`](http://www.mobilephoneemulator.com/) 的 Cowemo**
 
 这种移动模拟器的很棒之处在于它提供了几种不同的智能手机布局。菜单允许你轻松地在移动设备和方向之间切换，如 `图 18.1` 所示。
 
@@ -4869,7 +3650,7 @@ if(!box_model) {
 
 如果你在测试布局，这是一个极佳的工具。你可以快速在设备之间切换。设备以正确的屏幕宽度和高度渲染（有一种模式可以放大屏幕尺寸以便关注细节），这使得它非常适合捕捉不同设备上网站的截图。
 
--   **位于 [www.opera.com/developer/tools/mini/](http://www.opera.com/developer/tools/mini/) 的 Opera Mini**
+-   **位于 [`www.opera.com/developer/tools/mini/`](http://www.opera.com/developer/tools/mini/) 的 Opera Mini**
 
 虽然 Opera Mini 可能不是最广泛使用的浏览器之一，但有越来越多的人选择下载并使用它，而不是移动设备自带的浏览器。在线测试站点（`图 18.3`）整洁且易用。
 
@@ -4879,7 +3660,7 @@ if(!box_model) {
 
 注意 Opera Mini 解析层级样式表 (`CSS`) 的方式。有时，复杂的布局渲染效果并非你预期的那样。如果你在测试时需要这些用户代理字符串，它可以正确报告，但你必须将网站上传到服务器进行测试。
 
--   **位于 [www.mobilewebsitesu.com/tester/](http://www.mobilewebsitesu.com/tester/) 的 Mobile Websites 4U**
+-   **位于 [`www.mobilewebsitesu.com/tester/`](http://www.mobilewebsitesu.com/tester/) 的 Mobile Websites 4U**
 
 这种模拟器很棒，但也有一些缺点，例如仅提供四种屏幕布局并继承父浏览器的用户代理字符串。它还使用了桌面浏览器滚动条，可能会影响你的网站布局。查看 `图 18.4`，你就会看到滚动条占据了屏幕空间。
 
@@ -4897,11 +3678,7 @@ if(!box_model) {
 
 对于大多数在线模拟器，你只需要将你的移动网站上传到 Web 服务器，导航到在线模拟器，并在模拟器的地址栏中输入 URL（许多要求你在 URL 前加上 `http://` 前缀）。如果一切顺利，你将在模拟器的屏幕上看到你的移动网站。
 
-
-
-
-
-有一点会显而易见：你无法像使用真实设备那样与桌面模拟器进行交互。如果你正在使用通常支持触控的设备进行测试，你无法在设备屏幕上用手指执行滚动或缩放等相同的操作。你必须使用连接到桌面环境的鼠标和键盘来滚动、点击并以其他方式与模拟器交互。
+有一点会显而易见：你无法像使用真实设备那样与桌面模拨器进行交互。如果你正在使用通常支持触控的设备进行测试，你无法在设备屏幕上用手指执行滚动或缩放等相同的操作。你必须使用连接到桌面环境的鼠标和键盘来滚动、点击并以其他方式与模拟器交互。
 
 如果你设计的移动端网站依赖于用户代理字符串（user agent string）或功能检测，那么在桌面设备上也将缺失一些关键功能。你可以使用一些解决方案（参见侧边栏“**伪造用户代理字符串**”）来辅助你的测试。你也可以判断桌面版浏览器的功能集是否与移动浏览器的功能集匹配。重要的是要将在线模拟器加载到尽可能不同的浏览器中，这样你就可以查看浏览器的功能是否支持你为移动端网站或应用程序编写的程序了。
 
@@ -4932,7 +3709,9 @@ if(!box_model) {
 以下是一些你可能想要考虑的实验室：
 
 - Keynote DeviceAnywhere ([www.keynotedeviceanywhere.com](http://www.keynotedeviceanywhere.com)) 支持超过 2000 台设备。
+
 - Paca Mobile Center ([www.pacamobilecenter.com](http://www.pacamobilecenter.com)) 位于法国，拥有丰富的移动设备。
+
 - Perfecto Mobile ([www.perfectomobile.com](http://www.perfectomobile.com)) 目前支持约 500 台设备，但具有激进的定价方案。
 
 你通常有两种选择：有些实验室将设备连接到由测试人员电脑控制的服务器；另一些则允许你通过远程访问的摄像头监控测试。后一种方法需要现场测试人员，由测试人员与设备交互。有些实验室甚至提供自动化脚本测试。
@@ -4980,7 +3759,9 @@ if(!box_model) {
 ## 索引
 
 `$()` 函数，与 HTML 元素使用 7
+
 `^` (脱字符)，在正则表达式中使用 46
+
 `-` (连字符)
 
 在命名空间结尾使用 178
@@ -4990,15 +3771,14 @@ if(!box_model) {
 ### A
 
 `<a` `href>` 标记，48–49
+
 折叠面板，创建 101–102
+
 `activeBtnClass` 属性，186
+
 `activePageClass` 属性，修改 184–186
 
 a-e 色样
-
-
-
-
 
 示例，162–163, 167
 
@@ -5270,7 +4050,7 @@ dash (`-`)
 
 用于命名空间的结尾，178
 
-与自定义命名空间一起，25
+与自定�命名空间一起，25
 
 `data-` 属性
 
@@ -5282,154 +4062,247 @@ dash (`-`)
 
 自定义，178
 
-
-
-
-
 ## 属性
 
 - `data-role` 自定义属性, 25, 32–33
+
 - 解释, 24
+
 - 防止命名冲突, 24–25
+
 - 值, 24
+
 - `data-collapsed` 属性, 使用, 100
+
 - `data-divider-theme`, 使用, 168
+
 - `data-filter` 属性, 添加, 122–123
+
 - `data-filter-placeholder` 属性, 使用, 123–124
+
 - `data-filtertext` 属性, 添加, 130–131
+
 - `data-hyperlink` 属性, 配合 `changePage` 方法使用, 211
+
 - `data-prefetch` 属性, 使用, 52
+
 - `data-rel` 属性
+
     - 设置为 back, 51
+
     - 设置为 `dialog`, 62–63
+
 - `data-role` 属性
+
     - 用于按钮, 69–70
+
 - `data-title` 属性, 43
+
 - `data-theme` 属性
+
     - 应用于表单元素, 166
+
     - 描述, 25
+
     - 在 `listview` 中, 166–167
+
     - 与内容区域分离, 165
+
     - 与链列表使用, 107
 
 ## 值
 
 - `collapsible` 值, 99
+
 - `collapsible-set` 值, 101–102
+
 - `list-divider` 值, 114
+
 - `listview` 值, 106
+
 - `navbar` 值, 85
 
 ## 组件
 
 - `data-split-icon` 属性, 使用, 113
+
 - `data-split-theme`, 配合 `listview` 使用, 170
 
 ## 页面与过渡
 
 - 定义页面, 32
+
 - 描述, 25
+
 - 头部值, 76
+
 - 默认页面过渡, 修改, 188–189
+
 - `defaultDialogTransition` 属性, 目标, 188
+
 - `defaultPageTransition` 属性, 目标, 188
+
 - `delay` 方法, 13
+
 - 删除按钮, 与保存结合, 80
+
 - `dequeue` 方法, 13
+
 - 桌面模拟器, 测试, 270。 *另需阅* 使用模拟器测试
+
 - 检测设备. *参见* 设备检测
 
 ## 设备检测
 
 - 使用 JavaScript, 257–260
+
 - 使用 PHP, 254–256
 
 ## 对话过渡
 
 - 修改, 188–189
+
 - `pop`, 188
+
 - 对话框创建, 62–68
+
 - 作为外部网页, 64–65
+
 - `flip` 过渡, 68
+
 - `max-width`, 67
+
 - 多页, 62–63
+
 - 覆盖宽度, 67
+
 - `pop` 过渡, 68
+
 - 作为弹出态窗, 66–68
+
 - 单页, 65
+
 - `slidedown` 过渡, 68
+
 - 过渡, 68
+
 - `ui-dialog` 类, 67
+
 - dialog-window.html 文件, 64–65
+
 - 显示, 响应式设计, 196
+
 - 显示内容, 23
+
 - 为 `div.foo` jQuery 对象绑定 `click` 事件, 8–9
+
 - 点击, 13
+
 - `<!DOCTYPE>` 声明, 20
+
 - `document.ready` 事件, 配合 touch 事件, 193
+
 - 文档, 等待加载, 11–12
 
 ## CMS 与配置
 
 - Drupal. *参见* CMS（内容管理系统); WordPress
+
 - 添加内容, 248–249
+
 - 博客文章, 248
+
 - 创建创建页面, 248–249
-- 自定义设置, 247
+
+- 自定设置, 247
+
 - 数据库配置, 240
+
 - 定义首页, 248–249
+
 - 下载, 238
+
 - 安装, 238–241
+
 - 安装 jQuery Mobile 主题, 246
+
 - `jquery` 目录, 243–244
+
 - jQuery Mobile 模块, 242–245
+
 - jQuery Mobile 主题, 246
+
 - 语言选择, 239
+
 - `libraries` 目录, 243
+
 -节点 ID, 248–249
+
 - 配置文件选择, 239
+
 - Sequel Pro for Mac OS, 238
+
 - 站点配置, 240
+
 - 使用 jQuery Mobile 进行主题化, 242–247
 
 ### E
 
 - 邮件文件夹, 使用计数气泡, 116–117
+
 - `emailAddress;` 输入, 215–216
+
 - 模拟器, 测试, 270
+
 - “加载错误”消息, 58
 
 ### F
 
 - `fade` 过渡, 55
+
 - `fieldset` `data-role`, 148
+
 - `filterCallback` 选项, 使用, 126
+
 - 过滤项, 123
+
 - `filter.js` 文件, 126–128
+
 - Firefox 扩展, 269
+
 - flip 切换开关, 154–155
+
 - 制作, 154
+
 - 字体样式, 添加, 92–93
+
 - 按钮设置, [80]
+
 - 页脚组件, 应用于, 162
+
 - 页脚工具栏, 82
+
 - 使用, 82
+
 - 表单元素主题化, 165–170
 
 ## 表单元素
 
 - 具有 `id` 为 `next-btn` 的锚链接, 213–214
+
 - 应用 `data-theme` 于, 166
+
 - 更改样式, 166
+
 - 复选框, 141–145
+
 - `emailAddress;` 输入, 215–216
+
 - flip 切换开关, 154–155
+
 - 单选框, 141–145
+
 - 下拉菜单, 146–151
-
-
-
-
 
 滑块，152–154
 
@@ -5705,132 +4578,223 @@ Ajax 的标记，47
 
 使用，116–117
 
-
-
-
-
 # 列表项，过滤，130–131
 
 ### 列表
+
 - 计数气泡，115–119
+
 - 自定义，112–119
+
 - 图标，118–119
+
 - 链接的，106–111
+
 - 搜索过滤栏，122–123
+
 - 分离按钮，112–113
+
 - 缩略图，117–118
 
 ## `listview`
+
 - 添加 `id` 用于，126–128
+
 - 计数气泡主题，169
+
 - `data-divider-theme`，168
+
 - `data-split-theme`，170
+
 - 在 `data-theme` 中，166–167
+
 - 使用带有“e”色块的 `data-theme`，167
+
 - 配合搜索过滤文本，125–128
 
 ## `listview` 主题
-- 自定义，167
+
+- 自定，167
+
 - 使用列表项覆盖，167
 
 ## 加载消息，自定义，58
+
 - 加载网页，197–199
+
 - `loadingMessage` 属性，设置，58
 
 ## `loadPage` 方法
+
 - 标记，219
+
 - `url` 参数，218
+
 - 使用，53, 217–220
 
 ## `loadPage`方法参数
+
 - `data`，53
+
 - `loadMsgDelay`，53
+
 - `pageContainer`，53
+
 - `reloadPage`，53
+
 - `role`，53
+
 - `type`，53
 
 ## `loadPage` 属性
+
 - `data`，218
+
 - `loadMsgDelay`，218
+
 - `pageContainer`，218
+
 - `reloadPage`，218
+
 - `role`，218
+
 - `type`，218
 
 ## `logo` 控件
+
 - 创建，204–205
+
 - `height` 选项，204–205
+
 - `image` 选项，204–205
+
 - `width` 选项，204–205
 
 ### M
+
 消息
+
 - 加载，58
+
 - 抑制显示，58
+
 - 方法与函数，10。 *另见* 暴露的方法; 实用方法
+
 - 压缩的优势，6
+
 - 众测，271
+
 - 移动设备，列表，254
+
 `$.mobile` 对象
+
 - `activePageClass` 属性，184
+
 - 扩展，180
+
 - `loadPage` 方法，217–220
+
 - `mobileinit` 事件，177
+
 - `pageKey` 属性，183
+
 - `$.mobile` 属性，177
+
 - 移动端模拟器，265–267
+
 - 分离，270
+
 - 在线，265–267
+
 - 使用，264
+
 - 移动端网页开发，264 *另见* 网页
+
 - Chrome 开发者工具，37
+
 - `data` 属性，35–36
+
 - 结构，34–37
+
 - 使用 HTML，35
+
 -  模拟器，37
+
 - 移动端基础，256
+
 - `$.mobile` 属性，221
+
 - 使用 JavaScript，250–256
+
 - 页面，254
+
 - `$.mobile` 固定工具栏，220
+
 - 显示工具栏，220
+
 - 加载消息，220 *另见* 方法
+
 - `$.mobile` 对象，177
+
 - 回调函数，176
+
 - 处理器，176
+
 - 扩展，176–177
+
 - 全局属性，177
+
 - 设置，177
+
 - 更新，177
+
 - 配合搜索过滤，124–125
+
 - `$.mobile.path.absoluteUrl` 方法，220
+
 - `$.mobile.path.relativeUrl` 方法，220
+
 - `$.mobile.path.sameDomain` 方法，220
+
 - `$.mobile.path.makePathAbsolute` 方法，220
+
 - `$.mobile.path.makeUrlAbsolute` 方法，220
+
 - `$.mobile.path.parseUrl` 方法，220
+
 - 权限，221
+
 - 目录，221
+
 - 域名，221
+
 - 文件名，221
+
 - 散值，221
+
 - 主机，221
+
 - 主机名，221
+
 - href，221
+
 - hrefNo，221
+
 - hrefSearch，221
+
 - 密码，221
+
 - 路径名，221
+
 - 端口，221
+
 - 协议，221
+
 - 搜索，221
+
 - 用户，221
+
 - 用户名，221
-
-
-
-
 
 数字模式，使用,135
 
@@ -6108,10 +5072,6 @@ URL 重定向,256
 
 网页,255
 
-
-
-
-
 # Perfecto Mobile, 269
 
 # 响应式设计，考虑到, 196
@@ -6121,132 +5081,234 @@ URL 重定向,256
 ## S
 
 ### 保存按钮。*另见* 按钮
+
 - 添加到 header 元素，78–80
+
 - 与删除 (Delete) 结合，80
+
 - 脚本，包括，6
 
 ### 滚动事件 (scroll events)
+
 - 懒加载效果，197–199
+
 - `scrollstart`, 197
+
 - `scrollstop`, 197
 
 ### SDKs (软件开发包)
+
 - Android，270
+
 - 益处，270
+
 - BlackBerry，270
+
 - XCode，270
 
 ### 创建搜索过滤栏，122–125
+
 - 搜索过滤文本变化，124
+
 - 自定义格式化的 `listview`，125–128
+
 - `mobileinit` 事件，124–125, 130
+
 - 更新，124
 
 ### 搜索过滤器 (search filters)
+
 - 自定义回调函数，129–130
+
 - 自定义，126–131
+
 - `defaultSearch` 函数，128–129
+
 - `filterCallback` 选项，126
+
 - `listview` 的 `id`，126–128
+
 - 记录文本，129
+
 - `pageinit` 事件，126–128
+
 - 使用 `searchValue` 测试，129
 
 ### 选择菜单 (select menus), 146–151
+
 - 动作序列，146
+
 - 在 `controlgroup` 中，149
+
 - `corners` 选项，150
+
 - 在 `fieldcontain` 中，147
+
 - 格式化，147
+
 - 分组，148–149
+
 - 水平分组，149
+
 - `icon` 选项，150
+
 - `iconpos` 选项，150
+
 - `iconshadow` 选项，150
+
 - `initSelector` 选项，150
+
 - `inline` 选项，150
+
 - 方法，151
+
 - `mini` 选项，150
+
 - `nativeMenu` 选项，150
+
 - `open` 方法，151
+
 - 选项，150
+
 - `overlayTheme` 选项，150
+
 - `preventFocusZoom` 选项，150
+
 - `shadow` 选项，150
+
 - `theme` 选项，150
+
 - 语义 HTML，20。*另见* HTML 元素
 
 ### Sequel Pro for Mac OS
+
 - 下载，228
+
 - 与 Drupal 使用，238
+
 - 与 WordPress 使用，228
+
 - 模拟器，265。*另见* 使用模拟器测试
+
 - 在线查找，265–267
 
 ### Mobilizer, 270
+
 - 在线，265–267
+
 - 使用，264
+
 - 单页模板。*另见* HTML5 模板; 多页模板
 
 ### 基于 Ajax 的导航，45
+
 - 描述，45
+
 - 对话框，65
+
 - hashtag 标签，45–46
+
 - 历史，45–46
+
 - 链接到多页模板，46
+
 - 预加载页面，54
+
 - `slide` 切换，188
+
 - 使用，55
+
 - `slidedown` 切换，使用，55
+
 - 配合对话框使用，68
+
 - 滑块，152–154
+
 - 创建，152
+
 - `disable` 方法，154
+
 - `disabled` 选项，153
+
 - `enable` 方法，154
+
 - 事件，154
+
 - 填充高，153
+
 - 与 flip 切换，155
+
 - `highlight` 选项，153
+
 - 方法，154
+
 - 选项，153
+
 - `refresh` 方法，154
+
 - `trackTheme` 选项，153
+
 - `slideup` 切换，使用，55
+
 - 特殊特效，应用，12–14
+
 - 拆分列表。*另见* 按钮
+
 - 默认，113
+
 - 创建，112–113
+
 - 带有齿轮图标，113
+
 - 伪造 user 字符串，269
+
 - step2.php 页面，`emailAddress` 输入，215–216
+
 - Submit 按钮，70
+
 - 子页面，引用，183
+
 - 自定义 `subPageUrlKey`，183
+
 - `ui-page` 参数，183
+
 - `.support` 方法
+
 - `ajax` 功能，260
+
 - `cors` 功能，260
+
 - 查找，265–267
+
 - `opacity` 功能，260
+
 - 列表，260
+
 - `submit` 功能，260
+
 - a，215–216
+
 - a，215–216
+
 - 页脚，215
+
 - 页头，215
+
 - 复制，215
+
 - 默认值，215
+
 - 用于，215
+
 - 用于，215
+
 - 水平，215
+
 - 水平，215
+
 - 垂直，215
+
 - 垂直，215
-
-
-
-
 
 ## `preventFocusZoom` 选项, 138–139
 
@@ -6265,6 +5327,7 @@ URL 重定向,256
 ## `textinput` 元素
 
 - `disable` 方法, 139
+
 - `enable` 方法, 139
 
 ## theme 选项, 138
@@ -6278,13 +5341,21 @@ URL 重定向,256
 ## 主题色板 (swatches)
 
 - a-e, 158–159, 162–163
+
 - 应用于页脚组件， 162
+
 - 应用于页眉组件， 162
+
 - 在表单元素上更改， 166
+
 - 复制， 159
+
 - 定制， 158, 160
+
 - 默认值， 158
+
 - 更新， 158
+
 - 使用， 158–160
 
 ThemeRoller 工具，160。另另 色板
@@ -6292,353 +5363,655 @@ ThemeRoller 工具，160。另另 色板
 ## 主题
 
 - 添加到 WordPress, 231–232
+
 - 定义， 158
+
 - Drupal 的 jQuery Mobile, 246
+
 - 组件主题化。另请 内容主题化; 表单元素主题化
+
 - 按钮， 161–162
+
 - 内容， 163–164
+
 - 列表， 166–170
+
 - 页面， 161–162
+
 - 工具栏， 161–162
+
 - `$(this)` 元素，使用， 9–10, 12
+
 - 缩略图，添加到列表项， 117–118
+
 - 切换开关，交互序列， 155
+
 - 工具栏组件， 33–34
+
 - 工具栏主题化组件， 161–162
 
 ## 工具栏
 
 - 固定， 83
+
 - 页脚， 82
+
 - 全屏， 83–84
+
 - 页眉， 76–77
+
 - 定位， 83–84
+
 - 更新位置， 84
 
 ## 触摸事件
 
 - 绑定， 193–194
+
 - `document.ready` 事件， 193
+
 - `swipe` (滑动), 192
+
 - `swipeleft` (左滑), 192
+
 - `swiperight` (右滑), 192
+
 - `tap` (点击), 192
+
 - `taphold` (长按), 192–193
+
 - `.test-tap-hold` 类， 193–194
+
 - 渡效果，应用到链接， 189
+
 - true/false 功能， 154–155
 
 ### U
 
 - `ui-bar-a` 类，前缀，使用， 92, 98
+
 - `ui-block` 类，前缀，使用， 90
+
 - `ui-btn-icon-right` 类， 108
+
 - `.ui-dialog` 类，使用， 67
+
 - `ui-grid` 前缀，使用， 90–91
+
 - `ui-grid-a` 类，前缀，使用， 90
+
 - `ui-grid-c` 类，前缀，使用， 97
+
 - `ui-li-count` 类，使用， 115
+
 - `ui-li-icon` 类，使用， 118–119
+
 - `ui-listview` 类，使用， 107
+
 - `ui-page-active` 元素， 184
+
 - `ui-title` 类，配合工具栏使用， 77
+
 - 用户代理信息，获取， 254
+
 - 用户代理字符串，伪造， 269
+
 - 用户配置，修改， 78–80
+
 - 工具方法。另请 公开方法; 方法
+
 - `$.mobile.activepage` 属性， 221
+
 - `jqmData`, 220
+
 - `jqmRemoveData`, 220
+
 - `$.mobile.base`, 220
+
 - `$.mobile.fixedToolbars.hide`, 220
+
 - `$.mobile.fixedToolbars.show`, 220
+
 - `$.mobile.hidePageLoadingMsg`, 220
+
 - `$.mobile.path.isAbsoluteUrl`, 220
+
 - `$.mobile.path.isRelativeUrl`, 220
+
 - `$.mobile.path.isSameDomain`, 220
+
 - `$.mobile.path.makePathAbsolute`, 220
+
 - `$.mobile.path.makeUrlAbsolute`, 220
+
 - `$.mobile.path.parseUrl`, 220–221
+
 - `$.mobile.showPageLoadingMsg`, 220
+
 - `$.mobile.silentScroll`, 220 使用，222
 
 ### V
 
 - `vclick` 事件，使用 `bind` 方法， 46
+
 - 版本，压缩后的源码， 6
+
 - `viewport` meta 标签属性添加， 22 描述， 21
+
 - `height` 属性，在 HTML5 模板中， 23
+
 - `initial-scale` 属性， 22–23
+
 - `maximum-scale` 属性， 23
+
 - `minimum-scale` 属性， 23
+
 - `user-scalable` 属性， 23
+
 - `width` 属性， 22–23
 
 ### W
 
 - Web 主机，为 WordPress 选择， 228 网页。另请 移动网页; 页面过渡
+
 - `activeBtnClass` 属性，添加到 WordPress， [233-235], 233–235
+
 - 更改默认过渡， 188–189
+
 - 缓存， 52–54
+
 - 程序化更改， 210–216
+
 - 在 Drupal 中创建， 248–249
+
 - 水平显示， 195–196
+
 - 链接， 44
+
 - 加载， 197–199
+
 - 静默加载， 217–220
+
 - 不显示加载， 217–220
+
 - 预加载， 52–54
+
 - 引用 `id` 值，作为独立页面， 44
+
 - 单页模板， 42
+
 - `slide` 默认过渡， 188
+
 - `.support` 属性， 260
+
 - `ui-page-active` 元素， 184
+
 - 用户代理信息， 254
+
 - 垂直显示， 195–196
+
 - 在 WordPress 中查看， 234
+
 - 等待加载， 11–12
 
 ## 网站
 
 - Cowemo 在线模拟器， 265–266
+
 - Firefox Modify Headers 插件， 269
+
 - jQuery Mobile 框架， 30
+
 - Keynote DeviceAnywhere, 269
+
 - Mob4Hire 众测， 271
+
 - Mobile Websites 4U 模拟器， 267
+
 - mobilephoneemulator.com, 265
 
-
-
-
-
 - Mobilizer 预览工具, 21
+
 - Mobilizer 模拟器, 270
+
 - Mozilla Firefox Modify Headers 插件, 269
+
 - 在线模拟器, 265–267
+
 - Opera Mini 在线模拟器, 266–267
+
 - Paca Mobile Center, 269
+
 - Perfecto Mobile, 269
+
 - 正则表达式, 255
+
 - 适用于 Mac OS 的 Sequel Pro, 228
+
 - 模拟器, 265–267
+
 - 世界万网联盟 (W3C), 269
+
 - 小组件，自定义, 204–206. 参见 可折叠内容组件;jQuery Mobile 小组件
+
 - WordPress. 参见 CMS（内容管理系统) Drupal
+
 - 添加主题到, 231–232
+
 - 博客文章, 233–235
+
 - 更改主题, 232
+
 - 创建网页, 233–235
+
 - 创建网站, 228
+
 - 数据存储, 228
+
 - 数据库配置变量, 229
+
 - 数据库连接, 229
+
 - 数据库登录数据, 229
+
 - `DB_HOST` 变量, 229
+
 - `DB_NAME` 变量, 229
+
 - `DB_PASSWORD` 变量, 229
+
 - `DB_USER` 变量, 229
+
 - 描述, 227
+
 - “Hello world!”博客文章, 232
+
 - 安装, 228–230
+
 - jqm-wp 数据库, 228
+
 - `$jqtheme` 值, 232
+
 - jQuery Mobile 主题, 231
+
 - 在列出博客文章, 234–235
+
 - 保存博客文章, 233
+
 - 适用于 Mac OS 的 Sequel Pro, 228
+
 - 设置首页, 235
+
 - 查看博客文章, 233
+
 - 查看网页, 234
+
 -  主机, 228
+
 - `wp-config.php` 文件, 229
+
 - 世界万网联盟 (W3C), 269
+
 - `wp-config.php` 文件，内容, 229
+
 - 遵循 WWW 盒模型, 259–260
 
 ### X
+
 - XCode SDK, 270
+
 - XMLHttpRequest, 在网页中使用, 36–37
 
 ### Y
+
 - 添加是/否功能, 154–155
 
-
-
-
-
 ![图片](img/pub01.jpg)
-![图片](img/006pro01.jpg)](#ch01.html_p006pro01a)
-![图片](img/008pro01.jpg)](#ch01.html_p008pro01a)
-![图片](img/009pro01.jpg)](#ch01.html_p009pro01a)
-![图片](img/010pro01.jpg)](#ch01.html_p010pro01a)
-![图片](img/010pro02.jpg)](#ch01.html_p010pro02a)
-![图片](img/011pro01.jpg)](#ch01.html_p011pro01a)
-![图片](img/011pro02.jpg)](#ch01.html_p011pro02a)
-![图片](img/012pro01.jpg)](#ch01.html_p012pro01a)
-![图片](img/012pro02.jpg)](#ch01.html_p012pro02a)
-![图片](img/013pro01.jpg)](#ch01.html_p013pro01a)
-![图片](img/014pro01.jpg)](#ch01.html_p014pro01a)
-![图片](img/015pro01.jpg)](#ch01.html_p015pro01a)
-![图片](img/016pro01.jpg)](#ch01.html_p016pro01a)
-![图片](img/020pro01.jpg)](#ch02.html_p020pro01a)
-![图片](img/022pro01.jpg)](#ch02.html_p022pro01a)
-![图片](img/022pro02.jpg)](#ch02.html_p022pro02a)
-![图片](img/024pro01.jpg)](#ch02.html_p024pro01a)
-![图片](img/026pro01.jpg)](#ch02.html_p026pro01a)
-![图片](img/030pro01.jpg)](#ch03.html_p030pro01a)
-![图片](img/031pro01.jpg)](#ch03.html_p031pro01a)
-![图片](img/032pro01.jpg)](#ch03.html_p032pro01a)
-![图片](img/034pro01.jpg)](#ch03.html_p034pro01a)
-![图片](img/035pro01.jpg)](#ch03.html_p035pro01a)
-![图片](img/042pro01.jpg)](#ch04.html_p042pro01a)
-![图片](img/044pro01.jpg)](#ch04.html_p044pro01a)
-![图片](img/046pro01.jpg)](#ch04.html_p046pro01a)
-![图片](img/049pro01.jpg)](#ch04.html_p049pro01a)
-![图片](img/050pro01.jpg)](#ch04.html_p050pro01a)
-![图片](img/052pro01.jpg)](#ch04.html_p052pro01a)
-![图片](img/053pro01.jpg)](#ch04.html_p053pro01a)
-![图片](img/054pro01.jpg)](#ch04.html_p054pro01a)
-![图片](img/054pro02.jpg)](#ch04.html_p054pro02a)
-![图片](img/055pro01.jpg)](#ch04.html_p055pro01a)
-![图片](img/055pro02.jpg)](#ch04.html_p055pro02a)
-![图片](img/056pro01.jpg)](#ch04.html_p056pro01a)
-![图片](img/056pro02.jpg)](#ch04.html_p056pro02a)
-![图片](img/056pro03.jpg)](#ch04.html_p056pro03a)
-![图片](img/056pro04.jpg)](#ch04.html_p056pro04a)
-![图片](img/058pro01.jpg)](#ch04.html_p058pro01a)
-![图片](img/058pro02.jpg)](#ch04.html_p058pro02a)
-![图片](img/058pro03.jpg)](#ch04.html_p058pro03a)
-![图片](img/062pro01.jpg)](#ch04.html_p062pro01a)
-![图片](img/064pro01.jpg)](#ch04.html_p064pro01a)
-![图片](img/065pro01.jpg)](#ch04.html_p065pro01a)
-![图片](img/066pro01.jpg)](#ch04.html_p066pro01a)
-![图片](img/067pro01.jpg)](#ch04.html_p067pro01a)
-![图片](img/068pro01.jpg)](#ch04.html_p068pro01a)
-![图片](img/069pro01.jpg)](#ch04.html_p069pro01a)
-![图片](img/069pro02.jpg)](#ch04.html_p069pro02a)
-![图片](img/070pro01.jpg)](#ch04.html_p070pro01a)
-![图片](img/072pro01.jpg)](#ch04.html_p072pro01a)
-![图片](img/073pro01.jpg)](#ch04.html_p073pro01a)
-![图片](img/077pro01.jpg)](#ch04.html_p077pro01a)
-![图片](img/078pro01.jpg)](#ch04.html_p078pro01a)
-![图片](img/080pro01.jpg)](#ch04.html_p080pro01a)
-![图片](img/081pro01.jpg)](#ch04.html_p081pro01a)
-![图片](img/082pro01.jpg)](#ch04.html_p082pro01a)
-![图片](img/083pro01.jpg)](#ch04.html_p083pro01a)
-![图片](img/084pro01.jpg)](#ch04.html_p084pro01a)
-![图片](img/084pro02.jpg)](#ch04.html_p084pro02a)
-![图片](img/085pro01.jpg)](#ch04.html_p085pro01a)
-![图片](img/086pro01.jpg)](#ch04.html_p086pro01a)
-![图片](img/090pro01.jpg)](#ch04.html_p090pro01a)
-![图片](img/091pro01.jpg)](#ch04.html_p091pro01a)
-![图片](img/092pro01.jpg)](#ch04.html_p092pro01a)
-![图片](img/093pro01.jpg)](#ch04.html_p093pro01a)
-![图片](img/095pro01.jpg)](#ch04.html_p095pro01a)
-![图片](img/097pro01.jpg)](#ch04.html_p097pro01a)
-![图片](img/099pro01.jpg)](#ch04.html_p099pro01a)
-![图片](img/100pro01.jpg)](#ch04.html_p100pro01a)
-![图片](img/100pro02.jpg)](#ch04.html_p100pro02a)
-![图片](img/102pro01.jpg)](#ch04.html_p102pro01a)
-![图片](img/106pro01.jpg)](#ch08.html_p106pro01a)
-![图片](img/107pro01.jpg)](#ch08.html_p107pro01a)
-![图片](img/109pro01.jpg)](#ch08.html_p109pro01a)
-![图片](img/109pro02.jpg)](#ch08.html_p109pro02a)
-![图片](img/111pro01.jpg)](#ch08.html_p111pro01a)
-![图片](img/112pro01.jpg)](#ch08.html_p112pro01a)
-![图片](img/114pro01.jpg)](#ch08.html_p114pro01a)
-![图片](img/115pro01.jpg)](#ch08.html_p115pro01a)
-![图片](img/116pro01.jpg)](#ch08.html_p116pro01a)
-![图片](img/117pro01.jpg)](#ch08.html_p117pro01a)
-![图片](img/118pro01.jpg)](#ch08.html_p118pro01a)
-![图片](img/122pro01.jpg)](#ch08.html_p122pro01a)
-![图片](img/123pro01.jpg)](#ch08.html_p123pro01a)
-![图片](img/125pro01.jpg)](#ch08.html_p125pro01a)
-![图片](img/126pro01.jpg)](#ch08.html_p126pro01a)
-![图片](img/126pro02.jpg)](#ch08.html_p126pro02a)
-![图片](img/127pro01.jpg)](#ch08.html_p127pro01a)
-![图片](img/128pro01.jpg)](#ch08.html_p128pro01a)
-![图片](img/128pro02.jpg)](#ch08.html_p128pro02a)
-![图片](img/129pro01.jpg)](#ch08.html_p129pro01a)
-![图片](img/129pro02.jpg)](#ch08.html_p129pro02a)
-![图片](img/129pro03.jpg)](#ch08.html_p129pro03a)
-![图片](img/129pro04.jpg)](#ch08.html_p129pro04a)
-![图片](img/140pro01.jpg)](#ch08.html_p140pro01a)
-![图片](img/140pro02.jpg)](#ch08.html_p140pro02a)
-![图片](img/141pro01.jpg)](#ch08.html_p141pro01a)
-![图片](img/142pro01.jpg)](#ch08.html_p142pro01a)
-![图片](img/143pro01.jpg)](#ch08.html_p143pro01a)
-![图片](img/144pro01.jpg)](#ch08.html_p144pro01a)
-![图片](img/145pro01.jpg)](#ch08.html_p145pro01a)
-![图片](img/145pro02.jpg)](#ch08.html_p145pro02a)
-![图片](img/146pro01.jpg)](#ch08.html_p146pro01a)
-![图片](img/147pro01.jpg)](#ch08.html_p147pro01a)
-![图片](img/148pro01.jpg)](#ch08.html_p148pro01a)
-![图片](img/152pro01.jpg)](#ch10.html_p152pro01a)
-![图片](img/152pro02.jpg)](#ch10.html_p152pro02a)
-![图片](img/153pro01.jpg)](#ch10.html_p153pro01a)
-![图片](img/153pro02.jpg)](#ch10.html_p153pro02a)
-![图片](img/154pro01.jpg)](#ch10.html_p154pro01a)
-![图片](img/154pro02.jpg)](#ch10.html_p154pro02a)
-![图片](img/154pro03.jpg)](#ch10.html_p154pro03a)
-![图片](img/154pro04.jpg)](#ch10.html_p154pro04a)
-![图片](img/158pro01.jpg)](#ch10.html_p158pro01a)
-![图片](img/159pro01.jpg)](#ch10.html_p159pro01a)
-![图片](img/159pro02.jpg)](#ch10.html_p159pro02a)
-![图片](img/161pro01.jpg)](#ch10.html_p161pro01a)
-![图片](img/162pro01.jpg)](#ch10.html_p162pro01a)
-![图片](img/162pro02.jpg)](#ch10.html_p162pro02a)
-![图片](img/163pro01.jpg)](#ch10.html_p163pro01a)
-![图片](img/164pro01.jpg)](#ch10.html_p164pro01a)
-![图片](img/165pro01.jpg)](#ch10.html_p165pro01a)
-![图片](img/166pro01.jpg)](#ch10.html_p166pro01a)
-![图片](img/166pro02.jpg)](#ch10.html_p166pro02a)
-![图片](img/167pro01.jpg)](#ch10.html_p167pro01a)
-![图片](img/168pro01.jpg)](#ch10.html_p168pro01a)
-![图片](img/169pro01.jpg)](#ch10.html_p169pro01a)
-![图片](img/170pro01.jpg)](#ch10.html_p170pro01a)
-![图片](img/176pro01.jpg)](#ch12.html_p176pro01a)
-![图片](img/176pro02.jpg)](#ch12.html_p176pro02a)
-![图片](img/177pro01.jpg)](#ch12.html_p177pro01a)
-![图片](img/177pro02.jpg)](#ch12.html_p177pro02a)
-![图片](img/178pro01.jpg)](#ch12.html_p178pro01a)
-![图片](img/178pro02.jpg)](#ch12.html_p178pro02a)
-![图片](img/179pro01.jpg)](#ch12.html_p179pro01a)
-![图片](img/180pro01.jpg)](#ch12.html_p180pro01a)
-![图片](img/180pro02.jpg)](#ch12.html_p180pro02a)
-![图片](img/184pro01.jpg)](#ch12.html_p184pro01a)
-![图片](img/185pro01.jpg)](#ch12.html_p185pro01a)
-![图片](img/187pro01.jpg)](#ch12.html_p187pro01a)
-![图片](img/188pro01.jpg)](#ch12.html_p188pro01a)
-![图片](img/188pro02.jpg)](#ch12.html_p188pro02a)
-![图片](img/189pro01.jpg)](#ch12.html_p189pro01a)
-![图片](img/193pro01.jpg)](#ch13.html_p193pro01a)
-![图片](img/193pro02.jpg)](#ch13.html_p193pro02a)
-![图片](img/195pro01.jpg)](#ch13.html_p195pro01a)
-![图片](img/195pro02.jpg)](#ch13.html_p195pro02a)
-![图片](img/197pro01.jpg)](#ch13.html_p197pro01a)
-![图片](img/197pro02.jpg)](#ch13.html_p197pro02a)
-![图片](img/197pro03.jpg)](#ch13.html_p197pro03a)
-![图片](img/199pro01.jpg)](#ch13.html_p199pro01a)
-![图片](img/200pro01.jpg)](#ch13.html_p200pro01a)
-![图片](img/201pro01.jpg)](#ch13.html_p201pro01a)
-![图片](img/202pro01.jpg)](#ch13.html_p202pro01a)
-![图片](img/204pro01.jpg)](#ch13.html_p204pro01a)
-![图片](img/204pro02.jpg)](#ch13.html_p204pro02a)
-![图片](img/205pro01.jpg)](#ch13.html_p205pro01a)
-![图片](img/206pro01.jpg)](#ch13.html_p206pro01a)
-![图片](img/210pro01.jpg)](#ch14.html_p210pro01a)
-![图片](img/211pro01.jpg)](#ch14.html_p211pro01a)
-![图片](img/213pro01.jpg)](#ch14.html_p213pro01a)
-![图片](img/213pro02.jpg)](#ch14.html_p213pro02a)
-![图片](img/215pro01.jpg)](#ch14.html_p215pro01a)
-![图片](img/217pro01.jpg)](#ch14.html_p217pro01a)
-![图片](img/217pro02.jpg)](#ch14.html_p217pro02a)
-![图片](img/244pro01.jpg)](#ch16.html_p244pro01a)
-![图片](img/254pro01.jpg)](#ch17.html_p254pro01a)
-![图片](img/256pro01.jpg)](#ch17.html_p256pro01a)
-![图片](img/257pro01.jpg)](#ch17.html_p257pro01a)
-![图片](img/257pro02.jpg)](#ch17.html_p257pro02a)
-![图片](img/258pro01.jpg)](#ch17.html_p258pro01a)
-![图片](img/259pro01.jpg)](#ch17.html_p259pro01a)
 
+![图片](img/006pro01.jpg)](#ch01.html_p006pro01a)
+
+![图片](img/008pro01.jpg)](#ch01.html_p008pro01a)
+
+![图片](img/009pro01.jpg)](#ch01.html_p009pro01a)
+
+![图片](img/010pro01.jpg)](#ch01.html_p010pro01a)
+
+![图片](img/010pro02.jpg)](#ch01.html_p010pro02a)
+
+![图片](img/011pro01.jpg)](#ch01.html_p011pro01a)
+
+![图片](img/011pro02.jpg)](#ch01.html_p011pro02a)
+
+![图片](img/012pro01.jpg)](#ch01.html_p012pro01a)
+
+![图片](img/012pro02.jpg)](#ch01.html_p012pro02a)
+
+![图片](img/013pro01.jpg)](#ch01.html_p013pro01a)
+
+![图片](img/014pro01.jpg)](#ch01.html_p014pro01a)
+
+![图片](img/015pro01.jpg)](#ch01.html_p015pro01a)
+
+![图片](img/016pro01.jpg)](#ch01.html_p016pro01a)
+
+![图片](img/020pro01.jpg)](#ch02.html_p020pro01a)
+
+![图片](img/022pro01.jpg)](#ch02.html_p022pro01a)
+
+![图片](img/022pro02.jpg)](#ch02.html_p022pro02a)
+
+![图片](img/024pro01.jpg)](#ch02.html_p024pro01a)
+
+![图片](img/026pro01.jpg)](#ch02.html_p026pro01a)
+
+![图片](img/030pro01.jpg)](#ch03.html_p030pro01a)
+
+![图片](img/031pro01.jpg)](#ch03.html_p031pro01a)
+
+![图片](img/032pro01.jpg)](#ch03.html_p032pro01a)
+
+![图片](img/034pro01.jpg)](#ch03.html_p034pro01a)
+
+![图片](img/035pro01.jpg)](#ch03.html_p035pro01a)
+
+![图片](img/042pro01.jpg)](#ch04.html_p042pro01a)
+
+![图片](img/044pro01.jpg)](#ch04.html_p044pro01a)
+
+![图片](img/046pro01.jpg)](#ch04.html_p046pro01a)
+
+![图片](img/049pro01.jpg)](#ch04.html_p049pro01a)
+
+![图片](img/050pro01.jpg)](#ch04.html_p050pro01a)
+
+![图片](img/052pro01.jpg)](#ch04.html_p052pro01a)
+
+![图片](img/053pro01.jpg)](#ch04.html_p053pro01a)
+
+![图片](img/054pro01.jpg)](#ch04.html_p054pro01a)
+
+![图片](img/054pro02.jpg)](#ch04.html_p054pro02a)
+
+![图片](img/055pro01.jpg)](#ch04.html_p055pro01a)
+
+![图片](img/055pro02.jpg)](#ch04.html_p055pro02a)
+
+![图片](img/056pro01.jpg)](#ch04.html_p056pro01a)
+
+![图片](img/056pro02.jpg)](#ch04.html_p056pro02a)
+
+![图片](img/056pro03.jpg)](#ch04.html_p056pro03a)
+
+![图片](img/056pro04.jpg)](#ch04.html_p056pro04a)
+
+![图片](img/058pro01.jpg)](#ch04.html_p058pro01a)
+
+![图片](img/058pro02.jpg)](#ch04.html_p058pro02a)
+
+![图片](img/058pro03.jpg)](#ch04.html_p058pro03a)
+
+![图片](img/062pro01.jpg)](#ch04.html_p062pro01a)
+
+![图片](img/064pro01.jpg)](#ch04.html_p064pro01a)
+
+![图片](img/065pro01.jpg)](#ch04.html_p065pro01a)
+
+![图片](img/066pro01.jpg)](#ch04.html_p066pro01a)
+
+![图片](img/067pro01.jpg)](#ch04.html_p067pro01a)
+
+![图片](img/068pro01.jpg)](#ch04.html_p068pro01a)
+
+![图片](img/069pro01.jpg)](#ch04.html_p069pro01a)
+
+![图片](img/069pro02.jpg)](#ch04.html_p069pro02a)
+
+![图片](img/070pro01.jpg)](#ch04.html_p070pro01a)
+
+![图片](img/072pro01.jpg)](#ch04.html_p072pro01a)
+
+![图片](img/073pro01.jpg)](#ch04.html_p073pro01a)
+
+![图片](img/077pro01.jpg)](#ch04.html_p077pro01a)
+
+![图片](img/078pro01.jpg)](#ch04.html_p078pro01a)
+
+![图片](img/080pro01.jpg)](#ch04.html_p080pro01a)
+
+![图片](img/081pro01.jpg)](#ch04.html_p081pro01a)
+
+![图片](img/082pro01.jpg)](#ch04.html_p082pro01a)
+
+![图片](img/083pro01.jpg)](#ch04.html_p083pro01a)
+
+![图片](img/084pro01.jpg)](#ch04.html_p084pro01a)
+
+![图片](img/084pro02.jpg)](#ch04.html_p084pro02a)
+
+![图片](img/085pro01.jpg)](#ch04.html_p085pro01a)
+
+![图片](img/086pro01.jpg)](#ch04.html_p086pro01a)
+
+![图片](img/090pro01.jpg)](#ch04.html_p090pro01a)
+
+![图片](img/091pro01.jpg)](#ch04.html_p091pro01a)
+
+![图片](img/092pro01.jpg)](#ch04.html_p092pro01a)
+
+![图片](img/093pro01.jpg)](#ch04.html_p093pro01a)
+
+![图片](img/095pro01.jpg)](#ch04.html_p095pro01a)
+
+![图片](img/097pro01.jpg)](#ch04.html_p097pro01a)
+
+![图片](img/099pro01.jpg)](#ch04.html_p099pro01a)
+
+![图片](img/100pro01.jpg)](#ch04.html_p100pro01a)
+
+![图片](img/100pro02.jpg)](#ch04.html_p100pro02a)
+
+![图片](img/102pro01.jpg)](#ch04.html_p102pro01a)
+
+![图片](img/106pro01.jpg)](#ch08.html_p106pro01a)
+
+![图片](img/107pro01.jpg)](#ch08.html_p107pro01a)
+
+![图片](img/109pro01.jpg)](#ch08.html_p109pro01a)
+
+![图片](img/109pro02.jpg)](#ch08.html_p109pro02a)
+
+![图片](img/111pro01.jpg)](#ch08.html_p111pro01a)
+
+![图片](img/112pro01.jpg)](#ch08.html_p112pro01a)
+
+![图片](img/114pro01.jpg)](#ch08.html_p114pro01a)
+
+![图片](img/115pro01.jpg)](#ch08.html_p115pro01a)
+
+![图片](img/116pro01.jpg)](#ch08.html_p116pro01a)
+
+![图片](img/117pro01.jpg)](#ch08.html_p117pro01a)
+
+![图片](img/118pro01.jpg)](#ch08.html_p118pro01a)
+
+![图片](img/122pro01.jpg)](#ch08.html_p122pro01a)
+
+![图片](img/123pro01.jpg)](#ch08.html_p123pro01a)
+
+![图片](img/125pro01.jpg)](#ch08.html_p125pro01a)
+
+![图片](img/126pro01.jpg)](#ch08.html_p126pro01a)
+
+![图片](img/126pro02.jpg)](#ch08.html_p126pro02a)
+
+![图片](img/127pro01.jpg)](#ch08.html_p127pro01a)
+
+![图片](img/128pro01.jpg)](#ch08.html_p128pro01a)
+
+![图片](img/128pro02.jpg)](#ch08.html_p128pro02a)
+
+![图片](img/129pro01.jpg)](#ch08.html_p129pro01a)
+
+![图片](img/129pro02.jpg)](#ch08.html_p129pro02a)
+
+![图片](img/129pro03.jpg)](#ch08.html_p129pro03a)
+
+![图片](img/129pro04.jpg)](#ch08.html_p129pro04a)
+
+![图片](img/140pro01.jpg)](#ch08.html_p140pro01a)
+
+![图片](img/140pro02.jpg)](#ch08.html_p140pro02a)
+
+![图片](img/141pro01.jpg)](#ch08.html_p141pro01a)
+
+![图片](img/142pro01.jpg)](#ch08.html_p142pro01a)
+
+![图片](img/143pro01.jpg)](#ch08.html_p143pro01a)
+
+![图片](img/144pro01.jpg)](#ch08.html_p144pro01a)
+
+![图片](img/145pro01.jpg)](#ch08.html_p145pro01a)
+
+![图片](img/145pro02.jpg)](#ch08.html_p145pro02a)
+
+![图片](img/146pro01.jpg)](#ch08.html_p146pro01a)
+
+![图片](img/147pro01.jpg)](#ch08.html_p147pro01a)
+
+![图片](img/148pro01.jpg)](#ch08.html_p148pro01a)
+
+![图片](img/152pro01.jpg)](#ch10.html_p152pro01a)
+
+![图片](img/152pro02.jpg)](#ch10.html_p152pro02a)
+
+![图片](img/153pro01.jpg)](#ch10.html_p153pro01a)
+
+![图片](img/153pro02.jpg)](#ch10.html_p153pro02a)
+
+![图片](img/154pro01.jpg)](#ch10.html_p154pro01a)
+
+![图片](img/154pro02.jpg)](#ch10.html_p154pro02a)
+
+![图片](img/154pro03.jpg)](#ch10.html_p154pro03a)
+
+![图片](img/154pro04.jpg)](#ch10.html_p154pro04a)
+
+![图片](img/158pro01.jpg)](#ch10.html_p158pro01a)
+
+![图片](img/159pro01.jpg)](#ch10.html_p159pro01a)
+
+![图片](img/159pro02.jpg)](#ch10.html_p159pro02a)
+
+![图片](img/161pro01.jpg)](#ch10.html_p161pro01a)
+
+![图片](img/162pro01.jpg)](#ch10.html_p162pro01a)
+
+![图片](img/162pro02.jpg)](#ch10.html_p162pro02a)
+
+![图片](img/163pro01.jpg)](#ch10.html_p163pro01a)
+
+![图片](img/164pro01.jpg)](#ch10.html_p164pro01a)
+
+![图片](img/165pro01.jpg)](#ch10.html_p165pro01a)
+
+![图片](img/166pro01.jpg)](#ch10.html_p166pro01a)
+
+![图片](img/166pro02.jpg)](#ch10.html_p166pro02a)
+
+![图片](img/167pro01.jpg)](#ch10.html_p167pro01a)
+
+![图片](img/168pro01.jpg)](#ch10.html_p168pro01a)
+
+![图片](img/169pro01.jpg)](#ch10.html_p169pro01a)
+
+![图片](img/170pro01.jpg)](#ch10.html_p170pro01a)
+
+![图片](img/176pro01.jpg)](#ch12.html_p176pro01a)
+
+![图片](img/176pro02.jpg)](#ch12.html_p176pro02a)
+
+![图片](img/177pro01.jpg)](#ch12.html_p177pro01a)
+
+![图片](img/177pro02.jpg)](#ch12.html_p177pro02a)
+
+![图片](img/178pro01.jpg)](#ch12.html_p178pro01a)
+
+![图片](img/178pro02.jpg)](#ch12.html_p178pro02a)
+
+![图片](img/179pro01.jpg)](#ch12.html_p179pro01a)
+
+![图片](img/180pro01.jpg)](#ch12.html_p180pro01a)
+
+![图片](img/180pro02.jpg)](#ch12.html_p180pro02a)
+
+![图片](img/184pro01.jpg)](#ch12.html_p184pro01a)
+
+![图片](img/185pro01.jpg)](#ch12.html_p185pro01a)
+
+![图片](img/187pro01.jpg)](#ch12.html_p187pro01a)
+
+![图片](img/188pro01.jpg)](#ch12.html_p188pro01a)
+
+![图片](img/188pro02.jpg)](#ch12.html_p188pro02a)
+
+![图片](img/189pro01.jpg)](#ch12.html_p189pro01a)
+
+![图片](img/193pro01.jpg)](#ch13.html_p193pro01a)
+
+![图片](img/193pro02.jpg)](#ch13.html_p193pro02a)
+
+![图片](img/195pro01.jpg)](#ch13.html_p195pro01a)
+
+
+
+![图片](img/195pro02.jpg)](#ch13.html_p195pro02a)
+
+![图片](img/197pro01.jpg)](#ch13.html_p197pro01a)
+
+![图片](img/197pro02.jpg)](#ch13.html_p197pro02a)
+
+![图片](img/197pro03.jpg)](#ch13.html_p197pro03a)
+
+![图片](img/199pro01.jpg)](#ch13.html_p199pro01a)
+
+![图片](img/200pro01.jpg)](#ch13.html_p200pro01a)
+
+![图片](img/201pro01.jpg)](#ch13.html_p201pro01a)
+
+![图片](img/202pro01.jpg)](#ch13.html_p202pro01a)
+
+![图片](img/204pro01.jpg)](#ch13.html_p204pro01a)
+
+![图片](img/204pro02.jpg)](#ch13.html_p204pro02a)
+
+![图片](img/205pro01.jpg)](#ch13.html_p205pro01a)
+
+![图片](img/206pro01.jpg)](#ch13.html_p206pro01a)
+
+![图片](img/210pro01.jpg)](#ch14.html_p210pro01a)
+
+![图片](img/211pro01.jpg)](#ch14.html_p211pro01a)
+
+![图片](img/213pro01.jpg)](#ch14.html_p213pro01a)
+
+![图片](img/213pro02.jpg)](#ch14.html_p213pro02a)
+
+![图片](img/215pro01.jpg)](#ch14.html_p215pro01a)
+
+![图片](img/217pro01.jpg)](#ch14.html_p217pro01a)
+
+![图片](img/217pro02.jpg)](#ch14.html_p217pro02a)
+
+![图片](img/244pro01.jpg)](#ch16.html_p244pro01a)
+
+![图片](img/254pro01.jpg)](#ch17.html_p254pro01a)
+
+![图片](img/256pro01.jpg)](#ch17.html_p256pro01a)
+
+![图片](img/257pro01.jpg)](#ch17.html_p257pro01a)
+
+![图片](img/257pro02.jpg)](#ch17.html_p257pro02a)
+
+![图片](img/258pro01.jpg)](#ch17.html_p258pro01a)
+
+![图片](img/259pro01.jpg)](#ch17.html_p259pro01a)

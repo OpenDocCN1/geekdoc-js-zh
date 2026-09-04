@@ -1,31 +1,5 @@
-# 2.6 函数
 
-*   概述
-    *   函数的声明
-    *   圆括号运算符和 return 语句
-    *   第一等公民
-    *   函数名的提升
-    *   不能在条件语句中声明函数
-    *   函数的属性和方法
-        *   name 属性
-        *   length 属性
-    *   toString()
-    *   函数作用域
-        *   定义
-        *   函数内部的变量提升
-        *   函数本身的作用域
-    *   参数
-        *   概述
-        *   参数的省略
-        *   默认值
-        *   传递方式
-        *   同名参数
-        *   arguments 对象
-    *   函数的其他知识点
-        *   闭包
-        *   立即调用的函数表达式（IIFE）
-    *   eval 命令
-    *   参考链接
+# 2.6 函数
 
 ## 概述
 
@@ -174,7 +148,7 @@ a(add)(1,1)
 
 ### 函数名的提升
 
-JavaScript 引擎将函数名视同变量名，所以采用 function 命令声明函数时，整个函数会被提升到代码头部。所以，下面的代码不会报错。
+JavaScript 引擎将函数名视同变量名，所以采用 function 命令声言函数时，整个函数会被提升到代码头部。所以，下面的代码不会报错。
 
 ```js
 f();
@@ -898,8 +872,13 @@ f(function(json){
 ## 参考链接
 
 *   Ben Alman, [Immediately-Invoked Function Expression (IIFE)](http://benalman.com/news/2010/11/immediately-invoked-function-expression/)
+
 *   Mark Daggett, [Functions Explained](http://markdaggett.com/blog/2013/02/15/functions-explained/)
+
 *   Juriy Zaytsev, [Named function expressions demystified](http://kangax.github.com/nfe/)
+
 *   Marco Rogers polotek, [What is the arguments object?](http://docs.nodejitsu.com/articles/javascript-conventions/what-is-the-arguments-object)
+
 *   Juriy Zaytsev, [Global eval. What are the options?](http://perfectionkills.com/global-eval-what-are-the-options/)
+
 *   Axel Rauschmayer, [Evaluating JavaScript code via eval() and new Function()](http://www.2ality.com/2014/01/eval.html)

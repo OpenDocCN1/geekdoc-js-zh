@@ -1,6 +1,5 @@
+
 # Web 2.0 JavaScript 入门指南
-
-
 
 ![](img/cover.jpeg)
 
@@ -13,11 +12,6 @@
 ![](img/index-1_4.jpg)
 
 ![](img/index-1_5.jpg)
-
-
-
-
-
 
 Thierry Templier 毕业于 ESIGETEL，是 Web 2.0 架构师，也是曼芒一家 IT 服务公司的 J2EE 专家。
 
@@ -37,15 +31,7 @@ Thierry Templier 毕业于 ESIGETEL，是 Web 2.0 架构师，也是曼芒一家
 
 这种方法通过一个详细的案例研究进行了说明，该案例调用了 `Dojo` 库和 Google Maps 服务，其源代码在 `jsweb2.sourceforge.net` 开放。
 
-
-
-
-
-
-
-
 ---
-
 
 我们感谢 Eyrolles 出版总监 Éric Sulpice 和 Olivier Salvatori 的多次校对和建议。
 
@@ -54,27 +40,22 @@ Thierry Templier 毕业于 ESIGETEL，是 Web 2.0 架构师，也是曼芒一家
 感谢 `Rialto` 库的创建者和开发者 Cyril Balit 和 François Lion，他们在该库相关章节提供的宝贵帮助。
 
 Arnaud Gougeon：
+
 Thierry Templier：
-
-
-
-
 
 本书从描述 `JavaScript` 的基本概念和机制开始。随后，它探讨了使用该语言进行图形化编程的机制，并结合了 `HTML`、`xHTML` 和 `CSS` 语言。书中介绍并实现了多种便于使用上述机制的库。
 
-
-
 * 第二部分涉及基础的 `JavaScript` 库，其目标是方便使用第一部分涉及的各种语言机制。书中因此介绍了 `prototype`（一个轻量且流行的 `JavaScript` 库）和 `dojo`（一个非常全面的库）的基础。
+
 * 为了使用 `JavaScript` 语言开发图形化应用，必须考虑并掌握许多方面。互联网上有许多 `JavaScript` 库可以隐藏这些问题，并提供现用且移植的图形化机制和组件。
-* 在 Web 2.0 的哲学中，Web 对应于真正的平台。第五部分探讨了基于 `JavaScript` 语言的网页中与外部服务进行集成和交互的问题。书中特别介绍了 `Google Maps`（Google 的地图工具）以及如何通过 `REST` 架构使用来自 `Yahoo!` 和 `Amazon` 网站的服务数据。
+
+* 在 Web 2.0 的哲学中，Web 对应于真正的平台。第五部分探讨了基于 `JavaScript` 语言的网页中与外部服务进行集成和交互的问题。书中特别介�了 `Google Maps`（Google 的地图工具）以及如何通过 `REST` 架构使用来自 `Yahoo!` 和 `Amazon` 网站的服务数据。
+
 * 第六部分描述了与 `JavaScript` 语言相关的各种工具，旨在提高 `JavaScript` 处理的质量以及开发效率。书中涵盖了使用 `JsUnit` 进行单元测试以及用于编写和实现此类处理的可用工具。
-
-
 
 案例研究——一个遗址管理应用，是使用 `JavaScript` 语言、`dojo` 库和 `Google Maps` 工具的具体示例。它让读者直观地看到书中介绍的各种机制和技术如何协同工作，以开发出一个丰富且交互式的 Web 应用。
 
 该应用不仅仅是一个简单的示例，它作为一个原型，为一家法国大学的考古数据管理应用奠定了基础。案例可以在本书对应的 `SourceForge` 网站页面上进行演示，地址为 `http://jsweb2.sourceforge.net/`。
-
 
 本书适用于任何想要发现或重新发现 `JavaScript` 语言的 Web 开发人员。重点在于语言的基础机制，以及在 Web 2.0 精神下为网页中开发简单或高级处理提供的可能性。
 
@@ -82,340 +63,372 @@ Thierry Templier：
 
 关于本书的任何问题，您可以通过 Eyrolles 网站的专用页面联系作者，地址为 `www.editions-eyrolles.com/`，或者通过本书的网站地址 `jsweb2.sourceforge.net/`。
 
-
 * 本书目标 (V)
+
 * 关于案例研究 (VII)
+
 * 目录 (IX)
+
 * 介绍 (IX)
+
 * 历史 (IX)
+
 * 浏览器中的 JavaScript (V)
+
 * 图形界面的增强 (VII)
+
 * 数据交换 (VIII)
+
 * 应用结构化 (VIII)
-
-
-
-
-
-
 
 ### JavaScript 解释器 (13)
 
-
 ### 运算符 (20)
-### 基础方法 (27)
-### 基本类型 (32)
-### 数字操作 (35)
-### 正则表达式 (37)
-## 应用程序结构 (41)
-### 闭包 (Closures) (45)
-### 异常处理 (45)
 
+### 基础方法 (27)
+
+### 基本类型 (32)
+
+### 数字操作 (35)
+
+### 正则表达式 (37)
+
+## 应用程序结构 (41)
+
+### 闭包 (Closures) (45)
+
+### 异常处理 (45)
 
 ### 继承 (52)
 
 ---
 
-
 ### 运行环境类 (64)
-### 自定义类的实现 (64)
+
+### 自定类的实现 (64)
+
 ### 实现 (64)
+
 ### 进阶 (78)
 
 ### DOM 规范 (85)
+
 ### DOM 结构 (86)
+
 ### 节点类型 (88)
+
 ### 元素操作 (89)
+
 ### 直接访问元素 (89)
+
 ### 节点操作 (91)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 ### 尝试
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 # 面向对象编程支持 . . . . . . . . . . . . . . . . . . . . . (157)
+
 ## 数组 (158)
+
 ## 面向对象编程 (162)
+
 ### 类初始化 (162)
 
 ### 字符串 (165)
+
 ### 正则表达式 (170)
+
 ## 集合支持 (173)
+
 ### 高级数据结构 (175)
 
 ### Ajax 技术支持 (183)
+
 可用传输类 (187)
+
 表单提交 (189)
+
 应用追踪 (190)
+
 结论 (194)
+
 ## 用于 Web 2.0 的 JavaScript
+
 ## 第三部分：使用 JavaScript 进行图形编程
+
 ### 第 8 章：图形界面基础 (197)
+
 ### CSS (202)
+
 ### 样式应用 (204)
+
 浏览器检测 (208)
+
 事件管理 (210)
+
 高级概念 (222)
+
 XML 和 XSLT 技术的使用 (223)
 
 ### 图形组件概述 (231)
+
 图形组件之间的关系 (233)
+
 面向对象设计 (235)
+
 通用行为 (236)
 
-
-
 ## Ajax 的使用
+
 ### 基于 HTML 的构建
+
  总结
+
 LivreGougeon Page XV 2006 年 11 月 28 日 星期二 4:23 16
+
 ## 图形组件的实现示例
+
 ### 选择列表
 
-
 ### 轻量级图形库
+
 ### DOM 树元素操作
+
 ### 事件管理
+
 ### 总结
+
 ### 库的安装与实现
+
 ### script.ulo 库
+
 ### 拖放
+
 ### 总结
 
 ### dojo 库的图形支持
+
 ### 基础函数
+
 ### 显示管理
+
 ## 用于 Web 2.0 的 JavaScript
+
 ### 基础函数
+
 ### 效果管理
+
 ### 组件实现
+
 ### 自定义组件的实现
+
 ### 图形组件操作
+
 ### 预定义组件
+
 ### 定位
 
-
-
-
 ### 案例研究 (338)
+
 ### 图形组件的使用 (339)
+
 ## 结论 (345)
+
 # 第 12 章
+
 ## Rialto 库 (347)
+
 ### 附属项目 (348)
+
 ### 基础支持 (350)
+
 ## 图形组件 (357)
+
 ### 基础组件 (359)
+
 ### 定位 (370)
+
 LivreGougeon 页面 XVII 2006 年 11 月 28 日星期二 4:23 16
+
 **目录**
+
 **XVII**
+
 ## 浮动窗口 (376)
+
 ## 复杂组件 (378)
+
 ### 行为 (389)
+
 ### 结论 (392)
+
 # 第五部分
+
 ## 服务的使用
+
 # 第 13 章
+
 ## Google Maps (395)
+
 ### 实现 (397)
+
 ### 基础用法 (398)
+
 ### 与应用的交互 (405)
+
 ### Insert 扩展 (410)
+
 ### 案例研究 (414)
+
 ### 站点定位 (416)
 
-
 ### Yahoo! (419)
+
 ### 音乐专辑搜索服务 (424)
+
 ### 总结 (430)
 
-
 # 服务 ECS ECS
+
 ### 总结 (440)
 
 ## 附工具
+
 ### JavaScript 应用测试 (443)
+
 ### JsUnit 的实现 (443)
+
 ### 断言与失败 (449)
+
 ### 测试数据加载 (452)
+
 ### Test Runner (453)
+
 ### 使用 JsUnit Server 和 Ant 进行测试自动化 (457)
+
 ### 简单模拟对象的实现 (462)
-### 测试实现 (464)
+
+### 测试实实现 (464)
+
 ### 结论 (468)
+
 # 第 16 章
+
 ### 开发工具 (471)
 
 ## 调试工具 (476)
+
 ### 用于 Firefox 的 FireBug (477)
+
 ### 使用 dojo 进行调试 (480)
+
 ### 文档工具 (483)
+
 ### 优化工具 (483)
+
 ### 动态加载 (487)
 
-
-
 接下来，我们将通过研究该语言如何集成到 HTML 页面的组成元素中，来探讨它如何构成 Web 2.0 应用的基础构建。
+
 ## JavaScript 语言
+
 在 `JavaScript`、`JScript` 和 `ECMAScript` 术语之间存在某种误解。此外，与它们名称可能暗示的相反，`JavaScript` 和 `Java` 之间几乎没有相似之处，仅源于它们的共同父级语言 `C`，且仅限于基础语法。
+
 LivreGougeon 第 2 页 2006 年 11 月 28 日 星期二 4:23 16
+
 ## 用于 Web 2.0 的 JavaScript
+
 ### 历史
-`JavaScript` 语言由 Brendan Eich 为 `Netscape Communications Corporation` 创建。1996 年 11 月，它成为了第一版 `ECMA-262` 标准的基础，该标准描述了 `ECMAScript` 语言。因此，`JavaScript` 对应该标准的一种方言，并在之后独立发展。
+
+`JavaScript` 语言由 Brendan Eich 为 `Netscape Communications Corporation` 创建。1996 年 11 月，它成为了第一版 `ECMA-262` 标标准的基础，该标准描述了 `ECMAScript` 语言。因此，`JavaScript` 对应该标准的一种方言，并在之后独立发展。
+
 ### ECMA（欧洲计算机制造商协会）
+
 `ECMA` 成立于 1961 年，并自 1994 年起具有国际化愿景，是一个信息和通信系统的标准化组织。其目标是开发和推广各种标准，以促进信息通信技术的使用。截至目前，`ECMA` 已发布了 370 多个标准和技术报告，其中二之三被作为国际标准采用，并负责 `C++`、`C#`、`Eiffel` 和 `ECMAScript` 语言的相关标准。
+
 面对 `JavaScript` 作为网页脚本语言的成功，微软于 1996 年 8 月推出了 `JScript` 语言，它与 `JavaScript` 相似，同样对应于 `ECMAScript` 语言的一种方言。
+
 因此，每个浏览器都通过自己的方言支持 `ECMAScript`。由于语言习惯用，所有这些方言统称为 `JavaScript`。
+
 表格 1.1 和 1.2 总结了 `ECMAScript` 规范版本与其主要方言 `JavaScript` 和 `JScript` 之间的兼容级别。
+
 ### 表格 1.1 ECMAScript 与 JavaScript 之间的兼容级别
+
 | JavaScript 版本 | ECMAScript 版本 |
+
 | 1.0 (Netscape 2.0, 1996 年 3 月) | - |
+
 | 1.2 (Netscape 4.0, 1997 年 6 月) | - |
+
 | 1.4 (Netscape Server) | - |
+
 | 1.6 (Gecko 1.8 和 Firefox 1.5, 2005 年 11 月) | 版本 3 以及对 E4X、数组扩展以及泛型字符串和数组的支持 |
 
-
 | :--- | :--- |
+
 | 2.0 (Internet Explorer 3.0, 1997 年 1 月) | - |
 
-
-
-
-
 | :--- | :--- |
+
 | 5.0 (Internet Explorer 5.0, 1999 年 3 月) | - |
+
 | 5.5 (Internet Explorer 5.5, 2000 年 7 月) | 版本 3 (1999 年 12 月) |
+
 | .Net (ASP.NET) | - |
-下一节将详细介绍 `ECMAScript` 规范，其目标是描述 `JavaScript` 语言的核心。
+
+下一节将详�介绍 `ECMAScript` 规范，其目标是描述 `JavaScript` 语言的核心。
+
 ### ECMAScript
+
 `ECMAScript` 基于 `ECMA-262` 规范，是一种解释型语言，其目标是允许操作宿主应用程序提供的对象。该规范描述了以下元素：
+
 • 语法和关键字；
+
 • 类型和类型转换；
+
 • 表达式和控制结构；
+
 • 原生对象。
+
 这种语言还实现了原型（prototype）概念。这是一种缺失“类”概念的面向对象编程风格。不同版本的 `ECMAScript` 如表格 1.4 所示。
+
 ### 表格 1.4 ECMAScript 规范版本
+
 | 版本 | 日期 | 描述 |
+
 | 1 | 1997 年 6 月 | Netscape 的初始版本 |
+
 | 3 | 1999 年 12 月 | 可能引入了关键字 |
-
-
-
 
 • E4X: [`www.ecma-international.org/publications/ecma-357.html`](http://www.ecma-international.org/publications/ecma-357.html)
 
-
 JavaScript 提供了不同的机制，允许网页中用 HTML、xHTML 和 CSS 语言编写的元素与 JavaScript 脚本进行交互。
+
 ## HTML 和 xHTML
+
 `HTML`（超文本标记语言）是一种用于实现包含包含链接和图形元素的网页的标记语言。这些页面被设计用于在 Web 浏览器中显示。
+
 `xHTML`（可扩展超文本标记语言）被定位为 `HTML` 的继任者，是一种不同的语言，它对 `HTML` 进行了重新制定。因此，使用 `xHTML` 的网页必须符合 XML 规范。所有标签必须正确关闭，且属性必须由字符“``”或“'”进行界定。
+
 ## CSS
+
 `CSS`（级联样式表）解决了 HTML 页面的显示问题。其目标是允许通过 `HTML` 或 `xHTML` 语言实现的页面结构与通过 `CSS` 描述的视觉呈现之间清晰分离。
+
 浏览器首先从网站加载页面。该页面对应于一个包含 `HTML` 或 `xHTML` 元素的文件。它还可能包含或引用各种异构块。例如，JavaScript 脚本和 `CSS` 样式可能存在其中。
-所有这些元素允许浏览器初始化网页，涵盖其结构、图形界面和处理逻辑层面。
+
+所有这些元素允浏览器初始化网页，涵盖其结构、图形界面和处理逻辑层面。
+
 浏览器使用 `HTML` 或 `xHTML` 元素来初始化内存中的页面结构。该结构基于 `DOM`（文档对象模型）技术，它是页面的层次分级对象表示。
+
 浏览器依赖 `CSS` 样式为页面提供图形表示。请注意，页面的 `HTML` 或 `xHTML` 结构也会影响这种表示。
+
 JavaScript 脚本允许为页面添加处理逻辑。这些逻辑可以在页面加载时执行，也可以在响应各种事件。
+
 ## 用于 Web 2.0 的 JavaScript
+
 图 1.2 展示了网页的不同组成部分及其相互作用。
+
 ### 图 1.2：网页不同组成部分之间的交互
+
 ```
   HTML 页面
     结构与表示
@@ -457,9 +470,13 @@ W3C 是一个非营利组织，其目标是促进 Web 技术（HTML、xHTML、XM
 还可以使用 HTML 和 xHTML 语言的标签来实现另外两种方法。当上述类不可用或为了突破其局限性时，应当使用这些方法。
 在任何情况下，JavaScript 都使用 `DOM` 技术根据响应中接收到的数据更新图形界面的一个或多个部分。基于 Ajax 的通信机制如图 1.3 所示。我们将在第 5 章详细介绍与 Ajax 相关的各种技术。
 ```
+
 网站托管主机
+
 HTML 页面
+
 执行 Ajax 请求（不刷新页面）并处理结果
+
 ```
 ## 第 1 章：浏览器
 **网站托管主机**
@@ -496,31 +513,37 @@ JavaScript 是一种脚本语言，其核心由 `ECMA-262` 规范标准化。后
 Mozilla、SpiderMonkey 和 Rhino 的解释器可以在 `http://www.mozilla.org/js/spidermonkey/` 和 `http://www.mozilla.org/rhino/` 找到。它们分别对应用 C 语言和 Java 实现的 Mozilla JavaScript 解释器。与 SpiderMonkey 不同，Rhino 未用于 Netscape 和 Mozilla 浏览器，因为它用 Java 编写的。通过一个非常有用的在线命令行解释器，可以使用 Rhino 来测试代码块。它的运行基于 Java 虚拟机。
 以下代码演示了在命令行中使用 Rhino 的方法：
 ```
+
 js> print('Ceci est un test');
+
 js> function test(parametre) {
+
 }
+
 Valeur du paramètre : 10
 
-
 $ java org.mozilla.javascript.tools.shell.Main test.js 10
+
 ```
 ## JavaScript 基础
 JavaScript 文件 `test.js` 的内容重现了之前输入的命令：
 ```javascript
+
 return "Valeur du paramètre : "+parametre;
+
 print(test(arguments[0]));
 
-
-
-
-
 <html>
-(...)
-(...)
-</head>
-(...)
-</html>
 
+(...)
+
+(...)
+
+</head>
+
+(...)
+
+</html>
 
 ```html
 var test = "Ceci est un test";
@@ -530,8 +553,11 @@ var test = "Ceci est un test";
 
 <script type="text/javascript" src="monScript.js">
 ```
+
 `monScript.js` 文件必须能够被解析为有效地址，且仅包含 JavaScript 代码。
+
 以下代码演示了该文件可能的内容：
+
 ```javascript
 alert(test);
 
@@ -540,11 +566,17 @@ alert(test);
 var test = "Ceci est un test";
 -->
 ```
+
 ### 变量与类型
+
 本节回顾了 JavaScript 的基本原理，从变量和类型到方法和数组，再到运算符和控制结构。
+
 JavaScript 是一种非类型语言（弱类型）。这意味着变量的类型仅在运行时定义。变量的实现是通过关键字 `var` 完成的。JavaScript 解释器负责根据初始化或赋值来创建正确类型的值。
+
 该语言并不强制要求在创建变量时进行初始化，并提供了在一条指令中定义多个变量的可能性。
+
 以下代码演示了多个变量的实现：
+
 ```javascript
 var variable1 = "mon texte d’initialisation";
 // 未初始化的变量
@@ -562,39 +594,41 @@ variable = 2;
 字面量形式（Literal forms）主要用于定义数字、字符串、JavaScript 对象或数组。对于后两个元素，这种表示由 JSON 描述，这是一种独立于 JavaScript 的通用数据结构化格式。我们将在第 3 章关于 JavaScript 面向对象编程的内容中回到 JSON。
 以下代码展示了基于字面量形式初始化不同的变量：
 ```javascript
+
 var nombreEntier = 11;
+
 // 实数的字面量
 
 var chaineCaracteres = "Une chaine de caractères";
+
 // 普通数组的字面量
 
 var tableauAssociatif = { "cle1" : "valeur1", "cle2" : "valeur2" };
 
-
-
-
-
-
 | :--- | :--- |
+
 | Null | 唯一可能值为 `null` 的类型。变量拥有此值是为了指定它已初始化但未指向任何对象。 |
+
 | String | 代表字符串的类型。 |
 
-
-
 var vrai = true;
+
 ```
 `Number` 和 `String` 类型的使用将在基础类型章节中详细介绍。
 原始类型以特殊方式处理，因为它们对应于伪对象（pseudo-objects）。因此它们拥有属性和方法。我们将在本章的后续部分讨论这一方面。
 引用对象对应于内存区域的引用。它们存储在堆（*heap*）中。只有指向这些值的引用存储在执行栈（*stack*）中。这种机制允许两个变量指向同一个地址，即同一个实例。
 在 JavaScript 中，所有对象都遵循这一原理，如下例所示：
 ```javascript
+
 var objet2 = objet1;
+
 ```
 请注意，`new` 和 `delete` 运算符分别允许在堆中分配和释放内存。
 ## 类型确定
-`typeof` 方法用于确定变量的类型。对于引用变量，它返回值 `object`，无论对象的实际类型如何。
+`typeof` 方法用于确定变�量的类型。对于引用变量，它返回值 `object`，无论对象的实际类型如何。
 以下代码展示了原始类型的检测：
 ```javascript
+
 alert(" type de variable1 : "+(typeof variable1));
 
 alert(" type de variable2 : "+(typeof variable2));
@@ -604,6 +638,7 @@ alert(" type de variable3 : "+(typeof variable3));
 alert(" type de variable4 : "+(typeof variable4));
 
 alert(" type de variable5 : "+(typeof variable5));
+
 ```
 请注意，值为 `null` 的变量类型为 `object`。这种行为的原因是 `null` 关键字允许定义一个目前未指向任何值的引用变量。
 ## JavaScript 基础
@@ -613,29 +648,36 @@ JavaScript 提供了方法将一种原始类型转换为另一种类型。它支
 正如我们之前看到的，原始类型对应于伪对象。它们拥有方法，包括 `toString` 方法，该方法允许返回其字符串形式的表示。
 以下代码演示了 `boolean` 和 `number` 类型使用 `toString` 方法：
 ```javascript
+
 var variable1 = booleen.toString();
 
 var variable2 = nombreEntier.toString();
 
 var variable3 = nombreReel.toString();
+
 ```
 在数字情况下，`toString` 方法可以使用一个参数来指定所需的表示。默认情况下使用十进制。但是，可以指定进制，例如使用值 `2` 表示二进制，使用 `16` 表示十六进制。
 ```javascript
+
 var variable1 = nombreEntier.toString();
 
 // variable2 包含字符串 « 1111 »
+
 var variable4 = nombreEntier.toString(16);
+
 ```
 从字符串创建数字通过 `parseInt` 和 `parseFloat` 方法实现。这些方法接收代表数字的字符串作为参数。与之前一样，可以指定使用的进制以便直接在字符串本身中转换，或者通过参数来实现转换。
 以下代码演示了从字符串创建整数：
 ```javascript
+
 // entier1 包含数字 15
+
 var entier2 = parseInt("0xf");
 
 // entier3 包含数字 15
 
-
 var reel = parseFloat("15.5");
+
 ```
 在函数无法从字符串构建数字的情况下，它们会返回值 `NaN`。
 ### NaN (Not a Number)
@@ -667,8 +709,11 @@ function uneFonction() {
 }
 var uneVariable = void(uneFonction());
 ```
+
 `++` 和 `--` 运算符允许通过前缀或后缀对数字进行递增或减。运算符相对于数字的位置决定了对其作用变量赋值的时机。
+
 以下代码说明了这一机制：
+
 ```javascript
 var unAutreNombre = unNombre++;
 
@@ -687,9 +732,8 @@ var autreNombre = -chaine; // autreNombre 是 number 类型且是 nombre 的相�
 var unTest = 10 < 12; // unTest 包含 true
 ```
 
-
-
 var unTest = "11" < 10; // unTest 包含 false
+
 ```
 注意，这种类型的运算符可以使用条件和循环结构。
 #### 算术运算符
@@ -706,108 +750,126 @@ var reste = unNombre % unAutreNombre; // 1
 `||` 对应逻辑或，允许基于两个操作数进行逻辑操作。它实现了表 2.5 中总结的行为。
 以下代码说明了这些运算符与比较运算符结合使用的实现：
 ```javascript
+
 var unAutreTest = 10 < 11 || 15 > 16; // unAutreTest 包含 true
 
-
-
-
-
-
 var valeurCondition = (...);
+
 ```
 ### 控制结构
 JavaScript 语言定义了多种控制结构，用于实现条件、循环以及跳转。这些经典结构存在于大多数编程语言中。正如我们即将看到的，它们易于使用。
 ### 条件
 存在两种类型的条件结构。第一种基于 `if`、`else if` 和 `else` 指令的组合。它的作用是检查条件并根据其有效性执行不同的处理。它遵循以下语法：
 ```javascript
+
     (...)
+
     (...)
+
     (...)
+
 ```
 可以使用任意数量的 `else if` 块。以下代码给出了一个使用示例：
 ```javascript
-if( chaine == "une chaine" ) {
-} else if( chaine== "une autre chaine" ) {
-} else {
-}
 
+if( chaine == "une chaine" ) {
+
+} else if( chaine== "une autre chaine" ) {
+
+} else {
+
+}
 
 switch( variable ) {
+
         (...)
+
     default:
+
 }
-
-
-
 
 var chaine = (...);
+
     case "une chaine":
+
         break;
+
         alert("La variable chaine est égale à 'une autre chaine'");
+
     default:
+
 }
-
-
-
-
 
 for( traitements d’initialisation ; condition de fin ; traitements à effectuer après chaque itération) {
-}
 
+}
 
 for( var cpt=0; cpt<10; cpt++ ) {
-}
 
+}
 
 for( variable in structure ) {
-}
 
+}
 
 var tableaue = {
-    "cle2": "valeur2"
-for( var cle in tableaue ) {
-}
 
+    "cle2": "valeur2"
+
+for( var cle in tableaue ) {
+
+}
 
 while( condition de fin ) {
+
 }
 
-
 var nombre = 0;
+
     nombre++;
+
 ```
 最后一种循环是前者的变体，允许在第一次条件检查之前执行块。该循环的语法如下：
 ```javascript
+
     (...)
+
 ```
 以下代码给出了一个使用示例：
 ```javascript
+
 do {
+
 } while( nombre < 10 );
 
-
-
-
 var compteurGlobal = 0;
+
 for( var cpt1=0; cpt1<5; cpt++ ) {
+
         if( cpt1==2 && cpt2==2 ) {
+
         }
+
     }
+
 // compteurGlobal 值为 12
 
-
 var compteurGlobal = 0;
+
 for( var cpt1=0; cpt1<5; cpt++ ) {
+
         if( cpt1==2 && cpt2==2 ) {
+
         }
+
     }
+
 // compteurGlobal 值为 22
 
-
-
-
 var codeJavaScript = "var maVariable = 10;" + "function incrementer(parametre) { return parametre+1; }";
+
 var retour = incrementer(maVariable);
+
 ```
 ### eval 方法的使用
 该方法用于在某些库中实现模块的按需加载，并在 Ajax 技术下评估 JSON 结构。JSON 格式将在关于面向对象的第 3 章中讨论。
@@ -833,15 +895,21 @@ var retour = incrementer(maVariable);
 判断参数是否为未定义，即一个未初始化的引用。
 以下代码说明了这些最常用方法的实现：
 ```javascript
+
 alert(isEmpty(tableau)); // 显示 true
 
 alert(isBoolean(booleen)); // 显示 true
+
 var chaine = "Ceci est un test";
+
 ```
 `escape` 和 `unescape` 方法分别提供了编码和解码字符串的能力，以便它们可以在 HTML 页面中使用。以下代码是它们的使用示例：
 ```javascript
+
 var chaineEncodee = escape(chaine);
+
 var chaineDecodee = unescape(chaineEncodee);
+
 ```
 某些基础方法对应于原始类型类的构造函数。我们将在本章“基础类型”部分以及下一章“基础类”部分详细介绍这些类及其对应的原始类型。
 ### 表格
@@ -855,52 +923,76 @@ tableau1[0] = "Le premier élément";
 
 var tableau2 = ["Le premier élément", "Le seconde élément" ];
 ```
+
 这种类型数组的遍历是通过索引配合 `for` 循环完成的，如下代码所示：
+
 ```javascript
 (...)
   alert("Elément pour l’index "+cpt+" : "+tableau[cpt]);
 ```
-虽然可以使用索引操作这种类型的数组，但这种方法可能很快变得繁琐。因此，我们更建议使用数组操作方法。尽管这些方法属于 `Array` 类，但它们可以直接用于通过字面量定义的数组。
-表格 2.7 总结了 JavaScript 中用于操作数组的方法。
-### 表格 2.7 Array 类的操作数组的方法
-| 方法 | 参数 | 描述 |
-| `concat` | 要添加的数组 | 将一个数组连接到另一个数组中。 |
-| `pop` | - | 删除并返回数组的最后一个元素。 |
-| `reverse` | - | 反转数组元素的顺序。 |
-| `slice` | 起始和结束索引 | 根据起始和结束索引返回数组的一个区域。 |
-| `splice` | 起始、结束索引以及可选的要添加元素 | 允许插入、删除或替换数组中的元素。 |
-| `unshift` | 要添加的元素 | 允许在数组开头添加元素并将所有元素向右移动。 |
-LivreGougeon 第 30 页 2006 年 11 月 28 日 星期二 4:23 16
-**30**
 
+虽然可以使用索引操作这种类型的数组，但这种方法可能很快变得繁琐。因此，我们更建议使用数组操作方法。尽管这些方法属于 `Array` 类，但它们可以直接用于通过字面量定义的数组。
+
+表格 2.7 总结了 JavaScript 中用于操作数组的方法。
+
+### 表格 2.7 Array 类的操作数组的方法
+
+| 方法 | 参数 | 描述 |
+
+| `concat` | 要添加的数组 | 将一个数组连接到另一个数组中。 |
+
+| `pop` | - | 删除并返回数组的最后一个元素。 |
+
+| `reverse` | - | 反转数组元素的顺序。 |
+
+| `slice` | 起始和结束索引 | 根据起始和结束索引返回数组的一个区域。 |
+
+| `splice` | 起始、结束索引以及可选的要添加元素 | 允许插入、删除或替换数组中的元素。 |
+
+| `unshift` | 要添加的元素 | 允许在数组开头添加元素并将所有元素向右移动。 |
+
+LivreGougeon 第 30 页 2006 年 11 月 28 日 星期二 4:23 16
+
+**30**
 
 ```javascript
 var tableauAAjouter = [ "element3", "element4" ];
 var tableauResult = tableau.concat(tableauAAjouter);
 
 ```javascript
+
 var chaine = tableau.join(",");
+
 ```
-`reverse` 方法简单地反转数组元素的顺序，如下代码所示：
+`reverse` 方法简单地反转数组元�素的顺序，如下代码所示：
 var tableau = [ "element1", "element2", "element3", "element4" ];
 /* resultat 对应数组 [ "element4", "element3", "element2", "element1" ] */
 
 ```javascript
+
 var resultat = tableau.slice(1,3);
+
 ```
 `sort` 方法对数组元素进行排序，如下代码所示：
 var tableau = [ "trois", "quatre", "cinq", "six" ];
 /* resultat 对应数组 [ "cinq", "quatre", "six", "trois" ] */
 
 ```javascript
+
 function fonctionDeTri(element1, element2) {
+
 }
+
 /* resultat 对应数组 [ "8", "9", "10", "11" ] */
 
 **JavaScript 基础**
+
 *第 2 章*
+
 `splice` 方法允许在一次操作中插入和删除数组元素。第一个参数指定执行操作的索引，第二个参数指定从数组中删除的元素数量。后续参数是可选的，对应于添加的元素。
+
 该方法会修改应用于它的数组并返回一个包含被删除元素的数组。以下代码是该方法的使用示例：
+
 ```javascript
 // 替换数组中的两个元素
 /* tableauResultat 对应数组 [ "element1", "nouveau element2", "nouveau element3", "element4" ] */
@@ -942,19 +1034,31 @@ var tableau = {
 
   alert("Elément pour la clé "+cle+" : "+ tableau[cle]);
 ```
+
 我们将在下一节看到 JavaScript 允许通过 `Array` 类来实现数组，并结合使用字面量形式和 `Array` 类。我们还会看到 JavaScript 将关联数组视为对象。
+
 ## 基础类型
+
 JavaScript 语言提供了不同的机制来使用字符串、数字和日期等常用元素。JavaScript 为此定义了与原始类型相对应的类。尽管我们还没有介绍 JavaScript 的面向对象编程，但在本节中，我们也详细介绍了原始类型及其对应的类，后者将原始类型作为内部值进行封装。
+
 原始类型与相应的类之间的界限是狭窄的，因为前者对应于伪对象。因此，可以在原始类型上使用类的方法，如下面字符串的代码示例所示：
+
 ```javascript
 var chaine2 = chaine1.concat(" et une autre chaîne de caractères");
 ```
+
 LivreGougeon 第 33 页 2006 年 11 月 28 日周二 4:23 16
+
 ## JavaScript 基础
+
 **33**
+
 *第 2 章*
-## 字符串处理
+
+## 字符串处�
+
 JavaScript 处理字符串的方式与 Java 等其他语言类似。然而，这些可以通过字面量定义，使用双引号或单引号，如下代码所示：
+
 ```javascript
 var chaine2 = 'mon autre chaîne de caractère';
 
@@ -982,7 +1086,9 @@ var chaine1 = new String("ma chaîne de caractère");
 var uneChaine = "Une chaine.";
 var resultat = uneChaine.concat(uneAutreChaine);
 ```
+
 `indexOf` 和 `lastIndexOf` 方法通过分别从字符串的开头和结尾遍历，确定字符在字符串中首次出现的索引。以下代码演示了其实现：
+
 ```javascript
 var indicePointDebut = uneChaine.indexOf(".");
 
@@ -999,15 +1105,23 @@ var uneChaine = "Le début de la chaine. Sa fin.";
 var uneChaine = "Le début de la chaine. Sa fin.";
 /* resultat 是包含元素 « Le début de la chaine」、
 ```
+
 `substring` 和 `slice` 方法从另一个字符串中提取子字符串。它们根据字符串中的索引来界定子字符串。下面的代码展示了 `substring` 方法的实现：
+
 ```javascript
 var sousChaine = uneChaine.substring(15,21);
 ```
+
 LivreGougeon 第 35 页 2006 年 11 月 28 日 星期二 4:23 16
+
 **JavaScript 基础**
+
 **35**
+
 *第 2 章*
+
 `toLowerCase` 和 `toUpperCase` 方法分别允许将字符串转换为小写和大写，如下代码所示：
+
 ```javascript
 var chaineMajuscule = uneChaine.toUpperCase();
 
@@ -1024,8 +1138,11 @@ var chaineMajuscule = uneChaine.toUpperCase();
 `toLocaleString` 方法允许根据区域设置返回以字符串形式表示的数字。
 `toString` 方法提供了以字符串形式返回数字表示形式的可能性。它在格式化时不使用区域设置，并接受数字的表示进制作为参数。如果省略此参数，方法将返回其十进制表示。下面的代码展示了该方法的使用：
 ```javascript
+
 var chaineDecimale = nombre.toString();
+
 var chaineHexdecimale = nombre.toString(16);
+
 ```
 LivreGougeon 第 36 页 2006 年 11 月 28 日 星期二 4:23 16
 **JavaScript 基础**
@@ -1047,19 +1164,22 @@ JavaScript 仅通过 `Date` 类定义日期，该类包含大量方法。表 2.1
 日期的创建通过 `Date` 类的构造函数完成。该构造函数可以不接受任何参数。在这种情况下，实例对应于当前日期。`Date` 实例也可以根据毫秒表示的日期或根据有关年、月、日以及时、分、秒和毫秒的信息进行初始化。
 下面的代码展示了创建日期的不同方式：
 ```javascript
+
 // dateCourante 包含当前日期
+
 // uneDate 以毫秒表示的当前日期初始化
+
 // uneAutreDate 对应 1996 年 10 月 20 日 12 时 5 分
 
-
 var uneDate = new Date();
+
 var mois = uneDate.getMonth();
+
 uneDate.setMonth(7);
 
-
 var date = new Date();
-/* 使用 Internet Explorer，chaineDate 包含 « Mon Nov 20 12:05:00 UTC+0100 2006 » */
-```
+
+/* 使用 Internet Explorer，chaineDate 包含 « Mon Nov 20 12:05:00 UTC+0100 2006 */ 
 
 
 正则表达式是一种紧凑且强大的表示法，用于以简洁的方式描述一组字符串。它特别可以应用于一个字符串，以确定其是否符合特定标准。它遵循特定的语法，并特异性地解释不同的符号。JavaScript 内置正则表达式支持的语法借用了 Perl 语言。
@@ -1072,39 +1192,53 @@ JavaScript 允许通过 `/` 符号以字面量形式定义正则表达式。这�
 var chaine = "Ceci est un test";
 var chaineCorrespond = expression.test(chaine);
 ```
+
 我们将在第 3 章中看到，JavaScript 提供的 `RegExp` 类允许以类似的方式定义正则表达式。
+
 ## 语法
+
 在描述 JavaScript 正则表达式语法之前，我们在表 2.11 中总结了用于编写表达式的特殊符号。
+
 ### 表 2.11 JavaScript 正则表达式符号
+
 | 符号 |  |
+
 | `$` | 表示表达式位于字符串的末尾。 |
+
 | `*` | 表示至少一个任意符号的集合。 |
+
 | `[]` | 指定字符范围形式的字符集。例如，指定字符可以是 a 到 f 之间的任意一个。 |
-| `\B` | 表示上一个符号的相反，即除单词边界以外的所有位置。 |
+
+| `\B` | 表示上一个符号的相反，即除单词边界以外的所有位位置。 |
+
 | `\D` | 表示上一个符号的相反，即数字以外的任意符号。 |
+
 | `\n` | 对应换行符，或 LF (Line Feed)。 |
+
 | `\s` | 对应任何空格：空格、分页、换行、回车和制表符。 |
+
 | `\t` | 对应制表符。 |
+
 | `\w` | 表示所有字母数字，包括连字符。 |
+
 | `^` | 表示表达式位于字符串的开头。在括号内，此符号表示否定。 |
+
 | `|` | 表示两个表达式中的其中一个。 |
 
-
-
 var chaine = "Ceci est un test?";
+
 /* monExpression 匹配字符串中的“test?” 块 */
 
-
 var chaine = "Ceci est une chaine de test";
+
 /* monExpression 匹配字符串中的单词“chaine” */
 
-
-
-
-
 | :--- | :--- | :--- |
+
 | `test` | 字符串 | 确定参数字符串中是否包含出现处。 |
+
 `test` 方法确定对于所应用的正则表达式，参数字符串中是否包含出现处。以下代码说明了其用法：
+
 ```javascript
 var expression = /test$/g;
 // retour 包含值 true
@@ -1115,10 +1249,12 @@ chaine = "Ceci est une chaine de test.";
 var chaine = "Ceci est une chaine de test";
 var sousChaines = expression.exec(chaine);
 ```
+
 如前所述，字符串拥有三种接受正则表达式作为参数的方法：`match`、`search` 和 `replace`。`match` 方法返回原始字符串中符合正则表达式的各种子字符串。以下代码说明了该方法的用例：
+
 ```javascript
 var expression = /chaine|test/g;
-/* sousChaines 是一个包含值“chaine”和“test”的数组 */
+/* souChaines 是一个包含值“chaine”和“test”的数组 */
 
 
 
@@ -1126,7 +1262,9 @@ var expression = /chaine|test/g;
 var chaine = "Ceci est une chaine de test";
 var position = chaine.match(expression);
 ```
+
 `replace` 方法允许替换与指定正则表达式匹配的元素。。代码说明了它的用法：
+
 ```javascript
 var expression = /une chaine de/g;
 // nouvelleChaine 包含 « Ceci est un test »
@@ -1151,12 +1289,17 @@ function test(parametre1, parametre2) {
 function test(parametre1, parametre2) {
 }
 ```
+
 在匿名函数的情况下，语法如下：`var maFonction = function(parametre1, parametre2, ...) { //函数代码 };`。
+
 以下代码说明了这种机制的实现：
+
 ```javascript
   return parametre1+" - "+parametre2;
 ```
+
 调用函数时，使用变量名。在赋值现有函数的情况下，变量名等同于函数名，如下所示：
+
 ```javascript
   return parametre1+" - "+parametre2;
 var maFonction = test;
@@ -1189,21 +1332,24 @@ function maFonction() {
   }
 ```
 
-
 return "Ceci est une fonction – param1 : "+param1;
 
   var param1="test";
+
   (...)
+
   (...)
 
 // retour contient « Ceci est une fonction - param1 : test »
 
-
-
 ## 45 - *第 2 章*
+
 请注意，函数在使用之前必须在 JavaScript 脚本中定义，否则将产生错误。在简单的情况下，这些问题很容易识别，但在复杂程度不同的源导入机制中，情况并不一定如此。
+
 ### 闭包 (Closures)
-闭包是一种特殊的 JavaScript 函数，它直接使用定义在其代码作用范围之外的变量。这种机制经常被定义在其他函数中的函数，如下代码所示：
+
+闭包是一种特殊的 JavaScript 函数，它直接使用定义在其代码作用范围之外的变量。这种机制经常被定义在其他函�中的函数，如下代码所示：
+
 ```javascript
   function uneClosure(unAutreParametre) {
     +parametre+", "+ unAutreParametre;
@@ -1211,38 +1357,58 @@ return "Ceci est une fonction – param1 : "+param1;
 
 var valeurRetour = retour("Mon autre paramètre");
 ```
+
 JavaScript 的这一强大功能通常用于实现该语言的面向对象概念，正如我们在下一章中看到的。
+
 然而，应当谨慎使用此概念，因为某些浏览器（尤其是 Internet Explorer）在循环引用的情况下无法正确处理闭包，导致内存泄漏。我们将在第 3 章关于 JavaScript 面向对象编程的章节回到这类问题。
+
 ### 异常处理
+
 与大多数对象语言一样，JavaScript 允许处理异常。这种机制提供了拦截错误的可能性，而不是让其由语言解释器处理。这避免了脚本执行的突然停止，并结合健壮的异常处理器，便于应用程序的调试。
+
 该语言还提供了抛应用程序异常的可能性。
+
 ### 全局拦截
+
 JavaScript 提供了以全局方式或针对特定 HTML 块拦截所有发生错误的能力。当错误发生时，如果指定了事件观察器，解释器会将控制权交给它。我们将在本书的第三部分详细介绍在 HTML 页面中使用 JavaScript 进行事件管理。
+
 ---
+
 # JavaScript 基本原理
 
-
 <script langage="text/javascript">
+
 }
+
 onerror = gestionErreurs; //  ¨ ❷
+
 ```
 正如标记 ❶ 处所示，错误处理函数必须拥有三个参数。第一个对应原始错误消息，第二个对应发生错误的文件，最后一个对应行号。在标记 ❷ 处，该函数通过 `onerror` 事件被注册为错误处理器。
 ### 捕获异常
 JavaScript 提供了与 Java 相同的语法来处理异常，即使用 `try`、`catch` 和 `finally` 关键字。第一个定义异常拦截块，第二个定义在抛出异常时要执行的操作，最后一个定义无论是否抛出异常都将执行的操作。
 以下代码描述了如何处理异常（我们特意调用一个不存在的方法 `testException` 来触发异常）：
 ```javascript
+
   testException(); // 此方法不存在!
+
   alert("Une exception a été levée");
+
   alert("Message de l’exception levée : "+error.message);
+
   alert("Passage dans finally");
+
 ```
 执行此代码时，异常的 `name` 属性值为 `ReferenceError`，`message` 属性值为“testException is not defined”。注意，`finally` 块中定义的代码确实被调用。
 ### 抛出异常
 JavaScript 允许应用程序抛出异常以报告错误。这一功能通过与 Java 语言相同的 `throw` 关键字实现。以下代码是其用法示例：
 ```javascript
+
   throw new Error("test");
+
   alert("Une exception a été levée");
+
   alert("Message de l’exception levée : "+error.message);
+
 ```
 ---
 ## JavaScript 基础
@@ -1255,152 +1421,176 @@ function MonException(message) {
   alert("Une exception a été levée");
   alert("Message de l’exception levée : "+error.message);
 ```
+
 ### 总结
+
 在本章中，我们回顾了 JavaScript 语言的基本概念，以便理解其主要机制。这些机制对应于语言处理变量（由于其缺乏类型）、条件、控制结构和数组的方式。
+
 此外，我们详细介绍了 JavaScript 提供的以不同形式管理基本类型的功能，特别是作为伪对象。由于原始类型与对应对象之间的分离没有被语言明确定义，我们引入了后者的方法，这些方法将在第 3 章处理 JavaScript 面向对象编程原则的章节中被重复和扩展。
+
 ---
+
 # JavaScript 与面向对象编程
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 -modele : String
+
 -vitesse : int
+
 +repeindre(entrée couleur : String)
+
 +freiner()
+
 我们特意删除了构造函数的参数，以避免图表过于复杂。
+
 ## JavaScript 与面向对象编程
+
 ### *第三章*
+
 一个类总是拥有一个或多个特殊方法，称为构造函数（constructeur），用于构建对象。如果类中没有显式定义，某些语言会提供一个默认的构造函数。
+
 类还拥有属性（用于存储状态）和方法（用于执行可能使用这些属性的处理）。
+
 对象语言引入了 `this` 关键字，以便对象能够进行自引用。它特别用于区分局部变量与类属性，或者允许一个对象将自身作为参数传递给另一个对象。
+
 同样引入包（package）的概念是为了组织类。包对应于按照树形结构组织的类集合。
+
 ### 实例与对象
+
 类不能直接在应用程序中使用，因为它对应一个抽象的结构性概念。应用程序在对应于类具体实例的对象或实例（instances）上运行。这些实例是使用 `new` 关键字根据类提供的结构模型按需创建的。
+
 以 `Vehicule` 类为例。它定义了自身的属性（品牌、型号、颜色）和方法（重漆、加速、刹车）。车辆实例对应于特定品牌和型号的车辆。它拥有一个颜色，并且可以与其进行交互，例如加速或刹车。
+
 以下代码展示了如何使用 `Vehicule` 类的实例：
+
 ```
 (...)
 ```
+
 我们发现实例或对象对应于应用程序中存在的实体。类的属性具有特定值，这些值决定了它们的行为。类本身仅允许定义这些实例的结构。
+
 ### 封装与可见性
+
 正如我们所见，类对应一个拥有属性和方法的实体。并不一定需要从类外部访问这些元素。封装是指禁止对类的某些元素的访问，以保护其状态和运行机制。
+
 大多数情况下，类属性不应直接暴露在类外部。这就是为什么实现访问器（accesseurs）和修改器（mutateurs）是一种良好的设计实践。
+
 为了实现封装，大多数对象语言提供了支持，允许通过语言元素控制属性和方法的可见性。
+
 ### 表 3.1 属性和方法的可见性级别
+
 如 3.1 所示，属性和方法有多个可见性级别，其含义在大多数对象语言中几乎是通用的。
+
 | 可见性级别 | 描述 |
+
 | 默认 (Par défaut) | 只有同一包中的实体和子类可以访问类的元素。 |
+
 | 保护 (Protégé) | 只有子类可以访问类的元素。 |
 
+| 公有 (Public) | 任何人都可以访问类的元素。 |
 
-
-
-
-
+| 私有 (Privé) | 只有类本身可以访问类的元素。 |
 
 -marque : String
+
 -couleur : String
+
 +Vehicule()
+
 +accelerer()
 
-
 +VehiculeMotorise()
+
 +couperMoteur()
 
-
 `VehiculeMotorise` 类特化了 `Vehicule` 类，并通过 `super` 关键字可以使用 `Vehicule` 类的构造函数。它还可以指定新的属性和新方法。如有必要，这些方法可以调用父类的方法。
+
 LivreGougeon 第 53 页 2006 年 11 月 28 日周二 4:23 16
+
 **JavaScript 与面向对象编程**
+
 **53**
+
 *第 3 章*
+
 通常而言，面向对象的语言提供了一种引用父类的机制。在 Java 中，`super` 关键字被提供给子类用于引用父类。因此，它允许使用父类可访问的构造函数、方法和属性。
+
 ### 封装与可见性
+
 大多数情况下，面向对象的语言提供了控制类对元素访问权限。根据之前描述的可见性级别，各种可能性如下：
+
 - 公有（public）方法或属性可以被任何类使用。
+
 - 私有（private）方法或属性只能由类本身使用。子类无法访问。
+
 让我们回到前一节中 `Vehicule` 和 `VehiculeMotorise` 类的示例。如果我们将 `Vehicule` 类中 `accelerer` 方法的可见性改为保护，那么该方法可以在 `VehiculeMotorise` 类中使用，但在 `Vehicule`类的子类之外不可访问。如果它的可见性变为私有，则它只能在 `Vehicule` 类中使用。
+
 ### 抽象类与方法
+
 抽象类是一种无法在应用程序中实例化的类。它是一种高层抽象，旨在通过特化来适应不同的使用场景。因此，它只能通过扩展它的类来使用。
-该类通常定义了一个或多个抽象方法，这些方法的代码没有在类中定义。然而，这些方法可以在类的具体方法中被调用。它的作用是允许子类对父类方法的算法进行参数化。具体的子类则负责实现这些方法。
+
+该类通常定�了一个或多个抽象方法，这些方法的代码没有在类中定义。然而，这些方法可以在类的具体方法中被调用。它的作用是允许子类对父类方法的算法进行参数化。具体的子类则负责实现这些方法。
+
 面向对象的语言使用 `abstract` 关键字来定义这些类型的类和方法。如果我们回到 `Vehicule` 类，可以将其设为抽象，并将其 `accelerer` 和 `freiner` 方法设为抽象。然而，该类无法实例化，因此上述两个方法没有实现。例如，诸如 `VehiculeMotorise` 之类的子类将负责实现它们。
+
 ### 最终类与方法
+
 最终类（final class）是一种在应用程序中不能被扩展的类，因此对应继承的最后一层。
+
 LivreGougeon 第 54 页 2006 年 11 月 28 日周二 4:23 16
+
 **JavaScript 基础**
+
 **54**
+
 *第一部分*
+
 任何类都可以定义一个或多个最终方法。在这种情况下，这些方法不能在子类中被重写。注意，一个类并不一定必须是最终类才能定义最终方法。
+
 面向对象的语言使用 `final` 关键字来定义这些类型的类和方法。如果我们回到 `Vehicule` 类，可以将其 `accelerer` 和 `freiner` 方法设为最终。然而，这两个方法不能在诸如 `VehiculeMotorise` 的子类中被重写。
+
 注意，可以定义对应于常量的最终属性。
+
 ### 多继承
+
 某些面向对象的语言允许一个类继承自多个其他类。这种机制被 `C++` 支持，但 Java 不支持。图 3.3 展示了一个基于 `Vehicule` 和 `VehiculeAmphibi` 类的多继承示例。后者现在继承自 `Amphibi` 类，以说明机动车辆可以在水中移动。
+
 **Vehicule**
+
 -modele : String
+
 **Bateau**
+
 -vitesse : int
+
 +Bateau()
+
 +accelerer()
 
 -demarre : bool
+
 +demarrer()
 
-
-
-
-
-
-
-
-
-
-
 -marque : String
+
 -couleur : String
+
 +Vehicule()
+
 +accelerer()
-
-
-
-
-
-
-
-
-
-
-
 
 -n*
+
 - marque : String
+
 - couleur : String
+
 +Vehicule()
+
 +accelerer()
 
-
-
-
 VehiculeMotorise voiture = (...);
-```
+
+
 
 
 `VehiculeMotorise laMemeVoiture = (VehiculeMotorise)vehicule;` ❷
@@ -1447,7 +1637,7 @@ JavaScript 提供了定义对象的两种。第一种是使用关联数组的字
 - `EvalError`: 与通过 `eval` 函数解释 JavaScript 代码时发生的错误相关的类
 - `Number`: 数字的对象化表示
 - `RangeError`: 与使用超出允许范围的数字（大于 `MAX_VALUE` 或小于 `MIN_VALUE`）时发生的错误相关的
-- `RegExp`: 用于使用正则表达式的类
+- `RegExp`: 用于使用正则表达的类
 - `SyntaxError`: 语法错误类
 - `URIError`: 与不当使用 Global 对象的 URI 处理方法时发生的错误相关的
 ## 根类 `Object`
@@ -1477,22 +1667,35 @@ JavaScript 允许实现数组，正如我们在第 2 章看到的。该语言允
 以下代码演示了如何使用该类创建数组：
 
 ```javascript
+
 var tableau = new Array();
+
 tableau.push("première chaine","seconde chaîne");
+
 for(var cpt=0;cpt<tableau.length;cpt++) {
+
   (...)
+
 }
+
 ```
 
 这段代码与以下代码相似，后者使用字面量表达式来创建数组：
 
 ```javascript
+
 var tableau = [];
+
 tableau[0] = "première chaine";
+
 tableau[1] = "seconde chaîne";
+
 for(var cpt=0;cpt<tableau.length;cpt++) {
+
   (...)
+
 }
+
 ```
 
 ## JavaScript 与面向对象编程
@@ -1500,8 +1703,11 @@ for(var cpt=0;cpt<tableau.length;cpt++) {
 JavaScript 允许结合这两种方法，数组在内部始终被视为对象处理，如下代码所示：
 
 ```javascript
+
 var tableau = new Array("première chaine","seconde chaîne");
+
 tableau[2] = "troisième chaine";
+
 ```
 
 上一章中数组部分涉及的所有方法都可以与对象方法配合。
@@ -1511,19 +1717,29 @@ tableau[2] = "troisième chaine";
 以下代码演示了如何通过该类创建函数：
 
 ```javascript
+
 var maFonction = new Function(parametre1, parametre2, "return parametre1+parametre2");
+
 // 调用函数
+
 var resultat = maFonction(13, 15);
+
 ```
 
 使用这种技术等同于以下代码：
 
 ```javascript
+
 function maFonction(parametre1, parametre2) {
+
   return parametre1+parametre2;
+
 }
+
 // 调用函数
+
 var resultat = maFonction(13, 15);
+
 ```
 
 然而，建议使用经典方法创建函数，因为它可以避免与定义中包含的字符串相关的问题。与 `Array` 类一样，函数对象化表示的意义在于可以配合 `Function` 类使用的方法。
@@ -1534,8 +1750,8 @@ var resultat = maFonction(13, 15);
 
 | 方法 | 参数 |  |
 | :--- | :--- | :--- |
-| `apply` | 对象和数组 | 调用 JavaScript 函数并将其应用于指定的对象，同时将数组中提供的参数传递给它。 |
-| `call` | 对象和参数 | 调用 JavaScript 函数并将其应用于指定的对象，同时将所提供的参数传递给它。 |
+| `apply` | 对象和数组 | 谷用 JavaScript 函数并将其应用于指定的对象，同时将数组中提供的参数传递给它。 |
+| `call` | 对象和参数 | 谷用 JavaScript 函数并将其应用于指定的对象，同时将所提供的参数传递给它。 |
 | `toSource`, `toString` | - | 返回函数的源代码。 |
 | `valueOf` | - | 我们将在描述如何调用父类构造函数的章节详细说明 `apply` 和 `call` 方法的使用。 |
 
@@ -1559,16 +1775,22 @@ var resultat = maFonction(13, 15);
 以下代码演示了如何使用该类创建和处理正则表达式：
 
 ```javascript
+
 var expression = new RegExp("test","gi");
+
 var trouvee = expression.test("Ceci est un test");
+
 ```
 
 这段代码与以下代码相似，后者基于正则表达式的字面表示：
 
 ```javascript
+
 var expression = /test/gi;
+
 var trouvee = expression.test("Ceci est un test");
-```
+
+
 
 ## 预类
 
@@ -1577,10 +1799,6 @@ JavaScript 为其应用程序预实例化两个类，其实例名称分别为 `G
 `Global` 被语言隐式使用，其“全局”方法似乎没有附加到任何实例。因此它不能被显式使用。
 
 `Global` 实例的方法如下：
-
-
-
-
 
 - `eval` : 用于解释包含 JavaScript 的字符串。
 - `parseXXX` : 允许将字符串转换为原始类型。例如，对于整数，方法是 `parseInt`。
@@ -1618,13 +1836,13 @@ JavaScript 为其应用程序预实例化两个类，其实例名称分别为 `G
 var nombre = 34.567;
 
 // 显示 35
-alert("Ceil : "+Math.ceil(nombre));
+alert("Ceil : " + Math.ceil(nombre));
 
 // 显示 34
-alert("Floor : "+Math.floor(nombre));
+alert("Floor : " + Math.floor(nombre));
 
 // 显示 35
-alert("Round : "+Math.round(nombre));
+alert("Round : " + Math.round(nombre));
 ```
 
 # JavaScript 基础原理
@@ -1663,20 +1881,15 @@ JavaScript 语言提供了 `this` 关键字，它在函数内部提供指向调�
 
 ```javascript
 function test() {
-
-return this.monAttribut;
+  return this.monAttribut;
 }
 ```
-
-
-
-
 
 第二个参数 `apply` 接收一个目标对象，随后跟一个包含要调用函数参数列表的数组，如下代码所示：
 
 ```javascript
 function test(msg) {
-  return msg+" : "+this.monAttribut;
+  return msg + " : " + this.monAttribut;
 }
 
 var o = new Object();
@@ -1706,26 +1919,17 @@ var retour = test.apply(o, parametres);
 以下代码说明了如何使用此技术向一个类添加方法（标记 ❶）并为该类指定属性的默认值（标记 ❷）：
 
 ```javascript
-Object.prototype.maMethode = function() { **¨** ❶
-
-(...)
-
+Object.prototype.maMethode = function() { // ❶
+  (...)
 };
 
-Object.prototype.monAttribut = "Valeur par défaut "; **¨** ❷
+Object.prototype.monAttribut = "Valeur par défaut "; // ❷
 
 var o = new Object();
 o.maMethode();
 ```
 
 对 `prototype` 的使用可以在 JavaScript 脚本中的任何时候进行。所有对应类的 `prototype` 属性被修改过的对象都会受到影响，即使它们在之前已经被实例化了。
-
-LivreGougeon 第 67 页 2006 年 11 月 28 日 星期二 4:23 16
-
-## JavaScript 与面向对象编程
-**67**
-
-*第 3 章*
 
 以下代码说明了这种被称为*后期绑定*（late binding）的机制：
 
@@ -1749,15 +1953,14 @@ var retour = monInstance.maFonction();
 
 ```javascript
 function StringBuffer() {
-  this.chainesInternes = []; **¨** ❶
-  this.append = function(chaine) { **¨** ❷
+  this.chainesInternes = []; // ❶
+  this.append = function(chaine) { // ❷
     this.chainesInternes.push(chaine);
   };
-  this.clear = function() { **¨** ❷
-    this.chainesInternes.splice(0,
-    this.chainesInternes.length);
+  this.clear = function() { // ❷
+    this.chainesInternes.splice(0, this.chainesInternes.length);
   };
-  this.toString = function() { **¨** ❷
+  this.toString = function() { // ❷
     return this.chainesInternes.join("");
   };
 }
@@ -1771,17 +1974,10 @@ sb.append("première chaîne");
 sb.append(" et ");
 sb.append("deuxième chaîne ");
 var resultat = sb.toString();
-//resultat 包含 « première chaîne et deuxième chaine »
+// resultat 包含 « première chaîne et deuxième chaine »
 ```
 
 这种方法方法的问题是每个方法的代码在每次实例化时都会复制。如之前所述，`prototype` 属性可以解决这个问题。然而，这里描述的技术仅在类实例较少使用或需要实现私有属性或方法时才能使用。
-
-LivreGougeon 第 68 页 2006 年 11 月 28 日 星期二 4:23 16
-
-## JavaScript 基础
-**68**
-
-*第一部分*
 
 良好的实践是使用 `StringBuffer` 类的 `prototype` 属性（标记 ❶）来定义上一个类的方法。
 
@@ -1792,15 +1988,15 @@ function StringBuffer() {
   this.chainesInternes = [];
 }
 
-StringBuffer.prototype.append = function(chaine) { **¨** ❶
+StringBuffer.prototype.append = function(chaine) { // ❶
   this.chainesInternes.push(chaine);
 };
 
-StringBuffer.prototype.clear = function() { **¨** ❶
+StringBuffer.prototype.clear = function() { // ❶
   this.chainesInternes.splice(0, this.chainesInternes.length);
 };
 
-StringBuffer.prototype.toString = function() { **¨** ❶
+StringBuffer.prototype.toString = function() { // ❶
   return this.chainesInternes.join("");
 };
 ```
@@ -1816,7 +2012,7 @@ StringBuffer.prototype.toString = function() { **¨** ❶
 ```javascript
 function StringBuffer() {
   this.chainesInternes = [];
-  if( typeof StringBuffer.initialized == "undefined" ) { **¨** ❶
+  if (typeof StringBuffer.initialized == "undefined") { // ❶
     StringBuffer.prototype.append = function(chaine) {
       this.chainesInternes.push(chaine);
     };
@@ -1826,19 +2022,12 @@ function StringBuffer() {
     StringBuffer.prototype.toString = function() {
       return this.chainesInternes.join("");
     };
-    StringBuffer.initialized = true; **¨** ❶
+    StringBuffer.initialized = true; // ❶
   }
 }
 ```
 
-还可以通过一个对象来初始化 `prototype` 属性。后者可以用字面量形式定义，正如我们在有关 JSON 的章节中看到的。。我们还将看到某些继承的实现技术基于这一原理。
-
-LivreGougeon 第 69 页 2006 年 11 月 28 日 星期二 4:23 16
-
-## JavaScript 与面向对象编程
-**69**
-
-*第 3 章*
+还可以通过一个对象来初始化 `prototype` 属性。后者可以用字面量形式定义，正如我们在有关 JSON 的章节中看到的。我们还将看到某些继承的实现技术基于这一原理。
 
 ## 类与可见性
 
@@ -1854,34 +2043,27 @@ LivreGougeon 第 69 页 2006 年 11 月 28 日 星期二 4:23 16
 
 ```javascript
 function StringBuffer() {
-  var chainesInternes = []; **¨** ❶
-}
-```
+  var chainesInternes = []; // ❶
 
+  function addInInternalTable(chaine) { // ❷
+    chainesInternes.push(chaine);
+  }
 
+  function clearInternalTable() { // ❷
+    chainesInternes.splice(0, this.chainesInternes.length);
+  }
 
+  this.append = function(chaine) { // ❸
+    addInInternalTable(chaine);
+  };
 
+  this.clear = function() { // ❸
+    clearInternalTable();
+  };
 
-```javascript
-function addInInternalTable(chaine) { //¨ ❷
-  chainesInternes.push(chaine);
-}
-
-function clearInternalTable() { //¨ ❷
-  chainesInternes.splice(0, this.chainesInternes.length);
-}
-
-this.append = function(chaine) { //¨ ❸
-  addInInternalTable(chaine);
-};
-
-this.clear = function() { //¨ ❸
-  clearInternalTable();
-};
-
-this.toString = function() { //¨ ❹
-  return chainesInternes.join("");
-};
+  this.toString = function() { // ❹
+    return chainesInternes.join("");
+  };
 }
 ```
 
@@ -1893,21 +2075,21 @@ this.toString = function() { //¨ ❹
 
 ```javascript
 function StringBuffer() {
-  var chainesInternes = []; //¨ ❶
-  function addInInternalTable(chaine) { //¨ ❷
+  var chainesInternes = []; // ❶
+  function addInInternalTable(chaine) { // ❷
     chainesInternes.push(chaine);
   }
-  function clearInternalTable() { //¨ ❷
+  function clearInternalTable() { // ❷
     chainesInternes.splice(0, this.chainesInternes.length);
   }
-  if( typeof StringBuffer.initialized == "undefined" ) {
-    StringBuffer.prototype.append = function(chaine) { //¨ ❸
+  if (typeof StringBuffer.initialized == "undefined") {
+    StringBuffer.prototype.append = function(chaine) { // ❸
       addInInternalTable(chaine);
     };
-    StringBuffer.prototype.clear = function() { //¨ ❸
+    StringBuffer.prototype.clear = function() { // ❸
       clearInternalTable();
     };
-    StringBuffer.prototype.toString = function() { //¨ ❹
+    StringBuffer.prototype.toString = function() { // ❹
       return chainesInternes.join("");
     };
     StringBuffer.initialized = true;
@@ -1953,6 +2135,7 @@ JSON 定义了两种数据结构。第一种通过有序的键值列表定义对
 var monInstance = {
   maMethode: function() { (...) }
 };
+
 monInstance.maMethode();
 ```
 
@@ -1962,14 +2145,15 @@ monInstance.maMethode();
 function StringBuffer() {
   this.chainesInternes = [];
 }
+
 StringBuffer.prototype = {
-  append : function(chaine) {
+  append: function(chaine) {
     this.chainesInternes.push(chaine);
   },
-  clear : function() {
+  clear: function() {
     this.chainesInternes.splice(0, this.chainesInternes.length);
   },
-  toString : function() {
+  toString: function() {
     return this.chainesInternes.join("");
   }
 };
@@ -1977,9 +2161,9 @@ StringBuffer.prototype = {
 
 这种写法在 `prototype` 和 `dojo` 等库中很常见。
 
-## JavaScript 基础原理
+# JavaScript 基础原理
 
-### 类继承
+## 类继承
 
 与创建类类似，JavaScript 语言并没有定义特定的关键字（例如 `extends`）来实现类继承。因此，有多种方法可以让一个类继承另一个类，其中某些方法允许实现多重继承。
 
@@ -1989,7 +2173,7 @@ StringBuffer.prototype = {
 
 由于 JavaScript 将对象理解为非有序列表，类属性和方法的继承对应于对这些类的拷贝。
 
-#### 调用父类构造函数
+### 调用父类构造函数
 
 在 JavaScript 中实现类继承的第一种技术是依靠父类的构造函数来初始化子类。它依赖于 `this` 关键字的功能，`this` 引用被调用的对象。我们可以将父类的构造函数赋值给子类的任何方法。
 
@@ -1999,17 +2183,21 @@ StringBuffer.prototype = {
 function StringBuffer() {
   this.chainesInternes = [];
 }
+
 StringBuffer.prototype.append = function(chaine) {
   this.chainesInternes.push(chaine);
 };
+
 StringBuffer.prototype.clear = function() {
   this.chainesInternes.splice(0, this.chainesInternes.length);
 };
+
 StringBuffer.prototype.toString = function() {
   return this.chainesInternes.join("");
 };
+
 function ExtendedStringBuffer() {
-  this.parent = StringBuffer; //¨ ❶
+  this.parent = StringBuffer; // ❶
   this.parent();
   delete this.parent;
   (...)
@@ -2026,25 +2214,23 @@ function ExtendedStringBuffer() {
 function StringBuffer() {
   this.chainesInternes = [];
 }
+
 (...)
+
 function ExtendedStringBuffer() {
-  StringBuffer.call(this); //¨ ❶
+  StringBuffer.call(this); // ❶
   (...)
 }
 ```
 
 标记 ❶ 依然标识了父类构造函数的使用。如果 `StringBuffer` 类的方法是通过原型属性在构造函数外部定义的，那么这些方法将无法通过这种技术被继承。
 
-#### 使用父类的原型
+### 使用父类的原型
 
 使用原型属性来实现继承可以通过两种方式实现：
 
-
-
-
-
--   通过父类实例覆盖子类 `prototype` 属性的内容；
--   通过将父类 `prototype` 属性的元素复制到子类的 `prototype` 属性中。
+- 通过父类实例覆盖子类 `prototype` 属性的内容；
+- 通过将父类 `prototype` 属性的元素复制到子类的 `prototype` 属性中。
 
 第一种技术对应于原型链，它使用父类实例来初始化子类的 `prototype` 属性。它允许将父类中包含的所有元素分配给子类的 `prototype` 属性。然而，它不支持多重继承。
 
@@ -2098,7 +2284,7 @@ function ExtendedStringBuffer() {
   (...)
 }
 
-for( element in StringBuffer.prototype ) {
+for (element in StringBuffer.prototype) {
   ExtendedStringBuffer.prototype[element] = StringBuffer.prototype[element];
 }
 ```
@@ -2136,7 +2322,7 @@ function ExtendedStringBuffer() {
 }
 
 // 复制父类方法
-for( var element in StringBuffer.prototype ) { // ❷
+for (var element in StringBuffer.prototype) { // ❷
   ExtendedStringBuffer.prototype[element] = StringBuffer.prototype[element];
 }
 
@@ -2160,7 +2346,7 @@ ExtendedStringBuffer.prototype.append = function(chaine) {
 function StringBuffer() {
   this.chainesInternes = [];
   // 指定父类方法
-  if( typeof StringBuffer.initialized == "undefined" ) {
+  if (typeof StringBuffer.initialized == "undefined") {
     StringBuffer.prototype.append = function(chaine) {
       this.chainesInternes.push(chaine);
     };
@@ -2179,9 +2365,9 @@ function ExtendedStringBuffer() {
   // 调用父类构造函数
   StringBuffer.call(this);
   // 指定子类方法
-  if( typeof ExtendedStringBuffer.initialized == "undefined" ) { // ❷
+  if (typeof ExtendedStringBuffer.initialized == "undefined") { // ❷
     // 复制父类方法
-    for( var element in StringBuffer.prototype ) { // ❶
+    for (var element in StringBuffer.prototype) { // ❶
       ExtendedStringBuffer.prototype[element] = StringBuffer.prototype[element];
     }
     ExtendedStringBuffer.prototype.append = function(chaine) {
@@ -2206,7 +2392,7 @@ function ExtendedStringBuffer() {
 function StringBuffer() { // ❶
   this.chainesInternes = [];
   // 指定父类方法
-  if( typeof StringBuffer.initialized == "undefined" ) {
+  if (typeof StringBuffer.initialized == "undefined") {
     StringBuffer.prototype.append = function(chaine) {
       this.chainesInternes.push(chaine);
     };
@@ -2221,7 +2407,7 @@ function StringBuffer() { // ❶
 }
 
 function StringSpliter() { // ❷
-  if( typeof StringSpliter.initialized == "undefined" ) {
+  if (typeof StringSpliter.initialized == "undefined") {
     StringSpliter.prototype.split = function(chaine) {
       this.chainesInternes = chaine.split(" ");
     };
@@ -2232,13 +2418,13 @@ function StringSpliter() { // ❷
 function ExtendedStringBuffer() { // ❸
   StringBuffer.call(this); // ❹
   StringSpliter.call(this); // ❹
-  if( typeof ExtendedStringBuffer.initialized == "undefined" ) { // ❹
+  if (typeof ExtendedStringBuffer.initialized == "undefined") { // ❹
     // 复制第一个父类方法
-    for( var element in StringBuffer.prototype ) {
+    for (var element in StringBuffer.prototype) {
       ExtendedStringBuffer.prototype[element] = StringBuffer.prototype[element];
     }
     // 复制第二个父类方法
-    for( var element in StringSpliter.prototype ) {
+    for (var element in StringSpliter.prototype) {
       ExtendedStringBuffer.prototype[element] = StringSpliter.prototype[element];
     }
     ExtendedStringBuffer.prototype.append = function(chaine) {
@@ -2251,9 +2437,6 @@ function ExtendedStringBuffer() { // ❸
 
 标记 ❶、❷ 和 ❸ 分别指向父类 `StringBuffer`、`StringSpliter` 以及子类 `ExtendedStringBuffer` 的定义。标记 ❹ 指向构造函数的调用和初始化检查。
 
-
-
-
 展示了对父类构造函数的调用，以及如何根据父类的属性初始化子类的 `prototype` 属性。
 
 需要提醒的是，多重继承必须谨慎使用，因为在某些情况下它可能会引入问题。
@@ -2262,15 +2445,7 @@ function ExtendedStringBuffer() { // ❸
 
 JavaScript 语言允许实现对象编程的基本原则。然而，它并没有提供专门的语言元素来定义类及其继承关系。为了弥补这一缺陷，可以使用基于函数和 `closures`（闭包）机制以及 `this` 关键字和 `prototype` 属性的各种方法。
 
-这些不同的技术并不是等等的，可能会对应用程序的产生影响。
-
-LivreGougeon 第 78 页 2006 年 11 月 28 日 周二 4:23 16
-
-## JavaScript 基础
-
-**78**
-
-*第一部分*
+这些不同的技术并不是等同的，可能会对应用程序的产生影响。
 
 ### 深入探讨
 
@@ -2288,7 +2463,7 @@ JavaScript 提供了许多预定义对象，如 `String` 和 `Number`。通过 `
 
 ```javascript
 function extends(destination, source) {
-  for( property in source ) {
+  for (property in source) {
     destination.prototype[property] = source[property];
   }
   return destination;
@@ -2305,21 +2480,13 @@ extends(String, {
   monAutreMethode: function() {
     return (...);
   }
-})
+});
 
 var maChaine = new String("ma chaine");
 maChaine.maMethode("mon parametre");
 ```
 
 注意，`prototype` 库中的 `Object.extends` 方法实现了这种机制来复制属性和方法。在使用对象的 `prototype` 属性时建议遵循这种用法。
-
-LivreGougeon 第 79 页 2006 年 11 月 28 日 周二 4:23 16
-
-## JavaScript 与面向对象编程
-
-**79**
-
-*第 3 章*
 
 ### 确定对象的类型
 
@@ -2331,16 +2498,17 @@ JavaScript 语言提供了 `instanceof` 关键字来判断一个实例是否匹�
 
 ```javascript
 String chaine = "Ceci est un test";
+
 // 显示 « object »
-alert("typeof chaine : "+(typeof chaine));
+alert("typeof chaine : " + (typeof chaine));
 
 // 显示 « true »
-alert("chaine instanceof String : "+(chaine instanceof String));
+alert("chaine instanceof String : " + (chaine instanceof String));
 ```
 
 在不同类之间存在继承的情况下，该关键字还可以用于判断一个类是否是父类的实例。然而，只有当继承是通过使用父类构造函数初始化 `prototype` 属性来实现时，此功能才有效。
 
-以下代码演示了在继承框架下使用 `instanceof` 关键字的情况： 
+以下代码演示了在继承框架下使用 `instanceof` 关键字的情况：
 
 ```javascript
 function StringBuffer() {
@@ -2352,13 +2520,14 @@ function ExtendedStringBuffer() {
 }
 
 ExtendedStringBuffer.prototype = new StringBuffer();
+
 var sb = new ExtendedStringBuffer();
 
 // 显示 « true »
-alert("sb instanceof StringBuffer : "+(sb instanceof StringBuffer));
+alert("sb instanceof StringBuffer : " + (sb instanceof StringBuffer));
 
 // 显示 « true »
-alert("sb instanceof ExtendedStringBuffer : "+(sb instanceof ExtendedStringBuffer));
+alert("sb instanceof ExtendedStringBuffer : " + (sb instanceof ExtendedStringBuffer));
 ```
 
 在从父类复制方法到子类的情况下，`instanceof` 关键字无法使用，如以下代码所示：
@@ -2372,17 +2541,17 @@ function ExtendedStringBuffer() {
   (...)
 }
 
-for( var element in StringBuffer.prototype ) {
+for (var element in StringBuffer.prototype) {
   ExtendedStringBuffer.prototype[element] = StringBuffer.prototype[element];
 }
 
 var sb = new ExtendedStringBuffer();
 
 // 显示 « false »
-alert("sb instanceof StringBuffer : "+(sb instanceof StringBuffer));
+alert("sb instanceof StringBuffer : " + (sb instanceof StringBuffer));
 
 // 显示 « true »
-alert("sb instanceof ExtendedStringBuffer : "+(sb instanceof ExtendedStringBuffer));
+alert("sb instanceof ExtendedStringBuffer : " + (sb instanceof ExtendedStringBuffer));
 ```
 
 由于 `instanceof` 关键字的结果随其实现方式的不同而不同，因此在继承框架下使用时必须谨慎。
@@ -2391,7 +2560,7 @@ alert("sb instanceof ExtendedStringBuffer : "+(sb instanceof ExtendedStringBuffe
 
 在 JavaScript 中实现面向对象编程概念并不直观，需要良好理解某些机制。
 
-借助库可以减少这种复杂性。例如，`prototype` 库提供了一种创建类的不同风格。我们将在第 6 章和第 7 章更详细地返回 `extend`、`declare` 和 `inherits` 等工具。其文档可以在作者 Bob Clary 的网站上找到，地址为 http://bclary.com/log/2002/14
+借助库可以减少这种复杂性。例如，`prototype` 库提供了一种创建类的不同风格。我们将在第 6 章和第 7 章更详细地返回 `extend`、`declare` 和 `inherits` 等工具。其文档可以在作者 Bob Clary 的网站上找到，地址为 `http://bclary.com/log/2002/14`。
 
 ## 包结构化
 
@@ -2417,14 +2586,6 @@ lang.StringBuffer.prototype.toString = function() {
 };
 ```
 
-LivreGougeon 第 81 页 2006 年 11 月 28 日 周二 4:23 16
-
-## JavaScript 与面向对象编程
-
-**81**
-
-*第 3 章*
-
 现在该类的使用方法如下：
 
 ```javascript
@@ -2444,19 +2605,14 @@ JavaScript 中变量的作用遵循非常精确的规则。
 ```javascript
 function test() {
   var maVariable = "test";
-  alert(maVariable); //显示变量的内容
+  alert(maVariable); // 显示变量的内容
 }
 
-test()
-
-alert(maVariable); //产生错误
+test();
+alert(maVariable); // 产生错误
 ```
 
 如果未指定 `var` 关键字，我们可能会认为它是脚本的全局变量。实际上，JavaScript 总是会将这种类型的变量绑定到对象上。
-
-
-
-
 
 如果没有特别说明，变量将自动绑定到 HTML 页面的 `window` 对象上。
 
@@ -2474,33 +2630,29 @@ JavaScript 还提供了一个非常有趣的功能，允许将代码块中的所
 
 ```javascript
 var monInstance = new Object();
-with(monInstance) {
+
+with (monInstance) {
   monAttribut = "Un attribut";
 }
-alert("monAttribut : "+monInstance.monAttribut); // 显示属性值
-alert("monAttribut : "+monAttribut); // 产生错误
+
+alert("monAttribut : " + monInstance.monAttribut); // 显示属性值
+alert("monAttribut : " + monAttribut); // 产生错误
 ```
 
 在不使用实例前缀访问属性的情况下，使用此功能可以简化 JavaScript 代码的编写。
-
-LivreGougeon 第 82 页 2006 年 11 月 28 日星期二 4:23 16
-
-## JavaScript 基础
-
-**82**
-
-*第一部分*
 
 请注意，`with` 只能用于属性，而不能用于方法，如下代码所示：
 
 ```javascript
 var monInstance = new Object();
-with(monInstance) {
+
+with (monInstance) {
   maMethode = function() {
     return "Une valeur";
-  }
+  };
 }
-alert("methode : "+monInstance.maMethode()); // 产生错误
+
+alert("methode : " + monInstance.maMethode()); // 产生错误
 ```
 
 ## 内存泄漏问题
@@ -2532,19 +2684,11 @@ function MaClasse() {
 
 以下代码给出了在 Internet Explorer 中产生内存泄漏的示例（`fireOnLoad` 函数绑定到 HTML 页面的加载事件）：
 
-LivreGougeon 第 83 页 2006 年 11 月 28 日星期二 4:23 16
-
-## JavaScript 与面向对象编程
-
-**83**
-
-*第三章*
-
 ```javascript
 function fireOnLoad() {
   var bouton = document.getElementById("monBouton");
   bouton.onClick = function() { // ❶
-    alert("Valeur du bouton : "+this.getValue());
+    alert("Valeur du bouton : " + this.getValue());
   };
 }
 ```
@@ -2557,7 +2701,7 @@ function fireOnLoad() {
 
 ```javascript
 function handleClick() {
-  alert("Valeur du bouton : "+this.getValue());
+  alert("Valeur du bouton : " + this.getValue());
 }
 
 function fireOnLoad() {
@@ -2580,10 +2724,6 @@ function fireOnUnLoad() {
 JavaScript 语言并不是面向对象的语言。虽然它允许使用对象并拥有原生对象，但它没有提供支持这种范式的语言元素。然而，它可以通过基于函数和闭包（`closures`）、`this` 关键字以及函数的 `prototype` 属性来模拟面向对象编程的不同原则。
 
 多种技术可以实现类、对象以及继承。这些技术并非完全对等，并且在不同程度上支持面向对象编程的概念。
-
-
-
-
 
 Le DOM niveau 2, publié en 2000, apporte de nouvelles fonctionnalités, notamment l’ajout de vues filtrées, la gestion des événements et de feuilles de style et de nouvelles méthodes de parcours de l’arbre. Ce niveau correspond à la dernière version finalisée de la spécification.
 
@@ -2623,19 +2763,19 @@ Afin de détailler la structure du DOM, nous recourons tout au long des sections
 </div>
 ```
 
-Ce fragment de code HTML correspond à la structure hiérarchique illustrée à la figure 4.1. L’objet `document` en est la racine. Les balises HTML sont reliées entre elles par des relations parent ou enfant.
+Ce fragment de code HTML correspond à la structure hiérarchique illustrée à la figure 4.1. L’objet `document` en est la racine。Les balises HTML sont reliées entre elles par des relations parent ou enfant.
 
 **Figure 4.1 : Structure de l’arbre DOM du code HTML**
 
-Avec le DOM, chacune des balises HTML possède une représentation objet correspondant à son nom. Dans l’exemple ci-dessus, la balise `div` est représentée par un objet de type `HTMLDivElement` et la balise `span` par `HTMLSpanElement`.
+Avec le DOM, chacune des balises HTML possède une représentation objet correspondant à son nom。Dans l’exemple ci-dessus, la balise `div` est représentée par un objet de type `HTMLDivElement` et la balise `span` par `HTMLSpanElement`。
 
-Nous pouvons remarquer que les nœuds peuvent être de différents types. Dans notre exemple, le deuxième nœud représente une balise et le cinquième un attribut de cette dernière.
+Nous pouvons remarquer que les nœuds peuvent être de différents types。Dans notre exemple, le deuxième nœ点代表 une balise et le cinquième un attribut de cette dernière。
 
 ### La classe Node
 
-La classe centrale représentant un nœud DOM est `Node`. Elle définit différentes propriétés afin de donner accès aux informations relatives au nœud.
+La classe centrale représentant un nœud DOM est `Node`。Elle définit différentes propriétés afin de donner accès aux informations relatives au nœud。
 
-Le tableau 4.2 récapitule les principales propriétés.
+Le tableau 4.2 récapitule les principales propriétés。
 
 **Tableau 4.2 Propriétés de Node**
 
@@ -2647,13 +2787,13 @@ Le tableau 4.2 récapitule les principales propriétés.
 | `nodeValue` | Valeur du nœud |
 | `ownerDocument` | Référence le document dans lequel se trouve le nœud |
 
-Dans notre exemple, la balise identifiée par `maZone` est une `div`. Sa `nodeType` est 1.
+Dans notre exemple, la balise identifiée par `maZone` est une `div`。Sa `nodeType` est 1。
 
 ### Types des nœuds
 
-Un arbre DOM regroupe un ensemble de nœuds représentant différentes entités. Comme la classe `Node` est générique, elle contient une propriété `nodeType` dont la valeur est un entier.
+Un arbre DOM regroupe un ensemble de nœuds représentant différentes entités。Comme la classe `Node` est générique, elle contient une propriété `nodeType` dont la valeur est un entier。
 
-Afin de faciliter l’utilisation de cette propriété, la classe `Node` définit les constantes récapitulées au 4.3.
+Afin de faciliter l’utilisation de cette propriété, la classe `Node` définit les constantes récapitulées au 4.3。
 
 **Tableau 4.3 Constantes de la classe Node définissant les types de nœuds**
 
@@ -2668,21 +2808,15 @@ Afin de faciliter l’utilisation de cette propriété, la classe `Node` défini
 
 ### Manipulation des éléments
 
-Nous allons à présent détailler les différentes API permettant de manipuler les éléments d’un arbre. Toutes les techniques décrites dans cette section correspondent au niveau 1 de la spécification.
+Nous allons à présent détailler les différentes API permettant de manipuler les éléments d’un arbre。Toutes les techniques décrites dans cette section correspondent au niveau 1 de la spécification。
 
 #### Accès direct aux éléments
 
-Pour accéder au nœud d’un document afin de pouvoir le manipuler par la suite, une méthode simple consiste à identifier ce nœud par un attribut id. La méthode `getElementById` de l’objet `document` peut ensuite se fonder sur ce dernier pour récupérer l’instance correspondante.
+Pour accéder au nœud d’un document afin de pouvoir le manipuler par la suite, une méthode simple consiste à identifier ce nœud par un attribut id。La méthode `getElementById` de l’objet `document` peut ensuite se fonder sur ce dernier pour récupérer l’instance correspondante。
 
 ```javascript
 var zone = document.getElementById("maZone");
 ```
-
-
-
-
-
-# JavaScript
 
 `getElementsByTagName` 方法允许根据标签名获取节点列表，该名称对应于前述的 `Node` 类中 `nodeName` 属性的值。
 
@@ -2695,16 +2829,16 @@ var balisesDiv = document.getElementsByTagName("div");
 这段代码允许以节点列表（`NodeList`）的形式获取文档中所有的 `div` 标签。可以使用值 `*` 作为参数来获取文档中的所有节点，如下文代码所示：
 
 ```javascript
-var elements = document.getElementsBytagName("*");
+var elements = document.getElementsByTagName("*");
 ```
 
-`getElementsByName` 方法返回一个节点列表，列表中的节点其 `name` 属性等于参数中指定的值。该方法在处理 HTML 表单的单选按钮（radio button）时特别别用，如下例所示：
+`getElementsByName` 方法返回一个节点列表，列表中的节点其 `name` 属性等于参数中指定的值。该方法在处理 HTML 表单的单选按钮（radio button）时特别有用，如下例所示：
 
 ```html
 <form method="post" id="monFormulaire">
-<input type="radio" name="couleur" value="rouge"/>红色<br/> ❶
-<input type="radio" name="couleur" value="bleu"/>蓝色<br/> ❶
-<input type="radio" name="couleur" value="jaune"/>黄色<br/> ❶
+  <input type="radio" name="couleur" value="rouge"/>红色<br/> ❶
+  <input type="radio" name="couleur" value="bleu"/>蓝色<br/> ❶
+  <input type="radio" name="couleur" value="jaune"/>黄色<br/> ❶
 </form>
 ```
 
@@ -2746,9 +2880,9 @@ var div = zone.lastChild; // ❷
 ```javascript
 var zone = document.getElementById("maZone");
 var element = zone.firstChild;
-while( element!=null ){
-    // (...)
-    element = element.nextSibling;
+while (element != null) {
+  // (...)
+  element = element.nextSibling;
 }
 ```
 
@@ -2762,6 +2896,7 @@ var enfants = zone.childNodes;
 在这个示例中，变量 `enfants` 包含了相对于 `span` 和 `div` 标签的节点，这些标签位于 ID 为 `maZone` 的 `div` 标签内。
 
 ### Firefox 中使用 `childNodes` 属性的特殊性
+
 在 Firefox 浏览器中，`childNodes` 属性会将 HTML 标签之间的所有空格以文本类型节点（`nodeType=TEXT_NODE`）的形式返回。因此，在处理时必须注意这些文本节点。
 
 ## 节点操作
@@ -2836,17 +2971,13 @@ var autreZone = document.getElementById("monAutreZone");
 zone.removeChild(autreZone);
 ```
 
-
-
-
-
 # 树片段（Tree Fragments）的使用
 
 树片段允许对树的某部分进行操作。它们由 `DocumentFragment` 对象表示，该对象可以被看作一个轻量级的 `Document` 对象。它实现了 `Node` 类的所有方法。
 
 以下代码可以创建一个新的树片段：
 
-```
+```javascript
 var fragment = document.createDocumentFragment();
 ```
 
@@ -2859,13 +2990,15 @@ var fragment = document.createDocumentFragment();
 ```javascript
 var zone = document.getElementById("maZone");
 var fragment = document.createDocumentFragment();
-var jours = ["Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi", "Samedi", "Dimanche"]; 
-for (var i=0; i < jours.length; i++){
-    var paragraphe = document.createElement("P");
-    var texte = document.createTextNode(jours[i]);
-    paragraphe.appendChild(texte);
-    fragment.appendChild(paragraphe);
+var jours = ["Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi", "Samedi", "Dimanche"];
+
+for (var i = 0; i < jours.length; i++) {
+  var paragraphe = document.createElement("P");
+  var texte = document.createTextNode(jours[i]);
+  paragraphe.appendChild(texte);
+  fragment.appendChild(paragraphe);
 }
+
 zone.appendChild(fragment);
 ```
 
@@ -2938,7 +3071,7 @@ var type = zone.getAttribute("type");
 ```javascript
 var zone = document.getElementById("maZone");
 if (zone.hasAttribute("type")) {
-    // 属性存在
+  // 属性存在
 }
 ```
 
@@ -2949,46 +3082,38 @@ var zone = document.getElementById("maZone");
 zone.removeAttribute("type");
 ```
 
-
-
-
-以下代码展示了我们初始 HTML 片段的完整遍历示例：`var zone = document.getElementById("maZone");`
+以下代码展示了我们初始 HTML 片段的完整遍历示例：
 
 ```javascript
-var parcours = document.createNodeIterator(zone, NodeFilter.SHOW_ELEMENT, null, false); var sortie ;
-
+var zone = document.getElementById("maZone");
+var parcours = document.createNodeIterator(zone, NodeFilter.SHOW_ELEMENT, null, false);
+var sortie;
 var nœud = parcours.nextNode();
-
-while (nœud){
-
-  sortie += noeud.nodeName + " " ;
-
+while (nœud) {
+  sortie += noeud.nodeName + " ";
   noeud = parcours.nextNode();
 }
 ```
-
-# DOM 编程
-**第 4 章**
 
 变量 `sortie` 包含字符串 `SPAN B DIV P P DIV B`。
 
 到为止，我们还没有使用过 `NodeFilter` 类。该类允许添加一个额外的过滤器，以便在遍历树时排除某些节点。该类由一个单一方法 `acceptNode` 定义。该方法的返回值决定了在 `NodeIterator` 中丢弃或保留该节点。
 
 创建一个 `NodeFilter` 对象非常简单，如下代码所示：
-```javascript
-var oFilter = new Object() ;
 
-oFilter.acceptNode = function (oNode){}
+```javascript
+var oFilter = new Object();
+oFilter.acceptNode = function (oNode) {}
 ```
+
 `acceptNode` 函数必须返回值 `NodeFilter.FILTER_REJECT` 或 `NodeFilter.FILTER_ACCEPT`，以指示作为参数传递的节点应包含在 `NodeIterator` 中。
 
 从我们的 HTML 代码段开始，可以在 `NodeIterator` 中仅保留 `p` 标签，如下代码所示：
+
 ```javascript
 var oFilterP = new Object();
-
-oFilterP.acceptNode = function (oNode){
-
-  if (oNode.nodeName == "P" ){
+oFilterP.acceptNode = function (oNode) {
+  if (oNode.nodeName == "P") {
     return NodeFilter.FILTER_ACCEPT;
   } else {
     return NodeFilter.FILTER_REJECT;
@@ -2996,15 +3121,21 @@ oFilterP.acceptNode = function (oNode){
 }
 ```
 
-现在只需根据此过滤器创建一个 `NodeIterator` 了：
+
+
+现在只需根据此过滤器创建一个 `NodeIterator`  ` 了：
 ```javascript
+
 var parcours = document.createNodeIterator(zone, NodeFilter.SHOW_ALL, oFilterP, false);
+
 ```
 同样，可以使用 `TreeWalker` 类来遍历 DOM 树。该类提供了与 `NodeIterator` 类相同的功能，但包含了额外的移动方法。
 
 `document` 对象的 `createTreeWalker` 方法允许创建一个 `TreeWalker`（该创建方法的签名与其同类的 `CreateNodeIterator` 相同）：
 ```javascript
+
 var walker = document.createTreeWalker(zone, NodeFilter.SHOW_ELEMENT, null, false);
+
 ```
 
 在 `TreeWalker` 中导航的方法列在表 4.8 中。
@@ -3026,11 +3157,15 @@ var walker = document.createTreeWalker(zone, NodeFilter.SHOW_ELEMENT, null, fals
 
 以下代码提供了这些方法的用法示例：
 ```javascript
+
 var walker = document.createTreeWalker(zone, NodeFilter.SHOW_ELEMENT, null, false);
 
 var monSpan = walker.firstChild(); // ❶
+
 var divMonAutreZone = walker.nextSibling(); // ❷
+
 var premierP = walker.firstChild();
+
 ```
 标记为 ❶ 的行允许获取 `span` 标签。带有标识 `monAutreZone` 的 `div` 标签在标记 ❷ 处被获取。
 
@@ -3040,21 +3175,31 @@ var premierP = walker.firstChild();
 
 尽管存在于 DOM 树节点上的 `innerHTML` 属性未被 W3C 规范化，但本书有必要对其进行介绍。事实上，该属性允许用字符串中指定的内容完全替换元素的内容。
 
-以下代码提供了使用 `innerHTML` 属性的示例，用于替换章节开头定义的 `span` 标签的内容为一组 HTML 标签：
+以下代码提供了使用 `innerHTML` 属性的示例，用于替换章节开头定义的 `span` 标�的内容为一组 HTML 标签：
 ```javascript
+
 var zone = document.getElementById("maZone");
+
 var span = zone.getElementsByTagName("span")[0];
 
 span.innerHTML = "<p><b>mon texte</b></p>";
+
 ```
 此代码允许修改页面内存中的 DOM 树，以获得以下结果：
 ```html
+
 <div id="maZone">
+
   <span><p><b>Un texte</b></p></span> <!-- ❶ -->
+
   <div id="id="monAutreZone">
+
     Un autre texte
+
   </div>
+
 </div>
+
 ```
 标记 ❶ 突出了被修改的块。我们发现我们在 `b` 标签周围添加了一个 `p` 标签。
 
@@ -3066,41 +3211,61 @@ span.innerHTML = "<p><b>mon texte</b></p>";
 
 我们将说明这两种方法的使用。第一种对应于使用 DOM 方法来动态创建一个由一百行行的表格：
 ```javascript
+
 var nbLigne = 3000;
+
 var zone = document.getElementById("maZone");
+
 var elementTableau = document.createElement("table");
+
 var elementTBody = document.createElement("tbody");
+
 elementTableau.appendChild(elementTBody);
 
 var elementTr = document.createElement("tr");
+
 var elementTd = document.createElement("td");
+
 var elementDonnees = document.createTextNode("Mes données");
 
 for (var cpt=0; cpt<nbLigne; cpt++){
+
   var tmpElementTr = elementTBody.appendChild(elementTr.cloneNode(true));
+
   var tmpElementTd = tmpElementTr.appendChild(elementTd.cloneNode(true));
+
   tmpElementTd.appendChild(elementDonnees.cloneNode(true));
+
 }
 
 zone.appendChild(elementTableau);
+
 ```
 第二种对应于使用 `innerHTML` 属性来实现相同的功能：
 ```javascript
+
 var nbLigne = 3000;
+
 var zone = document.getElementById("maZone");
+
 var html = new Array();
 
 html.push("<table><tbody>");
 
 for (var cpt=0; cpt<nbLigne;cpt++){
+
   html.push("<tr>");
+
   html.push("<td>Mes données</td>");
+
   html.push("</tr>");
+
 }
 
 html.push("</tbody></table>");
 
 zone.innerHTML = html.join("");
+
 ```
 使用 `innerHTML` 时表格显示的响应速度要快得多。
 
@@ -3110,26 +3275,30 @@ zone.innerHTML = html.join("");
 
 以下代码指示如何使用 `forms` 属性：
 
-
-
-
-
 ```javascript
+
 var mesFormulaires = document.forms;
 
 for (var i=0 ; i < mesFormulaires.length ; i++){
+
   var formulaire = mesFormulaires[i];
+
 }
+
 ```
 
 同样地，文档中的所有图像都可以通过 `images` 属性访问：
 
 ```javascript
+
 var mesImages = document.images;
 
 for (var i=0 ; i < mesImages.length ; i++){
+
   var image = mesImages[i];
+
 }
+
 ```
 
 `links` 属性允许获取文档中的所有链接（`a` 标签）。
@@ -3139,9 +3308,11 @@ for (var i=0 ; i < mesImages.length ; i++){
 `document.forms` 和 `documents.images` 属性可以用以下代码替换：
 
 ```javascript
+
 var mesFormulaires = document.getElementsByTagName("form");
 
 var mesImages = document.getElementsByTagName("img");
+
 ```
 
 ## 在加载时修改 DOM 树
@@ -3153,33 +3324,58 @@ var mesImages = document.getElementsByTagName("img");
 为了更好地理解加载时修改 DOM 树，我们将通过一个具体的示例来说，在这个示例中，我们希望将 `input` 标签定义的标准替换为 `div` 标签，以提高按钮的视觉效果。
 
 以下示例展示了如何在页面加载时替换按钮：
-
 ```html
+
 <html>
+
 <head>
+
 <script language="text/javaScript">
+
 function remplaceBouton(){
+
   var oInputs = document.getElementsByTagName("input");
+
   for (var i=0; i < oInputs.length; i++){
+
     var oInput = oInputs.item(i);
+
     if (oInput.getAttribute("type") == "button"){
+
       // 构建新按钮
+
       var oDiv = document.createElement("div");
+
       oDiv.style.border = "1px solid blue";
+
       var t = document.createTextNode(oInput.value);
+
       oDiv.appendChild(t);
+
       // 修改现有节点
+
       oInput.parentNode.replaceChild(oDiv, oInput);
+
     }
+
   }
+
 }
+
 </script>
+
 </head>
+
 <body onload="remplaceBouton()">
+
 <h1>用 div 替换按钮</h1>
+
 <input type="button" value="mon action"/> **❶**
+
 </body>
+
 </html>
+
 ```
 
 在这段代码中，`remplaceBouton` 方法在页面完全加载后执行。它获取所有类型为 `button` 的 `input` 标签，并将其替换为 `div` 标签。
@@ -3191,61 +3387,102 @@ function remplaceBouton(){
 这个在加载时修改 `DOM` 的示例是最简单的。更复杂的情况可以用相同的方式处理。特别是可以使用不被 Web 浏览器解释的标签来描述构成人机界面（UI）的图形元素。这些元素在页面完全加载后会被考虑，以获得图形组件的视觉渲染。
 
 `dojo` 库正是利用这一原理来构建其组件的。以下代码示例在页面加载时构建了一个表格类型的组件：
-
 ```html
+
 <div widgetType="grid">
+
 <column title="Nom" style="width:40%"/>
+
 <column title="Prénom" style="width:60%"/>
+
 </div>
+
 ```
 
 在上述 HTML 标签中，`widgetType` 属性允许将 `div` 标签定义为在加载时需要修改的元素。`column` 标签允许定义表格的列。
 
 以下代码在页面加载后运行，允许解析带有 `widgetType` 属性的所有标签：
-
 ```javascript
+
 function buildWidget(){
+
   var nodes = document.getElementsByTagName("*");
+
   for (var i=0; i < nodes.length; i++){
+
     var node = nodes[i];
+
     if (node.nodeType == 3){
+
       var widgetType = node.getAttribute("widgetType");
+
       if ("grid" == widgetType){
+
         constructGrid(node);
+
       } else if ("onglet" == widgetType){
+
         (...)
+
       }
+
       (...)
+
     }
+
   }
+
 }
+
 ```
 
 `buildWidget` 函数遍历 DOM 树上的所有标签，当标签包含 `widgetType` 属性时，触发特定的处理，在此例中是负责构建表格的 `constructGrid` 函数：
-
 ```javascript
+
 function constructGrid(baseNode){
+
   // 构建碎片
+
   var grid = document.createDocumentFragment();
+
   var oTable = document.createElement("table");
+
   var oTbdy = document.createElement("tbody");
+
   oTable.appendChild(oTbdy);
+
   var oEntete = document.createElement("tr");
+
   oTbdy.appendChild(oEntete);
+
   // 解析 column 标签
+
   var columns = baseNode.getElementsByTagName("column");
+
   for (var i = 0 ; i < columns.length; i++){
+
     var column = columns[i];
+
     var titre = column.getAttribute("title");
+
     var oTd = document.createElement("td");
+
     oTd.style.cssText = column.style.cssText;
+
     var txt = document.createTextNode(titre);
+
     oTd.appendChild(txt) ;
+
     oEntete.appendChild(oTd);
+
     (...)
+
   }
+
   baseNode.appendChild(grid);
+
 }
+
 ```
 
 `constructGrid` 函数解析 `column` 标签以创建表格的不同列。此示例中的代码显然不完整，但它能让我们意识到加载时修改 `DOM` 的潜力。
@@ -3312,26 +3549,44 @@ LivreGougeon 第 107 页 2006 年 11 月 28 日 周二 4:23 16
 *第 5 章*
 
 以下代码提供了该函数的通用实现示例：
-
 ```javascript
+
 function getXMLHttpRequest() {
+
   if (window.XMLHttpRequest) {
+
     var xmlHttpReq = new XMLHttpRequest();
+
     // 避免 Safari 浏览器的 bug
+
     if (xmlHttpReq.overrideMimeType) {
+
       xmlHttpReq.overrideMimeType("text/xml");
+
     }
+
     return xmlHttpReq;
+
   } else if (window.ActiveXObject) {
+
     try {
+
       return new ActiveXObject("Msxml2.XMLHTTP");
+
     } catch (err) {}
+
     try {
+
       return new ActiveXObject("Microsoft.XMLHTTP");
+
     } catch (err) {}
+
   }
+
   throw new Error("无法为浏览器创建对象" + "XMLHttpRequest");
+
 }
+
 ```
 
 JavaScript 库（特别是 prototype 和 dojo）在其对 Ajax 技术的支持中集成了这种机制。
@@ -3342,11 +3597,11 @@ JavaScript 库（特别是 prototype 和 dojo）在其对 Ajax 技术的支持�
 
 | 属性 |  |
 | :--- | :--- |
-| `onreadystatechange` | 允许设置回调函数，该函数在发生 `readyStatechange` 事件时被调用。该事件在异步模式下受支持，对应请求处理过程中的状态变化。 |
+| `onreadystatechange` | 允设置回调函数，该函数在发生 `readyStatechange` 事件时被调用。该事件在异步模式下受支持，对应请求处理过程中的状态变化。 |
 | `readyState` | 对应对象在请求和响应处理期间所处状态的代码。 |
 | `responseText` | 以文本形式接收的响应 |
 | `responseXML` | 以 XML 形式接收的响应 |
-| `status` | 对应响应的 HTTP 状态码。只有在收到请求响应后才可读取。 |
+| `status` | 对应响应的 HTTP 状态码。只有在收到请请求响应后才可读取。 |
 | `statusText` | 对应响应的 HTTP 状态文本。只有在收到请求响应后才可读取。 |
 
 ### 表 5.3 `XMLHttpRequest` 类的方法
@@ -3356,7 +3611,7 @@ JavaScript 库（特别是 prototype 和 dojo）在其对 Ajax 技术的支持�
 | `abort` | - | 取消当前请求并重置对象。 |
 | `getAllResponseHeaders` | - | 以字符串形式返回响应中所有的 HTTP 头部。该方法只有在对象的 `readyState` 属性等于 3 或 4（Receiving 或 Loaded 状态）时才能使用。 |
 | `getResponseHeader` | 头部名称 | 返回参数指定的头部值。可以在与上一个方法相同的情况下使用。 |
-| `open` | 要使用的 HTTP 方法和 | 初始化对象用于请求。它指定了 URL、HTTP 方法（GET 或 POST）以及可选的异步模式。 |
+| `open` | 要使用的 HTTP 方法和 | 初始化对象用于请请求。它指定了 URL、HTTP 方法（GET 或 POST）以及可选的异步模式。 |
 | `send` | | 允许向指定地址带安全文档发送请求。如果是同步模式，则调用将阻塞直到接收到数据。 |
 | `setRequestHeader` | 头部名称及其值 | 为请求设置 HTTP 头部。 |
 
@@ -3372,12 +3627,16 @@ LivreGougeon 第 108 页 2006 年 11 月 28 日 周二 4:23 16
 与其名称可能暗示的相反，Ajax 并不一定以异步方式处理响应，因为它同时支持同步和异步模式。
 
 在同步实现的情况下，响应的接收是顺序进行的，如下代码所示：
-
 ```javascript
+
 var transport = getXMLHttpRequest();
+
 transport.open("get", "data.js", false);
+
 transport.send(null);
+
 var texte = transport.responseText;
+
 ```
 
 LivreGougeon 第 109 页 2006 年 11 月 28 日 周二 4:23 16
@@ -3390,19 +3649,26 @@ LivreGougeon 第 109 页 2006 年 11 月 28 日 周二 4:23 16
 在异步实现的情况下，接收通过回调函数完成。该函数通过使用 `XMLHttpRequest` 类的属性 `onreadystatechange` 指定。
 
 以下代码描述了一个简单的异步请求的实现：
-
 ```javascript
+
 var transport = getXMLHttpRequest();
 
 function changementEtat() {
+
   if( transport.readyState == 4 ) {
+
     var texte = transport.responseText;
+
   }
+
 }
 
 transport.onreadystatechange = changementEtat;
+
 transport.open("get", "data.js", true);
+
 transport.send(null);
+
 ```
 
 ### 表 5.4 `XMLHttpRequest` 类实例在异步模式下的状态
@@ -3434,34 +3700,55 @@ transport.send(null);
 在发送请求时，有两种方式指定数据。
 
 第一种方法是将参数直接放置在服务器的资源地址中。这种技术基于 HTTP 协议的 `GET` 方法。以下代码描述了这种方法的实现：
-
 ```
+
 var transport = getXMLHttpRequest();
+
 var parametre1 = "valeur1";
+
 var parametre2 = "valeur2";
+
 var adresse = [ "donnees.js" ];
+
 adresse.push("?parametre1=");
+
 adresse.push(parametre1);
+
 adresse.push("&parametre2=");
+
 adresse.push(parametre2);
+
 transport.open("get", adresse.join(""), true);
+
 transport.send(null);
+
 ```
 
 第二种方法是发送数据块，这只有通过 HTTP 协议的 `POST` 方法才能实现。`XMLHttpRequest` 类的 `send` 方法可以通过参数指定此数据块。以下代码描述了这种方法的实现：
-
 ```javascript
+
 var transport = getXMLHttpRequest();
+
 var parametre1 = "valeur1";
+
 var parametre2 = "valeur2";
+
 var parametres = [ ];
+
 parametres.push("{ parametre1: \"");
+
 parametres.push(parametre1);
+
 parametres.push("\", parametre2: \"");
+
 parametres.push(parametre2);
+
 parametres.push("\" }");
+
 transport.open("post", "/ajax/data.js", true);
+
 transport.send(parametres.join("\n"));
+
 ```
 
 在最后一种情况下，数据可以文本或 XML 文档提供，因为 `send` 方法接受这两种数据格式。
@@ -3477,14 +3764,20 @@ transport.send(parametres.join("\n"));
 相反，获取请求响应中包含的数据只有一种方式。它基于 `XMLHttpRequest` 类实例的 `responseText` 和 `responseXML` 属性，分别对应文本格式和 XML 格式的响应。
 
 这些属性在接收到响应时（Loaded ）赋值。以下代码提供了使用这些属性的示例（标记 ❶ 和 ❷）：
-
 ```javascript
+
 var transport = getXMLHttpRequest();
+
 //(...)
+
 // 在响应为文本格式的情况下
+
 var reponse = transport.reponseText; // ❶
+
 // 在响应为 XML 格式的情况下
+
 var reponseXML = transport.reponseXML; // ❷
+
 ```
 
 因此，响应中接收到的数据既可以用文本形式也可以以 XML 文档的形式进行处理。
@@ -3492,15 +3785,22 @@ var reponseXML = transport.reponseXML; // ❷
 除了应用数据外，还可以在传输层级作为 HTTP 请求头指定数据。这些数据的设置基于 `setRequestHeader` 方法，其获取基于 `getResponseHeader` 和 `getAllResponseHeaders` 方法。
 
 以下代码提供了使用这些方法的示例（标记 ❶ 和 ❷）：
-
 ```javascript
+
 var transport = getXMLHttpRequest();
+
 //(...)
+
 transport.open("post", "/ajax/data.js", true);
+
 transport.setRequestHeader("Content-type", "application/x-www-form-urlencoded"); // ❶
+
 transport.send(null);
+
 //(...)
+
 var typeServeur = transport.getResponseHeader("Server"); // ❷
+
 ```
 
 ### 交换数据的的结构
@@ -3516,70 +3816,116 @@ Ajax 技术可以使用不同的数据格式。甚至可以使用文本格式，
 在 JavaScript 环境中，必须实现 DOM 技术来处理请求和响应。
 
 以下代码在 `XMLHttpRequest` 类中于发送端（标记 ❷）和接收端（标记 ❶）使用了 XML 格式：
-
 ```javascript
+
 var transport = getXMLHttpRequest();
+
 //(...)
+
 function changementEtat() {
+
 if( transport.readyState == 4 ) {
+
 var donneesXML = transport.responseXML; // ❶
+
 // donnees 对应响应标签
+
 var donnees = donneesXML;
+
 // 处理接收到的数据
+
 var differentesDones = donnees.childNodes;
+
 for(var cpt=0; cpt<differentesDones.length; cpt++) {
+
 var donnee = differentesDones[cpt];
+
 //(...)
+
 }
+
 }
+
 }
+
 transport.onreadystatechange = changementEtat;
+
 transport.open("get", "donnees.xml", true);
+
 // 构建用于发送的 XML 数据
+
 var parametres = document.createElement("parametres");
+
 var parametre1 = document.createElement("parametre");
+
 parametre1.setAttribute("nom","parametre1");
+
 var texteParametre1 = document.createTextNode("valeur1");
+
 parametre1.appendChild(texteParametre1);
+
 parametres.appendChild(parametre1);
+
 transport.send(parametres); // ❷
+
 ```
 
 #### HTML 格式
 
 可以直接接收 HTML 代码块，特别是用于刷新网页的某部分。然而，在代码块嵌入页面中时，这种方法的使用可能会变得复杂，特别是对于样式管理。以下代码提供了在 HTML 页面中交换这种格式的实现示例：
-
 ```html
+
 <html>
+
 <head>
+
 <script type="text/javascript">
+
 function getXMLHttpRequest() {
+
 //(...)
+
 }
+
 function changementEtat() {
+
 if( transport.readyState == 4 ) {
+
 var html = transport.responseText;
+
 var div = document.getElementById("conteneurReponse");
+
 div.innerHTML = html; // ❶
+
 }
+
 }
+
 function executerRequete() { // ❷
+
 var transport = getXMLHttpRequest();
+
 transport.onreadystatechange = changementEtat;
+
 transport.open("get", "donnees.html", true);
+
 transport.send(null);
+
 }
+
 </script>
+
 </head>
+
 <body>
+
 //(...)
+
 </body>
+
 </html>
+
 ```
-
-
-
-
 
 <div id="conteneurReponse"></div> ¨❸
 
@@ -3600,33 +3946,49 @@ JavaScript 中存在相应的支持来将这些结构评估为 JavaScript 对象
 ## JavaScript 基础
 
 在下面的代码中，第一种方法通过 `eval` 关键字（标记 ❶）实现：
-
 ```javascript
+
 var transport = getXMLHttpRequest();
 
 function changementEtat() {
+
   if( transport.readyState == 4 ) {
+
     var contenuReponse = transport.reponseText;
+
     eval("var reponse = "+contenuReponse); ¨❶
+
     var differentesDonnees = reponse.donnees;
+
     for(var cpt=0; cpt<differentesDonnees.length; cpt++) {
+
       var donnee = differentesDonnees[cpt];
+
       //(...)
+
     }
+
   }
+
 }
 
 transport.onreadystatechange = changementEtat;
+
 transport.open("get", "/ajax/data.json", true);
+
 transport.send(null);
+
 ```
 
 在上面的示例中，接收到的 JSON 结构如下：
-
 ```json
+
 { "donnees": [
+
   { nom: "donnee1", valeur: "valeur1" }
+
 ] }
+
 ```
 
 ### 总结
@@ -3660,23 +4022,31 @@ transport.send(null);
 这种机制允许绕过 `XMLHttpRequest` 类的限制，并可以在大多数支持 iframe 的现代浏览器中使用。`iframe` 由一个名为 `iframe` 的 HTML 标签组成。与任何 HTML 标签一样，可以为其关联样式。此外，该元素支持 `onload` 事件，该事件对应于框架内页加载。
 
 以下代码提供了在 HTML 页面中使用隐藏 iframe 的示例：
-
 ```html
+
 <html>
+
 (...)
+
   <body>
+
   (...)
+
     <iframe id="iframeCachee" ¨❶ name="iframeCachee" style="width:0px; height:0px; display: ''" ¨❷ frameborder="0">¨❸</iframe>
+
   (...)
+
   </body>
+
 </</html>
+
 ```
 
 为了使 `iframe` 标签（标记 ❶）不可见，使用了 CSS 样式（标记 ❷），其中包含 `width`（宽度）、`height`（高度）和 `display`（显示）属性。`frameborder` 属性也必须指定值为 0（标记 ❸）。
 
 ## CSS 样式
 
-`CSS`（层叠样式表）技术允许通过不同的属性设置标签的外观。每个 HTML 标签都支持一组图形属性，CSS 样式可以在这些属性上作用以修改其外观。我们将在第 8 章详细介绍该技术的工作原理。
+`CSS`（层叠样式表）技术允许通过不同的属性设置标签的外观。每个 HTML 标签都支持一组图形属性，CSS 样式可以在这些属性上作用以修改其外观。我们将在第 8 章详�介绍该技术的工作原理。
 
 由于 `DOM` 的支持，此 `iframe` 可以动态地添加和删除。因此，可以完全隐藏这种技术的使用。
 
@@ -3685,38 +4055,56 @@ transport.send(null);
 使用 iframe 提供了发送 `GET` 和 `POST` 类型 HTTP 请求的可能性。
 
 `src` 属性可以用于指定要加载的页面地址。这种技术允许发送 `GET` 类型请求，且使用的地址可以直接包含参数，如下代码所示，它基于之前描述的 iframe：
-
 ```javascript
+
 function executerRequeteGet(adresse, parametres) {
+
   var requete = [];
+
   // 指定请求的地址
+
   requete.push("http://test.org/monAdresse");
+
   // 指定请求参数
+
   var premierParametre = true;
+
   for( parametre in parametres ) {
+
     if( premierParametre ) {
+
       requete.push("?");
+
     } else {
+
       requete.push("&");
+
     }
+
     requete.push(parametre);
+
     requete.push("=");
+
     requete.push(parametres[parametre]);
+
     premierParametre = false;
+
   }
-  // 发送请求
+
+  // 发送请请求
+
   var iframe = document.getElementById("iframeCachee");
+
   iframe.src = requete.join("");
+
 }
+
 ```
 
 也可以实现 POST 请求。在这种情况下，必须使用 HTML 表单。该表单可以动态添加，并且必须通过其 `target` 属性与 iframe 关联。请注意，该属性的值引用的是 iframe 的 `name` 属性而不是其 `id` 属性。
 
-
-
-
-
 ```javascript
+
 // 页面中已存在“monFormulaire”表单
 
 var formulaire = document.createElement("form"); **¨** ❶
@@ -3760,6 +4148,7 @@ formulaire.submit(); **¨** ❻
 document.body.removeChild(formulaire); **¨** ❼
 
 }
+
 ```
 
 # JavaScript 基础原理
@@ -3777,13 +4166,16 @@ document.body.removeChild(formulaire); **¨** ❼
 `iframe` 通过 `parent` 关键字访问其包含的页面。一种做法是调用该页面的一个 JavaScript 函数，并向其传递相对于 `iframe` 的 `document` 对象的引用。
 
 以下代码提供了这种类型回调函数（标记 ❶）的实现示例：
-
 ```html
+
 <html>
 
 <head>
+
 (...)
+
 <script type="text/javascript">
+
 function fonctionDeRappel(documentIFrame) { **¨** ❶
 
 var tableau =
@@ -3793,71 +4185,111 @@ documentIFrame.getElementById("donnees");
 (...)
 
 }
+
 </script>
+
 </head>
 
 <body>
+
 (...)
+
 <iframe id="iframeCachee"
+
 name="iframeCachee"
+
 style="width: 0px; height: 0px; display: ''"
+
 frameborder="0">
 
 </iframe>
+
 (...)
+
 </body>
+
 </html>
+
 ```
 
 以下代码给出了从 `iframe` 接收到的响应内容调用回调函数（标记 ❶）的示例：
-
 ```html
+
 <html>
+
 <head>(...)</head>
+
 <body>
+
 <table id="donnees">
+
 (...)
+
 </table>
+
 <script type="text/javascript">
+
 parent.fonctionDeRappel(document); **¨** ❶
+
 </script>
+
 </body>
+
 </html>
+
 ```
 
 请注意，响应必须能够获知要调用的 JavaScript 函数的名称。该名称可以作为相应请求的参数进行指定。
 
 最后一种技术是将 JavaScript 函数与 `iframe` 中的页面加载事件关联，如下方的代码所示：
-
 ```html
+
 <html>
+
 <head>
+
 (...)
+
 <script type="text/javascript">
+
 function traiterPage() { **¨** ❶
 
 var iframe =
+
 document.getElementById("iframeCachee");
+
 var contenuRequete =
+
 extraireDonneesIframe(iframe); **¨** ❷
 
 (...)
 
 }
+
 </script>
+
 </head>
 
 <body>
+
 (...)
+
 <iframe id="iframeCachee"
+
 name="iframeCachee"
+
 style="width=0px;height=0px;display=''"
+
 onload="traiterPage();"> **¨** ❶
 
 </iframe>
+
 (...)
+
 </body>
+
 </html>
+
 ```
 
 这种关联是通过 `iframe` 标签的 `onload` 属性实现的（标记 ❶）。每当有页面加载到 `iframe` 中时，`traiterPage` 函数就会被调用一次。
@@ -3867,17 +4299,26 @@ onload="traiterPage();"> **¨** ❶
 `traiterPage` 函数基于 DOM 技术来访问响应内容。在上述代码中，`extraireDonneesIframe` 函数（标记 ❷）允许提取 `iframe` 中 `body` 标签的数据。
 
 后者整合了不同浏览器的特殊性，如下代码所示：
-
 ```javascript
+
 function extraireDonneesReponse(iframe) {
+
 if( iframe.contentDocument ) {
+
   return iframe.contentDocument.body.innerHTML;
+
 } else if( iframe.contentWindow ) {
+
   return iframe.contentWindow.document.body.innerHTML;
+
 } else if( iframe.contentWindow ) {
+
   return iframe.document.body.innerHTML;
+
 }
+
 }
+
 ```
 
 总之，这种技术构成了支持 `iframe` 标签的浏览器对 `XMLHttpRequest` 类局限性的有趣绕过方法。该技术还提供了管理已执行的各种 Ajax 请求历史的可能性。
@@ -3885,23 +4326,32 @@ if( iframe.contentDocument ) {
 ## script 标签的动态使用
 
 正如我们在第 2 章所看到的，`script` 标签允许将 JavaScript 集成到 HTML 页面中。我们将描述的技术是基于动态添加此类标签来实现 Ajax。以下代码提供了这种技术的实现示例：
-
 ```javascript
+
 function ajouterBaliseScript(adresse) { **¨** ❶
 
 var script = document.createElement("script"); **¨** ❷
+
 script.setAttribute("type","text/javascript"); **¨** ❸
+
 script.setAttribute("src",adresse);
+
 script.setAttribute("id","scriptId");
+
 var head = document.getElementsByTagName("head")[0];
+
 head.appendChild(script); **¨** ❹
+
 }
 
 function supprimerBaliseScript() { **¨** ❺
 
 var head = document.getElementsByTagName("head")[0];
+
 var script = document.getElementById("scriptId");
+
 head.removeChild(script);
+
 }
 
 function executerRequete(adresse, parametres, fonctionDeRappel) { **¨** ❻
@@ -3909,55 +4359,76 @@ function executerRequete(adresse, parametres, fonctionDeRappel) { **¨** ❻
 var requete = [];
 
 // 指定请求地址
+
 requete.push(adresse);
 
 // 指定请求参数
+
 var premierParametre = true;
+
 for( parametre in parametres ) { **¨** ❼
 
 if( premierParametre ) {
+
 requete.push("?");
+
 } else {
+
 requete.push("&");
+
 }
 
 requete.push(parametre);
+
 requete.push("=");
+
 requete.push(parametres[parametre]);
+
 premierParametre = false;
+
 }
 
 if( !premierParametre ) {
+
 requete.push("&");
+
 } else {
+
 requete.push("?");
+
 }
 
 // 指定回调函数
+
 requete.push("&callback="+fonctionDeRappel); **¨** ❽
 
 // 执行请求
+
 ajouterBaliseScript(requete.join(""));
 
 // 移除使用的标签
+
 supprimerBaliseScript();
+
 }
+
 ```
 
 在上述代码中，`ajouterBaliseScript` 函数（标记 ❶）提供了在 HTML 页面中动态创建（标记 ❷）、配置（标记 ❸）和添加（标记 ❹）`script` 标签的可能性。因此，它实现了针对指定地址的请求执行。
 
-
-
-
 `supprimerBaliseScript` 函数（标记 ❺）用于删除为了执行请求而创建的标签。`executerRequete` 函数（标记 ❻）基于这两个函数，负责使用不同的参数构建请求地址（请求 ❼）。其中一个参数对应于响应将使用的回调函数（标记 ❽）。
 
 收到的代码格式如下：
-
 ```javascript
+
 fonctionDeRappel({ donnees: [ ❶
+
 { nom: "donnee1", valeur: "valeur1" }
+
 { nom: "donnee2", valeur: "valeur2" }
+
 ] });
+
 ```
 
 在 HTML 页面中，必须定义一个名为 `fonctionDeRappel` 的函数。
@@ -4024,15 +4495,22 @@ prototype 库处理了 JavaScript 语言的不同方面，从语言的基本元�
 要使用此库，只需导入包含所需版本的 `prototype.js` 文件（标记 ❶），该文件包含了库的实现。
 
 以下代码说明了这种实现：
-
 ```html
+
 <html
+
 <head>
+
 <script type="text/javascript" src="prototype-1.4.0.js"></script> <!-- ❶
+
 (...)
+
 </head>
+
 (...)
+
 </html>
+
 ```
 
 ## JavaScript 基础元素的支持
@@ -4044,75 +4522,115 @@ prototype 库方便了 JavaScript 语言基础机制的使用，使得应用程�
 首先，它对面向对象的概念提供了内置支持，允许开发者关注它们的使用而非其实现（参见第 3 章）。它在此基于 `Class` 对象及其 `create` 方法来创建类。该类必须实现 `initialize` 方法，其目标是初始化类，就像构造函数一样。它还提供了调用构造函数时传递的参数。
 
 以下代码说明了在 prototype 库支持下第 3 章描述的 `StringBuffer` 实现：
-
 ```javascript
+
 var StringBuffer = Class.create();
+
 StringBuffer.prototype = {
+
 initialize : function() {
+
     this.chainesInternes = [];
+
 },
+
 append : function(chaine) {
+
     this.chainesInternes.push(chaine);
+
 },
+
 clear : function() {
+
     this.chainesInternes.splice(0,
+
     this.chainesInternes.length);
+
 },
+
 toString : function() {
+
     return this.chainesInternes.join("");
+
 }
+
 }
+
 var sb = new StringBuffer();
+
 sb.append("première chaîne");
+
 sb.append(" et ");
+
 sb.append("deuxième chaîne ");
+
 var resultat = sb.toString();
+
 //resultat contient « première chaîne et deuxième chaine »
+
 ```
 
 `prototype` 并没有真正简化 JavaScript 中类的实现，而是提供了另一种实现方式。此外，我们还可以从上面的代码中注意到 `prototype` 属性仍然仍然在使用。
-
-
-
-
 
 `prototype` 还通过其 `Object.extend` 方法方便继承的实现。该方法允许将属性和方法从一个类复制到另一个类，而无需实现第 3 章中介绍的继承机制。
 
 # prototype 库
 
 以下代码说明了该方法的使用，并使用了第 3 章中过的 `StringBuffer` 和 `ExtendedStringBuffer` 类：
-
 ```javascript
+
 var StringBuffer = Class.create();
 
 StringBuffer.prototype = {
+
   initialize : function() {
+
     this.chainesInternes = [];
+
   },
+
   this.append = function(chaine) {
+
     this.chainesInternes.push(chaine);
+
   },
+
   this.clear = function() {
+
     this.chainesInternes.splice(0,
+
     this.chainesInternes.length);
+
   },
+
   this.toString = function() {
+
     return this.chainesInternes.join("");
+
   }
+
 }
 
 var ExtendedStringBuffer = Class.create();
 
 ExtendedStringBuffer.prototype = {
+
   initialize : function() {
+
     StringBuffer.call(this);
+
   },
+
   uneMethode : function() {
+
     (...)
+
   }
+
 }
 
 Object.extend(ExtendedStringBuffer.prototype, StringBuffer.prototype);
+
 ```
 
 `prototype` 还规范了类对 `inspect` 方法的使用。该方法允许以字符串形式获取对象内容的可读描述。此时，类必须实现此方法。此外，`Object.inspect` 方法封装了对传入参数的对象的该方法的调用。
@@ -4120,11 +4638,14 @@ Object.extend(ExtendedStringBuffer.prototype, StringBuffer.prototype);
 如果对象不存在 `inspect` 方法，它将允许在对象上调用 `toString` 方法，同时处理未定义和空对象。
 
 以下代码说明了其用法：
-
 ```javascript
+
 var sb = new StringBuffer();
+
 var description = Object.inspect(sb);
+
 // description 包含 « [object Object] »
+
 ```
 
 ## 函数尝试
@@ -4134,24 +4655,40 @@ var description = Object.inspect(sb);
 `prototype` 提供了一个有趣的函数 `Try.these`，它允许连续尝试多个函数，直到其中一个正常工作为止。该函数特别方便了特定浏览器特定功能的实现。
 
 以下代码说明了其用法：
-
 ```javascript
+
 function maFonction() {
+
   return Try.these(
+
     function() {
+
       alert("appel de la première méthode");
+
       return test1(); // 错误因为方法不存在
+
     },
+
     function() {
+
       alert("appel de la seconde méthode");
+
       return test2(); // 错误因为方法不存在
+
     },
+
     function() {
+
       alert("appel de la troisième méthode");
+
       return "par défaut"; // 实际返回的元素
+
     }
+
   );
+
 }
+
 ```
 
 ## 函数支持
@@ -4161,48 +4698,68 @@ prototype 库通过 `bind` 或 `bindAsEventListener` 两个方法增强了 `Func
 因此，`this` 关键字不再指向同一个对象，这可能会导致错误。
 
 以下代码说明了这个问题：
-
 ```javascript
+
 var monInstance1 = new Object();
+
 monInstance1.maVariable = "test";
+
 monInstance1.maMethode = function() {
+
   alert("Valeur de maVariable : "+this.maVariable);
+
 }
 
 var monInstance2 = new Object();
+
 monInstance2.uneAutreMethode = monInstance1.maMethode;
+
 monInstance2.uneAutreMethode(); // 产生错误，因为 monInstance2 上没有
+
 // maVariable 字段
+
 ```
 
 `bind` 方法允许保留方法相对于原始对象的执行上下文。
 
 以下代码调整了前述示例以消除错误：
-
 ```javascript
+
 var monInstance1 = new Object();
+
 monInstance1.maVariable = "test";
+
 monInstance1.maMethode = function() {
+
   alert("Valeur de maVariable : "+this.maVariable);
+
 }
 
 var monInstance2 = new Object();
+
 monInstance2.uneAutreMethode = monInstance1.maMethode.bind(monInstance1);
+
 monInstance2.uneAutreMethode(); // 正确显示 maVariable 的值
+
 ```
 
 第二种方法 `bindAsEventListener` 为 JavaScript 事件观察方法实现了相同的机制，且这种实现独立于浏览器的。事实上，Internet Explorer 强制要求使用 `window.event` 来访问事件，而其他浏览器则将其作为参数传递。
 
 该方法的使用方式如下：
-
 ```javascript
+
 var observateur = new Object();
+
 observateur.traiterEvenement = function(event) {
+
   alert("Evénement déclenché : "+event);
+
 }
 
 var monDiv = document.getElementById("monDiv");
+
 monDiv.onclick = observateur.traiterEvenement.bindAsEventListener(observateur);
+
 ```
 
 得益于 `bindAsEventListener` 方法，如果代码在 Internet Explorer 中执行，`prototype` 会自动将 `window.event` 作为参数传递给 `traiterEvenement` 方法。
@@ -4211,15 +4768,19 @@ monDiv.onclick = observateur.traiterEvenement.bindAsEventListener(observateur);
 
 prototype 库通过 `PeriodicalExecuter` 类提供了触发周期处理的支持。
 
-`initialize` 方法允许指定周期触发的函数以及时间间隔。以下代码说明了如何配置该类以便每十秒调用一次 `declencherTraitements` 函数：
-
+`initialize` 方法允许指定周期触发的函数以及时间间隔。以下代码说明了如何配置该类以便每十秒调用一次 `declencherTraitements` 函�：
 ```javascript
+
 function declencherTraitements() {
+
   (...)
+
 }
 
 var pe = new PeriodicalExecuter();
+
 pe.initialize(declencherTraitements, 10);
+
 ```
 
 我们将在 Ajax 相关部分看到 `prototype` 允许定期刷新 HTML 页面的元素，例如表单元素。
@@ -4253,39 +4814,42 @@ prototype 库通过向基础类 `String` 和 `Number` 添加方法来增强它�
 
 `stripTags` 方法允许删除字符串中所有的 HTML 或 XML 标签。
 
-
-
-
 以下代码展示了该函数的用法：
-
 ```javascript
+
 var chaineInitiale = "<p>Ceci est un paragraphe.</p>"
+
 + "<br/><p>Un autre.</p>";
 
 var chaineFinale = chaineInitiale.stripTags();
 
 //chaineFinale contient « Ceci est un paragraphe.Un autre. »
+
 ```
 
 `escapeHTML` 方法提供了将字符串中的特殊字符编码为 HTML 的可能，而 `unescapeHTML` 方法则执行相反的操作。
 
 以下代码展示了该函数的用法：
-
 ```javascript
+
 var chaineInitiale = "<p>Un paragraphe.</p>";
 
 var chaineFinale = chaineInitiale.escapeHTML();
 
 //chaineFinale contient « &lt;p&gt;Un paragraphe.&lt;/p&gt; »
+
 ```
 
 `parseQuery` 方法特别用于解码 HTTP 请求的参数字符串并将其存储在关联数组中，如下代码所示：`var chaineInitiale = "parametre1=valeur1&parametre2=valeur2";`
 
 ```javascript
+
 var parametres = chaineInitiale.parseQuery();
 
 /* 变量 parametres 等同于
+
 var parametres = { "parametre1": "valeur1", "parametre2": "valeur2" }; */
+
 ```
 
 # Prototype 库
@@ -4294,13 +4858,14 @@ var parametres = { "parametre1": "valeur1", "parametre2": "valeur2" }; */
 ### 第 6 章
 
 `camelize` 方法允许转换由连字符分隔的字符串，如下代码所示：
-
 ```javascript
+
 var chaineInitiale = "ma-variable et ma-méthode";
 
 var chaineFinale = chaineInitiale.camelize();
 
 //chaineFinale contient « maVariable et maMéthode »
+
 ```
 
 ## 数字
@@ -4316,23 +4881,31 @@ var chaineFinale = chaineInitiale.camelize();
 | `toColorPart` | 返回数字的十六进制表示。对于计算 HTML 页面中颜色的 RGB 表示特别有用。 |
 
 我们将提供一个 `times` 方法的使用示例。与其实现一个基于 `for` 关键字的循环（如下所示）：
-
 ```javascript
+
 var maximum=10;
+
 for(var cpt=0; cpt<maximum; cpt++) {
+
   (...)
+
 }
+
 ```
 
 `times` 方法接受一个回调函数作为参数，该函数在每次迭代时被调用。此回调函数必须接收一个与当前计数器对应的数字参数。
 
 以下代码展示了支持 `times` 方法后的代码适配：
-
 ```javascript
+
 var maximum=10;
+
 maximum.times(function(cpt) {
+
   (...)
+
 });
+
 ```
 
 ## 集合管理
@@ -4350,20 +4923,27 @@ Prototype 首先引入了 `Enumerable` 类以便遍历数据结构。由于它�
 
 `_each` 方法的参数是一个闭包，用于封装一个回调函数和一个计数器。后者由回调函数管理，回调函数在每次调用时都会递增。
 
-### 回调函数
+### 回调函函数
 
 JavaScript 函数可以赋值给变量，从而作为对象方法的参数传递。这些函数可以在这些方法的体内调用，以便对其处理进行参数化：
-
 ```javascript
+
 function testFonctionRappel(param) {
+
   for(var cpt=0;cpt<;cpt++) {
+
     param(cpt);
+
   }
+
 }
 
 testFonctionRappel(function(value) {
+
   alert("Valeur: "+value);
+
 });
+
 ```
 
 回调函数必须预先知道调用它时的参数数量。表格 6.3 总结了 `Enumerable` 类的方法。
@@ -4398,10 +4978,6 @@ testFonctionRappel(function(value) {
 | `min` | 值和索引（回调函数） | 根据回调函数确定集合的最小值。 |
 | `partition` | 值和索引（回调函数） | 允许将集合中的元素分割到两个集合中， |
 
-
-
-
-
 # JavaScript 库基础
 
 ## 集合方法
@@ -4433,25 +5009,34 @@ testFonctionRappel(function(value) {
 ## 库的原型方法
 
 `each` 方法允许遍历集合。它接收一个回调函数作为参数，该函数为集合中的每个元素执行，接收值和索引，如下代码所示：
-
 ```javascript
+
 var collection = [ "element1", "element2", "element3" ];
+
 collection.each(function(value, index) {
+
   alert("索引为 "+index+" 的值是 "+value);
+
 });
+
 ```
 
 `collect` 方法允许从集合构建数组。对于每个元素，值由回调函数决定，如下代码所示，这增加了集合的所有值：
-
 ```javascript
+
 var collection = [ 1, 2, 3 ];
+
 var resultat = collection.collect(function(value, index) {
+
   return value+1;
+
 });
+
 // resultat 包含 [ 2, 3, 4 ]
 
-
 `grep` 方法允许根据正则表达式构建集合。除非指定了回调函数，否则存储的是初始集合的值。以下代码展示了 `grep` 的实现：
+
+
 
 ```javascript
 var collection = ["test method", "grep", "a test" ]; var resultat = collection.grep("^test");
@@ -4477,6 +5062,7 @@ var resultat = collection.invoke("methode","parametre");
 ```
 
 ### `pluck`
+
 `pluck` 方法允许从集合对象中提取数据以构建另一个。数据是通过方法的参数属性名提取的。以下代码给出了 `pluck` 的用法：
 
 ```javascript
@@ -4492,6 +5078,7 @@ var resultat = collection.pluck("propriete");
 ```
 
 ### `sortBy`
+
 `sortBy` 方法允许根据 `Array` 类的 `sort` 方法对集合元素进行排序。该方法接收一个函数来指定要排序并添加到新集合中的值。以下代码展示了 `sortBy` 方法的使用：
 
 ```javascript
@@ -4503,6 +5090,7 @@ var resultat = collection.sortBy(function(value,index) {
 ```
 
 ### `toArray`
+
 `toArray` 方法允许将集合转换为数组，如下：
 
 ```javascript
@@ -4511,6 +5099,7 @@ var resultat = collection.toArray();
 ```
 
 ### `zip`
+
 `zip` 方法允许合并集合。结果数组的长度与原始数组相同，但每个元素都是一个子数组。这些子数组包含给定索引的所有数组元素。以下代码给出了 `zip` 方法的用法：
 
 ```javascript
@@ -4524,7 +5113,7 @@ var resultat = [1,2,3].zip([4,5,6],[7,8,9]);
 
 ### 表 6.4 Array 类的扩展方法
 
-| 方法 | 参数 |  |
+| 方法 | 参数 | 描述 |
 | :--- | :--- | :--- |
 | `each` | 接收一个代表值和索引的对象的回调函数 | 用于 `Enumerable` 类扩展的扩展。它从索引 0 到长度减 1 遍历集合。 |
 | `clear` | 无 | 允许通过清空来重置数组。 |
@@ -4536,10 +5125,6 @@ var resultat = [1,2,3].zip([4,5,6],[7,8,9]);
 | `reverse` | 布尔值，指定是否反转数组元素的顺序 | 返回一个顺序与原始数组反转的数组。 |
 | `shift` | 无 | 允许返回数组的第一个元素。该元素随后从数组中删除，所有元素向左移动。数组元素数量也减一。 |
 | `without` | 要排除的元素列表 | 返回列表中不在参数列表中的所有元素。 |
-
-
-
-
 
 ```javascript
 var collection = [ "element1","element2","element3","element4" ]; var premierElement = collection.first();
@@ -4557,19 +5142,15 @@ var collection = [ "element1","element2","element3","element4" ]; var resultat =
 /* 结果包含 [ "element4","element3","element2","element1" ]*/
 ```
 
-`shift` 方法允许获取数组的第一个元素同时将其从中删除并将所有元素向左移动，如下代码所示：```javascript
+`shift` 方法允许获取数组的第一个元素同时将其从中删除并将所有元素向左移动，如下代码所示：
+
+```javascript
 var collection = [ "element1","element2","element3","element4" ]; var resultat = collection.shift();
 
 /* 结果包含 "element1" 且 collection [ "element2","element3","element4" ] */
 ```
 
-LivreGougeon 第 137 页 2006 年 11 月 28 日 周二 4:23 16
-
 # Prototype 库
-
-**137**
-
-*第 6 章*
 
 ## `Hash` 类
 
@@ -4612,7 +5193,7 @@ var hash = $H({ "cle1": "valeur1", "cle2": "valeur2" }); hash.merge({ "cle3": "v
 `toQueryString` 方法允许从哈希表轻松地构建 HTTP 参数字符串，如下代码所示：
 
 ```javascript
-var hash = $H( "cle1": "valeur1", "cle2": "valeur2" }); var queryString = hash.toQueryString();
+var hash = $H({ "cle1": "valeur1", "cle2": "valeur2" }); var queryString = hash.toQueryString();
 
 // queryString 包含 cle1=valeur1&cle2=valeur2
 ```
@@ -4676,14 +5257,6 @@ Prototype 库提供了一个函数用于搜索 DOM 树中所有匹配给定 CSS 
 </html>
 ```
 
-LivreGougeon 第 139 页 2006 年 11 月 28 日 周二 4:23 16
-
-# Prototype 库
-
-**139**
-
-*第 6 章*
-
 标记 ❶ 表示使用该方法在数组中获取与 maClasse 匹配的元素列表。标记 ❷ 表示相应的标签。
 
 ## Ajax 支持
@@ -4692,7 +5265,7 @@ Prototype 库提供了若干功能用于实现 Ajax。它特别允许通过 HTTP
 
 ### 执行 Ajax 请求
 
-使用 Ajax 支持进行发送发送和接收基于 `AjaxRequest` 类。该类支持同步和异步通信。它会根据浏览器自动检测用于传输的对象。允许此通信的对象存储在 `AjaxRequest` 类实例的 `transport` 变量中。
+使用 Ajax 支持进行发送发送和接收基于 `Ajax.Request` 类。该类支持同步和异步通信。它会根据浏览器自动检测用于传输的对象。允许此通信的对象存储在 `Ajax.Request` 类实例的 `transport` 变量中。
 
 ### 传输对象
 
@@ -4710,11 +5283,7 @@ var ajaxRequest = new Ajax.Request(url, options);
 
 类的构造函数允许指定地址以及发送选项。它还允许初始化用于浏览器的传输对象。一旦该对象初始化，在异步请求的情况下，构造函数会定位指定的回调函数并发送请求。
 
-
-
-
-
-# 表 6.6 `Ajax.Request` 类的初始化选项
+### 表 6.6 `Ajax.Request` 类的初始化选项
 
 | 选项 | 值 | 说明 |
 | :--- | :--- | :--- |
@@ -4748,8 +5317,6 @@ var ajaxRequest = new Ajax.Request(
 );
 var reponseText = ajaxRequest.transport.responseText;
 ```
-
-## Prototype 库
 
 在异步调用的情况下，可以省略 `asynchronous` 选项，因为它的默认值为 `true`。相反，应当定义应用程序需要处理的请求生命周期事件。该机制通过回调函数在请求选项中进行配置。所支持的事件汇总如表 6.7 所示。
 
@@ -4790,9 +5357,9 @@ var ajaxRequest = new Ajax.Request(
 
 当 HTTP 头指定接收到的数据为 JSON 格式时，这些数据将被评估并以 JavaScript 对象的形式通过上述 `traiterReponse` 函数的 `json` 参数传递给回调函数。
 
-## JavaScript 库的基础
+## 全局响应器
 
-在异步 Ajax 使用中，Prototype 库提供了为所有请求定义全局回调方法的可能性。这基于 `Ajax.Responders` 对象及其 `register` 方法，如代码代码所示：
+在异步 Ajax 使用中，Prototype 库提供了为所有请求定义全局回调方法的可能性。这基于 `Ajax.Responders` 对象及其 `register` 方法，如代码所示：
 
 ```javascript
 var rappelsGlobaux = {
@@ -4807,7 +5374,7 @@ var rappelsGlobaux = {
 Ajax.Responders.register(rappelsGlobaux);
 
 function traiterReponse(request,json) {
-  var reponseText = ajaxRequest.transport.responseText;
+  var reponseText = request.transport.responseText;
   (...)
 }
 
@@ -4856,7 +5423,7 @@ var ajaxUpdater = new Ajax.Updater(
   (...)
   <body>
     (...)
-    <div id="monDiv"></</div>
+    <div id="monDiv"></div>
     (...)
   </body>
 </html>
@@ -4883,10 +5450,6 @@ var ajaxUpdater = new Ajax.PeriodicalUpdater(
 );
 ```
 
-
-
-
-
 上述示例将收到的 HTML 块添加到标识为 `monDiv` 的页面标签中。该标签的内容将每两秒刷新一次。
 
 以下代码描述了之前 HTML 页面的新结构，并包含一个收到的 HTML 块示例（标记为 ❶）：
@@ -4897,7 +5460,7 @@ var ajaxUpdater = new Ajax.PeriodicalUpdater(
 <body>
 (...)
 <div id="monDiv">
-<h1>对 Ajax 请求的响应。</h1> **¨** ❶
+<h1>对 Ajax 请求的响应。</h1> ❶
 <p>响应内容。</p>
 </div>
 (...)
@@ -4905,13 +5468,7 @@ var ajaxUpdater = new Ajax.PeriodicalUpdater(
 </html>
 ```
 
----
-
-## JavaScript 库的基础知识
-
-表 6.8 总结了 `Ajax.Updater` 和 `Ajax.PeriodicalUpdater` 类中可使用的额外选项。
-
-### 表格 6.8 `Ajax.Updater` 和 `Ajax.PeriodicalUpdater` 类的额外选项
+### 表 6.8 `Ajax.Updater` 和 `Ajax.PeriodicalUpdater` 类的额外选项
 
 | 选项 | 值 | 描述 |
 | :--- | :--- | :--- |
@@ -4924,7 +5481,7 @@ var ajaxUpdater = new Ajax.PeriodicalUpdater(
 
 编写 JavaScript 脚本通常繁琐，某些表达式和语法反复出现，增加了代码的负担。Prototype 库为最常见的表达式提供了“快捷写”。
 
-对于使用 HTML 页面 DOM 元素的脚本，通过标识在 DOM 树中搜索元素是常见的。`$` 函数允许获取标识与函数参数匹配的元素。它基于 HTML 页面 `document` 对象的 `getElementById` 方法。$` 函数可以接受一个或多个标识作为参数。相应的返回值可以是元素或元素数组。
+对于使用 HTML 页面 DOM 元素的脚本，通过标识在 DOM 树中搜索元素是常见的。`$` 函数允许获取标识与函数参数匹配的元素。它基于 HTML 页面 `document` 对象的 `getElementById` 方法。`$` 函数可以接受一个或多个标识作为参数。相应的返回值可以是元素或元素数组。
 
 以下代码演示了此快捷写的使用：
 
@@ -4950,8 +5507,6 @@ var elements = $$("monStyle") ;
 var element = $F("monIdentifiant") ;
 ```
 
-## Prototype 库
-
 变量 `element` 引用下方代码中描述且标识为 `monIdentifiant` 的表单字段：
 
 ```html
@@ -4971,7 +5526,7 @@ var element = $F("monIdentifiant") ;
 ```javascript
 var tableau = $A($("monDiv").childNodes);
 tableau.each(function(element) {
-  alert("element : "++element);
+  alert("element : " + element);
 });
 ```
 
@@ -4979,8 +5534,8 @@ tableau.each(function(element) {
 
 ```javascript
 var hashTable = $H({
-  "cle1", "valeur1",
-  "cle2", "valeur2"
+  "cle1": "valeur1",
+  "cle2": "valeur2"
 });
 ```
 
@@ -4989,7 +5544,7 @@ var hashTable = $H({
 ```javascript
 var hashtable = (...)
 var cles = hashtable.keys();
-var valeurs = hashtables.values();
+var valeurs = hashtable.values();
 ```
 
 最后，Prototype 库提供了快捷写 `$R` 用于定义一个值范围。它基于之前描述的 `ObjectRange` 类。以下代码提供了一个判断值是否在范围内的示例：
@@ -5002,13 +5557,13 @@ var resultat = $R(0, 10, true).include(value);
 
 ## 结论
 
-Prototype 库提供了许多有趣的机制，旨在简化并减轻 JavaScript 应用程序的编写。所实现的机制范围从语言提供的类扩展（如 `Object`、`String` 或 `Number`）到对 Ajax 的支持以及通过$` 前缀方法实现的快捷写。
+Prototype 库提供了许多有趣的机制，旨在简化并减轻 JavaScript 应用程序的编写。所实现的机制范围从语言提供的类扩展（如 `Object`、`String` 或 `Number`）到对 Ajax 的支持以及通过 `$` 前缀方法实现的快捷写。
 
 该库还利用了 JavaScript 的高级概念，如对象字面量、回调函数和闭包，以便开发者能够编写更简洁、更易读的 JavaScript 代码。
 
 我们将在第 10 章看到 Prototype 提供了实现事件管理和方便在 HTML 页面中使用元素的功能。Prototype 库被广泛应用于 JavaScript 应用程序中，甚至作为其他框架（如 Ruby on Rails）的基础。
 
-## Dojo 库的基础知识
+# Dojo 库的基础知识
 
 Dojo 库是一个开源工具箱，旨在方便 JavaScript 和 DHTML 技术的使用。它在 Alex Russell 和 Dylan Schiemann 的推动下，基于 `nWidgets`、`burstlib` 和 `f(m)` 等项目创建，其主要目标是解决阻碍大规模应用于以开发富交互 Web 应用的 DHTML 问题。
 
@@ -5018,21 +5573,20 @@ Dojo 的第一行代码写于 2004 年 9 月，第一批贡献开始于 2005 年
 
 我们将该库的介绍分为两个不同的章节。本章讨论其实现、模块化结构、对语言基础元素的支持以及对 Ajax 的支持。我们将在第 11 章详细介绍 Dojo 与 Web 编程相关的所有功能。
 
-图 7.1 展示了该库的主要模块组。
+## 图 7.1：dojo 库的模块化架构
 
-```javascript
+```text
 xml.parse.*
 ```
 
+### 图形组件模块
 
+* `widget.Widget`
+* `widget.manager`
+* `widget.HtmlWidget`
 
+### 应用级模块
 
-
-# `widget.Widget`
-# `widget.manager`
-# `widget.HtmlWidget`
-
-## 图形组件模块
 * `rpc.*`
 * `dnd.*`
 * `animation.*`
@@ -5041,37 +5595,31 @@ xml.parse.*
 * `fx.*`
 * `logging.*`
 
-## 应用级模块
+### 环境相关模块
+
 * `dom.*`
 * `html.*`
 * `style.*`
 
-## 环境相关模块
+### JavaScript 语言模块
+
 * `string.*`
 * `lang.*`
 * `event.*`
 * `collection.*`
 
-## JavaScript 语言模块
-## 模块管理系统
+### 模块管理系统
 
-### 图 7.1：dojo 库的模块化架构
 该机制是递归的。一个模块可能需要加载其他模块，并实现模块名称与其源文件之间的映射，以及这些文件的传输和其包含的 JavaScript 代码的加载。
 
-LivreGougeon 第 149 页 2006 年 11 月 28 日星期二 4:23 16
-
-## dojo 库基础
-### 149
-### 第 7 章
-
 ## 安装与配置
+
 dojo 库根据所需的用途提供不同的发行版本。这些版本的目标是将不同的模块直接整合到 `dojo.js` 文件（该库的核心文件）中，而不是按需加载它们。
 
 事实上，按需加载大量文件会导致过多的网络交互，并影响性能。
 
-表 7.1 总结了可用的主要发行版本及其内容。
+### 表 7.1 dojo 库的发行版本
 
-#### 表 7.1 dojo 库的发行版本
 | 名称 | 描述 |
 | :--- | :--- |
 | ajax | 在 `dojo.js` 中包含 dojo 核心以及所有实现 Ajax 技术的模块。 |
@@ -5092,19 +5640,14 @@ dojo 库根据所需的用途提供不同的发行版本。这些版本的目标
 请注意，也可以直接从版本管理器获取未打包的版本进行进行工作。
 
 库的安装包括将 dojo 发行版中的目录和文件复制到网站 Web 服务器可访问的目录中。该目录必须能够从浏览器访问，并且至少包含以下元素：
+
 * `src/`
 * `dojo.js`
 * `iframe_history.html`
 
-LivreGougeon 第 150 页 2006 年 11 月 28 日星期二 4:23 16
-
-## JavaScript 库基础
-### 150
-### 第二部分
-
 库的配置在每个 HTML 页面分两个步骤完成。
 
-第一步初始化全局对象 `djConfig`（标记为❶），它包含了库的配置设置：
+第一步初始化全局对象 `djConfig`（标记为 ❶），它包含了库的配置设置：
 
 ```html
 <html>
@@ -5118,12 +5661,11 @@ djConfig = { isDebug: true }; // ❶
 </html>
 ```
 
-表 7.2 总结了该对象的主要属性，以便用于配置 dojo 库。
+### 表 7.2 `djConfig` 对象的主要配置属性
 
-#### 表 7.2 `djConfig` 对象的主要配置属性
 | 属性 | 描述 |
 | :--- | :--- |
-| allowQueryConfig | 允许使用查询参数来重写 `djConfig` 对象的配置属性。其默认值为 `false`。在其值为 `true` 的情况下，页面地址中的后续参数字符串允许将 `isDebug` 属性的值设置为 `true`：**/maPage.html?djConfig.isDebug=true`*。 |
+| allowQueryConfig | 允许使用查询参数来重写 `djConfig` 对象的配置属性。其默认值为 `false`。在其值为 `true` 的情况下，页面地址中的后续参数字符串允许将 `isDebug` 属性的值设置为 `true`：`/maPage.html?djConfig.isDebug=true`。 |
 | baseRelativePath | 当 dojo 源和使用它的页面由同一地址提供时必须使用。其默认值为空字符串。 |
 | debugAtAllCosts | 配置库以便于在不同的工具中进行调试。其默认值为 `false`。 |
 | isDebug | 允许激活应用程序追踪。其默认值为 `false`。 |
@@ -5131,7 +5673,7 @@ djConfig = { isDebug: true }; // ❶
 | preventBackButtonFix | 允许激活或禁用浏览器“后退”按钮的管理。如果其值为 `false`，则禁用此机制。其默认值为 `true`。 |
 | searchIds | 如果 `parseWidgets` 属性值为 `false`，允许指定要评估的 dojo 标签的标识。 |
 
-第二步是在文件开头引用发行版的 `dojo.js` 文件（后续代码中标记为❶）：
+第二步是在文件开头引用发行版的 `dojo.js` 文件（后续代码中标记为 ❶）：
 
 ```html
 <html>
@@ -5144,26 +5686,17 @@ djConfig = { isDebug: true };
 </html>
 ```
 
-Livreougeon 第 151 页 2006 年 11 月 28 日星期二 4:23 16
-
-## dojo 库基础
-### 151
-### 第 7 章
-
 dojo 的不同发行版本提供了两个版本的 `dojo.js` 文件。第一个包含一个难以阅读的压缩版本源码。第二个对应于 `dojo.js.uncompressed.js` 文件并位于上一个文件相同的位置，未压缩，因此易于阅读。
 
 第一个文件的加载速度更快，应该在生产环境中使用。然而，对于查看 dojo 执行的处理过程，它可能难以使用，而第二个文件则不是。
 
 ## 模块管理
+
 如前所述，dojo 库结构模块模块，这些模块汇聚了各种 JavaScript 实体，例如函数或 JavaScript 对象。
 
 包（Package）代表模块的存储单元，因此对应于一个文件或从 Web 服务器下载的实体。默认情况下，所有包都位于 dojo 库安装目录下的 `src/` 目录中。
 
 由于库代码的总权重很大，dojo 的方法是只加载应用程序所需的模块。库为此实现了一种基于 `dojo.require()` 和 `dojo.provide()` 方法的按需加载机制。
-
-
-
-
 
 第二个参数指定了包（package）中包含的模块名称。这个概念与 Java 语言中使用 `package` 关键字实现的概念相似。该方法仅用于 dojo 模块或附加模块的实现，例如图形组件。
 
@@ -5178,13 +5711,8 @@ dojo 的不同发行版本提供了两个版本的 `dojo.js` 文件。第一个�
 djConfig = { isDebug: true }
 </script>
 <script language="JavaScript" type="text/javascript" src="../../dojo.js"></script>
-LivreGougeon Page 152 Mardi, 28\. novembre 2006 4:23 16
-**JavaScript 库的字体**
-**152**
-
-*第二部分*
 <script language="JavaScript" type="text/javascript">
-dojo.require("dojo.lang.declare"); **¨** ❶
+dojo.require("dojo.lang.declare"); // ❶
 (...)
 </script>
 </head>
@@ -5192,21 +5720,19 @@ dojo.require("dojo.lang.declare"); **¨** ❶
 </html>
 ```
 
-图 7.2 了一了此示例中实现的机制。
+### 图 7.2：`dojo.lang.declare` 模块加载机制
 
-**HTML 页面**
-**HTTP 服务器**
-
-```javascript
-dojo.require("dojo.lang.declare");
+```text
+HTML 页面
+  |
+  | dojo.require("dojo.lang.declare");
+  v
+HTTP 服务器
+  |
+  | 获取文件
+  v
+dojo 库源 -> src/lang/declare.js
 ```
-
-dojo 库源
-获取文件
-`src/lang/declare.js`
-
-**图 7.2**
-*`dojo.lang.declare` 模块加载机制*
 
 在需要导入一个模块的所有子模块时，可以使用字符 `*`。此时库将基于位于包目录下的特殊文件 `__package__.js`，以确定要导入的模块。
 
@@ -5220,7 +5746,7 @@ djConfig = { isDebug: true }
 </script>
 <script language="JavaScript" type="text/javascript" src="../../dojo.js"></script>
 <script language="JavaScript" type="text/javascript">
-dojo.require("dojo.lang.*"); **¨** ❶
+dojo.require("dojo.lang.*"); // ❶
 (...)
 </script>
 </head>
@@ -5228,37 +5754,33 @@ dojo.require("dojo.lang.*"); **¨** ❶
 </html>
 ```
 
-LivreGougeon Page 153 Mardi, 28\. novembre 2006 4:23 16
-**dojo 库的字体**
-**153**
-*第 7 章*
+### 图 7.3：`dojo.lang.*` 模块加载机制
 
-图 7.3 了一了此示例中实现的机制。
-
-**HTML 页面**
-**HTTP 服务器**
-获取文件
-`src/lang/__package__.js`
-获取文件
-`src/lang.js`
-获取文件
-`src/lang/common.js`
-
-```javascript
-dojo.require("dojo.lang.*");
+```text
+HTML 页面
+  |
+  | dojo.require("dojo.lang.*");
+  v
+HTTP 服务器
+  |
+  | 获取文件
+  v
+dojo 库源 -> src/lang/__package__.js
+  |
+  | 获取文件
+  v
+src/lang.js
+  |
+  | 获取文件
+  v
+src/lang/common.js
+  |
+  | ...
+  v
+src/lang/declare.js
 ```
 
-Dojo 库源
-(...)
-获取文件
-`src/lang/declare.js`
-
-**图 7.3**
-*`dojo.lang.*` 模块加载机制*
-
-表格 7.3 总结了 dojo 库中提供的主要模块。
-
-**表格 7.3 dojo 库的主要模块**
+### 表 7.3 dojo 库的主要模块
 
 | 模块 | 描述 |
 | :--- | :--- |
@@ -5273,16 +5795,6 @@ Dojo 库源
 | dojo.logging | 用于实现应用程序日志的支持 |
 | dojo.profile | JavaScript 性能分析器，用于测量处理性能 |
 | dojo.reflect | 允许访问对象和函数信息的函数 |
-
-LivreGougeon Page 154 Mardi, 28\. novembre 2006 4:23 16
-**JavaScript 库的字体**
-**154**
-*第二部分*
-
-**表格 7.3 dojo 库的主要模块（续）**
-
-| 模块 | 描述 |
-| :--- | :--- |
 | dojo.regexp | 构建特殊正则表达式的函数 |
 | dojo.string | 与字符串相关的函数 |
 | dojo.style | 允许实现基于 CSS 样式处理的函数 |
@@ -5294,7 +5806,7 @@ LivreGougeon Page 154 Mardi, 28\. novembre 2006 4:23 16
 
 关于 Web 开发的 dojo 机制将在第 11 章详细介绍。
 
-**基础支持**
+## 基础支持
 
 这一系列模块旨在方便 JavaScript 的使用。子模块可以通过单个指令导入，例如 `dojo.require("dojo.lang.*")`。
 
@@ -5320,11 +5832,6 @@ function maFonction() {
 ```
 
 `maFonction` 返回最后一个函数的返回值（标记为 ❶），因为它是执行的。
-
-LivreGougeon Page 155 Mardi, 28\. novembre 2006 4:23 16
-**dojo 库的字体**
-**155**
-*第 7 章*
 
 `dojo.delayEach` 函数提供了一种按指定间隔执行函数的有趣机制。它基于 JavaScript 的 `setTimeout` 方法。它还允许指定在每次调用之前执行的回调函数以及在所有函数之后执行的。
 
@@ -5356,45 +5863,23 @@ dojo.lang.setTimeout(function() {
 }, 10000);
 ```
 
-***类型检查***
+### 类型检查
 
-dojo 提供了基础 JavaScript 的封装以确定变量类型。这些实现基于 [*http://www.crockford.com/javascript/recommend.html.*](http://www.crockford.com/javascript/recommend.html) 中描述的概念。
+dojo 提供了基础 JavaScript 的封装以确定变量类型。这些实现基于 [`http://www.crockford.com/javascript/recommend.html`](http://www.crockford.com/javascript/recommend.html) 中描述的概念。
 
-表格 7.4 总结了这些不同的类型检查函数。
-
-**表格 7.4 dojo 类型检查函数**
+### 表 7.4 dojo 类型检查函数
 
 | 方法 | 参数 | 描述 |
 | :--- | :--- | :--- |
-| dojo.lang.isAlien | 元素 | 确定元素是否不是 JavaScript 语言提供的函数 |
-| dojo.lang.isArray | 元素 | 确定元素是否为数组 |
-| dojo.lang.isArrayLike | 元素 | 确定元素是否为像数组的对象，即具有一个对应于有限整数的 length 属性 |
-| dojo.lang.isBoolean | | |
-
-
-
-
-
-# 元素 (Element)
-
-判断参数元素是否为布尔值。
-
-LivreGougeon 第 156 页 2006 年 11 月 28 日 星期二 4:23 16
-
-**JavaScript 库基础**
-**156**
-
-*第二部分*
-
-## 表格 7.4 dojo 类型检查函数（续）
-
-| 方法 | 参数 | 说明 |
-| :--- | :--- | :--- |
-| `dojo.lang.isFunction` | 一个元素 | 判断参数元素是否为函数。 |
-| `dojo.lang.isNumber` | 一个元素 | 判断参数元素是否为数字。 |
-| `dojo.lang.isObject` | 一个元素 | 判断参数元素是否为对象。 |
-| `dojo.lang.isString` | 一个元素 | 判断参数元素是否为字符串。 |
-| `dojo.lang.isUndefined` | 一个元素 | 判断参数元素是否为未定义（undefined）。 |
+| `dojo.lang.isAlien` | 元素 | 确定元素是否不是 JavaScript 语言提供的函数 |
+| `dojo.lang.isArray` | 元素 | 确定元素是否为数组 |
+| `dojo.lang.isArrayLike` | 元素 | 确定元素是否为像数组的对象，即具有一个对应于有限整数的 length 属性 |
+| `dojo.lang.isBoolean` | 元素 | 判断参数元素是否为布尔值。 |
+| `dojo.lang.isFunction` | 元素 | 判断参数元素是否为函数。 |
+| `dojo.lang.isNumber` | 元素 | 判断参数元素是否为数字。 |
+| `dojo.lang.isObject` | 元素 | 判断参数元素是否为对象。 |
+| `dojo.lang.isString` | 元素 | 判断参数元素是否为字符串。 |
+| `dojo.lang.isUndefined` | 元素 | 判断参数元素是否为未定义（undefined）。 |
 
 以下代码描述了这些用于确定 JavaScript 变量不同方法的实现：
 
@@ -5413,9 +5898,9 @@ var chaine = "Ceci est un test";
 alert(dojo.lang.isString(chaine)); // 显示 true
 ```
 
-## 函数
+### 函数
 
-与上一章描述的 prototype 库中的 `bind` 方法类似，dojo 了一个了一个 `dojo.lang.hitch` 函数，用于解决 JavaScript 函数的执行上下文问题。该函数接受一个对象和一个函数，该函数将根据前面的对象执行。以下代码重用了上一章的示例，并将其适配到该函数：
+与上一章描述的 prototype 库中的 `bind` 方法类似，dojo 提供了一个 `dojo.lang.hitch` 函数，用于解决 JavaScript 函数的执行上下文问题。该函数接受一个对象和一个函数，该函数将根据前面的对象执行。以下代码重用了上一章的示例，并将其适配到该函数：
 
 ```javascript
 var monInstance = new Object();
@@ -5433,13 +5918,6 @@ nouvelleMaFonction(); // 正确显示 maVariable 的值
 
 `dojo.lang.curry` 函数提供了通过为某些参数定义特定值来创建函数的功能。创建的函数随后可以使用较少的参数调用。
 
-LivreGougeon 第 157 页 2006 年 11 月 28 日 星期二 4:23 16
-
-**dojo 库基础**
-**157**
-
-*第 7 章*
-
 以下代码描述了该函数的实现：
 
 ```javascript
@@ -5453,13 +5931,13 @@ var resultat = nouvelleFonction("valeur2", "valeur3"); // resultat 包含 “val
 
 第一个参数在该示例中的值为 null，用于指定函数的执行上下文。
 
-## 面对象编程支持
+## 面向对象编程支持
 
-dojo 库提供了各种实用工具函数，允许对对象执行基本操作。表格 7.5 汇总了这些函数。
+dojo 库提供了各种实用工具函数，允许对对象执行基本操作。
 
-### 表格 7.5 对象管理函数
+### 表 7.5 对象管理函数
 
-| 函数 | 参数 |  |
+| 函数 | 参数 | 描述 |
 | :--- | :--- | :--- |
 | `dojo.inherits` | 两个函数 | 允许一个类继承另一个类，通过将子类的原型属性初始化为父类的属性来实现。 |
 | `dojo.extend` | 一个对象 | 在构造函数的原型属性上添加方法。 |
@@ -5505,68 +5983,32 @@ function ExtendedStringBuffer() {
 dojo.inherits(ExtendedStringBuffer, StringBuffer);
 ```
 
-dojo 库还通过 `dojo.lang.declare` 函数提供了更深的面对象编程支持，该函数稍后详细介绍。
+dojo 库还通过 `dojo.lang.declare` 函数提供了更深的面向对象编程支持，该函数稍后详细介绍。
 
-### 表格
+## 表格
 
-dojo 库提供了不同的函数，方便使用和操作简单数组和关联数组。表格 7.6 汇总了这些函数。
+dojo 库提供了不同的函数，方便使用和操作简单数组和关联数组。
+
+### 表 7.6 数组操作函数
 
 | 函数 | 参数 | 说明 |
 | :--- | :--- | :--- |
 | `dojo.lang.every` | 一个数组，一个回调函数 | 判断数组中的所有元素是否符合某个标准。该检查通过传递给参数的回调函数进行。回调函数的执行在最后一个参数对应的对象上下文中进行。 |
 | `dojo.lang.filter` | 一个数组，一个回调函数 | 允许通过回调函数过滤数组元素。回调函数的执行在最后一个参数对应的对象上下文中进行。 |
 | `dojo.lang.find` | 一个数组，一个元素，一个标记 | 返回数组中第一个与参数元素标识和确定标记匹配的元素的索引。如果没有匹配的元素，则返回 -1。数组从末尾向开头遍历。 |
-| `dojo.lang.findLast` | 一个数组，一个元素，一个标记 | 返回数组中最后一个与参数元素标识和确定标记匹配的元素的索引。如果没有匹配的元素，则返回 -1。 | |
-| `dojo.lang.forEach` | 一个数组和一个回调函数 | |
+| `dojo.lang.findLast` | 一个数组，一个元素，一个标记 | 返回数组中最后一个与参数元素标识和确定标记匹配的元素的索引。如果没有匹配的元素，则返回 -1。 |
+| `dojo.lang.forEach` | 一个数组和一个回调函数 | 通过回调函数来遍历数组。该函数在每次迭代时接收当前元素、其索引以及所遍历的数组作为参数。 |
+| `dojo.lang.has` | 关联数组和一个名称 | 判断关联数组是否具有参数传递的名称的属性。 |
+| `dojo.lang.inArray` | 一个数组和一个元素 | 判断一个元素是否存在于数组中。 |
+| `dojo.lang.indexOf` | 一个数组、一个元素、一个标志 | 等同于标识性函数 `dojo.lang.find`，该标志决定了数组是从尾部向头部遍历。 |
+| `dojo.lang.isEmpty` | 一个数组 | 判断数组是否为空。此函数同时支持普通数组和关联数组。 |
+| `dojo.lang.lastIndexOf` | 一个数组、一个元素和一个标识标志 | 等同于 `dojo.lang.findLast` 函数。 |
+| `dojo.lang.map` | 一个数组、一个对象和一个回调函数 | 允许根据回调函数从另一个数组构建新数组。该函数负责返回要插入到新数组中的对象。回调函数的执行在最后一个参数对应的对象的上下文中进行。 |
+| `dojo.lang.some` | 一个数组、一个回调函数和一个对象 | 判断数组是否至少有一个元素符合某个标准。该检查通过传递参数的回调函数进行。回调函数的执行在最后一个参数对应的对象的上下文中进行。 |
+| `dojo.lang.toArray` | 一个类数组对象和一个起始索引 | 允许将类数组对象转换为数组。 |
+| `dojo.lang.unnest` | 简单元素或相互嵌套的数组 | 允许从嵌套数组构建一个简单数组。 |
 
-
-
-
-通过回调函数来遍历数组。该函数在每次迭代时接收当前元素、其索引以及所遍历的数组作为参数。
-
-### `dojo.lang.has`
-关联数组和一个名称
-判断关联数组是否具有参数传递的名称的属性。
-
-### `dojo.lang.inArray`
-一个数组和一个元素
-判断一个元素是否存在于数组中。
-
-### `dojo.lang.indexOf`
-一个数组、一个元素、一个标志
-等同于标识性函数 `dojo.lang.find`，该标志决定了数组是从尾部向头部遍历。
-
-### `dojo.lang.isEmpty`
-一个数组
-判断数组是否为空。此函数同时支持普通数组和关联数组。
-
-### `dojo.lang.lastIndexOf`
-一个数组、一个元素和一个标识标志
-等同于 `dojo.lang.findLast` 函数。
-
-### `dojo.lang.map`
-一个数组、一个对象和一个回调函数
-允许根据回调函数从另一个数组构建新数组。该函数负责返回要插入到新数组中的对象。回调函数的执行在最后一个参数对应的对象的上下文中进行。
-
-### `dojo.lang.some`
-一个数组、一个回调函数和一个对象
-判断数组是否至少有一个元素符合某个标准。该检查通过传递参数的回调函数进行。回调函数的执行在最后一个参数对应的对象的上下文中进行。
-
-### `dojo.lang.toArray`
-一个类数组对象和一个起始索引
-允许将类数组对象转换为数组。
-
-### `dojo.lang.unnest`
-简单元素或相互嵌套的数组
-允许从嵌套数组构建一个简单数组。
-
-LivreGougeon 第 160 页 2006 年 11 月 28 日 周二 4:23 16
-**JavaScript 库基础**
-**160**
-
-*第二部分*
-
-由于 JavaScript 将对象视为关联数组，因此适用于这些数组的 7.6 函数可以与对象配合。
+由于 JavaScript 将对象视为关联数组，因此适用于这些数组的函数可以与对象配合。
 
 `dojo.lang.isEmpty` 函数判断参数中的数组是否包含元素，如下代码所示：
 
@@ -5611,12 +6053,6 @@ var monTableau = [ "élément1","élément2","élément3" ]; var indiceElement =
 `dojo.lang.find` 和 `dojo.lang.findLast` 查找数组中第一个与参数指定值匹配的元素的索引。这两个函数分别从头到尾和反之地遍历数组。
 
 它们接收数组和要查找的元素作为参数。第三个参数允许通过基于 `===` 运算符来指定元素比较是否是严格的（不进行类型转换）。如果没有找到任何元素，则返回值为 -1。
-
-LivreGougeon 第 161 页 2006 年 11 月 28 日 周二 4:23 161
-**dojo 库基础**
-**161**
-
-*第 7 章*
 
 以下代码描述了这些函数的实现：
 
@@ -5668,8 +6104,7 @@ var retourEvery = dojo.lang.every(monTableau, function(element, indice, tableau)
 
 变量 `retourEvery` 的值为 `true`。如果数组中包含一个值不是 "élément" 的元素，则该变量的值为 `false`。
 
-
-
+## `dojo.lang.declare` 详解
 
 关联数组中存在的所有方法都会被添加到类的原型上，因此被该类的所有实例共享。
 
@@ -5777,17 +6212,19 @@ dojo.lang.declare("java.lang.ExtendedStringBuffer", java.lang.StringBuffer, {
 
 当调用 `ExtendedStringBuffer` 类的构造函数时，两个类的 `initializer` 方法会被连续调用。
 
-### 字符串及其派生类型
+## 字符串及其派生类型
 
 `dojo` 提供了管理字符串及其派生支持。这些包括字符串本身（使用 `dojo.string` 模块）、日期（使用 `dojo.date` 模块）以及正则表达式（使用 `dojo.regexp` 模块）。
 
-#### 字符串
+### 字符串
 
 提供字符串操作函数的 `dojo` 模块是 `dojo.string`。在该模块中，函数名带有 `dojo.string` 前缀。
 
+### 表 7.7 `dojo.string` 模块函数
+
 | 函数 | 参数 | 描述 |
 | :--- | :--- | :--- |
-| `capitalize` | - | 将字符串中每个单词的首字母大大写。 |
+| `capitalize` | - | 将字符串中每个单词的首字母大写。 |
 | `endsWith` | - | 判断字符串末尾是否与参数指定的字符串匹配。一个标志位可以指定比较是否区分大小写。 |
 | `has` | - | 判断传入参数的字符串集合是否包含在字符串中。 |
 | `isBlank` | - | 如果字符串仅由空格组成则返回 `true`，否则返回 `false`。 |
@@ -5797,25 +6234,12 @@ dojo.lang.declare("java.lang.ExtendedStringBuffer", java.lang.StringBuffer, {
 | `padRight` | - | 在字符串后添加指定的字符，以达到参数指定的指定字符串长度。如果未指定字符，则使用字符 0。 |
 | `repeat` | - | 通过重复指定次数的字符串来构建字符串。可以使用分隔符来分隔重复的字符串。 |
 | `startsWith` | - | 判断字符串开头是否与参数指定的字符串匹配。一个标志位可以指定比较是否区分大小写。 |
+| `startsWithAny` | - | 确定字符串的开头是否匹配参数指定的比较字符串列表中的一个。 |
 | `escape` | - | 为指定的内容类型转换并编码字符串。支持的类型包括用于 HTML 语言的 `html`、`xhtml` 用于 XHTML 语言、`sql` 用于 SQL 语言、`regexp` 用于正则表达式、`js` 用于 JavaScript 以及 `ascii` 用于 ASCII 编码。 |
-
-
-
-
-
-确定字符串的开头是否匹配参数指定的比较字符串列表中的一个。
-
-# JavaScript 库基础
-## 第二部分 - 166
-
-### 表 7.7 `dojo.string` 模块函数（续）
-
-| 函数 | 参数 | 说明 |
-| :--- | :--- | :--- |
-| `dojo.string.summary` | 字符串和长度 | 如果参数字符串超过了指定的长度，则构建一个以“…”结尾的子字符串。否则，返回该字符串本身。 |
-| `dojo.string.trim` | 字符串 | 移除参数字符串周围的空格。 |
-| `dojo.string.trimEnd` | 字符串 | 移除参数字符串末尾的空格。 |
-| `dojo.string.trimStart` | 字符串 | 移除参数字符串开头的空格。 |
+| `summary` | 字符串和长度 | 如果参数字符串超过了指定的长度，则构建一个以“…”结尾的子字符串。否则，返回该字符串本身。 |
+| `trim` | 字符串 | 移除参数字符串周围的空格。 |
+| `trimEnd` | 字符串 | 移除参数字符串末尾的空格。 |
+| `trimStart` | 字符串 | 移除参数字符串开头的空格。 |
 
 第一组函数提供了检查字符串是否符合某个条件的功能。例如 `dojo.string.startsWith`、`dojo.string.startsWithAny`、`dojo.string.endsWith` 和 `dojo.string.endsWithAny` 函数，它们分别用于确定字符串是否以另一个字符串开始或结束。
 
@@ -5846,10 +6270,6 @@ var test1Chaine2 = dojo.string.has(chaine2, "test");
 var test2Chaine2 = dojo.string.has(chaine2, "Test");
 // test2Chaine2 包含值 false
 ```
-
-# dojo 库基础
-## 167
-### 第 7 章
 
 另一组函数提供了对字符串进行操作的可能性。特别是 `dojo.string.trim` 及其变体，用于移除字符串“周围”的空格；以及 `dojo.string.pad` 及其变体，用于在字符串前后添加相同数量的字符。
 
@@ -5890,11 +6310,9 @@ var chaine = builder.toString();
 /* chaine 包含字符串“Ceci est une chaîne de test” */
 ```
 
-## 日期
-提供日期处理函数的 dojo 模块是 `dojo.date`。在该模块中，函数名称带有 `dojo.date` 前缀。表 7.8 汇总了该模块的主要函数。
+### 日期
 
-# JavaScript 库基础
-## 168 - 第二部分
+提供日期处理函数的 dojo 模块是 `dojo.date`。在该模块中，函数名称带有 `dojo.date` 前缀。
 
 ### 表 7.8 `dojo.date` 模块主要函数
 
@@ -5904,6 +6322,13 @@ var chaine = builder.toString();
 | `dojo.date.compare` | 两个日期和一个比较选项 | 比较两个日期。选项可以指定比较是仅针对日期、时间还是两者。 |
 | `dojo.date.format` | 日期和格式 | 根据格式将日期转换为字符串。 |
 | `dojo.date.getDayName` | 日期 | 返回指定日期的星期几名称。 |
+
+
+
+# dojo.date 函数
+
+| 函数 | 类别 | 描述 |
+| :--- | :--- | :--- |
 | `dojo.date.getDayShortName` | 日期 | 返回指定日期的星期几缩写名称。 |
 | `dojo.date.getDaysInMonth` | 日期 | 返回指定日期所在月份的天数。 |
 | `dojo.date.getMonthName` | 日期 | 返回指定日期的月份名称。 |
@@ -5935,13 +6360,9 @@ var date3Bissextile = dojo.date.isLeapYear(date3);
 /* date3Bissextile 包含 true 因为 2008 年是闰年 */
 ```
 
-## 169
-### 第 7 章
+## 第 7 章
+
 `dojo.date.format` 函数提供了根据格式将日期转换为字符串的可能性。该格式使用不同的元素来指定日期元素在字符串中的位置。
-
-
-
-
 
 Le tableau 7.9 récapitule les principaux de ces éléments.
 
@@ -5971,7 +6392,7 @@ date.setHours(12);
 date.setMinutes(30);
 date.setSeconds(30);
 var format = "%d/%m/%y, %H:%M:%S";
-var chaineDate = dojo.date.format(date,format);
+var chaineDate = dojo.date.format(date, format);
 // chaineDate contient la valeur « 10/09/2006, 12:30:30 »
 ```
 
@@ -5981,12 +6402,12 @@ Le code suivant décrit la mise en œuvre de cette fonction :
 
 ```javascript
 /* date1 correspond à la date courante dont la valeur des heures est 0 */
-var date1=new Date();
+var date1 = new Date();
 date1.setHours(0);
 
 /* date2 correspond à la date courante dont les valeurs de l’année et des heures
 sont respectivement 2005 et 12 */
-var date2=new Date();
+var date2 = new Date();
 date2.setFullYear(2005);
 date2.setHours(12);
 
@@ -6004,7 +6425,7 @@ var comparaison4 = dojo.date.compare(date1, date2, dojo.date.compareTypes.TIME);
 /* comparaison4 contient -1 car l’heure de date1 est inférieure à
 celle de date2 */
 
-var comparaison5 = dojo.date.compare(date1, date2, dojo.date.compareTypes.DATE|dojo.date.compareTypes.TIME);
+var comparaison5 = dojo.date.compare(date1, date2, dojo.date.compareTypes.DATE | dojo.date.compareTypes.TIME);
 /* comparaison5 contient 1 (test inverse) */
 ```
 
@@ -6025,31 +6446,31 @@ var dateObtenue = dojo.date.add(date, dojo.date.dateParts.DAY, 5);
 // dateObtenue correspond à la date: 04/10/2006 à 12h30min30s
 ```
 
-La fonction `dojo.date.add` se fonde sur la structure `dojo.date.dateParts` afin de définir l’unité de temps de la période ajoutée. Cette structure inclut l’année, le mois, le jour, l’heure, la minute, la seconde et la milliseconde.
+La fonction `dojo.date.add` se fonde sur la structure `dojo.date.dateParts` afin de définir l’unité de temps de la période ajoutée。Cette structure inclut l’année, le mois, le jour, l’heure, la minute, la seconde et la milliseconde。
 
-### Expressions régulières
+## Expressions régulières
 
-Le module `dojo.regexp` de dojo fournit des fonctions implémentant diverses expressions régulières afin de vérifier suivant des critères précis et de formater une chaîne de caractères passée en paramètre. Dans ce module, les noms des fonctions sont préfixés par `dojo.regexp`.
+Le module `dojo.regexp` de dojo fournit des fonctions implémentant diverses expressions régulières afin de vérifier suivant des critères précis et de formater une chaîne de caractères passée en paramètre。Dans ce module，les noms des fonctions sont préfixés par `dojo.regexp`。
 
-Le tableau 7.10 récapitule ces différentes fonctions.
+Le tableau 7.10 récapitule ces différentes fonctions。
 
 ### Tableau 7.10 Fonctions du module `dojo.regexp`
 
 | Fonction | Paramètre | Description |
 | :--- | :--- | :--- |
-| `currency` | Un objet | Retourne une valeur monétaire. |
-| `emailAddress` | Un objet | Vérifie une adresse d'e-mail valide. |
-| `emailAddressList` | Un objet | Vérifie une liste d'adresses d'e-mail. |
-| `host` | Un objet | Vérifie un nom d'hôte valide. |
-| `integer` | Un objet | Vérifie si la chaîne est un nombre entier. |
-| `ipaddress` | Un objet | Vérifie une adresse IP valide. |
-| `numberFormat` | Un objet | Vérifie le format de nombre. |
-| `realNumber` | Un objet | Vérifie si la chaîne est un nombre réel. |
-| `time` | Un objet | Vérifie le format de l'heure. |
-| `url` | Un objet | Vérifie une URL valide. |
-| `us.state` | Un objet | Vérifie l'abréviation d'un État des États-Unis. |
+| `currency` | Un objet | Retourne une valeur monétaire。 |
+| `emailAddress` | Un objet | Vérifie une adresse d'e-mail valide。 |
+| `emailAddressList` | Un objet | Vérifie une liste d'adresses d'e-mail。 |
+| `host` | Un objet | Vérifie un nom d'hôte valide。 |
+| `integer` | Un objet | Vérifie si la chaîne est un nombre entier。 |
+| `ipaddress` | Un objet | Vérifie une adresse IP valide。 |
+| `numberFormat` | Un objet | Vérifie le format de nombre。 |
+| `realNumber` | Un objet | Vérifie si la chaîne est un nombre réel。 |
+| `time` | Un objet | Vérifie le format de l'heure。 |
+| `url` | Un objet | Vérifie une URL valide。 |
+| `us.state` | Un objet | Vérifie l'abréviation d'un État des États-Unis。 |
 
-Un premier ensemble de fonctions se fondent sur un objet de configuration spécifiant différentes options afin de créer les expressions régulières. C’est le cas des fonctions `dojo.regexp.emailAddress` et `dojo.regexp.emailAddressList`, qui vérifient la validité d’adresses e-mail.
+Un premier ensemble de fonctions se fondent sur un objet de configuration spécifiant différentes options afin de créer les expressions régulières。C’est le cas des fonctions `dojo.regexp.emailAddress` 和 `dojo.regexp.emailAddressList`，qui vérifient la validité d’adresses e-mail。
 
 Le code suivant décrit leur mise en œuvre :
 
@@ -6069,52 +6490,26 @@ var chaineListeEmail2 = "email_eyrolles.com,email1_eyrollescom"
 var reListeAdresseEmail = new RegExp(dojo.regexp.emailAddressList());
 var chaineEmail1Correcte = reListeAdresseEmail.test(chaineListeEmail1);
 // chaineEmail1Correcte contient la valeur true
-var chaineEmail2Correcte = reListeAdresseEmail.test(chaineEmail2); // Note: correction de variable cohérente avec le texte original
+var chaineEmail2Correcte = reListeAdresseEmail.test(chaineListeEmail2); // Note: correction de variable cohérente avec le texte original
 ```
 
-Un autre ensemble se fondent sur des formats afin de vérifier le format d’une chaîne de caractères. Les fonctions de ce type offrent la possibilité de vérifier le format de chaînes utilisant des nombres, telles que les heures et les numéros de téléphone.
+Un autre ensemble se fondent sur des formats afin de vérifier le format d’une chaîne de caractères。Les fonctions de ce type offrent la possibilité de vérifier le format de chaînes utilisant des nombres，telles que les heures et les numéros de téléphone。
 
-La première vérification est mise en œuvre par la fonction `dojo.regexp.time`. Un format doit être spécifié en paramètre, format se fondant sur les éléments récapitulés au tableau 7.11.
+La première vérification est mise en œuvre par la fonction `dojo.regexp.time`。Un format doit être spécifié en paramètre，format se fondant sur les éléments récapitulés au tableau 7.11。
 
 ### Tableau 7.11 Éléments du format de la fonction `dojo.regexp.time`
 
 | Élément | Description |
 | :--- | :--- |
-| `h` | Correspond à la valeur des heures de 0 à 12. Cette valeur n’est pas précédée de zéro dans le cas d’une valeur inférieure à 10. |
-| `H` | |
-
-
-
-
-对应 0 到 24 之间的小时值。当值小于 10 时，该值前面不前导零。
-
-`hh`
-
-对应 0 到 12 之间的小时值。当值小于 10 时，该值必须前导零。
-
-`HH`
-
-对应 0 到 24 之间的小时值。当值小于 10 时，该值必须前导零。
-
-`m`
-
-对应分钟值。当值小于 10 时，该值前面不前导零。
-
-`mm`
-
-对应分钟值。当值小于 10 时，该值必须前导零。
-
-`s`
-
-对应秒值。当值小于 10 时，该值前面不前导零。
-
-`ss`
-
-对应秒值。当值小于 10 时，该值必须前导零。
-
-`t`
-
-对应大写或小写的“AM”或“PM”。
+| `h` | Correspond à la valeur des heures de 0 à 12。Cette valeur n’est pas précédée de zéro dans le cas d’une valeur inférieure à 10。 |
+| `H` | Correspond à la valeur des heures de 0 à 24。当值小于 10 时，该值前面不前导零。 |
+| `hh` | Correspond à la valeur des heures de 0 à 12。当值小于 10 时，该值必须前导零。 |
+| `HH` | Correspond à la valeur des heures de 0 à 24。当值小于 10 时，该值必须前导零。 |
+| `m` | 对应分钟值。当值小于 10 时，该值前面不前导零。 |
+| `mm` | 对应分钟值。当值小于 10 时，该值必须前导零。 |
+| `s` | 对应秒值。当值小于 10 时，该值前面不前导零。 |
+| `ss` | 对应秒值。当值小于 10 时，该值必须前导零。 |
+| `t` | 对应大写或小写的“AM”或“PM”。 |
 
 第二次检查基于 `dojo.regexp.numberFormat` 函数，该函数通过通过参数传递的格式使用字符 `#` 来指定数字在待检查字符串中的位置。也可以使用字符 `?` 来指定可选的数字。因此，格式可以如下所示：`var format1 = "(+###) ## ## ## ## ##";`
 
@@ -6161,7 +6556,7 @@ var chaineNombreCorrecte = reChaineNombre.test(chaineNombre);
 
 ### 基础集合
 
-`dojo` 库通过 `dojo.collections.ArrayList` 和 `dojo.collections.Dictionnary` 等类实现了不同的列表和哈希表实现。
+`dojo` 库通过 `dojo.collections.ArrayList` 和 `dojo.collections.Dictionary` 等类实现了不同的列表和哈希表实现。
 
 第一个实现了一个非排序列表，类似于 Java 提供的 `ArrayList` 类。它提供了多种方法来插入和删除元素、查找元素以及遍历列表。表 7.12 总结了 `dojo.collections.ArrayList` 类的各种方法。
 
@@ -6197,7 +6592,7 @@ liste.setByIndex(1, "élément2");
 
 // 显示上面插入的列表不同元素
 liste.forEach(function(element, indice, tableau) {
-  alert(indice+": "+element);
+  alert(indice + ": " + element);
 });
 ```
 
@@ -6228,18 +6623,11 @@ liste.forEach(function(element, indice, tableau) {
 var tableHachage = new dojo.collections.Dictionary();
 tableHachage.add("clé1", "élément1");
 tableHachage.add("clé2", "élément2");
-```
-
-
-
-
-
-```javascript
 tableHachage.add("clé3", "élément3");
 
 var listeCles = tableHachage.getKeyList();
 
-/* listeCles correspond au tableau [ "clé1", "clé2", "clé2" ] */
+/* listeCles correspond au tableau [ "clé1", "clé2", "clé3" ] */
 
 var listeValeurs = tableHachage.getValueList();
 
@@ -6248,9 +6636,7 @@ var listeValeurs = tableHachage.getValueList();
 // Affiche les différents éléments de la table, insérés ci-dessus
 
 tableHachage.forEach(function(element, indice, tableau) {
-
-alert(indice+": "+element.key+", "+element.value);
-
+  alert(indice + ": " + element.key + ", " + element.value);
 });
 ```
 
@@ -6258,7 +6644,7 @@ alert(indice+": "+element.key+", "+element.value);
 
 我们将在本章的后部分看到，这些类可以使用迭代器类的支持进行遍历。
 
-# 高级数据结构
+## 高级数据结构
 
 dojo 提供的高级数据结构对应队列（Queues）、栈（Stacks）、图（Graphs）和二叉树（Binary Trees）。在本节中，我们仅详细介绍前两种结构的实现。
 
@@ -6266,7 +6652,7 @@ dojo 提供的高级数据结构对应队列（Queues）、栈（Stacks）、图
 
 表 7.14 总结了 `dojo.collections.Queue` 类的方法。
 
-## 表 7.14 `dojo.collections.Queue` 类的方法
+### 表 7.14 `dojo.collections.Queue` 类的方法
 
 | 方法 | 参数 | 描述 |
 | :--- | :--- | :--- |
@@ -6287,25 +6673,19 @@ dojo 提供的高级数据结构对应队列（Queues）、栈（Stacks）、图
 var queue = new dojo.collections.Queue();
 
 queue.enqueue("élément1");
-
 queue.enqueue("élément2");
-
 queue.enqueue("élément3");
 
 var premierElementSansRetrait = queue.peek();
-
 // premierElementSansRetrait 包含值 "élément1"
 
 var elementExtrait = queue.dequeue();
-
 // elementExtrait 包含值 "élément1"
 
 elementExtrait = queue.dequeue();
-
 // elementExtrait 包含值 "élément2"
 
 elementExtrait = queue.dequeue();
-
 // elementExtrait 包含值 "élément3"
 ```
 
@@ -6313,7 +6693,7 @@ elementExtrait = queue.dequeue();
 
 表 7.15 总结了 `dojo.collections.Stack` 类的方法。
 
-## 表 7.15 `dojo.collections.Stack` 类的方法
+### 表 7.15 `dojo.collections.Stack` 类的方法
 
 | 方法 | 参数 | 描述 |
 | :--- | :--- | :--- |
@@ -6334,29 +6714,23 @@ elementExtrait = queue.dequeue();
 var pile = new dojo.collections.Stack();
 
 pile.push("élément1");
-
 pile.push("élément2");
-
 pile.push("élément3");
 
 var premierElementSansRetrait = pile.peek();
-
 // premierElementSansRetrait 包含值 "élément3"
 
 var elementExtrait = pile.pop();
-
 // elementExtrait 包含值 "élément3"
 
 elementExtrait = pile.pop();
-
 // elementExtrait 包含值 "élément2"
 
 elementExtrait = pile.pop();
-
 // elementExtrait 包含值 "élément1"
 ```
 
-# 迭代器
+## 迭代器
 
 dojo 提供了不同的类来遍历前节描述的集合。这些类对应于迭代器，即可以在集合中逐步移动的实体。
 
@@ -6364,7 +6738,7 @@ dojo 提供了不同的类来遍历前节描述的集合。这些类对应于迭
 
 表 7.16 总结了该类的可用方法。
 
-## 表 7.16 `dojo.collections.Iterator` 类的方法
+### 表 7.16 `dojo.collections.Iterator` 类的方法
 
 | 方法 | 参数 | 描述 |
 | :--- | :--- | :--- |
@@ -6379,16 +6753,12 @@ dojo 提供了不同的类来遍历前节描述的集合。这些类对应于迭
 var liste = new dojo.collections.ArrayList();
 
 liste.add("élément1");
-
 liste.add("élément2");
-
 liste.add("élément3");
 
 for(var iterateur = liste.getIterator(); !iterateur.atEnd(); ) {
-
-var element = iterateur.get();
-
-alert("Element: "+element);
+  var element = iterateur.get();
+  alert("Element: " + element);
 }
 ```
 
@@ -6400,12 +6770,6 @@ dojo 还提供了 `dojo.collections.DictionaryIterator` 类，用于遍历如 `d
 
 ```javascript
 var tableHachage = new dojo.collections.Dictionary();
-```
-
-
-
-
-```javascript
 tableHachage.add("clé1", "élément1");
 tableHachage.add("clé2", "élément2");
 tableHachage.add("clé3", "élément3");
@@ -6417,8 +6781,6 @@ for(var i = tableHachage.getIterator(); !i.atEnd(); ) {
     alert("Element: " + element.key + ", " + element.value);
 }
 ```
-
-```content
 
 ## DOM 支持
 
@@ -6485,7 +6847,7 @@ var listeBalises = dojo.byTag("div");
 | `dojo.dom.insertAtIndex` | 要插入的节点、一个节点和一个索引 | 在目标节点的子列表中添加一个节点。如果插入索引的值大于节点子元素的数量，则将其添加到最后位置。 |
 | `dojo.dom.insertAtPosition` | 引用节点、要插入的节点和位置 | 在与引用节点同级的位置添加一个节点。插入节点的位置取决于位置参数，该参数可以取 `before`、`after`、`first` 或 `last` 等值。 |
 | `dojo.dom.insertBefore` | 引用节点、要插入的节点和一个标志位 | 在引用节点同级且之前添加一个节点。如果参数中的两个节点相等，或者要插入的节点已与引用节点存在，则仅当标志位为 `true` 时才添加节点。 |
-| `dojo.dom.isDescendantOf` | 节点、一个父节点和一个标志位 | 确定一个节点是否是另一个节点的后代。如果第三个元素的值为 `true`，则执行严格的后代检查（注：此处原文意指对后代关系的的逻辑判断）。 |
+| `dojo.dom.isDescendantOf` | 节点、一个父节点和一个标志位 | 确定一个节点是否是另一个节点的后代。如果第三个元素的值为 `true`，则执行严格的后代检查。 |
 | `dojo.dom.isNode` | DOM 树的元素 | 确定参数是否为节点。 |
 | `dojo.dom.isTag` | 节点和多个标签名 | 确定节点是否符合传入的多个标签名之一。如果是，则返回对应的名称。 |
 | `dojo.dom.lastElement` | 节点和一个标签名 | 返回节点中类型为 `dojo.dom.ELEMENT_NODE` 的最后一个子元素。如果指定了标签名，该函数返回最后一个匹配的元素。 |
@@ -6497,17 +6859,8 @@ var listeBalises = dojo.byTag("div");
 | `dojo.dom.removeNode` | 节点 | 从其父节点中删除指定的节点。 |
 | `dojo.dom.replaceChildren` | 源节点和一个要添加的节点 | 删除节点的所有子元素，并为其添加第二个参数指定的节点。 |
 
+### `dojo.dom.moveChildren`
 
-
-
-
-对应于 `setAttributNS` 方法的实现、DOM 2 级命名、一个名称以及一个属性值。
-
-### dojo.dom.textContent
-一个节点以及可能对应于 DOM 3 `textContent` 属性的实现。一个字符串。
-
-### dojo.dom.moveChildren
-`dojo.dom.moveChildren` 函数允许将一个节点的所有子节点移动到另一个节点。 
 `dojo.dom.moveChildren` 函数允许将一个节点的所有子节点移动到另一个节点。以下代码描述了如何使用该函数将 ID 为 `monTexte` 的 `span` 标签的元素移动到 ID 为 `monAutreZone` 的 `div` 标签中：
 
 ```javascript
@@ -6530,7 +6883,8 @@ dojo.dom.moveChildren(parentSource, parentCible, false);
 
 标记 ❶ 突出了通过 `dojo.dom.moveChildren` 函数移动的块。
 
-### dojo.dom.removeChildren
+### `dojo.dom.removeChildren`
+
 `dojo.dom.removeChildren` 函数提供了删除一个节点的所有子节点的功能。以下代码允许删除 ID 为 `monTexte` 的 `span` 标签的所有内容：
 
 ```javascript
@@ -6551,7 +6905,8 @@ dojo.dom.removeChildren(source);
 
 标记 ❶ 突出了通过 `dojo.dom.removeChildren` 函数删除了子节点的块。
 
-### dojo.dom.insertBefore 和 dojo.dom.insertAfter
+### `dojo.dom.insertBefore` 和 `dojo.dom.insertAfter`
+
 其他函数，如 `dojo.dom.insertBefore` 和 `dojo.dom.insertAfter`，允许在页面的 DOM 树的不同位置插入元素。这些函数分别在引用节点之前和之后添加节点。以下代码实现了在加粗文本（`b` 标签）之前和之后添加斜体文本（`i` 标签）：
 
 ```javascript
@@ -6582,11 +6937,12 @@ dojo.dom.insertAfter(baliseItaliqueApres, baliseGras);
 
 标记 ❶ 和 ❸ 分别突出了通过 `dojo.dom.insertBefore` 和 `dojo.dom.insertAfter` 函数在标记 ❷ 块之前和之后添加的块。
 
-在上面的 JavaScript 代码中，使用了 DOM 的 `dojo.createElement` 和 `createTextNodeNode` 函数来创建要插入的节点。这些函数已第 4 章讨论过。
+在上面的 JavaScript 代码中，使用了 DOM 的 `document.createElement` 和 `createTextNode` 函数来创建要插入的节点。这些函数已第 4 章讨论过。
 
 `dojo.dom.prependChild` 函数作为上述两个函数的补充，用于向节点添加子节点，即使该节点还没有子节点。
 
 ### 树导航
+
 最后，不同的函数提供了相对于某个节点访问 DOM 树不同节点的能力。因此，`dojo.dom.firstElement`、`dojo.dom.lastElement`、`dojo.dom.prevElement` 和 `dojo.dom.nextElement` 分别允许获取节点集的第一个、最后一个节点，以及某个节点的前后节点。
 
 以下代码描述了这些函数在本节使用的 HTML 片段上的实现：
@@ -6596,17 +6952,19 @@ var element = dojo.byId("maZone");
 var premierElement = dojo.dom.firstElement(element);
 // premierElement 对应元素
 var dernierElement = dojo.dom.lastElement(element);
-// dernierElement 对应“monTexte”
+// dernierElement 对应 "monTexte"
 var precedentElement = dojo.dom.prevElement(element);
 // precedentElement 为空
 var suivantElement = dojo.dom.nextElement(element);
-// suivantElement 对应“monAutreZone”
+// suivantElement 对应 "monAutreZone"
 ```
 
-### Ajax 技术支持
+## Ajax 技术支持
+
 Dojo 库提供了实现各种 Ajax 技术的功能。在本节中，我们将讨论 `dojo.io.bind` 函数，它允许通过异步请求进行通信。
 
-#### dojo.io.bind 函数
+### `dojo.io.bind` 函数
+
 `dojo.io.bind` 对应于异步 Ajax 的支持。以下代码描述了 `dojo.io.bind` 的用法示例：
 
 ```javascript
@@ -6644,24 +7002,11 @@ dojo.io.bind(proprietes);
 | load | 事件类型、数据和 | 在请求成功且接收响应结果时调用。 |
 | timeout | | 在指定的特定等待时间内未收到响应时调用。 |
 
-```
-
-
-
-
 传递给请求的参数允许指定回调函数，以处理返回的数据。在请求成功的情况下，dojo 提供了使用 `handle` 或 `load` 回调函数的可能。
 
 `load` 函数专门用于处理执行成功的请求。该函数接收参数：当前状态、数据以及可选的与事件对应的实例。
 
 以下代码描述了该回调函数的实现方式，用于处理请求后收到的数据：
-
-LivreGougeon 第 185 页 2006 年 11 月 28 日 星期二 4:23 16
-
-### dojo 库的基础
-
-**185** 
-
-*第 7 章*
 
 ```javascript
 var proprietes = {
@@ -6671,7 +7016,6 @@ var proprietes = {
     /* type 包含 « load » ，data 是文本形式收到的数据 */
   }
 };
-
 dojo.io.bind(proprietes);
 ```
 
@@ -6693,7 +7037,6 @@ var proprietes = {
     }
   }
 };
-
 dojo.io.bind(proprietes);
 ```
 
@@ -6713,17 +7056,8 @@ var proprietes = {
     (...)
   }
 };
-
 dojo.io.bind(proprietes);
 ```
-
-LivreGougeon 第 186 页 2006 年 11 月 28 日 星期二 4:23 16
-
-### JavaScript 库的基础
-
-**186** 
-
-*第二部分*
 
 ### 响应格式
 
@@ -6733,9 +7067,9 @@ dojo 原生支持不同的响应格式。因此，它可以在将收到的数据
 
 这样，库就知道如何处理 Ajax 请求响应中收到的数据。
 
-表格 7.21 汇总了支持的响应格式。
+表 7.21 汇总了支持的响应格式。
 
-**表格 7.21 `dojo.io.bind` 函数支持的响应格式**
+### 表 7.21 `dojo.io.bind` 函数支持的响应格式
 
 | 格式 | 描述 |
 | :--- | :--- |
@@ -6756,7 +7090,6 @@ var proprietes = {
     }
   }
 };
-
 dojo.io.bind(proprietes);
 ```
 
@@ -6776,21 +7109,13 @@ dojo.io.bind(proprietes);
 }
 ```
 
-LivreGougeon 第 187 页 2006 年 11 月 28 日 星期二 4:23 16
-
-### dojo 库的基础
-
-**187** 
-
-*第 7 章*
-
 ### 可用的传输类
 
 尽管 dojo 库提供了一个唯一的函数 `dojo.io.bind`，但它实现了不同的内部机制来实现 Ajax。这些实现并非都基于 `XMLHttpRequest` 类，它们允许解决特殊问题，例如由于该类的安全限制（它阻止了调用另一个域的地址）。
 
-表格 7.22 汇总了由 dojo 提供的主要传输层：
+表 7.22 汇总了由 dojo 提供的主要传输层：
 
-**表格 7.22 dojo 提供的主要传输层**
+### 表 7.22 dojo 提供的主要传输层
 
 | 传输层 | 描述 |
 | :--- | :--- |
@@ -6806,7 +7131,6 @@ var proprietes = {
   mimetype: "text/plain",
   transport: "XMLHTTPTransport"
 };
-
 dojo.io.bind(proprietes);
 ```
 
@@ -6821,10 +7145,10 @@ function traiterResultats(type, data, event) {
   (...)
 }
 
-var methodeService = function(parametre1, parametetre2) {
+var methodeService = function(parametre1, parametre2) {
   var parametresRequete = { 
-    parametre1: parametetre1,
-    parametre2: parametetre2 
+    parametre1: parametre1,
+    parametre2: parametre2 
   };
 
   dojo.io.bind({
@@ -6859,19 +7183,12 @@ methodeService("parametre1", "parametre2");
 
 为了实现 JSON-RPC，dojo 提供了 `dojo.rpc.JsonService` 类，它考虑了前面的描述。该类扩展了通用类 `dojo.rpc.RpcService`，后者包含了解释服务描述格式的所有逻辑。
 
-
-
-
-
 以下代码描述了 `dojo.rpc.JsonService` 类的实现：
 
 ```javascript
 // 描述内容对应上面的 JSON 代码
-
 var description = "maDescriptionDeService.smd";
-
 var monService = dojo.rpc.JsonService(description);
-
 monService.methodeService("parametre1", "parametre2");
 ```
 
@@ -6885,10 +7202,9 @@ monService.methodeService("parametre1", "parametre2");
 function traiterResultats(resultat) {
   (...)
 }
-```
 
-```javascript
-var reception = monService.methodeService("parametre1", "parametre2"); reception.addCallback(traiterResultats);
+var reception = monService.methodeService("parametre1", "parametre2");
+reception.addCallback(traiterResultats);
 ```
 
 我们在第 14 章中详细介绍了如何使用 `dojo.rpc.YahooService` 类来访问 Yahoo! 提供的服务。
@@ -6911,7 +7227,6 @@ var proprietes = {
     (...)
   }
 };
-
 dojo.io.bind(proprietes);
 ```
 
@@ -6939,7 +7254,7 @@ dojo 库在其对 Ajax 技术的支持上强调了使用的简便性。因此，
 
 该函数提供了通过回调函数管理浏览器“上一步”和“下一个”按钮的功能。它还允许在 Ajax 请求后更新 HTML 页面的地址，以便实现历史记录。
 
-### 应用日志
+## 应用日志
 
 dojo 库提供了一个管理应用程序日志的通用工具。它定义在 `dojo.logging.Logger` 模块中，必须通过 `dojo.require` 方法引入。
 
@@ -6947,7 +7262,7 @@ dojo 库提供了一个管理应用程序日志的通用工具。它定义在 `d
 
 表 7.23 汇总了该对象用于写入应用程序日志的不同可用方法。这些方法都接受一个字符串形式的消息作为参数。
 
-**表 7.23 应用程序日志实现方法**
+### 表 7.23 应用程序日志实现方法
 
 | 方法 | 描述 |
 | :--- | :--- |
@@ -6967,8 +7282,7 @@ dojo 库提供了一个管理应用程序日志的通用工具。它定义在 `d
   <head>
     (...)
     <script>djConfig = { isDebug: true }</script>
-    <script language="JavaScript" type="text/javascript" src="../../dojo.js">
-    ➥</script>
+    <script language="JavaScript" type="text/javascript" src="../../dojo.js"></script>
     <script language="JavaScript" type="text/javascript">
       dojo.require("dojo.logging.Logger");
       (...)
@@ -7030,11 +7344,16 @@ dojo.log.warn("警告应用程序日志。");
 
 注意存在 `dojo.debug.Firebug` 模块，它允许在 Firefox 调试工具的控制台中写入日志。
 
-### 性能测量
+## 性能测量
 
 dojo 库提供了一个有趣的模块，用于测量函数或对象方法的执行时间。该支持位于 `dojo.profile` 模块中。
 
-如下代码所示，在使用和导入它之前（标记 ❷），应用程序必须重置（标记 ❶）现有的执行时间记录：`delete dojo["profile"];` `dojo.require("dojo.profile");`。
+如下代码所示，在使用和导入它之前（标记 ❷），应用程序必须重置（标记 ❶）现有的执行时间记录：
+
+```javascript
+delete dojo["profile"];
+dojo.require("dojo.profile");
+```
 
 随后，为了记录处理的执行时间，以下代码指示了支持如何提供 `start`（标记 ❶）和 `end`（标记 ❷）方法来界定记录的开始和结束，同时为其分配逻辑名称（标记 ❶）：
 
@@ -7045,29 +7364,19 @@ fonction1();
 dojo.profile.end("fonction1");
 ```
 
-
-
-
-
-# 193
-## 第 7 章
-
 请注意 `dojo.profile` 对象在包含模块时已自动实例化。
 
 在以下代码中，`dojo.profile` 对象提供了 `dump` 方法（标记 ❶）以便将结果显示在 Web 上：
 
-(...)
-
-```
+```javascript
 dojo.profile.start("fonction1");
 fonction1();
 dojo.profile.end("fonction1");
 ```
 
-(...)
-
-```
+```javascript
 dojo.profile.dump(true); ❶
+```
 
 请注意，`dump` 方法接受一个参数，用于指定是否自动将结果表格插入 Web 页面中（值为 `true`）。如果参数值为 `false`，则必须手动将方法返回的表格添加到页面中。
 
@@ -7082,7 +7391,7 @@ dojo.require("dojo.profile");
 
 function fonction1() {
   var nombre = 0;
-  for(var cpt=0;cpt<100;cpt++) {
+  for(var cpt=0; cpt<100; cpt++) {
     nombre = nombre % 5 + cpt;
   }
 }
@@ -7090,7 +7399,7 @@ function fonction1() {
 function fonction2() {
   var chaine = "";
   var motif = "element,";
-  for(var cpt=0;cpt<1000;cpt++) {
+  for(var cpt=0; cpt<1000; cpt++) {
     chaine = chaine + motif;
   }
 }
@@ -7111,16 +7420,9 @@ dojo.profile.dump(true);
 
 ![](img/index-211_1.png)
 
-LivreGougeon 第 194 页 2006 年 11 月 28 日 周二 4:23 16
-
-# 194
-## JavaScript 库的基础
-
-### 第二部分
-
 图 7.5 展示了测得执行时间的汇总表格的显示。
 
-#### 图 7.5
+### 图 7.5
 *执行时间汇总表*
 
 ## 结论
@@ -7135,8 +7437,6 @@ LivreGougeon 第 194 页 2006 年 11 月 28 日 周二 4:23 16
 
 我们将在第 11 章详细阐述该库对开发丰富 Web 应用的支持。
 
-LivreGougeon 第 195 页 2006 年 11 月 28 日 周二 4:23 16
-
 # 第三部分
 ## 使用 JavaScript 进行 Web 图形编程
 
@@ -7146,9 +7446,7 @@ LivreGougeon 第 195 页 2006 年 11 月 28 日 周二 4:23 16
 
 `第 9 章` 探讨了基于 JavaScript 语言开发图形组件的各种技术。实现这些技术可以构建更具可维护性和扩展性的 Web 应用。
 
-LivreGougeon 第 196 页 2006 年 11 月 28 日 周二 4:23 16
-
-# 8
+# 第 8 章
 ## Web 图形界面的基础
 
 Web 页面可以包含不同的语言来解决各种问题，例如定义其结构、显示和处理。这些语言可以相互关联，并可能相互作用。
@@ -7163,58 +7461,22 @@ Web 页面可以包含不同的语言来解决各种问题，例如定义其结�
 
 接下来的章节详细说明了如何实现 `HTML` 和 `CSS` 语言，以及 `JavaScript` 如何操作它们并与它们交互。
 
-LivreGougeon 第 198 页 2006 年 11 月 28 日 周二 4:23 16
-
-# 198
-## 使用 JavaScript 进行 Web 图形编程
-
-### 第三部分
-
-### Web 浏览器
-#### HTML 页面
-图形表示 (CSS)
-结构与表示
-页面的 HTML 结构
-HTML 元素
-页面初始
-初始化
-结构与表示
-页面的 DOM 结构
-内存中的页面
-定位
-记录
-操作
-通知
-与结构的交互
-属性
-观察者
-结构
-内存中的页
-事件
-CSS
-页面的事件
-
-#### JavaScript 脚本
-页面的处理
-
-#### 图 8.1
+### 图 8.1
 *构成页面的语言*
 
 ## HTML 和 xHTML
+
 `HTML` 和 `xHTML` 语言允许定义 Web 页面的结构以及可能的某些图形功能。
 
 ## CSS
+
 `CSS` 语言专门根据之前在 `HTML` 中定义的结构来处理 Web 页面的图形方面。
 
-#### JavaScript
+## JavaScript
+
 `JavaScript` 提供了实现 Web 页面内部处理的可能性。这些处理可以与内存中的内部结构交互以对其修改，也可以由用户事件或内部事件触发。
 
 ... 该规范的第一个版本于 1993 年 6 月由 `IETF` (Internet Engineering Task Force) 作为工作文档发布，因此并不真正对应于一个标准。
-
-LivreGougeon 第 199 页 2006 年 11 月 28 日 周二 4:23 16
-
-
-
 
 直到 HTML 2.0 版本，HTML 语言才在 1995 年 11 月至 1997 年 1 月期间，通过 IETF 以 RFC 的形式分批地真正实现了标准化。随后是 1997 年 1 月的 3.2 版本、12 月的 4.0 版本以及 1999 年 12 月的 4.0.1 版本。
 
@@ -7227,7 +7489,6 @@ HTML 定义了页面结构以及使用 CSS 样式表导入外部脚本的方法�
 ```html
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
 "http://www.w3.org/TR/html4/loose.dtd">
-
 <html>
 <head>
 (...)
@@ -7238,30 +7499,22 @@ HTML 定义了页面结构以及使用 CSS 样式表导入外部脚本的方法�
 </html>
 ```
 
-表 8.1 总结了 HTML 规范定义的主要标签组。
 
-**表 8.1 HTML 主要标签组**
+
+# 表 8.1 HTML 主要标签组
 
 | 组别 | 描述 |
 | :--- | :--- |
 | 容器 | 允许定义通用容器标签，特别是 `div` 和 `span` 标签。 |
 | 表单 | 允许通过 `form`、`input`、`textarea` 和 `select` 标签定义表单及其元素。 |
 | 超链接 | 允许通过 `a` 和 `map` 标签定义超链接。 |
-|  | 允许通过 `img` 标签指定图像。 |
+| 图像 | 允许通过 `img` 标签指定图像。 |
 | 列表 | 允许通过 `ul`、`ol` 和 `li` 标签定义列表及其元素。 |
 | 脚本 | 允许通过 `script` 标签在 HTML 页面中插入或引用脚本。 |
 | 结构 | 允许定义页面通用结构，特别是 `html`、`head`、`title` 和 `body` 标签。 |
 | 样式 | 允许通过 `style` 和 `link` 标签插入或引用样式。 |
 
-LivreGougeon 第 200 页 2006 年 11 月 28 日周二 4:23 16
-
-**JavaScript Web 图形编程**
-
-**200**
-
-*第三部分*
-
-**表 8.1 HTML 主要标签组（续）***
+# 表 8.1 HTML 主要标签组（续）
 
 | 组别 | 描述 |
 | :--- | :--- |
@@ -7297,14 +7550,6 @@ HTML 语言还定义了语义化文本标签，用于良好分离页面结构与
 </head>
 ```
 
-LivreGougeon 第 201 页 2006 年 11 月 28 日周二
-
-**图形界面基础**
-
-**201**
-
-*第 8 章*
-
 ```html
 <body>
 <table>
@@ -7321,7 +7566,6 @@ LivreGougeon 第 201 页 2006 年 11 月 28 日周二
 </tr>
 </tbody>
 </table>
-
 <form name="monFormulaire" action="/soumission.php" method="POST">
 <input type="hidden" name="champ1" value="valeur1">
 <input type="text" name="champ2" value="valeur2">
@@ -7330,11 +7574,9 @@ LivreGougeon 第 201 页 2006 年 11 月 28 日周二
 </body>
 ```
 
-LivreGougeon 第 202 页 2006 年 11 月 28 日周二 4:23 16
+# xHTML
 
-**xHTML**
-
-xHTML 语言被定位为 HTML 的继任者。它实际上对应一种不同的语言。事实上，使用 xHTML 的网页必须符合 XML 意义上的良好格式。所有标签必须关闭，属性必须用引号 " 或 ' 定界。
+xHTML 语言被定位为 HTML 的继任者。它实际上对应一种不同的语言。事实上，使用 xHTML 的网页必须符合 XML 意义上的良好格式。所有标签必须关闭，属性必须用引号 `"` 或 `'` 定界。
 
 xHTML 1.0 版本于 2000 年 1 月发布，随后是 2001 年 3 月的 1.1 版本。
 
@@ -7344,13 +7586,13 @@ xHTML 1.1 将语言划分为对应不同功能的模块。其目标是允许不�
 
 这种划分伴随着放弃可能被样式表支持的 HTML 功能。其目标是加强页面描述与其图形表示之间的分离。
 
-**xHTML 文件验证**
+## xHTML 文件验证
 
 W3C 联盟提供了一个在线工具来验证 xHTML 文件。该工具可以通过 `http://validator.w3.org/` 获取。
 
 xHTML 语言有两个主要版本，如表 8.2 所示。
 
-**表 8.2 xHTML 语言版本**
+# 表 8.2 xHTML 语言版本
 
 | 版本 | 描述 |
 | :--- | :--- |
@@ -7359,17 +7601,10 @@ xHTML 语言有两个主要版本，如表 8.2 所示。
 
 我们建议使用 HTML 语言的 *Strict* 版本，因为它禁止使用实现类标签，并强制开发人员使用 CSS 语言来定义页面呈现。
 
-
-
-
-
 ```html
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" ❶
-```
-["http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"](http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd) ❶
-```
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" dir="ltr" lang="fr"> ❷
-```
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" dir="ltr" lang="fr">
 <head>
 (...)
 </head>
@@ -7379,30 +7614,15 @@ xHTML 语言有两个主要版本，如表 8.2 所示。
 </html>
 ```
 
-```css
-
-## CSS
+# CSS
 
 `CSS` (Cascading Style Sheets, feuilles de style) traite les problématiques d’affichage des pages `HTML`. Son objectif est de permettre une séparation claire entre la structure d’une page, par le biais du langage `HTML`, et sa présentation avec `CSS`. Fondé sur l’application en cascade de styles sur les éléments contenus dans les pages `HTML`, il permet d’appliquer des styles en fonction de la position des balises.
 
 Apparu en 1994 sous l’impulsion de Håkon Wium Lie et Bert Bos, il a été normalisé en 1996 par le W3C. La première version, `CSS1`, a été publiée en décembre 1996. La version suivante, `CSS2`, est parue en mai 1998.
 
-Livre degeon Page 203.
+## 样式验证
 
-## Fondements graphiques
-
-### 204
-*PARTIE III*
-
-## Programmation Web avec JavaScript
-
-### Validation de styles
-
-### Application des styles 
-
-
-
-
+## 样式应用
 
 以下代码允许对 `div` 类型标签的 `a` 类型子标签（标记 ❷）应用样式（标记 ❶）：
 
@@ -7411,7 +7631,7 @@ Livre degeon Page 203.
 <head>
 <style type="text/css">
 /* 应用于标识符为 monIdentifant 的标签下的 a 标签 */
-div a { ¨ ❶
+div a { ❶
 background: yellow;
 font-family: cursive;
 width: 10em;
@@ -7421,7 +7641,7 @@ width: 10em;
 <body>
 (...)
 <div>
-<a href="">一个链接</a> ¨ ❷
+<a href="">一个链接</a> ❷
 </div>
 (...)
 </body>
@@ -7435,7 +7655,7 @@ width: 10em;
 <head>
 <style type="text/css">
 /* 应用于标识符为 monIdentifiant 的标签下的 a 标签 */
-#monIdentifiant a { ¨ ❶
+#monIdentifiant a { ❶
 background: yellow;
 font-family: cursive;
 width: 10em;
@@ -7445,7 +7665,7 @@ width: 10em;
 <body>
 (...)
 <div id="monIdentifiant">
-<a href="">一个链接</a> ¨ ❷
+<a href="">一个链接</a> ❷
 </div>
 (...)
 </body>
@@ -7458,7 +7678,7 @@ width: 10em;
 
 正如图 8.1 所示，JavaScript 提供了与 HTML 页面内存中 DOM 结构交互的可能性。这样就可以修改该结构以添加、修改或删除节点以及节点属性。
 
-此外，由于 CSS 样应用基于节点属性，JavaScript 可以借此对页面的视觉方面进行操作。首先，理解 JavaScript 如何感知运行它的 Web 浏览器很重要。
+此外，由于 CSS 样式应用基于节点属性，JavaScript 可以借此对页面的视觉方面进行操作。首先，理解 JavaScript 如何感知运行它的 Web 浏览器很重要。
 
 ### 浏览器检测
 
@@ -7466,7 +7686,7 @@ width: 10em;
 
 此功能可以通过 JavaScript 对象 `navigator` 的 `userAgent` 属性来实现，其中一些值汇总在表 8.3 中。
 
-**表 8.3 `navigator` 对象 `userAgent` 属性的一些取值**
+# 表 8.3 `navigator` 对象 `userAgent` 属性的一些取值
 
 | 值 | 操作系统 | 浏览器 |
 | :--- | :--- | :--- |
@@ -7487,11 +7707,11 @@ width: 10em;
 
 ```javascript
 dojo.dom.innerXML = function(node){
-  if(node.innerXML){ ¨ ❶
+  if(node.innerXML){ ❶
     return node.innerXML;
-  }else if (node.xml){ ¨ ❷
+  }else if (node.xml){ ❷
     return node.xml;
-  }else if(typeof XMLSerializer != "undefined"){ ¨ ❸
+  }else if(typeof XMLSerializer != "undefined"){ ❸
     return (new XMLSerializer()).serializeToString(node);
   }
 }
@@ -7511,14 +7731,14 @@ DOM 树的操作处理必须在它加载后进行。此类位于 `head` 标签�
 <html>
 <head>
 <script type="text/javascript">
-function initialiser() { ¨ ❶
+function initialiser() { ❶
   var monDiv = document.getElementById("monDiv");
   /* 变量 monDiv 已填充了标识符为 monDiv 的节点 */
   (...) 
 }
 </script>
 </head>
-<body onload="initialiser();"> ¨ ❷
+<body onload="initialiser();"> ❷
 <div id="monDiv">(...)</div>
 </body>
 </html>
@@ -7530,13 +7750,13 @@ function initialiser() { ¨ ❶
 
 JavaScript 语言提供了 Web 页面 DOM 结构上事件发生的可能性。这些事件既可以对应用户的操作，也可以对应对该结构的修改。
 
-### 工作原理
+#### 工作原理
 
 为了更好地理解事件管理，了解它们在 Web 页面中的处理流很重要，页面通常由按层级排列的标签组成。在元素上触发的事件会沿着其祖先或后代的链逐级传递。
 
 如表 8.4 所示，存在两种事件传播模式。
 
-**表 8.4 事件传播模式**
+# 表 8.4 事件传播模式
 
 | 模式 | 描述 |
 | :--- | :--- |
@@ -7544,10 +7764,6 @@ JavaScript 语言提供了 Web 页面 DOM 结构上事件发生的可能性。�
 | 下降 (Descendant) | 事件从高层元素向低层元素传播。这种模式被称为 *capturing*（捕获），最初由 Netscape 浏览器实现。 |
 
 W3C 财团标准化了这种机制，引入了双方向的传播。正如图 8.2 所示，事件首先在树结构中向下触发，然后向上。
-
-
-
-
 
 注意，冒泡阶段通常用于处理事件。
 
@@ -7558,7 +7774,7 @@ W3C 财团标准化了这种机制，引入了双方向的传播。正如图 8.2
 以下代码展示了基于页面的 `load` 事件（标记为 ❶）和按钮的 `click` 事件（标记为 ❷）实现该机制的示例：
 
 ```html
-<<html>
+<html>
 <head>
 <script type="text/javascript">
 function traitementIntialisationPage() { // ❶
@@ -7593,10 +7809,10 @@ DOM 技术支持根据名称分类的各种事件。表 8.5 汇总了这些类�
 | 类别 | 类型 | 描述 |
 | :--- | :--- | :--- |
 | 事件 | Events | 涵盖所有类型的事件。 |
-| HTML 相关事件 | HTMLEvents | 对应 `abort`, `blur`, `change`, `focus`, `error`, `load`, `reset`, `scroll`, `select`, `submit`, `unload` 等事件。 |
-| 用户界面相关事件 | UIEvents | 对应与用户界面相关的事件（`DOMActivate`, `DOMFocus`, `DOMFocusOut`）以及由键盘触发的事件（`keydown`、`keypress` 和 `keyup`）。在 DOM 级 3 中，键盘事件在 `KeyboardEvents` 类型中处理。 |
-| 鼠标事件 | MouseEvents | 对应由鼠标触发的事件，如 `click`, `mousedown`, `mousemove`, `mouseout`, `mouseover` 和 `mouseup`。 |
-| 变变事件 | MutationEvents | 定义影响模型逻辑结构的事件。 |
+| HTML 相关事件 | HTMLEvents | 对应 `abort`、`blur`、`change`、`focus`、`error`、`load`、`reset`、`scroll`、`select`、`submit`、`unload` 等事件。 |
+| 用户界面相关事件 | UIEvents | 对应与用户界面相关的事件（`DOMActivate`、`DOMFocus`、`DOMFocusOut`）以及由键盘触发的事件（`keydown`、`keypress` 和 `keyup`）。在 DOM 级 3 中，键盘事件在 `KeyboardEvents` 类型中处理。 |
+| 鼠标事件 | MouseEvents | 对应由鼠标触发的事件，如 `click`、`mousedown`、`mousemove`、`mouseout`、`mouseover` 和 `mouseup`。 |
+| 变异事件 | MutationEvents | 定义影响模型逻辑结构的事件。 |
 
 DOM 技术提供了多种方法来处理事件。这些方法基于监听器，监听器可以针对各种事件注册和注销。
 
@@ -7604,7 +7820,7 @@ DOM 技术提供了多种方法来处理事件。这些方法基于监听器，�
 
 事件监听器对应于对象的一个函数或方法，当 HTML 页面元素的事件触发时，该方法会被调用。为此，它必须针对事件进行注册。当监听器不再被使用时，必须将其注销。
 
-`addEventListener` 和 `removeEventListener` 方法允许管理这些监听器的注册和注销。它们应用于 DOM 节点，参数为事件名称、事件发生时要调用的函数以及定义在何种传播阶段处理事件的标志位。值 `true` 对应捕阶段，`false` 对应冒泡阶段。
+`addEventListener` 和 `removeEventListener` 方法允许管理这些监听器的注册和注销。它们应用于 DOM 节点，参数为事件名称、事件发生时要调用的函数以及定义在何种传播阶段处理事件的标志位。值 `true` 对应捕获阶段，`false` 对应冒泡阶段。
 
 以下代码说明了这两个方法（标记为 ❷ 和 ❸）用于注册和注销一个函数（标记为 ❶）作为监听器的实现：
 
@@ -7666,23 +7882,14 @@ evenement.preventDefault();
 | altKey, ctrlKey, metaKey, shiftKey | 布尔值 | 分别表示触发事件时是否按了 Alt、Ctrl、Meta 或 Shift 键。 |
 | button | 整数 | 对应触发事件的鼠标按钮。 |
 | clientX, clientY | 整数 | 对应浏览器显示区域（窗口或框架）中的鼠标坐标。 |
-| relatedTarget | - | 允许存储另一个由事件实现的另一个元素。它通常在鼠标移动事件（mouseover, mouseenter 和 mouseout）中填充。 |
-
-
-
-
-
-`screenX`, `screenY`
-
-整数
-
-对应鼠标在屏幕上的坐标。
+| relatedTarget | EventTarget | 允许存储另一个由事件实现的另一个元素。它通常在鼠标移动事件（mouseover, mouseenter 和 mouseout）中填充。 |
+| screenX, screenY | 整数 | 对应鼠标在屏幕上的坐标。 |
 
 以下代码展示了鼠标触发事件观察者如何使用该类的示例：
 
 ```javascript
 // 定义观察者
-fonction traitementEvenement(evenement) {
+function traitementEvenement(evenement) {
   // 显示事件的坐标
   alert("Coordonnées du pointeur de la souris: "
   +evenement.clientX+","+evenement.clientY);
@@ -7697,7 +7904,7 @@ Internet Explorer 浏览器没有实现 DOM 2 层技术，并且具有特定的�
 
 因此，`attachEvent` 和 `detachEvent` 方法允许管理事件观察者的注册和注销。它们应用于 DOM 节点上，并接收事件名称和当事件发生时要调用的函数作为参数。
 
-## 事件名称
+### 事件名称
 
 传递给 `attachEvent` 和 `detachEvent` 方法的事件名称与 DOM 2 级使用的名称并不完全对应。Internet Explorer 强制在它们前面加上前缀 `on`。因此，在该浏览器中的 `onclick` 事件对应于 DOM 2 级的 `click` 事件。
 
@@ -7705,11 +7912,10 @@ Internet Explorer 浏览器没有实现 DOM 2 层技术，并且具有特定的�
 
 ```javascript
 // 定义观察者
-fonction traitementEvenement() { 
+function traitementEvenement() { 
   var evenement = window.event;
   (...)
 }
-
 var monNoeud = document.getElementById("monNoeud");
 // 注册观察者
 monNoeud.attachEvent("onclick", traitementEvenement); 
@@ -7732,7 +7938,7 @@ monNoeud.detachEvent("onclick", traitementEvenement);
 
 ```javascript
 // 定义观察者
-fonction traitementEvenement(evenement) {
+function traitementEvenement(evenement) {
   // 显示事件的坐标
   alert("Coordonnées du pointeur de la souris: "
   +evenement.clientX+","+evenement.clientY);
@@ -7747,7 +7953,7 @@ fonction traitementEvenement(evenement) {
 
 ```javascript
 // 定义观察者
-fonction traitementEvenement(evenement) {
+function traitementEvenement(evenement) {
   // 停止事件传播
   evenement.cancelBubble = true;
   // 取消事件
@@ -7768,7 +7974,7 @@ fonction traitementEvenement(evenement) {
 | `contextmenu` | 当用户尝试打开页面右键菜单时发生。 |
 | `focus`, `blur` | 分别在元素获得和失去焦点时发生。 |
 | `load` | 当 Web 页面完全加载时发生。 |
-| `resize` | 当浏览器窗口调整大时发生。 |
+| `resize` | 当浏览器窗口调整大小时发生。 |
 | `scroll` | 当 Web 页面滚动时发生。 |
 | `unload` | 当 Web 页面卸载时发生。 |
 
@@ -7791,7 +7997,7 @@ fonction traitementEvenement(evenement) {
 | 类型 | 描述 |
 | :--- | :--- |
 | `change` | 当表单元素发生变化时发生。该事件在大多数情况下仅被浏览器部分支持。 |
-| `reset` | 当用户重置表单时发生时发生。 |
+| `reset` | 当用户重置表单时发生。 |
 | `select` | 当用户在输入框中选择文本时发生。 |
 | `submit` | 当用户提交表单时发生。 |
 
@@ -7804,10 +8010,6 @@ fonction traitementEvenement(evenement) {
 | `keydown`, `keyup` | 分别在键盘键被按下和释放时发生。 |
 | `keypress` | 当键盘键被按下时发生。该事件并非对所有按键都会发生，特别是箭头键以及 Alt、Ctrl 和 Shift 键。 |
 
-
-
-
-
 ```html
 <html>
 <head>
@@ -7817,10 +8019,8 @@ function traiterEvenementsClavier(evenement) {
 alert("Touche (keyCode): "+evenement.keyCode);
 alert("Touche (charCode): "+evenement.charCode);
 }
-
 document.addEventListener("keydown",
 traiterEvenementsClavier, false);
-
 document.addEventListener("keypress",
 traiterEvenementsClavier, false);
 </script>
@@ -7831,7 +8031,7 @@ traiterEvenementsClavier, false);
 </html>
 ```
 
-请注意，当对同一个元素同时处理了 `keydown` 和 `keypress` 事件时，`keyup` 事件将不会触发。反之，如果这两个事件中没有一个一个被处理，或者只有其中一个被处理了，则会触发 `keyup`。
+请注意，当对同一个元素同时处理了 `keydown` 和 `keypress` 事件时，`keyup` 事件将不会触发。反之，如果这两个事件中没有一个被处理，或者只有其中一个被处理了，则会触发 `keyup`。
 
 ## 手动触发事件
 
@@ -7839,11 +8039,11 @@ JavaScript 提供了通过编程手动模拟用户事件的可能性。
 
 DOM 2 级技术允许基于 `createEvent`、`initMouseEvent` 和 `dispatchEvent` 方法来触发鼠标事件。
 
-第一个对应于 页面 `document` 对象的一个方法，并接收所需的事件类型作为参数。它允许创建一个待触发的事件实例。
+第一个对应于页面 `document` 对象的一个方法，并接收所需的事件类型作为参数。它允许创建一个待触发的事件实例。
 
 第二个对应于所创建事件的方法，用于初始化该事件。它接收事件的各种特征作为参数。
 
-表 8.13 按照这些参数出现的顺序汇括了该方法的参数。
+表 8.13 按照这些参数出现的顺序汇总了该方法的参数。
 
 ### 表 8.13 `MouseEvent` 类的 `initMouseEvent` 方法参数
 
@@ -7947,7 +8147,6 @@ function modifierClasse(identifiantNoeud, nomClasse) {
 var balise = document.getElementById(identifiantNoeud);
 balise.setAttribute("class", nomClasse);
 }
-
 modifierClasse("monNoeud", "maNouvelleClasse");
 ```
 
@@ -7963,31 +8162,21 @@ Firefox 浏览器允许修改与标签关联的类，但不会正确应用新类
 
 ```javascript
 function modifierProprieteStyle(identifiantNoeud, nomPropriete, valeurPropriete) {
-```
-
-
-
-
-```javascript
 var balise = document.getElementById(identifiantNoeud);
-
 balise.style[nomPropriete] = valeurPropriete; ❶
-
 }
+modifierProprieteStyle("monNoeud", "background", "red");
 ```
 
-`modifierProprieteStyle("monNoeud", "background", "red");` 某些如 dojo 这样的库提供了样式操作函数，这些函数考虑了不同浏览器的特殊性。dojo 中关于这方面的模块将在本书的第 11 章进行详细介绍。
-
-LivreGougeon Page 222 Mardi, 28\. novembre 2006 4:23 16
+某些如 `dojo` 这样的库提供了样式操作函数，这些函数考虑了不同浏览器的特殊性。dojo 中关于这方面的模块将在本书的第 11 章进行详细介绍。
 
 # 使用 JavaScript 进行 Web 图形编程
-**222**
 
 ### 第三部分 高级概念
 
 现在我们已经描述了让 HTML 和 CSS 与 JavaScript 交互的各种技术，我们将讨论各种良好的实现实践，以及关于在 HTML 页面中使用 XML 和 XSLT 技术的高级概念。
 
-### 事件管理
+## 事件管理
 
 我们之前已经描述了如何使用 JavaScript 管理事件。该概念的良好实现实践是将其提取到 HTML 标签之外。这种技术可以最大限度地减少 HTML 和 JavaScript 语言的混合。
 
@@ -8024,26 +8213,13 @@ function desenregistrerObservateur(element, evenement, fonction, capture) {
 
 ```javascript
 // 定义监听器
-fonction traitementEvenement(evenement) {
+function traitementEvenement(evenement) {
   (...)
 }
-```
-
-LivreGougeon Page 223 Mardi, 28\. novembre 2006 4:23 16
-
-# Web 图形界面基础
-**223**
-
-### 第 8 章
-
-```javascript
 var monNoeud = document.getElementById("monNoeud");
-
 // 注册监听器
 enregistrerObservateur(monNoeud, "click", traitementEvenement); ❶
-
 (...)
-
 // 注销监听器
 desenregistrerObservateur(monNoeud, "click", traitementEvenement); ❷
 ```
@@ -8062,12 +8238,10 @@ function convertirMethode(objet, methode) {
     return methode.call(objet, evenement || window.event); ❶
   }
 }
-
 function enregistrerObservateurObjet(element, evenement, objet, methode, capture) { ❷
   var fonction = convertirMethode(objet, methode);
   enregistrerObservateur(element, evenement, fonction, capture);
 }
-
 function desenregistrerObservateurObjet(element, evenement, objet, methode, capture) { ❸
   var fonction = convertirMethode(objet, methode);
   desenregistrerObservateur(element, evenement, fonction, capture);
@@ -8083,13 +8257,6 @@ JavaScript 语言提供了在 Web 页面实现 XML 和 XSLT 技术的能力。�
 浏览器对 XML 技术的支持并不统一，特别是在内存中创建 XML 文档以及将文本转换为 XML 方面。
 
 因此，应该实现各种函数以整合这些特殊性。
-
-LivreGougeon Page 224 Mardi, 28\. novembre 2006 4:23 16
-
-# 使用 JavaScript 进行 Web 图形编程
-**224**
-
-### 第三部分
 
 以下函数允许在 Firefox 浏览器（标记 ❶）和 Internet Explorer（标记 ❷）中创建一个空的 XML 文档：
 
@@ -8139,13 +8306,6 @@ var document = creerDocumentXML();
 document.load("fichier.xml"); ❶
 ```
 
-LivreGougeon Page 225 Mardi, 28\. novembre 2006 4:23 16
-
-# Web 图形界面基础
-**225**
-
-### 第 8 章
-
 在 `async` 属性在文档加载前被设置为 `true` 的情况下，有必要注册一个加载事件的监听器（标记 ❶）。
 
 以下代码提供了在 Firefox 中实现该原则的示例：
@@ -8161,26 +8321,22 @@ document.load("fichier.xml");
 
 为了在 Internet Explorer 中运行此代码，可以将 `addEventListener` 方法替换为 `attachEvent` 方法，如在关于事件实现的章节中所示。
 
-
-
-
-
 从字符串创建 XML 文档在 Firefox 和 Internet Explorer 浏览器中的实现方式不同，如下代码所示：
 
 ```javascript
 function parserChaine(chaineXML) {
 if( typeof DOMParser!="undefined" ) {
-var parser = new DOMParser(); // ¨ ❶
+var parser = new DOMParser(); // ❶
 return parser.parseFromString(chaineXML, "text/xml");
 } else {
 var document = creerDocumentXML();
-document.loadXML(chaineXML); // ¨ ❷
+document.loadXML(chaineXML); // ❷
 return document;
 }
 }
+var chaineXML = "<donnees><donnee id='1'>Valeur</donnee></donnees>";
+var document = parserChaine(chaineXML);
 ```
-
-`var chaineXML = "<donnees><donnee id='1'>Valeur</donnee></donnees>";` `var document = parserChaine(chaineXML);`
 
 第一种处理方式适用于 Firefox，依赖于 DOM 解析器（标记 ❶），而第二种适用于 Internet Explorer，它使用了前文描述的 XML 文档的 `loadXML` 方法（标记 ❷）。
 
@@ -8192,15 +8348,7 @@ JavaScript 允许实现 XSLT 技术，以便根据 XSL 样式表转换 XML 文�
 
 XSLT 的实现依赖 XML 来创建必要的 XML 文档。
 
-LivreGougeon 第 226 页 2006 年 11 月 28 日 星期二 4:23 16
-
-## 使用 JavaScript 进行 Web 图形编程
-
-**226**
-
-第三部分
-
-### XSLT (扩展样式表语言转换)
+# XSLT (扩展样式表语言转换)
 
 在 XSL 标准中描述，XSLT 是一种 XML 转换语言。它允许将任何 XML 文档转换为任何其他类型的文档。获得的格式通常是文本。转换在一个 XML 文件中完成，该文件描述了如何使用输入 XML 文档来生成输出格式。该文件作为参数传递给 XSLT 引擎，由其执行转换。不同的语言都有相应的实现，包括 JavaScript。规范可以在地址 `http://www.w3.org/TR/xslt` 获取。
 
@@ -8208,7 +8356,7 @@ LivreGougeon 第 226 页 2006 年 11 月 28 日 星期二 4:23 16
 
 ```xml
 <?xml version="1.0"?>
-<xsl:stylesheet xmlns :xsl="http://www.w.org/TR/WD-xsl">
+<xsl:stylesheet xmlns:xsl="http://www.w.org/TR/WD-xsl">
 <xsl:output method="xml"/>
 <xsl:template match="/">
 <valeur><xsl:value-of select="/donnees/donnee[@id='1']"/></valeur>
@@ -8242,17 +8390,16 @@ var parser = new DOMParser();
 return parser.parseFromString(chaineXML, "text/xml");
 }
 }
-
 var xsltDocument = creerDocumentXML();
 var xsltProcessor = null;
-xsltProcessor = new XSLTProcessor(); // ¨ ❶
-xsltDocument.load(fichierXSLT); // ¨ ❷
+xsltProcessor = new XSLTProcessor(); // ❶
+xsltDocument.load(fichierXSLT); // ❷
 /* 指定 XSLT 引擎要使用的样式表规范 */
-xsltProcessor.importStylesheet(xsltDocument); // ¨ ❸
+xsltProcessor.importStylesheet(xsltDocument); // ❸
 // 加载要转换的文档
-var documentXML = parserChaine("<donnees><donnee id='1'>Valeur</donnee></donnees>"); // ¨ ❹
+var documentXML = parserChaine("<donnees><donnee id='1'>Valeur</donnee></donnees>"); // ❹
 // 执行转换
-var documentResultat = xsltProcessor.transformToDocument(documentXML); // ¨ ❺
+var documentResultat = xsltProcessor.transformToDocument(documentXML); // ❺
 ```
 
 此代码实例化（标记 ❶）转换引擎，然后加载要使用的样式表（标记 ❷）。随后使用上述样式表对引擎进行配置（标记 ❸），然后利用之前加载的 XML 文档（标记 ❹）完成转换（标记 ❺）。
@@ -8272,7 +8419,7 @@ var documentXML = document.implementation.createDocument("","", null);
 documentXML.async = false;
 return documentXML;
 } else if( window.ActiveXObject ) {
-var documentXML = new ActiveXObject("MSXML2.FreeThreadedDOMDocument.3.0"); // ¨ ❶
+var documentXML = new ActiveXObject("MSXML2.FreeThreadedDOMDocument.3.0"); // ❶
 documentXML.async = false;
 return documentXML;
 }
@@ -8299,23 +8446,15 @@ return xslt.createProcessor();
 ```javascript
 function realiserTransformation(xsltProcessor, documentXML) {
 if( window.ActiveXObject ) {
-xsltProcessor.input = documentXML; // ¨ ❶
+xsltProcessor.input = documentXML; // ❶
 var documentXMLTransforme = creerDocumentXML();
 documentXMLTransforme.async = false;
-xsltProcessor.output = documentXMLTransforme; // ¨ ❷
-xsltProcessor.transform(); // ¨ ❸
+xsltProcessor.output = documentXMLTransforme; // ❷
+xsltProcessor.transform(); // ❸
 return documentXMLTransforme;
 }
 }
 ```
-
-LivreGougeon 第 227 页 2006 年 11 月 28 日 星期二 4:23 16
-
-## 使用 JavaScript 进行 Web 图形编程
-
-**228**
-
-第三部分
 
 ### Internet Explorer 浏览器中关于 XSLT 的 ActiveX 控件
 
@@ -8326,10 +8465,6 @@ LivreGougeon 第 227 页 2006 年 11 月 28 日 星期二 4:23 16
 非线程的 DOM ActiveX 控件如下（从新到旧）：`Msxml2.FreeThreadedDOMDocument.5.0`、`MSXML2.FreeThreadedDOMDocument.4.0`、`MSXML2.FreeThreadedDOMDocument.3.0`。
 
 加载 XSL 样式表的 ActiveX 控件如下（从新到旧）：`Msxml2.XSLTemplate.5.0`、`Msxml2.XSLTemplate.4.0`、`MSXML2.XSLTemplate.3.0`。
-
-
-
-
 
 该技术也可以用于修改页面的 DOM 树结构，从而改变页面的外观。
 
@@ -8355,7 +8490,7 @@ LivreGougeon 第 227 页 2006 年 11 月 28 日 星期二 4:23 16
 
 ## 图形组件概述
 
-图形组件通过提供用户可以交互的元素，使得构建应用程序图形界面成为可能。图形组件也可以称为控件（controls），因为它们负责处理界用户的操作。
+图形组件通过提供用户可以交互的元素，使得构建应用程序图形界面成为可能。图形组件也可以称为控件（controls），因为它们负责处理用户的操作。
 
 一个图形组件由其**结构**定义（结构定义了它所实现的各种图形元素）、其**外观**定义（外观指定了结构中定义元素的图形属性）以及其面对用户操作的**行为**定义（行为基于组件支持的事件而触发）。
 
@@ -8400,11 +8535,7 @@ LivreGougeon 第 227 页 2006 年 11 月 28 日 星期二 4:23 16
 
 ### 图形组件的结构化
 
-
-
-
-
-为了结构化图形组件，我们使用了 JavaScript 中实现面向对象编程的机制。这种这种，我们可以管理它们的外观、应用于它们的通用处理以及处理其事件的方式。
+为了结构化图形组件，我们使用了 JavaScript 中实现面向对象编程的机制。这种方式，我们可以管理它们的外观、应用于它们的通用处理以及处理其事件的方式。
 
 # 第 9 章：面向对象设计
 
@@ -8416,7 +8547,6 @@ LivreGougeon 第 227 页 2006 年 11 月 28 日 星期二 4:23 16
 function MonComposant(noeud) {
   this.noeudComposant = noeud;
 }
-
 MonComposant.prototype.construire = function() {
   var champ = document.createElement("input");
   (...)
@@ -8427,19 +8557,19 @@ MonComposant.prototype.construire = function() {
 在网页中使用图形组件可以按照以下方式实现：
 
 ```html
-<html
+<html>
 <head>
   <script type="text/javaScript">
     function initialiser () {
       // 创建一个类型为 MonComposant 的组件
       var monDiv = document.getElementById("monDiv");
       var monComposant = new MonComposant(monDiv); // ❶
-      monComposant.contruire();
+      monComposant.construire();
     }
   </script>
 </head>
 <body onload="initialiser()">
-  <div id="monDiv"></</div> <!-- ❷ -->
+  <div id="monDiv"></div> <!-- ❷ -->
 </body>
 </html>
 ```
@@ -8448,9 +8578,7 @@ MonComposant.prototype.construire = function() {
 
 使用 JavaScript 类允许从继承的概念受益。因此，JavaScript 组件的共同行为可以在图形控件的父类中描述。图 9.3 展示了一些图形组件可能的组织方式。
 
-## 使用 JavaScript 进行 Web 图形编程
-
-### 组件与容器
+## 组件与容器
 
 （图 9.3：图形组件的对象化划分）
 
@@ -8467,7 +8595,6 @@ function MonComposant(noeud) {
   this.noeudComposant = noeud;
   (...)
 }
-
 MonComposant.prototype.ajouterFichierCSS = function(fichierCSS){ // ❶
   if( !fichierCSS ) {
     return;
@@ -8483,7 +8610,7 @@ MonComposant.prototype.ajouterFichierCSS = function(fichierCSS){ // ❶
   link.setAttribute("type", "text/css");
   link.setAttribute("rel", "stylesheet");
   link.setAttribute("href", fichierCSS);
-  var head = doc.getElementsByTagName("head")[0];
+  var head = document.getElementsByTagName("head")[0];
   head.appendChild(link); // ❹
 }
 ```
@@ -8497,7 +8624,6 @@ function MonComposant(noeud) {
   this.noeudComposant = noeud;
   (...)
 }
-
 MonComposant.prototype.construire = function(){
   var conteneur = document.createElement("div");
   conteneur.className = "monComposantConteneur"; // ❶
@@ -8537,39 +8663,20 @@ MonComposant.prototype.construire = function(){
 以下代码提供了一个图形组件构建方法（标记 ❶）的实现示例：
 
 ```javascript
-function MonComposant(nœud, parametres) {
+function MonComposant(noeud, parametres) {
   this.noeudComposant = noeud;
   this.parametres = parametres;
 }
-
 MonComposant.prototype.construire = function() { // ❶
   var champ = document.createElement("input"); // ❷
   var champCache = this.parametres["champCache"];
   if( champCache ) {
     champ.setAttribute("type", "hidden"); // ❸
   }
-}
-```
-
-
-
-
-
-# 图形组件的实现
-
-**239**
-
-*第 9 章*
-
-```javascript
-var valeurParDefaut = this.parametres["defaut"];
-
-champ.setAttribute("value", valeurParDefaut); // ¨ ❸
-
-(...)
-
-this.noeudComposant.appendChild(champ); // ¨ ❹
-
+  var valeurParDefaut = this.parametres["defaut"];
+  champ.setAttribute("value", valeurParDefaut); // ❸
+  (...)
+  this.noeudComposant.appendChild(champ); // ❹
 }
 ```
 
@@ -8590,32 +8697,26 @@ this.noeudComposant.appendChild(champ); // ¨ ❹
 以下代码展示了如何在 Web 页面中实现这种方法：
 
 ```html
-<html
+<html>
 <head>
 <script type="text/javascript">
-var composants = []; // ¨ ❶
-
-window.onresize = function(evenement) { // ¨ ❷
-
+var composants = []; // ❶
+window.onresize = function(evenement) { // ❷
 for(var i=0;i<composants.length;i++) {
   var composant = composants[i];
-
-  composant.redimensionner(evenement); // ¨ ❸
+  composant.redimensionner(evenement); // ❸
 }
-
 }
-
 function MonComposant(noeud) {
   this.noeudComposant = noeud;
 }
-
-MonComposant.prototype.redimensionner = function(evenement) { // ¨ ❸
+MonComposant.prototype.redimensionner = function(evenement) { // ❸
   alert("redimensionnement de MonComposant");
 }
 </script>
 </head>
 <body onload="initialiser()">
-<div id="monDiv"></div
+<div id="monDiv"></div>
 </body>
 </html>
 ```
@@ -8632,38 +8733,25 @@ Web 页面中使用的所有组件必须存储在上述代码名为 `composants`
 
 我们在第 8 章中描述了如何基于 JavaScript 语言注册事件观察者。使用这种方法，图形组件可以将其自身的某些方法注册为事件观察者。
 
-以下代码给出了根据第 8 章中的 `enregistrerObservation` 函数（标记 ❷）注册 `methodeObservation` 方法（标记 ❶）的示例：
+以下代码给出了根据第 8 章中的 `enregistrerObservateur` 函数（标记 ❷）注册 `methodeObservation` 方法（标记 ❶）的示例：
 
 ```javascript
 function MonComposant(noeud) {
   this.noeudComposant = noeud;
 }
-```
-
-**图形组件的实现** **241**
-*第 9 章*(注：标题重复)*
-
-LivreGougeon 第 240 页 2006 年 11 月 28 日星期二 4:23 16
-
-**JavaScript 的 Web 图形编程**
-
-**240**
-
-*第三部分*
-
-```javascript
 MonComposant.prototype.construire = function() {
   var champ = document.createElement("input");
   this.noeudComposant.appendChild(champ);
 }
-
 function initialiser() {
   var monDiv = document.getElementById("monDiv");
   var monComposant = new MonComposant(monDiv);
   monComposant.construire();
-  composants.push(monComposant); // ¨ ❶
+  composants.push(monComposant); // ❶
 }
 ```
+
+
 
 ## Ajax 的使用
 
@@ -8676,59 +8764,39 @@ function MonComposant(noeud) {
   this.noeudComposant = noeud;
 }
 
-MonComposant.prototype.traiterDonneesChargees = function(evenement) { // ¨ ❶
-  (...)
+MonComposant.prototype.traiterDonneesChargees = function(evenement) {
+  // ...
 }
 
 MonComposant.prototype.chargerDonnees = function() {
   var adresse = "http://localhost/ajax/donnees.js";
   var parametres = { parametre1: "valeur1" };
-
-  executerRequeteAjax(adresse, parametres, this.traiterDonneesChargees); // ¨ ❷
+  executerRequeteAjax(adresse, parametres, this.traiterDonneesChargees);
 }
 ```
 
-LivreGougeon 第 242 页 2006 年 11 月 28 日星期二 4:23 16
-
-
-
-
-
 ```html
 </head>
-
-<body onload="initialiser()"> **¨** ❷
-
-<div id="monTableau" typeComposant="tableau"> **¨** ❸
-
-<titre libelle="Numéro"/> **¨** ❹
-
-<titre libelle="Isbn"/> **¨** ❹
-
-<titre libelle="Titre"/> **¨** ❹
-
-<titre libelle="Auteurs"/> **¨** ❹
-
+<body onload="initialiser()">
+<div id="monTableau" typeComposant="tableau">
+<titre libelle="Numéro"/>
+<titre libelle="Isbn"/>
+<titre libelle="Titre"/>
+<titre libelle="Auteurs"/>
 </div>
-
 </body>
-
 </html>
 ```
 
-LivreGougeon 第 243 页 2006 年 11 月 28 日星期二 4:23 16
-
 # 图形组件的实现
-
-**243**
 
 ### 第 9 章
 
-为了构建表格，DOM 树的处理会在网页加载后立即根据其 `load` 事件（标记 ❷）被触发。当此事件发生时，会执行对 DOM 树的分析处理（标记 ❶）。
+为了构建表格，DOM 树的处理会在网页加载后立即根据其 `load` 事件被触发。当此事件发生时，会执行对 DOM 树的分析处理。
 
-`div` 标签（标记 ❸）被用于定义一个类型为表格的图形组件。这一特性通过 `typeComposant` 属性来指定。
+`div` 标签被用于定义一个类型为表格的图形组件。这一特性通过 `typeComposant` 属性来指定。
 
-表格的列定义在 `div` 标签中，其依据是 `titre` 标签（标记 ❹）中的值，这些标签是专门为该图形组件实现的，不会被 Web 浏览器解释。
+表格的列定义在 `div` 标签中，其依据是 `titre` 标签中的值，这些标签是专门为该图形组件实现的，不会被 Web 浏览器解释。
 
 如果没有 JavaScript 处理，HTML 标签将被网页忽略，表格也无法显示。这就是为什么 `GestionComposants` 对象的 `analyse` 方法必须在页面完全加载后立即实现。
 
@@ -8740,64 +8808,36 @@ LivreGougeon 第 243 页 2006 年 11 月 28 日星期二 4:23 16
 var GestionComposants = {};
 
 GestionComposants.analyse = function(){
-
-var noeuds = document.getElementsByTagName("*");
-
-for (var i=0; i<noeuds.length; i++){
-
-var noeud = noeuds.item(i);
-
-var typeComposant = noeud .getAttribute("typeComposant");
-
-if (typeComposant != null){
-
-var composant = null;
-
-if (typeComposant == "tableau"){ **¨** ❶
-
-/* 通过 JavaScript 类构建表格 */
-
-composant = new Tableau(noeud); **¨** ❷
-
-} else if (typeCtrl == (...)){
-
-// 构建其他类型的组件
-
-(...)
-
-}
-
-// 添加组件属性
-
-composant.construire(); **¨** ❸
-
-// 将 JavaScript 对象添加到 DOM
-
-noeud.composant = composant; **¨** ❹
-
-}
-
-}
+  var noeuds = document.getElementsByTagName("*");
+  for (var i=0; i<noeuds.length; i++){
+    var noeud = noeuds.item(i);
+    var typeComposant = noeud.getAttribute("typeComposant");
+    if (typeComposant != null){
+      var composant = null;
+      if (typeComposant == "tableau"){
+        /* 通过 JavaScript 类构建表格 */
+        composant = new Tableau(noeud);
+      } else if (typeCtrl == (...)){
+        // 构建其他类型的组件
+        (...)
+      }
+      // 添加组件属性
+      composant.construire();
+      // 将 JavaScript 对象添加到 DOM
+      noeud.composant = composant;
+    }
+  }
 }
 ```
 
-`analyse` 方法根据 `typeComposant` 属性的值（标记 ❶）实例化适当的图形组件（`Tableau` 类的实例化标记 ❷）。所有图形组件都必须拥有一个共同的结构，即一个拥有 `noeud`（节点）参数和 `construire`（构建）方法的构造函数。
+`analyse` 方法根据 `typeComposant` 属性的值实例化适当的图形组件（`Tableau` 类的实例化）。所有图形组件都必须拥有一个共同的结构，即一个拥有 `noeud`（节点）参数和 `construire`（构建）方法的构造函数。
 
-后者的该方法被调用（标记 ❸），以便在网页中创建图形组件。
+后者的该方法被调用，以便在网页中创建图形组件。
 
-LivreGougeon 第 244 页 2006 年 11 月 28 日星期二 4:23 16
-
-# 使用 JavaScript 进行 Web 图形编程
-
-**244**
-
-### 第三部分
-
-最后，在标记 ❹ 处执行的处理允许保持代表图形组件的 JavaScript 对象实例与 DOM 树节点之间的联系。通过这种方式，可以随时获取与组件对应的 JavaScript 实例，如下代码所示：
+最后，执行的处理允许保持代表图形组件的 JavaScript 对象实例与 DOM 树节点之间的联系。通过这种方式，可以随时获取与组件对应的 JavaScript 实例，如下代码所示：
 
 ```javascript
 var nodeTableau = document.getElementById("monTableau");
-
 var monTableau = nodeTableau.composant;
 ```
 
@@ -8805,134 +8845,71 @@ var monTableau = nodeTableau.composant;
 
 ```javascript
 function Tableau(noeud){
-
-this.baseNoeud = noeud;
-
+  this.baseNoeud = noeud;
 }
 
 Tableau.prototype.construire = function(){
-
-// 在 this.baseNoeud 节点上通过 DOM 构建表格
-
-var frag = document.createDocumentFragment();
-
-var tableau = document.createElement("table"); **¨** ❶
-
-var thead = document.createElement("thead");
-
-tableau.appendChild(thead);
-
-var tr = document.createElement("tr");
-
-thead.appendChild(tr);
-
-frag.appendChild(tableau);
-
-// 构建列
-
-var colonnes = this.baseNoeud.getElementsByTagName("titre"); **¨** ❷
-
-for(var i=0; i<colonnes.length; i++){
-
-var td = document.createElement("td"); **¨** ❸
-
-tr.appendChild(td);
-
-var titre = document.createElement("label")
-
-var libelle = colonnes[i].getAttribute("libelle");
-
-var texte = document.createTextNode(libelle);
-
-titre.appendChild(texte);
-
-td.appendChild(titre);
-
-}
-
-this.baseNoeud.appendChild(frag);
-
+  // 在 this.baseNoeud 节点上通过 DOM 构建表格
+  var frag = document.createDocumentFragment();
+  var tableau = document.createElement("table");
+  var thead = document.createElement("thead");
+  tableau.appendChild(thead);
+  var tr = document.createElement("tr");
+  thead.appendChild(tr);
+  frag.appendChild(tableau);
+  // 构建列
+  var colonnes = this.baseNoeud.getElementsByTagName("titre");
+  for(var i=0; i<colonnes.length; i++){
+    var td = document.createElement("td");
+    tr.appendChild(td);
+    var titre = document.createElement("label")
+    var libelle = colonnes[i].getAttribute("libelle");
+    var texte = document.createTextNode(libelle);
+    titre.appendChild(texte);
+    td.appendChild(titre);
+  }
+  this.baseNoeud.appendChild(frag);
 }
 ```
 
-组件的构建是通过 `createElement` 方法（标记 ❶）实现的，该方法根据 `baseNoeud` 属性（标记 ❷）创建表格结构以及各个不同的列（标记 ❸）。
+组件的构建是通过 `createElement` 方法实现的，该方法根据 `baseNoeud` 属性创建表格结构以及各个不同的列。
 
-***基于 JavaScript 的构建***
+### 基于 JavaScript 的构建
 
-这种方法通过直接实例化来创建图形组件。类的构造函数接收一个添加图形组件的 DOM 节点（标记 ❶）作为参数。必须指定 DOM 节点的标识。
-
-LivreGougeon 第 245 页 2006 年 11 月 28 日星期二 4:23 16
-
-**图形组件的实现**
-
-**245**
-
-### 第 9 章
+这种方法通过直接实例化来创建图形组件。类的构造函数接收一个添加图形组件的 DOM 节点作为参数。必须指定 DOM 节点的标识。
 
 在接下来的代码中，上一节中的 `Tableau` 类经过了适配以实现这种方法：
 
 ```html
 <html>
-
 <head>
-
 <script type="text/javascript">
-
-function initialiser(){ **¨** ❶
-
-// 创建一个对象
-
-var monTableau =
-
-document.getElementById("monTableau");
-
-LivreGougeon 第 246 页 2006 年 11 月 28 日星期二 4:23 16
-
-**使用 JavaScript 进行 Web 图形编程**
-
-**246**
-
-*第三部分*
-
-var tableau = new Tableau(monTableau); **¨** ❷
-
-tableau.addColonne("nom"); **¨** ❷
-
-tableau.addColonne("prénom"); **¨** ❷
-
-tableau.addColonne("téléphone"); **¨** ❷
-
-tableau.construire(); **¨** ❷
-
+function initialiser(){
+  // 创建一个对象
+  var monTableau = document.getElementById("monTableau");
+  var tableau = new Tableau(monTableau);
+  tableau.addColonne("nom");
+  tableau.addColonne("prénom");
+  tableau.addColonne("téléphone");
+  tableau.construire();
 }
-
 </script>
-
 </head>
-
-<body onload="initialiser()"> **¨** ❸
-
+<body onload="initialiser()">
 <div id="monTableau"></div>
-
 </body>
-
 </html>
 ```
 
-图形组件是通过使用 `Tableau` 类及其 `addColonne` 和 `construire` 方法（标记 ❷），从名为 `initialiser` 的函数（标记 ❶）创建的，该函数在网页 `load` 事件（标记 ❸）发生时执行。
+图形组件是通过使用 `Tableau` 类及其 `addColonne` 和 `construire` 方法，从名为 `initialiser` 的函数创建的，该函数在网页 `load` 事件发生时执行。
 
 尽管这种构建方法初看起来比上一种简单，但当实现大量图形组件时，它会损害处理逻辑的可读性。
 
-***总结***
+### 总结
 
-两种图形组件的构建方法各自包含了
+两种图形组件的构建方法各自包含了优点和缺点。它们的使用取决于 Web 界面的设计方式以及技术选择。
 
-
-
-
-……的优点和缺点。它们的使用取决于 Web 界面的设计方式以及技术选择。
-
-HTML 描述方法通过通过 HTML 标签属性定义组件的属性，简化了图形组件的使用。它通过隐藏相应的 JavaScript 类的实例化和管理，促进了构建 Web 界面时所用语言的统一化。
+HTML 描述方法通过 HTML 标签属性定义组件的属性，简化了图形组件的使用。它通过隐藏相应的 JavaScript 类的实例化和管理，促进了构建 Web 界面时所用语言的统一化。
 
 然而，这种方法需要在 Web 页面加载时定义所有使用的组件，即使某些组件在最初需要隐藏，并在稍后才使用。此外，这种方法消耗资源较大，因为为了创建定义的图形组件，需要对页面的 DOM 树进行完整遍历。
 
@@ -8954,39 +8931,37 @@ HTML 描述方法通过通过 HTML 标签属性定义组件的属性，简化了
 <input type="text" typeComposant="completion" adresseCompletion="http://localhost/ajax/completion"/>
 ```
 
-`adresseCompletion` 属性（标记 ❶）允许指定用于根据 Ajax 请求获取补全值的地址。
+`adresseCompletion` 属性允许指定用于根据 Ajax 请求获取补全值的地址。
 
-为了考虑到考量（考虑）这个新的图形组件，必须对之前描述的 `GestionComposants` 对象的 `analyse` 方法进行修改，以处理类型为 `completion` 的图形组件（标记 ❶），详细代码所示：
+为了考虑到这个新的图形组件，必须对之前描述的 `GestionComposants` 对象的 `analyse` 方法进行修改，以处理类型为 `completion` 的图形组件，详细代码所示：
 
 ```javascript
 GestionComposants.analyse = function(){
   var noeuds = document.getElementsByTagName("*");
   for (var i=0; i<noeuds.length; i++){
-    var nodeud = noeuds.item(i);
-    var typeComposant = nodeud.getAttribute("typeComposant");
+    var noeud = noeuds.item(i);
+    var typeComposant = noeud.getAttribute("typeComposant");
     if (typeComposant != null){
       var composant = null;
       if (typeComposant == "tableau"){
-        composant = new Tableau(nodeud);
+        composant = new Tableau(noeud);
       } else if (typeComposant == "completion"){
-        composant = new Completion(nodeud);
+        composant = new Completion(noeud);
       }
       // 添加组件属性
       composant.construire();
       // 将 JavaScript 对象添加到 DOM
-      nodeud.composant = composant;
+      noeud.composant = composant;
     }
   }
 }
 ```
 
-## 使用 JavaScript 的 Web 图形编程
-
 组件的实现基于 `Completion` 类，其代码如下：
 
 ```javascript
-function Completion(nodeud){
-  this.baseNoeud = nodeud;
+function Completion(noeud){
+  this.baseNoeud = noeud;
   this.adresseRecherche = null;
 }
 
@@ -9004,7 +8979,7 @@ Completion.prototype.complete = function(){
 }
 
 Completion.prototype.executerRequeteAjax = function(adresseRecherche, texteSaisie){
-  // (...)
+  // ...
 }
 
 Completion.prototype.traiterRepseAjax = function(valeur){
@@ -9015,9 +8990,9 @@ Completion.prototype.traiterRepseAjax = function(valeur){
 }
 ```
 
-用于确定补全文本的地址是根据字段 HTML 标签的 `adresseCompletion` 属性（标记 ❶）初始化的。该地址用于在输入字符时实现 Ajax 请求。输入根据字段的 `keyup` 事件（标记 ❷）检测到。`complete` 方法（标记 ❸）被注册为该事件的观察者并实现这些处理。
+用于确定补全文本的地址是根据字段 HTML 标签的 `adresseCompletion` 属性初始化的。该地址用于在输入字符时实现 Ajax 请求。输入根据字段的 `keyup` 事件检测到。`complete` 方法被注册为该事件的观察者并实现这些处理。
 
-该方法的职责是根据 `executerRequeteAjax` 方法（标记 ❹）触发异步 Ajax 请求。由于我们以异步模式使用 Ajax，回调方法 `traiterRepseAjax`（标记 ❺）定义在 `Completion` 类中，以便接收请求的响应并更新输入区域。该组件的实现展示了如何在 JavaScript 类中将其不同的行为模块化。该组件在 Web 页面上的实现非常简单，完全基于 HTML 语言。
+该方法的职责是根据 `executerRequeteAjax` 方法触发异步 Ajax 请求。由于我们以异步模式使用 Ajax，回调方法 `traiterRepseAjax` 定义在 `Completion` 类中，以便接收请求的响应并更新输入区域。该组件的实现展示了如何在 JavaScript 类中将其不同的行为模块化。该组件在 Web 页面上的实现非常简单，完全基于 HTML 语言。
 
 ### 选择列表
 
@@ -9041,15 +9016,6 @@ Completion.prototype.traiterRepseAjax = function(valeur){
 </div>
 ```
 
-
-
-
-LivreGougeon 第 250 页 2006 年 11 月 28 日 星期二 4:23 16
-
-# 使用 JavaScript 进行 Web 图形编程
-
-## 250 - 第三部分
-
 图形组件通过 `ListeSelection` 类实现，如下代码所示：
 
 ```javascript
@@ -9061,7 +9027,7 @@ function ListeSelection(noeudContenu){
   this.listeAffichee = false;
 }
 
-ComboBox.prototype.construire = function(){
+ListeSelection.prototype.construire = function(){
   // 创建组件的图形结构
   var combo = document.createDocumentFragment();
   var tableau = document.createElement("table");
@@ -9085,7 +9051,7 @@ ComboBox.prototype.construire = function(){
   img.src = "combo.png";
   /* 为图片注册点击事件观察者，
   用于打开或关闭值列表 */
-  enregistrerObservateurObjet(img, "click", this, this.gererAffichage); // ❶
+  enregistrerObservateurObjet(img, "click", this, this.gererAffichage);
   // 将结构添加到基础节点
   this.noeudContenu.appendChild(combo);
   // 创建包含值列表的 div
@@ -9096,17 +9062,11 @@ ComboBox.prototype.construire = function(){
   this.noeudContenu.appendChild(div);
   /* 注册 keydown 事件的观察者，
   用于过滤显示的值 */
-  enregistrerObservateurObjet(this.nodeTexte , "keydown", this, this.filtrer); // ❷
+  enregistrerObservateurObjet(this.nodeTexte, "keydown", this, this.filtrer);
 }
 ```
 
-LivreGougeon 第 251 页 2006 年 11 月 28 日 星期二 4:23 16
-
-# 图形组件的实现
-
-## 251 - 第 9 章
-
-`construire` 方法负责根据 DOM 构建图形组件的结构。它还允许注册观察者以处理图片上的点击事件（标记 ❶）以及区域内的文本输入（标记 ❷）。
+`construire` 方法负责根据 DOM 构建图形组件的结构。它还允许注册观察者以处理图片上的点击事件以及区域内的文本输入。
 
 这两个观察者分别通过 `gererAffichage` 和 `filtrer` 方法实现。
 
@@ -9124,7 +9084,7 @@ ListeSelection.prototype.gererAffichage = function(evenement){
 }
 ```
 
-根据用户输入过滤列表值的功能由 `filtrer` 方法实现。该方法每当区域内输入按键时就会触发一次。在标记 ❷ 处添加的 `keydown` 事件允许调用 `filtrer` 方法。
+根据用户输入过滤列表值的功能由 `filtrer` 方法实现。该方法每当区域内输入按键时就会触发一次。添加的 `keydown` 事件允许调用 `filtrer` 方法。
 
 以下代码详细说明了用于过滤列表中显示数据的类的 `filtrer` 和 `gererAffichage` 方法的实现：
 
@@ -9152,12 +9112,6 @@ ListeSelection.prototype.reset = function(){
 }
 ```
 
-LivreGougeon 第 252 页 2006 年 11 月 28 日 星期二 4:23 16
-
-# 使用 JavaScript 进行 Web 图形编程
-
-## 252 - 第三部分
-
 `filtrer` 方法执行 Ajax 请求，并指定 `ajouteValeurs` 方法作为响应的处理方法。该方法在 `div` 标签内的值列表中显示结果。
 
 请注意，Ajax 请求的异步模式在这里具有重要意义，因为它允许在请求发送到服务器期间不会阻塞用户。
@@ -9165,8 +9119,6 @@ LivreGougeon 第 252 页 2006 年 11 月 28 日 星期二 4:23 16
 ## 结论
 
 本章详细介绍了基于 JavaScript 语言组织 Web 页面图形组件的解决方案，这些组件构成了...
-
-LivreGougeon 第 253 页 2006 年 11 月 28 日 星期二 4:23 16
 
 # 第四部分
 
@@ -9178,7 +9130,7 @@ LivreGougeon 第 253 页 2006 年 11 月 28 日 星期二 4:23 16
 
 我们将首先描述 prototype 库的图形部分（其基础已在第 6 章介绍过），然后将详细介绍两个感兴趣的库：`behaviour` 和 `script.aculo.us`，它们分别用于管理 Web 页面中的事件和效果。
 
-## 10 - 轻量图形库
+## 第 10 章：轻量图形库
 
 在学习如 `dojo` 和 `rialto` 等完整的 JavaScript 库之前，我们将提到使用关注 Web 开发特定事项的轻量级库，例如事件和效果。
 
@@ -9188,19 +9140,9 @@ LivreGougeon 第 253 页 2006 年 11 月 28 日 星期二 4:23 16
 
 我们在本章中详细介绍了这些功能的实现。
 
-### DOM 树元素的操作
+#### DOM 树元素的操作
 
 prototype 库提供了 `Element` 对象，以便方便地操作 HTML 页面的 DOM 树元素。
-
-
-
-LivreGougeon 第 256 页 2006 年 11 月 28 日 星期二 4:23 16
-
-# 图形 JavaScript 库
-
-256
-
-*第四部分*
 
 表 10.1 汇总了该对象的各种方法。
 
@@ -9230,32 +9172,24 @@ LivreGougeon 第 256 页 2006 年 11 月 28 日 星期二 4:23 16
 | `update` | 元素的 ID | 允许使用包含 HTML 片段的字符串来更新标签内容。 |
 | `visible` | 元素的 ID | 如果元素的 `display` 属性值为 `none` 则返回 `false`，否则返回 `true`。 |
 
-LivreGougeon 第 257 页 2006 年 11 月 28 日 星期二 4:23 16
-
-### 轻量级图形库
-
-257
-
-*第 10 章*
-
 我们将详细介绍这些元素操作方法的主要用法。
 
 `toggle` 方法提供了通过反转显示模式来显示或隐藏元素的能力：如果元素是可见的，它会将其隐藏，反之亦然。
 
-以下代码说明了该方法的实现（标记 ❶），用于显示和隐藏 ID 为 `monParagraphe` 的段落（标记 ❷）：
+以下代码说明了该方法的实现，用于显示和隐藏 ID 为 `monParagraphe` 的段落：
 
 ```html
 <html>
 <head>
 (...)
 <script type="text/javascript">
-function toggleParagraphe() { //  ❶
+function toggleParagraphe() {
   Element.toggle("monParagraphe");
 }
 </script>
 </head>
 <body>
-<p id="monParagraphe">一个段落</p> //  ❷
+<p id="monParagraphe">一个段落</p>
 (...)
 </body>
 </html>
@@ -9263,14 +9197,14 @@ function toggleParagraphe() { //  ❶
 
 `update` 方法允许轻松地更新标签内容。它接受要更新的元素的 ID 以及以字符串形式的新内容作为参数，后者可以包含 HTML 代码。
 
-以下代码说明了该方法的实现（标记 ❶），用于将 ID 为 `monParagraphe` 的段落（标记 ❷）中的文本加粗：
+以下代码说明了该方法的实现，用于将 ID 为 `monParagraphe` 的段落中的文本加粗：
 
 ```html
 <html>
 <head>
 (...)
 <script type="text/javascript">
-function mettreEnGrasParagraphe() { //  ❶
+function mettreEnGrasParagraphe() {
   var element = $("monParagraphe");
   var texte = element.innerHTML;
   Element.update("monParagraphe", "<b>"+texte+"</b>");
@@ -9285,15 +9219,7 @@ function mettreEnGrasParagraphe() { //  ❶
 
 `getStyle` 方法访问元素样式属性的值。如果需要修改此值，可以使用 `setStyle` 方法。
 
-LivreGougeon 第 258 页 2006 年 11 月 28 日 星期二 4:23 16
-
-# 图形库
-
-258
-
-*第四部分* (注：此处的文本“图形库”是重复的)
-
-以下代码允许获取 ID 为 `monParagraphe` 的段的 `text-align` 样式属性值（标记 ❶）：
+以下代码允许获取 ID 为 `monParagraphe` 的段的 `text-align` 样式属性值：
 
 ```html
 <html>
@@ -9313,14 +9239,14 @@ function getStyleParagraphe() {
 
 `classNames`、`hasClassName`、`addClassName` 和 `removeClassName` 方法可以操作元素的类名。
 
-以下代码说明了为 ID 为 `monParagraphe` 的段落（标记 ❷）添加类名（标记 ❶），如果它还没有类：
+以下代码说明了为 ID 为 `monParagraphe` 的段落添加类名，如果它还没有类：
 
 ```html
 <html>
 <head>
 (...)
 <script type="text/javascript">
-function ajouterClasseParagraphe() { 
+function ajouterClasseParagraphe() {
   if( !Element.hasClassName("monParagraphe") ) {
     Element.addClassName("monParagraphe", "maClasse");
   }
@@ -9333,24 +9259,20 @@ function ajouterClasseParagraphe() {
 </html>
 ```
 
-## HTML 块
+#### HTML 块
 
-该库提供了一组以 `Insertion` 为前的类，允许在页面 DOM 树中添加元素。
+该库提供了一组以 `Insertion` 为前缀的类，允许在页面 DOM 树中添加元素。
 
 `Insertion.Before` 在节点之前插入元素。该类的构造函数接受节点的 ID 以及字符串形式的插入内容，内容至少包含一个标签。该类特别适用于在另一个元素之前添加段落。
 
-LivreGougeon 第 259 页 2006 年 11 月 28 日 星期二 4:23 16
-
-### 轻量级图形库
-
-例如，在以下代码中，`ajouterParagraphe` 函数（标记 ❶）实现了 `Insertion.Before` 类的使用，以便在 ID 为 `monParagraphe` 的段落（标记 ❷）之前添加一个段落：
+例如，在以下代码中，`ajouterParagraphe` 函数实现了 `Insertion.Before` 类的使用，以便在 ID 为 `monParagraphe` 的段落之前添加一个段落：
 
 ```html
 <html>
 <head>
 (...)
 <script type="text/javascript">
-function ajouterParagraphe() { // ❶
+function ajouterParagraphe() {
   new Insertion.Before("monParagraphe", "<p>新段落</p>");
 }
 </script>
@@ -9363,35 +9285,36 @@ function ajouterParagraphe() { // ❶
 
 内存中的段落 DOM 树将发生如下变化：
 
+```html
 <p>新段落</p>
 <p id="monParagraphe">一个段落</p>
+```
 
 `Insertion.After` 在节点之后且相同级别插入元素。该类的构造函数参数与之前相同。该类的使用方法与 `Insertion.Before` 相同。使用该类后，内存中的段落 DOM 树将发生如下变化：
 
+```html
 <p id="monParagraphe">一个段落</p>
 <p>新段落</p>
-
-
-
+```
 
 `Insertion.Top` 类向节点添加一个元素，该元素将位于该节点子列表的第一个位置。该类的构造函数接收与之前相同的参数。
 
 该类特别适用于在 HTML 列表的第一个位置添加元素。
 
-在接下来的代码中，函数 `ajouterElementListe`（标记 ❶）实现了使用 `Insertion.Bottom` 类向 ID 为 `maListe` 的列表（标记 ❷）插入一个元素：
+在接下来的代码中，函数 `ajouterElementListe` 实现了使用 `Insertion.Top` 类向 ID 为 `maListe` 的列表插入一个元素：
 
 ```html
 <html>
 <head>
 (...)
 <script type="text/javascript">
-function ajouterElementListe() { // ❶
-new Insertion.Top("maListe", "<li>Nouvel élément</li>");
+function ajouterElementListe() {
+  new Insertion.Top("maListe", "<li>Nouvel élément</li>");
 }
 </script>
 </head>
 <body>
-<ul id="maListe"> // ❷
+<ul id="maListe">
 <li>Un élément</li>
 </ul>
 (...)
@@ -9419,7 +9342,7 @@ new Insertion.Top("maListe", "<li>Nouvel élément</li>");
 </ul>
 ```
 
-### 事件管理
+#### 事件管理
 
 Prototype 库提供了一种独立于浏览器的机制，用于注册和注销事件观察者。
 
@@ -9442,12 +9365,13 @@ Prototype 库提供了一种独立于浏览器的机制，用于注册和注销�
 
 `Event` 类的两个主要方法是 `observe` 和 `stopObserving`。它们分别允许为事件注册和注销观察者。
 
-### ` 代码展示了为 ID 为 `monBouton` 的标签（代表一个按钮）注册观察者：
+代码展示了为 ID 为 `monBouton` 的标签（代表一个按钮）注册观察者：
 
 ```javascript
 function monObservateur(event) {
-(...)
+  // ...
 }
+
 Event.observe("monBouton","click",monObservateur);
 ```
 
@@ -9490,40 +9414,30 @@ Event.stopObserving("monBouton","click",monObservateur);
 
 后者使用两个参数，其中第一个对应触发事件的元素。第二个参数返回元素的值（`Form.Element.Observer`）或字符串形式的表单序列化结果（`Form.Observer`）。
 
-以下代码展示了如何实现两种类型的 `Form.Element.Observer`（标记 ❶）和 `Form.Observer`（标记 ❷）观察者，以检测 ID 为 `monFormulaire` 的表单（标记 ❸）发生的修改：
+以下代码展示了如何实现两种类型的 `Form.Element.Observer` 和 `Form.Observer` 观察者，以检测 ID 为 `monFormulaire` 的表单发生的修改：
 
 ```html
 <html>
 <head>
 (...)
 <script type="text/javascript">
-function observateurChamp2(element, valeur) { // ❶
-(...)
+function observateurChamp2(element, valeur) {
+  // ...
 }
 
-function observateurMonFormulaire(element, valeur) { // ❷
-(...)
+function observateurMonFormulaire(element, valeur) {
+  // ...
 }
 
 function enregistrerObservateurs() {
-new Form.Element.Observer("champ2", 1, observateurChamp2); // ❶
-new Form.Observer("monFormulaire", 1, observateurMonFormulaire); // ❷
+  new Form.Element.Observer("champ2", 1, observateurChamp2);
+  new Form.Observer("monFormulaire", 1, observateurMonFormulaire);
 }
 </script>
 </head>
 <body onload="enregistrerObservateurs();">
-<form id="monFormulaire"> // ❸
+<form id="monFormulaire">
 <input type="hidden" id="champ1" name="champ1" value="valeur1"/>
-</form>
-</body>
-</html>
-```
-
-
-
-
-
-```html
 <input type="text" id="champ2" name="champ2" value="valeur2"/>
 <input type="text" name="champ3" value="valeur3"/>
 </form>
@@ -9543,29 +9457,29 @@ Si l'élément passé en paramètre du constructeur de ces observateurs est un f
 
 Les observateurs fonctionnent de la même manière que précédemment.
 
-Le code suivant illustre la mise en œuvre de deux observateurs de types `Form.Element.EventObserver` (repère ❶) et `Form.EventObserver` (repère ❷) afin de détecter les modifications survenues dans le formulaire `monFormulaire` (repère ❸) :
+Le code suivant illustre la mise en œuvre de deux observateurs de types `Form.Element.EventObserver` et `Form.EventObserver` afin de détecter les modifications survenues dans le formulaire `monFormulaire` :
 
 ```html
-<html
+<html>
 <head>
 (...)
 <script type="text/javascript">
-function observateurChamp2(element, valeur) { // ❶
-(...)
+function observateurChamp2(element, valeur) {
+  // ...
 }
 
-function observateurMonFormulaire(element, valeur) { // ❷
-(...)
+function observateurMonFormulaire(element, valeur) {
+  // ...
 }
 
 function enregistrerObservateurs() {
-  new Form.Element.EventObserver("champ2", observateurChamp2); // ❶
-  new Form.EventObserver("monFormulaire", observateurMonFormulaire); // ❷
+  new Form.Element.EventObserver("champ2", observateurChamp2);
+  new Form.EventObserver("monFormulaire", observateurMonFormulaire);
 }
 </script>
 </head>
 <body onload="enregistrerObservateurs();">
-<form id="monFormulaire"> // ❸
+<form id="monFormulaire">
 <input type="hidden" id="champ1" name="champ1" value="valeur1"/>
 <input type="radio" id="champ2" name="champ2" value="valeur radio 1"/>
 <input type="radio" id="champ2" name="champ2" value="valeur radio 2"/>
@@ -9580,225 +9494,205 @@ Dès lors que l’utilisateur change la sélection pour les boutons radio (ident
 
 Si les événements fournis par standard sont insuffisants, la modification de la méthode `registerCallback` de la classe abstraite `Abstract.EventObserver` peut toujours être envisagée pour supporter d’autres types d’éléments.
 
-## Support des formulaires HTML
+#### Support des formulaires HTML
 
-prototype metet en œuvre l’objet `Form` pour gérer les informations et l’apparence des formulaires HTML. Le tableau 10.5 récapitule ses différentes méthodes.
+prototype met en œuvre l’objet `Form` 为管理 HTML 表单的信息和外观。表 10.5 总结了其不同的方法。
 
-### Tableau 10.5 Méthodes de l’objet Form
+### 表 10.5 Form 对象的方法
 
-| Méthode | Paramètre | Description |
+| 方法 | 参数 | 描述 |
 | :--- | :--- | :--- |
-| `disable` | L’identifiant du formulaire | Permet de désactiver tous les éléments d’un formulaire. La méthode spécifie la valeur `true` pour leur attribut `disabled`. |
-| `enable` | L’identifiant du formulaire | Permet d’activer tous les éléments d’un formulaire. La méthode spécifie la valeur « », correspondant à la chaîne de caractères vide, pour leur attribut `disabled`. |
-| `findFirstElement` | L’identifiant du formulaire | Retourne le premier élément du formulaire non caché, actif et dont la balise est `input`, `select` ou `textarea`. |
-| `focusFirstElement` | L’identifiant du formulaire | Positionne le curseur sur le premier élément du formulaire, élément déterminé par l’intermédiaire de la méthode `findFirstElement`. |
-| `getElements` | L’identifiant du formulaire | Permet de récupérer sous forme de tableau tous les éléments du formulaire. Les éléments du tableau correspondent à des éléments de l’arbre DOM. |
-| `getInputs` | L’identifiant du formulaire, le type et son nom | Retourne un tableau contenant les champs de saisie du formulaire correspondant au type et au nom spécifiés en paramètres. |
-| `reset` | L’identifiant du formulaire | Réinitialise toutes les valeurs des éléments du formulaire. |
-| `serialize` | L’identifiant du formulaire | Permet de construire une chaîne de caractères à partir des différents éléments du formulaire. Les valeurs des éléments sont séparées par le caractère `&`. |
+| `disable` | 表单的标识符 | 允许禁用表单的所有元素。该方法为其 `disabled` 属性指定值 `true`。 |
+| `enable` | 表单的标识符 | 允许启用表单的所有元素。该方法为其 `disabled` 属性指定空字符串值。 |
+| `findFirstElement` | 表单的标识符 | 返回表单中第一个非隐藏、激活且标签为 `input`、`select` 或 `textarea` 的元素。 |
+| `focusFirstElement` | 表单的标识符 | 将光标定位在表单的第一个元素上，该元素由 `findFirstElement` 方法确定。 |
+| `getElements` | 表单的标识符 | 允许以数组形式检索表单的所有元素。数组元素对应 DOM 树元素。 |
+| `getInputs` | 表单的标识符、类型和名称 | 返回包含表单中与指定类型和名称对应的输入字段的数组。 |
+| `reset` | 表单的标识符 | 重置表单所有元素的值。 |
+| `serialize` | 表单的标识符 | 允许从表单的不同元素构建字符串。元素的值由字符 `&` 分隔。 |
 
-La méthode `getElements` offre la possibilité d’avoir accès rapidement à tous les éléments d’un formulaire, cette méthode renvoyant les éléments DOM correspondants.
+`getElements` 方法提供了快速访问表单所有元素的可能性，该方法返回对应的 DOM 元素。
 
-Dans le code suivant, la fonction `traiterValeursFormulaire` (repère ❶) est mise en œuvre pour récupérer les différentes valeurs des champs du formulaire `monFormulaire` (repère ❷) :
+在以下代码中，`traiterValeursFormulaire` 函数实现了检索 `monFormulaire` 表单不同字段值的功能：
 
 ```html
-<html
+<html>
 <head>
 (...)
 <script type="text/javascript">
-(...)
-function traiterValeursFormulaire () { // ❶
+function traiterValeursFormulaire () {
   var elements = Form.getElements("monFormulaire");
   var valeurs = {};
-  for( int cpt=0; cpt<elements.length; cpt++) {
+  for( var cpt=0; cpt<elements.length; cpt++) {
     var element = elements[cpt];
     valeurs[element.name] = element.value;
   }
-  /* valeurs est équivalent au tableau associatif suivant:
+  /* valeurs 等同于以下关联数组:
   { "champ1": "valeur1",
   "champ2": "valeur2",
   "champ3": "valeur3" }*/
-(...)
+  // ...
 }
 </script>
 </head>
 <body>
-<form id="monFormulaire"> // ❷
+<form id="monFormulaire">
 <input type="hidden" name="champ1" value="valeur1"/>
 <input type="text" name="champ2" value="valeur2"/>
-<input type="text" name="champ3" value="valeur3"/> (...)
+<input type="text" name="champ3" value="valeur3"/>
 </form>
 (...)
 </body>
 </html>
 ```
 
-La méthode `getInputs` offre un accès rapide à des éléments d’un formulaire dont le nom de la balise est `input`. Cette méthode prend en paramètre le nom du formulaire, le type de la balise ainsi que son nom.
+`getInputs` 方法提供了对标签名为 `input` 的表单元素的快速访问。该方法接受表单名称、标签类型及其名称作为参数。
 
-Le code suivant illustre la mise en œuvre de cette méthode afin de récupérer le champ caché du formulaire `monFormulaire` de l’exemple précédent :
+以下代码说明了该方法的实现，以检索前一个示例中 `monFormulaire` 表单的隐藏字段：
 
 ```javascript
 var listeChamps = Form.getInputs("monFormulaire", "hidden", "champ1");
 var champCache = listeChamps[0];
 var valeurChampCache = champCache.value;
-// valeurChampCache contient « valeur1 »
+// valeurChampCache 包含 "valeur1"
 ```
 
-La méthode `serialize` construit une chaîne de caractères avec les diverses valeurs des éléments du formulaire. Cette chaîne contient les différents couples-valeur séparés par le caractère `&`.
+`serialize` 方法用表单各元素的值构建一个字符串。该字符串包含各键值对，由字符 `&` 分隔。
 
-Le code suivant se fonde sur le formulaire utilisé dans l’exemple relatif à la méthode `getElements` et décrit l’utilisation de la méthode `serialize` :
+以下代码基于 `getElements` 示例中使用的表单，描述了 `serialize` 方法的使用：
 
 ```javascript
 var chaineValeurs = Form.serialize("monFormulaire");
-/* chaineValeurs contient « champ1=valeur1&champ2=valeur2&champ3=valeur3 » */
+/* chaineValeurs 包含 "champ1=valeur1&champ2=valeur2&champ3=valeur3" */
 ```
 
-L’objet `Form` se fonde sur l’objet `FormElement`, mais il est également possible d’utiliser ce dernier directement. Il met pour disposition les méthodes `serialize` et `getValue`, qui permettent respectivement d’encoder et de récupérer la valeur d’un champ de formulaire.
+`Form` 对象基于 `FormElement` 对象，但也可以直接使用后者。它提供 `serialize` 和 `getValue` 方法，分别用于编码和获取表单字段的值。
 
-Le code suivant illustre l’utilisation de la méthode `getValue` :
+以下代码说明了 `getValue` 方法的使用：
 
 ```javascript
 var valeurChamp1 = Form.Element.getValue("champ1");
-// valeurChamp1 contient la valeur « valeur1 »
+// valeurChamp1 包含值 "valeur1"
 ```
 
-## En résumé
+### 总结
 
-La bibliothèque prototype propose d’intéressantes fonctionnalités afin de développer des pages comprenant des traitements graphiques JavaScript évolués.
+prototype 库为开发包含高级 JavaScript 图形处理的页面提供了有趣的功能。
 
+良好的 Web 开发实践是将 JavaScript 代码与网页的 HTML 代码充分分离。HTML 允许通过特定属性直接在标签定义中定义与 HTML 标签关联的事件，这极大地损害了页面的可读性，因为这相当于混合了不同的关注点。
 
+# 图形 JavaScript 库
 
+## 第 10 章：轻量级图形库
 
-Une bonne pratique de développement Web consiste à bien séparer le code JavaScript du code HTML des pages Web. Le fait que le HTML permette de définir les événements associés à des balises HTML directement dans leur définition par le biais d’attributs particuliers nuit grand à la lisibilité des pages, puisque cela revient à mélanger diverses concerns.
+`behaviour` 库提供了一种有趣的机制，用于通过 CSS 样式将 JavaScript 事件附加到标签。这样，就不会在 HTML 标签中定义任何 JavaScript 代码。
 
-LivreGougeon Page 267 Mardi, 28\. novembre 2006 4:23 16
-
-# Bibliothèques graphiques légères
-**267**
-
-*CHAPITRE 10*
-
-La bibliothèque `behaviour` offre un mécanisme intéressant afin de rattacher des événements JavaScript aux balises par l’intermédiaire de styles CSS. De sorte, aucun code JavaScript n’est défini au niveau des balises HTML.
-
-La bibliothèque offre ainsi une alternative au code HTML suivant, qui spécifie les événements directement dans les attributs des balises (repère ❶) :
+该库为以下 HTML 代码提供了一种替代方案，后者直接在标签属性中指定事件：
 
 ```html
 <html>
 <head>
 <script type="text/javascript">
 function traiterEvenement(evenement) {
-(...)
+  // ...
 }
 </script>
 </head>
 <body>
 (...)
-<input type="button" onclick="traiterEvenement();" value="Un bouton"/ > **¨** ❶
+<input type="button" onclick="traiterEvenement();" value="Un bouton"/>
 (...)
 </body>
 </html>
 ```
 
-## Installation et mise en œuvre de la bibliothèque behaviour
+### 安装和实施 behaviour 库
 
-La bibliothèque se compose d'un fichier JavaScript nommé `behaviour.js`. Celui-ci doit être ajouté à la page Web souhaitant utiliser la bibliothèque, comme dans le code suivant :
+该库由一个名为 `behaviour.js` 的 JavaScript 文件组成。该文件必须添加到希望使用该库的网页中，如下代码所示：
 
 ```html
 <html>
 <head>
 (...)
-<script type="text/javascript" src="behaviour.js"></script> (...)
+<script type="text/javascript" src="behaviour.js"></script>
+(...)
 </head>
 (...)
 </html>
 ```
 
-L’étape suivante consiste à définir un tableau associatif permettant de mettre en relation des sélecteurs CSS avec des fonctions. Les fonctions doivent comporter un paramètre correspondant à un élément de l’arbre DOM de la page.
+下一步是定义一个关联数组，用于将 CSS 选择器与函数关联起来。这些函数必须包含一个对应页面 DOM 树元素的参数。
 
-Le code suivant montre comment mettre en œuvre ce tableau :
+以下代码展示了如何实现此数组：
 
 ```javascript
 var regles = {
   'div.maClasse': function(element) {
-  (...)
+    // ...
   },
   '#monIdentifiant b': function(element) {
-  (...)
+    // ...
   }
 };
 ```
 
-LivreGougeon Page 268 Mardi, 28\. novembre 2006 4:23 16
+关联数组的键对应用于识别受影响标签的 CSS 选择器。
 
-# Bibliothèques JavaScript graphiques
-**268**
-
-*PARTIE IV*
-
-Les clés du tableau associatif correspondent à des sélecteurs CSS permettant d’identifier les balises impactées.
-
-Dans la page HTML suivante, les règles `div.maClasse` et `#monIdentifiant b` décrites dans le code ci-dessus permettent d’indexer respectivement les balises `div` (repère ❶) et `b` (repère ❷) :
+在以下 HTML 页面中，上述代码中描述的规则 `div.maClasse` 和 `#monIdentifiant b` 分别用于索引 `div` 标签和 `b` 标签：
 
 ```html
 <html>
 (...)
 <body>
-<div class="maClasse">(...)</div> **¨** ❶
+<div class="maClasse">(...)</div>
 <p id="monIdentifiant">
-<b>Un texte en gras.</b> **¨** ❷
+<b>Un texte en gras.</b>
 </p>
 </body>
 </html>
 ```
 
-Une fois le tableau précédent appliqué à la page, la bibliothèque appelle les fonctions pour les éléments correspondant aux sélecteurs CSS lors du chargement de la page. Dans l’exemple ci-dessus, la première fonction est appelée avec l’élément correspondant à la balise `div` et la seconde avec celui de la balise `b`.
+一旦将上述数组应用于页面，库会在页面加载时为匹配 CSS 选择器的元素调用相应函数。在上述示例中，第一个函数使用对应 `div` 标签的元素调用，第二个函数使用对应 `b` 标签的元素调用。
 
-Des événements peuvent, dès lors, être associés aux éléments par l’intermédiaire du DOM.
+此后，可以通过 DOM 将事件关联到元素。
 
-Le code suivant décrit la façon d’ajouter l’événement `mouseover` à la balise `div` (repère ❶) et `click` à la balise `b` (repère ❷) :
+以下代码描述了如何向 `div` 标签添加 `mouseover` 事件，向 `b` 标签添加 `click` 事件：
 
 ```javascript
 var regles = {
   'div.maClasse': function(element) {
-    element.onmouseover= function() { **¨** ❶
-    alert("La souris est sur la balise div ");
+    element.onmouseover = function() {
+      alert("La souris est sur la balise div ");
     }
   },
   '#monIdentifiant b': function(element) {
-    element.onclick = function() { **¨** ❷
-    alert("L’utilisateur a cliqué sur le texte");
+    element.onclick = function() {
+      alert("L'utilisateur a cliqué sur le texte");
     }
   }
 };
 ```
 
-La façon d’enregistrer les observateurs d’événements n’est pas imposée par `behaviour`. Il est ainsi parfaitement possible d’utiliser l’approche précédemment décrite pour la bibliothèque `prototype`. Les règles définies ci-dessus doivent être appliquées à la page HTML.
+注册事件观察者的方式不由 `behaviour` 强制规定。因此完全可以使用前面针对 `prototype` 库描述的方法。上述定义的规则必须应用于 HTML 页面。
 
-Pour gérer l’application de ces règles, la bibliothèque fournit l’objet `Behaviour`. Cet objet contient une méthode `register`, qui permet d’appliquer des règles lors de l’initialisation d’une page Web.
+为了管理这些规则的应用，库提供了 `Behaviour` 对象。该对象包含一个 `register` 方法，用于在网页初始化时应用规则。
 
-LivreGougeon Page 269 Mardi, 28\. novembre 2006 4:23 16
-
-# Les bibliothèques graphiques légères
-**269**
-
-*CHAPITRE 10*
-
-Le code suivant illustre la mise en œuvre de cette méthode (repère ❶) :
+以下代码说明了该方法的实现：
 
 ```html
 <html>
 <head>
 (...)
 <script type="text/javascript">
-var regles = (...)
-Behaviour.register(regles); **¨** ❶
+var regles = ...
+Behaviour.register(regles);
 </script>
 (...)
 </head>
 </html>
 ```
 
-Ajoutons que si les règles doivent être modifiées pour prendre en compte des éléments de l’arbre DOM ajoutés après le chargement de la page, la méthode `apply` suivante (repère ❶) de l’objet `Behaviour` est utilisée :
+此外，如果规则需要修改以考虑页面加载后添加到 DOM 树的元素，则使用 `Behaviour` 对象的 `apply` 方法：
 
 ```javascript
 <script type="text/javascript">
@@ -9806,88 +9700,103 @@ function appliquerRegles() {
   var regles = {
   };
   Behaviour.register(regles);
-  Behaviour.apply(); **¨** ❶
+  Behaviour.apply();
 }
 </script>
 ```
 
-## En résumé
+### 总结
 
-La bibliothèque `behaviour` offre une solution intéressante et élégante afin de mettre en œuvre la gestion des événements en se fondant sur la technologie CSS. Cette bibliothèque de petite taille permet de bien structurer et séparer les différents traitements JavaScript des éléments HTML d’une page. L’initialisation de traitements relatifs à ces éléments, tels que l’enregistrement d’observateurs d’événements, peut être réalisée simplement par le biais d’un tableau.
+`behaviour` 库提供了一种基于 CSS 技术实现事件管理的有趣且优雅的解决方案。这个小型库允许良好地构建和分离页面 HTML 元素的各种 JavaScript 处理。与这些元素相关的处理初始化，如事件观察者的注册，可以通过一个数组简单地实现。
 
+### script.aculo.us 库
 
+`script.aculo.us` 库建立在 `prototype` 之上，提供了实现视觉效果的功能，如淡入淡出、滑动、缩放等。
 
-构造函数的最后一个参数不是强制性的，可以用于指定选项或通过回调函数注册对效果执行过程的观察者。
+该库由多个文件组成，但核心文件是 `effects.js`。它必须在页面中引入，且必须在 `prototype.js` 之后引入。
 
-基础效果的不同选项以及效果观察者分别汇总在表 10.8 和 10.9 中。
+#### 基础效果
 
-### 表 10.8 基础效果的主要配置选项
+该库提供了五个基础效果类，汇总在表 10.6 中。
+
+### 表 10.6 script.aculo.us 库中的基础效果类
+
+| 类 | 描述 |
+| :--- | :--- |
+| `Effect.Opacity` | 修改元素的透明度。 |
+| `Effect.Scale` | 缩放元素。 |
+| `Effect.Move` | 移动元素。 |
+| `Effect.Highlight` | 高亮显示元素（修改背景色）。 |
+| `Effect.Parallel` | 并行运行多个效果。 |
+
+这些类的构造函数接收要应用效果的元素作为第一个参数。构造函数的最后一个参数不是强制性的，可以用于指定选项或通过回调函数注册对效果执行过程的观察者。
+
+基础效果的不同选项以及效果观察者分别汇总在表 10.7 和 10.8 中。
+
+### 表 10.7 基础效果的主要配置选项
 
 | 参数 | 默认值 | 说明 |
 | :--- | :--- | :--- |
-| direction | center | 转换方向。可以使用以下值：`top-left`, `top-right`, `bottom-left`, `bottom-right`, `center`。 |
-| duration | 1.0 | 效果持续时间，以秒为单位 |
-| fps | 25 | 每秒帧数 |
-| from | 0.0 | 效果作用属性的起始值，例如元素的透明度值。 |
-| to | 1.0 | 效果作用属性的结束值。 |
-| transition | `Effect.Transitions.sinoidal` | 使用的过渡类型。共有五种类型：`Effect.Transitions.sinoidal`、`Effect.Transitions.linear`、`Effect.Transitions.reverse`、`Effect.Transitions.wobble` 和 `Effect.Transitions.flicker`。 |
+| `direction` | `center` | 转换方向。可以使用以下值：`top-left`, `top-right`, `bottom-left`, `bottom-right`, `center`。 |
+| `duration` | `1.0` | 效果持续时间，以秒为单位。 |
+| `fps` | `25` | 每秒帧数。 |
+| `from` | `0.0` | 效果作用属性的起始值，例如元素的透明度值。 |
+| `to` | `1.0` | 效果作用属性的结束值。 |
+| `transition` | `Effect.Transitions.sinoidal` | 使用的过渡类型。共有五种类型：`Effect.Transitions.sinoidal`、`Effect.Transitions.linear`、`Effect.Transitions.reverse`、`Effect.Transitions.wobble` 和 `Effect.Transitions.flicker`。 |
 
-### 表 10.9 基础效果的回调函数
+### 表 10.8 基础效果的回调函数
 
 | 函数 | 参数 | 说明 |
 | :--- | :--- | :--- |
-| afterFinish | 完成的效果实例 | 在效果完成最后一次显示刷新后调用。 |
-| afterUpdate | 完成的效果实例 | 在效果完成的每次显示刷新后调用。 |
-| beforeStart | 完成的效果实例 | 在效果开始的第一次显示刷新前调用。 |
-| beforeUpdate | 完成的效果实例 | 在效果开始的每次显示刷新前调用。 |
+| `afterFinish` | 完成的效果实例 | 在效果完成最后一次显示刷新后调用。 |
+| `afterUpdate` | 完成的效果实例 | 在效果完成的每次显示刷新后调用。 |
+| `beforeStart` | 完成的效果实例 | 在效果开始的第一次显示刷新前调用。 |
+| `beforeUpdate` | 完成的效果实例 | 在效果开始的每次显示刷新前调用。 |
 
-接下来的代码描述了 `Effect.Opacity` 效果（标记 ❶）的实现，该效果使文本（标记 ❷）逐渐消失：
+接下来的代码描述了 `Effect.Opacity` 效果的实现，该效果使文本逐渐消失：
 
 ```html
 <html>
 <head>
 (...)
 <script type="text/javascript">
-function jouerEffet() { // ¨ ❶
-var element = document.getElementById("monParagraphe");
-new Effect.Opacity(element,{
-duration: 2.0,
-transition: Effect.Transitions.linear,
-from: 1.0,
-to: 0});
+function jouerEffet() {
+  var element = document.getElementById("monParagraphe");
+  new Effect.Opacity(element, {
+    duration: 2.0,
+    transition: Effect.Transitions.linear,
+    from: 1.0,
+    to: 0
+  });
 }
 (...)
 </script>
 </head>
-LivreGougeon Page 272 Mardi, 28. novembre 2006 4:23 16
-图形 JavaScript 库
-272
-第四部分
 <body>
-<p id="monParagraphe">Une texte.</p> // ¨ ❷
+<p id="monParagraphe">Une texte.</p>
 </body>
 </html>
 ```
 
-所有这些基础效果都可以组合使用，以实现远为复杂的效果。这些复杂效果的类汇总在表 10.10 中。
+所有这些基础效果都可以组合使用，以实现更为复杂的效果。这些复杂效果的类汇总在表 10.9 中。
 
-### 表 10.10 script.aculo.us 库中的复杂效果类
+### 表 10.9 script.aculo.us 库中的复杂效果类
 
 | 类 |  |
 | :--- | :--- |
-| `Effect.Apear`, `Effect.Fade` | 使元素出现或消失。 |
+| `Effect.Appear`, `Effect.Fade` | 使元素出现或消失。 |
 | `Effect.BlindDown`, `Effect.BlindUp` | 卷起或向上卷起一个元素，使其分别出现或消失。 |
 | `Effect.DropOut` | 通过移动元素的同时改变其透明度来使其消失。 |
-| `Effect.Fold` | 将元素向向上折叠，然后向左侧折叠。 |
+| `Effect.Fold` | 将元素向上折叠，然后向左侧折叠。 |
 | `Effect.Grow` | 通过放大元素使其从底部出现。 |
 | `Effect.Pulsate` | 以心跳效果使元素出现和消失。 |
 | `Effect.Puff` | 使元素像烟雾一样消失。 |
 | `Effect.Shake` | 允许“摇晃”一个元素。 |
-| `Effect.Shrink` | 前一个效果的反向效果 |
+| `Effect.Shrink` | 前一个效果的反向效果。 |
 | `Effect.SlideDown`, `Effect.SlideUp` | 卷起或向上卷起一个元素，使其分别出现或消失。 |
 | `Effect.Squish` | 将元素压缩至左上角。 |
 | `Effect.SwitchOff` | 产生像电视开关一样让元素消失的幻觉。 |
-| `Effect.toggle` | 允许反转效果。它仅适用于 `Effect.Apear`/`Effect.Fade`、`Effect.BlindDown`/`Effect.BlindUp` 以及 `Effect.SlideDown`/`Effect.SlideUp` 效果对。它可以分别接受 `appear`、`slide` 和 `blind` 作为参数。 |
+| `Effect.Toggle` | 允许反转效果。它仅适用于 `Effect.Appear`/`Effect.Fade`、`Effect.BlindDown`/`Effect.BlindUp` 以及 `Effect.SlideDown`/`Effect.SlideUp` 效果对。它可以分别接受 `appear`、`slide` 和 `blind` 作为参数。 |
 
 显然，可以使用这五个基础效果来丰富这些效果列表。
 
@@ -9899,123 +9808,105 @@ LivreGougeon Page 272 Mardi, 28. novembre 2006 4:23 16
 
 - 第一个对应于输入和触发搜索的区域。它允许显示搜索的高级配置区域。
 - 第二个区域初始隐藏，当搜索字符数不足时提供错误信息的显示。
-
-![](img/index-290_1.jpg)
-
 - 第三个区域初始隐藏，允许显示搜索的高级配置参数。
 - 第四个区域初始隐藏，对应搜索结果。
 
-接下来的代码说明了这四个区域的实现，它们分别对应标识符为 `panelPrincipal`（标记 ❶）、`panelAvertissement`（标记 ❷）、`panelOptions`（标记 ❸）和 `panelResultats`（标记 ❹）的 div 块。我们重新处理了代码，以充分分离 HTML 代码和 JavaScript 代码，特别是在事件管理方面：
+接下来的代码说明了这四个区域的实现，它们分别对应标识符为 `panelPrincipal`、`panelAvertissement`、`panelOptions` 和 `panelResultats` 的 div 块。我们重新处理了代码，以充分分离 HTML 代码和 JavaScript 代码，特别是在事件管理方面：
 
 ```html
 <form id="monFormulaire" method="get" action="">
-<div id="panelPrincipal"> // ¨ ❶
+<div id="panelPrincipal">
 <label for="champRecherche">搜索:</label>
 <input class="box" name="champRecherche" id="champRecherche" type="text" />
 <input type="submit" size="10" value=" Go! " />
 <a href="#" id="optionsAvancees">高级选项</a>
-<div id="panelAvertissement" style="display:none;"> // ¨ ❷
+<div id="panelAvertissement" style="display:none;">
 至少使用三个字符。
 </div>
-</div>>
-<div id="panelOptions" style="display:none;"><<div> // ¨ ❸
+</div>
+<div id="panelOptions" style="display:none;">
 <a href="#" id="fermerOptions">关闭</a>
 <input type="checkbox" name="details" id="optionDetail" checked="checked" /> 显示结果详情（始终激活）
-</div></div>
-<div id="conteneurPanelResultats"><div id="panelResultats"
-style="display:none;"><div> // ¨ ❹
-<<ul>
-<<li>
+</div>
+<div id="conteneurPanelResultats">
+<div id="panelResultats" style="display:none;">
+<ul>
+<li>
 [<a href="http://prototype.con.net/" target="_new">Bibl](http://prototype.con.net)
 Prototypea</a><br/>
 面向对象的 JavaScript 库
 </li>
-</</ul>
+</ul>
 <a href="#" id="fermerResultats">关闭结果</a>
-</div></div></</div>
+</div>
+</div>
 </form>
 ```
 
-图 10.1 展示了搜索区域以及结果区域的外观。
 
-### 图 10.1
+
+# 图 10.1 搜索区域与结果区域外观
+
 *script.aculo.us 效果的实现示例*
 
-LivreGougeon Page 274 Mardi, 28. novembre 2006 4:23 16
-图形 JavaScript 库
-274
-第四部分
+## 观察者实现
 
 多个事件被绑定到表单和上述代码中的不同链接上，以触发各种效果。观察者的初始化通过 `initialiser` 方法完成，该方法页面加载时执行。
 
 接下来的代码描述了观察者的实现（代码中放置的标记 ❶ 到 ❺ 在表 10.11 中注释）：
 
 ```javascript
-function executerRecherche(evt) { // ¨ ❶
-if(Form.Element.getValue("champRecherche").length<3) {
-Effect.Shake("panelPrincipal");
-Effect.Appear("panelAvertissement",
-{duration:2.0,
-transition:Effect.Transitions.wobble});
-} else {
-if($("panelOptions").style.display=="")
-Effect.SlideUp("edsubpanel");
-if($("panelAvertissement").style.display=="")
-Effect.Fade("panelAvertissement");
-Effect.SlideDown("panelResultats");
+function executerRecherche(evt) { // ❶
+  if (Form.Element.getValue("champRecherche").length < 3) {
+    Effect.Shake("panelPrincipal");
+    Effect.Appear("panelAvertissement", {
+      duration: 2.0,
+      transition: Effect.Transitions.wobble
+    });
+  } else {
+    if ($("panelOptions").style.display == "")
+      Effect.SlideUp("edsubpanel");
+    if ($("panelAvertissement").style.display == "")
+      Effect.Fade("panelAvertissement");
+    Effect.SlideDown("panelResultats");
+  }
+  evt.preventDefault();
 }
-evt.preventDefault();
+
+function ouvrirOption(evt) { // ❷
+  new Effect.SlideDown("panelOptions");
+  evt.preventDefault();
 }
 
-function ouvrirOption(evt) { // ¨ ❷
-new Effect.SlideDown("panelOptions");
-evt.preventDefault();
-}
-```
-
-
-
-
-```javascript
-function detailsChange(evt) { //¨ ❸
+function detailsChange(evt) { // ❸
   new Effect.SlideUp("panelOptions");
   evt.preventDefault();
 }
 
-function fermerOptions() { //¨ ❹
+function fermerOptions() { // ❹
   new Effect.SlideUp("panelOptions");
   evt.preventDefault();
 }
 
-function fermerResultats() { //¨ ❺
+function fermerResultats() { // ❺
   new Effect.SlideUp('panelResultats');
   evt.preventDefault();
 }
 
-function initialiser() { //¨ ❻
-  Event.observe($("monFormulaire"),"submit",executerRecherche);
-  Event.observe($("optionsAvancees"),"click",ouvrirOption);
-  Event.observe($("optionDetail"),"change",detailsChange);
-  Event.observe($("fermerOptions"),"click",fermerOptions);
-  Event.observe($("panelResultats"),"click",fermerResultats);
+function initialiser() { // ❻
+  Event.observe($("monFormulaire"), "submit", executerRecherche);
+  Event.observe($("optionsAvancees"), "click", ouvrirOption);
+  Event.observe($("optionDetail"), "change", detailsChange);
+  Event.observe($("fermerOptions"), "click", fermerOptions);
+  Event.observe($("panelResultats"), "click", fermerResultats);
 }
 
-Event.observe(window,"load",initialiser);
+Event.observe(window, "load", initialiser);
 ```
 
 `initialiser` 函数（标记 `❻`）绑定到页面加载时触发的事件。它允许配置不同的事件监听器。
 
-LivreGougeon 第 275 页，2006 年 11 月 28 日 星期二 4:23 16
-
-### 轻量级图形库
-
-**275**
-
-### 第 10 章
-
-表 10.11 汇总了这些监听器执行的特效和处理函数。
-
-#### 表 10.11 监听器的处理与效果
+## 表 10.11 监听器的处理与效果
 
 | 函数 | 被观察元素 | 说明 |
 | :--- | :--- | :--- |
@@ -10025,17 +9916,17 @@ LivreGougeon 第 275 页，2006 年 11 月 28 日 星期二 4:23 16
 | `fermerResultats` | `panelResultats` | 用于隐藏搜索结果区域。使用 `Effect.SlideUp` 效果（标记 `❺`），该区域向上折叠。 |
 | `ouvrirOption` | `optionsAvancees` | 用于显示高级选项区域。使用 `Effect.SlideDown` 效果（标记 `❷`），该区域向下展开。 |
 
-### 拖放
+## 拖放
 
-为了实现拖放功能（*Drag-and-Drop*），`script.aculo.us` 提供了 `Draggable` 类和 `Droppables` 对象。
+为了实现拖放功能（`Drag-and-Drop`），`script.aculo.us` 提供了 `Draggable` 类和 `Droppables` 对象。
 
 `Draggable` 类允许指定一个元素可以在拖放过程中移动到目标元素。它提供了一个构造函数，该函数参数接收受影响的元素以及一个包含不同选项和回调函数的关联数组。
 
 表 10.12 和 10.13 分别汇总了该构造函数可用的各种选项和回调函数。
 
-#### 表 10.12 Draggable 类构造函数的选项
+### 表 10.12 `Draggable` 类构造函数的选项
 
-| 选项 | 默认值 | same |
+| 选项 | 默认值 | 说明 |
 | :--- | :--- | :--- |
 | `handle` | - | 指定元素只能被拖放到属性与 ID 匹配的区域内。 |
 | `revert` | - | 如果值为 `true`，元素在拖放结束后将返回其初始位置。 |
@@ -10043,17 +9934,9 @@ LivreGougeon 第 275 页，2006 年 11 月 28 日 星期二 4:23 16
 | `constraint` | - | 如果此属性可以取 `horizontal` 或 `vertical` 值，则拖放将被限制在指定的方向。 |
 | `ghosting` | `false` | 允许在拖放时移动克隆元素。克隆元素在被放置之前会停留在原位。 |
 
-LivreGougeon 第 276 页，2006 年 11 月 28 日 星期二 4:23 16
+### 表 10.13 `Draggable` 类构造函数的回调函数
 
-# JavaScript 图形库
-
-**276**
-
-### 第四部分
-
-#### 表 10.13 Draggable 类构造函数的回调函数
-
-| 方法 | 参数 | same |
+| 方法 | 参数 | 说明 |
 | :--- | :--- | :--- |
 | `change` | 被移动的元素 | 当元素在拖放中移动时调用。 |
 | `endeffect` | `Opacity` | 定义拖放开始时使用的效果。 |
@@ -10062,18 +9945,18 @@ LivreGougeon 第 276 页，2006 年 11 月 28 日 星期二 4:23 16
 
 `Droppables` 对象允许定义一个元素作为拖放的目标。该对象的方法汇总在表 10.14 中。
 
-#### 表 10.14 Droppables 对象的方法
+### 表 10.14 `Droppables` 对象的方法
 
-| 方法 | 参数 | same |
+| 方法 | 参数 | 说明 |
 | :--- | :--- | :--- |
-| `add` | 元素的 ID 以及包含选项和回调方法的关联数组 | 为指定元素添加拖放目标行为。此方法允许对拖放-处理处理周期中的不同事件指定不同的选项以及回调函数和方法。 |
+| `add` | 元素的 ID 以及包含选项和回调方法的关联数组 | 为指定元素添加拖放目标行为。此方法允许对拖放处理周期中的不同事件指定不同的选项以及回调函数和方法。 |
 | `remove` | 元素的 ID | 移除指定元素的拖放目标行为。 |
 
 如前所述，`add` 方法的第二个参数接收一个包含表 10.15 和 10.16 中汇总的各种选项和回调函数的关联数组。
 
-#### 表 10.15 Droppables 对象 add 方法的选项
+### 表 10.15 `Droppables` 对象 `add` 方法的选项
 
-| 选项 | 默认值 | same |
+| 选项 | 默认值 | 说明 |
 | :--- | :--- | :--- |
 | `accept` | - | 以字符串或数组形式指定 CSS 类列表。`add` 方法中指定的元素接受所有拥有一个或多个此类类的元素，以实现拖放。 |
 | `containment` | - | 仅当 `add` 方法中的元素包含在该项选项指定的元素内时，它才接受该元素进行拖放。 |
@@ -10081,36 +9964,18 @@ LivreGougeon 第 276 页，2006 年 11 月 28 日 星期二 4:23 16
 | `overlap` | - | 取 `horizontal` 或 `vertical` 值。如果设置了位置，仅当重叠超过 50% 时，目标才会产生反应。 |
 | `greedy` | `true` | 如果值为 `true`，则停止移动并不再处理下方的其他目标。 |
 
-#### 表 10.16 Droppables 对象 add 方法的回调函数
+### 表 10.16 `Droppables` 对象 `add` 方法的回调函数
 
-| 回调函数 | 参数 | same |
+| 回调函数 | 参数 | 说明 |
 | :--- | :--- | :--- |
 | `onHover` | 被移动的元素、目标元素和重叠百分比 | 当元素移动到目标元素的上方时调用。 |
 | `onDrop` | 被移动的元素和目标元素 | 当元素释放到接受它的元素上时调用。 |
 
-![](img/index-294_1.jpg)
-
-
-
-
-
-```javascript
-}
-
-Event.observe(window,"load",initialiser);
-```
-
-![](img/index-295_1.png)
-
-LivreGougeon 第 278 页 2006 年 11 月 28 日星期二 4:23 16
-
-# JavaScript 图库
-
-**278**
-
-第四部分
+![拖放示例](img/index-294_1.jpg)
 
 通过 `Draggable` 类的构造函数（标记 ❶），前两个图像变成了可以移动的元素。`Droppables` 对象的 `add` 方法（标记 ❷）定义了它们可以被放置在 ID 为 `caddy` 的区域，即箭头所示的区域。
+
+![拖放效果图](img/index-295_1.png)
 
 ## 自动补全
 
@@ -10121,7 +9986,6 @@ LivreGougeon 第 278 页 2006 年 11 月 28 日星期二 4:23 16
 图 10.3 展示了一个支持自动补全的字段示例。
 
 **图 10.3**
-
 *使用自动补全的字段示例*
 
 确定要显示的元素列表有两种方法。第一种是根据页面中包含的 JavaScript 数组在本地构建此列表。第二种是基于 Ajax 技术。
@@ -10135,23 +9999,15 @@ LivreGougeon 第 278 页 2006 年 11 月 28 日星期二 4:23 16
 
 该方法支持的选项汇总于表 10.17。
 
-LivreGougeon 第 279 页 2006 年 11 月 28 日星期二 4:23 16
-
-### 轻量级图形库
-
-**279**
-
-第 10 章
-
 ### 表 10.17 `Autocompleter.Local` 类构造函数的选项
 
 | 选项 | 默认值 | 描述 |
 | :--- | :--- | :--- |
-| choices | - | 指定在自动补全列表中显示的选项数量。 |
-| fullSearch | false | 在字符串数组的任何位置进行搜索。 |
-| ignoreCase | true | 搜索忽略大小写。 |
-| partialChars | 2 | 自动补全生效前需要输入的字符数。 |
-| partialSearch | true | 仅对数组字符串的开头进行搜索。 |
+| `choices` | - | 指定在自动补全列表中显示的选项数量。 |
+| `fullSearch` | `false` | 在字符串数组的任何位置进行搜索。 |
+| `ignoreCase` | `true` | 搜索忽略大小写。 |
+| `partialChars` | `2` | 自动补全生效前需要输入的字符数。 |
+| `partialSearch` | `true` | 仅对数组字符串的开头进行搜索。 |
 
 以下代码描述了一个准备使用的 `script.aculo.us` 自动补全输入区域。
 
@@ -10159,25 +10015,22 @@ LivreGougeon 第 279 页 2006 年 11 月 28 日星期二 4:23 16
 
 ```html
 <p>
-<label for="recherche">搜索字段:</label> **¨** ❶
-<br />
-<input id="recherche" autocomplete="off" size="40" type="text" value="" /> **¨** ❷
+  <label for="recherche">搜索字段:</label> ❶
+  <br />
+  <input id="recherche" autocomplete="off" size="40" type="text" value="" /> ❷
 </p>
-<div class="recherche_auto_complete" id="liste_recherche" style="display:none">
-➥
-</div> **¨** ❸
+<div class="recherche_auto_complete" id="liste_recherche" style="display:none">➥</div> ❸
 ```
 
 以下 JavaScript 代码允许对 `recherche` ID 输入区域应用自动补全机制：
 
 ```javascript
 function initialiser() {
-  var donnees = [ "un texte", "un autre texte" ];
-  var options = { partialChars : 3};
+  var donnees = ["un texte", "un autre texte"];
+  var options = { partialChars: 3 };
   new Autocompleter.Local("recherche", "liste_recherche", donnees, options);
 }
-
-Event.observe(window,"load",initialiser);
+Event.observe(window, "load", initialiser);
 ```
 
 基于 Ajax 技术的第二方法通过 `Ajax.Autocompleter` 类实现。该类的构造函数与 `Autocompleter.Local` 类接受相同的参数，不同之处第三个参数现在是一个地址，该地址负责返回补全结果。
@@ -10185,21 +10038,11 @@ Event.observe(window,"load",initialiser);
 当在字段中输入内容时，会向指定地址发送一个 POST 类型的 HTTP 请求。它包含一个与输入字段 ID 对应的参数，其值为所输入的文本。请求的响应包含要在随后出现的区域中显示的补全 HTML 内容。它必须符合如下格式化的列表：
 
 ```html
-<<ul>>
+<ul>
   <li>Premier 结果（第一个结果）</li>
   <li>Second 结果（第二个结果）</li>
 </ul>
 ```
-
-```
-
-LivreGougeon 第 280 页 2006 年 11 月 28 日星期二 4:23 16
-
-# JavaScript 图库
-
-**280**
-
-第四部分
 
 使用这种方法，可以使用表 10.18 和 10.19 汇总的选项和回调函数。
 
@@ -10207,24 +10050,23 @@ LivreGougeon 第 280 页 2006 年 11 月 28 日星期二 4:23 16
 
 | 选项 | 默认值 | 描述 |
 | :--- | :--- | :--- |
-| frequency | 0.4 | 发送 Ajax 请求的频率 |
-| indicator | null | 执行请求时显示的元素。 |
-| minChars | 2 | 自动补全生效前需要输入的字符数。 |
-| paramName | | 发送请求时使用的 ID |
-| tokens | [] | 允许选择的字符列表 |
+| `frequency` | `0.4` | 发送 Ajax 请求的频率 |
+| `indicator` | `null` | 执行请求时显示的元素。 |
+| `minChars` | `2` | 自动补全生效前需要输入的字符数。 |
+| `paramName` | | 发送请求时使用的 ID |
+| `tokens` | `[]` | 允许选择的字符列表 |
 
 如果我们回到示例，输入区域的结构是等价的。然而，现在的配置变为：
 
 ```javascript
 function initialiser() {
-  var options = {paramName: "value", minChars: 2};
+  var options = { paramName: "value", minChars: 2 };
   new Ajax.Autocompleter("recherche", "liste_recherche", "/autocomplete", options);
 }
-
-Event.observe(window,"load",initialiser);
+Event.observe(window, "load", initialiser);
 ```
 
-### 总结
+## 总结
 
 `script.aculo.us` 库提供了不同的功能，其中最有趣的功能是在应用程序中添加视觉效果。这些效果通过图形通知以及区域和结果的渐进式赋予了应用程序更高的易用性。
 
@@ -10232,37 +10074,9 @@ Event.observe(window,"load",initialiser);
 
 需要指出，与 `prototype` 库配合使用，`script.aculo.us` 是 Ruby on Rails 框架 JavaScript 模块的基础。
 
-LivreGougeon 第 281 页 2006 年 11 月 28 日星期二 4:23 16
-
-### 轻量级图形库
-
-**281**
-
-第 10 章
-
-## 结论
-
-本章描述的库非常有意义，因为它们很轻量级且实现了有限的功能。这种简单性并没有阻止它们通过让 Web 应用受益于 Web 2.0 功能来提供确定的附加价值。
-
-这些库的目标是通过隐藏语言的某些复杂性来简化 JavaScript 开发，通过清晰分离不同的关注点来改进应用的结构，并提供复杂的组件和图形效果。
-
-我们刻意只讨论了此类中主要的 JavaScript 库。互联网还提供了许多其他各方面具有价值的库。
-
-所有这些轻量级库也适用于希望通过 Web 2.0 行为丰富界面的经典 Web 应用。
-
-LivreGougeon 第 282 页 2006 年 11 月 28 日星期二 4:23 16
-
-LivreGougeon 第 283 页 2006 年 11 月 28 日星期二 4:23 16
-
-# 11
+# 第 11 章 dojo 库的图形支持
 
 ## 图形支持
-
-de dojo 库
-
-
-
-
 
 我们在书的第二部分已经看到，`dojo` 库提供了一个开发高级 JavaScript 应用的框架。该框架允许对模块进行结构化和按需加载。该库基于这一机制提供了从集合到 Ajax 技术的各种支持。
 
@@ -10272,17 +10086,15 @@ de dojo 库
 
 `dojo` 库在浏览器的特殊性之上提供了一个抽象层，并提供了一个用于实现和使用图形组件的框架。该库的方法是混合的：它允许 HTML 页面与图形组件的 JavaScript 类以及它们的 HTML 和 CSS 代码进行精细的交互，同时提供了通过编程操作这些组件的可能性。
 
-## 图形 JavaScript 库
-
 ## 基础 HTML 模块
 
 `dojo` 库提供了基础模块，特别允许对样式的操作和效果的管理，同时集成了不同浏览器的特殊性。
 
 这些模块实际上是 `dojo.html` 模块的子模块，在表 11.1 中进行了汇总。
 
-### 表 11.1 与 dojo HTML 支持相关的模块
+### 表 11.1 与 `dojo` HTML 支持相关的模块
 
-| 模块 |  |
+| 模块 | 说明 |
 | :--- | :--- |
 | `dojo.html.color` | 允许管理颜色。 |
 | `dojo.html.common` | 包含 `dojo` 的基础 HTML 函数。 |
@@ -10301,7 +10113,7 @@ de dojo 库
 
 表 11.2 汇总了该模块的不同函数。
 
-### 表 11.2 `dojo.html.common` 模块的样式管理函数
+### 表 11.2 `dojo.html.common` 模块的函数
 
 | 函数 | 参数 | 说明 |
 | :--- | :--- | :--- |
@@ -10309,14 +10121,7 @@ de dojo 库
 | `dojo.html.getCursorPosition` | 一个 DOM 事件 | 在不考虑滚动的情况下返回鼠标指针在 Web 页面上的位置。 |
 | `dojo.html.getEventTarget` | 一个 DOM 事件 | 确定触发事件的节点。 |
 | `dojo.html.getParentByType` | 节点和一个类型 | 返回匹配给定节点类型的第一个父节点。 |
-| `dojo.html.getScroll` | - | 返回浏览器中 Web 面的滚动位置。 |
-
-### dojo 库的图形支持
-
-### 表 11.2 `dojo.html.common` 模块的样式管理函数（续） |
-
-| 函数 | 参数 | 说明 |
-| :--- | :--- | :--- |
+| `dojo.html.getScroll` | - | 返回浏览器中 Web 页面的滚动位置。 |
 | `dojo.html.getViewport` | - | 返回浏览器中可见区域的尺寸。 |
 | `dojo.html.hasAttribute` | 一个节点和属性名 | 确定节点是否存在某个属性。 |
 | `dojo.html.isTag` | 一个节点和标签名列表 | 确定节点是否对应列表中的某个标签名。 |
@@ -10336,19 +10141,19 @@ de dojo 库
 ```javascript
 var noeud = dojo.byId("monDiv");
 var unAttribut = "";
-if( dojo.html.hasAttribute(noeud, "unAttribut") ) {
-    unAttribut = dojo.html.getAttribut(noeud, "unAttribut");
+if (dojo.html.hasAttribute(noeud, "unAttribut")) {
+  unAttribut = dojo.html.getAttribute(noeud, "unAttribut");
 }
 var unAutreAttribut = "";
-if( dojo.html.hasAttribut(noeud, "unAutreAttribut") ) {
-    unAutreAttribut = dojo.html.getAttribut(noeud, "unAutreAttribut");
+if (dojo.html.hasAttribute(noeud, "unAutreAttribut")) {
+  unAutreAttribut = dojo.html.getAttribute(noeud, "unAutreAttribut");
 }
 /* 变量 unAttribut 包含 div 标签属性 unAttribut 的内容而变量 unAutreAttribut 包含空字符串 */
 var retour = dojo.html.isTag(noeud, "span", "div", "p");
 /* 变量 retour 包含值 div，因为它是 div 类型 */
 ```
 
-请注意，使用 `dojo.html.hasAttribute` 和 `dojo.html.getAttribute` 函数处理相对于 `CSS` 的属性是不建议的，而应使用 `dojo.html.style` 模块来实现此。
+请注意，使用 `dojo.html.hasAttribute` 和 `dojo.html.getAttribute` 函数处理相对于 `CSS` 的属性是不建议的，而应使用 `dojo.html.style` 模块来实现此操作。
 
 `dojo.html.getScroll` 和 `dojo.html.getViewport` 函数分别允许确定滚动源和显示区域的大小。
 
@@ -10370,9 +10175,9 @@ var hauteurAffichage = viewport.height;
 
 ```javascript
 function fonctionObservateur(evenement) {
-    var pointeur = dojo.html.getCursorPosition(evenement);
-    var pointeurX = pointeur.x;
-    var pointeurY = pointeur.y;
+  var pointeur = dojo.html.getCursorPosition(evenement);
+  var pointeurX = pointeur.x;
+  var pointeurY = pointeur.y;
 }
 ```
 
@@ -10386,30 +10191,21 @@ function fonctionObservateur(evenement) {
 
 请注意，该属性无法通过 `dojo` 相关的 `DOM` 标准功能进行操作。
 
-
-
-
-
 以下代码展示了 `dojo.html.getClass` 和 `dojo.html.hasClass` 函数实现的示例，用于获取 DOM 节点（标记 ❶）的 `class` 属性值，并检查该值是否包含某个类名（标记 ❷）：
 
 ```javascript
-Var monDiv = dojo.byId("monDiv");
+var monDiv = dojo.byId("monDiv");
 
 /* 获取 ID 为 monDiv 的节点的 class 属性值 */
 var classe = dojo.html.getClass(monDiv); // ❶
 
 /* 检查 ID 为 monDiv 的节点的 class 属性值中是否包含类名 maClasse */
-if( dojo.html.hasClass(monDiv, "maClasse") ) { // ❷
-
-(...)
+if (dojo.html.hasClass(monDiv, "maClasse")) { // ❷
+  (...)
 }
 ```
 
-### dojo 库的图形支持
-
-## 第 11 章
-
-### 表格 11.3 `dojo.html.style` 模块的样式管理函数
+### 表 11.3 `dojo.html.style` 模块的样式管理函数
 
 | 函数 | 参数 | 描述 |
 | :--- | :--- | :--- |
@@ -10417,8 +10213,8 @@ if( dojo.html.hasClass(monDiv, "maClasse") ) { // ❷
 | `dojo.html.copyStyle` | 源节点和目标节点 | 将一个节点的样式复制到另一个节点。 |
 | `dojo.html.getClass` | 一个节点 | 返回传递参数节点 `class` 属性对应的值。 |
 | `dojo.html.getClasses` | 一个节点 | 返回传递参数节点 `class` 属性中包含的 CSS 类。 |
-| `dojo.html.getElementsByClass` | 一个 CSS 类、一个节点、一个节点类型、一个匹配类型和一个标记 | 返回符合传递参数标准的节点列表。这些标准可以是 CSS 类匹配、搜索父节点、节点类型，或一个指示不应使用 XPath 的标记。匹配类型列在 `dojo.html.class-MatchType` 结构中：– ContainsAll：所有的 CSS 类都与该节点相关联。– ContainsAny：至少有一个 CSS 类与该节点相关联。– IsOnly：所有的 CSS 类都与该节点相关联，且该节点不拥有其他类。 |
-| `dojo.html.getElementsByClassNameName` | 一个 CSS 类、一个节点、一个节点类型、一个匹配类型和一个标记 | 对应函数 `dojo.html.getElementsByClassName` 的同义词。 |
+| `dojo.html.getElementsByClass` | 一个 CSS 类、一个节点、一个节点类型、一个匹配类型和一个标记 | 返回符合传递参数标准的节点列表。这些标准可以是 CSS 类匹配、搜索父节点、节点类型，或一个指示不应使用 XPath 的标记。匹配类型列在 `dojo.html.classMatchType` 结构中：<br>– `ContainsAll`：所有的 CSS 类都与该节点相关联。<br>– `ContainsAny`：至少有一个 CSS 类与该节点相关联。<br>– `IsOnly`：所有的 CSS 类都与该节点相关联，且该节点不拥有其他类。 |
+| `dojo.html.getElementsByClassName` | 一个 CSS 类、一个节点、一个节点类型、一个匹配类型和一个标记 | 对应函数 `dojo.html.getElementsByClass` 的同义词。 |
 | `dojo.html.getStyle` | 一个节点和一个 CSS 选择器 | 返回节点的某个样式属性。 |
 | `dojo.html.getStyleProperty` | 一个节点和一个 CSS 选择器 | 返回节点样式中某个属性的值。 |
 | `dojo.html.hasClass` | 一个节点和一个 CSS 类 | 确定传递参数节点的 `class` 属性值是否包含某个 CSS 类。 |
@@ -10430,14 +10226,11 @@ if( dojo.html.hasClass(monDiv, "maClasse") ) { // ❷
 
 由于 Web 浏览器并不总是良好地处理标签类的修改，我们建议使用 `style` 属性来修改 DOM 节点的样式属性。
 
-## 第四部分：图形 JavaScript 库
-
 如下代码所示，`dojo.html.getElementsByClassName` 函数提供了访问 Web 页面上具有给定 CSS 类的所有元素的能力：
 
 ```javascript
 // 获取与 CSS 类 maClasse 的标签
 var balises = dojo.html.getElementsByClassName("maClasse");
-
 (...)
 ```
 
@@ -10458,9 +10251,9 @@ dojo.html.copyStyle(maBalise, monAutreBalise); // ❷
 
 ### 显示管理
 
-dojo 通过 `dojo.html.display` 模块提供了各种管理 Web 页面元素显示的函数。要使用这些函数，必须通过 `dojo.require` 函数导入该模块。
+`dojo` 通过 `dojo.html.display` 模块提供了各种管理 Web 页面元素显示的函数。要使用这些函数，必须通过 `dojo.require` 函数导入该模块。
 
-### 表格 11.4 `dojo.html.display` 模块的显示函数
+### 表 11.4 `dojo.html.display` 模块的显示函数
 
 | 函数 | 参数 | 描述 |
 | :--- | :--- | :--- |
@@ -10470,7 +10263,7 @@ dojo 通过 `dojo.html.display` 模块提供了各种管理 Web 页面元素显�
 | `dojo.html.isDisplayed` | 一个节点 | 如果节点样式的 `display` 属性值不同于 `none`，则返回 true。否则，返回该值。 |
 | `dojo.html.isShowing` | 一个节点 | 确定节点是否在 Web 页面上显示。 |
 | `dojo.html.isVisible` | 一个节点 | 如果节点的 `style` 属性值不同于 `hidden`，则返回 true。否则，返回该值。 |
-| `dojo.html.setDisplay` | 一个节点和一个字符串或布尔值 | 设置节点节点样式的 `display` 属性值。该函数接受字符串或布尔值作为参数。如果是字符串，参数设置为值。如果是布尔值，函数对 true 值使用 `visible`，对 false 值使用 `hidden`。 |
+| `dojo.html.setDisplay` | 一个节点和一个字符串或布尔值 | 设置节点样式的 `display` 属性值。该函数接受字符串或布尔值作为参数。如果是字符串，参数设置为值。如果是布尔值，函数对 true 值使用 `visible`，对 false 值使用 `hidden`。 |
 | `dojo.html.setOpacity` | 一个节点和一个数字 | 设置节点的透明度值。可能的值范围在 0.0 到 1.0 之间，分别对应透明显示和不透明显示。 |
 | `dojo.html.setShowing` | 一个节点和一个标记 | 根据标记调用 `dojo.html.show` 或 `dojo.html.hide` 函数。 |
 | `dojo.html.setVisibility` | 一个节点和一个字符串或布尔值 | （与 `dojo.html.setDisplay` 相同的描述） |
@@ -10478,12 +10271,6 @@ dojo 通过 `dojo.html.display` 模块提供了各种管理 Web 页面元素显�
 | `dojo.html.toggleDisplay` | 一个节点 | 根据节点样式的 `display` 属性反转节点的显示值。 |
 | `dojo.html.toggleShowing` | 一个节点 | 反转节点在 Web 页面上的显示模式。如果显示，则隐藏，反之亦然。 |
 | `dojo.html.toggleVisibility` | 一个节点 | 根据 `visibility` 属性反转节点的显示值。 |
-
-
-
-
-
-节点的可见性样式。
 
 `dojo.html.show` 和 `dojo.html.hide` 函数分别用于在 Web 页面显示（标记 ❶）和隐藏（标记 ❷）DOM 节点，如下代码所示：
 
@@ -10515,15 +10302,9 @@ function retablirOpacite(identifiantNoeud) {
 }
 ```
 
-LivreGougeon 第 290 页 2006 年 11 月 28 日星期二 4:23 16
-
-**图形 JavaScript 库**
-**290**
-*第四部分*
-
 请注意，透明度级别从 1.0（不透明显示）到 0.0（透明显示）不等。
 
-dojo 提供了基于以 `toggle` 开头的函数来反转节点显示状态的可能。以下代码实现了 `dojo.html.toggleShowing` 函数，用以隐藏已显示的节点，反之亦然：
+`dojo` 提供了基于以 `toggle` 开头的函数来反转节点显示状态的可能。以下代码实现了 `dojo.html.toggleShowing` 函数，用以隐藏已显示的节点，反之亦然：
 
 ```javascript
 function inverserAffichage(identifiantNoeud) {
@@ -10532,48 +10313,40 @@ function inverserAffichage(identifiantNoeud) {
 }
 ```
 
-**事件管理**
+## 事件管理
 
-与 prototype 库类似，dojo 提供了良好的机制来用于注册和注销事件观察者并管理它们。
+与 `prototype` 库类似，`dojo` 提供了良好的机制来用于注册和注销事件观察者并管理它们。
 
-然而，dojo 库提供了更通用的支持，因为它允许拦截任何方法调用以触发处理过程。我们稍后将看到这种机制对于处理 dojo 图形组件的事件非常有用，这些事件并不一定基于 DOM。
+然而，`dojo` 库提供了更通用的支持，因为它允许拦截任何方法调用以触发处理过程。我们稍后将看到这种机制对于处理 `dojo` 图形组件的事件非常有用，这些事件并不一定基于 `DOM`。
 
 事件的实现通常在页面初始化后完成。正如我们稍后看到的，该库不允许在页面的 `load` 事件上注册观察者。因此，这些处理必须通过 `dojo.addOnLoad` 函数来完成。
 
-**页面初始化处理**
+### 页面初始化处理
 
-为了初始化图形组件，dojo 会在页面加载时（`load` 事件）自动添加处理过程。因此，无法为该事件指定观察者，因为该事件只能指定一个观察者。此时，dojo 提供了通过 `dojo.addOnLoad` 函数在页面加载时添加处理的可能性。同样，也可以实现 `dojo.addOnUnload` 函数用于页面卸载。
+为了初始化图形组件，`dojo` 会在页面加载时（`load` 事件）自动添加处理过程。因此，无法为该事件指定观察者，因为该事件只能指定一个观察者。此时，`dojo` 提供了通过 `dojo.addOnLoad` 函数在页面加载时添加处理的可能性。同样，也可以实现 `dojo.addOnUnload` 函数用于页面卸载。
 
-***基础函数***
+### 基础函数
 
 事件支持的基础方法位于标识为字符串 `dojo.event.*` 的模块中，必须导入其中的不同元素。
 
 该支持基于 `dojo.event` 对象，该对象在导入相关事件模块时自动实例化，并提供了多个方法，其中主要方法是 `connect` 和 `disconnect` 用于注册和注销事件观察者。
 
-这种支持支持 DOM 事件，也支持执行 JavaScript 对象方法后触发的事件。
+这种支持支持 `DOM` 事件，也支持执行 JavaScript 对象方法后触发的事件。
 
-LivreGougeon 第 291 页 2006 年 11 月 28 日星期二 4:23 16
+### 注册事件观察者
 
-**dojo 库的图形支持**
-**291**
-*第 11 章*
-
-**注册事件观察者**
-
-基础方法 `connect` 用于注册事件观察者。在 dojo 的事件支持中，事件并不一定对应于用户的操作（即 DOM 事件）。该库还允许将对象的的方法调用视为事件，从而允许在该层级定义观察者。
+基础方法 `connect` 用于注册事件观察者。在 `dojo` 的事件支持中，事件并不一定对应于用户的操作（即 `DOM` 事件）。该库还允许将对象的的方法调用视为事件，从而允许在该层级定义观察者。
 
 要实现一个用于检测对象方法调用的观察者，必须使用 `connect` 方法并结合表 11.5 汇总的参数。
 
-**表 11.5 *connect* 方法的参数**
-
-**在观察对象方法的情况下**
+#### 表 11.5 `connect` 方法的参数（观察对象方法的情况下）
 
 | 参数 | 类型 | 描述 |
 | :--- | :--- | :--- |
 | `srcFunc` | 字符串 | 对应触发事件的前一个对象的方法名。 |
 | `srcObj` | 对象 | 对应注册观察者的方法的对象。 |
 | `adviceFunc` | 字符串 | 对应处理事件的方法名。 |
-| `adviceObjet` | 对象 | 对应包含方法的对象。 |
+| `adviceObj` | 对象 | 对应包含方法的对象。 |
 
 使用此方法对对象或其名称没有影响。
 
@@ -10596,20 +10369,14 @@ var monObservateur = { // ❷
 
 // 在对象上注册观察者
 dojo.event.connect(monObjet, "maMethode", // ❸
-monObservateur, "traiterEvenement");
+  monObservateur, "traiterEvenement");
 
-/* 在此此方法后，traiterEvenement 方法被调用 */
+/* 在此方法后，traiterEvenement 方法被调用 */
 ```
-
-LivreGougeon 第 292 页 2006 年 11 月 28 日星期二 4:23 16
-
-**图形 JavaScript 库**
-**292**
-*第四部分*
 
 这种机制也可以用于未挂载到任何对象的观察函数。在这种情况下，`connect` 方法仅接收表 11.6 汇总的三个参数。
 
-**表 11.6 *connect* 方法的参数** **在函数的情况下**
+#### 表 11.6 `connect` 方法的参数（函数的情况下）
 
 | 参数 | 类型 | 描述 |
 | :--- | :--- | :--- |
@@ -10627,25 +10394,23 @@ var monObjet = { // ❶
   }
 };
 
-// 观察
-var monObservateur = { // ❷
-  traiterEvenement: function() {
-    (...)
-  }
-};
+// 观察函数
+function traiterEvenement() { // ❷
+  (...)
+}
 
 // 在对象上注册观察者
 dojo.event.connect(monObjet, "maMethode", // ❸
-monObservateur, "traiterEvenement");
+  "traiterEvenement");
 
-/* 在调用此方法后，traiterement 函数被调用 */
+/* 在调用此方法后，traiterEvenement 函数被调用 */
 ```
 
-节点 DOM 事件的观察者注册方式与之前相同。`dojo.event.connect` 函数的第一个和第二个参数分别对应节点和所观察的事件名称。
+节点 `DOM` 事件的观察者注册方式与之前相同。`dojo.event.connect` 函数的第一个和第二个参数分别对应节点和所观察的事件名称。
 
 然而请注意，在使用函数时，事件名称必须加上 `on` 前缀。
 
-以下代码给出了为 ID 为 `monNoeud` 的 DOM 节点 `onclick` 事件注册观察者的实现示例：
+以下代码给出了为 ID 为 `monNoeud` 的 `DOM` 节点 `onclick` 事件注册观察者的实现示例：
 
 ```javascript
 var monObservateur = {
@@ -10656,24 +10421,12 @@ var monObservateur = {
 
 var monNoeud = dojo.byId("monNoeud");
 dojo.event.connect(monNoeud, "onclick",
-monObservateur, "traiterEvenement");
+  monObservateur, "traiterEvenement");
 ```
-
-
-
-
-
-```
-dojo.event.connect(monNoeud, "onclick", "traiterEvenement");
-```
-
-### dojo 库的图形支持
-
-## 第 11 章
 
 请注意，`connect` 方法提供了对多个相同观察者注册的支持。这些观察者通过此函数仅会被注册一次。
 
-dojo 库还提供了 `kwConnect` 方法，该方法基于关联数组作为参数。
+`dojo` 库还提供了 `kwConnect` 方法，该方法基于关联数组作为参数。
 
 以下代码调整了之前的示例，以使用该函数（标记为 ❶）：
 
@@ -10693,7 +10446,7 @@ var monObservateur = {
 };
 
 /* 在对象 monObjet 上注册观察者 monObservateur */
-dojo.event.kwConnect({ ❶
+dojo.event.kwConnect({ // ❶
   srcObj: monInstance,
   srcFunc: "maMethode",
   adviceObj: monObservateur,
@@ -10701,59 +10454,54 @@ dojo.event.kwConnect({ ❶
 });
 
 monInstance.maMethode();
-/* 调用此方法后，对象 monObservateur 的方法 traiterEvenement
- 将被调用 */
+/* 调用此方法后，对象 monObservateur 的方法 traiterEvenement 将被调用 */
 ```
 
-## 取消事件观察者的注册
+### 取消事件观察者的注册
 
-dojo 库提供了一种优雅的方式，基于 `disconnect` 方法来移除为 DOM 事件或方法注册的观察者。
+`dojo` 库提供了一种优雅的方式，基于 `disconnect` 方法来移除为 `DOM` 事件或方法注册的观察者。
 
 为了取消注册观察者，调用此方法时使用的参数必须与使用 `connect` 方法注册时使用的参数相同。
 
 以下代码给出了取消注册对象方法（标记为 ❶）的观察者（标记为 ❷）的示例（标记为 ❹），该观察者之前是基于 `connect` 方法（标记为 ❸）注册的：
 
 ```javascript
-var monInstance = { ❶
+var monInstance = { // ❶
   maMethode: function() {
     (...)
   }
 };
 
-var monObservateur = { ❷
+var monObservateur = { // ❷
   traiterEvenement: function() {
     (...)
   }
 };
 
-dojo.event.connect(monInstance, "maMethode", ❸
-monObservateur, "traiterEvenement");
+dojo.event.connect(monInstance, "maMethode", // ❸
+  monObservateur, "traiterEvenement");
 
 monInstance.maMethode();
-/* 调用此方法后，对象 monObservateur 的方法 traiterEvenement
- 将被调用 */
+/* 调用此方法后，对象 monObservateur 的方法 traiterEvenement 将被调用 */
 
-dojo.event.disconnect(monInstance, "maMethode", ❹
-monObservateur, "traiterEvenement");
+dojo.event.disconnect(monInstance, "maMethode", // ❹
+  monObservateur, "traiterEvenement");
 
 monInstance.maMethode();
-/* 调用此方法后，对象 monObservateur 的方法 traiterEvenement
- 不再被调用 */
+/* 调用此方法后，对象 monObservateur 的方法 traiterEvenement 不再被调用 */
 ```
 
-DOM 事件的取消注册以相同的方式实现，始终基于 `dojo.event.disconnect` 函数。
+`DOM` 事件的取消注册以相同的方式实现，始终基于 `dojo.event.disconnect` 函数。
 
-## 解耦
+### 解耦
 
 在 JavaScript 应用中，如果想要很好地分离网页中包含的不同元素（HTML、CSS 和 JavaScript），实现事件管理是一项真正的挑战。
 
-dojo 库实现了一种基于主题（*topics*）的机制，该机制允许触发器与事件观察者之间解耦。为此，该库实现了信息交换通道，观察者注册到这些通道上，以便在向给定通道发送事件时接收通知。
+`dojo` 库实现了一种基于主题（`topics`）的机制，该机制允许触发器与事件观察者之间解耦。为此，该库实现了信息交换通道，观察者注册到这些通道上，以便在向给定通道发送事件时接收通知。
 
-这些通道的管理和使用涉及到 `dojo.event.topic` 对象，该对象由 dojo 在包含事件相关的模块（由字符串 `dojo.event.*` 标识的模块）时进行实例化。
+这些通道的管理和使用涉及到 `dojo.event.topic` 对象，该对象由 `dojo` 在包含事件相关的模块（由字符串 `dojo.event.*` 标识的模块）时进行实例化。
 
-表 11.7 汇总了该实例的方法。
-
-### 表 11.7 `dojo.event.topic` 对象的方法
+#### 表 11.7 `dojo.event.topic` 对象的方法
 
 | 方法 | 参数 | 描述 |
 | :--- | :--- | :--- |
@@ -10764,9 +10512,9 @@ dojo 库实现了一种基于主题（*topics*）的机制，该机制允许触�
 | `subscribe` | 主题名称、对象和观察者方法名 | 为给定主题注册观察者。 |
 | `unsubscribe` | 主题名称、对象和观察者方法名 | 取消给定主题的观察者注册。 |
 
-dojo 库在内部基于 `dojo.event.topic.TopicImpl` 类管理主题。
+`dojo` 库在内部基于 `dojo.event.topic.TopicImpl` 类管理主题。
 
-## 向主题注册观察者
+#### 向主题注册观察者
 
 观察者的注册是通过 `dojo.event.topic` 对象的 `subscribe` 方法实现的。观察者用于处理事件的方法必须拥有一个参数以便接收与事件相关的消息。该参数的类型随触发事件而异。
 
@@ -10775,23 +10523,23 @@ dojo 库在内部基于 `dojo.event.topic.TopicImpl` 类管理主题。
 以下代码提供了该方法的实现示例（标记为 ❸），其中观察者通过对象方法（标记为 ❶）和函数（标记为 ❷）实现：
 
 ```javascript
-var monObservateur = { ❶
+var monObservateur = { // ❶
   traiterEvenement: function(message) {
     (...)
   }
 };
 
-function traiterEvenement(message) { ❷
+function traiterEvenement(message) { // ❷
   (...)
 }
 
-dojo.event.topic.subscribe("monSujet", ❸
-monObservateur, "traiterEvenement");
+dojo.event.topic.subscribe("monSujet", // ❸
+  monObservateur, "traiterEvenement");
 
 dojo.event.topic.subscribe("monSujet", "traiterEvenement"); // ❸
 ```
 
-## 向主题发布消息
+#### 向主题发布消息
 
 消息的发布可以通过两种方式实现。第一种直接基于代表主题的对象及其 `sendMessage` 方法，而第二种是将对象的一个方法配置为事件触发器。
 
@@ -10802,7 +10550,7 @@ var monSujet = dojo.event.topic.getTopic("monSujet");
 monSujet.sendMessage("mon message");
 ```
 
-在这种情况下，注册的观察者收到的是包含“mon message”的字符串。这种方法是侵入性的，因为它强制使用了 dojo 库的对象。
+在这种情况下，注册的观察者收到的是包含“mon message”的字符串。这种方法是侵入性的，因为它强制使用了 `dojo` 库的对象。
 
 使用第二种方式，必须使用 `dojo.event.topic` 对象的 `registerPublisher` 方法，如下代码所示：
 
@@ -10814,24 +10562,24 @@ var monDeclencheur = {
 };
 
 dojo.event.topic.registerPublisher("monSujet",
-monDeclencheur, "declencher");
+  monDeclencheur, "declencher");
 ```
 
-当调用 `monDeclencheur` 对象的 `declencher` 方法时，向主题 monSujet 发送事件。在这种方法下，注册的观察者收到的消息为空。
+当调用 `monDeclencheur` 对象的 `declencher` 方法时，向主题 `monSujet` 发送事件。在这种方法下，注册的观察者收到的消息为空。
 
-与之前描述的 `dojo.event` 对象的 `connect` 方法类似，`registerPublisher` 方法可以实现使用 DOM 事件作为触发器。以下代码在 `onclick` 事件发生时向主题 monSujet 发送消息：
+与之前描述的 `dojo.event` 对象的 `connect` 方法类似，`registerPublisher` 方法可以实现使用 `DOM` 事件作为触发器。以下代码在 `onclick` 事件发生时向主题 `monSujet` 发送消息：
 
 ```javascript
 var monBouton = dojo.byId("monBouton");
 dojo.event.topic.registerPublisher("monSujet",
-monBouton, "onclick");
+  monBouton, "onclick");
 ```
 
-在这种情况下，注册的观察者收到的消息对应于发生的 DOM 事件。
+在这种情况下，注册的观察者收到的消息对应于发生的 `DOM` 事件。
 
-### 效果管理
+## 效果管理
 
-dojo 库提供了 `dojo.lfx` 模块来实现视觉效果。支持的效果类似于 `script.aculo.us` 库（见第 10 章）。但它们的数量较少。
+`dojo` 库提供了 `dojo.lfx` 模块来实现视觉效果。支持的效果类似于 `script.aculo.us` 库（见第 10 章）。但它们的数量较少。
 
 表 11.8 汇总了该模块中的不同函数。
 
@@ -10839,86 +10587,15 @@ dojo 库提供了 `dojo.lfx` 模块来实现视觉效果。支持的效果类似
 
 | 函数 | 参数 | 描述 |
 | :--- | :--- | :--- |
-| `dojo.lfx.chain` | 要链链的效果 | |
-
-
-
-
-
-允许连续实现各种效果。
-
-`dojo.lfx.html.explode`
-
-起始节点，要显示的节点
-
-允许从一个节点开始以爆炸效果显示一个元素。
-
-起始透明度和以及效果的持续时间
-
-`dojo.lfx.html.fade`
-
-元素数组，数值
-
-允许通过逐渐改变透明度来使一个或多个元素变得透明或不透明。
-
-结束透明度和效果的持续时间
-
-`dojo.lfx.html.fadeHide`
-
-元素数组
-
-通过逐渐改变透明度来隐藏元素。
-
-效果的持续时间
-
-`dojo.lfx.html.fadeIn`
-
-元素数组
-
-通过逐渐改变透明度来显示元素。
-
-效果的持续时间
-
-`dojo.lfx.html.fadeOut`
-
-元素数组
-
-通过逐渐改变透明度来隐藏元素。
-
-效果的持续时间
-
-`dojo.lfx.html.fadeShow`
-
-元素数组
-
-通过逐渐改变透明度来显示元素。
-
-效果的持续时间
-
-`dojo.lfx.html.highlight`
-
-元素数组，一个 RGB 格式的颜色以及效果的持续时间
-
-允许修改元素的高亮状态。此函数允许指定效果开始时的高亮颜色。
-
-`dojo.lfx.html.implode`
-
-要隐藏的节点，到达节点以及效果的持续时间
-
-对应 `dojo.lfx.html.explode` 效果的反向。
-
-LivreGougeon 第 297 页 2006 年 11 月 28 日星期二 4:23 16
-
-**dojo 库的图形支持**
-
-**297**
-
-*第 11 章*
-
-**表 11.8 *dojo.lfx* 包中的效果管理函数（续）***
-
-| **函数** | **参数** | **描述** |
-| :--- | :--- | :--- |
+| `dojo.lfx.chain` | 要链接的效果 | 允许连续实现各种效果。 |
+| `dojo.lfx.html.explode` | 起始节点，要显示的节点，起始透明度和以及效果的持续时间 | 允许从一个节点开始以爆炸效果显示一个元素。 |
+| `dojo.lfx.html.fade` | 元素数组，数值，结束透明度和效果的持续时间 | 允许通过逐渐改变透明度来使一个或多个元素变得透明或不透明。 |
+| `dojo.lfx.html.fadeHide` | 元素数组，效果的持续时间 | 通过逐渐改变透明度来隐藏元素。 |
+| `dojo.lfx.html.fadeIn` | 元素数组，效果的持续时间 | 通过逐渐改变透明度来显示元素。 |
+| `dojo.lfx.html.fadeOut` | 元素数组，效果的持续时间 | 通过逐渐改变透明度来隐藏元素。 |
+| `dojo.lfx.html.fadeShow` | 元素数组，效果的持续时间 | 通过逐渐改变透明度来显示元素。 |
+| `dojo.lfx.html.highlight` | 元素数组，一个 RGB 格式的颜色以及效果的持续时间 | 允许修改元素的高亮状态。此函数允许指定效果开始时的高亮颜色。 |
+| `dojo.lfx.html.implode` | 要隐藏的节点，到达节点以及效果的持续时间 | 对应 `dojo.lfx.html.explode` 效果的反向。 |
 | `dojo.lfx.html.slideBy` | 元素数组、移动坐标和效果的持续时间 | 允许节点移动到相对于当前位置的位置。移动量通过参数指定。 |
 | `dojo.lfx.html.slideTo` | 元素数组、位置坐标和效果的持续时间 | 允许节点移动到指定坐标的位置。 |
 | `dojo.lfx.html.unhighlight` | 元素数组、一个 RGB 格式的颜色和效果的持续时间 | 允许修改元素的高亮状态。此函数允许指定效果结束的高亮颜色。 |
@@ -10932,53 +10609,45 @@ LivreGougeon 第 297 页 2006 年 11 月 28 日星期二 4:23 16
 ```html
 <html>
 <head>
-(...)
-<script type="text/javascript">
-dojo.require("dojo.lfx.*");
-</script>
-<script type="text/javascript">
-function executerEffet() {
-  var monTexte = dojo.byId("monTexte");
-  dojo.lfx.html.fade([monTexte], {start: 1.0, end: 0.0}, 1500).play();
-}
-</script>
+  (...)
+  <script type="text/javascript">
+    dojo.require("dojo.lfx.*");
+  </script>
+  <script type="text/javascript">
+    function executerEffet() {
+      var monTexte = dojo.byId("monTexte");
+      dojo.lfx.html.fade([monTexte], {start: 1.0, end: 0.0}, 1500).play(); // ❶
+    }
+  </script>
 </head>
 <body>
-<p id="monTexte">一个文本示例</p>
-<a href="javascript:executerEffet()">实现效果。</a>
+  <p id="monTexte">一个文本示例</p>
+  <a href="javascript:executerEffet()">实现效果。</a>
 </body>
 </html>
 ```
 
 `dojo.lfx.html.highlight` 和 `dojo.lfx.html.unhighlight` 函数允许管理元素的高亮。
 
-LivreGougeon 第 298 页 2006 年 11 月 28 日星期二 4:23 16
-
-**图形 JavaScript 库**
-
-**298**
-
-*第四部分*
-
 以下代码给出了最后一个函数（标记 ❶）的实现示例，用以使用代码颜色 (230, 230, 180) 实现文本高亮效果：
 
 ```html
 <html>
 <head>
-(...)
-<script type="text/javascript">
-dojo.require("dojo.lfx.*");
-</script>
-<script type="text/javascript">
-function executerEffet() {
-  var monTexte = dojo.byId("monTexte");
-  dojo.lfx.html.unhighlight(monTexte, [230, 230, 180], 1500).play();
-}
-</script>
+  (...)
+  <script type="text/javascript">
+    dojo.require("dojo.lfx.*");
+  </script>
+  <script type="text/javascript">
+    function executerEffet() {
+      var monTexte = dojo.byId("monTexte");
+      dojo.lfx.html.unhighlight(monTexte, [230, 230, 180], 1500).play(); // ❶
+    }
+  </script>
 </head>
 <body>
-<p id="monTexte">一个文本示例</p>
-<a href="javascript:executerEffet()">实现效果。</a>
+  <p id="monTexte">一个文本示例</p>
+  <a href="javascript:executerEffet()">实现效果。</a>
 </body>
 </html>
 ```
@@ -10988,89 +10657,66 @@ function executerEffet() {
 ```html
 <html>
 <head>
-(...)
-<script type="text/javascript">
-dojo.require("dojo.lfx.*");
-</script>
-<script type="text/javascript">
-function executerEffet() {
-  var monTexte = dojo.byId("monTexte");
-  dojo.lfx.html.wipeOut(monTexte, 1500).play();
-}
-</script>
+  (...)
+  <script type="text/javascript">
+    dojo.require("dojo.lfx.*");
+  </script>
+  <script type="text/javascript">
+    function executerEffet() {
+      var monTexte = dojo.byId("monTexte");
+      dojo.lfx.html.wipeOut(monTexte, 1500).play(); // ❶
+    }
+  </script>
 </head>
 <body>
-<p id="monTexte">一个文本示例</p>
-<a href="javascript:executerEffet()">实现效果。</a>
+  <p id="monTexte">一个文本示例</p>
+  <a href="javascript:executerEffet()">实现效果。</a>
 </body>
 </html>
 ```
 
-LivreGougeon 第 299 页 2006 年 11 月 28 日星期二 4:23 16
+## 拖放管理
 
-**dojo 库的图形支持**
-
-**299**
-
-*第 11 章*
-
-**拖放管理**
-
-为了实现拖放功能 (*drag-and-drop*），dojo 库提供了 `dojo.dnd.DragSource` 和 `dojo.dnd.DropTarget` 类。这两个类型的元素通过标识符 group 关联。该标识在类构造函数中指定。
+为了实现拖放功能（`drag-and-drop`），`dojo` 库提供了 `dojo.dnd.DragSource` 和 `dojo.dnd.DropTarget` 类。这两个类型的元素通过标识符 `group` 关联。该标识在类构造函数中指定。
 
 我们重新来看拖放示例：
 
 ```html
 <html>
 <head>
-(...)
-<script type="text/javascript">
-dojo.require("dojo.dnd.*");
-</script>
-<script type="text/javascript">
-function initialiser() {
-  var monTexte = dojo.byId("monTexte");
-  var drag = new dojo.dnd.DragSource(monTexte, "group");
-  var drop = new dojo.dnd.DropTarget("caddy", "group", function(e) {
-    console.log("元素已放置");
-  });
-}
-</script>
+  (...)
+  <script type="text/javascript">
+    dojo.require("dojo.dnd.*");
+  </script>
+  <script type="text/javascript">
+    function initialiser() {
+      var monTexte = dojo.byId("monTexte");
+      var drag = new dojo.dnd.DragSource(monTexte, "group");
+      var drop = new dojo.dnd.DropTarget("caddy", "group", function(e) {
+        console.log("元素已放置");
+      });
+    }
+  </script>
 </head>
 <body>
-<p id="monTexte">一个文本示例</p>
-<div id="caddy" style="border:1px solid black;">在此处放置</div>
+  <p id="monTexte">一个文本示例</p>
+  <div id="caddy" style="border:1px solid black;">在此处放置</div>
 </body>
 </html>
 ```
 
-```
-LivreGougeon 第 300 页 2006 年 11 月 28 日星期二 4:23 16
+## 图形组件的结构化
 
-**图形 JavaScript 库**
+`dojo` 的图形组件是基于第 7 章描述的模块概念来实现的。因此，每个图形组件都对应一个模块，该模块提供一个或多个 JavaScript 类。
 
-**300**
+在 `dojo` 库中，图形组件由三个元素组成，如图 11.1 所示。
 
-*第四部分*
-
-***图形组件的结构化***
-
-dojo 的图形组件是基于第 7 章描述的模块概念来实现的。因此，每个图形组件都对应一个模块，该模块提供一个或多个 JavaScript 类。
-
-
-
-
-在 dojo 库中，图形组件由三个元素组成，如图 11.1 所示。
-
-### dojo 图形组件
+### 图 11.1 `dojo` 图形组件的组成元素
 
 - 定义要使用的 HTML 模板文件
 - 组件的 HTML 模板
 - 组件的 JavaScript 类
 - 组件的 CSS 模板：定义要使用的 CSS 模板文件
-
-**图 11.1**
-*dojo 图形组件的组成元素*
 
 现在我们详细说明这些元素的不同特性。
 
@@ -11078,124 +10724,120 @@ dojo 的图形组件是基于第 7 章描述的模块概念来实现的。因此
 
 图形组件的 JavaScript 类对应于它的核心部分。它允许定义与其构建和运行相关的处理。它还包含了组件的各种属性。
 
-由于 dojo 使用面向对象编程来定义图形组件，因此组件是通过一个基于各种通用基类的类来实现的。
+由于 `dojo` 使用面向对象编程来定义图形组件，因此组件是通过一个基于各种通用基类的类来实现的。
 
 表 11.9 总结了这些不同的基类及其功能。
 
 图 11.2 展示了上述类之间的继承关系，以及它们不同的属性和方法。
 
-**表 11.9 dojo 图形组件的基类**
+#### 表 11.9 `dojo` 图形组件的基类
 
-| 类 |  |
+| 类 | 说明 |
 | :--- | :--- |
-| `dojo.widget.DomWidget` | 对应 `dojo.widget.Widget` 类的特化，以便考虑 DOM 技术机制。 |
-| `dojo.widget.HtmlWidget` | 对应 `dojo.widget.HtmlWidget` 类的特化，以便考虑基于 HTML 的组件方面，如显示、调整大小以及与 HTML 和 CSS 模板的绑定。 |
+| `dojo.widget.DomWidget` | 对应 `dojo.widget.Widget` 类的特化，以便考虑 `DOM` 技术机制。 |
+| `dojo.widget.HtmlWidget` | 对应 `dojo.widget.DomWidget` 类的特化，以便考虑基于 HTML 的组件方面，如显示、调整大小以及与 HTML 和 CSS 模板的绑定。 |
 | `dojo.widget.Widget` | 是所有组件的基类。这是最通用的类，实现了组件构建和销毁周期的各种处理。它还提供了各种方法来操作组件属性，并管理它们的尺寸调整以及与其他组件的关系。 |
 
-**Widget**
-- `-parent`
-- `-isTopLevel`
-- `-isModal`
-- `-isEnabled`
-- `-isHidden`
+#### 图 11.2 图形组件基类之间的关系
 
-**HtmlWidget**
-- `-isContainer`
+```
+Widget
+  -parent
+  -isTopLevel
+  -isModal
+  -isEnabled
+  -isHidden
+  +toString()
+  +repr()
+  +enable()
+  +disable()
+  +hide()
+  +show()
+  +addChild()
+  +postMixInProperties()
+  +onResized()
+  +addWidgetAsDirectChild()
+  +getContainerHeight()
+  +notifyChildrenOfResize()
+  +registerChild()
+  +getContainerWidth()
+  +create()
+  +removeChild()
+  +setNativeHeight()
+  +destroy()
+  +getFragNodeRef()
+  +createNodesFromText()
+  +destroyChildren()
+  +postInitialize()
+  +destroyRendering()
+  +getChildrenOfType()
+  +buildRendering()
+  +isShowing()
+  +getDescendants()
+  +buildFromTemplate()
+  +toggleShowing()
+  +satisfyPropertySets()
+  +attachTemplateNodes()
+  +mixInProperties()
+  +fillInTemplate()
+  +onShow()
+  +postMixInProperties()
+  +destroyRendering()
+  +hide()
+  +initialize()
+  +cleanUp()
+  +onHide()
+  +postInitialize()
+  +getContainerHeight()
+  +checkSize()
+  +postCreate()
+  +getContainerWidth()
+  +resizeTo()
+  +uninitialize()
+  +createNodesFromText()
+  +resizeSoon()
+  +buildRendering()
+  +onResized()
+  +destroyRendering()
+  +cleanUp()
+  +addedTo()
+  +addChild()
+  +removeChild()
+  +resize()
 
-**DomWidget**
-- `-widgetId`
-- `-widgetType`
-- `-templateNode`
-- `-templateCssPath`
-- `+toString()`
-- `-templateString`
-- `-templatePath`
-- `+repr()`
-- `-templateCssString`
-- `-toggle`
-- `+enable()`
-- `-preventClobber`
-- `-toggleDuration`
-- `+disable()`
-- `-domNode`
-- `-animationInProgress`
-- `+hide()`
-- `-containerNode`
-- `+initialize()`
-- `+show()`
-- `+addChild()`
-- `+postMixInProperties()`
-- `+onResized()`
-- `+addWidgetAsDirectChild()`
-- `+getContainerHeight()`
-- `+notifyChildrenOfResize()`
-- `+registerChild()`
-- `+getContainerWidth()`
-- `+create()`
-- `+removeChild()`
-- `+setNativeHeight()`
-- `+destroy()`
-- `+getFragNodeRef()`
-- `+createNodesFromText()`
-- `+destroyChildren()`
-- `+postInitialize()`
-- `+destroyRendering()`
-- `+getChildrenOfType()`
-- `+buildRendering()`
-- `+isShowing()`
-- `+getDescendants()`
-- `+buildFromTemplate()`
-- `+toggleShowing()`
-- `+satisfyPropertySets()`
-- `+attachTemplateNodes()`
-- `+show()`
-- `+mixInProperties()`
-- `+fillInTemplate()`
-- `+onShow()`
-- `+postMixInProperties()`
-- `+destroyRendering()`
-- `+hide()`
-- `+initialize()`
-- `+cleanUp()`
-- `+onHide()`
-- `+postInitialize()`
-- `+getContainerHeight()`
-- `+checkSize()`
-- `+postCreate()`
-- `+getContainerWidth()`
-- `+resizeTo()`
-- `+uninitialize()`
-- `+createNodesFromText()`
-- `+resizeSoon()`
-- `+buildRendering()`
-- `+onResized()`
-- `+destroyRendering()`
-- `+cleanUp()`
-- `+addedTo()`
-- `+addChild()`
-- `+removeChild()`
-- `+resize()`
+HtmlWidget
+  -isContainer
 
-**图 11.2**
-*图形组件基类之间的关系*
+DomWidget
+  -widgetId
+  -widgetType
+  -templateNode
+  -templateCssPath
+  -templateString
+  -templatePath
+  -templateCssString
+  -toggle
+  -preventClobber
+  -toggleDuration
+  -domNode
+  -animationInProgress
+  -containerNode
+```
 
 注意，此图通过省略图形属性的获取和定位方法而进行了简化。
 
-基于这些类，dojo 库实现了一个处理周期，用于初始化、构建和显示图形组件。
+基于这些类，`dojo` 库实现了一个处理周期，用于初始化、构建和显示图形组件。
 
 图 11.3 展示了组件基类不同方法的连续调用情况。
 
-**图 11.3**
-*dojo 图形组件的初始化处理*
+#### 图 11.3 `dojo` 图形组件的初始化处理
 
 ```
 Widget -> DomWidget -> HtmlWidget
 manager -> create -> satisfyPropertySets -> mixInProperties -> postMixInProperties -> add -> buildRendering -> fillInTemplate -> initialize -> postInitialize -> postCreate
 ```
 
-表 11.10 详细说明了组件构建管理周期方法中执行的不同处理。这些方法在图形组件的实现中可以被重写，以实现特定的初始化和构建处理。
-
-**表 11.10 创建图形组件时实现的方法**
+#### 表 11.10 创建图形组件时实现的方法
 
 | 方法 | 描述 |
 | :--- | :--- |
@@ -11208,19 +10850,16 @@ manager -> create -> satisfyPropertySets -> mixInProperties -> postMixInProperti
 | `postMixInProperties` | 在实现组件时可以重写，以便在执行 `mixInProperties` 方法后执行处理。 |
 | `satisfyPropertySets` | 允许初始化组件的默认属性。 |
 
-与创建一样，dojo 库实现了一个处理周期来销毁图形组件。图 11.4 展示了组件基类不同方法的连续调用情况。
+与创建一样，`dojo` 库实现了一个处理周期来销毁图形组件。图 11.4 展示了组件基类不同方法的连续调用情况。
 
-**图 11.4**
-*dojo 图形组件的销毁处理*
+#### 图 11.4 `dojo` 图形组件的销毁处理
 
 ```
 Widget -> DomWidget -> HtmlWidget
 manager -> destroy -> destroyChildren -> uninitialize -> destroyRendering -> removeById
 ```
 
-表 11.11 详细说明了组件销毁管理周期方法中执行的不同处理。
-
-**表 11.11 销毁图形组件时实现的方法**
+#### 表 11.11 销毁图形组件时实现的方法
 
 | 方法 | 参数 | 描述 |
 | :--- | :--- | :--- |
@@ -11228,133 +10867,101 @@ manager -> destroy -> destroyChildren -> uninitialize -> destroyRendering -> rem
 | `destroyRendering` | 布尔值 | 如果参数指定释放显示对应的资源，则允许销毁图形组件的显示。 |
 | `uninitialize` | - | 允许执行图形组件的最终化处理。 |
 
-最后请注意，为了方便 JavaScript 组件类的实现，该库提供了 `dojo.widget.defineWidget` 函数。该函数的主要目标是隐藏面向对象支持的使用，并将图形组件注册到 dojo 组件管理器中。
+最后请注意，为了方便 JavaScript 组件类的实现，该库提供了 `dojo.widget.defineWidget` 函数。该函数的主要目标是隐藏面向对象支持的使用，并将图形组件注册到 `dojo` 组件管理器中。
 
 以下代码提供了一个使用该函数的示例，用于实现图形组件 `dojo.widget.html.Button`：
 
 ```javascript
 dojo.widget.defineWidget(
-  "dojo.widget.html.Button",
-  dojo.widget.HtmlWidget,
-  {
+  "dojo.widget.html.Button", // ❶
+  dojo.widget.HtmlWidget,    // ❷
+  {                          // ❸
+    isContainer: true,
+    caption: "",
+    disabled: false,
+    templatePath: dojo.uri.dojoUri("src/widget/templates/HtmlButtonTemplate.html"),
+    templateCssPath: dojo.uri.dojoUri("src/widget/templates/HtmlButtonTemplate.css"),
+    (...)
+    fillInTemplate: function(args, frag) {
+      (...)
+    },
+    (...)
   }
 );
 ```
 
-
-
-
-```javascript
-isContainer: true,
-
-caption: "",
-
-disabled: false,
-
-templatePath: dojo.uri.dojoUri(
-"src/widget/templates/HtmlButtonTemplate.html"),
-
-templateCssPath: dojo.uri.dojoUri(
-"src/widget/templates/HtmlButtonTemplate.css"),
-
-(...)
-
-fillInTemplate: function(args, frag){
-(...)
-
-},
-
-(...)
-
-});
-```
-
 `dojo.widget.defineWidget` 函数允许指定组件的类名（标记 ❶）、其父类（标记 ❷）以及它的各种属性和方法（标记 ❸）。
 
-## HTML 
+### HTML 模板
 
 图形组件的 JavaScript 类必须与一个图形表示文件结合，后者用于定义组件的 HTML 结构。
 
 该文件必须通过其 `templatePath` 属性与 JavaScript 类关联。
 
-### dojo 库的图形支持
-
 以下代码展示了该机制的实现示例，基于 `dojo.uri.dojoUri` 函数（标记 ❶）来指定文件路径：
 
 ```javascript
 dojo.widget.defineWidget(
-"dojo.widget.MonComposant",
-dojo.widget.HtmlWidget, {
-(...)
-this.templatePath = dojo.uri.dojoUri(
-"src/widget/templates/monTemplate.html");
-(...)
-});
+  "dojo.widget.MonComposant",
+  dojo.widget.HtmlWidget, {
+    (...)
+    this.templatePath = dojo.uri.dojoUri( // ❶
+      "src/widget/templates/monTemplate.html");
+    (...)
+  }
+);
 ```
 
-dojo 提供了通过 HTML 标签中的特殊属性使类与此模板进行简单交互的可能性。
+`dojo` 提供了通过 HTML 标签中的特殊属性使类与此模板进行简单交互的可能性。
 
-首先，`dojoAttachPoint` 属性允许将 HTML 标签的 DOM 节点连接到组件 JavaScript 类的属性上。
+首先，`dojoAttachPoint` 属性允许将 HTML 标签的 `DOM` 节点连接到组件 JavaScript 类的属性上。
 
-以下代码展示了如何在模板中实现此属性（标记 ❶）：(...)
+以下代码展示了如何在模板中实现此属性（标记 ❶）：
 
 ```html
 <div dojoAttachPoint="monAttribut">
-(...)
-
+  (...)
 </div>
 ```
 
-```(...)
+对应于上述模板的组件类的 `monAttribut` 属性将包含一个 `div` 标签 `DOM` 节点的实例。
 
-对应于上述模板的组件类的 `monAttribut` 属性将包含一个 `div` 标签 DOM 节点的实例。
-
-`dojoAttachEvent` 属性允许将组件 JavaScript 类的方法指定为模板标签 DOM 事件的观察者。指定多个事件的观察器只需基于单一类型的属性即可。
+`dojoAttachEvent` 属性允许将组件 JavaScript 类的方法指定为模板标签 `DOM` 事件的观察者。指定多个事件的观察器只需基于单一类型的属性即可。
 
 以下代码展示了如何在 HTML 模板中实现 `dojoAttachEvent` 属性（标记 ❶）：
 
 ```html
-(...)
-
 <div dojoAttachEvent="onclick: traiterEvenement1">
-(...)
-
+  (...)
 </div>
-```
-
-```html
 
 <div dojoAttachEvent="onclick, onmouseover: traiterEvenement2">
-(...)
-
+  (...)
 </div>
 ```
 
-```html(...)
-
-dojo 库还提供了在模板中使用组件 JavaScript 类属性的可能性。
+`dojo` 库还提供了在模板中使用组件 JavaScript 类属性的可能性。
 
 以下代码描述了 `dojo.widget.html.HtmlCheckBox` 类的模板，该模板使用了该类的 `tabIndex`（标记 ❶）、`disabledStr`（标记 ❷）、`name`（标记 ❸）和 `checked`（标记 ❹）：
 
 ```html
 <a class='dojoHtmlCheckbox'
-tabIndex="${this.tabIndex}"
-href="#" ${this.disabledStr}
-dojoAttachEvent="onClick;keyPress"
-waiRole="checkbox">
-<input type="checkbox"
-name="${this.name}"
-checked="${this.checked}"
-style="display: none"
-dojoAttachPoint="inputNode">
-&nbsp;
-
-</a
+  tabIndex="${this.tabIndex}"
+  href="#" ${this.disabledStr}
+  dojoAttachEvent="onClick;keyPress"
+  waiRole="checkbox">
+  <input type="checkbox"
+    name="${this.name}"
+    checked="${this.checked}"
+    style="display: none"
+    dojoAttachPoint="inputNode">
+  &nbsp;
+</a>
 ```
 
 所使用的值对应于图形组件构建时的属性值。
 
-## CSS 文件
+### CSS 文件
 
 不同的样式允许定义图形组件的外观。这些样式必须在特定组件的 CSS 文件中定义。
 
@@ -11364,18 +10971,19 @@ dojoAttachPoint="inputNode">
 
 ```javascript
 dojo.widget.defineWidget(
-"dojo.widget.MonComposant",
-dojo.widget.HtmlWidget, {
-(...)
-this.templateCssPath = dojo.uri.dojoUri(
-"src/widget/templates/monTemplate.html");
-(...)
-});
+  "dojo.widget.MonComposant",
+  dojo.widget.HtmlWidget, {
+    (...)
+    this.templateCssPath = dojo.uri.dojoUri( // ❶
+      "src/widget/templates/monTemplate.css");
+    (...)
+  }
+);
 ```
 
-CSS 语言的所有机制均可用于定义组件的外观。
+`CSS` 语言的所有机制均可用于定义组件的外观。
 
-### 自定义组件的实现
+## 自定义组件的实现
 
 在上一节中，我们描述了图形组件的基础类及其通用机制。现在，我们将展示如何基于这些类来实现一个自定义的图形组件。
 
@@ -11383,12 +10991,12 @@ CSS 语言的所有机制均可用于定义组件的外观。
 
 图 11.5 展示我们将开发的组件外观。
 
-![](img/index-324_1.png)
+![备忘录组件外观](img/index-324_1.png)
 
 **图 11.5**
 *代表备忘录的图形组件外观*
 
-## 模板
+### 模板
 
 在开发 JavaScript 组件之前，我们需要基于 HTML 和 CSS 语言设计图形组件的外观。
 
@@ -11396,9 +11004,9 @@ CSS 语言的所有机制均可用于定义组件的外观。
 
 ```html
 <div class="memo">
-<div class="titre">Un titre</div
-<div class="fermeture">X</</div>
-<div class="corps">Le texte du memo</div
+  <div class="titre">Un titre</div>
+  <div class="fermeture">X</div>
+  <div class="corps">Le texte du memo</div>
 </div>
 ```
 
@@ -11408,35 +11016,38 @@ CSS 语言的所有机制均可用于定义组件的外观。
 
 ```css
 .memo {
-background: yellow;
-font-family: cursive;
-width: 10em;
+  background: yellow;
+  font-family: cursive;
+  width: 10em;
 }
+
 .titre {
-font-weight: bold;
-text-decoration: underline;
-float: left;
+  font-weight: bold;
+  text-decoration: underline;
+  float: left;
 }
+
 .fermeture {
-float: right;
-background: yellow;
-color: black;
-font-size: x-small;
-cursor:pointer;
+  float: right;
+  background: yellow;
+  color: black;
+  font-size: x-small;
+  cursor: pointer;
 }
+
 .corps {
-clear:both;
-font-style: italic;
+  clear: both;
+  font-style: italic;
 }
 ```
 
-现在我们已经实现了组件的结构，可以创建它的 JavaScript 类并将其与 HTML 和 CSS 模板。
+现在我们已经实现了组件的结构，可以创建它的 JavaScript 类并将其与 HTML 和 CSS 模板关联。
 
-## JavaScript 类
+### JavaScript 类
 
 必须实现 `dojo.widget.defineWidget` 函数以定义组件的 JavaScript 类。它将类名、父类及其属性和方法作为参数。
 
-`templatePath` 和 `templateCssPath` 属性允许将上一节创建的模板与 JavaScript 类关联。请注意，我们将这些文件存储在 dojo 分发版的 `src/widget/templates` 目录下，这些文件命名为 `Memo.html` 和 `Memo.css`。
+`templatePath` 和 `templateCssPath` 属性允许将上一节创建的模板与 JavaScript 类关联。请注意，我们将这些文件存储在 `dojo` 分发版的 `src/widget/templates` 目录下，这些文件命名为 `Memo.html` 和 `Memo.css`。
 
 以下代码提供了组件 JavaScript 类骨架的实现示例：
 
@@ -11444,52 +11055,41 @@ font-style: italic;
 dojo.provide("dojo.widget.Memo");
 dojo.require("dojo.widget.*");
 dojo.require("dojo.event.*");
+
 dojo.widget.defineWidget(
-"dojo.widget.Memo",
-dojo.widget.HtmlWidget,
-{
-isContainer: true,
-templatePath: dojo.uri.dojoUri(
-"src/widget/templates/Memo.html"),
-templateCssPath: dojo.uri.dojoUri(
-"src/widget/templates/Memo.css")
-}
+  "dojo.widget.Memo",
+  dojo.widget.HtmlWidget,
+  {
+    isContainer: true,
+    templatePath: dojo.uri.dojoUri("src/widget/templates/Memo.html"),
+    templateCssPath: dojo.uri.dojoUri("src/widget/templates/Memo.css")
+  }
 );
 ```
 
+`dojo` 库提供了通过相应的 `dojoAttachPoint` 和 `dojoAttachEvent` 属性绑定元素和事件，使 HTML 模板与 JavaScript 类进行交互的可能性。
 
-
-
-dojo 库提供了通过相应的 `dojoAttachPoint` 和 `dojoAttachEvent` 属性绑定元素和事件，使 HTML 模板与 JavaScript 类进行交互的可能性。
-
-由于声明中包含的标签必须自动添加到备忘录主体中，因此包含备忘录主体的 div 标签必须链接到类的 `containerNode` 属性（标记 ❶），如下代码所示：
+由于声明中包含的标签必须自动添加到备忘录主体中，因此包含备忘录主体的 `div` 标签必须链接到类的 `containerNode` 属性（标记 ❶），如下代码所示：
 
 ```html
 <div class="memo">
   <div class="titre">一个标题</div>
   <div class="fermeture">X</div>
-  <div class="corps"dojoAttachPoint="containerNode"></div> <!-- ¨ ❶ -->
+  <div class="corps" dojoAttachPoint="containerNode"></div> <!-- ❶ -->
 </div>
 ```
-
-LivreGougeon 第 309 页 2006 年 11 月 28 日星期二 4:23 16
-
-### dojo 库的图形支持
-**309**
-
-*第 11 章*
 
 `containerNode` 名称对应我们图形组件 JavaScript 类的一个属性，该属性继承自 `dojo.widget.HtmlWidget` 类。该属性对应图形组件在实现时的内容。
 
 还需要添加一个事件来处理关闭按钮的点击。
 
-组件 JavaScript 类的 `fermerMemo` 方法必须链接到对应此按钮的 div 标签（标记 ❶）的 `click` 事件，如下代码所示：
+组件 JavaScript 类的 `fermerMemo` 方法必须链接到对应此按钮的 `div` 标签（标记 ❶）的 `click` 事件，如下代码所示：
 
 ```html
 <div class="memo">
   <div class="titre">一个标题</div>
-  <div class="fermeture"dojoAttachEvent="onClick: fermerMemo">X</div> <!-- ¨ ❶ -->
-  <div class="corps"dojoAttachPoint="containerNode"></div>
+  <div class="fermeture" dojoAttachEvent="onclick: fermerMemo">X</div> <!-- ❶ -->
+  <div class="corps" dojoAttachPoint="containerNode"></div>
 </div>
 ```
 
@@ -11501,12 +11101,32 @@ dojo.widget.defineWidget(
   dojo.widget.HtmlWidget,
   {
     isContainer: true,
-    templatePath: dojo.uri.dojoUri(
-      "src/widget/templates/Memo.html"),
-    templateCssPath: dojo.uri.dojoUri(
-      "src/widget/templates/Memo.css"),
-    titre: "默认标题", // ¨ ❶
-    fermerMemo: function(evenement) { // ¨ ❷
+    titre: "", // ❶
+    templatePath: dojo.uri.dojoUri("src/widget/templates/Memo.html"),
+    templateCssPath: dojo.uri.dojoUri("src/widget/templates/Memo.css"),
+    fermerMemo: function() { // ❷
+      this.destroy();
+    }
+  }
+);
+```
+
+
+
+# 图形 JavaScript 库
+
+## 组件的实现
+
+```javascript
+dojo.widget.defineWidget(
+  "dojo.widget.Memo",
+  dojo.widget.HtmlWidget,
+  {
+    isContainer: true,
+    templatePath: dojo.uri.dojoUri("src/widget/templates/Memo.html"),
+    templateCssPath: dojo.uri.dojoUri("src/widget/templates/Memo.css"),
+    titre: "默认标题", // ❶
+    fermerMemo: function(evenement) { // ❷
       this.destroy();
     }
   }
@@ -11519,18 +11139,11 @@ dojo 库还提供了通过类属性值对组件的 HTML 模板进行参数化的
 
 ```html
 <div class="memo">
-  <div class="titre">${this.titre}</div> <!-- ¨ ❶ -->
-  <div class="fermeture"dojoAttachEvent="onClick: fermerMemo">X</div>
-  <div class="corps»dojoAttachPoint="containerNode"></div>
+  <div class="titre">${this.titre}</div> <!-- ❶ -->
+  <div class="fermeture" dojoAttachEvent="onClick: fermerMemo">X</div>
+  <div class="corps" dojoAttachPoint="containerNode"></div>
 </div>
 ```
-
-LivreGougeon 第 310 页 2006 年 11 月 28 日星期二 4:23 16
-
-# 图形 JavaScript 库
-**310**
-
-*第四部分*
 
 ## 组件的使用
 
@@ -11545,11 +11158,11 @@ LivreGougeon 第 310 页 2006 年 11 月 28 日星期二 4:23 16
   </script>
   <script type="text/javascript" src="../../dojo.js"></script>
   <script type="text/javascript">
-    dojo.require("dojo.widget.Memo"); // ¨ ❶ -->
+    dojo.require("dojo.widget.Memo"); // ❶
   </script>
 </head>
 <body>
-  <div dojoType="memo" titre="一个标题"> <!-- ¨ ❷ -->
+  <div dojoType="memo" titre="一个标题"> <!-- ❷ -->
     memo
   </div>
 </body>
@@ -11557,36 +11170,6 @@ LivreGougeon 第 310 页 2006 年 11 月 28 日星期二 4:23 16
 ```
 
 在可以使用该组件之前，必须导入该 JavaScript 类（标记 ❶）。现在我们将详细介绍 dojo 提供的供使用的机制。
-
-### 组件的实现
-
-dojo 提供了两种在 Web 页面中实现图形组件的方法，这需要在页面开头导入模块，如下代码所示：
-
-```html
-<html>
-<head>
-  <script type="text/javascript">
-    djConfig = { isDebug: true };
-  </script>
-  <script type="text/javascript" src="../../dojo.js"></script>
-  <script type="text/javascript">
-    dojo.require("dojo.widget.Memo"); // ¨ ❶ -->
-  </script>
-</head>
-<body>
-  <div dojoType="memo" titre="一个标题"> <!-- ¨ ❷ -->
-    texte
-  </div>
-</body>
-</html>
-```
-
-LivreGougeon 第 311 页 2006 年 11 月 28 日星期二 4:23 16
-
-### dojo 库的图形支持
-**311**
-
-*第 11 章*
 
 ### 基于 HTML 的方法
 
@@ -11597,16 +11180,16 @@ dojo 提供了基于 HTML 结构化图形组件的可能性。默认情况下，
 <head>
   <script type="text/javascript">
     djConfig = {
-      parseWidgets: false, <!-- ¨ ❶ -->
-      searchIds: ["conteneurComants", "monComposant"] <!-- ¨ ❷ -->
+      parseWidgets: false, <!-- ❶ -->
+      searchIds: ["conteneurComants", "monComposant"] <!-- ❷ -->
     };
   </script>
 </head>
 <body>
-  <div id="conteneurComants"> <!-- ¨ ❸ -->
+  <div id="conteneurComants"> <!-- ❸ -->
     ...
   </div>
-  <div id="monComposant"dojoType="...">...</div> <!-- ¨ ❹ -->
+  <div id="monComposant" dojoType="...">...</div> <!-- ❹ -->
 </body>
 </html>
 ```
@@ -11624,7 +11207,7 @@ dojo 库提供了通过编程指定和加载图形组件的可能性，这是基
 该函数接收图形组件的类型、一个包含其不同属性的关联数组以及一个可选的与组件链接的节点。
 
 ```javascript
-// 获取绑 div 标签
+// 获取绑定 div 标签
 var monDiv = dojo.byId("monDiv");
 
 // 创建图形组件
@@ -11632,11 +11215,9 @@ var proprietes = {
   title: "我的窗口标题"
 };
 
-var monComposant = dojo.widget.createWidget( // ¨ ❶ -->
+var monComposant = dojo.widget.createWidget( // ❶
   "FloatingPane", proprietes, monDiv);
 ```
-
-
 
 随后，可以通过 `addChild` 方法将组件连接起来。该方法接收一个图形组件作为参数，从而通过提供添加子组件的能力来管理嵌套组件。
 
@@ -11648,14 +11229,15 @@ var monDiv = dojo.byId("monDiv");
 
 // 创建根图形组件
 var composantRacine = dojo.widget.createWidget(
-"LayoutContainer", {}, monDiv);
+  "LayoutContainer", {}, monDiv);
 
 // 创建子组件
 var proprietes = {
   layoutAlign: "left"
 };
+
 var composantEnfant = dojo.widget.createWidget(
-"ContentPane", proprietes);
+  "ContentPane", proprietes);
 
 // 将组件添加到根组件中
 composantRacine.addChild(composantEnfant); // ❶
@@ -11721,8 +11303,9 @@ var monDiv = dojo.byId("monDiv");
 var proprietes = {
   title: "Le titre de ma fenêtre"
 };
+
 var monComposant = dojo.widget.createWidget(
-"FloatingPane", proprietes, monDiv);
+  "FloatingPane", proprietes, monDiv);
 
 dojo.widget.addWidget(monComposant); // ❶
 ```
@@ -11736,7 +11319,7 @@ dojo.widget.addWidget(monComposant); // ❶
 var monComposant = dojo.widget.byId("monComposant"); // ❶
 ```
 
-注意，无论组件如何如何创建，都可以使用此函数。其他方法如 `byType` 和 `byFilter` 允许获取一组组件。
+注意，无论组件如何创建，都可以使用此函数。其他方法如 `byType` 和 `byFilter` 允许获取一组组件。
 
 第一种提供了访问特定类型组件列表的可能性，如下代码所示：
 
@@ -11759,7 +11342,7 @@ var fonctionFiltrage = function(composant) {
 };
 
 // 使用过滤函数调用函数
-var composantRelatif = dojo.widget.byFilter(fonctionFiltrage,true);
+var composantRelatif = dojo.widget.byFilter(fonctionFiltrage, true);
 ```
 
 ## 组件的方法与属性
@@ -11768,11 +11351,7 @@ var composantRelatif = dojo.widget.byFilter(fonctionFiltrage,true);
 
 每个组件都拥有多种方法来控制其显示，这些方法在表格 11.14 中汇总。
 
-
-
-
-
-## 表 11.14 图形组件的显示管理方法
+### 表 11.14 图形组件的显示管理方法
 
 | 方法 | 说明 |
 | :--- | :--- |
@@ -11780,8 +11359,6 @@ var composantRelatif = dojo.widget.byFilter(fonctionFiltrage,true);
 | `isShowing` | 判断图形组件是否显示。 |
 | `show` | 显示图形组件。 |
 | `toggle` | 切换图形组件的显示模式。如果组件显示，则将其隐藏，反之亦然。 |
-
-## 图形 JavaScript 库
 
 以下代码展示了如何对组件使用 `show`（标记 ❶）、`hide`（标记 ❷）和 `isShowing`（标记 ❸）方法的用示例：
 
@@ -11793,17 +11370,22 @@ var monDiv = dojo.byId("monDiv");
 var proprietes = {
   title: "我的窗口标题"
 };
+
 var monComposant = dojo.widget.createWidget(
   "FloatingPane", proprietes, monDiv);
 
 // 显示组件
 monComposant.show(); // ❶
+
 var estAffiche = monComposant.isShowing(); // ❸
+
 // estAffiche 包含 true
 
 // 隐藏组件
 monComposant.hide(); // ❷
+
 estAffiche = monComposant.isShowing(); // ❸
+
 // estAffiche  false
 ```
 
@@ -11823,6 +11405,7 @@ var composantRacine = dojo.widget.createWidget(
 var proprietes = {
   layoutAlign: "left"
 };
+
 var composantEnfant = dojo.widget.createWidget(
   "ContentPane", proprietes);
 
@@ -11839,8 +11422,6 @@ composantRacine.destroy(); // ❶
 
 图形组件不同部分的 DOM 事件必须仅在组件内部进行处理，由组件本身负责处理。
 
-### dojo 库的图形支持
-
 尽管如此，用户可以在处理事件时调用的方法上注册观察者。可以注册观察者的图形组件方法通常以 `on` 为前缀。这些方法的名称可以是 `onShow`、`onHide` 或 `onResized`，分别对应组件显示、隐藏和调整大小的时刻。
 
 以下代码详细说明了如何基于组件的 `onShow` 方法在选择标签页时注册观察者（标记 ❶）：
@@ -11852,6 +11433,7 @@ function traiterSelectionOnglet() {
 }
 
 var monOnglet = dojo.widget.byId("monOnglet");
+
 dojo.event.connect(monOnglet, "onShow", "traiterSelectionOnglet"); // ❶
 ```
 
@@ -11869,9 +11451,9 @@ dojo.event.connect(monOnglet, "onShow", "traiterSelectionOnglet"); // ❶
 
 我们在上一节中描述了 `dojo` 库为结构化和实现图形组件提供的框架。该库提供了 Web 应用程序中常用组件的各种实现。后续章节的目的是描述这些主要的图形组件，我们按类型对其分组。
 
-### 简单组件
+#### 简单组件
 
-## 表 11.15 简单图形组件
+### 表 11.15 简单图形组件
 
 | 组件 |  |
 | :--- | :--- |
@@ -11899,7 +11481,7 @@ dojo.event.connect(monOnglet, "onShow", "traiterSelectionOnglet"); // ❶
   <tr>
     <td valign="center">出版日期：</td>
     <td valign="center">
-      <div dojoType="dropdowndatepicker" // ❷ containerToggle="fade"></</div>
+      <div dojoType="dropdowndatepicker" // ❷ containerToggle="fade"></div>
     </td>
   </tr>
   <tr>
@@ -11916,12 +11498,6 @@ dojo.event.connect(monOnglet, "onShow", "traiterSelectionOnglet"); // ❶
 
 为了使用 Ajax 技术管理表单数据，可以实现 `dojo.io.FormBind` 类。它允许通过 Ajax 请求简单地发送表单数据，基于 `dojo` 库对 `dojo.io.bind` 函数的支持。这种发送在点击表单提交按钮时完成。表单信息被用作发送的 HTTP 请求的参数。
 
-
-
-
-
-# 引言
-
 该类的构造函数接收一个关联数组作为参数，该数组包含对应表单的节点以及一个用于接收发送响应后执行处理的回调方法。
 
 以下代码显示了如何为标识为 `monFormulaire` 的表单实现此类：
@@ -11937,15 +11513,6 @@ var sauvegardeFormulaire = new dojo.io.FormBind({
 });
 ```
 
-LivreGougeon Page 320 2006 年 11 月 28 日星期二 4:23 16
-
-## 图形 JavaScript 库
-**320**
-
-*第四部分*
-
-***
-
 ## 布局
 
 dojo 库提供了多种图形组件用于在 Web 页面上定位元素。这些组件对应于容器，既可以包含 dojo 图形组件，也可以包含经典的 HTML 代码。
@@ -11954,7 +11521,7 @@ dojo 库提供了多种图形组件用于在 Web 页面上定位元素。这些�
 
 由 `dojo.widget.LayoutContainer` 组件实现的布局管理器提供了定义区域并设置它们相互相对位置的功能。图 11.7 描述了该组件实现的区域布局及其相应的名称。
 
-### 区域容器
+#### 区域容器
 
 * 顶部区域 (top)
 * 左侧区域 (left)
@@ -11962,8 +11529,7 @@ dojo 库提供了多种图形组件用于在 Web 页面上定位元素。这些�
 * 右侧区域 (right)
 * 底部区域 (bottom)
 
-**图 11.7**
-*布局管理器的区域及其相应名称*
+**图 11.7：布局管理器的区域及其相应名称**
 
 代表区域的元素实体对应 `dojo.widget.ContentPane` 组件。该组件可以与此布局管理器配合，也可以与后续两个节中描述的组件配合。
 
@@ -11977,13 +11543,6 @@ dojo 库提供了多种图形组件用于在 Web 页面上定位元素。这些�
 <div dojoType="ContentPane" href="contenuZone.html"></div>  ❷
 (...)
 ```
-
-Livre-Gougeon Page 321 2006 年 11 月 28 日星期二 4:23 16
-
-### dojo 库的图形支持
-**321**
-
-*第 11 章*
 
 布局管理器定义的区域基于 `layoutAlign` 属性来定义它们在管理器中的位置。以下代码提供了该布局管理器（标记 ❶）及其不同区域（标记 ❷）的实现示例：
 
@@ -12037,16 +11596,7 @@ Livre-Gougeon Page 321 2006 年 11 月 28 日星期二 4:23 16
 </div>
 ```
 
-Livre-Gougeon Page 322 2006 年 11 月 28 日星期二 4:23 16
-
-## 图形 JavaScript 库
-**322**
-
-*第四部分*
-
-***
-
-## 标签页
+### 标签页
 
 dojo 库还提供了基于标签定位区域的可能性，该机制由 `dojo.widget.TabContainer` 组件实现。与之前一样，它可以基于 `dojo.widget.ContentPane` 类型的组件来定义标签页的内容，也可以基于之前节中描述的管理器。
 
@@ -12066,8 +11616,7 @@ dojo 库还提供了基于标签定位区域的可能性，该机制由 `dojo.wi
 
 请注意存在 `selectedTab` 标签，它允许指定初始标签页。图 11.8 展示了本节实现的模态窗口的外观。
 
-**图 11.8**
-*基于标签页的布局管理器的外观*
+**图 11.8：基于标签页的布局管理器的外观**
 
 ## 窗口
 
@@ -12077,7 +11626,7 @@ dojo 允许在页面内实现各种窗口。在这些页面内部，这些窗口
 
 这种类型的窗口位于页面内容上方并居中位置，同时防止对其进行操作。尽管如此，内容仍然可以保持可见，但不可修改。dojo 库基于 `dojo.widget.Dialog` 类实现了此功能，该类的使用依赖于一个 `div` 标签，用于界定其包含的元素。表 11.16 汇总了该类支持的各种属性。
 
-**表 11.16 *dojo.widget.Dialog* 类的属性**
+### 表 11.16 `dojo.widget.Dialog` 类的属性
 
 | 属性 |  |
 | :--- | :--- |
@@ -12111,16 +11660,6 @@ dojo 允许在页面内实现各种窗口。在这些页面内部，这些窗口
 </div>
 ```
 
-Livre-Gougeon Page 324 2006 年 11 月 28 日星期二 4:23 16
-
-
-
-
-
-# JavaScript 图形库
-
-## 324 - 第四部分
-
 如下所示代码所示，窗口的显示是通过其 `show` 方法（标记 ❶）完成的：
 
 ```javascript
@@ -12140,6 +11679,7 @@ function initialiserFenetre() {
   var fermeture = document.getElementById("fermeture");
   fenetre.setCloseControl(fermeture); // ❶
 }
+
 dojo.addOnLoad(initialiserFenetre);
 ```
 
@@ -12147,16 +11687,13 @@ dojo.addOnLoad(initialiserFenetre);
 
 图 11.9 展示了在本节中实现的模态窗口外观。
 
-**图 11.9**
-*模态窗口外观*
+**图 11.9：模态窗口外观**
 
-## 浮动窗口
+### 浮动窗口
 
 这种类型的窗口将位于 Web 页面上方的指定位置。它可以被移动，如果它允许的话，还可以被调整大小，并且网页的内容保持可见且可编辑。
 
 dojo 库基于 `dojo.widget.FloatingPage` 类实现了此功能，该类使用 `div` 标签来界定其包含的元素。
-
-## 325 - dojo 库的图形支持 - 第 11 章
 
 表 11.17 汇总了该类支持的各种属性。
 
@@ -12201,18 +11738,15 @@ dojo 库基于 `dojo.widget.FloatingPage` 类实现了此功能，该类使用 `
 
 ![](img/index-343.jpg)
 
-## 326 - JavaScript 图形库 - 第四部分
-
 图 11.10 展示了在本节中实现的模态窗口。
 
-**图 11.10**
-*模态窗口外观*
+**图 11.10：模态窗口外观**
 
 ## 菜单与工具栏
 
 dojo 库通过组件 `dojo.widget.MenuBar2` 和 `dojo.widget.MenuBarItem2` 实现了菜单栏和工具栏，它们分别对应于菜单栏及其工具栏的元素。
 
-## 弹出态菜单
+### 弹出态菜单
 
 弹出态菜单基于 `dojo.widget.PopupMenu2` 和 `dojo.widget.MenuItem2` 图形组件实现，并通过鼠标右键点击显示。如下所示代码中的所示：
 
@@ -12231,13 +11765,13 @@ dojo 库通过组件 `dojo.widget.MenuBar2` 和 `dojo.widget.MenuBarItem2` 实�
 </head>
 <body>
   <div dojoType="PopupMenu2" id="monMenu"
-    contextMenuWindow="true"> <!-- ❶
+    contextMenuWindow="true"> <!-- ❶ -->
     <div dojoType="MenuItem2" caption="执行操作"
-      onClick="executerAction()"></div> <!-- ❷
+      onClick="executerAction()"></div> <!-- ❷ -->
     <div dojoType="MenuItem2" caption="已禁用"
-      disabled="true"></div> <!-- ❸
+      disabled="true"></div> <!-- ❸ -->
     <div dojoType="MenuSeparator"></div>
-    <div dojoType="MenuItem2" caption="已激活"></div> <!-- ❹
+    <div dojoType="MenuItem2" caption="已激活"></div> <!-- ❹ -->
   </div>
 </body>
 </html>
@@ -12245,56 +11779,51 @@ dojo 库通过组件 `dojo.widget.MenuBar2` 和 `dojo.widget.MenuBarItem2` 实�
 
 这些属性用于构建弹出态菜单（标记 ❺）。
 
-
-
-
-
 与上一节描述的菜单类型类似，`dojo.widget.MenuBarItem2` 组件可以根据 `submenuId` 属性引用菜单，并支持相同的属性。
 
 以下代码提供了一个菜单栏的实现示例（标记 ❶），允许在其中一个元素上（标记 ❷）打开一个菜单（标记 ❸）：
 
 ```html
-<html
+<html>
 <head>
-(...)
-<script type="text/javascript">
-dojo.require("dojo.widget.Menu2");
-</script>
-<script type="text/javascript">
-function executerAction() {
-alert("Action déclenchée sur un élément de menu");
-}
-</script>
+  (...)
+  <script type="text/javascript">
+    dojo.require("dojo.widget.Menu2");
+  </script>
+  <script type="text/javascript">
+    function executerAction() {
+      alert("Action déclenchée sur un élément de menu");
+    }
+  </script>
 </head>
 ![](img/index-346_1.png)
-<body
-<div dojoType="MenuBar2"> ¨ ❶
-<div dojoType="MenuBarItem2"
-caption="Element1"
-submenuId="monSousMenu"></div> ¨ ❷
-<div dojoType="MenuBarItem2"
-caption="Element2" disabled="true"></div>
-<div dojoType="MenuBarItem2"
-caption="Exécuter une action"
-onClick="executerAction();"></div>
-</div>
-<div dojoType="PopupMenu2" widgetId="monSousMenu"> ¨ ❸
-<div dojoType="MenuItem2"
-caption="Exécuter une action"
-onClick="executerAction();"></div>
-<div dojoType="MenuItem2"
-caption="Elément désactivé" disabled="true"></div>
-</div>
+<body>
+  <div dojoType="MenuBar2"> ❶
+    <div dojoType="MenuBarItem2"
+      caption="Element1"
+      submenuId="monSousMenu"></div> ❷
+    <div dojoType="MenuBarItem2"
+      caption="Element2" disabled="true"></div>
+    <div dojoType="MenuBarItem2"
+      caption="Exécuter une action"
+      onClick="executerAction();"></div>
+  </div>
+  <div dojoType="PopupMenu2" widgetId="monSousMenu"> ❸
+    <div dojoType="MenuItem2"
+      caption="Exécuter une action"
+      onClick="executerAction();"></div>
+    <div dojoType="MenuItem2"
+      caption="Elément désactivé" disabled="true"></div>
+  </div>
 </body>
 </html>
 ```
 
 图 11.12 展示了本节中实现的菜单栏的外观。
 
-**图 11.12**
-*菜单栏的外观*
+**图 11.12：菜单栏的外观**
 
-## 工具栏
+### 工具栏
 
 工具栏在 dojo 库中是基于图形组件 `dojo.widget.ToolbarContainer`、`dojo.widget.Toolbar`、`dojo.widget.ToolbarButtonGroup` 和 `dojo.widget.ToolbarSelect` 实现，它们分别对应工具栏容器、工具栏本身以及这些各种元素。
 
@@ -12305,32 +11834,33 @@ caption="Elément désactivé" disabled="true"></div>
 ```javascript
 // 创建容器
 var conteneur = dojo.widget.createWidget("ToolbarContainer");
+
 // 创建工具栏
 var barreOutils = dojo.widget.createWidget("Toolbar", {
-id: "barreOutils" });
+  id: "barreOutils" });
 conteneur.addChild(barreOutils);
 
 // 将工具栏添加到页面
 document.body.insertBefore(conteneur.domNode,
-document.body.firstChild);
+  document.body.firstChild);
 ```
 
 从此，该工具栏就可以通过按钮和按钮组、分隔符和输入列表进行丰富，如以下代码所示：
 
-(...)
-
 ```javascript
 // 创建独立按钮
-barreOutils.addChild("images/gras.gif", null, {toggleItem:true}); ¨ ❶
-barreOutils.addChild("images/italique.gif", null, {toggleItem:true}); ¨ ❶
-barreOutils.addChild("images/souligne.gif", null, {toggleItem:true}); ¨ ❶
-barreOutils.addChild("|"); ¨ ❶
+barreOutils.addChild("images/gras.gif", null, {toggleItem:true}); ❶
+barreOutils.addChild("images/italique.gif", null, {toggleItem:true}); ❶
+barreOutils.addChild("images/souligne.gif", null, {toggleItem:true}); ❶
+barreOutils.addChild("|"); ❶
+
 // 创建按钮组
-var groupeBoutons = dojo.widget.createWidget("ToolbarButtonGroup", { ¨ ❷
-name: "alignement",
-defaultButton: "alignementGauche",
-preventDeselect: true
+var groupeBoutons = dojo.widget.createWidget("ToolbarButtonGroup", { ❷
+  name: "alignement",
+  defaultButton: "alignementGauche",
+  preventDeselect: true
 });
+
 groupeBoutons.addChild("images/alignementGauche.gif");
 groupeBoutons.addChild("images/alignementCentre.gif");
 groupeBoutons.addChild("images/alignementDroite.gif");
@@ -12339,14 +11869,16 @@ barreOutils.addChild(groupeBoutons);
 barreOutils.addChild("|");
 barreOutils.addChild("test");
 barreOutils.addChild("|");
+
 // 创建选择框
-var boiteSelection = dojo.widget.createWidget("ToolbarSelect", { ¨ ❸
-name: "boiteSelection",
-values: {
-"Valeur1": "v1",
-"Valeur2": "v2"
-}
+var boiteSelection = dojo.widget.createWidget("ToolbarSelect", { ❸
+  name: "boiteSelection",
+  values: {
+    "Valeur1": "v1",
+    "Valeur2": "v2"
+  }
 });
+
 barreOutils.addChild(boiteSelection);
 ```
 
@@ -12358,24 +11890,26 @@ barreOutils.addChild(boiteSelection);
 var barreOutils = dojo.widget.byId("barreOutils");
 var boutonGras = barreOutils.getItem("gras");
 var boutonAlignementGauche = barreOutils.getItem("alignement")
-.getItem("alignementGauche");
-var estSelectionne = boutonGras.isSelected()); ¨ ❶
+  .getItem("alignementGauche");
+
+var estSelectionne = boutonGras.isSelected(); ❶
 // 如果按钮 boutonGras 被选中，则 estSelectionne 为 true
 
-var estActive = boutonGras.isEnabled()); ¨ ❶
+var estActive = boutonGras.isEnabled(); ❶
 // 如果按钮 boutonGras 被激活，则 estActive 为 true
+
 // 选择按钮 boutonAlignementGauche
-boutonAlignementGauche.setSelected(true); ¨ ❷
+boutonAlignementGauche.setSelected(true); ❷
+
 // 禁用按钮 boutonGras
-barreOutils.disable("boutonGras"); ¨ ❸
+barreOutils.disable("boutonGras"); ❸
 ```
 
 请注意，上述方法指定的名称可以对应复杂元素的名称、文本或不带扩展名的按钮图像文件名。
 
 图 11.13 展示了本节中实现的工具栏的外观。
 
-**图 11.13**
-*工具栏的外观*
+**图 11.13：工具栏的外观**
 
 ## 复杂组件
 
@@ -12391,15 +11925,12 @@ dojo 提供了基于图形组件 `FilteringTable` 和 `SortableTable` 实现表�
 
 ```html
 <table dojoType="FilteringTable" id="monTableau"
-headClass="fixedHeader" tbodyClass="scrollContent"
-enableAlternateRows="true"
-rowAlternateClass="alternateRow"
-multiple="false" alternateRows="true" maxSortable="2"
-cellpadding="0" cellspacing="0" border="0">
+  headClass="fixedHeader" tbodyClass="scrollContent"
+  enableAlternateRows="true"
+  rowAlternateClass="alternateRow"
+  multiple="false" alternateRows="true" maxSortable="2"
+  cellpadding="0" cellspacing="0" border="0">
 ```
-
-
-
 
 上述代码首先在表格表头中定义了与标识符和类型相关的信息（`field` 和 `dataType` 属性，标记 ❶），以及表格列的标签（`th` 标签体）。
 
@@ -12407,58 +11938,40 @@ cellpadding="0" cellspacing="0" border="0">
 
 ![](img/index-350_1.jpg)
 
-LivreGougeon 第 333 页 2006 年 11 月 28 日星期二 4:23 16
-
-### dojo 库的图形支持
-
-**333**
-
-*第 11 章*
-
 创建的表格可以通过点击其列头进行自动排序。
 
-表格 `11.19` 汇总了 `FilteringTable` 组件除 `table` 标签的标准属性外，可使用的其他主要属性。
+表格 11.19 汇总了 `FilteringTable` 组件除 `table` 标签的标准属性外，可使用的其他主要属性。
 
-## 表格 11.19 图形组件 *FilteringTable* 主要属性
+### 表格 11.19 图形组件 `FilteringTable` 主要属性
 
 | 属性 | 说明 |
 | :--- | :--- |
-| alternateRows | 指定是否需要实现针对奇偶数行的显示处理。默认值为 `false`。 |
-| headClass | 指定用于表格表头（`thead` 标签）的 CSS 类。 |
-| headerClass | 指定用于表格中不同表头（`th` 标签）的 CSS 类。 |
-| headerDownClass | 指定用于降序排序列头的 CSS 类。默认使用的类是 `selectedDown`。 |
-| headerUpClass | 指定用于升序排序列头的 CSS 类。默认使用的类是 `selectedUp`。 |
-| maxSortable | 指定可以同时进行排序的列数。默认值为 `1`。 |
-| multiple | 指定在表格中是否可以选择多行。默认值为 `false`。 |
-| rowAlternate-Class | 指定用于区分偶数行和奇数行的 CSS 类。 |
-| rowClass | 指定用于单行（`tr` 标签）的 CSS 类。 |
-| rowSelectedClass | 指定用于被选中的行（`tr` 标签）的 CSS 类。 |
-| tbodyClass | 指定用于表格正文（`tbody` 标签）的 CSS 类。 |
+| `alternateRows` | 指定是否需要实现针对奇偶数行的显示处理。默认值为 `false`。 |
+| `headClass` | 指定用于表格表头（`thead` 标签）的 CSS 类。 |
+| `headerClass` | 指定用于表格中不同表头（`th` 标签）的 CSS 类。 |
+| `headerDownClass` | 指定用于降序排序列头的 CSS 类。默认使用的类是 `selectedDown`。 |
+| `headerUpClass` | 指定用于升序排序列头的 CSS 类。默认使用的类是 `selectedUp`。 |
+| `maxSortable` | 指定可以同时进行排序的列数。默认值为 `1`。 |
+| `multiple` | 指定在表格中是否可以选择多行。默认值为 `false`。 |
+| `rowAlternateClass` | 指定用于区分偶数行和奇数行的 CSS 类。 |
+| `rowClass` | 指定用于单行（`tr` 标签）的 CSS 类。 |
+| `rowSelectedClass` | 指定用于被选中的行（`tr` 标签）的 CSS 类。 |
+| `tbodyClass` | 指定用于表格正文（`tbody` 标签）的 CSS 类。 |
 
 以下代码提供了一个使用这些属性的示例，用于配置表格的行为（标记 ❷）以及表格所使用的 CSS 类（标记 ❶）：
 
 ```html
 <table dojoType="FilteringTable" id="monTableau"
-tbodyClass="scrollContent" rowAlternateClass="alternateRow" // ❶
-multiple="false" alternateRows="true" maxSortable="1" // ❷
-cellpadding="0" cellspacing="0" border="0">
+  tbodyClass="scrollContent" rowAlternateClass="alternateRow" // ❶
+  multiple="false" alternateRows="true" maxSortable="1" // ❷
+  cellpadding="0" cellspacing="0" border="0">
 (...)
 </table>
 ```
 
-图 `11.14` 描述了在本节中实现的表格的外观。
+图 11.14 描述了在本节中实现的表格的外观。
 
-**图 11.14**
-
-*可排序表格的外观*
-
-LivreGougeon 第 334 页 2006 年 11 月 28 日星期二 4:23 16
-
-# 图形 JavaScript 库
-
-**334**
-
-*第四部分*
+**图 11.14：可排序表格的外观**
 
 如下所示代码所示，`dojo.widget.FilteringTable` 组件提供了 `getSelectedData` 方法（标记 ❶），以便访问所选数据：
 
@@ -12497,7 +12010,7 @@ function filtreParution(dateParution) {
 
 function filtrerDonnees() {
     var monTableau = dojo.widget.byId("monTableau");
-    monTableau.setFilter("DateParution", filtreParution);
+    monTableau.setFilter("DateParution", filtreParution); // ❷
 }
 ```
 
@@ -12505,13 +12018,7 @@ function filtrerDonnees() {
 
 dojo 库提供了多种图形组件来实现树。
 
-LivreGougeon 第 335 页 2006 年 11 月 28 日星期二 4:23 16
-
-**dojo 库的图形支持**
-
-**335**
-
-*第 11 章*
+### 树
 
 创建的表格可以通过点击其列头进行自动排序。
 
@@ -12519,11 +12026,12 @@ LivreGougeon 第 335 页 2006 年 11 月 28 日星期二 4:23 16
 
 ```html
 <div dojoType="Tree">
-<div dojoType="TreeNode" title="Elément 1" expandLevel="2"> // ❶
-<div dojoType="TreeNode" title="Elément 1.2" selected="true"> // ❷
-<div dojoType="TreeNode" title="Elément 1.2.1"></div>
-<div dojoType="TreeNode" title="Elément 1.2.2"></div>
-</div>
+  <div dojoType="TreeNode" title="Elément 1" expandLevel="2"> // ❶
+    <div dojoType="TreeNode" title="Elément 1.2" selected="true"> // ❷
+      <div dojoType="TreeNode" title="Elément 1.2.1"></div>
+      <div dojoType="TreeNode" title="Elément 1.2.2"></div>
+    </div>
+  </div>
 </div>
 ```
 
@@ -12541,22 +12049,14 @@ LivreGougeon 第 335 页 2006 年 11 月 28 日星期二 4:23 16
 
 ![](img/index-353_1.jpg)
 
+#### 树节点属性
 
-
-
-## 描述
-
-`expandLevel`
-指定节点下展开的层数。
-
-`isFolder`
-指定该节点不是树的叶节点，可以包含子元素。
-
-`object`
-允许指定通过点击节点来访问的地址。
-
-`selected`
-指定该树节点被选中。
+| 属性 | 说明 |
+| :--- | :--- |
+| `expandLevel` | 指定节点下展开的层数。 |
+| `isFolder` | 指定该节点不是树的叶节点，可以包含子元素。 |
+| `object` | 允许指定通过点击节点来访问的地址。 |
+| `selected` | 指定该树节点被选中。 |
 
 事件的处理是基于与树关联的选择实体进行的。该实体支持单击或双击的选择事件，以及取消选择事件。
 
@@ -12564,27 +12064,17 @@ LivreGougeon 第 335 页 2006 年 11 月 28 日星期二 4:23 16
 
 ```javascript
 function traiterSelection(message) {
-alert("Evénement de sélection: "+message);
+  alert("Evénement de sélection: " + message);
 }
 
 function traiterDeselection(message) {
-alert("Evénement de désélection: "+message);
+  alert("Evénement de désélection: " + message);
 }
-```
 
-LivreGougeon 第 337 页 2006 年 11 月 28 日星期二 4:23 16
-
-### dojo 库的图形支持
-
-**337**
-
-*第 11 章*
-
-```javascript
 function initialisation() {
-var selector = dojo.widget.byId("selector");
-dojo.event.connect(selector, "select", "traiterSelection"); // ❶
-dojo.event.connect(selector, "deselect", "traiterSelection"); // ❶
+  var selector = dojo.widget.byId("selector");
+  dojo.event.connect(selector, "select", "traiterSelection"); // ❶
+  dojo.event.connect(selector, "deselect", "traiterDeselection"); // ❶
 }
 
 dojo.addOnLoad(initialisation);
@@ -12603,47 +12093,38 @@ dojo 库提供了 `dojo.widget.Editor2` 组件，以便对 HTML 页面元素进�
 ```html
 <html>
 <head>
-(...)
-<script type="text/javascript">
-dojo.require("dojo.widget.Menu2");
-</script>
-<script type="text/javascript">
-function executerAction() {
-alert("Action déclenchée sur un élément de menu");
-}
-</script>
+  (...)
+  <script type="text/javascript">
+    dojo.require("dojo.widget.Menu2");
+  </script>
+  <script type="text/javascript">
+    function executerAction() {
+      alert("Action déclenchée sur un élément de menu");
+    }
+  </script>
 </head>
 <body>
-<div id="editable" dojoType="Editor" widgetId="editdiv"> // ❶
-这是一段使用 dojo 库的 Wysiwyg 编辑器的可编辑文本
-</div>
+  <div id="editable" dojoType="Editor" widgetId="editdiv"> // ❶
+    这是一段使用 dojo 库的 Wysiwyg 编辑器的可编辑文本
+  </div>
 </body>
 </html>
 ```
 
 如接代码所示（该代码调整了前述示例），可以根据编辑器的 `items` 属性（标记 ❶）限制工具栏中包含的元素：
 
-![](img/index-355_1.jpg)
-
-LivreGougeon 第 338 页 2006 年 11 月 28 日星期二 4:23 16
-
-### 图形 JavaScript 库
-
-**338**
-
-*第四部分*
-
 ```html
 <div id="editable" dojoType="Editor" widgetId="editdiv"
-items="formatblock;|;insertunorderedlist;insertorderedlist;|;bold;italic;➥underline;strikethrough;|;createLink;"> // ❶
-这是一段使用 dojo 库的 Wysiwyg 编辑器的可编辑文本
+  items="formatblock;|;insertunorderedlist;insertorderedlist;|;bold;italic;underline;strikethrough;|;createLink;"> // ❶
+  这是一段使用 dojo 库的 Wysiwyg 编辑器的可编辑文本
 </div>
 ```
 
+![](img/index-355_1.jpg)
+
 图 11.16 展示了此类组件在 HTML 页面中的显示情况。
 
-**图 11.16**
-*dojo 库的 Wysiwyg 编辑器的外观*
+**图 11.16：dojo 库的 Wysiwyg 编辑器的外观**
 
 ### 案例研究
 
@@ -12662,17 +12143,17 @@ dojo 发布版 0.3.1 版本的内容被复制到我们应用程序的 `js/dojo-0
 ```html
 <html>
 <head>
-<script type="text/javascript">
-djConfig = { isDebug: true }; // ❶
-</script>
-<script type="text/javascript"
-src="/js/dojo-0.3.1/dojo.js"></script> // ❷
-<script type="text/javascript">
-(...)
-</script>
+  <script type="text/javascript">
+    djConfig = { isDebug: true }; // ❶
+  </script>
+  <script type="text/javascript"
+    src="/js/dojo-0.3.1/dojo.js"></script> // ❷
+  <script type="text/javascript">
+    (...)
+  </script>
 </head>
 <body>
-(...)
+  (...)
 </body>
 </html>
 ```
@@ -12682,19 +12163,19 @@ src="/js/dojo-0.3.1/dojo.js"></script> // ❷
 ```html
 <html>
 <head>
-<script type="text/javascript">
-djConfig = { isDebug: true };
-</script>
-<script type="text/javascript"
-src="/dojo-0.3.1/dojo.js"></script>
-<script type="text/javascript">
-dojo.require("dojo.widget.Dialog"); // ❶
-dojo.require("dojo.widget.FilteringTable"); // ❶
-(...)
-</script>
+  <script type="text/javascript">
+    djConfig = { isDebug: true };
+  </script>
+  <script type="text/javascript"
+    src="/dojo-0.3.1/dojo.js"></script>
+  <script type="text/javascript">
+    dojo.require("dojo.widget.Dialog"); // ❶
+    dojo.require("dojo.widget.FilteringTable"); // ❶
+    (...)
+  </script>
 </head>
 <body>
-(...)
+  (...)
 </body>
 </html>
 ```
@@ -12707,52 +12188,40 @@ dojo.require("dojo.widget.FilteringTable"); // ❶
 
 为了简化该机制的描述，我们在本节中省略了实现 Ajax 原理的代码。这些代码未处理页面的图形方面，仅通过 REST 架构加载并修改数据库数据。
 
-
-
-
-
+```html
 <div style="float: right;">
-<button dojoType="button" id="boutonEnregistrer">保存</button> ❻
+  <button dojoType="button" id="boutonEnregistrer">保存</button> ❻
 </div>
-
 </div>
+```
 
 ![](img/index-358_1.png)
 
-LivreGougeon Page 341 Mardi, 28\. novembre 2006 4:23 16
-
-### dojo 库的图形支持
-
-**341**
-
-*第 11 章*
-
 图 11.17 展示了输入窗口的外观。
 
-**图 11.17** 
-*输入窗口的外观*
+**图 11.17：输入窗口的外观**
 
 在接下来的代码中，第二个组件对应于表格本身，首先定义了它的通用属性（标记 ❶），接着是它的列头（标记 ❷）以及用于初始化它的数据（标记 ❸）：
 
 ```html
 <table dojoType="FilteringTable" id="tableau"
-tbodyClass="scrollContent" rowAlternateClass="alternateRow" ❶
-multiple="false" alternateRows="true" maxSortable="1" ❶
-cellpadding="0" cellspacing="0" border="0"> ❶
-<thead> ❷
-<tr>
-<th field="numero" align="center"
-dataType="Number">编号</th>
-<th field="commune" align="center"
-dataType="String" valign="top">市镇</th>
-<th field="nom" dataType="html">名称</th>
-<th field="type" valign="top"
-dataType="String">类型</th>
-</tr>
-</thead>
-<<tbody>> ❸
-(...)
-</tbody>
+  tbodyClass="scrollContent" rowAlternateClass="alternateRow" ❶
+  multiple="false" alternateRows="true" maxSortable="1" ❶
+  cellpadding="0" cellspacing="0" border="0"> ❶
+  <thead> ❷
+    <tr>
+      <th field="numero" align="center"
+        dataType="Number">编号</th>
+      <th field="commune" align="center"
+        dataType="String" valign="top">市镇</th>
+      <th field="nom" dataType="html">名称</th>
+      <th field="type" valign="top"
+        dataType="String">类型</th>
+    </tr>
+  </thead>
+  <tbody> ❸
+    (...)
+  </tbody>
 </table>
 ```
 
@@ -12760,33 +12229,26 @@ dataType="String">类型</th>
 
 最后，接下来的代码实现了位于 Web 页面中表格下方的各种按钮，以便允许对表格元素进行添加（标记 ❸）、修改（标记 ❷）和删除（标记 ❶）操作；在添加和修改的情况下，这些按钮会触发输入窗口的打开：
 
+```html
+<div style="float: right;">
+  <button id="boutonSupprimer" dojoType="button"> ❶
+    删除所选站点</button>
+</div>
+<div style="float: right;">
+  <button id="boutonOuvrirEditer" dojoType="button"> ❷
+    修改所选站点</button>
+</div>
+<div style="float: right;">
+  <button id="boutonOuvrirAjouter" dojoType="button"> ❸
+    添加站点</button>
+</div>
+```
+
 ![](img/index-359_1.jpg)
-
-LivreGougeon Page 342 Mardi, 28\. novembre 2006 4:23 16
-
-# 图形 JavaScript 库
-
-**342**
-
-*第四部分*
-
-<div style="float: right;">
-<button id="boutonSupprimer"dojoType="button"> ❶
-删除所选站点</button>
-</div>
-<div style="float: right;">
-<button id="boutonOuvrirEditer"dojoType="button"> ❷
-修改所选站点</button>
-</div>
-<div style="float: right;">
-<button id="boutonOuvrirAjouter"dojoType="button"> ❸
-添加站点</button>
-</div>
 
 图 11.18 展示了表格和按钮的外观。
 
-**图 11.18**
-*表格及其操作按钮的外观*
+**图 11.18：表格及其操作按钮的外观**
 
 ## 行为规范
 
@@ -12796,7 +12258,7 @@ LivreGougeon Page 342 Mardi, 28\. novembre 2006 4:23 16
 
 为了访问它所操作的元素，`GestionnaireTableau` 类提供了 `initialiser` 方法，该方法将它操作的各种元素作为参数传入。这些元素对应于表格、输入窗口和按钮。
 
-接下来的代码给出了 `Gestionnaire-Tableau` 类基础结构的示例，该结构对应于类的构造函数（标记 ❶）以及它的初始化方法（标记 ❷）和事件观察者注册（标记 ❸）：
+接下来的代码给出了 `GestionnaireTableau` 类基础结构的示例，该结构对应于类的构造函数（标记 ❶）以及它的初始化方法（标记 ❷）和事件观察者注册（标记 ❸）：
 
 ```javascript
 function GestionnaireTableau() { } ❶
@@ -12808,49 +12270,30 @@ GestionnaireTableau.prototype = {
     this.boutonFenetreAjout = elements["boutonFenetreAjout"];
     this.boutonEnregistrer = elements["boutonEnregistrer"];
     this.boutonFenetreEdition = elements["boutonFenetreEdition"];
-
-LivreGougeon Page 343 Mardi, 28\. novembre 2006 4:23 16
-
-### dojo 库的图形支持
-
-**343**
-
-*第 11 章*
-
-this.boutonSupprimer = elements["boutonSupprimer"];
+    this.boutonSupprimer = elements["boutonSupprimer"];
     this.boutonAnnuler = elements["boutonAnnuler"];
     this.enregistrerObservateurs();
   },
+
   enregistrerObservateurs: function() { ❸
     dojo.event.connect(this.boutonFenetreAjout, "onClick",
-    this, "ouvrirFenetreSaisiePourAjout");
+      this, "ouvrirFenetreSaisiePourAjout");
     dojo.event.connect(this.boutonFenetreEdition, "onClick",
-    this, "ouvrirFenetreSaisiePourModification");
+      this, "ouvrirFenetreSaisiePourModification");
     dojo.event.connect(this.boutonEnregistrer, "onClick",
-    this, "enregistrerLigne");
+      this, "enregistrerLigne");
     dojo.event.connect(this.boutonSupprimer, "onClick",
-    this, "supprimerLigne");
+      this, "supprimerLigne");
     dojo.event.connect(this.boutonAnnuler, "onClick",
-    this, "annuler");
+      this, "annuler");
   },
-  (...)
-}
-```
 
-该类还实现了处理各种用户操作的方法。
-
-这些操作被汇总在表 11.21 中。表格中的标记编号指向接下来的代码示例，该示例提供了在 `GestionnaireTableau` 类中实现这些不同方法的示例：
-
-```javascript
-function GestionnaireTableau() { }
-
-GestionnaireTableau.prototype = {
-  (...)
   initialiserDonneesFenetreSaisie: function() {
     dojo.byId("fenetreSaisie.numero").value = "";
     dojo.byId("fenetreSaisie.commune").value = "";
     dojo.byId("fenetreSaisie.type").value = "";
   },
+
   getDonneesFenetreSaisie: function() {
     return {
       numero: dojo.byId("fenetreSaisie.numero").value,
@@ -12859,57 +12302,56 @@ GestionnaireTableau.prototype = {
       type: dojo.byId("fenetreSaisie.type").value
     };
   },
+
   setDonneesFenetreSaisie: function(donnees) {
     dojo.byId("fenetreSaisie.numero").value = donnees["numero"];
     dojo.byId("fenetreSaisie.commune").value = donnees["commune"];
     dojo.byId("fenetreSaisie.nom").value = donnees["nom"];
     dojo.byId("fenetreSaisie.type").value = donnees["type"];
-  }
-}
+  },
 
-LivreGougeon Page 344 Mardi, 28\. novembre 2006 4:23 16
+  ouvrirFenetreSaisiePourAjout: function() { ❶
+    this.initialiserDonneesFenetreSaisie();
+    this.ajout = true;
+    this.fenetreSaisie.show();
+  },
 
-# 图形 JavaScript 库
+  ouvrirFenetreSaisiePourModification: function() { ❷
+    var donnees = this.tableau.getSelectedData();
+    if (donnees != null) {
+      this.setDonneesFenetreSaisie(donnees);
+    }
+    this.ajout = false;
+    this.fenetreSaisie.show();
+  },
 
-**344**
+  enregistrerLigne: function() { ❸
+    if (this.ajout == true ) {
+      this.tableau.addData(this.getDonneesFenetreSaisie());
+    } else {
+      var donnees = this.tableau.getSelectedData();
+      if (donnees != null) {
+        this.tableau.removeData(donnees);
+        this.tableau.addData(this.getDonneesFenetreSaisie());
+      }
+    }
+    this.fenetreSaisie.hide();
+  },
 
-*第四部分*
-
-ouvrirFenetreSaisiePourAjout: function() { ❶
-  this.initialiserDonneesFenetreSaisie();
-  this.ajout = true;
-  this.fenetreSaisie.show();
-},
-ouvrirFenetreSaisiePourModification: function() { ❷
-  var donnees = this.tableau.getSelectedData();
-  if (donnees != null) {
-    this.setDonneesFenetreSaisie(donnees);
-  }
-  this.ajout = false;
-  this.fenetreSaisie.show();
-},
-enregistrerLigne: function() { ❸
-  if (this.ajout == true ) {
-    this.tableau.addData(this.getDonneesFenetreSaisie());
-  } else {
+  supprimerLigne: function() { ❹
     var donnees = this.tableau.getSelectedData();
     if (donnees != null) {
       this.tableau.removeData(donnees);
-      this.tableau.addData(this.getDonneesFenetreSaisie());
     }
+  },
+
+  annuler: function() { ❺
+    this.fenetreSaisie.hide();
   }
-  this.fenetreSaisie.hide();
-},
-supprimerLigne: function() { ❹
-  var donnees = this.tableau.getSelectedData();
-  if (donnees != null) {
-    this.tableau.removeData(donnees);
-  }
-},
-annuler: function() { ❺
-  this.fenetreSaisie.hide();
 }
 ```
+
+
 
 **表 11.21 屏幕元素操作**
 
@@ -12921,37 +12363,33 @@ annuler: function() { ❺
 | 修改所选站点 | `ouvrirFenetreSaisiePourModification` (标记 ❷) | 打开输入窗口以便修改（标记 ❷）表格中选中的站点。站点数据被加载到窗口表中 |
 | 删除 | `supprimerLigne` (标记 ❹) | 删除表格中选中的站点 |
 
-LivreGougeon Page 345 Mardi, 28\. novembre 2006 4:23 16
-
-
-
-
-
 请注意，表格中显示的数据基于表格的 `store` 属性，该属性对应于类型为 `dojo.data.SimpleStore` 的实例。对其内容的修改会自动反映在表格显示上。这种修改主要通过其 `addData` 和 `removeData` 方法实现。
 
 ## 结论
 
-正如我们在本中所看到的，`dojo` 库的图形支持极其丰富。它首先由一组实用模块组成，这些模块允许操作 Web 页面的各种组成部分、管理事件、效果以及拖放操作。
+正如我们在本章中所看到的，`dojo` 库的图形支持极其丰富。它首先由一组实用模块组成，这些模块允许操作 Web 页面的各种组成部分、管理事件、效果以及拖放操作。
 
 这些模块在解决这些不同问题的同时，整合了不同浏览器的特性。这一特性使得它们的处理在所有浏览器中都具有可移植性。
 
 请注意，正在开发中的 `dojo.i18n` 模块旨在解决网页中 JavaScript 应用程序国际化相关的问题。
 
-`dojo` 的图形支持更进了一，人们在结构化和实现图形组件方面付出了巨大努力。在此框架下，该库表现出特别的活性，因为它既提供了基于页面 HTML 结构的方法，也提供了基于编程的方法。
+`dojo` 的图形支持更进一步，人们在结构化和实现图形组件方面付出了巨大努力。在此框架下，该库表现出特别的活性，因为它既提供了基于页面 HTML 结构的方法，也提供了基于编程的方法。
 
 基于这种结构，`dojo` 库提供了一系列丰富的图形组件，从基础组件到更复杂的组件（如树和表格）。
 
 `dojo` 库简化了第 7 章描述的模块的使用。这一特点在涉及 Ajax 技术的模块中尤为明显，因为使用这些技术发送和接收数据已集成到某些组件中，例如与 HTML 表单相关的组件。
 
-## rialto 库
+# rialto 库
 
-与 `dojo`一样，`rialto` 库提供了基于一套图形组件开发丰富 Web 应用的可能性。
+*第 12 章*
+
+与 `dojo` 一样，`rialto` 库提供了基于一套图形组件开发丰富 Web 应用的可能性。
 
 然而，该库更多地关注通过各种专用组件和机制用于管理信息学的 Web 应用。
 
 本章详细介绍了如何使用该库以及如何使用其图形组件开发应用程序。
 
-### 历史
+## 历史
 
 在详细介绍库及其用法之前，我们将简要回顾该项目的历史，并详细说明其不同的子项目及其目标。
 
@@ -12961,13 +12399,13 @@ LivreGougeon Page 345 Mardi, 28\. novembre 2006 4:23 16
 
 该项目的主要目标是实现一个让医院内部以及在其他场地的医生能够方便查询的 Web 应用，以便让他们访问患者的所有信息。
 
-### 图形 JavaScript 库
+## 图形 JavaScript 库
 
 `rialto` 的第二个目标是为用户提供他们在已经在该地部署的客户端/服务器模式管理应用中所习惯的丰富交互体验。
 
 在 2002 年应用程序开发之初，人们还没有谈论 Ajax，也没有任何此类类型的框架可用。
 
-#### 附属项目
+### 附属项目
 
 JavaScript 子项目位于 `rialto` 项目的核心，因为它实现了丰富图形组件的实例化。尽管如此，还有其他子项目，其目标是方便在不同服务器技术下使用 JavaScript 库。它们本质上是将 JavaScript 类封装在用服务器端语言编写的组件中。
 
@@ -12986,11 +12424,11 @@ JavaScript 子项目位于 `rialto` 项目的核心，因为它实现了丰富�
 
 在本章的后续内容中，我们将 `rialto` 库称为相对于 JavaScript 组件的子项目。
 
-### 安装
+## 安装
 
-安装 `rialto` 库包括包含各种 CSS 和 JavaScript 文件。我们在本中使用该库的 0.8.6 版本。
+安装 `rialto` 库包括包含各种 CSS 和 JavaScript 文件。我们在本章中使用该库的 0.8.6 版本。
 
-CSS 文件提供了 `rialto` 库赖定义的 CSS 样式和类，用于定义其不同图形组件的外观。
+CSS 文件提供了 `rialto` 库赖以定义的 CSS 样式和类，用于定义其不同图形组件的外观。
 
 以下代码提供了这些 CSS 文件的规范示例（标记 ❶）：
 
@@ -13009,7 +12447,7 @@ CSS 文件提供了 `rialto` 库赖定义的 CSS 样式和类，用于定义其�
 
 JavaScript 文件允许引用库的 JavaScript 元素。
 
-以下代码给出了这些 JavaScript 文件的规范示例，即库库的 `config.js` 文件（标记 ❶）以及对应其元素的 `rialto.js` 文件（标记 ❷）：
+以下代码给出了这些 JavaScript 文件的规范示例，即库的 `config.js` 文件（标记 ❶）以及对应其元素的 `rialto.js` 文件（标记 ❷）：
 
 ```html
 <html>
@@ -13042,11 +12480,7 @@ else{
 }
 ```
 
-
-
-
-
-尽管 `rialto` 库主要侧于于 HTML 页面中实现图形功能，但它也提供了方便基于 JavaScript 语言处理和 Ajax 技术的功能。
+尽管 `rialto` 库主要侧重于 HTML 页面中实现图形功能，但它也提供了方便基于 JavaScript 语言处理和 Ajax 技术的功能。
 
 # 图形 JavaScript 库
 
@@ -13054,7 +12488,7 @@ else{
 
 ## 基础支持
 
-在详细介绍 `rialto` 为开发图形应用提供的各种机制和组件之前，我们将先描述该该库的基础模块。
+在详细介绍 `rialto` 为开发图形应用提供的各种机制和组件之前，我们将先描述该库的基础模块。
 
 表 12.2 汇总了与基础支持相关的对象。
 
@@ -13086,10 +12520,6 @@ else{
 | `isStringIn` | 一个字符串和一个数组 | 判断一个字符串是否包含数组中。 |
 | `link` | 一个对象和一个函数 | 返回一个函数，可在参数对象的上下文中执行参数中的函数。 |
 
-# rialto 库
-
-*第 12 章*
-
 如下所示，`link` 方法（标记 ❶）允许将函数绑定到对象，从而解决与 `this` 关键字相关的问题；函数的执行现在是在对象的上下文中进行的（标记 ❷）：
 
 ```javascript
@@ -13097,17 +12527,13 @@ else{
 function getAttribut() {
   return this.attribut;
 }
-
 // 定义一个拥有名为 attribut 的属性的对象
 var unObjet = {};
 unObjet.attribut = "La valeur de mon attribut";
-
 // 将函数 getAttribut 绑定到对象 unObjet
 var getAttributLiee = rialto.lang.link(unObjet, getAttribut); // ❶
-
 // 在对象的上下文中执行函数
 var retour = getAttributLiee(); // ❷
-
 // retour 包含 « La valeur de mon attribut »
 ```
 
@@ -13117,29 +12543,25 @@ var retour = getAttributLiee(); // ❷
 // 定义一个类
 function MaClasse() {
 }
-
 // 向其原型添加方法
 rialto.lang.extendObject(MaClasse, { // ❶
   methode1: function() {
     (...)
   }
 });
-
 var unObjet = new MaClasse();
-
 // 向对象 unObjet 添加方法
 rialto.lang.addMethods(unObjet, { // ❷
   methode2: function() {
     (...)
   }
 });
-
 // 执行对象的方法
 unObjet.methode1();
 unObjet.methode2();
 ```
 
-在上面的代码中，添加到 `MaClasse` 类原型（标记 ❶）的方法被其所有实例共享，而添加到对象 `unObjet`（标记 ❷）的方法则是是该对象特有的。
+在上面的代码中，添加到 `MaClasse` 类原型（标记 ❶）的方法被其所有实例共享，而添加到对象 `unObjet`（标记 ❷）的方法则是该对象特有的。
 
 以 `is` 开头的函数提供了检测变量类型的可能，如下代码所示：
 
@@ -13149,15 +12571,9 @@ alert(rialto.lang.isArray(tableau)); // 显示 true
 alert(rialto.lang.isFunction(tableau)); // 显示 false
 ```
 
-
-
-
-
-/* « %20%20%20%20Ceci%20est%20ma%20cha%EEne%20de%20caract%E8%res » */
-
 `rialto.array` 对象提供了多种与数组操作相关的方法，这些方法在表 12.6 中汇总。
 
-### 表格 12.6 `rialto.array` 对象的方法
+### 表 12.6 `rialto.array` 对象的方法
 
 | 方法 | 参数 | 描述 |
 | :--- | :--- | :--- |
@@ -13175,19 +12591,15 @@ alert(rialto.lang.isFunction(tableau)); // 显示 false
 
 ```javascript
 var tableau = [ "élément1", "élément2", "élément3" ];
-
 rialto.array.add(tableau, "élément4"); // ❶
-
 var longueurTableau = tableau.length;
-
 var indice = rialto.array.indexOf("élément4"); // ❷
-
 /* indice 包含值 3，因为元素被添加到了数组末尾 */
 ```
 
 `rialto.date` 对象提供了与日期操作相关的方法。表 12.7 汇总了这些不同的方法。
 
-### 表格 12.7 `rialto.date` 对象的方法
+### 表 12.7 `rialto.date` 对象的方法
 
 | 方法 | 参数 | 描述 |
 | :--- | :--- | :--- |
@@ -13228,7 +12640,7 @@ var nouvelleDate = rialto.date.add("month", date, 1);
 
 `rialto.url` 对象提供了访问 Web 地址包含信息的方法。表 12.8 汇总了这些不同的方法。
 
-### 表格 12.8 `rialto.url` 对象的方法
+### 表 12.8 `rialto.url` 对象的方法
 
 | 方法 | 描述 |
 | :--- | :--- |
@@ -13251,9 +12663,9 @@ var parametresPage = rialto.url.getSearch(); // ❷
 
 ### Ajax 技术支持
 
-rialto 库提供了 `rialto.io.AjaxRequest` 类，以便实现基于 `XMLHttpRequest` 类的 Ajax 技术。`rialto.io.AjaxRequest` 类封装了此类异步请求的所有机制和周期。表 12.9 汇总了 `rialto.io.AjaxRequest` 类构造函数的不同参数。
+`rialto` 库提供了 `rialto.io.AjaxRequest` 类，以便实现基于 `XMLHttpRequest` 类的 Ajax 技术。`rialto.io.AjaxRequest` 类封装了此类异步请求的所有机制和周期。表 12.9 汇总了 `rialto.io.AjaxRequest` 类构造函数的不同参数。
 
-### 表格 12.9 `rialto.io.AjaxRequest` 类构造函数的参数
+### 表 12.9 `rialto.io.AjaxRequest` 类构造函数的参数
 
 | 参数 | 类型 | 描述 |
 | :--- | :--- | :--- |
@@ -13261,25 +12673,10 @@ rialto 库提供了 `rialto.io.AjaxRequest` 类，以便实现基于 `XMLHttpReq
 | `callBackObjectOnSuccess` | 一个对象 | 对应在成功时执行回调函数的对象。 |
 | `canBeCancel` | 一个布尔值 | 指定请求在执行过程中是否可以取消。 |
 | `method` | 一个字符串 | 对应执行请求的 HTTP 方法。 |
-| `onFailure` | 一个函数 | - |
-
-
-
-
-
-对应于请求失败时调用的回调函数。
-
-`onSuccess`
-函数
-对应于请求成功时调用的回调函数。
-
-`url`
-字符串
-对应执行请求的资源地址。
-
-`withWaitWindow`
-布尔值
-指定执行请求时是否显示等待窗口。
+| `onFailure` | 一个函数 | 对应于请求失败时调用的回调函数。 |
+| `onSuccess` | 一个函数 | 对应于请求成功时调用的回调函数。 |
+| `url` | 一个字符串 | 对应执行请求的资源地址。 |
+| `withWaitWindow` | 一个布尔值 | 指定执行请求时是否显示等待窗口。 |
 
 请求的执行通过 `load` 方法实现，该方法接受一个包含输入数据的字符串作为参数。
 
@@ -13287,25 +12684,23 @@ rialto 库提供了 `rialto.io.AjaxRequest` 类，以便实现基于 `XMLHttpReq
 
 ```javascript
 function traiterDonnees(requete) { (...) }
-
 function traiterErreurs(requete) { (...) }
-
-var requete = new rialto.io.AjaxRequest({ ❶
+var requete = new rialto.io.AjaxRequest({ // ❶
   url:"/ajax.html",
   method: "get",
   withWaitWindow:true,
-  onSuccess: traiterDonnees, ❷
-  onFailure: traiterErreurs ❸
+  onSuccess: traiterDonnees, // ❷
+  onFailure: traiterErreurs // ❸
 });
-
 var parametres = "parametre1=valeur1&parametre2=valeur2";
-
-requete.load(parametres); ❹
+requete.load(parametres); // ❹
 ```
 
 此代码基于类的构造函数来初始化请求成功（标记 ❷）和失败（标记 ❸）时的回调函数。这些函数接受一个类型为 `XMLHttpRequest` 的当前请求对象作为参数。
 
 # rialto 库
+
+*第 12 章*
 
 让我们以一个回调函数为例，其作用是获取响应中包含的信息。该函数基于 JSON 格式的响应，其内容由以下代码描述：
 
@@ -13350,28 +12745,31 @@ function traiterDonnees(request){
 
 图 12.1 展示了这两个类之间的关系及其不同的方法。
 
-**图 12.1 AbstractComponent**
-**AbstractComponent**
-- `+moveTo()`
-- `+setLeft()`
-- `+setTop()`
-- `+setWidth()`
+**图 12.1 AbstractComponent / AbstractContainer**
 
-**AbstractContainer**
-- `+setHeight()`
-- `+setVisible()`
-- `+setDraggable()`
-- `+add()`
-- `+setPosition()`
-- `+removeContents()`
-- `+setStyle()`
-- `+getHtmlCont()`
-- `+placeIn()`
-- `+remove()`
-- `+getHtmlExt()`
-- `+getHtmlImp()`
-- `+getHtmlDD()`
-- `+getHtmlRZ()`
+```
+AbstractComponent
+- +moveTo()
+- +setLeft()
+- +setTop()
+- +setWidth()
+- +setHeight()
+- +setVisible()
+- +setDraggable()
+- +setPosition()
+- +setStyle()
+- +getHtmlCont()
+- +placeIn()
+- +remove()
+- +getHtmlExt()
+- +getHtmlImp()
+- +getHtmlDD()
+- +getHtmlRZ()
+
+AbstractContainer
+- +add()
+- +removeContents()
+```
 
 基于这两个类，`rialto` 提供了一组预定义的图形组件，其目标是实现复杂的 Web 图形界面。这些组件能够解决此类应用的主要问题。
 
@@ -13398,14 +12796,17 @@ function traiterDonnees(request){
 图 12.2 展示了与此类组件实现的不同类。
 
 **图 12.2 基础图形组件类**
-- **AbstractComponent**: `+moveTo()`, `+setLeft()`, `+setTop()`, `+setWidth()`, `+setHeight()`, `+setVisible()`, `+setDraggable()`, `+setPosition()`, `+setStyle()`
-- **Button**: `+placeIn()`, `+remove()`, `+getHtmlExt()`, `+setEnable()`, `+setLimReac()`, `+getHtmlImp()`, `+setTitle()`, `+setVisible()`, `+getHtmlDD()`, `+onclick()`, `+setEnable()`
-- **Image**: `+getHtmlRZ()`, `+setImageReference()`, `+setImages()`, `+setAlt()`, `+onclick()`
-- **Label**: `+setText()`, `+displayMessage()`
-- **Text**: `+addItem()`, `+setEnable()`, `+setCheck()`, `+setVisible()`, `+hasChanged()`
-- **Combo**: `+setEnable()`, `+setCheck()`, `+getCheck()`
-- **Checkbox**: `+setEnable()`, `+setEnable()`, `+setVisible()`, `+getCheck()`, `+onclick()`
-- **Radio**: `+getValue()`, `+selFirst()`, `+onclick()`, `+setEnable()`, `+setValue()`, `+selLast()`, `+showAsRequired()`, `+selInd()`, `+setFocus()`, `+getText()`, `+onblur()`, `+onclick()`, `+onfocus()`, `+getSelText()`, `+removeAsRequired()`, `+getSelValue()`, `+selWithText()`, `+selWithValue()`
+
+```
+AbstractComponent: +moveTo(), +setLeft(), +setTop(), +setWidth(), +setHeight(), +setVisible(), +setDraggable(), +setPosition(), +setStyle()
+Button: +placeIn(), +remove(), +getHtmlExt(), +setEnable(), +setLimReac(), +getHtmlImp(), +setTitle(), +setVisible(), +getHtmlDD(), +onclick(), +setEnable()
+Image: +getHtmlRZ(), +setImageReference(), +setImages(), +setAlt(), +onclick()
+Label: +setText(), +displayMessage()
+Text: +addItem(), +setEnable(), +setCheck(), +setVisible(), +hasChanged()
+Combo: +setEnable(), +setCheck(), +getCheck()
+Checkbox: +setEnable(), +setEnable(), +setVisible(), +getCheck(), +onclick()
+Radio: +getValue(), +selFirst(), +onclick(), +setEnable(), +setValue(), +selLast(), +showAsRequired(), +selInd(), +setFocus(), +getText(), +onblur(), +onclick(), +onfocus(), +getSelText(), +removeAsRequired(), +getSelValue(), +selWithText(), +selWithValue()
+```
 
 表格 12.11 总结了 `rialto` 库提供的基础图形组件的不同类。
 
@@ -13413,17 +12814,13 @@ function traiterDonnees(request){
 
 | 组件 | 描述 |
 | :--- | :--- |
-| rialto.widget.Button | 对应一个按钮。 |
-| rialto.widget.Checkbox | 对应复选框。 |
-| rialto.widget.Combo | 对应选择框。 |
-| rialto.widget.Image | 对应一个图片。 |
-| rialto.widget.Label | 对应不可编辑的文本区域，用于定义标签。 |
-| rialto.widget.Radio | 对应一个单选框。 |
-| rialto.widget.Text | 对应文本输入区域。 |
-
-
-
-
+| `rialto.widget.Button` | 对应一个按钮。 |
+| `rialto.widget.Checkbox` | 对应复选框。 |
+| `rialto.widget.Combo` | 对应选择框。 |
+| `rialto.widget.Image` | 对应一个图片。 |
+| `rialto.widget.Label` | 对应不可编辑的文本区域，用于定义标签。 |
+| `rialto.widget.Radio` | 对应一个单选框。 |
+| `rialto.widget.Text` | 对应文本输入区域。 |
 
 所有组件都可以根据其父级构造函数参数（该参数用于引用该区域）被添加并连接到 Web 页面中的区域。这些组件相对于该区域的左上角进行绝对定位。
 
@@ -13431,7 +12828,7 @@ function traiterDonnees(request){
 
 表格 12.12 汇总了该类的不同构造函数参数。
 
-### 表格 12.12 `rialto.widget.Label` 类的构造函数参数
+### 表 12.12 `rialto.widget.Label` 类的构造函数参数
 
 | 参数 | 类型 | 描述 |
 | :--- | :--- | :--- |
@@ -13454,7 +12851,7 @@ var libelle = new rialto.widget.Label(
 
 表格 12.13 和 12.14 分别汇总了该类的不同构造函数参数及其关联数组的属性。
 
-### 表格 12.13 `rialto.widget.Text` 类的构造函数参数
+### 表 12.13 `rialto.widget.Text` 类的构造函数参数
 
 | 参数 | 类型 | 描述 |
 | :--- | :--- | :--- |
@@ -13466,7 +12863,7 @@ var libelle = new rialto.widget.Label(
 | parent | 对象 | 对应挂载组件的 rialto 组件或经典的 HTML 容器。 |
 | parameters | 关联数组 | 包含表格 12.14 中汇总的属性。 |
 
-### 表格 12.14 `rialto.widget.Text` 类构造函数的 `parameters` 数组属性
+### 表 12.14 `rialto.widget.Text` 类构造函数的 `parameters` 数组属性
 
 | 属性 | 类型 | 描述 |
 | :--- | :--- | :--- |
@@ -13494,7 +12891,7 @@ var texte = new rialto.widget.Text(
 
 `rialto.widget.Checkbox` 组件对应于复选框。表格 12.15 汇总了其构造函数的不同参数。
 
-### 表格 12.15 `rialto.widget.Checkbox` 类的构造函数参数
+### 表 12.15 `rialto.widget.Checkbox` 类的构造函数参数
 
 | 参数 | 类型 | 描述 |
 | :--- | :--- | :--- |
@@ -13516,7 +12913,7 @@ var caseACocher = new rialto.widget.Checkbox(
 
 `rialto.widget.Radio` 组件对应于可以挂载到按钮组的单选框。因此，组内只能选择一个单选框。表格 12.16 汇总了其构造函数的不同参数。
 
-### 表格 12.16 `rialto.widget.Radio` 类的构造函数参数
+### 表 12.16 `rialto.widget.Radio` 类的构造函数参数
 
 | 参数 | 类型 | 描述 |
 | :--- | :--- | :--- |
@@ -13529,14 +12926,13 @@ var caseACocher = new rialto.widget.Checkbox(
 | checked | 布尔值 | 指定组件是否被选中。 |
 | className | 字符串 | 对应关联的 CSS 类。 |
 
-以下代码在名为 `groupe-Boutons` 的组中实现此类组件：
+以下代码在名为 `groupeBoutons` 的组中实现此类组件：
 
 ```javascript
 var boutonRadio1 = new rialto.widget.Radio(
   "boutonRadio1", 100, 120, cadre,
   "groupeBoutons", "Bouton radio 1",
   true, "libNormal");
-
 var boutonRadio2 = new rialto.widget.Radio(
   "boutonRadio2", 100, 120, cadre,
   "groupeBoutons", "Bouton radio 2",
@@ -13545,7 +12941,7 @@ var boutonRadio2 = new rialto.widget.Radio(
 
 `rialto.widget.Combo` 组件对应于值列表的选择框。表格 12.17 和 12.18 分别汇总了该类的不同构造函数参数及其关联数组的属性。
 
-### 表格 12.17 `rialto.widget.Combo` 类的构造函数参数
+### 表 12.17 `rialto.widget.Combo` 类的构造函数参数
 
 | 参数 | 类型 | 描述 |
 | :--- | :--- | :--- |
@@ -13555,27 +12951,9 @@ var boutonRadio2 = new rialto.widget.Radio(
 | left | 整数 | 对应组件的水平位置。 |
 | width | 字符串 | 对应组件的宽度。 |
 | parent | 对象 | 对应挂载组件的 rialto 组件或经典的 HTML 容器。 |
+| parameters | 一个关联数组 | 包含表 12.18 中汇总的属性。 |
 
-
-
-
-已关联组件。
-
-### parameters
-
-一个关联数组
-
-包含表 12.18 中汇总的属性。
-
-LivreGougeon 第 364 页 2006 年 11 月 28 日星期二 4:23 16
-
-**图形 JavaScript **
-
-**364**
-
-*第四部分*
-
-#### 表 12.18 `rialto.widget.Combo` 类构造函数的 `parameters` 关联数组的属性
+### 表 12.18 `rialto.widget.Combo` 类构造函数的 `parameters` 关联数组的属性
 
 | 属性 | 类型 | 说明 |
 | :--- | :--- | :--- |
@@ -13585,7 +12963,7 @@ LivreGougeon 第 364 页 2006 年 11 月 28 日星期二 4:23 16
 
 以下代码通过指定其不同的属性（标记 ❶）并定义其包含的值（标记 ❷）以及列表中的选定值（标记 ❸）来实现此种类型的组件：
 
-```
+```javascript
 var boiteSelection = new rialto.widget.Combo( // ❶
 "", "boiteSelection", 70, 120, 80, cadre,
 { suggest:true, enable:true, heightItem:0 });
@@ -13597,7 +12975,7 @@ sexe.selWithValue("Valeur 3"); // ❸
 
 `rialto.widget.Image` 组件对应于图片。表 12.19 和 12.20 分别汇总了该类的构造函数参数及其关联数组的属性。
 
-#### 表 12.19 `rialto.widget.Image` 类构造函数的参数
+### 表 12.19 `rialto.widget.Image` 类构造函数的参数
 
 | 参数 | 类型 | 说明 |
 | :--- | :--- | :--- |
@@ -13606,31 +12984,18 @@ sexe.selWithValue("Valeur 3"); // ❸
 | left | 整数 | 对应图片的水平位置。 |
 | parent | 对象 | 对应关联该组件的 rialto 组件或经典的 HTML 容器。 |
 | alternate | 字符串 | 对应鼠标悬停在图片上时显示的文本。 |
-| imageOn | 字符串 | 对应指针悬停在图片上方使用的使用的路径或 CSS 类。 |
+| imageOn | 字符串 | 对应指针悬停在图片上方使用的路径或 CSS 类。 |
+| parameters | 一个关联数组 | 包含表 12.20 中汇总的属性。 |
 
-### parameters
-
-一个关联数组
-
-包含表 12.20 中汇总的属性。
-
-#### 表 12.20 `rialto.widget.Image` 类构造函数的 `parameters` 关联数组的属性
+### 表 12.20 `rialto.widget.Image` 类构造函数的 `parameters` 关联数组的属性
 
 | 属性 | 类型 | 说明 |
 | :--- | :--- | :--- |
 | imageDisabled | 字符串 | 指定图片禁用时对应的图片路径或 CSS 类。 |
 
-LivreGougeon 第 365 页 2006 年 11 月 28 日星期二 4:23 16
-
-**rialto 库**
-
-**365**
-
-*第 12 章*
-
 以下代码实现了此种类型的组件：
 
-```
+```javascript
 var image = new rialto.widget.Image(
 "transparent3.gif", 310, 30,
 cadre, "image", "",
@@ -13639,7 +13004,7 @@ cadre, "image", "",
 
 `rialto.widget.Button` 组件对应于按钮，可用于点击时触发处理。表 12.21 和 12.22 分别汇总了该类的构造函数参数及其关联数组的属性。
 
-#### 表 12.21 `rialto.widget.Button` 类构造函数的参数
+### 表 12.21 `rialto.widget.Button` 类构造函数的参数
 
 | 参数 | 类型 | 说明 |
 | :--- | :--- | :--- |
@@ -13648,14 +13013,9 @@ cadre, "image", "",
 | title | 字符串 | 对应组件的标题。 |
 | alt | 字符串 | 对应光标悬过组件上时显示的文本。 |
 | parent | 对象 | 对应关联该组件的 rialto 组件或经典的 HTML 容器。 |
+| parameters | 一个关联数组 | 包含表 12.22 中汇总的属性。 |
 
-### parameters
-
-一个关联数组
-
-包含表 12.22 中汇总的属性。
-
-#### 表 12.22 `rialto.widget.Button` 类构造函数的 `parameters` 关联数组的属性
+### 表 12.22 `rialto.widget.Button` 类构造函数的 `parameters` 关联数组的属性
 
 | 属性 | 类型 | 说明 |
 | :--- | :--- | :--- |
@@ -13666,7 +13026,7 @@ cadre, "image", "",
 
 以下代码实现了此种类型的组件：
 
-```
+```javascript
 var bouton = new rialto.widget.Button(
 250, 30, "Texte", "Texte", cadre,
 { enable:true, adaptToText:true,
@@ -13675,48 +13035,33 @@ width:88, widthMin:88 });
 
 以下代码展示了如何联合使用本节描述的不同图形组件，即标签（标记 ❷）、文本框（标记 ❸）、复选框（标记 ❹）、选择框（标记 ❺）、单选框（标记 ❻）以及按钮（标记 ❼），以定义一个信息输入表单：
 
-LivreGougeon 第 366 页 2006 年 11 月 28 日星期二 4:23 16
-
-**图形 JavaScript 库**
-
-**366**
-
-*第四部分*
-
-```
+```javascript
 var cadre = new rialto.widget.Frame({ // ❶
 name:"cadre", title: "Informations",
 open:true, dynamic:false,
 position: "relative",
 draggable:false, parent:popup });
-
 var libelleNom = new rialto.widget.Label( // ❷
 "libelleNom", 15, 10, cadre, "Nom", "libelle1");
-
 var nom = new rialto.widget.Text( // ❸
 "textNom", 10, 120, 100, "A", cadre,
 { autoUp:false, isRequired:false,
 disable:false, rows:5, accessKey:"",
 tabIndex:"", initValue:""});
-
 var nomJeuneFille = new rialto.widget.Checkbox( // ❹
 "nomJeuneFille", 15, 230, cadre,
 "Nom de jeune fille", false, "libelle1");
-
 var libellePrenom = new rialto.widget.Label( // ❷
 "libellePrenom", 45, 10, cadre,
 "Mot de passe", "libelle1");
-
 var prenom = new rialto.widget.Text( // ❸
 "prenom", 40, 120, 100, "P", cadre,
 { autoUp:false, isRequired:false,
 disable:false, rows:5,
 accessKey:"", tabIndex:"", initValue:""});
-
 var libelleSexe = new rialto.widget.Label( // ❷
 "libelleSexe", 70, 10, cadre,
 "Sexe", "libelle1");
-
 var sexe = new rialto.widget.Combo( // ❺
 "", "boiteSelection", 70, 120, 80, cadre,
 { suggest:true, enable:true, heightItem:0 });
@@ -13724,11 +13069,9 @@ sexe.addItem("1","Valeur 1");
 sexe.addItem("2","Valeur 2");
 sexe.addItem("3","Valeur 3");
 sexe.selWithValue("Valeur 3");
-
 var libelleLHabitation = new rialto.widget.Label( // ❷
 "libelleLHabitation", 100, 10, cadre,
 "Lieu d'habitation", "libelle1");
-
 var nord = new rialto.widget.Radio( // ❻
 "nord", 100, 120, cadre,
 "lieu d'habitation", "Nord", true);
@@ -13744,12 +13087,10 @@ var sud = new rialto.widget.Radio( // ❻
 var paris = new rialto.widget.Radio( // ❻
 "paris", 220, 120, cadre,
 "lieu d'habitation", "Région parisienne", false);
-
 var boutonFermeture = new rialto.widget.Button( // ❼
 250, 30, "Fermeture", "Fermer", cadre,
 { enable:true, adaptToText:true,
 width:88, widthMin:88 });
-
 var boutonAide = new rialto.widget.Button( // ❼
 250, 130, "Aide", "Afficher l'aide", cadre,
 { enable:true, adaptToText:true,
@@ -13758,15 +13099,7 @@ width:88, widthMin:88 });
 
 ![](img/index-384_1.png)
 
-LivreGougeon 第 367 页 2006 年 11 月 28 日星期二 4:23 16
-
-注意，所有这些组件都关联到实例名为 cadre 的组件容器（标记 ❶）。我们在本章的后续部分详细介绍组件容器的实现。
-
-
-
-
-
-détails des composants de base dans la section précédente.
+注意，所有这些组件都关联到实例名为 `cadre` 的组件容器（标记 ❶）。我们在本章的后续部分详细介绍组件容器的实现。
 
 # Bibliothèques JavaScript graph
 
@@ -13774,12 +13107,10 @@ Comme montre le code suivant, la liaison s'effectue via le paramètre `parent` (
 
 ```javascript
 var formulaire = new rialto.widget.Form( (...) );
-
 var libelleNom = new rialto.widget.Label(
 "libelleNom", 15, 10,
 formulaire, "¨ ❶
 "Nom", "libelle1");
-
 var nom = new rialto.widget.Text(
 "textNom", 10, 120, 100, "A",
 formulaire, "¨ ❶
@@ -13794,7 +13125,7 @@ Les tableaux 12.23 et 12.24 récapitulent respectivement les paramètres du cons
 | Paramètre | Type | Description |
 | :--- | :--- | :--- |
 | `name` | Une chaîne de caractères | Correspond au nom du formulaire. |
-| `url` | Un nombre entier | Correspond au positionnement horizontal du composant. |
+| `url` | Une chaîne de caractères | Correspond à l'adresse de soumission du formulaire. |
 | `parent` | Un objet | Correspond à un composant rialto ou un conteneur HTML classique auquel est rattaché le composant. |
 | `parameters` | Un tableau associatif | Contient les propriétés récapitulées au tableau 12.24. |
 
@@ -13803,24 +13134,24 @@ Les tableaux 12.23 et 12.24 récapitulent respectivement les paramètres du cons
 | Propriété | Type | Description |
 | :--- | :--- | :--- |
 | `boolAsynch` | Un booléen | Spécifie si le formulaire doit être soumis de manière classique (valeur false) ou en se fondant sur les techniques Ajax (valeur true). |
-| `boolIframe` | Un booléen | Dans le cas d’une requête Ajax, especifie si la technique fondée sur les iframes doit être utilisée. Si la valeur de cette propriété est false, une requête Ajax fondée sur la classe `XMLHttpRequest` est réalisée. |
-| `boolWithFenWait` | Un booléen | Spécifie si une fenêtre d’attente doit être affichée pendant l’exécution de la requête Ajax de soumission. Ne peut être activée lors d’une soumission classique de formulaire. |
+| `boolIframe` | Un booléen | Dans le cas d'une requête Ajax, especifie si la technique fondée sur les iframes doit être utilisée. Si la valeur de cette propriété est false, une requête Ajax fondée sur la classe `XMLHttpRequest` est réalisée. |
+| `boolWithFenWait` | Un booléen | Spécifie si une fenêtre d'attente doit être affichée pendant l'exécution de la requête Ajax de soumission. Ne peut être activée lors d'une soumission classique de formulaire. |
 | `canBeCancel` | Un booléen | Spécifie si la requête Ajax peut être annulée durant son exécution. |
-| `imgBtonSubmit` | Une instance d’un bouton | Correspond au bouton permettant de déclencher la soumission du formulaire. |
+| `imgBtonSubmit` | Une instance d'un bouton | Correspond au bouton permettant de déclencher la soumission du formulaire. |
 | `method` | Une chaîne de caractères | Correspond à la méthode HTTP utilisée afin de soumettre le formulaire. |
-| `onSuccess` | Une référence à une fonction | Correspond à la fonction de rappel utilisée lors de l’utilisation d’une requête Ajax fondée sur la classe `XMLHttpRequest`. |
+| `onSuccess` | Une référence à une fonction | Correspond à la fonction de rappel utilisée lors de l'utilisation d'une requête Ajax fondée sur la classe `XMLHttpRequest`. |
 
 # La bibliothèque rialto
 
-Ce composant permet d’envoyer les données du formulaire de manière classique sans recour aux techniques Ajax. L’adresse spécifiée dans le paramètre `url` est alors utilisée afin de soumettre le formulaire. L’interface graphique de la page est remplacée par celle construite par la ressource accédée. Cette approche se configure en spécifiant la valeur false pour la propriété `boolAsynch`.
+Ce composant permet d'envoyer les données du formulaire de manière classique sans recourir aux techniques Ajax. L'adresse spécifiée dans le paramètre `url` est alors utilisée afin de soumettre le formulaire. L'interface graphique de la page est remplacée par celle construite par la ressource accédée. Cette approche se configure en spécifiant la valeur false pour la propriété `boolAsynch`.
 
-Ce composant offre également la possibilité de soumettre le formulaire en se fondant sur les techniques Ajax. Deux approches sont en ce cas envisageables. La première se fonde sur la classe `XMLHttpRequest` et une fonction de rappel afin de traiter la réponse à la soumission. La seconde consiste à utiliser une iframe cachée.
+Ce composant offre également la possibilité de soumettre le formulaire en se fondant sur les techniques Ajax. Deux approches sont en ce cas envisageables. La première se fonde sur la classe `XMLHttpRequest` 和一個回調函數以處理提交的響應。第二種方法是使用一個隱藏的 iframe。
 
-Avec la première approche, les propriétés `boolAsynch` (repère ❸) et `boolIframe` (repère ❹) doivent respectivement contenir les valeurs true et false tandis que la propriété `onSuccess` (repère ❺) doit référencer la fonction de rappel (repère ❶) à utiliser pour traiter la réponse.
+使用第一種方法時，屬性 `boolAsynch` (標記 ❸) 和 `boolIframe` (標記 ❹) 必須分別包含值 true 和 false，而屬性 `onSuccess` (標記 ❺) 必須引用用於處理響應的回調函數 (標記 ❶)。
 
-L’adresse de la requête doit toujours être spécifiée dans le paramètre `url` (repère ❷).
+請求的地址必須始終在參數 `url` (標記 ❷) 中指定。
 
-Cette fonction de rappel accepte en paramètre l’instance de la classe `XMLHttpRequest` utilisée afin d’exécuter la requête. Pour plus de détails sur l'utilisation de la classe `XMLHttpRequest`, le code suivant donne un exemple de mise en œuvre :
+此回調函數接受一個參數，即用於執行請求的 `XMLHttpRequest` 類的實例。有關使用 `XMLHttpRequest` 類的更多詳細信息，以下代碼給出了一個實現示例：
 
 ```javascript
 function traiterRequete(requete) {
@@ -13830,7 +13161,6 @@ function traiterRequete(requete) {
     alert(err.message);
   }
 }
-
 var formulaire = new rialto.widget.Form("/ajax/test.js", {
   method: "POST",
   boolAsynch: true,
@@ -13842,21 +13172,20 @@ var formulaire = new rialto.widget.Form("/ajax/test.js", {
 });
 ```
 
-Le 代码 ci-dessus définit les paramètres du formulaire afin d’utiliser les techniques Ajax (repère ❸) et particulièrement la classe `XMLHttpRequest` (repère ❹). La réponse à la soumission est traitée par une fonction de rappel (repère ❶). Le composant `rialto.widget.Form` offre également la possibilité de soumettre le formulaire de manière Ajax en se fondant sur une iframe cachée. Dans ce cas, la valeur de la propriété `boolIframe` est true et aucune fonction de rappel n'est nécessaire.
+上述代碼定義了表單的參數以使用 Ajax 技術 (標記 ❸)，特別是 `XMLHttpRequest` 類 (標記 ❹)。提交的響應由一個回調函數 (標記 ❶) 處理。組件 `rialto.widget.Form` 還提供了基於隱藏 iframe 以 Ajax 方式提交表單的可能性。在這種情況下，屬性 `boolIframe` 的值為 true，不需要回調函數。
 
-## Positionnement
+## 定位
 
-Les composants de ce type sont des conteneurs permettant de positionner les composants dans une page Web. Ces conteneurs peuvent s’imbriquer de manière récursive afin de mettre en œuvre des positionnements complexes.
+此類組件是容器，允許在網頁中定位組件。這些容器可以遞歸嵌套，以實現複雜的定位。
 
-La figure 12.5 illustre les classes relatives à la mise en œuvre des composants.
+圖 12.5 說明了與定位組件實現相關的類。
 
-```text
+```
 AbstractComponent
 +moveTo()
 +setLeft()
 +setTop()
 +setWidth()
-
 AbstractContainer
 +setHeight()
 +setVisible()
@@ -13872,7 +13201,6 @@ AbstractContainer
 +getHtmlImp()
 +getHtmlDD()
 +getHtmlRZ()
-
 Tab
 +addTabItem()
 +fixeProp()
@@ -13881,12 +13209,10 @@ Tab
 +removeTabItem()
 +setTitle()
 +activeFen()
-
 Splitter
 +activeTab()
 +onSetDisplay()
 +setVisible()
-
 Frame
 SimpleWindow
 +setVisible()
@@ -13894,41 +13220,35 @@ SimpleWindow
 ```
 **Figure 12.5**: *Classes relatives au positionnement*
 
-Ce support permet de définir les différentes zones affichées dans un navigateur et de les positionner en se fondant sur un gestionnaire de positionnement redimensionable ou des onglets.
+此支持允許定義瀏覽器中顯示的不同區域，並基於可調整大小的定位管理器或選項卡對其進行定位。
 
 ### Panel
 
-La bibliothèque rialto offre la possibilité de définir des panels en fondant sur la classe `rialto.widget.SimpleWindow`. Ces panels peuvent par la suite être rattachés à une balise HTML `div`. Cette dernière peut bien correspondre à une balise définie en dehors de rialto qu’à une balise `div` interne d’un composant graphique de cette bibliothèque, telle une zone d’un gestionnaire de positionnement.
+`rialto` 庫提供了基於 `rialto.widget.SimpleWindow` 類定義面板的可能性。這些面板隨後可以連接到 HTML `div` 標籤。後者既可以對應於 `rialto` 之外定義的標籤，也可以對應於該庫的圖形組件的內部 `div` 標籤，例如定位管理器的一個區域。
 
-### Affichage des composants de type `rialto.widget.SimpleWindow`
+### 顯示類型為 `rialto.widget.SimpleWindow` 的組件
 
-La bibliothèque n’autorise l’affichage que d’un seul composant de ce type dans une page Web. L’application ne peut donc mettre en œuvre les composants qu’en prenant en compte cet aspect. Il sera possible dans les prochaines versions de la bibliothèque d’en afficher plusieurs simultanément.
+該庫僅授權在網頁中顯示一個此類組件。因此，應用程序只能考慮到這一點來實現組件。在庫的未來版本中，將有可能同時顯示多個。
 
-Le constructeur de ce composant graphique prend en paramètre un tableau associatif contenant les propriétés récapitulées au tableau 12.25.
+該圖形組件的構造函數接受一個關聯數組作為參數，其中包含表 12.25 總結的屬性。
 
-### Tableau 12.25 Propriétés utilisables par le constructeur de la classe `rialto.widget.SimpleWindow`
+### 表 12.25 `rialto.widget.SimpleWindow` 類構造函數可用的屬性
 
-| Propriété | Type | Description |
+| 屬性 | 類型 | 描述 |
 | :--- | :--- | :--- |
-| `icone` | Une chaîne de caractères | Correspond à l’icône associée au panel. |
-| `parent` | Un objet | Correspond à un composant rialto ou un conteneur HTML classique auquel est rattaché le composant. |
-| `title` | Une chaîne de caractères | |
+| `icone` | 一個字符串 | 對應與面板關聯的圖標。 |
+| `parent` | 一個對象 | 對應一個 rialto 組件或一個經典的 HTML 容器，該組件連接到該容器。 |
+| `title` | 一個字符串 | 對應面板的標題。 |
 
-
-
-
-
-对应面板的标题。
-
-以下代码实现了一个此类组件（标记 ❶），包含输入表单的区域（标记 ❷）：
+以下代碼實現了此類組件（標記 ❶），包含輸入表單的區域（標記 ❷）：
 
 ```javascript
-var fenetre = new rialto.widget.SimpleWindow({ "¨" ❶
+var fenetre = new rialto.widget.SimpleWindow({ "¨" // ❶
 parent: document.body,
 title: "Un titre",
 icone: "images/imgFenSimple/picto-gr_recherchepatients.gif"
 });
-var cadre = new rialto.widget.Frame({ "¨" ❷
+var cadre = new rialto.widget.Frame({ "¨" // ❷
 name:"cadre",
 title: "Informations", open:true, dynamic:true,
 position: "relative", draggable:false, parent:fenetre
@@ -13942,112 +13262,85 @@ rows:5, accessKey:"", tabIndex:"", initValue:""});
 (...)
 ```
 
-```![](img/index-389_1.jpg)```
+![](img/index-389_1.jpg)
 
-LivreGougeon 第 372 页 2006 年 11 月 28 日 周二 4:23
+圖 12.6 展示了此類組件的外觀。
 
-## 图形化 JavaScript 库
-**372**
+**圖 12.6**
+*`rialto.widget.SimpleWindow` 類型組件的外觀*
 
-*第四部分*
+## 區域
 
-图 12.6 展示了此类组件的外观。
+在面板中，`rialto` 庫提供了定義不同區域的可能性，以便組合一組圖形組件。這種方法基於 `rialto.widget.Frame` 類。
 
-**图 12.6**
-*rialto.widget.SimpleWindow* 类型组件的外观
+該圖形組件的構造函數接受一個關聯數組作為參數，其中包含表 12.26 總結的屬性。
 
-## 区域
+### 表 12.26 `rialto.widget.Frame` 類構造函數可用的屬性
 
-在面板中，rialto 库提供了定义不同区域的可能性，以便组合一组图形组件。这种方法基于 `rialto.widget.Frame` 类。
-
-该图形组件的构造函数接受一个关联数组作为参数，其中包含表 12.26 汇总的属性。
-
-### 表格 12.26 `rialto.widget.Frame` 类构造函数可用的属性
-
-| 属性 | 类型 | 描述 |
+| 屬性 | 類型 | 描述 |
 | :--- | :--- | :--- |
-| draggable | 布尔值 | 指定区域是否可以通过拖放操作移动。 |
-| dynamic | 布尔值 | 指定区域是动态的还是静态的。如果是动态的（值为 true），则可以展开和折叠。 |
-| height | 字符串 | 对应组件的高度。可以用数字或百分比表示。 |
-| left | 整数 | 对应组件的水平位置。 |
-| name | 字符串 | 对应区域的名称。 |
-| open | 布尔值 | 当属性 `dynamic` 的值为 true 时，指定区域的状态（打开或关闭）。 |
+| draggable | 布爾值 | 指定區域是否可以通過拖放操作移動。 |
+| dynamic | 布爾值 | 指定區域是動態的還是靜態的。如果是動態的（值為 true），則可以展開和折疊。 |
+| height | 字符串 | 對應組件的高度。可以用數字或百分比表示。 |
+| left | 整數 | 對應組件的水平位置。 |
+| name | 字符串 | 對應區域的名稱。 |
+| open | 布爾值 | 當屬性 `dynamic` 的值為 true 時，指定區域的狀態（打開或關閉）。 |
+| parent | 對象 | 對應掛載該組件的 rialto 組件或經典的 HTML 容器。 |
+| position | 字符串 | 指定區域的定位模式。 |
+| title | 字符串 | 對應在區域頂部顯示的標題。 |
+| top | 整數 | 對應組件的垂直位置。 |
+| width | 字符串 | 對應組件的寬度。可以用數字或百分比表示。 |
 
-LivreGougeon 第 373 页 2006 年 11 月 28 日 周二 4:23
+該區域可以包含之前描述的所有簡單表單元素，這些組件通過其實例掛載在其上。
 
-## rialto 库
-**373**
-
-*第 12 章*
-
-### 表格 12.26 `rialto.widget.Frame` 类构造函数可用的属性（续接）
-
-| 属性 | 类型 | 描述 |
-| :--- | :--- | :--- |
-| parent | 对象 | 对应挂载该组件的 rialto 组件或经典的 HTML 容器。 |
-| position | 字符串 | 指定区域的定位模式。 |
-| title | 字符串 | 对应在区域顶部显示的标题。 |
-| top | 整数 | 对应组件的垂直位置。 |
-| width | 字符串 | 对应组件的宽度。可以用数字或百分比表示。 |
-
-该区域可以包含之前描述的所有简单表单元素，这些组件通过其实例挂载在其上。
-
-以下代码实现了一个此类组件（标记 ❶），以及将组件（标记 ❷）挂载到区域上：
+以下代碼實現了此類組件（標記 ❶），以及將組件（標記 ❷）掛載到區域上：
 
 ```javascript
-var cadre = new rialto.widget.Frame({ "¨" ❶
+var cadre = new rialto.widget.Frame({ "¨" // ❶
 name:"cadre",
 title: "Informations", open:true, dynamic:true,
 position: "relative", draggable:false, parent:fenetre
 });
 var libelleNom = new rialto.widget.Label(
 "libelleNom", 15, 10,
-cadre, "¨" ❷
+cadre, "¨" // ❷
 "Nom", "libelle1");
 var nom = new rialto.widget.Text(
 "textNom", 10, 120, 100, "A",
-cadre, "¨" ❷
+cadre, "¨" // ❷
 { autoUp:false, isRequired:false, disable:false,
 rows:5, accessKey:"", tabIndex:"", initValue:""});
 ```
 
 (...)
-(...)
 
-请注意，将 `dynamic` 属性指定为 true 可以显示和隐藏该区域。
+請注意，將 `dynamic` 屬性指定為 true 可以顯示和隱藏該區域。
 
-## 可调整大小的布局管理器
+## 可調整大小的佈局管理器
 
-可调整大小的布局管理器（或 *splitter*，分割器）提供了两个两个的可能性，其共同边界可以移动。因此，一个区域的扩大会导致另一个区域的缩小。
+可調整大小的佈局管理器（或 *splitter*，分割器）提供了兩個區域的可能性，它們的共同邊界可以移動。因此，一個區域的擴大會導致另一個區域的縮小。
 
-rialto 库通过 `rialto.widget.Splitter` 类实现了此组件，其构造函数接受一个关联数组作为参数，其中包含表 12.27 汇总的属性。
+`rialto` 庫通過 `rialto.widget.Splitter` 類實現了此組件，其構造函數接受一個關聯數組作為參數，其中包含表 12.27 總結的屬性。
 
-LivreGougeon 第 374 页 2006 年 11 月 28 日 周二 4:23
+### 表 12.27 `rialto.widget.Splitter` 類構造函數可用的屬性
 
-## 图形化 JavaScript 库
-**374**
-
-*第四部分*
-
-### 表格 12.27 `rialto.widget.Splitter` 类构造函数可用的属性
-
-| 属性 | 类型 | 描述 |
+| 屬性 | 類型 | 描述 |
 | :--- | :--- | :--- |
-| height | 字符串 | 对应组件的高度。可以用数字或百分比表示。 |
-| left | 整数 | 对应组件的水平位置。 |
-| limInf | 整数 | 对应第一个区域可能的最小比例。 |
-| limSup | 整数 | 对应第一个区域可能的最大比例。 |
-| name | 字符串 | 对应区域的名称。 |
-| orientation | 字符串 | 指定组件的方向。可能的值有：– v：垂直方向；– h：用于水平方向。 |
-| parent | 对象 | 对应挂载该组件的 rialto 组件或经典的 HTML 容器。 |
-| prop | 整数 | 对应第一个区域的比例。该值在 0 到 1 之间。 |
-| reverseClose | 布尔值 | 指定点击手拉条时组件是否在右侧（如果是垂直方向则在底部）关闭。 |
-| style | 字符串 | 对应组件的样式。 |
-| top | 整数 | 对应组件的垂直位置。 |
-| width | 字符串 | 对应组件的宽度。可以用数字或百分比表示。 |
-| withImg | 布尔值 | 指定带有图像的区域的分隔。 |
+| height | 字符串 | 對應組件的高度。可以用數字或百分比表示。 |
+| left | 整數 | 對應組件的水平位置。 |
+| limInf | 整數 | 對應第一個區域可能的最小比例。 |
+| limSup | 整數 | 對應第一個區域可能的最大比例。 |
+| name | 字符串 | 對應區域的名稱。 |
+| orientation | 字符串 | 指定組件的方向。可能的值有：– v：垂直方向；– h：用於水平方向。 |
+| parent | 對象 | 對應掛載該組件的 rialto 組件或經典的 HTML 容器。 |
+| prop | 整數 | 對應第一個區域的比例。該值在 0 到 1 之間。 |
+| reverseClose | 布爾值 | 指定點擊手拉條時組件是否在右側（如果是垂直方向則在底部）關閉。 |
+| style | 字符串 | 對應組件的樣式。 |
+| top | 整數 | 對應組件的垂直位置。 |
+| width | 字符串 | 對應組件的寬度。可以用數字或百分比表示。 |
+| withImg | 布爾值 | 指定帶有圖像的區域的分隔。 |
 
-该布局管理器的实现如下方式所示：
+該佈局管理器的實現如下方式所示：
 
 ```javascript
 var splitter = new rialto.widget.Splitter({
@@ -14067,100 +13360,49 @@ reverseClose: false
 });
 ```
 
-为了将区域挂载到管理器，可以使用其属性 `div1` 和 `div2`，它们分别对应其左部分和右部分（如果是垂直方向则为顶部和底部）。
+為了將區域掛載到管理器，可以使用其屬性 `div1` 和 `div2`，它們分別對應其左部分和右部分（如果是垂直方向則為頂部和底部）。
 
-以下代码提供了将两个区域挂载到管理器（标记 ❶）左部分（标记 ❷）和右部分（标记 ❸）的示例：
+以下代碼提供了將兩個區域掛載到管理器（標記 ❶）左部分（標記 ❷）和右部分（標記 ❸）的示例：
 
 ```javascript
 var libelle1 = new rialto.widget.Label(
 "libelle1", 15, 10,
-splitter.div1,
+splitter.div1, // ❷
 "Première zone", "libelle1");
-```
-
-```![](img/index-392_1.png)```
-
-LivreGougeon 第 375 页 2006 年 11 月 28 日 周二 4:23
-
-## rialto 库
-**375**
-
-*第 12 章*
-
-```javascript
 var libelle2 = new rialto.widget.Label(
 "libelle2", 15, 10,
-splitter.div2,
+splitter.div2, // ❸
 "Seconde zone", "libelle1");
 ```
 
-图 12.7 展示了此类组件的外观。
+![](img/index-392_1.png)
 
-## 选项页
+圖 12.7 展示了此類組件的外觀。
 
-标签管理器允许多个区域共存，但同时只显示其中一个。标签允许选择管理器中显示的区域。
+## 選項頁
 
-rialto 库基于 `rialto.widget.TabFolder` 类实现了这一功能。
+標籤管理器允許多個區域共存，但同時只顯示其中一個。標籤允許選擇管理器中顯示的區域。
 
-该类的构造函数接受一个关联数组作为参数，其中包含表 12.28 汇总的属性。
+`rialto` 庫基於 `rialto.widget.TabFolder` 類實現了這一功能。
 
-### 表格 12.28 `rialto.widget.TabFolder` 类构造函数可用的属性
+該類的構造函數接受一個關聯數組作為參數，其中包含表 12.28 總結的屬性。
 
-| 属性 | 类型 | 描述 |
+### 表 12.28 `rialto.widget.TabFolder` 類構造函數可用的屬性
+
+| 屬性 | 類型 | 描述 |
 | :--- | :--- | :--- |
-| autoRedimTab | 布尔值 | |
+| autoRedimTab | 布爾值 | 指定是否啟用標籤頁標題的自動縮放。 |
+| draggableItem | 布爾值 | 指定標籤頁是否可以通過拖放機制進行移動。 |
+| height | 字符串 | 對應組件的高度。可以以數字或百分比的形式表示。 |
+| isClosable | 布爾值 | 指定標籤頁是否可以被關閉。 |
+| left | 整數 | 對應組件的水平位置。 |
+| name | 字符串 | 對應區域的名稱。 |
+| parent | 對象 | 對應於掛載該組件的 Rialto 組件或經典的 HTML 容器。 |
+| top | 整數 | 對應組件的垂直位置。 |
+| width | 字符串 | 對應組件的寬度。可以以數字或百分比的形式表示。 |
+| widthTabName | 整數 | 對應標籤頁的大小。 |
 
-
-
-
-
-指定是否启用标签页标题的自动缩放。
-
-`draggableItem`
-布尔值
-指定标签页是否可以通过拖放机制进行移动。
-
-`height`
-字符串
-对应组件的高度。可以以数字或百分比的形式表示。
-
-`isClosable`
-布尔值
-指定标签页是否可以被关闭。
-
-`left`
-整数
-对应组件的水平位置。
-
-`name`
-字符串
-对应区域的名称。
-
-`parent`
-对象
-对应于挂载该组件的 Rial 组件或经典的 HTML 容器。
-
-`top`
-整数
-对应组件的垂直位置。
-
-`width`
-字符串
-对应组件的宽度。可以以数字或百分比的形式表示。
-
-`widthTabName`
-整数
-对应标签页的大小。
-
-![](img/index-393_1.png)
-
-LivreGougeon 第 376 页 2006 年 11 月 28 日 星期二 4:23 16
-
-# 图形 JavaScript 库
-**376**
-*第四部分*
-
-此类布局管理器的实现方式如下：
+此類佈局管理器的實現方式如下：
 
 ```javascript
 var onglets = new rialto.widget.TabFolder({
@@ -14172,12 +13414,12 @@ var onglets = new rialto.widget.TabFolder({
 });
 ```
 
-向管理器添加标签页是通过其 `addTabItem` 方法实现的，该方法允许指定标签页的标题及其激活状态。此方法返回添加的标签页的实例，该实例可用于为其添加区域和组件。
+向管理器添加標籤頁是通過其 `addTabItem` 方法實現的，該方法允許指定標籤頁的標題及其激活狀態。此方法返回添加的標籤頁的實例，該實例可用於為其添加區域和組件。
 
-以下代码实现了此方法（标记 ❶），以便创建一个标签页并将组件挂载到其上（标记 ❷）：
+以下代碼實現了此方法（標記 ❶），以便創建一個標籤頁並將組件掛載到其上（標記 ❷）：
 
 ```javascript
-var onglets = new rialto.widget.TabFolder({...)});
+var onglets = new rialto.widget.TabFolder({...});
 var premierOnglet = onglets.addTabItem("Premier onglet", true); // ❶
 var libelle1 = new rialto.widget.Label(
   "libelle1", 15, 10,
@@ -14186,37 +13428,38 @@ var libelle1 = new rialto.widget.Label(
 (...)
 ```
 
-图 12.8 展示了此类组件的外观。
+圖 12.8 展示了此類組件的外觀。
 
-**图 12.8**
-*`rialto.widget.TabFolder` 类型组件外观*
+**圖 12.8**
+*`rialto.widget.TabFolder` 類型組件外觀*
 
-## 浮动窗口
+## 浮動窗口
 
-rialto 提供了 `rialto.widget.Alert` 和 `rialto.widget.PopUp` 类，用于在网页中实现浮动窗口。
+`rialto` 提供了 `rialto.widget.Alert` 和 `rialto.widget.PopUp` 類，用於在網頁中實現浮動窗口。
 
-前者简单地对应带有消息的警告窗口，后者对应浮动模态窗口。后者的内容可以根据应用程序的需求专门构建。
+前者簡單地對應帶有消息的警告窗口，後者對應浮動模態窗口。後者的內容可以根據應用程序的需求專門構建。
 
 ![](img/index-394_1.png)
 
-LivreGougeon 第 377 页 2006 年 11 月 28 日 星期二 4:23 16
-
 # rialto 库
-**377**
+
 *第 12 章*
 
 ## 警告窗口
 
-`rialto.widget.Alert` 类允许显示警告窗口。该类的构造函数接受一个参数，对应要显示的消息文本，如下代码所示：
+`rialto.widget.Alert` 類允許顯示警告窗口。該類的構造函數接受一個參數，對應要顯示的消息文本，如下代碼所示：
 
 ```javascript
-var fenetreAvertissement = new rialto.widget.Alert("Mon message");
 ```
+
+
+
+var fenetreAvertissement = new `rialto.widget.Alert`("Mon message");
 
 图 12.9 展示了所创建的图形组件的外观。
 
 **图 12.9**
-*对应模态窗口的图形组件*
+对应模态窗口的图形组件
 
 ## 通用窗口
 
@@ -14224,7 +13467,7 @@ var fenetreAvertissement = new rialto.widget.Alert("Mon message");
 
 它的构造函数基于表 12.29 汇总的参数。
 
-**表 12.29 *rialto.widget.Popup* 类构造函数参数**
+**表 12.29 `rialto.widget.Popup` 类构造函数参数**
 
 | 参数 | 类型 | 描述 |
 | :--- | :--- | :--- |
@@ -14240,10 +13483,12 @@ var fenetreAvertissement = new rialto.widget.Alert("Mon message");
 以下代码以对话框的形式实现了此类（标记 ❶），其中包含身份验证参数输入（标记 ❷）：
 
 ```javascript
-var popup = new rialto.widget.PopUp( // ❶
-"test", 150, 370, "280", "120", "",
-"Authentification","transparent");
-var cadre = new rialto.widget.Frame({
+var popup = new `rialto.widget.PopUp`( // ❶
+  "test", 150, 370, "280", "120", "",
+  "Authentification","transparent"
+);
+
+var cadre = new `rialto.widget.Frame`({
   name:"cadre", top:"20", left:"5",
   width:"240", height: "70",
   title: "Utilisateur/Mot de passe",
@@ -14251,56 +13496,46 @@ var cadre = new rialto.widget.Frame({
   position: "absolute",
   draggable:false, parent:popup
 });
-var libelleIdentifiant = new rialto.widget.Label(
+
+var libelleIdentifiant = new `rialto.widget.Label`(
   "libelleIdentifiant", 15, 10, cadre,
-  "Utilisateur", "libelle1");
-var identifiant = new rialto.widget.Text( // ❷
+  "Utilisateur", "libelle1"
+);
+
+var identifiant = new `rialto.widget.Text`( // ❷
   "texteIdentifiant", 10, 100,
   100, "A", cadre,
   { autoUp:false, isRequired:false,
   disable:false, rows:5,
   Key:"",
-  tabIndex:"" });
-var libelleDePasse = new rialto.widget.Label(
+  tabIndex:"" }
+);
+
+var libelleDePasse = new `rialto.widget.Label`(
   "libelleDePasse", 15, 10, cadre,
   "Mot", "", "1elle
-
-varasse = new rialto.widget.Text(
+varasse = new `rialto.widget.Text`(
   "textePasse", 10, 100,
   100,
-
 ,
 ,
-
-
-
-
-
-
-varPifiant = new rialto.widget.Text(
+varPifiant = new `rialto.widget.Text`(
   "texteIdentifiant", 10, 10,,
   100, "A", cadre,
   { autoUp:false, isRequired:false,
-
 (...)
 ```
 
 图 12.10 展示了所创建组件的外观。
 
 **图 12.10**
-*`rialto.widget.TabFolder` 类型组件外观*
+`rialto.widget.TabFolder` 类型组件外观
 
 ## 复杂组件
 
 rialto 提供了具有复杂功能的图形组件，用于实现表格和树。
 
 图 12.11 展示了与组件相关的类。
-
-LivreGougeon 第 379 页 2006 年 11 月 28 日 星期二 4:23 16
-
-# rialto 库
-**379**
-*第 12 章*
 
 **AbstractComponent**
 `+moveTo()`
@@ -14355,7 +13590,7 @@ LivreGougeon 第 379 页 2006 年 11 月 28 日 星期二 4:23 16
 **TreeGrid**
 
 **图 12.11**
-*复杂组件类*
+复杂组件类
 
 ## 表格支持
 
@@ -14363,7 +13598,7 @@ LivreGougeon 第 379 页 2006 年 11 月 28 日 星期二 4:23 16
 
 该类的构造函数接受一个关联数组，包含表 12.30 汇总的属性。
 
-**表 12.30 *Grid* 类构造函数属性参数**
+**表 12.30 `Grid` 类构造函数属性参数**
 
 | 参数 | 类型 | 描述 |
 | :--- | :--- | :--- |
@@ -14371,70 +13606,25 @@ LivreGougeon 第 379 页 2006 年 11 月 28 日 星期二 4:23 16
 | `autoWidth` | 布尔值 | 指定表格宽度是否与包含它的组件的宽度相同。 |
 | `bNavig` | 布尔值 | 指定表格的导航模式。如果值为 true，则表格进行分页。否则，表格数据将以块形式显示。 |
 | `boolPrint` | 布尔值 | 指定表格是否可以打印。 |
-| `cellActive` | 布尔值 | |
-
-
-
-
-
-指定选择是在行上（值为 `false`）还是在单元格上（值为 `true`）进行。
-
-`height`
-字符串
-对应组件的高度。可以用数字字符形式或百分比形式表示。
-
-`left`
-整数
-对应窗口的水平位置。
-
-`lineHeight`
-整数
-对应行高。
-
-`multiSelect`
-布尔值
-指定是否启用多行编辑。
-
-`name`
-字符串字符串
-对应窗口的名称。
-
-`parent`
-对象
-对应于挂载该组件的 rialto 组件或经典的 HTML 容器。
-
-`rang`
-整数
-指定在分页模式下显示的行数。
-
-`sortable`
-布尔值
-指定表格行是否可以进行排序。
-
-`switchable`
-布尔值
-指定是否可以更改显示模式。
-
-`TabEntete`
-数组
-指定表格不同列的标题标签。
-
-`tabTypeCol`
-数组
-指定表格不同列的类型和宽度。
-
-`top`
-整数
-对应窗口的垂直位置。
-
-`writable`
-布尔值
-指定表格行是否可编辑。
+| `cellActive` | 布尔值 | 指定选择是在行上（值为 `false`）还是在单元格上（值为 `true`）进行。 |
+| `height` | 字符串 | 对应组件的高度。可以用数字字符形式或百分比形式表示。 |
+| `left` | 整数 | 对应窗口的水平位置。 |
+| `lineHeight` | 整数 | 对应行高。 |
+| `multiSelect` | 布尔值 | 指定是否启用多行编辑。 |
+| `name` | 字符串 | 对应窗口的名称。 |
+| `parent` | 对象 | 对应于挂载该组件的 rialto 组件或经典的 HTML 容器。 |
+| `rang` | 整数 | 指定在分页模式下显示的行数。 |
+| `sortable` | 布尔值 | 指定表格行是否可以进行排序。 |
+| `switchable` | 布尔值 | 指定是否可以更改显示模式。 |
+| `TabEntete` | 数组 | 指定表格不同列的标题标签。 |
+| `tabTypeCol` | 数组 | 指定表格不同列的类型和宽度。 |
+| `top` | 整数 | 对应窗口的垂直位置。 |
+| `writable` | 布尔值 | 指定表格行是否可编辑。 |
 
 以下代码实现了 `rialto.widget.Grid` 类，它提供了指定不同列的标题（标记 ❶）、它们期望的数据类型（标记 ❷）以及表格的各种所需行为，例如行的多重选择（标记 ❸）、行的排序（标记 ❹）以及行的编辑（标记 ❺）：
 
 ```javascript
-var tableau = new rialto.widget.Grid({
+var tableau = new `rialto.widget.Grid`({
   top:10, left:5, height:200,
   TabEntete:[ "Numéro","Isbn","Titre", ❶
   "Auteurs", "Date de parution" ],
@@ -14451,52 +13641,23 @@ var tableau = new rialto.widget.Grid({
 });
 ```
 
-`rialto.widget.Grid` 类提供了 `fillGrid` 方法来指定表格数据。它接受一个包含各行数据的数组作为参数。一行的列本身是以数组形式指指定的。
-
-![](img/index-398_1.png)
-![](img/index-398_2.png)
-
-LivreGougeon 第 381 页 2006 年 11 月 28 日 星期二 4:23 16
-
-**rialto 库**
-**381**
-*第 12 章*
-
-以下代码展示了如何实现该方法：
-
-```javascript
-var tableau = new rialto.widget.Grid({ (...) });
-tableau.fillGrid([
-  [ "1", "2212117108", "Spring par la pratique", "J. Dubois, J.P. Retaillé, T. Templier","28/04/2006"],
-  [ "2", "2212115709","CSS 2: Pratique du design web", "R. Goetter et S. Blondeel","16/07/2005"],
-  [ "3", "2212120095","JavaScript pour le Web 2.0", "A. Gougeon, T. Templier", "30/11/2006"],
-  [ "4", "2212119658","Développez en Ajax", "Michel Plasse", "14/09/2006"]
-]);
-```
-
-数组中包含的数据可以通过其 `tabData` 属性访问，该属性对应于一个结构与 `fillGrid` 方法参数相似的数据数据数组。
+`rialto.widget.Grid` 类提供了 `fillGrid` 方法来指定表格数据。它接受一个包含各行数据的数组作为参数。一行的列本身是以数组形式指定的。
 
 图 12.12 展示了所创建表格的样式。
 
 **图 12.12**
-*rialto.widget.Grid 类型图形组件的样式*
+`rialto.widget.Grid` 类型图形组件的样式
 
 rialto 库允许通过直接编辑其所包含的数据行来修改表格数据。此功能在创建表格时根据 `writable` 参数激活。
 
 图 12.13 展示了修改模式下的表格外观。
 
 **图 12.13**
-*修改模式下的表格外观*
+修改模式下的表格外观
 
-LivreGougeon 第 382 页 2006 年 11 月 28 日 星期二 4:23 16
+`rialto.widget.Grid` 类提供了多种方法，允许通过编程方式操作表格中包含的数据。表 12.31 总结了这些操作的主要方法。
 
-**图形 JavaScript 库**
-**382**
-*第四部分*
-
-`rialto.widget.Grid` 类提供了多种方法，允许通过编程方式操作表格中包含的数据。表格 12.31 总结了这些操作的主要方法。
-
-**表格 12.31 *rialto.widget.Grid* 类数据操作的主要要方法**
+**表 12.31 `rialto.widget.Grid` 类数据操作的主要方法**
 
 | 方法 | 参数 | 说明 |
 | :--- | :--- | :--- |
@@ -14520,13 +13681,7 @@ LivreGougeon 第 382 页 2006 年 11 月 28 日 星期二 4:23 16
 | `isLine` | DOM 节点 | 如果节点是行则返回 true。 |
 | `setCellText` | 行、列索引以及字符串 | 为单元格设置文本。 |
 
-表格 12.31 中的大多数方法都接受 HTML 行作为参数。以下代码提供了使用之前创建的表格主要方法的示例，以便向其添加（标记 ❶）和删除（标记 ❷）行：
-
-LivreGougeon 第 383 页 2006 年 11 月 28 日 星期二 4:23 16
-
-**rialto 库**
-**383**
-*第 12 章*
+表 12.31 中的大多数方法都接受 HTML 行作为参数。以下代码提供了使用之前创建的表格主要方法的示例，以便向其添加（标记 ❶）和删除（标记 ❷）行：
 
 ```javascript
 function ajouterLigne() { // ❶
@@ -14548,69 +13703,30 @@ function supprimerLigneSelectionnee() { // ❷
 }
 ```
 
-**树的支持**
+## 树的支持
 
-rialto 库提供了基于 `rialto.widget.Tree` 和 `rialto.widget.TreeNode` 类来实现树的可能性。`rialto.widget.Tree` 类的构造函数通过关联数组接受表格 12.32 中总结的不同参数。
+rialto 库提供了基于 `rialto.widget.Tree` 和 `rialto.widget.TreeNode` 类来实现树的可能性。`rialto.widget.Tree` 类的构造函数通过关联数组接受表 12.32 中总结的不同参数。
 
-**表格 12.32 *rialto.widget.Tree* 类构造函数的参数**
+**表 12.32 `rialto.widget.Tree` 类构造函数的参数**
 
 | 参数 | 类型 | 说明 |
 | :--- | :--- | :--- |
-| `boolSelActive` | 布尔值 | 指定节点在被选中时样式是否改变 . |
-| `draggableNode` | 一个布尔值 | |
-
-
-
-
-
-指定节点是否可以根据拖放机制进行移动。
-
-### `height`
-字符串
-对应组件的高度。可以以数字字符或百分比的形式表示。
-
-### `left`
-整数
-对应组件的水平位置。
-
-### `name`
-字符串
-对应树的名称。
-
-### `parent`
-对象
-对应挂载组件的 rialto 组件或经典的 HTML 容器。
-
-### `rootOpen`
-布尔值
-指定在创建树时根节点是否为打开状态。
-
-### `top`
-整数
-对应组件的垂直位置。
-
-### `width`
-字符串
-对应组件的宽度。可以以数字字符或百分比的形式表示。
-
-### `withRoot`
-布尔值
-指定根节点是否关联标题和图像。
-
-### `withT`
-布尔值
-指定是否显示虚线来连接树节点。
-
-![](img/index-401_1.png)
-
-**JavaScript 图形库**
-**384**
-*第四部分*
+| `boolSelActive` | 布尔值 | 指定节点在被选中时样式是否改变。 |
+| `draggableNode` | 布尔值 | 指定节点是否可以根据拖放机制进行移动。 |
+| `height` | 字符串 | 对应组件的高度。可以以数字字符或百分比的形式表示。 |
+| `left` | 整数 | 对应组件的水平位置。 |
+| `name` | 字符串 | 对应树的名称。 |
+| `parent` | 对象 | 对应挂载组件的 rialto 组件或经典的 HTML 容器。 |
+| `rootOpen` | 布尔值 | 指定在创建树时根节点是否为打开状态。 |
+| `top` | 整数 | 对应组件的垂直位置。 |
+| `width` | 字符串 | 对应组件的宽度。可以以数字字符或百分比的形式表示。 |
+| `withRoot` | 布尔值 | 指定根节点是否关联标题和图像。 |
+| `withT` | 布尔值 | 指定是否显示虚线来连接树节点。 |
 
 `rialto.widget.Tree` 类的实现方式如下：
 
 ```javascript
-var arbre = new rialto.widget.Tree({
+var arbre = new `rialto.widget.Tree`({
   name: "arbre", top: "5", left:"0",
   width: "300", height: "200",
   parent: cadre, boolSelActive: true, rootOpen: true,
@@ -14623,7 +13739,7 @@ var arbre = new rialto.widget.Tree({
 以下代码给出了该方法的实现示例：
 
 ```javascript
-var arbre = new rialto.widget.Tree({
+var arbre = new `rialto.widget.Tree`({
   name: "arbre", top: "5", left:"0",
   width: "300", height: "200",
   parent: cadre, boolSelActive: true, rootOpen: true,
@@ -14650,11 +13766,7 @@ var noeudJ2EE = arbre.createAndAddNode(noeudRacineArbre.id, {
 图 12.14 展示了上述创建的树的外观。
 
 **图 12.14**
-*树的外观*
-
-**rialto 库**
-**385**
-*第 12 章*
+树的外观
 
 可以在树的 `onclick` 方法（标记 ❷）上注册一个全局观察者，以便在选择这些节点时执行处理（标记 ❶）。
 
@@ -14665,7 +13777,7 @@ function selectionNoeud(noeud) { // ❶
   alert("Nœud sélectionné. Identifiant: " + noeud.id + ", texte: " + noeud.text);
 }
 
-var arbre = new rialto.widget.Tree({
+var arbre = new `rialto.widget.Tree`({
   name: "arbre", top: "5", left:"0",
   width: "300", height: "200",
   parent: cadre, boolSelActive: true, rootOpen: true,
@@ -14677,7 +13789,7 @@ arbre.onclick = selectionNoeud; // ❷
 
 树操作的节点是 `rialto.widget.TreeNode` 类型，可以通过实例化该类来显式创建。随后，必须通过其 `addNode` 方法添加到树中。
 
-表格 12.33 和 12.34 汇总了该类的构造函数参数及其不同的方法。
+表 12.33 和 12.34 汇总了该类的构造函数参数及其不同的方法。
 
 ### 表 12.33 `rialto.widget.TreeNode` 类的构造函数参数
 
@@ -14701,11 +13813,6 @@ arbre.onclick = selectionNoeud; // ❷
 | `first` | - | 返回该节点的第一个子节点。 |
 | `hasChild` | - | 返回节点是否拥有子节点。 |
 | `insertBefore` | `rialto.widget` 类型的节点和字符串 | 在应用方法的节点之前添加参数传递的节点。 |
-
-### 表 12.34 `rialto.widget.TreeNode` 类的方法（续） |
-
-| 方法 | 参数 | 描述 |
-| :--- | :--- | :--- |
 | `isFirst` | - | 判断节点是否为其父节点的第一个子节点。 |
 | `isLast` | - | 判断节点是否为其父节点的最后一个子节点。 |
 | `last` | - | 返回该节点的最后一个子节点。 |
@@ -14720,19 +13827,15 @@ arbre.onclick = selectionNoeud; // ❷
 以下代码结合树的 `addNode` 方法（标记 ❷）实现了此类（标记 ❶）：
 
 ```javascript
-var arbre = new rialto.widget.Tree({
+var arbre = new `rialto.widget.Tree`({
   name: "arbre", top: "5", left:"0",
   width: "300", height: "200",
   parent: cadre, boolSelActive: true, rootOpen: true,
   withRoot: true, withT: true, draggableNode: false
 });
+
+noeudWeb.removeNode(dernierNoeudEnfant.id); // ❶
 ```
-
-
-
-
-
-`noeudWeb.removeNode(dernierNoeudEnfant.id);`  ¨ ❶
 
 如后续代码所示，该库提供了在选择节点时触发处理操作（标记 ❶）的可能性，这是通过在 `rialto.widget.TreeNode` 类构造函数的参数中使用 `onclick` 属性（标记 ❷）来实现的：
 
@@ -14740,12 +13843,8 @@ var arbre = new rialto.widget.Tree({
 function selectionNoeud() {
   alert("Le nœud a été sélectionné.");
 }
-```
 
-(...)
-
-```javascript
-var noeudRacineArbre = new rialto.widget.TreeNode({
+var noeudRacineArbre = new `rialto.widget.TreeNode`({
   name: "noeudRacineArbre", text: "Ouvrages",
   icon:'images/imTreeview/pict_synthetik_off.gif',
   icon2:'images/imTreeview/pict_synthetik_on.gif',
@@ -14762,25 +13861,19 @@ var noeudRacineArbre = new rialto.widget.TreeNode({
 
 ### 表 12.35 `rialto.widget.TreeGrid` 类构造函数的额外参数
 
-| 参数 | 类型 |  |
+| 参数 | 类型 | 说明 |
 | :--- | :--- | :--- |
-| textFirstCol | 字符串 | 对应第一列（包含节点的列）的标题。 |
-| widthFirstCol | 整数 | 对应第一列（包含节点的列）的宽度。 |
+| `textFirstCol` | 字符串 | 对应第一列（包含节点的列）的标题。 |
+| `widthFirstCol` | 整数 | 对应第一列（包含节点的列）的宽度。 |
 
-尽管如此，`rialto.widget.Grid` 类的某些参数不可修改的并取给定值。例如参数 `switchable`（值为 `false`）、`lineHeight`（值为 `23`）、`sortable`（值为 `false`）以及 `bNavig`（值为 `false`）。
-
-LivreGougeon 第 388 页 2006 年 11 月 28 日周二 4:23 16
-
-## 图形 JavaScript 库 388
-
-第四部分
+尽管如此，`rialto.widget.Grid` 类的某些参数不可修改并取给定值。例如参数 `switchable`（值为 `false`）、`lineHeight`（值为 `23`）、`sortable`（值为 `false`）以及 `bNavig`（值为 `false`）。
 
 请注意，表头不包含包含节点的列。
 
 如后续代码所示，`rialto.widget.TreeGrid` 实现提供了指定不同列的表头（标记 ❶）以及它们期望的数据类型（标记 ❷）的可能性；此外，该类还提供了指定表格各种所需行为的可能性，例如行的多选（标记 ❸）、行的排序（标记 ❹）以及行的编辑（标记 ❺）：
 
 ```javascript
-var tableauArbre = new rialto.widget.GridTree({
+var tableauArbre = new `rialto.widget.GridTree`({
   widthFirstCol:160,
   name: "tableauArbre", top: "5", left:"0",
   width: "300", height: "200",
@@ -14820,17 +13913,10 @@ var noeudJavaScriptWeb2 = tableauArbre.addNodeLine({
 });
 ```
 
-![](img/index-406_1.jpg)
-
-LivreGougeon 第 389 页 2006 年 11 月 28 日周二 4:23 16
-
-## rialto 库 389
-
-第 12 章
-
 图 12.15 展示了包含上述树的表格外观。
 
-**图 12.15** *表格内树的外观*
+**图 12.15**
+表格内树的外观
 
 ### 总结
 
@@ -14853,23 +13939,13 @@ LivreGougeon 第 389 页 2006 年 11 月 28 日周二 4:23 16
 | DragAndDrop | 为元素应用拖放行为。 |
 | Resize | 为元素指定缩放行为。 |
 
-请注意，表头不包含包含节点的列。
-
-如后续代码所示，`rialto.widget.TreeGrid` 实现提供了指定不同列的表头（标记 ❶）以及它们期望的数据类型（标记 ❷）的可能性；此外，该类还提供了指定表格各种所需行为的可能性，例如行的多选（标记 ❸）、行的排序（标记 ❹）以及行的编辑（标记 ❺）：
-
-LivreGougeon 第 390 页 2006 年 11 月 28 日周二 4:23 16
-
-## 图形 JavaScript 库 390
-
-第四部分
-
 如后续代码所示，该库允许通过其 `onclick` 属性（标记 ❷）简单地为图形组件（标记 ❶）指定拖放行为：
 
 ```javascript
-var libellePrenom = new rialto.widget.Label("libellePrenom", // ❶ ❷
+var libellePrenom = new `rialto.widget.Label`("libellePrenom", // ❶ ❷
 "Mot de passe", "libelle1");
 
-rialto.widgetBehavior.affect(libellePrenom.divExt, "DragAndDrop", {
+`rialto.widgetBehavior.affect`(libellePrenom.divExt, "DragAndDrop", {
   oHtmlToMove: libellePrenom.divExt, // ❸
   oHtmlEvtTarget: libellePrenom.divExt // ❹
 });
@@ -14882,19 +13958,19 @@ rialto.widgetBehavior.affect(libellePrenom.divExt, "DragAndDrop", {
 后续代码通过标签（标记 ❶）和输入框（标记 ❷）实现了这一机制，以便实现从第一个（Missile 行为，标记 ❸）到第二个（Target 行为，标记 ❹）的拖放：
 
 ```javascript
-var libelleNom = new rialto.widget.Label("libelleNom", // ❶ ❷
+var libelleNom = new `rialto.widget.Label`("libelleNom", // ❶ ❷
 "Nom", "libelle1");
 
-var nom = new rialto.widget.Text("textNom", 10, 120, 100, "A", cadre,
+var nom = new `rialto.widget.Text`("textNom", 10, 120, 100, "A", cadre,
   { autoUp:false, isRequired:false, disable:false,
   rows:5, accessKey:"", tabIndex:"", initValue:""});
 
-rialto.widgetBehavior.affect(libelleNom.divExt, "Missile", { // ❸
+`rialto.widgetBehavior.affect`(libelleNom.divExt, "Missile", { // ❸
   oHtmlToMove: libelleNom.divExt,
   oHtmlEvtTarget: libelleNom.divExt
 });
 
-rialto.widgetBehavior.affect(nom.divExt, "Target", {}); // ❹
+`rialto.widgetBehavior.affect`(nom.divExt, "Target", {}); // ❹
 ```
 
 在 `affect` 方法期间，`desaffect` 方法允许从元素移除行为。
@@ -14907,32 +13983,22 @@ rialto.widgetBehavior.affect(nom.divExt, "Target", {}); // ❹
 
 名为 Rialto Studio，它提供具有三个标签页的界面：Design、Tree 和 Source：
 
-
-
-
-
 • Design fournit une palette de composants graphiques qui peuvent être disposés sur l’interface graphique en construction simplement par glisser-déposer.
-
-![](img/index-408_1.jpg)
-
-# La bibliothèque rialto
-
-## CHAPITRE 12
 
 • `Tree` permet d’afficher la hiérarchie des composants graphiques utilisés dans l’interface graphique. Les différentes propriétés des composants sont accessibles en cliquant dans l’arborescence, et leur modification impacte automatiquement l’interface graphique. La figure 12.16 illustre l’onglet de navigation des éléments de l’interface graphique créée.
 
 **Figure 12.16**
-*Onglet de navigation des éléments de l’interface graphique en construction*
+Onglet de navigation des éléments de l’interface graphique en construction
 
 • `Source` contient les sources de l’interface graphique construite avec l’outil, sachant plusieurs formats sont disponibles, dont le format `JavaScript`.
 
 Certaines fonctionnalités, telles que l’ouverture d’un fichier source ou la sauvegarde dans un fichier de l’interface graphique construite, ne sont disponibles que lorsque l’outil est utilisé d’une manière locale.
 
-Une démonstration au format Flash de cet outil est disponible sur le site du projet `rialto`, à l’adresse [`http://rialto.application-servers.com/wiki/rialtostudio:video`](http://rialto.application-servers.com/wiki/rialtostudio:video) tandis qu’une version en ligne est utilisable à l’adresse [`http://rialto.application-servers.com/rialto/rialtoStudio/`](http://rialto.application-servers.com/rialto/rialtoStudio/).
+Une démonstration au format Flash de cet outil est disponible sur le site du projet `rialto`, à l’adresse [`http://rialto.application-servers.com/wiki/rialtostudio:video`](http://rialto.application-servers.com/wiki/rialtostudio:video) 而 une version en ligne est utilisable à l’adresse [`http://rialto.application-servers.com/rialto/rialtoStudio/`](http://rialto.application-servers.com/rialto/rialtoStudio/)。
 
-# Bibliothèques JavaScript graphiques 
+# 图形 JavaScript 库
 
-## Conclusion
+## 结论
 
 La bibliothèque `rialto` offre d’intéressants mécanismes afin de mettre en œuvre des applications de gestion aux interfaces Web riches. La bibliothèque propose ainsi une importante collection de composants graphiques permettant de créer des formulaires et de les positionner sur l’interface graphique. Des composants plus complexes sont également fournis afin de créer des arbres et des tableaux.
 
@@ -14940,64 +14006,62 @@ La plupart de ces composants possèdent un ensemble de fonctionnalités très ri
 
 Cette bibliothèque facilite l’utilisation des techniques `Ajax` afin de soumettre les données de formulaires. Ces techniques sont complètement masquées par le composant de formulaire, mais elles restent néanmoins utilisables directement si nécessaire.
 
-# Partie V : Utilisation de services externes
+# 第五部分：使用外部服务
 
-Après avoir décrit la façon de structurer ses applications `JavaScript` avec des bibliothèques telles que `dojo` ou `rialto`, nous allons voir qu’une application `JavaScript` peut intégrer et interagir avec un outil ou un service externe en se fondant sur une API `JavaScript` ou les techniques d'Ajax`.
+Après avoir décrit la façon de structurer ses applications `JavaScript` avec des bibliothèques telles que `dojo` ou `rialto`, nous allons voir qu’une application `JavaScript` peut intégrer et interagir avec un outil ou un service externe en se fondant sur une API `JavaScript` ou les techniques d'Ajax。
 
 Le chapitre 13 décrit la façon d’utiliser des API `JavaScript` externes. Après avoir présenté les mécanismes de fonctionnement de `Google Maps`, nous détaillons l’utilisation des API fournies par cet outil de cartographie dans des applications `JavaScript`.
 
 Le chapitre 14 se penche sur l’utilisation de services externes accessibles par l’intermédiaire de l’architecture `REST`. Les services fournis par `Yahoo!` et `Amazon` sont utilisés à titre d’exemple.
 
-## CHAPITRE 13 : Google Maps
+## 第 13 章：Google Maps
 
-Développé par `Google`, société emblématique du Web 2.0, l’outil `Google Maps` permet d’implémenter des fonctionnalités de cartographie dans une application `JavaScript`. Cette intégration est très poussée, et l’application et l’outil peuvent interagir de manière très fine en se fondant sur des événements.
+Développé par `Google`，société emblématique du Web 2.0，l’outil `Google Maps` permet d’implémenter des fonctionnalités de cartographie dans une application `JavaScript`。Cette intégration est très poussée，et l’application et l’outil peuvent interagir de manière très fine en se fondant sur des événements。
 
-`Google Maps` a réussi la gageure d’offrir des fonctionnalités évolues tout en gardant une API de programmation simple, avec, de surcroît, la possibilité de l’étendre.
+`Google Maps` a réussi la gageure d’offrir des fonctionnalités évoluées tout en gardant une API de programmation simple，avec，de surcroît，la possibilité de l’étendre。
 
 ### Description et fonctionnement
 
-Avant d’aborder la mise en œuvre de `Google Maps`, nous allons décrire le fonctionnement de cet outil fondé sur un service cartographique de `Google`, accédé par l’intermédiaire d’une API `JavaScript` fournie librement par cette société.
+Avant d’aborder la mise en œuvre de `Google Maps`，nous allons décrire le fonctionnement de cet outil fondé sur un service cartographique de `Google`，accédé par l’intermédiaire d’une API `JavaScript` fournie librement par cette société。
 
-Les cartes sont décomposées en éléments unitaires désés par le terme `tile`. L’API `JavaScript` de `Google Maps` construit la carte en se fondant sur ces éléments, accessibles depuis des serveurs de `Google`. L’image visible de la carte correspond à un assemblage de différents éléments calculés par un serveur de cartographie.
+Les cartes sont décomposées en éléments unitaires désignés par le terme `tile`。L’API `JavaScript` de `Google Maps` construit la carte en se fondant sur ces éléments，accessibles depuis des serveurs de `Google`。L’image visible de la carte correspond à un assemblage de différents éléments calculés par un serveur de cartographie。
 
-La figure 13.1 illustre ce principe.
+La figure 13.1 illustre ce principe。
 
-L’outil offre la possibilité d’enrichir les cartes avec différents éléments graphiques afin de fournir des informations relatives à une localisation ou de signaler une localisation particulière. Dans ce cas, l’API `JavaScript` de `Google Maps` assemble des images avec le fond de carte de façon à afficher la carte enrichie.
+L’outil offre la possibilité d’enrichir les cartes avec différents éléments graphiques afin de fournir des informations relatives à une localisation ou de signaler une localisation particulière。Dans ce cas，l’API `JavaScript` de `Google Maps` assemble des images avec le fond de carte de façon à afficher la carte enrichie。
 
-La figure 13.2 illustre ce mécanisme.
+La figure 13.2 illustre ce mécanisme。
 
-`Google` met en outre à disposition un service structuré en différents éléments afin de répondre aux requêtes cartographiques.
+`Google` met en outre à disposition un service structuré en différents éléments afin de répondre aux requêtes cartographiques。
 
-![](img/index-413_1.jpg)
+La figure 13.3 les constituants de ce service。
+API `JavaScript` `Google Maps` : **Satellite**、**Carte**、Serveurs de portions、Serveurs de calcul d’images de carte。
 
 **Figure 13.1**
-*Construction de la carte affichée*
+Construction de la carte affichée
 Portions de carte - **Zone affichée**
 
 **Figure 13.2**
-*Assemblage de composants d’affichage*
-
-La figure 13.3 les constituants de ce service.
-API `JavaScript` `Google Maps` : **Satellite**, **Carte**, Serveurs de portions, Serveurs de calcul d’images de carte.
+Assemblage de composants d’affichage
 
 **Figure 13.3**
-*Constituants du service cartographique*
+Constituants du service cartographique
 
-## Mise en œuvre
+### Mise en œuvre
 
-L’API `JavaScript` fournie par `Google Maps` s’appuie sur différentes classes, que nous allons décrire tout long de cette section. Ces classes permettent d’intégrer des cartes évoluées dans des applications `JavaScript`.
+L’API `JavaScript` fournie par `Google Maps` s’appuie sur différentes classes，que nous allons décrire tout au long de cette section。Ces classes permettent d’intégrer des cartes évoluées dans des applications `JavaScript`。
 
-Nous détaillerons en outre la façon d’installer l’outil dans une page Web de l’utiliser et montrerons comment enrichir les cartes en leur ajoutant diverses informations.
+Nous détaillerons en outre la façon d’installer l’outil dans une page Web de l’utiliser et montrerons comment enrichir les cartes en leur ajoutant diverses informations。
 
-Nous indiquerons enfin les façons de faire interagir l’application avec les cartes afin de réagir à des actions de l’utilisateur.
+Nous indiquerons enfin les façons de faire interagir l’application avec les cartes afin de réagir à des actions de l’utilisateur。
 
-### Installation
+#### Installation
 
-Avant tout chose, une clé gratuite doit être obtenue à partir de l’adresse [`http://www.google.com/apis/maps/signup.html`](http://www.google.com/apis/maps/signup.html) afin de pouvoir utiliser l’outil.
+Avant tout chose，une clé gratuite doit être obtenue à partir de l’adresse [`http://www.google.com/apis/maps/signup.html`](http://www.google.com/apis/maps/signup.html) 以便能够使用该工具。
 
-Une fois la clé obtenue, la page Web doit importer le code `JavaScript` de l’application. L’adresse contenue dans l’attribut `src` doit inclure la clé précédemment récupérée.
+Une fois la clé obtenue，la page Web doit importer le code `JavaScript` de l’application。L’adresse contenue dans l’attribut `src` doit inclure la clé précédemment récupérée。
 
-Comme le montre le code suivant, cette opération est réalisée par l’intermédiaire d’une balise `script` (repère 1) :
+Comme le montre le code suivant，cette opération est réalisée par l’intermédiaire d’une balise `script`（标记 ❶）：
 
 ```html
 <html>
@@ -15009,29 +14073,19 @@ Comme le montre le code suivant, cette opération est réalisée par l’interm�
 </html>
 ```
 
-Comme nous pouvons le constater, l’adresse n’est pas un fichier `JavaScript` statique mais une ressource `JavaScript` calculée dynamiquement en fonction des paramètres suivants :
+Comme nous pouvons le constater，l’adresse n’est pas un fichier `JavaScript` statique mais une ressource `JavaScript` calculée dynamiquement en fonction des paramètres suivants：
 
-- `file` : type de fichier `JavaScript` à retourner. Dans notre cas, il s’agit des API. La valeur de la propriété est donc `api`.
-- `v` : version de l’API `Google Maps` utilisée, actuellement la 2.
-- `key` : clé d’utilisation de l’outil `Google Maps`.
+- `file` : type de fichier `JavaScript` à retourner。Dans notre cas，il s’agit des API。La valeur de la propriété est donc `api`。
+- `v` : version de l’API `Google Maps` utilisée，actuellement la 2。
+- `key` : clé d’utilisation de l’outil `Google Maps`。
 
-Pour pouvoir utiliser des éléments vectoriels tels que les tracés de lignes dans les cartes, il est recommandé d’ajouter l’espace de nommage `VML` ainsi qu’un style `CSS`. Ces ajouts sont indispensables pour le bon fonctionnement de cette fonctionnalité dans Internet Explorer.
-
-
-
-
-
-LivreGougeon 第 398 页 2006 年 11 月 28 日周二 4:23 16
-
-# 外部服务的使用
-
-第五部分
+Pour pouvoir utiliser des éléments vectoriels tels que les tracés de lignes dans les cartes，il est recommandé d’ajouter l’espace de nommage `VML` ainsi qu’un style `CSS`。Ces ajouts sont indispensables pour le bon fonctionnement de cette fonctionnalité dans Internet Explorer。
 
 以下代码展示了命名空间（标记 ❶）和 CSS 样式（标记 ❷）的实现：
 
 ```html
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-["http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml"> <!-- ❶ -->
 <head>
 (...)
@@ -15051,13 +14105,13 @@ Google Maps 支持的浏览器汇总在此地址：`http://local.google.com/supp
 
 如果 Google Maps 的版本经常更新，这不会影响使用其 API 的应用程序代码。
 
-## 基础用法
+#### 基础用法
 
 Google Maps 的核心类是 `GMap2`。它允许在指定的缩放级别将地图定位到某个位置。此外，它提供了许多丰富界面并允许与应用程序交互的方法，正如我们后面将看到的。
 
 表 13.1 汇总了该类中包含的不同方法族。
 
-### 表 13.1 GMap2 类的方法族
+### 表 13.1 `GMap2` 类的方法族
 
 | 方法族 | 描述 |
 | :--- | :--- |
@@ -15069,12 +14123,6 @@ Google Maps 的核心类是 `GMap2`。它允许在指定的缩放级别将地图
 | 信息窗口管理 | 用于管理信息窗口的方法 |
 | 坐标操作 | 用于将坐标转换为不同测量值（像素、经纬度、坐标等）的方法 |
 
-LivreGougeon 第 399 页 2006 年 11 月 28 日周二 4:23 16
-
-# Google Maps
-
-第 13 章
-
 `GMap2` 类的一个实例对应于通过该类的实例化创建的地图。地图必须根据其构造函数的第一个参数挂载到页面上的一个 `div` 标签上。该参数的值对应该标签的 ID。
 
 第二个参数是可选的，允许指定地图选项。
@@ -15082,19 +14130,19 @@ LivreGougeon 第 399 页 2006 年 11 月 28 日周二 4:23 16
 地图一旦创建，就应该通过 `setCenter` 方法将其居中到具有特定缩放级别的位置，如下代码所示：
 
 ```html
-<<html>
+<html>
 <head>
 (...)
 <script langage="text/javascript">
 function initialisationCarte() { <!-- ❶ -->
 var divCarte = document.getElementById("carte");
-var carte = new GMap2(divCarte);
-carte.setCenter(new GLatLng(47.2228, -1.5682), 11);
+var carte = new `GMap2`(divCarte);
+carte.setCenter(new `GLatLng`(47.2228, -1.5682), 11);
 }
 </script>
 </head>
 <body onLoad="initialisationCarte();"> <!-- ❶ -->
-<div id="carte" style="width: 600px; height: 400px"></</div> <!-- ❷ -->
+<div id="carte" style="width: 600px; height: 400px"></div> <!-- ❷ -->
 </body>
 </html>
 ```
@@ -15107,33 +14155,25 @@ carte.setCenter(new GLatLng(47.2228, -1.5682), 11);
 
 ```javascript
 var options = {
-size: new GSize(600, 400),
-mapTypes: [ GMapType.NORMAL_MAP, GMapType.SATELLITE_MAP ]
+  size: new `GSize`(600, 400),
+  mapTypes: [ `GMapType.NORMAL_MAP`, `GMapType.SATELLITE_MAP` ]
 };
-var carte = new GMap2(document.getElementById("carte"), options);
-carte.setCenter(new GLatLng(47.2228, -1.5682), 11);
+var carte = new `GMap2`(document.getElementById("carte"), options);
+carte.setCenter(new `GLatLng`(47.2228, -1.5682), 11);
 ```
 
 图 13.4 展示了该代码在浏览器中显示的地图。
 
-![](img/index-417_1.jpg)
-
-LivreGougeon 第 400 页 2006 年 11 月 28 日周二 4:23 16
-
-# 外部服务的使用
-
-第五部分
-
-图 13.4
-*带有 Google Maps 的简单地图*
+**图 13.4**
+带有 Google Maps 的简单地图
 
 我们将使用不同的元素来增强地图，以实现交互功能。
 
-## 界面增强
+#### 界面增强
 
 正如前面提到的，Google Maps 允许通过各种控件来增强地图。
 
-## 导航实体
+##### 导航实体
 
 某些导航工具被称为控件，旨在提供与地图的交互。它们在表 13.2 中汇总。
 
@@ -15141,25 +14181,22 @@ LivreGougeon 第 400 页 2006 年 11 月 28 日周二 4:23 16
 
 | 控件 | 描述 |
 | :--- | :--- |
-| GLargeMapControl | 用于调整缩放的放大控件。 |
-| GMapTypeControl | 用于切换地图类型（平面/卫星等）的控件。 |
-| GOverviewMapControl | 提供缩略图视图。 |
-| GScaleControl | 显示地图比例尺的控件。 |
-| GSmallMarkerControl | 在地图上显示标记的控件。 |
-| GSmallZoomControl | 用于调整缩放的小控件。 |
+| `GLargeMapControl` | 用于调整缩放的放大控件。 |
+| `GMapTypeControl` | 用于切换地图类型（平面/卫星等）的控件。 |
+| `GOverviewMapControl` | 提供缩略图视图。 |
+| `GScaleControl` | 显示地图比例尺的控件。 |
+| `GSmallMarkerControl` | 在地图上显示标记的控件。 |
+| `GSmallZoomControl` | 用于调整缩放的小控件。 |
 
 添加和删除控件元素分别通过 `addControl` 和 `removeControl` 方法实现。这两个方法都接收控件实例作为参数。`addControl` 方法支持一个额外参数来指定控件的位置。如果省略，方法将基于 `GControl.getDefaultPosition()` 返回的值。
 
-
-
-
-Google Maps 提供了定义标记和信息窗口的功能，允许对地图进行注释并并通过补充信息来丰富地图。该工具还允许在地图上绘制轨迹。所有这些元素都扩展了 `GOverlay` 类。元素的添加和删除分别通过 `GMap2` 或 `GMarker` 类的 `addOverlay` 和 `removeOverlay` 方法实现。
+Google Maps 提供了定义标记和信息窗口的功能，允许对地图进行注释并通过补充信息来丰富地图。该工具还允许在地图上绘制轨迹。所有这些元素都扩展了 `GOverlay` 类。元素的添加和删除分别通过 `GMap2` 或 `GMarker` 类的 `addOverlay` 和 `removeOverlay` 方法实现。
 
 `GMarker` 类允许实现标记，以便在地图上图形指示某个位置。该类有一个构造函数，其参数为它指向的坐标以及可选属性。
 
-表格 13.3 汇总了这些不同的属性。
+表 13.3 汇总了这些不同的属性。
 
-### 表格 13.3 `GMarker` 类构造函数的属性
+### 表 13.3 `GMarker` 类构造函数的属性
 
 | 属性 | 类型 | 描述 |
 | :--- | :--- | :--- |
@@ -15174,10 +14211,10 @@ Google Maps 提供了定义标记和信息窗口的功能，允许对地图进�
 
 ```javascript
 var divCarte = document.getElementById("carte");
-var carte = new GMap2(divCarte);
+var carte = new `GMap2`(divCarte);
 (...)
-var point = new GLatLng(47.2228, -1.5682); // ❶
-var marqueur = new GMarker(point,{draggable: true}); // ❷
+var point = new `GLatLng`(47.2228, -1.5682); // ❶
+var marqueur = new `GMarker`(point,{draggable: true}); // ❷
 carte.addOverlay(marqueur);
 ```
 
@@ -15189,29 +14226,27 @@ carte.addOverlay(marqueur);
 
 ```javascript
 // 自定义图标的基础图标
-var iconeBase = new GIcon();
+var iconeBase = new `GIcon`();
 iconeBase.shadow = "http://www.google.com/mapfiles/shadow50.png";
-iconeBase.iconSize = new GSize(50, 70);
-iconeBase.shadowSize = new GSize(37, 34);
-iconeBase.iconAnchor = new GPoint(9, 34);
-iconeBase.infoWindowAnchor = new GPoint(42, 50);
-iconeBase.infoShadowAnchor = new GPoint(18, 25);
-
+iconeBase.iconSize = new `GSize`(50, 70);
+iconeBase.shadowSize = new `GSize`(37, 34);
+iconeBase.iconAnchor = new `GPoint`(9, 34);
+iconeBase.infoWindowAnchor = new `GPoint`(42, 50);
+iconeBase.infoShadowAnchor = new `GPoint`(18, 25);
 // 自定义图标
-var icone = new GIcon(iconeBase);
+var icone = new `GIcon`(iconeBase);
 icone.image = "iconePersonalisee.png";
 icone.shadow = "ombreIconePersonalisee.png";
-icone.shadowSize = new GSize(70, 70);
-
+icone.shadowSize = new `GSize`(70, 70);
 // 使用自定义图标的标记
-var marqueur = new GMarker(carte.getCenter(), icone);
+var marqueur = new `GMarker`(carte.getCenter(), icone);
 ```
 
 ### 使用外部服务
 
-信息窗口可以附加到不同的元素，例如地图本身或标记。Google Maps 提供的各种窗口类型在表格 13.4 中汇总。
+信息窗口可以附加到不同的元素，例如地图本身或标记。Google Maps 提供的各种窗口类型在表 13.4 中汇总。
 
-### 表格 13.4 Google Maps 提供的窗口类型
+### 表 13.4 Google Maps 提供的窗口类型
 
 | 类型 | 描述 |
 | :--- | :--- |
@@ -15224,7 +14259,7 @@ var marqueur = new GMarker(carte.getCenter(), icone);
 
 ```javascript
 var divCarte = document.getElementById("carte");
-var carte = new GMap2(divCarte);
+var carte = new `GMap2`(divCarte);
 (...)
 carte.openInfoWindowHtml(carte.getCenter(), "Une fenêtre d'<b>information</b>");
 ```
@@ -15233,8 +14268,8 @@ carte.openInfoWindowHtml(carte.getCenter(), "Une fenêtre d'<b>information</b>")
 
 ```javascript
 (...)
-var point = new GLatLng(47.2228, -1.5682);
-var marqueur = new GMarker(point,{draggable: true});
+var point = new `GLatLng`(47.2228, -1.5682);
+var marqueur = new `GMarker`(point,{draggable: true});
 carte.addOverlay(marqueur);
 (...)
 marqueur.openInfoWindowHtml("Une fenêtre d'<b>information</b>");
@@ -15246,14 +14281,12 @@ Google Maps 还提供了通过 `GPolyline` 类在地图上绘制点轨迹的功�
 
 ```javascript
 var divCarte = document.getElementById("carte");
-var carte = new GMap2(divCarte);
+var carte = new `GMap2`(divCarte);
 (...)
 var points = [...];
-var trace = new GPolyline(points);
+var trace = new `GPolyline`(points);
 carte.addOverlay(trace);
 ```
-
-
 
 允许将对象的方法注册为 DOM 事件，即该 DOM 事件的观察者实例。该方法返回该观察者及其方法，并返回一个代表已注册观察者的对象。
 
@@ -15269,50 +14302,32 @@ carte.addOverlay(trace);
 ### `trigger`
 源实例和代码允许为特定地图实例触发特定事件，并可选传入额外参数。此方法对于测试使用 Google Maps 的应用程序特别有用。
 
-源实例对应于添加事件观察者的实例。因此，它并不一定对应地图实例，例如，它可以是一个标记（marker）的实例。
+源实例对应于添加事件观察者的实例。因此，它并不一定对应地图实例，例如，它可以是一个标记的实例。
 
 以下代码说明了如何使用 `addListener`、`bind` 和 `removeListener` 方法分别为 `moveend` 事件注册（标记 ❶）和注销观察者（标记 ❷）：
 
-```
+```javascript
 var divCarte = document.getElementById("carte");
-
-var carte = new GMap2(divCarte);
-
+var carte = new `GMap2`(divCarte);
 (...)
-
 // 定义并注册第一个观察者
-
-var observateur1 = GEvent.addListener(carte, "moveend", function() { //¨ ❶
-
+var observateur1 = `GEvent.addListener`(carte, "moveend", function() { // ❶
 (...)
-
 });
-
 // 定义类 GestionnaireCarte
-
 function MonGestionnaireCarte() {
-
 };
-
 MonGestionnaireCarte.prototype.traiterEvenement = function() {
 (...)
-
 };
-
 var gestionnaire = new MonGestionnaireCarte();
-
 // 定义并注册第二个观察者
-var observateur2 = GEvent.bind(carte, "moveend",
-
-MonGestionnaireCarte, gestionnaire.traiterEvenement); //¨ ❶
-
+var observateur2 = `GEvent.bind`(carte, "moveend",
+MonGestionnaireCarte, gestionnaire.traiterEvenement); // ❶
 (...)
-
 // 取消之前注册的观察者
-
-GEvent.removeListener(observateur1); //¨ ❷
-
-GEvent.removeListener(observateur2); //¨ ❷
+`GEvent.removeListener`(observateur1); // ❷
+`GEvent.removeListener`(observateur2); // ❷
 ```
 
 当应用程序用户完成在地图上的移动时，观察者的函数和方法会被调用。
@@ -15346,47 +14361,36 @@ GEvent.removeListener(observateur2); //¨ ❷
 
 事件处理函数或方法的参数根据事件的不同而不同。在之前的示例中，`moveend` 事件要求一个无参数的函数或方法。接下来的示例描述了 `zoomend` 事件观察者的实现：
 
-```
+```javascript
 var divCarte = document.getElementById("carte");
-
-var carte = new GMap2(divCarte);
-
+var carte = new `GMap2`(divCarte);
 (...)
-
 // 定义观察者
-function traitementZoomend(ancienZoom, nouveauZoom) { //¨ ❶
-
+function traitementZoomend(ancienZoom, nouveauZoom) { // ❶
 alert("旧缩放值: "+ ancienZoom);
 alert("新缩放值: "+ nouveauZoom);
 }
-
 // 注册观察者
-GEvent.addListener(carte, "zoomend", traitementClick);
+`GEvent.addListener`(carte, "zoomend", traitementClick);
 ```
 
 观察者函数现在拥有两个参数（标记 ❶），其中第一个对应旧的缩放值，第二个对应新的值。
 
 `click` 事件遵循相同的机制，并允许检测是否在地图或标记上执行了点击操作，如下代码所示：
 
-```
+```javascript
 var divCarte = document.getElementById("carte");
-
-var carte = new GMap2(divCarte);
-
+var carte = new `GMap2`(divCarte);
 (...)
-
 // 添加一个标记
-var point = new GLatLng(47.2228, -1.5682);
-carte.addOverlay(new GMarker(point));
-
+var point = new `GLatLng`(47.2228, -1.5682);
+carte.addOverlay(new `GMarker`(point));
 // 定义并注册观察者
-function traitementClic(marqueur, position) { //¨ ❶
-
+function traitementClic(marqueur, position) { // ❶
 alert("点击了标记: "+ marqueur);
 alert("点击位置: "+ position);
 }
-
-GEvent.addListener(carte, "click");
+`GEvent.addListener`(carte, "click");
 ```
 
 在用户点击标记的情况下，`traitementClic` 函数的参数 `marqueur`（标记 ❶）不为空，且包含被点击标记的实例。该函数的相同参数 `position`（标记 ❶）则为空。
@@ -15396,74 +14400,56 @@ GEvent.addListener(carte, "click");
 **表 13.7 标记支持的事件**
 *(注：原文此处未提供表 13.7 的具体内容，仅有描述性文字)*
 
-
-
-
 通过 `GMap2` 类的 `removeOverlay` 和 `clearOverlays` 方法可以从地图上删除标记。
 
 标记的监听器注册方式与地图相同，通过 `GEvent` 类实现。以下代码实现了对 `click` 和 `mouseover` 事件的监听注册：
 
 ```javascript
 var divCarte = document.getElementById("carte");
-
-var carte = new GMap2(divCarte);
-
+var carte = new `GMap2`(divCarte);
 (...)
-
 // 添加标记
-
-var point = new GLatLng(47.2228, -1.5682);
-
-var marqueur = new GMarker(point)
-
+var point = new `GLatLng`(47.2228, -1.5682);
+var marqueur = new `GMarker`(point)
 carte.addOverlay(marqueur);
-
 // 定义并注册监听器
-GEvent.addListener(marqueur, "dblclick", function() {
+`GEvent.addListener`(marqueur, "dblclick", function() {
   alert("Déclenchement de l’événement dblclick");
 });
-
-GEvent.addListener(marqueur, "mouseover", function() {
+`GEvent.addListener`(marqueur, "mouseover", function() {
   alert("Déclenchement de l’événement mouseover");
 });
 ```
 
 标记可以检测信息窗口关闭对应的事件。该事件通过关闭按钮或调用 `GMap2` 或 `GMarker` 类的 `closeWindowInfo` 方法触发。
 
-## 使用外部服务
+### 使用外部服务
 
 以下代码说明了该机制的实现：
 
 ```javascript
 var divCarte = document.getElementById("carte");
-
-var carte = new GMap2(divCarte);
-
+var carte = new `GMap2`(divCarte);
 (...)
-
 // 添加标记
-var point = new GLatLng(47.2228, -1.5682);
-
-var marqueur = new GMarker(point)
-
+var point = new `GLatLng`(47.2228, -1.5682);
+var marqueur = new `GMarker`(point)
 carte.addOverlay(marqueur);
-
 // 添加信息窗口
 marqueur.openInfoWindowHtml("Une fenetre d'information");
-
 // 定义并注册监听器
-GEvent.addListener(marqueur, "infowindowclose", function() {
+`GEvent.addListener`(marqueur, "infowindowclose", function() {
   alert("Déclenchement de l’événement infowindowclose");
 });
 ```
 
-## 扩展
+#### 扩展
 
 有多种扩展可以丰富 Google Maps 的功能。Make Williams 的网站提供了非详尽的列表，地址为：`http://www.econym.demon.co.uk/googlemaps/extensions.htm`。
 
 在本节中，我们仅详细介绍允许基于透明图像自定义区域形状的扩展。
 
-### EInsert 扩展
+##### EInsert 扩展
 
 Make Williams 为 Google Maps 提供了一个非常有用的扩展，允许在地图上使用自定义形状。其目标是能够将任何图形以透明图像的形式用于地图上。
 
@@ -15482,25 +14468,20 @@ Make Williams 为 Google Maps 提供了一个非常有用的扩展，允许在�
 我们将实现一个用于界定点周围圆形区域的形状。以下代码展示了该功能的实现：
 
 ```javascript
-var carte = new GMap2(document.getElementById("carte"));
-
+var carte = new `GMap2`(document.getElementById("carte"));
 (...)
-
-carte.setCenter(new GLatLng(47.21257, -1.54769), 11);
-
-var centreForme = new GLatLng(47.21257, -1.54769);
+carte.setCenter(new `GLatLng`(47.21257, -1.54769), 11);
+var centreForme = new `GLatLng`(47.21257, -1.54769);
 var imageForme = "circle.png";
-var tailleForme = new GSize(800,800);
+var tailleForme = new `GSize`(800,800);
 var zoomForme = 13;
-
-var zoneCirculaire = new EInsert(centreForme, imageForme, tailleForme, zoomForme);
-
+var zoneCirculaire = new `EInsert`(centreForme, imageForme, tailleForme, zoomForme);
 carte.addOverlay(zoneCirculaire);
 ```
 
 表 13.8 汇总了上述代码中使用的 `EInsert` 类构造函数（标记 ❶）的不同参数。
 
-### 表 13.8 EInsert 类的构造函数参数
+### 表 13.8 `EInsert` 类的构造函数参数
 
 | 参数 | 描述 |
 | :--- | :--- |
@@ -15512,7 +14493,7 @@ carte.addOverlay(zoneCirculaire);
 
 `EInsert` 类提供了 `hide` 和 `show` 方法，分别用于隐藏和显示形状。图 13.7 展示了该扩展的实现。
 
-## dojo 中的 Google Maps 支持
+#### dojo 中的 Google Maps 支持
 
 dojo 库通过图形组件 `dojo.widget.GoogleMap` 提供对 Google Maps 的支持。该库完全隐藏了包含工具接口的 JavaScript 文件链接规范。该组件会自动添加一个 `script` 标签以访问此 API。
 
@@ -15530,7 +14511,7 @@ var djConfig={
 </script>
 <script type="text/javascript" src="../../dojo.js"></script>
 <script type="text/javascript">
-dojo.require("dojo.widget.GoogleMap");
+`dojo.require`("dojo.widget.GoogleMap");
 </script>
 </head>
 (...)
@@ -15546,11 +14527,17 @@ dojo 的 `dojo.widget.GoogleMap` 模块允许在网页中插入地图。它的�
 (...)
 <body>
 (...)
-<div dojoType="googlemap" id="carte" class="carte" controls="smallmap"></div>
-(...)
-</body>
-</html>
 ```
+
+
+
+<div dojoType="googlemap" id="carte" class="carte" controls="smallmap"></div>
+
+(...)
+
+</body>
+
+</html>
 
 该组件提供了通过其 `controls` 属性指定地图不同控制元素的机会。
 
@@ -15568,6 +14555,7 @@ dojo 的 `dojo.widget.GoogleMap` 模块允许在网页中插入地图。它的�
 
 ```html
 <div dojoType="googlemap" id="carte" class="carte" datasrc="mesDonnees"></div>
+
 <table id="mesDonnees">
   <thead>
     <tr>
@@ -15593,9 +14581,6 @@ dojo 的 `dojo.widget.GoogleMap` 模块允许在网页中插入地图。它的�
   </tbody>
 </table>
 ```
-
-
-
 
 表格的标题列允许指定标记（标记 ❷）的经纬度数据在表格中的位置，分别对应 `Long` 和 `Lat` 代码（标记 ❶），以及通过 `Description` 代码（标记 ❸）与之关联的提示气泡文本（标记 ❹）。
 
@@ -15737,9 +14722,6 @@ PositionnerSite.prototype = {
 }
 ```
 
-
-
-
 该类防止在此项功能上使用多个标记。其 `marqueurPosition` 属性可以确保这一点（参考标记 ❶）。如果不存在，则将为当前位置添加标记（参考标记 ❷）。
 
 `draggable` 属性允许通过拖放进行移动。点击标记可以将其删除（参考标记 ❸）。
@@ -15750,13 +14732,9 @@ PositionnerSite.prototype = {
 
 ```javascript
 var carte = new GMap2(document.getElementById("carte"));
-
 (...)
-
 var site = (...)
-
 var positionnement = new PositionnerSite(map,site);
-
 GEvent.bind(map, "click", positionnement, positionnement.positionnerSite);
 ```
 
@@ -15815,60 +14793,18 @@ Yahoo! 提供的主要服务是使用 Yahoo! 搜索引擎进行互联网搜索�
 | appid | 字符串 | 对应使用服务的应用程序的标识符。此参数是必选的。 |
 | callback | 字符串 | 指定用于传递数据的回调函数名称。 |
 | country | ISO 代码 | 指定搜索页面的所在国家。空值（默认）允许所有国家。否则，必须使用国家 ISO 代码，如法语使用 fr。 |
-
-
-
-
-
-### type
-指定对应搜索的文件类型。默认情况下，考虑所有类型（值为 `any`）。可以指定的文件类型：`msword` (Microsoft Word)、`pdf`、`ppt` (Microsoft PowerPoint)、`rss` (分发文件)、`txt` (文本文件) 和 `xls` (Microsoft Excel)。
-
-### language
-ISO 代码
-指定结果对应的语言。不提供值（默认）允许所有语言。否则，必须使用语言 ISO 代码，例如代表法语的 `fr`。
-
-### license
--
-指定所搜索内容的一个或多个 Creative Commons 许可协议。可能的值有 `any`、`cc_any`、`cc_commercial` 或 `cc_modifiable`。
-
-### output
-字符串
-指定期望的数据返回格式。默认值为 `xml`（即 `xml` 格式）。支持通过值 `json` 使用 `JSON` 格式。
-
-### query
-字符串
-指定搜索字符串。该字符串必须使用 UTF-8 编码。
-
-### region
-ISO 代码
-指定要使用的区域搜索引擎。对于法国，必须使用 `fr`（引擎 `http://fr.search.yahoo.com/`）。默认值为 `us`。
-
-### results
-整数
-指定要返回的结果数量。
-
-### similar_ok
--
-指定结果中是否允许包含相似的内容。不提供值（默认值）禁止，而值 `1` 则允许。
-
-### site
-字符串
-指定搜索页面的域名。不提供值（默认）不限制搜索。可以通过 `&` 字符连接域名来指定多个域名。
-
-### start
-整数
-指定数据中的起始位置。
-
-### subscription
-值
-指定搜索是否针对特定的内容源，例如*华尔街日报*源 (`wsj`)。这些源完整列表可以在 `http://developer.yahoo.com/search/subscriptions.html` 获取。
-
-### type
-值列表
-指定要提交的搜索类型：
-- `all`，用于匹配所有搜索词的结果；
-- `any`，用于匹配至少一个词的结果；
-- `phrase`，用于包含完整短语的结果。
+| type | - | 指定对应搜索的文件类型。默认情况下，考虑所有类型（值为 `any`）。可以指定的文件类型：`msword` (Microsoft Word)、`pdf`、`ppt` (Microsoft PowerPoint)、`rss` (分发文件)、`txt` (文本文件) 和 `xls` (Microsoft Excel)。 |
+| language | ISO 代码 | 指定结果对应的语言。不提供值（默认）允许所有语言。否则，必须使用语言 ISO 代码，例如代表法语的 `fr`。 |
+| license | - | 指定所搜索内容的一个或多个 Creative Commons 许可协议。可能的值有 `any`、`cc_any`、`cc_commercial` 或 `cc_modifiable`。 |
+| output | 字符串 | 指定期望的数据返回格式。默认值为 `xml`（即 `xml` 格式）。支持通过值 `json` 使用 `JSON` 格式。 |
+| query | 字符串 | 指定搜索字符串。该字符串必须使用 UTF-8 编码。 |
+| region | ISO 代码 | 指定要使用的区域搜索引擎。对于法国，必须使用 `fr`（引擎 `http://fr.search.yahoo.com/`）。默认值为 `us`。 |
+| results | 整数 | 指定要返回的结果数量。 |
+| similar_ok | - | 指定结果中是否允许包含相似的内容。不提供值（默认值）禁止，而值 `1` 则允许。 |
+| site | 字符串 | 指定搜索页面的域名。不提供值（默认）不限制搜索。可以通过 `&` 字符连接域名来指定多个域名。 |
+| start | 整数 | 指定数据中的起始位置。 |
+| subscription | 值 | 指定搜索是否针对特定的内容源，例如*华尔街日报*源 (`wsj`)。这些源完整列表可以在 `http://developer.yahoo.com/search/subscriptions.html` 获取。 |
+| type | 值列表 | 指定要提交的搜索类型：`all`，用于匹配所有搜索词的结果；`any`，用于匹配至少一个词的结果；`phrase`，用于包含完整短语的结果。 |
 
 下链接允许在 Yahoo! 搜索引擎中搜索单词“JavaScript”并显示其前两个结果：
 `http://api.search.yahoo.com/WebSearchService/V1/webSearch?appid=YahooDemo&query=JavaS-cript&results=2`
@@ -15877,9 +14813,9 @@ ISO 代码
 
 该服务可以通过 `Result` 标签定义的块返回多个元素。表 14.3 汇总了这些元素中包含的不同字段。
 
-** 表 14.3 搜索服务返回的字段**
+**表 14.3 搜索服务返回的字段**
 
-| 属性 |  |
+| 属性 | 描述 |
 | :--- | :--- |
 | Cache | 对应缓存结果的地址。 |
 | ClickUrl | 如果通过搜索结果列表中的链接访问页面则使用的地址。它允许 Yahoo! 优化其搜索服务。 |
@@ -15978,10 +14914,6 @@ ISO 代码
   }
 }
 ```
-
-
-
-
 
 `search/audio/V1/albumSearch.html`。它描述了各种可用的参数以及响应中包含的数据结构。
 
@@ -16107,16 +15039,10 @@ firstResultPosition="1">
 
 **图 14.1** 调用 Yahoo! 服务的实现机制
 
-
-
-
-
 ```javascript
 alert(result["id"]+": "+result["Title"]);
 }
-
 var adresse = ["http://api.search.yahoo.com/AudioSearchService/V1/albumSearch"];
-
 var parametres = {
   appid: "YahooDemo",
   artistid: "XXXXXXP000064565",
@@ -16124,7 +15050,6 @@ var parametres = {
   output: "json",
   results: "2"
 };
-
 executerRequete(adresse, parametres, "fonctionDeRappel");
 ```
 
@@ -16223,7 +15148,7 @@ Amazon 提供的唯一服务是 `ECS`（电子商务服务），它允许访问 
 | ItemSearch | 允许根据不同的标准进行产品搜索。 |
 | SellerLookup | 允许获取与卖家相关的信息。 |
 
-该服务的文档可以通过地址访问：`http://docs.amazonwebservices.com/AWSEcommerceService/2005-03-23/index.html`
+该服务的文档可以通过地址访问：`http://docs.amazonwebservices.com/AWSECommerceService/2005-03-23/index.html`
 
 为了使用该服务的不同操作，需要在 Amazon 的地址 `http://www.amazon.com/gp/aws/registration/registration-form.html` 进行注册。随后会在账户 `http://aws-portal.amazon.com/gp/aws/developer/account/index.html?action=access-key` 提供访问密钥。在调用提供的不同操作时，必须指定此密钥。
 
@@ -16247,15 +15172,12 @@ Amazon 服务提供了适用于所有操作的不同参数组：
 | Service | 指定使用的服务名称。在本例中必须始终使用 `AWSECommerceService`。 |
 | SubscriptionId | 指定服务用户的订阅标识符。 |
 
+### 表格 14.9 ECS 服务通用参数
 
-
-
-
-指定与应用程序相关的标识符。此参数允许确定应用程序相对于 Amazon 服务生成的数据流。
-
-`ResponseGroup`
-
-指定操作返回的数据。此参数允许详细控制操作响应的量和内容。
+| 参数 | 描述 |
+| :--- | :--- |
+| AssociateTag | 指定与应用程序相关的标识符。此参数允许确定应用程序相对于 Amazon 服务生成的数据流。 |
+| ResponseGroup | 指定操作返回的数据。此参数允许详细控制操作响应的量和内容。 |
 
 ### 表格 14.10 ECS 服务的 XSL 参数
 
@@ -16289,8 +15211,6 @@ Amazon 服务的每个操作除了上一节描述的通用参数外，都 own �
 ECS 服务操作返回的数据结构化处理特别适用于 `ItemSearch` 和 `ItemLookup` 操作。
 
 这些数据通过 XML 进行结构化处理。响应的基础标签是 `ItemSearchResponse`，它包含了与已执行的操作有关（子标签 `OperationRequest`）以及结果的信息（子标签 `Items`）。
-
-LivreGougeon 第 433 页 2006 年 11 月 28 日 星期二 4:23 16
 
 在下面的代码示例中，`OperationRequest` 标签（标记 ❶）包含了为操作指定的所有参数（标记 ❷）以及技术信息（标记 ❸），例如请求的执行时间：
 
@@ -16338,13 +15258,7 @@ LivreGougeon 第 433 页 2006 年 11 月 28 日 星期二 4:23 16
 </ItemSearchResponse>
 ```
 
-LivreGougeon 第 434 页 2006 年 11 月 28 日 星期二 4:23 16
-
 ### 外部服务的使用
-
-在下面的代码示例中，`OperationRequest` 标签（标记 ❶）包含了为操作指定的所有参数（标记 ❷）以及技术信息（标记 ❸），例如请求的执行时间。
-
-在下一个示例中，`Items` 标签（标记 ❶）包含了所有的查询结果，并整合了有关请求参数（标记 ❷ 的子标签 `Request`）、结果数量（标记 ❸ 的子标签 `TotalResults`）、结果页数（标记 ❹ 的子标签 `TotalPages`）以及结果元素本身（标记 ❺ 的子标签 `Item`）的信息。
 
 ECS 服务操作返回的数据结构化处理特别适用于 `ItemSearch` 和 `ItemLookup` 操作。
 
@@ -16384,9 +15298,6 @@ ECS 服务操作返回的数据结构化处理特别适用于 `ItemSearch` 和 `
 | `SalesRank` | 产品在 Amazon 销售中的排名。 |
 | `SmallImage` | 有关产品小图片的信息。 |
 
-
-
-
 对于书籍，`ItemAttributes` 和 `OfferSummary` 块包含了产品的基础信息。以下代码给了一个书籍的数据示例：
 
 ```xml
@@ -16421,10 +15332,6 @@ ECS 服务操作返回的数据结构化处理特别适用于 `ItemSearch` 和 `
         <PublicationDate>2006-04-28</PublicationDate>
         <Publisher>Eyrolles</Publisher>
         <Studio>Eyrolles</Studio>
-        LivreGougeon Page 436 Mardi, 28\. novembre 2006 4:23 16
-        Utilisation de services externes
-        436
-        PARTIE V
         <Title>
           Spring par la pratique : Mieux développer ses
           applications Java/J2EE avec Spring, Hibernate,
@@ -16466,19 +15373,7 @@ ECS 服务提供了指定样式表地址的功能，该样式表将在数据返�
 
 图 14.2 展示了根据这种方法调用 Amazon 服务的实现机制。
 
-LivreGougeon Page 437 Mardi, 28\. novembre 2006 4:23 16
-**Yahoo! 和 Amazon 提供的服务**
-**437**
-*第 14 章*
-
-**HTML 页面**
-**Amazon 服务**
-基于动态添加 script 标签执行 Ajax 请求服务调用
-操作 执行回调函数 回调处理返回的 JSON 数据的回调函数
-以 JSON 格式返回的数据
-XSL 样式表
-**图 14.2**
-*调用 Amazon 服务的实现机制*
+**图 14.2** 调用 Amazon 服务的实现机制
 
 用于此目的样式表名为 `itemSearchJSON.xsl`，其描述如下所示：
 
@@ -16500,10 +15395,6 @@ XSL 样式表
     <xsl:value-of select="aws:TotalResults"/>
     <xsl:text>, </xsl:text>
     <xsl:text>"TotalPages": </xsl:text>
-    LivreGougeon Page 438 Mardi, 28\. novembre 2006 4:23 16
-    Utilisation de services externes
-    **438**
-    *PARTIE V*
     <xsl:value-of select="aws:TotalPages"/>
     <xsl:text>, </xsl:text>
     <xsl:text>"Items": [ </xsl:text>
@@ -16535,7 +15426,7 @@ XSL 样式表
   </xsl:template>
   <!-- ItemAttributes 标签处理 -->
   <xsl:template match="aws:ItemAttributes"> ❹
-    <xsl:text>{ "Author": [xsl:text>
+    <xsl:text>{ "Author": [</xsl:text>
     <xsl:for-each select="aws:Author">
       "<xsl:value-of select="."/>"
       <xsl:if test="position() != last()">
@@ -16560,7 +15451,6 @@ function fonctionDeRappel(donnees) {
     alert(attributs["ISBN"]+": "+attributs["Title"]);
   }
 }
-```
 
 var adresse = "http://webservices.amazon.fr/onca/xml";
 var parametres = {
@@ -16573,12 +15463,8 @@ var parametres = {
   Style: "http://wwwweb2.sourceforge.net/xsl/itemSearchJSON.xsl",
   ContentType: "text/javascript"
 };
-
 executerRequete(adresse, parametres, "fonctionDeRappel");
 ```
-
-
-
 
 在关于 Yahoo! 章节章节，我们讨论了 `dojo.rpc.YahooService` 模块的使用。为了访问 Amazon 服务，可以直接使用 `dojo` 库提供的 Ajax 支持来与服务进行交互。
 
@@ -16668,20 +15554,13 @@ dojo.io.bind(parametres);
 
 为了使用其服务器和 Ant 任务，该工具需要版本高于或等于 1.4 的 Java 虚拟机。
 
+### 版本与操作系统
 
-
-
-
-# 版本与操作系统
-
-Internet Explorer
-版本 5.5+，适用于 Windows NT, 2000, XP, MacOS 9 和 MacOS X
-
-Konqueror
-基于 KDE 3.0.1 (Linux) 版本 5+
-
-Mozilla
-所有操作系统上的版本 0.9.4+（包括所有基于 Gecko 的浏览器，如 Firefox 0.9+ 和 Netscape 6.2.3+）
+| 浏览器 | 版本与操作系统 |
+| :--- | :--- |
+| Internet Explorer | 版本 5.5+，适用于 Windows NT, 2000, XP, MacOS 9 和 MacOS X |
+| Konqueror | 基于 KDE 3.0.1 (Linux) 版本 5+ |
+| Mozilla | 所有操作系统上的版本 0.9.4+（包括所有基于 Gecko 的浏览器，如 Firefox 0.9+ 和 Netscape 6.2.3+） |
 
 ## 测试用例
 
@@ -16716,20 +15595,16 @@ StringBuffer.prototype.toString = function() {
 ```html
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
 "http://www.w3.org/TR/html4/loose.dtd">
-<html
+<html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Tests JsUnit: StringBuffer</title>
 <link rel="stylesheet" type="text/css" href="css/jsUnitStyle.css"/>
-<script language="JavaScript" type="text/javascript" src="app/jsUnitCore.js"/>
+<script language="JavaScript" type="text/javascript" src="app/jsUnitCore.js"></script>
 <script language="JavaScript" type="text/javascript">
 (...)
 </script>
 </head>
-LivreGougeon Page 446 Mardi, 28\. novembre 2006 4:23 16
-Outils annexes
-446
-PARTIE VI
 <body>
 <h1>Tests JsUnit: StringBuffer</h1>
 <p>Cette page contient les tests relatifs à la classe StringBuffer.</p>
@@ -16741,47 +15616,13 @@ PARTIE VI
 
 以下代码说明了验证 `StringBuffer` 类 `append` 和 `toString` 方法正常运行的测试实现：
 
-```html
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
-"http://www.w3.org/TR/html4/loose.dtd">
-<html
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Tests JsUnit: StringBuffer</title>
-<link rel="stylesheet" type="text/css" href="css/jsUnitStyle.css"/>
-<script language="JavaScript" type="text/javascript" src="app/jsUnitCore.js"/>
-<script language="JavaScript" type="text/javascript" src="StringBuffer.js"/>
-<script language="JavaScript" type="text/javascript">
-function testAppend() {
-  var sb = new StringBuffer();
-  sb.append("param1");
-  sb.append(" - ");
-  sb.append("param2");
-  assertEquals(sb.chainesInternes.length,3);
-  assertEquals(sb.chainesInternes[0],"param1");
-  assertEquals(sb.chainesInternes[1]," - ");
-  assertEquals(sb.chainesInternes[2],"param2");
-}
 
-function testToString() {
-  var sb = new StringBuffer();
-  sb.append("param1");
-  sb.append(" - ");
-  sb.append("param2");
-  assertEquals(sb.toString(),"param1 – param2");
-}
-</script>
-</head>
-<body>
-<h1>Tests JsUnit: StringBuffer</h1>
-<p>Cette page contient les tests relatifs à la classe StringBuffer.</p>
-</body>
-</html>
-LivreGougeon Page 447 Mardi, 28\. novembre 2006 4:23 16
-Tests d’applications JavaScript
-447
-CHAPITRE 15
-```
+
+# JavaScript 应用测试
+
+## 第 15 章
+
+### JsUnit 简介
 
 JsUnit 还提供了显式定义测试函数的功能。工具为此提供了 `exposeTestFunctionNames` 函数，它返回这些函数名称的列表。默认情况下，它的实现返回页面中以 `test` 开头的函数列表。
 
@@ -16790,7 +15631,7 @@ JsUnit 还提供了显式定义测试函数的功能。工具为此提供了 `ex
 ```html
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
 "http://www.w3.org/TR/html4/loose.dtd">
-<html
+<html>
 <head>
 (...)
 <script language="JavaScript" type="text/javascript">
@@ -16808,6 +15649,7 @@ function exposeTestFunctionNames() {
 ```
 
 接下来我们将详细介绍如何验证测试是否通过。在上面的示例中，当满足以下条件时测试是有效的：
+
 - 如果实例 `sb` 的 `append` 方法将传递的参数字符串添加到其内部字符串数组的末尾。
 - 如果实例 `sb` 的 `toString` 方法返回一个由内部数组中的字符串拼接而成的字符串。
 
@@ -16828,7 +15670,7 @@ function exposeTestFunctionNames() {
 ```html
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
 "http://www.w3.org/TR/html4/loose.dtd">
-<html
+<html>
 <head>
 (...)
 <script language="JavaScript" type="text/javascript">
@@ -16843,17 +15685,17 @@ function testAppend() {
   sb.append("param1");
   sb.append(" - ");
   sb.append("param2");
-  assertEquals(sb.chainesInternes.length,3);
-  assertEquals(sb.chainesInternes[0],"param1");
-  assertEquals(sb.chainesInternes[1]," - ");
-  assertEquals(sb.chainesInternes[2],"param2");
+  assertEquals(sb.chainesInternes.length, 3);
+  assertEquals(sb.chainesInternes[0], "param1");
+  assertEquals(sb.chainesInternes[1], " - ");
+  assertEquals(sb.chainesInternes[2], "param2");
 }
 
 function testToString() {
   sb.append("param1");
   sb.append(" - ");
   sb.append("param2");
-  assertEquals(sb.toString(),"param1 – param2");
+  assertEquals(sb.toString(), "param1 – param2");
 }
 </script>
 </head>
@@ -16864,32 +15706,28 @@ function testToString() {
 </html>
 ```
 
-
-
-
-
 JsUnit 此外定义了 `setUpPage` 函数，它在测试页面加载时且测试执行之前被调用。当该函数的处理完成且全局变量 `setUpPageStatus` 的值等于 `complete` 时，测试开始执行。
 
-以下代码说明了在上述示例如何 much 该函数：
+以下代码说明了在上述示例如何使用该函数：
 
 ```html
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
-["http://www.w3.org/TR/html4/loose.dtd">>
+"http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
 (...)
 <script language="JavaScript" type="text/javascript">
 var sb = null;
 function setUpPage() {
-sb = new StringBuffer();
-setUpPageStatus = "complete";
+  sb = new StringBuffer();
+  setUpPageStatus = "complete";
 }
 function setUp() {
-sb.clear();
+  sb.clear();
 }
 function tearDown() {
 }
-//之前的代码方法保持不变
+// 之前的代码方法保持不变
 (...)
 </script>
 </head>
@@ -16897,7 +15735,7 @@ function tearDown() {
 </html>
 ```
 
-## 断言与失败
+### 断言与失败
 
 在 xUnit 家族工具中，断言（assertions）允许指定字段或函数返回预期值。如果实际值与预期值不符，则会抛出一个错误。此时，测试函数的执行将被中断，该测试被视为失败。
 
@@ -16906,13 +15744,13 @@ function tearDown() {
 根据操作元素的类型，可以区分若干类函数。
 
 首先，JsUnit 定义了针对原始数据类型的断言函数：
-`function assert(obtenu)` // 等于 `assertTrue`
 
 ```javascript
+function assert(obtenu) // 等于 assertTrue
 function assertTrue(obtenu)
 function assertFalse(obtenu)
-function assertEquals(attendu,obtenu)
-function assertNotEquals(attendu,obtenu)
+function assertEquals(attendu, obtenu)
+function assertNotEquals(attendu, obtenu)
 ```
 
 前三个函数检查参数中的值或表达式是否等于 `true` 或 `false`。接下来的两个函数作用于原始类型以检查它们的相等性。最后两个函数均不允许用于操作 JavaScript 对象。
@@ -16920,19 +15758,19 @@ function assertNotEquals(attendu,obtenu)
 为了实现这一点，应使用以下函数：
 
 ```javascript
-function assertObjectEquals(objetAttendu,objetObtenu)
-function assertArrayEquals(objetAttendu,objetObtenu)
-// 等于 assertObjectEquals
+function assertObjectEquals(objetAttendu, objetObtenu)
+function assertArrayEquals(objetAttendu, objetObtenu) // 等于 assertObjectEquals
 ```
 
 另一种类型的函数允许检查变量的有效性或非空性：
+
 ```javascript
-function assertNull(attendu);
-function assertNotNull(attendu);
-function assertUndefined(attendu);
-function assertNotUndefined(attendu);
-function assertNaN(attendu);
-function assertNotNaN(attendu);
+function assertNull(attendu)
+function assertNotNull(attendu)
+function assertUndefined(attendu)
+function assertNotUndefined(attendu)
+function assertNaN(attendu)
+function assertNotNaN(attendu)
 ```
 
 注意这些用于测试变量是否在 JavaScript 意义上未定义（`undefined`）以及数字是否无效（`NaN`，例如除以 0 的结果）的函数。
@@ -16952,21 +15790,21 @@ assertEquals("La valeur de la variable ne correspond pas", "valeur attendue", ma
 
 ```javascript
 try {
-var monInstance = (...);
-monInstance.execute();
-fail("Une exception doit être levée");
+  var monInstance = (...);
+  monInstance.execute();
+  fail("Une exception doit être levée");
 } catch(err) {
-(...)
+  (...)
 }
 ```
 
-## 测试用例集
+### 测试用例集
 
 为了能够连续执行多个测试，xUnit 家族工具定义了测试用例集（suite de tests）的概念。由于测试用例集本身也是测试，因此可以通过不同的启动器进行执行。这种技术允许轻松地自动执行一组测试的执行。
 
 JsUnit 为此实现了 `jsUnitTestSuite` 类。请注意，该类需要包含 JavaScript 文件 `jsUnitCore.js`，该文件位于工具包的 `app/` 目录下。
 
-### addTest 方法
+#### addTest 方法
 
 `addTest` 方法允许根据地址将测试 HTML 文件添加到测试用例集中。随后，该文件中被识别为测试函数的所有函数都将执行执行。
 
@@ -16979,7 +15817,7 @@ myTestSuite.addTestPage("tests/jsUnitAssertionTests.html");
 
 注意，此代码中的 `jsUnitTestSuite` 类带有关键字 `top` 前缀。该关键字用于解析在 `jsUnitTestSuite.js` 文件中定义的类名，该文件被导入到 `testRunner.html` 中，而不是测试 HTML 文件中。
 
-### addTestSuite 方法
+#### addTestSuite 方法
 
 `addTestSuite` 方法允许将一个测试用例集添加到另一个测试用例集中。这样，包含在用例集中的所有测试函数都将被执行。
 
@@ -16987,24 +15825,24 @@ myTestSuite.addTestPage("tests/jsUnitAssertionTests.html");
 
 ```javascript
 function maSuiteDeTests() {
-var maSuiteTests = new top.jsUnitTestSuite();
-maSuiteTests.addTestPage("tests/jsUnitAssertionTests.html");
-return maSuiteTests;
+  var maSuiteTests = new top.jsUnitTestSuite();
+  maSuiteTests.addTestPage("tests/jsUnitAssertionTests.html");
+  return maSuiteTests;
 }
 var testSuite = new top.jsUnitTestSuite();
 testSuite.addTestSuite(maSuiteDeTests());
 ```
 
-### 测试用例集的实现
+#### 测试用例集的实现
 
-为了在测试用例中使用 way 用例集，应实现 `suite` 函数，该函数返回一个 `jsUnitTestSuite` 类型的对象并允许构建所需的测试用例集。
+为了在测试用例中使用测试用例集，应实现 `suite` 函数，该函数返回一个 `jsUnitTestSuite` 类型的对象并允许构建所需的测试用例集。
 
 以下代码给出了该机制的实现示例：
 
 ```html
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
-["http://www.w3.org/TR/html4/loose.dtd">>
-<html
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Tests JsUnit: suite</title>
@@ -17012,9 +15850,9 @@ testSuite.addTestSuite(maSuiteDeTests());
 <script language="JavaScript" type="text/javascript" src="app/jsUnitCore.js"/>
 <script language="JavaScript" type="text/javascript">
 function suite() {
-var maSuite = new top.jsUnitTestSuite();
-maSuite.addTestPage("testStringBuffer.html");
-return maSuite;
+  var maSuite = new top.jsUnitTestSuite();
+  maSuite.addTestPage("testStringBuffer.html");
+  return maSuite;
 }
 </script>
 </head>
@@ -17022,7 +15860,7 @@ return maSuite;
 </html>
 ```
 
-## 测试数据的加载
+### 测试数据的加载
 
 JsUnit 支持从不同格式的文件加载数据。该功能的实现使用了框架测试管理器的 `documentLoader` 属性。
 
@@ -17032,8 +15870,8 @@ JsUnit 支持从不同格式的文件加载数据。该功能的实现使用了�
 
 ```html
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
-["http://www.w3.org/TR/html4/loose.dtd">>
-<html
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Tests JsUnit: documentLoader</title>
@@ -17042,44 +15880,27 @@ JsUnit 支持从不同格式的文件加载数据。该功能的实现使用了�
 <script language="JavaScript" type="text/javascript">
 var uri = "tests/datas.xml"; // ❶
 function setUpPage() {
-setUpPageStatus = 'running';
-top.testManager.documentLoader.callback = setUpPageComplete;
-top.testManager.documentLoader.load(uri); // ❷
+  setUpPageStatus = 'running';
+  top.testManager.documentLoader.callback = setUpPageComplete;
+  top.testManager.documentLoader.load(uri); // ❷
 }
 function setUpPageComplete() {
-if (setUpPageStatus == 'running')
-```
-
-
-
-
-```javascript
-setUpPageStatus = 'complete';
-
+  if (setUpPageStatus == 'running')
+    setUpPageStatus = 'complete';
 }
-
 (...)
-
 </script>
-
 </head>
-
 (...)
-
-</html
+</html>
 ```
-
-# JavaScript 应用测试
-
-## 第 15 章
 
 一旦数据加载，就可以通过 `documentLoader` 的 `buffer` 属性使用存储结构。该结构提供了一个 `document` 属性以便通过 DOM 机制遍历这些数据，如下代码所示：
 
 ```html
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
-["http://www.w3.org/TR/html4/loose.dtd"]](http://www.w3.org/TR/html4/loose.dtd)
-
-<html
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>JsUnit Tests: documentLoader </title>
@@ -17087,62 +15908,52 @@ setUpPageStatus = 'complete';
 <script language="JavaScript" type="text/javascript" src="app/jsUnitCore.js"/>
 <script language="JavaScript" type="text/javascript">
 (...)
-
 function testDocumentLoader() {
-// 数据的根元素
-var root = top.testManager.documentLoader. documentElement;
-// 数据中包含的标签列表
-var buffer = top.testManager.documentLoader.buffer();
-var elms = buffer.document.getElementsByTagName("*");
+  // 数据的根元素
+  var root = top.testManager.documentLoader.documentElement;
+  // 数据中包含的标签列表
+  var buffer = top.testManager.documentLoader.buffer();
+  var elms = buffer.document.getElementsByTagName("*");
 }
 (...)
 </script>
 </head>
 (...)
-</html
+</html>
 ```
 
-## 执行测试
+### 执行测试
 
 使用 `JsUnit` 执行测试需要其发行版中的组件。这些组件由不同的启动器组成。在运行 `JsUnit` 服务器模块的情况下，必须安装 Java 任务执行工具 `Ant` 以及 Java 虚拟机。
 
-[`Ant` 可以在 `http://ant.apache.org/`](http://ant.apache.org/) 获取，而 [`Java`](http://ant.apache.org) 可以在 [`http://java.sun.com/`](http://java.sun.com/) 获取]`。我们在此不详细说明其安装过程（更多信息请参阅各自网站上的可用文档）。
+[`Ant` 可以在 `http://ant.apache.org/` 获取](http://ant.apache.org/)，而 [`Java` 可以在 `http://java.sun.com/` 获取](http://java.sun.com/)。我们在此不详细说明其安装过程（更多信息请参阅各自网站上的可用文档）。
 
-### 测试运行器 (Test Runner)
+#### 测试运行器 (Test Runner)
 
 JsUnit 提供了一个对应 HTML 页面的 Web 启动器，允许根据页面名称按需执行单元测试。该启动器采用了 Java 世界中各种 `JUnit` 启动器的图形界面。此页面对应工具发行包根目录下的 `testRunner.html` 文件。
 
 ![](img/index-471_1.jpg)
 ![](img/index-471_2.jpg)
 
-## 其他工具
-
-### 第六部分
-
 当所有测试都正确执行时，会显示一条绿色水平条（图 15.2 中为浅灰色）。
 
-**图 15.2**
-*当所有测试都正确执行时的 JsUnit 图形界面*
+**图 15.2** *当所有测试都正确执行时的 JsUnit 图形界面*
 
 当一个或多个测试失败时，会显示一条红色水平条（图 15.3 中为深灰色）。
 
-**图 15.3**
-*当一个或多个测试失败时的 JsUnit 图形界面*
+**图 15.3** *当一个或多个测试失败时的 JsUnit 图形界面*
 
 ![](img/index-472_1.jpg)
 
-界面包含四个部分。第一部分允许指定测试 HTML 文件并启动其执行。第二部分允许指定相关设置，特别是关于跟踪级别和测试超时设置。
+界面包含四个部分。第一部分允许指定测试 HTML 文件并启动其执行。第二部分允许指定相关设置，特别是关于跟踪级别和测试超时设置。第三部分显示已执行测试的结果以及相关的统计数据。最后一部分提供了有关测试失败的额外信息。可以通过选择列表中的错误并显示其详情（`Show selected` 和 `Show all`）来访问这些信息。
 
-第三部分显示已执行测试的结果以及相关的统计数据。最后一部分提供了提供了有关测试失败的额外信息。可以通过选择列表中的错误并显示其详情（`Show selected` 和 `Show all`）来访问这些信息。
-
-### 集成在 Eclipse 中的 JsUnit 启动器
+#### 集成在 Eclipse 中的 JsUnit 启动器
 
 JsUnit 还提供了一个集成在 `Eclipse` 中的启动器，允许直接从该开发环境执行测试 HTML 页面。
 
 在 `Eclipse` 中安装后，需要配置启动器的安装目录以及要使用的各种浏览器可执行文件。图 15.4 展示了 `Eclipse` 中启动器的配置窗口。该窗口可以通过工具菜单中的 `Preferences…`（首选项）项访问。
 
-**图 15.4**
-*Eclipse JsUnit 插件的配置窗口*
+**图 15.4** *Eclipse JsUnit 插件的配置窗口*
 
 ![](img/index-473_1.jpg)
 ![](img/index-473_2.jpg)
@@ -17151,17 +15962,15 @@ JsUnit 还提供了一个集成在 `Eclipse` 中的启动器，允许直接从�
 
 如果执行成功，窗口将显示绿色条（图 15.5 中为浅灰色），并描述每个测试页面执行的测试函数列表。
 
-**图 15.5**
-*集成在 Eclipse 中的 JsUnit 视图（测试执行成功）*
+**图 15.5** *集成在 Eclipse 中的 JsUnit 视图（测试执行成功）*
 
 如果测试出现错误，窗口将显示红色条（图 15.6 中为深灰色），错误的测试将用交叉号标记。
 
-**图 15.6**
-*集成在 Eclipse 中的 JsUnit 视图（测试执行中出现错误）*
+**图 15.6** *集成在 Eclipse 中的 JsUnit 视图（测试执行中出现错误）*
 
 现在让我们详细介绍 `JsUnit` 工具提供的用于在一个或多个浏览器中自动执行测试的支持。
 
-### 使用 JsUnit Server 和 Ant 实现测试自动化
+#### 使用 JsUnit Server 和 Ant 实现测试自动化
 
 `JsUnit Server` 是一个非常有用的工具，它允许进一步实现 JavaScript 单元测试执行的自动化。这种自动化基于 `Ant` 工具提供的便利，同时通过 `JsUnit` 特定的任务进行增强。这种自动化的主要意义在于自动检查不同浏览器中 JavaScript 应用的故障和回归问题。这样就不需要手动一个一个运行它们。
 
@@ -17171,24 +15980,19 @@ JsUnit 还提供了一个集成在 `Eclipse` 中的启动器，允许直接从�
 - 在不同的 Web 浏览器上本地执行 `JsUnit` 测试。
 - 在远程机器上执行 `JsUnit` 测试（此处不介绍此功能）。
 
-#### Ant 工具
+##### Ant 工具
 
 该工具在 Java 世界中常用于自动化重复任务。得益于其功能、可扩展性以及大量的可用任务，`Ant` 能够快速轻松地实现复杂的处理。此外，该工具允许指定任务链。因此，可以轻松实现以下处理链：从 CVS 获取源码、编译、二进制文件打包或执行单元测试。该开源工具可以在 [`http://ant.apache.org/`](http://ant.apache.org/) 获取。
 
-为了实现这些功能，必须使用位于 `JsUnit` 发行包根目录下的 Ant 脚本 `build.xml`。它由不同的任务组成，在配置脚本变量后可以直接。此文件不是可执行文件，但它允许配置 `Ant` 的执行。该工具默认使用执行目录下的同名文件。以下代码演示了在命令行执行 `Ant`：
+为了实现这些功能，必须使用位于 `JsUnit` 发行包根目录下的 Ant 脚本 `build.xml`。它由不同的任务组成，在配置脚本变量后可以直接执行。此文件不是可执行文件，但它允许配置 `Ant` 的执行。该工具默认使用执行目录下的同名文件。以下代码演示了在命令行执行 `Ant`：
 
 ```bash
 <JSUNIT_HOME>\jsunit > ant maTache
-
 Buildfile: build.xml
-
 maTache:
-
 (...)
-
 BUILD SUCCESSFUL
 Total time: 1 second
-
 <JSUNIT_HOME>\jsunit >
 ```
 
@@ -17198,42 +16002,18 @@ Total time: 1 second
 
 | 属性 | 说明 |
 | :--- | :--- |
-| browserFileNames | |
+| `browserFileNames` | 对应用于测试的浏览器可执行文件列表。此属性仅在通过 `standalone_test` 任务执行独立且本地测试时使用。可以指定多个浏览器。它们的可执行文件名称必须用逗号分隔，例如：`c:\program files\internet explorer\iexplore.exe,c:\program files\netscape\netscape7.1\netscp.exe`。 |
+| `closeBrowsersAfterTestRuns` | 确定 JsUnit 是否应在测试执行后尝试关闭浏览器。其默认值为 `true`。 |
+| `description` | 允许定义 JsUnit 服务器的描述。 |
+| `ignoreUnresponsiveRemoteMachines` | 在实施分布式测试时，如果某台机器没有响应，则忽略该机器的测试。如果值为 `true`，未响应的机器不会被视为错误。否则（值为 `false`），则会将错误添加到错误列表中。 |
+| `logsDirectory` | 允许指定存储测试结果的地方。该值可以是相对路径，也可以是绝对路径。如果省略此属性，文件将存储在 `resourceBase` 属性值的子目录 `logs/` 下。 |
+| `port` | 允许定义 JsUnit 服务器使用的端口。默认值为 `8080`。 |
+| `remoteMachineURLs` | 允许指定要使用的测试机器列表。地址必须是有效的 HTTP 地址，并指定协议 (`http`)、机器名以及使用的端口。如果使用多台机器，它们的地址必须用逗号分隔，例如：`http://machine1.company.com:8080,http://localhost:8080`。 |
+| `resourceBase` | 允许指定 JsUnit 服务器的根目录。此属性不是强制的。如果省略，则使用当前目录。 |
+| `timeoutSeconds` | 允许指定测试执行不应超过的最长时长（秒）。默认值为 `60`。 |
+| `url` | 允许定义执行单元测试的地址。此属性对于独立测试是必须的，并且必须是一个有效地址，例如 `file:///c:/jsunit/testRunner.html?testPage=c:/jsunit/tests/jsUnitTestSuite.html`。执行通过 `TestRunner.html` 工具完成。 |
 
-
-
-
-
-对应用于测试的浏览器可执行文件列表。此属性仅在通过 `standalone_test` 任务执行独立且本地测试时使用。可以指定多个浏览器。它们的可执行文件名称必须用逗号分隔，例如：`c:\program files\internet explorer\iexplore.exe,c:\program files\netscape\netscape7.1\netscp.exe`。
-
-### `closeBrowsersAfterTestRuns`
-确定 JsUnit 是否应在测试执行后尝试关闭浏览器。其默认值为 `true`。
-
-### `description`
-允许定义 JsUnit 服务器的描述。
-
-### `ignoreUnresponsiveRemoteMachines`
-在实施分布式测试时，如果某台机器没有响应，则忽略该机器的测试。如果值为 `true`，未响应的机器不会被视为错误。否则（值为 `false`），则会将错误添加到错误列表中。
-
-### `logsDirectory`
-允许指定存储测试结果的地方。该值可以是相对路径，也可以是绝对路径。如果省略此属性，文件将存储在 `resourceBase` 属性值的子目录 `logs/` 下。
-
-### `port`
-允许定义 JsUnit 服务器使用的端口。默认值为 `8080`。
-
-### `remoteMachineURLs`
-允许指定要使用的测试机器列表。地址必须是有效的 HTTP 地址，并指定协议 (`http`)、机器名以及使用的端口。如果使用多台机器，它们的地址必须用逗号分隔，例如：`http://machine1.company.com:8080,http://localhost:8080`。
-
-### `resourceBase`
-允许指定 JsUnit 服务器的根目录。此属性不是强制的。如果省略，则使用当前目录。
-
-### `timeoutSeconds`
-允许指定测试执行不应的最长时长（秒）。默认值为 `60`。
-
-### `url`
-允许定义执行单元测试的地址。此属性对于独立测试是必须的，并且必须是一个有效地址，例如 `file:///c:/jsunit/testRunner.html?testPage=c:/jsunit/tests/jsUnitTestSuite.html`。执行通过 `TestRunner.html` 工具完成。
-
-#### 表 15.3 JsUnit 文件 `build.xml` 中的 Or Ant 任务
+**表 15.3 JsUnit 文件 `build.xml` 中的 Ant 任务**
 
 | 任务 | 依赖于 | 描述 |
 | :--- | :--- | :--- |
@@ -17250,18 +16030,19 @@ Total time: 1 second
 | `start_server` | | 启动一个 JsUnit 服务器 |
 | `stop_server` | | 停止 JsUnit 服务器 |
 
-现在我们已经详细说明了 JsUnit 工具提供的各种 Ant 任务，让我们让我们详细说明如何实现上述前两个功能，即测试结果的 XML 存储以及在不同浏览器中配置测试执行。
+现在我们已经详细说明了 JsUnit 工具提供的各种 Ant 任务，让我们详细说明如何实现上述前两个功能，即测试结果的 XML 存储以及在不同浏览器中配置测试执行。
 
-### 测试结果的 XML 存储
-为了以 XML 格式生成测试执行结果，必须使用 Ant 任务 `standalone_test`。它允许启动一个或多个 浏览器，在其中执行测试并获取结果，将其保存为 XML 格式的文件。
+##### 测试结果的 XML 存储
+
+为了以 XML 格式生成测试执行结果，必须使用 Ant 任务 `standalone_test`。它允许启动一个或多个浏览器，在其中执行测试并获取结果，将其保存为 XML 格式的文件。
 
 图 15.7 展示了这些机制。
 
 **图 15.7 JsUnit 中的测试执行**
-(Ant -> 启动 `testRunner.html` 实例 -> 包含测试的 HTML  -> `standalone_test` 或 `distributed_test` -> 嵌入 JsUnit HTTP 服务器 -> 发送结果 -> 写入结果 -> XML 文件)
+(Ant -> 启动 `testRunner.html` 实例 -> 包含测试的 HTML -> `standalone_test` 或 `distributed_test` -> 嵌入 JsUnit HTTP 服务器 -> 发送结果 -> 写入结果 -> XML 文件)
 
-### 工具
 必须设置以下 Ant 脚本变量：
+
 - `browserFileNames`：定义浏览器执行的位置。可以设置多个值以便在多个浏览器中进行测试。
 - `logsDirectory`：定义结果 XML 文件的写入位置。
 - `url`：指定 JsUnit 启动器的地址以及包含单元测试的页面。
@@ -17276,7 +16057,7 @@ Total time: 1 second
     <property name="jsUnitVersion" value="2.2" />
     <property name="userAgent" value=" Mozilla/5.0 (Windows; U; Windows NT 5.1; fr; rv:1.8.0.2) Gecko/20060308 Firefox/1.5.0.2" />
     <property name="remoteAddress" value="127.0.0.1" />
-    <property name="url" value="file://<TESTS_HOME>/jsUnitMesTests.html" />
+    <property name="url" value="file:///<TESTS_HOME>/jsUnitMesTests.html" />
   </properties>
   <testCases>
     <testCase name="file:///<TESTS_HOME>/jsUnitStringBuffer.html:testAppend" time="1.375">
@@ -17291,7 +16072,8 @@ Total time: 1 second
 
 最后注意，JsUnit 目前尚未提供从结果 XML 文件生成文档的工具。由于使用的 XML 格式与 JUnit 工具的格式不匹配，无法使用 JUnit 的 Ant 任务 `junitreport`。然而，预计后续版本将支持该工具。
 
-### 在不同浏览器中配置测试执行
+##### 在不同浏览器中配置测试执行
+
 测试的执行按照上一节描述的方式进行。唯一变化的是 `browserFileNames` 变量，它现在必须包含多个用逗号分隔的值。
 
 为了在 Firefox 和 Internet Explorer 中连续执行测试，变量值格式如下：
@@ -17300,54 +16082,21 @@ Total time: 1 second
 <property name="browserFileNames" value="C:/Program Files/Internet Explorer/IEXPLORE.EXE,C:/applications/firefox/firefox.exe"/>
 ```
 
-
-
-
 在这种情况下，`JsUnit` 的 Ant 任务会在不同的浏览器中连续执行测试，如图 15.8 所示。
 
-- 启动一个
-- 执行
-- 实例
-- 多个测试
-- 浏览器
-- `testRunner.html`
-- `Ant`
-- 任务
-- HTML 页面
-- 启动一个
-- 包含测试的
-- `standalone_test` 或
-- 执行
-- 实例
-- `JsUnit` 
-- 多个测试
-- 浏览器
-- `testRunner.html`
-- HTTP 服务器
-- 发送结果
-- 嵌入的
-- 发送结果
-- 写入结果
-- XML 文件
-- XML 文件
-- 包含
-- 包含包含
-- 测试结果
-
-**图 15.8**
-*在多个浏览器中执行测试*
+**图 15.8** *在多个浏览器中执行测试*
 
 在 `JsUnit` Ant 任务的这种用例中，会生成多个 XML 结果文件，与配置的浏览器数量对应。其内容的结构与上一节描述的相似。
 
-# 对象模拟（Mock Objects）
+### 对象模拟（Mock Objects）
 
 虽然 `JsUnit` 提供了实现测试、验证其有效性以及以不同方式执行测试的功能，但它并不能将测试组件与其所依赖的对象隔离开。为此，可以使用对象模拟对象（mock objects）。它们允许提供替代对象，以验证方法是否被正确调用、参数是否符合预期，并强制设定它们的返回值。
 
-通过这种技术，可以测试该对象的调用者方法以及它们与模拟对象的交互方式。在 JavaScript 中实现对象模拟相对简单，因为该语言不是强类型类型，且对象被视为属性和函数的简单数组。
+通过这种技术，可以测试该对象的调用者方法以及它们与模拟对象的交互方式。在 JavaScript 中实现对象模拟相对简单，因为该语言不是强类型语言，且对象被视为属性和函数的简单数组。
 
 对象模拟的实现包括从另一个对象初始化一个空对象。该对象的方法与引用对象具有相同名称，但必须是空的。在执行模拟之前，测试会为模拟对象参数，设置将被调用的不同方法的预期结果。尽管 JavaScript 的模拟实现还不够完善，但有两个实现值得详细介绍。
 
-## 简单模拟的实现
+#### 简单模拟的实现
 
 `jpspan` 网站在它的 wiki 上提供了一种 JavaScript 对象模拟的简单实现。
 
@@ -17369,7 +16118,7 @@ function testSimulacreSimple() {
 ```javascript
 function testToString() {
   var simulacre = MockCreate(StringBuffer);
-  simulacre.setReturnValue("toString","Mon résultat");
+  simulacre.setReturnValue("toString", "Mon résultat");
   (...)
 }
 ```
@@ -17379,16 +16128,16 @@ function testToString() {
 ```javascript
 function testToString() {
   var simulacre = MockCreate(StringBuffer);
-  simulacre.setReturnValue("toString","Mon résultat");
+  simulacre.setReturnValue("toString", "Mon résultat");
   simulacre.toString();
   alert("La méthode maMethode a été appelée "
-  + simulacre.getCallCount("toString")+" fois");
-  alert("L’argument du dernier appel de la méthode est "
+  + simulacre.getCallCount("toString") + " fois");
+  alert("L'argument du dernier appel de la méthode est "
   + simulacre.getLastCallArgs("toString")[0]);
 }
 ```
 
-## 基于 JsUnit 的模拟实现
+#### 基于 JsUnit 的模拟实现
 
 第二种实现正在集成到 `JsUnit` 框架中，更为先进。然而，它的缺点是使用了该框架的函数，因此没有它就无法使用。
 
@@ -17399,8 +16148,7 @@ function testToString() {
 ```javascript
 function testToString() {
   var simulacre = MockCreate(StringBuffer);
-  simulacre._expect("toString",
-  ["Mon parametre"], "Mon resultat");
+  simulacre._expect("toString", ["Mon parametre"], "Mon resultat");
   (...)
 }
 ```
@@ -17410,8 +16158,7 @@ function testToString() {
 ```javascript
 function testToString() {
   var simulacre = MockCreate(StringBuffer);
-  simulacre._expect("toString",
-  [], "Mon resultat");
+  simulacre._expect("toString", [], "Mon resultat");
   var resultat = simulacre.toString();
   simulacre._verify();
   assertEquals(resultat, "Mon resultat");
@@ -17423,17 +16170,16 @@ function testToString() {
 ```javascript
 function test() {
   var simulacre = MockCreate(StringBuffer);
-  simulacre._expectThrows("toString",
-  ["Mon parametre"], "Une exception");
+  simulacre._expectThrows("toString", ["Mon parametre"], "Une exception");
   try {
     var resultat = simulacre.toString("Mon parametre");
-    fail("Pas d’exception levée");
+    fail("Pas d'exception levée");
   } catch(err) {}
   simulacre._verify();
 }
 ```
 
-# 测试的
+### 测试的实现
 
 在上一节中，我们描述了 `JsUnit` 的工作原理，这些原理与 Java 世界中的 `JUnit` 类似。现在我们将关注如何在 JavaScript 应用程序中实现测试，以便检测可能的错误并提高它们的健壮性和质量。
 
@@ -17443,7 +16189,7 @@ function test() {
 
 ```html
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html
+<html>
 <head>
 (...)
 <script language="JavaScript" type="text/javascript">
@@ -17468,11 +16214,11 @@ dojo.hostenv.writeIncludes();
 <th field="Description" dataType="String" sort="asc">Description</th>
 </tr>
 </thead>
+</table>
+</div>
+</body>
+</html>
 ```
-
-
-
-
 
 | # | 城市 | 描述 |
 | :--- | :--- | :--- |
@@ -17484,8 +16230,8 @@ dojo.hostenv.writeIncludes();
 
 ```html
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
-["http://www.w3.org/TR/html4/loose.dtd"](http://www.w3.org/TR/html4/loose.dtd)
-<<html>
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
 <head>
 (...)
 <link rel="stylesheet" type="text/css" href="file://<JSUNIT_DIR>/jsunit/css/jsUnitStyle.css">
@@ -17498,13 +16244,13 @@ var djConfig = {isDebug: true, debugAtAllCosts: true };
 dojo.require("dojo.widget.SortableTable");
 dojo.hostenv.writeIncludes();
 function testExistenceTableau() {
-(...)
+  (...)
 }
 function testChargementDonneesTableau() {
-(...)
+  (...)
 }
 function testTriDonneesTableau() {
-(...)
+  (...)
 }
 </script>
 </head>
@@ -17516,15 +16262,15 @@ function testTriDonneesTableau() {
 </html>
 ```
 
-接下，我们实现这三个测试函数。第一个函数 `testExistenceTableau` 检查图形组件是否已正确创建，以及是否可以通过 `dojo.widget.byId` 方法引用它。第二个函数 `testChargementDonneesTableau` 检查表格数据是否已由组件正确加载。第三个函数 `testTriDonneesTableau` 检查表格渲染是否根据创建表格时指定的最后一列进行了正确排序。
+接下来，我们实现这三个测试函数。第一个函数 `testExistenceTableau` 检查图形组件是否已正确创建，以及是否可以通过 `dojo.widget.byId` 方法引用它。第二个函数 `testChargementDonneesTableau` 检查表格数据是否已由组件正确加载。第三个函数 `testTriDonneesTableau` 检查表格渲染是否根据创建表格时指定的最后一列进行了正确排序。
 
 第一个测试函数简单地检查 `dojo` 库的 `dojo.widget.byId` 方法是否返回了组件的实例：
 
 ```javascript
 function testExistanceTable() {
-var monTableau = dojo.widget.byId("monTableau");
-assertNotUndefined(monTableau);
-assertNotNull(monTableau);
+  var monTableau = dojo.widget.byId("monTableau");
+  assertNotUndefined(monTableau);
+  assertNotNull(monTableau);
 }
 ```
 
@@ -17532,24 +16278,24 @@ assertNotNull(monTableau);
 
 ```javascript
 function testLoadTable() {
-var monTableau = dojo.widget.byId("monTableau");
-var donnees = monTableau.data;
-assertEquals(donnees.length,3);
-// 第一行
-var donneesPremiereLigne = donnees[0];
-assertObjectEquals(donneesPremiereLigne["Id"],1);
-assertObjectEquals(donneesPremiereLigne["Name"],"Nantes");
-assertObjectEquals(donneesPremiereLigne["Description"], "Préfecture de Loire-Atlantique");
-// 第二行
-var donneesSecondeLigne = donnees[1];
-assertObjectEquals(donneesSecondeLigne["Id"],2);
-assertObjectEquals(donneesSecondeLigne["Name"],"Paris");
-assertObjectEquals(donneesSecondeLigne["Description"], "Capitale de la France");
-// 第三行
-var donneesTroisiemeLigne = donnees[2];
-assertObjectEquals(donneesTroisiemeLigne["Id"],3);
-assertObjectEquals(donneesTroisiemeLigne["Name"], "Saint-Nazaire");
-assertObjectEquals(donneesTroisiemeLigne["Description"], "Sous-préfecture de Loire-Atlantique");
+  var monTableau = dojo.widget.byId("monTableau");
+  var donnees = monTableau.data;
+  assertEquals(donnees.length, 3);
+  // 第一行
+  var donneesPremiereLigne = donnees[0];
+  assertObjectEquals(donneesPremiereLigne["Id"], 1);
+  assertObjectEquals(donneesPremiereLigne["Name"], "Nantes");
+  assertObjectEquals(donneesPremiereLigne["Description"], "Préfecture de Loire-Atlantique");
+  // 第二行
+  var donneesSecondeLigne = donnees[1];
+  assertObjectEquals(donneesSecondeLigne["Id"], 2);
+  assertObjectEquals(donneesSecondeLigne["Name"], "Paris");
+  assertObjectEquals(donneesSecondeLigne["Description"], "Capitale de la France");
+  // 第三行
+  var donneesTroisiemeLigne = donnees[2];
+  assertObjectEquals(donneesTroisiemeLigne["Id"], 3);
+  assertObjectEquals(donneesTroisiemeLigne["Name"], "Saint-Nazaire");
+  assertObjectEquals(donneesTroisiemeLigne["Description"], "Sous-préfecture de Loire-Atlantique");
 }
 ```
 
@@ -17557,28 +16303,28 @@ assertObjectEquals(donneesTroisiemeLigne["Description"], "Sous-préfecture de Lo
 
 ```javascript
 function testTriDonneesTableau() {
-var monTableau=dojo.widget.byId("monTableau");
-var dom = monTableau.domNode;
-assertEquals(dom.rows.length,4);
-// 第一行
-var premiereLigne = dom.rows[1];
-assertObjectEquals(premiereLigne.cells[0],"2");
-assertObjectEquals(premiereLigne.cells[1],"Paris");
-assertObjectEquals(premiereLigne.cells[2], "Capitale de la France");
-// 第二行
-var secondeLigne = dom.rows[2];
-assertObjectEquals(secondeLigne.cells[0],"1");
-assertObjectEquals(secondeLigne.cells[1],"Nantes");
-assertObjectEquals(secondeLigne.cells[2], "Préfecture de Loire-Atlantique");
-// 第三行
-var troisiemeLigne = dom.rows[3];
-assertObjectEquals(troisiemeLigne.cells[0],"3");
-assertObjectEquals(troisiemeLigne.cells[1],"Saint-Nazaire");
-assertObjectEquals(troisiemeLigne.cells[2], "Sous-préfecture de Loire-Atlantique");
+  var monTableau = dojo.widget.byId("monTableau");
+  var dom = monTableau.domNode;
+  assertEquals(dom.rows.length, 4);
+  // 第一行
+  var premiereLigne = dom.rows[1];
+  assertObjectEquals(premiereLigne.cells[0], "2");
+  assertObjectEquals(premiereLigne.cells[1], "Paris");
+  assertObjectEquals(premiereLigne.cells[2], "Capitale de la France");
+  // 第二行
+  var secondeLigne = dom.rows[2];
+  assertObjectEquals(secondeLigne.cells[0], "1");
+  assertObjectEquals(secondeLigne.cells[1], "Nantes");
+  assertObjectEquals(secondeLigne.cells[2], "Préfecture de Loire-Atlantique");
+  // 第三行
+  var troisiemeLigne = dom.rows[3];
+  assertObjectEquals(troisiemeLigne.cells[0], "3");
+  assertObjectEquals(troisiemeLigne.cells[1], "Saint-Nazaire");
+  assertObjectEquals(troisiemeLigne.cells[2], "Sous-préfecture de Loire-Atlantique");
 }
 ```
 
-## JavaScript 单元测试的局限性
+### JavaScript 单元测试的局限性
 
 测试的实现并不总是可能的，因为某些机制（例如 Ajax 的异步机制）增加了实现的复杂性。此外，Ajax 还施加了安全限制。例如，使用该技术的调用只能从加载页面的机器发起。在这种情况下，`JsUnit` 的 HTML 启动器必须在 HTTP 服务器上运行测试页面。该服务器也必须是测试 Ajax 用的目标。
 
@@ -17591,30 +16337,26 @@ assertObjectEquals(troisiemeLigne.cells[2], "Sous-préfecture de Loire-Atlantiqu
 ```javascript
 var traiterEvenementAppelee = false;
 function traiterEvenement(evenement) {
-traiterEvenementAppelee = true;
+  traiterEvenementAppelee = true;
 }
 function testSimulationEvenementsFirefox() {
-var elt = document.getElementById("monId");
-var evt = document.createEvent("MouseEvents");
-evt.initMouseEvent("click", true, true, window, 0, 0, 0, 0, 0, false, false, false, false, 0, null);
-elt.dispatchEvent(evt);
-if( !traiterEvenementAppelee ) {
-fail();
-}
-}
+  var elt = document.getElementById("monId");
+  var evt = document.createEvent("MouseEvents");
+  evt.initMouseEvent("click", true, true, window, 0, 0, 0, 0, 0, false, false, false, false, 0, null);
+  elt.dispatchEvent(evt);
+  if (!traiterEvenementAppelee) {
+    fail();
+  }
 }
 ```
 
-## 结论
+### 结论
 
-单元测试并不仅适用于 Java、C++ 或 .Net 等“高级”语言。通过使用 `JsUnit`（一种 xUnit 家族的工具），可以对 JavaScript 应用程序进行测试，以增强健健性并验证它们在不同浏览器中的运行情况。
+单元测试并不仅适用于 Java、C++ 或 .Net 等“高级”语言。通过使用 `JsUnit`（一种 xUnit 家族的工具），可以对 JavaScript 应用程序进行测试，以增强健壮性并验证它们在不同浏览器中的运行情况。
 
+遗憾的是，JsUnit 目前不支持格式化测试结果，也不支持 Java 世界中 `JUnit` 工具的 `Ant junitreport` 任务。
 
-
-
-遗憾，JsUnit 目前不支持格式化测试结果，也不支持 Java 世界中 `JUnit` 工具的 `Ant junitreport` 任务。
-
-然而，必须意识到，由于 JavaScript 使用了不同的机制（特别是 Ajax 的异步机制），测试的实现并不总是是轻而易举的。
+然而，必须意识到，由于 JavaScript 使用了不同的机制（特别是 Ajax 的异步机制），测试的实现并不总是轻而易举的。
 
 # 第 16 章：工具
 
@@ -17624,31 +16366,31 @@ fail();
 
 ## 开发工具
 
-顾其名，JavaScript 是一种脚本语言。因此，一个简单的文本编辑器就足以编写基于该语言的程序。带有语法高色的文本编辑器可以提高代码的可读性，但无法提供一个友好且高效的开发环境。
+顾名思义，JavaScript 是一种脚本语言。因此，一个简单的文本编辑器就足以编写基于该语言的程序。带有语法高亮的文本编辑器可以提高代码的可读性，但无法提供一个友好且高效的开发环境。
 
 文本编辑器很快就会达到其局限性，因为它没有提供任何自动输入辅助功能，更不用说能够调试脚本的功能了。`Eclipse` 的插件 `ATF` 通过提供一个用于 JavaScript 应用编码和调试的完整环境，为这些困难提供了切实的解决方案。
 
-## 辅助工具
+### 辅助工具
 
-### ATF (Ajax Toolkit Framework)
+#### ATF (Ajax Toolkit Framework)
 
 开源工具 `ATF` 为 `Eclipse` 提供了一个扩展，以便为 Web 应用程序开发提供完整的环境。
 
-#### Eclipse
+##### Eclipse
 
 `Eclipse` 是一个开源开发平台，通过添加插件可以扩展和适应。该开发环境旨在通用的，因为它具有集成各种功能的能力。`Eclipse` 的子项目 `WTP`（Web Tools Platform）添加了一组与 Web 相关的功能，特别是 HTML 编辑器、CSS 样式表编辑器和 JavaScript 编辑器。
 
 `ATF` 丰富了 `WTP`（Web Tools Platform）分发的功能，因此安装 `ATF` 的前提是拥有 `WTP` 环境，可以在地址 `http://www.eclipse.org/webtools/` 下载。一旦安装了 `WTP`，只需安装 `ATF`，它可以在 `http://www.eclipse.org/atf/` 获取。
 
-#### 基础功能
+##### 基础功能
 
-`ATF` 提供了一个完整的 JavaScript 开发环境，包括输入过程中的语法检查功能。它还提供了代码自动补全，通过为给对象提供可用方法或属性为代码输入提供帮助。
+`ATF` 提供了一个完整的 JavaScript 开发环境，包括输入过程中的语法检查功能。它还提供了代码自动补全，通过为给定对象提供可用方法或属性为代码输入提供帮助。
 
 在本节中，我们只讨论与 JavaScript 语言相关的功能，但 `ATF` 提供了一整系列功能，允许编写 HTML 页面并实现 CSS 样式。
 
 `ATF` 允许直接在工具中测试 Web 应用程序，无需借助外部浏览器。这一功能的实现是通过集成 `Mozilla` 浏览器实现的。
 
-同样，JavaScript 脚本的调试可以直接在工具中进行，不需要外部调试器。对 `DOM` 树的检查（允许可视化 页面在内存中的表示）也基于这一原理。
+同样，JavaScript 脚本的调试可以直接在工具中进行，不需要外部调试器。对 `DOM` 树的检查（允许可视化页面在内存中的表示）也基于这一原理。
 
 图 16.1 展示了 `ATF` 在 `Eclipse` 开发环境中提供的图形界面。
 
@@ -17658,7 +16400,7 @@ fail();
 
 我们可以看到与 JavaScript 语言相关的主要输入辅助，以及通过包含可用方法的框架来显示 `DOM` 对象方法的辅助。包含语法错误的行会被下划线标记。
 
-#### JavaScript 库支持
+##### JavaScript 库支持
 
 除了 JavaScript 语言的语法高亮、自动补全和输入语法检查外，`ATF` 还提供了一组用于生成代码助手。它提供了用于生成 `dojo` 库周围骨架的助手，特别允许创建新的 `dojo` 图形组件。
 
@@ -17670,7 +16412,7 @@ fail();
 
 以下代码详细说明了基于 `dojo` 助手生成的图形组件的 JavaScript 类：
 
-```
+```javascript
 dojo.provide("dojo.widget.monWidget");
 dojo.require("dojo.event.*");
 dojo.require("dojo.widget.*");
@@ -17711,11 +16453,9 @@ dojo.widget.tags.addParseTreeHandler("dojo:monWidget");
 
 ![](img/index-493_1.jpg)
 
-
-
 这些工具避免了基于警报消息（`alert` 函数）的调试，这种方法很快就会达到其局限性并变得繁琐。
 
-## Firefox JavaScript 控制台
+#### Firefox JavaScript 控制台
 
 Firefox 浏览器配备了一个 JavaScript 控制台，用于收集所有的错误、警告或 JavaScript 消息。该控制台可以通过“工具”菜单访问。
 
@@ -17725,52 +16465,51 @@ Firefox 浏览器配备了一个 JavaScript 控制台，用于收集所有的错
 
 图 16.4 展示了控制台的界面。
 
-**图 16.4**
-*Firefox JavaScript 控制台*
+**图 16.4** *Firefox JavaScript 控制台*
 
 JavaScript 控制台会保留在访问过的网页中产生的所有错误。然而，它并不允许针对特定的网页或脚本过滤错误。若要查看单个页的错误，必须先通过“清除”按钮清理控制台。
 
-## 用于 Firefox 的 FireBug
+#### 用于 Firefox 的 FireBug
 
 在 Firefox 中进行 JavaScript 调试需要安装该浏览器的扩展。由于本章的目的并非详尽介绍所有可用扩展，因此我们重点介绍了 FireBug 扩展作为示例。
 
-FireBug 由 Joe Hewitt 开发，地址为 `https://addons.mozilla.org/fire-fox/1843` (`fox/1843/`)。安装后，可以通过“工具/FireBug”菜单访问调试功能。
+FireBug 由 Joe Hewitt 开发，地址为 `https://addons.mozilla.org/firefox/1843`。安装后，可以通过“工具/FireBug”菜单访问调试功能。
 
 该扩展允许通过跟踪方法调用来逐步调试 JavaScript 脚本，并以此视觉化所存在对象的值。控制台功能提供了仅查看当前页面错误的功能。开发者可以借此最好地定位错误发生的位置。
 
 通过 FireBug，可以现场执行 JavaScript 代码，从而在 HTML 页面的执行上下文中触发任何方法。
 
-Dom 检查器（inspecteur Dom）允许详细查看网页的 DOM 树。当 Dom 树在 JavaScript 中被被修改时，此功能显得尤为适用。
+DOM 检查器（Inspecteur DOM）允许详细查看网页的 DOM 树。当 DOM 树在 JavaScript 中被修改时，此功能显得尤为适用。
 
 最后，FireBug 还提供了一个分析与 Ajax 交换流的模块，特别是通过 `XMLHttpRequest` 类进行的交互。
 
 为了说明此调试器的工作原理，我们来看以下源代码：
 
 ```html
-<html
+<html>
 <head>
 <title>FireBug</title>
-<script type="text/javaScript">
+<script type="text/javascript">
 // 包含错误代码的函数
 function fonctionEnErreur(){
-AlErt("test console"); // ❶
+  AlErt("test console"); // ❶
 }
 
-// 实现 Dom 检查器
+// 实现 DOM 检查器
 function utilisationInspecteurDom(){
-var zone = document.getElementById("maZone");
-var lbl = document.createElement("label"); // ❷
-var txt = document.createTextNode("libellé");
-lbl.appendChild(txt);
-zone.appendChild(lbl);
+  var zone = document.getElementById("maZone");
+  var lbl = document.createElement("label"); // ❷
+  var txt = document.createTextNode("libellé");
+  lbl.appendChild(txt);
+  zone.appendChild(lbl);
 }
 
 // 使用逐步调试器
 function calcul(){
-var i=0;
-for (i=0; i < 10; i++){
-j = j + 2;
-}
+  var i=0;
+  for (i=0; i < 10; i++){
+    j = j + 2;
+  }
 }
 </script>
 </head>
@@ -17785,66 +16524,57 @@ j = j + 2;
 
 上述代码在标记 ❶ 处故意包含了一个语法错误。当打开此示例时，控制台会如图 16.5 所示显示出该错误。
 
-**图 16.5**
-*在 FireBug 控制台中显示错误*
+**图 16.5** *在 FireBug 控制台中显示错误*
 
 请注意 FireBug 定位语法错误的精确度。现在我们将使用 DOM 检查器来查看 label 标签的动态创建（标记 ❷）。
 
 点击 DOM 检查器按钮可以触发页面上标签的添加。DOM 检查器（`Inspector` 标签页）显示了 `label` 标签的添加，如图 16.6 所示。
 
-**图 16.6**
-*FireBug 的 DOM 检查器*
+**图 16.6** *FireBug 的 DOM 检查器*
 
 DOM 检查器允许查看 HTML 页面的整个内存结构，以及样式表或脚本。如前所述，调试器允许跟踪代码的逐步执行，并在执行过程中评估变量。
 
-像所有调试器一样，它的使用依赖于设置断点（points d’arrêt）。这些断点告诉调试器我们希望在哪些指令处停止执行以便分析代码。
+像所有调试器一样，它的使用依赖于设置断点（points d'arrêt）。这些断点告诉调试器我们希望在哪些指令处停止执行以便分析代码。
 
 FireBug 调试器可以通过 `Debugger` 标签页访问，它在打开时会显示页面的源代码。在此阶段，添加断点只需点击某行即可。它们在视觉上用红圆圈表示。
 
-如果我们在之前的代码中通过点击 `calcul` 函数的第一行来该函数设置一个断点，那么当通过点击页面上的“Calcul”按钮调用该函数时，高亮行将指示执行已在该处停止。
+如果我们在之前的代码中通过点击 `calcul` 函数的第一行来为该函数设置一个断点，那么当通过点击页面上的“Calcul”按钮调用该函数时，高亮行将指示执行已在该处停止。
 
 图 16.7 展示了这种实现。
 
-**图 16.7**
-*FireBug 中的逐步调试*
+**图 16.7** *FireBug 中的逐步调试*
 
 现在，可以通过 `Debugger` 标签页底部的命令按钮逐步执行代码。在指令推进期间，不同变量的值如图 16.8 所示呈现。
 
-**图 16.8**
-*FireBug 调试过程中的变量可视化*
+**图 16.8** *FireBug 调试过程中的变量可视化*
 
 正如我们所看到的，FireBug 扩展提供了许多对于调试和修复在 Firefox 浏览器中编写的 JavaScript 脚本的重要功能。
 
-## Internet Explorer 中的调试
+#### Internet Explorer 中的调试
 
 在 Internet Explorer 浏览器中也可以通过 Microsoft Script Debugger 工具进行脚本调试。该工具从 Microsoft 下载中心获取，允许查看 JavaScript 代码以设置断点并逐步执行代码。
 
 Script Debugger 提供了命令行窗口查看并修改变量，并查看调用堆栈。此功能允许跟踪方法调用的链。
 
-
-
 一旦设置了断点，只需点击网页上的“计算”按钮即可到达第一个断点。随后，使用功能键 F8 可以逐行执行指令。
 
-与 FireBug 不同，变量的值不会被显示，其可视化仍需由用户通过控制台窗口主动发起的。
+与 FireBug 不同，变量的值不会被显示，其可视化仍需由用户通过控制台窗口主动发起。
 
 ![](img/index-499_1.jpg)
 
-### 辅助工具
-
 图 16.10 展示了我们示例中变量 `j` 的可视化。
 
-**图 16.10**
-在 Internet Explorer 中单步执行执行时的变量可视化。Internet Explorer 脚本调试器提供了调试 JavaScript 脚本的主要功能，但 DOM 浏览器除外，尽管 DOM 浏览器对于实现 JavaScript 应用非常有用。
+**图 16.10** *在 Internet Explorer 中单步执行时的变量可视化*
 
-### 使用 dojo 进行调试
+Internet Explorer 脚本调试器提供了调试 JavaScript 脚本的主要功能，但 DOM 浏览器除外，尽管 DOM 浏览器对于实现 JavaScript 应用非常有用。
+
+##### 使用 dojo 进行调试
 
 由于 dojo 模块是动态加载的，在该库中进行调试变得棘手。
 
 由于脚本是通过 Ajax 请求按需加载，然后通过 `eval` 函数进行动态评估，因此不允许进行调试。为了实现这一功能，必须修改脚本的加载策略。
 
-dojo 配置（`djCOfig` 对象）中的 `debugAtAllCosts` 属性允许通过在网页头部动态添加 `<script>` 标签来加载不同的脚本。
-
-### 工具集
+dojo 配置（`djConfig` 对象）中的 `debugAtAllCosts` 属性允许通过在网页头部动态添加 `<script>` 标签来加载不同的脚本。
 
 以下代码提供了一个配置 dojo 库时激活调试（标记 ❶）的示例：
 
@@ -17864,6 +16594,7 @@ JavaScript 语言依赖垃圾回收机制（garbage collector）来管理内存�
 当一个对象不再被引用时，垃圾回收器就会将其从内存中移除。如果一个对象仍然被引用，内存就无法被释放，导致内存泄漏。
 
 在 JavaScript 开发中，内存泄漏通常发生在以下情况：
+
 - 全局变量意外引用了不再使用的对象。
 - 未清除的定时器（如 `setTimeout` 或 `setInterval`）。
 - 未解绑的事件监听器。
@@ -17871,22 +16602,13 @@ JavaScript 语言依赖垃圾回收机制（garbage collector）来管理内存�
 
 为了检测这些内存泄漏，开发者可以使用浏览器提供的调试工具（如 Chrome 开发者工具中的“内存”面板）。通过获取内存快照（Snapshot），可以分析哪些对象在持续增长。
 
-
-
+### 脚本压缩
 
 多种工具可以通过删除空格、注释和换行符来压缩脚本。
 
 dojo 社区提供了一种更强大的工具，它通过更短的名称对变量进行重命名。
 
-LivreGougeon 第 487 页 2006 年 11 月 28 日 周二 4:23 16
-
-## 工具
-
-**487**
-
-# 第 16 章
-
-dojo 压缩工具以可下载的 Java 程序的的形式提供，地址为 [`dojotoolkit.org/docs/compressor_system.html`](http://dojotoolkit.org/docs/compressor_system.html)。它基于 `Rhino` 引擎，允许解释 `JavaScript` 脚本并缩短变量名的长度。
+dojo 压缩工具以可下载的 Java 程序的形式提供，地址为 [`dojotoolkit.org/docs/compressor_system.html`](http://dojotoolkit.org/docs/compressor_system.html)。它基于 `Rhino` 引擎，允许解释 `JavaScript` 脚本并缩短变量名的长度。
 
 其运行至少需要一个 Java `1.4` 版本的虚拟机。
 
@@ -17894,15 +16616,15 @@ dojo 压缩工具以可下载的 Java 程序的的形式提供，地址为 [`doj
 
 ```javascript
 function Utilisateur(){
-this.getClassName=function(){
-};
+  this.getClassName=function(){
+  };
 }
 
 Utilisateur.prototype.getNom=function(){
 };
 
 Utilisateur.prototype.setNom=function(_1){
-this.nom=_1;
+  this.nom=_1;
 };
 
 Utilisateur.prototype.getAge=function(){
@@ -17916,7 +16638,7 @@ function Administrateur(){
 
 ### 动态加载
 
-在 `JavaScript` 中使用类通常涉及为每个类创建一个相应的 `JavaScript` 源文件。这种方法允许接近 `Java` 语言中类的存储方式。这些类（更准确地说说是脚本文件）随后由浏览器按需加载。
+在 `JavaScript` 中使用类通常涉及为每个类创建一个相应的 `JavaScript` 源文件。这种方法允许接近 `Java` 语言中类的存储方式。这些类（更准确地说是脚本文件）随后由浏览器按需加载。
 
 `dojo` 库使用这一概念进行类拆分。类的动态加载通过 `Ajax` 请求按需执行，将脚本文件内容带回浏览器并进行求值。
 
@@ -17924,243 +16646,16 @@ function Administrateur(){
 
 为了限制这些请求的数量并优化网页加载时间，最好将最常用的类合并到同一个 `JavaScript` 文件中。这样，大量微小的 `Ajax` 请求将被替换为几个大型 `Ajax` 请求，从而缩短 `JavaScript` 脚本的加载时间。
 
-LivreGougeon 第 488 页 2006 年 11 月 28 日 周二 4:23 16
-
-## 其他工具
-
-**488**
-
-### 第六部分
-
 ## 结论
 
 本章介绍了不同的工具，这些工具在使用 `JavaScript` 语言的开发、调试和故障排除阶段提高效率。
 
 `jsDoc` 工具表明，生成良好的文档也是可能的。这些文档经常被忽视，但它们对于维护包含 `JavaScript` 的应用程序至关重要。然而，`jsDoc` 的使用取决于此前是否付出了大量的注释工作。
 
-本章最后讨论的几提供了优化脚本加载时间的改进建议。这既可以在 `JavaScript` 脚本的大小上实现，也可以通过加载方式实现。
-
-LivreGougeon 第 489 页 2006 年 11 月 28 日 周二 4:23 16
-
-## 索引
-
-**A**
-- 轻量级 255
-
-**D**
-- Ajax
-- behavior 266
-- 日期 36
-- 类 `XMLHttpRequest` 105
-- prototype 255
-- 浏览器特殊性 37
-- 绕过限制
-- `script.aculo.us` 269
-- dojo 80, 147, 114
-- prototype 125
-- 字符串及其派生
-- 数据交换 109
-- rialto 347
-- 交换的数据 110
-- `script.aculo.us` 269
-- 集合 173
-- 交换的数据结构 111
-
-**C**
-- 预定义组件 317
-- 交换管理 108
-- CCS 5
-- 复杂的 331
-- 隐藏 iframe 116
-- 字符串 33
-- 树 334
-- 组件实现
-- 闭包 closures 45
-- Wysiwyg 编辑器 337
-- 图形 241
-- 图形组件
-- 数组 331
-- 实现 105
-- 外观 236
-- 窗口 322
-- 服务器端代理 115
-- 构建方法 242
-- 菜单和工具栏 326
-- 支持
-- 自动完成 247
-- 定位 320
-- 通过 dojo 183
-- 通用行为 238
-- 简单的 318
-- 通过 prototype 139
-- 面向对象设计 235
-- 配置 338
-- 通过 rialto 356
-- 实现示例
-- 使用 246
-- 日期 167
-- Yahoo 服务 426
-- 样式表 237
-- 调试 282
-- script 标签的动态
-- 概述 231
-- 库发布 120
-- 事件管理 149
-- Amazon 419
-- 案例研究 338
-- ECS 服务 430
-- 正则表达式 170
-- 使用服务 436
-- 实现 231
-- 目标 233
-- Java 的 157
-- 测试自动化 45
-- 对象的 233
-- ATF (Ajax Toolkit Framework) 472
-- 组织 234
-- 脚本 157
-- prototype 的 447
-
-**B**
-- 集合 173
-
-**E**
-- E4X (ECMAScript for XML) 4
-- ECS (E-Commerce Service) 430
-- ECMA (欧洲计算机制造商协会) 2
-- ECMA-262 2
-- ECMAScript
-
-**H**
-- HTML 198
-
-**I**
-- 函数 `dojo.io.bind` 183
-- 表单提交
-- JavaScript 2
-- 隐藏 iframe 116
-- 189
-- JScript 2
-- 交互性 7
-- RPC 支持 187
-- 规范 3
-- Web 图形界面 197
-- DOM 的 178
-- 高级概念 222
-- 图形 283
-- 正则表达式 37
-- CSS 202
-- 数组 158
-- HTML 198
-- 应用程序轨迹 190
-
-**F**
-- xHTML 198
-- 初始化处理
-- Internet Explorer
-- FireBug 477
-- 页面 290
-- 闭包 closures 45
-- Firefox
+本章最后讨论的几点提供了优化脚本加载时间的改进建议。这既可以在 `JavaScript` 脚本的大小上实现，也可以通过加载方式实现。
 
 
 
-# 索引 (491)
-
-## J
-- `通信机制`
-- `JsUnit` (443)
-- `基于 Ajax 的` (9)
-- `JavaScript`
-- `断言与失败` (449)
-- `对象的函数调用`
-- `对象的实现`
-- `使用 `JsUnit` 进行测试自动化
-- `自定义` (64)
-- `JsUnit Server` 与 `Ant` (457)
-- `原型 属性` (66, 73)
-- `关键字`
-- `测试用例` (445)
-- ``delete` 属性的更改` (82)
-- `用于的数据加载`
-- `标签样式` (221)
-- `instanceof` (79)
-- `测试` (452)
-- `类` (57)
-- `this` (64)
-- `基础执行配置` (59)
-- `在不同浏览器中进行测试` (461)
-- `运行环境`
-- `字面量对象` (70)
-- `属性与方法的作用域`
-- `测试执行上下文` (447)
-- `实现` (64)
-- `测试执行` (453)
-- `预实例化` (62)
-- `基本原理` (11, 16)
-- `模拟对象 (Mock) 实现`
-- `创建技术` (67)
-- `方法` (27)
-- `支持的面向语言概念` (57)
-- `运算符` (20)
-- ``Eclipse` 内置启动器` (455)
-- `控制结构` (24)
-- `在 浏览器中` (5)
-- `数组` (28)
-- `支持的操作系统` (445)
-- `手动触发事件` (218)
-- `变量与类型` (16)
-- ``build.xml` 文件的属性`
-- `面向对象编程` (458)
-- `浏览器检测` (208)
-- `测试实现` (464)
-- `确定对象的类型` (79)
-- `测试结果的 XML 存储` (459)
-- `对象模拟 (Mock objects)` (462)
-- `测试套件的结构化` (450)
-- `现有类的扩展` (78, 458)
-- `闭包 (closures)` (45)
-- `Web 2.0 基础` (7)
-- `图形语言 (与 `JavaScript` 交互)` (208)
-- `框架支持` (80)
-- `内存泄漏` (82)
-- `事件管理` (210)
-- `使用 `JsUnit Server` 和 `Ant` 自动化` (457)
-- `应用程序实现的最佳实践` (443)
-- `基础方法` (27)
-- `单元测试执行` (453)
-- `类继承` (72)
-- `多重` (76)
-- `基础类型` (32)
-
-## N
-- `历史` (2)
-- `字符串操作` (33)
-- `与 JavaScript 语言的交互` (5)
-- `交互性` (7)
-- `Web 浏览器解释器` (13)
-- `日期` (36)
-- `数字` (35)
-- `日期的特殊性` (37)
-- `使用 `JavaScript` (15)
-- `在浏览器中` (15)
-- `JSON` (70)
-- `以及 XML 和 XSLT` (223)
-- `数字` (35)
-- `晚绑定 (late binding)` (67)
-- ``Yahoo!` 服务` (426)
-- `单元测试的局限性` (468)
-- `jpspan` (462)
-
-## O
-- ``DOM` 树的操作` (209)
-- `OMG (对象建模小组)` (50)
-- `JSON` (70, 113)
-- `运算符` (20)
-- ``JavaScript` 对象` (462)
-- `对象模拟 (Mock objects)` (462)
-- `动态加载` (487)
-- `传输` (139)
 - `SpiderMonkey (解释器)` (14)
 - `压缩` (486)
 - `Element` (256)
@@ -18176,7 +16671,7 @@ LivreGougeon 第 489 页 2006 年 11 月 28 日 周二 4:23 16
 - `类` (126)
 - `FireBug` (477)
 - `基础` (129)
-- ``JavaScript` (443)
+- `JavaScript` (443)
 - `Script` (126)
 - `单元测试执行` (453)
 - `HTML 表单` (264)
@@ -18185,16 +16680,19 @@ LivreGougeon 第 489 页 2006 年 11 月 28 日 周二 4:23 16
 - `jsDoc` (483)
 
 ## P
+
 - `REST (表述状态转移)` (419)
 - `Rhino` (487)
 
 ## V
+
 - `DOM` (85)
 - `变量` (16)
 - `图形 Web` (195)
 - `命令` (14)
 
 ## W
+
 - `聚合` (55)
 - `行为` (389)
 - `类` (50)
@@ -18230,7 +16728,7 @@ LivreGougeon 第 489 页 2006 年 11 月 28 日 周二 4:23 16
 - `添加 HTML 块` (258)
 - `Ajax 技术` (356)
 - `xHTML 1.1` (201)
-- ``DOM` 树` (138)
+- `DOM 树` (138)
 - `原型` (125)
 - `字符串` (129)
 - `Event 类` (262)
@@ -18239,6 +16737,7 @@ LivreGougeon 第 489 页 2006 年 11 月 28 日 周二 4:23 16
 - `观察者类` (262)
 
 ## U
+
 - `组件的使用`
 - `相关的 ActiveX 组件`
 - `JavaScript 控制台` (476)
@@ -18246,7 +16745,7 @@ LivreGougeon 第 489 页 2006 年 11 月 28 日 周二 4:23 16
 - `以及 XSLT` (228)
 - `类型检查` (155)
 - `日期` (37)
-- `在 `DOM` 中` (224)
+- `在 DOM 中` (224)
 - `DOM`
 - `FireBug` (477)
 - `日期` (37)
@@ -18260,142 +16759,240 @@ LivreGougeon 第 489 页 2006 年 11 月 28 日 周二 4:23 16
 - `标签` (221)
 - `事件支持` (214)
 
-
-
-
-
 ## 数字处理
+
 ## 日期处理
+
 ## 正正则表达式
+
 ## 应用程序结构
+
 ### 函数
+
 ### 闭包 (Closures)
+
 ### 异常处理
+
 ## 结论
 
 ## 3 - JavaScript 与面向对象编程
+
 ### 面向对象原理回顾
+
 ### 类与对象
+
 ### 继承
+
 ### 聚合与组合
+
 ### 多态
+
 ### 总结
+
 ### JavaScript 类
+
 ### 基础类
+
 ### 内置类
+
 ### 运行环境类
+
 ### 自定义类的实现
+
 ### 类的实现
+
 ### 类继承
+
 ### 深入探讨
+
 ## 结论
 
 ## 4 - DOM 编程
+
 ### DOM 规范
+
 ### Web 浏览器支持
+
 ### DOM 结构
+
 ### `Node` 类
+
 ### 节点类型
+
 ### 元素操作
+
 ### 直接访问元素
+
 ### 从节点访问元素
+
 ### 节点操作
+
 ### 树片段（Fragments）的使用
+
 ### 属性操作
+
 ### DOM 树遍历
+
 ### `innerHTML` 属性
+
 ### 0 级 DOM 使用
+
 ### 在加载时修改 DOM 树
+
 ## 结论
 
 ## 5 - Ajax 的实现
+
 ### Ajax 与 `XMLHttpRequest` 类
+
 ### `XMLHttpRequest` 类
+
 ### 交换管理
+
 ### 数据交换
+
 ### 交换的数据
+
 ### 交换数据的结构
+
 ### 总结
+
 ### 绕过限制
+
 ### 服务器端代理
+
 ### 隐藏 iframe
+
 ### script 标签动态使用
+
 ### 总结
+
 ## 结论
 
 ## 第二部分 - JavaScript 库的基础
+
 ## 6 - 原型库
+
 ### JavaScript 基础元素支持
+
 ### 类支持
+
 ### 函数测试
+
 ### 类支持
+
 ### 基础类
+
 ### 字符串
+
 ### 集合管理
+
 ### DOM 支持
+
 ### Ajax 支持
+
 ### 实现
+
 ## 结论
 
 ## 7 - 库的基础
+
 ### 基础支持
+
 ### 安装
+
 ### 管理
+
 ### 基础支持
+
 ### 检测
+
 ### 面向对象编程
+
 ### 类实现
+
 ### 字符串
+
 ### 字符串
+
 ### 正正则表达式
+
 ### 集合
+
 ### 基础集合
+
 ### 结构
+
 ### DOM 支持
+
 ### Ajax 支持
+
 ### 技术
+
 ## 结论
 
 ## 第三部分 - 使用 JavaScript 进行图形编程
+
 ## 8 - Web 图形界面基础
+
 ### HTML 与 xHTML
+
 ## CSS
+
 ### 样式定义
+
 ### 样式应用
+
 ### 与 JavaScript 交互
+
 ### 浏览器检测
+
 ### DOM 树操作
+
 ### 事件处理
+
 ### 样式操作
+
 ### 高级概念
+
 ### 事件处理
+
 ### XML 和 XSLT 技术的使用
-
-
 
 ## 结论
 
 # 9 - 图形组件的实现
 
 ## 图形组件概述
+
 ### 图形组件的目标
+
 ### 图形组件之间的关系
 
 ## 图形组件的结构化
+
 ### 面对象设计
+
 ### 外观
+
 ### 通用行为
+
 ### 事件管理
 
 ## Ajax 的使用
 
- 构建方法
+### 构建方法
+
 ### 基于 HTML 的构建
+
 ### 基于 JavaScript 的构建
+
 ### 总结
 
 ## 图形组件的实现示例
+
 ### 文本框与自动完成
+
 ### 选择列表
 
 ## 结论
@@ -18403,33 +17000,51 @@ LivreGougeon 第 489 页 2006 年 11 月 28 日 周二 4:23 16
 # 第四部分 - 图形 JavaScript 库
 
 ## 10 - 轻量级图形库
+
 ### prototype 库
+
 ### DOM 树元素操作
+
 ### 添加 HTML 块
+
 ### 事件管理
+
 ### HTML 表单支持
+
 ### 总结
 
 ### behaviour 库
+
 ### behaviour 库的安装与实现
+
 ### 总结
 
 ### script.aculo.us 库
+
 ### 效果
+
 ### 拖放
+
 ### 自动补全
+
 ### 总结
 
 ## 结论
 
 ## 11 - dojo 库的图形化支持
+
 ### 基础 HTML 模块
+
 ### 基础函数
+
 ### 样式管理
+
 ### 显示管理
 
 ### 事件管理
+
 ### 基础函数
+
 ### 解耦
 
 ### 效果管理
@@ -18437,39 +17052,63 @@ LivreGougeon 第 489 页 2006 年 11 月 28 日 周二 4:23 16
 ### 拖放管理
 
 ### 图形组件的实现
+
 ### 图形组件的结构化
+
 ### 自定义组件的实现
+
 ### 组件的实施
+
 ### 图形组件的操作
+
 ### 总结
 
 ### 预定义组件
+
 ### 简单组件
+
 ### 定位
+
 ### 窗口
+
 ### 菜单与工具栏
+
 ### 复杂组件
 
 ### 案例
+
 ### dojo 实现
+
 ### 图形组件的使用
 
 ## 结论
 
 ## 12 - rialto 库
+
 ### 历史
+
 ### 相关项目
+
 ### 安装
+
 ### 基础支持
+
 ### Ajax 技术支持
 
 ### 图形组件
+
 ### 组件结构化
+
 ### 基础组件
+
 ### 表单管理
+
 ### 定位
+
 ### 浮窗
+
 ### 复杂组件
+
 ### 总结
 
 ### 行为
@@ -18481,28 +17120,47 @@ LivreGougeon 第 489 页 2006 年 11 月 28 日 周二 4:23 16
 # 第五部分 - 使用外部服务
 
 ## 13 - Google Maps
+
 ### 描述
+
 ### 实现
+
 ### 安装
+
 ### 基础使用
+
 ### 与接口交互
+
 ### 扩展
+
 ### dojo 对 Google Maps 的支持
+
 ### 案例
+
 ### 地理搜索
+
 ### 站点定位
+
 ## 结论
 
 ## 14 - Yahoo! 和 Amazon 提供的服务
+
 ### Yahoo!
+
 ### 互联网搜索服务
+
 ### 专辑搜索服务
+
 ## 服务的使用
+
 ### 总结
 
 ### Amazon
+
 ### ECS 服务
+
 ## 服务的使用
+
 ### 总结
 
 ## 结论
@@ -18510,25 +17168,31 @@ LivreGougeon 第 489 页 2006 年 11 月 28 日 周二 4:23 16
 # 第六部分 - 辅助工具
 
 ## 15 - JavaScript 应用测试
+
 ### 单元测试
+
 ### JsUnit 的实现
+
 ### 测试用例
+
 ### 断言与失败
+
 ### 测试套件
+
 ### 测试数据加载
 
- 执行测试
+### 执行测试
+
 ### 测试运行器 (Test Runner)
+
 ### 集成在 Eclipse 中的 JsUnit 启动器
-
-
-
 
 # 使用 JsUnit Server 和 Ant 进行测试自动化
 
 ## 模拟对象（Mock）
 
 ### 模拟对象的实现
+
 ### 基于 JsUnit 的模拟对象实现
 
 ## 测试实现
@@ -18540,23 +17204,31 @@ LivreGougeon 第 489 页 2006 年 11 月 28 日 周二 4:23 16
 # 16 - 工具
 
 ## 开发工具
+
 ### ATF (Ajax Toolkit Framework)
 
 ## 调试工具
+
 ### Firefox JavaScript 控制台
+
 ### 适用于 Firefox 的 FireBug
-Internet Explorer 中的调试
+
+### Internet Explorer 中的调试
+
 ### 使用 dojo 进行调试
+
 ### 内存泄漏检测
 
 ## 文档工具
+
 ### `jsDoc`
 
 ## 优化工具
+
 ### 压缩工具
+
 ### 动态加载
 
 ## 结论
 
 # 索引
-

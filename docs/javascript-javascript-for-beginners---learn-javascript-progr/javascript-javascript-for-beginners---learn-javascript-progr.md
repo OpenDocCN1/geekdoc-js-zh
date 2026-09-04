@@ -1,41 +1,13 @@
-# JavaScript 入学者指南 - 用半倍的时间轻松学习 JavaScript 编程 - 你需要的所有关于语言、编码、编程和网页的知识
 
+# JavaScript 入学者指南 - 用半倍的时间轻松学习 JavaScript 编程
 
-
-
-
-
-
-
-
-
-作者：
-
-Stephen Blumenthal
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+作者：Stephen Blumenthal
 
 # JavaScript 简介
 
 JavaScript 是一种解释型编程语言，基于 ECMAScript 标准构建。该语言的定义非常广泛，因为它可以被定义为基于原型的、命令式的、弱类型的和动态的语言。
 
-JavaScript 主要作为客户端编程语言使用，作为 浏览器的一部分实现，允许开发者以更改进的方式实现网页中的用户界面和动态功能；尽管也存在服务器端的 JavaScript 实现（SSJS），但该语言的流行完全归功于客户端的实现。JavaScript 也可以用于 Web 之外，例如为 PDF 文档和桌面小组件添加交互功能。
+JavaScript 主要作为客户端编程语言使用，作为浏览器的一部分实现，允许开发者以更改进的方式实现网页中的用户界面和动态功能；尽管也存在服务器端的 JavaScript 实现（SSJS），但该语言的流行完全归功于客户端的实现。JavaScript 也可以用于 Web 之外，例如为 PDF 文档和桌面小组件添加交互功能。
 
 JavaScript 的语法与 C 语言相似，尽管它借鉴了 Java 编程语言的名称和约定。然而，尽管名字相似，但 Java 和 JavaScript 之间并没有关系，并且具有不同的语义和目的。
 
@@ -48,7 +20,6 @@ JavaScript 最初由 Netscape 的 Brendan Eich 以 Mocha 的命名开发，后�
 1997 年，有一项建议将 JavaScript 提交给欧洲计算机制造商协会 ECMA 的标准，尽管其名为欧洲，但它并不是欧洲的，而是国际性的，总部位于日内瓦。1997 年 6 月，它以 ECMAScript 的名称被采用 ECMA 标准。JavaScript 也成为了 ISO 标准。
 
 由于其标准化和互联网的广泛采用，JavaScript 已成为地球上最常用的编程语言。
-
 
 # JavaScript 的用途
 
@@ -69,10 +40,6 @@ JavaScript 最初由 Netscape 的 Brendan Eich 以 Mocha 的命名开发，后�
 
 对于一种直到最近还被“高级编程语言”程序员所嘲笑的语言来说，这已经非常多了。JavaScript 复兴的一个原因是，我们现在正在构建越来越复杂的 Web 应用程序，而高交互性需要 Flash（或其他插件）或脚本。JavaScript 无疑是最佳选择，因为它是 Web 标准，或者被跨浏览器原生支持（在某种程度上——某些东西在浏览器之间有所不同，这些差异将在后续文章的相关位置讨论），并且与其他开放的 Web 标准兼容。
 
-
-
-
-
 # 进入 DOM 脚本
 
 当浏览器开始支持并实现文档对象模型（DOM）时，这允许我们与网页进行更丰富的交互，JavaScript 也开始变得越来越有趣。
@@ -80,7 +47,6 @@ JavaScript 最初由 Netscape 的 Brendan Eich 以 Mocha 的命名开发，后�
 DOM 是文档的对象的表示。例如，上一个段落（通过“查看网页源代码”检查其源码）在 DOM 语言中，它是一个 `nodeName` 为 `p` 的元素节点。它包含三个子节点——一个 `nodeValue` 为“When browsers started supporting and implementing the ”的文本节点，一个 `nodeName` 为 `a` 的元素节点，以及另一个 `nodeValue` 为“, which allows us to have much richer interaction with web pages, JavaScript started to get more interesting.”的文本节点。该元素子节点还有一个名为 `href` 的属性节点（其有一个值）以及一个 `nodeValue` 为“Document Object Model(DOM).”的文本节点子节点。
 
 你也可以使用树形图视觉化地表示这个段落，如图 2 所示。
-
 
 图 2：我们的示例 DOM 树的可视化表示。
 
@@ -90,7 +56,6 @@ DOM 是文档的对象的表示。例如，上一个段落（通过“查看网�
 - 创建新的元素和内容，并在需要时将其应用到文档中。
 
 这意味着我们不再需要依赖窗口（windows）、框架（frames）、表单（forms）和丑的提示框（alerts），可以通过良好的样式在文档中为用户提供反馈，如图 3 所示。
-
 
 图 3：使用 DOM 你可以创建更漂亮且干扰更错误消息。
 
@@ -122,7 +87,7 @@ JavaScript 可以增强 HTML 为我们提供的界面。虽然有一个文本输
 
 没有什么是 JavaScript 办不到的——尤其是当你将其与 Canvas 或 SVG 等技术结合时。然而，能力越大责任越大，在使用 JavaScript 时你应该始终记住以下几点：
 
-- JavaScript 可能不可——这很容易测试，并不是真正的问题。然而，依赖 JavaScript 的东西在创建时应该考虑到这一点，你应该确保当 JavaScript 不可用时，你的网站不会崩溃（即核心功能不可用）。
+- JavaScript 可能不可用——这很容易测试，并不是真正的问题。然而，依赖 JavaScript 的东西在创建时应该考虑到这一点，你应该确保当 JavaScript 不可用时，你的网站不会崩溃（即核心功能不可用）。
 - 如果使用 JavaScript 没有帮助用户快速、高效地实现目标，你可能用错方法了。
 
 # 开始使用 JavaScript
@@ -131,16 +96,19 @@ JavaScript 可以增强 HTML 为我们提供的界面。虽然有一个文本输
 
 JavaScript 代码放在哪里？嗯，在页面的 `html` 标签内的任何地方。你的代码以 `<script type="text/javascript">` 开始，以 `</script>` 结束。
 
+```html
 <html>
 <head><title>This is an example page</title></head>
 <body>
 Welcome to the JavaScript course!
+<script type="text/javascript">
 <!--
 document.write("Hi here. This text is written using JavaScript!")
 -->
 </script>
 </body>
 </html>
+```
 
 输出：Hi here. This text is written using JavaScript!
 
@@ -148,22 +116,26 @@ document.write("Hi here. This text is written using JavaScript!")
 
 像 HTML 一样，你可以在 JavaScript 代码中插入注释。JavaScript 注释与 HTML 注释不同，后者是注释掉脚本中的行，使其不被解释。JavaScript 注释的语法是：
 
+```javascript
 //注释内容
+```
 
 用于单行注释，或者
 
+```javascript
 /*
 注释内容
 */
+```
 
 用于多行注释：
 
-
-
+```javascript
 //this script does nothing and is useless!
 /*
 Hay, don't involve me in this!
 */
+```
 
 好了，我们现在准备好开始真正的编程了！
 
@@ -177,15 +149,16 @@ JavaScript 与许多编程语言一样，依赖于对象、函数和事件处理
 
 | 对象 | HTML 标签 | JavaScript |
 | :--- | :--- | :--- |
-| 网页 | `<body>...</body>` | document |
-| 图像 | `<img name="myimage">` | document.myimage |
-| HTML 表单 | `<form name="myForm">...</form>` | document.myForm |
-| 按钮 | `<input type='button' name="myButton">` | document.myButton |
+| 网页 | `<body>...</body>` | `document` |
+| 图像 | `<img name="myimage">` | `document.myimage` |
+| HTML 表单 | `<form name="myForm">...</form>` | `document.myForm` |
+| 按钮 | `<input type='button' name="myButton">` | `document.myButton` |
 
 要在网页中添加 JavaScript，你需要做的只是将 JavaScript 代码嵌入到 HTML 文件中。在你嵌入代码的行下方，你可以响应事件处理器的要求引用或调用该 JavaScript 代码。在向 HTML 文件中嵌入 JavaScript 代码时，你有两个选择：
 
 你可以使用 `<script>` 标签将 JavaScript 代码直接包含在 HTML 文件中。在下面的示例中，一个名为 `myFunction` 的 JavaScript 函数定义在 HTML 文件的顶部。在 HTML 文件的下方，该函数与一个事件处理器关联——具体是 `onclick` 事件。（换句话说，当用户点击按钮时，`myFunction` 函数中包含的 JavaScript 代码就会运行。）
 
+```html
 <html>
 <head>
 <script language="JavaScript">
@@ -194,15 +167,18 @@ function myFunction() {
 // 更多 JavaScript 语句放在这里
 }
 </script>
+</head>
 <body>
 <form name="myForm">
 <input type="button" name="myButton" value="Click to order" onclick="myFunction();">
 </form>
 </body>
 </html>
+```
 
 你可以使用 `<script>` 标签将一个独立的外部 JavaScript 文件（仅包含 .js 扩展名的 JavaScript 语句的文件）包含到 HTML 文件中。在示例中，JavaScript 函数定义在 `myfile.js` 中。当用户点击链接时，该函数会被触发或调用。
 
+```html
 <html>
 <head>
 <script language="JavaScript" src="myfile.js"></script>
@@ -211,6 +187,7 @@ function myFunction() {
 <a href="javascript:myFunction();">点击这里</a>
 </body>
 </html>
+```
 
 因为网页不仅仅由 HTML 组成，所以 JavaScript 提供的不仅仅是 HTML 对象。JavaScript 还提供了对浏览器特定对象的访问。浏览器插件（如 RealPlayer 和 Adobe Acrobat）、特定查看器的名称和版本以及当前日期，都是你可以使用 JavaScript 处理的非 HTML 对象示例。
 
@@ -238,11 +215,7 @@ HTML 代表 Hyper Text Markup Language（超文本标记语言）。
 
 它通常以不可编辑的方式由浏览器显示——它迫使用户使用外部软件编辑原始内容。它是一种非常稳定的标记语言格式。命令在任何地方含义都相同。它经常被人们指责是一种糟糕的语言。习惯于 XML 的人会抱怨缺乏标记作者和日期等的良好元素。
 
-它是最为人知的标记语言。尽管该库是用编写的
-
-
-
-多种语言绑定使得它可以在其他环境中可用。它是一种非交互式布局语言。它可以对文本和图形进行布局，并提供颜色、**粗体**、闪烁字体等。HTML 也是一种超文本标记语言。超文本是指任何格式的文本，但增加了一个功能：文本的部分链接到文本的其他部分，使得可以很容易地从文本的一个部分跳转到另一部分。
+它是最为人知的标记语言。尽管该库是用编写的多种语言绑定使得它可以在其他环境中可用。它是一种非交互式布局语言。它可以对文本和图形进行布局，并提供颜色、粗体、闪烁字体等。HTML 也是一种超文本标记语言。超文本是指任何格式的文本，但增加了一个功能：文本的部分链接到文本的其他部分，使得可以很容易地从文本的一个部分跳转到另一部分。
 
 它的目的不仅仅是包含内容，它还包含了描述自身和引用更多内容的数据。网络上的文本不仅仅是线性的，它是超文本。它的目的并不是重现艺术家梦想中视觉效果的精确外观。相反，它是为了让信息以结构化的方式组织，以便从设计的宽屏专业工作站到文本模式 VT100 终端，再到盲人的语音文本阅读器，都能以易理解的方式进行渲染。它就是代码，仅此而已。
 
@@ -250,7 +223,7 @@ HTML 代表 Hyper Text Markup Language（超文本标记语言）。
 
 它本身并不是一种语言。它由放置在元素周围的标签组成，这些标签会改变这些被包围元素的属性。HTML 是一种复杂的脚本语言，而这个免费文本编辑器可能就是轻松创建网站的关键。它由一系列标签组成，类似于命令，告诉网络浏览器要做什么。这些标签可以输入到任何普通的文本编辑器（如记事本或 Simple text）中，并且在顺序正确的情况下，就能形成网页。
 
-它是一个较弱的超文本实现的基础。早期的超文本系统具有诸如类型链接、包含和源头跟踪等功能。它是主要用于设计网页的语言。通过 HTML 的帮助，我们可以进行格式设置和表单设计。它的读法是一个字母一个字母地读，就像拼出 HTML 这个单词。它不读作“hitmill”，而且它**不是**一种编程语言。它的设计并不是用于控制文档布局的这些方面。你应该做的是使用它来标记标题、段落、列表、超链接以及文档的其他结构部分，并添加样式表来单独指定布局，就像你可以在传统的桌面出版软件包中做的那样。它是万维网上最基础、常见的语言，而且相对容易学习。
+它是一个较弱的超文本实现的基础。早期的超文本系统具有诸如类型链接、包含和源头跟踪等功能。它是主要用于设计网页的语言。通过 HTML 的帮助，我们可以进行格式设置和表单设计。它的读法是一个字母一个字母地读，就像拼出 HTML 这个单词。它不读作“hitmill”，而且它不是一种编程语言。它的设计并不是用于控制文档布局的这些方面。你应该做的是使用它来标记标题、段落、列表、超链接以及文档的其他结构部分，并添加样式表来单独指定布局，就像你可以在传统的桌面出版软件包中做的那样。它是万维网上最基础、常见的语言，而且相对容易学习。
 
 大多数开发者和内容创建者将其视为纯粹以人为本的技术。但日益增加机器处理（无论是通过搜索引擎、屏幕阅读器等辅助功能设备，还是浏览器本身）对于在线信息来说，变得像内容的类读者一样重要。Mozilla 和 Safari 均推荐它而非 HTML，而且所有主流浏览器对它的支持通常也比 XHTML 好。它是（简而言之，且略过许多争议领域）用 SGML 创建的许多标记语言之一，而且是迄为止使用最广泛的语言。SGML 本身有一种语法，它所有的应用（即所有用它创建的语言）都必须遵循该语法，但其本身（带过几个与本文讨论无关的问题）并没有语义。
 
@@ -272,9 +245,6 @@ HTML 或超文本标记语言在本质上就是万维网的语言。没有 HTML�
 - b) 你保证能在搜索引擎中获得顶位置
 
 记住
-
-
-
 
 虽然每个搜索引擎都各不相同，而且它们用于网站排名的算法极其复杂，且无疑是严密保护的秘密，但如果你添加了这些元素，至少你会在积极的方向上获得一些加分。
 
@@ -315,35 +285,40 @@ jQuery 非常棒。它是跨浏览器的、易学习的，并且帮助你创建�
 
 jQuery 包含了所有必要的钩子，以帮助你开发插件。但保持 JavaScript 的良好实践是好事，因此我们必须确保一切都保持在本地作用域内。让我们从 jQuery 插件的基础外壳开始：
 
-function($) {
-
-$.fn.simpleAccordion = function() {
-
-//TODO: simple折叠面板插件代码
-
+```javascript
+(function($) {
+  $.fn.simpleAccordion = function() {
+    //TODO: simple折叠面板插件代码
+  };
 }(jQuery));
+```
 
-让我们快速过一遍这里发生了什么。通过将所有内容包含在 (function() {}) 自闭的 JavaScript 模式中，我们确保插件中的变量将安全地留在全局命名空间之外。我们不会与此页面运行的任何其他 JavaScript 发生冲突，所以我们必须像上面那样隔离代码。
+让我们快速过一遍这里发生了什么。通过将所有内容包含在 `(function() {})` 自闭的 JavaScript 模式中，我们确保插件中的变量将安全地留在全局命名空间之外。我们不会与此页面运行的任何其他 JavaScript 发生冲突，所以我们必须像上面那样隔离代码。
 
 你可能注意到的另一个点是，我们定义插件的方式就像 jQuery 处于“无冲突”（no-conflict）模式。同样，我们寻求避免与页面上的其他 JavaScript 冲突，因此我们想确保我们的插件不依赖于它。
 
-最后，$.fn 是 jQuery 允许你定义插件的方法，我们将其命名为 simpleAccordion。所有组件就绪后，让我们开始制作吧！
+最后，`$.fn` 是 jQuery 允许你定义插件的方法，我们将其命名为 `simpleAccordion`。所有组件就绪后，让我们开始制作吧！
 
 ## 为我们的插件添加功能
 
-jQuery 的伟大之处在于它允许你使用任何需要的选择器。然而，你必须记住，我们的插件可能会处理多种元素类型。使用 "this" 关键字让我们的插件通过循环访问每个元素来应用关联函数。
+jQuery 的伟大之处在于它允许你使用任何需要的选择器。然而，你必须记住，我们的插件可能会处理多种元素类型。使用 `this` 关键字让我们的插件通过循环访问每个元素来应用关联函数。
 
 获取 HTML 部分 - 构建折叠面板
 
 由于我们正在构建一个折叠面板，我们需要为它准备结构，现在开始：
 
-## Cras dolor elit, porttitor ac diam bibendum, eleifend ali qam erat.
-
-## Donecc blandit nec est tristi interdum.
-
-## Fusce sit amet arcu id malesuada faucibus.
-
-## Ali qam tincidunt lobortis sem porttitor.
+```html
+<dl class="accordion">
+  <dt>Cras dolor elit, porttitor ac diam bibendum, eleifend ali qam erat.</dt>
+  <dd>...</dd>
+  <dt>Donecc blandit nec est tristi interdum.</dt>
+  <dd>...</dd>
+  <dt>Fusce sit amet arcu id malesuada faucibus.</dt>
+  <dd>...</dd>
+  <dt>Ali qam tincidunt lobortis sem porttitor.</dt>
+  <dd>...</dd>
+</dl>
+```
 
 这是一个简单的折叠面板结构，定义了四个标题及其各自的内容区域。所以，想法是我们的插件将这段 HTML 代码转换为一个功能性的折叠面板，用户可以打开和折叠部分。
 
@@ -351,23 +326,16 @@ jQuery 的伟大之处在于它允许你使用任何需要的选择器。然而�
 
 为了让它看起来美观，我们应该添加一些简单的样式。现在开始：
 
+```css
 .accordion {
-
-width: 600px;
-
-border: 1px solid #ccc;
-
-border-bottom: none;
+  width: 600px;
+  border: 1px solid #ccc;
+  border-bottom: none;
 }
 
 .accordion dt,.accordion dd {
-
-border-bottom: 1px solid #ccc;
-}
-
-
-```css
-margin: 0px;
+  border-bottom: 1px solid #ccc;
+  margin: 0px;
 }
 
 .accordion dt {
@@ -380,6 +348,7 @@ margin: 0px;
 .accordion dd {
   padding: 12px 8px;
 }
+```
 
 现在我们的折叠面板结构应该像这样：
 
@@ -387,45 +356,31 @@ margin: 0px;
 
 为了为我们的插件添加功能，我们将编辑 js 文件并添加以下代码：
 
-function($) {
+```javascript
+(function($) {
+  $.fn.simpleAccordion = function(options) {
+    return this.each(function() {
+      var dts = $(this).children('dt');
+      dts.click(accordionClick);
+      dts.each(reset);
+    });
 
-$fn.simpleAccordion = function(options) {
+    function accordionClick() {
+      $(this).siblings('dt').each(hide);
+      $(this).next().slideDown('fast');
+      return false;
+    }
 
-return this.each(function() {
+    function hide() {
+      $(this).next().slideUp('fast');
+    }
 
-var dts = $(this).children('dt');
-
-dts.click(accordionClick);
-
-dts.each(reset);
-
-});
-}
-
-function accordionClick() {
-
-$(this).siblings('dt').each(hide);
-
-$(this).next().slideDown('fast');
-
-return false;
-}
-
-
-
-}
-
-function hide() {
-  $(this).next().slideUp('fast');
-}
-
-function reset() {
-  $(this).next().hide();
-}
-
-}
-
-}(jQuery);
+    function reset() {
+      $(this).next().hide();
+    }
+  };
+}(jQuery));
+```
 
 让我们快速回顾一下这段代码的作用。首先，你需要理解 jQuery 是一个扩展了 JavaScript 语言的库。在创建任何 jQuery 插件时，你本质上是在扩展你的插件扩展 jQuery 库的方式，而这又是在扩展 JavaScript。真正理解你的插件如何扩展 jQuery 库，需要理解 JavaScript 的 `prototype`（原型）属性。虽然它没有被直接使用，但 JavaScript `prototype` 属性通过 jQuery 属性 `fn` 在后台使用，`fn` 是原生 JavaScript `prototype` 属性的 jQuery 别名。
 
@@ -435,8 +390,9 @@ function reset() {
 
 让我们快速为插件添加选项，以展示它是有多简单。我们将传递一个选项参数，在插件初次加载时打开折风琴的第一部分。
 
+```javascript
 (function($) {
-  $fn.simpleAccordion = function(options) {
+  $.fn.simpleAccordion = function(options) {
     var state = $.extend({}, {open: false}, options);
 
     return this.each(function() {
@@ -458,12 +414,13 @@ function reset() {
     }
 
     function hide() {
+      $(this).next().slideUp('fast');
     }
 
     function reset() {
       $(this).next().hide();
     }
-  });
+  };
 })(jQuery);
 ```
 
@@ -477,6 +434,7 @@ CSS 和 JavaScript：随着每个浏览器的发布，界限似乎变得模糊�
 
 我们知道可以通过 `style` 属性获取元素的基础 CSS 样式值，但伪元素（pseudo-element）属性呢？是的，JavaScript 甚至可以访问它们！
 
+```javascript
 // 获取 .element:before 的颜色值
 var color = window.getComputedStyle(
   document.querySelector('.element'), ':before'
@@ -486,14 +444,15 @@ var color = window.getComputedStyle(
 var content = window.getComputedStyle(
   document.querySelector('.element'), ':before'
 ).getPropertyValue('content');
+```
 
 ## classList API
 
 我们在喜爱的 JavaScript 库中使用过所有的 `addClass`、`removeClass` 和 `toggleClass` 方法。为了支持旧版浏览器，每个库都会获取元素的 `className`（其字符串格式）并添加/删除类名，然后更新。而 `classList` API 是一个更现代的方法，它允许我们添加、移除和切换类：
+
+```javascript
 myDiv.classList.add('class'); // 添加类
-
 myDiv.classList.remove('class'); // 移除类
-
 myDiv.classList.toggle('class'); // 切换类
 ```
 
@@ -501,6 +460,7 @@ myDiv.classList.toggle('class'); // 切换类
 
 我们熟悉通过 `style` 属性修改样式，但你是否知道可以通过 JavaScript 直接操作样式规则？这比基础 JavaScript 框架允许的更直接。
 
+```javascript
 function addCSSRule(selector, rules) {
   if (sheet.insertRule) {
     sheet.insertRule(selector + "{" + rules + "}");
@@ -511,17 +471,20 @@ function addCSSRule(selector, rules) {
 
 // 使用它！
 addCSSRule(document.styleSheets[0], "float: left");
+```
 
 ## 懒加载 CSS 文件
 
 我们可以通过 JavaScript 懒加载如图像、JSON 等资源，但你是否知道你可以在回调函数中处理样式表呢？
 
+```javascript
 curl([
   "namespace/MyWidget",
   "namespace/css"
 ], function(MyWidget) {
   // 处理 MyWidget
 });
+```
 
 ## CSS 核心
 
@@ -529,32 +492,42 @@ curl([
 
 `pointer-events` 属性很有趣，它几乎可以像 JavaScript 一样工作，当值为 `none` 时可以禁用元素。
 
+```css
 .disabled { pointer-events: none; }
+```
 
 ## 使用
 
 通过 bower 安装包：
 
+```
 bower install ess
+```
 
 使用时：
 
+```html
 <link rel="stylesheet" href="bower_components/ess/dist/ess.min.css">
+```
 
 通过 npm：
 
+```
 npm install ess
+```
 
 ## 基础
 
 我们需要超过 3-4 个断点（breakpoints）来真正适应屏幕，所以我们定义了：
 
+```less
 @media-xsm: 460px;
 @media-sm: 606px;
 @media-md: 800px;
 @media-lg: 1164px;
 @media-xlg: 1440px;
 @media-xxlg: 1740px;
+```
 
 ## 浏览器支持
 
@@ -566,11 +539,13 @@ npm install ess
 
 快速开始：
 
+```html
 <div class="of-row">
   <div class="xxsm-col-24 xsm-col-18 sm-col-12 md-col-6 lg-col-4 xlg-col-2 xxlg-col-1">
     部分内容
   </div>
 </div>
+```
 
 (等待...)
 
@@ -580,6 +555,7 @@ npm install ess
 
 快速开始：
 
+```html
 <div class="of-row">
   <div class="xxsm-col-24">
     <div id="loading-bar-spinner">
@@ -587,6 +563,7 @@ npm install ess
     </div>
   </div>
 </div>
+```
 
 ## 文本截断
 
@@ -594,6 +571,7 @@ npm install ess
 
 快速开始：
 
+```html
 <div class="of-row">
   <div class="xxsm-col-12">
     <div class="truncate-text">
@@ -601,9 +579,7 @@ npm install ess
     </div>
   </div>
 </div>
-
-
-
+```
 
 # 上浮动画
 
@@ -617,12 +593,15 @@ npm install ess
 
 你可以通过编辑 `src/base/breakpoints.less` 文件中的值来修改网格断点，然后重新编译项目。
 
+```
 $ npm install && grunt release
+```
 
 # 命令行值
 
 此外，还可以向 `grunt` 命令传递网格断点的所需的值：
 
+```
 $ npm install && grunt release --breakpoints='xxsm 0px, xsm 460px, sm 606px, md 800px, lg 1164px, xlg 1440px, xxlg 1740px'
 ```
 
@@ -640,9 +619,11 @@ $ npm install && grunt release --breakpoints='xxsm 0px, xsm 460px, sm 606px, md 
 
 如果你希望始终控制元素在网站上的显示位置，绝对定位是实现这一点的关键。如果你将浏览器看作一个大边界框，绝对定位允许你精确控制元素留在框内的哪个位置。使用 `top`、`right`、`bottom` 和 `left` 配合像素值来控制元素停留的位置。
 
+```css
 position:absolute;
 top:20px;
 right:20px;
+```
 
 上述 CSS 将元素的位置设置为距离浏览器顶部和右边缘 20px。你也可以在 `div` 内部使用绝对定位。
 
@@ -654,7 +635,9 @@ right:20px;
 
 这种方法应谨慎使用，因为如果你对所有内容都这样做，长远来看你会遇到麻烦。但是，如果你想为特定元素覆盖另一个 CSS 样式，请在 CSS 样式后使用 `!important`。例如，如果我想让网站特定区域的 H2 标题变为红色而不是蓝色，我会使用以下 CSS：
 
+```css
 .section h2 { color:red!important; }
+```
 
 - 4. 居中
 
@@ -668,11 +651,13 @@ right:20px;
 
 通过为 `div`（或任何其他元素）添加 `block` 属性并使用 `auto` 外边距可以实现居中。CSS 看起来如下：
 
+```css
 #div1 {
   display: block;
   margin: auto;
   width: anything under 100%;
 }
+```
 
 我之所以将宽度设置为“100% 以下的任意值”，是因为如果宽度为 100%，那么它就是全宽的，就不需要居中了。最好的方法是设置固定宽度，例如 60% 或 550px 等。
 
@@ -680,36 +665,41 @@ right:20px;
 
 我几乎可以保证你会在 CSS 导航菜单中使用它。关键是让菜单的高度和文本的行高（line-height）保持一致。当我回去为客户修改现有网站时，我经常看到这种技术。这是一个示例：
 
+```css
 .nav li {
   line-height:50px;
   height:50px;
 }
+```
 
 - 6. 悬停特效
 
 这用于按钮、文本链接、网站的区块区域、图标等。如果你希望某个元素在鼠标悬停时时改变颜色，请使用 `hover` 选择器。这是一个示例：
 
+```css
 .nav li:hover {
   color: red;
 }
-
-
-
+```
 
 普通
+
+```css
 padding: 5px;
 Box-sizing: border-box;
 padding: 5px;
-
+```
 
 ## 13. :before
 
 这种 CSS 是一种选择器，允许你选择一个 CSS 元素，并在应用了特定类的每个元素之前插入内容。假设你有一个网站，想在每个 H2 标签之前显示特定的文本。你可以使用以下设置：
 
+```css
 h2:before {
   content: "Read: ";
   color: #F00;
 }
+```
 
 这非常有用，特别是当你使用图标字体时。你可以在某些元素之前放置图标，并对其进行全局应用。
 
@@ -717,10 +707,12 @@ h2:before {
 
 与 :before 选择器一样，你可以使用 :after 在特定元素上全局地插入内容。一个实用的用途是在博客的每段摘要后添加“阅读更多”（read more）。以下是实现方法：
 
+```css
 p:after {
   content: " -Read more... ";
   color:#f00;
 }
+```
 
 ## 15. content
 
@@ -736,6 +728,7 @@ content 是一个 CSS 属性，当你需要插入一个想要控制的元素时�
 
 每个人都喜欢字母花字。它让我们想起传统的印刷书籍，是开启内容页的一种极佳方式。那个较大的第一个字母非常吸引注意力。在 CSS 中创建字母花字有一种简单的方法，就是使用伪元素：:first-letter。这里有一个示例：
 
+```css
 p:first-letter {
   display:block;
   float:left;
@@ -743,6 +736,7 @@ p:first-letter {
   color:#f00;
   font-size:300%;
 }
+```
 
 此操作的作用是将字母的大小设置为其他字母的 3 倍。它在字母周围设置了 3px 的空间以防止重叠，并将字母颜色设置为红色。
 
@@ -750,13 +744,11 @@ p:first-letter {
 
 将整个章节都输入全大写是荒谬的。想象一下，当网站格式改变或更新时，你必须回去修复它们。相反，使用以下 CSS 样式来强制文本达到特定格式。此 CSS 针对 h2 标题标签。
 
-h2 { text-transform: uppercase; } // 全大写
-
-h2 { text-transform: lowercase; } // 全小写
-```
-
 ```css
+h2 { text-transform: uppercase; } // 全大写
+h2 { text-transform: lowercase; } // 全小写
 h2 { text-transform: capitalize; } // 每个单词的首字母大写。
+```
 
 ## 19. Vertical screen height (视口高度)
 
@@ -764,68 +756,87 @@ h2 { text-transform: capitalize; } // 每个单词的首字母大写。
 
 为容器创建一个类，并应用你想要的 vh 数量。你可能需要微调的是特定屏幕或方向（如手机竖屏模式）的媒体查询值。想象将一张横屏图片拉伸以适应竖屏模式，效果一定很糟糕。
 
+```css
 .fullheight { height: 85vh; }
+```
 
 ## 20. 电话链接样式
 
 如果你有一个在用户手机手机上点击时拨打电话号码的链接，使用传统的活动链接选择器对其设置样式可能会遇到困难。相反，请使用以下 CSS：
 
+```css
 a[href^=tel] {
   color: #FFF;
   text-decoration: none;
 }
+```
 
 # 运行 JavaScript 函数的不同方式
 
 - 1 – 裸锚点 (anchor naked)
+
 在某些浏览器中，鼠标悬停时指针可能不会改变。
-可以使用 CSS 解决此问题：a {cursor:pointer; }
+
+可以使用 CSS 解决此问题：`a {cursor:pointer; }`
 
 - 2 – 锚点哈希引用 (anchor hash href)
+
 鼠标悬停时显示带有 # 的链接。
+
 页面在 IE6、IE7 上可能会跳转到顶部。
 
 - 3 – 伪锚点 (anchor pseudo)
+
 点击链接时调用函数的旧式方法。
+
 出于用性和可访问性考虑，不建议使用伪协议 href。
+
 如今，由于可用 API 的涌入，这被认为是过时的编程方式。
+
 它很杂乱、很长，人们在状态栏中看到它，但它没有任何意义。
-Opera 不喜欢 href="javascript:[anything]”
+
+Opera 不喜欢 `href="javascript:[anything]”`
 
 - 4 – 伪锚点空值 (anchor pseudo void)
-使用 javascript:[anything] 被认为是不良实践。
+
+使用 `javascript:[anything]` 被认为是不良实践。
 
 - 5 – 假锚点 (anchor false)
 
 - 6 – 美化锚点 (anchor pretty)
 
-
-
-
-
 ## 为什么 JavaScript 对大小写敏感如此重要？
 
 这是由本质决定的。首先，脚本是用纯文本编写的，但它不仅仅是 HTML（HTML 在很大程度上不区分大小写）那样的标记，它是代码，因此受到浏览器内部机制（DOM APIs）更严格的审查。
 
+```javascript
 var names, Names;
+```
 
 这两个变量看起来几乎一样，但对 JS 来说，它们之间是天壤之别。重要的是我们要意识到这一点，不是因为它的重要性，而是因为它的本质。它就是它本该的样子。
 
+```javascript
 function Person(name, age){
   this.name = name;
   this.age = age;
 }
+
 var person = new Person("Zach", 29);
+```
 
 我们可以忽略这段代码的构成，因为可能还没有介绍对象。这里的重点是展示 `person` 和 `Person` 是两个完全不同的对象。`Person` 是一个对象构造函数，而 `person` 是该构造类的实例。
 
+```javascript
 console.log(person);
 // { name: 'Zach', age: 29 }
+```
 
 以及，
 
+```javascript
 console.log(Person);
 // [Function]
+```
 
 目前，我们都必须检查自己的大小写，否则可能会遇到负面后果，如语法错误、引用错误和其他异常。培养敏锐的眼力，并记住 JS 是区分大小写的。对此我们无能为力。
 
@@ -905,10 +916,6 @@ console.log(Person);
 
 将其与花费的 1.1 万亿（1,118,000,000,000）进行对比
 
-
-
-
-
 2005年全球军费支出高达数千亿美元，但对于美国营销策略家阿尔尔·里斯（Al Ries）所描述的“……广告肮脏的小秘密：它没有任何实际用处”来说，这合理吗？
 
 那么……
@@ -977,15 +984,15 @@ console.log(Person);
 
 声明数组与声明其他变量非常相似。唯一的区别在于你正在声明一个包含多个值的变量。让我们比较一下这两个声明。
 
-```
+```csharp
 String strEmotion = "happy";
 ```
 
-```
-String[]strEmotions = {"happy","sad","elated","afraid","angry","peaceful"};
+```csharp
+String[] strEmotions = {"happy","sad","elated","afraid","angry","peaceful"};
 ```
 
-上述两个变量 strEmotion 和 strEmotions 都是使用显式声明创建的，这意味着在创建它们的同时设置了值。通过使用括号 `[]`，编译器知道变量 strEmotions 多个值。
+上述两个变量 `strEmotion` 和 `strEmotions` 都是使用显式声明创建的，这意味着在创建它们的同时设置了值。通过使用括号 `[]`，编译器知道变量 `strEmotions` 多个值。
 
 在这种情况下，我们将数组的大小设置为 6，因为我们添加了 6 个值。
 
@@ -993,26 +1000,23 @@ String[]strEmotions = {"happy","sad","elated","afraid","angry","peaceful"};
 
 一旦你理解了数组如何引用每个项，获取每个项的值并不难。起初这可能会有点困惑，因为数组使用零基引用。这意味着列表中的第一个项在 0 位置。
 
-
-
-
 好的，看接几行你就理解了。
 
 ```javascript
 String [] strEmotions = {"happy","sad","elated","afraid","angry","peaceful"};
 ```
 
-strEmotions[0] = "happy" (数组中索引 0 位置的值)
+`strEmotions[0]` = "happy" (数组中索引 0 位置的值)
 
-strEmotions[1] = "sad" (数组中索引 1 位置的值)
+`strEmotions[1]` = "sad" (数组中索引 1 位置的值)
 
-strEmotions[2] = "elated" (数组中索引 2 位置的值)
+`strEmotions[2]` = "elated" (数组中索引 2 位置的值)
 
-strEmotions[3] = "afraid" (数组中索引 3 位置的值)
+`strEmotions[3]` = "afraid" (数组中索引 3 位置的值)
 
-strEmotions[4] = "angry" (数组中索引 4 位置的值)
+`strEmotions[4]` = "angry" (数组中索引 4 位置的值)
 
-strEmotions[5] = "peaceful" (数组中索引 5 位置的值)
+`strEmotions[5]` = "peaceful" (数组中索引 5 位置的值)
 
 实际应用
 
@@ -1022,11 +1026,13 @@ strEmotions[5] = "peaceful" (数组中索引 5 位置的值)
 
 首先声明了一个数据类型为 System.Drawing.Color 的数组，并同时添加了四种颜色：绿色、红色、黄色和蓝色。
 
-注意方括号 []`，它表示数组声明。
+注意方括号 `[]`，它表示数组声明。
 
 由于我们在声明数组的同时填充了它，因此我们说它是显式声明的。
 
+```csharp
 System.Drawing.Color[] myColorArray = {System.Drawing.Color.Green, System.Drawing.Color.Red, System.Drawing.Color.Yellow, System.Drawing.Color.Blue};
+```
 
 现在我们添加一个方法并将其分配给所有单按钮（radio buttons）的点击事件。我们可以编写四个不同的方法，为每个单选按钮写一个。
 
@@ -1090,6 +1096,7 @@ XHTML 是扩展超文本标记语言（Extensible HyperText Markup Language）�
 据说搜索引擎在理解 CSS 方面存在一些问题。如果你的网页有很多垃圾内容，爬虫将会很困难。因此，CSS 可以让你的网页保持整洁，无需为每个元素编写冗余代码。这里有一个编写标题的示例：
 
 示例：
+
 ```css
 h1 {font-family: Arial; size: 18px; font: bold;}
 ```
@@ -1117,20 +1124,18 @@ H1 {color: green; font-family: Arial;}
 - 外部（External）：CSS 与网页主体分离，并与网页链接。因此，要将外部文件链接到网页中，你需要使用 link 标签。
 
 示例：
+
 ```html
 <link rel="stylesheet" type="text/css" href="NameofCSS.css">
 ```
+
 （放在 head 部分，title 标签之后）
 
 你选择哪种方式？如果你有一个大型网站或不断扩展的网站，外部文件将是快速方便地一次性操作所有网页的更好方法。
 
-
-
-
-
 # 注意防垃圾信息
 
-但与互联网上的任何事物一样，CSS 既可以用于善意，也可以用于坏意。显然，如果你想让你的网站长期运行，就应该避免某些 CSS 技术。为什么呢？因为某些 CSS 技术可能被搜索引擎视为垃圾信息，因此如果你使用了这些技术，你的网站可能会被封禁。黑帽手段包括：1) 使用 CSS 隐藏从标题到正文的文本，使其肉眼无法察觉；2) 隐藏并对仅有利于搜索引擎蜘蛛的文案进行加粗或*斜体*处理。
+但与互联网上的任何事物一样，CSS 既可以用于善意，也可以用于坏意。显然，如果你想让你的网站长期运行，就应该避免某些 CSS 技术。为什么呢？因为某些 CSS 技术可能被搜索引擎视为垃圾信息，因此如果你使用了这些技术，你的网站可能会被封禁。黑帽手段包括：1) 使用 CSS 隐藏从标题到正文的文本，使其肉眼无法察觉；2) 隐藏并对仅有利于搜索引擎蜘蛛的文案进行加粗或斜体处理。
 
 总而言之，CSS 能够并且是一种让你的网页更易于维护的可行方法——前提是你大多数页面都遵循相同的格式。如果你对 CSS 并不十分熟悉，请花时间看看 w3schools.com 的教程。它内容非常丰富，可以帮助你开始学习 CSS。
 
@@ -1145,4 +1150,3 @@ JavaScript 并不局限于浏览器。与其他语言相比，JavaScript 速度�
 现在你应该对 JavaScript 有了良好的理解，并能够使用 JavaScript 工作了。
 
 如果你喜欢这本书，请花时间在 Amazon 上给我留个评价。我很感谢你的诚实反馈，这对我继续制作高质量的书非常有帮助。
-

@@ -1,17 +1,12 @@
-# JAVASCRIPT 和 HTML CSS 编码实践指南：初学者编码
 
-
+# JavaScript 和 HTML CSS 编码实践指南：初学者编码
 
 ![](img/cover.jpeg)
 
+## JavaScript 函数 – 练习题
 
+### HTML 代码
 
-
-
-# JavaScript 函数 – 练习题
-
-
-## HTML 代码
 ```html
 <!DOCTYPE html>
 <html>
@@ -24,7 +19,8 @@
 </html>
 ```
 
-## JAVASCRIPT 代码
+### JavaScript 代码
+
 ```javascript
 function find_FirstNotRepeatedChar(str) {
   var arra1 = str.split('');
@@ -47,14 +43,16 @@ function find_FirstNotRepeatedChar(str) {
 console.log(find_FirstNotRepeatedChar('abacbec'));
 ```
 
-### 输出
+#### 输出
+
 e
 
-## 流程图
+### 流程图
+
 ![](img/Image00000.jpg)
 
+### HTML 代码
 
-## HTML 代码
 ```html
 <!DOCTYPE html>
 <html>
@@ -67,7 +65,8 @@ e
 </html>
 ```
 
-## JAVASCRIPT 代码
+### JavaScript 代码
+
 ```javascript
 function find_longest_word(str) {
   var array1 = str.match(/\w[a-z]{0,}/gi);
@@ -82,22 +81,30 @@ function find_longest_word(str) {
 console.log(find_longest_word('Web Development Tutorial'));
 ```
 
-### 输出
+#### 输出
+
 Development
 
-### 解释
-假设 `str` 等于 `@Web Production #Tutorial`。
-当字符串与正则表达式匹配时，使用 `match()` 方法来获取匹配项。
-作为 `str.match(/w[a-z]0,/gi)` 的结果将返回 `["Web", "Development", "Tutorial"]`。
-`for` 循环比较数组每个元素与上一个元素的长度，并返回最长的字符串。
-`length` 属性是一个 32 位无符号整数，其数值始终大于数组的最高索引。
+#### 解释
+
+假设`str`等于`@Web Production #Tutorial`。
+
+当字符串与正则表达式匹配时，使用`match()`方法来获取匹配项。
+
+作为`str.match(/w[a-z]0,/gi)`的结果将返回`["Web", "Development", "Tutorial"]`。
+
+`for`循环比较数组每个元素与上一个元素的长度，并返回最长的字符串。
+
+`length`属性是一个 32 位无符号整数，其数值始终大于数组的最高索引。
+
 语法 -> `arr.length`
 
-## 流程图
+### 流程图
+
 ![](img/Image00001.jpg)
 
+### HTML 代码
 
-## HTML 代码
 ```html
 <!DOCTYPE html>
 <html>
@@ -110,7 +117,8 @@ Development
 </html>
 ```
 
-## JAVASCRIPT 代码
+### JavaScript 代码
+
 ```javascript
 function vowel_count(str1) {
   var vowel_list = 'aeiouAEIOU';
@@ -125,21 +133,30 @@ function vowel_count(str1) {
 console.log(vowel_count("The quick fox"));
 ```
 
-### 输出
+#### 输出
+
 5
 
-### 解释
-`indexOf()` 方法返回调用字符串对象中从 `fromIndex` 开始定义的值的首次出现的索引。如果找不到值，则返回 -1。
-语法 -> `str.indexOf(searchValue[, fromIndex])`
-参数包括：
-`searchValue`：要查找的字符串。
-`fromIndex`（可选）：字符串向前搜索的索引。可以使用任何整数。
-如果满足条件 `(vowel_list.indexOf(str1[x])!== -1)`，则字符串字符将被视为元音。
+#### 解释
 
-## 流程图
+`indexOf()`方法返回调用字符串对象中从`fromIndex`开始定义的值的首次出现的索引。如果找不到值，则返回 -1。
+
+语法 -> `str.indexOf(searchValue[, fromIndex])`
+
+参数包括：
+
+`searchValue`：要查找的字符串。
+
+`fromIndex`（可选）：字符串向前搜索的索引。可以使用任何整数。
+
+如果满足条件`(vowel_list.indexOf(str1[x])!== -1)`，则字符串字符将被视为元音。
+
+### 流程图
+
 ![](img/Image00003.jpg)
 
-## HTML 代码
+### HTML 代码
+
 ```html
 <!DOCTYPE html>
 <html>
@@ -152,7 +169,8 @@ console.log(vowel_count("The quick fox"));
 </html>
 ```
 
-## JAVASCRIPT 代码
+### JavaScript 代码
+
 ```javascript
 function test_prime(n) {
   if (n===1) {
@@ -161,33 +179,29 @@ function test_prime(n) {
   else if(n === 2) {
     return true;
   }else {
-```
-
-
-
-
-
-```javascript
-for(var x = 2; x < n; x++) {
-  if(n % x === 0) {
-    return false;
+    for(var x = 2; x < n; x++) {
+      if(n % x === 0) {
+        return false;
+      }
+    }
+    return true; 
   }
-}
-return true; 
-}
 }
 console.log(test_prime(37));
 ```
-### 输出
+
+#### 输出
+
 True
 
-## 流程图
+### 流程图
+
 ![](img/Image00004.jpg)
 
+注意六种可能的值：`object`、`boolean`、`method`、`number`、`string`或`undefined`。
 
-注意六种可能的值：object、boolean、method、number、string 或 undefined。
+### HTML 代码
 
-## HTML 代码
 ```html
 <!DOCTYPE html>
 <html>
@@ -200,7 +214,8 @@ True
 </html>
 ```
 
-## JAVASCRIPT 代码
+### JavaScript 代码
+
 ```javascript
 function detect_data_type(value) {
   var dtypes = [Function, RegExp, Number, String, Boolean, Object], x, len;
@@ -217,16 +232,21 @@ console.log(detect_data_type(12));
 console.log(detect_data_type('w3resource'));
 console.log(detect_data_type(false));
 ```
-### 输出
+
+#### 输出
+
 number
+
 string
+
 Boolean
 
-# JavaScript: 从数组中找到第二小和第二数字
+## JavaScript: 从数组中找到第二小和第二数字
 
 ![](img/Image00005.jpg)
 
-## HTML 代码
+### HTML 代码
+
 ```html
 <!DOCTYPE html>
 <html>
@@ -236,7 +256,8 @@ Boolean
 </html>
 ```
 
-## JAVASCRIPT 代码
+### JavaScript 代码
+
 ```javascript
 function Second_Greatest_Lowest(arr_num) {
   arr_num.sort(function(x,y) {
@@ -254,17 +275,21 @@ function Second_Greatest_Lowest(arr_num) {
 }
 console.log(Second_Greatest_Lowest([1,2,3,4,5]));
 ```
-### 输出
+
+#### 输出
+
 2,4
 
-## 流程图
+### 流程图
+
 ![](img/Image00006.jpg)
 
-# JAVASCRIPT 基础
+## JavaScript 基础
 
-# 计算两个数字的乘法和除
+### 计算两个数字的乘法和除
 
-## HTML 代码
+#### HTML 代码
+
 ```html
 <!DOCTYPE html>
 <html>
@@ -283,13 +308,14 @@ body {margin: 30px;}
 <input type="button" onClick="divideBy()" Value="除" />
 </form>
 <p>结果是 : <br>
-<span id="result"></</span>
+<span id="result"></span>
 </p>
 </body>
 </html>
 ```
 
-## JAVASCRIPT 代码
+#### JavaScript 代码
+
 ```javascript
 function multiplyBy() {
   var num1 = document.getElementById("firstNumber").value;
@@ -302,11 +328,20 @@ function divideBy() {
   document.getElementById("result").innerHTML = num1 / num2;
 }
 ```
-## 解析
+
+#### 解析
+
 `document.getElementById(id).value`: 文本框的属性用于设置或返回值。
-`document.getElementById("result").innerHTML`: 元素的 `innerHTML` 属性用于设置或返回 HTML 内容。
-### 输出
+
+`document.getElementById("result").innerHTML`: 元素的`innerHTML`属性用于设置或返回 HTML 内容。
+
+#### 输出
+
 ![](img/Image0007.jpg)
+
+### 将温度摄氏度转换为华氏度
+
+#### HTML 代码
 
 ```html
 <!DOCTYPE html>
@@ -320,7 +355,8 @@ function divideBy() {
 </html>
 ```
 
-## JAVASCRIPT 代码
+#### JavaScript 代码
+
 ```javascript
 function cToF(celsius) {
   var cTemp = celsius;
@@ -335,13 +371,17 @@ function fToC(fahrenheit) {
   console.log(message);
 }
 ```
-### 输出
+
+#### 输出
+
 60°C is 140°F.
+
 45°F is 7°C.
 
-# 找出三个整数中最大的
+### 找出三个整数中最大的
 
-## HTML 代码
+#### HTML 代码
+
 ```html
 <!DOCTYPE html>
 <html>
@@ -354,7 +394,8 @@ function fToC(fahrenheit) {
 </html>
 ```
 
-## JAVASCRIPT 代码
+#### JavaScript 代码
+
 ```javascript
 function max_of_three(x, y, z) {
   var max_val = 0;
@@ -372,10 +413,18 @@ console.log(max_of_three(1,2,3));
 console.log(max_of_three(10,5,2));
 console.log(max_of_three(7,15,12));
 ```
-### 输出
+
+#### 输出
+
 3
+
 10
+
 15
+
+### 反转给定字符串
+
+#### HTML 代码
 
 ```html
 <!DOCTYPE html>
@@ -389,7 +438,8 @@ console.log(max_of_three(7,15,12));
 </html>
 ```
 
-## JAVASCRIPT 代码
+#### JavaScript 代码
+
 ```javascript
 function string_reverse(str) {
   return str.split("").reverse().join("");
@@ -398,14 +448,19 @@ console.log(string_reverse("resource"));
 console.log(string_reverse("www"));
 console.log(string_reverse("JavaScript"));
 ```
-### 输出
+
+#### 输出
+
 ecruoser
+
 www
+
 tpircS
 
-# 将字符串中的每个字符替换为字母表中的下一个字符
+### 将字符串中的每个字符替换为字母表中的下一个字符
 
-## HTML 代码
+#### HTML 代码
+
 ```html
 <!DOCTYPE html>
 <html>
@@ -418,7 +473,8 @@ tpircS
 </html>
 ```
 
-## JAVASCRIPT 代码
+#### JavaScript 代码
+
 ```javascript
 function LetterChanges(text) {
   var s = text.split('');
@@ -446,23 +502,28 @@ function LetterChanges(text) {
 }
 console.log(LetterChanges("PYTHON"));
 ```
-### 输出
+
+#### 输出
+
 QZUPPO
-
-
-
-
 
 ```javascript
 console.log(LetterChanges("W3R"));
 console.log(LetterChanges("php"));
 ```
 
-## 输出:
+#### 输出
+
 QZUIPO
+
 X4S
+
 qIq
-## HTML 代码
+
+### 去掉第一个和最后一个字符的字符串
+
+#### HTML 代码
+
 ```html
 <!DOCTYPE html>
 <html>
@@ -476,7 +537,8 @@ qIq
 </html>
 ```
 
-## JAVASCRIPT 代码
+#### JavaScript 代码
+
 ```javascript
 function without_first_end(str) {
   return str.substring(1, str.length - 1);
@@ -486,15 +548,16 @@ console.log(without_first_end('JS'));
 console.log(without_first_end('PHP'));
 ```
 
-## 输出:
+#### 输出
+
 avaScrip
+
 H
 
-# 拼接两个字符串
+### 拼接两个字符串（它们第一个字符之外）
 
-## 它们第一个字符之外
+#### HTML 代码
 
-## HTML 代码
 ```html
 <!DOCTYPE html>
 <html>
@@ -508,7 +571,8 @@ H
 </html>
 ```
 
-## JAVASCRIPT 代码
+#### JavaScript 代码
+
 ```javascript
 function concatenate(str1, str2) {
   str1 = str1.substring(1, str1.length);
@@ -520,15 +584,16 @@ console.log(concatenate("A","B"));
 console.log(concatenate("AA","BB"));
 ```
 
-## 输出:
+#### 输出
+
 HPS
+
 AB
 
-# 移动最后三个字符
+### 移动最后三个字符到指定字符串的开头
 
-## 指定字符串的开头
+#### HTML 代码
 
-## HTML 代码
 ```html
 <!DOCTYPE html>
 <html>
@@ -542,7 +607,8 @@ AB
 </html>
 ```
 
-## JAVASCRIPT 代码
+#### JavaScript 代码
+
 ```javascript
 function right_three(str) {
     if (str.length > 1)
@@ -556,32 +622,33 @@ console.log(right_three("JavaScript"));
 console.log(right_three("Hi"));
 ```
 
-## 输出:
+#### 输出
+
 honPyt
+
 iptJavaScr
+
 Hi
 
-# 计算和
+### 计算给定数组的三个元素之和（长度为 3 的整数）
 
-## 给定数组的三个元素
+#### HTML 代码
 
-### 长度为 3 的整数
-
-## HTML 代码
 ```html
 <!DOCTYPE html>
 <html>
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <title>计算长度为 3 的给定整数数组中三个元素之的 JavaScript 程序</title>
+  <title>计算长度为 3 的给定整数数组中三个元素之和的 JavaScript 程序</title>
 </head>
 <body>
 </body>
 </html>
 ```
 
-## JAVASCRIPT 代码
+#### JavaScript 代码
+
 ```javascript
 function sum_three(nums)
 {
@@ -592,14 +659,17 @@ console.log(sum_three([5, 7, 9]));
 console.log(sum_three([0, 8, -11]));
 ```
 
-## 输出:
+#### 输出
+
 62
+
 21
+
 -3
 
-# 相加两个数字
+### 相加给定正整数的两个数字
 
-## 给定正整数的
+#### HTML 代码
 
 ```html
 <!DOCTYPE html>
@@ -614,7 +684,8 @@ console.log(sum_three([0, 8, -11]));
 </html>
 ```
 
-## JAVASCRIPT 代码
+#### JavaScript 代码
+
 ```javascript
 function add_two_digits(n)
   {
@@ -624,13 +695,16 @@ console.log(add_two_digits(25))
 console.log(add_two_digits(50))
 ```
 
-## 输出:
+#### 输出
+
 7
+
 5
 
-# 检查给定年份是否为闰年
+### 检查给定年份是否为闰年
 
-## HTML 代码
+#### HTML 代码
+
 ```html
 <!DOCTYPE html>
 <html>
@@ -643,7 +717,8 @@ console.log(add_two_digits(50))
 </html>
 ```
 
-## JAVASCRIPT 代码
+#### JavaScript 代码
+
 ```javascript
 function leapyear(year)
 {
@@ -656,17 +731,20 @@ console.log(leapyear(1800));
 console.log(leapyear(100));
 ```
 
-## 输出:
+#### 输出
+
 true
+
 true
+
 false
+
 false
 
-# 检查给定数字
+### 检查给定数字是否为 3 的倍数或 7 的倍数
 
-## 3 的倍数或 7 的倍数
+#### HTML 代码
 
-## HTML 代码
 ```html
 <!DOCTYPE html>
 <html>
@@ -680,7 +758,8 @@ false
 </html>
 ```
 
-## JAVASCRIPT 代码
+#### JavaScript 代码
+
 ```javascript
 function test37(x)
 {
@@ -698,26 +777,25 @@ console.log(test37(10));
 console.log(test37(21));
 ```
 
+### 检查字符串是否以 'Java' 开头
 
-# 检查以 'Java' 开头
+#### HTML 代码
 
-## 否则
-
-## HTML 代码
 ```html
 <!DOCTYPE html>
 <html>
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <title>检查字符串是否以 'Java' 开头的否则的 JavaScript 程序</title>
+  <title>检查字符串是否以 'Java' 开头的 JavaScript 程序</title>
 </head>
 <body>
 </body>
 </html>
 ```
 
-## JAVASCRIPT 代码
+#### JavaScript 代码
+
 ```javascript
 function start_java(str) {
   if (str.length < 4) {
@@ -736,16 +814,18 @@ console.log(start_java("Java"));
 console.log(start_java("Python"));
 ```
 
-## 输出:
+#### 输出
+
 true
+
 true
+
 false
 
-# 检查两个给定整数
+### 检查两个给定整数是否在 50..99 范围内
 
-## 在 50..99 范围内
+#### HTML 代码
 
-## HTML 代码
 ```html
 <!DOCTYPE html>
 <html>
@@ -759,7 +839,8 @@ false
 </html>
 ```
 
-## JAVASCRIPT 代码
+#### JavaScript 代码
+
 ```javascript
 function check_range(x, y)
   {
@@ -776,14 +857,18 @@ console.log(check_range(52, 80));
 console.log(check_range(15, 99));
 ```
 
-## 输出:
+#### 输出
+
 false
-true
+
 true
 
-# 找到距离 100 最近的数值
+true
 
-## HTML 代码
+### 找到距离 100 最近的数值
+
+#### HTML 代码
+
 ```html
 <!DOCTYPE html>
 <html>
@@ -791,10 +876,12 @@ true
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>从两个不同的给定整数中找到距离 100 最近的值的 JavaScript 程序</title>
+</head>
 </html>
 ```
 
-## JAVASCRIPT 代码
+#### JavaScript 代码
+
 ```javascript
 function near_100(x, y) {
   if (x != y) {
@@ -817,20 +904,18 @@ console.log(near_100(-90, -89));
 console.log(near_100(90, 90));
 ```
 
-## 输出:
+#### 输出
+
 90
+
 -89
+
 false
 
+### 在单独浏览器标签页中打开链接的文档
 
+#### HTML 代码
 
-
-
-# 在单独浏览器标签页中
-
-## 打开链接的文档
-
-## HTML 代码
 ```html
 <!DOCTYPE html>
 <html>
@@ -844,8 +929,10 @@ false
 </html>
 ```
 
+### 在 HTML 文档中编写地址的正确方式
 
-## HTML 代码
+#### HTML 代码
+
 ```html
 <!DOCTYPE html>
 <html>
@@ -863,11 +950,10 @@ false
 </html>
 ```
 
-# 为 area 元素指定替代文本
+### 为 area 元素指定替代文本（如果存在 href 属性）
 
-## 如果存在 href 属性
+#### HTML 代码
 
-## HTML 代码
 ```html
 <body> 
   <img src="https://www.htmlresource.com/htmlr_images/html-area-element.png" alt="area " border="0" usemap="#Map"/> 
@@ -879,9 +965,10 @@ false
 </body>
 ```
 
-# 创建使用 article 元素的 HTML 文档
+### 创建使用 article 元素的 HTML 文档
 
-## HTML 代码
+#### HTML 代码
+
 ```html
 <!DOCTYPE html>
 <html>
@@ -898,9 +985,10 @@ false
 </html>
 ```
 
-# 创建使用 aside 元素的 HTML 文档
+### 创建使用 aside 元素的 HTML 文档
 
-## HTML 代码
+#### HTML 代码
+
 ```html
 <!DOCTYPE html>
 <html>
@@ -918,15 +1006,18 @@ false
 </html>
 ```
 
-### 输出
+#### 输出
+
 我访问了 htmlresource 的 HTML5 教程
 
-## HTML5 教程
+##### HTML5 教程
+
 在 HTML5 教程中，我可以使用 HTML5 和相关的 API（如 GeoLocation、拖放、WebSocket 等）开发出色的 Web 应用程序。
 
-# 为音频添加控制控件
+### 为音频添加控制控件
 
-## HTML 代码
+#### HTML 代码
+
 ```html
 <body>
 <audio controls>
@@ -936,9 +1027,10 @@ false
 </body>
 ```
 
-# 使用 HTML 标签编写粗体文本
+### 使用 HTML 标签编写粗体文本
 
-## HTML 代码
+#### HTML 代码
+
 ```html
 <!DOCTYPE html>
 <html>
@@ -949,12 +1041,14 @@ false
 <body>
 ```
 
-### 输出
-"htmlresource" 是普通文本 -  "htmlresource" 是粗体文本。
+#### 输出
 
-# 指定基础 URL
+"htmlresource" 是普通文本 - "htmlresource" 是粗体文本。
 
-## HTML 代码
+### 指定基础 URL
+
+#### HTML 代码
+
 ```html
 <!DOCTYPE html>
 <html>
@@ -973,15 +1067,16 @@ false
 </html>
 ```
 
-# 孤立可能以不同方向格式化的文本部分
+### 孤立可能以不同方向格式化的文本部分
 
-## HTML 代码
+#### HTML 代码
+
 ```html
 <!DOCTYPE html>
 <html>
 <head>
   <meta charset="utf-8">
-  <title><span class="heading">如何孤立一个与其外部文本可能以不同方向格式化的文本部分</span></span></title>
+  <title>如何孤立一个与其外部文本可能以不同方向格式化的文本部分</title>
 </head>
 <body>
 <p>
@@ -997,18 +1092,25 @@ false
 </body>
 </html>
 ```
-### 输出
+
+#### 输出
+
 在下面的示例中，用户名将与比赛中的分数一起显示。
-如果浏览器不支持 `bdi` 元素，阿拉伯语用户的用户名将混淆文本（双向算法会将冒号和数字 "80" 放在 "User" 单词旁边，而不是 "points" 单词旁边）。
+
+如果浏览器不支持`bdi`元素，阿拉伯语用户的用户名将混淆文本（双向算法会将冒号和数字 "80" 放在 "User" 单词旁边，而不是 "points" 单词旁边）。
 
 User <bdi>hrefs</bdi>: 40 分
+
 User <bdi>jdoe</bdi>: 60 分
+
 User <bdi > ترحي ب </bdi>:80 分
-注意：`bdi` 元素目前仅在 Firefox 和 Chrome 中支持。
 
-# HTML CSS 练习：表格
+注意：`bdi`元素目前仅在 Firefox 和 Chrome 中支持。
 
-## HTML 代码
+## HTML CSS 练习：表格
+
+### HTML 代码
+
 ```html
 <table>
 <tr>
@@ -1025,6 +1127,10 @@ User <bdi > ترحي ب </bdi>:80 分
 </tr>
 </table>
 ```
+
+### 创建简单的导航栏
+
+#### HTML 代码
 
 ```html
 <!DOCTYPE html>
@@ -1083,9 +1189,10 @@ li:hover ul li:link{display: block;margin-left:-30px;}
 </html>
 ```
 
-# HTML CSS 练习：HTML 表单
+## HTML CSS 练习：HTML 表单
 
-## HTML 代码
+### HTML 代码
+
 ```html
 <!DOCTYPE html>
 <html lang="en">
@@ -1105,12 +1212,6 @@ li:hover ul li:link{display: block;margin-left:-30px;}
   <label>选择套餐* :</label><br>
   <select name="package">
 <option value="Goa" >果阿德</option>
-```
-
-
-
-
-
 <option value="Kashmir">克什米尔</option>
 <option value="Rajasthan">拉贾斯坦</option>
 </select>
@@ -1132,12 +1233,13 @@ li:hover ul li:link{display: block;margin-left:-30px;}
 </div>
 </body>
 </html>
+```
 
 ![](img/Image00011.jpg)
 
-# HTML CSS 练习：HTML5 音频与视频
+## HTML CSS 练习：HTML5 音频与视频
 
-## HTML 代码
+### HTML 代码
 
 ```html
 <!DOCTYPE HTML>
@@ -1156,12 +1258,14 @@ li:hover ul li:link{display: block;margin-left:-30px;}
 </html>
 ```
 
-### 输出结果
+#### 输出结果
+
 ![](img/Image00012.jpg)
 
-# HTML CSS 练习：CSS 按钮
+## HTML CSS 练习：CSS 按钮
 
-## HTML 代码
+### HTML 代码
+
 ```html
 <!doctype html>
 <html>
@@ -1193,12 +1297,14 @@ font-size:125%
 </html>
 ```
 
-### 输出结果
+#### 输出结果
+
 ![](img/Image00013.jpg)
 
-# HTML CSS 练习：使用 css3 创建缝线效果
+## HTML CSS 练习：使用 CSS3 创建缝线效果
 
-## HTML 代码
+### HTML 代码
+
 ```html
 <!DOCTYPE html>
 <html lang="en">
@@ -1224,17 +1330,19 @@ font-size:125%
   </style>
 </head>
 <body>
-  <div class="stitched</div
+  <div class="stitched"></div>
 </body>
 </html>
 ```
 
-### 输出结果
+#### 输出结果
+
 ![](img/Image0014.jpg)
 
-# HTML CSS 练习：使用 CSS3 创建角角
+## HTML CSS 练习：使用 CSS3 创建角角
 
-## HTML 代码
+### HTML 代码
+
 ```html
 <!DOCTYPE HTML>
 <html lang="en">
@@ -1284,68 +1392,15 @@ transform: rotate(-45deg);
 </body>
 </html>
 ```
-*(注：由于原文 HTML 代码片段不完整，在翻译时基于逻辑进行了结构性补全或保留，此处为保持原意的结构性翻译)*
 
-## 修正后的 HTML CSS 练习：CSS3 角角效果（基于逻辑的的翻译）
-由于 HTML 代码代码截，，
+#### 输出结果
 
-对应的 HTML 代码：
-```html
-<!DOCTYPE HTML>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<title>CSS33 角</title>
-<style type="text/css">
-.ribbon {
-background-color: #a00;
-overflow: hidden;
-white-space: nowrap;
- /* 顶部角 */
-position: absolute;
-left: -50px;
-top: 40px;
- /* 45 度旋转 */
--webkit-transform: rotate(-45deg);
--moz-transform: rotate(-45deg);
--ms-transform: rotate(-45deg);
--o-transform: rotate(-45deg);
- transform: rotate(-45deg);
- /* 创建阴影 */
--webkit-box-shadow: 0 0 10px #888;
--moz-box-shadow: 0 0 10px #888;
- box-shadow: 0 0 10px #888;
-}
-.ribbon a {
-color: #fff;
-text-decoration: none;
-padding: 5px;
-0px;
-font-weight: bold;
-display: block;
-width: 150px;
-height: 50px;
-line-height: 50px;
-text-align: center;
-position: absolute;
-top: -25px;
-left: 25px;
-transform: rotate(-45deg);
-}
-</style>
-</head>
-<body>
-<div class="ribbon"><a href="#">优惠</a></div>
-</body>
-</html>
-```
-
-### 输出结果
 ![](img/Image0015.jpg)
 
-# HTML CSS 练习：CSS3 模糊文本
+## HTML CSS 练习：CSS3 模糊文本
 
-## HTML 代码
+### HTML 代码
+
 ```html
 <!DOCTYPE HTML>
 <html lang="en">
@@ -1364,12 +1419,14 @@ filter: blur(5px);
 </html>
 ```
 
-### 输出结果
+#### 输出结果
+
 ![](img/Image0016.jpg)
 
-# HTML CSS 练习：CSS3 气泡框
+## HTML CSS 练习：CSS3 气泡框
 
-## HTML 代码
+### HTML 代码
+
 ```html
 <!DOCTYPE HTML>
 <html lang="en">
@@ -1405,42 +1462,14 @@ border-top: 20px solid #f9f9f9;
 </html>
 ```
 
-### 输出结果
+#### 输出结果
+
 ![](img/Image0017.jpg)
 
-*(注：由于提供的原始文本中存在大量截断和重复错误，以上翻译已根据高级文档工程师的逻辑对代码块结构进行了对齐修复，以确保输出符合文档可读性)*
+## HTML CSS 练习：后代选择器
 
----
-**抱歉，由于您提供的原始文本存在严重的 HTML 标签截断和代码重复（例如多个 `</body>` 标签和未闭合的标签），在翻译时我遵循了“不漏译”的原则，但对代码逻辑的完整性进行了最小化干预。以下是基于您提供的特定文本的精确翻译：**
+### HTML 代码
 
-[content]
-*(此处由于您提供的文本内容逻辑混乱，实际操作中按您提供的字符进行逐行翻译)*
-
-**更正：如果您需要修复后的完整 HTML 结构，请重新提供完整的代码。由于您的原始文本存在乱码和截断，我将为您翻译可识别的文本部分。**
-
-[/content]
-
-*(由于输入文本质量问题，建议重新提供完整源码以获得最佳效果)*
-
-**以下是针对您文本中有效文本部分的最终翻译：**
-
-[content]
--   [费曼学习法](https://wiki.example.org/feynmans_learning_method)的灵感源于诺贝尔物理奖获得者**理查德·费曼**。
-
-1.  运用费曼技巧，你只需花上`20 min`就能深入理解知识点，而且记忆深刻，*难以遗忘*。
-
-```
-if (condVar > someVal) {console.log("xxx")}
-```
-
-
-
-
-# 这是一级标题
-
-# HTML CSS 练习：后代选择器
-
-## HTML 代码
 ```html
 <!DOCTYPE HTML>
 <html lang="en">
@@ -1459,12 +1488,14 @@ color:#4b6c9c;
 </html>
 ```
 
-### 输出结果
+#### 输出结果
+
 只有 span 内部的文本将显示为不同的颜色
 
-# 样式占位符文本
+## 样式占位符文本
 
-## HTML 代码
+### HTML 代码
+
 ```html
 <!DOCTYPE html>
 <html>
@@ -1490,14 +1521,14 @@ input[type="text"]::-webkit-input-placeholder {
 </html>
 ```
 
-### 输出结果
+#### 输出结果
+
 ![](img/Image00019.jpg)
 
-# 指定表单数据的推送位置
+## 指定表单数据的推送位置（当表单被提交时）
 
-## 当表单被提交时
+### HTML 代码
 
-## HTML 代码
 ```html
 <!DOCTYPE html>
 <html>
@@ -1516,14 +1547,14 @@ input[type="text"]::-webkit-input-placeholder {
 </html>
 ```
 
-### 输出结果
+#### 输出结果
+
 ![](img/Image00020.jpg)
 
-# 发送表单数据
+## 发送表单数据（使用哪种 HTTP 方法）
 
-## (使用哪种 HTTP 方法)
+### HTML 代码
 
-## HTML 代码
 ```html
 <!DOCTYPE html>
 <html>
@@ -1543,14 +1574,14 @@ input[type="text"]::-webkit-input-placeholder {
 </html>
 ```
 
-### 输出结果
+#### 输出结果
+
 ![](img/Image00021.jpg)
 
-# 指定显示位置
+## 指定显示位置（提交表单后的响应）
 
-## 提交表单后的响应
+### HTML 代码
 
-## HTML 代码
 ```html
 <!DOCTYPE html>
 <html>
@@ -1569,12 +1600,14 @@ input[type="text"]::-webkit-input-placeholder {
 </html>
 ```
 
-### 输出结果
+#### 输出结果
+
 ![](img/Image00022.jpg)
 
-# 为按钮指定名称
+## 为按钮指定名称
 
-## HTML 代码
+### HTML 代码
+
 ```html
 <!DOCTYPE html>
 <html>
@@ -1591,12 +1624,14 @@ input[type="text"]::-webkit-input-placeholder {
 </html>
 ```
 
-### 输出结果
+#### 输出结果
+
 ![](img/Image00023.jpg)
 
-# 指定按钮的类型
+## 指定按钮的类型
 
-## HTML 代码
+### HTML 代码
+
 ```html
 <!DOCTYPE html>
 <html>
@@ -1616,14 +1651,14 @@ input[type="text"]::-webkit-input-placeholder {
 </html>
 ```
 
-### 输出结果
+#### 输出结果
+
 ![](img/Image00024.jpg)
 
-# 动态绘制图形
+## 动态绘制图形（通过脚本）
 
-## 通过脚本
+### HTML 代码
 
-## HTML 代码
 ```html
 <!DOCTYPE html>
 <html>
@@ -1645,12 +1680,14 @@ background-color: blue;
 </html>
 ```
 
-### 输出结果
+#### 输出结果
+
 ![](img/Image00025.jpg)
 
-# 定义表格标题
+## 定义表格标题
 
-## HTML 代码
+### HTML 代码
+
 ```html
 <!DOCTYPE html>
 <html>
@@ -1686,12 +1723,14 @@ background-color: blue;
 </html>
 ```
 
-### 输出结果
+#### 输出结果
+
 ![](img/Image00026.jpg)
 
-# 指定列属性
+## 指定列属性
 
-## HTML 代码
+### HTML 代码
+
 ```html
 <!DOCTYPE html>
 <html>
@@ -1724,4 +1763,3 @@ background-color: blue;
 </body>
 </html>
 ```
-

@@ -1,55 +1,42 @@
+
 # HTML 与 JavaScript 实践指南
 
-
-
-
----
-
-
----
-
-## 1. 编写程序实现 marquee 标签及其属性。
+## 1. 编写程序实现 marquee 标签及其属性
 
 ```html
 <HTML>
+  <HEAD>
+    <TITLE>Marquee 标签示例！！！</TITLE>
+  </HEAD>
+  <BODY>
+    <font color="blue">
+      <marquee
+        width="100%"
+        height="15%"
+        behavior="slide"
+        direction="right"
+        scrolldelay="10"
+        scrollamount="8"
+        loop="20"
+      >
+        <h1>Marquee 标签示例 ---&gt;</h1>
+      </marquee>
 
-    <HEAD>
-
-        <TITLE>Marquee 标签示例！！！</TITLE>
-
-    </HEAD>
-
-    <BODY> <font color="blue"><marquee
-    width="100%" height="15%" behavior="slide"
-    direction="right" scrolldelay=10 scrollamount=8
-    loop=20>
-
-        <h1>Marquee 标签示例 ---></h1>
-
-    </marquee>
-
-    <marquee behavior="scroll" direction="left">
-
-        <h1><--- 向左移动 </h1>
-
-    </marquee> </font>
+      <marquee behavior="scroll" direction="left">
+        <h1>&lt;--- 向左移动</h1>
+      </marquee>
+    </font>
 
     <marquee behavior="alternate">
-
-        <h1><----交替行为---></h1>
-
+      <h1>&lt;----交替行为---&gt;</h1>
     </marquee>
-
-</BODY> </HTML>
+  </BODY>
+</HTML>
 ```
-
----
 
 ### 代码输出
 
----
-
-## 2. 编写程序使用 HTML 显示班级时间表。
+## 2. 编写程序使用 HTML 显示班级时间表
 
 ```html
 <HTML>
@@ -57,10 +44,10 @@
     <TITLE>班级时间表</TITLE>
   </HEAD>
   <BODY>
-    <H2 align="center">理学硕士 第<SUP>2</SUP>学期 </H2>
+    <H2 align="center">理学硕士 第<SUP>2</SUP>学期</H2>
     <BR>
     <H4 align="center">班级时间表</H4>
-    <TABLE border=1 align="center">
+    <TABLE border="1" align="center">
       <tr>
         <th>日期</th>
         <th>12:00-2:00</th>
@@ -124,72 +111,73 @@
 | 星期四 | 数据 | 实验(批次 4) | 计算机信息系统 | 计算机信息系统 | 计算机信息系统 | 计算机信息系统 | - |
 | 星期五 | 数据 | 实验(批次 5) | 计算机信息系统 | 计算机信息系统 | 计算机信息系统 | 计算机信息系统 | - |
 
----
-
-## 3. 编写程序使用 HTML 实现表单。
+## 3. 编写程序使用 HTML 实现表单
 
 ```html
 <HTML>
-
   <HEAD>
-
     <TITLE>表单示例</TITLE>
-
   </HEAD>
-
   <BODY>
-
     <FORM>
-
       <H2 align="center">员工数据</H2>
-
       <center>
-
-        员工姓名 ：
+        员工姓名：
 
         <input type="text" name="sname">
 
         <br><br>
 
-        父亲姓名 ：
+        父亲姓名：
 
         <input type="text" name="fname">
 
         <br><br>
 
-        性别 ：
+        性别：
+      </center>
+    </FORM>
+  </BODY>
+</HTML>
 ```
 
-
+### 表单补充内容
 
 # HTML 与 JavaScript 练习题
 
-地址 :
+地址：
 
-<textarea rows=3 name="add">
-</textarea>
+```html
+<textarea rows="3" name="add"></textarea>
+
 <br><br>
 
-创建密码 :
+创建密码：
 
 <input type="password" name="pwd">
+
 <br><br>
+
 <input type="reset" value="重置">
+
 <input type="submit" value="提交">
 
 </center>
+
 </FORM>
+
 </BODY>
+
 </HTML>
+```
 
 ### 代码输出
 
 ![](img/118de41f1d7757a3a32bcc09c536fee2_21_0.png)
 
-# HTML 与 JavaScript 练习题
+## 4. 编写一个程序，使用 HTML 实现带有其属性的 img 标签
 
-## 4. 编写一个程序，使用 HTML 实现带有其属性的 img 标签。
-
+```html
 <HTML>
   <HEAD>
     <TITLE>IMG EXAMPLE</TITLE>
@@ -201,79 +189,90 @@
     </center>
   </BODY>
 </HTML>
+```
 
 ### 代码输出
 
 ![](img/118de41f1d7757a3a32bcc09c536fee2_23_0.png)
 
-## 5. 编写一个程序，使用 HTML 实现下标和上标。
+## 5. 编写一个程序，使用 HTML 实现下标和上标
 
+```html
 <HTML>
-<HEAD>
-<TITLE>HTML Subscript and superscript</TITLE>
-</HEAD>
-<BODY>
-<center>
-<H2>
-下标 : H<sub>2</sub>O =
-H<sub>2</sub> + O
-<br><br>
-上标 : 2<sup>4</sup> = 16
-</H2>
-</center>
-</BODY>
+  <HEAD>
+    <TITLE>HTML Subscript and superscript</TITLE>
+  </HEAD>
+  <BODY>
+    <center>
+      <H2>
+        下标：H<sub>2</sub>O = H<sub>2</sub> + O
+        <br><br>
+        上标：2<sup>4</sup> = 16
+      </H2>
+    </center>
+  </BODY>
 </HTML>
+```
 
 ### 代码输出
 
 ![](img/118de41f1d7757a3a32bcc09c536fee2_25_0.png)
 
-## 6. 编写一个程序，在 HTML 中实现框架。
+## 6. 编写一个程序，在 HTML 中实现框架
 
+```html
 <HTML>
   <HEAD>
-    <TITLE>框架测试...</TITLE></HEAD>
-    <FRAMESET COLS="30%,70%">
-      <FRAMESET ROWS="75%,25%">
-        <FRAME SRC="1.html" NAME="menu">
-        <FRAME SRC="2.html" NAME="logo">
-      </FRAMESET>
-      <FRAMESET ROWS="*">
-        <FRAME SRC="3.html" NAME="main">
-      </FRAMESET>
-    </FRAMESET>
+    <TITLE>框架测试...</TITLE>
   </HEAD>
+  <FRAMESET COLS="30%,70%">
+    <FRAMESET ROWS="75%,25%">
+      <FRAME SRC="1.html" NAME="menu">
+      <FRAME SRC="2.html" NAME="logo">
+    </FRAMESET>
+    <FRAMESET ROWS="*">
+      <FRAME SRC="3.html" NAME="main">
+    </FRAMESET>
+  </FRAMESET>
 </HTML>
+```
 
-## 7. 编写一个程序，在 HTML 中实现 SVG（可缩放矢量图形）。
+## 7. 编写一个程序，在 HTML 中实现 SVG（可缩放矢量图形）
 
+```html
 <HTML>
   <HEAD>
     <TITLE>SVG EXAMPLE</TITLE>
   </HEAD>
   <BODY>
     <svg width="300" height="200">
-      <polygon points="100,10,40,180,190,60,10,60,160,180" style="fill:lime;stroke:purple;stroke-width:5;fill-rule:evenodd;" />
+      <polygon
+        points="100,10,40,180,190,60,10,60,160,180"
+        style="fill:lime;stroke:purple;stroke-width:5;fill-rule:evenodd;"
+      />
     </svg>
   </BODY>
 </HTML>
+```
 
 ### 代码输出
 
 ![](img/118de41f1d7757a3a32bcc09c536fee2_28_0.png)
 
-## 8. 编写一个程序，在 HTML 中实现内联 CSS。
+## 8. 编写一个程序，在 HTML 中实现内联 CSS
 
+```html
 <HTML>
-<HEAD>
-<TITLE>CSS EXAMPLE</TITLE>
-</HEAD>
-<BODY>
-<h1 style="background-color:#d0e4fe;font-size:100px;"/>
-内联 CSS
-</h1>
-</BODY>
+  <HEAD>
+    <TITLE>CSS EXAMPLE</TITLE>
+  </HEAD>
+  <BODY>
+    <h1 style="background-color:#d0e4fe;font-size:100px;">
+      内联 CSS
+    </h1>
+  </BODY>
 </HTML>
+```
 
 ### 代码输出
 
@@ -281,34 +280,34 @@ H<sub>2</sub> + O
 
 ![](img/118de41f1d7757a3a32bcc09c536fee2_30_1.png)
 
-## 9. 编写一个程序，在 HTML 中实现内部 CSS。
+## 9. 编写一个程序，在 HTML 中实现内部 CSS
 
+```html
 <HTML>
-<HEAD>
-<TITLE>CSS EXAMPLE</TITLE>
-<style>
-h1
-{
-font-size: 100px;
-background-color: yellow;
-}
-</style>
-</HEAD>
-<BODY>
-<h1>
-内部 CSS
-</h1>
-</BODY>
+  <HEAD>
+    <TITLE>CSS EXAMPLE</TITLE>
+    <style>
+      h1 {
+        font-size: 100px;
+        background-color: yellow;
+      }
+    </style>
+  </HEAD>
+  <BODY>
+    <h1>
+      内部 CSS
+    </h1>
+  </BODY>
 </HTML>
-
-# HTML 与 JavaScript 练习题
+```
 
 ### 代码输出
 
 ![](img/118de41f1d7757a3a32bcc09c536fee2_32_0.png)
 
-## 10. 编写一个程序，在 HTML 中实现外部 CSS。
+## 10. 编写一个程序，在 HTML 中实现外部 CSS
 
+```html
 <HTML>
   <HEAD>
     <TITLE>CSS EXAMPLE</TITLE>
@@ -320,21 +319,25 @@ background-color: yellow;
     </h1>
   </BODY>
 </HTML>
+```
 
-**extrnal.css**
+`extrnal.css`：
 
-h1{ font-size: 200px;
+```css
+h1 {
+  font-size: 200px;
   background-color: #d0e4fe;
-  font-style:italic; }
-
-# HTML 与 JavaScript 练习题
+  font-style: italic;
+}
+```
 
 ### 代码输出
 
 ![](img/118de41f1d7757a3a32bcc09c536fee2_34_0.png)
 
-## 11. 编写一个程序，演示 alert()、prompt() 和 confirm() 函数。
+## 11. 编写一个程序，演示 `alert()`、`prompt()` 和 `confirm()` 函数
 
+```html
 <HTML>
   <HEAD>
     <TITLE>Predefined Functions</TITLE>
@@ -342,18 +345,21 @@ h1{ font-size: 200px;
   <BODY>
     <script>
       alert("继续....？");
-      var txt="";
+
+      var txt = "";
+
       var name = prompt("请输入您的姓名...");
+
       var b = confirm("您确定吗？？？");
-      if(b) document.write("<h1>欢迎 "+name+"</h1>");
-      else document.write("<h1>输入已取消!!!!</h1>")
+
+      if (b) document.write("<h1>欢迎 " + name + "</h1>");
+      else document.write("<h1>输入已取消!!!!</h1>");
     </script>
   </BODY>
 </HTML>
+```
 
-# HTML 与 JavaScript 练习题
-
-## *代码输出*
+### 代码输出
 
 ![](img/118de41f1d7757a3a32bcc09c536fee2_36_0.png)
 
@@ -361,139 +367,156 @@ h1{ font-size: 200px;
 
 ![](img/118de41f1d7757a3a32bcc09c536fee2_36_2.png)
 
-## 12. 编写一个程序，使用递归函数计算阶乘数。
+## 12. 编写一个程序，使用递归函数计算阶乘数
 
+```html
 <HTML>
-<HEAD>
-<TITLE>Predefined Functions</TITLE>
-<script>
-function fun()
-{
-var n = document.getElementById("n").value;
-fact(n);
-}
-var f=1;
-function fact(n)
-{
-if(n>0)
-{
-f = f*n;
-fact(n-1);
-}
-}
-</script>
-</HEAD>
-<BODY>
-<input type="text" id="n" value="5">
-<button onclick="fun()">阶乘</button>
-<p id="demo"></p>
-</BODY>
+  <HEAD>
+    <TITLE>Predefined Functions</TITLE>
+    <script>
+      function fun() {
+        var n = document.getElementById("n").value;
+        fact(n);
+      }
+
+      var f = 1;
+
+      function fact(n) {
+        if (n > 0) {
+          f = f * n;
+          fact(n - 1);
+        }
+      }
+    </script>
+  </HEAD>
+  <BODY>
+    <input type="text" id="n" value="5">
+    <button onclick="fun()">阶乘</button>
+    <p id="demo"></p>
+  </BODY>
 </HTML>
+```
 
-**替代实现：**
+### 替代实现
 
+```html
 <HTML>
-<HEAD>
-<TITLE>Predefined Functions</TITLE>
-<script>
-function fun()
-{
-var n = document.getElementById("n").value;
-fact(n);
-}
-var f=1;
-function fact(n)
-{
-if(n>0)
-{
-f = f*n;
-fact(n-1);
-}
-else
-document.getElementById("result").innerHTML =
-"阶乘 = "+f;
-}
-</script>
-</HEAD>
-<BODY>
-<br><br>
-请输入任意数字：
-<input type="text" id="n">
-<br><br>
-<input type="submit" value="获取阶乘" Onclick="fun()">
-<h2 id="result"></h2>
-</BODY>
+  <HEAD>
+    <TITLE>Predefined Functions</TITLE>
+    <script>
+      function fun() {
+        var n = document.getElementById("n").value;
+        fact(n);
+      }
+
+      var f = 1;
+
+      function fact(n) {
+        if (n > 0) {
+          f = f * n;
+          fact(n - 1);
+        } else {
+          document.getElementById("result").innerHTML = "阶乘 = " + f;
+        }
+      }
+    </script>
+  </HEAD>
+  <BODY>
+    <br><br>
+
+    请输入任意数字：
+
+    <input type="text" id="n">
+
+    <br><br>
+
+    <input type="submit" value="获取阶乘" onclick="fun()">
+
+    <h2 id="result"></h2>
+  </BODY>
 </HTML>
+```
 
 ### 代码输出
 
 ![](img/118de41f1d7757a3a32bcc09c536fee2_39_0.png)
 
-## 13. 编写一个程序，使用函数计算给定数字的立方。
+## 13. 编写一个程序，使用函数计算给定数字的立方
 
+```html
 <HTML>
-    <HEAD>
-        <TITLE>Predefined Functions</TITLE>
-        <script>
-            function fun()
-            {
-                var n = document.getElementById("n").value;
+  <HEAD>
+    <TITLE>Predefined Functions</TITLE>
+    <script>
+      function fun() {
+        var n = document.getElementById("n").value;
+        document.getElementById("result").innerHTML =
+          "结果 = " + n * n * n;
+      }
+    </script>
+  </HEAD>
+  <BODY>
+    <br><br>
 
-                document.getElementById("result").innerHTML =
-                "结果 = "+n*n*n;
-            }
-        </script>
-    </HEAD>
-    <BODY>
-        <br><br>
-        请输入任意数字：
-        <input type="text" id="n">
-        <br><br>
-        <input type="submit" value="获取立方" OnClick="fun()">
+    请输入任意数字：
 
-        <h2 id="result"></h2>
-    </BODY>
+    <input type="text" id="n">
+
+    <br><br>
+
+    <input type="submit" value="获取立方" onclick="fun()">
+
+    <h2 id="result"></h2>
+  </BODY>
 </HTML>
-
-# HTML 与 JavaScript 练习题
+```
 
 ### 代码输出
 
 ![](img/118de41f1d7757a3a32bcc09c536fee2_42_0.png)
 
-## 14. 编写一个程序，使用函数将摄氏度转换为华氏度。
+## 14. 编写一个程序，使用函数将摄氏度转换为华氏度
 
+```html
 <HTML>
-	<HEAD>
-		<TITLE>Predefined Functions</TITLE>
-		<script>
-			function fun()
-			{
-				var n = document.getElementById("n").value;
-				var r = n*9/5 +32;
-				document.getElementById("result").innerHTML = "结果 = "+r+" 华氏度";
-			}
-		</script>
-	</HEAD>
-	<BODY>
-		<br><br>
-		请输入任意数字：
-		<input type="text" id="n">
-		<br><br>
-		<input type="submit" value="获取立方" Onclick="fun()">
+  <HEAD>
+    <TITLE>Predefined Functions</TITLE>
+    <script>
+      function fun() {
+        var n = document.getElementById("n").value;
+        var r = n * 9 / 5 + 32;
+        document.getElementById("result").innerHTML =
+          "结果 = " + r + " 华氏度";
+      }
+    </script>
+  </HEAD>
+  <BODY>
+    <br><br>
 
-		<h2 id="result"></h2>
-	</BODY>
+    请输入任意数字：
+
+    <input type="text" id="n">
+
+    <br><br>
+
+    <input type="submit" value="获取立方" onclick="fun()">
+
+    <h2 id="result"></h2>
+  </BODY>
 </HTML>
+```
+
+
 
 # HTML 与 JavaScript 练习题
 
-### 代码输出
+## 代码输出
 
 ![](img/118de41f1d7757a3a32bcc09c536fee2_45_0.png)
 
-## 15. 编写一个程序，输入两个整数并使用 if() 和 else if() 显示较大的那个。
+## 15. 编写一个程序，输入两个整数并使用`if()`和`else if()`显示较大的那个。
 
+```html
 <HTML>
     <HEAD>
         <TITLE>Predefined Functions</TITLE>
@@ -502,12 +525,14 @@ document.getElementById("result").innerHTML =
         <script>
             var a = prompt("请输入第一个数字....");
             var b = prompt("请输入第二个数字....");
+
             if(a>b) document.write("<h2>"+a+" 大于 "+b+"</h2>");
             else if(b>a) document.write("<h2>"+b+" 大于 "+a+"</h2>");
             else document.write("<h2>两者相等</h2>");
         </script>
     </BODY>
 </HTML>
+```
 
 ### 代码输出
 
@@ -519,6 +544,7 @@ document.getElementById("result").innerHTML =
 
 ## 16. 编写一个程序，使用循环找出三位的阿姆斯特朗数。
 
+```html
 <HTML>
 <HEAD>
 <TITLE>Armstrong Numbers</TITLE>
@@ -527,62 +553,46 @@ document.getElementById("result").innerHTML =
 <script>
 var i;
 document.write("<h2>阿姆斯特朗数");
+
 for(i=1;i<=999;i++)
 {
-if(Math.floor(i/100) == Math.floor(i%10))
-{
-if(Math.floor(i/100)==0)
-document.write("<br>0"+i);
-else document.write("<br>"+i);
+    if(Math.floor(i/100) == Math.floor(i%10))
+    {
+        if(Math.floor(i/100)==0)
+            document.write("<br>0"+i);
+        else document.write("<br>"+i);
+    }
 }
-}
-
 </script>
-
 </BODY>
 </HTML>
+```
 
 ### 代码输出
 
 ![](img/118de41f1d7757a3a32bcc09c536fee2_51_0.png)
 
+## 17. 编写一个 JavaScript 程序，使用嵌套`for`循环构建以下图案。
 
-
-## 17. 编写一个JavaScript程序，使用嵌套for循环构建以下图案。
-
-```
+```html
 <HTML>
-
     <HEAD>
-
         <TITLE>Pattern</TITLE>
-
     </HEAD>
-
     <BODY>
-
         <script>
-
             var i,j;
-
             document.write("<h2>Pattern:<br>");
 
             for(i=0;i<10;i++)
-
             {
-
                 for(j=0;j<=i;j++)
-
-                document.write(" *");
+                    document.write(" *");
 
                 document.write("<br>");
-
             }
-
         </script>
-
     </BODY>
-
 </HTML>
 ```
 
@@ -590,11 +600,11 @@ else document.write("<br>"+i);
 
 ![](img/118de41f1d7757a3a32bcc09c536fee2_53_0.png)
 
-## HTML & JavaScript 练习题
+# HTML & JavaScript 练习题
 
-## 18. 编写一个JavaScript程序，使用while循环计算两个正整数的最大公约数（GCD）。
+## 18. 编写一个 JavaScript 程序，使用`while`循环计算两个正整数的最大公约数（GCD）。
 
-```
+```html
 <HTML>
   <HEAD>
     <TITLE>Pattern</TITLE>
@@ -645,9 +655,9 @@ else document.write("<br>"+i);
 
 GCD = 1
 
-## 19. 编写一个JavaScript函数，使用switch case将十进制数转换为二进制、十六进制或八进制数。
+## 19. 编写一个 JavaScript 函数，使用`switch case`将十进制数转换为二进制、十六进制或八进制数。
 
-```
+```html
 <HTML>
   <HEAD>
     <TITLE>Pattern</TITLE>
@@ -728,11 +738,10 @@ GCD = 1
 
 ![](img/118de41f1d7757a3a32bcc09c536fee2_63_0.png)
 
-## 20. 编写一个JavaScript程序，找出数组中出现最频繁的元素。
+## 20. 编写一个 JavaScript 程序，找出数组中出现最频繁的元素。
 
-```
+```html
 <HTML>
-
 <HEAD>
 <TITLE>Array</TITLE>
 </HEAD>
@@ -745,7 +754,8 @@ var a=1,c=0,item=arr[0],i,j;
 for(i=0;i<arr.length;i++)
 {
     for(j=i;j<arr.length;j++)
-    if(arr[i]==arr[j]) c++;
+        if(arr[i]==arr[j]) c++;
+
     if(c>a)
     {
         item = arr[i];
@@ -756,9 +766,7 @@ for(i=0;i<arr.length;i++)
 
 alert("数组中出现最频繁的元素 = "+item);
 </script>
-
 </BODY>
-
 </HTML>
 ```
 
@@ -766,33 +774,21 @@ alert("数组中出现最频繁的元素 = "+item);
 
 ![](img/118de41f1d7757a3a32bcc09c536fee2_66_0.png)
 
-## 21. 编写一个JavaScript函数，获取指定月份的天数。
+## 21. 编写一个 JavaScript 函数，获取指定月份的天数。
 
-```
+```html
 <HTML>
-
   <HEAD>
-
     <TITLE>Date</TITLE>
-
     <script>
-
       function getdays()
-
       {
-
         var m = document.getElementById("m").value;
-
         var y = document.getElementById("y").value;
-
         var day = new Date(y,m,0).getDate();
-
         document.getElementById("result").innerHTML = day+" 天";
-
       }
-
     </script>
-
   </HEAD>
 
   <BODY>
@@ -815,9 +811,9 @@ alert("数组中出现最频繁的元素 = "+item);
 
 ![](img/118de41f1d7757a3a32bcc09c536fee2_69_0.png)
 
-## 22. 编写一个JavaScript函数，向Date对象添加指定的分钟数。
+## 22. 编写一个 JavaScript 函数，向`Date`对象添加指定的分钟数。
 
-```
+```html
 <HTML>
     <HEAD>
         <TITLE>Date</TITLE>
@@ -844,7 +840,7 @@ alert("数组中出现最频繁的元素 = "+item);
 </HTML>
 ```
 
-## HTML & JavaScript 练习题
+# HTML & JavaScript 练习题
 
 ### 代码输出
 
@@ -856,7 +852,7 @@ alert("数组中出现最频繁的元素 = "+item);
 
 ## 23. 编写一个程序，展示键盘的功能。
 
-```
+```html
 <html>
 <head>
 <script language="JavaScript">
@@ -883,39 +879,28 @@ function keypress(){
 
 ![](img/118de41f1d7757a3a32bcc09c536fee2_75_0.png)
 
-## HTML & JavaScript 练习题
+# HTML & JavaScript 练习题
 
-## 24. 编写一个程序，使用which属性显示鼠标事件。
+## 24. 编写一个程序，使用`which`属性显示鼠标事件。
 
-```
+```html
 <html>
-
 <head></head>
-
 <body>
-
 <div onmousedown="whichbutton(event)">点击此文本，使用任意鼠标按键将返回一个数字。
-
-<p> 1=鼠标左键</p>
-
-<p> 2=鼠标中键</p>
-
-<p> 3=鼠标右键</p>
-
+<p>1=鼠标左键</p>
+<p>2=鼠标中键</p>
+<p>3=鼠标右键</p>
 </div>
 
-<p> <strong>注意：</strong> IE 8 或更早版本不支持 which 属性</p>
+<p><strong>注意：</strong>IE 8 或更早版本不支持`which`属性</p>
 
 <script language="JavaScript">
-
 function whichbutton(event){
-
-alert("您按下了按钮 "+event.which);}
-
+    alert("您按下了按钮 "+event.which);
+}
 </script>
-
 </body>
-
 </html>
 ```
 
@@ -923,9 +908,9 @@ alert("您按下了按钮 "+event.which);}
 
 ![](img/118de41f1d7757a3a32bcc09c536fee2_77_0.png)
 
-## 25. 编写一个程序，展示load和unload事件。
+## 25. 编写一个程序，展示`load`和`unload`事件。
 
-```
+```html
 <html>
 <head>
 <script language="JavaScript">
@@ -947,49 +932,31 @@ Onunload="unload()">
 
 ![](img/118de41f1d7757a3a32bcc09c536fee2_79_0.png)
 
-## 26. 编写一个程序，接收用户的真实数据并将其存储在cookie中。
+## 26. 编写一个程序，接收用户的真实数据并将其存储在 cookie 中。
 
-```
+
+
+```html
 <html>
-
 <head>
-
 <title>JavaScript创建Cookie - 接收真实数据. 示例1</title>
-
 </head>
-
 <body>
-
 <h1 style="color: red">JavaScript创建Cookie，接收真实数据 - 示例1</h1><br>
-
 <hr />
-
 <script type="text/javascript">
-
 //为确保以下JavaScript代码兼容XHTML而这样做。 <![CDATA[
-
 var visitor_name = prompt("您叫什么名字？","");
-
 var expr_date = new Date("July 30, 2017");
-
 var cookie_date = expr_date.toUTCString();
-
 final_cookie = "Name = " +
-
-encodeURIComponent(visitor_name) + ";expires_on = "
-
-+ cookie_date;
-
+encodeURIComponent(visitor_name) + ";expires_on = " +
+cookie_date;
 document.cookie = final_cookie;
-
 alert(final_cookie);
-
 //]]>
-
 </script>
-
 </body>
-
 </html>
 ```
 
@@ -1001,9 +968,9 @@ alert(final_cookie);
 
 ![](img/118de41f1d7757a3a32bcc09c536fee2_82_1.png)
 
-## 27. 编写一个程序从 Cookie 中检索值。
+## 27. 编写一个程序从 Cookie 中检索值
 
-```
+```html
 <html>
 <head>
 <title>JavaScript : Retrieve values from a cookie - example1</title>
@@ -1041,9 +1008,9 @@ if (offset != -1)
 
 JavaScript : Retrieve values from a cookie - example1
 
-## 28. 编写一个 JavaScript 程序来检查表单验证。
+## 28. 编写一个 JavaScript 程序来检查表单验证
 
-```
+```html
 <HTML>
     <HEAD>
         <TITLE>FORM EXAMPLE</TITLE>
@@ -1125,9 +1092,9 @@ JavaScript : Retrieve values from a cookie - example1
 
 ![](img/118de41f1d7757a3a32bcc09c536fee2_91_1.png)
 
-## 29. 编写一个 JavaScript 程序来显示数字时钟。
+## 29. 编写一个 JavaScript 程序来显示数字时钟
 
-```
+```html
 <HTML>
     <HEAD>
         <TITLE>Clock</TITLE>
@@ -1168,9 +1135,9 @@ JavaScript : Retrieve values from a cookie - example1
 
 ![](img/118de41f1d7757a3a32bcc09c536fee2_94_1.png)
 
-## 30. 编写一个 JavaScript 程序来实现任意两个字符串方法。
+## 30. 编写一个 JavaScript 程序来实现任意两个字符串方法
 
-```
+```html
 <HTML>
     <HEAD>
         <TITLE>Date</TITLE>
@@ -1201,9 +1168,9 @@ JavaScript : Retrieve values from a cookie - example1
 
 ![](img/118de41f1d7757a3a32bcc09c536fee2_98_0.png)
 
-## 31. 编写一个 JavaScript 程序来检查一个数字是偶数还是奇数。
+## 31. 编写一个 JavaScript 程序来检查一个数字是偶数还是奇数
 
-```
+```html
 <HTML>
     <HEAD>
         <TITLE>Even Odd</TITLE>

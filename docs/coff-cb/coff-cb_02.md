@@ -1,3 +1,4 @@
+
 # 二、类和对象
 
 ## 对象的链式调用
@@ -8,7 +9,7 @@
 
 ### 解决方案
 
-在每次链式调用后返回 this（即@）对象
+在每次链式调用后返回`this`（即`@`）对象。
 
 ```js
 class CoffeeCup
@@ -41,10 +42,10 @@ eveningCup.properties # => { strength: 'dark', cream: true, sugar: true }
 jQuery 库使用类似的手段从每一个相似的方法中返回选择符对象，并在后续方法中通过调整选择的范围修改该对象：
 
 ```js
-    $('p').filter('.topic').first()
+$('p').filter('.topic').first()
 ```
 
-对我们自己对象而言，一点点元编程就可以自动设置这个过程并明确声明返回 this 的意图。
+对我们自己对象而言，一点点元编程就可以自动设置这个过程并明确声明返回`this`的意图。
 
 ```js
 addChainedAttributeAccessor = (obj, propertyAttr, attr) ->
@@ -170,7 +171,7 @@ zoo.helpfulInfo()
 
 #### 实例变量
 
-你必须在一个类的方法中才能定义实例变量（例如属性），在 constructor 结构中初始化你的默认值。
+你必须在一个类的方法中才能定义实例变量（例如属性），在`constructor`结构中初始化你的默认值。
 
 ```js
 class Zoo
@@ -195,7 +196,7 @@ otherZoo.animals
 
 ### 警告！
 
-不要试图在 constructor 外部添加变量（即使在 [elsewhere](http://arcturo.github.io/library/coffeescript/03_classes.html#content) 中提到了，由于潜在的 JavaScript 的原型概念，这不会像预期那样运行正确）。
+不要试图在`constructor`外部添加变量（即使在[elsewhere](http://arcturo.github.io/library/coffeescript/03_classes.html#content)中提到了，由于潜在的 JavaScript 的原型概念，这不会像预期那样运行正确）。
 
 ```js
 class BadZoo
@@ -269,11 +270,11 @@ console.log x.foo isnt y.foo, x.foo, y.foo
 
 ### 讨论
 
-通过赋值来复制对象与通过克隆函数来复制对象的区别在于如何处理引用。赋值只会复制对象的引用，而克隆函数则会:
+通过赋值来复制对象与通过克隆函数来复制对象的区别在于如何处理引用。赋值只会复制对象的引用，而克隆函数则会：
 
-*   创建一个全新的对象
-*   这个新对象会复制原对象的所有属性，
-*   并且对原对象的所有子对象，也会递归调用克隆函数，复制每个子对象的所有属性。
+- 创建一个全新的对象。
+- 这个新对象会复制原对象的所有属性。
+- 并且对原对象的所有子对象，也会递归调用克隆函数，复制每个子对象的所有属性。
 
 下面是一个通过赋值来复制对象的例子：
 
@@ -290,7 +291,7 @@ console.log x.foo isnt y.foo, x.foo, y.foo
  # => false, test, test
 ```
 
-显然，复制之后修改 y 也就修改了 x。
+显然，复制之后修改`y`也就修改了`x`。
 
 ## 类的混合
 
@@ -300,7 +301,7 @@ console.log x.foo isnt y.foo, x.foo, y.foo
 
 ### 解决方案
 
-使用 mixOf 库函数，它会生成一个混合父类。
+使用`mixOf`库函数，它会生成一个混合父类。
 
 ```js
 mixOf = (base, mixins...) ->
@@ -348,8 +349,7 @@ earth.answer()
 使用存在判断运算符（existential operator）。
 
 ```js
-
-    window.MY_NAMESPACE ?= {}
+window.MY_NAMESPACE ?= {}
 ```
 
 ### 讨论
@@ -357,21 +357,20 @@ earth.answer()
 这行代码与下面的 JavaScript 代码等价：
 
 ```js
-
-    window.MY_NAMESPACE = window.MY_NAMESPACE || {};
+window.MY_NAMESPACE = window.MY_NAMESPACE || {};
 ```
 
 这是 JavaScript 中一个常用的技巧，即使用对象字面值来定义命名空间。这样先判断是否存在同名的命名空间然后再创建，可以避免重写已经存在的命名空间。
 
-## CoffeeScrip 的 type 函数
+## CoffeeScrip 的`type`函数
 
 ### 问题
 
-你想在不使用 typeof 的情况下知道一个函数的类型。（要了解为什么 typeof 不靠谱，请参见 [`javascript.crockford.com/remedial.html`](http://javascript.crockford.com/remedial.html)。）
+你想在不使用`typeof`的情况下知道一个函数的类型。（要了解为什么`typeof`不靠谱，请参见[`javascript.crockford.com/remedial.html`](http://javascript.crockford.com/remedial.html)。）
 
 ### 解决方案
 
-使用下面这个 type 函数
+使用下面这个`type`函数。
 
 ```js
 type = (obj) ->
@@ -392,10 +391,10 @@ type = (obj) ->
 
 ### 讨论
 
-这个函数模仿了 jQuery 的 [$.type 函数](http://api.jquery.com/jQuery.type/)。
+这个函数模仿了 jQuery 的[`$.type`函数](http://api.jquery.com/jQuery.type/)。
 
-需要注意的是，在某些情况下，只要使用鸭子类型检测及存在运算符就可以不必检测对象的类型了。例如，下面这行代码不会发生异常，它会在 myArray 的确是数组（或者一个带有 push 方法的类数组对象）的情况下向其中推入一个元素，否则什么也不做。
+需要注意的是，在某些情况下，只要使用鸭子类型检测及存在运算符就可以不必检测对象的类型了。例如，下面这行代码不会发生异常，它会在`myArray`的确是数组（或者一个带有`push`方法的类数组对象）的情况下向其中推入一个元素，否则什么也不做。
 
 ```js
-    myArray?.push? myValue
+myArray?.push? myValue
 ```

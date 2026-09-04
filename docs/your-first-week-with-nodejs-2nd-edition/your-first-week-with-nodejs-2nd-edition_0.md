@@ -1,30 +1,13 @@
-# Node.js 入门指南，第 2 版
 
-
+# Node.js 入门指南，第我是由深度求索（DeepSeek）研发的 deepseek-v4-flash-0731 智能大模型。2 版
 
 ![](img/default_cover.jpeg)
+
 ![](img/default_cover.jpeg)
-
-
-
-
-
-
-
-
-
-
 
 ![SitePoint 标志](img/sitepoint-logo-2012.png)
 
-
-
-
-
-
-
-
-# 前言
+## 前言
 
 尽管已有许多尝试让 JavaScript 作为服务端语言运行，但 Node.js（通常简称为 Node）是第一个获得关注的环境。它现在被 Netflix、Uber 和 Paypal 等公司用于，以驱动它们的 Web 应用。Node 允许极快的性能；得益于它的事件循环模型，网络连接和数据库 I/O 等常见任务执行得非常快。
 
@@ -32,64 +15,64 @@
 
 在本书中，我们将对 Node 及其相关技术进行入门介绍，并引导你开始编写第一个 Node 应用。
 
-## 谁应该读这本书？
+### 谁应该读这本书？
 
 本书适合想要开始使用 Node 的 Web 开发者。假设你对 JavaScript 有良好的理解。
 
-## 使用的约定
+### 使用的约定
 
-### 代码示例
+#### 代码示例
 
 书中的代码使用等宽字体显示，如下所示：
 
 ```
- <h1>一个完美的夏日</h1>
+<h1>一个完美的夏日</h1>
 <p>这是一个在公园散步的美好日子。
-鸟儿在歌唱，孩子们都回学校上学了。</p> 
+鸟儿在歌唱，孩子们都回学校上学了。</p>
 ```
 
 当需要现有代码来提供上下文而不是重复所有代码时，将显示 ⋮：
 
 ```
- function animate() {
-    ⋮
-new_variable = "Hello";
+function animate() {
+  ⋮
+  new_variable = "Hello";
 }
 ```
 
 某些代码行应该在一行内输入，但由于页面限制，我们对它们进行了换行处理。➥ 表示仅出于格式目的而存在的换行符，应该被忽略：
 
 ```
- URL.open("http://www.sitepoint.com/responsive-web-
+URL.open("http://www.sitepoint.com/responsive-web-
 ➥design-real-user-testing/?responsive1");
 ```
 
 你会注意到，我们在全书中使用了特定的布局样式来表示不同类型的信息。请关注以下项目。
 
-### 提示、注释和警告
+#### 提示、注释和警告
 
-### 嘿，你！
+##### 嘿，你！
 
 提示（Tips）提供有用的小贴士。
 
-### 咳咳，打扰一下……
+##### 咳咳，打扰一下……
 
 注释（Notes）是与当前主题相关但并非至关重要的补充说明。将它们视作额外的信息即可。
 
-### 确保你始终……
+##### 确保你始终……
 
 ……注意这些重要点。
 
-### 注意！
+##### 注意！
 
 警告（Warnings）突出了可能会让你遇到困难的问题。
 
-## 补充材料
+### 补充材料
 
-* [`www.sitepoint.com/community/`](https://www.sitepoint.com/community/) 是 SitePoint 的论坛，用于任何问题
-* **books@sitepoint.com** 是我们的邮箱地址，以任何问题或其他原因。
+- [`www.sitepoint.com/community/`](https://www.sitepoint.com/community/) 是 SitePoint 的论坛，用于任何问题。
+- `books@sitepoint.com` 是我们的邮箱地址，以任何问题或其他原因。
 
-# 第 1 章：Node 是什么以及我什么时候用它？
+## 第 1 章：Node 是什么以及我什么时候用它？
 
 ### 作者 James Hibbard
 
@@ -97,69 +80,65 @@ new_variable = "Hello";
 
 如果这听起来像是你需要的，请继续阅读。
 
-## “Node”还是“Node.js”？
+### “Node”还是“Node.js”？
 
 请注意，在本书中我们将交替使用 `Node` 和 `Node.js`。
 
-## 什么是 Node.js？
+### 什么是 Node.js？
 
-网上有很多定义。让我们来看看几个流行的定义。这是该项目主页的说法（https://nodejs.org/en/）：
+网上有很多定义。让我们来看看几个流行的定义。这是该项目主页的说法（<https://nodejs.org/en/>）：
 
 > Node.js® 是基于 Chrome V8 引擎的运行时。
 
-而这是 Stack Overflow 提供的（https://stackoverflow.com/tags/node.js/info）：
+而这是 Stack Overflow 提供的（<https://stackoverflow.com/tags/node.js/info>）：
 
 > Node.js 是基于 Google V8 引擎的事件驱动、非阻塞、异步 I/O 运行时。
 
 嗯，“事件驱动”、“非阻塞”、“异步 I/O”——一次性消化这些很大。所以让我们从另一个角度入手，从两个描述中提到的另一个细节——V8 引擎开始。
 
-### Node 构建在 Chrome V8 引擎之上
+#### Node 构建在 Chrome V8 引擎之上
 
-V8 引擎（https://v8.dev/）是 Google Chrome 以及其他基于 Chromium 的浏览器（包括 Brave、Opera 和 Vivaldi）中的 JavaScript 引擎。它为性能设计，负责将 JavaScript 直接编译为计算机可以执行的原生机器码。
+V8 引擎（<https://v8.dev/>）是 Google Chrome 以及其他基于 Chromium 的浏览器（包括 Brave、Opera 和 Vivaldi）中的 JavaScript 引擎。它为性能设计，负责将 JavaScript 直接编译为计算机可以执行的原生机器码。
 
 然而当我们说 Node 构建在 V8 引擎之上，并不是说 Node 程序在浏览器中运行。它们并不是。相反，Node 的创始人（Ryan Dahl）采用了 V8 引擎并对其进行了增强，增加了文件系统 API、HTTP 库以及许多与操作系统相关的实用方法。
 
 这意味着 Node.js 是一个我们可以在计算机上执行 JavaScript 的程序。换句话说，它是一个 JavaScript 运行时。
 
-## 如何安装 Node.js？
+### 如何安装 Node.js？
 
-在接下来的部分中，我们将安装 Node 并编写几个简单的程序。我们还将查看 npm（https://www.npmjs.com/），它是随 Node 一起捆的包管理器。
+在接下来的部分中，我们将安装 Node 并编写几个简单的程序。我们还将查看 `npm`（<https://www.npmjs.com/>），它是随 Node 一起捆的包管理器。
 
-### Node 二进制文件与版本管理器
-
-
-
-
+#### Node 二进制文件与版本管理器
 
 许多网站都会建议你前往 [Node 官方下载页面](https://nodejs.org/en/download/) 并获取适用于你系统的 Node 二进制文件。虽然这种方法可行，但我建议你使用版本管理器（version manager）。这是一个程序，允许你安装多个版本的 Node 并在它们之间随意切换。使用版本管理器有许多优点。例如，它可以消除在配合 `npm` 一起使用 Node 时可能遇到的权限问题，并允许你为每个项目设置 Node 版本。
 
 如果你想尝试版本管理器的路线，请参阅我们的快速贴士：[使用 nvm 安装多个版本的 Node.js](https://www.sitepoint.com/quick-tip-multiple-versions-node-nvm/)。否则，请从上面的链接获取适用于你系统的正确二进制文件并安装它们。
 
-### 用 Node.js 的方式编写“Hello, World!”
+#### 用 Node.js 的方式编写“Hello, World!”
 
 你可以通过打开终端并输入 `node -v` 来检查系统是否已安装了 Node。如果一切顺利，你应该能看到类似 `v12.14.1` 的显示。这是本文编写时的当前 LTS（长期支持）版本。
 
 接下来，创建一个新文件 `hello.js` 并复制以下代码：
 
-```
+```javascript
 console.log("Hello, World!");
 ```
 
 这使用了 Node 的[内置控制台模块](https://nodejs.org/api/console.html#console_console) 在终端窗口中显示消息。要运行此示例，请输入以下命令：
 
-```
+```bash
 node hello.js
 ```
 
 如果 Node.js 配置正确，屏幕将显示“Hello, World!”。
 
-### Node.js 对现代 JavaScript 有极佳的支持
+#### Node.js 对现代 JavaScript 有极佳的支持
 
 从这个[兼容性表格](https://node.green/) 可以看出，Node 对 ECMAScript 2015 (ES6) 及更高版本具有极佳的支持。由于你只针对一个运行时（特定的 V8 引擎版本），这意味着你可以使用最新、最现代的语法来编写 JavaScript。这也意味着你通常不需要担心兼容性问题——这就像你不会编写要在不同浏览器中运行的 JavaScript 时那样担心。
 
-为了说明这一点，这里有第二个程序，它使用了多个现代 JavaScript 特性，例如标签化的[模板字符串](https://www.sitepoint.com/understanding-ecmascript-6-template-strings/)、对象解构](https://www.sitepoint.com/preparing-ecmascript-6-destructuring-assignment/) 以及 [`Array.prototype.flatMap()](https://thecodebarbarian.com/whats-new-in-es2019-flat-flatmap-catch.html#arrayflat-and-arrayflatmap):
+为了说明这一点，这里有第二个程序，它使用了多个现代 JavaScript 特性，例如标签化的[模板字符串](https://www.sitepoint.com/understanding-ecmascript-6-template-strings/)、[对象解构](https://www.sitepoint.com/preparing-ecmascript-6-destructuring-assignment/) 以及 [`Array.prototype.flatMap()`](https://thecodebarbarian.com/whats-new-in-es2019-flat-flatmap-catch.html#arrayflat-and-arrayflatmap)：
 
-```
+```javascript
 function upcase(strings, ...values) {
   return values.map(name => name[0].toUpperCase() + name.slice(1))
     .join(' ') + strings[2];
@@ -173,7 +152,7 @@ const person = {
 };
 
 const { first, last } = person;
-const emoticon = [ ['┌', '('], ['˘', '⌣'], ['˘', ')', 'ʃ'] ];
+const emoticon = [['┌', '('], ['˘', '⌣'], ['˘', ')', 'ʃ']];
 
 console.log(
   upcase`${first} ${last} is the creator of JavaScript! ` + emoticon.flat().join('')
@@ -182,23 +161,23 @@ console.log(
 
 将此代码保存为名为 `index.js` 的文件，并在终端中使用命令 `node index.js` 运行它。你应该会在终端看到输出 `Brendan Eich is the creator of JavaScript! ┌(˘⌣˘)ʃ`。
 
-### 介绍 npm，JavaScript 包管理器
+#### 介绍 npm，JavaScript 包管理器
 
 正如我之前提到的，Node 附带了一个名为 `npm` 的包管理器。要检查你系统上安装了哪个版本，请输入 `npm -v`。
 
 除了作为 JavaScript 的包管理器，`npm` 还是全球最大的软件仓库。有超过 100 万个 JavaScript 代码包可供，每周下载量达数十亿。让我们快速查看如何使用 `npm` 安装一个包。
 
-### 全局安装包
+#### 全局安装包
 
 打开终端并输入以下内容：
 
-```
+```bash
 npm install -g jshint
 ```
 
 这将在系统上全局安装 [jshint 包](https://www.npmjs.com/package/jshint)。我们可以使用它来对上一个示例中的 `index.js` 文件进行代码检查：
 
-```
+```bash
 jshint index.js
 ```
 
@@ -206,17 +185,17 @@ jshint index.js
 
 如果你想复习一下代码检查（linting），请查看 [JavaScript 代码检查工具对比](https://www.sitepoint.com/comparison-javascript-linting-tools/)。
 
-### 本地安装包
+#### 本地安装包
 
 我们也可以将包本地安装到项目中，而不是在全局全局。创建一个 `test` 文件夹并在该目录下打开终端。接下来输入：
 
-```
+```bash
 npm init -y
 ```
 
 这将在同一文件夹中创建并自动填充一个 `package.json` 文件。接下来，使用 `npm` 安装 [lodash 包](https://www.npmjs.com/package/lodash) 并将其保存为项目依赖：
 
-```
+```bash
 npm install lodash --save
 ```
 
@@ -231,13 +210,13 @@ console.log(_.compact(arr));
 
 最后，使用 `node test.js` 运行脚本。你应该会在终端看到输出 `[1, 2, 3]`。
 
-### 使用 `package.json` 工作
+#### 使用 `package.json` 工作
 
 如果你查看 `test` 文件夹的内容，你会发现有一个 `node_modules` 文件夹。这是 `npm` 保存 lodash 以及 lodash 依赖的任何库的地方。`node_modules` 文件夹不应该提交到版本控制中，实际上，你也可以随时在项目中运行 `npm install` 来重新创建它。
 
 如果你打开 `package.json` 文件，你会在 `dependencies` 字段下列出 lodash。如果你想了解更多关于 `npm` 的信息，请务必阅读我们的文章 [npm——包管理器入门指南](https://www.sitepoint.com/beginners-guide-node-package/)。
 
-## Node.js 有什么用途？
+### Node.js 有什么用途？
 
 现在我们已经知道了 Node 和 npm 是什么以及如何安装它们，我们可以将注意力转向它们的最常见用途之一：安装（通过 npm）和运行（通过 Node）各种构建工具。
 
@@ -245,23 +224,20 @@ console.log(_.compact(arr));
 
 我们在 SitePoint 有许多关于构建工具的文章。以下是我精选的几篇：
 
-*   [Webpack 入门指南](https://www.sitepoint.com/webpack-beginner-guide/)
-*   [使用 ESLint——可扩展的 JavaScript 代码检查](https://www.sitepoint.com/up-and-running-with-eslint-the-pluggable-javascript-linter/)
-*   [Gulp.js 简介](https://www.sitepoint.com/introduction-gulp-js/)
-*   [使用 Mocha 和 Chai 进行 JavaScript 单元测试](https://www.sitepoint.com/unit-test-javascript-mocha-chai/)
+- [Webpack 入门指南](https://www.sitepoint.com/webpack-beginner-guide/)
+- [使用 ESLint——可扩展的 JavaScript 代码检查](https://www.sitepoint.com/up-and-running-with-eslint-the-pluggable-javascript-linter/)
+- [Gulp.js 简介](https://www.sitepoint.com/introduction-gulp-js/)
+- [使用 Mocha 和 Chai 进行 JavaScript 单元测试](https://www.sitepoint.com/unit-test-javascript-mocha-chai/)
 
 如果你使用任何现代 JavaScript 框架开发应用（例如 React 或 Angular），会被会被具备 Node 和 npm（可能是 [Yarn](https://www.sitepoint.com/yarn-vs-npm/)）的操作知识。这并不是因为你需要 Node 后端来运行这些框架。你不需要。相反，是因为这些框架以及许多相关包都通过 npm 提供，并依赖 Node 创建一个可以运行的合理开发环境。
 
 如果你对了解 Node 在现代 JavaScript 应用中扮演的角色感兴趣，请阅读 [现代 JavaScript 应用的剖析](https://www.sitepoint.com/anatomy-of-a-modern-javascript-application/)。
 
-Node.js 让我们能够在服务器上运行 JavaScript
-
-
-
+### Node.js 让我们能够在服务器上运行 JavaScript
 
 接下来我们来看 Node.js 最大的用例之一——在服务器上运行 JavaScript。这并不是一个新概念，Netscape 早在 19944 年就尝试过它。然而，Node.js 是第一个获得真正关注的实现，而且与传统语言相比，它提供了一些独特的优势。现在，Node 在[许多知名公司](https://www.netguru.co/blog/top-companies-used-nodejs-production) 的技术栈中都扮演着至关重要的角色。让我们来看看这些优势是什么。
 
-### Node.js 执行模型
+#### Node.js 执行模型
 
 从非常简单来说，当你连接到像 Apache 这样的传统服务器时，它会创建一个新线程来处理请求。在 PHP 或 Ruby 这样的语言中，任何后续的 I/O 操作（例如与数据库交互）都会阻塞你代码的执行，直到操作完成。也就是说，服务器必须等待数据库查询完成后才能继续处理结果。如果在此期间有新请求进入，服务器将创建新线程来处理它们。这可能是低效的，因为大量的线程会导致系统变得缓慢——在最坏的情况下，会导致网站崩溃。支持更多连接的最常用方法是添加更多服务器。
 
@@ -277,17 +253,19 @@ Node 的执行模型为服务器带来的额外开销非常小，因此它能够
 
 或者，如果你喜欢视频，可以查看这个精彩的演讲：[到底什么是事件循环？](https://www.youtube.com/watch?v=8aGhZQkoFbQ) 它不是 Node 专有的，但它在解释这个概念方面做得非常出色。
 
-### 有什么缺点吗？
+#### 有什么缺点吗？
 
 Node 运行在单线程中这一事实确实带来了一些限制。例如，应该避免阻塞的 I/O 调用，[对于 CPU 密集型操作应该交给工作线程](https://blog.logrocket.com/node-js-multithreading-what-are-worker-threads-and-why-do-they-matter-48ab102f8b10/)，并且应该始终正确处理错误，以免整个进程崩溃。
 
-一些开发者也不喜欢 JavaScript 强制要求的基于回调的编码风格（以至于甚至有一个[专门讨论编写异步 JavaScript 恐怖之地的网站](http://callbackhell.com/)）。但但随着原生 Promises 的出现，以及紧随其后的 async await，[现代 JavaScript 中的流控制](https://www.sitepoint.com/flow-control-callbacks-promises-async-await/)已经变得比以往任何时候都更容易了。
+
+
+一些开发者也不喜欢 JavaScript 强制要求的基于回调的编码风格（以至于甚至有一个[专门讨论编写异步 JavaScript 恐怖之地的网站](http://callbackhell.com/)）。但随着原生 Promises 的出现，以及紧随其后的 async await，[现代 JavaScript 中的流控制](https://www.sitepoint.com/flow-control-callbacks-promises-async-await/)已经变得比以往任何时候都更容易了。
 
 ### “Hello, World!”——服务器版本
 
-让我们快速看一个简单的“Hello, World!”HTTP 服务器示例：
+让我们快速看一个简单的“Hello, World!” HTTP 服务器示例：
 
-```
+```javascript
 const http = require('http');
 
 http.createServer((request, response) => {
@@ -298,11 +276,11 @@ http.createServer((request, response) => {
 console.log('Server running on http://localhost:3000');
 ```
 
-要运行此代码，将代码复制到名为 `hello-world-server.js` 的文件中，并使用 `node hello-world-server.js` 运行它。打开浏览器并访问 [`localhost:3000`](http://localhost:3000)，即可在浏览器中看到“Hello, World!”。
+要运行此代码，将代码复制到名为`hello-world-server.js`的文件中，并使用`node hello-world-server.js`运行它。打开浏览器并访问[`localhost:3000`](http://localhost:3000)，即可在浏览器中看到“Hello, World!”。
 
 现在让我们来看代码。
 
-我们首先引入 Node 的原 own [HTTP 模块](https://nodejs.org/api/http.html)。然后我们使用它的 [createServer](https://nodejs.org/api/http.html#http_http_createserver_options_requestlistener) 方法创建一个新的 Web 服务器对象，并向其传递一个匿名函数。每当建立到服务器的每一个新连接时，该函数都会被调用。
+我们首先引入 Node 的原生 [HTTP 模块](https://nodejs.org/api/http.html)。然后我们使用它的 [createServer](https://nodejs.org/api/http.html#http_http_createserver_options_requestlistener) 方法创建一个新的 Web 服务器对象，并向其传递一个匿名函数。每当建立到服务器的每一个新连接时，该函数都会被调用。
 
 匿名函数带有两个参数（`request` 和 `response`）。这些参数包含了来自用户的请求和响应，我们用响应来发送 200 HTTP 状态码以及我们的“Hello World!”消息。
 
@@ -318,11 +296,9 @@ Node 特别适用于构建需要实时交互或协作的应用——例如聊天
 
 ## Node.js 的优势有哪些？
 
-除了速度和可扩展性之外，在 Web 服务器（以及浏览器）中中使用 JavaScript 的另一个经常被提及的优势是，你的大脑不再需要切换模式。你可以用同一种语言完成所有工作，对于开发者来说，这让你效率更高（可能也更快乐）。
+除了速度和可扩展性之外，在 Web 服务器（以及浏览器）中使用 JavaScript 的另一个经常被提及的优势是，你的大脑不再需要切换模式。你可以用同一种语言完成所有工作，对于开发者来说，这让你效率更高（可能也更快乐）。
 
 Node 的另一个优点是它精通 JSON。JSON 可能是 Web 上最重要的数据交换格式，也是与对象数据库（如 MongoDB）交互的通用语言。JSON 非常适合 JavaScript 程序消费，这意味着当你使用 Node 工作时，数据可以在层与层之间流畅流动，无需重新格式化。你可以拥有从浏览器到服务器到数据库的统一语法。
-
-
 
 最后，JavaScript 是无处不在的：我们大多数人都熟悉 JavaScript，或者在某个时候用过它。这意味着过渡到 Node 开发可能比转向其他后端语言更容易。正如 Craig Buckler 在他的 [Node vs PHP 对决](https://www.sitepoint.com/sitepoint-smackdown-php-vs-node-js/)中所说，JavaScript 可能仍然是[世界上最被误解的语言](http://www.crockford.com/javascript/javascript.html)—但一旦理解了这些概念，它会让其他语言显得非常笨拙。
 
@@ -336,7 +312,7 @@ Node.js 还可以用于[构建跨平台桌面应用](https://www.sitepoint.com/p
 
 ## 结论
 
-JavaScript 无处不在，而 Node 是一个庞大且广泛的主题。尽管如此，我希望在本指南中，我像我在开头承诺的那样，为你提供了初学者友的、 Node.js 及其主要范式的概述。我也希望当你重新阅读之前看过的定义时，这些事情会变得更有意义。
+JavaScript 无处不在，而 Node 是一个庞大且广泛的主题。尽管如此，我希望在本指南中，我像我在开头承诺的那样，为你提供了初学者友的、Node.js 及其主要范式的概述。我也希望当你重新阅读之前看过的定义时，这些事情会变得更有意义。
 
 > Node.js 是一个基于事件、非阻塞、异步的 I/O 运行时，它使用了 Google 的 V8 JavaScript 引擎和 libuv 库。
 
@@ -348,7 +324,7 @@ JavaScript 无处不在，而 Node 是一个庞大且广泛的主题。尽管如
 
 本教程介绍了如何构建一个简单的页面计数服务。任何页面都可以使用它来显示“此已被访问 X 次”，就像二十年前 HTML 开发者做的那样。
 
-该服务将使用标准的 [Node.js API](https://nodejs.org/dist/latest/docs/api/) 开发，以演示 HTTP 处理、URL 解析、存储和文件操作等概念。在项目的生产过程中不会使用任何预构建的第三方模块或应用程序：*我们要自力更生！*
+该服务将使用标准的 [Node.js API](https://nodejs.org/dist/latest/docs/api/) 开发，以演示 HTTP 处理、URL 解析、存储和文件操作等概念。在项目的生产过程中不会使用任何预构建的第三方模块或应用程序：我们要自力更生！
 
 ## 前提条件
 
@@ -356,20 +332,20 @@ JavaScript 无处不在，而 Node 是一个庞大且广泛的主题。尽管如
 
 一个良好的文本编辑器会让编码更高效、更愉快。流行的选项包括 [VS Code](https://code.visualstudio.com/)、[Atom](https://atom.io/)、[Sublime Text](https://www.sublimetext.com/) 和 [Brackets](http://brackets.io/)。
 
-你将频繁使用命令行，所以请确保你知道如何启动终端应用程序。要开始的话，请安装 [nodemon](https://nodemon.io/) 和 [small-static-server](https://www.npmjs.com/package/small-static-server) 作为全局 `npm` 包：
+你将频繁使用命令行，所以请确保你知道如何启动终端应用程序。要开始的话，请安装 [nodemon](https://nodemon.io/) 和 [small-static-server](https://www.npmjs.com/package/small-static-server) 作为全局`npm`包：
 
 ```bash
 npm install -g nodemon small-static-server
 ```
 
-*   `nodemon` 可在源代码更改时启动并重启 Node.js 应用程序
-*   `ss` 可在任何目录下启动一个基于文件的静态 Web 服务器
+- `nodemon` 可在源代码更改时启动并重启 Node.js 应用程序。
+- `ss` 可在任何目录下启动一个基于文件的静态 Web 服务器。
 
 最后，一点点 JavaScript 知识将大有可为！
 
 ## 项目概览
 
-在开发期间，我们的 Node.js Web 服务器将在 `http://localhost:3000/` 运行。任何页面都可以通过添加一段 HTML 代码来使用它显示计数器。例如：
+在开发期间，我们的 Node.js Web 服务器将在`http://localhost:3000/`运行。任何页面都可以通过添加一段 HTML 代码来使用它显示计数器。例如：
 
 ```html
 <script src="http://localhost:3000/counter.js"></script>
@@ -377,45 +353,42 @@ npm install -g nodemon small-static-server
 
 在这种情况下，会发生以下事情：
 
-1.  服务器通过检查 HTTP 请求头中的 `referer` 来找到调用页面的 URL。
-2.  服务器提取引用者的协议、主机和路径（忽略查询字符串），并生成一个 32 位的 MD5 哈希。这比保留一个长 URL 更高效。
-3.  URL 哈希的计数器加 1。
-4.  服务器通过 JavaScript `document.write()` 响应并在页面上显示计数器。
+1. 服务器通过检查 HTTP 请求头中的`referer`来找到调用页面的 URL。
+2. 服务器提取引用者的协议、主机和路径（忽略查询字符串），并生成一个 32 位的 MD5 哈希。这比保留一个长 URL 更高效。
+3. URL 哈希的计数器加 1。
+4. 服务器通过 JavaScript `document.write()`响应并在页面上显示计数器。
 
-`document.write()` 虽然简单但会影响性能，因为它会阻塞浏览器渲染直到接收完整响应。还提供了其他三个计数选项：
+`document.write()`虽然简单但会影响性能，因为它会阻塞浏览器渲染直到接收完整响应。还提供了其他三个计数选项：
 
-*   [一个 SVG 计数器](https://github.com/sitepoint-editors/pagehit-ram/blob/master/testpages/page-svg.html)，它返回一个包含在 `<text>` 块中的计数器生成图像：
+- [一个 SVG 计数器](https://github.com/sitepoint-editors/pagehit-ram/blob/master/testpages/page-svg.html)，它返回一个包含在`<text>`块中的计数器生成图像：
 
-    ```html
-     <img src="http://localhost:3000/counter.svg" />
-    ```
+  ```html
+  <img src="http://localhost:3000/counter.svg" />
+  ```
 
-*   [一个延迟脚本计数器](https://github.com/sitepoint-editors/pagehit-ram/blob/master/testpages/page-svg.html)，它返回一个包含在 `<text>` 块中的计数器生成图像：
+- [一个延迟脚本计数器](https://github.com/sitepoint-editors/pagehit-ram/blob/master/testpages/page-svg.html)，它返回一个包含在`<text>`块中的计数器生成图像：
 
-    ```html
-     <img src="http://localhost:3000/counter.svg" />
-    ```
+  ```html
+  <img src="http://localhost:3000/counter.svg" />
+  ```
 
-*   [一个延迟脚本计数器](https://github.com/sitepoint-editors/pagehit-ram/blob/master/testpages/page-svg.html)，它返回一个包含在 `<text>` 块中的计数器生成图像：
+- [一个延迟脚本计数器](https://github.com/sitepoint-editors/pagehit-ram/blob/master/testpages/page-svg.html)，它返回一个包含在`<text>`块中的计数器生成图像：
 
-    ```html
-     <img src="http://localhost:3000/counter.svg" />
-    ```
+  ```html
+  <img src="http://localhost:3000/counter.svg" />
+  ```
 
 ## 内存存储
 
 初始实现使用内存对象来存储计数器。这对于来自其他技术领域的人来说可能很不寻常。Node.js 通常启动一个实现 Web 服务器的应用程序。一旦返回响应，该代码中的任何状态都会丢失。
 
+- `npm run debug`运行`debug`脚本。它使用`nodemon`监控文件更改并报告完整的堆栈跟踪（用于`Promise`调试）。
 
+如果你想了解更多关于`npm`脚本及其工作原理，请参考[此教程](https://www.sitepoint.com/guide-to-npm-as-a-build-tool/)。
 
+### 第 2 步：主文件（`index.js`）
 
-- `npm run debug` 运行 `debug` 脚本。它使用 `nodemon` 监控文件更改并报告完整的堆栈跟踪（用于 `Promise` 调试）。
-
-如果你想了解更多关于 `npm` 脚本及其工作原理，请参考[此教程](https://www.sitepoint.com/guide-to-npm-as-a-build-tool/)。
-
-### 第 2 ：主文件 (`index.js`)
-
-Node.js 应用从单个文件启动，该文件加载所有模块并实现核心逻辑。在该项目中它命名为 `index.js`，因此创建该文件并添加以下代码：
+Node.js 应用从单个文件启动，该文件加载所有模块并实现核心逻辑。在该项目中它命名为`index.js`，因此创建该文件并添加以下代码：
 
 ```javascript
 'use strict';
@@ -439,85 +412,83 @@ http.createServer((req, res) => {
 console.log(`page hit web service running on port ${port}`);
 ```
 
-保存文件并在控制台中通过 `npm run debug` 运行。等待消息出现：
+保存文件并在控制台中通过`npm run debug`运行。等待消息出现：
 
-```
+```text
 page hit web service running on port 3000
 ```
 
-然后在浏览器中加载 [`localhost:3000/hello/world`](http://localhost:3000/hello/world)。你应该能看到此内容：
+然后在浏览器中加载[`localhost:3000/hello/world`](http://localhost:3000/hello/world)。你应该能看到此内容：
 
-```
+```text
 /hello/world
 ```
 
-代码使用了两个 Node.js 模块的功能：[HTTP](https://nodejs.org/dist/latest/docs/api/http.html) 和 [URL](https://nodejs.org/dist/latest/docs/api/url.html)。默认情况下，Node.js 使用 CommonJS `require` 语句来引用代码，尽管已经提供了对 [ES6 Modules](https://www.sitepoint.com/understanding-es6-modules/) 的[实验性支持](https://nodejs.org/dist/latest/docs/api/esm.html)。
+代码使用了两个 Node.js 模块的功能：[HTTP](https://nodejs.org/dist/latest/docs/api/http.html) 和 [URL](https://nodejs.org/dist/latest/docs/api/url.html)。默认情况下，Node.js 使用 CommonJS `require`语句来引用代码，尽管已经提供了对 [ES6 Modules](https://www.sitepoint.com/understanding-es6-modules/) 的[实验性支持](https://nodejs.org/dist/latest/docs/api/esm.html)。
 
-代码使用了 [`http.createServer`](https://nodejs.org/dist/latest/docs/api/http.html#http_http_createserver_options_requestlistener)。它返回一个 [`http.Server`](https://nodejs.org/dist/latest/docs/api/http.html#http_class_http_server) 对象，该对象在端口 3000（定义为常量）上[监听](https://nodejs.org/dist/latest/docs/api/http.html#http_server_listen) HTTP 请求。
+代码使用了[`http.createServer`](https://nodejs.org/dist/latest/docs/api/http.html#http_http_createserver_options_requestlistener)。它返回一个[`http.Server`](https://nodejs.org/dist/latest/docs/api/http.html#http_class_http_server)对象，该对象在端口 3000（定义为常量）上[监听](https://nodejs.org/dist/latest/docs/api/http.html#http_server_listen) HTTP 请求。
 
-向 `http.createServer` 传递了一个用于处理传入请求的函数。定义了两个参数：
+向`http.createServer`传递了一个用于处理传入请求的函数。定义了两个参数：
 
-1. `req`: 传入[HTTP 请求](https://nodejs.org/dist/latest/docs/api/http.html#http_http_request_url_options_callback) 信息对象
+1. `req`：传入[HTTP 请求](https://nodejs.org/dist/latest/docs/api/http.html#http_http_request_url_options_callback)信息对象。
+2. `res`：用于返回数据的[HTTP 响应](https://nodejs.org/dist/latest/docs/api/http.html#http_class_http_serverresponse)对象。
 
-2. `res`: 用于返回数据的[HTTP 响应](https://nodejs.org/dist/latest/docs/api/http.html#http_class_http_serverresponse) 对象
-
-代码从 `req.url` 提取使用的完整 URL (`http://localhost:3000/hello/world`) 并将其传递给 Node.js 的 `URL` 解析模块以提取 [`pathname`](https://nodejs.org/dist/latest/docs/api/url.html#url_urlobject_pathname) (`/hello/world`)。路径通过 [res.end()](https://nodejs.org/dist/latest/docs/api/http.html#http_response_end_data_encoding_callback) 返回给浏览器。
+代码从`req.url`提取使用的完整 URL（`http://localhost:3000/hello/world`）并将其传递给 Node.js 的 `URL`解析模块以提取[`pathname`](https://nodejs.org/dist/latest/docs/api/url.html#url_urlobject_pathname)（`/hello/world`）。路径通过[res.end()](https://nodejs.org/dist/latest/docs/api/http.html#http_response_end_data_encoding_callback)返回给浏览器。
 
 Node.js 服务器框架（如 [Express.js](https://expressjs.com/)）都以类似的方式运行。它们解析传入请求，路由到可以处理该请求的代码并输出响应。
 
-按下 `Ctrl`/`Cmd` + `C` 停止运行的 Node.js 应用。
+按下`Ctrl`/`Cmd` + `C`停止运行的 Node.js 应用。
 
-### 第 3 步附加模块
+### 第 3 步：附加模块
 
-将代码拆分为具有可重用功能块的文件是很有用的。创建一个 `lib` 目录。除了 `node_modules` 之外，你可以使用任何名称。然后在其中添加以下文件：
+将代码拆分为具有可重用功能块的文件是很有用的。创建一个`lib`目录。除了`node_modules`之外，你可以使用任何名称。然后在其中添加以下文件：
 
-- `lib/httferrer.js`: 导出一个接受 HTTP 请求对象作为参数的函数。如果该对象设置了 refer，该函数将拼接它的 `protocol`、`host` 和 `pathname` 值，然后返回该字符串的 32 位 MD5 哈希值。使用了 [Crypto](https://nodejs.org/dist/latest/docs/api/crypto.html) 模块：
+- `lib/httferrer.js`：导出一个接受 HTTP 请求对象作为参数的函数。如果该对象设置了 refer，该函数将拼接它的`protocol`、`host`和`pathname`值，然后返回该字符串的 32 位 MD5 哈希值。使用了 [Crypto](https://nodejs.org/dist/latest/docs/api/crypto.html) 模块：
+
+
 
 ```javascript
-  'use strict';
+'use strict';
 
-  const
-    url = require('url'),
-    crypto = require('crypto');
+const
+  url = require('url'),
+  crypto = require('crypto');
 
-  module.exports = (req) => {
+module.exports = (req) => {
 
-    let
-      r = url.parse(req.headers.referer || ''),
-      ref = r.href ? r.protocol + r.host + r.pathname : null;
+  let
+    r = url.parse(req.headers.referer || ''),
+    ref = r.href ? r.protocol + r.host + r.pathname : null;
 
-    return ref ? crypto.createHash('md5').update(ref).digest('hex') : null;
+  return ref ? crypto.createHash('md5').update(ref).digest('hex') : null;
 
-  };
+};
 ```
 
 - `lib/httpresponse.js`: 导出一个函数，当传递一个包含 HTTP 响应的对象时，它用相应的 HTTP 头部和内容响应：
 
 ```javascript
-  'use strict';
+'use strict';
 
-  module.exports = ({
-    res     = null,
-    status  = 200,
-    mime    = 'text/plain',
-    content = ''
-  }) => {
+module.exports = ({
+  res     = null,
+  status  = 200,
+  mime    = 'text/plain',
+  content = ''
+}) => {
 
-    res.writeHead(status, {
-      'Access-Control-Allow-Origin': '*',
-      'Content-Type': mime
-    });
-    res.end(content);
+  res.writeHead(status, {
+    'Access-Control-Allow-Origin': '*',
+    'Content-Type': mime
+  });
+  res.end(content);
 
-  };
+};
 ```
 
 ### 第 4 步：测试页面
 
 必须在测试页面上添加计数器以查看服务的运行。创建另一个文件夹（例如 `testpages`），并在其中名为 `page-jswrite.html` 的文件，包含以下代码：
-
-
-
 
 ```html
 <!DOCTYPE html>
@@ -563,9 +534,13 @@ root folder   : ./testpages/
 将页面计数器存储在内存中意味着每次重启 Node.js 应用时它们都会重置。通过定期将计数器保存到文件中可以改进该系统。以下是实现此点的步骤：
 
 1. 当应用程序启动时，如果有必要，会在项目中创建一个 `data` 目录。（如果你正在使用 Git，请向 `.gitignore` 文件中添加 `data/`。）
+
 2. 当页面计数器加 1 时，服务器将在十秒后触发保存事件。（这确保了保存操作作为后台任务执行，并在高负载期间进行节流处理。）
+
 3. `pagehit.js` 中的 `this.counter` 属性被转换为 JSON 字符串，并保存到具有唯一名称（基于当前日期/时间）的文件中。
+
 4. 一旦文件保存成功，将删除 `data` 目录中之前的所有文件。这些文件可能是用户手动添加的，或者是因为旧文件未被删除（由于权限更改、进程崩溃等原因）。
+
 5. 在随后的启动中，应用程序将查找 `data` 目录中最新的 JSON 文件并将其导入到 `this.counter`。
 
 页面访问服务器并不关心 `lib/pagehit.js` 是如何实现的，只要它能执行 `count()` 方法即可。我们只需要更新该逻辑；无需更改 `index.js`。
@@ -701,10 +676,6 @@ async function folderUsable(folder) {
 
 `folderList()` 函数返回目录中每个文件的信息对象。它可以可选地按文件扩展名过滤并按创建日期等因素进行排序。`fs` [`readdir`](https://nodejs.org/dist/latest/docs/api/fs.html#fs_fspromises_readdir_path_options) 方法获取所有文件名到一个数组。这些文件名使用 [`Promise.all`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/all) 转换为信息对象，该方法并行执行异步代码：
 
-
-
-
-
 ```javascript
 // return a sorted array of info objects for all files in a folder
 async function folderList(folder, ext = '', sortBy = 'time') {
@@ -807,6 +778,8 @@ saveFrequency = 10 * 1000;
 
 3. 如果至少存在一个 `.json` 文件，则使用 `require` 将其导入，它可以方便地转换为真实的 JavaScript 对象。之前保存的数据将合并到 `counter` 属性中。
 
+
+
 ```javascript
 // initialize
 constructor() {
@@ -850,9 +823,9 @@ count(req) {
 
 `save()` 方法执行以下操作：
 
-1.  将 `counter` 属性转换为字符串并保存。
-2.  如果保存成功，将删除旧文件。
-3.  重置 `saveTimer` 属性。
+1. 将 `counter` 属性转换为字符串并保存。
+2. 如果保存成功，将删除旧文件。
+3. 重置 `saveTimer` 属性。
 
 ```javascript
 // store latest data
@@ -878,9 +851,9 @@ async save() {
 }
 ```
 
-### Step 3：测试
+## Step 3：测试
 
-使用 `npm run debug` 重新启动服务器。如果可以保存，会出现 `data` 子目录。像之前一样测试 并刷新几次。10 秒后，会出现一个类似于 `hit1579705252776.json` 的文件。它包含（压缩后的）访问数据，例如：
+使用 `npm run debug` 重新启动服务器。如果可以保存，会出现 `data` 子目录。像之前一样测试并刷新几次。10 秒后，会出现一个类似于 `hit1579705252776.json` 的文件。它包含（压缩后的）访问数据，例如：
 
 ```json
 {
@@ -914,10 +887,6 @@ async save() {
 # 第 3 章：理解 Node.js 中的 module.exports 和 exports
 
 ### 作者 James Hibbard
-
-
-
-
 
 在编程中，模块是自包含的功能单元，可以在不同项目之间共享和复用。它们让我们开发者的工作变得更轻松，因为我们可以使用它们来为应用程序增强功能，而无需自己编写。它们还允许我们对代码进行组织和解耦，使应用程序更容易被理解、调试和维护。
 
@@ -1046,10 +1015,6 @@ exports.dob = dateOfBirth;
 const { getName, dob } = require('./user');
 ```
 
-
-
-
-
 ```
 exports.foo = 'foo';
 module.exports = () => { console.log('bar'); };
@@ -1072,11 +1037,11 @@ module.exports = () => { console.log('bar'); };
 通常，表单处理过程涉及：
 
 * 响应初始 `GET` 请求显示一个空的 HTML 表单
-*   用户通过 `POST` 请求提交带有数据的表单
-*   在客户端和服务器端进行验证
-*   如果无效，则重新显示填充了转义数据和错误信息的表单
-*   如果全部有效，则在服务器上对清洗后的数据进行*某些操作*
-*   处理数据后重定向用户或显示成功消息
+* 用户通过 `POST` 请求提交带有数据的表单
+* 在客户端和服务器端进行验证
+* 如果无效，则重新显示填充了转义数据和错误信息的表单
+* 如果全部有效，则在服务器上对清洗后的数据进行*某些操作*
+* 处理数据后重定向用户或显示成功消息
 
 处理表单数据还带有额外的安全考虑因素。
 
@@ -1168,6 +1133,8 @@ router.get('/contact', (req, res) => {
 
 联系表单允许他们向我们发送消息和电子邮件地址：
 
+
+
 ```html
 <!-- views/contact.ejs -->
 <div class="form-header">
@@ -1188,13 +1155,13 @@ router.get('/contact', (req, res) => {
 </form>
 ```
 
-在 `http://localhost:3000/contact` 查看效果。
+在`http://localhost:3000/contact`查看效果。
 
 ## 表单提交
 
-要在 Express 中接收 `POST` 值，首先需要包含 `body-parser` 中间件。
+要在`Express`中接收`POST`值，首先需要包含`body-parser`中间件。
 
-让我们将其添加到 `middlewares` 数组中：
+让我们将其添加到`middlewares`数组中：
 
 ```javascript
 // server.js
@@ -1233,7 +1200,7 @@ router.post('/contact', (req, res) => {
 });
 ```
 
-现在更新 `contact.ejs` 以显示这些错误：
+现在更新`contact.ejs`以显示这些错误：
 
 ```html
 <!-- views/contact.ejs -->
@@ -1271,19 +1238,15 @@ router.post('/contact', (req, res) => {
 </form>
 ```
 
-在 `http://localhost:3000/contact` 提交表单以查看运行效果。这就是我们在视图端需要的所有内容。
+在`http://localhost:3000/contact`提交表单以查看运行效果。这就是我们在视图端需要的所有内容。
 
 ## 验证与清洗
 
-有一个名为 [express-validator](https://www.npmjs.com/package/express-validator) 的方便中间件，用于使用 [validator.js](https://github.com/chriso/validator.js) 库对数据进行验证和清洗。让我们将其添加到应用程序中。
+有一个名为[express-validator](https://www.npmjs.com/package/express-validator)的方便中间件，用于使用[validator.js](https://github.com/chriso/validator.js)库对数据进行验证和清洗。让我们将其添加到应用程序中。
 
 ### 验证
 
 通过提供的[验证器]，我们可以轻松地检查是否提供了消息和有效的电子邮件地址：
-
-
-
-
 
 ```javascript
 // routes.js
@@ -1307,7 +1270,7 @@ router.post('/contact', [
 
 ### 数据清洗 (Sanitization)
 
-通过提供的[sanitizers](https://github.com/chriso/validator.js#sanitizers)，我们可以去除值首尾的空格，并将邮箱地址规范化为一致的模式。这有助于防止因输入细微差异而创建重复联系人。例如，`' Mark@gmail.com'` 和 `'mark@gmail.com '` 都会被清洗为 `'mark@gmail.com'`。
+通过提供的[sanitizers](https://github.com/chriso/validator.js#sanitizers)，我们可以去除值首尾的空格，并将邮箱地址规范化为一致的模式。这有助于防止因输入细微差异而创建重复联系人。例如，`' Mark@gmail.com'`和`'mark@gmail.com '`都会被清洗为`'mark@gmail.com'`。
 
 清洗器可以简单地链式在验证器的末尾：
 
@@ -1336,15 +1299,15 @@ router.post('/contact', [
 });
 ```
 
-`matchedData` 函数返回清洗器对输入进行处理后的结果。
+`matchedData`函数返回清洗器对输入进行处理后的结果。
 
-此外，注意我们使用了 [bail](https://express-validator.github.io/docs/validation-chain-api.html#bail) 方法，如果之前的任何一个验证失败，它将停止执行后续的验证。我们需要这样做是因为如果用户在没有向邮箱字段输入值的情况下提交了表单，`normalizeEmail` 将尝试规范化空字符串并将其转换为 `@`。这会在我们重新渲染表单时被插入到邮箱字段中。
+此外，注意我们使用了[bail](https://express-validator.github.io/docs/validation-chain-api.html#bail)方法，如果之前的任何一个验证失败，它将停止执行后续的验证。我们需要这样做是因为如果用户在没有向邮箱字段输入值的情况下提交了表单，`normalizeEmail`将尝试规范化空字符串并将其转换为`@`。这会在我们重新渲染表单时被插入到邮箱字段中。
 
 ## 有效表单 (The Valid Form)
 
 如果有错误，我们需要重新渲染视图。如果没有错误，我们需要对数据进行一些有用操作，然后显示提交成功。通常情况下，用户会被重定向到一个成功页面并看到一条消息。
 
-HTTP 是无状态的，因此在不借助 [session cookie](https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies) 在多次 HTTP 请求之间持久化消息的情况下，你无法重定向到另一个页面*并*传递消息。“闪存消息”（flash message）是这种希望跨越重定向持久化随后消失的一次性消息的名称。
+HTTP 是无状态的，因此在不借助[session cookie](https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies)在多次 HTTP 请求之间持久化消息的情况下，你无法重定向到另一个页面*并*传递消息。“闪存消息”（flash message）是这种希望跨越重定向持久化随后消失的一次性消息的名称。
 
 我们需要包含三个中间件来完成这一配置：
 
@@ -1368,7 +1331,7 @@ const middlewares = [
 ];
 ```
 
-`express-flash` 中间件增加了 `req.flash(type, message)`，我们可以在路由处理程序中使用它：
+`express-flash`中间件增加了`req.flash(type, message)`，我们可以在路由处理程序中使用它：
 
 ```javascript
 // routes
@@ -1392,7 +1355,7 @@ router.post('/contact', [
 });
 ```
 
-`express-flash` 中间件向 `req.locals` 添加了 `messages`，所有视图都可以访问它：
+`express-flash`中间件向`req.locals`添加了`messages`，所有视图都可以访问它：
 
 ```html
 <!-- views/index.ejs -->
@@ -1403,19 +1366,19 @@ router.post('/contact', [
 <h1>Working With Forms in Node.js</h1
 ```
 
-现在，当使用有效数据提交表单时，你应该被重定向到 `index` 视图并看到成功消息。太棒了！我们现在可以部署到生产环境，并收到尼日利亚王子的邮件。你可以在[CodeSandbox 上找到此处的在线演示](https://codesandbox.io/embed/priceless-butterfly-u3557)。
+现在，当使用有效数据提交表单时，你应该被重定向到`index`视图并看到成功消息。太棒了！我们现在可以部署到生产环境，并收到尼日利亚王子的邮件。你可以在[CodeSandbox 上找到此处的在线演示](https://codesandbox.io/embed/priceless-butterfly-u3557)。
 
 ### 使用 Node 发送 (Sending Email with Node)
 
-你可能已经注意到实际发送邮件的操作留给了读者作为作业。这听起来并没有那么困难，可以使用 [Nodemailer 包](https://www.npmjs.com/package/nodemailer) 来完成。你可以在[这里找到如何设置它的的基础说明](https://www.w3schools.com/nodejs/nodejs_email.asp)，或者[这里有更深入的教程]。
+你可能已经注意到实际发送邮件的操作留给了读者作为作业。这听起来并没有那么困难，可以使用[Nodemailer 包](https://www.npmjs.com/package/nodemailer)来完成。你可以在[这里找到如何设置它的的基础说明](https://www.w3schools.com/nodejs/nodejs_email.asp)，或者[这里有更深入的教程]。
 
 ## 安全考量 (Security Considerations)
 
-在 HTML 视图中显示用户提交的数据时需要小心，因为这可能会让你面临[跨站脚本攻击(XSS)](https://developer.mozilla.org/en-US/docs/Glossary/Cross-site_scripting)。所有的模板语言都提供了不同的输出值的方法。EJS 的 `<%= value %>` 输出经过*HTML 转义*的值以保护你免受 XSS 攻击，而 `<%- value %>` 输出原始字符串。
+在 HTML 视图中显示用户提交的数据时需要小心，因为这可能会让你面临[跨站脚本攻击(XSS)](https://developer.mozilla.org/en-US/docs/Glossary/Cross-site_scripting)。所有的模板语言都提供了不同的输出值的方法。EJS 的`<%= value %>`输出经过*HTML 转义*的值以保护你免受 XSS 攻击，而`<%- value %>`输出原始字符串。
 
 ### HTTPS 之上的 TLS
 
-始终在 `https` 上使用 TLS。有一个很棒的小型工具叫 [helmet](https://helmetjs.io/)，它可以在你中间件的最顶部添加一些安全响应头：
+始终在`https`上使用 TLS。有一个很棒的小型工具叫[helmet](https://helmetjs.io/)，它可以在你中间件的最顶部添加一些安全响应头：
 
 ```javascript
 // server.js
@@ -1482,17 +1445,15 @@ router.post('/contact', csrfProtection, [
 
 这些就是所有需要的操作。
 
-我们不需要修改 POST 请求处理程序，因为所有的 POST 请求现在都由 `csurf` 中间件要求有效的令牌。如果未提供有效的 CSRF 令牌，将抛出 `ForbiddenError`，该错误由 `server.js` 结尾定义的错误处理器来处理。
+我们不需要修改 POST 请求处理程序，因为所有的 POST 请求现在都由`csurf`中间件要求有效的令牌。如果未提供有效的 CSRF 令牌，将抛出`ForbiddenError`，该错误由`server.js`结尾定义的错误处理器来处理。
 
 你可以通过浏览器开发工具编辑或删除表单中的令牌并提交来亲自测试。
 
-
-
-
-
-在处理用户提交的值时，请始终使用转义后的输出 `<%= value %>`。只有在确定这样做安全时，才使用原始输出。
+在处理用户提交的值时，请始终使用转义后的输出`<%= value %>`。只有在确定这样做安全时，才使用原始输出。
 
 ## 文件上传
+
+
 
 在 HTML 表单中上传文件是一个特殊情况，需要使用 `"multipart/form-data"` 编码类型。请参考 [MDN 关于发送表单数据的指南](https://developer.mozilla.org/en-US/docs/Learn/HTML/Forms/Sending_and_retrieving_form_data#A_special_case_sending_files) 获取更多关于多部分表单提交的细节。
 
@@ -1554,8 +1515,11 @@ router.post('/contact', upload.single('photo'), csrfProtection, [
 在发生验证错误时，我们无法像处理文本输入那样重新填充文件输入（[这存在安全风险](https://stackoverflow.com/questions/1696877/how-to-set-a-value-to-a-file-input-in-html)）。解决此问题的常用方法包括以下步骤：
 
 * 将文件上传到服务器上的临时位置
+
 * 显示附件文件的缩略图和文件名
+
 * 为表单添加 JavaScript，允许用户移除已选文件或上传新文件
+
 * 当所有内容有效时，将文件移动到永久位置
 
 由于处理多部分和文件上传具有额外的复杂性，它们通常被保留在单独的表单中。
@@ -1569,12 +1533,19 @@ router.post('/contact', upload.single('photo'), csrfProtection, [
 希望你喜欢学习 HTML 表单以及如何在 Express 和 Node.js 中处理它们。以下是对我们涵盖内容的简要回顾：
 
 * 在响应 GET 请求时显示空表单
+
 * 处理提交的 POST 数据
+
 * 显示错误列表、内联错误和提交的数据
+
 * 使用验证器检查提交的数据
+
 * 使用纯化器（sanitizers）清理提交的数据
+
 * 通过 flash 消息在重定向时传递消息
+
 * 保护自己免受 CSRF 和 XSS 等攻击
+
 * 处理多部分表单提交中的文件上传
 
 # 第 5 章：在 Node 中使用数据库
@@ -1598,10 +1569,6 @@ router.post('/contact', upload.single('photo'), csrfProtection, [
 尝试接受 [CSS 级联](https://developer.mozilla.org/docs/Web/CSS/Cascade) 而不是对抗它！稍微理解就能减少代码并提高性能。例如，你可以设置默认字体、颜色、大小、表格、网格和表单字段，这些是通用的，但可以针对单个组件进行微调。
 
 此外要警惕使用 CSS 重置（reset），这意味着必须对每个元素重新应用默认样式。CSS 归一化（normalization），如 [Normalize.css](https://necolas.github.io/normalize.css/)，可能是更好的替代方案，因为它让浏览器的渲染更加一致。尽管如此，浏览器之间的默认样式比以往任何时候都接近。
-
-
-
-
 
 # 优化 JavaScript 代码
 
@@ -1630,11 +1597,17 @@ HTML 是一项健壮的技术；即使是不支持 HTML5 的旧版浏览器也�
 然而，HTML `<button>`：
 
 1. 提供了默认样式，看起来像操作系统的按钮
+
 2. 即使 CSS 或 JavaScript 失败，在所有浏览器中也均可工作
+
 3. 在页面加载时且 JavaScript 开始执行之前立即生效
+
 4. 会自动提交其父级 `<form>`（如果通过了有效性检查）
+
 5. 可以通过鼠标、触摸屏、键盘或任何输入设备操作
+
 6. 可以接收焦点，并接受按键快捷键
+
 7. 不需要 ARIA 角色或其他辅助功能
 
 在 CSS 和 JavaScript 模拟的按钮需要投入大量精力，而且其功能性永远不如原生的 HTML 方案。
@@ -1714,8 +1687,11 @@ document.getElementById('mytable').addEventListener('click', (e) => {
 很少遇到在到达浏览器之前未经过修改的代码
 
 * 代码压缩工具（Minifiers）尝试进行优化，如重新排列行或扩展循环。
+
 * 如 Babel 等转译器将 ES6 转换为 ES5。
+
 * TypeScript、CoffeeScript 和 Flow 等编译器将备选语法或超集语法转换为 JavaScript。
+
 * 诸如 [Blazor](https://dotnet.microsoft.com/apps/aspnet/web-apps/blazor)的项目将 C# 转换为 [WebAssembly](https://webassembly.org/)——这是一种类似于汇编的底层语言，在 JavaScript 引擎中提供接近原生的性能。
 
 所有这些都提供了稳定性能优势，但请检查转换是否优化，并确保没有必要地导入几 KB 的转换器代码。例如，考虑以下用于 32 字节的 ES6 [for...of](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/for...of) 循环：
@@ -1727,8 +1703,14 @@ for (let p of n) console.log(p);
 这会导致 598 字节的 Babel 转换代码。每个额外的循环都会添加类似数量的代码，且没有任何一个可以在 IE11 中运行——这在某种违背了转换的意义！可以考虑的选项：
 
 * 使用 ES5 或更高效的转译器 ES6 代码来实现相同结果。
-* 使用差异化加载（differential loading），为现代浏览器提供[基于 ES6 模块的代码](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules)，并为旧版应用程序提供较大的转换脚本。
-* 放弃对不支持 ES6 的浏览器（主要是 IE）。如果你采用服务器端渲染和渐进式增强技术，你的网站或应用程序可以保持可用。
+
+
+
+## 使用差异化加载
+
+使用差异化加载（differential loading），为现代浏览器提供[基于 ES6 模块的代码](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules)，并为旧版应用程序提供较大的转换脚本。
+
+放弃对不支持 ES6 的浏览器（主要是 IE）的支持。如果你采用服务器端渲染和渐进式增强技术，你的网站或应用程序可以保持可用。
 
 ### 有效地修改 DOM
 
@@ -1737,10 +1719,6 @@ for (let p of n) console.log(p);
 ### 缓存频繁使用的节点
 
 频繁使用的 DOM 节点应该存储在 JavaScript 变量中，这样它们就不需要重新获取。即使修改其他树节点，DOM 引用也会保留。
-
-
-
-
 
 ```javascript
 const
@@ -1751,7 +1729,7 @@ const
 
 ### 从任意节点搜索
 
-与其从 `document` 开始搜索整个树，不如许多 DOM 方法允许你从任何节点开始。上面的示例在 `<main>` 元素内搜索第一个标题和所有表格。
+与其从`document`开始搜索整个树，不如许多 DOM 方法允许你从任何节点开始。上面的示例在`<main>`元素内搜索第一个标题和所有表格。
 
 [`querySelector()`](https://developer.mozilla.org/docs/Web/API/Element/querySelector) 和 [`querySelectorAll()`](https://developer.mozilla.org/docs/Web/API/Element/querySelector) 可以使用类似 jQuery 的 CSS 选择器查找元素。它们通常运行速度比 [`getElementById()`](https://developer.mozilla.org/docs/Web/API/Document/getElementById)、[`getElementsByTagName()`](https://developer.mozilla.org/docs/Web/API/Element/getElementsByTagName) 和 [`getElementsByClassName()`](https://developer.mozilla.org/docs/Web/API/Element/getElementsByClassName) 慢，尽管速度差异不太影响大多数应用程序。
 
@@ -1759,7 +1737,7 @@ const
 
 诸如 [jsPerf.com](https://jsperf.com/) 这样的工具提供了一种创建代码片段并在任何浏览器上运行基准测试的方法，以证明替代函数的效率或低效。
 
-[`getElementsByTagName()`](https://developer.mozilla.org/docs/Web/API/Element/getElementsByTagName) 和 [`getElementsByClassName()`](https://developer.mozilla.org/docs/Web/API/Element/getElementsByClassName) 还会返回 `live` 的 HTMLCollections，它们会在 DOM 修改时自动更新——因此没有重新运行查询。
+[`getElementsByTagName()`](https://developer.mozilla.org/docs/Web/API/Element/getElementsByTagName) 和 [`getElementsByClassName()`](https://developer.mozilla.org/docs/Web/API/Element/getElementsByClassName) 还会返回`live`的 HTMLCollections，它们会在 DOM 修改时自动更新——因此没有重新运行查询。
 
 ### 减少重流（Reflows）
 
@@ -1769,7 +1747,7 @@ const
 
 *   通过更改 DOM 树中底部的元素（那些没有深层嵌套子元素的）来限制重流范围
 
-*   在元素所属的 `position: absolute;` 或 `position: fixed;` 层中更新元素
+*   在元素所属的`position: absolute;`或`position: fixed;`层中更新元素
 
 *   修改隐藏元素（`display: none;`），然后在应用更改后再显示它们
 
@@ -1864,16 +1842,13 @@ requestAnimationFrame( updateDOM );
 </body>
 ```
 
-虽然每个 `link` 仍然会阻塞渲染，但文件较小。由于内容被加载，页面可以更早变得可用。[浏览器处理渐进式渲染的方式存在差异](https://jakearchibald.com/2016/link-in-body/)，但最坏的情况是浏览器会一直阻塞直到所有发现的 CSS 文件加载完毕。
-
-
-
+虽然每个`link`仍然会阻塞渲染，但文件较小。由于内容被加载，页面可以更早变得可用。[浏览器处理渐进式渲染的方式存在差异](https://jakearchibald.com/2016/link-in-body/)，但最坏的情况是浏览器会一直阻塞直到所有发现的 CSS 文件加载完毕。
 
 虽然框架对于原型开发非常有用，但始终要质疑它对于最终的网站或应用程序是否是必要的。它增加了多少重量？它会提高性能吗？容易更新吗？当它最终被放弃时会发生什么？
 
 花时间研究这些选择。如果不研究，对于熟悉特定锤子的开发者来说，每个应用程序看起来都像是一个钉子。你绝对应该避免使用多个框架——除非是服务器端选项，或者像 [Svelte](https://svelte.dev/) 这样的编译器，它们会在生产环境代码中移除自身。
 
-即使你确定了一个框架框架，也可能存在模块化或轻量级的替代方案，例如用 [Preact](https://preactjs.com/) 代替 [React](https://reactjs.org/)，或者用 [bling.js](https://gist.github.com/paulirish/12fb951a8b893a454b32) 代替 [jQuery](https://jquery.com/)。
+即使你确定了一个框架，也可能存在模块化或轻量级的替代方案，例如用 [Preact](https://preactjs.com/) 代替 [React](https://reactjs.org/)，或者用 [bling.js](https://gist.github.com/paulirish/12fb951a8b893a454b32) 代替 [jQuery](https://jquery.com/)。
 
 最终，最高效且适应性强的框架将是专门为你的应用程序编写的。
 
@@ -1892,28 +1867,39 @@ requestAnimationFrame( updateDOM );
 它也有一些缺点：
 
 *   配置和设置需要时间，并且比 CMS 更困难
+
 *   SSG 很少适用于非技术人员编辑人员
+
 *   没有用户角色或权限的概念
+
 *   站点一致性可能更难以维护，因为编辑人员可以添加任何客户端代码
+
 *   重新构建过程可能缓慢，特别是在较大的站点上
 
 SSG 对于变化不频繁的站点是理想的，但许多问题可以通过从无头 CMS（headless CMS）导入数据或自动化构建过程来克服。
 
 ## 使用构建系统
 
-即使是最尽心的开发者也可能忘记压缩 CSS 文件、优化图像或删除调试用的 `console` 语句。无论你使用什么技术来创建网站或应用，**构建过程**都可以自动执行单调的任务，以确保没有遗漏。此外，它们还可以运行测试、验证代码并部署到测试服务器或生产服务器。
+即使是最尽心的开发者也可能忘记压缩 CSS 文件、优化图像或删除调试用的`console`语句。无论你使用什么技术来创建网站或应用，**构建过程**都可以自动执行单调的任务，以确保没有遗漏。此外，它们还可以运行测试、验证代码并部署到测试服务器或生产服务器。
 
 创建一个构建过程可能需要一天或两天，但从长远来看，它可以节省时间。流行的通用构建工具包括 [Gulp.js](https://gulpjs.com/)、[Grunt.js](https://gruntjs.com/)、[Broccoli.js](https://broccoli.build/) 和 [Brunch](https://brunch.io/)，它们允许你手动定义并在文件更改时运行任务。
 
 或者，你可以选择针对 Web 的模块打包器，例如 [webpack](https://webpack.js.org/) 或 [Parcel](https://parceljs.org/)，它们*理解* HTML、CSS 和 JavaScript，因此可以通过以下操作解析并构建优化后的代码：
 
 *   消除死代码
+
 *   代码分割和依赖处理
+
 *   ES6 译为 ES5
+
 *   混淆
+
 *   生成 source map
+
 *   缓存刷新（cache-busting）
+
 *   热重载
+
 *   强制执行性能预算（下文讨论）
 
 模块打包器通常承诺零配置……*尽管现实可能有些不同！*
@@ -1921,27 +1907,39 @@ SSG 对于变化不频繁的站点是理想的，但许多问题可以通过从�
 几条入门小贴：
 
 *   选择一个构建系统并坚持一段时间。
+
 *   首先自动化最令人沮丧的任务。
+
 *   尽量不要让你的构建过程过于复杂。花一两个小时创建一个初始设置，然后随着时间的推移不断演进。
+
 *   在构建过程中尽可能多做。例如，HTML 模板可以从已知数据和部分组件构建，而不是在渲染时解析所有内容。
 
 进一步阅读：
 
 *   [使用 npm 作为构建工具的指南](https://www.sitepoint.com/guide-to-npm-as-a-build-tool/)
+
 *   [Gulp.js 简介](https://www.sitepoint.com/premium/books/an-introduction-to-gulp-js/read/1)
+
 *   [Webpack 初学者指南](https://www.sitepoint.com/premium/books/a-beginner-guide-to-webpack)
+
 *   [Parcel 初学者指南](https://www.sitepoint.com/premium/books/a-beginner-guide-to-parcel)
 
 ## 使用渐进式增强
 
 **渐进式增强**是一种开发方法而非技术。每个网站或应用程序功能都从基础最小实现开始——可能是一个纯 HTML 的解决方案。当设备支持时，会逐步添加增强。考虑一个简单的搜索框：
 
-1. 基础解决方案是一个 `<input type="search" />` 字段，当输入字符串时会加载新页面显示搜索结果。
+1. 基础解决方案是一个`<input type="search" />`字段，当输入字符串时会加载新页面显示搜索结果。
+
 2. 应用 HTML5 [约束验证](https://developer.mozilla.org/docs/Guide/HTML5/Constraint_validation) 以确保在输入至少三个字符后进行搜索。
+
 3. 应用 CSS 样式，显示字体、颜色、边框等基本格式。
+
 4. 当字段获得焦点时，CSS 动画可以放大字段、显示提交按钮等。
+
 5. JavaScript 在输入时显示建议。
+
 6. JavaScript 可以显示简单的搜索结果列表，而无需用户离开当前页面。
+
 7. PWA Service Worker 可以缓存建议和搜索结果供以后使用。
 
 如有需要，代码在尝试增强之前会测试功能是否可用。例如，当 JavaScript 运行、支持事件且 HTML5 [`datalist`](https://developer.mozilla.org/docs/Web/HTML/Element/datalist) 元素可用时，可以实现建议功能。
@@ -1954,41 +1952,52 @@ SSG 对于变化不频繁的站点是理想的，但许多问题可以通过从�
 
 在上面的搜索框示例中，渐进式增强提供了以下益处：
 
-
-
-
-
 * 搜索框与设备无关，并适用于所有浏览器——无论是旧的、现在的，还是明天发布的。
-* 只要 HTML 加载，搜索框就始终可用。这包括了在 `CSS` 和/或 `JavaScript` 下载并解析之前的阶段。从性能角度来看，该功能是即时响应的。
+
+* 只要 HTML 加载，搜索框就始终可用。这包括了在`CSS`和/或`JavaScript`下载并解析之前的阶段。从性能角度来看，该功能是即时响应的。
+
 * 用户可以获得其设备所能提供的最佳体验。当无法添加增强功能时，性能不会受到影响。
-* 搜索框具有容错性：任何增强功能都可以生效或失败，而不会破坏系统。无论 `CSS` 和/或 `JavaScript` 被拦截、加载缓慢还是下载失败，都没有影响。
+
+* 搜索框具有容错性：任何增强功能都可以生效或失败，而不会破坏系统。无论`CSS`和/或`JavaScript`被拦截、加载缓慢还是下载失败，都没有影响。
+
 * 这是一个负责任的方案，而且在大多数情况下不需要额外的开发工作量。
+
+
 
 这种方法没有优缺点。渐进式增强只有在以下情况下才会失效：
 
-1. 从一开始就没有考虑它。对于一个已经需要高水平基础 `CSS` 和 `JavaScript` 支持的功能，事后对其进行增强可能会困难。
-2. 你试图同等地支持所有浏览器。期望一个十年前的 `IE` 版本表现与现代应用程序一样是徒劳的。渐进式增强意味着你永远不需要担心旧浏览器。他们的用户可能无法获得最佳体验，但功能仍然是可用的。
+1.我是由深度求索（DeepSeek）研发的 deepseek-v4-flash-0731 智能大模型。从一开始就没有考虑它。对于一个已经需要高水平基础`CSS`和`JavaScript`支持的功能，事后对其进行增强可能会困难。
+
+2. 你试图同等地支持所有浏览器。期望一个十年前的`IE`版本表现与现代应用程序一样是徒劳的。渐进式增强意味着你永远不需要担心旧浏览器。他们的用户可能无法获得最佳体验，但功能仍然是可用的。
 
 ## 采用性能预算
 
 性能预算对相关指标实施限制。典型的选项包括：
 
 * 基于数量的限制，例如字体、图像、脚本等的最大数量。
+
 * 基于时间的限制，例如首次有效绘制时间（first meaningful paint）或可交互时间。
-* 基于规则的限制，例如 `Lighthouse` 审计中的最低性能和可访问性评分。
+
+* 基于规则的限制，例如`Lighthouse`审计中的最低性能和可访问性评分。
 
 你应该与利益相关者进行实验并讨论选项，以建立基准标准，例如：
 
 * 页面总大小不能超过 500KB
-* 单张图片不得超过 150KB
-* 首页交付的 `JavaScript` 少于 100KB
-* 所有页面在运行平均 `3G` 连接的中端移动设备上必须在五秒内可读
 
-理想情况下，这些标准可以被添加到你的构建流程中。诸如 [Lighthouse 模块](https://www.npmjs.com/package/lighthouse) 和文件大小插件等工具可以报告并可能阻止任何偏离预算。超出预算意味着你必须：
+* 单张图片不得超过 150KB
+
+* 首页交付的`JavaScript`少于 100KB
+
+* 所有页面在运行平均`3G`连接的中端移动设备上必须在五秒内可读
+
+理想情况下，这些标准可以被添加到你的构建流程中。诸如[Lighthouse 模块](https://www.npmjs.com/package/lighthouse)和文件大小插件等工具可以报告并可能阻止任何偏离预算。超出预算意味着你必须：
 
 1. 优化现有的功能/资源
+
 2. 按需懒加载现有的功能/资源
+
 3. 移除现有的功能/资源
+
 4. 拒绝新的功能/资源
 
 限制可以帮助团队优先考虑功能。增加预算应该总是比实现另一个解决方案更困难！例如，预算的增加必须在每月进度会议上经过讨论、证明并获得三分之二多数的同意！
@@ -1996,7 +2005,9 @@ SSG 对于变化不频繁的站点是理想的，但许多问题可以通过从�
 性能预算工具：
 
 * [performancebudget.io](https://performancebudget.io/): 根据下载时间估算文件大小
+
 * [bundlesize](https://github.com/siddharthkp/bundlesize): 在构建过程中计算文件大小
+
 * [SpeedCurve](https://speedcurve.com/): 跟踪真实性能（商业版）
 
 ## 创建样式指南
@@ -2004,12 +2015,16 @@ SSG 对于变化不频繁的站点是理想的，但许多问题可以通过从�
 样式指南是一组约定的品牌、内容、设计和编码标准，适用于通常在长期开发的大型代码库上工作的团队。良好的样式指南可以促进一致性，并说明开发者应该如何处理解决方案。前端组件可以通过示例代码进行演示，展示样式、动画、功能和限制。其益处包括：
 
 * 新团队成员可以快速产生生产力
-* 组件被重复复用：开发者不太可能引入自己的 `HTML`、`CSS` 和 `JavaScript`
+
+* 组件被重复复用：开发者不太可能引入自己的`HTML`、`CSS`和`JavaScript`
+
 * 当在整个过程中使用相同的代码时，更新、维护和改进组件性能变得更加容易
+
 * 代码可以进行测试，质量保证变得更简单
+
 * 用户获得一致的 UI 体验
 
-样式指南可以根据你的需要保持僵硬或灵活。最好的方法是将其开发为 `HTML` 页面，这些页面可以演示代码并快速更新。你可以从 [styleguides.io](http://styleguides.io/) 获取示例文档。
+样式指南可以根据你的需要保持僵硬或灵活。最好的方法是将其开发为`HTML`页面，这些页面可以演示代码并快速更新。你可以从[styleguides.io](http://styleguides.io/)获取示例文档。
 
 ## 简化与优化
 
@@ -2018,21 +2033,24 @@ SSG 对于变化不频繁的站点是理想的，但许多问题可以通过从�
 平均页面权重达到 2MB 是因为开发者让它发生了。我们正面临着在更短时间内交付更多内容的压力，但如果这导致了一个没人想用的、缓慢且笨重的应用程序，我们的工作做得真的有效吗？很少有客户会理解网络性能的复杂之处，因此我们有责任使用高效的编码实践，并用通俗易懂的语言强调潜在的陷阱。
 
 1. 警惕任何新增功能的性能成本。
+
 2. 使用分析工具来监控和识别很少使用的功能。
+
 3. 完全移除不必要的功能，或用更精简、轻量级的替代方案替换它们。
 
 照顾好字节（bytes），兆字节（megabytes）自然会被照顾！
 
 ## 爱 Web
 
-Web 从文档发布平台演变为应用交付系统，彻底改变了我们分发和使用软件的方式。遗憾的是，这导致了一种令人担忧的过度设计解决方案的，而更简单的选项可能更有效。我们没有选择原生的 `HTML` 控件，而是导入最新的 `JavaScript` 模块。我们没有添加几个样式，而是从 Stack Overflow 和 Bootstrap 复制了大量的 `CSS`。
+Web 从文档发布平台演变为应用交付系统，彻底改变了我们分发和使用软件的方式。遗憾的是，这导致了一种令人担忧的过度设计解决方案的，而更简单的选项可能更有效。我们没有选择原生的`HTML`控件，而是导入最新的`JavaScript`模块。我们没有添加几个样式，而是从 Stack Overflow 和 Bootstrap 复制了大量的`CSS`。
 
-如果从这本书书中可以学到一条建议，那就是学习基础。有些自矛盾的是，`HTML` 和 `CSS` 要么被忽视为过于简单而不值被尊重，要么被视为必须使用 `JavaScript` 来修复的不可逾越的技术。然而，它们是 Web 的基础基石：
+如果从这本书书中可以学到一条建议，那就是学习基础。有些自矛盾的是，`HTML`和`CSS`要么被忽视为过于简单而不值被尊重，要么被视为必须使用`JavaScript`来修复的不可逾越的技术。然而，它们是 Web 的基础基石：
 
-* `HTML5` 有大约 120 个元素。其中一半将很少使用，但对于 `<div>` 和 `<span>` 通常有更好的替代方案。
-* 有近 400 个 `CSS3` 属性，并且不断增加。没有人能列出所有，但它们是模块化的。基础知识可以很快学会，但理解这些概念需要经验。
+* `HTML5`有大约 120 个元素。其中一半将很少使用，但对于`<div>`和`<span>`通常有更好的替代方案。
 
-学习 `HTML` 和 `CSS` 将让你成为更好的 Web 开发者。一点知识将显著提高你的应用程序性能。
+* 有近 400 个`CSS3`属性，并且不断增加。没有人能列出所有，但它们是模块化的。基础知识可以很快学会，但理解这些概念需要经验。
+
+学习`HTML`和`CSS`将让你成为更好的 Web 开发者。一点知识将显著提高你的应用程序性能。
 
 # 第 6 章：如何构建和组织 Node.js MVC 应用
 
@@ -2040,32 +2058,31 @@ Web 从文档发布平台演变为应用交付系统，彻底改变了我们分�
 
 在非复杂的应用中，架构与代码质量同样重要。我们可以编写良好的代码段，但如果没有良好的组织，随着复杂性的增加，我们会变得困难。不需要等到项目过了一半才考虑架构，最佳时是在开始之前。
 
-`Node.js` 没有像 Ruby 的 `Rails` 框架那样对架构和代码组织有强烈的观点。因此，使用 `Node` 构建完整的 Web 应用程序可能是困难的。
+`Node.js`没有像 Ruby 的`Rails`框架那样对架构和代码组织有强烈的观点。因此，使用`Node`构建完整的 Web 应用程序可能是困难的。
 
-在本教程中，我们将使用 MVC 架构构建一个笔记类应用程序。为了实现这一目标，我们将采用 [Hapi.js](https://hapi.dev/) 框架，并使用 [SQLite](http://www.sqlite.org/) 作为数据库，配合 [Sequelize.js](https://sequelize.org/v3/) 以及其他小工具来加速开发。我们将使用 [Pug](https://pugjs.org/api/getting-started.html) 模板语言来构建视图。
+在本教程中，我们将使用 MVC 架构构建一个笔记类应用程序。为了实现这一目标，我们将采用[Hapi.js](https://hapi.dev/)框架，并使用[SQLite](http://www.sqlite.org/)作为数据库，配合[Sequelize.js](https://sequelize.org/v3/)以及其他小工具来加速开发。我们将使用[Pug](https://pugjs.org/api/getting-started.html)模板语言来构建视图。
 
 ## 什么是 MVC?
 
-
-
-
-模型-视图-控制器（或 MVC）可能是应用程序中最流行的架构之一。正如[计算机历史上的许多酷酷事物](https://youtu.be/NdSD07U5uBs?t=29m2s) 中的许多其他事物一样，MVC 模型最初是在 [PARC](https://en.wikipedia.org/wiki/PARC_(company)) 为 Smalltalk 语言设计的，用于解决具有图形用户界面的应用程序组织问题。它最初为桌面应用程序创建，但从那时起这一理念被应用到包括 Web 在内的其他媒介。
+模型-视图-控制器（或 MVC）可能是应用程序中最流行的架构之一。正如[计算机历史上的许多酷酷事物](https://youtu.be/NdSD07U5uBs?t=29m2s)中的许多其他事物一样，MVC 模型最初是在[PARC](https://en.wikipedia.org/wiki/PARC_(company))为 Smalltalk 语言设计的，用于解决具有图形用户界面的应用程序组织问题。它最初为桌面应用程序创建，但从那时起这一理念被应用到包括 Web 在内的其他媒介。
 
 我们可以用简单的语言描述 MVC 架构：
 
 * **Model（模型）**：应用程序中处理数据库或任何数据相关功能的部分。
+
 * **View（视图）**：用户看到的一切——基本上就是我们要发送给客户端的页面。
+
 * **Controller（控制器）**：网站的逻辑，以及模型与视图之间的胶水。在这里我们调用模型获取数据，然后将这些数据放在视图上发送给用户。
 
 我们的应用程序将允许我们创建、查看、编辑和删除纯文本笔记。它不会有其他功能，但由于我们已经定义了稳固的架构，以后添加新功能时就不会遇到太大麻烦。
 
 本教程假设你的机器上安装了较新版本的 Node。如果不是如此，请参考我们的[Node 快速上手与运行教程](https://www.sitepoint.com/quick-tip-multiple-versions-node-nvm/)。
 
-你可以在[附的 GitHub 仓库](https://github.com/sitepoint-editors/notes-board) 中查看最终应用程序，这样你可以对应用程序结构有一个整体了解。
+你可以在[附的 GitHub 仓库](https://github.com/sitepoint-editors/notes-board)中查看最终应用程序，这样你可以对应用程序结构有一个整体了解。
 
 ## 搭建基础
 
-构建任何 Node.js 应用程序的第一步是创建一个 `package.json` 文件，它将包含我们所有的依赖和脚本。与其手动创建此文件，不如 npm 使用 `init` 命令为我们完成这项工作：
+构建任何 Node.js 应用程序的第一步是创建一个`package.json`文件，它将包含我们所有的依赖和脚本。与其手动创建此文件，不如 npm 使用`init`命令为我们完成这项工作：
 
 ```
 mkdir notes-board
@@ -2073,7 +2090,7 @@ cd notes-board
 npm init -y
 ```
 
-过程完成后，我们将准备好一个可用的 `package.json` 文件。
+过程完成后，我们将准备好一个可用的`package.json`文件。
 
 ### npm 命令
 
@@ -2085,13 +2102,13 @@ npm init -y
 npm install @hapi/hapi@18.4.0
 ```
 
-此命令将下载 Hapi.js 并其作为依赖项添加到 `package.json` 文件中。
+此命令将下载 Hapi.js 并其作为依赖项添加到`package.json`文件中。
 
 ### 版本
 
 我指定了 Hapi.js 的 v18.4.0 版本，因为它兼容 Node 8、10 和 12 版本。如果你使用的是 Node 12，可以选择安装最新版本（Hapi v19.1.0）。
 
-现在我们可以创建入口文件——启动一切的 Web 服务器。在你的应用程序目录中创建一个 `server.js` 文件并向其中添加以下代码：
+现在我们可以创建入口文件——启动一切的 Web 服务器。在你的应用程序目录中创建一个`server.js`文件并向其中添加以下代码：
 
 ```
 "use strict";
@@ -2126,11 +2143,11 @@ init();
 
 首先，我们指出将要使用[严格模式](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode)，这是在使用 Hapi.js 框架时的一种[常见做法](https://hapi.dev/policies/styleguide/#strict-mode)。
 
-接下来，我们包含了依赖项并实例化了一个新的服务器对象，我们将连接端口设置为 `3000`（端口可以是任何[1023 以上且 65535 以下]的数字](http://www.iana.org/assignments/service-names-port-numbers/service-names-port-numbers.xml)）。
+接下来，我们包含了依赖项并实例化了一个新的服务器对象，我们将连接端口设置为`3000`（端口可以是任何[1023 以上且 65535 以下]的数字](http://www.iana.org/assignments/service-names-port-numbers/service-names-port-numbers.xml)）。
 
-我们服务器的第一个路由将作为一个测试，检查一切是否运行正常，所以一条“Hello, world!”消息对我们来说足够了。在每个路由中，我们必须定义它响应的 HTTP 方法和路径（URL），以及一个处理器（handler），这是一个处理 HTTP 请求的函数。处理器函数可以接受两个参数：`request` 和 `h`。第一个包含有关 HTTP 调用的信息，第二个将为我们提供处理该调用响应的方法。
+我们服务器的第一个路由将作为一个测试，检查一切是否运行正常，所以一条“Hello, world!”消息对我们来说足够了。在每个路由中，我们必须定义它响应的 HTTP 方法和路径（URL），以及一个处理器（handler），这是一个处理 HTTP 请求的函数。处理器函数可以接受两个参数：`request`和`h`。第一个包含有关 HTTP 调用的信息，第二个将为我们提供处理该调用响应的方法。
 
-最后，我们通过 `server.start()` 方法启动服务器。
+最后，我们通过`server.start()`方法启动服务器。
 
 ## 存储我们的设置
 
@@ -2140,9 +2157,9 @@ init();
 
 ### 使用 .env 文件
 
-如果你决定使用 `.env`，请确保安装了 dotenv 并将其添加到 `.gitignore`。
+如果你决定使用`.env`，请确保安装了 dotenv 并将其添加到`.gitignore`。
 
-我们的 `settings.js` 文件看起来如下：
+我们的`settings.js`文件看起来如下：
 
 ```
 // 这将加载我们的 .env 并添加到 process.env
@@ -2169,7 +2186,7 @@ module.exports = {
 };
 ```
 
-现在我们可以通过执行以下命令并在 Web 浏览器中导航到 [`localhost:3000`](http://localhost:3000) 来启动应用程序：
+现在我们可以通过执行以下命令并在 Web 浏览器中导航到[`localhost:3000`](http://localhost:3000)来启动应用程序：
 
 ```
 node server.js
@@ -2177,11 +2194,11 @@ node server.js
 
 ## 定义路由
 
-路由定义为我们提供了应用程序的功能概述。要创建额外的路由，我们只需要复制 `server.js` 文件中已有的路由结构，并更改每个的内容。
+路由定义为我们提供了应用程序的功能概述。要创建额外的路由，我们只需要复制`server.js`文件中已有的路由结构，并更改每个的内容。
 
-让我们在项目中创建一个名为 `lib` 的新目录。在这里我们将所有的 JS 组件。
+让我们在项目中创建一个名为`lib`的新目录。在这里我们将所有的 JS 组件。
 
-在 `lib` 内部，创建一个 `routes.js` 文件并向其中添加以下内容：
+在`lib`内部，创建一个`routes.js`文件并向其中添加以下内容：
 
 ```javascript
 "use strict";
@@ -2207,11 +2224,9 @@ module.exports = [
 },
 ```
 
+我们的第一个路由是主页（`/`），由于它只返回信息，因此我们为它分配了一个`GET`方法。目前，它只会向我们返回“所有笔记将将显示在此处”的消息，我们稍后会将其更改为控制器函数。`config`部分中的`description`字段仅用于文档说明。
 
-
-我们的第一个路由是主页（`/`），由于它只返回信息，因此我们为它分配了一个 `GET` 方法。目前，它只会向我们返回“所有笔记将将显示在此处”的消息，我们稍后会将其更改为控制器函数。`config` 部分中的 `description` 字段仅用于文档说明。
-
-然后，我们在 `/note/` 路径下为我们的笔记创建四个路由。由于我们正在构建一个 [CRUD](https://en.wikipedia.org/wiki/Create_read_update_and_delete) 应用，我们需要为每个操作准备一个路由，并配有相应的 [HTTP 方法](http://www.w3schools.com/tags/ref_httpmethods.asp)。
+然后，我们在`/note/`路径下为我们的笔记创建四个路由。由于我们正在构建一个[CRUD](https://en.wikipedia.org/wiki/Create_read_update_and_delete)应用，我们需要为每个操作准备一个路由，并配有相应的[HTTP 方法](http://www.w3schools.com/tags/ref_httpmethods.asp)。
 
 在之前的路由旁边添加以下定义：
 
@@ -2260,9 +2275,6 @@ module.exports = [
 
 （注：原文从 "Our first route..." 之后出现了大量重复且无意义的英文单词组合，为了保证文档质量，此处仅翻译了清晰的路由定义部分。若有更完整的后续文本，请提供。）
 
-
-
-
 ```javascript
 await Models.sequelize.sync();
 
@@ -2274,7 +2286,7 @@ console.log(`Server running at: ${server.info.uri}`);
 
 ## 构建控制器 (Controllers)
 
-控制器是接受 Hapi.js 的 [request](https://hapi.dev/api#request-properties) 和 [response toolkit](https://hapi.dev/api/#response-toolkit) 对象的函数。`request` 对象包含有关所请求资源的信息，我们使用 `reply` 向客户端返回信息。
+控制器是接受 Hapi.js 的[request](https://hapi.dev/api#request-properties)和[response toolkit](https://hapi.dev/api/#response-toolkit)对象的函数。`request`对象包含有关所请求资源的信息，我们使用`reply`向客户端返回信息。
 
 在我们的应用程序中，目前我们只返回一个 JSON 对象，但一旦我们构建了视图，就会添加它们。
 
@@ -2282,7 +2294,9 @@ console.log(`Server running at: ${server.info.uri}`);
 
 ### 主页控制器 (Home Controller)
 
-我们将构建的第一个控制器将处理我们网站的主页。在 `lib/controllers` 目录下创建一个 `home.js` 文件，内容如下：
+
+
+我们将构建的第一个控制器将处理我们网站的主页。在`lib/controllers`目录下创建一个`home.js`文件，内容如下：
 
 ```javascript
 "use strict";
@@ -2304,11 +2318,11 @@ module.exports = async (request, h) => {
 };
 ```
 
-首先，我们使用模型中的 [`findAll`](https://sequelize.org/master/manual/model-querying-basics.html) 方法获取数据库中的所有笔记。该函数将返回一个 Promise，如果它解析（resolve），我们将得到一个包含数据库中所有笔记的数组。
+首先，我们使用模型中的[`findAll`](https://sequelize.org/master/manual/model-querying-basics.html)方法获取数据库中的所有笔记。该函数将返回一个 Promise，如果它解析（resolve），我们将得到一个包含数据库中所有笔记的数组。
 
-我们可以使用传递给 `findAll` 方法的选项对象中的 `order` 参数对结果进行降序排列，这样最后一个项目将首先显示。你可以在 [Sequelize.js 文档](https://sequelize.org/master/class/lib/model.js~Model.html#static-method-findAll) 中检查所有可用选项。
+我们可以使用传递给`findAll`方法的选项对象中的`order`参数对结果进行降序排列，这样最后一个项目将首先显示。你可以在 [Sequelize.js 文档](https://sequelize.org/master/class/lib/model.js~Model.html#static-method-findAll) 中检查所有可用选项。
 
-一旦有了主页控制器，我们就可以编辑 `routes.js` 文件。首先，我们在文件顶部导入该模块，紧邻 `Path` 模块的导入：
+一旦有了主页控制器，我们就可以编辑`routes.js`文件。首先，我们在文件顶部导入该模块，紧邻`Path`模块的导入：
 
 ```javascript
 const Home = require("./controllers/home");
@@ -2347,7 +2361,7 @@ npm install slug
 
 我们在应用程序中需要定义的最后一个控制器将允许我们创建、读取、更新和删除笔记。
 
-我们可以继续在 `lib/controllers` 目录下创建一个 `note.js` 文件并添加以下内容：
+我们可以继续在`lib/controllers`目录下创建一个`note.js`文件并添加以下内容：
 
 ```javascript
 "use strict";
@@ -2363,7 +2377,7 @@ module.exports = {
 
 ### `create` 函数
 
-为了向数据库中添加笔记，我们将编写一个 `create` 函数，该函数将使用 payload 对象中包含的数据来封装模型上的 `create` 方法。
+为了向数据库中添加笔记，我们将编写一个`create`函数，该函数将使用 payload 对象中包含的数据来封装模型上的`create`方法。
 
 在导出的对象中添加以下内容：
 
@@ -2382,15 +2396,15 @@ create: async (request, h) => {
 },
 ```
 
-一旦创建了笔记，我们将获得笔记数据并使用 `reply` 函数将其作为 JSON 发送给客户端。
+一旦创建了笔记，我们将获得笔记数据并使用`reply`函数将其作为 JSON 发送给客户端。
 
 目前，我们只返回结果，但一旦我们在下一节中构建了视图，我们就能生成带有新笔记的 HTML 并将其动态地添加到客户端。虽然这并非完全必要，并将取决于你如何处理前端逻辑，但我们将返回一个 HTML 块以简化客户端的逻辑。
 
-此外，请注意日期是在执行函数时使用 `new Date()` 动态生成的。
+此外，请注意日期是在执行函数时使用`new Date()`动态生成的。
 
 ### `read` 函数
 
-为了只搜索一个元素，我们使用模型上的 `findOne` 方法。由于我们通过 slug 标识笔记，因此 `where` 过滤器必须包含客户端在 URL (`http://localhost:3000/`) 中提供的 slug。
+为了只搜索一个元素，我们使用模型上的`findOne`方法。由于我们通过 slug 标识笔记，因此`where`过滤器必须包含客户端在 URL (`http://localhost:3000/`) 中提供的 slug。
 
 ```javascript
 read: async (request, h) => {
@@ -2406,7 +2420,7 @@ read: async (request, h) => {
 
 ### `update` 函数
 
-若要更新笔记，我们使用模型上的 `update` 方法。它接受两个对象——我们正在更新的新值，以及包含 `where` 过滤器的选项对象。
+若要更新笔记，我们使用模型上的`update`方法。它接受两个对象——我们正在更新的新值，以及包含`where`过滤器的选项对象。
 
 ```javascript
 update: async (request, h) => {
@@ -2431,7 +2445,7 @@ update: async (request, h) => {
 
 ### `delete` 函数
 
-删除控制器将通过向模型的 `destroy` 函数提供 slug 来移除笔记。然后，一旦笔记被删除，我们将重定向到主页。为了实现这一点，我们使用 Hapi 响应工具包的 [redirect](https://hapi.dev/api/?v=18.4.0#hredirect) 函数：
+删除控制器将通过向模型的`destroy`函数提供 slug 来移除笔记。然后，一旦笔记被删除，我们将重定向到主页。为了实现这一点，我们使用 Hapi 响应工具包的 [redirect](https://hapi.dev/api/?v=18.4.0#hredirect) 函数：
 
 ```javascript
 delete: async (request, h) => {
@@ -2449,7 +2463,7 @@ delete: async (request, h) => {
 
 此时，我们的笔记控制器已经准备好了所有的 CRUD 操作。但为了使用它们，我们需要将其包含在路由文件中。
 
-首先，在 `routes.js` 顶部导入我们的控制器：
+首先，在`routes.js`顶部导入我们的控制器：
 
 ```javascript
 const Note = require("./controllers/note");
@@ -2500,13 +2514,9 @@ const Note = require("./controllers/note");
 
 ### 引用而不调用
 
-我们在包含函数时在末尾没有加 `()`，因为我们是在引用函数而不是调用它们。
+我们在包含函数时在末尾没有加`()`，因为我们是在引用函数而不是调用它们。
 
-
-
-
-
-在 Hapi v19 中，[`request.payload.multipart` 默认被改为 `false`](https://github.com/hapijs/hapi/issues/4017)。我们需要在 `POST` 和 `PUT` 路由中将其设回 `true`，因为我们将使用 `FormData` 对象向服务器传输数据，且传输的数据将采用 `multipart/form-data` 格式。
+在 Hapi v19 中，[`request.payload.multipart` 默认被改为 `false`](https://github.com/hapijs/hapi/issues/4017)。我们需要在`POST`和`PUT`路由中将其设回`true`，因为我们将使用`FormData`对象向服务器传输数据，且传输的数据将采用`multipart/form-data`格式。
 
 ## 构建视图 (Building the Views)
 
@@ -2520,19 +2530,19 @@ const Note = require("./controllers/note");
 
 你可以通过以下命令安装这些包：
 
-```
+```bash
 npm install @hapi/vision@5.5.4 pug
 ```
 
-在这里我们安装了 v5.5.4 的 `vision` 插件，它与 Hapi v18 兼容。如果你选择安装 Hapi v19，只需输入 `npm i @hapi/vision` 即可获取最新版本。
+在这里我们安装了 v5.5.4 的`vision`插件，它与 Hapi v18 兼容。如果你选择安装 Hapi v19，只需输入`npm i @hapi/vision`即可获取最新版本。
 
 ### 笔记组件 (The Note Component)
 
 首先，我们将构建一个可以在我们的视图中复用的笔记组件。此外，我们还将在某些控制器函数中使用该组件，在后端动态构建笔记，以简化客户端的逻辑。
 
-在 `lib/views/components` 目录中创建一个名为 `note.pug` 的文件，内容如下：
+在`lib/views/components`目录中创建一个名为`note.pug`的文件，内容如下：
 
-```
+```pug
 article.content
   h2.title: a(href=`/note/${note.slug}`)= note.title
   p.subtitle.is-6 Published on #{note.date}
@@ -2543,9 +2553,9 @@ article.content
 
 ### 基础布局 (The Base Layout)
 
-基础布局包含了我们页面的公共元素——换句话说，对于我们的示例来说，就是除内容以外的所有部分。在 `lib/views/` 目录中创建一个名为 `layout.pug` 的文件，内容如下：
+基础布局包含了我们页面的公共元素——换句话说，对于我们的示例来说，就是除内容以外的所有部分。在`lib/views/`目录中创建一个名为`layout.pug`的文件，内容如下：
 
-```
+```pug
 doctype html
 head
   meta(charset='utf-8')
@@ -2559,17 +2569,17 @@ body
   script(src='/scripts/main.js')
 ```
 
-其他页面的内容将加载到 `block content` 所在的位置。注意，我们将在 `title` 元素中显示页面变量，并在 `meta(name='description')` 元素中使用 `description` 变量。我们稍会在路由中创建这些变量。
+其他页面的内容将加载到`block content`所在的位置。注意，我们将在`title`元素中显示页面变量，并在`meta(name='description')`元素中使用`description`变量。我们稍会在路由中创建这些变量。
 
-为了样式化，我们从 CDN 引入了 [Bulma CSS 框架](https://bulma.io/) 和 [Font Awesome](https://fontawesome.com/)。我们还在页面底部包含了一个 `main.js` 文件，它将包含我们前端所有的自定义 JavaScript 代码。请现在在 `static/public/scripts/` 目录中创建该文件。
+为了样式化，我们从 CDN 引入了 [Bulma CSS 框架](https://bulma.io/) 和 [Font Awesome](https://fontawesome.com/)。我们还在页面底部包含了一个`main.js`文件，它将包含我们前端所有的自定义 JavaScript 代码。请现在在`static/public/scripts/`目录中创建该文件。
 
 ### 首页视图 (The Home View)
 
 在主页上，我们将显示数据库中所有笔记的列表，以及一个可以显示带表单模态窗口的按钮，允许我们通过 Ajax 创建新笔记。
 
-在 `lib/views` 目录中创建一个名为 `home.pug` 的文件，内容如下：
+在`lib/views`目录中创建一个名为`home.pug`的文件，内容如下：
 
-```
+```pug
 extends layout
 
 block content
@@ -2615,10 +2625,11 @@ block content
 
 笔记页面与首页非常相似，但在这种情况下，我们显示一个包含当前笔记特定选项的菜单、笔记内容以及与主页相同的表单，但表单已预填了信息。
 
-在 `lib/views` 中创建一个名为 `note.pug` 的文件，内容如下：
+在`lib/views`中创建一个名为`note.pug`的文件，内容如下：
 
-```
-extends layout
+
+
+```pug我是由深度求索（DeepSeek）研发的 deepseek-v4-flash-0731 智能大模型。extends layout
 
 block content
   section.section
@@ -2732,8 +2743,6 @@ form.addEventListener("submit", e => {
     .catch(error => console.error(error));
 });
 ```
-
-
 
 每当用户在模态窗口中提交表单时，我们都会从表单元素获取信息并发送到后端，具体取决于操作 URL 和方法（`POST` 或 `PUT`）。然后，我们将获得一个包含我们新笔记数据的 HTML 块作为结果。当我们添加笔记时，我们将将其添加到首页列表的顶部；当我们更新笔记时，我们将用新内容替换笔记视图中的旧内容。
 
@@ -2885,14 +2894,14 @@ await server.register([require("@hapi/vision"), require("@hapi/inert")]);
 
 如果你想让这个示例更进一步，在完成所有（与架构无关）的小细节以使其成为一个健壮的应用之后，你可以实现一个身份验证系统，使得只有注册用户能够发布和编辑笔记。你的想象力就是限制，尽管克隆该[应用](https://github.com/sitepoint-editors/notes-board) 并尽情发挥吧！
 
-
-
 MongoDB 有多个版本。我们感兴趣的是 `MongoDB Community Edition`（社区版）。
 
 该项目的主页有非常出色的文档，我不再在这里重复这些内容了。相反，我将为你提供各个主要操作系统的指令链接：
 
 * [在 Windows 上安装 MongoDB 社区版](https://docs.mongodb.com/manual/tutorial/install-mongodb-on-windows/)
+
 * [在 macOS 上安装 MongoDB 社区版](https://docs.mongodb.com/manual/tutorial/install-mongodb-on-os-x/)
+
 * [在 Ubuntu 上安装 MongoDB 社区版](https://docs.mongodb.com/manual/tutorial/install-mongodb-on-ubuntu/)
 
 如果你使用的是非 Ubuntu 的 Linux 版本，可以查看[此页面](https://docs.mongodb.com/manual/installation/#mongodb-community-edition-installation-tutorials) 以获取其他发行版的安装说明。MongoDB 通常也可以通过官方的 Linux 软件通道获取，但有时会拉取到旧版本。
@@ -2946,11 +2955,13 @@ npm install express
 
 让我们来操作吧。运行以下命令：
 
+
+
 ```bash
 npm install body-parser express-session
 ```
 
-完成后，在应用的根目录下创建一个 `index.js` 文件，并向其中添加以下内容：
+完成后，在应用的根目录下创建一个`index.js`文件，并向其中添加以下内容：
 
 ```javascript
 /*  EXPRESS SETUP  */
@@ -2975,18 +2986,15 @@ const port = process.env.PORT || 3000;
 app.listen(port, () => console.log('App listening on port ' + port));
 ```
 
-首先，我们 `require` Express 并通过调用 [`express()`](http://expressjs.com/en/api.html#express) 创建我们的 Express 应用。然后我们定义了提供静态文件的目录。
+首先，我们`require` Express 并通过调用[`express()`](http://expressjs.com/en/api.html#express)创建我们的 Express 应用。然后我们定义了提供静态文件的目录。
 
-下一行我们 `require` 了 body-parser 中间件，它将帮助我们解析请求体。我们还添加了 express-session 中间件来帮助我们保存 session cookie。
+下一行我们`require`了 body-parser 中间件，它将帮助我们解析请求体。我们还添加了 express-session 中间件来帮助我们保存 session cookie。
 
-如你所见，我们正在使用 `secret` 配置 express-session，以便对 session ID cookie 进行签名（你应该在这里选择一个唯一值），以及另外两个字段：[resave](https://github.com/expressjs/session#resave) 和 [saveUninitialized](https://github.com/expressjs/session#saveUninitialized)。`resave` 字段强制将 session 保存回 session 存储器，而 `saveUninitialized` 字段则强制将“未初始化”的 session 保存到存储器中。如需了解更多关于它们的信息，请查看它们的文档，但目前知道对于我们的情况，我们将它们设为 `false` 即可。
+如你所见，我们正在使用`secret`配置 express-session，以便对 session ID cookie 进行签名（你应该在这里选择一个唯一值），以及另外两个字段：[resave](https://github.com/expressjs/session#resave)和[saveUninitialized](https://github.com/expressjs/session#saveUninitialized)。`resave`字段强制将 session 保存回 session 存储器，而`saveUninitialized`字段则强制将“未初始化”的 session 保存到存储器中。如需了解更多关于它们的信息，请查看它们的文档，但目前知道对于我们的情况，我们将它们设为`false`即可。
 
-然后，我们使用 `process.env.PORT` 在存在环境变量端口时将端口设置为该值。否则，我们将默认为 3000。最后调用 [`app.listen`](http://expressjs.com/en/api.html#express) 启动端口，并在控制台打印应用正在该端口上运行。
+然后，我们使用`process.env.PORT`在存在环境变量端口时将端口设置为该值。否则，我们将默认为 3000。最后调用[`app.listen`](http://expressjs.com/en/api.html#express)启动端口，并在控制台打印应用正在该端口上运行。
 
-
-
-
-```
+```javascript
 /* MONGOOSE SETUP */
 
 const mongoose = require('mongoose');
@@ -3005,9 +3013,9 @@ UserDetail.plugin(passportLocalMongoose);
 const UserDetails = mongoose.model('userInfo', UserDetail, 'userInfo');
 ```
 
-在这里，我们引入了之前安装的包。然后，我们使用 `mongoose.connect` 连接到数据库并提供数据库的路径。接下来，我们利用一个[Schema](http://mongoosejs.com/docs/guide.html) 来定义我们的数据结构。在这种情况下，我们正在创建一个包含 `username` 和 `password` 字段的 `UserDetail` 架构。
+在这里，我们引入了之前安装的包。然后，我们使用`mongoose.connect`连接到数据库并提供数据库的路径。接下来，我们利用一个[Schema](http://mongoosejs.com/docs/guide.html)来定义我们的数据结构。在这种情况下，我们正在创建一个包含`username`和`password`字段的`UserDetail`架构。
 
-最后，我们将 `passportLocalMongoose` 作为插件添加到我们的 `Schema` 中。这将实现我们之前讨论过的那些“魔法”功能的一部分。然后，我们从该架构创建一个[model](http://mongoosejs.com/docs/models.html)。第一个参数是数据库中集合的名称。第二个参数是对我们 `Schema` 的引用，第三个参数是分配给 Mongoose 内部集合的名称。
+最后，我们将`passportLocalMongoose`作为插件添加到我们的`Schema`中。这将实现我们之前讨论过的那些“魔法”功能的一部分。然后，我们从该架构创建一个[model](http://mongoosejs.com/docs/models.html)。第一个参数是数据库中集合的名称。第二个参数是对我们`Schema`的引用，第三个参数是分配给 Mongoose 内部集合的名称。
 
 Mongoose 的设置到此。我们现在可以继续实现 Passport 策略了。
 
@@ -3015,7 +3023,7 @@ Mongoose 的设置到此。我们现在可以继续实现 Passport 策略了。
 
 最后，这正是我们来此的目的！让我们设置本地身份验证。正如你在下方看到的，我们只需要编写为我们完成设置的代码：
 
-```
+```javascript
 /* PASSPORT LOCAL AUTHENTICATION */
 
 passport.use(UserDetails.createStrategy());
@@ -3024,23 +3032,23 @@ passport.serializeUser(UserDetails.serializeUser());
 passport.deserializeUser(UserDetails.deserializeUser());
 ```
 
-这里发生了一些非常神奇的操作。首先，通过在我们的 `UserDetails` 模型上调用 `createStrategy()`（多亏了 `passport-local-mongoose` 的帮助），我们让 `passport` 使用本地策略——它会处理一切，这样我们就不需要设置策略了。非常方便。
+这里发生了一些非常神奇的操作。首先，通过在我们的`UserDetails`模型上调用`createStrategy()`（多亏了`passport-local-mongoose`的帮助），我们让`passport`使用本地策略——它会处理一切，这样我们就不需要设置策略了。非常方便。
 
-然后，我们正在使用 `serializeUser`（序列化用户）和 `deserializeUser`（反序列化用户）回调函数。第一个会在身份验证时调用，它的任务是用我们传递它的信息序列化用户实例，并通过 cookie 将其存储在会话中。第二个会在后的每个请求中调用，以反序列化实例，提供唯一的 cookie 标识符作为“凭据”。你可以在[Passport 文档](http://www.passportjs.org/docs/configure/#sessions)中阅读更多信息。
+然后，我们正在使用`serializeUser`（序列化用户）和`deserializeUser`（反序列化用户）回调函数。第一个会在身份验证时调用，它的任务是用我们传递它的信息序列化用户实例，并通过 cookie 将其存储在会话中。第二个会在后的每个请求中调用，以反序列化实例，提供唯一的 cookie 标识符作为“凭据”。你可以在[Passport 文档](http://www.passportjs.org/docs/configure/#sessions)中阅读更多信息。
 
 ## 路由 (Routes)
 
 现在让我们添加一些路由来将所有内容整合在一起。首先，我们将添加最后一个包。进入终端并运行以下命令：
 
-```
+```bash
 npm install connect-ensure-login
 ```
 
-[connect-ensure-login](https://www.npmjs.com/package/connect-ensure-login) 包是一个确保用户已登录的中间件。如果接收到未认证的请求，该请求将重定向到登录页面。我们将使用它来保护我们的路由。
+[connect-ensure-login](https://www.npmjs.com/package/connect-ensure-login)包是一个确保用户已登录的中间件。如果接收到未认证的请求，该请求将重定向到登录页面。我们将使用它来保护我们的路由。
 
-现在，在 `index.js` 的底部添加以下内容：
+现在，在`index.js`的底部添加以下内容：
 
-```
+```javascript
 /* ROUTES */
 
 const connectEnsureLogin = require('connect-ensure-login');
@@ -3088,17 +3096,17 @@ app.get('/user',
 );
 ```
 
-在顶部，我们引入了 `connect-ensure-login`。我们稍后会回到这里。
+在顶部，我们引入了`connect-ensure-login`。我们稍后会回到这里。
 
-接下来，我们设置了一个路由来处理对 `/login` 路径的 POST 请求。在处理程序内部，我们使用 [passport.authenticate](http://www.passportjs.org/docs/authenticate/) 方法，它尝试用其作为第一个参数接收的策略进行身份验证——在这种情况下是 `local`。如果身份验证失败，它会将我们重定向到 `/login`，但它会添加一个查询参数——`info`，其中包含错误消息。否则，如果身份验证成功，它会将我们重定向到 `'/'` 路由。
+接下来，我们设置了一个路由来处理对`/login`路径的 POST 请求。在处理程序内部，我们使用[passport.authenticate](http://www.passportjs.org/docs/authenticate/)方法，它尝试用其作为第一个参数接收的策略进行身份验证——在这种情况下是`local`。如果身份验证失败，它会将我们重定向到`/login`，但它会添加一个查询参数——`info`，其中包含错误消息。否则，如果身份验证成功，它会将我们重定向到`'/'`路由。
 
-然后我们设置了 `/login` 路由，它将发送登录页面。为此，我们使用 [res.sendFile()](http://expressjs.com/en/api.html#res.sendFile) 并传入文件路径和我们的根目录，即我们正在工作的目录——因此使用了 `__dirname`）。
+然后我们设置了`/login`路由，它将发送登录页面。为此，我们使用[res.sendFile()](http://expressjs.com/en/api.html#res.sendFile)并传入文件路径和我们的根目录，即我们正在工作的目录——因此使用了`__dirname`）。
 
-`/login` 任何人都可以访问，但我们后面的路由不会。
+`/login`任何人都可以访问，但我们后面的路由不会。
 
 ## 客户端 (The Client)
 
-客户端应该非常简单。让我们从主页开始。在项目根目录下创建一个 `html` 文件夹，并添加一个 `index.html` 文件。添加以下内容：
+客户端应该非常简单。让我们从主页开始。在项目根目录下创建一个`html`文件夹，并添加一个`index.html`文件。添加以下内容：
 
 ```html
 <!DOCTYPE html>
@@ -3130,20 +3138,19 @@ app.get('/user',
 </html>
 ```
 
-这里有一个空的 h1 标签，我们将在其中放置欢迎消息，下方是一个指向 `/private` 的链接。这里的关键是底部的 `script` 标签，我们将在这里处理用户名以创建欢迎消息。
+这里有一个空的 h1 标签，我们将在其中放置欢迎消息，下方是一个指向`/private`的链接。这里的关键是底部的`script`标签，我们将在这里处理用户名以创建欢迎消息。
 
 这分为四个部分：
 
-1.  使用 `new XMLHttpRequest()` 实例化请求对象。
-2.  设置 `onreadystatechange` 属性，该函数将在收到答案后被调用。在回调函数中，我们检查是否收到了成功响应，如果是，我们解析响应，获取用户对象（我们在 `/user` 路由中发送的那个，记得吗？），并找到 `welcome-message` 元素设置其 `innerText`。
-3.  使用 `open()` 打开用户 URL 的 `GET` 请求，并将最后一个参数设置为 `true` 以使其变为异步的。
-4.  最后，我们调用 `send()` 请求。
+1. 使用`new XMLHttpRequest()`实例化请求对象。
 
-现在我们将创建登录页面。和之前一样，在 HTML 文件夹中创建一个名为 `login.html` 的文件并向其中添加以下内容：
+2. 设置`onreadystatechange`属性，该函数将在收到答案后被调用。在回调函数中，我们检查是否收到了成功响应，如果是，我们解析响应，获取用户对象（我们在`/user`路由中发送的那个，记得吗？），并找到`welcome-message`元素设置其`innerText`。
 
+3. 使用`open()`打开用户 URL 的`GET`请求，并将最后一个参数设置为`true`以使其变为异步的。
 
+4. 最后，我们调用`send()`请求。
 
-
+现在我们将创建登录页面。和之前一样，在 HTML 文件夹中创建一个名为`login.html`的文件并向其中添加以下内容：
 
 ```html
 <!DOCTYPE html>
@@ -3187,13 +3194,13 @@ app.get('/user',
 </html>
 ```
 
-在这个页面上，我们有一个简单的登录表单，包含 `username` 和 `password` 字段，以及一个 `Submit` 按钮。在下方，我们有一个标签用于显示任何错误信息。记住，这些信息包含在查询字符串中。
+在这个页面上，我们有一个简单的登录表单，包含`username`和`password`字段，以及一个`Submit`按钮。在下方，我们有一个标签用于显示任何错误信息。记住，这些信息包含在查询字符串中。
 
-底部的 `script` 标签这次要简单得多。我们实例化了一个 `URLSearchParams` 对象，并传入了 `window.location.search` 属性，该属性包含了我们 URL 中的参数字符串。然后，我们使用 `URLSearchParams.get()` 方法，传入我们正在查找的参数名。
+底部的`script`标签这次要简单得多。我们实例化了一个`URLSearchParams`对象，并传入了`window.location.search`属性，该属性包含了我们 URL 中的参数字符串。然后，我们使用`URLSearchParams.get()`方法，传入我们正在查找的参数名。
 
-到此时，我们要么有一个信息消息，要么没有。所以，如果有消息，我们就获取 `error-message` 元素并将其 `innerText` 设置为该消息的内容，然后将它的 `style.display` 属性设置为 `block`。由于在默认情况下它的值为 `display: "none"`，这将使它变得可见。
+到此时，我们要么有一个信息消息，要么没有。所以，如果有消息，我们就获取`error-message`元素并将其`innerText`设置为该消息的内容，然后将它的`style.display`属性设置为`block`。由于在默认情况下它的值为`display: "none"`，这将使它变得可见。
 
-现在让我们设置私有页面。同样，在 HTML 文件夹中创建一个名为 `private.html` 的文件并添加以下内容：
+现在让我们设置私有页面。同样，在 HTML 文件夹中创建一个名为`private.html`的文件并添加以下内容：
 
 ```html
 <!DOCTYPE html>
@@ -3213,9 +3220,11 @@ app.get('/user',
 </html>
 ```
 
-非常简单。只有一个简单的消息和一个带我们返回主页的 `Go back` 链接。
+非常简单。只有一个简单的消息和一个带我们返回主页的`Go back`链接。
 
-HTML 部分就此结束，但正如你可能注意到的，我们在 `head` 标签中引用了一个 `CSS` 文件。现在添加该文件。在项目根目录下创建一个名为 `css` 的文件夹，并在其中添加一个 `styles.css` 文件，内容如下：
+HTML 部分就此结束，但正如你可能注意到的，我们在`head`标签中引用了一个`CSS`文件。现在添加该文件。在项目根目录下创建一个名为`css`的文件夹，并在其中添加一个`styles.css`文件，内容如下：
+
+
 
 ```css
 body {
@@ -3288,31 +3297,27 @@ UserDetails.register({username:'jay', active: false}, 'jay');
 UserDetails.register({username:'roy', active: false}, 'roy');
 ```
 
-
-
-
-
 | term | description |
 | :--- | :--- |
-| **log point** | 日志点：指示调试器在执行过程中的某一点显示变量的值 |
-| **logging** | 日志：将运行时信息输出到控制台或文件 |
-| **logic error** | 逻辑错误：程序运行但行为不符合预期 |
-| **priority** | 优先级：bug 在计划更新列表中的分配位置 |
-| **race condition** | 竞态条件：依赖于不可控事件的顺序或时机的难以追踪的 bug |
-| **refactoring** | 重构：重写代码以提高可读性和维护性 |
-| **regression** | 回归：之前已修复的 bug 重新出现，可能是由于其他更新引起的 |
-| **related** | 相关：与另一个 bug 相似或相关的 bug |
-| **reproduce** | 复现：导致错误所需的步骤 |
-| **RTFM error** | RTFM 错误：伪装成 bug 报告的用户无能行为，通常会收到“去读那本*该死的*手册”的回复 |
-| **step into** | 入：在调试器中逐行执行代码时，进入被调用的函数 |
-| **step out** | 出：在逐行执行时，完成当前函数的执行并返回到调用代码 |
-| **step over** | 跳：在逐行执行时，完成命令的执行，而不进入其调用的函数 |
-| **severity** | 严重程度：bug 对系统的影响。例如，数据丢失通常被认为比 UI 问题更严重，除非发生频率非常低 |
-| **stack trace** | 堆栈追踪：错误发生前调用的所有函数历史列表 |
-| **syntax error** | 语法错误：拼写错误，例如 `console.lug()` |
-| **user error** | 用户错误：由用户而非应用程序引起的错误，但根据该用户的资历，可能仍需要更新 |
-| **watch** | 监视：在调试器执行期间检查的变量 |
-| **watchpoint** | 监视点：类似于断点，但当变量被设置为特定值时程序会停止 |
+| `log point` | 日志点：指示调试器在执行过程中的某一点显示变量的值 |
+| `logging` | 日志：将运行时信息输出到控制台或文件 |
+| `logic error` | 逻辑错误：程序运行但行为不符合预期 |
+| `priority` | 优先级：bug 在计划更新列表中的分配位置 |
+| `race condition` | 竞态条件：依赖于不可控事件的顺序或时机的难以追踪的 bug |
+| `refactoring` | 重构：重写代码以提高可读性和维护性 |
+| `regression` | 回归：之前已修复的 bug 重新出现，可能是由于其他更新引起的 |
+| `related` | 相关：与另一个 bug 相似或相关的 bug |
+| `reproduce` | 复现：导致错误所需的步骤 |
+| `RTFM error` | RTFM 错误：伪装成 bug 报告的用户无能行为，通常会收到“去读那本*该死的*手册”的回复 |
+| `step into` | 入：在调试器中逐行执行代码时，进入被调用的函数 |
+| `step out` | 出：在逐行执行时，完成当前函数的执行并返回到调用代码 |
+| `step over` | 跳：在逐行执行时，完成命令的执行，而不进入其调用的函数 |
+| `severity` | 严重程度：bug 对系统的影响。例如，数据丢失通常被认为比 UI 问题更严重，除非发生频率非常低 |
+| `stack trace` | 堆栈追踪：错误发生前调用的所有函数历史列表 |
+| `syntax error` | 语法错误：拼写错误，例如 `console.lug()` |
+| `user error` | 用户错误：由用户而非应用程序引起的错误，但根据该用户的资历，可能仍需要更新 |
+| `watch` | 监视：在调试器执行期间检查的变量 |
+| `watchpoint` | 监视点：类似于断点，但当变量被设置为特定值时程序会停止 |
 
 ## 如何避免 Bug
 
@@ -3324,13 +3329,13 @@ UserDetails.register({username:'roy', active: false}, 'roy');
 
 Node.js 开发者有很多免费编辑器可以选择，如 [VS Code](https://code.visualstudio.com/)、[Atom](https://atom.io/) 和 [Brackets](http://brackets.io/)，以及许多商业替代方案。
 
-### 使用代码检查 (Linter)
+### 使用代码检查（Linter）
 
 Linter 可以在你保存和测试代码之前报告代码故障，如语法错误、缩进不当、未声明变量和括号不匹配。JavaScript 和 Node.js 的流行选项包括 [ESLint](https://eslint.org/)、[JSLint](https://www.jslint.com/) 和 [JSHint](https://jshint.com/)。
 
 这些通常作为全局 Node.js 模块安装，你可以从命令行运行检查：
 
-```
+```bash
 eslint myfile.js
 ```
 
@@ -3350,7 +3355,7 @@ eslint myfile.js
 
 ### 使用测试驱动开发
 
-[测试驱动开发](https://www.sitepoint.com/learning-javascript-test-driven-development-by-example/) (TDD) 是一种开发流程，鼓励开发者在编写代码之前编写测试函数操作的代码——例如，*当向函数 Y 输入 Z 时，是否返回了 X*。
+[测试驱动开发](https://www.sitepoint.com/learning-javascript-test-driven-development-by-example/)（TDD）是一种开发流程，鼓励开发者在编写代码之前编写测试函数操作的代码——例如，*当向函数 Y 输入 Z 时，是否返回了 X*。
 
 可以在开发过程中运行测试，以证明函数正常工作并在进行进一步更改时发现任何问题。话虽如此，你的测试也可能存在 bug……
 
@@ -3364,25 +3369,25 @@ eslint myfile.js
 
 在 Linux/macOS 上可以设置环境变量：
 
-```
+```bash
 NODE_ENV=development
 ```
 
 Windows `cmd`：
 
-```
+```cmd
 set NODE_ENV=development
 ```
 
 或者 Windows PowerShell：
 
-```
+```powershell
 $env:NODE_ENV="development"
 ```
 
 内部，应用程序将启用更多调试功能和消息。例如：
 
-```
+```javascript
 // (示例代码)
 ```
 
@@ -3392,9 +3397,9 @@ $env:NODE_ENV="development"
 
 可以设置任意选项，包括：
 
-*   `--enable-source-maps`:启用源映射（实验性）
-*   `--throw-deprecation`: 使用弃用功能时抛出错误
-*   `--inspect`:  V8 调试器（见下文）
+- `--enable-source-maps`：启用源映射（实验性）
+- `--throw-deprecation`：使用弃用功能时抛出错误
+- `--inspect`：V8 调试器（见下文）
 
 通过示例，让我们尝试记录 [crypto 模块的 `ENCODING` 属性](https://nodejs.org/api/crypto.html#crypto_encoding)，该属性在 Node v10 中被弃用：
 
@@ -3405,7 +3410,7 @@ function bar() {
   console.log(crypto.DEFAULT_ENCODING);
 }
 
-function foo(){
+function foo() {
   bar();
 }
 
@@ -3414,36 +3419,32 @@ foo();
 
 现在使用以下命令运行它：
 
-```
+```bash
 node index.js
 ```
 
 我们将看到：
 
-```
+```text
 buffer
 (node:7405) [DEP0091] DeprecationWarning: crypto.DEFAULT_ENCODING is deprecated.
 ```
 
 然而，我们也可以这样做：
 
-```
+```bash
 node --trace-warnings index.js
 ```
 
 那产生以下输出：
 
-```
+```text
 buffer
 (node:7502) [DEP0091] DeprecationWarning: crypto.DEFAULT_ENCODING is deprecated.
     at bar (/home/Desktop/index.js:4:22)
     at foo (/home/Desktop/index.js:8:3)
     at Object.<anonymous> (/home/Desktop/index.js:11:1)
 ```
-
-
-
-
 
 这告诉我们，弃用警告来自第 4 行的代码（`console.log` 语句），该语句是在 `bar` 函数运行时执行的。`bar` 函数是由第 8 行的 `foo` 函数调用的，而 `foo` 函数在脚本的第 11 行被调用。
 
@@ -3454,13 +3455,13 @@ buffer
 调试应用程序最简单的方法之一是在执行期间将值输出到控制台：
 
 ```javascript
-console.log( myVariable );
+console.log(myVariable);
 ```
 
 很少有开发者深入研究这个简单的调试命令之外，但他们错过了[许多更多可能性](https://nodejs.org/api/console.html)，包括这些：
 
 | `console` 方法 | 描述 |
-| --- | --- |
+| :--- | :--- |
 | [`.log(msg)`](https://nodejs.org/api/console.html#console_console_log_data_args) | 向控制台输出消息 |
 | [`.dir(obj,opt)`](https://nodejs.org/api/console.html#console_console_dir_obj_options) | 使用 [`util.inspect`](https://nodejs.org/api/util.html#util_util_inspect_object_options) 格式化打印对象和属性 |
 | [`.table(obj)`](https://nodejs.org/api/console.html#console_console_table_tabulardata_properties) | 以表格格式输出对象数组 |
@@ -3468,7 +3469,7 @@ console.log( myVariable );
 | [`.count(label)`](https://nodejs.org/api/console.html#console_console_count_label) | 具名的计数器，报告该行执行的次数 |
 | [`.countReset[label]`](https://nodejs.org/api/console.html#console_console_countreset_label) | 重置命名计数器 |
 | [`.group(label)`](https://nodejs.org/api/console.html#console_console_group_label) | 对一组日志消息进行缩进 |
-| [`.groupEnd(label)`](https://nodejs.org/api/console.html#console_console_groupend) | 结束缩进组 |
+| [`.groupEnd(label)`](https://nodejs.org/api/console.html#console_console_groupend_label) | 结束缩进组 |
 | [`.time(label)`](https://nodejs.org/api/console.html#console_console_time_label) | 启动计时器计算操作持续时间 |
 | [`.timeLog([label]`](https://nodejs.org/api/console.html#console_console_timelog_label_data) | 报告自计时器启动以来经过的时间 |
 | [`.timeEnd(label)`](https://nodejs.org/api/console.html#console_console_timeend_label) | 停止计时器并报告总持续时间 |
@@ -3483,7 +3484,7 @@ console.log('x:', x);
 // x: 123
 ```
 
-然而，[ES6 解构](https://www.sitepoint.com/es6-destructuring-assignment/) 可以提供类似的输出，且输入量更少：
+然而，[ES6 解构](https://www.sitepoint.com/es6-destructuring-assignment/)可以提供类似的输出，且输入量更少：
 
 ```javascript
 console.log({x});
@@ -3493,7 +3494,7 @@ console.log({x});
 较大的对象可以使用此方法作为压缩字符串输出：
 
 ```javascript
-console.log( JSON.stringify(obj) );
+console.log(JSON.stringify(obj));
 ```
 
 [`util.inspect`](https://nodejs.org/api/util.html#util_util_inspect_object_options) 会格式化对象以便阅读，但 `console.dir()` 会为你完成这项工作。
@@ -3518,19 +3519,22 @@ MYAPP 9876: myapp debug message [123]
 
 在这里，`9876` 是 Node.js 的进程 ID。
 
-默认情况下，`util.debuglog` 是静的。如果你在没有设置 `NODE_DEBUG` 变量的情况下运行上述脚本，控制台不会输出任何内容。这允许你在代码中留下有用的调试日志，而不会干扰日常使用的控制台。
+默认情况下，`util.debuglog` 是静态的。如果你在没有设置 `NODE_DEBUG` 变量的情况下运行上述脚本，控制台不会输出任何内容。这允许你在代码中留下有用的调试日志，而不会干扰日常使用的控制台。
 
 ## 使用日志模块进行调试
 
 如果你需要关于消息级别、详细程度、排序、文件输出、分析等等更复杂的选项，可以使用第三方日志模块。流行的选项包括：
 
-* [cabin](https://www.npmjs.com/package/cabin)
-* [loglevel](https://www.npmjs.com/package/loglevel)
-* [morgan](https://www.npmjs.com/package/morgan) (Express.js 中间件)
+- [cabin](https://www.npmjs.com/package/cabin)
+- [loglevel](https://www.npmjs.com/package/loglevel)
+
+
+
+- [morgan](https://www.npmjs.com/package/morgan)（Express.js 中间件）
 
 ## Node.js V8 Inspector
 
-Node.js 器（不带调试器客户端）通过 `--inspect` 标志启动：
+Node.js 调试器（不带调试器客户端）通过 `--inspect` 标志启动：
 
 ```bash
 node --inspect ./index.js
@@ -3546,7 +3550,7 @@ node --inspect ./index.js
 Debugger listening on ws://127.0.0.1:9229/20ac75ae-90c5-4db6-af6b-d9d7459257f
 ```
 
-如果你在另一个设备或 Docker 容器上运行 Node.js ，请确保端口 `9229` 可用并使用以下命令授予远程访问：
+如果你在另一个设备或 Docker 容器上运行 Node.js，请确保端口 `9229` 可用并使用以下命令授予远程访问：
 
 ```bash
 node --inspect=0.0.0.0:9229 ./index.js
@@ -3554,18 +3558,15 @@ node --inspect=0.0.0.0:9229 ./index.js
 
 或者你可以使用 `--inspect-brk` 在第一语句处设置断点，使应用程序立即暂停。
 
-打开 Chromeget 地址栏中输入 `chrome://inspect`。
+打开 Chrome，在地址栏中输入 `chrome://inspect`。
 
 ### 远程目标
 
-如果 Node.js 应用未显示为**远程目标 (Remote Target)**，请确保勾选了**发现网络目标 (Discover network targets)**，然后点击**配置 (Configure)** 添加运行应用程序的设备的 IP 地址和端口。
+如果 Node.js 应用未显示为**远程目标（Remote Target）**，请确保勾选了**发现网络目标（Discover network targets）**，然后点击**配置（Configure）**添加运行应用程序的设备的 IP 地址和端口。
 
-点击 Target 的 **inspect** 链接启动 DevTools。对于任何有浏览器调试经验的人来说，这会非常熟悉。
+点击 Target 的 `inspect` 链接启动 DevTools。对于任何有浏览器调试经验的人来说，这会非常熟悉。
 
-**+ 添加文件夹到工作区 (Add folder to workspace)** 链接允许你选择 Node.js 文件在系统上的位置，这样加载其他模块和进行更改就会变得更容易。
-
-
-
+`+ 添加文件夹到工作区（Add folder to workspace）`链接允许你选择 Node.js 文件在系统上的位置，这样加载其他模块和进行更改就会变得更容易。
 
 点击任何行号即可设置断点，断点用绿色标记表示，当执行到该代码时会停止：
 
@@ -3591,7 +3592,7 @@ node --inspect=0.0.0.0:9229 ./index.js
 
 ![VS Code breakpoint](img/vscode-breakpoint.png)
 
-点击行号旁边的可以设置断点。你也可以右键点击。
+点击行号旁边的区域可以设置断点。你也可以右键点击。
 
 ![VS Code breakpoint options](img/vscode-points.png)
 
@@ -3619,8 +3620,8 @@ node --inspect=0.0.0.0:9229 ./index.js
 
 配置数组中可以添加任意数量的设置。点击 `Add Configuration` 按钮选择选项。VS Code 可以：
 
-1. 使用 Node.js **启动 (launch)** 进程，或者
-2. **附加 (attach)** 到运行在远程机器或 Docker 容器上的 Node.js 进程
+1. 使用 Node.js **启动（launch）**进程，或者
+2. **附加（attach）**到运行在远程机器或 Docker 容器上的 Node.js 进程。
 
 在上面的示例中，定义了一个简单的 Nodemon 配置。保存 `launch.json`，在 `Run and Debug` 面板顶部的下拉列表中选择 `nodemon`，然后点击绿色启动图标。
 
@@ -3630,7 +3631,7 @@ node --inspect=0.0.0.0:9229 ./index.js
 
 ## 其他 Node.js 调试工具
 
-[Node.js 调试指南](https://nodejs.org/en/docs/guides/debugging-getting-started/) 为其他 IDE 和编辑器（包括 Visual Studio、JetBrains WebStorm、Gitpod 和 Eclipse）提供了建议。Atom 也有 [node-debug](https://atom.io/packages/node-debug) 插件。
+[Node.js 调试指南](https://nodejs.org/en/docs/guides/debugging-getting-started/)为其他 IDE 和编辑器（包括 Visual Studio、JetBrains WebStorm、Gitpod 和 Eclipse）提供了建议。Atom 也有 [node-debug](https://atom.io/packages/node-debug) 插件。
 
 [ndb](https://github.com/GoogleChromeLabs/ndb) 提供了改进的调试体验，具有如附加子进程和脚本屏蔽（仅显示特定文件夹中的代码）等强大功能。
 
@@ -3656,7 +3657,7 @@ Node.js 有系列出色的调试工具和代码分析器，可以提高应用程
 
 简单来说，测试就是一种验证你的代码是否执行了你认为要做的方法。你编写一个测试，询问使用特定输入运行代码是否产生预期的输出。一旦你让该测试通过，并且你喜欢更新后代码的样子，你就再写另一个测试来确保不同的输入产生不同的预期输出。
 
-以此此类推。最终，你就拥有了所需的每个条件的测试。一旦它们全部通过，你就可以很有信心自己已经完成了！
+以此类推。最终，你就拥有了所需的每个条件的测试。一旦它们全部通过，你就可以很有信心自己已经完成了！
 
 ## 内置的基础断言测试
 
@@ -3677,9 +3678,7 @@ const isFourEven = isEven(4);
 assert(isFourEven, 'isEven(4) 没有返回假值');
 ```
 
-
-
-这仅仅三行测试代码，但我们已经开始对计划编写应用程序的方式做出了一些架构假设。我们的前两行为测试做好了准备，而第三行运行了第一个个测试。
+这仅仅三行测试代码，但我们已经开始对计划编写应用程序的方式做出了一些架构假设。我们的前两行为测试做好了准备，而第三行运行了第一个测试。
 
 我们首先定义了一个本地的 `assert` 常量，它让我们能够访问 Node 默认的 `assert` 功能。在所有的测试中，我们都将使用这个 `assert` 来判断我们正在寻找的行为是否存在，以及它是否按照我们的预期运行。
 
@@ -3715,12 +3714,10 @@ ReferenceError: isEven is not defined
 
 所以，让我们定义它吧！
 
-```
+```javascript
 const assert = require('assert');
 const isFourEven = isEven(4);
 ```
-
-
 
 输出看起来略有不同，但我们仍然像以前一样读取它。我们可以看到出现了一个 `AssertionError`，这本身并没有告诉我们太多信息。根据错误跟踪栈的开头，我们还可以看到“isEven(5) returns true”。这是我们为自己编写的测试失败消息。在跟踪栈下方，我们可以看到更多关于生成了什么信息的详情、实际值和预期值，甚至是使用的比较操作符。
 
@@ -3764,82 +3761,81 @@ assert.equal(isStringEven, false, 'isEven("A") returns true');
 
 我们写的测试代码已经比应用程序代码多了，但为什么我们需要编写的这些内容已经很清楚了。你可能已经看出，这样编写所有测试可能会让你的测试代码变得非常难以阅读。
 
-我们的测试都位于 `test.js` 文件的同一层级，我们的常量声明离断言越来越越来越远。想象一下，尝试用这种组织方式为任何真实世界的应用程序构建所有必要的测试。
+我们的测试都位于 `test.js` 文件的同一层级，我们的常量声明离断言越来越远。想象一下，尝试用这种组织方式为任何真实世界的应用程序构建所有必要的测试。
 
 理想情况下，我们的测试应该像文档一样，清晰地解释我们希望代码的每个部分执行什么，并提供其在不同条件下应如何表现的具体示例。一个没有结构的单一平面文件是不够的。
 
 为了帮助解决这个问题，软件测试通常被组织成模式，以便它们更易阅读、维护和高效运行。这关键在于从逻辑上将相似的测试分组在一起，为它们提供所需的资源以确保每次都以相同的方式运行，并以有组织的方式调用它们，以便你始终知道自己正在测试什么。
 
-当你开始研究潜在的框架，并思考它们如何帮助你利用新的测试编写超能力时，如果定义定义几个术语可能会有所帮助。
+当你开始研究潜在的框架，并思考它们如何帮助你利用新的测试编写超能力时，如果定义几个术语可能会有所帮助。
 
-### 测试用例 (Test Cases)
+### 测试用例（Test Cases）
 
-我们在本指南中编写的是测试用例。每个行为需求通常至少 way 两个测试用例：一个用于显示我们在拥有正确数据时获得了预期结果，另一个用于证明在拥有错误数据时我们没有得到预期结果。
 
-### 测试套件 (Test Suites)
 
-一旦我们定义了一组测试用例，我们可能想通过定义 `test suite` 来保持它们的组织性。这可以是测试文件中的一段代码、包含一组相关测试的单独文件，甚至根据你需求的复杂程度采用嵌套目录结构。不同的测试框架推荐不同的结构化和组织测试代码的方法，但无论如何，相同的概念都适用。
+我们在本指南中编写的是测试用例。每个行为需求通常至少需要两个测试用例：一个用于显示我们在拥有正确数据时获得了预期结果，另一个用于证明在拥有错误数据时我们没有得到预期结果。
 
-### 测试脚架 (Test Harnesses)
+##我是由深度求索（DeepSeek）研发的 deepseek-v4-flash-0731 智能大模型。测试套件 (Test Suites)
 
-`test harness` 是一种组织和设施系统，支持在任何框架内以一致的方法运行一组测试用例的自动化方法。脚架应该包含填充和每次以相同方式执行测试所需的任何资源和数据，以便可以检查其结果的一致性。
+一旦我们定义了一组测试用例，我们可能想通过定义`test suite`来保持它们的组织性。这可以是测试文件中的一段代码、包含一组相关测试的单独文件，甚至根据你需求的复杂程度采用嵌套目录结构。不同的测试框架推荐不同的结构化和组织测试代码的方法，但无论如何，相同的概念都适用。
 
-### 固件 (Fixtures)
+## 测试脚架 (Test Harnesses)
 
-`fixture` 有助于定义初始化系统以测试特定上下文所需设置。在运行每个测试之前定义上下文是至关重要的，以确保你总是从相同的地方开始并具有相同的输入。否则，你的测试每次运行时可能会产生不同的结果，即使你测试的代码没有更改。
+`test harness`是一种组织和设施系统，支持在任何框架内以一致的方法运行一组测试用例的自动化方法。脚架应该包含填充和每次以相同方式执行测试所需的任何资源和数据，以便可以检查其结果的一致性。
 
-### 测试替身 (Test Doubles)
+## 固件 (Fixtures)
+
+`fixture`有助于定义初始化系统以测试特定上下文所需设置。在运行每个测试之前定义上下文是至关重要的，以确保你总是从相同的地方开始并具有相同的输入。否则，你的测试每次运行时可能会产生不同的结果，即使你测试的代码没有更改。
+
+## 测试替身 (Test Doubles)
 
 在现实世界中，我们的软件可能有复杂的、脆弱的、资源密集型的依赖。我们不能总是依赖在想要运行测试的任何环境中访问这些内容。它们为了测试目的而运行可能太昂贵，它们可能依赖于敏感数据，如果我们出错的话将很难进行版本控制和更新，或者由于法规和其他实际问题在我们的测试环境中不可用。
 
-但我们仍然需要确保代码在所有这些情况下都能按预期工作。这就是像 `mock` 和 `stub` 等测试替身（test doubles）派用场的地方。它们模拟真实世界的上下文，这样我们就不需要随身携带实体。
+但我们仍然需要确保代码在所有这些情况下都能按预期工作。这就是像`mock`和`stub`等测试替身（test doubles）派用场的地方。它们模拟真实世界的上下文，这样我们就不需要随身携带实体。
 
-`mock` 位于我们的测试固件内部，模拟测试可能预期的真实世界对象的行为。测试中对该真实对象的任何调用都会被拦截，并提供我们创建的 mock 对象。当真实对象可能取决于调用时间、具有许多活动部件的复杂系统的精确状态、缓慢或昂贵的数据源（这会阻止测试无法按我们需要的频率运行），甚至是尚未创建的资源时，这非常有用。
+`mock`位于我们的测试固件内部，模拟测试可能预期的真实世界对象的行为。测试中对该真实对象的任何调用都会被拦截，并提供我们创建的`mock`对象。当真实对象可能取决于调用时间、具有许多活动部件的复杂系统的精确状态、缓慢或昂贵的数据源（这会阻止测试无法按我们需要的频率运行），甚至是尚未创建的资源时，这非常有用。
 
-`stub` 提供与 mock 类似的人工结果，但是针对函数和方法。对给定方法的所有调用都被拦截，转而提供对该方法的 stub 版本的调用。
-
-
-
+`stub`提供与`mock`类似的人工结果，但是针对函数和方法。对给定方法的所有调用都被拦截，转而提供对该方法的`stub`版本的调用。
 
 还有其他的测试双胞（test doubles），它们可以执行如在代码运行时提供返回值的反馈等操作。某些测试框架自带定义多种类型测试双胞的功能，或者可以通过扩展来包含比默认更多的类型。一旦你深入软件测试的世界，你可能会发现其中包含的各种可能性而感到惊讶。
 
-你可以尝试自己编写所有工具来处理这些测试需求，也可以选择一个功能完备的开箱即用测试框架。那么让我们聊聊在 Node 世界中你拥有的的一些选择。
+你可以尝试自己编写所有工具来处理这些测试需求，也可以选择一个功能完备的开箱即用测试框架。那么让我们聊聊在`Node`世界中你拥有的的一些选择。
 
-## 自动化测试框架
+# 自动化测试框架
 
-一旦我们决定需要超越 Node 内置的 `assert` 功能并开始使用专门的测试框架，我们就会面临着大量的选择。由于这些不同的选项之间存在大量重叠，因为它们都以略有不同的方式执行相似的任务，以适应不同类型的开发。我们可以根据它们最显著的特征来考虑这些工具。
+一旦我们决定需要超越`Node`内置的`assert`功能并开始使用专门的测试框架，我们就会面临着大量的选择。由于这些不同的选项之间存在大量重叠，因为它们都以略有不同的方式执行相似的任务，以适应不同类型的开发。我们可以根据它们最显著的特征来考虑这些工具。
 
-### Jasmine 是最古老的
+## Jasmine 是最古老的
 
-Jasmine 的历史可以追溯到 2010 年之前的时代，当时 JavaScript 主要被认为是一种基于浏览器的前端开发解决方案。[Jasmine](https://jasmine.github.io/) 在为社区引入行为驱动开发（BDD）方面有着悠久的历史。它很好地跟上了 Node 生态系统的步伐，并且仍然是一个可行的选择。
+Jasmine 的历史可以追溯到 2010 年之前的时代，当时`JavaScript`主要被认为是一种基于浏览器的前端开发解决方案。[Jasmine](https://jasmine.github.io/)在为社区引入行为驱动开发（BDD）方面有着悠久的历史。它很好地跟上了`Node`生态系统的步伐，并且仍然是一个可行的选择。
 
 Jasmine 独立运行效果良好，但对于测试套件的深度自动化，你需要依赖像 [Karma](https://karma-runner.github.io/2.0/index.html) 这样独立的测试运行器。它经过了实战检验且文档齐全，因此你通常可以在需要时找到帮助。
 
-### Jest 是最流行的
+## Jest 是最流行的
 
-如今开始测试你的 Node 应用的最快方法之一是使用 [Jest](https://jestjs.io/)，它是 Node 测试领域中相对较新的秀。它的迅速走红可能归功于它源自 Facebook 工程师社区（[React](https://reactjs.org/) 就诞生于那里），以及它在服务器端和客户端的 React 开发中都具有极的易用性。
+如今开始测试你的`Node`应用的最快方法之一是使用 [Jest](https://jestjs.io/)，它是`Node`测试领域中相对较新的秀。它的迅速走红可能归功于它源自 Facebook 工程师社区（[React](https://reactjs.org/) 就诞生于那里），以及它在服务器端和客户端的`React`开发中都具有极的易用性。
 
-如果你是一个熟悉 Jasmine 等工具的老派 JavaScript 开发者，你可能会发现很多相似之处，因为 Facebook 在构建 Jest 时使用了 Jasmine 作为基础。但 Jest 已经从内里到外经过了完全的重构，以提供更快速、更整洁且更容易管理的测试。
+如果你是一个熟悉 Jasmine 等工具的老派`JavaScript`开发者，你可能会发现很多相似之处，因为 Facebook 在构建 Jest 时使用了 Jasmine 作为基础。但 Jest 已经从内里到外经过了完全的重构，以提供更快速、更整洁且更容易管理的测试。
 
-### Mocha/Chai 是最全面的
+## Mocha/Chai 是最全面的
 
-虽然 [Mocha](https://mochajs.org/) 比其他某些解决方案需要更多配置，并且可以利用 Node 内置的 `assert` 方法，但当与 [Chai](https://www.chaijs.com/) 断言库配合使用时，它可以访问更广泛的工具集。因为它的存在时间更长，并且有一套支持良好的潜在插件，它可能可能是最多功能的测试选项。
+虽然 [Mocha](https://mochajs.org/) 比其他某些解决方案需要更多配置，并且可以利用`Node`内置的`assert`方法，但当与 [Chai](https://www.chaijs.com/) 断言库配合使用时，它可以访问更广泛的工具集。因为它的存在时间更长，并且有一套支持良好的潜在插件，它可能可能是最多功能的测试选项。
 
 Mocha 依赖于你告诉它你希望它做什么来支持你可能想要的功能和行为。作为交换，它让你能够访问广泛的插件和扩展，这些插件可以随着你测试需求的成熟而增长，而且在你需要帮助时有一个深厚的用户社区可以提供支持。
 
-### Cypress 是最新的
+## Cypress 是最新的
 
-利用现代 Node 开发的端到端特性，[Cypress](https://www.cypress.io/) 提供了一种集成方式，可以从后端到浏览器测试你的应用程序。Cypress 抛弃了 Selenium 等用于检查前端情况的旧工具，它构建在 Mocha 和 Chai 之上。
+利用现代`Node`开发的端到端特性，[Cypress](https://www.cypress.io/) 提供了一种集成方式，可以从后端到浏览器测试你的应用程序。Cypress 抛弃了 Selenium 等用于检查前端情况的旧工具，它构建在 Mocha 和 Chai 之上。
 
-Cypress [曾被批评](https://help.testim.io/docs/why-not-cypress) 试图控制 JavaScript 中的一切内容，这可能会以牺牲其通用性为代价，并且携带了一些旧遗留 JavaScript API 的包袱。这对于大多数用例来说可能是一个问题，也可能不是，而且它正在被积极开发和支持，所以它绝对是一个值得尝试的选项。
+Cypress [曾被批评](https://help.testim.io/docs/why-not-cypress) 试图控制`JavaScript`中的一切内容，这可能会以牺牲其通用性为代价，并且携带了一些旧遗留`JavaScript` API 的包袱。这对于大多数用例来说可能是一个问题，也可能不是，而且它正在被积极开发和支持，所以它绝对是一个值得尝试的选项。
 
-## 现在开始
+# 现在开始
 
-如果你以前没做过测试，测试似乎是对你工作的一种不受欢迎的干扰。无论你是一个来自在服务器上使用 JavaScript 的想法听起来很奇怪的时代的 Web 开发先驱，还是出生在一个已经习惯 Node 单语言端到端开发便利性的世界的新手探险家，都是如此。
+如果你以前没做过测试，测试似乎是对你工作的一种不受欢迎的干扰。无论你是一个来自在服务器上使用`JavaScript`的想法听起来很奇怪的时代的 Web 开发先驱，还是出生在一个已经习惯`Node`单语言端到端开发便利性的世界的新手探险家，都是如此。
 
 但任何程度的测试都比没有好。你不会随随便便走上一片结冰湖，而至少不会用脚趾探探前面的冰，看看它是否足够厚以至于让你掉进去。你的应用程序难道不值得至少同样的照顾吗？
 
-无论你的代码现在有多大、多臃肿，开始编写测试永远不是坏时机。为你添加的每一个新功能写几个测试。写一些测试来验证最关键的行为，这样你就可以确保它们在代码演进时不会崩溃。如果你现在手里只有 `assert`，现在就从在平文件中使用它开始。当你需要时，你随时可以重构为更复杂的结构。尽管开始吧！
+无论你的代码现在有多大、多臃肿，开始编写测试永远不是坏时机。为你添加的每一个新功能写几个测试。写一些测试来验证最关键的行为，这样你就可以确保它们在代码演进时不会崩溃。如果你现在手里只有`assert`，现在就从在平文件中使用它开始。当你需要时，你随时可以重构为更复杂的结构。尽管开始吧！
 
 # 第 10 章：如何在 Node.js 中使用 SSL/TLS
 
@@ -3847,13 +3843,13 @@ Cypress [曾被批评](https://help.testim.io/docs/why-not-cypress) 试图控制
 
 在 2020 年，你的网站没有理由不使用 HTTPS。访问者期望它，Google 将其作为排名因素，浏览器制造商也会乐于点名并指责那些不使用它的网站。
 
-在教程中，我将带你通过一个实际示例，介绍如何为你的 Express.js 服务器添加由 [Let’s Encrypt](https://letsencrypt.org/) 生成的证书。
+在教程中，我将带你通过一个实际示例，介绍如何为你的`Express.js`服务器添加由 [Let’s Encrypt](https://letsencrypt.org/) 生成的证书。
 
 但用 HTTPS 保护我们的网站和应用是不够的。我们还应该要求通信的服务器提供加密连接。我们将看到，激活 SSL/TLS 的可能性是存在的。
 
 ## NGINX 的 SSL
 
-如果你正在寻找如何在将 NGINX 作为反向代理时设置 SSL 的说明，请查看我们的技巧“[配置 NGINX 与 Node.js](https://www.sitepoint.com/configuring-nginx-ssl-node-js/)”。
+如果你正在寻找如何在将`NGINX`作为反向代理时设置 SSL 的说明，请查看我们的技巧“[配置 NGINX 与 Node.js](https://www.sitepoint.com/configuring-nginx-ssl-node-js/)”。
 
 ## 全处 HTTPS
 
@@ -3875,37 +3871,33 @@ HTTPS 只是 SSL/TLS 之上的 HTTP 协议。因此 HTTP 的所有规则仍然�
 
 > TLS 恰好存在一个性能问题：它被使用得不够广泛。其他一切都可以优化。
 
+最新版本是 TLS 1.3。`TLS`是`SSL`的继任者，后者在其最新版本`SSL 3.0`中可用。从`SSL`到`TLS`的变化使得两者无法互操作，但基本流程保持不变。我们有三种不同的加密通道。第一个是用于证书链的公密钥基础设施。第二个提供用于密钥交换的公钥加密。最后，第三个是对称加密。这里我们有了数据传输的加密。
 
+`TLS 1.3`在一些重要操作中使用哈希算法。理论上讲，可以使用任何哈希算法，但强烈建议使用`SHA2`或更强的算法。`SHA1`长期以来一直是标准，但最近已经过时。
 
-
-
-最新版本是 TLS 1.3。`TLS` 是 `SSL` 的继任者，后者在其最新版本 `SSL 3.0` 中可用。从 `SSL` 到 `TLS` 的变化使得两者无法互操作，但基本流程保持不变。我们有三种不同的加密通道。第一个是用于证书链的公密钥基础设施。第二个提供用于密钥交换的公钥加密。最后，第三个是对称加密。这里我们有了数据传输的加密。
-
-`TLS 1.3 在一些重要操作中使用哈希算法。理论上讲，可以使用任何哈希算法，但强烈建议使用 `SHA2` 或更强的算法。`SHA1` 长期以来一直是标准，但最近已经过时。
-
-`HTTPS` 也受到客户端越来越多的关注。隐私和安全问题一直存在，但随着在线可访问数据和服务的增长，人们变得越来越关注。对于那些没有实现该协议的网站，有一个非常有用的浏览器扩展——[EFF 提供的 HTTPS Everywhere](https://www.eff.org/https-everywhere)，它可以加密我们与大多数网站的通信。
+`HTTPS`也受到客户端越来越多的关注。隐私和安全问题一直存在，但随着在线可访问数据和服务的增长，人们变得越来越关注。对于那些没有实现该协议的网站，有一个非常有用的浏览器扩展——[EFF 提供的 HTTPS Everywhere](https://www.eff.org/https-everywhere)，它可以加密我们与大多数网站的通信。
 
 ![HTTPS-everywhere](img/https-everywhere.png)
 
-创建者意识到许多网站仅部分提供 `HTTPS`。该插件允许我们对那些仅提供部分 `HTTPS` 支持的网站重写请求。或者，我们也可以完全阻止 `HTTP`（见上面的截图）。
+创建者意识到许多网站仅部分提供`HTTPS`。该插件允许我们对那些仅提供部分`HTTPS`支持的网站重写请求。或者，我们也可以完全阻止`HTTP`（见上面的截图）。
 
 ## 基本通信
 
 证书的验证过程涉及验证证书签名和过期时间。我们还需要验证它是否链到一个受信任的根证书。最后，我们需要检查它是否被撤销。世界上有专门的受信任机构来授予证书。如果这些机构中的一个遭到破解，来自该机构的所有其他证书都将被撤销。
 
-`HTTPS` 握手的序列图所示。我们从客户端的初始化开始，随后是带有证书和密钥交换的消息。在服务器发送其完成的数据包后，客户端可以开始密钥交换和密码套规范传输。此时，客户端已完成。最后，服务器确认密码套规范的选择并关闭握手。
+`HTTPS`握手的序列图所示。我们从客户端的初始化开始，随后是带有证书和密钥交换的消息。在服务器发送其完成的数据包后，客户端可以开始密钥交换和密码套规范传输。此时，客户端已完成。最后，服务器确认密码套规范的选择并关闭握手。
 
 ![HTTPS-sequence](img/sequence.png)
 
-整个序列是独立于 `HTTP` 触发。如果我们决定使用 `HTTPS`，只有套接字（socket）处理发生了变化。客户端仍然发出 `HTTP` 请求，但套接字将执行之前描述的握手并加密内容（头部和正文）。
+整个序列是独立于`HTTP`触发。如果我们决定使用`HTTPS`，只有套接字（socket）处理发生了变化。客户端仍然发出`HTTP`请求，但套接字将执行之前描述的握手并加密内容（头部和正文）。
 
-那么，我们需要什么来让 `SSL/TLS` 在 `Express.js` 服务器上工作？
+那么，我们需要什么来让`SSL/TLS`在`Express.js`服务器上工作？
 
 ## HTTPS
 
-默认情况下，`Node.js` 通过 `HTTP` 提供服务。但我们必须使用 [HTTPS 模块](https://nodejs.org/api/https.html) 来与客户端通过安全通道进行通信。这是一个内置模块，用法与我们使用 `HTTP` 模块的方式非常相似：
+默认情况下，`Node.js`通过`HTTP`提供服务。但我们必须使用 [HTTPS 模块](https://nodejs.org/api/https.html) 来与客户端通过安全通道进行通信。这是一个内置模块，用法与我们使用`HTTP`模块的方式非常相似：
 
-```
+```javascript
 const https = require("https"),
   fs = require("fs");
 
@@ -3926,21 +3918,21 @@ app.listen(8000);
 https.createServer(options, app).listen(8080);
 ```
 
-暂时忽略 `/srv/www/keys/my-site-key.pem` 和 `/srv/www/keys/chain.pem` 文件。这些是我们需要生成的 `SSL` 证书，我们稍后会进行。这是随着 Let’s Encrypt 变化的部分。以前，我们必须生成私钥/公钥对，将其发送给受信任机构，付费并可能需要等待一段时间才能获得 `SSL` 证书。现在，Let’s Encrypt 免费生成并验证你的证书！
+暂时忽略`/srv/www/keys/my-site-key.pem`和`/srv/www/keys/chain.pem`文件。这些是我们需要生成的`SSL`证书，我们稍后会进行。这是随着 Let’s Encrypt 变化的部分。以前，我们必须生成私钥/公钥对，将其发送给受信任机构，付费并可能需要等待一段时间才能获得`SSL`证书。现在，Let’s Encrypt 免费生成并验证你的证书！
 
 ## 生成证书
 
 ### Certbot
 
-`TLS` 规范要求一个证书，该证书由受信任的证书颁发机构 (`CA`) 签名。CA 确保证书持有者确实是其声称的。所以基本上当你看到绿色锁图标（或浏览器 URL 左侧的任何绿色标志）时，意味着你与之通信的服务器确实是其声称的。如果你在 `facebook.com` 上并看到绿色锁，几乎可以确定你确实在和 Facebook 通，没有其他人可以看到你的通信——或者说，没有其他人可以读取它。
+`TLS`规范要求一个证书，该证书由受信任的证书颁发机构 (`CA`) 签名。CA 确保证书持有者确实是其声称的。所以基本上当你看到绿色锁图标（或浏览器 URL 左侧的任何绿色标志）时，意味着你与之通信的服务器确实是其声称的。如果你在`facebook.com`上并看到绿色锁，几乎可以确定你确实在和 Facebook 通，没有其他人可以看到你的通信——或者说，没有其他人可以读取它。
 
-值得注意的是，此证书并不一定由 Let’s Encrypt 这样的机构验证。还有其他付费服务。[从技术上你可以自己签名](https://stackoverflow.com/q/10175812)，但这样（因为你不是受信任的 `CA`）访问你网站的用户可能会看到巨大的、吓人的警告，建议他们返回安全区域。
+值得注意的是，此证书并不一定由 Let’s Encrypt 这样的机构验证。还有其他付费服务。[从技术上你可以自己签名](https://stackoverflow.com/q/10175812)，但这样（因为你不是受信任的`CA`）访问你网站的用户可能会看到巨大的、吓人的警告，建议他们返回安全区域。
 
-在接下来的示例中，我们将使用 `Certbot`，它用于使用 Let’s Encrypt 生成和管理证书。在 [Certbot 网站](https://certbot.eff.org/) 上，你可以找到几乎任何操作系统/服务器组合安装 `Certbot` 的说明。你应该选择适用于你的选项。
+在接下来的示例中，我们将使用`Certbot`，它用于使用 Let’s Encrypt 生成和管理证书。在 [Certbot 网站](https://certbot.eff.org/) 上，你可以找到几乎任何操作系统/服务器组合安装`Certbot`的说明。你应该选择适用于你的选项。
 
-部署 Node 应用的常用组合是在最新的 LTS 版本 `Ubuntu` 上运行 `NGINX`，这就是我在这里将使用的。
+部署`Node`应用的常用组合是在最新的 LTS 版本`Ubuntu`上运行`NGINX`，这就是我在这里将使用的。
 
-```
+```bash
 sudo apt-get update
 sudo apt-get install software-properties-common
 sudo add-apt-repository universe
@@ -3950,17 +3942,17 @@ sudo apt-get update
 
 ### Webroot
 
-[Webroot 是一种](https://certbot.eff.org/docs/using.html#webroot)，除了 Certbot 默认方式（将某些验证代码放入名为 `.well-known` 的隐藏目录）外，还会将证书复制到你的 webroot。为了手动跳过其中的一些步骤，我们将使用它：
+[Webroot 是一种](https://certbot.eff.org/docs/using.html#webroot)，除了 Certbot 默认方式（将某些验证代码放入名为`.well-known`的隐藏目录）外，还会将证书复制到你的 webroot。为了手动跳过其中的一些步骤，我们将使用它：
 
-```
+```bash
 certbot certonly --webroot -w /var/www/example/ -d www.example.com -d example.com
 ```
 
-你可能需要以 sudo 身份运行此命令，因为它会尝试写入 `/var/log`。系统还会要求你输入电子邮件地址。建议填写一个你经常使用的真实地址，因为如果证书即将过期，你会收到通知。Let’s Encrypt 颁发免费证书的代价是它的有效期为三个月。幸运的是，续期就像运行一个简单的命令一样容易，我们可以将其[分配给 cron 任务](https://www.howogeek.com/101288/how-to-schedule-tasks-on-linux-an-introduction-crontab-files/)然后无需担心过期。此外，更新 `SSL` 证书是一种良好的安全实践，因为这减少了攻击者破解加密的时间。有时开发者甚至会将此 cron 设置每天运行一次，这是完全可以的也是推荐的。
+你可能需要以 sudo 身份运行此命令，因为它会尝试写入`/var/log`。系统还会要求你输入电子邮件地址。建议填写一个你经常使用的真实地址，因为如果证书即将过期，你会收到通知。Let’s Encrypt 颁发免费证书的代价是它的有效期为三个月。幸运的是，续期就像运行一个简单的命令一样容易，我们可以将其[分配给 cron 任务](https://www.howogeek.com/101288/how-to-schedule-tasks-on-linux-an-introduction-crontab-files/)然后无需担心过期。此外，更新`SSL`证书是一种良好的安全实践，因为这减少了攻击者破解加密的时间。有时开发者甚至会将此 cron 设置每天运行一次，这是完全可以的也是推荐的。
 
-请记住，你必须在 `-d`（域名）标志指定的域名解析到的服务器上运行此命令——即你的生产服务器。即使你在本地 hosts 文件中设置了 DNS 解析，这起不起作用，因为域名将从外部进行验证。所以，如果你在本地进行此操作，很可能会失败，除非你从本地机器向外部开放了端口，并让它运行在一个解析到你机器的域名之后。这是一种极罕见的情况。
+请记住，你必须在`-d`（域名）标志指定的域名解析到的服务器上运行此命令——即你的生产服务器。即使你在本地 hosts 文件中设置了 DNS 解析，这起不起作用，因为域名将从外部进行验证。所以，如果你在本地进行此操作，很可能会失败，除非你从本地机器向外部开放了端口，并让它运行在一个解析到你机器的域名之后。这是一种极罕见的情况。
 
-最后，运行此命令后，输出将包含私钥和证书文件的路径。将这些值复制到之前的代码段中——到 `cert` 属性用于证书，到 `key` 属性用于密钥：
+最后，运行此命令后，输出将包含私钥和证书文件的路径。将这些值复制到之前的代码段中——到`cert`属性用于证书，到`key`属性用于密钥：
 
 ```javascript
 // ...
@@ -3973,25 +3965,23 @@ const options = {
 // ...
 ```
 
-
-
-
-
-## 进一步固化
+# 进一步固化
 
 ## HTTP 严格传输安全
 
 你是否遇到过这样的情况：某个网站从 HTTP 切换到 HTTPS 后，仍然有一些残留的重定向指向 HTTP？[HTTP 严格传输安全](https://en.wikipedia.org/wiki/HTTP_Strict_Transport_Security)（HSTS）是一种网络安全策略机制，用于缓解协议降级攻击和 Cookie 劫持。
 
+
+
 HSTS 有效地强制客户端（访问你服务器的浏览器）通过 HTTPS 直接所有流量——这是一个“要安全要么不要”的理念！
 
-Express JS 默认不允许我们添加此标头，因此我们将使用 [Helmet](https://www.npmjs.com/package/helmet)，这是一个允许我们实现此点的 Node 模块。运行以下命令安装 `Helmet`：
+`Express JS` 默认不允许我们添加此标头，因此我们将使用 [Helmet](https://www.npmjs.com/package/helmet)，这是一个允许我们实现此点的 `Node` 模块。运行以下命令安装 `Helmet`：
 
 ```
 npm install helmet
 ```
 
-然后我们只需要将其作为中间件添加到 Express 服务器中即可：
+然后我们只需要将其作为中间件添加到 `Express` 服务器中即可：
 
 ```javascript
 const https = require("https"),
@@ -4017,7 +4007,7 @@ app.listen(8000);
 https.createServer(options, app).listen(8080);
 ```
 
-### Diffie–Hellman 强参数
+## Diffie–Hellman 强参数
 
 为了跳过一些复杂的数学计算，让我们直接进入正题。简单来说，加密使用了两种不同的密钥：我们从证书机构获取的证书，以及服务器为密钥交换生成的密钥。密钥交换的默认密钥（也称为 [Diffie–Hellman 密钥交换](https://en.wikipedia.org/wiki/Diffie%E2%80%93Hellman_key_exchange，或 DH）使用的密钥比证书密钥要“小得多”。为了弥补这个问题，我们将生成一个强 DH 密钥并将其提供给我们的安全服务器使用。
 
@@ -4043,15 +4033,15 @@ const options = {
 
 ## 结论
 
-在 2020 年及以后，没有任何理由拒绝 HTTPS。未来的方向显而易见：处处 HTTPS！在 Node.js 中，我们有很多选项来利用 SSL/TLS。我们可以通过 HTTPS 发布我们的网站，可以向加密网站创建请求，并且可以授权其他不可信的证书。
+在 2020 年及以后，没有任何理由拒绝 HTTPS。未来的方向显而易见：处处 HTTPS！在 `Node.js` 中，我们有很多选项来利用 SSL/TLS。我们可以通过 HTTPS 发布我们的网站，可以向加密网站创建请求，并且可以授权其他不可信的证书。
 
 # 第 11 章：使用 Node.js 配置 NGINX 和 SSL
 
 ### 作者：Nilson Jacques
 
-[NGINX](https://www.nginx.com/) 既是一个高性能 HTTP 服务器，也是一个[反向代理](https://medium.com/intrinsic/why-should-i-use-a-reverse-proxy-if-node-js-is-production-ready-5a079408b2ca)。与传统服务器不同，NGINX 采用事件驱动的异步架构。因此，它的内存占用低且性能高。如果你正在运行基于 Node.js 的 Web 应用，你应该认真考虑使用 NGINX 作为反向代理。
+[NGINX](https://www.nginx.com/) 既是一个高性能 HTTP 服务器，也是一个[反向代理](https://medium.com/intrinsic/why-should-i-use-a-reverse-proxy-if-node-js-is-production-ready-5a079408b2ca)。与传统服务器不同，NGINX 采用事件驱动的异步架构。因此，它的内存占用低且性能高。如果你正在运行基于 `Node.js` 的 Web 应用，你应该认真考虑使用 NGINX 作为反向代理。
 
-NGINX 在提供静态资源方面非常高效。对于所有其他请求，它将与你的 Node.js 后端通信并将响应发送给客户端。在本教程中，我们将讨论如何配置 NGINX 与 Node.js 配合。我们还将看到如何在 NGINX 服务器中设置 SSL。
+NGINX 在提供静态资源方面非常高效。对于所有其他请求，它将与你的 `Node.js` 后端通信并将响应发送给客户端。在本教程中，我们将讨论如何配置 NGINX 与 `Node.js` 配合。我们还将看到如何在 NGINX 服务器中设置 SSL。
 
 ### Node 内置的 HTTPS 模块
 
@@ -4059,7 +4049,7 @@ Node 还内置了一个 HTTPS 模块，可以配置为读取必要的证书文�
 
 ## 安装 NGINX
 
-假设你已经在机器上安装了 Node.js（如果没有，请检查[这里](https://www.sitepoint.com/quick-tip-multiple-versions-node-nvm/)），让我们来看看如何安装 NGINX 吧。
+假设你已经在机器上安装了 `Node.js`（如果没有，请检查[这里](https://www.sitepoint.com/quick-tip-multiple-versions-node-nvm/)），让我们来看看如何安装 NGINX 吧。
 
 ### 在 Linux 上安装
 
@@ -4087,7 +4077,7 @@ sudo apt-get install nginx
 
 ## 搭建 Node.js 服务器
 
-首先，让我们创建一个简单的 Node.js 服务器。
+首先，让我们创建一个简单的 `Node.js` 服务器。
 
 ```
 mkdir node-demo && cd node-demo
@@ -4117,7 +4107,7 @@ app.listen(port, () => console.log(`Example app listening on ${port}`))
 sudo nano /etc/nginx/sites-available/default
 ```
 
-我们根据需要配置 `server`  own。使用 `proxy_pass` 指向 Node.js 应用。
+我们根据需要配置 `server`  own。使用 `proxy_pass` 指向 `Node.js` 应用。
 
 ```nginx
 server {
@@ -4135,10 +4125,7 @@ server {
 }
 ```
 
-
-
-
-完成完成后，你可以访问 [`localhost`](http://localhost) 查看我们的代理运行情况。虽然你访问的是 NGINX Web 服务器，但你将获得来自 Node.js 服务器的实际响应。
+完成完成后，你可以访问 [`localhost`](http://localhost) 查看我们的代理运行情况。虽然你访问的是 NGINX Web 服务器，但你将获得来自 `Node.js` 服务器的实际响应。
 
 ### 端口 80
 
@@ -4178,7 +4165,7 @@ server {
 
 ## 额外福利：提供静态资源
 
-在我们的 Node.js 服务器前面设置 NGINX 的额外好处是，我们可以轻松地配置它来提供应用程序所需的任何静态资源。这将节省通过 Node 处理这些请求时所付的开销。
+在我们的 `Node.js` 服务器前面设置 NGINX 的额外好处是，我们可以轻松地配置它来提供应用程序所需的任何静态资源。这将节省通过 Node 处理这些请求时所付的开销。
 
 要实现此点，我们需要在服务器配置中添加一个新的 `location` 块：
 
@@ -4201,24 +4188,26 @@ server {
 
 ## 结论
 
-在本短教程中，我们学习了如何使用 NGINX 作为 Node.js 应用的反向代理并配置 SSL。通过使用 NGINX 处理静态资源，你还可以减轻 Node 应用程序的负载。
+在本短教程中，我们学习了如何使用 NGINX 作为 `Node.js` 应用的反向代理并配置 SSL。通过使用 NGINX 处理静态资源，你还可以减轻 Node 应用程序的负载。
 
 # 第 12 章：使用 Docker 进行 Node.js 开发
 
 ### 作者：Craig Buckler
 
-Node.js 很少孤立存在。你可能需要数据库、缓存、消息队列、反向代理、搜索、电子邮件路由、进程监控、其他语言运行时等！通过 Docker，在你的开发用 PC 上管理这些依赖项将变得简单得多。
+`Node.js` 很少孤立存在。你可能需要数据库、缓存、消息队列、反向代理、搜索、电子邮件路由、进程监控、其他语言运行时等！通过 Docker，在你的开发用 PC 上管理这些依赖项将变得简单得多。
 
-本指南提供了 Docker 介绍。它侧重于 Node.js，但这些概念适用于任何开发语言或框架。
+本指南提供了 Docker 介绍。它侧重于 `Node.js`，但这些概念适用于任何开发语言或框架。
 
 ## “这在我的机器上运行得好的！”
 
-想象一下你用 Node.js 和 MongoDB 数据库创建了一个非常棒的应用。它是如此成功，以至于不得不聘佣另一个开发者来添加新功能。他们克隆了仓库，运行 `npm install && npm start`，砰的一声——失败了，并弹出一个模糊的错误信息。
+想象一下你用 `Node.js` 和 MongoDB 数据库创建了一个非常棒的应用。它是如此成功，以至于不得不聘佣另一个开发者来添加新功能。他们克隆了仓库，运行 `npm install && npm start`，砰的一声——失败了，并弹出一个模糊的错误信息。
 
 尽管初意良好，但你们的环境是不同的：
 
 - 你使用 Mac，他们使用 Windows
-- 你使用 Node.js v12 开发，但他们安装了 v10
+
+- 你使用 `Node.js` v12 开发，但他们安装了 v10
+
 - 你正在使用 MongoDB v3.6，他们使用的是 v4.2
 
 你可能可以在几小时内解决这些问题，但必须永远保持每个依赖项的同步。随着团队的扩大，这可行吗？它与你的线上服务器兼容吗？
@@ -4230,7 +4219,9 @@ Node.js 很少孤立存在。你可能需要数据库、缓存、消息队列、
 你可以创建一个包含所有应用程序依赖项的 Linux 虚拟机，它可以在 Windows、macOS 或 Linux 上运行。每个开发者和线上服务器将拥有相同的环境。遗憾的是，虚拟机很快就会变得不实际：
 
 - 它们的磁盘镜像巨大且难以复制
+
 - 单个虚拟机可以自动更新或由开发者更新，导致它与其他虚拟机不同步
+
 - 虚拟机需要大量的资源：一个完整的操作系统
 
 ## Docker 概述
@@ -4240,10 +4231,14 @@ Node.js 很少孤立存在。你可能需要数据库、缓存、消息队列、
 Docker 的优势包括：
 
 - 所有开发者可以在 macOS、Linux 上使用 Docker 镜像
+
 - 相同的容器可以在开发和生产环境中使用
+
 - 应用程序的安装、配置和维护变得更容易
+
 - 开发者可以进行实验而不产生风险
-- 容器可以轻松扩展——例如增加 Node.js 进程
+
+- 容器可以轻松扩展——例如增加 `Node.js` 进程
 
 容器是共享宿主机资源的轻量级进程。
 
@@ -4257,7 +4252,7 @@ Docker 是一个客户端服务器应用程序。服务器负责容器管理并�
 
 Docker 镜像是文件系统和应用程序文件的快照。在某些情况下，你会直接从 [Docker Hub](https://hub.docker.com/) 使用镜像。它提供了广泛的热门应用程序包括 [MySQL](https://hub.docker.com/_mysql) 和 [MongoDB](https://hub.docker.com/_mongo)。
 
-Node.js 应用通常会使用[基础 Node.js 镜像](https://hub.docker.com/_node)，通过 Dockerfile 配置，描述了所有的安装和执行步骤。生成的镜像配置可以推送到 Docker Hub。这在开发期间或其他人需要你的应用时是可能的。
+`Node.js` 应用通常会使用[基础 Node.js 镜像](https://hub.docker.com/_node)，通过 Dockerfile 配置，描述了所有的安装和执行步骤。生成的镜像配置可以推送到 Docker Hub。这在开发期间或其他人需要你的应用时是可能的。
 
 ### 容器
 
@@ -4271,13 +4266,12 @@ Node.js 应用通常会使用[基础 Node.js 镜像](https://hub.docker.com/_nod
 
 Docker 提供了两种存储类型来保留容器状态。
 
-
-
-
 ## 1. 卷 (Volumes)
+
 由 Docker 管理的文件系统
 
 ## 2. 绑定挂载 (Bind mounts)
+
 主机上的文件或目录。
 
 两者均可将目录挂载到容器中，例如用于 MongoDB 数据存储的 `/data/db`。
@@ -4288,7 +4282,7 @@ Docker 提供了两种存储类型来保留容器状态。
 
 容器可以使用其各自隔离网络内的标准协议和端口与另一个容器通信。根据需要可以将特定端口暴露给其他容器和主机。
 
-例如，你可以有一个运行在 `nodejs` 容器 `3000` 端口的 Node.js 应用，它与 `mysql` 容器的 `3306` 端口通信。如果这两个端口都暴露给主机，就可以从 `http://localhost:3000/` 启动应用程序，并且 MySQL 客户端可以到 `http://localhost:3306/`。
+例如，你可以有一个运行在 `nodejs` 容器 `3000` 端口的 `Node.js` 应用，它与 `mysql` 容器的 `3306` 端口通信。如果这两个端口都暴露给主机，就可以从 `http://localhost:3000/` 启动应用程序，并且 MySQL 客户端可以到 `http://localhost:3306/`。
 
 ## Docker Compose
 
@@ -4299,16 +4293,24 @@ Docker Compose 是用于管理多个关联卷和网络的容器的工具。一�
 开发环境通常：
 
 * 设置环境变量，如 `NODE_ENV=development`
+
 * 对代码更改做出响应，可能使用如 [nodemon](https://nodemon.io/) 等工具进行自动加载
+
 * 启用调试消息和协议
+
 * 暴露目录和端口，以便检查数据库和文件
 
-生产服务器的限制更多，且有不同的扩展需求，但 Docker 提供了若干机会：
+生产服务器的限制更多，且有不同的扩展需求，但 Docker 提供了若干机会。
+
+
 
 1. Docker 可以启动（并重启）任意数量的 Node.js 应用容器。无需使用 [clustering](https://nodejs.org/dist/latest/docs/api/cluster.html) 或如 [PM2](https://pm2.keymetrics.io/) 和 [forever](https://www.npmjs.com/package/forever) 等解决方案。
+
 2. 数据库容器可以仅供应用程序使用。与多个应用程序共享的数据库相比，安全和维护问题更少。
+
 3. 端口只需要在容器网络内暴露。考虑使用 NGINX 容器作为反向代理访问 Node.js 容器，后者再访问 MySQL 容器。只需要将 NGINX 端口暴露给主机（HTTP 的 80 或 HTTPS 的 443）。通过两个或更多网络，可以限制 MySQL 仅供 Node.js 容器访问。
-4. 可以开发特定于的 Docker Compose 配置。也可以采用其他的容器管理系统，如 [Docker Swarm](https://docs.docker.com/engine/swarm/swarm-tutorial/)、Kubernetes](https://kubernetes.io/) 或 [AWS Fargate](https://aws.amazon.com/fargate/)。
+
+4. 可以开发特定于的 Docker Compose 配置。也可以采用其他的容器管理系统，如 [Docker Swarm](https://docs.docker.com/engine/swarm/swarm-tutorial/)、[Kubernetes](https://kubernetes.io/) 或 [AWS Fargate](https://aws.amazon.com/fargate/)。
 
 将容器部署到生产服务器有好处，但并非绝对必要。也许你的主机不支持 Docker，或者你更倾向于云服务而非本地安装的数据库？在这种情况下，在开发期间可以使用与生产系统高度匹配的配置使用 Docker。
 
@@ -4337,7 +4339,7 @@ sudo chmod +x /usr/local/bin/docker-compose
 
 [适用于 macOS Sierra 10.12 及更高版本的 Docker CE Desktop](https://hub.docker.com/editions/community/docker-ce-desktop-mac) 和 [适用于 Windows 10 专业版的 Docker CE Desktop](https://hub.docker.com/editions/community/docker-ce-desktop-windows) 可以安装包的形式提供，包含了 Docker 和 Docker Compose。你必须在 [Docker Hub](https://hub.docker.com) 注册并登录后下载。
 
-Windows 10  Docker 使用 [Hyper-V 虚拟化平台](https://docs.microsoft.com/en-us/virtualization/hyper-v-on-windows/)，你可以在控制面板的**程序和功能**中的**启用或关闭 Windows 功能**来启用它。Docker 还可以使用[适用于 Linux 的 Windows 子系统 2](https://docs.microsoft.com/en-us/windows/wsl/wsl2)（WSL2—*目前对 Windows Insider 用户处于测试阶段*）。
+Windows 10 Docker 使用 [Hyper-V 虚拟化平台](https://docs.microsoft.com/en-us/virtualization/hyper-v-on-windows/)，你可以在控制面板的**程序和功能**中的**启用或关闭 Windows 功能**来启用它。Docker 还可以使用[适用于 Linux 的 Windows 子系统 2](https://docs.microsoft.com/en-us/windows/wsl/wsl2)（WSL2—*目前对 Windows Insider 用户处于测试阶段*）。
 
 要确保 Docker 可以访问 Windows 文件系统，请从 Docker 托盘图标菜单选择 **Settings**，导航到 **Shared Drives** 格，并选择服务器允许使用的驱动器。
 
@@ -4421,10 +4423,6 @@ docker container stop mysql
 
 ### 端口已被占用
 
-
-
-
-
 如果你遇到 `address already in use` 错误，很可能是你已经在相应的端口上运行了 MongoDB 或 MySQL 服务。尝试停止该服务并重新运行 `docker` 命令。
 
 ## 如何启动 Node.js 容器
@@ -4491,7 +4489,9 @@ app.listen(port, () =>
 可以从 [Docker Hub](https://hub.docker.com/_/node) 选择合适的 Node.js 镜像。通常情况下：
 
 *   大多数镜像都很大，需要 100MB 以上的下载量
+
 *   `alpine` 镜像下载量最小（仅 5MB），但可能无法提供应用程序所需的某些 OS 依赖项
+
 *   `slim` 镜像是主 Linux 镜像的精简版本，可能是一个务实的合理的选择
 
 在这种情况下，我们可以使用 `lts-alpine`——它是包含最新 Node.js LTS（偶数版本）的最小的镜像。
@@ -4499,14 +4499,23 @@ app.listen(port, () =>
 `Dockerfile` 定义了创建应用镜像所需的构建步骤。可以使用多种[命令](https://docs.docker.com/engine/reference/builder/)，包括以下这些：
 
 | command | 描述 |
+
 | --- | --- |
+
 | `FROM` | 从 [Docker hub](https://hub.docker.com/) 启动镜像构建镜像 |
+
 | `ENV` | 设置环境变量 |
+
 | `WORKDIR` | 设置工作目录 |
+
 | `USER` | 设置活动用户 |
+
 | `RUN` | 执行安装命令，例如 `npm install` |
+
 | `COPY` | 从宿主机拷贝文件 |
+
 | `EXPOSE` | 向宿主机暴露端口 |
+
 | `CMD` | 容器启动命令 |
 
 ### Dockerfile
@@ -4560,11 +4569,17 @@ Docker 在每个构建步骤都会创建一个独立的（隐藏）镜像（输�
 出于这个原因，Dockerfile 命令的顺序应该从最不可能发生更改的到最可能发生更改的排序。在这种情况下：
 
 1. 设置启动镜像和环境变量。
+
 2. 创建家目录并授予 `node` 用户所有权。
+
 3. 定义工作目录和用户。
+
 4. 从宿主机拷贝 `package.json` 并安装 npm 依赖项。
+
 5. 从宿主机拷贝其余应用文件。
+
 6. 在宿主机上暴露 3000 端口。
+
 7. 执行 `npm start`。
 
 现在可以从此镜像启动一个名为 `nodeapp` 的交互式容器：
@@ -4582,7 +4597,9 @@ docker run -it --rm --name nodeapp -p 3000:3000 nodetest
 假设我们要在名为 `localnet` 的 Docker 网络中启动三个容器：
 
 1. MySQL 数据库容器 `mysql` 将数据保存到 Docker 卷 `mysqldata` 中并暴露 3306 端口。
+
 2. 名为 `adminer` 的 [数据库客户端](https://www.adminer.org/) 暴露 8080 端口。
+
 3. 上文定义的 Node.js Express 应用运行 nodemon 并暴露 3000 端口。
 
 在项目文件夹中创建一个名为 `docker-compose.yml` 的文件，内容如下（使用 Tab 键）：
@@ -4641,11 +4658,8 @@ networks:
 Docker Compose 配置可以使用许多[命令](https://docs.docker.com/compose/compose-file/)，但此示例设置的选项与上面使用的 Docker 开发命令行相似。注意：
 
 *   `mysql volumes` 设置使用了 Docker 卷，而 `node volumes` 挂载了主机的文件系统（Docker Compose 允许在任何操作系统上引用相对路径）。
+
 *   [`depends_on`](https://docs.docker.com/compose/compose-file/#depends_on) 定义了启动依赖。在这种情况下，`adminer` 和 `nodejs` 在 `mysql` 启动后启动。
-
-
-
-
 
 在继续之前，请确保你已经停止了所有运行中的容器。建议通过运行以下命令来删除现有的镜像、容器和网络，以确保你的系统是干净的：
 
@@ -4660,6 +4674,8 @@ docker-compose up
 ```
 
 大搞定。第一次运行将需要一些时间，因为需要下载并构建镜像，但所有消息都会记录在终端中。
+
+
 
 你现在可以通过 [`localhost:3000/`](http://localhost:3000/) 访问 Node.js Web 服务。当 `index.js` 被修改时，Nodemon 会自动重启应用程序。
 
@@ -4730,7 +4746,7 @@ networks:
 现在可以将 Docker 容器作为后台服务在生产服务器上启动：
 
 ```
- docker-compose -f .\docker-compose-production.yml up -d
+docker-compose -f .\docker-compose-production.yml up -d
 ```
 
 理想情况下，你还需要一个如 [NGINX](https://www.nginx.com/) 这样的前端 Web 服务器作为 Node.js 应用程序的启用 SSL 的反向代理，但它可以安装在宿主机上或作为[另一个容器](https://hub.docker.com/_/nginx)。
@@ -4764,4 +4780,3 @@ Docker 是一个复杂的课题，但本指南涵盖了 Node.js 开发的核心�
 1. 为什么 Web 应用程序需要数据库
 2. SQL 和 NoSQL 数据库之间的区别和优势
 3. 如何使用 MongoDB、MySQL 和 Sequelize ORM 编写 Node.js 应用程序。
-

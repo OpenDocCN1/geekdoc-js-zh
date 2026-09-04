@@ -1,7 +1,5 @@
+
 # Meteor 入门指南
-
-
-
 
 ## 1. 引言
 
@@ -16,8 +14,11 @@
 ### 1.2 前提条件
 
 为了使本书达到其目标，你必须：
+
 - 具有使用 JavaScript 创建应用的基本经验。
+
 - 具备 HTML 的实用知识。
+
 - 知道什么是 Web 应用。
 
 ### 1.3 如何阅读本书
@@ -29,7 +30,9 @@
 ### 1.4 你需要的工具
 
 学习本书所需的唯一工具是：
+
 - 一台 Windows、Linux 或 OS X 机器。
+
 - 一个文本编辑器。我个人喜欢免费的 [Visual Studio Code](https://code.visualstudio.com)，选择你喜欢的即可。
 
 ### 1.5 源代码
@@ -67,15 +70,25 @@ git clone https://bitbucket.org/epobb/learnmeteorexercises.git
 Meteor让编写应用的过程比许多其他JavaScript环境都要快得多。以下是部分原因：
 
 -   开发者所需的一切都能在任何主流操作系统（Linux、Windows、OS X）上轻松安装；
+
 -   服务器和客户端都使用JavaScript代码，部分代码甚至可以在两者之间共享；
+
 -   原生支持MongoDB集合（如果你不了解MongoDB，我们稍后会讨论）；
+
 -   客户端与服务器之间的数据自动同步；
+
 -   编写的代码量非常少；
+
 -   开发者通常需要的大多数功能都以易于安装的包的形式提供；
+
 -   非常实用的命令行工具；
+
 -   开箱即用、轻松实现的文件压缩与合并；
+
 -   简单的包创建；
+
 -   直接在浏览器中集成服务器代码调试；
+
 -   创建的包可以进行直接的单元测试。
 
 ### 2.3 有什么缺点吗？
@@ -152,7 +165,9 @@ http://localhost:3000
 让我们看看这些文件。我们有：
 
 -   `demos.html` 包含在客户端渲染的HTML；
+
 -   `demos.js` 包含在服务器和/或客户端执行的代码，并可被HTML代码使用；
+
 -   `demos.css` 是应用于你的HTML的CSS；
 
 听起来很显然？很好！事实上确实如此，但我们刚刚忽略了Meteor的一个节省时间的特性：你可以在同一个文件中混合编写服务器**和**客户端代码。稍后会详细介绍。
@@ -161,7 +176,7 @@ http://localhost:3000
 
 见证一些魔法的时刻：如果我更改这些文件中的任何一个，结果会自动在几秒钟后出现在我的浏览器中。如果你从未使用过好的开发技术栈，这可能感觉不那么自然。
 
-当我在命令行中输入`meteor`命令时，它不仅仅是构建应用并监听HTTP查询。它还会一直监听文件更改。当检测到更改时，它会再次构建应用，并向已连接的浏览器发送消息，让它们重新加载。
+当我在命令行中输入`meteor`命令时，它不仅仅是构建应用并监听HTTP查询。它还会一直监听文件更改。当检浫到更改时，它会再次构建应用，并向已连接的浏览器发送消息，让它们重新加载。
 
 作为开发者，这意味着你所要做的就是更改你的文件，然后你的浏览器就会刷新。最棒的是，这在生产环境中同样有效：任何连接到你应用的浏览器，在你发布新版本时，都会自动刷新到最新版本。
 
@@ -193,8 +208,6 @@ http://localhost:3000
 #### head
 
 当Meteor运行你的应用时，它会为你做很多事情，包括引用JavaScript和CSS文件，以及对它们进行打包和压缩。为此，它会定位head元素，并在其中添加指向这些生成资源的链接。
-
-
 
 #### body
 
@@ -307,8 +320,11 @@ http://localhost:3000
 ### 3.8 练习解答
 
 - 打开命令行，导航到一个空的开发文件夹或创建一个。
+
 - 在命令行中，输入 `meteor create meteor-shop`。
+
 - 在命令行中，输入 `cd meteorshop`。
+
 - 打开 `meteorshop.html` 文件。找到以下代码：
 
 ```
@@ -326,8 +342,11 @@ http://localhost:3000
 ```
 
 - 在命令行中，输入 `meteor`。
+
 - 等待应用生成并运行。
+
 - 打开你的浏览器并输入以下 URL：
+
   `http://localhost:3000`
 
 ## 4. Blaze, Spacebars 和响应式
@@ -346,8 +365,10 @@ mustache 或双花括号语法 {{ ... }} 是因为 Meteor 使用 Spacebars 作�
 
 正如你所见，Spacebars 是强化版的 HTML。你可以插入三种主要类型的 Spacebars 块：
 
-- `{{someValue}}` 将计算 `someValue` 并将其内容渲染为文本。稍后会详细介绍；
+- `{{someValue}}` 将计算 `someValue` 并将其内容渲�为文本。稍后会详细介绍；
+
 - `{{> templateName}}` 将插入一个名为 `templateName` 的模板，就像我们上面看到的；
+
 - `{{#block}}你的 HTML 内容{{/block}}` 将插入一个名为 block 的模板，并将内部 HTML 提供给该模板。我们稍后会看到一些内置的块模板，比如 if 或 each。
 
 ### 4.2 数据从哪里来？
@@ -480,6 +501,7 @@ JavaScript 文件也是如此：Meteor 会合并你所有的 JavaScript。唯一
 ### 4.7 练习解决方案
 
 - 保持浏览器打开，并让 meteor 命令行运行。
+
 - 打开 meteorshop.html 文件。在文件末尾添加以下代码：
 
 **meteorshop.html**
@@ -514,6 +536,7 @@ Blaze, Spacebars 和响应式 28
 ```
 
 - 创建一个名为 `client` 的文件夹。在其中添加一个 `client.js` 文件。
+
 - 打开 `client/client.js` 文件。添加以下代码：
 
 client/client.js
@@ -528,6 +551,7 @@ Template.timeDisplay.helpers({
 ```
 
 - 切换回浏览器并查看结果：
+
   http://localhost:3000
 
 ### 4.8 响应式
@@ -610,8 +634,11 @@ console.log(storedValue.A); // 打印 'my value'
 Session 只是众多响应式源之一。还有更多响应式源，以下是一些：
 
 - ReactiveVar，你可以实例化它来存储任何值。
-- 数据库查询，我们稍后会看到，用于存储来自数据库的数据。
+
+- 数据库查询，我们稍后会看到，用用于存储来自数据库的数据。
+
 - Meteor.user，它保存有关当前用户的信息。
+
 - Meteor.status，它保存有关客户端-服务器连接的信息。
 
 Meteor 包将为你提供其他响应式源。
@@ -678,8 +705,6 @@ Template.commentsIndex.helpers({
 {{/each}}
 </ul>
 ```
-
-
 
 #### 显式 each
 
@@ -823,11 +848,12 @@ Template.messageDisplay.events({
 ```
 
 现在每个按钮显示不同的消息。
-当然，你可以为一个模板添加任意数量的事件处理器，通过事件名称和 CSS 选择器来区分它们。更重要的是，当你编写事件处理器时，你的函数可以接收事件作为参数。更多信息请参阅 Meteor 文档<sup>1</sup>。
+
+当然，你可以为一个模板添任意数量的事件处理器，通过事件名称和 CSS 选择器来区分它们。更重要的是，当你编写事件处理器时，你的函数可以接收事件作为参数。更多信息请参阅 Meteor 文档<sup>1</sup>。
 
 ### 4.11 数据上下文
 
-如前所述，在 Blaze 语法中引用一个字段时，它会在当前数据上下文和辅助函数中查找。例如，以下代码将在当前数据上下文中查找 `title` 字段：
+如前所述，在 Blaze 语法中引用一个字段时，它会在当前数据上下文和辅助函数中查找。例如，以下代码将在当前数据上context中查找 `title` 字段：
 
 ```
 <p>You are looking at {{title}}.</p>
@@ -836,7 +862,9 @@ Template.messageDisplay.events({
 数据上下文可以使用以下几种工具提供：
 
 +   - *each* 和 *with* 块，它们改变当前数据上下文；
+
 - *each* .. *in* 和 *let* 块，它们向当前数据上下文添加字段；
+
 - 模板代码（*onCreated, onRendered*），你可以在其中使用 *this* 字段（指向当前模板实例）向数据上下文添加字段。
 
 <sup>1</sup>http://docs.meteor.com/api/templates.html#eventmaps
@@ -913,7 +941,9 @@ db.books.find({});
 ### 5.4 练习解答
 
 -   保持浏览器打开，`meteor` 命令行正在运行。
+
 -   打开一个新的命令行，进入你的应用文件夹。
+
 -   输入以下命令：
 
 ```
@@ -952,7 +982,9 @@ var allBooks = Books.find({});
 实际上，这两行简单的代码有几个效果：
 
 -   使你在服务器端可以访问该集合。
+
 -   在客户端创建一个 MiniMongo 数据库。MiniMongo 在客户端保存查询结果，并提供与 MongoDB 数据库（几乎）相同的接口。
+
 -   确保 MiniMongo 数据库与服务器端的 MongoDB 数据库保持同步：查询结果的任何更改都会被推送到客户端。
 
 在 Meteor 中，这个（以及其他）集合的数据管理架构如下所示：
@@ -1031,7 +1063,9 @@ db.books.insert({
 ### 5.7 练习解答
 
 -   保持浏览器打开，`meteor` 命令行正在运行。
+
 -   打开 `meteorshop.js` 文件。添加以下代码：
+
 -   打开 `client/client.js` 文件。添加以下代码：
 
 ```
@@ -1118,8 +1152,6 @@ Books.find({
 
 正如你所知，MongoDB 是一个无结构数据库，即使 Books 集合中的某些文档没有这些字段，我们也可以使用这个选择器。
 
-
-
 ### 5.9 使用 Mongo.Collection 更新数据
 
 `Mongo.Collection` 类提供的更新方法与 MongoDB 几乎相同。你肯定记得，为了添加一本书，我曾直接连接到数据库命令行界面并输入：
@@ -1145,7 +1177,9 @@ Books.insert({
 以下是可用（及其他）的一些方法：
 
 *   `insert(document)` 在集合中插入一个新文档，并返回其 ID；
+
 *   `remove(selector)` 从集合中移除所有匹配给定选择器的文档；
+
 *   `update(selector, modifier)` 使用给定的修改器，更新集合中所有匹配给定选择器的文档。
 
 对于 `update` 方法，修改器是一个 MongoDB 修改器，或者是一个文档。修改器包含 `$` 字段，而文档则不包含。如果你提供的是一个文档，它会完全替换现有的文档。修改器则允许你仅指定对匹配文档需要进行的部分更新。
@@ -1172,6 +1206,7 @@ Books.update(
 ### 5.11 练习解答
 
 *   保持浏览器打开，并让 `meteor` 命令行继续运行。
+
 *   在 `client/news.html` 文件中，找到以下代码：
 
 **client/news.html**
@@ -1218,12 +1253,19 @@ Template.news.events({
 切换回你的浏览器，确保你可以在新创建的输入框中输入并添加一些新闻。
 
 > **Meteor 的魔法**
+
 >
+
 > 正如你已经知道的，Meteor 确保服务器端的任何更改都会推送到所有连接的客户端。但不要只听我说：你现在就可以验证这一点。
+
 >
+
 > 使用以下 URL 打开两个浏览器窗口：
+
 > *http://localhost:3000*
+
 >
+
 > 在其中一个窗口中添加一条新闻，它应该会立即出现在另一个窗口中。很棒，不是吗？即使你将该应用部署到远程服务器，它的工作方式也完全相同。
 
 ### 5.12 练习：启用用户删除新闻功能
@@ -1237,6 +1279,7 @@ Template.news.events({
 ### 5.13 练习解答
 
 *   保持浏览器打开，并让 `meteor` 命令行继续运行。
+
 *   在 `client/news.html` 文件中，找到以下代码：
 
 **client/news.html**
@@ -1306,14 +1349,16 @@ Template.news.events({
 
 到目前为止，我们一直在手动为应用编写代码。Meteor 让这部分工作变得快速而轻松，但如果你现在停止阅读，你会发现自己在大多数应用中都在重复类似的代码。
 
-为输入创建用户界面、验证数据、处理导航、跟踪以及许多其他任务，并不是某个特定应用所独有的。它们的代码可以被提取并重用到**包**中。
+为输入创建用户界面、验证数据、处理导航、跟踪以及许多其他任务，并不是某个特特应用所独有的。它们的代码可以被提取并重用到**包**中。
 
 你可能已经听说过在 JavaScript 社区中著名的 npm 包管理器。既然 Meteor 是关于 JavaScript 的，我们当然可以使用 npm 并访问其活跃且广泛的包生态。这很棒，然而 Meteor 也有自己的包管理器，它提供了专门为 Meteor 编写的包。Meteor 特定包的优势在于，它们了解并受益于使 Meteor 如此高效的**所有工具**：客户端同步的数据库缓存、同构代码、认证以及许多其他 Meteor 预设。
 
 Meteor 的包管理器是 Atmosphere。它由一个网站组成，并作为 Meteor 命令行的一部分集成。
 
 > Atmosphere 最终将被逐步淘汰，转而支持 npm。正如 Meteor 指南[所述](https://guide.meteor.com/atmosphere-vs-npm.html)：
+
 >
+
 > 随着 1.3 版本的发布，Meteor 已完全支持 npm。未来，所有的包都将迁移到 npm，但目前两种系统各有利弊。
 
 然而，就目前而言，Atmosphere 是一个推荐的工具，因为它既易于使用又高效。
@@ -1329,8 +1374,6 @@ Meteor 的包管理器是 Atmosphere。它由一个网站组成，并作为 Mete
 ![](img/7ee67584836eb2d3d796446a7cd4a75d_77_0.png)
 
 假设我需要为我的集合创建一个用于 CRUD 操作的 REST API。有几个包可以实现这一点。值得庆幸的是，Atmosphere 显示了每个包的星标数和安装次数。选择包时另一个有用的信息是项目活跃度（在包页面上）：它最后一次更新是什么时候，是否定期更新？快速搜索让我找到了 *nimble:restivus* 这个包：
-
-
 
 软件包：管理仪表板、导航、验证、表单生成
 
@@ -1357,7 +1400,9 @@ meteor add nimble:restivus
 *houston:admin* 软件包无需配置，但必要时可以根据你的需求进行定制。使用它是一个简单的过程：
 
 1.  通过输入 `meteor add houston:admin` 添加它
+
 2.  导航至 `http://localhost:3000/admin` 页面
+
 3.  创建一个账户并授予其管理员权限
 
 > 如果你使用另一个账户管理软件包或者已经创建了用户，系统会简单地提示你确认是否要将当前用户设为管理员。
@@ -1371,6 +1416,7 @@ meteor add nimble:restivus
 ### 6.5 练习解答
 
 - 保持浏览器打开，并且 `meteor` 命令行在运行。
+
 - 打开另一个命令行，导航到你的应用程序目录，然后输入：
 
 ```
@@ -1378,10 +1424,15 @@ meteor add houston:admin
 ```
 
 - 一旦显示 "houston:admin: A zero-config Meteor Admin" 消息，关闭最近打开的命令行。
+
 - 在你的浏览器中，导航至以下 URL：`http://localhost:3000/admin`
+
 - 按照提示创建一个管理员用户账户：填写字段并点击“Create account”按钮。
+
 - 点击屏幕左侧的“news”链接。
+
 - 双击某条新闻的标题并进行修改。
+
 - 点击页面右上角的“New news”按钮，创建一条新闻。
 
 ### 6.6 导航
@@ -1410,7 +1461,7 @@ Router.route('/message', function () {
 });
 ```
 
-现在，我们可以使用 HTML 链接或 JavaScript 导航到这些 URL：
+现在，我们可以使用 HTML 铭接或 JavaScript 导航到这些 URL：
 
 **HTML 导航**
 
@@ -1472,24 +1523,33 @@ Router.configure({
 将 `iron:router` 软件包添加到你的应用程序中。配置以下路由：
 
 | 路径 | 模板 |
+
 | --- | --- |
+
 | / | news |
+
 | /time | time |
 
 删除 `body` 元素并创建一个包含以下链接的头部的布局：
 
 | 路径 | 标题 |
+
 | --- | --- |
+
 | / | Home |
+
 | /time | Time |
 
 在头部，还要添加一个指向你之前创建的管理页面的链接。
+
 主页应如下所示：
 
 ### 6.8 练习解答
 
 - 将你的浏览器指向 http://localhost:3000。
+
 - 保持浏览器打开，并且 meteor 命令行在运行。
+
 - 打开另一个命令行，导航到你的应用程序目录，然后输入：
 
 ```
@@ -1559,8 +1619,6 @@ Router.route('/time', function () {
 
 此外，MongoDB 是一个无模式数据库，这使得向其添加非结构化文档成为可能，
 
-
-
 包：管理后台、导航、验证、表单生成
 
 集合。虽然这可能是一个很棒的生产力功能，尤其是在快速发展的项目中，但它与安全性相悖。例如，我们的应用程序依赖于所有新闻文章都包含一个`title`字段这一事实，因此我们应该确保创建和更新的文档都满足该条件。
@@ -1622,6 +1680,7 @@ Books.attachSchema(Schemas.Book);
 创建一个 `products` 集合。使用 `aldeed:simple-schema` 包为该集合创建一个模式。该模式应强制执行以下约束：
 
 - 必须存在一个 `title` 字段，且类型为 String；
+
 - 必须存在一个 `price` 字段，且类型为 Number。
 
 确保每当在 `products` 集合中添加或修改文档时，都使用你刚刚创建的模式进行验证。
@@ -1629,6 +1688,7 @@ Books.attachSchema(Schemas.Book);
 ### 6.11 练习解答
 
 - 保持你的浏览器和 meteor 命令行打开。
+
 - 打开另一个命令行，导航到你的应用程序目录并输入：
 
 ```
@@ -1637,6 +1697,7 @@ meteor add aldeed:collection2
 ```
 
 - 包成功安装后关闭该命令行。
+
 - 在 meteor-shop.js 文件的顶部添加以下代码：
 
 ```
@@ -1662,7 +1723,9 @@ Products.attachSchema(new SimpleSchema({
 更重要的是，*aldeed:autoform* 非常灵活。它可以做任何事情，从：
 
 - 创建一个连接到 MongoDB 集合的表单，包括验证，只需一行代码；
-- 创建一个连接到 MongoDB 集合的自定义表单，包括验证，并附带你编写的钩子；
+
+- 创建一个连接到 MongoDB 集合的自定表单，包括验证，并附带你编写的钩子；
+
 - 创建一个使用你提供的模式进行验证的用户界面，并在数据验证通过时调用你自己的函数。
 
 换句话说，AutoForm 可以与集合或仅与模式结合使用。兼顾生产力**和**灵活性。不用说，这个包应该成为你大多数（如果不是所有）项目的一部分。
@@ -1675,7 +1738,7 @@ Products.attachSchema(new SimpleSchema({
 
 你可以将 `type` 更改为 `update`，这样你所需要做的就是提供要修改的文档的 id。
 
-如果你需要自定义生成的表单，你可以使用 `autoForm` 模板代替 `quickForm`。然后你可以指定字段并自定义 HTML 内容。如果你需要插入、更新和删除表单显示为弹出窗口，有几个包可以轻松做到这一点。
+如果你需要自定义生成的表单，你可以使用 `autoForm` 模板代替 `quickForm`。然后你可以指定字段并自定� HTML 内容。如果你需要插入、更新和删除表单显示为弹出窗口，有几个包可以轻松做到这一点。
 
 AutoForm 非常灵活，在[包页面](https://github.com/aldeed/meteor-autoform)了解更多。
 
@@ -1696,6 +1759,7 @@ AutoForm 非常灵活，在[包页面](https://github.com/aldeed/meteor-autoform
 ### 6.14 练习解答
 
 - 保持你的浏览器和 meteor 命令行打开。
+
 - 在 client 文件夹中添加一个 products.html 文件。添加以下代码：
 
 client\products.html
@@ -1752,6 +1816,19 @@ Router.route('/products', function () {
 ```
 ...
 <a href="/">Home</a>
+<a href="/time">Time</a>
+<a href="/products">Products</a>
+<a href="/admin">Admin</a>
+...
+```
+
+
+
+#### client/layout.html
+
+```
+...
+<a href="/">Home</a>
 <a href="/products">Products</a>
 <a href="/time">Time</a>
 <a href="/admin">Admin</a>
@@ -1760,15 +1837,12 @@ Router.route('/products', function () {
 
 - 打开另一个命令行，导航到你的应用程序目录并输入：
 
-
-
-包：管理面板、导航、验证、表单生成
-
 ```
 meteor add aldeed:autoform
 ```
 
 -   包添加完成后，关闭刚刚打开的命令行窗口。
+
 -   在 `client/products.html` 文件中，找到以下代码：
 
 ```
@@ -1790,8 +1864,11 @@ client/products.html
 ```
 
 -   切换回浏览器并点击 "Products" 链接。
+
 -   使用表单创建一些产品。
+
 -   检查产品是否已被添加。
+
 -   尝试创建一个没有价格和标题的产品。检查是否出现验证信息，并且产品未被添加。
 
 ### 6.15 Bootstrap
@@ -1833,6 +1910,7 @@ meteor add twbs:bootstrap
 ### 6.17 练习解决方案
 
 -   保持浏览器打开并让 `meteor` 命令行窗口保持运行。
+
 -   打开另一个命令行窗口，导航到你的应用程序目录并输入：
 
 ```
@@ -1840,6 +1918,7 @@ meteor add twbs:bootstrap
 ```
 
 -   包添加完成后，关闭刚刚打开的命令行窗口。
+
 -   在 `client/layout.html` 文件中，找到以下代码：
 
 ```
@@ -1921,7 +2000,9 @@ client/news.html
 ```
 
 -   切换回浏览器并点击 "Home" 链接。
+
 -   查看新样式。
+
 -   调整浏览器窗口大小，使其宽度变小和变大。导航栏应在宽度较小时折叠。
 
 ## 7. 账户：用户管理
@@ -1935,6 +2016,7 @@ Meteor 依赖于包来进行用户管理。Meteor 团队提供了几个包，此
 > 由于几个与账户相关的包依赖于 `accounts-base` 包并会自动添加它，因此通常不需要从命令行添加它。
 
 当然，你可以从 *accounts-base* 开始手动编码所有内容。但请记住：Meteor 是关于生产力的。所以他们提供了许多包来帮助你快速上手。
+
 基本上，我们需要的是一个验证用户身份的方法和一个相应的 UI。对于第一部分，你只需添加一个登录提供程序包。对于第二部分，你可以选择一个现成的 UI 包或者允许你自定义外观的扩展包。让我们分别看看这两部分。
 
 #### 登录提供程序
@@ -1942,14 +2024,19 @@ Meteor 依赖于包来进行用户管理。Meteor 团队提供了几个包，此
 用户可以对你的数据库进行身份验证，也可以使用第三方服务，或者任何你能想到的方式，比如两步验证或基于令牌的一次性密码。为此有许多可用的包，例如：
 
 -   *accounts-password*：基于密码的登录；
+
 -   *accounts-facebook*、*accounts-google*、*accounts-twitter* 以及其他一些包：使用 OAuth 进行第三方身份验证；
+
 -   还有很多其他的，只需[在 Atmosphere 上搜索](https://atmospherejs.com/?q=accounts-)。
 
 #### 登录 UI 包
 
 创建认证 UI 有两种方式：
+
 超级快速的方式，非常适合原型设计：添加 *accounts-ui* 包，使用 {{> loginButtons}} 模板即可获得登录按钮，搞定。缺点是：你无法自定义生成的 UI 的外观。
+
 完全可自定义的方式，稍微花点时间，你可以使用基于 *useraccounts* 的包之一。例如，你可以使用为流行框架预先制作好的 *useraccounts:bootstrap*、*useraccounts:materialize* 或 *useraccounts:polymer*，或者在需要自定义 HTML 时使用 *useraccounts:unstyled*。
+
 使用任何基于 *useraccounts* 的包，你所要做的就是包含 `{{> atForm}}` 模板。它会根据用户当前的登录状态进行调整，以创建登录或注册表单。此外，你可以使用 `{{> atNavButton}}` 模板，它将创建一个 "登录" / "注销" 按钮。
 
 完整的 *useraccounts* UI 包列表[可以在这里找到](https://github.com/meteor-useraccounts/core/blob/master/Guide.md)。
@@ -1959,8 +2046,6 @@ Meteor 依赖于包来进行用户管理。Meteor 团队提供了几个包，此
 一旦你的用户通过了身份验证，你肯定需要将某些页面限制为仅认证用户或用户组可以访问。为此，*useraccounts:iron-routing* 可以与我们[之前使用](https://github.com/meteor-useraccounts/core/blob/master/Guide.md)的 *iron:router* 包结合使用。
 
 实际上，*useraccounts:iron-routing* 使用简单且可配置。你只需要做两件事。首先声明应使用哪个布局：
-
-
 
 ### 7.2 练习：保护产品管理
 
@@ -1981,8 +2066,11 @@ Meteor 依赖于包来进行用户管理。Meteor 团队提供了几个包，此
 ### 7.3 练习解答
 
 - 将你的浏览器指向 http://localhost:3000。
+
 - 保持浏览器打开，并保持 meteor 命令行运行。
+
 - 打开另一个命令行，导航到你的应用目录并输入：
+
   - 将以下代码添加到 route.js 文件的末尾：
 
 ```
@@ -2027,7 +2115,9 @@ Router.plugin('ensureSignedIn', {
 # 账户：用户管理
 
 - 使用登录页面底部的链接创建一个账户，并检查你是否能访问整个应用。
+
 - 登出，检查*Products*页面是否已无法访问。
+
 - 登录并检查你是否能访问整个应用。
 
 ## 8. 进一步探索
@@ -2053,8 +2143,11 @@ MiniMongo 是一个响应式集合，这意味着显示来自 MiniMongo 集合�
 ### 8.2 练习：创建和管理购物车
 
 在主页上显示产品列表。在列表中每个产品的旁边，添加一个"购买"按钮。
+
 创建一个内存中的集合来保存购物车中的物品。当用户点击"购买"按钮时，向购物车添加一个新物品，数量为1。
+
 添加一个"购物车"页面，并从头部链接到它。
+
 在"购物车"页面上，显示购物车中的物品列表及其数量。在每个购物车物品旁边，添加"+"和"-"按钮以增加或减少数量。
 
 以下是"购物车"页面应有的样子：
@@ -2066,7 +2159,9 @@ MiniMongo 是一个响应式集合，这意味着显示来自 MiniMongo 集合�
 ### 8.3 练习解答
 
 - 将你的浏览器指向 `http://localhost:3000`。
+
 - 保持浏览器打开，并保持 `meteor` 命令行运行。
+
 - 在 `client` 文件夹中添加一个 `store.html` 文件，包含以下代码：
 
 #### client/store.html
@@ -2229,16 +2324,18 @@ Template.cart.events({
 > 在上面的代码中，`quantity: { $gt: 1 }` 是一个条件，用于检查数量是否大于等于1然后再进行递减。这样我们确保数量不会为负数。
 
 - 切换回你的浏览器。
+
 - 导航到主页。检查它是否显示了产品列表。
+
 - 使用产品旁边的"购买"按钮将一些产品添加到你的购物车。
+
 - 导航到"购物车"页面。检查你添加到购物车的产品是否显示在那里。
+
 - 尝试增加和减少购物车中产品的数量。
 
 ### 8.4 脱离原型开发
 
 到目前为止，我们的代码编写速度非常快，这对原型开发很有帮助。然而，为了使我们的代码编写如此高效，Meteor 使用了两个在投入生产环境前应该被移除的包，因为它们会危害安全性：
-
-
 
 #### 移除 *autopublish*
 
@@ -2251,6 +2348,7 @@ meteor remove autopublish
 现在，你需要告诉 Meteor 哪些数据应该被发布和获取。这通过两个步骤完成：
 
 1.  在服务器上使用 `Meteor.publish` 函数；
+
 2.  在客户端调用 `Meteor.subscribe` 函数。
 
 对于这两个函数，你都提供一个字符串形式的发布名称，该名称在客户端和服务器上应保持一致（这是订阅与发布匹配的方式）。你也可以在发布方法中接受参数，这些参数在订阅方法中提供。
@@ -2332,7 +2430,9 @@ Router.route('/books', {
 ### 8.6 练习解答
 
 1.  将你的浏览器指向 `http://localhost:3000`。
+
 2.  保持浏览器打开，并保持 `meteor` 命令行运行。
+
 3.  打开另一个命令行，导航到你的应用程序目录并输入：
 
 ```
@@ -2340,6 +2440,7 @@ meteor remove autopublish
 ```
 
 4.  切换回你的浏览器，注意首页和 *产品* 页面上不再显示新闻和产品。
+
 5.  创建一个 `server/publications.js` 文件，包含以下代码：
 
 ```
@@ -2420,7 +2521,9 @@ Template.books.events({
 ### 8.8 练习解答
 
 1.  将你的浏览器指向 `http://localhost:3000`。
+
 2.  保持浏览器打开，并保持 meteor 命令行运行。
+
 3.  打开另一个命令行，导航到你的应用程序目录并输入：
 
 ```
@@ -2428,6 +2531,7 @@ meteor remove insecure
 ```
 
 4.  切换回你的浏览器，注意你无法在首页上添加或删除新闻条目。
+
 5.  创建一个 methods.js 文件，包含以下代码：
 
 ```
@@ -2484,8 +2588,6 @@ Template.news.events({
 
 8.  切换回你的浏览器，注意你现在可以在首页上添加或删除新闻条目。
 
-
-
 #### 定义
 
 #### 打包
@@ -2527,6 +2629,7 @@ Spacebars 是带有扩展的 HTML。扩展采用 mustache 标签的形式，如�
 如果你想联系我，可以使用：
 
 - 电子邮件：books@aweil.fr
+
 - Facebook：https://facebook.com/learncollection
 
 如果你的项目有需要，我也可以提供演讲、教学、咨询和编码服务。世界各地皆可。
@@ -2540,13 +2643,17 @@ Spacebars 是带有扩展的 HTML。扩展采用 mustache 标签的形式，如�
 ##### 已出版的书籍
 
 - [Learn ASP.NET MVC](http://tinyurl.com/h6hjwce)
+
 - [Learn Meteor](https://leanpub.com/learnmeteor)
 
 ##### 计划于 2016 年出版
 
 - [Learn WPF MVVM](https://leanpub.com/learnwpf)
+
 - Learn Knockout
 
 ¹ http://tinyurl.com/h6hjwce
+
 ² https://leanpub.com/learnmeteor
+
 ³ https://leanpub.com/learnwpf

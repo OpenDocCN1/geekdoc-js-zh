@@ -1,3 +1,4 @@
+
 # 五、日期和时间
 
 ## 计算复活节的日期
@@ -8,7 +9,7 @@
 
 ### 解决方案
 
-下面的函数返回数组有两个要素：复活节的月份（ 1-12 ）和日期。如果没有给出任何参数，给出的结果是当前的一年。这是 在 CoffeeScript 的[匿名公历算法](https://en.wikipedia.org/wiki/Computus#Anonymous_Gregorian_algorithm)实现的。
+下面的函数返回数组有两个要素：复活节的月份（1-12）和日期。如果没有给出任何参数，给出的结果是当前的一年。这是在 CoffeeScript 的[匿名公历算法](https://en.wikipedia.org/wiki/Computus#Anonymous_Gregorian_algorithm)实现的。
 
 ```js
 gregorianEaster = (year = (new Date).getFullYear()) ->
@@ -32,9 +33,9 @@ gregorianEaster = (year = (new Date).getFullYear()) ->
 
 ### 讨论
 
-Javascript 中的月份是 0-11 。getMonth() 查找的是三月的话将返回数字 2 ，这个函数会返回 3 。如果你想要这个功能是一致的，你可以修改这个函数。
+JavaScript 中的月份是 0-11。`getMonth()`查找的是三月的话将返回数字 2，这个函数会返回 3。如果你想要这个功能是一致的，你可以修改这个函数。
 
-该函数使用`~~`符号代替来 Math.floor() 。
+该函数使用`~~`符号代替`Math.floor()`。
 
 ```js
 gregorianEaster()    # => [4, 24] (April 24th in 2011)
@@ -51,7 +52,7 @@ gregorianEaster 1972 # => [4, 2]
 
 下面的函数返回给出年份的感恩节的日期。如果没有给出任何参数，给出的结果是当前年份。
 
-美国的感恩节是十一月的第四个星期四。 　　
+美国的感恩节是十一月的第四个星期四。
 
 ```js
 thanksgivingDayUSA = (year = (new Date).getFullYear()) ->
@@ -78,14 +79,14 @@ thanksgivingDayCA() # => 10 (October 10th, 2011)
 
 thanksgivingDayUSA(2012) # => 22 (November 22nd)
 
-thanksgivingDayCA(2012) # => 8 (October 8th)
+thanksgivingDayCA(2012) # => 8 (October 8th, 2012)
 ```
 
 这个想法很简单：
 
-1.  找出哪一天是以下各月份的第一天（美国十一月，加拿大十月）。
-2.  计算从那天起偏移到下一个工作日的量（美国星期四，加拿大星期一）。
-3.  将这个偏移量加上第一个可能的假期日期（第二十二个美国感恩节，第八个加拿大感恩节）。
+1. 找出哪一天是以下各月份的第一天（美国十一月，加拿大十月）。
+2. 计算从那天起偏移到下一个工作日的量（美国星期四，加拿大星期一）。
+3. 将这个偏移量加上第一个可能的假期日期（第二十二个美国感恩节，第八个加拿大感恩节）。
 
 ## 计算两个日期中间的天数
 
@@ -95,7 +96,7 @@ thanksgivingDayCA(2012) # => 8 (October 8th)
 
 ### 解决方案
 
-利用 JavaScript 的日期计算函数 getTime() 。它提供了从 1970 年 1 月 1 日开始经过了多少毫秒。
+利用 JavaScript 的日期计算函数`getTime()`。它提供了从 1970 年 1 月 1 日开始经过了多少毫秒。
 
 ```js
 DAY = 1000 * 60 * 60  * 24
@@ -129,7 +130,7 @@ hour_passed = Math.round((d2.getTime() - d1.getTime()) / HOUR)
 
 ### 解决方案
 
-利 用 JavaScript 的日期下溢来找到给出月份的第一天：
+利用 JavaScript 的日期下溢来找到给出月份的第一天：
 
 ```js
 now = new Date
@@ -140,7 +141,7 @@ lastDayOfTheMonth = new Date(1900+now.getYear(), now.getMonth()+1, 0)
 
 JavaScript 的日期构造函数成功地处理溢出和下溢情况，使日期的计算变得很简单。鉴于这种简单操作，不需要担心一个给定的月份里有多少天；只需要用数学稍加推导。在十二月，以上的解决方案就是寻找当前年份的第十三个月的第 0 天日期，那么它就是下一年的一月一日，也计算出来今年十二月份 31 号的日期。
 
-## 找到上一个月(或下一个月)
+## 找到上一个月（或下一个月）
 
 ### 问题
 
@@ -151,36 +152,36 @@ JavaScript 的日期构造函数成功地处理溢出和下溢情况，使日期
 添加或减去当月的数字，JavaScript 的日期构造函数会修复数学知识。
 
 ```js
- # these examples were written in GMT-6
+# these examples were written in GMT-6
 
- # Note that these examples WILL work in January!
+# Note that these examples WILL work in January!
 
 now = new Date
- # => "Sun, 08 May 2011 05:50:52 GMT"
+# => "Sun, 08 May 2011 05:50:52 GMT"
 
 lastMonthStart = new Date 1900+now.getYear(), now.getMonth()-1, 1
- # => "Fri, 01 Apr 2011 06:00:00 GMT"
+# => "Fri, 01 Apr 2011 06:00:00 GMT"
 
 lastMonthEnd = new Date 1900+now.getYear(), now.getMonth(), 0
- # => "Sat, 30 Apr 2011 06:00:00 GMT"
+# => "Sat, 30 Apr 2011 06:00:00 GMT"
 ```
 
 ### 讨论
 
 JavaScript 的日期对象会处理下溢和溢出的月和日，并将相应调整日期对象。例如，你可以要求寻找三月的第 42 天，你将获得 4 月 11 日。
 
-JavaScript 对象存储日期为从 1900 开始的每年的年份数，月份为一个 0 到 11 的整数，日期为从 1 到 31 的一个整数。在上述解决方案中，上个月的起始日是要求在本年度某一个月的第一天，但月是从 -1 至 10 。如果月是 -1 的日期对象将实际返回为前一年的十二月：
+JavaScript 对象存储日期为从 1900 开始的每年的年份数，月份为一个 0 到 11 的整数，日期为从 1 到 31 的一个整数。在上述解决方案中，上个月的起始日是要求在本年度某一个月的第一天，但月是从 -1 至 10。如果月是 -1，日期对象将实际返回为前一年的十二月：
 
 ```js
 lastNewYearsEve = new Date 1900+now.getYear(), -1, 31
- # => "Fri, 31 Dec 2010 07:00:00 GMT"
+# => "Fri, 31 Dec 2010 07:00:00 GMT"
 ```
 
 对于溢出是同样的：
 
 ```js
 thirtyNinthOfFourteember = new Date 1900+now.getYear(), 13, 39
- # => "Sat, 10 Mar 2012 07:00:00 GMT"
+# => "Sat, 10 Mar 2012 07:00:00 GMT"
 ```
 
 ## 计算月球的相位
@@ -194,17 +195,15 @@ thirtyNinthOfFourteember = new Date 1900+now.getYear(), 13, 39
 以下代码提供了一种计算给出日期的月球相位计算方案：
 
 ```js
- # moonPhase.coffee
+# moonPhase.coffee
 
- # Moon-phase calculator
+# Moon-phase calculator
 
- # Roger W. Sinnott, Sky & Telescope, June 16, 2006
+# Roger W. Sinnott, Sky & Telescope, June 16, 2006
 
- # http://www.skyandtelescope.com/observing/objects/javascript/moon_phases
+# http://www.skyandtelescope.com/observing/objects/javascript/moon_phases
 
- #
-
- # Translated to CoffeeScript by Mike Hatfield @WebCoding4Fun
+# Translated to CoffeeScript by Mike Hatfield @WebCoding4Fun
 
 proper_ang = (big) ->
     tmp = 0
@@ -217,7 +216,7 @@ proper_ang = (big) ->
 
     tmp
 
-jdn = (date) ->  
+jdn = (date) ->
     month = date.getMonth()
     day = date.getDate()
     year = date.getFullYear()
@@ -267,7 +266,7 @@ moonElong = (jd) ->
 
 getMoonPhase = (age) ->
     moonPhase = "new Moon"
-    moonPhase = "first quarter" if age > 3 and age < 11 
+    moonPhase = "first quarter" if age > 3 and age < 11
     moonPhase = "full Moon"     if age > 10 and age < 18
     moonPhase = "last quarter"  if age > 17 and age < 25
 
@@ -295,28 +294,28 @@ MoonPhase = exports? and exports or @MoonPhase = {}
 
 class MoonPhase.Calculator
     getMoonDays: (date) ->
-        jd = jdn date 
+        jd = jdn date
         moonElong jd
 
-    getMoonPhase: (date) ->      
-        jd = jdn date 
+    getMoonPhase: (date) ->
+        jd = jdn date
         getMoonPhase( moonElong jd )
 ```
 
 ### 讨论
 
-此代码显示一个月球相位计算器对象的方法有两种。计算器 -> getmoonphase 将返回一用个文本表示的日期的月球相位。
+此代码显示一个月球相位计算器对象的方法有两种。计算器`getMoonPhase`将返回一用个文本表示的日期的月球相位。
 
 这可以用在浏览器和 Node.js 中。
 
 ```js
 $ node
 > var MoonPhase = require('./moonPhase.js');
- undefined
+undefined
 > var calc = new MoonPhase.Calculator();
- undefined
+undefined
 > calc.getMoonPhase(new Date());
- 'full moon'
+'full moon'
 > calc.getMoonPhase(new Date(1972, 6, 30));
- '3 days before last quarter'
+'3 days before last quarter'
 ```

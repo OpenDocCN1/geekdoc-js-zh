@@ -1,27 +1,22 @@
+
 # Vue.js：11 个实战项目
 
-
-
 ![](img/default_cover.jpeg)
+
 ![](img/default_cover.jpeg)
 
 Copyright © 2019 SitePoint Pty. Ltd.
 
 电子书 ISBN: 978-1-925836-27-1
 
-* **封面设计：** Alex Walker
-* **项目编辑：** James Hibbard
-
-
-
+- **封面设计：** Alex Walker
+- **项目编辑：** James Hibbard
 
 ![SitePoint logo](img/sitepoint-logo-2012.png)
 
-
-
 # 前言
 
-自 2014 年发布以来，Vue.js 的人气经历了如飞升般的增长，现在被认为是主要的 own 框架之一，这并非没有理由。它基于组件的架构设计得非常灵活且易于采用，使其能够轻松地集成到项目中并与非 Vue 代码一起使用，同时也构建复杂的客户端应用程序同样简单。
+自 2014 年发布以来，Vue.js 的人气经历了如飞升般的增长，现在被认为是主要的 `own` 框架之一，这并非没有理由。它基于组件的架构设计得非常灵活且易于采用，使其能够轻松地集成到项目中并与非 Vue 代码一起使用，同时也构建复杂的客户端应用程序同样简单。
 
 本书包含了精选的 11 个实用项目，涵盖了使用 Vue 开发的各个方面。它包含：
 
@@ -47,25 +42,25 @@ Copyright © 2019 SitePoint Pty. Ltd.
 
 书中的代码使用等宽字体显示，如下：
 
-```
- <h1>一个完美的夏日</h1>
+```html
+<h1>一个完美的夏日</h1>
 <p>这是一个在公园散步的美好日子。
-鸟儿在歌唱，孩子们都已回学校了。</p> 
+鸟儿在歌唱，孩子们都已回学校了。</p>
 ```
 
-当需要现有代码作为上下文，而不是重复全部内容时，将显示 ⋮：
+当需要现有代码作为上下文，而不是重复全部内容时，将显示 `⋮`：
 
-```
- function animate() {
-    ⋮
-new_variable = "Hello";
+```javascript
+function animate() {
+  ⋮
+  new_variable = "Hello";
 }
 ```
 
-某些代码行应该在一行内输入，但由于页面限制，我们对它们进行了换行。➥ 表示仅为了格式化而存在的换行符，应该被忽略：
+某些代码行应该在一行内输入，但由于页面限制，我们对它们进行了换行。`➥` 表示仅为了格式化而存在的换行符，应该被忽略：
 
-```
- URL.open("http://www.sitepoint.com/responsive-web-
+```javascript
+URL.open("http://www.sitepoint.com/responsive-web-
 ➥design-real-user-testing/?responsive1");
 ```
 
@@ -83,7 +78,7 @@ new_variable = "Hello";
 
 #### 确保你始终……
 
-…… 注意这些重要要点。
+……注意这些重要要点。
 
 #### 注意！
 
@@ -103,7 +98,7 @@ new_variable = "Hello";
 
 ### Node.js
 
-许多网站会建议你前往[官方下载页面](https://nodejs.org/en/download/) 获取适用于你系统的 Node 二进制文件。虽然这种方法可行，但我建议使用版本管理器（如 [nvm](https://github.com/creationix/nvm)）。这是一个允许你安装多个版本的 Node 并随意在它们切换的程序。如果你想了解更多信息，请参阅我们的快速贴士：[使用 nvm 安装多个版本的 Node.js](https://www.sitepoint.com/quick-tip-multiple-versions-node-nvm/)。
+许多网站会建议你前往[官方下载页面](https://nodejs.org/en/download/)获取适用于你系统的 Node 二进制文件。虽然这种方法可行，但我建议使用版本管理器（如 [nvm](https://github.com/creationix/nvm)）。这是一个允许你安装多个版本的 Node 并随意在它们切换的程序。如果你想了解更多信息，请参阅我们的快速贴士：[使用 nvm 安装多个版本的 Node.js](https://www.sitepoint.com/quick-tip-multiple-versions-node-nvm/)。
 
 ### npm
 
@@ -115,12 +110,9 @@ MongoDB 是一个文档数据库，以灵活的类 JSON 文档存储数据。
 
 启动 MongoDB 最快的方法是使用如 mLabs 的服务。他们提供免费的沙盒计划，提供运行在共享虚拟机上的具有 496MB 存储空间的单个数据库。这对于只有少数用户的简单应用程序来说绰有余。如果这听起来是你的最佳选择，请参阅他们的[快速入门指南](http://docs.mlab.com/)。
 
-你也可以在本地安装 Mongo。要这样做，请访问[官方下载页面](https://www.mongodb.com/download-center#community) 并为你的操作系统下载正确版本的社区版服务器。下载链接旁边有指向详细的、特定操作系统安装说明的链接。
+你也可以在本地安装 Mongo。要这样做，请访问[官方下载页面](https://www.mongodb.com/download-center#community)并为你的操作系统下载正确版本的社区版服务器。下载链接旁边有指向详细的、特定操作系统安装说明的链接。
 
 ### MongoDB GUI
-
-
-
 
 虽然跟随本教程操作并非严格必要，但你可能也会喜欢安装 [Compass，MongoDB 的官方 GUI 界面](https://www.mongodb.com/download-center#compass)。此工具可以帮助你可视化并操作你的数据，允许你通过全功能 CRUD 功能与文档进行交互。
 
@@ -128,19 +120,19 @@ MongoDB 是一个文档数据库，以灵活的类 JSON 文档存储数据。
 
 ### Postman
 
-这是一个用于处理和测试 API 的极其实用的工具。你可以从[项目主页](https://www.getpostman.com/) 下载适用于你操作系统的正确版本。你可以在[此处找到针对特定操作系统的安装说明](https://learning.getpostman.com/docs/postman/launching_postman/installation_and_updates/)。
+这是一个用于处理和测试 API 的极其实用的工具。你可以从[项目主页](https://www.getpostman.com/)下载适用于你操作系统的正确版本。你可以在[此处找到针对特定操作系统的安装说明](https://learning.getpostman.com/docs/postman/launching_postman/installation_and_updates/)。
 
 ### 检查所有内容是否安装正确
 
 要检查 `node` 和 `npm` 是否安装正确，请打开终端并输入以下命令：
 
-```
+```bash
 node -v
 ```
 
 接着输入此命令：
 
-```
+```bash
 npm -v
 ```
 
@@ -148,7 +140,7 @@ npm -v
 
 如果你在本地安装了 `Mongo`，可以使用此命令检查版本号：
 
-```
+```bash
 mongo --version
 ```
 
@@ -158,27 +150,27 @@ mongo --version
 
 如果你在本地安装了 `Mongo`，可以通过在终端中输入以下命令启动服务器：
 
-```
+```bash
 mongod
 ```
 
 接下来，打开 Compass。你应该能够接受默认设置（主机名：`localhost`，端口：`27017`），点击 `CONNECT` 按钮并与数据库服务器建立连接。
 
-![MongoDB Compass 连接到 localhost:27107](img/compass-local.jpg) 
+![MongoDB Compass 连接到 localhost:27107](img/compass-local.jpg)
 
-请注意 `admin`、`config` 和 `local` 数据库会自动创建的。
+请注意，`admin`、`config` 和 `local` 数据库会自动创建的。
 
 ### 使用云托管解决方案
 
-如果你正在使用 mLabs，请创建一个数据库订阅（如其[快速启动指南](http://docs.mlab.com/) 中描述所示），然后将连接详情复制到剪贴板。它的格式应该如下：
+如果你正在使用 mLabs，请创建一个数据库订阅（如其[快速启动指南](http://docs.mlab.com/)中描述所示），然后将连接详情复制到剪贴板。它的格式应该如下：
 
-```
+```text
 mongodb://<dbuser>:<dbpassword>@<instance>.mlab.com:<port>/<dbname>
 ```
 
 当你打开 Compass 时，它会通知你已检测到 MongoDB 连接字符串，并询问你是否想使用它来填充表单。点击 `Yes`，然后点击 `CONNECT`，就可以开始工作了。
 
-![MongoDB Compass 连接到 mLabs](img/compass-mlabs.jpg) 
+![MongoDB Compass 连接到 mLabs](img/compass-mlabs.jpg)
 
 注意我给我的数据库命名为 `node-vue-crud-app`。你可以随心为你命名。
 
@@ -190,7 +182,7 @@ mongodb://<dbuser>:<dbpassword>@<instance>.mlab.com:<port>/<dbname>
 
 首先，让我们创建所需的文件和目录并初始化项目：
 
-```
+```bash
 mkdir -p vocab-builder/server/api/{controllers,models,routes}
 cd vocab-builder/server
 touch server.js
@@ -202,7 +194,7 @@ npm init -y
 
 这应该带给我们如下目录结构：
 
-```
+```text
 .
 └── server
     ├── api
@@ -220,22 +212,22 @@ npm init -y
 
 对于我们的 API，我们将使用以下库：
 
-*   [express](https://www.npmjs.com/package/express)—一个 Node 轻量级框架，提供了许多有用功能，如路由和中间件。
-*   [cors](https://www.npmjs.com/package/cors)—Express 中间件，可用于项目中启用 [CORS](http://en.wikipedia.org/wiki/Cross-origin_resource_sharing)。
-*   [body-parser](https://www.npmjs.com/package/body-parser)—用于解析传入请求体的 Express 中间件。
-*   [mongoose](https://www.npmjs.com/package/mongoose)—用于 Node 的 MongoDB ODM（NoSQL 版本的 ORM）。它提供了简单的验证和查询 API，帮助你与 MongoDB 数据库交互。
-*   [nodemon](https://www.npmjs.com/package/nodemon)—一个简单的监控脚本，当检测到文件更改时会自动重启 Node 应用。
+- [express](https://www.npmjs.com/package/express)—一个 Node 轻量级框架，提供了许多有用功能，如路由和中间件。
+- [cors](https://www.npmjs.com/package/cors)—Express 中间件，可用于项目中启用 [CORS](http://en.wikipedia.org/wiki/Cross-origin_resource_sharing)。
+- [body-parser](https://www.npmjs.com/package/body-parser)—用于解析传入请求体的 Express 中间件。
+- [mongoose](https://www.npmjs.com/package/mongoose)—用于 Node 的 MongoDB ODM（NoSQL 版本的 ORM）。它提供了简单的验证和查询 API，帮助你与 MongoDB 数据库交互。
+- [nodemon](https://www.npmjs.com/package/nodemon)—一个简单的监控脚本，当检测到文件更改时会自动重启 Node 应用。
 
 让我们安装它们吧：
 
-```
+```bash
 npm i express cors body-parser mongoose
 npm i nodemon --save-dev
 ```
 
 接下来，打开 `package.json` 并修改 `scripts` 部分如下：
 
-```
+```json
 "scripts": {
   "start": "nodemon server.js"
 },
@@ -297,11 +289,11 @@ module.exports = mongoose.model('Vocab', VocabSchema);
 
 接下来我们需要指定 API 如何响应外部请求。我们将创建以下端点：
 
-*   GET `/words`—返回所有单词的列表
-*   POST `/words`—创建一个新单词
-*   GET `/words/:wordId`—获取单个单词
-*   PUT `/words/:wordId`—更新单个单词
-*   DELETE `/words/:wordId`—删除单个单词
+- `GET /words`—返回所有单词的列表
+- `POST /words`—创建一个新单词
+- `GET /words/:wordId`—获取单个单词
+- `PUT /words/:wordId`—更新单个单词
+- `DELETE /words/:wordId`—删除单个单词
 
 为了实现这一点，打开 `api/routes/vocabRoutes.js` 并添加以下内容：
 
@@ -330,9 +322,8 @@ module.exports = app => {
 
 
 
-
 ```javascript
-const mongoose = require('mongoose');
+ const mongoose = require('mongoose');
 const Vocab = mongoose.model('Vocab');
 
 exports.list_all_words = (req, res) => {
@@ -374,7 +365,7 @@ exports.delete_a_word = (req, res) => {
     if (err) res.send(err);
     res.json({
       message: 'Word successfully deleted',
-     _id: req.params.wordId
+      _id: req.params.wordId
     });
   });
 };
@@ -384,7 +375,7 @@ exports.delete_a_word = (req, res) => {
 
 ## 将所有部分连接在一起
 
-现在所有组件已就绪，是时候将它们连接在一起了。回到 `server.js` 将现有代码替换为以下内容：
+现在所有组件已就绪，是时候将它们连接在一起了。回到`server.js`将现有代码替换为以下内容：
 
 ```javascript
 const express = require('express');
@@ -419,7 +410,7 @@ app.use((req, res) => {
 console.log(`Server started on port ${port}`);
 ```
 
-在这里，我们首先引入必要的库，以及我们的模型和路由文件。然后，我们使用 Mongoose 的 `connect` 方法连接到数据库（如果你在本地安装了 MongoDB，请确保它正在运行），在此创建一个 Express 应用程序并告诉它使用 `bodyParser` 和 `cors` 中间件。接着，我们告诉它使用我们在 `api/routes/vocabRoutes.js` 中定义的路由，并监听端口 3000 上的连接。最后，我们定义了一个函数来处理不存在的路由。
+在这里，我们首先引入必要的库，以及我们的模型和路由文件。然后，我们使用 Mongoose 的`connect`方法连接到数据库（如果你在本地安装了 MongoDB，请确保它正在运行），在此创建一个 Express 应用程序并告诉它使用`bodyParser`和`cors`中间件。接着，我们告诉它使用我们在`api/routes/vocabRoutes.js`中定义的路由，并监听端口 3000 上的连接。最后，我们定义了一个函数来处理不存在的路由。
 
 你可以通过在浏览器中访问 [`localhost:3000/`](http://localhost:3000/) 来测试其运行正常。你不应该再看到“Hello, World!”消息，而是 `{"url":"/ not found"}`。
 
@@ -447,7 +438,7 @@ mongoose.connect(
 
 ### 创建 (Create)
 
-我们将从创建一个新的词对开始。选择 `POST` 为方法，并将 `http://localhost:3000/words` 输入 URL。选择 `Body` 选项卡和 `x-www-form-urlencoded` 单选按钮，然后在下方的字段中输入两个键/值对。按下 `Send`，你应该能通过响应接收来自服务器的新创建的对象。
+我们将从创建一个新的词对开始。选择`POST`为方法，并将`http://localhost:3000/words`输入 URL。选择`Body`选项卡和`x-www-form-urlencoded`单选按钮，然后在下方的字段中输入两个键/值对。按下`Send`，你应该能通过响应接收来自服务器的新创建的对象。
 
 ![Postman—一次成功的 POST 请求](img/postman-01.jpg) 
 
@@ -457,7 +448,7 @@ mongoose.connect(
 
 为了测试我们 API 的读取功能，我们将首先尝试获取集合中的所有单词，然后是单个单词。
 
-要获取所有单词，将方法更改为 `GET` 并将 `Body` 更改为 `none`。然后点击 `Send`。响应应该如下：
+要获取所有单词，将方法更改为`GET`并将`Body`更改为`none`。然后点击`Send`。响应应该如下：
 
 ```json
 [
@@ -467,7 +458,7 @@ mongoose.connect(
 ]
 ```
 
-要获取所有单词，将方法更改为 `GET` 并将 `Body` 更改为 `none`。然后点击 `Send`。响应应该如下：
+要获取所有单词，将方法更改为`GET`并将`Body`更改为`none`。然后点击`Send`。响应应该如下：
 
 ```json
 [
@@ -476,9 +467,10 @@ mongoose.connect(
   }
 ]
 ```
+
 （注：原文包含一些截断/重复的 JSON 示例，我保持了提供指令的逻辑流）
 
-要获取所有单词，将方法更改为 `GET` 并将 `Body` 更改为 `none`。然后点击 `Send`。响应应该如下：
+要获取所有单词，将方法更改为`GET`并将`Body`更改为`none`。然后点击`Send`。响应应该如下：
 
 ```json
 [
@@ -488,7 +480,7 @@ mongoose.connect(
 ]
 ```
 
-要获取所有单词，将方法更改为 `GET` 并将 `Body` 更改为 `none`。然后点击 `Send`。响应应该如下：
+要获取所有单词，将方法更改为`GET`并将`Body`更改为`none`。然后点击`Send`。响应应该如下：
 
 ```json
 [
@@ -500,15 +492,11 @@ mongoose.connect(
 
 ### 更新 (Update)
 
-最后，让我们更新单词。选择 `PUT` 为方法，并将 `http://localhost:3000/words` 输入 URL。选择 `Body` 选项卡和 `x-www-form-urlencoded` 单选按钮，然后在下方的字段中输入两个键/值对。按下 `Send`，你应该能通过响应接收来自服务器的新创建的对象。
+最后，让我们更新单词。选择`PUT`为方法，并将`http://localhost:3000/words`输入 URL。选择`Body`选项卡和`x-www-form-urlencoded`单选按钮，然后在下方的字段中输入两个键/值对。按下`Send`，你应该能通过响应接收来自服务器的新创建的对象。
 
 ### 删除 (Destroy)
 
-要删除单词，选择 `DELETE` 并点击 `Send`。砰！集合现在应该是空的。
-
-
-
-
+要删除单词，选择`DELETE`并点击`Send`。砰！集合现在应该是空的。
 
 ```
 .
@@ -534,7 +522,9 @@ mongoose.connect(
 对于前端，我们将使用以下库：
 
 - [axios](https://www.npmjs.com/package/axios)—一个基于 Promise 的 HTTP 客户端，它允许我们从前端向后端发送 Ajax 请求。
+
 - [semantic-ui-css](https://www.npmjs.com/package/semantic-ui-css)—Semantic UI 的轻量级纯 CSS 版本。
+
 - [vue-flash-message](https://www.npmjs.com/package/vue-flash-message)—一个 Vue 闪消息组件，我们将用它来向用户显示信息。
 
 让我们安装它们吧：
@@ -549,17 +539,21 @@ npm i axios semantic-ui-css vue-flash-message
 
 首先，我们需要考虑应用程序将拥有哪些路由。我们需要执行之前讨论的所有 CRUD（增删改查）操作，如果用户能够针对数据库中添加的任何单词进行自测，那就更好了。
 
-为此此，我们将创建以下路由：
+为此，我们将创建以下路由：
 
 - `/words`—显示数据库中所有的单词
+
 - `/words/new`—创建一个新单词
+
 - `/words/:id`—显示单词
+
 - `/words/:id/edit`—编辑单词
+
 - `/test`—测试你的知识
 
-删除单词不需要单独的路由。我们只需要发送相应的请求并重定向到 `/words` 即可。
+删除单词不需要单独的路由。我们只需要发送相应的请求并重定向到`/words`即可。
 
-要实现这一步，打开 `src/router.js` 并现有代码替换为以下内容：
+要实现这一步，打开`src/router.js`并现有代码替换为以下内容：
 
 ```javascript
 import Vue from 'vue';
@@ -610,9 +604,9 @@ export default new Router({
 });
 ```
 
-这创建了我们上面讨论的路由。它还将根 URL `/` 重定向到 `/words`，并告诉路由器为当前激活的导航链接应用 `active` 类（默认值是 `router-link-active`，它与 `semantic-ui-css` 的兼容性不佳）。
+这创建了我们上面讨论的路由。它还将根 URL `/` 重定向到`/words`，并告诉路由器为当前激活的导航链接应用`active`类（默认值是`router-link-active`，它与`semantic-ui-css`的兼容性不佳）。
 
-提到这里，接下来我们需要打开 `src/main.js` 并告诉 Vue 使用 `semantic-ui-css`：
+提到这里，接下来我们需要打开`src/main.js`并告诉 Vue 使用`semantic-ui-css`：
 
 ```javascript
 import Vue from 'vue';
@@ -629,7 +623,7 @@ new Vue({
 }).$mount('#app');
 ```
 
-最后，我们需要将 `src/App.vue` 中的代码替换为以下内容：
+最后，我们需要将`src/App.vue`中的代码替换为以下内容：
 
 ```html
 <template>
@@ -692,9 +686,9 @@ div.button {
 </style>
 ```
 
-这创建了我们上面讨论的路由。它还将根 URL `/` 重定向到 `/words`，并让 `router-link` 为当前激活的导航链接应用 `active` 类（默认是 `router-link-active`，它与 `semantic-ui-css` 的兼容性不佳）。
+这创建了我们上面讨论的路由。它还将根 URL `/` 重定向到`/words`，并让`router-link`为当前激活的导航链接应用`active`类（默认是`router-link-active`，它与`semantic-ui-css`的兼容性不佳）。
 
-提到这里，接下来我们需要打开 `src/main.js` 并告诉 Vue 使用 `semantic-ui-css`：
+提到这里，接下来我们需要打开`src/main.js`并告诉 Vue 使用`semantic-ui-css`：
 
 ```javascript
 import Vue from 'vue';
@@ -711,7 +705,9 @@ new Vue({
 }).$mount('#app');
 ```
 
-最后，我们需要将 `src/App.vue` 中的代码替换为以下内容：
+最后，我们需要将`src/App.vue`中的代码替换为以下内容：
+
+
 
 ```html
 <template>
@@ -774,9 +770,9 @@ div.button {
 </style>
 ```
 
-### 与后端通信
+## 与后端通信
 
-接下来我们需要做的事情是建立与后端通信的方法。这就是我们之前安装的 `axios` 库大显身场的地方。为了让应用更加灵活，打开 `src/helpers.js` 并添加以下内容：
+接下来我们需要做的事情是建立与后端通信的方法。这就是我们之前安装的 `axios` 库大显身场的地方。为了让应用更加灵活，打开`src/helpers.js`并添加以下内容：
 
 ```javascript
 import axios from 'axios';
@@ -812,9 +808,9 @@ export const api = {
 };
 ```
 
-这里有几点需要注意。首先，我们导出了 `api` 对象，它暴露了我们创建的方法。这些方法将对后端执行 Ajax 调用。
+这里有几点需要注意。首先，我们导出了`api`对象，它暴露了我们创建的方法。这些方法将对后端执行 Ajax 调用。
 
-其次，由于 Ajax 的异步性质，我们使用了 [async/await](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Statements/async_function)，它允许我们在继续执行代码之前等待异步操作（如写入数据库）的结果。但是，这里有一个小的注意事项。在 `async/await` 中处理错误的标准方法是将内容包裹在 `try/catch` 块中：
+其次，由于 Ajax 的异步性质，我们使用了 [async/await](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Statements/async_function)，它允许我们在继续执行代码之前等待异步操作（如写入数据库）的结果。但是，这里有一个小的注意事项。在`async/await`中处理错误的标准方法是将内容包裹在`try/catch`块中：
 
 ```javascript
 export const api = {
@@ -832,17 +828,13 @@ export const api = {
 
 然而，这样做非常冗长，并且会导致代码臃肿，因为我们需要对每个 Ajax 调用都进行这样做。另一种方法是使用[高阶函数](https://www.sitepoint.com/higher-order-functions-javascript/)来为我们处理错误。
 
-这种高阶函数接收一个函数作为参数（函数 `a`），并返回另一个函数（函数 `b`），当函数 `b` 被调用时，它会调用函数 `a` 并传递它收到的任何参数。函数 `b` 还会在函数 `a` 的末尾链一个 `catch` 块，这意味着如果函数 `a` 发生错误，将被捕获并处理。
-
-
-
-
+这种高阶函数接收一个函数作为参数（函数`a`），并返回另一个函数（函数`b`），当函数`b`被调用时，它会调用函数`a`并传递它收到的任何参数。函数`b`还会在函数`a`的末尾链一个`catch`块，这意味着如果函数`a`发生错误，将被捕获并处理。
 
 如果你想深入探讨这些内容，请查看我们的文章 [现代 JS 中的流程控制：从回调到 Promise 再到 Async/Await](https://www.sitepoint.com/flow-control-callbacks-promises-async-await/)。
 
 ## 从数据库获取单词
 
-现在让我们获取一些单词来显示给用户。打开 `/src/views/Words.vue` 组件并添加以下代码：
+现在让我们获取一些单词来显示给用户。打开`/src/views/Words.vue`组件并添加以下代码：
 
 ```vue
 <template>
@@ -884,13 +876,13 @@ export default {
 </script>
 ```
 
-如你所见，我们导入了 `api` 来执行针对后端的操作，然后在组件的 `mounted` 生命周期钩子中，我们调用了它的 `getWords` 方法从数据库中获取所有单词。由于组件的 `data` 对象上有一个 `words` 属性，我们可以等待后端的响应，然后将响应插入到 `this.words` 中，组件就会更新。
+如你所见，我们导入了`api`来执行针对后端的操作，然后在组件的`mounted`生命周期钩子中，我们调用了它的`getWords`方法从数据库中获取所有单词。由于组件的`data`对象上有一个`words`属性，我们可以等待后端的响应，然后将响应插入到`this.words`中，组件就会更新。
 
-尝试一下。使用 `Compass` 或 `Postman` 向数据库插入一个单词，然后观察它是否显示在 `/words` 页面上。
+尝试一下。使用`Compass`或`Postman`向数据库插入一个单词，然后观察它是否显示在`/words`页面上。
 
 ## 显示单个单词
 
-现在让我们添加从单词列表中显示单个单词的功能。在 `/src/views/Words.vue` 中，将：
+现在让我们添加从单词列表中显示单个单词的功能。在`/src/views/Words.vue`中，将：
 
 ```html
 <td width="75" class="center aligned">Show</td>
@@ -904,9 +896,9 @@ export default {
 </td>
 ```
 
-这创建了一个指向我们在 `/src/router.js` 文件定义的 `show` 路由的链接。它使用当前单词的 `_id` 属性来构建 URL，结果类似于 `http://localhost:8081/words/5bed4462bbd0ff553fb008d4`。
+这创建了一个指向我们在`/src/router.js`文件定义的`show`路由的链接。它使用当前单词的`_id`属性来构建 URL，结果类似于`http://localhost:8081/words/5bed4462bbd0ff553fb008d4`。
 
-现在打开 `/src/views/Show.vue` 并添加以下代码：
+现在打开`/src/views/Show.vue`并添加以下代码：
 
 ```vue
 <template>
@@ -958,11 +950,11 @@ export default {
 </style>
 ```
 
-当组件挂载时，它将使用与之前相同的技术从数据库中获取单个单词。它通过使用 `this.$route.params.id` 从 URL 中提取 ID 来识别目标单词。之所以可行，是因为我们在 `/src/router.js` 中声明路由的方式。在这里我们 `path: "/words/:id"`，这意味着 `/words/` 之后的任何内容都可以作为 `$route.params.id` 可用。
+当组件挂载时，它将使用与之前相同的技术从数据库中获取单个单词。它通过使用`this.$route.params.id`从 URL 中提取 ID 来识别目标单词。之所以可行，是因为我们在`/src/router.js`中声明路由的方式。在这里我们`path: "/words/:id"`，这意味着`/words/`之后的任何内容都可以作为`$route.params.id`可用。
 
-还要注意 `<style>` 标签上的 `scoped` 属性。这意味着在此处声明的任何样式仅应用于此组件。
+还要注意`<style>`标签上的`scoped`属性。这意味着在此处声明的任何样式仅应用于此组件。
 
-如果你此时运行程序，你应该能够在 `/words` 下看到数据库中包含的单词列表，并通过点击 *Show* 查看单个单词。
+如果你此时运行程序，你应该能够在`/words`下看到数据库中包含的单词列表，并通过点击 *Show* 查看单个单词。
 
 ![显示 "Person" "Mensch" 的 Show Word 屏幕](img/chrome-1.jpg) 
 
@@ -970,7 +962,7 @@ export default {
 
 ## 编辑单词
 
-打开 `src/views/Edit.vue` 并添加以下：
+打开`src/views/Edit.vue`并添加以下：
 
 ```vue
 <template>
@@ -1000,7 +992,7 @@ export default {
 </script>
 ```
 
-这里有一些不同之处。注意到我们使用了一个 `word-form` 组件。让我们查看 `components/WordForm.vue` 并添加以下：
+这里有一些不同之处。注意到我们使用了一个`word-form`组件。让我们查看`components/WordForm.vue`并添加以下：
 
 ```vue
 <template>
@@ -1055,24 +1047,22 @@ export default {
 </style>
 ```
 
-这里有相当多的内容。首先，我们有一个 `<form>` 标签，并且并将 `submit` 事件绑定到 `onSubmit` 方法。我们还使用了 `.prevent` 修饰符来阻止浏览的默认行为——在这种情况下是提交表单。
+这里有相当多的内容。首先，我们有一个`<form>`标签，并且并将`submit`事件绑定到`onSubmit`方法。我们还使用了`.prevent`修饰符来阻止浏览的默认行为——在这种情况下是提交表单。
 
-接下来是一个段落标签 `<p>`，用于在任何一个输入字段为空时显示错误消息。我们使用 `v-if` 只在 `errorsPresent` 属性计算为真时才显示它。
+接下来是一个段落标签`<p>`，用于在任何一个输入字段为空时显示错误消息。我们使用`v-if`只在`errorsPresent`属性计算为真时才显示它。
 
-然后是我们的表单，有两个输入字段，一个用于英语单词，另一个用于对应的德语单词。我们使用 `v-model` 在传递的 prop 的 `english` 和 `german` 属性与输入字段之间建立双向数据绑定。
-
-
-
-
+然后是我们的表单，有两个输入字段，一个用于英语单词，另一个用于对应的德语单词。我们使用`v-model`在传递的 prop 的`english`和`german`属性与输入字段之间建立双向数据绑定。
 
 此时，如果你访问 `Edit word` 视图，应该应该在字段中看到显示的正确单词。当你点击 `Submit` 时，你应该能看到控制台记录了两个输入字段的值。
 
 ![显示 "Eagle" 和 "Adler" 的 Edit Word 屏幕](img/chrome-2.jpg)
 
-最后，我们需要扩展 `onSubmit` 方法，执行除了向控制台打印输入值以外的操作。将其修改为如下：
+最后，我们需要扩展`onSubmit`方法，执行除了向控制台打印输入值以外的操作。将其修改为如下：
+
+
 
 ```javascript
-onSubmit: function() {
+ onSubmit: function() {
   if (this.word.english === '' || this.word.german === '') {
     this.errorsPresent = true;
   } else {
@@ -1125,7 +1115,7 @@ methods: {
 
 ### 添加闪动消息
 
-好了，我们的应用看起来很不错了，但使用 alert 来告知用户发生了某些事情是一种很生兀的体验。让我们改用闪动消息（flash messages）。这些是样式美观、可配置的消息，不会阻塞浏览器中 JavaScript 的执行。
+好了，我们的应用看起来很不错了，但使用 `alert` 来告知用户发生了某些事情是一种很生兀的体验。让我们改用闪动消息（flash messages）。这些是样式美观、可配置的消息，不会阻塞浏览器中 JavaScript 的执行。
 
 我们需要做的第一件事是告诉我们的应用使用它们。为此，回到 `src/helpers/helpers.js`，确保文件顶部内容如下：
 
@@ -1214,6 +1204,7 @@ export default {
 };
 </script>
 ```
+
 （注：此处提供的源代码存在碎片化或冲突，我根据上下文进行了重构。）
 
 ### 删除单词
@@ -1292,9 +1283,6 @@ export default {
 };
 </script>
 ```
-
-
-
 
 在这里，我们正在等待组件挂载，然后从数据库中获取所有的单词。如果单词少于五个，我们将显示一条消息，说明单词不足无法开始测试。否则，我们将加载 `VocabTest` 组件并将单词列表作为 prop 传递给它。
 
@@ -1422,22 +1410,21 @@ export default {
 
 ## 作者：Yomi Eluwande
 
-图表是现代网站和应用程序的重要部分。在本指南中，我将展示如何使用 [Chart.js](https://www.chartjs.org/) 创建精美的图表。Vue.js 是一个渐进式框架，我们将配合 `canvas` 元素使用。如果你是 [Vue.js](https://vuejs.org/) 的新手，我们将使用 [Vue CLI](https://cli.vuejs.org/) 脚手架。
+
+
+图表是现代网站和应用程序的重要部分。在本指南中，我将展示如何使用 [Chart.js](https://www.chartjs.org/) 创建精美的图表。`Vue.js` 是一个渐进式框架，我们将配合 `canvas` 元素使用。如果你是 [Vue.js](https://vuejs.org/) 的新手，我们将使用 [Vue CLI](https://cli.vuejs.org/) 脚手架。
 
 ## 图表
 
-这是一个非常强大的 Vue 图表封装库。我们将使用：
+这是一个非常强大的 `Vue` 图表封装库。我们将使用：
 
 * `vue-charts`
 * `vue-chartjs`
 * `vue-chartkick`
 
-剩下的就是编写测试本身。打开 `src/components/VocabTest.vue` 并添加以下内容：
+剩下的就是编写测试本身。打开`src/components/VocabTest.vue`并添加以下内容：
 
 （此处代码已在上文展示...）
-
-
-
 
 ```
 touch src/components/{LineChart.vue,BarChart.vue,BubbleChart.vue,Reactive.vue}
@@ -1445,9 +1432,9 @@ touch src/components/{LineChart.vue,BarChart.vue,BubbleChart.vue,Reactive.vue}
 
 这些对应于我们将要使用的图表类型。
 
-最后，你可以删除 `src/views` 中的 `About.vue` 文件、`src/components` 中的 `HelloWorld.vue` 文件，以及 `src` 下的 `assets` 文件夹。我们不需要这些。
+最后，你可以删除`src/views`中的`About.vue`文件、`src/components`中的`HelloWorld.vue`文件，以及`src`下的`assets`文件夹。我们不需要这些。
 
-你的 `src` 目录的内容应该如下：
+你的`src`目录的内容应该如下：
 
 ```
 .
@@ -1468,9 +1455,9 @@ touch src/components/{LineChart.vue,BarChart.vue,BubbleChart.vue,Reactive.vue}
 
 ## 添加路由
 
-我们接下来想要做的是创建不同的路由，以便查看上面创建的每个包装器的图表。我们希望有一个 `/charts` 路由来显示使用 `vue-charts` 包装器制作的图表，`/chartjs` 用于显示使用 `vue-chartjs` 包装器制作的图表，最后是 `/chartkick` 用于显示使用 `vue-chartkick` 包装器制作的图表。我们还将保留 `/` 路由来显示 `Home` 视图。
+我们接下来想要做的是创建不同的路由，以便查看上面创建的每个包装器的图表。我们希望有一个`/charts`路由来显示使用`vue-charts`包装器制作的图表，`/chartjs`用于显示使用`vue-chartjs`包装器制作的图表，最后是`/chartkick`用于显示使用`vue-chartkick`包装器制作的图表。我们还将保留`/`路由来显示`Home`视图。
 
-导航到应用的 `src` 文件夹并打开 `router.js` 文件。将该文件的内容替换为内容：
+导航到应用的`src`文件夹并打开`router.js`文件。将该文件的内容替换为内容：
 
 ```javascript
 import Vue from 'vue'
@@ -1508,13 +1495,13 @@ export default new Router({
 })
 ```
 
-在这里我们导入了上面创建的 Vue 组件。[组件](https://vuejs.org/v2/guide/components.html) 是 Vue 最强大的功能之一。它们帮助我们扩展基础 HTML 元素以封装可重用的代码。从高层面上说，组件是 Vue 编译器附加行为的自定义元素。
+在这里我们导入了上面创建的`Vue`组件。[组件](https://vuejs.org/v2/guide/components.html) 是 `Vue` 最强大的功能之一。它们帮助我们扩展基础 `HTML` 元素以封装可重用的代码。从高层面上说，组件是 `Vue` 编译器附加行为的自定义元素。
 
 最后，我们定义了路由和组件，它们将为我们显示不同图表所需的不同页面提供服务。
 
 ## 添加导航
 
-我们可以在 `src/App.vue` 中定义跨组件使用的导航。我们还将添加一些基础样式：
+我们可以在`src/App.vue`中定义跨组件使用的导航。我们还将添加一些基础样式：
 
 ```html
 <template>
@@ -1577,11 +1564,11 @@ h2 {
 </style>
 ```
 
-这里没有什么特别革命性的东西。注意 `<router-view />` 组件的使用，我们将在这里显示我们的视图。
+这里没有什么特别革命性的东西。注意`<router-view />`组件的使用，我们将在这里显示我们的视图。
 
 ## Home 组件
 
-如上所述，`Home` 组件充当默认（`/`）路由。打开它并将内容替换为下面的代码块：
+如上所述，`Home`组件充当默认（`/`）路由。打开它并将内容替换为下面的代码块：
 
 ```html
 <template>
@@ -1617,19 +1604,19 @@ export default {
 
 在开始之前，还有一件事。我们将 [Bulma](https://bulma.io/) 框架添加到应用。
 
-在 `public/index.html` 文件中添加：
+在`public/index.html`文件中添加：
 
 ```html
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
 ```
 
-现在，访问 `http://localhost:8080`，你应该能看到
+现在，访问`http://localhost:8080`，你应该能看到
 
 ## 使用 chartjs 制作图表
 
-我们接下来想要做的是使用 `vue-chartjs` 包装器制作路由来制作折线图、柱状图、气泡图和响应式布局。
+我们接下来想要做的是使用`vue-chartjs`包装器制作路由来制作折线图、柱状图、气泡图和响应式布局。
 
-你的 `src` 目录的内容如下：
+你的`src`目录的内容如下：
 
 ```
 .
@@ -1650,11 +1637,11 @@ export default {
 
 ## 使用 vue-charts 制作图表
 
-使用 `vue-charts` 包装器制作图表可以让我们轻松创建折线图、柱状图、气泡图和响应式布局。
+使用`vue-charts`包装器制作图表可以让我们轻松创建折线图、柱状图、气泡图和响应式布局。
 
 ### 使用 vue-chartjs 制作图表
 
-为了制作折线图，我们将在 `src/components` 文件夹中创建 `LineChart.vue` 组件并添加以下代码：
+为了制作折线图，我们将在`src/components`文件夹中创建`LineChart.vue`组件并添加以下代码：
 
 ```javascript
 <script>
@@ -1714,16 +1701,13 @@ export default {
 </script>
 ```
 
-让我们讨论一下上面的代码的作用。我们首先做的是从 `vue-chartjs` 导入所需的图表类（在本例中为 `Line`）并将其导出。
+让我们讨论一下上面的代码的作用。我们首先做的是从`vue-chartjs`导入所需的图表类（在本例中为`Line`）并将其导出。
 
-`data` 属性包含一个 `datacollection` 对象，包含了构建折线图所需的所有信息。这包括 Chart.js 配置，例如代表 x 轴的 `labels`，代表 y 轴的 `datasets`，以及一个控制图表外观的 `options` 对象。
+`data`属性包含一个`datacollection`对象，包含了构建折线图所需的所有信息。这包括 `Chart.js` 配置，例如代表 x 轴的`labels`，代表 y 轴的`datasets`，以及一个控制图表外观的`options`对象。
 
-`mounted` 函数调用 `renderChart()`，通过传入 `datacollection` 和 `options` 对象来渲染图表。
+`mounted`函数调用`renderChart()`，通过传入`datacollection`和`options`对象来渲染图表。
 
-
-
-
-现在，让我们打开 `views/VueChartJS.vue` 文件并添加以下代码：
+现在，让我们打开`views/VueChartJS.vue`文件并添加以下代码：
 
 ```vue
 <template>
@@ -1770,13 +1754,13 @@ export default {
 </script>
 ```
 
-`VueChartJS.vue` 文件包含了持有 HTML 代码的 `template` 部分、持有 JavaScript 代码的 `script` 部分，以及持有 CSS 代码的 `style` 部分。
+`VueChartJS.vue`文件包含了持有 `HTML` 代码的`template`部分、持有 `JavaScript` 代码的`script`部分，以及持有 `CSS` 代码的`style`部分。
 
-在 `template` 部分中，我们使用了 Bulma 的 `columns` 类来创建一个具有两列和两行的布局。我们还添加了 `line-chart` 组件，该组件将在 `script` 部分中创建。
+在`template`部分中，我们使用了 `Bulma` 的`columns`类来创建一个具有两列和两行的布局。我们还添加了`line-chart`组件，该组件将在`script`部分中创建。
 
-在 `script` 部分中，我们导入了之前创建的 `.vue` 文件，并在 `components` 对象中引用了它们。这意味着我们之后可以像这样在 HTML 代码中使用运行它们：`line-chart`、`bar-chart`、`bubble-chart` 和 `reactive`。
+在`script`部分中，我们导入了之前创建的`.vue`文件，并在`components`对象中引用了它们。这意味着我们之后可以像这样在 `HTML` 代码中使用运行它们：`line-chart`、`bar-chart`、`bubble-chart`和`reactive`。
 
-现在，如果你导航到 `/chartjs`，折线图应该显示在该页面上。
+现在，如果你导航到`/chartjs`，折线图应该显示在该页面上。
 
 ### 实时代码
 
@@ -1786,7 +1770,23 @@ export default {
 
 ### 柱状图
 
-对于下一个图表，我们将创建一个专门用于渲染柱状图的自定义组件。打开 `src/components` 文件夹内的 `BarChart.vue` 组件文件并添加以下代码：
+对于下一个图表，我们将创建一个专门用于渲染柱状图的自定义组件。打开`src/components`文件夹内的`BarChart.vue`组件文件并添加以下代码：
+
+
+
+进入`/path/to/xxx`目录，找到`xxx.json`。
+
+在表达式`cvar = avar + bvar`中，加法运算符（`+`）将`avar`与`bvar`相加，得到它们的和`cvar`。
+
+在`List.of(arg0, arg1, arg2)`中，`List`接口的工厂方法`of()`接受一系列的元素，返回包含它们的只读列表。
+
+之后我们这样调用`cmd`命令：`cmd arg0 arg1 arg2`。
+
+```
+if (condVar > someVal) {console.log("xxx")}
+```
+
+---
 
 ```vue
 <script>
@@ -1845,9 +1845,9 @@ export default {
 </script>
 ```
 
-上面的代码原理与 `LineChart.vue` 文件中的代码类似。唯一的区别是这里导入并扩展了 `Bar` 类，而不是 `Line` 类。
+上面的代码原理与`LineChart.vue`文件中的代码类似。唯一的区别是这里导入并扩展了`Bar`类，而不是`Line`类。
 
-还有一点：在我们看到柱状图之前，我们需要编辑 `VueChartJS.vue` 文件，并将 `<!--Bar Chart example-->` 替换为 `<bar-chart></bar-chart>`。我们只是在 HTML 模板中使用了我们在内部创建的 Bar 组件。
+还有一点：在我们看到柱状图之前，我们需要编辑`VueChartJS.vue`文件，并将`<!--Bar Chart example-->`替换为`<bar-chart></bar-chart>`。我们只是在 HTML 模板中使用了我们在内部创建的`Bar`组件。
 
 ### 实时代码
 
@@ -1859,11 +1859,9 @@ export default {
 
 对于气泡图，我们将创建一个专门用于渲染气泡图的组件。
 
-### 气泡图
+气泡图使用气泡/圆形以三维方法 (x, y, r) 显示数据。`x`用于显示水平轴数据，`y`用于显示垂直数据，而`r`用于显示大小。
 
-气泡图使用气泡/圆形以三维方法 (x, y, r) 显示数据。`x` 用于显示水平轴数据，`y` 用于显示垂直数据，而 `r` 用于显示大小。
-
-打开 `src/components` 文件夹内的 `BubbleChart.vue` 组件并输入以下代码：
+打开`src/components`文件夹内的`BubbleChart.vue`组件并输入以下代码：
 
 ```vue
 <script>
@@ -1922,7 +1920,7 @@ export default {
 </script>
 ```
 
-在我们看到气泡图之前，我们还需要做一件事——和对其他图表的操作一样：编辑 `VueChartJS.vue` 文件并将 `<!--Bubble Chart example-->` 替换为 `<bubble-chart></bubble-chart>`。
+在我们看到气泡图之前，我们还需要做一件事——和对其他图表的操作一样：编辑`VueChartJS.vue`文件并将`<!--Bubble Chart example-->`替换为`<bubble-chart></bubble-chart>`。
 
 ### 实时代码
 
@@ -1932,16 +1930,13 @@ export default {
 
 ### 展示响应式的柱状图
 
-我们将用 `vue-chartjs` 演示的最后一个示例是如何使用它来创建一个当数据集发生变化时自动更新的图表。需要注意的是，Chart.js 通常不提供此功能，但 `vue-chartjs` 提供了——借助这两个混入（mixins）之一：
+我们将用`vue-chartjs`演示的最后一个示例是如何使用它来创建一个当数据集发生变化时自动更新的图表。需要注意的是，Chart.js 通常不提供此功能，但`vue-chartjs`提供了——借助这两个混入（mixins）之一：
 
 *   `reactiveProp`
 
 *   `reactiveData`
 
-打开 `src/components` 文件夹内的 `Reactive.vue` 组件文件并输入以下代码：
-
-
-
+打开`src/components`文件夹内的`Reactive.vue`组件文件并输入以下代码：
 
 ```javascript
 <script>
@@ -1986,11 +1981,11 @@ export default {
 </script>
 ```
 
-我们在上面的代码中做的第一件事是从 `vue-chartjs` 封装中导入 `Bar` 和 `mixins` 类并扩展 `Bar`。我们还从 `mixins` 模块提取了 `reactiveProp` mixin 以用于响应式。
+我们在上面的代码中做的第一件事是从`vue-chartjs`封装中导入`Bar`和`mixins`类并扩展`Bar`。我们还从`mixins`模块提取了`reactiveProp` mixin 以用于响应式。
 
-`reactiveProp` mixin 扩展了你的图表组件的逻辑，自动创建一个名为 `chartData` 的 prop，并为此 prop 添加了一个 Vue 监听器（watcher）。这次我们没有创建 `dataset` 对象，因为所有需要的数据将在 `chartData` prop 中。
+`reactiveProp` mixin 扩展了你的图表组件的逻辑，自动创建一个名为`chartData`的 prop，并为此 prop 添加了一个 Vue 监听器（watcher）。这次我们没有创建`dataset`对象，因为所有需要的数据将在`chartData` prop 中。
 
-为了让其生效，我们需要进一步编辑 `VueChartJS.vue`。打开 `VueChartJS.vue`，在 `components` 属性之后添加以下代码：
+为了让其生效，我们需要进一步编辑`VueChartJS.vue`。打开`VueChartJS.vue`，在`components`属性之后添加以下代码：
 
 ```javascript
 data () {
@@ -2025,24 +2020,24 @@ methods: {
 }
 ```
 
-让我们过一遍上面的代码。在 `data` 对象中，我们返回 `datacollection`，它被设置为 `null`；在 `created` 方法中，每当组件实例被创建时，我们都会调用 `fillData()`。`fillData` 函数将在 `methods` 对象中创建。
+让我们过一遍上面的代码。在`data`对象中，我们返回`datacollection`，它被设置为`null`；在`created`方法中，每当组件实例被创建时，我们都会调用`fillData()`。`fillData`函数将在`methods`对象中创建。
 
-在 `methods` 对象中，我们创建了一个名为 `fillData` 的函数。该函数创建了一个 `datacollection` 对象，其中包含一个 `label` 数组（x 轴数据）和一个 `datasets` 数组，后者持有 y 轴所需的 `data` 数组。
+在`methods`对象中，我们创建了一个名为`fillData`的函数。该函数创建了一个`datacollection`对象，其中包含一个`label`数组（x 轴数据）和一个`datasets`数组，后者持有 y 轴所需的`data`数组。
 
 ### getRandomInt
 
-`data` 数组的内容是一个 `getRandomInt` 函数，它为我们生成随机数。
+`data`数组的内容是一个`getRandomInt`函数，它为我们生成随机数。
 
-最后，为了显示图表并检查响应式是否工作，将 `<!--Reactivity Line Chart example-->` 替换为内容：
+最后，为了显示图表并检查响应式是否工作，将`<!--Reactivity Line Chart example-->`替换为内容：
 
 ```html
 <reactive :chart-data="datacollection"></reactive>
 <button class="button is-primary" @click="fillData()">Randomize</button>
 ```
 
-我们使用了创建的 `reactive` 组件，并将 `datacollection` 的内容传递给 `chart-data` prop 以显示图表。我们 true true 按钮，每次点击时都会调用 `fillData()` 方法。
+我们使用了创建的`reactive`组件，并将`datacollection`的内容传递给`chart-data` prop 以显示图表。我们添加了一个按钮，每次点击时都会调用`fillData()`方法。
 
-导航到应用中的 `/chartjs` 路由查看新图表，点击 `Randomize` 按钮查看图表如何根据新数据实时自动重新渲染。
+导航到应用中的`/chartjs`路由查看新图表，点击`Randomize`按钮查看图表如何根据新数据实时自动重新渲染。
 
 ### Live Code
 
@@ -2052,7 +2047,7 @@ methods: {
 
 ## 使用 vue-charts 制作图表
 
-`vue-charts` 构建图表的方法与 `vue-chartjs` 非常不同。它不需要你创建单独的组件来处理数据和渲染图表。图表所需的数据可以这样在 Vue 实例中实例化：
+`vue-charts`构建图表的方法与`vue-chartjs`非常不同。它不需要你创建单独的组件来处理数据和渲染图表。图表所需的数据可以这样在 Vue 实例中实例化：
 
 ```javascript
 data () {
@@ -2065,13 +2060,9 @@ data () {
 
 我们可以轻松地显示图表。
 
+`addData`方法将数据表单输入和标签表单输入（我们很快就会添加）的当前值推送到当前数据集中。现在让我们也添加组件以及用于添加新数据和标签的表单。
 
-
-
-
-`addData` 方法将数据表单输入和标签表单输入（我们很快就会添加）的当前值推送到当前数据集中。现在让我们也添加组件以及用于添加新数据和标签的表单。
-
-将以下代码段替换掉注释 `<!--Data Binding Line Chart Example-->`：
+将以下代码段替换掉注释`<!--Data Binding Line Chart Example-->`：
 
 ```
 <form @submit.prevent="addData">
@@ -2092,9 +2083,11 @@ data () {
 
 ## 使用 vue-chartkick 图表
 
-[`vue-chartkick](https://github.com/ankane/vue-chartkick) 是一个 Vue 封装器，允许你通过一行代码创建精美的图表。我们将通过四个示例演示此库的使用。我们将创建一个折线图、柱状图、散点图，并使用下载功能（可下载图表）。
+[`vue-chartkick`](https://github.com/ankane/vue-chartkick) 是一个 Vue 封装器，允许你通过一行代码创建精美的图表。我们将通过四个示例演示此库的使用。我们将创建一个折线图、柱状图、散点图，并使用下载功能（可下载图表）。
 
-在处理图表数据集的数据方面，`vue-chartkick` 为我们提供了两个选项。我们可以像 `<bar-chart :data="['Work', 1322], ['Play', 1492]]"></bar-chart>` 这样的操作，内联添加数据；或者使用 `<line-chart :data="chartData"></line-chart>`，并在 Vue 数据对象中声明 `chartData` 数组：
+
+
+在处理图表数据集的数据方面，`vue-chartkick` 为我们提供了两个选项。我们可以像`<bar-chart :data="['Work', 1322], ['Play', 1492]]"></bar-chart>`这样的操作，内联添加数据；或者使用`<line-chart :data="chartData"></line-chart>`，并在 Vue 数据对象中声明`chartData`数组：
 
 ```
 data () {
@@ -2104,7 +2097,7 @@ data () {
 }
 ```
 
-让我们开始使用 vue-chartkick。在继续之前，打开 `src` 文件夹内的 `main.js` 文件并添加以下代码：
+让我们开始使用`vue-chartkick`。在继续之前，打开`src`文件夹内的`main.js`文件并添加以下代码：
 
 ```
 import Chartkick from 'chartkick'
@@ -2113,9 +2106,9 @@ import VueChartkick from 'vue-chartkick'
 Vue.use(VueChartkick, { Chartkick })
 ```
 
-我们从 `node_modules` 导入 `Chartkick` 库和 `vue-chartkick` 封装器，并通过 `Vue.use(VueChartkick, { Chartkick })` 将其全局注册。
+我们从`node_modules`导入`Chartkick`库和`vue-chartkick`封装器，并通过`Vue.use(VueChartkick, { Chartkick })`将其全局注册。
 
-要开始使用 vue-chartkick 创建图表，打开我们之前创建的 `VueChartKick.vue` 文件并添加以下代码：
+要开始使用`vue-chartkick`创建图表，打开我们之前创建的`VueChartKick.vue`文件并添加以下代码：
 
 ```
 <template>
@@ -2158,38 +2151,35 @@ Vue.use(VueChartkick, { Chartkick })
 
 在上面的代码块中，我们再次为要创建的不同类型的图表创建了占位符，我们要做的只是开始将它们填充进去。
 
-我们在 `script` 部分的 `data` 对象中创建了 `chartData` 数组，包含了用于各种图表的数据。现在开始创建图表吧。
+我们在`script`部分的`data`对象中创建了`chartData`数组，包含了用于各种图表的数据。现在开始创建图表吧。
 
 ### 折线图
 
-使用 `vue-chartkick` 创建折线图非常简单且直接。你所做的就是引入 `vue-chartkick` 的 `line-chart` 组件，并确定你想使用的数据集——类似于这样：`<line-chart :data="chartData"></line-chart>`。在这种情况下，`data` 属性被设置为 Vue `data` 对象中的 `chartData` 数组。
+使用`vue-chartkick`创建折线图非常简单且直接。你所做的就是引入`vue-chartkick`的`line-chart`组件，并确定你想使用的数据集——类似于这样：`<line-chart :data="chartData"></line-chart>`。在这种情况下，`data`属性被设置为 Vue`data`对象中的`chartData`数组。
 
-因此，将 `VueChartKick.vue` 文件中的注释 `<!--Line Chart example-->` 替换为 `<line-chart :data="chartData"></line-chart>`，折线图现在就能正常显示了。
+因此，将`VueChartKick.vue`文件中的注释`<!--Line Chart example-->`替换为`<line-chart :data="chartData"></line-chart>`，折线图现在就能正常显示了。
 
 ### 柱状图
 
-我们可以用与上面创建折线图相同的方法创建柱状图。但情况下，我们将尝试不同的方法。我们不再使用 `chartData` 数组作为数据集，而是在属性内部添加数据集，例如：`<bar-chart :data="['Work', 1322], ['Play', 1492]]"></bar-chart>`。
+我们可以用与上面创建折线图相同的方法创建柱状图。但情况下，我们将尝试不同的方法。我们不再使用`chartData`数组作为数据集，而是在属性内部添加数据集，例如：`<bar-chart :data="['Work', 1322], ['Play', 1492]]"></bar-chart>`。
 
-将 `VueChartKick.vue` 文件中的注释 `<!--Bar Chart example-->` 替换为 `<bar-chart :data="['Work', 1322], ['Play', 1492]]"></bar-chart>`，你的柱状图现在就能正常显示了。
+将`VueChartKick.vue`文件中的注释`<!--Bar Chart example-->`替换为`<bar-chart :data="['Work', 1322], ['Play', 1492]]"></bar-chart>`，你的柱状图现在就能正常显示了。
 
 ### 散点图
 
-散点图也与上面的折线图和柱状图一样。将 `VueChartKick.vue` 文件中的注释 `<!--Scatter Chart example-->` 替换为 `<scatter-chart :data="[[174.0, 80.0], [176.5, 82.3], [180.3, 73.6]]"></scatter-chart>`，你的散点图现在就能正常显示了。
+散点图也与上面的折线图和柱状图一样。将`VueChartKick.vue`文件中的注释`<!--Scatter Chart example-->`替换为`<scatter-chart :data="[[174.0, 80.0], [176.5, 82.3], [180.3, 73.6]]"></scatter-chart>`，你的散点图现在就能正常显示了。
 
 ### 下载图表
 
-`vue-chartkick` 有一个 `vue-chartjs` 和 `vue-charts` 所缺乏的酷功能：创建可下载图表。一旦图表设置为可下载，用户就可以将图保存为图像。它是如何工作的？让我们通过折线图来检查一下：
+`vue-chartkick`有一个`vue-chartjs`和`vue-charts`所缺乏的酷功能：创建可下载图表。一旦图表设置为可下载，用户就可以将图保存为图像。它是如何工作的？让我们通过折线图来检查一下：
 
 ```
 <line-chart :data="chartData" :download="true"></line-chart>
 ```
 
-将 `VueChartKick.vue` 文件中的注释 `<!--Downloadable line chart-->` 替换为 `<line-chart :data="chartData" :download="true"></line-chart>` 以查看下载按钮。
+将`VueChartKick.vue`文件中的注释`<!--Downloadable line chart-->`替换为`<line-chart :data="chartData" :download="true"></line-chart>`以查看下载按钮。
 
-
-
-
-本教程的源代码可以在 [GitHub 上获取](https://github.com/sitepoint-editors/vue-charts)，如果你想查看此教程的在线演示，也可以点击[此处](https://vue-charts.herokuapp.com/)查看。
+本教程的源代码可以在[GitHub 上获取](https://github.com/sitepoint-editors/vue-charts)，如果你想查看此教程的在线演示，也可以点击[此处](https://vue-charts.herokuapp.com/)查看。
 
 # 第 3 章：使用 Pusher 和 Vue.js 构建一个实时聊天应用
 
@@ -2197,17 +2187,17 @@ Vue.use(VueChartkick, { Chartkick })
 
 实时通信应用如今变得越来越流行，因为它们提供了更流畅、更自然的用户体验。
 
-在本教程中，我们将使用由 [Pusher](https://pusher.com) 提供的 [ChatKit](https://pusher.com/chatkit) 构建的 Vue.js 实时聊天应用。ChatKit 服务将为我们提供在任何设备上构建聊天应用所需的完整后端，我们只需要专注于构建通过 [ChatKit 客户端包](https://www.npmjs.com/package/@pusher/chatkit-client) 连接到 ChatKit 服务的前端用户界面。
+在本教程中，我们将使用由[Pusher](https://pusher.com)提供的[ChatKit](https://pusher.com/chatkit)构建的 Vue.js 实时聊天应用。ChatKit 服务将为我们提供在任何设备上构建聊天应用所需的完整后端，我们只需要专注于构建通过[ChatKit 客户端包](https://www.npmjs.com/package/@pusher/chatkit-client)连接到 ChatKit 服务的前端用户界面。
 
 ## 前提条件
 
 这是一个中高级别水平教程。你需要熟悉以下概念才能进行学习：
 
-*   Vue.js 基础
-*   Vuex 基础
-*   使用 CSS 框架
+- Vue.js 基础
+- Vuex 基础
+- 使用 CSS 框架
 
-你还需要在电脑上安装 Node。你可以从[官网](https://nodejs.org/) 下载二进制文件，或者使用[版本管理器](https://www.sitepoint.com/quick-tip-multiple-versions-node-nvm/)。这可能是最简单的方法，因为它允许你在同一台机器上管理多个版本的 Node。
+你还需要在电脑上安装 Node。你可以从[官网](https://nodejs.org/)下载二进制文件，或者使用[版本管理器](https://www.sitepoint.com/quick-tip-multiple-versions-node-nvm/)。这可能是最简单的方法，因为它允许你在同一台机器上管理多个版本的 Node。
 
 最后，你需要运行以下命令全局安装 Vue CLI：
 
@@ -2221,50 +2211,50 @@ npm install -g @vue/cli
 
 我们将构建一个类似于 Slack 或 Discord 的基础聊天应用。该应用将具备以下功能：
 
-*   拥有多个频道（channels）和房间（rooms）
-*   列出房间成员并检测在线状态
-*   检测其他用户正在输入
+- 拥有多个频道（channels）和房间（rooms）
+- 列出房间成员并检测在线状态
+- 检测其他用户正在输入
 
 正如前面提到的，我们只构建前端。ChatKit 服务有一个后端接口，允许我们管理用户、权限和房间。
 
-你可以在 [GitHub](https://github.com/sitepoint-editors/vue-chatkit) 上找到该项目的完整代码。
+你可以在[GitHub](https://github.com/sitepoint-editors/vue-chatkit)上找到该项目的完整代码。
 
 ## 设置 ChatKit 实例
 
 让我们创建一个 ChatKit 实例，如果你熟悉 Discord，这类似于服务器实例。
 
-前往 Pusher 网站上的 [ChatKit](https://pusher.com/chatkit) 页面并点击 `Sign Up` 按钮。系统会提示电子邮件和密码，以及使用 GitHub 或 Google 登录的选项。
+前往 Pusher 网站上的[ChatKit](https://pusher.com/chatkit)页面并点击`Sign Up`按钮。系统会提示电子邮件和密码，以及使用 GitHub 或 Google 登录的选项。
 
-选择最适合你的选项，然后在下一个屏幕填写一些详情，如 `Name`（名称）、`Account type`（账户类型）、`User role`（用户角色）等。
+选择最适合你的选项，然后在下一个屏幕填写一些详情，如`Name`（名称）、`Account type`（账户类型）、`User role`（用户角色）等。
 
-点击 `Complete Onboarding` 将进入 Pusher 主仪表板。在这里，你应该点击 ChatKit 产品。
+点击`Complete Onboarding`将进入 Pusher 主仪表板。在这里，你应该点击 ChatKit 产品。
 
 ![The ChatKit dashboard](img/chatkit-dashboard.png)
 
-点击 Create 按钮创建一个新的 ChatKit 实例。我将我的命名为 `VueChatTut`。
+点击 Create 按钮创建一个新的 ChatKit 实例。我将我的命名为`VueChatTut`。
 
 ![Creating a new ChatKit instance](img/create-chatkit-instance.png)
 
-本教程将使用免费计划。它支持多达 1,000 个独立用户，对于我们的需求来说绰绰有余。进入 `Console` 标签页。你需要创建一个用户来开始。点击 `Create User` 按钮。
+本教程将使用免费计划。它支持多达 1,000 个独立用户，对于我们的需求来说绰绰有余。进入`Console`标签页。你需要创建一个用户来开始。点击`Create User`按钮。
 
 ![Creating a ChatKit user](img/chatkit-create-user.png)
 
 我将用户命名为“john”（`User Identifier`）和“John Wick”（`Display Name`），但你可以随心所欲命名。部分很简单：创建两个或多个用户。例如：
 
-*   salt, Evelyn Salt
-*   hunt, Ethan Hunt
+- salt, Evelyn Salt
+- hunt, Ethan Hunt
 
 创建三个或多个房间并分配用户。例如：
 
-*   General (john, salt, hunt)
-*   Weapons (john, salt)
-*   Combat (john, hunt)
+- General (john, salt, hunt)
+- Weapons (john, salt)
+- Combat (john, hunt)
 
-这里是你的 `Console` 界面应该的样子。
+这里是你的`Console`界面应该的样子。
 
 ![A snapshot of the console](img/create-users-and-rooms.png)
 
-接下来，你可以进入 `Rooms` 标签页，并为每个房间使用选定的用户创建消息。这是为了测试。然后进入 `Credentials` 标签页并记录 `Instance Locator`（实例定位符）。我们需要激活用于生成 HTTP 端点的 `Test Token Provider`，并将其记录下来。
+接下来，你可以进入`Rooms`标签页，并为每个房间使用选定的用户创建消息。这是为了测试。然后进入`Credentials`标签页并记录`Instance Locator`（实例定位符）。我们需要激活用于生成 HTTP 端点的`Test Token Provider`，并将其记录下来。
 
 ![Test token](img/test-token.png)
 
@@ -2278,7 +2268,7 @@ npm install -g @vue/cli
 vue create vue-chatkit
 ```
 
-选择 `Manually select features` 并按如下所示回答问题。
+选择`Manually select features`并按如下所示回答问题。
 
 ![Questions to be answered](img/create-project.png)
 
@@ -2287,9 +2277,6 @@ vue create vue-chatkit
 ![Files and folders to create](img/project-structure.png)
 
 确保按照演示创建所有文件夹和文件。删除上述插图中未出现的任何不需要的文件。
-
-
-
 
 ```javascript
 import Vue from 'vue'
@@ -2317,7 +2304,7 @@ export default new Router({
 })
 ```
 
-更新 `src/store/index.js`:
+更新`src/store/index.js`：
 
 ```javascript
 import Vue from 'vue'
@@ -2346,13 +2333,13 @@ export default new Vuex.Store({
 })
 ```
 
-`vuex-persist` 包确保了我们的 Vuex 状态在页面重载或刷新之间被保存。
+`vuex-persist`包确保了我们的 Vuex 状态在页面重载或刷新之间被保存。
 
 我们的项目现在应该能够无错误地编译了。不过，先不要运行它，因为我们需要构建用户界面。
 
 ## 构建 UI 界面
 
-让我们先按照以下方式更新 `src/App.vue`：
+让我们先按照以下方式更新`src/App.vue`：
 
 ```html
 <template>
@@ -2362,7 +2349,7 @@ export default new Vuex.Store({
 </template>
 ```
 
-接下来，我们需要定义 Vuex store 状态，因为我们的 UI 组件需要这些状态才能正常工作。我们将通过进入 `src/store/index.js` 中的 Vuex store 来完成。只需如下所示更新 `state` 和 `getters` 部分即可：
+接下来，我们需要定义 Vuex store 状态，因为我们的 UI 组件需要这些状态才能正常工作。我们将通过进入`src/store/index.js`中的 Vuex store 来完成。只需如下所示更新`state`和`getters`部分即可：
 
 ```javascript
 state: {
@@ -2382,9 +2369,9 @@ getters: {
 },
 ```
 
-这些都是我们聊天应用程序所需的所有状态变量。`loading` 状态用于 UI 确定是否应该运行 CSS 加载器。`error` 状态用于存储刚刚发生的错误信息。我们将在遇到其他状态变量时讨论它们。
+这些都是我们聊天应用程序所需的所有状态变量。`loading`状态用于 UI 确定是否应该运行 CSS 加载器。`error`状态用于存储刚刚发生的错误信息。我们将在遇到其他状态变量时讨论它们。
 
-接下来打开 `src/view/Login.vue` 并如下所示更新：
+接下来打开`src/view/Login.vue`并如下所示更新：
 
 ```html
 <template>
@@ -2420,7 +2407,9 @@ export default {
 </script>
 ```
 
-接下来，为 `src/components/LoginForm.vue` 插入如下代码：
+
+
+接下来，为`src/components/LoginForm.vue`插入如下代码：
 
 ```html
 <template>
@@ -2480,7 +2469,7 @@ export default {
 </script>
 ```
 
-如前所述，这是教程。`vuex-persist` 包确保我们的 Vuex 状态在页面重载或刷新之间被保存。`ChatDashboard` 将作为以下组件的布局父：
+如前所述，这是教程。`vuex-persist`包确保我们的 Vuex 状态在页面重载或刷新之间被保存。`ChatDashboard`将作为以下组件的布局父：
 
 * `ChatNavBar`：基础导航栏
 * `RoomList`：列出登录用户可以访问的房间，也是房间选择器
@@ -2488,7 +2477,7 @@ export default {
 * `MessageList`：显示选中房间的消息
 * `MessageForm`：向选中房间发送消息的表单
 
-进入 `src/view/ChatDashboard.vue` 并插入代码：
+进入`src/view/ChatDashboard.vue`并插入代码：
 
 ```html
 <template>
@@ -2545,7 +2534,7 @@ export default {
 
 让我们在每个组件中放入一些模板代码以确保内容都能显示。
 
-为 `src/components/ChatNavBar.vue` 插入模板代码：
+为`src/components/ChatNavBar.vue`插入模板代码：
 
 ```html
 <template>
@@ -2580,11 +2569,7 @@ export default {
 </style>
 ```
 
-为 `src/components/RoomList.vue` 插入模板代码：
-
-
-
-
+为`src/components/RoomList.vue`插入模板代码：
 
 ```html
 <template>
@@ -2618,7 +2603,7 @@ export default {
 </script>
 ```
 
-如下所示为 `src/components/UserList.vue` 插入模板代码：
+如下所示为`src/components/UserList.vue`插入模板代码：
 
 ```html
 <template>
@@ -2657,7 +2642,7 @@ export default {
 </script>
 ```
 
-如下所示为 `src/components/MessageList.vue` 插入模板代码：
+如下所示为`src/components/MessageList.vue`插入模板代码：
 
 ```html
 <template>
@@ -2723,7 +2708,7 @@ export default {
 </style>
 ```
 
-如下所示为 `src/components/MessageForm.vue` 插入模板代码：
+如下所示为`src/components/MessageForm.vue`插入模板代码：
 
 ```html
 <template>
@@ -2776,7 +2761,6 @@ export default {
 
 
 
-
 ```javascript
 export default {
   setError(state, error) {
@@ -2826,7 +2810,7 @@ export default {
 }
 ```
 
-mutations 的代码非常简单——只是一堆 setter（set 方法）。你很快就能在后面的章节中理解每个 mutation 函数的作用。接下来，请使用以下代码更新 `src/store/actions.js`：
+`mutations` 的代码非常简单——只是一堆 setter（`set` 方法）。你很快就能在后面的章节中理解每个 `mutation` 函数的作用。接下来，请使用以下代码更新`src/store/actions.js`：
 
 ```javascript
 import chatkit from '../chatkit';
@@ -2861,7 +2845,7 @@ export default {
 }
 ```
 
-接下来，按照所示更新 `src/components/LoginForm.vue`：
+接下来，按照所示更新`src/components/LoginForm.vue`：
 
 ```javascript
 import { mapState, mapGetters, mapActions } from 'vuex'
@@ -2883,7 +2867,7 @@ export default {
 }
 ```
 
-你需要重启 Vue.js 服务器以加载 `env.local` 数据。如果你看到任何关于未使用变量的错误，请暂时忽略它们。完成这些后，导航到 [`localhost:8080/`](http://localhost:8080/) 并测试登录功能：
+你需要重启 Vue.js 服务器以加载`env.local`数据。如果你看到任何关于未使用变量的错误，请暂时忽略它们。完成这些后，导航到 [`localhost:8080/`](http://localhost:8080/) 并测试登录功能：
 
 ![登录错误](img/login-error.png) 
 
@@ -2891,7 +2875,7 @@ export default {
 
 ![登录成功](img/login-successful.png) 
 
-在这张截图中，我使用了正确的用户名。我还打开了浏览器控制台标签页，以确保 `user` 对象已填充。此外，如果你已经在 Chrome 中安装了 [Vuejs Dev Tools](https://chrome.google.com/webstore/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd) 或 [Firefox](https://addons.mozilla.org/en-US/firefox/addon/vue-js-devtools/)，你应该可以看到更详细的信息。
+在这张截图中，我使用了正确的用户名。我还打开了浏览器控制台标签页，以确保`user`对象已填充。此外，如果你已经在 Chrome 中安装了 [Vuejs Dev Tools](https://chrome.google.com/webstore/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd) 或 [Firefox](https://addons.mozilla.org/en-US/firefox/addon/vue-js-devtools/)，你应该可以看到更详细的信息。
 
 ![更详细的登录信息](img/login-vuex-plugin.png) 
 
@@ -2899,9 +2883,9 @@ export default {
 
 ## 订阅房间
 
-现在我们已经成功验证了登录功能可以工作，我们需要将用户重定向到 `ChatDashboard` 视图。代码 `this.$router.push('chat');` 为我们完成了这一操作。然而，我们的 action `login` 需要返回一个布尔值，以确定何时可以导航到 `ChatDashboard` 视图。我们还需要从 ChatKit 服务获取实际数据来填充 `RoomList` 和 `UserList` 组件。
+现在我们已经成功验证了登录功能可以工作，我们需要将用户重定向到`ChatDashboard`视图。代码`this.$router.push('chat');`为我们完成了这一操作。然而，我们的 action `login`需要返回一个布尔值，以确定何时可以导航到`ChatDashboard`视图。我们还需要从 ChatKit 服务获取实际数据来填充`RoomList`和`UserList`组件。
 
-更新 `src/chatkit.js` 如下：
+更新`src/chatkit.js`如下：
 
 ```javascript
 //...
@@ -2950,9 +2934,6 @@ export default {
 }
 ```
 
-
-
-
 ```javascript
 import { mapState, mapActions } from 'vuex'
 //...
@@ -2969,17 +2950,17 @@ export default {
 }
 ```
 
-如果你还记得，我们已经在 `-b-list-group-item-` 元素中定义了 ``@click="onChange(room)"``。让我们通过点击 `RoomList` 组件中的项目来测试这个新功能。
+如果你还记得，我们已经在`-b-list-group-item-`元素中定义了`@click="onChange(room)"`。让我们通过点击`RoomList`组件中的项目来测试这个新功能。
 
 ![切换聊天室](img/change-room.png) 
 
-每当你点击房间时，你的 UI 都应该会更新。`MessageList` 和 `UserList` 组件应该显示所选房间的正确信息。在下一节中，我们将一次性实现多个功能。
+每当你点击房间时，你的 UI 都应该会更新。`MessageList`和`UserList`组件应该显示所选房间的正确信息。在下一节中，我们将一次性实现多个功能。
 
 ## 页面刷新后重新连接用户
 
-你可能已经注意到，当你对 `store/index.js` 进行一些更改或刷新页面时，你会收到以下错误：`Cannot read property 'subscribeToRoom' of null`。这种发生是因为你的应用程序状态被重置了。幸运的是，`vuex-persist` 包通过将状态保存在浏览器的本地存储中，在页面重新加载之间维护了我们的 Vuex 状态。
+你可能已经注意到，当你对`store/index.js`进行一些更改或刷新页面时，你会收到以下错误：`Cannot read property 'subscribeToRoom' of null`。这种发生是因为你的应用程序状态被重置了。幸运的是，`vuex-persist`包通过将状态保存在浏览器的本地存储中，在页面重新加载之间维护了我们的 Vuex 状态。
 
-遗憾的是，连接我们应用和 ChatKit 服务器的引用被重置为 null。要修复这个问题，我们需要执行重连接操作。我们还需要一种方法告诉应用程序刚刚发生了页面刷新，我们的程序需要重新连接以继续正常运行。我们将在 `src/components/ChatNavbar.vue` 中实现这段代码。按如下更新脚本部分：
+遗憾的是，连接我们应用和 ChatKit 服务器的引用被重置为 `null`。要修复这个问题，我们需要执行重连接操作。我们还需要一种方法告诉应用程序刚刚发生了页面刷新，我们的程序需要重新连接以继续正常运行。我们将在`src/components/ChatNavbar.vue`中实现这段代码。按如下更新脚本部分：
 
 ```javascript
 <script>
@@ -3023,17 +3004,17 @@ export default {
 
 让我来分解一下事件序列，以便你理解重新连接到 ChatKit 服务的逻辑：
 
-1. `unload`。当发生页面刷新时，此方法会被调用。它首先检查 `user.username` 状态是否已设置。如果是，意味着用户尚未注销。状态 `reconnect` 将被设置为 true。
+1. `unload`。当发生页面刷新时，此方法会被调用。它首先检查`user.username`状态是否已设置。如果是，意味着用户尚未注销。状态`reconnect`将被设置为 `true`。
 
-2. `mounted`。每当 `ChatNavbar.vue` 完成渲染时，此方法就会被调用。它首先为在页面卸载之前调用的事件监听器分配了一个处理程序。它还会检查 `state.reconnect` 是否已设置为 true。如果是，则执行登录程序，从而将我们的聊天应用程序重新连接回 ChatKit 服务。
+2. `mounted`。每当`ChatNavbar.vue`完成渲染时，此方法就会被调用。它首先为在页面卸载之前调用的事件监听器分配了一个处理程序。它还会检查`state.reconnect`是否已设置为 `true`。如果是，则执行登录程序，从而将我们的聊天应用程序重新连接回 ChatKit 服务。
 
-我还添加了 `Logout` 功能，我们稍后会介绍。
+我还添加了`Logout`功能，我们稍后会介绍。
 
 在做出这些更改后，尝试刷新页面。你会看到页面自动更新，因为它在后台执行重连接过程。当你切换房间时，它应该运行得完美无。
 
 ## 发送消息、检测用户输入和注销
 
-让我们通过在 `src/chatkit.js` 中添加以下代码开始实现这些功能：
+让我们通过在`src/chatkit.js`中添加以下代码开始实现这些功能：
 
 ```javascript
 //...
@@ -3061,9 +3042,9 @@ export default {
 }
 ```
 
-虽然函数 `sendMessage` 和 `disconnectUser` 将封装在 ChatKit 的模块导出中，但 `isTyping` 函数将单独导出。这是为了允许 `MessageForm` 直接发送输入事件，而不必涉及 Vuex  store。
+虽然函数`sendMessage`和`disconnectUser`将封装在 ChatKit 的模块导出中，但`isTyping`函数将单独导出。这是为了允许`MessageForm`直接发送输入事件，而不必涉及 Vuex store。
 
-对于 `sendMessage` 和 `disconnectUser`，我们需要更新 store 以适应错误处理和加载状态通知等情况。进入 `src/store/actions.js` 并在 `changeRoom` 函数之后插入以下代码：
+对于`sendMessage`和`disconnectUser`，我们需要更新 store 以适应错误处理和加载状态通知等情况。进入`src/store/actions.js`并在`changeRoom`函数之后插入以下代码：
 
 ```javascript
 async sendMessage({ commit }, message) {
@@ -3085,9 +3066,9 @@ async logout({ commit }) {
 }
 ```
 
-对于 `logout` 函数，我们调用 `commit('reset')` 将我们的 store 重置为原始状态。这是一个基础的安全功能，用于从浏览器缓存中移除用户信息和消息。
+对于`logout`函数，我们调用`commit('reset')`将我们的 store 重置为原始状态。这是一个基础的安全功能，用于从浏览器缓存中移除用户信息和消息。
 
-让我们从更新 `MessageForm.vue` 中的表单输入开始，通过添加以下指令发送输入事件：
+让我们从更新`MessageForm.vue`中的表单输入开始，通过添加以下指令发送输入事件：
 
 ```html
 <b-form-input id="message-input"
@@ -3099,7 +3080,7 @@ async logout({ commit }) {
               required></b-form-input>
 ```
 
-更新 `MessageForm.vue` 的脚本部分以处理发送和发射事件如下：
+更新`MessageForm.vue`的脚本部分以处理发送和发射事件如下：
 
 ```javascript
 <script>
@@ -3142,10 +3123,12 @@ export default {
 </script>
 ```
 
-在 `MessageList.vue` 中：
+
+
+在`MessageList.vue`中：
 
 ```javascript
-import { mapState } from 'vuex'
+ import { mapState } from 'vuex'
 
 export default {
   name: 'message-list',
@@ -3158,7 +3141,7 @@ export default {
 }
 ```
 
-发送消息功能现在应该可以工作了。为了显示另一个用户正在输入的通知，我们需要在 `MessageList.vue` 的模板部分 `message-group` div 之后添加元素：
+发送消息功能现在应该可以工作了。为了显示另一个用户正在输入的通知，我们需要在`MessageList.vue`的模板部分`message-group` div之后添加元素：
 
 ```html
 <div class="user-typing">
@@ -3168,9 +3151,9 @@ export default {
 
 测试此功能，只需使用另一个浏览器登录并开始输入。你会在另一个用户的聊天窗口上看到一个通知。
 
-![另一个用户聊天窗口中的通知](img/send-message-user-type.png) 
+![另一个用户聊天窗口中的通知](img/send-message-user-type.png)
 
-让我们通过实现最后一个功能 `logout` 来完成本教程。我们的 Vuex store 已经有了处理注销过程的代码。我们只需要更新 `src/components/ChatNavbar.vue`。只需将 `Logout` 按钮与之前指定的函数处理程序 `onLogout` 链接即可：
+让我们通过实现最后一个功能`logout`来完成本教程。我们的 Vuex store 已经有了处理注销过程的代码。我们只需要更新`src/components/ChatNavbar.vue`。只需将`Logout`按钮与之前指定的函数处理程序`onLogout`链接即可：
 
 ```html
 <b-nav-item href="#" @click="onLogout" active>Logout</b-nav-item>
@@ -3178,14 +3161,11 @@ export default {
 
 就是这样。你现在可以注销并作为另一个用户重新登录。
 
-![切换成员账户](img/logout-login.png) 
+![切换成员账户](img/logout-login.png)
 
 ## 总结
 
 我们现在到了本教程的结束。ChatKit API 使使我们能够在短时间内快速构建出一个聊天应用程序。如果我们从零开始构建类似的应用程序，我们需要几个周的时间，因为我们还需要完善后端。这个解决方案的奇妙之处在于，我们不需要处理托管、数据库管理和其他基础设施问题。我们只需要构建前端代码并部署到 Web、Android 和 iOS 平台的客户端设备上。
-
-
-
 
 请务必查看文档，因为在这个教程中，我有很多无法向你展示的后端功能。如果时间允许，你可以轻松构建一个功能完备的聊天应用程序，足以竞争 Slack 和 Discord 等热门聊天产品。
 
@@ -3200,6 +3180,7 @@ export default {
 但如果你是一个媒体巨头，并希望尽可能快地将内容传输到多个设备上呢？你可能还需要将内容与广告和其他第三方服务集成。嗯，你可以用 WordPress 实现这些，但你会遇到该平台的一些问题。
 
 1. 你需要安装插件来来实现额外功能。安装的插件越多，你的网站运行得越慢。
+
 2. 与大多数 JavaScript 框架相比，PHP 相当慢。从开发者的角度来看，在 JavaScript 驱动的前端实现自定义功能要容易且快速得多。
 
 [JavaScript 在浏览器加载测试中的性能优于 PHP](https://www.hostingadvice.com/blog/comparing-node-js-vs-php-performance/)。此外，现代 JavaScript 及其生态系统在快速构建新 Web 体验方面提供了更愉快的开发体验。
@@ -3211,12 +3192,14 @@ GraphCMS 与大多数无头 CMS 平台不同之处在于，它不是通过 REST 
 请考虑以下模型架构：
 
 **Post（文章）**
+
 * id: Number
 * title: String
 * content : String
 * comments : Comments 数组
 
 **Comment（评论）**
+
 * id: Number
 * name: String
 * message: String
@@ -3225,7 +3208,7 @@ GraphCMS 与大多数无头 CMS 平台不同之处在于，它不是通过 REST 
 
 如果数据在关系型数据库中，你必须构建一个低效的 SQL 语句，或者使用两个 SQL 语句来清晰地获取数据。如果数据存储在 NoSQL 数据库中，你可以使用现代 ORM 如 [Vuex ORM](https://vuex-orm.github.io) 为你轻松获取数据，如下：
 
-```
+```javascript
 const post = Post.query()
   .with('comments')
   .find(1);
@@ -3238,6 +3221,7 @@ const post = Post.query()
 ## 前提条件
 
 在开始之前，我想指出这是一份面向中级和高级用户的指南。我将不会复习基础知识，而是将向你展示如何使用 GraphCMS 作为后端快速构建一个 Vue.js 博客。你需要精通以下领域：
+
 * ES6 和 ES7 JavaScript
 * Vue.js（使用 CLI 版本 3）
 * GraphQL
@@ -3247,6 +3231,7 @@ const post = Post.query()
 ## 关于项目
 
 我们将构建一个带有基础评论系统的简单博客应用程序。以下是你可以访问以查看已完成项目的链接：
+
 * [CodeSandbox.io 演示](https://codesandbox.io/s/01zo6v221p)
 * [GitHub 仓库](https://github.com/sitepoint-editors/vue-axios-graphcsms)
 
@@ -3266,16 +3251,14 @@ const post = Post.query()
 
 ![GraphCMS 主仪表板](img/graphcms-dashboard.png)
 
-
-
-接下来，你需要从仪表板的 `Settings` 页面获取 GraphCMS 项目的 API 端点（endpoint）和令牌。你需要创建一个新令牌。对于权限级别，请使用 `OPEN`，这将允许工具对你的 GraphCMS 数据库执行 `READ`（读取）和 `WRITE`（写入）操作。创建一个名为 `.env` 的文件并将其放在项目根目录下：
+接下来，你需要从仪表板的`Settings`页面获取 GraphCMS 项目的 API 端点（endpoint）和令牌。你需要创建一个新令牌。对于权限级别，请使用`OPEN`，这将允许工具对你的 GraphCMS 数据库执行`READ`（读取）和`WRITE`（写入）操作。创建一个名为`.env`的文件并将其放在项目根目录下：
 
 ```
 ENDPOINT=<在此处输入 api endpoint>
 TOKEN=<在此处输入带有 OPEN 权限的 token>
 ```
 
-接下来，你可能需要用自己的数据填充 `data` 文件夹中的 CSV 文件。以下可以使用的一些示例数据：
+接下来，你可能需要用自己的数据填充`data`文件夹中的 CSV 文件。以下可以使用的一些示例数据：
 
 ```csv
 // Categories.csv
@@ -3297,7 +3280,7 @@ Beauty Post 1,Beauty-post-1,This is truly my very first Beauty post,Beauty|Featu
 Beauty Post 2,Beauty-post-2,This is my second beauty post,Beauty
 ```
 
-如果你愿意，可以更改内容。请确保不要触动第一行，否则你会更改字段名称。请注意，在 `categories` 列中，我使用了管道符 `|` 作为分隔符。
+如果你愿意，可以更改内容。请确保不要触动第一行，否则你会更改字段名称。请注意，在`categories`列中，我使用了管道符`|`作为分隔符。
 
 要将 CSV 数据上传到你的 GraphCMS 数据库，请按以下顺序执行这些命令：
 
@@ -3306,7 +3289,7 @@ npm run categories
 npm run posts
 ```
 
-每个脚本都将输出成功上传的记录。我们先上传 `categories` 的原因是为了让 `posts` 记录能够成功链接到现有的 `category` 记录。
+每个脚本都将输出成功上传的记录。我们先上传`categories`的原因是为了让`posts`记录能够成功链接到现有的`category`记录。
 
 如果你想清理数据库，可以运行以下命令：
 
@@ -3316,7 +3299,7 @@ npm run reset
 
 此脚本将删除你所有的模型内容。你将得到一个报告，显示每个模型删除了多少条记录。
 
-我希望你会觉得这个工具很好用。回到仪表板确认 `Posts` 和 `Categories` 的数据已成功上传。
+我希望你会觉得这个工具很好用。回到仪表板确认`Posts`和`Categories`的数据已成功上传。
 
 后端处理完毕后，让我们开始构建前端博客界面。
 
@@ -3351,7 +3334,7 @@ vue create vue-graphcms
 npm install bootstrap-vue axios
 ```
 
-要在我们的项目中设置 `Bootstrap-Vue`，只需打开 `src/main.js` 并添加以下代码：
+要在我们的项目中设置`Bootstrap-Vue`，只需打开`src/main.js`并添加以下代码：
 
 ```javascript
 import BootstrapVue from "bootstrap-vue";
@@ -3362,60 +3345,16 @@ Vue.config.productionTip = false;
 Vue.use(BootstrapVue);
 ```
 
-接下来，我们需要开始搭建项目结构。在 `src/components` 文件夹中，删除现有文件并创建这些新文件：
+接下来，我们需要开始搭建项目结构。在`src/components`文件夹中，删除现有文件并创建这些新文件：
 
 * `CommentForm.vue`
 * `CommentList.vue`
 * `Post.vue`
 * `PostList.vue`
 
-在 `src/views` 文件夹中，删除 `About.vue` 并创建一个名为 `PostView.vue` 的新文件。如演示所示，我们将几个分类页面，每个页面显示按分类过滤的文章列表。从技术上讲，只有一个页面会根据激活的路由名称显示不同的文章列表。`PostList` 组件将根据当前路由过滤文章。
+在`src/views`文件夹中，删除`About.vue`并创建一个名为`PostView.vue`的新文件。如演示所示，我们将几个分类页面，每个页面显示按分类过滤的文章列表。从技术上讲，只有一个页面会根据激活的路由名称显示不同的文章列表。`PostList`组件将根据当前路由过滤文章。
 
-让我们先设置路由。打开 `src/router.js` 并将现有代码替换为内容：
-
-```javascript
-import Vue from "vue";
-import Router from "vue-router";
-import Home from "./views/Home.vue";
-import Post from "./views/PostView.vue";
-
-Vue.use(Router);
-
-export default new Router({
-  mode: "history",
-  base: process.env.BASE_URL,
-  linkActiveClass: "active",
-  routes: [
-    {
-      path: "/",
-      name: "Featured",
-      component: Home
-    },
-    {
-      path: "/food",
-      name: "Food",
-      component: Home
-    },
-    {
-      path: "/fashion",
-      name: "Fashion",
-      component: Home
-    },
-    {
-      path: "/beauty",
-      name: "Beauty",
-      component: Home
-    },
-    {
-      path: "/post/:slug",
-      name: "Post",
-      component: Post
-    }
-  ]
-});
-```
-
-现在我们已经有了路由，让我们设置路由。打开 `src/router.js` 并将现有代码替换为：
+让我们先设置路由。打开`src/router.js`并将现有代码替换为：
 
 ```javascript
 import Vue from "vue";
@@ -3459,7 +3398,9 @@ export default new Router({
 });
 ```
 
-现在我们已经有了路由，让我们设置导航栏。打开 `App.vue` 并将现有代码替换为：
+现在我们已经有了路由，让我们设置导航栏。打开`App.vue`并将现有代码替换为：
+
+
 
 ```html
 <template>
@@ -3486,7 +3427,7 @@ export default new Router({
 
 这将网站顶部添加一个带有分类链接的导航栏。保存文件并更新以下文件：
 
-**src/views/Home.vue**
+`src/views/Home.vue`
 
 ```vue
 <script>
@@ -3501,7 +3442,7 @@ export default {
 </script>
 ```
 
-**src/components/PostList.vue**
+`src/components/PostList.vue`
 
 ```html
 <template>
@@ -3532,24 +3473,22 @@ export default {
 </script>
 ```
 
-注意，在 `PostList` 组件中，我们使用自定义监听器根据当前 URL 更新我们的 `category` 数据属性。
+注意，在`PostList`组件中，我们使用自定义监听器根据当前 URL 更新我们的`category`数据属性。
 
-现在我们准备好进行快速测试以确认路由正常。使用命令 `npm run serve` 启动 Vue.js 服务器。在浏览器中打开 [localhost:8080](http://localhost:8080) 并测试每个链接。`category` 属性将输出我们在路由名称属性中定义的相同。
+现在我们准备好进行快速测试以确认路由正常。使用命令`npm run serve`启动 Vue.js 服务器。在浏览器中打开[localhost:8080](http://localhost:8080)并测试每个链接。`category`属性将输出我们在路由名称属性中定义的相同。
 
 ![应用页面视图](img/vue-scaffold.png)
 
 ## 从 GraphCMS 获取数据
 
-现在我们的路由代码已经可以运行，让我们看看如何从我们的 GraphCMS 后端提取信息。在项目根目录下，创建一个 `env.local` 文件并填充以下字段的值：
+现在我们的路由代码已经可以运行，让我们看看如何从我们的 GraphCMS 后端提取信息。在项目根目录下，创建一个`env.local`文件并填充以下字段的值：
 
 ```
 VUE_APP_ENDPOINT=
 VUE_APP_TOKEN=
 ```
 
-请注意，Vue.js 单页应用只加载以 `VUE_APP` 开头的自定义环境变量。你可以从 GraphCMS 仪表板设置页面获取 API 端点和令牌。接下来，创建文件 `src/graphcms.js` 并复制以下代码：
-
-
+请注意，Vue.js 单页应用只加载以`VUE_APP`开头的自定义环境变量。你可以从 GraphCMS 仪表板设置页面获取 API 端点和令牌。接下来，创建文件`src/graphcms.js`并复制以下代码：
 
 ```javascript
 import axios from "axios";
@@ -3627,22 +3566,22 @@ export const CREATE_COMMENT_MUTATION = `
 
 我们刚刚创建的辅助文件提供了两个主要功能：
 
-* 它创建了一个 `axios` 实例，该配置用于向你的 GraphCMS 后端执行授权请求。
-* 它包含了项目中使用的 GraphQL 查询和变异。这些变异负责获取文章（按分类或按 slug），以及创建新评论。如果你想了解更多关于 GraphQL 查询和变异，[请参阅 GraphQL 文档](https://graphql.org/learn/queries/)。
+- 它创建了一个`axios`实例，该配置用于向你的 GraphCMS 后端执行授权请求。
+- 它包含了项目中使用的 GraphQL 查询和变异。这些变异负责获取文章（按分类或按 slug），以及创建新评论。如果你想了解更多关于 GraphQL 查询和变异，请参阅[GraphQL 文档](https://graphql.org/learn/queries/)。
 
-你还可以使用项目仪表板中的 API 探索器来测试这些查询和变异。要此操作，请从上面的代码复制查询或变异并粘贴到 API 探索器的顶部窗口。在下方的窗口中输入任何查询变量，然后点击 `Play` 按钮。你应该会在右侧的新窗格中看到结果。
+你还可以使用项目仪表板中的 API 探索器来测试这些查询和变异。要此操作，请从上面的代码复制查询或变异并粘贴到 API 探索器的顶部窗口。在下方的窗口中输入任何查询变量，然后点击`Play`按钮。你应该会在右侧的新窗格中看到结果。
 
 这里是一个查询示例：
 
-![GraphCMS 查询示例](img/graphms-query-example.png) 
+![GraphCMS 查询示例](img/graphms-query-example.png)
 
 这是一个变异示例：
 
-![GraphCMS 变异示例](img/graphcsms-mutation-example.png) 
+![GraphCMS 变异示例](img/graphcsms-mutation-example.png)
 
 ## 在模板中显示数据
 
-现在，让我们在 `src/components/PostList.vue` 中创建一个 HTML 模板，以整洁的方式显示文章列表。我们还将添加 `axios` 代码，从我们的 GraphCMS 数据库中拉取 `posts` 数据：
+现在，让我们在`src/components/PostList.vue`中创建一个 HTML 模板，以整洁的方式显示文章列表。我们还将添加`axios`代码，从我们的 GraphCMS 数据库中拉取`posts`数据：
 
 ```html
 <template>
@@ -3737,7 +3676,7 @@ h1{
 
 ## 显示单篇文章
 
-确保顶部主导航按预期工作。现在让我们处理 `Post` 组件。它将有自己的 `fetchPost()` 函数，通过 `slug` 进行查询。如果你在想 `slug` 参数从哪里来，让我提醒你我们在 `router.js` 中放入的这段代码：
+确保顶部主导航按预期工作。现在让我们处理`Post`组件。它将有自己的`fetchPost()`函数，通过`slug`进行查询。如果你在想`slug`参数从哪里来，让我提醒你我们在`router.js`中放入的这段代码：
 
 ```javascript
 //...
@@ -3749,9 +3688,9 @@ h1{
 //...
 ```
 
-这意味着 `/post/` 之后的任何内容都可以作为 `this.$route.params.slug` 用于组件。
+这意味着`/post/`之后的任何内容都可以作为`this.$route.params.slug`用于组件。
 
-`post` 组件是 `CommentForm` 和 `CommentList` 组件的父组件。`comments` 数据将从文章记录作为 props 传递给 `CommentList` 组件。现在为 `src/components/CommentList.vue` 插入代码：
+`post`组件是`CommentForm`和`CommentList`组件的父组件。`comments`数据将从文章记录作为 props 传递给`CommentList`组件。现在为`src/components/CommentList.vue`插入代码：
 
 ```html
 <template>
@@ -3773,23 +3712,23 @@ export default {
 </script>
 ```
 
-除非通过 GraphCMS 仪表板手动输入了评论，否则现在不要期望看到任何结果。让我们为 `src/components/CommentForm.vue` 添加代码，使用户能够为博客文章添加评论。
+除非通过 GraphCMS 仪表板手动输入了评论，否则现在不要期望看到任何结果。让我们为`src/components/CommentForm.vue`添加代码，使用户能够为博客文章添加评论。
 
-
-
-
-
+```html
 <template>
   <section class="comment-form">
     <h4 class="text-muted">评论表</h4>
+
     <b-form @submit.prevent="onSubmit">
       <b-form-group label="姓名">
         <b-form-input id="input-name" type="text" v-model="name" placeholder="输入您的姓名" required></b-form-input>
       </b-form-group>
-       <b-form-group label="消息">
-         <b-form-textarea id="input-message" v-model="message" placeholder="输入您的评论" :rows="3" :max-rows="6" required>
-         </b-form-textarea>
+
+      <b-form-group label="消息">
+        <b-form-textarea id="input-message" v-model="message" placeholder="输入您的评论" :rows="3" :max-rows="6" required>
+        </b-form-textarea>
       </b-form-group>
+
       <b-button type="submit" variant="primary">提交</b-button>
     </b-form>
   </section>
@@ -3816,6 +3755,7 @@ export default {
           id: this.post.id
         }
       };
+
       try {
         const response = await apiClient.post(ENDPOINT, {
           query: CREATE_COMMENT_MUTATION,
@@ -3824,6 +3764,7 @@ export default {
 
         const body = await response.data.data;
         const newComment = body.createComment;
+
         this.post.comments.push(newComment);
         this.name = "";
         this.message = "";
@@ -3836,11 +3777,13 @@ export default {
 </script>
 
 <style>
-  .comment-form {
-    margin-top: 35px;
-  }
+.comment-form {
+  margin-top: 35px;
+}
 </style>
 ```
+
+
 
 现在我们有了一个基础的评论表单，能够向我们的 GraphQL 后端系统提交新评论。一旦新评论被保存，我们将获取返回的对象并将其添加到 `post.comments` 数组中。这应该触发 `CommentList` 组件来显示新添加的 `Comment`。
 
@@ -3851,29 +3794,32 @@ export default {
   <section class="post">
     <b-row v-if="loading">
       <b-col>
-        <div class="lds-dual-ring text-center"></div
+        <div class="lds-dual-ring text-center"></div>
       </b-col>
     </b-row>
-   <b-row v-if="!loading">
-     <b-col>
-      <h1>{{post.title}}</h1>
-      <h4 class="text-muted">{{post.categories.map(cat => cat.name).toString()}}</h4>
-      <hr>
-      <p>{{ post.content }}</p>
-     </b-col>
-   </b-row>
-   <!-- 评论列表 -->
-   <b-row v-if="!loading">
-     <b-col>
-       <CommentList :comments="post.comments" />
-     </b-col>
-   </b-row>
-   <!-- 评论表单 -->
+
     <b-row v-if="!loading">
-     <b-col>
-      <CommentForm :post="post" />
-     </b-col>
-   </b-row>
+      <b-col>
+        <h1>{{post.title}}</h1>
+        <h4 class="text-muted">{{post.categories.map(cat => cat.name).toString()}}</h4>
+        <hr>
+        <p>{{ post.content }}</p>
+      </b-col>
+    </b-row>
+
+    <!-- 评论列表 -->
+    <b-row v-if="!loading">
+      <b-col>
+        <CommentList :comments="post.comments" />
+      </b-col>
+    </b-row>
+
+    <!-- 评论表单 -->
+    <b-row v-if="!loading">
+      <b-col>
+        <CommentForm :post="post" />
+      </b-col>
+    </b-row>
   </section>
 </template>
 
@@ -3905,7 +3851,6 @@ export default {
             slug: this.slug
           }
         });
-
         const body = await response.data.data;
         this.post = body.post;
         this.loading = false;
@@ -3947,9 +3892,6 @@ export default {
 
 ![Post comments]()
 
-
-
-
 最后，让我们安装扩展。打开 Chrome 并在地址栏中输入 `chrome://extensions/`。你会看到一个显示已安装扩展的页面。
 
 由于我们要从文件安装扩展（而不是从 Chrome 网上商店），我们需要使用页面右上角的开关启用 *Developer mode*。这应该添加一个带有 *Load unpacked* 选项的额外菜单栏。点击此按钮并选择你之前创建的 `hello-world-chrome` 文件夹。点击 *Open*，你就能就能看到扩展已安装并出现一个“Hello, World!”弹出窗口。
@@ -3968,7 +3910,7 @@ export default {
 
 我们将开始创建一个显示以代替新标签页的页面。我们称其为 `tab.html`。它应该位于与你的清单文件和后台脚本相同的文件夹中：
 
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -3984,7 +3926,7 @@ export default {
 
 接下来，我们需要告诉扩展关于此页面。我们可以通过在清单文件中指定 `chrome_url_overrides` 键来实现，如下所示：
 
-```
+```json
 "chrome_url_overrides": {
   "newtab": "tab.html"
 }
@@ -3995,8 +3937,6 @@ export default {
 ![Reload the extension](img/chrome-ext-2.jpg)
 
 现在，当你打开新标签页时，你应该受到你的自定义消息的欢迎。
-
-
 
 这里没有什么特别的内容。这是一个简单的 HTML 页面，将用于存放我们的 Vue 实例。
 
@@ -4070,7 +4010,7 @@ plugins: [
     { from: 'popup/popup.html', to: 'popup/popup.html', transform: transformHtml },
     { from: 'tab/tab.html', to: 'tab/tab.html', transform: transformHtml },
     ...
-  })
+  ])
 ```
 
 你需要重启 `npm run watch:dev` 任务才能使这些更改生效。完成后，重新加载扩展并打开新标签页。你应该看到显示“My new tab page”。
@@ -4154,7 +4094,7 @@ body {
 
 在模板中，我们使用 [v-if](https://vuejs.org/v2/guide/conditional.html) 块根据 `loading` 属性的状态来显示加载消息或笑话。初始情况下，它被设置为 `true`（显示加载消息），然后我们的脚本将触发一个 Ajax 请求来获取笑话。一旦 Ajax 请求完成，`loading` 属性将设置为 `false`，导致组件重新渲染并显示我们的笑话。
 
-在`<script>` 部分中，我们导入了 `axios`，然后声明了几个数据属性——上述的 `loading` 属性和一个用于存放笑话的 `joke` 属性。我们随后使用了 `mounted` [生命周期钩子](https://vuejs.org/v2/guide/instance.html#Instance-Lifecycle-Hooks)，它会在我们的 Vue 实例挂载后触发一次，向 [笑话 API](https://icanhazdadjoke.com/api) 发起 Ajax 请求。请求完成后，我们更新了两个数据属性，导致组件重新渲染。
+在 `<script>` 部分中，我们导入了 `axios`，然后声明了几个数据属性——上述的 `loading` 属性和一个用于存放笑话的 `joke` 属性。我们随后使用了 `mounted` [生命周期钩子](https://vuejs.org/v2/guide/instance.html#Instance-Lifecycle-Hooks)，它会在我们的 Vue 实例挂载后触发一次，向 [笑话 API](https://icanhazdadjoke.com/api) 发起 Ajax 请求。请求完成后，我们更新了两个数据属性，导致组件重新渲染。
 
 到目前为止一切顺利。
 
@@ -4175,7 +4115,6 @@ body {
 ```html
 <div v-else>
   <p class="joke">{{ joke }}</p>
-
   <button @click="likeJoke" :disabled="likeButtonDisabled">Like Joke</button>
   <button @click="logJokes" class="btn">Log Jokes</button>
   <button @click="clearStorage" class="btn">Clear Storage</button>
@@ -4184,7 +4123,7 @@ body {
 
 没什么特别的。注意我们通过 `disabled` 属性绑定到 Vue 实例的状态，以便用户在收藏后无法再次点击。
 
-接下来，在脚本中添加 `likeButtonDisabled` ：
+接下来，在脚本中添加 `likeButtonDisabled`：
 
 ```javascript
 export default {
@@ -4220,6 +4159,8 @@ export default {
   mounted() { ... }
 }
 ```
+
+
 
 在这里我们定义了处理三个新按钮的方法。
 
@@ -4259,10 +4200,6 @@ new Vue({
 
 现在如下所示修改模板：
 
-
-
-
-
 ```html
 <template>
   <div>
@@ -4271,7 +4208,6 @@ new Vue({
     </div>
     <div v-else>
       <p class="joke">{{ joke }}</p>
-
       <div class="button-container">
         <button @click="likeJoke" :disabled="likeButtonDisabled" class="btn"><icon name="thumbs-up"></icon></button>
         <button @click="logJokes" class="btn"><icon name="list"></icon></button>
@@ -4426,9 +4362,6 @@ head: {
  },
 ```
 
-
-
-
 ```html
 <template>
   <div>
@@ -4444,7 +4377,6 @@ head: {
         >
           YANS!
         </nuxt-link>
-
         <a
           role="button"
           class="navbar-burger burger"
@@ -4457,7 +4389,6 @@ head: {
           <span aria-hidden="true"/>
         </a>
       </div>
-
       <div class="navbar-menu">
         <div class="navbar-start">
           <nuxt-link
@@ -4473,7 +4404,6 @@ head: {
             class="navbar-item"
           >提交</nuxt-link>
         </div>
-
         <div class="navbar-end">
           <div class="navbar-item">
             <div class="buttons">
@@ -4547,21 +4477,20 @@ json-server-auth 模块并没有开箱提供此功能，因此我们将手动添
 
 ```javascript
 const jsonServer = require('json-server')
-const auth = require('json-server-auth')
+```
 
+
+
+```javascript
+const auth = require('json-server-auth')
 const app = jsonServer.create()
 const router = jsonServer.router('db.json')
-
 const { rewriter } = require('json-server-auth/dist/guards')
-
 const rules = rewriter({
   user: 660
 })
-
 app.use(rules)
-
 app.db = router.db
-
 app.use(auth)
 app.get('/user', (req, res, next) => {
   const { email } = req.claims
@@ -4569,13 +4498,12 @@ app.get('/user', (req, res, next) => {
   const user = Object.assign({}, db.get('users').find({ email }))
   res.json(user)
 })
-
 app.listen(3001, () => {
   console.log('JSON server running on port 3001')
 })
 ```
 
-大部分代码来自 json-server 文档，但我们启动运行在 3001 端口的 API 服务器。
+大部分代码来自 `json-server` 文档，但我们启动运行在 `3001` 端口的 API 服务器。
 
 我们在 `/user` 端点添加了：
 
@@ -4586,9 +4514,7 @@ app.get('/user', (req, res, next) => {
   const user = Object.assign({}, db.get('users').find({ email }))
   res.json(user)
 })
-
 app.use(router)
-
 app.listen(3001, () => {
   console.log('JSON server running on port 3001')
 })
@@ -4598,7 +4524,7 @@ app.listen(3001, () => {
 
 正如之前提到的，我们将使用 Nuxt 的 [Auth 模块](https://auth.nuxtjs.org/)。通过一些配置，该模块为我们提供了与服务器进行身份验证的有用方法，以及用于限制路由的 Nuxt 中间件。
 
-我们需要的第一件事是从 npm 安装该模块（在此步骤之前忘记切换回 `client` 文件夹！）：
+我们需要的第一件事是从 `npm` 安装该模块（在此步骤之前忘记切换回 `client` 文件夹！）：
 
 ```bash
 npm i @nuxtjs/auth
@@ -4623,10 +4549,7 @@ modules: [
 
 首先，我们需要告诉 Nuxt 关于该插件，通过在上述 `modules` 数组中添加模块名称。
 
-在 `modules` 部分下方，让我们添加一个 auth 模块设置的新键。
-
-
-
+在 `modules` 部分下方，让我们添加一个 `auth` 模块设置的新键。
 
 ```javascript
 auth: {
@@ -4656,7 +4579,6 @@ auth: {
 
 ```javascript
 import Vuex from 'vuex'
-
 const createStore = () => {
   return new Vuex.Store({
     state: {},
@@ -4665,7 +4587,6 @@ const createStore = () => {
     mutations: {}
   })
 }
-
 export default createStore
 ```
 
@@ -4683,7 +4604,6 @@ export default createStore
 <template>
   <section class="section">
     <div class="container">
-
       <div class="field">
         <label class="label">Username</label>
         <div class="control">
@@ -4695,7 +4615,6 @@ export default createStore
           >
         </div>
       </div>
-
       <div class="field">
         <label class="label">Email</label>
         <div class="control">
@@ -4706,7 +4625,6 @@ export default createStore
           >
         </div>
       </div>
-
       <div class="field">
         <label class="label">Password</label>
         <div class="control">
@@ -4717,7 +4635,6 @@ export default createStore
           >
         </div>
       </div>
-
       <div class="field">
         <div class="control">
           <button
@@ -4727,7 +4644,7 @@ export default createStore
           >Register</button>
         </div>
       </div>
-    </</div>
+    </div>
   </section>
 </template>
 ```
@@ -4739,7 +4656,6 @@ export default createStore
 ```javascript
 <script>
 import { mapActions } from 'vuex'
-
 export default {
   data: () => ({
     isSaving: false,
@@ -4751,20 +4667,17 @@ export default {
     ...mapActions(['saveUser']),
     async registerUser() {
       this.isSaving = true
-
       await this.saveUser({
         username: this.username,
         email: this.email,
         password: this.password
       })
-
       this.$auth.login({
         data: {
           email: this.email,
           password: this.password
         }
       })
-
       this.$router.push('/')
     }
   }
@@ -4790,7 +4703,6 @@ actions: {
       password,
       timestamp: new Date().getTime()
     }
-
     try {
       await this.$axios.post('/api/register', data)
     } catch (error) {
@@ -4846,7 +4758,6 @@ import uuid from 'uuid/v4'
                   >
                 </div>
               </div>
-
               <div class="field">
                 <div class="control">
                   <input
@@ -4877,10 +4788,6 @@ import uuid from 'uuid/v4'
 这里的标记标记大部分都是为了应用样式，归功于 Bulma。需要注意的是，我们在输入框上设置了 `v-model` 属性，以便组件可以访问这些值，并且我们在表单上绑定了 `onSubmit` 程序（带有 `.prevent` 修饰符，以防止默认行为）。当 `showError` 数据属性被设为 true 时，还会显示一条错误消息。
 
 这里是脚本部分：
-
-
-
-
 
 ```javascript
 <script>
@@ -4923,26 +4830,19 @@ export default {
         to="/register"
         class="button is-primary"
       >
-        <strong>注册</strong>
-      </nuxt-link>
-      <nuxt-link
-        v-if="!$auth.loggedIn"
-        to="/login"
-        class="button is-light"
-      >登录</nuxt-link>
-      <button
-        v-else
-        class="button is-light"
-        @click="$auth.logout()"
-      >退出登录</button>
-    </div>
-  </div>
-</div>
-```
 
-auth 模块为我们我们提供了一个辅助方法（在模板内部使用 `$auth.loggedIn`）来检查登录状态。我们可以用它在当前用户已验证时隐藏“注册”和“登录”按钮，取而之显示一个“退出登录”按钮。
 
-这是完成后的页面样子的：
+
+<strong>注册</strong>
+
+<a v-if="!$auth.loggedIn" href="/login" class="button is-light">登录</a>
+<button v-else class="button is-light" @click="$auth.logout()">退出登录</button>
+
+---
+
+`auth` 模块为我们提供了一个辅助方法（在模板内部使用 `$auth.loggedIn`）来检查登录状态。我们可以用它来在当前用户已验证时隐藏“注册”和“登录”按钮，取而代之地显示一个“退出登录”按钮。
+
+这是完成后的页面样子：
 
 ![登录屏幕](img/yans-login.png)
 
@@ -4950,7 +4850,7 @@ auth 模块为我们我们提供了一个辅助方法（在模板内部使用 `$
 
 现在我们已经设置好了身份验证，并且有了用户注册和登录的方法，让我们创建一个页面，允许用户为我们的新闻网站提交新链接。
 
-进入 `pages` 文件夹并创建一个名为 `submit.vue` 的新文件。
+进入`pages`文件夹并创建一个名为`submit.vue`的新文件。
 
 ### `client/pages/submit.vue`
 
@@ -4958,38 +4858,21 @@ auth 模块为我们我们提供了一个辅助方法（在模板内部使用 `$
 <template>
   <section class="section">
     <div class="container">
-
       <div class="field">
         <label class="label">标题</label>
         <div class="control">
-          <input
-            v-model="title"
-            class="input"
-            type="text"
-            placeholder="文本输入"
-          >
+          <input v-model="title" class="input" type="text" placeholder="文本输入">
         </div>
       </div>
-
       <div class="field">
         <label class="label">完整 URL (包含 http(s)://)</label>
         <div class="control">
-          <input
-            v-model="url"
-            class="input"
-            type="text"
-            placeholder="文本输入"
-          >
+          <input v-model="url" class="input" type="text" placeholder="文本输入">
         </div>
       </div>
-
       <div class="field">
         <div class="control">
-          <button
-            :disabled="isSaving"
-            class="button is-link"
-            @click="submitPost"
-          >提交</button>
+          <button :disabled="isSaving" class="button is-link" @click="submitPost">提交</button>
         </div>
       </div>
     </div>
@@ -4997,7 +4880,7 @@ auth 模块为我们我们提供了一个辅助方法（在模板内部使用 `$
 </template>
 ```
 
-这里的模板结构与我们的注册表单非常相似：几个带有关联 `v-model` 属性的输入字段，以及一个触发组件上处理函数的提交按钮。
+这里的模板结构与我们的注册表单非常相似：几个带有关联`v-model`属性的输入字段，以及一个触发组件上处理函数的提交按钮。
 
 这里是脚本部分：
 
@@ -5016,12 +4899,10 @@ export default {
     ...mapActions(['savePost']),
     async submitPost() {
       this.isSaving = true
-
       await this.savePost({
         title: this.title,
         url: this.url
       })
-
       this.title = null
       this.url = null
       this.isSaving = false
@@ -5031,15 +4912,15 @@ export default {
 </script>
 ```
 
-这一部分与我们之前所做的非常相似，获取详情并向 store 分发 `savePost` 动作。完成后，我们简单地重置表单以允许进一步的提交。在此处弹出一个通知告知用户他们的链接已保存将是一个好主意，我将把它留给读者作为练习。
+这一部分与我们之前所做的非常相似，获取详情并向 store 分发`savePost`动作。完成后，我们简单地重置表单以允许进一步的提交。在此处弹出一个通知告知用户他们的链接已保存将是一个好主意，我将把它留给读者作为练习。
 
-注意，对于此组件，我们指定了“auth” `middleware` 属性。该中间件是 auth 模块的一部分，将限制仅登录用户访问页面。如果游客用户尝试访问该页面，他们将被重定向到登录表单。
+注意，对于此组件，我们指定了“auth”`middleware`属性。该中间件是 auth 模块的一部分，将限制仅登录用户访问页面。如果游客用户尝试访问该页面，他们将被重定向到登录表单。
 
 表单看起来应该是这样的：
 
 ![新帖子表单](img/yans-submit.png)
 
-让我们编写 `savePost` 动作。
+让我们编写`savePost`动作。
 
 ### `clients/store/index.js`
 
@@ -5052,16 +4933,17 @@ actions: {
       id: uuid(),
       userId: user.id,
       author: user
-
+    }
     try {
-        await this.$axios.post('/links', data)
+      await this.$axios.post('/links', data)
     } catch (error) {
-        console.error(error)
+      console.error(error)
     }
   },
-},
+}
 ```
-（注：源中提供的 `savePost` 文本是片段化/中断的；我根据提供的上下文和片段重构了逻辑。）
+
+（注：源中提供的`savePost`文本是片段化/中断的；我根据提供的上下文和片段重构了逻辑。）
 
 ## 获取并显示帖子
 
@@ -5072,10 +4954,10 @@ actions: {
 ```javascript
 state: {
   posts: []
-},
+}
 ```
 
-首先，我们需要在 state 中添加一个 `posts` 数组，以便在检索帖子后存储它们。
+首先，我们需要在 state 中添加一个`posts`数组，以便在检索帖子后存储它们。
 
 接下来，我们需要一个动作来发送 API 请求。
 
@@ -5092,7 +4974,7 @@ actions: {
       console.error(error)
     }
   },
-},
+}
 ```
 
 这是一个简单的 mutation，仅用从 API 获取的内容替换现有的帖子数组。让我们添加它。
@@ -5104,7 +4986,7 @@ mutations: {
   setPosts(state, { posts }) {
     state.posts = posts
   }
-},
+}
 ```
 
 对于我们的“新帖子”视图，我们将按照创建时间倒序显示链接。虽然这个逻辑可以放在组件内部，但让我们创建一个 Vuex getter。这使得我们在需要的地方可以访问排序后的列表。
@@ -5114,16 +4996,16 @@ mutations: {
 ```javascript
 getters: {
   newPosts: state => state.posts.sort((a, b) => b.timestamp - a.timestamp)
-},
+}
 ```
 
-就像组件中的计算属性一样，如果 `posts` 数组被修改，`newPosts` getter 将更新并重新渲染使用它的组件。
+就像组件中的计算属性一样，如果`posts`数组被修改，`newPosts` getter 将更新并重新渲染使用它的组件。
 
 ### 显示“热门”页面
 
 显示热门帖子的页面与此页面几乎相同，不同在于它使用不同的 getter 以不同的顺序返回帖子。你可以尝试自己构建，或者查看本指南配套的代码库。
 
-让我们添加列表页面。在 `pages` 下创建一个名为 `new.vue` 的新文件，并添加以下代码。
+让我们添加列表页面。在`pages`下创建一个名为`new.vue`的新文件，并添加以下代码。
 
 `client/pages/new.vue`
 
@@ -5157,19 +5039,15 @@ export default {
 </script>
 ```
 
+我在这里展示了整个文件，因为它只是一个相对小的组件。它包含了 Nuxt 特有的`fetch`方法，每当用户尝试导航到该页面时，就会调用该方法。该方法接收一个 [context](https://nuxtjs.org/api/context) 对象，其中包含了 store（以及其他内容），允许我们在组件加载之前`dispatch`动作。
 
-
-
-
-我在这里展示了整个文件，因为它只是一个相对小的组件。它包含了 Nuxt 特有的 `fetch` 方法，每当用户尝试导航到该页面时，就会调用该方法。该方法接收一个 [context](https://nuxtjs.org/api/context) 对象，其中包含了 store（以及其他内容），允许我们在组件加载之前 `dispatch` 动作。
-
-一旦 `getPosts` 动作完成，`newPosts` 器就会被更新，组件就可以渲染帖子列表。我们在这里将每个帖子的显示委托给 `<NewsItem>` 组件，这实际上是一个自定义组件。让我们接下来看它。
+一旦`getPosts`动作完成，`newPosts` getter 就会被更新，组件就可以渲染帖子列表。我们在这里将每个帖子的显示委托给`<NewsItem>`组件，这实际上是一个自定义组件。让我们接下来看它。
 
 ## NewsItem 组件
 
 显示帖子看起来似乎是我们可能在新闻网站的多个地方都想要执行的操作，因此将其提取到单独组件中是有意义的。它还封装了任何标记和显示逻辑，有助于父组件保持整洁，并专注于执行其任务所需的代码。
 
-让我们进入 `components` 文件夹并创建一个名为 `NewsItem.vue` 的新组件文件。正如我们之前所做的，我们将先查看模板。
+让我们进入`components`文件夹并创建一个名为`NewsItem.vue`的新组件文件。正如我们之前所做的，我们将先查看模板。
 
 **client/components/NewsItem.vue**
 
@@ -5179,9 +5057,7 @@ export default {
     <figure class="media-left">
       <button class="button is-white">
         <span class="icon is-small">
-          <i
-            class="fas fa-thumbs-up"
-            title="Vote up" />
+          <i class="fas fa-thumbs-up" title="Vote up" />
         </span>
       </button>
     </figure>
@@ -5196,10 +5072,7 @@ export default {
           <span class="level-item">
             <small>{{ votes }} · posted by {{ item.author }} · {{ item.timestamp | timeAgo }}</small>
           </span>
-          <nuxt-link
-            :to="`/news/${item.id}`"
-            class="level-item"
-          >
+          <nuxt-link :to="`/news/${item.id}`" class="level-item">
             <span class="icon is-small"><i class="fas fa-comments" /></span>
           </nuxt-link>
         </div>
@@ -5249,9 +5122,9 @@ export default {
 </script>
 ```
 
-从组件代码可以看出，我们导入了两个第三方模块来帮助格式化：[parse-domain](https://www.npmjs.com/package/parse-domain) 以及 [date-fns](https://date-fns.org/) 的函数 [distanceInWordsStrict`](https://date-fns.org/v1.30.1/docs/distanceInWordsStrict)。
+从组件代码可以看出，我们导入了两个第三方模块来帮助格式化：[parse-domain](https://www.npmjs.com/package/parse-domain) 以及 [date-fns](https://date-fns.org/) 的函数 [`distanceInWordsStrict`](https://date-fns.org/v1.30.1/docs/distanceInWordsStrict)。
 
-`parse-domain` 模块接收一个 URL 并返回组成部分的数组。使用它，我们可以只显示链接的域名，让用户一眼就能看出内容来自哪个网站。`distanceInWordsStrict` 函数接收两个日期并返回对人类友好的时间描述（例如“5 分钟前”）。
+`parse-domain`模块接收一个 URL 并返回组成部分的数组。使用它，我们可以只显示链接的域名，让用户一眼就能看出内容来自哪个网站。`distanceInWordsStrict`函数接收两个日期并返回对人类友好的时间描述（例如“5 分钟前”）。
 
 ### 依赖项！
 
@@ -5265,15 +5138,15 @@ npm i parse-domain date-fns
 
 我们*确实*正在使用计算属性的一个地方是显示票数并在必要时正确处理文本的复数。
 
-当页面和 `NewsItem` 组件完成后，屏幕在虚拟数据的情况下应该像这样：
+当页面和`NewsItem`组件完成后，屏幕在虚拟数据的情况下应该像这样：
 
 ![“新链接”页面，显示虚拟数据](img/yans-new.png)
 
 ## 处理评论
 
-有一个链接列表固然很好，但我们需要一种与它们交互的方法。我们将为每个帖子添加一个评论部分。我们将通过创建一个 `CommentForm` 组件来处理输入，然后更新 `NewsItem` 组件来显示现有评论。
+有一个链接列表固然很好，但我们需要一种与它们交互的方法。我们将为每个帖子添加一个评论部分。我们将通过创建一个`CommentForm`组件来处理输入，然后更新`NewsItem`组件来显示现有评论。
 
-首先，创建 `CommentForm` 组件。它将是一个包含 `textarea` 和一个提交按钮的简单组件。
+首先，创建`CommentForm`组件。它将是一个包含`textarea`和一个提交按钮的简单组件。
 
 **client/components/CommentForm.vue**
 
@@ -5283,24 +5156,38 @@ npm i parse-domain date-fns
     <div class="media-content">
       <div class="field">
         <p>
-          <textarea
-            v-model="body"
-            class="textarea"
-            placeholder="Add a comment..."
-          />
-        </p>
-      </div>
-      <div class="field">
-        <p>
-          <button
-            :disabled="!body"
-            class="button"
-            @click="commentPosted"
-          >Post comment</button>
-        </p>
-      </div>
-    </div>
-  </article>
+          <textarea v-model="body"
+
+
+
+```html
+<textarea
+  class="textarea"
+  placeholder="Add a comment..."
+></textarea>
+
+</p>
+
+</div>
+
+<div class="field">
+
+<p>
+
+<button
+  :disabled="!body"
+  class="button"
+  @click="commentPosted"
+>Post comment</button>
+
+</p>
+
+</div>
+
+</div>
+
+</article>
+
 </template>
 
 <script>
@@ -5308,6 +5195,7 @@ export default {
   data: () => ({
     body: null
   }),
+
   methods: {
     commentPosted() {
       this.$emit('post', this.body)
@@ -5318,7 +5206,7 @@ export default {
 </script>
 ```
 
-现在，更新 `NewsItem` 组件以显示评论并包含 `CommentForm`。
+现在，更新`NewsItem`组件以显示评论并包含`CommentForm`。
 
 **client/components/NewsItem.vue**
 
@@ -5330,37 +5218,59 @@ export default {
         <span class="icon is-small">
           <i
             class="fas fa-thumbs-up"
-            title="Vote up" />
+            title="Vote up"
+          />
         </span>
       </button>
     </figure>
+
     <div class="media-content">
       <div>
         <p>
-          <a :href="item.url"><strong>{{ item.title }}</strong></a> <small>({{ item.url | domain }})</small>
+          <a :href="item.url"><strong>{{ item.title }}</strong></a>
+          <small>({{ item.url | domain }})</small>
         </p>
       </div>
+
       <nav class="level is-mobile">
         <div class="level-left">
           <span class="level-item">
-            <small>{{ votes }} · posted by {{ item.author }} · {{ item.timestamp | timeAgo }}</small>
+            <small>
+              {{ votes }} · posted by {{ item.author }} · {{ item.timestamp | timeAgo }}
+            </small>
           </span>
+
           <nuxt-link
             :to="`/news/${item.id}`"
             class="level-item"
           >
-            <span class="icon is-small"><i class="fas fa-comments" /></span>
+            <span class="icon is-small">
+              <i class="fas fa-comments" />
+            </span>
           </nuxt-link>
         </div>
       </nav>
-      
+
       <section class="comments">
-        <div v-for="comment in item.comments" :key="comment.id" class="comment">
+        <div
+          v-for="comment in item.comments"
+          :key="comment.id"
+          class="comment"
+        >
           <p>{{ comment.body }}</p>
-          <small>posted by {{ comment.author }} on {{ comment.timestamp | timeAgo }}</small>
+          <small>
+            posted by {{ comment.author }} on {{ comment.timestamp | timeAgo }}
+          </small>
         </div>
-        <comment-form v-if="$auth" @post="addComment" />
-        <p v-else>Please <nuxt-link to="/login">log in</nuxt-link> to comment.</p>
+
+        <comment-form
+          v-if="$auth"
+          @post="addComment"
+        />
+
+        <p v-else>
+          Please <nuxt-link to="/login">log in</nuxt-link> to comment.
+        </p>
       </section>
     </div>
   </article>
@@ -5375,34 +5285,45 @@ export default {
   filters: {
     domain(value) {
       if (!value) return ''
+
       const parts = parseDomain(value)
       return parts ? `${parts['domain']}.${parts['tld']}` : ''
     },
+
     timeAgo(value) {
       if (!value) return ''
+
       return distanceInWordsStrict(new Date(), new Date(value), {
         addSuffix: true
       })
     }
   },
+
   props: {
     item: {
       type: Object,
       required: true
     }
   },
+
   computed: {
     votes() {
       const votes = this.item.votes.length
       const suffix = votes === 1 ? 'vote' : 'votes'
+
       return `${votes} ${suffix}`
     }
   },
+
   methods: {
     addComment({ body }) {
-      this.$emit('addComment', { postId: this.item.id, body })
+      this.$emit('addComment', {
+        postId: this.item.id,
+        body
+      })
     }
   },
+
   components: {
     CommentForm
   }
@@ -5410,7 +5331,7 @@ export default {
 </script>
 ```
 
-最后，更新 `pages/_id.vue` 页面以处理 `addComment` 事件。我们需要调度一个动作来保存新评论。
+最后，更新`pages/_id.vue`页面以处理`addComment`事件。我们需要调度一个动作来保存新评论。
 
 **client/pages/_id.vue**
 
@@ -5431,20 +5352,19 @@ export default {
   async fetch({ params, store }) {
     const { post } = await store.dispatch('post', params.id)
   },
+
   methods: {
     async addComment(payload) {
       await store.dispatch('addComment', payload)
     }
   },
+
   components: {
     NewsItem
   }
 }
 </script>
 ```
-
-
-
 
 ```javascript
 state: {
@@ -5453,25 +5373,31 @@ state: {
 },
 ```
 
-首先，我们添加一个 `selectedPost` 属性来存储用户正在查看的文章。
+首先，我们添加一个`selectedPost`属性来存储用户正在查看的文章。
 
 **client/store/index.js**
 
 ```javascript
 actions: {
   // ...
+
   async getComments({ commit }, { postId }) {
     try {
       const res = await this.$axios.get(
         `/api/posts/${postId}?_embed=comments`
       )
-      commit('setSelectedPost', { post: res.data })
+
+      commit('setSelectedPost', {
+        post: res.data
+      })
     } catch (error) {
       console.error(error)
     }
   },
+
   async saveComment({ commit, state }, { body }) {
     const user = this.$auth.user
+
     const data = {
       id: uuid(),
       postId: state.selectedPost.id,
@@ -5483,7 +5409,9 @@ actions: {
 
     try {
       const res = await this.$axios.post('/api/comments', data)
-      commit('addComment', { comment: res.data })
+      commit('addComment', {
+        comment: res.data
+      })
     } catch (error) {
       console.error(error)
     }
@@ -5491,7 +5419,7 @@ actions: {
 },
 ```
 
-这两个 action 都与我们之前创建的相似，所以这段代码没有特别需要说明的。不过，值得提到的是，我们重新从 API 请求了选中的文章，但在 URL 中添加了 `?_embed=comments`。这将告诉 `json-server-auth` 返回文章，并将所有相关的评论以数组的形式附加。
+这两个 action 都与我们之前创建的相似，所以这段代码没有特别需要说明的。不过，值得提到的是，我们重新从 API 请求了选中的文章，但在 URL 中添加了`?_embed=comments`。这将告诉`json-server-auth`返回文章，并将所有相关的评论以数组的形式附加。
 
 我们还需要几个额外的 mutation。
 
@@ -5500,20 +5428,22 @@ actions: {
 ```javascript
 mutations: {
   // ...
+
   addComment(state, { comment }) {
     state.selectedPost.comments.push(comment)
   },
+
   setSelectedPost(state, { post }) {
     state.selectedPost = post
   },
 },
 ```
 
-提交 `setSelectedPost` 将传递的 `post` 对象赋值给 store 状态中的 `selectedPost` 键。`addComment` mutation 获取评论（它已通过我们的 API 持久化），并将其推入当前文章的 `comments` 数组中，从而允许视图进行更新。
+提交`setSelectedPost`将传递的`post`对象赋值给 store 状态中的`selectedPost`键。`addComment` mutation 获取评论（它已通过我们的 API 持久化），并将其推入当前文章的`comments`数组中，从而允许视图进行更新。
 
 ### 显示已评论
 
-你可能已经我们没有页面的任何地方显示评论！让我们通过更新 `NewsItem` 来修复这一点，如果文章对象上存在评论，则显示它们。打开该组件，并在模板中的闭合 `</nav>` 标签下方添加以下标记。
+你可能已经发现我们没有在页面的任何地方显示评论！让我们通过更新`NewsItem`来修复这一点，如果文章对象上存在评论，则显示它们。打开该组件，并在模板中的闭合`</nav>`标签下方添加以下标记。
 
 **client/components/NewsItem.vue**
 
@@ -5528,12 +5458,15 @@ mutations: {
       <img src="https://bulma.../Images/placeholders/96x96.png">
     </p>
   </figure>
+
   <div class="media-content">
     <div class="content">
       <p>
         {{ comment.body }}
         <br>
-        <small>{{ comment.author }} · {{ comment.timestamp | timeAgo }}</small>
+        <small>
+          {{ comment.author }} · {{ comment.timestamp | timeAgo }}
+        </small>
       </p>
     </div>
   </div>
@@ -5547,6 +5480,7 @@ computed: {
   comments() {
     return this.item.comments || []
   },
+
   votes() {
     // ...
   }
@@ -5566,13 +5500,19 @@ computed: {
 ```javascript
 actions: {
   // ...
+
   async upvotePost({ commit }, { postId }) {
     const postUrl = `/api/posts/${postId}`
+
     try {
       const { data } = await this.$axios.get(postUrl)
+
       data.votes.push(this.$auth.user.id)
+
       const res = await this.$axios.put(postUrl, data)
-      commit('updatePost', { post: res.data })
+      commit('updatePost', {
+        post: res.data
+      })
     } catch (error) {
       console.error(error)
     }
@@ -5580,35 +5520,38 @@ actions: {
 },
 ```
 
-我们的 `upvotePost` action 接收要点赞的文章的 ID。首先，我们从 API 重新获取文章，并将当前用户的 ID 推入 `votes` 数组。在将文章保存回服务器后，我们提交 `updatePost` mutation，我们将在下一步编写它。
+我们的`upvotePost` action 接收要点赞的文章的 ID。首先，我们从 API 重新获取文章，并将当前用户的 ID 推入`votes`数组。在将文章保存回服务器后，我们提交`updatePost` mutation，我们将在下一步编写它。
 
 **client/store/index.js**
 
 ```javascript
 mutations: {
   // ...
+
   updatePost(state, { post }) {
     const index = state.posts.findIndex(p => p.id === post.id)
+
     if (index >= 0) {
       state.posts.splice(index, 1, post)
     }
-    if (state.selectedPost && state.selectedPost.id === post.id) {
+
+    if (
+      state.selectedPost &&
+      state.selectedPost.id === post.id
+    ) {
       state.selectedPost.votes = post.votes
     }
   }
 },
 ```
 
-这个 mutation 查找被点赞文章的索引，并用服务器返回的副本替换它。如果用户是从列表视图点赞的，他们将看到票数动态更新。我们还检查 `selectedPost` 是否设置以及是否与被点赞的文章相同，并更新 `votes` 属性。
+这个 mutation 查找被点赞文章的索引，并用服务器返回的副本替换它。如果用户是从列表视图点赞的，他们将看到票数动态更新。我们还检查`selectedPost`是否设置以及是否与被点赞的文章相同，并更新`votes`属性。
 
-
-
-
-```
- plugins: ['~/plugins/vue-kindergarten'],
+```javascript
+plugins: ['~/plugins/vue-kindergarten'],
 ```
 
-我们的下一步是创建一个 `perimeter`（边界）。该文件包含了针对特定实体或场景的所有权限逻辑。在 Nuxt 项目中创建一个名为 `perimeters` 的新文件夹，并添加一个名为 `postsPerimeter.js` 的新文件，内容如下：
+我们的下一步是创建一个`perimeter`（边界）。该文件包含了针对特定实体或场景的所有权限逻辑。在 Nuxt 项目中创建一个名为`perimeters`的新文件夹，并添加一个名为`postsPerimeter.js`的新文件，内容如下：
 
 `client/perimeters/postsPerimeter.js`
 
@@ -5638,16 +5581,19 @@ export default createPerimeter({
 })
 ```
 
-在这里，我们从 `vue-kindergarten` 模块导入了 `createPerimeter` 函数，并使用它来定义一个新的边界，或者说一组规则。`purpose` 属性允许我们定义规则所应用的实体名称。当我们将边界添加到组件中时，它的规则将可以在模板内的 `$post` 变量下可用。
 
-该边界包含了几个辅助方法，用于检查用户是否已登录，以及他们是否是特定帖子的作者。我们还有一个 `can` 属性，允许我们定义当前用户允许执行的操作。在这里，我们添加了一个 `upvote` 方法，只有当用户已验证身份、不是该帖子的作者且尚未对该帖子点过赞时，该方法才会返回 `true`。
 
-让我们看看如何在我们的“新帖子”页面中使用此边界，来控制谁允许对任何帖子进行投票。
+在这里，我们从`vue-kindergarten`模块导入了`createPerimeter`函数，并使用它来定义一个新的边界，或者说一组规则。`purpose`属性允许我们定义规则所应用的实体名称。当我们将边界添加到组件中时，它的规则将可以在模板内的`$post`变量下可用。
+
+该边界包含了几个辅助方法，用于检查用户是否已登录，以及他们是否是特定帖子的作者。我们还有一个`can`属性，允许我们定义当前用户允许执行的操作。在这里，我们添加了一个`upvote`方法，只有当用户已验证身份、不是该帖子的作者且尚未对该帖子点过赞时，该方法才会返回`true`。
+
+让我们看看如何在我们的“新帖子”页面中使用此边界，来控制谁允许 任何帖子进行投票。
 
 `client/pages/new.vue`
 
 ```vue
 <script>
+
 import { mapActions, mapGetters } from 'vuex'
 import postsPerimeter from '~/perimeters/postsPerimeter'
 import NewsItem from '~/components/NewsItem'
@@ -5668,10 +5614,11 @@ export default {
   },
   perimeters: [postsPerimeter]
 }
+
 </script>
 ```
 
-你们中敏锐的人可能已经注意到，我们正在导入新的边界，并将其添加到组件的一个新的 `perimeters` 数组中。这里的唯一变化是 `onUpvote` 方法，我们在那里使用 `this.$isAllowed` 辅助方法来检查是否应该提交投票。
+你们中敏锐的人可能已经注意到，我们正在导入新的边界，并将其添加到组件的一个新的`perimeters`数组中。这里的唯一变化是`onUpvote`方法，我们在那里使用`this.$isAllowed`辅助方法来检查是否应该提交投票。
 
 如你所见，所有的检查逻辑都清晰地封装在边界中。如果我们决定在未来添加额外的要求（例如，用户必须确认其电子邮件地址，或者在网站上必须有最低排名），我们可以这样做，而无需对组件进行任何更改。
 
@@ -5755,18 +5702,15 @@ npm install lodash d3 moment
 
 ## 组件结构
 
-即使这是一个运行部分较少的简单应用，我们仍然采用组件化的方法，而不是将所有代码堆在 `App.vue` 文件中。我们将有两个组件：`App` 组件和一个我们尚未创建的 `Chart` 组件。
+即使这是一个运行部分较少的简单应用，我们仍然采用组件化的方法，而不是将所有代码堆在`App.vue`文件中。我们将有两个组件：`App`组件和一个我们尚未创建的`Chart`组件。
 
-`App` 组件将处理从 GitHub 获取数据，然后将这些数据作为 props 传递给 `Chart` 组件。图表的绘制将在 `Chart` 组件内部完成。
+`App`组件将处理从 GitHub 获取数据，然后将这些数据作为 props 传递给`Chart`组件。图表的绘制将在`Chart`组件内部完成。
 
 ## 构建搜索界面
 
-
-
-
 我们将首先构建一个搜索界面，让用户可以输入他们想要可视化的仓库名称。
 
-在 `src/App.vue` 中，删除 `<template>` 标签内的所有内容，并替换为以下内容：
+在`src/App.vue`中，删除 `<template>` 标签内的所有内容，并替换为以下内容：
 
 ```html
 <template>
@@ -5785,7 +5729,7 @@ npm install lodash d3 moment
 </template>
 ```
 
-这里我们有一个表单，它在提交时会阻止浏览器的默认提交行为，然后调用一个我们尚未定义的 `getIssues` 方法。我们还使用了 `v-model` 指令将表单的输入绑定到 Vue 实例数据模型中的 `repository` 属性上。让我们将该属性 `repository` 声明为空字符串。我们还会添加一个 `startDate` 属性，稍后我们将将其用作我们时间范围内的第一个日期：
+这里我们有一个表单，它在提交时会阻止浏览器的默认提交行为，然后调用一个我们尚未定义的`getIssues`方法。我们还使用了`v-model`指令将表单的输入绑定到 Vue 实例数据模型中的`repository`属性上。让我们将该属性 `repository` 声明为空字符串。我们还会添加一个`startDate`属性，稍后我们将将其用作我们时间范围内的第一个日期：
 
 ```javascript
 import moment from "moment";
@@ -5808,14 +5752,13 @@ export default {
 };
 ```
 
-现在来创建 `getIssues` 方法：
+现在来创建`getIssues`方法：
 
 ```javascript
 getIssues() {
   this.startDate = moment()
     .subtract(6, "days")
     .format("YYYY-MM-DD");
-
   axios
     .get(
       `https://api.github.com/search/issues?q=repo:${this.repository}+is:issue+is:open+created:>=${this.startDate}`,
@@ -5823,26 +5766,24 @@ getIssues() {
     )
     .then(response => {
       const payload = this.getDateRange();
-
       response.data.items.forEach(item => {
         const key = moment(item.created_at).format("MMM Do YY");
         const obj = payload.filter(o => o.day === key)[0];
         obj.issues += 1;
       });
-
       this.issues = payload;
       console.log(this.issues);
     });
 }
 ```
 
-在上面的代码块中，我们首先将 `startDate` 数据属性设置为六天前，并对其进行格式化以供 GitHub API 使用。
+在上面的代码块中，我们首先将`startDate`数据属性设置为六天前，并对其进行格式化以供 GitHub API 使用。
 
-然后我们使用 `axios` 向 GitHub 发起 API 请求，以获取特定仓库在过去一周内开启且仍处于开启状态的所有。如果你需要更多关于如何构建查询参数的示例，可以参考 [GitHub 搜索 API](https://help.github.com/articles/searching-for-repositories/)。
+然后我们使用`axios`向 GitHub 发起 API 请求，以获取特定仓库在过去一周内开启且仍处于开启状态的所有。如果你需要更多关于如何构建查询参数的示例，可以参考 [GitHub 搜索 API](https://help.github.com/articles/searching-for-repositories/)。
 
-在发送 HTTP 请求时，我们将每页结果数设置为 100（最大值）。几乎没有哪个仓库每周会有超过 100 个新 issue，所以这对于我们的目的来说应该是足够的。默认情况下，`per_page` 的值为 30。
+在发送 HTTP 请求时，我们将每页结果数设置为 100（最大值）。几乎没有哪个仓库每周会有超过 100 个新 issue，所以这对于我们的目的来说应该是足够的。默认情况下，`per_page`的值为 30。
 
-如果请求成功完成，我们将使用自定义的 `getDateRange` 方法来初始化 `payload` 变量，并能够将其传递给 `Chart` 组件。这个 payload 是一个对象数组，格式如下：
+如果请求成功完成，我们将使用自定义的`getDateRange`方法来初始化`payload`变量，并能够将其传递给`Chart`组件。这个 payload 是一个对象数组，格式如下：
 
 ```json
 [
@@ -5858,9 +5799,9 @@ getIssues() {
 
 之后，我们遍历 API 的响应。我们感兴趣的数据在 `response` 对象的 `data` 属性的 `items` 键中。从这里，我们提取出 `created_at` 键（这是一个时间戳），并将其格式化为上述对象中的 `day` 属性。然后，我们在 `payload` 数组中查找对应的日期，并使该日期的 issues 计数加 1。
 
-最后，我们将 `payload` 数组赋值给我们的 `issues` 数据属性并记录响应。
+最后，我们将 `payload` 数组赋值给我们的`issues`数据属性并记录响应。
 
-接下来，让我们添加 `getDateRange` 方法：
+接下来，让我们添加`getDateRange`方法：
 
 ```javascript
 methods: {
@@ -5868,16 +5809,13 @@ methods: {
     const startDate = moment().subtract(6, 'days');
     const endDate = moment();
     const dates = [];
-
     while (startDate.isSameOrBefore(endDate)) {
       dates.push({
         day: startDate.format('MMM Do YY'),
         issues: 0
       });
-
       startDate.add(1, 'days');
     }
-
     return dates;
   },
   getIssues() { ... }
@@ -5911,7 +5849,7 @@ axios
 
 ## 使用 D3 绘制柱状图
 
-早些时候我们提到所有的绘制都将在 `Chart` 组件内部处理。让我们创建这个组件：
+早些时候我们提到所有的绘制都将在`Chart`组件内部处理。让我们创建这个组件：
 
 ```bash
 touch src/components/Chart.vue
@@ -5927,7 +5865,7 @@ D3 于 SVG 元素，为了让我们用 D3 绘制任何内容，我们需要在�
 </template>
 ```
 
-对于本教程，我们将使用柱状图来可视化数据。在继续之前，让我们更新 `App` 组件以包含 `Chart` 组件：
+对于本教程，我们将使用柱状图来可视化数据。在继续之前，让我们更新`App`组件以包含`Chart`组件：
 
 ```html
 <template>
@@ -5935,7 +5873,6 @@ D3 于 SVG 元素，为了让我们用 D3 绘制任何内容，我们需要在�
     <form action="#" @submit.prevent="getIssues">
       ...
     </form>
-
     <chart :issues="issues"></chart>
   </div>
 </template>
@@ -5955,13 +5892,13 @@ export default {
 }
 ```
 
-注意我们将 `issues` 属性的值作为 prop 传递给 `Chart` 组件：
+注意我们将`issues`属性的值作为 prop 传递给`Chart`组件：
 
 ```html
 <chart :issues="issues"></chart>
 ```
 
-现在更新我们的 `Chart` 组件以使用这些数据：
+现在更新我们的`Chart`组件以使用这些数据：
 
 ```javascript
 <script>
@@ -5990,14 +5927,16 @@ export default {
 </script>
 ```
 
-在上面的代码块中，我们导入了 D3 和 Lodash。然后我们实例化为 `null` 的 `chart` 数据属性。当我们之后开始绘制时，将为其赋值。
 
-由于我们希望在每次 `issues` 的值变化时都绘制图表，我们为 `issues` 创建了一个监听器（https://vuejs.org/v2/guide/computed.html#Watchers）。每当该值变化时，我们将销毁旧图表然后绘制新图表。
 
-绘制将在 `renderChart` 方法中进行。让我们完善它：
+在上面的代码块中，我们导入了 D3 和 Lodash。然后我们实例化为`null`的`chart`数据属性。当我们之后开始绘制时，将为其赋值。
+
+由于我们希望在每次`issues`的值变化时都绘制图表，我们为`issues`创建了一个监听器（https://vuejs.org/v2/guide/computed.html#Watchers）。每当该值变化时，我们将销毁旧图表然后绘制新图表。
+
+绘制将在`renderChart`方法中进行。让我们完善它：
 
 ```javascript
-renderChart(issues_val) {
+ renderChart(issues_val) {
   const margin = 60;
   const svg_width = 1000;
   const svg_height = 600;
@@ -6011,25 +5950,22 @@ renderChart(issues_val) {
 }
 ```
 
-在这里，我们设置刚刚创建的 SVG 元素的高度和宽度。`margin` 属性是我们将用来给图表提供留边距的。
+在这里，我们设置刚刚创建的 SVG 元素的高度和宽度。`margin`属性是我们将用来给图表提供留边距的。
 
+D3 具备 DOM 选择和操纵能力。在整个教程中，你会看到大量的`d3.select`和`d3.selectAll`语句。区别在于[select](https://github.com/d3/d3-selection#select)会返回第一个匹配的元素，而[selectAll](https://github.com/d3/d3-selection#selectAll)返回所有匹配的元素。
 
+## 轴（The Axes）
 
+对于柱状图，数据可以以垂直或水平的形式表示。D3 提供了[轴方法](https://github.com/d3/d3-axis/blob/master/README.md#axisTop)，让我们能够按照自己的意定义轴：
 
-D3 具备 DOM 选择和操纵能力。在整个教程中，你会看到大量的 `d3.select` 和 `d3.selectAll` 语句。区别在于 [select](https://github.com/d3/d3-selection#select) 会返回第一个匹配的元素，而 [selectAll](https://github.com/d3/d3-selection#selectAll) 返回所有匹配的元素。
+- `axisLeft`
+- `axisTop`
+- `axisBottom`
+- `axisRight`
 
-## 轴 (The Axes)
+今天，我们将创建一个垂直柱状图。对于垂直柱状图，我们只需要`axisLeft`和`axisBottom`方法：
 
-对于柱状图，数据可以以垂直或水平的形式表示。D3 提供了 [轴方法](https://github.com/d3/d3-axis/blob/master/README.md#axisTop)，让我们能够按照自己的意定义轴：
-
-* `axisLeft`
-* `axisTop`
-* `axisBottom`
-* `axisRight`
-
-今天，我们将创建一个垂直柱状图。对于垂直柱状图，我们只需要 `axisLeft` 和 `axisBottom` 方法：
-
-```
+```javascript
 renderChart(issues_val) {
   ...
 
@@ -6061,61 +5997,61 @@ renderChart(issues_val) {
 
 上面的代码块在 SVG 元素上绘制轴。让我们逐步分析它：
 
-```
-this.chart = svg.append('g')
-  .attr('transform', `translate(${margin}, ${margin})`);
+```javascript
+this.chart = svg.append("g")
+  .attr("transform", `translate(${margin}, ${margin})`);
 ```
 
-我们首先指定图表在 SVG 元素中的起始位置。在使用 D3 时，对于任何我们想要添加到 SVG 中的元素，我们通常调用 `append` 方法，然后为该新元素定义属性。
+我们首先指定图表在 SVG 元素中的起始位置。在使用 D3 时，对于任何我们想要添加到 SVG 中的元素，我们通常调用`append`方法，然后为该新元素定义属性。
 
-要为元素添加属性，我们通常调用 `attr` 方法，它接受两个参数。第一个参数是我们要应用到所选 DOM 元素的属性，第二个参数是我们想要的值，或者是一个返回所需值的回调函数。在这里，我们将图表的起始位置移动到 SVG 的 `60, 60` 位置：
+要为元素添加属性，我们通常调用`attr`方法，它接受两个参数。第一个参数是我们要应用到所选 DOM 元素的属性，第二个参数是我们想要的值，或者是一个返回所需值的回调函数。在这里，我们将图表的起始位置移动到 SVG 的`60, 60`位置：
 
-```
+```javascript
 const yScale = d3.scaleLinear()
   .range([chart_height, 0])
-  .domain([0, _.maxBy(issues_val, 'issues').issues]);
+  .domain([0, _.maxBy(issues_val, "issues").issues]);
 
-this.chart.append('g')
+this.chart.append("g")
   .call(d3.axisLeft(yScale)
-  .ticks(_.maxBy(issues_val, 'issues').issues));
+  .ticks(_.maxBy(issues_val, "issues").issues));
 ```
 
 这段代码块在绘制 y 轴的同时，利用 D3 [scales](https://github.com/d3/d3-scale) 来生成 y 轴比例尺。比例尺是函数，通过增加或减少数值来转换我们的数据，以实现更好的可视化。
 
-`range` 函数指定了输入数据限制之间划分的长度。你可能注意到我在调用 `range` 时使用高度作为第一个参数而不是零。这是因为 SVG 坐标系统从左上角开始。当我们开始绘制柱体高度时，你会对此此有更好的理解。
+`range`函数指定了输入数据限制之间划分的长度。你可能注意到我在调用`range`时使用高度作为第一个参数而不是零。这是因为 SVG 坐标系统从左上角开始。当我们开始绘制柱体高度时，你会对此此有更好的理解。
 
-![SVG scale](img/svg-scale.png) 
+![SVG scale](img/svg-scale.png)
 
-另一方面，`domain` 函数表示输入数据的最小值和最大值。对于这个特定的数据集，我们希望从零开始到数据集中的最高值。将 `domain` 视为输入，将 `range` 视为输出。
+另一方面，`domain`函数表示输入数据的最小值和最大值。对于这个特定的数据集，我们希望从零开始到数据集中的最高值。将`domain`视为输入，将`range`视为输出。
 
-定义 y 轴比例尺后，我们通过调用 `axisLeft` 方法使用该比例尺绘制轴，该方法接受 `y-scale` 作为参数。
+定义 y 轴比例尺后，我们通过调用`axisLeft`方法使用该比例尺绘制轴，该方法接受`y-scale`作为参数。
 
 下面的代码段绘制了 x 轴：
 
-```
+```javascript
 const xScale = d3.scaleBand()
   .range([0, chart_width])
   .domain(issues_val.map((s) => s.day))
-  .padding(0.2)
+  .padding(0.2);
 
-this.chart.append('g')
-  .attr('transform', `translate(0, ${chart_height})`)
+this.chart.append("g")
+  .attr("transform", `translate(0, ${chart_height})`)
   .call(d3.axisBottom(xScale));
 ```
 
-对于 `xScale`，我们使用 `scaleBand` 函数，它帮助将范围划分成若干带额外间距的带（bands），并计算柱体的坐标和宽度。假设所有日期中提出的问题最大数为 3，图表的输出应该如下：
+对于`xScale`，我们使用`scaleBand`函数，它帮助将范围划分成若干带额外间距的带（bands），并计算柱体的坐标和宽度。假设所有日期中提出的问题最大数为 3，图表的输出应该如下：
 
-![Axes](img/axes.png) 
+![Axes](img/axes.png)
 
 如果你在浏览器中使用我们目前涵盖的代码进行测试，你应该能看到类似的内容。
 
 现在轴的部分就够了。让我们画些柱子吧！
 
-## 绘制柱体 (Drawing Bars)
+## 绘制柱体（Drawing Bars）
 
 对于我们的柱状图，柱宽将是固定的，柱高将根据数据集的大小而变化：
 
-```
+```javascript
 renderChart(issues_val) {
   ...
 
@@ -6134,60 +6070,57 @@ renderChart(issues_val) {
 }
 ```
 
-上面的代码为数据中的每项项创建一个矩形。我们为这些矩形赋予了 `bar` 类。
+上面的代码为数据中的每项项创建一个矩形。我们为这些矩形赋予了`bar`类。
 
 为了设置矩形的 x 和 y 坐标，我们使用了定义的缩放函数。到目前，这些矩形堆叠在一起的，我们需要赋予柱体高度和宽度。
 
-柱体的宽度将由 `scaleBand` 函数决定。在 `xScale` 上链式调用 `bandwidth` 方法会从 `range` 返回计算出的宽度。
+柱体的宽度将由`scaleBand`函数决定。在`xScale`上链式调用`bandwidth`方法会从`range`返回计算出的宽度。
 
 为了设置柱体高度，我们从 SVG 的高度中减去柱体的计算 y 坐标，以获得值的正确表示。记住，在处理 SVG 时，x 和 y 坐标是从左上角开始计算的。
 
-## 添加标签 (Adding Labels)
+## 添加标签（Adding Labels）
 
 目前我们有一个柱状图。但这个图表并没有帮助，因为它没有告诉用户每个轴代表什么。为了给图表提供更多上下文，我们必须为轴添加标签以及图表标题。
 
-要添加标签，我们向 SVG 添加文本 元素：
+要添加标签，我们向 SVG 添加文本元素：
 
-```
+```javascript
 svg
-  .append('text')
-  .attr('class', 'label')
-  .attr('x', -(chart_height / 2) - margin)
-  .attr('y', margin / 2.4)
-  .attr('transform', 'rotate(-90)')
-  .attr('text-anchor', 'middle')
-  .text('Issues opened')
-
-svg
-  .append('text')
-  .attr('class', 'label')
-  .attr('x', chart_width / 2 + margin)
-  .attr('y', chart_height + margin * 1.7)
-  .attr('text-anchor', 'middle')
-  .text('Days')
+  .append("text")
+  .attr("class", "label")
+  .attr("x", -(chart_height / 2) - margin)
+  .attr("y", margin / 2.4)
+  .attr("transform", "rotate(-90)")
+  .attr("text-anchor", "middle")
+  .text("Issues opened");
 
 svg
-  .append('text')
-  .attr('class', 'title')
-  .attr('x', chart_width / 2 + margin)
-  .attr('y', 40)
-  .attr('text-anchor', 'middle')
-  .text('Issues in the past 1 week')
+  .append("text")
+  .attr("class", "label")
+  .attr("x", chart_width / 2 + margin)
+  .attr("y", chart_height + margin * 1.7)
+  .attr("text-anchor", "middle")
+  .text("Days");
+
+svg
+  .append("text")
+  .attr("class", "title")
+  .attr("x", chart_width / 2 + margin)
+  .attr("y", 40)
+  .attr("text-anchor", "middle")
+  .text("Issues in the past 1 week");
 ```
 
+文本元素可以使用`x`和`y`坐标进行定位，而文本对齐则通过`text-anchor`属性完成。要添加文本本身，我们在文本元素上调用了`text`方法。
 
+我们可以通过启动应用并搜索一个仓库来测试这些功能。搜索任何热门的仓库——例如`facebook/react`：
 
+![React Issues](img/facebook-react.png)
 
-文本元素可以使用 `x` 和 `y` 坐标进行定位，而文本对齐则通过 `text-anchor` 属性完成。要添加文本本身，我们在文本元素上调用了 `text` 方法。
+回到我们的`App`组件，我们现在可以删除`getIssues`方法内部的`console.log`语句了：
 
-我们可以通过启动应用并搜索一个仓库来测试这些功能。搜索任何热门的仓库——例如 `facebook/react`：
-
-![React Issues](img/facebook-react.png) 
-
-回到我们的 `App` 组件，我们现在可以删除 `getIssues` 方法内部的 `console.log` 语句了：
-
-```
-console.log(this.issues)
+```javascript
+console.log(this.issues);
 ```
 
 尽管我们的图表在数据可视化方面表现得出色，但在用户体验方面仍有许多工作要做。在下一节中，我们将学习如何为 D3 图表添加过渡效果。
@@ -6196,11 +6129,11 @@ console.log(this.issues)
 
 对于这个特定的图表，我们希望实现这样的效果：当鼠标悬停在一个柱形元素上时，它的颜色会发生，并且柱形代表的 issue 数量将出现在柱形的顶部。
 
-为了实现这一效果，我们需要对 `barGroups` 的 `mouseEnter` 和 `mouseLeave` 事件进行一些[事件处理](https://github.com/d3/d3-selection/blob/master/README.md#handling-events)。
+为了实现这一效果，我们需要对`barGroups`的`mouseEnter`和`mouseLeave`事件进行一些[事件处理](https://github.com/d3/d3-selection/blob/master/README.md#handling-events)。
 
-编辑三个 `svg` 块上面的 `barGroups` 代码块：
+编辑三个`svg`块上面的`barGroups`代码块：
 
-```
+```javascript
 barGroups
   ...
   .attr("width", xScale.bandwidth())
@@ -6211,6 +6144,7 @@ barGroups
       .attr("opacity", 0.6)
       .attr("x", a => xScale(a.day) - 5)
       .attr("width", xScale.bandwidth() + 10);
+
     barGroups
       .append("text")
       .attr("class", "value")
@@ -6223,13 +6157,13 @@ barGroups
   });
 ```
 
-在处理 D3 时，我们通过调用[过渡方法](https://github.com/d3/d3-transition/blob/master/README.md#selection_transition) 为元素添加动画。
+在处理 D3 时，我们通过调用[过渡方法](https://github.com/d3/d3-transition/blob/master/README.md#selection_transition)为元素添加动画。
 
-每当光标悬停在柱形上时，我们都会降低柱形的透明度并增加 `10px` 的宽度。我们还在柱形上方添加文本，说明该柱形代表的 issue 数量。此过渡持续时间为 300 毫秒。
+每当光标悬停在柱形上时，我们都会降低柱形的透明度并增加`10px`的宽度。我们还在柱形上方添加文本，说明该柱形代表的 issue 数量。此过渡持续时间为 300 毫秒。
 
-由于我们不希望在鼠标离开时让柱形保持在新的状态，让我们定义一个 `mouseleave` 事件，用于移除我们在 `mouseenter` 事件中应用的选择特性：
+由于我们不希望在鼠标离开时让柱形保持在新的状态，让我们定义一个`mouseleave`事件，用于移除我们在`mouseenter`事件中应用的选择特性：
 
-```
+```javascript
 barGroups
   ...
   .attr("width", xScale.bandwidth())
@@ -6250,44 +6184,46 @@ barGroups
 
 我们在上面做的是将柱形的透明度恢复到原始值，并移除柱形上的文本。
 
-```
-svg.selectAll('.value').remove();
+```javascript
+svg.selectAll(".value").remove();
 ```
 
-上述代码移除了 DOM 中任何带有 `value` 类的文本。
+上述代码移除了 DOM 中任何带有`value`类的文本。
 
 这里是最终结果：
 
-![Transitions](img/transitions.png) 
+![Transitions](img/transitions.png)
 
 如果你现在在浏览器中尝试，你应该能看到类似上面的内容。
 
 ### 一些最后的 UI/UX 优化
 
-在向 GitHub 发请求时，我们预计在收到响应之前会有一些加载时间。出于用户体验考虑，我们将通过在页面上闪烁加载警报，让用户意识到我们仍在从 GitHub 获取结果。在 `App` 组件中，将此代码段添加到代码的 HTML 部分——紧邻 `Chart` 组件上方：
+在向 GitHub 发请求时，我们预计在收到响应之前会有一些加载时间。出于用户体验考虑，我们将通过在页面上闪烁加载警报，让用户意识到我们仍在从 GitHub 获取结果。在`App`组件中，将此代码段添加到代码的 HTML 部分——紧邻`Chart`组件上方：
 
-```
-<div class="alert alert-info" v-show="loading">Loading...</div
+```html
+<div class="alert alert-info" v-show="loading">Loading...</div>
+
 <chart :issues="issues"></chart>
 ```
 
 出于原型设计的目的，我们将利用 Bootstrap。Vue 有一个官方的 Bootstrap 软件包，我们将安装它：
 
-```
+```bash
 npm install bootstrap-vue
 ```
 
-一旦安装了该包，我们需要将 Bootstrap 的 CSS 类导入到 `main.js` 文件中，以便警报能够显示：
+一旦安装了该包，我们需要将 Bootstrap 的 CSS 类导入到`main.js`文件中，以便警报能够显示：
 
-```
+```javascript
 [...]
+
 import "bootstrap/dist/css/bootstrap.css";
 import "bootstrap-vue/dist/bootstrap-vue.css";
 ```
 
-我们快要完成了，但我们需要在数据模型中添加一个 `loading` 属性——其值将决定是否显示加载警报：
+我们快要完成了，但我们需要在数据模型中添加一个`loading`属性——其值将决定是否显示加载警报：
 
-```
+```javascript
 data() {
   return {
     loading: false,
@@ -6296,40 +6232,44 @@ data() {
 },
 ```
 
-每当我们发送一个新请求时，都会将 `loading` 的值设置为 `true`，这样警报就会显示，最后在请求成功或应用出错时，我们将此值设为 `false`：
+每当我们发送一个新请求时，都会将`loading`的值设置为`true`，这样警报就会显示，最后在请求成功或应用出错时，我们将此值设为`false`：
 
-```
+```javascript
 getIssues() {
   this.loading = true;
   ...
-  axios.get( ... )
+  axios.get( ... );
 }
 ```
 
 ### 错误处理
 
-在向 GitHub 发请求时，我们预计在从 GitHub 响应之前会有一些加载时间。出于用户体验考虑，我们将通过在页面上闪烁加载警报，让用户意识到我们仍在从 GitHub 获取结果。在 `App` 组件中，将此代码段添加到代码的 HTML 部分——紧邻 `Chart` 组件上方：
+在向 GitHub 发请求时，我们预计在从 GitHub 响应之前会有一些加载时间。出于用户体验考虑，我们将通过在页面上闪烁加载警报，让用户意识到我们仍在从 GitHub 获取结果。在`App`组件中，将此代码段添加到代码的 HTML 部分——紧邻`Chart`组件上方：
 
-```
-<div class="alert alert-info" v-show="loading">Loading...</div
+```html
+<div class="alert alert-info" v-show="loading">Loading...</div>
+
 <chart :issues="issues"></chart>
 ```
 
 出于原型设计的目的，我们将利用 Bootstrap。Vue 有一个官方的 Bootstrap 软件包，我们将安装它：
 
-```
+```bash
 npm install bootstrap-vue
 ```
 
-一旦安装了该包，我们需要将 Bootstrap 的 CSS 类导入到 `main.js` 文件中，以便警报能够显示：
+一旦安装了该包，我们需要将 Bootstrap 的 CSS 类导入到`main.js`文件中，以便警报能够显示：
 
-```
+```javascript
 [...]
+
 import "bootstrap/dist/css/bootstrap.css";
 import "bootstrap-vue/dist/bootstrap-vue.css";
 ```
 
-我们快要完成了，但我们需要在数据模型中添加一个 `loading` 属性——其值将决定是否显示加载警报：
+
+
+我们快要完成了，但我们需要在数据模型中添加一个`loading`属性——其值将决定是否显示加载警报：
 
 ```
 data() {
@@ -6340,7 +6280,7 @@ data() {
 },
 ```
 
-每当我们发送一个新请求时，都会将 `loading` 的值设置为 `true`，这样警报就会显示，最后在请求成功或应用出错时，我们将此值设为 `false`：
+每当我们发送一个新请求时，都会将`loading`的值设置为`true`，这样警报就会显示，最后在请求成功或应用出错时，我们将此值设为`false`：
 
 ```
 getIssues() {
@@ -6352,7 +6292,7 @@ getIssues() {
 
 ### 样式处理
 
-敏锐的读者会注意到，指南顶部的截图中柱形的颜色是蓝色的。让我们为 `App` 组件添加最后的点缀：
+敏锐的读者会注意到，指南顶部的截图中柱形的颜色是蓝色的。让我们为`App`组件添加最后的点缀：
 
 ```
 <style>
@@ -6380,10 +6320,6 @@ Vue 是一个渐进式框架，允许你通过构建自包含的可用组件集�
 
 ## Live 代码
 
-
-
-
-
 对于那些迫不及待的读者，[点击这里查看在 CodePen 上运行的代码演示](https://codepen.io/SitePoint/pen/ZVLaBN)。
 
 ## 为什么使用模态框（Modal）？
@@ -6404,13 +6340,13 @@ Vue 是一个渐进式框架，允许你通过构建自包含的可用组件集�
 
 如果你打算使用 Vue，你就需要决定你的代码是否将利用 ES6 特性。使用 ES6 特性带有跨浏览器兼容性问题，通常意味着你可能需要使用 Babel 将其转译为旧浏览器可以理解的代码。
 
-对于本指南中的代码，我们将全程使用 ES6。毕竟，它是一项已批准的标准，而且我们正处于一个不需要支持老旧浏览器的有利位置。请注意，当我们将模态转换为 SFC 时，JavaScript 将通过 `webpack` 进行打包和转译。
+对于本指南中的代码，我们将全程使用 ES6。毕竟，它是一项已批准的标准，而且我们正处于一个不需要支持老旧浏览器的有利位置。请注意，当我们将模态转换为 SFC 时，JavaScript 将通过`webpack`进行打包和转译。
 
 ### 核心组件和行为
 
 模态框的重要组件有哪些？我们期望模态框有怎样的行为？
 
-每个模态框包含两个共同组件：`mask`（遮罩层）和 `container`（容器）（我们暂且这样命名）。`mask` 是出现在大多数模态框中的透明深色（或白色）背景。模态覆盖在页面的其余内容之上。一旦你点击 `mask`，模态就会退出。相反，`container` 是模态框中“包含”重要内容的部分。
+每个模态框包含两个共同组件：`mask`（遮罩层）和`container`（容器）（我们暂且这样命名）。`mask`是出现在大多数模态框中的透明深色（或白色）背景。模态覆盖在页面的其余内容之上。一旦你点击`mask`，模态就会退出。相反，`container`是模态框中“包含”重要内容的部分。
 
 有了这些知识，创建一个可复用的模态组件就变得超级简单，因为我们已经能够将其设计精简为两个主要部分。
 
@@ -6418,7 +6354,7 @@ Vue 是一个渐进式框架，允许你通过构建自包含的可用组件集�
 
 ## 构建模态组件
 
-现在是时候开始有趣的内容了。首先，创建一个名为 `modal.html` 的文件并添加以下代码。这从 CDN 引入了我们的依赖项，并定义了遮罩和容器的 HTML 结构：
+现在是时候开始有趣的内容了。首先，创建一个名为`modal.html`的文件并添加以下代码。这从 CDN 引入了我们的依赖项，并定义了遮罩和容器的 HTML 结构：
 
 ```
 <!DOCTYPE html>
@@ -6437,14 +6373,13 @@ Vue 是一个渐进式框架，允许你通过构建自包含的可用组件集�
       <div class="modal-container"></div>
     </div>
   </div>
-
   <script src="https://cdn.jsdelivr.net/npm/vue@2.5.21/dist/vue.js"></script>
   <script></script>
 </body>
 </html>
 ```
 
-接下来，在 `<head>` 部分的 `<style>` 块中添加一些基础样式：
+接下来，在`<head>`部分的`<style>`块中添加一些基础样式：
 
 ```
 .modal-mask{
@@ -6457,6 +6392,7 @@ Vue 是一个渐进式框架，允许你通过构建自包含的可用组件集�
   background-color: rgba(0, 0, 0, .3);
   overflow-y:auto;
 }
+
 .modal-container {
   width: 80%;
   height: auto;
@@ -6470,7 +6406,7 @@ Vue 是一个渐进式框架，允许你通过构建自包含的可用组件集�
 }
 ```
 
-在浏览器中打开该文件。你会发现模态遮罩是一个透明的深色背景。高度和宽度被设置为 100%，因为我们希望在模态获得焦点时它占据整个页面。模态框的容器是一个占据宽度 80% 的 `<div>` 元素。
+在浏览器中打开该文件。你会发现模态遮罩是一个透明的深色背景。高度和宽度被设置为 100%，因为我们希望在模态获得焦点时它占据整个页面。模态框的容器是一个占据宽度 80% 的`<div>`元素。
 
 ### 创建 Vue 组件
 
@@ -6521,15 +6457,12 @@ Vue.component("modal", {
 });
 ```
 
-最后，我们更新根实例以监听 `close` 事件并隐藏模态框：
+最后，我们更新根实例以监听`close`事件并隐藏模态框：
 
 ```html
 // 更新 HTML 中的组件标签
 <modal :show_modal="showModal" @close="showModal = false"></modal>
 ```
-
-
-
 
 ```
 Vue.component("modal", {
@@ -6552,7 +6485,7 @@ Vue.component("modal", {
 </template>
 ```
 
-现在当点击遮罩层时，模态组件会触发一个 `close_modal` 事件。我们在根 Vue 实例中捕获该事件，并将模态的显示状态切换为 `false`：
+现在当点击遮罩层时，模态组件会触发一个`close_modal`事件。我们在根 Vue 实例中捕获该事件，并将模态的显示状态切换为`false`：
 
 ```html
 <modal :show_modal="showModal" @close_modal="actCloseModal"></modal>
@@ -6616,6 +6549,7 @@ methods: {
 .form-btn {
   float: right;
 }
+
 .clearfix::after {
   content: "";
   clear: both;
@@ -6623,7 +6557,7 @@ methods: {
 }
 ```
 
-我们不会为身份验证组件实现后端，所以按钮什么都不做是合理的。尽管如此，让我们在组件上定义 `email` 和 `password` 数据属性，因为我们在登录表单中的输入已经通过 [v-model 指令](https://vuejs.org/v2/guide/forms.html)指向了它们。这对于实现表单验证很有用。我们不会在教程中实现这一点，但你可以在此 Vue 系列中的教程 *Vue 表单操作初学者指南* 中阅读更多相关内容：
+我们不会为身份验证组件实现后端，所以按钮什么都不做是合理的。尽管如此，让我们在组件上定义`email`和`password`数据属性，因为我们在登录表单中的输入已经通过 [v-model 指令](https://vuejs.org/v2/guide/forms.html)指向了它们。这对于实现表单验证很有用。我们不会在教程中实现这一点，但你可以在此 Vue 系列中的教程 *Vue 表单操作初学者指南* 中阅读更多相关内容：
 
 ```
 Vue.component("modal", {
@@ -6639,7 +6573,7 @@ Vue.component("modal", {
 });
 ```
 
-打开你的 `modal.html`，然后……砰！我们自己创建了一个登录模态框。
+打开你的`modal.html`，然后……砰！我们自己创建了一个登录模态框。
 
 由于一切运行得非常顺畅，我们有机会思考更优雅的处理方法。
 
@@ -6688,15 +6622,14 @@ Vue.component("login", {
 
 ```html
 <template id="modal-template">
-  <div class="modal-mask" v-if="show_modal" @click="closeModal">
-    <div class="modal-container" @click.stop>
-      <slot></slot>
-    </div>
+
+
+
+<div class="modal-mask" v-if="show_modal" @click="closeModal">
+  <div class="modal-container" @click.stop>
+    <slot></slot>
   </div>
-</template>
-```
-
-
+</div>
 
 我们希望做的是将登录或注册组件分别渲染到模态组件中。假设网页上有两个按钮，点击其中一个显示登录模态框，另一个显示注册模态框。我们的代码应该这样写：
 
@@ -6707,17 +6640,17 @@ Vue.component("login", {
 </modal>
 ```
 
-如代码所示，我们的根实例上有一个名为 `choice` 的数据属性，它的值可以是“login”或“register”。然后它作为 prop 使用在我们的模态组件中，如下代码所示：
+如代码所示，我们的根实例上有一个名为`choice`的数据属性，它的值可以是`login`或`register`。然后它作为`prop`使用在我们的模态组件中，如下代码所示：
 
 ```javascript
 Vue.component("modal", {
   template: "#modal-template",
   props: ["show_modal", "choice"],
-  methods: { ... }
+  methods: { /* ... */ }
 });
 
-Vue.component("login", { ... });
-Vue.component("register", { ... });
+Vue.component("login", { /* ... */ });
+Vue.component("register", { /* ... */ });
 
 new Vue({
   el: ".container",
@@ -6727,7 +6660,7 @@ new Vue({
       choice: ""
     };
   },
-  methods: { ... }
+  methods: { /* ... */ }
 });
 ```
 
@@ -6735,22 +6668,21 @@ new Vue({
 
 ```html
 <div class="container">
-  <button v-on:click="actShowModal('login')"> Login </button>
-  <button v-on:click="actShowModal('register')"> Register </button>
-
+  <button v-on:click="actShowModal('login')">Login</button>
+  <button v-on:click="actShowModal('register')">Register</button>
   <modal :show_modal="showModal" @close_modal="actCloseModal" choice="choice">
-    <login v-if="choice === 'login'"> </login>
+    <login v-if="choice === 'login'"></login>
     <register v-else-if="choice === 'register'"></register>
   </modal>
 </div>
 ```
 
-定义在根实例上的 `actShowModal` 方法将变为变为接受一个选择作为参数：
+定义在根实例上的`actShowModal`方法将变为接受一个选择作为参数：
 
 ```javascript
 new Vue({
   el: ".container",
-  data() { ... },
+  data() { /* ... */ },
   methods: {
     actShowModal(choice) {
       this.choice = choice;
@@ -6765,7 +6697,7 @@ new Vue({
 
 ### 一些无障碍改进
 
-我们不应该忽略的一点是，人们可能在使用键盘导航我们的模态框。让我们他们的生活更方便一点：
+我们不应该忽略的一点是，人们可能在使用键盘导航我们的模态框。让我们让他们的生活更方便一点：
 
 ```html
 <div class="container" @keyup.escape.stop="actCloseModal()">
@@ -6773,7 +6705,7 @@ new Vue({
 </div>
 ```
 
-这将允许通过按下 `Esc` 键关闭模态框。
+这将允许通过按下`Esc`键关闭模态框。
 
 当模态框打开时，你可能还想让表单中的第一个元素聚焦。可以通过创建一个如下[自定义指令](https://vuejs.org/v2/guide/custom-directive.html)来实现：
 
@@ -6792,7 +6724,7 @@ Vue.directive("focus", {
 <input v-model="firstName" placeholder="" id="first_name" type="text" v-focus>
 ```
 
-现在，我们全部完成了！我们的模态组件会根据我们点击的按钮，很好地渲染注册和登录组件。打开你的 `modal.html` 查看结果。
+现在，我们全部完成了！我们的模态组件会根据我们点击的按钮，很好地渲染注册和登录组件。打开你的`modal.html`查看结果。
 
 ### 实时代码
 
@@ -6800,19 +6732,19 @@ Vue.directive("focus", {
 
 [这里是 CodePen 上运行的代码演示](https://codepen.io/SitePoint/pen/ZVLaBN)。
 
-我们所做的事情非常有价值，因为它防止了不必要的代码重复。我们最终创建了一个某种程度上“通用”的模态组件。然而，为了使其完全可复用，我们需要将它以及其他组件转换为 SFC（单文件组件），并使用 `webpack` 对我们的代码进行打包以及进行转译，以便它在所有主流浏览器上运行。我们将在教程的下部分完成这些。
+我们所做的事情非常有价值，因为它防止了不必要的代码重复。我们最终创建了一个某种程度上“通用”的模态组件。然而，为了使其完全可复用，我们需要将它以及其他组件转换为 SFC（单文件组件），并使用`webpack`对我们的代码进行打包以及进行转译，以便它在所有主流浏览器上运行。我们将在教程的下部分完成这些。
 
 ## 单文件组件
 
-单文件组件（Single-file components）是在使用 Vue.js 时实现模块化的一种整洁方式。它们允许我们创建包含组件的 `.vue` 文件，而且在处理复杂的应用程序并希望避免在 HTML 文件中编写 Vue 代码所带来的混乱时，它们会非常有用。在我们的情况下，将我们的 `Modal`、`Registration` 和 `Login` 组件转换为 SFC 有助于防止极其笨拙的复制粘贴代码来复用的行为。
+单文件组件（Single-file components）是在使用 Vue.js 时实现模块化的一种整洁方式。它们允许我们创建包含组件的`.vue`文件，而且在处理复杂的应用程序并希望避免在 HTML 文件中编写 Vue 代码所带来的混乱时，它们会非常有用。在我们的情况下，将我们的`Modal`、`Registration`和`Login`组件转换为 SFC 有助于防止极其笨拙的复制粘贴代码来复用的行为。
 
-由于你的浏览器无法读取 `.vue` 文件，我们将使用 [Vue CLI](https://cli.vuejs.org/) 来脚手项目。在底层，它使用了 `webpack` 以及其他几个依赖项来打包我们的代码。
+由于你的浏览器无法读取`.vue`文件，我们将使用[Vue CLI](https://cli.vuejs.org/)来脚手项目。在底层，它使用了`webpack`以及其他几个依赖项来打包我们的代码。
 
 让我们开始吧。
 
 ### 基础设置
 
-要使用 CLI，你需要在系统中安装较新版本的 Node.js。你可以通过[官方网站](https://nodejs.org/) 下载二进制文件，或者使用[版本管理器](https://www.sitepoint.com/quick-tip-multiple-versions-node-nvm/)。这可能是最简单的方法，因为它允许你在同一台机器上管理多个版本的 Node。
+要使用 CLI，你需要在系统中安装较新版本的 Node.js。你可以通过[官方网站](https://nodejs.org/)下载二进制文件，或者使用[版本管理器](https://www.sitepoint.com/quick-tip-multiple-versions-node-nvm/)。这可能是最简单的方法，因为它允许你在同一台机器上管理多个版本的 Node。
 
 接下来，使用以下命令在你的机器上全局安装 Vue CLI：
 
@@ -6838,7 +6770,7 @@ cd my-modal
 npm install materialize
 ```
 
-打开 `src/main.js` 以便包含它并全局化：
+打开`src/main.js`以便包含它并全局化：
 
 ```javascript
 import Vue from "vue";
@@ -6861,13 +6793,13 @@ new Vue({
 
 功能上没有变化，但注意代码变得整洁多了。
 
-接下来，在 `src/components` 文件夹中创建需要的组件：
+接下来，在`src/components`文件夹中创建需要的组件：
 
 ```bash
 touch src/components/{modal.vue,register.vue,login.vue}
 ```
 
-当你完成后，`src` 文件夹看起来应该是这样的：
+当你完成后，`src`文件夹看起来应该是这样的：
 
 ```
 .
@@ -6883,7 +6815,7 @@ touch src/components/{modal.vue,register.vue,login.vue}
 
 剩下的工作是向组件添加代码。
 
-在 `modal.vue` 中：
+在`modal.vue`中：
 
 ```html
 <template id="modal-template">
@@ -6939,13 +6871,11 @@ export default {
 </style>
 ```
 
+在这里我们声明 CSS，因为它与模态框相比，与其他组件更为相关。如果我们添加`scoped`属性，这些定义将仅对此文件的模板有效。
 
+在`login.vue`中：
 
-在这里我们声明 CSS，因为它与模态框相比，与其他组件更为相关。如果我们添加 `scoped` 属性，这些定义将仅对此文件的模板有效。
-
-在 `login.vue` 中：
-
-```
+```html
 <template id="login-template">
   <div class="clearfix">
     <h4 class="blue-text">登录</h4>
@@ -6955,7 +6885,7 @@ export default {
         <label for="email_address">邮箱地址</label>
       </div>
       <div class="input-field col s12 ">
-        <input v-model="password" id="password" type="text" >
+        <input v-model="password" id="password" type="text">
         <label for="password">密码</label>
       </div>
       <a class="waves-effect waves-light btn form-btn teal">登录</a>
@@ -6976,9 +6906,9 @@ export default {
 </script>
 ```
 
-在 `register.vue` 中：
+在`register.vue`中：
 
-```
+```html
 <template id="registration-template">
   <div class="clearfix">
     <h4 class="blue-text">注册</h4>
@@ -6987,27 +6917,22 @@ export default {
         <input v-model="firstName" placeholder="" id="first_name" type="text" v-focus>
         <label for="first_name">姓</label>
       </div>
-
       <div class="input-field col s6">
         <input v-model="lastName" id="last_name" type="text">
         <label for="last_name">名</label>
       </div>
-
       <div class="input-field col s12">
         <input v-model="username" id="username" type="text" class="">
         <label for="username">用户名</label>
       </div>
-
       <div class="input-field col s12">
         <input v-model="email" id="email_address" type="text">
         <label for="email_address">邮箱地址</label>
       </div>
-
       <div class="input-field col s12">
         <input v-model="password" id="password" type="password">
         <label for="password">密码</label>
       </div>
-
       <a class="waves-effect waves-light btn teal form-btn">继续</a>
     </form>
   </div>
@@ -7029,7 +6954,9 @@ export default {
 </script>
 ```
 
-以上就是全部了。如果你现在使用命令 `npm run serve` 启动开发服务器，你就能在 [`localhost:8080`](http://localhost:8080) 看到你的应用程序正在运行。
+
+
+以上就是全部了。如果你现在使用命令`npm run serve`启动开发服务器，你就能在[`localhost:8080`](http://localhost:8080)看到你的应用程序正在运行。
 
 ## 结论
 
@@ -7053,31 +6980,30 @@ export default {
 
 显然，Vue 并不是为游戏开发定制的。那么，我们为什么想要选择它而不是真正的游戏开发框架/引擎呢？嗯，让我们探索两个充分的理由：
 
-1.  如果你熟悉 Vue 和/或每天用它工作，你已经拥有了必要的技能和知识。使用 Vue 创建游戏，你只需要应用你已知的知识，同时将思维转移到不同的上下文中——而不是需要学习整个全新的游戏框架。
-2.  Vue 提供了让游戏开发变得简单的特性：
-
-    *   [Vue 的响应式系统](https://vuejs.org/v2/guide/reactivity.html) 允许以最少的精力构建高度交互的界面。
-    *   过渡和动画是大多数游戏的重要部分。Vue 对此有[内置支持](https://vuejs.org/v2/guide/transitions)。
-    *   [Vue 的生态系统](https://github.com/vuejs/awesome) 足够提供你所需的功能。
+1. 如果你熟悉 Vue 和/或每天用它工作，你已经拥有了必要的技能和知识。使用 Vue 创建游戏，你只需要应用你已知的知识，同时将思维转移到不同的上下文中——而不是需要学习整个全新的游戏框架。
+2. Vue 提供了让游戏开发变得简单的特性：
+   - [Vue 的响应式系统](https://vuejs.org/v2/guide/reactivity.html) 允许以最少的精力构建高度交互的界面。
+   - 过渡和动画是大多数游戏的重要部分。Vue 对此有[内置支持](https://vuejs.org/v2/guide/transitions)。
+   - [Vue 的生态系统](https://github.com/vuejs/awesome) 足够提供你所需的功能。
 
 ## 规划游戏
 
 我们今天要构建的是一个流行的[配对游戏](https://en.wikipedia.org/Concentration)。UI 将由以下组件组成：
 
-*   卡牌面板，持有卡牌。
-*   倒计时器组件，显示剩余时间。
-*   状态栏组件，显示剩余次数。
-*   启动屏组件，当游戏结束时显示“你输了！”或“你赢了！”当时间剩余 10 秒或更少时，计时器的颜色将变为红色。
+- 卡牌面板，持有卡牌。
+- 倒计时器组件，显示剩余时间。
+- 状态栏组件，显示剩余次数。
+- 启动屏组件，当游戏结束时显示“你输了！”或“你赢了！”当时间剩余 10 秒或更少时，计时器的颜色将变为红色。
 
 ## 开始
 
-现在是时候行动了。为了遵循本文，你需要安装 Node](https://nodejs.org/)、npm 以及 [Vue CLI](https://cli.vuejs.org/)。使用[版本管理器](https://www.sitepoint.com/quick-tip-multiple-versions-nvm/) 是最简单的方法：
+现在是时候行动了。为了遵循本文，你需要安装 [Node](https://nodejs.org/)、npm 以及 [Vue CLI](https://cli.vuejs.org/)。使用[版本管理器](https://www.sitepoint.com/quick-tip-multiple-versions-nvm/) 是最简单的方法：
 
 ```bash
 npm i -g @vue/cli
 ```
 
-完成后，创建一个 `match-pairs` 项目，在提示时选择“default”预设：
+完成后，创建一个`match-pairs`项目，在提示时选择“default”预设：
 
 ```bash
 vue create match-pairs
@@ -7090,10 +7016,11 @@ cd match-pairs
 vue add vuetify
 ```
 
-再次选择“default”预设。为了启用它，我们需要在根目录下创建一个 `webpack.config.js` 文件，内容如下：
+再次选择“default”预设。为了启用它，我们需要在根目录下创建一个`webpack.config.js`文件，内容如下：
 
 ```javascript
 const VuetifyPlugin = require('vuetify-loader/lib/plugin')
+
 module.exports = {
   plugins: [
     new VuetifyPlugin()
@@ -7101,7 +7028,7 @@ module.exports = {
 }
 ```
 
-现在让我们添加另外两个需要的包——Lodash](https://lodash.com/) 和 [MomentJS](http://momentjs.com/)：
+现在让我们添加另外两个需要的包——[Lodash](https://lodash.com/) 和 [MomentJS](http://momentjs.com/)：
 
 ```bash
 npm i lodash moment
@@ -7117,7 +7044,7 @@ npm run serve
 
 现在我们需要做一些准备。
 
-首先，我们需要修改 `src/main.js` 文件。将其内容替换为以下：
+首先，我们需要修改`src/main.js`文件。将其内容替换为以下：
 
 ```javascript
 import Vue from 'vue'
@@ -7132,13 +7059,9 @@ new Vue({
 }).$mount('#app')
 ```
 
-现在，在 `src/components` 目录中，删除 `HelloWorld.vue` 示例文件，并创建游戏所需的组件：`CardsBoard.vue`、`Timer.vue`、`StatusBar.vue` 和 `Splash.vue`。
+现在，在`src/components`目录中，删除`HelloWorld.vue`示例文件，并创建游戏所需的组件：`CardsBoard.vue`、`Timer.vue`、`StatusBar.vue`和`Splash.vue`。
 
-接下来，打开 `src/App.vue`，删除内容并插入以下内容：
-
-
-
-
+接下来，打开`src/App.vue`，删除内容并插入以下内容：
 
 ```html
 <template>
@@ -7222,14 +7145,11 @@ export default {
       this.matches = 0;
       this.showSplash = false;
       this.score = 0;
-
       let cards = shuffleCards();
-
       _.each(cards, card => {
         card.flipped = false;
         card.found = false;
       });
-
       this.cards = cards;
     },
   }
@@ -7239,44 +7159,38 @@ export default {
 
 首先，我们为卡片添加必要的图片。为了简洁起见，我省略了许多图片。你可以从 [GitHub 仓库中获取完整列表](https://github.com/sitepoint-editors/match-pairs/blob/master/src/App.vue)。
 
-`shuffleCards()` 函数将图片翻倍以形成配对，并对它们进行全部洗牌。
+`shuffleCards()`函数将图片翻倍以形成配对，并对它们进行全部洗牌。
 
-接下来，我们导入了组件并在 `components` 对象中注册了它们。我们还导入了 Lodash 和 Moment。
+接下来，我们导入了组件并在`components`对象中注册了它们。我们还导入了 Lodash 和 Moment。
 
-之后，我们定义了游戏所需的所有数据属性。我们添加了 `created()` 钩子，它会在应用创建时调用 `resetGame()` 方法。`resetGame()` 将所有数据属性恢复到初始状态。
+之后，我们定义了游戏所需的所有数据属性。我们添加了`created()`钩子，它会在应用创建时调用`resetGame()`方法。`resetGame()`将所有数据属性恢复到初始状态。
 
-现在，我们可以添加一些辅助方法，用于管理卡片的 `flipped`（翻牌）和 `found`（已找到）状态：
+现在，我们可以添加一些辅助方法，用于管理卡片的`flipped`（翻牌）和`found`（已找到）状态：
 
 ```javascript
 methods: {
   ...
-
   flippedCards() {
     return _.filter(this.cards, card => card.flipped);
   },
-
   sameFlippedCard() {
     let flippedCards = this.flippedCards();
     if (flippedCards.length == 2) {
       if (flippedCards[0].name == flippedCards[1].name) return true;
     }
   },
-
   setCardFounds() {
     _.each(this.cards, card => {
       if (card.flipped) card.found = true;
     });
   },
-
   checkAllFound() {
     let foundCards = _.filter(this.cards, card => card.found);
     if (foundCards.length == cards.length) return true;
   },
-
   clearFlips() {
     _.map(this.cards, card => (card.flipped = false));
   },
-
   clearFlipTimer() {
     clearTimeout(this.flipBackTimer);
     this.flipBackTimer = null;
@@ -7286,19 +7200,18 @@ methods: {
 
 以下是这些辅助方法的作用：
 
-- `flippedCards()` 返回所有翻牌的卡片——即 `flipped` 属性为 true 的卡片
-- `sameFlippedCard` 使用上述辅助方法检查两个翻牌的卡片是否相同
-- `setCardFounds()` 将翻牌的卡片标记为已找到
-- `checkAllFound` 检查是否所有卡片都已找到
-- `clearFlips()` 清除所有翻牌的卡片
-- `clearFlipTimer` 在我们翻牌卡片时重置计时器
+- `flippedCards()`返回所有翻牌的卡片——即`flipped`属性为 true 的卡片
+- `sameFlippedCard`使用上述辅助方法检查两个翻牌的卡片是否相同
+- `setCardFounds()`将翻牌的卡片标记为已找到
+- `checkAllFound`检查是否所有卡片都已找到
+- `clearFlips()`清除所有翻牌的卡片
+- `clearFlipTimer`在我们翻牌卡片时重置计时器
 
 最后，我们添加了开始和结束游戏的方法：
 
 ```javascript
 methods: {
   ...
-
   startGame() {
     this.started = true;
     let duration = this.duration;
@@ -7311,7 +7224,6 @@ methods: {
       this.progress = (duration / this.duration) * 100;
     }, 1000);
   },
-
   finishGame() {
     this.started = false;
     clearInterval(this.timer);
@@ -7320,7 +7232,6 @@ methods: {
     } else {
       this.result = "Lose";
     }
-
     this.showSplash = true;
   }
 }
@@ -7332,7 +7243,7 @@ methods: {
 
 ## CardsBoard 组件
 
-打开 `CardsBoard.vue` 并放入以下内容：
+打开`CardsBoard.vue`并放入以下内容：
 
 ```html
 <template>
@@ -7373,6 +7284,7 @@ export default {
   flex-flow: row;
   justify-content: space-around;
 }
+
 .card {
   position: relative;
   width: 100px;
@@ -7380,12 +7292,14 @@ export default {
   margin: 1px;
   transition: transform 0.3s;
 }
+
 @media only screen and (max-width: 768px) {
   .card {
     width: 50px;
     height: 75px;
   }
 }
+
 .card .front,
 .card .back {
   position: absolute;
@@ -7399,30 +7313,50 @@ export default {
   backface-visibility: hidden;
   transform-style: preserve-3d;
 }
+
 .card .back {
   background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/102308/card_backside.jpg");
   background-size: 100%;
   background-repeat: no-repeat;
 }
+
 .card .front {
   transform: rotateY(-180deg);
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: center;
   background-color: white;
-}
-.card.flipped .back,
-.card.found .back {
-  transform: rotateY(180deg);
-}
-.card.flipped .front,
-.card.found .front {
-  transform: rotateY(0deg);
-}
-.card.found {
-  opacity: 0.3;
-}
 </style>
+```
+
+
+
+}
+
+.card.flipped .back,
+
+.card.found .back {
+
+  transform: rotateY(180deg);
+
+}
+
+.card.flipped .front,
+
+.card.found .front {
+
+  transform: rotateY(0deg);
+
+}
+
+.card.found {
+
+  opacity: 0.3;
+
+}
+
+</style>
+
 ```
 
 在这里我不深入讨论细节。基本上，这些样式创建了正确的卡片布局并添加了翻转效果。
@@ -7430,53 +7364,79 @@ export default {
 现在，让我们回到 `App.vue` 并添加内容：
 
 ```html
+
 <cards-board :cards="cards" @flipcard="flipCard"></cards-board>
+
 ```
 
 在这里，我们绑定了 `cards` 属性并注册了 `flipcard` 事件监听器。现在，我们在脚本部分的 `methods` 中添加 `flipCard()` 方法：
 
-
-
-
-
 ```javascript
+
 methods: {
+
   ...
 
   flipCard(card) {
+
     if (card.found || card.flipped) return;
 
     if (!this.started) {
+
       this.startGame();
+
     }
 
     let flipCount = this.flippedCards().length;
+
     if (flipCount == 0) {
+
       card.flipped = !card.flipped;
+
     } else if (flipCount == 1) {
+
       card.flipped = !card.flipped;
+
       this.turns += 1;
 
       if (this.sameFlippedCard()) {
+
         this.matches += 1;
+
         this.flipBackTimer = setTimeout(() => {
+
           this.clearFlipBackTimer();
+
           this.setCardFounds();
+
           this.clearFlips();
 
           if (this.checkAllFound()) {
+
             this.finishGame();
+
           }
+
         }, 1000);
+
       } else {
+
         this.flipBackTimer = setTimeout(() => {
+
           this.clearFlipBackTimer();
+
           this.clearFlips();
+
         }, 1000);
+
       }
+
     }
+
   }
+
 }
+
 ```
 
 首先，如果我们点击了一个已经翻转或找到的卡片，该函数将终止。如果 `started` 为 `false`，它将启动游戏。接下来，当我们打开第一张卡片时，它会将 `flipped` 属性更改为 `true`。当我们打开第二张卡片时，它会将 `flipped` 属性更改为 `true` 并增加 `turns` 属性。接下来，如果卡片相同，它将增加 `matches` 属性并设置一个 `flipBackTimer`。它将等待一秒钟并将卡片的 `found` 属性设置为 `true`，同时清除翻转的卡片。如果所有卡片都被找到，游戏将结束。如果打开的两张卡片不同，它将仅仅清除翻转的卡片。
@@ -7486,37 +7446,67 @@ methods: {
 打开 `Timer.vue` 并添加以下内容：
 
 ```html
+
 <template>
+
   <v-layout justify-end>
+
     <v-progress-circular
+
       :rotate="-90"
+
       :value="progress"
+
       :size="70"
+
       :width="9"
+
       :color="color"
+
     >{{time}}</v-progress-circular>
+
   </v-layout>
+
 </template>
 
 <script>
+
 export default {
+
   props: ["progress", "time"],
+
   data() {
+
     return {
+
       color: "success"
+
     };
+
   },
+
   watch: {
+
     progress() {
+
       if (this.progress <= 10) {
+
         this.color = "red";
+
       } else {
+
         this.color = "success";
+
       }
+
     }
+
   }
+
 };
+
 </script>
+
 ```
 
 在这里，我们使用了 [Vuetify 进度组件](https://vuetifyjs.com/en/components/progress)。我们需要根据 `progress` 的值动态地更改计时器的颜色。为了不断更新 `progress` 属性，我们需要为它添加一个[监听器](https://vuejs.org/v2/guide/computed.html#Watchers)。
@@ -7524,7 +7514,9 @@ export default {
 现在我们移动到 `App.vue` 并绑定传入的属性：
 
 ```html
+
 <timer :progress="progress" :time="time"></timer>
+
 ```
 
 ### 状态栏
@@ -7532,19 +7524,31 @@ export default {
 打开 `StatusBar.vue` 并添加以下内容：
 
 ```html
+
 <template>
+
   <v-layout align-center class="headline">
+
     <span class="mx-3">Turns: {{ turns }}</span>
+
     <v-divider vertical></v-divider>
+
     <span class="mx-3">Matches: {{ matches }}</span>
+
   </v-layout>
+
 </template>
 
 <script>
+
 export default {
+
   props: ["turns", "matches"]
+
 };
+
 </script>
+
 ```
 
 在这里，我们只是传递了 `turns` 和 `matches` 属性，并在模板中使用它们。
@@ -7552,7 +7556,9 @@ export default {
 在 `App.vue` 中，我们绑定传入的属性：
 
 ```html
+
 <status-bar :turns="turns" :matches="matches"></status-bar>
+
 ```
 
 ### 启动页
@@ -7560,34 +7566,61 @@ export default {
 最后，打开 `Splash.vue` 并添加以下内容：
 
 ```html
+
 <template>
+
   <v-layout row>
+
     <v-dialog v-model="showSplash" persistent max-width="300">
+
       <v-card class="text-xs-center">
+
         <v-card-text>
+
           <div class="headline mb-4">You {{result}}!</div>
+
           <div>Score: {{score}}/</div>
+
         </v-card-text>
+
         <v-card-actions>
+
           <v-spacer></v-spacer>
+
           <v-btn color="green darken-1" flat @click="resetGame">Start New Game</v-btn>
+
           <v-spacer></v-spacer>
+
         </v-card-actions>
+
       </v-card>
+
     </v-dialog>
+
   </v-layout>
+
 </template>
 
 <script>
+
 export default {
+
   props: ["showSplash", "result", "score"],
+
   methods: {
+
     resetGame() {
+
       this.$emit("resetgame");
+
     }
+
   }
+
 };
+
 </script>
+
 ```
 
 我们使用了 [Vuetify 对话框组件](https://vuetifyjs.com/en/components/dialogs) 来制作启动页。当 `showSplash` 为 `true` 时，启动页将显示。
@@ -7595,14 +7628,12 @@ export default {
 在 `App.vue` 中，我们绑定传入的属性并注册触发的事件：
 
 ```html
+
 <splash :showSplash="showSplash" :result="result" :score="score"></splash>
+
 ```
 
 到此，我们的游戏之旅就结束了。现在，只需运行 `npm run` 并享受吧！
-
-
-
-
 
 *   [VeeValidate](https://baianat.github.io/vee-validate/) 一个用于 Vue.js 项目的单验证框架
 
@@ -7641,37 +7672,63 @@ Vue.use(VeeValidate);
 现在打开 `src/App.vue` 并用以下代码替换现有代码：
 
 ```vue
+
 <template>
+
   <div id="app">
+
    <b-jumbotron  bg-variant="info" text-variant="white">
+
       <template slot="header">
+
         <b-container>Vuex 待应用</b-container>
+
       </template>
+
       <template slot="lead">
+
         <b-container>使用 Bootstrap-Vue.js 构建</b-container>
+
       </template>
+
     </b-jumbotron>
 
     <b-container>
+
       <div class="todo-page">
+
         <h2>购物列表</h2>
+
         <hr>
+
         <TodoList />
+
       </div>
+
     </b-container>
+
   </div>
+
 </template>
 
 <script>
+
   import TodoList from '@/components/TodoList.vue'
 
   export default {
+
     name: 'TodoView',
+
     components: {
+
       TodoList
+
     }
+
   }
+
 </script>
+
 ```
 
 在这里我们使用 Bootstrap 组件来布局我们的应用程序页面。这种方法比为每个 HTML 元素定义 Bootstrap 类要简单得多。你可以在 [Bootstrap Vue.js](https://bootstrap-vue.js.org/docs/components/jumbotron) 网站找到所用组件的文档。
@@ -7679,17 +7736,25 @@ Vue.use(VeeValidate);
 对于组件，我们将插入一些占位代码。将以下代码插入到 `components/TodoList.vue`：
 
 ```vue
+
 <template>
+
     <p>待办列表组件正在构建中</p>
+
 </template>
+
 ```
 
 为 `components/TodoItem.vue` 插入以下代码：
 
 ```vue
+
 <template>
+
   <p>待办事项组件正在构建中</p>
+
 </template>
+
 ```
 
 最后，回到 [`localhost:8080`](http://localhost:8080)，你应该在那里看到以下页面视图：
@@ -7701,10 +7766,15 @@ Vue.use(VeeValidate);
 为了构建我们的待办列表，我们将采用自自而上的方法。也就是说，我们将从构建 Vuex store 开始，最后通过创建组件来完成。我们将为 `TodoList` 集合使用一个非常简单的 `TodoItem` 模型，它仅包含两个属性：
 
 ```json
+
 {
+
   name: "Butter",
+
   done: false
+
 }
+
 ```
 
 ### 创建 Store
@@ -7712,50 +7782,95 @@ Vue.use(VeeValidate);
 打开 `src/store.js` 并将默认替换替换以下代码：
 
 ```javascript
+
 export default new Vuex.Store({
+
   state: {
+
     items: [
+
       {
+
         name: "Milk",
+
         done: false
+
       },
+
       {
+
         name: "Bread",
+
         done: true
+
       },
+
       {
+
         name: "Cake",
+
         done: false
+
       }
+
     ]
+
   },
+
   mutations: {
+
     addItem(state, item) {
+
       state.items.push(item)
+
     },
+
     editItem(state, { item, name = item.name, done = item.done }) {
+
       item.name = name;
+
       item.done = done;
+
     },
+
     removeItem(state, item) {
+
       state.items.splice(state.items.indexOf(item), 1);
+
     }
+
   },
+
   actions: {
+
     addItem({ commit }, item) {
+
       commit("addItem", {
+
         name: item,
+
         done: false
+
       })
+
     },
+
     editItem({ commit }, { item, name }) {
+
       commit("editItem", { item, name });
+
     },
+
     toggleItem({ commit }, item) {
+
       commit("editItem", { item, done: !item.done });
+
     },
+
   }
+
 });
+
 ```
 
 如你所见，我们首先在 `state` 对象中声明我们的项目。
@@ -7767,36 +7882,62 @@ export default new Vuex.Store({
 现在让我们构建 `TodoList` 组件。它基本上由一个用于显示列表的表单组成。有一些 CSS 和 Bootstrap 样式类来使布局看起来正确。如果你对这里的任何内容不确定，请查阅 [Bootstrap Vue](https://bootstrap-vue.js.org/docs) 文档。
 
 ```vue
-<template>
-  <div class="todo-list">
-    <!-- start of to-form -->
-    <b-form class="row">
-      <b-col cols="10">
-        <b-form-input
-          id="item"
-          name="item"
-          class="w-100"
-          placeholder="你想买什么？"
-        ></b-form-input>
-      </b-col>
-      <b-col cols="2">
-        <b-button type="submit" variant="primary">添加</b-button>
-      </b-col>
-    </b-form>
-    <!-- end of to-form -->
 
-### start of to-list -->
-    <b-row>
-      <b-col md="10">
-        <b-list-group>
-          <b-list-group-item v-for="(item, index) in items" :key="index">
-            {{ item.name }}
-          </b-list-group-item>
-        </b-list-group>
+<template>
+
+  <div class="todo-list">
+
+    <!-- start of to-form -->
+
+    <b-form class="row">
+
+      <b-col cols="10">
+
+        <b-form-input
+
+          id="item"
+
+          name="item"
+
+          class="w-100"
+
+          placeholder="你想买什么？"
+
+        ></b-form-input>
+
       </b-col>
-    </b-row>
-    <!-- end of to-list -->
-  </div>
+
+      <b-col cols="2">
+
+        <b-button type="submit" variant="primary">添加</b-button>
+
+      </b-col>
+
+
+
+```html
+</b-form>
+
+<!-- end of to-form -->
+
+<!-- start of to-list -->
+
+<b-row>
+  <b-col md="10">
+    <b-list-group>
+      <b-list-group-item v-for="(item, index) in items" :key="index">
+        {{ item.name }}
+      </b-list-group-item>
+    </b-list-group>
+  </b-col>
+</b-row>
+
+<!-- end of to-list -->
+
+</div>
+```
+
+```html
 </template>
 
 <script>
@@ -7804,6 +7945,7 @@ import { mapState } from 'vuex';
 
 export default {
   name: 'TodoList',
+
   computed: {
     ...mapState([
       'items'
@@ -7816,12 +7958,15 @@ export default {
 form {
   margin-bottom: 25px;
 }
+
 .list-group-item {
   display: flex;
 }
-.list-group-item:hover{
+
+.list-group-item:hover {
   background-color: aliceblue;
 }
+
 .checked {
   font-style: italic;
   text-decoration: line-through !important;
@@ -7835,12 +7980,7 @@ form {
 
 现在让我们让购物列表具有交互性。在这里我们需要做以下几件事：
 
-*   允许用户添加项目、将其标记为 `done` 并删除它们。
-
-
-
-
-
+- 允许用户添加项目、将其标记为 `done` 并删除它们。
 - 使用 [VeeValidate](https://baianat.github.io/vee-validate/) 插件为输入表单添加验证。我们使用的唯一规则是 `v-validate="'required'"`，它可以防止提交空白表单。
 - 如果存在验证错误信息，使用 VeeValidate 的 `errors` 对象显示。
 - 创建一个名为 `item` 的本地状态变量，将其绑定到输入表单。
@@ -7848,20 +7988,23 @@ form {
 
 让我们开始启用“添加项目”功能。如下所示更新 `src/components/TodoList.vue` 中的模板部分：
 
-```
+```html
 <!-- 待事项表单开始 -->
+
 <b-row>
   <b-col>
     <!-- 显示验证错误 -->
-      <b-alert v-if="errors.has('item')" show dismissible variant="danger">
+    <b-alert v-if="errors.has('item')" show dismissible variant="danger">
       {{ errors.first('item') }}
     </b-alert>
   </b-col>
 </b-row>
+
 <!-- 提交到 onSubmit 函数 -->
+
 <b-form class="row" @submit.prevent="onSubmit">
   <b-col cols="10">
-  <!-- 绑定到本地 `item` 状态 -->
+    <!-- 绑定到本地 `item` 状态 -->
     <b-form-input
       id="item"
       class="w-100"
@@ -7873,39 +8016,46 @@ form {
       autocomplete="off"
     ></b-form-input>
   </b-col>
+
   <b-col cols="2">
     <b-button type="submit" variant="primary">添加任务</b-button>
   </b-col>
 </b-form>
+
 <!-- 待事项表单结束 -->
 ```
 
 现在，让我们如下所示在 `<script>` 部分定义本地状态 `item` 和 `onSubmit()` 函数：
 
-```
+```javascript
 import { mapState, mapActions } from 'vuex';
 
 export default {
   name: 'TodoList',
+
   data() {
     return {
-      item:''
-    }
+      item: ''
+    };
   },
+
   computed: {
     ...mapState([
       'items'
     ])
   },
-   methods: {
+
+  methods: {
     ...mapActions([
       'addItem',
     ]),
+
     async onSubmit() {
       const isvalid = await this.$validator.validateAll();
-      if(isvalid) {
+
+      if (isvalid) {
         await this.addItem(this.item);
-        this.item=''; // 保存成功后清除表单
+        this.item = ''; // 保存成功后清除表单
         this.$validator.reset();
       }
     },
@@ -7915,7 +8065,7 @@ export default {
 
 在 `onSubmit` 方法中，我们首先执行验证方法以确保表单输入值有效。如果无效，则会显示错误消息。如果有效，则将项目传递给 `addItem` action。清空本地状态 `item` 并重置验证器，以防止显示错误的错误消息。在实现更改并测试表单后，你应该得到类似的结果：
 
-![项目字段是必填的](img/vuex-todo-04.jpg) 
+![项目字段是必填的](img/vuex-todo-04.jpg)
 
 记得检查 Vue DevTools 以查看 store 如何响应你的输入事件。
 
@@ -7923,7 +8073,7 @@ export default {
 
 现在我们来处理 `src/components/TodoItem` 组件。复制以下代码：
 
-```
+```html
 <template>
   <div class="todo-item">
     <b-list-group-item class="row">
@@ -7933,34 +8083,41 @@ export default {
 </template>
 
 <script>
-  export default {
-    name: 'TodoItem',
-    props: ['item']
-  }
+export default {
+  name: 'TodoItem',
+  props: ['item']
+};
 </script>
 ```
 
 接下来，回到 `src/components/TodoList`。我们需要将 `<b-list-group-item>` 代码段替换为新组件 `TodoItem`。进入模板部分，将 `<b-list-group>` 代码段替换为如下：
 
-```
+```html
 <b-list-group>
-  <TodoItem v-for="(item, index) in items" :key="index" :item="item" />
+  <TodoItem
+    v-for="(item, index) in items"
+    :key="index"
+    :item="item"
+  />
 </b-list-group>
 ```
 
 为了在 `TodoList` 中使用 `TodoItem` 组件，你需要在如下所示的 `<script>` 部分导入它：
 
-```
-import TodoItem from './TodoItem.vue'
-//..
+```javascript
+import TodoItem from './TodoItem.vue';
+
+// ...
 
 export default {
   name: 'TodoList',
+
   components: {
     TodoItem
   },
-  //..
-}
+
+  // ...
+};
 ```
 
 搞定了。保存更改后，待事项购物列表应该像以前一样运行。既然我们现在有了专门的 `TodoItem` 组件，我们现在可以轻松添加更多功能：
@@ -7973,59 +8130,72 @@ export default {
 
 让我们从切换项目状态开始。在 `todo` store 中，我们已经有一个可以为我们完成此操作的 action：
 
-```
+```javascript
 toggleItem({ commit }, item) {
-  commit("editItem", { item, done: !item.done })
+  commit("editItem", { item, done: !item.done });
 }
 ```
 
 通过使用 `mapAction` 助手在本地映射 action，我们可以如下从 `TodoItem` 组件中直接访问此函数：
 
-```
-this.toggleItem(item)
+```javascript
+this.toggleItem(item);
 ```
 
 通过如下所示更新 `<template>` 代码来添加复选框输入：
 
-```
+```html
 <template>
   ...
-<b-row>
+
+  <b-row>
     <b-col>
       <b-checkbox v-model="item.done" @change="toggleItem(item)">
         完成
       </b-checkbox>
     </b-col>
   </b-row>
+
   ...
 </template>
 ```
-（注：此处原文文本破碎，已根据上下文进行了清理）。
 
 ### 删除项目
 
 接下来，让我们添加删除功能。对于此，我们不 dispatch action，而是直接 commit `removeItem`。
 
-```
+```html
 <template>
   ...
-<b-col cols="1">
-    <b-button variant="link" variant="danger" size="sm" @click="removeItem(item)">X</b-button>
-</b-col>
-...
+
+  <b-col cols="1">
+    <b-button
+      variant="link"
+      variant="danger"
+      size="sm"
+      @click="removeItem(item)"
+    >
+      X
+    </b-button>
+  </b-col>
+
+  ...
 </template>
 
 <script>
   ...
+
   methods: {
     ...mapActions([
       'toggleItem'
     ]),
+
     removeItem(item) {
-      this.$store.commit("removeItem", item)
+      this.$store.commit("removeItem", item);
     }
   }
-...
+
+  ...
 </script>
 ```
 
@@ -8042,21 +8212,27 @@ this.toggleItem(item)
 
 现在让我们开始实现更改。我们将如下所示替换 `src/components/TodoItem.vue` 模板的相关代码来添加文本框：
 
-```
+```html
 <template>
   ...
-<b-col cols="10">
-  <span v-if="!editing" @dblclick="editing = true">{{ item.name }}</span>
-  <input class="edit"
-    v-show="editing"
-    v-focus="editing"
-    :value="item.name"
-    @keyup.enter="doneEdit"
-    @keyup.esc="cancelEdit"
-    @blur="doneEdit"
-  >
-</b-col>
-...
+
+  <b-col cols="10">
+    <span v-if="!editing" @dblclick="editing = true">
+      {{ item.name }}
+    </span>
+
+    <input
+      class="edit"
+      v-show="editing"
+      v-focus="editing"
+      :value="item.name"
+      @keyup.enter="doneEdit"
+      @keyup.esc="cancelEdit"
+      @blur="doneEdit"
+    >
+  </b-col>
+
+  ...
 </template>
 ```
 
@@ -8064,79 +8240,82 @@ this.toggleItem(item)
 
 如下所示更新代码：
 
-
-
-
-
 ```javascript
 export default {
-  //...
-  data () {
+  // ...
+
+  data() {
     return {
       editing: false
-    }
+    };
   },
+
   directives: {
-    focus (el, { value }, { context }) {
+    focus(el, { value }, { context }) {
       if (value) {
         context.$nextTick(() => {
-          el.focus()
-        })
+          el.focus();
+        });
       }
     }
   },
+
   methods: {
     ...mapActions([
       'toggleItem',
       'editItem'
     ]),
-    //..
-     doneEdit(event) {
-        const value = event.target.value.trim();
-        const { item } = this;
-        if (!value) {
-          this.removeItem(item)
-        } else if (this.editing) {
-          this.editItem({ item, name:value });
-          this.editing = false
-        }
-      },
-      cancelEdit(event){
-        event.target.value = this.item.name;
+
+    // ...
+
+    doneEdit(event) {
+      const value = event.target.value.trim();
+      const { item } = this;
+
+      if (!value) {
+        this.removeItem(item);
+      } else if (this.editing) {
+        this.editItem({ item, name: value });
         this.editing = false;
       }
+    },
+
+    cancelEdit(event) {
+      event.target.value = this.item.name;
+      this.editing = false;
+    }
   }
-}
+};
 ```
 
 保存更改并测试新的编辑功能。要修改项目，只需双击项目即可。你可以按 `Return` 或点击其他地方来保存更改。如果你不想保存更改，也可以按 `ESC`。你应该会看到类似下面的视图：
 
 ![编辑待办事项](img/vuex-todo-06.jpg)
 
-## 进一步进
+## 进一步进阶
 
-如果你已经看到这里，那太棒了！你已经掌握了构建 Vuex 项目所需的大部分技能。我将给你出一个挑战。我们刚刚构建的项目使用的是硬编码的待办事项列表。句话说，每当我们执行浏览器全刷新时，`todo` store 都会重置为硬编码的值：
+如果你已经看到这里，那太棒了！你已经掌握了构建 Vuex 项目所需的大部分技能。我将给你出一个挑战。我们刚刚构建的项目使用的是硬编码的待办事项列表。换句话说，每当我们执行浏览器全刷新时，`todo` store 都会重置为硬编码的值：
 
 ```javascript
 state: {
-    items: [
-      {
-        name: "Milk",
-        done: false
-      },
-      {
-        name: "Bread",
-        done: true
-      },
-      {
-        name: "Cake",
-        done: false
-      }
-    ]
-  },
+  items: [
+    {
+      name: "Milk",
+      done: false
+    },
+    {
+      name: "Bread",
+      done: true
+    },
+    {
+      name: "Cake",
+      done: false
+    }
+  ]
+},
 ```
 
-我想让你将 `items` 的初始状态设置为为空数组，如下：
+我想让你将 `items` 的初始状态设置为空数组，如下：
 
 ```javascript
 state: {
@@ -8144,7 +8323,7 @@ state: {
 }
 ```
 
-然后，我想让你使用一个真实的数据库来持久化 `items` 集合。你可以使用任何你熟悉的数据库系统，例如 MongoDB、现成的 API 接口如 [JSON server](https://github.com/typicode/json-server)，或者云托管数据库如 [mLab](https://mlab.com/)。然后你可以使用像 [axios](https://github.com/axios/axios)这样的库从你的远程 API 获取数据到应用的 store 中。
+然后，我想让你使用一个真实的数据库来持久化 `items` 集合。你可以使用任何你熟悉的数据库系统，例如 MongoDB、现成的 API 接口如 [JSON server](https://github.com/typicode/json-server)，或者云托管数据库如 [mLab](https://mlab.com/)。然后你可以使用像 `axios` 这样的库从你的远程 API 获取数据到应用的 store 中。
 
 这里有一些关于如何设置它的线索。你需要在你的 `todo` store 中为此任务创建一个新的 mutation，看起来如下：
 
@@ -8153,40 +8332,45 @@ export default {
   state: {
     items: []
   },
+
   mutations: {
     fetchTodos(state, items) {
-      state.items = items
+      state.items = items;
     }
   },
+
   actions: {
-    async fetchTodos({commit}) {
+    async fetchTodos({ commit }) {
       const response = await axios.get('http://localhost:4000/api/todos');
-      commit("fetchItems", response.data)
+      commit("fetchItems", response.data);
     }
   }
-}
+};
 ```
 
 接着在你的 `TodoList` 组件中，你可以使用 Vue 的 `created` 生命周期钩子来获取数据：
 
 ```html
 <script>
-import { mapActions } from 'vuex'
+import { mapActions } from 'vuex';
 
 export default {
   computed: {
     ...mapActions([
       'fetchTodos'
     ])
-  }
+  },
+
   created: function() {
-    this.fetchTodos()
+    this.fetchTodos();
   }
-}
+};
 </script>
 ```
 
-注意，我没有做任何错误处理。我留给你你来思考在 `fetchTodos` 函数失败时如何显示适当错误消息。
+
+
+注意，我没有做任何错误处理。我留给你你来思考在`fetchTodos`函数失败时如何显示适当错误消息。
 
 ## 总结
 
@@ -8241,33 +8425,28 @@ npm i --save-dev vue-loader
 npm i --save-dev babel-preset-vue
 ```
 
-下一步是在我们项目的 `package.json` 文件中添加 `storybook` 脚本：
+下一步是在我们项目的`package.json`文件中添加`storybook`脚本：
 
 ```json
 {
   "scripts": {
-   ...
+    ...
     "storybook": "start-storybook -p 9001 -c .storybook"
   }
 }
 ```
 
+脚本将在端口`9001`启动 Storybook 开发服务器，并将`.storybook`定义为配置目录。我们还可以在`.storybook`目录中创建一个`config.js`文件，在其中导入并注册我们的组件，并加载我们的故事（stories）。我们将在下一节中学习什么是故事以及如何创建它们。
 
-
-
-
-脚本将在端口 `9001` 启动 Storybook 开发服务器，并将 `.storybook` 定义为配置目录。我们还可以在 `.storybook` 目录中创建一个 `config.js` 文件，在其中导入并注册我们的组件，并加载我们的故事（stories）。我们将在下一节中学习什么是故事以及如何创建它们。
-
-```
+```bash
 mkdir .storybook
 touch .storybook/config.js
 ```
 
-将以下内容添加到 `config.js` 中：
+将以下内容添加到`config.js`中：
 
 ```javascript
 import { configure } from '@storybook/vue';
-
 import Vue from 'vue';
 
 // 导入你的自定义组件。
@@ -8292,14 +8471,14 @@ configure(loadStories, module);
 
 [故事](https://storybook.js.org/basics/writing-stories/) 是 Storybook 的核心。一个故事代表单个组件的特定状态，或者一组在一起的组件的状态。我们可以为需要的组件创建任意数量的故事。棒的一点是，当我们编辑故事时，更改会立即应用并显示。这为我们提供了流畅且交互的体验。
 
-故事存储在它们自己的目录，这使得它们更接近应用程序的组件。在这种情况下，我们导航到 `src` 目录，并在内部创建一个新的 `stories` 文件夹。然后添加 `index.js` 文件：
+故事存储在它们自己的目录，这使得它们更接近应用程序的组件。在这种情况下，我们导航到`src`目录，并在内部创建一个新的`stories`文件夹。然后添加`index.js`文件：
 
-```
+```bash
 mkdir src/stories
 touch src/stories/index.js
 ```
 
-编写故事非常简单。现在在 `index.js` 中创建我们的第一个故事：
+编写故事非常简单。现在在`index.js`中创建我们的第一个故事：
 
 ```javascript
 import Vue from "vue";
@@ -8310,11 +8489,11 @@ storiesOf("State", module).add("state toggle", () => ({
 }));
 ```
 
-`storiesOf` 方法封装了关于特定组件或组件组的一个或一组故事。第一个参数定义了包装器的名称。单个故事只是不同的状态，我们通过使用 `add` 方法来创建它们。第一个参数定义了状态的名称，第二个参数是创建实际状态的函数。渲染状态有许多方法。要查看所有方法，请查看 [Vue 真实示例](https://storybooks-vue.netlify.com/?selectedKind=Custom%7CMethod%20for%20rendering%20Vue&selectedStory=render&full=0&addons=1&stories=0&panelRight=0&addonPanel=storybook%2Fstories%2Fstories-panel)。
+`storiesOf`方法封装了关于特定组件或组件组的一个或一组故事。第一个参数定义了包装器的名称。单个故事只是不同的状态，我们通过使用`add`方法来创建它们。第一个参数定义了状态的名称，第二个参数是创建实际状态的函数。渲染状态有许多方法。要查看所有方法，请查看 [Vue 真实示例](https://storybooks-vue.netlify.com/?selectedKind=Custom%7CMethod%20for%20rendering%20Vue&selectedStory=render&full=0&addons=1&stories=0&panelRight=0&addonPanel=storybook%2Fstories%2Fstories-panel)。
 
 现在让我们通过运行项目来看看我们的故事运行情况：
 
-```
+```bash
 npm run storybook
 ```
 
@@ -8326,20 +8505,20 @@ npm run storybook
 
 正如我们所见，Storybook 的核心功能有限。为了添加更多实用的功能，我们需要安装一些插件。插件有两种类型：
 
-*   `装饰器 (Decorators)` 封装一个故事或多个故事，并以某种方式对其进行转换。例如，我们可以创建一个居中文本装饰器，它将我们故事中的文本居中。我们稍后会看到它的实际示例。
-*   `原生插件 (Native Add-ons)` 允许与 Storybook 平台进行低级交互。我们也会看到这些示例。
+* `装饰器 (Decorators)` 封装一个故事或多个故事，并以某种方式对其进行转换。例如，我们可以创建一个居中文本装饰器，它将我们故事中的文本居中。我们稍后会看到它的实际示例。
+* `原生插件 (Native Add-ons)` 允许与 Storybook 平台进行低级交互。我们也会看到这些示例。
 
 ### 安装 Storysource 插件
 
 我们要安装的第一个插件是 [Storysource](https://github.com/storybooks/storybook/tree/master/addons/storysource)。它为 storybook 添加了一个“STORY”面板，显示并高亮所选故事的源代码。它非常有用，因为我们可以看到故事是如何写的，而无需打开故事文件并手动搜索故事。要安装该插件，我们运行：
 
-```
+```bash
 npm install -D @storybook/addon-storysource
 ```
 
-在使用插件之前，我们需要在一个特殊的 `addons.js` 文件中注册它，我们必须在 `.storybook` 目录中创建该文件：
+在使用插件之前，我们需要在一个特殊的`addons.js`文件中注册它，我们必须在`.storybook`目录中创建该文件：
 
-```
+```bash
 touch .storybook/addons.js
 ```
 
@@ -8349,9 +8528,9 @@ touch .storybook/addons.js
 import '@storybook/addon-storysource/register';
 ```
 
-还有一点。插件需要一些自定义的 webpack 配置。因此，我们在相同的 `.storybook` 目录中创建一个 `webpack.config.js` 文件：
+还有一点。插件需要一些自定义的 webpack 配置。因此，我们在相同的`.storybook`目录中创建一个`webpack.config.js`文件：
 
-```
+```bash
 touch .storybook/webpack.config.js
 ```
 
@@ -8367,7 +8546,6 @@ module.exports = (storybookBaseConfig, configType, defaultConfig) => {
     include: [path.resolve(__dirname, '../src')],
     enforce: 'pre',
   });
-
   return defaultConfig;
 };
 ```
@@ -8386,17 +8564,17 @@ module.exports = (storybookBaseConfig, configType, defaultConfig) => {
 
 使用以下命令安装它：
 
-```
+```bash
 npm install -D @storybook/addon-options
 ```
 
-在 `addons.js` 中注册它：
+在`addons.js`中注册它：
 
 ```javascript
 import '@storybook/addon-options/register';
 ```
 
-然后我们可以像这样在 `config.js` 中使用它：
+然后我们可以像这样在`config.js`中使用它：
 
 ```javascript
 import { configure, addDecorator } from '@storybook/vue';
@@ -8417,11 +8595,11 @@ addDecorator(
 
 你可以这样安装它们：
 
-```
+```bash
 npm install -D @storybook/addon-actions @storybook/addon-links @storybook/addon-knobs
 ```
 
-并在 `addons.js` 中注册它们：
+并在`addons.js`中注册它们：
 
 ```javascript
 import '@storybook/addon-knobs/register';
@@ -8435,7 +8613,7 @@ import '@storybook/addon-actions/register';
 
 ### 使用 Knobs 插件
 
-Knobs 允许我们动态编辑 Vue 属性。让我们来看看实际效果。在 `index.js` 文件中添加以下内容：
+Knobs 允许我们动态编辑 Vue 属性。让我们来看看实际效果。在`index.js`文件中添加以下内容：
 
 ```javascript
 import { withKnobs, boolean } from '@storybook/addon-knobs';
@@ -8457,7 +8635,7 @@ storiesOf("State", module)
 
 ### 创建和使用自定义装饰器
 
-现在让我们如何创建一个自定义装饰器。在同一个 `index.js` 文件中，添加以下内容：
+现在让我们如何创建一个自定义装饰器。在同一个`index.js`文件中，添加以下内容：
 
 ```javascript
 const CenterDecorator = () => ({
@@ -8476,10 +8654,7 @@ storiesOf("Countdown", module)
   }));
 ```
 
-
-
-
-我们在这里做的目的是定义一个 `CenterDecorator` 装饰器。我们用自定义功能封装了 `<story/>` 组件。然后，我们将将其添加到为 `Countdown` 组件创建的两个新状态中。
+我们在这里做的目的是定义一个`CenterDecorator`装饰器。我们用自定义功能封装了`<story/>`组件。然后，我们将将其添加到为`Countdown`组件创建的两个新状态中。
 
 ![状态工作](img/work_state.png)
 
@@ -8489,9 +8664,9 @@ storiesOf("Countdown", module)
 
 在本节中，我们将创建关于番茄钟控制按钮的 story（故事），并使用链接来模拟点击这些按钮时的真实世界行为。
 
-在 `index.js` 文件中，添加以下内容：
+在`index.js`文件中，添加以下内容：
 
-```
+```javascript
 import { linkTo } from '@storybook/addon-links';
 import { action } from '@storybook/addon-actions';
 
@@ -8512,22 +8687,27 @@ storiesOf("Controls", module)
       linkToStopped: linkTo("Controls", "stopped state")
     }
   }))
-  .add("stopped state", () => ({
-    template: `<controls state="stopped" @started="linkToStarted(), action()"></controls>`,
-    methods: {
-      linkToStarted: linkTo("Controls", "started state"),
-      action: action("Starting")
-    }
-  }));
 ```
 
-在这里，我们导入了 `linkTo` 和 `action` 方法。然后我们创建了关于按钮三种可能状态的 story。接下来，我们创建了链接以便根据点击的按钮在状态之间导航。在停止状态下，我们还使用了一个 action。因此，当我们按下 *Start* 按钮时，它会在“ACTION LOGGER”面板中记录启动动作。
+
+
+`.add("stopped state", () => ({`
+
+```
+template: `<controls state="stopped" @started="linkToStarted(), action()"></controls>`,
+methods: {
+  linkToStarted: linkTo("Controls", "started state"),
+  action: action("Starting")
+}
+```
+
+在这里，我们导入了`linkTo`和`action`方法。然后我们创建了关于按钮三种可能状态的 story。接下来，我们创建了链接以便根据点击的按钮在状态之间导航。在停止状态下，我们还使用了一个 action。因此，当我们按下`Start`按钮时，它会在“ACTION LOGGER”面板中记录启动动作。
 
 ![动作演示](img/actions_preview.png)
 
 ## 多个组件
 
-在 Storybook 中，我们不仅可以为单个组件创建 story，还可以将多个组件组合到一个 Story 屏幕中。所以，当我们完成单个组件后，就可以将它们组合起来来代表应用的不同界面。让我们尝试一下。在 `index.js` 中，添加以下内容：
+在 Storybook 中，我们不仅可以为单个组件创建 story，还可以将多个组件组合到一个 Story 屏幕中。所以，当我们完成单个组件后，就可以将它们组合起来来代表应用的不同界面。让我们尝试一下。在`index.js`中，添加以下内容：
 
 ```
 storiesOf("App Screen", module)
@@ -8542,7 +8722,7 @@ storiesOf("App Screen", module)
   }));
 ```
 
-在这里，我们使用 `CenterDecorator` 让所有组件居中。大搞定。
+在这里，我们使用`CenterDecorator`让所有组件居中。大搞定。
 
 ![所有组件](img/all_components_preview.png)
 
@@ -8566,7 +8746,7 @@ storiesOf("App Screen", module)
 npm install --save-dev @storybook/addon-storyshots
 ```
 
-现在，我们在 `tests/unit` 目录下创建一个 `storyshots.spec.js` 文件：
+现在，我们在`tests/unit`目录下创建一个`storyshots.spec.js`文件：
 
 ```
 touch tests/unit/storyshots.spec.js
@@ -8576,7 +8756,6 @@ touch tests/unit/storyshots.spec.js
 
 ```
 import initStoryshots from '@storybook/addon-storyshots';
-
 initStoryshots();
 ```
 
@@ -8590,18 +8769,14 @@ npm run test:unit
 
 ![测试输出](img/snapshots_test_passed.png)
 
-所有快照将被放置在 `__snapshots__` 目录下，该目录会在 `tests/unit` 中自动创建。
+所有快照将被放置在`__snapshots__`目录下，该目录会在`tests/unit`中自动创建。
 
-现在，为了演示快照的对比，我们将第一个 story 中的 `isworking` 属性更改为 `false`，然后重新运行测试。正如下面的截图所示，插件捕到了更改，并告诉我们我们可以通过 `-u` 标志来更新快照。
+现在，为了演示快照的对比，我们将第一个 story 中的`isworking`属性更改为`false`，然后重新运行测试。正如下面的截图所示，插件捕到了更改，并告诉我们我们可以通过`-u`标志来更新快照。
 
 ![测试输出](img/snapshots_test_failed.png)
-
-
-
 
 别忘了，你可以在[这里找到部署好的 Storybook](https://sitepoint-editors.github.io/vue-pomodoro/)。
 
 ## 结论
 
 希望你喜欢学习 Storybook。正如你所见，它是一个强大的工具，我们可以用它交互式地开发和测试自包含的 UI 组件。它也非常适合制作实时组件展示或文档。我鼓励你去尝试一下。
-

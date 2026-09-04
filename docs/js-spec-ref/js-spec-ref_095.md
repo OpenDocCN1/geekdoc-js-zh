@@ -1,20 +1,5 @@
-# 12.4 jQuery.Deferred 对象
 
-*   概述
-*   deferred 对象的方法
-    *   基本用法
-    *   notify() 和 progress()
-    *   then 方法
-    *   pipe 方法
-    *   与 Promise A+规格的差异
-    *   promise 对象
-    *   辅助方法
-        *   $.when()方法
-    *   使用实例
-        *   wait 方法
-        *   改写 setTimeout
-        *   自定义操作使用 deferred 接口
-    *   参考链接
+# 12.4 jQuery.Deferred 对象
 
 ## 概述
 
@@ -25,8 +10,8 @@ deferred 对象代表了将要完成的某种操作，并提供了一些方法�
 由于 JavaScript 单线程的特点，如果某个操作耗时很长，其他操作就必需排队等待。为了避免整个程序失去响应，通常的解决方法是将那些排在后面的操作，写成“回调函数”（callback）的形式。这样做虽然可以解决问题，但是有一些显著缺点：
 
 *   回调函数往往写成函数参数的形式，形成所谓的“持续传递风格”（即参数就是下一步操作，Continuation-passing style），导致函数的输入和输出非常混乱，整个程序的可阅读性差；
-*   回调函数往往只能指定一个，如果有多个操作，就需要改写回调函数。
-*   除了正常的报错机制，错误还可能通过回调函数的形式返回，增加了除错和调试的难度。
+*   回调函数往往只能指定一个，如果有多个操作，就需要改写回调函数；
+*   除了正常的报错机制，错误还可能通过回调函数的形式返回，增加了除错和调试的难度；
 *   正常的函数输入和输出可以区分得很清楚，回调函数使得函数的输出不再重要。
 
 Promises 就是为了解决这些问题而提出的，它的主要目的就是取代回调函数，成为非同步操作的解决方案。它的核心思想就是让非同步操作返回一个对象，其他操作都针对这个对象来完成。比如，假定 ajax 操作返回一个 Promise 对象。
@@ -495,9 +480,15 @@ doSomething("uh oh").done(function() {
 ## 参考链接
 
 *   Matt Baker, [jQuery.Deferred is the most important client-side tool you have](http://eng.wealthfront.com/2012/12/jquerydeferred-is-most-important-client.html)
+
 *   [Fun With jQuery Deferred](http://www.intridea.com/blog/2011/2/8/fun-with-jquery-deferred)
+
 *   Bryan Klimt, [What’s so great about JavaScript Promises?](http://blog.parse.com/2013/01/29/whats-so-great-about-javascript-promises/)
+
 *   José F. Romaniello, [Understanding JQuery.Deferred and Promise](http://joseoncode.com/2011/09/26/a-walkthrough-jquery-deferred-and-promise/)
+
 *   Julian Aubourg, Addy Osmani, [Creating Responsive Applications Using jQuery Deferred and Promises](http://msdn.microsoft.com/en-us/magazine/gg723713.aspx)
+
 *   Graham Jenson, [JQuery Promises and Deferreds: I promise this will be short](http://maori.geek.nz/post/i_promise_this_will_be_short)
+
 *   Q module document, [Coming from jQuery](https://github.com/kriskowal/q/wiki/Coming-from-jQuery)

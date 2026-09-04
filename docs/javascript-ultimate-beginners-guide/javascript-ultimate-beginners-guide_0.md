@@ -1,12 +1,9 @@
-# Javascript：初学者指南
 
-
-
-
-
+# JavaScript：初学者指南
 
 ## 引言
-祝喜下载《JavaScript：学者终极指南》，感谢你的支持。
+
+祝贺下载《JavaScript：初学者终极指南》，感谢你的支持。
 
 接下来的章节将讨论你了解 JavaScript 所需的所有知识，以及如何让它与你的编程语言协作。JavaScript 是一个非常棒的选择，因为它可以直接在你想要处理的网页内运行，并且可以开发出一些让网页功能良好运行所需的顶级代码。
 
@@ -17,7 +14,8 @@
 市场上有很多关于这个主题的书，再次感谢你选择这一本！我们已尽一切努力确保它尽可能包含有用信息，请尽情享受！
 
 ## 第 1 章：学习 JavaScript 基础
-JavaScript 最初由 Brendan Eich 于 1995 年发明，现已成为当今最知名且使用最广泛的脚本语言之一。它是一种非常高级的编程语言，同时也是解释型的语言，开源以供不同的程序员对其进行更多更新和新更改，并且具有跨平台工作的能力，因此如果你愿意，可以将它可以与其他语言结合使用。
+
+JavaScript 最初由 Brendan Eich 于 1995 年发明，现已成为当今最知名且使用最广泛的脚本语言之一。它是一种非常高级的编程语言，同时也是解释型的语言，开源以供不同的程序员对其进行更多更新和新更改，并且具有跨平台工作的能力，因此如果你愿意，可以将它与其他语言结合使用。
 
 JavaScript 使用面向对象编程（OOP）脚本语言，这意味着它设计用于与网页编程配合。一旦你完成了代码编写，只需通过编写让页面具有交互性的语句，它几乎可以告诉网页你想让它执行的操作。虽然你仍然需要 HTML 和 CSS 将布局和内容加载到网页上，但 JavaScript 将负责编码并确保命令按照你想要的方式执行。
 
@@ -26,48 +24,38 @@ JavaScript 使用面向对象编程（OOP）脚本语言，这意味着它设计
 在学习如何使用强大的编程语言时，JavaScript 是一个非常棒的选择。它拥有你所需的所有功能，而无需担心代码太难编写。它具有许多人们对任何编程语言都想要的优秀特性，而且学习如何操作它并不需要长时间。
 
 ### 使用 JavaScript 的益处
-许多人好奇为什么应该使用 JavaScript 而不是其他编程语言。原因有很多，有些非常适合初学者，而另一些则留给那些在编程领域工作了多年的人。当你想要一种既多功能又有趣且具有强大支持的语言来工作时，JavaScript 是一个很棒的选择。以下是你考虑编程需求时应该考虑 JavaScript 的的一些原因：
 
-- 在客户端执行——这意味着你不需要使用 Web 服务器来运行和执行脚本。相反，你将在用户的处理器上完成所有操作。这节省了大量的带宽并减轻了 Web 服务器的压力，因此是一个更好的使用选择。
-- 一种更简单的语言——与你可以选择的其他语言相比，JavaScript 非常容易学习，因为其语法非常接近英语。它还拥有良好的预写语法库，你可以使用它们来查找创建程序所需的语法，或定制你需要的任何内容以成为你自己的。
-- 快速——代码的处理和结果几乎会立即完成，有时取决于任务，因为你不需要先通过 Web 服务器处理。这使得信息可以立即提供给用户，而无需等待。
-- 对网页具有许多功能——某些第三方插件允许 JavaScript 开发者编写放置在网页上的代码片段。如果你正在使用网站并需要特定的功能，你可以使用像 Greaskey 这样的公司，将其实现到你的网页中。
-- 简单性——某些编程语言由于其背后的力量可以完成很多事情，但它们非常复杂，对初学者来说可能很困惑。如果用户完全无法读懂代码，他们可能会害怕尝试，或者发现学习太难。但通过 JavaScript，你会发现这个程序非常容易上手，你能够很快学会如何。
-- 多功能性——虽然 JavaScript 能够处理你想要处理的大多数项目，但有些事情它是做不到的。但它确实拥有你所需的多功能性，可以与其他语言协同工作，以便你完成更多工作。你还可以将其插入到你想要的任何网页中，无论文件扩展名是什么，它与 Perl、PHP 以及其他语言配合得很好，以便你可以在编程中做更多你想做的事。
+许多人好奇为什么应该使用 JavaScript 而不是其他编程语言。原因有很多，有些非常适合初学者，而另一些则留给那些在编程领域工作了多年的人。当你想要一种既多功能又有趣且具有强大支持的语言来工作时，JavaScript 是一个很棒的选择。以下是你考虑编程需求时应该考虑 JavaScript 的一些原因：
+
+- **在客户端执行**——这意味着你不需要使用 Web 服务器来运行和执行脚本。相反，你将在用户的处理器上完成所有操作。这节省了大量的带宽并减轻了 Web 服务器的压力，因此是一个更好的使用选择。
+- **一种更简单的语言**——与你可以选择的其他语言相比，JavaScript 非常容易学习，因为其语法非常接近英语。它还拥有良好的预写语法库，你可以使用它们来查找创建程序所需的语法，或定制你需要的任何内容以成为你自己的。
+- **快速**——代码的处理和结果几乎会立即完成，有时取决于任务，因为你不需要先通过 Web 服务器处理。这使得信息可以立即提供给用户，而无需等待。
+- **对网页具有许多功能**——某些第三方插件允许 JavaScript 开发者编写放置在网页上的代码片段。如果你正在使用网站并需要特定的功能，你可以使用像 Greaskey 这样的公司，将其实现到你的网页中。
+- **简单性**——某些编程语言由于其背后的力量可以完成很多事情，但它们非常复杂，对初学者来说可能很困惑。如果用户完全无法读懂代码，他们可能会害怕尝试，或者发现学习太难。但通过 JavaScript，你会发现这个程序非常容易上手，你能够很快学会如何操作。
+- **多功能性**——虽然 JavaScript 能够处理你想要处理的大多数项目，但有些事情它是做不到的。但它确实拥有你所需的多功能性，可以与其他语言协同工作，以便你完成更多工作。你还可以将其插入到你想要的任何网页中，无论文件扩展名是什么，它与 Perl、PHP 以及其他语言配合得很好，以便你可以在编程中做更多你想做的事。
 
 虽然 JavaScript 作为编写优秀代码的选择有很多优点，但它也有一些缺点。首先，一些人担心 JavaScript 带来的安全问题。一旦这种语言的代码被添加到网页中，它们有时能够利用用户系统的漏洞。由于这一切都是立即完成的，这对于试图查看该网页的人来说可能是危险的。虽然大多数网站都采取了一些安全措施来试图防止这种情况，但这仍然是一个出现的问题。
 
+你应该花时间检查你的网页，并确保已经采取了正确的安全程序来保护你的客户。你不希望因为别人在你的系统上编写了危险代码并将其发送给你的用户查看而失去用户。良好的防病毒软件和其他保护措施可以在很大程度上防止这些事情发生。
 
-
-
-你应该花时间检查你的网页，并确保已经采取了正确的安全程序来保护你的客户。你你不希望因为别人在你的系统上编写了危险代码并将其发送给你的用户查看而失去用户。良好的防病毒软件和其他保护措施可以在很大程度上防止这些事情发生。
-
-在渲染 JavaScript 方面也存在一些问题。由于所有引擎的布局都不同，JavaScript 有时会出现结果会不一致，当不同用户浏览并尝试使用你的网页时，你会注意到这一点。这可能会让编写页面变得困难，因为一些人看到的页面是正确的，而另一些人看到的页面看起来完全乱七八糟。JavaScript 正在朝着其页面的通用标准努力，但还有很长的路要走。在开始时，学习如何让程序在许多浏览器中看起来良好应该是你主要关注的问题之一。
+在渲染 JavaScript 方面也存在一些问题。由于所有引擎的布局都不同，JavaScript 有时会出现结果不一致，当不同用户浏览并尝试使用你的网页时，你会注意到这一点。这可能会让编写页面变得困难，因为一些人看到的页面是正确的，而另一些人看到的页面看起来完全乱七八糟。JavaScript 正在朝着其页面的通用标准努力，但还有很长的路要走。在开始时，学习如何让程序在许多浏览器中看起来良好应该是你主要关注的问题之一。
 
 使用 JavaScript 是编写你想要的编程语言的极佳方法，以便在你自己的服务器上创建网页。由于它不需要通过处理器即可下载，因此使用速度快得多，并且拥有创建非常出色的代码系统所需的丰富库。无论你是初学者还是已经工作了一段时间的开发者，JavaScript 语言都是你的绝佳选择。
 
 ### 设置 JavaScript
 
-当你准备好设置 JavaScript 时，你需要做的第一件事之一就是设置你编写代码时使用的环境。`Eclipse` 通常是推荐与 JavaScript 一起使用的环境，因为它们配合得很好，而且安装 `eclipse` 也很简单。下载此软件的基本步骤包括：
+当你准备好设置 JavaScript 时，你需要做的第一件事之一就是设置你编写代码时使用的环境。`Eclipse` 通常是推荐与 JavaScript 一起使用的环境，因为它们配合得很好，而且安装 `Eclipse` 也很简单。下载此软件的基本步骤包括：
 
-*   在线并查找下载 `eclipse` 的链接。你应该检查 `eclipse` 的最新稳定版本，然后确保你选择了正确的类型。例如，如果你有一台 64 位的计算机，你应该选择 64 位的 `eclipse` 选项。你可以在 [`eclipse.org/downloads`](https://eclipse.org/downloads) 找到 `eclipse` 下载。
-
-*   当对话框出现时，点击 `elipse.exe` 以打开文件。你可以选择你想要作为工作区（workspace）的本地目录。
-
+*   在线并查找下载 `Eclipse` 的链接。你应该检查 `Eclipse` 的最新稳定版本，然后确保你选择了正确的类型。例如，如果你有一台 64 位的计算机，你应该选择 64 位的 `Eclipse` 选项。你可以在 [`eclipse.org/downloads`](https://eclipse.org/downloads) 找到 `Eclipse` 下载。
+*   当对话框出现时，点击 `eclipse.exe` 以打开文件。你可以选择你想要作为工作区（`workspace`）的本地目录。
 *   你可以选择在你的驱动器上选择或创建一个目录，然后点击 `OK` 按钮开始。
-
 *   当你到达这一步时，你需要导航到 `File`（文件）、`New`（新建）、`Static Web Project`（静态 Web 项目）。然后点击该链接即可打开要求你输入项目名称的对话框。
-
-*   选择你想要为项目命名的名称，然后点击 `finish`（完成）按钮。
-
-*   你会发现在 `Eclipse` 的左侧，你可以展开项目目录，在右侧你可以点击“WebContent”文件夹。你可以向当前项目添加一个 HTML 文件。只需进入 `New` 然后点击 `HTML` 即可。这将打开一个可以在其中输入文件名的对话框。再次点击 `Finish`，这会将 HTML 文件添加到你的当前项目项目中。
+*   选择你想要为项目命名的名称，然后点击 `Finish`（完成）按钮。
+*   你会发现在 `Eclipse` 的左侧，你可以展开项目目录，在右侧你可以点击 `WebContent` 文件夹。你可以向当前项目添加一个 HTML 文件。只需进入 `New` 然后点击 `HTML` 即可。这将打开一个可以在其中输入文件名的对话框。再次点击 `Finish`，这会将 HTML 文件添加到你的当前项目中。
 
 当你使用 JavaScript 时，你应该花时间查看一下该编程语言可用的库。`JavaScript` 是最常用的编程语言之一，因为它基于英语，可以在网页上使用，并且具有非常强大的功能。由于这个程序非常受欢迎，发现一个庞大的库并不稀奇。
 
 你可以利用这个库来为自己服务。你会发现在这个系统中有很多你可以使用的语法和代码列表，它们将使编写代码变得比以前更容易。你可以挑选其中的几个，或者尝试其中的一些。
-
-
-
 
 当你运行我们刚刚编写的 HTML 程序并尝试执行它时，你得到的结果将是：
 
@@ -77,11 +65,11 @@ JavaScript 使用面向对象编程（OOP）脚本语言，这意味着它设计
 
 ### 换行符与空格
 
-在代码中使用空格，甚至是换行，你可以根据需要尽情使用它们。这些内容通常有助于理清你正在编写的内容，而你不必担心代码变得太长或难以阅读。尽管如此，你在代码中放入多少空格（如果有的话）其实并并不重要。浏览器解析器不会读取这些空格，因此你可以按照适合你的方式来编写代码。
+在代码中使用空格，甚至是换行，你可以根据需要尽情使用它们。这些内容通常有助于理清你正在编写的内容，而你不必担心代码变得太长或难以阅读。尽管如此，你在代码中放入多少空格（如果有的话）其实并不重要。浏览器解析器不会读取这些空格，因此你可以按照适合你的方式来编写代码。
 
 这让你能够轻松地创建缩进、行以及为了理解程序而所需的其他部分，帮助其进行正确的格式化，并保持美观。仅仅因为 `JavaScript` 不识别行和空格，并不意味着你应该在处理过程中完全忽略它们。
 
-当你刚开始学习门语言时，在代码中多添加一些换行和缩进是一个好主意。这会让代码变得更易读，你也可以更容易发现一些错误。额外的空格不会改变系统读取信息的方式，但它可以让你更容易阅读代码，并让其他初学者知道你正在尝试写什么。
+当你刚开始学习这门语言时，在代码中多添加一些换行和缩进是一个好主意。这会让代码变得更易读，你也可以更容易发现一些错误。额外的空格不会改变系统读取信息的方式，但它可以让你更容易阅读代码，并让其他初学者知道你正在尝试写什么。
 
 ### 使用分号
 
@@ -89,7 +77,7 @@ JavaScript 使用面向对象编程（OOP）脚本语言，这意味着它设计
 
 ### 大小写敏感
 
-你会发现 `JavaScript` 是对你使用的字母大小敏感的语言之一。这意味着你需要在整个程序中保持大写字母和小写字母使用的一致。这适用于你标记的任何内容，包括标识符、函数名、变量和关键词。例如，当你使用 `JavaScript` 时，当编程语言处理它时，`LEARN` 和 `learn` 是不同的。
+你会发现 `JavaScript` 是对你使用的字母大小写敏感的语言之一。这意味着你需要在整个程序中保持大写字母和小写字母使用的一致。这适用于你标记的任何内容，包括标识符、函数名、变量和关键字。例如，当你使用 `JavaScript` 时，当编程语言处理它时，`LEARN` 和 `learn` 是不同的。
 
 在命名函数和语句时，记住这一点很重要。如果你将其中一个命名为 `JAVASCRIPT`，然后尝试使用 `JavaScript` 单词来搜索或调用它，你将得到一个错误提示。你对命名有一定的决定权，但请尽量保持所有代码名称的一致性，以便你以相同的方式命名它们，并在需要时轻松地调用它们。
 
@@ -97,10 +85,10 @@ JavaScript 使用面向对象编程（OOP）脚本语言，这意味着它设计
 
 有时，你需要在 `JavaScript` 中编写注释。你可能想向他人提供更多关于程序的信息，或者你感兴趣的是解释每个语句中应该放置什么。在编码中使用 `JavaScript` 时，有几种遵循的注释样式，包括：
 
-*   单行注释——如果你的注释只占用一行，你只需要使用双斜杠 `//` 来开始它。
-*   多行注释——有时你的注释会长一些，占据几行。这种情况下，你将使用 `/*` 开始注释，然后使用 `*/` 结束。如果你担心格式，也可以在单行选项中使用这种方法。
-*   如果你想坚持这种方式，`JavaScript` 也会识别 HTML 注释。HTML 注释是 `<!--`。这在语言语言中被视为与单行注释一样。
-*   结束序列——HTML 结束符号 `-->` 在 `JavaScript` 中不会被识别。如果你想在代码中使用这个符号，你需要像这样写它：`//-->`。
+*   **单行注释**——如果你的注释只占用一行，你只需要使用双斜杠 `//` 来开始它。
+*   **多行注释**——有时你的注释会长一些，占据几行。这种情况下，你将使用 `/*` 开始注释，然后使用 `*/` 结束。如果你担心格式，也可以在单行选项中使用这种方法。
+*   **HTML 注释**——如果你想坚持这种方式，`JavaScript` 也会识别 HTML 注释。HTML 注释是 `<!--`。这在语言中被视为与单行注释一样。
+*   **结束序列**——HTML 结束符号 `-->` 在 `JavaScript` 中不会被识别。如果你想在代码中使用这个符号，你需要像这样写它：`//-->`。
 
 当你使用这些选项时，你是在告诉解释器不要读取这些注释。你可以在代码中放置任意数量的此类注释，只要你使用正确的格式，让解释器知道哪些是你留给他人的，哪些是它应该忽略的。一旦注释结束，解释器将返回并开始执行你在代码中编写的其他任何内容。
 
@@ -112,18 +100,18 @@ JavaScript 使用面向对象编程（OOP）脚本语言，这意味着它设计
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset = “ISO-8859-1”>
+<meta charset="ISO-8859-1">
 <title>JavaScript Comments</title>
 </head>
 <body>
-<script type = “text/javascript”>
-<!--开始序列单行注释。结束序列 HTML 注释-->
+<script type="text/javascript">
+<!-- 开始序列单行注释。结束序列 HTML 注释 -->
 
 // 这是一个单行注释。
 
 /*
-*这是一个 JavaScript 中的多行注释
-*/
+ * 这是一个 JavaScript 中的多行注释
+ */
 </script>
 </body>
 </html>
@@ -135,26 +123,23 @@ JavaScript 使用面向对象编程（OOP）脚本语言，这意味着它设计
 
 这些是在你开始使用 JavaScript 之前需要的一些基础知识。花些时间尝试注释以及我们讨论的其他方面，以了解它们将如何运作。
 
-## 第 3 章：使用 JavaScript 语法
+## 第 2 章：使用 JavaScript 语法
 
-
-
-
-当你使用 JavaScript 工作时，你正在处理一个程序，该程序使用一组指令，这些指令会被特定的浏览器程序解析并执行。这是一个在线程序，允许你更改网站或其他网络相关的材料，因此对于某些使用 JavaScript 的人来说，让代码在不同的浏览器中运行可能是一项挑战，但只要有正确的指令，你会发现让它在大多数情况下运行更容易。你发送给程序的这些指令被称为语句（statements）。
+当你使用 JavaScript 工作时，你正在处理一个程序，该程序使用一组指令，这些指令会被特定的浏览器程序解析并执行。这是一个在线程序，允许你更改网站或其他网络相关的材料，因此对于某些使用 JavaScript 的人来说，让代码在不同的浏览器中运行可能是一项挑战，但只要有正确的指令，你会发现让它在大多数情况下运行更容易。你发送给程序的这些指令被称为语句（`statements`）。
 
 你在这个编程语言中创建的所有语句都将由几个不同的部分组成，包括：
 
-* 注释 (Comments)
-* 关键字 (Keywords)
-* 表达式 (Expressions)
-* 运算符 (Operators)
-* 值 (Values)
+*   注释 (`Comments`)
+*   关键字 (`Keywords`)
+*   表达式 (`Expressions`)
+*   运算符 (`Operators`)
+*   值 (`Values`)
 
 让我们来看所有这些内容，了解它们在程序内部是如何工作的，以及它们如何帮助你编写出完美的指令，以便每次执行你的程序。
 
 ### Values
 
-在使用 JavaScript 时会有两种类型的值。这些被称为变量值和固定值。如果你在处理该语言中的字面量（literals），你处理的就是一个固定的值，而变量值通常被称为变量（variables）。
+在使用 JavaScript 时会有两种类型的值。这些被称为变量值和固定值。如果你在处理该语言中的字面量（`literals`），你处理的就是一个固定的值，而变量值通常被称为变量（`variables`）。
 
 在 JavaScript 中编写固定值或变量时，你有一需要许多许多规则。首先，你的数字定义可以带小数也可以不带小数，而字符串将是你编写的文本，周围括有双引号或单引号。
 
@@ -164,14 +149,14 @@ JavaScript 使用面向对象编程（OOP）脚本语言，这意味着它设计
 
 运算符在 JavaScript 中工作时可以起着特殊的作用。它们通常有助于将值赋值给你的变量，帮助进行基础算术运算等等。你可以在这种编程语言中使用两种类型的运算符，其符号将根据你使用的哪一个而异。在 JavaScript 中发现的两种主要运算符包括：
 
-* 赋值运算符（Assignment operator）：这是你用于给变量赋值或值的运算符。你将使用等号 `=` 来显示这种关系。
-* 算术运算符（Arithmetic operators）：这些是在程序中用于各种算术运算的运算符，包括减法、加法乘法。你将使用符号 `+ - * /` 来显示这些。
+*   **赋值运算符（`Assignment operator`）**：这是你用于给变量赋值或值的运算符。你将使用等号 `=` 来显示这种关系。
+*   **算术运算符（`Arithmetic operators`）**：这些是在程序中用于各种算术运算的运算符，包括减法、加法、乘法。你将使用符号 `+`、`-`、`*`、`/` 来显示这些。
 
 你有许多方法可以在代码中使用这些运算符来帮助进行游戏、执行数学方程等。
 
 ### Expressions
 
-当你在 JavaScript 内部创建一个表达式时，你正在创建运算符、变量和值的组合。它们将共同工作以产生计算或评估。表达式可以包含变量值，包括字符串和数字。例如，使用 `"Java" + "Script"` 将给你计算。
+当你在 JavaScript 内部创建一个表达式时，你正在创建运算符、变量和值的组合。它们将共同工作以产生计算或评估。表达式可以包含变量值，包括字符串和数字。例如，使用 `"Java" + "Script"` 将给你计算结果。
 
 这是一个你可以使用的示例，可以看到这些表达式在你的代码中如何工作以及它们带给你的结果：
 
@@ -179,21 +164,21 @@ JavaScript 使用面向对象编程（OOP）脚本语言，这意味着它设计
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset = “ISO-8859-1”>
+<meta charset="ISO-8859-1">
 <title>JS Expressions</title>
-<script type = “text/javascript”>
-var a = 101; //variable, assignment operator literal literal number
+<script type="text/javascript">
+var a = 101; // variable, assignment operator literal literal number
 var b = 300;
 var addition = a + b;
-var str1 = “Java”;variable, assignment operator and as String
-var str2 = “Script”;
+var str1 = "Java"; // variable, assignment operator and as String
+var str2 = "Script";
 var str3 = str1 + str2;
 </script>
 </head>
 <body>
-<script type = “text/javascript”>
-document.write(“a + b =” + addition);
-document.write("<br>str1 + str2 =” + str3);
+<script type="text/javascript">
+document.write("a + b = " + addition);
+document.write("<br>str1 + str2 = " + str3);
 </script>
 </body>
 </html>
@@ -202,6 +187,7 @@ document.write("<br>str1 + str2 =” + str3);
 当你运行上面编写的代码，你会得到输出：
 
 a + b = 401
+
 str1 + str2 = JavaScript
 
 在处理这些代码时，你可以始终添加一些事情或更改某些东西，你可以添加不同的单词或发送整个字符串来编写你想要的内容。在处理代码时有很多事情可以做，所以不要觉得在这里的内容受到了限制。
@@ -210,7 +196,7 @@ str1 + str2 = JavaScript
 
 编程语言中的关键字可以帮助解释器理解你想让执行的操作。例如，当你使用 `var` 关键字时，你是在告诉浏览器你想在系统中创建一个新变量。这些关键字是保留的，用于告诉浏览器如何行动，你不应该将它们作为函数、标签或变量使用。JavaScript 中使用的保留字包括：
 
-`Abstract`, `Boolean`, `Arguments`, `Break`, `Byte`, `Case`, `Catch`, `Char`, `Calss`, `Do`, `Const`, `Continue`, `Debugger`, `Default`, `Delete`, `Double`, `Else`, `Enum`, `Eval`, `Export`, `Extends`, `Fals`, `Final`, `Finally`, `Float`, `For`, `Function`, `Goto`, `If`, `Implements`, `Import`, `In`, `Instanceof`, `Int`, `Interface`, `Let`, `Long`, `Native`, `New`, `Null`, `Package`, `Private`, `Protected`, `Public`, `Return`, `Short`, `Static`, `Super`, `Swich`, `Synchronized`, `Throw`, `Throws`, `This`, `True`, `Transient`, `Try`, `Typeof`, `Var`, `Void`, `Volatile`, `With`, `While`, `Yield`
+`Abstract`, `Boolean`, `Arguments`, `Break`, `Byte`, `Case`, `Catch`, `Char`, `Class`, `Do`, `Const`, `Continue`, `Debugger`, `Default`, `Delete`, `Double`, `Else`, `Enum`, `Eval`, `Export`, `Extends`, `False`, `Final`, `Finally`, `Float`, `For`, `Function`, `Goto`, `If`, `Implements`, `Import`, `In`, `Instanceof`, `Int`, `Interface`, `Let`, `Long`, `Native`, `New`, `Null`, `Package`, `Private`, `Protected`, `Public`, `Return`, `Short`, `Static`, `Super`, `Switch`, `Synchronized`, `Throw`, `Throws`, `This`, `True`, `Transient`, `Try`, `Typeof`, `Var`, `Void`, `Volatile`, `With`, `While`, `Yield`
 
 你应该小心使用这些单词。它们应该只作为告诉浏览器应该遵循的命令的方式。如果你在代码的其他地方使用它们，将会产生难以处理的错误信息。
 
@@ -220,17 +206,15 @@ str1 + str2 = JavaScript
 
 有时你会使用几个单词来命名你的变量。如果你想把它称为“my first project”而不是简单的“project”，你会希望确保你使用正确的工具来显示它们之间的关系，并确保你不会在大小写上引起混淆。你将几个单词组合在一起命名变量的方法包括：
 
-* 连字符（Hyphens）——你可以仅通过使用一些连字符在变量名中组合你喜欢的任意单词。一些例子是 `city-name`、`visa-passport` 或 `second-address`。
-* 下划线（Underscores）——这些的工作方式与连字符类似，但你会使用不同的符号。例如，你会使用 `first_address` 或 `city_name`。
-* 驼峰命名法（Camel Case）——这是你保持单词连接，但将每个单词的首字母大写，例如 `FirstAddress`。但 JavaScript 对此略有不同。如果你在这个编程语言中使用驼峰命名法，你会从小写开始第一个单词，然后让第二个单词从大写开头，例如 `firstAddress`。
-
-
+*   **连字符（`Hyphens`）**——你可以仅通过使用一些连字符在变量名中组合你喜欢的任意单词。一些例子是 `city-name`、`visa-passport` 或 `second-address`。
+*   **下划线（`Underscores`）**——这些的工作方式与连字符类似，但你会使用不同的符号。例如，你会使用 `first_address` 或 `city_name`。
+*   **驼峰命名法（`Camel Case`）**——这是你保持单词连接，但将每个单词的首字母大写，例如 `FirstAddress`。但 JavaScript 对此略有不同。如果你在这个编程语言中使用驼峰命名法，你会从小写开始第一个单词，然后让第二个单词从大写开头，例如 `firstAddress`。
 
 你在 JavaScript 中使用的语法将极大地影响你使用该语言所能实现。关键字可以帮助你预留正确的单词来对代码执行操作，语句需要正确编写，以便你能够在屏幕上打印出正确的内容，而变量和运算符则将帮助你进行基础计算或保存你正在编写的程序。理解所有这些内容如何工作，将对你获得的结果产生巨大影响。
 
-## 第 4 章：妥善放置你的 JavaScript
+## 第 3 章：妥善放置你的 JavaScript
 
-在 HTML 文档中放置代码的位置有很大的活性。你可以通过几种方式将代码放置在文档内部，包括：
+在 HTML 文档中放置代码的位置有很大的灵活性。你可以通过几种方式将代码放置在文档内部，包括：
 
 ### 在 `<head>…</head>` 部分中编写 JavaScript
 
@@ -238,18 +222,18 @@ str1 + str2 = JavaScript
 
 ```html
 <!DOCTYPE html>
-<html
+<html>
 <head>
-<meta charset = “ISO-8859-1”>
+<meta charset="ISO-8859-1">
 <title>JS in head section</title>
-<script type = “text/avascript”>
-function showAlert(){
-alert(“This is an alert from Head section!”);
+<script type="text/javascript">
+function showAlert() {
+    alert("This is an alert from Head section!");
 }
 </script>
 </head>
 <body>
-<input type = “button” onclick = “showAlert();” value = “Call JavaScript”/>
+<input type="button" onclick="showAlert();" value="Call JavaScript"/>
 </body>
 </html>
 ```
@@ -264,14 +248,14 @@ alert(“This is an alert from Head section!”);
 
 ```html
 <!DOCTYPE html>
-<html
+<html>
 <head>
-<meta charset = “ISO-8859-1”>
+<meta charset="ISO-8859-1">
 <title>JS Body</title>
 </head>
 <body>
-<script type = “text/javascript”>
-Document.write(“Welcome to JavaScript Tutorials!”)
+<script type="text/javascript">
+document.write("Welcome to JavaScript Tutorials!")
 </script>
 <p>Body section of the HTML document.</p>
 </body>
@@ -286,56 +270,55 @@ Document.write(“Welcome to JavaScript Tutorials!”)
 
 ```html
 <!DOCTYPE html>
-<html
+<html>
 <head>
-<meta charset = “ISO-8859-1”>
+<meta charset="ISO-8859-1">
 <title>JS Body</title>
-<script type = “text/javascript”>
-function showAlert(){
-alert(“This is an alert from Head section!:);
+<script type="text/javascript">
+function showAlert() {
+    alert("This is an alert from Head section!");
 }
 </script>
 </head>
 <body>
-<script type = “text/javascript”>
-document.write(“Welcome to JavaScript Tutorials!”)
+<script type="text/javascript">
+document.write("Welcome to JavaScript Tutorials!")
 </script>
 <p>Body section of the HTML document.</p>
-<input type = “button” onclick = “showAlert();” value = “Call JavaScript”/>
+<input type="button" onclick="showAlert();" value="Call JavaScript"/>
 </body>
 </html>
 ```
 
-当你执行上述 HTML 程序时，你将得到一个弹出的警告框，显示：“This is an alert from the Head section!”；在警告框后面的屏幕上，你将看到一行显示“Welcome to JavaScript Tutorials!”，另一行显示“Body section of the HTML document”。这仅仅当你向 HTML body 的不同部分放置 JavaScript 代码时所能做的示例之一。
+当你执行上述 HTML 程序时，你将得到一个弹出的警告框，显示：“This is an alert from the Head section!”；在警告框后面的屏幕上，你将看到一行显示“Welcome to JavaScript Tutorials!”，另一行显示“Body section of the HTML document”。这仅仅是当你向 HTML body 的不同部分放置 JavaScript 代码时所能做的示例之一。
 
 ### 将 JavaScript 添加到外部文件然后引入到头部部分
 
-这实际上是你将代码添加到网页的最佳方式之一。使用一个扩展名为为 `jscode.js` 的外部文件。然后你可以将其添加到 HTML 文档的头部部分。你在该文件中的所有函数都可以由 HTML 文档 body 中的不同 Web 元素调用。在文档头部文件中添加外部文件的方法语法如下所示：
+这实际上是你将代码添加到网页的最佳方式之一。使用一个扩展名为 `jscode.js` 的外部文件。然后你可以将其添加到 HTML 文档的头部部分。你在该文件中的所有函数都可以由 HTML 文档 body 中的不同 Web 元素调用。在文档头部文件中添加外部文件的方法语法如下所示：
 
 ```html
 <!DOCTYPE html>
-<html
+<html>
 <head>
-<meta charset = “ISO-8859-1”>
+<meta charset="ISO-8859-1">
 <title>JS Body</title>
-<script type = “text/javascript”>
-src = “js/demo.js”></script>
+<script type="text/javascript" src="js/demo.js"></script>
 </head>
 <body>
-<input type = “button” onclick = “showAlert();” value =”Call JavaScript” />
+<input type="button" onclick="showAlert();" value="Call JavaScript" />
 </body>
 </html>
 ```
 
-当你运行并执行该 HTML 程序时，你将收到一条显示“This is an alert from the Had section”（或在此部分中添加的其他内容）的警告消息，然后 JavaScript 函数将在点击按钮事件时被调用，该按钮定义在你的外部文件中，并包含在文档的 head 部分中。这与你在文档 head 部分编写代码发生的情况相似，但更安全，并且提供了更多的自由。尽管不常见，但只要你放置得当，就可以正常工作。
+当你运行并执行该 HTML 程序时，你将收到一条显示“This is an alert from the Head section”（或在此部分中添加的其他内容）的警告消息，然后 JavaScript 函数将在点击按钮事件时被调用，该按钮定义在你的外部文件中，并包含在文档的 head 部分中。这与你在文档 head 部分编写代码发生的情况相似，但更安全，并且提供了更多的自由。尽管不常见，但只要你放置得当，就可以正常工作。
 
-## 第 5 章：在 JavaScript 中使用变量
+## 第 4 章：在 JavaScript 中使用变量
 
 在编写代码时，变量非常重要。它们决定了你在代码内部使用的字符，并且通常关联到某种类型的值。你在代码中可以使用三种数据类型，包括：
 
-*   数字：这些可以是像 `1`、`2`、`3` 和 `4` 这样的整数，也可以是带小数点的数字如 `3.4`、`2.2`。
-*   字符串或文本：这些是你希望出现在屏幕上的单词。例如，你可以在此部分输入“This is my language”或其他短语。
-*   布尔值：这些基本上是显示为 `true` 或 `false` 的变量。这些很有趣，因为你可以放置一个或两个。
+*   **数字**：这些可以是像 `1`、`2`、`3` 和 `4` 这样的整数，也可以是带小数点的数字如 `3.4`、`2.2`。
+*   **字符串或文本**：这些是你希望出现在屏幕上的单词。例如，你可以在此部分输入“This is my language”或其他短语。
+*   **布尔值**：这些基本上是显示为 `true` 或 `false` 的变量。这些很有趣，因为你可以放置一个或两个。
 
 与其他编程语言相比，关于这种语言需要注意的一是它不区分浮点值和整数值。在 JavaScript 中，所有的数字都将被视为浮点值，该语言使用 64 位浮点格式来表示你使用的数字。
 
@@ -345,33 +328,30 @@ src = “js/demo.js”></script>
 
 ```html
 <!DOCTYPE html>
-<html
+<html>
 <head>
-<meta charset = “ISO-8859-1”>
+<meta charset="ISO-8859-1">
 <title>JavaScript Variables</title>
-<script type = “text/javascript”>
-var name = “Appy”;
-var age = 21
+<script type="text/javascript">
+var name = "Appy";
+var age = 21;
 var salary = 10000, expenses = 12000;
-alert(“Name:” +name + “Age:” +age + “/nSalary:” + salary
-+”Expenses:” + expenses)
+alert("Name:" + name + " Age:" + age + "\nSalary:" + salary + " Expenses:" + expenses);
 </script>
 </head>
 <body>
-
 </body>
 </html>
 ```
 
-
-
 让我们花点时间来看看这段代码想要告诉我们什么。当你尝试存储变量的值时，你正在进行一个被称为**变量初始化**的过程。你可以在想要创建变量的任何时候，甚至在想要使用变量时执行这个过程。
 
-例如，在上面的代码中有四个可用的变量，每个变量都分配了一个值。其中一个变量被赋值为 `salary = 10000`，另一个被赋值为 `name = “Appy”`。
+例如，在上面的代码中有四个可用的变量，每个变量都分配了一个值。其中一个变量被赋值为 `salary = 10000`，另一个被赋值为 `name = "Appy"`。
 
 所以当程序执行时，屏幕上显示的信息将是：
 
 Name: Appy Age: 21
+
 Salary: 10000 Expenses: 12000
 
 当你声明 `var` 关键字时，应该只执行一次。你不允许在代码中多次声明此变量。幸运的是，如果你愿意，可以进行一些更改并获得不同的结果，因为 JavaScript 能够存储来自任何数据类型的值，无论是字符串、数字还是其他。由于它是一门无类型语言，你不需要告诉编译器变量将包含什么。此外，你的变量的值类型在执行过程中允许更改，解析器能够自动为你处理这一点。
@@ -380,8 +360,8 @@ Salary: 10000 Expenses: 12000
 
 程序中的变量将根据你所处理的程序区域而变化。在 JavaScript 的变量中，你会发现两种类型的作用域：
 
-- 全局变量——在全局作用域中，变量可以在代码的任何地方定义，并且所有人都可以访问。它在你想查看当前 HTML 文档的任何地方都是可见的。
-- 局部变量——对于局部变量，你只能在定义它的位置或函数中看到它。例如，你设置的函数参数将被视为局部作用域。
+*   **全局变量**——在全局作用域中，变量可以在代码的任何地方定义，并且所有人都可以访问。它在你想查看当前 HTML 文档的任何地方都是可见的。
+*   **局部变量**——对于局部变量，你只能在定义它的位置或函数中看到它。例如，你设置的函数参数将被视为局部作用域。
 
 如果你给全局变量和局部变量使用相同的名称，请注意局部变量的优先级高于全局变量，因此在命名变量并尝试设置它们时请记住这一点。
 
@@ -389,13 +369,13 @@ Salary: 10000 Expenses: 12000
 
 在代码中为变量命名时，你需要格外小心。这有助于你为变量命名一个在程序中有意义的名称，同时避免程序错误或其他问题。命名变量时你应该遵循的某些规则包括：
 
-- 永远不要使用保留关键字作为你的变量名。你可以在本指南的前面找到关键字列表，如果你不确定变量命名是否正确，可以查看它们。
-- 永远不要以数字开头变量名。你可以使用 `6cats` 或 `sixcats`，但以 `6cats` 开头是不起的。
-- 这种语言中的变量名是区分大小写的。在在使用 JavaScript 时，`Help` 和 `help` 被视为不同的变量。
+*   永远不要使用保留关键字作为你的变量名。你可以在本指南的前面找到关键字列表，如果你不确定变量命名是否正确，可以查看它们。
+*   永远不要以数字开头变量名。你可以使用 `sixcats`，但以 `6cats` 开头是不行的。
+*   这种语言中的变量名是区分大小写的。在使用 JavaScript 时，`Help` 和 `help` 被视为不同的变量。
 
 变量是为你代码中的事物赋值的极佳方法，可以让编写代码变得比你想象的要简单得多。你需要选择适合你的类型，例如全局变量或局部变量，并在不使用保留关键字的情况下给它正确的名称，但总的来说，它们在需要时很容易创建和调用。
 
-## 第 6 章：在 JavaScript 中使用运算符
+## 第 5 章：在 JavaScript 中使用运算符
 
 你可以使用的 JavaScript 另一个酷功能是引入运算符来给变量赋值，甚至进行一些基础数学方程。引入运算符后你可以做很多事情，非常有趣。匹配游戏通常也会使用这些运算符，以及你可能想要用代码处理的其他程序。
 
@@ -403,13 +383,13 @@ Salary: 10000 Expenses: 12000
 
 JavaScript 提供了多种不同的运算符，你可以用来完成代码所需的某些基础数学方程。其中一些是非常标准的，你会在不同的编程语言看到它们，但另一些对 JavaScript 可能是全新的。你在代码中可以使用的算术运算符包括：
 
-- `(+)`——这是加法运算符，它告诉代码将两个操作数相加，例如 `X + Y`
-- `(-)`——这是减法运算符，用于你的代码中从第一个操作数中减去第二个操作数，例如 `X – Y`
-- `(*)`——这个用作乘法运算符，可以用于将两个操作数相乘，例如 `X * Y`。
-- `(/)`——这是除法运算符，用于你的代码中除法两个操作数，例如 `X / Y`
-- `(%)`——这是模运算，即输出整数除法余数的运算符。你通过 `X % Y` 显示此结果。
-- `(++)`——这是递增运算符，它会将选定的整数加 1。例如你可以这样使用它：`X++`，你会得到的 `X` 比通常大一。
-- `(--)`——这是递减运算符，它会将整数的值减 1。
+*   `+`——这是加法运算符，它告诉代码将两个操作数相加，例如 `X + Y`
+*   `-`——这是减法运算符，用于你的代码中从第一个操作数中减去第二个操作数，例如 `X - Y`
+*   `*`——这个用作乘法运算符，可以用于将两个操作数相乘，例如 `X * Y`。
+*   `/`——这是除法运算符，用于你的代码中除法两个操作数，例如 `X / Y`
+*   `%`——这是模运算，即输出整数除法余数的运算符。你通过 `X % Y` 显示此结果。
+*   `++`——这是递增运算符，它会将选定的整数加 1。例如你可以这样使用它：`X++`，你会得到的 `X` 比通常大一。
+*   `--`——这是递减运算符，它会将整数的值减 1。
 
 根据你想要在 HTML 文档中显示的答案，可以使用这些不同运算符的组合。有时，你可能需要在公式中进行加法和减法，而在其他时候，你可能有一长串算术运算符需要系统为你计算。只要你将它们正确放入语法中，这一切都是可能的。
 
@@ -417,48 +397,45 @@ JavaScript 提供了多种不同的运算符，你可以用来完成代码所需
 
 你在 JavaScript 操作中可能处理的另一种类型的运算符是比较运算符。这些运算符基本上可以帮助为语句内部的变量赋值。还有几种不同的选项，你通常会用它来检查某物是否真实以及根据结果给出什么答案。你在 JavaScript 中使用的比较运算符包括：
 
-- `==`——这是相等运算符，用于查看两个操作数的值是否相等。如果值相等，你的条件将为真。
-- `!=`——这是不等于运算符，用于检查两个操作数并查看它们是否相等。如果值不相等，条件将为真。
-- `>`——这是大于符号。这种类型的运算符用于查看左侧操作数的值是否大于右侧的操作数。如果左侧更大，条件为真。
-- `<`——这是小于运算符，用于查看左侧的操作数是否小于右侧的操作数。如果左侧小于，条件为真。
-- `>=`——这是大于等于运算符。它用于查看左侧操作数的值是否等于或大于右侧操作数的值。如果正确，条件将为真。
-- `<=`——这是小于等于运算符。该运算符用于查看左侧的操作数是否等于或小于右侧的操作的值。如果正确，条件将为真。
-
-
-
+*   `==`——这是相等运算符，用于查看两个操作数的值是否相等。如果值相等，你的条件将为真。
+*   `!=`——这是不等于运算符，用于检查两个操作数并查看它们是否相等。如果值不相等，条件将为真。
+*   `>`——这是大于符号。这种类型的运算符用于查看左侧操作数的值是否大于右侧的操作数。如果左侧更大，条件为真。
+*   `<`——这是小于运算符，用于查看左侧的操作数是否小于右侧的操作数。如果左侧小于，条件为真。
+*   `>=`——这是大于等于运算符。它用于查看左侧操作数的值是否等于或大于右侧操作数的值。如果正确，条件将为真。
+*   `<=`——这是小于等于运算符。该运算符用于查看左侧的操作数是否等于或小于右侧的操作的值。如果正确，条件将为真。
 
 请记住，如果上述列出的任何运算符的语句最终不正确，那么结果将是 `false`（假），而不是列出的 `true`（真）。你之后可以将此信息用于 `if` 和 `if…else` 语句，帮助你创建不同的文本字符串，用以保持你的程序顺利运行。
 
 ### 关系运算符
 
-在使用 JavaScript 语言时，你可以使用的另一种类型的运算符包括：
+在使用 JavaScript 语言时，你可以使用的另一种类型的运算符包括（通常称为逻辑运算符）：
 
-- `&&`——这是逻辑与（AND）运算符。如果两个操作数的结果都是非零，那么该运算符将使条件为真。
-- `||`——这是逻辑或（OR）运算符。这意味着如果你的两个操作数中任何一个是非零，该运算符将将其转换为 `true` 条件。
-- `!`——这是逻辑非（NOT）运算符。如果操作数是非零，这将变成一个 `false` 条件。
+*   `&&`——这是逻辑与（`AND`）运算符。如果两个操作数的结果都是非零，那么该运算符将使条件为真。
+*   `||`——这是逻辑或（`OR`）运算符。这意味着如果你的两个操作数中任何一个是非零，该运算符将将其转换为 `true` 条件。
+*   `!`——这是逻辑非（`NOT`）运算符。如果操作数是非零，这将变成一个 `false` 条件。
 
 ### 赋值运算符
 
 当你想要给变量添加一些值时，赋值运算符将非常有用。有时你可以将一个值赋值给不同的变量，以此类推，让你的计算机程序按照你想要的方式工作。你在编码中可能会使用的一些简单赋值运算符包括：
 
-- `=`——这是简单赋值，用于将右侧的值赋给左侧的操作数。
-- `+=`——这是加法赋值运算符，它会将右操作数和左操作数相加，然后将此结果赋给左侧的操作数。
-- `-=`——这是减法赋值。它的原理与上一个类似。你会取右操作数并从左操作数中减去它。结果将被赋给左侧的操作数。
-- `*=`——这是乘法赋值，你把右的操作数与左侧相乘，然后将结果赋给左侧的操作数。
-- `/=`——该运算符将左侧的操作数除以右的操作数，然后将此结果赋给左侧的操作数。
+*   `=`——这是简单赋值，用于将右侧的值赋给左侧的操作数。
+*   `+=`——这是加法赋值运算符，它会将右操作数和左操作数相加，然后将此结果赋给左侧的操作数。
+*   `-=`——这是减法赋值。它的原理与上一个类似。你会取右操作数并从左操作数中减去它。结果将被赋给左侧的操作数。
+*   `*=`——这是乘法赋值，你把右的操作数与左侧相乘，然后将结果赋给左侧的操作数。
+*   `/=`——该运算符将左侧的操作数除以右的操作数，然后将此结果赋给左侧的操作数。
 
 所有这些运算符都允许你在系统中执行许多操作。根据你想要在代码中使用的语句和函数，你将在不同的时间需要其中的每一个。通过一些实验来学习这些运算符是如何工作的，这样你就能理解从长远来看如何从中受益。
 
-## 第 7 章：教程序如何做决定
+## 第 6 章：教程序如何做决定
 
 有时，你需要程序根据输入系统的信息为你做决定。你的大多数函数都将根据决定是真是假给出输出。如果语句为真，你将获得一个选项；除非你设置程序来为你做决定，否则如果条件为假，程序将直接结束。幸运的是，你可以对代码进行一些处理，以确保无论条件真假都能获得结果，你只需要设置语法，让代码知道该做什么。在这里，我们将讨论如何教你的程序根据给定的条件来做决定。
 
 JavaScript 语言将支持几种不同类型的条件语句，包括：
 
-- `If` 语句
-- `If…else` 语句
-- `If…else if` 语句
-- `Switch case` 语句
+*   `if` 语句
+*   `if…else` 语句
+*   `if…else if` 语句
+*   `switch case` 语句
 
 我们将在下面讨论其中几种，帮助你理解它们将如何告诉程序根据满足的条件来做决定。
 
@@ -470,15 +447,15 @@ JavaScript 语言将支持几种不同类型的条件语句，包括：
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset = “ISO-8859-1”>
+<meta charset="ISO-8859-1">
 <title>Basic IF Statement</title>
 </head>
 <body>
-<script type = “text/javascript”>
+<script type="text/javascript">
 var salary = 10000;
 var expenses = 12000;
-if(expenses > salar){
-document.write(“<b>Please either start earning more or spend less!</b>”):
+if (expenses > salary) {
+    document.write("<b>Please either start earning more or spend less!</b>");
 }
 </script>
 <p>We are inside the body section…</p>
@@ -490,26 +467,25 @@ document.write(“<b>Please either start earning more or spend less!</b>”):
 
 ### “if…else” 语句
 
-现在在上一个示例中，你只有在条件为真时才能获得结果。当某人的收入少于其支出时，你放入代码中的短语就会出现。但如果某人薪很高且擅长预算，导致他们没有把所有的收入都花在支出上呢？当你只使用 `if` 语句时，程序中将什么都不会显示。
+现在在上一个示例中，你只有在条件为真时才能获得结果。当某人的收入少于其支出时，你放入代码中的短语就会出现。但如果某人薪水很高且擅长预算，导致他们没有把所有的收入都花在支出上呢？当你只使用 `if` 语句时，程序中将什么都不会显示。
 
-但这正是 `if…else` 语句派上用场的地方。它允许你根据条件的真假拥有一些选项。你可以保持第一部分不变，并在条件为真时显示该短语；但如果条件为假且某人的收入大于其支出，你可以设置代码显示另一个短语或动作，例如“Good job budgeting your money！”使用 `if…else` 语句语法的良好示例如下所示：
+但这正是 `if…else` 语句派上用场的地方。它允许你根据条件的真假拥有一些选项。你可以保持第一部分不变，并在条件为真时显示该短语；但如果条件为假且某人的收入大于其支出，你可以设置代码显示另一个短语或动作，例如“Good job budgeting your money!”使用 `if…else` 语句语法的良好示例如下所示：
 
 ```html
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset = “ISO-8859-1”>
+<meta charset="ISO-8859-1">
 <title>If Else Statement</title>
 </head>
 <body>
-<script type = “text/javascript”>
+<script type="text/javascript">
 var salary = 12000;
 var expenses = 10000;
-if(expenses > salar){
-document.write(“<b>Please either start earning more or spend less!</b>”):
-}
-else {
-document.write(“<b>You have enough money to spend!</b>”);
+if (expenses > salary) {
+    document.write("<b>Please either start earning more or spend less!</b>");
+} else {
+    document.write("<b>You have enough money to spend!</b>");
 }
 </script>
 <p>We are inside the body section…</p>
@@ -519,12 +495,9 @@ document.write(“<b>You have enough money to spend!</b>”);
 
 通过这个选项，你可以有两个不同的输出。如果条件最终为真，且用户的支出超过了收入，第一个语句将显示在屏幕上。但如果他们擅长预算，他们就有一个为假的条件，并且会获得第二个语句。你可以在程序中根据需要多次这样做，因此在未来可以轻松地拥有五个或更多此类语句。
 
-## 第 8 章：在 JavaScript 中使用函数
+## 第 7 章：在 JavaScript 中使用函数
 
 函数是 JavaScript 编码（以及你选择使用的其他编程语言）中的重要部分，了解它们如何工作以及如何在你的代码中存储是非常重要的。函数是一个可重用且组织的代码块，以便你多次使用它来执行程序中所需的操作。
-
-
-
 
 当 `function` 使用得当时，程序员能够将一个非常大的程序拆分成若干个易于管理的函数，这些函数不再有所有的冗余，更易阅读，而且整体上更易处理。
 
@@ -534,25 +507,23 @@ JavaScript 确实拥有一些内置在系统中的函数，你可以在代码需
 
 在我们深入学习如何使用函数之前，让我们先来看看函数的定义。基本上，函数是代码中的一个可使用位点，它可以放置在代码的任何位置，你只需要定义它一次。在这种编程语言中，你将通过一个关键字来定义函数，其后跟的是函数的唯一名称、一个可以填充或留空的参数列表，以及一个用大括号括起来的语句块。
 
-你还需要设置随函数一起参数。你可以在调用函数时向函数传递一些不同的参数。这些传递的参数值在函数内部是可用的，你可以对参数进行任何需要的操作。如果你选择在程序中不这样做，函数也可以不带参数，或者一个函数可以有多个参数。如果你在一个函数中带有多个参数，请确保用逗号将它们隔开。在该语言中为你的函数设置参数的示例包括：
+你还需要设置随函数一起的参数。你可以在调用函数时向函数传递一些不同的参数。这些传递的参数值在函数内部是可用的，你可以对参数进行任何需要的操作。如果你选择在程序中不这样做，函数也可以不带参数，或者一个函数可以有多个参数。如果你在一个函数中带有多个参数，请确保用逗号将它们隔开。在该语言中为你的函数设置参数的示例包括：
 
 ```html
-<!DOCTYPE html?>
+<!DOCTYPE html>
 <html>
 <head>
-<meta charset _ISO-8859-1”>
+<meta charset="ISO-8859-1">
 <title>Parameterized Function</title>
-<script type =”text/javascript”>
-function sayHelloToJavaScript (message, entity, lang) {
-alert(message+ “to the” +entity+ “world of” +lang+ “!”);
+<script type="text/javascript">
+function sayHelloToJavaScript(message, entity, lang) {
+    alert(message + " to the " + entity + " world of " + lang + "!");
 }
 </script>
 </head>
 <body>
-<input type = “button”
-onclick = “sayHelloToJavaScript”
-('Welcome’, ‘World’, ‘JavaScript’); value = “Call JavaScript” />
-<p> Body section of the HTML document. </p>
+<input type="button" onclick="sayHelloToJavaScript('Welcome', 'World', 'JavaScript');" value="Call JavaScript" />
+<p>Body section of the HTML document.</p>
 </body>
 </html>
 ```
@@ -565,27 +536,27 @@ onclick = “sayHelloToJavaScript”
 
 使用函数可以为你程序中的工作添加很多内容。可能需要花一点时间把它们写下来，但当你完成时，结果会非常惊人。尝试本章中的语法，并操纵单词和其他部分，以使其最符合你的需求工作！
 
-## 第 9 章：对象在 JavaScript 中如何工作
+## 第 8 章：对象在 JavaScript 中如何工作
 
 由于 JavaScript 是一门 OOP 语言，即面向对象编程语言，它在创建和存储内部不同项目方面具有非常强大的功能。你可以与对象一起的一些功能包括：
 
-*   **封装（Encapsulation）**——这个概念是你将所有相关信息（包括方法和数据）一起存储在对象的内部。
-*   **聚合（Aggregation）**——这个概念允许你将一个对象存储在另一个对象内部。
-*   **继承（Inheritance）**——这个概念允许一个类继承甚至重用一个或多个其他类的方法和属性。这有时被称为父类。
-*   **多态（Polymorphism）**——这个概念允许你作为程序员编写可以以不同方式执行不同任务的方法或函数，但它们是在相同的时间被定义的。这有时被称为方法重载。
-*   **对象（Objects）**——对象由某些属性组成。属性有时可以是属性的函数，在这种情况下，该函数就是对象的方法。
+*   **封装（`Encapsulation`）**——这个概念是你将所有相关信息（包括方法和数据）一起存储在对象的内部。
+*   **聚合（`Aggregation`）**——这个概念允许你将一个对象存储在另一个对象内部。
+*   **继承（`Inheritance`）**——这个概念允许一个类继承甚至重用一个或多个其他类的方法和属性。这有时被称为父类。
+*   **多态（`Polymorphism`）**——这个概念允许你作为程序员编写可以以不同方式执行不同任务的方法或函数，但它们是在相同的时间被定义的。这有时被称为方法重载。
+*   **对象（`Objects`）**——对象由某些属性组成。属性有时可以是属性的函数，在这种情况下，该函数就是对象的方法。
 
 ### 对象的属性
 
-在 JavaScript 中创建对象时，你可以使用数据类型中的任何一种，包括布尔（Boolean）、字符串（string）和数字（number），以及像对象这样的抽象数据类型。对象的属性将是你内部用于创建对象属性方法的变量，它们也可以作为全局可见变量使用。由于所有这些属性，当处理得当时，对象可以在整个页面可见。一个你可以作为示例的良好语法包括：
+在 JavaScript 中创建对象时，你可以使用数据类型中的任何一种，包括布尔（`Boolean`）、字符串（`string`）和数字（`number`），以及像对象这样的抽象数据类型。对象的属性将是你内部用于创建对象属性方法的变量，它们也可以作为全局可见变量使用。由于所有这些属性，当处理得当时，对象可以在整个页面可见。一个你可以作为示例的良好语法包括：
 
 ```html
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset = “ISO-8859-1”>
-<title>Objects Example </title>
-<script type = “text/javascript”>
+<meta charset="ISO-8859-1">
+<title>Objects Example</title>
+<script type="text/javascript">
 objectName.objectProperty = propertyValue;
 var str = document.title;
 </script>
@@ -603,20 +574,19 @@ var str = document.title;
 
 ### 使用 `new` 操作符
 
-`new` 操作符用于创建实例。为了在 JavaScript 中创建这种对象，你将需要使用 `new` 操作符，然后添加构造方法。构造方法可以是 `array()`、`object()` 和 `date()`，如下所示所示：
+`new` 操作符用于创建实例。为了在 JavaScript 中创建这种对象，你将需要使用 `new` 操作符，然后添加构造方法。构造方法可以是 `Array()`、`Object()` 和 `Date()`，如下所示：
 
 ```html
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset = “ISO-8859-1”>
+<meta charset="ISO-8859-1">
 <title>The New Operator</title>
-<script type = “text/javascript”>
-var student = new object()
-var languages = new array
-(“JavaScript”, “Pascal”, “Python”);
-var day = new Date(“August 24, 1989”);
-alert (day);
+<script type="text/javascript">
+var student = new Object();
+var languages = new Array("JavaScript", "Pascal", "Python");
+var day = new Date("August 24, 1989");
+alert(day);
 </script>
 </head>
 <body>
@@ -624,17 +594,13 @@ alert (day);
 </html>
 ```
 
-当你运行上面的 HTML 程序时，你将得到一个弹窗框，显示你选择的日期以及东部夏令时间的时间。你可以更改任何日期、时间和和其他选项，以满足你的需求。
+当你运行上面的 HTML 程序时，你将得到一个弹窗框，显示你选择的日期以及东部夏令时间的时间。你可以更改任何日期、时间和其他选项，以满足你的需求。
 
-### Object () 构造函数
+### `Object()` 构造函数
 
-正如之前稍微讨论过的，构造函数将是这种语言中首先创建然后初始化对象的函数。如果你使用一个名为 `object()` 的特殊构造函数，你就可以在 JavaScript 内部构建对象。你从这个构造函数获得的值将赋值回变量，并成为对象引用变量。
+正如之前稍微讨论过的，构造函数将是这种语言中首先创建然后初始化对象的函数。如果你使用一个名为 `Object()` 的特殊构造函数，你就可以在 JavaScript 内部构建对象。你从这个构造函数获得的值将赋值回变量，并成为对象引用变量。
 
-
-
-
-
-## 第 10 章：在 JavaScript 中创建事件
+## 第 9 章：在 JavaScript 中创建事件
 
 这种编程语言中的事件是 JavaScript 能够与你的 HTML 文档交互的手段。当浏览器或 HTML 页面上的某个值被操作时，这些事件就会被触发。例如，当你下载一个 HTML 页面时，你正在创建一个事件。当你点击页面上的按钮时，你正在创建一个事件。只要 JavaScript 代码以某种方式与 HTML 页面进行交互，你就会创建一个事件。
 
@@ -642,52 +608,52 @@ alert (day);
 
 在 JavaScript 中，你能够创建许多不同的事件，包括：
 
-让我们来看看当你你想要在这语言语言中创建 `onclick` 事件时，可以使用的一种语法结构：
-
-- `Offline`——当你的文档离线时，将触发此事件。
-- `Onabort`——当你想要取消一个事件时，将触发此事件。
-- `Onafterprint`——在你的文档打印后，将触发此事件。
-- `Onbeforeload`——在你的文档加载之前，将触发此事件。
-- `Onbeforeprint`——此属性将在文档打印之前触发此事件。
-- `Onblur`——当窗口开始失去焦点时，任何时候都会触发此事件。
-- `Oncanplay`——当媒体能够开始播放时将触发此事件，但它可能为了缓冲而必须停止。
-- `Oncanplaythrough`——当媒体能够一直播放到结束而不停止或需要缓冲时，将触发此事件。
-- `Onchange`——当元素发生变化时任何时候都会触发此事件。
-- `Onclick`——当你点击鼠标时，将触发此事件。
-- `Oncontextmenu`——当你触发右键菜单时，将触发此事件。
-- `Ondblclick`——此属性将在你双击鼠标时触发此事件。
-- `Ondrag`——每当你拖拽元素时，都会触发此事件。
-- `Ondragend`——当你完成拖拽操作时，将触发此事件。
-- `Ondragenter`——当元素到达有效的目标放置区域时，将触发此事件。你可以列出你希望目标放置点在哪里。
-- `Ondragleave`——当元素被拖过你选择的放置目标上方时，将触发此事件。
-- `Ondragover`——当你开始拖拽操作时，将触发此事件。
-- `Ondragstart`——在拖拽操作的最开始，将触发此事件。
-- `Ondurationchange`——当你的媒体长度改变时，将触发此事件。
-- `Onemptied`——当你的媒体源突然变空时，将触发此事件。
-- `Onended`——当媒体到达终点的任何时候都会触发此事件。
-- `Onerror`——当发生任何错误时，此选项都会触发。
-- `Onfocus`——一旦窗口获得焦点，将触发此事件。
-- `Onformchange`——当表单上的内容发生变化时，将触发此事件。
-- `Onforminput`——当你页面上的表单接收到用户的输入时，将触发此事件。
-- `Oninvalid`——当输入的内容无效时，将触发此事件。
-- `Onload`——当文档加载完成后，将触发此事件。
+*   `Offline`——当你的文档离线时，将触发此事件。
+*   `Onabort`——当你想要取消一个事件时，将触发此事件。
+*   `Onafterprint`——在你的文档打印后，将触发此事件。
+*   `Onbeforeload`——在你的文档加载之前，将触发此事件。
+*   `Onbeforeprint`——此属性将在文档打印之前触发此事件。
+*   `Onblur`——当窗口开始失去焦点时，任何时候都会触发此事件。
+*   `Oncanplay`——当媒体能够开始播放时将触发此事件，但它可能为了缓冲而必须停止。
+*   `Oncanplaythrough`——当媒体能够一直播放到结束而不停止或需要缓冲时，将触发此事件。
+*   `Onchange`——当元素发生变化时任何时候都会触发此事件。
+*   `Onclick`——当你点击鼠标时，将触发此事件。
+*   `Oncontextmenu`——当你触发右键菜单时，将触发此事件。
+*   `Ondblclick`——此属性将在你双击鼠标时触发此事件。
+*   `Ondrag`——每当你拖拽元素时，都会触发此事件。
+*   `Ondragend`——当你完成拖拽操作时，将触发此事件。
+*   `Ondragenter`——当元素到达有效的目标放置区域时，将触发此事件。你可以列出你希望目标放置点在哪里。
+*   `Ondragleave`——当元素被拖过你选择的放置目标上方时，将触发此事件。
+*   `Ondragover`——当你开始拖拽操作时，将触发此事件。
+*   `Ondragstart`——在拖拽操作的最开始，将触发此事件。
+*   `Ondurationchange`——当你的媒体长度改变时，将触发此事件。
+*   `Onemptied`——当你的媒体源突然变空时，将触发此事件。
+*   `Onended`——当媒体到达终点的任何时候都会触发此事件。
+*   `Onerror`——当发生任何错误时，此选项都会触发。
+*   `Onfocus`——一旦窗口获得焦点，将触发此事件。
+*   `Onformchange`——当表单上的内容发生变化时，将触发此事件。
+*   `Onforminput`——当你页面上的表单接收到用户的输入时，将触发此事件。
+*   `Oninvalid`——当输入的内容无效时，将触发此事件。
+*   `Onload`——当文档加载完成后，将触发此事件。
 
 这些只是当你想要在 HTML 页面内触发事件时能够使用的少数不同命令。如果你想让某个特定的事件发生，每个命令都需要你让该页面上发生相应的触发条件。
+
+让我们来看看当你想要在这门语言中创建 `onclick` 事件时，可以使用的一种语法结构：
 
 ```html
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset = “ISO-8859-1”>
+<meta charset="ISO-8859-1">
 <title>On Click Events</title>
-<script type = “text/javascript”>
+<script type="text/javascript">
 function showAlert() {
-alert(“This is an alert on the onclick event!”);
+    alert("This is an alert on the onclick event!");
 }
 </script>
 </head>
 <body>
-<input type = “button” onclick = “showAlert();” value = “Call JavaScript” />
+<input type="button" onclick="showAlert();" value="Call JavaScript" />
 </body>
 </html>
 ```
@@ -698,60 +664,56 @@ alert(“This is an alert on the onclick event!”);
 
 这种语言可以使用对话框，并且它们将显示在你的 HTML 页面上，用于请求确认、获取用户输入以及发送警告或警报。你可以在这种语言中使用三种类型的对话框，包括提示对话框、确认对话框和警报对话框。
 
-### 警报对话框
+#### 警报对话框
 
 当你想要向用户发送警告消息时，将使用警报对话框。这可以用于验证页面上的表单，甚至只是在用户不允许输入任何信息的地方发送一条消息。警报框通常只有一个按钮可以使用，通常是“确定”按钮，然后用户就可以继续操作页面。
 
-当你有想要让用户在继续之前知道的某些信息时，警报页面会很好用。一些可能使用这种形式的网页包括：当你点击一个将带你进入新网站的链接时。你会提前收到位置更改的提醒，你可以选择继续继续还是留在原始页面。
+当你有想要让用户在继续之前知道的某些信息时，警报页面会很好用。一些可能使用这种形式的网页包括：当你点击一个将带你进入新网站的链接时。你会提前收到位置更改的提醒，你可以选择继续还是留在原始页面。
 
-### 确认对话框
+#### 确认对话框
 
 这种对话框用于在你想要获取用户对两个或多个选项的意见时。你通常会有供选择的按钮，例如取消按钮和确定按钮。当用户同意点击确定按钮时，窗口将确认用户返回了真值，但如果他们点击取消按钮，则为假值。结果取决于你放在语法中的信息。
 
-### 提示对话框
+#### 提示对话框
 
 这种对话框会在文本框接受用户输入时触发。这使得系统能够与用户进行交互。用户可以在点击确定按钮之前在字段中输入他们需要的数据。此对话框接受的参数包括你想要显示在文本框内的标签或显示在文本框内的默认字符串。提示对话框上通常还会有两个按钮，包括确定按钮和取消按钮。
 
 事件和对话框允许用户与计算机系统之间有更多的交互。你将能够让用户选择他们想要发生的事情，例如加载你想要放置在系统上的媒体文件，甚至是关闭页面。你可以发送消息、让用户在框中填写信息，等等。当你使用 JavaScript 时，你可以做的事情太多了，而这些选项只是帮助你的开始！
 
-## 第 11 章：在代码中创建循环
+## 第 10 章：在代码中创建循环
 
-在本文指南的大部分内容中，我们讨论的是根据条件只有一个输入和一个输出的函数和代码。在这些代码中，序列中的第一个语句将在程序中首先执行，然后一直向下执行，直到整个代码执行完毕。但如果你想在你的程序中多次运行同一个代码块，学习如何使用循环是一个好主意。
-
-
-
-
+在本指南的大部分内容中，我们讨论的是根据条件只有一个输入和一个输出的函数和代码。在这些代码中，序列中的第一个语句将在程序中首先执行，然后一直向下执行，直到整个代码执行完毕。但如果你想在你的程序中多次运行同一个代码块，学习如何使用循环是一个好主意。
 
 循环具有让语句在条件为真时多次执行的能力，一旦条件变为假，循环就会立即退出。JavaScript 支持几种不同类型的循环，包括：
 
-- While 循环 (While loop)
-- Do…while 循环
-- For 循环 (For loop)
-- For…in 循环 (For…in loop)
-- 循环控制语句
+*   `while` 循环 (`While loop`)
+*   `do…while` 循环
+*   `for` 循环 (`For loop`)
+*   `for…in` 循环 (`For…in loop`)
+*   循环控制语句
 
 让我们来看看大多数循环是如何工作的，以及你将如何在自己的代码中使用它们。
 
-### While 循环语句
+### `while` 循环语句
 
-`while` 循环你可以使用的最基础的循环类型之一，因为它程序非常简单，所以非常受欢迎。只要你的表达式为真，这段代码就会继续执行。一旦表达式变为假，循环将停止工作。使用 `while` 语句的语法示例如下：
+`while` 循环是你可以使用的最基础的循环类型之一，因为它程序非常简单，所以非常受欢迎。只要你的表达式为真，这段代码就会继续执行。一旦表达式变为假，循环将停止工作。使用 `while` 语句的语法示例如下：
 
 ```html
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset = “ISO-8859-1”>
+<meta charset="ISO-8859-1">
 <title>While Loop</title>
 </head>
 <body>
-<script type = “text/javascript”>
-var counter = 0
-document.write(Entering while Loop!”);
-while (counter < 5){
-document.write(“Current Counter is : “ + counter + “<br/>);
-counter++
+<script type="text/javascript">
+var counter = 0;
+document.write("Entering while Loop!");
+while (counter < 5) {
+    document.write("Current Counter is: " + counter + "<br/>");
+    counter++;
 }
-document.write(Exiting while Loop!”);
+document.write("Exiting while Loop!");
 </script>
 <p>We are inside body section…</p>
 </body>
@@ -760,30 +722,29 @@ document.write(Exiting while Loop!”);
 
 使用这种公式，只要条件在这五次内为真，循环就会通过 `counter` 执行五次 HTML 程序。你可以根据想让程序执行工作的次数来改变 `counter` 的增加或减少。
 
-### Do….while 循环语句
+### `do…while` 循环语句
 
-这种循环语句与你发现的循环语句相似，不同之处在于，条件检查是在到达循环末尾时进行的。这意味着代码块至少会被执行一次。如果发现代码条件为假，则语句将停止运行，但由于在执行期间不检查条件是否为假，程序将一直运行到最后显示假条件为止。
+这种循环语句与你发现的 `while` 循环语句相似，不同之处在于，条件检查是在到达循环末尾时进行的。这意味着代码块至少会被执行一次。如果发现代码条件为假，则语句将停止运行，但由于在执行期间不检查条件是否为假，程序将一直运行到最后显示假条件为止。
 
-### For 循环语句
+### `for` 循环语句
 
 这是你在 JavaScript 编程中找到的最常用的循环语句之一。当你尝试使用它时，有三个部分非常重要且应该包含在内。这些部分包括：
 
-- `Initialization`（初始化）：这是你初始化 `counter` 的地方。
-- `Test`（测试）：这是评估真假结果的条件。
-- `Iteration`（迭代）：这是你增加或减少 `counter` 的地方。
+*   **初始化（`Initialization`）**：这是你初始化 `counter` 的地方。
+*   **测试（`Test`）**：这是评估真假结果的条件。
+*   **迭代（`Iteration`）**：这是你增加或减少 `counter` 的地方。
 
 ### 循环控制语句
 
 当你想要改变正常执行流时，就会使用这种语句。该语言支持几种类型的循环控制语句，包括：
 
-- `Break`：这种语句用于停止循环。
-- `Continue`：这种语句将强制循环跳过体的剩余部分并返回测试。
+*   `break`：这种语句用于停止循环。
+*   `continue`：这种语句将强制循环跳过体的剩余部分并返回测试。
 
-### 结论
+## 结论
 
-感谢你读完《JavaScript：终极新手指南》(JavaScript: Ultimate Beginners Guide)，希望它能为你提供有用的信息，并为你提供实现目标所需的所有工具，无论目标是什么。
+感谢你读完《JavaScript：终极新手指南》，希望它能为你提供有用的信息，并为你提供实现目标所需的所有工具，无论目标是什么。
 
 下一步是开始使用 JavaScript 来满足自己的编码需求。有些人会担心开始学习一种新编程语言，或者从根本开始编程，但这是一个学习更多计算机知识、设计自己的程序以及做更多事情的兴奋方式。
 
 最后，如果你觉得这本书在某方面有所帮助，我们非常欢迎你在 Amazon 上给出评论！
-

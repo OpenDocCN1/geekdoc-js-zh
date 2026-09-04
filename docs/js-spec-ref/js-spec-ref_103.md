@@ -1,11 +1,9 @@
-# 13.6 Path 模块
 
-*   path.join()
-*   path.resolve()
+# 13.6 Path 模块
 
 ## path.join()
 
-`path.join`方法用于连接路径。该方法的主要用途在于，会正确使用当前系统的路径分隔符，Unix 系统是”/“，Windows 系统是”\“。
+`path.join`方法用于连接路径。该方法的主要用途在于，会正确使用当前系统的路径分隔符，Unix 系统是`/`，Windows 系统是`\`。
 
 ```js
 var path = require('path');
@@ -30,7 +28,7 @@ path.resolve('foo/bar', '/tmp/file/', '..', 'a/../subfile')
 
 上面代码的实例，执行效果类似下面的命令。
 
-```js
+```bash
 $ cd foo/bar
 $ cd /tmp/file/
 $ cd ..

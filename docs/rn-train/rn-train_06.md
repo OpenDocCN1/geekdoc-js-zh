@@ -1,28 +1,24 @@
-# 6 路由器
 
 # 6 路由器
 
-+   [NavigatorIOS](https://facebook.github.io/react-native/docs/navigatorios.html)
+- [`NavigatorIOS`](https://facebook.github.io/react-native/docs/navigatorios.html)
+- [导航器](https://facebook.github.io/react-native/docs/navigator.html)
 
-+   [导航器](https://facebook.github.io/react-native/docs/navigator.html)
+## 6.1 导航器
 
-# 6.1 导航器
+### 1. 定义路由
 
-# 6.1 导航器
-
-1.定义路由
-
-```
- import MainTabsView from './MainTabsView';
+```javascript
+import MainTabsView from './MainTabsView';
 import EditView from './EditView';
 import BroswerView from './BroswerView';
 
-const ROUTES = { MainTabsView,  BroswerView, EditView }; 
+const ROUTES = { MainTabsView, BroswerView, EditView };
 ```
 
-2.配置导航器
+### 2. 配置导航器
 
-```
+```javascript
 class App extends Component {
   renderScene = (route, navigator) => {
     let Scene = ROUTES[route.name];
@@ -47,36 +43,36 @@ class App extends Component {
       </View>
     )
   }
-} 
+}
 ```
 
-3.前进和后退
+### 3. 前进和后退
 
 ![](img/QQ20160727-2.png)
 
-```
+```javascript
 ...
   handleEdit = ()=>{
     //Navigate forward to a new scene
     this.props.navigator.push({name: 'EditView', data: this.props.data});
   }
-... 
+...
 ```
 
-```
+```javascript
 ...
   close = ()=>{
     //Transition back and unmount the current scene
     this.props.navigator.pop();
   }
-... 
+...
 ```
 
 ![](img/QQ20160727-1.png)
 
-4.在焦点变化时 & 在焦点将要变化时
+### 4. 在焦点变化时和在焦点将要变化时
 
-```
+```javascript
 ...
 componentDidMount(){
     this.currentRoute = this.props.navigator.navigationContext.currentRoute;
@@ -101,11 +97,9 @@ componentDidMount(){
     this.willFocusSubscription.remove();
     this.didFocusSubscription.remove();
   }
-... 
+...
 ```
 
-# 6.2 资源
+## 6.2 资源
 
-# 6.2 资源
-
-+   [React Native 中的路由和导航](http://blog.paracode.com/2016/01/05/routing-and-navigation-in-react-native/)
+- [React Native 中的路由和导航](http://blog.paracode.com/2016/01/05/routing-and-navigation-in-react-native/)

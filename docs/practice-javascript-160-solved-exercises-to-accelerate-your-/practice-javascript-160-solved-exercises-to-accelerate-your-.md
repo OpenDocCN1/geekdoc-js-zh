@@ -1,10 +1,5 @@
+
 # Javascript 实践指南：160 个习题加速你的学习
-
-
-
-
-
-
 
 ## 前言
 
@@ -21,9 +16,8 @@
 本书的内容创作过程中使用了人工智能工具，但所有材料都经过了作者的审查和编辑，以交付最终的高质量产品。
 
 阅读愉快，学习进步，并在探索迷人的 Javascript 编程世界时乐趣。
+
 Ruhan Avila da Conceição.
-
-
 
 ## 引言
 
@@ -41,7 +35,7 @@ Ruhan Avila da Conceição.
 
 ## 基础练习
 
-在开始练习之前，仔细阅读这里非常重要。当某个练习需要用户输入时，将使用 **prompt** 命令。但请注意，需要先安装 **prompt-sync** 包。要做到这一点，请初始化一个 npm 项目并使用以下步骤安装该包：
+在开始练习之前，仔细阅读这里非常重要。当某个练习需要用户输入时，将使用 `prompt` 命令。但请注意，需要先安装 `prompt-sync` 包。要做到这一点，请初始化一个 npm 项目并使用以下步骤安装该包：
 
 ```
 npm init
@@ -68,6 +62,7 @@ console.log("Hello World!");
 ```
 console.log("Hello");
 ```
+
 ```
 console.log("World!");
 ```
@@ -94,7 +89,7 @@ process.stdout.write("World!");
 console.log(); // 添加换行符移动到下一行
 ```
 
-要执行这一点，你必须先运行此命令：npm i --save-dev @types/node
+要执行这一点，你必须先运行此命令：`npm i --save-dev @types/node`
 
 - 6. 编写一个程序，在屏幕上打印 "Hello World!"（在同一行），使用一个命令打印 "Hello"，另一个命令打印 "World"，另一个打印 "!"
 
@@ -111,7 +106,9 @@ console.log(); // 添加换行符移动到下一行
 
 ```
 prompt = require("prompt-sync")()
+```
 
+```
 const userName = prompt("Please enter your name:")
 console.log("Hello, " + userName + "!");
 ```
@@ -175,8 +172,6 @@ console.log(name3 + "\t" + age3 + "\t" + height3);
 ```
 
 - 10. 编写一个程序，按顺序读取三个人的姓名，然后读取各自的年龄和身高，并在屏幕上以表格格式打印数据，使用横线 (-) 分隔行，使用竖线 (|) 分隔列。
-
-
 
 ```javascript
 // Read information for the third person
@@ -369,10 +364,6 @@ const perimeter = sideA + sideB + sideC;
 // Display the result
 console.log("The perimeter of the triangle is: " + perimeter);
 ```
-
-
-
-
 
 ```javascript
 const kineticEnergy = (mass * Math.pow(velocity, 2)) / 2;
@@ -628,8 +619,6 @@ if (sum % 5 === 0) {
 }
 ```
 
-
-
 ```javascript
 const number2 = parseInt(prompt("Enter the second number:"));
 const number3 = parseInt(prompt("Enter the third number:"));
@@ -884,16 +873,12 @@ if (age < 16) {
 }
 ```
 
-
-
-
-
 ## 49. 编写一个程序，从学生处读取三个成绩，并报告其是及格（最终成绩大于等于 7）、不及格（最终成绩小于 4）还是处于恢复分（最终成绩在 4 到 7 之间）。
 
 ```javascript
 // 提示用户输入三个成绩
 const grade1 = parseFloat(prompt("输入第一个成绩:"));
-const grade2 = parseFloat(prompt("输入第二个成绩:"));
+const grade2 = parseFloat(prompt("输入第二个成绩:"))
 const grade3 = parseFloat(prompt("输入第三个成绩:"));
 
 // 计算平均分
@@ -903,9 +888,9 @@ const averageGrade = (grade1 + grade2 + grade3) / 3;
 if (averageGrade >= 7) {
     console.log("学生及格了.");
 } else if (averageGrade < 4) {
-    console.log("学生不及格.");
+    console.log("学生不及格.")
 } else {
-    console.log("学生处于恢复分阶段.");
+    console.log("学生处于恢复分阶段.")
 }
 ```
 
@@ -976,9 +961,9 @@ const discriminant = b * b - 4 * a * c;
 if (discriminant > 0) {
   console.log("二次方程的根是实数.");
 } else if (discriminant === 0) {
-  console.log("二次方程的根是实数且相等.");
+  console.log("二次方程的根是实数且相等.")
 } else {
-  console.log("二次方程的根是虚数.");
+  console.log("二次方程的根是虚数.")
 }
 ```
 
@@ -1049,10 +1034,6 @@ if (discriminant > 0) {
   console.log(`根是复数: ${realPart} + ${imaginaryPart}i 和 ${realPart} - ${imaginaryPart}i`);
 }
 ```
-
-
-
-
 
 ## 66. 编写一个程序，使用循环结构计算并显示用户输入的数字相对于用户输入的指数的幂值。
 
@@ -1392,10 +1373,6 @@ while (Math.abs(term) >= 0.001) {
 console.log(`e^${x} with difference less than 0.001 is approximately: ${result}`);
 ```
 
-
-
-
-
 ## 83. 编写一个程序，根据下方公式使用泰勒级数计算正弦值，直到项之间的差小于 0.001。
 
 $$sen(x) = x - \frac{x^3}{3!} + \frac{x^5}{5!} - \frac{x^7}{7!} + \dots$$
@@ -1562,6 +1539,8 @@ if (vector1.length !== vector2.length) {
 
 ## 91. 编写一个程序，读取两个长度相同的整数数组并显示包含对应元素乘积的新数组。
 
+
+
 ```javascript
 // Read the first array
 const input1 = prompt("Enter the first array of integers separated by spaces:");
@@ -1652,13 +1631,6 @@ for (let i = 0; i < integers.length; i++) {
 // Check if a second largest element exists
 if (secondMax != -Infinity) {
   console.log("The second largest element is:", secondMax);
-}
-```
-
-
-
-```javascript
-console.log(`The second largest element in the array is: ${secondMax}`);
 } else {
   console.log("There is no second largest element in the array.");
 }
@@ -1935,11 +1907,7 @@ if (nums.length < 2) {
 const input = prompt("Enter a list of integers separated by spaces:");
 const nums = input.split(" ").map(Number);
 const subarrayLength = Number(prompt("输入子数组的长度:"));
-```
 
-
-
-```javascript
 if (nums.length < subarrayLength || subarrayLength <= 0) {
   console.log("Invalid input.");
 } else {
@@ -2246,7 +2214,7 @@ const commonPrefix = longestCommonPrefix(strings);
 console.log("Longest common prefix:", commonPrefix);
 ```
 
-# 矩阵
+## 矩阵
 
 121. 写一个程序，用用户输入的值填充 3x3 矩阵并显示主对角线值的和。
 
@@ -2268,21 +2236,12 @@ console.log("Matrix:", matrix);
 console.log("Sum of main diagonal values:", sum);
 ```
 
-
-
-
-
 ## 122. 编写一个程序，用随机值填充 4x4 矩阵并显示转置后的矩阵。
 
 ```javascript
 const matrix = [];
-```
-
-```javascript
 const transposedMatrix = [];
-```
 
-```javascript
 // 用随机值填充矩阵
 for (let i = 0; i < 4; i++) {
   matrix[i] = [];
@@ -2290,15 +2249,11 @@ for (let i = 0; i < 4; i++) {
     matrix[i][j] = Math.floor(Math.random() * 10); // 0 到 9 的随机值
   }
 }
-```
 
-```javascript
 // 显示原始矩阵
 console.log("Original Matrix:");
 console.log(matrix);
-```
 
-```javascript
 // 转置矩阵
 for (let i = 0; i < 4; i++) {
   transposedMatrix[i] = [];
@@ -2306,9 +2261,7 @@ for (let i = 0; i < 4; i++) {
     transposedMatrix[i][j] = matrix[j][i];
   }
 }
-```
 
-```javascript
 // 显示转置后的矩阵
 console.log("Transposed Matrix:");
 console.log(transposedMatrix);
@@ -2334,15 +2287,11 @@ for (let i = 0; i < 5; i++) {
     }
   }
 }
-```
 
-```javascript
 // 显示原始矩阵
 console.log("Matrix:");
 console.log(matrix);
-```
 
-```javascript
 // 显示最大值及其位置
 console.log(`Largest value: ${largestValue} at position [${largestValueRow}][${largestValueCol}]`);
 ```
@@ -2356,9 +2305,7 @@ const matrix = [
   [6, 0, -9, 10],
   [-12, -15, 17, 20]
 ];
-```
 
-```javascript
 let negativeCount = 0;
 // 统计矩阵中的负数
 for (let i = 0; i < matrix.length; i++) {
@@ -2368,9 +2315,7 @@ for (let i = 0; i < matrix.length; i++) {
     }
   }
 }
-```
 
-```javascript
 console.log("Number of negative numbers in the matrix:", negativeCount);
 ```
 
@@ -2395,9 +2340,7 @@ for (let i = 0; i < 3; i++) {
 
 // 计算偶数位置值的平均值
 const average = count != 0 ? sum / count : 0;
-```
 
-```javascript
 console.log("Matrix:", matrix);
 console.log("Average of values at even positions:", average);
 ```
@@ -2410,9 +2353,7 @@ const matrix = [
   [4, 5, 6],
   [7, 8, 9]
 ];
-```
 
-```javascript
 let sum = 0;
 
 // 计算边界元素之和
@@ -2423,9 +2364,7 @@ for (let i = 0; i < matrix.length; i++) {
     }
   }
 }
-```
 
-```javascript
 console.log("Matrix:", matrix);
 console.log("Sum of boundary elements:", sum);
 ```
@@ -2624,19 +2563,10 @@ console.log("Matrix 1:", matrix1);
 console.log("Matrix 2:", matrix2);
 
 const result = matrixMultiplication(matrix1, matrix2);
-console.log(result);
-```
-
-
-
-
-
-```javascript
-const resultMatrix = matrixMultiplication(matrix1, matrix2);
-if (typeof resultMatrix === 'string') {
-  console.log(resultMatrix);
+if (typeof result === 'string') {
+  console.log(result);
 } else {
-  console.log("Result of matrix multiplication:", resultMatrix);
+  console.log("Result of matrix multiplication:", result);
 }
 ```
 
@@ -2685,7 +2615,7 @@ function spiralOrder(matrix) {
   return result;
 }
 
-// 示例矩阵
+// 示例矩阤
 const matrix = [
   [1, 2, 3],
   [4, 5, 6],
@@ -2695,7 +2625,7 @@ const matrix = [
 console.log("Spiral order:", spiralOrder(matrix));
 ```
 
-# 134. 编写一个程序读取一个 m x n 矩阵，该矩阵表示扫雷游戏中中有地雷的位置（0 表示中立区域，1 表示有雷的位置），该程序应返回一个矩阵，其中每个位置是相邻房屋中地雷的数量。
+## 134. 编写一个程序读取一个 m x n 矩阵，该矩阵表示扫雷游戏中中有地雷的位置（0 表示中立区域，1 表示有雷的位置），该程序应返回一个矩阵，其中每个位置是相邻房屋中地雷的数量。
 
 ```javascript
 function minesweeper(matrix) {
@@ -2704,7 +2634,7 @@ function minesweeper(matrix) {
   const result = [];
 
   for (let i = 0; i < rows; i++) {
-    result.push([])
+    result.push([]);
     for (let j = 0; j < cols; j++) {
       let count = 0;
       for (let r = i - 1; r <= i + 1; r++) {
@@ -2731,7 +2661,7 @@ const matrix = [
 console.log(minesweeper(matrix));
 ```
 
-# 135. 写一个函数接收一个代表井字游戏的 3x3 矩阵，并检查是否有获胜者、是否平局或游戏是否尚未结束
+## 135. 写一个函数接收一个代表井字游戏的 3x3 矩阵，并检查是否有获胜者、是否平局或游戏是否尚未结束
 
 ```javascript
 function checkTicTacoe(matrix) {
@@ -2993,10 +2923,6 @@ const validDates = dateString.match(datePattern);
 console.log("找到的有效日期:", validDates);
 ```
 
-
-
-
-
 ## 148. 检查给定字符串是否为有效的信用卡卡号（通常为 16 位，有时由 - 或空格分隔）。
 
 ```javascript
@@ -3009,7 +2935,6 @@ function isValidCreditCardNumber(str) {
 
   return creditCardPattern.test(cleanStr);
 }
-```
 
 // 示例用法
 const cardNumber1 = "1234-5678-9012-3456";
@@ -3033,8 +2958,8 @@ function validatePassword(password) {
 const password1 = "Password!";
 const password2 = "password"; // 不符合标准
 
-console.log(`${password1} is a valid password: ${validatePassword(password1)}); // 预期输出: true
-console.log(`${password2} is a valid password: ${validatePassword(password2)}); // 预期输出: false
+console.log(`${password1} is a valid password: ${validatePassword(password1)}`); // 预期输出: true
+console.log(`${password2} is a valid password: ${validatePassword(password2)}`); // 预期输出: false
 ```
 
 ## 150. 将文本中的多个空格替换为单个空格。
@@ -3042,7 +2967,6 @@ console.log(`${password2} is a valid password: ${validatePassword(password2)}); 
 ```javascript
 const text = "This is a text with multiple spaces";
 const newText = text.replace(/\s+/g, ' ');
-
 console.log(newText);
 ```
 
@@ -3097,20 +3021,14 @@ console.log(rearrangedDate); // 输出: 21-11-2023
 ```javascript
 function bubbleSort(arr) {
   const n = arr.length;
-
   for (let i = 0; i < n - 1; i++) {
-    // 用于优化排序过程的标记
     let swapped = false;
-
     for (let j = 0; j < n - i - 1; j++) {
       if (arr[j] > arr[j + 1]) {
-        // 如果元素顺序错误则进行交换
         [arr[j], arr[j + 1]] = [arr[j + 1], arr[j]];
         swapped = true;
       }
     }
-
-    // 如果内部循环中没有两个元素被交换，说明数组已排序
     if (!swapped) break;
   }
   return arr;
@@ -3152,17 +3070,13 @@ console.log(sortedArray); // 输出: [11, 12, 22, 25, 64]
 ```javascript
 function insertionSort(arr) {
   const n = arr.length;
-
   for (let i = 1; i < n; i++) {
     let current = arr[i];
     let j = i - 1;
-
-    // 将左侧比当前元素大的元素向后移动
     while (j >= 0 && arr[j] > current) {
       arr[j + 1] = arr[j];
       j--;
     }
-    // 将 current 插入到正确位置
     arr[j + 1] = current;
   }
   return arr;
@@ -3179,18 +3093,15 @@ console.log(sortedArray); // 输出: [11, 12, 22, 25, 64]
 ```javascript
 function mergeSort(arr) {
   if (arr.length <= 1) return arr;
-
   const mid = Math.floor(arr.length / 2);
   const left = arr.slice(0, mid);
   const right = arr.slice(mid);
-
   return merge(mergeSort(left), mergeSort(right));
 }
 
 function merge(left, right) {
   let result = [];
   let i = 0, j = 0;
-
   while (i < left.length && j < right.length) {
     if (left[i] < right[j]) {
       result.push(left[i]);
@@ -3200,7 +3111,6 @@ function merge(left, right) {
       j++;
     }
   }
-
   return result.concat(left.slice(i)).concat(right.slice(j));
 }
 
@@ -3215,31 +3125,79 @@ console.log(sortedArray); // 输出: [11, 12, 22, 25, 64]
 ```javascript
 function quickSort(arr, left = 0, right = arr.length - 1) {
   if (left < right) {
-    const pivotIndex = partition(arr, left, right);
-    quickSort(arr, left, pivotIndex - 1);
-    quickSort(arr, pivotIndex + 1, right);
+    const pivotIndex = Math.floor(Math.random() * (right - left + 1)) + left;
+    const pivot = arr[pivotIndex];
+    let i = left;
+    let j = right;
+
+    while (i <= j) {
+      while (arr[i] < pivot) i++;
+      while (arr[j] > pivot) j--;
+      if (i <= j) {
+        [arr[i], arr[j]] = [arr[j], arr[i]];
+        i++;
+        j--;
+      }
+    }
+
+    quickSort(arr, left, j);
+    quickSort(arr, i, right);
   }
   return arr;
-}
-
-function partition(arr, left, right) {
-  const pivot = arr[right];
-  let i = left - 1;
-
-  for (let j = left; j < right; j++) {
-    if (arr[j] < pivot) {
-      i++;
-      [arr[i], arr[j]] = [arr[j], arr[i]];
-    }
-  }
-  [arr[i + 1], arr[right]] = [arr[right], arr[i + 1]];
-  return i + 1;
 }
 
 // 示例用法：
 const unsortedArray = [64, 25, 12, 22, 11];
 const sortedArray = quickSort(unsortedArray);
 console.log(sortedArray); // 输出: [11, 12, 22, 25, 64]
+```
+
+
+
+const pivotIndex = partition(arr, left, right);
+
+quickSort(arr, left, pivotIndex - 1);
+
+quickSort(arr, pivotIndex + 1, right);
+
+}
+
+return arr;
+
+}
+
+function partition(arr, left, right) {
+
+  const pivot = arr[right];
+
+  let i = left - 1;
+
+  for (let j = left; j < right; j++) {
+
+    if (arr[j] < pivot) {
+
+      i++;
+
+      [arr[i], arr[j]] = [arr[j], arr[i]];
+
+    }
+
+  }
+
+  [arr[i + 1], arr[right]] = [arr[right], arr[i + 1]];
+
+  return i + 1;
+
+}
+
+// 示例用法：
+
+const unsortedArray = [64, 25, 12, 22, 11];
+
+const sortedArray = quickSort(unsortedArray);
+
+console.log(sortedArray); // 输出: [11, 12, 22, 25, 64]
+
 ```
 
 # 完整题目列表
@@ -3254,10 +3212,7 @@ console.log(sortedArray); // 输出: [11, 12, 22, 25, 64]
 -   6. 编写一个程序，在同一行打印 "Hello World!"，使用一个命令打印 "Hello"，另一个命令打印 "World"，第三个命令打印 "!"。
 -   7. 编写一个程序询问用户的姓名，并立即打印该姓名。
 -   8. 编写一个程序，按顺序读取三个人的姓名及其相应的年龄，并在屏幕上打印每个人的姓名和年龄。
--   9. 编写一个程序，按顺序读取三个人的姓名及其相应的年龄和
-
-
-高度，并将数据以表格格式打印在屏幕上。
+-   9. 编写一个程序，按顺序读取三个人的姓名及其相应的年龄和高度，并将数据以表格格式打印在屏幕上。
 
 - 10. 编写一个程序，顺序读取三个人的名字，接着读取各自的年龄和身高，并使用表格格式在屏幕上打印这些数据，使用连线 (-) 分隔行，竖线 (|) 分隔列。
 
@@ -3379,199 +3334,205 @@ console.log(sortedArray); // 输出: [11, 12, 22, 25, 64]
 
 - 66. 编写一个程序，使用重复循环计算并显示用户输入的数字相对于用户输入的指数的幂值。
 
+- 67. 使用循环创建一个程序，显示前 N 个完全平方数，其中 N 由用户提供。
 
+- 68. 编写一个程序，要求用户输入一个数字 N 并判断它是否为质数。
 
+- 69. 编写一个程序，提示用户输入一个数字 N，并显示所有小于 N 的质数。
 
-67. 使用循环创建一个程序，显示前 N 个完全平方数，其中 N 由用户提供。
+- 70. 使用循环创建一个程务，显示前 N 个质数，其中 N 由用户提供。
 
-68. 编写一个程序，要求用户输入一个数字 N 并判断它是否为质数。
+- 71. 编写一个程序，提示用户输入两个数字 A 和 B，并显示 A 和 B 之间的所有数字。
 
-69. 编写一个程序，提示用户输入一个数字 N，并显示所有小于 N 的质数。
+- 72. 编写一个程序，从用户处读取数字，直到输入负数，并打印所有正数的和。
 
-70. 使用循环创建一个程序，显示前 N 个质数，其中 N 由用户提供。
+- 73. 编写一个程序，要求用户输入一个数字 N，并显示从 1 到 N 所有数字之和。
 
-71. 编写一个程序，提示用户输入两个数字 A 和 B，并显示 A 和 B 之间的所有数字。
+- 74. 编写一个程序，使用循环循环计算并显示 1 到 100 之间偶数的和。
 
-72. 编写一个程序，从用户处读取数字，直到输入负数，并打印所有正数的和。
+- 75. 编写一个程序，提示用户输入一个数字，并使用循环显示到该数字的斐波那契序列。
 
-73. 编写一个程序，要求用户输入一个数字 N，并显示从 1 到 N 所有数字之和。
+- 76. 编写一个程序，从用户处读取数字，直到输入零，并显示所输入数字的平均值。
 
-74. 编写一个程序，使用循环循环计算并显示 1 到 100 之间偶数的和。
+- 77. 编写一个程序，提示用户输入一组数字，直到用户输入数字零，并显示列表中最大和最小的数字。
 
-75. 编写一个程序，提示用户输入一个数字，并使用循环显示到该数字的斐波那契序列。
+- 78. 编写一个程序，提示用户输入一个数字并显示它的因约数。
 
-76. 编写一个程序，从用户处读取数字，直到输入零，并显示所输入数字的平均值。
+- 79. 编写一个程序，确定用户输入的两个数字之间的最大公约数 (GCD)。
 
-77. 编写一个程序，提示用户输入一组数字，直到用户输入数字零，并显示列表中最大和最小的数字。
+- 80. 编写一个程序，确定用户输入的两个数字之间的最小公倍数 (LCM)。
 
-78. 编写一个程序，提示用户输入一个数字并显示它的因约数。
+- 81. 编写一个程序，计算下方级数直到第十项：
 
-79. 编写一个程序，确定用户输入的两个数字之间的最大公约数 (GCD)。
+- 82. 重写上一个练习的代码，直到项之间的差小于 0.001。
 
-80. 编写一个程序，确定用户输入的两个数字之间的最小公倍数 (LCM)。
+- 83. 编写一个程序，根据下方的方程使用泰勒级数计算正弦值，直到项之间的差小于 0.001。
 
-81. 编写一个程序，计算下方级数直到第十项：
+- 84. 编写一个程序，根据下方的方程使用泰勒级数计算余弦值，直到项之间的差小于 0.001。
 
-82. 重写上一个练习的代码，直到项之间的差小于 0.001。
-
-83. 编写一个程序，根据下方的方程使用泰勒级数计算正弦值，直到项之间的差小于 0.001。
-
-84. 编写一个程序，根据下方的方程使用泰勒级数计算余弦值，直到项之间的差小于 0.001。
-
-85. 编写一个程序，显示从 0 到 6.3 之间所有数字的正弦和余弦值，步长为 0.1，并使用泰勒级数计算相应的正弦和余弦。
+- 85. 编写一个程序，显示从 0 到 6.3 之间所有数字的正弦和余弦值，步长为 0.1，并使用泰勒级数计算相应的正弦和余弦。
 
 ## 数组
 
-86. 编写一个程序读取一个整数数组并反序显示元素。
+- 86. 编写一个程序读取一个整数数组并反序显示元素。
 
-87. 创建一个程序读取一个整数数组并显示所有元素之和。
+- 87. 创建一个程序读取一个整数数组并显示所有元素之和。
 
-88. 编写一个程序读取一个整数数组并显示元素的平均值。
+- 88. 编写一个程序读取一个整数数组并显示元素的平均值。
 
-89. 编写一个程序读取一个整数数组并显示数组中的最大元素。
+- 89. 编写一个程序读取一个整数数组并显示数组中的最大元素。
 
-90. 创建一个程序读取两个相同大小的整数向量，并显示一个包含这两个向量对应元素之和的新向量。
+- 90. 创建一个程序读取两个相同大小的整数向量，并显示一个包含这两个向量对应元素之和的新向量。
 
-91. 编写一个程序读取两个相同大小的整数数组，并显示一个由两个数组对应元素乘积产生的新数组。
+- 91. 编写一个程序读取两个相同大小的整数数组，并显示一个由两个数组对应元素乘积产生的新数组。
 
-92. 编写一个程序读取一个整数数组并显示特定数字在数组中出现的次数。
+- 92. 编写一个程序读取一个整数数组并显示特定数字在数组中出现的次数。
 
-93. 编写一个程序读取一个整数数组并检查它们是否按升序排列。
+- 93. 编写一个程序读取一个整数数组并检查它们是否按升序排列。
 
-94. 创建一个程序读取一个整数数组并找到数组中的第二大元素。
+- 94. 创建一个程序读取一个整数数组并找到数组中的第二大元素。
 
-95. 给定数组，找到其中第 k 个最大和最小的元素。
+- 95. 给定数组，找到其中第 k 个最大和最小的元器。
 
-96. 编写一个程序检查数组是否包含重复元素。
+- 96. 编写一个程序检查数组是否包含重复元素。
 
-97. 给定大小为 n 的数组，找到一个出现次数超过 n/2 的元素。（该元素被称为多数元素。）
+- 97. 给定大小为 n 的数组，找到一个出现次数超过 n/2 的元素。（该元素被称为多数元素。）
 
-98. 创建一个程序读取一个整数数组并检查所有元素是否都为偶数。
+- 98. 创建一个程序读取一个整数数组并检查所有元素是否都为偶数。
 
-99. 编写一个程序检查数组是否包含三连的相同元素。
+- 99. 编写一个程序检查数组是否包含三连的相同元素。
 
-100. 给定一个随机数数组，将数组中所有的零推到末尾，且不改变非零元素的顺序。
+- 100. 给定一个随机数数组，将数组中所有的零推到末尾，且不改变非零元素的顺序。
 
-101. 给定一个无序整数数组，找到最长连续序列的长度。
+- 101. 给定一个无序整数数组，找到最长连续序列的长度。
 
-102. 给定一个整数数组，找到数组中和等于指定值的对。
+- 102. 给定一个整数数组，找到数组中和等于指定值的对。
 
-103. 编写算法读取一个包含 n 个位置的数组，然后创建一个新向量，计算每个元素与下一个元素之间的差。
+- 103. 编写算法读取一个包含 n 个位置的数组，然后创建一个新向量，计算每个元素与下一个元素之间的差。
 
-104. 给定一个整数数组，找到给定长度且平均值最小的子数组。
+- 104. 给定一个整数数组，找到给定长度且平均值最小的子数组。
 
-105. 给定两个排序数组，将它们合并成一个单一排序数组。
+- 105. 给定两个排序数组，将它们合并成一个单一排序数组。
 
 ## 字符串
 
-106. 创建一个程序读取两个单词并将它们拼接，显示结果单词。
+- 106. 创建一个程序读取两个单词并将它们拼接，显示结果单词。
 
-107. 编写一个程序获取一个单词并单独显示每个字母。
+- 107. 编写一个程序获取一个单词并单独显示每个字母。
 
-108. 创建一个程序获取一个句子并将所有的字母 "a" 替换为 "e"。
+- 108. 创建一个程序获取一个句子并将所有的字母 "a" 替换为 "e"。
 
-109. 创建一个程序获取一个句子并将所有的空格替换为换行符。
+- 109. 创建一个程序获取一个句子并将所有的空格替换为换行符。
 
-110. 编写一个程序接收一个名称并检查它是否以字母 "A" 开头。
+- 110. 编写一个程序接收一个名称并检查它是否以字母 "A" 开头。
 
-111. 编写一个程序读取一个单词并检查它是否是回文（倒读是一样的）。
+- 111. 编写一个程序读取一个单词并检查它是否是回文（倒读是一样的）。
 
-112. 创建一个程序读取两个单词并检查第二个单词是否是第一个单词的字母异位词。
+- 112. 创建一个程序读取两个单词并检查第二个单词是否是第一个单词的字母异位词。
 
-113. 编写一个程序获取全名并显示单词数。
+- 113. 编写一个程序获取全名并显示单词数。
 
-114. 程序接收一个句子并显示单词数。
+- 114. 程序接收一个句子并显示单词数。
 
-115. 创建一个程序读取一个单词并显示元音数量。
+- 115. 创建一个程序读取一个单词并显示元音数量。
 
-116. 编写一个程序读取一个单词并显示辅音数量。
+- 116. 编写一个程序读取一个单词并显示辅音数量。
 
-117. 编写一个程序获取全名并显示字符数。
+- 117. 编写一个程序获取全名并显示字符数。
 
-118. 创建一个程序获取一个句子并显示字符数。
+- 118. 创建一个程序获取一个句子并显示字符数。
 
-119. 编写一个程序检查字符之和是否为质数。
+- 119. 编写一个程序检查字符之和是否为质数。
 
-120. 给定字符串列表，找到最长前缀。
+- 120. 给定字符串列表，找到最长前缀。
 
-121. 编写一个程序填充一个 3x3 矩阵并显示对角线元素之和。
+- 121. 编写一个程序填充一个 3x3 矩阵并显示对角线元素之和。
 
-122. 编写一个程序读取一个 4x4 随机矩阵并显示转置矩阵。
+- 122. 编写一个程序读取一个 4x4 随机矩阵并显示转置矩阵。
 
-123. 编写一个程序填充一个 5x5 整数矩阵并显示最大值及其位置。
+- 123. 编写一个程序填充一个 5x5 整数矩阵并显示最大值及其位置。
 
-124. 统计矩阵中的负数。
+- 124. 统计矩阵中的负数。
 
-125. 编写一个程序填充一个 3x3 矩阵并计算偶数位置平均值。
+- 125. 编写一个程序填充一个 3x3 矩阵并计算偶数位置平均值。
 
-126. 计算矩阵边界元素的和。
+- 126. 计算矩阵边界元素的和。
 
-127. 编写一个程序读取一个 4x4 矩阵并检查是否为对角矩阵，即对角线外元素是否都为零。
+- 127. 编写一个程序读取一个 4x4 矩阵并检查是否为对角矩阵，即对角线外元素是否都为零。
 
-128. 编写一个程序判断给定矩阵是否为对称矩阵。
+- 128. 编写一个程序判断给定矩阵是否为对称矩阵。
 
-129. 编写一个程序填充一个 4x4 随机矩阵并显示每行每列的和。
+- 129. 编写一个程序填充一个 4x4 随机矩阵并显示每行每列的和。
 
-130. 编写一个程序读取一个 3x3 矩阵并计算行列式。
+- 130. 编写一个程序读取一个 3x3 矩阵并计算行列式。
 
-131. 编写一个程序读取两个 2x2 矩阵并显示矩阵的和。
+- 131. 编写一个程序读取两个 2x2 矩阵并显示矩阵的和。
 
-132. 编写一个程序读取两个矩阵并返回乘法结果。程序应判断是否可以对这两个矩阵进行乘法。
+- 132. 编写一个程序读取两个矩阵并返回乘法结果。程序应判断是否可以对这两个矩阵进行乘法。
 
-133. 螺旋形打印矩阵。
+- 133. 螺旋形打印矩阵。
 
-134. 编写一个程序读取一个 m x n 矩阵，表示扫雷游戏中的地雷位置（中立区域为 0，有雷位置为 1），程序应返回一个矩阵，显示每个位置周围的地雷数量。
+- 134. 编写一个程序读取一个 m x n 矩阵，表示扫雷游戏中的地雷位置（中立区域为 0，有雷位置为 1），程序应返回一个矩阵，显示每个位置周围的地雷数量。
 
-135. 编写一个函数接收一个代表井字游戏的 3x3 矩阵，并检查是否有获胜者、平局或游戏尚未结束。
+- 135. 编写一个函数接收一个代表井字游戏的 3x3 矩阵，并检查是否有获胜者、平局或游戏尚未结束。
 
 ## 递归函数
 
-136. 编写一个递归函数计算数字的阶乘。
+- 136. 编写一个递归函数计算数字的阶乘。
 
-137. 实现一个递归函数计算到给定数字的斐波那契序列。
+- 137. 实现一个递归函数计算到给定数字的斐波那契序列。
 
-138. 创建一个递归函数检查一个数字是否为质数。
+- 138. 创建一个递归函数检查一个数字是否为质数。
 
-139. 开发一个递归函数计算整数各位数字之和。
+- 139. 开发一个递归函数计算整数各位数字之和。
 
-140. 编写一个递归函数计算整数的幂次方。
+- 140. 编写一个递归函数计算整数的幂次方。
 
-141. 实现一个递归函数找到两个数字的最大公约数 (GCD)。
+- 141. 实现一个递归函数找到两个数字的最大公约数 (GCD)。
 
-142. 创建一个递归函数来反转字符串。
+- 142. 创建一个递归函数来反转字符串。
 
-143. 开发一个递归函数找到数组中的最小值。
+- 143. 开发一个递归函数找到数组中的最小值。
 
-144. 编写一个递归函数判断一个单词是否是回文。
+- 144. 编写一个递归函数判断一个单词是否是回文。
 
-145. 实现一个递归函数计算数组元素之和。
+- 145. 实现一个递归函数计算数组元素之和。
 
-
-
-
-
-# 正则表达式
+## 正则表达式
 
 - 146. 编写正则表达式来验证电子邮件地址，确保其包含 @ 和 . 符号。
+
 - 147. 从格式为 YYYY-MM-DD 或 DD/MM/YYYY 的字符串中提取所有有效日期。
+
 - 148. 检查给定字符串是否为有效的信用卡卡号（通常为 16 位数字，有时由 - 或空格分隔）。
+
 - 149. 验证密码以确保它们至少包含一个大写字母、一个小写字母、一个数字、一个特殊字符，且长度至少为 8 位。
+
 - 150. 将文本中的多个连续空格替换为单个空格。
+
 - 151. 从文本中验证并提取货币数值（例如 $100.25）。
+
 - 152. 编写正则表达式从文本中提取所有 URL。
+
 - 153. 从文本中提取所有十六进制颜色代码（例如 #AABBCC 或 #ABC）。
+
 - 154. 从文本中提取所有有效的 IPv4 地址。
+
 - 155. 使用捕获组重新排列日期格式（将 YYYY-MM-DD 转换为 DD-MM-YYYY）。
 
-# 排序算法
+## 排序算法
 
 - 156. 实现冒泡排序算法
+
 - 157. 实现选择排序算法
+
 - 158. 实现插入排序算法
+
 - 159. 实现合并排序算法
+
 - 160. 实现快速排序算法
 
-# 额外内容
+## 额外内容
 
 如果你想访问所有练习题的代码，可以通过下链接获取：
 
@@ -3579,7 +3540,7 @@ https://forms.gle/cY9kuJou8JkgG84NaA
 
 每个文件以练习题编号命名，扩展名为 .js
 
-# 关于作者
+## 关于作者
 
 ![](img/9b59729086d747ad179b3f4d056b4831_156_0.png)
 
@@ -3589,7 +3550,7 @@ Ruhan Avila da Conceição（在社交媒体上账号为 @ruhanconceicao）拥�
 
 Ruhan Conceição 最初从C语言开始编程，对 JavaScript 语言及其库和框架 ReactJS、React Native、NextJS 以及 Java 拥有丰富知识。此外，作者还使用 Python、C#、Matlab、GoogleScript 和 C++ 开发过项目。
 
-# 精通 Python
+## 精通 Python
 
 ![](img/9b59729086d747ad179b3f4d056b4831_157_0.png)
 
@@ -3597,7 +3558,7 @@ Ruhan Conceição 最初从C语言开始编程，对 JavaScript 语言及其库�
 
 https://a.co/d/bGRbAoE
 
-# 精通 Java
+## 精通 Java
 
 ![](img/9b59729086d747ad179b3f4d056b4831_158_0.png)
 
@@ -3605,11 +3566,10 @@ https://a.co/d/bGRbAoE
 
 https://a.co/d/0w0Hcs2
 
-# 实践 C++
+## 实践 C++
 
 ![](img/9b59729086d747ad179b3f4d056b4831_159_0.png)
 
 实践 C++：160 道题解练习，加速你的学习
 
 https://a.co/d/9kraN51
-

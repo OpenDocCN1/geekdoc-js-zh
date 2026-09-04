@@ -1,13 +1,11 @@
+
 # 学习 JavaScript DOM：创建动态交互式网页
-
-
 
 ![](img/cover0049.jpeg)
 
-
 JavaScript 代码可用于通过浏览器选择并与 HTML 页面元素交互。网页的内容不必是静态的，通常用户更喜欢并更愿意参与到能够响应的内容中。在网页中添加 JavaScript 可以提升用户体验，创造出一种有趣且现代的内容呈现方式。大多数网页都包含 JavaScript，学习 `DOM` 以及如何将 `JavaScript` 与网页元素结合使用是现代 Web 开发的一项基本技能。
 
-本书的内容基于练习，旨在开发和提高使用 `JavaScript` 以及与网页元素交互的技能。练习以分步就进的形式呈现，并配有供尝试的挑战。学习编程最好的方法是尝试代码并观察它的运行效果。编写代码应该是乐趣的，这些练习设计得有趣且富有启发性。有大量的编码示例和源代码引导你开始编码。在学习课程的过程中，请打开你的编辑器并亲自尝试代码。这些项目是入门项目，可以在此基础上进行构建，添加更多功能并让它们变得更好。让你的想象力引导你将它们带下一个阶段。
+本书的内容基于练习，旨在开发和提高使用 `JavaScript` 以及与网页元素交互的技能。练习以分步进阶的形式呈现，并配有供尝试的挑战。学习编程最好的方法是尝试代码并观察它的运行效果。编写代码应该是乐趣的，这些练习设计得有趣且富有启发性。有大量的编码示例和源代码引导你开始编码。在学习课程的过程中，请打开你的编辑器并亲自尝试代码。这些项目是入门项目，可以在此基础上进行构建，添加更多功能并让它们变得更好。让你的想象力引导你将它们带入下一个阶段。
 
 ![](img/image00433.jpeg)
 
@@ -15,7 +13,7 @@ JavaScript 代码可用于通过浏览器选择并与 HTML 页面元素交互。
 
 ## 关于作者
 
-Laurence Svekis 是一位课程作者和创作者，拥有 20 年的应用开发经验。曾在全球通过在线和线下教过超过 100 万学生。专长 `JavaScript` 编码、Web 以及多种编程语言。Laurence 有机会为许多学生提供畅销的视频和书面内容。2019 年，Laurence Svekis 被 Google 为 `Google Workspace` 的 `GDE`（`Google 开发者专家`）。由于对代码实现的各种功能充满热情，创建这本基于项目的书籍是一件真正快乐的事以便让他学习并尝试 `JavaScript`。本书的内容包含许多编码练习，以实践并更多地了解如何应用 `JavaScript` 代码。请注意，虽然不需要之前的 `HTML` 和 `CSS` 编码经验，但强烈建议具备，因为本书的内容侧重于应用 `JavaScript` 创建交互式和动态网页内容。
+Laurence Svekis 是一位课程作者和创作者，拥有 20 年的应用开发经验。曾在全球通过在线和线下教过超过 100 万学生。专长 `JavaScript` 编码、Web 以及多种编程语言。Laurence 有机会为许多学生提供畅销的视频和书面内容。2019 年，Laurence Svekis 被 Google 认定为 `Google Workspace` 的 `GDE`（`Google 开发者专家`）。由于对代码实现的各种功能充满热情，创建这本基于项目的书籍是一件真正快乐的事，以便让他学习并尝试 `JavaScript`。本书的内容包含许多编码练习，以实践并更多地了解如何应用 `JavaScript` 代码。请注意，虽然不需要之前的 `HTML` 和 `CSS` 编码经验，但强烈建议具备，因为本书的内容侧重于应用 `JavaScript` 创建交互式和动态网页内容。
 
 ## 目录
 
@@ -51,22 +49,10 @@ Laurence Svekis 是一位课程作者和创作者，拥有 20 年的应用开发
 - 交互式网页的 JavaScript
 - 页面元素
 - JavaScript
-- JavaScript
-- JavaScript
-- JavaScript
-- JavaScript
-- JavaScript
-- JavaScript
-- JavaScript
-- JavaScript
-- JavaScript
-- JavaScript
-- JavaScript
-- JavaScript
 
 # 认识 JavaScript
 
-JavaScript 广泛用于 Web，是最受欢迎的编程语言之一。它允许 Web 开发人员和设计师通过代码赋予网页生命。除了 HTML 和 CSS，JavaScript 是互联网上使用的代码技术之一。它直接在浏览器中运行，你可以在计算机上使用文本编辑器创建 html 文件并在浏览器选择 html 文件并用任何浏览器打开，然后引入 JavaScript 代码让事情发生。
+JavaScript 广泛用于 Web，是最受欢迎的编程语言之一。它允许 Web 开发人员和设计师通过代码赋予网页生命。除了 `HTML` 和 `CSS`，JavaScript 是互联网上使用的代码技术之一。它直接在浏览器中运行，你可以在计算机上使用文本编辑器创建 `html` 文件并在浏览器选择 `html` 文件并用任何浏览器打开，然后引入 JavaScript 代码让事情发生。
 
 # 开始编码
 
@@ -82,15 +68,11 @@ JavaScript 广泛用于 Web，是最受欢迎的编程语言之一。它允许 W
 
 代码指令将是：
 
-1.  为用户提供一个输入区域
-2.  从输入获取用户姓名的输入值
-3.  使用该值向用户返回响应
+1. 为用户提供一个输入区域
+2. 从输入获取用户姓名的输入值
+3. 使用该值向用户返回响应
 
-
-
-
-
-## 4. 概述 (Overview)
+## 概述
 
 然后代码将能够选择页面元素，用包含欢迎消息更新元素更新，其中包含了用户输入的姓名值。
 
@@ -103,15 +85,15 @@ JavaScript 广泛用于 Web，是最受欢迎的编程语言之一。它允许 W
   <title>JavaScript Course</title>
 </head>
 <body>
-<div class="output">What is you name?</</div>
+<div class="output">What is you name?</div>
 <input type="text" name="userName">
-  <button>Submit</button>
-  <script>
-    const btn = document.querySelector('button');
-    const output = document.querySelector('.output');
-    const userVal = document.querySelector('input');
-    btn.onclick = () => output.innerHTML = `Welcome ${userVal.value}`;
-  </script>
+<button>Submit</button>
+<script>
+  const btn = document.querySelector('button');
+  const output = document.querySelector('.output');
+  const userVal = document.querySelector('input');
+  btn.onclick = () => output.innerHTML = `Welcome ${userVal.value}`;
+</script>
 </body>
 </html>
 ```
@@ -123,20 +105,22 @@ JavaScript 广泛用于 Web，是最受欢迎的编程语言之一。它允许 W
 你需要一些工具，你可能已经在计算机上拥有它们。当然，需要一个 Web 浏览器来运行代码，所有的 Web 浏览器都能运行 JavaScript，但请注意它们对新版本的代码兼容性可能不相同。像 `Chrome` 这样的浏览器自带了开发者工具仪表板，这在创建网页时非常有用。`DevTools` 仪表板有助于调试，并能够看到代码后台发生了什么。
 
 ![网站上打开的 Web 工具示例。](img/image00437.jpeg)
+
 网站上打开的 Web 工具示例。
 
 开发者控制台向你显示有关当前加载网页的信息，并包含一个你可以在当前网页内执行 JavaScript 表达式的控制台。打开你的浏览器，选择开发者工具并尝试一下，我们将在本课程中使用它。在大多数现代浏览器中，你可以直接从浏览器编写并执行 JavaScript。在 `Chrome` 浏览器中，当你想要处理 `DOM` 或 `CSS` 时，可以打开 `DevTools`，右键点击页面上的元素并选择 `Inspect`（检查）跳转到 `Elements`面板。或者按下 `Command+Option+C` (Mac) 或 `Control+Shift+C` (Windows, Linux, Chrome OS)。当你想查看日志消息或运行 JavaScript 时，按下 `Command+Option+J` (Mac) 或 `Control+Shift+J` (Windows, Linux, Chrome OS) 直接跳转到 `Console`面板。
 
-你还需要一个编辑器来编写代码。所谓的 `IDE`（集成开发环境）是用于构建应用程序的软件。`IDE` 可创建代码文件、将其保存到计算机并编辑文件。使用 `IDE` 的优点之一是代码更具读性，而且通常有插件、样式选项和多个内置工具帮助编写代码。一旦创建了文件，你可以使用 FTP 将代码文件传输到你的 Web 服务器。如果你还没有编辑器，可以使用 `Visual Studio code`。第一节课将帮助你在计算机上进行设置并开始编码。
+你还需要一个编辑器来编写代码。所谓的 `IDE`（集成开发环境）是用于构建应用程序的软件。`IDE` 可创建代码文件、将其保存到计算机并编辑文件。使用 `IDE` 的优点之一是代码更具读性，而且通常有插件、样式选项和多个内置工具帮助编写代码。一旦创建了文件，你可以使用 FTP 将代码文件传输到你的 Web 服务器。如果你还没有编辑器，可以使用 `Visual Studio Code`。第一节课将帮助你在计算机上进行设置并开始编码。
 
 ![Web 编辑器打开并在名为 code11.js 的文件中创建 JavaScript 代码的示例](img/image00438.jpeg)
+
 Web 编辑器打开并在名为 `code11.js` 的文件中创建 JavaScript 代码的示例
 
 开始学习 JavaScript 很容易：你只需要一个现代 Web 浏览器和一个编写代码的编辑器。开始之前，创建一个名为 `index.html` 的文件并在浏览器中打开它。这就是在浏览器中运行计算机上文件所需的所有内容。要向 html 中添加 JavaScript，你可以通过链接到扩展名为 `JS` 的脚本文件，或者直接在 HTML 的 `script` 标签之间编写 JavaScript 代码来实现。
 
 在第一节课结束时，你应该已经设置好了编辑器和浏览器，并准备好编码。你可以通过 Google 找到代码编辑器列表，几乎所有的编辑器都支持前端代码。如有需要，可以在 `https://code.visualstudio.com/` 下载编辑器。
 
-# JavaScript 简介 (Introduction to JavaScript)
+# JavaScript 简介
 
 探索 JavaScript，了解它是如何工作的以及你如何编写代码
 
@@ -151,14 +135,12 @@ JavaScript 代码是单线程的，这意味着线程上一次只能发生一件
 API 是预构建的组件集，允许开发者连接并访问这些对象。把它想象成一个控制面板，JavaScript 让你与之交互。浏览器也有 API，JavaScript 代码可以访问，这正是允许代码与可见 Web 内容交互的原因。浏览器 API 允许访问网页元素和其他数据。你可以访问 API 并进行实用的编程。`DOM`（文档对象模型）API 允许你操作 `HTML` 和 `CSS`。本书将详细介绍 `DOM`，以及你使用 JavaScript 选择和操作元素的方法和方式。
 
 ![通过浏览器与网页交互。HTML CSS 和 JavaScript](img/image00439.jpeg)
+
 通过浏览器与网页交互。`HTML` `CSS` 和 JavaScript
 
-服务端(Server-side) 与客户端(Client side)的区别是指代码运行的位置。服务端代码在服务器上运行，而不是在用户的计算机或浏览器中。客户端代码直接运行在用户的计算机中，当涉及到 JavaScript 时如此。当用户在浏览器中查看网页时，代码被下载、运行并由浏览器显示。
+服务端与客户端的区别是指代码运行的位置。服务端代码在服务器上运行，而不是在用户的计算机或浏览器中。客户端代码直接运行在用户的计算机中，当涉及到 JavaScript 时如此。当用户在浏览器中查看网页时，代码被下载、运行并由浏览器显示。
 
-
-
-
-JavaScript 可用于动态网页内容，因为它可以更新网页的显示内容并生成内容。JavaScript 在客户端或用户计算机的浏览器中运行。因此，我们机可以在没有互联网连接的情况下运行代码，因为我们需要的所有内容都已经在计算机的浏览器应用程序中了。一个没有更新内容且始终显示相同内容的网页被称为静态页面。通常情况下，静态页面已成为过去式，在互联网刚创建时，HTML 并不具有交互性，且页面输出对所有用户都是一样的。
+JavaScript 可用于动态网页内容，因为它可以更新网页的显示内容并生成内容。JavaScript 在客户端或用户计算机的浏览器中运行。因此，我们可以在没有互联网连接的情况下运行代码，因为我们需要的所有内容都已经在计算机的浏览器应用程序中了。一个没有更新内容且始终显示相同内容的网页被称为静态页面。通常情况下，静态页面已成为过去式，在互联网刚创建时，HTML 并不具有交互性，且页面输出对所有用户都是一样的。
 
 ## 课程 JavaScript 编码练习
 
@@ -177,7 +159,7 @@ JavaScript 可用于动态网页内容，因为它可以更新网页的显示内
 </html>
 ```
 
-搭建你的 Web 开发环境，从开始开始编写代码。使用编辑器 `visual studio code`。使用 `Chrome` 浏览器和 `Chrome DevTools` 查看控制台消息。
+搭建你的 Web 开发环境，从开始开始编写代码。使用编辑器 `Visual Studio Code`。使用 `Chrome` 浏览器和 `Chrome DevTools` 查看控制台消息。
 
 # 开始编程
 
@@ -206,7 +188,7 @@ HTML `script` 标签内部的内部 JavaScript。如果你将与页面元素进�
 <script src="http://www.example.com/app.js"></script>
 ```
 
-使用 `document.write()` 方法向网页输出文本的示例代码。你可以使用 `document` 对象，它是由浏览器创建的代表网页元素的对象。`document` 对象有几个方法可以应用于编码逻辑。使用 `document.write()` 将在遇到代码时直接将圆括号内的任何字符串值写入网页中。我们将在接接的课程中更详细地介绍 `document` 对象。这仅仅是 `document` 对象的许多功能之一，以及它如何被通过 JavaScript 代码直接在浏览器中与 HTML 页面元素进行交互。
+使用 `document.write()` 方法向网页输出文本的示例代码。你可以使用 `document` 对象，它是由浏览器创建的代表网页元素的对象。`document` 对象有几个方法可以应用于编码逻辑。使用 `document.write()` 将在遇到代码时直接将圆括号内的任何字符串值写入网页中。我们将在接下来的课程中更详细地介绍 `document` 对象。这仅仅是 `document` 对象的许多功能之一，以及它如何被通过 JavaScript 代码直接在浏览器中与 HTML 页面元素进行交互。
 
 ```javascript
 document.write('<div>Hello World 3</div>');
@@ -263,14 +245,11 @@ console.warn('Hello');
 console.log('New line');
 ```
 
-`Window` 对象是 `document` 对象的父级。`window` 对象是顶层父级，包含了可以使用的方法。`alert()` 和 `prompt()` 都是 `windows` 对象的一部分。你可以使用这些与用户创建交互。两者都会在浏览器中显示标准的弹出消息，用户必须进行操作后才能与窗口的其他部分进行交互。尽管它们提供了与用户交互的简单方法，但这些并不常用，因为用户体验较差，且现在 JavaScript 和 DOM 中有更多交互选项。警报和提示旨在与网络用户进行交互。从创建 `index.html` 和 `app.js` 文件开始。然后编写一些 JavaScript 代码并尝试。在浏览器中打开并运行 HTML 文件。你可以使用课程中的函数如 `alert()` 或 `document.write('Hello');`；Alert 会停止代码执行，如果在顶部，则在点击按钮之前不会输出内容。将 JavaScript 放在底部以便其余代码可以渲染。
+`Window` 对象是 `document` 对象的父级。`window` 对象是顶层父级，包含了可以使用的方法。`alert()` 和 `prompt()` 都是 `window` 对象的一部分。你可以使用这些与用户创建交互。两者都会在浏览器中显示标准的弹出消息，用户必须进行操作后才能与窗口的其他部分进行交互。尽管它们提供了与用户交互的简单方法，但这些并不常用，因为用户体验较差，且现在 JavaScript 和 DOM 中有更多交互选项。警报和提示旨在与网络用户进行交互。从创建 `index.html` 和 `app.js` 文件开始。然后编写一些 JavaScript 代码并尝试。在浏览器中打开并运行 HTML 文件。你可以使用课程中的函数如 `alert()` 或 `document.write('Hello');`；Alert 会停止代码执行，如果在顶部，则在点击按钮之前不会输出内容。将 JavaScript 放在底部以便其余代码可以渲染。
 
 ```javascript
 window.alert('Hello World');
 ```
-
-
-
 
 Window prompt（窗口提示）与 alert（警告）略有不同，因为 prompt 有一个回调函数，这意味着输入值会被返回到 JavaScript 代码中并作为值在代码中使用。这两者都可以在代码中使用不包含 `window` 对象的情况下编写。代码会自动默认指向顶层对象，如果代码中没有指定，它将查找顶层对象，默认情况下就是 `window` 对象。
 
@@ -300,14 +279,14 @@ alert(res);
 
 # 在 JavaScript 中使用变量
 
-● 变量是编程的基础概念之一
-● 使用 `const` 或 `let` 避免使用 `var`
-● `const` 和 `let` 是基于作用域的
-● 父级作用域 vs 局部作用域
-● 给变量赋值并重新赋值更新后的新值
-● 使用字符串和数字作为变量的值
-● JavaScript 改变数据类型时的动态类型
-● `Math` 以及 JavaScript 的直接输出
+- 变量是编程的基础概念之一
+- 使用 `const` 或 `let` 避免使用 `var`
+- `const` 和 `let` 是基于作用域的
+- 父级作用域 vs 局部作用域
+- 给变量赋值并重新赋值更新后的新值
+- 使用字符串和数字作为变量的值
+- JavaScript 改变数据类型时的动态类型
+- `Math` 以及 JavaScript 的直接输出
 
 变量允许开发者存储值，这些值可以在代码中根据需要进行更新。通常，变量在代码开头声明，并在整个代码中使用它们存储应用程序的值。当你声明变量时可以使用“let”改变值。如果你希望值在整个代码中保持不变，请使用“const”。这可以避免代码中错误重新赋值导致的错误和问题。
 
@@ -335,7 +314,7 @@ let userFirstName = “Laurence”;
 2. 使用使用单引号、双引号和反引号创建字符串的不同格式。
 3. 将结果输出到 `console` 和文档中。
 4. 给变量分配新值并输出结果。
-5. 尝试使用 JavaScript 包裹在 `${}` 中的模板字量字符串，并检查控制台和网页中的输出。
+5. 尝试使用 JavaScript 包裹在 `${}` 中的模板字面量字符串，并检查控制台和网页中的输出。
 
 ```javascript
 let a = 'Laurence Svekis';
@@ -390,12 +369,12 @@ document.write(val);
 
 # JavaScript 动态类型转换
 
-● JavaScript 数据类型
-● 数据类型 `string`, `number`, `boolean` - `typeof` 类型转换
-● 数据类型 `Booleans`, `Null`, `Undefined`
-● `number.toString()` `Number(string)`
-● `typeof` 运算符
-● 数据类型包括数字、字符串、布尔、对象
+- JavaScript 数据类型
+- 数据类型 `string`, `number`, `boolean` - `typeof` 类型转换
+- 数据类型 `Booleans`, `Null`, `Undefined`
+- `number.toString()` `Number(string)`
+- `typeof` 运算符
+- 数据类型包括数字、字符串、布尔、对象
 
 JavaScript 动态类型转换及其工作原理。JavaScript 变量可以转换为不同的数据类型，它们并不是设置为声明时的数据类型。JavaScript 使用不同的数据类型，JavaScript 会动态地分配它认为所需的类型，如果有需要你也可以更改变量的数据类型。
 
@@ -452,15 +431,15 @@ val = typeof(d);
 
 变量命名规则提供了可以使用名称以及如何在代码中声明 JavaScript。
 
-● 变量标识符必须使用唯一名称
-● 变量标识符应具有意义
-● 标识符可以包含字母、数字、下划线和美元符号
-● 变量名必须以字母、下划线或美元符号开头
-● 名称大小敏感
-● 名称不能与 JavaScript 单词重复
-● 变量名中不能有空格
+- 变量标识符必须使用唯一名称
+- 变量标识符应具有意义
+- 标识符可以包含字母、数字、下划线和美元符号
+- 变量名必须以字母、下划线或美元符号开头
+- 名称大小写敏感
+- 名称不能与 JavaScript 单词重复
+- 变量名中不能有空格
 
-命名规则必须以字母、下划线 (_) 或美元符号 ($) 开始。后续可以是字母或数字。大写或小写。变量名长度没有限制。
+命名规则必须以字母、下划线 (`_`) 或美元符号 (`$`) 开始。后续可以是字母或数字。大写或小写。变量名长度没有限制。
 
 ### JavaScript 课程练习：
 
@@ -493,17 +472,16 @@ console.log(output);
 document.write(output);
 ```
 
+# JavaScript 数组和对象
 
-
-
-数组是具有预设项目顺序的对象，通过元素的索引来选择和标识列表中的元素。数组还具有内置方法，这些方法使其成为数据以及操作和选择数组中包含项目的强大方式。对象也可以在同一个变量中包含多个项目，它们通过属性名进行标识，该属性名用于从对象中选择项目。每个属性名在对象中只能使用一次，且是唯一的。属性名可以使用引号设置或作为单个单词在对象中设置。它们与属性名成对赋值值，使用冒号分配值，并用逗号分隔多个命名的对值。
+数组是具有预设项目顺序的对象，通过元素的索引来选择和标识列表中的元素。数组还具有内置方法，这些方法使其成为数据以及操作和选择数组中包含项目的强大方式。对象也可以在同一个变量中包含多个项目，它们通过属性名进行标识，该属性名用于从对象中选择项目。每个属性名在对象中只能使用一次，且是唯一的。属性名可以使用引号设置或作为单个单词在对象中设置。它们与属性名成对赋值值，使用冒号分配值，并用逗号分隔多个命名的键值对。
 
 ### JavaScript 编码练习
 
 1. 创建一个包含各种数据类型的数组。
 2. 创建一个包含各种数据类型的对象。
 3. 从数组和对象中检索一个值并将其输出到控制台。
-4. 尝试同时使用点符号表示（dot notation）和方括号表示（bracket notation）获取对象内部的值。
+4. 尝试同时使用点符号表示法和方括号表示法获取对象内部的值。
 5. 使用数组的索引值和对象的属性名更新数组和对象的值。
 6. 声明一个新变量并将现有数组赋值给新变量。修改新变量的内容并观察第一个数组是否也随之更新。
 
@@ -540,11 +518,11 @@ document.write(val);
 探索如何在代码中使用函数来运行代码块。尝试避免重复代码，函数提供了一种运行代码块的极佳方式。
 
 - 函数可用于运行代码块
-- 两种类型的函数：函数表达式（Function Expression）和函数声明（Function declaration）
-- 函数可以接收
+- 两种类型的函数：函数表达式和函数声明
+- 函数可以接收参数
 - 函数命名规则与变量相同
 - 你可以在括号内向函数传递值，参数名可以用逗号分隔以添加多个值
-- 当函数被调用时，参数被称为函数参数（arguments），它们是函数在参数中接收的值
+- 当函数被调用时，参数被称为函数参数，它们是函数在参数中接收的值
 - 函数可以返回；`return` 语句将结束函数执行并返回值
 - 函数在花括号内具有作用域。函数作用域内的局部值只能在函数内部访问
 - 函数的益处是你可以编写一次代码并根据需要重复使用。你可以通过不同的参数值和返回值获得不同的结果。
@@ -661,16 +639,13 @@ document.body.children[0].textContent = val;
 ele.textContent = 'UPDATED';
 ```
 
-
-
-
 # 使用 JavaScript 选择页面元素
 
 使用 JavaScript 的 DOM 方法可以选择 HTML 页面元素。一旦选中了元素，就可以使用代码对其属性进行操作。
 
 `Document` 对象中存在一些方法，允许我们更好地选择想要用代码操作的元素。`querySelector()` 和 `querySelectorAll()` 允许 JavaScript 从文档对象的内容中选择页面元素。
 
-JavaScript `querySelectorAll` 获取页面元素全部。使用 `querySelector` 和 `querySelectorAll` 选择匹配的页面元素。不同的选择器包括标签、id 和类（class）。选择页面元素，遍历节点列表（node list）的内容输出并更新页面元素。
+JavaScript `querySelectorAll` 获取页面元素全部。使用 `querySelector` 和 `querySelectorAll` 选择匹配的页面元素。不同的选择器包括标签、id 和类（class）。选择页面元素，遍历节点列表的内容输出并更新页面元素。
 
 ## JavaScript 编程练习：
 
@@ -724,7 +699,7 @@ function clicker(){
 
 # 使用条件应用逻辑
 
-逻辑条件可以根据条件当前返回的布尔（Boolean）结果来创建不同的响应。根据语句中条件的数量，可以使用各种 JavaScript 语法，如 `if` 语句、`Switch` 语句或三元运算符。所有这些都可以用于返回依赖于所检查结果的响应。
+逻辑条件可以根据条件当前返回的布尔结果来创建不同的响应。根据语句中条件的数量，可以使用各种 JavaScript 语法，如 `if` 语句、`Switch` 语句或三元运算符。所有这些都可以用于返回依赖于所检查结果的响应。
 
 条件可以在代码中使用，以应用逻辑，并根据条件的结果运行不同的操作。根据 `True`（真）或 `False`（假）的值，可以运行不同的代码块。
 
@@ -732,7 +707,7 @@ function clicker(){
 
 使用 `switch` 语句允许我们指定多个替代方案，检查是否有任何条件匹配，并允许执行相应的代码。
 
-JavaScript 代码可以使用比较运算符（Comparison Operators）来检查语句是真是假。要检查多个条件，你可以应用逻辑运算符（Logical Operators）来检查条件之间的逻辑关系。下面的示例将展示如何使用逻辑运算符以及在真或假的各种组合下可以预期的结果。
+JavaScript 代码可以使用比较运算符来检查语句是真是假。要检查多个条件，你可以应用逻辑运算符来检查条件之间的逻辑关系。下面的示例将展示如何使用逻辑运算符以及在真或假的各种组合下可以预期的结果。
 
 ## JavaScript 编程练习：
 
@@ -857,10 +832,6 @@ btn.onclick = () => {
 };
 ```
 
-
-
-
-
 ```javascript
 html += `<div>${val **val} = ${val} X ${val}</div>`;
 
@@ -932,13 +903,13 @@ function clickedMe(){
 
 随机值可以用于生成更具吸引性的交互，使用 JavaScript 获取随机数。随机值非常适合游戏，因为为用户提供了更具挑战性的体验。
 
-`Math` 对象包含了多种可以用于数学功能的方法，此外，它还包含 `random` 方法，用于在 JavaScript 中创建随机值。`Math.random()` 方法返回一个从 0（包含 0）到小于 1（不包含 1）之间的浮点数。然后可以将随机值进行相乘并四舍入到最近的整数，以包含开发者所需的随机范围值。
+`Math` 对象包含了多种可以用于数学功能的方法，此外，它还包含 `random` 方法，用于在 JavaScript 中创建随机值。`Math.random()` 方法返回一个从 0（包含 0）到小于 1（不包含 1）之间的浮点数。然后可以将随机值进行相乘并四舍五入到最近的整数，以包含开发者所需的随机范围值。
 
 随机值是游戏以及为网络用户创建独特自定义体验的理想选择。
 
 ## 使用 JavaScript 和 DOM 的随机数交互猜数字游戏编码练习
 
-在此练习中，创建一个随机猜数字游戏，该游戏将提供一个随机范围，用户必须从中猜数字数字。应用程序将向用户提供反馈，说明猜测太高还是太低，允许用户缩小隐藏数字的范围。一旦找到输入值与隐藏数字匹配的解决方案，游戏将重新生成随机数和新的猜数字范围。反馈通过 HTML 元素提供给用户，这样玩游戏的玩家就知道结果以及下一步该做什么。这是一个使用 JavaScript 和与 DOM 页面元素交互创建简单游戏的完美示例。
+在此练习中，创建一个随机猜数字游戏，该游戏将提供一个随机范围，用户必须从中猜数字。应用程序将向用户提供反馈，说明猜测太高还是太低，允许用户缩小隐藏数字的范围。一旦找到输入值与隐藏数字匹配的解决方案，游戏将重新生成随机数和新的猜数字范围。反馈通过 HTML 元素提供给用户，这样玩游戏的玩家就知道结果以及下一步该做什么。这是一个使用 JavaScript 和与 DOM 页面元素交互创建简单游戏的完美示例。
 
 玩家在游戏中猜出正确数字的步骤示例。正确数字需要通过应用程序返回给用户的反馈来确定。
 
@@ -1041,10 +1012,6 @@ function getRan(min,max){
 
 # JavaScript 循环代码块
 
-
-
-
-
 JavaScript `For`、`While`、`Do While` 循环多次执行代码块，直到满足条件为止。
 
 循环允许我们多次执行代码块，它们还允许我们遍历项目列表（例如数组中的项），直到数组项的长度条件不再为真，或者满足其他跳出循环的条件。
@@ -1065,12 +1032,12 @@ JavaScript `For`、`While`、`Do While` 循环多次执行代码块，直到满�
 
 ```html
 <!doctype html>
-<html
+<html>
 <head>
  <title>JavaScript</title>
 </head>
 <body>
-<div>JavaScriptJavaScript</div>
+<div>JavaScript</div>
 <input type="text" >
 <button type="button">Click</button>
 <script src="dom7.js"></script>
@@ -1127,7 +1094,7 @@ JavaScript 的数据类型之一是 `object`。这些可以用于存储各种键
 4. 在对象内部创建一个方法，可以更新对象的 `first` 和 `last` 姓名。为对象 `id` 生成随机值。返回组合后的当前对象属性值。
 5. 当点击按钮时，更新对象 `first` 属性的值。
 6. 在页面和控制台上输出调用对象中的 `fullName` 方法生成的新字符串。
-7. 获取对象项（entries）作为嵌套数组值并使用 `Object.entries()` 创建新数组。
+7. 获取对象项作为嵌套数组值并使用 `Object.entries()` 创建新数组。
 8. 使用 `Object.keys()` 获取并创建一个包含对象键的数组。
 9. 使用 `Object.values()` 获取并创建一个包含对象值的数组。
 10. 使用 `in` 或 `condition` 检查键是否包含在对象中。
@@ -1218,21 +1185,17 @@ function btnClicked(){
 
 更新数组值的常用 JavaScript 数组方法用于利用数据。数组方法提供了一种强大的方法来交互和使用数组包含的数据。
 
-`arr.push(val)` // 添加到数组返回数组长度
-`arr.pop()` // 删除最后一个
-`arr.shift()` // 删除第一个
-`arr.unshift(val)` // 添加到数组开头返回数组长度
-`arr.splice(1)` // 返回索引 1 之后的所有项
-`splice(start, deleteCount, val)` // 修改数组内容
-`arr.slice(start, end)` // 将数组的一部分拷贝到新数组中
-`arr.slice()` // 复制数组为新数组
-`arr.slice(5)` // 从索引 5 开始返回数组项
-`arr.slice(1,4)` // 使用 slice 返回数组部分
-`arr.toString()` // 返回数组项的字符串表示
-
-
-
-
+- `arr.push(val)` // 添加到数组返回数组长度
+- `arr.pop()` // 删除最后一个
+- `arr.shift()` // 删除第一个
+- `arr.unshift(val)` // 添加到数组开头返回数组长度
+- `arr.splice(1)` // 返回索引 1 之后的所有项
+- `splice(start, deleteCount, val)` // 修改数组内容
+- `arr.slice(start, end)` // 将数组的一部分拷贝到新数组中
+- `arr.slice()` // 复制数组为新数组
+- `arr.slice(5)` // 从索引 5 开始返回数组项
+- `arr.slice(1,4)` // 使用 slice 返回数组部分
+- `arr.toString()` // 返回数组项的字符串表示
 
 ```javascript
 arr.join(' - '); // 返回数组项的字符串表示，使用参数值作为数组项之间的分隔符。
@@ -1308,7 +1271,7 @@ function btnClicked() {
 }
 ```
 
-## 遍历数组项
+# 遍历数组项
 
 遍历数组以获取内容，有一些方法如 `forEach` 方法，它们非常适合循环内容并与数组数据进行交互。
 
@@ -1391,6 +1354,12 @@ JavaScript 有多种数组方法用于处理内容。
 10. 使用 `map()` 方法将数组项到输入框。
 11. 使用 `forEach()` 遍历项并将结果输出到页面。
 
+
+
+# JavaScript DOM 编码练习与挑战
+
+## 数组方法演示
+
 ```javascript
 const output = document.querySelector('div');
 const myInput = document.querySelector('input');
@@ -1398,43 +1367,43 @@ const btn = document.querySelector('button');
 
 btn.onclick = btnClicked;
 myInput.value = 10;
-myInput.setAttribute('type','number');
+myInput.setAttribute('type', 'number');
 
-const arr = ['one','two','three','four','five'];
+const arr = ['one', 'two', 'three', 'four', 'five'];
 const temp1 = [];
 
-for(let i=0;i<10;i++){
-  const ranValue = Math.floor(Math.random()*100);
+for (let i = 0; i < 10; i++) {
+  const ranValue = Math.floor(Math.random() * 100);
   temp1.push(ranValue);
 }
 
 function btnClicked() {
-  const arr1 = arr.map((item,ind,array)=>{
+  const arr1 = arr.map((item, ind, array) => {
     console.log(item);
     return `${item} ${ind}`;
-  })
+  });
 
-  const arr2 = temp1.map(val=> val*2);
+  const arr2 = temp1.map(val => val * 2);
 
-  const arr3 = temp1.filter((val)=>{
+  const arr3 = temp1.filter((val) => {
     return val > 50;
   });
 
-  const arr4 = temp1.reduce((previous,current,index)=>{
+  const arr4 = temp1.reduce((previous, current, index) => {
     console.log(previous);
     console.log(current);
     return previous + current;
   });
 
-  const arr5 = temp1.every((val)=>{
+  const arr5 = temp1.every((val) => {
     console.log(val);
     return val < 150;
-  })
+  });
 
-  const arr6 = temp1.some((val)=>{
+  const arr6 = temp1.some((val) => {
     console.log(val);
     return val < 50;
-  })
+  });
 
   console.log(arr1);
   console.log(arr2);
@@ -1443,28 +1412,24 @@ function btnClicked() {
   console.log(arr5);
   console.log(arr6);
 
-  const arr7 = temp1.map((val)=>{
+  const arr7 = temp1.map((val) => {
     console.log(val);
     return val * myInput.value;
-  })
+  });
 
   let html = '';
-  arr7.forEach((ele,ind) => {
+  arr7.forEach((ele, ind) => {
     html += `<div>${temp1[ind]} x ${myInput.value} = ${ele}</div>`;
-  })
+  });
   output.innerHTML = html;
 }
 ```
 
+## 如何对数组进行反序和字母顺序排序
 
+### JavaScript 编码练习
 
-
-
-# 如何对数组进行反序和字母顺序排序。
-
-## JavaScript 编码练习：
-
-1. 一个一个包含某些值的数组，并向数组中添加随机数。
+1. 创建一个包含某些值的数组，并向数组中添加随机数。
 2. 当按钮被点击时，从现有数组创建一个新数组，过滤出数据类型为数字或字符串的数据。
 3. 使用 `array.length` 和 `Math.random()` 为数组项选择一个随机的索引值。
 4. 点击时，切换 `sort()` 或 `reverse()` 方法对数组进行就地排序（in-place）。
@@ -1475,51 +1440,46 @@ function btnClicked() {
 
 ```javascript
 const output = document.querySelector('div');
-
 const myInput = document.querySelector('input');
-
 const btn = document.querySelector('button');
 
 btn.onclick = btnClicked;
-
 myInput.value = 10;
+myInput.setAttribute('type', 'number');
 
-myInput.setAttribute('type','number');
-
-const arr = ['one','two','three','four','five'];
-
+const arr = ['one', 'two', 'three', 'four', 'five'];
 let boo = true;
 
-for(let i=0;i<10;i++){
-  const ranValue = Math.floor(Math.random()*100);
+for (let i = 0; i < 10; i++) {
+  const ranValue = Math.floor(Math.random() * 100);
   arr.push(ranValue);
 }
 
 console.log(arr);
 
-function btnClicked(){
-  const arr1 = arr.filter((ele)=>{
+function btnClicked() {
+  const arr1 = arr.filter((ele) => {
     return typeof(ele) == 'string';
-  })
-  const ind = Math.floor(Math.random()*arr.length);
+  });
+  const ind = Math.floor(Math.random() * arr.length);
   output.innerHTML = `Random Array Item with index of ${ind} value ${arr[ind]}`;
   let html = '';
-  if(boo){
+  if (boo) {
     arr.sort();
     boo = false;
-  }else{
+  } else {
     arr.reverse();
   }
   html += `<div>${arr.toString()}</div>`;
-  for(let i=0;i<10;i++){
-    arr.sort(()=>{
+  for (let i = 0; i < 10; i++) {
+    arr.sort(() => {
       return Math.random() - 0.5;
     });
     html += `<div>${arr.toString()}</div>`;
   }
-  arr.forEach((ele,ind)=>{
+  arr.forEach((ele, ind) => {
     html += `<div>${ind} - ${ele}</div>`;
-  })
+  });
   output.innerHTML += html;
   console.log(arr1);
 }
@@ -1529,7 +1489,7 @@ function btnClicked(){
 
 JavaScript 数组拥有在数组中查找项的方法，此练习提供了如何查找数组项的示例。JavaScript 有几种方法可以检查数组中包含的值。
 
-## JavaScript 编码练习：
+### JavaScript 编码练习
 
 1. 创建一个包含一些字符串和数字数值的数组。
 2. 使用 `arr.includes()` 检查输入框中的值是否在数组中。
@@ -1543,16 +1503,14 @@ JavaScript 数组拥有在数组中查找项的方法，此练习提供了如何
 
 ```javascript
 const output = document.querySelector('div');
-
 const myInput = document.querySelector('input');
-
 const btn = document.querySelector('button');
 
 btn.onclick = btnClicked;
 
-const arr = ['Svekis','Laurence','100',50,10];
+const arr = ['Svekis', 'Laurence', '100', 50, 10];
 
-function btnClicked(){
+function btnClicked() {
   const val = myInput.value;
   const res = arr.includes(val);
   const message = (res) ? `was found` : `Not Found`;
@@ -1563,15 +1521,15 @@ function btnClicked(){
   html += `<div>IndexOf ${indexPos}</div>`;
   const indexPosLast = arr.lastIndexOf(val);
   html += `<div>IndexLast ${indexPosLast}</div>`;
-  const finderVal = arr.find((v)=>{
+  const finderVal = arr.find((v) => {
     return typeof(v) == 'number';
   });
   html += `<div>Find 1 ${finderVal}</div>`;
-  const finderValP = arr.find((v)=>{
+  const finderValP = arr.find((v) => {
     return v == val;
   });
   html += `<div>Find 2 ${finderValP}</div>`;
-  const finderValNum = arr.find((v)=>{
+  const finderValNum = arr.find((v) => {
     return v > 10;
   });
   html += `<div>Find 3 ${finderValNum}</div>`;
@@ -1591,12 +1549,12 @@ function btnClicked(){
 
 ![](img/image452.jpeg)
 
-## JavaScript 编码练习：
+### JavaScript 编码练习
 
 1. 使用 `trim()` 移除输入中的空白。
 2. 当按钮被点击时，输出字符串的长度。
 3. `slice()` 切取字符串部分。
-4. 检查它是否 `includes` 某个值
+4. 检查它是否 `includes` 某个值。
 5. `replace()` 输出字符串值。
 6. `toLowerCase()` 和 `toUpperCase()` 处理相同的。
 7. `indexOf` 获取字符串值。
@@ -1606,16 +1564,13 @@ function btnClicked(){
 
 ```javascript
 const output = document.querySelector('div');
-
 const myInput = document.querySelector('input');
-
 const btn = document.querySelector('button');
 
 btn.onclick = btnClicked;
-
 myInput.value = 'Laurence Svekis';
 
-function btnClicked(){
+function btnClicked() {
   const val = myInput.value.trim();
   let html = `<div>${val}</div>`;
   html += `<div>Length : ${val.length}</div>`;
@@ -1633,25 +1588,25 @@ function btnClicked(){
   output.innerHTML = html;
 }
 
-function makeCap(words){
+function makeCap(words) {
   const arr = words.split(' ');
   const temp = [];
-  arr.forEach((word)=>{
+  arr.forEach((word) => {
     const f = word.charAt(0).toUpperCase();
     const remainLetters = word.slice(1);
-    temp.push(f+remainLetters);
-  })
+    temp.push(f + remainLetters);
+  });
   return temp.join(' ');
 }
 ```
 
-# 如何打乱字符串字符
+## 如何打乱字符串字符
 
 此 JavaScript 交互式单词乱序游戏演示了如何使用字符串方法打乱字符串中的字母。
 
 ![](img/image453.jpeg)
 
-## JavaScript 编码练习：
+### JavaScript 编码练习
 
 1. 创建一个你想要在游戏使用的单词和短语数组。
 2. 创建一个全局游戏对象，用于存储已乱序的单词。
@@ -1661,24 +1616,13 @@ function makeCap(words){
 6. 清空输入框的当前值。
 7. 使用 `Math.random()` 从单词数组中随机选择一个项。
 8. 创建一个打乱短语中单词的函数，名为 `maker()`。
-
-
-
-
 9. 在 `maker()` 函数中，将字符串转换为每个单词的数组。创建一个 `holder` 数组，在创建单词的打乱版本时使用。
-
 10. 遍历字符串中的所有单词，将单词转换为 `toLowerCase()`。
-
 11. 将单词的字母拆分为单独的数组。使用 `sort()` 随机化数组中的字母。使用 `join()` 将数组转换回由单词中随机排序字母组成的字符串。将其添加到 `holder` 数组中。
-
 12. 返回 `holder` 数组，将单词合并回字符串。
-
 13. 将打乱的单词赋值给游戏的隐藏值。将短语的打乱版本输出到 HTML 页面。
-
 14. 点击按钮时，检查按钮文本，如果是 `new game`，则启动 `starter()` 函数重新启动游戏。
-
 15. 将输入转换为 `lowerCase()`。将该值与数组中选中字符串的隐藏值进行比较。如果匹配，则玩家解决了问题。将按钮文本更新为 `new game`。
-
 16. 如果错误，向玩家提供反馈，让他们尝试新的字母组合。将继续游戏，直到找到正确答案。
 
 ```html
@@ -1757,7 +1701,7 @@ function maker(words) {
 }
 ```
 
-# 使用 JavaScript 使用 LocalStorage
+## 使用 JavaScript 使用 LocalStorage
 
 使用 `JSON.parse` 和 `JSON.stringify` 将对象转换为单个字符串值。该字符串值可以用于存储在 `localStorage` 中，并作为键的值返回。
 
@@ -1765,12 +1709,10 @@ function maker(words) {
 
 ![](img/image00454.jpeg)
 
-  JavaScript 编码练习：
+### JavaScript 编码练习
 
 1. 尝试将数组转换为字符串，然后从字符串将其解析回可用的数组。对对象执行相同操作。`JSON.stringify(arr)`，`JSON.parse(strArr)`。
-
 2. 当 HTML 加载时，调用一个函数使用键检查本地存储中的某个值。如果返回了值，则将字符串解析为对象。将对象的内容输出到页面。
-
 3. 点击按钮后，创建一个转换为字符串并存入 `localStorage` 的对象。
 
 ```javascript
@@ -1807,16 +1749,14 @@ function btnClicked() {
   }
 }
 ```
-*(注：由于原文中包含大量重复的代码块和说明，此处已根据要求进行去重并翻译。)*
 
+## 遍历 `NodeList` 和 `HTMLCollection`
 
-
-
-# 3. 遍历 `nodeList` 和 `HTMLCollection`，输出元素并更新它们的 `innerHTML`。观察 `NodeList` 和 `HTMLCollection` 之间的差异。
+遍历 `nodeList` 和 `HTMLCollection`，输出元素并更新它们的 `innerHTML`。观察 `NodeList` 和 `HTMLCollection` 之间的差异。
 
 ```html
 <!doctype html>
-<html
+<html>
 <head>
  <title>JavaScript</title>
 </head>
@@ -1848,24 +1788,23 @@ console.log(eles1);
 console.log(eles2);
 console.log(eles3);
 
-eles1.forEach((ele,ind,arr)=>{
+eles1.forEach((ele, ind, arr) => {
   console.log(ele.textContent);
-  ele.innerHTML = `<div>JavaScript List ${ind+1} </div>>`;
-  //console.log(arr);
+  ele.innerHTML = `<div>JavaScript List ${ind+1} </div>`;
 })
 
 console.log(eles1);
 console.log(eles2);
-for(let i=0;i<eles2.length;i++){
+for (let i = 0; i < eles2.length; i++) {
   console.log(eles2[i].innerHTML);
 }
 ```
 
-# 使用代码创建和删除页面元素
+## 使用代码创建和删除页面元素
 
 在本次练习中，将使用 JavaScript 通过代码动态创建和删除元素。
 
-## 课程编码练习：
+### 课程编码练习
 
 1. 选择 HTML 元素，作为后续使用 `document.createElement()` 创建的元素的父元素。
 2. 创建一个可以用于生成新页面元素的函数。在参数中添加元素标签类型、父元素以及元素的 HTML 或内容。
@@ -1898,14 +1837,14 @@ const div1 = document.querySelector('div');
 const div5 = document.querySelector('#three');
 const div6 = document.querySelector('div .one');
 const ul1 = document.createElement('ul');
-const myInput = maker('input',div1,'');
-myInput.setAttribute('type','text');
+const myInput = maker('input', div1, '');
+myInput.setAttribute('type', 'text');
 myInput.value = 'Laurence Svekis';
-const btn = maker('button',div1,'Add to List');
-btn.onclick = ()=>{
+const btn = maker('button', div1, 'Add to List');
+btn.onclick = () => {
   const lis = document.querySelectorAll('li');
   let temp = `${myInput.value} ${lis.length+1}`;
-  addListItem(temp,'red');
+  addListItem(temp, 'red');
 }
 div6.style.color = 'purple';
 div6.textContent = 'Hello WOrld 2';
@@ -1914,15 +1853,15 @@ div6.parentNode.removeChild(div6);
 console.log(div1);
 div1.append(ul1);
 console.log(ul1);
-for(let i=0;i<10;i++){
-  addListItem(`List item ${i+1}`,'blue');
+for (let i = 0; i < 10; i++) {
+  addListItem(`List item ${i+1}`, 'blue');
 }
 
-function addListItem(val,col){
+function addListItem(val, col) {
   const li = document.createElement('li');
   li.innerText = val;
   li.style.color = col;
-  li.onclick = (e)=>{
+  li.onclick = (e) => {
     li.parentNode.removeChild(li);
   }
   return ul1.appendChild(li);
@@ -1930,23 +1869,24 @@ function addListItem(val,col){
 const div2 = document.createElement('div');
 div1.prepend(div2);
 div2.innerHTML = `Hello World`;
-const div3 = maker('div',div1,'Laurence Svekis');
+const div3 = maker('div', div1, 'Laurence Svekis');
 div3.style.color = 'red';
 div5.append(div3);
 div5.prepend(ul1);
 div5.append(div6);
 
-function maker(eleT,parent,html){
+function maker(eleT, parent, html) {
   const ele = document.createElement(eleT);
   ele.innerHTML = html;
   return parent.appendChild(ele);
 }
+```
 
-移动元素
+## 移动元素
 
 此编码练习将提供创建和移除元素的良好方法。在代码中，对象一次只能占据一个位置。
 
-## 练习：
+### 练习
 
 1. 创建一个包含值的数组。
 2. 创建 `ul`。
@@ -1985,11 +1925,16 @@ function maker(eleT,parent,html){
 
 ```javascript
 const divs = document.querySelectorAll('div');
+
 document.body.style.display = 'grid';
 document.body.style.gridTemplateColumns = '1fr 1fr';
+
 const arr = ['Laurence', 'Jane', 'Mike', 'Laurence', 'Jane', 'Mike', 'Laurence', 'Jane', 'Mike'];
+
 const uls = [];
+
 console.log(divs);
+
 divs.forEach((ele, ind) => {
   ele.textContent = `List #${ind+1}`;
   const ul = document.createElement('ul');
@@ -2029,24 +1974,11 @@ function addItems() {
 }
 ```
 
-
-
-
-
-```javascript
-li.classList.toggle('sel');
-}
-
-uls[0].append(li);
-})
-}
-```
-
-# 使用事件进行页面交互
+## 使用事件进行页面交互
 
 DOM 元素可以拥有各种事件，这些事件可以在页面上发生时后用于运行代码块。还可以通过 `AddEventListener()` 方法或各种元素事件将事件添加到 `Window` 对象以及 `Document` 对象中。`window` 和 `document` 对象可以在选定的事件发生时运行函数，例如 JavaScript 中的 `onLoad` 和 `DOMContentLoaded` 事件。此练习练习将提供一个如何使用这些事件的示例。
 
-## 课程编码练习：
+### 课程编码练习
 
 1. 添加一个在 DOM 内容加载时触发的事件。尝试 `window.onload`、`document.body.onload` 和 `document.addEventListener('DOMContentLoaded',(){})`。
 2. 使用 `addEventListener()` 为同一个元素添加多个事件，也尝试对 `onclick` 使用。
@@ -2069,7 +2001,6 @@ DOM 元素可以拥有各种事件，这些事件可以在页面上发生时后�
 
 ```javascript
 window.onload = init;
-
 document.addEventListener('DOMContentLoaded', init3);
 
 function init3() {
@@ -2137,11 +2068,11 @@ function init() {
 }
 ```
 
-# JavaScript 表单字段元素
+## JavaScript 表单字段元素
 
 表单值和交互选择可以通过从 HTML 页面中选择元素然后使用 JavaScript 获取属性值来实现。不同的元素可以包含不同的默认属性，此示例将演示如何交互表单元素（如输入字段和表单提交事件）。使用 JavaScript 代码获取输入字段值并在代码中动态创建元素。
 
-## 课程编码练习：
+### 课程编码练习
 
 1. 为主页面元素添加几个文本节点（Text Nodes）。选择它们并更新文本节点的节点。
 2. 创建一个文本输入框，为该输入字段设置一些常用属性。
@@ -2159,42 +2090,53 @@ function init() {
 const output = document.querySelector('div');
 console.log(output);
 output.innerHTML = '';
+
 const out1 = document.createTextNode('Hello');
 const out2 = document.createTextNode('World');
 output.append(out1);
 output.append(out2);
+
 out1.textContent = 'Laurence';
 out2.textContent = 'Svekis';
+
 const myInput1 = document.createElement('input');
 output.append(myInput1);
 myInput1.setAttribute('type', 'text');
 myInput1.setAttribute('name', 'first');
+
 const myInput2 = document.createElement('input');
 output.append(myInput2);
 myInput2.setAttribute('type', 'number');
 myInput2.setAttribute('min', '1');
 myInput2.setAttribute('max', '10');
+
 const myInput3 = document.createElement('input');
 output.append(myInput3);
 myInput3.setAttribute('type', 'date');
+
 const myInput4 = document.createElement('input');
 output.append(myInput4);
 myInput4.setAttribute('type', 'color');
+
 const label1 = document.createElement('label');
 output.append(label1);
 const sel1 = document.createElement('select');
 output.append(sel1);
 sel1.setAttribute('multiple', '');
+
 for (let i = 0; i < 5; i++) {
   const opt = document.createElement('option');
   opt.textContent = `Option ${i + 1}`;
   sel1.append(opt);
 }
+
 const btn = document.createElement('button');
 output.append(btn);
 btn.textContent = 'List Selected Options';
+
 const ul = document.createElement('ul');
 output.append(ul);
+
 for (let i = 0; i < 3; i++) {
   const radio = document.createElement('input');
   output.append(radio);
@@ -2206,11 +2148,14 @@ for (let i = 0; i < 3; i++) {
   label2.textContent = `Value ${i + 1}`;
   label2.setAttribute('for', `radio${i}`);
 }
+
 const btn2 = document.createElement('button');
 output.append(btn2);
 btn2.textContent = 'Get Selected Value';
+
 const output2 = document.createElement('div');
 output.append(output2);
+
 const inputs = document.querySelectorAll('input');
 inputs.forEach((input) => {
   if (input.type !== 'radio') {
@@ -2219,18 +2164,13 @@ inputs.forEach((input) => {
 });
 ```
 
-# 鼠标和键盘事件
+## 鼠标和键盘事件
 
 元素拥有各种可以在元素上进行监听的事件。一旦事件在元素上发生，就可以用于运行代码块。用户交互可以通过鼠标或键盘进行。此示例将探索它们可以用于元素这些类型用户交互的事件。
 
-## 课程编码练习：
+### 课程编码练习
 
 1. 创建一个 `div` 和一个无序列表，用于添加内容。
-
-
-
-
-
 2. 添加一个按钮，用于更新样式的背景颜色。
 3. 创建一个空数组，用作稍后更新页面元素的元素的数组。
 4. 创建一个函数，可以为背景颜色返回随机的十六进制值。
@@ -2244,22 +2184,17 @@ inputs.forEach((input) => {
 
 ```javascript
 const div = document.querySelector('div');
-
 div.innerHTML = '';
-
 console.log(div);
 
 const output = document.createElement('div');
-
 div.append(output);
 
 const ul = document.createElement('ul');
 div.append(ul);
 
 const btn = document.createElement('button');
-
 btn.textContent = 'Reset Colors';
-
 btn.style.display = 'block';
 div.append(btn);
 
@@ -2359,11 +2294,11 @@ function ranColor() {
 }
 ```
 
-# 页面元素动画
+## 页面元素动画
 
-JavaScript `requestAnimationFrame()` 方法为页面元素提供了平滑的动画。`requestAnimationFrame()` 告诉浏览器正在执行动画，并请求浏览器在下一次重绘之前调用特定的函数来更新页面。作为参数的 `callback` 是在下一次重绘之前应该调用的函数。在这个示例中，代码被用于在页面上创建一个平滑移动的小球元素。它在页面上的位置样式值通过 `top` 和 `left` 值进行更新。`requestAnimationFrame()` 方法可以用于在 元素内部创建平滑动画。浏览器随后调用指定的函数，在下一次重绘之前更新动画。该方法接收一个回调函数 45.jpeg
+JavaScript `requestAnimationFrame()` 方法为页面元素提供了平滑的动画。`requestAnimationFrame()` 告诉浏览器正在执行动画，并请求浏览器在下一次重绘之前调用特定的函数来更新页面。作为参数的 `callback` 是在下一次重绘之前应该调用的函数。在这个示例中，代码被用于在页面上创建一个平滑移动的小球元素。它在页面上的位置样式值通过 `top` 和 `left` 值进行更新。`requestAnimationFrame()` 方法可以用于在元素内部创建平滑动画。浏览器随后调用指定的函数，在下一次重绘之前更新动画。该方法接收一个回调函数。
 
-## 练习
+### 练习
 
 1. 选择一个元素作为容器。
 2. 创建一个 `div` 来显示小球。
@@ -2382,6 +2317,7 @@ const div = document.querySelector('div');
 const score = document.createElement('div');
 score.style.textAlign = 'center';
 document.body.prepend(score);
+
 const ball = document.createElement('div');
 ball.style.border = '3px solid white';
 ball.style.width = '50px';
@@ -2390,6 +2326,7 @@ ball.style.backgroundColor = 'red';
 ball.style.borderRadius = '50%';
 ball.style.position = 'relative';
 div.append(ball);
+
 let pos = {
   x: 100,
   y: 100,
@@ -2399,10 +2336,12 @@ let pos = {
   move: true,
   score: 0
 };
-function adderScore(){
+
+function adderScore() {
   score.innerHTML = `<div>Score :${pos.score}</div>`;
 }
-function gameHit(){
+
+function gameHit() {
   pos.score++;
   ball.style.backgroundColor = `#${Math.random().toString(16).slice(2,8)}`;
   adderScore();
@@ -2411,14 +2350,16 @@ function gameHit(){
   ball.style.left = `${pos.x}px`;
   ball.style.top = `${pos.y}px`;
 }
+
 let mover;
-function ani(){
+
+function ani() {
   pos.move = true;
-  if(pos.move){
-    if(pos.x > 450 || pos.x < 0){
+  if(pos.move) {
+    if(pos.x > 450 || pos.x < 0) {
       pos.dx *= -1;
     }
-    if(pos.y > 350 || pos.y < 0){
+    if(pos.y > 350 || pos.y < 0) {
       pos.dy *= -1;
     }
     pos.x += pos.speed * pos.dx;
@@ -2428,29 +2369,21 @@ function ani(){
   }
   mover = requestAnimationFrame(ani);
 }
+
 ball.onclick = gameHit;
-document.addEventListener('keydown',e) => {
+
+document.addEventListener('keydown', (e) => {
   if(e.key === 'Enter') {
-    if(pos.move){
+    if(pos.move) {
       pos.move = false;
       cancelAnimationFrame(mover);
-    }else{
+    } else {
       pos.move = true;
       mover = requestAnimationFrame(ani);
     }
   }
 });
 ```
-
-
-
-
-
-# JavaScript DOM 编码练习与挑战
-
-通过 JavaScript DOM 编码项目学习交互式和动态网页。这些现代化的编码练习将帮助你通过最常见的 JavaScript 问题来提升你的 JavaScript 编码技能。
-
-以下编码练习旨在帮助你开发使用 JavaScript 在网页页面上创建交互式和动态内容的技能。
 
 ## 网页动态欢迎消息
 
@@ -2463,7 +2396,7 @@ document.addEventListener('keydown',e) => {
 
 询问网页用户其姓名，并将输入值连同欢迎消息一起返回给用户。
 
-创建一个页面欢迎消息：
+### 创建一个页面欢迎消息
 
 1. 在输入框中获取用户名
 2. 当按下按钮时，添加一个事件来获取用户名并在页面上创建欢迎消息
@@ -2490,16 +2423,16 @@ const userVal = document.querySelector('input[name="userName"]');
 const btn = document.querySelector('button');
 
 userVal.style.borderColor = '#333';
-btn.onclick = ()=>{
- if(userVal.value.length > 3){
- const message = `Welcome to the site ${userVal.value}`;
-      output.textContent =  message;
-      userVal.style.display = 'none';
-      btn.style.display = 'none';
-  }
- else{
-      output.textContent = 'Name length must be 3+ characters';
-      userVal.style.borderColor = 'red';
+
+btn.onclick = () => {
+  if(userVal.value.length > 3) {
+    const message = `Welcome to the site ${userVal.value}`;
+    output.textContent =  message;
+    userVal.style.display = 'none';
+    btn.style.display = 'none';
+  } else {
+    output.textContent = 'Name length must be 3+ characters';
+    userVal.style.borderColor = 'red';
   }
 }
 ```
@@ -2518,7 +2451,7 @@ btn.onclick = ()=>{
 
 使用不同的函数、表达式、声明和箭头格式创建 3 个页面的计数器。所有计数器都将独立工作，因为总值包含在使用 `this` 的函数对象实例中。
 
-使用函数的页面计数器：
+### 使用函数的页面计数器
 
 1. 选择所有页面按钮
 2. 创建一个函数表达式，在按下按钮时增加计数器
@@ -2547,21 +2480,21 @@ const btn2 = document.querySelector('.btn2');
 const btn3 = document.querySelector('.btn3');
 const output = document.querySelector('.output');
 
-//Function Expression
-const  adder2 = function(){
- if(!this.total) {
- this.total = 1;
-  }else{
- this.total++;
+// Function Expression
+const adder2 = function() {
+  if(!this.total) {
+    this.total = 1;
+  } else {
+    this.total++;
   }
   output.textContent = `Total #2 : (${this.total})`;
 }
 
-const adder3 = ()=>{
- if(!this.total) {
- this.total = 1;
-  }else{
- this.total++;
+const adder3 = () => {
+  if(!this.total) {
+    this.total = 1;
+  } else {
+    this.total++;
   }
   output.textContent = `Total #3 : (${this.total})`;
 }
@@ -2570,14 +2503,15 @@ btn1.onclick = adder1;
 btn2.onclick = adder2;
 btn3.onclick = adder3;
 
-///Function Declaration
-functionadder1(){
- if(!this.total) {
- this.total = 1;
-  }else{
- this.total++;
+// Function Declaration
+function adder1() {
+  if(!this.total) {
+    this.total = 1;
+  } else {
+    this.total++;
   }
   output.textContent = `Total #1 : (${this.total})`;
+}
 ```
 
 ## 动态 DOM 元素
@@ -2592,7 +2526,7 @@ functionadder1(){
 
 动态创建可以独立计数的页面按钮。创建一个按钮来输出总计。仅使用 JavaScript。存储元素的值，获取值并输出到网页。
 
-JavaScript 动态计数器：
+### JavaScript 动态计数器
 
 1. 创建一个全局对象来设置要创建的按钮数量
 2. 创建一个包含所有新元素的页面元素
@@ -2616,41 +2550,35 @@ JavaScript 动态计数器：
 
 ```javascript
 const val = {
- num : 2
+  num : 2
 };
 
-const main =  elemaker('div',document.body,'');
-const output =  elemaker('div',main,'');
+const main = elemaker('div', document.body, '');
+const output = elemaker('div', main, '');
 
-for(let i=0;i<val.num;i++){
-```
-
-
-
-
-```javascript
-const btn = elemaker('button',main,`Button #${i+1}`);
-btn.total = 0;
-btn.style.backgroundColor = '#'+Math.random().toString(16).slice(2,8);
-btn.style.color = 'white';
-btn.classList.add('btn');
-btn.onclick = adder;
+for(let i=0; i<val.num; i++) {
+  const btn = elemaker('button', main, `Button #${i+1}`);
+  btn.total = 0;
+  btn.style.backgroundColor = '#'+Math.random().toString(16).slice(2,8);
+  btn.style.color = 'white';
+  btn.classList.add('btn');
+  btn.onclick = adder;
 }
 
-const output1 = elemaker('div',main,'');
-const btnMain = elemaker('button',main,`All Totals`);
-btnMain.onclick =()=> {
+const output1 = elemaker('div', main, '');
+const btnMain = elemaker('button', main, `All Totals`);
+btnMain.onclick = () => {
   const btns = document.querySelectorAll('.btn');
   output1.innerHTML = '';
-  const ul = elemaker('ul',output1,'');
-  btns.forEach((ele,index)=>
-    const li = elemaker('li',ul,`${ele.textContent} = ${ele.total}`);
+  const ul = elemaker('ul', output1, '');
+  btns.forEach((ele, index) => {
+    const li = elemaker('li', ul, `${ele.textContent} = ${ele.total}`);
     li.style.backgroundColor = ele.style.backgroundColor;
     li.style.color = ele.style.color;
   })
 }
 
-function elemaker(eleT,parent,html) {
+function elemaker(eleT, parent, html) {
   const ele = document.createElement(eleT);
   ele.innerHTML = html;
   return parent.appendChild(ele);
@@ -2658,22 +2586,16 @@ function elemaker(eleT,parent,html) {
 
 function adder(e) {
   this.total++;
-  output.style.backgroundColor= this.style.backgroundColor;
+  output.style.backgroundColor = this.style.backgroundColor;
   output.innerHTML = `${this.textContent} :(${this.total})`;
 }
 ```
 
-JavaScript DOM 代码练习与游戏
-
-![](img/image00463.jpeg)
-
-带有 JavaScript 代码 DOM 示例的交互式动态 Web 项目。使用常用的 DOM 方法选择并更新页面元素，并使用 JavaScript 代码添加事件监听。通过代码示例和练习学习更多 JavaScript 和 DOM。
-
-# 背景颜色表格：使用 JavaScript 创建表格
+## 背景颜色表格：使用 JavaScript 创建表格
 
 此练习将构建一个交互式彩色单元格表格，点击单元格即可将其背景颜色应用到页面。此外，还有几个按钮可以更新表格单元格的背景颜色。表格将根据列和行的值进行动态生成。应用程序还将包含 3 个交互式按钮来更新页面元素。
 
-## 如何使用 JavaScript 代码创建响应式表格。
+### 如何使用 JavaScript 代码创建响应式表格
 
 按钮点击时的动作：
 
@@ -2683,7 +2605,7 @@ JavaScript DOM 代码练习与游戏
 
 ![](img/image00464.jpeg)
 
-## 练习：
+### 练习
 
 1. 为表格的行数和列数创建一个变量对象。
 2. 创建一个函数将表格添加到页面中。该函数应创建主表格元素，循环行和列并添加 `tr` 和 `td` 页面元素。
@@ -2708,6 +2630,7 @@ const tabValue = {
 }
 
 const main = addTable(output, tabValue.rows, tabValue.cols);
+
 const btn1 = btnMaker(output, 'Random', 'blue', 'white');
 const btn2 = btnMaker(output, 'MoveDown', 'red', 'white');
 const btn3 = btnMaker(output, 'MoveLeft', 'purple', 'white');
@@ -2748,13 +2671,13 @@ btn2.addEventListener('click', (e) => {
     holder.push(tempColor);
   })
   console.log(holder);
-  holder.forEach((val) => {
+  holder.forEach((val, ind) => {
     tds[ind].style.backgroundColor = val;
   })
 })
 
 function ranColor() {
-  return `#Math.random().toString(16).slice(2,8)}`;
+  return `#${Math.random().toString(16).slice(2,8)}`;
 }
 
 function btnMaker(parent, html, clr, fntColor) {
@@ -2792,14 +2715,14 @@ function addTable(parent, rows, cols) {
 }
 ```
 
+
+
 # 元素选择练习
 
 1. 从 HTML 中选择主容器元素。
 2. 使用循环在主元素中创建 20 个 `span`。
 3. 为 `span` 应用并添加样式。为元素添加事件监听器。
 4. 点击时运行一个函数获取事件目标元素。创建一个全局对象来存储选中的元素。添加一个条件检查持有元素中是否存在值。如果有，则使用 `insertBefore` 将原始元素插入到父元素中新选中的元素之前。
-
-
 
 5. 如果持有元素（holding element）不存在，则选择事件目标元素并将其作为持有元素。为元素添加一些样式和 `active` 类。这将使其需要时更容易被选中，并在视觉上告知用户，以便让他们知道哪个元素是激活状态。
 
@@ -2813,30 +2736,30 @@ console.log(output);
 output.innerHTML = '';
 
 const holder = {
-  ele : null
-}
+  ele: null
+};
 
-for(let i=0;i<20;i++){
+for (let i = 0; i < 20; i++) {
   const ele = document.createElement('span');
   output.append(ele);
-  ele.textContent = `${i+1} - Cell`;
+  ele.textContent = `${i + 1} - Cell`;
   ele.style.border = '1px solid #ddd';
   ele.style.padding = '10px';
   ele.style.display = 'inline-block';
-  ele.addEventListener('click',mover);
+  ele.addEventListener('click', mover);
 }
 
-function mover(e){
+function mover(e) {
   const ele = e.target;
-  if(holder.ele){
+  if (holder.ele) {
     const parent = ele.parentNode;
-    parent.insertBefore(holder.ele,ele);
+    parent.insertBefore(holder.ele, ele);
     holder.ele.style.color = 'black';
     holder.ele.borderColor = '#ddd';
     holder.ele = null;
-  }else{
+  } else {
     const withActive = document.querySelector('.active');
-    if(withActive){
+    if (withActive) {
       withActive.classList.remove('active');
     }
     holder.ele = ele;
@@ -2847,7 +2770,7 @@ function mover(e){
 }
 ```
 
-## 网页模态弹框元素
+# 网页模态弹框元素
 
 探索如何从一个数据对象创建一个 JavaScript 动态模态框（Modal）。模态框是有用的信息组件，提供了一种交互方式来显示额外内容。用户与页面上显示模态的元素进行交互，模态通常会高亮新元素，并呈现出悬浮在页面其他内容之上的外观。用户随后可以关闭模态框将其从视图中隐藏。
 
@@ -2872,36 +2795,36 @@ function mover(e){
 
 ```html
 <!doctype html>
-<html
+<html>
 <head>
   <title>JavaScript</title>
   <style>
- .overlay{
-  display:none;
-  left:0;
-  top:0;
-  width:100%;
-  height:100%;
-  background-color:rgb(0,0,0);
-  background-color:rgba(0,0,0,0.5);
-  position:fixed;
-  z-index:1;
-     }
- .main{
-  width:70%;
-  border:1px solid black;
-  margin:auto;
-  padding:10px;
-  margin-top:100px;
-     }
- .close{
-  color:red;
-  float:right;
-  font-size:1em;
-     }
- .close:hover, .close:focus{
-  cursor:pointer;
-     }
+    .overlay {
+      display: none;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgb(0,0,0);
+      background-color: rgba(0,0,0,0.5);
+      position: fixed;
+      z-index: 1;
+    }
+    .main {
+      width: 70%;
+      border: 1px solid black;
+      margin: auto;
+      padding: 10px;
+      margin-top: 100px;
+    }
+    .close {
+      color: red;
+      float: right;
+      font-size: 1em;
+    }
+    .close:hover, .close:focus {
+      cursor: pointer;
+    }
   </style>
 </head>
 <body>
@@ -2913,7 +2836,6 @@ function mover(e){
 
 ```javascript
 const output = document.querySelector('div');
-
 const data = [
   {
     title: 'Modal 1',
@@ -2937,12 +2859,10 @@ const data = [
 
 data.forEach((mod, ind) => {
   const btn = document.createElement('button');
-  btn.textContent = `Modal ${ind+1}`;
+  btn.textContent = `Modal ${ind + 1}`;
   output.append(btn);
-
   const modal = genModal(mod, ind);
   output.append(modal);
-
   btn.addEventListener('click', (e) => {
     const temp = modal.style.display;
     if (temp === 'block') {
@@ -2964,35 +2884,28 @@ function genModal(mData, id) {
   const mBody = document.createElement('div');
   const closeX = document.createElement('span');
   const innerTitle = document.createElement('div');
-
   closeX.classList.add('close');
   closeX.onclick = () => {
     closer(overlay);
   };
   closeX.innerHTML = '&times;';
-
   mTitle.style.fontSize = '1.5em';
   mBody.style.border = '1px solid #111';
   mBody.style.padding = '10px';
-
   mTitle.append(closeX);
   mTitle.style.backgroundColor = 'black';
   mTitle.style.color = 'white';
   mTitle.style.padding = '4px';
-
   innerTitle.textContent = mData.title;
   mTitle.append(innerTitle);
-
   overlay.classList.add('overlay');
   main.classList.add('main');
   main.append(mTitle);
   main.append(mBody);
   overlay.append(main);
-
   main.style.color = mData.font;
   main.style.backgroundColor = mData.color;
   mBody.textContent = mData.body;
-
   console.log(main);
   return overlay;
 }
@@ -3008,9 +2921,6 @@ function genModal(mData, id) {
 2. 创建一个输入框和一个按钮。为输入框设置属性，使其成为数字类型，并设置最小值为 1，最大值为 20。为输入框设置默认值为 5。
 3. 创建一个创建元素的函数，参数为元素标签名称以及该元素将追加的父元素。
 4. 创建一个空数组来存储主计数器元素以及点击值。
-
-
-
 
 ### 5. 添加一个按钮来生成点击器数值的报告。当点击该按钮时，遍历 `holding` 数组，并在报告中添加 `clicker` 元素的值及其被点击的次数。
 
@@ -3030,160 +2940,83 @@ function genModal(mData, id) {
 
 ```javascript
 const main = document.querySelector('div');
-
 console.log(main);
-
 main.customValues = 1000;
-
-const myInput = makeElement(document.body,'input');
-
-const btn = makeElement(document.body,'button')
-
+const myInput = makeElement(document.body, 'input');
+const btn = makeElement(document.body, 'button');
 btn.textContent = 'Make Clickers';
-
-myInput.setAttribute('type','number');
-
-myInput.setAttribute('min',1);
-
-myInput.setAttribute('max',20);
-
+myInput.setAttribute('type', 'number');
+myInput.setAttribute('min', 1);
+myInput.setAttribute('max', 20);
 myInput.value = 5;
-
 const holder = [];
-
-const main2 = makeElement(document.body,'div');
-
-const btnReport = makeElement(main2,'button');
-
+const main2 = makeElement(document.body, 'div');
+const btnReport = makeElement(main2, 'button');
 btnReport.textContent = 'Generate Report';
-
-btnReport.onclick = ()=>{
-
+btnReport.onclick = () => {
   console.log(holder);
-
- const report = makeElement(main2,'div');
-
+  const report = makeElement(main2, 'div');
   main2.prepend(report);
-
- let html = 'New Report';
-
-  holder.forEach((ele,ind)=>{
-
-html += `<div>${ind+1}. = ${ele.trackingVal}</div>`;
-
-  })
-
-html += '<hr>';
-
-  report.innerHTML = html
-
-}
-
-btn.onclick = ()=>{
-
- for(let i=0;i<myInput.value;i++){
-
-      maker(main);
-
+  let html = 'New Report';
+  holder.forEach((ele, ind) => {
+    html += `<div>${ind + 1}. = ${ele.trackingVal}</div>`;
+  });
+  html += '<hr>';
+  report.innerHTML = html;
+};
+btn.onclick = () => {
+  for (let i = 0; i < myInput.value; i++) {
+    maker(main);
   }
-
-}
-
-function  maker(parent){
-
- const div = makeElement(parent,'div');
-
+};
+function maker(parent) {
+  const div = makeElement(parent, 'div');
   div.trackingVal = 0;
-
   holder.push(div);
-
- const div1 = makeElement(div,'div');
-
- const btn1 = makeElement(div,'button');
-
- const btn2 = makeElement(div,'button');
-
- const inField = makeElement(div,'input');
-
- const btn3 = makeElement(div,'button');
-
+  const div1 = makeElement(div, 'div');
+  const btn1 = makeElement(div, 'button');
+  const btn2 = makeElement(div, 'button');
+  const inField = makeElement(div, 'input');
+  const btn3 = makeElement(div, 'button');
   div1.style.fontSize = '2em';
-
   inputToNum(inField);
-
   div1.style.display = 'inline-block';
-
   btn1.textContent = '-';
-
   btn2.textContent = '+';
-
   btn3.textContent = 'Update';
-
   btn1.style.backgroundColor = 'red';
-
   btn2.style.backgroundColor = 'green';
-
   btn1.style.color = 'white';
-
   btn2.style.color = 'white';
-
-  updater(inField,div1,div.trackingVal);
-
-  btn1.onclick = ()=>{
-
-      div.trackingVal--;
-
- if(div.trackingVal <= 0) div.trackingVal =0;
-
-      updater(inField,div1,div.trackingVal);
-
-  }
-
-  btn2.onclick = ()=>{
-
-      div.trackingVal++;
-
-      updater(inField,div1,div.trackingVal);
-
-  }
-
-  btn3.onclick = ()=>{
-
-      div.trackingVal = inField.value;
-
- if(div.trackingVal <= 0) div.trackingVal =0;
-
-      updater(inField,div1,div.trackingVal);
-
-  }
+  updater(inField, div1, div.trackingVal);
+  btn1.onclick = () => {
+    div.trackingVal--;
+    if (div.trackingVal <= 0) div.trackingVal = 0;
+    updater(inField, div1, div.trackingVal);
+  };
+  btn2.onclick = () => {
+    div.trackingVal++;
+    updater(inField, div1, div.trackingVal);
+  };
+  btn3.onclick = () => {
+    div.trackingVal = inField.value;
+    if (div.trackingVal <= 0) div.trackingVal = 0;
+    updater(inField, div1, div.trackingVal);
+  };
 }
-
-function  updater(inputEle,txtEle,num){
-
+function updater(inputEle, txtEle, num) {
   inputEle.value = num;
-
   txtEle.innerHTML = ` ${num} : `;
-
 }
-
-function  inputToNum(ele){
-
-  ele.setAttribute('type','number');
-
-  ele.setAttribute('min',0);
-
-  ele.setAttribute('max',10000);
-
+function inputToNum(ele) {
+  ele.setAttribute('type', 'number');
+  ele.setAttribute('min', 0);
+  ele.setAttribute('max', 10000);
   ele.value = 0;
-
 }
-
-function  makeElement(parent,eleType){
-
- const ele = document.createElement(eleType);
-
- return parent.appendChild(ele);
-
+function makeElement(parent, eleType) {
+  const ele = document.createElement(eleType);
+  return parent.appendChild(ele);
 }
 ```
 
@@ -3205,9 +3038,6 @@ function  makeElement(parent,eleType){
 8. 在句末添加一个句号。
 9. 将完成的字符串显示在 `output` 元素中。
 
-
-
-
 本次练习将练习更新页面元素的样式属性。包括 `textAlign`、`border`、`padding`、`position`、`width`、`backgroundColor`、`height`、`color`、`top`、`left`、zIndex。还将使用主 HTML 元素的值，它在文档中以属性名为 `document.documentElement` 的对象存在。`document.documentElement` 将返回文档的根元素，即 HTML 元素。`document.documentElement` 的 `scrollHeight`、`scrollTop` 和 `clientHeight` 可用于计算文档当前的滚动位置以及文档的剩余部分。这可以获取当前滚动到的文档百分比。
 
 ![](img/image00469.jpeg)
@@ -3227,69 +3057,53 @@ function  makeElement(parent,eleType){
 
 ```javascript
 const main = document.querySelector('div');
-
 const scrollInd = document.createElement('div');
-
 const scrBarP = document.createElement('div');
-
 const scrBarC = document.createElement('div');
-
 document.body.prepend(scrollInd);
-
 scrollInd.textContent = 'Scroll Bar';
-
 scrollInd.append(scrBarP);
-
 scrBarP.append(scrBarC);
-
 scrollInd.style.textAlign = 'center';
-
 scrollInd.style.border = '1px solid black';
 scrollInd.style.padding = '0px';
 scrollInd.style.position = 'fixed';
-
 scrollInd.style.width = '100%';
 scrollInd.style.backgroundColor = 'black';
 scrollInd.style.color = 'white';
 scrollInd.style.top = '0';
 scrollInd.style.left = '0';
 scrollInd.style.zIndex = '1';
-
 scrBarP.style.width = '100%';
 scrBarP.style.height = '21px';
 scrBarP.style.padding = '3px';
 scrBarP.style.backgroundColor = 'white';
-
 scrBarC.style.width = '0%';
 scrBarC.style.height = '15px';
 scrBarC.style.backgroundColor = 'green';
-
-window.onscroll = (e)=>{
+window.onscroll = (e) => {
   const sTop = document.body.scrollTop || document.documentElement.scrollTop;
   const pos = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-  const scrolMeter = (sTop / pos)*100;
+  const scrolMeter = (sTop / pos) * 100;
   console.log(scrolMeter);
   const bgColor = scrolMeter > 50 ? 'red' : 'green';
   scrBarC.style.width = `${scrolMeter}%`;
   scrBarC.style.backgroundColor = bgColor;
-}
-
-for(let i=0;i<10;i++){
+};
+for (let i = 0; i < 10; i++) {
   const div = document.createElement('div');
   main.append(div);
   div.style.border = '1px solid #ddd';
-  div.style.height = `${ranV(300)+150}px`;
-  div.innerHTML = `<h<h1>${i+1} Header</h1><div>Laurence Svekis</div>`;
+  div.style.height = `${ranV(300) + 150}px`;
+  div.innerHTML = `<h1>${i + 1} Header</h1><div>Laurence Svekis</div>`;
   div.style.backgroundColor = ranC();
   div.style.color = 'white';
 }
-
-function ranC(){
-  return `#${Math.random().toString(16).slice(2,8)}`;
+function ranC() {
+  return `#${Math.random().toString(16).slice(2, 8)}`;
 }
-
-function ranV(max){
-  return Math.floor(Math.random()*max)+1;
+function ranV(max) {
+  return Math.floor(Math.random() * max) + 1;
 }
 ```
 
@@ -3321,8 +3135,7 @@ const div1 = document.createElement('div');
 const div2 = document.createElement('div');
 const questions = 3;
 const ques = [];
-const timerVal = {cur:0,counter:0,running:false,int:{}};
-
+const timerVal = { cur: 0, counter: 0, running: false, int: {} };
 main.innerHTML = '';
 main.append(div1);
 main.append(btn);
@@ -3331,26 +3144,88 @@ main.append(div2);
 div1.textContent = 0;
 btn.textContent = 'Start';
 btn1.textContent = 'Create Questions';
-
-btn1.onclick = ()=>{
+btn1.onclick = () => {
   btn1.style.display = 'none';
   createQuestions();
-}
-
-function createQuestions(){
-  for(let i=0;i<questions;i++){
-    const first = ranNum(1,5);
-    const sec = ranNum(1,5);
+};
+function createQuestions() {
+  for (let i = 0; i < questions; i++) {
+    const first = ranNum(1, 5);
+    const sec = ranNum(1, 5);
     const que = `${first} + ${sec}`;
     const ans = first + sec;
-    const myObj = {que:que,ans:ans}
+    const myObj = { que: que, ans: ans };
     ques.push(myObj);
   }
 }
+function showQuestion(ind) {
+  div2.innerHTML = '';
+  const ele = document.createElement('div');
+  const ele1 = document.createElement('div');
+  const inEle = document.createElement('input');
+  const ele2 = document.createElement('div');
+  inEle.setAttribute('type', 'number');
+  inEle.style.width = '100px';
+  ele1.style.display = 'inline-block';
+  ele1.textContent = ques[ind].que + ' = ';
+  inEle.addEventListener('keydown', (e) => {
+    if (e.code == 'Enter') {
+      const val1 = inEle.value;
+      let mes = 'wrong';
+      inEle.value = '';
+      if (val1 == ques[ind].ans) {
+        mes = 'correct';
+        setTimeout('movetoNextQuestion()', 500);
+      }
+      ele2.textContent = `${mes} ${ques[ind].que} = ${val1}`;
+    }
+  });
+  ele.append(ele1);
+  ele.append(inEle);
+  ele.append(ele2);
+  div2.append(ele);
+  inEle.focus();
+}
+function movetoNextQuestion() {
+  timerVal.cur++;
+  if (timerVal.cur >= ques.length) {
+    console.log('end');
+    div2.innerHTML = '';
+    ques.forEach((q) => {
+      div2.innerHTML += `<div>${q.que} = ${q.ans}</div>`;
+    });
+    stopTimer();
+  } else {
+    showQuestion(timerVal.cur);
+  }
+}
+function startTimer() {
+  timerVal.running = true;
+  timerVal.int = setInterval('updater()', 1000);
+  btn.textContent = 'Stop';
+}
+function stopTimer() {
+  timerVal.running = false;
+  clearInterval(timerVal.int);
+  btn.textContent = 'Start';
+}
+function ranNum(min, max) {
+  return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+btn.onclick = () => {
+  if (timerVal.running) {
+    stopTimer();
+  } else {
+    startTimer();
+  }
+};
+function updater() {
+  if (timerVal.running) {
+    timerVal.counter++;
+    div1.textContent = timerVal.counter;
+  }
+}
 ```
-
-
-
 
 # 动态交互 DOM 记忆游戏
 
@@ -3381,127 +3256,17 @@ function createQuestions(){
 7. 循环处理放置在网格上的项目总数，添加一个事件监听器 `document.addEventListener('DOMContentLoaded', makeGrid);`，它会在页面加载时被调用。它应该调用函数 `makeGrid()`。
 
 ```javascript
-showQuestion(0);
-
-startTimer();
-
-}
-
-function showQuestion(ind){
-  div2.innerHTML = '';
-  const ele = document.createElement('div');
-  const ele1 = document.createElement('div');
-  const inEle = document.createElement('input');
-  const ele2 = document.createElement('div');
-  inEle.setAttribute('type','number');
-  inEle.style.width = '100px';
-  ele1.style.display = 'inline-block';
-  ele1.textContent = ques[ind].que + ' = ';
-  inEle.addEventListener('keydown',(e)=>{
-    if(e.code == 'Enter'){
-      const val1 = inEle.value;
-      let mes = 'wrong';
-      inEle.value = '';
-      if(val1 == ques[ind].ans){
-        mes = 'correct';
-        setTimeout('movetoNextQuestion()',500);
-      }
-      ele2.textContent = `${mes} ${ques[ind].que} = ${val1}`;
-    }
-  })
-  ele.append(ele1);
-  ele.append(inEle);
-  ele.append(ele2);
-  div2.append(ele);
-  inEle.focus();
-}
-
-function movetoNextQuestion(){
-  timerVal.cur++;
-  if(timerVal.cur >= ques.length){
-    console.log('end');
-    div2.innerHTML = '';
-    ques.forEach((q) =>{
-      div2.innerHTML += `<div>${q.que} = ${q.ans}</div>`;
-    })
-    stopTimer();
-  }else{
-    showQuestion(timerVal.cur);
-  }
-}
-
-function startTimer(){
-  timerVal.running = true;
-  timerVal.int = setInterval('updater()',1000);
-  btn.textContent = 'Stop';
-}
-
-function stopTimer(){
-  timerVal.running = false;
-  clearInterval(timerVal.int);
-  btn.textContent = 'Start';
-}
-
-function ranNum(min,max){
-  return Math.floor(Math.random()*(max-min+1)+min);
-}
-
-btn.onclick = ()=>{
-  if(timerVal.running){
-    stopTimer();
-  }else{
-    startTimer();
-  }
-}
-
-function updater(){
-  if(timerVal.running){
-    timerVal.counter++;
-    div1.textContent =timerVal.counter;
-  }
-}
-```
-
-8. 循环处理放置在网格上的项目总数，添加一个事件监听器 `document.addEventListener('DOMContentLoaded', makeGrid);`，它会在页面加载时被调用。它应该调用函数 `makeGrid()`。
-
-9. 循环处理放置在网格上的项目总数，添加一个事件监听器 `document.addEventListener('DOMContentLoaded', makeGrid);`，它会在页面加载时被调用。它应该调用函数 `makeGrid()`。
-
-10. 循环处理放置在网格上的项目总数，添加一个事件监听器 `document.addEventListener('DOMContentLoaded', makeGrid);`，它会在页面加载时被调用。它应该调用函数 `makeGrid()`。
-
-11. 循环处理放置在网格上的项目总数，添加一个事件监听器 `document.addEventListener('DOMContentLoaded', makeGrid);`，它会在页面加载时被调用。它应该调用函数 `makeGrid()`。
-
-12. 循环处理放置在网格上的项目总数，添加一个事件监听器 `document.addEventListener('DOMContentLoaded', makeGrid);`，它会在页面加载时被调用。它应该调用函数 `makeGrid()`。
-
-13. 循环处理放置在网格上的项目总数，添加一个事件监听器 `document.addEventListener('DOMContentLoaded', makeGrid);`，它会在页面加载时被调用。它应该调用函数 `makeGrid()`。
-
-14. 循环处理放置在网格上的项目总数，添加一个事件监听器 `document.addEventListener('DOMContentLoaded', makeGrid);`，它会在页面加载时被调用。它应该调用函数 `makeGrid()`。
-
-15. 循环处理放置在网格上的项目总数，添加一个事件监听器 `document.addEventListener('DOMContentLoaded', makeGrid);`，它会在页面加载时被调用。它应该调用函数 `makeGrid()`。
-
-16. 循环处理放置在网格上的项目总数，添加一个事件监听器 `document.addEventListener('DOMContentLoaded', makeGrid);`，它会在页面加载时被调用。它应该调用函数 `makeGrid()`。
-
-17. 循环处理放置在网格上的项目总数，添加一个事件监听器 `document.addEventListener('DOMContentLoaded', makeGrid);`，它会在页面加载时被调用。它应该调用函数 `makeGrid()`。
-
-
-
-
-
-```javascript
 total = arr.length * 2 < total ? arr.length * 2 : total;
-
 game.total = total / 2;
-
 document.addEventListener('DOMContentLoaded', makeGrid);
-
 function makeGrid() {
   for (let i = 0; i < total; i++) {
     const el = maker('div', main, '', 'box');
     el.onclick = flipBox;
   }
-  main.style.setProperty(`grid-template-columns`, `repeat(${grid.y},1fr)`);
+  main.style.setProperty(`grid-template-columns`, `repeat(${grid.y}, 1fr)`);
   addBoxes();
 }
-
 function toggleFlip(parent, boo) {
   const bEle = parent.querySelector('.back');
   const fEle = parent.querySelector('.front');
@@ -3513,7 +3278,6 @@ function toggleFlip(parent, boo) {
     fEle.style.display = 'none';
   }
 }
-
 function checkCards() {
   game.pause = true;
   let match = null;
@@ -3541,7 +3305,6 @@ function checkCards() {
     }
   }
 }
-
 function flipback() {
   game.flip.forEach((ele) => {
     toggleFlip(ele, false);
@@ -3550,7 +3313,6 @@ function flipback() {
   game.pause = false;
   game.flip.length = 0;
 }
-
 function flipBox(e) {
   const parent = e.target.parentNode;
   const tempv = parent.classList.contains('active');
@@ -3576,7 +3338,6 @@ function flipBox(e) {
     message.textContent = `Can't Click Right now`;
   }
 }
-
 function addBoxes() {
   let gameItems = total / 2;
   const temp = [];
@@ -3601,7 +3362,6 @@ function addBoxes() {
     back.style.display = 'block';
   });
 }
-
 function maker(eleType, parent, html, cla) {
   const ele = document.createElement('div');
   ele.classList.add(cla);
@@ -3632,887 +3392,14 @@ function maker(eleType, parent, html, cla) {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
     }
-    .game {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-    }
-    .game {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-    }
-    .game {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-    }
-    .game {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-    }
-    .game {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-    }
-    .game {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-    }
-    .game {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-    }
-    .game {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-    }
-    .game {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-    }
-    .game {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-    }
-    .game {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-    }
-    .game {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-    }
-    .game {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-    }
-    .game {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-    }
-    .game {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-    }
-    .game {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-    }
-    .game {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-    }
-    .game {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-    }
-    .game {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-    }
-    .game {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-    }
-    .game {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-    }
-    .game {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-    }
-    .game {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-    }
-    .game {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-    }
-    .game {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-    }
-    .game {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-    }
-    .game {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-    }
-    .game {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-    }
-    .game {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-    }
-    .game {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-    }
-    .game {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-    }
-    .game {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-    }
-    .game {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-    }
-    .game {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-    }
-    .game {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-    }
-    .game {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-    }
-    .game {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-    }
-    .game {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-    }
-    .game {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-    }
-    .game {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-    }
-    .game {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-    }
-    .game {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-    }
-    .game {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-    }
-    .game {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-    }
-    .game {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-    }
-    .game {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-    }
-    .game {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-    }
-    .game {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-    }
-    .game {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-    }
-    .game {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-    }
-    .game {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-    }
-    .game {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-    }
-    .game {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-    }
-    .game {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-    }
-    .game {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-    }
-    .game {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-    }
-    .game {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-    }
-    .game {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-    }
-    .game {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-    }
-    .gameArea {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-    }
-    .game {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-    }
-    .gameArea {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-    }
-    .game {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-    }
-    .gameArea {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-    }
-    .game {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-    }
-    .gameArea {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-    }
-    .game {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-    }
-    .gameArea {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-    }
-    .game {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-    }
-    .gameArea {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-    }
-    .game {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-    }
-    .gameArea {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-    }
-    .game {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-    }
-    .gameArea {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-    }
-    .game {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-    }
-    .gameArea {
-      
-: grid;
-      
--template-columns: repeat
-2, 11);
-    
-
-    .    
-
-
-
-::;
-
-
-
----:::
-
-
- 1
-
-
-
-
-
-
-
-    
-
-
-      
-::;
-      
--template-columns: repeat(2, 1fr);
-    }
-    .game {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-    }
-    .gameArea {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-    }
-    .game {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-    }
-    .gameArea {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-    }
-    .game {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-    }
-    .gameArea {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-    }
-    .game {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-    }
-    .gameArea {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-    }
-    .game {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-    }
-    .gameArea {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-    }
-    .game {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-    }
-    .gameArea {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-    }
-    .game {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-    }
-    .gameArea {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-    }
-    .game {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-    }
-    .gameArea {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-    }
-    .game {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-    }
-    .gameArea {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-    }
-    .game {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-    }
-    .gameArea {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-    }
-    .game {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-    }
-    .gameArea {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-    }
-    .game {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-    }
-    .gameArea {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-    }
-    .game {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-    }
-    .gameArea {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-    }
-    .game {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-    }
-    .gameArea {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-    }
-    .game {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-    }
-    .gameArea {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-    }
-    .game {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-    }
-    .gameArea {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-    }
-    .game {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-    }
-    .gameArea {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-    }
-    .game {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-    }
-    .gameArea {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-    }
-    .game {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-    }
-    .gameArea {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-    }
-    .game {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-    }
-    .gameArea {
-      display: grid;
-      grid-template-columns: repeat(2, 1
-);
-    
-
-    .game {
-      
-:
-;
-            -template-
-:
-:2,
- 
-
-
-
-
-
-    
-.
-
-
-
-      
-
-:
-
-
-}
-      
-      
-      
-      
-      :
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-
-
-
-
-
-
-
-
-
-
-:
-:
-      
--template-columns: repeat(2, 1fr);
-    }
-    .game {
-      
-      : grid;
-      grid-template-columns: repeat(2, 1fr);
-    }
-    .
-
- {
-      
-      
-      
-      
-      :
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      :
-      
-      
-      
-      
-      
-
-      
-      
-      
-      
-
-
-
-
- Exercise
-
-The coding challenge is to create an interactive game which loads several coins and allows the player to select what the coin flip will return. If they are correct the score will increase by one for that player. The code is designed to be dynamic-making it easy to update new players. This exercise is based on two parts: one will create a static number of players, and the second part will update the code to create a dynamic number of coins. You can use JavaScript for styling or use the default HTML and CSS below. The object is to practice and learn more about JavaScript and how JavaScript can be used to create interactive page elements. This exercise will also provide practice in applying game logic to make the desired outcomes within the code using scoring.
-
-## HTML and CSS source code to create the coins and styling for the game area
-
-```html
-<!doctype html>
-<html>
-<head>
-  <title>JavaScript</title>
-  <style>
-    .game {
-      width: 90vw;
-      margin: auto;
-      background-color: black;
-      color: white;
-    }
-    .gameArea {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-    }
-    .game {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-    }
-    .gameArea {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-    }
-    .game {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-    }
-    .gameArea {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-    }
-    .game {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-    }
-    .gameArea {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-    }
-    .game {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-    }
-    .gameArea {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-    }
-    .game {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-    }
-    .gameArea {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-    }
-    .game {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-    }
-    .gameArea {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-    }
-    .game {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-    }
-    .gameArea {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-    }
-    .game {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-    }
-    .gameArea {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-    }
-    .game {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-    }
-    .gameArea {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-    }
-    .game {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-    }
-    .gameArea {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-    }
-    .game {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-    }
-    .gameArea {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-    }
-    .game {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-    }
-    .gameArea {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-    }
-    .game {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-    }
-    .gameArea {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-    }
-    .game {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-    }
-    .gameArea {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-    }
-    .game {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-    }
-    .gameArea {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-    }
-    .game {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-    }
-    .gameArea {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-    }
-    .game {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-    }
-    .gameArea {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-    }
-    .game {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-    }
-    .gameArea {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-    }
-    .game {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-    }
-    .gameArea {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-    }
-    .game {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-    }
-    .gameArea {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-    }
-    .game {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-    }
-    .gameArea {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-    }
-    .game {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-    }
-    .gameArea {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-    }
-    .game {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-    }
-    .gameArea {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-    }
-    .game {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-    }
-    .gameArea {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-    }
-    .game {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-    }
-    .gameArea {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-    }
-    .game {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-    }
-    .gameArea {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-    }
-    .game {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-    }
-    .gameArea {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-    }
-    .game {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-    }
-    .gameArea {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-    }
-    .game {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-    }
-    .gameArea {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-    }
-    .game {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-    }
-    .gameArea {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-    }
-    .game {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-    }
-    .gameArea {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-    }
-    .game {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-    }
-    .gameArea {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-    }
-    .game {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-    }
   </style>
 </head>
 <body>
-  <div class="game"></div>
-  <script src="code10.js"></script>
 </body>
 </html>
 ```
 
-Wait, I should re-translate the whole thing properly.
+
 
 # 动态硬币游戏
 
@@ -4550,141 +3437,24 @@ Wait, I should re-translate the whole thing properly.
 硬币游戏的目标是在页面下方选择硬币翻转的结果。通过代码实现匹配的硬币并得分。
 
 1. 从 HTML 中选择元素。
+
 2. 创建一个 `vals` 数组，包含正面和反面。
+
 3. 创建一个 `game` 的游戏对象，记录玩家的得分和总次数。
+
 4. 在 `gameArea` 中创建玩家 div。为每个玩家设置硬币。
+
 5. 使用名为 `coins` 的数组设置游戏按钮。
+
 6. 为硬币按钮添加点击事件，点击时禁用按钮。通过 `coins` 数组，根据点击结果更新硬币的样式。
+
 7. 使用 `setTimeout` 调用一个名为 `flipper` 的函数。这个超时用于延迟效果，向玩家显示操作。
+
 8. 在 `flipper()` 函数中，将游戏回合计数加 1。遍历 `coins` 数组，生成 0 或 1 的随机值。使用 `innerHTML` 设置正面或反面。将按钮 `disabled` 设置为 `false` 以便可以再次点击。创建一个函数来检查翻转结果。
+
 9. 在 `checker()` 函数中，传入硬币值、按钮的 `val` 以及硬币的 `ind` 值。如果硬币值与对应的按钮值匹配，该玩家将得分。将结果输出到消息区域以便玩家查看。
+
 10. 现在可以再次点击翻币进入下一轮游戏。
-
-[/content]
-
-Wait, the user provided a specific text to translate. The text provided includes the JS block and the Markdown content. I should translate the Markdown parts and keep the JS block as is.
-
-Looking at the prompt's provided text to translate:
-[content]
-```javascript
-... (JS code)
-```
-# Dynamic Coin Flipping
-... (Markdown text)
-[/content]
-
-Wait, the text provided to translate in the prompt is actually the JS code followed by the Markdown. I will translate the Markdown part.
-
-Actually, looking at the "Below is the text to be translated" section:
-It contains a JS block and then Markdown. I will translate the Markdown.
-
-Wait, I see. The prompt asks me to translate the *given text*. The given text is the JS code and the Markdown.
-
-Let's look at the prompt again.
-The text provided to be translated is:
-[content]
-```javascript
-... (JS code)
-```
-# Dynamic Coin Flipping
-... (Markdown text)
-[/content]
-
-Wait, it seems the user might have intended for me to translate the *entire* block provided in the [content] tags at the end.
-
-Let's re-read: "Below is the text to be translated".
-The text is:
-1. A JavaScript code block.
-2. A header `# Dynamic Coin Flipping`.
-3. Several paragraphs of text.
-4. A header `## HTML and CSS source code to create the coins and styling for the game area`.
-5. An HTML code block.
-6. A header `## Exercise`.
-7. A list of instructions.
-
-Wait, looking at the provided text in the prompt's end, it actually looks like a *template* or an example of what the user wants me to translate.
-
-Actually, looking at the prompt's content under "## Here is the text to be translated":
-It starts with a JS code block and then has Markdown.
-I will translate the Markdown parts and leave the code blocks alone.
-
-Wait, looking closely at the text provided at the end of the prompt:
-It actually ends with "Exercise" and a list.
-Wait, I think the user provided the *solution* or the *target* by mistake? No, that lookss the text they want translated.
-
-Let me translate the Markdown part.
-
-# Dynamic Coin Flipping -> # 动态硬币游戏
-
-"The coding challenge is to create an interactive game..." -> 这项编程挑战是创建一个交互游戏，加载几枚硬币并允许玩家选择硬币翻转的结果。如果他们猜对了，该玩家的分数将加一。代码设计是动态的，易于更新新玩家。此练习基于两个部分：第一部分创建一个静态数量的玩家，第二部分更新代码以创建动态数量的硬币。你可以使用 JavaScript 进行样式处理，或使用下面的默认 HTML 和 CSS。The object is to practice and learn more about JavaScript and how JavaScript can be used to create interactive page elements. -> 目标是练习并学习更多关于 JavaScript 以及如何使用 JavaScript 可以创建交互式页面元素。This exercise will also provide practice in applying game logic to make the desired outcomes within the code using scoring. -> 这项练习还将提供应用游戏逻辑的练习，通过评分在代码中实现预期的结果。
-
-## HTML and CSS source code to create the coins and styling for the game area -> ## 用于创建硬币和游戏区域样式的 HTML 和 CSS 源代码
-
-## Exercise -> ## 练习
-
-"The objective of the game is to..." -> 硬币游戏的目标是在页面下方选择硬币翻转的结果...
-
-Wait, the text actually provided in the prompt's `[content]` block at the very end seems to be the *already translated* or a very specific structure. 
-Actually, looking at the very last part of the prompt:
-`[content]
-```javascript
-...
-```
-# Dynamic Coin Flipping
-...
-[/content]`
-
-Wait, the user provided the text they want me to translate. I will translate the English parts to Chinese.
-
-Wait, looking at the text provided in the prompt's end, it's actually in English. I will translate it.
-
-Wait, I just noticed the text provided by the user at the end of the prompt is actually the *result* of a translation or a very detailed description of the task. This is confusing. 
-
-Let's assume the user wants me to translate the content provided in the "Here is the text to be translated" section.
-Actually, I will just translate the text provided in the final `[content]` block.
-
-Wait, I see what happened. The user provided an example and then the text to translate.
-The text to translate is the JS code + the Markdown.
-I will translate the Markdown.
-
-Wait, looking at the text provided at the end of the prompt again:
-It is in English.
-- "Dynamic Coin Flipping"
-- "The coding challenge is to create..."
-- "HTML and CSS source code..."
-- "Exercise"
-- "The objective of the game is to..."
-
-Okay, I will translate this.
-
-Wait, I see the text provided in the prompt's end is actually a *template* or the user is testing me. I will translate the English text.
-
-Actually, looking at the text again, it looks like the user might have pasted the *answer* they wanted? No, it's English.
-
-Wait! I see it. The text provided in the prompt's end is actually the *source* text for me to translate, but it's formatted in Markdown.
-
-Let's perform the translation.
-
-[content]
-```javascript
-// ... (JS code remains as is)
-```
-
-# 动态硬币游戏
-
-这项编程挑战是创建一个交互游戏，加载几枚硬币并允许玩家选择硬币翻转的结果。如果他们猜对了，该玩家的分数将加一。代码设计是动态的，易于更新新玩家。此练习基于两个部分：第一部分创建一个静态数量的玩家，第二部分更新代码以创建动态数量的硬币。你可以使用 JavaScript 进行样式处理，或使用下面的默认 HTML 和 CSS。目标是练习并学习更多关于 JavaScript 以及如何使用 JavaScript 可以创建交互式页面元素。这项练习还将提供应用游戏逻辑的练习，通过评分在代码中实现预期的结果。
-
-## 用于创建硬币和游戏区域样式的 HTML 和 CSS 源代码
-
-```html
-... (HTML code remains as is)
-```
-
-## 练习
-
-硬币游戏的目标是在页面下方选择硬币翻转的结果... (rest of the list)
-
-
 
 ```javascript
 const btn = maker('button', dashboard, 'btn', 'Flip Coin');
@@ -4775,18 +3545,25 @@ function  checker(coinVal, btnVal, ind) {
 ### 练习题：
 
 1. 创建一个玩家数量的变量，这将生成相应数量的硬币，每枚硬币都带有一个可点击的按钮，用于选择正面或反面。
+
 2. 更新 CSS 网格和样式，以适应屏幕上更多的硬币。清空 `coins` 和 `btns` 数组。
+
 3. 创建一个函数，通过循环选定的玩家数量来创建玩家。
+
 4. 创建玩家元素，并在每个中添加一个硬币和一个按钮。将硬币和 `btn` 的值设置为相应的元素。
+
 5. 更新样式属性并将新元素推入 `coins` 和 `btns` 数组中。
+
 6. 添加一个点击事件来运行 `flipselection` 函数。
+
 7. 更新 `checker` 函数，为所有硬币玩家生成并检查报告。
+
 8. 玩游戏并根据需要进行调试，以确保游戏运行仍然如以前一样正常。在需要时使用 `console.log` 输出变化的值。
 
 ```javascript
 const main = document.querySelector('.game');
 
-const vals = ['��','��'];
+const vals = ['🦅','🦅'];
 
 const numPlayers = 9;
 
@@ -4813,7 +3590,7 @@ const btn = maker('button',dashboard,'btn','Flip Coin');
 function  makerPlayers(){
  for(let i=0;i<numPlayers;i++){
  const player = maker('div',gameArea,'gamer',`Coin ${i+1}`);
- const coin = maker('div',player,'coin','��');
+ const coin = maker('div',player,'coin','🦅');
       coin.val = 1;
       coins.push(coin);
 
@@ -4882,9 +3659,6 @@ function  checker(coinVal, btnVal, ind) {
 }
 ```
 
-
-
-
 ```javascript
 b(...arr);
 ```
@@ -4907,7 +3681,7 @@ console.log(Math.max(arr));
 
 ```html
 <!doctype html>
-<html
+<html>
 <head>
  <title>JavaScript</title>
  <style>
@@ -4953,7 +3727,7 @@ margin-bottom: 20px;
  </style>
 </head>
 <body>
- <div class="game"></</div>>
+ <div class="game"></div>
  <script src="code11.js"></script>
 </body>
 </html>
@@ -4989,25 +3763,38 @@ return Math.random() - 0.5;
 ## 练习：
 
 1. 创建一个函数，可以通过元素标签、父元素、元素内容和元素类参数来创建页面元素。现在可以用来在代码中快速创建元素了。
+
 2. 设置游戏板，包括游戏区域元素、用于游戏的按钮以及用于游戏向玩家传递信息的消息区域。
+
 3. 创建一个全局游戏对象，用于存储玩家人数、每个玩家的牌组，以及玩家在游戏过程中所需的视觉元素数组（卡牌视图和得分反馈）。
+
 4. 创建一个包含卡牌详情的数据数组，包括主牌组所需的所有花色和数值。如果你使用了花色的 HTML 字符值，则可以在应用程序输出视觉效果时重复使用它们（`&spades;` `&hearts;` `&diams;` `&clubs;`）。
+
 5. 创建一个主牌组数组并用牌组数据填充。创建一个用于构建牌组的函数 `buildDeck()`。
+
 6. 在 `buildDeck()` 函数中，遍历所有卡牌数据，循环遍历花色以及卡牌数值，以构建一副标准的 52 张牌。创建一个包含数据的卡牌对象，然后可以用它输出卡牌的视觉效果并计算卡牌值。
+
 7. 在牌组构建后进行洗牌，你可以使用数组排序方法 `deck.sort(() => {return Math.random() - 0.5;})`。
+
 8. 将玩家添加到游戏中。创建一个用于添加玩家的函数 `addPlayers()`。
+
 9. 在 `addPlayers()` 函数中，计算每个玩家从主牌组中获得的牌数。
+
 10. 使用 `for` 循环遍历每个玩家并将其添加到页面上，同时添加玩家数据（包括该玩家的牌组）。添加页面元素、玩家信息、卡牌显示区域、得分以及回合反馈。将这些元素添加到 `game` 中。
+
 11. 在 `addPlayers()` 函数中，遍历每个玩家并将其添加到页面上，同时添加玩家数据（包括该玩家的牌组）。
+
 12. 在 `addPlayers()` 函数中，遍历每个玩家并将其添加到页面上，同时添加玩家数据（包括该玩家的牌组）。
+
 13. 在 `addPlayers()` 函数中，遍历每个玩家并将其添加到页面上，同时添加玩家数据（包括该玩家的牌组）。
+
 14. 在 `addPlayers()` 函数中，遍历每个玩家并将其添加到页面上，同时添加玩家数据（包括该玩家的牌组）。
+
 15. 在 `addPlayers()` 函数中，遍历每个玩家并将其添加到页面上，同时添加玩家数据（包括该玩家的牌组）。
+
 16. 在 `addPlayers()` 函数中，遍历每个玩家并将其添加到页面上，同时添加玩家数据（包括该玩家的牌组）。
+
 17. 在 `addPlayers()` 函数中，遍历每个玩家并将其添加到页面上，同时添加玩家数据（包括该玩家的牌组）。
-
-
-
 
 ```javascript
 addPlayers();
@@ -5115,7 +3902,7 @@ function buildDeck() {
       const bgC = (suit == 'hearts') || (suit == 'diams') ? 'red' : 'black';
       const card = {
         suit: suit,
-        icon: `&suit};`,
+        icon: `&${suit};`,
         clr: bgC,
         cardNum: v,
         cardValue: ind + 1
@@ -5153,14 +3940,14 @@ function maker(par, eleType, cla, html) {
 ### 页面元素事件与样式练习：
 
 1. 使用 JavaScript 在页面上创建两个按钮。
+
 2. 为第一个按钮添加点击事件，按下时应列出存储数组中所有存储的颜色值。按下时，创建具有存储数组中颜色值且是可点击的页面元素。一旦点击，该元素应从页面上被移除。
+
 3. 第二个按钮应将输入框中的颜色值存储到存储数组中。
+
 4. 第二个按钮还应创建一个页面元素按钮，其文本内容为输入框颜色值的值。
+
 5. 当输入值改变时，更新背景颜色以匹配输入值。
-
-
-
-
 
 在轮播图中显示的内容并不包含在 JavaScript 文件中。此示例将帮助演示如何分离数据，从而可以在不更新代码的情况下进行更新。代码中的代码逻辑应该独立于数据运行。更改 JSON 文件数据将改变 HTML 网页上的输出，而不会破坏 JavaScript 代码。JSON 文件数据具有四个属性（`"title": "slide 1", "html": "<h1>Laurence</h1>", "back": "purple", "color": "white"`），添加或删除属性将需要更新 JavaScript 代码。数组中的 JSON 数据项应都具有相同的属性名称和值；JSON 内部结构非常重要，以便能够正确使用 JSON 数据包含的内容。
 
@@ -5169,19 +3956,26 @@ function maker(par, eleType, cla, html) {
 # JSON 幻灯片：使用 JavaScript 导航练习
 
 1. 在 JavaScript 中将主滑器元素选择为名为 `slider` 的变量。
+
 2. 创建一个在 DOM 内容加载后被调用的函数。将函数命名为 `adder()`。
+
 3. 在 `adder()` 中，使用来自 JSON 文件的数据创建幻灯片，为幻灯片元素应用文本标题、`html` 内容和样式。将它们添加到页面。
+
 4. 如果是数据中的第一项，则仅为第一个项添加 `active` 类。
+
 5. 为按钮添加事件监听器，点击点击时检查它是否包含 `next` 类，创建一个名为 `mover()` 的函数来处理结果。
+
 6. 获取带有 `active` 类的当前元素。通过遍历获取当前元素的下一个兄弟元素，如果不存在下一个元素，则选择父元素 `slider` 的第一个子元素。
+
 7. 获取上一个元素，如果为 `null` 则选择父元素 `slider` 的最后一个子元素。
+
 8. 移除当前元素的 `active` 类，为新元素（上一个或下一个）添加 `active` 类。
 
 ## HTML 和 CSS
 
 ```html
 <!DOCTYPE html>
-<html
+<html>
 <head>
  <title>JavaScript Course</title>
  <style>
@@ -5236,8 +4030,8 @@ function maker(par, eleType, cla, html) {
   <div>
    <div class="slider">
    </div>
-   <div class="prev btn">< Prev</</div>
-   <div class="next btn">Next ></</div>
+   <div class="prev btn">< Prev</div>
+   <div class="next btn">Next ></div>
   </div>
 </div>
  <script src="app5.js"></script>
@@ -5327,6 +4121,7 @@ function adder(data){
 ### AJAX 请求示例
 
 1. 创建按钮以发送请求。在页面上设置一个元素来显示输出。
+
 2. 点击第一个按钮时，连接到 json 文件并使用 fetch 返回内容。将文件的结果输出到页面。
 
 ### 以下是 JavaScript 代码：
@@ -5375,10 +4170,6 @@ function adder(data){
 }
 ```
 
-
-
-
-
 ```javascript
 Promise.all(urls.map(url =>
     fetch(url).then(res => res.json())
@@ -5424,6 +4215,7 @@ async function  fetchData() {
 ```
 
 ### JSON #1
+
 ```json
 {
  "first" : "Laurence",
@@ -5432,6 +4224,7 @@ async function  fetchData() {
 ```
 
 ### JSON #2
+
 ```json
 {
  "first" : "Jack",
@@ -5440,6 +4233,7 @@ async function  fetchData() {
 ```
 
 ### JSON #3
+
 ```json
 {
  "first" : "Kim",
@@ -5462,6 +4256,7 @@ async function  fetchData() {
 ### 设置页面元素移动并跟踪位置的练习：
 
 1. 创建一个允许创建页面元素的函数，这样我们就可以根据需要动态向页面添加元素。给函数命名为 `adder()` 以获取新元素将要追加的父元素。使用元素标签的字符串值创建元素。为元素添加内部 HTML 内容，并使用字符串值添加类。
+
 ```javascript
 function adder(parent,t,html,c){ const ele = document.createElement(t);  ele.innerHTML = html;    ele.classList.add(c);  return parent.appendChild(ele); }
 ```
@@ -5524,10 +4319,6 @@ const keyz = {   ArrowLeft:false, ArrowRight:false, ArrowUp:false, ArrowDown:fal
 </html>
 ```
 
-
-
-
-
 页面元素是可以移动的；通过这个对 DOM 页面元素的实时检测器，可以帮助你更直观地看到碰撞检测公式的运行效果。此练习还将演示如何使用 `getBoundingClientRect()` 方法在检测函数内部获取元素的边界和尺寸，从而简化碰撞检测。使用 `getBoundingClientRect()` 方法可以消除在对象中跟踪元素位置的需要，并在需要时返回所需的 `X`、`Y`、`height`、`width` 值。使用之前相同的重叠公式并放置元素返回的对象值，可以提供一个用于任何元素碰撞检测的快速检查函数。在函数参数中，只需要元素对象，这些对象也可以通过选择或从预定义的元素变量中使用。
 
 ![](img/image00485.jpeg)
@@ -5543,20 +4334,27 @@ const keyz = {   ArrowLeft:false, ArrowRight:false, ArrowUp:false, ArrowDown:fal
 ![](img/image00487.jpeg)
 
 ### X-水平检测公式
+
 ```
 (a.x < (b.x + b.width)) && ((a.x + a.width) > b.x);
 ```
 
 ### y-垂直检测公式
+
 ```
 (a.y < (b.y+b.height)) && ((a.y + a.height) > b.y);
 ```
 
 ### 检查元素重叠移动练习：
+
 1. 创建移动输出区域以显示元素的当前状态和碰撞值。如果发生重叠，则更新元素的样式。
+
 2. 在中心创建一个新元素，用于碰撞检查函数。
+
 3. 创建一个需要两个参数的新函数，每个参数对应一个待检查的元素。获取元素的边界。
+
 4. 创建函数 `col()`，它可以检查边界并在两个元素重叠时返回一个布尔值。使用此公式检查屏幕上不同框之间的元素重叠。
+
 5. 根据碰撞检测的结果更新元素样式和输出信息样式。
 
 ```html
@@ -5618,11 +4416,17 @@ const keyz = {   ArrowLeft:false, ArrowRight:false, ArrowUp:false, ArrowDown:fal
  </style>
 </head>
 <body>
- <div  class="container"></</div>
+ <div  class="container"></div>
  <script  src="app8.js"></script>
 </body>
 </html>
 ```
+
+
+
+# JavaScript 游戏开发教程
+
+## 基础交互元素创建
 
 ```javascript
 const main = document.querySelector('.container');
@@ -5636,7 +4440,7 @@ const output6 = adder(message, 'div', 'Content 6', 'output1');
 const output7 = adder(message, 'div', 'Content 7', 'output2');
 const output8 = adder(message, 'div', 'Content 8', 'output1');
 const gameBoard = adder(main, 'div', '', 'game');
-const box3 = adder(gameBoard,'div','AVOID','blocker');
+const box3 = adder(gameBoard, 'div', 'AVOID', 'blocker');
 const box1 = adder(gameBoard, 'div', 'Box 1', 'box');
 box1.style.backgroundColor = 'red';
 output1.style.backgroundColor = 'red';
@@ -5645,94 +4449,91 @@ box2.style.backgroundColor = 'blue';
 output2.style.backgroundColor = 'blue';
 box2.style.left = '100px';
 const game = {
- x1: box1.offsetLeft,
- y1: box1.offsetTop,
- x2: box2.offsetLeft,
- y2: box2.offsetTop,
- speed: 5,
- w1: box1.offsetWidth,
- h1: box1.offsetHeight,
- w2: box2.offsetWidth,
- h2: box2.offsetHeight
+  x1: box1.offsetLeft,
+  y1: box1.offsetTop,
+  x2: box2.offsetLeft,
+  y2: box2.offsetTop,
+  speed: 5,
+  w1: box1.offsetWidth,
+  h1: box1.offsetHeight,
+  w2: box2.offsetWidth,
+  h2: box2.offsetHeight
 };
 const keyz = {
- ArrowLeft: false,
- ArrowRight: false,
- ArrowUp: false,
- ArrowDown: false,
- KeyA: false,
- KeyS: false,
- KeyZ: false,
+  ArrowLeft: false,
+  ArrowRight: false,
+  ArrowUp: false,
+  ArrowDown: false,
+  KeyA: false,
+  KeyS: false,
+  KeyZ: false,
 };
 document.addEventListener('keydown', (e) => {
- if (e.code in keyz) {
-  keyz[e.code] = true;
- }
+  if (e.code in keyz) {
+    keyz[e.code] = true;
+  }
 });
 document.addEventListener('keyup', (e) => {
- if (e.code in keyz) {
-  keyz[e.code] = false;
- }
+  if (e.code in keyz) {
+    keyz[e.code] = false;
+  }
 });
-window.addEventListener('DOMContentLoaded', mover)
+window.addEventListener('DOMContentLoaded', mover);
 
 function mover() {
- const dim = [gameBoard.offsetWidth, gameBoard.offsetHeight];
- // Box 1
- if (keyz.ArrowRight && game.x1 < dim[0]) game.x1 += game.speed;
- if (keyz.ArrowLeft && game.x1 > 0) game.x1 -= game.speed;
- if (keyz.ArrowDown && game.y1 < dim[1]) game.y1 += game.speed;
- if (keyz.ArrowUp && game.y1 > 0) game.y1 -= game.speed;
- box1.style.left = game.x1 + 'px';
- box1.style.top = game.y1 + 'px';
- // Box 2
- if (keyz.KeyS && game.x2 < dim[0]) game.x2 += game.speed;
- if (keyz.KeyA && game.x2 > 0) game.x2 -= game.speed;
- if (keyz.KeyZ && game.y2 < dim[1]) game.y2 += game.speed;
- if (keyz.KeyW && game.y2 > 0) game.y2 -= game.speed;
- box2.style.left = game.x2 + 'px';
- box2.style.top = game.y2 + 'px';
- output1.innerHTML = `Box #1 X:${game.x1} Y:${game.y1} W:${game.w1} H:${game.h1}`;
- output2.innerHTML = `Box #2 X:${game.x2} Y:${game.y2} W:${game.w2} H:${game.h2}`;
- const o3 = game.x1 < (game.x2 + game.w2) && (game.x1 + game.w1) > game.x2;
- const o4 = game.y1 < (game.y2 + game.h2) && (game.y1 + game.h1) > game.y2;
- output3.style.color = (o3 ? 'green' : 'black');
- output4.style.color = (o3 ? 'green' : 'black');
- output5.style.color = (o4 ? 'green' : 'black');
- output6.style.color = (o4 ? 'green' : 'black');
- output3.innerHTML = `H ${o3}: (${game.x1} < ${game.x2 + game.w2}) && ((game.x1 + game.w1) > game.x2)`;
- output4.innerHTML = `H ${o3}: (${game.x1} < ${game.x2 + game.w2}) && ((game.x1 + game.w1) > game.x2)`;
- output5.innerHTML = `V ${o4}:${game.y1} < (${game.y2 + game.h2}) && ((game.y1 + game.h1) > game.y2})`;
- output6.innerHTML = `V ${o4}: ${game.y1} < (${game.y2 + game.h2}) && (${game.y1 + game.h1}) > game.y2}`;
- const val1 = col(box1, box2);
- output7.style.color = val1 ? 'red' : 'black';
- output7.innerHTML = `HIT ${val1}`;
- const val2 = col(box1, box3);
- const val3 = col(box2, box3);
- box3.style.backgroundColor = val2 ? 'red' : '';
- if (!val2) {
-  box3.style.backgroundColor = val3 ? 'blue' : '';
- }
- output8.innerHTML = `Center Box1 ${val2} Box2 ${val3}`;
+  const dim = [gameBoard.offsetWidth, gameBoard.offsetHeight];
+  // Box 1
+  if (keyz.ArrowRight && game.x1 < dim[0]) game.x1 += game.speed;
+  if (keyz.ArrowLeft && game.x1 > 0) game.x1 -= game.speed;
+  if (keyz.ArrowDown && game.y1 < dim[1]) game.y1 += game.speed;
+  if (keyz.ArrowUp && game.y1 > 0) game.y1 -= game.speed;
+  box1.style.left = game.x1 + 'px';
+  box1.style.top = game.y1 + 'px';
+  // Box 2
+  if (keyz.KeyS && game.x2 < dim[0]) game.x2 += game.speed;
+  if (keyz.KeyA && game.x2 > 0) game.x2 -= game.speed;
+  if (keyz.KeyZ && game.y2 < dim[1]) game.y2 += game.speed;
+  if (keyz.KeyW && game.y2 > 0) game.y2 -= game.speed;
+  box2.style.left = game.x2 + 'px';
+  box2.style.top = game.y2 + 'px';
+  output1.innerHTML = `Box #1 X:${game.x1} Y:${game.y1} W:${game.w1} H:${game.h1}`;
+  output2.innerHTML = `Box #2 X:${game.x2} Y:${game.y2} W:${game.w2} H:${game.h2}`;
+  const o3 = game.x1 < (game.x2 + game.w2) && (game.x1 + game.w1) > game.x2;
+  const o4 = game.y1 < (game.y2 + game.h2) && (game.y1 + game.h1) > game.y2;
+  output3.style.color = (o3 ? 'green' : 'black');
+  output4.style.color = (o3 ? 'green' : 'black');
+  output5.style.color = (o4 ? 'green' : 'black');
+  output6.style.color = (o4 ? 'green' : 'black');
+  output3.innerHTML = `H ${o3}: (${game.x1} < ${game.x2 + game.w2}) && ((game.x1 + game.w1) > game.x2)`;
+  output4.innerHTML = `H ${o3}: (${game.x1} < ${game.x2 + game.w2}) && ((game.x1 + game.w1) > game.x2)`;
+  output5.innerHTML = `V ${o4}:${game.y1} < (${game.y2 + game.h2}) && ((game.y1 + game.h1) > game.y2})`;
+  output6.innerHTML = `V ${o4}: ${game.y1} < (${game.y2 + game.h2}) && (${game.y1 + game.h1}) > game.y2}`;
+  const val1 = col(box1, box2);
+  output7.style.color = val1 ? 'red' : 'black';
+  output7.innerHTML = `HIT ${val1}`;
+  const val2 = col(box1, box3);
+  const val3 = col(box2, box3);
+  box3.style.backgroundColor = val2 ? 'red' : '';
+  if (!val2) {
+    box3.style.backgroundColor = val3 ? 'blue' : '';
+  }
+  output8.innerHTML = `Center Box1 ${val2} Box2 ${val3}`;
 }
 
 function col(el1, el2) {
- const a = el1.getBoundingClientRect();
- const b = el2.getBoundingClientRect();
- //console.log(a);
- return (a.x < (b.x + b.width)) && ((a.x + a.width) > b.x) && (a.y < (b.y+b.height)) && ((a.y + a.height) > b.y);
+  const a = el1.getBoundingClientRect();
+  const b = el2.getBoundingClientRect();
+  //console.log(a);
+  return (a.x < (b.x + b.width)) && ((a.x + a.width) > b.x) && (a.y < (b.y + b.height)) && ((a.y + a.height) > b.y);
 }
 
 function adder(parent, t, html, c) {
- const ele = document.createElement(t);
+  const ele = document.createElement(t);
   ele.innerHTML = html;
   ele.classList.add(c);
- return parent.appendChild(ele);
+  return parent.appendChild(ele);
 }
 ```
-
-
-
 
 游戏的目标是在元素掉落时点击它们，尝试让它们落在移动的平台上以得分。第一节课是设置基础游戏板，以及与元素和移动的简单交互。此练习将演示如何创建元素、如何通过更新样式值来移动元素，以及如何创建响应用户交互的交互元素。
 
@@ -5740,12 +4541,12 @@ function adder(parent, t, html, c) {
 
 使用 `requestAnimationFrame()` 方法创建页面上元素之间的平滑移动。
 
-### 创建移动的基础交互式元素练习：
+### 创建移动的基础交互式元素练习
 
 1. 创建一个可以设置新页面元素的函数。使用父元素作为参数，新元素将被添加到该元素中。元素标签类型的字符串名称。元素的内部 HTML 内容，以及添加到新创建元素中的类名。
 
 ```javascript
-function maker(parent,t,html,c){
+function maker(parent, t, html, c) {
   const ele = document.createElement(t);
   ele.innerHTML = html;
   ele.classList.add(c);
@@ -5761,123 +4562,127 @@ function maker(parent,t,html,c){
 
 5. 当元素框被点击时，为元素添加 `active` 类。
 
-6. 创建一个新函数来处理元素的动画。该函数应在点击“开始游戏”时被调用，并在内部运行 `requestAnimationFrame()` 调用该函数。
+6. 创建一个新函数来处理元素的动画。该函数应在点击"开始游戏"时被调用，并在内部运行 `requestAnimationFrame()` 调用该函数。
 
 7. 在 `mover()` 函数中，获取所有激活的元素，获取元素的 `offsetTop` 值，并将其增加游戏速度值。将新的 `top` 样式位置值应用到元素上使其移动。
 
 8. 添加一个条件，当元素到达游戏容器底部时，通过移除元素的 `active` 类来停止其移动。
 
 ```html
-<!DOCTYPE  html>
+<!DOCTYPE html>
 <html>
 <head>
- <title>JavaScript Course</title>
- <style>
- * {
-box-sizing: border-box;
-}
- .container {
-position: relative;
-width: 90vw;
-margin: auto;
-background-color: #ddd;
-min-height: 400px;
-text-align: center;
-overflow: hidden;
-}
- .message {
-padding: 10px;
-background-color: white;
-}
- .btn {
-min-width: 50%;
-height: 40px;
-font-size: 1.4em;
-border-radius: 10px;
-}
- .box {
-position: absolute;
-left: 0;
-top: 0;
-height: 50px;
-width: 50px;
-line-height: 30px;
-text-align: center;
-border: 1px solid white;
-font-size: 1.5em;
-color: white;
-opacity: 0.5;
-}
- .box:hover {
-cursor: pointer;
-border-color: red;
-}
- .active {
-border-color: black;
-opacity: 1;
-}
- </style>
+  <title>JavaScript Course</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    .container {
+      position: relative;
+      width: 90vw;
+      margin: auto;
+      background-color: #ddd;
+      min-height: 400px;
+      text-align: center;
+      overflow: hidden;
+    }
+    .message {
+      padding: 10px;
+      background-color: white;
+    }
+    .btn {
+      min-width: 50%;
+      height: 40px;
+      font-size: 1.4em;
+      border-radius: 10px;
+    }
+    .box {
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 50px;
+      width: 50px;
+      line-height: 30px;
+      text-align: center;
+      border: 1px solid white;
+      font-size: 1.5em;
+      color: white;
+      opacity: 0.5;
+    }
+    .box:hover {
+      cursor: pointer;
+      border-color: red;
+    }
+    .active {
+      border-color: black;
+      opacity: 1;
+    }
+  </style>
 </head>
 <body>
- <div  class="container">
-</</div>
- <script  src="app7.js"></script>
+  <div class="container"></div>
+  <script src="app7.js"></script>
 </body>
 </html>
 ```
 
 ```javascript
 const main = document.querySelector('.container');
-const message = maker(main,'div','Click Start Button','message');
-const btn1 = maker(main,'button','Start Game','btn');
+const message = maker(main, 'div', 'Click Start Button', 'message');
+const btn1 = maker(main, 'button', 'Start Game', 'btn');
 console.log(message);
-const game = {box:[],num:15,ani:{},speed:1};
+const game = {box: [], num: 15, ani: {}, speed: 1};
 
 btn1.onclick = startGame;
 
-window.addEventListener('DOMContentLoaded',init);
+window.addEventListener('DOMContentLoaded', init);
 
-function  init(){
- for(let i=0;i<game.num;i++){
-const ele = maker(main,'div',i+1,'box');
-      ele.style.backgroundColor = '#'+Math.random().toString(16).slice(2,8);
-      ele.onclick = dropper;
+function init() {
+  for (let i = 0; i < game.num; i++) {
+    const ele = maker(main, 'div', i + 1, 'box');
+    ele.style.backgroundColor = '#' + Math.random().toString(16).slice(2, 8);
+    ele.onclick = dropper;
+  }
 }
-}
-function  mover(){
-const actives = document.querySelectorAll('.active');
-  actives.forEach((ele)=>{
-      console.log(ele.offsetTop);
-let y = ele.offsetTop + game.speed;
-if(y > 400){
-          ele.classList.remove('active');
-      }
-      ele.style.top = y + 'px';
+
+function mover() {
+  const actives = document.querySelectorAll('.active');
+  actives.forEach((ele) => {
+    console.log(ele.offsetTop);
+    let y = ele.offsetTop + game.speed;
+    if (y > 400) {
+      ele.classList.remove('active');
+    }
+    ele.style.top = y + 'px';
   })
   game.ani = requestAnimationFrame(mover);
 }
-function  dropper(e){
+
+function dropper(e) {
   console.log(this);
-this.classList.add('active');
+  this.classList.add('active');
 }
-function  startGame(){
+
+function startGame() {
   btn1.style.display = 'none';
   message.textContent = 'Game';
   mover();
 }
-function  maker(parent,t,html,c){
-const ele = document.createElement(t);
+
+function maker(parent, t, html, c) {
+  const ele = document.createElement(t);
   ele.innerHTML = html;
   ele.classList.add(c);
-return parent.appendChild(ele);
+  return parent.appendChild(ele);
 }
 ```
 
-### 元素移动与碰撞
+## 元素移动与碰撞
 
 使用 `requestAnimationFrame()` 处理掉落元素的动画。框的位置根据其 `offsetTop` 和 `game.speed` 进行更新。如果框到达容器底部，则移除 `active` 类。
 
 碰撞检测通过检查框是否与挡板重叠来实现。逻辑检查以下内容：
+
 - 水平重叠：`o1.x < o2.x + o2.w` 和 `o1.x + o1.w > o2.x`
 - 垂直重叠：`o1.y < o2.y + o2.h` 和 `o1.y + o1.h > o2.y`
 
@@ -5887,11 +4692,7 @@ return parent.appendChild(ele);
 ![Chart](img/image0489.jpeg)
 ![Chart](img/image0490.jpeg)
 
-
-
-
-
-# JavaScript 课程
+## 完整游戏实现
 
 ```html
 <!DOCTYPE html>
@@ -6032,7 +4833,7 @@ function mover() {
         btn1.style.display = 'block';
         btn1.textContent = '重新开始';
         message.style.color = 'black';
-        message.innerHTML += '<<div>游戏结束</div>';
+        message.innerHTML += '<div>游戏结束</div>';
       }
     }
   })
@@ -6055,9 +4856,11 @@ function dropper(e) {
 
 function startGame() {
   game.play = true;
+  game.score = 0;
+  init();
   btn1.style.display = 'none';
   gameboard.style.display = 'block';
-  message.textContent = '游戏进行中';
+  message.textContent = 'Click the boxes Hit the paddle.';
   mover();
 }
 
@@ -6069,33 +4872,6 @@ function maker(parent, t, html, c) {
 }
 ```
 
-
-
-
-
-```javascript
-this.classList.add('active');
-
-}
-
-function startGame() {
-  game.play = true;
-  game.score = 0;
-  init();
-  btn1.style.display = 'none';
-  gameboard.style.display = 'block';
-  message.textContent = 'Click the boxes Hit the paddle.';
-  mover();
-}
-
-function maker(parent, t, html, c) {
- const ele = document.createElement(t);
-  ele.innerHTML = html;
-  ele.classList.add(c);
- return parent.appendChild(ele);
-}
-```
-
 请注意，学习最好的方法之一是在自己的账户中尝试这些代码。`Project Source Code` 位于 GitHub 上的 [`github.com/lsvekis/javascript`](https://github.com/lsvekis/javascript)。
 
 欲需了解更多关于 Apps Script 以及通过视频和资源进行编程，请访问 [`basescripts.com/`](https://basescripts.com/)。
@@ -6103,4 +4879,3 @@ function maker(parent, t, html, c) {
 感谢您的支持！
 
 特别感谢 Sebastian 和 Alexis
-

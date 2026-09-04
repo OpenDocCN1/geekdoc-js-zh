@@ -1,3 +1,4 @@
+
 # 十四、数据库
 
 ## MongoDB
@@ -13,7 +14,6 @@
 ##### 安装
 
 *   如果你的计算机中还没有 [MongoDB](http://www.mongodb.org/display/DOCS/Quickstart) ，需要安装。
-
 *   [安装本地 MongoDB 模块](https://github.com/christkv/node-mongodb-native)。
 
 ##### 保存记录
@@ -65,7 +65,7 @@ client.open (err, database) ->
 
 ### 讨论
 
-这个方法将 save 和 find 分开进单独的实例，其目的是分散 MongoDB 指定的连接任务的关注点以及回收任务。[async 模块](https://github.com/caolan/async)可以帮助这样的异步调用。
+这个方法将`save`和`find`分开进单独的实例，其目的是分散 MongoDB 指定的连接任务的关注点以及回收任务。[async 模块](https://github.com/caolan/async)可以帮助这样的异步调用。
 
 ## SQLite
 

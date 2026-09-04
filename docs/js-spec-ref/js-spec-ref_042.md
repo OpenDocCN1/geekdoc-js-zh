@@ -1,21 +1,5 @@
-# 6.3 window 对象
 
-*   概述
-*   window 对象的属性
-    *   window.name 属性
-    *   window.innerHeight 属性，window.innerWidth 属性
-    *   window.pageXOffset 属性，window.pageYOffset 属性
-    *   iframe 元素
-    *   Navigator 对象
-    *   screen 对象
-    *   window 对象的方法
-        *   URL 的编码/解码方法
-        *   window.getComputedStyle 方法
-        *   window.matchMedia 方法
-    *   window 对象的事件
-        *   window.onerror
-    *   alert()，prompt()，confirm()
-    *   参考链接
+# 6.3 window 对象
 
 ## 概述
 
@@ -74,7 +58,7 @@ iframe 元素遵守同源政策，只有当父页面与框架页面来自同一�
 
 Window 对象的 Navigator 属性，指向一个包含浏览器相关信息的对象。
 
-（1）Navigator.userAgent 属性
+#### Navigator.userAgent 属性
 
 Navigator.userAgent 属性返回浏览器的 User-Agent 字符串，用来标示浏览器的种类。下面是 Chrome 浏览器的 User-Agent。
 
@@ -103,7 +87,7 @@ if (/mobi/i.test(ua)) {
 /mobi|android|touch|mini/i.test(ua)
 ```
 
-（2）navigator.plugins 属性
+#### navigator.plugins 属性
 
 navigator.plugins 属性返回一个类似数组的对象，成员是浏览器安装的插件，比如 Flash、ActiveX 等。
 

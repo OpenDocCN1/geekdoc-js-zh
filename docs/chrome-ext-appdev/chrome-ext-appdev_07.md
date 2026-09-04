@@ -1,3 +1,5 @@
+
+
 # 第四章　管理你的浏览器
 
 前面介绍了 Chrome 扩展基础和 UI 界面，接下来我们来讲一讲有关管理浏览器的相关内容。本章将涉及到书签、Cookies、历史记录、扩展管理和标签有关的内容，通过本章的内容，你将能够创建功能更加强大的扩展。
@@ -14,7 +16,7 @@
 
 Chrome 为开发者提供了添加、分类（书签文件夹）和排序等方法来操作书签，同时也提供了读取书签的方法。
 
-要在扩展中操作书签，需要在 Manifest 中声明 bookmarks 权限：
+要在扩展中操作书签，需要在 Manifest 中声明`bookmarks`权限：
 
 ```js
 "permissions": [
@@ -52,7 +54,7 @@ chrome.bookmarks.move('16', {
 }); 
 ```
 
-更新书签。通过 update 方法可以更改书签属性，包括标题和 URL，更新时未指定的属性值将不会更改。下面的代码将将`id`为`'16'`的书签标题改为`'Gmail'`，URL 改为`'https://mail.google.com/'`：
+更新书签。通过`update`方法可以更改书签属性，包括标题和 URL，更新时未指定的属性值将不会更改。下面的代码将将`id`为`'16'`的书签标题改为`'Gmail'`，URL 改为`'https://mail.google.com/'`：
 
 ```js
 chrome.bookmarks.update('16', {
@@ -177,7 +179,7 @@ chrome.bookmarks.onChildrenReordered.addListener(function(id, reorderInfo){
 }); 
 ```
 
-`reorderInfo`是包含顺序更改后子节点 id 的数组。
+`reorderInfo`是包含顺序更改后子节点`id`的数组。
 
 `onImportBegan`和`onImportEnded`事件分别用以监控导入书签开始和结束的行为：
 
@@ -219,7 +221,7 @@ Cookies 是浏览器记录在本地的用户数据，如用户的登录信息。
 
 请注意，除非必要，否则请不要如此声明权限，这会提示此扩展可以访问所有网络资源，给用户带来不安。
 
-Chrome 定义的`Cookie`对象包含如下属性：`name`（名称）、`value`（值）、`domain`（域）、`hostOnly`（是否只允许完全匹配 domain 的请求访问）、`path`（路径）、`secure`（是否只允许安全连接调用）、`httpOnly`（是否禁止客户端调用）、`session`（是否是 session cookie）、`expirationDate`（过期时间）和`storeId`（包含此 cookie 的 cookie store 的 id）。
+Chrome 定义的`Cookie`对象包含如下属性：`name`（名称）、`value`（值）、`domain`（域）、`hostOnly`（是否只允许完全匹配`domain`的请求访问）、`path`（路径）、`secure`（是否只允许安全连接调用）、`httpOnly`（是否禁止客户端调用）、`session`（是否是 session cookie）、`expirationDate`（过期时间）和`storeId`（包含此 cookie 的 cookie store 的`id`）。
 
 读 Cookies。Chrome 提供了`get`和`getAll`两个方法读取 Cookies，`get`方法可以读取指定`name`、`url`和`storeId`的 Cookie，其中`storeId`可以不指定，但是`name`和`url`必须指定。如果在同一 URL 中包含多个`name`相同的 Cookies，则会返回`path`最长的那个，如果有多个 Cookies 的`path`长度相同，则返回创建最早的那个。
 
@@ -234,7 +236,7 @@ chrome.cookies.get({
 
 这里需要注意一点，如果`cookie`的`secure`属性值为`true`，那么通过`get`获取时`url`应该是 https 协议。
 
-`getAll`方法与 get 方法不同，它可以获取所有符合条件的 Cookies，支持的匹配条件包括`url`、`name`、`domain`、`path`、`secure`、`session`和`storeId`中的任意一个或多个，如果一个都不指定，则返回所有此扩展有权访问到的 Cookies。比如下面的代码就可以获取到所有可以读取的 Cookies：
+`getAll`方法与`get`方法不同，它可以获取所有符合条件的 Cookies，支持的匹配条件包括`url`、`name`、`domain`、`path`、`secure`、`session`和`storeId`中的任意一个或多个，如果一个都不指定，则返回所有此扩展有权访问到的 Cookies。比如下面的代码就可以获取到所有可以读取的 Cookies：
 
 ```js
 chrome.cookies.getAll({}, function(cookies){
@@ -259,6 +261,7 @@ chrome.cookies.set({
 如果创建成功，则回调函数会获取到创建后的`cookie`对象，否则会得到`null`。`url`是必须指定的，其他的属性可选。另外扩展对 URL 必须有访问权限，否则会设置失败。如果不指定`expirationDate`属性，则所创建的 Cookie 将在浏览器关闭后被删除。
 
 ![enter image description here](img/00032.jpeg)
+
 *设置 Cookies*
 
 删除 Cookie。`remove`方法可以删除指定`url`、`name`和`storeId`的 Cookie。
@@ -286,11 +289,14 @@ chrome.cookies.onChanged.addListener(function(changeInfo){
 }); 
 ```
 
+
+
+
 `changeInfo`包含三个属性：`removed`，是否是删除行为；`cookie`，被设置或删除的`cookie`对象；`cause`，Cookie 变化的原因，可能的值包括`evicted`、`expired`、`explicit`、`expired_overwrite`和`overwrite`。
 
 再次提醒，Cookies 是用户的敏感数据，在进行操作时一定倍加小心，并要让用户有知情权，必要时一定要先得到用户的确认。
 
-## 4.3　历史
+## 4.3 历史
 
 历史用于记录用户访问过页面的信息。与书签一样，历史也是浏览器很早就具有的功能，对用户来说也是一个很重要的功能。Chrome 提供了`history`接口，允许扩展对用户的历史进行管理。
 
@@ -299,12 +305,14 @@ chrome.cookies.onChanged.addListener(function(changeInfo){
 ```js
 "permissions": [
     "history"
-] 
+]
 ```
 
 管理历史的方法包括`search`、`getVisits`、`addUrl`、`deleteUrl`、`deleteRange`和`deleteAll`。其中`search`和`getVisits`用于读取历史，`addUrl`用于添加历史，`deleteUrl`、`deleteRange`和`deleteAll`用于删除历史。
 
-读取历史。Chrome 提供了`search`和`getVisits`两种方法读取历史。通过`search`方法可以读取匹配指定文字，指定时间区间，指定条目的历史结果。
+### 读取历史
+
+Chrome 提供了`search`和`getVisits`两种方法读取历史。通过`search`方法可以读取匹配指定文字、指定时间区间、指定条目的历史结果。
 
 ```js
 chrome.history.search({
@@ -314,7 +322,7 @@ chrome.history.search({
     maxResults: 20
 }, function(historyItemArray){
     console.log(historyItemArray);
-}); 
+});
 ```
 
 上述代码会返回最近 24 小时内匹配“Google”的 20 条历史结果。`startTime`和`endTime`都是距 1970 年 1 月 1 日的毫秒数。返回结果是包含多个`historyItem`对象的数组，`historyItem`对象包含 6 个属性，分别是`id`、`url`、`title`、`lastVisitTime`、`visitCount`和`typedCount`，其中`typedCount`是用户通过在地址栏键入访问此历史的次数。若不指定`text`属性，则返回全部历史结果。
@@ -326,7 +334,7 @@ chrome.history.getVisits(
     url: 'http://www.google.com/'
 }, function(visitItemArray){
     console.log(visitItemArray);
-}); 
+});
 ```
 
 返回的结果是包含多个`visitItem`对象的数组，`visitItem`对象包含 5 个属性，分别是`id`、`visitId`、`visitTime`、`referringVisitId`和`transition`。其中`id`为与指定 URL 匹配的对象的`id`，对于匹配同一 URL 的对象拥有相同的`id`，`visitId`是这个访问结果的`id`，`visitId`是唯一的。`visitTime`同样是毫秒数。`transition`是此访问记录打开的方式，具体解释如下。
@@ -339,17 +347,21 @@ Chrome 对每一个访问记录都详细地归类了打开方式，用`transitio
 
 最后还有三种是和 omnibox 搜索建议相关的，分别为`generated`、`keyword`和`keyword_generated`。`generated`为通过 omnibox 给出搜索建议打开的方式，所打开的页面通常为搜索引擎的结果界面。`keyword`和`keyword_generated`都是通过用户在地址栏中输入的关键字生成的 URL 访问的方式，但其 URL 并不是默认搜索引擎生成的（否则就是`generated`了）。
 
-添加历史。`addUrl`方法可以将特定的 url 以当前时间为访问时间，添加至历史中。
+### 添加历史
+
+`addUrl`方法可以将特定的`url`以当前时间为访问时间，添加至历史中。
 
 ```js
 chrome.history.addUrl({
     url: 'http://twitter.com'
 }, function(){
     console.log('Twitter has been added to history.');
-}); 
+});
 ```
 
-删除历史。`deleteUrl`可以删除指定 URL 的历史，`deleteRange`可以删除指定时间段的历史，`deleteAll`可以删除全部历史。
+### 删除历史
+
+`deleteUrl`可以删除指定 URL 的历史，`deleteRange`可以删除指定时间段的历史，`deleteAll`可以删除全部历史。
 
 ```js
 chrome.history.deleteUrl({
@@ -367,7 +379,7 @@ chrome.history.deleteRange({
 
 chrome.history.deleteAll(function(){
     console.log('All history has been deleted.');
-}); 
+});
 ```
 
 Chrome 提供两个事件，`onVisited`和`onVisitRemoved`，分别监听用户访问历史和历史被删除的事件。
@@ -379,26 +391,28 @@ chrome.history.onVisited.addListener(function(historyItem){
 
 chrome.history.onVisitRemoved.addListener(function(removedObject){
     console.log(removedObject);
-}); 
+});
 ```
 
 对于`onVisitRemoved`事件，返回的`removedObject`结果包含两个属性，`allHistory`和`urls`。其中`urls`属性包含所有被删除历史的 URL。`allHistory`为布尔型，如果所有历史均被删除，`allHistory`的值为`ture`，同时`urls`的值会为一个空数组。
 
 历史和 cookies 一样都是用户的敏感数据，进行操作时应让用户有知情权，尤其是要将用户历史数据与第三方共享时（包括开发者自己的服务器），一定要先得到用户的同意，并且要让用户得知哪些数据会被使用。
 
-## 4.4　管理扩展与应用
+## 4.4 管理扩展与应用
 
-除了通过 chrome://extensions/管理 Chrome 扩展和应用外，也可以通过 Chrome 的`management`接口管理。`management`接口可以获取用户已安装的扩展和应用信息，同时还可以卸载和禁用它们。通过`management`接口可以编写出智能管理扩展和应用的程序。
+除了通过`chrome://extensions/`管理 Chrome 扩展和应用外，也可以通过 Chrome 的`management`接口管理。`management`接口可以获取用户已安装的扩展和应用信息，同时还可以卸载和禁用它们。通过`management`接口可以编写出智能管理扩展和应用的程序。
 
 要使用`management`接口，需要在 Manifest 中声明`management`权限：
 
 ```js
 "permissions": [
     "management"
-] 
+]
 ```
 
-读取用户已安装扩展和应用的信息。Management 提供了两个方法获取用户已安装扩展应用的信息，分别是`getAll`和`get`。
+### 读取用户已安装扩展和应用的信息
+
+Management 提供了两个方法获取用户已安装扩展应用的信息，分别是`getAll`和`get`。
 
 ```js
 chrome.management.getAll(function(exInfoArray){
@@ -407,7 +421,7 @@ chrome.management.getAll(function(exInfoArray){
 
 chrome.management.get(exId, function(exInfo){
     console.log(exInfo);
-}); 
+});
 ```
 
 `exInfo`是扩展信息对象，其结构如下：
@@ -435,12 +449,14 @@ chrome.management.get(exId, function(exInfo){
     permissions: 扩展权限,
     hostPermissions: 扩展有权限访问的 host,
     installType: 扩展被安装的方式
-} 
+}
 ```
 
 其中`type`属性的可能值为`extension`、`hosted_app`、`packaged_app`、`legacy_packaged_app`或`theme`。`installType`可能的值为`admin`（管理员安装）、`development`（载入未打包的扩展）、`normal`（通过 crx 正常安装）、`sideload`（第三方程序安装）或`other`（其他）。
 
-获取权限警告。`getPermissionWarningsById`和`getPermissionWarningsByManifest`方法可以获取权限警告，这些警告与用户安装扩展时网上应用商店弹出的警告类似。
+### 获取权限警告
+
+`getPermissionWarningsById`和`getPermissionWarningsByManifest`方法可以获取权限警告，这些警告与用户安装扩展时网上应用商店弹出的警告类似。
 
 ```js
 chrome.management.getPermissionWarningsById(exId, function(permissionWarningArray){
@@ -449,12 +465,14 @@ chrome.management.getPermissionWarningsById(exId, function(permissionWarningArra
 
 getPermissionWarningsByManifest(exManifest, function(permissionWarningArray){
     console.log(permissionWarningArray);
-}); 
+});
 ```
 
 上述代码中，`exManifest`是字符串型的，不是对象型的。
 
-启用、禁用、卸载扩展和启动应用。`setEnabled`方法可以启用或禁用扩展应用，如果一个扩展或应用被禁用，它的后台页面不会运行。
+### 启用、禁用、卸载扩展和启动应用
+
+`setEnabled`方法可以启用或禁用扩展应用，如果一个扩展或应用被禁用，它的后台页面不会运行。
 
 ```js
 chrome.management.setEnabled(exId, enabled, function(){
@@ -464,7 +482,7 @@ chrome.management.setEnabled(exId, enabled, function(){
     else{
         console.log('Extension '+exId+' has been disabled.');
     }
-}); 
+});
 ```
 
 卸载扩展有两种方法，`uninstall`可以卸载指定 id 的扩展，`uninstallSelf`可以卸载扩展自身且无需请求`management`权限。
@@ -480,7 +498,7 @@ uninstallSelf({
     showConfirmDialog: true
 }, function(){
     console.log('This extension has been uninstalled.');
-}); 
+});
 ```
 
 如果不希望在卸载前显示确认窗口，可以将`showConfirmDialog`的值设为`false`。
@@ -490,7 +508,7 @@ uninstallSelf({
 ```js
 chrome.management.launchApp(exId, function(){
     console.log('App '+exId+' has been launched.');
-}); 
+});
 ```
 
 `management`接口提供了四种事件，`onInstalled`、`onUninstalled`、`onEnabled`和`onDisabled`，分别用于监听安装、卸载、启用和禁用扩展应用。
@@ -510,12 +528,12 @@ chrome.management.onEnabled.addListener(function(exInfo){
 
 chrome.management.onDisabled.addListener(function(exInfo){
     console.log('Extension '+exInfo.id+' has been disabled.');
-}); 
+});
 ```
 
 本节讲解了管理扩展和应用的接口内容，看起来有些枯燥，但如果使用恰当设计合理，可以编写出让用户很 feel 的扩展。
 
-## 4.5　标签
+## 4.5 标签
 
 前面的章节中，多次提到了标签，本节将详细讲解对标签信息获取和操作的内容。在开始介绍之前，先让我们来看一下标签对象的结构：
 
@@ -536,7 +554,7 @@ chrome.management.onDisabled.addListener(function(exInfo){
     width: 宽度,
     height: 高度,
     sessionId: 用于 sessions API 的唯一 id
-} 
+}
 ```
 
 Chrome 通过`tabs`方法提供了管理标签的方法与监听标签行为的事件，大多数方法与事件是无需声明特殊权限的，但有关标签的`url`、`title`和`favIconUrl`的操作（包括读取），都需要声明`tabs`权限。
@@ -544,10 +562,12 @@ Chrome 通过`tabs`方法提供了管理标签的方法与监听标签行为的�
 ```js
 "permissions": [
     "tabs"
-] 
+]
 ```
 
-获取标签信息。Chrome 提供了三种获取标签信息的方法，分别是`get`、`getCurrent`和`query`。`get`方法可以获取到指定 id 的标签，`getCurrent`则获取运行的脚本本身所在的标签，`query`可以获取所有符合指定条件的标签。
+### 获取标签信息
+
+Chrome 提供了三种获取标签信息的方法，分别是`get`、`getCurrent`和`query`。`get`方法可以获取到指定 id 的标签，`getCurrent`则获取运行的脚本本身所在的标签，`query`可以获取所有符合指定条件的标签。
 
 ```js
 chrome.tabs.get(tabId, function(tab){
@@ -556,10 +576,12 @@ chrome.tabs.get(tabId, function(tab){
 
 chrome.tabs.getCurrent(function(tab){
     console.log(tab);
-}); 
+});
 ```
 
 `query`方法可以指定的匹配条件如下：
+
+
 
 ```js
 {
@@ -574,7 +596,7 @@ chrome.tabs.getCurrent(function(tab){
     windowId: 所在窗口的 id,
     windowType: 窗口类型，normal、popup、panel 或 app,
     index: 窗口中的位置
-} 
+}
 ```
 
 下面的代码获取了所有在窗口中活动的标签：
@@ -584,7 +606,7 @@ chrome.tabs.query({
     active: true
 }, function(tabArray){
     console.log(tabArray);
-}); 
+});
 ```
 
 创建标签。创建标签与在浏览器中打开新的标签行为类似，但可以指定更加丰富的信息，如 URL、窗口中的位置和活动状态等。
@@ -599,7 +621,7 @@ chrome.tabs.create({
     openerTabId: tId
 }, function(tab){
     console.log(tab);
-}); 
+});
 ```
 
 其中`wId`是创建标签所在窗口的`id`，如果不指定，则默认在当前窗口中打开。`tId`是打开此标签的标签`id`，可以不指定，但如果指定，那么所创建的标签必须与这个标签在同一窗口中。
@@ -609,7 +631,7 @@ chrome.tabs.create({
 ```js
 chrome.tabs.duplicate(tabId, function(tab){
     console.log(tab);
-}); 
+});
 ```
 
 更新标签。通过`update`方法可以更新标签的属性：
@@ -619,7 +641,7 @@ chrome.tabs.update(tabId, {
     url: 'http://www.google.com'
 }, function(tab){
    console.log(tab);
-}); 
+});
 ```
 
 更新标签时也可以不指定`tabId`，如果不指定，默认会更改当前窗口的活动标签。需要指出，直到 31.0.1650.63 m，更新`highlighted`属性为`true`后，标签`active`属性也会被指定为`true`，所以如果只是想将某个标签高亮以引起用户的注意，需要先记录当前的标签`id`，更新后再将这个标签的`active`属性改回`true`。这个 bug 在之后的版本也许会被修正。
@@ -632,7 +654,7 @@ chrome.tabs.move(tabIds, {
     'index':0
 }, function(tabs){
     console.log(tabs);
-}); 
+});
 ```
 
 其中`tabIds`可以是一个数字型的标签`id`，也可以是一个包含多个标签`id`的数组。返回的`tabs`可能是标签对象也可能是包含多个标签对象的数组。如果指定的`index`为`-1`，会将标签移动到指定窗口的最后面。
@@ -644,7 +666,7 @@ chrome.tabs.reload(tabId, {
     bypassCache: true
 }, function(){
     console.log('The tab has been reloaded.');
-}); 
+});
 ```
 
 浏览器通常会对一些静态资源进行缓存，JavaScript 中的`location.reload()`方法通常无法实现强制刷新，此时上面的方法就会很好地解决这个问题。
@@ -654,7 +676,7 @@ chrome.tabs.reload(tabId, {
 ```js
 chrome.tabs.remove(tabIds, function(){
     console.log('The tabs has been closed.');
-}); 
+});
 ```
 
 其中`tabIds`可以是一个数字型的标签`id`，也可以是一个包含多个标签`id`的数组。
@@ -664,7 +686,7 @@ chrome.tabs.remove(tabIds, function(){
 ```js
 chrome.tabs.detectLanguage(tabId, function(lang){
     console.log('The primary language of the tab is '+lang);
-}); 
+});
 ```
 
 如果不指定`tabId`，则返回当前窗口当前标签的语言。
@@ -677,7 +699,7 @@ chrome.tabs.captureVisibleTab(windowId, {
     quality: 50
 }, function(dataUrl){
     window.open(dataUrl, 'tabCapture');
-}); 
+});
 ```
 
 其中`format`还支持`png`，如果指定为`png`，则`quality`属性会被忽略。如果指定`jpeg`格式，`quality`的取值范围为 0-100，数值越高，图片质量越好，体积也越大。扩展只有声明`activeTab`或`<all_url>`权限能获取到活动标签的截图：
@@ -685,7 +707,7 @@ chrome.tabs.captureVisibleTab(windowId, {
 ```js
 "permissions": [
     "activeTab"
-] 
+]
 ```
 
 注入 JS 和 CSS。之前我们接触过`content_scripts`，它可以向匹配条件的页面注入 JS 和 CSS，但是却无法向用户指定的标签注入。通过`executeScript`和`insertCSS`可以做到向指定的标签注入脚本。
@@ -697,7 +719,7 @@ chrome.tabs.executeScript(tabId, {
     runAt: 'document_start'
 }, function(resultArray){
     console.log(resultArray);
-}); 
+});
 ```
 
 也可以直接注入代码：
@@ -709,7 +731,7 @@ chrome.tabs.executeScript(tabId, {
     runAt: 'document_start'
 }, function(resultArray){
     console.log(resultArray);
-}); 
+});
 ```
 
 向指定的标签注入 CSS：
@@ -721,7 +743,7 @@ chrome.tabs.insertCSS(tabId, {
     runAt: 'document_start'
 }, function(){
     console.log('The css has been inserted.');
-}); 
+});
 ```
 
 插入 CSS 也可以指定具体代码。
@@ -733,7 +755,7 @@ chrome.tabs.insertCSS(tabId, {
 ```js
 chrome.tabs.sendMessage(tabId, message, function(response){
     console.log(response);
-}); 
+});
 ```
 
 请注意，后台页面主动与`content_scripts`通信需要使用`chrome.tabs.sendMessage`方法¹。
@@ -783,12 +805,12 @@ chrome.tabs.onRemoved.addListener(function(tabId, removeInfo){
 
 chrome.tabs.onReplaced.addListener(function(addedTabId, removedTabId){
     console.log('Tab '+removedTabId+' has been replaced by tab '+addedTabId+'.');
-); 
+);
 ```
 
 通过标签接口，扩展可以更灵活地处理不同标签。虽然标签涉及到的内容很多，但常用的部分很有限，读者在阅读此节时，不妨先把精力重点放在那些常用易懂的方法事件上，对于剩下的部分随用随查即可。
 
-## 4.6　Override Pages
+## 4.6 Override Pages
 
 Chrome 不仅提供了管理书签、历史和标签的接口，还支持用自定义的页面替换 Chrome 相应默认的页面，这就是 override pages。目前支持替换的页面包含 Chrome 的书签页面、历史记录和新标签页面。
 
@@ -805,21 +827,25 @@ Chrome 不仅提供了管理书签、历史和标签的接口，还支持用自�
 
 "chrome_url_overrides" : {
     "newtab": "newtab.html"
-} 
+}
 ```
 
 把上面页面的地址替换成你自己的就可以了。
 
 Google 官方对 override pages 给出了几点建议（以下内容翻译来自[`crxdoc-zh.appspot.com/extensions/override`](https://crxdoc-zh.appspot.com/extensions/override)）：
 
-*   使您的页面又快又小。
-    用户期望内置的浏览器页面能够立即打开。请避免做任何可能花较长时间的事情，例如，避免同步地获取网络或数据库资源。
+- 使您的页面又快又小。
 
-*   在您的页面中包含标题。
-    否则用户可能会看到页面的 URL，会令人感到疑惑。这是一个指定标题的例子：新标签页
+  用户期望内置的浏览器页面能够立即打开。请避免做任何可能花较长时间的事情，例如，避免同步地获取网络或数据库资源。
 
-*   不要假定页面具有键盘焦点。
-    当用户创建新标签页时总是地址栏先获得焦点。
+- 在您的页面中包含标题。
 
-*   不要试着模仿默认的“打开新的标签页”页面。
-    用于创建与默认的“打开新的标签页”页面类似（具有最常访问的网站、最近关闭的标签页、提示、主题背景图像等等）的修改版本所需的 API 还不存在。在出现那些 API 之前您还是最好还是考虑一些完全不同的新想法。
+  否则用户可能会看到页面的 URL，会令人感到疑惑。这是一个指定标题的例子：新标签页
+
+- 不要假定页面具有键盘焦点。
+
+  当用户创建新标签页时总是地址栏先获得焦点。
+
+- 不要试着模仿默认的“打开新的标签页”页面。
+
+  用于创建与默认的“打开新的标签页”页面类似（具有最常访问的网站、最近关闭的标签页、提示、主题背景图像等等）的修改版本所需的 API 还不存在。在出现那些 API 之前您还是最好还是考虑一些完全不同的新想法。

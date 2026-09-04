@@ -1,5 +1,5 @@
-# 快速学习 Python 与 JavaScript：初学者编程指南：快速掌握编程基础
 
+# 快速学习 Python 与 JavaScript：初学者编程指南
 
 ## Python 简介
 
@@ -22,10 +22,15 @@ Python 编写的程序易于阅读和理解。
 ### 主要应用
 
 - 谷歌搜索引擎、Twitter 等。
+
 - Bit Torrent 对等文件共享是使用 Python 编写的。
+
 - 英特尔、思科、惠普、IBM 等公司使用 Python 进行硬件测试。
+
 - Maya 提供了一个 Python 脚本 API。
+
 - Python 用于创建工业机器人。
+
 - NASA 等机构在他们的科学编程活动中使用 Python。
 
 ## 设置 Python 解释器
@@ -33,8 +38,11 @@ Python 编写的程序易于阅读和理解。
 为了编写和运行 Python 程序，我们需要在我们的计算机上安装一个 Python 解释器。
 
 标准且最常见的 Python 开发环境是 IDLE（集成图形用户界面）。
+
 IDLE 代表集成开发环境（Integrated Development Environment）。
+
 它允许在单个图形用户界面中修改、运行、搜索和调试 Python 程序。
+
 这种环境使得编写程序变得简单。
 
 注意：在这些教程中，我们将使用 Python IDLE 3.6 版本来开发和运行 Python 代码。它可以在 www.python.org 免费获取。
@@ -46,12 +54,19 @@ IDLE 代表集成开发环境（Integrated Development Environment）。
 ## Python 的特性
 
 - 面向对象
+
 - 强大的异常处理
+
 - 自动内存管理
+
 - 动态类型
+
 - 强数据类型
+
 - 语法简洁
+
 - 基于缩进
+
 - 性质宽容
 
 ## 在 Python 中打印 "Hello World"
@@ -79,7 +94,7 @@ o
  a ' 
 >>> print("a\")
 a\
->>> print("a \\n b ")
+>>> print("a \n b ")
 a \n b 
 >>> print("a \n b")
 a 
@@ -137,9 +152,13 @@ $ sudo pip install --upgrade pip
 ## 尝试以下操作
 
 a) 5+7
+
 b) 4*10
+
 c) 7/8
+
 d) 9%2
+
 e) 6//4
 
 ```
@@ -186,11 +205,15 @@ e) 6//4
 如果脚本模式在 IDLE 环境中默认未启用，我们将使用以下步骤在 IDLE 中创建和运行 Python 脚本。
 
 1. 文件 > 新建文件
+
 2. 编写 Python 代码。
+
 3. 保存它 (**^S**)。
+
 4. 使用 RUN 选项，以交互模式执行它- (**^F5**)
 
 **步骤 1：** 文件 > 新建文件
+
 **步骤 2：** 编写：
 
 ```
@@ -204,6 +227,7 @@ def test():
 ![img](img/3814666d53e5e432023792c444b3b015_13_0.png)
 
 **步骤 3：** 保存 或 文件 > 另存为
+
 **步骤 4：** 要执行，按 ^F5
 
 ```
@@ -251,43 +275,75 @@ Python 编程语言中有内置的关键字，它们用于根据不同的目的�
 ### 所有 Python 关键字 - 列表
 
 | 序号 | 关键字 | 描述 |
+
 | :--- | :--- | :--- |
+
 | 1 | and | 用于逻辑操作，它是一个逻辑与运算符。如果两个操作数都为真，则返回 "True"。 |
+
 | 2 | as | 用于为模块创建别名。 |
+
 | 3 | assert | 用于调试目的，如果给定的测试条件为假，则返回 "AssertionError"。 |
+
 | 4 | break | 中断循环的执行。用于将程序的控制权从循环体的作用域转移到循环体后的下一条语句。 |
+
 | 5 | class | 用于定义/创建一个类。 |
+
 | 6 | continue | 跳过循环体中剩余的语句，继续循环的下一次迭代。 |
+
 | 7 | def | 用于定义/创建一个函数。 |
+
 | 8 | del | 用于删除一个对象。 |
+
 | 9 | elif | 与 "if...elif...else" 语句一起使用，用于检查下一个条件。它相当于 C、C++ 语言中的 "else if"。 |
+
 | 10 | else | 与 "if...elif...else" 语句一起使用，用于定义一个 else 块——如果任何条件都不为真，则执行 else 块。 |
 
-
-
 | # | 关键字 | 说明 |
+
 |---|--------|------|
+
 | 11 | except | 与其他编程语言中的“catch”块类似，用于定义一个“except”块，该块在`try`块中发生任何异常时执行。 |
+
 | 12 | False | 用于定义布尔值False，它也可能是比较表达式的结果。 |
+
 | 13 | finally | 与异常块（`try...except...finally`）一起使用，定义一个总是执行的代码块——无论`try`块中是否发生异常。 |
+
 | 14 | for | 用于创建`for`循环。 |
+
 | 15 | from | 用于从模块中导入特定部分（如函数、类等）。 |
-| 16 | if | 用于创建条件语句，即检查条件。 |
+
+| 16 | if | 用于创建条件语句，即检查条条件。 |
+
 | 17 | import | 用于在程序中导入模块。 |
+
 | 18 | in | 用于检查某个元素是否存在于序列（如字符串、列表、元组等）中。 |
+
 | 19 | is | 用于检查两个对象是否是同一个对象。 |
+
 | 20 | lambda | 用于创建一个匿名函数，该函数可以有多个参数，但只能有一个语句/表达式。 |
+
 | 21 | None | 类似于null，用于定义一个空值。 |
+
 | 22 | nonlocal | 用于声明一个非局部变量，通过使用此关键字，我们可以指示编译器该变量不是局部变量。 |
+
 | 23 | not | 是一个逻辑运算符（逻辑非），如果操作数为`False`则返回`True`，如果操作数为`True`则返回`False`。 |
+
 | 24 | or | 是一个逻辑运算符（逻辑或），用于组合两个条件，如果任一条件为`True`则返回`True`，否则返回`False`。 |
+
 | 25 | pass | 用作空语句，对于定义空函数或空条件语句体非常有用。 |
+
 | 26 | raise | 用于引发错误并显示自定义消息。 |
+
 | 27 | return | 用于返回值或/并将程序的控制权从调用函数返回到被调用函数，即用于退出函数。 |
+
 | 28 | True | 用于定义布尔值True，它也可能是比较表达式的结果。 |
+
 | 29 | try | 与`try...except...finally`块一起使用。 |
+
 | 30 | while | 用于创建`while`循环。 |
+
 | 31 | with | 类似于C#.Net和VB.Net中的`using`，用于简化异常处理。 |
+
 | 32 | yield | 用于结束一个函数并返回一个生成器。 |
 
 ### Python中的注释
@@ -301,6 +357,7 @@ Python中的注释用于提高代码的可读性。
 #### Python注释的类型
 
 1. 单行注释（#）
+
 2. 多行字符串注释（""""）
 
 #### 1) 单行注释
@@ -440,6 +497,7 @@ Hello World
 当我们需要注释多行/语句时，有两种方法：要么在每一行注释，要么创建多行注释（或块注释）。
 
 第一种方法是在每一部分注释，
+
 这在Python中可以被视为单行注释——在要注释的每一行开头使用井号字符（#）。
 
 ```python
@@ -449,6 +507,7 @@ Hello World
 ```
 
 第二种方法是注释代码段，
+
 这在Python中可以被视为多行注释——我们在要注释的段落开头使用三个单引号（'''），在结尾也使用三个单引号（'''）。
 
 ```python
@@ -488,17 +547,25 @@ if __name__ == "__main__":
 在Python中，内置数据类型有
 
 - 文本类型
+
 - 数值类型
+
 - 映射类型
+
 - 序列类型
+
 - 集合类型
+
 - 布尔类型
+
 - 二进制类型
 
 Python中的3种数值数据类型：
 
 1. int（整型）
+
 2. float（浮点型）
+
 3. complex（复数型）
 
 #### 1) int（整型）
@@ -525,6 +592,7 @@ print("Data type of x: ", type(x))
 **输出**
 
 x= -1
+
 Data type of x: <class 'int'>
 
 #### 2) float（浮点型）
@@ -543,8 +611,6 @@ y = -9.1
 ##### 操作x的值
 x = x - y
 ```
-
-
 
 #### 3) 复数
 
@@ -584,15 +650,19 @@ x 的数据类型:  <class 'complex'>
 #### 1. 数字
 
 数字数据类型存储数值。这类数据是不可变的，即其对象的含义无法修改（这一点将在后面讨论）。
+
 它们分为三种不同的类型：
 
 - **整数与长整数**
+
 - **浮点数/浮点型**
+
 - **复数**
 
 ##### i) 整数：
 
 整数是带或不带正负号（+ 或 -）的十进制数字组成的整数，例如 100000、-99、0、17。
+
 当我们希望一个值被视为很长的整数值时，可以在值后附加 `L`。Python 会将这些值视为长整数。
 
 ```python
@@ -605,6 +675,7 @@ x 的数据类型:  <class 'complex'>
 ##### ii) 浮点数：
 
 浮点数也称为小数或带有小数点的数。
+
 浮点数由一个十进制数字序列、一个符号（+,-）和一个小数点组成，例如 0.0、-21.9、0.98333328、15.2963。
 
 ##### iii) 复数：
@@ -612,6 +683,7 @@ x 的数据类型:  <class 'complex'>
 Python 的复数由两个浮点数值组成，分别代表实部和虚部。
 
 我们将使用 `x.real` 和 `x.imag` 来访问向量（对象）`x` 的各个部分。
+
 该数的虚数部分由 `j` 而非 `i` 定义，因此 `1 + 0j` 的虚数部分表示零。
 
 ## 示例
@@ -629,14 +701,19 @@ Python 的复数由两个浮点数值组成，分别代表实部和虚部。
 #### 3. 序列
 
 一个有序的对象集合，通过正整数索引，称为序列。
+
 它是可变和不可变数据类型的混合体。
+
 字符串、列表和元组是 Python 中可用的三种序列数据形式。
 
 ##### 3.1) 字符串：
 
 它是字符/字母的有序序列。
+
 它们出现在单引号（'）或双引号（"）中。
+
 引号不构成字符串的一部分。
+
 它们只是告诉机器字符串常量的开始和结束位置。
 
 ```python
@@ -649,7 +726,9 @@ Python 的复数由两个浮点数值组成，分别代表实部和虚部。
 ##### 3.2) 列表：
 
 列表也是一种重要的序列。
+
 列表中的值称为元素/对象。它们是可变的，并且被索引/有序。
+
 列表用方括号括起来。
 
 ##### 3.3) 元组：
@@ -707,7 +786,9 @@ True
 ### type() 与 isinstance() 的比较
 
 | type() | isinstance() |
+
 | :--- | :--- |
+
 | 它返回一个对象的类型对象，并将返回的结果与另一个类型对象进行比较，只有在两边都是同一类型对象时才返回 `True`。 | 为了查看一个对象是否具有某种类型，可以使用 **isinstance()**，因为它检查传入第一个参数的对象是否属于传入第二个参数的任何类型对象的类型。因此，在子类和旧式类（它们都有遗留类型对象实例）方面，它都能按预期工作。 |
 
 ## # Python 算术运算符
@@ -715,13 +796,21 @@ True
 算术运算符用于执行不同的算术/数学运算，它们是二元运算符，意味着计算需要两个操作数。
 
 | 运算符 | 名称 | 描述 |
+
 | :--- | :--- | :--- |
+
 | + | 加法运算符 | 返回两个表达式的和。 |
+
 | - | 减法运算符 | 返回两个表达式的差。 |
+
 | * | 乘法运算符 | 返回两个表达式的乘积。 |
+
 | ** | 幂运算符 | 返回表达式提升到给定幂的值，即返回表达式1提升到表达式2的幂。 |
+
 | / | 除法运算符 | 返回两个表达式的商。 |
+
 | // | 整除运算符 | 返回两个表达式商的整数部分。 |
+
 | % | 取模运算符 | 返回商的小数部分，即两个表达式相除的余数。 |
 
 #### 语法：
@@ -877,8 +966,11 @@ x * 3: [10, 20, 30, 40, 10, 20, 30, 40, 10, 20, 30, 40]
 身份运算符如下，
 
 | 运算符 | 描述 | 示例 |
+
 | :--- | :--- | :--- |
+
 | **is** | 如果两个操作数指向同一对象，则返回 `True`；否则返回 `False`。 | x is y |
+
 | **is not** | 如果两个操作数不指向同一对象，则返回 `True`；否则返回 `False`。 | x is not y |
 
 #### 语法：
@@ -903,60 +995,90 @@ z = x
 print("x == y: ", x == y)
 ```
 
-
-
 print("y == z: ", y == z)
+
 print("z == x: ", z == x)
+
 print()
 
 ##### 比较对象
+
 ##### 判断它们是否指向
+
 ##### 同一个对象
+
 print("x is y: ", x is y)
+
 print("y is z: ", y is z)
+
 print("z is x: ", z is x)
+
 print()
 
 ##### 输出：
+
 x == y:  True
+
 y == z:  True
+
 z == x:  True
 
 x is y:  False
+
 y is z:  False
+
 z is x:  True
 
 #### 'is not' 运算符示例
 
 ##### 演示身份运算符
+
 ##### 示例的 Python 程序
 
 x = [10, 20, 30]
+
 y = [10, 20, 30]
+
 z = x
 
 ##### 使用 != 运算符
+
 ##### 比较值
+
 print("x != y: ", x != y)
+
 print("y != z: ", y != z)
+
 print("z != x: ", z != x)
+
 print()
 
 ##### 比较对象
+
 ##### 判断它们是否指向
+
 ##### 同一个对象
+
 print("x is not y: ", x is not y)
+
 print("y is not z: ", y is not z)
+
 print("z is not x: ", z is not x)
+
 print()
 
 ##### 输出：
+
 x != y: False
+
 y != z: False
+
 z != x: False
 
 x is not y: True
+
 y is not z: True
+
 z is not x: False
 
 ### Python 中的成员运算符
@@ -966,8 +1088,11 @@ z is not x: False
 #### Python 成员运算符
 
 | 运算符 | 描述 | 示例 |
+
 |---|---|---|
+
 | `in` | 如果在序列中找到变量/值，则返回 `True`。 | `10 in list1` |
+
 | `not in` | 如果在序列中未找到变量/值，则返回 `True`。 | `10 not in list1` |
 
 ## 示例
@@ -975,34 +1100,53 @@ z is not x: False
 ##### Python 中 "in" 和 "not in" 运算符的示例
 
 ##### 声明一个列表和一个字符串
+
 str1 = "Hello world"
+
 list1 = [10, 20, 30, 40, 50]
 
 ##### 检查 'w'（大写）是否存在于 str1 中
+
 if 'w' in str1:
+
     print("是的！在 ", str1, " 中找到了 w")
+
 else:
+
     print("不！在 ", str1, " 中未找到 w")
 
 ##### 检查 'X'（大写）是否存在于 str1 中
+
 if 'X' not in str1:
+
     print("是的！在 ", str1, " 中不存在 X")
+
 else:
+
     print("不！在 ", str1, " 中存在 X")
 
 ##### 检查 30 是否存在于 list1 中
+
 if 30 in list1:
+
     print("是的！在 ", list1, " 中找到了 30")
+
 else:
+
     print("不！在 ", list1, " 中未找到 30")
 
 ##### 检查 90 是否存在于 list1 中
+
 if 90 not in list1:
+
     print("是的！在 ", list1, " 中不存在 90")
+
 else:
+
     print("不！在 ", list1, " 中存在 90")
 
 ### 输出
+
 是的！在  Hello world 中找到了 w
 
 是的！在  Hello world 中不存在 X
@@ -1018,12 +1162,17 @@ else:
 例如，x++ 和 ++x，或 x-- 或 --x，在 Python 中是无效的。
 
 x = 1
+
 x++
 
 ### 输出
+
 File "main.py", line 2
+
     x++
+
       ^
+
 SyntaxError: invalid syntax
 
 ## 示例
@@ -1031,16 +1180,25 @@ SyntaxError: invalid syntax
 x = 1
 
 print(--x)
+
 ##### 1
+
 print(++x)
+
 ##### 1
 
 print(x--)
+
 """
+
   File "main.py", line 8
+
     print(x--)
+
            ^
+
 SyntaxError: invalid syntax
+
 """
 
 其原因在于 Python 整数是不可变的，因此无法被修改。所以，要进行增减，我们需要这样做。
@@ -1048,21 +1206,29 @@ SyntaxError: invalid syntax
 x = 1
 
 x = x + 1
+
 print(x)
 
 x = x - 1
+
 print(x)
 
 x += 2
+
 print(x)
 
 x -= 1
+
 print(x)
 
 ### 输出
+
 2
+
 1
+
 3
+
 2
 
 ### Python 中布尔值的逻辑与按位 NOT 运算符
@@ -1080,20 +1246,29 @@ print(x)
 ##### 逻辑 NOT (`not`) 运算符
 
 x = True
+
 y = False
 
 ##### 打印值
+
 print("x: ", x)
+
 print("y: ", y)
 
 ##### `not` 运算
+
 print("not x: ", not x)
+
 print("not y: ", not y)
 
 ##### 输出：
+
 x: True
+
 y: False
+
 not x: False
+
 not y: True
 
 ##### 按位 NOT (`~`) 运算符
@@ -1103,36 +1278,55 @@ not y: True
 ##### 按位 NOT (`~`) 运算符
 
 x = True
+
 y = False
 
 ##### 打印值
+
 print("x: ", x)
+
 print("y: ", y)
 
 ##### `~` 运算
+
 print("~ x: ", ~ x)
+
 print("~ y: ", ~ y)
 
 ##### 赋值数字
+
 x = 123
+
 y = 128
 
 ##### 打印值
+
 print("x: ", x)
+
 print("y: ", y)
 
 ##### `~` 运算
+
 print("~ x: ", ~ x)
+
 print("~ y: ", ~ y)
 
 ##### 输出：
+
 x: True
+
 y: False
+
 ~ x: -2
+
 ~ y: -1
+
 x: 123
+
 y: 128
+
 ~ x: -124
+
 ~ y: -129
 
 #### 字符串上的逻辑运算符
@@ -1140,7 +1334,9 @@ y: 128
 ## 逻辑运算符
 
 - 逻辑与 (`and`)
+
 - 逻辑或 (`or`)
+
 - 逻辑非 (`not`)
 
 ### 与字符串
@@ -1158,24 +1354,35 @@ y: 128
 ##### Python 中字符串上的逻辑运算符
 
 string1 = "Hello"
+
 string2 = "World"
 
 ##### 字符串上的 and 运算符
+
 print("string1 and string2: ", string1 and string2)
+
 print("string2 and string1: ", string2 and string1)
+
 print()
 
 ##### 字符串上的 or 运算符
+
 print("string1 or string2: ", string1 or string2)
+
 print("string2 or string1: ", string2 or string1)
+
 print()
 
 ##### 字符串上的 not 运算符
+
 print("not string1: ", not string1)
+
 print("not string2: ", not string2)
+
 print()
 
 ##### 输出：
+
 string1 and string2: World
 
 string2 and string1: Hello
@@ -1193,25 +1400,37 @@ not string2: False
 ##### Python 中字符串上的逻辑运算符
 
 string1 = "" # 空字符串
+
 string2 = "World" # 非空字符串
 
 ##### 注意：'repr()' 函数会用单引号打印字符串
+
 ##### 字符串上的 and 运算符
+
 print("string1 and string2: ", repr(string1 and string2))
+
 print("string2 and string1: ", repr(string2 and string1))
+
 print()
 
 ##### 字符串上的 or 运算符
+
 print("string1 or string2: ", repr(string1 or string2))
+
 print("string2 or string1: ", repr(string2 or string1))
+
 print()
 
 ##### 字符串上的 not 运算符
+
 print("not string1: ", not string1)
+
 print("not string2: ", not string2)
+
 print()
 
 ##### 输出：
+
 string1 and string2: ''
 
 string2 and string1: ''
@@ -1247,39 +1466,61 @@ Value2 - 代表条件表达式为假时的值。
 ##### 查找最大值
 
 x = 20
+
 y = 10
 
 ##### if else 条件运算符
+
 largest = x if x > y else y
+
 ##### 打印值
+
 print("x: ", x)
+
 print("y: ", y)
+
 print("largest: ", largest)
+
 print()
 
 x = 10
+
 y = 20
 
 ##### if else 条件运算符
+
 largest = x if x > y else y
+
 ##### 打印值
+
 print("x: ", x)
+
 print("y: ", y)
+
 print("largest: ", largest)
+
 print()
 
 x = 10
+
 y = 10
 
 ##### if else 条件运算符
+
 largest = x if x > y else y
+
 ##### 打印值
+
 print("x: ", x)
+
 print("y: ", y)
+
 print("largest: ", largest)
+
 print()
 
 ##### 输出：
+
 x: 20
 
 y: 10
@@ -1287,11 +1528,15 @@ y: 10
 largest: 20
 
 x: 10
+
 y: 20
+
 largest: 20
 
 x: 10
+
 y: 10
+
 largest: 10
 
 ## 示例 2
@@ -1299,21 +1544,29 @@ largest: 10
 ##### 查找最大值
 
 x = 10
+
 y = 20
+
 z = 30
 
 ##### if else 条件运算符
+
 largest = x if (x > y and x > z) else (y if (y > x and x > z) else z)
+
 ##### 打印值
+
 print("x: ", x)
+
 print("y: ", y)
+
 print("z: ", z)
+
 print("largest: ", largest)
+
 print()
 
-
-
 ##### if else 条件运算符
+
 ```
 x = 10
 y = 30
@@ -1394,6 +1647,7 @@ largest: 10
 ```
 
 ## 快速学习 JavaScript：
+
 ### 初学者编程指南
 
 快速学习编程基础指南
@@ -1436,7 +1690,9 @@ document.write("Hello World");
 ## JavaScript 代码可以写在 JavaScript 的 3 个地方
 
 - 1. 在 HTML 的 `<body>`......`</body>` 标签之间。
+
 - 2. 在 HTML 的 `<head>`......`</head>` 标签之间。
+
 - 3. 在 .js 文件中（外部 JavaScript）。
 
 ### 示例（在 body 标签之间的代码）
@@ -1507,6 +1763,7 @@ JavaScript 中的注释用于描述代码。它用于添加与代码相关的内
 JavaScript 注释有两种：
 
 - 1. 单行注释
+
 - 2. 多行注释
 
 ### 单行注释
@@ -1583,6 +1840,7 @@ var name;
 变量有两种类型：
 
 - 1. 局部变量
+
 - 2. 全局变量
 
 ### **局部变量** – 在函数或块内声明。
@@ -1657,6 +1915,7 @@ b();
 它有多种数据类型来存储各种类型的值。在 Javascript 中，有两种数据类型。
 
 - 1. 原始数据类型。
+
 - 2. 非原始数据类型。
 
 由于 JavaScript 是一种动态风格的语言，我们不需要定义变量的类型，因为 JavaScript 引擎是动态使用它的。在这种情况下，数据类型使用 var 定义。它可以存储任何类型的值，包括数字、字符串和对象。
@@ -1674,11 +1933,17 @@ var x= {FirstName:"Ram", lastName:"Doe"}; //Object
 JavaScript 中有 5 种原始数据类型。
 
 | 数据类型 | 描述 |
+
 |---|---|
+
 | String | 它表示字符序列，例如 "Hello" |
+
 | Number | 它表示数值，例如 1,2,3,4,5,6。 |
+
 | Boolean | 它表示布尔值，要么是真要么是假。 |
+
 | Undefined | 它表示未定义的值。 |
+
 | Null | 它表示完全没有值。 |
 
 ### JavaScript 非原始数据类型
@@ -1686,9 +1951,13 @@ JavaScript 中有 5 种原始数据类型。
 有 3 种非原始数据类型，如下所示：
 
 | 数据类型 | 描述 |
+
 |---|---|
+
 | Object | 它表示实例，通过它我们可以访问成员。 |
+
 | Array | 它表示一组相似的值。 |
+
 | RegExp | 它表示正则表达式。 |
 
 运算符是 JavaScript 中用于对操作数执行操作的符号。3+2 等于 5 是简单的说法。这里的操作数是 3 和 2，运算符是 +。
@@ -1696,10 +1965,15 @@ JavaScript 中有 5 种原始数据类型。
 以下是 JavaScript 中使用的运算符：
 
 - 1. 算术运算符。
+
 - 2. 比较（关系）运算符。
+
 - 3. 位运算符。
+
 - 4. 逻辑运算符。
+
 - 5. 赋值运算符。
+
 - 6. 特殊运算符。
 
 ### 算术运算符
@@ -1707,29 +1981,41 @@ JavaScript 中有 5 种原始数据类型。
 我们在算术运算符中对操作数使用算术运算。
 
 | 运算符 | 描述 |
+
 | :--- | :--- |
+
 | +(加法) | 将两个操作数相加 示例：A+B |
+
 | -(减法) | 从一个操作数中减去另一个 示例：A-B |
+
 | *(乘法) | 将两个操作数相乘 示例：A*B |
+
 | /(除法) | 将分子除以分母 示例：B/A |
+
 | %(取模) | 整数除法的余数为 0 示例：B%A 将得到 0 |
+
 | ++(递增) | 将整数值增加一 示例：如果值 A 是 9，那么 A++ 将得到 11 |
+
 | --(递减) | 将整数值减少一 示例：如果值 A 是 11，那么 A-- 将得到 7 |
 
 ### 比较运算符
 
 在比较运算符中，比较两个操作数 A 和 B。
 
-
-
 ## 运算符
 
 | 运算符 | 描述 |
+
 |---|---|
+
 | ==(等于) | 检查两个操作数的值是否相等，如果相等，则条件为真。例如，A=1，B=2。（A==B）条件为假 |
+
 | !=(不等于) | 检查两个操作数的值是否相等，如果值不相等，则条件为真。例如，A=1，B=2。（A!=B）为真。 |
+
 | >(大于) | 检查两个操作数的值哪个更大，如果条件成立，则显示真。例如，（A>B）为假。 |
+
 | <(小于) | 检查两个操作数的值哪个更小，如果条件成立，则显示真。例如，（A<B）为真。 |
+
 | >=(大于或等于) | 检查第一个操作数的值是否大于或等于第二个操作数的值，如果条件成立，则显示真。例如，（A>=B）为假。 |
 
 ## 赋值运算符
@@ -1737,11 +2023,17 @@ JavaScript 中有 5 种原始数据类型。
 JavaScript 支持以下赋值运算符。
 
 | 运算符 | 描述 |
+
 | :--- | :--- |
+
 | =(简单赋值) | 用于将值赋给变量。例如：var x = 10; |
+
 | +=(加法赋值) | 用于将右操作数的值加到变量上，并将结果赋给变量。例如：运算符：x+=y 含义：x = x + y |
+
 | -=(减法赋值) | 用于从变量中减去右操作数的值，并将结果赋给变量。例如：运算符：x -= y 含义：x = x - y |
+
 | *=(乘法赋值) | 用于将变量乘以右操作数的值，并将结果赋给变量。例如：运算符：x *= y 含义：x = x * y |
+
 | /=(除法赋值) | 用于将变量除以右操作数的值，并将结果赋给变量。例如：运算符：x /= y 含义：x = x / y |
 
 ## 按位运算符
@@ -1749,24 +2041,37 @@ JavaScript 支持以下赋值运算符。
 JavaScript 提供以下按位运算符：
 
 | 运算符 | 描述 |
+
 | :--- | :--- |
+
 | & (按位与) | 对每一对位执行与操作。例如：(A & B) 为 2。 |
+
 | \| (按位或) | 对每一对位执行或操作。例如：(A \| B) 为 3。 |
+
 | ^ (按位异或) | 对每一对位执行异或操作。例如：(A ^ B) 为 1。 |
+
 | ~ (按位非) | 对每一对位执行非操作。例如：(~B) 为 -4。 |
+
 | << (左移) | 此运算符将第一个操作数按指定的位数向左移动。例如：(A << 1) 为 4。 |
+
 | >> (右移) | 左操作数的值按右操作数指定的位数向右移动。例如：(A >> 1) 为 1。 |
+
 | >>> (零填充右移) | 此运算符与 >> (右移) 类似，只是左边移入的位始终为零。例如：(A >>> 1) 为 1。 |
 
 ## 逻辑运算符
 
 逻辑运算符通常使用布尔值。
+
 逻辑运算符如下：
 
 | 运算符 | 描述 |
+
 | --- | --- |
+
 | && (逻辑与) | 如果两个操作数都非零，则条件为真。例如：(A && B) 为真。 |
+
 | \|\| (逻辑或) | 如果两个操作数中任意一个非零，则条件为真。例如：(A \|\| B) 为真。 |
+
 | ! (逻辑非) | 反转其操作数的逻辑状态。如果条件为真，则逻辑非运算符将其变为假。例如：!(A && B) 为假。 |
 
 ## Javascript If Else 语句
@@ -1776,7 +2081,9 @@ JavaScript 中的条件语句用于根据条件执行不同的任务。
 在 JavaScript 中，有三种类型的语句。
 
 1. if 语句。
+
 2. if else 语句。
+
 3. if else if 语句。
 
 ### if 语句
@@ -1851,7 +2158,7 @@ X是偶数
 
 ### If else if
 
-它通过多个表达式来检查表达式是否有效。**If else if** 是 if else 语句的更高级版本。
+它通过多个表达来检查表达式是否有效。**If else if** 是 if else 语句的更高级版本。
 
 ### 语法
 
@@ -1964,6 +2271,7 @@ B级
 ### 优点 - JavaScript 函数
 
 1. 代码可重用性：我们多次使用相同的功能以节省时间和代码。
+
 2. 代码量更少：这使得我们的软件更精简。在执行常规任务时，我们不需要编写大量代码。
 
 ### 语法
@@ -2087,8 +2395,6 @@ document.write(getInfo());
 <script>
 var func = new Function("a", "b", "return a+b;");
 ```
-
-
 
 ## 函数字面量
 
@@ -2250,8 +2556,11 @@ document.write(emp[i] + "<br>");
 ### 输出
 
 - Ajay
+
 - Abhay
+
 - Arun
+
 - Shipra
 
 ## 示例 2
@@ -2287,13 +2596,21 @@ alert(sum)
 ## 数组中的函数
 
 | 函数 | 描述 |
+
 | :--- | :--- |
+
 | `concat()` | 将一个数组的元素连接到另一个数组的末尾，并返回数组。 |
+
 | `sort()` | 对数组的所有元素进行排序。 |
+
 | `reverse()` | 反转所有元素。 |
+
 | `slice()` | 从指定索引开始提取指定数量的元素，而不从数组中删除它们。 |
+
 | `splice()` | 从指定索引开始提取指定数量的元素，并从数组中删除它们。 |
+
 | `push()` | 将数组中的所有元素推送到顶部。 |
+
 | `pop()` | 从数组中弹出顶部元素。 |
 
 ## Javascript 字符串
@@ -2303,6 +2620,7 @@ String 对象用于与一串字符进行交互。它是存储和处理文本的�
 在 JavaScript 中，有两种创建字符串的方法：
 
 1.  字符串字面量。
+
 2.  使用 `new` 关键字。
 
 字符串字面量是通过使用双引号形成的。
@@ -2362,7 +2680,9 @@ Hello String
 以下是字符串对象属性及其描述的列表。
 
 1.  constructor。
+
 2.  length。
+
 3.  prototype。
 
 **Constructor** – 此方法返回对象字符串函数的引用。
@@ -2392,19 +2712,28 @@ object.prototype.name = value
 ## 方法
 
 | 方法 | 描述 |
+
 | :--- | :--- |
+
 | `charAt(index)` | 返回给定索引处的字符。 |
+
 | `concat(str)` | 合并两个字符串的文本并返回新字符串。 |
+
 | `indexOf(str)` | 返回给定字符串的索引位置。 |
+
 | `lastIndexOf(str)` | 返回给定字符串的最后一个索引位置。 |
+
 | `match()` | 用于将正则表达式与字符串进行匹配。 |
+
 | `toLowerCase()` | 用于返回转换为小写的给定字符串值。 |
+
 | `toUpperCase()` | 用于返回转换为大写的给定字符串值。 |
+
 | `valueOf()` | 返回指定对象的原始值。 |
 
 ## charAt()
 
-这是一个从给定索引获取字符的方法。
+这是一个从给定索获取字符的方法。
 
 ```
 <!DOCTYPE html>
@@ -2476,8 +2805,6 @@ document.write(y);
 
 ## match()
 
-
-
 ## toLowerCase()
 
 它返回给定字符串的小写版本。
@@ -2547,6 +2874,8 @@ new Date(year, month, day, hours, minutes, seconds, milliseconds);
 
 ## Descriptions（描述）
 
+
+
 ### year
 
 年份由整数表示。对于2000年至2099年，其值范围从0映射到99。
@@ -2582,11 +2911,11 @@ new Date(year, month, day, hours, minutes, seconds, milliseconds);
 <html>
 <body>
 <script>
-var date=new Date();
-var day=date.getDate();
-var month=date.getMonth()+1;
-var year=date.getFullYear();
-document.write("<br>Date: "+day+"/"+month+"/"+year);
+var date = new Date();
+var day = date.getDate();
+var month = date.getMonth() + 1;
+var year = date.getFullYear();
+document.write("<br>Date: " + day + "/" + month + "/" + year);
 </script>
 </body>
 </html>
@@ -2600,11 +2929,11 @@ document.write("<br>Date: "+day+"/"+month+"/"+year);
 <body>
 当前时间：<span id="txt"></span>
 <script>
-var today=new Date();
-var h=today.getHours();
-var m=today.getMinutes();
-var s=today.getSeconds();
-document.getElementById('txt').innerHTML=h+":"+m+":"+s;
+var today = new Date();
+var h = today.getHours();
+var m = today.getMinutes();
+var s = today.getSeconds();
+document.getElementById('txt').innerHTML = h + ":" + m + ":" + s;
 </script>
 </body>
 </html>
@@ -2618,14 +2947,15 @@ Math 是一个内建对象，包含用于数学函数和常量的属性和方法
 
 ### Syntax（语法）
 
-1. varpi_val = Math.PI;
-2. varsin_val = Math.sin( 30 );
+1. `var pi_val = Math.PI;`
+
+2. `var sin_val = Math.sin(30);`
 
 ## Examples（示例）
 
 ### Math.pow()
 
-`Math.pow(x,y)` 返回 x 的 y 次幂的值：
+`Math.pow(x, y)` 返回 x 的 y 次幂的值：
 
 ```
 <!DOCTYPE html>
@@ -2634,12 +2964,12 @@ Math 是一个内建对象，包含用于数学函数和常量的属性和方法
 
 <h2>JavaScript Math.pow()</h2>
 
-<p>Math.pow(x,y) 返回 x 的 y 次幂的值：</p>
+<p>Math.pow(x, y) 返回 x 的 y 次幂的值：</p>
 
 <p id="demo"></p>
 
 <script>
-document.getElementById("demo").innerHTML = Math.pow(6,2);
+document.getElementById("demo").innerHTML = Math.pow(6, 2);
 </script>
 
 </body>
@@ -2680,7 +3010,7 @@ document.getElementById("demo").innerHTML = Math.sqrt(81);
 
 <h2>JavaScript Math.ceil()</h2>
 
-<p>Math.ceil() 将一个数字<strong>向上</strong>舍入到最接近的整数</p>
+<p>Math.ceil() 将一个数字向上舍入到最接近的整数</p>
 
 <p id="demo"></p>
 
@@ -2703,7 +3033,7 @@ Number() 构造函数用于创建数字对象。
 ## SYNTAX（语法）
 
 ```
-var n=new Number(value);
+var n = new Number(value);
 ```
 
 ## EXAMPLES（示例）
@@ -2713,11 +3043,11 @@ var n=new Number(value);
 <html>
 <body>
 <script>
-var x=100;//整数值
-var y=100.7;//浮点数值
-var z=12e5;//指数值，输出：1200000
-var n=new Number(20);//通过数字对象创建的整数值
-document.write(x+" "+y+" "+z+" "+n);
+var x = 100; // 整数值
+var y = 100.7; // 浮点数值
+var z = 12e5; // 指数值，输出：1200000
+var n = new Number(20); // 通过数字对象创建的整数值
+document.write(x + " " + y + " " + z + " " + n);
 </script>
 </body>
 </html>
@@ -2730,7 +3060,9 @@ document.write(x+" "+y+" "+z+" "+n);
 ## Description（描述）
 
 数字对象最常用于以下目的：
+
 1. 如果无法将参数转换为数字，则返回 `NaN`（Not a Number，非数字）。
+
 2. `Number` 可以在非构造函数上下文（即不使用 `new` 操作符）中用于执行类型转换。
 
 ## JavaScript Number Constants（数字常量）

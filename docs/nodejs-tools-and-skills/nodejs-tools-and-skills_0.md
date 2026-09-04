@@ -1,10 +1,7 @@
+
 # Node.js：工具与技能
 
-
-
-![](img/default_cover.jpeg)
-![](img/default_cover.jpeg)
-
+![img/default_cover.jpeg](img/default_cover.jpeg)
 
 Copyright © 2020 SitePoint Pty. Ltd.
 
@@ -30,9 +27,13 @@ Copyright © 2020 SitePoint Pty. Ltd.
 ![SitePoint logo](img/sitepoint-logo-2012.png)
 
 SitePoint Pty. Ltd. 出版
+
 Level 1, 110 Johnston St, Fitzroy
+
 VIC Australia 3065
-网址: www.sitepoint.com
+
+网址: [`www.sitepoint.com`](http://www.sitepoint.com/)
+
 邮箱: books@sitepoint.com
 
 ## 关于 SitePoint
@@ -41,7 +42,7 @@ SitePoint 专门为网络专业人士出版有趣、实用且易于理解的内�
 
 ## 关于 Craig Buckler
 
-[Craig](https://craigbuckler.com/) 是一位自由开发者、作者和演讲师，他对 Web 的话题永无止。
+[Craig](https://craigbuckler.com/) 是一位自由开发者、作者和演讲师，他对 Web 的话题永无止境。
 
 他从 20 世纪 80 年代开始编程，那时应用程序必须挤进几 KB 的内存中。他对 Web 的热情燃于 20 世纪 90 年代中期，那时 28K 调制解调器是常见配置，100KB 的页面被认为是奢侈品。
 
@@ -63,25 +64,25 @@ SitePoint 专门为网络专业人士出版有趣、实用且易于理解的内�
 
 书中的代码使用等宽字体显示，如下：
 
-```
- <h1>一个完美的夏日</h1>
+```html
+<h1>一个完美的夏日</h1>
 <p>这是一个在公园散步的好日子。
- 鸟儿在歌唱，孩子们都回学校上课了。</p> 
+鸟儿在歌唱，孩子们都回学校上课了。</p>
 ```
 
 当上下文中需要现有代码而不是重复所有代码时，将显示 `⋮`：
 
-```
- function animate() {
-    ⋮
+```javascript
+function animate() {
+   ⋮
 new_variable = "Hello";
 }
 ```
 
 某些代码行应该在一行内输入，但由于页面限制，我们不得不对其进行了折行。`➥` 表示仅出于格式目的而存在的换行，应该被忽略：
 
-```
- URL.open("http://www.sitepoint.com/responsive-web-
+```javascript
+URL.open("http://www.sitepoint.com/responsive-web-
 ➥design-real-user-testing/?responsive1");
 ```
 
@@ -122,7 +123,7 @@ new_variable = "Hello";
 
 ## 介绍 nvm
 
-[nvm](https://github.com/creationix/nvm) 代表 Node 版本管理器（Node Version Manager）。顾如名，它可以帮助你通过单一命令在不同的 Node 版本之间切换。
+[nvm](https://github.com/creationix/nvm) 代表 Node 版本管理器（Node Version Manager）。顾名思义，它可以帮助你通过单一命令在不同的 Node 版本之间切换。
 
 ## 操作系统支持
 
@@ -144,7 +145,7 @@ nvm 支持 Linux 和 macOS，但并不意味着 Windows 用户必须错失。有
 
 ### macOS/Linux
 
-与 Windows 不同，在 macOS 和 Linux 中删除之前的 Node 和 npm 安装是可选的。如果你想这样做，网上有很多很好的资源。例如，这里介绍了如何在 [macOS](http://stackoverflow.com/q/11177954/113687) 上移除 Node 以及如何在 [Linux](http://stackoverflow.com/q/5650169/113687) 上移除。这里介绍了如何移除你可能拥[之前的 npm 安装](https://docs.npmjs.com/misc/removing-npm)。
+与 Windows 不同，在 macOS 和 Linux 中删除之前的 Node 和 npm 安装是可选的。如果你想这样做，网上有很多很好的资源。例如，这里介绍了如何在 [macOS](http://stackoverflow.com/q/11177954/113687) 上移除 Node 以及如何在 [Linux](http://stackoverflow.com/q/5650169/113687) 上移除。这里介绍了如何移除你可能拥有[之前的 npm 安装](https://docs.npmjs.com/misc/removing-npm)。
 
 你可以使用 cURL 或 Wget 安装 nvm。在你的终端中运行以下命令：
 
@@ -160,9 +161,6 @@ curl -o- https://raw.github.com/creationix/nvm/v0.35.2/install.sh | bash
 wget -qO- https://raw.github.com/creationix/nvm/v0.35.2/install.sh | bash
 ```
 
-
-
-
 注意版本号（`v0.35.2`）会随着项目的开发而变化，因此最好检查[项目主页的相关部分](https://github.com/creationix/nvm#install-script) 以找到最新版本。
 
 这会将 nvm 仓库克隆到 `~/.nvm`，并对你的 bash 配置文件进行必要的更改，以便你可以在终端的任何地方使用 `nvm`。
@@ -177,7 +175,7 @@ wget -qO- https://raw.github.com/creationix/nvm/v0.35.2/install.sh | bash
 
 nvm 最重要的部分之一当然是安装不同版本的 Node.js。为此，nvm 提供了 `nvm install` 命令。你可以通过运行此命令并跟上你想要版本来安装特定版本。例如：
 
-```
+```bash
 nvm install 12.14.1
 ```
 
@@ -189,7 +187,7 @@ nvm-windows 用户在安装后必须运行 `nvm use 12.14.1`。
 
 nvm 遵循 [SemVer](http://semver.org/)，所以如果你想安装最新的 `12.14` 补丁，可以通过运行以下命令来实现：
 
-```
+```bash
 nvm install 12.14
 ```
 
@@ -197,13 +195,13 @@ nvm 将会安装 Node.js 版本 `12.14.X`，其中 `X` 是可用的最高版本�
 
 你可以通过运行以下命令查看可用版本的完整列表：
 
-```
+```bash
 nvm ls-remote
 ```
 
 对于 nvm-windows，命令是：
 
-```
+```bash
 nvm ls available
 ```
 
@@ -217,7 +215,7 @@ nvm ls available
 
 幸运的是，在安装新的 Node.js 版本时，你可以从特定版本重新安装 npm 全局包。例如：
 
-```
+```bash
 nvm install v12.14.1 --reinstall-packages-from=10.18.1
 ```
 
@@ -225,7 +223,7 @@ nvm install v12.14.1 --reinstall-packages-from=10.18.1
 
 如果你不确定最新版本，可以使用 `node` 别名：
 
-```
+```bash
 nvm install node
 ```
 
@@ -233,7 +231,7 @@ nvm install node
 
 或者你可以安装最新的 [LTS 发布](https://en.wikipedia.org/wiki/Long-term_support)，使用：
 
-```
+```bash
 nvm install --lts
 ```
 
@@ -241,7 +239,7 @@ nvm install --lts
 
 你也可以通过运行以下命令卸载任何你认为不再需要的实例：
 
-```
+```bash
 nvm uninstall 13.6.0
 ```
 
@@ -253,25 +251,25 @@ nvm uninstall 13.6.0
 
 切换到 Node.js 版本 `13.6.0`：
 
-```
+```bash
 nvm use 13.6.0
 ```
 
 切换到 Node.js 版本 `12.14.1`：
 
-```
+```bash
 nvm use 12.14.1
 ```
 
 切换到最新的 Node.js 版本：
 
-```
+```bash
 nvm use node
 ```
 
 切换到最新的 LTS 版本：
 
-```
+```bash
 nvm use --lts
 ```
 
@@ -281,17 +279,19 @@ nvm use --lts
 
 你还可以创建 nvm 自带别名之外的自定义别名。例如，通过运行：
 
-```
+```bash
 nvm alias awesome-version 13.6.0
 ```
 
 你正在为 Node.js 版本 `13.6.0` 设置一个名为“awesome-version”的别名。所以如果你现在运行：
 
-```
+```bash
 nvm use awesome-version
 ```
 
+# 第 2 章：npm 入门指南——Node 包管理器
 
+### 作者 Michael Wanyoike 和 James Hibbard
 
 Node.js 允许你在服务器上使用 JavaScript 编写应用程序。基于 [V8 JavaScript 运行时](https://v8.dev/) 并用 C++ 编写——因此速度很快。最初，它被设计为应用程序的服务器环境，但开发者开始使用它来创建工具，协助本地任务自动化。从那时起，全新的基于 Node 的工具生态系统（例如 [Grunt](http://gruntjs.com/)、[Gulp](http://gulpjs.com/) 和 [webpack](https://webpack.js.org)）演变出来，改变了前端开发的面貌。
 
@@ -313,7 +313,7 @@ Node.js 允许你在服务器上使用 JavaScript 编写应用程序。基于 [V
 
 让我们看看 node 的安装位置并检查版本：
 
-```
+```bash
 $ which node
 /usr/bin/node
 $ node --version
@@ -322,7 +322,7 @@ v12.15.0
 
 为了验证安装是否成功，让我们尝试一下 Node 的 REPL：
 
-```
+```bash
 $ node
 > console.log('Node is running');
 Node is running
@@ -340,7 +340,7 @@ Node is running
 
 Node.js 安装成功了，现在我们可以将注意力放在包含在安装包中的 `npm` 上：
 
-```
+```bash
 $ which npm
 /usr/bin/npm
 $ npm --version
@@ -353,7 +353,7 @@ $ npm --version
 
 对于 Linux 和 Mac 用户，请使用以下命令：
 
-```
+```bash
 npm install -g npm@latest
 ```
 
@@ -363,13 +363,13 @@ npm install -g npm@latest
 
 对于大多数用户来说，升级工具是最佳选择。要使用它，你需要以管理员身份打开 PowerShell 并执行以下命令：
 
-```
+```powershell
 Set-ExecutionPolicy Unrestricted -Scope CurrentUser -Force
 ```
 
 这将确保你可以在系统上执行脚本。接下来，你需要安装 `npm-windows-upgrade` 工具（https://www.npmjs.com/package/npm-windows-upgrade）。安装工具后，你需要运行它以便它为你更新 `npm`。请在提升的 PowerShell 控制台中完成所有操作：
 
-```
+```powershell
 npm install --global --production npm-windows-upgrade
 npm-windows-upgrade --npm-version latest
 ```
@@ -382,11 +382,7 @@ npm-windows-upgrade --npm-version latest
 
 目前我们只全局安装了一个包——`npm` 包本身。所以让我们改变一下，并安装 [UglifyJS](https://www.npmjs.com/package/uglify-js)（一个 JavaScript 压缩工具）。我们使用 `--global` 标志，但可以缩写为 `-g`：
 
-
-
-
-
-```
+```bash
 $ npm install uglify-js --global
 /home/sitepoint/.node_modules_global/bin/uglifyjs -> /home/sitepoint/.node_modules_global/lib/node_modules/uglify-js/bin/uglifyjs
 + uglify-js@3.7.7
@@ -399,7 +395,7 @@ added 3 packages from 38 contributors in 0.259s
 
 我们可以使用 `npm list` 命令列出已安装的全局包：
 
-```
+```bash
 $ npm list --global
 home/sitepoint/.node_modules_global/lib
 ├─┬ npm@6.9.0
@@ -416,7 +412,7 @@ home/sitepoint/.node_modules_global/lib
 
 然而，输出非常冗长。我们可以通过 `--depth=0` 选项来改变这一点：
 
-```
+```bash
 $ npm list -g --depth=0
 /home/sitepoint/.node_modules_global/lib
 ├── npm@6.13.7
@@ -427,7 +423,7 @@ $ npm list -g --depth=0
 
 任何全局安装的包都可以在命令行中使用。例如，这里展示了如何使用 Uglify 包将 `example.js` 压缩为 `example.min.js`：
 
-```
+```bash
 $ uglifyjs example.js -o example.min.js
 ```
 
@@ -435,9 +431,8 @@ $ uglifyjs example.js -o example.min.js
 
 当你本地安装包时，通常会使用 `package.json` 文件。让我们先创建一个：
 
-```
+```bash
 $ mkdir project && cd project
-
 $ npm init
 package name: (project)
 version: (1.0.0)
@@ -450,7 +445,7 @@ author:
 license: (ISC)
 ```
 
-``` `Return` 接受默认值，然后再次按下确认你的选择。这将在项目根目录下创建一个 `package.json` 文件：
+按下 `Return` 接受默认值，然后再次按下确认你的选择。这将在项目根目录下创建一个 `package.json` 文件：
 
 ```json
 {
@@ -474,7 +469,7 @@ license: (ISC)
 
 现在让我们尝试安装 `underscore`：
 
-```
+```bash
 $ npm install underscore
 npm notice created a lockfile as package-lock.json. You should commit this file.
 npm WARN project@1.0.0 No repository field.
@@ -492,7 +487,7 @@ found 0 vulnerabilities
 ```json
 {
   "dependencies": {
-    "underscore": "¹.9.2"
+    "underscore": "^1.9.2"
   }
 }
 ```
@@ -520,11 +515,11 @@ console.log(_.range(5));
 
 ## 卸载本地包
 
-npm 是一个包管理器，所以它能够卸载包。假设当前的包 某些某些问题。让我们看到 `[0, 1, 2, 3, 4]`
-```
+npm 是一个包管理器，所以它能够卸载包。假设当前的包出现某些问题。让我们卸载它：
+
+```bash
 $ npm uninstall underscore
 removed 1 package in 386s
-
 $ npm list
 project@1.0.0 /home/sitepoint
 └── (empty)
@@ -534,11 +529,10 @@ project@1.0.0 /home/sitepoint
 
 现在我们可以安装指定版本的 underscore 包。通过在版本号后使用 `@` 符号来实现：
 
-```
+```bash
 $ npm install underscore@1.9.1
 + underscore@1.9.1
 added 1 package in 574s
-
 $ npm list
 project@1.0.0 /home/sitepoint
 └── underscore@1.9.1
@@ -548,10 +542,10 @@ project@1.0.0 /home/sitepoint
 
 让我们检查 underscore 包是否有更新：
 
-```
+```bash
 $ npm outdated
-Package     Current  Wanted  Location
-underscore    1.9.1   1.9.2  project
+Package     Current  Wanted  Latest  Location
+underscore    1.9.1   1.9.2  1.9.2  project
 ```
 
 `Current` 列显示本地安装的版本。`Latest` 列告诉我们最新版本。`Wanted` 列告诉我们我们在不破坏现有代码的情况下可以升级的版本。
@@ -578,19 +572,14 @@ underscore    1.9.1   1.9.2  project
 
 现在，假设 underscore 的最新版本修复了我们早期的错误，我们想将包更新到该版本：
 
-```
+```bash
 $ npm update underscore
 + underscore@1.9.2
 updated 1 package in 0.236s
-
 $ npm list
 project@1.0.0 /home/sitepoint
 └── underscore@1.9.2
 ```
-
-
-
-
 
 要使此操作生效，Underscore 必须列在 `package.json` 的依赖项中。如果我们有很多想要更新的过期模块，也可以执行 `npm update`。
 
@@ -598,7 +587,7 @@ project@1.0.0 /home/sitepoint
 
 在教程中我们已经使用了几次 `mkdir` 命令。是否存在具有此功能的 Node 包？让我们使用 `npm search` 试试看：
 
-```
+```bash
 $ npm search mkdir
 NAME                      | DESCRIPTION          | AUTHOR          | DATE
 mkdir                     | Directory creation…  | =joehewitt      | 2012-04-17
@@ -610,7 +599,7 @@ make-dir                  | Make a directory…    | =sindresorhus   | 2019-04-0
 
 有一个 ([mkdirp](https://www.npmjs.com/package/mkdirp))。让我们来安装它：
 
-```
+```bash
 $ npm install mkdirp
 + mkdirp@1.0.3
 added 1 package and audited 2 packages in 0.384s
@@ -618,16 +607,15 @@ added 1 package and audited 2 packages in 0.384s
 
 现在创建一个 `mkdir.js` 文件并复制粘贴这段代码：
 
-```
+```javascript
 const mkdirp = require('mkdirp');
-
 const made = mkdirp.sync('/tmp/foo/bar/baz');
 console.log(`made directories, starting with ${made}`);
 ```
 
 接下来，从终端运行它：
 
-```
+```bash
 $ node mkdir.js
 made directories, starting with /tmp/foo
 ```
@@ -636,7 +624,7 @@ made directories, starting with /tmp/foo
 
 让我们先再安装一个包：
 
-```
+```bash
 $ npm install request
 + request@2.88.0
 added 48 packages from 59 contributors and audited 65 packages in 2.73s
@@ -647,9 +635,9 @@ found 0 vulnerabilities
 
 ```json
 "dependencies": {
-  "mkdirp": "¹.0.3",
-  "request": "².88.0",
-  "underscore": "¹.9.2"
+  "mkdirp": "^1.0.3",
+  "request": "^2.88.0",
+  "underscore": "^1.9.2"
 },
 ```
 
@@ -657,7 +645,7 @@ found 0 vulnerabilities
 
 假设你已经将项目源代码克隆到了另一台机器，我们想要安装依赖项。先删除 `node_modules` 文件夹，然后执行 `npm install`：
 
-```
+```bash
 $ rm -R node_modules
 $ npm list --depth=0
 project@1.0.0 /home/sitepoint/project
@@ -665,31 +653,29 @@ project@1.0.0 /home/sitepoint/project
 ├─┬ UNMET DEPENDENCY request@2.88.0
   ...
 └── UNMET DEPENDENCY underscore@1.9.2
-
 npm ERR! missing: mkdirp@1.0.3, required by project@1.0.0
 npm ERR! missing: request@2.88.0, required by project@1.0.0
 npm ERR! missing: underscore@1.9.2, required by project@1.0.0
 ...
-
 $ npm install
 added 50 packages from 60 contributors and audited 65 packages in 1.051s
 found 0 vulnerabilities
 ```
 
-如果你查看 `node_modules` 文件夹，你会发现它再次被创建了。通过这种方式，你可以轻松地与其他共享代码，而不会让依赖项导致项目和源码仓库膨肿。
+如果你查看 `node_modules` 文件夹，你会发现它再次被创建了。通过这种方式，你可以轻松地与其他共享代码，而不会让依赖项导致项目和源码仓库膨胀。
 
 ## 管理缓存
 
 当 npm 安装一个包时，它会保留副本，这样下次你想安装该包时，就不需要访问网络了。副本缓存在用户路径下的 `.npm` 目录中：
 
-```
+```bash
 $ ls ~/.npm
 anonymous-cli-metrics.json  _cacache  index-v5  _locks  _logs  node-sass
 ```
 
 随着时间的推移，这个目录会充满旧包，因此偶尔清理一下是很有用的：
 
-```
+```bash
 $ npm cache clean --force
 ```
 
@@ -705,9 +691,8 @@ find . -name "node_modules" -type d -exec rm -rf '{}' +
 
 让我们通过安装旧版本的 `express` 来尝试此功能：
 
-```
+```bash
 $ npm install express@4.8.0
-
 express@4.8.0
 added 36 packages from 24 contributors and audited 123 packages in 2.224s
 found 21 vulnerabilities (8 low, 9 moderate, 4 high)
@@ -716,11 +701,9 @@ found 21 vulnerabilities (8 low, 9 moderate, 4 high)
 
 一旦完成安装，我们就会得到一个快速报告，显示发现了多个漏洞。你可以运行命令 `npm audit` 查看更多详情：
 
-```
+```bash
 $ npm audit
-
- === npm audit security report ===
-
+=== npm audit security report ===
 # Run  npm install express@4.17.1  to resolve 21 vulnerabilities
 ┌───────────────┬──────────────────────────────────────────────────────────────┐
 │ High          │ Regular Expression Denial of Service                         │
@@ -731,31 +714,29 @@ $ npm audit
 ├───────────────┼──────────────────────────────────────────────────────────────┤
 │ Dependency of │ express                                                      │
 ├───────────────┼──────────────────────────────────────────────────────────────┤
-│ Path          │ express > negotiator                               │
+│ Path          │ express > negotiator                                         │
 ├───────────────┼──────────────────────────────────────────────────────────────┤
-│ More info     │ https://nodesecity.io/advisories/106                       │
+│ More info     │ https://nodesecurity.io/advisories/106                       │
 └───────────────┴────────────────────────────────────────┘
-
 ┌───────────────┬──────────────────────────────────────────────────────────────┐
-│ Moderate      │ Timing Attack                                                
+│ Moderate      │ Timing Attack                                                │
 ├───────────────┼──────────────────────────────────────────────────────────────┤
-│ Package       │ cookie-signature                                             
+│ Package       │ cookie-signature                                             │
 ├───────────────┼──────────────────────────────────────────────────────────────┤
 │ Dependency of │ express                                                      │
 ├───────────────┼──────────────────────────────────────────────────────────────┤
-│ Path          │ express > cookie-signature                               │
+│ Path          │ express > cookie-signature                                   │
 ├───────────────┼──────────────────────────────────────────────────────────────┤
-│ More info     │ https://nodesecity.io/advisories/134                       │
+│ More info     │ https://nodesecurity.io/advisories/134                       │
 └───────────────┴────────────────────────────────────────┘
 ```
 
-你会得到一个漏洞的详细列表。如果你查看 `Path` 字段，它显示了依赖路径。例如，`express > accepts`  Express 依赖 `accepts` 包。`accepts` 包依赖 `negotiator` 包，而后者包含漏洞。
+你会得到一个漏洞的详细列表。如果你查看 `Path` 字段，它显示了依赖路径。例如，`express > accepts` Express 依赖 `accepts` 包。`accepts` 包依赖 `negotiator` 包，而后者包含漏洞。
 
 有两种方法修复这些问题。我们可以执行建议的命令 `npm install express@4.17.1`，或者运行 `npm audit fix`。让我们尝试后者：
 
-```
+```bash
 $ npm audit fix
-
 + express@4.17.1
 added 20 packages from 14 contributors, removed 7 packages and updated 29 packages in 1.382s
 fixed 21 of 21 vulnerabilities in 122 scanned packages
@@ -767,23 +748,21 @@ fixed 21 of 21 vulnerabilities in 122 scanned packages
 
 ## 别名
 
-正如你可能注意到的，运行 npm 命令有多种方法这里是一些常用 npm 别名的简单列表：
+正如你可能注意到的，运行 npm 命令有多种方法。这里是一些常用 npm 别名的简单列表：
 
-*   `npm i <package>`：安装本地包
-*   `npm i -g <package>`：安装全局包
-*   `npm un <package>`：卸载本地包
-*   `npm up`：更新包
-*   `npm t`：运行测试
-*   `npm ls`：列出已安装模块
-*   `npm ll` 或 `npm la`：列出模块时打印额外的包信息
+* `npm i <package>`：安装本地包
+* `npm i -g <package>`：安装全局包
+* `npm un <package>`：卸载本地包
+* `npm up`：更新包
+* `npm t`：运行测试
+* `npm ls`：列出已安装模块
+* `npm ll` 或 `npm la`：列出模块时打印额外的包信息
 
 你也可以这样一次安装多个包：
 
 ```bash
-$ npm i express momemt lodash mongoose body-parser webpack
+$ npm i express moment lodash mongoose body-parser webpack
 ```
-
-
 
 如果你想查看所有常用的 npm 命令，只需执行 `npm help` 即可查看列表。你也可以在我们的文章[让你成为 npm 高手的 10 个技巧和技巧](https://www.sitepoint.com/10-npm-tips-and-tricks/) 中学习更多。
 
@@ -793,7 +772,7 @@ $ npm i express momemt lodash mongoose body-parser webpack
 
 `npx` 的典型用于执行一次性命令。例如，假设你想启动一个简单的 HTTP 服务器。你*可以*在系统上全局安装 [http-server 包](https://www.npmjs.com/package/http-server)，如果你经常使用 `http-server`，那么这样做很棒。但如果你只是想测试该包，或者想让全局安装的模块尽可能少，你可以切换到你想运行它的目录，然后执行以下命令：
 
-```
+```bash
 npx http-server
 ```
 
@@ -829,29 +808,29 @@ Express 内置了许多功能，你还可以从其他无缝集成的包获取更
 
 ## 入门
 
-你首先需要在你的机器上安装 Node 和 `npm`。要做到这一点，可以前往 [Node 官方下载页面](https://nodejs.org/en/download/) 并获取适用于你系统的正确二进制文件，或者使用版本管理器（如 `nvm`）。我们在快速贴士“[[使用 nvm 安装多个版本的 Node.js](https://www.sitepoint.com/quick-tip-multiple-versions-node-nvm/)”中涵盖了使用版本管理器安装 Node 的方法。
+你首先需要在你的机器上安装 Node 和 `npm`。要做到这一点，可以前往 [Node 官方下载页面](https://nodejs.org/en/download/) 并获取适用于你系统的正确二进制文件，或者使用版本管理器（如 `nvm`）。我们在快速贴士“[使用 nvm 安装多个版本的 Node.js](https://www.sitepoint.com/quick-tip-multiple-versions-node-nvm/)”中涵盖了使用版本管理器安装 Node 的方法。
 
 使用 Express generator 启动新项目只需运行几个命令：
 
-```
+```bash
 npm install express-generator -g
 ```
 
 这会将 Express generator 作为全局包安装，允许你在终端中运行 `express` 命令：
 
-```
+```bash
 express myapp
 ```
 
 这会创建一个名为 `myapp` 的新 Express 项目，然后将其放在 `myapp` 目录中：
 
-```
+```bash
 cd myapp
 ```
 
 如果你不熟悉终端命令，这一个会将你带入 `myapp` 目录：
 
-```
+```bash
 npm install
 ```
 
@@ -861,12 +840,12 @@ npm install
 
 生成器 CLI 接受六个[参数](https://expressjs.com/en/starter/generator.html)，但最实用的两个是：
 
-- `ejs|hbs|jade|pug|twig`
-- `less|stylus|compass|sass`
+* `ejs|hbs|jade|pug|twig`
+* `less|stylus|compass|sass`
 
 现在我们已经好了项目，可以通过运行以下命令启动服务器：
 
-```
+```bash
 npm start
 ```
 
@@ -882,7 +861,7 @@ npm start
 
 ### `public`
 
-`public` 文件夹是重要的文件夹之一：此文件夹中的*所有内容*对所有人都是的。在这个文件夹中，你将放置 JavaScript、CSS、图像以及人们加载你的网站时需要的其他资源。
+`public` 文件夹是重要的文件夹之一：此文件夹中的*所有内容*对所有人都可见。在这个文件夹中，你将放置 JavaScript、CSS、图像以及人们加载你的网站时需要的其他资源。
 
 ### `routes`
 
@@ -896,7 +875,7 @@ npm start
 
 在这些文件夹之外，有一个你应该熟悉的文件。`app.js` 文件非常特殊，因为它设置了你的 Express 应用并将所有不同部分连接在一起。让我们看看它做了什么。该文件这样开始：
 
-```
+```javascript
 var createError = require('http-errors');
 var express = require('express');
 var path = require('path');
@@ -904,25 +883,22 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 ```
 
-该文件的前六行是必须。
+该文件的前六行是必须的。
 
-```
+```javascript
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 ```
 
-
-
-
 接下来两行代码 `require` 引入了 Express 生成器默认设置的两个路由文件：`routes` 和 `users`。
 
-```
+```javascript
 var app = express();
 ```
 
 之后，我们通过调用 `express()` 创建了一个新应用。`app` 变量包含了应用程序的所有设置和路由。这个对象将你的应用程序胶在一起。
 
-```
+```javascript
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
 ```
@@ -931,7 +907,7 @@ app.set('view engine', 'jade');
 
 之后，你将看到 Express 正在配置使用中间件。生成器安装了几个你可能在 Web 应用程序中常用的常用中间件：
 
-```
+```javascript
 app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
@@ -939,20 +915,20 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 ```
 
-- `logger`。当你运行应用时，你可能会注意到所有被请求的路由都记录在了控制台中。如果你想禁用此功能，只需注释掉该中间件。
-- `express.json`。你可能会注意到有两行用于解析传入的 HTTP 请求体。第一行处理通过 `POST` 请求发送 JSON 的情况，并将这些数据放入 `request.body` 中。
-- `express.urlencoded`。第二行解析 URL 中的查询字符串数据（例如 `/profile?id=5`）并将其放入 `request.query` 中。
-- `cookieParser`。它获取客户端发送的所有 Cookie 并将其放入 `request.cookies` 中。它还允许你在将它们发送回客户端之前通过更改 `response.cookies` 来进行修改。
-- `express.static`。该中间件从你的 `public` 文件夹提供静态资源。如果你想重命名或移动 `public` 文件夹，可以在这里更改路径。
+* `logger`。当你运行应用时，你可能会注意到所有被请求的路由都记录在了控制台中。如果你想禁用此功能，只需注释掉该中间件。
+* `express.json`。你可能会注意到有两行用于解析传入的 HTTP 请求体。第一行处理通过 `POST` 请求发送 JSON 的情况，并将这些数据放入 `request.body` 中。
+* `express.urlencoded`。第二行解析 URL 中的查询字符串数据（例如 `/profile?id=5`）并将其放入 `request.query` 中。
+* `cookieParser`。它获取客户端发送的所有 Cookie 并将其放入 `request.cookies` 中。它还允许你在将它们发送回客户端之前通过更改 `response.cookies` 来进行修改。
+* `express.static`。该中间件从你的 `public` 文件夹提供静态资源。如果你想重命名或移动 `public` 文件夹，可以在这里更改路径。
 
 接下来是路由：
 
-```
+```javascript
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 ```
 
-在这里，之前引入的示例路由文件被挂到了到了 `app` 上。如果你需要添加额外的路由，可以在这里进行。
+在这里，之前引入的示例路由文件被挂载到了 `app` 上。如果你需要添加额外的路由，可以在这里进行。
 
 此后的所有代码都用于错误处理。除非你想更改 Express 处理错误的方式，否则通常不需要修改这些代码。默认情况下，它被设置为在开发模式下显示在路由中发生的错误。
 
@@ -962,7 +938,7 @@ app.use('/users', usersRouter);
 
 假设你已经作为全局模块安装了 `express-generator`，运行以下命令创建一个新的骨架项目：
 
-```
+```bash
 express -v hbs signup-form
 ```
 
@@ -988,27 +964,21 @@ npm install hbs@4.1.0
 ```html
 <!doctype html>
 <html lang="en">
-
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   <meta name="author" content="">
-
   <title>{{title}}</title>
-
   <!-- Bootstrap core CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
     integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-
   <!-- Custom styles for this template -->
   <link href="/stylesheets/style.css" rel="stylesheet">
 </head>
-
 <body>
   {{{body}}}
 </body>
-
 </html>
 ```
 
@@ -1019,7 +989,6 @@ html,
 body {
   height: 100%;
 }
-
 body {
   display: -ms-flexbox;
   display: flex;
@@ -1029,14 +998,10 @@ body {
   padding-bottom: 40px;
   background-color: #f5f5f5;
 }
-
 .full-width {
   width: 100%;
 }
 ```
-
-
-
 
 希望你现在已经清楚地了解了 `express-generator` 工具在启动新的 Express 项目时，它是如何为你节省编写重复样板代码的时间的。
 
@@ -1046,11 +1011,11 @@ body {
 
 ### 作者 Nilson Jacques
 
-想要构建 Node.js Web 应用的开发者通常会早遇到 `Express`。虽然 `Express` 无疑是 Node 最流行的 HTTP 应用框架之一，但它是非常精简的，需要开发者自己从第三方包中组合出他们所需的功能。
+想要构建 Node.js Web 应用的开发者通常会早早遇到 `Express`。虽然 `Express` 无疑是 Node 最流行的 HTTP 应用框架之一，但它是非常精简的，需要开发者自己从第三方包中组合出他们所需的功能。
 
 [AdonisJs](https://adonisjs.com/) 是一个用于 Node 的 MVC 框架，旨在提供构建现代 Web 应用所需的所有主要功能。它深受 [Laravel PHP 框架](https://laravel.com/) 的启发，借鉴了其大量的语法和布局。
 
-本指南旨在对 Adonis 提供的功能进行高级概述，帮助你判断它是否适合你。在整个指南中，我将将其功能与 Laravel 提供的功能进行对比，以便 PHP 开发者有一个良好的参考点。
+本指南旨在对 Adonis 提供的功能进行高级概述，帮助你判断它是否适合你。在整个指南中，我将把其功能与 Laravel 提供的功能进行对比，以便 PHP 开发者有一个良好的参考点。
 
 ### Adonis 版本
 
@@ -1064,35 +1029,33 @@ body {
 
 AdonisJs CLI 是一个广泛等同于 Laravel `artisan` 命令的工具。它作为全局 Node 模块安装：
 
-```
+```bash
 npm i -g @adonisjs/cli
 ```
 
 CLI 可以轻松创建新项目：
 
-```
+```bash
 adonis new my-new-project
 ```
 
 它也能轻松地启动项目：
 
-```
+```bash
 adonis serve
 ## 或者，使用文件监听模式
 adonis serve --dev
 ```
 
-像 `artisan` 一样，在 Adonis 项目目录内运行时，它可以用于创建和运行数据库迁移、脚架模型和控制器，以及运行自定义命令行任务。
+像 `artisan` 一样，在 Adonis 项目目录内运行时，它可以用于创建和运行数据库迁移、脚手架模型和控制器，以及运行自定义命令行任务。
 
 ### REPL
 
 你也可以使用 CLI 工具进入一个类似于 [tinker](https://laravel.com/docs/6.x/artisan#tinker) 的命令行环境。在这个环境中，你可以访问应用程序代码以及所有的框架库和辅助函数。
 
-```
+```bash
 adonis repl
 ```
-
-
 
 [repl](https://adonisjs.com/docs/4.0/database-basics#_what_is_repl)（读取-评估-打印循环）对于调试和维护任务非常有用——例如，在开发过程中创建新用户或重置密码。
 
@@ -1100,7 +1063,7 @@ adonis repl
 
 [新 AdonisJs 项目的文件结构](https://adonisjs.com/docs/4.1/folder-structure) 与 Laravel 项目相比有许多相似之处：
 
-```
+```text
 ├── ace
 ├── app
 │   ├── Controllers
@@ -1133,7 +1096,7 @@ adonis repl
 
 [应用程序的路由](https://adonisjs.com/docs/4.1/routing) 在 `start/routes.js` 中定义，对于任何有 Laravel 背景的人来说都会非常熟悉：
 
-```
+```javascript
 Route.get('posts', () => {...});
 Route.post('posts', () => {...});
 Route.put('posts/:id', () => {...});
@@ -1142,7 +1105,7 @@ Route.delete('posts/:id', () => {...});
 
 从最后两个路由可以看出，定义带参数的路由非常简单：
 
-```
+```javascript
 Route.get('posts/:id', ({ params }) => {
   return `Post ${params.id}`
 });
@@ -1150,7 +1113,7 @@ Route.get('posts/:id', ({ params }) => {
 
 像 Laravel 一样，AdonisJs 还提供了一个方便的快捷方式来为资源定义一组 CRUD 路由（即 RESTful 路由）：
 
-```
+```javascript
 Route.resource('posts', 'PostController');
 ```
 
@@ -1160,7 +1123,7 @@ Adonis 处理中间件的方式 Laravel 开发者也应该觉得非常熟悉。[
 
 **服务器中间件：**
 
-```
+```javascript
 const serverMiddleware = [
   'Adonis/Middleware/Static',
   'Adonis/Middleware/Cors',
@@ -1171,7 +1134,7 @@ const serverMiddleware = [
 
 **全局中间件：**
 
-```
+```javascript
 const globalMiddleware = [
   'Adonis/Middleware/BodyParser',
 ]
@@ -1181,7 +1144,7 @@ const globalMiddleware = [
 
 **命名中间件：**
 
-```
+```javascript
 const namedMiddleware = {
   auth: 'Adonis/Middleware/Auth',
 }
@@ -1189,15 +1152,15 @@ const namedMiddleware = {
 
 一旦注册，命名中间件可以附加到路由上：
 
-```
+```javascript
 Route.get('admin', 'AdminController.index').middleware(['auth'])
 ```
 
 ### 控制器
 
-使用 CLI 在 Adonis 中创建控制器非常。有一个指定类型的选项来创建 HTTP 或 WebSocket 控制器：
+使用 CLI 在 Adonis 中创建控制器非常简单。有一个指定类型的选项来创建 HTTP 或 WebSocket 控制器：
 
-```
+```bash
 adonis make:controller Posts --type http
 ```
 
@@ -1211,7 +1174,7 @@ Adonis 支持 MySQL/MariaDB、MSSQL、Oracle、PostgreSQL 和 SQLite3。驱动�
 
 框架带有一个[查询构建器](https://adonisjs.com/docs/4.1/query-builder)，其工作方式与 Laravel 类似。它提供了一个直观的 API 来构建复杂的查询，而无需编写任何 SQL：
 
-```
+```javascript
 const adults = await Database
   .from('users')
   .where('age', '>', 18)
@@ -1226,14 +1189,14 @@ Adonis（或者说是底层使用的 [Knex.js](https://knexjs.org/)）将其转�
 
 Lucid 像 Laravel 的 Eloquent 一样基于活动记录模式（active record pattern），Adonis 团队显然付出了大量努力来实现这两个库之间的功能对等。
 
-- **关系**：你可以使用内置方法轻松地定义 `hasOne`、`hasMany`、`belongsTo`、`belongsToMany` 和 `manyThrough` 关系。
-- **Trait（Traits）**：你可以定义“trait”在不同模型之间共享功能而无需重复代码。
-- **钩子（Hooks）**：你可以为模型生命周期事件（如 `beforeCreate` 和 `beforeSave`）附加回调以便修改记录。
-- **修改器（Mutators）**：你可以为模型属性定义 getter 和 setter 以改变它们的值。
+* **关系**：你可以使用内置方法轻松地定义 `hasOne`、`hasMany`、`belongsTo`、`belongsToMany` 和 `manyThrough` 关系。
+* **Trait（Traits）**：你可以定义“trait”在不同模型之间共享功能而无需重复代码。
+* **钩子（Hooks）**：你可以为模型生命周期事件（如 `beforeCreate` 和 `beforeSave`）附加回调以便修改记录。
+* **修改器（Mutators）**：你可以为模型属性定义 getter 和 setter 以改变它们的值。
 
 如前提到的，可以使用 CLI 创建新模型：
 
-```
+```bash
 adonis make:model Post
 ```
 
@@ -1241,32 +1204,24 @@ adonis make:model Post
 
 **app/Models/Post.js:**
 
-```
+```javascript
 'use strict'
-
 const Model = use('Model')
-
 class Post extends Model {
 }
-
 module.exports = Post
 ```
 
-向命令传递 `--migration` 标志还将生成一个迁移迁移文件，用于创建模型对应的数据库表。
-
-
-
+向命令传递 `--migration` 标志还将生成一个迁移文件，用于创建模型对应的数据库表。
 
 让我们通过一些代码示例来熟悉一下语法。
 
 ## 创建新记录：
 
-```
+```javascript
 const post = new Post();
-
 post.name = 'My first blog post';
 post.content = 'Blah blah blah...';
-
 await post.save();
 ```
 
@@ -1286,14 +1241,13 @@ const post = await Post.create({
 ```javascript
 // 返回所有记录
 const posts = Post.all();
-
 // 通过 ID 查找
 const post = Post.find(1);
 ```
 
 ## 在模型中使用查询构造器：
 
-```
+```javascript
 const adults = await User
   .query()
   .where('age', '>', 18)
@@ -1325,11 +1279,8 @@ adonis migration:run
 
 ```javascript
 // database/migrations/1502691651527_posts_schema.js
-
 'use strict'
-
 const Schema = use('Schema')
-
 class PostsSchema extends Schema {
   up () {
     this.create('users', (table) => {
@@ -1340,12 +1291,10 @@ class PostsSchema extends Schema {
       table.timestamps()
     })
   }
-
   down () {
     this.drop('posts')
   }
 }
-
 module.exports = PostsSchema
 ```
 
@@ -1361,17 +1310,15 @@ module.exports = PostsSchema
 
 ```html
 // resources/views/list.edge
-
 @layout('main')
-
 @section('content')
 <div>
-  <<ul>
+  <ul>
     @each(item in list)
       <li>
         <a href="{{ item.url }}">{{ item.text }}</a>
       </li>
-    @endach
+    @endeach
   </ul>
 </div>
 @endsection
@@ -1379,17 +1326,18 @@ module.exports = PostsSchema
 
 模板也用于帮助视图。这里是一些常用标签：
 
-*   `@layout`：指定将渲染布局
-*   `@section`：指定将内容插入到布局中
-*   `@each`：指定该块将重复
-*   `@include`：允许包含部分组件
+* `@layout`：指定将渲染布局
+* `@section`：指定将内容插入到布局中
+* `@each`：指定该块将重复
+* `@include`：允许包含部分组件
 
+# 第 5 章：用于构建 API 的 5 个 Node.js 框架
 
-
+### 作者 Michael Wanyoike
 
 过去，我们习惯于构建单体应用，在单个代码库中处理视图、业务逻辑和数据管理。这种架构产生了许多影响应用程序稳定性、性能和可维护性的问题。
 
-如今，许多 Web 应用更倾向于使用模块化的方法。这通常涉及创建一个面向的 API，暴露与应用程序数据交互的端点（endpoints）。在本指南中，我们将快速查看什么是 API，以及我们可以用于在 Node.js 构建 API 的五个对开发者友好的框架。
+如今，许多 Web 应用更倾向于使用模块化的方法。这通常涉及创建一个面向 API 的服务，暴露与应用程序数据交互的端点（endpoints）。在本指南中，我们将快速查看什么是 API，以及我们可以用于在 Node.js 构建 API 的五个对开发者友好的框架。
 
 ## 什么是 API？
 
@@ -1399,19 +1347,19 @@ module.exports = PostsSchema
 
 API 提供了重要的后端功能，例如：
 
-*   CRUD 操作（增删改查）
-*   数据验证与转换
-*   身份验证
-*   访问控制
-*   业务逻辑
-*   事务性邮件
-*   任务调度
-*   事件处理
+* CRUD 操作（增删改查）
+* 数据验证与转换
+* 身份验证
+* 访问控制
+* 业务逻辑
+* 事务性邮件
+* 任务调度
+* 事件处理
 
 在 Node 中构建 API 服务器非常简单。如果你需要快速设置一个来测试你的前端代码，可以安装 [JSON server](https://www.npmjs.com/package/json-server#getting-started) 来快速对后端进行原型设计。如果你已经开始构建自己的 API 但尚还没有前端，可以使用以下工具来测试你的端点：
 
-*   [Postman](https://www.getpostman.com/)
-*   [Insomnia](https://insomnia.rest/)
+* [Postman](https://www.getpostman.com/)
+* [Insomnia](https://insomnia.rest/)
 
 这些工具允许你执行 REST 和 GraphQL 查询。我们稍后会详细介绍它们。
 
@@ -1421,13 +1369,13 @@ API 提供了重要的后端功能，例如：
 
 ![express](img/express.png)
 
-如果你是 Node.js 初学者，这是你应该开始使用的框架。你可以使用命令 `npm install express` 将 [安装 Express](https://expressjs.com/en/starter/installing.html) 作为包依赖进行安装。或者，你可以使用 [express-generator](https://expressjs.com/en/starter/generator.html) 命令行工具快速启动一个 Express 起项目。我们还有一个关于[如何使用此库的教程](https://www.sitepoint.com/create-new-express-js-apps-with-express-generator/)。
+如果你是 Node.js 初学者，这是你应该开始使用的框架。你可以使用命令 `npm install express` 将 [安装 Express](https://expressjs.com/en/starter/installing.html) 作为包依赖进行安装。或者，你可以使用 [express-generator](https://expressjs.com/en/starter/generator.html) 命令行工具快速启动一个 Express 起步项目。我们还有一个关于[如何使用此库的教程](https://www.sitepoint.com/create-new-express-js-apps-with-express-generator/)。
 
 让我们来看看在 Express 中管理用户的简单 REST API 可能长什么样。
 
 首先，创建一个新项目并安装 Express：
 
-```
+```bash
 mkdir express-api
 cd express-api
 npm init -y
@@ -1441,28 +1389,23 @@ let data = [
   { id: 1, firstName: 'Michael', lastName: 'Wanyoike' },
   { id: 2, firstName: 'James', lastName: 'Hibbard' },
 ];
-
 const express = require('express');
 const bodyParser = require('body-parser');
 const app = express().use(bodyParser.json());
-
 // 获取所有用户
 app.get('/users', (req, res) => { res.json(data); });
-
 // 获取单个用户
 app.get('/users/:id', (req, res) => {
   const id = Number(req.params.id);
   const user = data.find(user => user.id === id);
   res.json(user ? user : { message: 'Not found' });
 });
-
 // 添加用户
 app.post('/users', (req, res) => {
   const user = req.body;
   data.push(user);
   res.json(data);
 });
-
 // 更新用户
 app.put('/users/:id', (req, res) => {
   const id = Number(req.params.id);
@@ -1470,16 +1413,16 @@ app.put('/users/:id', (req, res) => {
   data = data.map(user => user.id === id ? updatedUser : user);
   res.json(data);
 });
-
 // 删除用户
 app.delete('/users/:id', (req, res) => {
   const id = Number(req.params.id);
   data = data.filter(user => user.id !== id);
   res.json(data);
 });
-
 app.listen(3000, () => { console.log('Server listening at port 3000'); });
 ```
+
+
 
 保存此代码，然后使用 `node server.js` 启动服务器。它现在运行在 `http://localhost:3000`。
 
@@ -1529,7 +1472,7 @@ Fastify 是一个受 Hapi 和 Express 启发的 Node.js 框架。它旨在尽可
 
 要开始使用，你可以作为包依赖安装到你的项目中。只需执行以下命令：
 
-```
+```bash
 mkdir fastify-app
 cd fastify-app
 npm init -y
@@ -1554,12 +1497,9 @@ const start = async () => {
     process.exit(1)
   }
 }
+
 start()
 ```
-
-
-
-
 
 ```javascript
 const fastify = require('fastify')({ logger: true })
@@ -1600,6 +1540,7 @@ const start = async () => {
     process.exit(1)
   }
 }
+
 start()
 ```
 
@@ -1619,7 +1560,7 @@ $ curl http://localhost:3000
 
 ### 表达式风格
 
-在 Fastify 中，你写的代码比在 Express 中少。例如，在 Express 中，你需要导入额外的包来处理 JSON 请求和响应。在 Fastify 中，你只需要与对象字量量工作，JSON 部分由框架自动处理。
+在 Fastify 中，你写的代码比在 Express 中少。例如，在 Express 中，你需要导入额外的包来处理 JSON 请求和响应。在 Fastify 中，你只需要与对象字面量工作，JSON 部分由框架自动处理。
 
 ### 钩子 (Hooks)
 
@@ -1646,8 +1587,6 @@ Fastify 还拥有一个丰富的[插件生态系统](https://www.fastify.io/ecos
 
 * [首页](https://www.fastify.io/)
 
-
-
 ```bash
 ## 确保 Mongo 正在运行
 sudo service mongod start
@@ -1665,7 +1604,7 @@ npm run dev
 ✔ Keystone 实例已就绪：`http://localhost:3000` 🚀
 🔗 Keystone 管理界面: `http://localhost:3000/admin`
 🔗 GraphQL Playground: `http://localhost:3000/admin/graphiql`
-🔗 GraphQL API: `http://localhost:3000/admin/api` 
+🔗 GraphQL API: `http://localhost:3000/admin/api`
 
 接下来，你可以访问 `http://localhost:3000/admin`，在那里你可以使用 UI 创建新的 `Todos`。你也可以访问 GraphQL API `http://localhost:3000/admin/api` 并执行一些查询。例如，要列出所有的 `todos`，你可以使用查询：
 
@@ -1704,16 +1643,12 @@ GraphQL 相比 REST 的主要优势在于你可以轻松提取任何需要的数
 ```bash
 ## 打开 mongo 客户端 shell
 mongo
-
 ## 列出所有数据库
 show databases
-
 ## 切换到数据库
 use keystone-app
-
 ## 显示 todos
 db.todos.find()
-
 { "_id" : ObjectId("5e257020db53a03f48782463"), "name" : "Write Articles", "__v" : 0 }
 { "_id" : ObjectId("5e257033db53a03f48782464"), "name" : "Eat lunch", "__v" : 0 }
 ```
@@ -1748,7 +1683,6 @@ Strapi 的主要优势是终端用户可以在不涉及开发人员的情况下�
 ```bash
 ## 基于快速启动模板创建一个新的 strapi 项目
 yarn create strapi-project quickstart
-
 ## 启动 Strapi 服务器
 yarn dev
 ```
@@ -1790,16 +1724,12 @@ GraphQL 相比 REST 的主要优势在于你可以轻松提取任何需要的数
 ```bash
 ## 打开 mongo 客户端 shell
 mongo
-
 ## 列出所有数据库
 show databases
-
 ## 切换到数据库
 use keystone-app
-
 ## 显示 todos
 db.todos.find()
-
 { "_id" : ObjectId("5e257020db53a03f48782463"), "name" : "Write Articles", "__v" : 0 }
 { "_id" : ObjectId("5e257033db53a03f48782464"), "name" : "Eat lunch", "__v" : 0 }
 ```
@@ -1811,10 +1741,9 @@ db.todos.find()
 *   [GitHub](https://github.com/keystonejs/keystone)
 *   [npm](https://www.npmjs.com/package/keystone)
 
+# 第 6 章：在 Node.js 中使用 MySQL
 
-
-
-NoSQL 数据库在 Node 开发者中非常流行，其中 MongoDB（MEAN 栈中的“M”）处于领先地位。然而，在启动一个新的 Node 项目时，你不应该仅仅将 Mongo 视为默认选择。相反，你选择的数据库类型应该取决于你的项目需求。例如，如果你需要动态创建表或实时插入，那么 NoSQL 解决方案是你的之选。另一方面，如果你的项目处理复杂的查询和事务，那么 SQL 数据库会合合理得多。
+NoSQL 数据库在 Node 开发者中非常流行，其中 MongoDB（MEAN 栈中的“M”）处于领先地位。然而，在启动一个新的 Node 项目时，你不应该仅仅将 Mongo 视为默认选择。相反，你选择的数据库类型应该取决于你的项目需求。例如，如果你需要动态创建表或实时插入，那么 NoSQL 解决方案是你的之选。另一方面，如果你的项目处理复杂的查询和事务，那么 SQL 数据库会合理得多。
 
 在本教程中，我们将介绍如何开始使用 [mysql 模块](https://github.com/felixge/node-mysql)——这是一个用 JavaScript 编写的 Node.js MySQL 客户端。我们将解释如何使用该模块连接 MySQL 数据库并执行常见的 CRUD 操作，然后查看存储过程和用户输入转义。
 
@@ -1830,14 +1759,16 @@ NoSQL 数据库在 Node 开发者中非常流行，其中 MongoDB（MEAN 栈中�
 4. 创建 `app.js` 文件并复制下面的代码段（根据需要修改占位符）。
 5. 运行文件：`node app.js`。观察到“Connected!”消息。
 
-```
+```javascript
 const mysql = require('mysql');
+
 const connection = mysql.createConnection({
   host: 'localhost',
   user: 'user',
   password: 'password',
   database: 'database name'
 });
+
 connection.connect((err) => {
   if (err) throw err;
   console.log('Connected!');
@@ -1872,14 +1803,12 @@ npm install mysql
 ```sql
 CREATE DATABASE sitepoint CHARACTER SET utf8 COLLATE utf8_general_ci;
 USE sitepoint;
-
 CREATE TABLE authors (
   id int(11) NOT NULL AUTO_INCREMENT,
   name varchar(50),
   city varchar(50),
   PRIMARY KEY (id)
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=5 ;
-
 INSERT INTO authors (id, name, city) VALUES
 (1, 'Michaela Lehr', 'Berlin'),
 (2, 'Michael Wanyoike', 'Nairobi'),
@@ -1952,7 +1881,6 @@ const con = mysql.createConnection({
 ```javascript
 con.query('SELECT * FROM authors', (err,rows) => {
   if(err) throw err;
-
   console.log('Data received from Db:');
   console.log(rows);
 });
@@ -1960,7 +1888,8 @@ con.query('SELECT * FROM authors', (err,rows) => {
 
 当你运行 `app.js` 时，你应该能从数据库返回的数据打印到终端：
 
-```[ RowDataPacket { id: 1, name: 'Michaela Lehr', city: 'Berlin' },
+```
+[ RowDataPacket { id: 1, name: 'Michaela Lehr', city: 'Berlin' },
   RowDataPacket { id: 2, name: 'Michael Wanyoike', city: 'Nairobi' },
   RowDataPacket { id: 3, name: 'James Hibbard', city: 'Munich' },
   RowDataPacket { id: 4, name: 'Karolina Gawron', city: 'Wrocław' } ]
@@ -1991,7 +1920,6 @@ Karolina Gawron lives in Wrocław
 const author = { name: 'Craig Buckler', city: 'Exmouth' };
 con.query('INSERT INTO authors SET ?', author, (err, res) => {
   if(err) throw err;
-
   console.log('Last insert ID:', res.insertId);
 });
 ```
@@ -1999,9 +1927,6 @@ con.query('INSERT INTO authors SET ?', author, (err, res) => {
 注意我们如何通过回调参数获取获取插入记录的 ID。
 
 ### 更新
-
-
-
 
 同样，当执行更新查询时，可以使用 `result.affectedRows` 获取受影响的行数：
 
@@ -2011,7 +1936,6 @@ con.query(
   ['Leipzig', 3],
   (err, result) => {
     if (err) throw err;
-
     console.log(`Changed ${result.changedRows} row(s)`);
   }
 );
@@ -2025,7 +1949,6 @@ con.query(
 con.query(
   'DELETE FROM authors WHERE id = ?', [5], (err, result) => {
     if (err) throw err;
-
     console.log(`Deleted ${result.affectedRows} row(s)`);
   }
 );
@@ -2043,7 +1966,6 @@ con.query(
 
 ```sql
 DELIMITER $$
-
 CREATE PROCEDURE `sp_get_authors`()
 BEGIN
   SELECT id, name, city FROM authors;
@@ -2063,7 +1985,6 @@ END $$
 ```javascript
 con.query('CALL sp_get_authors()',function(err, rows){
   if (err) throw err;
-
   console.log('Data received from Db:');
   console.log(rows);
 });
@@ -2104,9 +2025,6 @@ James Hibbard lives in Leipzig
 Karolina Gawron lives in Wrocław
 ```
 
-
-
-
 ```javascript
 const sequelize = new Sequelize('sitepoint', 'user', 'password', {
   host: 'localhost',
@@ -2137,7 +2055,7 @@ Author.findAll().then(authors => {
 
 ## 结论
 
-在本教程中，我们为 Node.js 安装了 [mysql 客户端](https://github.com/mysqljs/mysql) 并配置了它连接数据库。我们还学习了如何执行 CRUD 操作、使用预处理语句以及转义用户输入以缓解 `SQL` 注入攻击。尽管如此，我们仅仅接触了 `mysql` 客户端提供的功能的冰角。如需更详细的信息，我们建议阅读[官方文档](https://github.com/mysqljs/mysql)。
+在本教程中，我们为 Node.js 安装了 [mysql 客户端](https://github.com/mysqljs/mysql) 并配置了它连接数据库。我们还学习了如何执行 CRUD 操作、使用预处理语句以及转义用户输入以缓解 `SQL` 注入攻击。尽管如此，我们仅仅接触了 `mysql` 客户端提供的功能的冰山一角。如需更详细的信息，我们建议阅读[官方文档](https://github.com/mysqljs/mysql)。
 
 请记住，`mysql` 模块并不是唯一的选择。还有其他选项，例如流行的 [node-mysql2](https://github.com/sidorares/node-mysql2)。
 
@@ -2151,13 +2069,13 @@ MongoDB 是一个跨平台、开源的 NoSQL 数据库，被许多现代 Node �
 
 ## 术语和基础概念
 
-MongoDB 是一个面向文档的数据库。这意味着它不使用表和行来存储数据，而是使用类似 JSON 的 `documents` 集合`collections`）。这些 `documents` 支持嵌入字段，因此相关数据可以存储在其中。
+MongoDB 是一个面向文档的数据库。这意味着它不使用表和行来存储数据，而是使用类似 JSON 的 `documents` 集合（`collections`）。这些 `documents` 支持嵌入字段，因此相关数据可以存储在其中。
 
 MongoDB 也是一个无模式（schema-less）数据库，因此我们在插入数据之前不需要指定列的数量或类型。
 
 以下是一个 MongoDB 文档的示例：
 
-```
+```json
 {
   _id: ObjectId(3da252d3902a),
   type: "Tutorial",
@@ -2228,7 +2146,7 @@ dbpath (/data/db) does not exist. Create this directory or give existing directo
 
 这意味着 Mongo 无法找到或访问存储数据库的目录。这很容易解决：
 
-```
+```bash
 sudo mkdir -p /data/db
 sudo chown -R `id -un` /data/db
 ```
@@ -2254,10 +2172,6 @@ sudo chown -R `id -un` /data/db
 这假设 `<mongodb installation dir>/bin` 在你的路径中。如果由于某种原因并非如此，请进入 `<mongodb installation dir>/bin` 目录并重新运行命令。
 
 如果你遇到 `Error: couldn't connect to server` 错误，你需要在另一个终端窗口中使用 `mongod` 命令启动 Mongo 服务。
-
-
-
-
 
 一旦进入了 Mongo shell，输入 `db.version()` 即可查看正在运行的 MongoDB 版本。在本文编写时，输出应为 `4.2.2`。
 
@@ -2347,6 +2261,7 @@ local          0.000GB
 *   确保你在没有开启任何访问控制的情况下启动了服务器（通常通过输入 `mongod`）。
 *   通过输入 `mongo` 打开 shell。
 *   从 shell 中，为 `exampledb` 数据库添加一个具有 `readWrite` 角色的用户。这将提示你输入密码。显然，将 “manjunath” 替换为所需的用户名：
+
 ```javascript
 use exampledb
 db.createUser(
@@ -2355,6 +2270,7 @@ db.createUser(
   roles: [ "readWrite" ]
 )
 ```
+
 *   退出 Mongo shell。
 *   使用 `mongod --auth` 关闭并重启服务器。连接到此实例的客户端现在必须身份验证。
 *   重新打开 shell：`mongo --authentication "exampledb" -u "manjunath" -p`。现在会提示你输入密码。
@@ -2463,12 +2379,7 @@ db.createUser(
 [更新操作](https://docs.mongodb.com/manual/tutorial/update-documents/) 修改集合中的文档。与创建操作类似，MongoDB 提供了多种更新文档的方法。例如：
 
 1.  `db.collection.updateOne(<filter>, <update>, <options>)`
-
 2.  `db.collection.updateMany(<filter>, <update>, <options>)`
-
-
-
-
 
 如果你需要为集合中的所有现有文档添加一个额外的字段——例如 `registration`——你可以执行如下操作：
 
@@ -2484,9 +2395,8 @@ db.createUser(
 ```
 > db.users.updateMany(
   {age:{ $gt: 18} },
-  {$set: { registration: "complete"}
-})
-
+  {$set: { registration: "complete"}}
+)
 { "acknowledged" : true, "matchedCount" : 3, "modifiedCount" : 3 }
 ```
 
@@ -2495,9 +2405,8 @@ db.createUser(
 ```
 > db.users.updateOne(
  {email: "tom@example.com" },
- {$set: { registration: "complete"}
-})
-
+ {$set: { registration: "complete"}}
+)
 { "acknowledged" : true, "matchedCount" : 1, "modifiedCount" : 1 }
 ```
 
@@ -2510,13 +2419,10 @@ db.createUser(
 ```
 > db.users.updateOne(
  {email: "tom@example.com" },
- {$set: { status: "dormant"}
-})
-
+ {$set: { status: "dormant"}}
+)
 { "acknowledged" : true, "matchedCount" : 1, "modifiedCount" : 1 }
-
 > db.users.deleteMany( { status: { $in: [ "dormant", "inactive" ] } } )
-
 { "acknowledged" : true, "deletedCount" : 1 }
 ```
 
@@ -2549,7 +2455,6 @@ db.createUser(
     }
   }
 })
-
 { "ok" : 1 }
 ```
 
@@ -2557,8 +2462,7 @@ db.createUser(
 
 ```
 > db.validatedUsers.insertOne({ name: "Jim", email: "not-an-email" })
-
-2020-01-22T09:56:56.918+0100 E  QUERY    &lsqb;js] uncaught exception: WriteError({
+2020-01-22T09:56:56.918+0100 E  QUERY    [js] uncaught exception: WriteError({
   "index" : 0,
   "code" : 121,
   "errmsg" : "Document failed validation",
@@ -2602,19 +2506,16 @@ npm install mongodb
 
 下面的示例演示了如何使用它：
 
-```
+```javascript
 const { MongoClient } = require('mongodb');
 const url = 'mongodb://localhost:27017';
-
 (async () => {
   let client;
-
   try {
     client = await MongoClient.connect(url, {
       useNewUrlParser: true,
       useUnifiedTopology: true
     });
-
     const db = client.db('exampledb');
     const collection = db.collection('users');
     const users = await collection.find().toArray();
@@ -2622,7 +2523,6 @@ const url = 'mongodb://localhost:27017';
   } catch (err) {
     console.log(err.stack);
   }
-
   if (client) {
     await client.close();
   }
@@ -2643,30 +2543,22 @@ npm install mongoose
 
 ```javascript
 const mongoose = require('mongoose');
-
 async function run() {
   await mongoose.connect('mongodb://localhost:27017/exampledb', {
     useNewUrlParser: true,
     useUnifiedTopology: true
   });
-
   const userSchema = new mongoose.Schema({ name: String, age: String, email: String });
   const User = mongoose.model('User', userSchema);
-
   const users = await User.find();
   console.log(users);
   mongoose.connection.close();
 }
-
 run().catch(error => console.log(error.stack));
 ```
 
 ## 结论
 
 在 Mongoose 中，一切都始于 [Schema](https://mongoosejs.com/docs/guide.html)。每个 schema 映射到一个 MongoDB 集合，并定义该集合内文档的形状。
-
-
-
-
 
 MongoDB 是一种流行的 NoSQL 数据库解决方案，适用于现代开发需求。在本教程中，我们涵盖了 `MongoDB` 的基础知识、`Mongo shell` 以及一些常用的驱动程序。我们还探索了 `Mongo shell` 中常见的数据库操作和 CRUD 动作。现在是你时候去尝试我们在这里介绍的内容以及更多内容了。如果你想学习更多知识，我建议使用 `MongoDB` 和 `Node` 创建一个 REST API，以熟悉常见的数据库操作和方法。

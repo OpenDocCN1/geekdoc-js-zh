@@ -31,9 +31,9 @@
 
 地址：71 Balmain Street, Cremorne, VIC, 3121, Australia
 
-网站：www.sitepoint.com
+网站：`www.sitepoint.com`
 
-邮箱：books@sitepoint.com
+邮箱：`books@sitepoint.com`
 
 ## 关于 SitePoint
 
@@ -143,8 +143,6 @@ console.log(state); // Logs: { count: 1 }
 *   如果操作的`type`属性为`"Increment"`，我们增加`state`上的`count`属性。
 *   如果操作的`type`属性为`"Decrement"`，我们减少`state`上的`count`属性。
 *   如果以上两点都不成立，我们什么都不做，返回原始状态。
-
-
 
 Redux 要求 action 必须是一个包含 `type` 属性的对象，如上例所示。React 则没有那么严格。action 可以是任何东西——甚至是一个原始值，比如数字。例如，在使用 `useReducer` 时，这是一个有效的 reducer：
 
@@ -258,6 +256,8 @@ export const decrement = (amount: number = 1): CounterAction => ({
 
 我们还需要更新我们的 reducer 以支持这种新的 action 结构。这感觉也是一个整体审视示例的好机会：
 
+
+
 ```typescript
 export const INCREMENT = 'Increment';
 export const DECREMENT = 'Decrement';
@@ -305,15 +305,13 @@ let state: CounterState = { count: 0 };
 
 ## 使用联合类型
 
-但是等等，还有更多！我们使用了一些传统模式来解决 reducer 忽略未明确告知其查找的 action 的问题，但如果我们能使用 TypeScript 从一开始就防止这种情况发生呢？
+但是等等，还有更多！我们使用了一些传统模式来解决 reducer 忽略未明确告知其查找的 action 的问题，但如果我们能使用 `TypeScript` 从一开始就防止这种情况发生呢？
 
 让我们假设，除了能够递增和递减计数器外，我们还可以将其重置为零。这给了我们三种类型的 action：
 
-*   `Increment`
-
-*   `Decrement`
-
-*   `Reset`
+* `Increment`
+* `Decrement`
+* `Reset`
 
 我们将从 `Increment` 和 `Decrement` 开始，稍后再处理 `Reset`。
 
@@ -321,9 +319,7 @@ let state: CounterState = { count: 0 };
 
 让我们从我们已知的两个量开始：`Increment` 和 `Decrement`。我们不必说 action 上的 `type` 属性可以是任何字符串，我们可以更具体一些。
 
-
-
-在`04-unions`[我们的 GitHub 仓库](https://github.com/stevekinney/sitepoint-reducers/blob/main/src/04-unions.ts)中，我使用了`'Increment' | 'Decrement'`的联合类型。我们现在告诉 TypeScript，`CounterAction`上的`type`属性不仅仅是*任意*字符串，而是恰好两个字符串之一：
+在`04-unions`[我们的 GitHub 仓库](https://github.com/stevekinney/sitepoint-reducers/blob/main/src/04-unions.ts)中，我使用了`'Increment' | 'Decrement'`的联合类型。我们现在告诉 `TypeScript`，`CounterAction` 上的 `type` 属性不仅仅是*任意*字符串，而是恰好两个字符串之一：
 
 ```typescript
 type CounterAction = {
@@ -334,17 +330,17 @@ type CounterAction = {
 };
 ```
 
-这个相对简单的改变带来了许多好处。第一个也是最明显的好处是，我们不再需要担心拼写错误或误输入操作的`type`。
+这个相对简单的改变带来了许多好处。第一个也是最明显的好处是，我们不再需要担心拼写错误或误输入操作的 `type`。
 
 ![TypeScript 捕获无效类型](img/invalid-type.png)
 
-你会注意到 TypeScript 不仅检测到了错误，而且它甚至足够智能，可以提供一个建议来帮助我们快速解决问题。
+你会注意到 `TypeScript` 不仅检测到了错误，而且它甚至足够智能，可以提供一个建议来帮助我们快速解决问题。
 
-当 TypeScript 有足够的信息来确定我们正在处理`CounterAction`时，我们还可以免费获得自动补全功能。
+当 `TypeScript` 有足够的信息来确定我们正在处理 `CounterAction` 时，我们还可以免费获得自动补全功能。
 
 ![TypeScript 辅助操作类型的自动补全](img/autocomplete.png)
 
-如果你仔细观察，你会注意到它*只*推荐`Decrement`。这是因为我们已经创建了一个条件语句，定义了当`type`为`Increment`时应该做什么。TypeScript 能够推断出，如果只有两个属性并且我们已经处理了其中一个，那么就只剩下一个选项了。
+如果你仔细观察，你会注意到它*只*推荐 `Decrement`。这是因为我们已经创建了一个条件语句，定义了当 `type` 为 `Increment` 时应该做什么。`TypeScript` 能够推断出，如果只有两个属性并且我们已经处理了其中一个，那么就只剩下一个选项了。
 
 正如承诺的那样，我们现在也可以从[`03-action-creators`](https://github.com/stevekinney/sitepoint-reducers/blob/main/src/03-action-creators.ts)中删除这两行代码：
 
@@ -353,27 +349,26 @@ type CounterAction = {
 - export const DECREMENT = 'Decrement';
 ```
 
-在 TypeScript 的帮助下，我们现在可以回到使用普通字符串，同时仍然享受使用常量的所有好处。在这个简单的例子中，这可能看起来没什么，但如果你以前使用过这种模式，你就知道在每个使用它们的文件中都必须导入这些值会变得多么繁琐。
+在 `TypeScript` 的帮助下，我们现在可以回到使用普通字符串，同时仍然享受使用常量的所有好处。在这个简单的例子中，这可能看起来没什么，但如果你以前使用过这种模式，你就知道在每个使用它们的文件中都必须导入这些值会变得多么繁琐。
 
 ## 在 Reducer 中移除默认情况
 
-早些时候，TypeScript 试图通过在函数末尾省略`return state`行时抛出错误来帮助我们，该行作为如果上面的条件都不满足时的回退。
+早些时候，`TypeScript` 试图通过在函数末尾省略 `return state` 行时抛出错误来帮助我们，该行作为如果上面的条件都不满足时的回退。
 
-但现在我们给了 TypeScript 更多关于它可以期望什么类型操作的信息。我更喜欢使用条件语句（这就是为什么我在整个教程中都这样做），但如果我们改用`switch`语句，我们会注意到一些有趣的事情发生了。
+但现在我们给了 `TypeScript` 更多关于它可以期望什么类型操作的信息。我更喜欢使用条件语句（这就是为什么我在整个教程中都这样做），但如果我们改用 `switch` 语句，我们会注意到一些有趣的事情发生了。
 
 ![不可达代码](img/unreachable-code.png)
 
-TypeScript 已经弄清楚，由于我们从`switch`语句的每个 case 中都返回了*并且*我们已经涵盖了`action.type`的所有可能情况，所以没有必要在我们的操作漏掉的情况下返回原始状态，因为 TypeScript 可以保证这永远不会发生。
+`TypeScript` 已经弄清楚，由于我们从 `switch` 语句的每个 case 中都返回了*并且*我们已经涵盖了 `action.type` 的所有可能情况，所以没有必要在我们的操作漏掉的情况下返回原始状态，因为 `TypeScript` 可以保证这永远不会发生。
 
 从这里可以得出几点：
 
-*   TypeScript 将使用我们提供的信息来帮助我们避免常见的错误。
-
-*   TypeScript 还将使用这些信息来使我们能够编写更少的保护性代码。
+* `TypeScript` 将使用我们提供的信息来帮助我们避免常见的错误。
+* `TypeScript` 还将使用这些信息来使我们能够编写更少的保护性代码。
 
 ## 处理不同类型的操作
 
-早些时候，我暗示我们可能会添加第三种类型的操作：将计数器`Reset`回零的能力。这个操作与我们最开始看到的操作非常相似。它不需要 payload。然而，我们可能会忍不住这样做：
+早些时候，我暗示我们可能会添加第三种类型的操作：将计数器 `Reset` 回零的能力。这个操作与我们最开始看到的操作非常相似。它不需要 payload。然而，我们可能会忍不住这样做：
 
 ```typescript
 type CounterAction = {
@@ -384,7 +379,7 @@ type CounterAction = {
 };
 ```
 
-你会注意到 TypeScript 再次对我们可能从 reducer 返回`undefined`感到不满。我们稍后会处理这个问题。但首先，我们应该解决`Reset`不需要 payload 的事实。
+你会注意到 `TypeScript` 再次对我们可能从 reducer 返回 `undefined` 感到不满。我们稍后会处理这个问题。但首先，我们应该解决 `Reset` 不需要 payload 的事实。
 
 我们不想不得不写这样的东西：
 
@@ -392,7 +387,7 @@ type CounterAction = {
 let state = counterReducer({ count: 5 }, { type: 'Reset', { payload: { amount: 0 } } });
 ```
 
-我们可能会忍不住让`payload`成为可选的：
+我们可能会忍不住让 `payload` 成为可选的：
 
 ```typescript
 type CounterAction = {
@@ -403,11 +398,11 @@ type CounterAction = {
 };
 ```
 
-但现在，TypeScript 将永远不确定`Increment`和`Decrement`是否应该有一个 payload。这意味着 TypeScript 会坚持要求我们在访问`payload`上的`amount`属性之前检查`payload`是否存在。同时，TypeScript 仍然会允许我们在`Reset`操作上不必要地添加一个 payload。我想这不是世界上最糟糕的事情，但我们可以做得更好。
+但现在，`TypeScript` 将永远不确定 `Increment` 和 `Decrement` 是否应该有一个 payload。这意味着 `TypeScript` 会坚持要求我们在访问 `payload` 上的 `amount` 属性之前检查 `payload` 是否存在。同时，`TypeScript` 仍然会允许我们在 `Reset` 操作上不必要地添加一个 payload。我想这不是世界上最糟糕的事情，但我们可以做得更好。
 
 ### 使用联合类型定义操作类型
 
-事实证明，我们可以使用与`CounterAction`上`type`属性类似的解决方案：
+事实证明，我们可以使用与 `CounterAction` 上 `type` 属性类似的解决方案：
 
 ```typescript
 type CounterAdjustmentAction = {
@@ -424,19 +419,15 @@ type CounterResetAction = {
 type CounterAction = CounterAdjustmentAction | CounterResetAction;
 ```
 
-TypeScript 足够智能，可以推断出以下内容：
+`TypeScript` 足够智能，可以推断出以下内容：
 
-*   `CounterAction`是一个对象。
+* `CounterAction` 是一个对象。
+* `CounterAction` *总是*有一个 `type` 属性。
+* `type` 属性是 `Increment`、`Decrement` 或 `Reset` 之一。
+* 如果 `type` 属性是 `Increment` 或 `Decrement`，则有一个 `payload` 属性，其中包含一个数字作为 `amount`。
+* 如果 `type` 属性是 `Reset`，则没有 `payload` 属性。
 
-*   `CounterAction`*总是*有一个`type`属性。
-
-*   `type`属性是`Increment`、`Decrement`或`Reset`之一。
-
-*   如果`type`属性是`Increment`或`Decrement`，则有一个`payload`属性，其中包含一个数字作为`amount`。
-
-*   如果`type`属性是`Reset`，则没有`payload`属性。
-
-通过更新类型以包含`CounterResetAction`，TypeScript 已经推断出我们不再向`counterReducer`提供详尽的 case 列表。
+通过更新类型以包含 `CounterResetAction`，`TypeScript` 已经推断出我们不再向 `counterReducer` 提供详尽的 case 列表。
 
 ![TypeScript 注意到我们没有处理 Reset 操作](img/missing-reset.png)
 
@@ -461,9 +452,9 @@ export const counterReducer: CounterReducer = (state, action) => {
 
 你可以在[本教程的 GitHub 仓库](https://github.com/stevekinney/sitepoint-reducers/blob/main/src/05-different-payloads.ts)中找到上面的代码（`05-different-payloads`）。
 
-如果你一直在跟着做，你可能已经注意到了一些很酷的功能（尽管在这一点上并不令人惊讶）。首先，当我们添加第三个 case 时，TypeScript 能够推断出我们正在为`Reset`添加一个 case，并将其作为唯一可用的自动补全建议。其次，如果我们试图在`return`语句中引用`action`，我们会注意到它*只*允许我们访问`type`属性，因为它很清楚`CounterResetActions`没有`payload`属性。
+如果你一直在跟着做，你可能已经注意到了一些很酷的功能（尽管在这一点上并不令人惊讶）。首先，当我们添加第三个 case 时，`TypeScript` 能够推断出我们正在为 `Reset` 添加一个 case，并将其作为唯一可用的自动补全建议。其次，如果我们试图在 `return` 语句中引用 `action`，我们会注意到它*只*允许我们访问 `type` 属性，因为它很清楚 `CounterResetActions` 没有 `payload` 属性。
 
-除了明确定义类型之外，我们不需要在代码本身中告诉 TypeScript 太多东西。它能够利用手头的信息为我们推断出一切。
+除了明确定义类型之外，我们不需要在代码本身中告诉 `TypeScript` 太多东西。它能够利用手头的信息为我们推断出一切。
 
 如果你想亲眼看看，你可以为重置计数器创建一个操作创建器：
 
@@ -471,9 +462,9 @@ export const counterReducer: CounterReducer = (state, action) => {
 export const reset = (): CounterAction => ({ type: 'Reset' });
 ```
 
-我选择在这种情况下使用更广泛的`CounterAction`。但你会注意到，即使你*尝试*向它添加一个`payload`，TypeScript 已经推断出这不是一个选项。但如果你暂时将`type`更改为`"Increment"`，你突然就被允许添加该属性。
+我选择在这种情况下使用更广泛的 `CounterAction`。但你会注意到，即使你*尝试*向它添加一个 `payload`，`TypeScript` 已经推断出这不是一个选项。但如果你暂时将 `type` 更改为 `"Increment"`，你突然就被允许添加该属性。
 
-如果我们把函数的返回类型更新为`CounterResetAction`，我们会看到对于类型只有一个选项——`"Reset"`——并且 payload 是被禁止的：
+如果我们把函数的返回类型更新为 `CounterResetAction`，我们会看到对于类型只有一个选项——`"Reset"`——并且 payload 是被禁止的：
 
 ```typescript
 export const reset = (): CounterResetAction => ({ type: 'Reset' });
@@ -481,9 +472,7 @@ export const reset = (): CounterResetAction => ({ type: 'Reset' });
 
 ## 在 React 组件中使用我们的 Reducer
 
-到目前为止，我们已经讨论了很多关于 reducer 模式在任何框架之外的内容。让我们把我们的`counterReducer`引入 React，看看它是如何工作的。我们将从这个简单的组件开始：
-
-
+到目前为止，我们已经讨论了很多关于 reducer 模式在任何框架之外的内容。让我们把我们的 `counterReducer` 引入 `React`，看看它是如何工作的。我们将从这个简单的组件开始：
 
 ```
 const Counter = () => {
@@ -509,7 +498,7 @@ export default Counter;
 
 你可能注意到目前还没有太多功能。我们在整个教程中一直在处理的 `counterReducer` 已经准备就绪。我们只需要使用 `useReducer` 钩子将其连接到组件即可。
 
-在 React（或 Redux）的 reducer 上下文中，`state` 是我们组件数据的当前快照。`dispatch` 是一个用于根据操作更新该状态的函数。我们可以将 `dispatch` 视为触发更改的方式，而 `state` 则是这些更改后的结果数据。
+在 `React`（或 `Redux`）的 reducer 上下文中，`state` 是我们组件数据的当前快照。`dispatch` 是一个用于根据操作更新该状态的函数。我们可以将 `dispatch` 视为触发更改的方式，而 `state` 则是这些更改后的结果数据。
 
 让我们在 `Counter` 组件内部添加以下代码：
 
@@ -517,7 +506,7 @@ export default Counter;
 const [state, dispatch] = useReducer(counterReducer, { count: 0 });
 ```
 
-现在，如果我们悬停在 `state` 和 `dispatch` 上，会看到 TypeScript 能够自动推断出每个变量的正确类型：
+现在，如果我们悬停在 `state` 和 `dispatch` 上，会看到 `TypeScript` 能够自动推断出每个变量的正确类型：
 
 ```
 const state: CounterState;
@@ -528,7 +517,7 @@ const dispatch: React.Dispatch<CounterAction>;
 
 ![TypeScript 不允许我们向使用 useReducer 的 reducer 传递无效的初始状态](img/invalid-initial-state.png)
 
-现在我们可以在 `Counter` 组件中使用来自 `useReducer` 的 `state` 和 `dispatch`。TypeScript 会知道 `count` 是 `state` 上的一个属性，并且只接受与 `CounterAction` 类型匹配的操作或操作创建函数返回的值：
+现在我们可以在 `Counter` 组件中使用来自 `useReducer` 的 `state` 和 `dispatch`。`TypeScript` 会知道 `count` 是 `state` 上的一个属性，并且只接受与 `CounterAction` 类型匹配的操作或操作创建函数返回的值：
 
 ```
 import { useReducer } from 'react';
@@ -562,15 +551,17 @@ export default Counter;
 
 你可以在[本教程的 GitHub 仓库](https://github.com/stevekinney/sitepoint-reducers/blob/main/src/07-react-component-complete.tsx)中找到上述代码（`07-react-component-complete`）。
 
-我想请大家注意这个组件中 TypeScript 代码是多么少。事实上，如果我们把文件扩展名从 `.tsx` 改为 `.jsx`，它仍然可以工作。但在幕后，TypeScript 正在做着重要的工作，确保我们的应用程序在交付给用户时能够按预期运行。
+
+
+我想请大家注意这个组件中 TypeScript 代码是多么少。事实上，如果我们把文件扩展名从`.tsx`改为`.jsx`，它仍然可以工作。但在幕后，TypeScript 正在做着重要的工作，确保我们的应用程序在交付给用户时能够按预期运行。
 
 ## 结论
 
-Reducer 的力量不在于其固有的复杂性，而在于其简单性。重要的是要记住，reducer 只是函数。过去，它们因为需要相当多的样板代码而受到一些批评。
+`Reducer`的力量不在于其固有的复杂性，而在于其简单性。重要的是要记住，`reducer`只是函数。过去，它们因为需要相当多的样板代码而受到一些批评。
 
-TypeScript 有助于减少样板代码的数量，同时也使使用 reducer 的整体体验更加愉快。我们免受了参数错误和意外结果等潜在陷阱的影响，这些陷阱在应用程序中可能很难排查。
+TypeScript 有助于减少样板代码的数量，同时也使使用 `reducer`的整体体验更加愉快。我们免受了参数错误和意外结果等潜在陷阱的影响，这些陷阱在应用程序中可能很难排查。
 
-Reducer 和 TypeScript 的结合可以使构建弹性、无错误的应用程序变得超级简单。
+`Reducer`和 TypeScript 的结合可以使构建弹性、无错误的应用程序变得超级简单。
 
 别忘了参考 [GitHub 仓库](https://github.com/stevekinney/sitepoint-reducers) 和 [CodeSandbox 演示](https://codesandbox.io/p/sandbox/typescript-redux-example-sitepoint-hjkzkg?file=%2Findex.html%3A1%2C1) 来尝试上面讨论的任何示例。
 
@@ -599,7 +590,7 @@ type LinkedListNode = {
 };
 ```
 
-然而，我将添加一个额外的要求。列表中的所有节点都应该是相同的类型。例如，如果我们想要一个字符串链表，我们可以细化我们的类型以确保 value 始终是字符串：
+然而，我将添加一个额外的要求。列表中的所有节点都应该是相同的类型。例如，如果我们想要一个字符串链表，我们可以细化我们的类型以确保 `value` 始终是字符串：
 
 ```
 type LinkedListNode = {
@@ -625,9 +616,6 @@ firstNode.next = secondNode;
 你可能已经注意到这里的问题。如果我们还想支持一个数字链表，我们就必须创建另一个类型，以此类推，对于我们要让链表支持的每一种值类型。这很繁琐，而且无法扩展。
 
 这就是泛型的用武之地。它们让我们定义一个可以在类型中使用的占位符。如果我们想要一个链表节点，其中的值可以是任何类型，但确保所有后续节点也是*相同*的类型，我们可以写类似这样的代码：
-```
-
-
 
 ```
 type LinkedListNode<T> = {
@@ -659,15 +647,15 @@ thirdNode.next = fourthNode;
 
 你可以在[本教程的 GitHub 仓库](https://github.com/stevekinney/sitepoint-generics/blob/main/src/02-with-generics.ts)中找到上述代码（`02-with-generics`）。
 
-当我们把 `T` 设置为 `string` 或 `number` 时，TypeScript 会在所有引用 `T` 的地方使用该类型。
+当我们把`T`设置为`string`或`number`时，TypeScript 会在所有引用`T`的地方使用该类型。
 
 ### 一个实验
 
-如果你想做一个小实验，可以尝试在[这个在线编辑器](https://www.typescriptlang.org/play?#code/C4TwDgpgBAMglgOwNYQCbwM7AHIHtUQA8AKgHxQC8UA3gFBRQBuAhgDYCuEAXFMQNz0oCCAA9gAfh7xkaTDnxEyAgL4DaAY1wIsUAGZwATljwEpiFOjjGFhLAcQBzclToMWHblADk+o8C8ANLSqtBpaOhgQmgioJp7SFnJxtsD2CE6UNILunDxekdGogcFq0TrAABaGsQpmMpbWBIQI7AC2AEYQBs5Zbmy5UAAsAExBIWHawHq47AaVcXWJVvJNLR1dPa5M-Z4AjADsY2q+jRAAdMJimQVaNQQCldVxF6JTVLozcxVxfEA)中将 `thirdNode` 连接到 `firstNode`。你会看到 TypeScript 不允许这样做。
+如果你想做一个小实验，可以尝试在[这个在线编辑器](https://www.typescriptlang.org/play?#code/C4TwDgpgBAMglgOwNYQCbwM7AHIHtUQA8AKgHxQC8UA3gFBRQBuAhgDYCuEAXFMQNz0oCCAA9gAfh7xkaTDnxEyAgL4DaAY1wIsUAGZwATljwEpiFOjjGFhLAcQBzclToMWHblADk+o8C8ANLSqtBpaOhgQmgioJp7SFnJxtsD2CE6UNILunDxekdGogcFq0TrAABaGsQpmMpbWBIQI7AC2AEYQBs5Zbmy5UAAsAExBIWHawHq47AaVcXWJVvJNLR1dPa5M-Z4AjADsY2q+jRAAdMJimQVaNQQCldVxF6JTVLozcxVxfEA)中将`thirdNode`连接到`firstNode`。你会看到 TypeScript 不允许这样做。
 
 ## 关于泛型命名的说明
 
-你可能想知道为什么我把泛型命名为 `T`。我这样做主要是因为这是惯例。`T` 代表“类型”。如果一个类型中有多个泛型，你有时可能会看到使用 `U`。为什么？因为 U 是 T 之后的字母。
+你可能想知道为什么我把泛型命名为`T`。我这样做主要是因为这是惯例。`T`代表“类型”。如果一个类型中有多个泛型，你有时可能会看到使用`U`。为什么？因为`U`是`T`之后的字母。
 
 泛型不一定非得是单个字母。我们完全可以使用更长的名称：
 
@@ -678,7 +666,7 @@ type LinkedListNode<NodeType> = {
 };
 ```
 
-不过，通常我们只看到使用单个字母。例如，[React 的类型](https://github.com/DefinitelyTyped/DefinitelyTyped/blob/60ab8a805a1c5c4225027068e604ef4687cdf379/types/react/index.d.ts#L76)在引用 props 时会使用 `P`。
+不过，通常我们只看到使用单个字母。例如，[React 的类型](https://github.com/DefinitelyTyped/DefinitelyTyped/blob/60ab8a805a1c5c4225027068e604ef4687cdf379/types/react/index.d.ts#L76)在引用 props 时会使用`P`。
 
 如果我们需要使用多个泛型，可以用逗号分隔它们，就像我们为函数参数所做的那样：
 
@@ -691,19 +679,19 @@ type Badge<L extends string, C extends number> {
 
 ## 在泛型中扩展类型
 
-目前，`T` 泛型可以是任何东西。在上面的例子中，我们使用了字符串和数字，但我们同样可以使用布尔值、数组、对象，甚至函数。
+目前，`T`泛型可以是任何东西。在上面的例子中，我们使用了字符串和数字，但我们同样可以使用布尔值、数组、对象，甚至函数。
 
 假设我们想将链表节点的值限制为仅支持字符串、数字和布尔值。
 
-在 TypeScript 中，约束是通过 `extends` 关键字来表达的。`T extends K` 意味着可以安全地假设类型 `T` 的值也是类型 `K`。一个简单的理解方式是，可以想象我们正在用 `extends` 编写一个变量赋值。
+在 TypeScript 中，约束是通过`extends`关键字来表达的。`T extends K`意味着可以安全地假设类型`T`的值也是类型`K`。一个简单的理解方式是，可以想象我们正在用`extends`编写一个变量赋值。
 
-以 `19 extends number` 为例。我们可以这样理解：
+以`19 extends number`为例。我们可以这样理解：
 
 ```
 const nineteen: number = 19;
 ```
 
-我们可以说 `T` 必须扩展另一个类型：
+我们可以说`T`必须扩展另一个类型：
 
 ```
 type LinkedListNode<T extends string | number | boolean> = {
@@ -742,7 +730,7 @@ fourthNode.next = {
 };
 ```
 
-类型 `number` 指的是任何数字。`17` 是一个字面量类型，只允许该特定值。在这种情况下，任何连接到 `secondNode` 的节点都*必须*具有值 `"second"`，任何连接到 `fourthNode` 的节点都*必须*具有值 `17`。从技术上讲，它们分别扩展了 `string` 和 `number`。话虽如此，我这样做只是为了演示。我不确定在实践中我们为什么要这样做。
+类型`number`指的是任何数字。`17`是一个字面量类型，只允许该特定值。在这种情况下，任何连接到`secondNode`的节点都*必须*具有值`"second"`，任何连接到`fourthNode`的节点都*必须*具有值`17`。从技术上讲，它们分别扩展了`string`和`number`。话虽如此，我这样做只是为了演示。我不确定在实践中我们为什么要这样做。
 
 一个更实际的例子是，如果我们只想支持字符串或数字的某个子集。例如，我们可以使用联合类型来限制可接受的字符串，如[此演示](https://www.typescriptlang.org/play?#code/C4TwDgpgBAMglgOwNYQCbwM7AHIHtUQA8AKlBAB7AQKoZQDkANrgIaqIDm9UAPgxgFcAxkIgYM3PvQgAnGbhn0AfFAC8UAN4AoKFABuLRgIgAuKMQDcOqAgrAA-GfjI0mHPiLElVgL4WgA)所示：
 
@@ -812,7 +800,7 @@ export const two = identity(2);
 
 你可以在[本教程的 GitHub 仓库](https://github.com/stevekinney/sitepoint-generics/src/04-inferring-generics.ts)中找到上述代码（`04-inferring-generics`）。
 
-在这段代码中，我们完全省略了告诉 TypeScript `T` 应该是什么类型。它看到我们向该函数调用传递了一个数字，因此它能够推断出在这种情况下 `T` 是一个数字。
+在这段代码中，我们完全省略了告诉 TypeScript `T`应该是什么类型。它看到我们向该函数调用传递了一个数字，因此它能够推断出在这种情况下`T`是一个数字。
 
 我们也可以利用这一点来简化上面的链表：
 
@@ -835,13 +823,10 @@ const createLinkedListNode = <T>(value: T): LinkedListNode<T> => {
 
 const firstNode = createLinkedListNode('first');
 const secondNode = createLinkedListNode('second');
-
 firstNode.next = secondNode;
 ```
 
-你会注意到我们不再需要定义期望的 `LinkedListNode` 类型。一旦 TypeScript 能够为 `T` 的一个引用确定类型，它就能填充所有其他引用。`firstNode` 和 `secondNode` 具有以下类型：
-
-
+你会注意到我们不再需要定义期望的`LinkedListNode`类型。一旦 TypeScript 能够为`T`的一个引用确定类型，它就能填充所有其他引用。`firstNode`和`secondNode`具有以下类型：
 
 ```
 const firstNode: LinkedListNode<string>;
@@ -852,48 +837,63 @@ const secondNode: LinkedListNode<string>;
 
 ## 更进一步
 
-既然我们已经有了 `createLinkedListNode`，我们可以创建一个名为 `addNextNode` 的额外实用函数。该函数应执行以下操作：
+既然我们已经有了`createLinkedListNode`，我们可以创建一个名为`addNextNode`的额外实用函数。该函数应执行以下操作：
 
-*   它应接受一个现有的 `LinkedListNode` 作为第一个参数。
-
-*   根据该 `LinkedListNode` 的 `value` 类型，第二个参数应为相同类型的值。
-
-*   它应基于第二个参数创建一个新的 `LinkedListNode`。
-
-*   它应将第一个 `LinkedListNode` 的 `next` 属性设置为新的 `LinkedListNode`。
-
+*   它应接受一个现有的`LinkedListNode`作为第一个参数。
+*   根据该`LinkedListNode`的`value`类型，第二个参数应为相同类型的值。
+*   它应基于第二个参数创建一个新的`LinkedListNode`。
+*   它应将第一个`LinkedListNode`的`next`属性设置为新的`LinkedListNode`。
 *   它应返回新创建的节点。
 
 基本上，我们希望让以下两个测试通过：
 
 ```
 it('should create a linked list node', () => {
-  let node = createLinkedListNode('first');
-  expect(node).toEqual({ value: 'first' });
+```
+
+
+
+```ts
+let node = createLinkedListNode('first');
+
+expect(node).toEqual({ value: 'first' });
+
 });
 
 it('should add a linked list node', () => {
+
   let firstNode = createLinkedListNode('first');
+
   let secondNode = addLinkedListNode(firstNode, 'second');
 
   expect(firstNode).toEqual({ value: 'first', next: { value: 'second' } });
+
   expect(secondNode).toEqual({ value: 'second' });
+
 });
 ```
 
 这里的关键点是 `T` 的值应始终保持一致。我们可以用几种方式编写这个函数，这里不讨论每种方式的优劣。以下是一种可能的实现：
 
-```
+```ts
 const createLinkedListNode = <T>(value: T): LinkedListNode<T> => {
+
   return { value };
+
 };
 
 const addLinkedListNode = <T>(
+
   node: LinkedListNode<T>,
+
   value: T,
+
 ): LinkedListNode<T> => {
+
   node.next = createLinkedListNode(value);
+
   return node.next;
+
 };
 ```
 
@@ -905,19 +905,27 @@ const addLinkedListNode = <T>(
 
 我们也可以在类中使用泛型。这种情况下一个有趣的特性是，`T` 的值可以在整个类中使用。一旦设置，它将在所有方法中强制执行我们的类型，并且类的每个单独实例都可以有自己的 `T` 值。以下是一个示例：
 
-```
+```ts
 export class LinkedListNode<T> {
+
   value: T;
+
   next?: LinkedListNode<T>;
 
   constructor(value: T) {
+
     this.value = value;
+
   }
 
   add(value: T): LinkedListNode<T> {
+
     this.next = new LinkedListNode(value);
+
     return this.next;
+
   }
+
 }
 ```
 
@@ -927,10 +935,13 @@ export class LinkedListNode<T> {
 
 现在我们可以创建多个实例，其中 `T` 对于该特定实例被正确强制执行：
 
-```
+```ts
 const firstNode = new LinkedListNode('first');
+
 const secondNode = firstNode.add('second');
+
 const thirdNode = new LinkedListNode(42);
+
 const fourthNode = thirdNode.add(17);
 ```
 
@@ -940,10 +951,13 @@ const fourthNode = thirdNode.add(17);
 
 我倾向于使用类型，但我们同样可以轻松地在接口中使用泛型：
 
-```
+```ts
 interface LinkedListNode<T> {
+
   value: T;
+
   next?: LinkedListNode<T>;
+
 }
 ```
 
@@ -973,35 +987,38 @@ interface LinkedListNode<T> {
 
 将困扰我们的核心问题不一定是 TypeScript 的问题。这是一个 React 问题：
 
-*   当我们调用 `React.createContext` 时，TypeScript 会想知道我们可以期望什么样的值。
-
-*   但我们还没有那个值，因为我们必须等待 `Provider` 组件挂载才能使用 `useState`。
-
-*   TypeScript 会对我们传递给它的内容不是它所期望的这一事实提出异议。
-
-*   如果我们说它可以是颜色*或* `undefined`，TypeScript 将永远无法确定它正在处理哪一个。
+- 当我们调用 `React.createContext` 时，TypeScript 会想知道我们可以期望什么样的值。
+- 但我们还没有那个值，因为我们必须等待 `Provider` 组件挂载才能使用 `useState`。
+- TypeScript 会对我们传递给它的内容不是它所期望的这一事实提出异议。
+- 如果我们说它可以是颜色**或** `undefined`，TypeScript 将永远无法确定它正在处理哪一个。
 
 我们将探讨几种方法——例如使用 `any` 或 `undefined`——这些方法会有效，但会有一些权衡——然后我们将采用一个更好（尽管更复杂）的解决方案。
 
 ## 一个被拒绝的解决方案：使用 `any`
 
-```
+```tsx
 // We don't have access to `hexColor` outside of `ColorProvider`.
+
 // So we'll use `null` for now.
+
 export const ColorContext = createContext<any>(null);
 
 export const ColorProvider = ({ children }: PropsWithChildren) => {
+
   const [hexColor, setHexColor] = useState('#e56e24');
 
   return (
+
     <ColorContext.Provider value={{ hexColor, setHexColor }}>
+
       {children}
+
     </ColorContext.Provider>
+
   );
+
 };
 ```
-
-
 
 在上面的代码中，我们瞥见了更简单的可能解决方案。我们可以通过使用 `any` 完全绕过 TypeScript。这不仅会让我们失去随之而来的类型安全，还会让我们失去代码中自动补全的所有好处。这能用，但我们可以做得更好。
 
@@ -1015,16 +1032,19 @@ export const ColorProvider = ({ children }: PropsWithChildren) => {
 
 我们知道我们正在向 `ColorContext.Provider` 传递一个包含 `hexColor` 和 `setHexColor` 的对象。让我们将其分解为自己的类型：
 
-```
+```ts
 type ColorState = {
+
   hexColor: string;
+
   setHexColor: Dispatch<SetStateAction<string>>;
+
 };
 ```
 
 现在，即使我们还没有这个值，我们也可以让 TypeScript 知道它最终可以期望接收什么：
 
-```
+```ts
 export const ColorContext = createContext<ColorState>(null as any);
 ```
 
@@ -1034,9 +1054,11 @@ export const ColorContext = createContext<ColorState>(null as any);
 
 如果我们想为自己的欺骗行为感到好受些，我们至少可以告诉它一个谎言，这个谎言正是它最终应该期望的：
 
-```
+```ts
 export const ColorContext = createContext<ColorState>(
+
   null as unknown as ColorState,
+
 );
 ```
 
@@ -1050,21 +1072,29 @@ export const ColorContext = createContext<ColorState>(
 
 另一个选择是说实话。上下文的值可以是 `ColorState` 或 `undefined`：
 
-```
+```ts
 export const ColorContext = createContext<ColorState | null>(null);
 ```
 
 这感觉更好，但它会导致另一组问题：
 
-```
+```text
 Errors  Files
+
   1  src/components/color-change-swatch.tsx:13
+
   2  src/components/color-picker/color-select.tsx:11
+
   1  src/components/color-picker/color-swatch.tsx:6
+
   1  src/components/color-properties/to-cmyk.tsx:8
+
   1  src/components/color-properties/to-hsl.tsx:8
+
   1  src/components/color-properties/to-hsv.tsx:8
+
   1  src/components/color-properties/to-rgb.tsx:8
+
   1  src/components/related-colors/index.tsx:11
 ```
 
@@ -1074,27 +1104,45 @@ Errors  Files
 
 所以现在每次使用时，我们都需要检查它是否已定义。这是 `ColorChangeSwatch` 组件中的一个例子：
 
-```
+```tsx
 const ColorChangeSwatch = ({ hexColor, className }: ColorChangeSwatchProps) => {
+
   // 👀 将上下文存储在一个变量中。
+
   const context = useContext(ColorContext);
 
   return (
+
     <Button
+
       className={clsx(
+
         'border-2 border-slate-900 transition-shadow duration-200 ease-in 
+
         hover:shadow-xl',
+
         className,
+
       )}
+
       style={{ backgroundColor: hexColor }}
+
       onClick={() => {
+
         // 👀 有条件地使用其上的任何属性。
+
         context?.setHexColor(hexColor);
+
       }}
+
     >
+
       {hexColor}
+
     </Button>
+
   );
+
 };
 ```
 
@@ -1116,17 +1164,19 @@ const ColorChangeSwatch = ({ hexColor, className }: ColorChangeSwatchProps) => {
 
 让我们从创建一个名为 `src/create-context.tsx` 的新文件开始。我们将从一个简单的函数开始，这样 TypeScript 就不会因为我们有一个空文件而生气：
 
-```
+```ts
 export const createContext = () => {};
 ```
 
 接下来，我们将使用 React 的 `createContext` 来创建一个 `Context` 对象，我们将在此基础上进行构建：
 
-```
+```tsx
 import React from 'react';
 
 export const createContext = () => {
+
   const Context = React.createContext(null);
+
 };
 ```
 
@@ -1134,26 +1184,31 @@ export const createContext = () => {
 
 现在我们将做一些类似于我们在上一个示例中所做的事情：我们将承认我们可能不知道初始值是什么。我们还将使用泛型，以便此函数可重用于其他上下文：
 
-```
+```tsx
 import React from 'react';
 
 export const createContext = <T extends object>() => {
-  const Context = React.createContext<T | null>(null);
-};
 ```
 
-我知道我们想要同时传递 `hexColor` 和 `setHexColor`，所以我选择将 `T` 约束为某种对象。如果泛型让你感到困惑，你可以选择使用我们之前创建的 `ColorState`。那可能看起来像这样：
 
+
+```tsx
+const Context = React.createContext<T | null>(null);
 ```
+
+我知道我们想要同时传递`hexColor`和`setHexColor`，所以我选择将`T`约束为某种对象。如果泛型让你感到困惑，你可以选择使用我们之前创建的`ColorState`。那可能看起来像这样：
+
+```tsx
 // 🚨 注意：我们不会使用此代码。它只是上面代码的替代方案。
+
 export const createContext = () => {
   const Context = React.createContext<ColorState | null>(null);
 };
 ```
 
-接下来，我们将创建我们自己对 `useContext` hook 的理解。这将可以访问我们刚刚在其[闭包作用域](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures)中创建的 `Context`。新的 `useContext` 将检查以确保上下文存在且不是 `null`。如果它*是* `null`，则会抛出一个错误。TypeScript 足够聪明，可以理解如果我们的 `Context` 只能是 `T` 或 `null`，并且它不是 `null`，那么它一定是 `T`。今后，我们将*只*使用我们自定义的 `useContext` hook：
+接下来，我们将创建我们自己对`useContext` hook 的理解。这将可以访问我们刚刚在其[闭包作用域](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures)中创建的`Context`。新的`useContext`将检查以确保上下文存在且不是`null`。如果它是`null`，则会抛出一个错误。TypeScript 足够聪明，可以理解如果我们的`Context`只能是`T`或`null`，并且它不是`null`，那么它一定是`T`。今后，我们将只使用我们自定义的`useContext` hook：
 
-```
+```tsx
 import React from 'react';
 
 export const createContext = <T extends object>() => {
@@ -1175,20 +1230,15 @@ export const createContext = <T extends object>() => {
 
 回顾一下：
 
-*   我们知道上下文的值可以是 `T` 或 `null`。
-
-*   所以，从 `React.useContext` 中取出值并查看它。
-
-*   如果 `ctx` 是 `null`，则抛出一个错误。这意味着在 `ctx` 为 `null` 的情况下，我们不会返回任何内容。
-
-
-
+- 我们知道上下文的值可以是`T`或`null`。
+- 所以，从`React.useContext`中取出值并查看它。
+- 如果`ctx`是`null`，则抛出一个错误。这意味着在`ctx`为`null`的情况下，我们不会返回任何内容。
 
 ### 使用我们的新钩子
 
 我们已经创建了新的钩子。现在只需要使用它。让我们按照以下方式更新`src/context.tsx`：
 
-```
+```tsx
 import { Dispatch, PropsWithChildren, SetStateAction, useState } from 'react';
 
 import { createContext } from './create-context';
@@ -1215,8 +1265,9 @@ export const ColorProvider = ({ children }: PropsWithChildren) => {
 
 我们仍然需要更新代码以使用新的`useColor`钩子而不是`useContext`。它将在`src/components/color-picker/color-select.tsx`中演示，你可以在完成的[`create-context`分支](https://github.com/stevekinney/sitepoint-context/tree/create-context)中查看其余部分：
 
-```
+```tsx
 import { useColor } from '../../context';
+
 import HexColor from '../hex-color';
 
 type ColorSelectProps = {
@@ -1224,12 +1275,14 @@ type ColorSelectProps = {
 };
 
 const ColorSelect = ({ label = 'Color' }: ColorSelectProps) => {
-  // 👀 我们的新 `useColor` 钩子在行动！
+  // 👀 我们的新`useColor`钩子在行动！
+
   const { hexColor, setHexColor } = useColor();
 
   return (
     <div className="flex flex-col gap-2">
       <label htmlFor="color-input">{label}</label>
+
       <input
         id="color-input"
         className="h-80 w-full"
@@ -1237,6 +1290,7 @@ const ColorSelect = ({ label = 'Color' }: ColorSelectProps) => {
         value={hexColor}
         onChange={(e) => setHexColor(e.target.value)}
       />
+
       <HexColor hexColor={hexColor} />
     </div>
   );
@@ -1255,7 +1309,7 @@ export default ColorSelect;
 
 在我参与的大多数大型应用程序和项目中，我经常发现自己构建了许多组件，这些组件实际上是标准 HTML 元素的超集或抽象。一些例子包括自定义按钮元素，它可能接受一个属性来定义该按钮应该是主要按钮还是次要按钮，或者可能指示它将调用危险操作，例如从数据库中删除或移除项目。我仍然希望我的按钮具有按钮的所有属性，除了我想添加到它的属性。
 
-另一个常见的情况是我最终会创建一个组件，允许我同时定义标签和输入字段。我不想重新添加`<input />`元素接受的所有属性。我希望我的自定义组件的行为就像一个输入字段，但*也*接受一个字符串作为标签，并自动将`<label />`上的`htmlFor`属性与`<input />`上的`id`对应起来。
+另一个常见的情况是我最终会创建一个组件，允许我同时定义标签和输入字段。我不想重新添加`<input />`元素接受的所有属性。我希望我的自定义组件的行为就像一个输入字段，但也接受一个字符串作为标签，并自动将`<label />`上的`htmlFor`属性与`<input />`上的`id`对应起来。
 
 在 JavaScript 中，我可以使用`{...props}`将任何属性传递给底层 HTML 元素。在 TypeScript 中这可能有点棘手，我需要显式定义组件将接受哪些属性。虽然对我的组件接受的确切类型进行细粒度控制很好，但手动为每个属性添加类型信息可能很繁琐。
 
@@ -1263,9 +1317,8 @@ export default ColorSelect;
 
 我们可以采用几种策略：
 
-*   对于我们正在创建抽象的单一元素类型的组件，我们可以扩展该元素的属性。
-
-*   对于我们想要定义不同元素的组件，我们可以创建多态组件。**多态组件**是一种设计为渲染为不同 HTML 元素或组件的组件，同时保持相同的属性和行为。它允许我们指定一个属性来确定其渲染的元素类型。多态组件提供了灵活性和可重用性，而我们不必重新实现组件。具体示例，你可以查看[Radix 的多态组件实现](https://www.radix-ui.com/primitives/docs/utilities/polymorphic)。
+- 对于我们正在创建抽象的单一元素类型的组件，我们可以扩展该元素的属性。
+- 对于我们想要定义不同元素的组件，我们可以创建多态组件。**多态组件**是一种设计为渲染为不同 HTML 元素或组件的组件，同时保持相同的属性和行为。它允许我们指定一个属性来确定其渲染的元素类型。多态组件提供了灵活性和可重用性，而我们不必重新实现组件。具体示例，你可以查看[Radix 的多态组件实现](https://www.radix-ui.com/primitives/docs/utilities/polymorphic)。
 
 在本教程中，我们将研究这两种策略。
 
@@ -1277,7 +1330,7 @@ export default ColorSelect;
 
 让我们从引言中提到的第一个例子开始。我们想要创建一个按钮，它内置了适合我们应用程序的适当样式。在 JavaScript 中，我们可能可以这样做：
 
-```
+```tsx
 const Button = (props) => {
   return <button className="button" {...props} />;
 };
@@ -1285,7 +1338,7 @@ const Button = (props) => {
 
 在 TypeScript 中，我们可以只添加我们知道需要的内容。例如，我们知道如果我们希望自定义按钮的行为与 HTML 按钮相同，我们需要`children`：
 
-```
+```tsx
 const Button = ({ children }: React.PropsWithChildren) => {
   return <button className="button">{children}</button>;
 };
@@ -1293,16 +1346,13 @@ const Button = ({ children }: React.PropsWithChildren) => {
 
 你可以想象，逐个添加属性可能会变得有点繁琐。相反，我们可以告诉 TypeScript 我们想要匹配它用于 React 中`<button>`元素的相同属性：
 
-```
+```tsx
 const Button = (props: React.ComponentProps<'button'>) => {
   return <button className="button" {...props} />;
 };
 ```
 
-
-
-
-但我们遇到了一个新问题。或者更准确地说，我们*之前*在 JavaScript 示例中就*也*存在一个被我们忽略的问题。如果有人使用我们新的 `Button` 组件并传入一个 `className` 属性，它会覆盖我们的 `className`。我们可以（也将会）稍后添加一些代码来处理这个问题，但我不想错过这个机会，向你展示如何在 TypeScript 中使用工具类型来表达“我想要使用一个 HTML 按钮的*所有*属性，*除了*一个（或多个）”：
+但我们遇到了一个新问题。或者更准确地说，我们之前在 JavaScript 示例中也存在一个被我们忽略的问题。如果有人使用我们新的`Button`组件并传入一个`className`属性，它会覆盖我们的`className`。我们可以（也将会）稍后添加一些代码来处理这个问题，但我不想错过这个机会，向你展示如何在 TypeScript 中使用工具类型来表达“我想要使用一个 HTML 按钮的所有属性，除了一个（或多个）”：
 
 ```typescript
 type ButtonProps = Omit<React.ComponentProps<'button'>, 'className'>;
@@ -1312,7 +1362,7 @@ const Button = (props: ButtonProps) => {
 };
 ```
 
-现在，TypeScript 会阻止我们或其他人向我们的 `Button` 组件传入 `className` 属性。如果我们只是想将传入的类名添加到类列表中，我们可以通过几种不同的方式来实现。我们可以直接将其追加到列表中：
+现在，TypeScript 会阻止我们或其他人向我们的`Button`组件传入`className`属性。如果我们只是想将传入的类名添加到类列表中，我们可以通过几种不同的方式来实现。我们可以直接将其追加到列表中：
 
 ```typescript
 type ButtonProps = React.ComponentProps<'button'>;
@@ -1324,7 +1374,7 @@ const Button = (props: ButtonProps) => {
 };
 ```
 
-在处理类名时，我喜欢使用 [clsx](https://npm.im/clsx) 库，因为它能为我们处理大多数这类事情：
+在处理类名时，我喜欢使用[clsx](https://npm.im/clsx)库，因为它能为我们处理大多数这类事情：
 
 ```typescript
 import React from 'react';
@@ -1347,13 +1397,13 @@ type ButtonProps = React.ComponentProps<'button'> & {
 };
 ```
 
-我们现在是在说，`Button` 接受 `<button>` 元素接受的所有属性，外加一个：`variant`。这个属性将与我们从 `HTMLButtonElement` 继承的所有其他属性一起出现。
+我们现在是在说，`Button`接受`<button>`元素接受的所有属性，外加一个：`variant`。这个属性将与我们从`HTMLButtonElement`继承的所有其他属性一起出现。
 
 ![Variant 作为我们 Button 组件的一个属性出现](img/variant.png)
 
-我们可以为我们的 `Button` 添加支持，以添加这个类：
+我们可以为我们的`Button`添加支持，以添加这个类：
 
-```typescript
+```tsx
 const Button = ({ variant, className, ...props }: ButtonProps) => {
   return (
     <button
@@ -1369,7 +1419,7 @@ const Button = ({ variant, className, ...props }: ButtonProps) => {
 };
 ```
 
-我们现在可以更新 `src/application.tsx` 来使用我们的新按钮组件：
+我们现在可以更新`src/application.tsx`来使用我们的新按钮组件：
 
 ```diff
 diff --git a/src/application.tsx b/src/application.tsx
@@ -1379,7 +1429,7 @@ index 978a61d..fc8a416 100644
 @@ -1,3 +1,4 @@
 +import Button from './components/button';
  import useCount from './use-count';
- 
+
  const Counter = () => {
 @@ -8,15 +9,11 @@ const Counter = () => {
        <h1>Counter</h1>
@@ -1405,23 +1455,18 @@ index 978a61d..fc8a416 100644
          >
            <label htmlFor="set-count">Set Count</label>
            <input type="number" id="set-count" name="set-count" />
--          <button className="button-primary" type="submit">
-+          <Button variant="primary" type="submit">
-             Set
--          </button>
-+          </Button>
-         </form>
-       </div>
-     </main>
-```
+
+
+
+## 使用组合组件
 
 ### 仓库代码
 
-你可以在 [GitHub 仓库的 `button` 分支](https://github.com/stevekinney/polymorphic/tree/button) 中找到上述更改。
+你可以在[GitHub 仓库的 `button` 分支](https://github.com/stevekinney/polymorphic/tree/button)中找到上述更改。
 
 ### 创建组合组件
 
-我通常为自己制作的另一个常见组件是一个能正确连接标签和输入元素的组件，分别为它们设置正确的 `for` 和 `id` 属性。我往往会厌倦一遍又一遍地输入这些：
+我通常为自己制作的另一个常见组件是一个能正确连接标签和输入元素的组件，分别为它们设置正确的`for`和`id`属性。我往往会厌倦一遍又一遍地输入这些：
 
 ```html
 <label htmlFor="set-count">Set Count</label>
@@ -1449,7 +1494,7 @@ type LabeledInputProps = React.ComponentProps<'input'> & {
 };
 ```
 
-除了 `label`（我们将其传递给（呃）标签，我们通常希望它与我们的输入分组），我们正在手动逐个传递属性。我们想添加 `autofocus` 吗？最好再添加一个属性。最好这样做：
+除了`label`（我们将其传递给（呃）标签，我们通常希望它与我们的输入分组），我们正在手动逐个传递属性。我们想添加`autofocus`吗？最好再添加一个属性。最好这样做：
 
 ```typescript
 import { ComponentProps } from 'react';
@@ -1470,7 +1515,7 @@ const LabeledInput = ({ id, label, ...props }: LabeledInputProps) => {
 export default LabeledInput;
 ```
 
-我们可以在 `src/application.tsx` 中换用我们的新组件：
+我们可以在`src/application.tsx`中换用我们的新组件：
 
 ```typescript
 <LabeledInput
@@ -1482,21 +1527,21 @@ export default LabeledInput;
 />
 ```
 
-我们可以提取出我们需要处理的内容，然后将其他所有内容传递给 `<input />` 组件，然后在余下的日子里假装它是一个标准的 `HTMLInputElement`。
+我们可以提取出我们需要处理的内容，然后将其他所有内容传递给`<input />`组件，然后在余下的日子里假装它是一个标准的`HTMLInputElement`。
 
-TypeScript 并不关心，因为 `HTMLElement` 非常灵活，DOM 的出现早于 TypeScript。只有当我们完全离谱地使用它时，它才会抱怨。
+TypeScript 并不关心，因为`HTMLElement`非常灵活，DOM 的出现早于 TypeScript。只有当我们完全离谱地使用它时，它才会抱怨。
 
 ### 仓库代码
 
-你可以在 [GitHub 仓库的 `input` 分支](https://github.com/stevekinney/polymorphic/tree/input) 中看到上述所有更改。
+你可以在[GitHub 仓库的 `input` 分支](https://github.com/stevekinney/polymorphic/tree/input)中看到上述所有更改。
 
 ## 多态组件
 
-早些时候，我告诉过你，在构建大型应用程序的过程中，我最终往往会围绕组件制作一些包装器。`Box` 是围绕 HTML 中基本块元素（如 `<div>`、`<aside>`、`<section>`、`<article>`、`<main>`、`<head>` 等）的一个原始包装器。但正如我们不想失去从这些标签中获得的所有语义意义一样，我们也不需要多个基本相同的 `Box` 变体。我们希望使用 `Box`，但也能指定它底层应该是什么。
+早些时候，我告诉过你，在构建大型应用程序的过程中，我最终往往会围绕组件制作一些包装器。`Box`是围绕 HTML 中基本块元素（如`<div>`、`<aside>`、`<section>`、`<article>`、`<main>`、`<head>`等）的一个原始包装器。但正如我们不想失去从这些标签中获得的所有语义意义一样，我们也不需要多个基本相同的`Box`变体。我们希望使用`Box`，但也能指定它底层应该是什么。
 
-这是一个受 [Styled Components](https://medium.com/styled-components/announcing-styled-components-v4-better-faster-stronger-3fe1aba1a112) 启发的、过于简化的 `Box` 元素示例。
+这是一个受[Styled Components](https://medium.com/styled-components/announcing-styled-components-v4-better-faster-stronger-3fe1aba1a112)启发的、过于简化的`Box`元素示例。
 
-这是来自 [Paste](https://paste.twilio.design/primitives/box)（[Twilio](https://twilio.com) 的设计系统）的一个 `Box` 组件示例：
+这是来自[Paste](https://paste.twilio.design/primitives/box)（[Twilio](https://twilio.com)的设计系统）的一个`Box`组件示例：
 
 ```jsx
 <Box as="article" backgroundColor="colorBackgroundBody" padding="space60">
@@ -1511,7 +1556,7 @@ TypeScript 并不关心，因为 `HTMLElement` 非常灵活，DOM 的出现早�
 </Box>
 ```
 
-这是一个简单的实现，它没有像我们上面在 `Button` 和 `LabelledInputProps` 中那样传递任何属性：
+这是一个简单的实现，它没有像我们上面在`Button`和`LabelledInputProps`中那样传递任何属性：
 
 ```typescript
 import { PropsWithChildren } from 'react';
@@ -1528,9 +1573,7 @@ const Box = ({ as, children }: BoxProps) => {
 export default Box;
 ```
 
-
-
-我们将 `as` 细化为 `TagName`，这是 JSX 中一个有效的组件名称。就 React 而言，这可以正常工作，但我们还希望 TypeScript 能够相应地适应我们在 `as` 属性中定义的元素：
+我们将`as`细化为`TagName`，这是 JSX 中一个有效的组件名称。就 React 而言，这可以正常工作，但我们还希望 TypeScript 能够相应地适应我们在`as`属性中定义的元素：
 
 ```typescript
 import { ComponentProps } from 'react';
@@ -1547,9 +1590,9 @@ const Box = ({ as, children }: BoxProps) => {
 export default Box;
 ```
 
-老实说，我甚至不知道像 `<section>` 这样的元素是否有任何 `<div>` 没有的属性。虽然我确信我可以查到，但我们中没有人对这个实现感到满意。
+老实说，我甚至不知道像`<section>`这样的元素是否有任何`<div>`没有的属性。虽然我确信我可以查到，但我们中没有人对这个实现感到满意。
 
-但是，那里传入的 `'div'` 是什么，它是如何工作的？如果我们查看 `ComponentPropsWithRef` 的类型定义，会看到以下内容：
+但是，那里传入的`'div'`是什么，它是如何工作的？如果我们查看`ComponentPropsWithRef`的类型定义，会看到以下内容：
 
 ```typescript
 type ComponentPropsWithRef<T extends ElementType> = T extends new (
@@ -1559,7 +1602,7 @@ type ComponentPropsWithRef<T extends ElementType> = T extends new (
   : PropsWithRef<ComponentProps<T>>;
 ```
 
-我们可以忽略所有这些三元运算符。我们现在感兴趣的是 `ElementType`：
+我们可以忽略所有这些三元运算符。我们现在感兴趣的是`ElementType`：
 
 ```typescript
 type BoxProps = ComponentPropsWithRef<'div'> & {
@@ -1569,9 +1612,9 @@ type BoxProps = ComponentPropsWithRef<'div'> & {
 
 ![一个包含所有元素类型的自动完成列表](img/element-type.png)
 
-好的，这很有趣，但如果我们希望传递给 `ComponentProps` 的类型参数与……`as` 相同呢？
+好的，这很有趣，但如果我们希望传递给`ComponentProps`的类型参数与……`as`相同呢？
 
-我们*可以*尝试这样的方法：
+我们可以尝试这样的方法：
 
 ```typescript
 import { ComponentProps, ElementType } from 'react';
@@ -1588,11 +1631,11 @@ const Box = <E extends ElementType = 'div'>({ as, ...props }: BoxProps<E>) => {
 export default Box;
 ```
 
-现在，一个 `Box` 组件将适应我们通过 `as` 属性传入的任何元素类型。
+现在，一个`Box`组件将适应我们通过`as`属性传入的任何元素类型。
 
 ![一个具有按钮属性的 Box](img/as-button.png)
 
-我们现在可以在任何原本可能使用 `<div>` 的地方使用我们的 `Box` 组件：
+我们现在可以在任何原本可能使用`<div>`的地方使用我们的`Box`组件：
 
 ```jsx
 <Box as="section" className="flex place-content-between w-full">
@@ -1606,7 +1649,7 @@ export default Box;
 
 ### 仓库代码
 
-你可以在 [本教程的 GitHub 仓库的 `polymorphic` 分支](https://github.com/stevekinney/polymorphic/tree/polymorphic) 上找到最终结果。
+你可以在[本教程的 GitHub 仓库的 `polymorphic` 分支](https://github.com/stevekinney/polymorphic/tree/polymorphic)上找到最终结果。
 
 ## 结论
 
@@ -1620,15 +1663,15 @@ TypeScript，JavaScript 更可靠的表亲，变得越来越好。TypeScript 5.0
 
 我将重点关注三个对我的日常开发影响最大的特性：
 
-*   **装饰器**。TypeScript 5.0 支持与 ECMAScript 提案对齐的装饰器，允许以可重用的方式修改类行为。这些与之前通过 `--experimentalDecorators` 标志支持的装饰器有一些重要的区别。
+- **装饰器**。TypeScript 5.0 支持与 ECMAScript 提案对齐的装饰器，允许以可重用的方式修改类行为。这些与之前通过`--experimentalDecorators`标志支持的装饰器有一些重要的区别。
 
-*   **const 类型参数**。新的 `const` 类型参数增强了函数调用推断，并确保声明的常量保持不变。
+- **const 类型参数**。新的`const`类型参数增强了函数调用推断，并确保声明的常量保持不变。
 
-*   **枚举的升级和更改**。TypeScript 5.0 增强了枚举，提高了类型安全性，使其更灵活且更用户友好。
+- **枚举的升级和更改**。TypeScript 5.0 增强了枚举，提高了类型安全性，使其更灵活且更用户友好。
 
 ## 装饰器：下一代
 
-装饰器*几乎*从我记事起就一直是 ECMAScript 的一部分。这些巧妙的工具让我们能够以可重用的方式修改类和成员。它们在 TypeScript 中已经存在一段时间了——尽管是在实验性标志下。尽管装饰器的第 2 阶段迭代一直是实验性的，但装饰器已在 [MobX](https://mobx.js.org/enabling-decorators.html)、[Angular](https://angular.io/)、[Nest](https://docs.nestjs.com/custom-decorators) 和 [TypeORM](https://typeorm.io/) 等库中被广泛使用。TypeScript 5.0 的装饰器与 [ECMAScript 提案](https://github.com/tc39/proposal-decorators)完全同步，该提案已基本准备就绪，处于第 3 阶段。
+装饰器*几乎*从我记事起就一直是 ECMAScript 的一部分。这些巧妙的工具让我们能够以可重用的方式修改类和成员。它们在 TypeScript 中已经存在一段时间了——尽管是在实验性标志下。尽管装饰器的第 2 阶段迭代一直是实验性的，但装饰器已在[MobX](https://mobx.js.org/enabling-decorators.html)、[Angular](https://angular.io/)、[Nest](https://docs.nestjs.com/custom-decorators)和[TypeORM](https://typeorm.io/)等库中被广泛使用。TypeScript 5.0 的装饰器与[ECMAScript 提案](https://github.com/tc39/proposal-decorators)完全同步，该提案已基本准备就绪，处于第 3 阶段。
 
 **装饰器**让我们能够编写一个函数来调整类及其方法的行为。想象一下，需要在我们的方法中偷偷加入一些调试语句。在 TypeScript 5.0 之前，我们只能手动将调试语句复制粘贴到每个方法中。有了装饰器，我们只需做一次工作，更改就会通过装饰器附加的每个方法得到支持。
 
@@ -1668,7 +1711,7 @@ const card = new Card('Spades', 'Queen');
 card.getValue();
 ```
 
-我们希望每当调用 `card.getValue()` 时，控制台都会记录一条警告消息。我们可以如下实现上述装饰器：
+我们希望每当调用`card.getValue()`时，控制台都会记录一条警告消息。我们可以如下实现上述装饰器：
 
 ```typescript
 const deprecated = <This, Arguments extends any[], ReturnValue>(
@@ -1679,45 +1722,32 @@ const deprecated = <This, Arguments extends any[], ReturnValue>(
   >,
 ) => {
   const methodName = String(context.name);
-
   function replacementMethod(this: This, ...args: Arguments): ReturnValue {
     console.warn(`Warning: '${methodName}' is deprecated.`);
     return target.call(this, ...args);
   }
-
   return replacementMethod;
 };
 ```
 
+
+
 这起初可能看起来有点令人困惑，但让我们分解一下：
 
 *   我们的装饰器函数接受两个参数：`target` 和 `context`。
-
 *   `target` 是我们正在装饰的方法本身。
-
 *   `context` 是关于该方法的元数据。
-
 *   我们返回一个具有相同签名的方法。
-
 *   在这种情况下，我们调用 `console.warn` 来记录弃用通知，然后调用该方法。
 
 `ClassMethodDecorator` 类型具有以下属性：
 
 *   `kind`：被装饰属性的类型。在上面的例子中，这将是 `method`，因为我们正在装饰 `Card` 实例上的一个方法。
-
 *   `name`：属性的名称。在上面的例子中，这是 `getValue`。
-
 *   `static`：一个值，指示类元素是静态的（`true`）还是实例的（`false`）元素。
-
-
-
-
 *   `private`：一个值，用于指示类元素是否具有私有名称。
-
 *   `access`：一个对象，可用于在运行时访问类元素的当前值。
-
 *   `has`：确定一个对象是否具有与被装饰元素同名的属性。
-
 *   `get`：在提供的对象上调用 setter。
 
 ### 试用一下
@@ -1726,7 +1756,7 @@ const deprecated = <This, Arguments extends any[], ReturnValue>(
 
 装饰器为添加日志消息提供了便捷的语法糖——就像我们在上面示例中所做的那样——同时也适用于许多其他常见用例。例如，我们可以创建一个装饰器，自动将方法绑定到当前实例，或者修改方法或类的[属性描述符](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy/Proxy/getOwnPropertyDescriptor)。
 
-## 释放 const 类型参数
+## 释放 `const` 类型参数
 
 `const` 类型参数允许我们使用 `const` 来声明值。TypeScript 现在能够推断类型，而不仅仅是字面值。
 
@@ -1738,19 +1768,31 @@ TypeScript 的早期版本已经支持使用 `as const` 将对象或数组声明
 
 ```
 const avengers = [
+
   'Black Widow',
+
   'Captain America',
+
   'Hawkeye',
+
   'Hulk',
+
   'Iron Man',
+
   'Thor',
+
 ];
 
 const ninjaTurtles = [
+
   'Donatello',
+
   'Leonardo',
+
   'Michelangelo',
+
   'Raphael',
+
 ] as const;
 ```
 
@@ -1758,11 +1800,17 @@ const ninjaTurtles = [
 
 ```
 const avengers: string[];
+
 const ninjaTurtles: readonly [
+
   'Donatello',
+
   'Leonardo',
+
   'Michelangelo',
+
   'Raphael',
+
 ];
 ```
 
@@ -1772,7 +1820,9 @@ const ninjaTurtles: readonly [
 type WithNames = { names: readonly string[] };
 
 const turtles = getNames({
+
   names: ['Donatello', 'Leonardo', 'Michelangelo', 'Raphael'],
+
 });
 ```
 
@@ -1780,7 +1830,9 @@ const turtles = getNames({
 
 ```
 const turtles = getNames({
+
   names: ['Donatello', 'Leonardo', 'Michelangelo', 'Raphael'] as const,
+
 });
 ```
 
@@ -1796,23 +1848,37 @@ const turtles: readonly ['Donatello', 'Leonardo', 'Michelangelo', 'Raphael'];
 
 ```
 //                  ⬇️
+
 const getNames = <const T extends WithNames>(arg: T): T['names'] => {
+
   return arg.names;
+
 };
 
 const turtles = getNames({
+
   names: ['Donatello', 'Leonardo', 'Michelangelo', 'Raphael'],
+
 });
 
 const avengers = getNames({
+
   names: [
+
     'Black Widow',
+
     'Captain America',
+
     'Hawkeye',
+
     'Hulk',
+
     'Iron Man',
+
     'Thor',
+
   ],
+
 });
 ```
 
@@ -1820,13 +1886,21 @@ const avengers = getNames({
 
 ```
 const turtles: readonly ['Donatello', 'Leonardo', 'Michelangelo', 'Raphael'];
+
 const avengers: readonly [
+
   'Black Widow',
+
   'Captain America',
+
   'Hawkeye',
+
   'Hulk',
+
   'Iron Man',
+
   'Thor',
+
 ];
 ```
 
@@ -1846,10 +1920,15 @@ const avengers: readonly [
 
 ```
 enum RequestState {
+
   NotStarted,
+
   Loading,
+
   Success,
+
   Error,
+
 }
 ```
 
@@ -1857,14 +1936,23 @@ TypeScript 会将其编译为以下对象：
 
 ```
 {
+
   "0": "NotStarted",
+
   "1": "Loading",
+
   "2": "Success",
+
   "3": "Error",
+
   "NotStarted": 0,
+
   "Loading": 1,
+
   "Success": 2,
+
   "Error": 3
+
 }
 ```
 
@@ -1872,24 +1960,27 @@ TypeScript 会将其编译为以下对象：
 
 ```
 const logRequestState = (request: RequestState) => {
+
   console.log('Request:', request, RequestState[request]);
+
 };
 
 logRequestState(RequestState.Loading); // ✅ 输出: "Request:",  1,  "Loading"
+
 logRequestState(0); // ✅ 输出: "Request:",  0,  "NotStarted"
+
 logRequestState(55); // ✅ 输出:  "Request:",  55,  undefined 🤨
 ```
-
-
-
-
 
 `55` 不应作为 `logRequestState` 的有效参数。在 TypeScript 5.0 中，所有枚举现在都被视为联合枚举，这提供了更好的类型安全性。实际上，`RequestState` 是 `0 | 1 | 2 | 3`，这意味着 `55` 不再是一个有效参数。这更接近我们可能预期的行为，如[此示例](https://www.typescriptlang.org/play?ts=5.1.3#code/KYOwrgtgBASsCOZgGcAuBlVBDVwoG8AoKKAOQHsNsAnXAEwBpioAZcrOgSxAHMmT0YAMZCUyflACi1auWpMAvoUJDyINFAA25HnEQoqOPAF4oACmoIkaAFywrBzEYCUUYwD4CzVevKbgAHTaPGYA5HrWqDahDFCW+mixEY7YuADa8ZEAus4A3IQK+YTByWhOuGalhrgBbBzcPHnFOlXlwGYADE0lDmWp7QCsA01AA)所示：
 
 ```
 logRequestState(RequestState.Loading); // ✅ Logs: "Request:",  1,  "Loading"
+
 logRequestState(0); // ✅ Logs: "Request:",  0,  "NotStarted"
+
 logRequestState(55); // ❌ Argument of type '55' is not assignable to parameter 
+
 ➥of type 'RequestState'.
 ```
 
@@ -1897,15 +1988,23 @@ TypeScript 现在能更好地强制执行枚举中设定的类型。以下代码
 
 ```
 enum Letters {
+
   A = 'Aye!',
+
   B = 'Bee!',
+
   C = 'Sea!',
+
 }
 
 enum Numbers {
+
   one = 1,
+
   two = 2,
+
   three = Letters.C,
+
 }
 
 const n: number = Numbers.three;
@@ -1920,4 +2019,3 @@ const n: number = Numbers.three;
 TypeScript 5.0 在语言的用户友好性和灵活性方面是一次重大进步。它引导我们采用更好的编码实践，促进更简洁的代码，并在潜在错误成为麻烦之前将其捕获。TypeScript 团队持续为该语言添加重要功能和生活质量改进。显然，这次的变更范围较小，但 [TypeScript 5.1](https://www.typescriptlang.org/docs/handbook/release-notes/typescript-5-1.html) 已添加了额外功能，例如为返回 `undefined` 的函数提供更便捷的隐式返回。
 
 对我而言，TypeScript 对于我维护和修改大型代码库的信心至关重要。我经常发现编译器能捕获我原本会遗漏的边缘情况，而这些情况可能会在不恰当的时间让我的寻呼机响起。我个人很期待看到这门语言在未来几年的演进——尤其是如果当前的更新节奏得以持续的话。
-

@@ -1,3 +1,4 @@
+
 # 7.3 SVG 图像
 
 SVG 是“可缩放矢量图”（Scalable Vector Graphics）的缩写，是一种描述向量图形的 XML 格式的标记化语言。也就是说，SVG 本质上是文本文件，格式采用 XML，可以在浏览器中显示出矢量图像。由于结构是 XML 格式，使得它可以插入 HTML 文档，成为 DOM 的一部分，然后用 JavaScript 和 CSS 进行操作。
@@ -19,7 +20,7 @@ SVG 图像可以用 Adobe 公司的 Illustrator 软件、开源软件 Inkscape �
 
 SVG 插入网页的方法有多种，可以用在 img、object、embed、iframe 等标签，以及 CSS 的 background-image 属性。
 
-```js
+```html
 <img src="circle.svg">
 <object id="object" data="circle.svg" type="image/svg+xml"></object>
 <embed id="embed" src="icon.svg" type="image/svg+xml">
@@ -30,7 +31,7 @@ SVG 插入网页的方法有多种，可以用在 img、object、embed、iframe 
 
 此外，SVG 文件还可以插入其他 DOM 元素，比如 div 元素，请看下面的例子（使用了 jQuery 函数库）。
 
-```js
+```html
 <div id="stage"></div>
 
 <script>
@@ -47,7 +48,7 @@ $("#stage").load('icon.svg',function(response){
 
 SVG 文件采用 XML 格式，就是普通的文本文件。
 
-```js
+```svg
 <svg width="300" height="180">
   <circle cx="30"  cy="50" r="25" />
   <circle cx="90"  cy="50" r="25" class="red" />
@@ -57,7 +58,7 @@ SVG 文件采用 XML 格式，就是普通的文本文件。
 
 上面的 svg 文件，定义了三个圆，它们的 cx、cy、r 属性分别为 x 坐标、y 坐标和半径。利用 class 属性，可以为这些圆指定样式。
 
-```js
+```css
 .red {
   fill: red; /* not background-color! */
 }
@@ -73,13 +74,13 @@ SVG 文件采用 XML 格式，就是普通的文本文件。
 
 除了 circle 标签表示圆，SVG 文件还可以使用表示其他形状的标签。
 
-```js
+```svg
 <svg>
-  <line x1="0" y1="0" x2="200" y2="0" style="stroke:rgb(0,0,0);stroke-width:1"/></line>
+  <line x1="0" y1="0" x2="200" y2="0" style="stroke:rgb(0,0,0);stroke-width:1"/>
   <rect x="0" y="0" height="100" width="200" style="stroke: #70d5dd; fill: #dd524b" />
-  <ellipse cx="60" cy="60" ry="40" rx="20" stroke="black" stroke-width="5" fill="silver"/></ellipse>
-    <polygon fill="green" stroke="orange" stroke-width="10" points="350, 75  379,161 469,161 397,215 423,301 350,250 277,301 303,215 231,161 321,161"/><polygon>
-    <path id="path1" d="M160.143,196c0,0,62.777-28.033,90-17.143c71.428,28.572,73.952-25.987,84.286-21.428" style="fill:none;stroke:2;"></path>  
+  <ellipse cx="60" cy="60" ry="40" rx="20" stroke="black" stroke-width="5" fill="silver"/>
+  <polygon fill="green" stroke="orange" stroke-width="10" points="350, 75  379,161 469,161 397,215 423,301 350,250 277,301 303,215 231,161 321,161"/>
+  <path id="path1" d="M160.143,196c0,0,62.777-28.033,90-17.143c71.428,28.572,73.952-25.987,84.286-21.428" style="fill:none;stroke:2;"></path>
 </svg>
 ```
 
@@ -87,7 +88,7 @@ SVG 文件采用 XML 格式，就是普通的文本文件。
 
 g 标签用于将多个形状组成一组，表示 group。
 
-```js
+```svg
 <svg width="300" height="180">
   <g transform="translate(5, 15)">
     <text x="0" y="0">Howdy!</text>
@@ -130,7 +131,7 @@ document.getElementById("theCircle").addEventListener("click", function() {
 
 假定网页中有一个 svg 元素。
 
-```js
+```html
 <div id="svg-container">
     <svg   xml:space="preserve" width="500" height="440">
         <!-- svg code -->
@@ -181,7 +182,7 @@ img.onload = function() {
 
 上面的图形，可以画成一个坐标系，Date 作为横轴，Amount 作为纵轴，四行数据画成一个数据点。
 
-```js
+```svg
 <svg width="350" height="160">
   <g class="layer" transform="translate(60,10)">
     <circle r="5" cx="0"   cy="105" />

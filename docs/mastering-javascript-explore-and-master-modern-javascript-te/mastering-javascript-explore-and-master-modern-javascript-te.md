@@ -1,67 +1,58 @@
+
 # 精通 JavaScript：探索并掌握现代 JavaScript 技术以构建大规模 Web 应用
-
-
-
-
-
-
-
-
-
-
-
 
 **Ved Antani**
 
 伯明翰 - 孟买
 
-
-
-
-
-
-
-
-
-
-
-
 ## 致谢
 
 **作者**
+
 Ved Antani
 
 **审核员**
+
 Ivano Malavolta
 
 **委托编辑**
+
 Sarah Crofton
 
 **采买编辑**
+
 Kevin Colaco
 
 **内容开发编辑**
+
 Merint Mathew
 
 **技术编辑**
+
 Manthan Raja
 
 **文字编辑**
+
 Tasneem Fatehi
 
 **项目协调员**
+
 Francina Pinto
 
 **校对**
+
 Safis Editing
 
 **索引员**
+
 Monica Ajmera Mehta
 
 **制作协调员**
+
 Conidon Miranda
 
 **封面设计**
+
 Conidon Miranda
 
 ## 关于作者
@@ -78,90 +69,111 @@ Conidon Miranda
 
 他曾为 Packt Publishing 审核过其他关于 Web技术的书籍，例如 *Vadim Mirgorod* 编写的 *Backbone.js Cookbook* 和 *Andrew Burgess* 编写的 *Backbone.js Blueprints*。
 
-
-
-
-
-
-
-
-
 您需要 IT 问题的即时解决方案吗？PacktLib 是 Packt 的在线数字书库。在这里，您可以搜索、访问并阅读 Packt 的整个书库。
 
 **为什么要订阅？**
 
 - 可对 Packt 出版的每本书进行全文搜索
+
 - 内容可以复制、粘贴、打印并添加书签
+
 - 按需提供并可通过 Web 浏览器访问
 
 **Packt 账户持有者免费访问**
 
 如果您在 www.PacktPub.com 拥有 Packt 账户，您今天可以使用该账户访问 PacktLib 并查看 9 本完全免费的书。只需使用登录凭据即可立即访问。
 
-
-
-
-
-
-
-
-
-
-
 - 运行时异常 155
+
 - Console.log 和断言 156
+
 - Chrome 开发者工具 157
+
 **总结 162**
 
 ## 第 7 章：ECMAScript 6 163
+
 ### 垫片 (Shims) 或填充 (polyfills) 164
+
 ### 译器 (Transpilers) 164
+
 ### ES6 语法变化 165
+
 - 块级作用域 165
+
 - 默认参数 167
+
 - 展开与剩余参数 167
+
 - 解构 168
+
 - 对象字面量 170
+
 - 模板字面量 171
+
 - Maps 和 Sets 172
+
 - Symbols 175
+
 - 迭代器 (Iterators) 175
+
 - For..of 循环 176
+
 - 箭头函数 176
+
 **总结 179**
 
 ## 第 8 章：DOM 操作与事件 181
+
 ### DOM 181
+
 - 访问 DOM 元素 182
+
 - 访问特定节点 183
+
 ### 链式调用 191
+
 ### 遍历与操作 191
+
 ### 浏览器事件处理 193
+
 ### 传播 194
+
 ### jQuery 事件处理与传播 195
+
 ### 事件委托 198
+
 ### 事件对象 199
+
 **总结 200**
 
 ## 第 9 章：服务端 JavaScript 201
+
 ### 浏览器中的异步事件驱动模型 202
+
 ### 回调函数 206
+
 ### 定器 210
+
 ### 事件触发器 (EventEmitters) 211
+
 ### 模块 212
+
 - 创建模块 213
 
-
-
 ## npm 215
+
 - 安装包 216
+
 ## JavaScript 性能 218
+
 - JavaScript 性能分析 218
+
 - CPU 剖析文件 219
+
 - 时间线视图 (Timeline view) 220
+
 **总结 222**
-
-
 
 前言
 
@@ -175,7 +187,6 @@ Conidon Miranda
 
 *前言*
 
-
 ## 本书涵盖的内容
 
 *第 1 章*，*JavaScript 基础*侧重于语言结构，而不会在基础细节上花费太多时间。我们将涵盖变量作用域和循环中较复杂的部分，以及使用类型和数据结构的最佳实践。我们还将在编码风格和推荐的代码组织模式方面涵盖大量内容。
@@ -184,7 +195,7 @@ Conidon Miranda
 
 *第 3 章*，*数据结构与操作*，涵盖了语言的核心复杂性。我们将讨论在 JavaScript 中以不同处理方式使用功能性方面的复杂性。这是一场细致且详尽的讨论。
 
-*第 4 章*，*面向对象 JavaScript*，讨论了继承、原型链和对象字面量。这是一场细致且详尽的讨论，帮助你理解面向对象模型。
+*第 4 章*，*面向对象 JavaScript*，讨论了继承、原型链和对象字面量。这是一场细致且详尽的讨论，帮助你理解面向对象模模型。
 
 *第 5 章*，*JavaScript 模式*，讨论了常见的设计模式。我们将探讨如何实现这些模式。
 
@@ -196,19 +207,22 @@ Conidon Miranda
 
 *第 9 章*，*服务端 JavaScript*，解释了 Node.js 系统。我们将讨论如何使用 Node.js 编写可扩展系统。
 
-
 ## 本书的准备工作
 
 书中的所有示例可以在任何现代浏览器中运行。对于本书，你需要：
 
 - 安装了 Windows 7 或更高版本、Linux 或 macOS 的计算机。
+
 - 最新版本的 Chrome 或 Firefox 浏览器。
+
 - 你喜欢的文本编辑器。Sublime Text、Atom 或 Notepad++ 都是理想选择。
 
 ## 本书适合读者
 
 本书旨在让以下人员掌握必要的细节：
+
 - 有一定经验的 Web 开发者。
+
 - 想要学习 JavaScript 的学者。
 
 ## 规范
@@ -262,36 +276,38 @@ false
 
 要向我们发送一般反馈，请发送电子邮件至 feedback@packtpub.com，并在主题中注明书名。
 
-
-
-
-
 ## 前言
-
 
 ### 客户支持
 
 现在你已经成为 Packt 图籍的自豪主人，我们有很多方法可以
+
 帮助你从购买中获得最多。
 
 ### 下载示例代码
 
 你可以从 http://www.
+
 packtpub.com 账户下载你购买的所有 Packt 出版书籍的示例代码文件。如果你是在其他地方购买的这本书，可以访问 http://www.packtpub.com/support 并注册，以便文件直接通过电子邮件发送给你。
 
 ### 下载本书的彩色图像
 
 我们还为你提供了一个 PDF 文件，其中包含了书中使用的截图/
+
 图表的彩色图像。这些彩色图像将帮助你更好地理解输出的变化。你可以从 https://www.packtpub.
+
 com/sites/default/files/downloads/MasteringJavaScript_ColorImages.pdf 下载此文件。
 
 ### 勘误
 
 尽管我们尽一切努力确保内容的准确性，但错误仍然会
+
 发生。如果你在我们的某书中发现了错误——可能是文本或代码中的错误——如果你能向我们报告，我们将不胜感激。这样做，你可以让其他读者免受沮丧，并帮助我们改进这本书的后续版本。如果你发现任何勘误，请通过访问 http://www.packtpub.
+
 com/submit-errata，选择你的书籍，点击 **Errata Submission Form** 链接，并输入勘误详情。一旦你的勘误通过验证，你的提交将被接受，勘误将上传到我们的网站，或添加到该标题 Errata 部分下的现有勘误列表中。
 
-要查看之前提交的勘误，请访问 https://www.packtpub.com/books/
+要查看之前提交的勘误，请访 https://www.packtpub.com/books/
+
 content/support 搜索框中输入书籍名称。所需信息将出现在 **Errata** 部分。
 
 ### 盗版
@@ -311,17 +327,23 @@ content/support 搜索框中输入书籍名称。所需信息将出现在 **Erra
 ## JavaScript 基础
 
 写开头几个字总是困难的，尤其是像 JavaScript 这样的话题。
+
 这种困难主要是因为关于这种语言已经有了太多的论述。自 Netscape Navigator 早期时代以来，JavaScript 一一直是 *网络语言*——如果你愿意的话，它是通用语言。JavaScript 在一个令人惊讶的短时间内，从业余爱好者的工具变成了行家的武器。
+
 JavaScript 是 Web 上和开源生态系统中最流行的语言。
+
 http://github.com/ 记录了过去几年 GitHub 上活跃仓库的数量和该语言的整体流行程度。JavaScript 的流行和重要性归功于它与浏览器的关联。Google 的 V8 和 Mozilla 的 SpiderMonkey 是极其优化的 JavaScript 引擎，分别为 Google Chrome 和 Mozilla Firefox 浏览器提供支持。
 
-尽管网页浏览器是 JavaScript 最广泛使用的平台，但像 MongoDB 和 CouchDB 这样的现代数据库使用 JavaScript 作为它们的脚本和查询语言。JavaScript 也已成为浏览器之外的一个重要平台。诸如 **Node.js** 和 **io.js** 等项目提供了使用 JavaScript 开发可扩展服务器环境的强大平台。一些有趣的项目正在将这种语言的能力推向极限，例如，**Emscripten** (http://
+尽管网页浏览器是 JavaScript 最广�使用的平台，但像 MongoDB 和 CouchDB 这样的现代数据库使用 JavaScript 作为它们的脚本和查询语言。JavaScript 也已成为浏览器之外的一个重要平台。诸如 **Node.js** 和 **io.js** 等项目提供了使用 JavaScript 开发可扩展服务器环境的强大平台。一些有趣的项目正在将这种语言的能力推向极限，例如，**Emscripten** (http://
+
 kripken.github.io/emscripten-site/) 是一个基于**低级虚拟机** (**LLVM**）的项目，它可以将 C 和 C++ 编译为高度优化的 **asm.js** 格式的 JavaScript。这允许你以接近原生的速度在 Web 上运行 C 和 C++。
+
 JavaScript 的构建基于坚实的基础之上，例如函数、动态对象、松散类型、原型继承和强大的对象字面量表示。
 
 ## 2
 
 虽然 JavaScript 构建在良好的设计原则之上，但遗憾的是，这种语言必须随着浏览器一起进化。网页浏览器在支持各种功能和标准方面臭名昭著。JavaScript 试图适应浏览器的随心所欲，结果导致了一些非常糟糕的设计决策。
+
 这些糟糕的部分（该术语由 Douglas Crockford 广为人知）对于大多数人来说掩盖了这种语言的优秀部分。程序员编写糟糕的代码，其他程序员在调试这些糟糕的代码时如做噩梦，这种语言最终得得了坏名。遗憾的是，JavaScript 是最容易被误解的编程语言之一 (http://javascript.crockford.com/javascript.html)。
 
 对 JavaScript 的另一个批评是，它让你能够完成任务，而无需成为专家。
@@ -331,35 +353,50 @@ JavaScript 的构建基于坚实的基础之上，例如函数、动态对象、
 ### 如何使用本书
 
 如果你想快速完成任务，这本书将对你没有帮助。这本书
+
 将关注编写 JavaScript 的正确方法。我们将花费
+
 大量时间研究如何避免语言的问题，并构建可靠可读的代码。
+
 我们将避开语言的糟糕特性，以确保你不习惯它们——如果
+
 你已经习惯了使用这些习惯编程，这本书将尝试引导你
+
 远离它们。这将关注正确的风格和工具，以改进
+
 你的代码。
 
 书中的大多数概念将是来自真实
+
 问题的示例和模式。我会坚持你编写每个片段，以确保
+
 你对概念的理解进入了肌肉记忆。通常，
+
 你需要创建一个 HTML 页面来运行嵌入的 JavaScript
+
 代码如下：
 
 ### 一点历史
 
 1993 年，**Mosaic** 浏览器——**超级计算中心**
+
 (**NCSA**) 是最早流行的浏览器之一。一年后，Netscape
+
 创建了私有浏览器 **Netscape Navigator**。
+
 1995 年，Netscape 聘用了 Brendan Eich，让他
+
 在浏览器中实现 **Scheme**（一种 Lisp 方言）。
+
 由于 **Java** 的流行，Netscape 决定让脚本语言
+
 具有与 Java 类似的语法。Eich 在 10 天内写了原型 (http://www.computer.
+
 org/csdl/mags/co/2012/02/201202007.pdf)，在 5 月。JavaScript 的
+
 第一个代号是 **Mocha**，由 Marc Andreessen 命名。Netscape 后来将其改为 **LiveScript**，由于商标原因。在 1995 年 12 月，Sun 将
+
 商标授权给了 Netscape。该语言被命名为最终名称 JavaScript。
-
-
-
-
 
 *JavaScript 入门*
 
@@ -377,9 +414,9 @@ org/csdl/mags/co/2012/02/201202007.pdf)，在 5 月。JavaScript 的
 
 <script type="text/javascript" src="script.js"></script>
 
-使用浏览器开发者控制台或如 **Firebug** 之类的扩展对于调试代码中的错误情况非常有用。我们将在后面的章节中详细讨论调试技术。
+使用浏览者开发者控制台或如 **Firebug** 之类的扩展对于调试代码中的错误情况非常有用。我们将在后面的章节中详细讨论调试技术。
 
-对于书中的每个练习，创建这样的 HTML 脚架可能很麻烦。相反，我们想要使用 JavaScript 的**读取-评估-打印循环**（**REPL**）。与 Python 不同，JavaScript 并不自带 REPL。我们可以使用 Node.js 作为 REPL。如果你的机器上安装了 Node.js，只需在命令行中输入 `node` 即可开始实验。你会发现 Node REPL 的错误显示并不十分优雅。
+对于书中的每个练习，创建这样的 HTML 脚架可能很麻烦。相反，我们想要使用 JavaScript 的**读取-评估-打印循环**（**REPL**）。与 Python 不同，JavaScript 并不自带 REPL。我们可以使用 Node.js 作为 REPL。如果你的机器上安了 Node.js，只需在命令行中输入 `node` 即可开始实验。你会发现 Node REPL 的错误显示并不十分优雅。
 
 *第一章*
 
@@ -390,11 +427,17 @@ org/csdl/mags/co/2012/02/201202007.pdf)，在 5 月。JavaScript 的
 **EN-VedA:~$ node**
 
 **>function greeter(){**
+
 **x="World"**
+
 **SyntaxError: Unexpected identifier**
+
 **at Object.exports.createScript (vm.js:44:10)**
+
 **at REPLServer.defaultEval (repl.js:117:23)**
+
 **at bound (domain.js:254:14)**
+
 **…**
 
 出现此错误后，你必须重启。尽管如此，它仍然帮助你更快地尝试小段代码片段。
@@ -486,15 +529,25 @@ const area_code = '515';
 JavaScript 支持类型的标准变体：
 
 - Number（数字）
+
 - String（字符串）
+
 - Boolean（布尔值）
+
 - Symbol（符号，ECMAScript 6 新增）
+
 - Object（对象）：
+
     - Function（函数）
+
     - Array（数组）
+
     - Date（日期）
+
     - RegExp（正则表达式）
+
 - Null（空）
+
 - Undefined（未定义）
 
 ## Number
@@ -518,8 +571,11 @@ var aFloat = 555.0;
 **EN-VedA:~$ node**
 
 **> 0.1+0.2**
-**0.30000000000000004**
+
+**0.3000000000000004**
+
 **> (0.1+0.2)===0.3**
+
 **false**
 
 *第一章*
@@ -537,17 +593,20 @@ JavaScript 的另一个特性是一个名为 NaN 的特殊值（*Not a* *Number*
 **EN-VedA:~ $ node**
 
 **> isNaN(NaN);**
+
 **true**
+
 **> NaN==NaN;**
+
 **false**
+
 **> isNaN("elephant");**
+
 **true**
+
 **> NaN+5;**
+
 **NaN**
-
-
-
-
 
 *JavaScript 教程*
 
@@ -556,32 +615,41 @@ JavaScript 的另一个特性是一个名为 NaN 的特殊值（*Not a* *Number*
 第二行很奇怪——NaN 不等于 NaN。如果 NaN 参与了任何数学运算，结果也会变成 NaN。作为一个通用规则，请避免在任何表达式中使用 NaN。对于任何高级数学运算，你可以使用 `Math` 全局对象及其方法：
 
 > Math.E
+
 2.718281828459045
 
 > Math.SQRT2
+
 1.4142135623730951
 
 > Math.abs(-900)
+
 900
 
 > Math.pow(2,3)
+
 8
 
 你可以使用 `parseInt()` 和 `parseFloat()` 方法将字符串表达式转换为整数或浮点数：
 
 > parseInt("230",10);
+
 230
 
 > parseInt("010",10);
+
 10
 
 > parseInt("010",8); //八进制
+
 8
 
 > parseInt("010",2); //二进制
+
 2
 
 > + "4"
+
 4
 
 使用 `parseInt()` 时你应该提供显式的基数，以防止在旧浏览器中出现意想不到的错误。最后一个技巧是直接使用 `+` 号来将字符串 "42" 自动转换为数字 42。使用 `isNaN()` 处理 `parseInt()` 的结果也是稳妥的。让我们来看下面的示例：
@@ -610,31 +678,43 @@ else
 在 JavaScript 中，字符串是 Unicode 字符序列（每个字符占用 16 位）。可以通过索引访问字符串中的每个字符。第一个字符的索引为 0。字符串包含在 `"` 或 `'` 内——这两种表示字符串的方法都是有效的。让我们来看：
 
 > console.log("Hippopotamus chewing gum");
+
 Hippopotamus chewing gum
 
 > console.log('Single quoted hippopotamus');
+
 Single quoted hippopotamus
 
 > console.log("Broken \n lines");
+
 Broken
+
 lines
 
 最后一行显示了某些字符字面量在用反斜杠 `\` 转义后如何作为特殊字符使用。以下此类特殊字符的列表：
 
 - \n: 换行
+
 - \t: 制表符
+
 - \b: 退格符
+
 - \r: 回车符
+
 - \\: 反斜杠
+
 - \': 单引号
+
 - \": 双引号
 
 JavaScript 字符串对特殊字符和 Unicode 字面量有默认支持：
 
 > '\xA9'
+
 '©'
 
 > '©'
+
 '©'
 
 *JavaScript 教程*
@@ -708,10 +788,13 @@ console.log(`Sum of values is :${a+b} and multiplication is :${a*b}`);
 JavaScript 通过两个特殊值表示有意义值的缺失：`null` 用于刻意的非值情况，而 `undefined` 用于该值尚未赋值给变量的情况。让我们来看下面的示例：
 
 > var xl;
+
 > console.log(typeof xl);
+
 undefined
 
 > console.log(null==undefined);
+
 true
 
 ### 布尔值
@@ -719,6 +802,7 @@ true
 JavaScript 布尔型原始值由 `true` 和 `false` 关键字表示。以下规则规定了什么为假，什么为真：
 
 - `false`、`0`、空字符串 (`""`)、`NaN`、`null` 和 `undefined` 被表示为假
+
 - 其他所有内容均为真
 
 JavaScript 布尔值之所以棘手，主要是因为创建它们的方式的行为完全不同。
@@ -726,6 +810,7 @@ JavaScript 布尔值之所以棘手，主要是因为创建它们的方式的行
 在 JavaScript 中创建布尔值有两种方法：
 
 - 你可以通过给变量赋值 `true` 或 `false` 字面量来创建原始布尔值。考虑下面的示例：
+
 ```javascript
 var pBooleanTrue = true;
 var pBooleanFalse = false;
@@ -736,6 +821,7 @@ var pBooleanFalse = false;
 **[14]**
 
 - 使用 `Boolean()` 函数；这是一个返回原始布尔值的普通函数：
+
 ```javascript
 var fBooleanTrue = Boolean(true);
 var fBooleanFalse = Boolean(false);
@@ -813,13 +899,12 @@ var dataObject = new Date([parameters]);
  构造函数的参数如下：
 
 - 不带参数创建今天的日期和时间。例如 `var today = new Date();`
+
 - 表示月份日、年时:分:秒的字符串。例如 `var twoThousandFifteen = new Date("December 31, 2015 23:59:59");`。如果你省略了小时、分钟或秒，值将将设置为 0。
+
 - 年、月、日的整数值集合。例如 `var christmas = new Date(2015, 11, 25);`
+
 - 年、月、日、时、分、秒的整数值集合。例如 `var christmas = new Date(2015, 11, 25, 21, 00, 0);`
-
-
-
-
 
 *JavaScript 教程*
 
@@ -1115,9 +1200,6 @@ statement1
 
 if (condition2) {
 
-
-
-
 *JavaScript 入门*
 
 **[22]**
@@ -1153,7 +1235,9 @@ sayDay(3); //We live in a binary world. Go to Pluto
 这种结构的一个问题是你必须在每个 `case` 中跳出（break），否则执行将贯穿到下一个级别。如果我们从第一个 `case` 语句中移除 `break` 语句，输出将如下：
 
 >sayDay(1);
+
 > Sunday
+
 > Monday
 
 如你所见，如果我们省略 `break` 语句以在条件满足后立即中断执行，执行序列将进入下一个级别。这可能导致你的代码中出现难以检测的问题。然而，如果你打算让它执行到下一个级别，这也是一种流行的条件逻辑写法：
@@ -1218,7 +1302,7 @@ do {
 
 在这个例子中，我们不断向用户请求输入，直到找到来自用户的有效输入。当用户输入无效内容时，我们继续向用户请求。人们总是认为，从逻辑上讲，每个 `do-while` 循环都可以转换为 `while` 循环。然而，`do-while` 循环有一个非常有效的用，就像我们刚刚看到的，你希望只在执行一次循环块后才检查条件。
 
-JavaScript 有一种类似于 C 或 Java 的强大循环——`for` 循环。`for` 循环之所以流行，是因为它允许在一行中定义循环的控制条件。
+JavaScript 有一种类似于 C 或 Java 的强大循环——`for` 循循环。`for` 循环之所以流行，是因为它允许在一行中定义循环的控制条件。
 
 下面的例子打印了五次 Hello：
 
@@ -1266,9 +1350,6 @@ var arr = [10, 20, 30];
 for (i = 0; i < arr.length; i++) arr[i] = 100;
 ```
 
-
-
-
 *JavaScript 导读*
 
 **[28]**
@@ -1280,10 +1361,15 @@ for (i = 0; i < arr.length; i++) arr[i] = 100;
 对类型转换的困惑可能是 JavaScript 开发者讨论最多的挫败感之一。为了确保你脑海中永远不会产生这种困惑，让我们重新回顾 JavaScript 中的类型：
 
 typeof 1 === "number"; // true
+
 typeof "1" === "string"; // true
+
 typeof { age: 39 } === "object"; // true
+
 typeof Symbol() === "symbol"; // true
+
 typeof undefined === "undefined"; // true
+
 typeof true === "boolean"; // true
 
 到目前为止一切良好。我们已经知道这些了，刚才看到的例子也加强了我们对类型的认知。
@@ -1393,18 +1479,27 @@ typeof typeof 1; // "string"
 在判断这些论点的有效性之前，你需要理解什么受 ASI 的影响。以下语句受 ASI 的影响：
 
 - 一个空语句
+
 - 一个 var 语句
+
 - 一个表达式语句
+
 - 一个 do-while 语句
+
 - 一个 continue 语句
+
 - 一个 break 语句
+
 - 一个 return 语句
+
 - 一个 throw 语句
 
 ASI 背后的想法是让行尾的分号变为可选。通常情况下，它以分号结束。ASI 规定语句在以下情况下也会结束：
 
 - 一个行终止符（例如换行符）后面跟着一个非法标记
+
 - 遇到右括号
+
 - 到达文件末尾
 
 让我们看看这个例子：
@@ -1436,12 +1531,19 @@ function add(a,b) { return a+b; }
 虽然空格在 JavaScript 中并不重要，但正确使用空格可以让代码变得易读。以下指南将帮助管理代码中的空格：
 
 - 永远不要混合使用空格制表符。
+
 - 在编写任何代码之前，在软缩进（空格）或真实的制表符之间做出选择。为了可读性，我总是建议将编辑器的缩进大小设置为两个字符——这意味着两个空格或代表真实制表符的两个空格。
+
 - 始终开启显示不可字符。这种做法的好处如下：
+
     - 强制一致性。
+
     - 消除行尾空格。
+
     - 消除空行空格。
+
     - 提交和差异（diff）更易读。
+
     - 尽可能使用 **EditorConfig** (http://editorconfig.org/)。
 
 **括号、换行和花括号**
@@ -1449,23 +1551,32 @@ function add(a,b) { return a+b; }
 if、else、for、while 和 try 总是带有空格和大括号并跨多行。这种风格鼓励可读性。让我们看看下面的代码：
 
 // 紧凑的风格（坏）
+
 if(condition) doSomeTask();
+
 while(condition) i++;
+
 for(var i=0;i<10;i++) iterate();
 
 // 使用空格获得更好的可读性（好）
+
 if (condition) {
+
   doSomeTask();
+
 }
+
 while (condition) {
+
   i++;
+
 }
+
 for (var i = 0; i < 10; i++) {
+
   iterate();
+
 }
-
-
-
 
 *第一章*
 
@@ -1476,19 +1587,23 @@ for (var i = 0; i < 10; i++) {
 if (condition) {
 
 // 语句
+
 }
 
 while ( condition ) {
 
 // 语句
+
 }
 
 for ( var i = 0; i < 100; i++ ) {
 
 // 语句
+
 }
 
 // 更好：
+
 var i,
 
 length = 100;
@@ -1496,6 +1611,7 @@ length = 100;
 for ( i = 0; i < length; i++ ) {
 
 // 语句
+
 }
 
 // 或者...
@@ -1507,6 +1623,7 @@ length = 100;
 for ( ; i < length; i++ ) {
 
 // 语句
+
 }
 
 var value;
@@ -1514,14 +1631,17 @@ var value;
 for ( value in object ) {
 
 // 语句
+
 }
 
 if ( true ) {
 
 // 语句
+
 } else {
 
 // 语句
+
 }
 
 *JavaScript 门教程*
@@ -1531,14 +1651,17 @@ if ( true ) {
 // 在运算符周围加上空格。
 
 // 错误
+
 var x=y+5;
 
 // 正确
+
 var x = y + 5;
 
 // 以单个换行符结束文件。
 
 // 错误
+
 (function(global) {
 
 // ...内容...
@@ -1546,6 +1669,7 @@ var x = y + 5;
 })(this);
 
 // 错误
+
 (function(global) {
 
 // ...内容...
@@ -1553,6 +1677,7 @@ var x = y + 5;
 })(this);
 
 // 正确
+
 (function(global) {
 
 // ...内容...
@@ -1565,7 +1690,7 @@ var x = y + 5;
 
 **行尾和空行**
 
-空格可能会导致无法解析代码差异（diffs）和变更列表。许多编辑器允许你自动删除额外的空行和行尾——你应该使用这些功能。
+空格可能会导致无法解析代码差异（diffs）和变更列表。许多编辑器允许你自动删除额的空行和行尾——你应该使用这些功能。
 
 *第一章*
 
@@ -1576,21 +1701,27 @@ var x = y + 5;
 可以通过如下方式检查变量的类型：
 
 // 字符串：
+
 typeof variable === "string"
 
 // 数字：
+
 typeof variable === "number"
 
 // 布尔值：
+
 typeof variable === "boolean"
 
 // 对象：
+
 typeof variable === "object"
 
 // null：
+
 variable === null
 
 // null 或未定义：
+
 variable == null
 
 **类型转换**
@@ -1598,9 +1729,11 @@ variable == null
 在语句开始处如下所示执行类型转换：
 
 // 错误
+
 const totalScore = this.reviewScore + '';
 
 // 正确
+
 const totalScore = String(this.reviewScore);
 
 对于数字使用 `parseInt()`，并且进行类型转换时始终带有进制：
@@ -1608,21 +1741,27 @@ const totalScore = String(this.reviewScore);
 const inputValue = '4';
 
 // 错误
+
 const val = new Number(inputValue);
 
 // 错误
+
 const val = +inputValue;
 
 // 错误
+
 const val = inputValue >> 0;
 
 // 错误
+
 const val = parseInt(inputValue);
 
 // 正确
+
 const val = Number(inputValue);
 
 // 正确
+
 const val = parseInt(inputValue, 10);
 
 *JavaScript 门教程*
@@ -1632,8 +1771,11 @@ const val = parseInt(inputValue, 10);
 以下示例展示了如何使用布尔值进行类型转换：
 
 const age = 0; // 错误
+
 const hasAge = new Boolean(age); // 正确
+
 const hasAge = Boolean(age); // 正确
+
 const hasAge = !!age;
 
 **条件求值**
@@ -1641,35 +1783,49 @@ const hasAge = !!age;
 关于条件语句有各种风格指南。让我们学习以下代码：
 
 // 当评估数组是否有长度时，
+
 // 错误：
+
 if ( array.length > 0 ) ...
 
 // 评估真值（正确）：
+
 if ( array.length ) ...
 
 // 当评估数组是否为空时，
+
 //（错误）：
+
 if ( array.length === 0 ) ...
 
 // 评估真值（正确）：
+
 if ( !array.length ) ...
 
 // 当检查字符串是否不为空时，
+
 //（错误）：
+
 if ( string !== "" ) ...
 
 // 评估真值（正确）：
+
 if ( string ) ...
 
 // 当检查字符串是否为空时，
+
 // 错误：
+
 if ( string === "" ) ...
 
 // 评估假值（正确）：
+
 if ( !string ) ...
 
 // 当检查一个引用是否为 true时，
+
 //（错误）：
+
 if ( foo === true ) ...
 
 *第一章*
@@ -1677,48 +1833,73 @@ if ( foo === true ) ...
 **[37]**
 
 // 正确
+
 if ( foo ) ...
 
 // 当检查一个引用是否为 false时，
+
 // 错误：
+
 if ( foo === false ) ...
 
 // 正确
+
 if ( !foo ) ...
 
 // 这也会匹配：0, "", null, undefined, NaN
 
 // 如果你必须测试布尔值 false，那么请使用
+
 if ( foo === false ) ...
 
 // 一个可能为 null 或 undefined 的引用，但不是 false、"" 或
+
 0，
+
 // 错误：
+
 if ( foo === null || foo === undefined ) ...
 
 // 正确
+
 if ( foo == null ) ...
 
 // 不要把问题复杂
+
 return x === 0 ? 'sunday' : x === 1 ? 'Monday' : 'Tuesday';
 
 // 更好：
+
 if (x === 0) {
+
 return 'Sunday';
+
 } else if (x === 1) {
+
 return 'Monday';
+
 } else {
+
 return 'Tuesday';
+
 }
 
 // 甚至是：
+
 switch (x) {
+
 case 0:
+
 return 'Sunday';
+
 case 1:
+
 return 'Monday';
+
 default:
+
 return 'Tuesday';
+
 }
 
 *JavaScript 门教程*
@@ -1730,38 +1911,61 @@ return 'Tuesday';
 命名超级重要。我相信你一定遇到过命名简短且难以理解的代码。让我们学习以下几行代码：
 
 // 避免单字母命名。命名时要具有描述性。
+
 // 错误
+
 function q() {
+
 }
 
 // 正确
+
 function query() {
+
 }
 
 // 在命名对象、函数和实例时使用驼峰命名法（camelCase）。
+
 // 错误
+
 const OBJEcT = {};
+
 const this_is_object = {};
+
 function c() {}
 
 // 正确
+
 const thisIsObject = {};
+
 function thisIsFunction() {}
 
 // 在命名构造函数或类时使用大驼峰命名法（PascalCase）。
+
 // 错误
+
 function user(options) {
+
 this.name = options.name;
+
 }
+
 const bad = new user({
+
 name: 'nope',
+
 });
 
 // 正确
+
 class User {
+
 constructor(options) {
+
 this.name = options.name;
+
 }
+
 }
 
 *第一章*
@@ -1769,15 +1973,21 @@ this.name = options.name;
 **[39]**
 
 const good = new User({
+
 name: 'yup',
+
 });
 
 // 在命名私有属性时使用前下划线 _。
+
 // 错误
+
 this.__firstName__ = 'Panda';
+
 this.firstName_ = 'Panda';
 
 // 正确
+
 this._firstName = 'Panda';
 
 **eval() 方法是邪恶的**
@@ -1808,6 +2018,7 @@ ECMAScript 5 有一种严格模式，可以产生更整洁的 JavaScript、更�
 **[40]**
 
 你通过在 JavaScript 文件或 `<script>` 元素开头输入以下行来开启严格模式：
+
 'use strict';
 
 注意，不支持 ECMAScript 5 的 JavaScript 引擎将忽略该语句并继续作为非严格模式。如果你想按函数开启严格模式，可以这样做：
@@ -1841,9 +2052,6 @@ sloppyVar = 123;
 
 console.log(sloppyVar); // 123
 ```
-
-
-
 
 *第1章*
 
@@ -1886,13 +2094,15 @@ function f() {
 
 **JSHint** 是一个用于标记 JavaScript 程序中可疑用法的程序。该核心项目由库本身以及作为一个 Node 模块分发的**命令行界面**（**CLI**）程序组成。
 
+
+
 如果你安装了 Node.js，可以使用以下命令通过 npm 安装 JSHint：
 
-**npm install jshint -g**
+`npm install jshint -g`
 
-*JavaScript 门*
+JavaScript 门
 
-**[ 42 ]**
+`[ 42 ]`
 
 一旦安装了 JSHint，你就可以对单个或多个 JavaScript 文件进行检查。将以下 JavaScript 代码段保存到 `test.js` 文件中：
 
@@ -1909,9 +2119,11 @@ function f(condition) {
 
 当我们使用 JSHint 运行文件时，它会像下面这样警告我们 switch case 中缺少 `break` 语句：
 
-**> jshint test.js**
-**test.js: line 4, col 19, Expected a 'break' statement before 'case'.**
-**1 error**
+`> jshint test.js`
+
+`test.js: line 4, col 19, Expected a 'break' statement before 'case'.`
+
+`1 error`
 
 JSHint 可以配置以满足你的需求。访问 http://jshint.com/docs/ 查看文档，了解如何根据你的项目需求自定义 JSHint。我广泛使用 JSHint，并建议你也开始使用它。你会惊讶地发现，通过这样一个简单的工具，你能够修复代码中许多隐藏的 bug 和风格问题。
 
@@ -1930,13 +2142,13 @@ JSHint 可以配置以满足你的需求。访问 http://jshint.com/docs/ 查看
 }
 ```
 
-**[ 43 ]**
+`[ 43 ]`
 
 ## 总结
 
 在本章中，我们围绕 JavaScript 语法、类型和风格考虑奠定了一些基础。我们有意识地没有讨论其他重要方面，如函数、变量作用域和闭包，主要是因为它们在书中应该有自己的章节。我确信这一章能帮助你理解 JavaScript 的一些核心概念。在有了这些基础之后，我们将查看如何编写专业质量的 JavaScript 代码。
 
-**[ 45 ]**
+`[ 45 ]`
 
 ## 函数、闭包和模块
 
@@ -1944,21 +2156,28 @@ JSHint 可以配置以满足你的需求。访问 http://jshint.com/docs/ 查看
 
 函数是 JavaScript 的基础。理解 JavaScript 中的函数是你武器库中最重要的武器。关于函数最重要的事实是：在 JavaScript 中，函数是一等公民对象。它们被对待就像任何其他 JavaScript 对象一样。就像其他 JavaScript 数据类型一样，它们可以被变量引用，用字面量声明，甚至作为函数参数传递。
 
-**[ 46 ]**
+`[ 46 ]`
 
 与 JavaScript 中的任何其他对象一样，函数具有以下能力：
 
 - 它们可以通过字面量创建
+
 - 它们可以赋值给变量、数组元素和其他对象的属性
+
 - 它们可以作为参数传递给函数
+
 - 它们可以作为值返回
+
 - 它们可以可以动态创建的属性
 
 JavaScript 中最重要的概念之一是函数是执行单元。我们将讨论函数字面量是如何由以下部分组成的：
 
 - `function` 关键字。
+
 - 一个可选的名字，如果指定，必须是有效的标识符。
+
 - 括号中的参数列表。
+
 - 括在在大括号中的函数体。
 
 ## 函数声明
@@ -1974,9 +2193,9 @@ c = add(1,2);
 console.log(c); // prints 3
 ```
 
-*第 2 章*
+`*第 2 章*`
 
-**[ 47 ]**
+`[ 47 ]`
 
 ## 函数表达式
 
@@ -1991,7 +2210,7 @@ c = add(1,2);
 console.log(c); // prints 3
 ```
 
-在这里，我们正在创建一个匿名函数并将其赋值给变量。你也可以将函数作为参数传递给另一个函数：
+在这里，我们正在创建一个匿名函数并将其赋值给变量。你也可以将函数作为参数传递给另一个函�：
 
 ```javascript
 function changeCase(val) {
@@ -2030,13 +2249,9 @@ console.log(facto(3)); // prints 6
 })();
 ```
 
-
-
-
-
 ## 第2章
 
-## [ 49 ]
+## `[ 49 ]`
 
 ## 函数作为数据
 
@@ -2084,7 +2299,7 @@ var generateDataForScientist = function() {
 
 ## 函数、闭包与模块
 
-## [ 50 ]
+## `[ 50 ]`
 
 ```javascript
 var generateDataForComposer = function() {
@@ -2103,15 +2318,15 @@ parseRequest(generateDataForComposer, validateDataForAge, errorHandlerForAge);
 
 在这个示例中，我们将函数作为参数传递给 `parseRequest()` 函数。对于两个不同的调用，我们传递了不同的函数（`generateDataForScientist` 和 `generateDataForComposer`），而另外两个函数保持不变。
 
-你可以观察到我们定义了一个通用的 `parseRequest()`。它接受三个函数作为参数，负责将具体细节组合在一起：数据、验证器和错误处理器。`parseRequest()` 函数是完全可扩展且可定制的，而且因为它会被每个请求调用，所以有一个单一、整洁的调试点。我相信你已经开始欣赏 JavaScript 函数提供的巨大力量了。
+你可以观察到我们定义了一个通用的 `parseRequest()`。它接受三个函数作为参数，负责将具体细节组合在一起：数据、验证器和错误处理器。`parseRequest()` 函数是完全可扩展且可定制的，而且因为它会被每个请调用，所以有一个单一、整洁的调试点。我相信你已经开始欣赏 JavaScript 函数提供的巨大力量了。
 
 ### 作用域 (Scoping)
 
 对于初学者来说，JavaScript 的作用域有点令人困惑。这些概念看起来可能直观；但事实并非如此。有些重要的微妙之处必须理解才能掌握这一概念。那么什么是作用域呢？在 JavaScript 中，作用域指的是代码当前的上下文。
 
-变量的作用域是变量存在的上下文。作用域规定了你可以从哪里访问一个变量，以及你是否有权在该文中访问该变量。作用域可以是全局定义的，也可以是局部定义的。
+变量的作用域是变量存在的上下文。作用域规定了你可以从哪里访一个变量，以及你是否有权在该文中访问该变量。作用域可以是全局定义的，也可以是局部定义的。
 
-## [ 51 ]
+## `[ 51 ]`
 
 ### 全局作用域
 
@@ -2122,6 +2337,7 @@ parseRequest(generateDataForComposer, validateDataForAge, errorHandlerForAge);
 你可以通过两种方式创建全局变量：
 
 - 第一种方法是将 `var` 语句放在任何函数之外。本质上，任何在函数外部声明的变量都定义在全局作用域中。
+
 - 第二种方法是在声明变量时省略 `var` 语句（也称为隐式全局）。我认为这种设计是为了给新程序员提供便利，但结果变成了一场噩梦。即使在函数作用域内，如果你在声明变量时省略了 `var` 语句，它默认会在全局作用域中创建。这太糟糕了。你应该始终通过 **ESLint** 或 **JSHint** 运行程序，让它们标记此类违规行为。下面的示例展示了全局作用域的行为：
 
 ```javascript
@@ -2151,7 +2367,7 @@ scopeTest(); //prints 2
 console.log(a); //prints 2 (全局值被覆盖了)
 ```
 
-## [ 52 ]
+## `[ 52 ]`
 
 ### 局部作用域
 
@@ -2175,19 +2391,26 @@ showName(); // Local
 JavaScript 变量在函数级具有作用域。你可以将其想象为一个气泡，防止变量从气泡外部可见。你可以如下可视化这些气泡：
 
 - GLOBAL SCOPE
+
 var g = 0;
 
 function foo(a) {
+
   var b = 1;
+
   function bar() {
+
     var c = 2;
+
   }
+
 }
 
 foo(); // WORKS
+
 bar(); // FAILS
 
-## [ 53 ]
+## `[ 53 ]`
 
 JavaScript 使用作用域链 (scope chains) 来建立给定函数的作用域。通常有一个全局作用域，每个定义的函数都有其自己的作用域。定义在另一个函数内部的任何函数都有一个链接到外部函数的局部作用域。*作用域由源代码中的位置定义*。在解析变量时，JavaScript 从最内层的作用域开始向外搜索。现在，让我们来看 JavaScript 中的各种作用域规则。
 
@@ -2213,13 +2436,9 @@ function foo() {
 foo();
 ```
 
-
-
-
-
 *函数、闭包与模块*
 
-[ 54 ]
+`[ 54 ]`
 
 在 `bar()` 函数中，我们无意中修改了 `i=2` 的值。当我们在 `for` 循环内部调用 `bar()` 时，变量 `i` 的值被设置为 2，导致我们无法跳出无限循环。这是一个命名空间冲突的糟糕案例。
 
@@ -2264,9 +2483,9 @@ console.log( a ); // 1
 
 *第 2 章*
 
-[ 55 ]
+`[ 55 ]`
 
- `(function foo(){ })` 语句作为表达式，意味着标识符 `foo` 只存在于 `foo()` 函数的作用域内，而不在外部作用域内。在函数内部隐藏名称 `foo` 意味着它不会不必要的污染闭包作用域。这非常有用且好得多。我们在函数表达式后添加 `()` 以立即执行它。因此，完整的模式看起来如下：
+`(function foo(){ })` 语句作为表达式，意味着标识符 `foo` 只存在于 `foo()` 函数的作用域内，而不在外部作用域内。在函数内部隐藏名称 `foo` 意味着它不会不必要的污染闭包作用域。这非常有用且好得多。我们在函数表达式后添加 `()` 以立即执行它。因此，完整的模式看起来如下：
 
 **(function foo(){ /* code */ })();**
 
@@ -2285,10 +2504,13 @@ console.log( a ); // 1
 在这里，我们创建了一个匿名函数作为 IIFE。虽然这与之前的命名 IIFE 相同，但使用匿名 IIFE 有几点缺点：
 
 - 因为你无法在堆栈追踪中看到函数名，因此调试此类代码非常困难
+
 - 你无法在匿名函数上使用递归（正如我们之前讨论的那样）
+
 - 过度使用匿名 IIFE 有时会导致代码不可读
 
 Douglas Crockford 和其他一些专家推荐 IIFE 的一种微变体：
+
 (function(){ /* code */ }());
 
 这两种 IIFE 形式都很流行，你会看到很多使用这两种变体的代码。
@@ -2304,7 +2526,7 @@ Douglas Crockford 和其他一些专家推荐 IIFE 的一种微变体：
 
 *函数、闭包与模块*
 
-[ 56 ]
+`[ 56 ]`
 
 ### 内联函数表达式
 
@@ -2360,12 +2582,9 @@ function greet() {
 greet();
 ```
 
-
-
-
 *第2章*
 
-**[ 59 ]**
+`[ 59 ]`
 
 当执行进入函数声明所在的上下文时，在执行任何步进代码之前，该声明就会被处理。它创建的函数被赋予一个适当名称（如上一个示例中的 `functionTwo()`），并且该名称被放在声明出现的作用域中。由于它在相同上下文的任何步进代码执行之前就已经处理了，因此在定义之前调用 `functionTwo()` 不会报错。
 
@@ -2480,13 +2699,9 @@ person.greet();
 
 *注：第 78-81 页的 OCR 文本包含严重的损坏和重叠的 HTML 类标签。我已根据周围文本提供的上下文重建了逻辑上的 JavaScript 流。*
 
-
-
-
-
 *函数、闭包与模块*
 
-[ 64 ]
+`[ 64 ]`
 
 ## 匿名函数
 
@@ -2527,7 +2742,7 @@ for(var x=0; x<things.length; x++) {
 
 *第 2 章*
 
-[ 65 ]
+`[ 65 ]`
 
 ## 作为另一个参数的匿名函数
 
@@ -2571,7 +2786,7 @@ alert(shape());
 
 *函数、闭包与模块*
 
-[ 66 ]
+`[ 66 ]`
 
 在书的后面部分，我们将查看几个函数式技巧，例如**记忆化**（memoization）和缓存函数调用。如果你是通过快速读完整个章节来到这里的，我建议你停下来思考一下我们到到为止讨论的内容。最后几页包含了大量信息，这些信息需要一些时间才能吸收。我建议你在继续学习之前重读这一章。下一节将重点关注闭包和模块模式。
 
@@ -2581,7 +2796,7 @@ alert(shape());
 
 你必须意识到的第一点是闭包在 JavaScript 中无处不在。它不是语言中隐藏的特殊部分。
 
-在我们深入细节之前，让我们快速刷新 JavaScript 中的词法作用域（lexical scope）。我们详细讨论过 JavaScript 中如何在函数级别确定词法作用域。词法作用域本质上决定了所有标识符在哪里以及声明，并预测它们在执行期间将如何被查找。简而言之，闭包是在函数声明时创建的作用域，它允许函数访问并操作该函数外部的变量。换句话说，闭包允许函数访问其自身声明时作用域内的所有变量以及其他函数。
+在我们深入细节之前，让我们快速刷新 JavaScript 中的词法作用域（lexical scope）。我们详细讨论过 JavaScript 中如何在函数级别确定词法作用域。词法作用域本质上决定了所有标识符在哪里以及声明，并预测它们在执行期间将如何被查找。简而言之，闭包是在函数声明时创建的作用域，它允�函数访问并操作该函数外部的变量。换句话说，闭包允许函数访问其自身声明时作用域内的所有变量以及其他函数。
 
 让我们通过示例代码来理解这个定义：
 
@@ -2596,7 +2811,7 @@ outerFn(); // 打印 - I am outer
 
 *第 2 章*
 
-[ 67 ]
+`[ 67 ]`
 
 你预料会有什么不同吗？不，这是闭包最普通的情况。我们在全局作用域声明了一个变量，并在该作用域声明了一个函数。闭包允许 `outerFn()` 访问其声明时所在的作用域内的变量。这种模式如果使用得当，可以非常有用。
 
@@ -2626,11 +2841,12 @@ copy();
 
 *函数、闭包与模块*
 
-[ 68 ]
+`[ 68 ]`
 
 `inner` 变量应该是未定义的吗？然而，上述代码片段的输出如下：
 
 "Outer"
+
 "Inner"
 
 是什么现象允许我们在执行内部函数时（很久之后）`inner` 变量仍然可用？当我们在 `outerFn()` 中声明 `innerFn()` 时，不仅定义了函数，还创建了一个闭包，它不仅包含了函数声明，还包含了声明时作用域内的所有变量。当 `innerFn()` 执行时，即使它所在的作用域已经消失，它也可以通过其闭包访问原始作用域。让我们继续扩展这个示例，以理解闭包可以让你走多远：
@@ -2660,12 +2876,9 @@ copy("copy");
 
 然而，全局作用域中的相同行 `console.log(magic)` 将失败，因为即使在同一个作用域内，尚未定义的变量也无法被引用。
 
-
-
-
-
 ## 第二章
-[69]
+
+`[69]`
 
 所有这些示例都是为了传达控制闭包（closures）运行的几个概念。闭包是 JavaScript 语言中的一项显著特性，你可以在大多数库中看到它们。
 
@@ -2709,7 +2922,8 @@ console.log(private.getPoints());
 ```
 
 ## 函数、闭包与模块
-[70]
+
+`[70]`
 
 在在上的示例中，我们正在创建一个我们打算作为构造函数调用的函数。在这个 `privateTest()` 函数中，我们创建了一个 `var points=0` 变量作为函数作用域变量。该变量仅在 `privateTest()` 中可用。此外，我们创建了一个访问函数（也称为 getter）——`getPoints()`——此方法允许我们在 `privateTest()` 外部只读取 `points` 变量的值，使得该变量对函数是私有的。然而，另一个方法 `score()` 允许我们在不直接从外部访问的情况下修改私有变量 `points` 的值。这使得我们能够编写以受控方式更新私有变量的代码。当你编写编写库时，这种模式非常有用，因为你想要根据契约和预定义的接口来控制变量的访问方式。
 
@@ -2739,7 +2953,7 @@ for (var i=1; i<=5; i++) {
 }
 ```
 
-[71]
+`[71]`
 
 我们将变量 `i` 传递并拷贝到 IIFE（立即执行函数）的局部变量 `j` 中。在每次迭代中引入 IIFE 会为每次迭代创建一个新的作用域，从而用正确的值更新局部拷贝。
 
@@ -2761,7 +2975,8 @@ var moduleName=function() {
 在上述格式中实现此模式有两个要求：
 
 - 必须有一个外部闭包函数，它至少需要执行一次。
-- 该封闭函数必须返回至少一个内部函数。这对于创建一个关于私有状态的闭包是必要的——如果没有这个，你将无法访问私有状态。
+
+- 该封闭函数必须返回至少一个内部函�。这对于创建一个关于私有状态的闭包是必要的——如果没有这个，你将无法访问私有状态。
 
 检查以下模块的示例：
 
@@ -2786,7 +3001,7 @@ superModule.getSecret();
 superModule.getPassCode();
 ```
 
-[72]
+`[72]`
 
 这个示例满足了两个条件。首先，我们创建了一个 IIFE 或命名函数作为外部封装。定义的变量将保持私有，因为它们被限制域在函数内。我们返回公共函数以确保我们拥有对私有作用域的闭包。在模块模式中使用 IIFE 实际上会产生该函数的单例实例。如果你想创建多个实例，也可以作为模块的一部分创建命名函数表达式。
 
@@ -2797,6 +3012,7 @@ superModule.getPassCode();
 与上一章一样，我们将用某些风格考量结束这段讨论。再次，这些通常是广泛接受的指南而非规则——如果你有理由相信并非如此，请随时偏离它们：
 
 - 使用函数声明代替函数表达式：
+
   ```javascript
   // 坏
   const foo = function () {
@@ -2805,34 +3021,48 @@ superModule.getPassCode();
   function foo() {
   }
   ```
+
 - 永远不要在非函数块（if、while 等）中声明函数。相反将函数赋值给变量。浏览器允许你这样做，但它们的解释方式各不相同。
+
 - 永远不要将参数命名为 `arguments`。这将优于每个函数作用域提供的 `arguments` 对象。
 
 ## 总结
-[73]
+
+`[73]`
 
 在本章中，我们学习了 JavaScript 函数。在 JavaScript 中，函数起着至关重要的作用。我们讨论了如何创建和使用函数。我们还讨论了闭包的重要思想。我们讨论了闭包的创建。
 
 在下一章中，我们将查看数据结构和处理。
 
 ## 数据结构与处理
-[75]
+
+`[75]`
 
 在大多数编程中，你会花费时间处理数据。在本章中，我们将详细查看数据结构和处理。通过这些构造的正确使用，我们将解释以下主题：
 
 - 正则表达式
+
 - 精确匹配
+
 - 字符类
+
 - 重复出现
+
 - 起和终
+
 - 反向引用
+
 - 贪婪与懒惰量化
+
 - 数组
+
 - Map
+
 - Set
 
 ### 正则表达式
-[76]
+
+`[76]`
 
 如果你熟悉正则表达式，我请求你花时间学习。学习并有效使用正则表达式是你将获得的最有价值的技能之一。在大多数代码审查期间，我评论的第一件事就是代码可以如何转换为单行正则表达式。如果你学习流行的 JavaScript 库，你会惊讶于正则表达式无处不在。资工程师主要依赖正则表达式，因为一旦学会了如何使用它们，它们既简洁又易于测试。然而，学习正则表达式需要大量的精力和时间。正则表达式是模式字符串的一种。表达式本身由允许我们定义这些模式的术语和运算符组成。我们将很快看到这些术语和运算符。
 
@@ -2853,18 +3083,16 @@ var pattern = new RegExp("test");
 这两种格式都在变量 pattern 中创建了相同的正则表达式。除了表达式本身之外，还存在三个与正则表达式关联的标志：
 
 - i：这使得正则表达式不区分大小写，因此 /test/i 不仅匹配 test，还匹配 Test、TEST、tEsT 等。
+
 - g：匹配模式的所有实例，而不是默认的本地（只匹配第一次出现）。
+
 - m：这允许跨行匹配，这些行可能从 textarea 元素的值中。
 
 这些标志附加在字面量的末（例如 /test/ig），或者作为字符串作为第二个参数传递给 RegExp 构造函数（new RegExp("test", "ig")）。
 
-
-
-
-
 ## 第 3 章
 
-[77]
+`[77]`
 
 以下示例说明了各种标志以及它们如何影响模式匹配：
 
@@ -2911,7 +3139,7 @@ console.log(pattern.test('d')); //true
 
 ## 数据结构与操作
 
-[78]
+`[78]`
 
 该模式的一个关键变体是值的范围。如果我们想匹配一个连续的字符或数字范围，可以使用以下模式：
 
@@ -2948,7 +3176,7 @@ var arrMatches = regExAt.exec(strToMatch);
 console.log(arrMatches);
 ```
 
-[79]
+`[79]`
 
 这将返回原始文本中单词 `Toy` 的所有出现。`String` 对象包含 `match()` 方法，其功能与 `exec()` 方法类似。`match()` 方法在 String 对象上调用，并将正则表达式作为参数传递给它。考虑以下示例：
 
@@ -2992,7 +3220,7 @@ console.log(sColor.split(reComma));
 
 ## 数据结构与操作
 
-[80]
+`[80]`
 
 我们需要在逗号前面添加反斜杠，因为逗号在正则表达式中被特殊处理，如果我们想字面地使用它，就需要转义它。
 
@@ -3018,13 +3246,9 @@ console.log(arrMatches);
 
 （注：此处原文存在大量 OCR 错误和重复内容，已根据逻辑进行了清理和翻译）
 
-
-
-
-
 *数据结构与操作*
 
-**[ 82 ]**
+`[ 82 ]`
 
 在接下来的示例中，我们创建了一个字符 u 是可选的（出现 0 次或 1 次）的模式：
 
@@ -3063,18 +3287,24 @@ console.log(heartyLaugh.test("HaHaHaHaHaHaHaaaaaaaaaaa"));
 让我们将前面的表达式拆解成更小的部分来理解这里发生了什么：
 
 - H: 字面字符匹配
+
 - a+: 字符 a 出现一次或多次
+
 - (: 表达式组的开始
+
 - H: 字面字符匹配
+
 - a+: 字符 a 出现一次或多次
+
 - ): 表达式组的结束
+
 - +: 表达式组 (Ha+) 出现一次或多次
 
 现在更容易看出是如何分组的了。如果我们必须解释这个表达式，像前面的示例中那样读出表达式有时会有帮助。
 
 *第 3 章*
 
-**[ 83 ]**
+`[ 83 ]`
 
 通常，你可能希望单独匹配字母或数字序列，而不仅仅是作为子字符串。当你匹配不属于任何其他单词的单词时，这是一个相当常见的用例。我们可以通过 `\b` 模式来指定单词边界。带有 `\b` 的单词边界匹配一侧是单词字符（字母、数字或下划线）而另一侧不是的位置。考虑以下示例。
 
@@ -3090,7 +3320,7 @@ console.log(/cat/.test('a black cat')); //true
 console.log(/\bcat/.test('a black cat')); //true
 ```
 
-当我们在单词 tomcat 上使用相同的边界时，我们得到一个失败的匹配，因为在单词 tomcat 中 cat 之前没有单词边界：
+在单词 tomcat 上使用相同的边界时，我们得到一个失败的匹配，因为在单词 tomcat 中 cat 之前没有单词边界：
 
 ```javascript
 console.log(/\bcat/.test('tomcat')); //false
@@ -3116,7 +3346,7 @@ console.log(/\bcat\b/.test("concatenate")); //false
 
 *数据结构与操作*
 
-**[ 84 ]**
+`[ 84 ]`
 
 `exec()` 方法在获取找到匹配的信息方面非常有用，因为它返回一个包含匹配信息的对象。从 `exec()` 返回的对象有一个 `index` 属性，告诉我们成功匹配在字符串中的起始位置。这在许多方面都有用：
 
@@ -3150,7 +3380,7 @@ console.log(match.index);
 
 *第 3 章*
 
-**[ 85 ]**
+`[ 85 ]`
 
 一个示例可以是 `/^([XYZ])a\1/`，它匹配一个以 X、Y 或 Z 中的任一个字符开头的字符串，后面跟着一个 a，紧接着是与第一个捕获匹配的任何字符。这与 `/[XYZ] a[XYZ]/` 非常不同。a 之后的字符不能是 X、Y 或 Z 中的任何一个，但必须是与第一个捕获匹配的字符。
 
@@ -3172,7 +3402,7 @@ console.log(modifiedStr); //outputs "5678 1234"
 
 *数据结构与操作*
 
-**[ 86 ]**
+`[ 86 ]`
 
 移除字符串开头和结尾的多余空格是一个非常常见的用例。由于 String 对象最近才有了 `trim()` 方法，许多 JavaScript 库提供并使用了针对旧浏览器的字符串修剪实现。最常用的方法看起来像下面的代码：
 
@@ -3213,13 +3443,9 @@ var arr = [1,2,3];
 
 当指定这些值时，数组以它们作为元素进行初始化。数组的长度属性等于参数的数量。括号语法被称为数组字面量。它是初始化数组的一种更短且更优的方法。
 
-
-
-
-
 *第三章*
 
-**[87]**
+`[87]`
 
 如果你想初始化一个包含单个元素的数组，且该元素恰好是一个数字，那么你必须使用数组字面量语法。如果你向 `Array()` 构造函数或函数传递单个数字值，JavaScript 会将此参数视为数组的长度，而不是单个元素：
 
@@ -3269,7 +3495,7 @@ var days = ["Sunday", "Monday", "Tuesday"]
 
 *数据结构与操作*
 
-**[88]**
+`[88]`
 
 JavaScript 内部将数组元素存储为标准对象属性，使用数组索引作为属性名。`length` 属性则不同。`length` 属性始终返回最后一个元素的索引加一。正如我们讨论过的，JavaScript 数组索引是从 0 开始的：它们从 0 开始，而不是 1。这意味着 `length` 属性将比数组中存储的最高索引大一：
 
@@ -3320,7 +3546,7 @@ colors.forEach(function(color) {
 
 *第三章*
 
-**[89]**
+`[89]`
 
 `concat()` 方法合并两个数组并返回一个新数组：
 
@@ -3379,7 +3605,7 @@ myArray.reverse();
 
 *数据结构与操作*
 
-**[90]**
+`[90]`
 
 `sort()` 方法对数组元素排序：
 
@@ -3392,12 +3618,14 @@ myArray.sort();
 `sort()` 方法可以可选接受一个回调函数来定义如何比较元素。让我们学习以下函数：
 
 - `indexOf(searchElement[, fromIndex])`: 它在数组中搜索元素并返回索引：
+
 ```javascript
 var a = ['a', 'b', 'c'];
 console.log(a.indexOf('b')); // 1
 ```
 
 - `lastIndexOf(searchElement[, fromIndex])`: 它的工作方式与 `indexOf()` ，但仅向后搜索：
+
 ```javascript
 var a = ['a', 'b', 'c'];
 console.log(a.lastIndexOf('b')); // 1
@@ -3413,7 +3641,7 @@ npm install underscore
 
 *第三章*
 
-**[91]**
+`[91]`
 
 我们在上一个示例中看到的 `each()` 函数遍历元素列表，将每个元素交给迭代器函数。迭代器的每次调用都会带有三个参数（元素、索引和列表）。在上述的示例中，`each()` 函数遍历数组 `[1,2,3]`，对于数组中的每个元素，都会调用 `print` 函数，并将数组元素作为参数。这是访问数组中所有元素的传统循环机制的便捷替代方案。
 
@@ -3440,12 +3668,9 @@ console.log(_.range(0, 30, 5)); // [ 0, 5, 10, 15, 20, 25 ]
 console.log(_.range(0, -10, -1)); // [ 0, -1, -2, -3, -4, -5, -6, -7, -8, -9 ]
 ```
 
-
-
-
 *数据结构与操作*
 
-**[ 92 ]**
+`[ 92 ]`
 
 默认情况下，`range()` 使用整数填充数组，但通过一个小技巧，你也可以填充其他数据类型：
 
@@ -3499,7 +3724,7 @@ console.log(sum);
 
 *第 3 章*
 
-**[ 93 ]**
+`[ 93 ]`
 
 `filter()` 函数遍历整个列表并返回所有通过条件的元素的数组。看下面的示例：
 
@@ -3563,7 +3788,7 @@ console.log(_.invoke(["new","old","cat"], 'sort'));
 
 *数据结构与操作*
 
-**[ 94 ]**
+`[ 94 ]`
 
 这是因为 `sort` 方法不是 `String` 对象的一部分。然而，这可以完美工作：
 
@@ -3625,11 +3850,13 @@ console.log(_.without([1,2,3,4,5,6,7,8,9,0,1,2,0,0,1,1],0,1,2));
 
 *第 3 章*
 
-**[ 95 ]**
+`[ 95 ]`
 
 ## Maps
 
 ECMAScript 6 引入了 Map。Map 是一个简单的键值映射，并可以按照插入顺序迭代其元素。下面的代码片段展示了 Map 类型的一些及其用法：
+
+
 
 ```javascript
 var founders = new Map();
@@ -3645,18 +3872,18 @@ founders.get("twitter"); // undefined
 founders.has("yahoo"); // false
 
 for (var [key, value] of founders) {
-
-console.log(key + " founded by " + value);
+  console.log(key + " founded by " + value);
 }
 
 // "facebook founded by mark"
 // "google founded by larry"
+```
 
 ## Sets
 
-ECMAScript 6 引入了 Set。Set 是值的集合，并可以按照元素的插入顺序迭代。关于 Set 的一个重要特性是一个值在 Set 中只能出现一次。
+ECMAScript 6 引入了 `Set`。`Set` 是值的集合，并可以按照元素的插入顺序迭代。关于 `Set` 的一个重要特性是一个值在 `Set` 中只能出现一次。
 
-下面的代码片段展示了 Set 的的一些基本操作：
+下面的代码片段展示了 `Set` 的一些基本操作：
 
 ```javascript
 var mySet = new Set();
@@ -3677,36 +3904,22 @@ for (let item of mySet) console.log(item);
 
 // 1
 // "Howdy"
+```
 
-*数据结构与操作*
+## 面向对象的 JavaScript
 
-**[ 96 ]**
-
-（注：由于提供的原始文本存在大量重复和逻辑说明，此处已根据核心内容进行整理和翻译。）
-
-
-
-
-**[99]**
-
-面向对象的 JavaScript
-
-JavaScript 最基础的数据类型是对象（Object）数据类型。JavaScript 对象可以被视为可变的基于键值的集合。在 JavaScript 中，数组（arrays）、函数和正则表达式（RegExp）都是对象，而数字、字符串和布尔值是类似于对象的构造函数，它们是不可变的，但拥有方法。在本章中，你将学习以下主题：
+JavaScript 最基础的数据类型是对象（`Object`）数据类型。JavaScript 对象可以被视为可变的基于键值的集合。在 JavaScript 中，数组（`arrays`）、函数和正则表达式（`RegExp`）都是对象，而数字、字符串和布尔值是类似于对象的构造函数，它们是不可变的，但拥有方法。在本章中，你将学习以下主题：
 
 - 理解对象
 - 实例属性与原型属性
 - 继承
--get（Getters）和设置器（setters）
+- Getters 和 Setters
 
 ### 理解对象
 
-在我们开始研究 JavaScript 如何处理对象之前，我们应该花些时间了解面向对象的范式。与大多数编程范式一样，**面向对象**的**编程**（**OOP**）也源于管理复杂性的需求。核心思想是将整个系统划分为相互隔离的小型部分。如果这些小部分能够尽可能地隐藏实现细节，它们就会变得容易使用。一个经典的汽车类比可以帮助你理解关于 OOP 的这一非常重要的点。
+在我们开始研究 JavaScript 如何处理对象之前，我们应该花些时间了解面向对象的范式。与大多数编程范式一样，**面向对象编程**（**OOP**）也源于管理复杂性的需求。核心思想是将整个系统划分为相互隔离的小型部分。如果这些小部分能够尽可能地隐藏实现细节，它们就会变得容易使用。一个经典的汽车类比可以帮助你理解关于 OOP 的这一非常重要的点。
 
-*面向对象的 JavaScript*
-
-**[100]**
-
-当你开车时，你操作的是界面——方向方向盘、离合器、刹车和油门。你对使用汽车 View受这个界面的限制，这使得我们能够开车。这个界面本质上隐藏了所有真正驱动汽车的复杂系统，例如引擎的内部运行机制、电子系统等。作为一名驾驶员，你不需要操心这些复杂性。
+当你开车时，你操作的是界面——方向盘、离合器、刹车和油门。你对使用汽车受这个界面的限制，这使得我们能够开车。这个界面本质上隐藏了所有真正驱动汽车的复杂系统，例如引擎的内部运行机制、电子系统等。作为一名驾驶员，你不需要操心这些复杂性。
 
 类似的思想是 OOP 的主要驱动力。对象隐藏了实现特定功能的复杂性，并向外部世界暴露一个有限的界面。所有其他系统可以使用这个界面，而无需真正担心隐藏在视图之外的复杂性。此外，对象通常会向其他对象隐藏其内部状态并防止其被直接修改。这是 OOP 的一个重要方面。
 
@@ -3721,14 +3934,10 @@ OOP 是一个重要的思想，也是从传统结构化编程向前迈的重要�
 
 这两个想法与经典 OOP 的运行方式完全背道而驰。经典的继承方式是基于将父类暴露给所有子类的继承来实现的。经典继承将子类与其父类紧密耦合。在经典继承中，某些机制可以在一定程度上解决这个问题。如果你在 Java 等语言中使用经典继承，通常建议*面向接口编程，而不是面向实现编程*。在 Java 中，你可以使用接口编写解耦的代码：
 
-```
-//面向接口 'List' 编程而不是实现 'ArrayList'
+```java
+// 面向接口 'List' 编程而不是实现 'ArrayList'
 List theList = new ArrayList();
 ```
-
-*第 4 章*
-
-**[101]**
 
 与其面向实现编程，你可以执行以下操作：
 
@@ -3736,64 +3945,51 @@ List theList = new ArrayList();
 ArrayList theList = new ArrayList();
 ```
 
-面向接口编程有什么帮助呢？当你面向 List 接口编程时，你只能调用 List 接口提供的方法，而无法调用任何特定于 ArrayList 的方法。面向接口让你拥有了更改代码并使用 List 接口的任何其他特定子类的自由。例如，我可以更改我的实现并使用 LinkedList 代替 ArrayList。你可以更改你的变量来使用 LinkedList 代替它：
+面向接口编程有什么帮助呢？当你面向 `List` 接口编程时，你只能调用 `List` 接口提供的方法，而无法调用任何特定于 `ArrayList` 的方法。面向接口让你拥有了更改代码并使用 `List` 接口的任何其他特定子类的自由。例如，我可以更改我的实现并使用 `LinkedList` 代替 `ArrayList`。你可以更改你的变量来使用 `LinkedList` 代替它：
 
 ```java
 List theList = new LinkedList();
 ```
 
-这种方法的优妙之处在于，如果你在程序中的 100 个地方都使用了 List，你就不需要担心在所有这些地方更改实现。因为你是面向接口而不是面向实现编程的，所以你能够写出松耦合的代码。当你使用经典继承时，这是一个重要的原则。
+这种方法的优妙之处在于，如果你在程序中的 100 个地方都使用了 `List`，你就不需要担心在所有这些地方更改实现。因为你是面向接口而不是面向实现编程的，所以你能够写出松耦合的代码。当你使用经典继承时，这是一个重要的原则。
 
 经典继承也有一个局限性，即你只能在父类的范围内增强子类。你无法从根本上与从祖先那里获得的东西有所不同。这限制了重用。经典继承还有以下问题：
 
 - 继承引入了紧密耦合。子类拥有关于其祖先的知识。这使得子类与其父类紧密耦合。
 - 当你从父类派生子类时，你没有选择想要继承什么和不想要什么的权利。*Joe Armstrong*（**Erlang** 的发明者）很好地解释了这种情况——他那句著名的引言：
-
-*"面向对象语言的问题在于，它们随身带着所有这些隐式环境。你想要一根香蕉，但得到的却是一只拿着香蕉的大猩猩和整个丛林。”*
+> *"面向对象语言的问题在于，它们随身带着所有这些隐式环境。你想要一根香蕉，但得到的却是一只拿着香蕉的大猩猩和整个丛林。"*
 
 ### JavaScript 对象的行为
 
 在这样的背景下，让我们探索 JavaScript 对象是如何行为的。广义地说，对象包含属性，属性定义为键值对。`Object.getPrototypeOf()` 函数返回对象的原型。当对象没有被请求的属性时，JavaScript 会去查找它的原型。
 
-*面向对象的 JavaScript*
-
-**[102]**
-
 ```json
-"firstname": "Douglas",
-"lastname": "Crockford",
-"book": "JavaScript The Good Parts",
-"pages": "172"
+{
+  "firstname": "Douglas",
+  "lastname": "Crockford",
+  "book": "JavaScript The Good Parts",
+  "pages": "172"
+}
 ```
-（等一下，让我重新对齐流程）
 
 在前面的代码段中，我们正在创建一个空对象并分配单个属性。你很快就会发现这不是构建对象的非常标准的方法。如果你已经熟悉 OOP，你会立即发现没有封装和通常的类结构。JavaScript 提供了一种绕过此限制的方法。你可以使用 `new` 运算符通过构造函数来实例化对象。然而，JavaScript 中没有类的概念，重要的是，`new` 运算符是应用于构造函数函数的。为了清楚地理解这一点，让我们来看下面的示例：
 
 ```javascript
-//一个不返回任何内容也不创建任何内容的函数
+// 一个不返回任何内容也不创建任何内容的函数
 function Player() {}
 ```
 
-（自我纠正：后续页面的 OCR 文本与之前页面或页眉的重复片段严重交织。我将根据提供的片段重构逻辑流。）
-
-
-
-
-
-*面向对象的 JavaScript*
-
-[104]
+在函数的原型属性上添加一个方法：
 
 ```javascript
-// 在函数的原型 属性上添加一个方法
 Player.prototype.usesBat = function() {
-  return true
-}
+  return true;
+};
 
 // 我们像调用函数一样调用 player()，证明什么都没有发生
 var crazyBob = Player();
 
-if(crazyBob === undefined){
+if (crazyBob === undefined) {
   console.log("CrazyBob is not defined");
 }
 
@@ -3802,12 +3998,12 @@ if(crazyBob === undefined){
 // 2. 方法 usesBat() 从函数的原型中派生
 var swingJay = new Player();
 
-if(swingJay && swingJay.usesBat && swingJay.usesBat()){
+if (swingJay && swingJay.usesBat && swingJay.usesBat()) {
   console.log("SwingJay exists and can use bat");
 }
 ```
 
-在在上一个示例中，我们有一个无所作用的 player() 函数。我们以两种不同的方式调用了它。函数的第一次调用是作为普通函数，第二次调用是作为构造函数——注意在这次调用中使用了 `new()` 运算符。
+在上一个示例中，我们有一个无所作用的 `Player()` 函数。我们以两种不同的方式调用了它。函数的第一次调用是作为普通函数，第二次调用是作为构造函数——注意在这次调用中使用了 `new` 运算符。
 
 一旦定义了该函数，我们就向它添加了 `usesBat()` 方法。当此函数作为普通函数调用时，对象不会被实例化，我们看到 `crazyBob` 被赋值为 `undefined`。然而，当我们使用 `new` 运算符调用此函数时，我们得到了一个完全实例化的对象 `swingJay`。
 
@@ -3830,11 +4026,7 @@ var crazyBob = new Player();
 console.log(crazyBob.isAvailable());
 ```
 
-*第 4 章*
-
-[105]
-
-当你运行这个示例时，你会看到打印输了 **Instance method says - he is hired**。在 `Player()` 函数中定义的 `isAvailable()` 函数是 `Player` 的一个实例。这意味着除了通过原型附加属性之外，你还可以使用 `this` 关键字在构造函数中初始化属性。
+当你运行这个示例时，你会看到打印输出了 **Instance method says - he is hired**。在 `Player()` 函数中定义的 `isAvailable()` 函数是 `Player` 的一个实例。这意味着除了通过原型附加属性之外，你还可以使用 `this` 关键字在构造函数中初始化属性。
 
 当我们把相同的函数既定义为实例属性，又定义为原型属性时，实例属性具有优先权。控制初始化优先级的规则如下：
 
@@ -3846,7 +4038,7 @@ console.log(crazyBob.isAvailable());
 - **当在全局上下文中使用 this 时**：当在全局上下文中调用它时，它将绑定到全局上下文。例如，在浏览器中，全局上下文通常是 `window`。对于函数也是如此。如果你在一个定义在全局上下文中函数中使用 `this`，它仍然绑定到全局上下文，因为该函数是全局上下文的一部分：
 
 ```javascript
-function globalAlias(){
+function globalAlias() {
   return this;
 }
 console.log(globalAlias()); // [object Window]
@@ -3864,16 +4056,10 @@ var f = {
 console.log(f.func());
 // 输出 -
 // [object Object] {
-// func: function () {
-// return this;
-// },
-// name: "f"
+//   func: function () { return this; },
+//   name: "f"
 // }
 ```
-
-*面向对象的 JavaScript*
-
-[106]
 
 - **当没有上下文时**：函数在没有任何对象的情况下被调用时，不会获得任何上下文。默认情况下，它绑定到全局上下文。当你在这样的函数中使用 `this` 时，它也会绑定到全局上下文。
 
@@ -3884,7 +4070,7 @@ var member = "global";
 function f() {
   this.member = "f";
 }
-var o= new f();
+var o = new f();
 console.log(o.member); // f
 ```
 
@@ -3897,7 +4083,7 @@ console.log(o.member); // f
 
 ```javascript
 function Player() {
-  isAvailable=false;
+  isAvailable = false;
 }
 var crazyBob = new Player();
 Player.prototype.isAvailable = function() {
@@ -3906,114 +4092,97 @@ Player.prototype.isAvailable = function() {
 console.log(crazyBob.isAvailable()); // false
 ```
 
-*第 4 章*
-
-[107]
-
 这段代码是早期示例的稍微变体。我们先创建对象，然后将函数附加到它的原型上。当你最终在对象上调用 `isAvailable()` 方法时，如果在特定对象（在本例中为 `crazyBob`）未找到，JavaScript 将去其原型中搜索。将此视为 *热代码加载*——当使用适当时，这种能力可以给你在对象创建后扩展基础对象框架的巨大力量。
 
 如果你已经熟悉了 OOP，你一定在想我们是否可以控制对象成员的可见性和访问权限。正如我们之前讨论的，JavaScript 没有类。在 Java 等编程语言中，你拥有如 `private` 和 `public` 之类的访问修饰符，让你控制类成员的可见性。在 JavaScript 中，我们可以通过使用函数作用域来实现类似的功能：
 
-- 你可以使用函数中的 `var` 关键字声明私有变量。它们只能通过特有方法访问。
-- 私有函数可以在构造函数中声明，并由特有方法访问。
-- 公有方法可以通过 `this.method=function(){}` 声明。
-- 公有方法可以通过 `Class.prototype.method=function(){}` 声明。
+- 你可以使用函数中的 `var` 关键字声明私有变量。它们只能通过特权方法访问。
+- 私有函数可以在构造函数中声明，并由特权方法访问。
+- 公有方法可以通过 `this.method = function() {}` 声明。
+- 公有方法可以通过 `Class.prototype.method = function() {}` 声明。
 - 公有属性可以通过 `this.property` 声明并从任何地方访问。
 
 下面的示例展示了实现这些功能的几种方法：
 
 ```javascript
-function Player(name,sport,age,country){
+function Player(name, sport, age, country) {
   this.constructor.noOfPlayers++;
   // 私有属性和函数
-  // 只能通过特有方法查看、编辑或调用
+  // 只能通过特权方法查看、编辑或调用
   var retirementAge = 40;
-  var available=true;
+  var available = true;
   var playerAge = age ? age : 18;
-  function isAvailable(){ 
-    return available && (playerAge < retirementAge); 
+  function isAvailable() {
+    return available && (playerAge < retirementAge);
   }
-  var playerName=name ? name : "Unknown";
+  var playerName = name ? name : "Unknown";
   var playerSport = sport ? sport : "Unknown";
-```
 
-*面向对象的 JavaScript*
-
-[108]
-
-```javascript
-  // 特有方法
+  // 特权方法
   // 可以从外部调用并访问私有成员
   // 可以被公有对应的替换
-  this.book=function(){
-    if (!isAvailable()){
-      this.available=false;
+  this.book = function() {
+    if (!isAvailable()) {
+      this.available = false;
     } else {
       console.log("Player is unavailable");
     }
   };
-  this.getSport=function(){ return playerSport; };
+  this.getSport = function() { return playerSport; };
 
   // 公有属性，随处可修改
-  this.batPreference="Lefty";
-  this.hasCelebGirlfriend=false;
-  this.endorses="Super Brand";
+  this.batPreference = "Lefty";
+  this.hasCelebGirlfriend = false;
+  this.endorses = "Super Brand";
 }
 
 // 公有方法 - 任何人都可以读取或写入
 // 只能访问公有和原型属性
-Player.prototype.switchHands = function(){ 
-  this.batPreference="righty"; 
+Player.prototype.switchHands = function() {
+  this.batPreference = "righty";
 };
-Player.prototype.dateCeleb = function(){ 
-  this.hasCelebGirlfriend=true;
+Player.prototype.dateCeleb = function() {
+  this.hasCelebGirlfriend = true;
 };
 
-Player.prototype.fixEyes = function(){ 
-  this.wearGlasses=false; 
+Player.prototype.fixEyes = function() {
+  this.wearGlasses = false;
 };
 
 // 原型属性 - 任何人都可以读取或写入（或覆盖）
-Player.prototype.wearsGlasses=true;
+Player.prototype.wearsGlasses = true;
 
 // 静态属性 - 任何人都可以读取或写入
 Player.noOfPlayers = 0;
 
-(function PlayerTest(){
+(function PlayerTest() {
   // 创建 Player 对象的新实例。
-  var cricketer=new Player("Vivian","Cricket",23,"England");
-  var golfer =new Player("Pete","Golf",32,"USA");
+  var cricketer = new Player("Vivian", "Cricket", 23, "England");
+  var golfer = new Player("Pete", "Golf", 32, "USA");
 
   console.log("So far there are " + Player.noOfPlayers + " in the guild");
 })();
 ```
 
-
-
-
-*第 4 章*
-
-[109]
-
 ```javascript
-// 这两个函数共享公共变量 'Player.prototype.wGlasses'
+// 这两个函数共享公共变量 'Player.prototype.wearsGlasses'
 
 cricketer.fixEyes();
 
 golfer.fixEyes();
 
-cricketer.endorses="Other Brand";//公共变量可以被更新
+cricketer.endorses = "Other Brand"; // 公共变量可以被更新
 
- 现在 现在 Player 的公共方法都通过其原型被修改了
+// 现在 Player 的公共方法都通过其原型被修改了
 
-Player.prototype.fixEyes=function(){
-  this.wearGlasses=true;
+Player.prototype.fixEyes = function() {
+  this.wearGlasses = true;
 };
 
 // 只有 Cricketer 的函数被修改了
 
-cricketer.switchHands=function(){
-  this.batPreference="undecided";
+cricketer.switchHands = function() {
+  this.batPreference = "undecided";
 };
 ```
 
@@ -4021,30 +4190,22 @@ cricketer.switchHands=function(){
 
 - `retirementAge` 变量是一个私有变量，没有特权方法来获取或设置它的值。
 - `country` 变量是通过构造函数参数创建的私有变量。构造函数参数作为私有变量供对象可用。
-- 当我们调用 `cricketer.switchHands()` 时，它仅应用于 cricketer 而未应用于两个玩家，尽管它是 Player 本身的一个原型函数。
+- 当我们调用 `cricketer.switchHands()` 时，它仅应用于 cricketer 而未应用于两个玩家，尽管它是 `Player` 本身的一个原型函数。
 - 私有函数和特权方法会在创建每个新对象时实例化。在我们的示例中，为创建的每个新玩家实例都会创建 `isAvailable()` 和 `book()` 的新副本。另一方面，公共方法只创建一份副本并在所有实例之间共享。这可能意味着性能的提升。如果你*真的*不需要将某些内容设为私有，请考虑保持其公开。
-
-*面向对象的 JavaScript*
-
-[110]
 
 ## 继承
 
 继承是面向对象编程（OOP）的一个重要概念。一组对象实现相同的方法是很常见的。一组定义几乎相似的对象仅在少数方法上存在差异也很常见。继承在促进代码复用方面非常有用。我们可以查看以下经典的继承关系示例：
 
-![](img/b71a2881032cad7a0a37747ed6a23e02_128_0.png)
+![继承关系图](img/b71a2881032cad7a0a37747ed6a23e02_128_0.png)
 
 在这里，你可以看到从通用的 **Animal**（动物）类根据特定特征派生了更具体的类，例如 **Mammal**（哺乳动物）和 **Bird**（鸟类）。哺乳动物类和鸟类都具有相同的动物模板；但它们也定义了自身特有的行为和属性。最终，我们派生出了非常具体的哺乳动物——**Dog**（狗）。狗拥有来自动物类和哺乳动物类的共同属性和行为，同时增加了狗特有的属性和行为。这种关系可以继续添加复杂的继承关系。
 
-传统上，继承用于建立或描述 **IS-A**（是一种）关系。例如，狗“是一种”哺乳动物。这就是我们所知的**经典继承**。你可能在 C++ 和 Java 等面向对象的语言中见过这种关系。JavaScript 有有一套完全不同的机制来处理继承。JavaScript 是一种无类语言，使用原型进行继承。原型继承在本质上非常不同，需要深入的理解。经典继承和原型继承在本质上差异巨大，需要仔细研究。
-
-*第 4 章*
-
-[111]
+传统上，继承用于建立或描述 **IS-A**（是一种）关系。例如，狗“是一种”哺乳动物。这就是我们所知的**经典继承**。你可能在 C++ 和 Java 等面向对象的语言中见过这种关系。JavaScript 有一套完全不同的机制来处理继承。JavaScript 是一种无类语言，使用原型进行继承。原型继承在本质上非常不同，需要深入的理解。经典继承和原型继承在本质上差异巨大，需要仔细研究。
 
 在经典继承中，实例继承自类蓝图并创建子类关系。你不能在类定义本身上调用实例方法。你需要先创建一个实例，然后在该实例上调用方法。另一方面，在原型继承中，实例继承自其他实例。
 
-就继承而言，JavaScript 只使用对象。正如我们之前讨论过的过的，每个对象都有指向另一个对象的链接，称为其原型。这个原型对象反过来也有自己的原型，依此类推，直到到达一个原型为 `null` 的对象；根据定义，`null` 没有原型，并充当原型链的终点链接。
+就继承而言，JavaScript 只使用对象。正如我们之前讨论过的，每个对象都有指向另一个对象的链接，称为其原型。这个原型对象反过来也有自己的原型，依此类推，直到到达一个原型为 `null` 的对象；根据定义，`null` 没有原型，并充当原型链的终点链接。
 
 为了更好地理解原型链，让我们考虑以下示例：
 
@@ -4055,15 +4216,15 @@ Person.prototype.cry = function() {
 }
 
 function Child() {}
-Child.prototype = {cry: Person.prototype.cry};
+Child.prototype = { cry: Person.prototype.cry };
 
 var aChild = new Child();
-console.log(aChild instanceof Child); //true
-console.log(aChild instanceof Person); //false
-console.log(aChild instanceof Object); //true
+console.log(aChild instanceof Child); // true
+console.log(aChild instanceof Person); // false
+console.log(aChild instanceof Object); // true
 ```
 
-在这里，我们定义了 Person 然后是 Child——孩子“是一种”人。我们还将 Person 的 `cry` 属性拷贝到 Child 的 `cry` 属性。当我们尝试使用 `instanceof` 检查这种关系时，很快意识到仅仅通过拷贝行为，并不能真正让 Child 成为 Person 的实例；`aChild instanceof Person` 失败了。这仅仅是复制或伪装，而不是继承。即使我们将 Person 的所有属性复制到 Child，我们也没有继承自 Person。这通常是一个坏主意，在这里仅仅此说明目的。我们希望派生出一个原型链——一种真正的继承，在其中我们可以说孩子“是一种”人。我们想创建一个链：孩子“是一种”人，“是一种”哺乳动物，“是一种”动物，“是一种”对象。在 JavaScript 中，这是通过使用对象的实例作为原型来实现的，如下：
+在这里，我们定义了 `Person` 然后是 `Child`——孩子“是一种”人。我们还将 `Person` 的 `cry` 属性拷贝到 `Child` 的 `cry` 属性。当我们尝试使用 `instanceof` 检查这种关系时，很快意识到仅仅通过拷贝行为，并不能真正让 `Child` 成为 `Person` 的实例；`aChild instanceof Person` 失败了。这仅仅是复制或伪装，而不是继承。即使我们将 `Person` 的所有属性复制到 `Child`，我们也没有继承自 `Person`。这通常是一个坏主意，在这里仅仅是为了说明目的。我们希望派生出一个原型链——一种真正的继承，在其中我们可以说孩子“是一种”人。我们想创建一个链：孩子“是一种”人，“是一种”哺乳动物，“是一种”动物，“是一种”对象。在 JavaScript 中，这是通过使用对象的实例作为原型来实现的，如下：
 
 ```javascript
 SubClass.prototype = new SuperClass();
@@ -4077,35 +4238,25 @@ function Person() {}
 Person.prototype.cry = function() {
   console.log("Crying");
 }
-```
 
-*面向对象的 JavaScript*
-
-[112]
-
-```javascript
 function Child() {}
 Child.prototype = new Person();
 
 var aChild = new Child();
-console.log(aChild instanceof Child); //true
-console.log(aChild instanceof Person); //true
-console.log(aChild instanceof Object); //true
+console.log(aChild instanceof Child); // true
+console.log(aChild instanceof Person); // true
+console.log(aChild instanceof Object); // true
 ```
 
-改变后的这一行使用 Person 的实例作为 Child 的原型。这与之前的方法有一个重要的区别。在这里，我们声明了孩子“是一种”人。
+改变后的这一行使用 `Person` 的实例作为 `Child` 的原型。这与之前的方法有一个重要的区别。在这里，我们声明了孩子“是一种”人。
 
 我们讨论了 JavaScript 如何沿着原型链向上查找属性，直到到达 `Object.prototype`。让我们详细讨论原型链的概念，并尝试设计以下员工层级结构：
 
-![](img/b71a2881032cad7a0a37747ed6a23e02_130_0.png)
+![员工层级结构图](img/b71a2881032cad7a0a37747ed6a23e02_130_0.png)
 
-这是一个典型的继承模式。经理（Manager）“是一种”员工（Employee）。**Manager** 继承了来自 **Employee** 的公共属性。它可以拥有一个下属数组。**个人独立贡献者**（Individual Contributor）也基于员工，但他没有任何下属。**团队主管**（Team Lead）派生自经理，具有几个与经理不同的函数。我们本质上做的是每个子类都从其父类派生属性（Manager 是父类，Team Lead 是子类）。
+这是一个典型的继承模式。经理（`Manager`）“是一种”员工（`Employee`）。**Manager** 继承了来自 **Employee** 的公共属性。它可以拥有一个下属数组。**个人独立贡献者**（`IndividualContributor`）也基于员工，但他没有任何下属。**团队主管**（`TeamLead`）派生自经理，具有几个与经理不同的函数。我们本质上做的是每个子类都从其父类派生属性（`Manager` 是父类，`TeamLead` 是子类）。
 
-*第 4 章*
-
-[113]
-
-让我们看看如何在 JavaScript 中创建这种层级结构。让我们定义 Employee 类型：
+让我们看看如何在 JavaScript 中创建这种层级结构。让我们定义 `Employee` 类型：
 
 ```javascript
 function Employee() {
@@ -4115,7 +4266,7 @@ function Employee() {
 }
 ```
 
-这些定义并没有特别之处。Employee 对象包含了三个属性——name、salary 和 dept。接下来，我们定义 Manager。这个定义向你展示了如何指定继承链中的下一个对象：
+这些定义并没有特别之处。`Employee` 对象包含了三个属性——`name`、`salary` 和 `dept`。接下来，我们定义 `Manager`。这个定义向你展示了如何指定继承链中的下一个对象：
 
 ```javascript
 function Manager() {
@@ -4128,18 +4279,9 @@ Manager.prototype = Object.create(Employee.prototype);
 
 在 JavaScript 中，你可以将一个原型实例作为构造函数 `prototype` 属性的值。你可以在定义构造函数后的任何时间这样做。在这个示例中，有两个之前没有探索过的想法。首先，我们调用了 `Employee.call(this)`。如果你有 Java 背景，这等同于构造函数中的 `super()` 方法调用。`call()` 方法用特定对象作为上下文来调用函数（在这种情况下，它是给定的 `this` 值），换句话说，`call` 允许指定在执行函数时哪个对象会被 `this` 关键字引用。就像 Java 中的 `super()`，调用 `parentObject.call(this)` 对于正确初始化正在创建的对象是必要的。
 
-我们看到的另一个点是使用 `Object.create()` 而不是调用 `new`。`Object.create()`创建一个指定原型的对象。当我们执行 `new Parent()` 时，父类的构造逻辑会被调用。在大多数情况下，我们想要 `Child.prototype` 是一个通过其原型链接到 `Parent.prototype` 的对象。如果父类构造函数包含额外的父类特有逻辑，我们不想在创建子对象时运行它。这会导致非常难以发现的错误。`Object.create()` 在不调用父类构造函数的情况下，在子类和父类之间创建与 `new` 运算符相同的原型链接。
+我们看到的另一个点是使用 `Object.create()` 而不是调用 `new`。`Object.create()` 创建一个指定原型的对象。当我们执行 `new Parent()` 时，父类的构造逻辑会被调用。在大多数情况下，我们想要 `Child.prototype` 是一个通过其原型链接到 `Parent.prototype` 的对象。如果父类构造函数包含额外的父类特有逻辑，我们不想在创建子对象时运行它。这会导致非常难以发现的错误。`Object.create()` 在不调用父类构造函数的情况下，在子类和父类之间创建与 `new` 运算符相同的原型链接。
 
-
-
-
-*面向对象的 JavaScript*
-
-**[ 114 ]**
-
-为了拥有一无无副作用且准确的继承机制，我们必须确保
-
-执行了以下操作：
+为了拥有一个无副作用且准确的继承机制，我们必须确保执行了以下操作：
 
 - 将原型设置为父类的实例，这初始化了原型链（继承）；这只执行一次（因为原型对象是共享的）
 - 调用父类的构造函数会初始化对象本身；这在每次实例化时都会执行（你可以在每次构造它时传递不同的参数）
@@ -4172,7 +4314,7 @@ function Engineer() {
 Engineer.prototype = Object.create(TeamLead.prototype);
 ```
 
-基于这个层次级结构，我们可以实例化这些对象：
+基于这个层级结构，我们可以实例化这些对象：
 
 ```javascript
 var genericEmployee = new Employee();
@@ -4189,18 +4331,14 @@ console.log(genericEmployee);
 }
 ```
 
-*第 4 章*
-
-**[ 115 ]**
-
-一个通用的 Employee 的部门被分配为 None（如默认值所示），其余属性也被赋值为默认值。
+一个通用的 `Employee` 的部门被分配为 `None`（如默认值所示），其余属性也被赋值为默认值。
 
 接下来，我们实例化一个经理；我们可以如下所示提供特定值：
 
 ```javascript
 var karen = new Manager();
 karen.name = "Karen";
-karen.reports = [1,2,3];
+karen.reports = [1, 2, 3];
 console.log(karen);
 ```
 
@@ -4215,7 +4353,7 @@ console.log(karen);
 }
 ```
 
-对于 TeamLead，`reports` 属性派生自基类（在本例中为 Manager）：
+对于 `TeamLead`，`reports` 属性派生自基类（在本例中为 `Manager`）：
 
 ```javascript
 var jason = new TeamLead();
@@ -4234,19 +4372,15 @@ console.log(jason);
 }
 ```
 
-当 JavaScript 处理 `new` 运算符时，它会创建一个新对象并将该对象作为 `this` 的值传递给父级——即 TeamLead 构造函数。构造函数设置了 `projects` 属性的值，并隐式设置了内部 `__proto__` 属性的值为 `TeamLead.prototype` 的值。`__proto__` 属性决定了用于返回属性值的原型链。这个过程不会为 `jason` 对象中从原型链继承的属性赋值。当读取属性值时，JavaScript 会首先检查该值是否存在于该对象中。如果值存在，则返回该值。如果该值不存在，JavaScript 将使用 `__proto__` 属性检查原型链。尽管如此，当你执行以下操作时会发生什么：
+当 JavaScript 处理 `new` 运算符时，它会创建一个新对象并将该对象作为 `this` 的值传递给父级——即 `TeamLead` 构造函数。构造函数设置了 `projects` 属性的值，并隐式设置了内部 `__proto__` 属性的值为 `TeamLead.prototype` 的值。`__proto__` 属性决定了用于返回属性值的原型链。这个过程不会为 `jason` 对象中从原型链继承的属性赋值。当读取属性值时，JavaScript 会首先检查该值是否存在于该对象中。如果值存在，则返回该值。如果该值不存在，JavaScript 将使用 `__proto__` 属性检查原型链。尽管如此，当你执行以下操作时会发生什么：
 
 ```javascript
 Employee.prototype.name = "Undefined";
 ```
 
-*面向对象的 JavaScript*
+它并不会传播到所有 `Employee` 的实例。这是因为当你创建一个 `Employee` 对象的实例时，该实例会获得 `name` 的本地值。当你通过创建一个新的 `Employee` 对象来设置 `TeamLead` 原型时，`TeamLead.prototype` 在 `name` 属性上有一个本地值。因此，当 JavaScript 查找 `jason` 对象（它是 `TeamLead` 的实例）的 `name` 属性时，它在 `TeamLead.prototype` 中找到了该属性的本地值。它不会尝试沿链继续向 `Employee.prototype` 进一步查找。
 
-**[ 116 ]**
-
-它并不会传播到所有 Employee 的实例。这是因为当你创建一个 Employee 对象的实例时，该实例会获得 `name` 的本地值。当你通过创建一个新的 Employee 对象来设置 TeamLead 原型时，`TeamLead.prototype` 在 `name` 属性上有一个本地值。因此，当 JavaScript 查找 `jason` 对象（它是 TeamLead 的实例）的 `name` 属性时，它在 `TeamLead.prototype` 中找到了该属性的本地值。它不会尝试沿链继续向 `Employee.prototype` 进一步查找。
-
-如果你想在运行时更改属性的值，并让新值被该对象的所有后代继承，你不能在对象的构造函数中定义该属性。要实现这一点，你需要将其添加到构造函数的 `prototype` 中。例如，让我们重新回顾早的例子，但稍作改动：
+如果你想在运行时更改属性的值，并让新值被该对象的所有后代继承，你不能在对象的构造函数中定义该属性。要实现这一点，你需要将其添加到构造函数的 `prototype` 中。例如，让我们重新回顾早期的例子，但稍作改动：
 
 ```javascript
 function Employee() {
@@ -4271,13 +4405,9 @@ console.log(sandy.name);
 console.log(karen.name);
 ```
 
-你会发现 sandy 和 karen 的 `name` 属性都已变为 Junk。这是因为 `name` 属性是在构造函数之外声明的。因此，当你更改 Employee 原型中的 `name` 值时，它会传播到所有后代。在这个例子中，我们在 sandy 和 karen 对象创建之后修改了 Employee 的原型。如果你在 sandy 和 karen 对象创建之前更改了原型，该值仍然会变为 Junk。
+你会发现 `sandy` 和 `karen` 的 `name` 属性都已变为 `Junk`。这是因为 `name` 属性是在构造函数之外声明的。因此，当你更改 `Employee` 原型中的 `name` 值时，它会传播到所有后代。在这个例子中，我们在 `sandy` 和 `karen` 对象创建之后修改了 `Employee` 的原型。如果你在 `sandy` 和 `karen` 对象创建之前更改了原型，该值仍然会变为 `Junk`。
 
-所有原生 JavaScript 对象——Object、Array、String、Number、RegExp 和 Function——都具有可以扩展的 `prototype` 属性。这意味着我们可以扩展语言本身。例如，下面的代码段扩展了 `String` 对象以添加一个反转 `reverse()` 方法。该方法在原生 `String` 对象中并不，但通过操作 `String` 的 `prototype`，我们为其添加了这个方法：
-
-*第 4 章*
-
-**[ 117 ]**
+所有原生 JavaScript 对象——`Object`、`Array`、`String`、`Number`、`RegExp` 和 `Function`——都具有可以扩展的 `prototype` 属性。这意味着我们可以扩展语言本身。例如，下面的代码段扩展了 `String` 对象以添加一个反转 `reverse()` 方法。该方法在原生 `String` 对象中并不存在，但通过操作 `String` 的 `prototype`，我们为其添加了这个方法：
 
 ```javascript
 String.prototype.reverse = function() {
@@ -4285,14 +4415,14 @@ String.prototype.reverse = function() {
 };
 
 var str = 'JavaScript';
-console.log(str.reverse()); //"avaJ"
+console.log(str.reverse()); // "tpircSavaJ"
 ```
 
 尽管这是一个非常强大的技术，但应该避免过度使用。参考 http://perfection.com/extending-native-builtins/ 来了解扩展内置对象的陷阱以及如果你打算这样做需要注意什么。
 
-### Getters 和 setters
+### Getters 和 Setters
 
-**Getters** 是获取特定属性值的方便方法；**setters** 是设置属性值的方法。通常你可能希望根据某些值派生出一个值。传统上，getter 和 setter 使用如下函数：
+**Getters** 是获取特定属性值的方便方法；**Setters** 是设置属性值的方法。通常你可能希望根据某些值派生出一个值。传统上，getter 和 setter 使用如下函数：
 
 ```javascript
 var person = {
@@ -4313,14 +4443,15 @@ var person = {
 };
 ```
 
-面向面向对象的 JavaScript
+## JavaScript 模式
 
-[120]
+```javascript
+var _ = require('underscore');
 
 var aScientist = new Scientist();
 
-var lst = _.mapObject(aScientist, function(val,key){
-  if(key==="age"){
+var lst = _.mapObject(aScientist, function(val, key) {
+  if (key === "age") {
     return val + 10;
   } else {
     return val;
@@ -4328,23 +4459,28 @@ var lst = _.mapObject(aScientist, function(val,key){
 });
 
 console.log(lst); // { name: 'Albert', age: 100 }
+```
 
-- functions(): 此函数返回对象中所有方法名称的排序列表——即对象中每个函数属性名称。
+- `functions()`: 此函数返回对象中所有方法名称的排序列表——即对象中每个函数属性名称。
+- `pick()`: 此函数返回对象的拷贝，并过滤出仅提供键的值：
 
-- pick(): 此函数返回对象的拷贝，并过滤出仅提供键的值：
-var var _ = require('underscore');
+```javascript
+var _ = require('underscore');
+
 var testobj = {
   name: 'Albert',
-  age : 90,
+  age: 90,
   profession: 'Physicist'
 };
 
-console.log(_.pick(testobj, 'name','age')); // { name: 'Albert', age: 90 }
-console.log(_.pick(testobj, function(val,key,object){
+console.log(_.pick(testobj, 'name', 'age')); // { name: 'Albert', age: 90 }
+
+console.log(_.pick(testobj, function(val, key, object) {
   return _.isNumber(val);
 })); // { age: 90 }
+```
 
-- omit(): 此函数是 pick() 的反向操作——它返回对象的拷贝，并过滤掉指定键的值。
+- `omit()`: 此函数是 `pick()` 的反向操作——它返回对象的拷贝，并过滤掉指定键的值。
 
 ## 总结
 
@@ -4352,7 +4488,7 @@ JavaScript 应用可以通过面向对象能为代码带来的更大程度的控
 
 在本章中，我们学习了基础的对象创建和操作。我们查看了如何使用构造函数创建对象。我们深入研究了原型链以及继承如何在原型链的基础上运行的。这些基础将用于构建你对 JavaScript 模式的认知，我们将在下一章中探索这些模式。
 
-[121]
+---
 
 到为止，我们已经查看了编写 JavaScript 代码所需的几个基础构建块。一旦你开始使用这些结构构建更大的系统时，你很快就会发现某些事情有标准的处理方法。在开发大型系统时，你会遇到重复性问题；模式可以被视为解决常见问题的最佳实践、有用的抽象或模板。编写可维护的代码是困难的。编写模块化、正确且可维护代码的关键在于理解重复的主题并使用通用模板解决这些问题。关于设计模式最重要的文本是 1995 年出版的一本书，名为*设计模式：可重用面向对象软件的元素*，由 Erich Gamma、Richard Helm、Ralph Johnson 和 John Vlissides 编写——这个小组被称为“四人帮”（简称为 **GOF**）。这部开创性的工作对各种模式给出了正式定义，并解释了我们今天使用的大多数流行模式的实现细节。理解为什么模式很重要在于：
 
@@ -4360,14 +4496,12 @@ JavaScript 应用可以通过面向对象能为代码带来的更大程度的控
 - 模式的设计是为了可重用：它们足够通用，可以适应各种问题的变体。
 - 模式定义了词汇：模式是定义良好的结构，因此为解决方案提供了通用的词汇。在跨大群体中进行通信时，这种方式非常有表现力。
 
-[122]
-
-设计模式
+## 设计模式
 
 在本章中，我们将查看一些适用于 JavaScript 的设计模式。然而，编码模式对于 JavaScript 来说非常特殊，而且对我们具有很大意义。在我们花费大量精力尝试理解设计模式时，理解反模式（anti-patterns）以及如何避免陷阱也是重要的。在通常的软件开发周期，有几个地方会引入糟糕的代码，主要是在代码接近发布或代码交给不同团队进行维护的时候。如果这些糟糕的结构被记录为反模式，它们可以为开发者提供指导，让他们知道避免哪些陷阱以及如何不采纳。根据它们解决的问题类型，GOF 将设计模式分为几大类：
 
 - **创建型模式 (Creational design patterns)**：这些模式处理对象的各种创建机制。虽然大多数语言都提供了基础的对象创建方法，但这些模式关注更优化或更受控的对象创建机制。
-- **结构型模式 (Structural design patterns)**：这些模式完全关于对象的组合以及它们之间的关系。其思想是在系统中的某些发生变化时，对整体对象关系的影响降最低。
+- **结构型模式 (Structural design patterns)**：这些模式完全关于对象的组合以及它们之间的关系。其思想是在系统中的某些发生变化时，对整体对象关系的影响最低。
 - **行为型模式 (Behavioral design patterns)**：这些模式关注对象之间的依赖关系和通信。
 
 下表是识别模式类的有用参考：
@@ -4375,22 +4509,27 @@ JavaScript 应用可以通过面向对象能为代码带来的更大程度的控
 | 类别 | 模式 |
 | :--- | :--- |
 | 创建型 | 工厂方法、抽象工厂、构建器、原型、单例 |
-| 结构型 | 适配器、桥接、组合、装饰器、外观、享量模式、代理 |
-| 行为型 | 解释器、模板方法、责任链、命令、迭代器、中者、备忘录、观察者、状态、策略、访问者 |
+| 结构型 | 适配器、桥接、组合、装饰器、外观、享元模式、代理 |
+| 行为型 | 解释器、模板方法、责任链、命令、迭代器、中介者、备忘录、观察者、状态、策略、访问者 |
 
 我们在本章中讨论的某些模式可能不在列表中，因为它们更特定于 JavaScript，或者是这些经典模式的变体。同样，我们不会讨论不符合 JavaScript 或未被流行的模式。
 
 ## 命名空间模式 (The namespace pattern)
 
-在 JavaScript 中，过度使用全局几乎几乎禁忌。当你构建更大的程序时，有时很难控制全局作用域被污染程度。命名空间可以减少程序创建的全局变量数量，有助于避免命名冲突或过度使用名前缀。使用命名空间的想法是为你的应用程序或库创建一个全局对象，并将所有这些对象和函数添加到该对象中，而不是污染全局作用域。JavaScript 没有命名空间的显式语法，但可以轻松创建命名空间。让我们考虑以下示例：
+在 JavaScript 中，过度使用全局几乎是禁忌。当你构建更大的程序时，有时很难控制全局作用域被污染程度。命名空间可以减少程序创建的全局变量数量，有助于避免命名冲突或过度使用名前缀。使用命名空间的想法是为你的应用程序或库创建一个全局对象，并将所有这些对象和函数添加到该对象中，而不是污染全局作用域。JavaScript 没有命名空间的显式语法，但可以轻松创建命名空间。让我们考虑以下示例：
 
+```javascript
 function Car() {}
+
 function BMW() {}
+
 var engines = 1;
+
 var features = {
   seats: 6,
   airbags: 6
 };
+```
 
 我们正在全局作用域中创建这一切。这是一种反模式，永远不是一个好主意。然而，我们可以重构这段代码，创建一个单一的全局对象，并将所有函数和对象成为该全局对象的一部分，如下：
 
@@ -4406,23 +4545,15 @@ CARFACTORY.features = {
 };
 ```
 
-按照惯例，全局命名空间名称通常大大写。这种模式为应用程序添加了命名空间，并防止代码内部以及你的代码与外部库之间的命名冲突。许多项目会在其公司或项目名称之后使用独特的名称来为命名空间创建一个唯一名称。虽然这似乎是限制全局变量并为代码添加命名空间的理想方法，但有点冗长；你需要为每个变量和函数加上命名空间前缀。你需要输入更多内容，代码变得不必要的冗。此外，单一的全局实例意味着代码的任何部分都可以修改全局实例，而其他功能获得更新的状态——这会导致非常糟糕的副作用。
+按照惯例，全局命名空间名称通常大写。这种模式为应用程序添加了命名空间，并防止代码内部以及你的代码与外部库之间的命名冲突。许多项目会在其公司或项目名称之后使用独特的名称来为命名空间创建一个唯一名称。虽然这似乎是限制全局变量并为代码添加命名空间的理想方法，但有点冗长；你需要为每个变量和函数加上命名空间前缀。你需要输入更多内容，代码变得不必要的冗余。此外，单一的全局实例意味着代码的任何部分都可以修改全局实例，而其他功能获得更新的状态——这会导致非常糟糕的副作用。
 
 ## 模块模式 (The module pattern)
 
 当你构建大型应用程序时，你很快就会发现保持代码库组织良好和模块化变得越来越困难。模块模式将较大的程序分成较小的部分并为它们提供命名空间。这非常重要，因为一旦你将代码分模块，这些模块就可以在多个地方重用。仔细设计模块的接口将使你的代码非常易重用和扩展。
 
-
-
-
-
-*第5章*
-
-[125]
-
 JavaScript 提供了灵活的函数和对象，使其能够创建健壮的模块系统。函数作用域有助于创建模块内部的命名空间，而对象可以用于存储一组导出的值。
 
-在我们开始探索模式本身之前，让我们快速回顾一下之前之前讨论过的概念。
+在我们开始探索模式本身之前，让我们快速回顾一下之前讨论过的概念。
 
 我们已经详细讨论过对象字面量。对象字面量允许你如下所示创建键值对：
 
@@ -4434,17 +4565,17 @@ var basicServerConfig = {
     locale: "en_US"
   },
   init: function () {
-    console.log( "Initializing the server" );
+    console.log("Initializing the server");
   },
-  updateStartup: function( params ) {
+  updateStartup: function(params) {
     this.startupParams = params;
-    console.log( this.startupParams.cacheTimeout );
-    console.log( this.startupParams.locale );
+    console.log(this.startupParams.cacheTimeout);
+    console.log(this.startupParams.locale);
   }
 };
 
-basicServerConfig.init(); //"Initializing the server"
-basicServerConfig.updateStartup({cacheTimeout:60, locale:"en_UK"}); // 60, en_UK
+basicServerConfig.init(); // "Initializing the server"
+basicServerConfig.updateStartup({cacheTimeout: 60, locale: "en_UK"}); // 60, en_UK
 ```
 
 在这个示例中，我们正在创建一个对象字面量并定义键值对来创建属性和函数。
@@ -4453,138 +4584,122 @@ basicServerConfig.updateStartup({cacheTimeout:60, locale:"en_UK"}); // 60, en_UK
 
 模块模式的另一个优之处在于，它只暴露一个公共 API。其他与内部实现相关的所有内容都封装在模块的闭包中。
 
-*JavaScript 模式*
-
-[126]
-
 与其他面向对象（OO）语言不同，JavaScript 没有显式的访问修饰符，因此也就没有*私有性*的概念。你无法拥有公共或私有变量。正如我们之前讨论的，在 JavaScript 中，可以使用函数作用域来强制这一概念。模块模式使用闭包将变量和函数的访问限制在模块内部；然而，变量和函数是定义在返回的对象中的，而该对象是公开的。
 
 让我们考虑之前的示例并将其转换为模块。我们本质上是在使用一个 IIFE（立即调用函数表达式）并返回模块的接口，即 `init` 和 `updateStartup` 函数：
 
 ```javascript
 var basicServerConfig = (function () {
-  var environment= "production";
-  var startupParams= {
+  var environment = "production";
+  var startupParams = {
     cacheTimeout: 30,
     locale: "en_US"
   };
 
   return {
     init: function () {
-      console.log( "Initializing the server" );
+      console.log("Initializing the server");
     },
-    updateStartup: function( params ) {
+    updateStartup: function(params) {
       this.startupParams = params;
-      console.log( this.startupParams.cacheTimeout );
-      console.log( this.startupParams.locale );
+      console.log(this.startupParams.cacheTimeout);
+      console.log(this.startupParams.locale);
     }
   };
 })();
 
-basicServerConfig.init(); //"Initializing the server"
-basicServerConfig.updateStartup({cacheTimeout:60, locale:"en_UK"}); //60, en_UK
+basicServerConfig.init(); // "Initializing the server"
+basicServerConfig.updateStartup({cacheTimeout: 60, locale: "en_UK"}); // 60, en_UK
 ```
 
-在这个示例中，`basicServerConfig` 在全局上下文中作为一个模块。为了确保我们没有用模块污染全局上下文，为模块创建命名空间是关重要的。此外，由于模块本质上是重用的，确保我们使用命名空间来避免命名冲突也是重要的。对于 `basicServerConfig` 模块，以下代码片段向你展示了如何创建命名空间：
+在这个示例中，`basicServerConfig` 在全局上下文中作为一个模块。为了确保我们没有用模块污染全局上下文，为模块创建命名空间是重要的。此外，由于模块本质上是重用的，确保我们使用命名空间来避免命名冲突也是重要的。对于 `basicServerConfig` 模块，以下代码片段向你展示了如何创建命名空间：
 
 ```javascript
 // 单例全局对象
-var SERVER = SERVER||{};
+var SERVER = SERVER || {};
 SERVER.basicServerConfig = (function () {
-  var environment= "production";
-  var startupParams= {
+  var environment = "production";
+  var startupParams = {
     cacheTimeout: 30,
     locale: "en_US"
   };
 
   return {
     init: function () {
-      console.log( "Initializing the server" );
+      console.log("Initializing the server");
     },
-    updateStartup: function( params ) {
+    updateStartup: function(params) {
       this.startupParams = params;
-      console.log( this.startupParams.cacheTimeout );
-      console.log( this.startupParams.locale );
+      console.log(this.startupParams.cacheTimeout);
+      console.log(this.startupParams.locale);
     }
   };
 })();
 
-SERVER.basicServerConfig.init(); //"Initializing the server"
-SERVER.basicServerConfig.updateStartup({cacheTimeout:60, locale:"en_UK"}); //60, en_UK
+SERVER.basicServerConfig.init(); // "Initializing the server"
+SERVER.basicServerConfig.updateStartup({cacheTimeout: 60, locale: "en_UK"}); // 60, en_UK
 ```
-
-*第5章*
-
-[127]
 
 模块使用命名空间通常是一个好主意；但并不是要求模块必须关联一个命名空间。
 
-模块模式的一种变体试图解决原始模块模式的一些问题。这种改进的模块模式变体也称为**揭示模块模式**（**RMP**）。RMP 最初由 *Christian Heilmann* 流行。他不不喜欢在从另一个函数调用公共函数或访问公共变量时，必须使用模块名。另一个小问题是，在返回公共接口时你必须使用对象字面量表示法。
+模块模式的一种变体试图解决原始模块模式的一些问题。这种改进的模块模式变体也称为**揭示模块模式**（**RMP**）。RMP 最初由 *Christian Heilmann* 推广。他不喜欢在从另一个函数调用公共函数或访问公共变量时，必须使用模块名。另一个小问题是，在返回公共接口时你必须使用对象字面量表示法。
 
 考虑以下示例：
 
 ```javascript
-var modulePattern = function(){
+var modulePattern = function() {
   var privateOne = 1;
-  function privateFn(){
+  function privateFn() {
     console.log('privateFn called');
   }
   return {
     publicTwo: 2,
-    publicFn:function(){
+    publicFn: function() {
       modulePattern.publicFnTwo();
     },
-    publicFnTwo:function(){
+    publicFnTwo: function() {
       privateFn();
     }
-  }
+  };
 }();
 
 modulePattern.publicFn(); // "privateFn called"
 ```
-
-*JavaScript 模式*
-
-[128]
 
 你可以看到，在 `publicFn()` 中我们需要通过 `modulePattern` 调用 `publicFnTwo()`。此外，公共接口是以对象字面量形式返回的。对经典模块模式的改进就是所谓的 RMP。这种模式背后的核心思想是在私有作用域中定义所有成员，并返回一个匿名对象，其中包含指向需要揭示为公共的私有功能的指针。
 
 让我们看看如何将之前的示例转换为 RMP。这个示例很大灵感来源于 Christian 的博客：
 
 ```javascript
-var revealingExample = function(){
+var revealingExample = function() {
   var privateOne = 1;
-  function privateFn(){
+  function privateFn() {
     console.log('privateFn called');
   }
   var publicTwo = 2;
-  function publicFn(){
+  function publicFn() {
     publicFnTwo();
   }
-  function publicFnTwo(){
+  function publicFnTwo() {
     privateFn();
   }
-  function getCurrentState(){
+  function getCurrentState() {
     return 2;
   }
   // 通过分配公共指针来揭示私有变量
   return {
-    setup:publicFn,
-    count:publicTwo,
-    increaseCount:publicFnTwo,
-    current:getCurrentState()
+    setup: publicFn,
+    count: publicTwo,
+    increaseCount: publicFnTwo,
+    current: getCurrentState()
   };
 }();
 
 console.log(revealingExample.current); // 2
-revealingExample.setup(); //privateFn called
+revealingExample.setup(); // privateFn called
 ```
 
 这里一个重要的区别是，你在私有作用域中定义函数和变量，并返回一个指向你想揭示为公共变量的匿名对象。这是一种更干净的变体，优于经典的模块模式。
-
-*第5章*
-
-[129]
 
 在生产代码中，你会希望使用更标准化的方法来创建模块。目前有两种创建模块的主要方法。第一种被称为 **CommonJS 模块**。CommonJS 模块通常适用于服务端 JavaScript 环境，如 **Node.js**。CommonJS 模块包含一个 `require` 函数，它接收模块名称并返回模块的接口。该格式是由 CommonJS 志愿者小组提出的；他们的目标是设计、原型化并标准化 JavaScript API。CommonJS 模块由两部分组成：首先是模块需要暴露的变量和函数；当你将变量或函数赋值给 `module.exports` 变量时就会暴露。其次是 `require` 函数，模块可以使用它导入其他模块的导出：
 
@@ -4594,61 +4709,52 @@ var crypto = require('crypto');
 
 function randomString(length, chars) {
   var randomBytes = crypto.randomBytes(length);
-  ...
-  ...
+  // ...
 }
 
 // 导出模块供其他模块使用
-module.exports=randomString;
+module.exports = randomString;
 ```
 
 CommonJS 模块在服务器端由 Node.js 支持，在浏览器端由 curl.js 支持。
 
-JavaScript 模块的另一种口味被称为**异步模块定义**（**AMD**）。它们是面向器的模块，并选择异步行为。AMD 使用 `define` 函数来定义模块。该函数接收一个模块名称数组和一个函数。一旦模块加载，`define` 函数将以它们的接口作为参数执行该函数。AMD 提案旨在模块和依赖项的异步加载。`define` 函数根据以下签名定义具名或无名的模块：
+JavaScript 模块的另一种口味被称为**异步模块定义**（**AMD**）。它们是面向浏览器的模块，并选择异步行为。AMD 使用 `define` 函数来定义模块。该函数接收一个模块名称数组和一个函数。一旦模块加载，`define` 函数将以它们的接口作为参数执行该函数。AMD 提案旨在模块和依赖项的异步加载。`define` 函数根据以下签名定义具名或无名的模块：
 
 ```javascript
 define(
-  module_id /*可选*/,
-  [dependencies] /*可选*/,
-  definition function /*用于实例化模块的函数或
-  对象*/
+  module_id, /* 可选 */
+  [dependencies], /* 可选 */
+  definition function /* 用于实例化模块的函数或对象 */
 );
 ```
-
-
-
-*JavaScript Patterns*
-
-**[130]**
 
 你可以按照如下添加一个没有依赖的模块：
 
 ```javascript
-define(
-{
-add: function(x, y){
-return x + y;
-}
+define({
+  add: function(x, y) {
+    return x + y;
+  }
 });
 ```
 
 下面的代码段展示了一个依赖于其他两个模块的模块：
 
 ```javascript
-define( "math",
-//依赖这两个模块
+define("math",
+// 依赖这两个模块
 ["sum", "multiply"],
-//模块定义函数
+// 模块定义函数
 // 依赖 (foo 和 bar) 被映射到函数参数
-function ( sum, multiply ) {
+function(sum, multiply) {
 // 返回一个定义模块导出的值
 // （也就是说，我们想要暴露给外部使用的功能）
 // 在这里创建你的模块
 var math = {
-demo : function () {
-console.log(sum.calculate(1,2));
-console.log(multiply.calculate(1,2));
-}
+  demo: function() {
+    console.log(sum.calculate(1, 2));
+    console.log(multiply.calculate(1, 2));
+  }
 };
 return math;
 });
@@ -4657,50 +4763,42 @@ return math;
 `require` 模块的使用方式如下：
 
 ```javascript
-require(["math","draw"], function ( math,draw ) {
-draw.2DRender(math.pi);
+require(["math", "draw"], function(math, draw) {
+  draw.2DRender(math.pi);
 });
 ```
 
 **RequireJS** (http://requirejs.org/docs/whyamd.html) 是实现 AMD 的模块加载器之一。
 
-*第5章*
-
-**[131]**
-
-**ES6 模块**
+### ES6 模块
 
 两个独立的模块系统和不同的模块加载器可能会让人感到困惑。ES6 试图解决这个问题。ES6 提出了一项模块规范，试图保留 CommonJS 和 AMD 模块模式的优点。
 
-ES6 模块的语法类似于 CommonJS，并且 模块支持异步加载和可配置的模块加载：
+ES6 模块的语法类似于 CommonJS，并且模块支持异步加载和可配置的模块加载：
 
 ```javascript
-//json_processor.js
+// json_processor.js
 function processJSON(url) {
-...
+  // ...
 }
 
 export function getSiteContent(url) {
-return processJSON(url);
+  return processJSON(url);
 }
 
-//main.js
+// main.js
 import { getSiteContent } from "json_processor.js";
-content=getSiteContent("http://google.com/");
+content = getSiteContent("http://google.com/");
 ```
 
 ES6 的 `export` 允许你以类似于 CommonJS 的方式导出函数或变量。在需要使用此导入的代码中，你使用 `import` 关键字指定从哪里导入依赖。一旦依赖被导入，它就可以作为程序的成员被使用。我们将在后面的章节中讨论如何在不支持 ES6 的环境中使用 ES6。
 
-**工厂模式**
+## 工厂模式
 
 工厂模式是另一种流行的对象创建模式。它不需要使用构造函数。该模式提供了一个创建对象的接口。根据传递给工厂的类型，工厂会创建特定类型的对象。该模式的常见实现通常是使用类或类的静态方法。此类类或方法的目的如下：
 
 - 它抽象化了创建相似对象时的重复性操作
 - 它允许工厂的消费者在不了解对象创建内部细节的情况下创建对象
-
-*JavaScript Patterns*
-
-**[132]**
 
 让我们通过一个常见的例子来理解工厂的使用。假设我们有以下内容：
 
@@ -4716,7 +4814,7 @@ var vento = CarFactory.make('Sedan');
 var touareg = CarFactory.make('SUV');
 ```
 
-以下是你可以实现这样一个工厂的方法。以下实现相当相当标准。我们通过程序化调用创建指定类型对象的构造函数——`CarFactory[const].prototype = new CarFactory();`
+以下是你可以实现这样一个工厂的方法。以下实现相当标准。我们通过程序化调用创建指定类型对象的构造函数——`CarFactory[constr].prototype = new CarFactory();`
 
 我们正在将对象类型映射到构造函数。实现此模式的方法可以有多种之处：
 
@@ -4724,88 +4822,78 @@ var touareg = CarFactory.make('SUV');
 // 工厂构造函数
 function CarFactory() {}
 CarFactory.prototype.info = function() {
-console.log("This car has "+this.doors+" doors and a "+this.engine_capacity+" liter engine");
+  console.log("This car has " + this.doors + " doors and a " + this.engine_capacity + " liter engine");
 };
 
 // 静态工厂方法
-CarFactory.make = function (type) {
-var constr = type;
-var car;
-CarFactory[constr].prototype = new CarFactory();
-// 创建新实例
-car = new CarFactory[constr]();
-return car;
+CarFactory.make = function(type) {
+  var constr = type;
+  var car;
+  CarFactory[constr].prototype = new CarFactory();
+  // 创建新实例
+  car = new CarFactory[constr]();
+  return car;
 };
 
-CarFactory.Compact = function () {
-this.doors = 4;
-this.engine_capacity = 2;
-};
-```
-
-*第5章*
-
-**[133]**
-
-```javascript
-CarFactory.Sedan = function () {
-this.doors = 2;
-this.engine_capacity = 2;
+CarFactory.Compact = function() {
+  this.doors = 4;
+  this.engine_capacity = 2;
 };
 
-CarFactory.SUV = function () {
-this.doors = 4;
-this.engine_capacity = 6;
+CarFactory.Sedan = function() {
+  this.doors = 2;
+  this.engine_capacity = 2;
+};
+
+CarFactory.SUV = function() {
+  this.doors = 4;
+  this.engine_capacity = 6;
 };
 
 var golf = CarFactory.make('Compact');
 var vento = CarFactory.make('Sedan');
 var touareg = CarFactory.make('SUV');
-golf.info(); //"This car has 4 doors and a 2 liter engine"
+golf.info(); // "This car has 4 doors and a 2 liter engine"
 ```
 
 我们建议你在 JS Bin 中尝试这个示例，通过实际编写代码来理解这一概念。
 
-**混入模式 (Mixin pattern)**
+## 混入模式 (Mixin pattern)
 
 Mixins 有助于显著减少代码中的功能重复并帮助函数复用。我们可以将这些共享功能移动到 mixin 中，减少共享行为的重复。然后你就可以专注于构建实际功能，而不是不断重复共享行为。让我们考虑以下示例。我们想创建一个可以被任何对象实例使用的自定义日志器。该日志器将成为想要使用/扩展该 mixin 的对象的共享功能：
 
 ```javascript
 var _ = require('underscore');
 // 将共享功能封装进 CustomLogger
-var logger = (function () {
-var CustomLogger = {
-log: function (message) {
-console.log(message);
-}
-};
-return CustomLogger;
+var logger = (function() {
+  var CustomLogger = {
+    log: function(message) {
+      console.log(message);
+    }
+  };
+  return CustomLogger;
 }());
 
 // 一个需要自定义日志器来记录系统特定日志的对象
-var Server = (function (Logger) {
-var CustomServer = function () {
-this.init = function () {
-this.log("Initializing Server...");
-};
-};
-// 这将 'CustomLogger' 的成员拷贝/扩展到 'CustomServer'
-_.extend(CustomServer.prototype, Logger);
-return CustomServer;
+var Server = (function(Logger) {
+  var CustomServer = function() {
+    this.init = function() {
+      this.log("Initializing Server...");
+    };
+  };
+  // 这将 'CustomLogger' 的成员拷贝/扩展到 'CustomServer'
+  _.extend(CustomServer.prototype, Logger);
+  return CustomServer;
 }(logger));
 
-(new Server()).init(); //Initializing Server...
+(new Server()).init(); // Initializing Server...
 ```
-
-*JavaScript Patterns*
-
-**[134]**
 
 在这个示例中，我们使用了 **Underscore.js** 中的 `_.extend`——我们在上一个章节中讨论过这个函数。该函数用于将属性从源（`Logger`）拷贝到目标（`CustomServer`）。
 
 理解 mixins 和继承之间的区别是重要的。如果你在多个对象之间有共享功能，可以使用 mixins。如果你有一个类层次结构，可以使用继承。如果你使用原型继承，对原型的任何更改都会影响到所有继承它的东西。如果你不希望这种情况发生，可以使用 mixins。
 
-**装饰器模式 (Decorator pattern)**
+## 装饰器模式 (Decorator pattern)
 
 装饰器模式背后的核心思想是从具有某些功能的普通对象开始设计。随着设计的演进，你可以使用现有的装饰器来增强你的普通对象。这在面向对象（OO）世界中是一种非常流行的模式，特别是在 Java 中。让我们以 `BasicServer` 为例——一个具有基础功能的服务器。我们可以有两种不同的情况，该服务器可以提供 PHP 和 Node.js 服务并在不同的端口上提供它们：
 
@@ -4818,11 +4906,8 @@ phpServer = phpServer.decorate('serveStaticAssets');
 phpServer.init();
 ```
 
-*第5章*
-
-**[135]**
-
 Node.js 服务器将如下所示：
+
 ```javascript
 var nodeServer = new BasicServer();
 nodeServer = nodeServer.decorate('serveNode');
@@ -4835,9 +4920,9 @@ nodeServer.init();
 ```javascript
 // 实现仅具有最小功能的 BasicServer
 function BasicServer() {
-this.pid = 1;
-console.log("Initializing basic Server");
-this.decorators_list = []; // 装饰器的空列表
+  this.pid = 1;
+  console.log("Initializing basic Server");
+  this.decorators_list = []; // 装饰器的空列表
 }
 
 // 所有装饰器的列表
@@ -4846,34 +4931,25 @@ BasicServer.decorators = {};
 // 将每个装饰器添加到 BasicServer 的装饰器列表中
 // 此列表中的每个装饰器都将应用到 BasicServer 实例上
 BasicServer.decorators.reverseProxy = {
-init: function(pid) {
-console.log("Started Reverse Proxy");
-return pid + 1;
-}
+  init: function(pid) {
+    console.log("Started Reverse Proxy");
+    return pid + 1;
+  }
 };
 
 BasicServer.decorators.servePHP = {
-init: function(pid) {
-console.log("Started serving PHP");
-return pid + 1;
-}
+  init: function(pid) {
+    console.log("Started serving PHP");
+    return pid + 1;
+  }
 };
 
 BasicServer.decorators.serveNode = {
-init: function(pid) {
-console.log("Started serving Node");
-return pid + 1;
-}
+  init: function(pid) {
+    console.log("Started serving Node");
+    return pid + 1;
+  }
 };
-```
-
-
-
-
-
-## JavaScript 模式
-
-[136]
 
 // 每当调用 decorate() 时，将装饰器推入列表
 BasicServer.prototype.decorate = function(decorator) {
@@ -4882,11 +4958,11 @@ BasicServer.prototype.decorate = function(decorator) {
 
 // init() 方法遍历 BasicServer 上应用的所有装饰器
 // 并在所有它们上执行 init() 方法
-BasicServer.prototype.init = function () {
+BasicServer.prototype.init = function() {
   var running_processes = 0;
   var pid = this.pid;
-  for (i = 0; i < this.decorators_list.length; i += 1) {
-    decorator_name = this.decorators_list[i];
+  for (var i = 0; i < this.decorators_list.length; i += 1) {
+    var decorator_name = this.decorators_list[i];
     running_processes = BasicServer.decorators[decorator_name].init(pid);
   }
   return running_processes;
@@ -4896,7 +4972,7 @@ BasicServer.prototype.init = function () {
 var phpServer = new BasicServer();
 phpServer.decorate('reverseProxy');
 phpServer.decorate('servePHP');
-total_processes = phpServer.init();
+var total_processes = phpServer.init();
 console.log(total_processes);
 
 // 创建用于服务的 Node 服务器
@@ -4905,16 +4981,13 @@ nodeServer.decorate('serveNode');
 nodeServer.init();
 total_processes = phpServer.init();
 console.log(total_processes);
+```
 
-BasicServer.decorate() 和 BasicServer.init() 是发生实际逻辑的两个方法。我们将所有被应用的装饰器推入 BasicServer 的装饰器列表中。在 init() 方法中，我们从这个装饰器列表中执行或应用每个装饰器的 init() 方法。这是一种更简洁的装饰器模式方法，没有使用继承。这种方法由 Stoyan Stefanov 在他的书籍 *JavaScript Patterns, O'Reilly Media* 中进行描述，并由于其简单性在 JavaScript 开发者中广为人知。
+`BasicServer.decorate()` 和 `BasicServer.init()` 是发生实际逻辑的两个方法。我们将所有被应用的装饰器推入 `BasicServer` 的装饰器列表中。在 `init()` 方法中，我们从这个装饰器列表中执行或应用每个装饰器的 `init()` 方法。这是一种更简洁的装饰器模式方法，没有使用继承。这种方法由 Stoyan Stefanov 在他的书籍 *JavaScript Patterns, O'Reilly Media* 中进行描述，并由于其简单性在 JavaScript 开发者中广为人知。
 
-## 第 5 章
+## 观察者模式
 
-[137]
-
-### 观察者模式
-
-让我们先看看观察者模式的与语言无关的定义。GOF 的书籍 *Design Patterns: Elements of Reusable Object-Oriented Software*对观察者模式的定义如下：
+让我们先看看观察者模式的与语言无关的定义。GOF 的书籍 *Design Patterns: Elements of Reusable Object-Oriented Software* 对观察者模式的定义如下：
 
 > *一个或多个观察者对主体的状态感兴趣，并通过挂载自己向主体注册其兴趣。当我们的主体中发生了观察者可能感兴趣的变化时，会发送一条通知消息，调用每个观察者的 update 方法。当观察者不再对主体的状态感兴趣时，它们可以简单地脱离自己。*
 
@@ -4926,33 +4999,29 @@ BasicServer.decorate() 和 BasicServer.init() 是发生实际逻辑的两个方�
 让我们创建一个可以添加、移除和通知观察者的主体：
 
 ```javascript
-var Subject = ( function( ) {
+var Subject = (function() {
   function Subject() {
     this.observer_list = [];
   }
 
   // 此方法处理将观察者添加到内部列表
-  Subject.prototype.add_observer = function ( obj ) {
-    console.log( 'Added observer' );
-    this.observer_list.push( obj );
+  Subject.prototype.add_observer = function(obj) {
+    console.log('Added observer');
+    this.observer_list.push(obj);
   };
 
-  Subject.prototype.remove_observer = function ( obj ) {
-    for( var i = 0; i < this.observer_list.length; i++ ) {
-      if( this.observer_list[ i ] === obj ) {
-        this.observer_list.splice( i, 1 );
-        console.log( 'Removed Observer' );
+  Subject.prototype.remove_observer = function(obj) {
+    for (var i = 0; i < this.observer_list.length; i++) {
+      if (this.observer_list[i] === obj) {
+        this.observer_list.splice(i, 1);
+        console.log('Removed Observer');
       }
     }
   };
-```
 
-[138]
-
-```javascript
-  Subject.prototype.notify = function () {
-    var args = Array.prototype.slice.call( arguments, 0 );
-    for( var i = 0; i<this.observer_list.length; i++ ) {
+  Subject.prototype.notify = function() {
+    var args = Array.prototype.slice.call(arguments, 0);
+    for (var i = 0; i < this.observer_list.length; i++) {
       this.observer_list[i].update(args);
     }
   };
@@ -4961,15 +5030,15 @@ var Subject = ( function( ) {
 })();
 ```
 
-这是一个相当直观的主体实现。notify() 方法的一个重要事实是，调用所有观察者对象的 update() 方法来广播更新。
+这是一个相当直观的主体实现。`notify()` 方法的一个重要事实是，调用所有观察者对象的 `update()` 方法来广播更新。
 
-现在让我们定义一个创建随机推文的简单对象。该对象通过 addObserver() 和 removeObserver() 方法提供了向主体添加和移除观察者的接口。它还使用新获取的推文调用了主体的 notify() 方法。当这种情况发生时，所有观察者都将广播该新推文已更新，并将新推文作为参数传递：
+现在让我们定义一个创建随机推文的简单对象。该对象通过 `addObserver()` 和 `removeObserver()` 方法提供了向主体添加和移除观察者的接口。它还使用新获取的推文调用了主体的 `notify()` 方法。当这种情况发生时，所有观察者都将广播该新推文已更新，并将新推文作为参数传递：
 
 ```javascript
 function Tweeter() {
   var subject = new Subject();
-  this.addObserver = function ( observer ) {
-    subject.add_observer( observer );
+  this.addObserver = function(observer) {
+    subject.add_observer(observer);
   };
   this.removeObserver = function(observer) {
     subject.remove_observer(observer);
@@ -4980,7 +5049,7 @@ function Tweeter() {
       tweet: "This is one nice observer"
     };
     // 通知我们的观察者股票变化
-    subject.notify( tweet );
+    subject.notify(tweet);
   };
 }
 ```
@@ -4989,23 +5058,19 @@ function Tweeter() {
 
 ```javascript
 var TweetUpdater = {
-  update : function() {
-    console.log( 'Updated Tweet - ', arguments );
+  update: function() {
+    console.log('Updated Tweet - ', arguments);
   }
 };
-```
 
-[139]
-
-```javascript
 var TweetFollower = {
-  update : function() {
-    console.log( 'Following this tweet - ', arguments );
+  update: function() {
+    console.log('Following this tweet - ', arguments);
   }
 };
 ```
 
-现在我们可以这样使用 Tweeter：
+现在我们可以这样使用 `Tweeter`：
 
 ```javascript
 var tweetApp = new Tweeter();
@@ -5025,22 +5090,24 @@ tweetApp.fetchTweets();
 ```
 Added observer
 Added observer
-Updated Tweet - [ Object {tweet: "This is one nice observer"} } ]
-Following this tweet - [ Object {tweet: "This is one nice observer"} } ]
+Updated Tweet - [ Object {tweet: "This is one nice observer"} ]
+Following this tweet - [ Object {tweet: "This is one nice observer"} ]
 Removed Observer
-Following this tweet - [ Object {tweet: "This is one nice observer"} } ]
+Following this tweet - [ Object {tweet: "This is one nice observer"} ]
 Removed Observer
 ```
+
 （注：根据原文逻辑，这里应是逻辑对应的输出描述）
+
 ```
 等等，最后一个 fetchTweets() 的输出应该是：
 ```
-Following this tweet - [ Object {tweet: "This is one nice observer"} } ]
+
+Following this tweet - [ Object {tweet: "This is one nice observer"} ]
+
 ```
 
-[140]
-
-### 模型 (Models)
+## 模型 (Models)
 
 模型是表示应用程序数据的结构。它们与用户界面或路由逻辑无关。模型的变化通过观察者模式通知视图层。模型可能还包含验证、创建或删除数据的代码。数据改变时自动通知视图的能力使得 Backbone.js、**Amber.js** 等框架在构建 MV 应用时非常有用。以下示例展示了一个典型的 Backbone 模型：
 
@@ -5052,13 +5119,13 @@ var EmployeeModel = Backbone.Model.extend({
     name: 'John Doe',
     occupation: null
   },
-  initialize: function() {
-  }
+  initialize: function() {}
 });
+
 var JohnDoe = new EmployeeModel();
 ```
 
-### 视图 (Views)
+## 视图 (Views)
 
 视图是模型的视觉表示。通常在将模型状态呈现给视图层之前，对其进行处理、过滤或加工。在 JavaScript 中，视图负责渲染和操作 DOM 元素。视图观察模型并在模型改变时接收通知。当用户与视图交互时，模型的某些属性通过视图层进行更改（通常通过控制器）。在 JavaScript 框架中，视图使用模板引擎创建，如 **Handlebar.js** (http://handlebarsjs.com/) 或 **mustache.js** (https://mustache.github.io/)。这些模板本身并不是视图。它们观察模型并根据这些更新视图状态。来看一个用 Handlebar 定义的视图示例：
 
@@ -5072,37 +5139,37 @@ var JohnDoe = new EmployeeModel();
 </li>
 ```
 
-
-
-
-
-## 第 5 章
-
-## [141]
-
 如前面的示例所示，视图包含模板变量的标记标签。这些变量通过自定义语法进行分隔。例如，在 Handlebar.js 中，模板变量使用 `{{ }}` 分隔。框架通常以 JSON 格式传输数据。视图如何从模型填充数据由框架透明地处理。
 
-### 控制器 (Controllers)
+## 控制器 (Controllers)
 
-控制器充当模型和视图之间的一层，并负责在用户更改视图属性时更新模型。大多数 JavaScript 框架都偏离了控制器的经典定义。例如，Backbone 并没有名为“控制器”的概念；它们拥有一种被称为**路由器** (router) 的东西，负责处理路由逻辑。你可以将视图和路由器的结合视为控制器，因为同步模型和视图的大部分逻辑是在视图内部完成的。一个典型的 Backbone 路由器如下：
+控制器充当模型和视图之间的一层，并负责在用户更改视图属性时更新模型。大多数 JavaScript 框架都偏离了控制器的经典定义。例如，Backbone 并没有名为“控制器”的概念；它们拥有一种被称为**路由器** (`router`) 的东西，负责处理路由逻辑。你可以将视图和路由器的结合视为控制器，因为同步模型和视图的大部分逻辑是在视图内部完成的。一个典型的 Backbone 路由器如下：
 
 ```javascript
-var EmployeeRouter = Backbone.Router.extend({
-  routes: { "employee/:id": "route" },
-  route: function( id ) {
-    ...view render logic...
-  }
-});
 ```
+
+
+
+var EmployeeRouter = Backbone.Router.extend({
+
+  routes: { "employee/:id": "route" },
+
+  route: function( id ) {
+
+    ...view render logic...
+
+  }
+
+});
 
 ### 模型-视图-演示者模式 (The Model-View-Presenter pattern)
 
-模型-视图-演示者（MVP）是之前之前讨论的原始 MVC 模式的变体。MVC 和 MVP 的目标都是关注点分离，但它们在许多基本方面有所不同。MVP 中的演示者拥有视图所需的逻辑。来自视图的任何调用都会委托给演示者。演示者还观察模型，并在模型更新时更新视图。许多作者认为，由于演示者绑定了模型和视图，因此它也充当了传统控制器的角色。MVP 有多种实现方式，目前没有框架提供开箱即用的经典 MVP。在 MVP 的实现中，以下是区分 MVP 和 MVC 的主要区别：
+模型-视图-演示者（MVP）是之前讨论的原始 MVC 模式的变体。MVC 和 MVP 的目标都是关注点分离，但它们在许多基本方面有所不同。MVP 中的演示者拥有视图所需的逻辑。来自视图的任何调用都会委托给演示者。演示者还观察模型，并在模型更新时更新视图。许多作者认为，由于演示者绑定了模型和视图，因此它也充当了传统控制器的角色。MVP 有多种实现方式，目前没有框架提供开箱即用的经典 MVP。在 MVP 的实现中，以下是区分 MVP 和 MVC 的主要区别：
 
 - 视图对模型没有引用
 - 演示者拥有模型的引用，并在模型变化时负责更新视图
 
-*《JavaScript 模式》* (JavaScript Patterns)
+《JavaScript 模式》 (JavaScript Patterns)
 
 ## [142]
 
@@ -5117,7 +5184,7 @@ MVP 通常有两种实现方式：
 
 ### 模型-视图视图模型 (Model-View-ViewModel)
 
-MVVM 最初由微软提出，用于 **Windows Presentation Foundation** (**WPF**) 和 **Silverlight**。MVVM 是 MVC 和 MVP 的变体，进一步尝试将用户界面（视图）与业务模型和应用行为分离。MVVM 在我们在 MVC 和 MVP 中讨论的领域模型之外又创建了一个模型层。该模型层增加了属性作为视图的接口。假设我们在 UI 上有一个复选框。复选框的状态被捕捉在一个 `IsChecked` 属性中。在 MVP 中，视图将拥有这个属性并由演示者进行设置。但在 MVVM 中，演示者拥有 `IsChecked` 属性，而视图负责与它同步。既然演示者不再真正是在执行经典演示者的工作，它被重命名为 ViewModel（ViewModel）：
+MVVM 最初由微软提出，用于 `Windows Presentation Foundation` (WPF) 和 `Silverlight`。MVVM 是 MVC 和 MVP 的变体，进一步尝试将用户界面（视图）与业务模型和应用行为分离。MVVM 在我们在 MVC 和 MVP 中讨论的领域模型之外又创建了一个模型层。该模型层增加了属性作为视图的接口。假设我们在 UI 上有一个复选框。复选框的状态被捕捉在一个 `IsChecked` 属性中。在 MVP 中，视图将拥有这个属性并由演示者进行设置。但在 MVVM 中，演示者拥有 `IsChecked` 属性，而视图负责与它同步。既然演示者不再真正是在执行经典演示者的工作，它被重命名为 ViewModel（ViewModel）：
 
 *第 5 章*
 
@@ -5142,15 +5209,15 @@ MVVM 最初由微软提出，用于 **Windows Presentation Foundation** (**WPF**
 
 这两点都非常重要。许多工程师只认为第一点是为代码编写足够测试的唯一理由。测试覆盖率最明显的优点是确实确保推送到生产系统的代码大部分是无错误的。编写测试用例来智能地覆盖代码的最大功能区域，通常可以让你对代码的整体质量有一个良好的判断。在这一点上不应有任何争论或妥协。遗憾的是，许多生产系统仍然缺乏足够的代码覆盖。建立一种工程文化是非常重要的，在这种文化中，开发者考虑编写测试就像他们考虑编写代码一样。
 
-第二点甚至更为重要。遗留系统（Legacy systems）通常很难管理。当你处理由他人编写或大型分布式团队编写的代码时，很容易引入 Bug 并破坏程序。即使是最好的工程师也会犯错。当你在一个你不熟悉的大型代码库上工作时，如果没有完善的测试覆盖来帮助你，你就会引入 Bug。由于你对所所的更改没有信心（因为没有测试用例来确认你的更改），你的代码发布将是摇晃、缓慢且显然充满缺陷的。
+第二点甚至更为重要。遗留系统（Legacy systems）通常很难管理。当你处理由他人编写或大型分布式团队编写的代码时，很容易引入 Bug 并破坏程序。即使是最好的工程师也会犯错。当你在一个你不熟悉的大型代码库上工作时，如果没有完善的测试覆盖来帮助你，你就会引入 Bug。由于你对所做的更改没有信心（因为没有测试用例来确认你的更改），你的代码发布将是摇晃、缓慢且显然充满缺陷的。
 
-*《测试与调试》* (Testing and Debugging)
+《测试与调试》 (Testing and Debugging)
 
 ## [146]
 
 你将不敢重构或优化代码，因为你无法确定更改可能会破坏某些东西（再次，因为没有测试用例来确认你的更改）——这一切都是恶性循环。这就像一个土木工程师说：“尽管我建造了这座桥，但我对质量没有信心。它可能会立即倒塌，或者永远不会。”
 
-尽管这听起来像是夸张，但我见过很多在没有测试覆盖的情况下推送到生产环境。这是有风险的，应该被避免。当你编写测试用例来覆盖大部分功能代码，并且当你对这些部分进行更改时，你会立即意识到更改是否存在问题。如果你的重构破坏了测试场景，你就会意识到问题——这一切发生在代码推送到生产环境之前。近年来，诸如测试驱动开发和自测试代码等理念日益受到关注，特别是在**敏捷方法论**中。这些是根本可靠的想法，并将帮助你编写健壮的代码。我们将在本章中讨论这些想法。你将理解如何为 JavaScript 编写良好的测试用例。我们还将查看调试代码的多种工具和方法。传统上 JavaScript 由于缺乏工具，测试和调试有些困难，但现代工具使这些变得简单且自然。
+尽管这听起来像是夸张，但我见过很多在没有测试覆盖的情况下推送到生产环境。这是有风险的，应该被避免。当你编写测试用例来覆盖大部分功能代码，并且当你对这些部分进行更改时，你会立即意识到更改是否存在问题。如果你的重构破坏了测试场景，你就会意识到问题——这一切发生在代码推送到生产环境之前。近年来，诸如测试驱动开发和自测试代码等理念日益受到关注，特别是在 `敏捷方法论` 中。这些是根本可靠的想法，并将帮助你编写健壮的代码。我们将在本章中讨论这些想法。你将理解如何为 JavaScript 编写良好的测试用例。我们还将查看调试代码的多种工具和方法。传统上 JavaScript 由于缺乏工具，测试和调试有些困难，但现代工具使这些变得简单且自然。
 
 ### 单元测试 (Unit testing)
 
@@ -5163,10 +5230,6 @@ MVVM 最初由微软提出，用于 **Windows Presentation Foundation** (**WPF**
 - 它处理自己的依赖项和模拟数据
 - 它对相同的输入总是返回相同
 - 它应该是自解释易懂、易于维护且易读的
-
-
-
-
 
 ## 第 6 章
 
@@ -5202,7 +5265,7 @@ Martin Fowler 提倡使用**测试金字塔**（http://martinfowler.com/bliki/Te
 
 当你解压此包时，你将拥有以下目录结构：
 
-lib 目录包含你在项目中开始编写 Jasmine 测试用例所需的 JavaScript 文件。如果你打开 `SpecRunner.html`，你会发现其中包含了以下 JavaScript 文件：
+`lib` 目录包含你在项目中开始编写 Jasmine 测试用例所需的 JavaScript 文件。如果你打开 `SpecRunner.html`，你会发现其中包含了以下 JavaScript 文件：
 
 ```html
 <script src="lib/jasmine-2.3.4/jasmine.js"></script>
@@ -5257,10 +5320,6 @@ it("can handle undefined", function() {
 
 （注：原文此处存在大量重复段落，翻译已按要求未进行重复输出）
 
-
-
-
-
 *第六章*
 
 **[153]**
@@ -5284,7 +5343,7 @@ it("the arguments of the spy's call are tracked", function() {
 
 为了让我们的测试正常工作，我们需要对其进行 mock（模拟）。Jasmine 间谍（spies）允许我们用 mock 替换函数并跟踪它的执行情况。
 
-在这种情况下，我们需要确保调用了该依赖项。当实际依赖就绪后，我们将重新检查这个测试用例，以确保它符合规范，但目前，我们需要确保的是依赖项被调用了。Jasmine 的 `toBeBeenCalled()` 函数允许我们跟踪函数的执行（该函数可能是一个 mock）。我们可以使用 `toBeBeenCalledWith()`，它允许我们判断存根函数是否带有正确的参数被调用。使用 Jasmine 间谍你还可以创建其他许多有趣的场景。本章的范围不足以涵盖所有场景，但我鼓励你自己去探索这些领域。
+在这种情况下，我们需要确保调用了该依赖项。当实际依赖就绪后，我们将重新检查这个测试用例，以确保它符合规范，但目前，我们需要确保的是依赖项被调用了。Jasmine 的 `toHaveBeenCalled()` 函数允许我们跟踪函数的执行（该函数可能是一个 mock）。我们可以使用 `toHaveBeenCalledWith()`，它允许我们判断存根函数是否带有正确的参数被调用。使用 Jasmine 间谍你还可以创建其他许多有趣的场景。本章的范围不足以涵盖所有场景，但我鼓励你自己去探索这些领域。
 
 你可以参考 Jasmine 的用户手册获取更多关于 Jasmine 间谍的信息，网址：http://jasmine.github.io/2.0/introduction.html。
 
@@ -5298,7 +5357,7 @@ it("the arguments of the spy's call are tracked", function() {
 
 ### JavaScript 调试
 
-如果你不是一个完全全新的程序员，我确定你一定花过时间来调试你自己或他人的代码。调试几乎像是一门艺术。每种语言在调试方面都有不同的方法和挑战。JavaScript 传统上是一种难以调试的语言。我个人曾花费几天痛苦的夜晚，试图使用 `alert()` 函数来调试编写糟糕的 JavaScript 代码。幸运的是，Mozilla Firefox 和 Google Chrome 等现代浏览器拥有优秀的开发者工具来帮助在浏览器中调试 JavaScript。还有像 **IntelliJ WebStorm** 这样的 IDE 对 JavaScript 和 Node.js 提供了强大的调试支持。在本章中，我们将主要关注 Google Chrome 的内置开发者工具。Firefox 也支持 Firebug 扩展并拥有出色的内置开发者工具，但由于它们的行为很大程度上与 Google Chrome 的**开发者工具**（**DevTools**）相同，我们将讨论在这些工具中都适用的通用调试方法。
+如果你不是一个完全全新的程序员，我确定你一定花过时间来调试你自己或他人的代码。调试几乎像是一门艺术。每种语言在调试方面都有不同的方法和挑战。JavaScript 传统上是一种难以调试的语言。我个人曾花费几天痛苦的夜晚，试图使用 `alert()` 函数来调试编写糟糕的 JavaScript 代码。幸运的是，Mozilla Firefox 和 Google Chrome 等现代浏览器拥有优秀的开发者工具来帮助在浏览器中调试 JavaScript。还有像 `IntelliJ WebStorm` 这样的 IDE 对 JavaScript 和 Node.js 提供了强大的调试支持。在本章中，我们将主要关注 Google Chrome 的内置开发者工具。Firefox 也支持 Firebug 扩展并拥有出色的内置开发者工具，但由于它们的行为很大程度上与 Google Chrome 的**开发者工具**（**DevTools**）相同，我们将讨论在这些工具中都适用的通用调试方法。
 
 在讨论具体的调试技术之前，让我们先了解我们在尝试调试代码时感兴趣的错误类型。
 
@@ -5330,10 +5389,6 @@ function strictFunction() {
 }
 ```
 
-
-
-
-
 *第6章*
 
 ## [157]
@@ -5344,15 +5399,11 @@ function strictFunction() {
 
 ![](img/b71a2881032cad7a0a37747ed6a23e02_175_0.png)
 
-Chrome DevTools 在浏览器的下方面板打开，包含许多
-
-非常有用的部分：
+Chrome DevTools 在浏览器的下方面板打开，包含许多非常有用的部分：
 
 ![](img/b71a2881032cad7a0a37747ed6a23e02_175_1.png)
 
-**Elements**（元素）面板可以帮助你检查和监控每个组件的 DOM 树以及相关的
-
-样式表。
+**Elements**（元素）面板可以帮助你检查和监控每个组件的 DOM 树以及相关的样式表。
 
 **Network**（网络）面板对于理解网络活动非常有用。例如，你可以实时监控通过网络下载的资源。
 
@@ -5375,7 +5426,6 @@ if(gear==="D"){ console.log ("Driving");}
 if(gear==="N"){ console.log ("Neutral/Parking");}
 throw new Error("Invalid Gear State");
 }
-
 try
 {
 engageGear("R"); //Reversing
@@ -5388,7 +5438,7 @@ console.log(e.message);
 </head>
 <body>
 </body>
-</</html>
+</html>
 ```
 
 保存此 HTML 文件并在 Google Chrome 中打开它。在浏览器中打开 DevTools，你将看到以下界面：
@@ -5473,15 +5523,11 @@ var numberIsFinite = Number.isFinite || function isFinite(value) {
 
 转换（Transpiling）是一种结合了编译和转换的技术。其理念是编写兼容 ES6 代码，并使用工具将其转换为有效等效的 ES5 代码。我们将查看最完整、最流行的 ES6 转换器 **Babel** (https://babeljs.io/)。
 
-Babel 有多种用法。你可以将其作为 node 模块安装并从命令行调用，或作为脚本引入你的网页中。Babel 的设置非常详尽且文档齐全，请见 https://babeljs.io/docs/setup/。Babel 还有一个非常棒的**读取-求值打印循环** (**REPL**)。我们在本章的大多数示例中使用 Babel REPL。深入理解 Babel 的各种用法超出了本书的范范围。但我敦使你开始将 Babel 作为你开发工作流的一部分。
-
-
-
-
+Babel 有多种用法。你可以将其作为 node 模块安装并从命令行调用，或作为脚本引入你的网页中。Babel 的设置非常详尽且文档齐全，请见 https://babeljs.io/docs/setup/。Babel 还有一个非常棒的**读取-求值打印循环** (**REPL**)。我们在本章的大多数示例中使用 Babel REPL。深入理解 Babel 的各种用法超出了本书的范围。但我敦促你开始将 Babel 作为你开发工作流的一部分。
 
 ## 第 7 章
 
-在本章中，我们将涵盖 ES6规范最重要的部分。如果可能，你应该探索 ES6 的所有特性，并将它们纳入你的开发工作流。
+在本章中，我们将涵盖 ES6 规范最重要的部分。如果可能，你应该探索 ES6 的所有特性，并将它们纳入你的开发工作流。
 
 ### ES6 语法变化
 
@@ -5493,12 +5539,10 @@ ES6 为 JavaScript 带来了重大的语法变化。这些变化需要仔细学�
 
 ```javascript
 var a = 1;
-
 (function blockscope(){
   var a = 2;
   console.log(a); // 2
 })();
-
 console.log(a); // 1
 ```
 
@@ -5506,14 +5550,11 @@ console.log(a); // 1
 
 ```javascript
 "use strict";
-
 var a = 1;
-
 {
   let a = 2;
   console.log( a ); // 2
 }
-
 console.log( a ); // 1
 ```
 
@@ -5534,7 +5575,6 @@ let 的一个特定用途是在 for 循环中。当我们在 for 循环中使用
 for (let i = 0; i<5; i++) {
   console.log(i);
 }
-
 console.log(i); // i is not defined
 ```
 
@@ -5550,11 +5590,11 @@ if(true){
 }
 ```
 
-常量必须在声明时初始化。相同的块级作用域规则也适用于函数。当函数声明在块内部时时，它仅在该作用域内可用。
+常量必须在声明时初始化。相同的块级作用域规则也适用于函数。当函数声明在块内部时，它仅在该作用域内可用。
 
 ### 默认参数
 
-默认值非常常见。你总是为传递给函数的参数或初始化的变量设置某些默认值。你可能见过类似下面的代码：
+默认值非常常见。你总是为传递给函数的参数或初始化的变量设置某些默定值。你可能见过类似下面的代码：
 
 ```javascript
 function sum(a,b){
@@ -5562,7 +5602,6 @@ function sum(a,b){
   b = b || 0;
   return (a+b);
 }
-
 console.log(sum(9,9)); //18
 console.log(sum(9)); //9
 ```
@@ -5573,7 +5612,6 @@ console.log(sum(9)); //9
 function sum(a=0, b=0){
   return (a+b);
 }
-
 console.log(sum(9,9)); //18
 console.log(sum(9)); //9
 ```
@@ -5582,17 +5620,16 @@ console.log(sum(9)); //9
 
 ### 展开与剩余参数
 
-ES6 有一个新运算符 .... 。根据它的使用方式，它被称为展开（spread）或剩余参数（rest）。让我们来看一个简单的示例：
+ES6 有一个新运算符 `...` 。根据它的使用方式，它被称为展开（spread）或剩余参数（rest）。让我们来看一个简单的示例：
 
 ```javascript
 function print(a, b){
   console.log(a,b);
 }
-
 print(...[1,2]); //1,2
 ```
 
-这里发生的情况是，当数组（或可迭代对象）之前添加 … 时，它会将数组的元素*展开*到函数参数中的独立变量中。a 和 b 函数参数将数组元素展开到函数参数中的独立变量中。
+这里发生的情况是，当数组（或可迭代对象）之前添加 `...` 时，它会将数组的元素*展开*到函数参数中的独立变量中。a 和 b 函数参数将数组元素展开到函数参数中的独立变量中。
 
 ### 解构
 
@@ -5627,15 +5664,10 @@ var { a,b,c } = f();
 //这是目标：源 - 错误的
 var { x: a, x: b, x: c } = f();
 console.log(x,y,z); //x is undefined, y is undefined z is undefined
-
 //这是源：目标 - 正确的
 var { a: x, b: y, c: z } = f();
 console.log(x,y,z); // a b c
 ```
-
-
-
-
 
 *ECMAScript 6*
 
@@ -5704,7 +5736,7 @@ function SuperLogger(level, clazz, msg){
 }
 ```
 
-这是替换变量值以形成字符串字面量的常用方法。ES6 提供了一种使用反引号（``）分隔符的新类型字符串字面量。你可以使用字符串插值在模板字符串字面量中放置占位符。占位符将被解析并求。
+这是替换变量值以形成字符串字面量的常用方法。ES6 提供了一种使用反引号（``）分隔符的新类型字符串字面量。你可以使用字符串插值在模板字符串字面量中放置占位符。占位符将被解析并求值。
 
 前面的示例可以重写如下：
 
@@ -5714,7 +5746,7 @@ function SuperLogger(level, clazz, msg){
 }
 ```
 
-我们在字符串字面量周围使用 `` ``。在字面量内部，任何形式为 ${..} 的表达式都会被立即解析。这种解析被称为插值。在解析过程中，变量的值会替换 ${} 中的占位符。生成的字符串只是一个普通字符串，其中占位符被替换为实际的变量值。
+我们在字符串字面量周围使用 `` ``。在字面量内部，任何形式为 `${..}` 的表达式都会被立即解析。这种解析被称为插值。在解析过程中，变量的值会替换 `${}` 中的占位符。生成的字符串只是一个普通字符串，其中占位符被替换为实际的变量值。
 
 通过字符串插值，你还可以将字符串分成多行，如下代码所示（非常类似于 Python）：
 
@@ -5748,7 +5780,6 @@ function emmy(key, ...values){
   console.log(key);
   console.log(values);
 }
-
 let category="Best Movie";
 let movie="Adventures in ES6";
 emmy`And the award for ${category} goes to ${movie}`;
@@ -5765,7 +5796,6 @@ function priceFilter(s, ...v){
   //Bump up discount
   return s[0]+ (v[0] + 5);
 }
-
 let default_discount = 20;
 let greeting = priceFilter `Your purchase has a discount of ${default_discount} percent`;
 console.log(greeting); //Your purchase has a discount of 25
@@ -5808,19 +5838,17 @@ let m2 = new Map([
   [ 2, 'Douglas' ],
   [ 3, 'Clive' ],
 ]);
-
 for (let a of m2.entries()){
   console.log(a);
 }
 //1 2 3
-
 for (let a of m2.keys()){
   console.log(a);
 } //1 2 3
-
 for (let a of m2.values()){
   console.log(a);
 } //Albert Clive
+```
 
 *ECMAScript 6*
 *Chapter 7*
@@ -5836,7 +5864,7 @@ Maps 的一种变体是 WeakMap——WeakMap 不会阻止其垃圾回收。WeakM
 
 ## Symbols
 
-ES6 引入了一种新的数据类型 Symbol。Symbol 保证是唯一的且不可变的。Symbols 通常用作对象的属性标识符。你可以通过 Symbol() 工厂方法创建 Symbol——记住这不是构造函数，因此你不应该使用 new 运算符：
+ES6 引入了一种新的数据类型 Symbol。Symbol 保证是唯一的且不可变的。Symbols 通常用作对象的属性标识符。你可以通过 `Symbol()` 工厂方法创建 Symbol——记住这不是构造函数，因此你不应该使用 new 运算符：
 
 ```javascript
 let s = Symbol();
@@ -5857,11 +5885,7 @@ console.log(i.next()); // { value: 2, done: false }
 console.log(i.next()); // { value: undefined, done: true }
 ```
 
-正如你看到的，我们通过 Symbol.iterator() 数组的迭代器，并对其调用 next() 方法来获取后续的元素。value 和 done 都由 next() 方法调用返回。当你在数组的最后一个元素之后调用 next() 时，你会得到一个 undefined 值且 done: true，表示你已经遍历了整个数组。
-
-
-
-
+正如你看到的，我们通过 `Symbol.iterator()` 获取数组的迭代器，并对其调用 next() 方法来获取后续的元素。value 和 done 都由 next() 方法调用返回。当你在数组的最后一个元素之后调用 next() 时，你会得到一个 undefined 值且 done: true，表示你已经遍历了整个数组。
 
 ## ECMAScript 6
 
@@ -5877,11 +5901,9 @@ ES6 引入了一种名为 `for..of` 循环的新迭代机制，它可以遍历�
 
 ```javascript
 var list = ['Sunday','Monday','Tuesday'];
-
 for (let i in list){
   console.log(i); //0 1 2
 }
-
 for (let i of list){
   console.log(i); //Sunday Monday Tuesday
 }
@@ -5891,14 +5913,13 @@ for (let i of list){
 
 ## 箭头函数
 
-ECMAScript 6 最有趣的新特性之一是箭头函数。顾名其实义，箭头函数是使用新语法定义的函数，该语法使用*箭头* (=>) 作为语法的一部分。让我们先看看箭头函数的样子的：
+ECMAScript 6 最有趣的新特性之一是箭头函数。顾名思义，箭头函数是使用新语法定义的函数，该语法使用*箭头* (=>) 作为语法的一部分。让我们先看看箭头函数的样子的：
 
 ```javascript
 //Traditional Function
 function multiply(a,b) {
   return a*b;
 }
-
 //Arrow
 var multiply = (a,b) => a*b;
 console.log(multiply(1,2)); //2
@@ -5971,14 +5992,12 @@ console.log(( x => x * 3 )( 3 )); // 9
 function CustomStr(str){
   this.str = str;
 }
-
 CustomStr.prototype.add = function(s){ // --> 1
   'use strict';
   return s.map(function (a){ // --> 2
     return this.str + a; // --> 3
   });
 };
-
 var customStr = new CustomStr("Hello");
 console.log(customStr.add(["World"]));
 // 无法读取 undefined 的属性 'str'
@@ -5990,7 +6009,6 @@ console.log(customStr.add(["World"]));
 function CustomStr(str){
   this.str = str;
 }
-
 *第7章*
 
 [179]
@@ -6002,7 +6020,6 @@ CustomStr.prototype.add = function(s){
     return that.str + a; // --> 3
   });
 };
-
 var customStr = new CustomStr("Hello");
 console.log(customStr.add(["World"]));
 //["HelloWorld"]
@@ -6016,13 +6033,11 @@ ES6 箭头函数具有作用域 `this` (lexical this)，这意味着箭头函数
 function CustomStr(str){
   this.str = str;
 }
-
 CustomStr.prototype.add = function(s){
   return s.map((a)=> {
     return this.str + a;
   });
 };
-
 var customStr = new CustomStr("Hello");
 console.log(customStr.add(["World"]));
 //["HelloWorld"]
@@ -6064,18 +6079,7 @@ img/b71a2881032cad7a0a37747ed6a23e02_200_0.png
 <head>
 <title>DOM</title>
 <script>
-```
-
-
-
-
-
-*第8章*
-
-**[183]**
-
 // 当文档加载时运行此函数
-
 window.onload = function() {
   var doc = document.documentElement;
   var body = doc.body;
@@ -6086,25 +6090,22 @@ window.onload = function() {
   alert(_head.parentNode === doc); //true
 }
 </script>
-
 </head>
-
 <body>
-
 <p>Hello World!</p>
-
 </body>
 </html>
+```
 
 当浏览器加载页面时，该匿名函数会被执行。在函数中，我们正在通过程序方式获取 DOM 节点。可以使用 `document.documentElement` 函数访问整个 HTML 文档。我们将文档存储在一个变量中。一旦访问了文档，我们就可以使用文档的几个辅助属性来遍历节点。我们正在使用 `doc.body` 访问 `<body>` 元素。你可以使用 `childNodes` 数组遍历元素的子节点。可以使用额外的属性 `firstChild` 和 `lastChild` 访问节点的第一个子节点和最后一个子节点。
 
-不建议在 `<head>` 标签中使用阻塞渲染的 JavaScript。这会极大地减慢页面渲染。现代浏览器支持 `async` 和 `defer` 属性，告诉浏览器在下载脚本时可以继续渲染。你可以在 `<head>` 标签中使用这些标签，而无需担心性能下降。你可以在 http://stackoverflow.com/questions/436411/where-is-the-best-place-to-put-script-tags-in-html-markup  获取更多信息。
+不建议在 `<head>` 标签中使用阻塞渲染的 JavaScript。这会极大地减慢页面渲染。现代浏览器支持 `async` 和 `defer` 属性，告诉浏览器在下载脚本时可以继续渲染。你可以在 `<head>` 标签中使用这些标签，而无需担心性能下降。你可以在 http://stackoverflow.com/questions/436411/where-is-the-best-place-to-put-script-tags-in-html-markup 获取更多信息。
 
 ### 访问特定节点
 
 核心 DOM 定义了 `getElementsByTagName()` 方法，用于返回所有 `tagName` 属性等于特定值的元素的节点列表（NodeList）。下面这行代码返回了文档中所有 `<p/>` 元素的列表：
 
-var paragraphs = document.getElementsByTagName('p');
+`var paragraphs = document.getElementsByTagName('p');`
 
 *DOM 操作与事件*
 
@@ -6112,9 +6113,9 @@ var paragraphs = document.getElementsByTagName('p');
 
 HTML DOM 定义了 `getElementsByName()` 来检索所有 `name` 属性被设置为特定值的元素。考虑以下代码段：
 
+```html
 <html>
 <head>
-
 <title>DOM</title>
 <script>
 showFeelings = function() {
@@ -6125,7 +6126,6 @@ showFeelings = function() {
 </script>
 </head>
 <body>
-
 <p>Hello World!</p>
 <form method="post" action="/post">
 <fieldset>
@@ -6136,17 +6136,17 @@ Happy<br />
 </fieldset>
 <input type="button" value="Submit" onClick="showFeelings()"/>/>
 </form>
-
 </body>
 </html>
+```
 
 在这个示例中，我们创建了一组 `name` 属性定义为 `feeling` 的单选按钮。在 `showFeelings` 函数中，我们获取了所有 `name` 属性设置为 `feeling` 的元素，并遍历所有这些元素。
 
 HTML DOM 定义的另一个方法是 `getElementById()`。在访问特定元素时一个非常有用的方法。该方法根据与元素关联的 `id` 进行查找。`id` 属性对于每个元素都是唯一的，因此这种查找非常快，且应该优于 `getElementsByName()`。然而，你应该意识到浏览器并不保证 `id` 属性的唯一性。在下面的示例中，我们正在使用 ID 访问一个特定元素。元素的 ID 是唯一的，与标签或 name 属性不同：
 
+```html
 <html>
 <head>
-
 *第8章*
 
 **[185]**
@@ -6160,24 +6160,24 @@ window.onload= function() {
 </script>
 </head>
 <body>
-
 <p id="greeting">Hello World!</p>
 <p id="identify">地球人</p>
-
 </body>
 </html>
+```
 
 我们到目前为止讨论的是 JavaScript 中 DOM 遍历的基础知识。当 DOM 变得复杂且你想对 DOM 进行复杂的操作时，这些遍历和访问函数似乎就具有局限性。有了这些基础知识，是时候介绍一个用于 DOM 遍历（以及其他功能）的优秀库了——jQuery。
 
 jQuery 是一个轻量级库，旨在让常见的浏览器操作变得更简单。如果使用纯 JavaScript，DOM 遍历和操作、事件处理、动画和 Ajax 等常见操作可能会非常繁琐。jQuery 为你提供了易用且更短的辅助机制，帮助你非常容易且快速地开发这些常见操作。jQuery 是一个功能丰富的库，但就本章而言，我们将主要关注 DOM 操作和事件。你可以通过直接从内容交付网络（CDN）添加脚本，或手动下载文件并将其添加到脚本标签中将 jQuery 添加到你的 HTML 中。下面的示例展示了如何从 Google 的 CDN 下载 jQuery：
 
+```html
 <html>
 <head>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 </head>
 <body>
-
 </body>
+```
 
 *DOM 操作与事件*
 
@@ -6185,6 +6185,7 @@ jQuery 是一个轻量级库，旨在让常见的浏览器操作变得更简单�
 
 CDN 的优势是 Google 的 CDN 会找到最近的服务器。如果你希望下载并手动托管 jQuery，可以使用以下代码：
 
+```html
 <html>
 <head>
 <script src="./jquery.js"></script>
@@ -6195,17 +6196,16 @@ $(document).ready(function() {
 </script>
 </head>
 <body>
-
 <p id="greeting">Hello World!</p>
-
 </body>
 </html>
+```
 
-$ 只是一个函数。如果你阅读 jQuery 的源码（你应该这样做），你会看到最后一行：
+`$` 只是一个函数。如果你阅读 jQuery 的源码（你应该这样做），你会看到最后一行：
 
-window.jQuery = $;
+`window.jQuery = $;`
 
-$ 是一种语法糖，让代码更加简洁。事实上，你可以交替使用 `$` 和 `jQuery`。例如，`$('#greeting').html('Martian');` 和 `jQuery('#greeting').html('Martian');` 是相同的。
+`$` 是一种语法糖，让代码更加简洁。事实上，你可以交替使用 `$` 和 `jQuery`。例如，`$('#greeting').html('Martian');` 和 `jQuery('#greeting').html('Martian');` 是相同的。
 
 *第8章*
 
@@ -6213,29 +6213,29 @@ $ 是一种语法糖，让代码更加简洁。事实上，你可以交替使用
 
 你不能在页面完全加载之前使用 jQuery。因为 jQuery 需要知道整个 DOM 必须已经在内存中。为了确保页面完全加载并处于可以操作的状态，可以使用 `$(document).ready()` 函数。在这里，IIFE 只在文档准备就绪后执行：
 
+```javascript
 $(document).ready(function() {
   $('#greeting').html('Martian');
 });
+```
 
 片段展示了我们如何将函数与 jQuery 的 `.ready()` 方法关联。该函数将在文档准备就绪后执行。我们使用 `$(document)` 从页面创建一个 jQuery 对象。我们在 jQuery 对象上调用 `.ready()` 方法，并向它传递我们想要执行的函数。
 
 在使用 jQuery 时，这是一个非常常见的操作，以至于它有自己的快捷调用方式。你可以将整个 `ready()` 调用替换为简短的 `$()` 调用：
 
+```javascript
 $(function() {
   $('#greeting').html('Martian');
 });
+```
 
 jQuery 中最重要的函数是 `$()`。该函数通常接受一个 CSS 选择器作为唯一参数，并返回一个指向对应元素的新 jQuery 对象。三个主要的选择器是标签名、ID 和类。它们可以单独使用，也可以与其他结合使用。下面的简单示例说明了这三个选择器在代码中的形式：
 
 | 选择器 | CSS 选择器 | jQuery 选择器 | 选择器的输出 |
 | :--- | :--- | :--- | :--- |
-| 标签 | p | $('p') | 选择文档中所有的 p 标签。 |
-| ID | #div_1 | $('#div_1') | 选择具有 div_1 ID 的元素。识别 ID 的符号是 #。 |
-| 类 | .bold_fonts | $('.bold_fonts') | 选择文档中所有具有 CSS 类 bold_fonts 的元素。识别类匹配的符号是 "."。 |
-
-
-
-
+| 标签 | p | `$('p')` | 选择文档中所有的 p 标签。 |
+| ID | #div_1 | `$('#div_1')` | 选择具有 div_1 ID 的元素。识别 ID 的符号是 #。 |
+| 类 | .bold_fonts | `$('.bold_fonts')` | 选择文档中所有具有 CSS 类 bold_fonts 的元素。识别类匹配的符号是 "."。 |
 
 *DOM 操作与事件*
 
@@ -6261,7 +6261,6 @@ $(function() {
   $('tr:nth-child(odd)').addClass('zebra');
 });
 </script>
-
 <style>
 .highlight-blue {
 color: blue;
@@ -6275,7 +6274,7 @@ color: white;
 }
 </style>
 </head>
-<body
+<body>
 <div id=header>
 <h1>Are we there yet ?</h1>
 <span class="highlight">
@@ -6298,7 +6297,7 @@ color: white;
 </html>
 ```
 
-*第 8 章* 
+*第 8 章*
 
 [189]
 
@@ -6310,9 +6309,9 @@ $('h1').html(function(index, oldHTML){
 });
 ```
 
-$.html() 函数设置目标元素（在本例中为 H1 标题）的 HTML。此外，我们选取所有的 H1 标题，并为所有它们应用一个特定的 CSS 样式类 highlight-blue。`$('h1').addClass('highlight-blue')` 语句选取所有的 H1 标题，并使用 $.addClass(<CSS class>)` 方法为使用该选择器选取的所有元素应用 CSS 类。
+`$.html()` 函数设置目标元素（在本例中为 H1 标题）的 HTML。此外，我们选取所有的 H1 标题，并为所有它们应用一个特定的 CSS 样式类 highlight-blue。`$('h1').addClass('highlight-blue')` 语句选取所有的 H1 标题，并使用 `$.addClass(<CSS class>)` 方法为使用该选择器选取的所有元素应用 CSS 类。
 
-我们使用子代选择器 (>) 通过 $.css() 函数来自自定义的 CSS 样式。实际上，$() 函数中的选择器是在说：“找到每个 ID 为 header (#header) 的元素的子元素 (>) 标题 (h1)。”对于每一个这样的元素，我们应用了自定义的 CSS。下一个用法很有趣。考虑以下行代码：
+我们使用子代选择器 (>) 通过 `$.css()` 函数来自定义的 CSS 样式。实际上，$() 函数中的选择器是在说：“找到每个 ID 为 header (#header) 的元素的子元素 (>) 标题 (h1)。”对于每一个这样的元素，我们应用了自定义的 CSS。下一个用法很有趣。考虑以下行代码：
 
 ```javascript
 $('ul li:not(.highlight-blue)').addClass('highlight-green');
@@ -6322,7 +6321,7 @@ $('ul li:not(.highlight-blue)').addClass('highlight-green');
 
 [190]
 
-我们正在选取的是：“对于所有没有应用 highlight-blue 类的列表元素 (li)，应用 CSS 类 highlight-green。”最后一行——`$('tr:nth-child(odd)').addClass('zebra')`——可以解释为：从所有的表格行 (tr) 中，对于每一个奇数行，应用 CSS 样式 zebra。*n*-child 选择器是 jQuery 提供的一个自定义选择器。最终输出看起来类似于下面（尽管它显示了多种 jQuery 选择器类型，但很明显，对 jQuery 的了解并不能取代糟糕的设计品味。）：
+我们正在选取的是：“对于所有没有应用 highlight-blue 类的列表元素 (li)，应用 CSS 类 highlight-green。”最后一行——`$('tr:nth-child(odd)').addClass('zebra')`——可以解释为：从所有的表格行 (tr) 中，对于每一个奇数行，应用 CSS 样式 zebra。*n*-child 选择器是 jQuery 提供的一个自定义选择器。最终输出看起来类似于下面（虽然它显示了多种 jQuery 选择器类型，但很明显，对 jQuery 的了解并不能取代糟糕的设计品味。）：
 
 ![](img/b71a2881032cad7a0a37747ed6a23e02_208_0.png)
 
@@ -6362,15 +6361,15 @@ $('#button_submit')
 
 在此片段中，我们对一个选择器链式调用了 click(), find() 和 attr() 方法。在这里，click() 方法被执行，一旦执行完成，find() 定位 ID 为 notification 的元素并将其属性更改为字符串。
 
-遍历与操作
+### 遍历与操作
 
-我们讨论了使用 jQuery 选取元素的各种方法。我们将讨论几种 DOM 遍历和操作方法，如果使用原生 DOM 操作来实现这些将非常范琐。jQuery 让它们变得直观且优雅。
+我们讨论了使用 jQuery 选取元素的各种方法。我们将讨论几种 DOM 遍历和操作方法，如果使用原生 DOM 操作来实现这些将非常繁琐。jQuery 让它们变得直观且优雅。
 
 *DOM 操作与事件*
 
 [192]
 
-在深入研究这些方法之前，让我们熟悉一下 HTML 术语。我们将讨论几种 DOM 遍历和操作方法，如果使用原生 DOM 操作来实现这些将非常范琐。jQuery 让它们变得直观且优雅。
+在深入研究这些方法之前，让我们熟悉一下 HTML 术语。我们将讨论几种 DOM 遍历和操作方法，如果使用原生 DOM 操作来实现这些将非常繁琐。jQuery 让它们变得直观且优雅。
 
 我们将通过方法来遍历 DOM。考虑以下 HTML：
 
@@ -6408,10 +6407,6 @@ $('input[type="text"]').val('Enter username:');
 $('a').attr('title', 'Click');
 ```
 
-
-
-
-
 *DOM 操控与事件*
 
 **[194]**
@@ -6437,7 +6432,7 @@ $('a').attr('title', 'Click');
 
 有时，如果事件已经由子元素触发，你不希望它再次由父元素抛起。你可以调用事件对象上的 `stopPropagation()` 方法来防止更高级别的处理器接收该事件。某些事件关联有默认操作。例如，如果你点击一个 URL 链接，你将被带到链接的目标页面。JavaScript 事件处理器会在执行默认行为之前被调用。你可以调用事件对象上的 `preventDefault()` 方法来停止默认行为的触发。
 
-这些是在浏览器中使用原生 JavaScript 时的事件基础知识。这里存在一个问题。浏览器在定义事件处理行为方面是臭名昭著的。我们将查看 jQuery 的事件处理。为了让管理更易用，jQuery 总是为模型的冒泡阶段注册事件处理器。这意味着最具体的元素将获得对任何事件做出响响的首要机会。
+这些是在浏览器中使用原生 JavaScript 时的事件基础知识。这里存在一个问题。浏览器在定义事件处理行为方面是臭名昭著的。我们将查看 jQuery 的事件处理。为了让管理更易用，jQuery 总是为模型的冒泡阶段注册事件处理器。这意味着最具体的元素将获得对任何事件做出响应的首要机会。
 
 **jQuery 事件处理与传播**
 
@@ -6508,65 +6503,13 @@ $("#element")
   .on("click", secondHandler);
 ```
 
-当事件被触发时，两个处理器都会被调用。如果你想移除该处理器，可以使用带有第二个参数的 `off()`：
 
-```javascript
-$("#element").off("click", firstHandler);
-```
 
-如果你有引用的话，这是可以的。如果你使用的是匿名函数，则无法获取它们。在这种情况下，你可以使用带命名空间的事件（namespaced events）。考虑下面的示例：
+# 事件委托
 
-```javascript
-$("#element").on("click.first", function() {
-  console.log("first");
-});
-```
+事件委托允许我们为整个 `ul#list` 附加单个处理器。通过我们对事件冒泡的理解，我们可以可视化事件如何在 DOM 树中移动。当点击任何一个 URL 时，其移动路径如下：
 
-一旦你拥有了带命名空间的事件，你可以按照如下方式移除它：
-
-```javascript
-$("#element").off("click.first");
-```
-
-使用 `on()` 的一个主要优势是你可以一次性绑定多个事件。考虑以下示例：
-
-```javascript
-$('#input').on({
-  focus: function() {
-    console.log("focus");
-  },
-  mouseenter: function() {
-    console.log("mouseenter");
-  },
-  click: function() {
-    console.log("click");
-  }
-});
-```
-
-*DOM 操控与事件*
-
-**[196]**
-
-*DOM 操控与事件*
-
-**[197]**
-
-*DOM 操控与事件*
-
-**[198]**
-
-*第 8 章*
-
-**[199]**
-
-*第 8 章*
-
-**事件委托**
-
-事件委托允许我们为整个 ul#list 附加单个处理器。通过我们对事件冒泡的理解，我们可以可视化事件如何在 DOM 树中移动。当点击任何一个 URL 时，其移动路径如下：
-
-a(click)->li->ul#list->div#container->body->html->root
+`a(click)->li->ul#list->div#container->body->html->root`
 
 考虑以下示例：
 
@@ -6592,7 +6535,7 @@ $("#list").on("click", "a", function( event ) {
 });
 ```
 
-**事件对象**
+# 事件对象
 
 到目前为止，我们附加匿名函数作为事件处理器。为了让我们的事件处理器更通用、更有用，我们可以创建具名的函数并将其分配给事件。考虑以下几行：
 
@@ -6603,14 +6546,6 @@ function handlesClicks(event){
 
 $("#bigButton").on('click', handlesClicks);
 ```
-
-
-
-
-
-## DOM 操作与事件
-
-**[200]**
 
 在这里，我们向 `on` 方法传递的是一个命名函数而不是匿名函数。现在让我们关注我们传递给函数的事件参数。jQuery 会传递一个包含所有事件回调的事件对象（event object）。事件对象包含了关于被触发事件的非常有用的信息。在某些不希望元素的默认行为执行的情况下，我们可以使用事件对象的 `preventDefault()` 方法。例如，我们希望触发一个 AJAX 请求，而不是整个表单提交；或者我们希望在点击 URL 锚点时防止打开默认位置。在这些情况下，你可能还希望防止事件冒泡到 DOM 树。你可以通过调用事件对象的 `stopPropagation()` 方法来停止事件传播。
 
@@ -6637,17 +6572,15 @@ $("a").click(function(event) {
 });
 ```
 
-## 总结
+# 总结
 
 这一章完全是为了理解 JavaScript 最重要的角色——即作为浏览器语言的角色。JavaScript 通过促进浏览器上的 DOM 操作和事件管理，为 Web 引入动态特性发挥了作用。我们讨论了在使用 jQuery 和不使用 jQuery 的情况下这两个概念。随着现代 Web 的需求增加，使用像 jQuery 这样的库是至关重要的。这些库显著提高了代码的质量和效率，同时让你能够自由地关注重要的事情。
 
 我们将关注 JavaScript 的另一种形态——主要在服务器端。Node.js 已经成为一个用于编写可扩展服务器端应用程序的流行 JavaScript 框架。我们将详细查看如何最有效地利用 Node.js 进行服务器应用程序。
 
-**[201]**
+# 服务端 JavaScript
 
-## 服务端 JavaScript
-
-到目前为止，我们一直关注 JavaScript 作为浏览器语言的多功能性。鉴于 JavaScript 作为编写可扩展服务器系统的编程语言已获得极大的普及，这足以说明该语言的卓越。在这一章中，我们将查看 Node.js。Node.js 是用于服务器端编程的最流行的 JavaScript 框架之一。Node.js 也是 GitHub 上最关注的项目之一，并拥有极的社区支持。
+到目前为止，我们一直关注 JavaScript 作为浏览器语言的多功能性。鉴于 JavaScript 作为编写可扩展服务器系统的编程语言已获得极大的普及，这足以说明该语言的卓越。在这一章中，我们将查看 Node.js。Node.js 是用于服务器端编程的最流行的 JavaScript 框架之一。Node.js 也是 GitHub 上最关注的项目之一，并拥有极大的社区支持。
 
 Node 使用 V8（驱动 Google Chrome 的虚拟机）来用于服务器端编程。V8 为 Node 带来了巨大的性能获益，因为它直接将 JavaScript 编译为原生机器码，而不是执行字节码或使用解释器作为中间件。
 
@@ -6655,13 +6588,11 @@ V8 和 JavaScript 的多功能性是一个完美的组合——JavaScript 的性
 
 - 浏览器和 Node.js 中的异步事件模型
 - 回调（Callbacks）
-- 定器
+- 定时器
 - 事件发射器（EventEmitters）
 - 模块和 npm
 
-**[202]**
-
-### 浏览器中的异步事件模型
+## 浏览器中的异步事件模型
 
 在尝试理解 Node 之前，让我们先尝试理解浏览器中的 JavaScript。Node.js 依赖于事件驱动和异步平台来实现服务端 JavaScript。这与浏览器处理 JavaScript 的方式非常相似。浏览器和 Node 在使用 I/O 时都是事件驱动且非阻塞的。
 
@@ -6686,23 +6617,13 @@ console.log("2");
 
 当你调用 `fileSystemReader.read()` 时，你正在从文件系统读取文件。正如我们刚刚看到的，I/O 是这里的瓶颈，在读取操作完成之前可能需要很长时间。取决于硬件类型、文件系统、操作系统等，此操作将很大程度上阻塞整个程序的执行。先前的代码执行了一些 I/O，这是一种阻塞操作——进程将被阻塞，直到 I/O 完成且数据返回。这是传统的 I/O 模型，我们大多数人对此都很熟悉。然而，这种方式是昂贵的，并且会导致严重的延迟。每个进程都有关联的内存和状态——这两者都将被阻塞直到 I/O 完成。
 
-**[203]**
+如果程序阻塞了 I/O，服务器将拒绝新请求。有几种方法可以解决这个问题。最流行的传统方法是使用多个线程来处理请求——这种技术被称为多线程。如果你熟悉 Java 等语言，你可能写过多线程代码。在大规模范围内编写多线程应用程序是困难的。当多个线程访问共享内存时，维护这些线程正确的状态是一项艰巨的任务。线程在内存和 CPU 利用方面也是昂贵的。浏览器的处理方式不同。浏览器的 I/O 发生在执行线程之外，并在 I/O 完成时会触发一个事件。该事件由与其关联的回调函数处理。这种类型的 I/O 是非阻塞且异步的。由于 I/O 不阻塞执行线程，浏览器可以继续处理不断到来的事件，而无需等待 I/O。这是一个强大的想法。异步 I/O 允许浏览器响应多个事件并允许高水平的交互。
 
-如果程序阻塞了 I/O，服务器将拒绝新请求。有几种方法可以解决这个问题。最流行的传统方法是使用多个线程来处理请求——这种技术被称为多线程。如果你熟悉 Java 等语言，你可能写过多线程代码。在大规模范围内编写多线程应用程序是困难的。当多个线程访问共享内存时，维护这些线程正确的状态是一项艰巨的任务。线程在内存和 CPU 利用方面也是昂贵的。浏览处理方式不同。器的 I/O 发生在执行线程之外，并在 I/O 完成时会触发一个事件。该事件由与其关联的回调函数处理。这种类型的 I/O 是非阻塞且异步的。由于 I/O 不阻塞执行线程，浏览器可以继续处理不断到来的事件，而无需等待 I/O。这是一个强大的想法。异步 I/O 允许浏览器响应多个事件并允许高水平的交互。
-
-Node 使用类似的想法进行异步处理。Node 的事件循环作为单线程运行。这意味着你写的应用程序本质上是单线程的。这并不意味着 Node 本身是单线程的。Node 使用 libuv 它是多线程的——幸运的是，这些细节被封装内部，你在开发时不需要知道它们。
+Node 使用类似的想法进行异步处理。Node 的事件循环作为单线程运行。这意味着你写的应用程序本质上是单线程的。这并不意味着 Node 本身是单线程的。Node 使用 `libuv`，它是多线程的——幸运的是，这些细节被封装内部，你在开发时不需要知道它们。
 
 每个涉及 I/O 的调用都需要注册回调。注册回调也是异步的并立即返回。一旦 I/O 操作完成，其回调就会推入事件循环。在之前推入事件循环的所有回调执行后，它将被执行。所有操作本质上都是线程安全的，主要因为事件循环中不存在需要同步的并行执行路径。本质上只有一个线程在运行你的代码，没有并行执行；然而，除了你的代码之外的一切都在并行运行。
 
 Node.js 依赖 **libev** (http://software.schmorp.de/pkg/libev.html) 来提供事件循环，并由 **libeio** (http://software.schmorp.de/pkg/libeio.html) 补充，后者使用线程池来提供异步 I/O。想要了解更多信息，请查看 libev 文档：http://pod.tst.eu/http://cvs.schmorp.de/libev/ev.pod。
-
-
-
-
-
-*服务端 JavaScript*
-
-**[204]**
 
 考虑以下这个在 Node.js 中执行异步代码的示例：
 
@@ -6726,10 +6647,6 @@ console.log('2');
 
 Node.js 不需要任何额外的服务器组件，因为它创建了自己的服务器进程。Node 应用程序本质上是运行在指定端口上的服务器。在 Node 中，服务器和应用程序是同一个。
 
-*第 9 章*
-
-**[205]**
-
 这是一个 Node.js 服务器的示例，当从浏览器运行 http://localhost:3000/ URL 时，它会用 **Hello Node** 字符串响应：
 
 ```javascript
@@ -6746,21 +6663,21 @@ server.listen(3000);
 
 在这个示例中，我们使用了 `http` 模块。如果你还记得我们早些对 JavaScript 模块的讨论，你会发现这是 CommonJS 模块的实现。Node 有几个编译到二进制文件中的模块。核心模块定义在 Node 的源码中。它们位于 `lib/` 文件夹中。如果将标识符传递给 `require()`，它们会被首先加载。例如，`require('http')` 始终会返回内置的 HTTP 模块，即使存在同名的文件。
 
-在加载处理 HTTP 请求的模块后，我们创建了一个服务器对象，并使用 `server.on()` 函数为请求事件设置了监听器。每当端口 3000 有请求指向此服务器时，回调就会就会调用。回调接收 `request` 和 `response` 参数。我们在发送响应之前，还设置了 `Content-Type` 头部和 HTTP 响应码。你可以复制前面的代码，将其保存为纯文本文件并命名为 `app.js`。你可以使用 Node.js 从命令行运行服务器，如下所示：
+在加载处理 HTTP 请求的模块后，我们创建了一个服务器对象，并使用 `server.on()` 函数为请求事件设置了监听器。每当端口 3000 有请求指向此服务器时，回调就会调用。回调接收 `request` 和 `response` 参数。我们在发送响应之前，还设置了 `Content-Type` 头部和 HTTP 响应码。你可以复制前面的代码，将其保存为纯文本文件并命名为 `app.js`。你可以使用 Node.js 从命令行运行服务器，如下所示：
 
-$ » node app.js
+```
+$ node app.js
+```
 
 一旦服务器启动，你可以在浏览器中打开 http://localhost:3000 URL，你将看到一段枯燥的文本：
 
 ![](img/b71a2881032cad7a0a37747ed6a23e02_223_0.png)
 
-*服务端 JavaScript*
-
-**[206]**
-
 如果你想检查内部正在发生什么，可以按照如下方式发出 `curl` 命令：
 
-~ » curl -v http://localhost:3000
+```
+~ curl -v http://localhost:3000
+```
 
 * Rebuilt URL to: http://localhost:3000/
 * Trying ::1...
@@ -6769,26 +6686,20 @@ $ » node app.js
 > Host: localhost:3000
 > User-Agent: curl/7.43.0
 > Accept: */*
-
 < HTTP/1.1 200 OK
 < Content-Type: text/plain
 < Date: Thu, 12 Nov 2015 05:31:44 GMT
 < Connection: keep-alive
 < Transfer-Encoding: chunked
 <
-
 Hello Node
 * Connection #0 to host localhost left intact
 
 Curl 显示了一个良好的请求 (>) 和响应 (<) 对话，包含了请求头部和响应头部。
 
-**回调函数 (Callbacks)**
+# 回调函数 (Callbacks)
 
 JavaScript 中的回调函数通常需要时间来适应。如果你来自其他非异步编程背景，你将需要仔细理解回调是如何工作的；你可能会感觉自己是第一次学习编程。由于 Node 中的一切都是都是异步的，你将对所有事情都使用回调，而不会尝试去细致地结构化它们。Node.js 项目中最重要的部分有时是代码组织和模块管理。回调是在稍后执行的函数。异步程序并不是按上到下的过程化读取代码，而是根据 HTTP 请求或文件系统读取等函数发生的速度在不同的时间执行不同的函数。
-
-*第 9 章*
-
-**[207]**
 
 函数执行是顺序的还是异步的取决于其执行的上下文：
 
@@ -6803,9 +6714,11 @@ add(100);
 
 如果你使用 Node 运行此程序，你将看到如下（假设你的文件名为 `app.js`）：
 
+```
 $ node app.js
 0
 100
+```
 
 这是我们习惯的：同步代码，每行代码都按顺序执行。这里的代码定义了一个函数，然后下一行调用该函数而无需等待任何内容。这是顺序流。
 
@@ -6816,7 +6729,7 @@ $ node app.js
 - 将异步代码封装在一个函数中
 - 将回调函数传递给该封装函数
 
-我们将带着这两个想法来重新组织先先的示例。考虑这个修改后的示例：
+我们将带着这两个想法来重新组织先前的示例。考虑这个修改后的示例：
 
 ```javascript
 var request = require('request');
@@ -6840,14 +6753,12 @@ getSiteStatus(showStatusCode);
 
 当你运行它时，你将得到如下（正确的）输出：
 
+```
 $ node app.js
 200
+```
 
-*第 9 章*
-
-**[209]**
-
-我们改变的是将异步代码封装在 `getSiteStatus()` 函数中，将一个名为 `callback()` 的函数作为参数传递给此函数，并在 `getSiteStatus()` 的最后一行执行此函数。`showStatusCode()` 回调函数只是封装了我们之前调用的 `console.log()`。然而，区别在于异步执行的方式。在学习使用回调编程时，要理解的最思想是：函数是一等对象，可以存储在变量中并用不同的名称传递。为你的变量提供简单且描述性的名称对于提高他人对代码的可读性很重要。现在回调函数在 HTTP 调用完成后就会被调用，`status_code` 变量将具有正确的值。在某些真实情况下，你希望在另一个异步任务完成后执行一个异步任务。
+我们改变的是将异步代码封装在 `getSiteStatus()` 函数中，将一个名为 `callback()` 的函数作为参数传递给此函数，并在 `getSiteStatus()` 的最后一行执行此函数。`showStatusCode()` 回调函数只是封装了我们之前调用的 `console.log()`。然而，区别在于异步执行的方式。在学习使用回调编程时，要理解的最重要思想是：函数是一等对象，可以存储在变量中并用不同的名称传递。为你的变量提供简单且描述性的名称对于提高他人对代码的可读性很重要。现在回调函数在 HTTP 调用完成后就会被调用，`status_code` 变量将具有正确的值。在某些真实情况下，你希望在另一个异步任务完成后执行一个异步任务。
 
 考虑这种场景：
 
@@ -6879,21 +6790,13 @@ var createServer = function(req,res){
 http.createServer(createServer);
 ```
 
-
-
-
-
-*服务端 JavaScript*
-
-**[210]**
-
 此代码段使用了两个重要的概念。首先，我们正在使用命名函数并将其作为回调函数使用。其次，我们没有嵌套这些异步函数。如果你在内部函数中访问闭包变量，那么上述的实现方式会有所不同。在这些情况下，使用内联匿名函数是更理想的。
 
-回调函数在 Node 中被频繁使用。它们通常被优用于定义一次性响应的逻辑。当你需要对重复事件做出响应时，Node 提供了另一种机制。在继续深入之前，我们需要理解 Node 中定时器和事件的功能。
+回调函数在 Node 中被频繁使用。它们通常被优先用于定义一次性响应的逻辑。当你需要对重复事件做出响应时，Node 提供了另一种机制。在继续深入之前，我们需要理解 Node 中定时器和事件的功能。
 
 ## 定时器
 
-定时器用于在指定的延迟后调度执行特定的回调。设置此类延迟执行有两种主要方法：`setTimeout` 和 `setInterval`。`setTimeout()` 函数用于在延迟后调度特定回调的执行，而 `setInterval` 则用于调度回调的重复执行。`setTimeout` 函数适用于执行需要调的任务，例如清理工作。考虑以下示例：
+定时器用于在指定的延迟后调度执行特定的回调。设置此类延迟执行有两种主要方法：`setTimeout` 和 `setInterval`。`setTimeout()` 函数用于在延迟后调度特定回调的执行，而 `setInterval` 则用于调度回调的重复执行。`setTimeout` 函数适用于执行需要调度的任务，例如清理工作。考虑以下示例：
 
 ```javascript
 setTimeout(function() {
@@ -6912,13 +6815,9 @@ var t = setInterval(function() {
 
 首先，我们使用 `setTimeout()` 在 1,000 毫秒延迟后执行回调（匿名函数）。这只是该回调的单次调度。我们使用 `setInterval()` 调度了回调的重复执行。注意，我们将 `setInterval()` 返回的值赋值给变量 `t`——我们可以在 `clearInterval()` 中使用此引用来清除该调度。
 
-*第 9 章*
-
-**[211]**
-
 ## 事件发射器 (EventEmitters)
 
-我们之前讨论过回调非常执行一次性逻辑。**事件发射器 (EventEmitters)** 在响应重复事件时非常有用。事件发射器触发事件，并包含在触发时处理这些事件的能力。许多重要的 Node API 是构建在事件发射器之上的。
+我们之前讨论过回调非常适合执行一次性逻辑。**事件发射器 (EventEmitters)** 在响应重复事件时非常有用。事件发射器触发事件，并包含在触发时处理这些事件的能力。许多重要的 Node API 是构建在事件发射器之上的。
 
 事件发射器产生的事件通过监听器处理。监听器与事件关联的回调函数——当事件触发时，其关联的监听器也会被触发。`EventEmitter` 是一个类，用于提供一致的接口来发射（触发）事件并将回调绑定到事件。
 
@@ -6948,13 +6847,7 @@ _emitter.on('join', function(id, caller) {
 _emitter.on('quit', function(id, caller) {
   console.log(id + " - left");
 });
-```
 
-*服务端 JavaScript*
-
-**[212]**
-
-```javascript
 var _server = _net.createServer(function(caller) {
   var process_id = caller.remoteAddress + ':' + caller.remotePort;
   _emitter.emit('join', id, caller);
@@ -6973,22 +6866,23 @@ _server.listen(8124);
 
 你启动此程序并使用 telnet 连接到我们的服务器，如下：
 
+```
 telnet 127.0.0.1 8124
+```
 
 在服务器控制台上，你将看到服务器记录哪个客户端连接了服务器：
-» node app.js
+
+```
+$ node app.js
 ::ffff:127.0.0.1:51000 - joined
 ::ffff:127.0.0.1:51001 – joined
+```
 
 如果任何客户端退出会话，也会出现适当的消息。
 
-### 模块 (Modules)
+# 模块 (Modules)
 
 当你编写大量代码时，很快就会达到一个必须开始思考你如何组织代码的节点。Node 模块是 CommonJS 模块，我们之前在讨论模块模式时讨论过它们。Node 模块可以发布到**Node 包管理器** (**npm**) 仓库。npm 仓库是 Node 模块的在线集合。
-
-*第 9 章*
-
-**[213]**
 
 ## 创建模块
 
@@ -7003,25 +6897,6 @@ Node 模块可以是单个文件，也可以是目录。实现此最简单的方
 
 你必须理解 Node 将模块缓存为对象。如果你有两个（或多个）文件 `require` 特定模块，第一个 `require` 将模块缓存在内存中，这样第二个 `require` 就不需要重新加载模块源码。然而，第二个 `require` 可以根据意愿更改模块的功能。这通常被称为**猴子补丁 (monkey patching)**，用于在不真正修改或版本化原始模块的情况下修改模块行为。
 
-*服务端 JavaScript*
-
-**[214]**
-
-Node 模块可以是单个文件，也可以是目录。实现此最简单的方法是创建 `./node_modules/supermodule/` 目录，并在目录下插入一个 `index.js` 文件。`index.js` 文件将被默认加载。或者，你可以在 `mymodename` 文件夹中放置 `package.json` 文件，指定模块的名称和主文件：
-
-```json
-{
-  "name": "supermodule",
-  "main": "./lib/config.js"
-}
-```
-
-你必须理解 Node 将模块缓存为对象。如果你有两个（或多个）文件 `require` 特定模块，第一个 `require` 将模块缓存在内存中，这样第二个 `require` 就不需要重新加载模块源码。然而，第二个 `require` 可以根据意愿更改模块的功能。这通常被称为**猴子补丁 (monkey patching)**，用于在不真正修改或版本化原始模块的情况下修改模块行为。
-
-*服务端 JavaScript*
-
-**[215]**
-
 当你使用第三种方案时，你实际上是在要求 Node 使用标准方法定位模块。为了定位模块，Node 从当前目录开始并在其后追加 `node_modules/`。如果未找到模块，搜索将从父目录开始，直到到达文件系统的根。
 
 例如，如果在 `/projects/node/` 中调用 `require('config')`，将搜索以下位置：
@@ -7034,18 +6909,11 @@ Node 模块可以是单个文件，也可以是目录。实现此最简单的方
 
 实现此最简单的方法是创建 `./node_modules/supermodule/` 目录，并在目录下插入一个 `index.js` 文件。`index.js` 文件将被默认加载。或者，你可以在 `mymodename` 文件夹中放置 `package.json` 文件，指定模块的名称和主文件：
 
-## npm
+# npm
 
 npm 是 Node 用于分发模块的包管理器。npm 可用于安装、更新和管理模块。包管理器在 Python 等其他语言中流行。npm 会自动解析并更新包的依赖项，从而让你的生活变得简单。
 
-
-
-
-
-*服务端 JavaScript*
-
-[216]
-### 安装包
+## 安装包
 
 安装 npm 包有两种方式：本地安装或全局安装。如果你只想在某个特定的 Node 项目中使用该模块的功能，可以将其安装到项目相对路径下（本地），这是 `npm install` 的默认行为。或者，有几个模块可以作为命令行工具使用；在这种情况下，你可以全局安装它们：
 
@@ -7066,7 +6934,7 @@ npm install request
 你可以通过执行以下命令创建 `package.json`：
 
 ```
-npm npm init
+npm init
 ```
 
 在回答关于项目的基础问题后，会创建一个内容类似于下方的空 `package.json`：
@@ -7079,14 +6947,7 @@ npm npm init
   "main": "app.js",
   "dependencies": {
     "request": "^2.65.0"
-  }
-}
-```
-
-*第 9 章*
-
-[217]
-```json
+  },
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -7103,7 +6964,7 @@ npm npm init
 
 你可以在文本编辑器中手动编辑此文件。该文件中一个重要部分是 `dependencies` 标签。要指定你的项目所依赖的包，你需要在 `package.json` 文件中列出你想要使用的包。你可以列出两种类型的包：
 
-- dependencies：这些包是应用程序在生产环境中な必需的
+- dependencies：这些包是应用程序在生产环境中必需的
 - devDependencies：这些包仅在开发和测试时需要（例如，使用 Jasmine node 包）
 
 在上述的示例中，你可以看到以下依赖项：
@@ -7120,13 +6981,10 @@ npm npm init
 
 一旦你的 `package.json` 文件准备就绪，你就可以直接使用 `npm install` 命令自动安装项目的所有模块。
 
-*服务端 JavaScript*
-
-[218]
 有一个我喜欢使用的酷技巧。在从命令行安装模块时，我们可以添加 `--save` 标志，将该模块的依赖关系自动添加到 `package.json` 文件中：
 
 ```
-npm npm install async --save
+npm install async --save
 npm WARN package.json chapter9@1.0.0 No repository field.
 npm WARN package.json chapter9@1.0.0 No README data
 async@1.5.0 node_modules/async
@@ -7141,7 +6999,7 @@ async@1.5.0 node_modules/async
 }
 ```
 
-## JavaScript 性能
+# JavaScript 性能
 
 像任何其他语言一样，在大规模范围内编写高效的 JavaScript 代码是一项复杂的任务。随着语言的成熟，一些固有问题正在得到解决。有一些卓越的库有助于编写高质量的代码。对于大多数复杂的系统来说，良好的代码 = 正确的代码 + 高性能的代码。新一代软件系统对性能的要求很高。在本节中，我们将讨论一些用于分析 JavaScript 代码并理解其性能指标的工具。
 
@@ -7154,9 +7012,6 @@ async@1.5.0 node_modules/async
 
 JavaScript 性能分析对于理解代码各个部分的性能方面至关重要。你可以观察函数和操作的时间，以了解哪些操作耗费了更多时间。通过这些信息，你可以优化耗时函数的性能，并调整代码的整体性能。我们将专注于 Chrome 开发者工具（Developer Tools）提供的分析选项。你可以使用全面的分析工具来理解代码的性能指标。
 
-*第 9 章*
-
-[219]
 ### CPU 分析
 
 CPU 分析显示了你代码中各个部分消耗的执行时间。我们必须通知 DevTools 记录 CPU 分析数据。让我们来尝试一下性能分析器。
@@ -7168,60 +7023,44 @@ CPU 分析显示了你代码中各个部分消耗的执行时间。我们必须�
 
 要开始记录，我们将使用 Google 的基准测试页面 http://octane-benchmark.googlecode.com/svn/latest/index.html。点击 **Start** 按钮或按下 **Ctrl+E** 开始记录。页面完成后，返回 **Profiles** 面板并点击 **Stop** 按钮停止记录。
 
-*服务端 JavaScript*
-
-[220]
-### CPU 分析
-
-CPU 分析以自底向上（bottom-up）的方式向你展示函数的详细视图以及它们所占的执行时间，如下：
+CPU 分析以自底向上（bottom-up）的方式向你展示函数的详细视图以及它们所占的执行时间。
 
 ### 时间轴视图 (Timeline view)
 
 Chrome DevTools 的 **Timeline** 工具是你查看整体性能的第一站。它允许你记录并分析应用程序运行期间的所有活动。时间轴视图为你提供了时间分布的完整概览。时间轴记录包含了显示在瀑布图中的每个事件记录：
 
-*第 9 章*
-
-[221]
 前面的屏幕显示了我们在浏览器中尝试渲染 https://twitter.com/ 时的时间轴视图。时间轴视图让你直观看到哪些操作花费了多少时间。
 
 **Memory** 视图是理解应用程序在浏览器生命周期内内存使用情况的绝佳工具。Memory 视图显示了应用程序随时间变化的内存使用图表，并对内存中的文档、DOM 节点和事件监听器的数量进行计数。Memory 视图可以帮助检测内存泄漏，并提供足够的提示来理解需要哪些优化。
 
 JavaScript 性能是一个迷人的话题，值得拥有专门的文本。我建议你探索 Chrome 开发者工具，并理解如何最好使用这些工具来检测和诊断代码中的性能问题。
 
-
-
-
-
-*服务端 JavaScript* 
-
-[222]
-
-## 总结
+# 总结
 
 在本章中，我们查看了 JavaScript 的另一种面貌——以 Node.js 形式存在的服务器端框架。
 
 Node 提供了一种异步事件模型，用于用 JavaScript 编写可扩展和高性能的服务器应用程序。我们深入研究了 Node 的一些核心概念，例如事件循环、回调、模块和定时器。理解这些概念对于编写良好的 Node 代码至关重要。我们还讨论了若干更好地组织 Node 代码和回调的技巧。
 
-至此，我们结束了对这一卓越编程语言的探索。由于其极高的通用性，JavaScript 在全球网的演进中起了关重要的作用。这种语言随着每一次新的迭代不断扩展其视野并不断改进。
+至此，我们结束了对这一卓越编程语言的探索。由于其极高的通用性，JavaScript 在全球网的演进中起了关键的作用。这种语言随着每一次新的迭代不断扩展其视野并不断改进。
 
-我们的旅程从理解语言的语法和句法的构建模块块开始。我们掌握了闭包的基本思想以及 JavaScript 的函数行为。这些概念是如此本质，以至于大多数 JavaScript 模式都是基于它们的。我们研究了如何利用这些模式用 JavaScript 编写更好的代码。研究了 JavaScript 如何在 DOM 上操作，以及如何使用 jQuery 有效地操作 DOM。最后，我们查看了 Node.js 中 JavaScript 的服务端面貌。
+我们的旅程从理解语言的语法和句法的构建模块开始。我们掌握了闭包的基本思想以及 JavaScript 的函数行为。这些概念是如此本质，以至于大多数 JavaScript 模式都是基于它们的。我们研究了如何利用这些模式用 JavaScript 编写更好的代码。研究了 JavaScript 如何在 DOM 上操作，以及如何使用 jQuery 有效地操作 DOM。最后，我们查看了 Node.js 中 JavaScript 的服务端面貌。
 
 这本书应该让你在开始编写 JavaScript 程序时以不同的方式思考。你不仅在编写代码时会常用模式，还会欣赏并使用 ES6 带来的新语言特性。
 
-[223]
+# 索引
 
-## 索引
+## 符号
 
-### 符号
-- -- 运算符 17, 18
-- + 运算符 16
-- ++ 运算符 17, 18
-- <script> 标签
+- `--` 运算符 17, 18
+- `+` 运算符 16
+- `++` 运算符 17, 18
+- `<script>` 标签
   - URL 183
-- === 严格相等 25, 26
-- == 弱相等 27
+- `===` 严格相等 25, 26
+- `==` 弱相等 27
 
-### A
+## A
+
 - 敏捷方法 146
 - Amber.js 140
 - 匿名函数
@@ -7230,9 +7069,9 @@ Node 提供了一种异步事件模型，用于用 JavaScript 编写可扩展和
   - 在条件逻辑中 65, 66
   - 在创建列表时 64
   - 在创建对象时 64
-- arguments 参数
+- `arguments` 参数
   - 关于 60, 61
-  - this 参数 61
+  - `this` 参数 61
 - 箭头函数 176-179
 - 数组 86-94
 - asm.js 格式 1
@@ -7240,11 +7079,12 @@ Node 提供了一种异步事件模型，用于用 JavaScript 编写可扩展和
 - 异步事件模型
   - 在浏览器中 202-206
 - 异步模块定义 (AMD) 129
-- 自动分分号插入 (ASI)
+- 自动分号插入 (ASI)
   - 关于 30, 31
   - 引用 30
 
-### B
+## B
+
 - Babel
   - 关于 164
   - URL 164
@@ -7269,7 +7109,8 @@ Node 提供了一种异步事件模型，用于用 JavaScript 编写可扩展和
   - 异步事件模型 202-206
 - 浏览器事件 193, 194
 
-### C
+## C
+
 - 回调地狱 209
 - 回调 69, 206-210
 - 类型转换 28
@@ -7277,15 +7118,13 @@ Node 提供了一种异步事件模型，用于用 JavaScript 编写可扩展和
 - 链式调用，jQuery 方法 191
 - Chrome DevTools 157
 - 经典继承 101
-
-[224]
 - 闭包 66-70
 - 命令行界面 (CLI) 41
 - 注释 6
 - CommonJS 模块 129
-- console.log 156
--常量 7
-- const 关键字 7
+- `console.log` 156
+- 常量 7
+- `const` 关键字 7
 - 内容分发网络 (CDN) 185
 - 控制器 141
 - CPU 剖析 219
@@ -7293,7 +7132,8 @@ Node 提供了一种异步事件模型，用于用 JavaScript 编写可扩展和
   - URL 188
 - curl.js 129
 
-### D
+## D
+
 - date.js
   - URL 16
 - Date 对象 15, 16
@@ -7309,7 +7149,8 @@ Node 提供了一种异步事件模型，用于用 JavaScript 编写可扩展和
   - DOM 元素，访问 182, 183
   - 特定节点，访问 183-190
 
-### E
+## E
+
 - ECMAScript 6 (ES6), 语法变化
   - 关于 56, 165
   - 箭头函数 176-179
@@ -7324,30 +7165,31 @@ Node 提供了一种异步事件模型，用于用 JavaScript 编写可扩展和
   - 剩余运算符 167, 168
   - 展开运算符 167, 168
   - 模板字面量 171, 172
-  - ECMAScript (ES5) 163
-  - EditorConfig 32
-  - Emscripten
+- ECMAScript (ES5) 163
+- EditorConfig 32
+- Emscripten
   - URL 1
-  - endsWith() polyfill
+- `endsWith()` polyfill
   - URL 164
-  - 相等
+- 相等
   - 关于 25
   - 严格相等 25, 26
   - 弱相等 27
-  - Erlang 168
-  - ES6 shim
+- Erlang 168
+- ES6 shim
   - URL 164
-  - ES2015 163
-  - eval() 方法 39
-  - 事件委托 198, 199
-  - EventEmitter 211, 212
-  - 事件对象 199
-  - 精确匹配 77
-  - 显式转换 28
-  - 可扩展标记语言 (XML) 181
-  - 极端编程 147
+- ES2015 163
+- `eval()` 方法 39
+- 事件委托 198, 199
+- EventEmitter 211, 212
+- 事件对象 199
+- 精确匹配 77
+- 显式转换 28
+- 可扩展标记语言 (XML) 181
+- 极限编程 147
 
-### F
+## F
+
 - Facebook React 163
 - 工厂模式 131-133
 - Firebug 4
@@ -7365,33 +7207,37 @@ Node 提供了一种异步事件模型，用于用 JavaScript 编写可扩展和
   - 存数据 49, 50
 - 函数语句 47
 
-### G
-- 四人行 (GOF) 121
+## G
+
+- 四人组 (GOF) 121
 - getter 117-120, 190
 - GitHub 1
 - 全局作用域 51
 - 重力 12
-- 贪婪和懒性限定符 85, 86
+- 贪婪和懒惰限定符 85, 86
 
-### H
+## H
+
 - Handle.js
   - URL 140
 - Hello World 程序 6
 - 提升 57
 - 超文本标记语言 (HTML) 181
 
-### I
+## I
+
 - 立即执行函数表达式 (IIFE) 55, 165
 - 继承 110-116
-- 输入输出 (I/O) 202
-- instanceof 运算符 15
+- 输入/输出 (I/O) 202
+- `instanceof` 运算符 15
 - 实例属性
   - 与原型属性 104-109
 - IntelliJ WebStorm 154
 - io.js 1
 - 迭代器 175
 
-### J
+## J
+
 - Jasmine
   - URL 148, 153
 - Jasmine 包 217
@@ -7404,7 +7250,7 @@ Node 提供了一种异步事件模型，用于用 JavaScript 编写可扩展和
 - JavaScript 调试
   - 关于 154
   - Chrome DevTools 157-161
-  - console.log 和断言 156
+  - `console.log` 和断言 156
   - 运行时异常 155, 156
   - 严格使用 155
   - 语法错误 154
@@ -7418,12 +7264,12 @@ Node 提供了一种异步事件模型，用于用 JavaScript 编写可扩展和
   - 使用 5
 - JSHint 154
   - 关于 41
-  -  42
   - URL 42
 - JSLint 154
 
-### L
-- libio
+## L
+
+- libeio
   - URL 203
 - libev
   - URL 203
@@ -7434,10 +7280,10 @@ Node 提供了一种异步事件模型，用于用 JavaScript 编写可扩展和
 - 逻辑非运算符 20
 - 逻辑或运算符 19
 - 循环 70
-- 基于低级虚拟机 (LLVM)
-  - 项目 1
+- 基于低级虚拟机 (LLVM) 项目 1
 
-### M
+## M
+
 - 操作方法 191, 192
 - map
   - 关于 95, 172
@@ -7448,8 +7294,7 @@ Node 提供了一种异步事件模型，用于用 JavaScript 编写可扩展和
 - Mocha 152
 - 模型 140
 - 模型-视图-控制器 (MVC) 139
-- 模型-视图-演示器 (MVP)
-  - 模式 139-142
+- 模型-视图-演示器 (MVP) 模式 139-142
 - 模型-视图-视图模型 (MVVM) 139-143
 - 模块模式
   - 关于 124-129
@@ -7465,22 +7310,23 @@ Node 提供了一种异步事件模型，用于用 JavaScript 编写可扩展和
   - URL 140
 - MV* 模式 139
 
-### N
+## N
+
 - 命名空间模式 123, 124
 - NaN (不是数字) 9
 - 原生内置
   - URL 117
 - Netscape Navigator 2
 - Node.js 1, 90, 129, 163, 201
-- Node 包管理器 (npm)
-  - 仓库 212
-- 不等于 (!==) 26
+- Node 包管理器 (npm) 仓库 212
+- 不等于 (`!==`) 26
 - npm
   - 关于 215
   - 包，安装 216-218
 - 数字 8-10
 
-### O
+## O
+
 - 对象字面量 170
 - 面向对象编程 (OOP) 99, 100
 - 对象
@@ -7491,7 +7337,8 @@ Node 提供了一种异步事件模型，用于用 JavaScript 编写可扩展和
   - Observer 137
   - Subject 137
 
-### P
+## P
+
 - 模式
   - 关于 121
   - 装饰模式 134-136
@@ -7514,177 +7361,145 @@ Node 提供了一种异步事件模型，用于用 JavaScript 编写可扩展和
   - 关于 103, 104
   - 属性，与原型 104-109
 
-### R
+## R
+
 - 读执行打印循环 (REPL)
   - 关于 4
   - URL 164
 - 正则表达式 (RegEx) 76, 77
 - 重复出现
   - 关于 81-83
-  - 备方案 - 或 84
+  - 备选方案 - 或 84
 - RequireJS
   - URL 130
 - 暴露模块模式 (RMP) 127
 - 路由器 141
 
-### S
-- 方案 2
+## S
 
-
-
-
-
-## [227]
-
-## 作用域 (scoping)
-- 关于 50
-- 块范围 56
-- 函数级范围对比块级范围
-- 范围 52-55
-- 全局范围 51
-- 内联函数表达式 56
-- 局部范围 52
-
-## 语义化版本 (semantic versioning)
-- URL 217
-
-## 集合 (sets) 95, 96, 173
-
-## Setter (setters) 117-120, 190
-
-## 垫层 (shims) 164
-
-## Silverlight 142
-
-## 简单模式 (simple patterns) 77
-
-## Sinon.JS 153
-
-## 宽松模式 (sloppy mode) 39
-
-## 特殊字符 (special characters) 11
-
-## 探针 (Spies) 152
-
-## Stack Overflow
-- URL 9
-
-## 标准通用标记语言 (SGML) 181
-
-## 严格相等 (strict equality) 25, 26
-
-## 严格模式 (strict mode)
-- 关于 39, 40, 155
-- 限制的功能 41
-- 启用 40
-- eval() 函数 41
-- 使用 40
-- 变量，声明 40
-
-## 字符串 (string) 11, 12
-
-## 风格指南 (style guide)
-- 关于 32
-- 括号 32
-- 条件求 36
-- 空行 34
-- 行尾 34
-- eval() 方法 39
-- JSHint 41, 42
-- 换行 32
-- 命名 38
-- 括号 32
-- 引号 34
-- 严格模式 39, 40
-- 类型，转换 35, 36
-- 类型，检查 35
-- 空格 32
-
-## 样式样式 (styling)
-- 考虑 72, 97
-
-## 子类型 (subtypes) 27
+- 作用域 (scoping)
+  - 关于 50
+  - 块范围 56
+  - 函数级范围对比块级范围 52-55
+  - 全局范围 51
+  - 内联函数表达式 56
+  - 局部范围 52
+- 语义化版本 (semantic versioning)
+  - URL 217
+- 集合 (sets) 95, 96, 173
+- Setter (setters) 117-120, 190
+- 垫片 (shims) 164
+- Silverlight 142
+- 简单模式 (simple patterns) 77
+- Sinon.JS 153
+- 宽松模式 (sloppy mode) 39
+- 特殊字符 (special characters) 11
+- 探针 (Spies) 152
+- Stack Overflow
+  - URL 9
+- 标准通用标记语言 (SGML) 181
+- 严格相等 (strict equality) 25, 26
+- 严格模式 (strict mode)
+  - 关于 39, 40, 155
+  - 限制的功能 41
+  - 启用 40
+  - `eval()` 函数 41
+  - 使用 40
+  - 变量，声明 40
+- 字符串 (string) 11, 12
+- 风格指南 (style guide)
+  - 关于 32
+  - 括号 32
+  - 条件求值 36
+  - 空行 34
+  - 行尾 34
+  - `eval()` 方法 39
+  - JSHint 41, 42
+  - 换行 32
+  - 命名 38
+  - 括号 32
+  - 引号 34
+  - 严格模式 39, 40
+  - 类型，转换 35, 36
+  - 类型，检查 35
+  - 空格 32
+- 样式 (styling)
+  - 考虑 72, 97
+- 子类型 (subtypes) 27
 
 ## T
-## 标签模板字符串 (tagged template string) 172
-## 标签 (tags) 27
-## 模板字面量 (template literals) 171, 172
 
-## 测试驱动开发 (TDD) 147
-
-## TestPyramid
-- URL 147
-
-## this 参数 (this parameter)
-- 调用，作为构造函数时 63
-- 调用，作为函数时 61
-- 调用，作为方法时 61-63
-- 调用，使用 call() 方法 63
-
-## 时间线视图 (Timeline view) 220, 221
-
-## 计时器 (timers) 69, 210
-
-## Timezone.js
-- URL 16
-
-## 工具命令语言 (TCL) 2
-
-## 译译器 (transpilers) 164
-
-## 遍历方法 (traversal methods) 191, 192
-
-## typeof 运算符 15
-
-## 类型 (types) 27-30
+- 标签模板字符串 (tagged template string) 172
+- 标签 (tags) 27
+- 模板字面量 (template literals) 171, 172
+- 测试驱动开发 (TDD) 147
+- TestPyramid
+  - URL 147
+- `this` 参数 (this parameter)
+  - 调用，作为构造函数时 63
+  - 调用，作为函数时 61
+  - 调用，作为方法时 61-63
+  - 调用，使用 `call()` 方法 63
+- 时间线视图 (Timeline view) 220, 221
+- 计时器 (timers) 69, 210
+- Timezone.js
+  - URL 16
+- 工具命令语言 (TCL) 2
+- 转译器 (transpilers) 164
+- 遍历方法 (traversal methods) 191, 192
+- `typeof` 运算符 15
+- 类型 (types) 27-30
 
 ## U
-## 未定义值 (undefined values) 13
 
-## Underscore.js
-- 关于 119, 134
-- URL 90
-
-## 测试 (unit testing)
-- 关于 146
-- 行为驱动开发 (BDD) 147-152
-- 测试驱动开发 (TDD) 147
+- 未定义值 (undefined values) 13
+- Underscore.js
+  - 关于 119, 134
+  - URL 90
+- 测试 (unit testing)
+  - 关于 146
+  - 行为驱动开发 (BDD) 147-152
+  - 测试驱动开发 (TDD) 147
 
 ## V
-## V8 201
-## 增值税 (VAT) 9
 
-## 变量 (variables) 7
-## var 关键字 7
-## 视图 (views) 140, 141
-
-## [228]
+- V8 201
+- 增值税 (VAT) 9
+- 变量 (variables) 7
+- `var` 关键字 7
+- 视图 (views) 140, 141
 
 ## W
-## 瀑布图 (waterfall graph) 220
-## 相等 (weak equality) 27
-## WeakMap 172-174
-## WeakSet 172
-## Windows 呈现框架 (WPF) 142
-## 世界维网联盟 (W3C) 195
 
-## 感谢购买
-## 精通 JavaScript (Mastering JavaScript)
+- 瀑布图 (waterfall graph) 220
+- 弱相等 (weak equality) 27
+- WeakMap 172-174
+- WeakSet 172
+- Windows 呈现框架 (WPF) 142
+- 万维网联盟 (W3C) 195
 
-## 关于 Packt 出版社
-Packt（读作 "packed”）于 2004 年 4 月出版了第一本书 *Mastering phpMyAdmin for Effective MySQL Management*，随后继续专注于出版针对特定技术和解决方案的高度聚焦书籍。
+# 感谢购买
+
+# 精通 JavaScript (Mastering JavaScript)
+
+# 关于 Packt 出版社
+
+Packt（读作 "packed"）于 2004 年 4 月出版了第一本书 *Mastering phpMyAdmin for Effective MySQL Management*，随后继续专注于出版针对特定技术和解决方案的高度聚焦书籍。
 
 我们的书籍和出版物分享了其他 IT 专业人士在适应和定制当今系统、应用程序和框架方面的经验。我们的基于解决方案的书为您提供了知识和能力，让您自定义正在使用的软件和技术以完成工作。与您过去看到的 IT 书相比，Packt 的书籍更具体，不那么泛。我们独特的业务模式使我们能够为您提供更聚焦的信息，让您获得更多需要知道的内容，减少您不需要的内容。
 
 Packt 是一家现代而独特的出版公司，专注于为开发者、管理员和新手社区制作高质量、前沿书籍。欲了解更多信息，请访问我们的网站 www.packtpub.com。
 
-## 关于 Packt 开源
+# 关于 Packt 开源
+
 2010 年，Packt 推出了两个新品牌：Packt Open Source 和 Packt Enterprise，以继续其对专业化的关注。本书是 Packt Open Source 品牌的一部分，该品牌出版基于开源许可构建的软件书籍，并为高级开发人员到初级 Web 设计师的任何人提供信息。开源品牌还运行 Packt 的开源版税计划，通过该计划，Packt 会为销售相关书籍的每个开源项目支付版税。
 
-## 为 Packt 写作
+# 为 Packt 写作
+
 我们欢迎所有对写作感兴趣的人的咨询。书籍建议书应发送至 author@packtpub.com。如果您的书籍想法仍处于早期阶段，并且希望在编写正式书籍建议书之前先进行讨论，请联系我们；我们的约稿编辑将与您联系。我们不仅寻找已出版的作者；如果您有强大的技术技能但没有写作经验，我们丰富的编辑可以帮助您发展职业生涯，或者仅仅获得额外的奖励。
 
-## HTML5 Boilerplate Web 开发
+# HTML5 Boilerplate Web 开发
+
 - ISBN: 978-184951-8505
 - 页数：174 页
 - 使用一套健壮的模板精通 Web 开发。
@@ -7692,7 +7507,8 @@ Packt 是一家现代而独特的出版公司，专注于为开发者、管理�
 - 学习如何优化您的工作流并设置性能优化的服务器。
 - 学习跨浏览器提供相应的样式和脚本。
 
-## 精通 JavaScript 设计模式 (Mastering JavaScript Design Patterns)
+# 精通 JavaScript 设计模式 (Mastering JavaScript Design Patterns)
+
 - ISBN: 978-183987986
 - 页数：290 页
 - 发现如何使用设计模式创建可靠且可维护的应用程序。
@@ -7700,15 +7516,17 @@ Packt 是一家现代而独特的出版公司，专注于为开发者、管理�
 - 发现经典及高级设计模式的健壮 JavaScript 实现。
 - 充满了易于遵循的示例，用于创建重复代码和可扩展设计。
 
-## 学习 JavaScriptMVC (Learning JavaScriptMVC)
+# 学习 JavaScriptMVC (Learning JavaScriptMVC)
+
 - ISBN: 978-1782160205
 - 页数：124 页
 - 学习使用 JavaScriptMVC 构建结构良好的 Web 应用程序。
 - 通过三种方式安装 JavaScriptMVC，包括使用 Vagrant 和 Chef 安装。
-- 代码 JavaScript 代码并生成可搜索的 API 文档。
-- 测试您的代码库和应用程序，并学习如何将测试与持续集成工具 Jenkins。
+- 编写 JavaScript 代码并生成可搜索的 API 文档。
+- 测试您的代码库和应用程序，并学习如何将测试与持续集成工具 Jenkins 集成。
 
-## 精通 JavaScript 高性能 (Mastering JavaScript High Performance)
+# 精通 JavaScript 高性能 (Mastering JavaScript High Performance)
+
 - ISBN: 978-1784397296
 - 页数：208 页
 - 精通使用 JavaScript 构建、部署和优化更快的 Web 应用。
@@ -7717,4 +7535,3 @@ Packt 是一家现代而独特的出版公司，专注于为开发者、管理�
 - 充满真实世界的逐步教程。
 
 请查看 **www.PacktPub.com** 以获取有关我们书目的信息。
-

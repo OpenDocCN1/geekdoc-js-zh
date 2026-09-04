@@ -1,3 +1,4 @@
+
 # 对象
 
 ## 对象使用和属性
@@ -56,12 +57,12 @@ foo.1234; // SyntaxError
 foo['1234']; // works 
 ```
 
-两种语法是等价的，但是中括号操作符在下面两种情况下依然有效
+两种语法是等价的，但是中括号操作符在下面两种情况下依然有效：
 
 *   动态设置属性
-*   属性名不是一个有效的变量名（**[译者注](http://cnblogs.com/sanshi/)：**比如属性名中包含空格，或者属性名是 JS 的关键词）
+*   属性名不是一个有效的变量名（**译者注：**比如属性名中包含空格，或者属性名是 JS 的关键词）
 
-**[译者注](http://cnblogs.com/sanshi/)：**在 [JSLint](http://www.jslint.com/) 语法检测工具中，点操作符是推荐做法。
+**译者注：**在 [JSLint](http://www.jslint.com/) 语法检测工具中，点操作符是推荐做法。
 
 ### 删除属性
 
@@ -175,7 +176,7 @@ Foo.prototype = 1; // 无效
 
 扩展内置类型的**唯一**理由是为了和新的 JavaScript 保持一致，比如 [`Array.forEach`](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array/forEach)。
 
-**[译者注](http://cnblogs.com/sanshi/)：**这是编程领域常用的一种方式，称之为 [Backport](http://en.wikipedia.org/wiki/Backport)，也就是将新的补丁添加到老版本中。
+**译者注：**这是编程领域常用的一种方式，称之为 [Backport](http://en.wikipedia.org/wiki/Backport)，也就是将新的补丁添加到老版本中。
 
 ### 总结
 

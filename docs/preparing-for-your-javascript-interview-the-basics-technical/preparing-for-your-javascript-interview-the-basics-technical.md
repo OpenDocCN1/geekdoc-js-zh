@@ -1,9 +1,5 @@
+
 # JavaScript 面试准备：基础知识：技术问题与答案 (你的技术面试)
-
-
-
-
-
 
 ## 引言
 
@@ -19,8 +15,6 @@ JavaScript 的增长给新开发者带来了挑战。一方面，入门门槛很
 
 祝你好运！
 
-
-
 ## 通用练习
 
 本节重点关注原生 JavaScript 的基础。
@@ -33,28 +27,29 @@ JavaScript 既是客户端也是服务器端的脚本语言，可以插入 HTML 
 
 ## 问题：JavaScript 中的两种基本数据类型组是什么？
 
-- 原生类型：string（字符串）、number（数字）、boolean（布尔）、null、undefined
-- 复合类型：object（对象，包括函数）
+- 原生类型：`string`（字符串）、`number`（数字）、`boolean`（布尔）、`null`、`undefined`
+
+- 复合类型：`object`（对象，包括函数）
 
 ## 问题：JavaScript 有哪些类型？
 
-JavaScript 中只有**六** 种类型：Object（对象）、Number（数字）、String（字符串）、Boolean（布尔）、Null（空）和 Undefined（未定义）。
+JavaScript 中只有**六** 种类型：`Object`（对象）、`Number`（数字）、`String`（字符串）、`Boolean`（布尔）、`Null`（空）和 `Undefined`（未定义）。
 
 对象包括数组、函数和普通对象。
 
-数字可以是整数或浮点数，或者是特殊值 NaN 和 Infinity。
+数字可以是整数或浮点数，或者是特殊值 `NaN` 和 `Infinity`。
 
 字符串包括空字符串。
 
 ## 问题：哪家公司开发了 JavaScript？
 
-Netscape（网景）是开发 JavaScript 的软件公司。
+`Netscape`（网景）是开发 JavaScript 的软件公司。
 
 ## 问题：什么是未声明（undeclared）和未定义（undefined）变量？
 
 未声明变量是指那些在程序中不存在且未声明的变量。如果程序尝试读取未声明变量的值，就会遇到运行时错误。
 
-未定义变量是指在程序中已声明但未赋予任何值的变量。如果程序尝试读取未定义变量的值，将返回一个未定义值（undefined）。
+未定义变量是指在程序中已声明但未赋予任何值的变量。如果程序尝试读取未定义变量的值，将返回一个未定义值（`undefined`）。
 
 ## 问题：什么是全局变量？
 
@@ -108,29 +103,33 @@ if(element) {
 
 ## 问题：JavaScript 中的 NULL 代表什么？
 
-NULL 值用于表示没有值或没有对象。在 API 中，当期望获得对象时通常会检索 null。
+`NULL` 值用于表示没有值或没有对象。在 API 中，当期望获得对象时通常会检索 null。
 
 ## 问题：JavaScript 中的 `undefined` 值代表什么？
 
-**Undefined** 是 JavaScript 的原生类型之一。未赋值的变量类型为 undefined。如果一个方法语句尝试使用它，它也可能是 undefined。最后，如果函数没有返回任何值，则返回 undefined。
+`Undefined` 是 JavaScript 的原生类型之一。未赋值的变量类型为 undefined。如果一个方法语句尝试使用它，它也可能是 undefined。最后，如果函数没有返回任何值，则返回 undefined。
 
 ## 问题：JavaScript 中所有的循环结构有哪些？
 
 回答：在 JavaScript 中，我们有以下循环语句：
 
 | | 描述 |
+
 | :--- | :--- |
-| while | 只要条件为真就循环执行代码块 |
-| do...while | 循环一次代码块，然后在条件为真时重复循环 |
-| for | 运行指定次数的语句 |
+
+| `while` | 只要条件为真就循环执行代码块 |
+
+| `do...while` | 循环一次代码块，然后在条件为真时重复�循环 |
+
+| `for` | 运行指定次数的语句 |
 
 ## 问题：什么是 `break` 语句？
 
-**break** 语句用于退出当前循环。
+`break` 语句用于退出当前循环。
 
 ## 问题：什么是 `continue` 语句？
 
-**continue** 语句继续执行循环的下一次语句。
+`continue` 语句继续执行循环的下一次语句。
 
 ## 问题：解释如何检测客户端机器的操作系统？
 
@@ -144,53 +143,71 @@ NULL 值用于表示没有值或没有对象。在 API 中，当期望获得对�
 
 JavaScript 使用反斜杠 `\` 作为转义字符，用于：
 
-- \' 单引号
-- \" 双引号
-- \ 反斜杠
-- \n 换行
-- \r 回车
-- \t 制表符
-- \b 退键
-- \f 进页
-- \v 垂直制表
-- \0 空字符
+- `\'` 单引号
+
+- `\"` 双引号
+
+- `\\` 反斜杠
+
+- `\n` 换行
+
+- `\r` 回车
+
+- `\t` 制表符
+
+- `\b` 退键
+
+- `\f` 进页
+
+- `\v` 垂直制表
+
+- `\0` 空字符
 
 ## 问题：解释 JavaScript 中的计时器是如何工作的。
 
 JavaScript 代码通常是同步执行的。计时器允许我们延迟任意指令的执行：
 
-### setTimeout()
+### `setTimeout()`
+
 如果你希望在指定的延迟后调用**一次**函数，通常使用 `setTimeout()` 函数。
 
-### setInterval()
+### `setInterval()`
+
 `setInterval()` 函数通常用于为执行多次的函数设置延迟。
 
-### setImmediate()
+### `setImmediate()`
+
 在 IE 中，可以使用 `setImmediate()` 函数代替 `setTimeout(fn, 0)` 方法来执行耗时操作。
-
-
-
-
 
 ## 问题：typeof 运算符的用途是什么？
 
-'typeof' 是一个运算符，用于返回变量类型的字符串描述。
+`'typeof'` 是一个运算符，用于返回变量类型的字符串描述。
 
 | 类型 | 结果 |
+
 | --- | --- |
-| Undefined | 'undefined' |
-| Null | 'object'（见下文） |
-| Boolean | 'boolean' |
-| Number | 'number' |
-| String | 'string' |
-| Symbol (ECMAScript 2015 新增) | 'symbol' |
+
+| `Undefined` | `'undefined'` |
+
+| `Null` | `'object'`（见下文） |
+
+| `Boolean` | `'boolean'` |
+
+| `Number` | `'number'` |
+
+| `String` | `'string'` |
+
+| `Symbol` (ECMAScript 2015 新增) | `'symbol'` |
+
 | 主机对象（JS 环境提供） | 取决于实现 |
-| 函数对象（在 ECMA-262 术语中实现 [[Call]]） | 'function' |
-| 其他任何对象 | 'object' |
+
+| 函数对象（在 ECMA-262 术语中实现 [[Call]]） | `'function'` |
+
+| 其他任何对象 | `'object'` |
 
 ## 问题：哪些关键字用于处理异常？
 
-try/catch/finally 语句用于处理代码块中可能发生的部分或全部错误，同时继续执行代码。
+`try`/`catch`/`finally` 语句用于处理代码块中可能发生的部分或全部错误，同时继续执行代码。
 
 `try` 语句允许你定义一个代码块，在执行时对其进行错误测试。
 
@@ -223,7 +240,7 @@ function Employee(first, last, ssn, salary) {
 }
 ```
 
-这创建了一个名为 Employee 的对象的通用蓝图。要获取 Employee 的实例，你需要调用：
+这创建了一个名为 `Employee` 的对象的通用蓝图。要获取 `Employee` 的实例，你需要调用：
 
 ```javascript
 var john = new Employee("John", "Smith", "050529994", 72534);
@@ -236,6 +253,7 @@ var john = new Employee("John", "Smith", "050529994", 72534);
 ## 问题：JavaScript 中的 shift() 方法是什么？
 
 `shift()` 方法类似于 `push()`，但它作用于数组的开头。
+
 该方法用于在数组的开头前添加一个或多个元素。
 
 ## 问题：解释 JavaScript 中的 pop() 方法？
@@ -246,31 +264,31 @@ var john = new Employee("John", "Smith", "050529994", 72534);
 
 从 ECMAScript 2016 开始，JavaScript 中除了通用的 `Error` 对象外，还有七种核心错误构造函数：
 
-### EvalError
+### `EvalError`
 
 在执行全局函数 `eval()` 期间发生的错误。
 
-### InternalError
+### `InternalError`
 
 当 JavaScript 引擎抛出内部错误时发生的错误，例如“递归过多”。
 
-### RangeError
+### `RangeError`
 
 当数值变量或参数超出有效范围时发生的错误。
 
-### ReferenceError
+### `ReferenceError`
 
 当对无效引用进行解引用时发生的错误。
 
-### SyntaxError
+### `SyntaxError`
 
 在 `eval()` 中解析代码时发生的语法错误。
 
-### TypeError
+### `TypeError`
 
 当变量或参数不是有效类型时发生的错误。
 
-### URIError
+### `URIError`
 
 当 `encodeURI()` 或 `decodeURI()` 接收到无效参数时发生的错误。
 
@@ -278,11 +296,12 @@ var john = new Employee("John", "Smith", "050529994", 72534);
 
 Cookies 是存储在计算机中的小型文本文件。Cookies 在用户访问网站时创建，并用于存储网站可能需要的用户信息，例如购物车详情。
 
-JavaScript 可以通过 **document.cookie** 属性创建、读取和删除 cookie。
+JavaScript 可以通过 `document.cookie` 属性创建、读取和删除 cookie。
 
 ## 问题：JavaScript 中的“严格（Strict）”模式是什么？如何启用？
 
 答案：
+
 ECMAScript 5 的严格模式是一种选择使用受限 JavaScript 变体的方法。严格模式刻意与普通的 JavaScript 代码有所不同。
 
 严格模式对普通的 JavaScript 语义进行了几处更改。首先，严格模式通过将某些 JavaScript 静默错误改为强制抛出错误。其次，严格模式允许 JavaScript 引擎执行以前无法实现的某些优化。第三，严格模式禁止了在未来 ECMAScript 版本中可能定义的语法。
@@ -313,7 +332,8 @@ function sayHi(firstName, lastName) {
 属性是与 JavaScript 对象关联的值。
 
 假设一个对象已经存在，你可以像这样直接添加新属性：
-myObject.myProperty = 'Property Value';
+
+`myObject.myProperty = 'Property Value';`
 
 ## 问题：如何向数组追加一个值？
 
@@ -324,8 +344,11 @@ myObject.myProperty = 'Property Value';
 但为了得到更好的答案，不要忘记所有可用的数组方法！
 
 - 1. 使用 `push()`
+
 - 2. 使用 `unshift()` 在数组开头添加
+
 - 3. 使用 `splice()` 在数组中插入
+
 - 4. 使用 `concat()` 合并
 
 ## 问题：解释 for-in 循环？
@@ -352,10 +375,14 @@ for (item in myObject) {
 例如，给定 x=2 和 y=6
 
 | 运算符 | 名称 | 示例 |
+
 | --- | --- | --- |
-| && | 与 | (x < 3 && y > 1) 为真 |
-| || | 或 | (x == 5 || y == 5) 为假 |
-| ! | 非 | !(x == y) 为真 |
+
+| `&&` | 与 | (x < 3 && y > 1) 为真 |
+
+| `||` | 或 | (x == 5 || y == 5) 为假 |
+
+| `!` | 非 | !(x == y) 为真 |
 
 # JavaScript 和元素
 
@@ -392,7 +419,8 @@ document.form[0].submit();
 ## 问题：在 JavaScript 中使用 innerHTML 的缺点是什么？
 
 不当处理处理 `innerHTML` 属性可能会在包含标记为延迟执行的脚本时允许脚本注入：
-<script defer>...</script>
+
+`<script defer>...</script>`
 
 设置 `innerHTML` 会破坏绑定了事件处理程序的现有 HTML 元素，在某些浏览器中可能会内存泄漏。
 
@@ -407,11 +435,13 @@ JavaScript 有三种弹出框：警告框（Alert）、确认框（Confirm）和
 ### 警告框（Alert）
 
 警告框通常用于确保信息传递给用户。
+
 当警告框弹出时，用户必须点击“确定”才能继续。
 
 ### 确认框（Confirm）
 
 确认框通常用于让用户验证或接受某些内容。
+
 当确认框弹出时，用户必须点击“确定”或“取消”才能继续。
 
 ### 提示框（Prompt）
@@ -420,18 +450,15 @@ JavaScript 有三种弹出框：警告框（Alert）、确认框（Confirm）和
 
 当提示框弹出时，用户在输入值后必须点击“确定”或“取消”才能继续。
 
-
-
-
-
 ## 问题：blur 函数有什么用处？
 
-blur 函数用于移除指定对象的焦点。
+`blur` 函数用于移除指定对象的焦点。
 
 ## 问题：如何获取 CheckBox 的状态？
 
 使用你输入字段的 ID，可以检查以下内容的值：
-document.getElementById('my-checkbox').checked
+
+`document.getElementById('my-checkbox').checked`
 
 如果为 True，则复选框被勾选状态。
 
@@ -444,6 +471,7 @@ document.getElementById('my-checkbox').checked
 ## 问题：在 JavaScript 中是如何利用事件处理程序的？
 
 答案：
+
 事件是用户活动产生的动作，例如点击链接或填写表单。事件监听器或处理器是计算机程序中的一种过程或函数，它负责等待事件发生，然后对该事件执行相应的操作。
 
 # 比较与对比
@@ -472,11 +500,12 @@ JavaScript 更快。JavaScript 是一种客户端语言，因此不需要 Web �
 
 “==” 仅检查值的相等性。
 
-“=== ” 是更严格的相等性测试，如果两个变量的值或类型不同，则返回 false。
+“===” 是更严格的相等性测试，如果两个变量的值或类型不同，则返回 false。
 
 ## 问题：警报框（alert box）和确认框（confirmation box）有什么区别？
 
 警报框只显示一个按钮，即 OK 按钮。
+
 确认框显示两个按钮，即 OK 按钮和取消按钮。
 
 ## 问题：解释 window.onload 与 onDocumentReady 的区别？
@@ -488,6 +517,7 @@ ready 在 DOM 准备好交互且其元素可以被你的代码进行操作时触
 # Bonus题
 
 这些狡猾的问题迫使你对 JavaScript 了如指掌。
+
 注意陷阱！
 
 ## 问题：可以将 JavaScript 代码拆分成几行吗？
@@ -500,13 +530,12 @@ ready 在 DOM 准备好交互且其元素可以被你的代码进行操作时触
 
 ## 问题：如何在 JavaScript 中将任何基数的字符串转换为整数？
 
-parseInt() 函数用于在不同基数之间转换数字。parseInt() 接受要转换的字符串作为第一个参数，第二个参数是给定字符串的基数。
+`parseInt()` 函数用于在不同基数之间转换数字。`parseInt()` 接受要转换的字符串作为第一个参数，第二个参数是给定字符串的基数。
 
 ## 问题：JavaScript区分大小写吗？举个例子？
 
-是的，JavaScript 是区分大小写的。例如，函数 parseInt() 与函数 ParseInt() 不同。
+是的，JavaScript 是区分大小写的。例如，函数 `parseInt()` 与函数 `ParseInt()` 不同。
 
 ## 问题：.call() 和 .apply() 有什么区别？
 
-.call() 和 .apply() 函数在用法非常相似，除了 apply() 允许你以数组的形式调用函数；.call() 要求显式列出参数。换句话说，当你不知道参数的数量时使用 apply()。
-
+`.call()` 和 `.apply()` 函数在用法非常相似，除了 `apply()` 允许你以数组的形式调用函数；`.call()` 要求显式列出参数。换句话说，当你不知道参数的数量时使用 `apply()`。

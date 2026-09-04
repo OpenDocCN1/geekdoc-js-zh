@@ -1,46 +1,48 @@
+
+
 # 三、2D 转换、旋转、伸缩、矩阵
 
 ## WebGL 2D 图像转换
 
 在学习 3D 相关知识之前，请首先看看 2D 的知识。请保持耐心。这篇文章某些人看起来可能非常简单，但是我们将要讲解的知识是建立在前几篇的文章的基础之上。如果你没有阅读过，我建议你至少阅读第一章之后再回到这里继续学习。
 
-Translation 指的是一些奇特的数学名称，它的基本意思是“移动”某物。它同样适用于将一个句子从英文“移动”成为日语这一说法，但是此处我们谈论的是几何中的移动。通过使用以 [the first post](http://webglfundamentals.org/webgl/lessons/webgl-fundamentals.html) 结尾的代码，你可以仅仅通过修改 setRectangle 距离右边的的值来使矩形移动。如下是一个基于我们[初始示例](http://webglfundamentals.org/webgl/lessons/webgl-fundamentals.html)的代码：
+Translation 指的是一些奇特的数学名称，它的基本意思是“移动”某物。它同样适用于将一个句子从英文“移动”成为日语这一说法，但是此处我们谈论的是几何中的移动。通过使用以[the first post](http://webglfundamentals.org/webgl/lessons/webgl-fundamentals.html)结尾的代码，你可以仅仅通过修改`setRectangle`距离右边的的值来使矩形移动。如下是一个基于我们[初始示例](http://webglfundamentals.org/webgl/lessons/webgl-fundamentals.html)的代码：
 
 ```js
-  // First lets make some variables 
-  // to hold the translation of the rectangle
-  var translation = [0, 0];
+// First lets make some variables
+// to hold the translation of the rectangle
+var translation = [0, 0];
 
-  // then let's make a function to
-  // re-draw everything. We can call this
-  // function after we update the translation.
+// then let's make a function to
+// re-draw everything. We can call this
+// function after we update the translation.
 
-  // Draw a the scene.
-  function drawScene() {
-    // Clear the canvas.
-    gl.clear(gl.COLOR_BUFFER_BIT);
+// Draw a the scene.
+function drawScene() {
+  // Clear the canvas.
+  gl.clear(gl.COLOR_BUFFER_BIT);
 
-    // Setup a rectangle
-    setRectangle(gl, translation[0], translation[1], width, height);
+  // Setup a rectangle
+  setRectangle(gl, translation[0], translation[1], width, height);
 
-    // Draw the rectangle.
-    gl.drawArrays(gl.TRIANGLES, 0, 6);
-  }
+  // Draw the rectangle.
+  gl.drawArrays(gl.TRIANGLES, 0, 6);
+}
 ```
 
-在上面的例子中，我在界面中放置了两个可滑动栏，你可以通过滑动按钮来修改 translation[0] 和 translation[1] 的值，而且在这个两个值发生修改时调用 drawScene 函数对界面进行更新。拖动滑动条对矩阵进行移动。
+在上面的例子中，我在界面中放置了两个可滑动栏，你可以通过滑动按钮来修改`translation[0]`和`translation[1]`的值，而且在这两个值发生修改时调用`drawScene`函数对界面进行更新。拖动滑动条对矩阵进行移动。
 
 [`webglfundamentals.org/webgl/webgl-2d-rectangle-translate.html`](http://webglfundamentals.org/webgl/webgl-2d-rectangle-translate.html)
 
 到此处你已经觉得很不错。然而，现在假设我们想要利用相同的操作，但是处理更复杂的图形，那么该如何实现了。
 
-假设我们想要画一个包含 6 个三角形的 'F' 形状，如下所示：
+假设我们想要画一个包含 6 个三角形的 `F` 形状，如下所示：
 
 ![F](img/webgl-2d-translation-F.png)
 
 **图片 3.1** F
 
-如下是我们将要使用的改变 setRectangle 值的代码：
+如下是我们将要使用的改变`setRectangle`值的代码：
 
 ```js
 // Fill the buffer with the values that define a letter 'F'.
@@ -84,7 +86,7 @@ function setGeometry(gl, x, y) {
 
 如下是渲染器部分：
 
-```js
+```html
 <script id="2d-vertex-shader" type="x-shader/x-vertex">
 attribute vec2 a_position;
 
@@ -97,7 +99,7 @@ void main() {
 
    // convert the rectangle from pixels to 0.0 to 1.0
    vec2 zeroToOne = position / u_resolution;
-   ... 
+   ...
 ```
 
 接着我们将会稍微重构下代码。我们仅仅需要设置几何图形一次。
@@ -135,30 +137,30 @@ function setGeometry(gl) {
 }
 ```
 
-在实现我们想要的移动之前需要更新下 `u_translation` 变量的值。
+在实现我们想要的移动之前需要更新下`u_translation`变量的值。
 
 ```js
-  ...
-  var translationLocation = gl.getUniformLocation(
-             program, "u_translation");
-  ...
-  // Set Geometry.
-  setGeometry(gl);
-  ..
-  // Draw scene.
-  function drawScene() {
-    // Clear the canvas.
-    gl.clear(gl.COLOR_BUFFER_BIT);
+...
+var translationLocation = gl.getUniformLocation(
+           program, "u_translation");
+...
+// Set Geometry.
+setGeometry(gl);
+..
+// Draw scene.
+function drawScene() {
+  // Clear the canvas.
+  gl.clear(gl.COLOR_BUFFER_BIT);
 
-    // Set the translation.
-    gl.uniform2fv(translationLocation, translation);
+  // Set the translation.
+  gl.uniform2fv(translationLocation, translation);
 
-    // Draw the rectangle.
-    gl.drawArrays(gl.TRIANGLES, 0, 18);
-  }
+  // Draw the rectangle.
+  gl.drawArrays(gl.TRIANGLES, 0, 18);
+}
 ```
 
-注意 `setGeometry` 只是被调用一次。在 drawScene 中不需要。
+注意`setGeometry`只是被调用一次。在`drawScene`中不需要。
 
 如下是一个示例。同样，你可以通过拖动滑动条来更新图形的位置。
 
@@ -168,7 +170,7 @@ function setGeometry(gl) {
 
 ## WebGL 2D 图像旋转
 
-首先我要承认下我不是很清楚如何讲解这个让它看起来更容易理解，但是，不管怎么样，我想尽力尝试下。首先，我想介绍下什么叫做“单位圆”。你如果还记得高中数学中(不要睡着了！)一个圆又一个半径。半径指的是从圆心到圆的圆边的距离。单位圆指的是它的半径是 1.0。
+首先我要承认下我不是很清楚如何讲解这个让它看起来更容易理解，但是，不管怎么样，我想尽力尝试下。首先，我想介绍下什么叫做“单位圆”。你如果还记得高中数学中（不要睡着了！）一个圆又一个半径。半径指的是从圆心到圆的圆边的距离。单位圆指的是它的半径是 1.0。
 
 如下是一个单位圆：
 
@@ -176,13 +178,13 @@ function setGeometry(gl) {
 
 打开上面的链接之后，你可以拖动圆环上面的小圆，接着 X 和 Y 的值也会随之发生变化。这个左边值表示的是圆环上的点。在圆上的最高点处，Y 为 1 和 X 为 0。在最右的位置时 X 为 1 和 Y 为 0。
 
-如果你还记得基础的三年级数学，把某个数乘以 1 以后结果仍然是该数。那么 123*1 = 123。相当基础对吧？那么半径为 1.0 的单位圆也是一种形式的 1。它是一种旋转的 1。因此你可以将这个单位圆与某物相乘，它执行的操作和乘以 1 类似，除了一些奇异的事情发生改变这种方式。
+如果你还记得基础的三年级数学，把某个数乘以 1 以后结果仍然是该数。那么`123 * 1 = 123`。相当基础对吧？那么半径为 1.0 的单位圆也是一种形式的 1。它是一种旋转的 1。因此你可以将这个单位圆与某物相乘，它执行的操作和乘以 1 类似，除了一些奇异的事情发生改变这种方式。
 
-我们将从单位圆上得到任何点的 X 和 Y 值，接着将他们乘以[上一节示例](http://webglfundamentals.org/webgl/lessons/webgl-2d-translation.html)中的几何图形。
+我们将从单位圆上得到任何点的 X 和 Y 值，接着将它们乘以[上一节示例](http://webglfundamentals.org/webgl/lessons/webgl-2d-translation.html)中的几何图形。
 
 如下是更新渲染器：
 
-```js
+```html
 <script id="2d-vertex-shader" type="x-shader/x-vertex">
 attribute vec2 a_position;
 
@@ -193,35 +195,35 @@ uniform vec2 u_rotation;
 void main() {
   // Rotate the position
   vec2 rotatedPosition = vec2(
- a_position.x * u_rotation.y + a_position.y * u_rotation.x,
- a_position.y * u_rotation.y - a_position.x * u_rotation.x);
+    a_position.x * u_rotation.y + a_position.y * u_rotation.x,
+    a_position.y * u_rotation.y - a_position.x * u_rotation.x);
 
   // Add in the translation.
-  vec2 position = rotatedPosition + u_translation; 
+  vec2 position = rotatedPosition + u_translation;
 ```
 
 接着修改 JavaScript 代码，这样我们就可以传递上面的两个参数：
 
 ```js
 ...
-  var rotationLocation = gl.getUniformLocation(program, "u_rotation");
-  ...
-  var rotation = [0, 1];
-  ..
-  // Draw the scene.
-  function drawScene() {
-    // Clear the canvas.
-    gl.clear(gl.COLOR_BUFFER_BIT);
+var rotationLocation = gl.getUniformLocation(program, "u_rotation");
+...
+var rotation = [0, 1];
+..
+// Draw the scene.
+function drawScene() {
+  // Clear the canvas.
+  gl.clear(gl.COLOR_BUFFER_BIT);
 
-    // Set the translation.
-    gl.uniform2fv(translationLocation, translation);
+  // Set the translation.
+  gl.uniform2fv(translationLocation, translation);
 
-    // Set the rotation.
-    gl.uniform2fv(rotationLocation, rotation);
+  // Set the rotation.
+  gl.uniform2fv(rotationLocation, rotation);
 
-    // Draw the rectangle.
-    gl.drawArrays(gl.TRIANGLES, 0, 18);
-  }
+  // Draw the rectangle.
+  gl.drawArrays(gl.TRIANGLES, 0, 18);
+}
 ```
 
 如下是代码运行的结果。拖动单位圆上的小环使图形进行旋转或者拖动滑动条使图形进行移动。
@@ -235,7 +237,7 @@ rotatedX = a_position.x * u_rotation.y + a_position.y * u_rotation.x;
 rotatedY = a_position.y * u_rotation.y - a_position.x * u_rotation.x;
 ```
 
-假设你有一个矩形，并且你想旋转它。在你把它旋转到右上角 (3.0，9.0) 这个位置之前。我们先在单位圆中选择一个从 12 点钟的位置顺时针偏移 30 度的点。
+假设你有一个矩形，并且你想旋转它。在你把它旋转到右上角（3.0，9.0）这个位置之前。我们先在单位圆中选择一个从 12 点钟的位置顺时针偏移 30 度的点。
 
 ![30 degrees clockwise from 12 o'clock](img/clockwise_30_degree.png)
 
@@ -245,7 +247,7 @@ rotatedY = a_position.y * u_rotation.y - a_position.x * u_rotation.x;
 
 ```js
 3.0 * 0.87 + 9.0 * 0.50 = 7.1
-9.0 * 0.87 - 3.0 * 0.50 = 6.3 
+9.0 * 0.87 - 3.0 * 0.50 = 6.3
 ```
 
 那刚刚好是我们需要的位置：
@@ -260,11 +262,11 @@ rotatedY = a_position.y * u_rotation.y - a_position.x * u_rotation.x;
 
 **图片 3.4** rotate 60 degrees
 
-圆上面的位置的坐标是 0.87 和 0.50:
+圆上面的位置的坐标是 0.87 和 0.50：
 
 ```js
- 3.0 * 0.50 + 9.0 * 0.87 = 9.3
- 9.0 * 0.50 - 3.0 * 0.87 = 1.9 
+3.0 * 0.50 + 9.0 * 0.87 = 9.3
+9.0 * 0.50 - 3.0 * 0.87 = 1.9
 ```
 
 你可以发现当我们顺时针向右旋转那个点时，X 的值变得更大而 Y 的值在变小。如果接着旋转超过 90 度，X 的值将再次变小而 Y 的值将变得更大。这个形式就能够达到旋转的目的。
@@ -280,15 +282,15 @@ function printSineAndCosineForAnyAngle(angleInDegrees) {
 }
 ```
 
-如果你把上面的代码复制粘贴到 JavaScript 控制台中，接着输入 `printSineAndCosineForAnyAngle(30)`，接着你会看到输出 `s = 0.49 c = 0.87`(注意：这个数字是近似值。)
+如果你把上面的代码复制粘贴到 JavaScript 控制台中，接着输入`printSineAndCosineForAnyAngle(30)`，接着你会看到输出`s = 0.49 c = 0.87`（注意：这个数字是近似值。）
 
 如果你把上面的代码整合在一起的话，你就可以将你的几何体按照你想要的任何角度进行旋转。仅仅只需要将你需要旋转的角度值传给 sine 和 cosine 就可以了。
 
 ```js
- ...
-  var angleInRadians = angleInDegrees * Math.PI / 180;
-  rotation[0] = Math.sin(angleInRadians);
-  rotation[1] = Math.cos(angleInRadians);
+...
+var angleInRadians = angleInDegrees * Math.PI / 180;
+rotation[0] = Math.sin(angleInRadians);
+rotation[1] = Math.cos(angleInRadians);
 ```
 
 如下是设置一个角度旋转的版本。拖动滑动条旋转或者移动。
@@ -298,6 +300,9 @@ function printSineAndCosineForAnyAngle(angleInDegrees) {
 ## WebGL 2D 图像伸缩
 
 图像伸缩和[转换](http://webglfundamentals.org/webgl/lessons/webgl-2d-translation.html)一样简单。我们只需对需要变换的点乘以我们想要的比例。如下是从[以前的代码](http://webglfundamentals.org/webgl/lessons/webgl-2d-rotation.html)改变而来的。
+
+
+
 
 ```js
 <script id="2d-vertex-shader" type="x-shader/x-vertex">
@@ -386,7 +391,7 @@ void main() {
 
 **图片 3.8** matrix transformation
 
-对于上面的处理你也许会想“这样处理的原因在哪里”。假设要执行平移变换。我们将想要执行的平移的总量为 tx 和 ty。构造如下的矩阵：
+对于上面的处理你也许会想“这样处理的原因在哪里”。假设要执行平移变换。我们将想要执行的平移的总量为 `tx` 和 `ty`。构造如下的矩阵：
 
 ![matrix](img/matrix.png)
 
@@ -411,7 +416,7 @@ newX = x + tx;
 newY = y + ty; 
 ```
 
-extra 变量我们并不用在意。这个处理和我们在平移中编写的代码惊奇的相似。
+`extra` 变量我们并不用在意。这个处理和我们在平移中编写的代码惊奇的相似。
 
 同样地，让我们看看旋转。正如在旋转那篇中指出当我们想要进行旋转的时候，我们只需要角度的 sine 和 cosine 值。
 
@@ -447,7 +452,7 @@ newY = x * -s + y * c;
 
 上面处理的结果刚好和[旋转例子](http://webglfundamentals.org/webgl/lessons/webgl-2d-rotation.html)效果一样。
 
-最后是伸缩变换。称两个伸缩变换因子为 sx 和 sy。
+最后是伸缩变换。称两个伸缩变换因子为 `sx` 和 `sy`。
 
 构造如下的矩阵：
 
@@ -478,7 +483,7 @@ newY = y * sy;
 
 到了这里，我坚信你仍然在思考，这样处理之后了？有什么意义。看起来好象它只是做了和我们以前一样的事。
 
-接下来就是魔幻的地方。已经被证明了我们可以将多个矩阵乘在一起，接着一次执行完所有的变换。假设有函数 `matrixMultiply`，它带两个矩阵做参数，将他们俩相乘，返回乘积结果。
+接下来就是魔幻的地方。已经被证明了我们可以将多个矩阵乘在一起，接着一次执行完所有的变换。假设有函数`matrixMultiply`，它带两个矩阵做参数，将他们俩相乘，返回乘积结果。
 
 为了让上面的做法更清楚，于是编写如下的函数构建一个用来平移，旋转和伸缩的矩阵：
 
@@ -589,7 +594,7 @@ void main() {
     ...
 ```
 
-如下是新版本:
+如下是新版本：
 
 [`webglfundamentals.org/webgl/webgl-2d-geometry-matrix-transform-trs.html`](http://webglfundamentals.org/webgl/webgl-2d-geometry-matrix-transform-trs.html)
 
@@ -624,7 +629,7 @@ void main() {
   }
 ```
 
-为了实现这个，我们要编写自己的函数 `makeIdentity`，这个函数返回单位矩阵。单位矩阵实际上表示的类似于 1.0 的矩阵，如果一个矩阵乘以单位矩阵，那么得到的还是原先那个矩阵。就如：
+为了实现这个，我们要编写自己的函数`makeIdentity`，这个函数返回单位矩阵。单位矩阵实际上表示的类似于 1.0 的矩阵，如果一个矩阵乘以单位矩阵，那么得到的还是原先那个矩阵。就如：
 
 ```js
 X*1 = X 
@@ -656,15 +661,17 @@ function makeIdentity() {
 
 但是现在，因为我们能够使用矩阵，那么就可以选择变化的顺序，可以在执行其他的变换之前先移动原点。
 
-```js
- // make a matrix that will move the origin of the 'F' to its center.
-    var moveOriginMatrix = makeTranslation(-50, -75);
-    ...
 
-    // Multiply the matrices.
-    var matrix = matrixMultiply(moveOriginMatrix, scaleMatrix);
-    matrix = matrixMultiply(matrix, rotationMatrix);
-    matrix = matrixMultiply(matrix, translationMatrix);
+
+```js
+// make a matrix that will move the origin of the 'F' to its center.
+var moveOriginMatrix = makeTranslation(-50, -75);
+...
+
+// Multiply the matrices.
+var matrix = matrixMultiply(moveOriginMatrix, scaleMatrix);
+matrix = matrixMultiply(matrix, rotationMatrix);
+matrix = matrixMultiply(matrix, translationMatrix);
 ```
 
 如下所示，注意 F 可以围着中心点进行旋转和伸缩。
@@ -676,17 +683,17 @@ function makeIdentity() {
 让我们学习更深入点。如果你回到本系列的第一篇文章 WebGL 基本原理，你也许还记得我们编写的渲染器的代码中将像素转换成投影空间，如下所示：
 
 ```js
-  ...
-  // convert the rectangle from pixels to 0.0 to 1.0
-  vec2 zeroToOne = position / u_resolution;
+...
+// convert the rectangle from pixels to 0.0 to 1.0
+vec2 zeroToOne = position / u_resolution;
 
-  // convert from 0->1 to 0->2
-  vec2 zeroToTwo = zeroToOne * 2.0;
+// convert from 0->1 to 0->2
+vec2 zeroToTwo = zeroToOne * 2.0;
 
-  // convert from 0->2 to -1->+1 (clipspace)
-  vec2 clipSpace = zeroToTwo - 1.0;
+// convert from 0->2 to -1->+1 (clipspace)
+vec2 clipSpace = zeroToTwo - 1.0;
 
-  gl_Position = vec4(clipSpace * vec2(1, -1), 0, 1);
+gl_Position = vec4(clipSpace * vec2(1, -1), 0, 1);
 ```
 
 如果你现在反过来看下每一步，第一步，“将像素变换成 0.0 变成 1.0”，其实是一个伸缩操作。第二步同样是伸缩变换。接下来是平移变换，并且 Y 的伸缩因子是 -1。我们可以通过将该矩阵传给渲染器实现上面的所有操作。可以构造二维伸缩矩阵，其中一个伸缩因子设置为 1.0/分辨率，另外一个伸缩因子设置为 2.0，第三个使用 -1.0，-1.0 来进行移动，并且第四个设置伸缩因子 Y 为 -1，接着将他们乘在一起，然而，因为数学是很容易的，我们仅仅只需编写一个函数，能够直接将给定的分辨率转换成投影矩阵。
@@ -714,26 +721,26 @@ void main() {
   // Multiply the position by the matrix.
   gl_Position = vec4((u_matrix * vec3(a_position, 1)).xy, 0, 1);
 }
-</script> 
+</script>
 ```
 
 在 JavaScript 中我们需要与投影矩阵相乘。
 
 ```js
-  // Draw the scene.
-  function drawScene() {
-    ...
-    // Compute the matrices
-    var projectionMatrix = make2DProjection(
-        canvas.clientWidth, canvas.clientHeight);
-    ...
+// Draw the scene.
+function drawScene() {
+  ...
+  // Compute the matrices
+  var projectionMatrix = make2DProjection(
+      canvas.clientWidth, canvas.clientHeight);
+  ...
 
-    // Multiply the matrices.
-    var matrix = matrixMultiply(scaleMatrix, rotationMatrix);
-    matrix = matrixMultiply(matrix, translationMatrix);
-    matrix = matrixMultiply(matrix, projectionMatrix);
-    ...
-  }
+  // Multiply the matrices.
+  var matrix = matrixMultiply(scaleMatrix, rotationMatrix);
+  matrix = matrixMultiply(matrix, translationMatrix);
+  matrix = matrixMultiply(matrix, projectionMatrix);
+  ...
+}
 ```
 
 我们也移出了设置分辨率的代码。最后一步，通过使用数学矩阵就将原先需要 6-7 步操作复杂的渲染器变成仅仅只需要 1 步操作的更简单的渲染器。

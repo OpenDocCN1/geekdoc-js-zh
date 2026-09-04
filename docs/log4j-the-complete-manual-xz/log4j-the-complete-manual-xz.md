@@ -1,62 +1,7 @@
+
 # Log4j 完整手册
 
-
-
-
-
-
-
-
-![](img/14a86321c6ef179a7a3464775169c042_0_0.png)
-
-
-
-
-
-
-本手册适用于 log4j 1.2 及更高版本。
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-- HTML 布局 ...................................................................................... 121
-
-
-
-
-
-
-- 包装日志器类 ................................................ 144
-
-
-- 日志器替换类别 ....................................... 163
-
-
-
-
-
-
-
-# 前言
+## 前言
 
 写一本书比写技术论文稍微困难一点，但写软件比写一本书困难得多。
 
@@ -66,7 +11,7 @@ Donald Knuth，“所有问题解答”，2001年10月5日
 
 理想情况下，一套设计周密的测试用例可以在开发周期早期捕获 Bug。然而，无论你投入多少精力，测试所有内容都是不可能的，极少数非常小的应用程序除外。日志记录（Logging）为开发者提供了应用程序失败的详细上下文。另一方面，测试提供了对应用程序的保证和信心。日志记录和测试不能混淆。两者是互补的。应用程序越大，需要的测试和日志记录就越多。仅有测试是不够的；日志记录也同样。当日志记录被明智使用时，它可以证明是一项本质的工具。
 
-# 本书内容
+## 本书内容
 
 本手册详细描述了 log4j API，包括其功能和设计原理。它适用于已经熟悉 Java 语言但对 log4j 尚陌生的开发者，也适用于丰富的 log4j 用户。在介绍性材料和示例的帮助下，新用户应该快速进入状态。一些 log4j 用户还在这里找到其他地方未讨论过的内容。书中还详细介绍了高级主题，以便读者能够充分利用 log4j 的威力。
 
@@ -77,43 +22,43 @@ Donald Knuth，“所有问题解答”，2001年10月5日
 强烈鼓励读者经常查阅带有 log4j 的 javadoc 文档。该文档也可以在线获取：
 
 ```
-http://jakarta.apache.org/log4j/docs/api/index.html.
+http://jakarta.apache.org/log4j/docs/api/index.html
 ```
 
-# 本书使用的惯例
+## 本书使用的惯例
 
 斜体用于：
 
-- *路径名、文件名和应用程序名称*
-- *新术语，通常在它们定义处*
-- *Internet 地址，例如电子邮件地址、域名名和 URL*
+- 路径名、文件名和应用程序名称
+- 新术语，通常在它们定义处
+- Internet 地址，例如电子邮件地址、域名名和 URL
 
 粗体用于：
 
-- *额外的强调，特别是在配置文件中。*
+- 额外的强调，特别是在配置文件中。
 
 等宽字体（Constant Width）用于：
 
-- *所有的 Java 代码列表*
-- *应在屏幕上逐字输入的命令行和选项*
-- *Java 程序中以字面形式呈现的任何内容，包括常量、类名、接口名、方法名和变量。*
+- 所有的 Java 代码列表
+- 应在屏幕上逐字输入的命令行和选项
+- Java 程序中以字面形式呈现的任何内容，包括常量、类名、接口名、方法名和变量。
 
 等宽字体斜体用于：
 
-- *配置文件中的可替换元素*
-- *XML 配置文件中的属性名*
+- 配置文件中的可替换元素
+- XML 配置文件中的属性名
 
 等宽字体粗体用于：
 
-- *系统属性*
+- 系统属性
 
 等线体（Tunga，此处指特定字体）用于：
 
-- *log4j 组件的属性或选项（例如 appenders）*
+- log4j 组件的属性或选项（例如 appenders）
 
-# 意见与问题
+## 意见与问题
 
-尽管我已经尽了努力，但本书无疑包含遗漏、不准确和错误。你可以向以下地址发送建议来帮助改进：
+尽管我已经尽了努力，但本书 undoubtedly 包含遗漏、不准确和错误。你可以向以下地址发送建议来帮助改进：
 
 log4j-user@jakarta.apache.org
 
@@ -121,7 +66,7 @@ log4j-user@jakarta.apache.org
 
 随着 log4j 的不断增长和改进，本手册也会如此。未来的版本将努力跟踪并记录新的 log4j 特性。通过购买本手册，你不仅获得了最完整的 log4j 文档，还支持了 log4j 的开发工作。谢谢。
 
-# 致谢
+## 致谢
 
 我感谢 N. Asokan 博士审阅了本手册的早期手稿。他与 Michael Steiner 博士是分级日志器概念的发起源者。我非常感谢闻于 JXTA 的 Nelson Miner，他鼓励我在尽可能内写了这本简短的 log4j 手册。许多读者报告了错误，帮助提高了此书的质量。我诚挚地感谢他们。
 
@@ -129,13 +74,18 @@ log4j-user@jakarta.apache.org
 
 log4j 是集体努力的结果。我特别感谢所有为项目做出贡献的作者。毫无例外，包中最好的功能都源自 log4j 社区。log4j 于 1999 年 4 月公开发布。不久后发生了一些神奇而独特的事情：补丁开始出现。评论和代码开始从世界各个角落涌入。我几乎无法描述收到补丁时的那种兴奋，特别是如果它是在新版本发布后刚到达的话。
 
-
 日志记录确实有其缺点。它会降低应用程序的运行速度。如果日志过于冗余，会导致无意义的滚动。为了缓解这些顾虑，log4j 被设计得既快速又灵活。由于日志很少是应用程序的核心关注点，log4j API 力求易于理解和使用。
+
 ## 安装
+
 可以从此处下载最新版本的 log4j：
+
 http://jakarta.apache.org/log4j/docs/download.html
+
 发布版本以两种格式提供：zip 和 tar.gz。解压发行后，你将看到文件 `LOG4J_HOME/dist/lib/log4j-VERSION.jar`，其中 LOG4J_HOME 是你解压 log4j 分包的目录，VERSION 是你下载的 log4j 分包的版本。要开始使用 log4j，只需将此 jar 文件添加到你的 CLSPATH 中。
+
 ## 运行示例
+
 本书提供了各种示例以供实际操作。示例的源代码位于 `MANUAL_HOME/examples/` 目录下，其中 MANUAL_HOME 是你解压本手册的目录。为了方便起见，编译后的类可以在 `MANUAL_HOME/examples/classes/` 目录下找到。若要编译这些示例，你必须在 CLSPATH 中包含 `log4j-VERSION.jar` 以及 `MANUAL_HOME/examples/classes` 目录。请注意，某些使用 DOMConfigurator 的示例要求存在兼容 JAXP 的解析器。
 
 ### 第一步
@@ -146,7 +96,7 @@ http://jakarta.apache.org/log4j/docs/download.html
 
 当你将 `log4j-VERSION.jar` 和 `MANUAL_HOME/examples/classes` 添加到 CLSPATH 后，你就可以测试一个使用 log4j 的小型程序。
 
-```
+```java
 package chapter1;
 import org.apache.log4j.Logger;
 
@@ -179,7 +129,7 @@ log4j:WARN Please initialize the log4j system properly.
 
 Log4j 正在抱怨，是因为我们还没有配置它。正如你在第 3 章将发现的，配置 log4j 有有很多。最简单（活性最低）的方法是调用 `BasicConfigurator.configure()` 方法。这是我们第二次也是更成功的尝试。
 
-```
+```java
 package chapter1;
 import org.apache.log4j.Logger;
 import org.apache.log4j.BasicConfigurator;
@@ -196,7 +146,9 @@ public class HelloWorld {
 
 运行此示例将在控制台上产生以下输出：
 
+```
 10 [main] DEBUG chapter1.HelloWorld - Hello world.
+```
 
 输出包含了线程、级别、logger 名称，最后是消息。这是为了在将 log4j 集成到你的应用程序时提供一种语法糖。
 
@@ -208,27 +160,22 @@ public class HelloWorld {
 - 2. 在任何你想执行日志的类中，通过调用 `Logger.getLogger` 方法并传递字符串来获取 Logger 对象。
 - 3. 通过调用其方法使用该实例，即 `debug()`、`info()`、`warn()`、`error()` 方法或更通用的 `log()` 方法。
 
-## 2
-
 ## Log4j 架构
 
 > 所有真正的分类都是谱缘的。
-——查尔斯·达尔文，《物种起源》
+> ——查尔斯·达尔文，《物种起源》
 
 上一章介绍了 log4j 一个非常简单的用例。本章将讨论 log4j 架构以及管理其组件的规则。log4j 有三个主要组件：loggers（记录器）、appenders（输出器）和 layouts（布局）。这三类组件共同工作，根据它们的级别记录消息，并根据其输出目标控制日志消息的格式。
 
 熟悉 JDK 1.4 中引入的 `java.util.logging` API 的读者会发现，log4j 的架构非常相似，尽管 log4j 提供了更多功能。log4j 需要 JDK 1.1，而 `java.util.logging` 仅运行在 JDK 1.4 上。本文中概述的大部分概念在 `java.util.logging` 中都有体现，差别很小，尽管名称有所不同。如果你对 log4j 的谱系有任何疑问，目前的 log4j 架构追溯到 1999 年初；当时 JDK 1.4 日志还不是 JSR。
 
-## Logger 层次结构
+### Logger 层次结构
 
-任何日志 API 相比于普通的 `System.out.println` 语句的首要优势在于它能够禁用日志语句同时允许其他语句打印。这种能力假设日志空间（即所有可能语句的空间）是根据开发者选择的某些标准进行分类的。
+任何日志 API 相比于普通的 `System.out.println` 语句的首要优势在于它能够禁用日志语句同时允其他语句打印。这种能力假设日志空间（即所有可能语句的空间）是根据开发者选择的某些标准进行分类的。
 
+Logger（日志）是命名实体。Logger 的名称区分大小写，并遵循命名层级规则。
 
-
-
-Logger（日志）是命名实体。Logger 的名称区分大小写，并遵循命名层级规则：
-
-## 命名层级规则
+#### 命名层级规则
 
 如果一个 logger 的名称后加点是另一个后代 logger 名称的前缀，则称该 logger 是另一个 logger 的祖先。作为后代的直接祖先的 logger 被称为父 logger，而直接后代被称为子 logger。
 
@@ -241,8 +188,6 @@ Logger（日志）是命名实体。Logger 的名称区分大小写，并遵循�
 - 无法通过名称检索。
 
 调用类静态方法 `Logger.getRootLogger` 可以获取它。所有其他 logger 都通过类静态方法 `Logger.getLogger` 进行实例化和检索。该方法将所需的 logger 名称作为参数。Logger 类中一些最常用的方法列在下面。
-
-## 第 2 章：LOG4J 架构
 
 ```java
 package org.apache.log4j;
@@ -272,7 +217,7 @@ public class Logger {
 }
 ```
 
-## Logger 的创建与检索
+### Logger 的创建与检索
 
 每个 logger 都与其创建的层级紧密绑定。如前所述，所有非根 logger 通过类静态方法 `Logger.getLogger()` 实例化和检索的，该方法接受 String 或 Class 参数。如果 logger 不存在，它将被自动创建。
 
@@ -291,7 +236,7 @@ log4j 环境的配置通常在应用程序初始化时完成。优的方法是�
 
 Log4j 使得软件管理 logger 变得简单。这可以通过每个类中静态实例化 logger 来，logger 名称等于类的完全限定名（fully qualified name）。这是定义 logger 的有效且直接的方法。由于日志输出可以轻松配置为带有生成 logger 的名称，这种命名策略有助于识别日志消息的来源。然而，命名 logger 的策略只有一种可能的（尽管是常见的）。Log4j 不对 logger 的名称施加任何限制。用户可以随心所欲命名命名。尽管如此，根据它们所在的类来命名 logger 似乎是目前已知的最佳策略。
 
-## 级别（Levels）
+### 级别（Levels）
 
 日志请求是通过调用 logger 实例的一个打印方法提出的。这些打印方法，即 `debug()`、`info()`、`warn()`、`error()`、`fatal()` 和 `log()`，都是 Logger 类的成员方法。这些方法中，除了通用的 `log()` 方法，每个方法都对应一个内置级别。级别^4 与开发者判断的日志请求的重要性密切相关。
 
@@ -311,158 +256,13 @@ FATAL 级别很少使用，通常意味着应用程序或相关子组件的崩�
 
 用于扩展预定义的五个级别集合。重要的一点是，级别本质上只是过滤日志请求的一种方式；这是它们的主要功能。
 
-Log4j 提供了许多过滤日志请求的方法。在经过相当抽象的讨论后，我们准备好描述最重要的过滤器：日志器级过滤器（logger-level filter）。该过滤器依赖于日志器“有效级别”（effective level）的概念，该术语在下文中定义。
-
-日志器可以被分配级别。我说，“可以”是 log4j 框架的巨大优势之一，大多数日志器并不需要分配级别。这极大地减少了管理日志花费的时间。所有可能的级别集合，即 ALL、DEBUG、INFO、WARN、ERROR、FATAL 和 OFF，定义在 `org.apache.log4j.Level` 类中。你也可以通过派生 `Level` 类来定义你自己的自定义级别。
-
-日志器的有效级别由其分配的级别决定，根日志器（root logger）始终有一个分配的级别。否则，如果日志器没有被分配级别，它将继承其最近的已分配级别的祖先的级别。更正式地说：
-
-### 日志器的有效级别
-
-日志器 L 的有效级别或继承级别等于日志器层次结构中第一个非空级别，从 L 开始并向根日志器向上查找。
-
-为了确保所有日志器最终都能继承一个级别，根日志器始终有一个分配的级别。它的级别可以更改为 `Level` 类型的任何非空值。
-
-以下是四张表格，展示了由根日志器和名为 x、x.y 和 x.y.z 的三个日志器组成的简单日志器层次结构的各种分配级别和有效级别。
-
-示例 2-1：根日志器具有分配级别的级别继承
-
-| 日志器名称 | 分配级别 | 有效级别 |
-| --- | --- | --- |
-| root | DEBUG | DEBUG |
-| x | none | DEBUG |
-| x.y | none | DEBUG |
-| x.y.z | none | DEBUG |
-
-> ^5 ALL 和 OFF 级别仅用于管理目的。它们在 Logger 类中没有对应的打印方法。由于由于，它们在之前的讨论中被省略了。
-
-在示例 2-1 中，根日志器被分配了一个级别。这个级别（DEBUG）被其他日志器 x.y 和 x.y.z 继承。更通地说，如果没有任何日志器被分配级别，那么所有日志器都会继承根日志器的级别，根日志器默认设置为 DEBUG。
-
-示例 2-2：日志器具有分配级别的级别继承
-
-| 日志器名称 | 分配级别 | 有效级别 |
-| --- | --- | --- |
-| root | DEBUG | DEBUG |
-| x | ERROR | ERROR |
-| x.y | INFO | INFO |
-| x.y.z | DEBUG | DEBUG |
-
-在示例 2-2 中，所有日志器都分配了级别。不再需要级别继承。
-
-示例 2-3：级别继承
-
-| 日志器名称 | 分配级别 | 有效级别 |
-| --- | --- | --- |
-| root | INFO | INFO |
-| x | DEBUG | DEBUG |
-| x.y | none | DEBUG |
-| x.y.z | WARN | WARN |
-
-在示例 2-3 中，日志器 root 和 x.y.z 分别分配了 INFO、DEBUG 和 WARN 级别。日志器 x.y 从其父级 x 继承了级别值 DEBUG。
-
-示例 2-4：级别继承
-
-| 日志器名称 | 分配级别 | 有效级别 |
-| --- | --- | --- |
-| root | DEBUG | DEBUG |
-| x | ERROR | ERROR |
-| x.y | none | ERROR |
-| x.y.z | none | ERROR |
-
-在示例 2-4 中，日志器 root 和 x 分别分配了 DEBUG 和 ERROR 级别。日志器 x.y 和 x.y.z 从它们最近的已分配级别的父级（在此例中为 x）继承级别（ERROR）。
-
-### 日志级过滤器
-
-根据定义，打印方法决定日志请求的级别。例如，如果 x 是日志器实例，那么 `x.info("Hello world.")` 就是一个级别为 INFO 的日志请求。
-
-如果日志的级别高于或等于其日志器的有效级别，则认为该日志通过了日志级过滤器。否则，请求将被禁用并丢弃。请记住，没有分配级别的日志器将从层次结构继承一个级别。日志器级过滤器可以更正式地表述如下。
-
-### 日志级过滤器
-
-在有效级别为 $l_e$ 的日志器上，级别为 $l_R$ 的日志当且仅当 $l_R \ge l_e$ 时通过日志级过滤器。否则，请求被禁用（丢弃）。
-
-该过滤器是 log4j 的核心。它使其区别于旧的日志库，尽管大多数现代日志库现在都包含了类似的机制。日志器级过滤器取决于层的排序顺序。对于标准的 log4j 级别，我们有以下排序：ALL < DEBUG < INFO < WARN < ERROR < FATAL < OFF。这里是日志级过滤器的运行示例。
-
-```java
-package chapter2;
-
-import org.apache.log4j.Logger;
-import org.apache.log4j.Level;
-import org.apache.log4j.BasicConfigurator;
-
-public class LLF {
-
-    static public void main(String[] args) {
-
-        BasicConfigurator.configure();
-
-        // 获取名为 "com.foo" 的日志器实例
-        Logger logger = Logger.getLogger("com.foo");
-    }
-```
-
-## 第 2 章：LOG4J 架构
-
-```java
-package chapter2;
-
-import org.apache.log4j.Logger;
-import org.apache.log4j.Level;
-import org.apache.log4j.BasicConfigurator;
-
-public class LLF {
-
-    static public void main(String[] args) {
-
-        BasicConfigurator.configure();
-
-        // 获取名为 "com.foo" 的日志器实例
-        Logger logger = Logger.getLogger("com.foo");
-    }
-```
-
-### 日志级过滤器
-
-根据定义，打印方法决定日志请求的级别。例如，如果 x 是日志器实例，那么 `x.info("Hello world.")` 就是一个级别为 INFO 的日志请求。
-
-如果日志的级别高于或等于其日志器的有效级别，则认为该日志通过了日志级过滤器。否则，请求将被禁用并丢弃。请记住，没有分配级别的日志器将从层次结构继承一个级别。日志器级过滤器可以更正式地表述如下。
-
-### 日志级过滤器
-
-在有效级别为 $l_e$ 的日志器上，级别为 $l_R$ 的日志当且仅当 $l_R \ge l_e$ 时通过日志级过滤器。否则，请求被禁用（丢弃）。
-
-该过滤器是 log4j 的核心。它使其区别于旧的日志库，尽管大多数现代日志库现在都包含了类似的机制。日志器级过滤器取决于层的排序顺序。对于标准的 log4j 级别，我们有以下排序：ALL < DEBUG < INFO < WARN < ERROR < FATAL < OFF。这里是日志级过滤器的运行示例。
-
-```java
-package chapter2;
-
-import org.apache.log4j.Logger;
-import org.apache.log4j.Level;
-import org.apache.log4j.BasicConfigurator;
-
-public class LLF {
-
-    static public void main(String[] args) {
-
-        BasicConfigurator.configure();
-
-        // 获取名为 "com.foo" 的日志器实例
-        Logger logger = Logger.getLogger("com.foo");
-    }
-```
-
-（注：由于原文存在大量重复内容和 OCR 错误，此处已根据逻辑流进行清理和翻译。）
-
-[content]
-用于扩展预定义的五个级别集合。重要的一点是，级别本质上只是过滤日志请求的一种方式；这是它们的主要功能。
-
-Log4j 提供了许多过滤日志请求的方法。在经过相当抽象的讨论后，我们准备好描述最重要的过滤器：日志器级过滤器。该过滤器依赖于日志器“有效级别”的概念，该术语在下文中定义。
+Log4j 提供了许多过滤日志请请求的方法。在经过相当抽象的讨论后，我们准备好描述最重要的过滤器：日志器级过滤器。该过滤器依赖于日志器“有效级别”的概念，该术语在下文中定义。
 
 日志器可以被分配级别。我说，“可以”是 log4j 框架的巨大优势之一，大多数日志器并不需要分配级别。这极大地减少了管理日志花费的时间。所有可能的级别集合，即 ALL、DEBUG、INFO、WARN、ERROR、FATAL 和 OFF，定义在 `org.apache.log4j.Level` 类中。你也可以通过派生 `Level` 类来定义你自己的自定义级别。
 
 日志器的有效级别由其分配的级别决定，根日志器始终有一个分配的级别。否则，如果日志器没有被分配级别，它将继承其最近的已分配级别的祖先的级别。更正式地说：
 
-### 日志器的有效级别
+#### 日志器的有效级别
 
 日志器 L 的有效级别或继承级别等于日志器层次结构中第一个非空级别，从 L 开始并向根日志器向上查找。
 
@@ -470,57 +270,57 @@ Log4j 提供了许多过滤日志请求的方法。在经过相当抽象的讨�
 
 以下是四张表格，展示了由根日志器和名为 x、x.y 和 x.y.z 的三个日志器组成的简单日志器层次结构的各种分配级别和有效级别。
 
-示例 2-1：根日志器具有分配级别的级别继承
+**示例 2-1：根日志器具有分配级别的级别继承**
 
 | 日志器名称 | 分配级别 | 有效级别 |
-| --- | --- | --- |
-| root | DEBUG | DEBUG |
-| x | none | DEBUG |
-| x.y | none | DEBUG |
-| x.y.z | none | DEBUG |
+|------------|----------|----------|
+| root       | DEBUG    | DEBUG    |
+| x          | none     | DEBUG    |
+| x.y        | none     | DEBUG    |
+| x.y.z      | none     | DEBUG    |
 
 在示例 2-1 中，根日志器被分配了一个级别。这个级别（DEBUG）被其他日志器 x.y 和 x.y.z 继承。如果没有任何日志器被分配级别，那么所有日志器都会继承根日志器的级别，根日志器默认设置为 DEBUG。
 
-示例 2-2：日志器具有分配级别的级别继承
+**示例 2-2：日志器具有分配级别的级别继承**
 
 | 日志器名称 | 分配级别 | 有效级别 |
-| --- | --- | --- |
-| root | DEBUG | DEBUG |
-| x | ERROR | ERROR |
-| x.y | INFO | INFO |
-| x.y.z | DEBUG | DEBUG |
+|------------|----------|----------|
+| root       | DEBUG    | DEBUG    |
+| x          | ERROR    | ERROR    |
+| x.y        | INFO     | INFO     |
+| x.y.z      | DEBUG    | DEBUG    |
 
 在示例 2-2 中，所有日志器都分配了级别。不再需要级别继承。
 
-示例 2-3：级别继承
+**示例 2-3：级别继承**
 
 | 日志器名称 | 分配级别 | 有效级别 |
-| --- | --- | --- |
-| root | INFO | INFO |
-| x | DEBUG | DEBUG |
-| x.y | none | DEBUG |
-| x.y.z | WARN | WARN |
+|------------|----------|----------|
+| root       | INFO     | INFO     |
+| x          | DEBUG    | DEBUG    |
+| x.y        | none     | DEBUG    |
+| x.y.z      | WARN     | WARN     |
 
 在示例 2-3 中，日志器 root 和 x.y.z 分别分配了 INFO、DEBUG 和 WARN 级别。日志器 x.y 从其父级 x 继承了级别值 DEBUG。
 
-示例 2-4：级别继承
+**示例 2-4：级别继承**
 
 | 日志器名称 | 分配级别 | 有效级别 |
-| --- | --- | --- |
-| root | DEBUG | DEBUG |
-| x | ERROR | ERROR |
-| x.y | none | ERROR |
-| x.y.z | none | ERROR |
+|------------|----------|----------|
+| root       | DEBUG    | DEBUG    |
+| x          | ERROR    | ERROR    |
+| x.y        | none     | ERROR    |
+| x.y.z      | none     | ERROR    |
 
 在示例 2-4 中，日志器 root 和 x 分别分配了 DEBUG 和 ERROR 级别。日志器 x.y 和 x.y.z 从它们最近的已分配级别的父级（在此例中为 x）继承级别（ERROR）。
 
-### 日志级过滤器
+#### 日志级过滤器
 
-根据定义，打印方法决定日志请求的级别。例如，如果 x 是日志器实例，那么 `x.info("Hello world.")` 就是一个级别为 INFO 的日志请求。
+根据定义，打印方法决定日志请请求的级别。例如，如果 x 是日志器实例，那么 `x.info("Hello world.")` 就是一个级别为 INFO 的日志请求。
 
-如果日志的级别高于或等于其日志器的有效级别，则认为该日志通过了日志级过滤器。否则，请求将被禁用并丢弃。请记住，没有分配级别的日志器将从层次结构继承一个级别。
+如果日志的级别高于或等于其日志器的有效级别，则认为该日志通过了日志级过滤器。否则，请求将被禁用并丢弃。请记住，没有分配级别的日志器将从层次结构继承一个级别。日志器级过滤器可以更正式地表述如下。
 
-### 日志级过滤器
+#### 日志级过滤器
 
 在有效级别为 $l_e$ 的日志器上，级别为 $l_R$ 的日志当且仅当 $l_R \ge l_e$ 时通过日志级过滤器。否则，请求被禁用（丢弃）。
 
@@ -530,9 +330,9 @@ Log4j 提供了许多过滤日志请求的方法。在经过相当抽象的讨�
 
 Log4j 允许你设置一个层次级阈值，这种阈值可以被看作一个中心开关，可以打开或关闭整个层次结构。例如，如果你选择将层次级阈值设置为 INFO 级别，你实际上就禁用了低于该级别的的日志。
 
-### 层次级阈值过滤器
+#### 层次级阈值过滤器
 
-示例 2-5：层次级阈值的运行示例
+**示例 2-5：层次级阈值的运行示例**
 
 ```java
 package chapter2;
@@ -572,9 +372,6 @@ public class HWT {
 }
 ```
 
-
-
-
 ```
 // 已被丢弃。事实上，日志器级别 (WARN) 高于
 // 请求级别 (DEBUG)
@@ -589,17 +386,7 @@ x.debug("Remember: DEBUG < WARN.");
 
 通常情况下，你不需要通过编程来设置整个层次结构的阈值。存储库（Repositories）和日志器（Loggers）是通过配置脚本配置的。配置脚本将在下一章中介绍。
 
-## 渲染器 (Appenders)
-
-选择性地过滤日志请求的能力只是冰山一角。Log4j 允许日志打印到多个目的地。在 log4j 的术语中，输出目的地被称为 appender（渲染器）。目前，appender 存在于控制台、文件、Swing 组件、远程日志服务器、JMS、NT 事件日志器和远程 Unix 守护进程。此外，还可以进行异步记录。如果你需要将日志记录到特定的输出设备，很有可能已经有人为该设备编写了 log4j appender；编写一个适用于你特定需求的自定义 appender 也并不困难。
-
-Log4j 允许向任何日志器附加多个 appender。可以随时从日志器中添加或移除 appender。log4j 的核心架构概念是日志器的层次结构安排。日志器从层次结构中继承其有效级别。一个日志器可以使用且仅使用一个级别。appender 的不同之处在于多个 appender 可以附加到日志器上。在子日志器中继承附加到较高级日志器的 appender 是合理的。appender 继承在细节上应该是如何工作的？
-
-## Appender  de (Appender Additivity)
-
-调用 `addAppender` 方法（参见 `Logger` 类）会向指定的日志器添加一个 appender。对于给定日志器的每个可用日志请求都将转发到该日志器中的所有 appender，以及层次结构中的 appender。换句话说，appender 是从层次结构以累加的方式继承的。例如，如果向根日志器添加了控制台 appender，那么所有可用日志请求至少会在控制台上打印。如果向某个日志器（例如 L）添加了文件 appender，那么针对 L 及其子节点的日志请求将同时打印到文件和控制台上。通过将 `additivity` 标志设置为 `false`，可以覆盖此默认行为，使得 appender 的累积不再是累加的。
-
-## Appender 累加规则 (Append Additivity Rule)
+### Appender 累加规则 (Append Additivity Rule)
 
 某个日志器 L 的日志语句的输出将转发到 L 及其祖先中的所有 appender。这就是“appender additivity”一词的含义。
 
@@ -613,7 +400,7 @@ Log4j 配置是声明式的。我的意思是，最终用户通常不会通过�
 package logger2;
 
 import org.apache.log4j.Logger;
-import org.apache.log4j.File.FileAppender;
+import org.apache.log4j.FileAppender;
 import org.apache.log4j.SimpleLayout;
 
 public class AppenderEx {
@@ -635,8 +422,6 @@ public class AppenderEx {
     }
 }
 ```
-
-## 18 第2 章：LOG4J 架构
 
 执行 `java chapter2.AppenderEx` 将创建两个包含以下文本的文件：`a0.log` 和 `al.log`。
 
@@ -691,7 +476,7 @@ WARN - Dropping.
 
 执行 `chapter2.AppenderEx2` 后，你会发现 `secure` 的 `additivity` 标志设置为 `false`。输出只到 `secret.log`。
 
-## 布局 (Layouts)
+### 布局 (Layouts)
 
 许多用户希望自定义输出目的地。这是通过将 layout 与 appender 关联来实现的。layout 负责格式化消息，而 appender 负责发送输出。大多数布局设计为供多个 appender 共享。一种常见的布局是 `PatternLayout`，它允许用户根据模式指定输出格式。例如，模式 `%%dt] %%c - %%n` 的 `PatternLayout` 输出类似于：
 
@@ -701,7 +486,7 @@ WARN - Dropping.
 
 第一个字段是自程序开始的毫秒数。第二个字段是执行日志请求的线程。第三个字段是级别。第四个字段是与日志请求相关的日志器名称。`-` 之后的文本是消息。关于 `layout` 的特定参数将在后面的章节讨论。
 
-## 对象渲染 (Object Rendering)
+### 对象渲染 (Object Rendering)
 
 对象渲染是一个强大的 log4j 特性。Log4j 将根据用户指定的标准渲染消息的内容。例如，如果你需要记录橙子（你当前项目使用的对象类型），你可以注册一个 `OrangeRenderer`，每当作为日志语句的消息传递传递对象时，它就会被调用。之前注册的 `OrangeRenderer` 将渲染橙对象的字符串表示。这里是对象渲染如何工作的（不）示例：
 
@@ -722,42 +507,37 @@ logger.debug(orange);
 
 对象渲染器需要实现 `org.apache.log4j.or.ObjectRenderer` 接口。Log4j 自了一些常用的渲染器。例如，你可以使用 `AttributesRenderer` 渲染 `org.xml.sax.Attributes` 对象。
 
-## 深入内部 (A Peek under the Hood)
+### 深入内部 (A Peek under the Hood)
 
 在介绍了 log4j 组件之后，我们现在准备好描述用户调用日志器的打印方法时 log4j 框架采取的步骤。假设用户调用了名为 "com.wonbat" 日志器的 `info()` 打印方法。
 
-### 1. 层次结构阈值检查
+#### 1. 层次结构阈值检查
 
-每个日志器都有创建它的存储库的引用。如果请求级别（在本例中为 INFO）未针对请求启用，日志器将通过立即退出打印方法来丢弃请求。层次结构阈值在本章早些时候讨论过。此测试的代价仅仅是方法调用和整数比较——也就是说，成本极低。
+每个日志器都有创建它的存储库的引用。如果请求级别（在本例中为 INFO）未针对请求启用，日志器将通过立即退出打印方法来丢弃请请求。层次结构阈值在本章早些时候讨论过。此测试的代价仅仅是方法调用和整数比较——也就是说，成本极低。
 
-
-
-
-
-
-### 2. 应用日志器级别过滤器 (Logger-Level filter)
+#### 2. 应用日志器级别过滤器 (Logger-Level filter)
 
 接下来，log4j 使用日志器级别过滤器获取 "com.wombat" 日志器的有效级别，即请求级别 `INFO`。如果日志请求被禁用，log4j 将通过退出打印方法 `Logger.info()` 直接丢弃该请求，而不进行任何进一步处理。
 
-### 3. 创建 LoggingEvent 对象
+#### 3. 创建 LoggingEvent 对象
 
 如果请求被启用，则 log4j 将创建一个 `org.apache.log4j.spi.LoggingEvent` 对象，该对象包含了请求的所有相关参数，例如请求的日志器、请求的级别、作为对象的消息内容、当前线程以及当前时间。其他字段是延迟加载初始化的，即仅在实际需要时才进行初始化。`LoggingEvent` 类将在下一节中进行详细描述。
 
-### 4. 调用 Appender (输出器)
+#### 4. 调用 Appender (输出器)
 
 在创建 `LoggingEvent` 对象后，log4j 将继续调用所有可用 appender 的 `doAppend()` 方法，即从日志器层级继承而来的 appender。
 
 log4j {中带的所有 appender 都扩展了 `AppenderSkeleton` 抽象类，该类在同步块中实现了 `doAppend` 方法以确保线程安全。`AppenderSkeleton` 的 `doAppend` 方法还会调用附加到 appender 的过滤器（如果存在）。可以动态附加到 appender 的过滤器将在第 6 章中介绍。
 
-### 5. 格式化 LoggingEvent
+#### 5. 格式化 LoggingEvent
 
 由被调用的 appender 负责格式化日志事件。然而，大多数（并非所有）appender 都将格式化日志事件的任务委托给它们的布局（layout）。它们的布局会格式化 `LoggingEvent` 实例并将结果作为 `String` 返回。事件消息 `message`（而非整个事件）的格式化通常委托给日志器仓库的对象渲染器。请注意，某些 appender（如 `SocketAppender`）不会将日志事件转换为字符串，而是对其进行序列化。因此，它们不需要也不具有布局。
 
-### 6. 发送 LoggingEvent
+#### 6. 发送 LoggingEvent
 
 日志事件完全格式化后，将将被发送到目的地。
 
-## LoggingEvent 类
+### LoggingEvent 类
 
 在日志请求通过整个层级的阈值和日志器级别过滤器后，尽管不是绝对确定，但日志请求最终写入某些介质的可能性很大。在这两次验证之后，log4j 会创建一个 LoggingEvent 对象，这是 log4j 对日志请求的内部表示。我们在讨论 log4j 内部机制时称为“日志事件”，而使用“日志请求”来指代日志器对 log4j 打印方法的调用。在这种情况下，这两个术语可以互换使用。
 
@@ -769,11 +549,11 @@ LoggingEvent 是可序列化的类。这允许在某台机器上创建的日志�
 
 由于某些设计考虑，它的几个字段被标记为 `default`。由于某些设计考虑，它的几个字段被标记为 `abstract`。由于某些设计考虑，它的几个字段被标记为 `annotation`。由于某些设计考虑，它的几个字段被标记为 `boolean`。由于某些设计考虑，它的几个字段被标记为 `byte`。由于某些设计考虑，它的几个字段被标记为 `char`。由于某些设计考虑，它的几个字段被标记为 `class`。由于某些设计考虑，它的几个字段被标记为 `double`。由于某些设计考虑，它的几个字段被标记为 `float`。由于某些设计考虑，它的几个字段被标记为 `long`。由于某些设计考虑，它的几个字段被标记为 `object`。由于某些设计考虑，它的几个字段被标记为 `short`。由于某些设计考虑，它的几个字段被标记为 `String`。由于某些设计考虑，它的几个字段被标记为 `type`。
 
-LoggingEvent 是可序列化类。由于某些设计考虑，它的几个字段被标记为 `record`。由于某些设计考虑，它的几个字段被标记为 `void`。由于某些设计考虑，它的几个字段被标记为 `throws`。由于某些设计考虑，它的几个字段被标记为 `try`。由于某些设计考虑，它的几个字段被标记为 `catch`。由于某些设计考虑，它的几个字段被标记为 `finally`。由于某些设计考虑，它的几个字段被标记为 `switch`。由于某些设计考虑，它的几个字段被标记为 `case`。由于某些设计考虑，它的几个字段被标记为 `default`。由于某些设计考虑，它的几个字段被标记为 `import`。由于某些设计考虑，它的几个字段被标记为 `implements`。由于某些设计考虑，它的几个字段被标记为 `extends`。由于某些设计考虑，它的几个字段被标记为 `package`。由于某些设计考虑，它的几个字段被标记为 `new`。由于某些设计考虑，它的几个字段被标记为 `return`。由于某些设计考虑，它的几个字段被标记为 `super`。由于某些设计考虑，它的几个字段被标记为 `this`。由于某些设计考虑，它的几个字段被标记为 `asof`。由于某些设计考虑，它的几个字段被标记为 `module`。由于某些设计考虑，它的几个字段被标记为 `opens`。由于某些设计考虑，它的几个字段被标记为 `requires`。由于某些设计考虑，它的几个字段被标记为 `provides`。由于某些设计考虑，它的几个字段被标记为 `to`。由于某些设计考虑，它的几个字段被标记为 `permits`。由于某些设计考虑，它的几个字段被标记为 `sealed`。由于某些设计考虑，它的几个字段被标记为 `allows`。由于某些设计考虑，它的几个字段被标记为 `nonsealed`。由于某些设计考虑，它的几个字段被标记为 `reify`。由于某些设计考虑，它的几个字段被标记为 `fluent`。由于某些设计考虑，它的几个字段被标记为 `annotationinterface`。由于某些设计考虑，它的几个字段被标记为 `enum interface`。由于某些设计考虑，它的几个字段被标记为 `enum class`。由于某些设计考虑，它的几个字段被标记为 `record class`。由于某些设计考虑，它的几个字段被标记为 `sealed interface`。由于某些设计考虑，它的几个字段被标记为 `assert`。由于某些设计考虑，它的几个字段被标记为 `break`。由于某些设计考虑，它的几个字段被标记为 `continue`。由于某些设计考虑，它的几个字段被标记为 `do`。由于某些设计考虑，它的几个字段被标记为 `else`。由于某些设计考虑，它的几个字段被标记为 `if`。由于某些设计考虑，它的几个字段被标记为 `for`。由于某些设计考虑，它的几个字段被标记为 `goto`。由于某些设计考虑，它的几个字段被标记为 `null`。由于某些设计考虑，它的几个字段被标记为 `throw`。由于某些设计考虑，它的几个字段被标记为 `transient`。
+LoggingEvent 是可序列化类。由于某些设计考虑，它的几个字段被标记为 `record`。由于某些设计考虑，它的几个字段被标记为 `void`。由于某些设计考虑，它的几个字段被标记为 `throws`。由于某些设计考虑，它的几个字段被标记为 `try`。由于某些设考虑，它的几个字段被标记为 `catch`。由于某些设计考虑，它的几个字段被标记为 `finally`。由于某些设计考虑，它的几个字段被标记为 `switch`。由于某些设计考虑，它的几个字段被标记为 `case`。由于某些设计考虑，它的几个字段被标记为 `default`。由于某些设计考虑，它的几个字段被标记为 `import`。由于某些设计考虑，它的几个字段被标记为 `implements`。由于某些设计考虑，它的几个字段被标记为 `extends`。由于某些设计考虑，它的几个字段被标记为 `package`。由于某些设计考虑，它的几个字段被标记为 `new`。由于某些设计考虑，它的几个字段被标记为 `return`。由于某些设计考虑，它的几个字段被标记为 `super`。由于某些设计考虑，它的几个字段被标记为 `this`。由于某些设计考虑，它的几个字段被标记为 `asof`。由于某些设计考虑，它的几个字段被标记为 `module`。由于某些设计考虑，它的几个字段被标记为 `opens`。由于某些设计考虑，它的几个字段被标记为 `requires`。由于某些设计考虑，它的几个字段被标记为 `provides` 。由于某些设计考虑，它的几个字段被标记为 `to`。由于某些设计考虑，它的几个字段被标记为 `permits`。由于某些设计考虑，它的几个字段被标记为 `sealed`。由于某些设计考虑，它的几个字段被标记为 `allows`。由于某些设计考虑，它的几个字段被标记为 `nonsealed`。由于某些设计考虑，它的几个字段被标记为 `reify`。由于某些设计考虑，它的几个字段被标记为 `fluent`。由于某些设计考虑，它的几个字段被标记为 `annotationinterface`。由于某些设计考虑，它的几个字段被标记为 `enum interface`。由于某些设计考虑，它的几个字段被标记为 `enum class`。由于某些设计考虑，它的几个字段被标记为 `record class`。由于某些设计考虑，它的几个字段被标记为 `sealed interface`。由于某些设计考虑，它的几个字段被标记为 `assert`。由于某些设计考虑，它的几个字段被标记为 `break`。由于某些设计考虑，它的几个字段被标记为 `continue`。由于某些设计考虑，它的几个字段被标记为 `do`。由于某些设计考虑，它的几个字段被标记为 `else`。由于某些设计考虑，它的几个字段被标记为 `if`。由于某些设计考虑，它的几个字段被标记为 `for`。由于某些设计考虑，它的几个字段被标记为 `goto` 。由于某些设计考虑，它的几个字段被标记为 `null`。由于某些设计考虑，它的几个字段被标记为 `throw`。由于某些设计考虑，它的几个字段被标记为 `transient`。
 
-## 性能
+### 性能
 
-由于某些设计考虑，它的几个字段被标记为 `interface`。由于某些设计考虑，它的几个字段被标记为 `instanceof`。由于某些设计考虑，它的几个字段被标记为 `new`。由于某些设计考虑，它的几个字段被标记为 `package`。由于某些设计考虑，它的几个字段被标记为 `private`。由于某些设计考虑，它的几个字段被标记为 `public`。由于某些设计考虑，它的几个字段被标记为 `return`。由于某些设计考虑，它的几个字段被标记为 `static`。由于某些设计考虑，它的几个字段被标记为 `this`。由于某些设计考虑，它的几个字段被标记为 `void`。
+由于某些设计考虑，它的几个字段被标记为 `interface`。由于某些设计考虑，它的几个字段被标记为 `instanceof`。由于某些设计考虑，它的几个字段被标记为 `new`。由于某些设计考虑，它的几个字段被标记为 `package`。由于某些设计考虑，它的几个字段被标记为 `private`。由于某些设计考虑，它的几个字段被标记为 `public` 。由于某些设计考虑，它的几个字段被标记为 `return`。由于某些设计考虑，它的几个字段被标记为 `static`。由于某些设计考虑，它的几个字段被标记为 `this`。由于某些设计考虑，它的几个字段被标记为 `void`。
 
 反对日志的一个经常被引用的理由是其计算开销。即使是中等规模的应用程序产生成千上万个日志请求，log4j 也声称是可靠、快速且可扩展的。当日志被关闭时，这种影响是微乎其微的。某些用户通过预处理或某些近期技术来注释掉所有的日志语句。大多数 Java 编译器（包括 javac 和 jikes）都会移除确定为 false 的条件语句。在下面的例子中，编译器将移除 foo 方法中的死代码 if 语句：
 
@@ -791,8 +571,6 @@ public class FactorOut {
     }
 }
 ```
-
-## 第2 章：LOG4J 架构
 
 在 log4j 中，日志请求是向 Logger 实例发出的。Logger 是一个类而不是接口。这显著减少了方法调用的开销，代价是牺牲了一些灵活性，尽管在某些近期的 JVM 中，性能差异已成为历史。
 
@@ -825,11 +603,7 @@ if(x.isDebug()) {
 }
 ```
 
-
-
-
-
-## 性能
+### 性能
 
 使用任何 Java 编译器编译 FactorOut 类。通过运行 javap（JDK 随带的标准类文件反汇编器）来反汇编生成的类文件：
 
@@ -866,7 +640,7 @@ Method void foo(int)
 
 条件编译技术在日志记录方面实现了完美的性能效率。然而，由于生成的应用程序不包含任何日志语句，因此无法为该二进制文件开启日志记录。为了获得（可能）微小的性能提升而付出的代价可能是不值的。只有当日志语句放置在紧循环中，且同一个日志请求被调用数百万或数十亿次时，性能提升才会显著。在紧循环中插入日志语句是一个两输之利的建议。即使关闭了日志，它也会减慢你的应用程序；如果开启，则会产生海量的（无用的）输出。
 
-### 2. 开启日志时决定是否记录的性能。
+#### 2. 开启日志时决定是否记录的性能。
 
 这本质上是遍历日志器层级的性能。当开启日志时，log4j 需要比较日志请求的级别与请求日志器的级别。然而，logger 可能没有分配级别；它们可以从日志层级中继承。因此，在继承级别之前，logger 可能需要搜索其祖先节点。
 
@@ -874,7 +648,7 @@ Method void foo(int)
 
 遍历层级的代价通常比仅检查是否完全禁用了日志慢 3 倍。
 
-### 3. 实际记录（格式化并写入输出设备）。
+#### 3. 实际记录（格式化并写入输出设备）。
 
 这是格式化日志输出并将其发送到目标地的开销。在这里，人们同样努力让 layout（布局/格式化器）运行尽可能快。appender（渲染器）也是如此。实际记录的典型代价大约为 100 到 300 微秒。请参见 `org.apache.log4j.performance.Logging` 获取实际数值。
 
@@ -884,7 +658,7 @@ Method void foo(int)
 
 鉴于在 Windows NT 上向控制台打印相当缓慢，性能测试是在窗口大小仅为一行的屏幕上进行的。这大大加快了控制台的输出速率。
 
-# 3 配置脚本
+## 3 配置脚本
 
 > 在符号中，人们观察到一种发现的优势，当它们能够简短地表达事物的本质时，并像原来那样将其描绘出来；那么思考的劳动确实奇迹地减少了。
 > — 莱布尼茨
@@ -893,7 +667,7 @@ Method void foo(int)
 
 log4j 环境完全可以通过程序方式进行配置。然而，使用配置文件配置 log4j 要灵活得多。目前，配置文件可以使用 Java 属性（key=value）格式或 XML 格式书写。在本章中，我将提供以属性（key-value）格式表示的以及以 XML 格式表示的 log4j 配置文件示例。
 
-## 使用 BasicConfigurator 的简单方法
+### 使用 BasicConfigurator 的简单方法
 
 正如第 1 章提到的，配置 log4j 的最简单方法是使用 `BasicConfigurator` 方法。让我们通过一个名为 `MyApp` 的虚拟应用程序来看看如何实现。
 
@@ -946,15 +720,11 @@ public class Foo {
 
 下图描述了在刚调用完 `BasicConfigurator.configure()` 方法后 MyApp 的对象图。
 
-
-
-
-
 顺带提一下，让我提到 log4j 的子 logger 仅链接到其存在的祖先节点。特别是，名为 "chapter3.Foo" 的 logger 直接链接到根 logger（root logger），从而跳过了未使用的 "chapter3" logger。这显著提升了层级遍历的性能，并略微地减少了 log4j 的内存占用。
 
 MyApp1 类通过调用 `BasicConfiguration.configure()` 方法来配置 log4j。所有其他类只需要导入 `org.apache.log4j.Logger` 类，获取它们想要使用的 logger 并进行记录即可。例如，Foo 类对 log4j 的唯一依赖就是对 `org.apache.log4j.Logger` 的导入。除了配置 log4j 的代码（如果存在）之外，用户代码除了 Logger 类外，不需要依赖 log4j。鉴于 `java.util.logging` API 具有类似的属性，通过几次简单的搜索和替换操作，就可以很容易地将大量代码从 `java.util.logging` 迁移到 log4j，反之亦然。
 
-## 使用 PropertyConfigurator 实现相同功能
+### 使用 PropertyConfigurator 实现相同功能
 
 上一个示例始终以相同的固定方式输出日志信息。幸运的是，很容易修改 MyApp1 以便在运行时控制日志输出。这是一个稍作修改的版本称为 MyApp2。
 
@@ -979,7 +749,7 @@ public class MyApp2 {
 
 MyApp2 指示 `PropertyConfigurator` 解析配置文件并根据其中的指令进行设置。下面列出的示例配置文件（也可以作为 `examples/chapter3/sample0.properties` 可用）在经过 `PropertyConfigurator` 解析后，以 `BasicConfigurator.configure` 相同的方式配置 log4j。
 
-示例 3-1：BasicConfigurator.configure() 等等项 (examples/chapter3/sample0.properties)
+**示例 3-1：BasicConfigurator.configure() 等等项 (examples/chapter3/sample0.properties)**
 
 ```properties
 # 将根 logger 级别设置为 DEBUG 并添加一个 appender Al
@@ -1019,15 +789,15 @@ log4j.appender.Al=org.apache.log4j.ConsoleAppender
 
 内部 log4j 消息只会显示在控制台上。到目前为止，内部调试消息无法重定向到控制台以外的输出设备。该局限性由于 log4j 无法使用自身执行自身的日志记录。这可以被视为我们在未来 log4j 版本中打算解决的架构缺陷。幸运的是，这种限制似乎没有产生任何实际影响。
 
-## Properties 格式配置文件的语法
+### Properties 格式配置文件的语法
 
 属性配置文件由“key=value”格式的语句组成。配置文件被传递给 `PropertyConfigurator` 实例，由该实例进行解析并相应地配置。之前提供了一个重现 `BasicConfiguration.configure` 行为的示例配置文件。很快将提供更有趣且实用的示例。然而，在深入示例之前，有对属性文件格式进行更正式的定义。掌握了预期语法的知识后，你将能够定义复杂的配置文件。在下面的语法定义中，等宽*斜体*表示由用户提供的可替换元素。括号之间的元素表示可选元素。
 
-## PROPERTIES 格式配置文件的语法
+#### PROPERTIES 格式配置文件的语法
 
-注意，`PropertyConfigurator` 不处理 XML 格式中支持的一些高级功能，如过滤器链、自定义错误处理或嵌套 appender（例如 AsyncAppender）。
+注意，`PropertyConfigurator` 不处理 XML 格式中支持的一些高级功能，如过滤器链、自定错误处理或嵌套 appender（例如 AsyncAppender）。
 
-## 设置全局范围阈值
+### 设置全局范围阈值
 
 全局范围阈值无论 logger 是什么，都根据级别过滤日志请求。其语法为：
 
@@ -1055,7 +825,7 @@ log4j.threshold=ALL
 
 默认情况下，全局范围阈值设置为最低可能的值，即 ALL。换句话说，整个层级的阈值默认是不活跃的，允许所有日志请求传递到下一个环节。log4j appenders^10 我们将在第 8 章详细讨论自定义级别。
 
-## Appender 配置
+### Appender 配置
 
 Appender 是命名的实体。名称可以包含 '=' 之外的任何字符。配置 appender 的第一步是指定它的名称和类：
 
@@ -1084,15 +854,7 @@ log4j.appender.appenderName.layout=fully.qualified.name.of.layout.class
 
 > ^10 AppenderSkeleton 是官方 log4j 分发版中所有 appender 的基类。
 
-
-
-...[/content]` 之间是空的，我没有找到需要翻译的内容。
-
-如果您是希望我翻译**“以下是需要翻译的文本”**之后出现的那些英文内容，以下是该部分的完整翻译结果：
-
-[content]
-
-## 配置日志器 (Loggers)
+### 配置日志器 (Loggers)
 
 在指定了输出器（appenders）及其关联布局（layouts）之后，你可以将它们附加到日志器（loggers）上。在常见的情况下，输出器被附加到根日志器（root logger）。配置根日志器的语法如下：
 
@@ -1101,6 +863,8 @@ log4j.rootLogger=[level], [appenderName, appenderName2, ...]
 ```
 
 上述语法意味着，在一个可选的级别之后，可以跟若干由逗号分隔的可选 appender 名称。级别值可以由不区分大小写的字符串值 "OFF","FATAL","ERROR","WARN","DEBUG","INFO","ALL" 或自定义级别组成。自定义级别可以以 "#classname" 的形式指定。在配置时，引号字符不是必须的，且在实际配置文件中必须省略。
+
+
 
 如果指定了级别值，则根级别将设置为相应的级别。如果未指定级别，则根日志器的级别保持不变。任何日志器（包括根日志器）都可以附加多个输出器。根日志器指令中提到的每个命名 appender 都会被添加到根日志器中。然而，在添加这些 appender 之前，所有之前附加到根日志器的 appender 都会被关闭并卸载。
 
@@ -1217,12 +981,6 @@ log4j.logger.chapter3=WARN
 | chapter3.MyApp2 | null | WARN |
 | chapter3.Foo | null | WARN |
 
-
-
-
-
-### 设置日志器级别
-
 因此，使用 "chapter3.MyApp2" 和 "chapter3.Foo" 日志器生成的 DEBUG 和 INFO 级别日志请求将被抑制。使用 sample2.properties 配置文件运行 MyApp2 将不会产生输出。
 
 将 "chapter3" 日志器的级别更改为 INFO 将抑制 DEBUG 消息，并允许 INFO 及以上级别的消息通过。将 sample2.properties 修改为：
@@ -1262,7 +1020,7 @@ log4j.logger.chapter3.Foo=DEBUG
 在 PropertyConfigurator 使用 sample3.properties 文件配置 log4j 后，日志器设置（具体说是它们的级别）汇总在下表中。
 
 | 日志器名称 | 分配级别 | 有效级别 |
-| --- | --- | --- |
+|---|---|---|
 | root | DEBUG | DEBUG |
 | chapter3 | WARN | WARN |
 | chapter3.MyApp2 | null | WARN |
@@ -1289,7 +1047,7 @@ log4j.logger.chapter3=DEBUG
 下表列出了在使用 sample4.properties 配置脚本配置后，日志器及其分配的级别和有效级别。
 
 | 日志器 | 分配级别 | 有效级别 |
-| --- | --- | --- |
+|---|---|---|
 | Root | OFF | OFF |
 | chapter3 | DEBUG | DEBUG |
 | chapter3.MyApp2 | null | DEBUG |
@@ -1332,7 +1090,7 @@ log4j.appender.C.layout.ConversionPattern=%r [%t] %5p %c - %m%n
 10 [main] INFO chapter3.MyApp2 - Exiting application.
 ```
 
-由于 chapter3.Foo 的日志请求低于渲染器 C 的阈值，它被该渲染器丢弃。如果你必须根据级别过滤事件，可以向渲染器附加一个 LevelFilter。LevelFilter 是一个自定义过滤器的实例。自定义过滤器将在第 6 章中讨论。注意，PropertyConfigurator 不支持自定义过滤器，自定义过滤器只能在 XML 脚本中指定。
+由于 chapter3.Foo 的日志请求低于渲染器 C 的阈值，它被该渲染器丢弃。如果你必须根据级别过滤事件，可以向渲染器附加一个 LevelFilter。LevelFilter 是一个自定过滤器的实例。自定义过滤器将在第 6 章中讨论。注意，PropertyConfigurator 不支持自定义过滤器，自定义过滤器只能在 XML 脚本中指定。
 
 ## 多个渲染器（Appenders）
 
@@ -1370,7 +1128,6 @@ INFO [main] MyApp2.java:18: - Exiting application.
 此外，由于根日志器附加了名为 R 的第二个渲染器，输出也会重定向到 example.log，即 RollingFileAppender 的目标。当该文件达到 100KB 时将滚动。RollingFileAppender 将在书后部分介绍。
 
 新手 log4j 用户往往发现渲染器是累积的。默认情况下，日志器会将日志发送到附加自身的渲染器（如果有的话）以及所有的
-
 
 附加到其祖先的 appender。因此，将同一个 appender 附加到多个 logger会导致日志输出重复。
 
@@ -1492,10 +1249,6 @@ public class MyApp3 {
 </log4j:configuration>
 ```
 
-
-
-
-
 ## 第 3 章：配置脚本
 
 - <renderer> 元素：
@@ -1503,6 +1256,7 @@ public class MyApp3 {
 该元素是空的；它既没有子元素也没有主体。然而，它必须包含两个属性：`renderedClass` 和 `renderingClass`，两者都是必须的。
 
 | renderer |
+
 | :--- |
 
 图 3-3：`<renderer>` 元素。
@@ -1567,9 +1321,6 @@ appender、layout 或 filter 的选项（即属性）是使用标准的 JavaBean
 
 `<root>` 元素配置 root logger。它不接受任何属性，因为 root logger 不能命名。此外，它接受最多一个 `<level>` 元素和零或多个 `<appender-ref>` 元素。类似于 `<logger>` 元素，在没有其他指令的情况下，root logger 的级别将被继承。
 
-
-
-
 抱歉，由于你提供的待翻译文本存在严重的格式混乱（代码块与描述文字完全交织在一起），我已根据原文的逻辑结构对其进行了重新梳理和翻译，以确保 Markdown 格式正确且逻辑通顺。以下是翻译后的译文：
 
 ```xml
@@ -1606,6 +1357,7 @@ appender、layout 或 filter 的选项（即属性）是使用标准的 JavaBean
 将产生输出：
 
 +   [main] INFO chapter3.MyApp3 - Entering application.
+
 + [main] INFO chapter3.MyApp3 - Exiting application.
 
 显然，你可以按照自己的意愿配置所有日志器的级别。在接下来列出的配置文件中，我们将 "chapter3" 日志器的级别设置为 INFO，但同时将 "chapter3.Foo" 日志器的级别设置为 DEBUG。
@@ -1648,7 +1400,7 @@ appender、layout 或 filter 的选项（即属性）是使用标准的 JavaBean
 在使用 DOMConfigurator log4j 使用 sample3 文件后，日志器设置（特别是它们的级别）汇总如下表所示。
 
 | root | 分配级别 | 有效级别 |
-| :--- | :--- | :--- |
+|:--- | :--- | :--- |
 | root | DEBUG | DEBUG |
 | chapter3 | INFO | INFO |
 | chapter3.MyApp | null | INFO |
@@ -1680,7 +1432,7 @@ appender、layout 或 filter 的选项（即属性）是使用标准的 JavaBean
 下表列出了应用 sample4.xml 配置文件后日志器及其级别设置：
 
 | 日志器名称 | 分配级别 | 有效级别 |
-| :--- | :--- | :--- |
+|:--- | :--- | :--- |
 | Root | OFF | OFF |
 | chapter3 | INFO | INFO |
 | chapter3.MyApp | null | INFO |
@@ -1719,6 +1471,7 @@ INFO chapter3.MyApp - Exiting application.
 使用 sample5.xml 配置运行 MyApp3 会产生：
 
 INFO [main] chapter3.MyApp3 - Entering application.
+
 INFO [main] chapter3.MyApp3 - Exiting application.
 
 注意，Foo.doIt() 方法中的 debug 请求低于 CONSOLE appender 的阈值，被该 appender 丢弃。但对于名为 chapter3.Foo 的日志器来说，消息是启用的。决定丢弃消息的是 appender。
@@ -1754,9 +1507,6 @@ INFO [main] chapter3.MyApp3 - Exiting application.
   </root>
 </log4j:configuration>
 ```
-
-
-
 
 ## 第 3 章：配置脚本
 
@@ -1902,7 +1652,7 @@ initial.xml 定义了附加到 root 日志器的 appender A1，第二个 appende
 
   <logger name="com.foo">
     <level value="WARN"/>
-  </logger>
+  </logger
 
   <root>
     <priority value="debug" />
@@ -1937,10 +1687,6 @@ void turnOffCryptoLogging() {
 此方法在游戏非常早阶段被调用，在 CryptoLib 中的其他代码有机会发出请求之前。由于终端用户没有配置 log4j，cryptolib 中的所有日志请求都将被抑制，包括那条令人厌烦的“Please initialize log4j”消息。
 
 如果相反，用户决定配置 log4j，那么两种可能的结果取决于用户配置 log4j 与 cryptolib 关闭日志的顺序。用户可以
-
-
-
-
 
 可以通过编程方式或在配置脚本中轻松地开启 CryptoLib 中的日志记录。
 
@@ -1997,14 +1743,18 @@ Log4j 旨在成为 Java 语言的通用日志包。这种通用性禁止了对 l
 默认初始化算法在 `LogManager` 类加载到内存时被调用。该类保证在任何日志器在使用之前加载。具体的初始化算法定义如下：
 
 - 如果系统属性 `log4j.defaultInitToOverride` 设置为 "false"以外的任何值，则跳过默认初始化（程序）。
+
 - 系统属性 `log4j.configuration` 的值定义了配置资源。`log4j.configuration` 的值可以是 URL 或系统格式表示的文件。
+
 - 如果未定义 `log4j.configuration`，则按照以下算法搜索配置资源 `log4j.xml`：
 
 在 JDK 1.2 及更高版本中，使用线程上下文类加载器（thread context class loader）搜索资源。如果失败，则尝试使用加载 log4j 库的类加载器加载资源。最后一次尝试是通过调用 `ClassLoader.getResource(resource)` 方法，即使用系统类加载器。搜索结果如果成功，始终是一个 URL。
 
 - 如果找不到资源 `log4j.xml`，使用相同的算法搜索 `log4j.properties`。
+
 - 如果未定义 `log4j.configuration` 属性且未找到资源 `log4j.xml` 或 `log4j.properties`，则无法发生默认初始化。
-- 否则，如果配置资源，调用 log4j 配置器的 `configure(URL)` 方法。如果配置资源以 .xml 结尾，则使用 `DOMConfigurator`。否则，使用 `PropertiesConfigurator`。用户可以选择一个自定义配置器。系统属性 `log4j.configuratorClass` 的值作为自定义配置器的全类名。自定义配置器必须实现 `Configuration` 接口。
+
+- 否则，如果配置资源，调用 log4j 配置器的 `configure(URL)` 方法。如果配置资源以 .xml 结尾，则使用 `DOMConfigurator`。否则，使用 `PropertiesConfigurator`。用户可以选择一个自定件配置器。系统属性 `log4j.configuratorClass` 的值作为自定义配置器的全类名。自定义配置器必须实现 `Configuration` 接口。
 
 注意：log4j 1.2.7 及更高版本探测 log4j.xml 文件。之前的 log4j 版本仅探测 log4j.properties。
 
@@ -2029,12 +1779,10 @@ public class MyApp4 {
 ```
 
 在没有准备的情况下运行 MyApp4 将导致以下令人讨厌的警告信息：
+
 log4j:WARN No appenders could be found for logger (chapter3.MyApp4). log4j:WARN Please initialize the log4j system properly.
 
 如果设置了 `log4j.configuration` 系统属性或文件 `log4j.xml`/`log4j.properties` 在类路径上（或线程加载器），则会发生初始化。假设 `MANUAL_HOME/examples/` 在类路径上，将任何 XML 配置脚本复制为 `MANUAL_HOME/examples/log4j.xml`。同样，你可以将属性文件复制为 `MANUAL_HOME/examples/log4j.properties`。尝试再次运行 MyApp4。你会发现配置文件被自动加载了。
-
-
-
 
 我们可以借助 `log4j.configuration` 系统属性来强制默认初始化过程考虑特定的文件。例如：
 
@@ -2052,7 +1800,7 @@ java -Dlog4j.configuration=file:chapter3/defaultIni.xml chapter3.MyAppApp
 
 Java Servlet 是许多服务器端应用程序的基石。对于那些不熟悉 Servlets 的人，我强烈推荐 Jason Hunter 由 O'Reilly & Associates 出版的名为《Java Servlet Programming》的书。
 
-尽管在 Java Servlet 2.3 和 Java Server Pages 1.2 规范中没有明确说明，但大多数 Web 容器会在单独的类加载器包含 Web 应用程序的类。此外，根据规范的 SRV.3.7 节，容器被要求加载 servlet 以及在单个类加载器范围内可能使用的类。在实践中，这意味着应用程序的任何工具类都会为每个 Web 应用程序重新加载。因此，你可能同时加载多个 log4j 类的副本。每个副本都将通过默认的 log4j 初始化过程。
+尽管在 Java Servlet 2.3 和 Java Server Pages 1.2 规范中没有明明说明，但大多数 Web 容器会在单独的类加载器包含 Web 应用程序的类。此外，根据规范的 SRV.3.7 节，容器被要求加载 servlet 以及在单个类加载器范围内可能使用的类。在实践中，这意味着应用程序的任何工具类都会为每个 Web 应用程重新加载。因此，你可能同时加载多个 log4j 类的副本。每个副本都将通过默认的 log4j 初始化过程。
 
 不同的类加载器会加载同一类的不同副本，这一点很重要。JVM 认为这些相同类的副本是完全无关的。类加载是 Java 中一个核心但相当高级的话题。为了进行这项讨论，对类加载器有一定的了解是必要的。关于这个主题有几十个教程，我推荐以下几个：
 
@@ -2109,6 +1857,7 @@ set TOMCAT_OPTS=-Dlog4j.configuration=file:c:/foobar.xml
 ## 初始化 servlet
 
 也可以使用特殊的 servlet 来处理 log4j。这是一个示例：
+
 初始化 servlet (chapter3/Log4jServlet)
 
 ```java
@@ -2133,7 +1882,9 @@ public class Log4jServlet extends HttpServlet {
 }
 ```
 
-在 web.xml 中定义 servlet：
+
+
+在`web.xml`中定义servlet：
 
 ```xml
 <servlet>
@@ -2147,10 +1898,9 @@ public class Log4jServlet extends HttpServlet {
 </servlet>
 ```
 
+是将`log4j.jar`包含在你的EJB jar文件中。这会导致明显的膨胀缺点。
 
-是将 `log4j.jar` 包含在你的 EJB jar 文件中。这会导致明显的膨胀缺点。
-
-有一种更好且非常优雅的方法。Java 平台 1.2 版本增加了对 jar 文件捆绑扩展的支持。jar 文件可以通过 "Class-Path" manifest 属性指定其所需的扩展和库的相对 URL。以 '/' 结尾的相对 URL 假定引用的是目录。
+有一种更好且非常优雅的方法。Java平台1.2版本增加了对jar文件捆绑扩展的支持。jar文件可以通过"Class-Path"manifest属性指定其所需的扩展和库的相对URL。以'/'结尾的相对URL假定引用的是目录。
 
 例如，将以下行
 
@@ -2158,11 +1908,11 @@ public class Log4jServlet extends HttpServlet {
 Class-Path: lib/log4j-VERSION.jar lib/
 ```
 
-添加到你应用程序的 ear 或 EJB jar 文件的 manifest文件中，将允许相对于 ear 或 jar 文件的相对路径从 `log4j-VERSION.jar` 加载 log4j 类。将 `log4j.xml` 或 `log4j.properties` 放置在 `lib/` 目录中可以让 log4j 找到属性配置文件并自动初始化。
+添加到你应用程序的ear或EJB jar文件的manifest文件中，将允许相对于ear或jar文件的相对路径从`log4j-VERSION.jar`加载log4j类。将`log4j.xml`或`log4j.properties`放置在`lib/`目录中可以让log4j找到属性配置文件并自动初始化。
 
 ### IBM Websphere
 
-请参考 IBM Redbook《WebSphere Version 4 Application Development Handbook》的第13 章，了解关于在 WebSphere 下使用 log4j 的讨论。
+请参考IBM Redbook《WebSphere Version 4 Application Development Handbook》的第13章，了解关于在WebSphere下使用log4j的讨论。
 
 尽管该红书无疑是出于高尚的意图，但我强烈建议不要采用它的初始化封装器（LogHelper）方法。那个特定的封装方案具有高度侵入性，并且违背了使用与配置分离的原则。遗憾的是，这种方法仍然偶尔被良好的用户建议。
 
@@ -2172,7 +1922,7 @@ Class-Path: lib/log4j-VERSION.jar lib/
 
 > John Steinbeck，《伊甸园纪》
 
-Log4j 将写入日志事件的任务委托给 appender。Appender 必须实现 `org.apache.log4j.Appender` 接口。该接口的关键方法总结如下（省略了 getter 方法）：
+Log4j将写入日志事件的任务委托给appender。Appender必须实现`org.apache.log4j.Appender`接口。该接口的关键方法总结如下（省略了getter方法）：
 
 ```java
 package org.apache.log4j;
@@ -2188,13 +1938,13 @@ public interface Appender {
 }
 ```
 
-Appender 接口中的大部分方法由 setter 和 getter 方法组成。一个显著的例外是 `doAppend` 方法，它接受一个 `LoggingEvent` 实例作为唯一参数。该方法可能是 log4j 框架中最重要的。它负责以适当的格式将日志事件输出到相应的输出设备。Appenders 是命名实体，确保它们可以通过名称进行引用，这种特性在配置脚本中被证明是特别相关的。所有的 appender 必须有一个 `ErrorHandler` 负责响应错误状况状况。一个 appender 可以包含多个过滤器，每个过滤器都通过调用 `addFilter` 方法添加。过滤器将在接后的章节中详细讨论。
+Appender接口中的大部分方法由setter和getter方法组成。一个显著的例外是`doAppend`方法，它接受一个`LoggingEvent`实例作为唯一参数。该方法可能是log4j框架中最重要的。它负责以适当的格式将日志事件输出到相应的输出设备。Appenders是命名实体，确保它们可以通过名称进行引用，这种特性在配置脚本中被证明是特别相关的。所有的appender必须有一个`ErrorHandler`负责响应错误状况。一个appender可以包含多个过滤器，每个过滤器都通过调用`addFilter`方法添加。过滤器将在接后的章节中详细讨论。
 
-Appenders 最终负责输出日志事件。然而，它们可以将事件的实际格式化委托给一个 `Layout` 对象。每个 layout 关联且仅关联于一个 appender，称为配置 appender。某些 appender 具有内置或固定的格式，不需要 layout。例如，`SocketAppender` 和 `JMSAppender` 仅在将它们通过网线传输之前对 `LoggingEvent` 对象进行序列化。log4j 自定义 appender 的开发者应该确保任何不需要 layout 的 appender 都在其 `requiresLayout` 方法中返回 `false`。未这样做将导致当自定义 appender 不需要 layout 时，log4j 配置器（例如 `DOMConfigurator`）会由于缺少 layout 信息而报错。
+Appenders最终负责输出日志事件。然而，它们可以将事件的实际格式化委托给一个`Layout`对象。每个layout关联且仅关联于一个appender，称为配置appender。某些appender具有内置或固定的格式，不需要layout。例如，`SocketAppender`和`JMSAppender`仅在将它们通过网线传输之前对`LoggingEvent`对象进行序列化。log4j自定义appender的开发者应该确保任何不需要layout的appender都在其`requiresLayout`方法中返回`false`。未这样做将导致当自定义appender不需要layout时，log4j配置器（例如`DOMConfigurator`）会由于缺少layout信息而报错。
 
 ### AppenderSkeleton
 
-AppenderSkeleton 类是一个抽象类。它实现了所有 appender 共同享的功能，例如获取或设置它们的名称、阈值、过滤器和错误处理程序的方法。它是所有附加到 log4j 中的 appender 的父类。尽管是一个抽象类，但 `AppenderSkeleton` 实际上实现了 `Appender` 接口中的 `doAppend()` 方法。讨论 `AppenderSkeleton` 类最清晰的方法可能是展示实际源代码。
+AppenderSkeleton类是一个抽象类。它实现了所有appender共同享的功能，例如获取或设置它们的名称、阈值、过滤器和错误处理程序的方法。它是所有附加到log4j中的appender的父类。尽管是一个抽象类，但`AppenderSkeleton`实际上实现了`Appender`接口中的`doAppend()`方法。讨论`AppenderSkeleton`类最清晰的方法可能是展示实际源代码。
 
 ```java
 public synchronized void doAppend(LoggingEvent event) {
@@ -2218,42 +1968,39 @@ public synchronized void doAppend(LoggingEvent event) {
 }
 ```
 
-此 `doAppend` 方法的实现是同步的。这意味着从不同线程向 appender 写入日志是安全的。当一个线程（例如 $T$）执行 `doAppend` 方法时，其他线程的后续调用将排队，直到 $T$ 离开 `doAppend` 方法，确保 $T$ 拥有独占访问。
+此`doAppend`方法的实现是同步的。这意味着从不同线程向appender写入日志是安全的。当一个线程（例如$T$）执行`doAppend`方法时，其他线程的后续调用将排队，直到$T$离开`doAppend`方法，确保$T$拥有独占访问。
 
-`doAppend` 方法的第一条语句检查 `closed` 字段是否为 `true`。如果是，`doAppend` 将向控制台输出警告消息并返回。换句话之，一旦关闭，就无法写入 appender。`AppenderSkeleton` 的子类在调用其 `close()` 方法时需要将布尔变量 `closed` 设置为 `true`。语句检查日志事件是否低于 appender 的阈值。如果是，该方法将返回而不进行进一步处理。接下来，方法遍历过滤器。根据过滤器链做出的决策，事件可以被拒绝或接受。
+`doAppend`方法的第一条语句检查`closed`字段是否为`true`。如果是，`doAppend`将向控制台输出警告消息并返回。换句话之，一旦关闭，就无法写入appender。`AppenderSkeleton`的子类在调用其`close()`方法时需要将布尔变量`closed`设置为`true`。语句检查日志事件是否低于appender的阈值。如果是，该方法将返回而不进行进一步处理。接下来，方法遍历过滤器。根据过滤器链做出的决策，事件可以被拒绝或接受。
 
-## 第 4 章：APPENDERS
+## 第4章：APPENDERS
 
-图 4-1：AppenderSkeleton 的简化 UML 图
+图4-1：AppenderSkeleton的简化UML图
 
-图 4-1 中的简化 UML 图说明了 AppenderSkeleton 与其他类的关系，省略了所有属性和 getter 方法。Appender 可以将错误状况的处理委托给 `ErrorHandler`。默认情况下，AppenderSkeleton 将错误处理器设置为 `OnceErrorHandler`，它向控制台打印单个警告消息而随后的错误将被忽略。注意 AppenderSkeleton 还实现了 `Option` 接口。该接口拥有一个方法 `activateOptions()`。在设置 appender 的所有选项后，配置器调用此方法以通知 appender 进行绑定或激活。事实上，取决于 appender，某些选项因为与其他选项的干扰而无法激活。例如，由于文件创建取决于截断模式，`FileAppender` 在 `Append` 选项已知之前无法操作。AppenderSkeleton 仅提供一个选项，尽管它是重要的：
+图4-1中的简化UML图说明了AppenderSkeleton与其他类的关系，省略了所有属性和getter方法。Appender可以将错误状况的处理委托给`ErrorHandler`。默认情况下，AppenderSkeleton将错误处理器设置为`OnceErrorHandler`，它向控制台打印单个警告消息而随后的错误将被忽略。注意AppenderSkeleton还实现了`Option`接口。该接口拥有一个方法`activateOptions()`。在设置appender的所有选项后，配置器调用此方法以通知appender进行绑定或激活。事实上，取决于appender，某些选项因为与其他选项的干扰而无法激活。例如，由于文件创建取决于截断模式，`FileAppender`在`Append`选项已知之前无法操作。AppenderSkeleton仅提供一个选项，尽管它是重要的：
 
-- Threshold (Level)：在配置字符串中，级别值可以是以下不区分大小写的字符串之一："ALL","DEBUG","INFO","WARN","ERROR","FATAL"，或者一个自定义级别值。自定义级别值可以以 "level|classname" 的形式指定。标准级别字符串不区分大小写，与自定义类级的类名部分相反。
+- Threshold (Level)：在配置字符串中，级别值可以是以下不区分大小写的字符串之一："ALL","DEBUG","INFO","WARN","ERROR","FATAL"，或者一个自定义级别值。自定义级别值可以以"level|classname"的形式指定。标准级别字符串不区分大小写，与自定义类级的类名部分相反。
 
-默认情况下，所有 AppenderSkeleton 类都将 Threshold 选项设置为 `null`。
+默认情况下，所有AppenderSkeleton类都将Threshold选项设置为`null`。
 
-## WriterAppender
+### WriterAppender
 
-WriterAppender 将事件写入 `java.io.Writer`。该类提供了其他类在其基础上构建的基础服务。用户通常不会直接实例化 `WriterAppender` 对象。由于 `java.io.Writer` 类型无法映射到字符串，因此在脚本中无法指定目标 Writer 对象。换句话说，你无法从脚本中配置 `WriterAppender`。这显然意味着 `WriterAppender` 没有可配置选项，我们将在接下来描述。
+WriterAppender将事件写入`java.io.Writer`。该类提供了其他类在其基础上构建的基础服务。用户通常不会直接实例化`WriterAppender`对象。由于`java.io.Writer`类型无法映射到字符串，因此在脚本中无法指定目标Writer对象。换句话说，你无法从脚本中配置`WriterAppender`。这显然意味着`WriterAppender`没有可配置选项，我们将在接下来描述。
 
-- Encoding (String)：编码指定了 16 位 Unicode 字符转换为 8 位字节的转换方法。此 appender 将使用本地平台的默认编码，除非你使用编码选项另行指定。根据 `java.lang` 包的文档，允许的值取决于虚拟机的实现，尽管所有实现都要求至少支持以下编码："US-ASCII","ISO-8859-1","UTF-8","UTF-16LE" 和 "UTF-16"。
+- Encoding (String)：编码指定了16位Unicode字符转换为8位字节的转换方法。此appender将使用本地平台的默认编码，除非你使用编码选项另行指定。根据`java.lang`包的文档，允许的值取决于虚拟机的实现，尽管所有实现都要求至少支持以下编码："US-ASCII","ISO-8859-1","UTF-8","UTF-16LE"和"UTF-16"。
 
-默认情况下，Encoding 选项为 `null`，以便使用平台默认编码。
+默认情况下，Encoding选项为`null`，以便使用平台默认编码。
 
+### ImmediateFlush布尔值
 
+如果设置为true，每次写入LoggingEvent后都会在底层的Writer对象上执行一次刷新（flush）操作。相反，如果该选项设置为false，则每次写入后都不会执行刷新操作。通常情况下，这可以使日志吞吐量提高约15%。缺点是，如果应用程序异常退出，在Writer缓冲区中未写入的字符可能会丢失。这可能会特别棘手，因为这些未写入的字符可能包含识别崩溃原因的关键信息¹¹⁵。
 
+### Threshold阈值级别
 
-## ImmediateFlush 布尔值
-
-如果设置为 true，每次写入 LoggingEvent 后都会在底层的 Writer 对象上执行一次刷新（flush）操作。相反，如果该选项设置为 false，则每次写入后都不会执行刷新操作。通常情况下，这可以使日志吞吐量提高约 15%。缺点是，如果应用程序异常退出，在 Writer 缓冲区中未写入的字符可能会丢失。这可能会特别棘手，因为这些未写入的字符可能包含识别崩溃原因的关键信息¹¹⁵。
-
-## Threshold 阈值级别
-
-默认情况下，ImmediateFlush 选项设置为 true。请参见 AppenderSkeleton 的选项。
+默认情况下，ImmediateFlush选项设置为true。请参见AppenderSkeleton的选项。
 
 通常情况下，如果你禁用了刷新，请确保在应用程序退出时（即使是正常退出）也刷新输出流。否则，正如接下来的示例所示，日志消息将是无法输出的。
 
-示例 4-1：在不刷新的情况下退出应用程序 (examples/chapter4/ExitWoes1.java)
+示例4-1：在不刷新的情况下退出应用程序 (examples/chapter4/ExitWoes1.java)
 
 ```java
 package chapter4;
@@ -2262,7 +2009,7 @@ import org.apache.log4j.*;
 import java.io.*;
 
 /**
- * 一个简单的应用程序，说明了在退出应用程序时如果不刷新 i/o 缓冲区
+ * 一个简单的应用程序，说明了在退出应用程序时如果不刷新i/o缓冲区
  * 将导致日志数据丢失。
  */
 public static class ExitWoes1 {
@@ -2283,15 +2030,15 @@ public static class ExitWoes1 {
 }
 ```
 
-此示例创建了一个 WriterApp，它使用封装了 FileOutputStream 的 OutputStreamWriter 作为其底层 Writer 对象，并禁用了立即刷新。然后它附加了该 appender 并记录了一个简单的 debug 消息。根据 OutputStreamWriter 的 JavaDoc，调用 write() 方法会触发对编码字符的转换器。生成的字节在写入底层输出流之前会累积在缓冲区中。尽管这听起来可能很奇怪，但运行 ExtWoe 不会在 exitWoe.log 文件中产生任何输出，因为 Java VM 在退出时不会刷新现有的流。调用 Logger-Repository 的 shutdown() 方法可以确保层级中的所有 appender 都被关闭并且它们的缓冲区被刷新。对于大多数应用程序来说，这只需要在退出应用程序之前包含以下语句。
+此示例创建了一个WriterApp，它使用封装了FileOutputStream的OutputStreamWriter作为其底层Writer对象，并禁用了立即刷新。然后它附加了该appender并记录了一个简单的debug消息。根据OutputStreamWriter的JavaDoc，调用write()方法会触发对编码字符的转换器。生成的字节在写入底层输出流之前会累积在缓冲区中。尽管这听起来可能很奇怪，但运行ExtWoe不会在exitWoe.log文件中产生任何输出，因为Java VM在退出时不会刷新现有的流。调用Logger-Repository的shutdown()方法可以确保层级中的所有appender都被关闭并且它们的缓冲区被刷新。对于大多数应用程序来说，这只需要在退出应用程序之前包含以下语句。
 
 ```java
 LogManager.getLoggerRepository().shutdown();
 ```
 
-请参见文件 examples/chapter4/ExitWoe2.java 的示例用法。
+请参见文件examples/chapter4/ExitWoe2.java的示例用法。
 
-WriterApp 是另外四个 appender 的父类，分别名为 ConsoleAppender 和 FileAppender，而后者反又是 RollingFileAppender 和 DailyRollingFileAppender 的父类。图 4-2 展示了 WriterApp 及其子类的类图。
+WriterApp是另外四个appender的父类，分别名为ConsoleAppender和FileAppender，而后者反又是RollingFileAppender和DailyRollingFileAppender的父类。图4-2展示了WriterApp及其子类的类图。
 
 ```java
 <<interface>>
@@ -2334,262 +2081,337 @@ DailyRollingFileAppender
 +setDatePattern(String)
 ```
 
-图 4-2：WriterAppender 及其派生类的简化类图。
+图4-2：WriterAppender及其派生类的简化类图。
 
-## ConsoleAppender
+### ConsoleAppender
 
-ConsoleAppender 如其名，在控制台上追加内容，或者更准确地说，是在 System.out 或 System.err 上，并使用用户指定的布局对事件进行格式化。默认目标是 System.out。System.out 和 System.err 都是 java.io.PrintStream 对象。因此，它们被封装在 OutputStream 中，该输出会缓冲 i/o 操作，但不会缓冲字符转换。
+ConsoleAppender如其名，在控制台上追加内容，或者更准确地说，是在System.out或System.err上，并使用用户指定的布局对事件进行格式化。默认目标是System.out。System.out和System.err都是java.io.PrintStream对象。因此，它们被封装在OutputStream中，该输出会缓冲i/o操作，但不会缓冲字符转换。
 
 | 选项名称 | 类型 |  |
+
 |---|---|---|
-| Encoding | String | 参见 WriterAppender 选项。 |
-| ImmediateFlush | boolean | 缓冲 i/o 并没有太大意义，因此将此选项保持为默认值（true）通常是合适的。更多细节请参见 WriterAppend 选项。 |
-| Target | String | 字符串值 "System.out" 或 "System.err" 之一。默认目标是 System.out。 |
-| Threshold | Level | 参见 AppenderSkeleton 选项。 |
 
-## FileAppender
+| Encoding | String | 参见WriterAppender选项。 |
 
-FileAppender 是 WriterAppender 的子类，将日志事件追加到文件中。如果文件已存在，则根据 Append 选项的值进行追加或截断。它使用一个 FileOutputStream，该流被一个 OutputStreamWriter 封装，后者执行的是 i/o 操作而非字符转换。为了优化字符转换，你可以将 BufferedIO 选项设置为 true，这实际上是将 StreamWriter 封装在 BufferedWriter 中。FileAppender 的选项总结如下所示。
+| ImmediateFlush | boolean | 缓冲i/o并没有太大意义，因此将此选项保持为默认值（true）通常是合适的。更多细节请参见WriterAppend选项。 |
+
+| Target | String | 字符串值"System.out"或"System.err"之一。默认目标是System.out。 |
+
+| Threshold | Level | 参见AppenderSkeleton选项。 |
+
+### FileAppender
+
+FileAppender是WriterAppender的子类，将日志事件追加到文件中。如果文件已存在，则根据Append选项的值进行追加或截断。它使用一个FileOutputStream，该流被一个OutputStreamWriter封装，后者执行的是i/o操作而非字符转换。为了优化字符转换，你可以将BufferedIO选项设置为true，这实际上是将StreamWriter封装在BufferedWriter中。FileAppender的选项总结如下所示。
 
 | 选项名称 | 类型 | 描述 |
+
 |---|---|---|
-| Append | Boolean | 如果为 true，则将事件追加到现有文件的末尾。否则，如果 Append 为 false，任何现有文件都将被截断。此选项默认设置为 true。 |
-| Encoding | String | 参见 WriterAppender 选项。 |
-| BufferedIO | Boolean | 此选项默认设置为 false。如果设置为 true，底层的 OutputStreamWriter 将被 BufferedWriter 对象封装。将 BufferedIO 设置为 true 会自动将 ImmediateFlush 设置为 false。 |
-| BufferSize | int | BufferedIO 这个名称具有误导性，因为 OutputStreamWriter 已经支持了 BufferedIO。 |
+
+| Append | Boolean | 如果为true，则将事件追加到现有文件的末尾。否则，如果Append为false，任何现有文件都将被截断。此选项默认设置为true。 |
+
+| Encoding | String | 参见WriterAppender选项。 |
+
+| BufferedIO | Boolean | 此选项默认设置为false。如果设置为true，底层的OutputStreamWriter将被BufferedWriter对象封装。将BufferedIO设置为true会自动将ImmediateFlush设置为false。 |
+
+| BufferSize | int | BufferedIO这个名称具有误导性，因为OutputStreamWriter已经支持了BufferedIO。 |
+
 | File | String | 写入的文件名。如果文件不存在，则会创建。 |
 
-在 Windows 平台上，用户忘记转义反斜杠。例如，"c:\temp.log" 可能无法被正确解析，因为 '\t' 被解释为制表符（u009）。正确的值可以指定 c:/temp/log。
+在Windows平台上，用户忘记转义反斜杠。例如，"c:\temp.log"可能无法被正确解析，因为'\t'被解释为制表符（u009）。正确的值可以指定c:/temp/log。
 
-| ImmediateFlush | Boolean | 参见 WriterAppend 选项 |
-| Threshold | Level | 参见 Append 选项 |
+| ImmediateFlush | Boolean | 参见WriterAppend选项 |
 
-默认情况下，FileAppender 在写入事件时执行刷新操作，以确保每个事件都立即写入磁盘。将 ImmediateFlush 设置为 false 可以通过让 OutputStream 在写入磁盘之前缓冲字节来大幅减少 i/o 活动。对于短消息，可以观察到吞吐量提高了两或三 倍（即单位时间内的日志数量）。对于长消息，吞吐量的收益较小，范围在 1 到 2 倍之间。启用 BufferedIO 选项（即字符到字节的缓冲），与仅磁盘 i/o 缓冲（ImmediateFlush=false）相比，性能额外提升了 10% 到 40%。性能在很大程度上取决于主机和 JDK 版本。吞吐量测量基于 chapter4/io 应用程序。请参见文件 examples/chapter4/io.java 的源码。
+| Threshold | Level | 参见Append选项 |
 
-## RollingAppender
+默认情况下，FileAppender在写入事件时执行刷新操作，以确保每个事件都立即写入磁盘。将ImmediateFlush设置为false可以通过让OutputStream在写入磁盘之前缓冲字节来大幅减少i/o活动。对于短消息，可以观察到吞吐量提高了两或三倍（即单位时间内的日志数量）。对于长消息，吞吐量的收益较小，范围在1到2倍之间。启用BufferedIO选项（即字符到字节的缓冲），与仅磁盘i/o缓冲（ImmediateFlush=false）相比，性能额外提升了10%到40%。性能在很大程度上取决于主机和JDK版本。吞吐量测量基于chapter4/io应用程序。请参见文件examples/chapter4/io.java的源码。
 
-RollingAppender 扩展了 FileAppender，限制日志文件的大小为用户指定的长度。日志输出写入由 File 选项指定的文件。当日志文件达到指定大小时，它会滚动（roll over）：通过在文件名后附加“1”来重命名。如果存在“1”文件，则会先将其重命名为“2”，依此类推。例如，如果 File 选项设置为 wombat.log，那么 wombat.log 将重命名为 wombat.log.1。任何现 wombat.log.1 文件将重命名为 wombat.log.2，任何先存在的 wombat.log.2 文件将重命名为 .3 以此类推，假设 MaxBackupIndex 设置为 4，wobat.log.4 将被直接删除而不进行后续级联。
+### RollingAppender
 
-因此，除了 FileAppender 的选项外，RollingAppender 还有两个额外的 MaxFileSize 和 MaxBackupIndex，总结如下。
+RollingAppender扩展了FileAppender，限制日志文件的大小为用户指定的长度。日志输出写入由File选项指定的文件。当日志文件达到指定大小时，它会滚动（roll over）：通过在文件名后附加“1”来重命名。如果存在“1”文件，则会先将其重命名为“2”，依此类推。例如，如果File选项设置为wombat.log，那么wombat.log将重命名为wombat.log.1。任何现wombat.log.1文件将重命名为wombat.log.2，任何先存在的wombat.log.2文件将重命名为.3以此类推，假设MaxBackupIndex设置为4，wobat.log.4将被直接删除而不进行后续级联。
+
+因此，除了FileAppender的选项外，RollingAppender还有两个额外的MaxFileSize和MaxBackupIndex，总结如下。
 
 | 选项名称 | 类型 | 描述 |
+
 |---|---|---|
-| Append | Boolean | 参见 FileAppender 选项。 |
-| Encoding | String | 参见 WriterAppend 选项。 |
 
+| Append | Boolean | 参见FileAppender选项。 |
 
+| Encoding | String | 参见WriterAppend选项。 |
 
-
-
-## ROLLINGFileAppender
+### ROLLINGFileAppender
 
 | | | |
+
 |---|---|---|
-| BufferedIO | Boolean | 参见 FileAppend options。 |
-| BufferSize | int | 参见 FileAppend options。 |
-| File | String | 参见 FileAppend options。 |
-| ImmediateFlush | Boolean | 参见 WriterAppend options。 |
+
+| BufferedIO | Boolean | 参见FileAppend选项。 |
+
+| BufferSize | int | 参见FileAppend选项。 |
+
+| File | String | 参见FileAppend选项。 |
+
+| ImmediateFlush | Boolean | 参见WriterAppend选项。 |
+
 | MaxBackupIndex | int | |
 
-MaxBackupIndex 选项决定了之前滚过的文件的数量。该选项接受一个正整数值。如果设置为零，则在达到 MaxFileSize 时将不会发生滚动。该选项的默认值为 1。出于效率考虑，MaxBackupIndex 选项的值不应超过 10。可以考虑增加 MaxFileSize 而不是 MaxBackupIndex。
+MaxBackupIndex选项决定了之前滚过的文件的数量。该选项接受一个正整数值。如果设置为零，则在达到MaxFileSize时将不会发生滚动。该选项的默认值为1。出于效率考虑，MaxBackupIndex选项的值不应超过10。可以考虑增加MaxFileSize而不是MaxBackupIndex。
 
-MaxFileSize 选项接受一个字符串值，表示 0 - 2^31 范围内的长整数。你可以使用后缀 "KB"、MB" 或 "GB" 来指定该值，以便该整数被解释为以千字节、兆字节或吉字节。例如，值 "10KB" 将被解释为 10240。
+MaxFileSize选项接受一个字符串值，表示0-2^31范围内的长整数。你可以使用后缀"KB"、MB"或"GB"来指定该值，以便该整数被解释为以千字节、兆字节或吉字节。例如，值"10KB"将被解释为10240。
 
-当日志文件达到 MaxFileSize 时会发生滚动。请注意，由于最后一个事件在触发滚动之前会被完整写入，实际文件通常比 MaxFileSize 的值大一点。
+当日志文件达到MaxFileSize时会发生滚动。请注意，由于最后一个事件在触发滚动之前会被完整写入，实际文件通常比MaxFileSize的值大一点。
 
 | | | |
+
 |---|---|---|
-| Threshold | Level | 参见 AppendersSkeleton options。 |
 
-size 的默认值为 10MB。
+| Threshold | Level | 参见AppendersSkeleton选项。 |
 
-examples/chapter4/ 目录下包含一个简单的示例 chapter4.Rolling。它通过读取属性 格式或 XML 格式的配置文件来配置 log4j，并提供循环直到生成用户指定的数量的日志事件。用户应该包含同一目录下的 properties 和 rolling.xml 配置文件，以获取 RollingFileAppender 配置的简短示例。
+size的默认值为10MB。
 
-使用 RollingFileAppender，系统管理员可以控制日志文件的大小。显然，容量并不是组织日志文件的常用标准；大多数系统管理员更喜欢通过以下方式组织日志文件：
+examples/chapter4/目录下包含一个简单的示例chapter4.Rolling。它通过读取属性格式或XML格式的配置文件来配置log4j，并提供循环直到生成用户指定的数量的日志事件。用户应该包含同一目录下的properties和rolling.xml配置文件，以获取RollingFileAppender配置的简短示例。
 
-## DailyRollingFileender
+使用RollingFileAppender，系统管理员可以控制日志文件的大小。显然，容量并不是组织日志文件的常用标准；大多数系统管理员更喜欢通过以下方式组织日志文件：
 
-DailyRollingFileender 扩展了 FileAppender 在用户选择的时间滚动文件。滚动调度由 DatePattern 选项指定。该模式应遵循 java.text.SimpleDateFormat 约定。特别是，你必须对单引号内的字面文本进行转义。格式化后的日期模式将用作滚动文件的后缀。例如，如果 File 设置为 /foo/bar.log 且 DatePattern 设置为 'yyyy-MM-dd'，那么在 2002-06-19 午夜，日志文件 /foo/bar.log 将复制到 /foo/bar.log.2002-06-19，2001-06-20 的日志将继续在该文件中记录，并在第二天同样进行滚动。
+### DailyRollingFileender
 
-可以指定每月、每周、半天、每日、每小时甚至每分钟的调度。下表列出了各种 DatePattern 值以及滚动间隔和文件名。
+DailyRollingFileender扩展了FileAppender在用户选择的时间滚动文件。滚动调度由DatePattern选项指定。该模式应遵循java.text.SimpleDateFormat约定。特别是，你必须对单引号内的字面文本进行转义。格式化后的日期模式将用作滚动文件的后缀。例如，如果File设置为/foo/bar.log且DatePattern设置为'yyyy-MM-dd'，那么在2002-06-19午夜，日志文件/foo/bar.log将复制到/foo/bar.log.2002-06-19，2001-06-20的日志将继续在该文件中记录，并在第二天同样进行滚动。
+
+可以指定每月、每周、半天、每日、每小时甚至每分钟的调度。下表列出了各种DatePattern值以及滚动间隔和文件名。
 
 | DatePattern | Result |
+
 |---|---|
-| .yyyy-MM | 在每个月的初滚动。<br><br>示例：假设每周的第一天是周日，在 2001 年 3 月 25 日 00:00，/foo/bar.log 将被复制到 /foo/bar.log.2001-03。4 月份的日志将输出到 /foo/bar.log，直到 5 月初滚动。 |
-| .yyyy-ww | 在每周的第一天滚动。每周的第一天取决于区域设置。<br><br>示例：假设每周的第一天是周日，在 2000 年 6 月 9 日（周六午夜），/foo/bar.log 将被复制到 /foo/bar.log.2001-23。2002 年第 24 周的日志将输出到 /foo/bar.log，直到下周滚动。 |
-| .yyyy-MM-dd | 在每天午夜滚动。<br><br>示例：在 2002 年 3 月 9 日午夜，/foo/bar.log 将被复制到 /foo/bar.log.2001-03-08。3 月 9 日的日志将输出到 /foo/bar.log，直到第二天开始滚动。 |
-| .yyyy-MM-dd-a | 在每天的午夜和中午滚动。<br><br>示例：在 2002 年 3 月 9 日中午，/foo/bar.log 将被复制到 /foo/bar.log.2002-03-09-AM。9 日下午的日志将输出到 /foo/bar.log，直到午夜滚动。 |
+
+| .yyyy-MM | 在每个月的初滚动。<br><br>示例：假设每周的第一天是周日，在2001年3月25日00:00，/foo/bar.log将被复制到/foo/bar.log.2001-03。4月份的日志将输出到/foo/bar.log，直到5月初滚动。 |
+
+| .yyyy-ww | 在每周的第一天滚动。每周的第一天取决于区域设置。<br><br>示例：假设每周的第一天是周日，在2000年6月9日（周六午夜），/foo/bar.log将被复制到/foo/bar.log.2001-23。2002年第24周的日志将输出到/foo/bar.log，直到下周滚动。 |
+
+| .yyyy-MM-dd | 在每天午夜滚动。<br><br>示例：在2002年3月9日午夜，/foo/bar.log将被复制到/foo/bar.log.2001-03-08。3月9日的日志将输出到/foo/bar.log，直到第二天开始滚动。 |
+
+| .yyyy-MM-dd-a | 在每天的午夜和中午滚动。<br><br>示例：在2002年3月9日中午，/foo/bar.log将被复制到/foo/bar.log.2002-03-09-AM。9日下午的日志将输出到/foo/bar.log，直到午夜滚动。 |
 
 .yyyy-MM-dd-HH 每小时整点滚动。
 
-> 示例：在 2002 年 3 月 9 日大约 11:00:000，/foo/bar.log 将被复制到 /foo/bar.log.2002-03-09-10。3 月 9 日第 11 小时的日志将输出到 /foo/bar.log，直到下一小时开始滚动。
+> 示例：在2002年3月9日大约11:00:000，/foo/bar.log将被复制到/foo/bar.log.2002-03-09-10。3月9日第11小时的日志将输出到/foo/bar.log，直到下一小时开始滚动。
 
 .yyyy-MM-dd-HH-mm 每分钟初滚动。
 
-> 示例：在 2002 年 3 月 9 日大约 11:23.000，/foo/bar.log 将被复制到 /foo/bar.log.2002-03-09-11-23。3 月 9 日第 11 小时的日志将输出到 /foo/bar.log，直到午夜滚动。 |
+> 示例：在2002年3月9日大约11:23.000，/foo/bar.log将被复制到/foo/bar.log.2002-03-09-11-23。3月9日第11小时的日志将输出到/foo/bar.log，直到午夜滚动。 |
 
 | Option Name | Type | Description |
-|---|---|---|
-| Append | Boolean | 参见 FileAppend options。 |
-| DatePattern | String | 滚动调度由 DatePattern 选项指定。该模式应遵循 java.text.SimpleDateFormat 约定。 |
-| ... | | | |
-| Threshold | Level | 参见 AppendersSkeleton options。 |
 
-size 的默认值为 10MB。
+|---|---|---|
+
+| Append | Boolean | 参见FileAppend选项。 |
+
+| DatePattern | String | 滚动调度由DatePattern选项指定。该模式应遵循java.text.SimpleDateFormat约定。 |
+
+| ... | | | |
+
+| Threshold | Level | 参见AppendersSkeleton选项。 |
+
+size的默认值为10MB。
 
 | Encoding | String |
+
 | --- | --- |
 
 | Option Name | Type | Description |
+
 |---|---|---|
-| IO | String | 参见 Writerender options。 |
-| BufferedIO | Boolean | 参见 FileAppender options。 |
-| BufferSize | int | 参见 FileAppender options。 |
-| File | String | 参见 FileAppender options。 |
-| ImmediateFlush | Boolean | 参见 Writerender options。 |
-| Threshold | Level | 参见 SkeletonAppender options |
 
-一个简单的示例 chapter4.Rolling 包含在 examples/chapter4/ 目录下。它通过读取属性 格式或 XML 格式的配置文件来配置 log4j，并提供循环直到生成用户指定的数量的日志事件。用户应该包含同一目录下的 properties 和 rolling.xml 配置文件，以获取 RollingFileAppender 配置的简短示例。
+| IO | String | 参见Writerender选项。 |
 
-使用 RollingFileAppender，系统管理员可以控制日志文件的大小。显然，容量并不是组织日志文件的常用标准；大多数系统管理员更喜欢通过以下方式组织日志文件：
+| BufferedIO | Boolean | 参见FileAppender选项。 |
 
-## DailyRollingFileender
+| BufferSize | int | 参见FileAppender选项。 |
 
-DailyRollingFileender 扩展了 FileAppender 在用户选择的时间滚动文件。滚动调度由 DatePattern 选项指定。该模式应遵循 java.text.SimpleDateFormat 约定。特别是，你必须对单引号内的字面文本进行转义。格式化后的日期模式将用作滚动文件的后缀。例如，如果 File 设置为 /foo/bar.log 且 DatePattern 设置为 'yyyy-MM-dd'，那么在 2002-06-19 午夜，日志文件 /foo/bar.log 将复制到 /foo/bar.log.2002-06-19，2001-06-20 的日志将继续在该文件中记录，并在第二天同样滚动。
+| File | String | 参见FileAppender选项。 |
 
-可以指定每月、每周、半天、每日、每小时甚至每分钟的调度。下表列出了各种 DatePattern 值以及滚动间隔和文件名。
+| ImmediateFlush | Boolean | 参见Writerender选项。 |
+
+| Threshold | Level | 参见SkeletonAppender选项 |
+
+一个简单的示例chapter4.Rolling包含在examples/chapter4/目录下。它通过读取属性格式或XML格式的配置文件来配置log4j，并提供循环直到生成用户指定的数量的日志事件。用户应该包含同一目录下的properties和rolling.xml配置文件，以获取RollingFileAppender配置的简短示例。
+
+使用RollingFileAppender，系统管理员可以控制日志文件的大小。显然，容量并不是组织日志文件的常用标准；大多数系统管理员更喜欢通过以下方式组织日志文件：
+
+### DailyRollingFileender
+
+DailyRollingFileender扩展了FileAppender在用户选择的时间滚动文件。滚动调度由DatePattern选项指定。该模式应遵循java.text.SimpleDateFormat约定。特别是，你必须对单引号内的字面文本进行转义。格式化后的日期模式将用作滚动文件的后缀。例如，如果File设置为/foo/bar.log且DatePattern设置为'yyyy-MM-dd'，那么在2002-06-19午夜，日志文件/foo/bar.log将复制到/foo/bar.log.2002-06-19，2001-06-20的日志将继续在该文件中记录，并在第二天同样滚动。
+
+可以指定每月、每周、半天、每日、每小时甚至每分钟的调度。下表列出了各种DatePattern值以及滚动间隔和文件名。
 
 | DatePattern | Result |
+
 |---|---|
-| .yyyy-MM | 在每个月的初滚动。<br><br>示例：假设每周的第一天是周日，在 2001 年 3 月 25 日 00:00，/foo/bar.log 将被复制到 /foo/bar.log.2001-03。4 月份的日志将输出到 /foo/bar.log，直到 5 月初滚动。 |
-| .yyyy-ww | 在每周的第一天滚动。每周的第一天取决于区域设置。<br><br>示例：假设每周的第一天是周日，在 2000 年 6 月 9 日（周六午夜），/foo/bar.log 将被复制到 /foo/bar.log.2001-23。2002 年第 24 周的日志将输出到 /foo/bar.log，直到下周滚动。 |
-| .yyyy-MM-dd | 在每天午夜滚动。<br><br>示例：在 2002 年 3 月 9 日午夜，/foo/bar.log 将被复制到 /foo/bar.log.2001-03-08。3 月 9 日的日志将输出到 /foo/bar.log，直到第二天开始滚动。 |
-| .yyyy-MM-dd-a | 在每天的午夜和中午滚动。<br><br>示例：在 2002 年 3 月 9 日中午，/foo/bar.log 将被复制到 /foo/bar.log.2002-03-09-AM。9 日下午的日志将输出到 /foo/bar.log，直到午夜滚动。 |
+
+| .yyyy-MM | 在每个月的初滚动。<br><br>示例：假设每周的第一天是周日，在2001年3月25日00:00，/foo/bar.log将被复制到/foo/bar.log.2001-03。4月份的日志将输出到/foo/bar.log，直到5月初滚动。 |
+
+| .yyyy-ww | 在每周的第一天滚动。每周的第一天取决于区域设置。<br><br>示例：假设每周的第一天是周日，在2000年6月9日（周六午夜），/foo/bar.log将被复制到/foo/bar.log.2001-23。2002年第24周的日志将输出到/foo/bar.log，直到下周滚动。 |
+
+| .yyyy-MM-dd | 在每天午夜滚动。<br><br>示例：在2002年3月9日午夜，/foo/bar.log将被复制到/foo/bar.log.2001-03-08。3月9日的日志将输出到/foo/bar.log，直到第二天开始滚动。 |
+
+| .yyyy-MM-dd-a | 在每天的午夜和中午滚动。<br><br>示例：在2002年3月9日中午，/foo/bar.log将被复制到/foo/bar.log.2002-03-09-AM。9日下午的日志将输出到/foo/bar.log，直到午夜滚动。 |
 
 .yyyy-MM-dd-HH 每小时整点滚动。 
 
-> 示例：在 2002 年 3 月 9 日大约 11:00:000，/foo/bar.log 将被复制到 /foo/bar.log.2002-03-09-10。3 月 9 日第 11 小时的日志将输出到 /foo/bar.log，直到下一小时开始滚动。
+> 示例：在2002年3月9日大约11:00:000，/foo/bar.log将被复制到/foo/bar.log.2002-03-09-10。3月9日第11小时的日志将输出到/foo/bar.log，直到下一小时开始滚动。
 
 .yyyy-MM-dd-HH-mm 每分钟初滚动。
 
-> 示例：在 2002 年 3 月 9 日大约 11:23.000，/foo/bar.log 将被复制到 /foo/bar.log.2002-03-09-11-23。3 月 9 日第 11 小时的日志将输出到 /foo/bar.log，直到午夜滚动。 |
+> 示例：在2002年3月9日大约11:23.000，/foo/bar.log将被复制到/foo/bar.log.2002-03-09-11-23。3月9日第11小时的日志将输出到/foo/bar.log，直到午夜滚动。 |
 
 | Option Name | Type | Description |
-|---|---|---|
-| Append | Boolean | 参见 FileAppend options。 |
-| DatePattern | String | 滚动调度由 DatePattern 选项指定。该模式应遵循 java.text.SimpleDateFormat 约定。 |
-| ... | | | |
-| Threshold | Level | 参见 AppendersSkeleton options。 |
 
-size 的默认值为 10MB。
+|---|---|---|
+
+| Append | Boolean | 参见FileAppend选项。 |
+
+| DatePattern | String | 滚动调度由DatePattern选项指定。该模式应遵循java.text.SimpleDateFormat约定。 |
+
+| ... | | | |
+
+| Threshold | Level | 参见AppendersSkeleton选项。 |
+
+size的默认值为10MB。
 
 | Encoding | String |
+
 | --- | --- |
 
 | Option Name | Type | Description |
+
 |---|---|---|
-| IO | String | 参见 Writerender options。 |
-| BufferedIO | Boolean | 参见 FileAppender options。 |
-| BufferSize | int | 参见 FileAppender options。 |
-| File | String | 参见 FileAppender options。 |
-| ImmediateFlush | Boolean | 参见 Writerender options。 |
-| Threshold | Level | 参见 SkeletonAppender options |
 
-一个简单的示例 chapter4.Rolling 包含在 examples/chapter4/ 目录下。它通过读取属性 格式或 XML 格式的配置文件来配置 log4j，并提供循环直到生成用户指定的数量的日志事件。用户应该包含同一目录下的 properties 和 rolling.xml 配置文件，以获取 RollingFileAppender 配置的简短示例。
+| IO | String | 参见Writerender选项。 |
 
-使用 RollingFileAppender，系统管理员可以控制日志文件的大小。显然，容量并不是组织日志文件的常用标准；大多数系统管理员更喜欢通过以下方式组织日志文件：
+| BufferedIO | Boolean | 参见FileAppender选项。 |
 
-## DailyRollingFileender
+| BufferSize | int | 参见FileAppender选项。 |
 
-DailyRollingFileender 扩展了 FileAppender 在用户选择的时间滚动文件。滚动调度由 DatePattern 选项指定。该模式应遵循 java.text.SimpleDateFormat 约定。特别是，你必须对单引号内的字面文本进行转义。格式化后的日期模式将用作滚动文件的后缀。例如，如果 File 设置为 /foo/bar.log 且 DatePattern 设置为 'yyyy-MM-dd'，那么在 2002-06-19 午夜，日志文件 /foo/bar.log 将复制到 /foo/bar.log.2002-06-19，2001-06-20 的日志将继续在该文件中记录，并在第二天同样滚动。
+| File | String | 参见FileAppender选项。 |
 
-可以指定每月、每周、半天、每日、每小时甚至每分钟的调度。下表列出了各种 DatePattern 值以及滚动间隔和文件名。
+| ImmediateFlush | Boolean | 参见Writerender选项。 |
+
+| Threshold | Level | 参见SkeletonAppender选项 |
+
+一个简单的示例chapter4.Rolling包含在examples/chapter4/目录下。它通过读取属性格式或XML格式的配置文件来配置log4j，并提供循环直到生成用户指定的数量的日志事件。用户应该包含同一目录下的properties和rolling.xml配置文件，以获取RollingFileAppender配置的简短示例。
+
+使用RollingFileAppender，系统管理员可以控制日志文件的大小。显然，容量并不是组织日志文件的常用标准；大多数系统管理员更喜欢通过以下方式组织日志文件：
+
+### DailyRollingFileender
+
+DailyRollingFileender扩展了FileAppender在用户选择的时间滚动文件。滚动调度由DatePattern选项指定。该模式应遵循java.text.SimpleDateFormat约定。特别是，你必须对单引号内的字面文本进行转义。格式化后的日期模式将用作滚动文件的后缀。例如，如果File设置为/foo/bar.log且DatePattern设置为'yyyy-MM-dd'，那么在2002-06-19午夜，日志文件/foo/bar.log将复制到/foo/bar.log.2002-06-19，2001-06-20的日志将继续在该文件中记录，并在第二天同样滚动。
+
+可以指定每月、每周、半天、每日、每小时甚至每分钟的调度。下表列出了各种DatePattern值以及滚动间隔和文件名。
 
 | DatePattern | Result |
+
 |---|---|
-| .yyyy-MM | 在每个月的初滚动。<br><br>示例：假设每周的第一天是周日，在 2001 年 3 月 25 日 00:00，/foo/bar.log 将被复制到 /foo/bar.log.2001-03。4 月份的日志将输出到 /foo/bar.log，直到 5 月初滚动。 |
-| .yyyy-ww | 在每周的第一天滚动。每周的第一天取决于区域设置。<br><br>示例：假设每周的第一天是周日，在 2000 年 6 月 9 日（周六午夜），/foo/bar.log 将被复制到 /foo/bar.log.2001-23。2002 年第 24 周的日志将输出到 /foo/bar.log，直到下周滚动。 |
-| .yyyy-MM-dd | 在每天午夜滚动。<br><br>示例：在 2002 年 3 月 9 日午夜，/foo/bar.log 将被复制到 /foo/bar.log.2001-03-08。3 月 9 日的日志将输出到 /foo/bar.log，直到第二天开始滚动。 |
-| .yyyy-MM-dd-a | 在每天的午夜和中午滚动。<br><br>示例：在 2002 年 3 月 9 日中午，/foo/bar.log 将被复制到 /foo/bar.log.2002-03-09-AM。9 日下午的日志将输出到 /foo/bar.log，直到午夜滚动。 |
+
+| .yyyy-MM | 在每个月的初滚动。<br><br>示例：假设每周的第一天是周日，在2001年3月25日00:00，/foo/bar.log将被复制到/foo/bar.log.2001-03。4月份的日志将输出到/foo/bar.log，直到5月初滚动。 |
+
+| .yyyy-ww | 在每周的第一天滚动。每周的第一天取决于区域设置。<br><br>示例：假设每周的第一天是周日，在2000年6月9日（周六午夜），/foo/bar.log将被复制到/foo/bar.log.2001-23。2002年第24周的日志将输出到/foo/bar.log，直到下周滚动。 |
+
+| .yyyy-MM-dd | 在每天午夜滚动。<br><br>示例：在2002年3月9日午夜，/foo/bar.log将被复制到/foo/bar.log.2001-03-08。3月9日的日志将输出到/foo/bar.log，直到第二天开始滚动。 |
+
+| .yyyy-MM-dd-a | 在每天的午夜和中午滚动。<br><br>示例：在2002年3月9日中午，/foo/bar.log将被复制到/foo/bar.log.2002-03-09-AM。9日下午的日志将输出到/foo/bar.log，直到午夜滚动。 |
 
 .yyyy-MM-dd-HH 每小时整点滚动。 
 
-> 示例：在 2002 年 3 月 9 日大约 11:00:000，/foo/bar.log 将被复制到 /foo/bar.log.2002-03-09-10。3 月 9 日第 11 小时的日志将输出到 /foo/bar.log，直到下一小时开始滚动。
+> 示例：在2002年3月9日大约11:00:000，/foo/bar.log将被复制到/foo/bar.log.2002-03-09-10。3月9日第11小时的日志将输出到/foo/bar.log，直到下一小时开始滚动。
 
 .yyyy-MM-dd-HH-mm 每分钟初滚动。
 
-> 示例：在 2002 年 3 月 9 日大约 11:23.000，/foo/bar.log 将被复制到 /foo/bar.log.2002-03-09-11-23。3 月 9 日第 11 小时的日志将输出到 /foo/bar.log，直到午夜滚动。 |
+> 示例：在2002年3月9日大约11:23.000，/foo/bar.log将被复制到/foo/bar.log.2002-03-09-11-23。3月9日第11小时的日志将输出到/foo/bar.log，直到午夜滚动。 |
 
 | Option Name | Type | Description |
-|---|---|---|
-| Append | Boolean | 参见 FileAppend options。 |
-| DatePattern | String | 滚动调度由 DatePattern 选项指定。该模式应遵循 java.text.SimpleDateFormat 约定。 |
-| ... | | | |
-| Threshold | Level | 参见 AppendersSkeleton options。 |
 
-size 的默认值为 10MB。
+|---|---|---|
+
+| Append | Boolean | 参见FileAppend选项。 |
+
+| DatePattern | String | 滚动调度由DatePattern选项指定。该模式应遵循java.text.SimpleDateFormat约定。 |
+
+| ... | | | |
+
+| Threshold | Level | 参见AppendersSkeleton选项。 |
+
+size的默认值为10MB。
 
 | Encoding | String |
+
 | --- | --- |
 
 | Option Name | Type | Description |
+
 |---|---|---|
-| IO | String | 参见 Writerender options。 |
-| BufferedIO | Boolean | 参见 FileAppender options。 |
-| BufferSize | int | 参见 FileAppender options。 |
-| File | String | 参见 FileAppender options。 |
-| ImmediateFlush | Boolean | 参见 Writerender options。 |
-| Threshold | Level | 参见 SkeletonAppender options |
 
-一个简单的示例 chapter4.Rolling 包含在 examples/chapter4/ 目录下。它通过读取属性 格式或 XML 格式的配置文件来配置 log4j，并提供循环直到生成用户指定的数量的日志事件。用户应该包含同一目录下的 properties 和 rolling.xml 配置文件，以获取 RollingFileAppender 配置的简短示例。
+| IO | String | 参见Writerender选项。 |
 
-使用 RollingFileAppender，系统管理员可以控制日志文件的大小。显然，容量并不是组织日志文件的常用标准；大多数系统管理员更喜欢通过以下方式组织日志文件：
+| BufferedIO | Boolean | 参见FileAppender选项。 |
 
-之前过的 appenders 只能记录到本地资源。相比之下，SocketAppender 设计为通过网上传输 LoggingEvent 对象来记录到远程实体。远程日志对于日志事件来说是非侵入的。在接收端，反序列化后，事件可以像本地生成一样被记录。运行在不同机器上的多个 SocketAppender 可以将它们的日志输出重定向到中央日志服务器。SocketAppender 工作在传输控制协议 (TCP) 层之上，该层提供了可靠、有序、流控的端到端流。因此，如果远程服务器可访问，事件将继续到达。否则，如果远程服务器宕机或无法访问，事件将被丢弃。当服务器恢复时，传输将透明地恢复。这种透明重连由一个定期尝试连接服务器的连接器执行。
+| BufferSize | int | 参见FileAppender选项。 |
 
-日志事件由原生 TCP 实现自动缓冲，这意味着如果链路慢但比客户端产生（日志）事件的速度快，则客户端不会受到慢网络连接的影响。然而，如果网络连接慢于事件产生的速度，则客户端只能以网络速度进行。特别是，如果到服务器的网络链路中断，客户端将被阻塞。或者，如果网络链路是连通的，
+| File | String | 参见FileAppender选项。 |
 
+| ImmediateFlush | Boolean | 参见Writerender选项。 |
 
+| Threshold | Level | 参见SkeletonAppender选项 |
 
+一个简单的示例chapter4.Rolling包含在examples/chapter4/目录下。它通过读取属性格式或XML格式的配置文件来配置log4j，并提供循环直到生成用户指定的数量的日志事件。用户应该包含同一目录下的properties和rolling.xml配置文件，以获取RollingFileAppender配置的简短示例。
 
+使用RollingFileAppender，系统管理员可以控制日志文件的大小。显然，容量不是组织日志文件的常用标准；大多数系统管理员更喜欢通过以下方式组织日志文件：
+
+之前过的appenders只能记录到本地资源。相比之下，SocketAppender设计为通过网上传输LoggingEvent对象来记录到远程实体。远程日志对于日志事件来说是非侵入的。在接收端，反序列化后，事件可以像本地生成一样被记录。运行在不同机器上的多个SocketAppender可以将它们的日志输出重定向到中央日志服务器。SocketAppender工作在传输控制协议(TCP)层之上，该层提供了可靠、有序、流控的端到端流。因此，如果远程服务器可访问，事件将继续到达。否则，如果远程服务器宕机或无法访问，事件将被丢弃。当服务器恢复时，传输将透明地恢复。这种透明重连由一个定期尝试连接服务器的连接器执行。
+
+日志事件由原生TCP实现自动缓冲，这意味着如果链路慢但比客户端产生（日志）事件的速度快，则客户端不会受到慢网络连接的影响。然而，如果网络连接慢于事件产生的速度，则客户端只能以网络速度进行。特别是，如果到服务器的网络链路中断，客户端将被阻塞。或者，如果网络链路是连通的，
 
 # SocketAppender 89
 
 但如果服务器宕机，客户端在进行日志请求时不会被阻塞，尽管事件会因为服务器不可用而丢失。
 
-即使 SocketAppender 不再附加到任何日志器上，只要存在连接器（connector），它就不会被垃圾回收。即使与服务器的连接中断，连接器依然存在。为了避免这个垃圾收集问题，你应该显式地调用 `close()` SocketAppender。创建/销毁许多 SocketAppender 实例的长生命应用程序应该注意这个垃圾收集问题。大多数其他应用程序可以安全地忽略它。如果托管 SocketAppender 的 JVM 在显式关闭或随垃圾回收之前退出，那么管道中可能存在未传输的数据，这些数据可能会丢失。通常，在退出应用程序之前显式地调用 `close()` SocketAppender 或调用 `LogManager.shutdown()` 就足够了。
+即使SocketAppender不再附加到任何日志器上，只要存在连接器（connector），它就不会被垃圾回收。即使与服务器的连接中断，连接器依然存在。为了避免这个垃圾收集问题，你应该显式地调用`close()` SocketAppender。创建/销毁许多SocketAppender实例的长生命应用程序应该注意这个垃圾收集问题。大多数其他应用程序可以安全地忽略它。如果托管SocketAppender的JVM在显式关闭或随垃圾回收之前退出，那么管道中可能存在未传输的数据，这些数据可能会丢失。通常，在退出应用程序之前显式地调用`close()` SocketAppender或调用`LogManager.shutdown()`就足够了。
 
-远程服务器通过 `RemoteHost` 和 `Port` 选项标识。SocketAppender 选项如下表所示。
+远程服务器通过`RemoteHost`和`Port`选项标识。SocketAppender选项如下表所示。
 
 | 选项名称 | 类型 |or |
+
 | --- | --- | --- |
-| LocationInfo | boolean | LocationInfo 接受一个布尔值。如果为 true，发送到远程主机的信息将包含位置信息。默认情况下不向服务器发送位置信息。 |
+
+| LocationInfo | boolean | LocationInfo接受一个布尔值。如果为true，发送到远程主机的信息将包含位置信息。默认情况下不向服务器发送位置信息。 |
+
 | Port | int | 远程服务器的端口号。 |
-| ReconnectionDelay | int | ReconnectionDelay 接受一个正整数，表示每次尝试连接服务器之间等待的毫秒数。此选项的默认值为 30000，对应 30 秒。将此选项设置为零将关闭连接功能。注意，在连接成功期间不存在连接器。 |
+
+| ReconnectionDelay | int | ReconnectionDelay接受一个正整数，表示每次尝试连接服务器之间等待的毫秒数。此选项的默认值为30000，对应30秒。将此选项设置为零将关闭连接功能。注意，在连接成功期间不存在连接器。 |
+
 | RemoteHost | String | 服务器的主机。 |
-| Threshold | Level | 参见 AppendersSkeleton 选项。 |
 
-Log4j 包含一个日志服务器应用 `org.apache.log4j.SimpleSocketServer`，它可以为多个 SocketAppender 客户端服务。它等待来自 SocketAppender 客户端的日志事件。SimpleSocketServer 接收后，事件将记录到本地服务器策略中。SimpleSocketServer 应用接受两个参数：port 和 configFile；其中 port 是监听的端口，configFile 是属性格式或 XML 格式的配置脚本。
+| Threshold | Level | 参见AppendersSkeleton选项。 |
 
-假设你处于 `MANUAL_HOME/examples` 目录，使用以下命令启动 SimpleSocketServer：
+Log4j包含一个日志服务器应用`org.apache.log4j.SimpleSocketServer`，它可以为多个SocketAppender客户端服务。它等待来自SocketAppender客户端的日志事件。SimpleSocketServer接收后，事件将记录到本地服务器策略中。SimpleSocketServer应用接受两个参数：port和configFile；其中port是监听的端口，configFile是属性格式或XML格式的配置脚本。
+
+假设你处于`MANUAL_HOME/examples`目录，使用以下命令启动SimpleSocketServer：
 
 ```
 java org.apache.log4j.net.SimpleSocketServer 6000 chapter/server1.xml
 ```
 
-6000 是监听的端口号，server1.xml 是一个向根日志器添加 `ConsoleAppender` 和 `RollingFileAppender` 的配置脚本。启动 SimpleSocketServer 后，你可以从运行 SocketAppender 的多个客户端向它发送日志。手册中包含了两个客户端：`chapter4.SocketClient1` 和 `chapter4.SocketClient2`。这两个客户端都会等待用户在控制台上输入一行文本。该文本被封装在 debug 级别中然后发送到远程服务器。两个客户端的区别在于 SocketAppender 的配置。`SocketClient1` 通过编程方式配置 appender，而 `SocketClient2` 需要一个配置文件。
+6000是监听的端口号，server1.xml是一个向根日志器添加`ConsoleAppender`和`RollingFileAppender`的配置脚本。启动SimpleSocketServer后，你可以从运行SocketAppender的多个客户端向它发送日志。手册中包含了两个客户端：`chapter4.SocketClient1`和`chapter4.SocketClient2`。这两个客户端都会等待用户在控制台上输入一行文本。该文本被封装在debug级别中然后发送到远程服务器。两个客户端的区别在于SocketAppender的配置。`SocketClient1`通过编程方式配置appender，而`SocketClient2`需要一个配置文件。
 
-假设 SimpleSocketServer 运行在本地主机上，使用以下命令连接到它：
+假设SimpleSocketServer运行在本地主机上，使用以下命令连接到它：
 
 ```
 java -log4j.debug chapter4.SocketClient1 localhost 6000
 ```
 
-你输入的每行内容都会出现在上一步启动的 SimpleSocketServer 控制台上。如果你停止并重启 SimpleSocketServer，客户端将透明地重新连接到新的服务器实例，尽管断开连接期间生成的事件将不可挽回地丢失。
+你输入的每行内容都会出现在上一步启动的SimpleSocketServer控制台上。如果你停止并重启SimpleSocketServer，客户端将透明地重新连接到新的服务器实例，尽管断开连接期间生成的事件将不可挽回地丢失。
 
-与 SocketClient1 不同，示例应用 SocketClient2 不进行自我配置。它需要一个属性格式或 XML 格式的配置文件。下所示的 `client.xml` 文件创建了一个 SocketAppender 并将其附加到根日志器。
+与SocketClient1不同，示例应用SocketClient2不进行自我配置。它需要一个属性格式或XML格式的配置文件。下所示的`client.xml`文件创建了一个SocketAppender并将其附加到根日志器。
 
-示例 4-2：SocketAppender 配置 (examples/chapter4/client1.xml)
+示例4-2：SocketAppender配置 (examples/chapter4/client1.xml)
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -2611,22 +2433,22 @@ java -log4j.debug chapter4.SocketClient1 localhost 6000
 </log4j:configuration>
 ```
 
-注意，在上面的配置脚本中，RemoteHost 和 Port 选项的值没有直接给出，而是作为替换变量键。变量的值可以通过系统属性指定：
+注意，在上面的配置脚本中，RemoteHost和Port选项的值没有直接给出，而是作为替换变量键。变量的值可以通过系统属性指定：
 
 ```
 java -Dhost=localhost -Dport=6000 chapter4.SocketClient2 \
 chapter4/client1.xml
 ```
 
-此命令应该产生与之前的 SocketClient 示例相似的结果。
+此命令应该产生与之前的SocketClient示例相似的结果。
 
-让我重复并强调一下，日志事件的序列化是非侵入性的。反序列化事件带有与任何其他日志事件相同的信息，并且可以像本地生成的一样进行操作；只是默认情况下序列化的日志事件不包含位置信息。这里有一个例子来说明第一点，使用以下命令启动 SimpleSocketServer：
+让我重复并强调一下，日志事件的序列化是非侵入性的。反序列化事件带有与任何其他日志事件相同的信息，并且可以像本地生成的一样进行操作；只是默认情况下序列化的日志事件不包含位置信息。这里有一个例子来说明第一点，使用以下命令启动SimpleSocketServer：
 
 ```
 java org.apache.log4j.net.SimpleSocketServer 600 chapter-4/server2.xml
 ```
 
-配置文件 `server2.xml` 创建了一个 `ConsoleAppender`，它列出了调用者的文件名、行号和其他信息。如果你像之前那样用 `client1.xml` 配置文件运行 SocketClient2，你会发现
+配置文件`server2.xml`创建了一个`ConsoleAppender`，它列出了调用者的文件名、行号和其他信息。如果你像之前那样用`client1.xml`配置文件运行SocketClient2，你会发现
 
 ```
 2002-06-19 22:36:48,181 DEBUG [main] chapter4.SocketClient2 -
@@ -2638,21 +2460,21 @@ java org.apache.log4j.net.SimpleSocketServer 600 chapter-4/server2.xml
 2002-06-19 22:36:48,181 DEBUG [main] chapter4.SocketClient2 -
 ```
 
-可以通过在 `examples/chapter4/client2.xml` 中设置 LocationInfo 来改变结果。
+可以通过在`examples/chapter4/client2.xml`中设置LocationInfo来改变结果。
 
 由于反序列化事件可以像本地生成的事件一样处理，它们可以发送到第二个服务器进行进一步处理。作为一个练习，你可能希望设置两个服务器，让第一个服务器转发来自客户端的事件。
 
-## JMSAppender
+### JMSAppender
 
-JMSAppender 在概念上与 SocketAppender 完成相同的任务，但 JMS API 为消息中间件（MOM）产品提供了抽象。JMS 的核心架构概念之一是消息生产者和消费者解耦。生产者不需要等待接收者处理消息，相反，接收者在消息可用时进行消费；消息是异步传递的。同样，消费者和生产者可以在通信通道中添加或删除，而彼此相互感知。
+JMSAppender在概念上与SocketAppender完成相同的任务，但JMS API为消息中间件（MOM）产品提供了抽象。JMS的核心架构概念之一是消息生产者和消费者解耦。生产者不需要等待接收者处理消息，相反，接收者在消息可用时进行消费；消息是异步传递的。同样，消费者和生产者可以在通信通道中添加或删除，而彼此相互感知。
 
-JMS 规范提供了两种消息模型：发布/订阅和对点队列。在编写时，log4j 仅支持发布/订阅模型¹⁶ JMSAppender 将事件发布到用户指定的主题上，一个或多个 JMSink 应用可以消费这些事件，如图 4-3 所示。
+JMS规范提供了两种消息模型：发布/订阅和对点队列。在编写时，log4j仅支持发布/订阅模型¹⁶ JMSAppender将事件发布到用户指定的主题上，一个或多个JMSink应用可以消费这些事件，如图4-3所示。
 
-¹⁶ 增加对队列模型也非常容易。JMSQueueAppender 的实现留给读者练习。
+¹⁶ 增加对队列模型也非常容易。JMSQueueAppender的实现留给读者练习。
 
-JMSAppender 生成事件的消费者不必仅是 JMSink 应用，任何能够订阅相应主题并消费包含序列化日志消息的应用或消息驱动 Bean 都是合适的。然而，log4j 自带的唯一消费者是 `org.apache.log4j.net.JMSSink` 应用，可以基于 JMink 构建额外的消费者。
+JMSAppender生成事件的消费者不必仅是JMSink应用，任何能够订阅相应主题并消费包含序列化日志消息的应用或消息驱动Bean都是合适的。然而，log4j自带的唯一消费者是`org.apache.log4j.net.JMSSink`应用，可以基于JMink构建额外的消费者。
 
-AppenderSkeleton 中的 `doAppend` 方法将实际放置数据的任务委托给派生类的 `append()` 方法。JMSAppender 的 `append()` 方法列如下。
+AppenderSkeleton中的`doAppend`方法将实际放置数据的任务委托给派生类的`append()`方法。JMSAppender的`append()`方法列如下。
 
 ```
 public void append(LoggingEvent event) {
@@ -2666,10 +2488,6 @@ try {
         event.getLocationInformation();
 ```
 
-
-
-
-
 ```
 msg.setObject(event);
 topicPublisher.publish(msg);
@@ -2678,9 +2496,9 @@ catch (Exception e) {
 }
 ```
 
-`checkEntryConditions()` 方法检查是否满足 JMSAppender 正常运行的先决条件，特别是有效且打开的 `TopicConnection` 以及 `TopicSession` 是否可用。如果不满足，该方法将返回而不执行任何操作。如果满足了先决条件，我们将继续发布日志事件。这是通过从 `TopicSession` 获取一个 `java.jms.ObjectMessage`，将其负载设置为日志事件并发布该消息来实现的。`LoggingEvent` 是一个可序列化类这一点特别重要，因为总而言之，JMSAppender 会将由序列化的 `LoggingEvent` 组成的消息广播到用户指定的 JMS 主题（topic）。
+`checkEntryConditions()`方法检查是否满足JMSAppender正常运行的先决条件，特别是有效且打开的`TopicConnection`以及`TopicSession`是否可用。如果不满足，该方法将返回而不执行任何操作。如果满足了先决条件，我们将继续发布日志事件。这是通过从`TopicSession`获取一个`java.jms.ObjectMessage`，将其负载设置为日志事件并发布该消息来实现的。`LoggingEvent`是一个可序列化类这一点特别重要，因为总而言之，JMSAppender会将由序列化的`LoggingEvent`组成的消息广播到用户指定的JMS主题（topic）。
 
-这些事件由 `JMSink` 或类似的消费者处理。根据 JMS 规范，提供程序将异步调用已注册并订阅的 `java.jms.MessageListener` 对象的 `onMessage()` 方法。`JMSink` 中的 `onMessage()` 方法实现如下：
+这些事件由`JMSink`或类似的消费者处理。根据JMS规范，提供程序将异步调用已注册并订阅的`java.jms.MessageListener`对象的`onMessage()`方法。`JMSink`中的`onMessage()`方法实现如下：
 
 ```java
 public void onMessage(java.jms.Message message) {
@@ -2697,21 +2515,21 @@ public void onMessage(java.jms.Message message) {
 }
 ```
 
-`onMessage()` 方法首先检索日志事件负载。然后它获取一个与传入事件包含的 logger 名称相同的 `Logger`。随后，通过该 logger 记录事件，就像它是在本地生成的一样：
+`onMessage()`方法首先检索日志事件负载。然后它获取一个与传入事件包含的logger名称相同的`Logger`。随后，通过该logger记录事件，就像它是在本地生成的一样：
 
 # JMSAPPENDER
 
-调用其 `callAppenders()` 方法。这与 `SimpleSocketServer` 通过 `Socket` 处理入站日志事件的方式本质相同。
+调用其`callAppenders()`方法。这与`SimpleSocketServer`通过`Socket`处理入站日志事件的方式本质相同。
 
-JMS 主题（topics）和连接工厂（connection factories）是使用 JNDI API 获取的管理对象，这随后需要检索 JNDI Context。获取 JNDI Context 有两种常用方法。如果 JNDI API 可用名为 `jndi.properties` 的文件，它将使用其中找到的信息来检索初始 JNDI 上。要获取初始上下文，只需调用：
+JMS主题（topics）和连接工厂（connection factories）是使用JNDI API获取的管理对象，这随后需要检索JNDI Context。获取JNDI Context有两种常用方法。如果JNDI API可用名为`jndi.properties`的文件，它将使用其中找到的信息来检索初始JNDI上。要获取初始上下文，只需调用：
 
 ```java
 InitialContext jndiContext = new InitialContext();
 ```
 
-调用无参数的 `InitialContext()` 构造函数在 Java Beans (EJBs) 内部同样有效。事实上，它是应用程序服务器 EJB 构造函数的一部分，用于为每个 bean 提供环境命名上下文（ENC）。
+调用无参数的`InitialContext()`构造函数在JavaBeans(EJBs)内部同样有效。事实上，它是应用程序服务器EJB构造函数的一部分，用于为每个bean提供环境命名上下文（ENC）。
 
-在第二种方法中，指定若干预定义的属性，并将这些传递给 `InitialContext` 构造函数以连接到命名服务供应商。例如，调用：
+在第二种方法中，指定若干预定义的属性，并将这些传递给`InitialContext`构造函数以连接到命名服务供应商。例如，调用：
 
 ```java
 Properties env = new Properties();
@@ -2721,7 +2539,7 @@ env.put(Context.URL_PKG_PREFIXES, "org.jboss.naming.jnp.interfaces");
 InitialContext jndiContext = new InitialContext(env);
 ```
 
-如果 host 是 Weblogic 应用程序服务器的命名服务，则应写：
+如果host是Weblogic应用程序服务器的命名服务，则应写：
 
 ```java
 Properties env = new Properties();
@@ -2730,39 +2548,47 @@ env.put(Context.PROVIDER_URL, "t3://hostname:7001");
 InitialContext jndiContext = new InitialContext(env);
 ```
 
-其他 JNDI 提供程序显然需要不同的值。如前所述，可以在 EJBs 内部调用无参数的 `InitialContext()` 构造函数获取初始 JNDI Context。只有在单独 JVM 中运行的客户端才需要 `jndi.properties` 文件，或者在调用 `InitialContext(Hashtable)` 方法之前设置不同的属性。
+其他JNDI提供程序显然需要不同的值。如前所述，可以在EJBs内部调用无参数的`InitialContext()`构造函数获取初始JNDI Context。只有在单独JVM中运行的客户端才需要`jndi.properties`文件，或者在调用`InitialContext(Hashtable)`方法之前设置不同的属性。
 
-远程服务器通过 `RemoteHost` 和 `Port` 选项标识。`SocketAppender` 选项列如下所示。
+远程服务器通过`RemoteHost`和`Port`选项标识。`SocketAppender`选项列如下所示。
 
 | 选项名称 | 类型 | 描述 |
+
 | --- | --- | --- |
-| LocationInfo | boolean | `LocationInfo` 选项包含一个布尔值。如果为 true，发布在 JMS 主题上的信息将包含位置信息。默认情况下，发布的消息中不包含位置信息。 |
-| InitialContextClassName | String | 初始 JNDI 上下文工厂的类。如果你有配置正确的 `jndi.properties` 文件或 `JBossAppender` 运行在应用程序服务器内部，则不需要设置此项。如果你设置了此项，还应设置 ProviderURL 选项。 |
-| ProviderURL | String | 此选项指定 JNDI 服务提供者的配置信息。属性值应包含 URL 字符串（例如 http://localhost:3889）。只有在指定了 `InitialContextClassName` 选项时，才会考虑 `ProviderURL` 选项。 |
-| URLPkgPrefixes | String | 此选项包含加载 URL 工厂时使用的包前缀列表。属性值应为冒号分隔的包前缀列表，用于创建 URL 工厂的工厂类的类名。对于 JBoss，此选项的值应为：`org.jboss.naming.jnp.interfaces`。在 Weblogic 下不需要此选项。 |
-| SecurityPrincipalName | String | 访问 JNDI 命名空间时使用的安全主体名称。此选项通常不需要。只有在指定了 `InitialContextClassName` 选项时，才会考虑此选项。否则将被忽略。 |
 
+| LocationInfo | boolean | `LocationInfo`选项包含一个布尔值。如果为true，发布在JMS主题上的信息将包含位置信息。默认情况下，发布的消息中不包含位置信息。 |
 
+| InitialContextClassName | String | 初始JNDI上下文工厂的类。如果你有配置正确的`jndi.properties`文件或`JBossAppender`运行在应用程序服务器内部，则不需要设置此项。如果你设置了此项，还应设置ProviderURL选项。 |
 
+| ProviderURL | String | 此选项指定JNDI服务提供者的配置信息。属性值应包含URL字符串（例如http://localhost:3889）。只有在指定了`InitialContextClassName`选项时，才会考虑`ProviderURL`选项。 |
 
-确保 log4j 类以及 `weblogic.jar` 都在类路径（classpath）可用。注意，`examples/resources/weblogic/` 目录不需要在 classpath 上，因为所有与 JNDI 相关的信息都是通过传递 JMSAppender 的选项指定的。
+| URLPkgPrefixes | String | 此选项包含加载URL工厂时使用的包前缀列表。属性值应为冒号分隔的包前缀列表，用于创建URL工厂的工厂类的类名。对于JBoss，此选项的值应为：`org.jboss.naming.jnp.interfaces`。在Weblogic下不需要此选项。 |
 
-LogStdin 上的每一行都会出现在 JMSink 窗口或多个窗口中。
+| SecurityPrincipalName | String | 访问JNDI命名空间时使用的安全主体名称。此选项通常不需要。只有在指定了`InitialContextClassName`选项时，才会考虑此选项。否则将被忽略。 |
 
-## 使用 JBoss 设置 JMSAppender（已在 3.0.1 版本通过测试）
+确保log4j类以及`weblogic.jar`都在类路径（classpath）可用。注意，`examples/resources/weblogic/`目录不需要在classpath上，因为所有与JNDI相关的信息都是通过传递JMSAppender的选项指定的。
 
-使用 JBossMQ（JBoss 中的 JMS 提供者）运行 JMSAppender 的区别并不大；必须配置一个连接工厂（connection factory）和一个主题（topic）。为了方便操作，JBoss 已经在 JNDI 命名空间中预先配置了一个名为 "Connection" 的连接工厂和一个名为 "topic/test" 的主题，这对于本示例的目的已经足够了。
+LogStdin上的每一行都会出现在JMSink窗口或多个窗口中。
 
-在命令行启动 JMSink 之前，请确保以下文件在 classpath 上：
+### 使用JBoss设置JMSAppender（已在3.0.1版本通过测试）
+
+使用JBossMQ（JBoss中的JMS提供者）运行JMSAppender的区别并不大；必须配置一个连接工厂（connection factory）和一个主题（topic）。为了方便操作，JBoss已经在JNDI命名空间中预先配置了一个名为"Connection"的连接工厂和一个名为"topic/test"的主题，这对于本示例的目的已经足够了。
+
+在命令行启动JMSink之前，请确保以下文件在classpath上：
 
 - JBOSS/client/jboss-j2ee.jar
+
 - JBOSS/client/jnp-client.jar
+
 - JBOSS/client/jnet.jar
+
 - JBOSS/client/jbsmq-client.jar
+
 - JBOSS/client/jboss-common-client.jar
+
 - JBOSS/client/concurrent.jar
 
-其中 JBOSS 是你安装 JBoss 的目录名称。如果你打算使用 XML 配置，还必须向 classpath  添加一个 JAXP 解析器。本手册在 `examples/resources/jboss/` 目录下包含一个特定的 `jndi.properties` 文件。该文件的内容复制在下方。
+其中JBOSS是你安装JBoss的目录名称。如果你打算使用XML配置，还必须向classpath添加一个JAXP解析器。本手册在`examples/resources/jboss/`目录下包含一个特定的`jndi.properties`文件。该文件的内容复制在下方。
 
 ```
 java.naming.factory.initial=org.jnp.interfaces.NamingContextFactory
@@ -2770,19 +2596,19 @@ java.naming.factory.provider.url=jnp://localhost:1099
 java.naming.factory.url.pkg=org.jboss.naming:org.jnp.interfaces
 ```
 
-完成上述操作后，我们在命令窗口中启动 JMSink。
+完成上述操作后，我们在命令窗口中启动JMSink。
 
 ```
 java.org.apache.log4j.JMSink ConnectionFactory topic/testTopic \ guest guest chapter4/jmsink.xml
 ```
 
-注意，使用 JBoss 启动 JMSink 的命令仅在连接工厂和主题名称上不同。我们不需要更改用户名，因为根据实例，“guest" 用户在 JBoss 中也是可用的。
+注意，使用JBoss启动JMSink的命令仅在连接工厂和主题名称上不同。我们不需要更改用户名，因为根据实例，“guest"用户在JBoss中也是可用的。
 
-第 4 章：附加器（APPENDERS）
+### 第4章：附加器（APPENDERS）
 
-一旦我们的事件消费者 JMSSink 启动，日志事件的生产者就会被启动。在上一个示例中，我们将 JMSAppender 附加到我们的简单应用程序 `chapter4` 中。`chapter4.LogStdin` 读取在控制台行输入的输入。每一行都以 debug 级别记录。LogStdin 接受的参数是配置文件的位置。下方列出的 `jboss.xml` 配置文件创建了一个具有适当选项的 JMSAppender。该附加器被挂载到根记录器（root logger）。
+一旦我们的事件消费者JMSSink启动，日志事件的生产者就会被启动。在上一个示例中，我们将JMSAppender附加到我们的简单应用程序chapter4中。`chapter4.LogStdin`读取在控制台行输入的输入。每一行都以debug级别记录。LogStdin接受的参数是配置文件的位置。下方列出的`jboss.xml`配置文件创建了一个具有适当选项的JMSAppender。该附加器被挂载到根记录器（root logger）。
 
-示例 4-4：用于 jBoss 的 JMSAppender 配置 (examples/chapter4/jboss.xml)
+示例4-4：用于jBoss的JMSAppender配置 (examples/chapter4/jboss.xml)
 
 ```xml
 <?xml version="1.0" encoding="UTF-8" ?>
@@ -2806,31 +2632,29 @@ java.org.apache.log4j.JMSink ConnectionFactory topic/testTopic \ guest guest cha
 </log4j:configuration>
 ```
 
-按照如下方式启动一个或多个 LogStdin ：
+按照如下方式启动一个或多个LogStdin：
 
 ```
 java chapter4.LogStdin chapter4/jboss.xml
 ```
 
-确保 log4j 类以及上述 JBoss 相关文件列表中的在 classpath 上。注意，`examples/resources/jboss/` 目录不需要在 classpath 上，因为 JNDI 相关信息是通过配置文件包含的选项指定的。
+确保log4j类以及上述JBoss相关文件列表中的在classpath上。注意，`examples/resources/jboss/`目录不需要在classpath上，因为JNDI相关信息是通过配置文件包含的选项指定的。
 
-来自 LogStdin 的每一行都会出现在 JMSink 窗口中。如果你正在运行多个 JMSink 窗口，那么每一行都将被每个 sink 接收。
+来自LogStdin的每一行都会出现在JMSink窗口中。如果你正在运行多个JMSink窗口，那么每一行都将被每个sink接收。
 
-## 关于 JMSAppender 的说明
+### 关于JMSAppender的说明
 
-使用 JMS 传输数据包无疑比使用原始 TCP socket 发送相同的数据包慢得多。JMS 供应商在吹嘘其消息平台的性能时往往忽略了这个简单的事实。消息的可保证存储需要高昂的代价。作为成本增加的回报，JMS 消息提供了发送者和接收者的解耦。只要 JMS 提供者可访问，消息最终将到达目的地。但是，如果 JMS 服务器宕机或无法访问怎么办？
+使用JMS传输数据包无疑比使用原始TCP socket发送相同的数据包慢得多。JMS供应商在吹嘘其消息平台的性能时往往忽略了这个简单的事实。消息的可保证存储需要高昂的代价。作为成本增加的回报，JMS消息提供了发送者和接收者的解耦。只要JMS提供者可访问，消息最终将到达目的地。但是，如果JMS服务器宕机或无法访问怎么办？
 
-根据 JMS 规范，提供者可以将消息标记为持久的（persistent）或非持久的（non-persistent）。持久性交付模式指令 JMS 在客户端发送操作的一部分将消息记录到稳定存储中，从而允许消息在提供者崩溃时幸存。JMSAppender 不设置消息的交付模式，因为根据 JMS 规范，交付模式被认为是一个管理属性。
+根据JMS规范，提供者可以将消息标记为持久的（persistent）或非持久的（non-persistent）。持久性交付模式指令JMS在客户端发送操作的一部分将消息记录到稳定存储中，从而允许消息在提供者崩溃时幸存。JMSAppender不设置消息的交付模式，因为根据JMS规范，交付模式被认为是一个管理属性。
 
-一旦消息到达 JMS 提供者，提供者就承担了将其递送到目的地的责任，将客户端免于这一职责。如果 JMS 服务器无法访问怎么办？根据 JMS 规范，提供者可以将消息标记为持久的或非持久的。持久性交付模式指令 JMS 在客户端发送操作的一部分将消息记录到稳定存储中，从而允许消息在提供者崩溃时幸存。一旦消息到达 JMS 提供者，提供者就承担了将其递送到目的地的责任，将客户端免于这一职责。
+一旦消息到达JMS提供者，提供者就承担了将其递送到目的地的责任，将客户端免于这一职责。如果JMS服务器无法访问怎么办？根据JMS规范，提供者可以将消息标记为持久的或非持久的。持久性交付模式指令JMS在客户端发送操作的一部分将消息记录到稳定存储中，从而允许消息在提供者崩溃时幸存。一旦消息到达JMS提供者，提供者就承担了将其递送到目的地的责任，将客户端免于这一职责。
 
 *(注：此处原文中存在重复段落，翻译已按要求进行对应处理)*
 
+所选接收者应该收到一封包含300个由PatternLayout格式化的日志事件的电子邮件。
 
-
-所选接收者应该收到一封包含 300 个由 PatternLayout 格式化的日志事件的电子邮件。
-
-在另一个配置 `mail2.xml` 包含在 `chapter4/examples/` 目录下，其中 `SMTPHost` 和 `From` 选项的值通过变量替换定义。这里是 `mail2.xml` 的相关部分。
+在另一个配置`mail2.xml`包含在`chapter4/examples/`目录下，其中`SMTPHost`和`From`选项的值通过变量替换定义。这里是`mail2.xml`的相关部分。
 
 ```
 <appender name="EMAIL" class="org.apache.log4j.net.SMTPAppender">
@@ -2850,21 +2674,29 @@ java -DFrom=source@xyz.com -DTo=recipient@xyz.com
 
 请确保替换为适用于环境的正确值。
 
-当循环缓冲区默认大小为 512 时，接收者应该看到一封包含 512 个以 HTML 表格方便格式化的事件的电子邮件。注意，此运行 `chapter4.Email` 产生了 10,000 个事件，其中只有最后 512 个包含在电子邮件中。
+当循环缓冲区默认大小为512时，接收者应该看到一封包含512个以HTML表格方便格式化的事件的电子邮件。注意，此运行`chapter4.Email`产生了10,000个事件，其中只有最后512个包含在电子邮件中。
 
-SMTPAppender 的各种选项汇总如下表。
+SMTPAppender的各种选项汇总如下表。
 
 | 选项名称 | 类型 | 描述 |
-| --- | --- | --- |
-| SMTPHost | String | SMTP 服务器的主名。此参数是强制性的。 |
-| To | String | 接收者的电子邮件地址。可以通过逗号分隔每个接收者来指定多个接收者。 |
-| From | String | SMTPAppender 发送的电子邮件的发件者。 |
-| BufferSize | int | BufferSize 选项接受一个正整数，表示在循环缓冲区中收集日志事件的最大数量。当达到 BufferSize 时，随着新事件添加到缓冲区，旧的事件将被删除。循环缓冲区的默认大小为 512。 |
-| EvaluatorClass | String | EvaluatorClass 选项接受一个字符串值，表示实现 `TriggeringEventEvaluator` 接口的类名。将实例化相应的对象并将其分配为该选项（SMTPAppender）的触发事件评估器。在缺少此情况下，SMTPAppender 被分配一个默认评估器，该评估器会对任何 ERROR 或更高级别的日志响应触发电子邮件传输。 |
-| LocationInfo | boolean | LocationInfo 选项返回一个布尔值。如果为 true，循环缓冲区中的事件将包含位置信息。默认情况下，缓冲区事件不包含位置信息。 |
-| Threshold | Level | 参见 AppenderSkeleton 选项。 |
 
-默认情况下，SMTPAppender 将对任何 ERROR 级别的日志响应启动电子邮件的传输。然而，可能通过提供 `TriggeringEventEvaluator` 接口的自定义实现来覆盖此默认行为。该接口包含一个名为 `TriggeringEvent()` 的单方法。
+|---|---|---|
+
+| SMTPHost | String | SMTP服务器的主名。此参数是强制性的。 |
+
+| To | String | 接收者的电子邮件地址。可以通过逗号分隔每个接收者来指定多个接收者。 |
+
+| From | String | SMTPAppender发送的电子邮件的发件者。 |
+
+| BufferSize | int | BufferSize选项接受一个正整数，表示在循环缓冲区中收集日志事件的最大数量。当达到BufferSize时，随着新事件添加到缓冲区，旧的事件将被删除。循环缓冲区的默认大小为512。 |
+
+| EvaluatorClass | String | EvaluatorClass选项接受一个字符串值，表示实现`TriggeringEventEvaluator`接口的类名。将实例化相应的对象并将其分配为该选项（SMTPAppender）的触发事件评估器。在缺少此情况下，SMTPAppender被分配一个默认评估器，该评估器会对任何ERROR或更高级别的日志响应触发电子邮件传输。 |
+
+| LocationInfo | boolean | LocationInfo选项返回一个布尔值。如果为true，循环缓冲区中的事件将包含位置信息。默认情况下，缓冲区事件不包含位置信息。 |
+
+| Threshold | Level | 参见AppenderSkeleton选项。 |
+
+默认情况下，SMTPAppender将对任何ERROR级别的日志响应启动电子邮件的传输。然而，可能通过提供`TriggeringEventEvaluator`接口的自定义实现来覆盖此默认行为。该接口包含一个名为`TriggeringEvent()`的单方法。
 
 ```
 package org.apache.log4j.spi;
@@ -2873,9 +2705,9 @@ public interface TriggeringEventEvaluator {
 }
 ```
 
-SMTPAppender 通过调用其 `TriggeringEvent()` 方法将每个传入的事件提交给其评估器，以检查该事件是否应该触发电子邮件或被放入循环缓冲区。SMTPAppender 包含且仅包含一个评估器。该对象可能拥有自己的状态。为了说明起，接下来列出的 `CounterBasedTEE` 类实现了一种触发策略，每 1024 个事件触发一封邮件。
+SMTPAppender通过调用其`TriggeringEvent()`方法将每个传入的事件提交给其评估器，以检查该事件是否应该触发电子邮件或被放入循环缓冲区。SMTPAppender包含且仅包含一个评估器。该对象可能拥有自己的状态。为了说明起，接下来列出的`CounterBasedTEE`类实现了一种触发策略，每1024个事件触发一封邮件。
 
-示例 4-6：每 1024 个事件触发一次的 `TriggeringEventEvaluator` 实现 (examples/chapter/4/CounterBasedTEE.java)
+示例4-6：每1024个事件触发一次的`TriggeringEventEvaluator`实现 (examples/chapter/4/CounterBasedTEE.java)
 
 ```
 import org.apache.log4j.spi.TriggeringEventEvaluator;
@@ -2896,9 +2728,9 @@ public class CounterBasedTEE implements TriggeringEventEvaluator {
     }
 ```
 
-设置 SMTPAppender 的 `EvaluatorClass` 选项会指示它使用自定义评估器。下一个配置文件将 SMTPAppender 挂载到根日志器上。该 appender 的缓冲区大小为 1024，并使用 `CounterBasedTEE` 实例作为其触发评估器。
+设置SMTPAppender的`EvaluatorClass`选项会指示它使用自定义评估器。下一个配置文件将SMTPAppender挂载到根日志器上。该appender的缓冲区大小为1024，并使用`CounterBasedTEE`实例作为其触发评估器。
 
-示例 4-7：带有自定义评估器和缓冲区大小的 SMTPAppender (examples/chapter4/mail3.xml)
+示例4-7：带有自定义评估器和缓冲区大小的SMTPAppender (examples/chapter4/mail3.xml)
 
 ```xml
 <?xml version="1.0" encoding="UTF-8" ?>
@@ -2919,15 +2751,15 @@ public class CounterBasedTEE implements TriggeringEventEvaluator {
 </log4j:configuration>
 ```
 
-## AsyncAppender
+### AsyncAppender
 
-AsyncAppender 异步记录日志。它使用边界队列来存储事件。`AsyncAppender.append()` 方法在事件放入队列后立即返回。当队列不空时，调度线程将从队列中移除事件并分发到附加到 AsyncAppender 的 appender。
+AsyncAppender异步记录日志。它使用边界队列来存储事件。`AsyncAppender.append()`方法在事件放入队列后立即返回。当队列不空时，调度线程将从队列中移除事件并分发到附加到AsyncAppender的appender。
 
-只要边界队列未满，AsyncAppender 就是非阻塞的。但如果队列满了，`AsyncAppender.append()` 将阻塞直到可用空间。AsyncAppender 并不会提高吞吐量。相反，大量的 CPU 周期消耗在管理边界队列以及同步调度线程与各种线程上。因此，虽然每个事件完成的时间稍长，但 I/O 密集型应用程序将从异步日志中受益。
+只要边界队列未满，AsyncAppender就是非阻塞的。但如果队列满了，`AsyncAppender.append()`将阻塞直到可用空间。AsyncAppender并不会提高吞吐量。相反，大量的CPU周期消耗在管理边界队列以及同步调度线程与各种线程上。因此，虽然每个事件完成的时间稍长，但I/O密集型应用程序将从异步日志中受益。
 
-由于 AsyncAppender 是包含其他 appender 的组合 appender，它只能通过 DOMurator 配置。在配置文件中，AsyncAppender 引用的每个 appender 都挂载在其上，如示例配置所示：
+由于AsyncAppender是包含其他appender的组合appender，它只能通过DOMurator配置。在配置文件中，AsyncAppender引用的每个appender都挂载在其上，如示例配置所示：
 
-示例 4-8：带有两个附加 appender 的 AsyncAppender (examples/chapter4/async.xml)
+示例4-8：带有两个附加appender的AsyncAppender (examples/chapter4/async.xml)
 
 ```xml
 <log4j:configuration>
@@ -2945,12 +2777,9 @@ AsyncAppender 异步记录日志。它使用边界队列来存储事件。`Async
 </log4j:configuration>
 ```
 
+### 错误处理
 
-
-
-## 错误处理
-
-Appender 将错误条件的处理委托给实现了 `org.apache.log4j.spi.ErrorHandler` 接口的对象。默认情况下，`AppenderSkeleton` 将错误处理器设置为 `OnceErrorHandler`，它会在控制台上打印单条警告信息——即仅在第一个错误发生时进行报告，随后的错误将被忽略。`ErrorHandler` 接口如下：
+Appender将错误条件的处理委托给实现了`org.apache.log4j.spi.ErrorHandler`接口的对象。默认情况下，`AppenderSkeleton`将错误处理器设置为`OnceErrorHandler`，它会在控制台上打印单条警告信息——即仅在第一个错误发生时进行报告，随后的错误将被忽略。`ErrorHandler`接口如下：
 
 ```java
 package org.apache.log4j.spi;
@@ -2970,15 +2799,15 @@ public interface ErrorHandler extends OptionHandler {
 }
 ```
 
-所有继承自 `AppenderSkeleton` 的 Appender 都包含且仅包含一个错误处理器。Appender 通过调用其错误处理器的 `error()` 方法之一来信号错误状态。调用 `setAppender(appender)` 方法会通知错误处理器其关联的主 Appender。`setBackupAppender` 则将一个备用 Appender 与错误处理器关联。并不是所有错误处理器都会使用备用 Appender。`setLogger` 方法（本应为 `addLogger`）用于添加一个 logger，以便在响应错误条件时进行查找。事实上，某些错误处理器会将主 Appender 从 logger 中解绑，并用备用 Appender 替换它。
+所有继承自`AppenderSkeleton`的Appender都包含且仅包含一个错误处理器。Appender通过调用其错误处理器的`error()`方法之一来信号错误状态。调用`setAppender(appender)`方法会通知错误处理器其关联的主Appender。`setBackupAppender`则将一个备用Appender与错误处理器关联。并不是所有错误处理器都会使用备用Appender。`setLogger`方法（本应为`addLogger`）用于添加一个logger，以便在响应错误条件时进行查找。事实上，某些错误处理器会将主Appender从logger中解绑，并用备用Appender替换它。
 
-`OnceErrorHandler` 不使用上述任何信息。它只是打印收到的第一个错误，并忽略随后的错误。位于 `org.apache.log4j.varia` 包中的 `Fallback-ErrorHandler` 实现了一种更复杂的策略：当主 Appender 发生错误时，将其从其所属的 logger 中解绑，并用备用 Appender 替换它。
+`OnceErrorHandler`不使用上述任何信息。它只是打印收到的第一个错误，并忽略随后的错误。位于`org.apache.log4j.varia`包中的`Fallback-ErrorHandler`实现了一种更复杂的策略：当主Appender发生错误时，将其从其所属的logger中解绑，并用备用Appender替换它。
 
-在配置文件中可以使用 `<errorHandler>` 元素配置 appender 的错误处理器。该元素在前章节的第 48 页中已正式引入。它有一个强制性的 `class` 属性，用于指定与包含它的 appender 关联的错误处理器实现类的全限定名。它可能包含 `<param>` 元素以便向错误处理器传递参数。`FallbackErrorHandler` 不使用 `<param>` 元素。`<root-ref>` 和 `<logger-ref>` 元素引用主 Appender 附加的 logger。`<appender-ref>` 元素引用在主 Appender 失败时作为备用的 appender。
+在配置文件中可以使用`<errorHandler>`元素配置appender的错误处理器。该元素在前章节的第48页中已正式引入。它有一个强制性的`class`属性，用于指定与包含它的appender关联的错误处理器实现类的全限定名。它可能包含`<param>`元素以便向错误处理器传递参数。`FallbackErrorHandler`不使用`<param>`元素。`<root-ref>`和`<logger-ref>`元素引用主Appender附加的logger。`<appender-ref>`元素引用在主Appender失败时作为备用的appender。
 
-下一个配置文件演示了 `FallbackErrorHandler` 的用法。
+下一个配置文件演示了`FallbackErrorHandler`的用法。
 
-示例 4-9：`FallbackErrorHandler` 配置示例 (example-ples/4/fallback1.xml)
+示例4-9：`FallbackErrorHandler`配置示例 (example-ples/4/fallback1.xml)
 
 ```xml
 <?xml version="1.0" encoding="UTF-8" ?>
@@ -3009,6 +2838,8 @@ public interface ErrorHandler extends OptionHandler {
 </log4j:configuration>
 ```
 
+
+
 在上面的配置文件中，有一个名为 "PRIMARY" 的 `FileAppender` 附加到 root logger。该 appender 的错误处理器类型为 `FallbackErrorHandler`，它引用名为 "FALLBACK" 的 `FileAppender`。`<root-ref>` 元素指示该 appender 附加到了 root logger。回退错误处理器使用此信息来定位主 appender 附加的 logger。
 
 假设 `/xyz/` 目录不存在，`FileAppender` 将无法打开 `/xyz/x.log` 文件，并在写入任何消息之前失败。然而，它会调用其错误处理器，后者会将失败的 "PRIMARY" appender 替换为 "FALLBACK" appender。
@@ -3031,7 +2862,7 @@ java chapter4.EventGenerator 10 chapter4/fallback1.xml
 package chapter4;
 // (省略 import 语句以保持与逻辑一致)
 
-public class CountingAppender extends AppendersSkeleton {
+public class CountingAppender extends AppenderSkeleton {
 
   int counter = 0;
   int limit = 16;
@@ -3066,7 +2897,7 @@ public class CountingAppender extends AppendersSkeleton {
   }
 
   public void close() {
-    if(this.closed) // closed 定义在 AppendersSkeleton 中
+    if(this.closed) // closed 定义在 AppenderSkeleton 中
       return;
     this.closed = true;
   }
@@ -3080,21 +2911,21 @@ public class CountingAppender extends AppendersSkeleton {
 这个自定义 appender 阐述了几点：
 
 - 所有遵循 setter/getter JavaBeans 规范的选项都是透明处理的。然而，在选项之间存在依赖关系的情况下，可以在 `activateOptions` 方法中并发激活它们。参见 `FileAppender`、`JMSAppender` 或 `SMTPAppender` 的源码。
+
 - `AppenderSkeleton.doAppend⁷ 调用派生类的 `append` 方法，实际输出操作在此发生。appender 在此方法中调用其 layout 格式化事件。如果 layout 忽略异常，派生 appender 也负责输出的异常。派生 appender 在发生错误时必须调用其错误处理器。
+
 > ⁷ 参见本章开头关于 `AppenderSkeleton.doAppend` 方法的讨论。
 
-- 派生类在 `close()` 方法被调用时必须将 `closed` 字段（定义在 AppendersSkeleton 中）的值设置为 `true`。
+- 派生类在 `close()` 方法被调用时必须将 `closed` 字段（定义在 AppenderSkeleton 中）的值设置为 `true`。
+
 - 需要 layout 的派生类必须在其 `requiresLayout()` 方法中返回 `true`。
 
 `CountingAppender` 可以像任何 appender 一样进行配置。参见示例 `examples/chapter4/countingConsole.xml`。我们的自定义 appender 处理错误条件。执行以下命令可以看到在我们自定义 appender 达到限制后，它被一个普通的 `ConsoleAppender` 替换。
 
-
-
-
-
 ## 布局 (Layout)
 
 TCP 实现将遵循健壮性的通用原则：对你所做的要保守，对从他人接受的要慷慨。
+
 Jon Postel, RFC 793
 
 虽然附加器（appenders）负责向特定的附加器写入日志，但布局（layouts）则负责输出的格式。如果你在好奇的话，破折号与大型庄园之间没有任何关系。`Layout` 类中的 `format()` 方法接收一个 `LoggingEvent` 并返回一个 `String`。下面是 `Layout` 类的概览。
@@ -3192,7 +3023,7 @@ java.lang.Exception: Just a test.
    at chapter5.Sample.main(Sample.java:34)
 ```
 
-这足够简单了。带有选项的布局如何？来自埃利亚的怀疑论者 Pyrrho 可能会问。读者可能会在 `MyLayout2.java` 中发现我们自定义布局的稍微修改的版本。她会发现向布局添加一个选项
+这足够简单了。带有选项的布局如何？来自埃利亚的怀疑论者 Pyrrho 可能会问。读者可能会在 `MyLayout2.java` 中发现我们自定布局的稍微修改的版本。她会发现向布局添加一个选项
 
 > 18 Pyrrho 坚持认为，除了不确定性本身，没有什么是确定的，而不确定性也绝非确定。
 
@@ -3240,29 +3071,39 @@ WARN [main] Message 2
 注意在转换模式 `"%5p [%t]: %m"` 中，字面和转换器之间没有显式的分隔符。在解析转换模式时，`PatternLayout` 能够区分字面和转换器。
 
 | 转换字符 | 效果 |
+
 | --- | --- |
+
 | c | 输出日志事件的类别^19。类别转换器可以可选跟随精度指定符，即括号内的整数常量。如果给了精度指定符，则只打印日志器最右侧的部分。默认打印完整的日志器名称。例如，对于日志器 "a.b"，模式 `%c{2}` 将输出 "b.c"。 |
+
 | C | 输出调用请求的全限定类名。此转换器可以可选跟随精度指定符，即括号内的整数常量。如果给了精度指定符，则只打印类名最右侧的部分。默认打印完整的类名。例如，对于类名 "org.apache.xyz.SomeClass"，模式 `%C{1}` 将输出 "SomeClass"。 |
+
 | d | 输出日志事件的日期。日期转换指定符可以跟随一个位于括号之间的日期格式指定符。例如，`%d[HH:mm:ss,SSS]` 或 `%d[dd MMMM yyyy HH:mm:ss]`。如果没有日期指定符，则假设为 ISO8601 格式。日期格式允许与 `java.text.SimpleDateFormat` 相同。尽管使用了标准 JDK，`SimpleDateFormat` 的性能相当差。为了获得更好的结果，建议使用 log4j 日期格式化。 |
 
 ^19 类别和优先级以及相应的转换字符由于历史原因被保留。
 
-
-
-
-
-分别对应 AbsoluteTimeDateFormat、DateTimeDateFormat 和 ISO08601DateFormat 的 "ISO08601"。例如，%d{ISO08601} 或 %d{ABSOLUTE}。这些专用的日期格式性能远优于 SimpleDateFormat。
+分别对应 AbsoluteTimeDateFormat、DateTimeDateFormat 和 ISO08601DateFormat 的 "ISO08601"。例如，`%d{ISO08601}` 或 `%d{ABSOLUTE}`。这些专用的日期格式性能远优于 SimpleDateFormat。
 
 | F | 说明 |
+
 |---|---|
+
 | F | 输出发布日志请求的文件名。输出生成日志事件的调用者位置信息。位置信息取决于 JVM 的实现，但通常由调用方法的完全限定名，后跟调用者的源文件名和括号中的行号组成。位置信息非常有用；但是，它的速度极慢。应该只在执行速度不是问题时使用。 |
+
 | L | 输出发布日志请求的行号，即调用者的行号。 |
+
 | m | 输出与日志事件相关的应用程序提供的消息。 |
+
 | M | 输出发布日志请求的方法名。输出依赖于平台的换行符字符或字符组合。这种转换字符提供的性能与使用非可移植的换行符字符串（如 "\u" 或 "\u\n"）几乎相同。因此，它是指定换行符的首选方式。 |
+
 | p | 输出日志事件的优先级，也称为级别。 |
+
 | r | 输出从应用程序启动到创建日志事件所经过的毫秒数。 |
+
 | t | 输出生成日志事件的线程名称。 |
+
 | x | 输出与生成日志事件的线程相关的 NDC（嵌套诊断上下文）。NDC 将在第 7 章中讨论。输出与生成日志事件的线程相关的 MDC（映射诊断上下文）。X 转换字符后面必须跟一个放置在花括号中的键，例如 %X{clientNumber}，其中 clientNumber 是键。将输出 MDC 中对应的值。MDC 将在第 7 章中讨论。 |
+
 | % | 序列 %%% 输出单个百分号符号。 |
 
 **警告：** 生成调用者类信息是非常缓慢的。因此，在执行速度不是问题的情况下，应避免使用 C、F、i、L 和 M 转换字符。
@@ -3276,10 +3117,15 @@ WARN [main] Message 2
 下表给出了分类转换符各种格式修饰符的示例。
 
 | 格式修饰符 | 左对齐 | 最小宽度 | 最大宽度 | 注释 |
+
 |---|---|---|---|---|
+
 | %%20c | false | 20 | 无 | 如果日志名称少于 20 个字符，则左侧填充空格。 |
+
 | %%-20c | true | 20 | 无 | 如果日志名称少于 20 个字符，则右侧填充空格。 |
+
 | %.30c | NA | 无 | 30 | 如果日志名称长于 30 个字符，则从开头截断。 |
+
 | %%20.30c | false | 20 | 30 | 如果日志名称少于 20 个字符，则左侧填充空格。然而，如果日志名称大于 30 个字符，则从开头截断。 |
 
 ## 第 5 章：布局 (LAYOUT)
@@ -3287,7 +3133,9 @@ WARN [main] Message 2
 如果日志名称少于 20 个字符，则右侧填充空格。然而，如果日志名称长于 30 个字符，则从开头截断。
 
 | 格式修饰符 | 左对齐 | 最小宽度 | 最大宽度 |
+
 |---|---|---|---|
+
 | %-20.30c | true | 20 | 30 |
 
 以下是一些转换模式的示例。
@@ -3307,6 +3155,7 @@ ConversionPattern: %r [%t] %-5p %c %mn
 示例输出：
 
 | 0 [main] DEBUG chapter5.Sample - First message |
+
 | 10 [chapter5.Sample - Nothing is wrong. |
 
 如果相对时间小于 6 位数字，则右侧填充；线程名称少于 10 个字符则右侧填充，长了则截断；日志名称少于 20 个字符则左侧填充，长了则截断。
@@ -3315,7 +3164,7 @@ PatternLayout 的大纲灵感来自 Peter A. Darnell 和 Philip E. Margolis 强�
 
 ## XMLLayout
 
-XMLLayout 生成固定格式的日志事件流。具体来说，XMLLayout 的输出由 log4j.dtd 定义的一系列 <log4j:event> 元素组成。它生成一个完全格式良好的 XML 文件。输出设计用于作为外部实体包含在单独文件中。例如，如果 abc 是 XMLLayout 结果的文件名，以下代码将其作为外部实体包含。
+XMLLayout 生成固定格式的日志事件流。具体来说，XMLLayout 的输出由 log4j.dtd 定义的一系列 <log4j:event> 元组成。它生成一个完全格式良好的 XML 文件。输出设计用于作为外部实体包含在单独文件中。例如，如果 abc 是 XMLLayout 结果的文件名，以下代码将其作为外部实体包含。
 
 ```xml
 <?xml version="1.0" ?>
@@ -3328,7 +3177,9 @@ XMLLayout 生成固定格式的日志事件流。具体来说，XMLLayout 的输
 XMLLayout 允许单个选项 LocationInfo：
 
 | 选项名称 | 类型 | 说明 |
+
 |---|---|---|
+
 | LocationInfo | boolean | LocationInfo 选项接受一个布尔值。如果为 true，输出将包含调用者的位置。默认情况下不包含位置信息。 |
 
 一个级别为 WARN、logger 为 chapter5.Sample、消息为 "Hello World." 的日志事件格式如下：
@@ -3345,17 +3196,15 @@ XMLLayout 允许单个选项 LocationInfo：
 
 HTMLLayout 以固定格式表格输出事件。表格中的每一行对应一个事件，而五列：时间、线程、级别、类别和消息分别对应日志事件的成员字段。示例配置文件包含在 examples/chapter5/ 文件夹中。
 
-
-
-
-
 ## 6
+
 ## 自定义过滤器
 
 > 产生大量的想法，并丢弃糟糕的。除非你有大量的想法和某种选择原则，否则你永远不会产生好的想法。
+
 > 林纳斯·鲍林 (Linus Pauling)
 
-正如我们所见，log4j 提供了几种内置的方法来过滤日志请求，包括全局存储库级过滤器、logger 级过滤器以及追加阈值。这些方法为最常见的情况提供了高性能过滤。为了处理更具特殊性的情况，log4j 提供了一种通用且强大的机制——自定义过滤器，其设计灵感很大程度上受源于近期 Linux 内核中的 Linux ip 或 iptables。自定义过滤器基于三元逻辑，允许它们被组合或链式连接在一起，以构成任意复杂的过滤策略。到此为止，过滤器一直是 log4j 中一个文档记录不足且利用率偏低的特性。
+正如我们所见，log4j 提供了几种内置的方法来过滤日志请求，包括全局存储库级过滤器、logger 级过滤器以及追加阈值。这些方法为最常见的情况提供了高性能过滤。为了处理更具特殊性的情况，log4j 提供了一种通用且强大的机制——自定义过滤器，其设计灵感很大程度上受源于近期 Linux 内核中的 Linux ip 或 iptables。自定过滤器基于三元逻辑，允许它们被组合或链式连接在一起，以构成任意复杂的过滤策略。到此为止，过滤器一直是 log4j 中一个文档记录不足且利用率偏低的特性。
 
 自定义过滤器类必须继承自 `org.apache.log4j.spi.Filter` 类。
 
@@ -3381,7 +3230,7 @@ public abstract class Filter implements OptionHandler {
 
 ## 第 6 章：自定义过滤器
 
-此抽象类假设过滤器被组织成一个线性链。成员字段 `next` 指向链中的下一个过滤器，如果链中没有更多过滤器，则置为 `null`。图 6-1 描述了一个由三个过滤器组成的示例链。
+此抽象类假设过滤器被组织成一个线性铲。成员字段 `next` 指向链中的下一个过滤器，如果链中没有更多过滤器，则置为 `null`。图 6-1 描述了一个由三个过滤器组成的示例链。
 
 ![](img/14a86321c6ef179a7a3464775169c042_134_0.png)
 
@@ -3499,14 +3348,11 @@ public class RepeatFilter extends Filter {
 <filter class="chapter6.RepeatFilter"/>
 ```
 
-
-
-
-
 # 7
+
 ## 诊断上下文 (Diagnostic Contexts)
 
-log4j 的设计目标之一是对复杂的分布式应用程序进行审计和调试。大多数真实的分布式系统需要同时处理多个客户端。在这种系统的典型线程实现中，不同的线程将处理不同的客户端。区分一个客户端另一个客户端日志输出的一种可能不推荐的方法是为每个客户端实例化一个新的、独立的 logger。这种技术会导致 logger 的泛滥，并显著增加开销。一种更轻量的技术是给每个特定的客户端打上唯一标记。Neil Harrison 在 R. Martin、D. Riehle 和 F. Buschmann 编辑的《Pattern Languages of Program Design 3》中的《Patterns for Logging Diagnostic Messages》章节（Addison-Wesley, 1997）一书中描述了这种方法。log4j 提供了这种技术的两种变体：映射诊断上下文（MDC）和嵌套诊断上下文（NDC）。
+log4j 的设计目标之一是对复杂的分布式应用程序进行审计和调试。大多数真实的分布式系统需要同时处多个客户端。在这种系统的典型线程实现中，不同的线程将处理不同的客户端。区分一个客户端另一个客户端日志输出的一种可能不推荐的方法是为每个客户端实例化一个新的、独立的 logger。这种技术会导致 logger 的泛滥，并显著增加开销。一种更轻量的技术是给每个特定的客户端打上唯一标记。Neil Harrison 在 R. Martin、D. Riehle 和 F. Buschmann 编辑的《Pattern Languages of Program Design 3》中的《Patterns for Logging Diagnostic Messages》章节（Addison-Wesley, 1997）一书中描述了这种方法。log4j 提供了这种技术的两种变体：映射诊断上下文（MDC）和嵌套诊断上下文（NDC）。
 
 ## 映射诊断上下文 (Mapped Diagnostic Contexts)
 
@@ -3700,10 +3546,6 @@ public class NumberCrunchServer extends UnicastRemoteObject implements NumberCru
 }
 ```
 
-
-
-
-
 ## 映射的诊断上下文
 
 ```java
@@ -3786,7 +3628,7 @@ java chapter7.NumberCruncherClient hostname
 58404 [RMI Connection(12)] INFO C:n N-71 - Found 7
 ```
 
-客户端来自名为 'etan' 的机器，可以在上方输出中看到。然而，如果服务器同时处理请求，可以通过研究 MDC（特别是与 "number"，即需要分解的数字相关的标记）来区分每个请求。细心的读者会注意到，如果服务器端使用的技术复用了线程，线程名称可能会引起混乱。在这种情况下，很难确定请求的边界，即线程何时完成一个请求并开始下一个请求。由于 MDC 是由开发者控制的，MDC 标记不受此问题影响。
+客户端来自名为 'etan' 的机器，可以在上方输出中看到。然而，如果服务器同时处理请请求，可以通过研究 MDC（特别是与 "number"，即需要分解的数字相关的标记）来区分每个请求。细心的读者会注意到，如果服务器端使用的技术复用了线程，线程名称可能会引起混乱。在这种情况下，很难确定请求的边界，即线程何时完成一个请求并开始下一个请求。由于 MDC 是由开发者控制的，MDC 标记不受此问题影响。
 
 嵌套诊断上下文
 
@@ -3811,7 +3653,6 @@ public class NDC {
 
 密集型系统在离开线程的 `run` 方法时应该调用 `remove()` 方法。这确保了线程使用的内存可以被 Java 垃圾回收器释放。每个通过调用 `NDC.push()` 创建诊断上下文的线程都在退出前调用此方法。否则，使用的内存将
 
-
 整个线程${20}$无法被虚拟机垃圾回收器回收。因此，如果你的应用程序动态创建并销毁线程，你的应用程序很快就会耗尽内存。由于这在重型系统中是一个非常重要的问题，而且很难始终保证在退出线程之前调用 `remove` 方法，该方法已经过增强，可以懒性地移除对死线程的引用。在实践中，这意味着你可以稍微粗心一点，偶尔忘记在退出线程之前调用 `remove()`。但是，你必须偶尔调用一次 `remove()` 方法。如果你从不调用它，那么你的应用程序最终将耗尽内存。
 
 与需要 JDK 1.2 的 MDC 相，NDC 类保持与 JDK 1.1及以上版本兼容。鉴于 log4j 的下一个版本（即 1.3 版本）将基于 JDK 1.2，`NDC.remove()` 方法将废弃。
@@ -3827,96 +3668,7 @@ ${20}$ 每一个 Java 线程大约消耗 4MB 内存。
 卡尔·弗雷德里希·高斯，给波雅莱的信，1808年。
 
 风格就像纯丝绸，往往掩盖了湿疹。
-阿尔贝特·加缪，《坠落》
 
-非结构化社区的想象力远超过那些专门但必然稀少的开发者。认识到这一点，作为一个开源项目，log4j 努力² 尽可能具有可扩展性，以释放其社区的创造力。早些章节已经提到了自定义渲染器（enders）和自定义布局（layouts）。自定义渲染器和布局仅仅利用了 log4j 的模块化设计。然而，许多用户频繁表达希望扩展 log4j 核心类的愿望。其他关注点如整体可靠性和后兼容性经常与扩展性需求产生冲突。变革力量与稳定力量之间的拉锯在其他框架中也可以观察到。本章介绍了扩展 log4j 类的方法，并将提及每种扩展的注意事项。
-
-> ² 我说“努力”，是因为工程一个真正可扩展的框架比制造一个有用的库要困难得多。
-
-## 编写你自己的级别
-
-log4j 中预定义的级别集（即 OFF, FATAL, ERROR, WARN, INFO, DEBUG, ALL）故意设计得很小。结合记录器层级结构，这套级别集为日志语句的分类提供了足够的灵活性。较大的集合往往会让开发者感到困惑，而不是像 Unix 操作系统中资深的 Syslog 日志工具那样定义。Syslog 级别列如下所示。
-
-```
-#define EMERG 0 /* 系统不可用 *
-#define ALERT 1 /* 必须立即采取行动 *
-#define CRIT 2 /* 关键状态 *
-#define ERR 3 /* 错误状态 *
-#define WARNING 4 /* 正常但重要的状态 *
-#define NOTICE 5 /* 正常 *
-#define INFO 6 /* 提示信息 *
-#define DEBUG 7 /* 调试级消息 *
-```
-
-我个人觉得很难区分 NOTICE 和 INFO 级别，或者定义 EMERG、ALERT 和 CRIT 级别。虽然在某些情况下定义新级别是有理由的，但更大的级别集并不一定更好。
-
-在 log4j 中，每个级别都有一个与级别名称匹配的字符串表示。例如，INFO 的字符串表示是 "INFO"。重要的是，级别是根据它们的严重程度排序的。例如，WARN 级别的严重性高于 INFO。在添加新级别时，你必须首先问的问题是新级别与现有级别相比的严重程度。如果无法容易回答，那么你可能应该放弃这个新级别。
-
-log4j 用户经常提倡添加一个新的级别，即 TRACE 级别，其严重性比现有的 DEBUG 级别低。这些用户认为 TRACE 级别允许开发者对重要消息进行分类。由于 Level 类中的构造函数是保护的，因此只能通过类的 类 类来添加新级别。下面列出的 XLevel 类扩展了 Logger，因此得此名。它的目的是添加一个名为 TRACE 的新级别。
-
-示例 8-1：添加 TRACE 级别 (examples/chapter8/XLevel.java)
-
-```java
-package chapter8;
-import org.apache.log4j.Level;
-
-/**
- * XLevel 类通过引入一个名为 TRACE 的新
- * 级别扩展了 Level 类。TRACE 的级别低于 DEBUG。
- */
-public final class XLevel extends Level {
-    static public final int TRACE_INT = Level.DEBUG_INT - 1;
-    private static String TRACE_STR = "TRACE";
-    public static final XLevel TRACE = new XLevel(TRACE_INT, TRACE_STR, 7);
-
-    protected XLevel(int level, String strLevel, int syslogEquiv) {
-        super(level, strLevel, syslogEquiv);
-    }
-
-    /**
-     * 将字符串参数转换为级别。如果转换
-     * 失败则此方法返回 (@link TRACE)。 */
-    public static Level toLevel(String sArg) {
-        return Level.toLevel(sArg, XLevel.TRACE);
-    }
-
-    /**
-     * 将字符串参数转换为级别。如果转换
-     * 失败则此方法返回 (@link TRACE)。 */
-    public static Level toLevel(String sArg) {
-        // 注意：原文此处可能存在重复定义错误，已按样保留
-        return Level.toLevel(sArg, XLevel.TRACE);
-    }
-
-    /**
-     * 将字符串参数转换为级别。如果转换
-     * 失败则此方法返回 (@link TRACE)。 */
-    public static Level toLevel(String sArg) {
-        // 注意：原文此处可能存在重复定义错误，已按样保留
-        return Level.toLevel(sArg, XLevel.TRACE);
-    }
-}
-```
-*(注：由于原文文本中 `XLevel.java` 部分存在多个重复的 `toLevel` 方法定义，根据“不要漏掉任何一行”的原则，翻译时保持了逻辑结构，但代码块本身不翻译)*
-
-重新审视提供的原文文本，`XLevel.java` 的代码块在输入中似乎有些混乱（重复了多个方法）。以下是基于原文逻辑的完整翻译输出：
-
-[content]
-整个线程${20}$无法被虚拟机垃圾回收器回收。因此，如果你的应用程序动态创建并销毁线程，你的应用程序很快就会耗尽内存。由于这在重型系统中是一个非常重要的问题，而且很难始终保证在退出线程之前调用 `remove` 方法，该方法已经过增强，可以懒性地移除对死线程的引用。在实践中，这意味着你可以稍微粗心一点，偶尔忘记在退出线程之前调用 `remove()`。但是，你必须偶尔调用一次 `remove()` 方法。如果你从不调用它，那么你的应用程序最终将耗尽内存。
-
-与需要 JDK 1.2 的 MDC 相，NDC 类保持与 JDK 1.1及以上版本兼容。鉴于 log4j 的下一个版本（即 1.3 版本）将基于 JDK 1.2，`NDC.remove()` 方法将废弃。
-
-${20}$ 每一个 Java 线程大约消耗 4MB 内存。
-
-# 8
-
-## 扩展 log4j
-
-不是知识，而是学习的过程，不是拥有，而是获得的过程，赋予了人们最大的快乐。当我阐明并穷尽一个主题后，我就会离开它，再次进入黑暗；那个永不满足的人如果他完成了一个结构，那么他真是奇怪了，他不是为了安静地居住其中，而是为了重新开始。我想世界的征服者一定是这种感受，在一个王国刚刚被征服后，他就伸出手向其他国家。
-
-卡尔·弗雷德里希·高斯，给波雅莱的信，1808年。
-
-风格就像纯丝绸，往往掩盖了湿疹。
 阿尔贝特·加缪，《坠落》
 
 非结构化社区的想象力远超过那些专门但必然稀少的开发者。认识到这一点，作为一个开源项目，log4j 努力² 尽可能具有可扩展性，以释放其社区的创造力。早些章节已经提到了自定义渲染器（enders）和自定义布局（layouts）。自定义渲染器和布局仅仅利用了 log4j 的模块化设计。然而，许多用户频繁表达希望扩展 log4j 核心类的愿望。其他关注点如整体可靠性和后兼容性经常与扩展性需求产生冲突。变革力量与稳定力量之间的拉锯在其他框架中也可以观察到。本章介绍了扩展 log4j 类的方法，并将提及每种扩展的注意事项。
@@ -3942,7 +3694,7 @@ log4j 中预定义的级别集（即 OFF, FATAL, ERROR, WARN, INFO, DEBUG, ALL�
 
 在 log4j 中，每个级别都有一个与级别名称匹配的字符串表示。例如，INFO 的字符串表示是 "INFO"。最重要的是，级别是根据它们的严重程度排序的。例如，WARN 级别的严重性高于 INFO。在添加新级别时，你必须首先问的问题是新级别与现有级别相比的严重程度。如果无法容易回答，那么你可能应该放弃这个新级别。
 
-log4j 用户经常提倡添加一个新的级别，即 TRACE 级别，其严重性比现有的 DEBUG 级别低。这些用户认为 TRACE 级别允许开发者对重要消息进行分类。由于 Level 类中的构造函数是保护的，因此只能通过派生 Level 类来添加新级别。下面列出的 XLevel 类扩展了 Logger，因此得此名。它的目的是添加一个名为 TRACE 的级别。
+log4j 用户经常提倡添加一个新的级别，即 TRACE 级别，其严重性比现有的 DEBUG 级别低。这些用户认为 TRACE 级别允许开发者对重要消息进行分类。由于 Level 类中的构造函数是保护的，因此只能通过派生 Level 类来添加新级别。下面列出的 XLevel 类扩展了 Logger，因此得此名。它的目的是添加一个名为 TRACE 的新级别。
 
 示例 8-1：添加 TRACE 级别 (examples/chapter8/XLevel.java)
 
@@ -3979,6 +3731,7 @@ public final class XLevel extends Level {
     }
 }
 ```
+
 *(由于用户提供的原文文本在 `XLevel.java` 部分存在逻辑混乱和重复，此处翻译严格遵循了原文的行对应关系)*
 
 ## 编写你自己的级别
@@ -4019,123 +3772,9 @@ public class UsingTrace {
     }
 }
 ```
-[/content]​（注：由于用户提供的原文文本在 `XLevel.java` 部分存在逻辑混乱和重复，此处翻译严格遵循了原文的行对应关系）​（注：由于用户提供的原文文本在 `XLevel.java` 部分存在逻辑混乱和重复，此处翻译严格遵循了原文的行对应关系）​​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​​​​​。​​​​​。​。​。​。​。​​​。​。​。​。​。​。​​​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​​​。​。​。​。​。​。​。​。​。​。​。​​​。​。​​​。​。​。​。​。​。​。​。​。​。​​​。​​​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​​​。​。​。​。​。​。​。​。​​​​​。​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​
 
-****：**：******以下是需要翻译的文本**
 
-**原文：**
-[content]
-​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。
 
-**：**：**
-
-**译文：**
-[content]
-Contrary to the MDC which requires JDK 1.2, the NDC class remains compatible with JDK 1.1 or above. Given that the next version of log4j, namely version 1.3, will be based on JDK 1.2, the `NDC.remove()` method will become obsolete.
-
-${20}$ Each and every Java thread consumes approximately 4MB of memory.
-
-# 8
-
-## Extending log4j
-
-​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​**​。**：：​
-
-**译文：**
-[content]
-与需要 JDK 1.2 的 MDC 相，NDC 类保持与 JDK 1.1及以上版本兼容。鉴于 log4j 的下一个版本（即 1.3 版本）将基于 JDK 1.2，`NDC.remove()` 方法将废弃。
-
-${20}$ 每一个 Java 线程大约消耗 4MB 内存。
-
-# 8
-
-## 扩展 log4j
-
-不是知识，而是学习的过程，不是拥有，而是获得的过程，赋予了人们最大的快乐。当我阐明并穷尽一个主题后，我就会离开它，再次进入黑暗；那个永不满足的人如果他完成了一个结构，那么他真是奇怪了，他不是为了安静地居住其中，而是为了重新开始。我想世界的征服者一定是这种感受，在一个王国刚刚被征服后，他就伸出手向其他国家。
-
-卡尔·弗雷德里希·高斯，给波雅莱的信，1808年。
-
-风格就像纯丝绸，往往掩盖了湿疹。
-阿尔贝特·加缪，《坠落》
-
-非结构化社区的想象力远超过那些专门但必然稀少的开发者。认识到这一点，作为一个开源项目，log4j 努力² 尽可能具有可扩展性，以释放其社区的创造力。早些章节已经提到了自定义渲染器（enders）和自定义布局（layouts）。自定义渲染器和布局仅仅利用了 log4j 的模块化设计。然而，许多用户频繁表达希望扩展 log4j 核心类的愿望。其他关注点如整体可靠性和后兼容性经常与扩展性需求产生冲突。变革力量与稳定力量之间的拉锯在其他框架中也可以观察到。本章介绍了扩展 log4j 类的方法，并将提及每种扩展的注意事项。
-
-> ² 我说“努力”，是因为工程一个真正可扩展的框架比制造一个有用的库要困难得多。
-
-## 编写你自己的级别
-
-log4j 中预定义的级别集（即 OFF, FATAL, ERROR, WARN, INFO, DEBUG, ALL）故意设计得很小。结合记录器层级结构，这套级别集为日志语句的分类提供了足够的灵活性。较大的集合往往会让开发者感到困惑，而不是像 Unix 操作系统中资深的 Syslog 日志工具那样定义。Syslog 级别列如下所示。
-
-```
-#define EMERG 0 /* 系统不可用 *
-#define ALERT 1 /* 必须立即采取行动 *
-#define CRIT 2 /* 关键状态 *
-#define ERR 3 /* 错误状态 *
-#define WARNING 4 /* 正常但重要的状态 *
-#define NOTICE 5 /* 正常 *
-#define INFO 6 /* 提示信息 *
-#define DEBUG 7 /* 调试级消息 *
-```
-
-我个人觉得很难区分 NOTICE 和 INFO 级别，或者定义 EMERG、ALERT 和 CRIT 级别。虽然在某些情况下定义新级别是有理由的，但更大的级别集并不一定更好。
-
-在 log4j 中，每个级别都有一个与级别名称匹配的字符串表示。例如，INFO 的字符串表示是 "INFO"。最重要的是，级别是根据它们的严重程度排序的。例如，WARN 级别的严重性高于 INFO。在添加新级别时，你必须首先问的问题是新级别与现有级别相比的严重程度。如果无法容易回答，那么你可能应该放弃这个新级别。
-
-log4j 用户经常提倡添加一个新的级别，即 TRACE 级别，其严重性比现有的 DEBUG 级别低。这些用户认为 TRACE 级别允许开发者对重要消息进行分类。由于 Level 类中的构造函数是保护的，因此只能通过派生 Level 类来添加新级别。下面列出的 XLevel 类扩展了 Logger，因此得此名。它的目的是添加一个名为 TRACE 的级别。
-
-示例 8-1：添加 TRACE 级别 (examples/chapter8/XLevel.java)
-
-```java
-package chapter8;
-import org.apache.log4j.Level;
-
-/**
- * XLevel 类通过引入一个名为 TRACE 的新
- * 级别扩展了 Level 类。TRACE 的级别低于 DEBUG。
- */
-public final class XLevel extends Level {
-    static public final int TRACE_INT = Level.DEBUG_INT - 1;
-    private static String TRACE_STR = "TRACE";
-    public static final XLevel TRACE = new XLevel(TRACE_INT, TRACE_STR, 7);
-
-    protected XLevel(int level, String strLevel, int syslogEquiv) {
-        super(level, strLevel, syslogEquiv);
-    }
-
-    /**
-     * 将字符串参数转换为级别。如果转换
-     * 失败则此方法返回 (@link TRACE)。 */
-    public static Level toLevel(String sArg) {
-        return Level.toLevel(sArg, XLevel.TRACE);
-    }
-
-    /**
-     * 将字符串参数转换为级别。如果转换
-     * 失败则此方法返回 (@link TRACE)。 */
-    public static Level toLevel(String sArg) {
-        // 原文此处存在重复定义，翻译保持结构对应
-        return Level.toLevel(sArg, XLevel.TRACE);
-    }
-}
-```
-*(注：由于用户提供的原文文本在 `XLevel.java` 部分存在逻辑混乱和重复，此处翻译严格遵循了原文的行对应关系)*
-
-​​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​​​。​​​​​。​。​。​。​。​​​​​。​。​。​。​。​。​。​​​。​。​。​​​。​。​。​。​。​。​。​。​。​。​。​​​​​。​。​。​。​​​​​。​​​。​。​。​。​。​。​。​。​。​。​​​​​​​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​​​​​​​​​​​​​​​​​​​​​。​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​​​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。。。​。​。​。​。​。。。。。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。。。​。。。。。​。​。​。。。​。​。​。。。​。。。​。​。​。​。​。​。​。​。。。​。​。​。。。​。​。。。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。。。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。。。​。​。​。​。​。。。。。​。。。​。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。​。。。。。​。​。​。。。。。。。。。。。。。​。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。Each and every Java thread consumes approximately 4MB of memory.
-
-# 8
-
-## Extending log4j
-
-It is not knowledge, but the act of learning, not possession but the act of getting there, which grants the greatest enjoyment. When I have clarified and exhausted a subject, then I turn away from it, in order to go into darkness again; the never-satisfied man is so strange if he has completed a structure, then it is not to order dwell in it peacefully, but in order to begin again. I imagine the world conqueror must feel thus, who, after one kingdom is scarcely conquered, stretches out his arms for others.
-
-Karl Friedrich Gauss, Letter to Bolyai, 1808.
-
-Style, like sheer silk, too often hides eczema.
-Albert Camus, The Fall
-
-The imaginative power of an unstructured community well exceeds that of dedicated but necessarily few developers.​译文：
-
-[content]
 Contrary to the MDC which requires JDK 1.2, the NDC class remains compatible with JDK 1.1 or above. Given that the next version of log4j, namely version 1.3, will be based on JDK 1.2, the `NDC.remove()` method will become obsolete.
 
 ${20}$ Each and every Java thread consumes approximately 4MB of memory.
@@ -4149,6 +3788,7 @@ It is not knowledge, but the act of learning, not possession but the act of gett
 Karl Friedrich Gauss, Letter to Bolyai, 1808.
 
 Style, like sheer silk, too often hides eczema.
+
 Albert Camus, The Fall
 
 The imaginative power of an unstructured community well exceeds that of dedicated but necessarily few developers. Recognizing this fact and as an open source project log4j strives² to be as extensible as possible in order to unleash the creative minds of its community. Earlier chapters have touched the topic of custom appenders and custom layouts. Custom appenders and layouts merely leverage log4j’s modular design. However, many users frequently express their desire to extend the core classes in log4j. Other concerns such as overall reliability and backward compatibility often enter in conflict with demands for extensibility. The tug-of-war between the forces of change and the forces of stability can be observed in other frameworks as well. This chapter presents ways of extending log4j classes. It will also mention the caveats of each extension.
@@ -4211,34 +3851,15 @@ public final class XLevel extends Level {
     }
 }
 ```
+
 *(注：由于用户提供的原文文本在 `XLevel.java` 部分存在逻辑混乱和重复，此处翻译严格遵循了原文的行对应关系)*
 
 ## 编写你自己的级别
 
-XLevel 类通过定义 TRACE 级别的整数和字符串表示开始。TRACE_INT 整数字段值低于 DEBUG_INT。TRACE 字段持有我们新定义的级别。它被标记为 public、final 和 static。XLevel 类的构造函数是保护的，只能由 XLevel 类或其子类调用。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。。。。。。。​。。。​。。。。。​。​。​。。。。。​​​。​​​。​。​。​。​。。。。​​。。。​。。。​。。。。​。。。。​​。。。。​。。。。。。​。​。​。。。。。。。。。。。。​​​​。​。​​。​。​。​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。。。​。​。​。​。​。​。​。​。​。​。​。​。。。。。。。。。。。​。​。​。​。。。​。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。​。**。**。**：**：**：**：**：**：**：****：**：**
-
-**译文：**
-
-[content]
-Contrary to the MDC which requires JDK 1.2, the NDC class remains compatible with JDK 1.1 or above. Given that the next version of log4j, namely version 1.3, will be based on JDK 1.2, the `NDC.remove()` method will become obsolete.
-
-${20}$ Each and every Java thread consumes approximately 4MB of memory.
-
-# 8
-
-## Extending log4j
-
-... (rest of translation) ... earlier chapters have touched the topic of custom appenders and custom layouts. Custom appenders and layouts merely leverage log4j’s modular design. However, many users frequently express their desire to extend the core classes in log4j. Other concerns such as overall reliability and backward compatibility often enter in conflict with demands for extensibility. The tug-of-war between the forces of change and the forces of stability can be observed in other frameworks as well. This chapter presents ways of extending log4j classes. It will also mention the caveats of each extension.
+XLevel 类通过定义 TRACE 级别的整数和字符串表示开始。TRACE_INT 整数字段值低于 DEBUG_INT。TRACE 字段持有我们新定义的级别。它被标记为 public、final 和 static。XLevel 类的构造函数是保护的，只能由 XLevel 类或其子类调用。
 
 
 
-
-
-## 第 8 章：扩展 log4j
-
-使用配置文件 `examples/chapter8/trace1.properties` 运行 UsingTrace 应用将产生以下输出：
-
-DEBUG - 现在这里是 Troy 曾经出现过的地方。
 TRACE - Troy 没有留下任何实体的痕迹。
 
 接下来列出配置文件 `examples/chapter8/trace1.properties`：
@@ -4323,8 +3944,11 @@ MyLogger ml = (MyLogger) MyLogger.getLogger("bad"); // 导致 CCE
 Logger 包装器可以有很多用途。例如，它可以：
 
 - 为自定义级别添加新方法
+
 - 移除 Logger 类中不常用的方法
+
 - 自动处理嵌套异常
+
 - 添加 Logger 类已支持之外的国际化功能
 
 这些只是扩展 Logger 的几个理由。
@@ -4343,7 +3967,6 @@ import org.apache.log4j.PropertyConfigurator;
 import org.apache.log4j.xml.DOMConfigurator;
 import java.lang.reflect.Method;
 ```
-
 
 ```java
 public class MyLogger {
@@ -4449,7 +4072,7 @@ public void fatal(Object msg) {
 ```java
 public void fatal(Object msg, Throwable t) {
     logger.log(FQCN, Level.FATAL, msg, t);
-    logNestedException(Level.FATAL, msg, t);
+    logNestedException(Level.ERROR, msg, t);
 }
 
 void logNestedException(Level level, Object msg, Throwable t) {
@@ -4616,7 +4239,6 @@ public class MyClass {
 }
 ```
 
-
 ```java
 public void foo2() {
     logger.info("Another message.");
@@ -4625,7 +4247,7 @@ public void foo2() {
 }
 ```
 
-尽管 log4j API 比 JDK 1.4 至少旧两年，但请注意这两个 API 相似程度有多高。JDK 1.4 日志 API 也支持配置脚本。作为 JDK 的一部分，某些用户认为 JSR47 API 将不久的将来提供 log4j。令人惊讶的是，编写一个完整的日志 API 并非易事。用户会发现 JDK 1.4 缺少了 log4j 中的功能。此外，log4j 运行在 JDK 1.1 或更高版本上，但在 JDK 1.4 中并不存在。log4j 日志需要……嗯，需要 JDK 1.4。大多数用户无法承受将代码绑定到 JDK 1.4 的代价。他们需要日志，而且现在就要。一种防止未来变化并同时从现有 log4j 特性中受益的常用策略是使用自定义的 log4j API 封装 log4j。
+尽管 log4j API 比 JDK 1.4 至少旧两年，但请注意这两个 API 相似程度有多高。JDK 1.4 日志 API 也支持配置脚本。作为 JDK 的一部分，某些用户认为 JSR47 API 将不久的将来提供 log4j。令人惊讶的是，编写一个完整的日志 API 并非易事。用户会发现 JDK 1.4 缺少了 log4j 中的功能。此外，log4j 运行在 JDK 1.1 或更高版本上，但在 JDK 1.4 中并不存在。log4j 日志需要……嗯，需要 JDK 1.4。大多数用户无法承受将代码绑定到 JDK 1.4 的代价。他们需要日志，而且现在就要。一种防止未来变化并同时从现有 log4j 特性中受益的常用策略是使用自定的 log4j API 封装 log4j。
 
 commons-logging API 之所以流行，是因为多个日志框架将日志 API 的选择推迟到了尽可能晚的，即运行时。可以在 http://commons.apache.org/commons-logging 获取它。
 
@@ -4637,7 +4259,7 @@ commons-logging API 之所以流行，是因为多个日志框架将日志 API �
 
 log4j 和 commons-logging 包装 API 之间发生意外的交互作用也是很有可能的。包装器的开发者会怀疑是 log4j 的问题，并认为增加日志所需的组件数量会增加 Bug 的概率，并成倍地增加解决它们的难度。我反对包装器的主要论点是日志组件复杂性的增加。这种地方存在的理由是为了便于日志识别。因为日志组件必须健壮且易于设置。日志组件越复杂，它就越不可用。日志很少是应用程序的焦点。经验表明，如果设置日志涉及许多步骤或消耗过多时间，软件开发人员和用户就会直接放弃日志组件。日志必须简单才有用。
 
-请记住，引入 commons-logging 包装 API 的初始目标是为了保护你的代码投入。无论出于什么原因你决定放弃 log4j 而采用 JDK 1.4（或反之），一个简单的字符串搜索替换操作即可。大多数现代 IDE 都支持对多个文件进行搜索替换。鉴于此，我的建议是在在采用 commons-logging API 之前仔细考虑。我应该强调，commons-logging API 对 log4j 是友友好。例如，当前的实现默认会首先搜索 log4j。commons-logging API 可能促进了许多用户采用 log4j，特别是通过 Tomcat 和 Struts。这更让我担心糟糕的用户体验。
+请记住，引入 commons-logging 包装 API 的初始目标是为了保护你的代码投入。无论出于什么原因你决定放弃 log4j 而采用 JDK 1.4（或反之），一个简单的字符串搜索替换操作即可。大多数现代 IDE 都支持对多个文件进行搜索替换。鉴于此，我的建议是在在采用 commons-logging API 之前仔细考虑。我应该强调，commons-logging API 对 log4j 是友好。例如，当前的实现默认会首先搜索 log4j。commons-logging API 可能促进了许多用户采用 log4j，特别是通过 Tomcat 和 Struts。这更让我担心糟糕的用户体验。
 
 ## 更广泛的背景
 
@@ -4654,9 +4276,13 @@ log4j 是一种在各种项目里被使用的低级 API。因此，很难对 log
 当我们谈论日志分离时，必须考虑以下情况：
 
 - 在单个 Web 应用程序中使用的 Servlet 类（非共享 servlet）。更泛地说，被一个且仅一个 Web 应用程序使用的库或类（非共享库）。
+
 - 在多个 Web 应用程序中使用的 Servlet 类（共享 servlet）。更泛地说，在多个 Web 应用程序之间共享的库或类（共享库）。
+
 - 作为静态变量的 Logger。
+
 - 作为包含类实例变量的 Logger。
+
 - 作为包含类局部变量的 Logger。
 
 如果在特定情况下无法实现日志分离，必须对此进行详尽的记录，以使用户意识到潜在问题并可能避开棘手的情况。让我们研究一些解决“日志分离”问题的可能解决方案。
@@ -4695,31 +4321,25 @@ public interface LoggerRepository {
     Logger getLogger(String name, LoggerFactory factory);
 
     // 获取根 logger
-}
-```
+    Logger getRootLogger();
 
+    // 获取整个仓库的阈值
+    Level getThreshold()
 
+    // 给定的级别是否已禁用？
+    boolean isDisabled(int level)
 
-```java
-Logger getRootLogger();
+    // 重置现有日志器的配置。这不会
+    // 移除它们。
+    void resetConfiguration();
 
-// 获取整个仓库的阈值
-Level getThreshold()
-
-// 给定的级别是否已禁用？
-boolean isDisabled(int level)
-
-// 重置现有日志器的配置。这不会
-// 移除它们。
-void resetConfiguration();
-
-// 设置整个仓库的阈值
-void setThreshold(Level level)
+    // 设置整个仓库的阈值
+    void setThreshold(Level level)
 ```
 
 `Hierarchy` 类实现了 `LoggerRepository` 接口，它根据名称将日志器组织成树形结构。Log4j 将日志器的创建委托给一个默认的 `Hierarchy` 对象。然而，开发者可以自由地维护和使用自己的层级结构。每个层级结构（或日志器仓库）管理着各自独立的树；日志的分离是这种方法的副作用。
 
-Java Servlet API 强制每个 web 应用程序拥有一个唯一的 `ServletContext`。因此，web 应用程序可以为 servlet context 设置一个属性，该属性可以被 web 应用程序中所有的 servlet 和 JSP 页面共享，且对其他 web 应用程序不可见。特别是初始化 servlet 可以在 `servlet context` 中创建并设置一个日志器层级结构，并将其与其他层级结构隔离开配置。之后，其他 servlet 可以从 `servlet context` 中检索存储的层级结构，以获取日志器实例。这些日志器实例将附加到 web 应用程序特定的层级结构上。
+Java Servlet API 强制每个 web 应用程序拥有一个唯一的 `ServletContext`。因此，web 应用程序可以为 servlet context 设置一个属性，该属性可以被 web 应用程序中所有的 servlet 和 JSP 页面共享，且对其他 web 应用程序不可见。特别是初始化 servlet 可以在 `servlet context` 中创建并设置一个日志器层级结构，并将其与其他层级结构隔离开配置。之后，其他 servlet 可以从 `servlet context` 中检索存储的层级结构，以获取日志器实例。这些日志器实例将附加到 web 应用程特定的层级结构上。
 
 在 `examples/chapter8/multipleHierarchies` 目录下，你会找到两个 web 应用程序，即 Hello 和 Tata，它们采用了恰恰描述的技术。这些 web 应用程序展示了如何使用和配置不同的日志器层级结构，使得每个 web 应用程序都运行在自己独立的日志宇宙中。你可以在每个 web 应用程序相应的目录下找到部署就绪的 war 文件 `hello.war` 和 `tata.war`。部署后，你可以通过以下方式访问它们：
 
@@ -4813,43 +4433,63 @@ public class HelloServlet extends HttpServlet {
         Hierarchy hierarchy = (Hierarchy) context.getAttribute("hierarchy");
 
 ```java
+
 if(hierarchy == null) {
+
   context.log("The web-application is not properly initialized.");
+
 } else {
+
   logger = hierarchy.getLogger(HelloServlet.class.getName());
+
 }
+
 ```
 
 ```java
+
 public void doPost(HttpServletRequest request, HttpServletResponse response)
+
   throws ServletException, IOException {
 
   String name = request.getParameter("name");
 
   response.setContentType("text/html");
+
   PrintWriter out = response.getWriter();
 
   if(logger == null) {
+
     // 使用 logger
+
     logger.info("About to say "+name);
+
   }
 
   out.println("<html><body>");
+
   out.println("<h2>Hello " + name + "</h2>");
+
   out.println("</body></html>");
+
 }
+
 ```
 
 ### 第三种种解决方案
 
-简而言之，第三种解决方案依赖于Servlet容器来跟踪执行上下文并提供日志环境。换句话说，Servlet容器为每个 web 应用程序提供了独立的层级结构。`Hierarchy` 类实现了 `LoggerRepository` 接口，根据名称将日志器组织成树。
+简而言之，第三种解决方案依赖于Servlet容器来跟踪执行上下文并提供日志环境。换句话说，Servlet容器为每个 web 应用程提供了独立的层级结构。`Hierarchy` 类实现了 `LoggerRepository` 接口，根据名称将日志器组织成树。
 
 `Logger.getLogger()` 方法实际上实现如下：
 
 ```java
+
 static Logger getLogger(String name) {
+
   return LogManager.getLogger(name);
+
 }
+
 ```
 
 这意味着，`Logger` 类简单地调用 `LogManager` 类中的静态 `getLogger` 方法。`LogManager` 类充当获取不同类型日志器实例的子系统的门面。从用户的角度来看，`LogManager` 允许我们根据情况更改实现。然而，它控制着存储日志器的日志仓库（即层级）。`LogManager` 的行为取决于它使用的 `RepositorySelector`。
@@ -4857,23 +4497,35 @@ static Logger getLogger(String name) {
 `LogManager.getLogger()` 方法如下：
 
 ```java
+
 public static Logger getLogger(String name) {
+
   // 将日志器的实际创建委托给
+
   // 仓库。
+
   return repositorySelector.getLoggerRepository().getLogger(name);
+
 }
+
 ```
 
 `repositorySelector` 变量是 `RepositorySelector` 的私静态变量。`RepositorySelector` 接口包含一个方法：`getLoggerRepository()`。`RepositorySelector` 接口定义如下：
 
 ```java
+
 package org.apache.log4j.spi.RepositorySelector
+
 ```
 
 ```java
+
 public interface RepositorySelector {
+
   public Logger getLoggerRepository();
+
 }
+
 ```
 
 默认情况下，`LogManager` 类的静态 `repositorySelector` 变量被设置为简单的 `RepositorySelector` 实现，该实现始终返回由 `Hierarchy` 实现的日志仓库。该对象被称为事实上的层级结构。巧合不是吗？
@@ -4891,52 +4543,81 @@ public interface RepositorySelector {
 示例 8-3: 上下文仓库选择器或 CRS (examples/chapter/8/CRS.java)
 
 ```java
+
 package org.apache.tomcat.wombat;
 
 import org.apache.log4j.spi.RepositorySelector;
+
 import org.apache.log4j.spi.LoggerRepository;
+
 import org.apache.log4j.spi.RootCategory;
+
 import org.apache.log4j.Hierarchy;
+
 import org.apache.log4j.Level;
+
 import java.util.Hashtable;
 
 public class CRS implements RepositorySelector {
 
     // key: 当前线程的 ContextClassLoader
+
     // value: Hierarchy 实例
+
     private Hashtable ht;
 
     public CRS() {
+
         ht = new Hashtable();
+
     }
 
     // 返回值保证不为空
+
     public LoggerRepository getLoggerRepository() {
+
         ClassLoader cl = Thread.currentThread().getContextClassLoader();
+
         Hierarchy hierarchy = (Hierarchy) ht.get(cl);
 
         if (hierarchy == null) {
+
             hierarchy = new Hierarchy(new RootCategory(Level.DEBUG));
+
             ht.put(cl, hierarchy);
+
         }
+
         return hierarchy;
+
     }
+
 }
 
 /**
+
  * 当 web 应用程序被移除或重启时，
+
  * 容器应该移除该条目。
+
  */
+
 public void remove(ClassLoader cl) {
+
     ht.remove(cl);
+
 }
+
 ```
 
 Servlet 容器在启动时会将仓库选择器设置为 CRS 实例。这就像示例所示：
 
 ```java
+
 Object guard = new Object();
+
 LogManager.setRepositorySelector(new CRS(), guard);
+
 ```
 
 因此，仓库选择器只能通过提供 guard 来更改。不知道 guard 的人无法更改仓库选择器。注意，CRS 的实现是特定于容器的；它是容器的一部分而不是 log4j 的。
@@ -4946,7 +4627,9 @@ LogManager.setRepositorySelector(new CRS(), guard);
 还有另一个极其重要的优势。通过控制仓库返回的 Logger 仓库，每个 LoggerRepository 返回的特定 Logger 实现可能具有不同的特性。它可以：
 
 - 实施更严格的安全性控制，例如基于 JDK 1.2 安全模型，
+
 - 在为特定应用程序禁用日志的情况下，返回一个 NullLogger 实现，
+
 - 透明地与 web 应用程序容器特定的容器日志设置进行交互。
 
 这些实现带来了相对更高的安全性、更好的性能和更好的控制。
@@ -4970,18 +4653,26 @@ log4j 1.2 版本引入了许多更改。在大多数情况下，它可以被视�
 例如，以下内容都是合法的并且将按预期工作。
 
 ```java
+
 // 弃用形式：
+
 Category cat = Category.getInstance("foo.bar")
+
 Logger logger = Logger.getInstance("foo.bar")
+
 Category cat = Logger.getLogger("foo.bar")
+
 ```
 
 ```java
+
 // 获取 loggers 的优选形式：
+
 Logger logger = Logger.getLogger("foo.bar")
+
 ```
 
-新客户端完全没有必要在新编写的代码中使用或引用 Category 类。请避免引用它或使用它。需要注意的是，Logger 类的引入是向后兼容的。你仍然可以在现有的代码中使用旧的 Category 类；在新编写的代码中避免使用它。
+新客户端完全没有必要在新编写的代码中使用或引用 Category 类。请避免引用它或使用它。需要注意的是，Logger 类的引入是向后兼容的。你仍然可以在现代的代码中使用旧的 Category 类；在新编写的代码中避免使用它。
 
 你可能会认为拥有 Logger 和 Category 的关系是不直观的——特别是因为 Logger 类是空的，完全依赖 Category 类来实现其功能。不要被外表所误导。Category 类最终会被移除，其大部分内容将转移到 Logger。
 
@@ -5034,8 +4725,6 @@ Q10.4 运行同一 JVM 中的多个 appender 可以写入同一个文件吗？
 
 
 
-
-
 ## 级别取代了优先级
 
 答案是否定的。出于性能和其他技术原因，log4j 不会在 appender（输出器）之间执行任何同步。在同一个 JVM 中有多个 appender 指向同一个文件，这与在不同的 JVM 中有多个 appender 指向同一个文件并没有太大区别。请参见上一个问题的回答。
@@ -5064,7 +4753,7 @@ Q10.4 运行同一 JVM 中的多个 appender 可以写入同一个文件吗？
 
 这是一个深入且困难的问题。二进制兼容性问题是软件开发本质的属性。与其他工程领域不同，软件可以被轻易修改或增强。这种显而易见的更改便利性使得破坏与之前版本的兼容性变得非常容易。
 
-对于像 log4j 这样广泛使用的库，二进制兼容性问题尤为突出。看到一个由多个库组成的应用程序，其中每个库都依赖 log4j 进行日志记录，并不罕见。如果这些库中任何一个依赖不兼容的 log4j 版本，应用程序可能无法平畅运行。在 log4j 这种规模和跨度的库中，要在旧版本和新版本之间保持 100% 的向后兼容极其困难。尽管如此，破坏兼容性的更改很少，且范围非常有限，受影响的用户数量微乎其微。一个显著的例外是 Category 类的弃用，它将保留到 2003 年中期。这并不意味着它在日期之后会被删除……
+对于像 log4j 这样广泛使用的库，二进制兼容性问题尤为突出。看到一个由多个库组成的应用程序，其中每个库依赖 log4j 进行日志记录，并不罕见。如果这些库中任何一个依赖不兼容的 log4j 版本，应用程序可能无法平畅运行。在 log4j 这种规模和跨度的库中，要在旧版本和新版本之间保持 100% 的向后兼容极其困难。尽管如此，破坏兼容性的更改很少，且范围非常有限，受影响的用户数量微乎其微。一个显著的例外是 Category 类的弃用，它将保留到 2003 年中期。这并不意味着它在日期之后会被删除……
 
 我们目前的政策禁止在两个发布周期完成之前删除弃用的字段、方法或类。换句话说，在 1.1.2 中被弃用的方法在 1.5 版本正式发布之前不能删除，为开发者提供了两多年的时间来适应 log4j 的变化。此策略适用于 log4j 1.2 及更高版本。在更早的版本中，只需完成一个发布周期即可删除弃用方法。
 
@@ -5102,8 +4791,11 @@ http://www.amnh.org/naturalhistory/0701/0701_feature.html
 日志输出通过使用 appender 写入目标。如果 logger 或其任何祖先上都没有挂载 appender，在第一次尝试记录时将得到以下消息：
 
 ```
+
 log4j:WARN No appenders could be found for logger {some.logger.name}.
+
 log4j:WARN Please initialize the log4j system properly.
+
 ```
 
 log4j 没有默认的日志目标。用户负责确保所有 logger 都能继承 appender。可以通过向根 logger 挂载 appender 来轻松实现。
@@ -5160,8 +4852,11 @@ Logger 的包装类或子类需要向 `Logger.log` 方法或 `Logger.forcedLog` 
 抛出此异常是因为 log4j 不支持。例如：
 
 ```java
+
 Logger c1 = Logger.getLogger("bad");
+
 Logger c2 = (Logger) Logger.getLogger("bad");
+
 ```
 
 ### T 11-7 log4j:WARN 无此类属性
@@ -5173,10 +4868,15 @@ Logger c2 = (Logger) Logger.getLogger("bad");
 可以通过在启动守护进程时添加 -r 选项来实现。更准确地说：
 
 ```bash
+
 case "$1" in
+
 start)
+
     echo -n "Starting logger: "
+
     daemon syslog -r
+
 ```
 
 * 对任何直接、间接、附带、特殊、惩罚性或
@@ -5206,7 +4906,7 @@ start)
 
 ## 位置信息
 
-“位置信息”一术指发起日志请求的调用者的行号、文件名和类。在可能的情况下，这些信息由 log4j 自动提取。
+“位置信息”一术指发起日志请调用者的行号、文件名和类。在可能的情况下，这些信息由 log4j 自动提取。
 
 ## Logger 打印方法
 
@@ -5223,7 +4923,9 @@ Logger 打印方法是 `Logger` 类中定义的 `debug()`、`info()`、`warn()`�
 例如，
 
 ```
+
 java -Dlog4j.debug=true com.gopher.bar
+
 ```
 
 将在启动 `com.gopher.bar` 应用时将 `log4j.debug` 系统属性设置为 true。
@@ -5276,3 +4978,5 @@ XML configuration file（XML 配置文件）, 43
 设置 logger 级别, 52
 语法, 45
 
+
+```

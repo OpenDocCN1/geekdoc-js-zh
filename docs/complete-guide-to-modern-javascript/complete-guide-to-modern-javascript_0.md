@@ -1,6 +1,7 @@
+
 # 现代 JavaScript 完整指南
 
-# 引言
+## 引言
 
 本书最初于 2018 年出版，是数月自学 JavaScript 的成果，旨在帮助那些希望将技能更新到最新 ECMAScript 规范的 JavaScript 开发者。
 
@@ -16,7 +17,9 @@
 
 在那里你可以找到本书的核心章节，这些章节将随着每个新版本的 ECMAScript 进行更新。
 
-# 关于我￼![Alberto_Montalesi.jpg](img/Alberto_Montalesi.jpg)
+## 关于我
+
+![Alberto_Montalesi.jpg](img/Alberto_Montalesi.jpg)
 
 我叫 Alberto Montalesi，来自意大利，目前在越南担任软件开发人员，负责企业级软件的开发。
 
@@ -30,28 +33,28 @@
 
 除了编程，我的其他爱好还包括摄影、旅行和游戏。
 
-## 联系我
+### 联系我
 
 如果你想就任何形式的合作或讨论与我联系，可以在以下平台找到我：
 
-1.  [Twitter](https://twitter.com/montalesi)
-1.  [DevTo](https://dev.to/albertomontalesi) 访问 https://dev.to/albertomontalesi
-1.  [Github](https://github.com/AlbertoMontalesi) 访问 https://github.com/AlbertoMontalesi
-1.  [InspiredWebDev](https://inspiredwebdev.com) 我的个人博客 https://inspiredwebdev.com
+1. [Twitter](https://twitter.com/montalesi)
+2. [DevTo](https://dev.to/albertomontalesi) 访问 https://dev.to/albertomontalesi
+3. [Github](https://github.com/AlbertoMontalesi) 访问 https://github.com/AlbertoMontalesi
+4. [InspiredWebDev](https://inspiredwebdev.com) 我的个人博客 https://inspiredwebdev.com
 
-## 贡献与捐赠
+### 贡献与捐赠
 
 当然，非常感谢你做出的任何贡献。
 
 如果你喜欢我的内容，并想请我喝杯咖啡，可以访问 [`www.paypal.me/albertomontalesi`](https://www.paypal.me/albertomontalesi)。
 
-## 许可协议
+### 许可协议
 
-￼![图：知识共享许可协议](img/rId30.png)
+![图：知识共享许可协议](img/rId30.png)
 
 本作品采用知识共享署名-非商业性使用-禁止演绎 4.0 国际许可协议进行许可。
 
-# 设置你的环境
+## 设置你的环境
 
 如果你已经在电脑上安装了代码编辑器，并且已经知道如何使用 Chrome 开发者工具或类似工具，那么你可以跳过本章，继续往下看。
 
@@ -61,12 +64,12 @@
 
 其他替代方案包括：
 
-1.  Atom：https://atom.io/
-1.  Sublime Text：https://www.sublimetext.com/
+1. Atom：https://atom.io/
+2. Sublime Text：https://www.sublimetext.com/
 
 无论你选择哪一个，它们都能满足你的需求。
 
-安装完成后，你只需打开软件，创建一个新文件并将其保存为 .js 扩展名，你就拥有了第一个 JavaScript 文件。
+安装完成后，你只需打开软件，创建一个新文件并将其保存为 `.js` 扩展名，你就拥有了第一个 JavaScript 文件。
 
 我们要看的第二件事是开发者工具。
 
@@ -74,104 +77,114 @@
 
 Chrome 开发者工具的外观如下所示。
 
-| ￼![developer-tools.png](img/developer-tools.png) |
+![developer-tools.png](img/developer-tools.png)
 
 第一个标签页“Elements”可以让你查看正在检查的页面的代码，第二个标签页“Console”则是你可以编写 JavaScript 并进行实验的地方。
 
-| ￼![developer-tools2.png](img/developer-tools2.png) |
+![developer-tools2.png](img/developer-tools2.png)
 
 我在这里做的是定义一个变量并调用它。你将在下一章中学习变量以及更多内容，届时我将向你介绍 JavaScript 的基础知识。
 
-# JavaScript 基础
+## JavaScript 基础
 
 JavaScript 是一种由 Brendan Eich 于 1995 年创建的编程语言，它使网页具有交互性，并且是 Web 应用程序的重要组成部分。
 
-如果你想了解更多关于这门语言的历史及其名称，我建议你阅读 Medium.com 上的这篇简短文章 `medium.com/@benastontweet/lesson-1a-the-history-of-javascript-8c1ce3bffb17` 。
+如果你想了解更多关于这门语言的历史及其名称，我建议你阅读 Medium.com 上的这篇简短文章 [`medium.com/@benastontweet/lesson-1a-the-history-of-javascript-8c1ce3bffb17`](medium.com/@benastontweet/lesson-1a-the-history-of-javascript-8c1ce3bffb17)。
 
 如果你曾经打开过 Chrome 开发者工具或类似工具，你可能已经见过 JavaScript 是如何插入到 HTML 页面中的。
 
-我们通过使用 script 标签来实现，要么将 JavaScript 代码直接写在标签内部，要么引用一个外部文件。
+我们通过使用 `script` 标签来实现，要么将 JavaScript 代码直接写在标签内部，要么引用一个外部文件。
 
-写在 script 标签内部的代码：
+写在 `script` 标签内部的代码：
 
-```
+```html
 <script type="text/javascript"> [YOUR_SCRIPT_HERE] </script>
 ```
 
 引用外部文件：
 
-```
+```html
 <script src="/home/script.js"></script>
 ```
 
 当然，你可以添加任意数量的脚本，也可以同时使用相对路径、绝对路径和完整路径，例如：
 
-```
-<!-- 从项目根目录开始的绝对路径 --> <script src="/home/script.js"></script>
-<!-- 相对于当前文件夹的路径 --> <script src="script.js"></script>
-<!-- jQuery 库的完整 URL --> <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/core.js"></script>
+```html
+<!-- 从项目根目录开始的绝对路径 -->
+<script src="/home/script.js"></script>
+
+<!-- 相对于当前文件夹的路径 -->
+<script src="script.js"></script>
+
+<!-- jQuery 库的完整 URL -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/core.js"></script>
 ```
 
-最好不要将代码写在 script 标签内部，而是将其放在单独的文件中，这样浏览器可以缓存它，无论有多少文件引用它，都只需下载一次。这些文件将使用缓存版本，从而提高性能。
+最好不要将代码写在 `script` 标签内部，而是将其放在单独的文件中，这样浏览器可以缓存它，无论有多少文件引用它，都只需下载一次。这些文件将使用缓存版本，从而提高性能。
 
-## 变量
+### 变量
 
 我们使用变量来存储值，这些值可以是用户名、地址或电子商务网站上的商品等任何内容。
 
 在 ES6（ES2015）之前，我们声明变量的方式是：
 
-```
-var username =  "Alberto Montalesi"
+```javascript
+var username = "Alberto Montalesi"
 ```
 
 现在，在声明变量时，我们还有另外两种选择：
 
-```
-let username =  "Alberto Montalesi" const username =  "Alberto Montalesi"
+```javascript
+let username = "Alberto Montalesi"
+const username = "Alberto Montalesi"
 ```
 
 我们将在第 1 章中深入探讨这三个关键字之间的区别，但让我先给你一个简单的解释。
 
-使用关键字 const 创建的变量，顾名思义，是常量，意味着它们不能被覆盖。
+使用关键字 `const` 创建的变量，顾名思义，是常量，意味着它们不能被覆盖。
 
 打开你的 Chrome 开发者工具，尝试输入以下内容：
 
-```
-const age =  26; age =  27; // Uncaught TypeError: Assignment to constant variable
+```javascript
+const age = 26;
+age = 27;
+// Uncaught TypeError: Assignment to constant variable
 ```
 
 如你所见，我们不允许给常量赋新值。
 
 另一方面，如果我们这样做：
 
+```javascript
+let height = 190;
+height = 189
 ```
-let height =  190; height =  189
-```
 
-这次没有报错，let 可以被重新赋值，类似于旧的 var 关键字。
+这次没有报错，`let` 可以被重新赋值，类似于旧的 `var` 关键字。
 
-如果 var 和 let 都可以被重新赋值，那么为什么我们应该使用 let 而不是 var 呢？这个问题的答案需要对 JavaScript 的工作原理进行更多解释，将在第 1 章后面讨论。
+如果 `var` 和 `let` 都可以被重新赋值，那么为什么我们应该使用 `let` 而不是 `var` 呢？这个问题的答案需要对 JavaScript 的工作原理进行更多解释，将在第 1 章后面讨论。
 
-很多人争论 let 和 const 的最佳实践是什么。我的看法是：始终使用 const，除非你事先知道需要重新赋值。
-
-
-
+很多人争论 `let` 和 `const` 的最佳实践是什么。我的看法是：始终使用 `const`，除非你事先知道需要重新赋值。
 
 如果之后你需要重新赋值某个 `const` 变量，只需将其改为 `let` 即可。就我个人而言，我倾向于默认使用 `const`。这样，如果我意外尝试重新赋值，就会看到错误，而不必在之后调试代码才发现引用了错误的变量。
 
-### 关于变量命名的注意事项
+#### 关于变量命名的注意事项
 
 在命名变量时，有一些规则需要遵守。不过别担心，大多数规则都很容易记住。
 
 以下都是禁止的：
 
-```
-// 变量名不能以数字开头 let 1apple =  "one apple"; // 变量名不能包含空格、符号和标点等字符 let hello!  =  "hello!";
+```javascript
+// 变量名不能以数字开头
+let 1apple = "one apple";
+
+// 变量名不能包含空格、符号和标点等字符
+let hello! = "hello!";
 ```
 
 还有一些保留字不能用作变量名和函数名。
 
-|   |   |   |   |
+|  |  |  |  |
 |---|---|---|---|
 | abstract | arguments | await | boolean |
 | break | byte | case | catch |
@@ -194,26 +207,47 @@ let height =  190; height =  189
 
 避免使用首字母缩写、缩写和无意义的名称。
 
-```
-// 不好 let cid =  12;  // `cid` 是什么？ // 好 let clientID =  12;  // 哦，是 `client id` // 不好 let id =  12  // 什么 id？userID？dogID？catID？ // 好 let userID =  12  // 具体一点
+```javascript
+// 不好
+let cid = 12; // `cid` 是什么？
+
+// 好
+let clientID = 12; // 哦，是 `client id`
+
+// 不好
+let id = 12; // 什么 id？userID？dogID？catID？
+
+// 好
+let userID = 12; // 具体一点
 ```
 
 如果你希望变量名尽可能具有描述性，那么它们很可能是由多个单词组成的。
 
-在这种情况下，最常见的两种变量命名方式是 camelCase 和 snake_case。
+在这种情况下，最常见的两种变量命名方式是 `camelCase` 和 `snake_case`。
 
+```javascript
+// 不好
+let lastloggedin = ''; // 难以阅读
+
+// 好
+let lastLoggedIn = ''; // camelCase
+let last_logged_in = ''; // snake_case
 ```
-// 不好 let lastloggedin =  ''  // 难以阅读 // 好 let lastLoggedIn =  ''  // camelCase let last_logged_in =  ''  // snake_case
-```
 
-无论你选择使用 camelCase（首单词后每个单词首字母大写）还是 snake_case（单词之间用下划线分隔），请记住保持一致并坚持你的选择。
+无论你选择使用 `camelCase`（首单词后每个单词首字母大写）还是 `snake_case`（单词之间用下划线分隔），请记住保持一致并坚持你的选择。
 
-## 数据类型
+### 数据类型
 
 JavaScript 是一种动态语言，这意味着与静态语言相反，你在定义变量时无需定义其类型。
 
-```
-// 这是字符串还是数字？ var userID; userID =  12;  // 现在是数字 console.log(typeof userID);  // number userID =  'user1'  // 现在是字符串 console.log(typeof userID);  // string
+```javascript
+// 这是字符串还是数字？
+var userID;
+userID = 12; // 现在是数字
+console.log(typeof userID); // number
+
+userID = 'user1'; // 现在是字符串
+console.log(typeof userID); // string
 ```
 
 这起初可能看起来很便捷，但在处理较大项目时可能会引发问题。
@@ -222,39 +256,40 @@ JavaScript 是一种动态语言，这意味着与静态语言相反，你在定
 
 在 JavaScript 中，有 7 种数据类型：6 种原始类型和 `Object`。
 
-### 原始类型
+#### 原始类型
 
 原始值是一种简单的数据，它不是 `Object`，也没有方法。
 
 它们是：
 
 1. `string`
-1. `number`
-1. `boolean`
-1. `null`
-1. `undefined`
-1. `symbol`（最新添加的）
+2. `number`
+3. `boolean`
+4. `null`
+5. `undefined`
+6. `symbol`（最新添加的）
 
 让我们快速浏览一下它们，如果你有编程经验，可能已经了解其中一些。
 
 `string` 用于表示文本数据，无论是名称、地址还是书籍的章节。
 
-```
-let userName =  "Alberto"; console.log(userName) // Alberto
+```javascript
+let userName = "Alberto";
+console.log(userName); // Alberto
 ```
 
 `number` 用于表示数值。
 
 在 JavaScript 中，没有专门用于整数的类型。
 
-```
-let age =  25;
+```javascript
+let age = 25;
 ```
 
 `boolean` 用于表示值为 `true` 或 `false` 的数据。
 
-```
-let married =  false;
+```javascript
+let married = false;
 ```
 
 `null` 表示值的缺失，而 `undefined` 表示未定义的值。
@@ -263,14 +298,17 @@ let married =  false;
 
 我们将在第 11 章中更详细地了解它。
 
-### 对象
+#### 对象
 
 虽然我们之前讨论的 6 种原始类型只能保存单个值（无论是 `null`、`true`、`false` 等），但 `Object` 用于存储属性的集合。
 
 让我们先看一个简单的 `Object`：
 
-```
-const car =  { wheels:  4, color:  "red", }
+```javascript
+const car = {
+  wheels: 4,
+  color: "red",
+}
 ```
 
 这是一个简单的 `Object`，我用来存储我的汽车的属性。
@@ -279,30 +317,42 @@ const car =  { wheels:  4, color:  "red", }
 
 键的类型是 `string`，但值可以是任何类型，也可以是函数，在这种情况下我们称它们为方法。
 
-```
-const car =  { wheels:  4, color:  "red", drive:  function(){ console.log("wroom wroom") } } console.log(Object.keys(car)[0]) // wheels console.log(typeof  Object.keys(car)[0]) // string car.drive(); // wroom wroom
+```javascript
+const car = {
+  wheels: 4,
+  color: "red",
+  drive: function() {
+    console.log("wroom wroom")
+  }
+}
+
+console.log(Object.keys(car)[0]) // wheels
+console.log(typeof Object.keys(car)[0]) // string
+car.drive(); // wroom wroom
 ```
 
 如你所见，我们现在可以在 `car` 对象上调用 `drive` 函数。
 
 别担心，我们将在下一章中更详细地介绍函数。
 
-### 创建空对象
+#### 创建空对象
 
 我们在创建 `Object` 时不必声明属性。
 
 以下是创建空 `Object` 的两种方法：
 
-```
-const car =  new  Object() const car =  {}
+```javascript
+const car = new Object()
+const car = {}
 ```
 
 更常用的语法是第二种，称为对象字面量。
 
 现在你有了一个新的空汽车对象，要为其添加新属性，只需这样做：
 
-```
-car.color  =  'red'; console.log(car) // {color: "red"}
+```javascript
+car.color = 'red';
+console.log(car) // {color: "red"}
 ```
 
 如你所见，我们使用点表示法向 `car` 对象添加新属性。
@@ -311,8 +361,14 @@ car.color  =  'red'; console.log(car) // {color: "red"}
 
 非常简单，我们有两种选择：
 
-```
-const car =  { wheels:  4, color:  "red", } console.log(car.wheels); // 4 console.log(car['color']); // 'red'
+```javascript
+const car = {
+  wheels: 4,
+  color: "red",
+}
+
+console.log(car.wheels); // 4
+console.log(car['color']); // 'red'
 ```
 
 我们有两种不同的方式来做同一件事？为什么？
@@ -321,8 +377,15 @@ const car =  { wheels:  4, color:  "red", } console.log(car.wheels); // 4 consol
 
 对于多词属性，我们不能使用点表示法。
 
-```
-const car =  { wheels:  4, color:  "red", "goes fast":  true } console.log(car.goes fast); // 语法错误 console.log(car['goes fast']) // true
+```javascript
+const car = {
+  wheels: 4,
+  color: "red",
+  "goes fast": true
+}
+
+console.log(car.goes fast); // 语法错误
+console.log(car['goes fast']) // true
 ```
 
 当你想要使用多词属性时，需要记得用引号将它们的名称括起来，并且只能使用方括号表示法来访问它们。
@@ -335,61 +398,88 @@ const car =  { wheels:  4, color:  "red", "goes fast":  true } console.log(car.g
 
 为简单起见，在示例中每个品牌只有一个型号。
 
-```
-const cars =  { ferrari:  "california", porsche:  "911", bugatti:  "veyron", } // 用户输入 const key =  "ferrari" console.log(cars.key); // undefined console.log(cars['key']); // undefined console.log(cars[key]); // california
+```javascript
+const cars = {
+  ferrari: "california",
+  porsche: "911",
+  bugatti: "veyron",
+}
+
+// 用户输入
+const key = "ferrari"
+
+console.log(cars.key); // undefined
+console.log(cars['key']); // undefined
+console.log(cars[key]); // california
 ```
 
 如你所见，我们需要使用方括号表示法通过存储在变量中的键来访问 `Object` 的属性。
 
 注意，`key` 周围没有引号，因为它是一个变量名，而不是字符串。
 
-### 复制对象
+#### 复制对象
 
 与原始类型不同，对象是通过引用复制的，这意味着如果我们写：
 
-```
-let car =  { color:  'red' } let secondCar = car;
+```javascript
+let car = {
+  color: 'red'
+}
+
+let secondCar = car;
 ```
 
 我们的 `secondCar` 只会存储一个引用，即 `car` 的“地址”，而不是 `Object` 本身。
 
 看看这个例子就更容易理解了：
 
-```
-let car =  { color:  'red' } let secondCar = car; car.wheels  =  4 console.log(car); // {color: 'red', wheels: 4} console.log(secondCar); // {color: 'red', wheels: 4}
+
+
+```javascript
+let car = { color: 'red' }
+let secondCar = car
+car.wheels = 4
+console.log(car) // {color: 'red', wheels: 4}
+console.log(secondCar) // {color: 'red', wheels: 4}
 ```
 
 如你所见，`secondCar` 只是存储了对 `car` 的引用，因此当我们修改 `car` 时，`secondCar` 也发生了变化。
 
 如果我们比较这两个对象，会发现一些有趣的事情：
 
-```
-console.log(car == secondCar); // true console.log(car === secondCar); // true
+```javascript
+console.log(car == secondCar) // true
+console.log(car === secondCar) // true
 ```
 
 无论我们使用相等（`==`）还是严格相等（`===`），都会得到 `true`，这意味着这两个对象是同一个。
 
 只有对同一个 `Object` 进行比较时才会返回 `true`。
 
-
-
-
 看看空对象和具有相同属性的对象之间的比较。
 
-```
-const emptyObj1 =  {}; const emptyObj2 =  {}; emptyObj1 == emptyObj2; // false emptyObj1 === emptyObj2; // false const obj1 =  {a:  1}; const obj2 =  {a:  1}; obj1 == obj2; // false obj1 === obj2; // false
+```javascript
+const emptyObj1 = {}
+const emptyObj2 = {}
+emptyObj1 == emptyObj2 // false
+emptyObj1 === emptyObj2 // false
+
+const obj1 = { a: 1 }
+const obj2 = { a: 1 }
+obj1 == obj2 // false
+obj1 === obj2 // false
 ```
 
 如你所见，只有同一个对象的比较才会返回 `true`。
 
 在 JavaScript 中快速克隆一个对象的方法是使用 `Object.assign`。
 
-```
-const car =  { color:'red' }
-const secondCar =  Object.assign({}, car)
-car.wheels  =  4;
-console.log(car); // {color: 'red', wheels: 4}
-console.log(secondCar); // {color: 'red'}
+```javascript
+const car = { color: 'red' }
+const secondCar = Object.assign({}, car)
+car.wheels = 4
+console.log(car) // {color: 'red', wheels: 4}
+console.log(secondCar) // {color: 'red'}
 ```
 
 更新 `car` 并没有影响 `secondCar`。`Object.assign` 将目标对象作为第一个参数，源对象作为第二个参数。
@@ -410,14 +500,14 @@ console.log(secondCar); // {color: 'red'}
 
 例如：
 
-```
-const fruitBasket = ['apple','banana','orange']
+```javascript
+const fruitBasket = ['apple', 'banana', 'orange']
 ```
 
 我们通过索引访问数组的值。记住数组从位置 0 开始。
 
-```
-const fruitBasket = ['apple','banana','orange']
+```javascript
+const fruitBasket = ['apple', 'banana', 'orange']
 console.log(fruitBasket[0]) // apple
 console.log(fruitBasket[1]) // banana
 console.log(fruitBasket[2]) // orange
@@ -425,55 +515,63 @@ console.log(fruitBasket[2]) // orange
 
 我们可以对数组调用许多方法。让我们看看一些最常用的方法。
 
-```
-const fruitBasket = ['apple','banana','orange'];
+```javascript
+const fruitBasket = ['apple', 'banana', 'orange']
+
 // 获取数组的长度
-console.log(fruitBasket.length); // 3
+console.log(fruitBasket.length) // 3
+
 // 在数组末尾添加一个新值
 fruitBasket.push('pear')
-console.log(fruitBasket); // ["apple", "banana", "orange", "pear"]
+console.log(fruitBasket) // ["apple", "banana", "orange", "pear"]
+
 // 在数组开头添加一个新值
 fruitBasket.unshift('melon')
-console.log(fruitBasket); // ["melon", "apple", "banana", "orange", "pear"]
+console.log(fruitBasket) // ["melon", "apple", "banana", "orange", "pear"]
+
 // 从数组末尾移除一个值
 fruitBasket.pop()
-console.log(fruitBasket); // ["melon", "apple", "banana", "orange"]
+console.log(fruitBasket) // ["melon", "apple", "banana", "orange"]
+
 // 从数组开头移除一个值
 fruitBasket.shift()
-console.log(fruitBasket); // ["apple", "banana", "orange"]
+console.log(fruitBasket) // ["apple", "banana", "orange"]
 ```
 
 正如我们所见，通过这些方法，我们可以轻松地在数组的开头或末尾添加和删除元素。
 
 你可以在 [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array) 上找到更完整的方法列表，链接为 [`developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)。
 
-### 使用 typeof 确定类型
+### 使用 `typeof` 确定类型
 
 我们可以使用 `typeof` 来确定变量的值。例如：
 
-```
-const str =  "hello"
-typeof(str); // string
-const num =  12
-typeof(num) // number
-const arr = [1,2,3]
-typeof(arr) // object
-const obj =  {prop:  'value'}
-typeof(obj) // object
+```javascript
+const str = "hello"
+typeof str // string
+
+const num = 12
+typeof num // number
+
+const arr = [1, 2, 3]
+typeof arr // object
+
+const obj = { prop: 'value' }
+typeof obj // object
 ```
 
 记住 `Array` 不是一种类型，数组是对象！
 
 到目前为止一切看起来都很直接，但如果我们尝试这样的操作呢：
 
-```
-typeof(null)
+```javascript
+typeof null
 ```
 
 我们知道 `null` 是一种原始类型，那么我们应该期望看到 `null` 作为结果吗？
 
-```
-typeof(null) // object
+```javascript
+typeof null // object
 ```
 
 长话短说，这是 JavaScript 最初实现中的一个 bug。如果你想了解更多，[这篇文章](http://2ality.com/2013/10/typeof-null.html) 提供了很好的解释（[`2ality.com/2013/10/typeof-null.html`](http://2ality.com/2013/10/typeof-null.html)）。
@@ -486,10 +584,11 @@ typeof(null) // object
 
 让我们看看一个函数定义：
 
-```
-function  greet(name){
-  console.log("hello "  + name);
+```javascript
+function greet(name) {
+  console.log("hello " + name)
 }
+
 greet("Alberto") // hello Alberto
 ```
 
@@ -499,26 +598,31 @@ greet("Alberto") // hello Alberto
 
 需要记住的一个非常重要的事情是：原始类型是按值传递给函数的，这意味着对这些值的修改不会全局反映出来。另一方面，如果值不是原始类型，比如对象或数组，那么它是按引用传递的，这意味着对它的任何修改都会反映在原始对象中。
 
-```
-let myInt =  1;
-function  increase(value){
-  return value +=1;
+```javascript
+let myInt = 1
+
+function increase(value) {
+  return value += 1
 }
-console.log(myInt); // 1
-console.log(increase(myInt)); // 2
-console.log(myInt); // 1
+
+console.log(myInt) // 1
+console.log(increase(myInt)) // 2
+console.log(myInt) // 1
 ```
 
 如你所见，我们增加了整数的值，但这并没有影响原始变量。
 
 让我们看一个对象的例子。
 
-```
-let myCar =  { make:  "bmw", color:  "red" }
+```javascript
+let myCar = { make: "bmw", color: "red" }
+
 console.log(myCar) // {make: "bmw", color: "red"}
-function  changeColor(car){
-  car.color  =  "blue"
+
+function changeColor(car) {
+  car.color = "blue"
 }
+
 changeColor(myCar)
 console.log(myCar) // {make: "bmw", color: "blue"}
 ```
@@ -527,10 +631,11 @@ console.log(myCar) // {make: "bmw", color: "blue"}
 
 另一种声明函数的方式是使用函数表达式。
 
-```
-const greeter =  function  greet(name){
-  console.log("hello "  + name);
+```javascript
+const greeter = function greet(name) {
+  console.log("hello " + name)
 }
+
 greeter("Alberto") // hello Alberto
 ```
 
@@ -538,10 +643,11 @@ greeter("Alberto") // hello Alberto
 
 我们得到了与第一个例子相同的结果，但使用函数表达式我们还可以创建匿名函数。
 
-```
-const greeter =  function(name){
-  console.log("hello "  + name);
+```javascript
+const greeter = function(name) {
+  console.log("hello " + name)
 }
+
 greeter("Alberto") // hello Alberto
 ```
 
@@ -549,10 +655,11 @@ greeter("Alberto") // hello Alberto
 
 我们还可以进一步调整，使用 ES2015 引入的箭头函数。
 
-```
-const greeter = (name) =>  {
-  console.log("hello "  + name);
+```javascript
+const greeter = (name) => {
+  console.log("hello " + name)
 }
+
 greeter("Alberto") // hello Alberto
 ```
 
@@ -560,7 +667,7 @@ greeter("Alberto") // hello Alberto
 
 我们将在第 2 章详细讨论箭头函数。
 
-## 理解函数作用域和 this 关键字
+## 理解函数作用域和 `this` 关键字
 
 在 JavaScript 中需要理解的最重要的概念之一就是作用域。
 
@@ -574,26 +681,30 @@ greeter("Alberto") // hello Alberto
 
 让我们看两个例子，首先使用关键字 `var`。
 
-```
-var myInt =  1;
-if(myInt ===  1){
-  var mySecondInt =  2
-  console.log(mySecondInt); // 2
+```javascript
+var myInt = 1
+
+if (myInt === 1) {
+  var mySecondInt = 2
+  console.log(mySecondInt) // 2
 }
-console.log(mySecondInt); // 2
+
+console.log(mySecondInt) // 2
 ```
 
 如你所见，我们能够在块作用域之外访问 `mySecondInt` 的值，因为使用关键字 `var` 声明的变量不受块作用域的约束。
 
 现在让我们使用关键字 `let`。
 
-```
-var myInt =  1;
-if(myInt ===  1){
-  let mySecondInt =  2
-  console.log(mySecondInt); // 2
+```javascript
+var myInt = 1
+
+if (myInt === 1) {
+  let mySecondInt = 2
+  console.log(mySecondInt) // 2
 }
-console.log(mySecondInt); // Uncaught ReferenceError: mySecondInt is not defined
+
+console.log(mySecondInt) // Uncaught ReferenceError: mySecondInt is not defined
 ```
 
 这次我们无法从块作用域外部访问该变量，并得到了一个错误 `mySecondInt is not defined`。
@@ -602,25 +713,24 @@ console.log(mySecondInt); // Uncaught ReferenceError: mySecondInt is not defined
 
 你将在第 1 章中了解更多关于它们的内容。
 
-### this 关键字
+### `this` 关键字
 
 我想讨论的第二个重要概念是 `this` 关键字。
 
 让我们先从一个简单的例子开始：
 
-```
-const myCar =  {
-  color:  'red',
-  logColor:  function(){
+```javascript
+const myCar = {
+  color: 'red',
+  logColor: function() {
     console.log(this.color)
   }
 }
-myCar.logColor(); // red
+
+myCar.logColor() // red
 ```
 
 如你在本例中所见，不言而喻，`this` 关键字指向了 `myCar` 对象。
-
-
 
 `this` 的值取决于函数的调用方式。
 
@@ -628,8 +738,12 @@ myCar.logColor(); // red
 
 请看另一个例子：
 
-```
-function  logThis(){ console.log(this); } logThis(); // Window {...}
+```javascript
+function logThis() {
+  console.log(this)
+}
+
+logThis() // Window {...}
 ```
 
 我们在全局上下文中调用了这个函数，因此 `this` 的值指向了 `Window` `Object`。
@@ -642,21 +756,28 @@ function  logThis(){ console.log(this); } logThis(); // Window {...}
 
 如果我们想手动将 `this` 的值设置为某个内容，可以使用 `.bind`。
 
-```
-const myCar =  { color:  'red', logColor:  function(){ console.log(this.color) } } const unboundGetColor =  myCar.logColor; console.log(unboundGetColor()) // undefined const boundGetColor =  unboundGetColor.bind(myCar) console.log(boundGetColor()) // red
+```javascript
+const myCar = {
+  color: 'red',
+  logColor: function() {
+    console.log(this.color)
+  }
+}
+
+const unboundGetColor = myCar.logColor
+console.log(unboundGetColor()) // undefined
+
+const boundGetColor = unboundGetColor.bind(myCar)
+console.log(boundGetColor()) // red
 ```
 
 我们来梳理一下刚才的操作：
 
-1.  首先，我们创建了一个 `Object`，与之前的例子类似。
-
-1.  我们将 `unboundGetColor` 设置为 `myCar` 的方法。
-
-1.  当我们尝试调用 `unboundGetColor` 时，它会尝试查找 `this.color`，但由于它在全局上下文中被调用，`this` 的值是 `Window` `Object`，而它上面没有 color，因此我们得到 `undefined`。
-
-1.  最后，我们使用 `.bind` 来明确告诉 `boundGetColor`，`this` 关键字将指向括号内的 `Object`，在本例中是 `myCar`。
-
-1.  当我们调用 `boundGetColor` 时，可以看到这次我们得到了想要的结果。
+1. 首先，我们创建了一个 `Object`，与之前的例子类似。
+2. 我们将 `unboundGetColor` 设置为 `myCar` 的方法。
+3. 当我们尝试调用 `unboundGetColor` 时，它会尝试查找 `this.color`，但由于它在全局上下文中被调用，`this` 的值是 `Window` `Object`，而它上面没有 `color`，因此我们得到 `undefined`。
+4. 最后，我们使用 `.bind` 来明确告诉 `boundGetColor`，`this` 关键字将指向括号内的 `Object`，在本例中是 `myCar`。
+5. 当我们调用 `boundGetColor` 时，可以看到这次我们得到了想要的结果。
 
 还有另外两种方法可以用来设置 `this` 关键字的值：`.call()` 和 `.apply()`。
 
@@ -666,16 +787,40 @@ const myCar =  { color:  'red', logColor:  function(){ console.log(this.color) }
 
 请看这个使用 `.call()` 的例子：
 
-```
-function  Car(make,color){ this.carMake  = make; this.carColor  = color; } function  MyCar(make,color){ Car.call(this,make,color) this.age  =  5 } const myNewCar =  new  MyCar('bmw','red') console.log(myNewCar.carMake) // bmw console.log(myNewCar.carColor) // red
+```javascript
+function Car(make, color) {
+  this.carMake = make
+  this.carColor = color
+}
+
+function MyCar(make, color) {
+  Car.call(this, make, color)
+  this.age = 5
+}
+
+const myNewCar = new MyCar('bmw', 'red')
+console.log(myNewCar.carMake) // bmw
+console.log(myNewCar.carColor) // red
 ```
 
-我们将 `MyCar` `Object` 传入 `.call()`，这样 `this.carMake` 就会被设置为传递给 `MyCar` 的参数 make。color 同理。
+我们将 `MyCar` `Object` 传入 `.call()`，这样 `this.carMake` 就会被设置为传递给 `MyCar` 的参数 `make`。`color` 同理。
 
 请看这个使用 `.apply()` 的例子，以了解两者之间的区别。
 
-```
-function  Car(make,color){ this.carMake  = make; this.carColor  = color; } function  MyCar(make,color){ Car.apply(this,[make,color]) this.age  =  5 } const myNewCar =  new  MyCar('bmw','red') console.log(myNewCar.carMake) // bmw console.log(myNewCar.carColor) // red
+```javascript
+function Car(make, color) {
+  this.carMake = make
+  this.carColor = color
+}
+
+function MyCar(make, color) {
+  Car.apply(this, [make, color])
+  this.age = 5
+}
+
+const myNewCar = new MyCar('bmw', 'red')
+console.log(myNewCar.carMake) // bmw
+console.log(myNewCar.carColor) // red
 ```
 
 如你所见，结果相同，但在这个例子中 `.apply()` 接受一个包含参数列表的数组。
@@ -686,8 +831,13 @@ function  Car(make,color){ this.carMake  = make; this.carColor  = color; } funct
 
 解决方案是使用 `.apply()`，因为你只需传递数组，无论它包含多少个参数，都会在函数内部被解包。
 
-```
-const ourFunction =  function(item, method, args){ method.apply(args) } ourFunction(item,method, ['argument1',  'argument2']) ourFunction(item,method, ['argument1',  'argument2',  'argument3'])
+```javascript
+const ourFunction = function(item, method, args) {
+  method.apply(args)
+}
+
+ourFunction(item, method, ['argument1', 'argument2'])
+ourFunction(item, method, ['argument1', 'argument2', 'argument3'])
 ```
 
 无论我们传递多少个参数，当调用 `.apply()` 时，它们都会被逐个应用。
@@ -696,61 +846,52 @@ const ourFunction =  function(item, method, args){ method.apply(args) } ourFunct
 
 ### JS-01 以下哪种变量命名方式是错误的？
 
-![bullet](img/bullet_nb_square-blk.png)`var very_important = "very_important"`
 
-![bullet](img/bullet_nb_square-blk.png)`var important_999 = "important_999"`
 
-![bullet](img/bullet_nb_square-blk.png)`var important! = "important!"`
-
-![bullet](img/bullet_nb_square-blk.png)`var VeRY_ImP_orTant = "VeRY_ImP_orTant"`
+- `var very_important = "very_important"`
+- `var important_999 = "important_999"`
+- `var important! = "important!"`
+- `var VeRY_ImP_orTant = "VeRY_ImP_orTant"`
 
 ### JS-02 以下哪个不是真正的原始类型？
 
-![bullet](img/bullet_nb_square-blk.png)`symbol`
-
-![bullet](img/bullet_nb_square-blk.png)`boolean`
-
-![bullet](img/bullet_nb_square-blk.png)`null`
-
-![bullet](img/bullet_nb_square-blk.png)`Object`
+- `symbol`
+- `boolean`
+- `null`
+- `Object`
 
 ### JS-03 定义对象的正确方式是什么？
 
-![bullet](img/bullet_nb_square-blk.png)`const car: { color: "red"}`
-
-![bullet](img/bullet_nb_square-blk.png)`const car = {color = "red"}`
-
-![bullet](img/bullet_nb_square-blk.png)`const car = { color: "red" }`
-
-![bullet](img/bullet_nb_square-blk.png)`const car: {color = "red"}`
+- `const car: { color: "red"}`
+- `const car = {color = "red"}`
+- `const car = { color: "red" }`
+- `const car: {color = "red"}`
 
 ### JS-04 以下代码的正确输出是什么？
 
+```js
+const obj1 = {a: 1};
+const obj2 = {a: 1};
+console.log(obj1 === obj2);
 ```
-const obj1 =  {a:  1}; const obj2 =  {a:  1}; console.log(obj1 === obj2);
-```
 
-![bullet](img/bullet_nb_square-blk.png)`true`
-
-![bullet](img/bullet_nb_square-blk.png)`undefined`
-
-![bullet](img/bullet_nb_square-blk.png)`false`
-
-![bullet](img/bullet_nb_square-blk.png)`null`
+- `true`
+- `undefined`
+- `false`
+- `null`
 
 ### JS-05 以下代码的正确输出是什么？
 
+```js
+const fruitBasket = ['apple', 'banana', 'orange'];
+fruitBasket.unshift('melon');
+console.log(fruitBasket);
 ```
-const fruitBasket = ['apple','banana','orange']; fruitBasket.unshift('melon') console.log(fruitBasket);
-```
 
-![bullet](img/bullet_nb_square-blk.png)`["apple", "banana", "orange", "melon"]`
-
-![bullet](img/bullet_nb_square-blk.png)`["melon"]`
-
-![bullet](img/bullet_nb_square-blk.png)`["apple", "banana", "orange", "pear", "melon"]`
-
-![bullet](img/bullet_nb_square-blk.png)`["melon", "apple", "banana", "orange"]`
+- `["apple", "banana", "orange", "melon"]`
+- `["melon"]`
+- `["apple", "banana", "orange", "pear", "melon"]`
+- `["melon", "apple", "banana", "orange"]`
 
 # 第 1 章：Var vs Let vs Const 与暂时性死区
 
@@ -758,10 +899,21 @@ const fruitBasket = ['apple','banana','orange']; fruitBasket.unshift('melon') co
 
 ## Var
 
-使用 `var` 关键字声明的变量是函数作用域的，这意味着如果我们在 for 循环（这是一个块级作用域）内部声明它们，它们即使在循环外部也是可用的。
+使用 `var` 关键字声明的变量是函数作用域的，这意味着如果我们在 `for` 循环（这是一个块级作用域）内部声明它们，它们即使在循环外部也是可用的。
 
-```
-for (var i =  0; i <  10; i++) { var leak =  "I am available outside of the loop"; } console.log(leak); // I am available outside of the loop function  myFunc(){ var functionScoped =  "I am available inside this function"; console.log(functionScoped); } myFunc(); // I am available inside this function console.log(functionScoped); // ReferenceError: functionScoped is not defined
+```js
+for (var i = 0; i < 10; i++) {
+  var leak = "I am available outside of the loop";
+}
+console.log(leak); // I am available outside of the loop
+
+function myFunc() {
+  var functionScoped = "I am available inside this function";
+  console.log(functionScoped);
+}
+
+myFunc(); // I am available inside this function
+console.log(functionScoped); // ReferenceError: functionScoped is not defined
 ```
 
 在第一个例子中，`var` 的值泄漏到了块级作用域之外，可以从外部访问；而在第二个例子中，`var` 被限制在函数作用域内，我们无法从外部访问它。
@@ -770,8 +922,26 @@ for (var i =  0; i <  10; i++) { var leak =  "I am available outside of the loop
 
 使用 `let`（和 `const`）关键字声明的变量是块级作用域的，这意味着它们只在其声明的块及其子块中可用。
 
-```
-// 使用 `let` let x =  "global"; if (x ===  "global") { let x =  "block-scoped"; console.log(x); // 预期输出: block-scoped } console.log(x); // 预期输出: global // 使用 `var` var y =  "global"; if (y ===  "global") { var y=  "block-scoped"; console.log(y); // 预期输出: block-scoped } console.log(y); // 预期输出: block-scoped
+```js
+// 使用 let
+let x = "global";
+
+if (x === "global") {
+  let x = "block-scoped";
+  console.log(x); // 预期输出: block-scoped
+}
+
+console.log(x); // 预期输出: global
+
+// 使用 var
+var y = "global";
+
+if (y === "global") {
+  var y = "block-scoped";
+  console.log(y); // 预期输出: block-scoped
+}
+
+console.log(y); // 预期输出: block-scoped
 ```
 
 如你所见，当我们在块级作用域内给用 `let` 声明的变量赋新值时，它并没有改变外部作用域中的值。而当我们对用 `var` 声明的变量做同样操作时，它泄漏到了块级作用域之外，并且也改变了外部作用域中的值。
@@ -780,8 +950,10 @@ for (var i =  0; i <  10; i++) { var leak =  "I am available outside of the loop
 
 与 `let` 类似，用 `const` 声明的变量也是块级作用域的，但不同之处在于，它们的值不能通过重新赋值来改变，也不能被重新声明。
 
-```
-const constant =  'I am a constant'; constant =  " I can't be reassigned"; // Uncaught TypeError: Assignment to constant variable
+```js
+const constant = 'I am a constant';
+constant = " I can't be reassigned";
+// Uncaught TypeError: Assignment to constant variable
 ```
 
 重要提示：
@@ -790,13 +962,15 @@ const constant =  'I am a constant'; constant =  " I can't be reassigned"; // Un
 
 ### `const` 的内容是一个 `Object`
 
+```js
+const person = {
+  name: 'Alberto',
+  age: 25,
+};
+
+person.age = 26;
+console.log(person.age); // 26
 ```
-const person =  { name:  'Alberto', age:  25, } person.age  =  26; console.log(person.age); // 26
-```
-
-
-
-
 
 在这种情况下，我们并没有重新赋值整个变量，而只是修改了它的一个属性，这是完全可行的。
 
@@ -804,11 +978,17 @@ const person =  { name:  'Alberto', age:  25, } person.age  =  26; console.log(p
 
 注意：我们仍然可以冻结 `const` 对象，这样就不会改变对象的内容（但尝试修改对象的值时，JavaScript 不会抛出任何错误）。
 
-```
-const person = { name: 'Alberto', age: 25, }
+```js
+const person = {
+  name: 'Alberto',
+  age: 25,
+};
+
 person.age = 26;
 console.log(person.age); // 26
-Object.freeze(person)
+
+Object.freeze(person);
+
 person.age = 30;
 console.log(person.age); // 26
 ```
@@ -819,11 +999,13 @@ console.log(person.age); // 26
 
 首先来看一个简单的例子：
 
-```
+```js
 console.log(i);
 var i = "I am a variable"; // 预期输出：undefined
+
 console.log(j);
-let j = "I am a let"; // 预期输出：ReferenceError: can't access lexical declaration `j' before initialization
+let j = "I am a let";
+// 预期输出：ReferenceError: can't access lexical declaration `j' before initialization
 ```
 
 `var` 可以在定义之前被访问，但我们无法访问它们的值。`let` 和 `const` 在定义之前不能被访问。
@@ -856,66 +1038,64 @@ let j = "I am a let"; // 预期输出：ReferenceError: can't access lexical dec
 
 ### 1.1 以下代码的正确输出是什么？
 
-```
+```js
 var greeting = "Hello";
 greeting = "Farewell";
+
 for (var i = 0; i < 2; i++) {
   var greeting = "Good morning";
 }
+
 console.log(greeting);
 ```
 
-![bullet](img/bullet_nb_square-blk.png)Hello
-
-![bullet](img/bullet_nb_square-blk.png)Good morning
-
-![bullet](img/bullet_nb_square-blk.png)Farewell;
+- Hello
+- Good morning
+- Farewell;
 
 ### 1.2 以下代码的正确输出是什么？
 
-```
+```js
 let value = 1;
-if(true) {
+
+if (true) {
   let value = 2;
   console.log(value);
 }
+
 value = 3;
 ```
 
-![bullet](img/bullet_nb_square-blk.png)1
-
-![bullet](img/bullet_nb_square-blk.png)2
-
-![bullet](img/bullet_nb_square-blk.png)3
+- 1
+- 2
+- 3
 
 ### 1.3 以下代码的正确输出是什么？
 
-```
+```js
 let x = 100;
+
 if (x > 50) {
   let x = 10;
 }
+
 console.log(x);
 ```
 
-![bullet](img/bullet_nb_square-blk.png)10
-
-![bullet](img/bullet_nb_square-blk.png)100
-
-![bullet](img/bullet_nb_square-blk.png)50
+- 10
+- 100
+- 50
 
 ### 1.4 以下代码的正确输出是什么？
 
-```
+```js
 console.log(constant);
 const constant = 1;
 ```
 
-![bullet](img/bullet_nb_square-blk.png)undefined
-
-![bullet](img/bullet_nb_square-blk.png)ReferenceError
-
-![bullet](img/bullet_nb_square-blk.png)1
+- undefined
+- ReferenceError
+- 1
 
 # 第二章：箭头函数
 
@@ -925,7 +1105,7 @@ ES6 引入了胖箭头（`=>`）作为声明函数的一种方式。
 
 在 ES5 中，我们通常这样声明函数：
 
-```
+```js
 const greeting = function(name) {
   return "hello " + name;
 }
@@ -933,7 +1113,7 @@ const greeting = function(name) {
 
 使用胖箭头的新语法如下：
 
-```
+```js
 var greeting = (name) => {
   return `hello ${name}`;
 }
@@ -941,7 +1121,7 @@ var greeting = (name) => {
 
 我们可以更进一步，如果只有一个参数，可以省略括号，写成：
 
-```
+```js
 var greeting = name => {
   return `hello ${name}`;
 }
@@ -949,7 +1129,7 @@ var greeting = name => {
 
 如果没有参数，则需要写成空括号，如下：
 
-```
+```js
 var greeting = () => {
   return "hello";
 }
@@ -959,16 +1139,17 @@ var greeting = () => {
 
 使用箭头函数，我们可以省略显式的 `return`，像这样返回：
 
-```
+```js
 const greeting = name => `hello ${name}`;
 ```
 
 与旧的 ES5 函数并排比较：
 
-```
-const oldFunction = function(name){
-  return `hello ${name}`
+```js
+const oldFunction = function(name) {
+  return `hello ${name}`;
 }
+
 const arrowFunction = name => `hello ${name}`;
 ```
 
@@ -976,7 +1157,7 @@ const arrowFunction = name => `hello ${name}`;
 
 注意！可读性比简洁性更重要，因此如果你在团队中工作，且并非所有人都完全熟悉 ES6，你可能希望这样写函数：
 
-```
+```js
 const arrowFunction = (name) => {
   return `hello ${name}`;
 }
@@ -984,14 +1165,16 @@ const arrowFunction = (name) => {
 
 假设我们想隐式返回一个对象字面量，可以这样做：
 
-```
+```js
 const race = "100m dash";
-const runners = [ "Usain Bolt", "Justin Gatlin", "Asafa Powell" ];
+const runners = ["Usain Bolt", "Justin Gatlin", "Asafa Powell"];
+
 const results = runners.map((runner, i) => ({
   name: runner,
   race,
   place: i + 1
 }));
+
 console.log(results);
 // [{name: "Usain Bolt", race: "100m dash", place: 1}
 // {name: "Justin Gatlin", race: "100m dash", place: 2}
@@ -1010,7 +1193,7 @@ console.log(results);
 
 如果我们想给它们一个名字以便引用，可以将它们绑定到一个变量：
 
-```
+```js
 const greeting = name => `hello ${name}`;
 greeting("Tom");
 ```
@@ -1027,55 +1210,58 @@ greeting("Tom");
 
 <bdi>.opening {</bdi> <bdi>background-color:red; }</bdi>
 
-```
+```js
 // 获取 class 为 box 的 div
 const box = document.querySelector(".box");
+
 // 监听点击事件
 box.addEventListener("click", function() {
   // 切换 div 上的 opening 类
   this.classList.toggle("opening");
-  setTimeout(function(){
+
+  setTimeout(function() {
     // 尝试再次切换类
     this.classList.toggle("opening");
-  },500);
+  }, 500);
 });
 ```
 
 这里的问题是，第一个 `this` 绑定到了 `const box`，但第二个 `this`（在 `setTimeout` 内部）将指向 Window 对象，从而抛出以下错误：
 
-```
+```text
 Uncaught TypeError: cannot read property "toggle" of undefined
 ```
 
 由于我们知道箭头函数会从父作用域继承 `this` 的值，我们可以将函数重写如下：
 
-```
+```js
 const box = document.querySelector(".box");
+
 // 监听点击事件
 box.addEventListener("click", function() {
   // 切换 div 上的 opening 类
   this.classList.toggle("opening");
-  setTimeout(()=>{
+
+  setTimeout(() => {
     // 尝试再次切换类
     this.classList.toggle("opening");
-  },500);
+  }, 500);
 });
 ```
 
-这里，第二个 `this` 将从其父级继承，并指向 `const box`。
 
-运行示例代码，你应该会看到我们的 div 在半秒内变为红色。
+
+这里，第二个`this`将从其父级继承，并指向`const box`。
+
+运行示例代码，你应该会看到我们的`div`在半秒内变为红色。
 
 ## 何时应避免使用箭头函数
 
+利用我们对`this`关键字继承机制的理解，我们可以定义一些不应使用箭头函数的情况。
 
+接下来的两个示例展示了在箭头函数内部使用`this`时需要谨慎的场景。
 
-
-利用我们对 `this` 关键字继承机制的理解，我们可以定义一些不应使用箭头函数的情况。
-
-接下来的两个示例展示了在箭头函数内部使用 `this` 时需要谨慎的场景。
-
-示例 1
+### 示例 1
 
 ```javascript
 const button = document.querySelector("btn");
@@ -1085,7 +1271,7 @@ button.addEventListener("click", () => {
 })
 ```
 
-示例 2
+### 示例 2
 
 ```javascript
 const person1 = {
@@ -1107,9 +1293,9 @@ const person2 = {
 person2.grow();
 ```
 
-箭头函数与普通函数的另一个区别在于对 `arguments` 对象的访问。
+箭头函数与普通函数的另一个区别在于对`arguments`对象的访问。
 
-`arguments` 对象是一个类数组对象，我们可以在函数内部访问它，它包含传递给该函数的参数值。
+`arguments`对象是一个类数组对象，我们可以在函数内部访问它，它包含传递给该函数的参数值。
 
 一个简单的示例：
 
@@ -1120,9 +1306,9 @@ function example(){
 example(1,2,3); // 1
 ```
 
-如你所见，我们使用数组表示法 `arguments[0]` 访问了第一个参数。
+如你所见，我们使用数组表示法`arguments[0]`访问了第一个参数。
 
-与我们在 `this` 关键字中看到的情况类似，箭头函数会从其父作用域继承 `arguments` 对象的值。
+与我们在`this`关键字中看到的情况类似，箭头函数会从其父作用域继承`arguments`对象的值。
 
 让我们看看之前跑步者列表中的这个示例：
 
@@ -1140,7 +1326,7 @@ showWinner("Usain Bolt", "Justin Gatlin", "Asafa Powell")
 
 要访问传递给函数的所有参数，我们可以使用旧函数表示法或展开语法（我们将在第 9 章中进一步讨论）。
 
-请记住，`arguments` 只是一个关键字，而不是变量名。
+请记住，`arguments`只是一个关键字，而不是变量名。
 
 使用箭头函数的示例：
 
@@ -1173,11 +1359,11 @@ let arr = [1,2,3];
 //c) let func = arr.map(n ~> n+1);
 ```
 
-![bullet](img/bullet_nb_square-blk.png)a
+![bullet](img/bullet_nb_square-blk.png)`a`
 
-![bullet](img/bullet_nb_square-blk.png)b
+![bullet](img/bullet_nb_square-blk.png)`b`
 
-![bullet](img/bullet_nb_square-blk.png)c
+![bullet](img/bullet_nb_square-blk.png)`c`
 
 ### 2.2 以下代码的正确输出是什么？
 
@@ -1192,11 +1378,11 @@ person.grow();
 console.log(person.age);
 ```
 
-![bullet](img/bullet_nb_square-blk.png)10
+![bullet](img/bullet_nb_square-blk.png)`10`
 
-![bullet](img/bullet_nb_square-blk.png)11
+![bullet](img/bullet_nb_square-blk.png)`11`
 
-![bullet](img/bullet_nb_square-blk.png)undefined
+![bullet](img/bullet_nb_square-blk.png)`undefined`
 
 ### 2.3 将以下代码重构为使用箭头函数语法：
 
@@ -1222,9 +1408,9 @@ getLocation('Milan') // Europe Italy Milan
 getLocation('Paris','France') // Europe France Paris
 ```
 
-如你所见，我们的函数接受三个参数：城市、国家和洲。在函数体中，我们检查 country 或 continent 是否为 undefined，如果是，则赋予它们默认值。
+如你所见，我们的函数接受三个参数：城市、国家和洲。在函数体中，我们检查`country`或`continent`是否为`undefined`，如果是，则赋予它们默认值。
 
-当调用 `getLocation('Milan')` 时，第二个和第三个参数（country 和 continent）是 undefined，并被替换为函数的默认值。
+当调用`getLocation('Milan')`时，第二个和第三个参数（`country`和`continent`）是`undefined`，并被替换为函数的默认值。
 
 但是，如果我们希望默认值位于参数列表的开头而不是末尾呢？
 
@@ -1242,7 +1428,7 @@ getLocation(undefined, undefined, 'Milan') // Europe Italy Milan
 getLocation(undefined, 'Paris', 'France') // Europe Paris France
 ```
 
-如果我们想用默认值替换任何第一个参数，则需要将它们作为 `undefined` 传递，这看起来并不优雅。幸运的是，ES6 通过默认函数参数解决了这个问题。
+如果我们想用默认值替换任何第一个参数，则需要将它们作为`undefined`传递，这看起来并不优雅。幸运的是，ES6 通过默认函数参数解决了这个问题。
 
 ## 默认函数参数
 
@@ -1282,7 +1468,7 @@ const bill = calculatePrice({ tip: 0.15, total:150 }); // 187.5
 
 我们将函数的参数设为一个对象。调用函数时，我们甚至不必担心参数的顺序，因为它们会根据键进行匹配。
 
-在上面的示例中，tip 的默认值是 0.05，我们将其覆盖为 0.15，但没有给 tax 赋值，因此它保持默认值 0.1。
+在上面的示例中，`tip`的默认值是 0.05，我们将其覆盖为 0.15，但没有给`tax`赋值，因此它保持默认值 0.1。
 
 请注意这个细节：
 
@@ -1290,13 +1476,13 @@ const bill = calculatePrice({ tip: 0.15, total:150 }); // 187.5
 { total = 0, tax = 0.1, tip = 0.05 } = {}
 ```
 
-如果我们不将参数对象默认设置为空对象，并且尝试运行 `calculatePrice()`，我们会得到：
+如果我们不将参数对象默认设置为空对象，并且尝试运行`calculatePrice()`，我们会得到：
 
-```
+```text
 Cannot destructure property `total` of 'undefined' or 'null'.
 ```
 
-通过编写 `= {}`，我们将参数默认设置为一个对象，无论我们向函数传递什么参数，它都将是一个对象：
+通过编写`= {}`，我们将参数默认设置为一个对象，无论我们向函数传递什么参数，它都将是一个对象：
 
 ```javascript
 calculatePrice({}); // 0
@@ -1304,7 +1490,7 @@ calculatePrice(); // 0
 calculatePrice(undefined) // 0
 ```
 
-无论我们传递什么，参数都被默认设置为一个对象，该对象具有三个默认属性：total、tax 和 tip。
+无论我们传递什么，参数都被默认设置为一个对象，该对象具有三个默认属性：`total`、`tax`和`tip`。
 
 ```javascript
 function calculatePrice({ total = 0, tax = 0.1, tip = 0.05}){
@@ -1321,9 +1507,9 @@ calculatePrice(undefined) // cannot read property `total` of 'undefined' or 'nul
 
 ### 3.1 编写代码完成以下任务：
 
-在以下代码中，修改 `arg1` 和 `arg2`，使第一个代表税率，第二个代表小费值。
+在以下代码中，修改`arg1`和`arg2`，使第一个代表税率，第二个代表小费值。
 
-给 tax 一个默认值 0.1，给 tip 一个默认值 0.05。
+给`tax`一个默认值 0.1，给`tip`一个默认值 0.05。
 
 ```javascript
 function calculatePrice(total, arg1, arg2) {
@@ -1342,13 +1528,13 @@ function multiply(a, b=2){
 console.log(multiply(5));
 ```
 
-![bullet](img/bullet_nb_square-blk.png)2
+![bullet](img/bullet_nb_square-blk.png)`2`
 
-![bullet](img/bullet_nb_square-blk.png)5
+![bullet](img/bullet_nb_square-blk.png)`5`
 
-![bullet](img/bullet_nb_square-blk.png)10
+![bullet](img/bullet_nb_square-blk.png)`10`
 
-![bullet](img/bullet_nb_square-blk.png)15
+![bullet](img/bullet_nb_square-blk.png)`15`
 
 # 第 4 章：模板字面量
 
@@ -1371,10 +1557,6 @@ let name = "Alberto";
 const greeting = `Hello my name is ${name}`;
 console.log(greeting); // Hello my name is Alberto
 ```
-
-
-
-
 
 ## 表达式插值
 
@@ -1412,7 +1594,7 @@ const content =  `hello, my name is Alberto how are you?`;
 const people = [{name:  'Alberto',age:  27 },{name:  'Caroline',age:  27 },{name:  'Josh',age:  31 }]; const markup =  ` <ul> ${people.map(person =>  `<li> ${person.name}</li>`)} </ul> `; console.log(markup); // <ul> // <li> Alberto</li>,<li> Caroline</li>,<li> Josh</li> // </ul>
 ```
 
-这里我们使用 `map` 函数遍历每个人，并显示一个包含人名的 `li` 标签。
+这里我们使用`map`函数遍历每个人，并显示一个包含人名的`li`标签。
 
 ## 添加三元运算符
 
@@ -1424,7 +1606,7 @@ const people = [{name:  'Alberto',age:  27 },{name:  'Caroline',age:  27 },{name
 const isDiscounted =  false function  getPrice(){console.log(isDiscounted ?  "$10" : "$20"); } getPrice(); // $20
 ```
 
-如果 `?` 之前的条件可以转换为 `true`，则返回第一个值，否则返回 `:` 之后的值。
+如果`?`之前的条件可以转换为`true`，则返回第一个值，否则返回`:`之后的值。
 
 ```javascript
 // 创建一个包含姓名和年龄的艺术家对象 const artist =  { name:  "Bon Jovi", age:  56, }; // 只有当 artist 对象有 song 属性时，才将其添加到段落中，否则不返回任何内容 const text =  ` <div> <p> ${artist.name} is ${artist.age} years old ${artist.song  ?  `and wrote the song ${artist.song}` : ''  } </p> </div> ` // <div> // <p> Bon Jovi is 56 years old // </p> // </div> const artist =  { name:  "Trent Reznor", age:  53, song:  'Hurt' }; // <div> // <p> Trent Reznor is 53 years old and wrote the song Hurt // </p> // </div>
@@ -1434,13 +1616,52 @@ const isDiscounted =  false function  getPrice(){console.log(isDiscounted ?  "$1
 
 与上面的示例（代码第 10 行）类似，如果需要，我们可以在模板字面量中传递一个函数。
 
+
+
 ```javascript
-const groceries =  { meat:  "pork chop", veggie:  "salad", fruit:  "apple", others: ['mushrooms',  'instant noodles',  'instant soup'], } // 这个函数将映射 groceries 中的每个值 function  groceryList(others) { return  ` <p> ${others.map( other =>  ` <span>${other}</span>`).join('\n')} </p> `; } // 在一个 p 标签中显示所有 groceries，最后一个将包含数组 **others** 中的所有项 const markup =  ` <div> <p>${groceries.meat}</p> <p>${groceries.veggie}</p> <p>${groceries.fruit}</p> <p>${groceryList(groceries.others)}</p> <div> ` // <div> // <p>pork chop</p> // <p>salad</p> // <p>apple</p> // <p> // <p> // <span>mushrooms</span> // <span>instant noodles</span> // <span>instant soup</span> // </p> // </p> // <div>
+const groceries = {
+  meat: "pork chop",
+  veggie: "salad",
+  fruit: "apple",
+  others: ["mushrooms", "instant noodles", "instant soup"],
+};
+
+// 这个函数将映射 groceries 中的每个值
+function groceryList(others) {
+  return `
+    <p>
+      ${others.map(other => `<span>${other}</span>`).join("\n")}
+    </p>
+  `;
+}
+
+// 在一个 p 标签中显示所有 groceries，最后一个将包含数组 others 中的所有项
+const markup = `
+  <div>
+    <p>${groceries.meat}</p>
+    <p>${groceries.veggie}</p>
+    <p>${groceries.fruit}</p>
+    <p>${groceryList(groceries.others)}</p>
+  <div>
+`;
+
+// <div>
+//   <p>pork chop</p>
+//   <p>salad</p>
+//   <p>apple</p>
+//   <p>
+//     <p>
+//       <span>mushrooms</span>
+//       <span>instant noodles</span>
+//       <span>instant soup</span>
+//     </p>
+//   </p>
+// <div>
 ```
 
 在最后一个 `p` 标签中，我们调用了函数 `groceryList`，并将其他 groceries 作为参数传递给它。
 
-在函数内部，我们返回一个 `p` 标签，并使用 `map` 遍历 grocery 列表中的每一项，返回一个包含每个 grocery 的 `span` 标签数组。然后我们使用 `.join('\n')` 在每个 `span` 之后添加一个新行。
+在函数内部，我们返回一个 `p` 标签，并使用 `map` 遍历 grocery 列表中的每一项，返回一个包含每个 grocery 的 `span` 标签数组。然后我们使用 `.join("\n")` 在每个 `span` 之后添加一个新行。
 
 ## 带标签的模板字面量
 
@@ -1449,7 +1670,20 @@ const groceries =  { meat:  "pork chop", veggie:  "salad", fruit:  "apple", othe
 其工作方式非常简单：只需将函数名放在要处理的模板前面。
 
 ```javascript
-let person =  "Alberto"; let age =  25; function  myTag(strings,personName,personAge){ let str = strings[1]; let ageStr; personAge >  50  ? ageStr =  "grandpa" : ageStr =  "youngster"; return personName + str + ageStr; } let sentence = myTag`${person} is a ${age}`; console.log(sentence); // Alberto is a youngster
+let person = "Alberto";
+let age = 25;
+
+function myTag(strings, personName, personAge) {
+  let str = strings[1];
+  let ageStr;
+
+  personAge > 50 ? (ageStr = "grandpa") : (ageStr = "youngster");
+
+  return personName + str + ageStr;
+}
+
+let sentence = myTag`${person} is a ${age}`;
+console.log(sentence); // Alberto is a youngster
 ```
 
 我们捕获了变量 `age` 的值，并使用三元运算符决定打印什么。`strings` 将获取 `let sentence` 中的所有字符串，而其他参数将保存变量。
@@ -1466,60 +1700,90 @@ let str = strings[1];
 
 ## 第 4 章结束测验
 
-### 4.1 编写代码完成以下任务：
+### 4.1 编写代码完成以下任务
 
 利用模板字面量，组合不同的变量以达到预期的输出。
 
 ```javascript
-let a =  "Hello,"; let b =  "is"; let c =  "my"; let d =  "name"; let e =  "Tom"; // 编辑 result 以达到预期输出 let result =  ''; console.log(result); //预期输出 "Hello, my name is Tom"
+let a = "Hello,";
+let b = "is";
+let c = "my";
+let d = "name";
+let e = "Tom";
+
+// 编辑 result 以达到预期输出
+let result = "";
+
+console.log(result); // 预期输出 "Hello, my name is Tom"
 ```
 
 ### 4.2 使用模板字面量重构以下代码
 
 ```javascript
-let a =  "1"; let b =  "2"; let c =  "plus"; let d =  "3"; let e =  "equals"; // 编辑 result 以使用模板字面量 let result = a +  " "  + c +  " "  + b +  " "  + e +  " "  + d; console.log(result); // 1 plus 2 equals 3
+let a = "1";
+let b = "2";
+let c = "plus";
+let d = "3";
+let e = "equals";
+
+// 编辑 result 以使用模板字面量
+let result = a + " " + c + " " + b + " " + e + " " + d;
+
+console.log(result); // 1 plus 2 equals 3
 ```
 
 ### 4.3 使用模板字面量重构以下代码
 
 ```javascript
-// 编辑 str 以使用模板字面量 let str =  'this is a very long text\n'  + 'a very long text'; console.log(str); // this is a very long text // a very long text
+// 编辑 str 以使用模板字面量
+let str = "this is a very long text\n" + "a very long text";
+
+console.log(str); // this is a very long text
+// a very long text
 ```
 
 # 第 5 章：其他字符串方法
 
 有许多方法可以用于字符串。以下是一些方法的列表：
 
-`indexOf()`
+### `indexOf()`
 
 获取字符串中指定值第一次出现的位置。
 
 ```javascript
-const str =  "this is a short sentence"; str.indexOf("short"); // 输出: 10
+const str = "this is a short sentence";
+
+str.indexOf("short"); // 输出: 10
 ```
 
-`slice()`
+### `slice()`
 
 提取字符串的指定部分作为新字符串。
 
 ```javascript
-const str =  "pizza, orange, cereals" str.slice(0,  5); // 输出: "pizza"
+const str = "pizza, orange, cereals";
+
+str.slice(0, 5); // 输出: "pizza"
 ```
 
-`toUpperCase()`
+### `toUpperCase()`
 
 将字符串中的所有字符转换为大写。
 
 ```javascript
-const str =  "i ate an apple" str.toUpperCase() // 输出: "I ATE AN APPLE"
+const str = "i ate an apple";
+
+str.toUpperCase(); // 输出: "I ATE AN APPLE"
 ```
 
-`toLowerCase()`
+### `toLowerCase()`
 
 将字符串中的所有字符转换为小写。
 
 ```javascript
-const str =  "I ATE AN APPLE" str.toLowerCase() // 输出: "i ate an apple"
+const str = "I ATE AN APPLE";
+
+str.toLowerCase(); // 输出: "i ate an apple"
 ```
 
 还有更多方法；这里只是列举了几个作为提醒。请查看 [MDN 文档](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String%23) 以获取上述方法的更详细描述。
@@ -1528,26 +1792,29 @@ const str =  "I ATE AN APPLE" str.toLowerCase() // 输出: "i ate an apple"
 
 ES6 引入了 4 个新的字符串方法：
 
-1.  `startsWith()`
-
-1.  `endsWith()`
-
-1.  `includes()`
-
-1.  `repeat()`
+1. `startsWith()`
+2. `endsWith()`
+3. `includes()`
+4. `repeat()`
 
 ### `startsWith()`
 
 这个新方法将检查字符串是否以我们传入的值开头：
 
 ```javascript
-const code =  "ABCDEFG"; code.startsWith("ABB"); // false code.startsWith("abc"); // false, startsWith 区分大小写 code.startsWith("ABC"); // true
+const code = "ABCDEFG";
+
+code.startsWith("ABB"); // false
+code.startsWith("abc"); // false, startsWith 区分大小写
+code.startsWith("ABC"); // true
 ```
 
 我们可以传入一个额外的参数，即方法开始检查的起始位置。
 
 ```javascript
-const code =  "ABCDEFGHI" code.startsWith("DEF",3); // true, 它将在 3 个字符后开始检查
+const code = "ABCDEFGHI";
+
+code.startsWith("DEF", 3); // true, 它将在 3 个字符后开始检查
 ```
 
 ### `endsWith()`
@@ -1555,61 +1822,77 @@ const code =  "ABCDEFGHI" code.startsWith("DEF",3); // true, 它将在 3 个字�
 与 `startsWith()` 类似，这个新方法将检查字符串是否以我们传入的值结尾：
 
 ```javascript
-const code =  "ABCDEF"; code.endsWith("DDD"); // false code.endsWith("def"); // false, endsWith 区分大小写 code.endsWith("DEF"); // true
+const code = "ABCDEF";
+
+code.endsWith("DDD"); // false
+code.endsWith("def"); // false, endsWith 区分大小写
+code.endsWith("DEF"); // true
 ```
 
 我们可以传入一个额外的参数，即检查结尾时要考虑的字符数。
 
 ```javascript
-const code =  "ABCDEFGHI" code.endsWith("EF",  6); // true, 6 表示我们只考虑前 6 个值 ABCDEF，是的，这个字符串以 EF 结尾，因此我们得到 `true`
+const code = "ABCDEFGHI";
+
+code.endsWith("EF", 6); // true, 6 表示我们只考虑前 6 个值 ABCDEF，是的，这个字符串以 EF 结尾，因此我们得到 `true`
 ```
 
 ### `includes()`
 
 这个方法将检查我们的字符串是否包含我们传入的值。
 
+```javascript
+const code = "ABCDEF";
 
-
-
-
-```
-const code =  "ABCDEF" code.includes("ABB"); // false code.includes("abc"); // false, includes is case sensitive code.includes("CDE"); // true
+code.includes("ABB"); // false
+code.includes("abc"); // false, includes is case sensitive
+code.includes("CDE"); // true
 ```
 
 ### `repeat()`
 
-顾名思义，这个新方法接受一个参数，指定需要`repeat`字符串的次数。
+顾名思义，这个新方法接受一个参数，指定需要 `repeat` 字符串的次数。
 
-```
-let hello =  "Hi"; console.log(hello.repeat(10)); // "HiHiHiHiHiHiHiHiHiHi"
+```javascript
+let hello = "Hi";
+
+console.log(hello.repeat(10)); // "HiHiHiHiHiHiHiHiHiHi"
 ```
 
 ## 第 5 章小测验
 
 ### 5.1 以下代码的正确输出是什么？
 
-```
-const code =  "ABCDEFGHI"; code.startsWith("DEF",3);
+```javascript
+const code = "ABCDEFGHI";
+
+code.startsWith("DEF", 3);
 ```
 
-![bullet](img/bullet_nb_square-blk.png)true
+![bullet](img/bullet_nb_square-blk.png) true
 
-![bullet](img/bullet_nb_square-blk.png)false
+![bullet](img/bullet_nb_square-blk.png) false
 
 ### 5.2 以下代码的正确输出是什么？
 
+```javascript
+const code = "ABCDEF";
+
+code.endsWith("def");
 ```
-const code =  "ABCDEF"; code.endsWith("def");
-```
 
-![bullet](img/bullet_nb_square-blk.png)true
+![bullet](img/bullet_nb_square-blk.png) true
 
-![bullet](img/bullet_nb_square-blk.png)false
+![bullet](img/bullet_nb_square-blk.png) false
 
-### 5.3 编写代码完成以下任务：
+### 5.3 编写代码完成以下任务
 
-```
-let str =  "Na"; let bat =  "BatMan"; let batman = ... console.log(batman); // expected output: "NaNaNaNaNaNaNaNa Batman"
+```javascript
+let str = "Na";
+let bat = "BatMan";
+let batman = ...;
+
+console.log(batman); // expected output: "NaNaNaNaNaNaNaNa Batman"
 ```
 
 # 第 6 章：解构
@@ -1624,58 +1907,105 @@ MDN 对解构的定义如下：
 
 过去，要从对象创建变量，我们通常这样做：
 
-```
-var person =  { first:  "Alberto", last:  "Montalesi" } var first =  person.first; var last =  person.last;
+```javascript
+var person = {
+  first: "Alberto",
+  last: "Montalesi",
+};
+
+var first = person.first;
+var last = person.last;
 ```
 
 在 ES6 中，我们可以这样写：
 
-```
-const person =  { first:  "Alberto", last:  "Montalesi" } const  { first, last }  = person;
+```javascript
+const person = {
+  first: "Alberto",
+  last: "Montalesi",
+};
+
+const { first, last } = person;
 ```
 
 由于我们的常量变量 `person` 与我们要获取的属性同名，因此我们不再需要指定 `person.first` 和 `person.last`。
 
 即使有嵌套数据（例如从 API 获取的数据），也同样适用。
 
-```
-const person =  { name:  "Alberto", last:  "Montalesi", links:{ social:  { facebook:  "https://www.facebook.com/alberto.montalesi", }, website:  "http://albertomontalesi.github.io/" } } const  { facebook }  =  person.links.social;
+```javascript
+const person = {
+  name: "Alberto",
+  last: "Montalesi",
+  links: {
+    social: {
+      facebook: "https://www.facebook.com/alberto.montalesi",
+    },
+    website: "http://albertomontalesi.github.io/",
+  },
+};
+
+const { facebook } = person.links.social;
 ```
 
 我们并不局限于将变量命名为与对象属性相同的名称。我们也可以像下面这样重命名：
 
-```
-const  {  facebook:fb }  =  person.links.social; // 它会查找 person.links.social.facebook 属性，并将变量命名为 fb console.log(fb);  // https://www.facebook.com/alberto.montalesi console.log(facebook);  //ReferenceError: facebook is not defined
+```javascript
+const { facebook: fb } = person.links.social;
+
+// 它会查找 person.links.social.facebook 属性，并将变量命名为 fb
+console.log(fb); // https://www.facebook.com/alberto.montalesi
+console.log(facebook); // ReferenceError: facebook is not defined
 ```
 
-我们使用语法 `const { facebook:fb }` 来指定我们要定位对象 `person.links.social` 的属性 `facebook`，并且希望常量变量名为 `fb`。
+我们使用语法 `const { facebook: fb }` 来指定我们要定位对象 `person.links.social` 的属性 `facebook`，并且希望常量变量名为 `fb`。
 
 这就是为什么当我们尝试输出 `facebook` 时会报错。
 
 我们还可以像这样传递默认值：
 
-```
-const  {  facebook:fb =  "https://www.facebook.com"}  =  person.links.social; // 我们将变量重命名为 *fb*，并为其设置了默认值
+```javascript
+const { facebook: fb = "https://www.facebook.com" } = person.links.social;
+
+// 我们将变量重命名为 fb，并为其设置了默认值
 ```
 
 ## 解构数组
 
 解构数组时，我们注意到的第一个区别是使用 `[]` 而不是 `{}`。
 
-```
-const person = ["Alberto","Montalesi",25]; const [name,surname,age] = person;
+```javascript
+const person = ["Alberto", "Montalesi", 25];
+
+const [name, surname, age] = person;
 ```
 
 如果我们创建的变量数量少于数组中的元素数量，会发生什么？
 
-```
-const person = ["Alberto","Montalesi",25]; // 我们省略了 age，不需要它 const [name,surname] = person; // age 的值不会绑定到任何变量。 console.log(name,surname); // Alberto Montalesi
+```javascript
+const person = ["Alberto", "Montalesi", 25];
+
+// 我们省略了 age，不需要它
+const [name, surname] = person;
+
+// age 的值不会绑定到任何变量
+console.log(name, surname); // Alberto Montalesi
 ```
 
 假设我们想获取所有剩余的值，可以使用剩余运算符：
 
-```
-const person = ["Alberto",  "Montalesi",  "pizza",  "ice cream",  "cheese cake"]; // 我们使用**剩余运算符**来获取所有剩余的值 const [name,surname,...food] = person ; console.log(food); // Array [ "pizza", "ice cream", "cheese cake" ]
+```javascript
+const person = [
+  "Alberto",
+  "Montalesi",
+  "pizza",
+  "ice cream",
+  "cheese cake",
+];
+
+// 我们使用剩余运算符来获取所有剩余的值
+const [name, surname, ...food] = person;
+
+console.log(food); // Array [ "pizza", "ice cream", "cheese cake" ]
 ```
 
 在上面的例子中，数组的前两个值被绑定到 `name` 和 `surname`，而其余的值（这就是为什么它被称为剩余运算符）被分配给 `food`。
@@ -1686,28 +2016,44 @@ const person = ["Alberto",  "Montalesi",  "pizza",  "ice cream",  "cheese cake"]
 
 解构赋值使得交换变量变得极其简单，请看这个例子：
 
-```
-let hungry =  "yes"; let full =  "no"; // 吃完饭后我们不再感到饿，而是感到饱，让我们交换值 [hungry, full] = [full, hungry]; console.log(hungry,full); // no yes
+```javascript
+let hungry = "yes";
+let full = "no";
+
+// 吃完饭后我们不再感到饿，而是感到饱，让我们交换值
+[hungry, full] = [full, hungry];
+
+console.log(hungry, full); // no yes
 ```
 
 没有比这更简单的交换值的方法了。
 
 ## 第 6 章小测验
 
-### 6.1 编写代码完成以下任务：
+### 6.1 编写代码完成以下任务
 
 使用解构交换两个变量的值。
 
-```
-let hungry =  "yes"; let full =  "no"; // 你的代码写在这里 console.log(hungry); // no console.log(full); // yes
+```javascript
+let hungry = "yes";
+let full = "no";
+
+// 你的代码写在这里
+console.log(hungry); // no
+console.log(full); // yes
 ```
 
-### 6.2 编写代码完成以下任务：
+### 6.2 编写代码完成以下任务
 
 用一行代码声明变量，分别存储以下数组中的每个值。
 
-```
-let arr = [ "one",  "two",  "three" ]; //预期输出 console.log(one); // "one" console.log(two); // "two" console.log(three); // "three"
+```javascript
+let arr = ["one", "two", "three"];
+
+// 预期输出
+console.log(one); // "one"
+console.log(two); // "two"
+console.log(three); // "three"
 ```
 
 # 第 7 章：可迭代对象与循环
@@ -1722,16 +2068,32 @@ ES6 引入了一种新的循环类型：`for of` 循环。
 
 通常，我们会使用以下方法进行遍历：
 
-```
-var fruits = ['apple','banana','orange']; for (var i =  0; i <  fruits.length; i++){ console.log(fruits[i]); } // apple // banana // orange
+```javascript
+var fruits = ["apple", "banana", "orange"];
+
+for (var i = 0; i < fruits.length; i++) {
+  console.log(fruits[i]);
+}
+
+// apple
+// banana
+// orange
 ```
 
 这是一个普通的循环，每次迭代将 `i` 的值增加 1，直到它小于 `fruits.length`。此时循环停止。
 
 看看我们如何使用 `for of` 循环实现同样的效果：
 
-```
-const fruits = ['apple','banana','orange']; for(const fruit of fruits){ console.log(fruit); } // apple // banana // orange
+```javascript
+const fruits = ["apple", "banana", "orange"];
+
+for (const fruit of fruits) {
+  console.log(fruit);
+}
+
+// apple
+// banana
+// orange
 ```
 
 ### 遍历对象
@@ -1740,8 +2102,23 @@ const fruits = ['apple','banana','orange']; for(const fruit of fruits){ console.
 
 我们必须首先使用类似 `Object.keys()` 或新的 ES6 函数 `Object.entries()` 来获取对象的所有值。
 
-```
-const car =  { maker:  "BMW", color:  "red", year :  "2010", } for (const prop of  Object.keys(car)){ const value = car[prop]; console.log(prop,value); } // maker BMW // color red // year 2010
+
+
+```javascript
+const car = {
+  maker: "BMW",
+  color: "red",
+  year: "2010",
+};
+
+for (const prop of Object.keys(car)) {
+  const value = car[prop];
+  console.log(prop, value);
+}
+
+// maker BMW
+// color red
+// year 2010
 ```
 
 ## `for in` 循环
@@ -1752,16 +2129,40 @@ const car =  { maker:  "BMW", color:  "red", year :  "2010", } for (const prop o
 
 因此，建议不要在迭代期间添加、修改或删除对象的属性。因为无法保证它们会被访问到，或者是在修改之前还是之后被访问。
 
-```
-const car =  { maker:  "BMW", color:  "red", year :  "2010", } for (const prop in car){ console.log(prop, car[prop]); } // maker BMW // color red // year 2010
+```javascript
+const car = {
+  maker: "BMW",
+  color: "red",
+  year: "2010",
+};
+
+for (const prop in car) {
+  console.log(prop, car[prop]);
+}
+
+// maker BMW
+// color red
+// year 2010
 ```
 
 ## `for of` 与 `for in` 的区别
 
 通过查看这个例子，我们可以看到第一个区别：
 
-```
-let list = [4,  5,  6]; // for...in 返回键的列表 for (let i in list) { console.log(i);  // "0", "1", "2", } // for ...of 返回值 for (let i of list) { console.log(i);  // "4", "5", "6" }
+```javascript
+let list = [4, 5, 6];
+
+// for...in 返回键的列表
+for (let i in list) {
+  console.log(i);
+  // "0", "1", "2"
+}
+
+// for...of 返回值
+for (let i of list) {
+  console.log(i);
+  // "4", "5", "6"
+}
 ```
 
 `for in` 会返回键的列表，而 `for of` 会返回被迭代对象数值属性的值的列表。
@@ -1770,25 +2171,29 @@ let list = [4,  5,  6]; // for...in 返回键的列表 for (let i in list) { con
 
 ### 7.1 以下哪个循环是在 ES6 中引入的？
 
-![bullet](img/bullet_nb_square-blk.png)`while`
+![bullet](img/bullet_nb_square-blk.png) `while`
 
-![bullet](img/bullet_nb_square-blk.png)`for of`
+![bullet](img/bullet_nb_square-blk.png) `for of`
 
-![bullet](img/bullet_nb_square-blk.png)`for in`
+![bullet](img/bullet_nb_square-blk.png) `for in`
 
-### 以下代码的正确输出是什么？
+### 7.2 以下代码的正确输出是什么？
 
+```javascript
+let people = ["Tom", "Jerry", "Mickey"];
+
+for (let person of people) {
+  console.log(person);
+}
 ```
-let people = [ "Tom",  "Jerry",  "Mickey" ]; for (let person of people){ console.log(person); }
-```
 
-![bullet](img/bullet_nb_square-blk.png)Tom Jerry
+![bullet](img/bullet_nb_square-blk.png) Tom Jerry
 
-![bullet](img/bullet_nb_square-blk.png)Tom
+![bullet](img/bullet_nb_square-blk.png) Tom
 
-![bullet](img/bullet_nb_square-blk.png)Tom Jerry Mickey
+![bullet](img/bullet_nb_square-blk.png) Tom Jerry Mickey
 
-![bullet](img/bullet_nb_square-blk.png)Mickey
+![bullet](img/bullet_nb_square-blk.png) Mickey
 
 # 第 8 章：数组改进
 
@@ -1796,20 +2201,24 @@ let people = [ "Tom",  "Jerry",  "Mickey" ]; for (let person of people){ console
 
 `Array.from()` 是 ES6 引入的众多新数组方法中的第一个。
 
-
-
-
 它会接受一个类数组（即看起来像数组但并非数组的东西），并将其转换为真正的数组。
 
 ```html
-<div class="fruits"> <p> Apple </p> <p> Banana </p> <p> Orange </p> </div>
+<div class="fruits">
+  <p>Apple</p>
+  <p>Banana</p>
+  <p>Orange</p>
+</div>
 ```
 
 ```javascript
-const fruits = document.querySelectorAll(".fruits p"); // fruits 是一个节点列表（类数组集合），包含我们的三个 p 标签
+const fruits = document.querySelectorAll(".fruits p");
+// fruits 是一个节点列表（类数组集合），包含我们的三个 p 标签
+
 // 现在我们将其转换为数组
 const fruitArray = Array.from(fruits);
-console.log(fruitArray); // [p,p,p]
+console.log(fruitArray); // [p, p, p]
+
 // 既然我们现在处理的是数组，就可以使用 map
 const fruitNames = fruitArray.map(fruit => fruit.textContent);
 console.log(fruitNames); // ["Apple", "Banana", "Orange"]
@@ -1823,16 +2232,22 @@ const fruitNames = fruits.map(fruit => fruit.textContent);
 console.log(fruitNames); // ["Apple", "Banana", "Orange"]
 ```
 
-现在我们将 fruits 转换成了真正的数组，这意味着我们可以对它使用任何方法，比如 `map`。
+现在我们将 `fruits` 转换成了真正的数组，这意味着我们可以对它使用任何方法，比如 `map`。
 
 `Array.from()` 还接受第二个参数，一个映射函数，因此我们可以这样写：
 
 ```javascript
 const fruits = document.querySelectorAll(".fruits p");
+
 const fruitArray = Array.from(fruits, fruit => {
-  console.log(fruit); // <p> Apple </p> // <p> Banana </p> // <p> Orange </p>
+  console.log(fruit);
+  // <p>Apple</p>
+  // <p>Banana</p>
+  // <p>Orange</p>
+
   return fruit.textContent; // 我们只想获取内容，而不是整个标签
 });
+
 console.log(fruitArray); // ["Apple", "Banana", "Orange"]
 ```
 
@@ -1843,8 +2258,8 @@ console.log(fruitArray); // ["Apple", "Banana", "Orange"]
 `Array.of()` 会创建一个包含我们传入的所有参数的数组。
 
 ```javascript
-const digits = Array.of(1,2,3,4,5);
-console.log(digits); // Array [ 1, 2, 3, 4, 5];
+const digits = Array.of(1, 2, 3, 4, 5);
+console.log(digits); // Array [1, 2, 3, 4, 5]
 ```
 
 ## `Array.find()`
@@ -1854,7 +2269,8 @@ console.log(digits); // Array [ 1, 2, 3, 4, 5];
 让我们看一个简单的例子来了解 `Array.find()` 是如何工作的。
 
 ```javascript
-const array = [1,2,3,4,5];
+const array = [1, 2, 3, 4, 5];
+
 // 这将返回数组中第一个值大于 3 的元素
 let found = array.find(e => e > 3);
 console.log(found); // 4
@@ -1867,7 +2283,7 @@ console.log(found); // 4
 `Array.findIndex()` 会返回第一个满足我们条件的元素的索引。
 
 ```javascript
-const greetings = ["hello","hi","byebye","goodbye","hi"];
+const greetings = ["hello", "hi", "byebye", "goodbye", "hi"];
 let foundIndex = greetings.findIndex(e => e === "hi");
 console.log(foundIndex); // 1
 ```
@@ -1879,9 +2295,11 @@ console.log(foundIndex); // 1
 我把这两个放在一起，因为它们的用法不言自明：`.some()` 会搜索是否存在某些满足条件的项，一旦找到第一个就停止。而 `.every()` 会检查所有项是否都满足给定条件。
 
 ```javascript
-const array = [1,2,3,4,5,6,1,2,3,1];
+const array = [1, 2, 3, 4, 5, 6, 1, 2, 3, 1];
+
 let arraySome = array.some(e => e > 2);
 console.log(arraySome); // true
+
 let arrayEvery = array.every(e => e > 2);
 console.log(arrayEvery); // false
 ```
@@ -1890,59 +2308,60 @@ console.log(arrayEvery); // false
 
 ## 第 8 章末测验
 
-### 8.1 编写代码完成以下任务：
+### 8.1 编写代码完成以下任务
 
 给定以下代码，从以下字符串创建一个新数组，其中字符串的每个字母成为数组中的一个项。
 
 ```javascript
 const apple = "Apple";
 const myArr = // 在此处添加你的代码
+
 console.log(myArry); // 预期输出 = ["A", "p", "p", "l", "e"]
 ```
 
 ### 8.2 以下代码的正确输出是什么？
 
 ```javascript
-const array = [1,2,3,4,5];
+const array = [1, 2, 3, 4, 5];
 let found = array.find(e => e > 3);
 console.log(found);
 ```
 
-![bullet](img/bullet_nb_square-blk.png)3
+![bullet](img/bullet_nb_square-blk.png) 3
 
-![bullet](img/bullet_nb_square-blk.png)5
+![bullet](img/bullet_nb_square-blk.png) 5
 
-![bullet](img/bullet_nb_square-blk.png)4,5
+![bullet](img/bullet_nb_square-blk.png) 4,5
 
-![bullet](img/bullet_nb_square-blk.png)4
+![bullet](img/bullet_nb_square-blk.png) 4
 
 ### 8.3 以下代码的正确输出是什么？
 
 ```javascript
-const array = [1,2,3,4,5,6,1,2,3,1];
+const array = [1, 2, 3, 4, 5, 6, 1, 2, 3, 1];
 let arraySome = array.some(e => e > 2);
 console.log(arraySome);
 ```
 
-![bullet](img/bullet_nb_square-blk.png)2
+![bullet](img/bullet_nb_square-blk.png) 2
 
-![bullet](img/bullet_nb_square-blk.png)false
+![bullet](img/bullet_nb_square-blk.png) false
 
-![bullet](img/bullet_nb_square-blk.png)3
+![bullet](img/bullet_nb_square-blk.png) 3
 
-![bullet](img/bullet_nb_square-blk.png)true
+![bullet](img/bullet_nb_square-blk.png) true
 
-### 8.4 以下代码的正确输出是什么：
+### 8.4 以下代码的正确输出是什么
 
 ```javascript
 Array.from([1, 2, 3], x => x * x);
 ```
 
-![bullet](img/bullet_nb_square-blk.png)[1,2,3]
+![bullet](img/bullet_nb_square-blk.png) [1, 2, 3]
 
-![bullet](img/bullet_nb_square-blk.png)[1,4,9]
+![bullet](img/bullet_nb_square-blk.png) [1, 4, 9]
 
-![bullet](img/bullet_nb_square-blk.png)[1,3,5]
+![bullet](img/bullet_nb_square-blk.png) [1, 3, 5]
 
 # 第 9 章：展开运算符和剩余参数
 
@@ -1955,10 +2374,12 @@ Array.from([1, 2, 3], x => x * x);
 ### 合并数组
 
 ```javascript
-const veggie = ["tomato","cucumber","beans"];
-const meat = ["pork","beef","chicken"];
+const veggie = ["tomato", "cucumber", "beans"];
+const meat = ["pork", "beef", "chicken"];
 const menu = [...veggie, "pasta", ...meat];
-console.log(menu); // Array [ "tomato", "cucumber", "beans", "pasta", "pork", "beef", "chicken" ]
+
+console.log(menu);
+// Array ["tomato", "cucumber", "beans", "pasta", "pork", "beef", "chicken"]
 ```
 
 `...` 是展开语法，它允许我们获取数组 `veggie` 和 `meat` 的所有单个值，并将它们放入数组 `menu` 中，同时还可以在它们之间添加一个新项。
@@ -1968,11 +2389,14 @@ console.log(menu); // Array [ "tomato", "cucumber", "beans", "pasta", "pork", "b
 如果我们想创建数组的副本，展开语法非常有用。
 
 ```javascript
-const veggie = ["tomato","cucumber","beans"];
-const newVeggie = veggie; // 这看起来像是创建了 veggie 数组的副本，但现在看看
+const veggie = ["tomato", "cucumber", "beans"];
+const newVeggie = veggie;
+// 这看起来像是创建了 veggie 数组的副本，但现在看看
+
 veggie.push("peas");
-console.log(veggie); // Array [ "tomato", "cucumber", "beans", "peas" ]
-console.log(newVeggie); // Array [ "tomato", "cucumber", "beans", "peas" ]
+
+console.log(veggie); // Array ["tomato", "cucumber", "beans", "peas"]
+console.log(newVeggie); // Array ["tomato", "cucumber", "beans", "peas"]
 ```
 
 我们的新数组也发生了变化，但为什么呢？因为我们实际上并没有创建副本，而只是在新数组中引用了旧数组。
@@ -1980,22 +2404,27 @@ console.log(newVeggie); // Array [ "tomato", "cucumber", "beans", "peas" ]
 以下是在 ES5 及更早版本中通常复制数组的方式：
 
 ```javascript
-const veggie = ["tomato","cucumber","beans"];
+const veggie = ["tomato", "cucumber", "beans"];
+
 // 我们创建了一个空数组，并将旧数组的值放入其中
 const newVeggie = [].concat(veggie);
+
 veggie.push("peas");
-console.log(veggie); // Array [ "tomato", "cucumber", "beans", "peas" ]
-console.log(newVeggie); // Array [ "tomato", "cucumber", "beans" ]
+
+console.log(veggie); // Array ["tomato", "cucumber", "beans", "peas"]
+console.log(newVeggie); // Array ["tomato", "cucumber", "beans"]
 ```
 
 而使用展开语法，我们可以这样做：
 
 ```javascript
-const veggie = ["tomato","cucumber","beans"];
+const veggie = ["tomato", "cucumber", "beans"];
 const newVeggie = [...veggie];
+
 veggie.push("peas");
-console.log(veggie); // Array [ "tomato", "cucumber", "beans", "peas" ]
-console.log(newVeggie); // Array [ "tomato", "cucumber", "beans" ]
+
+console.log(veggie); // Array ["tomato", "cucumber", "beans", "peas"]
+console.log(newVeggie); // Array ["tomato", "cucumber", "beans"]
 ```
 
 展开运算符的语法如下：`...YourArray`。因为我们希望变量 `newVeggie` 成为数组 `veggie` 的副本，所以我们将其赋值为一个数组，并在其中展开变量 `veggie` 的所有值，像这样：`[...veggie]`。
@@ -2009,12 +2438,15 @@ console.log(newVeggie); // Array [ "tomato", "cucumber", "beans" ]
 function doStuff(x, y, z) {
   console.log(x + y + z);
 }
+
 var args = [0, 1, 2];
+
 // 调用函数，传递 args
 doStuff.apply(null, args);
+
 // 使用展开语法
-doStuff(...args); // 3 (0+1+2);
-console.log(args); // Array [ 0, 1, 2 ]
+doStuff(...args); // 3 (0 + 1 + 2)
+console.log(args); // Array [0, 1, 2]
 ```
 
 如你所见，在示例中，我们的 `doStuff` 函数接受 3 个参数，我们通过将数组 `args` 展开到函数中来传递它们，像这样：`...args`，从而无需使用 `.apply()`。
@@ -2023,9 +2455,11 @@ console.log(args); // Array [ 0, 1, 2 ]
 
 ```javascript
 const name = ["Alberto", "Montalesi"];
+
 function greet(first, last) {
   console.log(`Hello ${first} ${last}`);
 }
+
 greet(...name); // Hello Alberto Montalesi
 ```
 
@@ -2035,15 +2469,13 @@ greet(...name); // Hello Alberto Montalesi
 
 ```javascript
 const name = ["Jon", "Paul", "Jones"];
+
 function greet(first, last) {
   console.log(`Hello ${first} ${last}`);
 }
+
 greet(...name); // Hello Jon Paul
 ```
-
-
-
-
 
 在上述示例中，我们在数组中提供了三个值，但函数只有两个参数，因此最后一个被忽略了。
 
@@ -2053,8 +2485,17 @@ greet(...name); // Hello Jon Paul
 
 让我们看一个例子：
 
-```
-let person =  { name :  "Alberto", surname:  "Montalesi", age:  25, } let clone =  {...person}; console.log(clone); // Object { name: "Alberto", surname: "Montalesi", age: 25 }
+```javascript
+let person = {
+  name: "Alberto",
+  surname: "Montalesi",
+  age: 25,
+};
+
+let clone = { ...person };
+
+console.log(clone);
+// Object {name: "Alberto", surname: "Montalesi", age: 25}
 ```
 
 你可以在第 20 章中了解更多关于 ES2018 的内容。
@@ -2063,8 +2504,11 @@ let person =  { name :  "Alberto", surname:  "Montalesi", age:  25, } let clone 
 
 Rest 语法看起来与展开语法完全相同，都是三个点 `...`，但它的作用恰恰相反。展开运算符展开数组，而 rest 参数将多个元素合并成一个。
 
-```
-const runners = ["Tom",  "Paul",  "Mark",  "Luke"]; const [first,second,...losers] = runners; console.log(...losers); // Mark Luke
+```javascript
+const runners = ["Tom", "Paul", "Mark", "Luke"];
+const [first, second, ...losers] = runners;
+
+console.log(...losers); // Mark Luke
 ```
 
 我们将前两个值存储在常量 `first` 和 `second` 中，剩下的所有值通过 rest 参数放入 `losers` 中。
@@ -2073,38 +2517,44 @@ const runners = ["Tom",  "Paul",  "Mark",  "Luke"]; const [first,second,...loser
 
 ### 9.1 展开数组值的正确语法是什么？
 
-![bullet](img/bullet_nb_square-blk.png)`[.]`
+![bullet](img/bullet_nb_square-blk.png) `[.]`
 
-![bullet](img/bullet_nb_square-blk.png)`(...)`
+![bullet](img/bullet_nb_square-blk.png) `(...)`
 
-![bullet](img/bullet_nb_square-blk.png)`[...]`
+![bullet](img/bullet_nb_square-blk.png) `[...]`
+
+
 
 ![bullet](img/bullet_nb_square-blk.png)`{...}`
 
-### 9.2 编写代码完成以下任务：
+## 9.2 编写代码完成以下任务
 
 给定常量 `veggie` 和 `meat`。创建一个名为 `menu` 的新数组，包含：
 
-1.  `veggie` 的所有值
-1.  一个新字符串 `'pasta'`
-1.  `meat` 的所有值
+1. `veggie` 的所有值
+2. 一个新字符串 `'pasta'`
+3. `meat` 的所有值
 
-```
-const veggie = ["tomato","cucumber","beans"]; const meat = ["pork","beef","chicken"];
+```javascript
+const veggie = ["tomato", "cucumber", "beans"];
+const meat = ["pork", "beef", "chicken"];
 ```
 
-### 9.3 编写代码完成以下任务：
+## 9.3 编写代码完成以下任务
 
 给定以下数组 `runners`，创建一个名为 `losers` 的新数组，包含前两个值之后的所有值：
 
-```
-const runners = ["Tom",  "Paul",  "Mark",  "Luke"];
+```javascript
+const runners = ["Tom", "Paul", "Mark", "Luke"];
 ```
 
-### 9.4 以下代码的正确输出是什么？
+## 9.4 以下代码的正确输出是什么？
 
-```
-let arr = [ 1,  2,  3,  4]; let arr2 = arr; arr2.push(5); console.log(arr);
+```javascript
+let arr = [1, 2, 3, 4];
+let arr2 = arr;
+arr2.push(5);
+console.log(arr);
 ```
 
 ![bullet](img/bullet_nb_square-blk.png)`[1, 2, 3, 4]`
@@ -2123,20 +2573,42 @@ let arr = [ 1,  2,  3,  4]; let arr2 = arr; arr2.push(5); console.log(arr);
 
 这是初始情况：
 
-```
-const name =  "Alberto"; const surname =  "Montalesi"; const age =  25; const nationality =  "Italian";
+```javascript
+const name = "Alberto";
+const surname = "Montalesi";
+const age = 25;
+const nationality = "Italian";
 ```
 
 如果我们想创建一个对象字面量，通常的做法是：
 
-```
-const person =  { name: name, surname: surname, age: age, nationality: nationality, } console.log(person); // { name: 'Alberto', // surname: 'Montalesi', // age: 25, // nationality: 'Italian' }
+```javascript
+const person = {
+  name: name,
+  surname: surname,
+  age: age,
+  nationality: nationality,
+};
+
+console.log(person);
+// { name: 'Alberto',
+// surname: 'Montalesi',
+// age: 25,
+// nationality: 'Italian' }
 ```
 
 在 ES6 中，我们可以简化为：
 
-```
-const person =  { name, surname, age, nationality, } console.log(person); // {name: "Alberto", surname: "Montalesi", age: 25, nationality: "Italian"}
+```javascript
+const person = {
+  name,
+  surname,
+  age,
+  nationality,
+};
+
+console.log(person);
+// {name: "Alberto", surname: "Montalesi", age: 25, nationality: "Italian"}
 ```
 
 由于我们的常量名称与使用的属性名称相同，因此可以减少输入。
@@ -2145,50 +2617,97 @@ const person =  { name, surname, age, nationality, } console.log(person); // {na
 
 让我们看一个 ES5 的例子：
 
-```
-const person =  { name:  "Alberto", greet:  function(){ console.log("Hello"); }, } person.greet(); // Hello
+```javascript
+const person = {
+  name: "Alberto",
+  greet: function () {
+    console.log("Hello");
+  },
+};
+
+person.greet(); // Hello
 ```
 
 如果我们想向对象添加一个函数，必须使用 `function` 关键字。在 ES6 中，这变得更简单了，请看：
 
-```
-const person =  { name:  "Alberto", greet(){ console.log("Hello"); }, } person.greet(); // Hello;
+```javascript
+const person = {
+  name: "Alberto",
+  greet() {
+    console.log("Hello");
+  },
+};
+
+person.greet(); // Hello;
 ```
 
 不再需要 `function`，更简洁，行为相同。
 
 请记住，箭头函数是匿名的，看这个例子：
 
-```
-// 这样不行，你需要一个键来访问函数 const person1 =  { () =>  console.log("Hello"), }; const person2 =  { greet: () =>  console.log("Hello"), } person2.greet() // Hello
+```javascript
+// 这样不行，你需要一个键来访问函数
+const person1 = {
+  () => console.log("Hello"),
+};
+
+const person2 = {
+  greet: () => console.log("Hello"),
+};
+
+person2.greet(); // Hello
 ```
 
 ## 动态定义对象的属性
 
 在 ES5 中，我们这样动态定义对象的属性：
 
-```
-var name =  "myname"; // 创建空对象 var person =  {} // 更新对象 person[name] =  "Alberto"; console.log(person.myname); // Alberto
+```javascript
+var name = "myname";
+
+// 创建空对象
+var person = {};
+
+// 更新对象
+person[name] = "Alberto";
+
+console.log(person.myname); // Alberto
 ```
 
 在上面的例子中，我们先创建了对象，然后修改了它。然而，在 ES6 中，我们可以同时完成这两件事。请看下面的例子：
 
-```
-const name =  "myname"; const person =  { [name]:"Alberto", }; console.log(person.myname); // Alberto
+```javascript
+const name = "myname";
+
+const person = {
+  [name]: "Alberto",
+};
+
+console.log(person.myname); // Alberto
 ```
 
 ## 第 10 章末测验
 
-### 10.1 重构代码使其更简洁：
+### 10.1 重构代码使其更简洁
 
-```
-const animal =  { name: name, age: age, breed: breed, }
+```javascript
+const animal = {
+  name: name,
+  age: age,
+  breed: breed,
+};
 ```
 
 ### 10.2 以下代码的正确输出是什么：
 
-```
-const name =  "myname"; const person =  { [name]:"Alberto", }; console.log(person.myname);
+```javascript
+const name = "myname";
+
+const person = {
+  [name]: "Alberto",
+};
+
+console.log(person.myname);
 ```
 
 ![bullet](img/bullet_nb_square-blk.png)`name`
@@ -2201,8 +2720,18 @@ const name =  "myname"; const person =  { [name]:"Alberto", }; console.log(perso
 
 ### 10.3 以下代码的正确输出是什么：
 
-```
-const name =  "myname"; const age =  27; const favoriteColor =  "Green"; const person =  { name, age, color }; console.log(person.color);
+```javascript
+const name = "myname";
+const age = 27;
+const favoriteColor = "Green";
+
+const person = {
+  name,
+  age,
+  color,
+};
+
+console.log(person.color);
 ```
 
 ![bullet](img/bullet_nb_square-blk.png)`"Green"`
@@ -2223,14 +2752,22 @@ ES6 新增了一种原始类型，称为 `Symbol`。它们是什么？它们有�
 
 让我们一起来创建一个 `Symbol`：
 
-```
-const me =  Symbol("Alberto"); console.log(me); // Symbol(Alberto)
+```javascript
+const me = Symbol("Alberto");
+console.log(me); // Symbol(Alberto)
 ```
 
 我们说它们始终是唯一的，让我们尝试创建一个具有相同值的新 Symbol，看看会发生什么：
 
-```
-const me =  Symbol("Alberto"); console.log(me); // Symbol(Alberto) const clone =  Symbol("Alberto"); console.log(clone); // Symbol(Alberto) console.log(me == clone); // false console.log(me === clone); // false
+```javascript
+const me = Symbol("Alberto");
+console.log(me); // Symbol(Alberto)
+
+const clone = Symbol("Alberto");
+console.log(clone); // Symbol(Alberto)
+
+console.log(me == clone); // false
+console.log(me === clone); // false
 ```
 
 它们具有相同的值，但由于 `Symbol` 始终是唯一的，我们永远不会遇到命名冲突。
@@ -2239,33 +2776,73 @@ const me =  Symbol("Alberto"); console.log(me); // Symbol(Alberto) const clone =
 
 如前所述，我们可以使用它们来创建对象属性的标识符，让我们看一个例子：
 
-```
-const office =  { "Tom"  :  "CEO", "Mark":  "CTO", "Mark":  "CIO", } for (person in office){ console.log(person); } // Tom // Mark
+```javascript
+const office = {
+  "Tom": "CEO",
+  "Mark": "CTO",
+  "Mark": "CIO",
+};
+
+for (person in office) {
+  console.log(person);
+}
+
+// Tom
+// Mark
 ```
 
 这里我们有一个包含三个人的办公室对象，其中两个人同名。
 
-为了避免命名冲突，我们可以使用 Symbol。
+为了避免命名冲突，我们可以使用 `Symbol`。
 
-```
-const office =  { [Symbol("Tom")] :  "CEO", [Symbol("Mark")] :  "CTO", [Symbol("Mark")] :  "CIO", } for(person in office) { console.log(person); } // undefined
+```javascript
+const office = {
+  [Symbol("Tom")]: "CEO",
+  [Symbol("Mark")]: "CTO",
+  [Symbol("Mark")]: "CIO",
+};
+
+for (person in office) {
+  console.log(person);
+}
+
+// undefined
 ```
 
-当我们尝试遍历 Symbol 时得到了 `undefined`，因为它们是不可枚举的，所以我们不能使用 `for in` 遍历它们。
+当我们尝试遍历 `Symbol` 时得到了 `undefined`，因为它们是不可枚举的，所以我们不能使用 `for in` 遍历它们。
 
 如果我们想获取它们的对象属性，可以使用 `Object.getOwnPropertySymbols()`。
 
-```
-const office =  { [Symbol("Tom")] :  "CEO", [Symbol("Mark")] :  "CTO", [Symbol("Mark")] :  "CIO", }; const symbols =  Object.getOwnPropertySymbols(office); console.log(symbols); // 0: Symbol(Tom) // 1: Symbol(Mark) // 2: Symbol(Mark) // length: 3
+```javascript
+const office = {
+  [Symbol("Tom")]: "CEO",
+  [Symbol("Mark")]: "CTO",
+  [Symbol("Mark")]: "CIO",
+};
+
+const symbols = Object.getOwnPropertySymbols(office);
+
+console.log(symbols);
+// 0: Symbol(Tom)
+// 1: Symbol(Mark)
+// 2: Symbol(Mark)
+// length: 3
 ```
 
 我们获取到了数组，但要访问属性，必须使用 `map`。
 
-```
-const symbols =  Object.getOwnPropertySymbols(office); const value =  symbols.map(symbol => office[symbol]); console.log(value); // 0: "CEO" // 1: "CTO" // 2: "CIO" // length: 3
+```javascript
+const symbols = Object.getOwnPropertySymbols(office);
+const value = symbols.map((symbol) => office[symbol]);
+
+console.log(value);
+// 0: "CEO"
+// 1: "CTO"
+// 2: "CIO"
+// length: 3
 ```
 
-现在我们终于得到了包含所有 Symbol 值的数组。
+现在我们终于得到了包含所有 `Symbol` 值的数组。
 
 ## 第 11 章末测验
 
@@ -2283,11 +2860,7 @@ const symbols =  Object.getOwnPropertySymbols(office); const value =  symbols.ma
 
 ![bullet](img/bullet_nb_square-blk.png)尝试重新赋值时会抛出错误
 
-![bullet](img/bullet_nb_square-blk.png)它们不能在 for 循环中使用
-
-
-
-
+![bullet](img/bullet_nb_square-blk.png)它们不能在 `for` 循环中使用
 
 ![bullet](img/bullet_nb_square-blk.png)它们是唯一的
 
@@ -2295,31 +2868,47 @@ const symbols =  Object.getOwnPropertySymbols(office); const value =  symbols.ma
 
 ### 11.3 以下代码的正确输出是什么？
 
+```javascript
+const friends = {
+  "Tom": "bff",
+  "Jim": "brother",
+  "Tom": "cousin",
+};
+
+for (friend in friends) {
+  console.log(friend);
+}
 ```
-const friends =  { "Tom"  :  "bff", "Jim"  :  "brother", "Tom"  :  "cousin", } for (friend in friends){ console.log(friend); }
-```
 
-![bullet](img/bullet_nb_square-blk.png)Jim Tom
+![bullet](img/bullet_nb_square-blk.png)`Jim Tom`
 
-![bullet](img/bullet_nb_square-blk.png)Error
+![bullet](img/bullet_nb_square-blk.png)`Error`
 
-![bullet](img/bullet_nb_square-blk.png)Tom Jim Tom
+![bullet](img/bullet_nb_square-blk.png)`Tom Jim Tom`
 
-![bullet](img/bullet_nb_square-blk.png)Tom Jim
+![bullet](img/bullet_nb_square-blk.png)`Tom Jim`
 
 ### 11.4 以下代码的正确输出是什么？
 
+```javascript
+const family = {
+  [Symbol("Tom")]: "father",
+  [Symbol("Jane")]: "mother",
+  [Symbol("Tom")]: "brother",
+};
+
+const symbols = Object.getOwnPropertySymbols(family);
+
+console.log(symbols);
 ```
-const family =  { [Symbol("Tom")] :  "father", [Symbol("Jane")] :  "mother", [Symbol("Tom")] :  "brother", }; const symbols =  Object.getOwnPropertySymbols(family); console.log(symbols);
-```
 
-![bullet](img/bullet_nb_square-blk.png)Symbol(Tom) Symbol(Jane) Symbol(Tom)
+![bullet](img/bullet_nb_square-blk.png)`Symbol(Tom) Symbol(Jane) Symbol(Tom)`
 
-![bullet](img/bullet_nb_square-blk.png)Symbol(Tom) Symbol(Jane)
+![bullet](img/bullet_nb_square-blk.png)`Symbol(Tom) Symbol(Jane)`
 
-![bullet](img/bullet_nb_square-blk.png)undefined
+![bullet](img/bullet_nb_square-blk.png)`undefined`
 
-![bullet](img/bullet_nb_square-blk.png)Symbol(Jane) Symbol(Tom)
+![bullet](img/bullet_nb_square-blk.png)`Symbol(Jane) Symbol(Tom)`
 
 # 第 12 章：类
 
@@ -2329,11 +2918,24 @@ const family =  { [Symbol("Tom")] :  "father", [Symbol("Jane")] :  "mother", [Sy
 
 话虽如此，在进入类之前，让我们回顾一下原型继承。
 
-```
-function  Person(name,age) { this.name  = name; this.age  = age; } Person.prototype.greet  =  function(){ console.log("Hello, my name is "  +  this.name); } const alberto =  new  Person("Alberto",  26); const caroline =  new  Person("Caroline",26); alberto.greet(); // Hello, my name is Alberto caroline.greet(); // Hello, my name is Caroline
+```javascript
+function Person(name, age) {
+  this.name = name;
+  this.age = age;
+}
+
+Person.prototype.greet = function () {
+  console.log("Hello, my name is " + this.name);
+};
+
+const alberto = new Person("Alberto", 26);
+const caroline = new Person("Caroline", 26);
+
+alberto.greet(); // Hello, my name is Alberto
+caroline.greet(); // Hello, my name is Caroline
 ```
 
-我们向原型添加了一个新方法，以便它对我们创建的所有`Person`新实例都可访问。
+我们向原型添加了一个新方法，以便它对我们创建的所有 `Person` 新实例都可访问。
 
 好了，现在我已经刷新了你对原型继承的认识，让我们来看看类。
 
@@ -2341,70 +2943,196 @@ function  Person(name,age) { this.name  = name; this.age  = age; } Person.protot
 
 有两种创建类的方式：
 
-1.  类声明
+1. 类声明
+2. 类表达式
 
-1.  类表达式
+```javascript
+// class declaration
+class Person {}
 
+// class expression
+const person = class Person {};
 ```
-// class declaration class Person { } // class expression const person =  class Person { }
-```
 
-记住：类声明（和表达式）不会被提升，这意味着除非你想得到一个`ReferenceError`，否则你需要在访问类之前声明它。
+记住：类声明（和表达式）不会被提升，这意味着除非你想得到一个 `ReferenceError`，否则你需要在访问类之前声明它。
 
 让我们开始创建第一个类。
 
-我们只需要一个名为`constructor`的方法（记住只能添加一个构造函数，如果类包含多个构造函数方法，则会抛出`SyntaxError`）。
+我们只需要一个名为 `constructor` 的方法（记住只能添加一个构造函数，如果类包含多个构造函数方法，则会抛出 `SyntaxError`）。
 
-```
-class Person { constructor(name,age){ this.name  = name; this.age  = age; } greet(){ console.log(`Hello, my name is ${this.name} and I am ${this.age} years old` ); }  // no commas in between methods farewell(){ console.log("goodbye friend"); } } const alberto =  new  Person("Alberto",26); alberto.greet(); // Hello, my name is Alberto and I am 26 years old alberto.farewell(); // goodbye friend
+```javascript
+class Person {
+  constructor(name, age) {
+    this.name = name;
+    this.age = age;
+  }
+
+  greet() {
+    console.log(
+      `Hello, my name is ${this.name} and I am ${this.age} years old`
+    );
+  }
+
+  // no commas in between methods
+  farewell() {
+    console.log("goodbye friend");
+  }
+}
+
+const alberto = new Person("Alberto", 26);
+
+alberto.greet();
+// Hello, my name is Alberto and I am 26 years old
+
+alberto.farewell();
+// goodbye friend
 ```
 
 如你所见，一切和之前一样。正如我们一开始提到的，类只是语法糖，一种更优雅的继承方式。
 
 ## 静态方法
 
-现在我们创建的两个新方法`greet()`和`farewell()`可以被每个`Person`的新实例访问，但如果我们想要一个只能由类本身访问的方法，类似于数组的`Array.of()`，该怎么办？
+现在我们创建的两个新方法 `greet()` 和 `farewell()` 可以被每个 `Person` 的新实例访问，但如果我们想要一个只能由类本身访问的方法，类似于数组的 `Array.of()`，该怎么办？
 
-```
-class Person { constructor(name,age){ this.name  = name; this.age  = age; } static  info(){ console.log("I am a Person class, nice to meet you"); } } const alberto =  new  Person("Alberto",26); alberto.info(); // TypeError: alberto.info is not a function Person.info(); // I am a Person class, nice to meet you
+```javascript
+class Person {
+  constructor(name, age) {
+    this.name = name;
+    this.age = age;
+  }
+
+  static info() {
+    console.log("I am a Person class, nice to meet you");
+  }
+}
+
+const alberto = new Person("Alberto", 26);
+
+alberto.info();
+// TypeError: alberto.info is not a function
+
+Person.info();
+// I am a Person class, nice to meet you
 ```
 
 ## set 和 get
 
 我们可以使用 setter 和 getter 方法来设置和获取类内部的值。
 
-```
-class Person { constructor(name,surname) { this.name  = name; this.surname  = surname; this.nickname  =  ""; } set nicknames(value){ this.nickname  = value; console.log(this.nickname); } get nicknames(){ console.log(`Your nickname is ${this.nickname}`); } } const alberto =  new  Person("Alberto","Montalesi"); // first we call the setter alberto.nicknames  =  "Albi"; // "Albi" // then we call the getter alberto.nicknames; // "Your nickname is Albi"
+
+
+```js
+class Person {
+  constructor(name, surname) {
+    this.name = name;
+    this.surname = surname;
+    this.nickname = "";
+  }
+
+  set nicknames(value) {
+    this.nickname = value;
+    console.log(this.nickname);
+  }
+
+  get nicknames() {
+    console.log(`Your nickname is ${this.nickname}`);
+  }
+}
+
+const alberto = new Person("Alberto", "Montalesi");
+
+// first we call the setter
+alberto.nicknames = "Albi";
+// "Albi"
+
+// then we call the getter
+alberto.nicknames;
+// "Your nickname is Albi"
 ```
 
 ## 扩展我们的类
 
 如果我们想要一个继承自之前类的新类呢？我们使用`extends`关键字来实现。请看下面的例子：
 
-```
-// our initial class class Person { constructor(name,age){ this.name  = name; this.age  = age; } greet(){ console.log(`Hello, my name is ${this.name} and I am ${this.age} years old` ); } } // our new class class Adult extends Person { constructor(name,age,work){ this.name  = name; this.age  = age; this.work  = work; } } const alberto =  new  Adult("Alberto",26,"software developer");
+```js
+// our initial class
+class Person {
+  constructor(name, age) {
+    this.name = name;
+    this.age = age;
+  }
+
+  greet() {
+    console.log(`Hello, my name is ${this.name} and I am ${this.age} years old`);
+  }
+}
+
+// our new class
+class Adult extends Person {
+  constructor(name, age, work) {
+    this.name = name;
+    this.age = age;
+    this.work = work;
+  }
+}
+
+const alberto = new Adult("Alberto", 26, "software developer");
 ```
 
 我们创建了一个新的`class Adult`，它继承自`Person`，但如果你尝试运行这段代码，你会得到一个错误：
 
-`ReferenceError: must call super constructor before using |this|  in Adult class constructor`
+`ReferenceError: must call super constructor before using |this| in Adult class constructor`
 
 错误信息告诉我们，在新类中使用`this`之前，必须先调用`super()`。
 
 这意味着我们基本上必须在创建新的`Adult`之前创建一个新的`Person`，而`super()`构造函数正是这样做的。
 
-```
-class Adult extends Person { constructor(name,age,work){ super(name,age); this.work  = work; } }
+```js
+class Adult extends Person {
+  constructor(name, age, work) {
+    super(name, age);
+    this.work = work;
+  }
+}
 ```
 
-为什么我们设置了`super(name,age)`？因为我们的`Adult`类从`Person`继承了`name`和`age`，所以我们不需要重新声明它们。
+为什么我们设置了`super(name, age)`？因为我们的`Adult`类从`Person`继承了`name`和`age`，所以我们不需要重新声明它们。
 
-Super 会简单地为我们创建一个新的`Person`。
+`super`会简单地为我们创建一个新的`Person`。
 
 如果我们现在再次运行代码，我们会得到：
 
-```
-// our initial class class Person { constructor(name,age){ this.name  = name; this.age  = age; } greet(){ console.log(`Hello, my name is ${this.name} and I am ${this.age} years old` ); } } // our new class class Adult extends Person { constructor(name,age,work){ super(name,age); this.work  = work; } } const alberto =  new  Adult("Alberto",26,"software developer"); console.log(alberto.age); // 26 console.log(alberto.work); // "software developer" alberto.greet(); // Hello, my name is Alberto and I am 26 years old
+```js
+// our initial class
+class Person {
+  constructor(name, age) {
+    this.name = name;
+    this.age = age;
+  }
+
+  greet() {
+    console.log(`Hello, my name is ${this.name} and I am ${this.age} years old`);
+  }
+}
+
+// our new class
+class Adult extends Person {
+  constructor(name, age, work) {
+    super(name, age);
+    this.work = work;
+  }
+}
+
+const alberto = new Adult("Alberto", 26, "software developer");
+
+console.log(alberto.age);
+// 26
+
+console.log(alberto.work);
+// "software developer"
+
+alberto.greet();
+// Hello, my name is Alberto and I am 26 years old
 ```
 
 如你所见，我们的`Adult`继承了`Person`类的所有属性和方法。
@@ -2413,14 +3141,57 @@ Super 会简单地为我们创建一个新的`Person`。
 
 我们想要创建类似这样的东西，一个类似于数组的结构，其中第一个值是一个属性，用于定义我们的班级，其余的是我们的学生及其成绩。
 
-```
-// we create a new `class`room const my`class`  =  new  `class`room('1A',[ {name:  "Tim",  mark:  6}, {name:  "Tom",  mark:  3}, {name:  "Jim",  mark:  8}, {name:  "Jon",  mark:  10},] );
+```js
+// we create a new `class`room
+const my`class` = new `class`room("1A", [
+  { name: "Tim", mark: 6 },
+  { name: "Tom", mark: 3 },
+  { name: "Jim", mark: 8 },
+  { name: "Jon", mark: 10 },
+]);
 ```
 
 我们可以做的是创建一个扩展数组的新类。
 
-```
-class  `class`room extends Array { // we use rest operator to grab all the students constructor(name, ...students){ // we use spread to place all the students in the array individually otherwise we would push an array into an array super(...students); this.name  = name; // we create a new method to add students } add(student){ this.push(student); } } const my`class`  =  new  `class`room('1A', {name:  "Tim",  mark:  6}, {name:  "Tom",  mark:  3}, {name:  "Jim",  mark:  8}, {name:  "Jon",  mark:  10}, ); // now we can call my`class`.add({name:  "Timmy",  mark:7}); my`class`[4]; // Object { name: "Timmy", mark: 7 } // we can also loop over with for of for(const student of my`class`) { console.log(student); } // Object { name: "Tim", grade: 6 } // Object { name: "Tom", grade: 3 } // Object { name: "Jim", grade: 8 } // Object { name: "Jon", grade: 10 } // Object { name: "Timmy", grade: 7 }
+```js
+class `class`room extends Array {
+  // we use rest operator to grab all the students
+  constructor(name, ...students) {
+    // we use spread to place all the students in the array individually
+    // otherwise we would push an array into an array
+    super(...students);
+    this.name = name;
+  }
+
+  // we create a new method to add students
+  add(student) {
+    this.push(student);
+  }
+}
+
+const my`class` = new `class`room(
+  "1A",
+  { name: "Tim", mark: 6 },
+  { name: "Tom", mark: 3 },
+  { name: "Jim", mark: 8 },
+  { name: "Jon", mark: 10 },
+);
+
+// now we can call my`class`.add
+my`class`.add({ name: "Timmy", mark: 7 });
+
+my`class`[4];
+// Object { name: "Timmy", mark: 7 }
+
+// we can also loop over with for of
+for (const student of my`class`) {
+  console.log(student);
+}
+// Object { name: "Tim", grade: 6 }
+// Object { name: "Tom", grade: 3 }
+// Object { name: "Jim", grade: 8 }
+// Object { name: "Jon", grade: 10 }
+// Object { name: "Timmy", grade: 7 }
 ```
 
 ## 第 12 章结束测验
@@ -2441,10 +3212,6 @@ class  `class`room extends Array { // we use rest operator to grab all the stude
 
 ![bullet](img/bullet_nb_square-blk.png)`class Person {...}`
 
-
-
-
-
 ### 12.3 什么是静态方法？
 
 - 一种不能改变的方法
@@ -2453,8 +3220,22 @@ class  `class`room extends Array { // we use rest operator to grab all the stude
 
 ### 12.4 以下代码的正确输出是什么？
 
-```
-class Person { constructor(name,age){ this.name  = name; this.age  = age; } } class Adult extends Person { constructor(work){ this.work  = work; } } const my =  new  Adult('software developer'); console.log(my.work);
+```js
+class Person {
+  constructor(name, age) {
+    this.name = name;
+    this.age = age;
+  }
+}
+
+class Adult extends Person {
+  constructor(work) {
+    this.work = work;
+  }
+}
+
+const my = new Adult("software developer");
+console.log(my.work);
 ```
 
 - `"software developer"`
@@ -2463,31 +3244,47 @@ class Person { constructor(name,age){ this.name  = name; this.age  = age; } } cl
 
 ### 12.5 编写代码完成以下任务：
 
-给定以下类，创建一个名为 `Adult` 的新类，它继承自前一个类，并添加一个名为 `work` 的新属性。
+给定以下类，创建一个名为`Adult`的新类，它继承自前一个类，并添加一个名为`work`的新属性。
 
-```
-// 初始类 class Person { constructor(name,age){ this.name  = name; this.age  = age; } greet(){ console.log(`Hello, my name is ${this.name} and I am ${this.age} years old` ); } } // 创建一个继承自 Person 并添加新属性的新类 const me =  new  Adult('Alberto',27,'software developer'); console.log(me.work); // software developer
+```js
+// 初始类
+class Person {
+  constructor(name, age) {
+    this.name = name;
+    this.age = age;
+  }
+
+  greet() {
+    console.log(`Hello, my name is ${this.name} and I am ${this.age} years old`);
+  }
+}
+
+// 创建一个继承自 Person 并添加新属性的新类
+const me = new Adult("Alberto", 27, "software developer");
+
+console.log(me.work);
+// software developer
 ```
 
 # 第 13 章：Promise
 
 JavaScript 是同步工作的，这意味着每个代码块会在前一个代码块执行完毕后执行。
 
-```
-const data = fetch('your-api-url-goes-here');
+```js
+const data = fetch("your-api-url-goes-here");
 
 console.log("Finished");
 
-console.log(data); }
+console.log(data);
 ```
 
-在上面的例子中，我们使用 `fetch` 从 URL 获取数据（在这个例子中，我们只是假装这样做）。
+在上面的例子中，我们使用`fetch`从 URL 获取数据（在这个例子中，我们只是假装这样做）。
 
-如果是同步代码，我们会期望后续的行只有在 `fetch` 完成后才会被调用，但实际上会发生的是，`fetch` 被调用后，紧接着两个 `console.log` 也会被调用，导致最后一个 `console.log(data)` 返回 `undefined`。
+如果是同步代码，我们会期望后续的行只有在`fetch`完成后才会被调用，但实际上会发生的是，`fetch`被调用后，紧接着两个`console.log`也会被调用，导致最后一个`console.log(data)`返回`undefined`。
 
-这是因为 `fetch` 是异步执行的，这意味着代码不会在遇到这一行时停止运行，而是会继续执行。
+这是因为`fetch`是异步执行的，这意味着代码不会在遇到这一行时停止运行，而是会继续执行。
 
-我们需要一种方法，在继续执行代码之前等待 `fetch` 返回结果。
+我们需要一种方法，在继续执行代码之前等待`fetch`返回结果。
 
 为了避免这种情况，我们会使用回调函数或 Promise。
 
@@ -2501,13 +3298,19 @@ console.log(data); }
 
 以下是一个示例，只是为了展示回调地狱的含义。假设每一步都是异步的，意味着我们需要为准备披萨的每一步向服务器发送请求，并等待服务器响应。
 
-```
-const makePizza = (ingredients, callback) =>  { mixIngredients(ingredients,  function(mixedIngredients)){ bakePizza(mixedIngredients,  function(bakedPizza)){ console.log('finished!') } } }
+```js
+const makePizza = (ingredients, callback) => {
+  mixIngredients(ingredients, function (mixedIngredients) {
+    bakePizza(mixedIngredients, function (bakedPizza) {
+      console.log("finished!");
+    });
+  });
+};
 ```
 
 我们试图以一种从上到下视觉上执行的方式编写代码，导致函数过度嵌套，最终形成你上面看到的结果。
 
-要改进你的回调函数，可以查看 [`callbackhell.com/`](http://callbackhell.com/)
+要改进你的回调函数，可以查看[`callbackhell.com/`](http://callbackhell.com/)。
 
 Promise 将帮助我们逃离这个“地狱”并改进我们的代码。
 
@@ -2515,47 +3318,87 @@ Promise 将帮助我们逃离这个“地狱”并改进我们的代码。
 
 来自 MDN：
 
-`Promise` 是一个对象，代表异步操作的最终完成或失败。
+`Promise`是一个对象，代表异步操作的最终完成或失败。
 
 快速看一下下面的例子：
 
-```
-const data =  fetch('your-api-url-goes-here'); console.log('Finished'); console.log(data);
+```js
+const data = fetch("your-api-url-goes-here");
+
+console.log("Finished");
+console.log(data);
 ```
 
 ## 创建你自己的 Promise
 
-```
-const myPromise =  new  Promise((resolve, reject) =>  { // 你的代码写在这里 });
+```js
+const myPromise = new Promise((resolve, reject) => {
+  // 你的代码写在这里
+});
 ```
 
-这就是创建你自己的 Promise 的方式，`resolve` 和 `reject` 会在 Promise 完成时被调用。
+这就是创建你自己的 Promise 的方式，`resolve`和`reject`会在 Promise 完成时被调用。
 
 我们可以立即返回它，看看会得到什么：
 
-```
-const myPromise =  new  Promise((resolve, reject) =>  { resolve("我们从 Promise 中得到的值"); }); myPromise.then( data =>  { console.log(data); }); // 我们从 Promise 中得到的值
+```js
+const myPromise = new Promise((resolve, reject) => {
+  resolve("我们从 Promise 中得到的值");
+});
+
+myPromise.then((data) => {
+  console.log(data);
+});
+
+// 我们从 Promise 中得到的值
 ```
 
 我们立即解决了 Promise，并在控制台中看到了结果。
 
-我们可以结合 `setTimeout()` 来等待一段时间再解决。
+我们可以结合`setTimeout()`来等待一段时间再解决。
 
-```
-const myPromise =  new  Promise((resolve, reject) =>  { setTimeout(() =>  { resolve("我们从 Promise 中得到的值"); },  2000); }); myPromise.then( data =>  { console.log(data); }); // 2 秒后 ... // 我们从 Promise 中得到的值
+```js
+const myPromise = new Promise((resolve, reject) => {
+  setTimeout(() => {
+    resolve("我们从 Promise 中得到的值");
+  }, 2000);
+});
+
+myPromise.then((data) => {
+  console.log(data);
+});
+
+// 2 秒后 ...
+// 我们从 Promise 中得到的值
 ```
 
 这两个例子非常简单，但 Promise 在处理大量数据请求时非常有用。
 
 在上面的例子中，我们保持简单，只解决了 Promise，但实际上你也会遇到错误，所以让我们看看如何处理它们：
 
-```
-const myPromise =  new  Promise((resolve, reject) =>  { setTimeout(() =>  { reject(Error("这是我们的错误")); },  2000); }); myPromise .then(data =>  { console.log(data); }) .catch(err =>  { console.error(err); }) // Error: 这是我们的错误 // Stack trace: // myPromise</<@debugger eval code:3:14
+```js
+const myPromise = new Promise((resolve, reject) => {
+  setTimeout(() => {
+    reject(Error("这是我们的错误"));
+  }, 2000);
+});
+
+myPromise
+  .then((data) => {
+    console.log(data);
+  })
+  .catch((err) => {
+    console.error(err);
+  });
+
+// Error: 这是我们的错误
+// Stack trace:
+// myPromise</<@debugger eval code:3:14
 ```
 
-我们使用 `.then()` 来获取 Promise 解决时的值，使用 `.catch()` 来获取 Promise 拒绝时的值。
+我们使用`.then()`来获取 Promise 解决时的值，使用`.catch()`来获取 Promise 拒绝时的值。
 
-查看我们的错误日志，你可以看到它告诉我们错误发生的位置，这是因为我们写了 `reject(Error("这是我们的错误"));` 而不是简单的 `reject("这是我们的错误");`。
+查看我们的错误日志，你可以看到它告诉我们错误发生的位置，这是因为我们写了`reject(Error("这是我们的错误"));`而不是简单的`reject("这是我们的错误");`。
 
 ### 链式 Promise
 
@@ -2563,56 +3406,125 @@ const myPromise =  new  Promise((resolve, reject) =>  { setTimeout(() =>  { reje
 
 你可以链式调用任意数量的 Promise，代码仍然会比我们在上面回调地狱中看到的更易读、更简洁。
 
-```
-const myPromise =  new  Promise((resolve, reject) =>  { resolve(); }); myPromise .then(data =>  { // 返回一些新内容 return  'working...' }) .then(data =>  { // 记录从上一个 Promise 得到的数据 console.log(data); throw  'failed!'; }) .catch(err =>  { // 捕获上一个 Promise 的错误并记录 console.error(err); // failed! })
+```js
+const myPromise = new Promise((resolve, reject) => {
+  resolve();
+});
+
+myPromise
+  .then((data) => {
+    // 返回一些新内容
+    return "working...";
+  })
+  .then((data) => {
+    // 记录从上一个 Promise 得到的数据
+    console.log(data);
+    throw "failed!";
+  })
+  .catch((err) => {
+    // 捕获上一个 Promise 的错误并记录
+    console.error(err);
+    // failed!
+  });
 ```
 
-如你所见，第一个 `then` 将一个值传递给了第二个 `then`，我们在那里记录了它，并且还抛出了一个错误，该错误被 `catch` 子句捕获。
+如你所见，第一个`then`将一个值传递给了第二个`then`，我们在那里记录了它，并且还抛出了一个错误，该错误被`catch`子句捕获。
 
 我们不仅可以在成功时链式调用，也可以在拒绝时链式调用。
 
+```js
+const myPromise = new Promise((resolve, reject) => {
+  resolve();
+});
+
+myPromise
+  .then((data) => {
+    throw new Error("ooops");
+    console.log("first value");
+  })
+  .catch(() => {
+    console.log("catch an error");
+  })
+  .then((data) => {
+    console.log("second value");
+  });
+
+// catch an error
+// second value
 ```
-const myPromise =  new  Promise((resolve, reject) =>  { resolve(); }); myPromise .then(data =>  { throw  new  Error("ooops"); console.log("first value"); }) .catch(() =>  { console.log("catch an error"); }) .then(data =>  { console.log("second value"); }); // catch an error // second value
-```
 
-我们没有得到“first value”，因为我们抛出了一个错误，所以只得到了第一个 `.catch()` 和最后一个 `.then()`。
+我们没有得到“first value”，因为我们抛出了一个错误，所以只得到了第一个`.catch()`和最后一个`.then()`。
 
-### `Promise.resolve()` 和 `Promise.reject()`
+### `Promise.resolve()`和`Promise.reject()`
 
-`Promise.resolve()` 和 `Promise.reject()` 会创建自动解决或拒绝的 Promise。
-
-```
-//Promise.resolve() Promise.resolve('Success').then(function(value) { console.log(); // "Success" },  function(value) { cnsole.log('fail') }); // Promise.reject() Promise.reject(new  Error('fail')).then(function() { // 不会被调用 },  function(error) { console.log(error); // Error: fail });
-```
-
-如你在第一个例子中所见，`then` 子句中创建的 Promise 有两个参数，一个函数在 Promise 解决时被调用，另一个在 Promise 拒绝时被调用。由于 `Promise.resolve()` 立即解决了 Promise，因此第一个函数被调用。
-
-第二个例子中则相反，我们使用 `Promise.reject()` 立即拒绝 Promise，因此 `then` 子句的第二个参数被调用。
-
-### `Promise.all()` 和 `Promise.race()`
-
-`Promise.all()` 返回一个单一的 Promise，当所有 Promise 都解决时，该 Promise 才会解决。
-
-让我们看一个有两个 Promise 的例子。
-
-
+`Promise.resolve()`和`Promise.reject()`会创建自动解决或拒绝的 Promise。
 
 
 
 ```javascript
-const promise1 =  new  Promise((resolve,reject) =>  { setTimeout(resolve,  500,  'first value'); });
-const promise2 =  new  Promise((resolve,reject) =>  { setTimeout(resolve,  1000,  'second value'); });
-promise1.then(data =>  { console.log(data); }); // after 500 ms // first value
-promise2.then(data =>  { console.log(data); }); // after 1000 ms // second value
+//Promise.resolve()
+Promise.resolve('Success').then(
+  function(value) {
+    console.log(); // "Success"
+  },
+  function(value) {
+    cnsole.log('fail');
+  }
+);
+
+// Promise.reject()
+Promise.reject(new Error('fail')).then(
+  function() {
+    // 不会被调用
+  },
+  function(error) {
+    console.log(error); // Error: fail
+  }
+);
+```
+
+如你在第一个例子中所见，`then`子句中创建的 Promise 有两个参数，一个函数在 Promise 解决时被调用，另一个在 Promise 拒绝时被调用。由于`Promise.resolve()`立即解决了 Promise，因此第一个函数被调用。
+
+第二个例子中则相反，我们使用`Promise.reject()`立即拒绝 Promise，因此`then`子句的第二个参数被调用。
+
+### `Promise.all()`和`Promise.race()`
+
+`Promise.all()`返回一个单一的 Promise，当所有 Promise 都解决时，该 Promise 才会解决。
+
+让我们看一个有两个 Promise 的例子。
+
+```javascript
+const promise1 = new Promise((resolve, reject) => {
+  setTimeout(resolve, 500, 'first value');
+});
+const promise2 = new Promise((resolve, reject) => {
+  setTimeout(resolve, 1000, 'second value');
+});
+
+promise1.then(data => {
+  console.log(data);
+}); // after 500 ms // first value
+
+promise2.then(data => {
+  console.log(data);
+}); // after 1000 ms // second value
 ```
 
 它们将彼此独立地解决，但看看当我们使用`Promise.all()`时会发生什么。
 
 ```javascript
-const promise1 =  new  Promise((resolve,reject) =>  { setTimeout(resolve,  500,  'first value'); });
-const promise2 =  new  Promise((resolve,reject) =>  { setTimeout(resolve,  1000,  'second value'); });
-Promise .all([promise1, promise2])
-.then(data =>  { const[promise1data, promise2data] = data; console.log(promise1data, promise2data); });
+const promise1 = new Promise((resolve, reject) => {
+  setTimeout(resolve, 500, 'first value');
+});
+const promise2 = new Promise((resolve, reject) => {
+  setTimeout(resolve, 1000, 'second value');
+});
+
+Promise.all([promise1, promise2])
+  .then(data => {
+    const [promise1data, promise2data] = data;
+    console.log(promise1data, promise2data);
+  });
 // after 1000 ms // first value second value
 ```
 
@@ -2623,20 +3535,35 @@ Promise .all([promise1, promise2])
 如果其中一个 promise 被拒绝，那么所有 promise 都会异步地以该拒绝的值拒绝，即使它们已经解决。
 
 ```javascript
-const promise1 =  new  Promise((resolve,reject) =>  { resolve("my first value"); });
-const promise2 =  new  Promise((resolve,reject) =>  { reject(Error("oooops error")); });
+const promise1 = new Promise((resolve, reject) => {
+  resolve("my first value");
+});
+const promise2 = new Promise((resolve, reject) => {
+  reject(Error("oooops error"));
+});
+
 // one of the two promises will fail, but `.all` will return only a rejection.
-Promise .all([promise1, promise2])
-.then(data =>  { const[promise1data, promise2data] = data; console.log(promise1data, promise2data); })
-.catch(err =>  { console.log(err); });
+Promise.all([promise1, promise2])
+  .then(data => {
+    const [promise1data, promise2data] = data;
+    console.log(promise1data, promise2data);
+  })
+  .catch(err => {
+    console.log(err);
+  });
 // Error: oooops error
 ```
 
 另一方面，`Promise.race()`返回一个 promise，该 promise 会在可迭代对象中的任何一个 promise 解决或拒绝时立即解决或拒绝，并使用该 promise 的值。
 
 ```javascript
-const promise1 =  new  Promise((resolve,reject) =>  { setTimeout(resolve,  500,  'first value'); });
-const promise2 =  new  Promise((resolve,reject) =>  { setTimeout(resolve,  100,  'second value'); });
+const promise1 = new Promise((resolve, reject) => {
+  setTimeout(resolve, 500, 'first value');
+});
+const promise2 = new Promise((resolve, reject) => {
+  setTimeout(resolve, 100, 'second value');
+});
+
 Promise.race([promise1, promise2]).then(function(value) {
   console.log(value); // Both resolve, but promise2 is faster
 });
@@ -2667,12 +3594,25 @@ Promise.race([promise1, promise2]).then(function(value) {
 ### 13.4 以下代码的正确输出是什么：
 
 ```javascript
-function  myPromise(){ return  new  Promise((resolve,reject) =>  { reject(); }) }
+function myPromise() {
+  return new Promise((resolve, reject) => {
+    reject();
+  });
+}
+
 myPromise()
-.then(() =>  { console.log('1') })
-.then(() =>  { console.log('2') })
-.catch(() =>  { console.log('3') })
-.then(() =>  { console.log('4') });
+  .then(() => {
+    console.log('1');
+  })
+  .then(() => {
+    console.log('2');
+  })
+  .catch(() => {
+    console.log('3');
+  })
+  .then(() => {
+    console.log('4');
+  });
 ```
 
 - ![bullet](img/bullet_nb_square-blk.png) 1,2,3,4
@@ -2689,8 +3629,14 @@ myPromise()
 要创建一个生成器函数，我们这样写：
 
 ```javascript
-function*  fruitList(){ yield  'Banana'; yield  'Apple'; yield  'Orange'; }
-const fruits =  fruitList();
+function* fruitList() {
+  yield 'Banana';
+  yield 'Apple';
+  yield 'Orange';
+}
+
+const fruits = fruitList();
+
 fruits; // Generator
 fruits.next(); // Object { value: "Banana", done: false }
 fruits.next(); // Object { value: "Apple", done: false }
@@ -2700,10 +3646,10 @@ fruits.next(); // Object { value: undefined, done: true }
 
 让我们逐段看一下代码：
 
-1.  我们使用`function*`声明了函数
-2.  我们在内容前使用了关键字`yield`
-3.  我们使用`.next()`启动函数
-4.  最后一次调用`.next()`时，我们收到一个空对象，并得到`done: true`
+1. 我们使用`function*`声明了函数。
+2. 我们在内容前使用了关键字`yield`。
+3. 我们使用`.next()`启动函数。
+4. 最后一次调用`.next()`时，我们收到一个空对象，并得到`done: true`。
 
 我们的函数在每次`.next()`调用之间暂停。
 
@@ -2713,29 +3659,38 @@ fruits.next(); // Object { value: undefined, done: true }
 
 ```javascript
 // create an array of fruits
-const fruitList = ['Banana','Apple','Orange','Melon','Cherry','Mango'];
+const fruitList = ['Banana', 'Apple', 'Orange', 'Melon', 'Cherry', 'Mango'];
+
 // create our looping generator
-function*  loop(arr) {
+function* loop(arr) {
   for (const item of arr) {
-    yield  `I like to eat ${item}s`;
+    yield `I like to eat ${item}s`;
   }
 }
-const fruitGenerator =  loop(fruitList);
+
+const fruitGenerator = loop(fruitList);
+
 fruitGenerator.next(); // Object { value: "I like to eat Bananas", done: false }
 fruitGenerator.next(); // Object { value: "I like to eat Apples", done: false }
 fruitGenerator.next().value; // "I like to eat Oranges"
 ```
 
-1.  我们的新生成器将遍历数组，每次调用`.next()`时打印一个值
-2.  如果你只关心获取值，那么使用`.next().value`，它不会打印生成器的状态
+1. 我们的新生成器将遍历数组，每次调用`.next()`时打印一个值。
+2. 如果你只关心获取值，那么使用`.next().value`，它不会打印生成器的状态。
 
 ## 使用`.return()`结束生成器
 
 使用`.return()`我们可以返回一个给定的值并结束生成器。
 
 ```javascript
-function*  fruitList(){ yield  'Banana'; yield  'Apple'; yield  'Orange'; }
-const fruits =  fruitList();
+function* fruitList() {
+  yield 'Banana';
+  yield 'Apple';
+  yield 'Orange';
+}
+
+const fruits = fruitList();
+
 fruits.return(); // Object { value: undefined, done: true }
 ```
 
@@ -2744,16 +3699,18 @@ fruits.return(); // Object { value: undefined, done: true }
 ## 使用`.throw()`捕获错误
 
 ```javascript
-function*  gen(){
-  try  {
-    yield  "Trying...";
-    yield  "Trying harder...";
-    yield  "Trying even harder..";
-  } catch(err) {
-    console.log("Error: "  + err );
+function* gen() {
+  try {
+    yield "Trying...";
+    yield "Trying harder...";
+    yield "Trying even harder..";
+  } catch (err) {
+    console.log("Error: " + err);
   }
 }
-const myGenerator =  gen();
+
+const myGenerator = gen();
+
 myGenerator.next(); // Object { value: "Trying...", done: false }
 myGenerator.next(); // Object { value: "Trying harder...", done: false }
 myGenerator.throw("ooops"); // Error: ooops
@@ -2775,21 +3732,34 @@ myGenerator.throw("ooops"); // Error: ooops
 我们想要做的是等待一个 promise 解决，然后将解决的值通过`.next()`调用传回我们的生成器。
 
 ```javascript
-const myPromise = () =>  new  Promise((resolve) =>  { resolve("our value is..."); });
-function*  gen() {
-  let result =  "";
+const myPromise = () =>
+  new Promise((resolve) => {
+    resolve("our value is...");
+  });
+
+function* gen() {
+  let result = "";
+
   // returns promise
-  yield  myPromise().then(data =>  { result = data }) ;
+  yield myPromise().then(data => {
+    result = data;
+  });
+
   // wait for the promise and use its value
-  yield result +  ' 2';
-};
+  yield result + ' 2';
+}
+
 // Call the async function and pass params
-const asyncFunc =  gen();
-const val1 =  asyncFunc.next();
+const asyncFunc = gen();
+const val1 = asyncFunc.next();
+
 console.log(val1);
+
 // call the promise and wait for it to resolve
 // {value: Promise, done: false}
-val1.value.then(() =>  { console.log(asyncFunc.next()); })
+val1.value.then(() => {
+  console.log(asyncFunc.next());
+});
 // Object { value: "our value is... 2", done: false }
 ```
 
@@ -2799,55 +3769,74 @@ val1.value.then(() =>  { console.log(asyncFunc.next()); })
 
 ### 14.1 生成器函数的正确语法是什么？
 
+![bullet](img/bullet_nb_square-blk.png) `generator function() {...}`
 
+![bullet](img/bullet_nb_square-blk.png) `new generator(){...}`
 
-
-
-![bullet](img/bullet_nb_square-blk.png)`generator function() {...}`
-
-![bullet](img/bullet_nb_square-blk.png)`new generator(){...}`
-
-![bullet](img/bullet_nb_square-blk.png)`function*(){...}`
+![bullet](img/bullet_nb_square-blk.png) `function*(){...}`
 
 ### 14.2 生成器的主要特性是什么？
 
-![bullet](img/bullet_nb_square-blk.png)它无法被停止
+![bullet](img/bullet_nb_square-blk.png) 它无法被停止
 
-![bullet](img/bullet_nb_square-blk.png)它可以生成其他函数
+![bullet](img/bullet_nb_square-blk.png) 它可以生成其他函数
 
-![bullet](img/bullet_nb_square-blk.png)它无法被覆盖
+![bullet](img/bullet_nb_square-blk.png) 它无法被覆盖
 
-![bullet](img/bullet_nb_square-blk.png)它可以被停止并重新启动
+![bullet](img/bullet_nb_square-blk.png) 它可以被停止并重新启动
 
 ### 14.3 以下代码的正确输出是什么？
 
+```javascript
+function* fruitList() {
+  yield 'Banana';
+  yield 'Apple';
+  yield 'Pomelo';
+  yield 'Mangosteen';
+  yield 'Orange';
+}
+
+const fruits = fruitList();
+
+fruits;
+fruits.next();
+fruits.next();
+fruits.next();
 ```
-function*  fruitList(){ yield  'Banana'; yield  'Apple'; yield  'Pomelo'; yield  'Mangosteen'; yield  'Orange'; } const fruits =  fruitList(); fruits; fruits.next(); fruits.next(); fruits.next();
-```
 
-`fruits.next();` 的最后一次输出是什么？
+`fruits.next();`的最后一次输出是什么？
 
-![bullet](img/bullet_nb_square-blk.png)`Object { value: "Banana", done: false }`
+![bullet](img/bullet_nb_square-blk.png) `Object { value: "Banana", done: false }`
 
-![bullet](img/bullet_nb_square-blk.png)`Object { value: "Pomelo", done: true }`
+![bullet](img/bullet_nb_square-blk.png) `Object { value: "Pomelo", done: true }`
 
-![bullet](img/bullet_nb_square-blk.png)`Object { value: "Mangosteen", done: false }`
+![bullet](img/bullet_nb_square-blk.png) `Object { value: "Mangosteen", done: false }`
 
-![bullet](img/bullet_nb_square-blk.png)`Object { value: "Pomelo", done: false }`
+![bullet](img/bullet_nb_square-blk.png) `Object { value: "Pomelo", done: false }`
 
 ### 14.4 以下代码的正确输出是什么？
 
+```javascript
+function* fruitList() {
+  yield 'Banana';
+  yield 'Apple';
+  yield 'Orange';
+}
+
+const fruits = fruitList();
+
+fruits.return();
 ```
-function*  fruitList(){ yield  'Banana'; yield  'Apple'; yield  'Orange'; } const fruits =  fruitList(); fruits.return();
-```
 
-![bullet](img/bullet_nb_square-blk.png)`Object { value: "Banana", done: true }`
 
-![bullet](img/bullet_nb_square-blk.png)`Object { value: undefined, done: false }`
 
-![bullet](img/bullet_nb_square-blk.png)`Object { value: "Banana", done: false }`
+![bullet](img/bullet_nb_square-blk.png) `Object { value: "Banana", done: true }`
 
-![bullet](img/bullet_nb_square-blk.png)`Object { value: undefined, done: true }`
+![bullet](img/bullet_nb_square-blk.png) `Object { value: undefined, done: false }`
+
+![bullet](img/bullet_nb_square-blk.png) `Object { value: "Banana", done: false }`
+
+![bullet](img/bullet_nb_square-blk.png) `Object { value: undefined, done: true }`
 
 # 第 15 章：代理
 
@@ -2861,12 +3850,31 @@ function*  fruitList(){ yield  'Banana'; yield  'Apple'; yield  'Orange'; } cons
 
 创建 `Proxy` 的方式如下：`var x = new Proxy(target, handler)`
 
-1.  我们的 `target` 可以是任何东西，从对象到函数，再到另一个 `Proxy`。
+1. 我们的 `target` 可以是任何东西，从对象到函数，再到另一个 `Proxy`。
+2. `handler` 是一个对象，它将定义当对 `Proxy` 执行操作时的行为。
 
-1.  `handler` 是一个对象，它将定义当对 `Proxy` 执行操作时的行为。
+```javascript
+// our object
+const dog = {
+  breed: "German Shephard",
+  age: 5
+};
 
-```
-// our object const dog =  {  breed:  "German Shephard",  age:  5} // our Proxy const dogProxy =  new  Proxy(dog,  { get(target,breed){ return target[breed].toUpperCase(); }, set(target, breed, value){ console.log("changing breed to..."); target[breed] = value; } }); console.log(dogProxy.breed); // "GERMAN SHEPHARD" console.log(dogProxy.breed  =  "Labrador") // changing breed to... // "Labrador" console.log(dogProxy.breed); // "LABRADOR"
+// our Proxy
+const dogProxy = new Proxy(dog, {
+  get(target, breed) {
+    return target[breed].toUpperCase();
+  },
+  set(target, breed, value) {
+    console.log("changing breed to...");
+    target[breed] = value;
+  }
+});
+
+console.log(dogProxy.breed); // "GERMAN SHEPHERD"
+console.log(dogProxy.breed = "Labrador"); // changing breed to...
+// "Labrador"
+console.log(dogProxy.breed); // "LABRADOR"
 ```
 
 当我们调用 `get` 方法时，我们进入正常流程并将 `breed` 的值改为大写。
@@ -2875,27 +3883,71 @@ function*  fruitList(){ yield  'Banana'; yield  'Apple'; yield  'Orange'; } cons
 
 `Proxies` 非常有用。例如，我们可以用它们来验证数据。
 
-```
-const validateAge =  { set:  function(object,property,value){ if(property ===  'age'){ if(value <  18){ throw  new  Error('you are too young!'); }  else  { // default behaviour object[property] = value; return  true } } } } const user =  new  Proxy({},validateAge) user.age  =  17 // Uncaught Error: you are too young! user.age  =  21 // 21
+```javascript
+const validateAge = {
+  set: function(object, property, value) {
+    if (property === "age") {
+      if (value < 18) {
+        throw new Error("you are too young!");
+      } else {
+        // default behaviour
+        object[property] = value;
+        return true;
+      }
+    }
+  }
+};
+
+const user = new Proxy({}, validateAge);
+
+user.age = 17; // Uncaught Error: you are too young!
+user.age = 21; // 21
 ```
 
 当我们设置 `user` 对象的 `age` 属性时，我们将其传递给 `validateAge` 函数，该函数检查它是否大于或小于 18，如果小于 18 则抛出错误。
 
 如果我们有许多属性，每个属性都需要一个 getter 和 setter，那么 `Proxies` 会非常有用。通过使用 `Proxy`，我们只需要定义一个 getter 和一个 setter。让我们看这个例子：
 
-```
-const dog =  { _name:  'pup', _age:  7, get name() { console.log(this._name) }, get age(){ console.log(this._age) }, set name(newName){ this._name  = newName; console.log(this._name) }, set age(newAge){ this._age  = newAge; console.log(this._age) } } dog.name; // pup dog.age; // 7 dog.breed; // undefined dog.name  =  'Max'; // Max dog.age  =  8; // 8
+```javascript
+const dog = {
+  _name: "pup",
+  _age: 7,
+
+  get name() {
+    console.log(this._name);
+  },
+
+  get age() {
+    console.log(this._age);
+  },
+
+  set name(newName) {
+    this._name = newName;
+    console.log(this._name);
+  },
+
+  set age(newAge) {
+    this._age = newAge;
+    console.log(this._age);
+  }
+};
+
+dog.name; // pup
+dog.age; // 7
+dog.breed; // undefined
+dog.name = "Max"; // Max
+dog.age = 8; // 8
 ```
 
 注意我写的是 `_name` 而不是 `name` 等，`_` 符号在 JavaScript 约定中用于定义私有属性，即不应被同一类的实例访问的属性。
 
 这不是 JavaScript 强制要求的，只是为了让开发者快速识别私有属性。我在这里使用它的原因是，如果我调用：
 
-`set name(newName){ this.name = newName; }`
+`set name(newName) { this.name = newName; }`
 
 这会导致无限循环，因为 `this.name =` 会反复调用 setter。通过在它前面加下划线，我实现了与将 setter 重命名为其他名称相同的结果，例如：
 
-`set rename(newName){ this.name = newName; }`
+`set rename(newName) { this.name = newName; }`
 
 如你所见，我们有两个属性：`name` 和 `age`，并且每个属性我们都必须创建一个 getter 和一个 setter。
 
@@ -2903,8 +3955,32 @@ const dog =  { _name:  'pup', _age:  7, get name() { console.log(this._name) }, 
 
 使用 `Proxy`，我们可以通过编写以下代码来简化代码：
 
-```
-const dog =  { name:  'pup', age:  7 } const handler =  { get: (target, property) =>  { property in target ?  console.log(target[property]) : console.log('property not found'); }, set: (target, property, value) =>  { target[property] = value; console.log(target[property]) } } const dogProxy =  new  Proxy(dog, handler); dogProxy.name; // pup dogProxy.age; // 7 dogProxy.name  =  'Max'; // Max dogProxy.age  =  8; // 8 dogProxy.breed; // property not found
+```javascript
+const dog = {
+  name: "pup",
+  age: 7
+};
+
+const handler = {
+  get: (target, property) => {
+    property in target
+      ? console.log(target[property])
+      : console.log("property not found");
+  },
+
+  set: (target, property, value) => {
+    target[property] = value;
+    console.log(target[property]);
+  }
+};
+
+const dogProxy = new Proxy(dog, handler);
+
+dogProxy.name; // pup
+dogProxy.age; // 7
+dogProxy.name = "Max"; // Max
+dogProxy.age = 8; // 8
+dogProxy.breed; // property not found
 ```
 
 首先，我们创建了 `dog` 对象，但这次我们没有在其中设置任何 getter 和 setter。
@@ -2917,9 +3993,8 @@ setter 接受三个参数：`target` 对象、`property` 名称和 `value`，这
 
 如你所见，通过使用 `Proxy`，我们实现了两件事：
 
-1.  更短、更清晰的代码
-
-1.  如果我们尝试访问不存在的属性，我们会记录一条自定义消息。
+1. 更短、更清晰的代码
+2. 如果我们尝试访问不存在的属性，我们会记录一条自定义消息。
 
 ## 第 15 章测验结束
 
@@ -2957,25 +4032,42 @@ setter 接受三个参数：`target` 对象、`property` 名称和 `value`，这
 
 `Set` 是一个对象，我们可以在其中存储任何类型的唯一值。
 
-```
-// create our set const family =  new  Set(); // add values to it family.add("Dad"); console.log(family); // Set [ "Dad" ] family.add("Mom"); console.log(family); // Set [ "Dad", "Mom" ] family.add("Son"); console.log(family); // Set [ "Dad", "Mom", "Son" ] family.add("Dad"); console.log(family); // Set [ "Dad", "Mom", "Son" ]
+```javascript
+// create our set
+const family = new Set();
+
+// add values to it
+family.add("Dad");
+console.log(family); // Set [ "Dad" ]
+
+family.add("Mom");
+console.log(family); // Set [ "Dad", "Mom" ]
+
+family.add("Son");
+console.log(family); // Set [ "Dad", "Mom", "Son" ]
+
+family.add("Dad");
+console.log(family); // Set [ "Dad", "Mom", "Son" ]
 ```
 
-如你所见，最后我们尝试再次添加 "Dad"，但 `Set` 仍然保持不变，因为 `Set` 只能包含唯一值。
+如你所见，最后我们尝试再次添加 `"Dad"`，但 `Set` 仍然保持不变，因为 `Set` 只能包含唯一值。
 
 让我们继续使用同一个 `Set`，看看我们可以对它使用哪些方法。
 
+`family.size`; // 3
 
+`family.keys()`; // SetIterator {"Dad", "Mom", "Son"}
 
+`family.entries()`; // SetIterator {"Dad", "Mom", "Son"}
 
+`family.values()`; // SetIterator {"Dad", "Mom", "Son"}
 
-`family.size`; // 3  
-`family.keys()`; // SetIterator {"Dad", "Mom", "Son"}  
-`family.entries()`; // SetIterator {"Dad", "Mom", "Son"}  
-`family.values()`; // SetIterator {"Dad", "Mom", "Son"}  
-`family.delete("Dad")`;  
-`family`; // Set [ "Mom", "Son" ]  
-`family.clear()`;  
+`family.delete("Dad")`;
+
+`family`; // Set [ "Mom", "Son" ]
+
+`family.clear()`;
+
 `family`; // Set []
 
 如你所见，`Set` 有一个 `size` 属性，我们可以从中删除一个元素，或者使用 `clear` 删除所有元素。
@@ -2986,16 +4078,18 @@ setter 接受三个参数：`target` 对象、`property` 名称和 `value`，这
 
 有两种遍历 `Set` 的方式：使用 `.next()` 或使用 `for of` 循环。
 
-```
+```javascript
 // 使用 `.next()`
 const iterator = family.values();
+
 iterator.next(); // Object { value: "Dad", done: false }
 iterator.next(); // Object { value: "Mom", done: false }
 
 // 使用 `for of` 循环
-for(const person of family) {
+for (const person of family) {
   console.log(person);
 }
+
 // Dad
 // Mom
 // Son
@@ -3007,9 +4101,10 @@ for(const person of family) {
 
 我们可以利用 `Set` 只能包含唯一值的特性，从 `Array` 中移除重复项。
 
-```
+```javascript
 const myArray = ["dad", "mom", "son", "dad", "mom", "daughter"];
 const set = new Set(myArray);
+
 console.log(set); // Set [ "dad", "mom", "son", "daughter" ]
 
 // 将 `Set` 转换为数组
@@ -3027,13 +4122,16 @@ const uniqueArray = Array.from(new Set(myArray));
 
 `WeakSet` 类似于 `Set`，但它只能包含对象。
 
-```
-let dad = {name: "Daddy", age: 50};
-let mom = {name: "Mummy", age: 45};
-const family = new WeakSet([dad,mom]);
-for(const person of family){
+```javascript
+let dad = { name: "Daddy", age: 50 };
+let mom = { name: "Mummy", age: 45 };
+
+const family = new WeakSet([dad, mom]);
+
+for (const person of family) {
   console.log(person);
 }
+
 // TypeError: family is not iterable
 ```
 
@@ -3041,13 +4139,18 @@ for(const person of family){
 
 当我们从 `WeakSet` 中删除一个元素后，它会自动清理自身。
 
-```
-let dad = {name: "Daddy", age: 50};
-let mom = {name: "Mummy", age: 45};
-const family = new WeakSet([dad,mom]);
+```javascript
+let dad = { name: "Daddy", age: 50 };
+let mom = { name: "Mummy", age: 45 };
+
+const family = new WeakSet([dad, mom]);
+
 dad = null;
+
 console.log(family); // WeakSet [ {…}, {…} ]
+
 // 等待几秒
+
 console.log(family); // WeakSet [ {…} ]
 ```
 
@@ -3057,20 +4160,27 @@ console.log(family); // WeakSet [ {…} ]
 
 `Map` 类似于 `Set`，但它包含键/值对。
 
-```
+```javascript
 const family = new Map();
+
 family.set("Dad", 40);
 family.set("Mom", 50);
 family.set("Son", 20);
+
 family; // Map { Dad → 40, Mom → 50, Son → 20 }
+
 family.size; // 3
-family.forEach((val,key) => console.log(key,val));
+
+family.forEach((val, key) => console.log(key, val));
+
 // Dad 40
 // Mom 50
 // Son 20
-for(const [key,val] of family){
-  console.log(key,val);
+
+for (const [key, val] of family) {
+  console.log(key, val);
 }
+
 // Dad 40
 // Mom 50
 // Son 20
@@ -3084,15 +4194,19 @@ for(const [key,val] of family){
 
 `WeakMap` 不可枚举，因此我们不能遍历它。
 
-```
+```javascript
 let dad = { name: "Daddy" };
 let mom = { name: "Mommy" };
+
 const myMap = new Map();
 const myWeakMap = new WeakMap();
+
 myMap.set(dad);
 myWeakMap.set(mom);
+
 dad = null;
 mom = null;
+
 console.log(myMap); // Map(1) {{…}}
 console.log(myWeakMap); // WeakMap {}
 ```
@@ -3125,6 +4239,8 @@ console.log(myWeakMap); // WeakMap {}
 
 ![bullet](img/bullet_nb_square-blk.png) `Map` 只存储键
 
+
+
 ![bullet](img/bullet_nb_square-blk.png) `Set` 存储键和值，`Map` 只存储值
 
 ![bullet](img/bullet_nb_square-blk.png) `Map` 存储键和值，`Set` 只存储值
@@ -3142,7 +4258,7 @@ ES2016 只引入了两个新特性：
 
 如果我们的数组包含某个元素，`includes()` 方法将返回 `true`，否则返回 `false`。
 
-```
+```javascript
 let array = [1,2,4,5];
 array.includes(2); // true
 array.includes(3); // false
@@ -3154,7 +4270,7 @@ array.includes(3); // false
 
 第一个参数是要搜索的元素，第二个参数是起始索引：
 
-```
+```javascript
 let array = [1,3,5,7,9,11];
 array.includes(3,1); // 从数组索引 1 开始查找数字 3
 // true
@@ -3174,21 +4290,21 @@ array.includes(11,-3); // true
 
 在 ES2016 之前，我们会这样做：
 
-```
+```javascript
 Math.pow(2,2); // 4
 Math.pow(2,3); // 8
 ```
 
 现在有了新的指数运算符，我们可以这样做：
 
-```
+```javascript
 2**2; // 4
 2**3; // 8
 ```
 
 当组合多个运算时，它会变得非常有用，例如：
 
-```
+```javascript
 2**2**2; // 16
 Math.pow(Math.pow(2,2),2); // 16
 ```
@@ -3209,7 +4325,7 @@ Math.pow(Math.pow(2,2),2); // 16
 
 ### 17.2 以下代码的正确输出是什么？
 
-```
+```javascript
 let array = [1,3,5,7,9,11];
 array.includes(5,4);
 ```
@@ -3226,7 +4342,7 @@ array.includes(5,4);
 
 重构以下代码，使用新的指数运算符。
 
-```
+```javascript
 Math.pow(Math.pow(2,2),2); // 16
 ```
 
@@ -3236,12 +4352,11 @@ ES2017 引入了许多很酷的新特性，我们将在本章中介绍。
 
 ## 字符串填充（`.padStart()` 和 `.padEnd()`）
 
-
-
-
 现在我们可以为字符串添加一些填充，可以在末尾（`.padEnd()`）或开头（`.padStart()`）进行填充。
 
-`"hello".padStart(6);` // " hello" `"hello".padEnd(6);` // "hello "
+`"hello".padStart(6);` // " hello"
+
+`"hello".padEnd(6);` // "hello "
 
 我们指定了填充长度为 6，那么为什么两种情况下都只得到了一个空格呢？
 
@@ -3249,13 +4364,15 @@ ES2017 引入了许多很酷的新特性，我们将在本章中介绍。
 
 再看这个例子：
 
-`"hi".padStart(10);` // 10 - 2 = 8 个空白位置 // " hi" `"welcome".padStart(10);` // 10 - 6 = 4 个空白位置 // " welcome"
+`"hi".padStart(10);` // 10 - 2 = 8 个空白位置 // "        hi"
 
-### 使用 padStart 右对齐
+`"welcome".padStart(10);` // 10 - 6 = 4 个空白位置 // "   welcome"
+
+### 使用 `padStart` 右对齐
 
 如果我们想右对齐某些内容，可以使用 `padStart`。
 
-```
+```javascript
 const strings = ["short",  "medium length",  "very long string"];
 const longestString =  strings.sort(str =>  str.length).map(str =>  str.length)[0];
 strings.forEach(str =>  console.log(str.padStart(longestString)));
@@ -3270,13 +4387,17 @@ strings.forEach(str =>  console.log(str.padStart(longestString)));
 
 我们不仅限于添加空格作为填充，还可以传入字符串和数字。
 
-`"hello".padEnd(13," Alberto");` // "hello Alberto" `"1".padStart(3,0);` // "001" `"99".padStart(3,0);` // "099"
+`"hello".padEnd(13," Alberto");` // "hello Alberto"
+
+`"1".padStart(3,0);` // "001"
+
+`"99".padStart(3,0);` // "099"
 
 ## Object.entries() 和 Object.values()
 
 首先创建一个对象。
 
-```
+```javascript
 const family =  {
   father:  "Jonathan Kent",
   mother:  "Martha Kent",
@@ -3286,7 +4407,7 @@ const family =  {
 
 在旧版本的 JavaScript 中，我们这样访问对象内部的值：
 
-```
+```javascript
 Object.keys(family); // ["father", "mother", "son"]
 family.father; "Jonathan Kent"
 ```
@@ -3295,7 +4416,7 @@ family.father; "Jonathan Kent"
 
 现在我们有了另外两种访问对象的方式：
 
-```
+```javascript
 Object.values(family); // ["Jonathan Kent", "Martha Kent", "Clark Kent"]
 Object.entries(family); // ["father", "Jonathan Kent"]
 // ["mother", "Martha Kent"]
@@ -3308,9 +4429,9 @@ Object.entries(family); // ["father", "Jonathan Kent"]
 
 这个方法会返回一个对象的所有自身属性描述符。
 
-它可以返回的属性包括 value、writable、get、set、configurable 和 enumerable。
+它可以返回的属性包括 `value`、`writable`、`get`、`set`、`configurable` 和 `enumerable`。
 
-```
+```javascript
 const myObj =  {
   name:  "Alberto",
   age:  25,
@@ -3326,7 +4447,7 @@ Object.getOwnPropertyDescriptors(myObj);
 
 这只是语法上的一个小改动。现在，在编写对象时，我们可以在每个参数后面加上一个尾逗号，无论它是不是最后一个参数。
 
-```
+```javascript
 // 从这样
 const object =  {
   prop1:  "prop",
@@ -3343,7 +4464,7 @@ const object =  {
 
 如果你不写它，也不会抛出任何错误，但遵循这个习惯可以让你的同事或团队成员的工作更轻松。
 
-```
+```javascript
 // 我这样写
 const object =  {
   prop1:  "prop",
@@ -3368,11 +4489,9 @@ const object =  {
 
 它的方法示例包括：
 
-1.  `add` / `sub`
-
-1.  `and` / `or` / `xor`
-
-1.  `load` / `store`
+1. `add` / `sub`
+2. `and` / `or` / `xor`
+3. `load` / `store`
 
 `Atomics` 与 `SharedArrayBuffer`（通用固定长度二进制数据缓冲区）对象一起使用，这些对象表示通用的、固定长度的原始二进制数据缓冲区。
 
@@ -3382,7 +4501,7 @@ const object =  {
 
 `Atomics.add()` 接受三个参数：一个数组、一个索引和一个值，并返回执行加法之前该索引处的旧值。
 
-```
+```javascript
 // 创建一个 `SharedArrayBuffer`
 const buffer =  new  SharedArrayBuffer(16);
 const uint8 =  new  Uint8Array(buffer);
@@ -3400,7 +4519,7 @@ console.log(Atomics.load(uint8,0)); // 15
 
 `Atomics.sub()` 的工作方式与 `Atomics.add()` 相同，但它会减去一个值。
 
-```
+```javascript
 // 创建一个 `SharedArrayBuffer`
 const buffer =  new  SharedArrayBuffer(16);
 const uint8 =  new  Uint8Array(buffer);
@@ -3429,19 +4548,19 @@ console.log(Atomics.load(uint8,0)); // 3
 
 `"hello".padStart(6);`
 
-![bullet](img/bullet_nb_square-blk.png)`" hello"`
+![bullet](img/bullet_nb_square-blk.png) `" hello"`
 
-![bullet](img/bullet_nb_square-blk.png)`"hello "`
+![bullet](img/bullet_nb_square-blk.png) `"hello "`
 
-![bullet](img/bullet_nb_square-blk.png)`" hello"`
+![bullet](img/bullet_nb_square-blk.png) `" hello"`
 
-![bullet](img/bullet_nb_square-blk.png)`"hello"`
+![bullet](img/bullet_nb_square-blk.png) `"hello"`
 
 ### 18.2 编写代码完成以下任务：
 
 使用 `padStart` 将以下三个字符串右对齐。
 
-```
+```javascript
 const strings = ["short",  "medium length",  "very long string"];
 // 期望输出
 // short
@@ -3451,32 +4570,32 @@ const strings = ["short",  "medium length",  "very long string"];
 
 ### 18.3 以下哪个不是在 ES2016 中新增的？
 
-![bullet](img/bullet_nb_square-blk.png)`Object.entries()`
+![bullet](img/bullet_nb_square-blk.png) `Object.entries()`
 
-![bullet](img/bullet_nb_square-blk.png)`Object.keys()`
+![bullet](img/bullet_nb_square-blk.png) `Object.keys()`
 
-![bullet](img/bullet_nb_square-blk.png)`Object.values()`
+![bullet](img/bullet_nb_square-blk.png) `Object.values()`
 
 ### 18.4 以下代码的正确输出是什么：
 
-```
+```javascript
 const buffer =  new  SharedArrayBuffer(16);
 const uint8 =  new  Uint8Array(buffer);
 uint8[0] =  10;
 console.log(Atomics.add(uint8,  0,  5));
 ```
 
-![bullet](img/bullet_nb_square-blk.png)0
+![bullet](img/bullet_nb_square-blk.png) `0`
 
-![bullet](img/bullet_nb_square-blk.png)10
+![bullet](img/bullet_nb_square-blk.png) `10`
 
-![bullet](img/bullet_nb_square-blk.png)15
+![bullet](img/bullet_nb_square-blk.png) `15`
 
-![bullet](img/bullet_nb_square-blk.png)5
+![bullet](img/bullet_nb_square-blk.png) `5`
 
 ### 18.5 以下代码的正确输出是什么：
 
-```
+```javascript
 const buffer =  new  SharedArrayBuffer(16);
 const uint8 =  new  Uint8Array(buffer);
 uint8[0] =  10;
@@ -3484,17 +4603,13 @@ Atomics.sub(uint8,  0,  6);
 console.log(Atomics.load(uint8,0));
 ```
 
+![bullet](img/bullet_nb_square-blk.png) `0`
 
+![bullet](img/bullet_nb_square-blk.png) `10`
 
+![bullet](img/bullet_nb_square-blk.png) `6`
 
-
-![bullet](img/bullet_nb_square-blk.png)0
-
-![bullet](img/bullet_nb_square-blk.png)10
-
-![bullet](img/bullet_nb_square-blk.png)6
-
-![bullet](img/bullet_nb_square-blk.png)4
+![bullet](img/bullet_nb_square-blk.png) `4`
 
 # 第 19 章：ES2017 异步与等待
 
@@ -3504,18 +4619,20 @@ ES2017 引入了一种处理 Promise 的新方式，称为“async/await”。
 
 在深入探讨这个新语法之前，我们先快速回顾一下通常如何编写 Promise：
 
+
+
 ```javascript
 // 从 GitHub 获取用户
-fetch('api.github.com/user/AlbertoMontalesi').then( res =>  {
+fetch('api.github.com/user/AlbertoMontalesi').then(res => {
   // 以 JSON 格式返回数据
-  return  res.json();
-}).then(res =>  {
+  return res.json();
+}).then(res => {
   // 如果一切顺利，打印数据
   console.log(res);
-}).catch( err =>  {
+}).catch(err => {
   // 或者打印错误
   console.log(err);
-})
+});
 ```
 
 这是一个非常简单的 Promise，用于从 GitHub 获取用户并打印到控制台。
@@ -3523,33 +4640,33 @@ fetch('api.github.com/user/AlbertoMontalesi').then( res =>  {
 让我们看另一个例子：
 
 ```javascript
-function  walk(amount) {
-  return  new  Promise((resolve,reject) =>  {
-    if (amount <  500) {
-      reject ("the value is too small");
+function walk(amount) {
+  return new Promise((resolve, reject) => {
+    if (amount < 500) {
+      reject("the value is too small");
     }
-    setTimeout(() =>  resolve(`you walked for ${amount}ms`),amount);
+    setTimeout(() => resolve(`you walked for ${amount}ms`), amount);
   });
 }
 
-walk(1000).then(res =>  {
+walk(1000).then(res => {
   console.log(res);
-  return  walk(500);
-}).then(res =>  {
+  return walk(500);
+}).then(res => {
   console.log(res);
-  return  walk(700);
-}).then(res =>  {
+  return walk(700);
+}).then(res => {
   console.log(res);
-  return  walk(800);
-}).then(res =>  {
+  return walk(800);
+}).then(res => {
   console.log(res);
-  return  walk(100);
-}).then(res =>  {
+  return walk(100);
+}).then(res => {
   console.log(res);
-  return  walk(400);
-}).then(res =>  {
+  return walk(400);
+}).then(res => {
   console.log(res);
-  return  walk(600);
+  return walk(600);
 });
 // you walked for 1000ms
 // you walked for 500ms
@@ -3563,27 +4680,27 @@ walk(1000).then(res =>  {
 ## Async 和 Await
 
 ```javascript
-function  walk(amount) {
-  return  new  Promise((resolve,reject) =>  {
-    if (amount <  500) {
-      reject ("the value is too small");
+function walk(amount) {
+  return new Promise((resolve, reject) => {
+    if (amount < 500) {
+      reject("the value is too small");
     }
-    setTimeout(() =>  resolve(`you walked for ${amount}ms`),amount);
+    setTimeout(() => resolve(`you walked for ${amount}ms`), amount);
   });
 }
 
 // 创建一个 async 函数
-async  function  go() {
+async function go() {
   // 使用关键字 `await` 等待响应
-  const res =  await  walk(500);
+  const res = await walk(500);
   console.log(res);
-  const res2 =  await  walk(900);
+  const res2 = await walk(900);
   console.log(res2);
-  const res3 =  await  walk(600);
+  const res3 = await walk(600);
   console.log(res3);
-  const res4 =  await  walk(700);
+  const res4 = await walk(700);
   console.log(res4);
-  const res5 =  await  walk(400);
+  const res5 = await walk(400);
   console.log(res5);
   console.log("finished");
 }
@@ -3598,26 +4715,26 @@ go();
 
 让我们分解一下我们刚刚做了什么：
 
-1.  要创建一个 async 函数，我们需要在它前面加上 `async` 关键字
-2.  该关键字会告诉 JavaScript 始终返回一个 Promise
-3.  如果我们指定返回 `<non-promise>`，它会返回一个包裹在 Promise 中的值
-4.  `await` 关键字只能在 async 函数内部工作
-5.  顾名思义，`await` 会告诉 JavaScript 等待 Promise 返回其结果
+1. 要创建一个 async 函数，我们需要在它前面加上 `async` 关键字。
+2. 该关键字会告诉 JavaScript 始终返回一个 Promise。
+3. 如果我们指定返回 `<non-promise>`，它会返回一个包裹在 Promise 中的值。
+4. `await` 关键字只能在 async 函数内部工作。
+5. 顾名思义，`await` 会告诉 JavaScript 等待 Promise 返回其结果。
 
-让我们看看如果尝试在 async 函数外部使用 `await` 会发生什么
+让我们看看如果尝试在 async 函数外部使用 `await` 会发生什么：
 
 ```javascript
 // 在普通函数中使用 await
-function  func() {
-  let promise =  Promise.resolve(1);
-  let result =  await promise;
+function func() {
+  let promise = Promise.resolve(1);
+  let result = await promise;
 }
 func();
 // SyntaxError: await is only valid in async functions and async generators
 
 // 在顶层代码中使用 await
-let response =  Promise.resolve("hi");
-let result =  await response;
+let response = Promise.resolve("hi");
+let result = await response;
 // SyntaxError: await is only valid in async functions and async generators
 ```
 
@@ -3630,10 +4747,10 @@ let result =  await response;
 在这里，它并没有太大区别：
 
 ```javascript
-async  function  asyncFunc() {
-  try  {
-    let response =  await  fetch('http:your-url');
-  }  catch(err) {
+async function asyncFunc() {
+  try {
+    let response = await fetch('http:your-url');
+  } catch (err) {
     console.log(err);
   }
 }
@@ -3644,8 +4761,8 @@ asyncFunc();
 我们使用 `try...catch` 来捕获错误，但在没有它们的情况下，我们仍然可以像这样捕获错误：
 
 ```javascript
-async  function  asyncFunc(){
-  let response =  await  fetch('http:your-url');
+async function asyncFunc() {
+  let response = await fetch('http:your-url');
 }
 asyncFunc();
 // Uncaught (in promise) TypeError: Failed to fetch
@@ -3658,9 +4775,9 @@ asyncFunc().catch(console.log);
 ### 19.1 以下代码的正确输出是什么？
 
 ```javascript
-function  func() {
-  let promise =  Promise.resolve(1);
-  let result =  await promise;
+function func() {
+  let promise = Promise.resolve(1);
+  let result = await promise;
 }
 func();
 ```
@@ -3676,27 +4793,29 @@ func();
 ### 19.2 以下代码的最后输出是什么：
 
 ```javascript
-function  walk(amount) {
-  return  new  Promise((resolve,reject) =>  {
-    if (amount >  500) {
-      reject ("the value is too big");
+function walk(amount) {
+  return new Promise((resolve, reject) => {
+    if (amount > 500) {
+      reject("the value is too big");
     }
-    setTimeout(() =>  resolve(`you walked for ${amount}ms`),amount);
+    setTimeout(() => resolve(`you walked for ${amount}ms`), amount);
   });
 }
-async  function  go() {
-  const res =  await  walk(500);
+
+async function go() {
+  const res = await walk(500);
   console.log(res);
-  const res2 =  await  walk(300);
+  const res2 = await walk(300);
   console.log(res2);
-  const res3 =  await  walk(200);
+  const res3 = await walk(200);
   console.log(res3);
-  const res4 =  await  walk(700);
+  const res4 = await walk(700);
   console.log(res4);
-  const res5 =  await  walk(400);
+  const res5 = await walk(400);
   console.log(res5);
   console.log("finished");
 }
+
 go();
 ```
 
@@ -3717,9 +4836,9 @@ go();
 还记得 ES6（ES2015）允许我们这样做吗？
 
 ```javascript
-const veggie = ["tomato","cucumber","beans"];
-const meat = ["pork","beef","chicken"];
-const menu = [...veggie,  "pasta", ...meat];
+const veggie = ["tomato", "cucumber", "beans"];
+const meat = ["pork", "beef", "chicken"];
+const menu = [...veggie, "pasta", ...meat];
 console.log(menu);
 // Array [ "tomato", "cucumber", "beans", "pasta", "pork", "beef", "chicken" ]
 ```
@@ -3727,25 +4846,26 @@ console.log(menu);
 现在，我们也可以对对象使用 rest/spread 语法，让我们看看如何操作：
 
 ```javascript
-let myObj =  {
-  a:1,
-  b:3,
-  c:5,
-  d:8,
-}
+let myObj = {
+  a: 1,
+  b: 3,
+  c: 5,
+  d: 8,
+};
+
 // 我们使用 rest 运算符来获取对象中剩余的所有内容。
-let  { a, b, ...z  }  = myObj;
-console.log(a);  // 1
-console.log(b);  // 3
-console.log(z);  // {c: 5, d: 8}
+let { a, b, ...z } = myObj;
+console.log(a); // 1
+console.log(b); // 3
+console.log(z); // {c: 5, d: 8}
 
 // 使用 spread 语法，我们克隆了对象
-let clone =  { ...myObj  };
+let clone = { ...myObj };
 console.log(clone); // {a: 1, b: 3, c: 5, d: 8}
 
-myObj.e  =  15;
-console.log(clone) // {a: 1, b: 3, c: 5, d: 8}
-console.log(myObj) // {a: 1, b: 3, c: 5, d: 8, e: 15}
+myObj.e = 15;
+console.log(clone); // {a: 1, b: 3, c: 5, d: 8}
+console.log(myObj); // {a: 1, b: 3, c: 5, d: 8, e: 15}
 ```
 
 使用 spread 运算符，我们可以轻松创建对象的克隆，这样当我们修改原始对象时，克隆不会受到影响，这与我们在讨论数组时看到的情况类似。
@@ -3761,12 +4881,14 @@ console.log(myObj) // {a: 1, b: 3, c: 5, d: 8, e: 15}
 为此，我们将使用 `for-await-of` 循环，它会将我们的可迭代对象转换为 Promise，除非它们已经是 Promise。
 
 ```javascript
-const iterables = [1,2,3];
-async  function  test() {
-  for  await (const value of iterables) {
+const iterables = [1, 2, 3];
+
+async function test() {
+  for await (const value of iterables) {
     console.log(value);
   }
 }
+
 test();
 // 1
 // 2
@@ -3782,65 +4904,62 @@ test();
 在 Promise 完成后，我们可以调用一个回调函数。
 
 ```javascript
-const myPromise =  new  Promise((resolve,reject) =>  {
+const myPromise = new Promise((resolve, reject) => {
   resolve();
-})
+});
 
 myPromise
-.then( () =>  {
-  console.log('still working');
-})
-.catch( () =>  {
-  console.log('there was an error');
-})
-.finally(()=>  {
-  console.log('Done!');
-})
+  .then(() => {
+    console.log('still working');
+  })
+  .catch(() => {
+    console.log('there was an error');
+  })
+  .finally(() => {
+    console.log('Done!');
+  });
 ```
 
 `.finally()` 也会返回一个 Promise，因此我们可以在它后面链式调用更多的 `then` 和 `catch`，但这些 Promise 将基于它们所链式调用的 Promise 来履行。
 
 ```javascript
-const myPromise =  new  Promise((resolve,reject) =>  {
+const myPromise = new Promise((resolve, reject) => {
   resolve();
-})
+});
 
 myPromise
-.then( () =>  {
-  console.log('still working');
-  return  'still working';
-})
-.finally(()=>  {
-  console.log('Done!');
-  return  'Done!';
-})
-.then( res =>  {
-  console.log(res);
-})
+  .then(() => {
+    console.log('still working');
+    return 'still working';
+  })
+  .finally(() => {
+    console.log('Done!');
+    return 'Done!';
+  })
+  .then(res => {
+    console.log(res);
+  });
 // still working
 // Done!
 // still working
 ```
 
-
-
-
-正如你所见，`finally` 之后链式调用的 `then` 返回的值是由第一个 `then` 创建的 `Promise` 返回的，而不是由 `finally` 创建的。
+正如你所见，`finally` 之后链式调用的 `then` 返回的值是由第一个 `then` 创建的 Promise 返回的，而不是由 `finally` 创建的。
 
 ## RegExp 特性
 
 四个与正则表达式相关的新特性被纳入新版本的 ECMAScript。它们是：
 
-1.  [正则表达式的 s（dotAll）标志](https://github.com/tc39/proposal-regexp-dotall-flag)
-2.  [正则表达式命名捕获组](https://github.com/tc39/proposal-regexp-named-groups)
-3.  [正则表达式后行断言](https://github.com/tc39/proposal-regexp-lookbehind)
-4.  [正则表达式 Unicode 属性转义](https://github.com/tc39/proposal-regexp-lookbehind)
+1. [正则表达式的 s（dotAll）标志](https://github.com/tc39/proposal-regexp-dotall-flag)
+2. [正则表达式命名捕获组](https://github.com/tc39/proposal-regexp-named-groups)
+3. [正则表达式后行断言](https://github.com/tc39/proposal-regexp-lookbehind)
+4. [正则表达式 Unicode 属性转义](https://github.com/tc39/proposal-regexp-lookbehind)
 
 ### 正则表达式的 s（dotAll）标志
 
 这为 ECMAScript 正则表达式引入了一个新的 `s` 标志，使得 `.` 能够匹配任何字符，包括行终止符。
 
-```
+```javascript
 /foo.bar/s.test('foo\nbar'); // true
 ```
 
@@ -3850,9 +4969,9 @@ myPromise
 
 编号捕获组允许引用正则表达式匹配的字符串的特定部分。每个捕获组被分配一个唯一的编号，并可以通过该编号引用，但这可能使正则表达式难以理解和重构。例如，给定匹配日期的 `/(\d{4})-(\d{2})-(\d{2})/`，如果不检查周围代码，就无法确定哪个组对应月份，哪个组对应日期。此外，如果想要交换月份和日期的顺序，组引用也需要更新。捕获组可以使用 `(?<name>...)` 语法为任何标识符名称命名。那么日期的正则表达式可以写成 `/(?<year>\d{4})-(?<month>\d{2})-(?<day>\d{2})/u`。每个名称必须唯一，并遵循 ECMAScript IdentifierName 的语法。命名组可以通过正则表达式结果的 `groups` 属性的属性来访问。同时也会创建对组的编号引用，就像非命名组一样。例如：
 
-```
-let re =  /(?<year>\d{4})-(?<month>\d{2})-(?<day>\d{2})/u;
-let result =  re.exec('2015-01-02');
+```javascript
+let re = /(?<year>\d{4})-(?<month>\d{2})-(?<day>\d{2})/u;
+let result = re.exec('2015-01-02');
 // result.groups.year === '2015';
 // result.groups.month === '01';
 // result.groups.day === '02';
@@ -3860,15 +4979,20 @@ let result =  re.exec('2015-01-02');
 // result[1] === '2015';
 // result[2] === '01';
 // result[3] === '02';
-let  {groups:  {one, two}}  =  /^(?<one>.*):(?<two>.*)$/u.exec('foo:bar');
-console.log(`one: ${one}, two: ${two}`);  // one: foo, two: bar
+
+let { groups: { one, two } } =
+  /^(?<one>.*):(?<two>.*)$/u.exec('foo:bar');
+
+console.log(`one: ${one}, two: ${two}`); // one: foo, two: bar
 ```
 
 ### 正则表达式后行断言
 
 [来自文档：](https://github.com/tc39/proposal-regexp-lookbehind)
 
-使用后行断言，可以确保某个模式前面有（或没有）另一个模式，例如匹配美元金额而不捕获美元符号。正向后行断言表示为 `(?<=...)`，它确保包含的模式位于断言后面的模式之前。例如，如果想要匹配美元金额而不捕获美元符号，可以使用 `/(?<=\$)\d+(\.\d*)?/`，匹配 `'$10.53'` 并返回 `'10.53'`。但这不会匹配 `€10.53`。负向后行断言表示为 `(?<!...)`，它确保包含的模式不在断言后面的模式之前。例如，`/(?<!\$)\d+(?:\.\d*)/` 不会匹配 `'$10.53'`，但会匹配 `'€10.53'`。
+
+
+使用后行断言，可以确保某个模式前面有（或没有）另一个模式，例如匹配美元金额而不捕获美元符号。正向后行断言表示为 `(?<=...)`，它确保包含的模式位于断言后面的模式之前。例如，如果想要匹配美元金额而不捕获美元符号，可以使用`/(?<=\$)\d+(\.\d*)?/`，匹配`'$10.53'`并返回`'10.53'`。但这不会匹配`€10.53`。负向后行断言表示为 `(?<!...)`，它确保包含的模式不在断言后面的模式之前。例如，`/(?<!\$)\d+(?:\.\d*)/`不会匹配`'$10.53'`，但会匹配`'€10.53'`。
 
 ### 正则表达式 Unicode 属性转义
 
@@ -3876,8 +5000,8 @@ console.log(`one: ${one}, two: ${two}`);  // one: foo, two: bar
 
 这引入了形式为 `\p{…}` 和 `\P{…}` 的 Unicode 属性转义。Unicode 属性转义是一种新的转义序列类型，可用于设置了 `u` 标志的正则表达式。有了这个特性，我们可以编写：
 
-```
-const regexGreekSymbol =  /\p{Script=Greek}/u;
+```javascript
+const regexGreekSymbol = /\p{Script=Greek}/u;
 regexGreekSymbol.test('π'); // true
 ```
 
@@ -3901,9 +5025,9 @@ regexGreekSymbol.test('π'); // true
 
 ### 20.2 以下代码的正确输出是什么：
 
-```
-let myObj =  { a:1, b:2, c:3, d:4, }
-let  { a, b, ...z  }  = myObj;
+```javascript
+let myObj = { a: 1, b: 2, c: 3, d: 4 };
+let { a, b, ...z } = myObj;
 console.log(z);
 ```
 
@@ -3917,12 +5041,20 @@ console.log(z);
 
 ### 20.3 以下代码的正确输出是什么：
 
-```
-const myPromise =  new  Promise((resolve,reject) =>  { resolve(); })
+```javascript
+const myPromise = new Promise((resolve, reject) => {
+  resolve();
+});
 myPromise
-.then( () =>  { return  '1'; })
-.finally(()=>  { return  '2!'; })
-.then( res =>  { console.log(res); })
+  .then(() => {
+    return '1';
+  })
+  .finally(() => {
+    return '2!';
+  })
+  .then(res => {
+    console.log(res);
+  });
 ```
 
 ![bullet](img/bullet_nb_square-blk.png)`1`
@@ -3939,44 +5071,53 @@ myPromise
 
 `Array.prototype.flat()` 会递归地将数组扁平化到我们指定的深度。如果没有指定深度参数，默认值为 1。我们可以使用 `Infinity` 来扁平化所有嵌套数组。
 
-```
-const letters = ['a',  'b', ['c',  'd', ['e',  'f']]];
+```javascript
+const letters = ['a', 'b', ['c', 'd', ['e', 'f']]];
+
 // 默认深度为 1
 letters.flat(); // ['a', 'b', 'c', 'd', ['e', 'f']]
+
 // 深度为 2
 letters.flat(2); // ['a', 'b', 'c', 'd', 'e', 'f']
+
 // 这相当于执行两次深度为 1 的 flat
 letters.flat().flat(); // ['a', 'b', 'c', 'd', 'e', 'f']
+
 // 递归扁平化直到数组不包含嵌套数组
-letters.flat(Infinity) // ['a', 'b', 'c', 'd', 'e', 'f']
+letters.flat(Infinity); // ['a', 'b', 'c', 'd', 'e', 'f']
 ```
 
-`Array.prototype.flatMap()` 在处理 'depth' 参数方面与前一个相同，但 `flatMap()` 不仅可以扁平化数组，还可以映射数组并将结果返回到新数组中。
+`Array.prototype.flatMap()` 在处理 `depth` 参数方面与前一个相同，但 `flatMap()` 不仅可以扁平化数组，还可以映射数组并将结果返回到新数组中。
 
-```
-let greeting = ["Greetings from",  " ",  "Vietnam"];
+```javascript
+let greeting = ['Greetings from', ' ', 'Vietnam'];
+
 // 首先尝试使用普通的 `map()` 函数
-greeting.map(x =>  x.split(" "));
-// ["Greetings", "from"]
-// ["", ""]
-// ["Vietnam"]
-greeting.flatMap(x =>  x.split(" "))
-// ["Greetings", "from", "", "", "Vietnam"]
+greeting.map(x => x.split(' '));
+// ['Greetings', 'from']
+// ['', '']
+// ['Vietnam']
+
+greeting.flatMap(x => x.split(' '));
+// ['Greetings', 'from', '', '', 'Vietnam']
 ```
 
-如你所见，如果使用 `.map()`，我们会得到一个多层数组，而使用 `.flatMap()` 可以解决这个问题，因为它也会扁平化数组。
+如你所见，如果使用`.map()`，我们会得到一个多层数组，而使用`.flatMap()`可以解决这个问题，因为它也会扁平化数组。
 
 ## `Object.fromEntries()`
 
 `Object.fromEntries()` 将键值对列表转换为对象。
 
-```
-const keyValueArray = [ ['key1',  'value1'], ['key2',  'value2'] ]
-const obj =  Object.fromEntries(keyValueArray)
-// {key1: "value1", key2: "value2"}
+```javascript
+const keyValueArray = [
+  ['key1', 'value1'],
+  ['key2', 'value2']
+];
+const obj = Object.fromEntries(keyValueArray);
+// { key1: 'value1', key2: 'value2' }
 ```
 
-我们可以将任何可迭代对象作为 `Object.fromEntries()` 的参数传递，无论是数组、Map 还是其他实现了可迭代协议的对象。
+我们可以将任何可迭代对象作为`Object.fromEntries()`的参数传递，无论是数组、Map 还是其他实现了可迭代协议的对象。
 
 你可以在此处阅读更多关于可迭代协议的内容：[`developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Iterationprotocols#Theiterable_protocol`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Iteration_protocols%23The_iterable_protocol)
 
@@ -3984,69 +5125,110 @@ const obj =  Object.fromEntries(keyValueArray)
 
 `String.prototype.trimStart()` 移除字符串开头的空白字符，而 `String.prototype.trimEnd()` 移除字符串末尾的空白字符。
 
-```
-let str =  "   this string has a lot of whitespace   ";
+```javascript
+let str = '   this string has a lot of whitespace   ';
 str.length; // 42
-str =  str.trimStart(); // "this string has a lot of whitespace   "
+
+str = str.trimStart(); // 'this string has a lot of whitespace   '
 str.length; // 38
-str =  str.trimEnd(); // "this string has a lot of whitespace"
+
+str = str.trimEnd(); // 'this string has a lot of whitespace'
 str.length; // 35
 ```
 
-我们也可以使用 `.trimLeft()` 作为 `.trimStart()` 的别名，使用 `.trimRight()` 作为 `.trimEnd()` 的别名。
+我们也可以使用`.trimLeft()`作为`.trimStart()`的别名，使用`.trimRight()`作为`.trimEnd()`的别名。
 
-## 可选的 catch 绑定
+## 可选的 `catch` 绑定
 
 在 ES2019 之前，你必须在 `catch` 子句中始终包含一个异常变量。ES2019 允许你省略它。
 
+在`try { ... } catch(error) { ... }`之前：
 
+```javascript
+try {
+  // ...
+} catch (error) {
+  // ...
+}
+```
 
+ES2019：
 
-
-// 在 `try { ... } catch(error) { ... }` 之前 // ES2019 `try { ... } catch { ... }`
+```javascript
+try {
+  // ...
+} catch {
+  // ...
+}
+```
 
 当你想要忽略错误时，这很有用。关于此特性的更多使用场景，我强烈推荐这篇文章：[`2ality.com/2017/08/optional-catch-binding.html`](http://2ality.com/2017/08/optional-catch-binding.html)
 
-## Function.prototype.toString()
+## `Function.prototype.toString()`
 
 `.toString()` 方法返回一个表示函数源代码的字符串。
 
-```
-function sum(a, b) { return a + b; } console.log(sum.toString()); // function sum(a, b) { // return a + b; // }
+```javascript
+function sum(a, b) {
+  return a + b;
+}
+
+console.log(sum.toString());
+// function sum(a, b) {
+//   return a + b;
+// }
 ```
 
 它也会包含注释。
 
-```
-function sum(a, b) { // 执行求和 return a + b; } console.log(sum.toString()); // function sum(a, b) { // // 执行求和 // return a + b; // }
+```javascript
+function sum(a, b) {
+  // 执行求和
+  return a + b;
+}
+
+console.log(sum.toString());
+// function sum(a, b) {
+//   // 执行求和
+//   return a + b;
+// }
 ```
 
-## Symbol.prototype.description
+## `Symbol.prototype.description`
 
 `.description` 返回 Symbol 对象的可选描述。
 
-```
-const me = Symbol("Alberto"); me.description; // "Alberto" me.toString() // "Symbol(Alberto)"
+```javascript
+const me = Symbol('Alberto');
+
+me.description; // 'Alberto'
+me.toString(); // 'Symbol(Alberto)'
 ```
 
 ## 第 21 章小测验
 
 ### 21.1 使用 ES2019 引入的新数组方法，将以下多维数组转换为单维数组，要求一行代码完成
 
-```
-const letters = ['a', 'b', ['c', 'd', ['e', 'f']]]; // 预期结果：['a', 'b', 'c', 'd', 'e', 'f']
+```javascript
+const letters = ['a', 'b', ['c', 'd', ['e', 'f']]];
+// 预期结果：['a', 'b', 'c', 'd', 'e', 'f']
 ```
 
 ### 21.2 从给定的数组出发，使用 ES2019 的新特性创建一个对象
 
-```
-const keyValueArray = [ ['key1', 'value1'], ['key2', 'value2'] ] // 预期结果：{key1: "value1", key2: "value2"}
+```javascript
+const keyValueArray = [
+  ['key1', 'value1'],
+  ['key2', 'value2']
+];
+// 预期结果：{ key1: 'value1', key2: 'value2' }
 ```
 
 ### 21.3 以下代码的正确输出是什么？
 
-```
-const me = Symbol("Alberto"); console.log(me.description);
+```javascript
+const me = Symbol('Alberto');
+console.log(me.description);
 ```
 
 ![bullet](img/bullet_nb_square-blk.png)`Symbol`
@@ -4059,8 +5241,9 @@ const me = Symbol("Alberto"); console.log(me.description);
 
 ### 21.4 以下代码的正确输出是什么？
 
-```
-const letters = ['a', 'b', ['c', 'd', ['e', 'f']]]; console.log(letters.flat())
+```javascript
+const letters = ['a', 'b', ['c', 'd', ['e', 'f']]];
+console.log(letters.flat());
 ```
 
 ![bullet](img/bullet_nb_square-blk.png)`['a', 'b', ['c', 'd', ['e', 'f']]]`
@@ -4073,8 +5256,12 @@ const letters = ['a', 'b', ['c', 'd', ['e', 'f']]]; console.log(letters.flat())
 
 ### 21.5 以下代码的正确输出是什么？
 
-```
-function sum(a, b) { return a + b } console.log(sum.toString());
+```javascript
+function sum(a, b) {
+  return a + b;
+}
+
+console.log(sum.toString());
 ```
 
 ![bullet](img/bullet_nb_square-blk.png)`Function`
@@ -4097,8 +5284,10 @@ function sum(a, b) { return a + b } console.log(sum.toString());
 
 看这个例子：
 
-```
-function getUserByID(userID){ // 执行 API 调用到服务器，通过 id 获取用户 }
+```javascript
+function getUserByID(userID) {
+  // 执行 API 调用到服务器，通过 id 获取用户
+}
 ```
 
 `userID` 是什么？是整数还是字符串？我们可以假设它是整数，但也许它是一个字母数字字符串（例如：`'A123'`）。
@@ -4107,8 +5296,10 @@ function getUserByID(userID){ // 执行 API 调用到服务器，通过 id 获�
 
 这时 TypeScript 就派上用场了。同样的代码在 TypeScript 中是这样的：
 
-```
-function getUserByID(userID:number){ // 执行 API 调用到服务器，通过 id 获取用户 }
+```typescript
+function getUserByID(userID: number) {
+  // 执行 API 调用到服务器，通过 id 获取用户
+}
 ```
 
 完美！现在我们确定，如果向函数传递字符串，将会导致错误。
@@ -4131,26 +5322,34 @@ TypeScript 由微软在几年前创建，是 JavaScript 的一个类型化超集
 
 首先要做的是安装它。在终端中运行以下命令：
 
-```
+```bash
 npm install -g TypeScript
 ```
 
 然后打开你的代码编辑器，创建一个名为 `greeter.ts` 的文件（注意不是 `.js`）。
 
-```
-const greeter = (name:string) => { console.log(`hello ${name}`) } greeter('Alberto'); // hello Alberto
+```typescript
+const greeter = (name: string) => {
+  console.log(`hello ${name}`);
+};
+
+greeter('Alberto'); // hello Alberto
 ```
 
 现在，要生成 JavaScript 文件，我们需要在与文件相同的目录下，在终端中运行以下命令：
 
-```
+```bash
 tsc greeter.ts
 ```
 
 现在你应该有一个 `greeter.js` 文件，其中包含以下代码：
 
-```
-var greeter = function (name) { console.log("hello " + name); }; greeter('Alberto'); // hello Alberto
+```javascript
+var greeter = function (name) {
+  console.log('hello ' + name);
+};
+
+greeter('Alberto'); // hello Alberto
 ```
 
 `name:string` 去哪了？我们知道 JavaScript 不是强类型语言，因此类型声明在代码转译时会被移除。
@@ -4164,22 +5363,22 @@ var greeter = function (name) { console.log("hello " + name); }; greeter('Albert
 TypeScript 支持的基本类型有：
 
 1. `boolean`
-1. `number`
-1. `string`
-1. `Array`
-1. `object`
-1. `Tuple`
-1. `enum`
-1. `any`
-1. `void`
-1. `null` 和 `undefined`
-1. `never`
+2. `number`
+3. `string`
+4. `Array`
+5. `object`
+6. `Tuple`
+7. `enum`
+8. `any`
+9. `void`
+10. `null` 和 `undefined`
+11. `never`
 
 ### boolean
 
 定义一个可以是 `true` 或 `false` 的值：
 
-```
+```typescript
 const active: boolean = true;
 ```
 
@@ -4187,15 +5386,18 @@ const active: boolean = true;
 
 `number` 类型支持十六进制、十进制、二进制和八进制字面量：
 
-```
-const decimal: number = 9; const hex: number = 0xf00d; const binary: number = 0b1010; const octal: number = 0o744;
+```typescript
+const decimal: number = 9;
+const hex: number = 0xf00d;
+const binary: number = 0b1010;
+const octal: number = 0o744;
 ```
 
 ### string
 
 `string` 类型用于存储文本数据：
 
-```
+```typescript
 const message: string = 'Welcome';
 ```
 
@@ -4203,8 +5405,14 @@ const message: string = 'Welcome';
 
 有两种定义数组类型的方式：
 
+
+
 ```
-// 第一种方式 -> type[] const firstArray: number[] = [1,2,3]; // 第二种方式 -> Array<type> const secondArray: Array<number> = [4,5,6];
+ // 第一种方式 -> type[]
+const firstArray: number[] = [1,2,3];
+
+// 第二种方式 -> Array<type>
+const secondArray: Array<number> = [4,5,6];
 ```
 
 在像这样简单的情况下，两者没有区别，但如果处理比数字类型更复杂的内容，则无法使用第一种表示法。
@@ -4212,19 +5420,27 @@ const message: string = 'Welcome';
 看这个例子：
 
 ```
-// 我们的函数接受一个对象数组，每个对象具有 label 和 value 属性 function example(arg: Array<{label:string,value:string}> ){ // 执行某些操作 }
+ // 我们的函数接受一个对象数组，每个对象具有 label 和 value 属性
+function example(arg: Array<{label:string,value:string}> ){
+  // 执行某些操作
+}
 ```
 
 `Array<{label:string,value:string}>` 简单来说就是参数是一个对象数组，这些对象具有 `label` 和 `value` 属性，两者都是 `string` 类型。
 
 ### object
 
-`object` 表示一个不是原始类型的值；
+`object` 表示一个不是原始类型的值。
 
 假设我们的函数接受一个 `object` 类型的参数：
 
 ```
-function greetUser(user: object){ // 属性 name 在类型 object 上不存在 console.log(`hello ${user.name}`) } greetUser({name: 'Alberto', age:27}); // hello Alberto
+function greetUser(user: object){
+  // 属性 name 在类型 object 上不存在
+  console.log(`hello ${user.name}`)
+}
+
+greetUser({name: 'Alberto', age:27}); // hello Alberto
 ```
 
 TypeScript 编译器会报错，说属性 `name` 在类型 `object` 上不存在。
@@ -4232,7 +5448,11 @@ TypeScript 编译器会报错，说属性 `name` 在类型 `object` 上不存在
 让我们更好地定义该对象的属性。
 
 ```
-function greetUser(user: {name:string,age:number}){ console.log(`hello ${user.name}`) } greetUser({name: 'Alberto', age:27}); // hello Alberto
+function greetUser(user: {name:string,age:number}){
+  console.log(`hello ${user.name}`)
+}
+
+greetUser({name: 'Alberto', age:27}); // hello Alberto
 ```
 
 现在我们指定了用户对象的所有属性，这让我们和任何查看代码的人都能更容易地知道他们能对该对象做什么，不能做什么。
@@ -4242,21 +5462,24 @@ function greetUser(user: {name:string,age:number}){ console.log(`hello ${user.na
 元组允许你定义数组中已知元素的类型。
 
 ```
-let myTuple: [string,number,string]; myTuple = ['hi',5,'hello']; console.log(myTuple); // [ 'hi', 5, 'hello' ]
+let myTuple: [string,number,string];
+
+myTuple = ['hi',5,'hello'];
+
+console.log(myTuple); // [ 'hi', 5, 'hello' ]
 ```
 
 TypeScript 会知道我们在元组中定义的已知索引处的元素类型，但无法知道添加到数组中的额外元素的类型。
 
 ### enum
 
-
-
-
 枚举是一种为一组数值赋予名称的方式：
 
 ```
 enum Status {deleted, pending, active}
+
 const blogPostStatus: Status = Status.active;
+
 console.log(blogPostStatus); // 2
 ```
 
@@ -4268,7 +5491,9 @@ console.log(blogPostStatus); // 2
 
 ```
 enum Status {deleted = -1, pending, active}
+
 const blogPostStatus: Status = Status.active;
+
 console.log(blogPostStatus); // 1
 ```
 
@@ -4278,6 +5503,7 @@ console.log(blogPostStatus); // 1
 
 ```
 enum Status {deleted = -1, pending, active}
+
 console.log(Status[0]); // pending
 ```
 
@@ -4293,6 +5519,7 @@ console.log(Status[0]); // pending
 
 ```
 let firstUser: Object<any> = { name: 'Alberto', age: 27 }
+
 let secondUser: Object<any> = { name: 'Caroline' }
 ```
 
@@ -4384,11 +5611,14 @@ interface Car {
 interface Greet {
   (greeting: string, name: string): string
 }
+
 let greetingFunction: Greet;
+
 greetingFunction = (greeting: string, name: string): string => {
   console.log(`${greeting} ${name}`);
   return `${greeting} ${name}`;
 }
+
 greetingFunction('Bye', 'Alberto');
 ```
 
@@ -4405,6 +5635,7 @@ interface Vehicle {
   wheels: number;
   color: string;
 }
+
 interface Airplane extends Vehicle {
   wings: number;
   rotors: number;
@@ -4424,10 +5655,13 @@ class Animal {
   eat = () => { console.log('gnam gnam'); }
   sleep = () => { console.log('zzzz'); }
 }
+
 class Human extends Animal {
   work = () => { console.log('zzzzzzz'); }
 }
+
 const me = new Human();
+
 me.work(); // zzzzzzz
 me.eat(); // gnam gnam
 me.sleep() // zzzz
@@ -4444,7 +5678,9 @@ class Animal {
   public eat = () => { console.log('gnam gnam') }
   public sleep = () => { console.log('zzzz') }
 }
+
 const dog = new Animal();
+
 dog.eat(); // gnam gnam
 ```
 
@@ -4457,10 +5693,13 @@ class Animal {
   public eat = () => { console.log('gnam gnam') }
   public sleep = () => { console.log('zzzz') }
 }
+
 class Human extends Animal {
   private work = () => { console.log('zzzzzzz') }
 }
+
 const me = new Human();
+
 me.work(); // 属性 'work' 是私有的，只能在类 'Human' 内部访问
 ```
 
@@ -4470,6 +5709,7 @@ me.work(); // 属性 'work' 是私有的，只能在类 'Human' 内部访问
 class Human {
   protected work = () => { console.log('zzzzzzz') }
 }
+
 class Adult extends Human {
   public doWork = () => { console.log(this.work) }
 }
@@ -4490,11 +5730,15 @@ interface Person {
   sex: 'male' | 'female' | 'N/A'
   age: number,
 }
+
 interface Worker {
   job: string
 }
+
 type Adult = Person & Worker;
+
 const me: Adult = { sex: 'male', age: 27, job: 'software developer' }
+
 console.log(me); // { sex: 'male', age: 27, job: 'software developer' }
 ```
 
@@ -4522,9 +5766,15 @@ const identifier = string | number | string[];
 
 ```
 interface Kid { age: number }
+
 interface Adult { age: number, job: string }
-function person(): Kid | Adult { return { age: 27 } }
+
+function person(): Kid | Adult {
+  return { age: 27 }
+}
+
 const me = person();
+
 me.age  // ok
 me.job  // error
 ```
@@ -4537,8 +5787,6 @@ me.job  // error
 
 现在剩下要做的就是开始一个简单的项目，并熟悉它。
 
-
-
 起初，你可能觉得给变量标注类型是件麻烦事，但随着项目规模增长、复杂度提升，你会逐渐意识到这样做的好处，尤其是在花了几个月时间做其他事情后再回到这个项目时。
 
 关于 TypeScript 的进一步问题，我建议的最佳资源是官方文档，可通过以下链接访问：<https://www.TypeScriptlang.org/docs/>。
@@ -4547,13 +5795,13 @@ me.job  // error
 
 ### TS-01 以下哪个不是 TypeScript 的基本类型？
 
-![bullet](img/bullet_nb_square-blk.png)`Tuple`
+![bullet](img/bullet_nb_square-blk.png) `Tuple`
 
-![bullet](img/bullet_nb_square-blk.png)`void`
+![bullet](img/bullet_nb_square-blk.png) `void`
 
-![bullet](img/bullet_nb_square-blk.png)`enum`
+![bullet](img/bullet_nb_square-blk.png) `enum`
 
-![bullet](img/bullet_nb_square-blk.png)`every`
+![bullet](img/bullet_nb_square-blk.png) `every`
 
 ### TS-02 以下变量的正确类型是什么？
 
@@ -4561,49 +5809,51 @@ me.job  // error
 const x = 0xf00d;
 ```
 
-![bullet](img/bullet_nb_square-blk.png)`string`
+![bullet](img/bullet_nb_square-blk.png) `string`
 
-![bullet](img/bullet_nb_square-blk.png)`void`
+![bullet](img/bullet_nb_square-blk.png) `void`
 
-![bullet](img/bullet_nb_square-blk.png)`hex`
+![bullet](img/bullet_nb_square-blk.png) `hex`
 
-![bullet](img/bullet_nb_square-blk.png)`number`
+![bullet](img/bullet_nb_square-blk.png) `number`
 
 ### TS-03 以下哪个类型定义是错误的？
 
-![bullet](img/bullet_nb_square-blk.png)`const firstArray: number[] = [1,2,3]`
+![bullet](img/bullet_nb_square-blk.png) `const firstArray: number[] = [1,2,3]`
 
-![bullet](img/bullet_nb_square-blk.png)`const firstArray: Array<number> = [1,2,3]`
+![bullet](img/bullet_nb_square-blk.png) `const firstArray: Array<number> = [1,2,3]`
 
-![bullet](img/bullet_nb_square-blk.png)`const firstArray: number<Array> = [1,2,3]`
+![bullet](img/bullet_nb_square-blk.png) `const firstArray: number<Array> = [1,2,3]`
 
 ### TS-04 以下代码的正确输出是什么？
 
 ```
 enum Rank {first, second, third}
+
 const myRank: Rank = Rank.second;
+
 console.log(myRank);
 ```
 
-![bullet](img/bullet_nb_square-blk.png)`"second"`
+![bullet](img/bullet_nb_square-blk.png) `"second"`
 
-![bullet](img/bullet_nb_square-blk.png)`{second:1}`
+![bullet](img/bullet_nb_square-blk.png) `{second:1}`
 
-![bullet](img/bullet_nb_square-blk.png)`true`
+![bullet](img/bullet_nb_square-blk.png) `true`
 
-![bullet](img/bullet_nb_square-blk.png)`2`
+![bullet](img/bullet_nb_square-blk.png) `2`
 
-![bullet](img/bullet_nb_square-blk.png)`1`
+![bullet](img/bullet_nb_square-blk.png) `1`
 
 ### TS-05 定义接口的正确方式是什么？
 
-![bullet](img/bullet_nb_square-blk.png)`interface Car = { wheels: number }`
+![bullet](img/bullet_nb_square-blk.png) `interface Car = { wheels: number }`
 
-![bullet](img/bullet_nb_square-blk.png)`interface Car { wheels = number }`
+![bullet](img/bullet_nb_square-blk.png) `interface Car { wheels = number }`
 
-![bullet](img/bullet_nb_square-blk.png)`interface Car { wheels: number }`
+![bullet](img/bullet_nb_square-blk.png) `interface Car { wheels: number }`
 
-![bullet](img/bullet_nb_square-blk.png)`interface Car = { wheels = number }`
+![bullet](img/bullet_nb_square-blk.png) `interface Car = { wheels = number }`
 
 # 结语
 
@@ -4619,11 +5869,13 @@ console.log(myRank);
 
 ## JavaScript 入门答案
 
+
+
 ### JS-01
 
 1. `var important! = "important!"`
 
-变量名不能包含标点符号
+变量名不能包含标点符号。
 
 ### JS-02
 
@@ -4665,17 +5917,17 @@ console.log(myRank);
 
 1. `B`
 
-箭头函数的正确语法是所谓的胖箭头 `=>`
+箭头函数的正确语法是所谓的胖箭头`=>`。
 
 ### 2.2
 
 1. `10`
 
-在箭头函数内部，`this` 关键字继承自其父作用域，本例中父作用域是 window，因此 age 仍为 10。
+在箭头函数内部，`this`关键字继承自其父作用域，本例中父作用域是`window`，因此`age`仍为`10`。
 
 ### 2.3
 
-```
+```javascript
 (arg) => { console.log(arg); }
 ```
 
@@ -4683,7 +5935,7 @@ console.log(myRank);
 
 ### 3.1
 
-```
+```javascript
 function calculatePrice(total, tax = 0.1, tip = 0.05) {
   // 当未给 tax 或 tip 赋值时，将使用默认值 0.1 和 0.05
   return total + (total * tax) + (total * tip);
@@ -4698,20 +5950,20 @@ function calculatePrice(total, tax = 0.1, tip = 0.05) {
 
 ### 4.1
 
-```
+```javascript
 let result = `${a} ${c} ${d} ${b} ${e}`;
 ```
 
 ### 4.2
 
-```
+```javascript
 let result = `${a} ${c} ${b} ${e} ${d}`;
 console.log(result); // 1 plus 2 equals 3
 ```
 
 ### 4.3
 
-```
+```javascript
 console.log(`this is a very long text a very long text`);
 // this is a very long text
 // a very long text
@@ -4723,17 +5975,17 @@ console.log(`this is a very long text a very long text`);
 
 1. `true`
 
-它将在 3 个字符后开始检查
+它将在 3 个字符后开始检查。
 
 ### 5.2
 
 1. `false`
 
-`endsWith` 区分大小写
+`endsWith`区分大小写。
 
 ### 5.3
 
-```
+```javascript
 let batman = `${str.repeat(8)} ${bat}`;
 console.log(batman); // "NaNaNaNaNaNaNaNa BatMan"
 ```
@@ -4742,7 +5994,7 @@ console.log(batman); // "NaNaNaNaNaNaNaNa BatMan"
 
 ### 6.1
 
-```
+```javascript
 let hungry = "yes";
 let full = "no";
 [hungry, full] = [full, hungry];
@@ -4752,7 +6004,7 @@ console.log(full); // yes
 
 ### 6.2
 
-```
+```javascript
 let arr = ["one", "two", "three"];
 // 解决方案：
 let [one, two, three] = arr;
@@ -4775,7 +6027,7 @@ console.log(three); // "three"
 
 ### 8.1
 
-```
+```javascript
 Array.from(apple);
 ```
 
@@ -4783,19 +6035,19 @@ Array.from(apple);
 
 1. `4`
 
-`Array.find()` 将返回第一个匹配条件的元素。
+`Array.find()`将返回第一个匹配条件的元素。
 
 ### 8.3
 
 1. `true`
 
-`Array.some()` 如果有一个元素匹配给定条件，则返回 `true`
+`Array.some()`如果有一个元素匹配给定条件，则返回`true`。
 
 ### 8.4
 
 1. `[1,4,9]`
 
-我们传入的 map 函数将对数组中的每个值返回 `x * x`
+我们传入的`map`函数将对数组中的每个值返回`x * x`。
 
 ## 第 9 章测验结束
 
@@ -4805,18 +6057,18 @@ Array.from(apple);
 
 ### 9.2
 
-```
+```javascript
 const menu = [...veggie, "pasta", ...meat];
 ```
 
 ### 9.3
 
-```
+```javascript
 const [first, second, ...losers] = runners;
 console.log(...losers);
 ```
 
-我们使用 rest 运算符来获取前两个之后的所有剩余值
+我们使用`rest`运算符来获取前两个之后的所有剩余值。
 
 ### 9.4
 
@@ -4826,7 +6078,7 @@ console.log(...losers);
 
 ### 10.1
 
-```
+```javascript
 const animal = { name, age, breed };
 ```
 
@@ -4838,7 +6090,7 @@ const animal = { name, age, breed };
 
 1. `color is not defined`
 
-由于变量名和属性名不匹配，我们需要写成 `color: favoriteColor` 而不是仅仅 `color`
+由于变量名和属性名不匹配，我们需要写成`color: favoriteColor`而不是仅仅`color`。
 
 ## 第 11 章测验结束
 
@@ -4846,25 +6098,25 @@ const animal = { name, age, breed };
 
 1. `a primitive`
 
-Symbol 是 ES6 引入的一种新的原始类型
+`Symbol`是`ES6`引入的一种新的原始类型。
 
 ### 11.2
 
 1. `they are unique`
 
-Symbol 总是唯一的
+`Symbol`总是唯一的。
 
 ### 11.3
 
 1. `Tom Jim`
 
-第二次赋值 `"Tom"` 时，我们覆盖了第一个 `"Tom"`，因为我们没有使用 symbol。
+第二次赋值`"Tom"`时，我们覆盖了第一个`"Tom"`，因为我们没有使用`symbol`。
 
 ### 11.4
 
 1. `Symbol(Tom) Symbol(Jane) Symbol(Tom)`
 
-这次我们看到了全部三个，因为我们将它们存储在 symbol 中，保持了唯一性并避免了命名冲突。
+这次我们看到了全部三个，因为我们将它们存储在`symbol`中，保持了唯一性并避免了命名冲突。
 
 ## 第 12 章测验结束
 
@@ -4878,7 +6130,7 @@ Symbol 总是唯一的
 
 1. `const person = class Person {...}`
 
-1. `class Person {...}`
+2. `class Person {...}`
 
 答案 1 和 3 都正确。第一个称为类表达式，第二个称为类声明。
 
@@ -4894,7 +6146,7 @@ Symbol 总是唯一的
 
 ### 12.5
 
-```
+```javascript
 class Adult extends Person {
   constructor(name, age, work) {
     super(name, age);
@@ -4903,7 +6155,7 @@ class Adult extends Person {
 }
 ```
 
-记得添加关键字 `super` 来创建原始类，然后再扩展它。
+记得添加关键字`super`来创建原始类，然后再扩展它。
 
 ## 第 13 章测验结束
 
@@ -4913,7 +6165,7 @@ class Adult extends Person {
 
 ### 13.2
 
-```
+```javascript
 const myPromise = new Promise((resolve, reject) => {
   resolve();
   console.log("Good job!");
@@ -4928,7 +6180,7 @@ const myPromise = new Promise((resolve, reject) => {
 
 1. `3,4`
 
-对于前两个 `.then`，我们只传递了一个参数，这意味着只有在 promise 被解决时才会调用 `console.log`，但在我们的示例中它被拒绝了。对于 `.catch`，第一个参数是 promise 被拒绝时的回调，这就是为什么我们能在控制台中看到 3 被打印出来。最后一个 `.then` 链接在 `.catch` 创建的 promise 之后，该 promise 被解决了，因此我们也看到 4 被打印出来。
+对于前两个`.then`，我们只传递了一个参数，这意味着只有在`promise`被解决时才会调用`console.log`，但在我们的示例中它被拒绝了。对于`.catch`，第一个参数是`promise`被拒绝时的回调，这就是为什么我们能在控制台中看到 3 被打印出来。最后一个`.then`链接在`.catch`创建的`promise`之后，该`promise`被解决了，因此我们也看到 4 被打印出来。
 
 ## 第 14 章测验结束
 
@@ -4944,16 +6196,13 @@ const myPromise = new Promise((resolve, reject) => {
 
 1. `Object { value: "Pomelo", done: false }`
 
-`fruits.next();` 的最后一次输出是 `Object { value: "Pomelo", done: false }`。注意 `done` 被设置为 `false` 而不是 `true`。
+`fruits.next();`的最后一次输出是`Object { value: "Pomelo", done: false }`。注意`done`被设置为`false`而不是`true`。
 
 ### 14.4
 
 1. `Object { value: undefined, done: true }`
 
-
-
-
-`正确的输出是 Object { value: undefined, done: true }`，因为 `.return()` 会结束生成器并返回我们传入的值。在这个例子中，我们得到了 `undefined`，因为我们没有在 `.return()` 中传入任何内容。
+正确的输出是`Object { value: undefined, done: true }`，因为`.return()`会结束生成器并返回我们传入的值。在这个例子中，我们得到了`undefined`，因为我们没有在`.return()`中传入任何内容。
 
 ## 第 15 章测验结束
 
@@ -4963,17 +6212,17 @@ const myPromise = new Promise((resolve, reject) => {
 
 来自 MDN：
 
-`Proxy` 对象用于定义基本操作的自定义行为（例如属性查找、赋值、枚举、函数调用等）。
+`Proxy`对象用于定义基本操作的自定义行为（例如属性查找、赋值、枚举、函数调用等）。
 
 ### 15.2
 
 1. 2
 
-`Proxy` 可以接受一个处理器和一个目标
+`Proxy`可以接受一个处理器和一个目标。
 
 ### 15.3
 
-1. `Proxy` 的目标参数可以是另一个 `Proxy`
+1. `Proxy`的目标参数可以是另一个`Proxy`
 
 它可以是任何类型的对象，包括原生数组、函数甚至另一个代理。
 
@@ -4985,11 +6234,11 @@ const myPromise = new Promise((resolve, reject) => {
 
 ### 16.2
 
-1. `WeakSet` 只能存储对象
+1. `WeakSet`只能存储对象。
 
 ### 16.3
 
-1. `Map` 存储键和值，`Set` 只存储值
+1. `Map`存储键和值，`Set`只存储值。
 
 ## 第 17 章测验结束
 
@@ -5001,11 +6250,11 @@ const myPromise = new Promise((resolve, reject) => {
 
 1. `false`
 
-答案是 `false`，因为我们从索引 4 开始查找值 5，但值 5 只存在于索引 2。
+答案是`false`，因为我们从索引 4 开始查找值 5，但值 5 只存在于索引 2。
 
 ### 17.3
 
-```
+```javascript
 2**2**2; // 16
 ```
 
@@ -5015,11 +6264,11 @@ const myPromise = new Promise((resolve, reject) => {
 
 1. `" hello"`
 
-`padStart(6)` 只会给我们的字符串添加 1 个空格，因为它的长度是 5（6-5=1）。
+`padStart(6)`只会给我们的字符串添加 1 个空格，因为它的长度是 5（6-5=1）。
 
 ### 18.2
 
-```
+```javascript
 strings.forEach(str => console.log(str.padStart(16)));
 ```
 
@@ -5031,13 +6280,13 @@ strings.forEach(str => console.log(str.padStart(16)));
 
 1. `10`
 
-`Atomics.add()` 会返回该索引的先前值。
+`Atomics.add()`会返回该索引的先前值。
 
 ### 18.5
 
 1. `4`
 
-`Atomics.load()` 会返回该索引的值
+`Atomics.load()`会返回该索引的值。
 
 ## 第 19 章测验结束
 
@@ -5045,7 +6294,7 @@ strings.forEach(str => console.log(str.padStart(16)));
 
 1. `SyntaxError`
 
-记住：`await` 仅在异步函数和异步生成器中有效
+记住：`await`仅在异步函数和异步生成器中有效。
 
 ### 19.2
 
@@ -5065,19 +6314,21 @@ strings.forEach(str => console.log(str.padStart(16)));
 
 1. `1`
 
-记住：在 `finally` 之后创建的 `Promise` 会返回 `finally` 所链接着的 `Promise` 的值。
+记住：在`finally`之后创建的`Promise`会返回`finally`所链接着的`Promise`的值。
 
 ## 第 21 章测验结束
 
 ### 21.1
 
-```
-// many options letters.flat(2); // or letters.flat().flat() // or letters.flat(Infinity)
+```javascript
+// many options
+letters.flat(2); // or letters.flat().flat()
+// or letters.flat(Infinity)
 ```
 
 ### 21.2
 
-```
+```javascript
 Object.fromEntries(keyValueArray)
 ```
 
@@ -5114,4 +6365,3 @@ Object.fromEntries(keyValueArray)
 ### TS-05
 
 1. `interface Car { wheels: number }`
-

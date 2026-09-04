@@ -1,15 +1,14 @@
+
 # Node.js 入门指南：中级开发者解锁服务器端 JavaScript 力量终极指南
-
-
 
 ![](img/image_rsrc21P.jpg)
 
-
 在本书中，你将学习带有图解的说明和实操练习，通过成功执行练习获得带有输出的现成解决方案，以及逐步解释。AMIT K
 
-
 ## 序言
+
 循步学习 Node Js。
+
 初学者 Node Js：中级开发者释放服务器端 Javascript 力的终极指南
 
 通过《精通 Node.js：中级开发者释放服务器端 JavaScript 力的终极指南》，解锁 `Node.js` 的全部潜力，并彻底改变你的 Web 和服务器端开发技能。
@@ -23,9 +22,11 @@
 ## 第 1 章：NodeJs 简介
 
 ### 什么是 NodeJs
+
 在直接回答“什么是 NodeJS?”之前，我将先向你介绍 `NodeJS` 的诞生背景，这有助于你更容易理解相关问题。
 
 ### Chrome 与 V8 Javascript 引擎
+
 人知道 `Chrome` 是一个著名的免费 Google 浏览器，第一个版本于 2008 年 12 月发布，其中 `V8 JavaScript Engine` 是一个用 `C++` 编写的程序，代码开源，用于 Google `Chrome` 以高性能地解析和执行 Javascript 代码。它解析 Javascript 语法并将其解释为计算机代码以执行。
 
 | ![](img/image_rsrc21R.jpg) |
@@ -39,20 +40,33 @@
 | IE, Edge | Chakra |
 
 ### NodeJS
+
 你可以使用“Javascript 语法”编写代码片段来连接数据库。`V8 JS Engine` 会解析你的 Javascript 代码并将其解释为计算机代码以执行。当然，这种代码片段不是用于客户端，而是用于服务器端的。因此，一种能力被开启了，你可以使用“Javascript 语法”编写服务器端 Web 应用，而不是使用 `PHP` 或 `Java`。
 
-Javascript 代码
 ```javascript
-const mysql = require('mysql');const connection = mysql.createConnection({host: 'localhost',user: 'user',password: 'password',database: 'database name'});connection.connect((err) => {if (err) throw err;console.log('Connected!');});
+const mysql = require('mysql');
+const connection = mysql.createConnection({
+  host: 'localhost',
+  user: 'user',
+  password: 'password',
+  database: 'database name'
+});
+connection.connect((err) => {
+  if (err) throw err;
+  console.log('Connected!');
+});
 ```
+
 `NodeJS` 诞生了。`V8 Javascript Engine` 是 `NodeJS` 的组件之一。下面是 `NodeJS` 的架构图：
 
 ### NodeJs Javascript 库
+
 | ![](img/image_rsrc21S.jpg) |
 
 简而言之，`NodeJS` 可以替换 `PHP`、`Java` 来构建服务器端 Web 应用。你不再通过 `PHP`、`Java` 编写代码，而是使用 Javascript 语法。
 
 ### 所以，什么是 NodeJS
+
 `NodeJS` 是浏览器外的 JavaScript 运行时环境。`NodeJS` 还包含其他组件和库，因此它可以像 Web 应用服务器一样运行。
 
 重要提示：`NodeJS` 不是 Javascript 的扩展语言。
@@ -60,16 +74,19 @@ const mysql = require('mysql');const connection = mysql.createConnection({host: 
 ## 第 2 章：安装 Atom 编辑器
 
 ### 什么是 Atom 软件
+
 Atom 是一个免费的文本（及源代码）编辑器。其开源代码支持 `Linux`、`Mac OS`、`Windows` 等操作系统。它支持通过 `NodeJS` 插件并嵌入由 `GitHub` 开发的 `Git-Control`。
 
 `Atom` 被评估为文本编辑（及源代码）软件，与类似的软件相比，它具有现代、易于使用的界面和卓越的特性。
 
 `Atom` 支持以下语言：
+
 C/C++, C#, Clojure, CSS, CoffeeScript, `GitHub Flavored Markdown`, Go, Git, HTML, JavaScript, Java, JSON, Julia, Less, Make, Mustache, Objective-C, PHP, Perl, Property List (Apple), Python, Ruby on Rails, Sass, Shell script, Scala, SQL, TOML, XML, YAML
 
 | ![](img/image_rsrc21T.jpg) |
 
 ### 下载 Atom
+
 要下载 `Atom`，请访问其主页。请注意，`Atom` 支持各种操作系统。如果你使用 `Windows`，请确保你的操作系统是 `Windows 7` 64 位或更高版本。
 
 * https://atom.io/
@@ -87,6 +104,7 @@ C/C++, C#, Clojure, CSS, CoffeeScript, `GitHub Flavored Markdown`, Go, Git, HTML
 ## 第 3 章：在 Windows 上安装 NodeJS
 
 ### 下载 NodeJS
+
 要下载 `NodeJS`，你需要访问以下地址：
 
 * https://nodejs.org/download/
@@ -98,23 +116,21 @@ C/C++, C#, Clojure, CSS, CoffeeScript, `GitHub Flavored Markdown`, Go, Git, HTML
 | ![](img/image_rsrc21Y.jpg) |
 
 ### 安装 NodeJS
+
 在 `Windows` 上安装 `NodeJS` 非常简单。接受默认选项并一直“Next”直到最后一步。
 
 | ![](img/image_rsrc21Z.jpg) |
-
 | ![](img/image_rsrc220.jpg) |
-
 | ![](img/image_rsrc221.jpg) |
 
 默认情况下，`NPM` 软件也安装在你的系统中。这是一个管理 Javascript 库的软件。
 
 | ![](img/image_rsrc222.jpg) |
-
 | ![](img/image_rsrc223.jpg) |
-
 | ![](img/image_rsrc224.jpg) |
 
 ### 检查并配置
+
 好的，在上面的步骤中，我们成功下载并安装了 `NodeJS`。现在，你需要检查安装结果并配置 `NodeJS`。
 
 打开 `CMD` 窗口并执行以下命令来检查 `NodeJS` 和 `NPM` 的版本：
@@ -129,13 +145,10 @@ npm -v
 ## 第 4 章：什么是 NPM
 
 ### 什么是 NPM
+
 `NPM` 代表 Node Package Manager（Node 包管理器），是一个用于 `Node.js` Javascript 编程库的（程序）工具。这个工具对于开源世界实际上是必要的。在 Javascript 社区中，开发者共享成千上万的代码片段，帮助新项目避免重写基础组件、编程库甚至框架。每个代码片段可能依赖许多许多开源代码。
 
 `NPM` 基本上与 `Maven` 相似。区别在于 `NPM` 管理 Javascript 库，而 `Maven` 管理 Java 库。
-
-
-
-
 
 一个与 NPM 类似的软件是 `Yarn`，由 Facebook 开发，其卓越的特性使其成为 NPM 的替代方案。在相同的情况下，Java 库管理软件是 `Gradle`，凭借其卓越的特性，逐渐取代 Maven。
 
@@ -145,7 +158,7 @@ npm -v
 
 在你的电脑上安装好 NPM 后，你可以检查它的版本：
 
-```
+```bash
 npm -v
 ```
 
@@ -194,9 +207,11 @@ npm init
 你的项目需要一些库包，你需要在 NPM 的支持下安装它们：
 
 #### Express
+
 `Express.js`（或简单称为 `Express`）是一个用于 `NodeJS` 的 Web 应用框架。它为 Web 和移动应用提供了一系列强大的功能。
 
 #### Ejs
+
 `EJS` 代表“嵌入式 JavaScript 模板”（Embedded JavaScript templating），这是一个库，用于解析 `ejs` 文件并创建 HTML 返回给客户端（浏览器）。
 
 ```bash
@@ -224,6 +239,7 @@ npm install express ejs
 项目中创建两个子目录：`public` 和 `views`：
 
 *   `public`：一个包含用户可以访问的所有文件的目录，例如图片、视频等...
+
 *   `views`：你的网站将有很多页面，例如首页、登录页...此目录是存放你所有页面的地方。
 
 ![](img/image_rsrc22F.jpg)
@@ -236,13 +252,33 @@ npm install express ejs
 ![](img/image_rsrc22G.jpg)
 
 **homePage.ejs**
+
 ```html
-<!DOCTYPE html><html lang="en" dir="ltr"><head><meta charset="utf-8"><title>Home</title></head><body><h1>This is Home Page</h1></body></html>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>Home</title>
+</head>
+<body>
+  <h1>This is Home Page</h1>
+</body>
+</html>
 ```
 
 **testPage.ejs**
+
 ```html
-<!DOCTYPE html><html lang="en" dir="ltr"><head><meta charset="utf-8"><title>Test</title></head><body><h1>This is Test Page</h1></body></html>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>Test</title>
+</head>
+<body>
+  <h1>This is Test Page</h1>
+</body>
+</html>
 ```
 
 接下来，创建一个名为 `index.js` 的文件，并输入该文件的内容。这是你项目的配置文件：
@@ -250,6 +286,7 @@ npm install express ejs
 ![](img/image_rsrc22H.jpg)
 
 **index.js**
+
 ```javascript
 var express = require("express");
 var app = express();
@@ -257,13 +294,17 @@ app.use(express.static("public"));
 app.set("view engine", "ejs");
 app.set("views", "./views");
 app.listen(3000);
-app.get("/", function(request, response)  {response.render("homePage");});
-app.get("/test", function(request, response)  {response.render("testPage");});
+app.get("/", function(request, response) {
+  response.render("homePage");
+});
+app.get("/test", function(request, response) {
+  response.render("testPage");
+});
 ```
 
 好的，现在是解释上面 `index.js` 文件的内容了。
 
-| 代码 |  |
+| 代码 | 说明 |
 | :--- | :--- |
 | `var express = require("express");` | `ExpressJS` 是一个 Web 应用框架。这行代码表示你想使用它。 |
 | `var app = express();` | 创建一个 `Express` 对象。 |
@@ -271,8 +312,8 @@ app.get("/test", function(request, response)  {response.render("testPage");});
 | `app.set("view engine", "ejs");` | 这行代码告诉应用程序服务器你想使用 `EJS` 库。它是处理你页面的机制。`EJS` 将创建 HTML 返回给用户的浏览器。 |
 | `app.set("views", "./views");` | 这行代码向应用程序服务器显示目录的路径。 |
 | `app.listen(3000);` | 应用程序在 3000 端口上监听。 |
-| `app.get("/", function(request, response)  {response.render("homePage");});` | 定义根路由。 |
-| `app.get("/test", function(request, response)  {response.render("testPage");});` | 定义 /test 路由。 |
+| `app.get("/", function(request, response) {response.render("homePage");});` | 定义根路由。 |
+| `app.get("/test", function(request, response) {response.render("testPage");});` | 定义 /test 路由。 |
 
 ### 运行应用程序
 
@@ -281,10 +322,6 @@ app.get("/test", function(request, response)  {response.render("testPage");});
 ```bash
 node index.js
 ```
-
-
-
-
 
 | Module | Description |
 | :--- | :--- |
@@ -336,6 +373,7 @@ node ./module-examples/http-example.js
 ```
 
 打开浏览器并访问路径：
+
 * http://localhost:8080/
 
 | ![](img/image_rsrc231.jpg) |
@@ -354,7 +392,9 @@ NodeJS 建议你将你的模块文件放在项目的 `node_modules` 目录中。
 ### 在你的 Javascript 文件中导出内容的语法。
 
 ```javascript
-exports = something;// 或者：module.exports = something; 
+exports = something;
+// 或者：
+module.exports = something;
 ```
 
 `my-first-module.js`
@@ -513,9 +553,6 @@ NodeJS 是一个单线程应用程序，运行在由 C++ 编写的平台上。�
 
 NodeJS 与 Nginx 的相似之处在于，它们都只使用单个线程接收来自用户的连接，并将用户的每个请求视为一个事件。
 
-
-
-
 第二个基本结论：I/O 活动消耗了系统大量的资源，因此 NodeJS 严格管理着 I/O 活动的使用。所以，在执行与 I/O 相关的任务时，你只需要使用 `Callback`。
 
 # 第 10 章：NodeJS EventEmitter
@@ -628,54 +665,95 @@ node eventemitter-examples/first-example.js
 ![](img/image_rsrc23A.jpg)
 
 第 1 步：![](img/image_rsrc23B.jpg)
+
 第 2 步：![](img/image_rsrc23C.jpg)
+
 第 3 步：![](img/image_rsrc23D.jpg)
+
 第 4 步：![](img/image_rsrc23E.jpg)
+
 第 5 步：![](img/image_rsrc23F.jpg)
+
 第 6 步：![](img/image_rsrc23G.jpg)
+
 第 7 步：![](img/image_rsrc23H.jpg)
+
 第 8 步：![](img/image_rsrc23J.jpg)
+
 第 9 步：![](img/image_rsrc23K.jpg)
+
 第 10 步：![](img/image_rsrc23M.jpg)
 
 ## 3. Jdk1.6 安装并配置到 Eclipse
 
 第 1 步：![](img/image_rsrc23N.jpg)
+
 第 2 步：![](img/image_rsrc23P.jpg)
+
 第 3 步：![](img/image_rsrc23R.jpg)
+
 第 4 步：![](img/image_rsrc23S.jpg)
+
 第 5 步：![](img/image_rsrc23T.jpg)
+
 第 6 步：![](img/image_rsrc23V.jpg)
+
 第 7 步：![](img/image_rsrc23W.jpg)
+
 第 8 步：![](img/image_rsrc23X.jpg)
+
 第 9 步：![](img/image_rsrc23Y.jpg)
+
 第 10 步：![](img/image_rsrc24Z.jpg)
+
 第 11 步：![](img/image_rsrc240.jpg)
+
 第 12 步：![](img/image_rsrc241.jpg)
+
 第 13 步：![](img/image_rsrc242.jpg)
+
 第 14 步：![](img/image_rsrc243.jpg)
 
 ## 4. Tomcat1.6 安装并配置到 Eclipse
 
 第 1 步：![](img/image_rsrc244.jpg)
+
 第 2 步：![](img/image_rsrc245.jpg)
+
 第 3 步：![](img/image_rsrc246.jpg)
+
 第 4 步：![](img/image_rsrc247.jpg)
+
 第 5 步：![](img/image_rsrc248.jpg)
+
 第 6 步：![](img/image_rsrc249.jpg)
+
 第 7 步：![](img/image_rsrc25A.jpg)
+
 第 8 步：![](img/image_rsrc25B.jpg)
+
 第 9 步：![](img/image_rsrc25C.jpg)
+
 第 10 步：![](img/image_rsrc25D.jpg)
+
 第 11 步：![](img/image_rsrc25E.jpg)
+
 第 12 步：![](img/image_rsrc25F.jpg)
+
 第 13 步：![](img/image_rsrc25G.jpg)
+
 第 14 步：![](img/image_rsrc25H.jpg)
+
 第 15 步：![](img/image_rsrc25J.jpg)
+
 第 16 步：![](img/image_rsrc25K.jpg)
+
 第 17 步：![](img/image_rsrc25L.jpg)
+
 第 18 步：![](img/image_rsrc25M.jpg)
+
 第 19 步：![](img/image_rsrc25N.jpg)
+
 第 20 步：![](img/image_rsrc25P.jpg)
 
 ## 5. MySql5.0 安装
@@ -683,25 +761,43 @@ node eventemitter-examples/first-example.js
 我们将学习安装步骤。
 
 第 1 步：![](img/image_rsrc25Q.jpg)
+
 第 2 步：![](img/image_rsrc25R.jpg)
+
 第 3 步：![](img/image_rsrc25S.jpg)
+
 第 4 步：![](img/image_rsrc25T.jpg)
+
 第 5 步：![](img/image_rsrc25U.jpg)
+
 第 6 步：![](img/image_rsrc25V.jpg)
+
 第 7 步：![](img/image_rsrc25W.jpg)
+
 第 8 步：![](img/image_rsrc25X.jpg)
+
 第 9 步：![](img/image_rsrc25Y.jpg)
+
 第 10 步：![](img/image_rsrc25Z.jpg)
+
 第 11 步：![](img/image_rsrc260.jpg)
+
 第 12 步：![](img/image_rsrc261.jpg)
+
 第 13 步：![](img/image_rsrc262.jpg)
+
 第 14 步：![](img/image_rsrc263.jpg)
 
 ## 6. Eclipse 字体大小增大
 
 第 1 步：![](img/image_rsrc264.jpg)
+
 第 2 步：![](img/image_rsrc265.jpg)
+
 第 3 步：![](img/image_rsrc266.jpg)
+
 第 4 步：![](img/image_rsrc267.jpg)
+
 第 5 步：![](img/image_rsrc268.jpg)
+
 第 6 步：![](img/image_rsrc269.jpg)

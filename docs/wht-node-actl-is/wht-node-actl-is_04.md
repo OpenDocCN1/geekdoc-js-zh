@@ -1,16 +1,18 @@
+
+
 # 事件循环解析
 
 > [`www.thenodebook.com/node-arch/event-loop-intro`](https://www.thenodebook.com/node-arch/event-loop-intro)
 
 ## 单线程模型
 
-如果你在这里，你可能之前写过一些 Node.js 代码。你生活在异步的世界里，呼吸着异步的气息。你可能在梦中都在写 `Promise.then()` 链，并且使用 `async/await` 的流畅度让其他人羡慕。你知道——深入骨髓——你绝对不能阻塞主线程。你明白编写非阻塞代码的**意义**。
+如果你在这里，你可能之前写过一些 Node.js 代码。你生活在异步的世界里，呼吸着异步的气息。你可能在梦中都在写 `Promise.then()` 链，并且使用 `async/await` 的流畅度让其他人羡慕。你知道——深入骨髓——你绝对不能阻塞主线程。你明白编写非阻塞代码的意义。
 
 这章是关于原因和方法的。我们将打开你习惯的“黑盒”，并仔细观察使这一切发生的酷炫、复杂的机械装置。
 
 这不是一本入门指南。远非如此。这是一本针对准备从“它只是工作”的直觉过渡到精确、机械的 Node.js 运行时模型的实践工程师的深入指南。我们将分解 Node 如何同时处理许多事情，超越简单的解释，看看它真正是如何工作的。
 
-Node.js 的核心悖论，让人们夜不能寐的问题是这样的：它如何在单线程上处理**数以万计**的并发连接？一个没有并行执行 JavaScript 的单个工作器，达到这样的规模？这听起来不可能。答案是**事件循环**。在我们完成这里之后，你不仅会知道它的名字；你还会理解它的阶段、优先级以及它是如何与其他 Node 运行时核心部分交流的。你将能够自信地预测任何异步代码的执行顺序，并追踪那些曾经像机器中的幽灵一样的性能问题。
+Node.js 的核心悖论，让人们夜不能寐的问题是这样的：它如何在单线程上处理数以万计的并发连接？一个没有并行执行 JavaScript 的单个工作器，达到这样的规模？这听起来不可能。答案是事件循环。在我们完成这里之后，你不仅会知道它的名字；你还会理解它的阶段、优先级以及它是如何与其他 Node 运行时核心部分交流的。你将能够自信地预测任何异步代码的执行顺序，并追踪那些曾经像机器中的幽灵一样的性能问题。
 
 让我们动手实践一下。
 
@@ -49,21 +51,14 @@ Done with first
 
 这里是如何工作的——
 
-1.  `first()` 被调用。它的调用帧被推入栈中。`[first]`
-
-1.  `first()` 输出 "One"。很简单。
-
-1.  `first()` 调用 `second()`。`second()` 的调用帧直接放在上面。`[first, second]`
-
-1.  `second()` 输出 "Two"。
-
-1.  `second()` 调用 `third()`。`third()` 的调用帧被添加到不断增长的塔中。`[first, second, third]`
-
-1.  `third()` 输出 "Three"。它已经完成了所有工作，所以它返回。它的调用帧被弹出。`[first, second]`
-
-1.  控制权返回到 `second()`。它没有其他事情要做，所以它返回。它的调用帧被弹出。`[first]`
-
-1.  我们回到了`first()`。它记录了“完成 first”，运行完所有行后返回。它的帧被弹出。`[]`
+1. `first()` 被调用。它的调用帧被推入栈中。`[first]`
+2. `first()` 输出 "One"。很简单。
+3. `first()` 调用 `second()`。`second()` 的调用帧直接放在上面。`[first, second]`
+4. `second()` 输出 "Two"。
+5. `second()` 调用 `third()`。`third()` 的调用帧被添加到不断增长的塔中。`[first, second, third]`
+6. `third()` 输出 "Three"。它已经完成了所有工作，所以它返回。它的调用帧被弹出。`[first, second]`
+7. 控制权返回到 `second()`。它没有其他事情要做，所以它返回。它的调用帧被弹出。`[first]`
+8. 我们回到了 `first()`。它记录了“完成 first”，运行完所有行后返回。它的帧被弹出。`[]`
 
 栈现在为空。脚本已完成。这是你所有 JavaScript 的唯一工作空间。只有一个调用栈，一次只能做一件事：栈顶上的任何内容。
 
@@ -93,49 +88,41 @@ const crypto = require("node:crypto");
  hashContinuously();
 ```
 
-运行这个脚本，你会看到一些有趣的事情。应该在秒后触发的`setTimeout`回调，却只在“阻塞操作完成”之后出现。这是怎么回事？
+运行这个脚本，你会看到一些有趣的事情。应该在秒后触发的 `setTimeout` 回调，却只在“阻塞操作完成”之后出现。这是怎么回事？
 
-1.  我们调用`setTimeout`。Node 的 API 愉快地安排了一个 1000 毫秒后触发的定时器。这是一个非阻塞、一触即发的操作。
-
-1.  `hashContinuously()`被推入调用栈。
-
-1.  “地狱般的”`while`循环开始了。在五秒钟的痛苦中，V8 引擎完全被消耗在反复哈希一个值。`hashContinuously`帧就静静地坐在栈顶。
-
-1.  在 1 秒的标记处，定时器耐心地“触发”。这意味着它的回调函数被放入队列中，准备并等待执行。
-
-1.  **但是这里有个问题**：事件循环无法触及这个队列。为什么？因为调用栈还没有空！它仍然卡在`hashContinuously()`上。事件循环实际上被冻结了，就像在玻璃上敲击，等待栈清空。
-
-1.  最后，五秒后，`while`循环结束。`hashContinuously()`记录了它的最后一条消息并返回。它的帧幸运地从栈中弹出。
-
-1.  最后，调用栈为空。事件循环苏醒过来，抓取等待的定时器回调，将其推入栈中，并执行它。
+1. 我们调用 `setTimeout`。Node 的 API 愉快地安排了一个 1000 毫秒后触发的定时器。这是一个非阻塞、一触即发的操作。
+2. `hashContinuously()` 被推入调用栈。
+3. “地狱般的” `while` 循环开始了。在五秒钟的痛苦中，V8 引擎完全被消耗在反复哈希一个值。`hashContinuously` 帧就静静地坐在栈顶。
+4. 在 1 秒的标记处，定时器耐心地“触发”。这意味着它的回调函数被放入队列中，准备并等待执行。
+5. **但是这里有个问题**：事件循环无法触及这个队列。为什么？因为调用栈还没有空！它仍然卡在 `hashContinuously()` 上。事件循环实际上被冻结了，就像在玻璃上敲击，等待栈清空。
+6. 最后，五秒后，`while` 循环结束。`hashContinuously()` 记录了它的最后一条消息并返回。它的帧幸运地从栈中弹出。
+7. 最后，调用栈为空。事件循环苏醒过来，抓取等待的定时器回调，将其推入栈中，并执行它。
 
 这是栈的独裁统治。一个慢速函数可以让你整个应用瞬间停止。这正是 Node 的整个异步架构旨在解决的问题。所以，如果调用栈是瓶颈，解决方案从何而来？为了回答这个问题，我们必须揭开盖子，超越 JavaScript 本身。
 
 ## V8、Libuv 和 Node.js 绑定
 
-就像你在上一章中读到的[Inside the v8 Engine](https://thenodebook.com/node-arch/v8-engine-intro)，我们所说的“Node.js 运行时”并不是一个单独的程序。它更像是一个超级组合——一些强大的技术完美地一起工作。理解它们的独特角色非常重要。
+就像你在上一章中读到的 [Inside the v8 Engine](https://thenodebook.com/node-arch/v8-engine-intro)，我们所说的“Node.js 运行时”并不是一个单独的程序。它更像是一个超级组合——一些强大的技术完美地一起工作。理解它们的独特角色非常重要。
 
-### **V8：JavaScript 执行引擎**
+### V8：JavaScript 执行引擎
 
-ℹ️注意
+ℹ️ 注意
 
-我们在前一章中深入探讨了[v8](https://thenodebook.com/node-arch/v8-engine-intro)，并且还将有一个专门的课程，包含六个章节（21.1–21.6）。尽管如此，我假设一些读者会直接跳到这一章，所以为了清晰起见，我将提供简要的解释。
+我们在前一章中深入探讨了 [v8](https://thenodebook.com/node-arch/v8-engine-intro)，并且还将有一个专门的课程，包含六个章节（21.1–21.6）。尽管如此，我假设一些读者会直接跳到这一章，所以为了清晰起见，我将提供简要的解释。
 
-V8 是 Google 的传奇开源 JavaScript 引擎，用 C++ 编写。如果 Node 是一辆车，V8 就是引擎（因此得名）。它是实际执行你的 JavaScript 代码的部分。其主要工作如下 -
+V8 是 Google 的传奇开源 JavaScript 引擎，用 C++ 编写。如果 Node 是一辆车，V8 就是引擎（因此得名）。它是实际执行你的 JavaScript 代码的部分。其主要工作如下：
 
-+   V8 捕获你的原始 JavaScript，并通过一个极其聪明的即时编译（JIT）过程，将其转换为高度优化的本地机器代码。这就是为什么现代 JavaScript 运行如此之快。
+- V8 捕获你的原始 JavaScript，并通过一个极其聪明的即时编译（JIT）过程，将其转换为高度优化的本地机器代码。这就是为什么现代 JavaScript 运行如此之快。
+- 就像我们所看到的，V8 是单一线程栈的严格管理者，负责推入和弹出帧。
+- V8 在一个称为堆的地方处理你的对象和变量的内存分配。它也是垃圾回收器，清理你完成的工作。
 
-+   就像我们所看到的，V8 是单一线程栈的严格管理者，负责推入和弹出帧。
-
-+   V8 在一个称为堆的地方处理你的对象和变量的内存分配。它也是垃圾回收器，清理你完成的工作。
-
-现在，这里有一个绝对关键的问题要弄清楚：V8 *不*做什么。V8 本身对现实世界一无所知。它没有文件系统的概念，不知道如何打开网络套接字，也不知道如何设置定时器。像 `setTimeout`、`fs.readFile` 和 `http.createServer` 这样的函数？它们不是 JavaScript 或 V8 的一部分。它们是由浏览器或在我们的情况下由 Node.js 提供的 API。
+现在，这里有一个绝对关键的问题要弄清楚：V8 *不* 做什么。V8 本身对现实世界一无所知。它没有文件系统的概念，不知道如何打开网络套接字，也不知道如何设置定时器。像 `setTimeout`、`fs.readFile` 和 `http.createServer` 这样的函数？它们不是 JavaScript 或 V8 的一部分。它们是由浏览器或在我们的情况下由 Node.js 提供的 API。
 
 将 V8 想象成一个出色的语言学教授，他只会说 JavaScript。要在现实世界中做任何事情，它都需要一个解释器和助手。
 
 ### Libuv
 
-Libuv 是一个从头开始构建的 C 库，其目的只有一个：异步 I/O。它最初是为 Node.js 制作的，也是赋予 Node 事件驱动、非阻塞超能力的秘密配方。它的责任重大，但我们可以将其归纳为三个大类别 -
+Libuv 是一个从头开始构建的 C 库，其目的只有一个：异步 I/O。它最初是为 Node.js 制作的，也是赋予 Node 事件驱动、非阻塞超能力的秘密配方。它的责任重大，但我们可以将其归纳为三个大类别：
 
 **事件循环本身**。没错。我们一直谈论的事件循环？它是通过 Libuv 实现和运行的。我们很快将要讨论的六个阶段都是由 Libuv 的 C 代码编排的。当你启动 Node 进程时，是 Libuv 启动循环。
 
@@ -149,39 +136,32 @@ Libuv 是一个从头开始构建的 C 库，其目的只有一个：异步 I/O�
 
 它们通过一组称为 **Node.js 绑定** 的 C++ 程序进行通信。这些绑定是至关重要的翻译层，是连接 V8 世界和 Libuv 世界的桥梁。
 
-当你进行一个看似简单的调用，如 `fs.readFile('/path/to/file', callback)` 时，幕后会发生一系列动作——
+当你进行一个看似简单的调用，如 `fs.readFile('/path/to/file', callback)` 时，幕后会发生一系列动作：
 
-1.  **V8** 看到了 `fs.readFile` 函数调用，并开始执行它。
-
-1.  但等等！这个函数不是纯 JavaScript；它是一个绑定。调用立即被路由到 Node 源代码中的一个特定 C++ 函数。
-
-1.  这个 C++ 绑定函数充当翻译者的角色。它接收你的 JavaScript 参数（文件路径和你的回调函数），并将它们打包成一个 Libuv 可以理解的“请求”对象。
-
-1.  然后将这个请求交给 **Libuv**，并告诉它：“帮我读取这个文件，请使用线程池，因为这个操作可能需要一段时间。”
-
-1.  Libuv 做它的事情。一旦文件被读取，它将在队列上放置一个“完成事件”。
-
-1.  之后，**事件循环**（由 Libuv 运行）看到这个事件正在等待。
-
-1.  事件信号返回到 C++ 绑定。
-
-1.  绑定将结果（无论是文件数据还是错误）转换回 JavaScript 友好的格式，然后——最终！——它使用这些结果调用你的原始 JavaScript **回调函数**，并将这个回调推送到 V8 **调用栈**上执行。
+1. **V8** 看到了 `fs.readFile` 函数调用，并开始执行它。
+2. 但等等！这个函数不是纯 JavaScript；它是一个绑定。调用立即被路由到 Node 源代码中的一个特定 C++ 函数。
+3. 这个 C++ 绑定函数充当翻译者的角色。它接收你的 JavaScript 参数（文件路径和你的回调函数），并将它们打包成一个 Libuv 可以理解的“请求”对象。
+4. 然后将这个请求交给 **Libuv**，并告诉它：“帮我读取这个文件，请使用线程池，因为这个操作可能需要一段时间。”
+5. Libuv 做它的事情。一旦文件被读取，它将在队列上放置一个“完成事件”。
+6. 之后，**事件循环**（由 Libuv 运行）看到这个事件正在等待。
+7. 事件信号返回到 C++ 绑定。
+8. 绑定将结果（无论是文件数据还是错误）转换回 JavaScript 友好的格式，然后——最终！——它使用这些结果调用你的原始 JavaScript **回调函数**，并将这个回调推送到 V8 **调用栈**上执行。
 
 呼吸一下。这个往返——从 JavaScript 到 C++ 到 Libuv 到操作系统，然后再返回——是 Node.js 中每个异步操作的生命故事。
 
 ## 六个阶段的详细说明
 
-💡提示
+💡 提示
 
-有一个由 [@vagostep](https://github.com/vagostep) 创建的出色工具，可以让你可视化事件循环的工作方式。你可能想尝试一下。以下是链接 - [NodeLoops](https://nodeloops.com/)
+有一个由 [@vagostep](https://github.com/vagostep) 创建的出色工具，可以让你可视化事件循环的工作方式。你可能想尝试一下。以下是链接：[NodeLoops](https://nodeloops.com/)
 
-事件循环不仅仅是一个大队列。这是一个常见的误解。它是一个高度结构化的、多阶段的循环。在这个循环中完整一圈被称为一个“tick”。理解这些阶段是绝对的关键，了解异步操作为什么以它们执行的顺序执行。Libuv 的循环只是对这些六个核心阶段的重复旅行。
+事件循环不仅仅是一个大队列。这是一个常见的误解。它是一个高度结构化的、多阶段的循环。在这个循环中完整一圈被称为一个“tick”。理解这些阶段是绝对的关键，了解异步操作为什么以它们执行的顺序执行。Libuv 的循环只是对这六个核心阶段的重复旅行。
 
 ### “Tick”：单次迭代的概述
 
 首先：一个“tick”不是一个时间单位。它只是事件循环所有阶段的单次完整进展。一个 tick 不一定等于特定的毫秒数；它持续多长时间取决于那次迭代中完成的工作。
 
-ℹ️注意
+ℹ️ 注意
 
 如果你玩过（或开发过）游戏，可以把一个 tick 想象成一个帧：事件循环，就像游戏循环一样，在每个 tick 重复执行一次工作。
 
@@ -191,39 +171,36 @@ Libuv 是一个从头开始构建的 C 库，其目的只有一个：异步 I/O�
 
 这是我们的导游的第一站。循环在这里的唯一任务是运行由 `setTimeout()` 和 `setInterval()` 安排的回调。
 
-现在，从技术上讲，计时器回调并不保证在指定的**确切**毫秒运行。你提供的延迟是回调可以运行的**最小**时间。当循环进入这个阶段时，它会检查时钟。我们安排的任何计时器的时间是否已经过去？如果是，它们的回调将被运行。
+现在，从技术上讲，计时器回调并不保证在指定的确切毫秒运行。你提供的延迟是回调可以运行的最小时间。当循环进入这个阶段时，它会检查时钟。我们安排的任何计时器的时间是否已经过去？如果是，它们的回调将被运行。
 
-你可能想知道 Node 如何处理数千个计时器而不需要不断检查一个巨大的列表。它比这更聪明。Libuv 使用一种特殊的数据结构，称为 **最小堆**。最小堆是一种树状结构，其中最小的元素始终在根节点。在这种情况下，“最小”意味着下一个即将到期的计时器。这使得 Libuv 能够知道它可以在 O(1) 时间内“睡眠”多久，直到下一个计时器到期 - 非常快。这是 Node 计时器如此便宜的一个巨大原因。
+你可能想知道 Node 如何处理数千个计时器而不需要不断检查一个巨大的列表。它比这更聪明。Libuv 使用一种特殊的数据结构，称为 **最小堆**。最小堆是一种树状结构，其中最小的元素始终在根节点。在这种情况下，“最小”意味着下一个即将到期的计时器。这使得 Libuv 能够知道它可以在 O(1) 时间内“睡眠”多久，直到下一个计时器到期——非常快。这是 Node 计时器如此便宜的一个巨大原因。
 
-ℹ️注意
+ℹ️ 注意
 
 Libuv 使用最小堆，因此可以在 O(1) 时间内发现下一个即将到期的计时器，但插入或删除计时器是 O(log n)。这使得计时器在大集合中效率很高，但创建或取消许多计时器仍然有非零成本。
 
-### 第二阶段 & 第三阶段：挂起回调和内部操作
+### 第二阶段和第三阶段：挂起回调和内部操作
 
 在计时器之后，循环快速跳过几个你很少直接与之交互的内部阶段。
 
-+   **第二阶段：挂起回调** - 这个阶段运行被推迟到下一次循环迭代的 I/O 回调。这是一个真正奇怪的边缘情况。例如，如果一个 TCP 套接字在写入数据时抛出 `EAGAIN` 错误，Node 将将回调排队以在此处重试。对于 99% 的开发者来说，这个阶段只是背景噪音。
-
-+   **第三阶段：空闲、准备** - 这些是由 Libuv 在处理真正重要的事情之前内部使用的。在 JavaScript 领域对我们完全不公开。
+- **第二阶段：挂起回调**：这个阶段运行被推迟到下一次循环迭代的 I/O 回调。这是一个真正奇怪的边缘情况。例如，如果一个 TCP 套接字在写入数据时抛出 `EAGAIN` 错误，Node 将将回调排队以在此处重试。对于 99% 的开发者来说，这个阶段只是背景噪音。
+- **第三阶段：空闲、准备**：这些是由 Libuv 在处理真正重要的事情之前内部使用的。在 JavaScript 领域对我们完全不公开。
 
 ### 第 4 阶段：轮询阶段
 
-ℹ️注意
+ℹ️ 注意
 
 **轮询**通常意味着反复询问“是否有任何准备就绪？”例如，询问内核哪些 I/O 处理程序（文件描述符、套接字等）准备好执行 I/O。
 
-好吧，请注意，这是最重要的一个。轮询阶段可以说是整个循环中最重要和最复杂的部分。它做两件主要的事情 -
+好吧，请注意，这是最重要的一个。轮询阶段可以说是整个循环中最重要和最复杂的部分。它做两件主要的事情：
 
-1.  **计算等待时间和轮询 I/O。** 循环确定它可以为新的 I/O 事件等待多长时间。它查看下一个计时器何时到期以及其他因素，然后调用操作系统的通知系统（例如 Linux 上的 `epoll_wait`）。这是事件循环中唯一的“阻塞”部分，但这是良好类型的阻塞。进程使用零 CPU，只是耐心地等待内核轻拍它的肩膀说，“嘿，你正在读取的那个文件已经完成了，”或者“你有一个新的网络连接。”
+1. **计算等待时间和轮询 I/O。** 循环确定它可以为新的 I/O 事件等待多长时间。它查看下一个计时器何时到期以及其他因素，然后调用操作系统的通知系统（例如 Linux 上的 `epoll_wait`）。这是事件循环中唯一的“阻塞”部分，但这是良好类型的阻塞。进程使用零 CPU，只是耐心地等待内核轻拍它的肩膀说，“嘿，你正在读取的那个文件已经完成了，”或者“你有一个新的网络连接。”
+2. **处理轮询队列。** 当等待结束（无论是时间到了还是发生了 I/O 事件），循环处理轮询队列。这个队列持有几乎所有 I/O 操作的回调：网络连接建立、从套接字读取数据，或文件读取（从线程池）完成。
 
-1.  **处理轮询队列。** 当等待结束（无论是时间到了还是发生了 I/O 事件），循环处理轮询队列。这个队列持有几乎所有 I/O 操作的回调：网络连接建立、从套接字读取数据，或文件读取（从线程池）完成。
+这里的行为很聪明。如果轮询队列**不为空**，循环将处理其回调，直到队列清空。但如果轮询队列**为空**，循环的行为会改变：
 
-这里的行为很聪明。如果轮询队列**不为空**，循环将处理其回调，直到队列清空。但如果轮询队列**为空**，循环的行为会改变 -
-
-+   如果有任何脚本使用 `setImmediate()` 被安排，循环将立即结束轮询阶段，进入 检查阶段 来运行它们。
-
-+   如果没有等待的 `setImmediate()`，循环将在这里挂起，等待新的 I/O 事件到来。当它们到来时，它们的回调将立即执行。
+- 如果有任何脚本使用 `setImmediate()` 被安排，循环将立即结束轮询阶段，进入检查阶段来运行它们。
+- 如果没有等待的 `setImmediate()`，循环将在这里挂起，等待新的 I/O 事件到来。当它们到来时，它们的回调将立即执行。
 
 这个阶段也是 Node 进程决定何时死亡的时候。如果事件循环进入轮询阶段，看到没有挂起的 I/O、没有活跃的计时器、没有立即执行的任务，也没有其他保持其存活的处理程序，它就会得出结论，没有更多工作要做，进程优雅地退出。
 
@@ -233,59 +210,64 @@ Libuv 使用最小堆，因此可以在 O(1) 时间内发现下一个即将到�
 
 #### 用例：食品配送应用的订单确认
 
-⚠️警告
+⚠️ 警告
 
-`setImmediate()` 由于延迟原因解耦了工作，但不是持久的 - 它仅在进程存活时执行。对于关键或保证的后台任务，请使用持久作业队列（RabbitMQ、Redis 队列、Kafka 或数据库作业表）或外部工作员以确保重试和持久性。我在这里使用它作为示例来阐述事件循环。
+`setImmediate()` 由于延迟原因解耦了工作，但不是持久的——它仅在进程存活时执行。对于关键或保证的后台任务，请使用持久作业队列（RabbitMQ、Redis 队列、Kafka 或数据库作业表）或外部工作员以确保重试和持久性。我在这里使用它作为示例来阐述事件循环。
 
-想象你正在构建像 Uber Eats 或 Zomato 这样的食品配送服务的后端。当用户下单时，需要发生两件主要的事情 -
 
-1.  **确认订单** - 将订单详情写入你的主数据库。这是一个关键的 I/O 操作，必须成功完成。
 
-1.  **通知餐厅** - 向餐厅的平板电脑或系统发送通知。这是一个单独的操作，不应延迟用户的确认。
+
+想象你正在构建像 Uber Eats 或 Zomato 这样的食品配送服务的后端。当用户下单时，需要发生两件主要的事情：
+
+1. **确认订单**：将订单详情写入你的主数据库。这是一个关键的 I/O 操作，必须成功完成。
+2. **通知餐厅**：向餐厅的平板电脑或系统发送通知。这是一个单独的操作，不应延迟用户的确认。
 
 你想在数据库写入完成后立即告诉用户他们的订单已确认。餐厅通知可以在几秒钟后发生；它不需要成为同一数据库事务的一部分。
 
-#### `setImmediate()`如何解决这个问题
+#### `setImmediate()` 如何解决这个问题
 
-你会使用`setImmediate()`来解耦餐厅通知和数据库确认。
+你会使用 `setImmediate()` 来解耦餐厅通知和数据库确认。
 
 系统接收一个订单并调用一个函数将其保存到数据库中（一个 I/O 操作）。这个回调将在事件循环的**轮询阶段**运行。
 
-在数据库操作的回调内部，一旦你知道订单已成功保存，你立即使用`setImmediate()`安排餐厅通知。
+在数据库操作的回调内部，一旦你知道订单已成功保存，你立即使用 `setImmediate()` 安排餐厅通知。
 
-事件循环完成轮询阶段，并立即进入**检查阶段**，在那里执行`setImmediate()`回调，向餐厅发送通知。
+事件循环完成轮询阶段，并立即进入**检查阶段**，在那里执行 `setImmediate()` 回调，向餐厅发送通知。
 
 这确保了核心的用户任务（在数据库中确认订单）尽可能快地完成。次要的内部任务（通知餐厅）被可靠地安排在之后发生，而不会减慢主要任务。
 
-简化的代码逻辑看起来是这样的 -
+简化的代码逻辑看起来是这样的：
 
 ```js
 // Function to handle a new food order
 function placeOrder(orderDetails) {
- // 1\. Save order to the database (this is an async I/O operation)
- database.saveOrder(orderDetails, (error, savedOrder) => {
- // This callback runs in the Poll phase after the database write is done.
- if (error) {
- console.error("Failed to save order!", error);
- return;
- }
- console.log(`Order #${savedOrder.id} confirmed in the database.`);
- // 2\. Schedule the restaurant notification to run immediately after this.
- // This decouples the notification from the database logic.
- setImmediate(() => {
- // This code will run in the Check phase, right after the current Poll phase.
- notificationService.sendToRestaurant(savedOrder);
- console.log(`Notification for order #${savedOrder.id} sent to the restaurant.`);
- });
- // We can now immediately respond to the user without waiting for the notification to be sent.
- console.log(`Sending confirmation back to the user for order #${savedOrder.id}.`);
- });
+  // 1. Save order to the database (this is an async I/O operation)
+  database.saveOrder(orderDetails, (error, savedOrder) => {
+    // This callback runs in the Poll phase after the database write is done.
+    if (error) {
+      console.error("Failed to save order!", error);
+      return;
+    }
+
+    console.log(`Order #${savedOrder.id} confirmed in the database.`);
+
+    // 2. Schedule the restaurant notification to run immediately after this.
+    // This decouples the notification from the database logic.
+    setImmediate(() => {
+      // This code will run in the Check phase, right after the current Poll phase.
+      notificationService.sendToRestaurant(savedOrder);
+      console.log(`Notification for order #${savedOrder.id} sent to the restaurant.`);
+    });
+
+    // We can now immediately respond to the user without waiting for the notification to be sent.
+    console.log(`Sending confirmation back to the user for order #${savedOrder.id}.`);
+  });
 }
 ```
 
-### **阶段 6：关闭回调**
+### 阶段 6：关闭回调
 
-蜱虫的最终阶段是清理。它处理“关闭”事件。例如，如果你使用`socket.destroy()`突然销毁一个套接字，那么在这个阶段将会触发`'close'`事件的回调。
+事件循环的最终阶段是清理。它处理“关闭”事件。例如，如果你使用 `socket.destroy()` 突然销毁一个套接字，那么在这个阶段将会触发 `'close'` 事件的回调。
 
 然后，循环检查是否还有任何东西让它保持活跃。如果有，整个周期将重新开始，回到下一个 tick 的计时器阶段。就这样一直进行下去。
 
@@ -297,11 +279,10 @@ function placeOrder(orderDetails) {
 
 为了正确理解，我们需要对我们的术语更加正式一些。
 
-+   **宏任务（或任务）** - 这是指被放入六个事件循环阶段之一的队列中的任何回调。定时器回调？那是宏任务。I/O 回调？宏任务。立即回调？没错，宏任务。事件循环在每个 tick 中从每个阶段的队列中处理宏任务。
+- **宏任务（或任务）**：这是指被放入六个事件循环阶段之一的队列中的任何回调。定时器回调？那是宏任务。I/O 回调？宏任务。立即回调？没错，宏任务。事件循环在每个 tick 中从每个阶段的队列中处理宏任务。
+- **微任务**：这是指被放入一个特殊的高优先级队列中的回调，该队列存在于主循环阶段之外。在 Node 中，有两个这样的队列：`nextTick` 队列和 Promise Jobs 队列。
 
-+   **微任务** - 这是指被放入一个特殊的高优先级队列中的回调，该队列存在于主循环阶段之外。在 Node 中，有两个这样的队列：`nextTick`队列和 Promise Jobs 队列。
-
-这里是执行顺序的金科玉律，你应该将其纹在脑中：在 **任何单一阶段的宏任务** 执行完毕后，运行时会立即执行微任务队列中当前的所有任务，然后再考虑移动到下一个宏任务。 
+这里是执行顺序的金科玉律，你应该将其纹在脑中：在**任何单一阶段的宏任务**执行完毕后，运行时会立即执行微任务队列中当前的所有任务，然后再考虑移动到下一个宏任务。
 
 这非常重要。这意味着微任务可以在宏任务之间插队并执行，甚至来自同一阶段的宏任务。
 
@@ -315,15 +296,18 @@ function placeOrder(orderDetails) {
 
 ```js
 let count = 0;
- function starveTheLoop() {
- console.log(`Starvation call: ${++count}`);
- process.nextTick(starveTheLoop);
+
+function starveTheLoop() {
+  console.log(`Starvation call: ${++count}`);
+  process.nextTick(starveTheLoop);
 }
- // A timer that will never get to run
+
+// A timer that will never get to run
 setTimeout(() => {
- console.log("This will never be logged!");
+  console.log("This will never be logged!");
 }, 1000);
- console.log("Starting the starvation...");
+
+console.log("Starting the starvation...");
 starveTheLoop();
 ```
 
@@ -333,41 +317,25 @@ starveTheLoop();
 
 让我们通过执行那段代码来了解它是如何将事件循环困在永无止境的循环中的。
 
-1.  `let count = 0;` 我们首先设置一个简单的计数器。这只是为了证明我们的函数确实在反复运行。
+1. `let count = 0;` 我们首先设置一个简单的计数器。这只是为了证明我们的函数确实在反复运行。
+2. `function starveTheLoop() { ... }` 这是我们要讨论的代码。我们定义了函数，但还没有发生任何事情。它只是静静地坐在内存中，等待被调用。
+3. `setTimeout(() => { ... }, 1000);` 我们安排了一个定时器。Node.js 看到这个并说：“好吧，酷。大约一秒后，我会把这个回调放入**定时器队列**（一个宏任务队列）以执行。”然后它立即继续。它不会等待第二秒过去。
+4. `console.log("Starting the starvation...");` 这是实际运行的第一个代码片段。这是一个同步操作。它被推入调用栈，将其消息打印到控制台，然后弹出。很简单。
+5. `starveTheLoop();` 这就是陷阱被触发的位置。我们第一次调用我们的函数。接下来发生的情况是：
+   - `starveTheLoop` 被推入调用栈。
+   - 它打印 `Starvation call: ${++count}`。现在控制台显示“Starvation call: 1”。
+   - 现在是关键部分：它调用 `process.nextTick(starveTheLoop)`。这并不会立即调用函数。相反，它将 `starveTheLoop` 函数放入高优先级的 `nextTick` 队列中。
+   - 第一次 `starveTheLoop` 调用完成并被弹出调用栈。
+6. 主脚本现在已执行完毕，调用栈为空。事件循环准备接管。它的任务是检查待处理任务的队列。它应该按阶段工作：检查计时器，检查 I/O 等。**但是**，在它能够移动到*任何*阶段之前，它有一个严格的规则：**“我必须处理整个 `process.nextTick()` 队列，直到它为空。”**
+7. 无解循环开始：
+   - 事件循环查看 `nextTick` 队列，看到我们的 `starveTheLoop` 函数在那里等待。
+   - 它将其拉出并执行它（这是第 #2 次调用）。
+   - 函数打印“饥饿调用：2”。
+   - 然后……它在 `nextTick` 队列中安排了*另一个* `starveTheLoop` 回调。
+   - 第二次调用完成。事件循环再次检查 `nextTick` 队列。它是空的吗？**不是！**有一个新的任务在等待。
+   - 因此，它第三次运行 `starveTheLoop`，打印“饥饿调用：3”并将一个*第四个*作业放回队列中。
 
-1.  `function starveTheLoop() { ... }` 这是我们要讨论的代码。我们定义了函数，但还没有发生任何事情。它只是静静地坐在内存中，等待被调用。
-
-1.  `setTimeout(() => { ... }, 1000);` 我们安排了一个定时器。Node.js 看到这个并说：“好吧，酷。大约一秒后，我会把这个回调放入 **定时器队列**（一个宏任务队列）以执行。”然后它立即继续。它不会等待第二秒过去。
-
-1.  `console.log("Starting the starvation...");` 这是实际运行的第一个代码片段。这是一个同步操作。它被推入调用栈，将其消息打印到控制台，然后弹出。很简单。
-
-1.  `starveTheLoop();` 这就是陷阱被触发的位置。我们第一次调用我们的函数。接下来发生的情况是 -
-
-    +   `starveTheLoop` 被推入调用栈。
-
-    +   它打印 `Starvation call: ${++count}`。现在控制台显示“Starvation call: 1”。
-
-    +   现在是关键部分：它调用 **`process.nextTick(starveTheLoop)`**。这并不会立即调用函数。相反，它将 `starveTheLoop` 函数放入高优先级的 `nextTick` 队列中。
-
-    +   第一次 `starveTheLoop` 调用完成并被弹出调用栈。
-
-1.  主脚本现在已执行完毕，调用栈为空。事件循环准备接管。它的任务是检查待处理任务的队列。它应该按阶段工作：检查计时器，检查 I/O 等。**但是**，在它能够移动到 *任何* 阶段之前，它有一个严格的规则：**"我必须处理整个 `process.nextTick()` 队列，直到它为空。"**
-
-1.  无解循环开始
-
-    +   事件循环查看 `nextTick` 队列，看到我们的 `starveTheLoop` 函数在那里等待。
-
-    +   它将其拉出并执行它（这是第 #2 次调用）。
-
-    +   函数打印 "饥饿调用：2"。
-
-    +   然后...它在 `nextTick` 队列中安排了 *另一个* `starveTheLoop` 回调。
-
-    +   第二次调用完成。事件循环再次检查 `nextTick` 队列。它是空的吗？**不是！** 有一个新的任务在等待。
-
-    +   因此，它第三次运行 `starveTheLoop`，打印 "饥饿调用：3" 并将一个 *第四个* 作业放回队列中。
-
-事件循环完全卡住了。它永远无法完成处理 `nextTick` 队列，因为每次它处理一个项目，该项目就会将另一个项目放回队列中。可怜的 `setTimeout` 回调坐在计时器队列中，耐心地等待它的轮次，但事件循环永远不会通过 `nextTick` 阶段去查看计时器。它已经被有效地 **饿死**。
+事件循环完全卡住了。它永远无法完成处理 `nextTick` 队列，因为每次它处理一个项目，该项目就会将另一个项目放回队列中。可怜的 `setTimeout` 回调坐在计时器队列中，耐心地等待它的轮次，但事件循环永远不会通过 `nextTick` 阶段去查看计时器。它已经被有效地**饿死**。
 
 ### Promise 作业队列
 
@@ -375,13 +343,10 @@ starveTheLoop();
 
 此队列的优先级略低于 `process.nextTick()`。操作顺序始终是：
 
-1.  执行当前宏任务。
-
-1.  清空整个 `nextTick` 队列。
-
-1.  清空整个 Promise 作业队列。
-
-1.  好吧，**现在**我们可以继续到下一个宏任务。
+1. 执行当前宏任务。
+2. 清空整个 `nextTick` 队列。
+3. 清空整个 Promise 作业队列。
+4. 好吧，**现在**我们可以继续到下一个宏任务。
 
 当你 `await` 什么时，你实际上是在将你的 `async` 函数分成两部分。`await` 之前的一切都是同步运行的。函数的其余部分被包装在 `.then()` 中，并作为微任务在此队列中安排，以便在等待的承诺解决后执行。
 
@@ -391,57 +356,52 @@ starveTheLoop();
 
 ```js
 const fs = require("node:fs");
- console.log("1\. Start");
- // Macrotask: Timer
-setTimeout(() => console.log("2\. Timeout"), 0);
- // Microtask: Promise
-Promise.resolve().then(() => console.log("3\. Promise"));
- // Microtask: nextTick
-process.nextTick(() => console.log("4\. nextTick"));
- // Macrotask: I/O
+
+console.log("1. Start");
+
+// Macrotask: Timer
+setTimeout(() => console.log("2. Timeout"), 0);
+
+// Microtask: Promise
+Promise.resolve().then(() => console.log("3. Promise"));
+
+// Microtask: nextTick
+process.nextTick(() => console.log("4. nextTick"));
+
+// Macrotask: I/O
 fs.readFile(__filename, () => {
- console.log("5\. I/O Callback");
- // Macrotask from I/O: Immediate
- setImmediate(() => console.log("6\. Immediate from I/O"));
- // Microtask from I/O: nextTick
- process.nextTick(() => console.log("7\. nextTick from I/O"));
- // Microtask from I/O: Promise
- Promise.resolve().then(() => console.log("8\. Promise from I/O"));
+  console.log("5. I/O Callback");
+
+  // Macrotask from I/O: Immediate
+  setImmediate(() => console.log("6. Immediate from I/O"));
+
+  // Microtask from I/O: nextTick
+  process.nextTick(() => console.log("7. nextTick from I/O"));
+
+  // Microtask from I/O: Promise
+  Promise.resolve().then(() => console.log("8. Promise from I/O"));
 });
- console.log("9\. End");
+
+console.log("9. End");
 ```
 
 此处的输出总是，确定性地：`1, 9, 4, 3, 2, 5, 7, 8, 6`。让我们一步一步地分析原因：
 
-1.  `'1. 开始'` 和 `'9. 结束'` 是同步记录的。所有异步内容都被安排。
-
-1.  主脚本结束。调用栈为空。**黄金法则时间：清空微任务队列！**
-
-1.  `nextTick` 队列总是首先执行。我们记录 `'4. nextTick'`。
-
-1.  接下来是 Promise 作业队列。我们记录 `'3. Promise'`。
-
-1.  微任务队列现在为空。事件循环终于可以开始它的第一次滴答。
-
-1.  **阶段 1：计时器。** 我们的 `setTimeout(..., 0)` 已准备好。宏任务运行，我们记录 `'2. Timeout'`。
-
-1.  循环快速通过接下来的几个阶段。
-
-1.  **阶段 4：轮询**。循环等待 I/O。最终，`fs.readFile`完成。它的回调现在在轮询队列中作为一个宏任务，准备就绪。
-
-1.  宏任务被执行。我们记录`'5\. I/O Callback'`。在这个函数内部，安排了一个新的立即执行、nextTick 和 promise。
-
-1.  I/O 宏任务完成。接下来会发生什么？**黄金法则再次适用！我们必须在继续之前清空微任务**。
-
-1.  检查`nextTick`队列。我们找到一个并记录`'7\. nextTick from I/O'`。
-
-1.  检查 Promise 作业队列。我们找到一个并记录`'8\. Promise from I/O'`。
-
-1.  微任务队列再次为空。循环现在可以从轮询阶段离开的地方继续进行。
-
-1.  **阶段 5：检查**。循环看到了我们安排的`setImmediate`。宏任务运行，我们记录`'6\. Immediate from I/O'`。
-
-1.  循环完成其 tick，没有其他事情可做，进程退出。
+1. `'1. 开始'` 和 `'9. 结束'` 是同步记录的。所有异步内容都被安排。
+2. 主脚本结束。调用栈为空。**黄金法则时间：清空微任务队列！**
+3. `nextTick` 队列总是首先执行。我们记录 `'4. nextTick'`。
+4. 接下来是 Promise 作业队列。我们记录 `'3. Promise'`。
+5. 微任务队列现在为空。事件循环终于可以开始它的第一次滴答。
+6. **阶段 1：计时器。** 我们的 `setTimeout(..., 0)` 已准备好。宏任务运行，我们记录 `'2. Timeout'`。
+7. 循环快速通过接下来的几个阶段。
+8. **阶段 4：轮询。**循环等待 I/O。最终，`fs.readFile` 完成。它的回调现在在轮询队列中作为一个宏任务，准备就绪。
+9. 宏任务被执行。我们记录 `'5. I/O Callback'`。在这个函数内部，安排了一个新的立即执行、nextTick 和 promise。
+10. I/O 宏任务完成。接下来会发生什么？**黄金法则再次适用！我们必须在继续之前清空微任务。**
+11. 检查 `nextTick` 队列。我们找到一个并记录 `'7. nextTick from I/O'`。
+12. 检查 Promise 作业队列。我们找到一个并记录 `'8. Promise from I/O'`。
+13. 微任务队列再次为空。循环现在可以从轮询阶段离开的地方继续进行。
+14. **阶段 5：检查。**循环看到了我们安排的 `setImmediate`。宏任务运行，我们记录 `'6. Immediate from I/O'`。
+15. 循环完成其 tick，没有其他事情可做，进程退出。
 
 看见了吗？这不是魔法。只是规则。
 
@@ -451,23 +411,20 @@ fs.readFile(__filename, () => {
 
 ### 明显和微妙的阻塞器
 
-我们已经把明显的阻塞器打得体无完肤：同步 API 如`fs.readFileSync`和长、CPU 密集型循环。但我甚至看到有经验丰富的开发者被更微妙的阻塞器绊倒，这些阻塞器可能会毒害应用程序的性能。
+我们已经把明显的阻塞器打得体无完肤：同步 API 如 `fs.readFileSync` 和长、CPU 密集型循环。但我甚至看到有经验丰富的开发者被更微妙的阻塞器绊倒，这些阻塞器可能会毒害应用程序的性能。
 
-1.  **大型 JSON 操作**。这是一个狡猾的例子。`JSON.parse()`和`JSON.stringify()`是 100%同步、阻塞的操作。如果你正在处理一个带有大量 JSON 有效负载的 API 请求（想想十或数百兆字节），解析所需的时间可能非常长——你的循环完全冻结时，可能需要数十或数百毫秒。如果你发现自己处于这种情况，可以考虑使用类似`stream-json`的流式 JSON 解析器。
-
-1.  **复杂正则表达式**。编写不良的正则表达式就像一颗定时炸弹。存在一种被称为“灾难性回溯”的讨厌现象，它可能导致正则表达式引擎处理某些字符串时花费指数级的时间。单个恶意用户输入就能触发这种情况，导致正则表达式匹配阻塞 CPU 数秒甚至数分钟。这是一个经典的拒绝服务（DoS）向量。始终，**始终**测试你的正则表达式对“邪恶”字符串，并考虑使用提供保护的库。
+1. **大型 JSON 操作**。这是一个狡猾的例子。`JSON.parse()` 和 `JSON.stringify()` 是 100% 同步、阻塞的操作。如果你正在处理一个带有大量 JSON 有效负载的 API 请求（想想十或数百兆字节），解析所需的时间可能非常长——你的循环完全冻结时，可能需要数十或数百毫秒。如果你发现自己处于这种情况，可以考虑使用类似 `stream-json` 的流式 JSON 解析器。
+2. **复杂正则表达式**。编写不良的正则表达式就像一颗定时炸弹。存在一种被称为“灾难性回溯”的讨厌现象，它可能导致正则表达式引擎处理某些字符串时花费指数级的时间。单个恶意用户输入就能触发这种情况，导致正则表达式匹配阻塞 CPU 数秒甚至数分钟。这是一个经典的拒绝服务（DoS）向量。始终，**始终**测试你的正则表达式对“邪恶”字符串，并考虑使用提供保护的库。
 
 ### 再次探讨 Libuv 线程池
 
-记住那个 Libuv 线程池吗？如果你不记得，我们的下一章将深入探讨 Libuv 本身！重要的是要记住它是一个全局、共享的资源，默认情况下，它只有四个线程。虽然从 JavaScript 的角度来看，像`fs.readFile`和`crypto.pbkdf2`这样的函数*感觉*是异步的，但它们都在等待非常少的实际线程。
+记住那个 Libuv 线程池吗？如果你不记得，我们的下一章将深入探讨 Libuv 本身！重要的是要记住它是一个全局、共享的资源，默认情况下，它只有四个线程。虽然从 JavaScript 的角度来看，像 `fs.readFile` 和 `crypto.pbkdf2` 这样的函数*感觉*是异步的，但它们都在等待非常少的实际线程。
 
 这可能会产生一些令人惊讶的瓶颈。想象一下，一个服务器接收到一个请求，需要从慢速网络驱动器中读取一个文件（`fs.readFile`）并验证密码（`crypto.pbkdf2`）。现在，想象一下五个这样的请求同时到达。
 
-1.  前四个请求将各自向线程池派遣一个任务（假设文件读取先到达）。现在所有四个线程都在忙碌。
-
-1.  第五个请求的 `fs.readFile` 调用被发起。Libuv 尝试将其传递出去，但池已满。现在这个第五个任务必须等待在队列中。
-
-1.  那么前四个请求的密码散列怎么办？它们也必须等待在那个相同的队列中，直到其中一个文件读取完成并释放一个线程。
+1. 前四个请求将各自向线程池派遣一个任务（假设文件读取先到达）。现在所有四个线程都在忙碌。
+2. 第五个请求的 `fs.readFile` 调用被发起。Libuv 尝试将其传递出去，但池已满。现在这个第五个任务必须等待在队列中。
+3. 那么前四个请求的密码散列怎么办？它们也必须等待在那个相同的队列中，直到其中一个文件读取完成并释放一个线程。
 
 突然之间，你的慢速文件系统使你的认证延迟急剧上升。所有使用线程池的应用程序都是相连的。如果你有一个在文件 I/O、DNS 和加密方面负担较重的应用程序，你可能需要认真考虑通过 `UV_THREADPOOL_SIZE` 环境变量增加线程池大小，以避免这种类型的拥堵。
 
@@ -475,41 +432,46 @@ fs.readFile(__filename, () => {
 
 那么你如何知道你的循环是否在挣扎？你必须测量它。不要猜测，要测量。
 
-+   **方法 1：穷人的延迟检查器。** 这是一种低技术手段，感觉有点“黑客”风格，但出人意料地有效，可以快速进行直观检查。
+- **方法 1：穷人的延迟检查器。** 这是一种低技术手段，感觉有点“黑客”风格，但出人意料地有效，可以快速进行直观检查。
 
-    ```js
-    let lastCheck = Date.now();
-    setInterval(() => {
-     const now = Date.now();
-     const delay = now - lastCheck - 1000;
-     if (delay > 50) {
-     // a 50ms delay is pretty noticeable
-     console.warn(`Event Loop Latency: ${delay}ms`);
-     }
-     lastCheck = now;
-    }, 1000);
-    ```
+  ```js
+  let lastCheck = Date.now();
 
-    如果你开始看到警告，这意味着一个简单的 `setInterval` 宏任务被延迟了，这是一个表明其他东西正在占用 CPU 的明显信号。
+  setInterval(() => {
+    const now = Date.now();
+    const delay = now - lastCheck - 1000;
 
-+   **方法 2：`perf_hooks.monitorEventLoopDelay`。** 对于更专业的方法，Node 提供了一个内置的高分辨率工具来完成这个特定的目的。
+    if (delay > 50) {
+      // a 50ms delay is pretty noticeable
+      console.warn(`Event Loop Latency: ${delay}ms`);
+    }
 
-    ```js
-    const { monitorEventLoopDelay } = require("node:perf_hooks");
-    const h = monitorEventLoopDelay();
-    h.enable();
-     // ... your application logic ...
-     // Periodically check the stats
-    setInterval(() => {
-     // The mean is in nanoseconds, so we convert to ms
-     console.log("Event Loop Delay (ms):", h.mean / 1_000_000);
-     h.reset();
-    }, 5000);
-    ```
+    lastCheck = now;
+  }, 1000);
+  ```
 
-    这比 `setInterval` 诡计更准确，并且开销更低。在生产环境中使用这个。
 
-+   **方法 3：`async_hooks`。** 这是重型武器。对于超级高级调试，`async_hooks` 模块允许你追踪你应用程序中每个异步资源的整个生命周期。它非常强大，但也非常复杂。你通常只有在构建开发者工具或 APM（应用程序性能管理）解决方案时才会使用它。
+
+如果你开始看到警告，这意味着一个简单的`setInterval`宏任务被延迟了，这是一个表明其他东西正在占用 CPU 的明显信号。
+
+- **方法 2：`perf_hooks.monitorEventLoopDelay`。** 对于更专业的方法，Node 提供了一个内置的高分辨率工具来完成这个特定的目的。
+
+  ```js
+  const { monitorEventLoopDelay } = require("node:perf_hooks");
+  const h = monitorEventLoopDelay();
+  h.enable();
+  // ... your application logic ...
+  // Periodically check the stats
+  setInterval(() => {
+    // The mean is in nanoseconds, so we convert to ms
+    console.log("Event Loop Delay (ms):", h.mean / 1_000_000);
+    h.reset();
+  }, 5000);
+  ```
+
+  这比`setInterval`诡计更准确，并且开销更低。在生产环境中使用这个。
+
+- **方法 3：`async_hooks`。** 这是重型武器。对于超级高级调试，`async_hooks`模块允许你追踪你应用程序中每个异步资源的整个生命周期。它非常强大，但也非常复杂。你通常只有在构建开发者工具或 APM（应用程序性能管理）解决方案时才会使用它。
 
 ## CPU 密集型和并行工作的策略
 
@@ -517,29 +479,32 @@ fs.readFile(__filename, () => {
 
 ### 将任务卸载到循环中
 
-对于可以分割成更小部分的长任务，你可以使用一个巧妙的技巧来避免阻塞。想法是完成一块工作，然后使用 `setImmediate()` 安排下一块工作。这实际上在块之间将控制权交还给事件循环，允许它处理 I/O 并保持响应。
+对于可以分割成更小部分的长任务，你可以使用一个巧妙的技巧来避免阻塞。想法是完成一块工作，然后使用`setImmediate()`安排下一块工作。这实际上在块之间将控制权交还给事件循环，允许它处理 I/O 并保持响应。
 
 ```js
 // A very long array to process
 const bigArray = Array(1_000_000)
- .fill(0)
- .map((_, i) => i);
+  .fill(0)
+  .map((_, i) => i);
 let sum = 0;
 const CHUNK_SIZE = 1000;
- function processChunk() {
- const chunk = bigArray.splice(0, CHUNK_SIZE);
- for (const item of chunk) {
- sum += item; // Do a little bit of work
- }
- if (bigArray.length > 0) {
- // There's more to do, so yield to the event loop
- // and schedule the next chunk to run ASAP.
- setImmediate(processChunk);
- } else {
- console.log("Processing complete. Sum:", sum);
- }
+
+function processChunk() {
+  const chunk = bigArray.splice(0, CHUNK_SIZE);
+  for (const item of chunk) {
+    sum += item; // Do a little bit of work
+  }
+
+  if (bigArray.length > 0) {
+    // There's more to do, so yield to the event loop
+    // and schedule the next chunk to run ASAP.
+    setImmediate(processChunk);
+  } else {
+    console.log("Processing complete. Sum:", sum);
+  }
 }
- processChunk();
+
+processChunk();
 console.log("Started processing... but the loop is not blocked!");
 ```
 
@@ -551,27 +516,34 @@ console.log("Started processing... but the loop is not blocked!");
 
 我们有一个专门的课程专门讲解`worker_threads`——包括 7 个章节。本节只是一个快速概述。所以，如果你在这里没有完全理解所有细节，请不要担心。只需理解大局即可。
 
-`worker_threads`模块（自 node v12 起稳定）是针对 CPU 密集型工作的现代、权威的解决方案。工作线程不是来自 Libuv 池的线程。它是一个完全独立的 V8 实例，在自己的线程上运行，拥有自己的事件循环和隔离的内存。
+`worker_threads`模块（自 Node v12 起稳定）是针对 CPU 密集型工作的现代、权威的解决方案。工作线程不是来自 Libuv 池的线程。它是一个完全独立的 V8 实例，在自己的线程上运行，拥有自己的事件循环和隔离的内存。
 
 这种隔离是杀手级特性。因为内存不共享，你可以避开所有多线程编程的经典头痛问题，如竞态条件和死锁。你可以通过消息传递通道安全地在主线程和工作线程之间进行通信。
 
 ```js
 // main.js
 const { Worker } = require("node:worker_threads");
- console.log("Main Thread: Kicking off a worker for a heavy task.");
+
+console.log("Main Thread: Kicking off a worker for a heavy task.");
 const worker = new Worker("./heavy-task.js");
- worker.on("message", (result) => {
- console.log(`Main Thread: Got the result back! -> ${result}`);
+
+worker.on("message", (result) => {
+  console.log(`Main Thread: Got the result back! -> ${result}`);
 });
- worker.on("error", (err) => console.error(err));
- // heavy-task.js
+
+worker.on("error", (err) => console.error(err));
+
+// heavy-task.js
 const { parentPort } = require("node:worker_threads");
- let result = 0;
+
+let result = 0;
+
 // A truly, horribly, no-good heavy task
 for (let i = 0; i < 1e10; i++) {
- result += 1;
+  result += 1;
 }
- // Send the result back when we're done
+
+// Send the result back when we're done
 parentPort.postMessage(result);
 ```
 
@@ -591,7 +563,7 @@ parentPort.postMessage(result);
 
 让我们以几个经典的脑筋急转弯来结束，这些脑筋急转弯真正考验你是否已经内化了循环的工作方式。
 
-### 7.1 `setTimeout(..., 0)` 与 `setImmediate()`
+### 7.1 `setTimeout(..., 0)`与`setImmediate()`
 
 这是一个著名的面试问题：这些哪个先运行？答案是令人沮丧的：**这取决于**。
 
@@ -608,9 +580,10 @@ setImmediate(() => console.log("Immediate"));
 
 ```js
 const fs = require("node:fs");
- fs.readFile(__filename, () => {
- setTimeout(() => console.log("Timeout"), 0);
- setImmediate(() => console.log("Immediate"));
+
+fs.readFile(__filename, () => {
+  setTimeout(() => console.log("Timeout"), 0);
+  setImmediate(() => console.log("Immediate"));
 });
 ```
 

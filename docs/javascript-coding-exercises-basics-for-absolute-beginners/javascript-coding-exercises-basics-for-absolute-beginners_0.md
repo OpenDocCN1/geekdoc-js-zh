@@ -1,11 +1,5 @@
+
 # JavaScript 编码练习：零基础学者基础指南
-
-
-
-
-
-
----
 
 ## 小时与分钟
 
@@ -21,15 +15,13 @@
 </body>
 </html>
 ```
-![](img/image00058.jpeg)
 
 ### JAVASCRIPT 代码
 ```javascript
-function time_convert(num)
-{
-  var hours = Math.floor(num / 60); 
+function time_convert(num) {
+  var hours = Math.floor(num / 60);
   var minutes = num % 60;
-  return hours + ":" + minutes;      
+  return hours + ":" + minutes;
 }
 console.log(time_convert(71));
 console.log(time_convert(450));
@@ -42,8 +34,6 @@ console.log(time_convert(1441));
 7:30
 24:1
 ```
-
----
 
 ## 统计元音
 
@@ -63,20 +53,18 @@ console.log(time_convert(1441));
 
 ### JAVASCRIPT 代码
 ```javascript
-function vowel_Count(str)
-{
+function vowel_Count(str) {
   return str.replace(/[^aeiou]/g, "").length;
 }
 console.log(vowel_Count("Python"));
 console.log(vowel_Count("html.com"));
 ```
+
 ### 输出
 ```
 1
 5
 ```
-
----
 
 ## 将给定字符串每个单词的首字母大写
 
@@ -92,12 +80,10 @@ console.log(vowel_Count("html.com"));
 </body>
 </html>
 ```
-![](img/image0059.jpeg)
 
 ### JAVASCRIPT 代码
 ```javascript
-function capital_letter(str)
-{
+function capital_letter(str) {
   str = str.split(" ");
   for (var i = 0, x = str.length; i < x; i++) {
     str[i] = str[i][0].toUpperCase() + str[i].substr(1);
@@ -105,10 +91,9 @@ function capital_letter(str)
   return str.join(" ");
 }
 ```
+
 ### 输出
 ![](img/image0060.jpeg) (Images/image0061.jpeg)
-
----
 
 ## 合并两个字符串并排除第一个字符
 
@@ -137,14 +122,13 @@ console.log(concatenate("PHP","JS"));
 console.log(concatenate("A","B"));
 console.log(concatenate("AA","BB"));
 ```
+
 ### 输出
 ```
 HPS
 AB
 AB
 ```
-
----
 
 ## 创建新字符串
 
@@ -160,7 +144,6 @@ AB
 </body>
 </html>
 ```
-![](img/image0062.jpeg)
 
 ### JAVASCRIPT 代码
 ```javascript
@@ -171,14 +154,13 @@ console.log(without_first_end('JavaScript'));
 console.log(without_first_end('JS'));
 console.log(without_first_end('PHP'));
 ```
+
 ### 输出
 ```
 avarip
 J
 H
 ```
-
----
 
 ## 第一个非重复字符
 
@@ -194,7 +176,6 @@ H
 </body>
 </html>
 ```
-![](img/image0063.jpeg)
 
 ### JAVASCRIPT 代码
 ```javascript
@@ -218,16 +199,13 @@ function find_FirstRepeatedChar(str) {
 }
 console.log(find_FirstRepeatedChar('abacdd'));
 ```
+
 ### 输出
 ```
 e
 ```
 
----
-
 ## 统计字符串中的元音数量
-
-![](img/image0064.jpeg)
 
 ### HTML 代码
 ```html
@@ -256,16 +234,13 @@ function vowel_count(str1) {
 }
 console.log(vowel_count("The quick brown fox"));
 ```
+
 ### 输出
 ```
 5
 ```
 
----
-
 ## 查找字符串中的最长单词
-
-![](img/image0065.jpeg)
 
 ### HTML 代码
 ```html
@@ -294,16 +269,13 @@ function find_longest_word(str) {
 }
 console.log(find_longest_word('Web Development Tutorial'));
 ```
+
 ### 输出
 ```
 Development
 ```
 
----
-
 ## 检查数字是否为质数
-
-![](img/image0066.jpeg)
 
 ### HTML 代码
 ```html
@@ -320,8 +292,7 @@ Development
 
 ### JAVASCRIPT 代码
 ```javascript
-function test_prime(n)
-{
+function test_prime(n) {
   if (n===1) {
     return false;
   }
@@ -338,16 +309,13 @@ function test_prime(n)
 }
 console.log(test_prime(37));
 ```
+
 ### 输出
 ```
 True
 ```
 
----
-
 ## 查找数组中的第二小和第二
-
-![](img/image0067.jpeg)
 
 ### HTML 代码
 ```html
@@ -364,8 +332,7 @@ True
 
 ### JAVASCRIPT 代码
 ```javascript
-function Second_Greatest_Lowest(arr_num)
-{
+function Second_Greatest_Lowest(arr_num) {
   arr_num.sort(function(x,y) {
     return x-y;
   });
@@ -373,25 +340,19 @@ function Second_Greatest_Lowest(arr_num)
   var result = [];
   for(var j=1; j < arr_num.length; j++) {
     if(arr_num[j-1] !== arr_num[j]) {
-```
-
-
-
-
-```javascript
-uniqa.push(arr_num[j]);
-
+      uniqa.push(arr_num[j]);
     }
-  
     result.push(uniqa[1],uniqa[uniqa.length-2]);
-
+  }
   return result.join(',');
 }
 console.log(Second_Greatest_Lowest([1,2,3,4,5]));
 ```
 
 ### 输出
+```
 2,4
+```
 
 ## JavaScript: 获取数据类型
 
@@ -410,8 +371,7 @@ console.log(Second_Greatest_Lowest([1,2,3,4,5]));
 
 ### JavaScript 代码
 ```javascript
-function detect_data_type(value)
-{
+function detect_data_type(value) {
   var dtypes = [Function, RegExp, Number, String, Boolean, Object], x, len;
   if (typeof value === "object" || typeof value === "function") {
     for (x = 0, len = dtypes.length; x < len; x++) {
@@ -428,9 +388,11 @@ console.log(detect_data_type(false));
 ```
 
 ### 输出
+```
 number
 string
 Boolean
+```
 
 ## 相加两个数字
 
@@ -454,21 +416,20 @@ Boolean
 
 ### JavaScript 代码
 ```javascript
-function add_two_digits(n)
-  {
-    return n % 10 + Math.floor(n / 10);
-  }
-console.log(add_two_digits(25))
-console.log(add_two_digits(50))
+function add_two_digits(n) {
+  return n % 10 + Math.floor(n / 10);
+}
+console.log(add_two_digits(25));
+console.log(add_two_digits(50));
 ```
 
-### 输出:
+### 输出
+```
 7
 5
+```
 
 ## 检查给定的正整数
-
-### ![](img/image00068.jpeg)
 
 ### HTML 代码
 ```html
@@ -486,8 +447,7 @@ console.log(add_two_digits(50))
 
 ### JavaScript 代码
 ```javascript
-function test37(x)
-{
+function test37(x) {
   if (x % 3 == 0 || x % 7 == 0) {
     return true;
   }
@@ -501,11 +461,13 @@ console.log(test37(10));
 console.log(test37(11));
 ```
 
-### 输出:
+### 输出
+```
 true
 true
 false
 false
+```
 
 ## 闰年检查
 
@@ -524,8 +486,7 @@ false
 
 ### JavaScript 代码
 ```javascript
-function leapyear(year)
-{
+function leapyear(year) {
   return (year % 100 === 0) ? (year % 400 === 0) : (year % 4 === 0);
 }
 console.log(leapyear(2016));
@@ -536,11 +497,13 @@ console.log(leapyear(100));
 ```
 
 ### 输出
+```
 true
 true
 false
 false
 false
+```
 
 ## 字符串以 'Java' 开头 - 检查
 
@@ -562,8 +525,7 @@ false
 
 ### JavaScript 代码
 ```javascript
-function start_spec_str(str)
-{
+function start_spec_str(str) {
   if (str.length < 4) {
     return false;
   }
@@ -580,10 +542,12 @@ console.log(start_spec_str("Java"));
 console.log(start_spec_str("Python"));
 ```
 
-### 输出:
+### 输出
+```
 true
 true
 false
+```
 
 ## 查找最 100 的值
 
@@ -594,7 +558,6 @@ false
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  ![](img/image00069.jpeg)
 </head>
 <body>
 </body>
@@ -615,33 +578,19 @@ function near_100(x, y) {
     }
   }
 }
+console.log(start_spec_str("JavaScript"));
+console.log(start_spec_str("Java"));
+console.log(start_spec_str("Python"));
 ```
 
-
-
-
+### 输出
 ```
-if (front == 'Java')
-{
-  return true;
-}
-else
-{
-  return false;
-}
-```
-`console.log(start_spec_str("JavaScript"))`
-`console.log(start_spec_str("Java"))`
-`console.log(start_spec_str("Python"))`
-
-### 输出：
 true
 true
 false
+```
 
 ## 温度转换
-
-![](img/image00077.jpeg)
 
 ### HTML 代码
 ```html
@@ -658,15 +607,13 @@ false
 
 ### JAVASCRIPT 代码
 ```javascript
-function cToF(celsius)
-{
+function cToF(celsius) {
   var cTemp = celsius;
   var cToFahr = cTemp * 9 / 5 + 32;
   var message = cTemp+'\xB0C is ' + cToFahr + ' \xB0F.';
   console.log(message);
 }
-function fToC(fahrenheit)
-{
+function fToC(fahrenheit) {
   var fTemp = fahrenheit;
   var fToCel = (fTemp - 32) * 5 / 9;
   var message = fTemp+'\xB0F is ' + fToCel + '\xB0C.';
@@ -678,4 +625,3 @@ fToC(45);
 
 ### 输出
 ![](img/image00078.jpeg)
-

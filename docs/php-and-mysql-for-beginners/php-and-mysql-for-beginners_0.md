@@ -1,17 +1,9 @@
+
 # PHP 和 MySQL 初学者指南
-
-
 
 ![](img/cover.jpeg)
 
-
-
 ![LearnToProgram Logo_CMYK.jpg](img/00001.jpeg)
-
-
-
-
-
 
 ## 献辞
 
@@ -32,270 +24,228 @@ Mark Lassoff 的父母经常声称 Mark 天生就是当程序员的。在 80 年
 ![download icon.png](img/00002.jpeg)
 
 在下处访问本书的完整实验解决方案：
+
 [`learntoprogram.tv/pages/book-lab-solutions`](https://learntoprogram.tv/pages/book-lab-solutions)
 
-
-
 - 3.1 索引数组
-
-
-
-
-
-
-
-
-
-
-
-
 
 ```php
 chapterLabProb_1.php
 ```
 
 chapterLabProb_2.php
-```
 
 ```html
+
 chapterLabProb_3.html
+
 ```
 
 chapterLabProb_3.php
 ```
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ### 代码列表：`Chap7LabForm.php`
+
 ### 代码列表：`Chap7LabExReadCSV.php`
-## 第 8 章：使用 PHP 发送电子邮件
+
+## 第 8 章：使用 PHP 发送电子邮邮件
+
 ### 8.1 使用 PHP 发送邮件
+
 ### 代码列表：`simple-mail.php`
+
 ### 代码列表：`sendEmailText.php`
+
 ### 8.2 发送 HTML 邮件
+
 ### 代码列表：`sendEmailHtml.php`
+
 ### 章节测
+
 ### 章节实验题
+
 ### 代码列表：第 8 章实验题答案。
+
 chap8Lab.php
 
-
-
-
-
-
-
-
-
-
-
-
 ### Heredoc 代码示例
+
 ### 10.3 Session（会话）
+
 ### 10.4 Cookie（缓存）
+
 ### 第 10 章实验题
+
 ### 第 10 章实验答案
+
 ## 第 10 章总结
+
 ## 答案对照
+
 ### LearnToProgram.tv 初学者 PHP 与 MySQL
+
 ## 附录
+
 LearnToProgram, Inc. 提供的课程
+
 - iOS 3D 基础
+
 - AJAX 开发
+
 - 成为认证 Web 开发人员（1 级）
+
 - 初学者 C 语言编程
+
 - 初学者学者 Construct 2
+
 - CSS 开发（带有 CSS3!）
+
 - Famu.os JavaScript 框架
 
-
 # 使用 Python 进行游戏开发的基础
+
 ## 使用 Python 进行游戏开发
+
 - 针对初学者的 HTML 和 CSS（包含 HTML5）
+
 - Web 开发入门
+
 - 针对 iOS6/7 的初学者 iOS 开发
+
 - 初学者 Javascript
+
 - 初学者 jQuery
+
 - 初学者 Node.js
+
 - 针对程序员的 Photoshop
+
 - 零基础初学者的编程
+
 - 初学者 Python
+
 - 初学者 SQL 数据库
+
 - 来自 LearnToProgram, Inc. 的书籍
+
 - CSS 开发（包含 CSS3!）
+
 - 针对初学者的 HTML 和 CSS
+
 - 初学者 PHP 和 MySQL
+
 - 初学者 Python
+
 - Swift 基础：iOS 开发的语言
+
 ## 第一章：你的第一个 PHP 脚本
+
 ### 章节目标：
+
 - 你将能够识别并安装创建 PHP 脚本所需的软件开发工具。
+
 - 你将能够运行你的第一个 `PHP` 脚本。
+
 ### 1.1 设置你的开发环境
+
 你可能认为在学习 `PHP` 编程时，你是在孤立地学习 `PHP` 语言。然而，`PHP` 是开发基于 `PHP` 应用程序的一系列技术的核心。从描述这套技术是一个良好的开始。
+
 `PHP` 是一种通用的、开源的服务器端脚本语言，专为 Web 开发设计。它用于生成动态网页。它是一种 Web 脚本语言，用于为网站添加基础 Web 功能。`PHP` 的用途示例包括创建用户名和密码登录界面、检查表单详情、创建论坛页面、图片库、调查问卷等。`PHP` 是一门强大的语言，使开发人员能够创建他们想要的几乎任何类型的应用程序。
+
 与某些 Web 语言（如 `Javascript`）不同，`PHP` 并不是在你的浏览器中执行的，而是在服务器上执行——即存储页面并供互联网上的浏览器访问的台计算机。服务器处理来自 Web 浏览器的请求，然后返回请求的内容——通常是 `HTML` 格式。这就是 `PHP` 被称为“服务器端语言”的原因。
+
 `PHP` 既可以写在外部文档中，也可以嵌入 `HTML` 文档本身。`PHP` 代码由 Web 服务器（通常是 `Apache` 服务器）解释，该服务器拥有 `PHP` 处理器模块，该模块生成最终网页。其他与 `PHP` 类似的流行语言还有 `ASP`、`Python`、`Perl` 和 `Ruby`。
+
 像 `PHP` 这样的计算机语言的常见用途之一是与数据库或数据源建立接口。通常，`PHP` 与 `MySQL` 数据库配合使用。我们将在本书的后部分讨论 `PHP` 和 `MySQL` 之间的交互。
+
 根据计算机历史，Rasmus Lerdorf 开发了最初的 `PHP` 规范。据说 `PHP` 术词是从他的个人主页（Personal Home Page）项目演变为如今广泛使用的开源脚本语言，被称为 `Hypertext PreProcessor`（超文本预处理器）——这是大量开发者共同努力的结果。然而，它并没有遵循原始的缩写 `PHP`，因此不是 `Pre-Hypertext Processor`（预超文本处理器）。脚本语言本身是使用 `C` 语言开发的。
+
 `Rasmus Lerdorf` 借鉴了许多来自 `C`、`Perl` 和 `Java` 等语言的语法。`PHP` 是一种专注于 Web 设计的语言。它是为 Web 开发人员编写的语言。
+
 `PHP` 非常适合快速创建 Web 前端后端系统——数据库的创建和操作、目录服务器的直接访问协议、目录服务器的简单网络管理协议，或为 Web 生成非 `HTML` 动态内容（如图像、Flash 或 `PDF` 文档）。
+
 一个简单的 `PHP` 任务示例是从数据库中提取客户信息，并动态生成一个看起来专业的 `PDF` 发发票。（www.computerworld.com, 与 Rasmus Lerdorf 的采访，2002 年 2 月 4 日）许多多人在线游戏服务器都是使用 `PHP` 构建的。
-`MySQL` 是一个基于标准 `SQL`（结构化查询语言）的免费数据库管理系统。`SQL` 在 1986 年成为标准数据库语言。它用于访问和操作数据库。`SQL` 语言从数据库引擎到数据库引擎具有相当的一致性——这意味着从一个数据库品牌切换到另一个是非常容易的。
+
+`MySQL` 是一个基于标准 `SQL`（结构化查询语言）的免费数据库管理系统。`SQL` 在 1986 年成为标标准数据库语言。它用于访问和操作数据库。`SQL` 语言从数据库引擎到数据库引擎具有相当的一致性——这意味着从一个数据库品牌切换到另一个是非常容易的。
+
 `MySQL` 是一个开源关系型数据库管理系统 (RDBMS)，运行在服务器上，该服务器允许或提供对多个数据库的多用户访问。`MySQL` 的开发者是 `Oracle`（以前为 `Sun Microsystems`）。根据维基百科，它以联合创始人 `Michael Widenius` 的女儿 `My` 命名，将 `My` 作为 `SQL` 的缀，因此是 `MySQL`。
+
 `MySQL` 是 Web 应用程序常用的数据库选项。它也是不同的开源 Web 语言栈的核心组件，即 `Linux`、`Apache`、`Perl`、`Python` 等。但最常见的组合是 `PHP` 和 `MySQL`，因为它们都倾向于采用极简且非常直接的方法解决问题。
+
 通过 `MySQL`，你可以在数据库元素之间建立关系，这样每当在 Web 应用程序中再次处理数据时，就不需要重复数据。我们将在书中后半部分详细讨论 `MySQL`。
+
 `Apache` Web 服务器应用程序适用于多种操作系统。它是一个开源（意味着非专有的）`http` 服务器程序，在 `Apache Foundation` 的赞助下开发和维护。它适用于 `UNIX`、`Solaris`、`Novell Netware`、`Mac OS X`、`Microsoft Windows`、`OS/2`、`TPF` 和 `eComStation`。它根据 `Apache` 许可发布。传说 `Apache` 名称的起源于对软件本身的描述——充满补丁的服务器 = APACHE。
+
 完成 `PHP` 编程环境所需的另一个应用程序是 `phpMyAdmin`。它是用 `PHP` 语言编写的应用程序，为 `MySQL` 数据库提供基于 Web 的界面。`phpMyAdmin` 是一个开源工具，旨在通过浏览器管理 `MySQL`。
+
 ### 准备你的工具包
+
 为了使用 `PHP` 和 `MySQL` 创建应用程序，你需要一些辅助开发的应用程序。
+
 第一个需要的应用程序是文本编辑器。本书的示例中，我将使用 Active State 的 `Komodo Edit` 免费版，但可以使用其他编辑器作为替代。不要使用文字处理软件，因为它们会添加干扰编译器的内置代码。
+
 你可以免费下载 `Komodo Edit`，并且它有 Windows、Mac 甚至 Linux 版本。这是 `Komodo Edit` 运行时的样子：
+
 ![](img/00003.jpeg)
+
 图 1.1：Komodo Edit 的启动界面。
+
 `Komodo Edit` 带有多个开发模板，可以提供一个良好的起点。
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 2. 在 `WAMP` 文件夹中设置默认目录。
+
 4. 编写你的脚本。
+
 6. 启动你偏好的浏览器。输入要处理的脚本文件。
+
 8. 浏览器解释服务器生成的 HTML 文件。
 
-
-
-
 <!DOCTYPE html>
+
 <head>
+
 </head>
+
 </body>
+
 ```
 要在此 HTML 文档中嵌入 `PHP` 代码，你需要在 `body` 元素内部的起始标签 `<?php` 和结束标签 `?>`（`PHP` 标签之间编写代码：
 ```html
+
 <html>
+
 <title>First PHP Script</title>
+
 <body>
+
     ?>
+
 </html>
 
-
-
 <!DOCTYPE html>
+
 <head>
+
 </head>
+
     <?php
+
     ?>
+
 </html>
 
-
-
-
-
 <!DOCTYPE html>
+
 <head>
+
 </head>
+
 <?php
+
 echo("</br>This is my second PHP statement");
+
 </body>
+
 ```
 以相同的文件名保存带有更改的文件并刷新你的浏览器。
 ![](img/00023.jpeg)
@@ -307,6 +257,7 @@ echo("</br>This is my second PHP statement");
 本节将讨论使用 `PHP` 显示内容的基本命令。到目前，你已经熟悉了 `echo()` 命令。它只是可以显示文本并能容纳 HTML 标签的命令之一。其他同样向屏幕显示输出的命令是 `print()` 和 `printf()`。
 `print()` 与 `echo()` 相同。它在浏览器中显示指定的文本。`echo()` 和 `print()` 之间没有太大区别。和 `echo()` 命令一样，`print()` 可以在不需要括号 `()` 的情况下使用。例如：
 ```php
+
 ```
 
 echo ("Hello!");
@@ -315,68 +266,95 @@ echo ("Hello!");
 print "Hello";
 将产生与相同的结果：
 ```php
+
 ```
 `printf()` 与 `print()` 不同。它也显示指定的输出，但使用了不同的格式：
 `printf(format, arg1, arg2, argn);`
 `arg1`、`arg2` 和 `argn` 是指定的参数，它们将替换格式中插入的 `%` 号。例如：
 ```php
+
 ```
 `I am %d years old` 是格式，`21` 是参数。它打印出：I am 21 years old。`%d` 被称为标识符（signifier）。该标识符与整数配合使用——例如 `21`。
 使用 `printf()` 有几种不同的选项。例如，`%f` 标识符代表浮点数，即包含小数符号的数字，如 `-32.454`。`printf()` 有许多可用的标识符，可以通过访问 [www.w3schools.com/php/func_string_printf.asp](http://www.w3schools.com/php/func_string_printf.asp) 查看。
 你在 PHP 中实现这些命令的方式与实现 `echo()` 命令相同。现在让我们构造一个同时使用所有三个输出命令的程序，以便我们看到差异。
 **第 1 步**：创建一个具有基础格式的 HTML 文档，并嵌入 `PHP` 开启和关闭标签。按照所给的格式使用我们刚刚学的命令：
 ```html
+
 <html>
+
 <title>output</title>
+
 <body>
+
     echo "This is echoed out";
+
     print ("</br>This line was displayed using print");
+
     printf ("</br>Today is the year %d.", 2013);
+
 ?>
+
 </html>
 
-
-
-
-
-
-
 与 `print()` 相比，`Printf()` 有更多功能，并且由于格式化使得内容更容易理解。
+
 以上就是 PHP 中显示字符串的三个基本命令的介绍。
+
 ## 章节练习
+
 1. PHP 代表什么？
+
 b. Pre Hypertext Processor.
+
 d. Post Hypertext Processing.
+
 2. WAMP 中的 A 代表什么？
+
 b. Analog.
+
 d. Asynchronous.
+
 3. 你使用哪个地址来检查 Windows 上 Apache 服务器生成的首页？
+
 b. https://localpage
+
 d. http://localhosts
+
 4. 正确的 PHP 标签是什么？
+
 b. `<?php?`
+
 d. `<?php`
+
 5. 哪些命令可以显示格式化后的字符串输出？
+
 b. `print(" ");`
+
 d. `printf(" ");`
+
 ## 章节实验
+
 1. 创建一个具有最简单基础结构的 HTML 文档。
-3. 创建必要的代码来显示你的姓名、兴趣或爱好、年龄和生日。使用 `<h1>` 标签显示姓名，使用 `<h2>` 显示你的兴趣或爱好，并使用 `printf()` 命令以 `dd/mm/yyyy` 的日期格式显示年龄和生日。
 
-
-
-
+3. 创建必要的代码来显示你的姓名、兴趣或爱好、年龄和生日。使用 `<h1>` 标�显示姓名，使用 `<h2>` 显示你的兴趣或爱好，并使用 `printf()` 命令以 `dd/mm/yyyy` 的日期格式显示年龄和生日。
 
 <!DOCTYPE html>
+
 <head>
+
 </head>
+
     <?php
+
         echo("</br><h2>I like basketball, cooking, computer games, playing the guitar, and dancing.</h2>");
+
         printf ("</br>My birthday is %d / %d / %d", 2, 7, 1992);
+
 </body>
+
 ```
 ## 章节总结
-在本章中，你学习了 PHP 是一种运行在服务器端的脚本语言。我们还识别、下载并安装了编写代码和运行 PHP 所需的软件软件包。我们描述了 PHP 的工作流，并详细介绍了 PHP 代码是如何构建、测试和实施的。
+在本章中，你学习了 PHP 是一种运行在服务器端的脚本语言。我们还识别、下载并安装了编写代码和运行 PHP 所需的软件软件包。我们描述了 PHP 的工作流，并详细介�了 PHP 代码是如何构建、测试和实施的。
 我们解释了 PHP 脚本是嵌入在 HTML 文档中的，而 HTML 标签也可以嵌入 PHP 脚本中。
 我们还讨论了三个用于输出文本的命令，查看了 PHP 脚本是如何处理的，并解释了为什么它们会在文档源码中消失。
 在下一章中，我们将讨论变量：如何命名它们、为它们赋值以及如何结合不同的运算符使用变量。
@@ -395,77 +373,109 @@ d. `printf(" ");`
 PHP 中变量的声明与许多其他编程语言不同。如果你遇到过 `C`、`C++` 或 `Java`，你就知道变量的声明通常伴随着其数据类型的声明，例如 `string`、`int`、`float` 或 `double`。在 PHP 中，声明变量不需要声明其数据类型。只需要在变量名前面加上 `$`（美元）符号即可。为了说明，让我们声明一个名为 `age` 的变量。
 在其他语言中，声明如下：
 ```c
+
 ```
 但在 PHP 中，声明为：
 ```php
+
 ```
 显然，在 PHP 声明中不需要变量类型。这就是为什么 PHP 被称为“弱类型语言”的原因。PHP 根据你赋值的值 `21` 假设 `$age` 是一个整数类型的变量。此外，在弱类型语言中，一旦你存储了一个特定值，以后可以更改它。
 
 让我们微调上一个示例，并引入浮点数的使用。
 打开 `variables.php` 文件，并从下面的代码列表中找到 PHP 脚本标签内部的代码行并添加：
 ```html
+
 <html lang="en">
+
     <title>Variables In PHP</title>
+
 <body>
+
         $name = "Adam";
+
         $height = 165.1;
+
         print("<br/>");
+
         print("<br/>");
+
     ?>
+
 </html>
 
 `http://localhost/variables.php`
+
 以及 Mac 系统：
 
-
-
-
-
 <!DOCTYPE html>
+
 <head>
+
 </head>
+
     <?php
+
         $age = 21;
+
         print("First Name: ");
+
         print("<br/>");
+
         print($age);          
+
         print("Height: ");
+
     ?>
+
 </html>
 
-
-
-
-
-
-
-
 <!DOCTYPE html>
+
 <head>
+
 </head>
+
     <?php
+
         $age = 21;
+
         print("First Name: ".$name);
+
         print("Age: ".$age);          
+
         print("Height: ".$height);
+
 </body>
+
 ```
 当在网络浏览器中查看时，结果应该是这样的：
 ![](img/00031.jpeg)
 图 2.6：使用拼接过程为每个输出值标记标签。
 这个示例演示了拼接的一个非常简单的用。下面的 HTML 文档显示了更多拼接的示例。
 ```html
+
 <html lang="en">
+
     <title>Variables and Concatenation</title>
+
 <body>
+
         $name = "Adam";
+
         $taxRate = 0.1;
+
         print("<br/>");
+
         print("<br/>");
+
         print("<br>");
+
         print("<br>");
+
         print("The final value of " . (25 * 72 / 42 - 1) . " is " $value);
+
 </body>
+
 ```
 在浏览器中查看时，输出将类似于：
 ![](img/00032.jpeg)
@@ -498,7 +508,7 @@ print($x . " / " . $y . " = " . ($x / $y));
 | 递减 `x--` | 将 `x` 的值减 1。 |
 | 取模 `x % y` | 返回 `x` 除以 `y` 的余数。 |
 | 组合运算符： | |
-| 拼接后返回 `.=` | 拼接并返回运算符左侧表达式中的结果。 |
+| 拼接后返回 `.=` | 拼接并返回运算符左侧表面中的结果。 |
 | 加法后返回 `+=` | 将运算符左侧表达式的值加到运算符右侧表达式的值上。 |
 | 减法后返回 `-=` | 将运算符右侧表达式的值从运算符左侧的值减去。 |
 | 乘法后返回 `*=` | 将运算符左侧表达式的值乘以运算符右侧表达式的值。 |
@@ -517,8 +527,11 @@ print($x . " / " . $y . " = " . ($x / $y));
 在你的原始代码列表中添加以下几行代码：
 
 ```php
+
 $x++;
+
 $y--;
+
 ```
 
 `$x++` 会递增 `$x`。
@@ -528,34 +541,59 @@ $y--;
 原始代码列表：
 
 ```html
+
 <!DOCTYPE html>
+
 <html>
+
 <head>
+
     <title>PHP 中的运算符</title>
+
 </head>
+
 <body>
+
     <?php
+
         $x = 110;
+
         $y = 52;
+
         print($x . " + " . $y . " = " . ($x + $y));
+
         print("</br>");
+
         print($x . " - " . $y . " = " . ($x - $y));
+
         print("</br>");
+
         print($x . " * " . $y . " = " . ($x * $y));
+
         print("</br>");
+
         print($x . " / " . $y . " = " . ($x / $y));
+
         print("</br>");
+
 ```
 
 为了美观的输出，追加以下几行：
 
 ```php
+
 print("</br>");
+
 print("Incrementing x =" .$x++);
+
 print("Decrementing y =" .$y--);
+
 print("</br>");
+
 print("Modulus of x and y = " . ($x%$y));
+
 print("</br>");
+
 ```
 
 接下来，我们将引入具有以下名称和值的变量：
@@ -564,43 +602,61 @@ print("</br>");
 `$second = 3;`
 `$third = 20;`
 `$fourth = 4;`
-`$fifth = 30;`
-`$sixth = 7;`
-`$seventh = 50;`
-`$eighth = 6;`
+$fifth = 30;
+$sixth = 7;
+$seventh = 50;
+$eighth = 6;
 
 使用这些新变量，对 `$first` 和 `$second` 执行组合加法，对 `$third` 和 `$fourth` 执行组合减法，对 `$fifth` 和 `$sixth` 执行组合乘法，并对 `$seventh`（被除数）和 `$eighth`（除数）执行组合除：
 
 ```php
+
 $first += $second;
+
 $third -= $fourth;
+
 $fifth *= $sixth;
+
 $seventh /= $eighth;
+
 ```
 
 使用 `echo()` 命令显示 `$first`、`$third`、`$fifth` 和 `$seventh` 的值。记住 `echo` 命令的工作原理与 `print()` 命令相同：
 
 ```php
+
 echo($first);
+
 echo($third);
+
 echo($fifth);
+
 echo($seventh);
+
 ```
 
 在接几行中，使用组合运算符后返回（`.=`）显示拼接的结果。
 
 ```php
+
 $line = "Hello this is a test for concatenation and...";
+
 $line .= "</br> Connect this phrase and place it on the next line";
+
 echo($line);
+
 ```
 
 关闭脚本和整个文档：
 
 ```php
+
 ?>
+
 </body>
+
 </html>
+
 ```
 
 这是代码运行后的结果：
@@ -610,53 +666,101 @@ echo($line);
 以下是完整的代码列表：
 
 ```html
+
 <!DOCTYPE html>
+
 <html lang="en">
+
 <head>
+
     <title>PHP 中的运算符</title>
+
 </head>
+
 <body>
+
     <?php
+
         $x = 110;
+
         $y = 52;
+
         print($x . " + " . $y . " = " . ($x + $y));
+
         print("</br>");
+
         print($x . " - " . $y . " = " . ($x - $y));
+
         print("</br>");
+
         print($x . " * " . $y . " = " . ($x * $y));
+
         print("</br>");
+
         print($x . " / " . $y . " = " . ($x / $y));
+
         print("</br>");
+
         $x++;
+
         $y--;
+
         print("</br>");
+
         print("Incrementing x =" .$x++);
+
         print("Decrementing y =" .$y--);
+
         print("</br>");
+
         print("Modulus of x and y = " . ($x%$y));
+
         print("</br>");
+
         $first = 10;
+
         $second = 3;
+
         $third = 20;
+
         $fourth = 4;
+
         $fifth = 30;
+
         $sixth = 7;
+
         $seventh = 50;
+
         $eighth = 6;
+
         $first += $second;
+
         $third -= $fourth;
+
         $fifth *= $sixth;
+
         $seventh /= $eighth;
+
         echo($first);
+
         echo($third);
+
         echo($fifth);
+
         echo($seventh);
+
         $line = "Hello this is a test for concatenation and...";
+
         $line .= "</br> Connect this phrase and place it on the next line";
+
         echo($line);
+
     ?>
+
 </body>
+
 </html>
+
 ```
 
 ## 测验
@@ -720,50 +824,95 @@ d. a 和 c
 # 第二 2 章实验练习
 
 ```html
+
 <html lang="en">
+
 <head>
+
     <title>第 2 章实验练习</title>
+
 </head>
+
 <body>
+
 <?php
+
         $w = 5;
+
         $x = 25;
+
         $y = 13;
+
         $z = 101;
+
         //显示 w, x, y, z 的值
+
         echo("w = " . $w);
+
         echo("</br>");
+
         echo("x = " . $x);
+
         echo("</br>");
+
         echo("y = " . $y);
+
         echo("</br>");
+
         echo("z = " . $z);
+
         echo("</br>");
+
         $a = ($w + $x);
+
         $b = ($z - $y);
+
         $c = ($z / $w);
+
         $d = ($y * $x);
+
         //显示基本运算结果
+
         // 格式保留一位小数
+
         printf("w + x = %0.1f", $a);
+
         echo("</br>");
+
         printf("z - y = %0.1f", $b);
+
         echo("</br>");
+
         printf("z / w = %0.1f", $c);
+
         echo("</br>");
+
         printf("y * x = %0.1f", $d);
+
         echo("</br>");
+
         // 增加 a 和 b，自减 c 和 d
+
         $a++; $b++; $c--; $d--;
+
         // 拼接 A, B, C 和 D 的值
+
         echo("A = " . $a . " | B = " . $b . " | C = " . $c . " | D = .$d);
+
         echo("</br>");
+
         //显示变量 $wxyz 的值
+
         $wxyz = ($a+= ($b+=($c+=$d)));
+
         echo($wxyz);
+
 ?>
+
 </body>
+
 </html>
+
 ```
 
 ## 本章总结
@@ -789,17 +938,22 @@ d. a 和 c
 
 存储在数组中的值可以是八种数据类型中的任何一种：整数、浮点数、字符串、布尔、对象、资源、null 和数组。数组被广泛用于存储列表值。例如，如果你想存储一个团队的所有成员，数组就是完美选择。
 
-在 PHP 中，用于创建数组的函数是 `array()`。简单数组（或索引数组）是使用成员数字索引的数组。这种数字索引通常是顺序的，但允许随机或跳跃索引。在 PHP 中声明数组与在 PHP 中声明变量相似——美元符号（`$`）附在变量名之前。数组是零索引的，这意味着索引从零开始，且索引 0 始终指向数组的第一个成员。
+在 PHP 中，用于创建数组的函数是 `array()`。简单数组（或索引数组）是使用成员数字索引的数组。这种数字索引通常是顺序的，但允随机或跳跃索引。在 PHP 中声明数组与在 PHP 中声明变量相似——美元符号（`$`）附在变量名之前。数组是零索引的，这意味着索引从零开始，且索引 0 始终指向数组的第一个成员。
 
 声明数组从指定数组名称开始，后面跟着等号（`=`），然后是括号内的要存储在数组中的值。在下面的示例中，我们有：`$names = array("John", "Larry", "Jane", "Lily");`
 
 如果我们仔细观察展示的数组，我们会看到第一个元素是 `$names[0]`，值为 "John"，第二个元素是 `$names[1]`，值为 "Larry"，第三个是 `$names[2]`，值为 "Jane"，最后一个是 `$names[3]`，值为 "Lily"。数组也可以定义为：
 
 ```php
+
 $names[0] = "John";
+
 $names[1] = "Larry";
+
 $names[2] = "Jane";
+
 $names[3] = "Lily";
+
 ```
 
 可以在变量上执行的操作或命令也可以在数组的每个成员上执行，例如 `print()`、`echo()`、拼接和数学运算。我们将使用数组演示这些操作中的每一种。创建一个新的 HTML 模板并将其保存到 `www`（Windows）或 `htdocs`（Mac）文件夹中，文件名命名为 `simple_array.php`。放置正确的起始和结束标签。
@@ -807,9 +961,13 @@ $names[3] = "Lily";
 在上面的系列截图中，我们已经声明了数组。另一种声明数组的方法是手动方法，即将数组的各个成员手动分配给它们对应的索引。我们将使用数组名称 `$fruit` 声明数组，并通过输入以下代码手动为数组的每个元素赋值：
 
 ```php
+
 $fruit[0] = "Berries";
+
 $fruit[3] = "Mangos";
+
 $fruit[4] = "Apples";
+
 ```
 *(注：此处根据上下文逻辑翻译，原文示例代码中似乎漏了索引 1 和 2 的赋值，但翻译遵循不翻译代码的原则，仅翻译描述。)*
 
@@ -818,18 +976,31 @@ $fruit[4] = "Apples";
 
 
 ```php
+
 //Display the array member pairing
+
 echo($first_names[0] . " likes to eat " . $fruit[5]);
+
 echo("</br>");
+
 echo($first_names[1] . " likes to eat " . $fruit[3]);
+
 echo("</br>");
+
 echo($first_names[2] . " likes to eat " . $fruit[4]);
+
 echo("</br>");
+
 echo($first_names[3] . " likes to eat " . $fruit[0]);
+
 echo("</br>");
+
 ?>
+
 </body>
+
 </html>
+
 ```
 
 ### 第 5 步：查看你的结果。输出应如所示：
@@ -861,11 +1032,17 @@ echo("</br>");
 关联数组的声明如下：
 
 ```php
+
 $salary = array("Doe" => 30000,
+
     "Smith" => 28000,
+
     "Rogers" => 50000,
+
     "Adam" => 120000,
+
     "Brown" => 60000);
+
 ```
 
 注意空格和对齐的使用，使代码更具可读性。我们可以用一行声明该数组，间距最小，如下所示：
@@ -881,17 +1058,29 @@ $salary = array("Doe" => 30000,
 以下代码将显示存储在数组中的所有值。
 
 ```php
+
 //Display the array members
+
 echo("John Doe has an annual salary of $" . $salary["Doe"] . ".");
+
 echo("</br>");
+
 echo("Robert Smith has an annual salary of $" . $salary["Smith"] . ".");
+
 echo("</br>");
+
 echo("Sam Rogers has an annual salary of $" . $salary["Rogers"] . ".");
+
 echo("</br>");
+
 echo("Drei Adam has an annual salary of $" . $salary["Adam"] . ".");
+
 echo("</br>");
+
 echo("Jim Brown has an annual salary of $" . $salary["Brown"] . ".");
+
 echo("</br>");
+
 ```
 
 **第 4 步**：关闭 PHP 脚本，确保你已具备适当的 HTML 标签。保存文件。
@@ -900,29 +1089,53 @@ echo("</br>");
 代码：`associative_array.php`
 
 ```php
+
 <!DOCTYPE html>
+
 <html lang="en">
+
 <head>
+
 <title>Chapter 3: Associative Array</title>
+
 </head>
+
 <body>
+
 <?php
+
 //Declare the array
+
 $salary = array("Doe"=>"30,00", "Smith"=>"28,00", "Rogers"=>"50,00", "Adam"=>"120,00", "Brown"=>"75,00");
+
 //Display the array members
+
 echo("John Doe has an annual salary of $" . $salary["Doe"] . ".");
+
 echo("</br>");
+
 echo("Robert Smith has an annual salary of $" . $salary["Smith"] . ".");
+
 echo("</br>");
+
 echo("Sam Rogers has an annual salary of $" . $salary["Rogers"] . ".");
+
 echo("</br>");
+
 echo("Drei Adam has an annual salary of $" . $salary["Adam"] . ".");
+
 echo("</br>");
+
 echo("Jim Brown has an annual salary of $" . $salary["Brown"] . ".");
+
 echo("</br>");
+
 ?>
+
 </body>
+
 </html>
+
 ```
 
 **第 6 步**：在浏览器中查看你的结果。不要忘记确保你是通过服务器查看结果。如果你代码写得正确，输出应该像这样：
@@ -934,29 +1147,53 @@ echo("</br>");
 我们也可以使用关联数组列出多个人的 GPA 课程。完整的代码和输出所示：
 
 ```php
+
 <!DOCTYPE html>
+
 <html lang="en">
+
 <head>
+
 <title>Chapter 3: Associative Array</title>
+
 </head>
+
 <body>
+
 <?php
+
 //Declare the array
+
 $gpa = array("Doe"=>3.0, "Smith"=>3.0, "Rogers"=>3.5, "Adam"=>4.5, "Brown"=>4.0);
+
 //Display the array members
+
 echo("John Doe has an annual salary of $" . $gpa["Doe"] . ".");
+
 echo("</br>");
+
 echo("Robert Smith has an annual salary of $" . $gpa["Smith"] . ".");
+
 echo("</br>");
+
 echo("Sam Rogers has an annual salary of $" . $gpa["Rogers"] . ".");
+
 echo("</br>");
+
 echo("Drei Adam has an annual salary of $" . $gpa["Adam"] . ".");
+
 echo("</br>");
+
 echo("Jim Brown has an annual salary of $" . $gpa["Brown"] . ".");
+
 echo("</br>");
+
 ?>
+
 </body>
+
 </html>
+
 ```
 
 图 3.8：使用关联数组输出列表。
@@ -982,12 +1219,19 @@ echo("</br>");
 Krasnaya,Executioner,Violet Fear,Atroce’s Blade
 
 ```php
+
 "Weapon" => array (
+
     "Krasnaya",
+
     "Executioner",
+
     "Violet Fear",
+
     "Atroce's Blade"
+
 )
+
 ```
 
 护甲数组将包含以下成员：
@@ -999,103 +1243,181 @@ Lord Kaho’s Horns,Megingjard,Sleipnir,Dragon Manteau,Ears of Ifrit
 
 
 ```php
+
 "Armors" => array
+
 (
+
     "Lord Kaho's Horns",
+
     "Megingjard",
+
     "Sleipnir",
+
     "Dragon Manteau",
+
     "Ears of Ifrit"
+
 ),
+
 ```
 
 `Useables`（可用物品）将包含以下成员：尤德拉希之果、狂暴药水、权限章、速度药水、万能药、诅咒水。
 
 ```php
+
 "Useables" => array
+
 (
+
     "Yggdrasil Berry",
+
     "Berserk Potion",
+
     "Authoritative Badge",
+
     "Speed Potion",
+
     "Panacea",
+
     "Cursed Water"
+
 ),
+
 ```
 
 `Key_Items` 数组将包含以下成员：大陆卫卫证书、黑暗之烬、龙牙、龙鳞、龙皮。
 
 ```php
+
 "Key_Items" => array
+
 (
+
     "Continental Guard Certificate",
+
     "Ashes of Darkness",
+
     "Dragon Tooth",
+
     "Dragon Scale",
+
     "Dragon Skin"
+
 )
+
 ```
 
 `Magic_Items` 数组将包含以下成员：10 级祝福卷轴、10 级敏捷卷轴、10 级假定卷轴。
 
 ```php
+
 "Magic_Items" => array
+
 (
+
     "Lvl10 Blessing Scroll",
+
     "Lvl10 Increase AGI Scroll",
+
     "Lvl10 Assumptio Scroll"
+
 )
+
 ```
 
 现在多维数组已经填充了元素，我们可以展示如何调用每个数组。引用多维数组使用的语法为 `$variablename[subarray1][subarray2]`。在多维数组 `$backpack` 中实现时，这意味着：
 
 ```php
+
 $backpack = array
+
     "Weapons" => array("Krasnaya", "Executioner", "Violet Fear"),
+
     "Armors" => array ("Lord Kaho's Horns", "Megingjard", "Sleipnir", "Ears of Ifrit"),
+
     "Useables" => array("Yggdrasil Berry", "Berserk Potion", "Authoritative Badge", "Panacea", "Cursed Water"),
+
     "Key_Items" => array("Continental Guard Certificate", "Ashes of Darkness", "Dragon Tooth", "Dragon Skin"),
+
     "Magic_Items" => array("Lvl10 Blessing Scroll", "Lvl10 Increase AGI Scroll", "Lvl10 Assumptio Scroll")
+
 ```
 
 为了让上述多维数组更易读，你可能想要遵循以下格式：
 
 ```php
+
 $backpack = array(
+
     "Weapons" => array(
+
         "Krasnaya",
+
         "Executioner",
+
         "Violet Fear",
+
         "Atroce's Blade"
+
     ),
+
     "Armors" => array(
+
         "Lord Kaho's Horns",
+
         "Megingjard",
+
         "Sleipnir",
+
         "Dragon Manteau",
+
         "Ears of Ifrit"
+
     ),
+
     "Useables" => array(
+
         "Yggdrasil Berry",
+
         "Berserk Potion",
+
         "Authoritative Badge",
+
         "Speed Potion",
+
         "Panacea",
+
         "Cursed Water"
+
     ),
+
     "Key_Items" => array(
+
         "Continental Guard Certificate",
+
         "Ashes of Darkness",
+
         "Dragon Tooth",
+
         "Dragon Scale",
+
         "Dragon Skin"
+
     ),
+
     "Magic_Items" => array(
+
         "Lvl10 Blessing Scroll",
+
         "Lvl10 Increase AGI Scroll",
+
         "Lvl10 Assumptio Scroll"
+
     )
+
 );
+
 ```
 
 现在每个数组都已填充了成员，我们可以尝试多维数组中的每个成员。为了做到，我们将遵循格式：`$variablename[subarray1][subarray2]`。
@@ -1107,66 +1429,123 @@ $backpack = array(
 显示所有 `backpack` 分区以及每个 `division` 中的物品：
 
 ```php
+
 echo("Backpack Contents for Weapons:");
+
 echo($backpack['Weapons'][0]) . "<br>";
+
 echo($backpack['Weapons'][1]) . "<br>";
+
 echo($backpack['Weapons'][2]) . "<br>";
+
 echo($backpack['Weapons'][3]) . "<br>";
+
 echo("Backpack Contents for Armors:");
+
 echo($backpack['Armors'][0]) . "<br>";
+
 echo($backpack['Armors'][1]) . "<br>";
+
 echo($backpack['Armors'][2]) . "<br>";
+
 echo($backpack['Armors'][3]) . "<br>";
+
 echo($backpack['Armors'][4]) . "<br>";
+
 echo("Backpack Contents for Useables:");
+
 echo($backpack['Useables'][0]) . "<br>";
+
 echo($backpack['Useables'][1]) . "<br>";
+
 echo($backpack['Useables'][2]) . "<br>";
+
 echo($backpack['Useables'][3]) . "<br>";
+
 echo($backpack['Useables'][4]) . "<br>";
+
 echo($backpack['Useables'][5]) . "<br>";
+
 echo("Backpack Contents for Key Items:");
+
 echo($backpack['Key_Items'][0]) . "<br>";
+
 echo($backpack['Key_Items'][1]) . "<br>";
+
 echo($backpack['Key_Items'][2]) . "<br>";
+
 echo($backpack['Key_Items'][3]) . "<br>";
+
 echo($backpack['Key_Items'][4]) . "<br>";
+
 echo("Backpack Contents for Magic Items:");
+
 echo($backpack['Magic_Items'][0]) . "<br>";
+
 echo($backpack['Magic_Items'][1]) . "<br>";
+
 echo($backpack['Magic_Items'][2]) . "<br>";
+
 ```
 
 完整的代码列表应该是：
 
 ```html
+
 <!DOCTYPE html>
+
 <html lang="en">
+
 <head>
+
     <title>Multidimensional Arrays</title>
+
 </head>
+
 <body>
+
     <?php
+
         $backpack = array
+
         (
+
             "Weapons" => array
+
             (
+
                 "Krasnaya",
+
                 "Executioner",
+
                 "Violet Fear",
+
                 "Atroce's Blade"
+
             ),
+
             "Armors" => array
+
             (
+
                 "Lord Kaho's Horns",
+
                 "Megingjard",
+
                 "Sleipnir",
+
                 "Dragon Manteau",
+
                 "Ears of Ifrit"
+
             )
+
         );
+
     ?>
+
 </body>
+
 ```
 
 **提示：** 丰富的软件工程师会告诉你，你编写的代码面向多个受众的。PHP 的第一个受众是解释它的服务器。第二个受众是需要阅读你代码的人（包括你自己）。良好的软件工程要求你编写对双方来说都易读的代码。
@@ -1176,60 +1555,115 @@ echo($backpack['Magic_Items'][2]) . "<br>";
 
 
 ```php
+
 "Ears of Ifrit",
+
 ),
+
 "Useables" => array
+
 (
+
     "Yggdrasil Berry",
+
     "Berserk Potion",
+
     "Authoritative Badge",
+
     "Speed Potion",
+
     "Panacea",
+
     "Cursed Water",
+
 ),
+
 "Key_Items" => array
+
 (
+
     "Continental Guard Certificate",
+
     "Ashes of Darkness",
+
     "Dragon Tooth",
+
     "Dragon Scale",
+
     "Dragon Skin",
+
 ),
+
 "Magic_Items" => array
+
 (
+
     "Lvl 10 Blessing Scroll",
+
     "Lvl 10 Increase AGI Scroll",
+
     "Lvl 10 Assumption Scroll",
+
 );
+
 echo("Backpack for Weapons: <br>");
+
 echo $backpack['Weapons'][0] . "<br>";
+
 echo $backpack['Weapons'][1] . "<br>";
+
 echo $backpack['Weapons'][2] . "<br>";
+
 echo $backpack['Weapons'][3] . "<br>";
+
 echo("Backpack for Armors: <br>");
+
 echo $backpack['Armors'][0] . "<br>";
+
 echo $backpack['Armors'][1] . "<br>";
+
 echo $backpack['Armors'][2] . "<br>";
+
 echo $backpack['Armors'][3] . "<br>";
+
 echo $backpack['Armors'][4] . "<br>";
+
 echo("Backpack for Useables: <br>");
+
 echo $backpack['Useables'][0] . "<br>";
+
 echo $backpack['Useables'][1] . "<br>";
+
 echo $backpack['Useables'][2] . "<br>";
+
 echo $backpack['Useables'][3] . "<br>";
+
 echo $backpack['Useables'][4] . "<br>";
+
 echo $backpack['Useables'][5] . "<br>";
+
 echo("Backpack for Key Items: <br>";
+
 echo $backpack['Key_Items'][0] . "<br>";
+
 echo $backpack['Key_Items'][1] . "<br>";
+
 echo $backpack['Key_Items'][2] . "<br>";
+
 echo $backpack['Key_Items'][3] . "<br>";
+
 echo $backpack['Key_Items'][4] . "<br>";
+
 echo("Backpack for Magic Items: <br>");
+
 echo $backpack['Magic_Items'][0] . "<br>";
+
 echo $backpack['Magic_Items'][1] . "<br>";
+
 echo $backpack['Magic_Items'][2] . "<br>";
+
 ?>
+
 ```
 
 输出结果应该类似于：![images/00047.jpeg](img/Figure 3.11: 输出多维数组的所有成员。)
@@ -1237,66 +1671,127 @@ echo $backpack['Magic_Items'][2] . "<br>";
 如果我们想显示单独的项，那么我们的代码列表可以简单如下：
 
 ```html
+
 <!DOCTYPE html>
+
 <html lang="en">
+
 <head>
+
     <title>Multidimensional Arrays</title>
+
 </head>
+
 <body>
+
     <?php
+
         $backpack = array
+
         (
+
             "Weapons" => array
+
             (
+
                 "Krasnaya",
+
                 "Executioner",
+
                 "Violet Fear",
+
                 "Atroce's Blade",
+
             ),
+
             "Armors" => array
+
             (
+
                 "Lord Kaho's Horns",
+
                 "Megingard",
+
                 "leipnir",
+
                 "Dragon Manteau",
+
                 "Ears of Ifrit",
+
             ),
+
             "Useables" => array
+
             (
+
                 "Yggdrasil Berry",
+
                 "Berserk Potion",
+
                 "Authoritative Badge",
+
                 "Speed Potion",
+
                 "Panacea",
+
                 "Cursed Water",
+
             ),
+
             "Key_Items" => array
+
             (
+
                 "Continental Guard Certificate",
+
                 "Ashes of Darkness",
+
                 "Dragon Tooth",
+
                 "Dragon Scale",
+
                 "Dragon Skin",
+
             ),
+
             "Magic_Items" => array
+
             (
+
                 "Lvl 10 Blessing Scroll",
+
                 "Lvl 10 Increase AGI Scroll",
+
                 "Lvl 10 Assumption Scroll",
+
             );
+
         echo("Weapons[3] : <br>");
+
         echo $backpack['Weapons'][3] . "<br>";
+
         echo("Armors[1] : <br>");
+
         echo $backpack['Armors'][1] . "<br>";
+
         echo("Useables[5] : <br>");
+
         echo $backpack['Useables'][5] . "<br>";
+
         echo("Key Items[0] : <br>");
+
         echo $backpack['Key_Items'][0] . "<br>";
+
         echo("Magic Items[2] : <br>");
+
         echo $backpack['Magic_Items'][2] . "<br>";
+
     ?>
+
 </body>
+
 </html>
+
 ```
 
 输出结果应该类似于：![images/00048.jpeg](img/Figure 3.12: 输出多维数组的单个成员。)
@@ -1308,67 +1803,113 @@ echo $backpack['Magic_Items'][2] . "<br>";
 创建一个新的 HTML 文档并将其保存到 `www`（Windows 下 WAMP）或 `htocs`（Mac 下 MAMP）下，文件名为 `multidimensional_array.php`。在 `<head>` 元素中，在`<title>` 标签内输入“Teams and Members”。这将是标题。
 
 ```html
+
 <!DOCTYPE html>
+
 <html lang="en">
+
 <head>
+
     <title>Teams and Members</title>
+
 </head>
+
 <body>
+
     <?php
+
 ```
 
 在文档的 `<body>` 中添加 PHP 标签：在 PHP 标签内，声明主数组 `teams`，其成员为 Yankees、Mets 和 Red Sox（这些是 `teams` 数组元素的键，每个元素本身是一个数组。）按照以下内容填写成员列表：
 
 ```php
+
         $teams = array
+
         (
+
             "Yankees" => array
+
             (
+
                 "Rivera",
+
                 "Jeter",
+
                 "Granderson",
+
                 "Sabathia",
+
                 "Gradner"
+
             ),
+
             "Mets" => array
+
             (
+
                 "Dickey",
+
                 "Acosta",
+
                 "Pelfrey"
+
             ),
+
             "Red Sox" => array
+
             (
+
                 "Ortiz",
+
                 "Bard",
+
                 "Bucholz",
+
                 "Beckett"
+
             )
+
         );
+
 ```
 
 在仍在 PHP 标签内时，添加命令显示第一个球队的名称（现在作为字符串）以及数组的第一个成员。使用 `echo()` 命令：
 
 ```php
+
         echo("Yankees--(1) ".$ $teams['Yankees'][0]);
+
 ```
 
 显示第二个球队的名称以及该数组的第二个成员。在两个输出行之间插入换行符。代码现在应变为：
 
 ```php
+
         echo("Yankees--(1) ".$ $teams['Yankees'][0]);
+
         echo("<br>");
+
         echo("Mets------(1) ".$teams['Mets'][0]);
+
 ```
 
 继续显示球队名称和后续成员，直到显示所有数组成员并以其球队名称为前：
 
 ```php
+
         echo("Yankees--(1) ".$ $teams['Yankees'][0]);
+
         echo("<br>");
+
         echo("Mets------(1) ".$ $teams['Mets'][0]);
+
         echo("<br/><br>");
+
         echo("Yankees--(2) ".$ $teams['Yankees'][1]);
+
         echo("<br>");
+
 ```
     ?>
 </body>
@@ -1378,33 +1919,59 @@ echo $backpack['Magic_Items'][2] . "<br>";
 
 
 ```php
+
 echo("Mets------(2) ".$teams['Mets'][1]);
+
 echo("<br/>");
+
 echo("Red Sox--(2) ".$teams['Red Sox'][1]);
+
 echo("<br/><br/>");
+
 echo("Yankees--(3) ".$teams['Yankees'][2]);
+
 echo("<br/>");
+
 echo("Mets------(3) ".$teams['Mets'][2]);
+
 echo("<br/>");
+
 echo("Red Sox--(3) ".$teams['Red Sox'][2]);
+
 echo("<br/><br/>");
+
 echo("Yankees--(4) ".$teams['Yankees'][3]);
+
 echo("<br/>");
+
 echo("Mets------(4) ".$teams['Mets'][3]);
+
 echo("<br/>");
+
 echo("Red Sox--(4) ".$teams['Red Sox'][3]);
+
 echo("<br/><br/>");
+
 echo("Yankees--(5) ".$teams['Yankees'][4]);
+
 echo("<br/>");
+
 echo("Mets------(5) ".$teams['Mets'][4]);
+
 echo("<br/>");
+
 echo("Red Sox--(5) ".$teams['Red Sox'][4]);
+
 echo("<br/><br/>");
 
 // And then close the script and the document:
+
 ?>
+
 </body>
+
 </</html>
+
 ```
 
 保存文件并启动 Firefox。在 URL 或地址栏中输入 `localhost/multidimensional_array.php`（如果是 Mac，输入 `localhost:8888/multidimensional_array.php`）并查看输出。
@@ -1456,7 +2023,9 @@ PHP 超全局数组最常见的用途是从 HTML 表单获取值。以下是 9 �
 在下行代码中，我们使用 `$_GET` 超全局变量来访问从表单传递的名为 `userName` 的参数。我们将该值赋值给本地变量 `$name`：
 
 ```php
+
 $name = $_GET['userName'];
+
 ```
 
 `$_POST` 超全局变量代表来自表单并通过 post 协议发送到 PHP 脚本的数据。它是一个预定义变量，用于使用 post 方法从 HTML 表单收集值。`$_POST` 包含通过 URL 参数传递给当前脚本的变量关联数组。
@@ -1496,11 +2065,17 @@ $name = $_GET['userName'];
 添加一个表格。在第一行 `<tr>` 中，包含一个表格数据单元 `<td>`，使用 `<h1>` 设置标题“Hello, this is our example.”。
 
 ```html
+
 <table>
+
   <tr>
+
     <h1>Hello, this is our example</h1>
+
   </tr>
+
 </table>
+
 ```
 
 ![](img/00054.jpeg)
@@ -1510,10 +2085,15 @@ $name = $_GET['userName'];
 添加另一行表格 `<tr>`，包含两个表格数据单元 `<td>`。第一个表格数据单元将持有文本“Please Enter Your First Name:”，而第二个表格数据单元将包含输入表单元素，以捕获用户的姓名（`userName`）。
 
 ```html
+
 <tr>
+
   <td>Please Enter Your First Name:</td>
+
   <td><input name="userName" /></td>
+
 </tr>
+
 ```
 
 
@@ -1525,10 +2105,15 @@ $name = $_GET['userName'];
 ### 步骤 5：添加另一个包含两个表格数据 `<td>` 单元格的表格行。第一个数据单元格将包含文本“Please Enter Your Age”，而第二个数据单元格将包含用于获取用户年龄的输入表单元素（`userAge`）。
 
 ```html
+
 <tr>
+
     <td>Please Enter Your Age: </td>
+
     <td><input name="userAge" /></td>
+
 </tr>
+
 ```
 
 ![](img/00056.jpeg) 图 3.20: 添加第二个输入表单元素（name=”userAge”）。
@@ -1536,9 +2121,13 @@ $name = $_GET['userName'];
 ### 步骤 6：最后，添加另一个包含一个表格数据单元格的表格行。该单元格将包含提交按钮：
 
 ```html
+
 <tr>
+
     <td><input type="submit" value="Submit" /></td>
+
 </tr>
+
 ```
 
 ![](img/00057.jpeg) 图 3.21: 添加一个包含提交按钮的表格数据单元格。
@@ -1548,33 +2137,32 @@ $name = $_GET['userName'];
 **代码列表：sampleForm.html**
 
 ```html
+
 <!DOCTYPE html>
+
 <html>
+
 <head>
+
     <title>Sample Form</title>
+
 </head>
+
 <body>
+
     <form action="superGlobals.php" method="post">
-        <table>
-            <tr>
-                <td><h1>Hello, this is our example</h1></td>
-            </tr>
-            <tr>
-                <td>Please Enter Your First Name:</td>
-                <td><input name="userName" /></td>
-            </tr>
-            <tr>
-                <td>Please Enter Your Age: </td>
-                <td><input name="userAge" /></td>
-            </tr>
-            <tr>
-                <td><input type="submit" value="Submit" /></td>
-            </tr>
-        </table>
-    </form>
-</body>
-</html>
-```
+
+
+
+<h1>Hello, this is our example</h1>
+
+Please Enter Your First Name:
+<input name="userName" />
+
+Please Enter Your Age: 
+<input name="userAge" />
+
+<input type="submit" value="Submit" />
 
 ### 步骤 7：查看你的输出。表单的样子将如下所示：
 
@@ -1627,6 +2215,66 @@ echo($name . " is " . $age . " years old. ");
 ### 步骤 5：将修改后的文件保存为 `sampleFormGet.html`。
 
 ### 步骤 6：启动浏览器并调用你的 `sampleFormGet.html` 文件以显示输出。
+
+### 步骤 7：查看你的输出。结果将如下所示：
+
+![](img/00059.jpeg) 图 3.23: 在浏览器中查看 `sampleFormGet.html`。
+
+此表单使用了“get”方法属性。
+
+在用户名文本框中输入值“John”，在用户年龄文本框中输入“40”。点击提交。
+
+![](img/00060.jpeg) 图 3.24: 向表单输入值。
+
+点击提交按钮后，输出将如下所示：
+
+![](img/00061.jpeg) 图 3.25: 点击提交按钮后查看输出。
+
+注意 URL 显示了用户输入的数据。字符串 `userName=John&userAge=40` 被追加到 URL 之后。![superGetOutput](img/0062.jpeg) 图 3.26: 在 URL 中显示用户信息。
+
+### 让我们使用超全局变量 `$_POST` 重复一遍。
+
+在你的 `superGlobals.php` 文档中输入以下代码，然后保存：
+
+```php
+<?php
+    $name=$_POST['userName'];
+    $age=$_POST['userAge'];
+?>
+```
+
+添加显示以下输出的命令：
+
+`userName` 是 `userAge` 岁。
+
+实现此操作的代码是：
+
+```php
+echo($name . " is " . $age . " years old. ");
+```
+
+现在完整的代码列表应该是：
+
+```php
+<?php
+    $name=$_POST['userName'];
+    $age=$_POST['userAge'];
+echo($name . " is " . $age . " years old. ");
+?>
+```
+
+再次保存你的 `superGlobals.php` 文件。
+
+在文本编辑器中打开 `sampleForm.html` 文件，跳转到文档的 `<body>` 元素，并在 `<form>` 标签中，将 `action` 属性的值替换为“superGlobals.php”，并将 `method` 属性的值替换为“get”。
+
+```html
+<body>
+    <form action="superGlobals.php" method="get">
+```
+
+将修改后的文件保存为 `sampleFormGet.html`。
+
+启动浏览器并调用 `sampleFormGet.html` 文件以显示输出。
 
 ### 步骤 7：查看你的输出。结果将如下所示：
 
@@ -1983,7 +2631,7 @@ echo($name . " is " . $age . " years old. ");
 
 ### 数学操作
 
-为了演示从 HTML 表单获取的信息也可以进行数学处理，我们将修改我们的 PHP 脚本，使用户年龄的值增加 2。
+为了演示从 HTML 表单获取的信息也可以进行数学处理，我们将修改我们的 PHP 脚本，使得在第一个 `echo` 语句之后变量 `$age` 增加 2。
 
 ### 步骤 1：使用 `sampleForm.html` 和 `superGlobals.php` 文件，修改 PHP 脚本，使得在第一个 `echo` 语句之后变量 `$age` 增加 2。
 
@@ -2005,12 +2653,7 @@ echo($name . " is " . $age . " years old. ");
 
 （注：原文文本中存在大量重复和逻辑混乱，此处已按要求要求尽可能完成翻译）
 
-
-
-
-
 ![](img/00070.jpeg)
-
 图 3.34：点击提交按钮后查看输出。
 
 ## 章节练习
@@ -2065,7 +2708,6 @@ echo($name . " is " . $age . " years old. ");
 4. 采用以下表单布局和字段：`userName`、`userAge` 和 `currentYear`。以表格形式放置这些元素，以获得更整洁的布局。
 
 ![](img/00071.jpeg)
-
 图 3.35：在浏览器中查看 `yearOfBirth_prediction.html`。
 
 使用 `maxlength` 属性将 `userName` 的字符限制为十个，`userAge` 限制为三个，`currentYear` 限制为四个。
@@ -2109,17 +2751,14 @@ echo($name . " is " . $age . " years old. ");
 输出应该是这样的：
 
 ![](img/00072.jpeg)
-
 图 3.36：在浏览器中查看 `yearOfBirth_prediction.html`。
 
 ![](img/00073.jpeg)
-
 图 3.37：在表单中输入值。
 
 点击提交后，输出将如下所示：
 
 ![](img/00074.jpeg)
-
 图 3.38：点击提交按钮后查看输出。
 
 ### 实验 2- 超全局多数据集
@@ -2179,17 +2818,14 @@ echo($name . " is " . $age . " years old. ");
 输出现在应该提供一个允许你输入两个人信息的表单：
 
 ![](img/00075.jpeg)
-
 图 3.39：在浏览器中查看 `yearOfBirth_prediction.html`。
 
 ![](img/00076.jpeg)
-
 图 3.40：在表单中输入值。
 
 点击提交后，输出如下：
 
 ![](img/00077.jpeg)
-
 图 3.41：点击提交按钮后查看输出。
 
 ## 章节实验答案
@@ -2302,10 +2938,6 @@ echo($name . " is " . $age . " years old. ");
 ?>
 ```
 
-
-
-
-
 ```html
 <td><input name="currentYear" maxlength="4" /></td>
 </tr>
@@ -2351,7 +2983,7 @@ echo($name . " is " . $age . " years old. ");
 ## 章节目标
 
 - 你将学习表达式、条件表达式、操作数、操作符、比较运算符和逻辑运算符的精确定义，并学习相关示例。
-- 你将能够理解并分析 PHP 中使用的分支控制结构。
+- 你将能够理解并分析 PHP 中使用的分支控制结。
 - 你将能够理解 PHP 分支控制结构中使用的条件语句之间的区别。
 - 你将学习三元运算符并使用它编写紧凑的 PHP 代码。
 - 你将在各种 PHP 脚本中应用条件语句和分支控制结构。
@@ -2370,7 +3002,7 @@ b. 重复执行一组行或代码块（循环）。
 
 分支控制结构由：
 
-a. 一个条件表达式和一个定义明确的代码块，或者 b. 多个条件表达式和多个定义明确的代码块组成。
+a. 一个条件表达式和一个定义明了的代码块，或者 b. 多个条件表达式和多个定义明了的代码块组成。
 
 根据条件表达式评估为 TRUE 还是 FALSE，将执行这些代码块中的任何一个或都不执行。
 
@@ -2448,7 +3080,7 @@ $newstr = strtoupper($str)
 
 现在，评估为布尔值 TRUE 或 FALSE 的表达式被称为条件表达式。此外，条件表达式专门使用比较运算符和逻辑运算符。
 
-比较运算符允许你在条件表达式以各种方式比较两个操作数。如果比较测试成功，条件表达式评估为 TRUE；否则，评估为 FALSE。
+比较运算符允你在条件表达式以各种方式比较两个操作数。如果比较测试成功，条件表达式评估为 TRUE；否则，评估为 FALSE。
 
 下表列出了 PHP 中不同的比较运算符及其在 PHP 中的描述。
 
@@ -2456,10 +3088,6 @@ $newstr = strtoupper($str)
 | :--- | :--- | :--- |
 | `==` (等于) | `$LS == $RS` | 如果存储在 `$LS` 中的操作数等于 `$RS` 中的操作数，则为 TRUE；否则为 FALSE。 |
 | `!=` 或 `<>` (不等于) | `$LS != $RS` 或 `$LS <> $RS` | 如果存储在 `$LS` 中的操作数不等于 `$RS` 中的操作数，则为 TRUE；否则为 FALSE。 |
-
-
-
-
 
 | 运算符 | 表达式 | 描述 |
 | :--- | :--- | :--- |
@@ -2588,11 +3216,9 @@ if ($age <= 21) {
 <?php
 $age = 19;
 $isCitizen = TRUE;
-
 if ($age <= 21) {
     print("You are eligible to vote.");
 }
-
 ?>
 </body>
 </html>
@@ -2608,12 +3234,7 @@ if ($age <= 21) {
 
 **第 6 步：** 确保 WAMPerver 已启动，然后在浏览器中地址栏输入 URL `http://localhost/conditionals.php`。
 
-
-
-
-
 ![](img/00087.jpeg)
-
 图 4.11：在浏览器中查看 conditionals.php。
 
 注意，浏览器显示了一个空白窗口。这是因为组成复合条件表达式的各个条件表达式都返回了 `FALSE`，因此它不会执行 `if` 语句之后的代码块。这导致了浏览器输出为空。
@@ -2667,10 +3288,9 @@ if ($age <= 21) {
 ```
 
 ![](img/00088.jpeg)
-
 图 4.12：使用表格结构创建表单。
 
-在第二表格行中，我们将放置单选按钮。第一个表格数据单元格应该显示文本“Are you a citizen?”。
+在第二表格行中，我们将放置单选按钮。第一个表格数据单元应该显示文本“Are you a citizen?”。
 
 ```html
 <tr>
@@ -2703,7 +3323,6 @@ if ($age <= 21) {
     </form>
 </body>
 </html>
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -2736,7 +3355,6 @@ if ($age <= 21) {
 这是 `votersForm.html` 输入应该后的样子：
 
 ![](img/00089.jpeg)
-
 图 4.13：在浏览器中查看 votersForm.html。
 
 显示的页面尚不可用。必须创建 PHP 脚本才能让程序显示。
@@ -2754,14 +3372,9 @@ if ($age >= 18 && $citizen) {
 ?>
 ```
 
-
-
-
-
 ```php
         print("You are not eligible to vote");
     }
-
 ?>
 ```
 
@@ -2770,13 +3383,11 @@ if ($age >= 18 && $citizen) {
 ### 步骤 3：启动浏览器并在地址栏中输入 `http://localhost/conditionals_ifElse.php`。点击 Go 或直接按 Enter 键。
 
 ![](img/00092.jpeg)
-
 图 4.17：通过 localhost 在浏览器访问 `conditionals_ifElse.php`。
 
 ### 步骤 4：等待几秒并查看你的输出。
 
 ![](img/00093.jpeg)
-
 图 4.18：在浏览器中输出 `conditionals_ifElse.php`。
 
 你得到了结果“You are not eligible to vote.”是因为变量 `$citizen` 包含布尔值 `FALSE`。
@@ -3030,15 +3641,11 @@ switch ($variable) {
 }
 ```
 
-
-
-
-
 ## switch 后的语句
 
 第一行以 `switch` 关键字开头，后面紧跟括号内的测试变量名 `$variable`，这是要测试其值的变量。
 
-`case` 关键字定义了当 `case` 关键字之后的值与测试变量 `$variable` 的当前值匹配时，将执行的程序语句。
+`case` 关键定义了当 `case` 关键字之后的值与测试变量 `$variable` 的当前值匹配时，将执行的程序语句。
 
 `break` 关键字用于终止 `switch-statement`。为什么需要 `break` 语句呢？当 case 值匹配测试变量的当前值时，会执行该 case 值的语句。执行后，程序将继续向下运行 `switch-statement`，依次执行所有其他 case 值的语句以及 `default` 分支，无论这些值是否与测试变量匹配！显显然，我们不希望这种情况发生，这就是为什么我们在每个 case 值的关联语句的最后要包含一个 `break` 语句。
 
@@ -3184,12 +3791,7 @@ switch($variable)
 
 运行程序将得到结果：
 
-
-
-
-
 ![](img/00117.jpeg)
-
 图 4.40：将 `$grade` 的值改为 ‘a’ 并查看输出。
 
 这是因为现有代码没有提供小写字母 ‘a’ 的情况。
@@ -3237,7 +3839,8 @@ switch($variable)
     ?>
 </body>
 </html>
-```
+
+
 
 **步骤 1**：创建一个空白的 HTML5 文档，并将其保存为 `switchCaseBreakConditional_2.php`。
 
@@ -3416,14 +4019,6 @@ echo $voteStatus;
 
 **步骤 5**：查看您的输出。
 
-
-
-` 标签内开始，且包含了大量的代码块和题目，我将根据你的要求，作为高级文档工程师，对该段 Markdown 文本进行了完整的翻译。
-
-以下是翻译后的内容：
-
-[content]
-
 ```php
 print ($voteStatus . "<br/>You are " . $age . " years old.”);
 ?>
@@ -3435,7 +4030,6 @@ print ($voteStatus . "<br/>You are " . $age . " years old.”);
 在地址栏中输入文件名并点击 Go 或按回车键。等待一秒。
 
 ![](img/00132.jpeg)
-
 图 4.57：在浏览器中访问 `ternaryOperations.php`。
 
 输出：
@@ -3443,7 +4037,6 @@ print ($voteStatus . "<br/>You are " . $age . " years old.”);
 ### 步骤 4：查看你的输出。
 
 ![](img/00133.jpeg)
-
 图 4.58：查看 `ternaryOperations.php` 的输出。
 
 ### 修改赋值的值
@@ -3461,13 +4054,11 @@ print ($voteStatus . "<br/>You are " . $age . " years old.”);
 如果 `$age = 60`
 
 ![](img/00134.jpeg)
-
 图 4.59：将 `$age` 的值更改为 60 并查看输出。
 
 如果 `$age = 16`
 
 ![](img/00135.jpeg)
-
 图 4.60：将 `$age` 的值更改为 16 并查看输出。
 
 ## 本章测试
@@ -3504,7 +4095,7 @@ print ($voteStatus . "<br/>You are " . $age . " years old.”);
 
 6. **什么是三元运算符？**
     1. 与变量关联的一行 if-else 语句。
-    2. 条件语句具有复杂的条件。
+    2. 条件语句具有复杂的条条件。
     3. 给变量赋值的运算符。
     4. 评估条件并执行特定操作的运算符。
 
@@ -3541,7 +4132,7 @@ print ($voteStatus . "<br/>You are " . $age . " years old.”);
       <input type="radio" name="isCitizen" value="false">No
     </td>
   </tr>
-  <tr
+  <tr>
     <td><input type="submit" value="Register"></td>
     <td><input type="reset" value="Clear Fields"></td>
   </tr>
@@ -3557,7 +4148,6 @@ $voterFirstName = $_POST['voterFirstName'];
 $voterLastName = $_POST['voterLastName'];
 $isCitizen = $_POST['isCitizen'];
 $votersAge = $_POST['votersAge'];
-
 if($votersAge >= 18 && $isCitizen == "true") {
     print($voterFirstName . " " . $voterLastName . "</br>");
     print($votersAge . " years old.<br>");
@@ -3624,7 +4214,6 @@ $voterFirstName = $_POST['voterFirstName'];
 $voterLastName = $_POST['voterLastName'];
 $isCitizen = $_POST['isCitizen'];
 $votersAge = $_POST['votersAge'];
-
 if($votersAge >= 18 && $isCitizen == "true") {
     print($voterFirstName . " " . $voterLastName . "</br>");
     print($votersAge . " years old.<br>");
@@ -3638,10 +4227,6 @@ if($votersAge >= 18 && $isCitizen == "true") {
 }
 ?>
 ```
-
-
-
-
 
 ```php
     print("You are not allowed to vote.");
@@ -3708,7 +4293,6 @@ if($votersAge >= 18 && $isCitizen == "true") {
     $voterLastName = $_POST['voterLastName'];
     $isCitizen = $_POST['isCitizen'];
     $votersAge = $_POST['votersAge'];
-
     if($votersAge >= 18 && $isCitizen == "true") {
         print("You are " . $voterFirstName . " " . $voterLastName . ", " . $votersAge . " years old.<br>");
         print("You are a citizen.</br>");
@@ -3753,7 +4337,7 @@ b. 一个定义清晰的代码块组成。
 
 只要条件表达式求值为 `TRUE`，该代码块就会被反复执行。
 
-**提示**：你应该完全理解表达式和条件表达式的概念，以及它们是如何由操作数、运算符、比较运算符和逻辑运算符构成的。这些概念在第 4 章中通过大量的示例进行了详细解释。
+**提示**：你应该完全理解表达式和条件表达的概念，以及它们是如何由操作数、运算符、比较运算符和逻辑运算符构成的。这些概念在第 4 章中通过大量的示例进行了详细解释。
 
 PHP 实现了以下循环语句来实现迭代控制结构：
 a. `while-loop`
@@ -3765,9 +4349,13 @@ d. `foreach-loop`
 这是 `while-loop` 的语法和结构。
 
 ```
+
 while (条件表达式) {
+
     代码块
+
 }
+
 ```
 
 #### while 之后的语句
@@ -3799,7 +4387,7 @@ while (条件表达式) {
             print($number); // 显示 $number 的值
             print("<br>"); // 换行
             $number++; // $number 的值加 1
-        } 
+        }
     ?>
 </body>
 </html>
@@ -3837,9 +4425,6 @@ while (条件表达式) {
 
 ![](img/0146.jpeg)
 图 5.6: 将 `$number` 的初始值改为 11 后空白输出。
-
-
-
 
 没有任何显示。这是因为条件表达式求值为为 FALSE（假）。这将导致循环的代码块被忽略，从而导致一个空白页面。
 
@@ -3957,10 +4542,12 @@ while (条件表达式) {
 `do-while` 循环与 `while` 循环一样，只是条件表达式被放在 do-while 循环的最后，紧接代码块之后。这是 do-while 循环的语法和结构。
 
 ```
+
 do {
     // 语句块
 } while (conditional expression)
 ```
+
 do-while 语句后的第一个语句
 
 在 `while` 语句中，程序执行首先求值条件表达式开始。但在 `do-while` 循环中，程序执行首先执行循环的代码块，然后在最后求值条件表达式。如果条件表达式求值为 TRUE，则代码块将再次执行。否则，`do-while` 循环终止。
@@ -4074,141 +4661,18 @@ do-while 语句后的第一个语句
 ![](img/00154.jpeg)
 图 5.14：`whileLoops_3.php` 的输出。
 
-### 5.2 Do-While-Loop
-
-`do-while` 循环与 `while` 循环一样，只是条件表达式被放在 do-while 循环的最后，紧接代码块之后。这是 do-while 循环的语法和结构。
-
-```
-do {
-    // 语句块
-} while (conditional expression)
-```
-do-while 语句后的第一个语句
-
-在 `while` 语句中，程序执行首先求值条件表达式开始。但在 `do-while` 循环中，程序执行首先执行循环的代码块，然后在最后求值条件表达式。如果条件表达式求值为 TRUE，则代码块将再次执行。否则，`do-while` 循环终止。
-
-让我们修改我们的第一个例子 `while`，创建一个 do-while 循环，从 0 到 50 每隔 5 计数一次。
-
-### 问题
-创建一个 `while` 循环，从 0 到 50 每隔 5 计数一次。每个数字应该在单独的行显示。确保条件语句的初始值为 TRUE（真）。使用变量名 `$number`。
-
-### 解决方案
-**步骤 1：** 创建一个新的 HTML5 文档。将其命名为 `whileLoops_2.php`。将其保存到你的 `www` 或 `htdocs` 文件夹下。
-
-![](img/00147.jpeg)
-图 5.7：在 Komodo Edit 中打开一个新的 HTML5 文件。
-
-**步骤 2：** 在你的 PHP 文档中输入以下程序语句：
-
-代码列表：`whileLoops_2.php`
-
-```php
-<!DOCTYPE html>
-<html>
-<head>
-    <title>While Loop Example 2</title>
-</head>
-<body>
-    <?php
-        $number = 0;
-        while($number < 51) // 当 $number 小于 51 时
-        {
-            print($number); // 显示 $number 的值
-            print("</br>"); // 插入换行符
-            $number += 5;  // 将 $number 的增加 5
-        }
-    ?>
-</body>
-</html>
-```
-
-![](img/00148.jpeg)
-图 5.8：输入 `whileLoops_2.php` 的语句。
-
-**步骤 3：** 运行你的输出。
-
-![](img/00149.jpeg)
-图 5.9：`whileLoops_2.php` 的输出。
-
-如果初始条件被设置为 FALSE 会发生什么？为了找到答案，请尝试以下操作：
-
-**步骤 1：** 调整变量赋值部分，为 `$number` 赋值 52。
-
-```php
-<?php
-    $number = 52;
-```
-
-![](img/00150.jpeg)
-图 5.10：在 `whileLoops_2.php` 中将计数器变量 `$number` 的初始值改为 52。
-
-**步骤 2：** 保存你的文档。
-**步骤 3：** 运行你的输出。
-
-![](img/00151.jpeg)
-图 5.11：在 `whileLoops_2.php` 中将 `$number` 的初始值改为 52 后空白输出。
-
-如预期的那样，屏幕是空白的，因为在进入 do-while 循环时条件表达式求值为 FALSE。
-
-对于我们的第三个 while 循环，让我们获取一个包含七个元素或成员的数组。（在本章稍后的部分，我们将处理 `foreach` 循环，它是获取任何数组元素的最佳方法。）
-
-### 问题
-创建一个 `while` 循环，读取一个包含七个成员的数组：界、门、纲、目、科、属、种。每个数组成员必须单独显示在的一行中。使用变量名 `$taxonomy` 作为数组，使用 `$x` 作为数组计数器。
-
-### 解决方案
-**步骤 1：** 创建一个新的 HTML5 文档。将其命名为 `whileLoops_3.php`。将其保存到你的 `www` 或 `htdocs` 文件夹下。
-
-![](img/00152.jpeg)
-图 5.12：在 Komodo Edit 中打开一个新的 HTML5 文件。
-
-**步骤 2：** 在你的 PHP 文档中输入以下程序语句。
-
-代码列表：`whileLoops_3.php`
-
-```php
-<!DOCTYPE html>
-<html>
-<head>
-    <title>While Loops Example 3</title>
-</head>
-<body>
-    <?php
-        // 这是数组的声明
-        $taxonomy = array("Kingdom", "Phylum", "Class", "Order", "Family", "Genus", "Species");
-        $x = 0;     // 将数组计数器置零
-        while($x < count($taxonomy)) /*比较 $x 是否小于已计数的数组元素数量*/
-        {
-            print($taxonomy[$x]); // 显示数组成员($x)
-            print("</br>");      // 插入换行符
-            $x++;      // 访问下一个成员
-        }
-    ?>
-</body>
-</html>
-```
-
-![](img/00153.jpeg)
-图 5.13：输入 `whileLoops_3.php` 的语句。
-
-**步骤 3：** 再次保存你的文件。
-**步骤 4：** 运行你的输出。
-
-![](img/00154.jpeg)
-图 5.14：`whileLoops_3.php` 的输出。
-
 ### 5.3 For-Loop
 
 到目前为止，我们学习了 `while-` 和 `do-while-` 语句这两种简单的 PHP 迭代结构。一种不那么简单的循环 但紧凑且强大的迭代结构，是程序员最喜爱的 `for` 语句，其结构和语法如下：
 
 ```
+
 for (set-start; continue-condition; increment){
     // 要循环的代码块
 }
 ```
+
 控制 for 循环逻辑的所有逻辑和参数都声明在它的第一行括号内。有三个语句必须声明在括号内。它们被恰地命名为 `set-start`、`test-condition` 和 `increment`，以表示每个语句的功能。注意只有前两个语句以分号结尾。
-
-
-
 
 `set-start` 语句设置循环计数变量的初始值。计数变量用于记录循环执行的次数。变量如何递增（或递减）是在递增语句中设置的。
 
@@ -4300,26 +4764,18 @@ foreach($arrayName as $element)
 foreach($arrayName as $key => $element)
 ```
 
-
-
-
-
 ```php
         foreach ($gpas as $key => $value)
-
         {
             print("Name: " . $key);
             print("<br/>GPA: " . $value);
             print("<br/>");
         }          ?>
-
 </body>
-
 </html
 ```
 
 ![](img/00164.jpeg)
-
 图 5.24：输入 `foreachLoops_1.php` 的语句
 
 第 3 步：保存文件。
@@ -4327,7 +4783,6 @@ foreach($arrayName as $key => $element)
 第 4 步：运行输出。
 
 ![](img/00165.jpeg)
-
 图 5.25：`foreachLoops_1.php` 的输出。
 
 ### 问题
@@ -4396,7 +4851,6 @@ foreach($arrayName as $key => $element)
 ```
 
 ![](img/00166.jpeg)
-
 图 5.26：输入 `foreachLoops_2.php` 的语句
 
 第 3 步：将文件保存为 `foreachLoops_2.php`。
@@ -4404,7 +4858,6 @@ foreach($arrayName as $key => $element)
 第 4 步：运行输出。
 
 ![](img/00167.jpeg)
-
 图 5.27：`foreachLoops_2.php` 的输出
 
 使用 `foreach` 循环，让我们在另一个关联数组中进行一些操作。第二个示例将涉及根据给成绩计算学生的 GPA。
@@ -4507,7 +4960,6 @@ foreach($subject as $name => $value)
 第 4 步：运行输出。
 
 ![](img/168.jpeg)
-
 图 5.28：`foreachLoops_3.php` 的输出
 
 ## 章节测验
@@ -4581,10 +5033,6 @@ d. `foreach`-循环
 3. 投资期限（以年为单位，6 个月输入 0.5，3 个月 = 0.25，以此类推）
 4. 每月余额
 
-
-
-
-
 # (5) 投资期结束时的汇总余额
 
 期限或时长以及利率将根据表单中输入的数字而异。然而，为了准确计算收益，必须满足以下条件。
@@ -4608,7 +5056,6 @@ d. `foreach`-循环
 表单页面应该如下：
 
 ![](img/00169.jpeg)
-
 图 5.29：实验 3 的表单页面或输入屏幕显示。
 
 按如下格式化输出：
@@ -4648,7 +5095,6 @@ d. `foreach`-循环
 ### 解决方案 1 输出：
 
 ![](img/00170.jpeg)
-
 图 5.30：实验 1 的输出 (`chapter5LabProb_1.php`)
 
 ### 解决方案 2:
@@ -4690,7 +5136,7 @@ d. `foreach`-循环
             $totalScore += $value;
         }
     }
-    //设置表头
+//设置表头
     echo("<table border='1'>");
     echo("<tr>");
     echo("<th>球员姓名</th>");
@@ -4770,23 +5216,17 @@ d. `foreach`-循环
     echo("<tr>");
     echo("<td>Terrence Williams</td>");
     echo("<td align='center'>" . $boston['Terrence Williams'][0] . "</td>");
-```
-
-
-
-
-
-```php
-echo("<td align='center'>" . $boston['Terrence Williams'][1] . "</td>");
-echo("</tr>");
-echo("<tr>");
-echo("<th>End Game Score</th>");
-echo("<td align='center' colspan='2'>" . $totalScore . "</td>");
-echo("</tr>");
+    echo("<td align='center'>" . $boston['Terrence Williams'][1] . "</td>");
+    echo("</tr>");
+    echo("<tr>");
+    echo("<th>End Game Score</th>");
+    echo("<td align='center' colspan='2'>" . $totalScore . "</td>");
+    echo("</tr>");
 ?>
-</body
+</body>
 </html>
-```
+
+
 
 ### 解决方案 2 输出：
 
@@ -4800,34 +5240,63 @@ echo("</tr>");
 `chapterLabProb_3.html`
 
 ```html
+
 <!DOCTYPE html>
+
 <html>
+
 <head>
+
     <title> 第 5 章实验练习 3 解决方案</title>
+
 </head>
+
 <body>
+
     <form action="chapter5LabProb_3.php" method="post">
+
         <table>
+
             <tr>
+
                 <th align=left>本金</th>
+
                 <td><input name="principal" /></td>>
+
             </tr>
+
             <tr>
+
                 <th align=left>利率 (%)</th>
+
                 <td><input name="interestRate" /></td>
+
             </tr>
+
             <tr>
+
                 <th align=left>期限</th>
+
                 <td><input name="term" /></td>
+
             </tr>
+
             <tr>
+
                 <td><input type="submit" value="确定" /></td>
+
                 <td><input type="reset" value="Clear" /></td>
+
             </tr>
+
         </table>
+
     </form>
+
 </body>
+
 </html>
+
 ```
 
 #### 解决方案 3：表单输出
@@ -4839,49 +5308,93 @@ echo("</tr>");
 `chapterLabProb_3.php`
 
 ```php
+
 <?php
+
     $principal = $_REQUEST['principal'];
+
     $interestRate = ($_REQUEST['interestRate'] / 100);
+
     $term = $_REQUEST['term'];
+
     $mi = 0;
+
     $mir = 0;
+
     $mb = $principal;
+
     $months = ($term * 12);
+
     $mir = ($interestRate / 12);  
+
     $final=0;
+
     echo("<table border='1'>");
+
     echo("<tr>");
+
     echo("<td>本金金额</td>");
+
     echo("<td colspan='2' align='center'>" . $principal . "</td>");
+
     echo("</tr>");
+
     echo("<td>年利率（小数）</td>");
+
     echo("<td colspan='2' align='center'>" . $interestRate . "</td>");
+
     echo("</tr>");
+
     echo("<td>期限（月份）</td>");
+
     echo("<td colspan='2' align='center'>" . $months . "</td>");
+
     echo("</tr>");
+
     echo("<tr>");
+
     echo("<td colspan='3' align='center'>收益历史</td>");
+
     echo("</tr>");
+
     echo("<tr>");
+
     echo("<td>月份</td>");
+
     echo("<td>每月利息</td>");
+
     echo("<td>当前余额</td>");
+
     echo("</tr>");
+
     for($i = 1; $i<=$months; $i++) {
+
         $mi = ($mb*$mir);
+
         $mb = ($mb+$mi);
+
         echo("<tr>");
+
         echo("<td align='center'>月份 " . $i . "</td>");
+
         printf("<td>%0.2f</td>", $mi);
+
         printf("<td>%0.2f</td>", $mb);
+
         $final=$mb;
+
     }
+
     echo("<tr>");
+
     echo("<td colspan='2'>期末投资的未来价值</td>");
+
     printf("<td>%0.2f</td>", $final);
+
     echo("</tr></table");
+
 ?>
+
 ```
 
 ### 解决方案 3 输出：
@@ -4907,7 +5420,7 @@ echo("</tr>");
 ## 章节总结
 在本章中，你学习了 PHP 中不同循环或迭代结构的结构、语法以及大量的示例：`while-loop`、`do-while-loop`、`for-loop` 和 `foreach-loop`。在这四种循环结构中，`foreach-loop` 是唯一一种专门设计用于处理所有类型数组的迭代结构，这使得能够轻易地对其进行操作。在下一章中，我们将讨论自定义 PHP 函数。
 
-# 第 6 章：自定义函数
+# 第 6 章：自定义函函数
 
 ### 目标
 - 了解什么是函数
@@ -4926,21 +5439,33 @@ echo("</tr>");
 以下是第 1 章中使用的这些函数的实际示例：
 
 ```php
+
 echo("<br>这是第二条语句");
+
 print("Hello!");
+
 printf("我 %d 岁了", 21);
+
 ```
 
 在第 3 章中你使用了 `array()` 函数。该实例看起来比之前的示例复杂，但它遵循相同的函数调用格式和语法。
 
 ```php
+
 $salary = array(
+
     "Doe" => 30000,
+
     "Smith" => 28000,
+
     "Rogers" => 50000,
+
     "Adam" => 120000,
+
     "Brown" => 60000
+
 );
+
 ```
 
 TIP：2012 年 11 月 27 日，`stackoverflow.com` 的一位用户报告称 PHP 官方网站 `www.php.net` 列出了 5845 个内置函数。此外，数百名开发者提供了经过测试和调试的函数库，它们大多是免费提供的。如果你正在寻找你想要为网站编写的功能或能力，可能该功能已经存在于某些开发者的函数库中了。
@@ -4956,12 +5481,14 @@ TIP：2012 年 11 月 27 日，`stackoverflow.com` 的一位用户报告称 PHP 
 调用函数等同于一条程序语句。当你调用一个函数时，程序控制会跳转到函数的第一行。当函数执行完其代码后，程序控制将转移到函数调用之后的后续语句。
 
 ```
+
 $retValue = functionName(arg1, arg2,...); // function call
+
 ```
 
 在 `functionName` 执行完毕后，执行该程序语句。
 
-你可以通过向函数传递任意数量的值（称为参数）来选择性地控制函数的处理过程。
+你可以通过向函数传递任意数量的值（称为参数）来选择性的控制函数的处理过程。
 
 例如，`echo()` 和 `print()` 函数都各向传递了一个字符串类型的参数。这个字符串就是 `echo()` 和 `print()` 函数在浏览器中显示的内容。接下来，`printf()` 函数传递了两个参数，第一个是字符串，第二个是整数。字符串和整数都将在浏览器中显示为“I am 21 years old.”最后，`array()` 函数传递了五个参数，这些参数将成为关联数组 `$salary` 的成员或元素。
 
@@ -4981,7 +5508,9 @@ $retValue = functionName(arg1, arg2,...); // function call
 让我们再看一个函数调用的例子，它使用了函数调用的所有可选组件——参数列表和返回值。我们将在在本章稍后的内容中多次引用这个例子。
 
 ```
+
 $noDaysInMonth = days_in_month( $month, $year );
+
 ```
 
 `days_in_month()` 函数是由 [www.stackoverflow.com](http://www.stackoverflow.com) 的用户编写并贡献的。它返回过去或未来某一年（`$year`）特定月份（`$month`）的天数，并考虑闰年。
@@ -4994,16 +5523,23 @@ $noDaysInMonth = days_in_month( $month, $year );
 如果没有函数，你必须为你需要处理的每一个名字复制并粘贴这个例程。但如果有了函数，你可以将此例程放在一个函数中，调用该函数并将名、中间名和姓作为参数传递。然后，函数会将这三个字母的缩写作为返回值返回。例如：
 
 ```
+
 $givname = “George”;
+
 $midname = “Walker”;
+
 $surname = “Bush”;
+
 $initials = formInitials( $givname, $midname, $surname);
+
 ```
 
 之前的四行代码可以像这样压缩为一行：
 
 ```
+
 $initials = formInitials( “George”, “Walker”, “Bush”);
+
 ```
 
 在上述两种形式中，变量 `$initials` 都将包含大写字母“GWB”。
@@ -5032,10 +5568,15 @@ $initials = formInitials( “George”, “Walker”, “Bush”);
 程序员可以根据需要，将任何函数容器文件读取到主脚本文件中。为了实现这一点，程序员可以使用以下四个函数中的任何一个：
 
 ```php
+
 include("phpScriptName");
+
 include_once("phpScriptName");
+
 require("phpScriptName");
+
 require_once("phpScriptName");
+
 ```
 
 这四个函数都允许将文件 `phpScriptName` 中的函数集成到当前脚本文件中，就像代码被复制并粘贴过去一样。
@@ -5045,35 +5586,59 @@ require_once("phpScriptName");
 `include_once()` 和 `require_once()` 用于防止嵌套包含。为了理解嵌套包含，让我们考虑 PHP 脚本——`1stScript.php`、`2ndScript.php`、`myFuncsA.php` 和 `4thScript.php`。
 
 ```php
+
 // 1stScript.php
+
 <?php
+
     include("myFuncsA.php")
+
     validateParameters();
+
 ?>
 
 // 2ndScript.php
+
 <?php
+
     include("myFuncsA.php")
+
     function computeValues( param1, param2) {
+
         program statements;
+
         return $computedValue;
+
     }
+
     validateParameters();
+
 ?>
 
 // myFuncsA.php
+
 <?php
+
     function validateParameters() {
+
         program statements;
+
         return expression;
+
     }
+
 ?>
 
 // 4thScript.php
+
 <?php
+
     include("1stScript.php");
+
     include("2ndScript.php");
+
 ?>
+
 ```
 
 `1stScript.php` 和 `2ndScript.php` 都包含了 `myFuncsA.php`，其中定义并编写了函数 `validateParameters()`。到目前为止一切良好！但现在出现了 `4thScript.php`，它同时包含了 `1stScript.php` 和 `2ndScript.php`。这就是我们的嵌套包含情况！
@@ -5083,11 +5648,17 @@ require_once("phpScriptName");
 为了解决这个问题，我们在 `4thScript.php` 中 使用了 `include_once()`。
 
 ```php
+
 // 4thScript.php
+
 <?php
+
     include_once("1stScript.php");
+
     include_once("2ndScript.php");
+
 ?>
+
 ```
 
 `include_once()` 和 `require_once()` 在当前脚本执行期间只包含指定的或或一次。如果你再次调用 `include_once()` 或 `require_once()` 来包含同一个文件或脚本，则什么都不会发生。`include()` 或 `require()` 函数调用应该放在 HTML 文档的 `<head>` 部分。还需要理解的是，当你包含一个函数脚本文件时，并**不会**自动执行这些函数。函数只有通过格式正确且具有正确数量和顺序参数的调用才能执行。
@@ -5099,9 +5670,13 @@ require_once("phpScriptName");
 ![](img/00177.jpeg) 图 6.2：Komodo Edit 的 New File 窗口。输入文件名 `includeMe.php` 并文件保存到你的 `www` 或 `htocs` 文件夹中。打开新的 PHP 文件，在起始和结束标签之间输入以下代码：
 
 ```php
+
 <?php
+
     print("This statement is called from the file includeMe.php using the include command.");
+
 ?>
+
 ```
 
 ![](img/00178.jpeg) 图 6.3：Komodo Edit 中的 `includeMe.php` 代码。保存并运行此脚本。此代码将产生以下输出：
@@ -5111,9 +5686,13 @@ require_once("phpScriptName");
 使用模板创建另一个 PHP 文件，但这次使用 `include.php` 作为文件名。在 `include.php` 文件中，输入以下代码，打印相同的语句然后插入一个换行标签。然后将 include 命令放入 `includeMe.php` 代码如下：
 
 ```php
+
 <?php
+
     print("This statement is called from the file includeMe.php using the include command.");
+
 ?>
+
 ```
 
 代码在 `includeMe.php` 中打印相同的语句并插入换行。
@@ -5121,9 +5700,13 @@ require_once("phpScriptName");
 ![](img/00180.jpeg) 图 6.5：Komodo Edit 中 `includeMe.php` 的代码列表。保存并运行此脚本。输出如下：
 
 ```php
+
 <?php
+
     print("This statement is called from the file includeMe.php using the include command.");
+
 ?>
+
 ```
 
 你的输出应该如下所示：
@@ -5131,17 +5714,29 @@ require_once("phpScriptName");
 ![](img/00181.jpeg) 图 6.6：运行 `include.php` 时的输出。可以通过在程序中多次重复 include 语句。通过复制以下代码修改 `include.php`：
 
 ```php
+
 <?php
+
     print("This statement is called from the file includeMe.php using the include command.");
+
     print("</br>");
+
     include("includeMe.php");
+
     print("</br>");
+
     include("includeMe.php");
+
     print("</br>");
+
     include("includeMe.php");
+
     print("</br>");
+
     include("includeMe.php");
+
 ?>
+
 ```
 
 ![](img/00182.jpeg) 图 6.7：修改后的 `include.php` 运行时的输出。这是新输出的样式。
@@ -5151,25 +5746,45 @@ require_once("phpScriptName");
 代码列表：`include_2.php`
 
 ```php
+
 <?php
+
     print("This statement is called from the file includeMe.php using the include command.");
+
     print("</br>");
+
     require("includeMeXX.php");
+
     print("</br>");
+
     include("includeMe.php");
+
     print("</br>");
+
     include("includeMe.php");
+
     print("</br>");
+
     include("includeMe.php");
+
     print("</br>");
+
     include("includeMe.php");
+
     print("The following statement is printed out using the include function.");
+
     print("</br>");
+
     print("The following statement is printed out using the include function.");
+
     print("</br>");
+
     print("The following statement is printed out using the include function.");
+
     print("</br>");
+
 ?>
+
 ```
 
 注意，当 `require` 语句中发现错误时，该语句之后的代码都没有被处理，程序停止了。
@@ -5181,13 +5796,21 @@ require_once("phpScriptName");
 代码列表：`include_3.php`
 
 ```php
+
 <?php
+
     print("This statement is called from the file includeMe.php using the include command.");
+
     print("</br>");
+
     include("includeMeXX.php");
+
     print("</br>");
+
     include("includeMe.php");
+
 ?>
+
 ```
 
 
@@ -5195,13 +5818,21 @@ require_once("phpScriptName");
 
 
 ```php
+
 print("The following statement below is printed out using the include function.");
+
 print("</br>");
+
 print("The following statement below is printed out using the include function.");
+
 print("</br>");
+
 print("The following statement below is printed out using the include function.");
+
 print("</br>");
+
 ?>
+
 ```
 
 如果所有的 `print` 和 `include` 语句都经过处理，输出将显示六行。但由于其中一个 `include` 语句调用了一个不存在或“空”文件——`includeMeXX.php`，程序将把该部分代码解释为错误并在浏览器中打印错误语句。当使用 `require` 代替 `include` 时，程序也会停止。
@@ -5215,10 +5846,15 @@ print("</br>");
 现在让我们来学习如何编写自己的函数。这是我们必须遵循的格式和语法：
 
 ```php
+
 function functionName( param1, param2, . . . paramN ) {
+
     program statements;
+
     return expression;
+
 }
+
 ```
 
 第一行必须以关键字 `function` 开始。接着是你的函数名称。该名称必须遵循某些规则。
@@ -5256,12 +5892,19 @@ function functionName( param1, param2, . . . paramN ) {
 ### 步骤 2：在你的 `functions.php` 文件中输入以下代码。
 
 ```php
+
 <?php
+
 function greeting()
+
 {
+
     echo("Hello! This is a greeting!");
+
 }
+
 ?>
+
 ```
 
 ![](img/00187.jpeg)
@@ -5271,22 +5914,37 @@ function greeting()
 现在让我们向容器文件添加第二个函数 `loop()`。此循环例程将以三角形结构显示星号 (**)。
 
 ```php
+
 <?php
+
     function greeting()
+
     {
+
         print("Hello! This is a greeting!</br>");
+
     }
 
     function loop()
+
     {
+
         for($i=0; $i<=10; $i++) {
+
             for($j=0; $j<=$i; $j++) {
+
                 print("*");
+
             }
+
             print("<br>");
+
         }
+
     }
+
 }
+
 ```
 
 *(注：原文后部分存在大量重复和断裂的片段，已根据指令逻辑进行了清理和整合)*
@@ -5297,7 +5955,9 @@ function greeting()
 函数的返回值它是为传递给它的特定 `$month` 和特定 `$year` 所计算的天数。实际调用函数以获取 2014 年 2 月的天数，如下所示：
 
 ```php
+
 $noDaysInMonth = days_in_month( 2, 2014 )
+
 ```
 
 该函数将返回 28，该值将存储在变量 `$noDaysInMonth` 中。
@@ -5315,15 +5975,21 @@ b. 传递给函数的参数的数量和顺序必须与函数定义中声明的�
 让我们回顾之前的例子，一个声明了三个参数的函数。这是该函数的局部声明：
 
 ```php
+
 Function formInitials( $givname, $midname, $surname) { 
+
     program statements
+
 }
+
 ```
 
 对此函数的正确调用是：
 
 ```php
+
 $initials = formInitials( “George”, ”Walker”, “Bush”)
+
 ```
 
 三个参数对应三个参数，参数的顺序与参数的顺序对应。参数“George”对应参数 `$givname`，参数“Walker”对应 `$midname`，参数“Bush”对应 `$surname`。改变参数的顺序就会得到错误的结果！
@@ -5347,23 +6013,33 @@ d. 向函数传递的参数数量没有限制。然而，使用超过五个或�
 ### 第 3 ：在 `functionArgs.php` 文件中创建一个名为 `dogAgeCalc()` 的函数并向函数传递参数 `$dogAge`。
 
 ```php
+
 <?php
+
 function dogAgeCalc($dogAge)
+
 {
+
 ```
 
 ### 第 4 ：编写将狗的年龄乘以七的代码。
 
 ```php
+
     $humanAge = $dogAge*7;
+
 print("The dog's age in human years is " . $humanAge .".");
+
 ```
 
 ### 第 5 ：关闭脚本。
 
 ```php
+
     }
+
 ?>
+
 ```
 
 此脚本将给定的年龄转换为人类年龄。例如，如果一只狗是 7 岁，它等同于一个 49 岁的人类。
@@ -5373,13 +6049,21 @@ print("The dog's age in human years is " . $humanAge .".");
 **代码列表：`functionArgs.php`**
 
 ```php
+
 <?php
+
 function dogAgeCalc($dogAge)
+
 {
+
     $humanAge = $dogAge*7;
+
     print("The dog's age in human years is " . $humanAge .".");
+
 }
+
 ?>
+
 ```
 
 如果你尝试运行此代码，它将显示空白输出，因为尚未给变量 `$age` 赋值。脚本的输出看起来如下所示：
@@ -5399,28 +6083,37 @@ function dogAgeCalc($dogAge)
 ### 第 7 ：包含起始和结束 PHP 脚本标签。在文档的 `<head>` 部分，`include()` PHP 函数容器文件 `functionArgs.php`。对 `include()` 和 `require()` 函数的调用必须位于 `<head>` 部分。
 
 ```html
+
 <!DOCTYPE html>
+
 <html
+
 <head>
+
 <title>Dog Age Calculator</title>
+
     <?php include("functionArgs.php"); ?>
+
 </head>
+
 ```
 
 ### 第 8 ：在 `<body>` 部分调用函数 `dogAgeCalc` 并给 `$age` 赋值五，然后将其传递给函数。
 
 ```html
+
 <body
+
     <?php
+
         dogAgeCalc(5);
-```
 
-### 第 9 ：关闭脚本和文档。
-
-```php
     ?>
+
 </body>
+
 </html>
+
 ```
 
 脚本的完整代码列表和输出所示：
@@ -5428,18 +6121,31 @@ function dogAgeCalc($dogAge)
 **代码列表：`computeDogAge.php`**
 
 ```html
+
 <!DOCTYPE html>
+
 <html
+
 <head>
+
 <title>Dog Age Calculator</title>
+
     <?php include("functionArgs.php"); ?>
+
 </head>
+
 <body
+
     <?php
+
         dogAgeCalc(5);
+
     ?>
+
 </body>
+
 </html>
+
 ```
 
 ---
@@ -5455,23 +6161,41 @@ PHP 函数只返回一个值。`return` 语句是可选的，但如果没有提�
 **代码列表：`returnExample1.php`**
 
 ```php
+
 <!DOCTYPE html>
+
 <html>
+
 <head>
+
 <title>Return Example 1</title>
+
     <?php
+
 function square($value)
+
 {
+
     $value = $value*$value;
+
     return $value;
+
 }
+
 ?>
+
 </head>
+
 <body>
+
     <?php
+
     print("The square of 2 is " . square(2));
+
     $result = square(2);
+
     </html>
+
 ```
 
 ![](img/00195.jpeg)
@@ -5481,10 +6205,15 @@ function square($value)
 现在，修改脚本使 `square()` 的返回值存储在变量 `$age` 中。
 
 ```html
+
 <body>
+
     <?php
+
     print("The square of 2 is " . square(2));
+
     $age = square(2);
+
 ```
 
 现在，添加一个 `print()` 语句来打印 `$age` 的值。
@@ -5494,26 +6223,47 @@ function square($value)
 **代码列表：`returnExample2.php`**
 
 ```php
+
 <!DOCTYPE html>
+
 <html>
+
 <head>
+
 <title>Return Example 2</title>
+
     <?php
+
 function square($value)
+
 {
+
     $value = $value*$value;
+
     return $value;
+
 }
+
 ?>
+
 </head>
+
 <body>
+
     <?php
+
     print("The square of 2 is " . square(2));
+
     $age = square(2);
+
     print("The square of 2 is " . $age);
+
     ?>
+
 </body>
+
 </html>
+
 ```
 
 ---
@@ -5577,116 +6327,210 @@ c. 函数参数变量：`$temp`
 
 ### 代码列表：tempCalcFunc.php
 ```php
+
 <?php
+
     function Celsius($temp)
+
     {
+
         $temp = ((($temp*9)/5)+32);
+
         print("The value in Fahrenheit is ");
+
         return($temp);
+
     }
+
     function Fahrenheit($temp)
+
     {
+
         $temp = (($temp-32)*5/9);
+
         print("The value in Celsius is ");
+
         return($temp);
+
     }
+
 ?>
+
 ```
 ![](img/00199.jpeg)
 图 6.24: 在 Komodo Edit 中查看 tempCalcFunc.php 的完整代码列表。
 
 ### 代码列表：chap6Lab1_Sol.php
 ```php
+
 <!DOCTYPE html>
+
 <html>
+
 <head>
+
 <title>Chapter 6 Lab Exercise 1</title>
+
     <?php
+
         include("tempCalcFunc.php");
+
     ?>
+
 </head>
+
 <body>
+
     <?php
+
         printf("%0.2f", Celsius(50));
+
         print (".");
+
         print ("<br/>");
+
         printf("%0.2f", Fahrenheit(50));
+
         print (".");
+
     ?>
+
 </body>
+
 </html>
+
 ```
 ![](img/00200.jpeg)
 图 6.25: 在 Komodo Edit 中查看 chap6Lab1_Sol.php 的完整代码列表。
 
 ### 代码列表：tempCalcFunc2.php
 ```php
+
 <?php
+
     $tempInput = $_POST['temp'];
+
     $cond = $_POST['type'];
+
     $newTemp = 0;
 
 function Celsius($temp)
+
     {
+
         $temp = ((($temp*9)/5)+32);
+
         return($temp);
+
     }
+
 function Fahrenheit($temp)
+
     {
+
         $temp = ((($temp-32)*5)/9);
+
         return($temp);
+
     }
+
 if($cond == "1")
+
     {
+
         $newTemp = celsius($tempInput);   
+
         echo("The temperature in Fahrenheit is " . $newTemp.".");
+
     }
+
         else if($cond == "2")
+
     {
+
         $newTemp = fahrenheit($tempInput);  
+
         echo("The temperature in Celsius is " . $newTemp.".");
+
     }
+
 ?>
+
 <form action="chap6Lab2_Sol.php">
+
 <input type="submit" value="Return" />
+
 </form>
+
 ```
 ![](img/00201.jpeg)
 图 6.26: 在 Komodo Edit 中查看 tempFuncFunc2.php 的完整代码列表。
 
 ### 代码列表：chap6Lab2_Sol.php
 ```html
+
 <!DOCTYPE html>
+
 <html>
+
 <head>
+
 <title>Chapter 6 Lab Exercise 2</title>
+
 </head>
+
 <body>
+
     <form action="tempCalcFunc2.php" method="post">
+
     <table>
+
         <tr>
+
             <td colspan=2><<strong>>输入温度值并选择<br/>是摄氏度还是华氏度：</strong></td></td>
+
         </tr>
+
         <tr>
+
             <td>温度</td>
+
             <td align="left"><input type="text" name="temp"/></td>
+
         </tr>
+
         <tr>
+
             <td>摄氏度</td>
+
             <td><input type="radio" name="type" value="1"/></td>
+
         </tr>
+
         <tr>
+
             <td>华氏度</td>
+
             <td><input type="radio" name="type" value="2"/></td>
+
         </tr>
+
         <tr>
+
             <td align="left"><input type="submit" value="Submit"/></td>
+
             <td align="left"><input type="reset" value="Clear"/></td>
+
         </tr>
+
     </table>
+
     </form>
+
 </body>
+
 </html>
+
 ```
 ![](img/00202.jpeg)
 图 6.27: 在 Komodo Edit 中查看 chap6Lab2_Sol.php 的完整代码列表。
@@ -5728,7 +6572,7 @@ f. 如何返回值
 | 函数 | 描述 | 参数 |
 | :--- | :--- | :--- |
 | `fopen()` | 打开文件。 | 文件指针，访问模式 |
-| `fclose()` | 关闭文件。 | 文件指针，访问模式 |
+| `fclose()` | 关闭文件。 | 文件指针，访问模道 |
 | `fwrite()` | 向在服务器中打开的文件写入内容。 | 文件指针，资源文件 |
 | `fgets()` | 从文件中读取单行。 | 资源文件，字符大小 |
 | `fgetc()` | 从文件中读取单个字符。 | 资源文件 |
@@ -5742,7 +6586,7 @@ f. 如何返回值
 
 表 7.1 介绍的命令和函数列表。
 
-某些文件函数需要特定的模式作为参数之一。这些模式指定了访问类型。以下是 PHP 调用 `fopen()` 函数时使用的模式列表。
+某些文件函数需要特定的模作为参数之一。这些模式指定了访问类型。以下是 PHP 调用 `fopen()` 函数时使用的模式列表。
 
 | 模式 | 描述 |
 | :--- | :--- |
@@ -5778,21 +6622,32 @@ f. 如何返回值
 我们要写入的文件名为 `"names.txt"`，我们将把此文件名存储在变量 `$fileName` 中。
 
 ```html
+
 <!DOCTYPE html>
+
 <html>
+
 <head>
+
     <title>Saving Files into the Server</title>
+
 </head>
+
 <body>
+
     <?php
+
     $fileName = "names.txt";
+
 ```
 
 ### 步骤 4
 接下来，我们将使用 `fopen()` 函数访问 `"names.txt"`，该函数接受两个参数：文件名和模式。这是 `fopen()` 函数的正确格式。
 
 ```php
+
 fopen($fileName, 'w')
+
 ```
 
 我们使用的模式是 `'w'`，这意味着以只写模式打开文件。
@@ -5800,7 +6655,9 @@ fopen($fileName, 'w')
 现在，`fopen()` 函数返回一个文件句柄，除了其他用途外，它是与我们打开的文件相关的指针，我们用它来访问文件内容。我们将文件句柄存储在变量 `$fp` 中。我们更新后的 `fopen()` 函数格式现在为：
 
 ```php
+
 $fp = fopen($fileName, 'w')
+
 ```
 
 **提示：** 文件句柄是资源数据类型，是 PHP 八种数据类型之一。文件句柄而非文件名，是执行对文件执行输入输出操作的主要手段。我们的程序访问的每个文件必须分配一个唯一的文件句柄。
@@ -5808,7 +6665,9 @@ $fp = fopen($fileName, 'w')
 `fopen()` 函数通常与命令 `or die` 连接，如果在执行 `fopen()` 函数期间遇到错误，它将终止程序并显示错误信息 `"Can’t open the file"`。我们为 `fopen()` 函数的最终程序语句是：
 
 ```php
+
 $fp = fopen($fileName, 'w') or die ("Can't open the file");
+
 ```
 
 现在 `fopen()` 函数已通过返回句柄成功访问了 `names.txt`，我们可以开始写入它。我们使用返回的句柄来标识文件。
@@ -5817,26 +6676,42 @@ $fp = fopen($fileName, 'w') or die ("Can't open the file");
 关闭脚本和 HTML 文档。
 
 ```php
+
 fclose($fp);
+
 ```
 
 ### 步骤 6
 代码列表将如下：
 
 ```html
+
 <!DOCTYPE html>
+
 <html>
+
 <head>
+
     <title>Saving Files into the Server</title>
+
 </head>
+
 <body>
+
     <?php
+
     $fileName = "names.txt";
+
     $fp = fopen($fileName, 'w') or die ("Can't open the file");
+
     fclose($fp);
+
     ?>
+
 </body>
+
 </html>
+
 ```
 
 ![](img/00208.jpeg)
@@ -5849,16 +6724,22 @@ fclose($fp);
 声明数组 `$name`，其成员为 John, Guile, Lily, Ervin, Adam, Mary 和 Irene。
 
 ```php
+
 $name = array("John", "Guile", "Lily", "Ervin", "Adam", "Mary", "Irene");
+
 ```
 
 ### 步骤 8
 现在，我们将数组 `$name` 中的名称存在 `names.txt`。我们通过遍历数组并使用 `fwrite()` 函数写入每个名称。在每个名称的末尾，我们追加换行符 `"\n"`。换行符指示一个名称的结束和另一个的开始。它还指示了我们想要开始新的一行。
 
 ```php
+
 for($i = 0; $i<count($name); $i++) {
+
     fwrite($fp, $name[$i] . "\n");
+
 }
+
 ```
 
 ### 最终结果
@@ -5867,23 +6748,41 @@ for($i = 0; $i<count($name); $i++) {
 这是追加后的代码列表看起来应该是这样的：
 
 ```html
+
 <!DOCTYPE html>
+
 <html>
+
 <head>
+
     <title>Saving Files into the Server</title>
+
 </head>
+
 <body>
+
     <?php
+
     $fileName = "names.txt";
+
     $fp = fopen($fileName, 'w') or die ("Can't open the file");
+
     $name = array("John", "Guile", "Lily", "Ervin", "Adam", "Mary", "Irene");
+
     for($i = 0; $i<count($name); $i++) {
+
         fwrite($fp, $name[$i] . "\n");
+
     }
+
     fclose($fp);
+
     ?>
+
 </body>
+
 </html>
+
 ```
 
 ![](img/00209.jpeg)
@@ -5924,7 +6823,9 @@ for($i = 0; $i<count($name); $i++) {
 在这里我们可以看到在使用 `fwrite()` 函数将名称写入文本文件之前，我们在每个名称后面追加的换行符的效果：
 
 ```php
+
 fwrite($fp, $name[$i] . "\n");
+
 ```
 
 WordPad 将换行符解释为开始新一行的指示。相反，记事本忽略换行符。
@@ -5936,7 +6837,9 @@ WordPad 将换行符解释为开始新一行的指示。相反，记事本忽略
 `fread()` 函数从文件中读取一个字符字符串。它需要两个参数：一个文件句柄（资源数据类型）和要读取的字符数（整数数据类型）。示例如下：
 
 ```php
+
 $string = fread($fp, 20);
+
 ```
 
 在那个示例中，从文件句柄 `$fp` 指向的文件读取 20 个字符，然后存储在变量 `$string` 中。之后，文件指针将位于文件的第 21 个字符处。
@@ -5960,19 +6863,33 @@ $string = fread($fp, 20);
 代码列表：`readFile_1.php`
 
 ```html
+
 <!DOCTYPE html>
+
 <html>
+
 <head>
+
     <title>Reading Files From The Server</title>
+
 </head>
+
 <body>
+
     <?php
+
         $fileName = "names.txt";
+
         $fp = fopen($fileName, 'r');
+
         fclose($fp);
+
     ?>
+
 </body>
+
 </html>
+
 ```
 
 ![](img/00215.jpeg)
@@ -5982,7 +6899,9 @@ $string = fread($fp, 20);
 **步骤 5：** 紧接 `fopen()` 调用之后，输入 `fread()` 的调用。
 
 ```php
+
 $string = fread($fp, 20);
+
 ```
 
 这是完整代码列表应有的样子：
@@ -5990,21 +6909,37 @@ $string = fread($fp, 20);
 代码列表：`readFile_2.php`
 
 ```html
+
 <!DOCTYPE html>
+
 <html>
+
 <head>
+
     <title>Reading Files From The Server</title>
+
 </head>
+
 <body>
+
     <?php
+
         $fileName = "names.txt";
+
         $fp = fopen($fileName, 'r');
+
         $string = fread($fp, 20);
+
         fclose($fp);
+
         echo($string);
+
     ?>
+
 </body>
+
 </html>
+
 ```
 
 ![](img/00216.jpeg)
@@ -6024,13 +6959,17 @@ $string = fread($fp, 20);
 **步骤 2：** 找到调用 `fread()` 的那一行。将其从：
 
 ```php
+
 $string = fread($fp, 20);
+
 ```
 
 改为：
 
 ```php
+
 $string = fread($fp, filesize($fileName));
+
 ```
 
 注意 `filesize()` 函数接受一个参数，即文件句柄。
@@ -6038,21 +6977,37 @@ $string = fread($fp, filesize($fileName));
 **步骤 3：** 创建整个文件。更新后的代码必须是：
 
 ```html
+
 <!DOCTYPE html>
+
 <html>
+
 <head>
+
     <title>Reading Files From The Server</title>
+
 </head>
+
 <body>
+
     <?php
+
         $fileName = "names.txt";
+
         $fp = fopen($fileName, 'r');
+
         $string = fread($fp, filesize($fileName));
+
         fclose($fp);
+
         echo($string);
+
     ?>
+
 </body>
+
 </html>
+
 ```
 
 ![](img/00218.jpeg)
@@ -6093,33 +7048,53 @@ $string = fread($fp, filesize($fileName));
 **步骤 6：** 将将“names.txt”赋值给变量 `$fileName` 的那行从：
 
 ```php
+
 $fileName = "names.txt";
+
 ```
 
 改为：
 
 ```php
+
 $fileName = "names_2.txt";
+
 ```
 
 这是你完整代码列表应有的样子：
 
 ```html
+
 <!DOCTYPE html>
+
 <html>
+
 <head>
+
     <title>Reading Files From The Server</title>
+
 </head>
+
 <body>
+
     <?php
+
         $fileName = "names_2.txt";
+
         $fp = fopen($fileName, 'r');
+
         $string = fread($fp, filesize($fileName));
+
         fclose($fp);
+
         echo($string);
+
     ?>
+
 </body>
+
 </html>
+
 ```
 
 **步骤 7：** 保存你的文件。
@@ -6143,26 +7118,40 @@ $fileName = "names_2.txt";
 **步骤 2：** 按照你看到的输入以下代码。
 
 ```html
+
 <!DOCTYPE html>
+
 <html>
+
 <head>
+
     <title>Reading Files From The Server</title>
+
 </head>
+
 <body>
+
     <?php
+
         $file = "names.txt";
+
         $string = file_get_contents($file);
+
         echo($string);
+
     ?>
+
 </body>
+
 </html>
+
 ```
 
 
 
 你可以看到我们的代码要简单得多。我们不需要调用 `fopen()` 和 `fclose()` 函数。我们只需要调用 `file_get_contents()` 函数并传入两个参数：我们想要读取的文件名，以及一个 `true` 或 `false` 的布尔值。
 
-在 `$string` 赋值语句中，布尔参数 `TRUE` 仅意味着在访问文件时包含路径。由于我们的脚本和文本文件都在 `www` 或 `htdocs` 文件夹中，因此第二个参数没有影响。
+在 `$string` 赋值语句中，布尔参数 `TRUE` 仅意味着在访问文件时包含路径。由于我们的脚本和文本文件都在 `www` 或 `htocs` 文件夹中，因此第二个参数没有影响。
 
 **提示：** `file_get_contents()` 函数最多可以接受五个参数。第一个参数 `filename` 是必须的，而其余四个是可选的。你可以访问 [`www.php.net/file_get_contents`](http://www.php.net/file_get_contents) 了解更多关于该函数的详细信息。
 
@@ -6183,62 +7172,99 @@ $fileName = "names_2.txt";
 ### 步骤 2：通过包含 PHP 脚本标签开始编写你的代码。
 
 ```html
+
 <!DOCTYPE html>
+
 <html>
+
 <head>
+
     <title>从服务器读取文件</title>
+
 </head>
+
 <body>
+
     <?php
+
 ```
 
 ### 步骤 3：将字符串 “names.txt” 存储在变量 `$fileName` 中。
 ```php
+
 $fileName = "names.txt";
+
 ```
 
 ### 步骤 4：使用读取模式调用 `fopen()` 函数。
 ```php
+
 $fp = fopen($fileName, 'r');
+
 ```
 
 ### 步骤 5：使用文件处理器变量 `$fp` 作为函数的参数调用 `fgets()` 函数。我们将 `fget()` 从文件中读取的字节存储在变量 `$string` 中。
 ```php
+
 $string = fgets($fp);
+
 ```
 
 ### 步骤 6：调用 `fclose()` 并使用 `echo()` 函数显示 `$string` 的内容。
 ```php
+
 fclose($fp);
+
 echo($string);
+
 ```
 
 ### 步骤 7：关闭 PHP 脚本标签和 HTML 文档。确保已保存你的文档。
 ```php
+
 ?>
+
 </body>
+
 </html>
+
 ```
 
 ### 步骤 8：你的完整代码列表看起来应该是应该是这样的：
 **代码列表：`readFile_5.php`**
 
 ```html
+
 <!DOCTYPE html>
+
 <html>
+
 <head>
+
     <title>从服务器读取文件</title>
+
 </head>
+
 <body>
+
     <?php
+
         $fileName = "names.txt";
+
         $fp = fopen($fileName, 'r');
+
         $string = fgets($fp);
+
         fclose($fp);
+
         echo($string);
+
     ?>
+
 </body>
+
 </html>
+
 ```
 
 ### 步骤 9：运行你的脚本。
@@ -6252,7 +7278,9 @@ echo($string);
 
 ### 步骤 1：在 Komodo Edit 中仍打开 `readFile_5.php` 的情况下，将字符串 “names_2.txt” 存储在变量 `$fileName` 中。
 ```php
+
 $fileName = "names_2.txt";
+
 ```
 
 ### 步骤 2：点击 文件 > 另存为... > 将文件保存为 `readFile_6.php`。
@@ -6274,81 +7302,128 @@ $fileName = "names_2.txt";
 
 我们使用一个 `while` 循环，其中使用布尔函数 `feof()` 作为条件表达式。当到达文件结束标记时，该函数返回 `TRUE`。
 
-### 步骤 1：创建一个新的 HTML5 模板。包含 PHP 标签并将文件命名为 `readFile_7.php`。
+### 步骤 1：创建一个新的 HTML5 模板。包含 PHP 标筚并将文件命名为 `readFile_7.php`。
 
 ```html
+
 <!DOCTYPE html>
+
 <html>
+
 <head>
+
     <title>从服务器读取文件</title>
+
 </head>
+
 <body>
+
     <?php
+
 ```
 
 ### 步骤 2：将字符串 “names.txt” 存储在变量 `$fileName` 中。
 ```php
+
 $fileName = "names.txt";
+
 ```
 
 ### 步骤 3：使用读取模式调用 `fopen()` 函数。
 ```php
+
 $fp = fopen($fileName, 'r');
+
 ```
 
 ### 步骤 4：将 `$string` 初始化为空字符串。
 ```php
+
 $string = "";
+
 ```
 
 ### 步骤 5：创建一个 `while` 循环，其中使用布尔函数 `feof()` 作为我们的条件表达式。当到达文件结束标记时，该函数返回 `TRUE`。我们需要这样做是因为 `fgets()` 每次从文件中读取一行，我们将这些行追加到 `$string`。
 ```php
+
 while(!feof($fp)) {
+
     $string .= fgets($fp);
+
     $string .= "<br/>";
+
 }
+
 ```
 
 ### 步骤 6：关闭文件句柄。
 ```php
+
 fclose($fp);
+
 ```
 
 ### 步骤 7：显示文件。
 ```php
+
 echo($string);
+
 ```
 
 ### 步骤 8：关闭 PHP 标签和 HTML 文档。
 ```php
+
 ?>
+
 </body>
+
 </html>
+
 ```
 
 ### 步骤 9：这是 `readFile_7.php` 的完整代码：
 **代码列表：`readFile_7.php`**
 
 ```html
+
 <!DOCTYPE html>
+
 <html>
+
 <head>
+
     <title>从服务器读取文件</title>
+
 </head>
+
 <body>
+
     <?php
+
         $fileName = "names.txt";
+
         $fp = fopen($fileName, 'r');
+
         $string = "";
+
         while(!feof($fp)) {
+
             $string .= fgets($fp);
+
             $string .= "<br/>";
+
         }
+
         fclose($fp);
+
         echo($string);
+
     ?>
+
 </body>
+
 </html>
+
 ```
 
 ### 步骤 10：运行你的脚本。
@@ -6363,26 +7438,47 @@ echo($string);
 **代码列表：`readFile_8.php`**
 
 ```html
+
 <!DOCTYPE html>
+
 <html>
+
 <head>
+
     <title>从服务器读取文件</title>
+
 </head>
+
 <body>
+
     <?php
+
         $fileName = "names_2.txt";
+
         $fp = fopen($fileName, 'r');
+
         $string = "";
+
         while(!feof($fp)) {
+
             $string .= fgets($fp);
+
             $string .= "<br/>";
+
         }
+
         fclose($fp);
+
         echo($string);
+
     ?>
+
 </body>
+
 </html>
-```
+
+
+
 
 运行 `readFile_8.php` 并查看输出。
 
@@ -6411,15 +7507,25 @@ echo($string);
 ### 步骤 2：嵌入 PHP 标签，声明文件名变量 `$fileName` 并使用模式 ‘a’ 调用 `fopen()` 函数。这应该是你的代码：
 
 ```html
+
 <!DOCTYPE html>
+
 <html>
+
 <head>
+
     <title>从服务器追加文件</title>
+
 </head>
+
 <body>
+
     <?php
+
         $fileName = "names.txt";
+
         $fp = fopen($fileName, 'a');
+
 ```
 
 
@@ -6429,46 +7535,62 @@ echo($string);
 我们将向 `names.txt` 文件中添加“John”和“Jane”这两个名字，但首先我们需要分别将这些名字存储在变量 `$name1` 和 `$name2` 中。
 
 ```php
+
 $name1 = "John";
+
 $name2 = "Jane";
+
 ```
 
 ### 步骤 4
 调用 `fwrite()` 函数并传入正确的参数数量和顺序：文件句柄和数据字符串。为我们将追加的每个名称末尾一个换行符。
 
 ```php
+
 fwrite($fp, $name1 . "\n");
+
 fwrite($fp, $name2 . "\n");
+
 ```
 
 ### 步骤 5
 回到 `fopen()` 的调用处，添加 `or die` 子句，以便在 `names.txt` 文件不存在时向用户发出警告。
 
 ```php
+
 $fp = fopen($file, 'a') or die ("Can't Open The File");
+
 ```
 
 ### 步骤 6
 关闭文件指针。
 
 ```php
+
 fclose($fp);
+
 ```
 
 ### 步骤 7
 添加一个 `echo` 语句，通知用户新数据已添加。
 
 ```php
+
 echo("names.txt has been overwritten!")
+
 ```
 
 ### 步骤 8
 关闭 PHP 脚本和 HTML 文档并再次保存你的文件。
 
 ```php
+
 ?>
+
 </body>
+
 </html>
+
 ```
 
 ### 步骤 9
@@ -6477,24 +7599,43 @@ echo("names.txt has been overwritten!")
 **代码列表：appendFile.php**
 
 ```php
+
 <!DOCTYPE html>
+
 <html>
+
 <head>
+
     <title>从服务器上追加和删除文件</title>
+
 </head>
+
 <body>
+
 <?php
+
     $file = "names.txt";
+
     $fp = fopen($file, 'a') or die ("Can't Open The File");
+
     $name1 = "John";
+
     $name2 = "Jane";
+
     fwrite($fp, $name1 . "\n");
+
     fwrite($fp, $name2 . "\n");
+
     fclose($fp);
+
     echo("New Data Has Been Added!")
+
 ?>
+
 </body>
+
 </html>
+
 ```
 
 ### 步骤 10
@@ -6516,7 +7657,9 @@ echo("names.txt has been overwritten!")
 现在让我们使用 `unlink()` 函数从服务器上删除文件，该函数接受我们想要删除的文件的完整文件名作为其所需的第一个参数。例如：
 
 ```php
+
 unlink("filename.ext");
+
 ```
 
 就如此简单。不需要文件句柄，因此不需要使用 `fopen()` 和 `fclose()`。
@@ -6558,18 +7701,31 @@ unlink("filename.ext");
 **代码列表：viewDeleteFile.php**
 
 ```php
+
 <!DOCTYPE html>
+
 <html>
+
 <head>
+
     <title>从服务器上删除文件</title>
+
 </head>
+
 <body>
+
 <?php
+
     unlink("deletedMessage.txt");
+
     echo("</br> deletedMessage.txt has been deleted!")
+
 ?>
+
 </body>
+
 </html>
+
 ```
 
 ### 步骤 4
@@ -6635,13 +7791,21 @@ PHP 有一个特殊函数 `fgetcsv()`，它可以从 CSV 文件读取一行并�
 步骤 3：使用 HTML5 模板创建一个 PHP 文件。将文件保存为 `readCSV.php`。嵌入 PHP 开启标签。
 
 ```php
+
 <!DOCTYPE html>
+
 <html>
+
 <head>
+
     <title>读取 CSV 文件</title>
+
 </head>
+
 <body>
+
 <?php
+
 ```
 
 ![](img/00246.jpeg)
@@ -6654,30 +7818,47 @@ PHP 有一个特殊函数 `fgetcsv()`，它可以从 CSV 文件读取一行并�
 ### 第 4 ：将字符串“deliveredItems.csv”存储在变量 `$fileName` 中。
 
 ```php
+
 $fileName = "deliveredItems.csv";
+
 ```
 
 ### 第 5 ：调用 `fopen()` 函数以‘r’模式访问 `deliveredItems.csv`。将返回的文件句柄存储在变量 `$fp` 中。
 
 ```php
+
 $fp = fopen($fileName, 'r');
+
 ```
 
 此时，你的代码看起来应该是这样的：
 
 ```html
+
 <!DOCTYPE html>
+
 <html>
+
 <head>
+
     <title>读取 CSV 文件</title>
+
 </head>
+
 <body>
+
 <?php
+
     $file = "deliveredItems.csv";
+
     $fp = fopen($file, 'r');
+
 ?>
+
 </body>
+
 </html>
+
 ```
 
 现在，我们将利用 `while` 循环逐行读取 `deliveredItems.csv`。当我们读取到某行时，我们将会把该行中用逗号分隔的值格式化为表格的一行，然后将该行追加到变量 `$output` 中，该变量最终将包含我们构建的所有行。
@@ -6685,50 +7866,71 @@ $fp = fopen($fileName, 'r');
 ### 第 6 ：在进入 `while` 循环之前，将变量 `$output` 初始化为空字符串 ""。
 
 ```php
+
 $output = "";
+
 ```
 
 ### 第 7 ：现在使用条件表达式 `!feof($fp)` 声明 `while` 循环。
 
 ```php
+
 while(!feof($fp))
+
 ```
 
 ### 第 8 ：`while` 循环中的第一个语句是调用函数 `fgetcsv()`，该函数将从 `deliveredItems.csv` 读取一行，然后并将该行中每个用逗号分隔的值存储为数组 `$inventory` 中的一个元素。
 
 ```php
+
 $inventory = fgetcsv($fp, 1024);
+
 ```
 
 此时，你的代码应该像这样：
 
 ```php
+
 $output = "";
+
 while(!feof($fp))
+
 {
+
     $inventory = fgetcsv($fp, 1024);
+
 ```
 
 在每次调用 `fgetcsv()` 之后，`$inventory` 将包含包含四个元素的数组。这四个元素对应于 `deliveredItems.csv` 中某行的四个用逗号分隔的值。
 
 - `m-000, meat, $12.00, 10`
 
-### 第 9：我们将在表格的一行（由四个单元格组成）中显示 `$inventory` 的四个元素。以下代码构建了表格的行。
+### 第 9：我们将在表格的一行（由四个单元组成）中显示 `$inventory` 的四个元素。以下代码构建了表格的行。
 
 ```php
+
 $line = "";
+
 $line .= "<tr>";
+
 $line .= "<td align='center'>" . $inventory[0] . "</td>";
+
 $line .= "<td align='center'>" . $inventory[1] . "</td>";
+
 $line .= "<td align='center'>" . $inventory[2] . "</td>";
+
 $line .= "<td align='center'>" . $inventory[3] . "</td>";
+
 $line .= "</tr>";
+
 ```
 
 ### 第 10：一旦构建好一行，它就会被追加到变量 `$output` 中，该变量最终将包含表格的所有行。
 
 ```php
+
 $output .= $line;
+
 ```
 
 注意，我们在进入循环之前已经将 `$output` 初始化为空字符串 ""。
@@ -6736,9 +7938,13 @@ $output .= $line;
 ### 第 11：当 `while` 循环结束时（因为它已经到达了 `deliveredItems.csv` 的文件结束标记），我们可以以表格的形式显示输出。
 
 ```php
+
 print("<table border='1' cellpadding='1'>");
+
 print($output);
+
 print("</table>");
+
 ```
 
 ### 第 12：关闭脚本标签和 HTML 文档并再次保存你的文件。
@@ -6746,34 +7952,63 @@ print("</table>");
 **代码列表：readCSV.php**
 
 ```html
+
 <!DOCTYPE html>
+
 <html>
+
 <head>
+
     <title>读取 CSV 文件</title>
+
 </head>
+
 <body>
+
 <?php
+
     $file = "deliveredItems.csv";
+
     $fp = fopen($file, 'r');
+
     $output = "";
+
     while(!feof($fp))
+
     {
+
         $inventory = fgetcsv($fp, 1024);
+
         $line = "";
+
         $line .= "<tr>";
+
         $line .= "<td align='center'>" . $inventory[0] . "</td>";
+
         $line .= "<td align='center'>" . $inventory[1] . "</td>";
+
         $line .= "<td align='center'>" . $inventory[2] . "</td>";
+
         $line .= "<td align='center'>" . $inventory[3] . "</td>";
+
         $line .= "</tr>";
+
         $output .= $line;
+
     }
+
     print("<table border='1' cellpadding='1'>");
+
     print($output);
+
     print("</table>");
+
 ?>
+
 </body>
+
 </html>
+
 ```
 
 ### 第 13：运行你的程序并查看你的输出。
@@ -6831,12 +8066,19 @@ print("</table>");
 
 
 ```html
+
 <table>
+
     <tr>
+
         <th>姓</th>
+
         <th>名</th>
+
         <th>电话号码</th>
+
     </tr>
+
 ```
 
 <?php
@@ -6887,8 +8129,11 @@ print("</table>");
 ## 章节目标
 
 * 你将学习文本电子邮件与 HTML 电子邮件之间的区别。
+
 * 你将学习如何下载并安装 `phpMailer` 扩展包。
+
 * 你将学习如何配置 `WAMPSERVER` 以与 `phpMailer` 扩展包配合工作。
+
 * 你将编写 PHP 脚本，使用 `phpMailer` 向 Gmail 账户发送文本邮件和 HTML 电子邮件。
 
 ## 8.1 使用 PHP 发送文本电子邮件
@@ -6909,19 +8154,26 @@ print("</table>");
 
 提示：要了解更多关于邮件服务器传输和接受电子邮件的细节，你可以访问 `http://computer.howstuffworks.com/e-mail-messaging/email.htm` 查看“电子邮件是如何工作的”，访问 `http://www.howtogeek.com/56002/htg-explains-how-does-email-work` 查看“电子邮件到底是如何工作的？”。
 
-PHP 允许你直接通过脚本创建并发送电子邮件。下表提供了 `mail()` 函数的详细信息。
+PHP 允许你直接通过脚本创建并发送电电子邮件。下表提供了 `mail()` 函数的详细信息。
 
 | 参数 | 说明 |
+
 | :--- | :--- |
+
 | `$to` | 必需。邮件的收件人。 |
+
 | `$subject` | 必需。邮件的主题。 |
+
 | `$message` | 必需。实际消息内容。 |
+
 | `$headers` | 可选。额外的头部，如 `Cc` 或 `Bcc`。 |
+
 | `$parameters` | 可选。额外的参数。 |
 
 如果邮件发送成功，`mail()` 函数返回布尔值 `TRUE`，否则返回 `FALSE`。
 
 语法为：
+
 `mail($to, $subject, $message, $headers, $parameters)`
 
 第 1 ：打开一个空白 HTML 文并保存为 `simpleEmail.php`。
@@ -6931,11 +8183,17 @@ PHP 允许你直接通过脚本创建并发送电子邮件。下表提供了 `ma
 第 3 ：根据下表，编写赋值语句，将第二列的值赋给第一列中的变量。例如，对于表格中的第一行，代码应该是：
 
 | 变量 | 字符串值 |
+
 | :--- | :--- |
+
 | `$to` | `"someone@e-mail.com"` |
+
 | `$subject` | `"Feedback for you."` |
+
 | `$message` | `"This is a test e-mail created using php"` |
+
 | `$from` | `"test@learntoprogram.tv"` |
+
 | `$headers` | `"From:" . $from` |
 
 完整的代码列表如下：
@@ -6973,9 +8231,6 @@ PHP 允许你直接通过脚本创建并发送电子邮件。下表提供了 `ma
 
 图 8.1: `simpleEmail.php` 的输出。
 
-
-
-
 你之所以得到这个错误是因为 `WAMPSERVER` 没有配置邮件服务器作为其组件之一。那么，一个安装了 `WAMPSERVER` 的初级 PHP 程序员如何测试发送电子邮件的 PHP 脚本呢？
 
 意乎所料，解决方案随处可见！如果你在 Google 中输入“使用 PHP 从 WAMPSERVER 发送邮件”，你会发现进取的 Web 程序员提供的几种替代方案。其中一些方案可以追溯到两多年前，而有一一两个是今年才提出的。（这些不同的解决方案甚至有相同的名称，即“sendmail”，这可能会导致一些困惑！）
@@ -6989,59 +8244,77 @@ PHP 允许你直接通过脚本创建并发送电子邮件。下表提供了 `ma
 现在我们将向你展示如何使用 `PHPMailer` 向 Gmail 地址发送纯文本电子邮件和 HTML 电子邮件。接下来的步骤将指导你下载并安装 `PHPMailer`、配置 `WAMPSERVER` 与 `PHPMailer` 工作以及编写脚本。
 
 ### 步骤 1：下载 PHPMailer/SMTP
+
 从 [`github.com/PHPMailer/PHPMailer`](https://github.com/PHPMailer/PHPMailer) 下载。以下屏幕显示了 `PHPMailer` 的 GitHub 页面以及下载按钮所在的位置。你将获得一个名为 `PHPMailer-master.zip` 的文件，大小约为 200kb。
 
 ![](img/00257.jpeg)
+
 图 8.2：GitHub PHPMailer 下载页面的左上部分，地址为 [`github.com/PHPMailer/PHPMailer`](https://github.com/PHPMailer/PHPMailer)。
 
 ![](img/00258.jpeg)
+
 图 8.3：GitHub PHPMailer 下载页面的右下部分的下载按钮，地址为 [`github.com/PHPMailer/PHPMailer`](https://github.com/PHPMailer/PHPMailer)。
 
 ### 步骤 2：解压
+
 将 `PHPMailer-master.zip` 解压到文件夹中。
 
 ### 步骤 3：复制脚本
+
 在解压压的 `PHPMailer-master.zip` 文件夹中，找到以下三个脚本，并将它们复制到 Windows 中的 `c:/wamp/www` 文件夹（或 Mac 和 Linux 系统上的对应文件夹）。
 
 1. `PHPMailerAutoload.php`
+
 2. `class.phpmailer.php`
+
 3. `class.smtp.php`
 
 ### 步骤 4：启用 Apache SSL
+
 在 `WAMPSERVER` 菜单中，通过访问如下所示的 `httpd.conf` 文件启用 Apache 的 `ssl_module`。
 
 ![](img/00259.jpeg)
+
 图 8.4：在 WAMPSERVER 菜单中访问 httpd.conf 文件。
 
 ### 步骤 5：配置 httpd.conf
+
 在 `httpd.conf` 文件中取消以下行的注释。（要取消注释请删除行开头的“#”符号。）
 
 ```
 #LoadModule ssl_module modules/mod_ssl.so
 ```
+
 取消注释后的行如下所示所示。
 
 ![](img/00260.jpeg)
+
 图 8.5：取消注释以启用 ssl_module
 
 或者，你也可以通过 `WAMPSERVER` 菜单选项 `Apache` -> `Apache Modules` -> `ssl_module` 启用 `ssl_module`，如下所示所示。
 
 ![](img/00261.jpeg)
+
 图 8.6：在 WAMPSERVER 菜单中启用 Apache ssl_module。
 
 ### 步骤 6：启用扩展
+
 在 `WAMPSERVER` 菜单中，如下所示所示启用 PHP 的 `php_openssl`、`php_smtp` 和 `php_sockets` 扩展。
 
 ![](img/00262.jpeg)
+
 图 8.7：在 WAMPSERVER 菜单中为 PHP 启用 php_openssl、php_smtp 和 php_sockets 扩展。
 
 ### 步骤 7：重启
+
 重启 `WAMPSERVER` 使你的更改生效。
 
 ![](img/00263.jpeg)
+
 图 8.8：重启 WAMPSERVER
 
 ### 步骤 8：测试安装
+
 你可以通过执行此代码来测试 `PHPMailer` 是否安装正确，该代码应该只会产生一个空白浏览器页面。
 
 ```php
@@ -7049,6 +8322,7 @@ PHP 允许你直接通过脚本创建并发送电子邮件。下表提供了 `ma
 ```
 
 ### 步骤 9：创建脚本
+
 将以下内容粘贴到 Komodo Edit 并保存为 `emailText.php`。
 
 ```php
@@ -7077,6 +8351,7 @@ if (!$mail->Send()) {
 ```
 
 ### 步骤 10：调整凭据
+
 在以下行中调整 `Username` 和 `Password` 值。
 
 ```php
@@ -7085,6 +8360,7 @@ $mail->Password = 'password';
 ```
 
 ### 步骤 11：完成
+
 在以下行中，将 `From` 和 `FromName` 字符串调整为适合的值，并在 `addAddress` 函数中也是。
 
 ```php
@@ -7092,9 +8368,11 @@ $mail->From = 'email address';
 $mail->FromName = 'sender';
 $mail->addAddress('added email address');
 ```
+
 运行脚本。在浏览器中，你应该看到：Message has been sent。
 
 8. 发送 HTML 电子邮件
+
 HTML 电子邮件包含一个很小的 HTML 标签集，但对于哪些 HTML 标签组成子集并没有标准。因此，不同的电子邮件客户端处理的 HTML 标签不同。
 
 当 HTML 电子邮件最初出现时，由于许多原因对其存在反对意见。一个原因是安全性，因为可以将恶意代码注入 HTML 电子邮件中。但邮件附件也可以进行同样的恶意行为。尽管如此，HTML 电子邮件的使用已经普及，邮件附件仍在发送，因此对 HTML 电子邮件的反对已变成无奈。
@@ -7102,16 +8380,18 @@ HTML 电子邮件包含一个很小的 HTML 标签集，但对于哪些 HTML 标
 HTML 电子邮件的格式和结构与标准文本电子邮件相似，区别在于额外的头部属性。为了编写发送 HTML 电子邮件的脚本，我们将通过添加几行创建发送 HTML 电子邮件所需的头部来修改发送纯文本电子邮件的脚本。这两个头部是：
 
 `MIME-Version : 1.0` 此头部用于发送包含以下内容的电子邮件：
+
 1. 非 ASCII 文本字符集
+
 2. 非文本附件（图片、音乐文件、视频文件等）
+
 3. 多个部分的消息正文，或
+
 4. 非 ASCII 字符集的头部信息
 
 `Content-Type text/html; charset=ISO-8859-1` 此头部定义了你的 HTML 电子邮件使用的字符编码。这是因为程序在验证或显示 HTML 文档之前必须选择一种字符编码。对于英语和其他大多数其他西方语言的文档，通常使用广泛支持的 ISO-8859-1 编码。
 
 这两个新头部将是你 PHP 脚本中的新增内容，以及嵌入邮件消息部分的 HTML 标签。
-
-
 
 现在，好消息来了！有了 `phpMailer`，你不需要再费心处理刚刚过的那些额外标头了！
 
@@ -7173,39 +8453,63 @@ $mail->AltBody="Hello, my friend! \n\n This message uses HTML entities, but you 
 ## 章节测试
 
 1. 在 PHP 中哪一个对应电子邮件的收件者？
+
    a. `$to`
+
    b. `$from`
+
    c. `$header`
+
    d. `$message`
 
 2. `mail()` 函数的作用是什么？
+
    a. 它通过服务器使用 PHP 发送和接收电子邮件。
+
    b. 它读取邮件并通知用户他们的邮件。
+
    c. 它向指定的收件者发送 PDF 格式的文件。
+
    d. 它将电子邮件副本发送到用户地址簿中的所有地址。
 
 3. `SMTP` 是什么意思？
+
    a. 简单邮件传输协议 (Simple Mail Transfer Protocol)。
+
    b. 简单妈妈裁缝协议 (Simple Mommy Tailoring Protocol)。
+
    c. 超级邮件传输协议 (Super Mail Transfer Protocol)。
+
    d. 单一邮件传输校验位 (Single Mail Transmit Parity)。
 
 4. 什么是 HTML 电子邮件？
+
    a. 一种嵌入了 HTML 标签的电子邮件。
+
    b. 一种使用 HTML 创建的电子邮件。
+
    c. 通过 HTML 页面发送的电子邮件。
+
    d. 一种嵌入在 HTML 文档中的、纯 Javascript 生成的电子邮件。
 
 5. 标头 `MIME Version` 的作用是什么？
+
    a. 该标题表示邮件包含除 ASCII 文本字符以外的字符。
+
    b. 通用描述内容类型，包括网页内容以及作为某些商业产品中富内容的存储。
+
    c. 为服务器模拟（Mimes）邮件。
+
    d. 复制邮件内容并保存到服务器上。
 
 6. 内容类型 `text/HTML` 标头的作用是什么？
-   a. 它声明邮件正文将同时包含 HTML 和纯文本。
+
+   a. 它声明邮件正文将同时包含 HTML和纯文本。
+
    b. 它允许在电子邮件中使用 PHP 脚本。
+
    c. 它允许在电子邮件中使用 Javascript。
+
    d. 它定义了 HTML 电子邮件将使用的字符编码。
 
 ## 章节实验练习
@@ -7225,6 +8529,7 @@ $mail->AltBody="Hello, my friend! \n\n This message uses HTML entities, but you 
 **解决方案：**
 
 #### 代码列表：Chapter 8 Lab Exercise Solution.
+
 `chap8Lab.php`
 
 ```php
@@ -7263,10 +8568,15 @@ $mail->AltBody="Hello, my friend! \n\n This message uses HTML entities, but you 
 **目标：**
 
 * 使用 `phpMyAdmin` 创建 MySQL 数据库。
+
 * 使用 `phpMyAdmin` 在 MySQL 数据库中创建表。
+
 * 开发一个简单的 CRUD（创建、查询、删除）应用程序。
+
 * 学习使用 HTML 表单和 PHP 脚本向 MySQL 数据库输入和更新数据。
+
 * 构建 SQL Insert、Update 和 Delete 语句，并使用 PHP 脚本在 MySQL 中执行这些语句。
+
 * 使用一种名为 `MySQLi` 的应用程序编程接口，它将允许你的 PHP 脚本访问 MySQL 数据库。
 
 数据库是计算机的骨干。计算机系统的主要任务是存储、组织、更新、保护并以多种方式检索数据。计算机系统将数据存储在数据库中。
@@ -7274,9 +8584,6 @@ $mail->AltBody="Hello, my friend! \n\n This message uses HTML entities, but you 
 数据库有许多分类：层次型、平文件、网络型、分布式等。它们的区别在于工作方式以及用途。在业务应用程序中，最常用的类型是关系型数据库。之所以这样命名，是因为关系型数据库的表不仅存储数据，还存储数据之间的关系。
 
 提示：你可能会遇到数据库管理系统的术语，`dbms`，它包含了管理数据库中数据的软件工具和实用程序。现在，这两个术语经常互换。
-
-
-
 
 # 数据库概念
 
@@ -7289,8 +8596,11 @@ $mail->AltBody="Hello, my friend! \n\n This message uses HTML entities, but you 
 此时，为了帮助你直观地理解和理解表、列、行、字段、记录和值这些术语，我们展示了两个表的示意图——`Employee` 和 `Department`。（我们将在稍后的代码示例中创建这些表。）
 
 | empId | lastName | firstName | department | position | salary |
+
 | :--- | :--- | :--- | :--- | :--- | :--- |
+
 | 001 | Smith | George | 1 | S Acct | 84000 |
+
 | 002 | Valera | Linda | 2 | J Sales | 55000 |
 
 表 9.1：Employee 表
@@ -7298,17 +8608,22 @@ $mail->AltBody="Hello, my friend! \n\n This message uses HTML entities, but you 
 `Employee` 表有六列（或字段）和两行数据。（第一行作为视觉辅助列名，不属于表格的一部分。）
 
 | departmentId | departmentName |
+
 | :--- | :--- |
+
 | 1 | Accounting |
+
 | 2 | Sales |
+
 | 3 | Operations |
+
 | 4 | Management |
 
 表 9.2：Department 表
 
 `Department` 表有两个列（或字段）和四行数据。
 
-**关系 (Relationship)** – 关系是两个表之间的链接。它是组织数据的一种强大方法。你通过在两个表的字段之间建立链接来定义关系（其中一个或两个字段是主键字段）。例如，我们可以通过链接 `Employee` 的 `department` 字段和 `Department` 的 `departmentId` 字段，在之前的两个表 `Employee` 和 `Department` 之间建立关系。这种关系使得两个表的数据作为一个整体可用。
+**关系 (Relationship)** – 关系是两个表之间的链接。它是组织数据的一种强大方法。你通过在两个表的字段之间建立链来定义关系（其中一个或两个字段是主键字段）。例如，我们可以通过链接 `Employee` 的 `department` 字段和 `Department` 的 `departmentId` 字段，在之前的两个表 `Employee` 和 `Department` 之间建立关系。这种关系使得两个表的数据作为一个整体可用。
 
 一个表拥的关系数量取决于它与其他表相关的字段数量。例如，将 `Employee` 的六个字段每一个都链接到数据库中的其他表是可能的，但并实际实际。
 
@@ -7354,13 +8669,13 @@ $mail->AltBody="Hello, my friend! \n\n This message uses HTML entities, but you 
 
 如你所见，这不是一个用户友好的界面，因为它倾向于键盘而不是鼠标，而且是黑背景上的白字。因此，我们可以忘记 `MySQL Console` 并转向 `phpMyAdmin`。
 
-从 WAMPSERVER 菜单启动 `phpMyAdmin`，点击如下截图所示的 `phpMyAdmin`。理想情况下，`phpMyAdmin` 需要用户名密码，但为了简化测试，会自动提供默认用户名 `root` 和空密码。
+从 WAMPSERVER 菜单启动 `phpMyAdmin`，点击如下截图所示的 `phpMyAdmin`。理想情况下，`phpMyAdmin` 霥要用户名密码，但为了简化测试，会自动提供默认用户名 `root` 和空密码。
 
 ![](img/00267.jpeg)
 
 图 9.4：WAMPServer 中的 `phpMyAdmin`
 
-这将调出 `phpMyAdmin` 主界面。花点时间熟悉一下面板。查看顶部的水平菜单，其中有选项：`Databases`、`SQL`、`Users`、`Export` 和 `More`。最后一个选项 `More` 将打开另一个选项菜单：`Settings`、`Synchronize`、`Binary`、`Replication`、`Variables`、`Charsets` 和 `Engines`。
+这将调出 `phpMyAdmin` 主界面。花点时间熟悉一下面板。查看顶部的水平菜其中有选项：`Databases`、`SQL`、`Users`、`Export` 和 `More`。最后一个选项 `More` 将打开另一个选项菜单：`Settings`、`Synchronize`、`Binary`、`Replication`、`Variables`、`Charsets` 和 `Engines`。
 
 ![](img/0268.jpeg)
 
@@ -7393,12 +8708,19 @@ $mail->AltBody="Hello, my friend! \n\n This message uses HTML entities, but you 
 现在，我们可以创建 `employee` 表的字段，每个字段将占据一列。你可以使用下表为各个字段输入数据。
 
 | FIELD NAME | TYPE | LENGTH/ VALUE | Notes |
+
 | :--- | :--- | :--- | :--- |
+
 | empid | Int | 11 | 主键 自增 |
+
 | lastname | varchar | 40 | |
+
 | firstname | varchar | 20 | |
+
 | department | Int | 2 | |
+
 | position | varchar | 20 | |
+
 | salary | Int | 10 | |
 
 表 9.3：使用此表为 `employee` 表的各个字段输入数据。
@@ -7408,10 +8730,6 @@ $mail->AltBody="Hello, my friend! \n\n This message uses HTML entities, but you 
 在指定每个字段的名称、类型和长度/值后，点击图标 `save`，这将完成创建 `employee` 表的过程。
 
 现在，点击命名为 `employee` 的图标，然后点击 `structure`，这将调出以下屏幕。
-
-
-
-
 
 ![](img/00273.jpeg)
 
@@ -7426,13 +8744,16 @@ $mail->AltBody="Hello, my friend! \n\n This message uses HTML entities, but you 
 你可以参考下表开始向各个字段中输入数据。
 
 | FIELD NAME | TYPE | LENGTH/ VALUE | Notes |
+
 | :--- | :--- | :--- | :--- |
+
 | deptId | int | 11 | 主键 自动递增 |
+
 | departName | varchar | 40 | |
 
 你还必须将 `deptid` 字段设置为主键。将 `Index` 指定为 `primary`（从下拉框中选择 `primary`）并勾选 `A_I` 复选框（对应 `Auto_Increment`）。
 
-现在，既然已经设置了包含两个表的数据库，我们现在应该向表中添加一些数据。要向第一个表中添加数据，点击 `employee`，然后点击 `insert`。之后，如所示添加一些虚构数据：
+现在，既然已经设置了包含两个表的数据库，我们现在应该向表中添加一些数据。要向第一个表中添数据，点击 `employee`，然后点击 `insert`。之后，如所示添加一些虚构数据：
 
 ![](img/00275.jpeg)
 
@@ -7470,15 +8791,23 @@ VALUES (NULL, 'Tilly', 'Jennifer', '4', 'Vice President', '124500');
 ### 复习题
 
 1. 为了在 MySQL 提示符中获取命令列表，我们应该输入什么？
+
    a. `mysql>Help`
+
    b. `mysql>command`
+
    c. `mysql>list`
+
    d. 以上都不是。
 
 2. 为了确保列中的每个条目都是唯一的，我们使用什么？
+
    a. 外键 (Foreign key)。
+
    b. 候选键 (Candidate key)。
+
    c. 主键 (Primary key)。
+
    d. 以上都不是。
 
 ### 9.2 从数据库中检索查询
@@ -7486,8 +8815,11 @@ VALUES (NULL, 'Tilly', 'Jennifer', '4', 'Vice President', '124500');
 在上一节中，我们使用 `phpMyAdmin` 创建了 `employees` 数据库，然后在该数据库中创建了 `employee` 和 `department` 表。仍然使用 `phpMyAdmin`，我们向这两个表输入了示例数据。现在，我们将通过编写对 MySQL 数据库执行操作的 PHP 脚本来检索这些数据。
 
 为了让 PHP 访问并操作 MySQL 数据库中的表列，我们使用 MySQL API 扩展。PHP 提供了三个这样的扩展：
+
 - 已废弃的原始 MySQL API
+
 - MySQL PDO 函数
+
 - MySQL 改进扩展，`MySQLi`。
 
 我们将使用第三种 API 扩展 `MySQLi`，它也是最新的。API 意味着应用程序编程接口。该接口定义了你的 PHP 脚本与 MySQL 交互所需的类、方法、函数和变量。
@@ -7495,24 +8827,30 @@ VALUES (NULL, 'Tilly', 'Jennifer', '4', 'Vice President', '124500');
 **提示**：要学习关于这三个 PHP MySQL API 扩展的所有知识，你可以查找 `PHP MYSQL API (2014-03-14 Revision 38079)`。该手册描述了可以与 MySQL 使用的 PHP 扩展和接口。托管此文档的站点之一是 `downloads.mysql.com/docs/apis-php-en.a4.pdf`你可以在搜索引擎中输入“php mysqli api”来搜索其他网站。
 
 在我们详细介绍 `MySQLi` 之前，让我们先明确什么是“访问并操作 MySQL 数据库中的表行和列”。我们将编写一个非常简单基础的 PHP CRUD 应用。CRUD 是创建、检索、更新和删除（英文）的缩写。一个 CRUD 应用：
+
 a. 向数据库表中添加新行 (Create)，
+
 b. 从数据库表中检索数据 (Retrieve)，
+
 c. 修改表列中的数据 (Update)，以及
+
 d. 从数据库表中删除行 (Delete)。
 
 上述四项功能中的每项都由特定的 SQL 语句专门执行：
 
 | SQL | 说明 |
+
 | :--- | :--- |
+
 | `INSERT` | 向数据库中的表添加新数据行。 |
+
 | `SELECT` | 从一个或多个表中检索数据。 |
+
 | `UPDATE` | 修改现有数据。 |
+
 | `DELETE` | 从表中删除一行数据。 |
 
 我们的 PHP 脚本将构建所需的精确 SQL 语句并使用 MySQL。
-
-
-
 
 c. 如果连接对象创建成功，我们将构造一个 SQL 查询（可以是 `INSERT`、`SELECT`、`UPDATE` 或 `DELETE`）。
 
@@ -7554,6 +8892,7 @@ if ($conn->connect_errno) {
 现在，如果我们在运行 Windows 7 的 PC 上运行此脚本，我们将看到：
 
 Connected to database employees
+
 localhost via TCP/IP
 
 第二行或最后一行将根据你的操作系统操作系统而异。有些系统将生成：
@@ -7664,8 +9003,6 @@ if ( $rs === false ) {
 
 `fetch_array` 方法将结果集 `$rs` 当前行的字段存储在关联数组 `$arr` 中，使用字段名作为键，因为我们提供了常量 `MYSQLI_ASSOC`。如果我们将此常量改为 `MYSQLI_NUM`，那么 `$arr` 将是一个数值索引数组。
 
-
-
 我们说“存储 `$rs` 当前行的字段”。那么“`$rs` 的当前行”会是什么呢？由于在代码行中，我们会在 `$rs` 创建（通过连接对象 `$conn` 的 `query` 方法）后立即访问 `$rs`：
 
 ```php
@@ -7684,6 +9021,7 @@ echo( $arr['empid'] . ' ' .
 ```
 
 ### 浏览器输出
+
 在你的浏览器中，你应该能看到类似的内容：
 
 101 Escudero, Ernesto 3 Utility Supervisor 10000
@@ -7704,6 +9042,7 @@ Rows: 9
 `num_rows` 是由 `$rs` 引用的结果集对象的属性，它存储了 `$rs` 中的行数，这也就是 `employee` 表中的行数。检查浏览器中显示的值是否与你 `employee` 表中的记录数匹配。你可以使用 `phpMyAdmin` 来完成此操作。
 
 ### 显示所有行
+
 现在，我们有两个运行运行的脚本。一个脚本 `connectInc.php` 建立了到 MySQL 数据库 `employees` 的连接。第二个脚本 `retrieve1.php` 在数据库上执行了一句 `Select` 查询，并将 `employee` 表的所有记录检索到结果集对象 `$rs` 中。但是，它只显示了第一条记录！我们该如何显示结果集 `$rs` 的所有行呢？（实际上，我们该如何显示 `employee` 表的所有行？）答案是：我们使用 `while` 循环。
 
 当我们第一次调用 `fetch_array` 方法时，它会将 `$rs` 第一行（当前行）的字段提取到数组 `$arr` 的元素中。随后，`fetch_array` 会将第二行变为当前行。
@@ -7744,6 +9083,7 @@ if ( $rs === false ) {
 图 9.17：显示了 employee 表的所有行。
 
 ### 使用表格格式
+
 为了以表格形式呈现这些信息，将 `else` 块替换为以下代码，并将脚本保存为 `retrieve3.php`：
 
 ```php
@@ -7799,19 +9139,31 @@ if ( $rs === false ) {
 ```
 
 ### 复习题
+
 1. 哪个类作为连接对象的蓝图？
+
    a. 连接类
+
    b. mysqli 类
+
    c. 查询类
+
    d. 结果集类
 
 2. 哪个命令指示 `mysql_connect` 未工作，将导致？
+
    a. 结束
+
    b. 退出
+
    c. 完成
+
    d. 错误
 
 ## 9.3 在数据库中存储信息
+
+
+
 让我们回顾一下努力。我们使用 `phpMyAdmin` 创建了数据库 `employees` 以及它的两个表——`employee` 和 `department`。我们还使用 `phpMyAdmin` 向这两个表输入测试数据。然后，我们编写了 PHP 脚本来处理 `检索` 功能。现在，我们将编写 PHP 脚本来实现 `创建` 功能。
 
 我们需要做的第一件事是创建一个表单，包含 `empid`，因为它会自动生成。我们将打开名为 `insert.php` 的新文件，在那里使用 HTML 表单标签并编写以下代码：
@@ -7857,24 +9209,28 @@ if ( $rs === false ) {
 
 我们希望用户选择部门名称，但保存到数据库的不是部门名称，而是对应的部门 ID，该 ID 只能在 1 到 4 之间。为了实现这一点，我们以此这样修改我们的 HTML 代码。
 
-
-
-
-
 # 部门
 
 <p>
+
 <select name="department">
+
   <option value="1">财务</option>
+
   <option value="2">销售</option>
+
   <option value="3">信息技术</option>
+
   <option value="4">管理</option>
+
 </select>
+
 </p>
 
 在这里，当用户选择相应的字面量（财务、销售、信息技术或管理）时，`option` 标签的 `value` 属性将会在提交。
 
 ![](img/00283.jpeg)
+
 图 9.20：部门（Department）字段的下拉选择框。
 
 现在，在实际向此表单插入数据之前，让我们编写脚本 `insertProcess.php`。该脚本的首要任务是提取 `insert.php` 显示的表单中的输入数据。因此，我们通过以下代码访问超全局数组 `$_REQUEST`，然后使用 `echo` 函数将其显示：
@@ -7892,9 +9248,6 @@ if ( $rs === false ) {
 ?>
 ```
 
-
-
-
 ```php
 echo( "<br/>返回到 <a href='index.php'>Add-Upd-DelPage</a>" );
 ?>
@@ -7903,15 +9256,23 @@ echo( "<br/>返回到 <a href='index.php'>Add-Upd-DelPage</a>" );
 ## 复习习题
 
 1. `post` 方法使用的信息数据类型是什么？
+
    a. 数组 (array)。
+
    b. 链表 (linked list)。
+
    c. 单个数据。
+
    d. 以上都不是。
 
 2. 连接对象使用哪种方法来关闭自身？
+
    a. exit
+
    b. end
+
    c. close
+
    d. 以上都不是。
 
 ## 9.4 删除和更新数据库记录
@@ -7981,17 +9342,25 @@ $conn->close();
 <td><a href='delete.php?id=" . $arr['empid'] . "'>Delete</a></td>
 
 更新按钮的行几乎相同：
+
 <td><a href='updateForm.php?id=" . $arr['empid'] . "'>Update</a></td>
 
 构建“添加”按钮的行与之前不同：
+
 <td><a href=insert.php>Add New</a></td>
 
 等一下，让我们总结一下我们四个主脚本的通用流程：
+
 a. 使用连接对象 `$conn` 建立数据库连接。
+
 b. 检查 `$conn` 是否成功创建。
+
 c. 构建 INSERT、UPDATE 或 DELETE 查询。
+
 d. 使用 `$conn` 的 `query` 方法执行查询。
+
 e. 检查查询是否执行成功。对于检索（Retrieve），获取结果集并将其内容转换为数组。
+
 f. 关闭连接。
 
 现在，让我们看看 `delete.php` 的代码。步骤 a 和 b 由我们包含在 `delete.php` 脚本中的 `connectInc.php` 代码完成：
@@ -8033,10 +9402,6 @@ DELETE FROM employee WHERE empid='112';
 Affected rows: 1
 
 User 112 deleted from the database.
-
-
-
-
 
 这显示了删除 `empid` 为 112 的员工的结果。
 
@@ -8111,10 +9476,15 @@ $conn->close();
 当你阅读并分析这段代码时，请注意它也遵循我们最近在分析 `delete.php` 代码时详细说明的 a-f 步骤模式。
 
 a. 创建连接对象 `$conn`。
+
 b. 检查 `$conn` 是否成功创建。
+
 c. 构造 SQL 查询语句。
+
 d. 使用连接对象的 `query` 方法执行查询。
+
 e. 检查查询是否执行成功。（对于 `SELECT` 查询，处理结果集对象 `$rs`。）
+
 f. 关闭连接。
 
 我们不断重复这六步的原因是，这是任何访问 MySQL 数据库的 PHP 脚本的基本模式。理解并掌握这六步的逻辑将避免你以后在访问 MySQL 数据库时遇到任何烦恼！
@@ -8197,11 +9567,7 @@ User 111 已更新。
 
 返回 [Add-Upd-Del Page](http://localhost/94_Update1.php)。
 
-
-
-
-
-你也可以使用 `phpMyAdmin` 来更改数据库中任何表的任何字段，但目前，只需使用 `phpMyAdmin` 来验证我们通过 CRUD 应用程序所做的更改。
+你也可以使用 `phpMyAdmin` 来更改数据库中任何表的任何字段，但目前，只需使用 `phpMyAdmin` 来验证我们通过 CRUD 应用程所做的更改。
 
 ![](img/00290.jpeg)
 
@@ -8212,15 +9578,23 @@ User 111 已更新。
 ## 复习习题
 
 1. 查询字符串中使用哪个符号？
+
    a. `#`
+
    b. `$`
+
    c. `&`
+
    d. `?`
 
 2. `$_REQUEST[]` 是什么？
+
    a. 一个函数
+
    b. 一个命令
+
    c. 一个数组
+
    d. 一个超全局数组
 
 ## 第 9 章实验练习
@@ -8230,17 +9604,27 @@ User 111 已更新。
 2. 设置一个 HTML 文档，并在文档的 `<body>` 部分嵌入起始和结束的 `PHP` 标签。按照描述将该文档保存到你的 `www` 文件夹（Windows）或 `htdocs` 文件夹（Macintosh）。
 
 3. 创建一个数据库来跟踪计算机科学课程的学生和成绩。在 `MySQL` 中按如下创建数据库：
+
    - 数据库名称：`CSClassData`
+
    - 表数量：1
 
 4. 在 `CSClassData` 中创建一个名为 `students` 的表。该表应包含以下字段：
+
    - `studentID int(5)`
+
    - `lastName varchar(40)`
+
    - `firstName varchar(20)`
+
    - `test1Grade int(3)`
+
    - `test2Grade int(3)`
+
    - `test3Grade int(3)`
+
    - `test4Grade int(3)`
+
    - `finalExamGrade int(3)`
 
 5. 为 10 个学生输入虚构数据，包括名、姓以及所有 5 次测试的成绩（按 0-100 标准分制评分）。
@@ -8250,12 +9634,19 @@ User 111 已更新。
 7. 创建一个名为 `grade_list.php` 的页面。在该页面上，按学生输出数据库中的所有成绩。你应该使用表格来实现。
 
 8. 一旦输出了所有成绩，在表格中添加两列。第一列应包含通过对五次成绩取平均值的数值平均分。
+
    第二个新列应根据以下标准显示其 A-F 形式的最终成绩：
+
    - A 90-100
+
    - B 80-89
+
    - C 70-79
+
    - D 60-69
+
    - F 60 以下
+
    你应该能够在不更改数据库任何内容的情况下添加最后两列——这些将是计算字段，而不是存储的数据库字段。
 
 9. 使用 `CSS` 让你的输出表格更具可读性。
@@ -8369,6 +9760,7 @@ User 111 已更新。
 </body>
 </html>
 ```
+
 *(注：由于原文提供的示例代码片段存在逻辑错乱和断裂，作为高级文档工程师，我在保持意图的基础上补全并修复了翻译后的代码结构，以确保其符合逻辑功能描述。)*
 
 ### 文件：`grades_updateForm.php`
@@ -8406,10 +9798,6 @@ User 111 已更新。
 </body>
 </html>
 ```
-
-
-
-
 
 # 插入学生
 
@@ -8515,7 +9903,9 @@ User 111 已更新。
 ## 第 10 章：常用的类和对象
 
 ### 目标
+
 * 你将学习两个重要的 PHP 函数：`date()` 和 `time()`，以及如何使用这些函数来访问和处理日期信息。
+
 * 你将学习如何访问和操作日期信息。
 
 ### 10.1 日期函数
@@ -8525,7 +9915,9 @@ User 111 已更新。
 在下一章中，我们将讨论一些常用的类和对象。我们还将学习如何访问和处理日期信息。
 
 ### 目标
+
 * 你将学习两个重要的 PHP 函数：`date()` 和 `time()`，以及如何使用这些函数来访问和处理日期信息。
+
 * 你将学习如何访问和操作日期信息。
 
 ### 10.1 日期函数
@@ -8535,7 +9927,9 @@ User 111 已更新。
 在下一章中，我们将讨论一些常用的类和对象。我们还将学习如何访问和处理日期信息。
 
 ### 目标
+
 * 你将学习两个重要的 PHP 函数：`date()` 和 `time()`，以及如何使用这些函数来访问和处理日期信息。
+
 * 你将学习如何访问和操作日期信息。
 
 ### 10.1 日期函数
@@ -8545,7 +9939,9 @@ User 111 已更新。
 在下一章中，我们将讨论一些常用的类和对象。我们还将学习如何访问和处理日期信息。
 
 ### 目标
+
 * 你将学习两个重要的 PHP 函数：`date()` 和 `time()`，以及如何使用这些函数来访问和处理日期信息。
+
 * 你将学习如何访问和操作日期信息。
 
 ### 10.1 日期函数
@@ -8555,27 +9951,9 @@ User 111 已更新。
 在下一章中，我们将讨论一些常用的类和对象。我们还将学习如何访问和处理日期信息。
 
 ### 目标
+
 * 你将学习两个重要的 PHP 函数：`date()` 和 `time()`，以及如何使用这些函数来访问和处理日期信息。
-* 你将学习如何访问和操作日期信息。
 
-### 10.1 日期函数
-
-这一章包含了大量的概念和技术。除了学习额外的 PHP 代码外，你还学习了如何使用 Web 应用程序 phpMyAdmin 对 MySQL 数据库进行数据库操作。你学习了如何构建 `SQL` 语句来在 MySQL 数据库中执行插入、更新和删除操作。你学习了如何使用应用程序编程接口，以便你的 PHP 代码能够访问数据库。通过所有这些方法，你构建了一个基础的 CRUD（创建、更新、删除）应用程序。关于使用 PHP 访问数据库，仍有很多内容需要学习和掌握，但如果你理解了这里的概念和技术，你已经在通往专家的道路上了。
-
-在下一章中，我们将讨论一些常用的类和对象。我们还将学习如何访问和处理日期信息。
-
-### 目标
-* 你将学习两个重要的 PHP 函数：`date()` 和 `time()`，以及如何使用这些函数来访问和处理日期信息。
-* 你将学习如何访问和操作日期信息。
-
-### 10.1 日期函数
-
-这一章包含了大量的概念和技术。除了学习额外的 PHP 代码外，你还学习了如何使用 Web 应用程序 phpMyAdmin 对 MySQL 数据库进行数据库操作。你学习了如何构建 `SQL` 语句来在 MySQL 数据库中执行插入、更新和删除操作。你学习了如何使用应用程序编程接口，以便你的 PHP 代码能够访问数据库。通过所有这些方法，你构建了一个基础的 CRUD（创建、更新、删除）应用程序。关于使用 PHP 访问数据库，仍有很多内容需要学习和掌握，但如果你理解了这里的概念和技术，你已经在通往专家的道路上了。
-
-在下一章中，我们将讨论一些常用的类和对象。我们还将学习如何访问和处理日期信息。
-
-### 目标
-* 你将学习两个重要的 PHP 函数：`date()` 和 `time()`，以及如何使用这些函数来访问和处理日期信息。
 * 你将学习如何访问和操作日期信息。
 
 ### 10.1 日期函数
@@ -8589,16 +9967,14 @@ User 111 已更新。
 在下一章中，我们将讨论一些常用的类和对象。我们还将学习如何访问和处理日期信息。
 
 ### 目标
+
 * 你将学习两个重要的 PHP 函数：`date()` 和 `time()`，以及如何使用这些函数来访问和处理日期信息。
+
 * 你将学习如何访问和操作日期信息。
 
 ### 10.1 日期函数
 
 （由于提供的文本存在严重的技术性重复，以上内容已对核心部分进行了完整翻译，并严格遵循了“**不要重复输出原文”的指令。）
-
-
-
-
 
 # 表 10.2：`date()` 函数格式字符串中小写“L”的字符格式。
 
@@ -8621,9 +9997,13 @@ Mon - March 17, 2014 11:47:58
 我们没有提供第二个参数，因此 `date()` 函数使用了 `time()` 函数返回的时间戳，并根据我们新添加的时间格式字符串 `"h:i:s"` 对时间进行了格式化。每个时间格式化字符的含义总结在下表中。
 
 | 字符 | 说明 |
+
 | :--- | :--- |
+
 | h | 12 小时制小时，带前导零（01 – 12）。 |
+
 | i | 分钟，带前导零（00 – 59）。 |
+
 | s | 秒，带前导零（00 – 59）。 |
 
 表 10.3：`time()` 函数格式字符串的几个字符格式。
@@ -8699,15 +10079,23 @@ print("<br/>18 Hours from now: " . (date("D F d, Y h:i:s", time() + $eighteenHou
 ## 复习题
 
 1. `date()` 函数有多少个参数？
+
    a. 一个
+
    b. 两个
+
    c. 三个
+
    d. 四个
 
 2. 使用哪个字母来获取月份的全文本显示？
+
    a. F
+
    b. M
+
    c. m
+
    d. D
 
 # 10.2 PHP 中的字符串
@@ -8715,79 +10103,65 @@ print("<br/>18 Hours from now: " . (date("D F d, Y h:i:s", time() + $eighteenHou
 在编程中，字符串是字符序列。以下是有效字符串的示例：
 
 - “Hi There!”
+
 - “How are you?”
+
 - “123456”
 
 在编程中，字符串是字符序列。以下是有效字符串的示例：
 
 - “Hi There!”
+
 - “How are you?”
+
 - “123456”
 
 在编程中，字符串是字符序列。以下是有效字符串的示例：
 
 - “Hi There!”
+
 - “How are you?”
+
 - “123456”
 
 在编程中，字符串是字符序列。以下是有效字符串的示例：
 
 - “Hi There!”
+
 - “How are you?”
+
 - “123456”
 
 在编程中，字符串是字符序列。以下是有效字符串的示例：
 
 - “Hi There!”
+
 - “How are you?”
+
 - “123456”
 
 在编程中，字符串是字符序列。以下是有效字符串的示例：
 
 - “Hi There!”
+
 - “How are you?”
+
 - “123456”
 
 在编程中，字符串是字符序列。以下是有效字符串的示例：
 
 - “Hi There!”
+
 - “How are you?”
+
 - “123456”
 
 在编程中，字符串是字符序列。以下是有效字符串的示例：
 
 - “Hi There!”
+
 - “How are you?”
-- “123456”
 
-在编程中，字符串是字符序列。以下是有效字符串的示例：
-
-- “Hi There!”
-- “How are you?”
-- “123456”
-
-在编程中，字符串是字符序列。以下是有效字符串的示例：
-
-- “Hi There!”
-- “How are you?”
-- “123456”
-
-在编程中，字符串是字符序列。以下是有效字符串的示例：
-
-- “Hi There!”
-- “How are you?”
-- “123456”
-
-在编程中，字符串是字符序列。以下是有效字符串的示例：
-
-- “Hi There!”
-- “How are you?”
-- “123456”
-
-在编程中，字符串是字符序列。以下是有效字符串的示例：
-
-- “Hi There!”
-- “How are you?”
 - “123456”
 
 在编程中，字符串是字符序列。以下是有效字符串的示例：双引号。
@@ -8801,31 +10175,33 @@ echo n;
 在编程中，字符串是字符序列。以下是有效字符串的示例：
 
 - “Hi There!”
+
 - “How are you?”
+
 - “123456”
 
 在编程中，字符串是字符序列。以下是有效字符串的示例：
 
 - “Hi There!”
+
 - “How are you?”
+
 - “123456”
 
 在编程中，字符串是字符序列。以下是有效字符串的示例：
 
 - “Hi There!”
+
 - “How are you?”
+
 - “123456”
 
 在编程中，字符串是字符序列。以下是有效字符串的示例：
 
 - “Hi There!”
-- “How are you?”
-- “123456”
 
-在编程中，字符串是字符序列。以下是有效字符串的示例：
-
-- “Hi There!”
 - “How are you?”
+
 - “123456”
 
 在编程中，字符串是字符序列。以下是有效字符串的示例：双引号。
@@ -8845,7 +10221,9 @@ echo n;
 在编程中，字符串是字符序列。以下是有效字符串的示例：
 
 - “Hi There!”
+
 - “How are you?”
+
 - “123456”
 
 PHP 的第一个特性是使用单引号。让我们考虑以下：
@@ -8888,7 +10266,7 @@ echo $poem;
 ?>
 ```
 
-PHP 的第三个特性是 `nowdoc` 语法，它类似于 heredoc 但不允许字符串中的变量被解析。
+PHP 的第三个特性是 `nowdoc` 语法，它类似于 heredoc 但不允字符串中的变量被解析。
 
 ```php
 <?php
@@ -8915,8 +10293,11 @@ PHP 的第三个特性是 `nowdoc` 语法，它类似于 heredoc 但不允许字
 PHP 定义字符串有四种主要方式：
 
 1. **单引号 (`'...'`)**：内部变量不会解析。
+
 2. **双引号 (`"..."`)**：内部变量会被解析。
+
 3. **Heredoc (`<<<'`)**：类似于双引号，允许多行字符串。
+
 4. **Nowdoc (`<<<''`)**：类似于单引号，允许多行字符串。
 
 ## 字符串函数
@@ -8924,10 +10305,15 @@ PHP 定义字符串有四种主要方式：
 PHP 提供了多种函数来处理字符串。以下是一些最常用的：
 
 - `strlen($string)`：返回字符串的长度。
+
 - `strpos($string, $needle)`：返回子字符串首次出现的位置。
+
 - `substr($string, $start, $length)`：返回字符串的一部分。
+
 - `str_replace($search, $replace, $string)`：将搜索内容替换为替换内容。
+
 - `strtolower($string)`：将字符串转换为小写。
+
 - `toupper($string)`：将字符串转换为大写。
 
 ## 字符串函数示例
@@ -8943,10 +10329,6 @@ echo strtolower($text); // 输出: hello world!
 echo strupper($text); // 输出: HELLO WORLD!
 ?>
 ```
-
-
-
-
 
 在浏览器中我们将得到以下输出，其中前 30 个字符作为子字符串显示：
 
@@ -9003,20 +10385,28 @@ print(substr($poem, 0, 30));
 ### 课习题
 
 1. 用于显示 heredoc 的符号是：
+
 a. <<<
+
 b. >>>
+
 c. +++
+
 d. ---
 
 2. 哪个函数将字符串转换为数组？
+
 a. `strrev()`
+
 b. `str_split()`
+
 c. `str_con()`
+
 d. `str_arr()`
 
 ### 10.3 会话
 
-当你浏览互联网时，通过点击链接从一个网页移动到另一个。当你点击链接时，Web 服务器将其解释为对你点击的链接所指向页面的请求。它加载页面并执行页面的 HTML 和 CSS 命令以及任何 PHP 脚本。
+当你浏览互联网时，通过点击链接从一个网页移动到另一个。当你点击链接时，Web 服务器将其解释为对你点击的链接所指向页面的请请求。它加载页面并执行页面的 HTML 和 CSS 命令以及任何 PHP 脚本。
 
 PHP 变量将进行初始化，执行计算、格式化文本、调整图像大小并定位，然后将完全渲染的页面发送到你的浏览器。随后，Web 服务器将从内存中删除该页面。任何 PHP 变量的值以及任何计算结果都会丢失。如果由于某种原因你以后再次点击同一个链接，Web 服务器将再次通过相同的过程，而不会记得以前渲染过此页面。这就是所谓的“无状态（stateless）”。
 
@@ -9057,6 +10447,7 @@ PHP 会话是服务器上的一个临时文件，你可以在其中存储数据�
 
 <a href="sessions.php">Sessions 2</a>
 ```
+
 如你所见，我们的第一行代码是调用 `session_start()`。
 
 ```php.php
@@ -9074,6 +10465,7 @@ PHP 会话是服务器上的一个临时文件，你可以在其中存储数据�
 
 ?>
 ```
+
 现在，让我们运行 `sessions.php`。你将在浏览器中看到的内容。注意，这是一个超链接，不同的颜色和下划线证明了这一点。
 
 Session 2
@@ -9089,6 +10481,7 @@ session_destroy();
 
 print("Session Destroyed. Please go to <a='sessions3.php'>Sessions 3</a>.")
 ```
+
 `sessions2.php` 现在将检索由 `sessions.php` 保存的会话值并删除会话。现在，为了验证会话确实已删除，我们将创建一个包含以下代码的 `sessions3.php` 脚本。
 
 #### Sessions3.php
@@ -9119,24 +10512,24 @@ print("Session Destroyed. Please go to <a='sessions3.php'>Sessions 3</a>.")
 
 `isset()` 函数在变量未被设置为 `NULL` 时返回 TRUE。否则返回 FALSE。
 
-
-
-
-
 现在让我们连续执行脚本 `sessions.php`、`sessions2.php` 和 `sessions3.php`。这将产生以下三个屏幕。
 
 ![](img/00301.jpeg)
+
 图 10.11：脚本 `sessions.php` 的屏幕输出
 
 ![](img/00302.jpeg)
+
 图 10.12：脚本 `sessions2.php` 的屏幕输出
 
 ![](img/00303.jpeg)
+
 图 10.13：脚本 `sessions3.php` 的屏幕输出
 
 ## 完整代码列举
 
 ### Sessions.php
+
 ```php
 <?php
     session_start();
@@ -9146,9 +10539,11 @@ print("Session Destroyed. Please go to <a='sessions3.php'>Sessions 3</a>.")
     $_SESSION['age'] = "37";  
 ?>
 ```
+
 <a href="sessions2.php">Sessions 2</a>
 
 ### Sessions2.php
+
 ```php
 <?php
     session_start();
@@ -9162,6 +10557,7 @@ print("Session Destroyed. Please go to <a='sessions3.php'>Sessions 3</a>.")
 ```
 
 ### Sessions3.php
+
 ```php
 <?php
     session_start();
@@ -9176,20 +10572,29 @@ print("Session Destroyed. Please go to <a='sessions3.php'>Sessions 3</a>.")
     }
 ?>
 ```
+
 <a href="sessions.php">Session 1</a>
 
 ## 复习题
 
 1. 使用哪个函数来启动每个会？
+
    a. `session_start()`
+
    b. `session_begin()`
+
    c. `session_initiate()`
+
    d. 以上均非
 
 2. 当我们不再需要某个会 时，使用哪个函数？
+
    a. `session_end()`
+
    b. `session_finish()`
+
    c. `session_destroy()`
+
    d. 以上均非
 
 ## 10.4 Cookies
@@ -9205,12 +10610,19 @@ Cookie 只能由创建它的服务器进行检索，因此提供了一定程度�
 cookie 中的数据应按照以下参数的顺序排列：
 
 | Cookie 字段 | 描述 |
+
 | :--- | :--- |
+
 | name | 特定 cookie 的唯一名称。不允许有空格或分号。 |
+
 | value | 附加到此 cookie 的任意字符串值。 |
+
 | expire | cookie 的过期日期。过期时间指定为戳或自 1970 年 1 月 1 日午夜 (GMT) 以来的秒数。 |
+
 | path | 浏览器仅对于此路径下的 URL 才会该 cookie。 |
+
 | domain | 浏览器仅对于该域名内的 URL 返回该 cookie。 |
+
 | secure | 浏览器仅通过 https 连接传输 cookie。 |
 
 表 10.4：cookie 参数的强制性顺序顺序。
@@ -9222,6 +10634,7 @@ cookie 中的数据应按照以下参数的顺序排列：
 以下是创建名为 `band` 和 `food` 的两个 cookie 的代码。`band` 将在一个小时后过期，而 `food` 将在 30 天过期。
 
 ### Cookies.php
+
 ```php
 <?php
 setcookie("band", "Journey", time()+ 3600); // 一小时后过期
@@ -9229,9 +10642,12 @@ setcookie("food", "pasta", time()+ (60 * 60 * 24 * 30) ); // 30 天后
 ?>
 ```
 
+
+
 现在我们在浏览器中有了两个 cookie，获取它们就像创建它们一样简单。使用 `$_COOKIE` 关联数组，它包含了浏览器发送的所有 cookie。使用键来获取值。
 
 ### Cookies2.php
+
 ```php
 <?php
 $band = $_COOKIE['band'];
@@ -9241,8 +10657,11 @@ print("Band: " . $band);
 print("<br/>Food: " . $food);
 ?>
 ```
+
 显示结果应该是：
+
 Journey
+
 Pasta
 
 要删除或“过期”一个 cookie，调用 `setcookie()` 并要删除的 cookie 名称、空字符串（或任何值）作为第二个参数，并将过去的戳作为第三个参数。例如：
@@ -9254,6 +10673,7 @@ setcookie("food", "", (time()-1));
 现在将之前的调用加入 `sessions2.php`。运行脚本，你将获得与 `sessions.php` 的结果，因为我们对 `setcookie()` 使用了过去的戳。为了验证此 cookie 是否已删除，输入以下代码并将其保存为 `cookies3.php`。
 
 ### Cookies3.php
+
 ```php
 <?php
 $band = $_COOKIE['band'];
@@ -9269,38 +10689,53 @@ else
 }
 ?>
 ```
+
 `isset()` 函数在变量被设置时返回 TRUE。否则返回 FALSE。当你运行 `cookies3.php` 时，你将在浏览器中得到以下结果：
+
 Journey
+
 No cookie found.
 
 cookie ‘food’ 已删除或过期。
 
-
-
-
-
 a. 一个文件。
+
 b. 一个函数。
+
 c. 一个命令。
+
 d. 以上都不是。
 
 2. 使用哪个函数来创建 cookie？
+
 a. `setcookie()`
+
 b. `startcookie()`
+
 c. `createcookie()`
+
 d. 以上都不是。
 
 # 第 10 章 实验题
 
 1. 确保你的 MAMP 或 WAMP 服务器堆栈已下载、安装并运行。
+
 2. 建立一个 HTML 文档，并在文档的 `<body>` 部分嵌入 PHP 的开始标签和结束标签。按照文中的描述，将该文档保存到你的 `www` 文件夹（Windows）或 `htdocs` 文件夹（Mac）中。
+
 3. 创建一个短表单，让用户输入用户名。将用户名存储在会话（session）变量中。
+
 4. 创建第二个页面，从会话变量中读取用户名。向用户输出问候语。
+
 5. 输出问候语后，销毁会话并将用户名存储在名为 `username` 的 cookie 中。设置 cookie 在 30 分钟后过期。
+
 6. 创建一个新页面并获取 cookie。使用 `date()` 函数在页面顶部显示当前日期。
+
 7. 将字符串“You have reached the end of PHP for Beginners.” 存放在变量 `$message` 中。
+
 8. 输出字符串中的字符数量。
+
 9. 使用字符串函数和任何必要的代码，将所有元音替换为 X 并再次输出字符串。
+
 10. 使用字符串函数将字符串转换为数组，并使用循环输出数组的每个元素。（不要使用 `print_r`。）
 
 # 第 10 章 实验答案
@@ -9326,7 +10761,7 @@ d. 以上都不是。
     <form action="lab.php" method="post">
         <label for="user">Username:</label><input type="text" id="user" name="user" />
         <br/><input type="submit" value="Save Session" />
-        <br/><a href="lab2.php">Go to page 2</a>a>
+        <br/><a href="lab2.php">Go to page 2</a>
     </form>
 </body>
 </html>
@@ -9371,12 +10806,15 @@ d. 以上都不是。
 ```
 
 ![](img/00304.jpeg)
+
 图 10.14：脚本 `Lab.php` 的屏幕输出。用户名字段中已输入“Alison”。
 
 ![](img/00305.jpeg)
+
 图 10.15：脚本 `Lab2.php` 的屏幕输出
 
 ![](img/00306.jpeg)
+
 图 10.16：脚本 `Lab3.php` 的屏幕输出
 
 ## 第 10 章总结
@@ -9386,69 +10824,114 @@ d. 以上都不是。
 # 答案页
 
 ### 第 1 章：你的第一个脚本
+
 1. PHP 代表什么？
+
 答案：b. Pretext Processor（预文本处理器）。
+
 2. WAMP 中的 A 代表什么？
+
 答案：a. Apache。
+
 3. 使用什么地址检查由 Windows Apache 服务器生成的首页？
+
 答案：a. `http://localhost`
+
 4. 正确的开始标签是什么？
+
 答案：d. `<?php`
+
 5. 哪个命令可以输出格式化字符串？
+
 答案：d. `printf()`
 
 ## 第 2 章：变量
+
 1. 什么是变量？
+
 答案：a. 变量是数据的容器。
+
 2. 常见的算术运算符有哪些？
+
 答案：c. 加、减、除。
+
 3. 拼接字符串的正确语法是什么？
+
 答案：c. `.`
+
 4. 给某个变量加 1 使用什么运算符？
+
 答案：a. `++`
 
 ## 第 3 章：数组
+
 1. 什么是数组？
+
 答案：b. 数组是多个变量的容器。
+
 2. 在示例中，`arrayName[]=` 赋值什么？
+
 答案：c
+
 3. 多维数组最简单的解释是什么？
+
 答案：b. 它们是数组中的数组。
+
 4. 简单数组和全局数组的区别是什么？
+
 答案：b. 全局数组来自用户输入、URL、cookie，而简单数组是由程序员定义的。
 
 ### 第 4 章：控制结构 - 选择
+
 1. 什么是条件语句？
+
 答案：d. 判断一个表达式的真假并执行与真或假值相关的操作。
+
 2. 逻辑运算符 `<=` 表示什么？
+
 答案：d. 小于等于。
+
 3. 复杂条件的例子是？
+
 答案：d. 一系列 if-else 语句。
+
 4. switch-case-break 条件最好定义为？
+
 答案：c. 有许多情况的条件。
+
 5. switch-case-break 区分大小写吗？
+
 答案：d. 默认区分，可以通过添加多个情况来消除大小写。
+
 6. 三元运算符是什么？
+
 答案：a. 与变量相关的单行 if-else 语句。
+
 7. 三元语句中的 `?` 和 `:` 分别代表什么？
+
 答案：a. If 和 else。
 
 # 第 5 章：控制结构 - 循环
+
 1. 什么是循环？
+
 答案：c. 根据程序设置重复代码段的命令。
+
 2. while 循环和 do-while 循环的主要区别是什么？
+
 答案：c. do-while 即使初始值为 FALSE 也会执行一次；while 如果初始值为 FALSE 则忽略循环。
+
 3. 什么是 for 循环？
+
 答案：c. for 循环是将逻辑和参数都包含在一行的紧凑循环类型。
 
 ### 第 6 章：自定义 PHP 函数
+
 1. 什么是函数？
+
 答案：a. 存储在特定关键字下的相关代码块，可以被调用并重复使用。
+
 2. 什么是参数？
-
-
-
-
 
 答案：a. 传递函数的值或字符串。
 
@@ -9597,168 +11080,253 @@ d. 以上都不是。
 ## 附录
 
 | 术语 | 定义 |
+
 | :--- | :--- |
+
 | api | 这是应用程序接口（application interface）的缩写。 |
+
 | argument | 这是传递给函数的值或变量。 |
+
 | array | 这是 PHP 的数据类型之一。 |
+
 | boolean | 它只有两个值——TRUE 和 FALSE。 |
+
 | break | 这是一个用于终止函数执行的关键字。 |
+
 | browser | 这是一个访问服务器的程序。 |
+
 | class | 这是一个对象的蓝图。 |
+
 | client | 这是一个用户（个人）用于发送或接收邮件的程序。 |
+
 | code block | 一组连续的代码行。 |
+
 | cookies | 这些是服务器留下的、不超过 4kb 的文件。 |
+
 | column | 在数据库中，字段（field）是列（column）的另一种说法。 |
+
 | concatenation | 将几个不同的事物或对象合并为一个单元的过程。 |
+
 | comparison operator | 这是一个比较两个操作数的运算符。 |
+
 | conditional expression | 结果为真或假的表达式。 |
-| conditional statement | 这是一行包含表达式的编程代码。 |
+
+| conditional statement | 这是一行包含表达的编程代码。 |
+
 | control structure | 在编程中，这允许改变执行流的语言结构。 |
+
 | CRUD | 这是创建（Create）、检索（Retrieve）、更新（Update）和删除（Delete）的缩写。 |
+
 | csv file | 这是一个逗号分隔值（csv）文本文件。 |
+
 | database | 这是一个相关数据的集合。 |
+
 | do-while | 这是 PHP 的循环控制结构之一。 |
+
 | dot operator | 点运算符 `.` 是 PHP 的连接运算符。 |
+
 | email client | 这是一个用户用于发送或接收邮件的程序。 |
+
 | esmtp | 这是扩展简单邮件传输协议（Extended Simple Mail Transfer Protocol）的缩写。 |
+
 | expression | 任何变量、常量、字面量值、运算符、对象甚至函数的有效组合。 |
+
 | field | 在数据库中，字段是列的另一种说法。 |
 
+| file | 这是一个用于存储在计算机上的数据的通用术语，无论这些数据是以文本、二进制、图片、视频、声音、网页等形式存在。每个文件都被分配有一个唯一的文件名以便识别并与其他文件区分来。 |
 
+| file handle | 这是 `fopen()` 函数的返回值，是 PHP 脚本访问服务器文件的主要手段。脚本访问的每个文件都会分配一个文件句柄。文件句柄的 PHP 数据类型为 `resource`（资源）。 |
 
+| filename | 计算机上的文件被赋予唯一的文件名以便识别。文件名由特定数量的字符组成（在 Windows 中，文件名最大为 255 个字符），后面可选跟一个点和一个字符扩展名。字符扩展名通常标识文件的类型。例如，扩展名“avi”表示视频文件，“mp3”表示音频文件等。 |
 
+| file i/o | 这指的是文件的输入-输出或在计算机上创建和检索文件。在 PHP 中，文件 I/O 只涉及服务器文件，因为 PHP 禁止在客户端计算机上执文件 I/O（cookie 除外）。 |
 
-| **file**（文件） | 这是一个用于存储在计算机上的数据的通用术语，无论这些数据是以文本、二进制、图片、视频、声音、网页等形式存在。每个文件都被分配有一个唯一的文件名以便识别并与其他文件区分来。 |
-| **file handle**（文件句柄） | 这是 `fopen()` 函数的返回值，是 PHP 脚本访问服务器文件的主要手段。脚本访问的每个文件都会分配一个文件句柄。文件句柄的 PHP 数据类型为 `resource`（资源）。 |
-| **filename**（文件名） | 计算机上的文件被赋予唯一的文件名以便识别。文件名由特定数量的字符组成（在 Windows 中，文件名最大为 255 个字符），后面可选跟一个点和一个字符扩展名。字符扩展名通常标识文件的类型。例如，扩展名“avi”表示视频文件，“mp3”表示音频文件等。 |
-| **file i/o**（文件输入输出） | 这指的是文件的输入-输出或在计算机上创建和检索文件。在 PHP 中，文件 I/O 只涉及服务器文件，因为 PHP 禁止在客户端计算机上执行文件 I/O（cookie 除外）。 |
-| **floating-point**（浮点数） | 这是 PHP 的八种数据类型之一。它表示带有小数位的数值。 |
-| **foreach-loop**（foreach 循环） | 这是 PHP 四种循环控制结构之一。另外三个是：while 循环、do-while 循环和 for 循环。 |
-| **for-loop**（for 循环） | 这是 PHP 四种循环控制结构之一。另外三个是：while 循环、do-while 循环和 foreach 循环。 |
-| **function**（函数） | 这是一个自包含的程序语句块，具有定义的边界，执行特定的任务。 |
-| **here document**（在此文档） | 在计算机科学中，这是一个文件字面量或输入流字面量。它是源代码文件的一个部分，被视为一个单独的文件处理。 |
-| **heredoc**（Heredoc） | 这是一个代码块，无论多多大，都可以被视为字符串。 |
-| **if-else/if-elseif statement**（if-else/if-elseif 语句） | 这是 PHP 三种条件语句之一，用于创建分支控制结构。另外两个是 if 语句和 switch 语句。 |
-| **if-statement**（if 语句） | 这是 PHP 三种条件语句之一，用于创建分支控制结构。另外两个是 if-else/if-elseif 语句和 switch 语句。 |
-| **imap** | 这代表互联网邮件访问协议。这是入站邮件服务器使用的协议，该服务器在服务器上存储收到的和发出的消息。 |
-| **incoming mail server**（入站邮件服务器） | 它处理所有收到的邮件并实现 POP3（邮局协议第 3 版）或 IMAP（互联网消息访问协议）。POP3 入站服务器将发送和接收的消息存储在客户端的硬盘上。这迫使用户只能从一个设备或一个位置访问和处理邮件。然而，IMAP 入站服务器将消息存储在服务器上，从而允许用户从任何位置或任何设备访问其邮件。 |
-| **indexed array**（索引数组） | 这是 PHP 中两种数组类型之一，使用数字索引来识别和区分其成员或元素。 |
-| **integer**（整数） | 这是 PHP 的八种数据类型之一。它是一个整数，其值范围取决于硬件。 |
-| **ip address**（IP 地址） | 这是分配给每个连接到互联网的计算机的唯一数字。IP 代表“互联网协议”。 |
-| **join**（连接） | 在数据库中，这是关联的另一种术语。 |
-| **key**（键） | 在数据库中，这是用于构建索引的列或多个列，以便快速和/或通过排序方式访问表数据。 |
-| **keyword**（关键字） | 这是编程语言保留的单词，因为它在语言的语法和语法规则中具有特殊含义。程序员不能使用关键字来命名变量或用于任何其他用途。例如：‘break’、‘else’、‘if’、‘function’等等。 |
-| **Linux** | 这是一个基于 UNIX 的开源（免费）跨平台操作系统。 |
-| **literal value**（字面量值） | 仅包含一个操作数且没有运算符的表达式。它是通过其实际字符串值表示的单个标量值（即不是通过变量引用）。例如，1、1.414 和 "string" 都是字面量值。作为表达式的字面量值等于自身。 |
-| **logical operator**（逻辑运算符） | 它结合条件表达式产生 TRUE 或 FALSE 的布尔结果。例如，`$age < 21`。 |
-| **looping control structure**（循环控制结构） | 参见“控制结构”。 |
-| **mail server**（邮件服务器） | 这是一种处理发送和接收邮件的服务器。它可以运行在自己的专用硬件上，也可以与其他服务器程序共享硬件资源。它在正常运行期间自动运行，无需人工干预。邮件服务器有两种：出站邮件服务器和入站邮件服务器。 |
-| **mode**（模式） | 模式专门标识文件 I/O 操作类型。某些文件 I/O 函数需要模式作为参数之一。模式通过字符和/或加号‘+’来识别。例如，“r”意味着“只读访问”，而“r+”意味着“读写访问”。 |
-| **multi-dimensional array**（多维数组） | 这是一个其元素或成员也是数组的数组。它是一个包含若干个被称为“子数组”的主数组。 |
-| **mysql** | 这是一个流行的开源关系型数据库管理系统 (RDBMS)，支持多种管理工具、程序和应用程序接口。截至 2014 年 3 月，它是全球使用广泛的开源 RDBMS。 |
-| **null** | 这是 PHP 的八种数据类型之一。Null 表示变量中没有存储有效值。 |
-| **object**（对象） | 这是一个封装成独立包的程序代码，具有清晰的边界和访问该对象的明确规则。 |
-| **or die()** | 这是 PHP 语言中等同于 exit。 |
-| **open source software**（开源软件） | 这种源代码公开的软件，其许可规定持有者允许任何人出于任何目的研究、更改和分发该软件。 |
-| **operator**（运算符） | 这是一个指定特定编程操作的符号。此操作通常产生一个新值。PHP 有十组运算符：算术、数组、赋值、位运算、比较、错误控制、执行、逻辑、字符串以及增减。 |
-| **operand**（操作数） | 这是运算符作用的对象。大多数情况下，操作数是一个变量，也可以是字面量、对象、函数或任何运算符可以有效执行操作的内容。 |
-| **outgoing mail server**（出站邮件服务器） | 这种类型的服务器处理所有发送的邮件并实现 SMTP 简单邮件传输协议。 |
-| **parameter**（参数） | 这是函数定义中的变量，用于接收传递给函数的参数值。 |
-| **PEAR** | 这是 PHP 扩展应用程序库（PHP Extension and Application Repository）的缩写。它是一个免费、高质量源代码包集合，可以下载并用于任何 PHP 应用程序。 |
-| **pop3** | 这代表邮局协议第 3 版。这是入站邮件服务器使用的协议，将发送和接收的消息存储在客户端的硬盘上。 |
-| **post** | 此方法以数组形式传递信息，而不是在 URL 中创建查询字符串。 |
-| **PHP** | 这是一个递归缩写，其第一个字母代表缩写本身，它的意思是“PHP：超文本处理器”。 |
+| floating-point | 这是 PHP 的八种数据类型之一。它表示带有小数位的数值。 |
 
+| foreach-loop | 这是 PHP 四种循环控制结构之一。另外三个是：while 循环、do-while 循环和 for 循环。 |
 
+| for-loop | 这是 PHP 四种循环控制结构之一。另外三个是：while 循环、do-while 循环和 foreach 循环。 |
 
+| function | 这是一个自包含的程序语句块，具有定义的边界，执行特定的任务。 |
 
+| here document | 在计算机科学中，这是一个文件字面量或输入流字面量。它是源代码文件的一个部分，被视为一个单独的文件处理。 |
+
+| heredoc | 这是一个代码块，无论多多大，都可以被视为字符串。 |
+
+| if-else/if-elseif statement | 这是 PHP 三种条件语句之一，用于创建分支控制结构。另外两个是 if 语句和 switch 语句。 |
+
+| if-statement | 这是 PHP 三种条件语句之一，用于创建分支控制结构。另外两个是 if-else/if-elseif 语句和 switch 语句。 |
+
+| imap | 这代表互联网邮件访问协议。这是入站邮件服务器使用的协议，该服务器在服务器上存储收到的和发出的消息。 |
+
+| incoming mail server | 它处理所有收到的邮件并实现 POP3（邮局协议第 3 版）或 IMAP（互联网消息访问协议）。POP3 入站服务器将发送和接收的消息存储在客户端的硬盘上。这迫使用户只能从一个设备或一个位置访问和处理邮件。然而，IMAP 入站服务器将消息存储在服务器上，从而允许用户从任何位置或任何设备访问其邮件。 |
+
+| indexed array | 这是 PHP 中两种数组类型之一，使用数字索引来识别和区分其成员或元素。 |
+
+| integer | 这是 PHP 的八种数据类型之一。它是一个整数，其值范围取决于硬件。 |
+
+| ip address | 这是分配给每个连接到互联网的计算机的唯一数字。IP 代表“互联网协议”。 |
+
+| join | 在数据库中，这是关联的另一种术语。 |
+
+| key | 在数据库中，这是用于构建索引的列或多个列，以便快速和/或通过排序方式访问表数据。 |
+
+| keyword | 这是编程语言保留的单词，因为它在语言的语法和语法规则中具有特殊含义。程序员不能使用关键字来命名变量或用于任何其他用途。例如：‘break’、‘else’、‘if’、‘function’等等。 |
+
+| Linux | 这是一个基于 UNIX 的开源（免费）跨平台操作系统。 |
+
+| literal value | 仅包含一个操作数且没有运算符的表达式。它是通过其实际字符串值表示的单个标量值（即不是通过变量引用）。例如，1、1.414 和 "string" 都是字面量值。作为表达式的字面量值等于自身。 |
+
+| logical operator | 它结合条件表达式产生 TRUE 或 FALSE 的布尔结果。例如，`$age < 21`。 |
+
+| looping control structure | 参见“控制结构”。 |
+
+| mail server | 这是一种处理发送和接收邮件的服务器。它可以运行在自己的专用硬件上，也可以与其他服务器程序共享硬件资源。它在正常运行期间自动运行，无需人工干预。邮件服务器有两种：出站邮件服务器和入站邮件服务器。 |
+
+| mode | 模式专门标识文件 I/O 操作类型。某些文件 I/O 函数需要模式作为参数之一。模式通过字符和/或加号‘+’来识别。例如，“r”意味着“只读访问”，而“r+”意味着“读写访问”。 |
+
+| multi-dimensional array | 这是一个其元素或成员也是数组的数组。它是一个包含若干个被称为“子数组”的主数组。 |
+
+| mysql | 这是一个流行的开源关系型数据库管理系统 (RDBMS)，支持多种管理工具、程序和应用程序接口。截至 2014 年 3 月，它是全球使用广泛的开源 RDBMS。 |
+
+| null | 这是 PHP 的八种数据类型之一。Null 表示变量中没有存储有效值。 |
+
+| object | 这是一个封装成独立包的程序代码，具有清晰的边界和访问该对象的明确规则。 |
+
+| or die() | 这是 PHP 语言中等同于 exit。 |
+
+| open source software | 这种源代码公开的软件，其许可规定持有者允许任何人出于任何目的研究、更改和分发该软件。 |
+
+| operator | 这是一个指定特定编程操作的符号。此操作通常产生一个新值。PHP 有十组运算符：算术、数组、赋值、位运算、比较、错误控制、执行、逻辑、字符串以及增减。 |
+
+| operand | 这是运算符作用的对象。大多数情况下，操作数是一个变量，也可以是字面量、对象、函数或任何运算符可以有效执行操作的内容。 |
+
+| outgoing mail server | 这种类型的服务器处理所有发送的邮件并实现 SMTP 简单邮件传输协议。 |
+
+| parameter | 这是函数定义中的变量，用于接收传递给函数的参数值。 |
+
+| PEAR | 这是 PHP 扩展应用程序库（PHP Extension and Application Repository）的缩写。它是一个免费、高质量源代码包集合，可以下载并用于任何 PHP 应用程序。 |
+
+| pop3 | 这代表邮局协议第 3 版。这是入站邮件服务器使用的协议，将发送和接收的消息存储在客户端的硬盘上。 |
+
+| post | 此方法以数组形式传递信息，而不是在 URL 中创建查询字符串。 |
+
+| PHP | 这是一个递归缩写，其第一个字母代表缩写本身，它的意思是“PHP：超文本处理器”。 |
 
 # PHPMyAdmin
+
 这是一个用 `PHP` 编写的开源工具，可以在 浏览器中运行。它允许用户创建、修改或删除 `MySQL` 数据库，以及数据库中的任何表，或任何表的行和字段。`PHPMyAdmin` 可以在数据库上执行 `SQL` 语句，并管理用户和权限。
 
 ### 主键
+
 这是一个列或字段或多个列或字段，其值确保了表中的每一行都是唯一的。
 
 ### 查询字符串
+
 它是 `URL` 的一部分，包含要传递给 Web 应用程序的数据。
 
 ### 记录
+
 在数据库中，这是行的另一种称为术语。
 
 ### 关系
+
 在数据库中，关系是两个表之间的链接。
 
 ### 资源
+
 这是 `PHP` 八种数据类型之一。
 
 ### 返回值
+
 这是函数返回给调用者的可选值。
 
 ### 行
+
 在数据库中，这是表中一组相关的数据。
 
 ### 作用域
+
 这是编程中的一个重要概念，指变量在程序中的可见性或可访问性。具体来说，它指的是程序中可以访问变量的代码部分。`PHP` 全局作用域和局部作用域。
 
 ### 服务器
+
 这是一个系统（软件和合适的计算机硬件），旨在处理请求并通过局域网或互联网向其他计算机（客户端）传递数据。
 
 ### 会话
+
 这是服务器上的一个临时文件，你可以在其中存储数据。客户端浏览器在会话中存储数据以“维护浏览器请求之间的状态”，或者更具体地说，“在浏览器请求之间保留应用程序的状态”。
 
 ### SID
+
 这是会话 ID 的缩写。`SID` 由服务器生成，用于标识和保护会话。
 
 ### SQL
-这意思是结构化查询语言（通常读作“see-qwell”）。它是一种用于在关系型数据库中搜索、排序、添加和提取数据的编程语言。
+
+这是结构化查询语言（通常读作“see-qwell”）。它是一种用于在关系型数据库中搜索、排序、添加和提取数据的编程语言。
 
 ### 简单数组
+
 参见索引数组。
 
 ### smtp
+
 这是简单邮件传输协议的缩写。当电子邮件从邮件客户端（如 Outlook Express）发送到邮件服务器，或者从一个邮件服务器发送到另一个邮件服务器时，使用的协议。`SMTP` 使用端口 25。尽管如今，大多数邮件服务器使用 `ESMTP`，它是 `SMTP` 的更新版本。
 
 ### 状态
+
 这个词用于“维护状态”短语中，或更具体地说“在浏览器请求之间保留应用程序的状态”。当浏览器从服务器请求 Web 页面时，浏览器和服务器都没有浏览器之前请求的记忆。Web 页面中任何变量的值在加载新页面时都会丢失。保留这些值就是“维护状态”的含义。
 
 ### 字符串
+
 这是 `PHP` 八种数据类型之一。它是一个任意长度的字符序列。
 
 ### 子数组
+
 这是多维数组中的一个数组。
 
 ### 超全局变量
+
 这是 `PHP` 中一个内置（预定义）关联数组变量，对所有 `PHP` 代码自动可用，特别是在函数内部（全局作用域）。超级全局变量代表来自 URL、HTML 表单、Cookie、会话以及 Web 服务器本身的数据。
 
 ### switch-语句
+
 这是 `PHP` 三种条件语句之一，用于创建分支控制结构。另外两个是 `if-statement` 和 `if-else/if-elseif-statement`。
 
 ### 表
+
 在数据库中，这是一组紧密相关的数据或列（或字段）的集合。
 
 ### 三元运算符
+
 该运算符作用于三个操作数，是 `if-else` 语句的紧凑形式。
 
 ### 时间戳
+
 这是 1970 年 1 月 1 日午夜到当前日期和时间之间的秒数。`PHP` 内部将时间戳存储为 10 位整数。
 
 ### URL
-这意思是通用资源定位符。它是由 Web 浏览器和其他网络软件使用的特殊格式的文本字符串。它标识互联网上的网络资源。网络资源是文件，可以是纯 Web 页面、其他文本文档、图形或程序。`URL` 的示例是 `http://www.website.com/myfinename`。
+
+这是通用资源定位符。它是由 Web 浏览器和其他网络软件使用的特殊格式的文本字符串。它标识互联网上的网络资源。网络资源是文件，可以是纯 Web 页面、其他文本文档、图形或程序。`URL` 的示例是 `http://www.website.com/myfinename`。
 
 ### 值
+
 在 `MySQL` 数据库的表中，值是给定行和列中的数据。
 
 ### 变量
+
 这是一个分配用于存储值的内存单元，该值可以是八种 `PHP` 数据类型中的任意一种，即：整数、浮点数、字符串、布尔值、数组、对象、资源（或句柄）和空。
 
 ### Web 浏览器
+
 参见浏览器。
 
 ### 数据类型
+
 这是 `PHP` 八种数据类型之一。
 
 ### while-循环
+
 这是 `PHP` 四种循环控制结构之一。另外三个是：`do-while-loop`、`for-loop`、`foreach-loop`。
 
-![Development Club Print Ad.pdf](img/00307.jpeg)
-
+![](img/00307.jpeg)

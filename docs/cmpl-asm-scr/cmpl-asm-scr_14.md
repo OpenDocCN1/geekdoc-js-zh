@@ -1,8 +1,9 @@
+
 # 第十二章：访问者模式
 
 > 原文：[`keleshev.com/compiling-to-assembly-from-scratch/12-visitor-pattern`](https://keleshev.com/compiling-to-assembly-from-scratch/12-visitor-pattern)
 
-从头开始编译汇编
+**从头开始编译汇编**
 
 由 Vladimir Keleshev 编写
 
@@ -19,7 +20,7 @@ interface AST {
 
 这完全没问题。然而，这种方式，每个传递的代码都与每个其他传递的代码交织在一起。换句话说，代码是按 AST 节点而不是按传递分组。
 
-使用*访问者模式*，我们可以将每个传递的代码组合在一起，放在一个单独的类下。访问者模式允许我们通过间接方式解耦我们的传递与 AST。而不是为每个传递、每个 AST 节点有一个方法，我们添加一个名为`visit`的单个方法，它将操作委托给实现*访问者接口*的类。*访问者接口*对每个 AST 节点有一个方法：`visitAssert`、`visitLength`、`visitNumber`等。
+使用访问者模式，我们可以将每个传递的代码组合在一起，放在一个单独的类下。访问者模式允许我们通过间接方式解耦我们的传递与 AST。而不是为每个传递、每个 AST 节点有一个方法，我们添加一个名为`visit`的单个方法，它将操作委托给实现访问者接口的类。访问者接口对每个 AST 节点有一个方法：`visitAssert`、`visitLength`、`visitNumber`等。
 
 ```js
 interface AST {

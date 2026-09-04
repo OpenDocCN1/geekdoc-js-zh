@@ -1,26 +1,9 @@
+
 # jQuery 和 JavaScript 速查手册（开发者文库）
-
-
-
-
-
-
-
 
 ![](img/476d4a1835716860dfdb11288891ad23_0_0.png)
 
-
-
 此页有意留白
-
-
-
-
-
-
-
-
-
 
 # 致谢
 
@@ -40,15 +23,19 @@
 
 来信时，请务必包含本书的书名、作者以及您的姓名和联系方式。
 
--   电子邮件：feedback@developers-library.info
+-   电子邮件：`feedback@developers-library.info`
+
 -   邮寄地址：Reader Feedback
+
     Addison-Wesley Developer's Library
+
     800 East 96th Street
+
     Indianapolis, IN 46240 USA
 
 # 读者服务
 
-请访问我们的网站，在 informit.com/register 注册本书，以便便捷地获取本书的任何更新、下载或勘误信息。
+请访问我们的网站，在 `informit.com/register` 注册本书，以便便捷地获取本书的任何更新、下载或勘误信息。
 
 # 跃入 jQuery、JavaScript 与动态 Web 开发的世界
 
@@ -70,7 +57,7 @@ JavaScript 是一种与其他语言类似的编程语言。它区别于其他语
 
 ### 将 JavaScript 添加到 HTML 文档
 
-```
+```html
 <head>
     <script type="text/javascript">
         alert("JavaScript is Enabled!");
@@ -80,15 +67,15 @@ JavaScript 是一种与其他语言类似的编程语言。它区别于其他语
 
 您可以使用 HTML 的 `<script>` 标签将 JavaScript 添加到 HTML 文档中。当浏览器遇到 `<script>` 标签时，会解析其中的内容，然后执行里面的 JavaScript 代码。通常，`<script>` 标签被添加到 `<head>` 元素中，但也可以将它们添加到 `<body>` 元素中。
 
-目前，网络浏览器默认将所有脚本视为 JavaScript；但是，为了将来可能的兼容性变化，仍然建议将 type 属性设置为 "text/javascript"。
+目前，网络浏览器默认将所有脚本视为 JavaScript；但是，为了将来可能的兼容性变化，仍然建议将 `type` 属性设置为 `"text/javascript"`。
 
-**注意！**
+> **注意！**
 
 `<script>` 标签在 HTML 文档中出现的顺序决定了它们的加载顺序。如果您加载了多个脚本，请注意，后续脚本中使用相同的变量和函数名会覆盖之前脚本中已定义的同名内容。
 
 ### 从外部文件加载 JavaScript
 
-```
+```html
 <head>
     <script type="text/javascript"
         src="scripts/scriptA.js"></script>
@@ -102,6 +89,7 @@ JavaScript 是一种与其他语言类似的编程语言。它区别于其他语
 您可以在 `<script>` 标签中指定一个 `src` 位置来加载脚本，而不是将 JavaScript 代码内联。当浏览器在 `<script>` 标签中遇到 `src` 属性时，会从服务器下载该脚本并加载到内存中。
 
 > **注意！**
+
 浏览器会异步下载外部脚本。这意味着如果您需要在一个脚本中引用另一个脚本，请务必小心，因为第二个脚本可能尚未下载完成。
 
 ### jQuery 简介
@@ -114,7 +102,7 @@ jQuery 还提供了一套丰富的内置功能，让您能用更少的代码完�
 
 ### 在网页中加载 jQuery
 
-```
+```html
 <head>
     <script src="local/jquery-2.0.3.min.js"></script>
     . . . 或者 . . .
@@ -124,13 +112,9 @@ jQuery 还提供了一套丰富的内置功能，让您能用更少的代码完�
 </head>
 ```
 
-jQuery 库只是一个 .js 文件。您可以像加载任何其他 JavaScript 文件一样加载它。将 jQuery 添加到网页有两种方式。
+jQuery 库只是一个 `.js` 文件。您可以像加载任何其他 JavaScript 文件一样加载它。将 jQuery 添加到网页有两种方式。
 
 将 jQuery 添加到网页最简单的方法是使用几个内容分发网络位置之一，或称 CDN。CDN 允许您从全球分布的 jQuery 托管服务器网络加载库。这种方法的好处是服务器遍布全球，下载被分发到多个服务器。此外，如果用户访问过的其他网页也链接了该 CDN 文件，那么 jQuery 库可能已经被缓存。以下是一些托管 CDN 的示例：
-
-
-
-### 第1章 踏入 jQuery、JavaScript 与动态 Web 开发的世界
 
 ```javascript
 //jQuery
@@ -150,7 +134,7 @@ jQuery 库只是一个 .js 文件。您可以像加载任何其他 JavaScript �
 </script>
 ```
 
-另一个选择是从 http://jquery.com/download 下载 .js 文件，并将其与其他 JavaScript 库一起加载。这样做的好处是，它能更紧密地与您网站的内容结合，您就无需担心外部位置可能出现的不可用问题或网站屏蔽问题。
+另一个选择是从 `http://jquery.com/download` 下载 `.js` 文件，并将其与其他 JavaScript 库一起加载。这样做的好处是，它能更紧密地与您网站的内容结合，您就无需担心外部位置可能出现的不可用问题或网站屏蔽问题。
 
 #### 在 JavaScript 中使用 jQuery
 
@@ -160,7 +144,7 @@ jQuery("#myElement")
 $("#myElement")
 ```
 
-使用库加载时定义的 jQuery 对象来访问 jQuery。jQuery 还提供了一个快捷字符 `$`，您可以在本书各处使用。例如，以下两条 jQuery 语句是相同的：
+使用库加载时定义的 `jQuery` 对象来访问 jQuery。jQuery 还提供了一个快捷字符 `$`，您可以在本书各处使用。例如，以下两条 jQuery 语句是相同的：
 
 ```javascript
 jQuery("#myElement")
@@ -177,12 +161,14 @@ jQuery UI 通过提供开箱即用的预构建 UI 元素（如日历和菜单）
 
 #### 获取 jQuery UI 库
 
-要开始使用 jQuery UI，您需要下载该库并将其添加到您的网页中。您可以从 http://jqueryui.com/download/ 下载 jQuery 库，方法是选择您想要包含的选项，然后点击底部的“Download”按钮。这会下载 jQuery UI 文件。
+要开始使用 jQuery UI，您需要下载该库并将其添加到您的网页中。您可以从 `http://jqueryui.com/download/` 下载 jQuery 库，方法是选择您想要包含的选项，然后点击底部的“Download”按钮。这会下载 jQuery UI 文件。
 
 当您下载 jQuery UI 库时，会得到一个 zip 文件。在该文件内有三个您需要了解的主要文件夹，它们是：
 
 - **js** ——此文件夹包含 jQuery UI 和 jQuery 库文件。您需要部署这些文件，以便在网页中加载它们。
-- **css** ——此文件夹包含以主题命名的文件夹，其中存放着 .css 文件和一个由 jQuery UI 库使用的 images 文件夹。.css 文件和 images/ 文件夹需要放置在同一位置，并且可以从您的网页访问。
+
+- **css** ——此文件夹包含以主题命名的文件夹，其中存放着 `.css` 文件和一个由 jQuery UI 库使用的 `images` 文件夹。`.css` 文件和 `images/` 文件夹需要放置在同一位置，并且可以从您的网页访问。
+
 - **development-bundle** ——此文件夹包含 jQuery UI 的完整源代码。如果您不打算修改 jQuery UI 代码，可以忽略此文件夹。
 
 #### 加载 jQuery UI
@@ -203,9 +189,9 @@ jQuery UI 通过提供开箱即用的预构建 UI 元素（如日历和菜单）
 </head>
 ```
 
-要加载 jQuery UI，您首先需要加载 jQuery 库。jQuery UI 也是一个 .js 文件。您可以像加载任何其他 JavaScript 文件一样加载它。同样，就像 jQuery 一样，您可以从外部 CDN 源加载脚本，或者下载该库并在本地加载。
+要加载 jQuery UI，您首先需要加载 jQuery 库。jQuery UI 也是一个 `.js` 文件。您可以像加载任何其他 JavaScript 文件一样加载它。同样，就像 jQuery 一样，您可以从外部 CDN 源加载脚本，或者下载该库并在本地加载。
 
-您还需要使用 `<link>` 标签加载 jQuery UI 的 .css 文件。这可以是一个本地文件，也可以是一个外部 CDN 位置。例如：
+您还需要使用 `<link>` 标签加载 jQuery UI 的 `.css` 文件。这可以是一个本地文件，也可以是一个外部 CDN 位置。例如：
 
 ```html
 <link rel="stylesheet" type="text/css"
@@ -222,23 +208,28 @@ jQuery UI 通过提供开箱即用的预构建 UI 元素（如日历和菜单）
 jQuery mobile 是一个构建在 jQuery 之上的附加库。它旨在简化构建移动网站所需的许多结构性、UI 和事件实现。jQuery Mobile 在开发移动解决方案方面提供了若干优势，包括：
 
 - 隐藏了将页面元素调整大小以适应各种移动设备的部分复杂性。
+
 - 提供了已内置移动事件交互的简单 UI 组件。
+
 - 建立在 JavaScript 和 jQuery 之上，提供了一个基于成熟概念的通用且成熟的平台。
+
 - 开发移动 Web 应用很简单，并且无需用户进行任何安装。这就是它们越来越受欢迎的原因。
 
 #### 获取 jQuery Mobile 库
 
-要开始使用 jQuery Mobile，您需要下载该库并将其添加到您的网页中。您可以从 http://jquerymobile.com/download/ 下载 jQuery 库。您也可以从 http://jquerymobile.com/download-builder/ 下载 jQuery Mobile，方法是选择您想要包含的版本和选项，然后点击底部的“Download”按钮。这会下载一个包含 jQuery Mobile 库的 zip 文件。
+要开始使用 jQuery Mobile，您需要下载该库并将其添加到您的网页中。您可以从 `http://jquerymobile.com/download/` 下载 jQuery 库。您也可以从 `http://jquerymobile.com/download-builder/` 下载 jQuery Mobile，方法是选择您想要包含的版本和选项，然后点击底部的“Download”按钮。这会下载一个包含 jQuery Mobile 库的 zip 文件。
 
 > **注意！**
 
-jQuery Mobile 库附带的 .css 文件和 images 文件夹是一个整体。您需要确保它们安装在同一位置，并且不要混合使用来自不同自定义下载的文件。
+jQuery Mobile 库附带的 `.css` 文件和 `images` 文件夹是一个整体。您需要确保它们安装在同一位置，并且不要混合使用来自不同自定义下载的文件。
 
 当您下载 jQuery Mobile 库时，会得到一个 zip 文件。在该 zip 文件内有三个主要组件，您需要将它们放置到移动网页可以加载的位置。它们是：
 
-- **js 文件** ——会有 jquery.mobile.###.js 及其压缩版本。这是主库文件，需要将其中一个放置在可以将其添加到项目文件中的 `<script>` 标签内的位置。
-- **css 文件** ——会有 jquery.mobile.###.css、jquery.mobile.###.structure.css 和 jquery.mobile.###.theme.css 文件及其压缩形式。这是所有的样式代码，应与 jquery.mobile.###.js 文件放置在同一位置。
-- **images 文件夹** ——此文件夹包含 jQuery Mobile 用于设置元素样式的图像和图标。这也应与 jquery.mobile.###.js 文件放置在同一位置。
+- **js 文件** ——会有 `jquery.mobile.###.js` 及其压缩版本。这是主库文件，需要将其中一个放置在可以将其添加到项目文件中的 `<script>` 标签内的位置。
+
+- **css 文件** ——会有 `jquery.mobile.###.css`、`jquery.mobile.###.structure.css` 和 `jquery.mobile.###.theme.css` 文件及其压缩形式。这是所有的样式代码，应与 `jquery.mobile.###.js` 文件放置在同一位置。
+
+- **images 文件夹** ——此文件夹包含 jQuery Mobile 用于设置元素样式的图像和图标。这也应与 `jquery.mobile.###.js` 文件放置在同一位置。
 
 #### 加载 jQuery Mobile
 
@@ -263,9 +254,9 @@ mobile-1.4.0.min.js">
 </head>
 ```
 
-与您为 jQuery UI 所做的类似，您需要在加载 jQuery Mobile 之前加载 jQuery。一旦 jQuery 加载完成，您可以从外部 CDN 源或本地下载的库版本加载 jQuery Mobile 的 .js 文件。
+与您为 jQuery UI 所做的类似，您需要在加载 jQuery Mobile 之前加载 jQuery。一旦 jQuery 加载完成，您可以从外部 CDN 源或本地下载的库版本加载 jQuery Mobile 的 `.js` 文件。
 
-您还需要使用 `<link>` 标签加载 jQuery Mobile 的 .css 文件。例如，以下代码首先加载 jQuery 库（因为 jQuery Mobile 需要它），然后加载 jQuery Mobile 的 JS 和 CSS 文件：
+您还需要使用 `<link>` 标签加载 jQuery Mobile 的 `.css` 文件。例如，以下代码首先加载 jQuery 库（因为 jQuery Mobile 需要它），然后加载 jQuery Mobile 的 JS 和 CSS 文件：
 
 ```html
 <script type="text/javascript" src="local/jquery-2.0.3.min.js"></script>
@@ -277,16 +268,18 @@ mobile-1.4.0.min.js">
 
 开发 JavaScript 和 jQuery 的一个重要方面是使用网络浏览器内置的 Web 开发工具。这些工具允许您查看已加载的脚本文件、设置断点、单步调试代码等等。深入探讨浏览器工具超出了本书的范围。但是，我希望能为您提供启用这些工具的步骤，并鼓励您在尚未了解时学习它们。
 
-
-
 ### 在 Firefox 上安装 Firebug
 
 请按照以下步骤在 Firefox 上启用 JavaScript 调试：
 
 1.  打开 Firefox。
+
 2.  从主菜单中选择 **工具** > **附加组件**。
+
 3.  在右上角的搜索框中输入 Firebug 以进行搜索。然后点击 **安装** 按钮进行安装。
+
 4.  在右上角的搜索框中输入 FireQuery 以进行搜索。然后点击 **安装** 按钮进行安装。FireQuery 扩展了 Firebug 的功能，使其也支持 jQuery。
+
 5.  重新加载 Firefox 后，点击 Firebug 按钮以显示 Firebug 控制台。
 
 ### 在 Internet Explorer 中启用开发人员工具
@@ -294,7 +287,9 @@ mobile-1.4.0.min.js">
 请按照以下步骤在 Internet Explorer 上启用 JavaScript 调试：
 
 1.  打开 IE。
-2.  点击 **设置** 按钮，然后从下拉菜单中选择 **开发人员工具**。或者，你可以按 F12 键。
+
+2.  点击 **设置** 按钮，然后从下拉菜单中选择 **开发人员工具**。或者，你可以按 `F12` 键。
+
 3.  开发人员控制台将显示。
 
 ### 在 Chrome 中启用 JavaScript 控制台
@@ -302,10 +297,12 @@ mobile-1.4.0.min.js">
 请按照以下步骤在 Chrome 中启用 JavaScript 调试：
 
 1.  打开 Chrome。
+
 2.  点击 **设置** 按钮，然后从下拉菜单中选择 **工具** > **开发人员工具**。或者，你可以在 PC 上按 `Ctrl+Shift+J`，或在 Mac 上按 `Cmd+Shift+J`。
+
 3.  JavaScript 控制台将显示。
 
-## 第1章 跃入 jQuery、JavaScript 与动态 Web 开发的世界
+## 第 2 章 使用 JavaScript 语言
 
 ### 使用 JavaScript 语言
 
@@ -318,13 +315,21 @@ mobile-1.4.0.min.js">
 你应该熟悉以下关于 JavaScript 语法的规则：
 
 - 所有 JavaScript 语句都以分号结尾。
+
 - 语句按照它们在脚本中出现的顺序执行。
+
 - 代码块使用 `{ }` 花括号定义。
+
 - 绑定在 `( )` 圆括号中的表达式会在被应用到语句其余部分之前进行求值。
+
 - JavaScript 区分大小写。
+
 - 要在字符串中间断行，`\` 必须是该行的最后一个字符。
+
 - JavaScript 中的字符串必须用单引号 (`'string'`) 或双引号 (`"string"`) 括起来。
+
 - 将字符串与数字相加时，结果值是一个字符串。
+
 - 变量必须以字母、`$` 或 `_` 开头。
 
 ### 定义和访问数据
@@ -488,14 +493,14 @@ JavaScript
 
 | 字符 | 描述 |
 |---|---|
-| \' | 单引号 |
-| \" | 双引号 |
-| \\ | 反斜杠 |
-| \n | 换行符 |
-| \r | 回车符 |
-| \t | 制表符 |
-| \b | 退格符 |
-| \f | 换页符 |
+| `\'` | 单引号 |
+| `\"` | 双引号 |
+| `\\` | 反斜杠 |
+| `\n` | 换行符 |
+| `\r` | 回车符 |
+| `\t` | 制表符 |
+| `\b` | 退格符 |
+| `\f` | 换页符 |
 
 ### 获取字符串的长度
 
@@ -528,23 +533,21 @@ var b = n.toString(16); //b = 10
 
 要将数字转换为 JavaScript 中的字符串，如果你还没有一个包含该数值的变量，请创建一个。你可以通过在数字变量上调用 `toString()` 方法来实现这一点。你也可以传递一个基数作为参数，将数字转换为该基数的字符串表示形式。
 
-
-
-先得到一个数字，然后对该数字调用`.toString(radix)`。可选的`radix`参数指定转换数字时使用的基数。你可以指定从二进制到三十六进制的基数。
+先得到一个数字，然后对该数字调用 `.toString(radix)`。可选的 `radix` 参数指定转换数字时使用的基数。你可以指定从二进制到三十六进制的基数。
 
 ### 将字符串转换为数字
 
-```
+```javascript
 new Number("16");       //返回16
 new Number("0x20");     //返回32
 new Number("32.8");     //返回32.8
 ```
 
-要将基于数字的字符串转换为数字，可以创建一个新的数字对象。JavaScript会自动检测字符串是否是数字（甚至是0x##格式的十六进制数字），并创建新的数字对象。如果字符串不是有效的数字格式，则会返回一个`NaN`对象。
+要将基于数字的字符串转换为数字，可以创建一个新的数字对象。JavaScript会自动检测字符串是否是数字（甚至是0x##格式的十六进制数字），并创建新的数字对象。如果字符串不是有效的数字格式，则会返回一个 `NaN` 对象。
 
 ### 合并字符串
 
-```
+```javascript
 var str1="jQuery";
 var str2=" & ";
 var str3="JavaScript";
@@ -552,57 +555,57 @@ var str4 = str1.concat(str2, str3); //str5 = "jQuery & JavaScript"
 var str5 = str4 + " Phrasebook";     //str5 = "jQuery & JavaScript Phrasebook"
 ```
 
-你可以使用`.concat(str, str, ...)`方法合并多个字符串。或者你也可以直接使用`str + str + str ...`的方式。
+你可以使用 `.concat(str, str, ...)` 方法合并多个字符串。或者你也可以直接使用 `str + str + str ...` 的方式。
 
 ### 更改字符串大小写
 
-```
+```javascript
 var s1 = "jQuery and JavaScript";
 var s2 = s1.toLowerCase(); //s2 = "jquery & javascript"
 var s3 = s1.toUpperCase(); //s3 = "JQUERY & JAVASCRIPT"
 ```
 
-字符串有内置的函数来更改大小写。`.toLowerCase()`方法返回字符串的小写版本。`.toUpperCase()`方法返回字符串的大写版本。
+字符串有内置的函数来更改大小写。`.toLowerCase()` 方法返回字符串的小写版本。`.toUpperCase()` 方法返回字符串的大写版本。
 
 ### 拼接字符串
 
-```
+```javascript
 var s1 = "The play's the thing";
 var s2 = s1.splice(4,8); // s2 = "play"
 ```
 
-你可以使用`.splice(start, end)`通过指定起始索引和结束索引来将字符串切割成子字符串。返回从`start`索引处的字符开始，到`end`索引处的字符之前结束的字符串部分。所有索引都是基于零的。
+你可以使用 `.splice(start, end)` 通过指定起始索引和结束索引来将字符串切割成子字符串。返回从 `start` 索引处的字符开始，到 `end` 索引处的字符之前结束的字符串部分。所有索引都是基于零的。
 
 ### 分割字符串
 
-```
+```javascript
 var s1 = "on-the-way-to-the/forum";
 var arr = s1.split("-"); // arr = ["on", "the", "way", "to", "the", "forum"];
 ```
 
-要使用特定分隔符将字符串分割成多个部分，请使用`.split(separator [, limit])`。`separator`定义了分割字符串的位置，结果中不包含该分隔符。`limit`指定了在停止前要返回的项数。返回一个包含字符串各部分的数组。
+要使用特定分隔符将字符串分割成多个部分，请使用 `.split(separator [, limit])`。`separator` 定义了分割字符串的位置，结果中不包含该分隔符。`limit` 指定了在停止前要返回的项数。返回一个包含字符串各部分的数组。
 
 ### 检查字符串是否包含子字符串
 
-```
+```javascript
 var s1 = "I think therefore I am";
 var a = s1.indexOf("think"); // a = 2
 var b = s1.indexOf("thought"); // b = -1
 ```
 
-检查一个字符串是否是另一个字符串子字符串的最简单方法，是在主字符串上使用`.indexOf(substring)`。此函数返回第一次出现位置的索引，如果未找到子字符串则返回-1。
+检查一个字符串是否是另一个字符串子字符串的最简单方法，是在主字符串上使用 `.indexOf(substring)`。此函数返回第一次出现位置的索引，如果未找到子字符串则返回-1。
 
 ### 不区分大小写地查找和替换子字符串
 
-```
+```javascript
 var s1 = "jQuery, sometimes JQuery or JQUERY";
 var s2 = s1.replace(/jquery/gi, "jQuery");
 //s2 现在为 "jQuery, sometimes jQuery or jQuery"
 ```
 
-查找和替换子字符串同时忽略大小写的最佳方法是在`.replace()`方法中使用正则表达式。如果你不熟悉它们，我建议你至少去了解一下。它们可以使用复杂的公式在字符串中查找匹配项。现在，我只向你展示一个简单的表达式。
+查找和替换子字符串同时忽略大小写的最佳方法是在 `.replace()` 方法中使用正则表达式。如果你不熟悉它们，我建议你至少去了解一下。它们可以使用复杂的公式在字符串中查找匹配项。现在，我只向你展示一个简单的表达式。
 
-例如，要查找`jQuery`这个术语的所有实例，而你可能不知道字符串中指定的大小写，你可以定义以下正则表达式。字符`g`指定全局搜索（意味着不在第一个实例处停止）。字符`i`指定忽略大小写。
+例如，要查找 `jQuery` 这个术语的所有实例，而你可能不知道字符串中指定的大小写，你可以定义以下正则表达式。字符 `g` 指定全局搜索（意味着不在第一个实例处停止）。字符 `i` 指定忽略大小写。
 
 ```
 /jQuery/gi
@@ -614,7 +617,7 @@ JavaScript中最有用的数据结构之一是数组。数组是可以包含任�
 
 ### 合并数组
 
-```
+```javascript
 var fruits = ["banana", "apple", "orange"];
 var veggies = ["broccoli", "carrots", "spinach"];
 var grains = ["wheat", "oats"];
@@ -623,31 +626,31 @@ var food = grains.concat(fruits, veggies);
 "spinach","banana","apple","orange"]
 ```
 
-你可以使用`.concat(arr, arr, ..)`方法合并多个数组。这会返回一个新的数组对象，其中合并了各个数组的元素。
+你可以使用 `.concat(arr, arr, ..)` 方法合并多个数组。这会返回一个新的数组对象，其中合并了各个数组的元素。
 
 ### 切割数组
 
-```
+```javascript
 var week = ["sun", "Mon", "Tue", "Wed", "thur",
 "Fri", "sat"];
 var weekdays = week.slice(1,6);
 ```
 
-你可以像切割字符串一样切割数组，使用`.splice(start, end)`方法并指定起始索引和结束索引。数组中从起始索引开始，到结束索引之前的项将包含在新的数组对象中返回。所有索引都是基于零的。
+你可以像切割字符串一样切割数组，使用 `.splice(start, end)` 方法并指定起始索引和结束索引。数组中从起始索引开始，到结束索引之前的项将包含在新的数组对象中返回。所有索引都是基于零的。
 
 ### 检测数组是否包含某个项
 
-```
+```javascript
 var food = ["broccoli", "carrots", "spinach"];
 var a = food.indexOf("spinach");    // a = 2
 var b = food.indexOf("pizza");    // b = -1
 ```
 
-检查某个项是否已存在于数组中的最简单方法是使用`.indexOf(item)`。如果找到该项，则返回其第一次出现的索引；否则返回-1。
+检查某个项是否已存在于数组中的最简单方法是使用 `.indexOf(item)`。如果找到该项，则返回其第一次出现的索引；否则返回-1。
 
 ### 从数组中移除项
 
-```
+```javascript
 var week = ["sun", "Mon", "Tue", "Wed", "thur",
  "Fri", "sat"];
 var weekdays = week.splice(1,5);
@@ -658,21 +661,21 @@ var day = week.pop();
  "Fri"];
 ```
 
-你可以使用`pop()`移除数组的最后一项。如果你想移除数组中间的项，你需要使用`splice(index, count)`，其中`index`是开始移除项的索引，`count`是要移除的项数。
+你可以使用 `pop()` 移除数组的最后一项。如果你想移除数组中间的项，你需要使用 `splice(index, count)`，其中 `index` 是开始移除项的索引，`count` 是要移除的项数。
 
 ### 从数组创建制表符分隔的字符串
 
-```
+```javascript
 var weekdays= ["Mon", "Tue", "Wed", "thur", "Fri"]
 var weekStr = weekdays.join("\t");
 // weekStr = "Mon\tTue\tWed\tthur\tFri"
 ```
 
-`.join(separator)`方法允许你将数组组合成一个字符串。可选的`separator`参数指定在新创建的字符串中各项之间放置的字符或字符串。
+`.join(separator)` 方法允许你将数组组合成一个字符串。可选的 `separator` 参数指定在新创建的字符串中各项之间放置的字符或字符串。
 
 ### 对数组排序
 
-```
+```javascript
 arr1.sort(function(a,b){return a-b;});
 ...
 arr1.sort(function(a,b){return Math.abs(a)-Math.abs(b);});
@@ -680,13 +683,13 @@ arr1.sort(function(a,b){return Math.abs(a)-Math.abs(b);});
 arr1.sort();
 ```
 
-JavaScript提供了一个很好的接口来对数组进行排序。数组对象有一个`sort(function)`方法。`sort()`方法按字母顺序对数组元素进行排序，如果可能，会将元素转换为字符串，这对数字数组来说是个问题。你可以指定自己的排序函数，该函数接受两个元素并返回以下内容：
+JavaScript提供了一个很好的接口来对数组进行排序。数组对象有一个 `sort(function)` 方法。`sort()` 方法按字母顺序对数组元素进行排序，如果可能，会将元素转换为字符串，这对数字数组来说是个问题。你可以指定自己的排序函数，该函数接受两个元素并返回以下内容：
 
-+   - 如果第一个值应该排在后面，则返回**true**或**正数**
-- 如果它们相等，则返回**0**
-- 如果第一个值应该排在前面，则返回**false**或**负数**
+- 如果第一个值应该排在后面，则返回 **true** 或 **正数**
+- 如果它们相等，则返回 **0**
+- 如果第一个值应该排在前面，则返回 **false** 或 **负数**
 
-```
+```html
 <script>
     var arr1 = [-10, -5, -1, 0, 2, 6, 8];
     var arr2 = ["a", "b", "c", "A", "B", "C"];
@@ -703,13 +706,15 @@ JavaScript提供了一个很好的接口来对数组进行排序。数组对象�
 </script>
 ```
 
-ch0205.html 的输出
+**ch0205.html 的输出**
 
-- -10,-5,-1,0,2,6,8
-- 0,-1,2,-5,6,8,-10
-- -1,-10,-5,0,2,6,8
-- A,B,C,a,b,c
-- A,a,B,b,C,c
+```
+-10,-5,-1,0,2,6,8
+0,-1,2,-5,6,8,-10
+-1,-10,-5,0,2,6,8
+A,B,C,a,b,c
+A,a,B,b,C,c
+```
 
 ### 应用逻辑
 
@@ -717,20 +722,18 @@ ch0205.html 的输出
 
 ### 判断一个对象是否等于或小于另一个对象
 
-```
+```javascript
 var x=5;
 var y="5";
 var resultA = x==y; //求值为true
 var result = x===y; //求值为false
 ```
 
-JavaScript使用标准的`==`、`!=`、`>`、`<`、`>=`、`<=`运算符来比较两个对象。它还包括类型敏感的`===`和`!==`运算符。例如，`1=="1"`求值为true，而`1==="1"`则不是，因为前者是数值类型，后者是字符串类型。
-
-
+JavaScript使用标准的 `==`、`!=`、`>`、`<`、`>=`、`<=` 运算符来比较两个对象。它还包括类型敏感的 `===` 和 `!==` 运算符。例如，`1=="1"` 求值为true，而 `1==="1"` 则不是，因为前者是数值类型，后者是字符串类型。
 
 ### 添加条件代码块
 
-```
+```javascript
 if (age >= 100){
   document.write("Wow you are a centurian!");
 } else if (age >= 18) {
@@ -740,11 +743,11 @@ if (age >= 100){
 }
 ```
 
-if 代码块使用基本的 if (比较) {IF_BLOCK} 结构创建。if 代码块之后可以使用 else{ELSE_BLOCK} 添加一个额外的 else 代码块。此外，你可以使用 else(条件){ELSE_BLOCK} 为 else 代码块添加一个条件。
+`if` 代码块使用基本的 `if (比较) {IF_BLOCK}` 结构创建。`if` 代码块之后可以使用 `else{ELSE_BLOCK}` 添加一个额外的 `else` 代码块。此外，你可以使用 `else(条件){ELSE_BLOCK}` 为 `else` 代码块添加一个条件。
 
 ### 使用 While 循环
 
-```
+```javascript
 var weekdays = ["Mon", "Tue", "Wed", "Thur", "Fri"];
 do{
   document.write(day);
@@ -754,11 +757,11 @@ do{
 //Output is "Fri, Thur, Wed, "
 ```
 
-while(条件){LOOP_BLOCK} 和 do{LOOP_BLOCK}while(条件); 循环允许你循环执行代码，直到满足特定条件。LOOP_BLOCK 中的代码在每次循环中都会被执行。
+`while(条件){LOOP_BLOCK}` 和 `do{LOOP_BLOCK}while(条件);` 循环允许你循环执行代码，直到满足特定条件。`LOOP_BLOCK` 中的代码在每次循环中都会被执行。
 
 ### 遍历数组
 
-```
+```javascript
 var weekdays = ["Mon", "Tue", "Wed", "Thur", "Fri"];
 for(var x=0; x < weekdays.length; x++){
   document.write(day+"|");
@@ -766,11 +769,11 @@ for(var x=0; x < weekdays.length; x++){
 //Output is "Mon|Tue|Wed|Thur|Fri|"
 ```
 
-遍历 JavaScript 数组的最佳方法是使用 for(初始化; 条件; 调整){LOOP_BLOCK} 循环。for() 循环允许你初始化一个变量，然后迭代直到满足条件。要遍历数组，可以初始化一个索引，然后在索引等于数组长度时停止循环。
+遍历 JavaScript 数组的最佳方法是使用 `for(初始化; 条件; 调整){LOOP_BLOCK}` 循环。`for()` 循环允许你初始化一个变量，然后迭代直到满足条件。要遍历数组，可以初始化一个索引，然后在索引等于数组长度时停止循环。
 
 ### 遍历对象属性
 
-```
+```javascript
 var obj = {first:"Bilbo", last:"Baggins",
              title:"Hobbit"};
 for (var key in obj){
@@ -778,17 +781,17 @@ for (var key in obj){
 }
 ```
 
-JavaScript 在 for() 循环中提供了一种额外类型的选项。使用 in 关键字，你可以遍历数组中的值或对象中的属性。语法是 for(var name in object){LOOP_BLOCK}。在 LOOP_BLOCK 中，name 被赋值为属性名。
+JavaScript 在 `for()` 循环中提供了一种额外类型的选项。使用 `in` 关键字，你可以遍历数组中的值或对象中的属性。语法是 `for(var name in object){LOOP_BLOCK}`。在 `LOOP_BLOCK` 中，`name` 被赋值为属性名。
 
 ### 数学运算
 
-JavaScript 有一个内置的 Math 对象，它提供了扩展数学运算的功能。Math 对象具有属性值，如表 2.2 所列，包含最常见的常量。你可以直接从 JavaScript 代码中访问 Math 对象。例如，要获取 pi 的值，你可以使用以下代码：
+JavaScript 有一个内置的 `Math` 对象，它提供了扩展数学运算的功能。`Math` 对象具有属性值，如表 2.2 所列，包含最常见的常量。你可以直接从 JavaScript 代码中访问 `Math` 对象。例如，要获取 pi 的值，你可以使用以下代码：
 
-```
+```javascript
 Math.PI
 ```
 
-表 2.2 Math 对象属性
+**表 2.2 Math 对象属性**
 
 | 属性 | 描述 |
 | :--- | :--- |
@@ -801,11 +804,11 @@ Math.PI
 | SQRT1_2 | 返回 1/2 的平方根（约等于 0.707） |
 | SQRT2 | 返回 2 的平方根（约等于 1.414） |
 
-Math 对象还包含几种方法，允许你应用高级数学运算。以下章节提供了这些运算的短语。
+`Math` 对象还包含几种方法，允许你应用高级数学运算。以下章节提供了这些运算的短语。
 
 ### 生成随机数
 
-```
+```javascript
 // Random number between 0 and 1
 Math.random();
 //Random number between 1 and 10
@@ -814,11 +817,11 @@ Math.floor(Math.random() * 10) + 1;
 Math.floor(Math.random() * 20) - 10;
 ```
 
-Math.random() 函数生成一个介于 0 和 1 之间的随机浮点值。要将其转换为整数，请将 Math.random() 的结果乘以你想要的整数最大值，然后使用 Math.floor() 向下取整。
+`Math.random()` 函数生成一个介于 0 和 1 之间的随机浮点值。要将其转换为整数，请将 `Math.random()` 的结果乘以你想要的整数最大值，然后使用 `Math.floor()` 向下取整。
 
 ### 数字取整
 
-```
+```javascript
 var x = 3.4;
 var y = 3.5;
 Math.round(x); //returns 3
@@ -829,11 +832,11 @@ Math.floor(x); //returns 3
 Math.floor(y); //returns 3
 ```
 
-JavaScript Math 对象提供了三种数字取整方法。.round() 方法将数字 #.5 向上舍入到下一个更高的整数，将数字 #.49999... 向下舍入到下一个更低的整数。.ceil() 总是向上舍入到下一个更高的整数。.floor() 总是向下舍入到下一个更低的整数。
+JavaScript `Math` 对象提供了三种数字取整方法。`.round()` 方法将数字 #.5 向上舍入到下一个更高的整数，将数字 #.49999... 向下舍入到下一个更低的整数。`.ceil()` 总是向上舍入到下一个更高的整数。`.floor()` 总是向下舍入到下一个更低的整数。
 
 ### 获取集合中的最小数字
 
-```
+```javascript
 Math.min(8,"0x5",12,"44",8,23,77); //returns 5
 var arr1 = [4,8,12,3,7,11];
 Math.min.apply( Math, arr1 ); //returns 3
@@ -841,13 +844,11 @@ var arr2 = ["0x5",8,12,"4",8,23,77,"0x1F"];
 Math.min.apply( Math, arr2 ); //returns 4
 ```
 
-Math.min(项, 项, ...) 方法允许你找到一组数字中的最小值。你也可以使用 Math.min.apply(Math, 数组) 将数组对象应用于 .min() 方法。这将返回数组中的最小数字。数组可以包含数字的字符串表示形式，例如 "4" 和 "0x5B"，但不能包含像 "A" 这样的字符字符串。如果数组包含字符字符串，结果将是 NaN。
-
-# 第 2 章 使用 JavaScript 语言
+`Math.min(项, 项, ...)` 方法允许你找到一组数字中的最小值。你也可以使用 `Math.min.apply(Math, 数组)` 将数组对象应用于 `.min()` 方法。这将返回数组中的最小数字。数组可以包含数字的字符串表示形式，例如 `"4"` 和 `"0x5B"`，但不能包含像 `"A"` 这样的字符字符串。如果数组包含字符字符串，结果将是 `NaN`。
 
 ### 获取集合中的最大数字
 
-```
+```javascript
 Math.max(8, "0x5", 12, "44", 8, 23, 77); //returns 77
 var arr1 = [4, 8, 12, 3, 7, 11];
 Math.max.apply(Math, arr1); //returns 12
@@ -855,31 +856,31 @@ var arr2 = ["0x5", 8, 12, "4", 308, 23, 77, "0xFF"];
 Math.max.apply(Math, arr2); //returns 308
 ```
 
-Math.max(项, 项, ...) 方法允许你找到一组数字中的最大值。你也可以使用 Math.max.apply(Math, 数组) 将数组对象应用于 .max() 方法。这将返回数组中的最大数字。数组可以包含数字的字符串表示形式，例如 "26" 和 "0x1F"，但不能包含像 "A" 这样的字符字符串。如果数组包含字符字符串，结果将是 NaN。
+`Math.max(项, 项, ...)` 方法允许你找到一组数字中的最大值。你也可以使用 `Math.max.apply(Math, 数组)` 将数组对象应用于 `.max()` 方法。这将返回数组中的最大数字。数组可以包含数字的字符串表示形式，例如 `"26"` 和 `"0x1F"`，但不能包含像 `"A"` 这样的字符字符串。如果数组包含字符字符串，结果将是 `NaN`。
 
 ### 计算绝对值
 
-```
+```javascript
 Math.abs(-5); //returns 5
 Math.abs(5); //returns 5
 Math.abs("-15"); //returns 15
 Math.abs("0xFF"); //returns 255
 ```
 
-Math.abs(x) 方法返回 x 的绝对值。变量 x 可以是一个数字或一个数字字符串，如 "5"、"-5" 或 "0xFF"。
+`Math.abs(x)` 方法返回 `x` 的绝对值。变量 `x` 可以是一个数字或一个数字字符串，如 `"5"`、`"-5"` 或 `"0xFF"`。
 
 ### 应用三角函数
 
-```
+```javascript
 Math.log(2); //returns 0.693
 Math.sin(0); //returns 0
 Math.cos(0); //returns 1
 Math.tan(1); //returns 1.5574
 ```
 
-Math 对象提供了几种三角函数方法，用于对数字应用三角函数。表 2.3 列出了用于应用诸如自然对数、正弦、余弦和正切运算的方法。
+`Math` 对象提供了几种三角函数方法，用于对数字应用三角函数。表 2.3 列出了用于应用诸如自然对数、正弦、余弦和正切运算的方法。
 
-表 2.3 Math 对象三角函数方法
+**表 2.3 Math 对象三角函数方法**
 
 | 方法 | 描述 |
 | :--- | :--- |
@@ -894,15 +895,15 @@ Math 对象提供了几种三角函数方法，用于对数字应用三角函数
 
 ### 应用幂函数
 
-```
+```javascript
 Math.exp(4); //returns 54.59815
 Math.pow(2,16); //returns 65536
 Math.sqrt(25); //returns 5
 ```
 
-Math 对象提供了几种幂函数，允许你对数字应用指数和开方运算。表 2.4 列出了用于应用欧拉指数、幂和平方根函数的方法。你可以以数字或数字字符串的形式传入值。
+`Math` 对象提供了几种幂函数，允许你对数字应用指数和开方运算。表 2.4 列出了用于应用欧拉指数、幂和平方根函数的方法。你可以以数字或数字字符串的形式传入值。
 
-表 2.4 Math 对象幂函数方法
+**表 2.4 Math 对象幂函数方法**
 
 | 方法 | 描述 |
 | :--- | :--- |
@@ -912,11 +913,11 @@ Math 对象提供了几种幂函数，允许你对数字应用指数和开方运
 
 ### 处理日期
 
-一个有用的内置 JavaScript 对象是 Date 对象。Date 对象允许你通过浏览器访问系统时钟来获取用户的时间。这使你可以使用 JavaScript 获取用户的本地时间。Date 对象还提供用于操作时间值的方法，以确定时间差和生成时间和日期字符串。
+一个有用的内置 JavaScript 对象是 `Date` 对象。`Date` 对象允许你通过浏览器访问系统时钟来获取用户的时间。这使你可以使用 JavaScript 获取用户的本地时间。`Date` 对象还提供用于操作时间值的方法，以确定时间差和生成时间和日期字符串。
 
 ### 创建日期对象
 
-```
+```javascript
 var d = new Date();
 //Wed Jan 30 2013 09:37:42 GMT-0700
 var d = new Date(1209516513246);
@@ -931,18 +932,16 @@ var d = new Date(2014, 8, 6, 16, 5, 10, 3);
 //Sat Sep 06 2014 16:05:10 GMT-0600
 ```
 
-Date 对象表示一个具有毫秒级精度的特定日期和时间。要创建一个 Date 对象，你只需要使用以下方法之一调用 new Date()。dateString 可以是几种不同格式中的一种，例如 "7-17-2013"、"11/22/2014
+`Date` 对象表示一个具有毫秒级精度的特定日期和时间。要创建一个 `Date` 对象，你只需要使用以下方法之一调用 `new Date()`。`dateString` 可以是几种不同格式中的一种，例如 `"7-17-2013"`、`"11/22/2014 10:12:05"`、`"Dec 12 2012 12:12:12"` 和 `"2014-01-05T08:03:22.356Z"`。
 
-10:12:05"、"Dec 12 2012 12:12:12" 和 "2014-01-05T08:03:22.356Z"。
-
-- new Date();
-- new Date(milliseconds);
-- new Date(dateString);
-- new Date(year, month, day, hours, minutes, seconds, milliseconds);
+- `new Date();`
+- `new Date(milliseconds);`
+- `new Date(dateString);`
+- `new Date(year, month, day, hours, minutes, seconds, milliseconds);`
 
 ### 获取当前日期和时间
 
-```
+```javascript
 new Date();
 ```
 
@@ -950,7 +949,7 @@ new Date();
 
 ### 创建日期字符串
 
-```
+```javascript
 var d = new Date();
 d.toDateString();
 // 返回 Sat May 17 2014
@@ -965,31 +964,29 @@ d.toString();
 (Mountain Daylight Time)
 ```
 
-JavaScript 有几种方法可以生成日期字符串。第一步是获取一个 Date 对象。Date 对象提供了以下方法，它们返回格式不同的日期字符串：
+JavaScript 有几种方法可以生成日期字符串。第一步是获取一个 `Date` 对象。`Date` 对象提供了以下方法，它们返回格式不同的日期字符串：
 
-## 第2章 使用JavaScript语言
-
-- .toDateString()—返回一个缩写的日期字符串。
-- .toLocaleDateString()—返回一个本地化的日期字符串。
-- .toISOString()—返回符合 ISO 标准的日期字符串。
-- .toUTCString()—返回一个转换为 UTC 时间的日期字符串。
-- .toString()—返回包含时区等信息的完整日期字符串。
+- `.toDateString()`——返回一个缩写的日期字符串。
+- `.toLocaleDateString()`——返回一个本地化的日期字符串。
+- `.toISOString()`——返回符合 ISO 标准的日期字符串。
+- `.toUTCString()`——返回一个转换为 UTC 时间的日期字符串。
+- `.toString()`——返回包含时区等信息的完整日期字符串。
 
 ### 创建时间字符串
 
-```
+```javascript
 var d = new Date();
 d.toLocaleTimeString()
-1:55:13 PM
+// 1:55:13 PM
 d.toTimeString()
-13:55:13 GMT-0600 (Mountain Daylight Time)
+// 13:55:13 GMT-0600 (Mountain Daylight Time)
 ```
 
-Date 对象还允许你只获取时间字符串。Date 对象上附有两个返回时间字符串的方法。`.toTimeString()` 方法返回一个包含时间、时区甚至夏令时信息的时间字符串。`.toLocaleTimeString()` 返回一个更基本的时间字符串，包含本地格式的时间。
+`Date` 对象还允许你只获取时间字符串。`Date` 对象上附有两个返回时间字符串的方法。`.toTimeString()` 方法返回一个包含时间、时区甚至夏令时信息的时间字符串。`.toLocaleTimeString()` 返回一个更基本的时间字符串，包含本地格式的时间。
 
 ### 获取时间差
 
-```
+```javascript
 var atime = new Date("2014-01-05T08:03:22.356Z");
 var btime = new Date("2014-01-05T09:08:57.758Z");
 var delta = Math.abs(btime - atime); //3935402ms
@@ -999,7 +996,7 @@ var minutes = Math.floor(totalSec / 60) % 60; //5min
 var seconds = totalSec % 3600 % 60; //35sec
 ```
 
-Date 对象本质上表示自 1970年1月1日 以来的毫秒数。因此，你可以通过将两个 Date 对象相减来获取它们之间的时间差。结果是一个数字，表示两个日期之间的毫秒差。
+`Date` 对象本质上表示自 1970年1月1日 以来的毫秒数。因此，你可以通过将两个 `Date` 对象相减来获取它们之间的时间差。结果是一个数字，表示两个日期之间的毫秒差。
 
 > **顺便提一下**
 
@@ -1007,7 +1004,7 @@ Date 对象本质上表示自 1970年1月1日 以来的毫秒数。因此，你�
 
 ### 获取特定的日期组件
 
-```
+```javascript
 var d = new Date("Sat Jan 04 2014 15:03:22 GMT-0700");
 d.getDate(); //返回 4
 d.getDay(); //返回 6
@@ -1019,9 +1016,9 @@ d.getTime(); //返回 1388873002000
 d.getTimezoneOffset(); //返回 420
 ```
 
-Date 对象提供了多种方法来获取日期中特定组件的值，例如年份、月份中的日期、星期几等。表 2.5 列出了从 Date 对象获取特定日期组件的方法。
+`Date` 对象提供了多种方法来获取日期中特定组件的值，例如年份、月份中的日期、星期几等。表 2.5 列出了从 `Date` 对象获取特定日期组件的方法。
 
-表 2.5 获取特定日期组件的 Date 对象方法
+**表 2.5 获取特定日期组件的 Date 对象方法**
 
 | 方法 | 描述 |
 |---|---|
@@ -1038,9 +1035,9 @@ Date 对象提供了多种方法来获取日期中特定组件的值，例如年
 
 **你知道吗？**
 
-Date 对象还有方法可以通过在 `get` 后放置 `UTC` 来获取 UTC 组件，例如 `getUTCHour()` 和 `getUTCSeconds()`。
+`Date` 对象还有方法可以通过在 `get` 后放置 `UTC` 来获取 UTC 组件，例如 `getUTCHour()` 和 `getUTCSeconds()`。
 
-```
+```html
 <script>
     var atime = new Date("2014-01-04T08:45:22.356Z");
     var btime = new Date("2014-01-04T12:12:57.758Z");
@@ -1057,23 +1054,25 @@ Date 对象还有方法可以通过在 `get` 后放置 `UTC` 来获取 UTC 组�
 </script>
 ```
 
-ch0206.html
+**ch0206.html**
 
+```
 Total Milliseconds: 12455402
 Total Seconds: 12455
 Delta: 3hrs 27mins 35s
+```
 
-ch0206.html 的输出结果
+*ch0206.html 的输出结果*
 
-## 3 与浏览器交互
+## 第 3 章 与浏览器交互
 
 动态网页通常需要你访问，有时甚至需要操作 HTML 元素之外的内容。JavaScript 提供了丰富的对象和函数，允许你访问有关屏幕、浏览器窗口、历史记录等信息。
 
-本章中的短语描述了如何使用 screen、window、location 和 history 对象，这些对象为 JavaScript 提供了访问网页之外信息的接口。其他短语描述了如何利用这些对象来实现 cookie、弹出窗口和计时器。
+本章中的短语描述了如何使用 `screen`、`window`、`location` 和 `history` 对象，这些对象为 JavaScript 提供了访问网页之外信息的接口。其他短语描述了如何利用这些对象来实现 cookie、弹出窗口和计时器。
 
 ### 写入JavaScript控制台
 
-```
+```javascript
 console.log("This is Debug"); //"This is Debug" 显示在控制台中
 var x=5;
 console.log("x="+x); //"x=5" 显示在控制台中
@@ -1085,7 +1084,7 @@ JavaScript 控制台是在调试 jQuery 和 JavaScript 代码中的问题时的�
 
 ### 重新加载网页
 
-```
+```javascript
 location.reload()
 ```
 
@@ -1093,7 +1092,7 @@ JavaScript 一个有用的功能是能够强制浏览器重新加载当前网页
 
 ### 重定向网页
 
-```
+```javascript
 location.href="newpage.html";
 location.href="http://jqueryin24/index.html";
 ```
@@ -1102,7 +1101,7 @@ JavaScript 另一个极其有用的功能是能够将浏览器从当前 URL 重�
 
 ### 获取屏幕尺寸
 
-```
+```javascript
 screen.availHeight; // 返回屏幕高度，单位为像素
 screen.availWidth; // 返回屏幕宽度，单位为像素
 ```
@@ -1111,85 +1110,83 @@ screen.availWidth; // 返回屏幕宽度，单位为像素
 
 ### 获取当前位置详情
 
-JavaScript 的 location 对象提供了一种简单的方法来获取用户当前正在查看的 URL 的各种信息。由于 JavaScript 和 jQuery 代码经常在多个页面中使用，location 对象是获取浏览器当前正在查看哪个 URL 信息的方式。以下部分提供了一些短语，提供有关浏览器当前位置的信息。
+JavaScript 的 `location` 对象提供了一种简单的方法来获取用户当前正在查看的 URL 的各种信息。由于 JavaScript 和 jQuery 代码经常在多个页面中使用，`location` 对象是获取浏览器当前正在查看哪个 URL 信息的方式。以下部分提供了一些短语，提供有关浏览器当前位置的信息。
 
 ### 查找当前的哈希值
 
-```
+```javascript
 location.hash
 ```
 
 `location.hash` 值返回浏览器正在使用的当前哈希值（如果有的话）。当你显示一个具有多个哈希锚点的网页时，这很有用。哈希提供了用户实际点击的页面位置的上下文。
 
-
-
 ### 获取主机名
 
-```
+```javascript
 location.hostname
 ```
 
-`location.hostname`的值返回将页面发送给用户的服务器域名。这只是协议之后、端口号或路径之前的部分。这允许你确定应将AJAX请求发送回哪个服务器。通常，多个服务器可能处理该网站，但你可能只想与最初提供网页的服务器进行交互。
+`location.hostname` 的值返回将页面发送给用户的服务器域名。这只是协议之后、端口号或路径之前的部分。这允许你确定应将 AJAX 请求发送回哪个服务器。通常，多个服务器可能处理该网站，但你可能只想与最初提供网页的服务器进行交互。
 
 ### 查看文件路径
 
-```
+```javascript
 location.pathname
 ```
 
-`location.pathname`返回页面在服务器上加载的路径。路径名还提供了用户正在查看哪个页面的上下文。
+`location.pathname` 返回页面在服务器上加载的路径。路径名还提供了用户正在查看哪个页面的上下文。
 
 ### 获取查询字符串
 
-```
+```javascript
 location.search
 ```
 
-`location.search`的值返回传递给服务器以加载页面的查询字符串。通常，你认为查询字符串是服务器端脚本工具。然而，对于操作从服务器返回的数据并通过AJAX从服务器请求附加信息的JavaScript代码来说，它同样有价值。
+`location.search` 的值返回传递给服务器以加载页面的查询字符串。通常，你认为查询字符串是服务器端脚本工具。然而，对于操作从服务器返回的数据并通过 AJAX 从服务器请求附加信息的 JavaScript 代码来说，它同样有价值。
 
 ### 确定页面是否通过安全协议查看
 
-```
+```javascript
 location.protocol
 ```
 
-确定页面是否从服务器上的安全位置查看的最简单方法是查看`location.protocol`的值。此值在普通请求中为`http`，在安全请求中为`https`。
+确定页面是否从服务器上的安全位置查看的最简单方法是查看 `location.protocol` 的值。此值在普通请求中为 `http`，在安全请求中为 `https`。
 
 ### 访问浏览器
 
-JavaScript中另一个重要的内置对象是`window`对象。`window`对象代表浏览器，并为你提供有关浏览器位置、大小等的丰富信息。它还允许你打开新的子窗口、关闭窗口，甚至调整窗口大小。
+JavaScript中另一个重要的内置对象是 `window` 对象。`window` 对象代表浏览器，并为你提供有关浏览器位置、大小等的丰富信息。它还允许你打开新的子窗口、关闭窗口，甚至调整窗口大小。
 
 ### 获取最大可查看网页大小
 
-```
+```javascript
 window.innerHeight; // 返回浏览器视口高度（像素）
 window.innerWidth; // 返回浏览器视口宽度（像素）
 ```
 
-`window`对象提供浏览器窗口的`innerHeight`和`innerWidth`。这些值表示网页将在其中显示的实际浏览器窗口像素。如果你需要根据实际显示的区域调整网页上元素的大小和位置，这是一个关键信息。
+`window` 对象提供浏览器窗口的 `innerHeight` 和 `innerWidth`。这些值表示网页将在其中显示的实际浏览器窗口像素。如果你需要根据实际显示的区域调整网页上元素的大小和位置，这是一个关键信息。
 
 ### 设置浏览器状态栏中显示的文本
 
-```
+```javascript
 window.status = "正在从服务器请求数据...";
 ```
 
-浏览器底部有一个状态栏。你可以设置在那里显示的文本，为用户提供不属于页面的附加信息，例如服务器名称、请求的当前状态等。要设置浏览器状态栏中显示的文本，请将`window.status`值设置为要显示的字符串。
+浏览器底部有一个状态栏。你可以设置在那里显示的文本，为用户提供不属于页面的附加信息，例如服务器名称、请求的当前状态等。要设置浏览器状态栏中显示的文本，请将 `window.status` 值设置为要显示的字符串。
 
 ### 获取网页中的当前位置
 
-```
+```javascript
 window.pageXOffset;
 // 页面向右滚动的像素数
 window.pageYOffset;
 // 返回页面向下滚动的像素数
 ```
 
-在编写动态代码时，通常需要确定当前正在查看的网页中的确切位置。当用户向下或向右滚动时，页面相对于浏览器视口框架的位置会发生变化。要确定页面向右滚动的像素数，请使用`window.pageXOffset`属性。要确定页面向下滚动的像素数，请使用`window.pageYOffset`属性。
+在编写动态代码时，通常需要确定当前正在查看的网页中的确切位置。当用户向下或向右滚动时，页面相对于浏览器视口框架的位置会发生变化。要确定页面向右滚动的像素数，请使用 `window.pageXOffset` 属性。要确定页面向下滚动的像素数，请使用 `window.pageYOffset` 属性。
 
 ### 打开和关闭窗口
 
-```
+```javascript
 //打开一个新的空白窗口，写入内容，然后关闭它。
 var newWindow = window.open();
 newWindow.document.write("来自新窗口的问候");
@@ -1198,15 +1195,15 @@ newWindow.close();
 window.open("http://google.com");
 ```
 
-`window`对象还提供了一组方法，允许你从JavaScript代码创建和管理额外的子窗口。
+`window` 对象还提供了一组方法，允许你从 JavaScript 代码创建和管理额外的子窗口。
 
-例如，`window.open(URL)`方法打开一个新窗口并返回一个新的窗口对象。如果你没有指定URL，浏览器会打开一个空白页面，可以使用`window.document`对象向其中写入内容。
+例如，`window.open(URL)` 方法打开一个新窗口并返回一个新的窗口对象。如果你没有指定 URL，浏览器会打开一个空白页面，可以使用 `window.document` 对象向其中写入内容。
 
-你可以在你创建的窗口对象上调用`.close()`，它们将会被关闭。
+你可以在你创建的窗口对象上调用 `.close()`，它们将会被关闭。
 
 ### 使用浏览器历史记录前进和后退页面
 
-```
+```javascript
 history.forward(); //前进1页
 history.back(); //后退1页
 history.go(-2); //后退2页
@@ -1214,27 +1211,29 @@ history.go(-2); //后退2页
 
 浏览器将已导航到的页面保存在历史记录中。JavaScript允许你访问此历史记录以前进或后退页面。这允许你为网页提供前进和后退控件。你也可以使用此功能提供面包屑导航，显示指向历史记录中多个页面的链接。
 
-要前进一页，使用`history.forward()`。要后退一页，使用`history.back()`。要前进或后退多页，使用`history.go(n)`，其中`n`是页数。负数表示后退那么多页，正数表示前进那么多页。
+要前进一页，使用 `history.forward()`。要后退一页，使用 `history.back()`。要前进或后退多页，使用 `history.go(n)`，其中 `n` 是页数。负数表示后退那么多页，正数表示前进那么多页。
 
 ### 创建弹出窗口
 
-```
+```javascript
 var result = confirm("你输入了 " + response + "，确定吗？");
 if(result){ alert("你点击了确定。") }
 else {alert("你点击了取消。")}
 ```
 
-`Window`对象提供了几种不同的方法，允许你启动可以交互的弹出窗口，用于警报、提示和通知。弹出窗口会显示，用户需要与弹出窗口交互才能继续访问网页。
+`Window` 对象提供了几种不同的方法，允许你启动可以交互的弹出窗口，用于警报、提示和通知。弹出窗口会显示，用户需要与弹出窗口交互才能继续访问网页。
 
 可以创建三种类型的弹出框：
 
 - **alert(msg)** — 启动一个弹出窗口，显示警报消息，并提供一个关闭弹出窗口的按钮。
-- **confirm(msg)** — 启动一个弹出窗口，显示确认信息，并提供“确定”和“取消”按钮，两个按钮都会关闭弹出窗口。如果单击“确定”按钮，`confirm()`的返回值为`true`；否则为`false`。
-- **prompt(msg)** — 启动一个弹出窗口，显示消息、用于输入的文本框以及“确定”和“取消”按钮，两个按钮都会关闭弹出窗口。如果单击“确定”按钮，`prompt()`的返回值是输入到文本框中的文本；否则为`false`。
+
+- **confirm(msg)** — 启动一个弹出窗口，显示确认信息，并提供“确定”和“取消”按钮，两个按钮都会关闭弹出窗口。如果单击“确定”按钮，`confirm()` 的返回值为 `true`；否则为 `false`。
+
+- **prompt(msg)** — 启动一个弹出窗口，显示消息、用于输入的文本框以及“确定”和“取消”按钮，两个按钮都会关闭弹出窗口。如果单击“确定”按钮，`prompt()` 的返回值是输入到文本框中的文本；否则为 `false`。
 
 下面的代码演示了这些弹出框，如图3.1所示。
 
-```
+```html
 01 <html>
 02 <head>
 03   <title>Python 速查手册</title>
@@ -1255,17 +1254,17 @@ else {alert("你点击了取消。")}
 18 </html>
 ```
 
-ch0301.html
+**ch0301.html**
 
 ### 操作Cookie
 
 JavaScript中的一项常见任务是在浏览器中获取和设置Cookie。Cookie允许你以持久化的方式在浏览器中存储简单的键值对信息。服务器端脚本和JavaScript可以访问这些Cookie以确定这些值。
 
-你可以使用`document.cookie`对象访问Cookie信息。此对象包含所有Cookie，格式为`name=value; name=value; ...`。
+你可以使用 `document.cookie` 对象访问Cookie信息。此对象包含所有Cookie，格式为 `name=value; name=value; ...`。
 
 ### 在浏览器中设置Cookie值
 
-```
+```javascript
 function setCookie(name, value, days) {
     var date = new Date();
     date.setTime(date.getTime()+(days*24*60*60*1000));
@@ -1275,11 +1274,11 @@ function setCookie(name, value, days) {
 }
 ```
 
-要为你的网站添加新的Cookie，请设置`document.cookie = "name=value; expireDate; path;"`。过期日期需要是使用`.toGMTString()`设置的日期，路径是Cookie适用的网站路径。
+要为你的网站添加新的Cookie，请设置 `document.cookie = "name=value; expireDate; path;"`。过期日期需要是使用 `.toGMTString()` 设置的日期，路径是Cookie适用的网站路径。
 
 ### 从浏览器获取Cookie值
 
-```
+```javascript
 function getCookie(name) {
     var cArr = document.cookie.split(';');
     for(var i=0;i < cArr.length;i++) {
@@ -1290,7 +1289,7 @@ function getCookie(name) {
 }
 ```
 
-要获取Cookie的值，请使用`;`字符分割`document.cookie`值，然后进行迭代。
+要获取Cookie的值，请使用 `;` 字符分割 `document.cookie` 值，然后进行迭代。
 
 遍历生成的数组，直到找到你正在查找的名称。
 
@@ -1335,11 +1334,11 @@ function getCookie(name) {
 34 </html>
 ```
 
-ch0302.html
+**ch0302.html**
 
 ![图 3.2 使用 JavaScript 添加 Cookie 输出。](img/476d4a1835716860dfdb11288891ad23_69_0.png)
 
-图 3.2  使用 JavaScript 添加 Cookie 输出。
+图 3.2 使用 JavaScript 添加 Cookie 输出。
 
 ### 添加计时器
 
@@ -1393,11 +1392,15 @@ statusTimerId = setInterval(checkStatus, 60000);
 
 ## 访问 HTML 元素
 
+
+
+# 动态 Web 开发：访问 HTML 元素与事件处理
+
 动态 Web 开发最重要的部分是快速高效地访问 DOM 元素的能力。JavaScript 本身提供了访问 DOM 元素的功能。这个 JavaScript 特性有时很有用，但正是 jQuery 真正脱颖而出的领域。有时您将需要使用 JavaScript 方法来访问 DOM 元素，但如果可能，我建议使用 jQuery。
 
 本章中的段落涵盖了使用 JavaScript 和 jQuery 选择器方法来查找 DOM 元素。
 
-### 在 JavaScript 中查找 HTML 元素
+## 在 JavaScript 中查找 HTML 元素
 
 有三种使用 JavaScript 查找 HTML 元素的方法。您可以按 ID 属性名、类名或标签类型进行搜索。以下代码展示了定义一个 HTML `<div>` 元素的示例，以便每种方法都可以使用它：
 
@@ -1407,7 +1410,7 @@ statusTimerId = setInterval(checkStatus, 60000);
 
 通过添加 ID 和 class 属性，您可以使用这些值 "myDiv" 和 "myClass" 来搜索 `<div>` 元素。
 
-##### 通过 ID 查找 DOM 对象
+### 通过 ID 查找 DOM 对象
 
 ```javascript
 var containerObj = document.getElementById("myDiv");
@@ -1415,7 +1418,7 @@ var containerObj = document.getElementById("myDiv");
 
 查找 HTML 元素的最简单方法是使用 `document.getElementById(id)` 函数配合 `id` 属性的值。`document.getElementById(id)` 函数在 DOM 中搜索具有匹配 `id` 属性的对象。如果找到该对象，函数返回该 DOM 对象。
 
-##### 通过类名查找 DOM 对象
+### 通过类名查找 DOM 对象
 
 ```javascript
 var objs = document.getElementsByClassName("myClass");
@@ -1427,7 +1430,7 @@ for (var i=0; i<objs.length; i++){
 
 您也可以使用 `document.getElementsByClassName(class)` 按类属性搜索 HTML 元素。此函数返回具有匹配类属性的 DOM 对象数组。然后您可以使用 JavaScript 循环遍历该列表，并对每个 DOM 元素应用更改。
 
-##### 通过标签名查找 DOM 对象
+### 通过标签名查找 DOM 对象
 
 ```javascript
 var objs = document.getElementsByTagName("div");
@@ -1451,60 +1454,44 @@ jQuery 选择器语法很简单。加载 jQuery 库后，只需使用 `$(selecto
 $("#myElement")
 ```
 
-**注意！**
-
-jQuery 选择器语法中使用了多个元字符。如果您想将任何元字符（如 !"#$%&'()*+,.:;<=>?@[\]^{|}~\)）作为类/ID/名称的一部分使用，您需要用 \\（两个反斜杠）转义该字符。例如，如果您有一个 id="my.element" 的元素，您将使用选择器 `$("#my\\.element")`。
+> **注意！**
+>
+> jQuery 选择器语法中使用了多个元字符。如果您想将任何元字符（如 `!"#$%&'()*+,.:;<=>?@[\]^{|}~`）作为类/ID/名称的一部分使用，您需要用 `\\`（两个反斜杠）转义该字符。例如，如果您有一个 `id="my.element"` 的元素，您将使用选择器 `$("#my\\.element")`。
 
 ### 应用基本的 jQuery 选择器
 
 ```javascript
 $("*"); //selects all elements
-$(".myClass"); //selects elements with
-class="myClass"
+$(".myClass"); //selects elements with class="myClass"
 $("#myDiv"); //selects the element with id="myDiv"
 $("div"); //selects <div> elements
-$("div, span, p"); //selects <div>, <span>, and <p>
-elements
-$("div.myClass"); //selects <div> elements with
-class="myClass"
+$("div, span, p"); //selects <div>, <span>, and <p> elements
+$("div.myClass"); //selects <div> elements with class="myClass"
 ```
 
 最常用的选择器是基本选择器。基本选择器专注于 HTML 元素的 ID 属性、类属性和标签名。表 4.1 列举了一些示例，向您展示如何定义一些基本选择器。
 
-表 4.1 使用基本 jQuery 选择器的示例
-
-| 语法/示例 | 描述 |
-| --- | --- |
-| $("*") | 选择所有 HTML 元素。 |
-| $(".class") | 基于类属性选择元素。 |
-| $(".container") | 示例：选择所有 class="container" 的 HTML 元素。. 字符前缀表示类名。 |
-
-
-
-## 使用 jQuery 选择器查找 HTML 元素
-
-63
+#### 表 4.1 使用基本 jQuery 选择器的示例
 
 | 语法/示例 | 描述 |
 | :--- | :--- |
-| `$("#id")`<br>`$("#menu")` | 根据 id 属性选择一个元素。<br><br>示例：选择 `id="menu"` 的 HTML 元素。`#` 字符前缀表示一个 id 值。 |
-| `$("element")`<br>`$("div")` | 根据标签类型选择元素。<br><br>示例：选择所有 `<div>` 元素。 |
-| `$("element,element...")`<br>`$("div, span, p")` | 根据标签选择多种类型的元素。<br><br>示例：选择所有 `<div>`、`<span>` 和 `<p>` 元素。你也可以指定多个由逗号分隔的元素。 |
-| `$("element.class")`<br>`$("ul.bigLists")` | 选择特定标签和类的元素。<br><br>示例：通过组合元素名称和类名，选择所有 `class="bigList"` 的 `<ul>` 元素。注意，元素和类名之间没有空格。 |
+| `$("*")` | 选择所有 HTML 元素。 |
+| `$(".class")` | 基于类属性选择元素。 |
+| `$(".container")` | 示例：选择所有 `class="container"` 的 HTML 元素。`.` 字符前缀表示类名。 |
+| `$("#id")`<br>`$("#menu")` | 根据 id 属性选择一个元素。<br>示例：选择 `id="menu"` 的 HTML 元素。`#` 字符前缀表示一个 id 值。 |
+| `$("element")`<br>`$("div")` | 根据标签类型选择元素。<br>示例：选择所有 `<div>` 元素。 |
+| `$("element,element...")`<br>`$("div, span, p")` | 根据标签选择多种类型的元素。<br>示例：选择所有 `<div>`、`<span>` 和 `<p>` 元素。你也可以指定多个由逗号分隔的元素。 |
+| `$("element.class")`<br>`$("ul.bigLists")` | 选择特定标签和类的元素。<br>示例：通过组合元素名称和类名，选择所有 `class="bigList"` 的 `<ul>` 元素。注意，元素和类名之间没有空格。 |
 
 ### 基于 HTML 属性选择元素
 
 ```javascript
 $("input[value=0]"); //选择 value="0" 的 <input>
-$("p[class*=my"]);//选择类名中包含 "my" 的元素
-$("img[src^='icons\/'']");
-//选择 src 以 "icons/" 开头的 <img> 元素
-$("input[value!='default']");
-//选择值不等于 "default" 的 <input> 元素
+$("p[class*=my]"); //选择类名中包含 "my" 的元素
+$("img[src^='icons\/']"); //选择 src 以 "icons/" 开头的 <img> 元素
+$("input[value!='default']"); //选择值不等于 "default" 的 <input> 元素
 $("p[id]"); //选择设置了 id 的 <p> 元素
-$("p[id][class$=Menu]");
-//选择设置了 id 且类名以 "Menu" 结尾的
-//<p> 元素
+$("p[id][class$=Menu]"); //选择设置了 id 且类名以 "Menu" 结尾的 <p> 元素
 ```
 
 使用 jQuery 选择器的另一种方式是通过属性值选择 HTML 元素。这可以是默认属性，也可以是你添加到 HTML 元素上的属性。在选择器语法中，属性值用 `[]` 括号括起来表示。表 4.2 展示了一些你可以应用属性选择器的方式。
@@ -1513,29 +1500,18 @@ $("p[id][class$=Menu]");
 
 | 语法/示例 | 描述 |
 | :--- | :--- |
-| `$([attribute=value]")` | 选择属性 attr=value 的元素。 |
+| `$("[attribute=value]")` | 选择属性 attr=value 的元素。 |
 | `$("input[value=0]")` | 示例：选择所有 *value* 属性等于 0 的 `<input>` 元素。 |
-
-## 使用 jQuery 选择器查找 HTML 元素
-
-65
-
-| 语法/示例 | 描述 |
-|---|---|
-| `$([attr*=value])` | 属性 attr 包含值 value。 |
+| `$("[attr*=value]")` | 属性 attr 包含值 value。 |
 | `$("p[id][class$=Menu]")` | 示例：选择所有具有 id 属性且类名以 "Menu" 结尾的 `<p>` 元素。例如，在下面的 HTML 元素中，只有前两个会被选中：<br>`<p id="topMenu" class="topMenu">...</p>`<br>`<p id="topMenu" class="leftMenu">...</p>`<br>`<p id="contentMenu" class="contentMenuItem">...</p>`<br>`<p class="contentMenu">...</p>` |
 
 ### 基于内容选择元素
 
 ```javascript
-$("p:contains('free')");
-//选择包含 "free" 的 <p> 元素
-$("div:has(span)");
-//选择包含 <span> 元素的 <div> 元素
-$("div:empty");
-//选择没有内容或子元素的 <div> 元素
-$("div:parent");
-//选择至少有一些内容的 <div> 元素
+$("p:contains('free')"); //选择包含 "free" 的 <p> 元素
+$("div:has(span)"); //选择包含 <span> 元素的 <div> 元素
+$("div:empty"); //选择没有内容或子元素的 <div> 元素
+$("div:parent"); //选择至少有一些内容的 <div> 元素
 ```
 
 另一组有用的 jQuery 选择器是内容过滤选择器。这些选择器允许你根据 HTML 元素内部的内容来选择元素。表 4.3 展示了使用内容选择器的示例。
@@ -1544,25 +1520,18 @@ $("div:parent");
 
 | 语法/示例 | 描述 |
 | :--- | :--- |
-| `$(":contains(value)")`<br>`$("div:contains ('Open Source')")` | 选择内容中包含 value 文本的元素。<br>示例：选择所有包含文本 "Open Source" 的 `<div>` 元素。 |
+| `$(":contains(value)")`<br>`$("div:contains('Open Source')")` | 选择内容中包含 value 文本的元素。<br>示例：选择所有包含文本 "Open Source" 的 `<div>` 元素。 |
 | `$(":has(element)")`<br>`$("div:has(span)")` | 选择包含特定子元素的元素。<br>示例：选择所有包含 `<span>` 元素的 `<div>` 元素。例如，在以下元素中，只有第一个会被选中：<br>`<div><span>Span Text</span></div>`<br>`<div>No Span Text</div>` |
 | `$(":empty")`<br>`$("div:empty")` | 选择没有内容的元素。<br>示例：选择所有没有内容的 `<div>` 元素。 |
-| `$(":parent")`<br>`$("div:parent")` | :empty 的反向选择，选择至少有一些内容的元素。<br>示例：选择所有至少有一些内容的 `<div>` 元素。 |
+| `$(":parent")`<br>`$("div:parent")` | `:empty` 的反向选择，选择至少有一些内容的元素。<br>示例：选择所有至少有一些内容的 `<div>` 元素。 |
 
 ### 通过层级位置选择元素
 
 ```javascript
-$("div span");
-    //选择具有 <div> 祖先元素的 <span> 元素
-$("div.menu > span");
-    //选择其直接父元素是具有 class="menu" 的 <div> 的
-    //<span> 元素
-$("label + input.textItem");
-    //选择具有 class="textItem" 的 <input> 元素，
-    //且其前面紧邻一个 <label>
-$("#menu ~ div");
-    //选择所有与 id="menu" 的元素
-    //是兄弟关系的 <div> 元素
+$("div span"); //选择具有 <div> 祖先元素的 <span> 元素
+$("div.menu > span"); //选择其直接父元素是具有 class="menu" 的 <div> 的 <span> 元素
+$("label + input.textItem"); //选择具有 class="textItem" 的 <input> 元素，且其前面紧邻一个 <label>
+$("#menu ~ div"); //选择所有与 id="menu" 的元素是兄弟关系的 <div> 元素
 ```
 
 一组重要的 jQuery 选择器是层级选择器。这些选择器允许你基于 DOM 层级来选择 HTML 元素。这使你能够编写更具内容感知性的动态代码，仅通过 DOM 树中的父元素、子元素或周围其他元素来选择元素。表 4.4 展示了一些层级选择器的示例。
@@ -1571,111 +1540,87 @@ $("#menu ~ div");
 
 | 语法/示例 | 描述 |
 | :--- | :--- |
-| `$("ancestor element")`<br>`$("div span")` | 选择具有类型为 ancestor 的祖先元素且匹配 element 的类型为 element 的元素。<br><br>示例：选择所有具有 `<div>` 祖先元素的 `<span>` 元素。`<div>` 元素不需要是直接祖先。例如，以下 `<span>` 元素仍会被选中：<br><br>`<div><p>Some <span>Span Text</span></p></div>` |
-| `$("parent > child")`<br>`$("div.menu > span")` | 选择具有特定父类型的元素。`>` 表示直接的子/父关系。<br><br>示例：选择所有直接父元素是具有 class="menu" 的 `<div>` 的 `<span>` 元素。 |
-| `$("prev + next")`<br>`$("label + input.textItem")` | 选择后面紧跟着特定类型元素的元素。`+` 表示 prev 项必须紧跟着 next 项。<br><br>示例：选择所有后面紧跟着具有 class="textItem" 的 `<input>` 元素的 `<label>` 元素。 |
-
-## 第四章 访问 HTML 元素
-
-表 4.4 续
-
-| 语法/示例 | 描述 |
-| :--- | :--- |
-| `$("prev ~ siblings")`<br>`$("#menu ~ div")` | 选择在 prev 之后、具有相同父元素且匹配 siblings 选择器的元素。`~` 表示兄弟元素。<br><br>示例：选择所有与 id="menu" 的元素是兄弟关系且在 DOM 树中位于 "#menu" 项之后的 `<div>` 元素。注意，位于之前的 `<div>` 元素不会被选中。例如，在以下内容中，只有最后两个元素会被选中：<br><br>`<div>....</div>`<br>`<ul id="menu"> ... </ul>`<br>`<span> ... <span>`<br>`<div> ... </div>`<br>`<div> ... </div>` |
+| `$("ancestor descendant")`<br>`$("div span")` | 选择具有类型为 ancestor 的祖先元素且匹配 element 的类型为 element 的元素。<br>示例：选择所有具有 `<div>` 祖先元素的 `<span>` 元素。`<div>` 元素不需要是直接祖先。例如，以下 `<span>` 元素仍会被选中：<br>`<div><p>Some <span>Span Text</span></p></div>` |
+| `$("parent > child")`<br>`$("div.menu > span")` | 选择具有特定父类型的元素。`>` 表示直接的子/父关系。<br>示例：选择所有直接父元素是具有 class="menu" 的 `<div>` 的 `<span>` 元素。 |
+| `$("prev + next")`<br>`$("label + input.textItem")` | 选择后面紧跟着特定类型元素的元素。`+` 表示 prev 项必须紧跟着 next 项。<br>示例：选择所有后面紧跟着具有 class="textItem" 的 `<input>` 元素的 `<label>` 元素。 |
+| `$("prev ~ siblings")`<br>`$("#menu ~ div")` | 选择在 prev 之后、具有相同父元素且匹配 siblings 选择器的元素。`~` 表示兄弟元素。<br>示例：选择所有与 id="menu" 的元素是兄弟关系且在 DOM 树中位于 "#menu" 项之后的 `<div>` 元素。注意，位于之前的 `<div>` 元素不会被选中。例如，在以下内容中，只有最后两个元素会被选中：<br>`<div>....</div>`<br>`<ul id="menu"> ... </ul>`<br>`<span> ... <span>`<br>`<div> ... </div>`<br>`<div> ... </div>` |
 
 > **顺便一提**
-
-在设计 jQuery 选择器时，最好尽可能具体。例如，如果你想选择所有 class="menu" 的 span 元素，并且这些元素只位于 id="menuDiv" 的 `<div>` 元素下，那么 `$("div#menuDiv .menu")` 会比仅仅 `$(".menu")` 高效得多，因为前者会在检查 menu 类属性之前，将搜索范围限制在 `<div>` 元素内。
+>
+> 在设计 jQuery 选择器时，最好尽可能具体。例如，如果你想选择所有 class="menu" 的 span 元素，并且这些元素只位于 id="menuDiv" 的 `<div>` 元素下，那么 `$("div#menuDiv .menu")` 会比仅仅 `$(".menu")` 高效得多，因为前者会在检查 menu 类属性之前，将搜索范围限制在 `<div>` 元素内。
 
 ### 通过表单状态选择元素
 
 ```javascript
-$("input:checked");
-//选择被选中的 <input> 元素
-$("option:selected");
-//选择被选中的 <option> 元素
-$("#myForm :focus");
-//选择 #myForm <form> 中
-//当前获得焦点的元素
-$("input:disabled");
-//选择当前被禁用的
-//<input> 元素
+$("input:checked"); //选择被选中的 <input> 元素
+$("option:selected"); //选择被选中的 <option> 元素
+$("#myForm :focus"); //选择 #myForm <form> 中当前获得焦点的元素
+$("input:disabled"); //选择当前被禁用的 <input> 元素
 ```
 
 在处理动态 HTML 表单时，一组极其有用的选择器是表单 jQuery 选择器。这些选择器允许你基于表单元素的状态来选择表单中的元素。表 4.5 展示了一些表单选择器的示例。
 
-#### 表 4.5 使用属性 jQuery 选择器示例
+#### 表 4.5 使用表单 jQuery 选择器示例
 
 | 语法/示例 | 描述 |
 | :--- | :--- |
-| `$(":checked")`<br>`$("input:checked")` | 选择 checked 属性为 true 的元素。<br><br>示例：选择所有当前处于选中状态的 `<input>` 元素。 |
-| `$(":selected")`<br>`$("option:selected")` | 选择 selected 属性为 true 的元素。<br><br>示例：选择所有当前被选中的 `<option>` 元素。 |
-| `$(":focus")`<br>`$(":focus")` | 选择表单中获得焦点的元素。<br><br>示例：选择所有当前获得焦点的 HTML 元素。 |
+| `$(":checked")`<br>`$("input:checked")` | 选择 checked 属性为 true 的元素。<br>示例：选择所有当前处于选中状态的 `<input>` 元素。 |
+| `$(":selected")`<br>`$("option:selected")` | 选择 selected 属性为 true 的元素。<br>示例：选择所有当前被选中的 `<option>` 元素。 |
+| `$(":focus")`<br>`$(":focus")` | 选择表单中获得焦点的元素。<br>示例：选择所有当前获得焦点的 HTML 元素。 |
+| `$(":enabled")`<br>`$("input:enabled")` | 选择启用的元素。<br>示例：选择所有处于启用状态的 `<input>` 元素。 |
+| `$(":disabled")`<br>`$("input:disabled")` | 选择禁用的元素。<br>示例：选择所有处于禁用状态的 `<input>` 元素。 |
 
+### 基于可见性选择元素
 
-
-## 表 4.5 **续**
-
-| 语法/示例 | 描述 |
-|---|---|
-| $(":enabled") | 选择启用的元素。 |
-| $("input:enabled") | 示例：选择所有处于启用状态的 `<input>` 元素。 |
-| $(":disabled") | 选择禁用的元素。 |
-| $("input:disabled") | 示例：选择所有处于禁用状态的 `<input>` 元素。 |
-
-## 基于可见性选择元素
-
-```
-$("div:visible");
-  //选择当前可见的 <div> 元素
-$("div:hidden");
-  //选择当前隐藏的 <div> 元素
+```javascript
+$("div:visible"); //选择当前可见的 <div> 元素
+$("div:hidden"); //选择当前隐藏的 <div> 元素
 ```
 
 如果你正在使用可见性来控制网页组件的布局和交互，那么使用 jQuery 的可见性选择器可以轻松地选择隐藏或可见的 HTML 元素。表 4.6 展示了一些可见性选择器的示例。
 
-表 4.6 使用属性 jQuery 选择器的示例
+#### 表 4.6 使用可见性 jQuery 选择器的示例
 
 | 语法/示例 | 描述 |
 | :--- | :--- |
-| $(":visible") | 选择可见元素。 |
-| $("div:visible") | 示例：选择所有当前至少具有一定高度和宽度的 `<div>` 元素，这意味着它们在浏览器中占据空间。这甚至包括通过 `visibility:hidden` 或 `opacity:0` 隐藏的元素，因为它们仍然占据空间。 |
-| $(":hidden") | 选择隐藏元素。 |
-| $("div:hidden") | 示例：选择所有当前具有 `visibility:hidden` 或 `opacity:0` CSS 属性的 `<div>` 元素。 |
+| `$(":visible")` | 选择可见元素。 |
+| `$("div:visible")` | 示例：选择所有当前至少具有一定高度和宽度的 `<div>` 元素，这意味着它们在浏览器中占据空间。这甚至包括通过 `visibility:hidden` 或 `opacity:0` 隐藏的元素，因为它们仍然占据空间。 |
+| `$(":hidden")` | 选择隐藏元素。 |
+| `$("div:hidden")` | 示例：选择所有当前具有 `visibility:hidden` 或 `opacity:0` CSS 属性的 `<div>` 元素。 |
 
-## 在 jQuery 选择器中应用过滤器
+### 在 jQuery 选择器中应用过滤器
 
-```
+```javascript
 $("tr:even"); //选择偶数行的 <tr> 元素
 $("li:odd"); //选择奇数行的 <li> 元素
 $("div:first"); //选择第一个 <div> 元素
 $("div:last"); //选择最后一个 <div> 元素
 $(":header"); //选择 <h1>, <h2>, ... 等标题元素
 $("div:eq(5)"); //选择第六个 <div> 元素
-$("li:gt(1)"); //选择第二个之后的 <div> 元素（即从第三个开始）
-$("li:lt(2)"); //选择前两个 <div> 元素
+$("li:gt(1)"); //选择第二个之后的 <li> 元素（即从第三个开始）
+$("li:lt(2)"); //选择前两个 <li> 元素
 $(":animated"); //选择当前正在动画的元素
 ```
 
 通常，你需要将 jQuery 选择器细化为更具体的子集。实现这一点的一种方法是使用过滤选择器。过滤选择器在选择器语句末尾添加一个过滤器，该过滤器会限制选择器返回的结果。表 4.7 展示了一些向选择器添加过滤器的示例。
 
-表 4.7 使用过滤 jQuery 选择器的示例
+#### 表 4.7 使用过滤 jQuery 选择器的示例
 
 | 语法/示例 | 描述 |
-| --- | --- |
-| $(":even")<br>$("tr:even") | 过滤掉所有奇数索引的元素。<br>示例：选择所有 `<tr>` 元素，然后将结果过滤为仅保留偶数编号的项。 |
-| $(":odd")<br>$("li:odd") | 过滤掉所有偶数索引的元素。<br>示例：选择所有 `<li>` 元素，然后将结果过滤为仅保留奇数编号的项。 |
-| $(":first")<br>$("div:first") | 过滤掉除第一个元素外的所有元素。<br>示例：仅选择遇到的第一个 `<div>` 元素。 |
-| $(":last")<br>$("div:last") | 过滤掉除最后一个元素外的所有元素。<br>示例：仅选择遇到的最后一个 `<div>` 元素。 |
-| $(":header")<br>$(":header") | 选择标题类型的元素，如 `<h1>`、`<h2>`、`<h3>` 等。<br>示例：选择所有标题元素。 |
-| $(":eq(index)")<br>$("div:eq(5)") | 选择在特定的、基于零的索引位置的元素。<br>示例：选择遇到的第六个 `<div>` 元素。之所以选择第六个而不是第五个，是因为索引是从零开始的，所以 0 代表第一个。 |
-| $(":gt(index)")<br>$("li:gt(1)") | 过滤列表以仅包含在特定的、基于零的索引之后的元素。<br><br>示例：选择在遇到的第二个之后的每个 `<li>` 元素。同样，此索引是从零开始的。 |
-| $(":lt(index)")<br>$("li:lt(2)") | 过滤列表以仅包含在特定的、基于零的索引之前的元素。<br><br>示例：仅选择遇到的前两个 `<li>` 元素。同样，此索引是从零开始的。 |
-| $(":animated")<br>$(":animated") | 选择当前正在动画的元素。<br><br>示例：选择所有当前正在动画的元素。 |
+| :--- | :--- |
+| `$(":even")`<br>`$("tr:even")` | 过滤掉所有奇数索引的元素。<br>示例：选择所有 `<tr>` 元素，然后将结果过滤为仅保留偶数编号的项。 |
+| `$(":odd")`<br>`$("li:odd")` | 过滤掉所有偶数索引的元素。<br>示例：选择所有 `<li>` 元素，然后将结果过滤为仅保留奇数编号的项。 |
+| `$(":first")`<br>`$("div:first")` | 过滤掉除第一个元素外的所有元素。<br>示例：仅选择遇到的第一个 `<div>` 元素。 |
+| `$(":last")`<br>`$("div:last")` | 过滤掉除最后一个元素外的所有元素。<br>示例：仅选择遇到的最后一个 `<div>` 元素。 |
+| `$(":header")`<br>`$(":header")` | 选择标题类型的元素，如 `<h1>`、`<h2>`、`<h3>` 等。<br>示例：选择所有标题元素。 |
+| `$(":eq(index)")`<br>`$("div:eq(5)")` | 选择在特定的、基于零的索引位置的元素。<br>示例：选择遇到的第六个 `<div>` 元素。之所以选择第六个而不是第五个，是因为索引是从零开始的，所以 0 代表第一个。 |
+| `$(":gt(index)")`<br>`$("li:gt(1)")` | 过滤列表以仅包含在特定的、基于零的索引之后的元素。<br>示例：选择在遇到的第二个之后的每个 `<li>` 元素。同样，此索引是从零开始的。 |
+| `$(":lt(index)")`<br>`$("li:lt(2)")` | 过滤列表以仅包含在特定的、基于零的索引之前的元素。<br>示例：仅选择遇到的前两个 `<li>` 元素。同样，此索引是从零开始的。 |
+| `$(":animated")`<br>`$(":animated")` | 选择当前正在动画的元素。<br>示例：选择所有当前正在动画的元素。 |
 
 ## 链式调用 jQuery 对象操作
 
-```
+```javascript
 $("div#content").children("p:first").css("font-weight", "bold").children("span").css("color", "red");
 ```
 
@@ -1683,7 +1628,7 @@ jQuery 对象的一个强大之处在于，你可以将多个 jQuery 操作链�
 
 为了帮助说明这一点，请看以下语句。代码首先找到 `id="content"` 的 `<div>` 元素，然后找到其中的第一个 `<p>` 元素，并将 `font-weight` 更改为粗体。接着，它找到 `<p>` 元素中的 `<span>` 元素，并将颜色设置为红色：
 
-```
+```javascript
 var $contentDiv = $("div#content");
 var $firstP = $contentDiv.children("p:first");
 $firstP.css("font-weight", "bold");
@@ -1693,7 +1638,7 @@ $spans.css("color", "red");
 
 上述代码用了五行才完成所有任务。而下面这条链式调用的 jQuery 操作语句做了同样的事情，但只用了一条语句：
 
-```
+```javascript
 $("div#content").children("p:first").css("font-weight", "bold").children("span").css("color", "red");
 ```
 
@@ -1705,61 +1650,46 @@ $("div#content").children("p:first").css("font-weight", "bold").children("span")
 
 jQuery 对象提供了一套令人难以置信的方法，允许你以几乎无数种方式遍历 DOM。它允许你使用 jQuery 对象中当前选定的 DOM 元素，来选择 DOM 树中的另一组 DOM 元素。以下短语提供了一些在 jQuery 对象中遍历 DOM 元素以到达其他对象集的示例。
 
-## 获取元素的子元素
+### 获取元素的子元素
 
-```
-$("div").children("p");
-    //选择作为 <div> 元素直接子元素的 <p> 元素
+```javascript
+$("div").children("p"); //选择作为 <div> 元素直接子元素的 <p> 元素
 ```
 
 `.children([selector])` 方法返回一个 jQuery 对象，该对象代表当前对象所代表元素的子元素。你可以指定一个可选的选择器，将结果限制为仅包括匹配该选择器的子元素。
 
-## 获取最近的祖先元素
+### 获取最近的祖先元素
 
-```
-$("p.menu").closest("div");
-    //选择具有 class="menu" 的 <p> 元素的最近 <div> 祖先
+```javascript
+$("p.menu").closest("div"); //选择具有 class="menu" 的 <p> 元素的最近 <div> 祖先
 ```
 
 `.closest(selector, [context] 或 object 或 element)` 方法返回一个 jQuery 对象，该对象代表匹配传入参数的第一个元素。参数可以是一个选择器、一个带有搜索起始上下文的选择器、一个 jQuery 对象或一个 DOM 对象。搜索从当前元素集开始，然后搜索祖先元素。
 
-## 获取包含的元素
+### 获取包含的元素
 
-```
-$("div").contents();
-//选择 <div> 元素中的所有直接子元素
-$("select").contents();
-//选择 <select> 元素中的所有 <option> 元素
+```javascript
+$("div").contents(); //选择 <div> 元素中的所有直接子元素
+$("select").contents(); //选择 <select> 元素中的所有 <option> 元素
 ```
 
 `.contents()` 返回一个 jQuery 对象，该对象代表当前元素集的直接子元素。这在获取列表中的所有 `<li>` 元素或 `<select>` 块中的 `<option>` 元素时特别有用。
 
-## 查找后代元素
+### 查找后代元素
 
-```
-$("table").find("span")
-//选择包含在 <table> 元素某处的所有 <span> 元素
-$("#myForm").find("input")
-//选择包含在元素 #myForm 某处的所有 <input> 元素
+```javascript
+$("table").find("span"); //选择包含在 <table> 元素某处的所有 <span> 元素
+$("#myForm").find("input"); //选择包含在元素 #myForm 某处的所有 <input> 元素
 ```
 
 `.find(filter)` 方法返回一个 jQuery 对象，该对象代表当前集合中匹配提供的过滤器的后代元素。过滤器可以是一个选择器、一个用于匹配元素的 jQuery 对象，或一个元素标签名。
 
-示例：选择包含在 `<table>` 元素某处的所有 `<span>` 元素。
-
-
-
-## 获取选中对象之后的同级元素
+### 获取选中对象之后的同级元素
 
 ```javascript
-$("#title").next("p");
-//查找 id="title" 的元素，并选择其紧随其后的同级 <p> 元素
-
-$("p:first").nextAll();
-//选择找到的第一个 <p> 元素，然后选择该元素的所有同级 <p> 元素
-
-$("p:first").nextUntil("ul");
-//选择找到的第一个 <p> 元素，然后选择所有后续的同级元素，直到遇到 <ul> 元素为止
+$("#title").next("p"); //查找 id="title" 的元素，并选择其紧随其后的同级 <p> 元素
+$("p:first").nextAll(); //选择找到的第一个 <p> 元素，然后选择该元素的所有同级 <p> 元素
+$("p:first").nextUntil("ul"); //选择找到的第一个 <p> 元素，然后选择所有后续的同级元素，直到遇到 <ul> 元素为止
 ```
 
 `.next([selector])` 方法返回一个 jQuery 对象，该对象表示当前集合中每个元素的下一个同级元素。如果提供了可选的 selector，则只有当该同级元素匹配选择器时才会被添加。
@@ -1768,26 +1698,20 @@ $("p:first").nextUntil("ul");
 
 `.nextUntil([selector] 或 [element] [,filter])` 方法返回一个 jQuery 对象，该对象表示当前集合中每个元素之后的所有同级元素，直到遇到与 element 或 selector 参数匹配的对象为止。第一个参数可以是 DOM 对象或选择器。第二个可选参数是一个筛选选择器，用于限制结果中返回的项目。
 
-## 获取定位父元素
+### 获取定位父元素
 
 ```javascript
-$("#notify").offsetParent();
-//选择 id="notify" 的元素，然后选择用于定位该元素的祖先元素
+$("#notify").offsetParent(); //选择 id="notify" 的元素，然后选择用于定位该元素的祖先元素
 ```
 
 `.offsetParent()` 方法返回一个 jQuery 对象，该对象表示最近的、且 CSS position 属性为 relative、absolute 或 fixed 的祖先元素。这使你可以获取用于定位的元素，当你需要获取定位容器的大小时，这一点变得至关重要。
 
-## 查找选中项的父元素或祖先元素
+### 查找选中项的父元素或祖先元素
 
 ```javascript
-$("div#menu").parent();
-//选择 id="menu" 的 <div> 元素，然后查找其直接父元素
-
-$("#data").parents("div");
-//选择 id="data" 的元素，然后返回包含所有 <div> 祖先元素的集合
-
-$("#data").parentsUntil("#menu");
-//选择 #data 的父元素，直到找到 id="#menu" 的元素为止
+$("div#menu").parent(); //选择 id="menu" 的 <div> 元素，然后查找其直接父元素
+$("#data").parents("div"); //选择 id="data" 的元素，然后返回包含所有 <div> 祖先元素的集合
+$("#data").parentsUntil("#menu"); //选择 #data 的父元素，直到找到 id="#menu" 的元素为止
 ```
 
 `.parent([selector])` 方法返回一个 jQuery 对象，该对象表示当前集合中每个元素的直接父对象。可选的 selector 参数允许你将结果限制为与选择器匹配的父元素。
@@ -1796,17 +1720,12 @@ $("#data").parentsUntil("#menu");
 
 `.parentsUntil([selector] 或 [element] [, filter])` 方法返回一个 jQuery 对象，该对象表示当前集合中每个元素的祖先元素，直到遇到与 element 或 selector 参数匹配的对象为止。第一个参数可以是元素标签名或选择器。第二个可选参数是一个筛选选择器，用于限制结果中返回的项目。
 
-## 获取之前的同级元素
+### 获取之前的同级元素
 
 ```javascript
-$("p#footer").prev("p");
-//查找 id="footer" 的 <p> 元素，然后选择其之前的同级 <p> 元素
-
-$("div#footer").prevAll("div");
-//选择 id="footer" 的 <div> 元素，然后选择该元素之前的所有同级 <div> 元素
-
-$("div#footer").prevUntil("div#header");
-//查找 id="footer" 的 <div> 元素，然后选择其之前的所有同级元素，直到找到 #header 为止
+$("p#footer").prev("p"); //查找 id="footer" 的 <p> 元素，然后选择其之前的同级 <p> 元素
+$("div#footer").prevAll("div"); //选择 id="footer" 的 <div> 元素，然后选择该元素之前的所有同级 <div> 元素
+$("div#footer").prevUntil("div#header"); //查找 id="footer" 的 <div> 元素，然后选择其之前的所有同级元素，直到找到 #header 为止
 ```
 
 `.prev([selector])` 方法返回一个 jQuery 对象，该对象表示当前集合中每个元素的前一个同级元素。如果提供了可选的 selector，则只有当该同级元素匹配选择器时才会被添加。
@@ -1815,11 +1734,10 @@ $("div#footer").prevUntil("div#header");
 
 `.prevUntil([selector] 或 [element] [,filter])` 方法返回一个 jQuery 对象，该对象表示当前集合中每个元素之前的所有同级元素，直到遇到与 selector 或 element 匹配的对象为止。第一个参数可以是 DOM 对象或选择器。第二个可选参数是一个筛选选择器，用于限制结果中返回的项目。
 
-## 获取同级元素
+### 获取同级元素
 
 ```javascript
-$(".menu").siblings("span");
-//选择所有与 class="menu" 的元素同级的 <span> 元素
+$(".menu").siblings("span"); //选择所有与 class="menu" 的元素同级的 <span> 元素
 ```
 
 `.siblings([selector])` 方法返回一个 jQuery 对象，该对象表示当前集合中每个元素的所有同级对象。可选的 selector 参数允许你将结果限制为与选择器匹配的同级元素。
@@ -1832,39 +1750,34 @@ jQuery 提供了几种方法，允许你修改 jQuery 对象所表示的 DOM 元
 
 以下部分旨在向你展示如何以各种方式使用 jQuery 对象集合。
 
-## 从 jQuery 对象集合中获取 DOM 对象
+### 从 jQuery 对象集合中获取 DOM 对象
 
 ```javascript
-$("div").get();
-//返回所有 <div> 元素的 DOM 对象数组
-
-$("div").get(0);
-//返回第一个 <div> 的 DOM 对象
-
-$("div").get(-1);
-//返回最后一个 <div> 的 DOM 对象
+$("div").get(); //返回所有 <div> 元素的 DOM 对象数组
+$("div").get(0); //返回第一个 <div> 的 DOM 对象
+$("div").get(-1); //返回最后一个 <div> 的 DOM 对象
 ```
 
 `.get([index])` 方法返回 jQuery 对象集合中表示的 DOM 元素。如果未指定索引，则返回 DOM 对象的数组。如果指定了索引，则返回数组中从零开始的偏移量处的 DOM 元素。
 
 如果索引是负数，则返回从数组末尾反向偏移量处的项目。例如，-1 是最后一个项目，-2 是倒数第二个项目。
 
-## 将 DOM 对象转换为 jQuery 对象
+### 将 DOM 对象转换为 jQuery 对象
 
 ```javascript
 var containerObj = document.getElementById("myDiv");
-$(containerObj); //等同于 $("#myDiv");
+$(containerObj); //等同于 $("#myDiv")
 
 var objs = document.getElementsByClassName("myClass");
-$(objs); //等同于 $(".myClass");
+$(objs); //等同于 $(".myClass")
 
 var objs = document.getElementsByTagName("div");
-$(objs); //等同于 $("div");
+$(objs); //等同于 $("div")
 ```
 
 jQuery 构造函数 `$()` 接受 DOM 对象和数组作为参数。如果你传入一个 DOM 对象，`$()` 会将该 DOM 对象或数组转换为一个 jQuery 对象，然后你就可以像使用普通 jQuery 对象一样操作它。
 
-## 使用 .each() 遍历 jQuery 对象集合
+### 使用 `.each()` 遍历 jQuery 对象集合
 
 ```javascript
 $("p").each(function (idx) {
@@ -1901,19 +1814,17 @@ $(document).ready(function () {
 </html>
 ```
 
-ch0501.html
+`ch0501.html`
 
 ![](img/476d4a1835716860dfdb11288891ad23_100_0.png)
 
-**图 5.1** 运行 ch0501.html 代码的结果。
+**图 5.1** 运行 `ch0501.html` 代码的结果。
 
 注意，`idx` 是作为索引号传入的，第一个 `<p>` 元素为 0，第二个为 1，依此类推。还要注意，我使用 `$(this)` 将 `this` 转换为 jQuery 对象，以便我可以调用 `.html()` 方法。
 
-### 顺便提一下
-
-在使用遍历 DOM 元素的 jQuery 方法时，你可以使用 `this` 关键字访问正在遍历的当前 DOM 对象。`this` 是一个 DOM 对象，而不是 jQuery 对象，因此如果你需要使用 DOM 对象的 jQuery 形式，请使用 `$(this)`。不过请记住，构建 DOM 对象的 jQuery 形式需要开销，因此只在你确实需要其提供的功能时才创建 jQuery 形式。
-
-
+> **顺便提一下**
+>
+> 在使用遍历 DOM 元素的 jQuery 方法时，你可以使用 `this` 关键字访问正在遍历的当前 DOM 对象。`this` 是一个 DOM 对象，而不是 jQuery 对象，因此如果你需要使用 DOM 对象的 jQuery 形式，请使用 `$(this)`。不过请记住，构建 DOM 对象的 jQuery 形式需要开销，因此只在你确实需要其提供的功能时才创建 jQuery 形式。
 
 ### 使用 `.map()`
 
@@ -2026,59 +1937,54 @@ jQuery 提供了 `.data(key [,value])` 方法，用于将数据片段作为键�
 ### 向 jQuery 对象集合添加 DOM 元素
 
 ```javascript
-var pars = $("p");
-//包含所有 <p> 元素
-var pAndDiv = $("div").add(pars);
-//包含所有 <div> 和 <p> 元素
-var pAndDivAndSpan = $("span").add("p").add("div");
-//包含所有 <span>、<div> 和 <p> 元素
+var pars = $("p"); //包含所有 <p> 元素
+var pAndDiv = $("div").add(pars); //包含所有 <div> 和 <p> 元素
+var pAndDivAndSpan = $("span").add("p").add("div"); //包含所有 <span>、<div> 和 <p> 元素
 ```
 
 jQuery 的一个很棒的特性是它能轻松地向 jQuery 对象集合中添加额外的元素。`.add(selector)` 方法将与选择器匹配的元素添加到 jQuery 对象表示的集合中。
+
 `.add(object)` 方法接受另一个 jQuery 对象，并将该对象中的元素添加到当前对象的集合中。
 
 ### 从 jQuery 对象集合中移除对象
 
 ```javascript
 var items = $("span");
-items.css({color:"red"});
-//将所有 <span> 元素的文本颜色设置为红色
+items.css({color:"red"}); //将所有 <span> 元素的文本颜色设置为红色
 items.remove(".menu");
-items.css({"font_weight":"bold"});
-//将除 .menu 外的所有 <span> 元素设置为粗体
+items.css({"font-weight":"bold"}); //将除 .menu 外的所有 <span> 元素设置为粗体
 ```
 
 jQuery 的另一个很棒的特性是它能轻松地从 jQuery 对象集合中移除项目以及添加额外的元素。`.remove([selector])` 方法将从 jQuery 对象表示的集合中移除与选择器匹配的元素。不带选择器调用 `.remove()` 将从集合中移除所有元素。
 
-### 过滤 jQuery 对象结果
+## 过滤 jQuery 对象结果
 
 jQuery 对象提供了一组良好的方法，允许你修改查询中表示的 DOM 对象。当你试图在 jQuery 选择器结果中定位一组特定元素时，缩小结果会很有帮助。以下短语提供了过滤 jQuery 选择器结果以找到对象集合的示例。
 
-#### 基于索引过滤项
+### 基于索引过滤项
 
 ```javascript
-$("div#content").eq(1);
-//选择选择器找到的第二个元素
+$("div#content").eq(1); //选择选择器找到的第二个元素
 ```
 
 `.eq(index)` 过滤器将返回 jQuery 对象集合中特定索引处的元素。索引从零开始，所以 `.eq(1)` 实际上检索选择器找到的第二个元素。
 
-#### 使用过滤函数过滤选择器结果
+### 使用过滤函数过滤选择器结果
 
 ```javascript
 $("option").filter(
   function (index) {
-    return (this.value>5); });
-//仅选择 value=5 的 <option> 元素
-$("div").filter(".myClass");
-//仅选择 class="myClass" 的 <div> 元素
+    return (this.value > 5);
+  }
+); //仅选择 value > 5 的 <option> 元素
+$("div").filter(".myClass"); //仅选择 class="myClass" 的 <div> 元素
 ```
 
 `.filter(filter)` 方法将集合缩小为仅与指定过滤器匹配的项目。过滤器可以是选择器、特定 DOM 元素、jQuery 对象或测试每个元素并在应包含时返回 true 的函数。
 
 > **你知道吗？**
-
-与 CSS 选择器相同的 jQuery 选择器能够使用原生 DOM 方法 `querySelectorAll()`，该方法对 DOM 对象进行了一些高级优化。其他 jQuery 选择器无法利用该优化，因此最好首先使用基于 CSS 的选择器，然后将过滤器作为链式选择器添加。例如，不要使用 `$("div:animated")`，而应使用 `$("div").filter(":animated")`。
+>
+> 与 CSS 选择器相同的 jQuery 选择器能够使用原生 DOM 方法 `querySelectorAll()`，该方法对 DOM 对象进行了一些高级优化。其他 jQuery 选择器无法利用该优化，因此最好首先使用基于 CSS 的选择器，然后将过滤器作为链式选择器添加。例如，不要使用 `$("div:animated")`，而应使用 `$("div").filter(":animated")`。
 
 ### 获取第一个或最后一个项
 
@@ -2092,10 +1998,8 @@ $("p").last(); //选择集合中的最后一个 <p> 元素
 ### 获取包含其他项的项
 
 ```javascript
-$("div").has("p");
-//选择包含 <p> 后代的 <div> 元素
-$("div").has("#menu");
-//选择包含具有 id="menu" 的元素的 <div> 元素
+$("div").has("p"); //选择包含 <p> 后代的 <div> 元素
+$("div").has("#menu"); //选择包含具有 id="menu" 的元素的 <div> 元素
 ```
 
 `.has(selector or element)` 方法将集合缩小为那些具有与选择器匹配的后代元素或包含指定 DOM 元素的元素。
@@ -2103,11 +2007,10 @@ $("div").has("#menu");
 ### 使用 Not 逻辑过滤掉项
 
 ```javascript
-$("div").not(".menu");
-    //选择不包含 .menu 类的 <div> 元素
+$("div").not(".menu"); //选择不包含 .menu 类的 <div> 元素
 $("option").not(function(){
-    return (this.value==0); }));
-    //选择不包含 value=0 的 <option> 元素
+    return (this.value == 0);
+}); //选择不包含 value=0 的 <option> 元素
 ```
 
 `.not(filter)` 方法将集合缩小为与过滤器匹配的元素。过滤器可以是选择器、一个或多个特定 DOM 元素、jQuery 对象或测试每个元素并在应包含时返回 true 的函数。
@@ -2115,76 +2018,72 @@ $("option").not(function(){
 ### 切割选择器结果
 
 ```javascript
-$("tr").slice(2,5);
-    //选择索引 2 到 4 之间的 <tr> 元素（包含两端）
-$("p").slice(1,-1);
-    //选择除第一个和最后一个之外的所有 <p> 元素
+$("tr").slice(2,5); //选择索引 2 到 4 之间的 <tr> 元素（包含两端）
+$("p").slice(1,-1); //选择除第一个和最后一个之外的所有 <p> 元素
 ```
 
 `.slice(start, [end])` 方法移除索引 `start` 之前和索引 `end` 之后的元素，只返回中间的项目。这允许你将大选择拆分为更小的部分。索引从零开始。负数的 `end` 表示从列表末尾的偏移量，其中 -1 是最后一个元素，-2 是倒数第二个元素。
 
+# 捕获与使用浏览器和用户事件
 
-
-## 捕获与使用浏览器和用户事件
-
-jQuery和JavaScript的一个主要目标，是让开发者能够创建极其精致且交互性极强的网页。交互式网页的核心是**事件**。*事件*指的是浏览器环境中发生的任何事情，从页面加载，到鼠标移动或点击，再到键盘输入，以及窗口大小调整。
+jQuery 和 JavaScript 的一个主要目标，是让开发者能够创建极其精致且交互性极强的网页。交互式网页的核心是**事件**。*事件*指的是浏览器环境中发生的任何事情，从页面加载，到鼠标移动或点击，再到键盘输入，以及窗口大小调整。
 
 理解事件、代表事件的对象，以及如何在网页中应用它们，将使你能够创建出令人惊叹的用户交互。本章涵盖了理解事件所需的概念，以及如何利用它们来构建丰富的交互式网页。
 
-本章中的代码片段旨在向你展示JavaScript事件引擎的工作原理，以及如何应用JavaScript和jQuery代码来实现事件处理程序。你将能够将本章的概念与其他章节的概念相结合，以实现专业且丰富的用户交互。
+本章中的代码片段旨在向你展示 JavaScript 事件引擎的工作原理，以及如何应用 JavaScript 和 jQuery 代码来实现事件处理程序。你将能够将本章的概念与其他章节的概念相结合，以实现专业且丰富的用户交互。
 
-### 理解事件
+## 理解事件
 
 浏览器事件的概念相当简单。事件是任何改变浏览器或网页状态的事情。这包括页面加载、鼠标移动和点击、键盘输入，以及表单提交和页面中发生的其他事情。每个事件都有一个事件对象，描述了发生的事件以及事件发生的对象。
 
-本节提供了一些表格，帮助你快速了解事件对象的样貌、JavaScript中一些更常见的事件是什么，以及是什么触发了它们。
+本节提供了一些表格，帮助你快速了解事件对象的样貌、JavaScript 中一些更常见的事件是什么，以及是什么触发了它们。
 
 ### 回顾事件类型
 
-事件类型是JavaScript和jQuery用来识别所发生物理事件的关键字。这些关键字用于将处理程序附加到特定类型的事件。此外，正如你稍后将看到的，这些关键字用于方法名中，以便你可以附加事件处理程序或手动触发事件。
+事件类型是 JavaScript 和 jQuery 用来识别所发生物理事件的关键字。这些关键字用于将处理程序附加到特定类型的事件。此外，正如你稍后将看到的，这些关键字用于方法名中，以便你可以附加事件处理程序或手动触发事件。
 
-JavaScript提供了几种事件类型，对应于动态页面交互期间发生的不同事件。jQuery事件处理支持所有JavaScript事件类型，并增加了一些自己的事件类型。表6.1列出了JavaScript和jQuery支持的不同事件类型。
+JavaScript 提供了几种事件类型，对应于动态页面交互期间发生的不同事件。jQuery 事件处理支持所有 JavaScript 事件类型，并增加了一些自己的事件类型。表 6.1 列出了 JavaScript 和 jQuery 支持的不同事件类型。
 
-#### 表6.1 JavaScript和jQuery事件类型
+#### 表 6.1 JavaScript 和 jQuery 事件类型
 
 | 事件类型 | 描述 |
-| --- | --- |
+| :--- | :--- |
 | abort | 在图像加载完成之前被中止时触发。 |
 | blur | 当表单元素失去焦点时触发。 |
-| change | 当表单元素的内容、选中项或复选状态发生变化时触发。适用于`<input>`、`<select>`和`<textarea>`元素。 |
-| click | 当用户点击一个HTML元素时触发。 |
-| dblclick | 当用户双击一个HTML元素时触发。 |
+| change | 当表单元素的内容、选中项或复选状态发生变化时触发。适用于 `<input>`、`<select>` 和 `<textarea>` 元素。 |
+| click | 当用户点击一个 HTML 元素时触发。 |
+| dblclick | 当用户双击一个 HTML 元素时触发。 |
 | error | 当图像未能正确加载时触发。 |
 | focus | 当表单元素获得焦点时触发。 |
-| focusin | 当表单元素或其内部的任何元素获得焦点时触发。与`focus`不同，它支持事件冒泡到父元素。这是一个jQuery专有事件。 |
-| focusout | 当表单元素或其内部的任何元素失去焦点时触发。与`blur`不同，它支持事件冒泡到父元素。这是一个jQuery专有事件。 |
+| focusin | 当表单元素或其内部的任何元素获得焦点时触发。与 `focus` 不同，它支持事件冒泡到父元素。这是一个 jQuery 专有事件。 |
+| focusout | 当表单元素或其内部的任何元素失去焦点时触发。与 `blur` 不同，它支持事件冒泡到父元素。这是一个 jQuery 专有事件。 |
 | keydown | 当用户按下某个键时触发。 |
 | keypress | 当用户按下并释放某个键时触发。 |
 | keyup | 当用户释放某个键时触发。 |
-| load | 当文档、框架集或DOM元素加载完成时触发。 |
+| load | 当文档、框架集或 DOM 元素加载完成时触发。 |
 | mousedown | 当用户按下鼠标按钮时触发。目标元素是按钮按下时鼠标所在的元素。 |
 | mousemove | 当鼠标指针在元素上移动时触发。 |
 | mouseover | 当鼠标指针移动到元素或其任何后代元素上时触发。 |
 | mouseout | 当鼠标指针移出元素或其任何后代元素时触发。 |
 | mouseup | 当用户释放鼠标按钮时触发。目标元素是按钮释放时鼠标所在的元素。 |
-| mouseenter | 当鼠标指针进入元素时触发。与mouseover不同，它仅由元素本身触发，而非其后代。这是一个jQuery专有事件。 |
-| mouseleave | 当鼠标指针离开元素时触发。与mouseout不同，它仅由元素本身触发，而非其后代。这是一个jQuery专有事件。 |
+| mouseenter | 当鼠标指针进入元素时触发。与 mouseover 不同，它仅由元素本身触发，而非其后代。这是一个 jQuery 专有事件。 |
+| mouseleave | 当鼠标指针离开元素时触发。与 mouseout 不同，它仅由元素本身触发，而非其后代。这是一个 jQuery 专有事件。 |
 | reset | 当表单被重置时触发。 |
 | resize | 当通过调整浏览器窗口或框架大小来调整文档视图大小时触发。 |
 | scroll | 当文档视图被滚动时触发。 |
-| select | 当用户在`<input>`或`<textarea>`中选中文本时触发。 |
+| select | 当用户在 `<input>` 或 `<textarea>` 中选中文本时触发。 |
 | submit | 当表单被提交时触发。 |
-| unload | 当页面从`<body>`或`<frameset>`元素卸载时触发。 |
+| unload | 当页面从 `<body>` 或 `<frameset>` 元素卸载时触发。 |
 
-### 添加事件处理程序
+## 添加事件处理程序
 
 事件处理程序是在事件触发时被调用的函数。事件对象会传递给事件处理程序，因此你可以在事件处理程序中访问关于该事件的信息。
 
-以下代码片段展示了在HTML、JavaScript和jQuery中添加事件处理程序的方法。
+以下代码片段展示了在 HTML、JavaScript 和 jQuery 中添加事件处理程序的方法。
 
-#### 在JavaScript中添加页面加载事件处理程序
+### 在 JavaScript 中添加页面加载事件处理程序
 
-```
+```html
 <script>
     function onloadHandler(){
         (initialization code here...)
@@ -2194,23 +2093,23 @@ JavaScript提供了几种事件类型，对应于动态页面交互期间发生�
 <body onload="onloadHandler()">
 ```
 
-要在JavaScript中添加页面加载时运行的初始化代码，需要创建一个执行初始化的JavaScript函数。例如，以下JavaScript代码展示了一个简单的初始化函数骨架：
+要在 JavaScript 中添加页面加载时运行的初始化代码，需要创建一个执行初始化的 JavaScript 函数。例如，以下 JavaScript 代码展示了一个简单的初始化函数骨架：
 
-```
+```javascript
 function onloadHandler(){
     (initialization code here...)
 }
 ```
 
-要使`onloadHandler()`在页面完全加载时触发，请将事件处理程序函数添加到HTML的`<body>`元素的`onload`属性中。例如：
+要使 `onloadHandler()` 在页面完全加载时触发，请将事件处理程序函数添加到 HTML 的 `<body>` 元素的 `onload` 属性中。例如：
 
-```
+```html
 <body onload="onloadHandler()">
 ```
 
-#### 在jQuery中添加初始化代码
+### 在 jQuery 中添加初始化代码
 
-```
+```javascript
 $(document).ready(function(){
     (initialization code here...)
 });
@@ -2220,30 +2119,31 @@ $(document).load(function(){
 });
 ```
 
-在jQuery中，你可以在两个不同的时间触发和执行初始化代码：DOM就绪时，以及文档及其资源完全加载后。使用哪种选项取决于初始化代码中需要发生什么。
+在 jQuery 中，你可以在两个不同的时间触发和执行初始化代码：DOM 就绪时，以及文档及其资源完全加载后。使用哪种选项取决于初始化代码中需要发生什么。
 
-使用`.ready()` jQuery方法会在DOM完全就绪时触发初始化代码运行。所有DOM对象都将被创建，并且页面将对用户显示。请注意，此时并非所有页面资源（如图像）都已完全下载完成。这是我最常用的选项，因为它允许我尽快添加交互和功能。下面展示了使用`.ready()`附加一个简单初始化函数的示例：
+使用 `.ready()` jQuery 方法会在 DOM 完全就绪时触发初始化代码运行。所有 DOM 对象都将被创建，并且页面将对用户显示。请注意，此时并非所有页面资源（如图像）都已完全下载完成。这是我最常用的选项，因为它允许我尽快添加交互和功能。下面展示了使用 `.ready()` 附加一个简单初始化函数的示例：
 
-```
+```javascript
 $(document).ready(function(){
   (initialization code here...)
 });
 ```
 
-使用`.load()` jQuery方法会在所有页面资源加载完成并呈现给用户后触发初始化代码运行。有时，如果我在应用初始化代码时需要资源信息（如图像尺寸），我会使用此选项。以下代码展示了使用`load()`附加一个简单初始化函数的示例：
+使用 `.load()` jQuery 方法会在所有页面资源加载完成并呈现给用户后触发初始化代码运行。有时，如果我在应用初始化代码时需要资源信息（如图像尺寸），我会使用此选项。以下代码展示了使用 `.load()` 附加一个简单初始化函数的示例：
 
-```
+```javascript
 $(document).load(function(){
   (initialization code here...)
 });
 ```
 
 > **注意！**
-> `.ready()`和`.load()`方法与在`<body>`标签中使用`onload="..."`属性不兼容。如果你使用jQuery，请使用`.ready()`或`.load()`；如果不使用jQuery，则使用`onload`属性。
+>
+> `.ready()` 和 `.load()` 方法与在 `<body>` 标签中使用 `onload="..."` 属性不兼容。如果你使用 jQuery，请使用 `.ready()` 或 `.load()`；如果不使用 jQuery，则使用 `onload` 属性。
 
-#### 在HTML中指定事件处理程序
+### 在 HTML 中指定事件处理程序
 
-```
+```javascript
 function clickHandler(e){
   $("div").html("clicked at X position: " + e.screenX);
 }
@@ -2251,47 +2151,41 @@ function clickHandler(e){
 <div onclick="clickHandler(event)">Click Here</div>
 ```
 
-向DOM元素添加事件处理程序最基本的方法是直接在HTML代码中。这种方法的优点是简单易用，并且……
+向 DOM 元素添加事件处理程序最基本的方法是直接在 HTML 代码中。这种方法的优点是简单易用，并且可以查看分配给特定 DOM 对象的事件处理器。
 
+事件处理器通过在 HTML 标签语句中设置处理属性的值来添加到 DOM 对象。对于元素支持的每个事件，都有一个以 "on" 开头后跟事件名称的属性。例如，click 事件属性是 `onclick`，load 事件属性是 `onload`。要查看事件类型列表，请参见表 6.1。
 
+以下示例展示了在 HTML 代码中为 DOM 元素添加点击事件处理器是多么容易：
 
-## 第六章 捕获与使用浏览器和用户事件
-
-查看分配给特定DOM对象的事件处理器。
-
-事件处理器通过在HTML标签语句中设置处理属性的值来添加到DOM对象。对于元素支持的每个事件，都有一个以“on”开头后跟事件名称的属性。例如，click事件属性是onclick，load事件属性是onload。要查看事件类型列表，请参见表6.1。
-
-以下示例展示了在HTML代码中为DOM元素添加点击事件处理器是多么容易：
-
-```
+```html
 <div onclick="clickHandler()">Click Here</div>
 ```
 
 当你点击 `<div>` 元素时，浏览器将调用以下函数：
 
-```
+```javascript
 function clickHandler(){
     $("div").html("clicked");
 }
 ```
 
-你也可以使用event关键字将DOM事件对象作为参数包含在事件处理器中。这允许你在事件处理器中访问事件信息，例如：
+你也可以使用 `event` 关键字将 DOM 事件对象作为参数包含在事件处理器中。这允许你在事件处理器中访问事件信息，例如：
 
-```
+```html
 <div onclick="clickHandler(event)">Click Here</div>
 ```
 
-当 `<div>` 元素被点击时，浏览器将调用以下函数，并通过读取e.screenX将文本更改为显示鼠标光标的x坐标：
+当 `<div>` 元素被点击时，浏览器将调用以下函数，并通过读取 `e.screenX` 将文本更改为显示鼠标光标的 x 坐标：
 
-```
+```javascript
 function clickHandler(e){
     $("div").html("clicked at X position: " + e.screenX);
 }
 ```
 
-### 在JavaScript中添加事件处理器
+### 在 JavaScript 中添加事件处理器
 
-```
+```javascript
 function clickHandler(e, data){
     (Event Handler Code)
 }
@@ -2299,20 +2193,20 @@ function clickHandler(e, data){
 document.getElementById("div1").addEventListener
 ("click",
     function(e){
-        eventHandler(e,"data");
-    },false);
+        clickHandler(e,"data");
+    }, false);
 ```
 
-你也可以在JavaScript代码中动态地为DOM对象添加和移除事件处理器。要在JavaScript中添加事件处理器，只需在DOM对象上调用addEventListener()即可。
+你也可以在 JavaScript 代码中动态地为 DOM 对象添加和移除事件处理器。要在 JavaScript 中添加事件处理器，只需在 DOM 对象上调用 `addEventListener()` 即可。
 
-addEventListener()函数接受三个参数。第一个是事件类型（事件类型定义在表6.1中），一个要调用的函数，以及一个布尔值，该布尔值指定为true表示处理器应在捕获阶段和冒泡阶段都被调用，为false表示处理器只在冒泡阶段被调用。
+`addEventListener()` 函数接受三个参数。第一个是事件类型（事件类型定义在表 6.1 中），一个要调用的函数，以及一个布尔值，该布尔值指定为 true 表示处理器应在捕获阶段和冒泡阶段都被调用，为 false 表示处理器只在冒泡阶段被调用。
 
 要将自定义数据传递给处理器调用，请将实际的函数处理器包装在一个简单的包装函数中，该包装函数将参数传递给事件处理器。
 
-例如，以下代码使用附加信息调用点击处理器，包括被更新的另一个对象的ID：
+例如，以下代码使用附加信息调用点击处理器，包括被更新的另一个对象的 ID：
 
-```
-function clickHandler(e,objId,num,msg){
+```javascript
+function clickHandler(e, objId, num, msg){
     var obj = document.getElementById(objId);
     obj.innerHTML = "DIV " + num + " says " + msg + " at X position: " + e.screenX;
 }
@@ -2320,99 +2214,100 @@ function clickHandler(e,objId,num,msg){
 document.getElementById("div1").addEventListener
 ('click',
     function(e){
-        eventHandler(e, "heading", 1, "yes");
-    },false);
+        clickHandler(e, "heading", 1, "yes");
+    }, false);
 ```
 
-你也可以在DOM对象上使用处理器属性设置访问事件处理器。处理器属性将是“on”加上事件类型。例如，对于click事件，该属性是obj.onclick。你可以使用obj.onclick()调用事件处理器，或使用obj.onclick= function handler(){ ...};直接赋值。
+你也可以在 DOM 对象上使用处理器属性设置访问事件处理器。处理器属性将是 "on" 加上事件类型。例如，对于 click 事件，该属性是 `obj.onclick`。你可以使用 `obj.onclick()` 调用事件处理器，或使用 `obj.onclick = function handler(){ ... };` 直接赋值。
 
-### 在JavaScript中移除事件处理器
+### 在 JavaScript 中移除事件处理器
 
-```
+```javascript
 var obj = document.getElementById("div1");
 obj.addEventListener('click', clickHandler);
 ...
 obj.removeEventListener('click', clickHandler);
 ```
 
-你也可以通过在DOM对象上使用removeEventListener()函数从事件中移除事件处理器。你需要指定事件类型和要移除的事件处理器名称。例如，以下代码添加一个事件处理器然后将其移除：
+你也可以通过在 DOM 对象上使用 `removeEventListener()` 函数从事件中移除事件处理器。你需要指定事件类型和要移除的事件处理器名称。例如，以下代码添加一个事件处理器然后将其移除：
 
-```
+```javascript
 function clickHandler(e){
-  . . .
+  // ...
 }
 var obj = document.getElementById("div1");
 obj.addEventListener('click', clickHandler);
+obj.removeEventListener('click', clickHandler);
 ```
 
-### 在jQuery中添加事件处理器
+### 在 jQuery 中添加事件处理器
 
-```
-$("div").on("click", "span", {name:"Brad",
-  number:7},
+```javascript
+$("div").on("click", "span", {name:"Brad", number:7},
   function(e){
     (event handler code here)
-});
+  }
+);
 ```
 
-事件在jQuery中使用 .on(events[,selector][,data]handler(eventObject) 方法添加。此方法接受一个或多个事件类型（如表6.1所列）作为第一个参数。
+事件在 jQuery 中使用 `.on(events[, selector][, data], handler(eventObject))` 方法添加。此方法接受一个或多个事件类型（如表 6.1 所列）作为第一个参数。
 
-可选的selector值定义触发事件的后代元素。任何匹配选择器的后代元素也会触发事件。
+可选的 selector 值定义触发事件的后代元素。任何匹配选择器的后代元素也会触发事件。
 
-data对象是你想要在event.data属性中传递给事件处理器的任何内容。通常，这是一个单个值或一个JavaScript对象。但是，任何内容都会被接受。
+data 对象是你想要在 `event.data` 属性中传递给事件处理器的任何内容。通常，这是一个单个值或一个 JavaScript 对象。但是，任何内容都会被接受。
 
-handler函数是事件触发时要执行的函数。eventObject被传递给handler函数，并为你提供有关事件的详细信息。
+handler 函数是事件触发时要执行的函数。eventObject 被传递给 handler 函数，并为你提供有关事件的详细信息。
 
-使用jQuery添加事件处理器的一个很大好处是你可以使用jQuery选择器功能。例如，要为文档中的第一个段落添加点击处理器，你将使用以下代码：
+使用 jQuery 添加事件处理器的一个很大好处是你可以使用 jQuery 选择器功能。例如，要为文档中的第一个段落添加点击处理器，你将使用以下代码：
 
+```javascript
+$("p:first").on("click", function(e){ (event handler code here) });
 ```
-$("p:first").on("click", function(e){ (event handler code here) }):
-```
 
-或者要为所有设置了.texting类的 `<input>` 元素添加keyup事件处理器，你将使用这个：
+或者要为所有设置了 `.texting` 类的 `<input>` 元素添加 keyup 事件处理器，你将使用这个：
 
-```
-$("input.texting").on("click", function(e){ (event handler code here) }):
+```javascript
+$("input.texting").on("keyup", function(e){ (event handler code here) });
 ```
 
 另一个示例是为所有 `<div>` 元素添加点击事件处理器，该处理器也会在 `<span>` 后代上触发，并传递一个对象：
 
-```
-$("div").on("click", "span", {name:"Brad", number:7}, function(e){ (event handler code here) }):
-```
-
-### 在jQuery中移除事件处理器
-
-```
-$("div").off("keypress"); or $("div").off("click", "span", function(e){ (event handler code here) }):
+```javascript
+$("div").on("click", "span", {name:"Brad", number:7}, function(e){ (event handler code here) });
 ```
 
-使用jQuery移除事件处理器非常容易，可以使用.off(events[,selector][,handler(eventObject)])方法。此方法的参数类似于.on()事件处理器。参数匹配非常紧密，因此你可以为元素添加多个事件处理器。使用这些参数有助于jQuery知道哪个事件与你想要关闭的事件匹配。
+### 在 jQuery 中移除事件处理器
 
-### 控制事件
+```javascript
+$("div").off("keypress"); 
+// 或者
+$("div").off("click", "span", function(e){ (event handler code here) });
+```
 
-处理JavaScript的一个重要方面是控制事件行为的能力。以下列表描述了当用户与网页或浏览器窗口交互时发生的事件过程。
+使用 jQuery 移除事件处理器非常容易，可以使用 `.off(events[, selector][, handler(eventObject)])` 方法。此方法的参数类似于 `.on()` 事件处理器。参数匹配非常紧密，因此你可以为元素添加多个事件处理器。使用这些参数有助于 jQuery 知道哪个事件与你想要关闭的事件匹配。
+
+## 控制事件
+
+处理 JavaScript 的一个重要方面是控制事件行为的能力。以下列表描述了当用户与网页或浏览器窗口交互时发生的事件过程。
 
 1.  **物理事件发生**——发生一个物理事件。例如，用户点击或移动鼠标或按键。
-2.  **事件在浏览器中触发**——用户交互导致事件被网页浏览器触发。通常，多个事件同时被触发。例如，当用户按键盘上的一个键时，会触发三个事件：keypressed、keydown和keyup。
+2.  **事件在浏览器中触发**——用户交互导致事件被网页浏览器触发。通常，多个事件同时被触发。例如，当用户按键盘上的一个键时，会触发三个事件：`keypress`、`keydown` 和 `keyup`。
 3.  **浏览器为事件创建对象**——网页浏览器为每个被触发的事件创建一个单独的对象。这些对象包含处理器可以使用的关于事件的信息。
-4.  **调用用户事件处理器**——调用用户定义的事件处理器。你可以在JavaScript中创建与事件对象或页面元素交互的处理器，以提供与HTML元素的交互性。事件处理器可以在三个阶段运行。以下描述了图6.1所示的三个阶段：
-    - **捕获**——捕获阶段发生在从文档直接通过每个父元素向下到达目标HTML元素的过程中。默认情况下，捕获阶段的事件处理器行为是禁用的。
-    - **目标**——目标阶段发生在事件位于最初触发它的HTML元素中时。
-    - **冒泡**——冒泡阶段发生在从目标HTML元素的每个父元素向上冒泡，一直回到文档的过程中。默认情况下，事件的冒泡阶段是启用的。
-5.  **调用浏览器处理器**——除了用户事件处理器外，浏览器还有默认处理器，这些处理器根据被触发的事件执行不同的操作。例如，当用户点击链接时，浏览器有一个被调用的事件处理器，它会导航到链接中指定的href位置。
+4.  **调用用户事件处理器**——调用用户定义的事件处理器。你可以在 JavaScript 中创建与事件对象或页面元素交互的处理器，以提供与 HTML 元素的交互性。事件处理器可以在三个阶段运行。以下描述了图 6.1 所示的三个阶段：
+    - **捕获**——捕获阶段发生在从文档直接通过每个父元素向下到达目标 HTML 元素的过程中。默认情况下，捕获阶段的事件处理器行为是禁用的。
+    - **目标**——目标阶段发生在事件位于最初触发它的 HTML 元素中时。
+    - **冒泡**——冒泡阶段发生在从目标 HTML 元素的每个父元素向上冒泡，一直回到文档的过程中。默认情况下，事件的冒泡阶段是启用的。
+5.  **调用浏览器处理器**——除了用户事件处理器外，浏览器还有默认处理器，这些处理器根据被触发的事件执行不同的操作。例如，当用户点击链接时，浏览器有一个被调用的事件处理器，它会导航到链接中指定的 href 位置。
 
 ![](img/476d4a1835716860dfdb11288891ad23_122_0.png)
 
-图6.1 事件首先在捕获阶段从文档向下传递到目标，然后在目标阶段，最后在冒泡阶段从目标向上传递到文档。
-
-
+**图 6.1** 事件首先在捕获阶段从文档向下传递到目标，然后在目标阶段，最后在冒泡阶段从目标向上传递到文档。
 
 ### 阻止事件冒泡到其他元素
 
 ```javascript
 function myEventHandler(e){
-  ...handler code...
+  // ...handler code...
   e.stopPropagation();
   return false;
 }
@@ -2424,7 +2319,7 @@ function myEventHandler(e){
 
 ```javascript
 function myEventHandler(e){
-  ...handler code...
+  // ...handler code...
   e.preventDefault();
   return false;
 }
@@ -2437,8 +2332,7 @@ function myEventHandler(e){
 ```javascript
 $("span").mouseenter();
 $("#myButton").click();
-$("input.bigText").trigger({type:'keypress',
-  charCode:13});
+$("input.bigText").trigger({type:'keypress', charCode:13});
 ```
 
 jQuery 对象具有诸如 `click()` 和 `dblclick()` 之类的方法，这些方法对应于你可以直接调用的许多事件类型。表单元素添加了额外的方法，如 `blur()`、`focus()`、`keypress()`、`keydown()` 和 `keyup()`，可以调用它们来触发特定事件。例如，以下语句为所有 `<span>` 元素触发点击事件：
@@ -2451,7 +2345,7 @@ jQuery 还提供了一种使用 `trigger()` 方法在指定事件对象值的同
 
 ```javascript
 trigger(eventType [, extraParameters])
-trigger( eventObject)
+trigger(eventObject)
 ```
 
 以下是一个使用第一种方法为所有 class="checkbox" 的元素触发点击事件的示例：
@@ -2463,8 +2357,7 @@ $(".checkbox").trigger("click");
 接下来是在所有 class="bigText" 的 input 项目上使用第二种方法的示例。这种方法实际上传入了一个用于 keypress 事件的简单事件对象，该对象将事件对象的 `charCode` 属性设置为 13 或回车键。
 
 ```javascript
-$("input.bigText").trigger({'type':'keypress',
-  'charCode':13});
+$("input.bigText").trigger({'type':'keypress', 'charCode':13});
 ```
 
 ### 使用事件对象
@@ -2473,10 +2366,10 @@ $("input.bigText").trigger({'type':'keypress',
 
 事件对象提供关于事件的附加信息，例如事件的类型（如点击或按键）、按下了哪些键、鼠标的位置、事件发生在哪个 HTML 元素上等等。表 6.2 描述了你将使用的最常用的事件属性。
 
-表 6.2 JavaScript 和 jQuery 事件对象属性
+#### 表 6.2 JavaScript 和 jQuery 事件对象属性
 
 | 属性 | 描述 |
-|---|---|
+| :--- | :--- |
 | altKey | 如果在事件期间按下了 Alt 键则为 true；否则为 false。 |
 | button | 返回按下的鼠标按钮编号：0 表示左键，1 表示中键，2 表示右键。 |
 | cancelable | 如果事件的默认操作可以被阻止则为 true；否则为 false。 |
@@ -2488,7 +2381,7 @@ $("input.bigText").trigger({'type':'keypress',
 | data | 在事件对象创建时定义的用户数据，并在事件触发时附加到传递给事件处理程序的事件对象上。 |
 | delegateTarget | 用于在 jQuery 的 `.delegate()` 或 `.on()` 方法中附加事件处理程序的 HTML 元素的 DOM 对象。（`.on()` 和 `.delegate()` 将在本章后面讨论。）仅在 jQuery 事件对象上可用。 |
 | eventPhase | 事件处理程序当前运行的阶段，其中 1 表示在目标阶段，2 表示冒泡阶段，3 表示捕获阶段。 |
-| metaKey | 如果在事件期间按下了“meta”键则为 true；否则为 false。 |
+| metaKey | 如果在事件期间按下了 "meta" 键则为 true；否则为 false。 |
 | relatedTarget | 标识相对于 UI 事件的次要目标。例如，当使用 mouseover 和 mouseexit 事件时，此属性表示正在离开或进入的目标。 |
 | results | 由该事件触发的事件处理程序返回的最后一个值。仅在 jQuery 事件对象上可用。 |
 | screenX | 基于实际显示坐标的水平坐标。 |
@@ -2537,7 +2430,7 @@ function myHandler(e){
 
 此外，JavaScript 鼠标事件还包括 `event.clientX` 和 `event.clientY` 属性，允许你获取距离浏览器窗口顶部和左侧的像素偏移量。这些通常更为重要，因为它们有助于确定鼠标相对于网页的位置。
 
-### 处理鼠标事件
+## 处理鼠标事件
 
 Web 浏览器中最常见的事件是鼠标事件。鼠标的每次移动都是一个事件。事件还包括鼠标进入或离开 HTML 元素，以及鼠标点击和滚动。本节中的段落为你提供了一些在 JavaScript 和 jQuery 代码中使用鼠标事件的示例。
 
@@ -2554,11 +2447,9 @@ $("span").on("dblclick", function (e){
 
 要在 jQuery 中注册点击处理程序，你应该使用 `.on("click")` 或 `.on("dblclick")` 方法。在处理函数内部，你可以执行任何事件处理逻辑。
 
-
-
 功能。使用 jQuery 选择器可以轻松地为多个对象应用点击事件处理程序。例如，以下代码为所有 `<div>` 元素应用了一个点击事件处理程序：
 
-```
+```javascript
 $("div").on("click", function (e){
   $(this).html("You clicked here.");
 });
@@ -2566,7 +2457,7 @@ $("div").on("click", function (e){
 
 ### 处理鼠标进入或离开元素
 
-```
+```javascript
 $("p").on("mouseover", function (e){
   $(this).html("Hello mouse.");
 });
@@ -2579,14 +2470,17 @@ $("p").on("mouseout", function (e){
 
 ### 应用右键单击
 
-```
+```javascript
 $("#menu").hide();
 $("#main").on("mousedown", function(e){
-  if(e.button == 2){ $("#menu").show(); } });
+  if(e.button == 2){ $("#menu").show(); }
+});
 $("#main").on("mouseup", function(e){
-  if(e.button == 2){ $("#menu").hide(); } });
+  if(e.button == 2){ $("#menu").hide(); }
+});
 $("#main").on("contextmenu", function(e){
-  return false; });
+  return false;
+});
 ```
 
 为元素应用右键单击需要一些额外的操作，因为浏览器的默认行为是弹出浏览器页面的右键菜单。
@@ -2595,7 +2489,7 @@ $("#main").on("contextmenu", function(e){
 
 你还需要在大多数情况下抑制浏览器的默认 `contextmenu` 行为，如第 14 和 15 行所示，以便添加你自己的右键单击行为。以下代码示例演示了如何实现你自己的自定义弹出菜单的框架，该菜单仅在右键单击时显示，如图 6.2 所示：
 
-```
+```html
 01 <html>
 02 <head>
 03   <title>Python Phrasebook</title>
@@ -2616,9 +2510,6 @@ $("#main").on("contextmenu", function(e){
 18     });
 19   </script>
 20 </head>
-```
-
-```
 19 <body>
 20   <div id="main"> Right-Click Me
 21     <div id="menu">
@@ -2629,42 +2520,52 @@ $("#main").on("contextmenu", function(e){
 26 </html>
 ```
 
-ch0601.html
+`ch0601.html`
 
 ![](img/476d4a1835716860dfdb11288891ad23_132_0.png)
 
-### 处理键盘事件
+## 处理键盘事件
 
 处理网页时，一个经常被忽略的事件是键盘事件。然而，键盘事件可能是最有用的事件之一，特别是如果你想让你的网站感觉更像一个 Web 应用程序。
-用户习惯于在向应用程序中的字段输入数据时，通过热键执行不同的功能和交互。键盘事件让你能够做到这一点。以下短语将向你如何检测键盘输入并利用事件对象来确定按下了哪个键。
+
+用户习惯于在向应用程序中的字段输入数据时，通过热键执行不同的功能和交互。键盘事件让你能够做到这一点。以下短语将向你展示如何检测键盘输入并利用事件对象来确定按下了哪个键。
 
 ### 检测文本输入元素的更改
 
-```
+```javascript
 $("input[type=text]").on("keypress",
     function(){
-        $("#p1").html("Key Pressed"); });
+        $("#p1").html("Key Pressed");
+    }
+);
 $("input[type=text]").on("keydown",
     function(){
-        $("#p1").html("Key is Down"); });
+        $("#p1").html("Key is Down");
+    }
+);
 $("input[type=text]").on("keyup",
     function(){
-        $("#p1").html("Key is Up"); });
+        $("#p1").html("Key is Up");
+    }
+);
 ```
 
 JavaScript 提供了三个在键盘上按下键时触发的事件：`keydown`、`keypress` 和 `keyup`。这些事件允许你捕获进入文本输入的每一次按键。
 
 例如，如果你想添加一个在文本输入中每次按键时都触发的事件处理程序，你可以使用以下代码：
 
-```
+```javascript
 $("input[type=text]").on("keypress",
-    function(){handler_code});
+    function(){ handler_code });
 ```
 
 > **你知道吗？**
-在处理输入元素的键盘事件时，获取文本框中文本的一个有用技巧是使用 `keyup` 事件而不是 `keypress` 事件。当 `keypress` 事件被触发时，输入框的值可能还不包括键入的字符。但是，如果你使用 `keyup` 事件，文本框的值将始终包含键入的字符。
+>
+> 在处理输入元素的键盘事件时，获取文本框中文本的一个有用技巧是使用 `keyup` 事件而不是 `keypress` 事件。当 `keypress` 事件被触发时，输入框的值可能还不包括键入的字符。但是，如果你使用 `keyup` 事件，文本框的值将始终包含键入的字符。
 
 ### 确定按下了哪个键
+
+
 
 ```
 $("input[type=text]").on("keypress",
@@ -2751,7 +2652,7 @@ $("select").on("change",
 $("input[type=checkbox]").on("change",
     function(e) {
         checkbox_change_code_here });
-$(" input[type=radio]").on("change",
+$("input[type=radio]").on("change",
     function(e) {
         radio_change_code_here });
 ```
@@ -2767,9 +2668,7 @@ $("#formElement").on("change",
 });
 ```
 
-# 7
-
-## 动态操作网页元素
+# 第7章 动态操作网页元素
 
 动态编程的核心是通过程序化方式实时更改现有的网页元素，以响应用户输入。这提供了人们开始期望从所有网站获得的丰富交互体验。
 
@@ -2960,7 +2859,9 @@ $("li").on("click", function(){
 你可以使用 jQuery 的 `.css(property, value)` 或 `.css({property:value, property:value...})` 方法来更改应用于元素边框的 CSS 属性。
 
 > **顺便说一下**
+
 你可以使用 border 属性同时设置所有边框选项，包括大小、样式和颜色，例如：
+
 `$(this).css({"border":"3px groove black"});`
 
 以下代码提供了一个很好的示例，展示了如何使用 jQuery 动态地为 `<ul>` 和 `<li>` 元素添加边框。我提供了两个示例：一个是在单个 border 属性设置中更改所有属性，另一个是逐个更改它们。一个点击处理程序将边框应用到列表元素和列表项元素，如图 7.3 所示：
@@ -2979,7 +2880,7 @@ $("li").on("click", function(){
 11         });
 12         $("li").on("click", function(){
 13             $(this).css({"border-style":"dotted",
-14                            "border-size":1,
+14                            "border-width":1,
 15                            "border-color":"blue"});
 16         });
 17       });
@@ -3158,6 +3059,7 @@ $("#p1").append(". . .read");
 ```
 
 另一个常见的动态任务是向基本 HTML 元素（如 span 或段落）添加文本。jQuery 使用 `.append()` 方法使这变得非常简单。此方法将内容附加到元素当前内容的末尾。无论内容是字符串还是其他元素，这都无关紧要。
+
 例如，以下代码将文本 ". . .read" 附加到 id="p1" 的段落：
 
 ```javascript
@@ -3165,13 +3067,12 @@ $("#p1").append(". . .read");
 ```
 
 你可能还希望在元素内容的开头添加文本。在 jQuery 中，`.prepend()` 方法将内容添加到元素当前内容的开头。无论内容是字符串还是其他元素，这都无关紧要。
+
 例如，以下代码将文本 "*New* :" 添加到 id="p1" 的段落开头：
 
 ```javascript
 $("#p1").prepend("*New* :");
 ```
-
-
 
 ### 替换元素文本
 
@@ -3203,7 +3104,7 @@ newP.html("This is a new paragraph.");
 $("div").append(newP);
 ```
 
-### 动态操作网页布局
+# 第8章 动态操作网页布局
 
 你可以与网页进行的最酷的交互之一是根据用户交互重新排列页面上的元素。例如，你可以使元素变大或变小，甚至改变其位置。此外，你还可以更改元素的可见性，在不需要时隐藏它们，在适当时显示它们。
 
@@ -3222,8 +3123,6 @@ $("#down").on("click", function(){
     $("#leftNav").show();
 });
 ```
-
-**144 第 8 章 动态操作网页布局**
 
 改变网页外观的一种简单方法是切换元素的可见性。隐藏不必要的元素，只在需要时显示它们，可以节省大量屏幕空间，这在实现良好的 Web 应用程序中至关重要。
 
@@ -3292,7 +3191,7 @@ jQuery 提供的另一个有价值的工具是 `.toggle()` 方法。此方法将
 44 </html>
 ```
 
-`ch0801.html`
+ch0801.html
 
 ![菜单示例](img/476d4a1835716860dfdb11288891ad23_160_0.png)
 
@@ -3368,8 +3267,6 @@ obj.css("opacity", "1");
 32     <img id="up" src="increase.png" />
 ```
 
-
-
 ### 调整元素大小
 
 ```javascript
@@ -3395,6 +3292,7 @@ $("#down").on("click", function(){
 | outerWidth([includeMargin]) | 返回集合中第一个元素的当前宽度，包括内边距和边框；如果指定，则还包括外边距。 |
 
 > **注意！**
+
 > `height` 和 `width` 方法仅返回 jQuery 对象集合中第一个元素的大小。对于只包含单个对象的集合，这没有问题。只需记住，集合中的其他对象可能具有不同的大小。
 
 为了说明如何获取和设置元素大小，请看以下示例代码。此代码定义了一个包含一张照片和两个按钮的网页。按钮的点击处理函数通过使用 `.width()` 方法获取图像宽度来增加或减小图像尺寸。在处理函数中，当宽度改变时，图像会自动调整大小。为了调整大小，将新的值 `width*1.2` 或 `width*.8` 传回 `.width()` 方法。图 8.3 展示了调整图像大小的按钮：
@@ -3526,11 +3424,7 @@ $("img").on("click", function(){
 
 您能为网页制作的最酷交互之一，就是根据用户交互重新排列元素，使其相互堆叠。其原理是 HTML 元素可以像桌子上的纸张一样简单地相互堆叠在上方。在任何时候，您都可以显示一个隐藏或部分隐藏的元素，并将其放置在其他元素之上。
 
-
-
-# 第8章 动态操作网页布局
-
-z-index 是一个 CSS 属性，它指定 HTML 元素相对于其他元素的位置，这种位置关系不是垂直或水平的，而是沿垂直于屏幕的方向（朝向用户）的投影。当浏览器渲染页面时，具有最高 z-index 的元素会显示在其他元素之上。
+`z-index` 是一个 CSS 属性，它指定 HTML 元素相对于其他元素的位置，这种位置关系不是垂直或水平的，而是沿垂直于屏幕的方向（朝向用户）的投影。当浏览器渲染页面时，具有最高 z-index 的元素会显示在其他元素之上。
 
 要在 jQuery 中获取和设置 z-index，请使用 `.css()` 方法。例如，要获取某个元素的 z-index，可以使用以下代码：
 
@@ -3573,7 +3467,7 @@ fixed; }
 23 #photo3 { top:120px; left:120px; }
 24 </style>
 25 </head>
-26 <body>
+26   <body>
 27 <img id="photo1" src="arch.jpg" />
 28 <img id="photo2" src="beach.jpg" />
 29 <img id="photo3" src="flower.jpg" />
@@ -3619,6 +3513,7 @@ $("#textbox1").val("new string");
 ```
 
 > **注意！**
+
 > `.attr()`、`.prop()` 和 `.val()` 方法只获取匹配的 jQuery 集合中第一个元素的值。如果你在集合中处理多个元素，你可能需要使用 `.map()` 或 `.each()` 方法来获取所有元素的值。
 
 ### 检查和更改复选框状态
@@ -3740,9 +3635,7 @@ HTML：
 </select>
 ```
 
-
-
-## jQuery:
+jQuery:
 
 ```
 $("#mySelect").val();
@@ -4025,6 +3918,8 @@ ch0903.html
 
 ### 控制表单提交
 
+
+
 ```
 $("form").submit(function(e){
     alert("Sorry. Not yet Implemented.");
@@ -4065,24 +3960,24 @@ opt.val(1);
 opt.attr("selected",true);
 ```
 
-jQuery 的一个极其重要的方面是能够从 HTML 字符串创建 HTML 元素。要从字符串创建 HTML 对象，只需调用 jQuery(htmlString) 或 $(htmlString)。该字符串可以包含属性设置和内容。例如：
+jQuery 的一个极其重要的方面是能够从 HTML 字符串创建 HTML 元素。要从字符串创建 HTML 对象，只需调用 `jQuery(htmlString)` 或 `$(htmlString)`。该字符串可以包含属性设置和内容。例如：
 
 ```
 var newP = $('<p id="newp" class="nice">new Paragraph</p>');
 ```
 
-注意，我使用单引号来定义 htmlString。这使我能够放入 id="newp" 和 class="nice"，而无需转义双引号。生成的 newP 对象是一个 jQuery 对象，其中包含一个 <p> 元素。
+注意，我使用单引号来定义 `htmlString`。这使我能够放入 `id="newp"` 和 `class="nice"`，而无需转义双引号。生成的 `newP` 对象是一个 jQuery 对象，其中包含一个 `<p>` 元素。
 
-构建 HTML 的另一个巨大优势是你可以使用 .attr()、.html()、.prop()、.val() 和 .data() 方法来存储额外的值，并设置属性、属性和内容。
+构建 HTML 的另一个巨大优势是你可以使用 `.attr()`、`.html()`、`.prop()`、`.val()` 和 `.data()` 方法来存储额外的值，并设置属性、属性和内容。
 
-例如，以下代码创建一个图像元素，然后分配 src 属性：
+例如，以下代码创建一个图像元素，然后分配 `src` 属性：
 
 ```
 var img = $("<img></img>");
 img.attr("src", "images/newImg.jpg");
 ```
 
-另一个例子创建一个新的 <option>，分配一个值，然后通过将 <select> 的值设置为选项的值，将 <option> 设置为选中：
+另一个例子创建一个新的 `<option>`，分配一个值，然后通过将 `<select>` 的值设置为选项的值，将 `<option>` 设置为选中：
 
 ```
 var opt = $("<option></option>");
@@ -4106,9 +4001,9 @@ $("<p>Paragraph A</p>").prependTo("div");
 
 jQuery 提供了在元素中现有内容之前前置内容的方法。例如，你可以在现有列表项、表格行或段落文本之前添加列表项、表格行或段落文本。
 
-这些方法是 existingObject.prepend(newContent) 和 newContent.prependTo(existingObject)。existingObject 可以是你已经拥有的对象，也可以使用选择器来指定现有对象。
+这些方法是 `existingObject.prepend(newContent)` 和 `newContent.prependTo(existingObject)`。`existingObject` 可以是你已经拥有的对象，也可以使用选择器来指定现有对象。
 
-例如，以下代码创建一个新的 <div> 并将其附加到 body。然后它使用两种不同的方法各前置一个段落：
+例如，以下代码创建一个新的 `<div>` 并将其附加到 body。然后它使用两种不同的方法各前置一个段落：
 
 ```
 var newDiv = $("<div></div>");
@@ -4128,9 +4023,9 @@ $("<p>Paragraph B</p>").appendTo("div");
 
 jQuery 还提供了在元素中现有内容之后附加内容的方法。例如，你可以在列表项、表格行或段落文本的末尾添加列表项、表格行或段落文本。
 
-这些方法是 existingObject.append(newContent) 和 newContent.appendTo(existingObject)。existingObject 可以是你已经拥有的对象，也可以使用选择器来指定现有对象。
+这些方法是 `existingObject.append(newContent)` 和 `newContent.appendTo(existingObject)`。`existingObject` 可以是你已经拥有的对象，也可以使用选择器来指定现有对象。
 
-例如，以下代码创建一个新的 <div> 并将其附加到 body。然后它使用两种不同的方法各附加一个段落：
+例如，以下代码创建一个新的 `<div>` 并将其附加到 body。然后它使用两种不同的方法各附加一个段落：
 
 ```
 var newDiv = $("<div></div>");
@@ -4152,7 +4047,7 @@ $("<p>Sub Title</p>").after("#title");
 
 jQuery 提供了在现有内容之前和之后立即插入内容的方法。新内容是现有内容的同级元素。
 
-要在现有元素之前插入一个元素，请使用 existingObject.insertBefore(newContent) 或 newContent.before(existingObject)。existingObject 可以是你已经拥有的对象，也可以使用选择器来指定现有对象。
+要在现有元素之前插入一个元素，请使用 `existingObject.insertBefore(newContent)` 或 `newContent.before(existingObject)`。`existingObject` 可以是你已经拥有的对象，也可以使用选择器来指定现有对象。
 
 例如，以下代码在列表中已有的第三个项目之前立即插入一个新的列表项：
 
@@ -4160,15 +4055,13 @@ jQuery 提供了在现有内容之前和之后立即插入内容的方法。新�
 $("ul li:eq(2)").before($("<li>New Item</li>"));
 ```
 
-
-
-以下代码使用`.before()`方法在id="subtitle"的段落之前插入一个新段落：
+以下代码使用 `.before()` 方法在 id="subtitle" 的段落之前插入一个新段落：
 
 ```
 $("<p>Title</p>").before("#subtitle");
 ```
 
-要在现有元素之后插入一个元素，请使用`existingObject.insertAfter(newContent)`或`newContent.after(existingObject)`。`existingObject`可以是你已经拥有的对象，也可以使用选择器来指定现有对象。
+要在现有元素之后插入一个元素，请使用 `existingObject.insertAfter(newContent)` 或 `newContent.after(existingObject)`。`existingObject` 可以是你已经拥有的对象，也可以使用选择器来指定现有对象。
 
 例如，以下代码在列表中已有的第三个项目之后立即插入一个新的列表项：
 
@@ -4176,7 +4069,7 @@ $("<p>Title</p>").before("#subtitle");
 $("ul li:eq(2)").insertAfter($("<li>New Item</li>"));
 ```
 
-以下代码使用`.after()`方法在id="title"的段落之后立即插入一个新段落：
+以下代码使用 `.after()` 方法在 id="title" 的段落之后立即插入一个新段落：
 
 ```
 $("<p>Sub Title</p>").after("#title");
@@ -4184,7 +4077,7 @@ $("<p>Sub Title</p>").after("#title");
 
 ## 添加元素示例
 
-以下代码在点击按钮时，会向现有的`<div>`元素追加、插入和前置段落，以便你可以看到动态插入是如何工作的。图10.1展示了添加元素前后页面的样式：
+以下代码在点击按钮时，会向现有的 `<div>` 元素追加、插入和前置段落，以便你可以看到动态插入是如何工作的。图10.1展示了添加元素前后页面的样式：
 
 ```
 01 <html>
@@ -4225,27 +4118,27 @@ $("p").remove(".menu");
 $("#myList").children("li").remove();
 ```
 
-你可以使用jQuery对象上的`.remove([selector])`方法从网页中移除元素。此方法会修改DOM并从树中移除节点。
+你可以使用 jQuery 对象上的 `.remove([selector])` 方法从网页中移除元素。此方法会修改 DOM 并从树中移除节点。
 
-使用`.remove()`方法有几种不同的方式。不带参数调用`.remove()`会移除jQuery对象集合中的所有元素。例如，以下语句移除所有`<p>`元素：
+使用 `.remove()` 方法有几种不同的方式。不带参数调用 `.remove()` 会移除 jQuery 对象集合中的所有元素。例如，以下语句移除所有 `<p>` 元素：
 
 ```
 $("p").remove();
 ```
 
-你也可以向`.remove()`传入一个选择器，这将把移除操作限制在集合中匹配选择器值的项目上。例如，以下语句移除所有class="menu"的`<p>`元素：
+你也可以向 `.remove()` 传入一个选择器，这将把移除操作限制在集合中匹配选择器值的项目上。例如，以下语句移除所有 class="menu" 的 `<p>` 元素：
 
 ```
 $("p").remove(".menu");
 ```
 
-通常，你可能不想移除元素本身，而是想移除它的子元素。例如，以下代码移除id="myList"列表中的所有`<li>`元素：
+通常，你可能不想移除元素本身，而是想移除它的子元素。例如，以下代码移除 id="myList" 列表中的所有 `<li>` 元素：
 
 ```
 $("#myList").children("li").remove();
 ```
 
-以下代码展示了使用选择器从列表中移除元素的示例。该代码首先生成一个包含十个元素的列表，然后提供按钮来调用处理程序，这些处理程序使用`.remove("li:even")`或`.remove("li:odd")`仅从列表中移除偶数或奇数元素，如图10.2所示：
+以下代码展示了使用选择器从列表中移除元素的示例。该代码首先生成一个包含十个元素的列表，然后提供按钮来调用处理程序，这些处理程序使用 `.remove("li:even")` 或 `.remove("li:odd")` 仅从列表中移除偶数或奇数元素，如图10.2所示：
 
 ```
 01 <html>
@@ -4278,7 +4171,7 @@ ch1002.html
 
 ![](img/476d4a1835716860dfdb11288891ad23_200_0.png)
 
-## 动态创建Select表单元素
+## 动态创建 Select 表单元素
 
 ```
 var select = $("<select></select>");
@@ -4289,15 +4182,15 @@ select.append(opt);
 select.val(opt.val());
 ```
 
-jQuery使得动态生成select元素变得简单。如果你需要添加具有大量选项的select，或者select的数据是以动态方式（如用户输入或AJAX请求）获取时，这非常有用。
+jQuery 使得动态生成 select 元素变得简单。如果你需要添加具有大量选项的 select，或者 select 的数据是以动态方式（如用户输入或 AJAX 请求）获取时，这非常有用。
 
-要动态创建一个select，首先需要使用以下代码创建一个`<select>`元素：
+要动态创建一个 select，首先需要使用以下代码创建一个 `<select>` 元素：
 
 ```
 var select = $("<select></select>");
 ```
 
-然后你需要通过创建`<option>`元素、设置选项的值，然后定义在select中显示的HTML来添加选项。以下代码创建一个新的`<option>`并将其添加到`<select>`中：
+然后你需要通过创建 `<option>` 元素、设置选项的值，然后定义在 select 中显示的 HTML 来添加选项。以下代码创建一个新的 `<option>` 并将其添加到 `<select>` 中：
 
 ```
 var opt = $("<option></option>");
@@ -4306,13 +4199,13 @@ opt.html("Option 1");
 select.append(opt);
 ```
 
-你也可以通过使用以下语句将select的值设置为选项的值，来将某个选项设为选中状态：
+你也可以通过使用以下语句将 select 的值设置为选项的值，来将某个选项设为选中状态：
 
 ```
 select.val(opt.val());
 ```
 
-以下代码展示了使用for循环和月份名称数组动态构建月份、日期、年份日期选择器的示例。图10.3展示了动态生成的选择器：
+以下代码展示了使用 for 循环和月份名称数组动态构建月份、日期、年份日期选择器的示例。图10.3展示了动态生成的选择器：
 
 ```
 01 <html>
@@ -4363,7 +4256,7 @@ ch1003.html
 
 ![](img/476d4a1835716860dfdb11288891ad23_202_0.png)
 
-图10.3 使用ch1003.html中的jQuery和JavaScript代码动态创建select元素。
+图10.3 使用 ch1003.html 中的 jQuery 和 JavaScript 代码动态创建 select 元素。
 
 ## 向表格追加行
 
@@ -4374,7 +4267,7 @@ newRow.append(newCell);
 $("tbody").append(newRow);
 ```
 
-动态操作网页的常见任务之一是向表格中的元素添加行。要向表格添加行，你需要创建一个新的`<tr>`元素，然后添加`<td>`元素。例如：
+动态操作网页的常见任务之一是向表格中的元素添加行。要向表格添加行，你需要创建一个新的 `<tr>` 元素，然后添加 `<td>` 元素。例如：
 
 ```
 var newRow = $("<tr></tr>");
@@ -4383,7 +4276,7 @@ newRow.append(newCell);
 $("tbody").append(newRow);
 ```
 
-以下示例展示了使用一系列数组填充数据来构建表格的方法。`buildTable()`函数从数组中随机选择一个项目放入`<td>`元素中。图10.4展示了最终的表格：
+以下示例展示了使用一系列数组填充数据来构建表格的方法。`buildTable()` 函数从数组中随机选择一个项目放入 `<td>` 元素中。图10.4展示了最终的表格：
 
 ```
 01 <html>
@@ -4434,8 +4327,6 @@ $("tbody").append(newRow);
 
 ch1004.html
 
-
-
 | ID# | 产品 | 数量 | 价格 |
 |-----|---------|----------|-------|
 | 1 | 儿童M码腰带 | 20 | 67.84 |
@@ -4469,7 +4360,7 @@ else {
 
 一种添加项目的方法是遍历列表元素，直到找到一个大于新项目的元素。然后将新项目插入到该现有项目之前。如果未找到更大的项目，则只需将项目追加到列表末尾。
 
-以下示例展示了如何使用文本输入框，允许用户通过输入项目并按回车键来向购物清单中添加项目。项目会按照字母顺序在`addToList()`函数中添加。图10.5展示了向列表中添加项目的过程：
+以下示例展示了如何使用文本输入框，允许用户通过输入项目并按回车键来向购物清单中添加项目。项目会按照字母顺序在 `addToList()` 函数中添加。图10.5展示了向列表中添加项目的过程：
 
 ```html
 01 <html>
@@ -4516,7 +4407,7 @@ ch1005.html
 
 ![](img/476d4a1835716860dfdb11288891ad23_207_0.png)
 
-图10.5 使用ch1005.html中的jQuery和JavaScript代码动态地将项目按字母顺序插入列表。
+图10.5 使用 ch1005.html 中的 jQuery 和 JavaScript 代码动态地将项目按字母顺序插入列表。
 
 ## 创建动态图像画廊
 
@@ -4526,9 +4417,9 @@ img.attr("src", "images/newImage.jpg");
 $("div").append(img);
 ```
 
-图像正成为网页的主流内容。它们传递的信息量远大于文本，而且通常更快、更准确。jQuery和JavaScript允许你通过按需创建图像元素，设置每个元素的源属性，然后将其追加到正确的位置，从而动态地将图像添加到网页。
+图像正成为网页的主流内容。它们传递的信息量远大于文本，而且通常更快、更准确。jQuery 和 JavaScript 允许你通过按需创建图像元素，设置每个元素的源属性，然后将其追加到正确的位置，从而动态地将图像添加到网页。
 
-例如，以下代码创建一个`<img>`元素，设置src属性以定义文件位置，然后将图像追加到一个`<div>`元素中：
+例如，以下代码创建一个 `<img>` 元素，设置 src 属性以定义文件位置，然后将图像追加到一个 `<div>` 元素中：
 
 ```javascript
 var img = $("<img></img>");
@@ -4536,7 +4427,7 @@ img.attr("src", "images/newImage.jpg");
 $("div").append(img);
 ```
 
-作为示例，以下代码使用图像名称数组在网页上动态构建一个小型图像画廊。`addImages()`函数遍历图像列表，然后通过创建`<img>`、`<span>`和`<p>`元素将图像追加到页面中。图10.6显示了最终的图像画廊：
+作为示例，以下代码使用图像名称数组在网页上动态构建一个小型图像画廊。`addImages()` 函数遍历图像列表，然后通过创建 `<img>`、`<span>` 和 `<p>` 元素将图像追加到页面中。图10.6显示了最终的图像画廊：
 
 ```html
 01 <html>
@@ -4587,9 +4478,9 @@ ch1006.html
 
 ![](img/476d4a1835716860dfdb11288891ad23_210_0.png)
 
-图10.6 使用ch1006.html中的jQuery和JavaScript代码动态生成图像画廊。
+图10.6 使用 ch1006.html 中的 jQuery 和 JavaScript 代码动态生成图像画廊。
 
-## 添加HTML5 Canvas图形
+## 添加 HTML5 Canvas 图形
 
 ```javascript
 var c = $("canvas").get(0);
@@ -4610,11 +4501,11 @@ for (var idx in lineValues){
 ctx.stroke();
 ```
 
-随着HTML5逐渐成为主流，图形方面也出现了许多新的可能性。使用动态的jQuery和JavaScript代码配合新的`<canvas>`元素，你可以轻松地为网页提供一些丰富、交互式的图形。
+随着 HTML5 逐渐成为主流，图形方面也出现了许多新的可能性。使用动态的 jQuery 和 JavaScript 代码配合新的 `<canvas>` 元素，你可以轻松地为网页提供一些丰富、交互式的图形。
 
-使用JavaScript，你可以访问`<canvas>`元素，获取上下文，设置线条颜色和大小，然后向文件中添加线条。为了说明这一点，请看以下代码中的`renderSpark()`函数。
+使用 JavaScript，你可以访问 `<canvas>` 元素，获取上下文，设置线条颜色和大小，然后向文件中添加线条。为了说明这一点，请看以下代码中的 `renderSpark()` 函数。
 
-这段代码接受一个值列表和一个`<canvas>`元素，然后使用这些值在画布上绘制一系列线条。线条值是在`adjValues()`函数中动态生成的，并通过`setTimeout()`间隔更新。结果是一个动态更新的迷你折线图。你可以轻松地将`adjValues()`函数替换为AJAX请求，以从服务器获取数据来填充画布图表。图10.7展示了在画布上动态渲染的图表：
+这段代码接受一个值列表和一个 `<canvas>` 元素，然后使用这些值在画布上绘制一系列线条。线条值是在 `adjValues()` 函数中动态生成的，并通过 `setTimeout()` 间隔更新。结果是一个动态更新的迷你折线图。你可以轻松地将 `adjValues()` 函数替换为 AJAX 请求，以从服务器获取数据来填充画布图表。图10.7展示了在画布上动态渲染的图表：
 
 ```html
 01 <html>
@@ -4667,8 +4558,6 @@ getRandomArray()); });
 45    </script>
 ```
 
-
-
 # 11 添加 jQuery UI 元素
 
 jQuery UI 是建立在 jQuery 之上的一个附加库。jQuery UI 的目的是提供一组可扩展的交互、效果、小部件和主题，使你更容易在网页中整合专业的用户界面元素。
@@ -4686,7 +4575,7 @@ jQuery UI 库提供了许多功能。本章的短语旨在帮助你开始使用 
 
 1.  从 http://jqueryui.com/download/ 下载该库。
 2.  解压缩下载文件的内容。
-3.  将下载文件中的 jquery-ui-###.js、jquery-ui-###.css 和 images 文件夹复制到你网站中页面可以访问的位置。images 文件夹需要与 .css 文件在同一位置。
+3.  将下载文件中的 `jquery-ui-###.js`、`jquery-ui-###.css` 和 images 文件夹复制到你网站中页面可以访问的位置。images 文件夹需要与 .css 文件在同一位置。
 4.  将以下行添加到你网页的头部以加载 jQuery UI 代码。你需要替换版本号以匹配你下载的版本，并在 src 和 href 属性中设置适当的路径：
 
 ```html
@@ -4697,6 +4586,7 @@ jQuery UI 库提供了许多功能。本章的短语旨在帮助你开始使用 
 ```
 
 > **顺便一提**
+>
 > jQuery UI 库基于 jQuery 库，因此你需要先加载 jQuery 库。
 
 ## 实现自动完成输入
@@ -4713,7 +4603,7 @@ $("#autocomplete").autocomplete({
 
 自动完成小部件附加到文本输入元素上。当用户在文本输入框中输入时，会显示来自列表的建议。当你有一个有限的可能性集合可供输入，并且希望确保使用正确的拼写时，这尤其有用。
 
-要应用自动完成小部件，请定义一个 source 数组，该数组包含可用于文本输入自动完成的字符串。然后在 input 元素上调用 `.autocomplete({source:array})` 方法。例如：
+要应用自动完成小部件，请定义一个 `source` 数组，该数组包含可用于文本输入自动完成的字符串。然后在 input 元素上调用 `.autocomplete({source:array})` 方法。例如：
 
 ```javascript
 $("#autocomplete").autocomplete({
@@ -4722,7 +4612,7 @@ $("#autocomplete").autocomplete({
 });
 ```
 
-以下代码通过向名为 #autocomplete 的 <input> 元素添加一个日期数组自动完成小部件，展示了使用自动完成的示例。自动完成的效果如图 11.1 所示。通过在第 16 和 17 行将 source 属性设置为日期名称数组，添加了用于自动完成的日期集合：
+以下代码通过向名为 #autocomplete 的 `<input>` 元素添加一个日期数组自动完成小部件，展示了使用自动完成的示例。自动完成的效果如图 11.1 所示。通过在第 16 和 17 行将 `source` 属性设置为日期名称数组，添加了用于自动完成的日期集合：
 
 204 第 11 章 添加 jQuery UI 元素
 
@@ -4795,7 +4685,7 @@ draggable 小部件为元素在用鼠标拖动时提供了必要的交互性。�
 $("#img1").draggable({cursor:"move", opacity:.5});
 ```
 
-表 11.1 常用 Draggable 小部件选项
+### 表 11.1 常用 Draggable 小部件选项
 
 | 选项 | 描述 |
 |---|---|
@@ -4816,37 +4706,35 @@ $("#drag1").on("dragstop",
   function(){$(this).effect("bounce", 1000); });
 ```
 
-表 11.2 Draggable 小部件事件
+### 表 11.2 Draggable 小部件事件
 
 | 事件 | 描述 |
 |---|---|
-| drag(event, ui) | 在拖动时触发。event 是 JavaScript 事件对象。ui 是一个具有以下值的对象：<br> - **helper**—表示 draggable 项目 helper 的 jQuery 对象。 <br> - **position**—包含当前 CSS 位置 {top, left} 的对象。 <br> - **offset**—包含当前 CSS 偏移 {top, left} 的对象。 |
+| drag(event, ui) | 在拖动时触发。event 是 JavaScript 事件对象。ui 是一个具有以下值的对象：<br> - `helper`—表示 draggable 项目 helper 的 jQuery 对象。<br> - `position`—包含当前 CSS 位置 {top, left} 的对象。<br> - `offset`—包含当前 CSS 偏移 {top, left} 的对象。 |
 | dragstart(event, ui) | 在拖动开始时触发。 |
 | dragstop(event, ui) | 在拖动停止时触发。 |
 
 droppable 小部件将一个元素定义为可被 draggable 项目使用的有效放置容器。这允许你使用简单的鼠标控件在元素之间提供交互。
 
-
-
 208  第11章  添加jQuery UI元素
 
-可放置部件（droppable widget）允许你指定一个`accept`函数，该函数可以处理事件的相关信息，如鼠标坐标和涉及的可拖动项。表11.3描述了更常见的可放置选项。以下代码展示了如何将可放置部件附加到一个元素上并指定容差级别：
+可放置部件（droppable widget）允许你指定一个 `accept` 函数，该函数可以处理事件的相关信息，如鼠标坐标和涉及的可拖动项。表11.3描述了更常见的可放置选项。以下代码展示了如何将可放置部件附加到一个元素上并指定容差级别：
 
 ```javascript
 $("#div1").droppable({tolerance:"touch"});
 ```
 
-### 表11.3  常用的可放置部件选项
+### 表 11.3 常用的可放置部件选项
 
 | 选项 | 描述 |
 |---|---|
-| accept | 用于筛选可放置项将接受的元素的**选择器**。 |
-| activeClass | 当一个有效的可拖动项正在被拖动时，将应用于可放置项的**类名**。 |
-| greedy | 布尔值。默认为`false`，这意味着所有有效的父可放置项也会接收到可拖动项。当为`true`时，只有第一个可放置项会接收到可拖动项。 |
-| hoverClass | 当一个有效的可拖动项悬停在可放置项上方时，将应用于可放置项的**类名**。 |
-| tolerance | 指定用于确定可拖动项是否有效的方法。可接受的值有：<br>- `fit` — 可拖动项完全覆盖可放置项。<br>- `intersect` — 可拖动项在两个方向上至少与可放置项重叠50%。<br>- **`pointer`** — 鼠标位于可放置项上方。<br>- **`touch`** — 可拖动项与可放置元素在任何位置重叠。 |
+| accept | 用于筛选可放置项将接受的元素的 `选择器`。 |
+| activeClass | 当一个有效的可拖动项正在被拖动时，将应用于可放置项的 `类名`。 |
+| greedy | 布尔值。默认为 `false`，这意味着所有有效的父可放置项也会接收到可拖动项。当为 `true` 时，只有第一个可放置项会接收到可拖动项。 |
+| hoverClass | 当一个有效的可拖动项悬停在可放置项上方时，将应用于可放置项的 `类名`。 |
+| tolerance | 指定用于确定可拖动项是否有效的方法。可接受的值有：<br>- `fit` — 可拖动项完全覆盖可放置项。<br>- `intersect` — 可拖动项在两个方向上至少与可放置项重叠50%。<br>- `pointer` — 鼠标位于可放置项上方。<br>- `touch` — 可拖动项与可放置元素在任何位置重叠。 |
 
-可放置部件还提供了额外的事件，以便在拖放过程中将处理程序附加到元素。表11.4列出了你可以在可放置项上访问的事件。以下代码展示了如何添加一个`dropactivate`事件，以便在拖动开始激活一个可放置项时应用抖动效果：
+可放置部件还提供了额外的事件，以便在拖放过程中将处理程序附加到元素。表11.4列出了你可以在可放置项上访问的事件。以下代码展示了如何添加一个 `dropactivate` 事件，以便在拖动开始激活一个可放置项时应用抖动效果：
 
 ```javascript
 $("#drop1").droppable({tolerance:"pointer"});
@@ -4854,16 +4742,16 @@ $("#drop1").on("dropactivate",
 function(){$(this).effect("shake", 1000); });
 ```
 
-### 表11.4  可放置部件事件
+### 表 11.4 可放置部件事件
 
 | 事件 | 描述 |
 |---|---|
-| dropactivate(event, ui) | 当一个有效的可拖动项开始拖动时触发。<br><br>`event`是JavaScript事件对象。<br><br>`ui`是一个包含以下值的对象：<br>- **draggable** — 代表实际可拖动项的jQuery对象。<br>- **helper** — 代表可拖动项辅助元素的jQuery对象。<br>- `position` — 包含当前可拖动CSS位置`{top, left}`的对象。<br>- `offset` — 包含当前可拖动CSS偏移量`{top, left}`的对象。 |
+| dropactivate(event, ui) | 当一个有效的可拖动项开始拖动时触发。<br><br>`event` 是 JavaScript 事件对象。<br><br>`ui` 是一个包含以下值的对象：<br>- `draggable` — 代表实际可拖动项的 jQuery 对象。<br>- `helper` — 代表可拖动项辅助元素的 jQuery 对象。<br>- `position` — 包含当前可拖动 CSS 位置 `{top, left}` 的对象。<br>- `offset` — 包含当前可拖动 CSS 偏移量 `{top, left}` 的对象。 |
 | drop(event, ui) | 当一个可拖动项被放置到可放置项上时触发。 |
 | dropout(event, ui) | 当可拖动项根据容差离开可放置项时触发。 |
 | dropover(event, ui) | 当可拖动项根据容差进入可放置项时触发。 |
 
-现在，我将尝试以实际的方式将所有这些内容整合起来。以下代码使三个图像元素变为可拖动，然后使一个`<div>`元素可放置。我在第14行使用了`"clone"`选项，这样我就可以移动图像的副本，同时将原始图像保留在原位。`drop`事件处理程序使用图像信息来创建一个新的`<div>`元素，其中包含图像和文件名，如图11.2所示：
+现在，我将尝试以实际的方式将所有这些内容整合起来。以下代码使三个图像元素变为可拖动，然后使一个 `<div>` 元素可放置。我在第14行使用了 `"clone"` 选项，这样我就可以移动图像的副本，同时将原始图像保留在原位。`drop` 事件处理程序使用图像信息来创建一个新的 `<div>` 元素，其中包含图像和文件名，如图11.2所示：
 
 ```html
 01 <html>
@@ -4938,19 +4826,19 @@ $( "#month" ).datepicker({
 });
 ```
 
-jQuery提供的日期选择器（datepicker）部件允许你实现一个日历界面，这样用户只需简单地点击鼠标就可以选择特定的日期。当用户手动输入日期出现错误时，这可以防止许多问题。
+jQuery 提供的日期选择器（datepicker）部件允许你实现一个日历界面，这样用户只需简单地点击鼠标就可以选择特定的日期。当用户手动输入日期出现错误时，这可以防止许多问题。
 
-日期选择器部件通过调用`.datepicker()`方法附加到`text`、`date`或`datetime`类型的`<input>`元素上。当用户点击`<input>`时，日历就会显示出来。你也可以添加一个图标图片来启动日期选择器，使用`buttonImage`属性。
+日期选择器部件通过调用 `.datepicker()` 方法附加到 `text`、`date` 或 `datetime` 类型的 `<input>` 元素上。当用户点击 `<input>` 时，日历就会显示出来。你也可以添加一个图标图片来启动日期选择器，使用 `buttonImage` 属性。
 
 以下代码创建了一个带有图标的日期选择器，如图11.3所示。为了说明一些可用的选项，我为以下选项添加了设置：
 
 - **onSelect** — 指定一个函数，在每次选择新日期时被调用。
-- **showOn** — 设置为`"button"`，这样当按钮图标被点击时，日期选择器就会启动。
+- **showOn** — 设置为 `"button"`，这样当按钮图标被点击时，日期选择器就会启动。
 - **buttonImage** — 指定要使用的图像文件的位置。
-- **buttonImageOnly** — 当为`true`时，日期选择器仅在按钮图标被点击时启动，而不是在`<input>`被点击时。
+- **buttonImageOnly** — 当为 `true` 时，日期选择器仅在按钮图标被点击时启动，而不是在 `<input>` 被点击时。
 - **numberOfMonths** — 指定要显示的月份数。
-- **showButtonPanel** — 当为`true`时，日期选择器的底部会显示“今天”和“完成”按钮。
-- **dateFormat** — 描述要放入`<input>`字段的格式的字符串。
+- **showButtonPanel** — 当为 `true` 时，日期选择器的底部会显示“今天”和“完成”按钮。
+- **dateFormat** — 描述要放入 `<input>` 字段的格式的字符串。
 
 ```html
 01 <html>
@@ -5008,9 +4896,7 @@ $("#green").slider("value", 128);
 $("#blue").slider("value", 128);
 ```
 
-滑块（slider）部件允许你通过拖动鼠标来创建滑块控件以调整值。滑块有两个组成部分：滑动条（slide）和滑块手柄（handle）。滑动条由`.ui-slider-range`类样式化，滑块手柄由`.ui-slider-handle`类样式化。
-
-
+滑块（slider）部件允许你通过拖动鼠标来创建滑块控件以调整值。滑块有两个组成部分：滑动条（slide）和滑块手柄（handle）。滑动条由 `.ui-slider-range` 类样式化，滑块手柄由 `.ui-slider-handle` 类样式化。
 
 216    第11章    添加 jQuery UI 元素
 
@@ -5172,7 +5058,7 @@ $( "#menu" ).on("menuselect", function(e, ui){
 42          <span class="ui-icon ui-icon-stop"></span>
 43          Stop</a></li>
 44        <li><a href="#">
-45        <span class="ui-icon ui-icon-play"></span>
+45          <span class="ui-icon ui-icon-play"></span>
 46        Play</a></li>
 47        <li><a href="#">
 48        <span class="ui-icon ui-icon-seek-end"></span>
@@ -5218,8 +5104,6 @@ $(document).tooltip({
 -   **items**（项目）——指定用于确定页面元素是否支持工具提示的选择器。
 -   **content**（内容）——当支持的元素被悬停时调用的工具提示处理函数。该函数应返回要显示的内容。注意，对于图像，会在工具提示中显示一个迷你版本。
 -   **position**（位置）——指定放置工具提示的位置；例如：
-
-
 
 # 第11章 添加 jQuery UI 元素
 
@@ -5292,6 +5176,8 @@ jQuery 动画是以增量方式（对用户可见）将 HTML 元素的属性从�
 
 ### 动画化 CSS 设置
 
+
+
 ```javascript
 $("img").animate({height:100, width:100});
 $("p").animate({margin-left:30});
@@ -5306,7 +5192,8 @@ $("img").animate({height:100, width:100});
 ```
 
 > **顺便提一下**
-`.animate()` 方法只能动画化具有数值的属性。例如，你不能动画化边框样式，但可以动画化边框大小。
+>
+> `.animate()` 方法只能动画化具有数值的属性。例如，你不能动画化边框样式，但可以动画化边框大小。
 
 有几种不同的方式调用 `.animate()` 方法。以下展示了两种语法：
 
@@ -5323,6 +5210,7 @@ $("img").animate({height:100, width:100},
 ```
 
 **你知道吗？**
+
 你不能使用颜色名称动画化颜色变化，但可以使用十六进制值（如 `#ff0000`）来动画化颜色变化。
 
 表 12.1 描述了 `.animate()` 方法可用的不同选项。这些选项也适用于本章稍后将讨论的其他一些动画方法。
@@ -5331,12 +5219,12 @@ $("img").animate({height:100, width:100},
 
 | 选项 | 描述 |
 | :--- | :--- |
-| complete | 定义动画完成后要调用的函数。 |
-| duration | 指定动画运行时间的字符串或数字。可选的字符串值为 "slow" 或 "fast"。数字指定动画运行的毫秒数。如果未指定持续时间，则默认为 400ms。 |
-| easing | 指示要使用哪个缓动函数的字符串。jQuery 提供了 "swing"（默认）和 "linear" 缓动函数。jQuery UI 添加了更多。图 12.1 来自 jqueryui.com，显示了缓动图表。将图表的水平轴视为持续时间，左侧为 0 秒，右侧为完成。将图表的垂直轴视为设置值的百分比变化，底部为 0%，顶部为 100%。 |
-| queue | 可以为 true（表示动画将排队等待对象的其他动画之后执行）、false（表示动画将立即开始）或指定特定队列名称的字符串。 |
-| step | 指定在动画完成之前每一步都要执行的函数。 |
-| specialEasing | 你也可以直接在属性映射中映射缓动，允许你对不同元素使用不同的缓动。例如：<br> `$("img").animate({height:[100,"swing"], width:[100,"linear"]}, 1000);` |
+| `complete` | 定义动画完成后要调用的函数。 |
+| `duration` | 指定动画运行时间的字符串或数字。可选的字符串值为 "slow" 或 "fast"。数字指定动画运行的毫秒数。如果未指定持续时间，则默认为 400ms。 |
+| `easing` | 指示要使用哪个缓动函数的字符串。jQuery 提供了 "swing"（默认）和 "linear" 缓动函数。jQuery UI 添加了更多。图 12.1 来自 jqueryui.com，显示了缓动图表。将图表的水平轴视为持续时间，左侧为 0 秒，右侧为完成。将图表的垂直轴视为设置值的百分比变化，底部为 0%，顶部为 100%。 |
+| `queue` | 可以为 true（表示动画将排队等待对象的其他动画之后执行）、false（表示动画将立即开始）或指定特定队列名称的字符串。 |
+| `step` | 指定在动画完成之前每一步都要执行的函数。 |
+| `specialEasing` | 你也可以直接在属性映射中映射缓动，允许你对不同元素使用不同的缓动。例如：<br> `$("img").animate({height:[100,"swing"], width:[100,"linear"]}, 1000);` |
 
 ![](img/476d4a1835716860dfdb11288891ad23_245_0.png)
 
@@ -5347,6 +5235,7 @@ $("img").animate({height:100, width:100},
 你需要理解动画队列，因为如果允许用户交互（如移动鼠标或点击）排队过多动画，动画会变得迟钝并落后于用户的操作。
 
 **注意！**
+
 你需要注意从哪里触发动画。记住事件会冒泡。如果在冒泡阶段从所有级别执行相同的动画，可能会产生一些非常不希望看到的结果。为防止这种情况，你可以使用 `stopPropagation()` 和 `stopImmediatePropagation()` 方法。
 
 ### 停止动画
@@ -5393,8 +5282,6 @@ $("img").animate({width:500},
 
 实现动画时的一个很好选项是在将动画添加到队列之前添加延迟。你可以用此以更高级的方式提供动画，因为你延迟了动画队列的执行，为用户提供更好的视觉体验。
 
-
-
 ## 第12章 动画与其他特效
 
 `.delay(duration, [, queueName])` 方法允许你以毫秒为单位指定延迟时长，并可选择指定一个 `queueName`，以确定将延迟应用于哪个队列。例如，以下代码为图片添加大小动画。当大小调整完成后，会有2秒的延迟，然后不透明度动画增加到1：
@@ -5404,6 +5291,7 @@ $("img").animate({width:500}, 1000).delay(2000).animate({opacity:1}, 1000);
 ```
 
 > **顺便提一下**
+>
 > `.delay()` 方法非常适合在排队的 jQuery 效果之间进行延迟；然而，它不能完全替代 JavaScript 的 `setTimeout()` 函数，后者在某些用例中可能更为合适——特别是当你需要能够取消延迟时。
 
 ### 动画显示与隐藏
@@ -5602,8 +5490,6 @@ $("img").animate({height:.1}, 1000);
           e.stopPropagation();
 ```
 
-
-
 # 让元素滑动后消失
 
 ```javascript
@@ -5795,8 +5681,6 @@ $("img").animate({height:500, width:500}, 1000).
 
 以下代码创建了一个基本的图片画廊视图，当鼠标进入和离开图片时，会在同一动画中调整图片大小并应用透明度变化（参见图12.5）。
 
-247
-
 ```html
 <html>
 <head>
@@ -5837,8 +5721,6 @@ img{ opacity:.3; width:100px; float:left; }
 
 ch1204.html
 
-248 第12章 动画与其他特殊效果
-
 ![](img/476d4a1835716860dfdb11288891ad23_262_0.png)
 
 ### 动画移动元素
@@ -5852,8 +5734,6 @@ $("#element").animate({top:position.top+10,
 另一个适合动画实现的动态效果是元素的重定位——具体来说，就是将一个元素从一个位置移动到另一个位置。用户非常讨厌在执行某个操作后，页面元素突然出现在不同的位置。动画移动可以让用户看到元素移动的轨迹，并在他们的认知中做出必要的调整。
 
 要应用移动动画，你需要对 `top` 和 `left` CSS 属性进行动画处理。要进行垂直移动，使用 `top`；要进行水平移动，使用 `left`。例如，以下语句将元素向右移动10像素，然后向下移动10像素：
-
-
 
 ## 使用 AJAX 与 Web 服务器和 Web 服务通信
 
@@ -5882,6 +5762,7 @@ AJAX 请求的妙处在于，它们只发送和接收必要的数据位，而不
 当您从 Web 服务器请求网页时，对于您的浏览器来说，通信是同步的。这意味着浏览器在开始渲染 HTML 文档并获取必要的额外资源之前，会等待该文档从服务器下载完成。
 
 > **您知道吗？**
+>
 > 您可以使用 jQuery 和 JavaScript 进行同步 AJAX 请求。jQuery 的 `.ajax()` 方法和 JavaScript 的 `send()` 函数都有一个布尔字段允许这样做。不过，我不建议这样做，因为它可能导致浏览器锁定，从而引起用户不满。事实上，在 jQuery 1.8 及更高版本中，该选项已被弃用。
 
 异步 AJAX 通信则不同。当您发送 AJAX 请求时，控制权会立即返回给 jQuery 或 JavaScript，后者可以执行其他操作。只有在请求完成或超时后，浏览器才会触发事件，允许您处理请求数据。
@@ -5896,7 +5777,7 @@ AJAX 请求的妙处在于，它们只发送和接收必要的数据位，而不
 
 另一种选择是使用所谓的*按需 JavaScript*，这就是 JSON with Padding (JSONP) 所采用的方法。此方法利用了您可以使用以下语法从另一个网站下载脚本作为资源的事实：
 
-```
+```html
 <script type="text/javascript"
         src="http://new.domain.com/getData?jsonp=parseData">
 </script>
@@ -5941,7 +5822,7 @@ last=Dayley
 
 ### 使用 .getScript() 通过 AJAX 加载 JavaScript
 
-```
+```javascript
 $.getScript("scripts/ajax/newLibrary.js",
     function(script, status, jqxr){
         . . . 处理程序代码在此 . . .
@@ -5951,8 +5832,6 @@ $.getScript("scripts/ajax/newLibrary.js",
 脚本数据是可以加载到浏览器中并在 AJAX 请求后使用的 JavaScript 代码。处理脚本数据的最佳方式是使用 jQuery 的 `.getScript(url [, successHandler(script, status, jqXHR)])` 方法。该方法会自动加载脚本，使其可用。
 
 `url` 是脚本在服务器上的位置，可选的 `successHandler` 是在成功时触发的 AJAX 处理函数。
-
-
 
 ## 处理文本数据
 
@@ -6121,13 +6000,13 @@ xmlDoc=parser.parseFromString(
 
 | 方法/属性 | 描述 |
 | :--- | :--- |
-| open() | 允许你构造一个 GET 或 POST 请求。 |
-| send() | 将请求发送到服务器。 |
-| onreadystatechange | 当 XMLHttpRequest 对象状态改变时执行的事件处理器。 |
-| response | 浏览器根据数据类型创建的对象。 |
-| responseText | 服务器响应数据中返回的原始文本。 |
-| setRequestHeader | 允许你设置实现请求所必需的 HTTP 请求头。 |
-| status | 服务器返回的状态码（例如，200 表示成功，404 表示未找到，等等）。 |
+| `open()` | 允许你构造一个 GET 或 POST 请求。 |
+| `send()` | 将请求发送到服务器。 |
+| `onreadystatechange` | 当 XMLHttpRequest 对象状态改变时执行的事件处理器。 |
+| `response` | 浏览器根据数据类型创建的对象。 |
+| `responseText` | 服务器响应数据中返回的原始文本。 |
+| `setRequestHeader` | 允许你设置实现请求所必需的 HTTP 请求头。 |
+| `status` | 服务器返回的状态码（例如，200 表示成功，404 表示未找到，等等）。 |
 
 ## 获取 XMLHttpRequest 对象
 
@@ -6218,30 +6097,24 @@ xmlhttp.onreadystatechange=function() {
 }
 ```
 
-接下来，你需要添加 `Content-length` 和 `Content-type` 头，以确保数据在服务器端得到正确处理。`Content-length` 被设置
+接下来，你需要添加 `Content-length` 和 `Content-type` 头，以确保数据在服务器端得到正确处理。`Content-length` 被设置为参数字符串的长度。`Content-type` 头告诉服务器如何处理 POST 请求中的数据。提交表单数据时，应使用 `"application/x-www-form-urlencoded"`。
 
-
-
-## 使用AJAX与Web服务器和Web服务通信
-
-参数字符串的长度。Content-type头告诉服务器如何处理POST请求中的数据。提交表单数据时，应使用`"application/x-www-form-urlencoded"`。
-
-```
+```javascript
 var params = "first=Brad&last=Dayley&email=brad@dayleycreations.com";
-http.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-http.setRequestHeader("Content-length", params.length);
+xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+xmlhttp.setRequestHeader("Content-length", params.length);
 ```
 
-最后，你可以调用`open("POST", URL)`来打开连接，并使用`send(params)`来发送请求：
+最后，你可以调用 `open("POST", URL)` 来打开连接，并使用 `send(params)` 来发送请求：
 
-```
+```javascript
 xmlhttp.open("POST","setUserEmail.php",true);
 xmlhttp.send(params);
 ```
 
-以下代码展示了一个通过JavaScript发送POST请求到Web服务器的示例。用户和电子邮件值被添加到params字符串中，并在第24行的`send(params)`调用中被发送。图13.3显示了输入字段下方的响应字符串：
+以下代码展示了一个通过 JavaScript 发送 POST 请求到 Web 服务器的示例。用户和电子邮件值被添加到 params 字符串中，并在第 24 行的 `send(params)` 调用中被发送。图 13.3 显示了输入字段下方的响应字符串：
 
-```
+```html
 01 <html>
 02   <head>
 03     <title>Python Phrasebook</title>
@@ -6300,7 +6173,7 @@ jQuery提供了封装函数，提供了更清晰的接口来发送AJAX请求。�
 
 data参数可以是一个字符串或一个基本的JavaScript对象。在下面的例子中，`obj`、`objString`和`formString`都是有效的data参数：
 
-```
+```javascript
 var obj = {"first":"Brad", "last":"Dayley"};
 var objString = $.param(obj);
 var formString = $("form").serialize();
@@ -6308,16 +6181,16 @@ var formString = $("form").serialize();
 
 你还可以指定服务器响应成功时执行的函数。例如，以下成功处理程序将`#email`元素的值设置为响应数据的值：
 
-```
+```javascript
 $.get("getEmail.php?first=Brad&last=Dayley", null,
   function (data, status, xObj){
     $("#email").html(data);
-}));
+});
 ```
 
 `.get()`和`.post()`方法还允许你将`dataType`参数指定为字符串，如`"xml"`、`"json"`、`"script"`和`"html"`，该字符串用于格式化服务器响应数据的预期格式。例如，要指定响应类型为JSON，你可以使用：
 
-```
+```javascript
 $.get("getUser.php?first=Brad&last=Dayley", null, 
 function (data, status, xObj){
     $("#email").html(data.email);
@@ -6326,7 +6199,7 @@ function (data, status, xObj){
 
 ## 将HTML数据加载到页面元素中
 
-```
+```javascript
 $("#content").load("new.html");
 ```
 
@@ -6334,13 +6207,13 @@ $("#content").load("new.html");
 
 `.load()` AJAX方法可以从任何jQuery对象调用，它在后台执行一个AJAX get请求，格式化响应，并将其注入元素的innerHTML中。例如：
 
-```
+```javascript
 $("#content").load("new.html");
 ```
 
 以下代码展示了一个使用`.load()`方法将lorem ipsum文章数据从Web服务器加载到现有`<div>`容器中的例子。图13.4展示了通过点击左侧的导航项加载不同文章：
 
-```
+```html
 01 <html>
 02   <head>
 03     <title>Python Phrasebook</title>
@@ -6394,7 +6267,7 @@ ch1303.html
 
 ## 使用jQuery .get() AJAX请求处理JSON数据
 
-```
+```javascript
 $.get("getJSONData.php", myHandler);
 function myHandler(data){
   var responseValue = data.value;
@@ -6403,13 +6276,13 @@ function myHandler(data){
 
 使用jQuery从服务器获取JSON数据非常简单。只需调用`.get(url, handler(data))`方法，传入服务器位置的url，并指定一个处理程序来处理数据。例如：
 
-```
+```javascript
 $.get("getJSONData.php", myHandler);
 ```
 
 响应返回的JSON数据将是一个JSON对象，作为第一个参数传递给处理程序函数。你可以使用点语法访问数据；例如：
 
-```
+```javascript
 function myHandler(data){
     var responseValue = data.value;
 }
@@ -6417,7 +6290,7 @@ function myHandler(data){
 
 展示如何处理带有JSON数据的`.get()`请求的最佳方式是给你一个例子。以下代码直接向一个JSON文件发出`.get()`请求，然后使用该数据构建图13.5所示的图像列表。
 
-```
+```html
 01 <html>
 02   <head>
 03   <title>Python Phrasebook</title>
@@ -6451,8 +6324,6 @@ function myHandler(data){
 31   </body>
 32 </html>
 ```
-
-
 
 ## 使用 jQuery `.get()` AJAX 请求处理 XML 数据
 
@@ -6594,112 +6465,9 @@ $.post("setRating.php", params, myHandler);
 
 该 PHP 脚本修改用于构建图 13.7 所示数据的 JSON 文件。注意，在 `.post()` 请求的处理函数中，它会从服务器检索更新后的数据，并使用提交的值更新网页。
 
-```html
-<html>
-  <head>
-    <title>Python Phrasebook</title>
-    <meta charset="utf-8" />
-    <script type="text/javascript"
-      src="../js/jquery-2.0.3.min.js"></script>
-    <script>
-      function addTrip(data){
-        for (var idx in data){
-          var item = data[idx];
-          var div = $("<div></div>").attr("id",
-            item.location);
-          div.append($("<img></img>").attr("src",
-            "../images/"+item.image).addClass
-            ("photo"));
-          div.append($("<span></span>").html(
-            item.location));
-          for(var i=0;i<parseInt(item.rating);i++){
-            div.append($("<img></img>").attr("src",
-              "../images/star.ico")).addClass("star");
-          }
-          for(var i=0;i<(5-parseInt(item.rating));i++){
-            div.append($("<img></img>").attr("src",
-              "../images/empty.ico")).addClass
-              ("star");
-          }
-          $("#vacations").append(div);
-        }
-        $(".star").click(sendRating);
-      }
-      function getTrips(){
-        $("#vacations").children().remove();
-        $.get("trips.json", addTrip);
-      }
-      function sendRating(){
-        var parent = $(this).parent();
-        var rating = parent.children(".star").index($(this)) +1;
-        var params = [{name:"location",
-                       value:parent.attr("id")},
-                      {name:"rating", value:rating}]
-        $.post("setRating.php", params, getTrips);
-      }
-      $(document).ready(function(){
-        getTrips();
-      });
-    </script>
-    <style>
-      #banner, #vacations { display:block;
-        font-size:30px; width:500px;}
-      div, span { display:inline-block;
-        width:120px; text-align:center;}
-      span { font-size:20px; }
-      .photo { height:50px; border:5px ridge white;
-        box-shadow: 10px 10px 5px #888888;
-        margin:20px;
-        border-radius:10px;}
-      .star { border:none; height:auto; width:auto;}
-    </style>
-  </head>
-  <body>
-    <div><div id="banner">Vacations</div>
-    <div id="vacations"></div>
-  </body>
-</html>
-```
-
-**ch1306.html**
 
 
-
-向 setRating.php 发送 POST 数据
-
-```json
-[
-  {"location":"Hawaii","image":"flower.jpg","rating":"4"},
-  {"location":"Yosemite","rating":"4","image":"falls.jpg"},
-  {"location":"Montana","rating":"5","image":"bison.jpg"},
-  {"location":"Zion","rating":"5","image":"peak.jpg"}
-]
-```
-
-### 假期
-
-![](img/476d4a1835716860dfdb11288891ad23_295_0.png)
-![](img/476d4a1835716860dfdb11288891ad23_295_1.png)
-![](img/476d4a1835716860dfdb11288891ad23_295_2.png)
-![](img/476d4a1835716860dfdb11288891ad23_295_3.png)
-
-夏威夷
-
-约塞米蒂
-
-蒙大拿
-
-锡安
-
-★★★★☆
-
-★★★★☆
-
-★★★★★
-
-★★★★★
-
-图 13.7 使用 ch1306.html 中的 jQuery 代码，通过 `.post()` AJAX 请求更新服务器数据。
+# 第13章 使用 AJAX 与 Web 服务器和 Web 服务通信
 
 ## 处理 jQuery AJAX 响应
 
@@ -6714,11 +6482,11 @@ $.get("getUser.php?first=Brad&last=Dayley", null,
     });
 ```
 
-除了指定 success 选项外，包装器方法还允许你使用以下方法附加其他处理程序：
+除了指定 `success` 选项外，包装器方法还允许你使用以下方法附加其他处理程序：
 
--   `.done(data, textStatus, jqXHR)`—当从服务器接收到成功响应时调用。
--   `.fail(data, textStatus, jqXHR)`—当从服务器接收到失败响应或请求超时时调用。
--   `.always(data, textStatus, jqXHR)`—当从服务器接收到响应时总是调用。
+- `.done(data, textStatus, jqXHR)` — 当从服务器接收到成功响应时调用。
+- `.fail(data, textStatus, jqXHR)` — 当从服务器接收到失败响应或请求超时时调用。
+- `.always(data, textStatus, jqXHR)` — 当从服务器接收到响应时总是调用。
 
 例如，以下代码在请求失败时添加一个要调用的事件处理程序：
 
@@ -6731,7 +6499,7 @@ $.get("getUser.php?first=Brad&last=Dayley", null,
     });
 ```
 
-为了在实际示例中说明这一点，以下代码在一个基本登录请求上实现了 .done()、.fail() 和 .always() AJAX 事件处理程序。登录页面将用户名和密码发送到服务器端的 PHP 脚本，该脚本检查是否为 username="user" 和 password="password"。如果输入了正确的用户名和密码，请求成功；否则，请求失败。所有三种类型的处理程序函数都会调用警报，如图 13.8 所示。
+为了在实际示例中说明这一点，以下代码在一个基本登录请求上实现了 `.done()`、`.fail()` 和 `.always()` AJAX 事件处理程序。登录页面将用户名和密码发送到服务器端的 PHP 脚本，该脚本检查是否为 `username="user"` 和 `password="password"`。如果输入了正确的用户名和密码，请求成功；否则，请求失败。所有三种类型的处理程序函数都会调用警报，如图 13.8 所示。
 
 ```html
 <html>
@@ -6762,32 +6530,10 @@ $.get("getUser.php?first=Brad&last=Dayley", null,
       #title { background-color:blue; color:white;
         border-radius:10px 10px 0px 0px;
         height:30px;}
-    </style>
-  </head>
-  <body>
-    <div id="login">
-      <div id="title">Login</div>
-      <form id="loginForm">
-        Username:<br />
-        <input type="text" name="user" /><br />
-        Password:<br />
-        <input type="password" name="password" />
-        <br /><br />
-        <input type="submit" id="loginButton" value="Login" />
-      </form>
-    </div>
-  </body>
-</html>
-```
-
-284 第 13 章 使用 AJAX 与 Web 服务器和 Web 服务通信
-
-```html
-        font:bold 22px arial black; }
-  input { border-radius:10px; border:3px groove blue;
+      input { border-radius:10px; border:3px groove blue;
        margin-top:20px; padding-left:10px; }
-  label { font:italic 18px arial black; }
-  </style>
+      label { font:italic 18px arial black; }
+    </style>
   </head>
   <body>
     <div id="login">
@@ -6805,7 +6551,7 @@ $.get("getUser.php?first=Brad&last=Dayley", null,
 </html>
 ```
 
-ch1307.html
+**ch1307.html**
 
 ![](img/476d4a1835716860dfdb11288891ad23_298_0.png)
 
@@ -6841,27 +6587,28 @@ jQuery 提供了创建全局事件处理程序的方法，这些处理程序在�
 下面是一个使用全局事件处理程序设置表单类的示例：
 
 ```javascript
-$("document").ajaxStart(function(){
+$(document).ajaxStart(function(){
     $("form").addClass("processing");
 });
-$("document").ajaxComplete(function(){
+$(document).ajaxComplete(function(){
     $("form").removeClass("processing");
 });
 ```
 
 > **顺便提一下**
-> 无论 global 的值如何，对于跨域脚本或 JSONP 请求，全局事件永远不会被触发。
+>
+> 无论 `global` 的值如何，对于跨域脚本或 JSONP 请求，全局事件永远不会被触发。
 
-表 13.2 jQuery 全局 AJAX 事件处理程序注册方法
+**表 13.2 jQuery 全局 AJAX 事件处理程序注册方法**
 
 | 方法 | 描述 |
 | :--- | :--- |
-| `.ajaxComplete (function)` | 注册一个在 AJAX 请求完全完成时调用的处理程序。 |
-| `.ajaxError (function)` | 注册一个在 AJAX 请求失败时调用的处理程序。 |
-| `.ajaxSend (function)` | 注册一个在发送 AJAX 请求之前执行的函数。 |
-| `.ajaxStart (function)` | 注册一个在第一个 AJAX 请求开始时调用的处理程序。 |
-| `.ajaxStop (function)` | 注册一个在所有 AJAX 请求完成时调用的处理程序。 |
-| `.ajaxSuccess (function)` | 注册一个在任何 AJAX 请求成功完成时执行的函数。 |
+| `.ajaxComplete(function)` | 注册一个在 AJAX 请求完全完成时调用的处理程序。 |
+| `.ajaxError(function)` | 注册一个在 AJAX 请求失败时调用的处理程序。 |
+| `.ajaxSend(function)` | 注册一个在发送 AJAX 请求之前执行的函数。 |
+| `.ajaxStart(function)` | 注册一个在第一个 AJAX 请求开始时调用的处理程序。 |
+| `.ajaxStop(function)` | 注册一个在所有 AJAX 请求完成时调用的处理程序。 |
+| `.ajaxSuccess(function)` | 注册一个在任何 AJAX 请求成功完成时执行的函数。 |
 
 ### 实现底层 AJAX 请求
 
@@ -6877,12 +6624,11 @@ $.ajax({
 
 你在本章中一直在使用的所有 AJAX 请求包装器方法，在底层都是通过 `.ajax(url [, settings])` 接口处理的。这个接口使用起来稍微复杂一些，但它为你提供了更大的灵活性和对 AJAX 请求的控制。
 
-`.ajax()` 方法的调用方式与 `.get()` 和 `.post()` 相同，但 settings 参数允许你在发出请求时设置各种各样的设置。
+`.ajax()` 方法的调用方式与 `.get()` 和 `.post()` 相同，但 `settings` 参数允许你在发出请求时设置各种各样的设置。
+
 表 13.3 列出了你可以应用于 `.ajax()` 方法的更常见的设置。
 
-第 13 章 使用 AJAX 与 Web 服务器和 Web 服务通信
-
-表 13.3 续表
+**表 13.3 .ajax() 常用设置**
 
 | 方法/属性 | 描述 |
 |---|---|
@@ -6898,26 +6644,24 @@ $.ajax({
 | `type` | 设置为 GET 或 PUT 以指定请求类型。 |
 | `url` | 指定在 Web 服务器上发送请求的 URL。 |
 
-
-
-### 表 13.4 .ajax() 返回的 jqXHR 对象的常用方法和属性
+**表 13.4 .ajax() 返回的 jqXHR 对象的常用方法和属性**
 
 | 方法/属性 | 描述 |
 | :--- | :--- |
-| abort() | 中止请求。 |
-| always(function) | 指定一个在请求完成（无论成功或失败）时调用的函数。 |
-| done(function) | 指定一个在请求成功完成时调用的函数。 |
-| fail(function) | 指定一个在请求失败时调用的函数。 |
-| getAllResponseHeaders() | 返回响应中包含的所有头部信息。 |
-| getResponseHeader(name) | 返回特定响应头的值。 |
-| setRequestHeader(name, value) | 设置随 AJAX 请求发送的 HTTP 头的值。 |
-| readyState | 值：1—尚未开始加载 2—正在加载 3—已加载足够内容，用户可与之交互 4—完全加载 |
-| status | 包含服务器返回的响应状态码，例如 200 状态码表示请求成功。 |
-| statusText | 包含服务器返回的状态字符串。 |
+| `abort()` | 中止请求。 |
+| `always(function)` | 指定一个在请求完成（无论成功或失败）时调用的函数。 |
+| `done(function)` | 指定一个在请求成功完成时调用的函数。 |
+| `fail(function)` | 指定一个在请求失败时调用的函数。 |
+| `getAllResponseHeaders()` | 返回响应中包含的所有头部信息。 |
+| `getResponseHeader(name)` | 返回特定响应头的值。 |
+| `setRequestHeader(name, value)` | 设置随 AJAX 请求发送的 HTTP 头的值。 |
+| `readyState` | 值：1—尚未开始加载 2—正在加载 3—已加载足够内容，用户可与之交互 4—完全加载 |
+| `status` | 包含服务器返回的响应状态码，例如 200 状态码表示请求成功。 |
+| `statusText` | 包含服务器返回的状态字符串。 |
 
 使用 `.ajax()` 接口的一个简单示例如下所示：
 
-```
+```javascript
 $.ajax({
     url:"setEmail",
     type:"get",
@@ -6929,15 +6673,13 @@ $.ajax({
 
 `.ajax()` 方法返回一个 `jqXHR` 对象，该对象提供了一些额外的功能，尤其是在处理响应时。
 
-# 第13章 使用 AJAX 与 Web 服务器和 Web 服务通信
-
-# ## 使用 jQuery 实现移动网站
+# 第14章 使用 jQuery 实现移动网站
 
 移动设备是增长最快的开发平台。其中大部分开发都致力于使网站对移动设备友好。用户期望获得移动设备提供的可移植性，同时也希望拥有传统网站已经实现的健壮性。
 
 本章重点介绍如何使用 jQuery Mobile 库来帮助你开始创建一些简洁、炫酷的移动网页。jQuery Mobile 库功能强大。本章中的内容涵盖了基本结构、语法和概念，以帮助你实现更多种类的移动解决方案。
 
-# ## jQuery Mobile 入门
+## jQuery Mobile 入门
 
 jQuery Mobile 框架的大部分内容是通过为现有 HTML 元素扩展额外功能来构建的。jQuery Mobile 在 HTML 框架的基础上，通过向 HTML 元素添加数据属性来增强功能。
 
@@ -6945,26 +6687,26 @@ jQuery Mobile 框架的大部分内容是通过为现有 HTML 元素扩展额外
 
 表 14.1 列出了许多属性以及它们支持的一些值。该表是可视化展示数据属性方法工作原理的好方法，也可以作为参考。
 
-表 14.1 jQuery Mobile 中添加的一些数据属性
+**表 14.1 jQuery Mobile 中添加的一些数据属性**
 
 | 属性 | 描述 |
 | --- | --- |
-| data-role | 用于定义 HTML 在移动页面中扮演的角色，例如对话框、按钮或面板。 |
-| data-mini | 如果设置为 true，则每个 UI 元素都会使用一个紧凑版本。 |
-| data-theme | 指定渲染 UI 组件时使用的字母（a-z）。 |
-| data-transition | 指定从一个页面/状态过渡到另一个页面/状态时使用的过渡效果，例如滑动（slide）或弹出（pop）。 |
-| data-direction | 指定动画的方向，以便与过渡效果匹配。例如，返回页面时使用 reverse。 |
-| data-rel | 定义元素与链接的关系。值包括 back、dialog、external 和 popup。 |
-| data-title | 页面显示时显示的文本。 |
-| data-icon | 指定附加到 HTML 元素的图标。可能的值有 home、delete、plus、arrow-u、arrow-d、check、gear、grid、star、custom、arrow-r、arrow-l、minus、refresh、forward、back、alert、info 和 search。 |
-| data-iconpos | 指定图标附加到元素时的位置：left、right、top、bottom、notext。 |
-| data-add-back-btn | 对于具有 `data-role="dialog"` 的项目，如果设置为 true，则会添加一个返回按钮。 |
-| data-collapsed | 对于具有 `role="collapsible"` 的项目，指定状态是否为折叠。 |
-| data-collapsed-icon | 定义 `role="collapsible"` 元素的折叠图标。 |
-| data-expanded-icon | 定义 `role="collapsible"` 元素的展开图标。 |
-| data-close-btn | 对于具有 `role="dialog"` 的项目，如果设置为 true，则会添加一个关闭按钮。 |
+| `data-role` | 用于定义 HTML 在移动页面中扮演的角色，例如对话框、按钮或面板。 |
+| `data-mini` | 如果设置为 true，则每个 UI 元素都会使用一个紧凑版本。 |
+| `data-theme` | 指定渲染 UI 组件时使用的字母（a-z）。 |
+| `data-transition` | 指定从一个页面/状态过渡到另一个页面/状态时使用的过渡效果，例如滑动（slide）或弹出（pop）。 |
+| `data-direction` | 指定动画的方向，以便与过渡效果匹配。例如，返回页面时使用 reverse。 |
+| `data-rel` | 定义元素与链接的关系。值包括 back、dialog、external 和 popup。 |
+| `data-title` | 页面显示时显示的文本。 |
+| `data-icon` | 指定附加到 HTML 元素的图标。可能的值有 home、delete、plus、arrow-u、arrow-d、check、gear、grid、star、custom、arrow-r、arrow-l、minus、refresh、forward、back、alert、info 和 search。 |
+| `data-iconpos` | 指定图标附加到元素时的位置：left、right、top、bottom、notext。 |
+| `data-add-back-btn` | 对于具有 `data-role="dialog"` 的项目，如果设置为 true，则会添加一个返回按钮。 |
+| `data-collapsed` | 对于具有 `role="collapsible"` 的项目，指定状态是否为折叠。 |
+| `data-collapsed-icon` | 定义 `role="collapsible"` 元素的折叠图标。 |
+| `data-expanded-icon` | 定义 `role="collapsible"` 元素的展开图标。 |
+| `data-close-btn` | 对于具有 `role="dialog"` 的项目，如果设置为 true，则会添加一个关闭按钮。 |
 
-## 确定页面是否在移动设备上查看
+### 确定页面是否在移动设备上查看
 
 ```javascript
 if( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ) {
@@ -6980,7 +6722,7 @@ if( /Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent) ) { }
 
 该语句解析 `userAgent` 属性，并尝试查找移动浏览器中最常见的字符串。
 
-## 检测移动屏幕尺寸
+### 检测移动屏幕尺寸
 
 ```javascript
 $("#contentBody").width(screen.width).height(screen.height);
@@ -6988,7 +6730,7 @@ $("#contentBody").width(screen.width).height(screen.height);
 
 在当今的移动世界中，用户是否在使用移动设备不再是关键问题。新的关键问题是：用户有多少屏幕空间可用？你需要检查设备的屏幕尺寸。它是 3 英寸、4 英寸还是 11 英寸的屏幕？差别很大。要获取屏幕尺寸，请在 JavaScript 中使用 `screen.height` 和 `screen.width`，然后动态调整你的页面以支持该尺寸。
 
-## 指定不同的主题色板
+### 指定不同的主题色板
 
 ```html
 <div data-role="header" data-theme="b">
@@ -7003,7 +6745,7 @@ jQuery Mobile 附带的 CSS 文件包含几个称为色板的样式版本。*色
 <div data-role="header" data-theme="b"><h1>教学</h1></div>
 ```
 
-## 处理新的移动事件
+### 处理新的移动事件
 
 ```javascript
 $("#myImage").on("swipeleft", function(e) {
@@ -7023,114 +6765,114 @@ $(document).on("pagebeforechange", function(e, data) {
 $("#myImage").on("swipeleft", function() { });
 ```
 
-表 14.2 列出了一些移动事件并描述了它们的用途。
-
-表 14.2 jQuery Mobile 添加的新事件
+**表 14.2 jQuery Mobile 添加的新事件**
 
 | 事件 | 描述 |
 | --- | --- |
-| tap | 在快速触摸时触发。 |
-| taphold | 在触摸保持超过阈值后触发。默认值为 750 毫秒。 |
-| swipe | 由快速水平拖动触发。 |
-| swipeleft | 由快速向左水平拖动触发。 |
-| swiperight | 由快速向右水平拖动触发。 |
-| orientationchange | 当设备方向从纵向变为横向或反之时触发。 |
-| scrollstart | 在开始滚动时触发。 |
-| scrollstop | 在滚动停止时触发。 |
-| pagebeforeload | 在移动页面加载到 DOM 之前立即触发。 |
-| pageload | 在移动页面加载到 DOM 之后触发。 |
-| pagebeforechange | 在移动页面切换到不同页面之前立即触发。这两个页面可能在同一个 HTML 文档中。 |
-| pagechange | 在移动页面切换到不同页面之后触发。 |
-| pagebeforeshow | 在页面转换发生之前立即触发。该事件在新页面上触发。 |
-| pageshow | 在页面转换发生之后触发。 |
+| `tap` | 在快速触摸时触发。 |
+| `taphold` | 在触摸保持超过阈值后触发。默认值为 750 毫秒。 |
+| `swipe` | 由快速水平拖动触发。 |
+| `swipeleft` | 由快速向左水平拖动触发。 |
+| `swiperight` | 由快速向右水平拖动触发。 |
+| `orientationchange` | 当设备方向从纵向变为横向或反之时触发。 |
+| `scrollstart` | 在开始滚动时触发。 |
+| `scrollstop` | 在滚动停止时触发。 |
+| `pagebeforeload` | 在移动页面加载到 DOM 之前立即触发。 |
+| `pageload` | 在移动页面加载到 DOM 之后触发。 |
+| `pagebeforechange` | 在移动页面切换到不同页面之前立即触发。这两个页面可能在同一个 HTML 文档中。 |
+| `pagechange` | 在移动页面切换到不同页面之后触发。 |
+| `pagebeforeshow` | 在页面转换发生之前立即触发。该事件在新页面上触发。 |
+| `pageshow` | 在页面转换发生之后触发。 |
 
-jQuery移动框架包含的一个重要功能是能够触发和处理与页面切换和加载相关的事件。当你切换页面时，会触发以下事件：
+jQuery 移动框架包含的一个重要功能是能够触发和处理与页面切换和加载相关的事件。当你切换页面时，会触发以下事件：
 
--   pagebeforechange, pagechange, pagebeforeload, pageload, pageshow, pagehide
+- `pagebeforechange`, `pagechange`, `pagebeforeload`, `pageload`, `pageshow`, `pagehide`
 
 当你加载页面时，会触发以下事件：
 
--   pagebeforeload, pageload
+- `pagebeforeload`, `pageload`
 
-这些事件允许你实现代码来处理新页面的过渡，并防止页面从服务器下载。这些事件被实现为标准的jQuery事件，并且传递给处理程序的对象包含诸如url、toPage、absUrl、dataUrl、xhr对象以及用于切换页面的选项。下面的代码展示了添加pageload事件处理程序的示例：
+这些事件允许你实现代码来处理新页面的过渡，并防止页面从服务器下载。这些事件被实现为标准的 jQuery 事件，并且传递给处理程序的对象包含诸如 `url`、`toPage`、`absUrl`、`dataUrl`、`xhr` 对象以及用于切换页面的选项。下面的代码展示了添加 `pageload` 事件处理程序的示例：
 
-```
+```javascript
 $(document).on("pageload", function(e, obj){
     if($("#pageThree .ui-content").length) {
         $("#pageThree .ui-content").append("Page loaded from "+ obj.url); }
 });
 ```
 
-顺便提一下，jQuery移动框架还包含几个虚拟鼠标事件，例如mask、mouse和touch事件，允许开发者只注册基本的鼠标事件。这些事件在大多数情况下运行良好，但仍然存在一些小问题。这些虚拟事件包括vmouseover、vmouseout、vmousedown、vmousemove、vmouseup、vmouseclick和vmousecancel。
+顺便提一下，jQuery 移动框架还包含几个虚拟鼠标事件，例如 `vmouseover`、`vmouseout`、`vmousedown`、`vmousemove`、`vmouseup`、`vmouseclick` 和 `vmousecancel`，允许开发者只注册基本的鼠标事件。这些事件在大多数情况下运行良好，但仍然存在一些小问题。
 
-## 使用jQuery代码切换页面
+### 使用 jQuery 代码切换页面
 
-```
+```javascript
 $("#pageTwo").on("swipeleft", function(){
   $.mobile.changePage("newPage.html", {transition:
   "slide", reverse:true});
 });
 ```
 
-jQuery提供了`$.mobile.changePage(URL, options)`方法来动态切换页面，其中URL是新页面的位置。表14.3列出了`.changePage()`调用的可用选项。以下代码是添加swipeleft事件处理程序的示例，当用户在设备上向左滑动页面时加载远程网页。注意，使用了"slide"过渡效果，并且reverse选项设置为true：
+jQuery 提供了 `$.mobile.changePage(URL, options)` 方法来动态切换页面，其中 URL 是新页面的位置。表 14.3 列出了 `.changePage()` 调用的可用选项。以下代码是添加 `swipeleft` 事件处理程序的示例，当用户在设备上向左滑动页面时加载远程网页。注意，使用了 "slide" 过渡效果，并且 `reverse` 选项设置为 true：
 
-```
+```javascript
 $("#pageTwo").on("swipeleft", function(){
   $.mobile.changePage("newPage.html", {transition:
   "slide", reverse:true});
 });
 ```
+
+**表 14.3 .changePage() 选项**
 
 | 方法 | 描述 |
 |---|---|
-| changeHash | 指定是否应更新地址栏中的哈希值。 |
-| data | 随AJAX请求发送的对象或字符串数据。 |
-| dataUrl | 更新浏览器位置时使用的URL。如果未指定，则使用data-url属性的值。 |
-| pageContainer | 指定应包含页面的元素。 |
-| reloadPage | 布尔值。如果页面已在DOM中，则从服务器重新加载页面。 |
-| reverse | 布尔值。指定页面切换过渡运行的方向。 |
-| role | 显示页面时使用的data-role值。 |
-| showLoadMsg | 布尔值。指定是否应显示加载消息。 |
-| transition | 显示页面时使用的过渡效果。 |
-| type | 指定AJAX请求的方法："get"（默认）或"post"。 |
+| `changeHash` | 指定是否应更新地址栏中的哈希值。 |
+| `data` | 随 AJAX 请求发送的对象或字符串数据。 |
+| `dataUrl` | 更新浏览器位置时使用的 URL。如果未指定，则使用 `data-url` 属性的值。 |
+| `pageContainer` | 指定应包含页面的元素。 |
+| `reloadPage` | 布尔值。如果页面已在 DOM 中，则从服务器重新加载页面。 |
+| `reverse` | 布尔值。指定页面切换过渡运行的方向。 |
+| `role` | 显示页面时使用的 `data-role` 值。 |
+| `showLoadMsg` | 布尔值。指定是否应显示加载消息。 |
+| `transition` | 显示页面时使用的过渡效果。 |
+| `type` | 指定 AJAX 请求的方法："get"（默认）或 "post"。 |
 
-## 不显示页面地加载移动页面
+### 不显示页面地加载移动页面
 
-```
+```javascript
 $.mobile.loadPage("newPage.php", 
     {data: $("form").serialize(), type: "post"});
 ```
 
-另一个有用的函数是`.loadPage(URL, options)`。它使用AJAX调用从Web服务器下载移动页面，但不将移动页面切换到下载的页面。实际上，`.changePage()`内部调用`.loadPage()`来检索页面。表14.3中列出的大多数选项也可通过`.loadPage()`使用，但changeHash、dataUrl、reverse和transition除外。
+另一个有用的函数是 `.loadPage(URL, options)`。它使用 AJAX 调用从 Web 服务器下载移动页面，但不将移动页面切换到下载的页面。实际上，`.changePage()` 内部调用 `.loadPage()` 来检索页面。表 14.3 中列出的大多数选项也可通过 `.loadPage()` 使用，但 `changeHash`、`dataUrl`、`reverse` 和 `transition` 除外。
 
-`.loadPage()`函数对于在初始化函数中预加载页面很有用，你希望这些页面稍后可用但暂时不显示。以下代码展示了使用POST数据从表单加载页面的示例：
+`.loadPage()` 函数对于在初始化函数中预加载页面很有用，你希望这些页面稍后可用但暂时不显示。以下代码展示了使用 POST 数据从表单加载页面的示例：
 
-```
+```javascript
 $.mobile.loadPage("newPage.php",
     {data: $("#form").serialize(), type: "post"});
 ```
 
-## 定义Viewport Meta标签
+### 定义 Viewport Meta 标签
 
-```
+```html
 <meta name="viewport" content="width=device-width,
 initial-scale=1">
 ```
 
-使用jQuery移动框架的一个关键组件是在页面的`<head>`标签内添加viewport设置的`<meta>`标签。viewport定义了浏览器如何显示页面的缩放级别和使用的尺寸。
+使用 jQuery 移动框架的一个关键组件是在页面的 `<head>` 标签内添加 viewport 设置的 `<meta>` 标签。viewport 定义了浏览器如何显示页面的缩放级别和使用的尺寸。
 
-具体来说，你需要将content设置为"width=device-width, initial-scale=1"，如以下所示。这些设置强制设备的浏览器以设备上可用的精确像素数渲染网页宽度：
+具体来说，你需要将 content 设置为 `"width=device-width, initial-scale=1"`，如以下所示。这些设置强制设备的浏览器以设备上可用的精确像素数渲染网页宽度：
 
-```
+```html
 <meta name="viewport" content="width=device-width,
 initial-scale=1">
 ```
 
-如果不指定viewport设置，移动页面的尺寸会远大于屏幕宽度，导致页面看起来很小。用户仍然可以缩放网页。
+如果不指定 viewport 设置，移动页面的尺寸会远大于屏幕宽度，导致页面看起来很小。用户仍然可以缩放网页。
 
-## 配置jQuery移动框架默认设置
+### 配置 jQuery 移动框架默认设置
 
-```
+```html
 <script src="../js/jquery-2.0.3.min.js"></script>
 <script>
     $(document).bind("mobileinit", function () {
@@ -7141,13 +6883,13 @@ initial-scale=1">
 <script src="../js/jquery.mobile-custom.min.js"></script>
 ```
 
-jQuery移动框架在库加载时初始化。所有带有jQuery移动标签的页面元素也会被初始化，并使用默认设置来创建元素的移动版本。
+jQuery 移动框架在库加载时初始化。所有带有 jQuery 移动标签的页面元素也会被初始化，并使用默认设置来创建元素的移动版本。
 
-有时，你可能想要覆盖默认设置。为此，你需要在加载jQuery移动库之前，向document对象添加一个`mobileinit`事件处理程序。然后你可以在该处理函数中添加你的默认覆盖代码。
+有时，你可能想要覆盖默认设置。为此，你需要在加载 jQuery 移动库之前，向 document 对象添加一个 `mobileinit` 事件处理程序。然后你可以在该处理函数中添加你的默认覆盖代码。
 
-我主要使用`mobileinit`处理程序来更改默认主题样式，因为这在库加载后无法动态完成。以下代码展示了设置默认页眉和页脚主题的示例：
+我主要使用 `mobileinit` 处理程序来更改默认主题样式，因为这在库加载后无法动态完成。以下代码展示了设置默认页眉和页脚主题的示例：
 
-```
+```html
 <script src="../js/jquery-2.0.3.min.js"></script>
 <script>
   $(document).bind("mobileinit", function () {
@@ -7158,15 +6900,15 @@ jQuery移动框架在库加载时初始化。所有带有jQuery移动标签的�
 <script src="../js/jquery.mobile-custom.min.js"></script>
 ```
 
-注意，初始化的`<script>`标签放置在jQuery加载之后，但在jQuery移动库加载之前。
+注意，初始化的 `<script>` 标签放置在 jQuery 加载之后，但在 jQuery 移动库加载之前。
 
 ## 构建移动页面
 
-创建移动页面实际上很简单。页面由`<div>`元素组成，这些元素在jQuery移动框架中通过前一章讨论的数据标签进行增强。本节重点介绍使用数据标签定义移动网页。
+创建移动页面实际上很简单。页面由 `<div>` 元素组成，这些元素在 jQuery 移动框架中通过前一章讨论的数据标签进行增强。本节重点介绍使用数据标签定义移动网页。
 
 ### 创建移动网页
 
-```
+```html
 <div data-role="page">
   <div data-role="header"><h1>Header</h1></div>
   <div data-role="content" id="content">
@@ -7179,9 +6921,9 @@ jQuery移动框架在库加载时初始化。所有带有jQuery移动标签的�
 
 移动页面由三个主要部分组成：页眉、页脚以及它们之间的内容。这三个部分不一定是必需的，但至少有一个包含内容的页眉是个好主意，尤其是在处理多个页面时。
 
-所有这些元素都是通过向`<div>`元素添加data-role属性来定义的。`<div>`元素内的内容几乎可以是任何东西，包括文本、图像、表单和列表。
+所有这些元素都是通过向 `<div>` 元素添加 `data-role` 属性来定义的。`<div>` 元素内的内容几乎可以是任何东西，包括文本、图像、表单和列表。
 
-以下代码展示了创建一个简单的移动网页的示例，包含页眉、页脚以及文本和图像内容。图14.1展示了该网页的外观：
+以下代码展示了创建一个简单的移动网页的示例，包含页眉、页脚以及文本和图像内容。图 14.1 展示了该网页的外观：
 
 ```html
 <html>
@@ -7208,52 +6950,26 @@ jQuery移动框架在库加载时初始化。所有带有jQuery移动标签的�
     p { text-align:center; font:italic 45px
         Helvetica;
       color:blue; margin:5px; }
+    img { width:235px; }
   </style>
 </head>
 <body>
-<div data-role="page">
-  <div data-role="header">
-    <h1>My Title</h1>
+<div id="border"><div id="frame"><div data-role="page">
+  <div data-role="header"><h1>Header</h1></div>
+  <div data-role="content" id="content">
+    <p>Yosemite</p>
+    <p>Falls</p>
+    <img src="../images/falls.jpg" />
   </div>
-  <div data-role="content">
-    <p>
-      Some content here
-    </p>
-    <img src="images/photo.jpg"/>
-  </div>
-  <div data-role="footer">
-    <h4>My Footer</h4>
-  </div>
-</div>
+  <div data-role="footer"><h4>Footer</h4></div>
+</div></div></div>
 </body>
 </html>
 ```
 
+**ch1401.html**
 
-
-# 第14章 使用jQuery实现移动网站
-
-```html
-21     img { width:235px; }
-22     </style>
-23   </head>
-24   <body>
-25     <div id="border"><div id="frame"><div data-role="page">
-26       <div data-role="header"><h1>Header</h1></div>
-27       <div data-role="content" id="content">
-28         <p>Yosemite</p>
-29         <p>Falls</p>
-30         <img src="../images/falls.jpg" />
-31       </div>
-32       <div data-role="footer"><h4>Footer</h4></div>
-33     </div></div></div>
-34   </body>
-35   </html>
-```
-
-ch1401.html
-
-请注意，每个组件的 `data-role` 属性都有一个不同的值。图14.1展示了生成的移动网页。
+请注意，每个组件的 `data-role` 属性都有一个不同的值。图 14.1 展示了生成的移动网页。
 
 ### 顺便说明
 
@@ -7261,9 +6977,9 @@ ch1401.html
 
 ![来自 ch1401.html 的、包含页眉、页脚以及带有文本和图像内容区域的基础移动网页。](img/476d4a1835716860dfdb11288891ad23_319_0.png)
 
-图14.1 来自 ch1401.html 的、包含页眉、页脚以及带有文本和图像内容区域的基础移动网页。
+**图 14.1** 来自 ch1401.html 的、包含页眉、页脚以及带有文本和图像内容区域的基础移动网页。
 
-## 创建固定页眉和页脚
+### 创建固定页眉和页脚
 
 ```html
 <div data-role="header" data-position="fixed">
@@ -7387,9 +7103,9 @@ $("#pageTwo").on("swiperight", function(){
         reverse:true}); });
 ```
 
-第二种方法是使用 `$.mobile.changePage(URL, options)` 函数调用，其中 URL 是链接位置。表14.3显示了 `.changePage()` 调用的可用选项。
+第二种方法是使用 `$.mobile.changePage(URL, options)` 函数调用，其中 URL 是链接位置。表 14.3 显示了 `.changePage()` 调用的可用选项。
 
-以下是一个添加 `swipeleft` 事件处理器的示例，当用户在设备上向左滑动页面时，会加载一个远程网页。请注意，使用了 "slide" 过渡效果，并且 reverse 选项设置为 true，以使过渡效果向左滑动：
+以下是一个添加 `swipeleft` 事件处理器的示例，当用户在设备上向左滑动页面时，会加载一个远程网页。请注意，使用了 "slide" 过渡效果，并且 `reverse` 选项设置为 true，以使过渡效果向左滑动：
 
 ```javascript
 $("#pageTwo").on("swipeleft", function(){
@@ -7397,7 +7113,7 @@ $("#pageTwo").on("swipeleft", function(){
         reverse:true}); });
 ```
 
-以下是一个添加 `swiperight` 事件处理器的示例，当用户在设备上向右滑动页面时，会加载一个远程网页。请注意，使用了 "slide" 过渡效果，但未设置 reverse 选项：
+以下是一个添加 `swiperight` 事件处理器的示例，当用户在设备上向右滑动页面时，会加载一个远程网页。请注意，使用了 "slide" 过渡效果，但未设置 `reverse` 选项：
 
 ```javascript
 $("#pageTwo").on("swiperight", function(){
@@ -7407,7 +7123,7 @@ $("#pageTwo").on("swiperight", function(){
 
 ### 添加导航按钮和滑动事件示例
 
-以下代码展示了实现导航按钮和滑动事件以在三个不同页面间遍历的完整示例。第14-27行的代码实现了滑动事件处理器，它们调用带有过渡效果的 `.changePage()` 来处理手指滑动。第38-47行实现了第一个移动页面，第48-59行实现了第二个移动页面，第60-68行实现了第三个。每个页面的页眉中都有一两个导航按钮。图14.2展示了这个多页面应用：
+以下代码展示了实现导航按钮和滑动事件以在三个不同页面间遍历的完整示例。第 14-27 行的代码实现了滑动事件处理器，它们调用带有过渡效果的 `.changePage()` 来处理手指滑动。第 38-47 行实现了第一个移动页面，第 48-59 行实现了第二个移动页面，第 60-68 行实现了第三个。每个页面的页眉中都有一两个导航按钮。图 14.2 展示了这个多页面应用：
 
 ```html
 01 <html>
@@ -7430,13 +7146,11 @@ $("#pageTwo").on("swiperight", function(){
 18             {transition:"slide"}); });
 ```
 
-
-
-## 14.3 实现列表视图
+## 实现列表视图
 
 组织移动内容最常见的方式之一是使用列表视图。列表视图将内容组织成可滚动、可链接的列表，便于查看和导航。jQuery Mobile 在提供框架以方便在代码中实现列表视图方面做得非常出色。
 
-### 14.3.1 创建基本列表视图
+### 创建基本列表视图
 
 最简单的列表视图是通过将 `data-role="listview"` 添加到 `<ul>` 元素来创建的。这会使 jQuery Mobile 以标准的移动端外观和感觉来渲染列表。
 
@@ -7448,7 +7162,7 @@ $("#pageTwo").on("swiperight", function(){
 </ul>
 ```
 
-### 14.3.2 向列表项添加图标
+### 向列表项添加图标
 
 你可以通过将 `<img>` 元素添加到 `<li>` 内部，或者使用 `data-icon` 属性来为列表项添加图标。
 
@@ -7460,7 +7174,7 @@ $("#pageTwo").on("swiperight", function(){
 </ul>
 ```
 
-### 14.3.3 创建拆分按钮列表视图
+### 创建拆分按钮列表视图
 
 拆分按钮列表视图允许你在每个列表项中设置两个独立的点击目标。这对于像“删除”或“编辑”这样与列表项主要操作分开的操作非常有用。
 
@@ -7477,7 +7191,7 @@ $("#pageTwo").on("swiperight", function(){
 </ul>
 ```
 
-### 14.3.4 创建可搜索的列表视图
+### 创建可搜索的列表视图
 
 你可以通过将 `data-filter="true"` 添加到 `<ul>` 元素来为列表视图添加搜索过滤器。这会在列表顶部添加一个搜索框，允许用户过滤列表项。
 
@@ -7489,7 +7203,7 @@ $("#pageTwo").on("swiperight", function(){
 </ul>
 ```
 
-### 14.3.5 创建带分隔符的列表
+### 创建带分隔符的列表
 
 你可以通过添加分组分隔符到列表视图，将列表项组织成多个部分。这可以通过添加 `<li data-role="list-divider">` 元素来实现。
 
@@ -7504,7 +7218,7 @@ $("#pageTwo").on("swiperight", function(){
 </ul>
 ```
 
-### 14.3.6 创建计数气泡
+### 创建计数气泡
 
 你可以通过在 `<a>` 元素内添加一个带有 `ui-li-count` 类的 `<span>` 元素，为列表项添加一个计数气泡，以显示项目或消息的数量。
 
@@ -7525,7 +7239,7 @@ $("#pageTwo").on("swiperight", function(){
 </ul>
 ```
 
-### 14.3.7 创建只读列表视图
+### 创建只读列表视图
 
 只读列表视图用于显示非交互式信息。这可以通过将 `data-role="listview"` 添加到 `<ul>` 元素，并且 `<li>` 元素内不包含任何 `<a>` 元素来实现。
 
@@ -7537,7 +7251,7 @@ $("#pageTwo").on("swiperight", function(){
 </ul>
 ```
 
-### 14.3.8 创建嵌套列表视图
+### 创建嵌套列表视图
 
 嵌套列表视图用于创建层级列表。这可以通过在 `<li>` 元素内添加一个 `<ul>` 元素来实现。
 
@@ -7560,17 +7274,15 @@ $("#pageTwo").on("swiperight", function(){
 </ul>
 ```
 
-
-
 列表视图的应用因其中所包含的数据量和类型而有很大差异。为此，jQuery 提供了多种不同类型的列表。以下部分将介绍最常用的几种。
 
 > **请注意！**
+>
+> 如果你在 jQuery 代码中动态地向列表、表格等添加项目，你需要在该元素上调用 `refresh()` 方法，以使用 jQuery Mobile 刷新内容。
 
-如果你在 jQuery 代码中动态地向列表、表格等添加项目，你需要在该元素上调用 `refresh()` 方法，以使用 jQuery Mobile 刷新内容。
+### 创建基本列表视图
 
-## 创建基本列表视图
-
-```
+```html
 <ul data-role="listview">
     <li><a href="#one">链接 1</a></li>
     <li><a href="#two">链接 2</a></li>
@@ -7580,9 +7292,9 @@ $("#pageTwo").on("swiperight", function(){
 
 通过在 `<ul>` 或 `<ol>` 元素上添加 `data-role="listview"` 来创建列表。jQuery 会自动处理将 `<li>` 元素格式化为列表形式。对于 `<ol>` 元素，格式化后的列表视图会包含每个列表项的编号。
 
-## 使用嵌套列表
+### 使用嵌套列表
 
-```
+```html
 <ul data-role="listview" >
     <li>霍比特人<ul><li>弗罗多</li><li>山姆</li>
         <li>比尔博</li></ul></li>
@@ -7595,7 +7307,7 @@ $("#pageTwo").on("swiperight", function(){
 
 嵌套列表是通过在列表视图内部嵌套额外的 `<ul>` 元素来创建的。jQuery Mobile 会自动检测这一点，并为子列表构建可链接的页面。以下代码展示了实现嵌套列表的示例，如图 14.5 所示：
 
-```
+```html
 <html>
   <head>
     <title>Python 短语手册</title>
@@ -7629,15 +7341,15 @@ $("#pageTwo").on("swiperight", function(){
 </html>
 ```
 
-ch1404.html
+**ch1404.html**
 
 ![](img/476d4a1835716860dfdb11288891ad23_337_0.png)
 
 **图 14.5** 应用 ch1404.html 中 jQuery Mobile 代码实现的嵌套列表。
 
-## 实现分段按钮列表
+### 实现分段按钮列表
 
-```
+```html
 <ul data-role="listview">
   <li><a href="#">Jeep</a><a href="#" data-icon="star">喜欢</a></li>
   <li><a href="#">Ford</a><a href="#" data-icon="star">喜欢</a></li>
@@ -7647,16 +7359,16 @@ ch1404.html
 
 分段按钮列表是在每一行中包含多个选项的列表。这在各种情况下都很有用。例如，在列出待售产品时，主要部分可以链接到详细信息，次要链接可以将商品添加到购物车。要创建分段按钮列表，请在 `<li>` 项目中创建两个 `<a>` 元素。
 
-## 向列表添加分隔符
+### 向列表添加分隔符
 
-```
+```html
 <ul data-role="listview" >
   <li data-role="list-divider">数字</li>
   <li>1</li><li>2</li><li>3</li>
   <li data-role="list-divider">字母</li>
   <li>A</li><li>B</li><li>C</li>
 </ul>
-. . .
+...
 <ul data-role="listview" data-autodividers="true">
   <li>Alex</li><li>Alice</li><li>Brad</li><li>DaNae</li><li>David</li>
   <li>Isaac</li><li>Jordan</li><li>Nancy</li>
@@ -7667,7 +7379,7 @@ ch1404.html
 
 你可以通过手动注入分隔符并向其中一个 `<li>` 元素添加 `data-role="list-divider"` 来创建带分隔符的列表。例如：
 
-```
+```html
 <ul data-role="listview" >
     <li data-role="list-divider">数字</li>
     <li>1</li><li>2</li><li>3</li>
@@ -7678,16 +7390,16 @@ ch1404.html
 
 你也可以通过向 `<ul>` 元素添加 `data-autodividers="true"` 来自动添加分隔符。这会在第一个字符发生变化时分割项目，并为该字母创建一个分隔符。例如，以下代码添加了一个自动分隔符：
 
-```
+```html
 <ul data-role="listview" data-autodividers="true">
     <li>Alex</li><li>Alice</li><li>Brad</li><li>Danae</li><li>David</li>
     <li>Isaac</li><li>Jordan</li><li>Nancy</li>
 </ul>
 ```
 
-## 实现可搜索列表
+### 实现可搜索列表
 
-```
+```html
 <ul data-role="listview" data-filter="true">
     <li>罗马</li><li>米兰</li><li>佛罗伦萨</li><li>热那亚</li><li>威尼斯</li>
     <li>那不勒斯</li><li>巴隆加</li><li>巴里</li><li>都灵</li><li>巴勒莫</li>
@@ -7698,16 +7410,16 @@ ch1404.html
 
 通过向包含列表的 `<ul>` 元素添加 `data-filter="true"` 来创建可搜索列表。例如，以下代码添加了一个可搜索列表：
 
-```
+```html
 <ul data-role="listview" data-filter="true">
     <li>罗马</li><li>米兰</li><li>佛罗伦萨</li><li>热那亚</li><li>威尼斯</li>
     <li>那不勒斯</li><li>巴隆加</li><li>巴里</li><li>都灵</li><li>巴勒莫</li>
 </ul>
 ```
 
-## 使用可折叠区块和集合
+### 使用可折叠区块和集合
 
-```
+```html
 <div data-role="collapsible" data-collapsed="false">
     <h3>图片信息</h3>
     <p>单张内容。</p>
@@ -7730,9 +7442,9 @@ ch1404.html
 
 此外，你可以使用 `data-theme` 定义标题和 `data-content-theme` 定义折叠内容，来控制用于渲染可折叠集合的主题。
 
-## 向面板添加辅助内容
+### 向面板添加辅助内容
 
-```
+```html
 <div data-role="panel" id="config"
     data-position="right" data-display="reveal">
     <div data-role="header" data-theme="a">
@@ -7751,21 +7463,19 @@ ch1404.html
 
 面板使用 `data-role="page"` 定义，并且必须与移动页面内的头部、内容和页脚元素是同级关系。面板通过链接到 id 值来打开，类似于打开一个新页面。当链接被点击时，面板会使用以下三种显示模式之一进行显示：
 
-- **data-display="overlay"**—面板元素以透明背景覆盖现有页面。
-- **data-display="push"**—面板内容在显示时会“推动”现有页面。
-- **data-display="reveal"**—面板位于当前页面下方，随着当前页面滑动而显示。
+- `data-display="overlay"` — 面板元素以透明背景覆盖现有页面。
+- `data-display="push"` — 面板内容在显示时会“推动”现有页面。
+- `data-display="reveal"` — 面板位于当前页面下方，随着当前页面滑动而显示。
 
 面板使用 `data-position="right"` 或 `data-position="left"` 定位。打开时，它会随页面滚动。你可以使用 `data-position-fixed="true"` 强制固定位置，在这种情况下，面板内容相对于屏幕而非滚动位置显示。
 
 要关闭面板，请添加一个链接按钮，并设置其 `<a data-rel="closed">` 属性指向面板页面。你也可以从 jQuery 代码中使用以下方式关闭面板：
 
-```
+```javascript
 $( "#panelId" ).panel( "close" );
 ```
 
-
-
-## 处理弹出窗口
+### 处理弹出窗口
 
 ```html
 <div data-role="panel" id="config"
@@ -7857,11 +7567,11 @@ class="ui-btn-right">Close</a>
 </html>
 ```
 
-`ch1405.html`
+**ch1405.html**
 
 ![](img/476d4a1835716860dfdb11288891ad23_346_0.png)
 
-图 14.6 使用 `ch1405.html` 中的 jQuery Mobile 代码创建了一个链接到照片弹出窗口的菜单弹出窗口。
+**图 14.6** 使用 `ch1405.html` 中的 jQuery Mobile 代码创建了一个链接到照片弹出窗口的菜单弹出窗口。
 
 ## 构建移动友好的表格
 
@@ -7887,7 +7597,19 @@ class="ui-btn-right">Close</a>
 </table>
 ```
 
-jQuery Mobile 为 `<table>` 标签添加了 `data-mode` 属性，以实现移动友好的表格。实现移动友好表格有两种主要方式。第一种是减少显示的列数，第二种是将行折叠成列集，以便它们可以垂直堆叠。这是通过在 `<table>` 标签上添加 `data-role="table"` 和 `data-mode="reflow"` 来实现的。表格中的单元格会重新定位，以便与页面其余部分自然流动。在 reflow 模式下，当表格宽度为 2 列时，列会被拆分成独立的单元格，并垂直堆叠。然后，列的标题会作为标签添加到单元格中，使得每个单元格左侧都包含列标题以标识其值。
+
+
+# jQuery Mobile 表格与表单
+
+## 移动友好表格
+
+jQuery Mobile 为 `<table>` 标签添加了 `data-mode` 属性，以实现移动友好的表格。实现移动友好表格有两种主要方式：第一种是减少显示的列数，第二种是将行折叠成列集，以便它们可以垂直堆叠。
+
+### Reflow 模式
+
+通过在 `<table>` 标签上添加 `data-role="table"` 和 `data-mode="reflow"` 来实现。表格中的单元格会重新定位，以便与页面其余部分自然流动。在 reflow 模式下，当表格宽度为 2 列时，列会被拆分成独立的单元格，并垂直堆叠。然后，列的标题会作为标签添加到单元格中，使得每个单元格左侧都包含列标题以标识其值。
+
+### Column Toggle 模式
 
 第二种解决方案是在 `<table>` 标签上添加 `data-mode="column-toggle"`。这为用户提供了一个弹出菜单，使用户可以启用/禁用要显示的列。在 columntoggle 模式下，可通过在 `<thead>` 元素第一个 `<tr>` 的 `<th>` 项上添加 `data-priority=#` 属性来指定可以启用/禁用的列。没有 `data-priority` 的列无法被禁用。`data-priority` 的 `#` 值范围从 1（最高）到 6（最低）。
 
@@ -7895,7 +7617,7 @@ jQuery Mobile 为 `<table>` 标签添加了 `data-mode` 属性，以实现移动
 
 jQuery Mobile 为元素引入了多个属性，用于扩展和定义其行为以支持移动设备。表 14.4 列出了你在实现移动表单时需要熟悉的一些属性。此列表并非详尽无遗。
 
-表 14.4   表单元素的 jQuery Mobile 数据属性
+### 表 14.4 表单元素的 jQuery Mobile 数据属性
 
 | 属性 | 描述 |
 |---|---|
@@ -7903,8 +7625,8 @@ jQuery Mobile 为元素引入了多个属性，用于扩展和定义其行为以
 | `data-role="controlgroup"` | 允许你将按钮分组为一个类似于导航栏的单一区块。 |
 | `data-type` | 指定 controlgroup 中的项目应组织为“垂直”还是“水平”。 |
 | `data-corners="true"` | 为元素添加圆角半径。 |
-| `data-icon` | 指定要添加到元素的图标：home、delete、plus、arrow-u、arrow-d、check、gear、grid、star、custom、arrow-r、arrow-l、minus、refresh、forward、back、alert、info、search |
-| `data-iconpos` | 指定图标放置的位置：left、right、top、bottom |
+| `data-icon` | 指定要添加到元素的图标：home、delete、plus、arrow-u、arrow-d、check、gear、grid、star、custom、arrow-r、arrow-l、minus、refresh、forward、back、alert、info、search。 |
+| `data-iconpos` | 指定图标放置的位置：left、right、top、bottom。 |
 | `data-mini` | 布尔值。如果为 true，则渲染元素的迷你版本，具有有限的内边距和外边距。 |
 | `data-theme` | 为元素应用主题色板（a–z）。 |
 
@@ -7928,8 +7650,6 @@ jQuery Mobile 为元素引入了多个属性，用于扩展和定义其行为以
 
 你可以通过在 HTML 定义中或通过 jQuery 代码以编程方式为表单元素添加 `ui-disabled` 类来禁用它们。禁用元素会阻止控件接受用户输入。此外，jQuery Mobile 有特殊的样式应用于禁用的控件，以向用户表明该表单元素不可用。
 
-
-
 ## 刷新表单元素
 
 ```javascript
@@ -7947,12 +7667,12 @@ $("#mySlider").val(100).slider("refresh");
 
 jQuery Mobile 元素大多是标准的。jQuery Mobile 会对其进行格式化，以便在移动设备上更好地显示。但是，有一些数据属性你应该了解：
 
-- **data-role="fieldcontain"** — 添加到包含多个表单元素的容器类中。有助于移动元素，尤其是 `<label>` 元素，更紧密地跟踪。
-- **class="ui-hide-label"** — 将此类添加到 fieldcontain 容器中会导致标签隐藏。
-- **data-role="button"** — 强制 `<a>` 链接显示为移动按钮。
-- **data-icon** — 指定可添加到按钮或链接的图标。
-- **data-iconpos** — 指定图标的位置。
-- **data-role="controlgroup"** — 添加到包含多个表单元素的容器类中。元素将作为一个整体呈现。你也可以添加 `data-type="horizontal"` 和 `data-type="vertical"` 来定义按钮是堆叠在一起还是排成一行。
+- `data-role="fieldcontain"` — 添加到包含多个表单元素的容器类中。有助于移动元素，尤其是 `<label>` 元素，更紧密地跟踪。
+- `class="ui-hide-label"` — 将此类添加到 fieldcontain 容器中会导致标签隐藏。
+- `data-role="button"` — 强制 `<a>` 链接显示为移动按钮。
+- `data-icon` — 指定可添加到按钮或链接的图标。
+- `data-iconpos` — 指定图标的位置。
+- `data-role="controlgroup"` — 添加到包含多个表单元素的容器类中。元素将作为一个整体呈现。你也可以添加 `data-type="horizontal"` 和 `data-type="vertical"` 来定义按钮是堆叠在一起还是排成一行。
 
 说明移动表单的最佳方式是向你展示一个示例。以下代码实现了几个 HTML 表单元素并对其应用了 jQuery Mobile 属性。该表单的渲染版本如图 14.7 所示：
 
@@ -8045,28 +7765,27 @@ ch1406.html
 
 ## A
 
-- **绝对值，计算，34**
+- **绝对值，计算**，34
 - **访问**
     - 浏览器，47-49
-        - 访问Cookie，52-55
+        - 访问 Cookie，52-55
     - 历史记录，49
     - HTML
         - 链式对象操作，75-76
         - 元素，59
         - 导航对象，76-82
         - 搜索元素，59-68, 71-74
-    - JavaScript中的jQuery，6
+    - JavaScript中的 jQuery，6
     - 库，7
     - Mobile，10
     - 变量，16
-- **addEventListener() 函数，103**
+- **`addEventListener()` 函数**，103
 - **添加**
     - 向面板添加辅助内容，328
     - 边框，134
     - 条件代码块，30
     - Cookie，53
-    - 向列表添加分隔符，324
-    - 向对象添加DOM元素，91
+    - 向对象添加 DOM 元素，91
     - 向元素添加元素，179-183
     - 事件处理程序，99, 105
     - 表单
@@ -8075,9 +7794,9 @@ ch1406.html
     - 初始化代码，100
     - 向列表添加项，191-193
     - JavaScript
-        - 添加到HTML文档，3
+        - 添加到 HTML 文档，3
         - 从外部文件加载，4
-    - 向网页添加jQuery，5-6
+    - 向网页添加 jQuery，5-6
     - 标签，335
     - 鼠标点击处理代码，115
     - 导航按钮，307, 311, 314
@@ -8086,7 +7805,7 @@ ch1406.html
     - 表格，333
     - 定时器，55-57
     - 过渡效果，308
-    - UI元素
+    - UI 元素
         - 应用滑块，215-216, 219
         - 附加日期选择器，212-215
         - 编写工具提示，223-225
@@ -8095,8 +7814,8 @@ ch1406.html
         - 拖放，205-212
         - 实现自动完成，203-205
         - jQuery，201
-    - .toggle() 方法，243-245
-    - CSS设置，228-229
+    - `.toggle()` 方法，243-245
+    - CSS 设置，228-229
     - 延迟，233
     - 图像
         - 移动元素，248-250
@@ -8105,17 +7824,17 @@ ch1406.html
     - 滑动切换，239-242
     - 停止，232-233
     - 可见性，234-238
-- **调整不透明度，146-149。另请参阅 修改**
+- **调整不透明度**，146-149。另请参阅 **修改**
 - **追加**
     - 元素内容的底部，180
     - 元素，141
     - 向表格添加行，189-191
     - 文本，140
-- adjValues() 函数，197
+- `adjValues()` 函数，197
 - **AJAX**
     - 异步通信，253-254
     - 跨域请求，254
-    - GET/POST请求，255
+    - GET/POST 请求，255
     - JavaScript，261-267
     - jQuery，267-289
     - 概述，251-252
@@ -8125,24 +7844,24 @@ ch1406.html
     - AJAX，251-252
     - 异步通信，253-254
     - 跨域请求，254
-    - GET/POST请求，255
+    - GET/POST 请求，255
     - JavaScript，261-267
     - jQuery，267-289
     - 响应数据类型，256-259
     - 事件对象，111-114
     - 向选择器添加过滤器，74
-    - for()循环，31
+    - `for()` 循环，31
     - 网格布局，316-317, 320
 - 祖先，搜索，80
-- .animate() 方法，228-229
+- `.animate()` 方法，228-229
 - **动画，227-228**
-    - .hide() 方法，242
-    - .show() 方法，243
+    - `.hide()` 方法，242
+    - `.show()` 方法，243
 
 ## B
 
 - 逻辑，29-31
-- .map() 方法，87-88
+- `.map()` 方法，87-88
 - 嵌套列表，322
 - 弹出窗口，329, 332
 - 幂函数，35
@@ -8150,7 +7869,7 @@ ch1406.html
 - 选择器，62
 - 滑块，215-216, 219
 - 三角函数，35
-- while()循环，30
+- `while()` 循环，30
 - 参数，20
 - 数组
     - 合并，26
@@ -8164,19 +7883,19 @@ ch1406.html
     - 拼接，26
 - 赋值
     - 向对象赋值数据，89
-    - 在HTML中赋值事件处理程序，101
+    - 在 HTML 中赋值事件处理程序，101
 - 异步通信，253-254
 - 附加日期选择器元素，212-215
-- .attr() 方法，126, 166
-- 属性，基于HTML选择，64
+- `.attr()` 方法，126, 166
+- 属性，基于 HTML 选择，64
 - 自动完成，实现，203-205
 - 返回按钮，创建，309
 - 行为，事件，107-110
 - 代码块，添加，30
-- .blur() 方法，173
+- `.blur()` 方法，173
 - 边框，添加，134
 - 元素内容的底部，追加，180
-- 浏览器。另请参阅 界面
+- 浏览器。另请参阅 **界面**
     - 访问，47-49
     - Cookie，修改，52-55
     - 当前位置详情，45-47
@@ -8191,19 +7910,17 @@ ch1406.html
         - 概述，96
         - 类型，96, 99
     - 历史记录，访问，49
-    - JavaScript控制台，应用，44
+    - JavaScript 控制台，应用，44
     - 导航，43
     - 弹出窗口，创建，50-51
     - 屏幕，调整大小，45
     - 定时器，添加，55, 57
 
-
-
 ## 浏览器
 
--   网页
-    -   重定向, 44
-    -   重新加载, 44
+- 网页
+    - 重定向, 44
+    - 重新加载, 44
 
 **构建移动页面**, 302-304
 
@@ -8211,418 +7928,316 @@ ch1406.html
 
 **buttonImageOnly 选项**, 213
 
--   **按钮**
-    -   返回按钮，创建, 309
-    -   导航按钮
-        -   添加, 307, 311, 314
-        -   定位, 308
-    -   分割列表按钮, 324
+- **按钮**
+    - 返回按钮，创建, 309
+    - 导航按钮
+        - 添加, 307, 311, 314
+        - 定位, 308
+    - 分割列表按钮, 324
 
 ## C
 
-计算绝对值, 34
-
-调用函数, 20
-
-取消计时器, 56
-
-层叠样式表。参见 CSSs
-
-大小写，修改字符串, 24
-
-内容分发网络 (CDNs), 5, 9
-
-链接对象操作, 75-76
-
-**change 选项**, 216
-
-**.changePage() 方法**, 298
-
-检测文本变化, 119
-
--   **字符**
-    -   搜索, 22
-    -   特殊字符，字符串对象, 21
-
--   **复选框状态，修改**, 161-162
-
--   **检查**
-    -   数组中的项, 27
-    -   子字符串, 25
-
-**获取子元素**, 77
-
-**Chrome，启用 JavaScript**, 13
-
--   **类**
-    -   删除类, 137
-    -   类名，搜索 DOM 对象, 60
-    -   切换类, 137, 139
-
-**click() 方法**, 110
-
-**获取最近元素**, 77
-
-**关闭窗口**, 49
-
--   **代码**
-    -   代码块，添加, 30
-    -   动态编程。参见动态编程
-    -   初始化代码，添加, 100
-    -   JavaScript 代码
-        -   添加到 HTML 文档, 3
-        -   控制台, 44
-        -   从外部文件加载, 4
-        -   概述, 2
-        -   鼠标点击处理，添加, 115
-
-**将内容划分为可折叠元素**, 326-327
-
-**颜色，修改**, 131-132
+- 计算绝对值, 34
+- 调用函数, 20
+- 取消计时器, 56
+- 层叠样式表。参见 **CSSs**
+- 大小写，修改字符串, 24
+- 内容分发网络 (CDNs), 5, 9
+- 链接对象操作, 75-76
+- **change 选项**, 216
+- **`.changePage()` 方法**, 298
+- 检测文本变化, 119
+- **字符**
+    - 搜索, 22
+    - 特殊字符，字符串对象, 21
+- **复选框状态，修改**, 161-162
+- **检查**
+    - 数组中的项, 27
+    - 子字符串, 25
+- **获取子元素**, 77
+- **Chrome，启用 JavaScript**, 13
+- **类**
+    - 删除类, 137
+    - 类名，搜索 DOM 对象, 60
+    - 切换类, 137, 139
+- **`click()` 方法**, 110
+- **获取最近元素**, 77
+- **关闭窗口**, 49
+- **代码**
+    - 代码块，添加, 30
+    - 动态编程。参见 **动态编程**
+    - 初始化代码，添加, 100
+    - JavaScript 代码
+        - 添加到 HTML 文档, 3
+        - 控制台, 44
+        - 从外部文件加载, 4
+        - 概述, 2
+        - 鼠标点击处理，添加, 115
+- **将内容划分为可折叠元素**, 326-327
+- **颜色，修改**, 131-132
 
 ## CSSs（层叠样式表）
 
 345
 
--   **组合**
-    -   数组, 26
-    -   字符串, 23
-
-**通信**，异步, 253-254
-
-**complete 函数**, 229-230
-
-**组件**，日期, 39
-
-**条件代码块**，添加, 30
-
--   **配置**
-    -   浏览器开发工具, 12-13
-    -   cookie 值, 53
-    -   CSS 属性, 130-139
-    -   默认移动设置, 301
-    -   DOM 元素属性, 126-129
-    -   隐藏表单属性, 166
-    -   选择输入框, 164-165
-    -   单选按钮组中的选中选项, 162
-    -   文本
-        -   输入值, 160
-        -   状态栏, 48
-    -   计时器, 55-57
-
-**JavaScript 控制台**, 44
-
--   **内容**
-    -   辅助内容，添加到面板, 328
-    -   HTML 元素，根据内容选择, 66
-    -   父内容，追加元素, 141
-    -   网页内容
-        -   添加元素, 179-183
-        -   向表格追加行, 189-191
-        -   动态构建, 177
-        -   删除元素, 184-185
-        -   HTML 元素, 178
-        -   HTML5 canvas 图形, 197-199
-        -   图片库, 193-196
-        -   向列表插入项目, 191-193
-        -   表单选择元素, 186-188
-
-**内容发现网络**。*参见* CDNs
-
-**内容提示框**, 223
-
--   **转换**
-    -   DOM 对象转换为 jQuery 对象, 84
-    -   数字转换为字符串, 22
-    -   字符串转换为数字, 23
-
-**坐标，获取鼠标坐标**, 115
-
-**跨域请求**, AJAX, 254
-
-**.css() 方法**, 130
-
--   **CSSs（层叠样式表）**, 7
-    -   动画效果, 228-229
-    -   元素, 130-139
-    -   主题色板, 295
-
-获取当前日期和时间, 37
-
--   搜索当前哈希值, 45
--   当前位置详情, 45-47
--   网页当前位置, 48
--   自定义。另请参阅 配置
-    -   表单, 334-336, 340
-    -   弹出框, 329-332
-    -   表格, 333
-
--   延迟动画, 233
--   删除
-    -   类, 137
-    -   元素到元素, 184-185
-    -   事件处理器
-        -   JavaScript, 104
-        -   jQuery, 106
-    -   数组中的项, 27
-    -   对象, 91
--   时间差，格式化时间, 39
--   后代元素，搜索, 78
--   检测
-    -   文本变化, 119
-    -   数组中的项, 27
-    -   移动设备屏幕尺寸, 294
--   开发者工具（Internet Explorer）, 13
--   开发
-    -   浏览器工具，配置, 12-13
-    -   jQuery Mobile, 9-12
--   设备，移动设备, 9-12
--   禁用表单元素, 167-169, 335
--   分割线，添加到列表, 324
--   将内容划分为可折叠元素, 326-327
--   文档对象模型。参见 DOM
--   文档，向 HTML 添加 JavaScript, 3
+- **组合**
+    - 数组, 26
+    - 字符串, 23
+- **通信**，异步, 253-254
+- **complete 函数**, 229-230
+- **组件**，日期, 39
+- **条件代码块**，添加, 30
+- **配置**
+    - 浏览器开发工具, 12-13
+    - cookie 值, 53
+    - CSS 属性, 130-139
+    - 默认移动设置, 301
+    - DOM 元素属性, 126-129
+    - 隐藏表单属性, 166
+    - 选择输入框, 164-165
+    - 单选按钮组中的选中选项, 162
+    - 文本
+        - 输入值, 160
+        - 状态栏, 48
+    - 计时器, 55-57
+- **JavaScript 控制台**, 44
+- **内容**
+    - 辅助内容，添加到面板, 328
+    - HTML 元素，根据内容选择, 66
+    - 父内容，追加元素, 141
+    - 网页内容
+        - 添加元素, 179-183
+        - 向表格追加行, 189-191
+        - 动态构建, 177
+        - 删除元素, 184-185
+        - HTML 元素, 178
+        - HTML5 canvas 图形, 197-199
+        - 图片库, 193-196
+        - 向列表插入项目, 191-193
+        - 表单选择元素, 186-188
+- **内容发现网络**。*参见* **CDNs**
+- **内容提示框**, 223
+- **转换**
+    - DOM 对象转换为 jQuery 对象, 84
+    - 数字转换为字符串, 22
+    - 字符串转换为数字, 23
+- **坐标，获取鼠标坐标**, 115
+- **跨域请求**, AJAX, 254
+- **`.css()` 方法**, 130
+- **CSSs（层叠样式表）**, 7
+    - 动画效果, 228-229
+    - 元素, 130-139
+    - 主题色板, 295
+- 获取当前日期和时间, 37
+- 搜索当前哈希值, 45
+- 当前位置详情, 45-47
+- 网页当前位置, 48
+- 自定义。另请参阅 **配置**
+    - 表单, 334-336, 340
+    - 弹出框, 329-332
+    - 表格, 333
+- 延迟动画, 233
+- **删除**
+    - 类, 137
+    - 元素到元素, 184-185
+    - 事件处理器
+        - JavaScript, 104
+        - jQuery, 106
+    - 数组中的项, 27
+    - 对象, 91
+- 时间差，格式化时间, 39
+- 后代元素，搜索, 78
+- **检测**
+    - 文本变化, 119
+    - 数组中的项, 27
+    - 移动设备屏幕尺寸, 294
+- 开发者工具（Internet Explorer）, 13
+- **开发**
+    - 浏览器工具，配置, 12-13
+    - jQuery Mobile, 9-12
+- 设备，移动设备, 9-12
+- 禁用表单元素, 167-169, 335
+- 分割线，添加到列表, 324
+- 将内容划分为可折叠元素, 326-327
+- 文档对象模型。参见 **DOM**
+- 文档，向 HTML 添加 JavaScript, 3
 
 ## D
 
--   .data() 方法, 166
--   数据类型, AJAX, 256-259
--   Date 对象, 36-40
--   dateFormat 选项, 213
--   日期选择器元素，附加, 212-215
--   日期，组件, 39
--   dblclick() 方法, 110
--   调试 JavaScript 控制台, 44
--   默认行为，阻止, 109
--   默认移动设置，配置, 301
--   定义
-    -   函数, 20
-    -   变量, 16
-    -   视口 meta 标签, 300
--   延迟计时器，添加, 56
-
-动态编程 347
-
-DOM（文档对象模型）, 5
-
-网页, 177
-
-元素
-
-添加元素, 179-183
-
-添加, 91
-
-调整透明度, 146-149
-
-配置属性, 126-129
-
-向表格追加行, 189-191
-
-内容, 139-141
-
-CSS 属性, 130-139
-
-对象, 60-61, 84
-
-删除元素, 184-185
-
-下载 jQuery UI 库, 201-202
-
-DOM 元素属性, 126-129
-
-拖放元素, 205-212
-
-元素内容, 139-141
-
-可拖放小部件选项, 208
-
-隐藏/显示元素, 144-146
-
-duration 函数, 229-230
-
-HTML 元素, 178
-
-动态编程
-
-HTML5 canvas 图形, 197-199
-
-表单
-
-图片库, 193-196
-
-复选框状态, 161-162
-
-向列表插入项目, 191-193
-
-禁用元素, 167-169
-
-修改, 125
-
-元素, 159
-
-修改布局, 143
-
-强制焦点移入/移出元素, 172-174
-
-重新定位元素, 152-153, 156
-
-隐藏属性, 166
-
-调整元素大小, 149, 152
-
-管理提交, 175
-
-表单选择元素, 186-188
-
-单选按钮输入, 162
-
-堆叠元素, 156-158
-
-选择值, 164-165
-
-显示/隐藏元素, 170-172
-
-文本输入值, 160
-
-348 .each() 方法
+- `.data()` 方法, 166
+- 数据类型, AJAX, 256-259
+- Date 对象, 36-40
+- dateFormat 选项, 213
+- 日期选择器元素，附加, 212-215
+- 日期，组件, 39
+- `dblclick()` 方法, 110
+- 调试 JavaScript 控制台, 44
+- 默认行为，阻止, 109
+- 默认移动设置，配置, 301
+- **定义**
+    - 函数, 20
+    - 变量, 16
+    - 视口 meta 标签, 300
+- 延迟计时器，添加, 56
+- **动态编程** 347
+- **DOM（文档对象模型）**, 5
+- 网页, 177
+- **元素**
+    - 添加元素, 179-183
+    - 添加, 91
+    - 调整透明度, 146-149
+    - 配置属性, 126-129
+    - 向表格追加行, 189-191
+    - 内容, 139-141
+    - CSS 属性, 130-139
+    - 对象, 60-61, 84
+    - 删除元素, 184-185
+    - 下载 jQuery UI 库, 201-202
+    - DOM 元素属性, 126-129
+    - 拖放元素, 205-212
+    - 元素内容, 139-141
+    - 可拖放小部件选项, 208
+    - 隐藏/显示元素, 144-146
+- `duration` 函数, 229-230
+- HTML 元素, 178
+- **动态编程**
+    - HTML5 canvas 图形, 197-199
+    - 表单
+    - 图片库, 193-196
+    - 复选框状态, 161-162
+    - 向列表插入项目, 191-193
+    - 禁用元素, 167-169
+    - 修改, 125
+    - 元素, 159
+    - 修改布局, 143
+    - 强制焦点移入/移出元素, 172-174
+    - 重新定位元素, 152-153, 156
+    - 隐藏属性, 166
+    - 调整元素大小, 149, 152
+    - 管理提交, 175
+    - 表单选择元素, 186-188
+    - 单选按钮输入, 162
+    - 堆叠元素, 156-158
+    - 选择值, 164-165
+    - 显示/隐藏元素, 170-172
+    - 文本输入值, 160
+- 348 `.each()` 方法
 
 ## E
 
-.each() 方法, 85
-
-缓动函数, 229-230
-
-效果，动画, 227-228
-
--   CSS 设置, 228-229
--   延迟, 233
--   .hide() 方法, 242
--   移动元素, 248-250
--   队列, 231
--   调整图片大小, 246-248
--   .show() 方法, 243
--   滑动切换, 239-242
--   停止, 232-233
--   .toggle() 方法, 243-245
--   可见性, 234-238
+- `.each()` 方法, 85
+- 缓动函数, 229-230
+- 效果，动画, 227-228
+    - CSS 设置, 228-229
+    - 延迟, 233
+    - `.hide()` 方法, 242
+    - 移动元素, 248-250
+    - 队列, 231
+    - 调整图片大小, 246-248
+    - `.show()` 方法, 243
+    - 滑动切换, 239-242
+    - 停止, 232-233
+    - `.toggle()` 方法, 243-245
+    - 可见性, 234-238
 
 ## 元素
 
--   追加, 141
--   子元素，获取, 77
--   内容, 139-141
--   CSS 属性, 130-139
--   后代元素，搜索, 78
--   DOM
-    -   添加, 91
-    -   配置属性, 126-129
--   淡入淡出, 239, 242
--   表单
-    -   添加, 336
-    -   复选框状态, 161-162
-    -   创建选择, 186-188
-    -   禁用, 167-169, 335
-    -   强制焦点移入/移出元素, 172-174
-    -   隐藏属性, 166
-    -   管理提交, 175
-    -   单选按钮输入, 162
-    -   刷新, 336
-    -   选择值, 164-165
-    -   显示/隐藏, 170-172
-    -   文本输入值, 160
+- 追加, 141
+- 子元素，获取, 77
+- 内容, 139-141
+- CSS 属性, 130-139
+- 后代元素，搜索, 78
+- DOM
+    - 添加, 91
+    - 配置属性, 126-129
+- 淡入淡出, 239, 242
+- 表单
+    - 添加, 336
+    - 复选框状态, 161-162
+    - 创建选择, 186-188
+    - 禁用, 167-169, 335
+    - 强制焦点移入/移出元素, 172-174
+    - 隐藏属性, 166
+    - 管理提交, 175
+    - 单选按钮输入, 162
+    - 刷新, 336
+    - 选择值, 164-165
+    - 显示/隐藏, 170-172
+    - 文本输入值, 160
 
 ## HTML
 
--   添加, 179-183
--   删除, 184-185
--   jQuery, 178
--   移动，动画效果, 248-250
+- 添加, 179-183
+- 删除, 184-185
+- jQuery, 178
+- 移动，动画效果, 248-250
 
 ## UIs
 
--   添加, 201
--   应用滑块, 215-219
--   附加日期选择器, 212-215
--   编码提示框, 223-225
--   创建菜单, 220-222
--   下载库, 201-202
--   拖放, 205-212
--   实现自动完成, 203-205
+- 添加, 201
+- 应用滑块, 215-219
+- 附加日期选择器, 212-215
+- 编码提示框, 223-225
+- 创建菜单, 220-222
+- 下载库, 201-202
+- 拖放, 205-212
+- 实现自动完成, 203-205
 
-强制焦点移入/移出表单元素
+- 强制焦点移入/移出表单元素
 
 349
 
-网页
+- 网页
+    - 隐藏/显示, 144-146
+    - 加载 HTML 到, 269-271
+    - 重新定位, 152-156
+    - 调整大小, 149-152
+    - 堆叠, 156-158
+- 移动端, 295-297
+- 重置, 175
+- 提交, 175
 
--   隐藏/显示, 144-146
--   加载 HTML 到, 269-271
--   重新定位, 152-156
--   调整大小, 149-152
--   堆叠, 156-158
+**`existingObject`**, 180
 
-移动端, 295-297
-
-重置, 175
-
-提交, 175
-
-**existingObject, 180**
-
-**外部文件，从 JavaScript 加载, 4**
+**外部文件，从 JavaScript 加载**, 4
 
 ## F
 
--   启用
-    -   Internet Explorer 上的开发者工具, 13
-    -   Chrome 中的 JavaScript, 13
-
-**.eq (index) 过滤器, 92**
-
-**相等性，对象, 29**
-
--   **事件处理器**
-    -   全局事件处理器, 285
-    -   滑动事件处理器, 310, 314
-
-**event.preventDefault() 方法, 109**
-
-**event.stopPropagation() 方法, 109**
-
--   **事件**
-    -   浏览器事件
-        -   添加事件处理器, 99-106
-        -   表单事件, 122-123
-        -   键盘事件, 118-120
-        -   管理事件, 107-110
-        -   鼠标事件, 115-118
-        -   事件对象, 111-114
-        -   事件概述, 96
-        -   事件类型, 96, 99
-    -   可拖动小部件事件, 207
-    -   可拖放小部件事件, 209
-
--   **淡入淡出**
-    -   元素动画淡入/淡出, 234-235
-    -   元素, 239-242
-    -   至指定透明度级别, 236
-
--   **文件**
-    -   访问, 6
-    -   JavaScript 文件，从外部加载, 4
-    -   文件路径，查看, 46
-    -   网页文件，加载, 5-6
-
-**.filter(filter) 方法, 92**
-
--   **过滤器**
-    -   对象结果, 92-94
-    -   选择器
-
-该请求因被判定为高风险而被拒绝
-
-
+- **启用**
+    - Internet Explorer 上的开发者工具, 13
+    - Chrome 中的 JavaScript, 13
+- **`.eq (index)` 过滤器**, 92
+- **相等性，对象**, 29
+- **事件处理器**
+    - 全局事件处理器, 285
+    - 滑动事件处理器, 310, 314
+- **`event.preventDefault()` 方法**, 109
+- **`event.stopPropagation()` 方法**, 109
+- **事件**
+    - 浏览器事件
+        - 添加事件处理器, 99-106
+        - 表单事件, 122-123
+        - 键盘事件, 118-120
+        - 管理事件, 107-110
+        - 鼠标事件, 115-118
+        - 事件对象, 111-114
+        - 事件概述, 96
+        - 事件类型, 96, 99
+    - 可拖动小部件事件, 207
+    - 可拖放小部件事件, 209
+- **淡入淡出**
+    - 元素动画淡入/淡出, 234-235
+    - 元素, 239-242
+    - 至指定透明度级别, 236
+- **文件**
+    - 访问, 6
+    - JavaScript 文件，从外部加载, 4
+    - 文件路径，查看, 46
+    - 网页文件，加载, 5-6
+- **`.filter(filter)` 方法**, 92
+- **过滤器**
+    - 对象结果, 92-94
+    - 选择器
 
 ## G
 
@@ -8631,11 +8246,11 @@ HTML5 canvas 图形, 197-199
 - 图库，格式化图片，193-196
 - 生成随机数，32
 - GET 请求，AJAX，255，262-264
-- .get() 方法，84
+- `.get()` 方法，84
     - JSON，处理，271-274
     - XML，处理，274，277
-- .getScript() 方法，256
-- 获取
+- `.getScript()` 方法，256
+- **获取**
     - CSS 属性，130-139
     - DOM 元素属性，126-129
     - 元素内容，139-141
@@ -8650,14 +8265,13 @@ HTML5 canvas 图形, 197-199
 - 图形，HTML5 canvas，197-199
 - 网格，布局，316-320
 - 组，获取/设置单选按钮选项，162
-
-- 处理程序
+- **处理程序**
     - 函数，105
     - 事件
         - 添加，99
         - 滑动，310-314
     - 全局事件，285
-- 处理
+- **处理**
     - 事件
         - 表单，122-123
         - 键盘，118-120
@@ -8666,90 +8280,80 @@ HTML5 canvas 图形, 197-199
     - 选择变化，123
     - 文本数据 (AJAX)，257
     - XML 数据，274-277
-- .has(选择器或元素) 方法，93
+- `.has(选择器或元素)` 方法，93
 - 哈希值，当前，45
 - 头部，移动网页，304
 - 隐藏表单属性，166
-- .hide() 方法，144，170，242
-- 隐藏
+- `.hide()` 方法，144，170，242
+- **隐藏**
     - 元素，网页，144-146
     - 表单元素，170-172
     - 标签，335
 - 层级，基于 HTML 元素选择，68
 - 历史，浏览器导航，49
+- **主机，搜索名称**，46
 
-主机，搜索名称
+## HTML (超文本标记语言)
 
-**主机，搜索名称**，46
-**HTML (超文本标记语言)**
-元素
-访问，59
-添加，179-183
-附加/前置文本，140
-链式对象操作，75-76
-删除，184-185
-获取内容，140
-**jQuery**，178
-导航对象，76-82
-重新定位，152-156
-调整大小，149，152
-搜索，59-68，71-74
-堆叠，156-158
-分配事件处理程序，101
-JavaScript，添加到，3
-响应数据，259
-**HTML5 canvas 图形**，196-199
-**.html() 方法**，140
-
-调整大小，动画，246-248
-源文件，修改，128
-过渡，添加，237-238
-**实现**
-自动完成，203-205
-底层 AJAX 请求，287-289
-多页面移动站点，306-314
-可搜索列表，325
-分割按钮列表，324
-**初始化代码**，添加，100
-**内部高度**，47
-**内部宽度**，47
-**输入**
-自动完成，实现，203-205
-单选按钮，162
-选择框，164-165
-文本值，160
-**插入到元素内容中间**，181
-**在 Firefox 上安装 Firebug**，13
-**界面**
-浏览器开发工具，配置，12-13
-加载，9
-导航，7
-**Internet Explorer，启用开发者工具**，13
-
-**ID，搜索 DOM 对象**，60
-**图片**
-图库，创建，193-196
-
-.is() 方法，161-163
-
-项目
-
-- 数组
-    - 删除，27
-    - 检测，27
-- 列表，191-193
-- 工具提示，223
-
-迭代
-
-- 数组，31
-- jQuery 对象，85-86
-- 遍历对象属性，31
-
-HTML
-
-- 添加到文档，3
-- 搜索元素，59-61
+- **元素**
+    - 访问，59
+    - 添加，179-183
+    - 附加/前置文本，140
+    - 链式对象操作，75-76
+    - 删除，184-185
+    - 获取内容，140
+- **jQuery**，178
+- 导航对象，76-82
+- 重新定位，152-156
+- 调整大小，149，152
+- 搜索，59-68，71-74
+- 堆叠，156-158
+- 分配事件处理程序，101
+- JavaScript，添加到，3
+- 响应数据，259
+- **HTML5 canvas 图形**，196-199
+- **`.html()` 方法**，140
+- 调整大小，动画，246-248
+- 源文件，修改，128
+- 过渡，添加，237-238
+- **实现**
+    - 自动完成，203-205
+    - 底层 AJAX 请求，287-289
+    - 多页面移动站点，306-314
+    - 可搜索列表，325
+    - 分割按钮列表，324
+- **初始化代码**，添加，100
+- **内部高度**，47
+- **内部宽度**，47
+- **输入**
+    - 自动完成，实现，203-205
+    - 单选按钮，162
+    - 选择框，164-165
+    - 文本值，160
+- **插入到元素内容中间**，181
+- **在 Firefox 上安装 Firebug**，13
+- **界面**
+    - 浏览器开发工具，配置，12-13
+    - 加载，9
+    - 导航，7
+- **Internet Explorer，启用开发者工具**，13
+- **ID，搜索 DOM 对象**，60
+- **图片**
+    - 图库，创建，193-196
+- `.is()` 方法，161-163
+- **项目**
+    - 数组
+        - 删除，27
+        - 检测，27
+    - 列表，191-193
+    - 工具提示，223
+- **迭代**
+    - 数组，31
+    - jQuery 对象，85-86
+    - 遍历对象属性，31
+- HTML
+    - 添加到文档，3
+    - 搜索元素，59-61
 - jQuery，访问，6
 - 应用逻辑，29-31
 - 数学运算，31-35
@@ -8784,7 +8388,7 @@ HTML
 
 **JavaScript 对象表示法。参见 JSON**
 
-**.join() 方法，27**
+**`.join()` 方法，27**
 
 **jQuery**
 
@@ -8792,12 +8396,12 @@ HTML
 - 动画，227-228
     - CSS 设置，228-229
     - 延迟，233
-    - .hide() 方法，242
+    - `.hide()` 方法，242
     - 队列，231
-    - .show() 方法，243
+    - `.show()` 方法，243
     - 滑动切换，239-242
     - 停止，232-233
-    - .toggle() 方法，243-245
+    - `.toggle()` 方法，243-245
     - 可见性，234-238
 - 事件处理程序
     - 添加，105
@@ -8807,7 +8411,7 @@ HTML
 - 初始化代码，100
 - JavaScript，访问，6
 - Mobile，9-12
-- 移动网站，291
+- **移动网站**，291
     - 应用网格布局，316-320
     - 构建网页，302-304
     - 创建导航栏，314
@@ -8819,9 +8423,9 @@ HTML
     - 概述，291-300
     - 表格，333
     - 查看面板，328
-- 对象
+- **对象**
     - 添加 DOM 元素，91
-    - 应用 .map() 方法，87-88
+    - 应用 `.map()` 方法，87-88
     - 分配数据值，89
     - 链式操作，75-76
     - 将 DOM 对象转换为，84
@@ -8832,7 +8436,7 @@ HTML
     - 修改，83
     - 导航至选择元素，76-82
     - 概述，4
-- UI
+- **UI**
     - 访问库，7
     - 添加，201
     - 应用滑块，215-219
@@ -8853,40 +8457,34 @@ HTML
 - 处理，271-274
 - 响应数据，257-258
 
-JSON.parse() 方法，258
-JSONP (带填充的 JSON)，255
+`JSON.parse()` 方法，258
+
+`JSONP` (带填充的 JSON)，255
 
 长度，字符串，22
+
 级别，容差，208
-库
-访问，7
-CDN，加载，5
-jQuery Mobile，291
-应用网格
-布局，316-320
-构建网页，
-302-304
-创建导航栏，314
-自定义弹出窗口，
-329-332
-划分为
-可折叠元
-素，326-327
-格式化列表视图，
-320-325
-表单，334-340
-使用多页
-面实现，
-306-314
-概述，291-300
-表格，333
-查看面板，328
-jQuery UI，添加，
-201-202
-加载，9
-Mobile，9-12
-链接，修改
-位置，127
+
+**库**
+
+- 访问，7
+- CDN，加载，5
+- jQuery Mobile，291
+    - 应用网格布局，316-320
+    - 构建网页，302-304
+    - 创建导航栏，314
+    - 自定义弹出窗口，329-332
+    - 划分为可折叠元素，326-327
+    - 格式化列表视图，320-325
+    - 表单，334-340
+    - 使用多页面实现，306-314
+    - 概述，291-300
+    - 表格，333
+    - 查看面板，328
+- jQuery UI，添加，201-202
+- 加载，9
+- Mobile，9-12
+- 链接，修改位置，127
 
 ## K–L
 
@@ -8894,17 +8492,14 @@ Mobile，9-12
 - 按键，按下，120
 - 关键字，17，96，99
 - 标签，添加/隐藏，335
-
-- 语言
+- **语言**
     - JavaScript
         - 添加到 HTML 文档，3
         - 从外部文件加载，4
         - 概述，2
         - 语法，15
-
-- .last() 方法，93
-
-- 布局
+- `.last()` 方法，93
+- **布局**
     - 网格，应用，316-317，320
     - 网页
         - 调整不透明度，146-149
@@ -8913,8 +8508,7 @@ Mobile，9-12
         - 重新定位元素，152-153，156
         - 调整元素大小，149-152
         - 堆叠元素，156-158
-
-- 列表
+- **列表**
     - 分隔符，添加，324
     - 项目，插入到，191-193
     - 嵌套，322
@@ -8924,97 +8518,97 @@ Mobile，9-12
 - 可搜索，实现，325
 - 分割按钮，324
 - 列表视图，格式化，320-325
-- .load() 方法，101
-- 加载
+- `.load()` 方法，101
+- **加载**
     - HTML 到页面元素，269-271
     - JavaScript 从外部文件，4
     - 网页中的 jQuery，5-6
     - 库，5，9
     - Mobile，12
     - 移动页面（不显示），299
-- .loadPage() 方法，298
-- location.reload() 方法，44
-- 位置
+- `.loadPage()` 方法，298
+- `location.reload()` 方法，44
+- **位置**
     - 当前位置，45-47
     - 链接，修改，127
     - 网页，47-48
 - 逻辑，应用，29-31
-- 循环
-    - for()，31
-    - while()，30
+- **循环**
+    - `for()`，31
+    - `while()`，30
 - 底层 AJAX 请求，287-289
 
 ## M
 
-- 管理
+- **管理**
     - 事件，107-110
     - 表单提交，175
-- 操作
+- **操作**
     - 数组，25-27
     - Cookie，52-55
     - 字符串，21-25
-- .map() 方法，应用，87-88
+- `.map()` 方法，应用，87-88
 - Math 对象，31-35
 - 最大选项，216
 - 集合中的最大数，34
 - 菜单，格式化，220-222
 - 元标签，定义视口，300
-- 方法
-    - .animate()，228-229
-    - .attr()，126，166
-    - autocomplete，203
-    - .blur()，173
-    - .changePage()，298
-    - click()，110
-    - .css()，130
-    - .data()，166
-    - .datepicker()，213
-    - dblclick()，110
-    - .delay()，234
-    - .each()，85
-    - event.preventDefault()，109
-    - event.stopPropagation()，109
-    - .filter(filter)，92
-    - .first()，93
-    - .focus()，173
-    - **.get()**
+- **方法**
+    - `.animate()`，228-229
+    - `.attr()`，126，166
+    - `autocomplete`，203
+    - `.blur()`，173
+    - `.changePage()`，298
+    - `click()`，110
+    - `.css()`，130
+    - `.data()`，166
+    - `.datepicker()`，213
+    - `dblclick()`，110
+    - `.delay()`，234
+    - `.each()`，85
+    - `event.preventDefault()`，109
+    - `event.stopPropagation()`，109
+    - `.filter(filter)`，92
+    - `.first()`，93
+    - `.focus()`，173
+    - **`.get()`**
         - JSON 数据，271-274
         - XML 数据，274，277
-    - **.get([index])**，84
-    - **.getScript()**，256
-    - **.has(选择器或元素)**，93
-    - **.hide()**，144，170，242
-    - **.html()**，140
-    - **.is()**，161-163
-    - **.join()**，27
-    - **JSON.parse()**，258
-    - **.last()**，93
-    - **.load()**，101
-    - **.loadPage()**，299
-    - **location.reload()**，44
-    - **.map()**，87-88
-    - **.not(filter) 方法**，94
-    - **.off()**，106
-    - **.offset()**，153
-    - **.on()**，105
-    - **onloadHandler()**，100
-    - **pop()**，27
-    - **.position()**，153
-    - **.post()**，278-281
-    - **.prop()**，126，166
-    - **push()**，18
-    - **.ready()**，101
-    - **.remove()**，184
-    - **removeAttr()**，162
-    - **setTimeout()**，197
-    - **.show()**，144，170，243
-    - **sort()**，28
-    - **.slice(start, [end])**，94
-    - **.slideToggle()**，239
-    - **.toggle()**，243，245
-    - **.toLowerCase()**，24
-    - **.toUpperCase()**，24
-    - **.val()**，160，164
+    - **`.get([index])`**，84
+    - **`.getScript()`**，256
+    - **`.has(选择器或元素)`**，93
+    - **`.hide()`**，144，170，242
+    - **`.html()`**，140
+    - **`.is()`**，161-163
+    - **`.join()`**，27
+    - **`JSON.parse()`**，258
+    - **`.last()`**，93
+    - **`.load()`**，101
+    - **`.loadPage()`**，299
+    - **`location.reload()`**，44
+    - **`.map()`**，87-88
+    - **`.not(filter)` 方法**，94
+    - **`.off()`**，106
+    - **`.offset()`**，153
+    - **`.on()`**，105
+    - **`onloadHandler()`**，100
+    - **`pop()`**，27
+    - **`.position()`**，153
+    - **`.post()`**，278-281
+    - **`.prop()`**，126，166
+    - **`push()`**，18
+    - **`.ready()`**，101
+    - **`.remove()`**，184
+    - **`removeAttr()`**，162
+    - **`setTimeout()`**，197
+    - **`.show()`**，144，170，243
+    - **`sort()`**，28
+    - **`.slice(start, [end])`**，94
+    - **`.slideToggle()`**，239
+    - **`.toggle()`**，243，245
+    - **`.toLowerCase()`**，24
+    - **`.toUpperCase()`**，24
+    - **`.val()`**，160，164
 
 ### 插入到元素内容中间，181
 
@@ -9043,544 +8637,540 @@ Mobile，9-12
 - 颜色，131-132
 - Cookie，52-55
 
-
-
 ### 修改
 
--   元素
-    -   应用滑块，215-219
-    -   内容，139-141
--   焦点，122
--   字体，136
--   全局设置，285
--   图片源文件，128
--   链接位置，127
--   移动网页，298
--   对象，83
-    -   向其中添加 DOM 元素，91
-    -   应用 .map() 方法，87-88
-    -   为其分配数据值，89
-    -   将 DOM 对象转换为，84
-    -   删除，91
-    -   过滤结果，92-94
-    -   获取，84
-    -   迭代，85-86
--   单选按钮输入，162
--   下拉选择输入，164-165
--   选择项，123
--   字符串，21-25
--   检测文本，119
--   网页
-    -   调整不透明度，146-149
-    -   CSS 属性，130-139
-    -   DOM 元素属性，126-129
--   动态编程，125
--   元素内容，139-141
--   隐藏/显示元素，144，146
--   布局，143
--   重新定位元素，152-153，156
--   调整元素大小，149-152
--   堆叠元素，156-158
--   鼠标
-    -   获取坐标，115
-    -   事件，115-118
-    -   添加鼠标点击处理代码，115
-    -   mouseout 事件，116
-    -   mouseover 事件，116
--   移动
-    -   元素动画，248-250
-    -   HTML 元素，152-156
+- **元素**
+    - 应用滑块，215-219
+    - 内容，139-141
+- 焦点，122
+- 字体，136
+- 全局设置，285
+- 图片源文件，128
+- 链接位置，127
+- 移动网页，298
+- **对象**，83
+    - 向其中添加 DOM 元素，91
+    - 应用 `.map()` 方法，87-88
+    - 为其分配数据值，89
+    - 将 DOM 对象转换为，84
+    - 删除，91
+    - 过滤结果，92-94
+    - 获取，84
+    - 迭代，85-86
+- 单选按钮输入，162
+- 下拉选择输入，164-165
+- 选择项，123
+- 字符串，21-25
+- 检测文本，119
+- **网页**
+    - 调整不透明度，146-149
+    - CSS 属性，130-139
+    - DOM 元素属性，126-129
+- 动态编程，125
+- 元素内容，139-141
+- 隐藏/显示元素，144，146
+- 布局，143
+- 重新定位元素，152-153，156
+- 调整元素大小，149-152
+- 堆叠元素，156-158
+- **鼠标**
+    - 获取坐标，115
+    - 事件，115-118
+    - 添加鼠标点击处理代码，115
+    - `mouseout` 事件，116
+    - `mouseover` 事件，116
+- **移动**
+    - 元素动画，248-250
+    - HTML 元素，152-156
 
 ### 命名
 
--   属性，166
--   在 DOM 对象中搜索类，60
--   搜索主机，46
--   在 DOM 对象中搜索标签，61
--   导航栏格式化，314
+- 属性，166
+- 在 DOM 对象中搜索类，60
+- 搜索主机，46
+- 在 DOM 对象中搜索标签，61
+- 导航栏格式化，314
 
 ### 导航
 
--   浏览器，43
-    -   访问，47-49
-    -   添加计时器，55-57
-    -   应用 JavaScript 控制台，44
-    -   当前位置详情，45-47
-    -   历史记录，49
-    -   修改 cookies，52-55
-    -   弹出窗口，50-51
-    -   重定向网页，44
-    -   重新加载网页，44
-    -   调整屏幕尺寸，45
--   jQuery Mobile 库，291-300
--   用于选择元素的对象，76-82
--   用户界面，7
-    -   访问库，7
-    -   加载，9
+- **浏览器**，43
+    - 访问，47-49
+    - 添加计时器，55-57
+    - 应用 JavaScript 控制台，44
+    - 当前位置详情，45-47
+    - 历史记录，49
+    - 修改 cookies，52-55
+    - 弹出窗口，50-51
+    - 重定向网页，44
+    - 重新加载网页，44
+    - 调整屏幕尺寸，45
+- jQuery Mobile 库，291-300
+- 用于选择元素的对象，76-82
+- **用户界面**，7
+    - 访问库，7
+    - 加载，9
 
 ### 导航按钮
 
--   添加，307-314
--   定位，308
+- 添加，307-314
+- 定位，308
 
 ### 应用嵌套列表，322
 
 ### 网络，CDN，5
 
-### .not(filter) 方法，94
+### `.not(filter)` 方法，94
 
-### numberOfMonths 选项，213
+### `numberOfMonths` 选项，213
 
 ## 数字
 
--   格式化日期，36-40
--   集合中的最大值，34
--   集合中的最小值，33
--   生成随机数，32
--   舍入，33
--   转换为字符串，22
+- 格式化日期，36-40
+- 集合中的最大值，34
+- 集合中的最小值，33
+- 生成随机数，32
+- 舍入，33
+- 转换为字符串，22
 
 ### 0
 
 ## 对象
 
--   创建，19
--   Date，36-40
--   DOM，60-61
--   用于导航选择元素的对象，76-82
--   相等性，29
--   事件，111-114
--   现有的，180
--   获取，84
--   jQuery
-    -   向其中添加 DOM 元素，91
-    -   应用 map() 方法，87-88
-    -   为其分配数据值，89
-    -   将 DOM 对象转换为，84
-    -   删除，91
-    -   过滤结果，92-94
-    -   迭代，85-86
--   location，45-47
--   Math，31，34-35
--   修改，83
--   链式操作，75-76
--   迭代属性，31
--   字符串，特殊字符，21
--   window.XMLHttpRequest，261
--   windows，47-49
--   XMLHttpRequest，261
--   .off() 方法，106
--   .offset() 方法，153
--   .on() 方法，105
--   按需 JavaScript，255
--   onloadHandler() 方法，100
--   onSelect 选项，213
--   不透明度
-    -   调整，146-149
-    -   渐隐至指定级别，236
--   打开窗口，49
--   操作
-    -   数学运算，31-35
-    -   对象链式操作，75-76
--   选项
-    -   动画，229
-    -   可拖动小部件，205
-    -   可拖放小部件，208
-    -   获取/设置单选按钮组选项，162
-    -   方向选项，216
+- 创建，19
+- Date，36-40
+- DOM，60-61
+- 用于导航选择元素的对象，76-82
+- 相等性，29
+- 事件，111-114
+- **`existingObject`**，180
+- 获取，84
+- **jQuery**
+    - 向其中添加 DOM 元素，91
+    - 应用 `.map()` 方法，87-88
+    - 为其分配数据值，89
+    - 将 DOM 对象转换为，84
+    - 删除，91
+    - 过滤结果，92-94
+    - 迭代，85-86
+- location，45-47
+- Math，31，34-35
+- 修改，83
+- 链式操作，75-76
+- 迭代属性，31
+- 字符串，特殊字符，21
+- `window.XMLHttpRequest`，261
+- windows，47-49
+- `XMLHttpRequest`，261
+- `.off()` 方法，106
+- `.offset()` 方法，153
+- `.on()` 方法，105
+- 按需 JavaScript，255
+- `onloadHandler()` 方法，100
+- `onSelect` 选项，213
+- **不透明度**
+    - 调整，146-149
+    - 渐隐至指定级别，236
+- 打开窗口，49
+- **操作**
+    - 数学运算，31-35
+    - 对象链式操作，75-76
+- **选项**
+    - 动画，229
+    - 可拖动小部件，205
+    - 可拖放小部件，208
+    - 获取/设置单选按钮组选项，162
+    - 方向选项，216
 
 ## P
 
--   页面
-    -   将 HTML 加载到元素中，269-271
-    -   添加 load 事件处理器，99
--   父级
-    -   追加元素内容，141
-    -   搜索，80
--   路径，查看文件，46
--   物理事件，107。另请参见事件
--   pop() 方法，27
--   弹出窗口
-    -   创建，50-51
-    -   应用，329，332
--   position 提示框，223
--   .position() 方法，153
--   定位
-    -   HTML 元素，152-156
-    -   导航按钮，308
-    -   父级
-        -   检索，80
-        -   搜索，80
--   POST 请求，AJAX，255，264，267
--   .post() 方法，278-281
--   应用幂函数，35
--   前置内容
-    -   内容，179
-    -   文本，140
--   按键，120
--   前一个兄弟元素，81
--   编程
-    -   动态编程，125。另请参见动态编程
-    -   将 JavaScript 添加到 HTML 文档，3
--   查看面板，328
--   从外部文件加载，4
--   概述，2
--   语法，15
--   .prop() 方法，126，166
--   阻止事件冒泡，109
--   属性
-    -   获取/设置 CSS 属性，130-139
-    -   配置 DOM 元素属性，126-129
-    -   迭代对象属性，31
--   push() 方法，18
+- **页面**
+    - 将 HTML 加载到元素中，269-271
+    - 添加 load 事件处理器，99
+- **父级**
+    - 追加元素内容，141
+    - 搜索，80
+- **路径**，查看文件，46
+- **物理事件**，107。另请参见 **事件**
+- `pop()` 方法，27
+- **弹出窗口**
+    - 创建，50-51
+    - 应用，329，332
+- `position` 提示框，223
+- `.position()` 方法，153
+- **定位**
+    - HTML 元素，152-156
+    - 导航按钮，308
+    - 父级
+        - 检索，80
+        - 搜索，80
+- **POST 请求，AJAX**，255，264，267
+- `.post()` 方法，278-281
+- 应用幂函数，35
+- **前置内容**
+    - 内容，179
+    - 文本，140
+- **按键**，120
+- **前一个兄弟元素**，81
+- **编程**
+    - 动态编程，125。另请参见 **动态编程**
+    - 将 JavaScript 添加到 HTML 文档，3
+- **查看面板**，328
+- 从外部文件加载，4
+- 概述，2
+- 语法，15
+- `.prop()` 方法，126，166
+- 阻止事件冒泡，109
+- **属性**
+    - 获取/设置 CSS 属性，130-139
+    - 配置 DOM 元素属性，126-129
+    - 迭代对象属性，31
+- `push()` 方法，18
 
 ## Q-R
 
--   查询，检索字符串，46
--   队列
-    -   动画队列，231
-    -   函数队列，230
--   单选按钮输入，162
--   生成随机数，32
--   range 选项，216
--   .ready() 方法，101
--   添加循环计时器，57
--   重定向网页，44
--   刷新表单元素，336
--   重新加载网页，44
--   .remove() 方法，184
--   removeAttr() 方法，162
--   removeEventListener() 函数，104
--   renderSpark() 函数，197
--   替换字符串，25
--   替换文本，141
--   重新定位 HTML 元素，152-156
--   AJAX 请求
-    -   跨域请求，254
-    -   GET/POST 请求，255
-    -   JavaScript 请求，261-267
-    -   jQuery 请求，267-289
-    -   响应数据类型，256-259
--   reset 事件，175
--   调整 HTML 元素大小，149-152
--   图片动画，246-248
--   AJAX 响应
-    -   jQuery 响应，282-284
-    -   数据类型，256-259
--   过滤对象结果，92-94
--   检索
-    -   79
-    -   子元素，77
-    -   Cookie 值，53
-    -   定位父级，80
-    -   前一个兄弟元素，81
-    -   查询字符串，46
-    -   兄弟元素，79-82
--   应用右键单击，117-118
--   数字舍入，33
--   向表格追加行，189-191
+- **查询**，检索字符串，46
+- **队列**
+    - 动画队列，231
+    - 函数队列，230
+- **单选按钮输入**，162
+- 生成随机数，32
+- `range` 选项，216
+- `.ready()` 方法，101
+- 添加循环计时器，57
+- 重定向网页，44
+- 刷新表单元素，336
+- 重新加载网页，44
+- `.remove()` 方法，184
+- `removeAttr()` 方法，162
+- `removeEventListener()` 函数，104
+- `renderSpark()` 函数，197
+- 替换字符串，25
+- 替换文本，141
+- 重新定位 HTML 元素，152-156
+- **AJAX 请求**
+    - 跨域请求，254
+    - GET/POST 请求，255
+    - JavaScript 请求，261-267
+    - jQuery 请求，267-289
+    - 响应数据类型，256-259
+- `reset` 事件，175
+- 调整 HTML 元素大小，149-152
+- 图片动画，246-248
+- **AJAX 响应**
+    - jQuery 响应，282-284
+    - 数据类型，256-259
+- 过滤对象结果，92-94
+- **检索**
+    - 79
+    - 子元素，77
+    - Cookie 值，53
+    - 定位父级，80
+    - 前一个兄弟元素，81
+    - 查询字符串，46
+    - 兄弟元素，79-82
+- 应用右键单击，117-118
+- 数字舍入，33
+- 向表格追加行，189-191
 
 ## S
 
--   屏幕
-    -   检测移动屏幕尺寸，294
-    -   调整尺寸，45
--   实现可搜索列表，325
--   搜索
-    -   祖先元素，80
-    -   字符，22
-    -   当前哈希值，45
-    -   网页当前位置，48
-    -   后代元素，78
-    -   主机名，46
-    -   HTML
-        -   链式对象操作，75-76
-        -   元素，59-68，71-74
-    -   父级，80
-    -   字符串，25
--   从安全位置查看，47
--   创建选择表单元素，186-188
--   下拉选择输入，164-165
--   选择
-    -   用于导航选择元素的对象，76-82
-    -   修改选择项，123
--   选择器
-    -   应用选择器，62
-    -   过滤器，74
--   发送
-    -   从 JavaScript 发送 GET 请求，262-264
-    -   从 JavaScript 发送 POST 请求，264-267
--   服务器
-    -   AJAX
-        -   异步通信，253-254
-        -   跨域请求，254
-        -   GET/POST 请求，255
-        -   JavaScript，261-267
-        -   jQuery，267-289
-        -   概述，251-252
-        -   响应数据类型，256-259
-        -   更新服务器，278-281
--   集合
-    -   集合中的最大值，34
-    -   集合中的最小值，33
--   setTimeout() 方法，197
--   设置。另请参见配置
-    -   CSS
-        -   动画设置，228-229
-        -   属性设置，130-139
-    -   DOM 元素
-        -   属性设置，126-129
-    -   隐藏表单属性，166
-    -   选择输入设置，164-165
-    -   设置单选按钮组中的选中选项，162
-    -   设置文本输入值，160
--   管理表单提交，363
--   修改全局设置，285
--   .show() 方法，144，170，243
--   showButtonPanel 选项，213
--   showOn 选项，213
--   兄弟元素
-    -   前一个兄弟元素，81
-    -   检索兄弟元素，79-82
--   调整尺寸
-    -   屏幕尺寸，45，294
-    -   网页尺寸，47
--   .slice(start, [end]) 方法，94
--   slide 选项，216
--   .slideToggle() 方法，239
--   应用滑块，215-216，219
--   滑动切换，239-242
--   数组排序，28
--   修改图片源文件，128
--   特殊字符，21
--   动画特效，227-228
-    -   CSS 设置，228-229
-    -   延迟，233
-    -   .hide() 方法，242
-    -   移动元素，248-250
-    -   队列，231
-    -   调整图片大小，246-248
-    -   .show() 方法，243
-    -   滑动切换，239-242
-    -   停止动画，232-233
--   .toggle() 方法，243-245
--   可见性，234-238
--   拼接
-    -   数组，26
-    -   字符串，24
--   分割按钮列表，324
--   拆分字符串，24
--   堆叠 HTML 元素，156-158
--   修改复选框状态，161-162
--   配置状态栏文本，48
--   step 函数，231
--   停止
-    -   动画，232-233
-    -   默认行为，109
-    -   事件冒泡，109
--   字符串
-    -   修改大小写，24
-    -   组合字符串，23
-    -   格式化日期，37
-    -   操作字符串，21-25
-    -   转换为数字，22
-    -   检索查询字符串，46
-    -   替换字符串，25
-    -   搜索字符串，25
-    -   拼接字符串，24
-    -   拆分字符串，24
-    -   检查子字符串，25
-    -   格式化时间，38
--   submit 事件，175
--   管理表单提交，175
--   检查子字符串，25
--   主题样本，295
--   滑动事件处理器，310，314
--   JavaScript 语法，15
+- **屏幕**
+    - 检测移动屏幕尺寸，294
+    - 调整尺寸，45
+- 实现可搜索列表，325
+- **搜索**
+    - 祖先元素，80
+    - 字符，22
+    - 当前哈希值，45
+    - 网页当前位置，48
+    - 后代元素，78
+    - 主机名，46
+    - **HTML**
+        - 链式对象操作，75-76
+        - 元素，59-68，71-74
+    - 父级，80
+    - 字符串，25
+- 从安全位置查看，47
+- 创建选择表单元素，186-188
+- 下拉选择输入，164-165
+- **选择**
+    - 用于导航选择元素的对象，76-82
+    - 修改选择项，123
+- **选择器**
+    - 应用选择器，62
+    - 过滤器，74
+- **发送**
+    - 从 JavaScript 发送 GET 请求，262-264
+    - 从 JavaScript 发送 POST 请求，264-267
+- **服务器**
+    - **AJAX**
+        - 异步通信，253-254
+        - 跨域请求，254
+        - GET/POST 请求，255
+        - JavaScript，261-267
+        - jQuery，267-289
+        - 概述，251-252
+        - 响应数据类型，256-259
+        - 更新服务器，278-281
+- **集合**
+    - 集合中的最大值，34
+    - 集合中的最小值，33
+- `setTimeout()` 方法，197
+- **设置**。另请参见 **配置**
+    - **CSS**
+        - 动画设置，228-229
+        - 属性设置，130-139
+    - **DOM 元素**
+        - 属性设置，126-129
+    - 隐藏表单属性，166
+    - 选择输入设置，164-165
+    - 设置单选按钮组中的选中选项，162
+    - 设置文本输入值，160
+- **管理表单提交**，363
+- 修改全局设置，285
+- `.show()` 方法，144，170，243
+- `showButtonPanel` 选项，213
+- `showOn` 选项，213
+- **兄弟元素**
+    - 前一个兄弟元素，81
+    - 检索兄弟元素，79-82
+- **调整尺寸**
+    - 屏幕尺寸，45，294
+    - 网页尺寸，47
+- `.slice(start, [end])` 方法，94
+- `slide` 选项，216
+- `.slideToggle()` 方法，239
+- 应用滑块，215-216，219
+- 滑动切换，239-242
+- 数组排序，28
+- 修改图片源文件，128
+- 特殊字符，21
+- **动画特效**，227-228
+    - CSS 设置，228-229
+    - 延迟，233
+    - `.hide()` 方法，242
+    - 移动元素，248-250
+    - 队列，231
+    - 调整图片大小，246-248
+    - `.show()` 方法，243
+    - 滑动切换，239-242
+    - 停止动画，232-233
+- `.toggle()` 方法，243-245
+- 可见性，234-238
+- **拼接**
+    - 数组，26
+    - 字符串，24
+- 分割按钮列表，324
+- 拆分字符串，24
+- 堆叠 HTML 元素，156-158
+- 修改复选框状态，161-162
+- 配置状态栏文本，48
+- `step` 函数，231
+- **停止**
+    - 动画，232-233
+    - 默认行为，109
+    - 事件冒泡，109
+- **字符串**
+    - 修改大小写，24
+    - 组合字符串，23
+    - 格式化日期，37
+    - 操作字符串，21-25
+    - 转换为数字，22
+    - 检索查询字符串，46
+    - 替换字符串，25
+    - 搜索字符串，25
+    - 拼接字符串，24
+    - 拆分字符串，24
+    - 检查子字符串，25
+    - 格式化时间，38
+- `submit` 事件，175
+- 管理表单提交，175
+- 检查子字符串，25
+- 主题样本，295
+- 滑动事件处理器，310，314
+- JavaScript 语法，15
 
 ## T
 
--   切换
-    -   类，137-139
-    -   元素可见性
-    -   开/关，235
--   容差级别，208
--   .toLowerCase() 方法，24
--   工具
-    -   配置浏览器开发工具，12-13
-    -   JavaScript 控制台，44
--   格式化工具提示，223-225
--   .toUpperCase() 方法，24
--   从制表符分隔的字符串创建数组，27
--   表格
-    -   添加表格，333
-    -   向表格追加行，189-191
--   在 DOM 对象中搜索标签，61
--   获取事件对象的目标，114
--   过渡
-    -   添加过渡，308
-    -   动画过渡，237-238
--   触发
-    -   动画，232
-    -   手动触发事件，110
--   应用三角函数，35
--   事件类型，96，99
--   文本
-    -   AJAX 文本，257
-    -   追加/前置文本，140
-    -   实现自动完成功能，203-205
-    -   输入值，160
-    -   修改，检测文本，119
-    -   替换文本，141
-    -   配置状态栏文本，48
+- **切换**
+    - 类，137-139
+    - 元素可见性
+    - 开/关，235
+- 容差级别，208
+- `.toLowerCase()` 方法，24
+- **工具**
+    - 配置浏览器开发工具，12-13
+    - JavaScript 控制台，44
+- 格式化工具提示，223-225
+- `.toUpperCase()` 方法，24
+- 从制表符分隔的字符串创建数组，27
+- **表格**
+    - 添加表格，333
+    - 向表格追加行，189-191
+- 在 DOM 对象中搜索标签，61
+- 获取事件对象的目标，114
+- **过渡**
+    - 添加过渡，308
+    - 动画过渡，237-238
+- **触发**
+    - 动画，232
+    - 手动触发事件，110
+- 应用三角函数，35
+- 事件类型，96，99
+- **文本**
+    - AJAX 文本，257
+    - 追加/前置文本，140
+    - 实现自动完成功能，203-205
+    - 输入值，160
+    - 修改，检测文本，119
+    - 替换文本，141
+    - 配置状态栏文本，48
 
 ## U
 
--   主题样本，295
--   时间
-    -   获取当前时间，37
-    -   格式化时间差，39
-    -   格式化时间字符串，38
--   添加计时器，55-57
--   .toggle() 方法，243-245
--   用户界面
-    -   元素
-        -   添加元素，201
-    -   应用滑块，215-219
-    -   附加日期选择器，212-215
-    -   编码工具提示，223-225
-    -   创建菜单，220-222
-
-
+- 主题样本，295
+- **时间**
+    - 获取当前时间，37
+    - 格式化时间差，39
+    - 格式化时间字符串，38
+- 添加计时器，55-57
+- `.toggle()` 方法，243-245
+- **用户界面**
+    - **元素**
+        - 添加元素，201
+    - 应用滑块，215-219
+    - 附加日期选择器，212-215
+    - 编码工具提示，223-225
+    - 创建菜单，220-222
 
 ## V
 
 - `.val()` 方法，160，164
-- value 选项，216
-- 值
-  - 绝对值，计算，34
-  - 属性值，166
-  - cookies 值，配置，53
-  - 对象值，赋值，89
-  - 文本输入值，160
-- **var 关键字，17**
-- 变量
-  - 访问，16
-  - 定义，16
-- 查看
-  - 元素，网页，144-146
-  - 文件路径，46
-  - 表单元素，170-172
-  - 列表视图，格式化，320-325
+- `value` 选项，216
+- **值**
+    - 绝对值，计算，34
+    - 属性值，166
+    - cookies 值，配置，53
+    - 对象值，赋值，89
+    - 文本输入值，160
+- **`var` 关键字，17**
+- **变量**
+    - 访问，16
+    - 定义，16
+- **查看**
+    - 元素，网页，144-146
+    - 文件路径，46
+    - 表单元素，170-172
+    - 列表视图，格式化，320-325
 
 ## W
 
-- **网页表单，159。另见 表单**
-- **网页。另见 HTML**
-  - 内容
-    - 添加元素，179-183
-    - 向表格追加行，189-191
-    - 动态构建，177
-    - 删除元素，184-185
-    - HTML 元素，178
-    - HTML5 canvas 图形，197-199
-    - 图像画廊，193-196
-    - 向列表插入项目，191-193
-    - select 元素，186-188
-  - 下载库，201-202
-  - 拖放，205-212
-  - 实现自动完成，203-205
-  - 库，访问，7
-  - 加载，9
-  - **更新服务器，278-281**
-  - **用户交互，添加，179-183**
-  - **用户界面。另见 UI**
-  - 移动页面，加载但不显示，299
-  - 面板，328
-  - 网页，47
-  - 移动设备上的网站，294
-  - **视口，定义 meta 标签，300**
-  - 可见性
-    - 动画，234-238
-    - 根据可见性选择 HTML 元素，72
-  - 当前位置，48
-  - 动态编程
-    - CSS 属性，130-139
-    - DOM 元素属性，126-129
-    - 元素内容，139-141
-    - 修改，125
-  - 事件
-    - 添加事件处理程序，99-106
-    - 表单，122-123
-    - 键盘，118-120
-    - 管理，107-110
-    - 鼠标，115-118
-    - 对象，111-114
-    - 概述，96
-    - 类型，96-99
-  - 历史记录，导航，49
-  - HTML，加载到，269-271
-  - jQuery，加载，5-6
-  - 布局
-    - 调整不透明度，146-149
-    - 隐藏/查看元素，144-146
-    - 修改，143
-    - 重新定位元素，152-156
-    - 调整元素大小，149-152
-    - 堆叠元素，156-158
-  - 移动端，构建，302-304
-  - 导航栏，格式化，314
-  - 重定向，44
-  - 重新加载，44
-  - 安全位置，从，查看，47
-  - UI 元素
-    - 添加，201
-    - 应用滑块，215-219
-    - 附加日期选择器，212-215
-    - 编写工具提示，223-225
-    - 创建菜单，220-222
+- **网页表单，159**。另见 **表单**
+- **网页**。另见 **HTML**
+    - **内容**
+        - 添加元素，179-183
+        - 向表格追加行，189-191
+        - 动态构建，177
+        - 删除元素，184-185
+        - HTML 元素，178
+        - HTML5 canvas 图形，197-199
+        - 图像画廊，193-196
+        - 向列表插入项目，191-193
+        - select 元素，186-188
     - 下载库，201-202
     - 拖放，205-212
     - 实现自动完成，203-205
-    - 查看，47
+    - 库，访问，7
+    - 加载，9
+    - **更新服务器，278-281**
+    - **用户交互，添加，179-183**
+    - **用户界面**。另见 **UI**
+    - 移动页面，加载但不显示，299
+    - 面板，328
+    - 网页，47
+    - 移动设备上的网站，294
+    - **视口，定义 meta 标签，300**
+    - **可见性**
+        - 动画，234-238
+        - 根据可见性选择 HTML 元素，72
+    - 当前位置，48
+    - **动态编程**
+        - CSS 属性，130-139
+        - DOM 元素属性，126-129
+        - 元素内容，139-141
+        - 修改，125
+    - **事件**
+        - 添加事件处理程序，99-106
+        - 表单，122-123
+        - 键盘，118-120
+        - 管理，107-110
+        - 鼠标，115-118
+        - 对象，111-114
+        - 概述，96
+        - 类型，96-99
+    - 历史记录，导航，49
+    - HTML，加载到，269-271
+    - jQuery，加载，5-6
+    - **布局**
+        - 调整不透明度，146-149
+        - 隐藏/查看元素，144-146
+        - 修改，143
+        - 重新定位元素，152-156
+        - 调整元素大小，149-152
+        - 堆叠元素，156-158
+    - 移动端，构建，302-304
+    - 导航栏，格式化，314
+    - 重定向，44
+    - 重新加载，44
+    - 安全位置，从，查看，47
+    - **UI 元素**
+        - 添加，201
+        - 应用滑块，215-219
+        - 附加日期选择器，212-215
+        - 编写工具提示，223-225
+        - 创建菜单，220-222
+        - 下载库，201-202
+        - 拖放，205-212
+        - 实现自动完成，203-205
+        - 查看，47
 - **Web 服务器，AJAX**
-  - 异步通信，253-254
-  - 跨域请求，254
-  - GET/POST 请求，255
-  - JavaScript，261-267
-  - jQuery，267-289
-  - 概述，251-252
-  - 响应数据类型，256-259
-  - z-index，367
+    - 异步通信，253-254
+    - 跨域请求，254
+    - GET/POST 请求，255
+    - JavaScript，261-267
+    - jQuery，267-289
+    - 概述，251-252
+    - 响应数据类型，256-259
+    - `z-index`，367
 
 ## X–Z
 
-- 网站，移动端（jQuery），291。另见 网页
-  - 应用网格布局，316-320
-  - 构建网页，302-304
-  - 创建导航栏，314
-  - 自定义弹出窗口，329-332
-  - 划分为可折叠元素，326-327
-  - 格式化列表视图，320-325
-  - 表单，334-340
-  - 使用多页面实现，306-314
-  - 概述，291-300
-  - 表格，333
-  - 查看面板，328
-- while() 循环，30
-- 小部件
-  - 日期选择器，附加，212-215
-  - 可拖动/可放置，205-212
-  - 菜单，创建，220-222
-  - 工具提示，创建，223-225
-- window.XMLHttpRequest 对象，261
-- 窗口
-  - 关闭，49
-  - 对象，47-49
-  - 打开，49
-  - 弹出窗口，创建，50-51
-- XML（可扩展标记语言）
-  - 处理，274，277
-  - 响应数据，259
-- XMLHttpRequest 对象，261
-- z-index，157
+- **网站，移动端（jQuery）**，291。另见 **网页**
+    - 应用网格布局，316-320
+    - 构建网页，302-304
+    - 创建导航栏，314
+    - 自定义弹出窗口，329-332
+    - 划分为可折叠元素，326-327
+    - 格式化列表视图，320-325
+    - 表单，334-340
+    - 使用多页面实现，306-314
+    - 概述，291-300
+    - 表格，333
+    - 查看面板，328
+- `while()` 循环，30
+- **小部件**
+    - 日期选择器，附加，212-215
+    - 可拖动/可放置，205-212
+    - 菜单，创建，220-222
+    - 工具提示，创建，223-225
+- `window.XMLHttpRequest` 对象，261
+- **窗口**
+    - 关闭，49
+    - 对象，47-49
+    - 打开，49
+    - 弹出窗口，创建，50-51
+- **XML（可扩展标记语言）**
+    - 处理，274，277
+    - 响应数据，259
+- `XMLHttpRequest` 对象，261
+- `z-index`，157

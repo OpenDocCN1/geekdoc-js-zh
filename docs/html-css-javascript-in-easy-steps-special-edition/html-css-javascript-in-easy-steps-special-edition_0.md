@@ -1,28 +1,36 @@
-# HTML、CSS和JavaScript轻松入门特别版
 
-
+# HTML、CSS 和 JavaScript 轻松入门特别版
 
 ![](img/cover.jpg)
+
 ![image](img/cover.jpg)
+
 ![image](img/front.jpg)
+
 ![image](img/title.jpg)
 
-In Easy Steps 是 In Easy Steps Limited 的出版品牌
+`In Easy Steps` 是 `In Easy Steps Limited` 的出版品牌。
+
 16 Hamilton Terrace · Holly Walk · Leamington Spa
+
 Warwickshire · United Kingdom · CV32 4LY
+
 [www.ineasysteps.com](http://www.ineasysteps.com)
 
 版权所有 © 2020 In Easy Steps Limited。保留所有权利。未经出版商事先书面许可，本书的任何部分不得以任何形式或任何方式（电子或机械，包括影印、录制或任何信息存储检索系统）复制或传播。
 
-### 责任声明
+## 责任声明
+
 已尽一切努力确保本书包含准确且最新的信息。然而，In Easy Steps Limited 及作者对读者因本书所含任何信息而遭受的任何损失或损害不承担任何责任。
 
-### 商标
+## 商标
+
 所有商标均被认可属于其各自的公司。
 
-## 目录
+# 目录
 
-### 1 HTML 入门
+## 1 HTML 入门
+
 - 认识 HTML
 - 理解结构
 - 创建文档
@@ -35,7 +43,8 @@ Warwickshire · United Kingdom · CV32 4LY
 - 链接资源
 - 总结
 
-### 2 构建网页结构
+## 2 构建网页结构
+
 - 声明标题
 - 分组标题
 - 包含导航
@@ -45,7 +54,8 @@ Warwickshire · United Kingdom · CV32 4LY
 - 修改分区
 - 总结
 
-### 3 管理文本内容
+## 3 管理文本内容
+
 - 插入段落
 - 包含引用
 - 添加强调
@@ -63,7 +73,8 @@ Warwickshire · United Kingdom · CV32 4LY
 - 协议链接
 - 总结
 
-# 4 编写列表和表格
+## 4 编写列表和表格
+
 - 无序列表
 - 有序列表
 - 描述列表
@@ -73,7 +84,8 @@ Warwickshire · United Kingdom · CV32 4LY
 - 控制列
 - 总结
 
-### 5 嵌入媒体内容
+## 5 嵌入媒体内容
+
 - 添加图像
 - 图像映射
 - 引用图形
@@ -90,7 +102,8 @@ Warwickshire · United Kingdom · CV32 4LY
 - 绘制画布
 - 总结
 
-### 6 创建本地域名
+## 6 创建本地域名
+
 - 安装 Abyss
 - 安装 Python
 - 配置 Abyss
@@ -98,7 +111,8 @@ Warwickshire · United Kingdom · CV32 4LY
 - 测试环境
 - 总结
 
-### 7 制作输入表单
+## 7 制作输入表单
+
 - 提交文本
 - 输入类型
 - 文本区域
@@ -113,7 +127,8 @@ Warwickshire · United Kingdom · CV32 4LY
 - 标签控件
 - 总结
 
-### 8 CSS 入门
+## 8 CSS 入门
+
 - 认识 CSS
 - 创建规则
 - 应用规则
@@ -127,7 +142,8 @@ Warwickshire · United Kingdom · CV32 4LY
 - 设置背景
 - 总结
 
-### 9 管理盒模型
+## 9 管理盒模型
+
 - 认识盒子
 - 内联显示
 - 定义尺寸
@@ -142,7 +158,8 @@ Warwickshire · United Kingdom · CV32 4LY
 - 布局页面
 - 总结
 
-### 10 操作文本内容
+## 10 操作文本内容
+
 - 建议字体
 - 设置大小
 - 变化样式
@@ -155,7 +172,8 @@ Warwickshire · United Kingdom · CV32 4LY
 - 编号章节
 - 总结
 
-### 11 组织表格与列表
+## 11 组织表格与列表
+
 - 构建列
 - 单元格间距
 - 合并边框
@@ -166,7 +184,8 @@ Warwickshire · United Kingdom · CV32 4LY
 - 制作下拉菜单
 - 总结
 
-### 12 生成效果
+## 12 生成效果
+
 - 选择光标
 - 显示焦点
 - 悬停效果
@@ -182,7 +201,8 @@ Warwickshire · United Kingdom · CV32 4LY
 - 适应对象
 - 总结
 
-### 13 控制网页
+## 13 控制网页
+
 - 更改模型
 - 绘制轮廓
 - 使用多列
@@ -195,7 +215,8 @@ Warwickshire · United Kingdom · CV32 4LY
 - 切换导航
 - 总结
 
-### 14 为设备设计
+## 14 为设备设计
+
 - 自适应布局
 - 比较方案
 - 组合方案
@@ -203,13 +224,8 @@ Warwickshire · United Kingdom · CV32 4LY
 - 缩放图像
 - 隐藏内容
 
+## 15 JavaScript 入门
 
-
-
-
-## 目录
-
-## 第 15 章：JavaScript 入门
 - 认识 JS
 - 引入脚本
 - 控制台输出
@@ -222,7 +238,8 @@ Warwickshire · United Kingdom · CV32 4LY
 - 使用闭包
 - 本章小结
 
-## 第 16 章：执行实用操作
+## 16 执行实用操作
+
 - 转换值
 - 进行算术运算
 - 赋值
@@ -233,18 +250,20 @@ Warwickshire · United Kingdom · CV32 4LY
 - 强制顺序
 - 本章小结
 
-## 第 17 章：管理脚本流程
+## 17 管理脚本流程
+
 - 条件分支
 - 分支选择
 - 开关选择
-- for 循环
-- while 循环
-- do 循环
+- `for` 循环
+- `while` 循环
+- `do` 循环
 - 跳出循环
 - 捕获错误
 - 本章小结
 
-## 第 18 章：使用脚本对象
+## 18 使用脚本对象
+
 - 自定义对象
 - 扩展对象
 - 内置对象
@@ -262,7 +281,8 @@ Warwickshire · United Kingdom · CV32 4LY
 - 获取数据
 - 本章小结
 
-## 第 19 章：控制字符串与数字
+## 19 控制字符串与数字
+
 - 计算面积
 - 比较数字
 - 四舍五入
@@ -273,7 +293,8 @@ Warwickshire · United Kingdom · CV32 4LY
 - 修剪字符串
 - 本章小结
 
-## 第 20 章：处理窗口对象
+## 20 处理窗口对象
+
 - 认识 DOM
 - 检查属性
 - 显示对话框
@@ -286,7 +307,8 @@ Warwickshire · United Kingdom · CV32 4LY
 - 浏览历史
 - 本章小结
 
-## 第 21 章：与文档交互
+## 21 与文档交互
+
 - 提取信息
 - 处理数组
 - 处理元素
@@ -306,12 +328,15 @@ Warwickshire · United Kingdom · CV32 4LY
 本书中的示例演示了主流浏览器支持的 HTML、CSS 和 JavaScript 特性，截图展示了所列代码示例的实际运行结果。为了清晰说明步骤中的代码，采用了颜色标注约定……
 
 HTML 标签和标点为蓝色，属性值为橙色，文字为黑色：
+
 `<p class=”frame”>HTML, CSS & JavaScript in easy steps</p>`
 
 CSS 选择器、属性和标点为蓝色，属性值为红色，指定值为红色：
+
 `p.frame { color : White ; background : Green ; }`
 
 JavaScript 关键字和标点为蓝色，指定名称为红色，文字值为黑色：
+
 `let greeting = ‘Hello World!’ ;`
 
 所有注释均为绿色：`<!-- HTML Comments -->` `/* CSS & JS Comments */`
@@ -322,11 +347,11 @@ JavaScript 关键字和标点为蓝色，指定名称为红色，文字值为黑
 
 本书示例中使用的 HTML 文档源代码未完整列出，以避免不必要的重复——每个示例仅列出相关代码。您可以通过以下简单步骤下载包含所有示例文件的单个 ZIP 压缩包：
 
-![图片](img/1g1.jpg) 浏览至 `www.ineasysteps.com`，然后导航至“免费资源”并选择“下载”部分
+![图片](img/1g1.jpg) 浏览至 `www.ineasysteps.com`，然后导航至“免费资源”并选择“下载”部分。
 
-![图片](img/2g1.jpg) 接着，在列表中找到 *HTML, CSS, & JavaScript in easy steps*，点击名为“所有代码示例”的超链接下载 ZIP 压缩包
+![图片](img/2g1.jpg) 接着，在列表中找到 *HTML, CSS, & JavaScript in easy steps*，点击名为“所有代码示例”的超链接下载 ZIP 压缩包。
 
-![图片](img/3g1.jpg) 现在，将压缩包内容解压到计算机上的任意方便位置
+![图片](img/3g1.jpg) 现在，将压缩包内容解压到计算机上的任意方便位置。
 
 如果您未能获得任何示例中所示的结果，只需将您的代码与已下载的原始示例文件中的代码进行比较，即可找出错误所在。
 
@@ -353,10 +378,6 @@ JavaScript 关键字和标点为蓝色，指定名称为红色，文字值为黑
 ![图片](img/pg12_1.jpg)
 
 超文本标记语言（HTML）是一种现代标准标记语言，它使用称为“标签”的通用缩写来向 Web 浏览器指示作者希望如何排版网页的各个部分。它最初于 1989 年由英国物理学家蒂姆·伯纳斯-李在瑞士的欧洲核子研究组织（CERN）设计，旨在让 CERN 的物理学家之间共享所有计算机存储的信息。伯纳斯-李创建了一个文本浏览器，通过超文本在互联网上传输信息，提供点击导航功能。1990 年 5 月，该系统被命名为万维网，并于 1993 年由大学生马克·安德森添加了图像标签后得到增强。现在 HTML 可以同时显示文本和图像，万维网迅速变得非常流行。
-
-
-
-
 
 # HTML 简介
 
@@ -409,7 +430,9 @@ HTML 文档的骨架结构包含三个部分：
 需要注意的是，HTML 不是一种区分大小写的语言——因此，文档类型声明标签以及所有其他标签都可以用大写字母和小写字母的任何组合来写。例如，以下都是有效的：
 
 `<!DOCTYPE html>`
+
 `<!Doctype Html>`
+
 `<!doctype html>`
 
 大小写的选择由你决定，但建议你始终坚持你所选择的任何一种风格。书中推崇的文档类型声明标签大小写风格使用全大写，以强调其作为每个页面上第一个标签的显著性——但所有其他标签均使用全小写。
@@ -420,7 +443,7 @@ HTML 文档的骨架结构包含三个部分：
 
 早期版本 HTML 的文档类型声明是 HTML 所派源的标准通用标记语言（SGML）的一部分。
 
-整个文档头部部分和主体部分可以封装在一对 `<html>` `</html>` 标签中，以包含文档的其他部分。HTML 规范实际上规定这些是可选的，但提供单一的“根”元素是有逻辑的。大多数 HTML 标签都像这样成对使用，用作“容器”，语法为 `<tagname> 数据 </tagname>`
+整个文档头部部分和主体部分可以封装在一对 `<html>` `</html>` 标签中，以包含文档的其他部分。HTML 规范实际上规定这些是可选的，但提供单一的“根”元素是有逻辑的。大多数 HTML 标签都像这样成对使用，用作“容器”，语法为 `<tagname> 数据 </tagname>`。
 
 ### 头部部分
 
@@ -464,13 +487,9 @@ HTML “元素”是任何匹配的开启和关闭标签对，或者任何不需
 
 ![image](img/pg16_1.jpg)
 
-文档的主要语言通过在开启的 `<html>` 根标签内为 `lang` “属性”分配标准语言代码来定义。英语的代码为 `en`，因此完整的开启根元素如下：`<html lang="en">`
+文档的主要语言通过在开启的 `<html>` 根标签内为 `lang` “属性”分配标准语言代码来定义。英语的代码为 `en`，因此完整的开启根元素如下：`<html lang="en">`。
 
-
-
-
-
-文档的字符编码格式通过在位于文档头部（head section）的 `<meta>` 标签中为 `charset` 属性分配标准字符集代码来定义。推荐的编码是流行的 8 位 Unicode 转换格式，其代码为 `UTF-8`，因此完整的元素看起来如下：`<meta charset=“UTF-8”>`
+文档的字符编码格式通过在位于文档头部（head section）的 `<meta>` 标签中为 `charset` 属性分配标准字符集代码来定义。推荐的编码是流行的 8 位 Unicode 转换格式，其代码为 `UTF-8`，因此完整的元素看起来如下：`<meta charset=“UTF-8”>`。
 
 ![image](img/snake.jpg)
 
@@ -484,16 +503,17 @@ HTML 文档不应在 MS Word 等文字处理器中创建，因为这些应用程
 
 ![image](img/1b.jpg) 启动你喜欢的纯文本编辑器，然后使用 HTML 文档类型声明开始一个新文档：
 
-```
+```html
 <!DOCTYPE HTML>
 ```
 
 ![image](img/htmlb.jpg)
+
 `hello.html`
 
 ![image](img/2b.jpg) 在文档类型声明下方，添加一个根元素，将文档的主要语言定义为英语：
 
-```
+```html
 <html lang=”en”>
 <!-- Head and Body sections to be added here. -->
 </html>
@@ -501,15 +521,19 @@ HTML 文档不应在 MS Word 等文字处理器中创建，因为这些应用程
 
 ![image](img/3b.jpg) 在根元素内部，插入一个文档头部区域：
 
-```
+```html
 <head>
 <!-- Descriptive information to be added here. -->
 </head>
 ```
 
-![image](img/4b.jpg) 在头部区域内，插入一个定义文档编码字符集的元素：
 
-```
+
+![image](img/4b.jpg)
+
+在头部区域内，插入一个定义文档编码字符集的元素：
+
+```html
 <meta charset=“UTF-8”>
 ```
 
@@ -517,13 +541,17 @@ HTML 文档不应在 MS Word 等文字处理器中创建，因为这些应用程
 
 `<meta>` 标签是一个单标签——它没有匹配的闭合标签。查看此书内封扉页的元素标签列表可以找到其他单标签。
 
-![image](img/5b.jpg) 接下来，在头部区域内，插入一个定义文档标题的元素：
+![image](img/5b.jpg)
 
-```
+接下来，在头部区域内，插入一个定义文档标题的元素：
+
+```html
 <title>Get Started in HTML</title>
 ```
 
-![image](img/6b.jpg) 在头部区域之后，插入一个文档主体区域：
+![image](img/6b.jpg)
+
+在头部区域之后，插入一个文档主体区域：
 
 ```html
 <body>
@@ -531,19 +559,25 @@ HTML 文档不应在 MS Word 等文字处理器中创建，因为这些应用程
 </body>
 ```
 
-![image](img/7b.jpg) 在主体区域内，插入一个一级标题：
+![image](img/7b.jpg)
 
-```
+在主体区域内，插入一个一级标题：
+
+```html
 <h1>Hello World!</h1>
 ```
 
 ![image](img/pg17_1.jpg)
 
-![image](img/8b.jpg) 将文件的编码设置为 `UTF-8` 格式，然后将文档保存为 `hello.html`
+![image](img/8b.jpg)
+
+将文件的编码设置为 `UTF-8` 格式，然后将文档保存为 `hello.html`。
 
 ![image](img/pg17_2.jpg)
 
-![image](img/9b.jpg) 现在，在现代网页浏览器中打开 HTML 文档，查看标题栏或标签上显示的标题，以及作为大标题显示的文档内容。
+![image](img/9b.jpg)
+
+现在，在现代网页浏览器中打开 HTML 文档，查看标题栏或标签上显示的标题，以及作为大标题显示的文档内容。
 
 ![image](img/pg17_3.jpg)
 
@@ -563,9 +597,11 @@ HTML 文档不应在 MS Word 等文字处理器中创建，因为这些应用程
 
 网页浏览器并不尝试验证，因此在发布之前，使用验证工具验证每个 HTML 文档是完全值得的，即使内容在你的网页浏览器中看起来没问题。当浏览器遇到 HTML 错误时，它会对预期意图进行猜测——但不同的浏览器可能会有不同的解释，因此可能会错误地显示文档。相反，有效的 HTML 文档在任何符合标准的浏览器中都应该始终正确显示。
 
-万维网联盟（W3C）在 `[validator.w3.org](http://validator.w3.org)` 提供了一个免费的在线验证工具，你可以用它检查网页文档的语法：
+万维网联盟（W3C）在 `validator.w3.org`（[http://validator.w3.org](http://validator.w3.org)）提供了一个免费的在线验证工具，你可以用它检查网页文档的语法：
 
-![image](img/1b.jpg) 连接互联网后，打开网页浏览器并导航到 `[validator.w3.org](http://validator.w3.org)` 的 W3C 验证工具，然后点击**Validate by Upload**（通过文件验证）标签。
+![image](img/1b.jpg)
+
+连接互联网后，打开网页浏览器并导航到 `validator.w3.org`（[http://validator.w3.org](http://validator.w3.org)）的 W3C 验证工具，然后点击 **Validate by Upload**（通过文件验证）标签。
 
 ![image](img/pg18_2.jpg)
 
@@ -573,9 +609,13 @@ HTML 文档不应在 MS Word 等文字处理器中创建，因为这些应用程
 
 验证器中的其他标签允许你输入位于 Web 服务器上的 HTML 文档地址以进行“Validate by URI”（通过 URI 验证），或复制粘贴文档中的所有代码以“Validate by Direct Input”（通过直接输入验证）。
 
-![image](img/2b.jpg) 点击**Browse**按钮，然后导航到你想验证的 HTML 文档——一旦选中，它的本地路径就会出现在验证器的“File”字段中。
+![image](img/2b.jpg)
 
-![image](img/3b.jpg) 接下来，点击验证器的**Check**按钮以上传 HTML 文档的副本并运行验证测试——结果将显示出来。
+点击 **Browse** 按钮，然后导航到你想验证的 HTML 文档——一旦选中，它的本地路径就会出现在验证器的“File”字段中。
+
+![image](img/3b.jpg)
+
+接下来，点击验证器的 **Check** 按钮以上传 HTML 文档的副本并运行验证测试——结果将显示出来。
 
 ![image](img/pg19_1.jpg)
 
@@ -589,7 +629,7 @@ HTML 文档不应在 MS Word 等文字处理器中创建，因为这些应用程
 
 ![image](img/hot.jpg)
 
-验证标志可以自定义，并在 `[w3.org/html](http://www.w3.org/html)` 处生成用于网页的类。
+验证标志可以自定义，并在 `w3.org/html`（[http://www.w3.org/html](http://www.w3.org/html)）处生成用于网页的类。
 
 ## 赋予标题
 
@@ -611,9 +651,6 @@ HTML 文档不应在 MS Word 等文字处理器中创建，因为这些应用程
 
 ![image](img/pg20_3.jpg)
 
-
-
-
 ```html
 <!-- 此处添加描述文档的数据。 -->
 </head>
@@ -623,30 +660,42 @@ HTML 文档不应在 MS Word 等文字处理器中创建，因为这些应用程
 </html>
 ```
 
-![image](img/3b.jpg) 在 `head` 部分中，插入一个指定字符集的 `meta` 元素和一个空的 `title` 元素：
+![image](img/3b.jpg)
+
+在 `head` 部分中，插入一个指定字符集的 `meta` 元素和一个空的 `title` 元素：
 
 ```html
 <meta charset=“UTF-8”>
 <title> </title>
 ```
 
-![image](img/4b.jpg) 在 `title` 元素中插入一个包含实体的标题：
+![image](img/4b.jpg)
+
+在 `title` 元素中插入一个包含实体的标题：
 
 `&lt;HTML in easy steps&gt;`
 
-![image](img/5b.jpg) 保存文档，然后在网页浏览器中打开它。
+![image](img/5b.jpg)
+
+保存文档，然后在网页浏览器中打开它。
 
 ![image](img/pg21_1.jpg)
 
-![image](img/6b.jpg) 启动语音叙述器，听到标题可能被读作“小于号-HTML-in-easy-steps-大于号”。
+![image](img/6b.jpg)
 
-![image](img/7b.jpg) 编辑文档标题，使其更友好：
+启动语音叙述器，听到标题可能被读作“小于号-HTML-in-easy-steps-大于号”。
+
+![image](img/7b.jpg)
+
+编辑文档标题，使其更友好：
 
 `"HTML in easy steps"`
 
 ![image](img/pg21_2.jpg)
 
-![image](img/8b.jpg) 再次保存文档，然后在网页浏览器中打开它，听到叙述器现在将文档标题读作“HTML in easy steps”。
+![image](img/8b.jpg)
+
+再次保存文档，然后在网页浏览器中打开它，听到叙述器现在将文档标题读作“HTML in easy steps”。
 
 ![image](img/forget.jpg)
 
@@ -692,7 +741,9 @@ HTML 元数据在 HTML 文档的 `head` 部分中使用 `<meta>` 标签定义。
 
 将 `width` 设置为 `device-width` 通常会自动将 `initial-scale` 设置为 `1`，但显式将其设置为元数据也无妨。
 
-![image](img/1b.jpg) 创建一个极简的 HTML 文档：
+![image](img/1b.jpg)
+
+创建一个极简的 HTML 文档：
 
 ```html
 <!DOCTYPE HTML>
@@ -709,16 +760,21 @@ HTML 元数据在 HTML 文档的 `head` 部分中使用 `<meta>` 标签定义。
 ```
 
 ![image](img/htmlb.jpg)
+
 `refresh.html`
 
-![image](img/2b.jpg) 再插入两个元数据元素：
+![image](img/2b.jpg)
+
+再插入两个元数据元素：
 
 ```html
 <meta name=”viewport” content=”width=device-width, initial-scale=1”>
 <meta http-equiv=“refresh” content= “5 ; url=’https://ineasysteps.com’ ”>
 ```
 
-![image](img/3b.jpg) 保存文档，然后在网页浏览器中打开它，等待五秒，看到浏览器重定向。
+![image](img/3b.jpg)
+
+保存文档，然后在网页浏览器中打开它，等待五秒，看到浏览器重定向。
 
 ![image](img/pg23_1.jpg)
 
@@ -750,7 +806,9 @@ HTML 元数据在 HTML 文档的 `head` 部分中使用 `<meta>` 标签定义。
 
 始终在描述中包含三个最重要的关键词。
 
-![image](img/1b.jpg) 创建一个极简的 HTML 文档：
+![image](img/1b.jpg)
+
+创建一个极简的 HTML 文档：
 
 ```html
 <!DOCTYPE HTML>
@@ -765,27 +823,32 @@ HTML 元数据在 HTML 文档的 `head` 部分中使用 `<meta>` 标签定义。
 ```
 
 ![image](img/htmlb.jpg)
+
 `keywords.html`
 
-![image](img/2b.jpg) 插入网页的元描述：
+![image](img/2b.jpg)
+
+插入网页的元描述：
 
 ```html
 <meta name=“description” content=“Explore our extensive range of high quality italian ceramics including tuscan majolica, dinnerwares, vases, plates, and bowls”>
 ```
 
-![image](img/3b.jpg) 接下来，在 `head` 部分中添加一个元素，指定此页面是索引目的的首选页面：
+![image](img/3b.jpg)
+
+接下来，在 `head` 部分中添加一个元素，指定此页面是索引目的的首选页面：
 
 ```html
 <link rel=”canonical” href=”https://www.example.com/keywords.html” >
 ```
 
-![image](img/4b.jpg) 保存文档，然后访问 Chrome 网上应用店 `chrome.google.com/webstore/category/extensions`，搜索“seo”以添加搜索引擎分析扩展。
+![image](img/4b.jpg)
 
+保存文档，然后访问 Chrome 网上应用店 `chrome.google.com/webstore/category/extensions`，搜索“seo”以添加搜索引擎分析扩展。
 
+![image](img/5b.jpg)
 
-
-
-![image](img/5b.jpg) 在 Google Chrome 浏览器中打开 HTML 文档，然后使用分析工具查看元数据
+在 Google Chrome 浏览器中打开 HTML 文档，然后使用分析工具查看元数据。
 
 ![image](img/pg25_1.jpg)
 
@@ -799,7 +862,7 @@ HTML 元数据在 HTML 文档的 `head` 部分中使用 `<meta>` 标签定义。
 
 ![image](img/pg26_1.jpg)
 
-嵌入 `<style> </style>` 标签的样式表可以添加到 HTML 文档的 head 部分，用封包含控制内容显示方式的规则。例如，一个包含确定所有一级标题外观规则的简单样式表看起来像这样：
+嵌入 `<style> </style>` 标签的样式表可以添加到 HTML 文档的 `head` 部分，用封包含控制内容显示方式的规则。例如，一个包含确定所有一级标题外观规则的简单样式表看起来像这样：
 
 ```css
 <style>
@@ -809,11 +872,11 @@ h1 { color : red ; background : yellow ; }
 
 这种做法是可以接受的并且可以通过验证，但为了 HTML 将内容与显示分离的目标，样式表也可以包含在单独的文件中。将样式表存放在单独文件中的巨大优势是它们可以应用于多个 HTML 文档——从而使网站维护变得简单得多。编辑共享的样式表会立即影响共享该文件的每个 HTML 文档。
 
-外部样式表通过在文档的 head 部分添加 `<link>` 标签包含在 HTML 文档中。该标签必须包含一个被赋值为“stylesheet” 值的 `rel`（关系）属性，并将样式表的 URL 赋值给其 `href`（超文本引用）属性——例如，添加一个名为 `style.css` 的相邻样式表文件，如下所示：
+外部样式表通过在文档的 `head` 部分添加 `<link>` 标签包含在 HTML 文档中。该标签必须包含一个被赋值为“stylesheet”值的 `rel`（关系）属性，并将样式表的 URL 赋值给其 `href`（超文本引用）属性——例如，添加一个名为 `style.css` 的相邻样式表文件，如下所示：
 
 `<link rel=“stylesheet” href=“style.css”>`
 
-你也可以将样式规则“内联”到显示 HTML 标签的 style 属性中，如下：
+你也可以将样式规则“内联”到显示 HTML 标签的 `style` 属性中，如下：
 
 `<h1 style=”color:red”>`
 
@@ -823,7 +886,9 @@ h1 { color : red ; background : yellow ; }
 
 当多个规则选择元素的同一个属性进行样式设置时，浏览器通常会应用最后读取的规则，但内联规则的优先级高于嵌入规则和外部规则。嵌入规则的优先级高于外部规则。
 
-![image](img/1b.jpg) 创建一个基础 HTML 文档
+![image](img/1b.jpg)
+
+创建一个基础 HTML 文档：
 
 ```html
 <!DOCTYPE HTML>
@@ -839,9 +904,12 @@ h1 { color : red ; background : yellow ; }
 ```
 
 ![image](img/htmlb.jpg)
+
 `style.html`
 
-![image](img/2b.jpg) 接下来，在 head 部分，添加一个嵌入式样式表
+![image](img/2b.jpg)
+
+接下来，在 `head` 部分，添加一个嵌入式样式表：
 
 ```css
 <style>
@@ -849,14 +917,21 @@ h1 { color : Red ; background : Yellow ; }
 </style>
 ```
 
-![image](img/3b.jpg) 现在，在 head 部分，插入一个指向相邻外部样式表文件的链接
+![image](img/3b.jpg)
 
-link-`<link rel=“stylesheet” href=“style.css”>`
+现在，在 `head` 部分，插入一个指向相邻外部样式表文件的链接：
+
+`link-<link rel=“stylesheet” href=“style.css”>`
 
 ![image](img/css.jpg)
+
 `style.css`
 
-![image](img/4b.jpg) 保存 HTML 文档，然后打开一个新的文本编辑器窗口，并精确复制此样式表
+![image](img/4b.jpg)
+
+保存 HTML 文档，然后打开一个新的文本编辑器窗口，并精确复制此样式表。
+
+
 
 ```css
 h1
@@ -867,7 +942,7 @@ width : 500px ;
 }
 ```
 
-![image](img/5b.jpg) 将级联样式表文件保存到与 HTML 文档相同的目录下，然后在浏览器中打开网页以查看所应用的样式规则
+![image](img/5b.jpg) 将级联样式表文件保存到与 HTML 文档相同的目录下，然后在浏览器中打开网页以查看所应用的样式规则。
 
 ![image](img/pg27_1.jpg)
 
@@ -875,15 +950,15 @@ width : 500px ;
 
 某些 HTML 元素，如 `<div>` 和 `<span>`（参见此处）纯粹是为了样式设置。CSS 是一个独立的话题，但书中的许多示例包含了嵌入的 CSS 样式表规则，以提供独立的示例文件来演示 HTML 元素的使用。某些源代码示例包含了未列出的 CSS 规则，用于说明屏幕图中 HTML 元素及其内容的大小和位置。
 
-##包含脚本
+## 包含脚本
 
 脚本可以包含在 HTML 文档中，以与用户交互并提供动态效果。随着页面部分可以动态更新的网页的发展，这种能力已变得越来越重要。以前，浏览器通常会从 Web 服务器请求整个新页面，这效率较低且更加繁琐。
 
 ![image](img/pg28_1.jpg)
 
-由 `<script> </script>` 标签封装的 JavaScript 代码可以嵌入 HTML 文档中。这些代码最好放在文档的 body 部分，紧邻 `</body>` 闭合标签之前，这样浏览器可以在读取脚本之前处理文档的内容。
+由 `<script> </script>` 标签封装的 JavaScript 代码可以嵌入 HTML 文档中。这些代码最好放在文档的 `body` 部分，紧邻 `</body>` 闭合标签之前，这样浏览器可以在读取脚本之前处理文档的内容。
 
-为了 HTML 将内容与显示分离的目标，脚本也可以包含在单独的文件中。在这种情况下，脚本文件的 URL 地址必须赋值给 `<script>` 标签内的 `src` 属性。还需要 `</script>` 闭合标签。这些也可以放在 HTML 文档 body 部分的末尾，因为浏览器会将外部脚本处理得就像嵌入在那里一样——例如，添加一个名为 `script.js` 的相邻外部脚本文件，如下所示：
+为了 HTML 将内容与显示分离的目标，脚本也可以包含在单独的文件中。在这种情况下，脚本文件的 URL 地址必须赋值给 `<script>` 标签内的 `src` 属性。还需要 `</script>` 闭合标签。这些也可以放在 HTML 文档 `body` 部分的末尾，因为浏览器会将外部脚本处理得就像嵌入在那里一样——例如，添加一个名为 `script.js` 的相邻外部脚本文件，如下所示：
 
 `<script src=“script.js”></script>`
 
@@ -895,9 +970,9 @@ width : 500px ;
 
 `<h1 onclick=”alert('Clicked!')>`
 
-内联脚本在某些情况下很有用，但可能会使页面维护变得困难。备用内容可以在文档 body 部分的 `<noscript> </noscript>` 标签之间提供，当脚本功能缺失时将显示。
+内联脚本在某些情况下很有用，但可能会使页面维护变得困难。备用内容可以在文档 `body` 部分的 `<noscript> </noscript>` 标签之间提供，当脚本功能缺失时将显示。
 
-![image](img/1b.jpg) 创建一个基础 HTML 文档
+![image](img/1b.jpg) 创建一个基础 HTML 文档。
 
 ```html
 <!DOCTYPE HTML>
@@ -912,16 +987,17 @@ width : 500px ;
 ```
 
 ![image](img/htmlb.jpg)
+
 `script.html`
 
-![image](img/2b.jpg) 在 body 部分，插入备用消息和标题
+![image](img/2b.jpg) 在 `body` 部分，插入备用消息和标题。
 
 ```html
 <noscript>JavaScript Not Enabled!</noscript>
 <h1 onclick=”this.innerText='Clicked!'; this.style.color='Red’”>Active Heading</h1>
 ```
 
-![image](img/3b.jpg) 在 body 部分的末尾，添加一个嵌入式脚本并指定外部脚本
+![image](img/3b.jpg) 在 `body` 部分的末尾，添加一个嵌入式脚本并指定外部脚本。
 
 ```html
 <script>
@@ -933,9 +1009,10 @@ this.innerText= ’Mouse Over’ ; this.style.color='Blue’ }
 ```
 
 ![image](img/js.jpg)
+
 `script.js`
 
-![image](img/4b.jpg) 保存 HTML 文档，然后打开一个新的文本编辑器窗口并创建外部脚本
+![image](img/4b.jpg) 保存 HTML 文档，然后打开一个新的文本编辑器窗口并创建外部脚本。
 
 ```javascript
 document.getElementsByTagName('h1')[0].onmouseout =
@@ -943,7 +1020,7 @@ function ( ) {
 this.innerText= ’Active Heading’ ; this.style.color = ’Black’ }
 ```
 
-![image](img/5b.jpg) 将 JavaScript 文件保存为 `script.js` 到与 HTML 文档相同的目录下，然后在浏览器中打开网页并点击标题
+![image](img/5b.jpg) 将 JavaScript 文件保存为 `script.js` 到与 HTML 文档相同的目录下，然后在浏览器中打开网页并点击标题。
 
 ![image](img/pg29_1.jpg)
 
@@ -961,14 +1038,10 @@ this.innerText= ’Active Heading’ ; this.style.color = ’Black’ }
 
 ![image](img/pg30_1.jpg)
 
-此标签只能出现在文档的 head 部分，但 head 部分可以包含多个 `<link>` 标签。每个 `<link>` 标签必须包含 `rel` 和 `href` 属性，来说明链接资源的关系和位置。它也可以在适当的情况下包含 `type` 属性，以提示链接资源的 MIME 类型。
+此标签只能出现在文档的 `head` 部分，但 `head` 部分可以包含多个 `<link>` 标签。每个 `<link>` 标签必须包含 `rel` 和 `href` 属性，来说明链接资源的关系和位置。它也可以在适当的情况下包含 `type` 属性，以提示链接资源的 MIME 类型。
 
-
-
-
-
-| 允许的 rel（关系）值 |
-| :--- |
+| 允许的 `rel`（关系）值 |
+| --- |
 | `alternate` | `author` | `bookmark` | `help` | `icon` |
 | `license` | `next` | `nofollow` | `noreferrer` | `prev` |
 | `search` | `stylesheet` | `tag` | `shortcut icon` | |
@@ -996,6 +1069,7 @@ MIME（多部分互联网邮件扩展）类型描述了文件类型——例如�
 使用 `<base>` 元素时，必须将其放在 `head` 部分任何 `<link>` 元素之前。
 
 ![image](img/1b.jpg)
+
 创建一个包含元数据、链接资源以及样式规则和脚本代码区域的新 HTML 文档：
 
 ```html
@@ -1021,6 +1095,7 @@ MIME（多部分互联网邮件扩展）类型描述了文件类型——例如�
 此模板是所有后续示例中都用于创建新 HTML 文档的基础 HTML 文档——只有标题会根据每个示例进行更改。
 
 ![image](img/2b.jpg)
+
 在 `head` 部分开头插入一个元素来指定基础“resources”目录：
 
 ```html
@@ -1028,18 +1103,23 @@ MIME（多部分互联网邮件扩展）类型描述了文件类型——例如�
 ```
 
 ![image](img/3b.jpg)
+
 将文档标题改为“Favicon”，然后保存 HTML 文档。
 
 ![image](img/htmlb.jpg)
+
 `favicon.html`
 
 ![image](img/4b.jpg)
+
 打开图标编辑器并创建一个 32 x 32 像素的图标，并将你的图标与 HTML 文档一起保存，或在“resources”目录中命名为 `favicon.ico`。
 
 ![image](img/pg31_2.jpg)
+
 `favicon.ico` 32px x 32px
 
 ![image](img/5b.jpg)
+
 通过网络服务器在网页浏览器中打开 HTML 文档，以查看图标资源出现在浏览器中。
 
 ![image](img/pg31_1.jpg)
@@ -1085,19 +1165,22 @@ MIME（多部分互联网邮件扩展）类型描述了文件类型——例如�
 
 HTML 标题元素使用 `<h1>`、`<h2>`、`<h3>`、`<h4>`、`<h5>` 和 `<h6>` 标签创建。这些元素根据其数值进行重要性排序——`<h1>` 的重要性最高，`<h6>` 重要性最低。
 
-标题元素应该通过正确排序来隐式传达文档结构——即 `<h2>` 位于 `<h1>` 元素之下，`<h3>` 位于 `<h2>` 元素之下，以此此类推。这种结构有助于读者通过标题快速浏览文档。搜索引擎爬虫可能会推广具有正确顺序标题的文档，因为它们可以使用标题进行索引。
+标题元素应该通过正确排序来隐式传达文档结构——即 `<h2>` 位于 `<h1>` 元素之下，`<h3>` 位于 `<h2>` 元素之下，以此类推。这种结构有助于读者通过标题快速浏览文档。搜索引擎爬虫可能会推广具有正确顺序标题的文档，因为它们可以使用标题进行索引。
 
 ![image](img/34_1.jpg)
 
-标题的字体大小和权重将反映其重要性，但标题也有其他用途。将 `head` 部分的元关键词包含在标题中特别有用。<h1> 元素元素是最重要的标题，理想情况下只出现一次以声明文档标题。通常，这可以是文档标题的简明版本。在其下方，若干 `<h2>` 标题可以为长文档声明主题标题。每个主题可能包含 `<h3>` 元素中的文章标题，随后是包含实际文章内容的 `<p>` 元素。
+标题的字体大小和权重将反映其重要性，但标题也有其他用途。将 `head` 部分的元关键词包含在标题中特别有用。`<h1>` 元素是最重要的标题，理想情况下只出现一次以声明文档标题。通常，这可以是文档标题的简明版本。在其下方，若干 `<h2>` 标题可以为长文档声明主题标题。每个主题可能包含 `<h3>` 元素中的文章标题，随后是包含实际文章内容的 `<p>` 元素。
 
 ![image](img/1r.jpg)
-创建一个 HTML 文档（参考模板）
+
+创建一个 HTML 文档（参考模板）。
 
 ![image](img/htmlr.jpg)
+
 `heading.html`
 
 ![image](img/2r.jpg)
+
 在 `body` 部分中插入一个主文档标题：
 
 ```html
@@ -1105,6 +1188,7 @@ HTML 标题元素使用 `<h1>`、`<h2>`、`<h3>`、`<h4>`、`<h5>` 和 `<h6>` �
 ```
 
 ![image](img/3r.jpg)
+
 接下来，在 `body` 部分中插入一个主题标题：
 
 ```html
@@ -1112,6 +1196,7 @@ HTML 标题元素使用 `<h1>`、`<h2>`、`<h3>`、`<h4>`、`<h5>` 和 `<h6>` �
 ```
 
 ![image](img/4r.jpg)
+
 现在，在 `body` 部分中插入一些文章标题，随后是包含文章内容的段落：
 
 ```html
@@ -1127,21 +1212,20 @@ HTML 标题元素使用 `<h1>`、`<h2>`、`<h3>`、`<h4>`、`<h5>` 和 `<h6>` �
 永远不要为了字体属性使用标题元素，因为这些可以被样式表规则覆盖——始终考虑使用标题来表示结构。
 
 ![image](img/5r.jpg)
+
 最后，添加另一个包含两个文章的主题。
-
-
-
-
 
 ## 主题标题
 
 ### 文章标题
+
 文章内容...
 
 ### 文章标题
+
 文章内容...
 
-![image](img/6r.jpg) 保存 HTML 文档，然后在网页浏览器中打开，即可查看标题和文档结构
+![image](img/6r.jpg) 保存 HTML 文档，然后在网页浏览器中打开，即可查看标题和文档结构。
 
 ![image](img/pg35_1.jpg)
 
@@ -1181,12 +1265,13 @@ HTML 标题元素使用 `<h1>`、`<h2>`、`<h3>`、`<h4>`、`<h5>` 和 `<h6>` �
 
 完整的页眉可以包含在 `<header> </header>` 标签中，以包含标题元素或 `<hgroup>` 元素，以及其他介绍性内容——例如横幅、徽标或目录。
 
-![image](img/1r.jpg) 创建一个 HTML 文档（按照此处的模板）
+![image](img/1r.jpg) 创建一个 HTML 文档（按照此处的模板）。
 
 ![image](img/htmlr.jpg)
+
 `header.html`
 
-![image](img/2r.jpg) 在 body 部分中，插入一个包含横幅图片的主文档标题
+![image](img/2r.jpg) 在 `body` 部分中，插入一个包含横幅图片的主文档标题。
 
 ```html
 <header>
@@ -1198,7 +1283,7 @@ HTML 标题元素使用 `<h1>`、`<h2>`、`<h3>`、`<h4>`、`<h5>` 和 `<h6>` �
 </header>
 ```
 
-![image](img/3r.jpg) 接下来，在 body 部分中，插入一个主题和文章
+![image](img/3r.jpg) 接下来，在 `body` 部分中，插入一个主题和文章。
 
 ```html
 <hgroup>
@@ -1216,7 +1301,7 @@ HTML 标题元素使用 `<h1>`、`<h2>`、`<h3>`、`<h4>`、`<h5>` 和 `<h6>` �
 
 你将在此处了解更多关于 `<img>` 图像元素的内容。
 
-![image](img/4r.jpg) 现在，在 body 部分中，插入第二个主题及其单篇文章
+![image](img/4r.jpg) 现在，在 `body` 部分中，插入第二个主题及其单篇文章。
 
 ```html
 <hgroup>
@@ -1227,7 +1312,7 @@ HTML 标题元素使用 `<h1>`、`<h2>`、`<h3>`、`<h4>`、`<h5>` 和 `<h6>` �
 <p>文章内容...</p>
 ```
 
-![image](img/5r.jpg) 保存 HTML 文档，然后在网页浏览器中打开，即可查看分组标题和文档页眉
+![image](img/5r.jpg) 保存 HTML 文档，然后在网页浏览器中打开，即可查看分组标题和文档页眉。
 
 ![image](img/pg37_2.jpg)
 
@@ -1235,22 +1320,29 @@ HTML 标题元素使用 `<h1>`、`<h2>`、`<h3>`、`<h4>`、`<h5>` 和 `<h6>` �
 
 ![image](img/forget.jpg)
 
+
+
 `<hgroup>` 元素仅对 `<h1>` 到 `<h6>` 的标题进行分组，而 `<header>` 元素则对标题和其他附加项目进行分组。
 
 ## 包含导航
 
-网页上用于使用户在页面或网站内导航的超链接组，应包含在 `<nav> </nav>` 标签之间，其他链接则使用 `<menu> </menu>` 标签。
+网页上用于使用户在页面或网站内导航的超链接组，应包含在`<nav> </nav>`标签之间，其他链接则使用`<menu> </menu>`标签。
 
 ![image](img/pg38_1.jpg)
 
 这组链接通常可以是文档页眉中的水平菜单——通常称为导航栏（“nav bar”）——也可以是页面边缘的垂直菜单。请注意，`<nav>` 元素只是菜单的包装器——它不会替换任何结构元素。
 
-![image](img/1r.jpg) 创建一个 HTML 文档（按照此处的模板）
+![image](img/1r.jpg)
+
+创建一个 HTML 文档（按照此处的模板）。
 
 ![image](img/htmlr.jpg)
+
 `nav.html`
 
-![image](img/2r.jpg) 在 body 中，插入一个包含徽标、文档标题和水平页面导航栏的页眉
+![image](img/2r.jpg)
+
+在`body`中，插入一个包含徽标、文档标题和水平页面导航栏的页眉。
 
 ```html
 <header>
@@ -1267,7 +1359,9 @@ HTML 标题元素使用 `<h1>`、`<h2>`、`<h3>`、`<h4>`、`<h5>` 和 `<h6>` �
 </header>
 ```
 
-![image](img/3r.jpg) 接下来，在 body 中，插入一个垂直站点导航菜单
+![image](img/3r.jpg)
+
+接下来，在`body`中，插入一个垂直站点导航菜单。
 
 ```html
 <nav id=”vertical” >
@@ -1279,7 +1373,9 @@ HTML 标题元素使用 `<h1>`、`<h2>`、`<h3>`、`<h4>`、`<h5>` 和 `<h6>` �
 </nav>
 ```
 
-![image](img/4r.jpg) 现在，添加主题标题和内容
+![image](img/4r.jpg)
+
+现在，添加主题标题和内容。
 
 ```html
 <h2 id=”html”>HTML</h2>
@@ -1294,13 +1390,15 @@ HTML 标题元素使用 `<h1>`、`<h2>`、`<h3>`、`<h4>`、`<h5>` 和 `<h6>` �
 
 ![image](img/hot.jpg)
 
-你将在此处了解更多关于 `<a>` 锚点元素的内容，并在此处找到关于 `<br>` 换行元素的详细信息。
+你将在此处了解更多关于`<a>`锚点元素的内容，并在此处找到关于`<br>`换行元素的详细信息。
 
 ![image](img/snake.jpg)
 
-并非所有超链接组都适合包含在 `<nav>` 元素中——只有那些提供页面级或站点级导航的链接组才适用。
+并非所有超链接组都适合包含在`<nav>`元素中——只有那些提供页面级或站点级导航的链接组才适用。
 
-![image](img/5r.jpg) 添加一个样式表，用于定位徽标图像、水平导航栏和垂直导航菜单
+![image](img/5r.jpg)
+
+添加一个样式表，用于定位徽标图像、水平导航栏和垂直导航菜单。
 
 ```css
 <style>
@@ -1310,7 +1408,9 @@ HTML 标题元素使用 `<h1>`、`<h2>`、`<h3>`、`<h4>`、`<h5>` 和 `<h6>` �
 </style>
 ```
 
-![image](img/6r.jpg) 保存 HTML 文档，然后在浏览器中打开网页，尝试使用导航链接
+![image](img/6r.jpg)
+
+保存 HTML 文档，然后在浏览器中打开网页，尝试使用导航链接。
 
 ![image](img/pg39_1.jpg)
 
@@ -1322,26 +1422,33 @@ HTML 标题元素使用 `<h1>`、`<h2>`、`<h3>`、`<h4>`、`<h5>` 和 `<h6>` �
 
 ## 完整框架
 
-正如一个典型的 HTML 文档可能包含文档标题或页眉组一样，它也可能在页面底部包含页脚或页脚组。每个页脚的内容包含在 `<footer> </footer>` 标签之间，并提供关于该文档部分的信息。
+正如一个典型的 HTML 文档可能包含文档标题或页眉组一样，它也可能在页面底部包含页脚或页脚组。每个页脚的内容包含在`<footer> </footer>`标签之间，并提供关于该文档部分的信息。
 
 ![image](img/pg40_1.jpg)
 
-通常，`<footer>` 元素可能包含作者姓名、作者的联系方式（放在 `<address>` 元素中），或版权和法律免责声明（放在 `<small>` 元素中）。与 `<header>` 元素类似，`<footer>` 元素也可以包含嵌套在 `<nav>` 元素中的页面和站点导航超链接。
+通常，`<footer>` 元素可能包含作者姓名、作者的联系方式（放在`<address>`元素中），或版权和法律免责声明（放在`<small>`元素中）。与`<header>`元素类似，`<footer>`元素也可以包含嵌套在`<nav>`元素中的页面和站点导航超链接。
 
-文档标题和页脚可以合理地通过 `<main> </main>` 元素分隔，该元素将包含页面内容。
+文档标题和页脚可以合理地通过`<main> </main>`元素分隔，该元素将包含页面内容。
 
-![image](img/1r.jpg) 创建一个 HTML 文档（按照此处的模板）
+![image](img/1r.jpg)
+
+创建一个 HTML 文档（按照此处的模板）。
 
 ![image](img/htmlr.jpg)
+
 `framework.html`
 
-![image](img/2r.jpg) 在 body 中，插入一个文档标题
+![image](img/2r.jpg)
+
+在`body`中，插入一个文档标题。
 
 ```html
 <h1 id=”top”>有趣的文章</h1>
 ```
 
-![image](img/3r.jpg) 接下来，添加一个主要内容容器
+![image](img/3r.jpg)
+
+接下来，添加一个主要内容容器。
 
 ```html
 <main>
@@ -1349,7 +1456,9 @@ HTML 标题元素使用 `<h1>`、`<h2>`、`<h3>`、`<h4>`、`<h5>` 和 `<h6>` �
 </main>
 ```
 
-![image](img/4r.jpg) 在主要内容容器中，插入两篇作为主要页面内容的文章
+![image](img/4r.jpg)
+
+在主要内容容器中，插入两篇作为主要页面内容的文章。
 
 ```html
 <article>
@@ -1365,9 +1474,11 @@ HTML 标题元素使用 `<h1>`、`<h2>`、`<h3>`、`<h4>`、`<h5>` 和 `<h6>` �
 
 ![image](img/forget.jpg)
 
-每个 HTML `<article>` 元素也可以包含一个 `<footer>` 元素，提供文章作者的联系方式。
+每个 HTML `<article>` 元素也可以包含一个`<footer>`元素，提供文章作者的联系方式。
 
-![image](img/5r.jpg) 最后，在 body 中，插入一个包含页面导航超链接、版权信息和 URL 地址的文档页脚
+![image](img/5r.jpg)
+
+最后，在`body`中，插入一个包含页面导航超链接、版权信息和 URL 地址的文档页脚。
 
 ```html
 <footer>
@@ -1382,11 +1493,9 @@ HTML 标题元素使用 `<h1>`、`<h2>`、`<h3>`、`<h4>`、`<h5>` 和 `<h6>` �
 </footer>
 ```
 
+![image](img/6r.jpg)
 
-
-
-
-![image](img/6r.jpg)保存 HTML 文档，然后在浏览器中打开该网页，你会发现文档结构包含一个标题、页面内容和页脚区域。
+保存 HTML 文档，然后在浏览器中打开该网页，你会发现文档结构包含一个标题、页面内容和页脚区域。
 
 ![image](img/pg41_1.jpg)
 
@@ -1394,27 +1503,33 @@ HTML 标题元素使用 `<h1>`、`<h2>`、`<h3>`、`<h4>`、`<h5>` 和 `<h6>` �
 
 ## 创建章节
 
-在 HTML 中，`<body>` 元素内的所有内容都被视为一个“章节”（section）的一部分。章节边界通过文档大纲中正确排序的标题隐式定义。也可以通过将内容放在之前示例所示的 `<header>`、`<main>` 和 `<footer>` 框架元素中显式定义，参见此处。
+在 HTML 中，`<body>` 元素内的所有内容都被视为一个“章节”（section）的一部分。章节边界通过文档大纲中正确排序的标题隐式定义。也可以通过将内容放在之前示例所示的`<header>`、`<main>`和`<footer>`框架元素中显式定义，参见此处。
 
 ![image](img/pg42_1.jpg)
 
-文档主体或 `<main>` 元素内的页面内容也可以在 `<section>` `</section>` 标签之间进行分。每个章节通常以它自己的标题开头，随后是若干篇文章（article）。同样，每篇文章通常也以它自己的标题开头，随后是一个或多个段落。
+文档主体或`<main>`元素内的页面内容也可以在`<section> </section>`标签之间进行分组。每个章节通常以它自己的标题开头，随后是若干篇文章（article）。同样，每篇文章通常也以它自己的标题开头，随后是一个或多个段落。
 
-在理解 `<section>` 和 `<article>` 元素时，考虑报纸包含不同章节的方式——新闻、体育、房地产等——会有帮助。每个章节都包含不同的文章。
+在理解`<section>`和`<article>`元素时，考虑报纸包含不同章节的方式——新闻、体育、房地产等——会有帮助。每个章节都包含不同的文章。
 
-![image](img/1r.jpg)创建一个 HTML 文档（使用此处的模板）
+![image](img/1r.jpg)
+
+创建一个 HTML 文档（使用此处的模板）。
 
 ![image](img/htmlr.jpg)
 
-section.html
+`section.html`
 
-![image](img/2r.jpg)在 body 中插入一个文档标题
+![image](img/2r.jpg)
+
+在`body`中插入一个文档标题。
 
 ```html
 <h1>Newspaper</h1>
 ```
 
-![image](img/3r.jpg)接下来，添加一个主内容容器
+![image](img/3r.jpg)
+
+接下来，添加一个主内容容器。
 
 ```html
 <main>
@@ -1422,7 +1537,9 @@ section.html
 </main>
 ```
 
-![image](img/4r.jpg)现在，在主内容容器中，插入一个包含两篇文章的章节
+![image](img/4r.jpg)
+
+现在，在主内容容器中，插入一个包含两篇文章的章节。
 
 ```html
 <section>
@@ -1440,9 +1557,11 @@ section.html
 
 ![image](img/hot.jpg)
 
-在像这样简短的文档中，并不要求使用 `<section>` 元素——除非你特别想添加章节标题和页脚。
+在像这样简短的文档中，并不要求使用`<section>`元素——除非你特别想添加章节标题和页脚。
 
-![image](img/5r.jpg)接下来在主内容容器中，插入另一个包含单篇文章的章节
+![image](img/5r.jpg)
+
+接下来在主内容容器中，插入另一个包含单篇文章的章节。
 
 ```html
 <section>
@@ -1454,7 +1573,9 @@ section.html
 </section>
 ```
 
-![image](img/6r.jpg)在主内容容器之后，添加一个页面页脚
+![image](img/6r.jpg)
+
+在主内容容器之后，添加一个页面页脚。
 
 ```html
 <footer>
@@ -1462,7 +1583,9 @@ section.html
 </footer>
 ```
 
-![image](img/7r.jpg)保存 HTML 文档然后在浏览器中打开它，查看以章节形式显示的文章内容。
+![image](img/7r.jpg)
+
+保存 HTML 文档，然后在浏览器中打开它，查看以章节形式显示的文章内容。
 
 ![image](img/pg43_1.jpg)
 
@@ -1470,7 +1593,7 @@ section.html
 
 ![image](img/hot.jpg)
 
-`<section>` 只是一个分组元素，但 `<article>` 包含一个独立的组合。
+`<section>`只是一个分组元素，但`<article>`包含一个独立的组合。
 
 ![image](img/forget.jpg)
 
@@ -1478,27 +1601,33 @@ section.html
 
 ## 提供侧边栏
 
-HTML 有用地提供了 `<aside>` `</aside>` 标签，可以嵌套在 `<article>` 元素内，以包含与该文章主要内容某种相关的内容。这些元素允许包含补充但独立的内容——通常显示为侧边栏或脚注。
+HTML 有用地提供了`<aside> </aside>`标签，可以嵌套在`<article>`元素内，以包含与该文章主要内容某种相关的内容。这些元素允许包含补充但独立的内容——通常显示为侧边栏或脚注。
 
 ![image](img/pg44_1.jpg)
 
-`<aside>` 元素内的内容应该是与文章相关的独立信息，例如从相关文章中提取的引言（pull-quotes）、文章使用的术语表，甚至是指向提供与文章相关的进一步阅读页面的超链接。
+`<aside>`元素内的内容应该是与文章相关的独立信息，例如从相关文章中提取的引言（pull-quotes）、文章使用的术语表，甚至是指向提供与文章相关的进一步阅读页面的超链接。
 
-或者，`<aside>` 元素也可以单独使用，不带 `<article>` 元素，包含与整个页面相关的次要内容，例如相关的广告或博客。
+或者，`<aside>`元素也可以单独使用，不带`<article>`元素，包含与整个页面相关的次要内容，例如相关的广告或博客。
 
-![image](img/1r.jpg)创建一个 HTML 文档（使用此处的模板）
+![image](img/1r.jpg)
+
+创建一个 HTML 文档（使用此处的模板）。
 
 ![image](img/htmlr.jpg)
 
-aside.html
+`aside.html`
 
-![image](img/2r.jpg)在 body 中插入一个文档标题
+![image](img/2r.jpg)
+
+在`body`中插入一个文档标题。
 
 ```html
 <h1>Famous Quotes</h1>
 ```
 
-![image](img/3r.jpg)接下来，添加一个主内容容器
+![image](img/3r.jpg)
+
+接下来，添加一个主内容容器。
 
 ```html
 <main>
@@ -1506,7 +1635,9 @@ aside.html
 </main>
 ```
 
-![image](img/4r.jpg)现在，在主内容容器中，插入一个包含标题、段落和一个 `aside` 元素的文章
+![image](img/4r.jpg)
+
+现在，在主内容容器中，插入一个包含标题、段落和一个`aside`元素的文章。
 
 ```html
 <article>
@@ -1519,9 +1650,11 @@ aside.html
 
 ![image](img/forget.jpg)
 
-HTML 的 `<aside>` 和 `<nav>` 元素也可以各自包含一个 `<footer>` 元素。
+HTML 的`<aside>`和`<nav>`元素也可以各自包含一个`<footer>`元素。
 
-![image](img/5r.jpg)在主内容容器中，插入第二个、带有 `class` 属性用于侧边栏的文章
+![image](img/5r.jpg)
+
+在主内容容器中，插入第二个、带有`class`属性用于侧边栏的文章。
 
 ```html
 <article class="sidebar">
@@ -1532,7 +1665,9 @@ HTML 的 `<aside>` 和 `<nav>` 元素也可以各自包含一个 `<footer>` 元�
 </article>
 ```
 
-![image](img/6r.jpg)在主内容容器之后，添加一个页面页脚
+![image](img/6r.jpg)
+
+在主内容容器之后，添加一个页面页脚。
 
 ```html
 <footer>
@@ -1540,19 +1675,23 @@ HTML 的 `<aside>` 和 `<nav>` 元素也可以各自包含一个 `<footer>` 元�
 </footer>
 ```
 
+```html
 <style>
 .sidebar > p {
   padding-right: 20px;
 }
 </style>
+```
 
-![image](img/7r.jpg)保存 HTML 文档然后在浏览器中打开它，查看文章内容。
+![image](img/7r.jpg)
+
+保存 HTML 文档，然后在浏览器中打开它，查看文章内容。
 
 ## 修改区块
 
-在早期版本中广泛使用的 `<div>` 标签为了向下兼容继续被支持——但 `<div>` 元素没有提供语义。与`<header>`、`<main>`、`<section>`、`<article>`、`<nav>` 和 `<footer>` 等语义元素相比，`<div>` 是匿名的。`<nav>` 元素中很容易识别，但在无意义的 `<div>` 元素中并不明显。
+在早期版本中广泛使用的`<div>`标签为了向下兼容继续被支持——但`<div>`元素没有提供语义。与`<header>`、`<main>`、`<section>`、`<article>`、`<nav>`和`<footer>`等语义元素相比，`<div>`是匿名的。`<nav>`元素中很容易识别，但在无意义的`<div>`元素中并不明显。
 
-`<div>` 元素对于样式目的仍然有用，同样类似的匿名 `<span>` 标签也是如此。虽然 `<div>` 和 `<span>` 元素本身没有意义，但它们可以包含 `id`、`class` 或 `style` 属性。仅将 `<div>` 元素用于样式——始终寻找要替代的语义元素。那些为了结构目的而非样式目的使用 `<div>` 元素的文档应该修改为使用语义元素——例如，给定下面的文档元素：
+`<div>`元素对于样式目的仍然有用，同样类似的匿名`<span>`标签也是如此。虽然`<div>`和`<span>`元素本身没有意义，但它们可以包含`id`、`class`或`style`属性。仅将`<div>`元素用于样式——始终寻找要替代的语义元素。那些为了结构目的而非样式目的使用`<div>`元素的文档应该修改为使用语义元素——例如，给定下面的文档元素：
 
 ```html
 <body>
@@ -1578,21 +1717,23 @@ HTML 的 `<aside>` 和 `<nav>` 元素也可以各自包含一个 `<footer>` 元�
 
 ![image](img/pg46_2.jpg)
 
-将“header”类 `<div>` 替换为 `<header>` 元素
+将“header”类`<div>`替换为`<header>`元素。
 
 ![image](img/htmlr.jpg)
 
-revised.html
+`revised.html`
 
-![image](img/2r.jpg)将“nav”类 `<div>` 替换为 `<nav>` 元素
+![image](img/2r.jpg)
 
+将“nav”类`<div>`替换为`<nav>`元素。
 
+![image](img/3r.jpg)
 
+将类名为“main”的`<div>`元素替换为`<main>`元素。
 
+![image](img/4r.jpg)
 
-![image](img/3r.jpg)将类名为为“main”的 `<div>` 元素替换为 `<main>` 元素。
-
-![image](img/4r.jpg)在标题和段落周围添加 `<article>` 元素，然后将 `<span>` 元素替换为 `<em>` 元素——用于自动强调。
+在标题和段落周围添加`<article>`元素，然后将`<span>`元素替换为`<em>`元素——用于自动强调。
 
 ```html
 <article>
@@ -1606,15 +1747,21 @@ revised.html
 </article>
 ```
 
-![image](img/5r.jpg)将类名为“footer”的 `<div>` 元素替换为 `<footer>` 元素。
+![image](img/5r.jpg)
 
-![image](img/6r.jpg)保存编辑后的文档，然后在浏览器中同时打开两个文档，查看它们看起来完全相同——结构是相同的，但修订赋予了语义化含义。
+将类名为“footer”的`<div>`元素替换为`<footer>`元素。
+
+![image](img/6r.jpg)
+
+保存编辑后的文档，然后在浏览器中同时打开两个文档，查看它们看起来完全相同——结构是相同的，但修订赋予了语义化含义。
 
 ![image](img/pg47_1.jpg)
+
 ![image](img/pg47_2.jpg)
+
 ![image](img/hot.jpg)
 
-你可以在此处发现更多关于 `<em>` 强调元素的知识。
+你可以在此处发现更多关于`<em>`强调元素的知识。
 
 ![image](img/forget.jpg)
 
@@ -1622,17 +1769,20 @@ revised.html
 
 ## 摘要
 
-- 标题元素 `<h1>`、`<h2>`、`<h3>`、`<h4>`、`<h5>` 和 `<h6>` 按重要性从 `<h1>` 到 `<h6>` 排序。
+- 标题元素`<h1>`、`<h2>`、`<h3>`、`<h4>`、`<h5>`和`<h6>`按重要性从`<h1>`到`<h6>`排序。
 - 顺序正确的标题元素隐式地传达了文档结构——即创建文档大纲。
-- `<hgroup>` 元素可以包含标题和子标题——从 `<h1>` 到 `<h6>`。
-- 完整的页眉（包括标志、横幅和 `<h1>` 到 `<h6>` 标题）可以包含在 `<header>` 元素中。
-- 提供页面或网站导航的超链接组应包含在 `<nav>` 元素中。
-- `<nav>` 元素只是菜单的包装器，通常在页眉中水平显示，或在侧边栏中垂直显示。
-- 网页正文部分的框架可能由 `<header>`、`<main>` 和 `<footer>` 元素组成。
-- 通常，`<footer>` 元素可能包含在 `<address>` 元素中的联系详情或 `<small>` 元素中的法律细节。
-- 每个文档 `<section>` 元素通常以一个节标题开头，随后是一个或多个文章（article>）。
+- `<hgroup>`元素可以包含标题和子标题——从`<h1>`到`<h6>`。
+- 完整的页眉（包括标志、横幅和`<h1>`到`<h6>`标题）可以包含在`<header>`元素中。
+- 提供页面或网站导航的超链接组应包含在`<nav>`元素中。
+- `<nav>`元素只是菜单的包装器，通常在页眉中水平显示，或在侧边栏中垂直显示。
+- 网页正文部分的框架可能由`<header>`、`<main>`和`<footer>`元素组成。
+- 通常，`<footer>`元素可能包含在`<address>`元素中的联系详情或`<small>`元素中的法律细节。
+
+
+
+- 每个文档 `<section>` 元素通常以一个节标题开头，随后是一个或多个文章（`article`）。
 - 每个文档 `<article>` 元素通常以一个文章标题开头，随后是一个或多个段落。
-- 与文章相关的独立信息可以包含嵌套在 `<article>` 元素中的 `<aside>` 元素中。
+- 与文章相关的独立信息可以包含嵌套在 `<article>` 元素中的 `<aside>` 元素。
 - `<div>` 和 `<span>` 元素没有意义，但对于样式设置很有用。
 
 | 3 管理文本内容 | ![image](img/pg11_1.jpg) |
@@ -1706,10 +1856,12 @@ The Statue of Liberty
 <p>The Statue of Liberty was built over nine years<br>by French sculptor Augusteoldi.<br>Upon its completion in 1884 350 pieces of the statue were packed into 214 crates for New York.</p>
 ```
 
-保存 HTML 文档并在网页浏览器中打开它，查看标题、段落、强制换行和水平规则线
+保存 HTML 文档并在网页浏览器中打开它，查看标题、段落、强制换行和水平规则线。
 
 ![image](img/pg51_1.jpg)
+
 ![image](img/pg51_2.jpg)
+
 ![image](img/hot.jpg)
 
 `<hr>` 元素可以被认为是故事和散文中常见的节分隔符的 HTML 等效物。
@@ -1724,10 +1876,6 @@ The Statue of Liberty
 
 `<q>` 标签用于包含来自其他来源的短引用，可以通过 `cite` 属性指定。对于该元素，浏览器通常会在当前行内产生一个小块区域来包含引用——因此 `<q>` 是一个短语元素。
 
-
-
-
-
 # HTML 文本格式化与强调
 
 ## 引用元素
@@ -1738,22 +1886,22 @@ The Statue of Liberty
 
 ### 创建引用文档
 
-1. ![image](img/1g.jpg) 创建一个 HTML 文档
-2. ![image](img/2g.jpg) 在 body 部分内插入一个段落
+1. ![image](img/1g.jpg) 创建一个 HTML 文档。
+2. ![image](img/2g.jpg) 在 body 部分内插入一个段落。
 
    ```html
    <p>A Paragraph Flow Block!</p>
    ```
 
-3. ![image](img/3g.jpg) 在 body 部分内插入一个包含两个嵌套小引用的块引用
+3. ![image](img/3g.jpg) 在 body 部分内插入一个包含两个嵌套小引用的块引用。
 
    ```html
    <blockquote cite="http://www.example.com/origin.html">
    A Blockquote Flow Block!<br>Paul said, <q>I saw Emma at lunch, she told me <q>Susan wants you to get some ice cream on your way home.</q> I think I will get some at Ben and Jerry’s on Main Street.</q> </blockquote>
    ```
 
-4. ![image](img/4g.jpg) 保存 HTML 文档然后打开它，以比较双引号、单引号和撇号
-5. ![image](img/5g.jpg) 将此样式表插入文档的 head 部分，然后重新加载页面以显示这些块
+4. ![image](img/4g.jpg) 保存 HTML 文档然后打开它，以比较双引号、单引号和撇号。
+5. ![image](img/5g.jpg) 将此样式表插入文档的 head 部分，然后重新加载页面以显示这些块。
 
    ```css
    p, blockquote { border : 2px solid Green ; }
@@ -1762,7 +1910,7 @@ The Statue of Liberty
 
 ### 默认段落宽度和颜色名称
 
-默认情况下，段落元素块将填充其容器元素的宽度——例如示例此处 中的 `<h1>` 元素块。
+默认情况下，段落元素块将填充其容器元素的宽度——例如示例此处中的 `<h1>` 元素块。
 
 HTML 识别 [`w3.org/TR/css-color-3/#svg-color`](http://www.w3.org/TR/css-color-3/#svg-color) 中描述的标准颜色名称和代码。这些名称不区分大小写，但可以使用大写字母——例如，`LawnGreen` 比 `lawngreen` 更具可读性。这里的流级元素显示 `Green` 实线边框，短语元素显示 `LawnGreen` 背景色。
 
@@ -1787,11 +1935,11 @@ HTML 提供了四个短语元素，用于强调文档正文中的文本：
 
 ### 创建强调文档
 
-1. ![image](img/1g.jpg) 创建一个 HTML 文档
+1. ![image](img/1g.jpg) 创建一个 HTML 文档。
 
    `emphasis.htm`
 
-2. ![image](img/2g.jpg) 在 body 部分内添加一个段落，强调某些文本而不影响句子含义
+2. ![image](img/2g.jpg) 在 body 部分内添加一个段落，强调某些文本而不影响句子含义。
 
    ```html
    <p>
@@ -1803,7 +1951,7 @@ HTML 提供了四个短语元素，用于强调文档正文中的文本：
    </p>
    ```
 
-3. ![image](img/3g.jpg) 接下来，在 body 部分内添加强调某些文本以影响句子含义的段落
+3. ![image](img/3g.jpg) 接下来，在 body 部分内添加强调某些文本以影响句子含义的段落。
 
    ```html
    <p><em>Puppy dogs</em> are cute.</p>
@@ -1817,13 +1965,13 @@ HTML 提供了四个短语元素，用于强调文档正文中的文本：
    <p>Puppy dogs are <em>cute.</em></p>
    ```
 
-4. ![image](img/4g.jpg) 将此样式表插入文档的 head 部分，以高亮显示被强调的文本
+4. ![image](img/4g.jpg) 将此样式表插入文档的 head 部分，以高亮显示被强调的文本。
 
    ```css
    strong, em { background : LawnGreen ; }
    ```
 
-5. ![image](img/5g.jpg) 保存 HTML 文档然后打开它，以显示被强调的文本
+5. ![image](img/5g.jpg) 保存 HTML 文档然后打开它，以显示被强调的文本。
 
 ### 使用 `<b>` 标签
 
@@ -1849,17 +1997,17 @@ HTML 提供了三个可以格式化文档主体内容的元素：
 
 ### 创建修改文档
 
-1. ![image](img/1g.jpg) 创建一个 HTML 文档
+1. ![image](img/1g.jpg) 创建一个 HTML 文档。
 
    `format.html`
 
-2. ![image](img/2g.jpg) 在 body 部分内插入一个包含法律目的旁注的段落
+2. ![image](img/2g.jpg) 在 body 部分内插入一个包含法律目的旁注的段落。
 
    ```html
    <p>Example Corp 今日宣布了第二季度的利润<small>(披露：EG News 是 Example Corp 的子公司)</small>引发了与 Demo Group 合并的推测。</p>
    ```
 
-3. ![image](img/3g.jpg) 接下来，插入一个大标题和一个段落
+3. ![image](img/3g.jpg) 接下来，插入一个大标题和一个段落。
 
    ```html
    <h1>To Do List</h1>
@@ -1869,19 +2017,19 @@ HTML 提供了三个可以格式化文档主体内容的元素：
    <p>Empty the dishwasher</p>
    ```
 
-4. ![image](img/4g.jpg) 现在，插入一个被删除的段落
+4. ![image](img/4g.jpg) 现在，插入一个被删除的段落。
 
    ```html
    <del><p>Take out the trash</p></del>
    ```
 
-5. ![image](img/5g.jpg) 然后，插入一个新添加的段落
+5. ![image](img/5g.jpg) 然后，插入一个新添加的段落。
 
    ```html
    <ins><p>Sweep the yard</p></ins>
    ```
 
-6. ![image](img/6g.jpg) 最后，插入一个新添加的段落，其中包含一个已更改的文本片段
+6. ![image](img/6g.jpg) 最后，插入一个新添加的段落，其中包含一个已更改的文本片段。
 
    ```html
    <ins>
@@ -1889,10 +2037,7 @@ HTML 提供了三个可以格式化文档主体内容的元素：
    </ins>
    ```
 
-
-
-
-![image](img/7g.jpg)保存 HTML 文档，然后在网络浏览器中打开它，查看文本的格式化情况
+![image](img/7g.jpg) 保存 HTML 文档，然后在网络浏览器中打开它，查看文本的格式化情况。
 
 ![image](img/pg57_1.jpg)
 
@@ -1906,13 +2051,10 @@ HTML 提供了三个可以格式化文档主体内容的元素：
 
 HTML 提供了四种短语元素，可用于标记文档主体内需要特殊处理的文本：
 
-• 包裹在 `<s>` 和 `</s>` 标签之间的文本被标记为被更准确或相关的更新内容所取代——通常显示为删除线效果。
-
-• 包裹在 `<u>` 和 `</u>` 标签之间的文本被标记为与普通文本内容有某种不同之处——通常显示为带有下划线的文本。
-
-• 包裹在 `<mark>` 和 `</mark>` 之间的文本被标记为具有特殊参考意义的内容——通常以有色背景块的形式显示以突出文本。
-
-• 被 `<wbr>` 标签断开的文本被隐式标记为适合换行的位置——代表单词换行的机会。
+- 包裹在 `<s>` 和 `</s>` 标签之间的文本被标记为被更准确或相关的更新内容所取代——通常显示为删除线效果。
+- 包裹在 `<u>` 和 `</u>` 标签之间的文本被标记为与普通文本内容有某种不同之处——通常显示为带有下划线的文本。
+- 包裹在 `<mark>` 和 `</mark>` 之间的文本被标记为具有特殊参考意义的内容——通常以有色背景块的形式显示以突出文本。
+- 被 `<wbr>` 标签断开的文本被隐式标记为适合换行的位置——代表单词换行的机会。
 
 需要注意的是，规范规定 `<s>` 标签不应用于指示文档内的编辑内容。而应该使用 `<del>` 标签来指示文档编辑。
 
@@ -1926,29 +2068,36 @@ HTML 提供了四种短语元素，可用于标记文档主体内需要特殊处
 
 使用样式表规则用于演示，而不是使用 `<u>` 标签来实现下划线。
 
-![image](img/1g.jpg)创建一个 HTML 文档
+![image](img/1g.jpg) 创建一个 HTML 文档
 
 ![image](img/htmlg.jpg)
 
-mark.html
+`mark.html`
 
-![image](img/2g.jpg)在 body 部分，添加一个标记单词换行机会的段落
+![image](img/2g.jpg) 在 body 部分，添加一个标记单词换行机会的段落。
 
-`<p>Microsoft Surface Pro 7</p>`
+```html
+<p>Microsoft Surface Pro 7</p>
+<p><wbr>- 256GB / Intel Core i7</p>
+```
 
-`<p><wbr>- 256GB / Intel Core i7</p>`
+![image](img/3g.jpg) 接下来，在 body 部分，添加一个标记了被取代的价格并提供当前价格的段落。
 
-![image](img/3g.jpg)接下来，在 body 部分，添加一个标记了被取代的价格并提供当前价格的段落
+```html
+<p><s>$1,499</s> $1,299</p>
+```
 
-`<p><s>$1,499</</s>> $1,299</p>`
+![image](img/4g.jpg) 现在，在 body 部分，添加标记用于参考的文本以及标记拼写错误词汇的段落。
 
-![image](img/4g.jpg)现在，在 body 部分，添加标记用于参考的文本以及标记拼写错误词汇的段落
+```html
+<p>Memory: <mark>16GB</mark><br>Screen: <mark>12.3-inch</mark></p>
+```
 
-`<p>Memory: <mark>16GB</mark><br>Screen: <mark>12.3-inch</mark></p>`
+```html
+<p>Surface <u>Penn</u> Included</p>
+```
 
-`<p>Surface <u>Penn</u> Included</p>`
-
-![image](img/5g.jpg)保存 HTML 文档，然后在网络浏览器中打开它，查看文本的格式化情况
+![image](img/5g.jpg) 保存 HTML 文档，然后在网络浏览器中打开它，查看文本的格式化情况。
 
 ![image](img/pg57_1.jpg)
 
@@ -1958,10 +2107,9 @@ mark.html
 
 使用样式表规则用于演示，而不是使用 `<u>` 标签来实现下划线。
 
+![图片](img/2g.jpg) 在 body 部分中，插入一个包含由字符实体生成的上标的段落。
 
 
-
-![图片](img/2g.jpg) 在 body 部分中，插入一个包含由字符实体生成的上标的段落
 
 ```html
 <p>
@@ -1970,7 +2118,9 @@ Cube of four: 4&sup3; = 64
 </p>
 ```
 
-![图片](img/3g.jpg) 现在，在 body 部分中，插入一个类似的包含由 HTML 元素生成的上标的段落
+![图片](img/3g.jpg)
+
+现在，在`body`部分中，插入一个类似的包含由 HTML 元素生成的上标的段落：
 
 ```html
 <p>
@@ -1979,7 +2129,9 @@ Cube of four: 4<sup>3</sup> = 64
 </p>
 ```
 
-![图片](img/4g.jpg) 最后，在 body 部分中，插入一个包含由 HTML 元素生成的下标的段落
+![图片](img/4g.jpg)
+
+最后，在`body`部分中，插入一个包含由 HTML 元素生成的下标的段落：
 
 ```html
 <p>
@@ -1988,12 +2140,15 @@ Oil of Vitriol: H<sub>2</sub>SO<sub>4</sub>
 </p>
 ```
 
-![图片](img/5g.jpg) 保存文档，然后在浏览器中打开它，以比较上标并查看下标文本
+![图片](img/5g.jpg)
+
+保存文档，然后在浏览器中打开它，以比较上标并查看下标文本。
 
 ![图片](img/pg63_1.jpg)
+
 ![图片](img/hot.jpg)
 
-在段落中使用上标 `²` 来表示面积，例如 10 feet²，你可能更倾向于使用实体 `&sup2;` 而不是 `<sup>2</sup>` 以保持行间距相等。
+在段落中使用上标`²`来表示面积，例如 10 feet²，你可能更倾向于使用实体`&sup2;`而不是`<sup>2</sup>`以保持行间距相等。
 
 ## 显示代码
 
@@ -2001,19 +2156,25 @@ Oil of Vitriol: H<sub>2</sub>SO<sub>4</sub>
 
 HTML 提供了五种短语元素，专门用于在文档主体中包含计算机程序代码：
 
-- 完整的程序代码或代码片段可以包装在 `<code>` 标签中以合适字体显示。
-- 程序变量实例可以包装在 `<var>` 标签中以区别于常规文本。
-- 示例程序输入和输出可以包装在 `<samp>` 标签中以区别于常规文本。
-- 同时具有机器可读代码的内容可以包装在 `<data>` 标签中，并将代码指定给其 `value` 属性。
-- 日期和时间可以包装在 `<time>` 标签中，并将其机器可读版本指定给 `datetime` 属性。
+- 完整的程序代码或代码片段可以包装在`<code>`标签中，以合适字体显示。
+- 程序变量实例可以包装在`<var>`标签中，以区别于常规文本。
+- 示例程序输入和输出可以包装在`<samp>`标签中，以区别于常规文本。
+- 同时具有机器可读代码的内容可以包装在`<data>`标签中，并将代码指定给其`value`属性。
+- 日期和时间可以包装在`<time>`标签中，并将其机器可读版本指定给`datetime`属性。
 
-例如，`<data>` 元素可以描述一本书的标题及其机器可读的 ISBN，然后 `<time>` 元素可以描述该书的出版日期：
+例如，`<data>`元素可以描述一本书的标题及其机器可读的 ISBN，然后`<time>`元素可以描述该书的出版日期：
 
-![图片](img/1g.jpg) 创建一个 HTML 文档
+![图片](img/1g.jpg)
+
+创建一个 HTML 文档。
+
 ![图片](img/htmlg.jpg)
+
 `code.html`
 
-![图片](img/2g.jpg) 在 body 部分中，插入一个包含变量、示例输入和示例输出的程序描述
+![图片](img/2g.jpg)
+
+在`body`部分中，插入一个包含变量、示例输入和示例输出的程序描述：
 
 ```html
 <p>
@@ -2028,7 +2189,9 @@ will output
 </p>
 ```
 
-![图片](img/3g.jpg) 现在，在 body 部分中，说明程序代码来源
+![图片](img/3g.jpg)
+
+现在，在`body`部分中，说明程序代码来源：
 
 ```html
 <data value=”978-1-84078-719-1”>
@@ -2039,9 +2202,11 @@ C++ Programming in easy steps, 5th Edition</data>
 
 ![图片](img/hot.jpg)
 
-`datetime` 的 `<time>` 元素的值必须采用有效格式——例如，完整日期时间 `2023-12-25 14:30` 或月份 `2023-12` 或日期 `2023-12-25` 或天数 `12-25` 或仅时间 `14:30.`
+`datetime`的`<time>`元素的值必须采用有效格式——例如，完整日期时间`2023-12-25 14:30`、月份`2023-12`、日期`2023-12-25`、天数`12-25`或仅时间`14:30.`
 
-![图片](img/4g.jpg) 接下来，在 body 部分中，插入预格式化的程序代码
+![图片](img/4g.jpg)
+
+接下来，在`body`部分中，插入预格式化的程序代码：
 
 ```html
 <pre>
@@ -2062,16 +2227,19 @@ return 0;
 </pre>
 ```
 
-![图片](img/5g.jpg) 保存 HTML 文档，然后在 Web 浏览器中打开它，以查看程序描述、来源详情和程序代码的显示方式
+![图片](img/5g.jpg)
+
+保存 HTML 文档，然后在 Web 浏览器中打开它，以查看程序描述、来源详情和程序代码的显示方式。
 
 ![图片](img/pg65_1.jpg)
+
 ![图片](img/snake.jpg)
 
 请注意，程序代码中的所有尖括号字符都已替换为字符实体，以避免与 HTML 标签冲突。
 
 ![图片](img/forget.jpg)
 
-请记住，在 `<pre>` 流元素中插入短语 `<code>` 元素，以在 HTML 文档中保留程序代码的布局。
+请记住，在`<pre>`流元素中插入短语`<code>`元素，以在 HTML 文档中保留程序代码的布局。
 
 ## 提供建议
 
@@ -2079,18 +2247,24 @@ return 0;
 
 HTML 提供了四种可用于在文档主体中指定建议性短语的短语元素：
 
-- 文本可以包装在 `<abbr>` 标签中以表示它是缩写。
-- 文本可以包装在 `<cite>` 标签中以表示它是来自其他来源的引用或参考。
-- 文本可以包装在 `<dfn>` 标签中以表示它是该术语的定义性实例。
-- 文本可以包装在 `<kbd>` 标签中以表示需要用户从键盘输入的内容。
+- 文本可以包装在`<abbr>`标签中，以表示它是缩写。
+- 文本可以包装在`<cite>`标签中，以表示它是来自其他来源的引用或参考。
+- 文本可以包装在`<dfn>`标签中，以表示它是该术语的定义性实例。
+- 文本可以包装在`<kbd>`标签中，以表示需要用户从键盘输入的内容。
 
-每个可以合法出现在文档主体中的 HTML 元素都可以选择包含 `title` 属性。指定给 `title` 属性的值通常显示为工具提示，当用户将光标放在元素上时会弹出。这意味着上面列出的每个短语元素都可以包含 `title` 属性以扩展其内容的含义。
+每个可以合法出现在文档主体中的 HTML 元素都可以选择包含`title`属性。指定给`title`属性的值通常显示为工具提示，当用户将光标放在元素上时会弹出。这意味着上面列出的每个短语元素都可以包含`title`属性以扩展其内容的含义。
 
-![图片](img/1g.jpg) 创建一个 HTML 文档
+![图片](img/1g.jpg)
+
+创建一个 HTML 文档。
+
 ![图片](img/htmlg.jpg)
+
 `advice.html`
 
-![图片](img/2g.jpg) 在 body 部分中，插入一个包含带工具提示建议的缩写的段落
+![图片](img/2g.jpg)
+
+在`body`部分中，插入一个包含带工具提示建议的缩写的段落：
 
 ```html
 <p>
@@ -2099,14 +2273,18 @@ HTML
 </abbr> in easy steps</p>
 ```
 
-![图片](img/3g.jpg) 接下来，插入一个带工具提示建议的引用参考
+![图片](img/3g.jpg)
+
+接下来，插入一个带工具提示建议的引用参考：
 
 ```html
 <p>
 <cite title=”Inventor of the HyperText Markup Language”>Sir Tim Berners-Lee</cite></p>
 ```
 
-![图片](img/4g.jpg) 现在，插入一个带工具提示建议的定义性术语
+![图片](img/4g.jpg)
+
+现在，插入一个带工具提示建议的定义性术语：
 
 ```html
 <p>
@@ -2116,16 +2294,20 @@ HyperText Markup Language</dfn></p>
 
 ![图片](img/forget.jpg)
 
-请记住使用单引号表示嵌套引号——如第 4 步中的 `‘HTML’`。
+请记住使用单引号表示嵌套引号——如第 4 步中的`‘HTML’`。
 
-![图片](img/5g.jpg) 然后，插入一个带工具提示建议的键盘指令
+![图片](img/5g.jpg)
+
+然后，插入一个带工具提示建议的键盘指令：
 
 ```html
 <p>
 <kbd title=”Press the Y key on your keyboard to execute a script. This requires JavaScript to be enabled in your browser”>Hit Y to Continue.</kbd></p>
 ```
 
-![图片](img/6g.jpg) 最后，添加一个响应键盘指令的脚本
+![图片](img/6g.jpg)
+
+最后，添加一个响应键盘指令的脚本：
 
 ```html
 <script>
@@ -2139,40 +2321,41 @@ document.onkeydown = showkey
 </script>
 ```
 
-![图片](img/7g.jpg) 保存 HTML 文档，然后在浏览器中打开它，并将光标放在元素上以查看工具提示
+![图片](img/7g.jpg)
+
+保存 HTML 文档，然后在浏览器中打开它，并将光标放在元素上以查看工具提示。
 
 ![图片](img/pg67_1.jpg)
+
 ![图片](img/8g.jpg)
 
-在浏览器中启用 JavaScript 后，按 `Y` 键查看脚本响应。
+在浏览器中启用 JavaScript 后，按`Y`键查看脚本响应。
 
 ![图片](img/pg67_2.jpg)
+
 ![图片](img/hot.jpg)
 
-脚本在按键被按下时检查 `keycode`，并会响应小写 `“y”` 和大写 `“Y”`。
+脚本在按键被按下时检查`keycode`，并会响应小写`“y”`和大写`“Y”`。
 
 ## 量规
 
 ![图片](img/pg68_1.jpg)
 
-范围内的值可以使用 HTML `<meter>` 元素在网页上以可视化方式显示为量规。
+范围内的值可以使用 HTML`<meter>`元素在网页上以可视化方式显示为量规。
 
-`<meter>` 元素必须包含一个定义分数测量的 `value` 属性。可选地，`<meter>` 标签也可以包含 `min` 和 `max` 属性以指定最小和最大范围边界。如果省略这些属性，则默认范围为 0-1。
+`<meter>`元素必须包含一个定义分数测量的`value`属性。可选地，`<meter>`标签也可以包含`min`和`max`属性以指定最小和最大范围边界。如果省略这些属性，则默认范围为 0-1。
 
-`<meter>` 标签还可以包含 `low` 和 `high` 属性以指定范围内的低和高位置，而 `optimum` 属性可以指定范围内的理想首选位置。
+`<meter>`标签还可以包含`low`和`high`属性以指定范围内的低和高位置，而`optimum`属性可以指定范围内的理想首选位置。
 
-`low` 和 `high` 属性可以指定由 `min` 和 `max` 属性指定的整个范围内的次优范围。实际上，这可以将量规分为三个部分——低、中和高。尽管不在 HTML 标准规范中，但这三个部分可以用不同的颜色由 Web 浏览器表示。例如，Google Chrome 浏览器合理地使用红色表示低部分，黄色表示中间部分，绿色表示高部分。
+`low`和`high`属性可以指定由`min`和`max`属性指定的整个范围内的次优范围。实际上，这可以将量规分为三个部分——低、中和高。尽管不在 HTML 标准规范中，但这三个部分可以用不同的颜色由 Web 浏览器表示。例如，Google Chrome 浏览器合理地使用红色表示低部分，黄色表示中间部分，绿色表示高部分。
 
-建议 `<meter>` 元素应包含描述量规状态的文本，该文本仅在不会可视化显示此元素的浏览器中显示。
-
-
-
+建议`<meter>`元素应包含描述量规状态的文本，该文本仅在不会可视化显示此元素的浏览器中显示。
 
 # HTML 交互元素与注释
 
-交互式的 `<details>` 和 `<summary>` 元素可以在无需脚本的情况下响应用户操作，以显示额外信息。通常，`<details>` 元素在网页上提供一个由三角形箭头表示的“披露小部件”。嵌套的 `<summary>` 元素显示描述小部件内隐藏信息的标题。额外信息包含在嵌套于 `<details>` 元素内部元素中，位于 `<summary>` 元素之后。
+交互式的`<details>`和`<summary>`元素可以在无需脚本的情况下响应用户操作，以显示额外信息。通常，`<details>`元素在网页上提供一个由三角形箭头表示的“披露小部件”。嵌套的`<summary>`元素显示描述小部件内隐藏信息的标题。额外信息包含在嵌套于`<details>`元素内部的元素中，位于`<summary>`元素之后。
 
-当用户点击 `<summary>` 元素时，小部件的状态会从“关闭”变为“打开”，并显示隐藏的信息。再次点击 `<summary>` 元素将关闭小部件并再次隐藏信息。
+当用户点击`<summary>`元素时，小部件的状态会从“关闭”变为“打开”，并显示隐藏的信息。再次点击`<summary>`元素将关闭小部件并再次隐藏信息。
 
 ![image](img/hot.jpg)
 
@@ -2186,7 +2369,9 @@ document.onkeydown = showkey
 
 `meter.html`
 
-![image](img/2g.jpg) 在 body 部分，插入一个包含测量量的 `<article>`，其测量范围为 0-100，次优范围为 15-50，最优值为 100，当前值为 80%
+![image](img/2g.jpg)
+
+在`body`部分，插入一个包含测量量的`<article>`，其测量范围为 0-100，次优范围为 15-50，最优值为 100，当前值为 80%：
 
 ```html
 <article>
@@ -2197,7 +2382,9 @@ document.onkeydown = showkey
 </article>
 ```
 
-![image](img/3g.jpg) 插入描述仪表当前状态的细节
+![image](img/3g.jpg)
+
+插入描述仪表当前状态的细节：
 
 ```html
 <details>
@@ -2206,47 +2393,57 @@ document.onkeydown = showkey
 </details>
 ```
 
-![image](img/4g.jpg) 重复步骤 2 和 3 两次，创建另外两个仪表，然后将它们的当前值编辑为 40 和 10，并提供适当的描述
+![image](img/4g.jpg)
 
-![image](img/5g.jpg) 保存 HTML 文档，然后在浏览器中打开它并点击每个 `<summary>` 元素查看其描述
+重复步骤 2 和 3 两次，创建另外两个仪表，然后将它们的当前值编辑为 40 和 10，并提供适当的描述。
+
+![image](img/5g.jpg)
+
+保存 HTML 文档，然后在浏览器中打开它并点击每个`<summary>`元素查看其描述。
 
 ![image](img/pg69_1.jpg)
+
 ![image](img/pg69_2.jpg)
+
 ![image](img/snake.jpg)
 
-`<meter>` 元素应仅用于指定范围内的分数测量，而不是指示进度——请使用 `<progress>` 元素表示进度（参见此处）。
+`<meter>`元素应仅用于指定范围内的分数测量，而不是指示进度——请使用`<progress>`元素表示进度（参见此处）。
 
 ## 直接语言
 
 ![image](img/pg70_1.jpg)
 
-推荐的 UTF-8 文档编码格式支持双向文本，使得从右向左语言（如希伯来语）的字符会自动按方向写入，并可能与英语等从左到右的文本一起出现。从右到左阅读的内容应在 `<bdi></bdi>` 双向隔离标签内，以免混淆浏览器，因为它期望是从左到右读取。此外，HTML 还提供了 `<bdo>` 双向覆盖元素，可以通过其 `dir` 属性显式指定文本方向为 `ltr` 或 `rtl`。
+推荐的 UTF-8 文档编码格式支持双向文本，使得从右向左语言（如希伯来语）的字符会自动按方向写入，并可能与英语等从左到右的文本一起出现。从右到左阅读的内容应在`<bdi></bdi>`双向隔离标签内，以免混淆浏览器，因为它期望是从左到右读取。此外，HTML 还提供了`<bdo>`双向覆盖元素，可以通过其`dir`属性显式指定文本方向为`ltr`或`rtl`。
 
-双向覆盖允许从右到左语言的字符以“逻辑”上的左到右顺序作为字符实体写入 HTML 文档中，但以“视觉”上的从右到左顺序显示。例如，下面的 `<bdo>` 元素从左到右包含了按输入顺序排列的五个字符实体，但从右到左显示它们：
+双向覆盖允许从右到左语言的字符以“逻辑”上的左到右顺序作为字符实体写入 HTML 文档中，但以“视觉”上的从右到左顺序显示。例如，下面的`<bdo>`元素从左到右包含了按输入顺序排列的五个字符实体，但从右到左显示它们：
 
 ```html
 <bdo dir="rtl">&#1497;&#1513;&#1512;&#1488;&#1500;</bdo>
 ```
 
-.... 显示为 ![image](img/pg70_2.jpg) (拉丁字母中的 Yiśrā’ēl)。
+.... 显示为![image](img/pg70_2.jpg)（拉丁字母中的 Yiśrā’ēl）。
 
 ![image](img/forget.jpg)
 
-如果没有双向覆盖，这些字符实体将按其逻辑顺序显示为 ![image](img/pg70_3.jpg)——对于从右向左的希伯来语来说，这是反向的。
+如果没有双向覆盖，这些字符实体将按其逻辑顺序显示为![image](img/pg70_3.jpg)——对于从右向左的希伯来语来说，这是反向的。
 
 ## Ruby 注释（注音符号）
 
 对于东方语言，HTML 支持“Ruby 注释”，可以很有用地在文本旁提供发音。例如，日语中有多种字母表。用语义“汉字”（Kanji）字母（有数千个字符）编写的文本通常带有对应的语音“假名”（Hiragana）注释（约 50 个字符），以辅助发音。这在日语中被称为“Furigana”，在英语中被称为“Ruby”——以指示发音的小字体命名。为了方便西方人阅读，日文汉字文本可以使用“罗马字”（Romaji）进行注释——其拉丁字母等价形式。同样在中文中，用“汉语”字母编写的文本可以使用拼音（Pinyin）进行注释——其拉丁字母等价形式。
 
-HTML Ruby 注释完全包含在根 `<ruby></ruby>` 标签之间。该元素可以用`<rb></rb>` 标签（Ruby base）包含东方文本，用`<rt></rt>` 标签（Ruby text）包含注释。可选在 `<rtc></rtc>` 标签内提供英语等价内容。
+HTML Ruby 注释完全包含在根`<ruby></ruby>`标签之间。该元素可以用`<rb></rb>`标签（Ruby base）包含东方文本，用`<rt></rt>`标签（Ruby text）包含注释。可选在`<rtc></rtc>`标签内提供英语等价内容。
 
-![image](img/1g.jpg) 创建 HTML 文档类型
+![image](img/1g.jpg)
+
+创建 HTML 文档类型。
 
 ![image](img/htmlg.jpg)
 
 `ruby.html`
 
-![image](img/2g.jpg) 在 body 部分，插入一个带有适当发音注释的日语文本元素
+![image](img/2g.jpg)
+
+在`body`部分，插入一个带有适当发音注释的日语文本元素：
 
 ```html
 <ruby>
@@ -2259,7 +2456,9 @@ HTML Ruby 注释完全包含在根 `<ruby></ruby>` 标签之间。该元素可�
 </ruby>
 ```
 
-![image](img/3g.jpg) 接下来，插入带有适当发音注释的中文元素
+![image](img/3g.jpg)
+
+接下来，插入带有适当发音注释的中文元素：
 
 ```html
 <ruby>
@@ -2272,39 +2471,49 @@ HTML Ruby 注释完全包含在根 `<ruby></ruby>` 标签之间。该元素可�
 </ruby>
 ```
 
-![image](img/4g.jpg) 保存 HTML 文档，然后在浏览器中打开它查看文本和 Ruby 注释
+![image](img/4g.jpg)
+
+保存 HTML 文档，然后在浏览器中打开它查看文本和 Ruby 注释。
 
 ![image](img/pg71_1.jpg)
+
 ![image](img/snake.jpg)
 
 ## 创建链接
 
 当互联网带有文本内容时，“超文本”（hypertext）提供了访问相关文档的能力，网页页面现在被称为“链接”（hyperlink）。
 
-链接被包含在 `<a>` 锚标签之间，通过 `href` 属性指定目标 URL。可选 `<a>` 标签还可以包含 `title` 属性以指定在用户鼠标悬停在链接上时显示的文本。
+链接被包含在`<a>`锚标签之间，通过`href`属性指定目标 URL。可选`<a>`标签还可以包含`title`属性，以指定在用户鼠标悬停在链接上时显示的文本。
 
 网页浏览器将以某种方式与普通文本区分链接——通常链接带有下划线，基于图像的链接带有边框。
 
 每个网页链接对三种交互状态敏感：
+
 - **悬停（Hover）**——获得焦点，鼠标悬放在链接上。
 - **激活（Active）**——检索资源，用户点击链接。
 - **已访问（Visited）**——链接之前已被检索过。
 
 可以使用样式规则来强调每个链接状态：
 
-![image](img/1g.jpg) 创建 HTML 文档
+![image](img/1g.jpg)
+
+创建 HTML 文档。
 
 ![image](img/htmlg.jpg)
 
 `link.html`
 
-![image](img/2g.jpg) 接下来，在 head 部分添加样式表的链接
+![image](img/2g.jpg)
+
+接下来，在`head`部分添加样式表的链接：
 
 ```html
 <link rel="stylesheet" href="link.css">
 ```
 
-![image](img/3g.jpg) 现在，在 body 部分，插入一个指向目标页面的链接——包含提示
+![image](img/3g.jpg)
+
+现在，在`body`部分，插入一个指向目标页面的链接——包含提示：
 
 ```html
 <a href="link-target.html" title="指向目标页面的链接">访问目标</a>
@@ -2314,13 +2523,17 @@ HTML Ruby 注释完全包含在根 `<ruby></ruby>` 标签之间。该元素可�
 
 `link-target.html`
 
-![image](img/4g.jpg) 保存 HTML 文档，然后创建一个类似的第二个文档，链接相同的样式表并包含一个指向第一个文档的链接
+![image](img/4g.jpg)
+
+保存 HTML 文档，然后创建一个类似的第二个文档，链接相同的样式表并包含一个指向第一个文档的链接：
 
 ```html
 <a href="link.html" title="返回的链接">返回</a>
 ```
 
-![image](img/5g.jpg) 将第二个 HTML 文档与第一个一起保存，然后创建一个样式表来强调每个链接状态
+![image](img/5g.jpg)
+
+将第二个 HTML 文档与第一个一起保存，然后创建一个样式表来强调每个链接状态：
 
 ```css
 a:hover { background : Yellow ; }
@@ -2332,29 +2545,27 @@ a:visited { background : Aqua ; }
 
 `link.css`
 
-![image](img/6g.jpg) 将样式表与两个 HTML 文档一起保存，然后在浏览器中打开第一个页面查看链接的默认状态
+
+
+![image](img/6g.jpg) 将样式表与两个 HTML 文档一起保存，然后在浏览器中打开第一个页面查看链接的默认状态。
 
 ![image](img/pg73_1.jpg)
 
-
-
-
-
-![image](img/7g.jpg)将光标悬停在超链接上，查看其悬停状态
+![image](img/7g.jpg) 将光标悬停在超链接上，查看其悬停状态。
 
 ![image](img/pg73_2.jpg)
 
-![image](img/8g.jpg)在超链接上按住鼠标左键，查看其激活状态
+![image](img/8g.jpg) 在超链接上按住鼠标左键，查看其激活状态。
 
 ![image](img/pg73_3.jpg)
 
-![image](img/9g.jpg)释放鼠标按钮以加载目标页面
+![image](img/9g.jpg) 释放鼠标按钮以加载目标页面。
 
-![image](img/10g.jpg)点击目标页面中的超链接，重新加载第一个页面
+![image](img/10g.jpg) 点击目标页面中的超链接，重新加载第一个页面。
 
 ![image](img/pg73_4.jpg)
 
-![image](img/11g.jpg)可以看到第一个页面上的超链接现在处于已访问状态
+![image](img/11g.jpg) 可以看到第一个页面上的超链接现在处于已访问状态。
 
 ![image](img/pg73_5.jpg)
 
@@ -2374,13 +2585,13 @@ a:visited { background : Aqua ; }
 
 超链接的指定字符键由 `<a>` 锚标签的 `accesskey` 属性指定。使用指定键的方法通常要求用户在大多数浏览器（如 Google Chrome）中按下 `Alt` + `accesskey`，但在 Firefox 中则是 `Alt` + `Shift` + `accesskey`。
 
-![image](img/1g.jpg)创建一个 HTML 文档
+![image](img/1g.jpg) 创建一个 HTML 文档。
 
 ![image](img/htmlg.jpg)
 
 `keys-home.html`
 
-![image](img/2g.jpg)接下来，在 head 部分添加一个样式表，移除默认的超链接样式
+![image](img/2g.jpg) 接下来，在 head 部分添加一个样式表，移除默认的超链接样式：
 
 ```html
 <style>
@@ -2389,7 +2600,7 @@ a:focus { background : Red ; color : White ; }
 </style>
 ```
 
-![image](img/3g.jpg)现在，在 body 部分插入两个超链接，分别指定不同的数字访问键字符
+![image](img/3g.jpg) 现在，在 body 部分插入两个超链接，分别指定不同的数字访问键字符：
 
 ```html
 <a href=”keys-home.html” accesskey=”1”>Home Page</a> |
@@ -2400,22 +2611,22 @@ a:focus { background : Red ; color : White ; }
 
 `keys-catalog.html`
 
-![image](img/4g.jpg)保存该 HTML 文档，然后创建一个类似的第二个文档，包含相同的两个超链接——但移除默认样式的样式表除外
+![image](img/4g.jpg) 保存该 HTML 文档，然后创建一个类似的第二个文档，包含相同的两个超链接——但移除默认样式的样式表除外：
 
 ```html
 <a href=”keys-home.html” accesskey=”1”>Home Page</a> |
 <a href=”keys-catalog.html” accesskey=”2”>Catalog Page</a>
 ```
 
-![image](img/5g.jpg)将第二个 HTML 文档与第一个文档保存在一起，然后在浏览器中打开第一个网页，查看没有默认样式的超链接
+![image](img/5g.jpg) 将第二个 HTML 文档与第一个文档保存在一起，然后在浏览器中打开第一个网页，查看没有默认样式的超链接。
 
 ![image](img/pg75_1.jpg)
 
-![image](img/6g.jpg)反复按 `Tab` 键，直到第二个超链接获得焦点，然后按 `Return` 键跟随该链接
+![image](img/6g.jpg) 反复按 `Tab` 键，直到第二个超链接获得焦点，然后按 `Return` 键跟随该链接。
 
 ![image](img/pg75_2.jpg)
 
-![image](img/7g.jpg)按下访问键组合和数字 1 键（例如 `Alt` + `1`），然后按 `Return` 键跟随第一个超链接
+![image](img/7g.jpg) 按下访问键组合和数字 1 键（例如 `Alt` + `1`），然后按 `Return` 键跟随第一个超链接。
 
 ![image](img/pg75_3.jpg)
 
@@ -2437,20 +2648,20 @@ Mac 用户在使用 Safari 浏览器时应按下 `CMD` + `accesskey`。
 
 跟随指向片段标识符的超链接时，文档将从片段标识符出现的位置开始显示：
 
-![image](img/1g.jpg)创建一个 HTML 文档
+![image](img/1g.jpg) 创建一个 HTML 文档。
 
 ![image](img/htmlg.jpg)
 
 `frag.html`
 
-![image](img/2g.jpg)在 body 部分中，插入两个包含片段标识符的超链接，并分别指向不同的片段
+![image](img/2g.jpg) 在 body 部分中，插入两个包含片段标识符的超链接，并分别指向不同的片段：
 
 ```html
 <a id=”top” href=”#btm”>Skip to Page Foot</a> |
 <a id=”next-btm” href=”frag-next.html#btm”>Skip to Next Page Foot</a>
 ```
 
-![image](img/3g.jpg)接下来，在 body 中插入一个表示内容的段落，后跟一个包含片段标识符的超链接，该超链接指向文档中的第一个超链接
+![image](img/3g.jpg) 接下来，在 body 中插入一个表示内容的段落，后跟一个包含片段标识符的超链接，该超链接指向文档中的第一个超链接：
 
 ```html
 <p style=”height:700px;background:Yellow”></p>
@@ -2461,7 +2672,7 @@ Mac 用户在使用 Safari 浏览器时应按下 `CMD` + `accesskey`。
 
 `frag-next.html`
 
-![image](img/4g.jpg)保存该 HTML 文档，然后创建一个类似的第二个文档，在内容上下方都包含超链接
+![image](img/4g.jpg) 保存该 HTML 文档，然后创建一个类似的第二个文档，在内容上下方都包含超链接：
 
 ```html
 <a id=”top” href=”#btm”>Skip to Page Foot</a>
@@ -2470,13 +2681,13 @@ Mac 用户在使用 Safari 浏览器时应按下 `CMD` + `accesskey`。
 <a id=”prev-top” href=”frag.html#top”>Skip to Previous Page Head</a>
 ```
 
-![image](img/5g.jpg)将第二个 HTML 文档与第一个文档保存在一起，然后在浏览器中打开第一个页面，点击第一个超链接跳转到该页面底部
+![image](img/5g.jpg) 将第二个 HTML 文档与第一个文档保存在一起，然后在浏览器中打开第一个页面，点击第一个超链接跳转到该页面底部。
 
 ![image](img/pg77_1.jpg)
 
-![image](img/6g.jpg)接下来，点击超链接返回该页面顶部
+![image](img/6g.jpg) 接下来，点击超链接返回该页面顶部。
 
-![image](img/7g.jpg)现在，点击第二个超链接跳转到下一页的底部
+![image](img/7g.jpg) 现在，点击第二个超链接跳转到下一页的底部。
 
 ![image](img/pg77_2.jpg)
 
@@ -2496,19 +2707,19 @@ Mac 用户在使用 Safari 浏览器时应按下 `CMD` + `accesskey`。
 
 可以使用 `javascript:` 协议调用脚本函数，也可以通过 `mailto:` 协议调用电子邮件客户端：
 
-![image](img/1g.jpg)创建一个 HTML 文档
+![image](img/1g.jpg) 创建一个 HTML 文档。
 
 ![image](img/htmlg.jpg)
 
 `protocol.html`
 
-![image](img/2g.jpg)在 body 部分中，插入一张图表图片
+![image](img/2g.jpg) 在 body 部分中，插入一张图表图片：
 
 ```html
 <img id=”chart” src=”protocol-chart.png” alt=”Chart”>
 ```
 
-![image](img/3g.jpg)接下来，插入一个包含两个超链接的段落，这两个超链接分别指向不同的协议
+![image](img/3g.jpg) 接下来，插入一个包含两个超链接的段落，这两个超链接分别指向不同的协议：
 
 ```html
 <p id=”links”>
@@ -2518,7 +2729,7 @@ Mac 用户在使用 Safari 浏览器时应按下 `CMD` + `accesskey`。
 </p>
 ```
 
-![image](img/4g.jpg)现在，添加一个样式表，其中包含一条隐藏图片的规则和一条设置段落样式的规则
+![image](img/4g.jpg) 现在，添加一个样式表，其中包含一条隐藏图片的规则和一条设置段落样式的规则：
 
 ```css
 <style>
@@ -2527,7 +2738,7 @@ p#links { padding : 5px ; border : 1px solid ; float : left ; width : 200px ; }
 </style>
 ```
 
-![image](img/5g.jpg)最后，添加一个脚本，当第一个超链接被点击时，交替显示和隐藏图片
+![image](img/5g.jpg) 最后，添加一个脚本，当第一个超链接被点击时，交替显示和隐藏图片：
 
 ```javascript
 <script>
@@ -2543,10 +2754,6 @@ function toggle( ) {
 ![image](img/hot.jpg)
 
 该脚本首先检查图片元素的当前可见性状态，然后将其反转。
-
-
-
-
 
 ![图片](img/6g.jpg) 保存 HTML 文档，然后在浏览器中打开，点击第一个链接即可显示图表图片。
 
@@ -2613,7 +2820,8 @@ function toggle( ) {
 
 每个 HTML 列表还有一个 `list-style-image` 属性，可以指定用作列表项目符号的图片的 URL。该图片将替代任何标记类型的项目符号。如果浏览器无法使用指定的图片，则将使用其 `list-style-type` 属性指定的标记，如果未指定标记，则使用默认标记。
 
-![图片](img/1p.jpg) 创建一个 HTML 文档
+![图片](img/1p.jpg) 创建一个 HTML 文档。
+
 ![图片](img/htmlp.jpg) `ulist.html`
 
 ![图片](img/2p.jpg) 在 body 部分中，插入一个将显示默认实心圆项目符号的无序列表：
@@ -2661,6 +2869,7 @@ function toggle( ) {
 ![图片](img/6p.jpg) 保存 HTML 文档，然后在浏览器中打开，查看无序列表的项目符号。
 
 ![图片](img/pg83_2.jpg)
+
 ![图片](img/hot.jpg)
 
 请注意，在 CSS 术语中，列表是在内容框中编写的，其项目符号绘制在左侧内边距区域中。
@@ -2689,7 +2898,11 @@ function toggle( ) {
 | 十进制 | `decimal` 或 `decimal-leading-zero` |
 | 罗马数字 | `lower-roman` 或 `upper-roman` |
 | 拉丁字母 | `lower-latin` 或 `upper-latin`，`lower-alpha` 或 `upper-alpha` |
+
+
+
 | 希腊字母 | `lower-greek` |
+|---|---|
 | 格鲁吉亚数字 | `georgian` |
 | 亚美尼亚数字 | `armenian` |
 
@@ -2700,6 +2913,7 @@ function toggle( ) {
 当未指定编号类型时，将使用默认类型。
 
 ![图片](img/1p.jpg) 创建一个 HTML 文档
+
 ![图片](img/htmlp.jpg) `olist.html`
 
 ![图片](img/2p.jpg) 在 body 部分中，插入一个将显示默认编号的有序列表：
@@ -2735,11 +2949,8 @@ function toggle( ) {
 ![图片](img/5p.jpg) 保存 HTML 文档，然后在浏览器中打开，查看有序列表的编号。
 
 ![图片](img/pg85_1.jpg)
+
 ![图片](img/hot.jpg)
-
-
-
-
 
 与无序列表中的标记一样，编号绘制在列表内容框的左内边距区域。
 
@@ -2755,48 +2966,48 @@ function toggle( ) {
 
 描述列表也适用于包含一系列问题和相关答案，或任何其他名称/值数据组。
 
-![image](img/1p.jpg)创建一个 HTML 文档
+![image](img/1p.jpg) 创建一个 HTML 文档
 
 ![image](img/htmlp.jpg)
 
 `dlist.html`
 
-![image](img/2p.jpg)在 body 部分中，插入一个包含两个问答名称/值对的描述列表
+![image](img/2p.jpg) 在 body 部分中，插入一个包含两个问答名称/值对的描述列表：
 
 ```html
 <dl>
-<dt>什么是 HTML？</dt>
-<dd>超文本标记语言</dd>
-<dt>它有什么用途？</dt>
-<dd>网页结构。</dd>
+  <dt>什么是 HTML？</dt>
+  <dd>超文本标记语言</dd>
+  <dt>它有什么用途？</dt>
+  <dd>网页结构。</dd>
 </dl>
 ```
 
-![image](img/3p.jpg)接下来，在 body 部分中，插入一个描述列表，描述一个术语的用法、发音和含义
+![image](img/3p.jpg) 接下来，在 body 部分中，插入一个描述列表，描述一个术语的用法、发音和含义：
 
 ```html
 <dl>
-<dt><dfn>同音异义词</dfn></dt>
-<dd class=”grammar”>名词</dd>
-<dd class=”spoken”>[hɒmənɪm]</dd>
-<dd>一个与另一个词在发音和拼写上相同但含义不同的词</dd>
+  <dt><dfn>同音异义词</dfn></dt>
+  <dd class=”grammar”>名词</dd>
+  <dd class=”spoken”>[hɒmənɪm]</dd>
+  <dd>一个与另一个词在发音和拼写上相同但含义不同的词</dd>
 </dl>
 ```
 
-![image](img/4p.jpg)现在，插入一个描述列表，描述一个术语的用法、发音和多个含义
+![image](img/4p.jpg) 现在，插入一个描述列表，描述一个术语的用法、发音和多个含义：
 
 ```html
 <dl>
-<dt><dfn>鼠标</dfn></dt>
-<dd class=”grammar”>名词</dd>
-<dd class=”spoken”>[maʊs]</dd>
-<dd>各种啮齿动物科中的一种小动物</dd>
-<dd>一种手掌大小的、带按钮的设备，用于移动计算机光标</dd> 
-<dd>一个安静、胆小的人</dd>
+  <dt><dfn>鼠标</dfn></dt>
+  <dd class=”grammar”>名词</dd>
+  <dd class=”spoken”>[maʊs]</dd>
+  <dd>各种啮齿动物科中的一种小动物</dd>
+  <dd>一种手掌大小的、带按钮的设备，用于移动计算机光标</dd>
+  <dd>一个安静、胆小的人</dd>
 </dl>
 ```
 
-![image](img/5p.jpg)添加一个样式表，为列表中的问题和定义术语着色，并为某些特定描述着色
+![image](img/5p.jpg) 添加一个样式表，为列表中的问题和定义术语着色，并为某些特定描述着色：
 
 ```css
 <style>
@@ -2807,7 +3018,7 @@ dd.spoken { color : Purple ; }
 </style>
 ```
 
-![image](img/6p.jpg)保存 HTML 文档，然后在浏览器中打开它，查看名称/值对
+![image](img/6p.jpg) 保存 HTML 文档，然后在浏览器中打开它，查看名称/值对。
 
 ![image](img/pg87_2.jpg)
 
@@ -2829,21 +3040,21 @@ dd.spoken { color : Purple ; }
 
 一个 `<table>` 元素通常包含多个 `<tr>` 元素，以创建一个显示多行数据的表格。类似地，每个 `<tr>` 元素通常包含多个 `<td>` 元素，以创建一个多列数据的表格。然而，需要注意的是，表格中的每个 `<tr>` 行必须包含完全相同数量的 `<td>` 单元格——例如，如果第一个 `<tr>` 行包含五个 `<td>` 单元格，那么所有 `<tr>` 行都必须包含五个 `<td>` 单元格。
 
-![image](img/1p.jpg)创建一个 HTML 文档
+![image](img/1p.jpg) 创建一个 HTML 文档
 
 ![image](img/htmlp.jpg)
 
 `table.html`
 
-![image](img/2p.jpg)在 body 部分中，插入一个表格元素
+![image](img/2p.jpg) 在 body 部分中，插入一个表格元素：
 
 ```html
 <table>
-<!-- 表格行将放在这里。 -->
+  <!-- 表格行将放在这里。 -->
 </table>
 ```
 
-![image](img/3p.jpg)现在，在表格元素中，插入三个表格行——每行包含三个表格数据单元格
+![image](img/3p.jpg) 现在，在表格元素中，插入三个表格行——每行包含三个表格数据单元格：
 
 ```html
 <tr> <td>单元格 1.1 <td>单元格 1.2 <td>单元格 1.3 </tr>
@@ -2851,7 +3062,7 @@ dd.spoken { color : Purple ; }
 <tr> <td>单元格 3.1 <td>单元格 3.2 <td>单元格 3.3 </tr>
 ```
 
-![image](img/4p.jpg)添加一个样式表，设置表格宽度和边框、单元格边框以及稍后添加的标题边框
+![image](img/4p.jpg) 添加一个样式表，设置表格宽度和边框、单元格边框以及稍后添加的标题边框：
 
 ```css
 <style>
@@ -2864,25 +3075,25 @@ td,th { border : 1px solid Black ; }
 
 省略结束的 `</td>` 单元格标签，但保留结束的 `</tr>` 标签，以更清晰地表示每个表格行的结束。
 
-![image](img/5p.jpg)保存 HTML 文档，然后在浏览器中打开它，查看一个基本表格
+![image](img/5p.jpg) 保存 HTML 文档，然后在浏览器中打开它，查看一个基本表格。
 
 ![image](img/pg89_1.jpg)
 
 可以使用 `<caption> </caption>` 标签指定表格标题，并且可以在 `<th> </th>` 标签之间添加行标题和列标题。
 
-![image](img/6p.jpg)在开始表格标签之后立即插入一个标题
+![image](img/6p.jpg) 在开始表格标签之后立即插入一个标题：
 
 ```html
 <caption>一个基本表格</caption>
 ```
 
-![image](img/7p.jpg)接下来，插入一行四个列标题
+![image](img/7p.jpg) 接下来，插入一行四个列标题：
 
 ```html
 <tr><th><th>列 1<th>列 2<th>列 3</tr>
 ```
 
-![image](img/8p.jpg)现在，在每个后续行的开头插入一个标题
+![image](img/8p.jpg) 现在，在每个后续行的开头插入一个标题：
 
 ```html
 <tr><th>行 1<td>单元格 1.1<td>单元格 1.2<td>单元格 1.3</tr>
@@ -2890,7 +3101,7 @@ td,th { border : 1px solid Black ; }
 <tr><th>行 3<td>单元格 3.1<td>单元格 3.2<td>单元格 3.3</tr>
 ```
 
-![image](img/9p.jpg)保存编辑后的 HTML 文档，然后刷新浏览器以查看添加的内容
+![image](img/9p.jpg) 保存编辑后的 HTML 文档，然后刷新浏览器以查看添加的内容。
 
 ![image](img/pg89_1.jpg)
 
@@ -2914,63 +3125,59 @@ td,th { border : 1px solid Black ; }
 
 要跨越的行数通过跨行单元格的 `<td>` 标签中的 `rowspan` 属性指定。然后必须删除被跨越行中的单元格，以保持表格的对称性。
 
-![image](img/1p.jpg)复制上一个示例 此处 中创建的 `table.html` 文档，并将其重命名为 `rowspan.html`
+![image](img/1p.jpg) 复制上一个示例 此处 中创建的 `table.html` 文档，并将其重命名为 `rowspan.html`。
 
 ![image](img/htmlp.jpg)
 
 `rowspan.html`
 
-![image](img/2p.jpg)更改文档和表格标题
+![image](img/2p.jpg) 更改文档和表格标题：
 
 ```html
 <title>行跨列示例</title>
 <caption>一个跨行的表格</caption>
 ```
 
-![image](img/3p.jpg)在包含文本“单元格 1.1”的表格数据元素中，在其开始标签中插入一个属性并编辑其内容
+![image](img/3p.jpg) 在包含文本“单元格 1.1”的表格数据元素中，在其开始标签中插入一个属性并编辑其内容：
 
 ```html
 <td rowspan=”2”>单元格 1.1+2.1</td>
 ```
 
-![image](img/4p.jpg)接下来，删除包含文本“单元格 2.1”的表格数据元素——因为该单元格现在已被跨越
+![image](img/4p.jpg) 接下来，删除包含文本“单元格 2.1”的表格数据元素——因为该单元格现在已被跨越。
 
-![image](img/5p.jpg)现在，向样式表添加规则，为跨行的单元格设置背景颜色
+![image](img/5p.jpg) 现在，向样式表添加规则，为跨行的单元格设置背景颜色：
 
 ```css
 td[rowspan=”2”] { background : Pink ; }
 td[rowspan=”3”] { background : HotPink ; }
 ```
 
-![image](img/6p.jpg)保存 HTML 文档，然后在浏览器中打开它，查看第 1 列中跨两行的单元格
+![image](img/6p.jpg) 保存 HTML 文档，然后在浏览器中打开它，查看第 1 列中跨两行的单元格。
 
 ![image](img/pg90_2.jpg)
 
-
-
-
-
-![image](img/7p.jpg)接下来，在表格数据元素中插入一个包含“Cell 2.2”文本的属性，并编辑其内容
+![image](img/7p.jpg) 接下来，在表格数据元素中插入一个包含“Cell 2.2”文本的属性，并编辑其内容：
 
 ```html
 <td rowspan=”2”>Cell 2.2+3.2</td>
 ```
 
-![image](img/8p.jpg)现在，删除包含“Cell 3.2”文本的表格数据元素——因为该单元格现在被合并
+![image](img/8p.jpg) 现在，删除包含“Cell 3.2”文本的表格数据元素——因为该单元格现在被合并。
 
-![image](img/9p.jpg)保存编辑后的 HTML 文档，然后刷新浏览器以查看第 2 列中跨两行的单元格
+![image](img/9p.jpg) 保存编辑后的 HTML 文档，然后刷新浏览器以查看第 2 列中跨两行的单元格。
 
 ![image](img/pg91_1.jpg)
 
-![image](img/10p.jpg)接下来，在表格数据元素中插入一个包含“Cell 1.3”文本的属性，并编辑其内容
+![image](img/10p.jpg) 接下来，在表格数据元素中插入一个包含“Cell 1.3”文本的属性，并编辑其内容：
 
 ```html
 <td rowspan=”3”>Cell 1.3+2.3+3.3</td>
 ```
 
-![image](img/11p.jpg)现在，删除包含“Cell 2.3”和“Cell 3.3”文本的表格数据元素——因为这些单元格现在被合并
+![image](img/11p.jpg) 现在，删除包含“Cell 2.3”和“Cell 3.3”文本的表格数据元素——因为这些单元格现在被合并。
 
-![image](img/12p.jpg)保存编辑后的 HTML 文档并刷新浏览器以查看第 3 列中跨三行的单元格
+![image](img/12p.jpg) 保存编辑后的 HTML 文档并刷新浏览器以查看第 3 列中跨三行的单元格。
 
 ![image](img/pg91_2.jpg)
 
@@ -2990,20 +3197,20 @@ td[rowspan=”3”] { background : HotPink ; }
 
 注意的是 `<<thead>>` 元素必须出现在 `<<table>>` 元素内第一个 `<tbody>` 元素之前，但如果存在 `<<caption>>` 元素，则应出现在其之后。
 
-![image](img/1p.jpg)复制此处创建的 `table.html` 文档，并将其重命名为“enhance.html”
+![image](img/1p.jpg) 复制此处创建的 `table.html` 文档，并将其重命名为“enhance.html”。
 
 ![image](img/htmlp.jpg)
 
-enhance.html
+`enhance.html`
 
-![image](img/2p.jpg)更改文档和表格标题
+![image](img/2p.jpg) 更改文档和表格标题：
 
 ```html
 <title>Enhanced Table Example</title>
 <caption>An Enhanced Table</caption>
 ```
 
-![image](img/3p.jpg)向样式表添加规则来美化表头、第二个表格主体标题以及最后的表格表脚
+![image](img/3p.jpg) 向样式表添加规则来美化表头、第二个表格主体标题以及最后的表格表脚：
 
 ```css
 thead { background : Pink ; }
@@ -3011,7 +3218,7 @@ th.next { background : DeepPink ; color : White ; }
 tfoot { background : HotPink ; }
 ```
 
-![image](img/4p.jpg)在 caption 之后，插入一个包含跨越所有四列的单行的表头
+![image](img/4p.jpg) 在 caption 之后，插入一个包含跨越所有四列的单行的表头：
 
 ```html
 <<thead>
@@ -3019,37 +3226,40 @@ tfoot { background : HotPink ; }
 </head>
 ```
 
-![image](img/5p.jpg)在表头之后，添加一个表格主体元素来封装所有现有的常规表格行
+![image](img/5p.jpg) 在表头之后，添加一个表格主体元素来封装所有现有的常规表格行：
 
 ```html
 <tbody>
-<!-- Existing row elements go here. -->
+  <!-- Existing row elements go here. -->
 </tbody>
 ```
 
-![image](img/6p.jpg)在表格主体元素之后，插入一个包含四个更多表格行的第二个表格主体元素
+![image](img/6p.jpg) 在表格主体元素之后，插入一个包含四个更多表格行的第二个表格主体元素：
 
 ```html
 <tbody>
-<tr> <th colspan=”4” class=”next”>Next section</tr>
-<tr>
-<th>Row 4</td><td>Cell 4.1</td><td>Cell 4.2</td><td>Cell 4.3</td></tr>
-<tr>
-<th>Row 5</td><td>Cell 5.1</td><td>Cell 5.2</td><td>Cell 5.3</td></tr>
-<tr>
-<th>Row 6</td><td>Cell 6.1</td><td>Cell 6.2</td><td>Cell 6.3</td></tr>
+  <tr><th colspan=”4” class=”next”>Next section</tr>
+  <tr>
+    <th>Row 4</td><td>Cell 4.1</td><td>Cell 4.2</td><td>Cell 4.3</td>
+  </tr>
+  <tr>
+    <th>Row 5</td><td>Cell 5.1</td><td>Cell 5.2</td><td>Cell 5.3</td>
+  </tr>
+  <tr>
+    <th>Row 6</td><td>Cell 6.1</td><td>Cell 6.2</td><td>Cell 6.3</td>
+  </tr>
 </tbody>
 ```
 
-![image](img/7p.jpg)在第二个表格主体之后，插入一个包含跨越所有四列的单行的表脚
+![image](img/7p.jpg) 在第二个表格主体之后，插入一个包含跨越所有四列的单行的表脚：
 
 ```html
 <tfoot>
-<tr><td colspan=”4”>Footer Information</tr>
+  <tr><td colspan=”4”>Footer Information</tr>
 </tfoot>
 ```
 
-![image](img/8p.jpg)保存 HTML 文档，然后在浏览器中打开它以查看增强后的表格
+![image](img/8p.jpg) 保存 HTML 文档，然后在浏览器中打开它以查看增强后的表格。
 
 ![image](img/pg93_1.jpg)
 
@@ -3065,30 +3275,32 @@ tfoot { background : HotPink ; }
 
 单个 `<col>` 元素也可以通过包含 `span` 属性来指定列数，表示多个列。因此，指定列宽的样式规则将应用于 `<col>` 元素表示的所有列。可选情况下，`<col>` 元素可以包含在 `<colgroup>` 标签之间。
 
-![image](img/1p.jpg)创建一个 HTML 文档
+![image](img/1p.jpg) 创建一个 HTML 文档
 
 ![image](img/htmlp.jpg)
 
-column.html
+`column.html`
 
-![image](img/2p.jpg)在主体中插入一个表格
+![image](img/2p.jpg) 在主体中插入一个表格：
 
 ```html
 <table>
-<caption>Breakfast</caption>
-<tbody>Table content to go here.</tbody>
+  <caption>Breakfast</caption>
+  <tbody>Table content to go here.</tbody>
 </table>
 ```
 
-![image](img/3p.jpg)接下来，在表格中插入一个列组
+![image](img/3p.jpg) 接下来，在表格中插入一个列组：
 
 ```html
 <colgroup>
-<col>
+  <col>
 </colgroup>
 ```
 
-![image](img/4p.jpg)现在，添加规则来指定每列的宽度
+![image](img/4p.jpg) 现在，添加规则来指定每列的宽度。
+
+
 
 ```css
 <style>
@@ -3099,27 +3311,33 @@ tfoot { font-size : small ; }
 </style>
 ```
 
-![image](img/5p.jpg)接下来，添加规则来指定每列的宽度
+![image](img/5p.jpg)
+
+接下来，添加规则来指定每列的宽度。
 
 ```css
 colgroup.sidebar col { width : 70px ; }
 colgroup.info col { width : 80px ; }
 ```
 
-![image](img/6p.jpg)现在，添加规则来样式分组和单独的列
+![image](img/6p.jpg)
+
+现在，添加规则来样式分组和单独的列。
 
 ```css
 colgroup.info { border-left : 2px solid White ; }
 colgroup col.stripe { background : Pink ; }
 ```
 
-![image](img/7p.jpg)保存 HTML 文档，然后在浏览器中打开它以查看不同的列组
+![image](img/7p.jpg)
+
+保存 HTML 文档，然后在浏览器中打开它以查看不同的列组。
 
 ![image](img/pg95_1.jpg)
 
 ![image](img/hot.jpg)
 
-此表脚使用了 &bull; 字符实体来创建符号。
+此表脚使用了`&bull;`字符实体来创建符号。
 
 ## 总结
 
@@ -3132,17 +3350,14 @@ colgroup col.stripe { background : Pink ; }
 - HTML `<table>` 元素创建一个表格，并可以可选包含一个 `<caption>` 元素作为表格标题。
 - 每个表格行都通过 `<tr>` 元素创建，其中包含许多 `<th>` 标题元素和 `<td>` 数据元素。
 - 表格单元格可以使用 `rowspan` 属性跨越其他单元格，使用 `colspan` 属性跨越右侧单元格。
+- 在 `<caption>` 元素之后立即添加 `<thead>` 和 `<tfoot>` 元素，可以为表格添加表头和页脚。
+- 具有表头和页脚的表格必须将所有普通表格行封装在 `<tbody>` 元素中。
+- 可以使用 `<colgroup>` 元素对表格列进行分组以设置样式。
+- 每个表格列可以用 `<col>` 元素表示，以便对其单独设置样式。
 
+## 5 整合媒体内容
 
-
-
-
--   在 `<caption>` 元素之后立即添加 `<<thead>` 和 `<tfoot>` 元素，可以为表格添加表头和页脚。
--   具有表头和页脚的表格必须将所有普通表格行封装在 `<tbody>` 元素中。
--   可以使用 `<colgroup>` 元素对表格列进行分组以设置样式。
--   每个表格列可以用 `<col>` 元素表示，以便对其单独设置样式。
-
-| 5 整合媒体内容 | ![image](img/pg11_1.jpg) |
+![image](img/pg11_1.jpg)
 
 **本章演示了如何在页面内容中包含图像和其他媒体文件。**
 
@@ -3168,26 +3383,30 @@ colgroup col.stripe { background : Pink ; }
 
 在 HTML 文档内容中添加图像的能力引入了许多令人兴奋的。使用 `<img>` 标签可以轻松向文档添加图像，该标签最好始终包含以下属性：
 
--   需要 `src` 属性来指定图像位置的 URL，可以是绝对路径或相对路径。
--   建议使用 `width` 属性来指定图像在页面上占据区域的像素宽度。
--   建议使用 `height` 属性来指定图像在页面上占据区域的像素高度。
--   建议使用 `alt` 属性来指定描述图像的文本，用于图像无法加载的情况。
+- 需要 `src` 属性来指定图像位置的 URL，可以是绝对路径或相对路径。
+- 建议使用 `width` 属性来指定图像在页面上占据区域的像素宽度。
+- 建议使用 `height` 属性来指定图像在页面上占据区域的像素高度。
+- 建议使用 `alt` 属性来指定描述图像的文本，用于图像无法加载的情况。
 
-赋给 `width` 和 `height` 属性的值会指示网络浏览器在网页上创建该尺寸的内容区域。这不需要是图像的实际尺寸，因为网络浏览器可以按另一个指定的尺寸渲染图像。必须注意确保尺寸按实际图像大小等比例缩放，以避免失真。此外，图像应该只缩小，因为放大通常会导致像素化——即肉眼可以看到单个像素。然而，依赖浏览器来缩放不以全尺寸显示的图像是效率低下的做法，因为这需要下载不必要的大得多的文件。更好的方法是使用图形编辑器（如 Photoshop）调整图像大小，将其尺寸调整为它在页面上占据的实际尺寸，这样它下载和显示速度会更快。
+赋给 `width` 和 `height` 属性的值会指示网络浏览器在网页上创建该尺寸的内容区域。这不需要是图像的实际尺寸，因为网络浏览器可以按另一个指定的尺寸渲染图像。必须注意确保尺寸按实际图像大小等比例缩放，以避免失真。
+
+此外，图像应该只缩小，因为放大通常会导致像素化——即肉眼可以看到单个像素。然而，依赖浏览器来缩放不以全尺寸显示的图像是效率低下的做法，因为这需要下载不必要的大得多的文件。更好的方法是使用图形编辑器（如 Photoshop）调整图像大小，将其尺寸调整为它在页面上占据的实际尺寸，这样它下载和显示速度会更快。
 
 ![image](img/pg98_2.jpg) 原始文件大小
 
-![image](img/pg98_3.jpg) 缩小至 33% 网络图形的最优文件类型是流行的非专有网络图形 (PNG) 格式，它能产生紧凑的文件并支持透明度。
+![image](img/pg98_3.jpg) 缩小至 33%
+
+网络图形的最优文件类型是流行的非专有网络图形（PNG）格式，它能产生紧凑的文件并支持透明度。
 
 ![image](img/forget.jpg) HTML 标签中的属性可以以任何顺序出现。
 
-![image](img/snake.jpg) 避免在网络图形中使用 BMP 位图格式——将此处显示的原始图像保存为 `fish.bmp` 将创建一个大小为 790KB 的文件！
+![image](img/snake.jpg) 避免在网络图形中使用 BMP 位图格式——将此处显示的原始图像保存为`fish.bmp`将创建一个大小为 790KB 的文件！
 
 ![image](img/1o.jpg) 创建 HTML 文档
 
-![image](img/htmlo.jpg) image.html
+![image](img/htmlo.jpg) `image.html`
 
-![image](img/2o.jpg) 在 body 部分，插入三个图像元素——显示一个全尺寸图形加上两个缩放版本
+![image](img/2o.jpg) 在 `body` 部分，插入三个图像元素——显示一个全尺寸图形加上两个缩放版本。
 
 ```html
 <img src="image-fish.png" width="200" height="150" alt="Fish">
@@ -3195,37 +3414,39 @@ colgroup col.stripe { background : Pink ; }
 <img src="image-fish.png" width="100" height="75" alt="Fish">
 ```
 
-![image](img/3o.jpg) 保存 HTML 文档然后在浏览器中打开它，查看全尺寸图像和缩放版本
+![image](img/3o.jpg) 保存 HTML 文档，然后在浏览器中打开它，查看全尺寸图像和缩放版本。
 
-![image](img/pg99_1.jpg) image-fish.png 200px x 150px
+![image](img/pg99_1.jpg) `image-fish.png` 200px x 150px
 
-![image](img/pg99_2.jpg) 现在，为每个图像元素插入此属性
+![image](img/pg99_2.jpg) 现在，为每个图像元素插入此属性。
 
 ```html
 style="background:Aqua"
 ```
 
-![image](img/pg99_3.jpg) 刷新您的浏览器以查看彩色背景
+![image](img/pg99_3.jpg) 刷新您的浏览器以查看彩色背景。
 
 ## 图像热区域
 
-如果为图像添加“图像映射”以定义每个超链接的“热点”区域，单个图像就可以目标多个超链接资源。要使用图像映射，`<img>` 标签必须包含 `usemap` 属性来指定映射名称，并以 `#` 字符开头。图像映射本身包含在 `<map>` `</map>` 标签之间，其名称由起始 `<map>` 标签中的 `name` 属性指定。
+如果为图像添加“图像映射”以定义每个超链接的“热点”区域，单个图像就可以目标多个超链接资源。要使用图像映射，`<img>` 标签必须包含 `usemap` 属性来指定映射名称，并以 `#` 字符开头。图像映射本身包含在 `<map>` 和 `</map>` 标签之间，其名称由起始 `<map>` 标签中的 `name` 属性指定。
 
-![image](img/pg100_1.jpg) 图像中每个成为超链接热点的区域由 `<map>` 元素内 `<area>` 标签的四个属性定义。`shape` 属性指定形状为 `rect`（矩形）、`circle`（圆形）或 `poly`（多边形），`coords` 属性指定逗号分隔的列表。
+![image](img/pg100_1.jpg)
+
+图像中每个成为超链接热点的区域由 `<map>` 元素内 `<area>` 标签的四个属性定义。`shape` 属性指定形状为 `rect`（矩形）、`circle`（圆形）或 `poly`（多边形），`coords` 属性指定逗号分隔的列表。
 
 | 形状 | 坐标 |
 | :--- | :--- |
-| rect | 左上角 x, 左上角 y, 右下角 x, 右下角 y |
-| circle | 中心 x, 中心 y, 半径 |
-| poly | x1, y1, x2, y2, x3, y3, 等 – 每个点一个对 |
+| `rect` | 左上角 x, 左上角 y, 右下角 x, 右下角 y |
+| `circle` | 中心 x, 中心 y, 半径 |
+| `poly` | x1, y1, x2, y2, x3, y3, 等 – 每个点一个对 |
 
 每个 `<area>` 标签必须具有 `href` 属性来指定超链接的 URL，并具有 `alt` 属性来指定在图像未启用时显示的替代文本。第一个和最后一个点必须具有相同的坐标以完成形状。
 
 ![image](img/1o.jpg) 创建 HTML 文档
 
-![image](img/htmlo.jpg) map.html
+![image](img/htmlo.jpg) `map.html`
 
-![image](img/2o.jpg) 在 body 部分，插入图像和映射元素
+![image](img/2o.jpg) 在 `body` 部分，插入图像和映射元素。
 
 ```html
 <img src="map.png" alt="Search" usemap="#search">
@@ -3234,15 +3455,15 @@ style="background:Aqua"
 </map>
 ```
 
-![image](img/pg99_2.jpg) map.png 400px x 200px
+![image](img/pg99_2.jpg) `map.png` 400px x 200px
 
-![image](img/3o.jpg) 在映射元素内，定义一个覆盖图像左上象的矩形热点——从左上角点 `xy:0,0` 到右下角点 `xy:200,100`
+![image](img/3o.jpg) 在映射元素内，定义一个覆盖图像左上象限的矩形热点——从左上角点 `xy:0,0` 到右下角点 `xy:200,100`。
 
 ```html
 <area shape="rect" coords="0,0,200,100" href="https://www.bing.com" alt="Bing Panel" title="Link to Bing">
 ```
 
-![image](img/4o.jpg) 现在，在映射元素内，定义三个相同尺寸的热点覆盖图像的其他三个象限
+![image](img/4o.jpg) 现在，在映射元素内，定义三个相同尺寸的热点覆盖图像的其他三个象限。
 
 ```html
 <area shape="rect" coords="200,0,400,100" href="https://www.ask.com" alt="Ask Panel" title="Link to Ask">
@@ -3250,7 +3471,7 @@ style="background:Aqua"
 <area shape="rect" coords="200,100,400,200" href="https://www.yahoo.com" alt="Yahoo Panel" title="Link to Yahoo">
 ```
 
-![image](img/5o.jpg) 保存 HTML 文档然后在浏览器中打开它，查看工具提示描述每个可以点击以打开其关联目标的热点
+![image](img/5o.jpg) 保存 HTML 文档，然后在浏览器中打开它，查看工具提示描述每个可以点击以打开其关联目标的热点。
 
 ![image](img/pg101_1.jpg)
 
@@ -3265,31 +3486,32 @@ style="background:Aqua"
 </figure>
 ```
 
-
-
-
 ```html
 <figure width="160" height="145">
-<figcaption class="reference">
-图 1：前端技术
-</figcaption>
+  <figcaption class="reference">
+    图 1：前端技术
+  </figcaption>
 </figure>
 ```
 
 ![image](img/4o.jpg)
-现在，插入引用上述带注图片的文本内容
 
+现在，插入引用上述带注图片的文本内容。
+
+```html
 <p>前端开发，也称为客户端开发，是为网站或 Web 应用生成 HTML 文档、CSS 样式表和 JavaScript 脚本代码 <span class="reference">(图 1)</span>实践——这样用户就可以可以直接看到并与之交互。</p>
+```
 
 ![image](img/5o.jpg)
-插入第二个带注图片
+
+插入第二个带注图片。
 
 ```html
 <figure id="back-stack">
-<img src="figure-back.png" alt="Back-end" width="160" height="128">
-<figcaption class="reference">
-图 2：后端技术
-</figcaption>
+  <img src="figure-back.png" alt="Back-end" width="160" height="128">
+  <figcaption class="reference">
+    图 2：后端技术
+  </figcaption>
 </figure>
 ```
 
@@ -3298,16 +3520,20 @@ style="background:Aqua"
 始终通过标签来引用图片——避免使用如“右侧图中的”之类的引用术语，这样文档布局就可以轻松更改而不会产生混淆。
 
 ![image](img/6o.jpg)
-现在，插入引用第二个带注图片的文本内容
 
+现在，插入引用第二个带注图片的文本内容。
+
+```html
 <p>后端开发，也称为服务器端开发，是使用 SQL、Java、PHP 或 .NET 等编程语言生成复杂网站的 <span class="reference">(图 2)</span>实践，以提供前端能力之外的功能。</p>
+```
 
 ![image](img/7o.jpg)
-添加样式表来定位每个带注图片，并指定一些字体样式
+
+添加样式表来定位每个带注图片，并指定一些字体样式。
 
 ```css
 <style>
-figure#front-stack{ float:left; margin-top :0px; }
+figure#front-stack { float:left; margin-top :0px; }
 figure#back-stack { float:right; margin-top:0px; }
 .reference { color : Red; font-weight:bold; }
 p:first-letter { font-size :xx-large; }
@@ -3315,13 +3541,14 @@ p:first-letter { font-size :xx-large; }
 ```
 
 ![image](img/8o.jpg)
-保存 HTML 文档和样式表，然后在浏览器中打开网页以查看带注图片
+
+保存 HTML 文档和样式表，然后在浏览器中打开网页以查看带注图片。
 
 ![image](img/pg103_1.jpg)
 
 ![image](img/forget.jpg)
 
-你可以在 [www.ineasysteps.com](http://www.ineasysteps.com) 通过该系列关于 SQL、Java、PHP、Python 和 MySQL 的配套书籍发现更多关于后端技术的知识
+你可以在[www.ineasysteps.com](http://www.ineasysteps.com)通过该系列关于 SQL、Java、PHP、Python 和 MySQL 的配套书籍发现更多关于后端技术的知识。
 
 ## 选择图片
 
@@ -3329,20 +3556,17 @@ p:first-letter { font-size :xx-large; }
 
 ![image](img/pg104_1.jpg)
 
-`<picture>` `</picture>` 元素用于包含多个图像源，浏览器从中选择最合适的尺寸。每个图像源都指定在嵌套的 `<source>` 元素的 `srcset` 属性中，并将适用于该图片的最小屏幕宽度指定在它的 `media` 属性中。该作业需要一种特殊的语法，在 `( )` 括号内通过 `min-width` 属性指定尺寸——例如，指定某图像仅适用于屏幕宽度超过某值的设备显示。
+`<picture>` 和 `</picture>` 元素用于包含多个图像源，浏览器从中选择最合适的尺寸。每个图像源都指定在嵌套的 `<source>` 元素的 `srcset` 属性中，并将适用于该图片的最小屏幕宽度指定在它的 `media` 属性中。该作业需要一种特殊的语法，在 `()` 括号内通过 `min-width` 属性指定尺寸——例如，指定某图像仅适用于屏幕宽度超过某值的设备显示。
 
-*(注：原文中该段落重复多次，此处已按要求仅翻译一次)*
+*（注：原文中该段落重复多次，此处已按要求仅翻译一次）*
 
-
-
-
-# 嵌入向量
+## 嵌入向量
 
 HTML `<embed>` 元素允许你集成外部资源以与 HTML 文档进行交互。
 
 ![image](img/pg108_1.jpg)
 
-支持现代 HTML 的网页浏览器也支持缩放矢量图形 (SVG)。与 PNG 等位图图形格式不同（后者将图形信息存储为每个像素的颜色），矢量图形将图形信息存储为一系列“路径”。这是一种描述图形的非常高效的方法。
+支持现代 HTML 的网页浏览器也支持缩放矢量图形（SVG）。与 PNG 等位图图形格式不同（后者将图形信息存储为每个像素的颜色），矢量图形将图形信息存储为一系列“路径”。这是一种描述图形的非常高效的方法。
 
 最重要的是，矢量图形可以在不失真清晰度的情况下进行缩放。这意味着它们可以无限放大，而不会出现像放大 PNG、JPG 或 GIF 文件格式的位图图像时那样的像素化问题。
 
@@ -3358,25 +3582,23 @@ SVG 矢量 x 3
 
 PNG 位图 x 3
 
-SVG 实际上并不是 HTML 的一部分，而是一种基于可扩展标记语言 (XML) 的规范，因此它在文本文件中描述矢量图像。这些文件可以手动创建，但使用像 Adobe Illustrator 这样的矢量图形编辑器简单得多。
+SVG 实际上并不是 HTML 的一部分，而是一种基于可扩展标记语言（XML）的规范，因此它在文本文件中描述矢量图像。这些文件可以手动创建，但使用像 Adobe Illustrator 这样的矢量图形编辑器简单得多。
 
 SVG 图像可以缩放而不会丢失清晰度，并且可以高质量打印而不丢失分辨率。
 
 SVG 文件还可以进行脚本化处理。在静态矢量图像中添加 JavaScript 功能使得创建交互式 SVG 对象成为可能。这意味着 SVG 文件中的每个元素和每个属性都可以动画化。
 
-静态 SVG 图像和交互式 SVG 对象都可以通过通过为 `<embed>` 元素的 `type` 属性指定 MIME 类型“image/svg+xml”来嵌入到 HTML 中。
+静态 SVG 图像和交互式 SVG 对象都可以通过为 `<embed>` 元素的 `type` 属性指定 MIME 类型`image/svg+xml`来嵌入到 HTML 中。
 
 ![image](img/hot.jpg)
 
 静态 SVG 图像也可以使用 `<img>` 元素嵌入——就像对待任何其他图像一样。
 
-![image](img/1o.jpg)创建一个 HTML 文档
+![image](img/1o.jpg) 创建一个 HTML 文档
 
-![image](img/htmlo.jpg)
+![image](img/htmlo.jpg) `vector.html`
 
-vector.html
-
-![image](img/2o.jpg)在 `body` 部分中，插入一个元素来嵌入一个交互式缩放矢量图形
+![image](img/2o.jpg) 在 `body` 部分中，插入一个元素来嵌入一个交互式缩放矢量图形。
 
 ```html
 <embed src="vector-picker.svg" type="image/svg+xml" width="280" height="200">
@@ -3384,13 +3606,13 @@ vector.html
 
 ![image](img/svgo.jpg)
 
-vector-picker.svg
+`vector-picker.svg`
 
 （外部资源）
 
-![image](img/3o.jpg)将 HTML 文档与 SVG 文件一起保存，然后在浏览器中打开该网页以查看嵌入的交互式缩放矢量图形
+![image](img/3o.jpg) 将 HTML 文档与 SVG 文件一起保存，然后在浏览器中打开该网页以查看嵌入的交互式缩放矢量图形。
 
-![image](img/4o.jpg)点击图像中任何带圈的颜色样本来选择颜色以与矢量图形交互
+![image](img/4o.jpg) 点击图像中任何带圈的颜色样本来选择颜色以与矢量图形交互。
 
 ![image](img/pg109_1.jpg)
 
@@ -3398,23 +3620,29 @@ vector-picker.svg
 
 你可以通过从此处下载示例包来检查 JavaScript 是如何纳入此 SVG 文档的：[www.ineasysteps.com/resource-centre/downloads](http://www.ineasysteps.com/resource-centre/downloads)
 
-# 嵌入框架
+## 嵌入框架
 
-外部资源可以使用 `<iframe> </iframe>` 标签以“内联框架”的形式嵌入到 HTML 文档中。这些框架在页面上创建了一个固定区域，用于显示嵌入的资源。内联框架的尺寸必须指定给 `<iframe>` 元素的 `width` 和 `height` 属性，并将外部资源的 URL 赋值给其 `src` 属性。当外部资源的尺寸超过内联框架的尺寸时，浏览器会自动添加滚动条，以便户可以查看全部内容。
+外部资源可以使用 `<iframe>` 和 `</iframe>` 标签以“内联框架”的形式嵌入到 HTML 文档中。这些框架在页面上创建了一个固定区域，用于显示嵌入的资源。内联框架的尺寸必须指定给 `<iframe>` 元素的 `width` 和 `height` 属性，并将外部资源的 URL 赋值给其 `src` 属性。当外部资源的尺寸超过内联框架的尺寸时，浏览器会自动添加滚动条，以便用户可以查看全部内容。
 
 ![image](img/pg106_1.jpg)
 
-每个 `<iframe>` 元素还可以可选包含一个 `name` 属性，为该框架指定唯一标识符。这允许超链接通过将框架名称分配给 `<a>` 元素中的 `target` 属性，将其 `href` 属性中指定的 URL 加载到内联框架中（而不是替换整个页面）。例如，超链接可以目标一个名为“topbox”的内联框架：`<a href="some.html" target="topbox">`。
+
+
+每个`<iframe>`元素还可以可选包含一个`name`属性，为该框架指定唯一标识符。这允许超链接通过将框架名称分配给`<a>`元素中的`target`属性，将其`href`属性中指定的 URL 加载到内联框架中（而不是替换整个页面）。例如，超链接可以目标一个名为“topbox”的内联框架：`<a href="some.html" target="topbox">`。
 
 通常，内联框架有助于在保持紧凑页面格式的同时提供补充内容。
 
-![image](img/1o.jpg)创建一个 HTML 文档
+![image](img/1o.jpg)
+
+创建一个 HTML 文档。
 
 ![image](img/htmlo.jpg)
 
-iframe.html
+`iframe.html`
 
-![image](img/2o.jpg)在 `body` 部分中，插入一个包含标题和描述性段落的 `article` 元素，并指定类名以用于定位样式设置
+![image](img/2o.jpg)
+
+在`body`部分中，插入一个包含标题和描述性段落的`article`元素，并指定类名以用于定位样式设置：
 
 ```html
 <article class="left220">
@@ -3423,7 +3651,9 @@ iframe.html
 </article>
 ```
 
-![image](img/3o.jpg)接下来，在 `body` 中，作为一个 `aside`，插入一个内联框架来加载一个包含相关文本和说明性照片的文档，并水平排列
+![image](img/3o.jpg)
+
+接下来，在`body`中，作为一个`aside`，插入一个内联框架来加载一个包含相关文本和说明性照片的文档，并水平排列：
 
 ```html
 <aside>
@@ -3433,11 +3663,13 @@ iframe.html
 
 ![image](img/htmlo.jpg)
 
-concept.html
+`concept.html`
 
 （外部资源）
 
-![image](img/4o.jpg)现在，添加一个样式表来调整 `article` 的大小并将其定位在内联框架的左侧
+![image](img/4o.jpg)
+
+现在，添加一个样式表来调整`article`的大小并将其定位在内联框架的左侧：
 
 ```html
 <style>
@@ -3445,15 +3677,19 @@ concept.html
 </style>
 ```
 
-![image](img/5o.jpg)将 HTML 文档与外部资源一起保存，然后在浏览器中打开它以查看文章和内联框架的内容
+![image](img/5o.jpg)
+
+将 HTML 文档与外部资源一起保存，然后在浏览器中打开它以查看文章和内联框架的内容。
 
 ![image](img/pg11_1.jpg)
 
-![image](img/6o.jpg)拖动滚动条浏览内容
+![image](img/6o.jpg)
+
+拖动滚动条浏览内容。
 
 ![image](img/forget.jpg)
 
-在 `<iframe> </iframe>` 标签之间可以提供备用消息，在禁用内联框架时显示。
+在`<iframe> </iframe>`标签之间可以提供备用消息，在禁用内联框架时显示。
 
 ![image](img/hot.jpg)
 
@@ -3461,40 +3697,39 @@ concept.html
 
 # 添加音频
 
-外部音频资源（如 MP3 文件可以使用 `<audio> </audio>` 标签嵌入到 HTML 文档中。
+外部音频资源（如 MP3 文件）可以使用`<audio> </audio>`标签嵌入到 HTML 文档中。
 
 ![image](img/pg12.jpg)
 
-`<audio>` 元素可以包含 `src` 属性来指定音频资源的 URL，并包含额外的属性来决定如何使用音频资源：
+`<audio>`元素可以包含`src`属性来指定音频资源的 URL，并包含额外的属性来决定如何使用音频资源：
 
 - `autoplay`：布尔属性，指定浏览器立即播放音频资源。
 - `loop`：布尔属性，指定浏览器重复播放音频资源。
 - `controls`：布尔属性，指定浏览器显示启动或停止的控件。
 - `preload`：接受“auto”或“none”值，建议浏览器加载音频资源以便准备播放。
 
-布尔属性（如 `autoplay`、`loop` 和 `controls` 属性）不需要赋值——仅存在元素中就足够让浏览器理解其用途。
+布尔属性（如`autoplay`、`loop`和`controls`属性）不需要赋值——仅存在元素中就足够让浏览器理解其用途。
 
 ![image](img/hot.jpg)
 
 布尔值只能是 True 或 False。默认情况下，除非赋值为 False，否则布尔属性均为 True。
 
-浏览器依赖内置的“编解码器”（**co**der-**dec**decoder）来解码音频资源以便播放。遗憾，并非所有浏览器都包含相同的音频解码器：
+浏览器依赖内置的“编解码器”（coder-decoder）来解码音频资源以便播放。遗憾，并非所有浏览器都包含相同的音频解码器：
 
 - **高级音频编码 (AAC)**：`mp4a.40.2`，Google Chrome、Firefox 和 Microsoft Edge 等现代浏览器支持音频。
 - **Ogg 音频**：`vorbis`，其他浏览器支持的 OGG 格式音频。
 
-这种不一致性导致音频资源需要编码两次以便在所有浏览器中播放。因此需要在 `<audio>` 元素嵌套两个 `<source>` 元素，而不是在 `<audio>` 标签的 `src` 属性中指定单个资源 URL。对于每种文件格式，`<source>` 元素可以通过 `src` 属性指定其资源 URL，并通过 `type` 属性指定其 MIME 类型。浏览器将仅加载支持的音频资源进行播放。
+这种不一致性导致音频资源需要编码两次以便在所有浏览器中播放。因此需要在`<audio>`元素嵌套两个`<source>`元素，而不是在`<audio>`标签的`src`属性中指定单个资源 URL。对于每种文件格式，`<source>`元素可以通过`src`属性指定其资源 URL，并通过`type`属性指定其 MIME 类型。浏览器将仅加载支持的音频资源进行播放。
 
-在`<audio> </audio>` 标签之间可以包含备用消息，在不支持音频播放时显示。
+在`<audio> </audio>`标签之间可以包含备用消息，在不支持音频播放时显示。
 
 ![image](img/htmlo.jpg)
 
-audio.html
+`audio.html`
 
+![image](img/2o.jpg)
 
-
-
-![image](img/2o.jpg)在 body 部分插入一个元素，用于嵌入 MP3 格式的音频资源并实现自动播放。
+在`body`部分插入一个元素，用于嵌入 MP3 格式的音频资源并实现自动播放：
 
 ```html
 <audio src="audio.mp3" autoplay >
@@ -3502,9 +3737,13 @@ audio.html
 </audio>
 ```
 
-![image](img/3o.jpg)保存 HTML 文档，然后在支持的浏览器中打开网页，即可听到自动播放的音频。
+![image](img/3o.jpg)
 
-![image](img/4o.jpg)接下来，将之前的两个属性替换为一个属性，以显示音频播放的用户控件。
+保存 HTML 文档，然后在支持的浏览器中打开网页，即可听到自动播放的音频。
+
+![image](img/4o.jpg)
+
+接下来，将之前的两个属性替换为一个属性，以显示音频播放的用户控件：
 
 ```html
 <audio controls>
@@ -3512,7 +3751,9 @@ audio.html
 </audio>
 ```
 
-![image](img/5o.jpg)现在，在 audio 元素中插入元素，为所有浏览器指定要嵌入的音频资源。
+![image](img/5o.jpg)
+
+现在，在`audio`元素中插入元素，为所有浏览器指定要嵌入的音频资源：
 
 ```html
 <source src="audio.mp3" type="audio/mpeg" >
@@ -3521,15 +3762,17 @@ audio.html
 
 ![image](img/mp3o.jpg)
 
-audio.mp3
+`audio.mp3`
 
 ![image](img/oggo.jpg)
 
-audio.ogg
+`audio.ogg`
 
 （外部资源）
 
-![image](img/6o.jpg)再次保存 HTML 文档，然后在任意浏览器中打开网页，使用控件收听播放。
+![image](img/6o.jpg)
+
+再次保存 HTML 文档，然后在任意浏览器中打开网页，使用控件收听播放。
 
 ![image](img/pg113_1.jpg)
 
@@ -3539,26 +3782,26 @@ audio.ogg
 
 ## 添加视频
 
-可以使用 `<video> </video>` 标签在 HTML 文档中嵌入 MP4 视频文件等外部视频资源。
+可以使用`<video> </video>`标签在 HTML 文档中嵌入 MP4 视频文件等外部视频资源。
 
 ![image](img/pg114_1.jpg)
 
-为了确定视频资源的使用方式，`<video>` 元素可以包含 `src`、`autoplay`、`loop`、`controls` 和 `preload` 属性，就像前面示例中的 `<audio>` 元素一样（参见此处）。此外，还可以通过 `width` 和 `height` 属性指定页面上显示视频区域的尺寸。
+为了确定视频资源的使用方式，`<video>`元素可以包含`src`、`autoplay`、`loop`、`controls`和`preload`属性，就像前面示例中的`<audio>`元素一样（参见此处）。此外，还可以通过`width`和`height`属性指定页面上显示视频区域的尺寸。
 
 有两种主要的视频压缩标准：
 
-- **高级视频编码（AVC）**——一种专利标准，也称为 H.264 或 MPEG-4（`.mp4` 文件）。
-- **WEBM 视频**——一种免版税的替代方案，用于替代专利的 H.264 和 MPEG-4 标准（`.webm` 文件）。
+- **高级视频编码（AVC）**——一种专利标准，也称为 H.264 或 MPEG-4（`.mp4`文件）。
+- **WEBM 视频**——一种免版税的替代方案，用于替代专利的 H.264 和 MPEG-4 标准（`.webm`文件）。
 
-视频资源可以编码为每种格式，以便在所有浏览器中播放，并通过嵌套在 `<video>` 元素内的 `<source>` 元素进行嵌入。对于每种文件格式，`<source>` 元素可以将其资源 URL 指定给 `src` 属性，并将每个视频文件的 MIME 类型指定给 `type` 属性。浏览器只会加载支持的视频资源进行播放。
+视频资源可以编码为每种格式，以便在所有浏览器中播放，并通过嵌套在`<video>`元素内的`<source>`元素进行嵌入。对于每种文件格式，`<source>`元素可以将其资源 URL 指定给`src`属性，并将每个视频文件的 MIME 类型指定给`type`属性。浏览器只会加载支持的视频资源进行播放。
 
-可以在 `<video>` 元素内嵌套一个 `<track>` 标签，以指定 Web 视频文本轨道（WebVTT）字幕文件的位置，并将其指定给 `src` 属性。该标签可以包含一个 `kind` 属性来描述轨道，以及一个 `srclang` 属性来描述语言。该标签还必须包含一个布尔值 `default` 属性，以使用指定的文件。
+可以在`<video>`元素内嵌套一个`<track>`标签，以指定 Web 视频文本轨道（WebVTT）字幕文件的位置，并将其指定给`src`属性。该标签可以包含一个`kind`属性来描述轨道，以及一个`srclang`属性来描述语言。该标签还必须包含一个布尔值`default`属性，以使用指定的文件。
 
 ![image](img/pg114_2.jpg)
 
 你可以在 [www.w3.org/TR/webvtt1](http://www.w3.org/TR/webvtt1) 在线了解更多关于 WebVTT 字幕格式的信息。
 
-字幕文件以 `WEBVTT` 开头。开始和结束时间提示以 HH:MM:SS.sss 格式添加在新行上，并用 `-->` 分隔。相关的字幕文本出现在每个时间提示下方的新行上，如下所示：
+字幕文件以`WEBVTT`开头。开始和结束时间提示以 HH:MM:SS.sss 格式添加在新行上，并用`-->`分隔。相关的字幕文本出现在每个时间提示下方的新行上，如下所示：
 
 ```text
 WEBVTT
@@ -3571,19 +3814,23 @@ WEBVTT
 
 ![image](img/vtto.jpg)
 
-video.vtt
+`video.vtt`
 
 ![image](img/snake.jpg)
 
 注意，毫秒之间用句点（英文句号）分隔，而不是冒号。
 
-![image](img/1o.jpg)创建一个 HTML 文档
+![image](img/1o.jpg)
+
+创建一个 HTML 文档。
 
 ![image](img/htmlo.jpg)
 
-video.html
+`video.html`
 
-![image](img/2o.jpg)在 body 部分插入一个元素，以显示视频播放的用户控件。
+![image](img/2o.jpg)
+
+在`body`部分插入一个元素，以显示视频播放的用户控件：
 
 ```html
 <video controls >
@@ -3592,7 +3839,9 @@ video.html
 </video>
 ```
 
-![image](img/3o.jpg)接下来，在 video 元素中插入元素，以嵌入视频资源并指定字幕文件。
+![image](img/3o.jpg)
+
+接下来，在`video`元素中插入元素，以嵌入视频资源并指定字幕文件：
 
 ```html
 <source src="video.mp4" type="video/mp4" >
@@ -3602,15 +3851,17 @@ video.html
 
 ![image](img/mp4o.jpg)
 
-video.mp4
+`video.mp4`
 
 ![image](img/webm.jpg)
 
-video.webm
+`video.webm`
 
 （外部资源）
 
-![image](img/4o.jpg)保存 HTML 文档，然后在任意浏览器中打开网页，使用控件观看视频播放。
+![image](img/4o.jpg)
+
+保存 HTML 文档，然后在任意浏览器中打开网页，使用控件观看视频播放。
 
 ![image](img/pg115_1.jpg)
 
@@ -3622,20 +3873,17 @@ video.webm
 
 ## 指示进度
 
-如果你不想提供浏览器标准的音频或视频播放控件，可以省略 `controls` 属性。嵌入的媒体对象具有 `play()` 和 `pause()` 方法，可以调用这些方法来控制播放。
+如果你不想提供浏览器标准的音频或视频播放控件，可以省略`controls`属性。嵌入的媒体对象具有`play()`和`pause()`方法，可以调用这些方法来控制播放。
 
-`<progress>` 元素显示一个完成进度的可视化指示器。`value` 属性决定进度的大小，并可以通过 `ontimeupdate` 事件动态更新。嵌入的媒体具有 `currentTime` 属性，用于存储自播放开始以来经过的时间，以及 `duration` 属性，用于存储总时间。这些可用于计算百分比：`currentTime / duration`。
+`<progress>`元素显示一个完成进度的可视化指示器。`value`属性决定进度的大小，并可以通过`ontimeupdate`事件动态更新。嵌入的媒体具有`currentTime`属性，用于存储自播放开始以来经过的时间，以及`duration`属性，用于存储总时间。这些可用于计算百分比：`currentTime / duration`。
 
-HTML 的 `<template></template>` 元素允许你包含在网页加载到浏览器时不会立即显示在页面上的内容。
-
-
-
+HTML 的`<template></template>`元素允许你包含在网页加载到浏览器时不会立即显示在页面上的内容。
 
 ## HTML 模板
 
-存储在 `<template>` 元素内部的内容可以使用 JavaScript 在稍后加载，以便在网页上显示该内容。当你有可能重复添加的内容时，这非常有用。
+存储在`<template>`元素内部的内容可以使用 JavaScript 在稍后加载，以便在网页上显示该内容。当你有可能重复添加的内容时，这非常有用。
 
-模板内容是一个 `DocumentFragment` 对象，脚本可以对其进行复制。复制后的节点可以作为现有内容的“子”元素添加。脚本还可以从内容中移除子元素。
+模板内容是一个`DocumentFragment`对象，脚本可以对其进行复制。复制后的节点可以作为现有内容的“子”元素添加。脚本还可以从内容中移除子元素。
 
 ### 创建 HTML 文档
 
@@ -3667,7 +3915,7 @@ onclick="removeStars()">清除</p>
 
 ![image](img/pg118_2.jpg)
 
-star.png 32px x 32px（灰色区域为透明）。
+`star.png` 32px x 32px（灰色区域为透明）。
 
 ### 现在，添加一个脚本函数来复制模板内容并在点击时将其追加到第一个段落
 
@@ -3704,17 +3952,17 @@ hotel.removeChild( hotel.lastChild )
 
 ![image](img/hot.jpg)
 
-在 `<template>` 标签引入 HTML 之前，脚本必须创建 HTML 子元素内容，但使用模板要方便得多。
+在`<template>`标签引入 HTML 之前，脚本必须创建 HTML 子元素内容，但使用模板要方便得多。
 
-## 插入插槽 (Slots)
+## 插入插槽（Slots）
 
-在上一个示例所示的 `<template>` 元素此处 只能追加模板元素内定义的内容。然而，通过在 `<template>` 元素中包含 HTML `<slot> </slot>` 元素，可以使模板更加灵活，每个模板实例的内容可以不同。
+在上一个示例所示的`<template>`元素此处只能追加模板元素内定义的内容。然而，通过在`<template>`元素中包含 HTML`<slot> </slot>`元素，可以使模板更加灵活，每个模板实例的内容可以不同。
 
 ![image](img/pg120_1.jpg)
 
-`<slot> </slot>` 标签可以选择包含默认文本，但起始 `<slot>` 标签必须包含一个 `name` 属性，用于将该插槽标识为模板内的占位符。
+`<slot> </slot>`标签可以选择包含默认文本，但起始`<slot>`标签必须包含一个`name`属性，用于将该插槽标识为模板内的占位符。
 
-`<slot>` 元素占位符通过在 HTML 元素中包含 `slot` 属性来填充内容，该属性指定与插槽匹配的 `name` 属性值。可以使用 JavaScript 将组合后的模板和插槽内容追加到网页上。
+`<slot>`元素占位符通过在 HTML 元素中包含`slot`属性来填充内容，该属性指定与插槽匹配的`name`属性值。可以使用 JavaScript 将组合后的模板和插槽内容追加到网页上。
 
 ### 创建 HTML 文档
 
@@ -3790,11 +4038,11 @@ shadow.appendChild( copy )
 
 ![image](img/hot.jpg)
 
-严格来说，这个示例创建了 Shadow DOM，通过 `shadowRoot` 属性访问 HTML 元素。
+严格来说，这个示例创建了 Shadow DOM，通过`shadowRoot`属性访问 HTML 元素。
 
 ![image](img/forget.jpg)
 
-`slot` 属性只能出现在这些 HTML 标签中：
+`slot`属性只能出现在这些 HTML 标签中：
 
 - `<article>`
 - `<aside>`
@@ -3805,6 +4053,9 @@ shadow.appendChild( copy )
 - `<header>`
 - `<h1>`
 - `<main>`
+
+
+
 - `<nav>`
 - `<p>`
 - `<section>`
@@ -3817,7 +4068,7 @@ shadow.appendChild( copy )
 
 ![image](img/pg122_1.jpg)
 
-模态对话框通常通过包含 `<button>` 元素来提供关闭对话框的方式`<button>` 和 `</button>` 标签之间的文本将作为按钮的标签。起始 `<button>` 标签可以包含 `onclick` 属性在点击按钮时调用脚本函数。或者，脚本可以动态地添加“事件监听器”来识别用户点击了按钮——创建一个“点击事件”。
+模态对话框通常通过包含`<button>`元素来提供关闭对话框的方式。`<button>`和`</button>`标签之间的文本将作为按钮的标签。起始`<button>`标签可以包含`onclick`属性，在点击按钮时调用脚本函数。或者，脚本可以动态地添加“事件监听器”来识别用户点击了按钮——创建一个“点击事件”。
 
 ### 创建 HTML 文档
 
@@ -3827,14 +4078,18 @@ shadow.appendChild( copy )
 
 `dialog.html`
 
-### 在 body 部分，添加一个按钮和一个空段落，它们都有唯一的 `id` 用于脚本处理
+### 在 body 部分添加一个按钮和一个空段落
+
+它们都有唯一的`id`，用于脚本处理。
 
 ```html
 <button id="show">显示对话框</button>
 <p id="info"></p>
 ```
 
-### 接下来，添加一个包含文本、图像和两个按钮的对话框，它们都有唯一的 `id` 用于脚本处理
+### 添加一个包含文本、图像和两个按钮的对话框
+
+它们都有唯一的`id`，用于脚本处理。
 
 ```html
 <dialog id="dlog">
@@ -3851,7 +4106,7 @@ height="64" width="64" alt="问号">
 
 `dialog-qmark.svg`
 
-### 现在，添加一个脚本为每个按钮添加事件监听器和事件处理函数
+### 为每个按钮添加事件监听器和事件处理函数
 
 ```html
 <script>
@@ -3878,9 +4133,9 @@ info.innerText = '对话框已确认' } )
 </script>
 ```
 
+![image](img/5o.jpg)
 
-
-![image](img/5o.jpg)保存 HTML 文档，然后在浏览器中打开并点击按钮以查看模态对话框
+保存 HTML 文档，然后在浏览器中打开并点击按钮以查看模态对话框。
 
 ![image](img/pg123_1.jpg)
 
@@ -3894,11 +4149,11 @@ info.innerText = '对话框已确认' } )
 
 ![image](img/snake.jpg)
 
-在 Firefox 中，你可能需要打开`about:config`并将`dom.dialog_element`设置为`enabled`才能看到模态对话框。
+在 Firefox 中，你可能需要打开`about:config`并将`dom.dialog_element`设置为`enabled`，才能看到模态对话框。
 
 ## 绘制画布
 
-`<canvas>` `</canvas>`标签在页面上创建一个位图画布区域，JavaScript 可以在其中绘制形状、文本和图像。默认情况下，画布区域宽 300 像素，高 150 像素，但可以通过`<canvas>`元素的`width`和`height`属性指定其他尺寸。可选地，可以在`<canvas>` `</canvas>`标签之间包含后备文本，这些文本仅在不支持画布区域的浏览器中显示。
+`<canvas>`和`</canvas>`标签在页面上创建一个位图画布区域，JavaScript 可以在其中绘制形状、文本和图像。默认情况下，画布区域宽 300 像素，高 150 像素，但可以通过`<canvas>`元素的`width`和`height`属性指定其他尺寸。可选地，可以在`<canvas>`和`</canvas>`标签之间包含后备文本，这些文本仅在不支持画布区域的浏览器中显示。
 
 ![image](img/pg124_1.jpg)
 
@@ -3928,9 +4183,11 @@ const ctx = document.getElementById( ‘canvas’ ).getContext( ‘2d’ )
 
 ![images](img/hot.jpg)
 
-你可以在 HTML Living Standard 规范中在线了解更多关于画布元素的属性和方法，网址为**[html.spec.whatwg.org/multipage/canvas.html](http://html.spec.whatwg.org/multipage/canvas.html)**。
+你可以在 HTML Living Standard 规范中在线了解更多关于画布元素的属性和方法，网址为[html.spec.whatwg.org/multipage/canvas.html](http://html.spec.whatwg.org/multipage/canvas.html)。
 
-![image](img/1o.jpg)创建一个包含画布元素的 HTML 文档
+![image](img/1o.jpg)
+
+创建一个包含画布元素的 HTML 文档。
 
 ```html
 <canvas id=”canvas” width=”500” height=”150”>
@@ -3939,9 +4196,11 @@ const ctx = document.getElementById( ‘canvas’ ).getContext( ‘2d’ )
 
 ![images](img/htmlo.jpg)
 
-canavas.html
+`canavas.html`
 
-![image](img/2o.jpg)添加一个包含自调用函数的脚本，该函数首先初始化一个上下文对象并设置两个属性
+![image](img/2o.jpg)
+
+添加一个包含自调用函数的脚本，该函数首先初始化一个上下文对象并设置两个属性：
 
 ```html
 <script>
@@ -3954,7 +4213,9 @@ ctx.font = ‘5em Fantasy’
 </script>
 ```
 
-![image](img/3o.jpg)接下来，插入语句以填充和描边整个画布
+![image](img/3o.jpg)
+
+接下来，插入语句以填充和描边整个画布：
 
 ```javascript
 ctx.fillStyle = ‘Bisque’
@@ -3963,7 +4224,9 @@ ctx.strokeStyle = ‘Red’
 ctx.strokeRect( 0, 0, 500, 150 )
 ```
 
-![image](img/4o.jpg)现在，插入语句以填充和描边一些文本
+![image](img/4o.jpg)
+
+现在，插入语句以填充和描边一些文本：
 
 ```javascript
 ctx.fillStyle = ‘Orange’
@@ -3976,31 +4239,31 @@ ctx.strokeText( ‘HTML Canvas’, 30, 100 )
 
 这些参数指定矩形左上角的 X、Y 坐标，后跟宽度和高度尺寸。这些参数指定文本以及文本左上角的 X、Y 坐标。
 
-![image](img/5o.jpg)保存 HTML 文档，然后在浏览器中打开，查看绘制在画布上的填充和描边
+![image](img/5o.jpg)
+
+保存 HTML 文档，然后在浏览器中打开，查看绘制在画布上的填充和描边。
 
 ![images](img/pg125_2.jpg)
 
 ## 总结
 
 - `<img>`标签在网页上放置图像，最好始终包含`src`、`width`、`height`和`alt`属性。
-- `<map>` `</map>`标签包围`<area>`元素，用于定义图像映射的区域，并且必须包含`name`属性。
+- `<map>`和`</map>`标签包围`<area>`元素，用于定义图像映射的区域，并且必须包含`name`属性。
 - `<figure>`和`<figcaption>`标签可用于嵌入带标题的引用。
 - `<picture>`元素可以包含针对不同屏幕尺寸的`<source>`标签。
-- `<object>` `</object>`标签可以嵌入外部资源。
+- `<object>`和`</object>`标签可以嵌入外部资源。
 - `<iframe>`元素可用于嵌入框架。
-- `<audio>` `</audio>`标签用于媒体播放，`<video>` `</video>`标签用于视频内容。
+- `<audio>`和`</audio>`标签用于媒体播放，`<video>`和`</video>`标签用于视频内容。
 - `<track>`元素可以提供字幕或说明。
 - `<progress>`元素可以提供视觉指示器。
 - `<template>`元素可以指定一组元素。
-- `<slot>` `</slot>`标签在每个实例中有所不同。
-- `<dialog>` `</dialog>`标签创建模态对话框。
-- `<button>` `</button>`标签创建可点击的按钮。
+- `<slot>`和`</slot>`标签在每个实例中有所不同。
+- `<dialog>`和`</dialog>`标签创建模态对话框。
+- `<button>`和`</button>`标签创建可点击的按钮。
 
+![image](img/9bl.jpg)
 
-
-
-
-![image](img/9bl.jpg)现在，在浏览器的地址栏中输入 `localhost`，然后按 `Return` 键看到默认的索引网页出现。
+现在，在浏览器的地址栏中输入`localhost`，然后按`Return`键看到默认的索引网页出现。
 
 ![image](img/pg129_4.jpg)
 
@@ -4010,27 +4273,37 @@ ctx.strokeText( ‘HTML Canvas’, 30, 100 )
 
 ![image](img/hot.jpg)
 
-默认页面是一个名为 `index.html` 的文件，位于你安装 Abyss 目录下名为 `htdocs` 的文件夹中。该文件夹就是你在开发期间放置网页文件的地方。
+默认页面是一个名为`index.html`的文件，位于你安装 Abyss 目录下名为`htdocs`的文件夹中。该文件夹就是你在开发期间放置网页文件的地方。
 
 ## 安装 Python
 
-Web 服务器可以运行服务端脚本，以响应来自 Web 浏览器的请求。最流行的服务器端脚本语言包括 `PHP`、`ASP.NET`、`Ruby`、`Perl` 和 `Python`。
+Web 服务器可以运行服务端脚本，以响应来自 Web 浏览器的请求。最流行的服务器端脚本语言包括`PHP`、`ASP.NET`、`Ruby`、`Perl`和`Python`。
 
 ![image](img/pg130_1.jpg)
 
-为了在你 PC 上安装的 Abyss Web 服务器上启用服务器端脚本功能，你必须先安装服务器端脚本语言的解释器——例如 `Python`。
+为了在你 PC 上安装的 Abyss Web 服务器上启用服务器端脚本功能，你必须先安装服务器端脚本语言的解释器——例如`Python`。
 
-![image](img/1bl.jpg)启动你的浏览器并访问 [activestate.com](http://www.activestate.com)
+![image](img/1bl.jpg)
 
-![image](img/2bl.jpg)登录（或创建账户并登录），选择 `Featured Projects & Languages` 并下载适用于你系统的最新 Python 构建安装程序。
+启动你的浏览器并访问[activestate.com](http://www.activestate.com)。
+
+![image](img/2bl.jpg)
+
+登录（或创建账户并登录），选择`Featured Projects & Languages`并下载适用于你系统的最新 Python 构建安装程序。
 
 ![image](img/pg130_2.jpg)
 
-![image](img/3bl.jpg)运行安装程序，然后点击 `Next` 开始设置。
+![image](img/3bl.jpg)
 
-![image](img/4bl.jpg)点击 `Next` 接受许可协议。
+运行安装程序，然后点击`Next`开始设置。
 
-![image](img/5bl.jpg)点击 `Next` 接受建议的安装位置和所有选项。
+![image](img/4bl.jpg)
+
+点击`Next`接受许可协议。
+
+![image](img/5bl.jpg)
+
+点击`Next`接受建议的安装位置和所有选项。
 
 ![image](img/pg130_3.jpg)
 
@@ -4040,21 +4313,29 @@ Python 是免费提供的，且在 ActiveState 创建账户不需要费用。
 
 ![image](img/forget.jpg)
 
-建议的安装文件夹名称可能包含版本号，但你可以将其更改为 `C:\Python\`。
+建议的安装文件夹名称可能包含版本号，但你可以将其更改为`C:\Python\`。
 
-![image](img/6bl.jpg)现在，点击下一个对话框上的 `Install` 按钮开始安装过程——稍等一下，这需要一些时间。
+![image](img/6bl.jpg)
+
+现在，点击下一个对话框上的`Install`按钮开始安装过程——稍等一下，这需要一些时间。
 
 ![image](img/pg131_1.jpg)
 
-![image](img/7bl.jpg)安装完成后，点击 `Finish` 按钮关闭安装程序。
+![image](img/7bl.jpg)
+
+安装完成后，点击`Finish`按钮关闭安装程序。
 
 ![image](img/pg131_2.jpg)
 
-![image](img/8bl.jpg)现在，打开命令提示符或终端窗口，然后输入 `python` 并按 `Return` 打开 Python 控制台——你可以在这里与解释器交互。
+![image](img/8bl.jpg)
 
-![image](img/9bl.jpg)在 Python 控制台提示符处，精确输入此行 Python 代码并按 `Return`，查看系统上解释器 `python.exe` 的位置。
+现在，打开命令提示符或终端窗口，然后输入`python`并按`Return`打开 Python 控制台——你可以在这里与解释器交互。
 
-```
+![image](img/9bl.jpg)
+
+在 Python 控制台提示符处，精确输入此行 Python 代码并按`Return`，查看系统上解释器`python.exe`的位置。
+
+```python
 import sys ; print( sys.executable )
 ```
 
@@ -4074,57 +4355,85 @@ import sys ; print( sys.executable )
 
 ## 配置 Abyss
 
-为了让 Abyss Web 服务器执行 Python 服务端脚本，它必须经过配置以识别你系统上 Python 解释器 `python.exe` 的位置，并识别扩展名为 `.py` 的文件为 Python 脚本。
+为了让 Abyss Web 服务器执行 Python 服务端脚本，它必须经过配置以识别你系统上 Python 解释器`python.exe`的位置，并识别扩展名为`.py`的文件为 Python 脚本。
 
 ![image](img/pg132_1.jpg)
 
-![image](img/1bl.jpg)在 Abyss Web Server 运行时，启动浏览器，在地址栏中输入 `localhost:9999` 然后按 `Return` 打开 Abyss Web Server 控制台。
+![image](img/1bl.jpg)
+
+在 Abyss Web Server 运行时，启动浏览器，在地址栏中输入`localhost:9999`，然后按`Return`打开 Abyss Web Server 控制台。
 
 ![image](img/pg132_2.jpg)
 
-![image](img/2bl.jpg)输入你的凭据，然后点击 `Configure` 按钮。
+![image](img/2bl.jpg)
 
-![image](img/3bl.jpg)现在，点击 `Scripting Parameters` 图标。
+输入你的凭据，然后点击`Configure`按钮。
+
+![image](img/3bl.jpg)
+
+现在，点击`Scripting Parameters`图标。
 
 ![image](img/pg132_3.jpg)
 
-![image](img/4bl.jpg)现在会出现“Scripting Parameters”页面——勾选 `Enable Scripts Execution` 复选框。
+![image](img/4bl.jpg)
 
-![image](img/5bl.jpg)现在，点击 Interpreters 表格中的 `Add` 按钮。
+现在会出现“Scripting Parameters”页面——勾选`Enable Scripts Execution`复选框。
+
+![image](img/5bl.jpg)
+
+现在，点击 Interpreters 表格中的`Add`按钮。
 
 ![image](img/hot.jpg)
 
-域名 `localhost` 是 IP（互联网协议）地址 `127.0.0.1` 的别名——所以你可以输入 `127.0.0.1:9999` 来打开 Abyss Web Server 控制台。
+域名`localhost`是 IP（互联网协议）地址`127.0.0.1`的别名——所以你可以输入`127.0.0.1:9999`来打开 Abyss Web Server 控制台。
 
-![image](img/6bl.jpg)现在会出现“Interpreters”页面——将 Interface 字段设置为 `CGI/ISAPI`。
+![image](img/6bl.jpg)
 
-![image](img/7bl.jpg)现在点击 Interpreter 字段中的 `Browse` 按钮，进入 Python 文件夹并选择 `python.exe` 文件。
+现在会出现“Interpreters”页面——将 Interface 字段设置为`CGI/ISAPI`。
 
-![image](img/8bl.jpg)勾选 `Use the associated extensions to automatically update the Script Paths` 复选框。
+![image](img/7bl.jpg)
 
-![image](img/9bl.jpg)现在，点击 Associated Extensions 字段中的 `Add` 按钮，并在 Extension 字段中输入 `py`。
+现在点击 Interpreter 字段中的`Browse`按钮，进入 Python 文件夹并选择`python.exe`文件。
 
-![image](img/pg133_1.jpg)点击 `OK` 按钮，再次点击 `OK`，然后点击 `Restart` 按钮应用配置。
+![image](img/8bl.jpg)
 
-![image](img/pg33_2)CGI（通用网关接口）和 ISAPI（互联网服务器接口）允许数据在服务器和浏览器之间传输。
+勾选`Use the associated extensions to automatically update the Script Paths`复选框。
+
+![image](img/9bl.jpg)
+
+现在，点击 Associated Extensions 字段中的`Add`按钮，并在 Extension 字段中输入`py`。
+
+![image](img/pg133_1.jpg)
+
+点击`OK`按钮，再次点击`OK`，然后点击`Restart`按钮应用配置。
+
+![image](img/pg33_2)
+
+CGI（通用网关接口）和 ISAPI（互联网服务器接口）允许数据在服务器和浏览器之间传输。
 
 ## Echo 脚本
 
-为 Abyss Web 服务器配置了 `.py` 扩展后，现在可以创建一个 Python 脚本来回显请求。
+为 Abyss Web 服务器配置了`.py`扩展后，现在可以创建一个 Python 脚本来回显请求。
 
-![image](img/hot.jpg)打开一个纯文本编辑器（如记事本），然后在文件开头输入：
+![image](img/hot.jpg)
+
+打开一个纯文本编辑器（如记事本），然后在文件开头输入：
 
 ```python
 import cgi
 ```
 
-![image](img/2bl.jpg)使用特殊模块提供的函数将所有键赋值给变量：
+![image](img/2bl.jpg)
 
-```
-pythonform = cgi.FieldStorage()
+使用特殊模块提供的函数将所有键赋值给变量：
+
+```python
+form = cgi.FieldStorage()
 ```
 
-![image](img/3bl.jpg)使用内置的 `print()` 函数写入发送浏览器的头部。注意下方代码。Python 使用缩进来分组语句，而不是大括号，因此这三行必须相同的缩进：
+![image](img/3bl.jpg)
+
+使用内置的`print()`函数写入发送浏览器的头部。注意下方代码。Python 使用缩进来分组语句，而不是大括号，因此这三行必须相同的缩进：
 
 ```python
 for i in form.keys():
@@ -4133,14 +4442,18 @@ for i in form.keys():
     print( '<tr>' + key + '<td>' + val + '</tr>' )
 ```
 
-![image](img/4bl.jpg)头部必须与内容分开，因此下方添加此行：
+![image](img/4bl.jpg)
+
+头部必须与内容分开，因此下方添加此行：
 
 ```python
 print('Content-Type:text/html; charset=utf-8')
 print('\r\n\r\n')
 ```
 
-![image](img/5bl.jpg)开始带有声明、标题和样式表编写 HTML 文档：
+![image](img/5bl.jpg)
+
+开始带有声明、标题和样式表编写 HTML 文档：
 
 ```python
 print('<!DOCTYPE HTML>
@@ -4149,34 +4462,42 @@ print('<!DOCTYPE HTML>
 <style>tr,th,td{border:2px solid Gray}</style>')
 ```
 
-![image](img/6bl.jpg)接下来，开始创建一个带有表头单元格的表格：
+![image](img/6bl.jpg)
+
+接下来，开始创建一个带有表头单元格的表格：
+
+
 
 ```python
 print('<table style="width:500px"><tr><th>Key</th><th>Value</th></tr>')
 ```
 
-![image](img/7bl.jpg)最后，添加这些行来完成表格、显示服务器图标并完成 HTML 文档：
+![image](img/7bl.jpg)
+
+最后，添加这些行来完成表格、显示服务器图标并完成 HTML 文档：
 
 ```python
 print('</table><img src="pwrabyss.gif">
 </html>')
 ```
 
-![image](img/8bl.jpg)确保你的脚本看起来如上方截图所示。
+![image](img/8bl.jpg)
 
-![image](img/9bl.jpg)将文件保存为 `echo.py` 到系统上 Abyss Web 服务器的 `htdocs` 文件夹中——在 Windows 上这通常是 `C:\Abyss Web Server\htdocs`。
+确保你的脚本看起来如上方截图所示。
 
-![image](img/10bl.jpg)当 Abyss Web Server 运行时，打开浏览器，在地址栏中输入 `localhost/echo.py` 并按 `Return`，看到脚本以一个空表格做出响应。
+![image](img/9bl.jpg)
 
+将文件保存为`echo.py`到系统上 Abyss Web 服务器的`htdocs`文件夹中——在 Windows 上这通常是`C:\Abyss Web Server\htdocs`。
 
+![image](img/10bl.jpg)
 
-
+当 Abyss Web Server 运行时，打开浏览器，在地址栏中输入`localhost/echo.py`并按`Return`，看到脚本以一个空表格做出响应。
 
 # 网页表单提交与服务器交互
 
-## echo.py 脚本
+## `echo.py`脚本
 
-`echo.py` 脚本在第 7 章中用于演示向 Abyss Web 服务器提交 HTML 表单。
+`echo.py`脚本在第 7 章中用于演示向 Abyss Web 服务器提交 HTML 表单。
 
 ### 测试环境
 
@@ -4184,32 +4505,40 @@ print('</table><img src="pwrabyss.gif">
 
 ![图片](img/pg136_1.jpg)
 
-可以通过在 Python 脚本的 URL 后附加“查询字符串”来向服务器发送数据。查询字符串以 `?` 问号分隔符开头，后跟一个 `key=value` 对——例如，要发送单个键值对，可使用 `http://localhost/echo.py?Forename=Mike`。
+可以通过在 Python 脚本的 URL 后附加“查询字符串”来向服务器发送数据。查询字符串以`?`问号分隔符开头，后跟一个`key=value`对——例如，要发送单个键值对，可使用`http://localhost/echo.py?Forename=Mike`。
 
-可以向服务器发送多个 `key=value` 对，每个键值对在查询字符串中用 `&` 符号分隔，例如 `http://localhost/echo.py?Forename=Mike&Surname=McGrath`。
+可以向服务器发送多个`key=value`对，每个键值对在查询字符串中用`&`符号分隔，例如`http://localhost/echo.py?Forename=Mike&Surname=McGrath`。
 
-数据可以通过直接在浏览器的地址栏中输入 URL 和查询字符串来发送，也可以通过指向该 URL 和查询字符串的超链接发送，或者通过将 `location` 设置为该 URL 和查询字符串的 JavaScript 来发送。
+数据可以通过直接在浏览器的地址栏中输入 URL 和查询字符串来发送，也可以通过指向该 URL 和查询字符串的超链接发送，或者通过将`location`设置为该 URL 和查询字符串的 JavaScript 来发送。
 
-![图片](img/1bl.jpg)创建一个 HTML 文档
+![图片](img/1bl.jpg)
+
+创建一个 HTML 文档。
 
 ![图片](img/htmlbl.jpg)
 
-query-string.html
+`query-string.html`
 
-![图片](img/2bl.jpg)接下来，在 body 部分添加一个超链接，用于向 Python 脚本发送数据
+![图片](img/2bl.jpg)
+
+接下来，在 body 部分添加一个超链接，用于向 Python 脚本发送数据：
 
 ```html
 <a href="http://localhost/echo.py?CSS=Style">
 Styling Web Pages</a>
 ```
 
-![图片](img/3bl.jpg)现在，在 body 部分添加一个按钮
+![图片](img/3bl.jpg)
+
+现在，在 body 部分添加一个按钮：
 
 ```html
 <button id="sender">Scripting Web Pages</button>
 ```
 
-![图片](img/4bl.jpg)最后，添加一个脚本，当用户点击按钮时向 Python 脚本发送数据
+![图片](img/4bl.jpg)
+
+最后，添加一个脚本，当用户点击按钮时向 Python 脚本发送数据：
 
 ```javascript
 ( function ( ) {
@@ -4219,7 +4548,9 @@ location='http://localhost/echo.py?JavaScript=Function' } )
 } ) ( )
 ```
 
-![图片](img/5bl.jpg)将 HTML 文档保存到服务器的 `htdocs` 文件夹中，然后在浏览器中打开它，并使用浏览器的地址栏、超链接或按钮发送数据
+![图片](img/5bl.jpg)
+
+将 HTML 文档保存到服务器的`htdocs`文件夹中，然后在浏览器中打开它，并使用浏览器的地址栏、超链接或按钮发送数据。
 
 ![图片](img/pg137_1.jpg)
 
@@ -4229,24 +4560,24 @@ location='http://localhost/echo.py?JavaScript=Function' } )
 
 ![图片](img/hot.jpg)
 
-Python 脚本按预期运行。向查询字符串中添加更多 `key=value` 对（每对用 `&` 分隔），可以看到响应中表格的行数增加。
+Python 脚本按预期运行。向查询字符串中添加更多`key=value`对（每对用`&`分隔），可以看到响应中表格的行数增加。
 
 ## 总结
 
 - 免费的 Abyss Web Server X1 可以安装在您自己的 PC 上用于 Web 开发。
 - Abyss 可以手动启动，也可以设置为在后台自动持续运行。
-- 当 Abyss 运行时，它提供一个名为 `localhost` 的域名，该域名是 IP 地址 `127.0.0.1` 的别名。
+- 当 Abyss 运行时，它提供一个名为`localhost`的域名，该域名是 IP 地址`127.0.0.1`的别名。
 - Web 服务器可以调用解释器来执行服务器端脚本，以响应来自 Web 浏览器的请求。
 - 最流行的服务器端脚本语言包括 PHP、ASP.NET、Ruby、Perl 和 Python。
 - 安装 Python 后，您可以通过 Python 控制台直接与其解释器（`python.exe`）交互。
-- 必须配置 Abyss，使其知道 Python 解释器（`python.exe`）的位置，并识别扩展名为 `.py` 的文件为 Python 脚本。
-- 需要 URL `localhost:9999` 和用户凭据才能打开 Abyss Web Server 控制台。
+- 必须配置 Abyss，使其知道 Python 解释器（`python.exe`）的位置，并识别扩展名为`.py`的文件为 Python 脚本。
+- 需要 URL`localhost:9999`和用户凭据才能打开 Abyss Web Server 控制台。
 - CGI/ISAPI 接口允许数据在 Web 服务器和脚本解释器之间传输。
-- 系统中 Abyss Web Server 的位置包含一个 `htdocs` 文件夹，该文件夹被 `localhost` 域名识别。
-- HTML 文档、服务器端脚本和其他资源文件应放置在 Abyss 的 `htdocs` 文件夹中。
+- 系统中 Abyss Web Server 的位置包含一个`htdocs`文件夹，该文件夹被`localhost`域名识别。
+- HTML 文档、服务器端脚本和其他资源文件应放置在 Abyss 的`htdocs`文件夹中。
 - 可以通过在请求的 URL 后附加查询字符串来向 Web 服务器发送数据。
-- 查询字符串以 `?` 问号分隔符开头。
-- 查询字符串包含一个或多个 `key=value` 对，每对用 `&` 符号分隔。
+- 查询字符串以`?`问号分隔符开头。
+- 查询字符串包含一个或多个`key=value`对，每对用`&`符号分隔。
 - Python 服务器端脚本可以在 Web 服务器响应中回显从浏览器请求发送给它的数据。
 
 | 7 生成输入表单 | ![图片](img/pg11_1.jpg) |
@@ -4281,30 +4612,32 @@ Python 脚本按预期运行。向查询字符串中添加更多 `key=value` 对
 
 ## 提交文本
 
-网页表单由 HTML 元素构建，这些元素向 Web 服务器发送数据。每个元素都包含一个 name 属性和一个 value 属性，因此分配给这些属性的数据可以作为 `key=value` 对进行处理。例如，如果某个元素的 name 属性被赋值为 "Brand"，value 属性被赋值为 "Ford"，那么 `key=value` 对表示的数据就是 `Brand=Ford`。
+网页表单由 HTML 元素构建，这些元素向 Web 服务器发送数据。每个元素都包含一个`name`属性和一个`value`属性，因此分配给这些属性的数据可以作为`key=value`对进行处理。例如，如果某个元素的`name`属性被赋值为"Brand"，`value`属性被赋值为"Ford"，那么`key=value`对表示的数据就是`Brand=Ford`。
 
 ![图片](img/pg140_1.jpg)
 
-表单元素包含在 `<form>` `</form>` 标签之间。每个开头的 `<form>` 标签应包含一个 method 属性，指定用于提交表单的 HTTP 方法，以及一个 action 属性，指定用于处理提交数据的服务器端脚本的 URL。
+表单元素包含在`<form>`和`</form>`标签之间。每个开头的`<form>`标签应包含一个`method`属性，指定用于提交表单的 HTTP 方法，以及一个`action`属性，指定用于处理提交数据的服务器端脚本的 URL。
 
-method 属性可以赋值为 `"GET"` 或 `"POST"`。通过首选的 GET 方法提交时，数据会附加到 URL 上；而通过 POST 方法提交时，数据会以不同的方式编码，并且可以在 GET 方法失败时使用。
+`method`属性可以赋值为`"GET"`或`"POST"`。通过首选的 GET 方法提交时，数据会附加到 URL 上；而通过 POST 方法提交时，数据会以不同的方式编码，并且可以在 GET 方法失败时使用。
 
-通常，HTML 表单会有一个“提交”按钮，用户点击该按钮即可发送数据进行处理。这是通过将 `<input>` 标签的 type 属性赋值为 `"submit"` 来创建的。此外，该标签还可以包含 name 和 value 属性，以提交分配给它们的 `name=value` 对数据。
+通常，HTML 表单会有一个“提交”按钮，用户点击该按钮即可发送数据进行处理。这是通过将`<input>`标签的`type`属性赋值为`"submit"`来创建的。此外，该标签还可以包含`name`和`value`属性，以提交分配给它们的`name=value`对数据。
 
-HTML 表单可以提供文本框，用户可以在其中输入数据以供提交。这是通过将 `<input>` 标签的 type 属性赋值为 `"text"`，并将其 name 属性赋值为一个名称来创建的。文本框中的数据作为与该文本框名称关联的值，以 `key=value` 对的形式发送。可选地，`<input>` 标签可以包含一个 value 属性来指定默认值。用于输入密码的文本框是通过将 `<input>` 标签的 type 属性赋值为 `"password"` 来创建的。它的功能与其他文本框类似，但不会以可读文本的形式显示其内容。文本和密码 `<input>` 元素都可以选择包含以下其他属性：
+HTML 表单可以提供文本框，用户可以在其中输入数据以供提交。这是通过将`<input>`标签的`type`属性赋值为`"text"`，并将其`name`属性赋值为一个名称来创建的。文本框中的数据作为与该文本框名称关联的值，以`key=value`对的形式发送。可选地，`<input>`标签可以包含一个`value`属性来指定默认值。用于输入密码的文本框是通过将`<input>`标签的`type`属性赋值为`"password"`来创建的。它的功能与其他文本框类似，但不会以可读文本的形式显示其内容。文本和密码`<input>`元素都可以选择包含以下其他属性：
 
-- `size` – 文本框的宽度，以平均字符宽度为单位。
-- `minlength` 和 `maxlength` – 允许的字符数。
-- `min` 和 `max` – 允许的数值范围。
-- `placeholder` – 向用户提供数据输入提示。
-- `readonly` – 文本框中的默认值无法更改。
-- `disabled` – 文本框变灰，且不会被提交。
+- `size`–文本框的宽度，以平均字符宽度为单位。
+- `minlength`和`maxlength`–允许的字符数。
+- `min`和`max`–允许的数值范围。
+- `placeholder`–向用户提供数据输入提示。
+- `readonly`–文本框中的默认值无法更改。
+- `disabled`–文本框变灰，且不会被提交。
 
 ![图片](img/forget.jpg)
 
 通过 GET 方法发送的数据会作为查询字符串附加到请求中，因此在 Web 服务器的响应中，可能会在浏览器的地址栏中可见。对于敏感数据，您可以通过 POST 方法提交以防止这种情况。
 
-![图片](img/1v.jpg)创建一个包含表单的 HTML 文档，使用 GET 方法向服务器端脚本发送数据
+![图片](img/1v.jpg)
+
+创建一个包含表单的 HTML 文档，使用 GET 方法向服务器端脚本发送数据：
 
 ```html
 <form method="GET" action="http://localhost/echo.py" >
@@ -4314,9 +4647,11 @@ HTML 表单可以提供文本框，用户可以在其中输入数据以供提交
 
 ![图片](img/htmlv.jpg)
 
-textbox.html
+`textbox.html`
 
-![图片](img/2v.jpg)现在，在表单元素中插入文本输入框和一个提交按钮——按钮上会显示其 value 值
+![图片](img/2v.jpg)
+
+现在，在表单元素中插入文本输入框和一个提交按钮——按钮上会显示其 value 值：
 
 ```html
 <dl>
@@ -4331,11 +4666,9 @@ size="5" maxlength="5">
 <input type="submit" name="Form" value="发送">
 ```
 
+![image](img/3v.jpg)
 
-
-
-
-![image](img/3v.jpg) 将 HTML 文档保存到 Abyss 的 htdocs 文件夹中，然后在浏览器中打开并提交一些数据。
+将 HTML 文档保存到 Abyss 的`htdocs`文件夹中，然后在浏览器中打开并提交一些数据。
 
 ![image](img/pg141_1.jpg)
 
@@ -4349,31 +4682,31 @@ size="5" maxlength="5">
 
 ## 输入类型
 
-HTML 表单的 `<input>` 标签可以通过包含 `required` 关键字来强制要求填写。它还可以通过 `type` 属性分配的值来控制用户允许提交的内容。下表中列出的许多输入类型，如果用户输入了不允许的值，会阻止表单提交并发出错误提示。有些还提供了特殊控件，使用户能够轻松选择允许的值。
+HTML 表单的`<input>`标签可以通过包含`required`关键字来强制要求填写。它还可以通过`type`属性分配的值来控制用户允许提交的内容。下表中列出的许多输入类型，如果用户输入了不允许的值，会阻止表单提交并发出错误提示。有些还提供了特殊控件，使用户能够轻松选择允许的值。
 
-![image](img/pg142_1.jpg)
+![图片](img/pg142_1.jpg)
 
 | 类型 | 允许的输入 |
-|------|------------|
-| text | 文本字符串 |
-| password | 文本字符串（由浏览器隐藏） |
-| url | 有效的 URL 协议和域名地址 |
-| email | 有效的电子邮件地址 |
-| date | 日期，格式为 mm/dd/yyyy |
-| month | 月份和年份 |
-| week | 周数和年份 |
-| time | 时间，格式为 HH:MM |
-| datetime-local | 日期和时间，格式为 mm-dd-yy HH:MM |
-| number | 数值整数 |
-| range | 数值整数（滑块） |
-| color | 颜色，格式为 #RRGGBB 十六进制 |
-| file | 文件路径地址（浏览） |
+| --- | --- |
+| `text` | 文本字符串 |
+| `password` | 文本字符串（由浏览器隐藏） |
+| `url` | 有效的 URL 协议和域名地址 |
+| `email` | 有效的电子邮件地址 |
+| `date` | 日期，格式为 mm/dd/yyyy |
+| `month` | 月份和年份 |
+| `week` | 周数和年份 |
+| `time` | 时间，格式为 HH:MM |
+| `datetime-local` | 日期和时间，格式为 mm-dd-yy HH:MM |
+| `number` | 数值整数 |
+| `range` | 数值整数（滑块） |
+| `color` | 颜色，格式为 #RRGGBB 十六进制 |
+| `file` | 文件路径地址（浏览） |
 
 ### 创建一个包含带提交按钮的表单的 HTML 文档
 
 ![image](img/1v.jpg)
 
-```
+```html
 <form method="GET" action="http://localhost/echo.py" >
 <!-- 此处放置输入元素。 -->
 <p><input type="submit" value="提交表单"></p>
@@ -4388,7 +4721,7 @@ HTML 表单的 `<input>` 标签可以通过包含 `required` 关键字来强制�
 
 ![image](img/2v.jpg)
 
-```
+```html
 颜色：<input type="color" name="color">
 范围：
 <input type="range" name="range" min="1" max="10">
@@ -4397,7 +4730,7 @@ URL：
 <input type="url" name="url" size="54" required >
 ```
 
-### 将 HTML 文档保存到 Abyss 的 htdocs 文件夹中，然后尝试提交表单，观察其失败
+### 将 HTML 文档保存到 Abyss 的`htdocs`文件夹中，然后尝试提交表单，观察其失败
 
 ![image](img/3v.jpg)
 
@@ -4415,15 +4748,15 @@ URL：
 
 ![image](img/hot.jpg)
 
-请注意，特殊字符在查询字符串中被转换为百分比 Unicode 值。这里的 **#** 符号被转换为其 Unicode 值 **%23**。
+请注意，特殊字符在查询字符串中被转换为百分比 Unicode 值。这里的`#`符号被转换为其 Unicode 值`%23`。
 
 ## 文本区域
 
-HTML 表单可以提供一个多行文本字段，用户可以在其中输入数据以提交给 Web 服务器进行处理。这些字段由 `<textarea>` `</textarea>` 标签创建，这些标签可以包含默认文本内容。
+HTML 表单可以提供一个多行文本字段，用户可以在其中输入数据以提交给 Web 服务器进行处理。这些字段由`<textarea>`和`</textarea>`标签创建，这些标签可以包含默认文本内容。
 
 ![image](img/pg140_1.jpg)
 
-`<textarea>` 标签应包含一个 `name` 属性，该属性将在提交时与元素的内容关联为键值对。此外，该标签必须包含 `rows` 属性，用于指定可见文本行数，以及 `cols` 属性，用于指定字段宽度（以平均字符宽度为单位）。可选地，它还可以包含 `readonly` 属性，以防止用户编辑其内容。
+`<textarea>`标签应包含一个`name`属性，该属性将在提交时与元素的内容关联为键值对。此外，该标签必须包含`rows`属性，用于指定可见文本行数，以及`cols`属性，用于指定字段宽度（以平均字符宽度为单位）。可选地，它还可以包含`readonly`属性，以防止用户编辑其内容。
 
 在提交大量文本时，必须注意 GET 方法的一些限制。这因浏览器而异，但可能只允许 URL 附加大约 200 个字符。POST 方法提供了更大的容量，因为文本作为“表单数据”与 HTTP 标头一起发送，而不仅仅是附加到 URL：
 
@@ -4431,7 +4764,7 @@ HTML 表单可以提供一个多行文本字段，用户可以在其中输入数
 
 ![image](img/1v.jpg)
 
-```
+```html
 <form method="POST" action="http://localhost/echo.py" >
 <!-- 此处放置文本区域元素。 -->
 <p><input type="submit" value="提交表单"></p>
@@ -4446,23 +4779,25 @@ HTML 表单可以提供一个多行文本字段，用户可以在其中输入数
 
 ![image](img/2v.jpg)
 
-```
+```html
 <textarea name="未来网络"
 rows="8" cols="70">
 </textarea>
 ```
 
-### 将 HTML 文档保存到 Abyss 的 htdocs 文件夹中，然后在浏览器中打开网页，输入一些数据并提交表单
+### 将 HTML 文档保存到 Abyss 的`htdocs`文件夹中，然后在浏览器中打开网页，输入一些数据并提交表单
 
 ![image](img/3v.jpg)
 
 ![image](img/forget.jpg)
 
-与文本 **<input>** 元素不同，**<textarea>** 元素没有 **value** 属性——因为其内容被视为其值。
+与文本`<input>`元素不同，`<textarea>`元素没有`value`属性——因为其内容被视为其值。
 
 ![image](img/pg145_1.jpg)
 
-![image](img/4v.jpg)文本不会附加到 URL，因此请检查响应标头，查看它已作为“表单数据”发送
+![image](img/4v.jpg)
+
+文本不会附加到 URL，因此请检查响应标头，查看它已作为“表单数据”发送。
 
 ![image](img/pg145_2.jpg)
 
@@ -4472,7 +4807,7 @@ rows="8" cols="70">
 
 ![image](img/hot.jpg)
 
-您可以使用 Google Chrome 浏览器中的开发者工具检查响应标头。按 **F12**，然后选择 **网络** 选项卡，并在左侧窗格中选择 `echo.py` 项。
+您可以使用 Google Chrome 浏览器中的开发者工具检查响应标头。按`F12`，然后选择**网络**选项卡，并在左侧窗格中选择`echo.py`项。
 
 ## 复选框
 
@@ -4480,20 +4815,22 @@ HTML 表单可以提供一个可视化的复选框“开/关”开关，用户�
 
 ![image](img/pg146_1.jpg)
 
-复选框是通过将 `type` 属性赋值为“checkbox”来创建的 `<input>` 标签。该标签还必须包含 `name` 属性和 `value` 属性，以指定键值对的值。可选地，该标签还可以包含布尔类型的 `checked` 属性，以将开关的初始状态设置为“开”——这样复选框中将自动出现一个勾选标记。复选框的名称可以是各自唯一的，或者多个复选框可以共享一个共同的名称，以允许用户为同一命名属性选择多个值。在这种情况下，选中的值由服务器以逗号分隔的列表形式返回，格式为 key=value,value,value。
+复选框是通过将`type`属性赋值为“checkbox”来创建的`<input>`标签。该标签还必须包含`name`属性和`value`属性，以指定键值对的值。可选地，该标签还可以包含布尔类型的`checked`属性，以将开关的初始状态设置为“开”——这样复选框中将自动出现一个勾选标记。复选框的名称可以是各自唯一的，或者多个复选框可以共享一个共同的名称，以允许用户为同一命名属性选择多个值。在这种情况下，选中的值由服务器以逗号分隔的列表形式返回，格式为`key=value,value,value`。
 
-“单选按钮”与复选框类似，但它是通过将 `type` 属性赋值为“radio”来创建的 `<input>` 标签。与复选框不同，共享相同名称的单选按钮是互斥的，因此当选择一个单选按钮时，该组中的所有其他单选按钮将自动关闭。
+“单选按钮”与复选框类似，但它是通过将`type`属性赋值为“radio”来创建的`<input>`标签。与复选框不同，共享相同名称的单选按钮是互斥的，因此当选择一个单选按钮时，该组中的所有其他单选按钮将自动关闭。
 
-多个复选框和单选按钮可以通过将其 `<input>` 元素包裹在 `<fieldset>` `</fieldset>` 标签中进行视觉分组。这些标签还可以包含 `<legend>` `</legend>` 标签来声明一个共同的组名：
+多个复选框和单选按钮可以通过将其`<input>`元素包裹在`<fieldset>`和`</fieldset>`标签中进行视觉分组。这些标签还可以包含`<legend>`和`</legend>`标签来声明一个共同的组名：
 
 ### 创建一个包含带提交按钮的表单元素的 HTML 文档
 
 ![image](img/1v.jpg)
 
-```
-<form method="GET" action="http://localhost/echo.py" >
-<!-- 此处放置复选框和单选按钮。 -->
-<p><input type="submit"></p>
+
+
+```html
+<form method="GET" action="http://localhost/echo.py">
+  <!-- 此处放置复选框和单选按钮。 -->
+  <p><input type="submit"></p>
 </form>
 ```
 
@@ -4505,7 +4842,7 @@ HTML 表单可以提供一个可视化的复选框“开/关”开关，用户�
 
 ![image](img/2v.jpg)
 
-```
+```html
 <p>发送详细信息
 <input type="checkbox" name="发送" value="详细信息">
 发送价格
@@ -4515,16 +4852,16 @@ HTML 表单可以提供一个可视化的复选框“开/关”开关，用户�
 
 ![image](img/hot.jpg)
 
-**checked** 属性不需要赋值——它的存在将开关设置为“开”，它的缺失则使开关保持“关”状态。
+`checked` 属性不需要赋值——它的存在将开关设置为“开”，它的缺失则使开关保持“关”状态。
 
 ### 接下来，在表单元素中插入一个带有图例的字段集
 
 ![image](img/3v.jpg)
 
-```
+```html
 <fieldset>
-<legend>HTML 是一种什么类型的语言？</legend>
-<!-- 此处放置单选按钮。 -->
+  <legend>HTML 是一种什么类型的语言？</legend>
+  <!-- 此处放置单选按钮。 -->
 </fieldset>
 ```
 
@@ -4532,7 +4869,7 @@ HTML 表单可以提供一个可视化的复选框“开/关”开关，用户�
 
 ![image](img/4v.jpg)
 
-```
+```html
 脚本语言 <input type="radio"
 name="定义" value="脚本语言"> <br>
 标记语言 <input type="radio"
@@ -4544,10 +4881,6 @@ name="定义" value="编程语言" checked>
 ### 将 HTML 文档保存到 Abyss 的 htdocs 文件夹中，然后打开网页，勾选两个复选框，选择正确的单选按钮答案，并提交表单
 
 ![image](img/5v.jpg)
-
-
-
-
 
 ![image](img/pg147_1.jpg)
 
@@ -4567,61 +4900,75 @@ HTML 表单可以提供隐藏元素，这些元素不会创建可见控件，但
 
 隐藏表单数据还可以用于执行计算并在 `<output> </output>` 元素中动态显示结果。`<output>` 标签必须包含一个 `id` 属性和一个用于脚本引用的 `for` 属性。`for` 属性可以以空格分隔列表的形式指定多个元素标识。这些可以被赋值给 `<form>` 标签的 `oninput` 属性，以执行计算，其结果将出现在 `<output> </output>` 元素中——但不会提交到服务器：
 
-![image](img/1v.jpg)创建一个包含图像的 HTML 文档，显示销售价格详情的物品
+![image](img/1v.jpg)
+
+创建一个包含图像的 HTML 文档，显示销售价格详情的物品：
 
 ```html
-<img src=”hidden-sale.png” width=”200” height=”120” alt=”Sale">>
+<img src="hidden-sale.png" width="200" height="120" alt="Sale">
 ```
 
 ![image](img/htmlv.jpg)
 
-hidden.html
+`hidden.html`
 
-![image](img/2v.jpg)接下来，插入一个表单元素
+![image](img/2v.jpg)
+
+接下来，插入一个表单元素：
 
 ```html
-<form method=”GET” action=”http://localhost/echo.py” >
+<form method="GET" action="http://localhost/echo.py">
   <!-- 此处放置隐藏数据、输入和输出 -->
-  <input type=”submit” name=”Offer” value=”Buy Teddy Bears">>
+  <input type="submit" name="Offer" value="Buy Teddy Bears">
 </form>
 ```
 
-![image](img/3v.jpg)在表单元素中，插入一个用于用户输入的可见输入元素
+![image](img/3v.jpg)
+
+在表单元素中，插入一个用于用户输入的可见输入元素：
 
 ```html
-Qty (60 Available) <input type=”number” id=”qty” name=”Quantity” min=”1” max=”60">>
+Qty (60 Available) <input type="number" id="qty" name="Quantity" min="1" max="60">
 ```
 
-![image](img/4v.jpg)现在，在表单元素中插入一个用于隐藏数据的不可见元素和一个用于显示计算结果元素
+![image](img/4v.jpg)
+
+现在，在表单元素中插入一个用于隐藏数据的不可见元素和一个用于显示计算结果的元素：
 
 ```html
-<input type=”hidden” id=”price” name=”Unit Price” value=”24.99">>
-<output name=”sum” for=”qty price”></output> <br>
+<input type="hidden" id="price" name="Unit Price" value="24.99">
+<output name="sum" for="qty price"></output> <br>
 ```
 
 ![image](img/hot.jpg)
 
 隐藏数据元素可以用于在跨网站时维护用户数据——在第一页输入的用户名可以在任何其他页面被召回。
 
-![image](img/5v.jpg)然后，在 `<form>` 标签中插入另一个属性
+![image](img/5v.jpg)
+
+然后，在 `<form>` 标签中插入另一个属性：
 
 ```html
-oninput=”sum.value=multiply( qty, price )”
+oninput="sum.value=multiply(qty, price)"
 ```
 
-![image](img/6v.jpg)添加一个脚本来执行计算
+![image](img/6v.jpg)
+
+添加一个脚本来执行计算：
 
 ```javascript
 <script>
-function multiply(q,p ) {
-  let result=parseFloat(q.value ) * parseFloat(p.value )
-  if ( isNaN( result ) || result < 1 ) return ‘ ‘
-  else return ‘Total: $’ + result.toFixed( 2 )
+function multiply(q, p) {
+  let result = parseFloat(q.value) * parseFloat(p.value)
+  if (isNaN(result) || result < 1) return ' '
+  else return 'Total: $' + result.toFixed(2)
 }
 </script>
 ```
 
-![image](img/7v.jpg)将 HTML 文档保存在 Abyss 的 htdocs 文件夹中，然后在浏览器中打开网页，输入数据并提交表单
+![image](img/7v.jpg)
+
+将 HTML 文档保存在 Abyss 的 htdocs 文件夹中，然后在浏览器中打开网页，输入数据并提交表单。
 
 ![image](img/pg149_1.jpg)
 
@@ -4643,26 +4990,32 @@ HTML 表单可以提供文件选择功能，它会调用操作系统的“选择
 
 如果需要将选的文件上传到 Web 服务器，`<form>` 标签必须包含一个 `enctype` 属性，指定编码类型为“multipart/form-data”。此外，它的 `method` 属性必须指定 `POST` 方法——因为表单数据无法使用 `GET` 方法附加到 URL 中：
 
-![image](img/1v.jpg)创建一个 HTML 文档，包含一个带有提交按钮的表单元素，通过 POST 方法发送表单数据并指定表单数据的编码类型
+![image](img/1v.jpg)
+
+创建一个 HTML 文档，包含一个带有提交按钮的表单元素，通过 `POST` 方法发送表单数据并指定表单数据的编码类型：
 
 ```html
-<form method=”POST” action=”http://localhost/upload.py” enctype=”multipart/form-data” >
+<form method="POST" action="http://localhost/upload.py" enctype="multipart/form-data">
   <!-- 此处放置文件输入元素 -->
-  <input type=”submit">>
+  <input type="submit">
 </form>
 ```
 
 ![image](img/htmlv.jpg)
 
-upload.html
+`upload.html`
 
-![image](img/2v.jpg)在表单元素中，插入一个文件元素和一个换行符
+![image](img/2v.jpg)
+
+在表单元素中，插入一个文件元素和一个换行符：
 
 ```html
-<input type=”file” name=”Upload” size=”70” > <br>
+<input type="file" name="Upload" size="70"> <br>
 ```
 
-![image](img/3v.jpg)将 HTML 文档保存在 Abyss htdocs 文件夹中，然后在浏览器中打开网页，选择文件并提交表单
+![image](img/3v.jpg)
+
+将 HTML 文档保存在 Abyss htdocs 文件夹中，然后在浏览器中打开网页，选择文件并提交表单。
 
 ![image](img/4v.jpg)
 
@@ -4677,50 +5030,53 @@ HTML 表单可以提供用于脚本目的按钮。当用户点击按钮时，会
 此外，通过为 `<input>` 标签的 `type` 属性指定 `reset` 值，可以将任何 HTML 表单恢复初始状态：
 
 ```html
-<form method=”GET” action=”http://localhost/echo.py” >
+<form method="GET" action="http://localhost/echo.py">
   <!-- 此处放置 fieldset -->
-  <input type=”reset” value=”Reset Form">>
-  <input type=”button” value=”Choose Me” id=”btn">>
-  <input type=”submit” value=”Submit Form">>
+  <input type="reset" value="Reset Form">
+  <input type="button" value="Choose Me" id="btn">
+  <input type="submit" value="Submit Form">
 </form>
 ```
 
 ![image](img/htmlv.jpg)
 
-button.html
+`button.html`
 
-![image](img/2v.jpg)在表单元素中，插入一个包含图例和复选框组的 fieldset
+![image](img/2v.jpg)
+
+在表单元素中，插入一个包含图例和复选框组的 `fieldset`：
 
 ```html
 <fieldset>
   <legend>Pizza Toppings</legend>
-  <input id=”pepperoni” type=”checkbox” name=”Toppings” value=”Pepperoni">>Pepperoni
-  <input id=”mushroom” type=”checkbox” name=”Toppings” value=”Mushroom">>Mushroom |
-  <input id=”bbqsauce” type=”checkbox” name=”Toppings” value=”BBQ Sauce">>BBQ Sauce
+  <input id="pepperoni" type="checkbox" name="Toppings" value="Pepperoni">Pepperoni
+  <input id="mushroom" type="checkbox" name="Toppings" value="Mushroom">Mushroom |
+  <input id="bbqsauce" type="checkbox" name="Toppings" value="BBQ Sauce">BBQ Sauce
 </fieldset>
 ```
 
-![image](img/3v.jpg)添加一个为按钮关联行为的脚本
+![image](img/3v.jpg)
+
+添加一个为按钮关联行为的脚本：
 
 ```javascript
 <script>
-(function ( ) {
-  const pep = document.getElementById( ‘pepperoni ‘ )
-  const btn = document.getElementById( ‘btn ‘ )
-  btn.addEventListener( ‘click’ , function ( ) {
+(function () {
+  const pep = document.getElementById('pepperoni')
+  const btn = document.getElementById('btn')
+  btn.addEventListener('click', function () {
     pep.checked = true
-  } )
-} ) ( )
+  })
+})()
 </script>
 ```
 
-![image](img/4v.jpg)将 HTML 文档保存在 htdocs 文件夹中，然后在浏览器中打开网页，并点击按钮勾选一个框
+![image](img/4v.jpg)
 
-
-
-
+将 HTML 文档保存在 htdocs 文件夹中，然后在浏览器中打开网页，并点击按钮勾选一个框。
 
 ![image](img/pg153_2.jpg)
+
 ![image](img/forget.jpg)
 
 在 HTML 元素中，仅存在布尔属性 `checked` 即可勾选框，但在脚本中，需要为框的 `checked` 属性赋值 `true` 值才能勾选。
@@ -4733,130 +5089,154 @@ HTML 表单可以使用图像按钮来提交表单，而不是普通的提交按
 
 此外，还可以通过脚本绑定行为将普通的 `<img>` 标签作为图像按钮。当行为是提交表单时，脚本函数可以很有用地包含验证逻辑——例如，确保用户输入的电子邮件地址符合预期格式：
 
-![image](img/1v.jpg) 创建一个 HTML 文档，其中包含一个带有文本输入字段的表单元素，这两个元素都有用于脚本编写的 id
+![image](img/1v.jpg)
+
+创建一个 HTML 文档，其中包含一个带有文本输入字段的表单元素，这两个元素都有用于脚本编写的 `id`：
 
 ```html
-<form id=”my-form” method=”GET” action=”http://localhost/echo.py” >
-Please Supply Your Email Address:
-<input id=”adr” name=“Address” type=“text” size=”45” <br>
-<!-- Image Buttons to go here. -->
+<form id="my-form" method="GET" action="http://localhost/echo.py">
+  Please Supply Your Email Address:
+  <input id="adr" name="Address" type="text" size="45"> <br>
+  <!-- Image Buttons to go here. -->
 </form>
 ```
 
 ![image](img/htmlv.jpg)
-ibutton.html
 
-![image](img/2v.jpg) 接下来在表单元素中插入一个简单提交表单的图像按钮
+`ibutton.html`
+
+![image](img/2v.jpg)
+
+接下来在表单元素中插入一个简单提交表单的图像按钮：
 
 ```html
-<input type=”image” src=”ibutton.png” alt=”Submit Button” title=”Click to submit form”>
+<input type="image" src="ibutton.png" alt="Submit Button" title="Click to submit form">
 ```
 
-![image](img/3v.jpg) 现在在表单元素中插入一个执行验证后提交表单的图像按钮
+![image](img/3v.jpg)
+
+现在在表单元素中插入一个执行验证后提交表单的图像按钮：
 
 ```html
-<img id=”btn” src=”ibutton.png” alt=”Submit Button” title=”Click to submit with JavaScript validation”>
+<img id="btn" src="ibutton.png" alt="Submit Button" title="Click to submit with JavaScript validation">
 ```
 
 ![image](img/forget.jpg)
 
-注意，执行验证的图像按钮被赋予了一个 id，以便脚本可以为其绑定行为。
+注意，执行验证的图像按钮被赋予了一个 `id`，以便脚本可以为其绑定行为。
 
 ![image](img/pg154_2.jpg)
-![image](img/4v.jpg) 添加一个为图像按钮绑定行为的脚本
+
+![image](img/4v.jpg)
+
+添加一个为图像按钮绑定行为的脚本：
 
 ```javascript
 <script>
-( function ( ) {
-    const btn = document.getElementById( ‘btn’ )
-    btn .addEventListener( ‘click’ , function ( ) {
-        const myForm = document.getElementById( ‘myForm’ )
-        const pattern = /^([a-zA-Z0-9_.-])+@([a-zA-Z0-9_.-])+\.([a-zA-Z])+([a-zA-Z])+/
-        let adr = document.getElementById( ‘adr’ ).value
-        if( !pattern.test(adr ) ) alert( ‘Invalid Email Address’ )
-        else myForm.submit( )
-    } )
-} ) ( )
+(function () {
+  const btn = document.getElementById('btn')
+  btn.addEventListener('click', function () {
+    const myForm = document.getElementById('myForm')
+    const pattern = /^([a-zA-Z0-9_.-])+@([a-zA-Z0-9_.-])+\.([a-zA-Z])+([a-zA-Z])+/
+    let adr = document.getElementById('adr').value
+    if (!pattern.test(adr)) alert('Invalid Email Address')
+    else myForm.submit()
+  })
+})()
 </script>
 ```
 
-![image](img/5v.jpg) 将 HTML 文档保存到 Abyss 的 htdocs 文件夹中，然后在浏览器中打开它，输入不完整的电子邮件地址并使用每个按钮提交表单
+![image](img/5v.jpg)
+
+将 HTML 文档保存到 Abyss 的 htdocs 文件夹中，然后在浏览器中打开它，输入不完整的电子邮件地址并使用每个按钮提交表单。
 
 ![image](img/pg155_1.jpg)
+
 ![image](img/pg155_2.jpg)
-![image](img/6v.jpg) 当使用带有脚本行为的按钮验证失败时，修正电子邮件地址然后再次点击验证按钮以成功提交表单
+
+![image](img/6v.jpg)
+
+当使用带有脚本行为的按钮验证失败时，修正电子邮件地址然后再次点击验证按钮以成功提交表单。
 
 ![image](img/pg155_3.jpg)
+
 ![image](img/snake.jpg)
 
 此示例中的脚本会将输入文本与正则表达式匹配，该模式描述了任何有效电子邮件地址的格式。模式必须单行出现——正如此处列出的所示。
 
-![image](img/hot.jpg) 使用无脚本的图像按钮提交表单，以查看 Web 服务器响应中的坐标。
+![image](img/hot.jpg)
+
+使用无脚本的图像按钮提交表单，以查看 Web 服务器响应中的坐标。
 
 ## 添加 Logo
 
-HTML 可以使用 `<button> </button>` 标签创建显示小“logo”图像的按钮。这些标签可以包含一个 <img>` 元素来指定 logo 图像的 URL 以及显示在按钮上的文本。
+HTML 可以使用 `<button> </button>` 标签创建显示小“logo”图像的按钮。这些标签可以包含一个 `<img>` 元素来指定 logo 图像的 URL 以及显示在按钮上的文本。
 
 ![image](img/pg156_1.jpg)
 
 每个 `<button>` 标签应包含一个 `type` 属性，以指定按钮是简单的脚本“按钮”类型、“提交”表单类型还是“重置”表单类型。脚本可以在 `<button>` 标签中包含 `onclick` 属性，以指定按钮被点击时调用的函数，或直接指定要执行的脚本片段：
 
-![image](img/1v.jpg) 创建一个 HTML 文档，其中包含一个带有图例（legend）和文本输入字段的 fieldset
+![image](img/1v.jpg)
+
+创建一个 HTML 文档，其中包含一个带有图例（legend）和文本输入字段的 `fieldset`：
 
 ```html
-<form method=”GET” action=”http://localhost/echo.py”>
+<form method="GET" action="http://localhost/echo.py">
   <fieldset>
     <legend>Favorite Color</legend>
-    <input type=”text” name=”Color”>
+    <input type="text" name="Color">
     <!-- Logo Buttons to go here. -->
   </fieldset>
 </form>
 ```
 
 ![image](img/htmlv.jpg)
-logo.html
 
-![image](img/2v.jpg) 在 fieldset 中插入一个脚本 logo 按钮，指定在该按钮被点击时执行的脚本片段
+`logo.html`
+
+![image](img/2v.jpg)
+
+在 `fieldset` 中插入一个脚本 logo 按钮，指定在该按钮被点击时执行的脚本片段：
 
 ```html
-<button type=”button” onclick=”alert(‘...’)">>
+<button type="button" onclick="alert('...')">
 ```
 
-![image](img/3v.jpg) 现在在表单元素内部插入一个图像元素和显示在按钮上的文本
+![image](img/3v.jpg)
+
+现在在表单元素内部插入一个图像元素和显示在按钮上的文本：
 
 ```html
-<button type=”submit”>
-  <img src="..." >
+<button type="submit">
+  <img src="...">
 </button>
 ```
 
-![image](img/4v.jpg) 最后，添加一个按钮元素来重置表单
+![image](img/4v.jpg)
+
+最后，添加一个按钮元素来重置表单：
 
 ```html
-<button type=”reset”>
+<button type="reset">
 ```
 
+![image](img/4v.jpg)
+
+将 HTML 文档保存到 Abyss 的 htdocs 文件夹中，然后在浏览器中打开它。
+
+![image](img/5v.jpg)
+
+打开下拉列表并提交表单，查看默认选项值被提交。
 
 
 
-
-![image](img/4v.jpg)将 HTML 文档保存到 Abyss 的 htdocs 文件夹中，然后在浏览器中打开它。
-
-![image](img/5v.jpg)打开下拉列表并提交表单，查看默认选项值被提交。
-
-![image](img/pg159_1.jpg)
-
-![image](img/hot.jpg)
-
-始终包含 `selected` 属性以自动选择每个列表中的一个选项 – 以提供默认选择。
+始终包含`selected`属性以自动选择每个列表中的一个选项 – 以提供默认选择。
 
 ## Datalist 选项 (Datal Options)
 
-可以使用 `<datalist> </datalist>` 元素封装一组预定义的 `<option>` 值，为文本 `<input>` 提供简单的“自动完成”功能。用户可以选择选项中的任何一个，也可以直接在输入字段中输入文本。为了将 `<input>` 字段与列表关联，`<datalist>` 标签必须包含 `id` 属性以指定列表名称。然后必须在`<input>` 标签的 `list` 属性中指定相同的名称以创建关联。`<input>` 标签还必须包含 `name` 属性，以便像往常一样发送到服务器。
+可以使用`<datalist> </datalist>`元素封装一组预定义的`<option>`值，为文本`<input>`提供简单的“自动完成”功能。用户可以选择选项中的任何一个，也可以直接在输入字段中输入文本。为了将`<input>`字段与列表关联，`<datalist>`标签必须包含`id`属性以指定列表名称。然后必须在`<input>`标签的`list`属性中指定相同的名称以创建关联。`<input>`标签还必须包含`name`属性，以便像往常一样发送到服务器。
 
-![image](img/pg160_1.jpg)
-
-![image](img/1v.jpg)创建一个包含提交按钮的表单元素的 HTML 文档。
+创建一个包含提交按钮的表单元素的 HTML 文档。
 
 ```html
 <form method="GET" action="http://localhost/echo.py">
@@ -4865,11 +5245,7 @@ logo.html
 </form>
 ```
 
-![image](img/htmlv.jpg)
-
-datalist.html
-
-![image](img/2v.jpg)接下来，插入一个带有指定 `id` 名称的预定义选项数据列表。
+接下来，插入一个带有指定`id`名称的预定义选项数据列表。
 
 ```html
 <datalist id="browsers">
@@ -4882,7 +5258,7 @@ datalist.html
 </datalist>
 ```
 
-![image](img/3v.jpg)现在，插入一个包含文本的标签和一个与上述数据列表关联的输入字段。
+现在，插入一个包含文本的标签和一个与上述数据列表关联的输入字段。
 
 ```html
 <label>
@@ -4891,37 +5267,27 @@ datalist.html
 </label>
 ```
 
-![image](img/4v.jpg)将 HTML 文档保存到 Abyss 的 htdocs 文件夹中，然后在浏览器中打开网页。
-
-![image](img/forget.jpg)
+将 HTML 文档保存到 Abyss 的`htdocs`文件夹中，然后在浏览器中打开网页。
 
 提交到服务器的键值值对是指定的列表名称以及从选项中选择或用户直接输入的输入。
 
-![image](img/5v.jpg)选择输入字段，查看预定义选项在下拉列表中出现。
+选择输入字段，查看预定义选项在下拉列表中出现。
 
-![image](img/pg161_1.jpg)
+从下拉列表中选择任何选项，或在输入字段中输入您自己的文本创建一个值。
 
-![image](img/6v.jpg)从下拉列表中选择任何选项，或在输入字段中输入您自己的文本创建一个值。
-
-![image](img/7v.jpg)提交表单以将输入字段名称和您选择的值发送到服务器。
-
-![image](img/pg161_2.jpg)
-
-![image](img/hot.jpg)
+提交表单以将输入字段名称和您选择的值发送到服务器。
 
 您可能需要双击输入字段以覆盖浏览器自带的自动完成建议。
 
 ## 标签控件 (Label Controls)
 
-与 HTML 表单控件关联的文本可以封装在 `<label> </label>` 标签之间。起始 `<label>` 标签可以包含 `for` 属性，以指定分配给控件 `id` 属性的值以建立关联。
+与 HTML 表单控件关联的文本可以封装在`<label> </label>`标签之间。起始`<label>`标签可以包含`for`属性，以指定分配给控件`id`属性的值以建立关联。
 
-![image](img/pg162_1.jpg)
+或者，`<label>`元素可以简单地封装文本和控件元素来实现关联。这允许将样式应用于整个标签 – 包括文本和控件。这对于区分与特定文本关联的控件通常有用。
 
-或者，`<label>` 元素可以简单地封装文本和控件元素来实现关联。这允许将样式应用于整个标签 – 包括文本和控件。这对于区分与特定文本关联的控件通常有用。
+此外，每个表单控件元素可以包含一个`tabindex`属性，以将其在文档中的制表顺序指定为 0 到 32,767 之间的唯一值。使用`tab`键，用户可以从最低的`tabindex`值开始导航文档，并向后续更高的值进行：
 
-此外，每个表单控件元素可以包含一个 `tabindex` 属性，以将其在文档中的制表顺序指定为 0 到 32,767 之间的唯一值。使用 tab 键，用户可以从最低的 `tabindex` 值开始导航文档，并向后续更高的值进行：
-
-![image](img/1v.jpg)创建一个包含带有图例（legend）的字段集（fieldset）的表单元素的 HTML 文档。
+创建一个包含带有图例（`legend`）的字段集（`fieldset`）的表单元素的 HTML 文档。
 
 ```html
 <form method="GET" action="http://localhost/echo.py">
@@ -4932,11 +5298,7 @@ datalist.html
 </form>
 ```
 
-![image](img/htmlv.jpg)
-
-label.html
-
-![image](img/2v.jpg)现在，在字段集中，插入每个包含文本的标签和一个带有指定制表顺序的复选框。
+现在，在字段集中，插入每个包含文本的标签和一个带有指定制表顺序的复选框。
 
 ```html
 <label>Hammer
@@ -4956,7 +5318,7 @@ label.html
 </label>
 ```
 
-![image](img/3v.jpg)接下来，插入一个带有图片的提交按钮 –
+接下来，插入一个带有图片的提交按钮 –
 
 ```html
 <button type="submit" tabindex="1">
@@ -4964,15 +5326,11 @@ label.html
 </button>
 ```
 
-![image](img/hot.jpg)
+表单“控件”可以是任何`<input>`, `<button>`或`<textarea>`。
 
-表单“控件”可以是任何 `<input>`, `<button>` 或 `<textarea>`。
+将 HTML 文档保存到 Abyss `htdocs`文件夹中，然后在浏览器中打开网页。
 
-![image](img/4v.jpg)将 HTML 文档保存到 Abyss htdocs 文件夹中，然后在浏览器中打开网页。
-
-![image](img/pg163_1.jpg)
-
-![image](img/5v.jpg)编辑 HTML 文档以添加样式
+编辑 HTML 文档以添加样式
 
 ```css
 <style>
@@ -4983,49 +5341,30 @@ label.html
 </style>
 ```
 
-![image](img/6v.jpg)为每个标签添加类
+为每个标签添加类
 
-![image](img/7v.jpg)使用 tab 键在控件间移动，提交表单。
-
-![image](img/pg163_2.jpg)
+使用`tab`键在控件间移动，提交表单。
 
 ## 总结 (Summary)
 
 - HTML 表单以键值对的形式提交数据。
-- 所有表单控件元素都封装在 `<form> </form>` 标签之间，标签必须包含 `action` 属性以指定脚本 URL，以及 `method` 属性以指定提交方法。
-- 每个 `<input>` 标签的 `type` 属性指定其组件类型，例如“text”、“password”、“checkbox”、“radio”等。
-- `<input>` 标签可以包含 `name` 和 `value` 属性以指定用于提交的数据。
-- `<input>` 标签可以通过包含 `required` 关键字来强制其完成，但许多浏览器在用户输入不允许的值时阻止提交。
-- 多行文本字段由 `<textarea> </textarea>` 标签创建，它需要 `rows` 和 `cols` 属性来指定其大小。
-- 单选按钮和复选框在被选中时才会提交它们的 `name` 和 `value` 属性数据。
+- 所有表单控件元素都封装在`<form> </form>`标签之间，标签必须包含`action`属性以指定脚本 URL，以及`method`属性以指定提交方法。
+- 每个`<input>`标签的`type`属性指定其组件类型，例如“text”、“password”、“checkbox”、“radio”等。
+- `<input>`标签可以包含`name`和`value`属性以指定用于提交的数据。
+- `<input>`标签可以通过包含`required`关键字来强制其完成，但许多浏览器在用户输入不允许的值时阻止提交。
+- 多行文本字段由`<textarea> </textarea>`标签创建，它需要`rows`和`cols`属性来指定其大小。
+- 单选按钮和复选框在被选中时才会提交它们的`name`和`value`属性数据。
 - 表单可以包含隐藏输入元素，允许将静态或脚本的数据提交到服务器。
-- 当表单用于上传文件时，`<form>` 标签必须包含 `enctype` 属性指定编码为“multipart/form-data”。
-- 表单可以通过普通的提交 `<input>` 元素、图像 `<input>` 元素或 `<button>` 元素进行提交。
-- 可以通过在 `<button> </button>` 标签之间封装 `<img>` 元素为按钮添加标志图片。
-- 选项列表通过在 `<select> </select>` 标签之间封装多个 `<option>` 元素创建。
-- 选项列表可以封装在 `<optgroup> </optgroup>` 标签之间，该标签可以通过 `label` 属性指定选项组名称。
-- `<input>` 标签可以包含 `list` 属性以与 `<datalist>` 元素的 `id` 关联，从而提供预定义的选项。
-
-
-
-
-
-## 应用规则
-## 选择类型
-## 选择类
-## 选择标识
-## 选择关系元素
-## 选择属性
-# 权重权重
-## 绘制颜色
-## 设置背景
-## 总结
+- 当表单用于上传文件时，`<form>`标签必须包含`enctype`属性指定编码为“multipart/form-data”。
+- 表单可以通过普通的提交`<input>`元素、图像`<input>`元素或`<button>`元素进行提交。
+- 可以通过在`<button> </button>`标签之间封装`<img>`元素为按钮添加标志图片。
+- 选项列表通过在`<select> </select>`标签之间封装多个`<option>`元素创建。
+- 选项列表可以封装在`<optgroup> </optgroup>`标签之间，该标签可以通过`label`属性指定选项组名称。
+- `<input>`标签可以包含`list`属性以与`<datalist>`元素的`id`关联，从而提供预定义的选项。
 
 ## 认识 CSS
 
-层叠样式表（CSS）是一种用于控制超文本标记语言（HTML）文档中元素呈现方式的语言。呈现方式通过“样式”来指定，这些样式可以“内联”赋值给 HTML 元素的样式属性，也可以通过 HTML 文档头部部分 `<style> </style>` 标签内的“规则”来指定，或者作为单独样式表中的规则。每条样式规则都会选择指定的元素，然后对它们应用指定的样式。
-
-![image](img/pg166_1.jpg)
+层叠样式表（CSS）是一种用于控制超文本标记语言（HTML）文档中元素呈现方式的语言。呈现方式通过“样式”来指定，这些样式可以“内联”赋值给 HTML 元素的样式属性，也可以通过 HTML 文档头部部分`<style> </style>`标签内的“规则”来指定，或者作为单独样式表中的规则。每条样式规则都会选择指定的元素，然后对它们应用指定的样式。
 
 CSS 由世界维网联盟（W3C）创建，旨在重新夺回对文档标记的控制权，因为 HTML 已经从最初仅用于定义文档结构元素（如标题、段落、超链接、列表等）的几个“标签”，增长到了极其复杂的程度。随着控制图像、文本颜色、字体大小和背景颜色的标签不断增加，人们发现许多网页的源代码往往包含大量的标记，而实际内容却很少。
 
@@ -5037,8 +5376,6 @@ W3C 提供了一种通过分离结构和呈现方面来重新夺回文档标记�
 
 最新的 CSS 规范（CSS3）分为多个模块，允许圆角、投影、渐变颜色填充和动画效果等增强——这些及更多功能将在书中通过示例进行演示。
 
-![image](img/pg166_2.jpg)
-
 W3C 是一个国际联盟，其成员共同开发网络标准。CSS 主页可以在 W3C 网站找到：`[www.w3.org/Style/CSS](http://www.w3.org/Style/CSS)`。
 
 CSS 中的“层叠”（Cascading）一词描述了样式规则从一个样式表传递到另一个的方式。层叠决定了哪条样式规则具有优先级，并成为应用到所选 HTML 元素的规则。
@@ -5049,106 +5386,76 @@ CSS 中的“层叠”（Cascading）一词描述了样式规则从一个样式�
 • **用户样式表** – 某些浏览器允许用户指定自己的外观偏好，这实际上创建了一个自定义样式表，可以覆盖浏览器的默认样式表。
 • **作者样式表** – 当 HTML 文档指定了由网页作者创建的样式表时，浏览器将应用其中包含的样式规则，覆盖用户样式表和默认浏览器样式表。
 
-![image](img/pg167_1.jpg)
-
 因此，层叠意味着浏览器通常会应用作者样式表中的规则（如果存在），否则将应用用户样式表中的规则（如果存在），否则默认应用浏览器样式表中的规则。
 
-![image](img/hot.jpg)
-
 CSS 是被所有现代网络浏览器公认的通用样式表语言。
-
-![image](img/hot.jpg)
 
 针对同一元素的样式规则的最终优先级由其“特殊性”权重决定——参见此处。
 
 ## 创建规则
 
-![image](img/pg168_1.jpg)
-
 在 CSS 中，每条样式规则由两个主要部分组成：
 
-| ![image](img/b1.jpg) | **选择器** – 指定 HTML 文档中的哪些元素是该规则的目标。 |
-| ![image](img/b2.jpg) | **声明块** – 指定如何对所选目标元素的属性进行样式设置。 | |
+| **选择器** – 指定 HTML 文档中的哪些元素是该规则的目标。 |
+| **声明块** – 指定如何对所选目标元素的属性进行样式设置。 |
 
 一条样式规则（或“样式规则集”）以选择器开始，随后是位于大括号（括号）内的声明块。大括号包含一个或多个声明，每个声明指定一个属性以及该属性的有效值，如下例所示：
 
-![image](img/pg168_2.jpg)
+通常，选择器针对（选择）特定的 HTML 元素进行样式设置——例如使用上述样式规则示例中的文档中的所有`<h1>`标题元素。
 
-通常，选择器针对（选择）特定的 HTML 元素进行样式设置——例如使用上述样式规则示例中的文档中的所有 `<h1>` 标题元素。
+示例中的声明块包含两个声明，用于指定所选目标元素的颜色和背景颜色。CSS`color`属性被赋值为`Blue`值——因此每个`<h1>`标题元素将具有蓝色前景。同样，CSS`background`属性被赋值为`Yellow`值——因此每个`<h1>`标题元素将具有黄色背景。
 
-示例中的声明块包含两个声明，用于指定所选目标元素的颜色和背景颜色。CSS `color` 属性被赋值为 `Blue` 值——因此每个 `<h1>` 标题元素将具有蓝色前景。同样，CSS `background` 属性被赋值为 `Yellow` 值——因此每个 `<h1>` 标题元素将具有黄色背景。
+注意 CSS 声明如何使用`:`为属性赋值。同样请注意每个声明都以`;`结束。严格来说，声明块中的最后一个声明不需要以分号结束，但大多数网页作者倾向于习惯性地为所有 CSS 声明加上结尾——这样他们在向现有规则中添加更多声明时，就不需要记得添加分隔分号了。
 
-注意 CSS 声明如何使用 `:` 为属性赋值。同样请注意每个声明都以 `;` 结束。严格来说，声明块中的最后一个声明不需要以分号结束，但大多数网页作者倾向于习惯性地为所有 CSS 声明加上结尾——这样他们在向现有规则中添加更多声明时，就不需要记得添加分隔分号了。
+`background`属性是`background-color`以及其他几个 CSS 属性的“简写”属性，这些属性在此处进行了描述。
 
-![image](img/hot.jpg)
-
-`background` 属性是 `background-color` 以及其他几个 CSS 属性的“简写”属性，这些属性在此处进行了描述。
-
-![image](img/1b.jpg)在创建新的样式规则时，作者必须首先指定一个选择器，以目标应用于规则的 HTML 元素——CSS 选择器是声明块左大括号之前的所有内容。
+在创建新的样式规则时，作者必须首先指定一个选择器，以目标应用于规则的 HTML 元素——CSS 选择器是声明块左大括号之前的所有内容。
 
 `h1`
 
-![image](img/htmlb.jpg)
-
-rules.html
-
-![image](img/2b.jpg)接下来，通过在选择器后添加一对大括号来创建声明块。
+接下来，通过在选择器后添加一对大括号来创建声明块。
 
 `h1 { }`
 
-![image](img/3b.jpg)现在，可以在声明块内插入一个声明来为属性赋值。
+现在，可以在声明块内插入一个声明来为属性赋值。
 
 `h1 { color : Blue ; }`
 
-![image](img/4b.jpg)然后可以在声明块内添加第二个声明，它与第一个声明用分号隔开。
+然后可以在声明块内添加第二个声明，它与第一个声明用分号隔开。
 
 `h1 { color : Blue ; background : Yellow ; }`
 
-![image](img/5b.jpg)该样式规则集现在已完成，但也可以通过扩展选择器成为逗号分隔的列表，将其应用于另一个 HTML 元素。
+该样式规则集现在已完成，但也可以通过扩展选择器成为逗号分隔的列表，将其应用于另一个 HTML 元素。
 
 `h1, h2 { color : Blue ; background : Yellow ; }`
 
-![image](img/6b.jpg)之后可以在第一个样式规则集下方添加更多的样式规则集，以针对其他元素。
+之后可以在第一个样式规则集下方添加更多的样式规则集，以针对其他元素。
 
 `h1, h2 { color : Blue ; background : Yellow ; }`
 
-`p      { color : Red ; }`
-
-![image](img/pg169_1.jpg)
-
-![image](img/forget.jpg)
+`p      { color : Red ; }`
 
 样式规则内部允许存在空白字符（空格、制表符、换行符和回车符），以便作者根据自己的偏好格式化样式规则。
 
-![image](img/hot.jpg)
-
-
-
-
-少于四个声明的样式规则集写在单行，否则为了清晰起见，将跨多行编写——通常选择器和 `{` 左大括号出现在第一行，随后是单独占一行的声明，最后一行是 `}` 右大括号。由于页面空间限制，本书中的代码采用了更紧凑的格式。
+少于四个声明的样式规则集写在单行，否则为了清晰起见，将跨多行编写——通常选择器和`{`左大括号出现在第一行，随后是单独占一行的声明，最后一行是`}`右大括号。由于页面空间限制，本书中的代码采用了更紧凑的格式。
 
 ## 应用规则
 
-样式表仅仅是应用于 HTML 文档的样式规则集合。通过在 HTML 文档的 `head` 部分在 `<style>` 和 `</style>` 标签之间插入样式规则，就可以内部样式表。
+样式表仅仅是应用于 HTML 文档的样式规则集合。通过在 HTML 文档的`head`部分在`<style>`和`</style>`标签之间插入样式规则，就可以内部样式表。
 
-![image](img/pg170_1.jpg)
-
-此外，每个 HTML 文档的 `head` 部分应该包含一个 `<meta>` 标签来为页面设置“视口”（viewport）。该标签决定了适应查看页面的设备的网页可见区域，其外观完全如如下所示：
+此外，每个 HTML 文档的`head`部分应该包含一个`<meta>`标签来为页面设置“视口”（viewport）。该标签决定了适应查看页面的设备的网页可见区域，其外观完全如如下所示：
 
 ```
 <meta name=”viewport”
 content=”width=device-width, initial-scale=1.0” >
 ```
 
-• `width=device-width` 部分将页面宽度设置为与查看设备的屏幕宽度匹配。
+• `width=device-width`部分将页面宽度设置为与查看设备的屏幕宽度匹配。
+• `initial-scale=1.0`部分在网页首次加载时将浏览器的初始缩放级别设置为 100%。
 
-• `initial-scale=1.0` 部分在网页首次加载时将浏览器的初始缩放级别设置为 100%。
+视口的`<meta>`标签不需要跨两行显示。在这里之所以显示这种形式是由于空间限制。
 
-![image](img/forget.jpg)
-
-视口的 `<meta>` 标签不需要跨两行显示。在这里之所以显示这种形式是由于空间限制。
-
-![image](img/1b.jpg)打开一个纯文本编辑器（如 Windows 的记事本应用），然后创建一个包含标题、子标题和段落元素的 HTML 文档
+打开一个纯文本编辑器（如 Windows 的记事本应用），然后创建一个包含标题、子标题和段落元素的 HTML 文档
 
 ```html
 <!DOCTYPE HTML>
@@ -5168,11 +5475,15 @@ content=”width=device-width, initial-scale=1.0” >
 </html>
 ```
 
+
+
 ![image](img/htmlb.jpg)
 
 `apply.html`
 
-![image](img/2b.jpg)在文档的 `head` 部分，插入一个包含标题元素样式规则的内部样式表
+![image](img/2b.jpg)
+
+在文档的 `head` 部分，插入一个包含标题元素样式规则的内部样式表：
 
 ```html
 <style>
@@ -5180,13 +5491,17 @@ h1        { color : Blue ; background : Yellow ; }
 </style>
 ```
 
-![image](img/3b.jpg)保存 HTML 文件，然后在网页浏览器中打开它，以查看应用于标题的内部样式表规则
+![image](img/3b.jpg)
+
+保存 HTML 文件，然后在网页浏览器中打开它，以查看应用于标题的内部样式表规则。
 
 ![image](img/pg171_1.jpg)
 
 样式规则也可以通过为元素的 `style` 属性分配“内联”属性和值来应用：
 
-![image](img/4b.jpg)编辑子标题标签以添加一个内联规则集
+![image](img/4b.jpg)
+
+编辑子标题标签以添加一个内联规则集：
 
 ```html
 <h2 style=”color : White ; background : Green ;” >
@@ -5194,7 +5509,9 @@ h1        { color : Blue ; background : Yellow ; }
 
 样式规则也可以从外部样式表应用：
 
-![image](img/5b.jpg)打开一个纯文本编辑器，然后输入下面的样式规则并将其为名为“external.css”的外部样式表
+![image](img/5b.jpg)
+
+打开一个纯文本编辑器，然后输入下面的样式规则并将其保存为名为“external.css”的外部样式表：
 
 ```css
 p { color : Yellow ; background : Red ; }
@@ -5204,13 +5521,17 @@ p { color : Yellow ; background : Red ; }
 
 `external.css`
 
-![image](img/6b.jpg)通过在文档的 `head` 部分插入此标签来编辑 HTML 文件以链接外部样式表
+![image](img/6b.jpg)
+
+通过在文档的 `head` 部分插入此标签来编辑 HTML 文件以链接外部样式表：
 
 ```html
 <link rel=”stylesheet” href=”external.css” type=”text/css”>
 ```
 
-![image](img/7b.jpg)保存 HTML 文件，然后在网页浏览器中重新打开它，以查看应用的内联和外部样式表规则
+![image](img/7b.jpg)
+
+保存 HTML 文件，然后在网页浏览器中重新打开它，以查看应用的内联和外部样式表规则。
 
 ![image](img/pg171_2.jpg)
 
@@ -5230,7 +5551,9 @@ p { color : Yellow ; background : Red ; }
 
 “类型”选择器选择页面中匹配选择器的所有元素。可以通过指定逗号分隔的元素类型列表的类型选择器选择多个元素。
 
-![image](img/1b.jpg)创建一个包含标题和在区域容器内的无序链接列表的 HTML 文档
+![image](img/1b.jpg)
+
+创建一个包含标题和在区域容器内的无序链接列表的 HTML 文档：
 
 ```html
 <div>
@@ -5247,7 +5570,9 @@ p { color : Yellow ; background : Red ; }
 
 `type.html`
 
-![image](img/2b.jpg)添加一个样式表，其中的样式规则将容器元素的宽度设置为页面宽度的一半
+![image](img/2b.jpg)
+
+添加一个样式表，其中的样式规则将容器元素的宽度设置为页面宽度的一半：
 
 ```html
 <style>
@@ -5255,14 +5580,18 @@ div { width : 50% ; }
 </style>
 ```
 
-![image](img/3b.jpg)添加样式规则，设置所有超链接、标题和列表元素的背景颜色
+![image](img/3b.jpg)
+
+添加样式规则，设置所有超链接、标题和列表元素的背景颜色：
 
 ```css
 a { background : Yellow ; }
 h1, ul { color: White ; background : Blue ; }
 ```
 
-![image](img/4b.jpg)保存 HTML 文件，然后在浏览器中打开网页，以查看由类型选择器样化的元素
+![image](img/4b.jpg)
+
+保存 HTML 文件，然后在浏览器中打开网页，以查看由类型选择器样化的元素。
 
 ![image](img/pg172_2.jpg)
 
@@ -5272,7 +5601,9 @@ h1, ul { color: White ; background : Blue ; }
 
 CSS `*` 通用选择器可用于选择 HTML 文档中所有类型的元素——就像它是一个列出所有元素类型作为逗号分隔列表的选择器一样：
 
-![image](img/5b.jpg)添加带有通用选择器的样式规则，以使所有文本变为斜体，然后再次保存 HTML 文件并刷新浏览器，以查看标题和列表文本均变为斜体
+![image](img/5b.jpg)
+
+添加带有通用选择器的样式规则，以使所有文本变为斜体，然后再次保存 HTML 文件并刷新浏览器，以查看标题和列表文本均变为斜体：
 
 ```css
 * { font-style : italic ; }
@@ -5282,7 +5613,9 @@ CSS `*` 通用选择器可用于选择 HTML 文档中所有类型的元素——
 
 `*` 通用选择器也可以用于选择包含指定元素类型内的任意类型的元素：
 
-![image](img/6b.jpg)使用通用选择器添加样式规则，为“div”容器内的所有元素添加 2 像素宽的框，然后再次保存 HTML 文件并刷新浏览器查看框
+![image](img/6b.jpg)
+
+使用通用选择器添加样式规则，为“div”容器内的所有元素添加 2 像素宽的框，然后再次保存 HTML 文件并刷新浏览器查看框：
 
 ```css
 div * { border : 2px solid Red ; }
@@ -5296,7 +5629,7 @@ div * { border : 2px solid Red ; }
 
 ![image](img/forget.jpg)
 
-`div *` 选择器选择 div 内的所有类型元素，但不包括 `<div>` 元素。
+`div *` 选择器选择 `div` 内的所有类型元素，但不包括 `<div>` 元素。
 
 ## 选择类
 
@@ -5306,7 +5639,9 @@ div * { border : 2px solid Red ; }
 
 此外，类选择器可以与类型选择器结合以选择类的实例。在这种情况下，选择器首先指定元素类型，随后是 `.` 点和匹配的 `class` 值：
 
-![image](img/1b.jpg)创建一个包含段落和两个跨字的 HTML 文档——它们都具有相同的 `class` 值
+![image](img/1b.jpg)
+
+创建一个包含段落和两个跨字的 HTML 文档——它们都具有相同的 `class` 值：
 
 ```html
 <p class=”frame”>You can fool all the people
@@ -5318,7 +5653,9 @@ div * { border : 2px solid Red ; }
 
 `class.html`
 
-![image](img/2b.jpg)添加一个样式表，使用 `class` 值为每个元素绘制红色边框
+![image](img/2b.jpg)
+
+添加一个样式表，使用 `class` 值为每个元素绘制红色边框：
 
 ```html
 <style>
@@ -5326,16 +5663,17 @@ div * { border : 2px solid Red ; }
 </style>
 ```
 
-![image](img/3b.jpg)现在，添加一条仅针对段落元素的覆盖之前的规则样式规则——为段落绘制蓝色边框并设置其宽度
+![image](img/3b.jpg)
+
+现在，添加一条仅针对段落元素的覆盖之前的规则样式规则——为段落绘制蓝色边框并设置其宽度：
 
 ```html
 p.frame { border : 2px solid Blue ; width : 50% ; }
 ```
 
-![image](img/4b.jpg)保存 HTML 文档，然后在浏览器中打开网页，以查看由类选择器样化的元素
+![image](img/4b.jpg)
 
-
-
+保存 HTML 文档，然后在浏览器中打开网页，以查看由类选择器样化的元素。
 
 ![image](img/pg174_2.jpg)
 
@@ -5343,7 +5681,7 @@ p.frame { border : 2px solid Blue ; width : 50% ; }
 
 如果两个规则选中了同一个元素，则将应用样式表中靠后位置的规则。但这些规则在样式表中的出现顺序并不重要。与类型选择器结合的类选择器将被应用，因为它具有更高的特性。请查看此处以了解如何计算特性。
 
-## 选择标识选择 (Select Identity)
+## 选择标识选择（Select Identity）
 
 与类选择器类似，标识选择器可以选取包含 `id` 属性的 HTML 元素，该属性的值必须与选择器匹配。标识选择器以 `#` 哈希字符开头，随后跟上要匹配的 `id` 值。这主要用于对一个特定元素应用样式规则，因为在 HTML 文档中每个 `id` 属性值必须是唯一的。
 
@@ -5351,7 +5689,9 @@ p.frame { border : 2px solid Blue ; width : 50% ; }
 
 可选地，标识选择器可以与类型选择器结合，只需识别元素类型。在这种情况下，选择器首先指定元素类型，然后是哈希字符和要匹配的 `id` 值：
 
-![image](img/1b.jpg)创建一个包含一个段落和两个 span 短语的 HTML 文档——它们都具有唯一的 `id` 值
+![image](img/1b.jpg)
+
+创建一个包含一个段落和两个 `span` 短语的 HTML 文档——它们都具有唯一的 `id` 值：
 
 ```html
 <p id=”para1”>You may only be someone
@@ -5362,9 +5702,11 @@ but to someone else you may
 
 ![image](img/htmlb.jpg)
 
-identity.html
+`identity.html`
 
-![image](img/2b.jpg)添加一个样式表，其样式规则为每个 `span` 元素中的文本背景绘制彩色背景
+![image](img/2b.jpg)
+
+添加一个样式表，其样式规则为每个 `span` 元素中的文本背景绘制彩色背景：
 
 ```css
 <style>
@@ -5373,13 +5715,17 @@ identity.html
 </style>
 ```
 
-![image](img/3b.jpg)现在，添加一条样式规则为段落的其余部分绘制彩色背景并设置其宽度
+![image](img/3b.jpg)
+
+现在，添加一条样式规则为段落的其余部分绘制彩色背景并设置其宽度：
 
 ```css
 p#para1 { background : Yellow ; width : 70% ; }
 ```
 
-![image](img/4b.jpg)保存 HTML 文档，然后在浏览器中打开网页，查看由标识选择器样式的元素
+![image](img/4b.jpg)
+
+保存 HTML 文档，然后在浏览器中打开网页，查看由标识选择器样式的元素。
 
 ![image](img/pg175_2.jpg)
 
@@ -5387,13 +5733,13 @@ p#para1 { background : Yellow ; width : 70% ; }
 
 如果类选择器和标识选择器都尝试设置一个元素的同一个属性，则标识选择器的值将被应用，因为它具有更高的权重。请查看此处了解更多关于选择器权重评级的信息。
 
-## 选择关系元素 (Select Relatives)
+## 选择关系元素（Select Relatives）
 
 除了通过类型、类或标识（如此处所示）选取目标元素外，CSS 还允许组合选择器以相对于 HTML 文档中其他元素来选取元素。这些“组合器”提供了四种选项：
 
 ![image](img/pg176_1.jpg)
 
-### 后代选择器 (*space*)
+### 后代选择器（`space`）
 
 这选取父元素的所有后代元素。CSS 选择器首先指定父元素，然后是一个空格，最后是后代元素。例如，要选取 `<div>` 区域元素内任何层级下的所有 `<p>` 段落元素：
 
@@ -5401,7 +5747,7 @@ p#para1 { background : Yellow ; width : 70% ; }
 div p { }
 ```
 
-### 子元素选择器 ( > )
+### 子元素选择器（`>`）
 
 这选取父元素的所有子元素。CSS 选择器首先指定父元素，然后是一个 `>` 字符，最后是子元素。例如，选取所有作为 `<div>` 的直接子元素的 `<p>` 元素：
 
@@ -5411,7 +5757,7 @@ div > p { }
 
 ![image](img/snake.jpg)
 
-### 相邻兄弟选择器 ( + )
+### 相邻兄弟选择器（`+`）
 
 这选取跟随某个元素的元素。CSS 选择器首先指定前一个元素，然后是 `+` 字符，最后是兄弟元素。例如，选取所有紧跟在 `<div>` 之后的 `<p>` 元素：
 
@@ -5419,7 +5765,7 @@ div > p { }
 div + p { }
 ```
 
-### 通用兄弟选择器 ( ~ )
+### 通用兄弟选择器（`~`）
 
 这选取跟随某个元素元素。CSS 选择器首先指定前一个元素，然后是一个 `~` 字符，最后是兄弟元素。例如，选取所有与 `<div>` 具有相同父元素的 `<p>` 元素：
 
@@ -5427,7 +5773,9 @@ div + p { }
 div ~ p { }
 ```
 
-![image](img/1b.jpg)创建一个包含一个段落和两个 span 短语的 HTML 文档——它们都具有唯一的 `id` 值
+![image](img/1b.jpg)
+
+创建一个包含一个段落和两个 `span` 短语的 HTML 文档——它们都具有唯一的 `id` 值：
 
 ```html
 <p id=”para1”>You may only be someone
@@ -5436,7 +5784,9 @@ but to someone else you may
 <span id=”span2”>be the world</span></p>
 ```
 
-![image](img/2b.jpg)添加一个样式表，其样式规则为每个 `span` 元素中的文本绘制彩色背景
+![image](img/2b.jpg)
+
+添加一个样式表，其样式规则为每个 `span` 元素中的文本绘制彩色背景：
 
 ```css
 <style>
@@ -5445,19 +5795,23 @@ but to someone else you may
 </style>
 ```
 
-![image](img/3b.jpg)现在，添加一条样式规则为段落的其余部分绘制彩色背景并设置其宽度
+![image](img/3b.jpg)
+
+现在，添加一条样式规则为段落的其余部分绘制彩色背景并设置其宽度：
 
 ```css
 p#para1 { background : Yellow ; width : 70% ; }
 ```
 
-![image](img/4b.jpg)保存 HTML 文档，然后在浏览器中打开网页，查看由标识选择器样式的元素
+![image](img/4b.jpg)
 
-## 选择属性 (Select Attributes)
+保存 HTML 文档，然后在浏览器中打开网页，查看由标识选择器样式的元素。
+
+## 选择属性（Select Attributes）
 
 除了通过类型、类、标识或关系（如此处所示）选取目标元素外，CSS 选择器还可以选取具有特定属性的 HTML 元素。属性选择器有七种选项：
 
-### 属性名选择器 [attribute]
+### 属性名选择器 `[attribute]`
 
 通过在 `[]` 括号内指定属性来选取具有该属性元素：
 
@@ -5465,7 +5819,7 @@ p#para1 { background : Yellow ; width : 70% ; }
 [attribute] { }
 ```
 
-### 属性值选择器 [attribute="value"]
+### 属性值选择器 `[attribute="value"]`
 
 选取具有指定属性和指定值的元素：
 
@@ -5473,7 +5827,7 @@ p#para1 { background : Yellow ; width : 70% ; }
 [attribute="value"] { }
 ```
 
-### 属性包含值选择器 [attribute~="value"]
+### 属性包含值选择器 `[attribute~="value"]`
 
 选取具有指定属性且值列表包含指定单词的元素：
 
@@ -5481,7 +5835,7 @@ p#para1 { background : Yellow ; width : 70% ; }
 [attribute~="item"] { }
 ```
 
-### 属性开头单词选择器 [attribute|="value"]
+### 属性开头单词选择器 `[attribute|="value"]`
 
 选取具有指定属性且值以指定单词开头的元素：
 
@@ -5489,7 +5843,7 @@ p#para1 { background : Yellow ; width : 70% ; }
 [attribute|="word"] { }
 ```
 
-### 属性包含字符串选择器 [attribute*="value"]
+### 属性包含字符串选择器 `[attribute*="value"]`
 
 选取具有指定属性且值包含指定子字符串的元素：
 
@@ -5497,7 +5851,7 @@ p#para1 { background : Yellow ; width : 70% ; }
 [attribute*="substring"] { }
 ```
 
-### 属性开头字符串选择器 [attribute^="value"]
+### 属性开头字符串选择器 `[attribute^="value"]`
 
 选取具有指定属性且值以指定子字符串开头的元素：
 
@@ -5505,17 +5859,13 @@ p#para1 { background : Yellow ; width : 70% ; }
 [attribute^="substring"] { }
 ```
 
-### 属性结尾字符串选择器 [attribute$="value"]
+### 属性结尾字符串选择器 `[attribute$="value"]`
 
 选取具有指定属性且值以指定子字符串结尾的元素：
 
 ```css
 [attribute$="substring"] { }
 ```
-
-
-
-
 
 ```html
 <li class="cat-family">狮子</li>
@@ -5527,9 +5877,11 @@ p#para1 { background : Yellow ; width : 70% ; }
 
 ![image](img/htmlb.jpg)
 
-attribute.html
+`attribute.html`
 
-![image](img/2b.jpg)添加一个带有样式规则的样式表，该规则通过其属性选择列表元素
+![image](img/2b.jpg)
+
+添加一个带有样式规则的样式表，该规则通过其属性选择列表元素：
 
 ```html
 <style>
@@ -5537,7 +5889,9 @@ ol[ id ] { border : 2px solid Red ; }
 </style>
 ```
 
-![image](img/3b.jpg)现在，添加样式规则以分别通过它们的属性值选择所有列表项
+![image](img/3b.jpg)
+
+现在，添加样式规则以分别通过它们的属性值选择所有列表项：
 
 ```css
 li[class="reptile"]  { background : Red ; }
@@ -5548,7 +5902,9 @@ li[class^="top"]     { background : Orange ; }
 li[class$=="ird"]    { background : Purple ; }
 ```
 
-![image](img/4b.jpg)保存 HTML 文档，然后在浏览器中打开网页，查看由属性选择器样化的元素
+![image](img/4b.jpg)
+
+保存 HTML 文档，然后在浏览器中打开网页，查看由属性选择器样化的元素。
 
 ![image](img/pg179_1.jpg)
 
@@ -5569,7 +5925,7 @@ li[class$=="ird"]    { background : Purple ; }
 - **Class, Attribute（类、属性）**：针对元素 `class` 或 `[*attribute*]` 的选择器——例如 `h2.head`。
 - **Element（元素）**：通过名称针对元素类型的选择器——例如 `h2`。
 
-优先级评估过程为每个选择器组件加分，这些分数存储在四个权重“寄存器”中，以便稍后与冲突选择器的优先级值进行比较。因此，优先级值可以表示为逗号分隔的列表——其中 `0,0,0,0` 是零优先级值。选择器组件的分分配如下：
+优先级评估过程为每个选择器组件加分，这些分数存储在四个权重“寄存器”中，以便稍后与冲突选择器的优先级值进行比较。因此，优先级值可以表示为逗号分隔的列表——其中 `0,0,0,0` 是零优先级值。选择器组件的分配如下：
 
 - 对于内联 `style` 属性声明，添加 `1,0,0,0`。
 - 对于选择器中的每个 `id` 属性，添加 `0,1,0,0`。
@@ -5586,7 +5942,11 @@ li[class$=="ird"]    { background : Purple ; }
 
 伪元素描述见此处。
 
-![image](img/1b.jpg)创建一个包含三个标题的 HTML 文档
+
+
+![image](img/1b.jpg)
+
+创建一个包含三个标题的 HTML 文档：
 
 ```html
 <h2 style="color:White;">元素样式</h2>
@@ -5596,9 +5956,11 @@ li[class$=="ird"]    { background : Purple ; }
 
 ![image](img/htmlb.jpg)
 
-specificity.html
+`specificity.html`
 
-![image](img/2b.jpg)添加一个带有样式规则的样式表，该规则通过类型选择所有标题元素
+![image](img/2b.jpg)
+
+添加一个带有样式规则的样式表，该规则通过类型选择所有标题元素：
 
 ```html
 <style>
@@ -5606,7 +5968,9 @@ h2 { color : Yellow ; }
 </style>
 ```
 
-![image](img/3b.jpg)现在，添加样式规则，每条规则以不同的方式针对标题元素的背景（background）属性
+![image](img/3b.jpg)
+
+现在，添加样式规则，每条规则以不同的方式针对标题元素的背景（`background`）属性：
 
 ```css
 h2        { background : Red ; } /* 0,0,0,1 */
@@ -5619,9 +5983,11 @@ body h2.head { background : Green ; } /* 0,0,1,2 */
 
 ![image](img/hot.jpg)
 
-`/* */` 语法可用于在 CSS 样式表中添加单行和多行注释。
+`/* */`语法可用于在 CSS 样式表中添加单行和多行注释。
 
-![image](img/4b.jpg)保存 HTML 文档然后在浏览器中打开网页，查看在考虑优先级评估重要性后样化的元素
+![image](img/4b.jpg)
+
+保存 HTML 文档，然后在浏览器中打开网页，查看在考虑优先级评估重要性后样化的元素。
 
 ![image](img/pg181_1.jpg)
 
@@ -5633,41 +5999,37 @@ body h2.head { background : Green ; } /* 0,0,1,2 */
 
 ![image](img/pg182_1.jpg)
 
-网页浏览器识别这些表格中列出的所有颜色名称。你可以在 CSS 规则中使用这些名称来设置 HTML 元素的颜色。这些名称不区分大小写，因此也可以写成全小写字母——例如 `background : aqua ;`。
+网页浏览器识别这些表格中列出的所有颜色名称。你可以在 CSS 规则中使用这些名称来设置 HTML 元素的颜色。这些名称不区分大小写，因此也可以写成全小写字母——例如`background : aqua ;`。
 
 ![image](img/pg182_2.jpg)
 
 ![image](img/hot.jpg)
 
-颜色也可以作为组成颜色的红（Red）、绿（Green）、蓝（Blue）组件写入——例如，红色为 `rgb( 255, 0, 0)`。另一种，颜色可以写为十六进制数——例如，红色的十六进制为 `#FF0000`。
+颜色也可以作为组成颜色的红（Red）、绿（Green）、蓝（Blue）组件写入——例如，红色为`rgb( 255, 0, 0)`。另一种，颜色可以写为十六进制数——例如，红色的十六进制为`#FF0000`。
 
 ![image](img/pg183_1.jpg)
 
 ![image](img/hot.jpg)
 
-颜色也可以以色相（Hue）、饱和度（Saturation）、亮度（Lightness）（HSL）值写入——例如，红色为 `hsl(0, 100%, 50%)`。
+颜色也可以以色相（Hue）、饱和度（Saturation）、亮度（Lightness）（HSL）值写入——例如，红色为`hsl(0, 100%, 50%)`。
 
 ![image](img/hot.jpg)
 
-颜色规格中可以添加第四个 Alpha 值来确定颜色的透明度——例如，半透明的红色指定为 `rgba(255, 0, 0, 0.5)` 或 `hsla(0, 100%, 50%, 0.5)`。
+颜色规格中可以添加第四个 Alpha 值来确定颜色的透明度——例如，半透明的红色指定为`rgba(255, 0, 0, 0.5)`或`hsla(0, 100%, 50%, 0.5)`。
 
 ## 设置背景
 
-就像每个元素都可以对其 `background` 属性指定背景颜色一样，也可以通过 `url(*filename*)` 值对其 `background` 属性指定背景图像。这里，`*filename*` 是图像文件的路径——例如 `background : url(bg.png) ;`。
+就像每个元素都可以对其`background`属性指定背景颜色一样，也可以通过`url(*filename*)`值对其`background`属性指定背景图像。这里，`*filename*`是图像文件的路径——例如`background : url(bg.png) ;`。
 
 ![image](img/pg184_1.jpg)
 
-`background` 属性还可以用空格分隔的值同时指定背景图像和颜色——例如，`background : LightBlue url( bg.png ) ;`。任何指定的背景图像通常会位于元素的左上角，浏览器默认会按行在元素区域内重复地“平铺”（tile）图像。这种行为可以通过为 **background** 属性分配不同的值来修改，其中 `repeat-x` 值将平铺模式限制为单行水平行，而 `repeat-y` 将模式限制为单列垂直列。也可以通过分配 `no-repeat` 值来防止平铺，使图像的单个副本出现在内容框的左上角。
+`background`属性还可以用空格分隔的值同时指定背景图像和颜色——例如，`background : LightBlue url( bg.png ) ;`。任何指定的背景图像通常会位于元素的左上角，浏览器默认会按行在元素区域内重复地“平铺”（tile）图像。这种行为可以通过为`background`属性分配不同的值来修改，其中`repeat-x`值将平铺模式限制为单行水平行，而`repeat-y`将模式限制为单列垂直列。也可以通过分配`no-repeat`值来防止平铺，使图像的单个副本出现在内容框的左上角。
 
-可以通过 **background** 属性指定背景图像的位置，使用 `left`、`center` 和 `right` 值控制其水平位置，使用 `top`、`center` 和 `bottom` 值控制其垂直位置。将水平和垂直值与 `no-repeat` 值结合使用，可以可以在元素区域内的给定位置设置单个版本的图像——例如 `background : url( bg.png ) no-repeat top right ;`。
+可以通过`background`属性指定背景图像的位置，使用`left`、`center`和`right`值控制其水平位置，使用`top`、`center`和`bottom`值控制其垂直位置。将水平和垂直值与`no-repeat`值结合使用，可以可以在元素区域内的给定位置设置单个版本的图像——例如`background : url( bg.png ) no-repeat top right ;`。
 
-`background` 属性默认有一个 `scroll` 值，该值相对于视口而非元素，因此默认情况下背景图像会随页面滚动。如果你倾向于附加背景页面图像，使其不随页面滚动，可以为 **background** 属性指定 `fixed` 值，这样当页面滚动时，背景图像将保持相对于视口的指定位置。
+`background`属性默认有一个`scroll`值，该值相对于视口而非元素，因此默认情况下背景图像会随页面滚动。如果你倾向于附加背景页面图像，使其不随页面滚动，可以为`background`属性指定`fixed`值，这样当页面滚动时，背景图像将保持相对于视口的指定位置。
 
-
-
-
-
-所有的背景值都可以以空格分隔的列表指定给 `background` 简写属性，或者单独指定给 `background-color`、`background-image`、`background-repeat`、`background-position` 和 `background-attachment` 属性。
+所有的背景值都可以以空格分隔的列表指定给`background`简写属性，或者单独指定给`background-color`、`background-image`、`background-repeat`、`background-position`和`background-attachment`属性。
 
 ![image](img/snake.jpg)
 
@@ -5675,9 +6037,11 @@ body h2.head { background : Green ; } /* 0,0,1,2 */
 
 ![image](img/hot.jpg)
 
-使用 `background` 简写属性而不是各种单独属性——以保持样式表更加简洁。值的列表应该按照此处列出的顺序出现，但可以选择地省略这些值中的任何一个。
+使用`background`简写属性而不是各种单独属性——以保持样式表更加简洁。值的列表应该按照此处列出的顺序出现，但可以选择地省略这些值中的任何一个。
 
-![image](img/1b.jpg)创建一个包含两个段落的 HTML 文档
+![image](img/1b.jpg)
+
+创建一个包含两个段落的 HTML 文档：
 
 `<p=”repeat”></p>`
 
@@ -5687,9 +6051,11 @@ body h2.head { background : Green ; } /* 0,0,1,2 */
 
 `background.html`
 
-![image](img/2b.jpg)添加一个包含规则的样式表，这些规则设置每个段落的尺寸和背景属性
+![image](img/2b.jpg)
 
-```
+添加一个包含规则的样式表，这些规则设置每个段落的尺寸和背景属性：
+
+```html
 <style>
 p.repeat { width : 384px ; height : 128px ;
 background : LightBlue url( crab.png ) ; }
@@ -5706,80 +6072,63 @@ DeepSkyBlue url( crab.png ) repeat-y top right ; }
 
 灰色区域是透明的。
 
-![image](img/3b.jpg)现在，添加一条样式规则，将背景图像固定固定固定到页面上
+![image](img/3b.jpg)
 
-```
+现在，添加一条样式规则，将背景图像固定固定固定到页面上：
+
+```css
 body { background : url( crab.png )
 no-repeat bottom right fixed ; }
 ```
 
-![image](img/4b.jpg)保存 HTML 文档，然后在浏览器中打开网页以查看背景——滚动页面查看固定的页面背景图像
+![image](img/4b.jpg)
+
+保存 HTML 文档，然后在浏览器中打开网页以查看背景——滚动页面查看固定的页面背景图像。
 
 ![image](img/pg185_2.jpg)
 
 ![image](img/pg185_3.jpg)
 
-**总结**
+## 总结
 
-•CSS 是 W3C 提供的一种语言，通过将文档结构与表现分离来重新获得对标记的控制。
+- CSS 是 W3C 提供的一种语言，通过将文档结构与表现分离来重新获得对标记的控制。
+- 级联允许样式规则从一个样式表传递到另一个样式表，并决定应用哪种样式规则。
+- 每个样式规则由一个选择器和一个声明块组成。
+- 每个声明指定一个属性和一个应用于该属性的值——用冒号`:`隔开。
+- 一个样式规则集可能包含多个声明——每个声明都用分号`;`结束。
+- 样式规则可以在内部样式表中指定、内联到 HTML 元素的`style`属性中，或在外部样式表中指定。
+- 类型选择器选择所有匹配选择器的元素。
+- 类选择器选择包含`class`属性且其属性值与选择器匹配的元素。
+- 标识选择器选择包含`id`属性且其属性值与选择器匹配的元素。
+- 相对选择器是组合器，它们相对于其他元素作为后代、子元素或兄弟元素来选择元素。
+- 属性选择器选择具有特定属性或特定属性值的元素。
+- 级联评估选择器的特异性，通过每个选择器目标元素的具体程度来评估重要性。
+- 颜色值可以通过名称、十六进制值、红绿蓝值或色相、饱和度、亮度值来指定。
+- 背景简写属性可以指定元素的背景颜色、图像、重复、位置和链接方式。
 
-•级联允许样式规则从一个样式表传递到另一个样式表，并决定应用哪种样式规则。
+## 9 管理盒模型
 
-•每个样式规则由一个选择器和一个声明块组成。
-
-•每个声明指定一个属性和一个应用于该属性的值——用冒号 `:` 隔开。
-
-•一个样式规则集可能包含多个声明——每个声明都用分号 `;` 结束。
-
-•样式规则可以在内部样式表中指定、内联到 HTML 元素的 `style` 属性中，或在外部样式表中指定。
-
-•类型选择器选择所有匹配选择器的元素。
-
-•类选择器选择包含 `class` 属性且其属性值与选择器匹配的元素。
-
-•标识选择器选择包含 `id` 属性且其属性值与选择器匹配的元素。
-
-•相对选择器是组合器，它们相对于其他元素作为后代、子元素或兄弟元素来选择元素。
-
-•属性选择器选择具有特定属性或特定属性值的元素。
-
-•级联评估选择器的特异性，通过每个选择器目标元素的具体程度来评估重要性。
-
-•颜色值可以通过名称、十六进制值、红绿蓝值或色相、饱和度、亮度值来指定。
-
-•背景简写属性可以指定元素的背景颜色、图像、重复、位置和链接方式。
-
-| 9 管理盒模型 | ![image](img/pg235_1.jpg) |
+![image](img/pg235_1.jpg)
 
 *本章演示了如何设置围绕所有 HTML 元素的内容盒。*
 
-**识别盒子**
+### 内容
 
-**内联显示**
+- 识别盒子
+- 内联显示
+- 定义尺寸
+- 控制边框
+- 添加内边距
+- 设置外边距
+- 定位盒子
+- 固定位置
+- 堆叠盒子
+- 浮动盒子
+- 处理溢出
+- 布局页面
+- 总结
 
-**定义尺寸**
-
-**控制边框**
-
-**添加内边距**
-
-**设置外边距**
-
-**定位盒子**
-
-**固定位置**
-
-**堆叠盒子**
-
-**浮动盒子**
-
-**处理溢出**
-
-**布局页面**
-
-**总结**
-
-**识别盒子**
+### 识别盒子
 
 网页上的内容显示在浏览器生成的若干个不可见的矩形盒子中。这些内容盒可以是“块级”的或“内联的”。
 
@@ -5787,7 +6136,7 @@ no-repeat bottom right fixed ; }
 
 块级内容盒通常在盒子前后有换行符，例如段落、标题和除元素。
 
-相反，内联内容盒不添加换行符，而是创建在内容行内部，例如 span、强调和链接元素。
+相反，内联内容盒不添加换行符，而是创建在内容行内部，例如`span`、强调和链接元素。
 
 每个块级内容盒由一个核心内容区域组成，周围环绕着可选的内边距、边框和外边距区域：
 
@@ -5805,28 +6154,28 @@ no-repeat bottom right fixed ; }
 
 灰色区域是透明的。
 
-![image](img/3b.jpg)现在，添加一条样式规则，将背景图像固定位置附加到页面上
+![image](img/3b.jpg)
 
-```
+现在，添加一条样式规则，将背景图像固定位置附加到页面上：
+
+```css
 body { background : url( crab.png )
 no-repeat bottom right fixed ; }
 ```
 
-![image](img/4b.jpg)保存 HTML 文档，然后在浏览器中打开网页以查看背景——滚动页面查看固定的页面背景图像
+![image](img/4b.jpg)
+
+保存 HTML 文档，然后在浏览器中打开网页以查看背景——滚动页面查看固定的页面背景图像。
 
 ![image](img/pg185_2.jpg)
 
 ![image](img/pg185_3.jpg)
 
+## 盒模型
 
+如果你指定了元素的宽度和高度，你只是设置了内容区域的宽度和高度。你必须加上内边距、边框和外边距区域，才能计算出元素占据的总空间。在这种情况下，元素占据的总宽度为`300px`（宽度）+ `20px`（左右内边距）+ `10px`（左右边框）+ `40px`（左右外边距）= 370 像素。
 
-
-
-# 盒模型
-
-如果你指定了元素的宽度和高度，你只是设置了内容区域的宽度和高度。你必须加上内边距、边框和外边距区域，才能计算出元素占据的总空间。在这种情况下，元素占据的总宽度为 `300px`（宽度）+ `20px`（左右内边距）+ `10px`（左右边框）+ `40px`（左右外边距）= 370 像素。
-
-# 内联显示
+## 内联显示
 
 网页依赖于创建块级内容框来确定其整体布局，并在块内创建内联内容框来确定其精确布局。
 
@@ -5834,25 +6183,25 @@ no-repeat bottom right fixed ; }
 
 这非常强调元素是块级还是内联，以确定显示格式。通常，每个元素的默认显示格式是最合适的。例如，通常希望将列表项显示在块级列表的单独行上。
 
-元素的显示格式也可以通过样式规则显式确定，该规则将 `block` 或 `inline` 关键字分配给该元素的 `display` 属性。这意味着无需更改 HTML 标签即可以不同格式显示内容。例如，列表项可以通过 `display : inline ;` 声明显示在一行上。
+元素的显示格式也可以通过样式规则显式确定，该规则将`block`或`inline`关键字分配给该元素的`display`属性。这意味着无需更改 HTML 标签即可以不同格式显示内容。例如，列表项可以通过`display : inline ;`声明显示在一行上。
 
-此外，内联内容框的 `display` 属性可以赋值为 `inline-block`，使其显示方式类似于块级内容框。`inline-block` 仍然像往常一样内联显示，但与常规内联内容框不同，其宽度和高度属性可以赋值以控制其大小。
+此外，内联内容框的`display`属性可以赋值为`inline-block`，使其显示方式类似于块级内容框。`inline-block`仍然像往常一样内联显示，但与常规内联内容框不同，其宽度和高度属性可以赋值以控制其大小。
 
 ![images](img/pg190_2.jpg)
 
-使用 `display:inline ;` 声明时，上下外边距和内边距不会生效——但使用 `inline-block` 时会生效。另外，请注意 `display : block ;` 声明会在元素后添加一个换行符——而 `inline-block` 不会。
+使用`display:inline ;`声明时，上下外边距和内边距不会生效——但使用`inline-block`时会生效。另外，请注意`display : block ;`声明会在元素后添加一个换行符——而`inline-block`不会。
 
 ![images](img/forget.jpg)
 
 为元素分配非默认显示类型只会改变其显示方式——在文档树中，内联元素始终是块级元素的后代。
 
-![images](img/hot.jpg)
+![image](img/hot.jpg)
 
-如果每个列表项元素都设置为 `inline-block`，则列表项可以水平显示，而不是垂直显示。这通常用于创建水平链接的导航栏——请参见此处。
+如果每个列表项元素都设置为`inline-block`，则列表项可以水平显示，而不是垂直显示。这通常用于创建水平链接的导航栏——请参见此处。
 
 ![image](img/1r.jpg)
 
-创建一个包含三个无序列表的 HTML 文档
+创建一个包含三个无序列表的 HTML 文档：
 
 ```html
 <ul class="block">
@@ -5872,7 +6221,7 @@ no-repeat bottom right fixed ; }
 
 ![image](img/2r.jpg)
 
-添加一个样式表，其中包含设置每个列表边框和列表项元素的规则
+添加一个样式表，其中包含设置每个列表边框和列表项元素的规则：
 
 ```css
 ul         { border : 2px solid Tomato ; }
@@ -5882,7 +6231,7 @@ padding : 5px ; width : 100px ; height : 20px ; }
 
 ![image](img/3r.jpg)
 
-现在，添加样式规则以指定每个列表项元素的显示类型
+现在，添加样式规则以指定每个列表项元素的显示类型：
 
 ```css
 ul.block > li { display : block ; }
@@ -5892,22 +6241,22 @@ ul.inline-block > li { display : inline-block ; }
 
 ![image](img/4r.jpg)
 
-保存 HTML 文档，然后在浏览器中打开网页，查看以特定格式显示的内容
+保存 HTML 文档，然后在浏览器中打开网页，查看以特定格式显示的内容。
 
 ![images](img/pg191_1.jpg)
 
 ![images](img/snake.jpg)
 
-`Inline` 框不会包含顶部内边距或外边距值。`Inline Block` 框会包含顶部内边距或外边距值。
+`Inline`框不会包含顶部内边距或外边距值。`Inline Block`框会包含顶部内边距或外边距值。
 
-# 定义尺寸
+## 定义尺寸
 
 当为属性分配任何非零值时，声明必须包含一个两个字母的单位名称，以指定要应用的测量单位。CSS 规范提供了以下表示现实世界测量的单位名称：
 
 ![image](img/pg192_1.jpg)
 
 | 单位 | 描述 | 示例 |
-|------|------|------|
+|---|---|---|
 | `in`（英寸） | 美国标准长度测量单位 | `div { width : 1in ; }` |
 | `cm`（厘米） | 公制长度单位，2.54 厘米等于 1 英寸 | `div { height : 2.54cm ; }` |
 | `mm`（毫米） | 公制长度单位（一厘米的十分之一），25.4 毫米等于 1 英寸 | `div { height : 25.4mm ; }` |
@@ -5917,7 +6266,7 @@ ul.inline-block > li { display : inline-block ; }
 CSS 规范还提供了以下表示根据显示设备的相对值的单位名称：
 
 | 单位 | 描述 | 示例 |
-|------|------|------|
+|---|---|---|
 | `em`（字体大小） | 字体大小的抽象印刷单位，1em 等于给定字体的高度 | `div { font-size : 12pt ; }`（1em = 12pt） |
 | `ex`（字体大小） | 字体大小的抽象印刷单位，1ex 等于字体中小写字母“x”的高度（通常为 1em 的 50%） | `div { font-size : 12pt ; }`（1ex = 6pt） |
 | `px`（像素） | 抽象单位，表示计算机显示器上的点，当显示器分辨率为 1024x768 时，每行有 1024 个像素 | `div { height : 100px ; }` |
@@ -5932,7 +6281,7 @@ CSS 规范还提供了以下表示根据显示设备的相对值的单位名称�
 
 ![image](img/1r.jpg)
 
-创建一个包含四个 div 元素的 HTML 文档
+创建一个包含四个`div`元素的 HTML 文档：
 
 ```html
 <div id="absolute">3in x &half;in</div>
@@ -5948,7 +6297,7 @@ CSS 规范还提供了以下表示根据显示设备的相对值的单位名称�
 
 ![image](img/2r.jpg)
 
-添加一个样式表，其中包含使用绝对单位设置元素大小的规则
+添加一个样式表，其中包含使用绝对单位设置元素大小的规则：
 
 ```css
 div#absolute { width : 3in ; height : 0.5in ;
@@ -5957,7 +6306,9 @@ background : Tomato ; }
 
 ![image](img/3r.jpg)
 
-接下来，添加使用显示器分辨率设置元素大小的规则
+接下来，添加使用显示器分辨率设置元素大小的规则。
+
+
 
 ```css
 div#container { width : 400px ; height : 150px ;
@@ -5966,7 +6317,7 @@ background : MistyRose ; }
 
 ![image](img/4r.jpg)
 
-现在，添加使用百分比设置元素大小的规则
+现在，添加使用百分比设置元素大小的规则：
 
 ```css
 div#percent { width : 50% ; height : 50% ;
@@ -5975,7 +6326,7 @@ background : Tomato ; }
 
 ![image](img/5r.jpg)
 
-然后，添加相对于字体高度设置元素大小的规则
+然后，添加相对于字体高度设置元素大小的规则：
 
 ```css
 div#relative { width : 20em ; height : 2em ;
@@ -5984,7 +6335,7 @@ background : LightSalmon ; }
 
 ![image](img/6r.jpg)
 
-保存 HTML 文档，然后在浏览器中打开网页，查看元素大小
+保存 HTML 文档，然后在浏览器中打开网页，查看元素大小。
 
 ![images](img/pg193_1.jpg)
 
@@ -6002,10 +6353,6 @@ background : LightSalmon ; }
 - 当列出三个值时，第一个值应用于顶部边框，第二个值应用于左右边框，第三个值应用于底部边框。
 - 当列出四个值时，它们按顺时针方向应用于顶部、右侧、底部和左侧边框。
 
-
-
-
-
 默认的 `border-width` 值为 `medium`（一个计算值），默认的 `border-color` 值继承自元素的 `color` 属性，但默认的 `border-style` 为 `none`。这意味着在赋值之前，边框将是不可见的——可能的 `border-style` 值有 `solid`、`double`、`dotted`、`dashed`、`groove`、`ridge`、`inset`、`outset`、`hidden` 和 `none`。
 
 与其为 `border-width`、`border-color` 和 `border-style` 属性分别创建样式规则，使用 CSS 简写技术更为简单，通过一个空格分隔的列表为 `border` 属性指定这三个属性中的每一个值。这可以统一地为内容框的每一边应用指定宽度、颜色和样式的边框。例如，样式规则声明 `border : 0.5in dotted Red ;` 将为内容框的四边都应用半英寸宽的红色点线边框。
@@ -6014,7 +6361,7 @@ background : LightSalmon ; }
 
 ![images](img/hot.jpg)
 
-创建一个包含四个段落的 HTML 文档
+创建一个包含四个段落的 HTML 文档：
 
 ```
 <p id=”no1”>Solid - Inherit - Medium</p>
@@ -6028,20 +6375,20 @@ background : LightSalmon ; }
 
 border.html
 
-![image](img/2r.jpg)保存 HTML 文档，然后创建一个带有规则的链接样式表，以添加一个继承颜色的边框
+![image](img/2r.jpg)保存 HTML 文档，然后创建一个带有规则的链接样式表，以添加一个继承颜色的边框：
 
 ```
 p#no1 { color : Tomato ; border : solid ; }
 ```
 
-![image](img/3r.jpg)接下来，添加带有简写声明的规则，仅在内容区域的上下创建边框
+![image](img/3r.jpg)接下来，添加带有简写声明的规则，仅在内容区域的上下创建边框：
 
 ```css
 p#no2 { border-top : 0.5em dotted LightSalmon ;
 border-bottom : 0.5em dashed DarkSalmon ; }
 ```
 
-![image](img/4r.jpg)现在，添加通过独立属性创建边框的规则
+![image](img/4r.jpg)现在，添加通过独立属性创建边框的规则：
 
 ```css
 p#no3 { border-width : 1em ;
@@ -6049,13 +6396,13 @@ border-style : ridge double ;
 border-color : MistyRose ; }
 ```
 
-![image](img/5r.jpg)然后，使用推荐的 CSS 简写技术添加一个在四边创建边框的规则
+![image](img/5r.jpg)然后，使用推荐的 CSS 简写技术添加一个在四边创建边框的规则：
 
 ```css
 p#no4 { border : 1em outset Tomato ; }
 ```
 
-![image](img/6r.jpg)保存 HTML 文档，然后在浏览器中打开网页以查看边框
+![image](img/6r.jpg)保存 HTML 文档，然后在浏览器中打开网页以查看边框。
 
 ![images](img/pg195_1.jpg)
 
@@ -6089,7 +6436,7 @@ p#no4 { border : 1em outset Tomato ; }
 
 `outset` 边框样式可以创建凸按钮的效果，而 `inset` 边框样式可以创建凹按钮的效果。
 
-![image](img/1r.jpg)创建一个包含三个段落的 HTML 文档，每个段落包含一个 span 元素并由水平线分隔
+![image](img/1r.jpg)创建一个包含三个段落的 HTML 文档，每个段落包含一个 span 元素并由水平线分隔：
 
 ```
 水平
@@ -6101,7 +6448,7 @@ p#no4 { border : 1em outset Tomato ; }
 
 padding.html
 
-![image](img/2r.jpg)添加一个样式表，为段落和 span 元素上色
+![image](img/2r.jpg)添加一个样式表，为段落和 span 元素上色：
 
 ```css
 p { background : LightSalmon ; }
@@ -6109,25 +6456,25 @@ span { background : MistyRose ;
 border : 0.3em dashed Tomato ; }
 ```
 
-![image](img/3r.jpg)接下来，添加样式规则为第一个内容框的左右边添加内边距
+![image](img/3r.jpg)接下来，添加样式规则为第一个内容框的左右边添加内边距：
 
 ```css
 span#pad-h { padding : 0 3em 0 3em ; }
 ```
 
-![image](img/4r.jpg)现在，添加样式规则为第二个内容框的上下边添加内边距
+![image](img/4r.jpg)现在，添加样式规则为第二个内容框的上下边添加内边距：
 
 ```css
 span#pad-v { padding : 1em 0 1em 0 ; }
 ```
 
-![image](img/5r.jpg)然后，添加样式规则为第三个元素的所有边添加统一的内边距
+![image](img/5r.jpg)然后，添加样式规则为第三个元素的所有边添加统一的内边距：
 
 ```css
 span#pad-hv { padding : 1em ; }
 ```
 
-![image](img/6r.jpg)保存 HTML 文档，然后在浏览器中打开网页以查看添加的内边距
+![image](img/6r.jpg)保存 HTML 文档，然后在浏览器中打开网页以查看添加的内边距。
 
 ![images](img/pg197_1.jpg)
 
@@ -6141,10 +6488,6 @@ span#pad-hv { padding : 1em ; }
 
 通过样式规则为 `margin` 属性赋值，每个内容框都可以在整个内容、内边距和边框区域周围添加外部透明的“margin”空间。`margin` 属性的默认值为零，但实际上浏览器应用了自己的内置默认值以允许元素之间产生间距。例如，标题元素总是在其后的段落元素之前留出外边距区域。
 
-
-
-
-
 `margin` 属性可以指定为单位值、百分比值，或使用 `auto` 关键字让浏览器计算合适的边距。当对元素的 `margin` 属性指定 `auto` 关键字时，浏览器会首先计算该元素到左侧和右侧的距离（直到其容器元素的边界），然后将总和平分以计算每个侧边边距的值。例如，对宽度为 `80px` 的段落元素应用 `margin : auto ;` 规则，而该元素包含在一个宽度为 `400px` 的外部 `div` 元素中，浏览器会将 `320px` 的总差值平分，然后在段落元素的两侧应用 `160px` 宽的边距——从而使其在容器 `div` 元素中居中定位。
 
 如果希望内容框的每个边具有不同的边距宽度，可以通过为元素的 `margin-top`、`margin-right`、`margin-bottom` 和 `margin-left` 属性创建规则来单独设置 `margin`。例如，`margin-top : 0.5in ; margin-bottom : 0.5in ;` 的样式规则声明将在顶部和底部应用半英寸的边距区域。或者，也可以使用 CSS 简写声明 `margin : 0.5in 0 0.5in 0 ;` 实现相同的效果。
@@ -6155,7 +6498,7 @@ span#pad-hv { padding : 1em ; }
 
 ![image](img/1r.jpg)
 
-创建一个 HTML 文档，其中包含一个外部 `div` 元素，该元素包含三个内部 `div` 元素
+创建一个 HTML 文档，其中包含一个外部 `div` 元素，该元素包含三个内部 `div` 元素：
 
 ```html
 <div class=”container”> Centered Block
@@ -6171,7 +6514,7 @@ margin.html
 
 ![image](img/2r.jpg)
 
-添加样式表，通过规则将外部 `div` 在页面内居中，并为该 `div` 周围创建一个边框
+添加样式表，通过规则将外部 `div` 在页面内居中，并为该 `div` 周围创建一个边框：
 
 ```css
 div.container { margin : auto ;
@@ -6180,7 +6523,7 @@ border : 0.3em dashed Tomato ; }
 
 ![image](img/3r.jpg)
 
-接下来，添加样式规则移除第一个内部 `div` 的所有边距，并为其设置背景颜色
+接下来，添加样式规则移除第一个内部 `div` 的所有边距，并为其设置背景颜色：
 
 ```css
 div.zero { margin : 0 ; width : 10em ;
@@ -6189,7 +6532,7 @@ background : LightSalmon ; }
 
 ![image](img/4r.jpg)
 
-现在，添加样式规则使第二个内部 `div` 居中，创建一个边框并为其设置背景颜色
+现在，添加样式规则使第二个内部 `div` 居中，创建一个边框并为其设置背景颜色：
 
 ```css
 div.center { margin : auto ; border : 0.3em dashed Tomato ;
@@ -6198,7 +6541,7 @@ width : 10em ; background : MistyRose ; }
 
 ![image](img/5r.jpg)
 
-然后，添加样式规则为第三个内部 `div` 添加顶部和左侧边距，并为其设置背景颜色
+然后，添加样式规则为第三个内部 `div` 添加顶部和左侧边距，并为其设置背景颜色：
 
 ```css
 div.offset { margin : 20px 0 0 20px ;
@@ -6207,7 +6550,7 @@ background : LightSalmon ; }
 
 ![image](img/6r.jpg)
 
-保存 HTML 文档，然后在浏览器中打开网页查看边距样式
+保存 HTML 文档，然后在浏览器中打开网页查看边距样式。
 
 ![images](img/pg199_1.jpg)
 
@@ -6249,7 +6592,7 @@ background : LightSalmon ; }
 
 ![image](img/1r.jpg)
 
-创建一个 HTML 文档，包含两个 `div` 元素，每个元素都包含一个 `span` 元素
+创建一个 HTML 文档，包含两个 `div` 元素，每个元素都包含一个 `span` 元素：
 
 ```html
 <div class=”left”>
@@ -6265,7 +6608,7 @@ position.html
 
 ![image](img/2r.jpg)
 
-添加样式表，通过规则指定 `div` 元素的大小并为所有元素添加边框
+添加样式表，通过规则指定 `div` 元素的大小并为所有元素添加边框：
 
 ```css
 div { width : 250px ; height : 100px ; }
@@ -6274,7 +6617,7 @@ div,span { border : 2px solid Tomato ; }
 
 ![image](img/3r.jpg)
 
-接下来，添加样式规则对 `div` 元素进行绝对定位
+接下来，添加样式规则对 `div` 元素进行绝对定位：
 
 ```css
 div.left { position : absolute ; top : 20px ; left : 20px ; }
@@ -6283,7 +6626,7 @@ div.right { position : absolute ; top : 80px ; left : 245px ; }
 
 ![image](img/4r.jpg)
 
-现在，添加样式规则对 `span` 元素进行相对定位
+现在，添加样式规则对 `span` 元素进行相对定位：
 
 ```css
 span.offset { position : relative ; top : 70px ; left : 25px ; }
@@ -6291,7 +6634,7 @@ span.offset { position : relative ; top : 70px ; left : 25px ; }
 
 ![image](img/5r.jpg)
 
-保存 HTML 文档，然后在浏览器中打开网页查看 `div` 元素在页面上的绝对坐标定位，并查看 `span` 相对于其容器的定位
+保存 HTML 文档，然后在浏览器中打开网页查看 `div` 元素在页面上的绝对坐标定位，并查看 `span` 相对于其容器的定位。
 
 ![images](img/pg201_1.jpg)
 
@@ -6303,17 +6646,15 @@ span.offset { position : relative ; top : 70px ; left : 25px ; }
 
 固定定位方案像绝对定位方案一样，完全将选定元素的内容框从标准流布局中移除。但与绝对定位（偏移值相对于容器元素的边界）不同，在固定定位中，偏移值相对于视口（viewport）——位置相对于浏览器窗口，而不是文档的任何部分。
 
+
+
 ![images](img/pg202_1.jpg)
 
-很有用，固定元素位置可以模拟框架式界面，在这种界面中，无论页面如何滚动，某些框架都保持固定位置。例如，Logo 框架可以固定在页面的底部角落，即使页面滚动时它也始终保持可见。
-
-
-
-
+固定元素位置可以模拟框架式界面。在这种界面中，无论页面如何滚动，某些框架都保持固定位置。例如，Logo 框架可以固定在页面的底部角落，即使页面滚动时它也始终保持可见。
 
 粘性定位（sticky positioning）方案也可用于确保元素在用户滚动页面时保持可见。这最初是将一个元素相对于页面上的其他元素进行放置，并在页面滚动时保持此位置，直到它到达视口中指定的偏移位置。在这一点上，元素将变为固定位置并固定在原处。滚动回指定的偏移位置时，元素将恢复其相对定位。
 
-与固定定位（fixed positioning）一样，元素的位置可以是粘性的，以模拟框架式的界面。例如，一个横幅框架框可以固定在视口的顶部，使其即使在页面滚动时也能保持持续可见。
+与固定定位（fixed positioning）一样，元素的位置可以是粘性的，以模拟框架式的界面。例如，一个横幅框架可以固定在视口的顶部，使其即使在页面滚动时也能保持持续可见。
 
 要使用粘性定位方案，你必须为元素的 `top`、`bottom`、`left` 或 `right` 属性至少一个指定阈值偏移位置，否则当用户滚动页面时，它将保持相对定位。
 
@@ -6321,7 +6662,7 @@ span.offset { position : relative ; top : 70px ; left : 25px ; }
 
 在编写本文时，Safari 网页浏览器尚不支持 `position : sticky ;` 规则。在 Safari 实现此功能之前，你必须为该浏览器包含 `position : -webkit-sticky ;` 规则。
 
-![image](img/1r.jpg) 创建一个包含标题、两个 div 元素和一个大图片的 HTML 文档
+![image](img/1r.jpg) 创建一个包含标题、两个 `div` 元素和一个大图片的 HTML 文档
 
 ```html
 <h1>Fixing Elements</h1>
@@ -6332,27 +6673,27 @@ span.offset { position : relative ; top : 70px ; left : 25px ; }
 
 ![images](img/htmlr.jpg)
 
-fixed.html
+`fixed.html`
 
-![image](img/2r.jpg) 添加一个包含规则的样式表，以指定 div 元素的尺寸和颜色
+![image](img/2r.jpg) 添加一个包含规则的样式表，以指定 `div` 元素的尺寸和颜色
 
 ```css
 div { width : 150px ; padding : 10px ; background : Tomato ; color : White ; }
 ```
 
-![image](img/3r.jpg) 接下来，添加样式规则，使第一个 div 元素在滚动时居中固定在页面顶部
+![image](img/3r.jpg) 接下来，添加样式规则，使第一个 `div` 元素在滚动时居中固定在页面顶部
 
 ```css
 div.sticky { position : sticky ; top : 10px ; margin : auto ; }
 ```
 
-![image](img/4r.jpg) 现在，添加样式规则，在滚动时将第二个 div 元素固定在页面的右下角
+![image](img/4r.jpg) 现在，添加样式规则，在滚动时将第二个 `div` 元素固定在页面的右下角
 
 ```css
 div.fixed { position : fixed ; bottom : 0px ; right : 0px ; }
 ```
 
-![image](img/5r.jpg) 保存 HTML 文档，然后在浏览器中打开网页并滚动页面，查看 div 元素保持可见
+![image](img/5r.jpg) 保存 HTML 文档，然后在浏览器中打开网页并滚动页面，查看 `div` 元素保持可见
 
 ![images](img/pg203_1.jpg)
 
@@ -6362,9 +6703,9 @@ div.fixed { position : fixed ; bottom : 0px ; right : 0px ; }
 
 ![images](img/pg203_3.jpg)
 
-ruler.png – 70px x 525px
+`ruler.png` – 70px x 525px
 
-## 堆叠盒 (Stack Boxes)
+## 堆叠盒（Stack Boxes）
 
 改变默认的 `static` 定位方案，通过给 `position` 属性分配 `absolute` 值，允许元素重叠——按照它们在 HTML 代码中列出的顺序相互堆叠。
 
@@ -6380,7 +6721,7 @@ ruler.png – 70px x 525px
 
 将包含文本的元素堆叠在图像元素之上通常很有用，可以为图像添加文本标签。
 
-![image](img/1r.jpg) 创建一个包含三个 div 元素和一个图像元素的 HTML 文档
+![image](img/1r.jpg) 创建一个包含三个 `div` 元素和一个图像元素的 HTML 文档
 
 ```html
 <div class="container">
@@ -6392,39 +6733,39 @@ ruler.png – 70px x 525px
 
 ![images](img/htmlr.jpg)
 
-stack.html
+`stack.html`
 
 ![images](img/hot.jpg)
 
-指定给 `z-index` 属性的值用于确定堆叠顺序可以是正整数（如 1），也可以是负整数（如 -1）。
+指定给 `z-index` 属性的值用于确定堆叠顺序，可以是正整数（如 1），也可以是负整数（如 -1）。
 
-![image](img/2r.jpg) 添加一个包含规则的样式表，将外部 div 元素位于堆叠的底部
+![image](img/2r.jpg) 添加一个包含规则的样式表，将外部 `div` 元素位于堆叠的底部
 
 ```css
 div.container { position : absolute ; top : 0px ; left : 0px ; z-index : 0 ; }
 ```
 
-![image](img/3r.jpg) 接下来，添加规则将 div 元素置于堆叠的下一层
+![image](img/3r.jpg) 接下来，添加规则将 `div` 元素置于堆叠的下一层
 
 ```css
 div.top-label { position : absolute ; color : Red ; top : 10px ; right : 20px ; z-index : 1 ; }
 ```
 
-![image](img/4r.jpg) 现在，添加规则将 div 元素置于堆叠的最顶层
+![image](img/4r.jpg) 现在，添加规则将 `div` 元素置于堆叠的最顶层
 
 ```css
 div.btm-label { position : absolute ; color : Red ; bottom : 10px ; left : 220px ; z-index : 2 ; }
 ```
 
-![image](img/5r.jpg) 保存 HTML 文档，然后在浏览器中打开网页并滚动页面查看 div 元素
+![image](img/5r.jpg) 保存 HTML 文档，然后在浏览器中打开网页并滚动页面查看 `div` 元素
 
 ![images](img/pg205_3.jpg)
 
-## 浮动盒 (Float Boxes)
+## 浮动盒（Float Boxes）
 
 CSS `float` 属性允许内容框定位在其父元素的一侧，通常允许文字环绕它。你可以使用 `float: left;`、`float: right;` 或 `float: none;`。`clear` 属性随后防止元素环绕浮动对象。
 
-![image](img/1r.jpg) 创建一个包含三个段落两个图片的 HTML 文档
+![image](img/1r.jpg) 创建一个包含三个段落和两个图片的 HTML 文档
 
 ```html
 <p>巨大的加速度——禁忌之果！这辆由 500 马力 V10 引擎驱动的 3300 磅跑车诱使你对沥油路咬一口。</p>
@@ -6436,15 +6777,15 @@ CSS `float` 属性允许内容框定位在其父元素的一侧，通常允许�
 
 ![images](img/htmlr.jpg)
 
-float.html
+`float.html`
 
 ![images](img/pngr.jpg)
 
-viper-front.png - 150px x 128px
+`viper-front.png` - 150px x 128px
 
 ![images](img/pngr.jpg)
 
-viper-rear.png - 155px x 115px
+`viper-rear.png` - 155px x 115px
 
 ![image](img/2r.jpg) 添加一个包含规则的样式表来给段落上色
 
@@ -6478,10 +6819,6 @@ p.clear { clear : both ; }
 
 ![images](img/pg207_2.jpg)
 
-
-
-
-
 # CSS 浮动与溢出
 
 通过 CSS，任何元素都可以通过设置其 `float` 属性浮动到其包含元素的侧面。
@@ -6490,7 +6827,7 @@ p.clear { clear : both ; }
 
 尽管 CSS 提供了许多控制来指定内容框的精确大小和位置，但并不能保证在所有情况下内容都能整齐地容纳在其边界内。例如，考虑增加文本内容的字体大小，该文本原本恰好适合块级内容框——此时文本可能会“溢出”到框边界之外。
 
-![图片](img/pg208_1.jpg`)
+![图片](img/pg208_1.jpg)
 
 默认情况下，溢出的内容通常是可见的，但 CSS 的 `overflow` 属性可以使用 `hidden` 或 `scroll` 关键字指定替代的处理行为。使用 `overflow : hidden ;` 时，溢出的内容将不可见；而使用 `overflow : scroll ;` 时，浏览器将提供水平和垂直滚动条，用户可以使用它们查看溢出的内容。
 
@@ -6498,15 +6835,15 @@ p.clear { clear : both ; }
 
 文本内容通常会在块级内容框内的单词断点处自动换行到下一行，因为 `white-space` 属性默认设置为 `normal`。但是，你可以通过 `white-space : nowrap ;` 样式规则禁用文本换行。由于默认情况下溢出的内容通常是可见的，文本将显示在单行上，并延伸到内容框的边界之外。
 
-![图片](img/snake.jpg`)
+![图片](img/snake.jpg)
 
 `overflow` 属性仅对具有指定高度的块级元素有效，否则块会自动适应内容。
 
 如果不想显示溢出的文本，可以像处理其他内容一样使用 `overflow : hidden ;` 规则将其隐藏。此外，你可以使用 `text-overflow` 属性的样式规则指定如何处理溢出的文本。该属性可以接受 `clip` 值，它会截断文本字符而不考虑单词断点；或者接受 `ellipsis` 值，它会用省略号 ... 替换最后被截断的字母——以指示文本已溢出。
 
-![图片](img/1r.jpg`)
+![图片](img/1r.jpg)
 
-创建一个包含六个 division 元素的 HTML 文档
+创建一个包含六个 `div` 元素的 HTML 文档
 
 ```html
 <div class="vis"><img src="berry.png" alt="浆果"></div>
@@ -6517,21 +6854,21 @@ p.clear { clear : both ; }
 <div class="txt">CSS 代表层叠样式表</div>
 ```
 
-![图片](img/htmlr.jpg`)
+![图片](img/htmlr.jpg)
 
 `overflow.html`
 
-![图片](img/2r.jpg`)
+![图片](img/2r.jpg)
 
-添加一个样式表，其中包含指定 division 的块类型和大小的规则——使其小于图片大小
+添加一个样式表，其中包含指定 `div` 的块类型和大小的规则——使其小于图片大小
 
 ```css
 div { display : inline-block ; width : 80px ; height : 130px ; border : 2px dashed Tomato ; margin-right : 60px ; }
 ```
 
-![图片](img/pngr.jpg`)
+![图片](img/pngr.jpg)
 
-![图片](img/3r.jpg`)
+![图片](img/3r.jpg)
 
 接下来，添加样式规则来处理图片溢出
 
@@ -6541,13 +6878,13 @@ div.hid { overflow : hidden ; }
 div.scr { overflow : scroll ; }
 ```
 
-![图片](img/pg209_1.jpg`)
+![图片](img/pg209_1.jpg)
 
 `berry.png`
 
 `100px x 130px`
 
-![图片](img/4r.jpg`)
+![图片](img/4r.jpg)
 
 现在，添加样式规则来控制单个滚动条
 
@@ -6556,7 +6893,7 @@ div.ver { width : 120px ; overflow-x : hidden ; overflow-y : scroll ; }
 div.hor { height : 150px ; overflow-x : scroll ; overflow-y : hidden ; }
 ```
 
-![图片](img/5r.jpg`)
+![图片](img/5r.jpg)
 
 然后，添加样式规则来处理文本溢出
 
@@ -6564,23 +6901,23 @@ div.hor { height : 150px ; overflow-x : scroll ; overflow-y : hidden ; }
 div.txt { white-space : nowrap ; overflow : hidden ; text-overflow : ellipsis ; }
 ```
 
-![图片](img/6r.jpg`)
+![图片](img/6r.jpg)
 
 保存 HTML 文档，然后在浏览器中打开网页，查看溢出是如何处理的
 
-![图片](img/hot.jpg`)
+![图片](img/hot.jpg)
 
-注意溢出的不同处理方式...
+注意溢出的不同处理方式……
 
-![图片](img/pg209_2.jpg`)
+![图片](img/pg209_2.jpg)
 
 ## 页面布局
 
 网页上内容框的排列可以创建许多不同的布局，但最常见的布局方案之一是将网页划分为页眉、导航栏、侧边栏、主要内容区域和页脚——如下图所示。
 
-![图片](img/pg210_1.jpg`)
+![图片](img/pg210_1.jpg)
 
-![图片](img/pg210_2.jpg`)
+![图片](img/pg210_2.jpg)
 
 - **页眉** – 网站名称，通常还有徽标图片
 - **导航栏** – 指向网站页面的超链接。
@@ -6592,13 +6929,13 @@ div.txt { white-space : nowrap ; overflow : hidden ; text-overflow : ellipsis ; 
 
 你还应该包含一个通用的 `box-sizing : border-box ;` 样式规则，该规则允许内容框的内边距和边框包含在每个元素的总宽度和高度内。这意味着边框和内边距不会添加到你为每个元素指定的大小之外——因此你可以更好地控制。
 
-![图片](img/hot.jpg`)
+![图片](img/hot.jpg)
 
 你可以在此处了解更多关于 `box-sizing` 属性的信息：这里。
 
-![图片](img/1r.jpg`)
+![图片](img/1r.jpg)
 
-创建一个包含六个 division 元素的 HTML 文档
+创建一个包含六个 `div` 元素的 HTML 文档
 
 ```html
 <div>页眉</div>
@@ -6609,11 +6946,11 @@ div.txt { white-space : nowrap ; overflow : hidden ; text-overflow : ellipsis ; 
 <div class="footer">页脚</div>
 ```
 
-![图片](img/htmlr.jpg`)
+![图片](img/htmlr.jpg)
 
 `layout.html`
 
-![图片](img/2r.jpg`)
+![图片](img/2r.jpg)
 
 添加一个包含通用覆盖规则的样式表
 
@@ -6621,17 +6958,17 @@ div.txt { white-space : nowrap ; overflow : hidden ; text-overflow : ellipsis ; 
 * { margin : 0px ; box-sizing : border-box ; }
 ```
 
-![图片](img/3r.jpg`)
+![图片](img/3r.jpg)
 
-接下来，添加样式规则为每个 division 元素添加内边距和边框——现在它们已包含在总大小内
+接下来，添加样式规则为每个 `div` 元素添加内边距和边框——现在它们已包含在总大小内
 
 ```css
 div { padding : 5px ; border : 1px solid Tomato ; }
 ```
 
-![图片](img/4r.jpg`)
+![图片](img/4r.jpg)
 
-现在，添加规则来设置三个 division 元素的大小并使其浮动
+现在，添加规则来设置三个 `div` 元素的大小并使其浮动
 
 ```css
 div.column { float : left ; height : 200px ; }
@@ -6639,25 +6976,25 @@ div.side { width : 15% ; }
 div.main { width : 70% ; }
 ```
 
-![图片](img/5r.jpg`)
+![图片](img/5r.jpg)
 
-最后，添加一个样式规则来定位最后一个 division
+最后，添加一个样式规则来定位最后一个 `div`
 
 ```css
 div.footer { clear : both ; }
 ```
 
-![图片](img/6r.jpg`)
+![图片](img/6r.jpg)
 
 保存 HTML 文档，然后在浏览器中打开网页，查看布局
 
-![图片](img/pg211_1.jpg`)
+![图片](img/pg211_1.jpg)
 
-![图片](img/forget.jpg`)
+![图片](img/forget.jpg)
 
-你可以调整三个列 division 的百分比值，但它们加起来必须等于 `100%`。
+你可以调整三个列 `div` 的百分比值，但它们加起来必须等于 `100%`。
 
-![图片](img/hot.jpg`)
+![图片](img/hot.jpg)
 
 这是创建三列布局的传统 CSS 方法，但你将在本书后面了解更现代的响应式布局方法。
 
@@ -6668,43 +7005,41 @@ div.footer { clear : both ; }
 - 内联内容框不添加换行，也不支持 `width`、`height`、`top/bottom margin` 和 `padding` 规则。
 - 内联块元素显示为内联，但与常规内联内容框不同，它们支持 `width` 和 `height` 规则。
 - 当为属性分配任何非零值时，声明必须包含一个两个字母的单位名称。
-- 可以通过指定 `width`、颜色和 `border` 样式的规则在内容框周围添加 `border`。
-- 可以通过指定 `padding` 大小的规则在核心内容区域周围添加 `padding` 空间。
-- `Padding` 和 `border` 添加在通过指定元素 `width` 和 `height` 的规则设置的核心内容区域之外。
-- 可以通过指定 `margin` 大小的规则在内容、`padding` 和 `border` 周围添加透明的 `margin` 空间。
-- 内容框可以放置在网页上的 `absolute`、`relative` 或 `fixed` 位置。
-- 重叠内容框的堆叠顺序可以通过指定 `z-index` 整数值的规则来确定。
 
 
 
-
-
-* 一个内容框，通过指定左侧或右侧边的规则将其定位在其包含元素的侧边界处。
-* 溢出的内容通常是可见的，但可以通过指定隐藏（hidden）或滚动（scroll）选项的规则使其不可见。
-* 为了最好实现网页布局，包含一个通用规则来覆盖浏览器的默认边距大小是非常重要的。
-* 通过通过指定 `box-sizing` 为 `border-box` 的规则，可以将内边距和边框包含在元素的宽度高度中。
+- 可以通过指定`width`、颜色和`border`样式的规则在内容框周围添加`border`。
+- 可以通过指定`padding`大小的规则在核心内容区域周围添加`padding`空间。
+- `Padding`和`border`添加在通过指定元素`width`和`height`的规则设置的核心内容区域之外。
+- 可以通过指定`margin`大小的规则在内容、`padding`和`border`周围添加透明的`margin`空间。
+- 内容框可以放置在网页上的`absolute`、`relative`或`fixed`位置。
+- 重叠内容框的堆叠顺序可以通过指定`z-index`整数值的规则来确定。
+- 一个内容框，通过指定左侧或右侧边的规则将其定位在其包含元素的侧边界处。
+- 溢出的内容通常是可见的，但可以通过指定隐藏（hidden）或滚动（scroll）选项的规则使其不可见。
+- 为了最好实现网页布局，包含一个通用规则来覆盖浏览器的默认边距大小是非常重要的。
+- 通过指定`box-sizing`为`border-box`的规则，可以将内边距和边框包含在元素的宽度高度中。
 
 | 10 操控文本内容 | ![image](img/pg235_1.jpg) |
 
 *本章演示了如何为 HTML 元素内的文本内容设置样式。*
 
-* 建议字体
-* 设置大小
-* 改变样式
-* 使用简写
-* 对齐文本
-* 控制空格
-* 修饰文本
-* 改变方向
-* 增强文本
-* 数字章节
-* 总结
+- 建议字体
+- 设置大小
+- 改变样式
+- 使用简写
+- 对齐文本
+- 控制空格
+- 修饰文本
+- 改变方向
+- 增强文本
+- 数字章节
+- 总结
 
 ## 建议字体
 
-CSS 样式规则可以通过向其 `font-family` 属性指定字体名称，建议浏览器在所选元素中显示文本内容时使用特定的字体。如果用户的系统中可用指定的字体，浏览器将使用该字体；否则，它将使用默认字体显示文本。
+CSS 样式规则可以通过向其`font-family`属性指定字体名称，建议浏览器在所选元素中显示文本内容时使用特定的字体。如果用户的系统中可用指定的字体，浏览器将使用该字体；否则，它将使用默认字体显示文本。
 
-默认字体可能不是作者意图的最佳选择，因此 CSS 额外允许 `font-family` 属性从下表字体中建议一种通用字体族：
+默认字体可能不是作者意图的最佳选择，因此 CSS 额外允许`font-family`属性从下表字体中建议一种通用字体族：
 
 | 字体族: | 描述: | 示例: |
 | :--- | :--- | :--- |
@@ -6720,7 +7055,7 @@ CSS 样式规则可以通过向其 `font-family` 属性指定字体名称，建�
 
 浏览器将首先尝试应用指定的字体，但如果不可用，将从可用字体中选择最符合通用偏好特征的字体。这样，即使没有特定的字体匹配，文本的外观也至少接近作者的意图。
 
-在样式规则的 `font-family` 声明中，首选字体名称应通过逗号分隔出现在通用字体族偏好之前。可以以逗号分隔的列表指定多个具名字体——全部位于通用字体族偏好之前。包含空格的字体名称必须放在引号内，否则浏览器将无法识别。
+在样式规则的`font-family`声明中，首选字体名称应通过逗号分隔出现在通用字体族偏好之前。可以以逗号分隔的列表指定多个具名字体——全部位于通用字体族偏好之前。包含空格的字体名称必须放在引号内，否则浏览器将无法识别。
 
 ![image](img/hot.jpg)
 
@@ -6734,7 +7069,7 @@ CSS 样式规则可以通过向其 `font-family` 属性指定字体名称，建�
 
 ![image](img/htmlg.jpg)
 
-family.html
+`family.html`
 
 ![image](img/2g.jpg) 添加一个包含建议整个段落默认字体的规则的样式表。
 
@@ -6757,11 +7092,11 @@ span.cursive { font-family : “Segoe Script”, cursive ; }
 
 ![image](img/forget.jpg)
 
-在每个 `font-family` 声明中指定通用字体族偏好是一个良好的做法。
+在每个`font-family`声明中指定通用字体族偏好是一个良好的做法。
 
 ## 设置大小
 
-CSS 提供了多种方法通过为 `font-size` 属性赋值，在样式规则声明中指定文本大小。最直观的方法是使用此处列出的任何单位作为绝对大小。
+CSS 提供了多种方法通过为`font-size`属性赋值，在样式规则声明中指定文本大小。最直观的方法是使用此处列出的任何单位作为绝对大小。
 
 ![image](img/pg216.jpg)
 
@@ -6775,19 +7110,19 @@ CSS 提供了多种方法通过为 `font-size` 属性赋值，在样式规则声
 | x-small | 7.5pt |
 | xx-small | 7pt |
 
-使用左侧列出的关键字，medium 大是浏览器的默认字体大小，其余相对于该大小。
+使用左侧列出的关键字，`medium`大是浏览器的默认字体大小，其余相对于该大小。
 
-使用 `em` 或百分比值来指定相对于浏览器默认字体的大小是更好的。例如，`1em` (100%) 等同于 12pt；`1.5em` (150%) 等同于 18pt。
+使用`em`或百分比值来指定相对于浏览器默认字体的大小是更好的。例如，`1em`（100%）等同于 12pt；`1.5em`（150%）等同于 18pt。
 
 ![image](img/hot.jpg) 使用相对值而非绝对值来指定字体大小以获得最大的灵活性。
 
-进一步的改进是在 `font-size` 属性中使用 `vw`（视口宽度）单位，其中 `1vw` 是当前视口的 1%。这允许文本大小适应显示设备或浏览器窗口。
+进一步的改进是在`font-size`属性中使用`vw`（视口宽度）单位，其中`1vw`是当前视口的 1%。这允许文本大小适应显示设备或浏览器窗口。
 
-文本的粗细或“权重”可以使用 `font-weight` 属性以及 `bold` 和 `normal` 关键字轻松调整。
+文本的粗细或“权重”可以使用`font-weight`属性以及`bold`和`normal`关键字轻松调整。
 
-在所选元素的 `font-weight` 属性上指定 `bold` 值会让普通文本显得较粗，而指定 `normal` 值会让粗体文本显得较细。实际上，浏览器使用不同的字体来实现这种效果——对于普通文本，它使用常规字重的字体（例如“Verdana”），但如果可用，对于粗体文本切换到该字体的加重变体（例如“Verdana Bold”）。
+在所选元素的`font-weight`属性上指定`bold`值会让普通文本显得较粗，而指定`normal`值会让粗体文本显得较细。实际上，浏览器使用不同的字体来实现这种效果——对于普通文本，它使用常规字重的字体（例如“Verdana”），但如果可用，对于粗体文本切换到该字体的加重变体（例如“Verdana Bold”）。
 
-![image](img/1g.jpg) 创建包含四个段落的 HTML 文档
+![image](img/1g.jpg) 创建包含四个段落的 HTML 文档。
 
 ```html
 <p>默认大小的中等大小文本</p>
@@ -6796,7 +7131,7 @@ CSS 提供了多种方法通过为 `font-size` 属性赋值，在样式规则声
 <p class="huge">双倍大小的粗体文本</p>
 ```
 
-size.html
+`size.html`
 
 ![image](img/2g.jpg) 添加一个包含相对于视口指定浏览器默认字体大小规则的样式表。
 
@@ -6822,11 +7157,7 @@ p.sm { font-size : 0.6em ; font-family : sans-serif ; }
 p.huge { font-size : 200% ; font-weight : bold ; }
 ```
 
-
-
-
-
-![image](img/6g.jpg)保存 HTML 文档，然后在浏览器中打开网页，查看每个段落的字体大小和字重
+![image](img/6g.jpg) 保存 HTML 文档，然后在浏览器中打开网页，查看每个段落的字体大小和字重。
 
 ![image](img/pg217_1.jpg)
 
@@ -6842,27 +7173,27 @@ p.huge { font-size : 200% ; font-weight : bold ; }
 
 ### 倾斜文本
 
-CSS `font-style` 属性可以通过指定 `italic`（斜体）或 `oblique`（倾斜）关键字来请求浏览器使用当前字体的倾斜变体——这两者细有不同。
+CSS`font-style`属性可以通过指定`italic`（斜体）或`oblique`（倾斜）关键字来请求浏览器使用当前字体的倾斜变体——这两者细有不同。
 
 ![image](img/pg218_1.jpg)
 
-当指定 `italic` 关键字时，浏览器会在字体数据库中寻找当前字体的斜体变体。这是一个真实的字体集，与当前的正体字体相似但在图形上有所不同，以产生每个正体字符的斜体版本。
+当指定`italic`关键字时，浏览器会在字体数据库中寻找当前字体的斜体变体。这是一个真实的字体集，与当前的正体字体相似但在图形上有所不同，以产生每个正体字符的斜体版本。
 
-当指定 `oblique` 关键字时，浏览器会在字体数据库中寻找当前字体的倾斜变体。这可能是一个真实的字体集——正体字体的倾斜版本——或者是一个生成的版本，即浏览器计算出的正体字体的倾斜版本。其中任一种都可以映射到浏览器字体数据库中的 `oblique` 关键字，并被 CSS `font-style` 属性调用。
+当指定`oblique`关键字时，浏览器会在字体数据库中寻找当前字体的倾斜变体。这可能是一个真实的字体集——正体字体的倾斜版本——或者是一个生成的版本，即浏览器计算出的正体字体的倾斜版本。其中任一种都可以映射到浏览器字体数据库中的`oblique`关键字，并被 CSS`font-style`属性调用。
 
-在现实中，使用 `italic` 或 `oblique` 关键字通常会产生相同的斜体文本外观，在任何情况下，都可以通过为元素的 `font-style` 属性指定 `normal` 关键字来恢复正体文本。
+在现实中，使用`italic`或`oblique`关键字通常会产生相同的斜体文本外观，在任何情况下，都可以通过为元素的`font-style`属性指定`normal`关键字来恢复正体文本。
 
 ### 小大写
 
-一个名为 `font-variant` 的 CSS 属性可以指定 `small-caps`（小型大写）值，允许文本字符以流行的小型大写格式显示，使用两种不同大小的大写字母。所选元素中的大写文本将显示为大大写字母，但小写文本将显示为较小的大写字母。
+一个名为`font-variant`的 CSS 属性可以指定`small-caps`（小型大写）值，允许文本字符以流行的小型大写格式显示，使用两种不同大小的大写字母。所选元素中的大写文本将显示为大大写字母，但小写文本将显示为较小的大写字母。
 
-浏览器可以使用字体集中的较小大写字母来实现小型大写效果，也可以通过生成计算出的较小版本。同样，通过指定 `normal` 作为 `font-variant` 可以恢复普通文本。
+浏览器可以使用字体集中的较小大写字母来实现小型大写效果，也可以通过生成计算出的较小版本。同样，通过指定`normal`作为`font-variant`可以恢复普通文本。
 
 ![image](img/hot.jpg)
 
-你可以为标题元素的 `font-variant` 属性指定 `small-caps` 值，使文档标题更有趣。
+你可以为标题元素的`font-variant`属性指定`small-caps`值，使文档标题更有趣。
 
-![image](img/1g.jpg)创建一个包含四个标题的 HTML 文档
+![image](img/1g.jpg) 创建一个包含四个标题的 HTML 文档。
 
 ```html
 <h1>具有普通字体样式的标题</h1>
@@ -6873,34 +7204,34 @@ CSS `font-style` 属性可以通过指定 `italic`（斜体）或 `oblique`（�
 
 ![image](img/htmlg.jpg)
 
-variant.html
+`variant.html`
 
-![image](img/2g.jpg)添加一个包含规则的样式表，该规则用于为第二个标题指定斜体字体样式
+![image](img/2g.jpg) 添加一个包含规则的样式表，该规则用于为第二个标题指定斜体字体样式。
 
 ```css
 h1h1.ital { font-style : italic ; }
 ```
 
-![image](img/3g.jpg)接下来，添加一个规则为第三个标题指定小型大写字体变体
+![image](img/3g.jpg) 接下来，添加一个规则为第三个标题指定小型大写字体变体。
 
 ```css
 h1.caps { font-variant : small-caps; }
 ```
 
-![image](img/4g.jpg)现在，添加规则指定第四个标题的某部分从小型大写字体变体恢复为正常，并添加背景以强调这种变化
+![image](img/4g.jpg) 现在，添加规则指定第四个标题的某部分从小型大写字体变体恢复为正常，并添加背景以强调这种变化。
 
 ```css
 span.norm { font-variant : normal ;
 background : LightGreen ; }
 ```
 
-![image](img/5g.jpg)保存 HTML 文档，然后在浏览器中打开网页，查看每个标题的字体样式和变体
+![image](img/5g.jpg) 保存 HTML 文档，然后在浏览器中打开网页，查看每个标题的字体样式和变体。
 
 ![image](img/pg219_1.jpg)
 
 ## 使用简写
 
-非常有用的是，CSS 提供了一个 `font` 属性，可以在单个组合规则中指定各种字体偏好：
+非常有用的是，CSS 提供了一个`font`属性，可以在单个组合规则中指定各种字体偏好：
 
 `font-style | font-variant | font-weight | font-size | font-family`
 
@@ -6912,23 +7243,23 @@ background : LightGreen ; }
 p { font : italic small-caps bold medium "Times", serif ; }
 ```
 
-`font-size` 和 `font-family` 值是强制性的，但 `font-style`、`font-variant` 和 `font-weight` 属性的前三个值是可选的，并且可以以任何顺序出现。这三个可选属性的每个值都可能完全省略，系统会自动假设一个普通值。
+`font-size`和`font-family`值是强制性的，但`font-style`、`font-variant`和`font-weight`属性的前三个值是可选的，并且可以以任何顺序出现。这三个可选属性的每个值都可能完全省略，系统会自动假设一个普通值。
 
-重要的一点是，未显式指定的值仍将应用普通值——它不会继承自包含元素的值，这可能会产生一些意想不到的结果。例如，在由上述规则样式的包含段落元素（paragraph element）中选择 `span` 元素的样式规则可能像这样：
+重要的一点是，未显式指定的值仍将应用普通值——它不会继承自包含元素的值，这可能会产生一些意想不到的结果。例如，在由上述规则样式的包含段落元素（paragraph element）中选择`span`元素的样式规则可能像这样：
 
 ```css
 span { font : large cursive ; }
 ```
 
-此规则中显式指定的值将应用到 `span` 元素的 `font-size` 和 `font-family` 属性，而对其 `font-style`、`font-variant` 和 `font-weight` 属性将应用普通值——因此，`span` 元素内的文本不会继承段落的斜体、小型大写或加粗值。
+此规则中显式指定的值将应用到`span`元素的`font-size`和`font-family`属性，而对其`font-style`、`font-variant`和`font-weight`属性将应用普通值——因此，`span`元素内的文本不会继承段落的斜体、小型大写或加粗值。
 
-组合字体规则提供的另一种可能性是，通过在 `font-size` 值之后添加正斜杠和单位值来指定 `line-height`（每行之间的间距）。这对于在出现各种字体大小的地方建立通用的行间距非常有用。
+组合字体规则提供的另一种可能性是，通过在`font-size`值之后添加正斜杠和单位值来指定`line-height`（每行之间的间距）。这对于在出现各种字体大小的地方建立通用的行间距非常有用。
 
 ![image](img/snake.jpg)
 
-记住，除非显式指定，否则组合 `font` 规则的每个部分都将应用 `normal` 值——这将覆盖当前父元素的值。
+记住，除非显式指定，否则组合`font`规则的每个部分都将应用`normal`值——这将覆盖当前父元素的值。
 
-![image](img/1g.jpg)创建一个包含多个部分的段落 HTML 文档
+![image](img/1g.jpg) 创建一个包含多个部分的段落 HTML 文档。
 
 ```html
 <p><span class="head">运动鞋比赛</span>
@@ -6938,9 +7269,9 @@ span { font : large cursive ; }
 
 ![image](img/htmlg.jpg)
 
-font.html
+`font.html`
 
-![image](img/2g.jpg)添加带有段落和每个 span 元素字体规则样式表
+![image](img/2g.jpg) 添加带有段落和每个`span`元素字体规则样式表。
 
 ```css
 p { font : normal small/1.3em "Courier",monospace ; }
@@ -6958,31 +7289,29 @@ span.coach { font : medium "Comic Sans", cursive ; }
 
 ![image](img/pg222_1.jpg)
 
-此外，CSS 提供了一个 `text-align` 属性可以明确指定文本在段落元素内容框内的水平对齐方式，使用 `left`、`center`、`right` 或 `justify` 关键字。正如预期，`left` 值将每行对齐到段落的左边缘，`right` 值将每行对齐到段落的右边缘，`center` 值将每行在两个边缘之间居中对齐。
+此外，CSS 提供了一个`text-align`属性可以明确指定文本在段落元素内容框内的水平对齐方式，使用`left`、`center`、`right`或`justify`关键字。正如预期，`left`值将每行对齐到段落的左边缘，`right`值将每行对齐到段落的右边缘，`center`值将每行在两个边缘之间居中对齐。
 
-也许更有趣的是，`justify` 值将每个整行对齐到内容框的左右边缘，并调整字符和单词之间的间距，使每行的长度相等。
-
-
-
-
+也许更有趣的是，`justify`值将每个整行对齐到内容框的左右边缘，并调整字符和单词之间的间距，使每行的长度相等。
 
 在显示文本行时，浏览器会自动计算行高以适应内容大小——通常这将是字体高度的 1.2 倍。然后，浏览器将文本垂直居中显示在计算高度的不可“行框”（line boxes）中。
 
-CSS `vertical-align` 属性可以使用 `baseline`、`sub` 和 `super` 关键字显式指定文本的垂直对齐方式。`baseline` 值指定居中垂直对齐：这是默认行为。`sub` 和 `super` 值会增加行框所在的外层容器的边界，并将文本分别向下或向上移动，以显示下标或上标。
+CSS`vertical-align`属性可以使用`baseline`、`sub`和`super`关键字显式指定文本的垂直对齐方式。`baseline`值指定居中垂直对齐：这是默认行为。`sub`和`super`值会增加行框所在的外层容器的边界，并将文本分别向下或向上移动，以显示下标或上标。
 
-还可以通过向 `vertical-align` 属性指定正值或负的单位值或百分比值，来将内容向上或向下移动。或者，也可以使用 `top`、`middle` 和 `bottom` 关键字来指定与最顶部、中间或最底部内容的垂直对齐。
+还可以通过向`vertical-align`属性指定正值或负的单位值或百分比值，来将内容向上或向下移动。或者，也可以使用`top`、`middle`和`bottom`关键字来指定与最顶部、中间或最底部内容的垂直对齐。
 
-还可以为 `vertical-align` 属性指定另外两个关键字 `text-top` 和 `text-bottom`，以便将其他内联内容框（例如图像元素的框）垂直对齐到行框的顶部或底部。
+还可以为`vertical-align`属性指定另外两个关键字`text-top`和`text-bottom`，以便将其他内联内容框（例如图像元素的框）垂直对齐到行框的顶部或底部。
 
 ![image](img/forget.jpg)
 
-`text-align` 属性仅控制内容框内的文本对齐——它不用于内容框居中。关于如何居中内容框的详情，请参见此处。
+`text-align`属性仅控制内容框内的文本对齐——它不用于内容框居中。关于如何居中内容框的详情，请参见此处。
 
 ![image](img/hot.jpg)
 
-通常下标和上标比文本小得多——可以通过指定 `sub` 或 `super` 值来创建垂直偏移，然后应用 `font` 规则来减小偏移文本的大小。
+通常下标和上标比文本小得多——可以通过指定`sub`或`super`值来创建垂直偏移，然后应用`font`规则来减小偏移文本的大小。
 
-![image](img/1g.jpg)创建一个包含三个段落的 HTML 文档
+
+
+![image](img/1g.jpg)创建一个包含三个段落的 HTML 文档。
 
 ```html
 <p>Enjoy the sunsets, the restaurants, the fishing, the diving... the lifestyle of the Florida Keys!</p>
@@ -6994,22 +7323,22 @@ CSS `vertical-align` 属性可以使用 `baseline`、`sub` 和 `super` 关键字
 
 ![image](img/htmlg.jpg)
 
-align.html
+`align.html`
 
-![image](img/2g.jpg)添加一个带有指定字体和颜规则样式表
+![image](img/2g.jpg)添加一个带有指定字体和颜色规则的样式表。
 
 ```css
 p, span { font : medium monospace ;
 background : LightGreen ; border : 1px solid LimeGreen ; }
 ```
 
-![image](img/3g.jpg)接下来，添加一条规则使第二个段落内容框内的文本两端对齐
+![image](img/3g.jpg)接下来，添加一条规则，使第二个段落内容框内的文本两端对齐。
 
 ```css
 p.just { text-align : justify ; }
 ```
 
-![image](img/4g.jpg)现在，添加规则调整第三段落内跨度文本的垂直对齐
+![image](img/4g.jpg)现在，添加规则调整第三段落内跨度文本的垂直对齐。
 
 ```css
 span.up { vertical-align : super ; }
@@ -7017,35 +7346,35 @@ span.down { vertical-align : sub ; }
 span.top { vertical-align : top ; }
 ```
 
-![image](img/5g.jpg)保存 HTML 文档，然后在浏览器中打开网页以查看对齐效果
+![image](img/5g.jpg)保存 HTML 文档，然后在浏览器中打开网页以查看对齐效果。
 
 ![image](img/pg223_1.jpg)
 
 ![image](img/hot.jpg)
 
-注意 `justify` 关键字如何将每行完整内容对齐到内容框边缘，并调整字符和单词之间的间距。
+注意`justify`关键字如何将每行完整内容对齐到内容框边缘，并调整字符和单词之间的间距。
 
 ### 控制间距
 
-打印文本最常见的特征之一是段落首行的缩进，以提高可读性。对于 HTML 段落中的文本，可以使用 `text-indent` 属性指定缩进大小（例如 `5em`）来轻松实现。
+打印文本最常见的特征之一是段落首行的缩进，以提高可读性。对于 HTML 段落中的文本，可以使用`text-indent`属性指定缩进大小（例如`5em`）来轻松实现。
 
 ![image](img/pg224_1.jpg)
 
-或者，缩进值可以是百分比，浏览器将相对于总行长度进行缩进。例如，在宽度为 500px 的 `div` 容器元素内的段落元素中，指定 `text-indent` 值为 10% 将将首行开头缩进 50px（500 x 10% = 50）。
+或者，缩进值可以是百分比，浏览器将相对于总行长度进行缩进。例如，在宽度为 500px 的`div`容器元素内的段落元素中，指定`text-indent`值为 10% 将首行开头缩进 50px（500 x 10% = 50）。
 
-也可以为 `text-indent` 属性指定负值，但这可能会产生不一致的结果，因此最好避免。
+也可以为`text-indent`属性指定负值，但这可能会产生不一致的结果，因此最好避免。
 
-通过向 CSS `word-spacing` 属性显式指定值，可以从正常的默认间距调整每个单词之间的间距。请注意，所指定的值会加在默认间距上以增加间距。例如，指定单位值 `5em` 宽会将间距增加到“正常+5em”，而不是总共 5em 的间距。
+通过向 CSS `word-spacing`属性显式指定值，可以从正常的默认间距调整每个单词之间的间距。请注意，所指定的值会加在默认间距上以增加间距。例如，指定单位值`5em`宽会将间距增加到“正常+5em”，而不是总共 5em 的间距。
 
-同样地，也可以通过向 CSS `letter-spacing` 属性显式指定值，从正常的默认间距调整每个字母之间的间距。这也会将指定的值加到默认间距上以确定总空间。例如，指定单位值 `5em` 将间距增加到“正常+5em”，而不是总共 5em 的间距。
+同样地，也可以通过向 CSS `letter-spacing`属性显式指定值，从正常的默认间距调整每个字母之间的间距。这也会将指定的值加到默认间距上以确定总空间。例如，指定单位值`5em`将间距增加到“正常+5em”，而不是总共 5em 的间距。
 
-`word-spacing` 和 `letter-spacing` 属性均接受 `normal` 关键字来恢复正常间距。此外，它们都可能被此处描述的 `text-align` 属性覆盖，后者在决定整行的外观方面具有优先级。
+`word-spacing`和`letter-spacing`属性均接受`normal`关键字来恢复正常间距。此外，它们都可能被此处描述的`text-align`属性覆盖，后者在决定整行的外观方面具有优先级。
 
 ![image](img/hot.jpg)
 
-`word-spacing` 和 `letter-spacing` 属性都可以接受负值——产生一些有趣的结果。
+`word-spacing`和`letter-spacing`属性都可以接受负值——产生一些有趣的结果。
 
-![image](img/1g.jpg)创建一个包含两个跨度文本段落的 HTML 文档
+![image](img/1g.jpg)创建一个包含两个跨度文本段落的 HTML 文档。
 
 ```html
 <p>The Geologic Story at the
@@ -7057,43 +7386,43 @@ are not inherently unique but
 
 ![image](img/htmlg.jpg)
 
-space.html
+`space.html`
 
-![image](img/2g.jpg)添加一个带有缩进每个段落开头规则的样式表
+![image](img/2g.jpg)添加一个带有缩进每个段落开头规则的样式表。
 
 ```css
 p { text-indent : 5em ; }
 ```
 
-![image](img/3g.jpg)接下来，添加样式规则增加字母间距并为跨区域设置背景颜色
+![image](img/3g.jpg)接下来，添加样式规则增加字母间距并为跨度区域设置背景颜色。
 
 ```css
 span.spread { letter-spacing : 1em ;
 background : LightGreen ; }
 ```
 
-![image](img/4g.jpg)现在，添加样式规则增加单词间距并为跨度文本设置背景颜色
+![image](img/4g.jpg)现在，添加样式规则增加单词间距并为跨度文本设置背景颜色。
 
 ```css
 span.space { word-spacing : 1.5em ;
 background : LawnGreen ; }
 ```
 
-![image](img/5g.jpg)保存 HTML 文档，然后在浏览器中打开网页查看缩进和间距
+![image](img/5g.jpg)保存 HTML 文档，然后在浏览器中打开网页查看缩进和间距。
 
 ### 装饰文本
 
-样式规则可以使用 CSS `text-decoration` 属性配合 `underline`、`overline` 和 `line-through` 关键字为文本添加装饰线。这些行为分别是在文本下方添加线、上方添加线以及穿过文本。
+样式规则可以使用 CSS `text-decoration`属性配合`underline`、`overline`和`line-through`关键字为文本添加装饰线。这些行为分别是在文本下方添加线、上方添加线以及穿过文本。
 
 ![image](img/pg226_1.jpg)
 
-可以为 `text-decoration` 属性指定 CSS `none` 关键字以防止出现意外装饰——这对于显示不带下划线的链接非常流行
+可以为`text-decoration`属性指定 CSS `none`关键字以防止出现意外装饰——这对于显示不带下划线的链接非常流行。
 
-可以为 `text-decoration` 属性指定多个空格分隔的列表，以对文本应用多种装饰
+可以为`text-decoration`属性指定多个空格分隔的列表，以对文本应用多种装饰。
 
-另一种增强文本的方法是使用 `text-transform` 属性，通过 `uppercase`、`lowercase` 或 `capitalize` 关键字指定所选元素的大小写。
+另一种增强文本的方法是使用`text-transform`属性，通过`uppercase`、`lowercase`或`capitalize`关键字指定所选元素的大小写。
 
-![image](img/1g.jpg)创建一个包含跨度文本段落和另一个包含链接段落的 HTML 文档，由水平线分隔
+![image](img/1g.jpg)创建一个包含跨度文本段落和另一个包含链接段落的 HTML 文档，由水平线分隔。
 
 ```html
 <p class=”main”>You know that it’s
@@ -7118,15 +7447,11 @@ Plain link</a>
 </p>
 ```
 
-
-
-
-
 如果删除了默认下划线，某些用户可能无法识别链接。
 
 ![image](img/2g.jpg)
 
-添加一个包含规则的样式表，以指定字体和颜色
+添加一个包含规则的样式表，以指定字体和颜色。
 
 ```css
 p.main { font : medium “Courier”, monospace ;
@@ -7137,7 +7462,7 @@ color : Green ; }
 
 ![image](img/3g.jpg)
 
-接下来，添加样式规则为被跨的文本添加装饰线
+接下来，添加样式规则为被跨的文本添加装饰线。
 
 ```css
 span.under { text-decoration : underline ; }
@@ -7147,7 +7472,7 @@ span.rails { text-decoration : overline underline ; }
 
 ![image](img/4g.jpg)
 
-现在，添加样式规则来转换被跨文本的大小写
+现在，添加样式规则来转换被跨文本的大小写。
 
 ```css
 span.lower { text-transform : lowercase ; }
@@ -7157,7 +7482,7 @@ span.caps { text-transform : capitalize ; }
 
 ![image](img/5g.jpg)
 
-最后，添加样式规则从移除链接的默认下划线
+最后，添加样式规则移除链接的默认下划线。
 
 ```css
 a.plain { text-decoration : none ; }
@@ -7165,7 +7490,7 @@ a.plain { text-decoration : none ; }
 
 ![image](img/6g.jpg)
 
-保存 HTML 文档，然后在浏览器中打开网页以查看文本装饰和大小写转换
+保存 HTML 文档，然后在浏览器中打开网页以查看文本装饰和大小写转换。
 
 ![image](img/pg227_1.jpg)
 
@@ -7175,23 +7500,23 @@ a.plain { text-decoration : none ; }
 
 ## 改变方向
 
-文本内容内空白的默认处理方式是将多个空格合并为单个空格，但可以通过 CSS 的 `white-space` 属性进行控制。指定 `pre` 关键字将保留原始文本中出现的所有空格，包括任何换行符。相反，通过指定 `no-wrap` 关键字可以防止块级中文本的自动换行。此外，可以指定 `pre-wrap` 关键字在保留空格的同时仍允许文本正常换行，或者指定 `pre-line` 关键字在保留换行符的同时合并多个空格。
+文本内容内空白的默认处理方式是将多个空格合并为单个空格，但可以通过 CSS 的`white-space`属性进行控制。指定`pre`关键字将保留原始文本中出现的所有空格，包括任何换行符。相反，通过指定`no-wrap`关键字可以防止块级中文本的自动换行。此外，可以指定`pre-wrap`关键字在保留空格的同时仍允许文本正常换行，或者指定`pre-line`关键字在保留换行符的同时合并多个空格。
 
 ![image](img/pg228_1.jpg)
 
-文本行的默认从左到右方向可以通过向 CSS `direction` 属性指定 `rtl` 关键字来更改为从右到左，并使用 `ltr` 关键字恢复正常方向。
+文本行的默认从左到右方向可以通过向 CSS `direction`属性指定`rtl`关键字来更改为从右到左，并使用`ltr`关键字恢复正常方向。
 
-有趣的是，当使用 `rtl` 关键字更改行方向时，单词从右向左出现，但英语语言字符的顺序被保留了，因此每个单词仍然能够从左到右正确读取。
+有趣的是，当使用`rtl`关键字更改行方向时，单词从右向左出现，但英语语言字符的顺序被保留了，因此每个单词仍然能够从左到右正确读取。
 
-这种智能功能还允许文本在单行中以不同的方向呈现——例如，包含从右到左读取的语言，如希伯来语和阿拉伯语。浏览器使用复杂的双向算法（Bidirectional algorithm）检查每个字符的 Unicode 值，以确定每个单词应该显示的方向——那些来自从右到左语言的字符会自动在该方向显示，即使它们在 HTML 源代码中是从左到右逻辑编写的。然而，通过向 `unicode-bidi` 属性指定 `bidi-override` 关键字可以关闭自动的双向算法。
+这种智能功能还允许文本在单行中以不同的方向呈现——例如，包含从右到左读取的语言，如希伯来语和阿拉伯语。浏览器使用复杂的双向算法（Bidirectional algorithm）检查每个字符的 Unicode 值，以确定每个单词应该显示的方向——那些来自从右到左语言的字符会自动在该方向显示，即使它们在 HTML 源代码中是从左到右逻辑编写的。然而，通过向`unicode-bidi`属性指定`bidi-override`关键字可以关闭自动的双向算法。
 
 ![image](img/hot.jpg)
 
-你可以在 [www.unicode.org](http://www.unicode.org) 在线发现更多 Unicode 的信息，可以在 [www.w3.org](http://www.w3.org) 在线发现更多字符实体的信息。
+你可以在[www.unicode.org](http://www.unicode.org)在线发现更多 Unicode 的信息，可以在[www.w3.org](http://www.w3.org)在线发现更多字符实体的信息。
 
 ![image](img/1g.jpg)
 
-创建一个包含带有希伯来实体和阶进空白的段的 HTML 文档
+创建一个包含带有希伯来实体和阶进空白的段的 HTML 文档。
 
 ```html
 <p>Hebrew “Congratulations” with:</p>
@@ -7199,11 +7524,11 @@ a.plain { text-decoration : none ; }
 
 ![image](img/htmlg.jpg)
 
-direction.html
+`direction.html`
 
 ![image](img/2g.jpg)
 
-接下来，使用相同的实体开始一个定义列表
+接下来，使用相同的实体开始一个定义列表。
 
 ```html
 <dl>
@@ -7220,7 +7545,7 @@ direction.html
 
 ![image](img/4g.jpg)
 
-添加一个包含规则的样式表，为段落设置背景色并保留空白
+添加一个包含规则的样式表，为段落设置背景色并保留空白。
 
 ```css
 p,dd { background : LightGreen ; }
@@ -7229,7 +7554,7 @@ p { whitespace : pre ; }
 
 ![image](img/5g.jpg)
 
-现在，添加样式规则来设置列表中每个定义的文本方向
+现在，添加样式规则来设置列表中每个定义的文本方向。
 
 ```css
 dd.ltr { direction : ltr ; }
@@ -7239,13 +7564,13 @@ dd.bidi-off { unicode-bidi : bidi-override ; }
 
 ![image](img/6g.jpg)
 
-保存 HTML 文档，然后在浏览器中打开网页以查看保留的空白和改变的文本方向
+保存 HTML 文档，然后在浏览器中打开网页以查看保留的空白和改变的文本方向。
 
 ![image](img/pg229_1.jpg)
 
 ![image](img/hot.jpg)
 
-注意 `rtl` 值按从右到左的正确顺序显示字符。
+注意`rtl`值按从右到左的正确顺序显示字符。
 
 ![image](img/snake.jpg)
 
@@ -7253,21 +7578,21 @@ dd.bidi-off { unicode-bidi : bidi-override ; }
 
 ## 增强文本
 
-CSS 提供了五个伪元素 `::before`、`::after`、`::first-letter`、`::first-line` 和 `::selection`，它们可以包含在样式规则选择器中以增强所选元素的内容
+CSS 提供了五个伪元素`::before`、`::after`、`::first-letter`、`::first-line`和`::selection`，它们可以包含在样式规则选择器中以增强所选元素的内容。
 
 ![image](img/pg230_1.jpg)
 
-`::first-letter` 和 `::first-line` 伪元素用于为文本开头添加样式。`::selection` 伪元素用于为用户选中的文本添加样式。
+`::first-letter`和`::first-line`伪元素用于为文本开头添加样式。`::selection`伪元素用于为用户选中的文本添加样式。
 
 ![image](img/forget.jpg)
 
-在 CSS 中，所有伪元素以两个冒号开头。`::before` 和 `::after` 伪元素用于在原始内容周围插入内容。例如，`p::before` 选择器在段落开始之前插入内容。生成的内容不仅限于文本字符串，因为 `url()` 函数可以用于向 `content` 属性指定非文本内容。此外，`attr()` 函数可以用于向 `content` 属性指定所选元素的属性名称，其赋值值应作为内容插入。
+在 CSS 中，所有伪元素以两个冒号开头。`::before`和`::after`伪元素用于在原始内容周围插入内容。例如，`p::before`选择器在段落开始之前插入内容。生成的内容不仅限于文本字符串，因为`url()`函数可以用于向`content`属性指定非文本内容。此外，`attr()`函数可以用于向`content`属性指定所选元素的属性名称，其赋值值应作为内容插入。
 
-多个要插入的项目可以以空格分隔列表的形式指定给 `content` 属性——使用上述任何一种。
+多个要插入的项目可以以空格分隔列表的形式指定给`content`属性——使用上述任何一种。
 
 ![image](img/1g.jpg)
 
-创建一个包含标题和四个段落的 HTML 文档，每个段落都包含指向同一资源的链接
+创建一个包含标题和四个段落的 HTML 文档，每个段落都包含指向同一资源的链接。
 
 ```html
 <h1>Pseudo Elements</h1>
@@ -7279,30 +7604,26 @@ CSS 提供了五个伪元素 `::before`、`::after`、`::first-letter`、`::firs
 
 ![image](img/htmlg.jpg)
 
-pseudo.html
+`pseudo.html`
 
 ![image](img/pdfg.jpg)
 
-info.pdf
+`info.pdf`
 
 ![image](img/2g.jpg)
 
-添加一个包含规则的样式表，设置标题的第一个字母和选中文本——如果被用户选中
+添加一个包含规则的样式表，设置标题的第一个字母和选中文本——如果被用户选中。
 
 ```css
 h1::first-letter { color : ForestGreen ; }
 h1::selection { background : LawnGreen ; }
 ```
 
-
-
-
-
 `a[href].quote::before { content : open-quote ; color : Blue ; }`
 
 `a[href].quote::after { content : close-quote ; color : Blue ; }`
 
-![image](img/5g.jpg)然后，添加一条规则在链接后插入图像
+![image](img/5g.jpg)然后，添加一条规则在链接后插入图像。
 
 `a[href].pdf::after { content : url( pdf-ico.png ) ; }`
 
@@ -7312,80 +7633,105 @@ h1::selection { background : LawnGreen ; }
 
 32px x 32px
 
-![image](img/6g.jpg)最后，添加规则在链接后插入一个彩色属性值，以显示链接资源文件的名称
+![image](img/6g.jpg)最后，添加规则在链接后插入一个彩色属性值，以显示链接资源文件的名称。
 
 `a[href].att::after { content : “(“ attr(href) “)“ ; color : Blue ; }`
 
-![image](img/7g.jpg)保存 HTML 文档，然后在浏览器中打开网页，并选择标题文本的一部分以查看由 CSS 样式规则插入的内容
+![image](img/7g.jpg)保存 HTML 文档，然后在浏览器中打开网页，并选择标题文本的一部分以查看由 CSS 样式规则插入的内容。
 
 ![image](img/pg231_1.jpg)
 
 ![image](img/hot.jpg)
 
-插入的内容被添加到所选元素的内容框内 – 因此此示例中对链接的增强成为了链接的一部分。
+插入的内容被添加到所选元素的内容框内——因此此示例中对链接的增强成为了链接的一部分。
 
 ## 章节编号
 
-在示例此处中引入的 CSS `::before` 伪元素可以使用 `counter( )` 函数插入生成的内容，为 HTML 文档的章节自动编号。这指定了要插入到 `( )` 括号内内容的计数器名称。
+在示例此处中引入的 CSS `::before`伪元素可以使用`counter()`函数插入生成的内容，为 HTML 文档的章节自动编号。这指定了要插入到`()`括号内内容的计数器名称。
 
 ![image](img/pg232_1.jpg)
 
-用于计算所选元素实例数的计数器必须首先通过指定选定的名称和作为空格分隔列表的 `counter-increment` 属性的增量值来创建。
 
-计数器默认从零开始计数，并且每有一个所选元素实例都会按指定的增量值增加。可选情况下，可以从规则中省略显式指定的增量值，此时假设 1 为增量值。例如，声明 `counter-increment : num ;` 会创建一个名为“num”的计数器，它将从零开始计数并每次递 1。
 
-此外，通过向 `counter-reset` 属性指定作为空格分隔列表的计数器名称和整数值，可以使计数器从当前计数数字以外的数字继续计数。通常，这会指定一个零整数值以重新开始计数。
+用于计算所选元素实例数的计数器必须首先通过指定选定的名称和作为空格分隔列表的`counter-increment`属性的增量值来创建。
+
+计数器默认从零开始计数，并且每有一个所选元素实例都会按指定的增量值增加。可选情况下，可以从规则中省略显式指定的增量值，此时假设 1 为增量值。例如，声明`counter-increment : num ;`会创建一个名为“num”的计数器，它将从零开始计数并每次递 1。
+
+此外，通过向`counter-reset`属性指定作为空格分隔列表的计数器名称和整数值，可以使计数器从当前计数数字以外的数字继续计数。通常，这会指定一个零整数值以重新开始计数。
 
 一旦创建了计数器就可以作为 CSS 伪元素的生成内容插入到所选元素之前。
 
-![image](img/1g.jpg)创建一个具有不同尺寸标题的 HTML 文档
+![image](img/1g.jpg)
+
+创建一个具有不同尺寸标题的 HTML 文档：
+
+```html
+<h2>Topic</h2>
+
+<h3>Section</h3>
+
+<h3>Section</h3>
+
+<h3>Section</h2>  <!-- 注意：此处原文可能存在标签闭合错误(h2 应为 h3)，按原样保留 -->
 
 <h2>Topic</h2>
-<h3>Section</h3>
-<h3>Section</h3>
-<h3>Section</h2>  <!-- 注意：此处原文可能存在标签闭合错误(h2 应为 h3)，按原样保留 -->
-<h2>Topic</h2>
+
 <h3 class=”restart”>Section</h3>
+
 <h3>Section</h3>
+
 <h3>Section</h3>
+```
 
 ![image](img/htmlg.jpg)
 
 `counter.html`
 
-![image](img/2g.jpg)添加一个样式表，其中包含一条规则，为较大的标题元素创建一个计数器，该计数器将每次递增 1
+添加一个样式表，其中包含一条规则，为较大的标题元素创建一个计数器，该计数器将每次递增 1：
 
 ```css
 h2 { counter-increment : num 1 ; }
 ```
 
-![image](img/3g.jpg)接下来，添加样式规则为较小的标题元素创建一个计数器，它将每次递增 1
+![image](img/2g.jpg)
+
+接下来，添加样式规则为较小的标题元素创建一个计数器，它将每次递增 1：
 
 ```css
 h3 { counter-increment : sub 1 ; text-indent : 10% ; }
 ```
 
-![image](img/4g.jpg)现在，添加样式规则在每个较大的标题之前插入当前的较大标题计数器值，并设置计数器的字体颜色背景色
+![image](img/3g.jpg)
+
+现在，添加样式规则在每个较大的标题之前插入当前的较大标题计数器值，并设置计数器的字体颜色背景色：
 
 ```css
 h2::before { content : counter(num) “ ” ;
 background : Green ; color : White ; }
 ```
 
-![image](img/5g.jpg)然后，添加样式规则在每个较小的标题之前插入当前的较大和较小标题计数器值，并设置该背景颜色
+![image](img/4g.jpg)
+
+然后，添加样式规则在每个较小的标题之前插入当前的较大和较小标题计数器值，并设置该背景颜色：
 
 ```css
 h3::before { content : counter(num) “.” counter(sub) “ “ ;
 background : LawnGreen ; }
 ```
 
-![image](img/6g.jpg)最后，添加样式规则在每个较大的标题元素之后重置较小的标题计数器
+![image](img/5g.jpg)
+
+最后，添加样式规则在每个较大的标题元素之后重置较小的标题计数器：
 
 ```css
 h3.restart { counter-reset : sub 0 ; }
 ```
 
-![image](img/7g.jpg)保存 HTML 文档然后在浏览器中打开网页，查看插入在每个标题之前的生成的计数器值
+![image](img/6g.jpg)
+
+保存 HTML 文档然后在浏览器中打开网页，查看插入在每个标题之前的生成的计数器值。
+
+![image](img/7g.jpg)
 
 ![image](img/pg233_1.jpg)
 
@@ -7395,22 +7741,22 @@ h3.restart { counter-reset : sub 0 ; }
 
 ## 总结
 
-- 样式规则可以按名称建议特定的字体，以及通用的字体族，如 serif、sans-serif、monospace、cursive 或 fantasy。
-- 可以使用关键字或绝对大小指定 `font-size`，但建议使用相对大小以获得灵活性。
-- `font-weight` 可以指定为加粗（bold）或正常（normal）。
-- `font-style` 可以指定为斜体（italic）或正常（normal）。
-- `font-variant` 可以指定为小型大写（small-caps）或正常（normal）。
+- 样式规则可以按名称建议特定的字体，以及通用的字体族，如 `serif`、`sans-serif`、`monospace`、`cursive` 或 `fantasy`。
+- 可以使用关键字或绝对大小指定`font-size`，但建议使用相对大小以获得灵活性。
+- `font-weight` 可以指定为加粗（`bold`）或正常（`normal`）。
+- `font-style` 可以指定为斜体（`italic`）或正常（`normal`）。
+- `font-variant` 可以指定为小型大写（`small-caps`）或正常（`normal`）。
 - 字体简写属性可以指定文本样式、变体、权重、大小和字体的值。
-- 使用字体简写属性时，需要 `font-size` 和 `font-family` 的值，但其他值是可选的。
-- 通过指定 `text-align` 为左、中、右或两端，可以在文本在内容框内进行水平对齐。
-- 通过指定 `vertical-align` 为顶、中、底，可以在文本在内容框内进行垂直对齐。
-- 文本间距可以通过 `text-indent`、`word-spacing` 和 `letter-spacing` 来指定。
-- 可以通过指定 `text-decoration` 为下划线、上线或删除线对文本进行装饰。
-- 可以通过指定 `text-transform` 为大写、小写或首字母大写对文本进行转换。
-- 文本中的多个空格通常会被合并为一个空格，但可以使用 `white-space` 属性保留。
-- 文本默认从左到右的方向可以通过 `direction` 属性更改为从右到左。
+- 使用字体简写属性时，需要`font-size`和`font-family`的值，但其他值是可选的。
+- 通过指定`text-align`为左、中、右或两端，可以在文本在内容框内进行水平对齐。
+- 通过指定`vertical-align`为顶、中、底，可以在文本在内容框内进行垂直对齐。
+- 文本间距可以通过`text-indent`、`word-spacing`和`letter-spacing`来指定。
+- 可以通过指定`text-decoration`为下划线、上线或删除线对文本进行装饰。
+- 可以通过指定`text-transform`为大写、小写或首字母大写对文本进行转换。
+- 文本中的多个空格通常会被合并为一个空格，但可以使用`white-space`属性保留。
+- 文本默认从左到右的方向可以通过`direction`属性更改为从右到左。
 - CSS 伪元素可以包含在选择器之后以增强内容。
-- 网页的章节可以使用 `counter( )` 函数自动编号。
+- 网页的章节可以使用`counter( )`函数自动编号。
 
 | 组织表格与列表 | ![image](img/pg235_1.jpg) | *本章演示了如何样式表格和列表。* |
 
@@ -7422,7 +7768,7 @@ h3.restart { counter-reset : sub 0 ; }
 
 在显示 HTML 表格时，浏览器默认会自动创建一个适应内容的表格布局。这通常产生一个列宽不等的表格，每列的宽度由该列中任何单元格中最宽的内容决定。此过程需要浏览器在计算出表格布局之前对表格内容进行详细检查，对于大型表格，在能够绘制表格之前可能需要一段时间。
 
-CSS 提供了一种替代方案，允许浏览器在不检查整个表格内容的情况下快速计算出表格布局——可以通过表格元素的 `table-layout` 属性指定 `fixed` 关键字来设置固定布局。
+CSS 提供了一种替代方案，允许浏览器在不检查整个表格内容的情况下快速计算出表格布局——可以通过表格元素的`table-layout`属性指定`fixed`关键字来设置固定布局。
 
 在固定布局中，浏览器只需要考虑表格本身的宽度以及第一行中列和单元格的宽度即可确定表格布局，如下：
 
@@ -7431,18 +7777,17 @@ CSS 提供了一种替代方案，允许浏览器在不检查整个表格内容�
 - 当没有指定的列宽值时，指定的单元格宽度设置该列的宽度。
 - 任何未对列或单元格指定宽值的列，都将在表格宽度内等宽分布。
 
+另一种，样式规则可以显式指定使用默认表格布局方案，在该方案下，浏览器通过为`table-layout`属性分配`auto`值，根据其内容计算列宽。
 
-
-
-另一种，样式规则可以显式指定使用默认表格布局方案，在该方案下，浏览器通过为 `table-layout` 属性分配 `auto` 值，根据其内容计算列宽。
-
-当表格包含 `caption` 元素时，可以通过为表格元素的 CSS `caption-side` 属性指定关键字 `top` 或 `bottom` 来建议标题的位置。
+当表格包含`caption`元素时，可以通过为表格元素的 CSS `caption-side`属性指定关键字`top`或`bottom`来建议标题的位置。
 
 ![image](img/hot.jpg)
 
 指定第一列的宽度并设置固定布局规则，以创建一个自定义宽度的第一列，以及宽度彼此相等的其他列。
 
-![image](img/1p.jpg)创建一个包含两个具有相似内容的表格的 HTML 文档
+![image](img/1p.jpg)
+
+创建一个包含两个具有相似内容的表格的 HTML 文档：
 
 ```html
 <table><caption>Auto Layout</caption><tr><td>Text content</td><td>This is text content wider than 130px</td><td>Text content</td></tr></table>
@@ -7451,63 +7796,73 @@ CSS 提供了一种替代方案，允许浏览器在不检查整个表格内容�
 
 ![image](img/htmlp.jpg)
 
-columns.html
+`columns.html`
 
-![image](img/2p.jpg)添加一个包含指定表格宽度及其特征规则的样式表
+添加一个包含指定表格宽度及其特征规则的样式表：
 
 ```css
 table { width : 500px ; border : 2px dashed DeepPink ;
 caption-side : top ; text-align : center ; margin : 0 0 30px ; }
 ```
 
-![image](img/3p.jpg)接下来，添加样式规则为每个表格单元格和标题着色
+![image](img/2p.jpg)
+
+接下来，添加样式规则为每个表格单元格和标题着色：
 
 ```css
 td { border : 2px solid DeepPink ; }
 caption { background : Pink ; }
 ```
 
-![image](img/4p.jpg)现在，添加样式规则为第二个表格指定固定尺寸的列方案
+![image](img/3p.jpg)
+
+现在，添加样式规则为第二个表格指定固定尺寸的列方案：
 
 ```css
 table.fixed { table-layout : fixed ; }
 ```
 
-![image](img/5p.jpg)保存 HTML 文档，然后在浏览器中打开网页，查看同时用自动布局和固定布局方案绘制的表格
+![image](img/4p.jpg)
+
+保存 HTML 文档，然后在浏览器中打开网页，查看同时用自动布局和固定布局方案绘制的表格。
+
+![image](img/5p.jpg)
 
 ![image](img/pg237_1.jpg)
 
 ![image](img/forget.jpg)
 
-`caption-side` 属性可以建议标题可能出现，但对标题的实际处理取决于特定的浏览器。
+`caption-side`属性可以建议标题可能出现，但对标题的实际处理取决于特定的浏览器。
 
 ### 单元单元
 
-表格单元格边界之间的距离可以指定为 CSS `border-spacing` 属性的单位值。这轻松地允许单元格在表格中保持一定的距离。
+表格单元格边界之间的距离可以指定为 CSS `border-spacing`属性的单位值。这轻松地允许单元格在表格中保持一定的距离。
 
 ![image](img/pg238_1.jpg)
 
-指定的单个 `border-spacing` 值将均匀应用于所有单元格间隙——这与 HTML 的 `cellspacing` 属性非常相似。
+指定的单个`border-spacing`值将均匀应用于所有单元格间隙——这与 HTML 的`cellspacing`属性非常相似。
 
-然而，CSS 提供了更大的灵活性，允许通过空格分隔的列表为 `border-spacing` 属性指定两个值。第一个将应用于每个表格单元格左侧和右侧的水平间距，第二个应用于每个单元格顶部和底部的垂直间距。这意味着可以为整个表格的水平和垂直间距指定不同的距离。
+然而，CSS 提供了更大的灵活性，允许通过空格分隔的列表为`border-spacing`属性指定两个值。第一个将应用于每个表格单元格左侧和右侧的水平间距，第二个应用于每个单元格顶部和底部的垂直间距。这意味着可以为整个表格的水平和垂直间距指定不同的距离。
 
 CSS 提供的另一种可能性是隐藏不包含内容的单元格。这些通常由于表格的网格格式导致，网格格式并不总是能方便地匹配所需的单元格数量——例如，在五行两列的表格中显示九个内容项。
 
-使用 CSS `empty-cells` 属性创建一个样式规则并指定 `hide` 值，将导致浏览器不显示任何完全没有内容的单元格的边界和背景。包含任何内容的单元格，即使仅仅是一个 `&nbsp;`（不换行空格实体），仍然是可见的。
+使用 CSS `empty-cells`属性创建一个样式规则并指定`hide`值，将导致浏览器不显示任何完全没有内容的单元格的边界和背景。包含任何内容的单元格，即使仅仅是一个`&nbsp;`（不换行空格实体），仍然是可见的。
 
-相反，样式规则可以通过为 `empty-cells` 属性指定 `show` 值来显式确保显示空单元格。
+相反，样式规则可以通过为`empty-cells`属性指定`show`值来显式确保显示空单元格。
 
-被隐藏的空单元格在表格布局中仍然继续存在，因为它们的 `border-spacing` 值被保留了。例如，当 `border-spacing` 属性设置为 `20px` 且 `empty-cells` 属性指定为 `hide` 值时，单个空单元格将不显示，但周围的单元格仍保持 40 像素的距离——而不是如果隐藏单元格不存在时仅有的 20 像素距离。
+被隐藏的空单元格在表格布局中仍然继续存在，因为它们的`border-spacing`值被保留了。例如，当`border-spacing`属性设置为`20px`且`empty-cells`属性指定为`hide`值时，单个空单元格将不显示，但周围的单元格仍保持 40 像素的距离——而不是如果隐藏单元格不存在时仅有的 20 像素距离。
 
 ![image](img/forget.jpg)
 
-`border-spacing` 属性不能指定负值。
+`border-spacing`属性不能指定负值。
 
 ![image](img/snake.jpg)
 
-当为 `border-collapse` 属性指定 `collapse` 值时，`empty-cells` 属性不生效——参见此处。
+当为`border-collapse`属性指定`collapse`值时，`empty-cells`属性不生效——参见此处。
 
-![image](img/1p.jpg)创建一个包含两个具有相似内容的表格的 HTML 文档——包括一个空单元格
+![image](img/1p.jpg)
+
+创建一个包含两个具有相似内容的表格的 HTML 文档——包括一个空单元格：
 
 ```html
 <table><tr><td>1</td><td></td><td>3</td></tr></table>
@@ -7516,52 +7871,62 @@ CSS 提供的另一种可能性是隐藏不包含内容的单元格。这些通�
 
 ![image](img/htmlp.jpg)
 
-hide.html
+`hide.html`
 
-![image](img/2p.jpg)添加一个包含指定表格宽度及其特征的样式表
+添加一个包含指定表格宽度及其特征的样式表：
 
 ```css
 table { width : 500px ;
 margin : 20px ; border : 2px dashed DeepPink ; }
 ```
 
-![image](img/3p.jpg)接下来，添加样式规则为每个表格单元格和边界着色
+![image](img/2p.jpg)
+
+接下来，添加样式规则为每个表格单元格和边界着色：
 
 ```css
 td { border : 2px solid DeepPink ; }
 ```
 
-![image](img/4p.jpg)现在，添加样式规则为第二个表格指定边界间距并隐藏空单元格
+![image](img/3p.jpg)
+
+现在，添加样式规则为第二个表格指定边界间距并隐藏空单元格：
 
 ```css
 table.space { border-spacing : 20px ; empty-cells : hide ; }
 ```
 
-![image](img/5p.jpg)保存 HTML 文档，然后在浏览器中打开网页，查看绘制有可见和隐藏空单元格的表格
+![image](img/4p.jpg)
+
+保存 HTML 文档，然后在浏览器中打开网页，查看绘制有可见和隐藏空单元格的表格。
+
+![image](img/5p.jpg)
 
 ![image](img/pg239_1.jpg)
 
 ### 合并边界
 
-相邻表格的边界以及表格单元格边界可以通过为 CSS `border-collapse` 属性指定 `collapse` 关键字来使其“合并”为单条边界。这需要浏览器执行一系列评估，比较现有的边界，以确定合并后的边界应该什么样：
+相邻表格的边界以及表格单元格边界可以通过为 CSS `border-collapse`属性指定`collapse`关键字来使其“合并”为单条边界。这需要浏览器执行一系列评估，比较现有的边界，以确定合并后的边界应该什么样：
 
 ![image](img/pg240_1.jpg)
 
-- **可见性评估**：如果待合并的边界之一的 `border-style` 值为 `hidden`，则该值具有优先级——因此该位置的合并边界将是隐藏。
-- **宽度评估**：当两个具有不同 `border-width` 值的可见边界要合并时，最高值具有优先级——因此合并后的边界将是较大的宽度。
+- **可见性评估**：如果待合并的边界之一的`border-style`值为`hidden`，则该值具有优先级——因此该位置的合并边界将是隐藏。
+- **宽度评估**：当两个具有不同`border-width`值的可见边界要合并时，最高值具有优先级——因此合并后的边界将是较大的宽度。
 - **样式评估**：当两个等宽的可见边界要合并时，其样式值按以下降序设置优先级：`double`、`solid`、`dashed`、`ridge`、`outset`、`groove`、`inset`。当等宽且样式相同的可见边界合并时，边界颜色按以下降序顺序确定：`cell`、`row`、`row group`、`column`、`column group`、`table`。
 
-当表格边界宽 `2px` 与单元格边界宽 `5px` 比较时，合并边界的效果是宽度为 `5px`。
+当表格边界宽`2px`与单元格边界宽`5px`比较时，合并边界的效果是宽度为`5px`。
 
-比较相邻的 `border-style` 值 `dotted` 和 `double` 时，合并后的样式为 `double`——优先级更高。
+比较相邻的`border-style`值`dotted`和`double`时，合并后的样式为`double`——优先级更高。
 
-同样，比较相邻的 `border-style` 值 `dotted` 和 `solid` 时，合并后的样式为 `solid`——优先级更高。
+同样，比较相邻的`border-style`值`dotted`和`solid`时，合并后的样式为`solid`——优先级更高。
 
 ![image](img/forget.jpg)
 
-也可以为 `border-collapse` 属性指定 `separate` 关键字——显式防止边界合并。
+也可以为`border-collapse`属性指定`separate`关键字——显式防止边界合并。
 
-![image](img/1p.jpg)创建一个包含两个具有相似内容的表格的 HTML 文档
+![image](img/1p.jpg)
+
+创建一个包含两个具有相似内容的表格的 HTML 文档：
 
 ```html
 <table><tr><td class="twin”>1</td><td class="dots”>2</td><td class="full”>3</td></tr></table>
@@ -7570,11 +7935,7 @@ table.space { border-spacing : 20px ; empty-cells : hide ; }
 
 ![image](img/htmlp.jpg)
 
-collapse.html
-
-
-
-
+`collapse.html`
 
 ```css
 table { border : 2px solid DeepPink ; }
@@ -7583,19 +7944,23 @@ td.dots { border : 5px dotted DeepPink ; }
 td.full { border : 5px solid DeepPink ; }
 ```
 
-![image](img/4p.jpg)现在，添加一条样式规则来合并第二个表格的边框
+![image](img/4p.jpg)
+
+现在，添加一条样式规则来合并第二个表格的边框：
 
 ```css
 table.fold { border-collapse : collapse ; }
 ```
 
-![image](img/5p.jpg)保存 `HTML` 文档，然后在浏览器中打开该网页，查看用普通边框和合并边框绘制的表格
+![image](img/5p.jpg)
+
+保存`HTML`文档，然后在浏览器中打开该网页，查看用普通边框和合并边框绘制的表格。
 
 ![image](img/pg241_1.jpg)
 
 ## 分配特性
 
-CSS `display` 属性可以接受一系列值，用于指定所选元素应视为表格组件——模拟浏览器自动应用于表格组件的 HTML 标签的默认行为：
+CSS `display`属性可以接受一系列值，用于指定所选元素应视为表格组件——模拟浏览器自动应用于表格组件的 HTML 标签的默认行为：
 
 ![image](img/pg242_1.jpg)
 
@@ -7608,37 +7973,55 @@ CSS `display` 属性可以接受一系列值，用于指定所选元素应视为
 | `<tfoot>` | `table-footer-group` |
 | `<col>` | `table-column` |
 | `<colgroup>` | `table-column-group` |
-| `<th>` | ![image](img/bracket.jpg) table-cell |
-| `<td>` | |
+| `<th>` | ![image](img/bracket.jpg) `table-cell` |
+| `<td>` |  |
 | `<caption>` | `table-caption` |
 
-上表列出了可以指定给 `display` 属性的 CSS 值，以及它们最接近的 HTML 标签。这些值可以用于为 `XML` 文档中的元素指定表格特性，以便浏览器像显示 `HTML` 表格一样显示其内容。
+上表列出了可以指定给`display`属性的 CSS 值，以及它们最接近的 HTML 标签。这些值可以用于为`XML`文档中的元素指定表格特性，以便浏览器像显示`HTML`表格一样显示其内容。
 
-![image](img/1p.jpg)创建一个 `XML` 文档，指定一个 CSS 样式表来格式化其元素内容
+![image](img/1p.jpg)
+
+创建一个`XML`文档，指定一个 CSS 样式表来格式化其元素内容。
+
+
 
 ```xml
-<?xml version=”1.0” encoding=”UTF-8”?>
-<?xml-stylesheet href=”xtable.css” type=”text/css”?>
-<league><caption>西甲前三名</caption>
-<headers>
-<lbl>排名</lbl> <lbl>球队</lbl> <lbl>积分</lbl>
-</headers>
-<rows>
-<team> <pos>1</pos> <name>巴塞罗那</name>
-<pts>84</pts> </team>
-<team> <pos>2</pos> <name>皇家马德里</name>
-<pts>80</pts> </team>
-<team> <pos>3</pos> <name>维利亚亚</name>
-<pts>65</pts> </team>
-</rows>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="xtable.css" type="text/css"?>
+<league>
+  <caption>西甲前三名</caption>
+  <headers>
+    <lbl>排名</lbl>
+    <lbl>球队</lbl>
+    <lbl>积分</lbl>
+  </headers>
+  <rows>
+    <team>
+      <pos>1</pos>
+      <name>巴塞罗那</name>
+      <pts>84</pts>
+    </team>
+    <team>
+      <pos>2</pos>
+      <name>皇家马德里</name>
+      <pts>80</pts>
+    </team>
+    <team>
+      <pos>3</pos>
+      <name>维利亚亚</name>
+      <pts>65</pts>
+    </team>
+  </rows>
 </league>
 ```
 
 ![image](img/xmlp.jpg)
 
-xtable.xml
+`xtable.xml`
 
-![image](img/2p.jpg)保存 `XML` 文档，创建一个包含规则的样式表，为 XML 标签分配表格特性
+![image](img/2p.jpg)
+
+保存 `XML` 文档，创建一个包含规则的样式表，为 XML 标签分配表格特性。
 
 ```css
 caption { display : table-caption ; }
@@ -7651,23 +8034,34 @@ name, pos, pts, lbl { display : table-cell ; }
 
 ![image](img/cssp.jpg)
 
-xtable.xml
+`xtable.xml`
 
-![image](img/3p.jpg)接下来，添加指定表格特性的样式规则
+![image](img/3p.jpg)
+
+接下来，添加指定表格特性的样式规则。
 
 ```css
-league { margin : auto ; margin-top: 20px ; width : 300px ;
-border-spacing : 3px ; border : 8px ridge DeepPink ; }
+league {
+  margin : auto ;
+  margin-top : 20px ;
+  width : 300px ;
+  border-spacing : 3px ;
+  border : 8px ridge DeepPink ;
+}
 ```
 
-![image](img/4p.jpg)现在，添加样式规则为表头和行单元上色
+![image](img/4p.jpg)
+
+现在，添加样式规则为表头和行单元上色。
 
 ```css
 headers { background : DeepPink ; color : White ; }
 rows { background : Pink ; }
 ```
 
-![image](img/5p.jpg)将样式表与 XML 文档保存在一起，然后在浏览器中打开 XML 文档查看表格
+![image](img/5p.jpg)
+
+将样式表与 XML 文档保存在一起，然后在浏览器中打开 XML 文档查看表格。
 
 ![image](img/pg243_1.jpg)
 
@@ -7687,46 +8081,48 @@ CSS `list-style-type` 属性可以为任何列表指定另一种类型的标记�
 
 可选情况下，可以通过在 `list-style-image` 属性的 CSS `url()` 函数括号中指定路径，将图像作为标记。
 
-![image](img/1p.jpg)创建一个包含三个列表加一个嵌套列表的 HTML 文档
+![image](img/1p.jpg)
+
+创建一个包含三个列表加一个嵌套列表的 HTML 文档。
 
 ```html
 <ol class="outside-markers">
-<li>List<li>Markers<li>Outside content box</li>
-</ol>
-```
-
-
-
-
+  <li>List</li>
+  <li>Markers</li>
+  <li>Outside content box</li>
 </ol>
 
 <ol class="inside-markers">
-<li>列表</li>
-<li>标记</li>
-<li>内容框内部</li>
+  <li>列表</li>
+  <li>标记</li>
+  <li>内容框内部</li>
 </ol>
 
 <ul>
-<li>列表</li>
-<li>样式</li>
-<ol class="inside-markers">
-<li>列表</li>
-<li>标记</li>
-<li>内容框内部</li>
-</ol>
-<li>简写</li>
+  <li>列表</li>
+  <li>
+    样式
+    <ol class="inside-markers">
+      <li>列表</li>
+      <li>标记</li>
+      <li>内容框内部</li>
+    </ol>
+  </li>
+  <li>简写</li>
 </ul>
+```
 
 ![image](img/htmlp.jpg)
 
-list.html
+`list.html`
 
 ![image](img/2p.jpg)
-添加一个包含规则的样式表以显示列表边界
+
+添加一个包含规则的样式表以显示列表边界。
 
 ```css
 li { background : Pink ; }
-ol,ul { border : 2px solid DeepPink ; }
+ol, ul { border : 2px solid DeepPink ; }
 ```
 
 ![image](img/hot.jpg)
@@ -7736,6 +8132,7 @@ ol,ul { border : 2px solid DeepPink ; }
 嵌套列表可以使用 `inherit` 关键字指定它们应该采用包含元素的 `list-style` 样式，或者使用 `none` 关键字抑制标记。
 
 ![image](img/3p.jpg)
+
 接下来，添加一条样式规则，指定某些有序列表标记应该出现在列表项目内容框之外。
 
 ```css
@@ -7743,6 +8140,7 @@ ol.outside-markers { list-style-position : outside ; }
 ```
 
 ![image](img/4p.jpg)
+
 现在，添加一条样式规则，指定其他有序列表标记应该出现在列表项目内容框之内。
 
 ```css
@@ -7750,6 +8148,7 @@ ol.inside-markers { list-style-position : inside ; }
 ```
 
 ![image](img/5p.jpg)
+
 最后，添加一条简写样式规则，指定无序列表的位置、图像和项目符号类型。
 
 ```css
@@ -7760,12 +8159,13 @@ ul { list-style : url(star.png) outside square ; }
 
 ![image](img/pg247_1.jpg)
 
-star.png – 20px x 20px
+`star.png` – 20px x 20px
 
 灰色区域是透明的。
 
 ![image](img/6p.jpg)
-保存 HTML 文档，然后在浏览器中打开网页以查看列表
+
+保存 HTML 文档，然后在浏览器中打开网页以查看列表。
 
 ![image](img/pg247_2.jpg)
 
@@ -7784,40 +8184,53 @@ star.png – 20px x 20px
 垂直导航栏通常为列表指定固定宽度值，而水平导航栏可以浮动列表项目并隐藏溢出部分以保持导航栏的可视性。
 
 ![image](img/1p.jpg)
-创建一个包含四个超链接项目列表的 HTML 文档
+
+创建一个包含四个超链接项目列表的 HTML 文档。
 
 ```html
 <ul>
-<li><a href="#home" class="current">首页</a></li>
-<li><a href="#info">信息</a></li>
-<li><a href="#extra">更多</a></li>
-<li><a href="#contact">联系</a></li>
+  <li><a href="#home" class="current">首页</a></li>
+  <li><a href="#info">信息</a></li>
+  <li><a href="#extra">更多</a></li>
+  <li><a href="#contact">联系</a></li>
 </ul>
 ```
 
 ![image](img/htmlp.jpg)
 
-navigation.html
+`navigation.html`
 
 ![image](img/2p.jpg)
-添加一个包含规则的样式表以移除标记、边距和内边距，然后指定颜色和固定宽度
+
+添加一个包含规则的样式表以移除标记、边距和内边距，然后指定颜色和固定宽度。
 
 ```css
-ul { list-style-type : none ; margin : 0 ; padding : 0 ;
-background : Pink ; width : 150px ; }
+ul {
+  list-style-type : none ;
+  margin : 0 ;
+  padding : 0 ;
+  background : Pink ;
+  width : 150px ;
+}
 ```
 
 ![image](img/3p.jpg)
-接下来，添加样式规则以块显示显示超链接并指定它们的显示方式。
+
+接下来，添加样式规则以块显示超链接并指定它们的显示方式。
 
 ```css
-li a { display : block ; text-align : center ;
-text-decoration : none ;
-color : Black ; padding : 10px ; }
+li a {
+  display : block ;
+  text-align : center ;
+  text-decoration : none ;
+  color : Black ;
+  padding : 10px ;
+}
 ```
 
 ![image](img/4p.jpg)
-现在，添加样式规则来指示超链接的状态
+
+现在，添加样式规则来指示超链接的状态。
 
 ```css
 li a.current { background : HotPink ; }
@@ -7825,7 +8238,8 @@ li a:hover { background : DeepPink ; color : White ; }
 ```
 
 ![image](img/5p.jpg)
-保存 HTML 文档，然后在浏览器中打开网页以查看垂直导航栏
+
+保存 HTML 文档，然后在浏览器中打开网页以查看垂直导航栏。
 
 ![image](img/pg249_1.jpg)
 
@@ -7836,24 +8250,37 @@ li a:hover { background : DeepPink ; color : White ; }
 伪类用于通过 `a:link`（默认）、`a:visited`、`a:hover` 和 `a:active` 指示超链接的状态。
 
 ![image](img/6p.jpg)
-编辑步骤 2 中的规则，将 width 替换为 overflow
+
+编辑步骤 2 中的规则，将 `width` 替换为 `overflow`。
 
 ```css
-ul { list-style-type : none ; margin : 0 ; padding : 0 ;
-background : Pink ; overflow : hidden ; }
+ul {
+  list-style-type : none ;
+  margin : 0 ;
+  padding : 0 ;
+  background : Pink ;
+  overflow : hidden ;
+}
 ```
 
 ![image](img/7p.jpg)
-同时编辑步骤 3 中的规则以添加一个浮动规则
+
+同时编辑步骤 3 中的规则以添加一个浮动规则。
 
 ```css
-li a { display : block ; text-align : center ;
-text-decoration : none ;
-color : Black ; padding : 10px ; float : left ; }
+li a {
+  display : block ;
+  text-align : center ;
+  text-decoration : none ;
+  color : Black ;
+  padding : 10px ;
+  float : left ;
+}
 ```
 
 ![image](img/8p.jpg)
-再次保存 HTML 文档，然后在浏览器中刷新网页
+
+再次保存 HTML 文档，然后在浏览器中刷新网页。
 
 ![image](img/pg249_4)
 
@@ -7861,40 +8288,42 @@ color : Black ; padding : 10px ; float : left ; }
 
 下拉菜单是一个在用户将鼠标悬停在活动元素上之前隐藏的容器。使用 `position : relative` 规则设置活动元素，使用 `position : absolute` 规则设置下拉菜单，使其位于活动元素下方。使用 `z-index` 属性确保下拉菜单位于任何现有内容之上。使用 `display : none` 规则隐藏下拉菜单，使用 `display : block` 规则在用户将鼠标悬停在活动元素上时显示它。
 
-创建一个带有标题和两个内部 div 的 HTML 文档
+创建一个带有标题和两个内部 `div` 的 HTML 文档。
 
 ```html
 <h1>Banner</h1>
 <div class="container">
-Dropdown Menu
-<div class="dropdown">
-<a href="#option-1">Option 1</a>
-<a href="#option-2">Option 2</a>
-<a href="#option-3">Option 3</a>
-</div>
+  Dropdown Menu
+  <div class="dropdown">
+    <a href="#option-1">Option 1</a>
+    <a href="#option-2">Option 2</a>
+    <a href="#option-3">Option 3</a>
+  </div>
 </div>
 <p>Random text below the dropdown menu.</p>
 ```
 
 ![image](img/htmlp.jpg)
 
-dropdown.html
+`dropdown.html`
 
-添加一个包含规则的样式表以包含所有元素的框框模型
+添加一个包含规则的样式表以包含所有元素的框框模型。
 
 ```css
-* { box-sizing: border ; }
+* { box-sizing : border ; }
 ```
 
 ![image](img/2p.jpg)
-接下来，添加规则为标题创建边框以显示其宽度
+
+接下来，添加规则为标题创建边框以显示其宽度。
 
 ```css
 h1 { border : 2px dashed DeepPink ; }
 ```
 
 ![image](img/3p.jpg)
-现在，添加样式规则将容器设置为内联块
+
+现在，添加样式规则将容器设置为内联块。
 
 ```css
 div.container { position : relative ; display : inline-block ; }
@@ -7905,19 +8334,26 @@ div.container { position : relative ; display : inline-block ; }
 你可以在此了解更多关于 `box-sizing` 属性的信息](chapter13.xhtml)。
 
 ![image](img/5p.jpg)
-然后，添加规则为第一个内部 div 设置样式
+
+然后，添加规则为第一个内部 `div` 设置样式。
 
 ```css
 div.active { padding : 15px ; background : Pink ; }
 ```
 
 ![image](img/6p.jpg)
-接下来，添加规则对第二个内部 div 进行定位并隐藏它
+
+接下来，添加规则对第二个内部 `div` 进行定位并隐藏它。
 
 ```css
-div.dropdown { position : absolute ; width : 100% ;
-border : 2px solid Pink ; background : White ;
-z-index : 1 ; display : none ; }
+div.dropdown {
+  position : absolute ;
+  width : 100% ;
+  border : 2px solid Pink ;
+  background : White ;
+  z-index : 1 ;
+  display : none ;
+}
 ```
 
 ![image](img/snake.jpg)
@@ -7925,92 +8361,103 @@ z-index : 1 ; display : none ; }
 如果你不为下拉内容指定 `background` 值，它可能是透明的——这样下方的内容将保持可见。
 
 ![image](img/7p.jpg)
-现在，添加规则使每个链接的内容框变为可点击
+
+现在，添加规则使每个链接的内容框变为可点击。
 
 ```css
-div.dropdown a { display : block ; padding : 15px ;
-text-decoration : none ; color : Black ; }
+div.dropdown a {
+  display : block ;
+  padding : 15px ;
+  text-decoration : none ;
+  color : Black ;
+}
 ```
 
 ![image](img/8p.jpg)
-然后，添加规则在用户将鼠标悬停在链接上时更改链接的外
+
+然后，添加规则在用户将鼠标悬停在链接上时更改链接的外观。
 
 ```css
-div.dropdown a:hover { background : DeepPink ;
-color : White ; }
+div.dropdown a:hover {
+  background : DeepPink ;
+  color : White ;
+}
 ```
 
 ![image](img/9p.jpg)
-最后，添加一条样式规则，当用户将鼠标悬停在活动元素上时显示下拉框
+
+最后，添加一条样式规则，当用户将鼠标悬停在活动元素上时显示下拉框。
 
 ```css
 div.container:hover div.dropdown { display : block ; }
 ```
 
 ![image](img/10p.jpg)
-保存 HTML 文档，然后打开并将鼠标悬停在活动元素上以查看下拉菜单的出现
 
+保存 HTML 文档，然后打开并将鼠标悬停在活动元素上以查看下拉菜单的出现。
 
-
-
-*   网络浏览器可以通过评估表格宽度及其第一行单元格的宽度来快速绘制固定布局表格。
-*   表格的 `caption-side` 可以指定为顶部或底部。
-*   `border-spacing` 可以指定表格单元格边界之间的距离为统一距离或水平和垂直距离。
-*   `empty-cells` 属性可以隐藏任何没有任何内容的单元格。
-*   `border-collapse` 属性可以将表格及其单元格的相邻边界合并为单个边框。
-*   `display` 属性可以指定所选元素应被浏览器视为表格组件。
-*   `list-style-type` 可以指定用于列表项目的标记类型，如项目符号、数字或字母。
-*   CSS `url( )` 函数可以指定用于列表标记的图像路径。
-*   `list-style-position` 可以指定标记应该出现在列表内容框的内部还是外部。
-*   导航栏是一组对 HTML 列表元素应用了特定 CSS 样式规则的超列表。
-*   当超链接显示为块级元素时，其整个内容框都是可点击的。
-*   伪类可以用于指示超链接的状态。
-*   垂直导航栏指定列表宽度，但水平导航栏让列表项目浮动并隐藏溢出部分。
-*   下拉框是一个内容框，在用户将光标置于激活元素上之前它是隐藏的。
-*   下拉列表的激活元素应该是相对定位的，以便下拉框可以绝对定位在它下方。
+- 网络浏览器可以通过评估表格宽度及其第一行单元格的宽度来快速绘制固定布局表格。
+- 表格的 `caption-side` 可以指定为顶部或底部。
+- `border-spacing` 可以指定表格单元格边界之间的距离为统一距离或水平和垂直距离。
+- `empty-cells` 属性可以隐藏任何没有任何内容的单元格。
+- `border-collapse` 属性可以将表格及其单元格的相邻边界合并为单个边框。
+- `display` 属性可以指定所选元素应被浏览器视为表格组件。
+- `list-style-type` 可以指定用于列表项目的标记类型，如项目符号、数字或字母。
+- CSS `url()` 函数可以指定用于列表标记的图像路径。
+- `list-style-position` 可以指定标记应该出现在列表内容框的内部还是外部。
+- 导航栏是一组对 HTML 列表元素应用了特定 CSS 样式规则的超列表。
+- 当超链接显示为块级元素时，其整个内容框都是可点击的。
+- 伪类可以用于指示超链接的状态。
+- 垂直导航栏指定列表宽度，但水平导航栏让列表项目浮动并隐藏溢出部分。
+- 下拉框是一个内容框，在用户将光标置于激活元素上之前它是隐藏的。
+- 下拉列表的激活元素应该是相对定位的，以便下拉框可以绝对定位在它下方。
 
 | 12 生成效果 | ![image](img/pg235_1.jpg) |
+| --- | --- |
 
 *本章演示了如何在 HTML 文档中制作样式时尚的效果。*
 
-*   选择光标
-*   显示焦点
-*   鼠标悬停效果
-*   按钮按钮
-*   显示元素
-*   绘制角落
-*   投射阴影
-*   混合渐变
-*   装饰边框
-*   变换形状
-*   制作过渡
-*   动画元素
-*   适应对象
-*   总结
+- 选择光标
+- 显示焦点
+- 鼠标悬停效果
+- 按钮按钮
+- 显示元素
+- 绘制角落
+- 投射阴影
+- 混合渐变
+- 装饰边框
+- 变换形状
+- 制作过渡
+- 动画元素
+- 适应对象
+- 总结
 
 ## 选择光标
 
-CSS `cursor` 属性可以指定当指针悬停在所选元素上时显示的的光标类型。它的默认值 `auto` 允许浏览器决定显示哪种光标，但指定默认关键字将显式强制浏览器使用操作系统的默认光标。
+CSS `cursor` 属性可以指定当指针悬停在所选元素上时显示的光标类型。它的默认值 `auto` 允许浏览器决定显示哪种光标，但指定默认关键字将显式强制浏览器使用操作系统的默认光标。
 
 ![image](img/pg254_1.jpg)
 
 可选的光标关键字以及它们在 Windows 操作系统中代表的光标图标列如下：
 
-| **关键字:** | **光标:** | **关键字:** | **光标:** |
+| 关键字 | 光标 | 关键字 | 光标 |
+| --- | --- | --- | --- |
+| `default` | ![image](img/pg254_2.jpg) | `n-resize` | ![image](img/pg254_10.jpg) |
+| `pointer` | ![image](img/pg254_3.jpg) | `ne-resize` | ![image](img/pg254_11.jpg) |
+| `crosshair` | ![image](img/pg254_4.jpg) | `e-resize` | ![image](img/pg254_12.jpg) |
+| `move` | ![image](img/pg254_5.jpg) | `se-resize` | ![image](img/pg254_13.jpg) |
+| `text` | ![image](img/pg254_6.jpg) | `s-resize` | ![image](img/pg254_14.jpg) |
 
-| **default** | ![image](img/pg254_2.jpg) | **n-resize** | ![image](img/pg254_10.jpg) |
 
-| **pointer** | ![image](img/pg254_3.jpg) | **ne-resize** | ![image](img/pg254_11.jpg) |
-| **crosshair** | ![image](img/pg254_4.jpg) | **e-resize** | ![image](img/pg254_12.jpg) |
-| **move** | ![image](img/pg254_5.jpg) | **se-resize** | ![image](img/pg254_13.jpg) |
-| **text** | ![image](img/pg254_6.jpg) | **s-resize** | ![image](img/pg254_14.jpg) |
-| **wait** | ![image](img/pg254_7.jpg) | **sw-resize** | ![image](img/pg254_15.jpg) |
-| **progress** | ![image](img/pg254_8.jpg) | **w-resize** | ![image](img/pg254_16.jpg) |
-| **help** | ![image](img/pg254_9.jpg) | **nw-resize** | ![image](img/pg254_17.jpg) |
+
+| `wait` | ![image](img/pg254_7.jpg) | `sw-resize` | ![image](img/pg254_15.jpg) |
+|---|---|---|---|
+| `progress` | ![image](img/pg254_8.jpg) | `w-resize` | ![image](img/pg254_16.jpg) |
+| `help` | ![image](img/pg254_9.jpg) | `nw-resize` | ![image](img/pg254_17.jpg) |
 
 传统上，手光标图标表示超链接，移动光标图标表示可以拖动的项目，而文本光标图标表示可以选择文本的组件。由于大多数用户熟悉这些光标惯例，最好遵循这些习惯。
 
-除了系统光标图标外，`cursor` 属性可以通过在 CSS `url( )` 函数的括号内说明其路径来指定一个图像作为自定义光标图标。可以以逗号分隔列表的形式指定多个图像，但列表应始终以常规光标关键字结尾，以便在指定的图像不可用时指定使用哪个系统光标图标。
+除了系统光标图标外，`cursor` 属性可以通过在 CSS `url()` 函数的括号内说明其路径来指定一个图像作为自定义光标图标。可以以逗号分隔列表的形式指定多个图像，但列表应始终以常规光标关键字结尾，以便在指定的图像不可用时指定使用哪个系统光标图标。
 
 ![image](img/forget.jpg)
 
@@ -8026,7 +8473,7 @@ CSS `cursor` 属性可以指定当指针悬停在所选元素上时显示的的�
 
 ![image](img/1o.jpg)
 
-创建一个包含多个交互组件的 HTML 文档
+创建一个包含多个交互组件的 HTML 文档：
 
 ```html
 <form action="echo.py">
@@ -8064,9 +8511,6 @@ a:focus {
 }
 ```
 
-
-
-
 用户操作会触发界面“事件”，三个动态伪类 `:focus`、`:hover` 和 `:active` 就可以对这些事件做出响应。例如，当用户点击文本输入框时，会发生 `Focus` 事件——`:focus` 伪类可以通过应用样式对此响应。或许更有趣的是，当用户将光标移动到任何元素上时，会发生 `MouseOver` 事件——`:hover` 伪类可以通过应用样式对此响应。当光标移出元素时，会发生 `MouseOut` 事件，移除应用的样式，从而创建动态的“悬停”（rollover）效果。
 
 ![image](img/pg258_1.jpg)
@@ -8075,51 +8519,83 @@ a:focus {
 
 一种更好的图像切换替代方案是将 `MouseOver` 和 `MouseOut` 状态的图像合并到单个图像文件中，然后通过为每个状态指定不同的背景位置，让悬停效果显示图片的相应部分。
 
-![image](img/1o.jpg)创建一个 150x100 像素的图像文件，在透明背景上包含顶部和底部区域
+![image](img/1o.jpg)
+
+创建一个 150x100 像素的图像文件，在透明背景上包含顶部和底部区域。
 
 ![image](img/pg258_2.jpg)
 
 ![image](img/pngo.jpg)
 
-prints.png
+`prints.png`
 
 灰色区域是透明的。
 
-![image](img/2o.jpg)接下来，创建一个 HTML 文档，包含两个带有 id 属性的空 div 元素，用于样式引用
+![image](img/2o.jpg)
+
+接下来，创建一个 HTML 文档，包含两个带有 `id` 属性的空 `div` 元素，用于样式引用：
 
 ```html
-<div id=“active”</div> <div id=“prints”</div>
+<div id="active"></div>
+<div id="prints"></div>
 ```
 
 ![image](img/htmlo.jpg)
 
-rollover.html
+`rollover.html`
 
-![image](img/3o.jpg)添加样式表并包含设置 div 位置和大小的规则——高度正好是图像的一半
+![image](img/3o.jpg)
+
+添加样式表并包含设置 `div` 位置和大小的规则——高度正好是图像的一半：
 
 ```css
-div { position : absolute ; top : 10px ;
-width : 150px ; height : 50px ; }
-div#active { left : 10px ; }
-div#prints { left : 170px ; }
+div {
+  position: absolute;
+  top: 10px;
+  width: 150px;
+  height: 50px;
+}
+
+div#active {
+  left: 10px;
+}
+
+div#prints {
+  left: 170px;
+}
 ```
 
-![image](img/4o.jpg)接下来，添加样式规则来设置背景颜色，并在光标不在 div 元素上时将背景位置设置为图像左上角
+![image](img/4o.jpg)
+
+接下来，添加样式规则来设置背景颜色，并在光标不在 `div` 元素上时将背景位置设置为图像左上角：
 
 ```css
-div#active { background : Bisque ; }
-div#prints { background : url(prints.png) 0 0 Bisque ; }
+div#active {
+  background: Bisque;
+}
+
+div#prints {
+  background: url(prints.png) 0 0 Bisque;
+}
 ```
 
-![image](img/5o.jpg)现在，添加样式规则来更改背景颜色，并在光标位于 div 元素上时将背景位置设置为图像的左中间
+![image](img/5o.jpg)
+
+现在，添加样式规则来更改背景颜色，并在光标位于 `div` 元素上时将背景位置设置为图像的左中间：
 
 ```css
-div#active:hover { background-color : DarkOrange ; }
+div#active:hover {
+  background-color: DarkOrange;
+}
+
 div#prints:hover {
-background : url(prints.png) 0 -50px DarkOrange ; }
+  background: url(prints.png) 0 -50px DarkOrange;
+}
 ```
 
-![image](img/6o.jpg)保存 HTML 文档，然后在浏览器中打开网页，并将光标滑过 div 元素，查看它们的背景如何变化
+![image](img/6o.jpg)
+
+保存 HTML 文档，然后在浏览器中打开网页，并将光标滑过 `div` 元素，查看它们的背景如何变化。
 
 ![image](img/pg259_1.jpg)
 
@@ -8137,47 +8613,81 @@ background : url(prints.png) 0 -50px DarkOrange ; }
 
 ![image](img/pg260_1.jpg)
 
-![image](img/1o.jpg)创建一个带有表单的 HTML 文档，包含三个内部元素，它们将被样式化为按钮
+![image](img/1o.jpg)
+
+创建一个带有表单的 HTML 文档，包含三个内部元素，它们将被样式化为按钮：
 
 ```html
-<a class=”button” href=”target.html” >链接按钮</</a>
-<button class=”button”
-onclick=”alert(this.innerText + ‘ Clicked’”)>
-脚本按钮</button>
-<form method=”GET” action=”http://localhost/echo.py”>
-<input class=”button” type=”submit”
-name=”CSS” value=”提交按钮”>
+<a class="button" href="target.html">链接按钮</a>
+
+<button
+  class="button"
+  onclick="alert(this.innerText + ' Clicked')">
+  脚本按钮
+</button>
+
+<form method="GET" action="http://localhost/echo.py">
+  <input
+    class="button"
+    type="submit"
+    name="CSS"
+    value="提交按钮">
 </form>
 ```
 
 ![image](img/pyo.jpg)
 
-echo.py
+`echo.py`
 
 ![image](img/htmlo.jpg)
 
-buttons.html & target.html
+`buttons.html` & `target.html`
 
-![image](img/2o.jpg)添加样式表并包含规则为三个内部元素分别设置样式——移除任何默认样式
+![image](img/2o.jpg)
 
-```css
-.button { display : inline-block ; font : 16px sans-serif ;
-background : Orange ; color : White ;
-border : none ; padding : 16px 32px ; margin : 5px ;
-text-align : center ; text-decoration : none ;
-cursor : pointer ; }
-```
-
-![image](img/3o.jpg)接下来，添加规则为每个按钮创建悬停效果并简单地对齐表单
+添加样式表并包含规则为三个内部元素分别设置样式——移除任何默认样式：
 
 ```css
-.button:link, .button:visited { color : White ; }
-.button:hover { background : Coral ; }
-.button:active { background : OrangeRed ; }
-form { display : inline-block ; }
+.button {
+  display: inline-block;
+  font: 16px sans-serif;
+  background: Orange;
+  color: White;
+  border: none;
+  padding: 16px 32px;
+  margin: 5px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+}
 ```
 
-![image](img/4o.jpg)保存 HTML 文档，然后在浏览器中打开它，查看每个按钮上的悬停效果
+![image](img/3o.jpg)
+
+接下来，添加规则为每个按钮创建悬停效果并简单地对齐表单：
+
+```css
+.button:link,
+.button:visited {
+  color: White;
+}
+
+.button:hover {
+  background: Coral;
+}
+
+.button:active {
+  background: OrangeRed;
+}
+
+form {
+  display: inline-block;
+}
+```
+
+![image](img/4o.jpg)
+
+保存 HTML 文档，然后在浏览器中打开它，查看每个按钮上的悬停效果。
 
 ![image](img/pg260_2.jpg)
 
@@ -8277,18 +8787,19 @@ form { display : inline-block ; }
 
 ![image](img/pg260_50.jpg)
 
-（注：原文中存在大量重复的占位符文本，此处已根据“不要重复输出原文”的原则进行清理，保留核心结构内容）
-
-
-
-
 ```css
-span.label { display : block ; padding : 15px ;
-text-align : center ;
-background : DarkOrange ; color : White ; }
+span.label {
+  display: block;
+  padding: 15px;
+  text-align: center;
+  background: DarkOrange;
+  color: White;
+}
 ```
 
-![image](img/8o.jpg)保存 HTML 文档，然后将鼠标悬停在每个缩略图上以显示下拉内容
+![image](img/8o.jpg)
+
+保存 HTML 文档，然后将鼠标悬停在每个缩略图上以显示下拉内容。
 
 ![image](img/pg263_1.jpg)
 
@@ -8300,7 +8811,7 @@ background : DarkOrange ; color : White ; }
 
 ![image](img/hot.jpg)
 
-另一种，可以使用 `visibility : hidden ;` 规则隐藏元素并使用 `visibility : visible ;` 规则显示。使用这些规则时，内容在隐藏时仍然占据页面上的空间，而使用 `display : none ;` 规则时，内容将完全从页面流布局中移除。
+另一种，可以使用 `visibility: hidden` 规则隐藏元素并使用 `visibility: visible` 规则显示。使用这些规则时，内容在隐藏时仍然占据页面上的空间，而使用 `display: none` 规则时，内容将完全从页面流布局中移除。
 
 ## 绘制圆角
 
@@ -8314,7 +8825,7 @@ background : DarkOrange ; color : White ; }
 
 ![image](img/pg264_3.jpg)
 
-另一种，可以使用 `border-radius` 作为简写属性指定四个值来对单个角进行圆角——顺序分别为 `border-top-left`、`border-top-right`、`border-bottom-right`、`border-bottom-left`。如果对任何角指定零值，则不会产生半径。也可以通过指定两个值来定义椭圆以使单个角弯曲，使得水平和垂直方向获得不同的半径。第一个值指定水平 x 半径，第二个值指定垂直 y 半径。例如，`border-top-right-radius : 20px 50px` 定义了一个椭圆。
+另一种，可以使用 `border-radius` 作为简写属性指定四个值来对单个角进行圆角——顺序分别为 `border-top-left`、`border-top-right`、`border-bottom-right`、`border-bottom-left`。如果对任何角指定零值，则不会产生半径。也可以通过指定两个值来定义椭圆以使单个角弯曲，使得水平和垂直方向获得不同的半径。第一个值指定水平 x 半径，第二个值指定垂直 y 半径。例如，`border-top-right-radius: 20px 50px` 定义了一个椭圆。
 
 将 `border-radius` 属性设置为正方形内容框大小（包括边框）的一半，可以创建圆形。
 
@@ -8322,40 +8833,75 @@ background : DarkOrange ; color : White ; }
 
 通过在长方形内容框上将 `border-radius` 设置为 50%，可以创建一个椭圆。
 
-![image](img/1o.jpg)创建一个包含三个外部 div 的 HTML 文档，每个 div 均包含一个内层 div 元素
+![image](img/1o.jpg)
+
+创建一个包含三个外部 `div` 的 HTML 文档，每个 `div` 均包含一个内层 `div` 元素：
 
 ```html
-<div=”outer all”><div class=”inner”>
-All Rounded Corners</div></div>
-<div class=”outer ind”><div class=”inner”>
-Individual Corners</div></div>
-<div class=”outer cir”><div class=”inner”>
-Circle</div></div>
+<div class="outer all">
+  <div class="inner">All Rounded Corners</div>
+</div>
+
+<div class="outer ind">
+  <div class="inner">Individual Corners</div>
+</div>
+
+<div class="outer cir">
+  <div class="inner">Circle</div>
+</div>
 ```
 
 ![image](img/htmlo.jpg)
 
-radius.html
+`radius.html`
 
-![image](img/2o.jpg)接下来，添加带有规则的样式表以指定每个元素的位置和外观
+![image](img/2o.jpg)
 
-```css
-div.outer, div.inner { width : 120px ; height : 120px ; }
-div.outer { display : inline-block ; margin : 10px ;
-border : 5px solid DarkOrange ; background : Bisque ; }
-div.inner { display : table-cell ; text-align : center ;
-vertical-align : middle ; border : 2px dashed Orange ; }
-```
-
-![image](img/3o.jpg)现在，添加规则来调整外部 div 的角
+接下来，添加带有规则的样式表以指定每个元素的位置和外观：
 
 ```css
-div.all { border-radius : 40px ; }
-div.ind { border-radius : 50px 0 50px 0 ; }
-div.cir { border-radius : 65px ; }
+div.outer,
+div.inner {
+  width: 120px;
+  height: 120px;
+}
+
+div.outer {
+  display: inline-block;
+  margin: 10px;
+  border: 5px solid DarkOrange;
+  background: Bisque;
+}
+
+div.inner {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  border: 2px dashed Orange;
+}
 ```
 
-![image](img/4o.jpg)保存 HTML 文档，然后在浏览器中打开它以查看圆角
+![image](img/3o.jpg)
+
+现在，添加规则来调整外部 `div` 的角：
+
+```css
+div.all {
+  border-radius: 40px;
+}
+
+div.ind {
+  border-radius: 50px 0 50px 0;
+}
+
+div.cir {
+  border-radius: 65px;
+}
+```
+
+![image](img/4o.jpg)
+
+保存 HTML 文档，然后在浏览器中打开它以查看圆角。
 
 ![image](img/pg265_1.jpg)
 
@@ -8365,7 +8911,7 @@ div.cir { border-radius : 65px ; }
 
 ![image](img/forget.jpg)
 
-此示例中的第二个外部 div 可以使用单独的规则 `border-top-left-radius : 50px ; border-bottom- right-radius : 50px ;` 进行样式。
+此示例中的第二个外部 `div` 可以使用单独的规则 `border-top-left-radius: 50px; border-bottom-right-radius: 50px;` 进行样式。
 
 ## 添加投影
 
@@ -8377,7 +8923,9 @@ div.cir { border-radius : 65px ; }
 
 ![image](img/pg266_2.jpg)
 
-可选地，`box-shadow` 和 `text-shadow` 属性可以第三个值来指定模糊距离，该距离决定阴影边缘的模糊程度——值越高越模糊。例如，`20px` 的模糊值会扩展阴影，使其在原始偏移两边 10 像素的区域变得模糊。
+
+
+可选地，`box-shadow` 和 `text-shadow` 属性可以使用第三个值来指定模糊距离，该距离决定阴影边缘的模糊程度——值越高越模糊。例如，`20px` 的模糊值会扩展阴影，使其在原始偏移两边 10 像素的区域变得模糊。
 
 ![image](img/pg266_3.jpg)
 
@@ -8389,19 +8937,23 @@ div.cir { border-radius : 65px ; }
 
 虽然不是严格要求指定颜色，但建议避免不同网络浏览器之间的不一致。
 
-![image](img/1o.jpg)创建一个包含三个外部 div 的 HTML 文档，每个 div 均包含一个内层 div 元素
+![image](img/1o.jpg)
+
+创建一个包含三个外部 `div` 的 HTML 文档，每个 `div` 均包含一个内层 `div` 元素：
 
 ```html
-<div class=”outer drop”><div class=”inner”>HTML</div></div>
-<div class=”outer glow”><div class=”inner”>CSS</div></div>
-<div class=”outer inset”><div class=”inner”>JS</div></div>
+<div class="outer drop"><div class="inner">HTML</div></div>
+<div class="outer glow"><div class="inner">CSS</div></div>
+<div class="outer inset"><div class="inner">JS</div></div>
 ```
 
 ![image](img/htmlo.jpg)
 
-shadow.html
+`shadow.html`
 
-![image](img/2o.jpg)接下来，添加带有规则的样式表以指定每个元素的位置和外观
+![image](img/2o.jpg)
+
+接下来，添加带有规则的样式表以指定每个元素的位置和外观：
 
 ```css
 div.outer, div.inner { width : 120px ; height : 120px ; }
@@ -8411,7 +8963,9 @@ div.inner { display : table-cell ; text-align : center ;
 vertical-align : middle ; font : bold 2em sans-serif ; }
 ```
 
-![image](img/3o.jpg)现在，添加规则为框和文本应用投影
+![image](img/3o.jpg)
+
+现在，添加规则为框和文本应用投影：
 
 ```css
 div.drop { box-shadow : 10px 10px 10px DarkOrange; }
@@ -8424,7 +8978,9 @@ div.inset > div.inner { color : Bisque;
 text-shadow : -1px 0 Black , 0 1px Black , 1px 0 Black , 0 -1px Black ; }
 ```
 
-![image](img/4o.jpg)保存 HTML 文档，然后在浏览器中打开它以查看投影
+![image](img/4o.jpg)
+
+保存 HTML 文档，然后在浏览器中打开它以查看投影。
 
 ![image](img/pg267_1.jpg)
 
@@ -8432,21 +8988,17 @@ text-shadow : -1px 0 Black , 0 1px Black , 1px 0 Black , 0 -1px Black ; }
 
 ## 混合渐变
 
-CSS 提供了四个函数来创建渐变填充，浏览器从一个指定的颜色到另一种颜色进行平滑混合——`linear-gradient()`、`repeating-linear-gradient()`、`radial-gradient()` 和 `repeating-radial-gradient()`。
+CSS 提供了四个函数来创建渐变填充，浏览器从一个指定的颜色到另一种颜色进行平滑混合：`linear-gradient()`、`repeating-linear-gradient()`、`radial-gradient()` 和 `repeating-radial-gradient()`。
 
 ![image](img/pg268_1.jpg)
 
 `linear-gradient()` 函数沿线性路径创建颜色过渡，从一个“颜色停止点”混合到另一个。每个颜色停止点可以在函数括号内简单地用逗号分隔的颜色值指定，或者用逗号分隔的颜色和位置值指定——例如，使用 `Red, Yellow` 或使用 `Red 50%, Yellow 100%` 来定义路径的中点和终点的颜色停止点。至少有两个颜色停止点，但你可以指定多个颜色停止点以实现使用更多颜色的复杂渐变效果。
 
+`linear-gradient()` 函数的默认方向是从上到下，但你可以通过包含一个可选的第一个值（作为 `top`、`bottom`、`left`、`right` 关键字的组合）来定义一个不同的方向——例如，使用 `to bottom right` 关键字创建从左上角开始的对角线渐变。为了更精确地控制方向，可选的第一个值可以指定角度，例如 `45deg` 或 `90deg`。在这种情况下，该值指定了水平边缘与 `linear-gradient()` 路径之间的角度。例如，`45deg` 创建了一个从左下角到右上角的对角线路径，而 `90deg` 生成了一个从左到右的水平路径。你也可以指定负值。例如，`-90deg` 创建了一个从右到左的水平路径（与 `270deg` 相同）。
 
+`radial-gradient()` 函数也从一个颜色停止点混合到另一个，但其路径是从中心点向外扩散的。默认情况下，它从元素的中心开始并呈圆形。可选地，可以指定 `ellipse` 关键字以及长度和位置值来定义不同的径向形状和不同的中心点。你可以通过包含一个可选的第一个值（作为 `closest-side`、`farthest-side`、`closest-corner`、`farthest-corner`、`at` 以及 x 轴和 y 轴的百分比值的组合）来定义不同的中心点——例如，从中心右侧和下方开始的径向渐变，使用 `closest-side` 在 `60% 60%`。
 
-
-
-`linear-gradient( )` 函数的默认方向是从上到下，但你可以通过包含一个可选的第一个值（作为 `top` `bottom` `left` `right` 关键字的组合）来定义一个不同的方向——例如，从左上角开始的 `to bottom right` 关键字的对角线渐变。为了更精确地控制方向，可选的第一个值可以指定角度，例如 `45deg` 或 `90deg`。在这种情况下，该值指定了水平边缘与 `linear-gradient( )` 路径之间的角度。例如，`45deg` 创建了一个从左下角到右上角的对角线路径，而 `90deg` 生成了一个从左到右的水平路径。你也可以指定负值。例如，`-90deg` 创建了一个从右到左的水平路径（与 `270deg` 相同）。
-
-`radial-gradient( )` 函数也从一个颜色停止点混合到另一个，但其路径是从中心点向外扩散的。默认情况下，它从元素的中心开始并呈圆形。可选，可以指定 `ellipse` 关键字以及长度和位置值来定义不同的径向形状和不同的中心点。你可以通过包含一个可选的第一个值（作为 `closest-side`、`farthest-side`、`closest-corner`、`farthest-corner`、`at` 以及 x 轴和 y 轴的百分比值的组合）来定义不同的中心点——例如，从中心右侧和下方开始的径向渐变，使用 `closest-side` 在 `60% 60%`。
-
-`repeating-linear-gradient( )` 和 `repeating-radial-gradient( )` 函数接受与其非重复版本相同的值，但在达到最后一个指定的颜色停止后会自动重复渐变。
+`repeating-linear-gradient()` 和 `repeating-radial-gradient()` 函数接受与其非重复版本相同的值，但在达到最后一个指定的颜色停止后会自动重复渐变。
 
 ![image](img/forget.jpg)
 
@@ -8454,7 +9006,7 @@ CSS 提供了四个函数来创建渐变填充，浏览器从一个指定的颜�
 
 ![image](img/1o.jpg)
 
-创建一个包含四个 div 元素的 HTML 文档
+创建一个包含四个 `div` 元素的 HTML 文档：
 
 ```html
 <div class="linear"></div>
@@ -8465,9 +9017,11 @@ CSS 提供了四个函数来创建渐变填充，浏览器从一个指定的颜�
 
 ![image](img/htmlo.jpg)
 
-gradient.html
+`gradient.html`
 
-![image](img/2o.jpg) 接下来，添加带有规则的样式表以指定每个元素的位置和外观——包括默认的背景颜色
+![image](img/2o.jpg)
+
+接下来，添加带有规则的样式表以指定每个元素的位置和外观——包括默认的背景颜色：
 
 ```css
 div { display: inline-block; width: 100px; height: 100px; margin: 10px; border: 2px solid Black; background: Orange; }
@@ -8477,7 +9031,9 @@ div { display: inline-block; width: 100px; height: 100px; margin: 10px; border: 
 
 某些浏览器可能不支持渐变，因此指定一个默认单色是有用的。
 
-![image](img/3o.jpg) 现，添加规则来为支持渐变的浏览器应用渐变背景
+![image](img/3o.jpg)
+
+现在，添加规则来为支持渐变的浏览器应用渐变背景：
 
 ```css
 div.linear { background: linear-gradient(45deg, DarkOrange, Bisque); }
@@ -8486,7 +9042,9 @@ div.radial { background: radial-gradient(DarkOrange 20%, Bisque 40%, OrangeRed 5
 div.radial-repeat { background: repeating-radial-gradient(DarkOrange 20%, Bisque 40%, OrangeRed 50%); }
 ```
 
-![image](img/4o.jpg) 保存 HTML 文档然后在浏览器中打开它查看渐变
+![image](img/4o.jpg)
+
+保存 HTML 文档，然后在浏览器中打开它查看渐变。
 
 ![image](img/pg269_1.jpg)
 
@@ -8496,13 +9054,13 @@ div.radial-repeat { background: repeating-radial-gradient(DarkOrange 20%, Bisque
 
 ## 装饰边框
 
-CSS 提供了 `border-image` 属性，允许你通过 `url( )` 函数指定图像源来装饰边框。这是唯一必需的值，它会将图像放置在指定的边框区域，内容框的每个角落。
+CSS 提供了 `border-image` 属性，允许你通过 `url()` 函数指定图像源来装饰边框。这是唯一必需的值，它会将图像放置在指定的边框区域，内容框的每个角落。
 
 ![image](img/pg270_1.jpg)
 
 `border-image` 属性可以在图像源之后指定额外的值来装饰角落之间的边框区域——但它的工作方式不寻常。
 
-`border-image` 属性将图像切分为九部分，类似于井棋盘。第一个额外值可以指定从顶部、右侧、底部和左侧边缘切分图像的点。例如，`33%` 的值将从每条边缘切下三分之一。然后将四个角的切片放置在边框的每个角上，并将四个中间切片按默认拉伸，以装饰角落之间的边框区域。
+`border-image` 属性将图像切分为九部分，类似于井字棋盘。第一个额外值可以指定从顶部、右侧、底部和左侧边缘切分图像的点。例如，`33%` 的值将从每条边缘切下三分之一。然后将四个角的切片放置在边框的每个角上，并将四个中间切片按默认拉伸，以装饰角落之间的边框区域。
 
 ![image](img/pg270_2.jpg)
 
@@ -8520,9 +9078,13 @@ CSS 提供了 `border-image` 属性，允许你通过 `url( )` 函数指定图�
 
 支持 `border-image` 属性的浏览器也支持渐变。这意味着，除了 `border-image`，你还可以指定任何渐变。
 
-![image](img/1o.jpg) `border-image` 只有在指定了 `border` 后才会生效。
+![image](img/1o.jpg)
 
-![image](img/2o.jpg) 创建包含四个 div 元素的 HTML
+`border-image` 只有在指定了 `border` 后才会生效。
+
+![image](img/2o.jpg)
+
+创建包含四个 `div` 元素的 HTML：
 
 ```html
 <div class="image"></div>
@@ -8530,15 +9092,19 @@ CSS 提供了 `border-image` 属性，允许你通过 `url( )` 函数指定图�
 <div class="stretch"></div>
 ```
 
-![image](img/htmlo.jpg) transform.
+![image](img/htmlo.jpg)
 
-接下来，添加带有规则的样式表以指定每个元素的位置和外观——包括默认的背景颜色
+`transform`。
+
+接下来，添加带有规则的样式表以指定每个元素的位置和外观——包括默认的背景颜色：
 
 ```css
 div { display: inline-block; width: 100px; height: 100px; }
 ```
 
-![image](img/3o.jpg) 现，添加规则来为支持渐变的浏览器应用渐变背景
+![image](img/3o.jpg)
+
+现在，添加规则来为支持渐变的浏览器应用渐变背景：
 
 ```css
 div.linear { background: linear-gradient(45deg, DarkOrange, Bisque); }
@@ -8547,12 +9113,11 @@ div.radial { background: radial-gradient(DarkOrange 20%, Bisque 40%, OrangeRed 5
 div.radial-repeat { background: repeating-radial-gradient(DarkOrange 20%, Bisque 40%, OrangeRed 50%); }
 ```
 
-![image](img/4o.jpg) 保存 HTML 文档然后在浏览器中打开它查看渐变
+![image](img/4o.jpg)
+
+保存 HTML 文档，然后在浏览器中打开它查看渐变。
 
 ![image](img/pg269_1.jpg)
-
-[content]
-[/content]
 
 ## 变换形状
 
@@ -8577,13 +9142,9 @@ CSS 可以通过为 `transform` 属性指定变换函数来动态操作内容框
 | `translateY(n)` | Y 轴移动 `n` 距离 |
 | `matrix(n,n,n,n,n,n*)` | 缩放 `n`, `n`，倾斜 `n`, `n`，移动 `n`, `n` |
 
-`matrix( )` 函数很少使用，但它允许同时对元素进行旋转、缩放、移动和倾斜。它的六个值按照（有点困惑的）顺序代表各个函数 `scaleX( )`、`skewY( )`、`skewX( )`、`scaleY( )`、`translateX( )` 和 `translateY( )`。
+`matrix()` 函数很少使用，但它允许同时对元素进行旋转、缩放、移动和倾斜。它的六个值按照（有点困惑的）顺序代表各个函数 `scaleX()`、`skewY()`、`skewX()`、`scaleY()`、`translateX()` 和 `translateY()`。
 
-
-
-
-
-“变换基点”（transform origin）是执行变换的点，默认情况下，它是元素的中心。然而，你可以为 `transform-origin` 属性指定替代方案，如单位、百分比值或关键字`top”（上）、`bottom”（下）、`left”（左）、`right”（右）和`center”（中间）。例如，使用 `rotate()` 和 `transform-origin : top left ;`，元素将绕其左上角旋转，而不是其中心点。
+“变换基点”（transform origin）是执行变换的点，默认情况下，它是元素的中心。然而，你可以为 `transform-origin` 属性指定替代方案，如单位、百分比值或关键字 `top`（上）、`bottom`（下）、`left`（左）、`right`（右）和 `center`（中间）。例如，使用 `rotate()` 和 `transform-origin: top left;`，元素将绕其左上角旋转，而不是其中心点。
 
 可以将变换指定给元素的 `:hover` 伪类，这样当用户将光标悬停在元素上时将执行变换，当用户将光标移开时，它将恢复正常状态。
 
@@ -8597,7 +9158,7 @@ CSS 可以通过为 `transform` 属性指定变换函数来动态操作内容框
 
 ![image](img/1o.jpg)
 
-### 创建带有三个 div 元素的 HTML 文档
+### 创建带有三个 `div` 元素的 HTML 文档
 
 ```html
 <div class="rotate">Rotate</div>
@@ -8607,11 +9168,11 @@ CSS 可以通过为 `transform` 属性指定变换函数来动态操作内容框
 
 ![image](img/htmlo.jpg)
 
-transform.html
+`transform.html`
 
 ![image](img/2o.jpg)
 
-### 接下来，添加带有规则样式表以指定每个元素的位置和外观
+### 接下来，添加带有规则的样式表以指定每个元素的位置和外观
 
 ```css
 div { display : inline-block ; margin : 50px 0 0 50px ;
@@ -8621,7 +9182,7 @@ color : White ; font : 1.5em sans-serif ; }
 
 ![image](img/3o.jpg)
 
-### 现在，添加规则在用户将光标悬停在内容框上时对每个 div 进行变换
+### 现在，添加规则在用户将光标悬停在内容框上时对每个 `div` 进行变换
 
 ```css
 div.rotate:hover { transform : rotate( 45deg ) ; }
@@ -8631,10 +9192,12 @@ div.skew:hover { transform : skew( 15deg, 15deg ) ; }
 
 ![image](img/4o.jpg)
 
-保存 HTML 文档，然后在浏览器中打开它，并将光标悬停在每个元素上查看变换效果
+保存 HTML 文档，然后在浏览器中打开它，并将光标悬停在每个元素上查看变换效果。
 
 ![image](img/pg273_1.jpg)
+
 ![image](img/pg273_2.jpg)
+
 ![image](img/pg273_3.jpg)
 
 ### 创建过渡
@@ -8643,23 +9206,25 @@ CSS 可以动态修改属性值，在指定的时间内改变它们的颜色、�
 
 ![image](img/pg274_1.jpg)
 
-`transition` 属性必须指定要修改的 CSS 属性以及效果的持续时间——例如，一个样式规则 `transition : width 5s ;` 用于在五秒内修改元素的宽度。多个属性可以以属性和持续时间对的逗号分隔列表的形式指定，例如 `transition : width 5s, height 3s ;` 同时修改宽度和高度。
+`transition` 属性必须指定要修改的 CSS 属性以及效果的持续时间——例如，一个样式规则 `transition: width 5s;` 用于在五秒内修改元素的宽度。多个属性可以以属性和持续时间对的逗号分隔列表的形式指定，例如 `transition: width 5s, height 3s;` 同时修改宽度和高度。
 
 你可以通过为 `transition-timing-function` 属性分配下面的函数之一来控制效果的“加速曲线”。
 
-| 函数: | 过渡 (Transition): |
+| 函数 | 过渡（Transition） |
 | :--- | :--- |
 | `linear` | 从开始到结束速度一致 |
 | `ease` | 从开始增加以达到全速，然后在结束时减小（默认） |
 | `ease-in` | 仅在开始增加 |
 | `ease-out` | 仅在结束时减小 |
 | `ease-in-out` | 在开始增加并在结束减小 |
-| `steps(*n*)` | 跳到 `n` 个间隔 |
-| `cubic-bezier(*x1,y1,x2,y2*)` | 在坐标之间产生弹性或回弹效果 |
+| `steps(n)` | 跳到 `n` 个间隔 |
+| `cubic-bezier(x1,y1,x2,y2)` | 在坐标之间产生弹性或回弹效果 |
+
+
 
 此外，你可以指定一个 `transition-delay` 时间值，例如 `1s` 代表一秒，这样效果就不会立即开始。
 
-`transition` 属性是各个 `transition-property`、`transition-duration`、`transition-timing-function` 和 `transition-delay` 属性的简写属性。这些值可以指定每个单独的属性，也可以按此顺序为简写属性指定所有四个属性的值——例如，使用 `transition : width 5s linear 0.5s ;` 在延迟 0.5 秒后，以一致的速度在五秒内修改宽度。你还可以通过逗号分隔的组组值列表来指定多个过渡。
+`transition` 属性是各个 `transition-property`、`transition-duration`、`transition-timing-function` 和 `transition-delay` 属性的简写属性。这些值可以指定每个单独的属性，也可以按此顺序为简写属性指定所有四个属性的值——例如，使用 `transition : width 5s linear 0.5s ;` 在延迟 0.5 秒后，以一致的速度在五秒内修改宽度。你还可以通过逗号分隔的组值列表来指定多个过渡。
 
 可以将要修改的属性的最终值指定给元素的 `:hover` 伪类，这样当用户将光标悬停在元素上时将执行变换。
 
@@ -8673,7 +9238,7 @@ CSS 可以动态修改属性值，在指定的时间内改变它们的颜色、�
 
 ![image](img/1o.jpg)
 
-### 创建带有一个 div 元素的 HTML 文档
+### 创建带有一个 `div` 元素的 HTML 文档
 
 ```html
 <div class="expand">Transition</div>
@@ -8681,93 +9246,7 @@ CSS 可以动态修改属性值，在指定的时间内改变它们的颜色、�
 
 ![image](img/htmlo.jpg)
 
-transition.html
-
-![image](img/2o.jpg)
-
-### 接下来，添加带有规则样式表以指定元素的位置和外观
-
-```css
-div { margin : 50px ; padding : 15px ;
-color : White ; font : 1.5em sans-serif ;
-background : Orange ;
-width : 100px ; height : 100px ; }
-```
-
-![image](img/3o.jpg) # 接下来，添加带有规则样式表以指定元素的位置和外观
-
-```css
-div { margin : 50px ; padding : 15px ;
-color : White ; font : 1.5em sans-serif ;
-background : Orange ;
-width : 100px ; height : 100px ; }
-```
-
-![image](img/3o.jpg) # 接下来，添加带有规则样式表以指定元素的位置和外观
-
-（注：此处原文文本似乎存在重复或逻辑断层，已根据上下文整理翻译）
-
-### 现在，添加规则在用户将光标悬停在内容框上时对每个 div 进行变换
-
-```css
-div.rotate:hover { transform : rotate( 45deg ) ; }
-div.scale:hover { transform : scale( 2.0, 2.0 ) ; }
-div.skew:hover { transform : skew( 15deg, 15deg ) ; }
-```
-
-![image](img/4o.jpg)
-
-保存 HTML 文档，然后在浏览器中打开它，并将光标悬停在每个元素上查看变换效果
-
-![image](img/pg273_1.jpg)
-![image](img/pg273_2.jpg)
-![image](img/pg273_3.jpg)
-
-### 创建过渡
-
-CSS 可以动态修改属性值，在指定的时间内改变它们的颜色、大小、位置、方向等，从而通过 `transition` 属性创建简单的动画效果。
-
-![image](img/pg274_1.jpg)
-
-`transition` 属性必须指定要修改的 CSS 属性以及效果的持续时间——例如，一个样式规则 `transition : width 5s ;` 用于在五秒内修改元素的宽度。多个属性可以以属性和持续时间对的逗号分隔列表的形式指定，例如 `transition : width 5s, height 3s ;` 同时修改宽度和高度。
-
-你可以通过为 `transition-timing-function` 属性分配下面的函数之一来控制效果的“加速曲线”。
-
-| 函数: | 过渡 (Transition): |
-| :--- | :--- |
-| `linear` | 从开始到结束速度一致 |
-| `ease` | 从开始增加以达到全速，然后在结束时减小（默认） |
-| `ease-in` | 仅在开始增加 |
-| `ease-out` | 仅在结束时减小 |
-| `ease-in-out` | 在开始增加并在结束减小 |
-| `steps(*n*)` | 跳到 `n` 个间隔 |
-| `cubic-bezier(*x1,y1,x2,y2*)` | 在坐标之间产生弹性或回弹效果 |
-
-此外，你可以指定一个 `transition-delay` 时间值，例如 `1s` 代表一秒，这样效果就不会立即开始。
-
-`transition` 属性是各个 `transition-property`、`transition-duration`、`transition-timing-function` 和 `transition-delay` 属性的简写属性。这些值可以指定每个单独的属性，也可以按此顺序为简写属性指定所有四个属性的值——例如，使用 `transition : width 5s linear 0.5s ;` 在延迟 0.5 秒后，以一致的速度在五秒内修改宽度。你还可以通过逗号分隔的组组值列表来指定多个过渡。
-
-可以将要修改的属性的最终值指定给元素的 `:hover` 伪类，这样当用户将光标悬停在元素上时将执行变换。
-
-![image](img/forget.jpg)
-
-除非指定了持续时间，否则过渡不会运行。
-
-![image](img/hot.jpg)
-
-`steps()` 函数跳转到过渡中的暂停处，因此 `steps(5)` 在五秒的效果中每秒暂停一次。
-
-![image](img/1o.jpg)
-
-### 创建带有一个 div 元素的 HTML 文档
-
-```html
-<div class="expand">Transition</div>
-```
-
-![image](img/htmlo.jpg)
-
-transition.html
+`transition.html`
 
 ![image](img/2o.jpg)
 
@@ -8782,7 +9261,25 @@ width : 100px ; height : 100px ; }
 
 ![image](img/3o.jpg)
 
- 动画
+### 现在，添加规则在用户将光标悬停在内容框上时对每个 `div` 进行变换
+
+```css
+div.rotate:hover { transform : rotate( 45deg ) ; }
+div.scale:hover { transform : scale( 2.0, 2.0 ) ; }
+div.skew:hover { transform : skew( 15deg, 15deg ) ; }
+```
+
+![image](img/4o.jpg)
+
+保存 HTML 文档，然后在浏览器中打开它，并将光标悬停在每个元素上查看变换效果。
+
+![image](img/pg273_1.jpg)
+
+![image](img/pg273_2.jpg)
+
+![image](img/pg273_3.jpg)
+
+### 创建过渡
 
 CSS 可以动态修改属性值，在指定的时间内改变它们的颜色、大小、位置、方向等，从而通过 `transition` 属性创建简单的动画效果。
 
@@ -8790,48 +9287,135 @@ CSS 可以动态修改属性值，在指定的时间内改变它们的颜色、�
 
 `transition` 属性必须指定要修改的 CSS 属性以及效果的持续时间——例如，一个样式规则 `transition : width 5s ;` 用于在五秒内修改元素的宽度。多个属性可以以属性和持续时间对的逗号分隔列表的形式指定，例如 `transition : width 5s, height 3s ;` 同时修改宽度和高度。
 
-（注：原文后部分存在大量重复占位符和乱码，已根据核心逻辑进行清理翻译）
+你可以通过为 `transition-timing-function` 属性分配下面的函数之一来控制效果的“加速曲线”。
 
+| 函数 | 过渡（Transition） |
+| --- | --- |
+| `linear` | 从开始到结束速度一致 |
+| `ease` | 从开始增加以达到全速，然后在结束时减小（默认） |
+| `ease-in` | 仅在开始增加 |
+| `ease-out` | 仅在结束时减小 |
+| `ease-in-out` | 在开始增加并在结束减小 |
+| `steps(n)` | 跳到 `n` 个间隔 |
+| `cubic-bezier(x1,y1,x2,y2)` | 在坐标之间产生弹性或回弹效果 |
 
+此外，你可以指定一个 `transition-delay` 时间值，例如 `1s` 代表一秒，这样效果就不会立即开始。
 
+`transition` 属性是各个 `transition-property`、`transition-duration`、`transition-timing-function` 和 `transition-delay` 属性的简写属性。这些值可以指定每个单独的属性，也可以按此顺序为简写属性指定所有四个属性的值——例如，使用 `transition : width 5s linear 0.5s ;` 在延迟 0.5 秒后，以一致的速度在五秒内修改宽度。你还可以通过逗号分隔的组值列表来指定多个过渡。
 
+可以将要修改的属性的最终值指定给元素的 `:hover` 伪类，这样当用户将光标悬停在元素上时将执行变换。
 
-![image](img/1o.jpg)创建一个 HTML 文档，其中一个 `div` 元素包含一个内部 `div` 元素
+![image](img/forget.jpg)
+
+除非指定了持续时间，否则过渡不会运行。
+
+![image](img/hot.jpg)
+
+`steps()` 函数跳转到过渡中的暂停处，因此 `steps(5)` 在五秒的效果中每秒暂停一次。
+
+![image](img/1o.jpg)
+
+### 创建带有一个 `div` 元素的 HTML 文档
 
 ```html
-<div class="ball">
-<div class="label">Animation</div></div>
+<div class="expand">Transition</div>
 ```
 
 ![image](img/htmlo.jpg)
 
-animation.html
+`transition.html`
 
-![image](img/2o.jpg)接下来，添加一个样式表，通过规则指定外部 `div` 元素的位置和外观
+![image](img/2o.jpg)
 
-```css
-div.ball { position : absolute ; top : 10px ; width : 120px ; height : 120px ; color : White ; font : 1.5em sans-serif ; background : Orange ; border-radius : 50% ; }
-```
-
-![image](img/3o.jpg)现在，添加规则指定内部 `div` 元素的外观
+### 接下来，添加带有规则样式表以指定元素的位置和外观
 
 ```css
-div.label { display : table-cell ; width : 120px ; height : 120px ; text-align : center ; vertical-align : middle ; }
+div { margin : 50px ; padding : 15px ;
+color : White ; font : 1.5em sans-serif ;
+background : Orange ;
+width : 100px ; height : 100px ; }
 ```
 
-![image](img/4o.jpg)然后，添加一个关键帧规则来定义动画名称并指定动画的节点
+![image](img/3o.jpg)
+
+## 动画
+
+CSS 可以动态修改属性值，在指定的时间内改变它们的颜色、大小、位置、方向等，从而通过 `transition` 属性创建简单的动画效果。
+
+![image](img/pg274_1.jpg)
+
+`transition` 属性必须指定要修改的 CSS 属性以及效果的持续时间——例如，一个样式规则 `transition : width 5s ;` 用于在五秒内修改元素的宽度。多个属性可以以属性和持续时间对的逗号分隔列表的形式指定，例如 `transition : width 5s, height 3s ;` 同时修改宽度和高度。
+
+![image](img/1o.jpg)
+
+创建一个 HTML 文档，其中一个 `div` 元素包含一个内部 `div` 元素。
+
+```html
+<div class="ball">
+  <div class="label">Animation</div>
+</div>
+```
+
+![image](img/htmlo.jpg)
+
+`animation.html`
+
+![image](img/2o.jpg)
+
+接下来，添加一个样式表，通过规则指定外部 `div` 元素的位置和外观。
 
 ```css
-@keyframes bounce { from { top : 10px ; } 50% { top : 40px ; } to { top : 100px ; } }
+div.ball {
+  position : absolute ;
+  top : 10px ;
+  width : 120px ;
+  height : 120px ;
+  color : White ;
+  font : 1.5em sans-serif ;
+  background : Orange ;
+  border-radius : 50% ;
+}
 ```
 
-![image](img/5o.jpg)最后，添加一条规则将动画绑定到外部 `div` 元素
+![image](img/3o.jpg)
+
+现在，添加规则指定内部 `div` 元素的外观。
 
 ```css
-div.ball { animation : bounce 2s linear infinite alternate ; }
+div.label {
+  display : table-cell ;
+  width : 120px ;
+  height : 120px ;
+  text-align : center ;
+  vertical-align : middle ;
+}
 ```
 
-![image](img/6o.jpg)保存 HTML 文档，然后在浏览器中打开它以查看动画
+![image](img/4o.jpg)
+
+然后，添加一个关键帧规则来定义动画名称并指定动画的节点。
+
+```css
+@keyframes bounce {
+  from { top : 10px ; }
+  50% { top : 40px ; }
+  to { top : 100px ; }
+}
+```
+
+![image](img/5o.jpg)
+
+最后，添加一条规则将动画绑定到外部 `div` 元素。
+
+```css
+div.ball {
+  animation : bounce 2s linear infinite alternate ;
+}
+```
+
+![image](img/6o.jpg)
+
+保存 HTML 文档，然后在浏览器中打开它以查看动画。
 
 ![image](img/pg277_1.jpg)
 
@@ -8841,25 +9425,27 @@ div.ball { animation : bounce 2s linear infinite alternate ; }
 
 此示例中不需要动画延迟，因此在样式规则中省略了该值，浏览器使用默认的零延迟值。
 
-## 适应对象 (Fit Objects)
+## 适应对象（Fit Objects）
 
 CSS 提供了多种方法来操作图像或视频内容。通过将 `<img>` 或 `<video>` 元素设置为块级元素并将左右外边距设置为 `auto` 值，就可以简单地让它们在容器内居中。
 
 ![image](img/pg278_1.jpg)
 
-趣的是，你可以使用 CSS `object-fit` 属性指定图像或视频内容如何适应 `<img>` 或 `<video>` 元素本身。通过指定下面列出的任何值，可以决定内容是被拉伸、压缩、缩放还是裁剪：
+有趣的是，你可以使用 CSS `object-fit` 属性指定图像或视频内容如何适应 `<img>` 或 `<video>` 元素本身。通过指定下面列出的任何值，可以决定内容是被拉伸、压缩、缩放还是裁剪：
 
-| 值: | 适应模式: |
-| :--- | :--- |
-| **fill** | 内容被拉伸或压缩以填充元素的内容框（默认值） |
-| **contain** | 内容被放大或缩小以保持其宽高比并适应在元素的内容框内 |
-| **cover** | 内容被缩放以保持其宽高比并填充元素的内容框，因此可能会被裁剪 |
-| **scale-down** | 内容被缩小以在较小的内容框中保持其宽高比 |
-| **none** | 内容不调整大小，因此可能会被裁剪 |
+| 值 | 适应模式 |
+| --- | --- |
+| `fill` | 内容被拉伸或压缩以填充元素的内容框（默认值） |
+| `contain` | 内容被放大或缩小以保持其宽高比并适应元素的内容框 |
+| `cover` | 内容被缩放以保持其宽高比并填充元素的内容框，因此可能会被裁剪 |
+| `scale-down` | 内容被缩小以在较小的内容框中保持其宽高比 |
+| `none` | 内容不调整大小，因此可能会被裁剪 |
 
 理解这些值如何影响对象适应其内容框的最佳方法可能是通过对比：
 
-![image](img/1o.jpg)创建一个包含六个元素的 HTML 文档，它们将显示相同的图像——但适应方式不同
+![image](img/1o.jpg)
+
+创建一个包含六个元素的 HTML 文档，它们将显示相同的图像——但适应方式不同。
 
 ```html
 <img src="run.png" alt="Run">
@@ -8872,28 +9458,39 @@ CSS 提供了多种方法来操作图像或视频内容。通过将 `<img>` 或 
 
 ![image](img/htmlo.jpg)
 
-fit.html
+`fit.html`
 
 ![image](img/pngo.jpg)
 
-run.png
+`run.png`
 
 150px x 120px
 
-![image](img/2o.jpg)添加一个样式表，通过规则指定每个元素的外观并设置宽度匹配图像宽度
+![image](img/2o.jpg)
+
+添加一个样式表，通过规则指定每个元素的外观并设置宽度匹配图像宽度。
 
 ```css
-img { display : inline-block ; border : 2px solid DarkOrange ; margin : 5px ; width : 150px ; }
+img {
+  display : inline-block ;
+  border : 2px solid DarkOrange ;
+  margin : 5px ;
+  width : 150px ;
+}
 ```
 
-![image](img/3o.jpg)接下来，添加样式规则，使某些内容框比 120 像素的图像高度更短，某些更高
+![image](img/3o.jpg)
+
+接下来，添加样式规则，使某些内容框比 120 像素的图像高度更短，某些更高。
 
 ```css
 img.short { height : 80px ; }
 img.tall { height : 200px ; }
 ```
 
-![image](img/4o.jpg)现在，添加规则指定图像如何适应它们各自的内容框
+![image](img/4o.jpg)
+
+现在，添加规则指定图像如何适应它们各自的内容框。
 
 ```css
 img.scale-down { object-fit : scale-down ; }
@@ -8903,7 +9500,9 @@ img.contain { object-fit : contain ; }
 img.cover { object-fit : cover ; }
 ```
 
-![image](img/5o.jpg)保存 HTML 文档，然后在浏览器中打开它，比较对象如何适应在每个内容框内
+![image](img/5o.jpg)
+
+保存 HTML 文档，然后在浏览器中打开它，比较对象如何适应在每个内容框内。
 
 ![image](img/pg279_1.jpg)
 
@@ -8923,7 +9522,7 @@ img.cover { object-fit : cover ; }
 - 动画（Animations）在一段时间内修改属性值，并指定关键帧来确定特定点的值。
 - 图像和视频可以被拉伸、压缩、缩放或裁剪以适应内容框内部。
 
-### 13 控制网页
+# 13 控制网页
 
 ![image](img/pg235_1.jpg)
 
@@ -8941,7 +9540,7 @@ img.cover { object-fit : cover ; }
 - 切换导航
 - 总结
 
-## 改变模型 (Change Models)
+## 改变模型（Change Models）
 
 网络浏览器应用位于“用户样式表”中的默认元素样式，会自动对某些元素应用边距。例如，`<body>` 元素默认具有 8 像素的外边距。你可以在大多数浏览器中按 `F12` 键打开开发者工具并选择 `body` 元素来检查这一点：
 
@@ -8949,11 +9548,11 @@ img.cover { object-fit : cover ; }
 
 ![image](img/htmlo.jpg)
 
-default.html
+`default.html`
 
 ![image](img/pg282_2.jpg)
 
-此外，浏览器的默认盒模型会将指定的内边距和边框应用于元素尺寸之外，因此元素的整体尺寸会比指定的大。例如，一个指定具有 2 像素边框和 100x70 像素尺寸的 `<ul>` 列表元素通常会获得 16 像素的上下边距、40 像素的左填充（用于列表标记）以及内容框外的 2 像素边框。这使得元素的整体尺寸变为 144 x 106 像素：
+此外，浏览器的默认盒模型会将指定的内边距和边框应用于元素尺寸之外，因此元素的整体尺寸会比指定的大。例如，一个指定具有 2 像素边框和 100 x 70 像素尺寸的 `<ul>` 列表元素通常会获得 16 像素的上下边距、40 像素的左填充（用于列表标记）以及内容框外的 2 像素边框。这使得元素的整体尺寸变为 144 x 106 像素：
 
 ![image](img/pg282_3.jpg)
 
@@ -8964,13 +9563,14 @@ CSS `box-sizing` 属性的默认值为 `content-box`。
 为了控制这些默认浏览器行为，你可以在每个样式表的开头使用这些通用规则：
 
 ```css
-* { margin : 0 ; padding : 0 ; box-sizing : border-box ; }
+* {
+  margin : 0 ;
+  padding : 0 ;
+  box-sizing : border-box ;
+}
 ```
 
 这会覆盖浏览器的默认样式，使边距和内边距不再自动应用到元素上。
-
-
-
 
 此外，浏览器的默认盒模型将不再将你指定的内边距（padding）和边框（borders）应用于元素尺寸之外，因此元素的整体尺寸将完全符合你的指定。例如，一个指定为 2 像素边框且大小为 100 x 70 像素的 `<ul>` 列表元素，现在不再产生外边距或内边距，2 像素的边框现在位于内容框内部。这使得元素的整体尺寸正如你的规范所示为 100 x 70 像素：
 
@@ -8982,31 +9582,33 @@ CSS `box-sizing` 属性的默认值为 `content-box`。
 
 你现在拥有了控制权，如果需要可以为列表标记添加左侧内边距。
 
-## 绘制轮廓 (Draw Outlines)
+## 绘制轮廓（Draw Outlines）
 
 CSS 提供了三个应用于用户界面的属性，作为普通盒模型的补充。其中前两个可以用于为元素添加轮廓。`outline` 属性接受与 `border` 属性相同的值——例如，使用 `outline : 2px solid RoyalBlue ;` 可以在元素周围绘制一个 2 像素的蓝色轮廓。
 
 ![image](img/pg284_1.jpg)
 
-至关重要的是，与边框不同，轮廓不是元素尺寸的一部分，因此元素的总宽度和高度不受添加轮廓的影响。轮廓是在 Z 轴的另一个层层级上绘制的，因此可能会与其他内容重叠。
+至关重要的是，与边框不同，轮廓不是元素尺寸的一部分，因此元素的总宽度和高度不受添加轮廓的影响。轮廓是在 Z 轴的另一个层级上绘制的，因此可能会与其他内容重叠。
 
 此外，你可以通过为 `outline-offset` 属性指定距离值，在轮廓与元素边缘（或边框）之间添加空间——例如，使用 `outline-offset : 5px ;` 在元素边缘与轮廓之间添加 5 像素的间隙。
 
-第三个可以应用于用户界面的属性允许用户调整元素的大小，通常通过拖动其右下角。当 `resize` 属性指定 `both` 值时，允许用户在水平和垂直方向上调整元素的大小。
 
-如果用户通过调整元素来减小其尺寸，内容可能会溢出，因此在使用 `resize` 属性时，应配合 `overflow` 样式规则来处理内容溢出。重要的是，`overflow` 应该指定为 `scroll`、`auto` 或 `hidden`，因为 `resize` 属性不会应用于 `overflow` 设置为 `visible` 的行内元素或块元素。
 
-如果你希望限制用户在两个方向上调整元素的大小，可以为 `resize` 属性指定一个水平值——这样用户就只能通过拖动角来调整元素的宽度。
+第三个可以应用于用户界面的属性允许用户调整元素的大小，通常通过拖动其右下角。当`resize`属性指定`both`值时，允许用户在水平和垂直方向上调整元素的大小。
 
-相反，你可以为 `resize` 属性指定一个垂直值——这样用户只能通过拖动角来调整元素的高度。
+如果用户通过调整元素来减小其尺寸，内容可能会溢出，因此在使用`resize`属性时，应配合`overflow`样式规则来处理内容溢出。重要的是，`overflow`应该指定为`scroll`、`auto`或`hidden`，因为`resize`属性不会应用于`overflow`设置为`visible`的行内元素或块元素。
+
+如果你希望限制用户在两个方向上调整元素的大小，可以为`resize`属性指定一个水平值——这样用户就只能通过拖动角来调整元素的宽度。
+
+相反，你可以为`resize`属性指定一个垂直值——这样用户只能通过拖动角来调整元素的高度。
 
 ![image](img/forget.jpg)
 
-将所有元素的 `box-sizing` 属性设置为 `border-box` 意味着元素的边缘与其具有任何边框的边缘相同。
+将所有元素的`box-sizing`属性设置为`border-box`意味着元素的边缘与其具有任何边框的边缘相同。
 
 ![image](img/1bl.jpg)
 
-创建一个包含 div 元素的 HTML 文档
+创建一个包含`div`元素的 HTML 文档：
 
 ```html
 <div class="outline resize">此 div 具有蓝色的轮廓，可以通过拖动其右下角调整大小。</div>
@@ -9014,15 +9616,17 @@ CSS 提供了三个应用于用户界面的属性，作为普通盒模型的补�
 
 ![images](img/htmlbl.jpg)
 
-outline.html
+`outline.html`
 
-添加一个带有规则的样式表来控制网页页面
+添加一个带有规则的样式表来控制网页页面：
 
 ```css
 *** { margin : 0 ; padding : 0 ; box-sizing: border-box ; }
 ```
 
-![image](img/3bl.jpg)接下来，添加规则来指定 div 元素的样式
+![image](img/3bl.jpg)
+
+接下来，添加规则来指定`div`元素的样式：
 
 ```css
 div { width : 420px ; margin : 20px ; padding : 10px ;
@@ -9030,20 +9634,26 @@ border : 2px solid Black ; background : LightSteelBlue ;
 font : 1.25em sans-serif ; }
 ```
 
-![image](img/4bl.jpg)现在，添加规则为 div 周围加上轮廓
+![image](img/4bl.jpg)
+
+现在，添加规则为`div`周围加上轮廓：
 
 ```css
 div.outline {        outline : 10px solid RoyalBlue ;
 outline-offset : 5px ; }
 ```
 
-![image](img/5bl.jpg)然后，添加一条规则使 div 可调整大小
+![image](img/5bl.jpg)
+
+然后，添加一条规则使`div`可调整大小：
 
 ```css
 div.resize { resize : both ; overflow : auto ; }
 ```
 
-![image](img/6bl.jpg)保存该 HTML 文档，然后在网页浏览器中打开它以查看轮廓并调整元素大小
+![image](img/6bl.jpg)
+
+保存该 HTML 文档，然后在网页浏览器中打开它以查看轮廓并调整元素大小。
 
 ![image](img/pg285_1.jpg)
 
@@ -9053,17 +9663,17 @@ div.resize { resize : both ; overflow : auto ; }
 
 轮廓可以与页面内容重叠。
 
-## 使用列 (Use Columns)
+## 使用列（Use Columns）
 
 CSS 提供了许多属性，可以为文本创建多列布局——就像报纸中的布局一样。
 
 ![image](img/pg286_1.jpg)
 
-首先，你需要为 `column-count` 属性指定一个整数值，以确定你想将文本分成多少列——例如，使用 `column-count : 3 ;` 分三列。通常，这会在列之间创建一个默认宽度为 1em 的间隙（“槽”）——这相当于字体的高度。你也可以通过为 `column-gap` 属性指定距离来选择自己的间隙大小——例如，使用 `column-gap : 50px ;` 在列之间创建一个 50 像素宽的间隙。
+首先，你需要为`column-count`属性指定一个整数值，以确定你想将文本分成多少列——例如，使用`column-count : 3 ;`分三列。通常，这会在列之间创建一个默认宽度为 1em 的间隙（“槽”）——这相当于字体的高度。你也可以通过为`column-gap`属性指定距离来选择自己的间隙大小——例如，使用`column-gap : 50px ;`在列之间创建一个 50 像素宽的间隙。
 
-有了更宽的间隙，你可以通过为 `column-rule` 属性指定宽度、样式和颜色值来添加一条垂直规则线。它接受与 `border` 属性相同的值，因此使用 `column-rule : 5px solid RoyalBlue ;` 会添加蓝色的线。
+有了更宽的间隙，你可以通过为`column-rule`属性指定宽度、样式和颜色值来添加一条垂直规则线。它接受与`border`属性相同的值，因此使用`column-rule : 5px solid RoyalBlue ;`会添加蓝色的线。
 
-创建一个包含 div 元素和一些内容的 HTML 文档
+创建一个包含`div`元素和一些内容的 HTML 文档：
 
 ```html
 <div class="newspaper">
@@ -9074,15 +9684,17 @@ CSS 提供了许多属性，可以为文本创建多列布局——就像报纸�
 
 ![image](img/1bl.jpg)
 
-multicol.html
+`multicol.html`
 
-添加一个带有规则的样式表来控制网页
+添加一个带有规则的样式表来控制网页：
 
 ```css
 *** { margin : 0 ; padding : 0 ; box-sizing: border-box ; }
 ```
 
-![image](img/2bl.jpg)接下来，添加规则为 div 添加外边距并指定两列布局的样式
+![image](img/2bl.jpg)
+
+接下来，添加规则为`div`添加外边距并指定两列布局的样式：
 
 ```css
 div.newspaper { margin : 15px ;
@@ -9091,9 +9703,13 @@ column-gap : 50px ;
 column-rule : solid ; }
 ```
 
-![image](img/3bl.jpg)保存 HTML 文档，然后在网页浏览器中打开它以查看多列布局
+![image](img/3bl.jpg)
 
-![image](img/4bl.jpg)修改步骤 3 中的规则——将外观改为带有间隙的三列布局
+保存 HTML 文档，然后在网页浏览器中打开它以查看多列布局。
+
+![image](img/4bl.jpg)
+
+修改步骤 3 中的规则——将外观改为带有间隙的三列布局：
 
 ```css
 div.newspaper { margin : 15px ;
@@ -9102,34 +9718,35 @@ column-gap : 50px ;
 column-rule : 5px dotted RoyalBlue ; }
 ```
 
-![image](img/5bl.jpg)再次保存 HTML 文档，然后刷新浏览器以查看新的多列布局
+![image](img/5bl.jpg)
+
+再次保存 HTML 文档，然后刷新浏览器以查看新的多列布局。
 
 ![image](img/6bl.jpg)
 
-![image](img/hot.jpg) 
+![image](img/hot.jpg)
 
-这里的默认 `column-rule-color` 值源自文本颜色——为文本添加颜色规则也将更改线条颜色以匹配——例如，使用 `color : Red ;` 更改文本和线条颜色。
+这里的默认`column-rule-color`值源自文本颜色——为文本添加颜色规则也将更改线条颜色以匹配——例如，使用`color : Red ;`更改文本和线条颜色。
 
 ![image](img/snake.jpg)
 
 将此示例设置为许多列会导致标题与其他内容重叠——解决方案在后续示例中演示。
 
-## 跨列 (Span Columns)
+## 跨列（Span Columns）
 
-除了在此示例](#chapter13.xhtml_colcnt)中引入的 `column-count`、`column-gap` 和 `column-rule` 属性外，CSS 还提供了另外三个用于列布局的属性。
+除了在此示例`#chapter13.xhtml_colcnt`中引入的`column-count`、`column-gap`和`column-rule`属性外，CSS 还提供了另外三个用于列布局的属性。
 
 ![image](img/pg288_1.jpg)
 
-当你希望标题等元素跨越列时，可以为 `column-span` 属性指定跨越列数的整数值，或使用关键字 `all`。
+当你希望标题等元素跨越列时，可以为`column-span`属性指定跨越列数的整数值，或使用关键字`all`。
 
-你也可以通过为 `column-width` 属性指定尺寸来声明列的首选宽度——但浏览器仅将指定的值视为最小宽度建议。如果按照指定的宽度至少无法容纳至少两列，它将退回到单列布局。
+你也可以通过为`column-width`属性指定尺寸来声明列的首选宽度——但浏览器仅将指定的值视为最小宽度建议。如果按照指定的宽度至少无法容纳至少两列，它将退回到单列布局。
 
+最后，有一个简写属性`columns`，可用于同时指定`column-width`和`column-count`值。通过使用`columns`和`column-rule`简写属性，可以非常简洁地指定大量的列布局值。
 
+![image](img/1bl.jpg)
 
-
-最后，有一个简写属性 `columns`，可用于同时指定 `column-width` 和 `column-count` 值。通过使用 `columns` 和 `column-rule` 简写属性，可以非常简洁地指定大量的列布局值。
-
-![image](img/1bl.jpg)创建一个包含文本内容和两个标题的 div HTML 文档
+创建一个包含文本内容和两个标题的`div`HTML 文档：
 
 ```html
 <div class="newspaper">
@@ -9142,15 +9759,19 @@ column-rule : 5px dotted RoyalBlue ; }
 
 ![images](img/htmlbl.jpg)
 
-spancol.html
+`spancol.html`
 
-![image](img/2bl.jpg)添加带有规则的样式表以控制网页
+![image](img/2bl.jpg)
+
+添加带有规则的样式表以控制网页：
 
 ```css
 * { margin : 0 ; padding : 0 ; box-sizing : border-box ; }
 ```
 
-![image](img/3bl.jpg)接下来，添加规则为 div 添加左右外边距，并指定三列布局的外观——建议列宽为 100 像素
+![image](img/3bl.jpg)
+
+接下来，添加规则为`div`添加左右外边距，并指定三列布局的外观——建议列宽为 100 像素：
 
 ```css
 div.newspaper {
@@ -9161,7 +9782,9 @@ columns : 100px 3 ;
 }
 ```
 
-![image](img/4bl.jpg)现在，添加规则指定标题的外观，并让两个标题都跨越所有列
+![image](img/4bl.jpg)
+
+现在，添加规则指定标题的外观，并让两个标题都跨越所有列：
 
 ```css
 h1, h2 {
@@ -9172,13 +9795,15 @@ column-span : all ;
 }
 ```
 
-![image](img/5bl.jpg)保存 HTML 文档，然后在网页浏览器中打开它，查看多列布局以及跨越列的标题
+![image](img/5bl.jpg)
+
+保存 HTML 文档，然后在网页浏览器中打开它，查看多列布局以及跨越列的标题。
 
 ![image](img/pg289_1.jpg)
 
 ![image](img/forget.jpg)
 
-`column-rule` 属性是 `column-width`、`column-style` 和 `column-color` 属性的简写。
+`column-rule`属性是`column-width`、`column-style`和`column-color`属性的简写。
 
 ## 使用 Flexbox
 
@@ -9186,15 +9811,17 @@ column-span : all ;
 
 ![image](img/pg290_1.jpg)
 
-要创建一个弹性框，你必须首先通过向其 `display` 属性指定 flex 值来定义一个元素为“弹性容器”。
+要创建一个弹性框，你必须首先通过向其`display`属性指定`flex`值来定义一个元素为“弹性容器”。
 
-弹性容器内部的任何内部元素（“flex 项目”）将显示在单行中。如果行的长度超过浏览器的宽度，行默认不会换行到下一行——除非你为 `flex-wrap` 属性指定了 `wrap` 值。
+弹性容器内部的任何内部元素（“flex 项目”）将显示在单行中。如果行的长度超过浏览器的宽度，行默认不会换行到下一行——除非你为`flex-wrap`属性指定了`wrap`值。
 
-你也可以通过为 `flex-wrap` 属性指定 `wrap-reverse` 值来反转行中 flex 项目的顺序。
+你也可以通过为`flex-wrap`属性指定`wrap-reverse`值来反转行中 flex 项目的顺序。
 
-因此，要创建一个会将项目换行到行的弹性框，你需要同时对 `display` 和 `flex-wrap` 属性指定值。
+因此，要创建一个会将项目换行到行的弹性框，你需要同时对`display`和`flex-wrap`属性指定值。
 
-![image](img/1bl.jpg)创建一个包含五个内部 div 元素的 HTML 文档
+![image](img/1bl.jpg)
+
+创建一个包含五个内部`div`元素的 HTML 文档：
 
 ```html
 <div class="flex-container">
@@ -9208,15 +9835,19 @@ column-span : all ;
 
 ![images](img/htmlbl.jpg)
 
-flexbox.html
+`flexbox.html`
 
-![image](img/2bl.jpg)添加带有规则的样式表以控制网页
+![image](img/2bl.jpg)
+
+添加带有规则的样式表以控制网页：
 
 ```css
 * { margin : 0 ; padding : 0 ; box-sizing : border-box ; }
 ```
 
-![image](img/3bl.jpg)接下来，添加规则让外层 div 具有弹性
+![image](img/3bl.jpg)
+
+接下来，添加规则让外层`div`具有弹性：
 
 ```css
 div.flex-container {      display : flex ;
@@ -9224,7 +9855,9 @@ flex-wrap : wrap ;
 border : 2px dashed RoyalBlue ; }
 ```
 
-![image](img/4bl.jpg)现在，添加规则指定 flex 项目的外观
+![image](img/4bl.jpg)
+
+现在，添加规则指定 flex 项目的外观：
 
 ```css
 div.flex-container > div {
@@ -9237,7 +9870,7 @@ font : 1.25em sans-serif ;
 
 ![image](img/hot.jpg)
 
-回到绝对定位和相对定位示例此处 以及浮动布局此处。
+回到绝对定位和相对定位示例此处，以及浮动布局此处。
 
 ![image](img/hot.jpg)
 
@@ -9253,15 +9886,21 @@ font : 1.25em sans-serif ;
 
 ![images](img/opera.jpg) Opera 48
 
-![image](img/5bl.jpg)保存 HTML 文档，然后在网页浏览器中打开它，查看 flexbox 布局
+![image](img/5bl.jpg)
+
+保存 HTML 文档，然后在网页浏览器中打开它，查看 flexbox 布局。
 
 ![image](img/pg291_1.jpg)
 
-![image](img/6bl.jpg)拖动浏览器窗口的一侧使其变窄，查看布局如何将 flex 项目换行到下一行
+![image](img/6bl.jpg)
+
+拖动浏览器窗口的一侧使其变窄，查看布局如何将 flex 项目换行到下一行。
 
 ![image](img/pg291_2.jpg)
 
-![image](img/7bl.jpg)编辑步骤 3 中的规则——以反转换行顺序
+![image](img/7bl.jpg)
+
+编辑步骤 3 中的规则——以反转换行顺序：
 
 ```css
 div.flex-container {          display : flex ;
@@ -9269,29 +9908,33 @@ flex-wrap : wrap-reverse ;
 background : RoyalBlue ; }
 ```
 
-![image](img/8bl.jpg)再次保存 HTML 文档，然后刷新网页浏览器，查看 flex 项目以反序出现
+![image](img/8bl.jpg)
+
+再次保存 HTML 文档，然后刷新网页浏览器，查看 flex 项目以反序出现。
 
 ![image](img/pg291_3.jpg)
 
 ![image](img/forget.jpg)
 
-`wrap` 属性的默认值是 `nowrap`。
+`wrap`属性的默认值是`nowrap`。
 
 ## 对齐项目
 
-flexbox 示例此处 已经在弹性容器的行范围内拉伸了 flex 项目。这是默认行为，但你可以通过 `justify-content` 属性控制 flex 项目在行方向上的对齐方式，指定 `center`、`flex-start`、`flex-end`、`space-evenly`、`space-around` 或 `space-between`。
+flexbox 示例此处已经在弹性容器的行范围内拉伸了 flex 项目。这是默认行为，但你可以通过`justify-content`属性控制 flex 项目在行方向上的对齐方式，指定`center`、`flex-start`、`flex-end`、`space-evenly`、`space-around`或`space-between`。
 
 ![image](img/pg292.jpg)
 
-你还可以通过 `align-items` 属性在垂直方向上控制 flex 项目的对齐方式，指定 `center`、`flex-start`（行起始）或 `flex-end`（行结束）。
+你还可以通过`align-items`属性在垂直方向上控制 flex 项目的对齐方式，指定`center`、`flex-start`（行起始）或`flex-end`（行结束）。
 
-同样，你可以通过 `align-content` 属性控制弹性容器内行的对齐方式，指定 `center`、`flex-start`（容器起始）或 `flex-end`（容器结束）。
+同样，你可以通过`align-content`属性控制弹性容器内行的对齐方式，指定`center`、`flex-start`（容器起始）或`flex-end`（容器结束）。
 
 ![image](img/pg292_1.jpg)
 
-如果你想在行内垂直对齐单个 flex 项目，可以通过 `:nth-child()` 伪类选择器引用内部子元素，并为 `align-self` 属性指定你的首选值。
+如果你想在行内垂直对齐单个 flex 项目，可以通过`:nth-child()`伪类选择器引用内部子元素，并为`align-self`属性指定你的首选值。
 
-![image](img/1bl.jpg)创建一个包含五个 div 元素的 HTML 文档
+![image](img/1bl.jpg)
+
+创建一个包含五个`div`元素的 HTML 文档：
 
 ```html
 <div class="flex-container">
@@ -9305,15 +9948,19 @@ flexbox 示例此处 已经在弹性容器的行范围内拉伸了 flex 项目�
 
 ![images](img/htmlbl.jpg)
 
-alignment.html
+`alignment.html`
 
-![image](img/2bl.jpg)添加带有规则的样式表以控制网页
+![image](img/2bl.jpg)
+
+添加带有规则的样式表以控制网页：
 
 ```css
 * { margin : 0 ; padding : 0 ; box-sizing : border-box ; }
 ```
 
-![image](img/3bl.jpg)接下来，添加规则让外层 div 具有弹性并指定 flex 项目如何对齐
+![image](img/3bl.jpg)
+
+接下来，添加规则让外层`div`具有弹性并指定 flex 项目如何对齐：
 
 ```css
 div.flex-container { display : flex ; flex-flow : row wrap ;
@@ -9325,40 +9972,42 @@ align-items : center ; }
 
 ![image](img/hot.jpg)
 
-对于完美居中，使用 `justify-content: center; align-items: center;` 样式规则。
+对于完美居中，使用`justify-content: center; align-items: center;`样式规则。
 
-![image](img/4bl.jpg)此处（此处原文描述未翻译）
+![image](img/4bl.jpg)
 
-保存 HTML 文档，然后在网页浏览器中打开它，查看 flex 项目的对齐情况
+此处（此处原文描述未翻译）。
 
-
-
-
+保存 HTML 文档，然后在网页浏览器中打开它，查看 flex 项目的对齐情况：
 
 ```css
 div.flex-container > div:nth-child( 2 ) { align-self : flex-end ; }
 div.flex-container > div:nth-child( 3 ) { align-self : flex-start ; }
 ```
 
-![image](img/7bl.jpg)再次保存 HTML 文档，然后刷新网络浏览器以查看更改后的 flex 项目对齐方式
+![image](img/7bl.jpg)
+
+再次保存 HTML 文档，然后刷新网络浏览器以查看更改后的 flex 项目对齐方式。
 
 ![image](img/pg293_2.jpg)
 
 ![image](img/forget.jpg)
 
-`align-self` 属性会覆盖 `align-items` 属性中指定的对齐方式。
+`align-self`属性会覆盖`align-items`属性中指定的对齐方式。
 
-## 画网格 (Draw Grid)
+## 画网格（Draw Grid）
 
 在 290-293 页描述的 CSS 弹性布局方案是一个单维系统，在较小的显示区域内可以将 flex 项目行自动换到下一行或下一列。相比之下，CSS 网格布局方案是一个二维系统，它将“网格项目”放置在列和行中。
 
 ![image](img/pg294_1.jpg)
 
-要创建网格布局，你必须首先通过给元素的 `display` 属性指定 `grid`（或 `inline-grid`）值，将该元素定义为“网格容器”。网格容器内的所有直接子元素随后自动成为网格项目。
+要创建网格布局，你必须首先通过给元素的`display`属性指定`grid`（或`inline-grid`）值，将该元素定义为“网格容器”。网格容器内的所有直接子元素随后自动成为网格项目。
 
-你可以通过将一个空格分隔的宽度列表传递给 `grid-template-columns` 属性，来指定网格应该包含多少列。例如，`grid-template-columns : 20% 60% 20% ;`。同样，你可以通过将一个空格分隔的高度值列表传递给 `grid-template-rows` 属性来指定网格应该有多少行——例如，`grid-template-rows : 20% 40% 40% ;`。
+你可以通过将一个空格分隔的宽度列表传递给`grid-template-columns`属性，来指定网格应该包含多少列。例如，`grid-template-columns : 20% 60% 20% ;`。同样，你可以通过将一个空格分隔的高度值列表传递给`grid-template-rows`属性来指定网格应该有多少行——例如，`grid-template-rows : 20% 40% 40% ;`。
 
-`auto` 关键字也可以用于指定任何列宽或行高——例如，使用 `grid-template-columns : auto auto auto ;` 和 `grid-template-rows : auto auto auto ;` 创建三个等等大小的列和行。
+
+
+`auto` 关键字也可以用于指定任何列宽或行高——例如，使用 `grid-template-columns : auto auto auto ;` 和 `grid-template-rows : auto auto auto ;` 创建三个等大小的列和行。
 
 ![image](img/pg294_2.jpg)
 
@@ -9370,7 +10019,7 @@ div.flex-container > div:nth-child( 3 ) { align-self : flex-start ; }
 
 ![image](img/hot.jpg)
 
-所有现代浏览器都支持 grid，版本如下：
+所有现代浏览器都支持 `grid`，版本如下：
 
 ![images](img/chrome.jpg) Chrome 57.0
 
@@ -9382,7 +10031,7 @@ div.flex-container > div:nth-child( 3 ) { align-self : flex-start ; }
 
 ![images](img/opera.jpg) Opera 44
 
-![image](img/1bl.jpg)创建一个包含七个内部 `div` 元素的 HTML 文档
+![image](img/1bl.jpg) 创建一个包含七个内部 `div` 元素的 HTML 文档：
 
 ```html
 <div class="grid-container">
@@ -9394,15 +10043,15 @@ div.flex-container > div:nth-child( 3 ) { align-self : flex-start ; }
 
 ![image](img/htmlbl.jpg)
 
-grid.html
+`grid.html`
 
-![image](img/2bl.jpg)添加带有规则的样式表以控制网页
+![image](img/2bl.jpg) 添加带有规则的样式表以控制网页：
 
 ```css
 * { margin : 0 ; padding : 0 ; box-sizing: border-box ; }
 ```
 
-![image](img/3bl.jpg)接下来，添加规则使外部 `div` 成为一个三列两行的网格
+![image](img/3bl.jpg) 接下来，添加规则使外部 `div` 成为一个三列两行的网格：
 
 ```css
 div.grid-container {
@@ -9413,7 +10062,7 @@ div.grid-container {
 }
 ```
 
-![image](img/4bl.jpg)现在，添加规则来指定网格项目的外观
+![image](img/4bl.jpg) 现在，添加规则来指定网格项目的外观：
 
 ```css
 div.grid-container > div {
@@ -9424,7 +10073,7 @@ div.grid-container > div {
 }
 ```
 
-![image](img/5bl.jpg)保存 HTML 文档，然后在浏览器中打开它以查看网格布局
+![image](img/5bl.jpg) 保存 HTML 文档，然后在浏览器中打开它以查看网格布局。
 
 ![image](img/pg295_1.jpg)
 
@@ -9432,7 +10081,7 @@ div.grid-container > div {
 
 注意第二行和第二列更大，并且自动添加了第三行。随后的行都将只使用第一行的模板值。
 
-## 放置项目 (Place Items)
+## 放置项目（Place Items）
 
 在网格容器中，列和行之间起始边缘的线条被称为“列线”和“行线”。
 
@@ -9442,9 +10091,9 @@ div.grid-container > div {
 
 ![image](img/pg296_2.jpg)
 
-另一种，两个用“/”正斜线分隔的值可以指定起始和结束行号，使项目跨越行或列——例如 `grid-column : 1 / 3 ;` 将跨越前两列。
+另一种方式是，使用两个由“/”正斜线分隔的值指定起始和结束行号，使项目跨越行或列——例如，`grid-column : 1 / 3 ;` 将跨越前两列。
 
-![image](img/1bl.jpg)创建一个包含七个内部 `div` 元素的 HTML 文档
+![image](img/1bl.jpg) 创建一个包含七个内部 `div` 元素的 HTML 文档：
 
 ```html
 <div class="grid-container">
@@ -9456,15 +10105,15 @@ div.grid-container > div {
 
 ![image](img/htmlbl.jpg)
 
-grid.html
+`grid.html`
 
-![image](img/2bl.jpg)添加带有规则的样式表以控制网页
+![image](img/2bl.jpg) 添加带有规则的样式表以控制网页：
 
 ```css
 * { margin : 0 ; padding : 0 ; box-sizing: border-box ; }
 ```
 
-![image](img/3bl.jpg)接下来，添加规则使外部 `div` 成为一个三列两行的网格
+![image](img/3bl.jpg) 接下来，添加规则使外部 `div` 成为一个三列两行的网格：
 
 ```css
 div.grid-container {
@@ -9475,7 +10124,7 @@ div.grid-container {
 }
 ```
 
-![image](img/4bl.jpg)现在，添加规则来指定网格项目的外观
+![image](img/4bl.jpg) 现在，添加规则来指定网格项目的外观：
 
 ```css
 div.grid-container > div {
@@ -9488,7 +10137,7 @@ div.grid-container > div {
 
 ![image](img/5bl.jpg)
 
-## 媒体查询 (Query Media)
+## 媒体查询（Query Media）
 
 CSS 有能力通过制作“媒体查询”来发现查看设备的能力，以应用适当样式规则。媒体查询的语法如下：
 
@@ -9501,19 +10150,19 @@ CSS 有能力通过制作“媒体查询”来发现查看设备的能力，以�
 可以使用以下关键字指定媒体类型：
 
 | 关键字 | 描述 |
-| :--- | :--- |
-| all | 检测所有媒体类型 |
-| print | 检测打印机 |
-| screen | 检测电脑桌面、平板电脑和手机屏幕 |
-| speech | 检测屏幕阅读器 |
+| --- | --- |
+| `all` | 检测所有媒体类型 |
+| `print` | 检测打印机 |
+| `screen` | 检测电脑桌面、平板电脑和手机屏幕 |
+| `speech` | 检测屏幕阅读器 |
 
 媒体查询可以检查许多类型的媒体特征，但最有用的是使用这些关键字检测显示区域宽度和设备方向的特征：
 
 | 关键字 | 描述 |
-| :--- | :--- |
-| min-width | 显示区域的最小宽度，如浏览器的宽度 |
-| max-width | 显示区域的最大宽度，如浏览器的宽度 |
-| orientation | 视口的方向，表现为横屏模式或竖屏模式 |
+| --- | --- |
+| `min-width` | 显示区域的最小宽度，如浏览器的宽度 |
+| `max-width` | 显示区域的最大宽度，如浏览器的宽度 |
+| `orientation` | 视口的方向，表现为横屏模式或竖屏模式 |
 
 当指定的媒体类型上检测到指定的媒体特征时，媒体查询将报告为真，因此大括号内的样式规则将被应用；否则将它们忽略。例如，使用此媒体查询在显示区域宽度为 600 像素或更小的设备上应用背景颜色：
 
@@ -9523,13 +10172,9 @@ CSS 有能力通过制作“媒体查询”来发现查看设备的能力，以�
 }
 ```
 
-通过向查询中添加更多的 **and ( *media-feature* )** 部分，媒体查询可以检查多个媒体特征的存在。
+通过向查询中添加更多的 `and ( *media-feature* )` 部分，媒体查询可以检查多个媒体特征的存在。
 
-
-
-
-
-![image](img/1bl.jpg)创建一个 HTML 文档，并附带一个样式表，为宽显示区域指定默认背景颜色
+![image](img/1bl.jpg) 创建一个 HTML 文档，并附带一个样式表，为宽显示区域指定默认背景颜色：
 
 ```css
 body { background : Tomato ; }
@@ -9537,9 +10182,9 @@ body { background : Tomato ; }
 
 ![images](img/htmlbl.jpg)
 
-mediaquery.html
+`mediaquery.html`
 
-![image](img/2bl.jpg)接下来，添加一个媒体查询，为中宽显示区域指定背景颜色
+![image](img/2bl.jpg) 接下来，添加一个媒体查询，为中宽显示区域指定背景颜色：
 
 ```css
 @media screen and ( min-width:600px )
@@ -9552,7 +10197,7 @@ body { background : DarkOrange ; }
 
 请注意，在媒体特性规范中，冒号字符周围没有空格。
 
-![image](img/3bl.jpg)现在，为小宽显示区域和不同方向添加媒体查询
+![image](img/3bl.jpg) 现在，为小宽显示区域和不同方向添加媒体查询：
 
 ```css
 @media screen and ( max-width:600px )
@@ -9566,7 +10211,7 @@ body { background : RoyalBlue ; }
 }
 ```
 
-![image](img/4bl.jpg)保存 HTML 文档，然后在桌面、平板和手机设备上打开，查看相应的颜色
+![image](img/4bl.jpg) 保存 HTML 文档，然后在桌面、平板和手机设备上打开，查看相应的颜色。
 
 ![image](img/pg299_1.jpg)
 
@@ -9588,7 +10233,7 @@ body { background : RoyalBlue ; }
 
 垂直导航栏会为列表指定一个固定宽度值，而水平导航栏则可以将列表项浮动并隐藏溢出，以保持导航栏的可见性。
 
-![image](img/1bl.jpg)创建一个包含四个超链接项的列表的 HTML 文档
+![image](img/1bl.jpg) 创建一个包含四个超链接项的列表的 HTML 文档：
 
 ```html
 <ul>
@@ -9601,15 +10246,15 @@ body { background : RoyalBlue ; }
 
 ![images](img/htmlbl.jpg)
 
-medianav.html
+`medianav.html`
 
-![image](img/2bl.jpg)添加一个包含规则来控制网页的样式表
+![image](img/2bl.jpg) 添加一个包含规则来控制网页的样式表：
 
 ```css
 * { margin : 0 ; padding : 0 ; box-sizing: border-box ; }
 ```
 
-接下来，添加规则以移除标记、外边距和内边距，然后指定颜色、固定宽度和字体
+接下来，添加规则以移除标记、外边距和内边距，然后指定颜色、固定宽度和字体：
 
 ```css
 ul {
@@ -9621,7 +10266,7 @@ ul {
     font : 1.25em sans-serif ; }
 ```
 
-![image](img/4bl.jpg)现在，添加样式规则，将超链接显示为块级元素，并指定它们的外观
+![image](img/4bl.jpg) 现在，添加样式规则，将超链接显示为块级元素，并指定它们的外观：
 
 ```css
 li a {
@@ -9632,14 +10277,14 @@ li a {
     padding : 10px ; }
 ```
 
-![image](img/5bl.jpg)然后，添加样式规则以指示超链接的状态
+![image](img/5bl.jpg) 然后，添加样式规则以指示超链接的状态：
 
 ```css
 li a.current { background : CornflowerBlue ; }
 li a:hover { background : RoyalBlue ; color : White ; }
 ```
 
-![image](img/6bl.jpg)最后，添加一个媒体查询，当显示区域宽度达到 600 像素或以上时应用新规则
+![image](img/6bl.jpg) 最后，添加一个媒体查询，当显示区域宽度达到 600 像素或以上时应用新规则：
 
 ```css
 @media screen and ( min-width:600px ) {
@@ -9648,11 +10293,11 @@ li a { float : left ; }
 }
 ```
 
-![image](img/7bl.jpg)保存 HTML 文档，然后在桌面网页浏览器中打开网页，查看水平导航栏
+![image](img/7bl.jpg) 保存 HTML 文档，然后在桌面网页浏览器中打开网页，查看水平导航栏。
 
 ![image](img/pg301_1.jpg)
 
-![image](img/8bl.jpg)拖动浏览器边缘缩小其尺寸，查看导航栏自动切换为垂直列表
+![image](img/8bl.jpg) 拖动浏览器边缘缩小其尺寸，查看导航栏自动切换为垂直列表。
 
 ![image](img/pg301_2.jpg)
 
@@ -9669,10 +10314,10 @@ li a { float : left ; }
 - `column-gap` 可以指定列之间的间距宽度。
 - `column-rule` 简写属性可以指定列之间垂直分隔线的宽度、样式和颜色。
 - `column-span` 可以指定跨越的列数。
-- flexbox 方案首先需要通过为其 `display` 属性指定 flex 值来创建一个弹性容器元素。
+- flexbox 方案首先需要通过为其 `display` 属性指定 `flex` 值来创建一个弹性容器元素。
 - 弹性容器内的内部元素是弹性项目，默认情况下会显示在一行上。
 - `justify-content` 可以水平对齐弹性项目，`align-items` 可以垂直对齐行上的弹性项目。
-- 网格布局方案首先需要通过为其 `display` 属性指定 grid 值来创建一个网格容器元素。
+- 网格布局方案首先需要通过为其 `display` 属性指定 `grid` 值来创建一个网格容器元素。
 - 网格布局方案是一个二维系统，将网格项目放置在列和行中。
 - `grid-column` 和 `grid-row` 简写属性可以指定网格项目的水平和垂直定位。
 - 媒体查询可用于发现查看设备的能力，以应用合适的样式规则。
@@ -9703,14 +10348,10 @@ li a { float : left ; }
 
 响应式网页设计的关键在于使用 CSS 媒体查询来确定查看设备的大小和能力。在识别设备特性后，可以通过使用基于流体比例网格和灵活图像来创建响应式布局，从而适应查看环境：
 
-- **CSS 媒体查询** – 允许网页使用包含适合查看设备屏幕尺寸或浏览器窗口宽度的规则的样式表。
-- **流体网格布局** – 要求网页尺寸以相对单位（如百分比和 em 值，而非像素和点值等绝对单位）指定，以便项目可以拉伸或收缩。
-- **灵活图像** – 要求图像尺寸以相对单位（如百分比）指定，以便在较小的查看设备上不会溢出其包含元素。
-- **响应式布局** – 会自动适应查看设备的尺寸，并在用户调整浏览器窗口大小时进行调整。
-
-
-
-
+- **CSS 媒体查询**：允许网页使用包含适合查看设备屏幕尺寸或浏览器窗口宽度的规则的样式表。
+- **流体网格布局**：要求网页尺寸以相对单位（如百分比和 `em` 值，而非像素和点值等绝对单位）指定，以便项目可以拉伸或收缩。
+- **灵活图像**：要求图像尺寸以相对单位（如百分比）指定，以便在较小的查看设备上不会溢出其包含元素。
+- **响应式布局**：会自动适应查看设备的尺寸，并在用户调整浏览器窗口大小时进行调整。
 
 ### 简介
 
@@ -9756,11 +10397,13 @@ Google Chrome 浏览器有一项功能，可以让你模拟网页在不同设备
 
 ![image](img/pg306_3.jpg)
 
+
+
 对于上述插图中的头部项目，最直接的方案选择是 flexbox 布局方案。然而，使用每种方案构建页头并进行对比是一项有用的练习：
 
 ![image](img/1v.jpg)
 
-创建一个包含两个相似页头的 HTML 文档，中间用换行符隔开
+创建一个包含两个相似页头的 HTML 文档，中间用换行符隔开。
 
 ```html
 <header class=” flex-container”>
@@ -9778,7 +10421,9 @@ Google Chrome 浏览器有一项功能，可以让你模拟网页在不同设备
 
 `flexvgrid.html`
 
-![image](img/2v.jpg)Next（注：此处原文与图片紧为相连） 接下来，添加一个包含规则的样式表，以控制页面并指定页头的显示效果
+![image](img/2v.jpg)
+
+接下来，添加一个包含规则的样式表，以控制页面并指定页头的显示效果。
 
 ```css
 * { margin : 0 ; padding : 0 ; box-sizing : border-box ; }
@@ -9786,7 +10431,9 @@ header { background : Purple ; color : White ; }
 header > div { font : 1em sans-serif ; padding : 0 1em ; }
 ```
 
-![image](img/3v.jpg)现在，添加规则来创建 flexbox 布局并将最后一个项目定位在最右侧
+![image](img/3v.jpg)
+
+现在，添加规则来创建 flexbox 布局并将最后一个项目定位在最右侧。
 
 ```css
 header.flex-container { display : flex ; }
@@ -9799,7 +10446,9 @@ header.flex-container > div:nth-child(3) {
 
 注意，flexbox 布局通过添加左边距可以轻松将最后一个项目定位在最右侧，而 grid 布局必须显式地将其放置在网格的第 10 列。
 
-![image](img/4v.jpg)然后，添加规则创建一个具有十列的 grid 布局，并将最后一个项目定位在最右侧
+![image](img/4v.jpg)
+
+然后，添加规则创建一个具有十列的 grid 布局，并将最后一个项目定位在最右侧。
 
 ```css
 header.grid-container { display : grid ;
@@ -9809,11 +10458,15 @@ header.grid-container > div:nth-child(3) {
 }
 ```
 
-![image](img/5v.jpg)保存 HTML 文档，然后在浏览器中打开它，发现页头看起来是完全相同的
+![image](img/5v.jpg)
+
+保存 HTML 文档，然后在浏览器中打开它，发现页头看起来是完全相同的。
 
 ![image](img/pg307_1.jpg)
 
-![image](img/6v.jpg)打开浏览器的开发者工具，然后检查每个页头以查看它们的对比
+![image](img/6v.jpg)
+
+打开浏览器的开发者工具，然后检查每个页头以查看它们的对比。
 
 ![image](img/pg307_2.jpg)
 
@@ -9829,7 +10482,7 @@ RWD 网页设计的最佳解决方案始终是 grid 和 flexbox 方案的结合�
 
 ![image](img/pg308_1.jpg)
 
-创建一个包含两个相似页头的 HTML 文档，中间用换行符隔开
+创建一个包含两个相似页头的 HTML 文档，中间用换行符隔开。
 
 ```html
 <div class=”grid-container”>
@@ -9847,7 +10500,9 @@ RWD 网页设计的最佳解决方案始终是 grid 和 flexbox 方案的结合�
 
 `responsive.html`
 
-![image](img/2v.jpg)添加一个包含规则的样式表，以控制页面和某些元素的显示
+![image](img/2v.jpg)
+
+添加一个包含规则的样式表，以控制页面和某些元素的显示。
 
 ```css
 * { margin : 0 ; padding : 0 ; box-sizing : border-box ; }
@@ -9857,7 +10512,7 @@ nav, footer { background : Thistle ; }
 
 ![image](img/3v.jpg)
 
-**vw** 和 **vh** 单位是视口宽和高度的 100%。 
+`vw` 和 `vh` 单位是视口宽和高度的 100%。
 
 ## 添加断点
 
@@ -9865,15 +10520,13 @@ nav, footer { background : Thistle ; }
 
 ![image](img/pg310_1.jpg)
 
-![image](img/1v.jpg)从此处复制一个新的“responsive.html”文档，并将其保存为“breakpoints.html”
+![image](img/1v.jpg)
+
+从此处复制一个新的“responsive.html”文档，并将其保存为“breakpoints.html”。
 
 ![image](img/htmlv.jpg)
 
-在样式表的现有规则之后，添加一个针对中等尺寸设备的媒体查询，通过将行数从 5 行减少 4 行来更改布局
-
-
-
-
+在样式表的现有规则之后，添加一个针对中等尺寸设备的媒体查询，通过将行数从 5 行减少 4 行来更改布局。
 
 ```css
 @media screen and ( min-width:600px ) 
@@ -9885,7 +10538,10 @@ and ( max-width:992px ) {
   main { grid-column : span 8 ; }
 }
 ```
-![image](img/3v.jpg)接下来，添加另一个媒体查询，通过将行数从五行减少到三行来更改大设备的布局
+
+![image](img/3v.jpg)
+
+接下来，添加另一个媒体查询，通过将行数从五行减少到三行来更改大设备的布局。
 
 ```css
 @media screen and ( min-width:992px ) {
@@ -9897,21 +10553,28 @@ and ( max-width:992px ) {
   aside { grid-column : span 2 ; }
 }
 ```
-![image](img/4v.jpg)现在，保存 HTML 文档，然后在各种设备上打开它，查看断点如何调整布局
+
+![image](img/4v.jpg)
+
+现在，保存 HTML 文档，然后在各种设备上打开它，查看断点如何调整布局。
 
 ![image](img/pg311_1.jpg)
 
 ### 桌面端
+
 ![image](img/pg311_2.jpg)
 
 ### 平板
+
 ![image](img/pg311_3.jpg)
 
 ### 手机
+
 ![image](img/pg311_4.jpg)
 
 ### 缩放图像
-响应式网页设计应该考虑到，网页上的图像和视频内容也应该适应不同尺寸的查看设备
+
+响应式网页设计应该考虑到，网页上的图像和视频内容也应该适应不同尺寸的查看设备。
 
 ![image](img/pg312_1.jpg)
 
@@ -9926,28 +10589,34 @@ div {
   background-repeat : no-repeat ;
 }
 ```
+
 但这种技术只会在其包含元素内缩小图像——其容器保持指定的高度。
 
 如果担心图像文件大小，你可以使用媒体查询为不同设备指定不同版本的图像，为小设备提供较小的图像文件以获得更好的性能。记住“移动优先”的设计原则，最初为小设备指定较小的图像文件，然后添加媒体查询为中等和大型设备指定日益较大的图像文件。
 
-更简单来说，可以使用 CSS 规则通过为 `width` 属性分配百分比值，并为 `height` 属性指定 `auto` 关键字，来轻松地让图像放大或缩小
+更简单来说，可以使用 CSS 规则通过为 `width` 属性分配百分比值，并为 `height` 属性指定 `auto` 关键字，来轻松地让图像放大或缩小。
 
-![image](img/1v.jpg)创建一个包含一个 `div` 元素和单个图像的 HTML 文档
+![image](img/1v.jpg)
+
+创建一个包含一个 `div` 元素和单个图像的 HTML 文档。
 
 ```html
 <img class=”scale” src=”ferrari.png” alt=”Ferrari">>
 ```
+
 ![image](img/htmlv.jpg)
 
-scale.html
+`scale.html`
 
 ![image](img/pngv.jpg)
 
-ferrari.png
+`ferrari.png`
 
 800px x 400px
 
-![image](img/2v.jpg)添加一个带有规则的样式表来控制网页
+![image](img/2v.jpg)
+
+添加一个带有规则的样式表来控制网页。
 
 ```css
 * { 
@@ -9956,7 +10625,10 @@ ferrari.png
   box-sizing : border-box ; 
 }
 ```
-![image](img/3v.jpg)现在，添加规则来缩放图像
+
+![image](img/3v.jpg)
+
+现在，添加规则来缩放图像。
 
 ```css
 img.scale { 
@@ -9965,11 +10637,15 @@ img.scale {
   border : 5px dashed Purple ; 
 }
 ```
-![image](img/4v.jpg)保存 HTML 文档，然后在不同的设备上打开它，查看图像如何缩放到适应显示区域
+
+![image](img/4v.jpg)
+
+保存 HTML 文档，然后在不同的设备上打开它，查看图像如何缩放到适应显示区域。
 
 ![image](img/pg313_1.jpg)
 
 ### 隐藏内容
+
 CSS 提供了多种方法可以将网页内容从视图中隐藏，但后果各异：
 
 ![image](img/pg314_1.jpg)
@@ -9980,7 +10656,9 @@ CSS 提供了多种方法可以将网页内容从视图中隐藏，但后果各�
 
 在响应式网页设计中，理想情况下，不应从小设备查看的网页中省略内容。然而，你可以通过绝对定位内容到显示区域之外，将其从页面流中视觉移除，但保持其对屏幕阅读器可见以辅助辅助功能。
 
-![image](img/1v.jpg)创建一个包含图像和段落的 `div` 的 HTML 文档
+![image](img/1v.jpg)
+
+创建一个包含图像和段落的 `div` 的 HTML 文档。
 
 ```html
 <div class=”flex-container">
@@ -9988,17 +10666,20 @@ CSS 提供了多种方法可以将网页内容从视图中隐藏，但后果各�
   <p class=”screen-reader-text">兰花是香港的官方花花。</p>
 </div>
 ```
+
 ![image](img/htmlv.jpg)
 
-hide.html
+`hide.html`
 
 ![image](img/pngv.jpg)
 
-orchid.png
+`orchid.png`
 
 200px x 200px
 
-![image](img/2v.jpg)添加一个带有规则的样式表来控制网页
+![image](img/2v.jpg)
+
+添加一个带有规则的样式表来控制网页。
 
 ```css
 * { 
@@ -10010,7 +10691,10 @@ body {
   background : Black ; 
 }
 ```
-![image](img/3v.jpg)现在，添加规则来创建 flex 布局
+
+![image](img/3v.jpg)
+
+现在，添加规则来创建 flex 布局。
 
 ```css
 div.flex-container {
@@ -10018,7 +10702,10 @@ div.flex-container {
   justify-content : center ;
 }
 ```
-![image](img/4v.jpg)现在，添加规则来创建 flex 布局
+
+![image](img/4v.jpg)
+
+现在，添加规则来创建 flex 布局。
 
 ```css
 div.flex-container {
@@ -10026,7 +10713,10 @@ div.flex-container {
   justify-content : center ;
 }
 ```
-![image](img/5v.jpg)现在，添加规则来创建 flex 布局
+
+![image](img/5v.jpg)
+
+现在，添加规则来创建 flex 布局。
 
 ```css
 @media screen and ( max-width:600px ) {
@@ -10039,17 +10729,25 @@ div.flex-container {
   }
 }
 ```
-![image](img/6v.jpg)保存 HTML 文档，然后在不同的设备上打开
+
+![image](img/6v.jpg)
+
+保存 HTML 文档，然后在不同的设备上打开。
 
 ![image](img/pg315_1.jpg)
 
-![image](img/7v.jpg)拖动浏览器边缘缩小宽度
+![image](img/7v.jpg)
 
-![image](img/8v.jpg)拖动浏览器边缘缩小宽度
+拖动浏览器边缘缩小宽度。
+
+![image](img/8v.jpg)
+
+拖动浏览器边缘缩小宽度。
 
 ![image](img/pg315_2.jpg)
 
 ## 总结
+
 - 响应式网页设计 (RWD) 确保网页在所有设备上良好显示。
 - 响应式网页设计使用媒体查询确定查看设备的尺寸和功能。
 - 针对响应式网页设计优化的页面在头部包含 `<meta>` 标签。
@@ -10062,6 +10760,7 @@ div.flex-container {
 - 通过在 `background-size` 属性上指定 `contain` 关键字，并在 `background-repeat` 属性上指定 `no-repeat` 关键字，可以让背景图像缩小。
 
 ### 15 开始学习 JavaScript
+
 | |
 |---|
 | ![image](img/pg317_1.jpg) |
@@ -10078,10 +10777,6 @@ div.flex-container {
 - **分配函数**
 - **识别作用域**
 
-
-
-
-
 # 使用闭包 (Closures)
 
 ## Summary
@@ -10096,7 +10791,7 @@ JavaScript 由 Brendan Eich 在 Netscape 公司创建，首次于 1995 年 12 �
 
 在引入 JavaScript 之前，网页功能需要浏览器调用驻留在 Web 服务器上的“服务端”脚本，而在那里，缓慢的响应会影响性能。调用驻留在用户系统上的“客户端”脚本则解决了延迟问题并提供了更卓越的体验。
 
-JavaScript 迅速流行起来，但 Netscape 和微软在许可问题上产生了分歧——因此微软推出了了自己的名为“JScript”的版本。虽然与 JavaScript 相似，但新的 JScript 版本具有一些扩展功能。由于意识到碎片化的危险，JavaScript 语言由 Ecma International 标准组织于 1997 年 6 月标准化为“ECMAScript”。这有助于稳定核心功能，但这个名字听起来像某种皮肤病，并不被广泛使用，大多数人将如一地称呼这种语言为“JavaScript”。
+JavaScript 迅速流行起来，但 Netscape 和微软在许可问题上产生了分歧——因此微软推出了自己的名为“JScript”的版本。虽然与 JavaScript 相似，但新的 JScript 版本具有一些扩展功能。由于意识到碎片化的危险，JavaScript 语言由 Ecma International 标准组织于 1997 年 6 月标准化为“ECMAScript”。这有助于稳定核心功能，但这个名字听起来像某种皮肤病，并不被广泛使用，大多数人将如一地称呼这种语言为“JavaScript”。
 
 ![image](img/pg318_2.jpg)
 
@@ -10133,6 +10828,8 @@ JavaScript 代码也可以写在外部的纯文本文件中，并赋予 `.js` �
 ```html
 <script src=”js/external_script.js”> </script>
 ```
+
+
 
 如果脚本位于其他地方，你可以分配文件的绝对路径地址，如下：
 
@@ -10179,7 +10876,7 @@ document.getElementById( ‘message’ ).innerText = ‘Hello World!’
 window.alert( ‘Hello World!’ )
 ```
 
-这调用了 `window` 对象的 `alert()` 方法，将 ( ) 括号内指定的内容显示在对话框中。
+这调用了 `window` 对象的 `alert()` 方法，将 `()` 括号内指定的内容显示在对话框中。
 
 ![image](img/pg320_3.jpg)
 
@@ -10189,7 +10886,7 @@ window.alert( ‘Hello World!’ )
 console.log( ‘Hello World!’ )
 ```
 
-这调用了 `console` 对象的 `log()` 方法，在控制台窗口显示 ( ) 括号内指定的内容。所有领先浏览器在其开发者工具中都有 JavaScript 控制台——通常通过按 F2 键访问。由于 Google Chrome 浏览器在编写时统计上最受欢迎，因此在书中一直用于演示 JavaScript。
+这调用了 `console` 对象的 `log()` 方法，在控制台窗口显示 `()` 括号内指定的内容。所有领先浏览器在其开发者工具中都有 JavaScript 控制台——通常通过按 F2 键访问。由于 Google Chrome 浏览器在编写时统计上最受欢迎，因此在书中一直用于演示 JavaScript。
 
 ![image](img/hot.jpg)
 
@@ -10197,7 +10894,9 @@ console.log( ‘Hello World!’ )
 
 当代码发生错误时，控制台会提供有用信息——因此非常适合调试。
 
-![image](img/1b.jpg)创建一个包含空段落和脚本的 HTML 文档，用三种方式显示输出：
+![image](img/1b.jpg)
+
+创建一个包含空段落和脚本的 HTML 文档，用三种方式显示输出：
 
 ```html
 <p id=”message”></p>
@@ -10210,32 +10909,37 @@ console.log( ‘Hello World!’ )
 
 ![image](img/htmlb.jpg)
 
-output.html
+`output.html`
 
-![image](img/2b.jpg)保存 HTML 文档然后在浏览器中打开它，查看写入段落和显示在对话框中的输出——如所示
+![image](img/2b.jpg)
 
-![image](img/3b.jpg)接下来，按下 **F12** 键，或使用浏览器的菜单打开其开发者工具功能
+保存 HTML 文档然后在浏览器中打开它，查看写入段落和显示在对话框中的输出——如所示。
 
-![image](img/4b.jpg)现在选择 **Console** 标签，查看写入控制台窗口的输出
+![image](img/3b.jpg)
+
+接下来，按下 **F12** 键，或使用浏览器的菜单打开其开发者工具功能。
+
+![image](img/4b.jpg)
+
+现在选择 **Console** 标签，查看写入控制台窗口的输出。
 
 ![image](img/pg320_1.jpg)
 
-![image](img/5b.jpg)点击 ![image](img/pg321_3) **显示/隐藏** 按钮隐藏或显示侧边栏，点击 ![image](img/pg321_4) **自定义** 按钮选择控制台窗口停靠浏览器窗口的方式，然后点击 ![image](img/pg321_5) **清除** 按钮清除控制台的所有内容
+![image](img/5b.jpg)
+
+点击 ![image](img/pg321_3) **显示/隐藏** 按钮隐藏或显示侧边栏，点击 ![image](img/pg321_4) **自定义** 按钮选择控制台窗口停靠浏览器窗口的方式，然后点击 ![image](img/pg321_5) **清除** 按钮清除控制台的所有内容。
 
 ![image](img/pg321_2.jpg)
 
-还有一个 `document.write()` 方法可以替换整个网页的头部和主体，但通常通常被认为是不良实践。
+还有一个 `document.write()` 方法可以替换整个网页的头部和主体，但通常被认为是不良实践。
 
 ![image](img/hot.jpg)
-
-
-
 
 确保控制台显示输出、HTML 文档名称以及创建该输出的 JavaScript 代码所在的行号。
 
 ## 语句
 
-JavaScript 代码由一系列称为“语句”（statements）的指令组成，当浏览器 JavaScript 引擎处理脚本时，这些语句通常按从到下的顺序执行。
+JavaScript 代码由一系列称为“语句”（statements）的指令组成，当浏览器 JavaScript 引擎处理脚本时，这些语句通常按从上到下的顺序执行。
 
 ![image](img/pg322_1.jpg)
 
@@ -10248,7 +10952,7 @@ JavaScript 代码由一系列称为“语句”（statements）的指令组成�
 
 在早期的 JavaScript 代码中，每个语句都必须以 `;` 分号字符结束——就像英语语言中的每个句子必须以 `.` 句号（full stop）结尾一样。现在这是可选的，所以除非你想在一行上编写多个语句，否则可以省略。在这种情况下，语句需要用分号隔开，如下所示：
 
-```
+```text
 statement ; statement ; statement
 ```
 
@@ -10260,7 +10964,7 @@ JavaScript 解释器忽略制表符和空格（“空白字符”），所以你
 
 JavaScript 语句通常分组在 `{ }` 大括号（“braces”）内的函数块中，这些块可以在需要时反复调用执行。良好的做法是将这些语句缩进两个空格以提高可读性，如下：
 
-```
+```text
 {
   statement
   statement
@@ -10270,7 +10974,7 @@ JavaScript 语句通常分组在 `{ }` 大括号（“braces”）内的函数�
 
 ![image](img/hot.jpg)
 
-JavaScript 关键字在此处 描述，你稍后将学习运算符、值和表达式。
+JavaScript 关键字在此处描述，你稍后将学习运算符、值和表达式。
 
 ![image](img/forget.jpg)
 
@@ -10282,14 +10986,14 @@ JavaScript 关键字在此处 描述，你稍后将学习运算符、值和表�
 
 规范 JavaScript 语言的规则称为“语法”，它识别两种类型的值——固定和变量。固定的数值和文本字符串值被称为“字面量”（literals）：
 
-- **数字字面量 (Number literals)** – 整数整数，如 `100`，或浮点数如 `3.142`。
+- **数字字面量 (Number literals)** – 整数，如 `100`，或浮点数如 `3.142`。
 - **字符串字面量 (String literals)** – 双引号内的文本，如 `“JavaScript Fun”`，或单引号内的如 `‘JavaScript Fun’`。
 
 变量值简单地被称为“变量”（variables），用于存储脚本中的数据。可以使用 JavaScript 的 `let` 关键字创建变量——例如，`let total` 创建名为“total”的变量。可以使用 JavaScript 的 `=` 赋值运算符为变量赋值以进行存储，如下：
 
 `let total = 300`
 
-可以使用其他 JavaScript 运算符形成将评估为单个值的表达式。通常，一个表达式可以包含在 `( )` 括号中，如下所示由数字和 JavaScript `+` 加法运算符组成的表达式，其评估值为单个值 100：
+可以使用其他 JavaScript 运算符形成将评估为单个值的表达式。通常，一个表达式可以包含在 `()` 括号中，如下所示由数字和 JavaScript `+` 加法运算符组成的表达式，其评估值为单个值 100：
 
 `( 80 + 20 )`
 
@@ -10301,7 +11005,7 @@ JavaScript 是一种大小敏感的语言，因此名为 `total` 和 `Total` 的
 
 在你的 JavaScript 代码中添加解释性注释是一个良好的习惯，以便他人更容易理解，并且自己在日后回顾代码时也能理解。跟在 `//` 双斜杠之后的单行内容，或在多行中 `/*` 和 `*/` 字符序列之间的任何内容都被忽略。
 
-```
+```javascript
 let total = 100 // 这段代码将被执行。
 
 /* let total = 100
@@ -10320,9 +11024,9 @@ let total = 100 // 这段代码将被执行。
 
 ![image](img/pg324_1.jpg)
 
-在 JavaScript 代码中，你可以为变量和函数起自己的名称。名称应该具有意义并反映变量或函数的功能。你的名称由字母、数字和下划线组成，但不能包含空格或与数字开头。你还必须避免这些 JavaScript 语言中具有特殊含义的单词：
+在 JavaScript 代码中，你可以为变量和函数起自己的名称。名称应该具有意义并反映变量或函数的功能。你的名称由字母、数字和下划线组成，但不能包含空格或以数字开头。你还必须避免这些 JavaScript 语言中具有特殊含义的单词：
 
-| JavaScript 关键字 | | | |
+| JavaScript 关键字 |  |  |  |
 | :--- | :--- | :--- | :--- |
 | `abstract` | `arguments` | `await` | `boolean` |
 | `break` | `byte` | `case` | `catch` |
@@ -10331,7 +11035,7 @@ let total = 100 // 这段代码将被执行。
 | `double` | `else` | `enum` | `eval` |
 | `export` | `extends` | `false` | `final` |
 | `finally` | `float` | `for` | `function` |
-| `goto` | `if` | | |
+| `goto` | `if` |  |  |
 | `in` | `implements` | `import` | `instanceof` |
 | `int` | `let` | `long` | `new` |
 | `null` | `package` | `private` | `protected` |
@@ -10340,14 +11044,14 @@ let total = 100 // 这段代码将被执行。
 | `transient` | `true` | `typeof` | `var` |
 | `volatile` | `while` | `with` | `yield` |
 
-| JavaScript 对象、属性和方法 | | | |
+| JavaScript 对象、属性和方法 |  |  |  |
 | :--- | :--- | :--- | :--- |
 | `Array` | `Date` | `eval` | `function` |
 | `hasOwnProperty` | `Infinity` | `isNaN` | `NaN` |
 | `length` | `Math` | `Object` | `prototype` |
 | `String` | `toString` | `undefined` | `valueOf` |
 
-| HTML 属性、窗口对象和属性 | | | |
+| HTML 属性、窗口对象和属性 |  |  |  |
 | :--- | :--- | :--- | :--- |
 | `alert` | `all` | `anchor` | `anchors` |
 | `area` | `assign` | `close` | `closed` |
@@ -10368,9 +11072,9 @@ let total = 100 // 这段代码将被执行。
 | `secure` | `select` | `self` | `setInterval` |
 | `setTimeout` | `status` | `submit` | `taint` |
 | `text` | `textarea` | `top` | `unescape` |
-| `untaint` | `window` | | |
+| `untaint` | `window` |  |  |
 
-| 示例中的 HTML 事件属性 | | | |
+| 示例中的 HTML 事件属性 |  |  |  |
 | :--- | :--- | :--- | :--- |
 | `onclick` | `ondblclick` | `onfocus` | `onfocusout` |
 | `onkeydown` | `onkeypress` | `onkeyup` | `onload` |
@@ -10380,9 +11084,6 @@ let total = 100 // 这段代码将被执行。
 ## 存储值
 
 ![image](img/pg326_1.jpg)
-
-
-
 
 “变量”是一个容器，在所有脚本语言和编程语言中通用的，可以在其中存储数据并在稍后检索。与大多数其他语言中的“强类型”变量不同（这些变量必须声明它们可能包含的特定数据类型），JavaScript 变量的使用简单得多，因为它们是“弱类型”的——所以它们可以包含任何类型的数据：
 
@@ -10403,15 +11104,15 @@ JavaScript 变量可以使用 `let`、`const` 或 `var` 关键字声明，后面
 
 ```javascript
 let myNumber // 声明一个变量。
-myNumber = 10// 初始化一个变量。
+myNumber = 10 // 初始化一个变量。
 let myString = ‘Hello World!’ // 声明并初始化一个变量。
 ```
 
 也可以在一行内声明多个变量：
 
 ```javascript
-let i , j , k // 声明 3 个变量。
-let num =10 , char = ‘C’ // 声明并初始化 2 个变量。
+let i, j, k // 声明 3 个变量。
+let num = 10, char = ‘C’ // 声明并初始化 2 个变量。
 ```
 
 常量在声明时必须初始化：
@@ -10420,7 +11121,9 @@ let num =10 , char = ‘C’ // 声明并初始化 2 个变量。
 const myName = ‘Mike’
 ```
 
-![image](img/forget.jpg)变量名是其所包含值的别名——在脚本中使用该名称将引用其存储的值。
+![image](img/forget.jpg)
+
+变量名是其所包含值的别名——在脚本中使用该名称将引用其存储的值。
 
 ![image](img/hot.jpg)
 
@@ -10428,7 +11131,11 @@ const myName = ‘Mike’
 
 初始化时，JavaScript 会自动为赋值的值设置变量类型。稍后在脚本中赋值不同的数据类型可以更改变量类型。可以使用 `typeof` 关键字显示当前的变量类型。
 
-![image](img/1b.jpg)创建一个 HTML 文档，其中脚本声明了几个分配了不同数据类型的变量
+![image](img/1b.jpg)
+
+创建一个 HTML 文档，其中脚本声明了几个分配了不同数据类型的变量。
+
+
 
 ```javascript
 const firstName = ‘Mike’
@@ -10442,9 +11149,10 @@ let unusedVariable
 ```
 
 ![image](img/htmlb.jpg)
-variables.html
 
-![image](img/2b.jpg)添加语句来输出每个变量的数据类型
+`variables.html`
+
+![image](img/2b.jpg)添加语句来输出每个变量的数据类型。
 
 ```javascript
 console.log( ‘firstName: ‘ + typeof firstName )
@@ -10457,22 +11165,22 @@ console.log( ‘emptyVariable: ‘ + typeof emptyVariable )
 console.log( ‘unusedVariable: ‘ + typeof unusedVariable )
 ```
 
-![image](img/3b.jpg)保存 HTML 文档，然后在浏览器中打开它并启动控制台查看输出中的数据类型
+![image](img/3b.jpg)保存 HTML 文档，然后在浏览器中打开它并启动控制台查看输出中的数据类型。
 
 ![image](img/pg327_1.jpg)
 
-![image](img/hot.jpg)这里使用拼接运算符 `+` 来输出一个组合的文本字符串。
+![image](img/hot.jpg)这里使用拼接运算符`+`来输出一个组合的文本字符串。
 
-![image](img/snake.jpg)你会惊讶地发现赋值 `null` 值的变量被描述为 `object` 类型，而不是 `null` 类型。这是 JavaScript 语言中的一个已知错误。
+![image](img/snake.jpg)你会惊讶地发现赋值`null`值的变量被描述为`object`类型，而不是`null`类型。这是 JavaScript 语言中的一个已知错误。
 
 ## 创建函数
 
-函数表达式简单来说是在 `{ }` 大括号中分组执行的一条或多条语句，并返回一个最终的单一值。可以根据脚本需要调用函数来执行其语句。属于对象的函数（例如 `console.log( )`）被称为“方法”——以将其与内置函数和自定义函数区分开来。两者都有尾随括号，可以接受“参数”值并传递给函数进行处理——例如，传递到 `console.log( )` 方法括号中的参数。
+函数表达式简单来说是在`{ }`大括号中分组执行的一条或多条语句，并返回一个最终的单一值。可以根据脚本需要调用函数来执行其语句。属于对象的函数（例如`console.log( )`）被称为“方法”——以将其与内置函数和自定义函数区分开来。两者都有尾随括号，可以接受“参数”值并传递给函数进行处理——例如，传递到`console.log( )`方法括号中的参数。
 
 ![image](img/pg328_1.jpg)传递给函数的参数数量通常必须与函数块声明括号内指定的“参数”数量匹配。例如，一个需要恰好一个参数的自定义函数看起来如下：
 
 ```javascript
-function *function-name* ( *parameter* ) {
+function function-name ( parameter ) {
   // 在此处编写执行的语句。
 }
 ```
@@ -10480,7 +11188,7 @@ function *function-name* ( *parameter* ) {
 可以以逗号分隔列表的形式指定多个参数，你可以可选地指定一个在函数调用未传递参数时使用的默认值，如下：
 
 ```javascript
-function *function-name* ( *parameter* = *value* ) {
+function function-name ( parameter = value ) {
   // 在此处编写执行的语句。
 }
 ```
@@ -10489,9 +11197,9 @@ function *function-name* ( *parameter* = *value* ) {
 
 ![image](img/hot.jpg)为你的变量选择有意义的名称以便以后更容易理解脚本。
 
-初始化后，JavaScript 会自动为赋值的值设置变量类型。稍后在脚本中赋值不同的数据类型可以更改变量类型。可以使用 `typeof` 关键字显示当前的变量类型。
+初始化后，JavaScript 会自动为赋值的值设置变量类型。稍后在脚本中赋值不同的数据类型可以更改变量类型。可以使用`typeof`关键字显示当前的变量类型。
 
-![image](img/1b.jpg)创建一个 HTML 文档，其中脚本声明了几个分配了不同数据类型的变量
+![image](img/1b.jpg)创建一个 HTML 文档，其中脚本声明了几个分配了不同数据类型的变量。
 
 ```javascript
 const firstName = ‘Mike’
@@ -10505,9 +11213,10 @@ let unusedVariable
 ```
 
 ![image](img/htmlb.jpg)
-variables.html
 
-![image](img/2b.jpg)添加语句来输出每个变量的数据类型
+`variables.html`
+
+![image](img/2b.jpg)添加语句来输出每个变量的数据类型。
 
 ```javascript
 console.log( ‘firstName: ‘ + typeof firstName )
@@ -10520,22 +11229,22 @@ console.log( ‘emptyVariable: ‘ + typeof emptyVariable )
 console.log( ‘unusedVariable: ‘ + typeof unusedVariable )
 ```
 
-![image](img/3b.jpg)保存 HTML 文档，然后在浏览器中打开它并启动控制台查看输出中的数据类型
+![image](img/3b.jpg)保存 HTML 文档，然后在浏览器中打开它并启动控制台查看输出中的数据类型。
 
 ![image](img/pg327_1.jpg)
 
-![image](img/hot.jpg)这里使用拼接运算符 `+` 来输出一个组合的文本字符串。
+![image](img/hot.jpg)这里使用拼接运算符`+`来输出一个组合的文本字符串。
 
-![image](img/snake.jpg)你会惊讶地发现赋值 `null` 值的变量被描述为 `object` 类型，而不是 `null` 类型。这是 JavaScript 语言中的一个已知错误。
+![image](img/snake.jpg)你会惊讶地发现赋值`null`值的变量被描述为`object`类型，而不是`null`类型。这是 JavaScript 语言中的一个已知错误。
 
 ## 创建函数
 
-函数表达式简单来说是在 `{ }` 大括号中分组执行的一条或多条语句，并返回一个最终的单一值。可以根据脚本需要调用函数来执行其语句。属于对象的函数（例如 `console.log( )`）被称为“方法”——以将其与内置函数和自定义函数区分开来。两者都有尾随括号，可以接受“参数”值并传递给函数进行处理——例如，传递到 `console.log( )` 方法中的参数。
+函数表达式简单来说是在`{ }`大括号中分组执行的一条或多条语句，并返回一个最终的单一值。可以根据脚本需要调用函数来执行其语句。属于对象的函数（例如`console.log( )`）被称为“方法”——以将其与内置函数和自定义函数区分开来。两者都有尾随括号，可以接受“参数”值并传递给函数进行处理——例如，传递到`console.log( )`方法中的参数。
 
 ![image](img/pg328_1.jpg)传递给函数的参数数量通常必须与函数块声明括号内指定的“参数”数量匹配。例如，一个需要恰好一个参数的自定义函数看起来如下：
 
 ```javascript
-function *function-name* ( *parameter* ) {
+function function-name ( parameter ) {
   // 在此处编写执行的语句。
 }
 ```
@@ -10543,16 +11252,16 @@ function *function-name* ( *parameter* ) {
 可以以逗号分隔列表的形式指定多个参数，你可以可选地指定一个在函数调用未传递参数时使用的默认值，如下：
 
 ```javascript
-function *function-name* ( *parameter* = *value* ) {
+function function-name ( parameter = value ) {
   // 在此处编写执行的语句。
 }
 ```
 
 变量名是其所包含值的别名——在脚本中使用名称将引用其存储的值。
 
-![image](img/hot.jpg)为你的变量选择有意义的名称以便以后更容易理解脚本。初始化后，JavaScript 会自动为赋值的值设置变量类型。稍后在脚本中赋值不同的数据类型可以更改变量类型。可以使用 `typeof` 关键字显示当前的变量类型。
+![image](img/hot.jpg)为你的变量选择有意义的名称以便以后更容易理解脚本。初始化后，JavaScript 会自动为赋值的值设置变量类型。稍后在脚本中赋值不同的数据类型可以更改变量类型。可以使用`typeof`关键字显示当前的变量类型。
 
-![image](img/1b.jpg)创建一个 HTML 文档，其中脚本声明了几个分配了不同数据类型的变量
+![image](img/1b.jpg)创建一个 HTML 文档，其中脚本声明了几个分配了不同数据类型的变量。
 
 ```javascript
 const firstName = ‘Mike’
@@ -10566,9 +11275,10 @@ let unusedVariable
 ```
 
 ![image](img/htmlb.jpg)
-variables.html
 
-![image](img/2b.jpg)接下来，添加一个返回相加结果的函数
+`variables.html`
+
+![image](img/2b.jpg)接下来，添加一个返回相加结果的函数。
 
 ```javascript
 function add ( argOne, argTwo = 10 ) {
@@ -10576,7 +11286,7 @@ function add ( argOne, argTwo = 10 ) {
 }
 ```
 
-![image](img/3b.jpg)现在，通过调用上述每个函数添加一个返回平方和相加结果的函数
+![image](img/3b.jpg)现在，通过调用上述每个函数添加一个返回平方和相加结果的函数。
 
 ```javascript
 function squareAdd ( arg ) {
@@ -10585,7 +11295,7 @@ function squareAdd ( arg ) {
 }
 ```
 
-![image](img/4b.jpg)最后，添加调用函数并在输出中打印返回值的语句
+![image](img/4b.jpg)最后，添加调用函数并在输出中打印返回值的语句。
 
 ```javascript
 console.log( ‘8 x 8: ‘ + square( 8 ) )
@@ -10596,42 +11306,39 @@ console.log( ‘(8 x 8) + (8 + 10): ‘ + squareAdd( 8 ) )
 
 ![image](img/forget.jpg)注意，当调用者只传递一个参数值时，这里使用了默认第二个参数值（10）。
 
-![image](img/5b.jpg)保存 HTML 文档，然后在浏览器中打开它并启动控制台查看函数返回的值
+![image](img/5b.jpg)保存 HTML 文档，然后在浏览器中打开它并启动控制台查看函数返回的值。
 
 ![image](img/pg329_1.jpg)
 
-![image](img/hot.jpg)`*` 字符是 JavaScript 中的算术乘法运算符。
+![image](img/hot.jpg)`*`字符是 JavaScript 中的算术乘法运算符。
 
 ## 分配函数
 
 函数在 JavaScript 中非常有用，因为它们可以在需要时被调用（执行）来执行其语句，调用者可以传递不同的参数以返回不同的结果。
 
-
-
-
 ![image](img/pg330_1.jpg)
 
-必须认识到，JavaScript 的 `()` 括号运算符是调用语句中实际调用函数的组件。这意味着语句可以通过仅指定函数名来将函数赋值给变量。然后，可以在语句中指定变量名后跟 `()` 运算符来调用该函数。但请注意，如果你尝试通过指定函数名后跟 `()` 来将函数赋值给变量，那么该函数将被立即调用，并且该函数返回的值将被赋值给变量。
+必须认识到，JavaScript 的`()`括号运算符是调用语句中实际调用函数的组件。这意味着语句可以通过仅指定函数名来将函数赋值给变量。然后，可以在语句中指定变量名后跟`()`运算符来调用该函数。但请注意，如果你尝试通过指定函数名后跟`()`来将函数赋值给变量，那么该函数将被立即调用，并且该函数返回的值将被赋值给变量。
 
 ![image](img/hot.jpg)
 
-使用旧的 `var` 关键字声明的变量也会被提升（hoisted），但使用 `let` 或 `const` 声明的变量不会被提升。
+使用旧的`var`关键字声明的变量也会被提升（hoisted），但使用`let`或`const`声明的变量不会被提升。
 
-## 函数提升 (Function Hoisting)
+## 函数提升（Function Hoisting）
 
-尽管 JavaScript 解释器按从上到下的顺序读取脚本，但它实际上会进行两次扫描。第一次扫描寻找函数声明并记住找到的任何内容，这个过程被称为“提升”。第二次扫描是解释器实际执行脚本的过程。提升允许函数调用在函数声明之前出现在脚本中，因为解释器在第一次扫描时已经识别了该函数。然而，第一次扫描不会识别使用 `let` 或 `const` 关键字赋值给变量的函数！
+尽管 JavaScript 解释器按从上到下的顺序读取脚本，但它实际上会进行两次扫描。第一次扫描寻找函数声明并记住找到的任何内容，这个过程被称为“提升”。第二次扫描是解释器实际执行脚本的过程。提升允许函数调用在函数声明之前出现在脚本中，因为解释器在第一次扫描时已经识别了该函数。然而，第一次扫描不会识别使用`let`或`const`关键字赋值给变量的函数！
 
-## 匿名函数 (Anonymous Functions)
+## 匿名函数（Anonymous Functions）
 
-在将函数赋值给变量时，可以省略函数名，因为可以在语句中指定变量名和 `()` 运算符来调用函数。这些被称为匿名函数表达式，其语法如下：
+在将函数赋值给变量时，可以省略函数名，因为可以在语句中指定变量名和`()`运算符来调用函数。这些被称为匿名函数表达式，其语法如下：
 
-```
+```javascript
 let variable = function ( parameters ) { statements ; return value }
 ```
 
-匿名函数表达式还可以通过将整个函数封装在 `()` 括号内，并在表达式末尾添加 `()` 括号运算符来变为“自执行的”。这意味着它们的语句在浏览器首次加载脚本时就会自动执行一次。自执行函数表达式的语法如下：
+匿名函数表达式还可以通过将整个函数封装在`()`括号内，并在表达式末尾添加`()`括号运算符来变为“自执行的”。这意味着它们的语句在浏览器首次加载脚本时就会自动执行一次。自执行函数表达式的语法如下：
 
-```
+```javascript
 ( function () { statements ; return value } ) ( )
 ```
 
@@ -10641,7 +11348,7 @@ let variable = function ( parameters ) { statements ; return value }
 
 自执行函数表达式也称为立即调用函数表达式（IIFE – 读音通常为“iffy”）。
 
-![image](img/1b.jpg)创建一个 HTML 文档，其中包含一个调用尚未声明的函数的脚本
+![image](img/1b.jpg)创建一个 HTML 文档，其中包含一个调用尚未声明的函数的脚本。
 
 ```javascript
 console.log( ‘Hoisted: ‘ + add( 100, 200 ) )
@@ -10649,42 +11356,42 @@ console.log( ‘Hoisted: ‘ + add( 100, 200 ) )
 
 ![image](img/htmlb.jpg)
 
-anonymous.html
+`anonymous.html`
 
-![image](img/2b.jpg)接下来，在上方调用的函数下方添加
+![image](img/2b.jpg)接下来，在上方调用的函数下方添加：
 
 ```javascript
 function add( numOne, numTwo ) {
-return numOne + numTwo
+  return numOne + numTwo
 }
 ```
 
-![image](img/3b.jpg)现在，添加一个将上述函数赋值给变量并调用被赋值函数的函数
+![image](img/3b.jpg)现在，添加一个将上述函数赋值给变量并调用被赋值函数的函数。
 
 ```javascript
 let addition = add
 console.log( ‘Assigned: ‘ + addition( 32, 64 ) )
 ```
 
-![image](img/4b.jpg)然后，将一个类似的匿名函数赋值给变量并调用该被赋值的函数
+![image](img/4b.jpg)然后，将一个类似的匿名函数赋值给变量并调用该被赋值的函数。
 
 ```javascript
 let anon = function ( numOne, numTwo ) {
-let result = numOne + numTwo ; return result
+  let result = numOne + numTwo ; return result
 }
 console.log( ‘Anonymous: ‘ + anon( 9, 1 ) )
 ```
 
-![image](img/5b.jpg)最后，将自执行函数返回的值赋值给变量并显示该值
+![image](img/5b.jpg)最后，将自执行函数返回的值赋值给变量并显示该值。
 
 ```javascript
 let iffy = ( function () {
-let str = ‘Self Invoked Output’ ; return str
+  let str = ‘Self Invoked Output’ ; return str
 } ) ( )
 console.log( iffy )
 ```
 
-![image](img/6b.jpg)保存 HTML 文档，然后在浏览器中打开它并启动控制台查看函数返回的值
+![image](img/6b.jpg)保存 HTML 文档，然后在浏览器中打开它并启动控制台查看函数返回的值。
 
 ![image](img/pg331_1.jpg)
 
@@ -10696,29 +11403,29 @@ console.log( iffy )
 
 自执行函数的意义可能不会立而易见，但到本章结束将会变得清晰。
 
-## 识别作用域 (Recognize Scope)
+## 识别作用域（Recognize Scope）
 
 变量在脚本中的可访问范围取决于它们的“词法作用域”（lexical scope）——即变量创建的环境。这可以是“全局的”或“局部”。
 
 ![image](img/pg332_1.jpg)
 
-## 全局作用域 (Global Scope)
+## 全局作用域（Global Scope）
 
-在函数块外部创建的变量可以在整个脚本范围内访问。这意味着它们持续存在，并且同一脚本环境内的函数可以使用。初看这可能非常方便，但它有一个非常严重的缺点，即同名变量可能会冲突。例如，想象你创建了一个赋值为你名字的全局变量 `myName`，但随后包含了一个外部脚本，另一个开发者在其中创建了一个赋值为他或她名字的全局变量 `myName`。两个同名变量存在同一个脚本环境中，因此产生冲突。最好避免这种情况，因此你不应该在脚本中创建全局变量来存储原始值（除 Object 和 Function 外的所有数据类型）。
+在函数块外部创建的变量可以在整个脚本范围内访问。这意味着它们持续存在，并且同一脚本环境内的函数可以使用。初看这可能非常方便，但它有一个非常严重的缺点，即同名变量可能会冲突。例如，想象你创建了一个赋值为你名字的全局变量`myName`，但随后包含了一个外部脚本，另一个开发者在其中创建了一个赋值为他或她名字的全局变量`myName`。两个同名变量存在同一个脚本环境中，因此产生冲突。最好避免这种情况，因此你不应该在脚本中创建全局变量来存储原始值（除 Object 和 Function 外的所有数据类型）。
 
-## 局部作用域 (Local Scope)
+## 局部作用域（Local Scope）
 
-在函数块内部创建的变量在函数的整个生命周期内可以局部访问。它们只在函数执行时存在，然后就会销毁。它们的脚本环境是有限的——从创建点开始到最后的 `}` 大括号处，或者函数返回的时刻。在函数块的最开始声明变量是一个良好的习惯，这样它们的词法作用域就是整个函数的持续时间。这意味着同名变量可以在不同的函数中存在而不产生冲突。例如，局部 `myName` 变量可以愉快地存在于脚本的不同函数中，以及包含的外部脚本的函数中。建议尝试只在脚本中创建局部变量来存储值。
+在函数块内部创建的变量在函数的整个生命周期内可以局部访问。它们只在函数执行时存在，然后就会销毁。它们的脚本环境是有限的——从创建点开始到最后的`}`大括号处，或者函数返回的时刻。在函数块的最开始声明变量是一个良好的习惯，这样它们的词法作用域就是整个函数的持续时间。这意味着同名变量可以在不同的函数中存在而不产生冲突。例如，局部`myName`变量可以愉快地存在于脚本的不同函数中，以及包含的外部脚本的函数中。建议尝试只在脚本中创建局部变量来存储值。
 
-## 最佳实践 (Best Practice)
+## 最佳实践（Best Practice）
 
-使用旧的 `var` 关键字声明全局变量允许同名的冲突变量在没有警告的情况下覆盖其赋值的值。较新的 `let` 和 `const` 关键字禁止了这种行为，并将其识别为“未捕到的语法错误”（Uncaught SyntaxError）。因此，建议创建使用 `let` 或 `const` 关键字声明的变量在脚本中存储值。
+使用旧的`var`关键字声明全局变量允许同名的冲突变量在没有警告的情况下覆盖其赋值的值。较新的`let`和`const`关键字禁止了这种行为，并将其识别为“未捕到的语法错误”（Uncaught SyntaxError）。因此，建议创建使用`let`或`const`关键字声明的变量在脚本中存储值。
 
 ![image](img/hot.jpg)
 
 你可以在此处发现如何捕获和处理错误。
 
-![image](img/1b.jpg)创建一个外部脚本，调用函数以输出全局变量的值
+![image](img/1b.jpg)创建一个外部脚本，调用函数以输出全局变量的值。
 
 ```javascript
 let myName = ‘External Script’
@@ -10728,9 +11435,9 @@ readName( )
 
 ![image](img/pg333_1.jpg)
 
-external.js
+`external.js`
 
-![image](img/2b.jpg)创建一个包含外部脚本并添加类似脚本的 HTML 文档
+![image](img/2b.jpg)创建一个包含外部脚本并添加类似脚本的 HTML 文档。
 
 ```html
 <script src="external.js"></script>
@@ -10743,20 +11450,20 @@ getName( )
 
 ![image](img/htmlb.jpg)
 
-scope.html
+`scope.html`
 
-![image](img/3b.jpg)将两个文件保存在同一个文件夹中，然后打开 HTML 文档查看控制台中报告的冲突错误
+![image](img/3b.jpg)将两个文件保存在同一个文件夹中，然后打开 HTML 文档查看控制台中报告的冲突错误。
 
 ![image](img/pg333_2.jpg)
 
-![image](img/4b.jpg)编辑两个脚本将全局变量变为局部变量，然后刷新浏览器查看无冲突
+![image](img/4b.jpg)编辑两个脚本将全局变量变为局部变量，然后刷新浏览器查看无冲突。
 
 ```javascript
 function readName( ) {
-let myName = ‘External Script’ ; console.log( myName )
+  let myName = ‘External Script’ ; console.log( myName )
 }
 function getName( ) {
-let myName = ‘Internal Script’ ; console.log( myName )
+  let myName = ‘Internal Script’ ; console.log( myName )
 }
 ```
 
@@ -10764,20 +11471,19 @@ let myName = ‘Internal Script’ ; console.log( myName )
 
 ![image](img/forget.jpg)
 
-函数调用 `readName( )` 和 `getName( )` 保持在脚本中无需修改。
-
-**使用闭包 (Use Closures)**
 
 
+函数调用`readName()`和`getName()`保持在脚本中无需修改。
 
+## 使用闭包（Use Closures）
 
 上一个示例演示了在 JavaScript 中创建全局变量来存储值的危险，但有时你可能希望存储能够持续被访问的值——例如，在脚本执行过程中记住一个不断增加的分数计数。如何在不使用全局变量存储原始值的情况下实现这一点？答案在于使用“闭包”。
 
 ![image](img/pg334_1.jpg)
 
-闭包是一个嵌套在外部函数内部函数，它保留了对外部函数中声明变量的访问——因为这是嵌套函数创建时的词法作用域。
+闭包是一个嵌套在外部函数内部的函数，它保留了对外部函数中声明变量的访问——因为这是嵌套函数创建时的词法作用域。
 
-![image](img/1b.jpg)创建一个 HTML 文档，其中脚本将一个自执行匿名函数赋值给全局变量
+![image](img/1b.jpg)创建一个 HTML 文档，其中脚本将一个自执行匿名函数赋值给全局变量：
 
 ```javascript
 const add = ( function ( ) {
@@ -10787,22 +11493,22 @@ const add = ( function ( ) {
 
 ![image](img/htmlb.jpg)
 
-closure.html
+`closure.html`
 
-![image](img/2b.jpg)接下来，插入语句初始化局部变量并在同一作用域内将函数赋值给局部变量
+![image](img/2b.jpg)接下来，插入语句初始化局部变量并在同一作用域内将函数赋值给局部变量：
 
 ```javascript
 let count = 0
 const nested = function ( ) { return count = count + 1 }
 ```
 
-![image](img/3b.jpg)现在，插入一条语句返回内部函数——将内部函数赋值给全局变量
+![image](img/3b.jpg)现在，插入一条语句返回内部函数——将内部函数赋值给全局变量：
 
 ```javascript
 return nested
 ```
 
-![image](img/4b.jpg)最后，对已赋值给全局变量的内部函数添加三次相同的函数调用
+![image](img/4b.jpg)最后，对已赋值给全局变量的内部函数添加三次相同的函数调用：
 
 ```javascript
 console.log( ‘Count is ‘ + add( ) )
@@ -10810,33 +11516,33 @@ console.log( ‘Count is ‘ + add( ) )
 console.log( ‘Count is ‘ + add( ) )
 ```
 
-![image](img/5b.jpg)保存 HTML 文档，然后在浏览器中打开并启动控制台，查看从闭包返回的值
+![image](img/5b.jpg)保存 HTML 文档，然后在浏览器中打开并启动控制台，查看从闭包返回的值。
 
 ![image](img/pg334_2.jpg)
 
 ![image](img/forget.jpg)
 
-自执行函数表达式的描述可见此处。它们只执行一次语句。在这里，你可以使用 `console.log( add )` 来确认函数表达式已赋值给外部变量。
+自执行函数表达式的描述可见此处。它们只执行一次语句。在这里，你可以使用`console.log( add )`来确认函数表达式已赋值给外部变量。
 
-理解闭包的概念可能困难，因为看起来这个示例中的 `count` 变量在自执行函数执行完毕后应该被销毁。为了更好地理解闭包的工作原理，你可以探索所赋值函数的 `prototype` 属性。
+理解闭包的概念可能困难，因为看起来这个示例中的`count`变量在自执行函数执行完毕后应该被销毁。为了更好地理解闭包的工作原理，你可以探索所赋值函数的`prototype`属性。
 
-![image](img/6b.jpg)在脚本末尾添加一条语句以显示赋值函数内部是如何构建的
+![image](img/6b.jpg)在脚本末尾添加一条语句以显示赋值函数内部是如何构建的：
 
 ```javascript
 console.log( add.prototype )
 ```
 
-![image](img/7b.jpg)保存 HTML 文档，然后刷新浏览器并展开“constructor”下拉列表以查看作用域
+![image](img/7b.jpg)保存 HTML 文档，然后刷新浏览器并展开“constructor”下拉列表以查看作用域。
 
 ![image](img/pg335_1.jpg)
 
-仔细检查发现，赋值的函数除了普通的局部（脚本）作用域和外部（全局）作用域外，还有一个特殊的（闭包）作用域。这就是为什么 `count` 变量可以通过赋值函数保持可访问，而且，它无法通过任何其他方式被引用。
+仔细检查发现，赋值的函数除了普通的局部（脚本）作用域和外部（全局）作用域外，还有一个特殊的（闭包）作用域。这就是为什么`count`变量可以通过赋值函数保持可访问，而且，它无法通过任何其他方式被引用。
 
 使用闭包从脚本的其他部分隐藏持久变量是一个重要概念。这类似于在其他编程语言中隐藏“私有”变量的方法，它们只能通过“getter”方法访问。
 
 ![image](img/hot.jpg)
 
-所有 JavaScript 对象都从一个 `prototype` 继承属性和方法。标准 JavaScript 对象（如函数）调用内部构造函数通过定义其组件来创建对象。
+所有 JavaScript 对象都从一个`prototype`继承属性和方法。标准 JavaScript 对象（如函数）调用内部构造函数通过定义其组件来创建对象。
 
 ![image](img/hot.jpg)
 
@@ -10844,18 +11550,18 @@ console.log( add.prototype )
 
 ## 总结
 
-- JavaScript 代码可以直接包含在 HTML 文档中，也可以使用 `<script> </script>` 标签从外部文件引入。
+- JavaScript 代码可以直接包含在 HTML 文档中，也可以使用`<script> </script>`标签从外部文件引入。
 - JavaScript 可以在 HTML 元素中的 alert 对话框或浏览器控制台窗口中显示输出。
 - JavaScript 语句可能包含关键字、运算符、值和表达式。
 - JavaScript 解释器忽略制表符和空格。
--- JavaScript 语句可以分组在 `{ }` 大括号函数块中，需要时可以调用执行。
+- JavaScript 语句可以分组在`{ }`大括号函数块中，需要时可以调用执行。
 - 变量和函数名可以由字母、数字和下划线组成，但必须避免关键字。
-- JavaScript 变量可以包含 String、Number、Boolean、Object、Function、Symbol、`null` 和 `undefined` 数据类型。
-- 使用 `let` 关键字声明的变量可以重新赋值新值，但 `const` 关键字不允许此操作。
-- 函数表达式具有分组在 `{ }` 大括号中的语句用于执行，并并返回一个最终的单一值。
-- 函数表达式的 `( )` 括号可以包含用于从调用者传递参数值的参数。
-- 函数块可以包含一个 `return` 语句来指定要传回调用者的数据。
-- JavaScript 的 `( )` 括号运算符调用函数。
+- JavaScript 变量可以包含 String、Number、Boolean、Object、Function、Symbol、`null`和`undefined`数据类型。
+- 使用`let`关键字声明的变量可以重新赋值新值，但`const`关键字不允许此操作。
+- 函数表达式具有分组在`{ }`大括号中的语句用于执行，并并返回一个最终的单一值。
+- 函数表达式的`( )`括号可以包含用于从调用者传递参数值的参数。
+- 函数块可以包含一个`return`语句来指定要传回调用者的数据。
+- JavaScript 的`( )`括号运算符调用函数。
 - 提升（Hoisting）允许函数调用出现在函数声明之前。
 - 匿名函数表达式没有函数名。
 - 词法作用域是变量创建的环境，可以是全局、局部或闭包。
@@ -10863,6 +11569,7 @@ console.log( add.prototype )
 - 闭包是一个嵌套在外部函数内部的函数，它保留了对外部函数中声明变量的访问。
 
 | 16 执行有用操作 | ![image](img/pg337_1.jpg) |
+| --- | --- |
 
 *本章介绍了 JavaScript 运算符，并演示了如何在脚本中使用它们。*
 
@@ -10878,35 +11585,31 @@ console.log( add.prototype )
 
 ### 转换值
 
-在 JavaScript 中执行操作之前，识别你正在处理的值的数据类型非常重要，以避免意外结果。例如，值 42 是一个数字，但值 ‘42’ 是一个字符串，因此尝试对 ‘42’ + 8 进行加法将返回字符串结果 ‘428’，而不是数字 50。幸运的是，JavaScript 提供了多种方法来返回其他数据类型版本的值——而不改变值的原始类型。
+在 JavaScript 中执行操作之前，识别你正在处理的值的数据类型非常重要，以避免意外结果。例如，值 42 是一个数字，但值‘42’是一个字符串，因此尝试对‘42’+ 8 进行加法将返回字符串结果‘428’，而不是数字 50。幸运的是，JavaScript 提供了多种方法来返回其他数据类型版本的值——而不改变值的原始类型。
 
 ![image](img/pg338_1.jpg)
 
 ### 字符串转数字
 
-JavaScript `parseInt( )` 内置函数可以返回括号内指定字符串的整数版本（在数字类型中）。例如，`parseInt( ‘42’ )` 将返回数字 42，因此 42 + 8 将返回数字结果 50。
+JavaScript`parseInt()`内置函数可以返回括号内指定字符串的整数版本（在数字类型中）。例如，`parseInt( ‘42’ )`将返回数字 42，因此 42 + 8 将返回数字结果 50。
 
-同样，JavaScript `parseFloat( )` 内置函数可以返回括号内指定字符串的浮点数版本（在数字类型中）。
+同样，JavaScript`parseFloat()`内置函数可以返回括号内指定字符串的浮点数版本（在数字类型中）。
 
-这两个方法都允许字母字符出现在指定字符串的数字部分并从结果中去除它们——例如，`parseInt( ‘42nd Street’ )` 返回数字 42。
+这两个方法都允许字母字符出现在指定字符串的数字部分并从结果中去除它们——例如，`parseInt( ‘42nd Street’ )`返回数字 42。
 
-如果这两个函数任一无法在指定字符串开头找到数值，结果将是 NaN —— 一个表示“不是数字”的 JavaScript 属性。你也可以通过在 JavaScript `isNaN( )` 内置函数的括号内指定值来检查该值是否不是数字。这同样会首先尝试在指定值的开头找到数字，如果找到了数字（即使来自指定字符串）则返回 false，否则如果没有找到则返回 true。
+如果这两个函数任一无法在指定字符串开头找到数值，结果将是 NaN——一个表示“不是数字”的 JavaScript 属性。你也可以通过在 JavaScript`isNaN()`内置函数的括号内指定值来检查该值是否不是数字。这同样会首先尝试在指定值的开头找到数字，如果找到了数字（即使来自指定字符串）则返回 false，否则如果没有找到则返回 true。
 
 ![image](img/hot.jpg)
 
-数据类型的转换被称为“强制转换”（coercion），它可以是显式的也可以是隐式的。当 ‘42’ + 8 返回字符串 ‘428’ 时，这是隐式转换。当 `String( 42 )` 返回字符串 ‘42’ 时，这是显式转换。
+数据类型的转换被称为“强制转换”（coercion），它可以是显式的也可以是隐式的。当‘42’+ 8 返回字符串‘428’时，这是隐式转换。当`String( 42 )`返回字符串‘42’时，这是显式转换。
 
-**数字转字符串**
+### 数字转字符串
 
+JavaScript`String()`方法可以返回括号内指定的数字的字符串表示形式（即字符串数据类型）——例如，`String( 42 )`将将数字‘42’作为字符串数据类型返回。
 
+或者，你也可以在变量名后附加一个`toString()`方法调用，以返回存储的数字数据类型的字符串表示。例如，当给一个名为“num”的变量赋值一个数字时，`num.toString()`将返回该存储数字的字符串版本。
 
-
-
-JavaScript `String()` 方法可以返回括号内指定的数字的字符串表示形式（即字符串数据类型）——例如，`String( 42 )` 将将数字‘42’作为字符串数据类型返回。
-
-或者，你也可以在变量名后附加一个 `toString()` 方法调用，以返回存储的数字数据类型的字符串表示。例如，当给一个名为“num”的变量赋值一个数字时，`num.toString()` 将返回该存储数字的字符串版本。
-
-![image](img/1r.jpg)创建一个带有自执行匿名函数块的 HTML 文档，并在其中声明三个变量
+![image](img/1r.jpg)创建一个带有自执行匿名函数块的 HTML 文档，并在其中声明三个变量：
 
 ```javascript
 function ( ) {
@@ -10917,7 +11620,7 @@ function ( ) {
 
 ![image](img/htmlr.jpg)
 
-conversion.html
+`conversion.html`
 
 ![image](img/2r.jpg)接下来，插入创建不同数据类型版本的语句，并在输出字符串中打印结果：
 
@@ -10934,13 +11637,13 @@ console.log( ‘net: ‘ + net + ‘ ‘ + parseInt( net ) )
 console.log( ‘net Not a Number? ‘ + isNaN( net ) )
 ```
 
-![image](img/3r.jpg)保存该 HTML 文档，然后在浏览器中打开它并启动控制台查看不同的版本
+![image](img/3r.jpg)保存该 HTML 文档，然后在浏览器中打开它并启动控制台查看不同的版本。
 
 ![image](img/pg339_1.jpg)
 
 ![image](img/forget.jpg)
 
-如果你在字符串添加‘$’前缀之前尝试 `isNan( net )`，结果为 `false` —— 因为该方法在‘25’字符串的开头找到了数字。
+如果你在字符串添加‘$’前缀之前尝试`isNan( net )`，结果为`false`——因为该方法在‘25’字符串的开头找到了数字。
 
 ## 算术运算
 
@@ -10959,11 +11662,11 @@ JavaScript 中常用的算术运算符列在下表，并包含了它们执行的
 | – – | 递减 |
 | ****** | 幂 |
 
-语句中指定的数值被称为“操作数”。例如，在语句 `5 + 2` 中，`+` 运算符提供了五和二作为操作数值。请注意，`+` 运算符会根据操作数的类型执行两种不同的操作。数字操作数被相加以返回总和，而字符串操作数被拼接以返回单个连接后的字符串。
+语句中指定的数值被称为“操作数”。例如，在语句`5 + 2`中，`+`运算符提供了五和二作为操作数值。请注意，`+`运算符会根据操作数的类型执行两种不同的操作。数字操作数被相加以返回总和，而字符串操作数被拼接以返回单个连接后的字符串。
 
-% 取模运算符将第一个操作数除以第二个操作数并返回余数。除以二将返回一或零，从而有用地判断第一个操作数是奇数还是偶数。
+`%`取模运算符将第一个操作数除以第二个操作数并返回余数。除以二将返回一或零，从而有用地判断第一个操作数是奇数还是偶数。
 
-`++` 递增运算符和 `--` 递减运算符将单个操作数的值改变一并返回新值。这些运算符最常用于计算循环次数，可以通过两种不同的方式使用产生细微不同的效果。当放在操作数之前（前置）时，其值在表达式求值之前立即改变；但当放在操作数之后（后置）时，先求值表达式，然后改变值。
+`++`递增运算符和`--`递减运算符将单个操作数的值改变一并返回新值。这些运算符最常用于计算循环次数，可以通过两种不同的方式使用产生细微不同的效果。当放在操作数之前（前置）时，其值在表达式求值之前立即改变；但当放在操作数之后（后置）时，先求值表达式，然后改变值。
 
 ![image](img/hot.jpg)
 
@@ -10973,7 +11676,7 @@ JavaScript 中常用的算术运算符列在下表，并包含了它们执行的
 
 使用取模运算符判断奇偶数的示例可以在此处。
 
-![image](img/1r.jpg)创建一个带有自执行匿名函数块的 HTML 文档
+![image](img/1r.jpg)创建一个带有自执行匿名函数块的 HTML 文档：
 
 ```javascript
 function ( ) {
@@ -10983,7 +11686,7 @@ function ( ) {
 
 ![image](img/htmlr.jpg)
 
-arithmetic.html
+`arithmetic.html`
 
 ![image](img/2r.jpg)接下来，插入使用每个算术运算符为变量赋值的语句，并在输出字符串中打印每个结果：
 
@@ -10997,35 +11700,35 @@ let inc = ++sum ; console.log( ‘Increment: ‘ + inc )
 let dec = --sum ; console.log( ‘Decrement: ‘ + dec )
 ```
 
-![image](img/3r.jpg)保存该 HTML 文档，然后在浏览器中打开它并启动控制台查看算术结果
+![image](img/3r.jpg)保存该 HTML 文档，然后在浏览器中打开它并启动控制台查看算术结果。
 
 ![image](img/pg341_1.jpg)
 
 ## 赋值
 
-JavaScript 中常用于赋值的运算符都列在下表。除了简单的 `=` 赋值运算符外，所有运算符都是较长表达式的简写形式，因此为了清晰起见，也给出了等效形式。
+JavaScript 中常用于赋值的运算符都列在下表。除了简单的`=`赋值运算符外，所有运算符都是较长表达式的简写形式，因此为了清晰起见，也给出了等效形式。
 
 ![image](img/pg342_1.jpg)
 
 | 运算符 | 示例 | 等效形式 |
 | :--- | :--- | :--- |
-| = | a = b | a = b |
-| += | a += b | a = a + b |
-| -= | a -= b | a = a - b |
-| *= | a *= b | a = a * b |
-| /= | a /= b | a = a / b |
-| %= | a %= b | a = a % b |
-| ** | a **= b | a = a ** b |
+| = | `a = b` | `a = b` |
+| += | `a += b` | `a = a + b` |
+| -= | `a -= b` | `a = a - b` |
+| *= | `a *= b` | `a = a * b` |
+| /= | `a /= b` | `a = a / b` |
+| %= | `a %= b` | `a = a % b` |
+| ** | `a **= b` | `a = a ** b` |
 
-将 `=` 运算符视为“赋值”而不是“等于”，以避免与 `===` 相等运算符混淆。
+将`=`运算符视为“赋值”而不是“等于”，以避免与`===`相等运算符混淆。
 
-`+=` 运算符最适用于追加字符串。例如，通过 `str = ‘JavaScript’` 和 `str += ‘ Fun’，变量现在存储了‘JavaScript Fun’。
+`+=`运算符最适用于追加字符串。例如，通过`str = ‘JavaScript’`和`str += ‘ Fun’`，变量现在存储了‘JavaScript Fun’。
 
-所有其他赋值运算符的作用都类似于 `+=` 运算符。它们对操作数执行算术运算，然后将结果赋值给第一个变量。
+所有其他赋值运算符的作用都类似于`+=`运算符。它们对操作数执行算术运算，然后将结果赋值给第一个变量。
 
-从数值上说，表格中的 `+=`示例会将 a 中的值加上 b 中的值，然后将总和赋值给新的 a。
+从数值上说，表格中的`+=`示例会将 a 中的值加上 b 中的值，然后将总和赋值给新的 a。
 
-![image](img/1r.jpg)创建一个带有拼接两个字符串的自执行匿名函数的 HTML 文档
+![image](img/1r.jpg)创建一个带有拼接两个字符串的自执行匿名函数的 HTML 文档：
 
 ```javascript
 function ( ) {
@@ -11037,7 +11740,7 @@ function ( ) {
 
 ![image](img/htmlr.jpg)
 
-assignment.html
+`assignment.html`
 
 ![image](img/2r.jpg)接下来，插入使用组合运算符执行算术并赋值结果结果的语句：
 
@@ -11054,29 +11757,25 @@ sum = 8 ; sum %= 4
 console.log( ‘Modulus & assign integer: ‘ + sum )
 ```
 
-`===` 相等运算符比较值，可以在此处找到详细解释。
+`===`相等运算符比较值，可以在此处找到详细解释。
 
-
-
-
-
-`===` 等等运算符比较两个操作数，如果它们完全相等，则返回布尔值 `true`，否则返回布尔值 `false`。如果操作数是相同的数字，则它们是相等的；如果操作数是包含相同位置上相同字符的字符串，它们是相等的；如果操作数是都是 `true` 或都是 `false` 的布尔值，它们是相等的。相反，`!==` 不等于运算符在两个操作数不相等时返回 `true`，其使用的规则与 `===` 等等运算符相同。
+`===`等等运算符比较两个操作数，如果它们完全相等，则返回布尔值`true`，否则返回布尔值`false`。如果操作数是相同的数字，则它们是相等的；如果操作数是包含相同位置上相同字符的字符串，它们是相等的；如果操作数是都是`true`或都是`false`的布尔值，它们是相等的。相反，`!==`不等于运算符在两个操作数不相等时返回`true`，其使用的规则与`===`等等运算符相同。
 
 等等和不等于运算符在比较两个值以执行“条件分支”时非常有用，脚本将根据结果按照特定的方向运行。
 
-`>` 大于运算符比较两个操作数，如果第一个操作数的值大于第二个，则返回 `true`。`<` 小于运算符进行相同的比较，但当第一个操作数的值小于第二个时返回 `true`。在 `>` 大于运算符或 `<` 小于运算符后添加 `=` 字符，可以让它们在两个操作数相等时也返回 `true`。
+`>`大于运算符比较两个操作数，如果第一个操作数的值大于第二个，则返回`true`。`<`小于运算符进行相同的比较，但当第一个操作数的值小于第二个时返回`true`。在`>`大于运算符或`<`小于运算符后添加`=`字符，可以让它们在两个操作数相等时也返回`true`。
 
-`>` 大于和 `<` 小于运算符经常用于循环结构中测试计数器变量的值。
+`>`大于和`<`小于运算符经常用于循环结构中测试计数器变量的值。
 
 ![image](img/hot.jpg)
 
-在循环结构中使用 `<` 小于运算符的示例可以参考这里。
+在循环结构中使用`<`小于运算符的示例可以参考这里。
 
 ![image](img/snake.jpg)
 
-也有一个 `==` 等等运算符和一个 `!=` 不等于运算符，但这些可能会产生意料之外的结果，因为与 `===` 和 `!==` 不同，它们不能确保所比较的值具有相同的数据类型。这意味着 `25 == ‘25’` 返回 `true`，而 `25 === ‘25’` 返回 `false`。请务始终使用三个字符的版本，以确保你的脚本能够进行准确的比较。
+也有一个`==`等等运算符和一个`!=`不等于运算符，但这些可能会产生意料之外的结果，因为与`===`和`!==`不同，它们不能确保所比较的值具有相同的数据类型。这意味着`25 == ‘25’`返回`true`，而`25 === ‘25’`返回`false`。请务始终使用三个字符的版本，以确保你的脚本能够进行准确的比较。
 
-![image](img/1r.jpg)创建一个带有自执行匿名函数的 HTML 文档，在该函数中声明三个变量
+![image](img/1r.jpg)创建一个带有自执行匿名函数的 HTML 文档，在该函数中声明三个变量：
 
 ```javascript
 function () {
@@ -11089,7 +11788,9 @@ function () {
 
 `comparison.html`
 
-![image](img/2r.jpg)接下来，插入使用比较运算符来分配布尔结果以便输出的语句
+![image](img/2r.jpg)接下来，插入使用比较运算符来分配布尔结果以便输出的语句。
+
+
 
 ```javascript
 comparison = str === ‘JAVASCRIPT’
@@ -11106,7 +11807,7 @@ comparison = sum <= 8
 console.log( ‘Less Than or Equal To? ‘ + comparison )
 ```
 
-![image](img/3r.jpg)保存 HTML 文档，然后在浏览器中打开它并启动控制台以查看分配的结果
+![image](img/3r.jpg)保存 HTML 文档，然后在浏览器中打开它并启动控制台以查看分配的结果。
 
 ![image](img/pg345_1.jpg)
 
@@ -11138,7 +11839,7 @@ JavaScript 中可以使用的三个逻辑运算符列在表所示：
 
 “布尔”（Boolean）一词指的是英国数学家乔治·布尔（1815-1864）开发的一种逻辑思维系统。
 
-![image](img/1r.jpg)创建一个带有自执行匿名函数的 HTML 文档，在该函数中声明三个变量
+![image](img/1r.jpg)创建一个带有自执行匿名函数的 HTML 文档，在该函数中声明三个变量：
 
 ```javascript
 function () {
@@ -11151,7 +11852,7 @@ function () {
 
 `logic.html`
 
-![image](img/2r.jpg)接下来，插入使用逻辑运算符来分配布尔结果以便输出的语句
+![image](img/2r.jpg)接下来，插入使用逻辑运算符来分配布尔结果以便输出的语句：
 
 ```javascript
 result = yes && yes
@@ -11167,7 +11868,7 @@ yes = !yes
 console.log( ‘Toggled value: ‘ + yes )
 ```
 
-![image](img/3r.jpg)保存 HTML 文档，然后在浏览器中打开它并启动控制台以查看的结果
+![image](img/3r.jpg)保存 HTML 文档，然后在浏览器中打开它并启动控制台以查看的结果。
 
 ### 检查条件
 
@@ -11183,7 +11884,7 @@ JavaScript 作者最喜欢的运算符可能是 `?:` 条件运算符。该运算
 
 `flag === true ? doThis() : doThat()`
 
-在这个示例中，`===` 等等运算符和 `true` 关键字实际上是多余的，因为评估表达式布尔值的运算符会自动执行这种评估，因此该示例可以更简单地表述为
+在这个示例中，`===` 等等运算符和 `true` 关键字实际上是多余的，因为评估表达式布尔值的运算符会自动执行这种评估，因此该示例可以更简单地表述为：
 
 `flag ? doThis() : doThat()`
 
@@ -11199,14 +11900,11 @@ JavaScript 作者最喜欢的运算符可能是 `?:` 条件运算符。该运算
 
 三元运算符有三个操作数——`?` 之前的以及 `:` 冒号两侧的。
 
-
-
-
-
-# ternary.html
+## `ternary.html`
 
 ![image](img/2r.jpg)
-接下来，插入语句以根据数量使用适当语法输出字符串
+
+接下来，插入语句以根据数量使用适当语法输出字符串：
 
 ```javascript
 let verb = ( numOne !== 1 ) ? ‘ are ‘ : ‘ is ‘
@@ -11214,7 +11912,8 @@ console.log( ‘There’ + verb + numOne )
 ```
 
 ![image](img/3r.jpg)
-现在，插入语句以正确描述两个变量值奇偶性的字符串
+
+现在，插入语句以正确描述两个变量值奇偶性的字符串：
 
 ```javascript
 let parity = ( numOne % 2 !== 0 ) ? ‘Odd’ : ‘Even’
@@ -11224,7 +11923,8 @@ console.log( numTwo + ‘ is ‘ + parity )
 ```
 
 ![image](img/4r.jpg)
-最后，插入语句以输出报告两个变量值中较大者的字符串
+
+最后，插入语句以输出报告两个变量值中较大者的字符串：
 
 ```javascript
 let max = ( numOne > numTwo ) ? numOne : numTwo
@@ -11232,7 +11932,8 @@ console.log( max + ‘ is the Greater Number’ )
 ```
 
 ![image](img/5r.jpg)
-保存 HTML 文档，然后在浏览器中打开它并启动控制台查看字符串描述
+
+保存 HTML 文档，然后在浏览器中打开它并启动控制台查看字符串描述。
 
 ![image](img/pg349_1.jpg)
 
@@ -11255,13 +11956,13 @@ JavaScript “位”运算符将其操作数视为 32 位的序列，其中每�
 
 | 运算符 | 名称 | 二进制数操作： |
 | :--- | :--- | :--- |
-| \| | 或 (OR) | 如果在两个比较的位中有一个为 1，则每个位返回 1。示例：`1010 \| 0101 = 1111` |
-| & | 与 (AND) | 如果两个比较的位都为 1，则每个位返回 1。 示例：`1010 & 1100 = 1000` |
-| ~ | 非 (NOT) | 位不为 1 时每个位返回 1，在位为 1 时返回 0。示例：`~ 1010 = 0101` |
-| ^ | 异或 (XOR) | 如果两个比较的位中只有一个为 1，则每个位返回 1。示例：`1010 ^ 0100 = 1110` |
-| << | 左移 | 从右侧推入零，将每个位向左移动指定的位数。示例：`0010<< 2 = 1000` |
-| >> | 有符号右移 | 从左侧推入最左侧位的副本，将每个位向右移动指定的位数。示例：`1000 >> 2 = 0010` |
-| >>> | 右移 | 从左侧推入零，将每个位向右移动指定的位数。示例：`1000 >> 2 = 0010` |
+| `\|` | 或 (OR) | 如果在两个比较的位中有一个为 1，则每个位返回 1。示例：`1010 \| 0101 = 1111` |
+| `&` | 与 (AND) | 如果两个比较的位都为 1，则每个位返回 1。示例：`1010 & 1100 = 1000` |
+| `~` | 非 (NOT) | 位不为 1 时每个位返回 1，在位为 1 时返回 0。示例：`~ 1010 = 0101` |
+| `^` | 异或 (XOR) | 如果两个比较的位中只有一个为 1，则每个位返回 1。示例：`1010 ^ 0100 = 1110` |
+| `<<` | 左移 | 从右侧推入零，将每个位向左移动指定的位数。示例：`0010 << 2 = 1000` |
+| `>>` | 有符号右移 | 从左侧推入最左侧位的副本，将每个位向右移动指定的位数。示例：`1000 >> 2 = 0010` |
+| `>>>` | 右移 | 从左侧推入零，将每个位向右移动指定的位数。示例：`1000 >> 2 = 0010` |
 
 ![image](img/forget.jpg)
 
@@ -11272,7 +11973,8 @@ JavaScript “位”运算符将其操作数视为 32 位的序列，其中每�
 一个“字节”有 8 位，一个字节的每个半部分被称为“半字节”（nibble，即 4 位）。此表示例中的二进制数描述了存储在半字节中的值。
 
 ![image](img/1r.jpg)
-创建一个带有自执行匿名函数的 HTML 文档，该函数声明两个变量
+
+创建一个带有自执行匿名函数的 HTML 文档，该函数声明两个变量：
 
 ```javascript
 function ( ) {
@@ -11283,10 +11985,11 @@ function ( ) {
 
 ![image](img/htmlr.jpg)
 
-# bitwise.html
+`bitwise.html`
 
 ![image](img/2r.jpg)
-接下来，插入语句以输出确认每个变量中存储初始值的字符串
+
+接下来，插入语句以输出确认每个变量中存储初始值的字符串：
 
 ```javascript
 console.log( ‘numOne:‘ + numOne )
@@ -11294,7 +11997,8 @@ console.log( ‘numTwo: ‘ + numTwo )
 ```
 
 ![image](img/3r.jpg)
-现在，插入语句使用位运算交换每个变量中存储的值
+
+现在，插入语句使用位运算交换每个变量中存储的值：
 
 ```javascript
 numOne = numOne ^ numTwo
@@ -11306,7 +12010,8 @@ numOne = numOne ^ numTwo
 ```
 
 ![image](img/4r.jpg)
-最后，插入语句以输出报告两个变量值中较大者的字符串
+
+最后，插入语句以输出报告两个变量值中较大者的字符串：
 
 ```javascript
 console.log( ‘numOne:‘ + numOne )
@@ -11314,16 +12019,18 @@ console.log( ‘numTwo: ‘ + numTwo )
 ```
 
 ![image](img/5r.jpg)
-保存 HTML 文档，然后在浏览器中打开它并启动控制台查看字符串描述
+
+保存 HTML 文档，然后在浏览器中打开它并启动控制台查看字符串描述。
 
 ![image](img/hot.jpg)
 
 三元运算符可以返回任何数据类型的值——字符串、数字、布尔值等。
 
-## precedence.html
+## `precedence.html`
 
 ![image](img/1r.jpg)
-创建一个声明两个变量自执行匿名函数 HTML 文档
+
+创建一个声明两个变量自执行匿名函数 HTML 文档：
 
 ```javascript
 function ( ) {
@@ -11336,19 +12043,21 @@ function ( ) {
 
 ![image](img/htmlr.jpg)
 
-# precedence.html
+## `precedence.html`
 
 ![image](img/2r.jpg)
-保存 HTML 文档，然后在浏览器中打开它并启动控制台查看结果
+
+保存 HTML 文档，然后在浏览器中打开它并启动控制台查看结果。
 
 ![image](img/pg351.jpg)
 
 三元运算符可以返回任何数据类型的值——字符串、数字、布尔值等。
 
-## precedence.html
+## `precedence.html`
 
 ![image](img/3r.jpg)
-通过对表达式进行分组来强制顺序，以便加法先执行，因为 ( ) 运算符具有最高优先级。
+
+通过对表达式进行分组来强制顺序，以便加法先执行，因为 `( )` 运算符具有最高优先级。
 
 ```javascript
 let sum = ( 9 + 12 ) / 3 // 除法优先级高于加法。
@@ -11356,7 +12065,8 @@ console.log( ‘分组和:‘ + sum )
 ```
 
 ![image](img/4r.jpg)
-再次保存 HTML 文档，然后刷新浏览器查看新结果
+
+再次保存 HTML 文档，然后刷新浏览器查看新结果。
 
 ![image](img/pg353_2.jpg)
 
@@ -11368,41 +12078,34 @@ JavaScript 运算符具有不同的优先级。下表从高到低列出了每种
 
 | 运算符 | 操作 |
 | :--- | :--- |
-| ( ) | 表达式分组 |
-| . | 对象成员 |
-| [ ] | 数组成员 |
-| ( ) | 函数调用 |
-| ++ -- | 后置递增、后置递减 |
-| ++ -- | 前置递增、前置递减 |
-| ! ~ | 逻辑非、位非 |
-| ** | 幂 |
-| * / % | 乘法、除法、取模 |
-| + – | 加法、减法 |
-| << >>> | 位移 |
-| <= > | 比较 |
-| === != | 等等、不不等 |
-| & | 位与 |
-| ^ | 位异异 |
-| \| | 位或 |
-| && | 逻辑与 |
-| || | 逻辑或 |
-| ?: | 三元条件 |
-| = += *= %= &= ^= ^= \|= << >>= >>>= | 赋值 |
-| , | 逗号 |
+| `( )` | 表达式分组 |
+| `.` | 对象成员 |
+| `[ ]` | 数组成员 |
+| `( )` | 函数调用 |
+| `++ --` | 后置递增、后置递减 |
+| `++ --` | 前置递增、前置递减 |
+| `! ~` | 逻辑非、位非 |
+| `**` | 幂 |
+| `* / %` | 乘法、除法、取模 |
+| `+ –` | 加法、减法 |
+| `<< >>>` | 位移 |
+| `<= >` | 比较 |
+| `=== !=` | 等等、不不等 |
+| `&` | 位与 |
+| `^` | 位异异 |
+| `\|` | 位或 |
+| `&&` | 逻辑与 |
+| `\|\|` | 逻辑或 |
+| `?:` | 三元条件 |
+| `= += *= %= &= ^= ^= \|= << >>= >>>=` | 赋值 |
+| `,` | 逗号 |
 
 **Summary**
 
-• parseInt( ) 和 parseFloat( ) 可以将字符串转换为数字，但 String( ) 和 toString( ) 可以将数字转换为字符串。
-
-• isNaN( ) 函数测试参数的 NaN 值。
-
-• 算术运算符执行常规算术，加上 % 取模、++ 递增、-- 递减。
-
-当 ++ 递增或 -- 递减运算符位于操作数之前时，其值会立即更改，但当它们位于操作数之后时，会先求表达式的值。
-
-
-
-
+- `parseInt( )` 和 `parseFloat( )` 可以将字符串转换为数字，但 `String( )` 和 `toString( )` 可以将数字转换为字符串。
+- `isNaN( )` 函数测试参数的 `NaN` 值。
+- 算术运算符执行常规算术，加上 `%` 取模、`++` 递增、`--` 递减。
+- 当 `++` 递增或 `--` 递减运算符位于操作数之前时，其值会立即更改，但当它们位于操作数之后时，会先求表达式的值。
 - `=` 运算符可以与算术运算符结合，执行算术运算后赋值其结果。
 - `+=` 运算符用于向现有字符串追加内容。
 - 两个操作数可以进行 `===` 相等、`!==` 不等、`>` 大于值或 `<` 小于值的比较。
@@ -11414,7 +12117,9 @@ JavaScript 运算符具有不同的优先级。下表从高到低列出了每种
 - JavaScript 运算符具有不同的优先级，以确定语句被求值的顺序。
 - 可以通过在 `( )` 括号内对表达式进行分组来强制执行优先级值顺序。
 
-| 17 管理脚本流 | ![image](img/pg337_1.jpg) |
+## 17 管理脚本流
+
+![image](img/pg337_1.jpg)
 
 *本章描述了 JavaScript 控制结构，并演示了它们如何控制脚本的进度。*
 
@@ -11466,17 +12171,17 @@ if ( temperature > tolerable )
 
 
 
-使用 `if else` 语句进行条件分支脚本流对于测试少数条件是可以的，但当有大量条件需要测试时，它会变得难以难以。。在这种情况下，使用 `switch` 语句而不是 `if else` 语句通常更高效、更优雅。
+使用`if else`语句进行条件分支脚本流对于测试少数条件是可以的，但当有大量条件需要测试时，它会变得难以管理。在这种情况下，使用`switch`语句而不是`if else`语句通常更高效、更优雅。
 
 ![image](img/pg360_1.jpg)
 
-`switch` 语句的工作方式很独特——它首先评估指定的表达式，然后为结果值寻找匹配。如果找到匹配，`switch` 语句将执行与该值关联的一个或多个语句；否则，它将执行指定为“默认语句”的一个或多个语句。
+`switch`语句的工作方式很独特——它首先评估指定的表达式，然后为结果值寻找匹配。如果找到匹配，`switch`语句将执行与该值关联的一个或多个语句；否则，它将执行指定为“默认语句”的一个或多个语句。
 
-`switch` 语句首先在 `switch` 关键字后的括号内包含要评估的表达式。随后是一对 `{ }` 大括号，其中包含可能的匹配项。每个匹配值后跟着 `case` 关键字，并使用冒号 `:`字符将一个或多个要执行的语句关联起来。重要的是，每个 `case` 必须以 `break` 语句结束，以便在执行关联语句后退出 `switch` 语句。
+`switch`语句首先在`switch`关键字后的括号内包含要评估的表达式。随后是一对`{ }`大括号，其中包含可能的匹配项。每个匹配值后跟着`case`关键字，并使用冒号`:`字符将一个或多个要执行的语句关联起来。重要的是，每个`case`必须以`break`语句结束，以便在执行关联语句后退出`switch`语句。
 
-可选地，`switch` 语句可以包含一个最后的 `default` 备选项，当所有指定的 `case` 值都不匹配表达式评估的结果时，与之关联一个或多个要执行的语句。
+可选地，`switch`语句可以包含一个最后的`default`备选项，当所有指定的`case`值都不匹配表达式评估的结果时，与之关联一个或多个要执行的语句。
 
-因此，`switch` 语句的语法如下：
+因此，`switch`语句的语法如下：
 
 ```
 switch ( expression ) 
@@ -11488,11 +12193,11 @@ default : 未找到匹配项时要执行的语句
 }
 ```
 
-`switch` 语句块中可以包含的 `case` 值数量没有限制，因此这是匹配几十、数百甚至数千个不同值中的任何一个值的理想方式。
+`switch`语句块中可以包含的`case`值数量没有限制，因此这是匹配几十、数百甚至数千个不同值中的任何一个值的理想方式。
 
 ![image](img/snake.jpg)
 
-省略 `break` 语句允许脚本也执行与后续不匹配的 `case` 值关联的语句。
+省略`break`语句允许脚本也执行与后续不匹配的`case`值关联的语句。
 
 ![image](img/1g.jpg)创建一个 HTML 文档，其中包含一个自执行函数，并首先声明一个变量
 
@@ -11502,7 +12207,7 @@ default : 未找到匹配项时要执行的语句
 
 switch.html
 
-![image](img/2g.jpg)接下来，插入一个 `switch` 语句，在评估表达式后为变量赋值
+![image](img/2g.jpg)接下来，插入一个`switch`语句，在评估表达式后为变量赋值
 
 ```
 switch( 5 - 2 )
@@ -11516,7 +12221,7 @@ default : day = ‘Weekend’
 }
 ```
 
-![image](img/3g.jpg)现在，插入一个语句输出由找到匹配的 case 语句所赋值的值
+![image](img/3g.jpg)现在，插入一个语句输出由找到匹配的`case`语句所赋值的值
 
 `console.log( ‘It is ‘ + day )`
 
@@ -11526,11 +12231,11 @@ default : day = ‘Weekend’
 
 ![image](img/forget.jpg)
 
-作为可能的 case 匹配的字符串值必须像所有其他字符串值一样被包含在引号内。
+作为可能的`case`匹配的字符串值必须像所有其他字符串值一样被包含在引号内。
 
 ### For 循环
 
-循环是一种只要指定条件为真就重复代码块的结构。JavaScript 中最常用的循环是 `for` 循环，其语法如下：
+循环是一种只要指定条件为真就重复代码块的结构。JavaScript 中最常用的循环是`for`循环，其语法如下：
 
 ```
 for ( 初始化语句 ; 条件 ; 修改语句 ) {
@@ -11539,20 +12244,22 @@ for ( 初始化语句 ; 条件 ; 修改语句 ) {
 ```
 
 - **初始化语句**：在循环开始之前初始化变量的语句。
+
 - **条件**：在每次迭代之前评估的表达式。如果为真，循环继续；如果为假，循环结束。
+
 - **修改语句**：在每次迭代后执行的语句，通常用于更新计数器。
 
-例如，执行 100 次的 `for` 循环：
+例如，执行 100 次的`for`循环：
 
 ```
-forfor (let i = 0; i < 100; i++) {
+for (let i = 0; i < 100; i++) {
   // 要执行的语句
 }
 ```
 
 ### While 循环
 
-当所需的迭代未知时使用 `while` 循环结构。`while` 循环的语法如下：
+当所需的迭代未知时使用`while`循环结构。`while`循环的语法如下：
 
 ```
 while ( 条件 )
@@ -11563,7 +12270,7 @@ while ( 条件 )
 
 - **条件**：在每次迭代之前评估的表达式。如果为真，执行大括号内的语句。如果为假，循环结束。
 
-通过使用计数器变量作为条件并在每次迭代中增加其值，可以使 `while` 循环执行特定次数的迭代，就像 `for` 循环一样：
+通过使用计数器变量作为条件并在每次迭代中增加其值，可以使`while`循环执行特定次数的迭代，就像`for`循环一样：
 
 ```
 let i = 0;
@@ -11573,25 +12280,23 @@ while (i < 100) {
 }
 ```
 
-
-
-
 ```javascript
 console.log( ‘Countdown Number: ‘ + i )
 i--
 }
 ```
+
 ![image](img/3g.jpg)保存 HTML 文档，然后在浏览器中打开它并启动控制台以查看循环迭代
 
 ![image](img/pg365_1.jpg)
 
 ![image](img/hot.jpg)
 
-每个 `while` 循环必须带有大括号，因为它们包含两个语句——一个要执行的语句和一个修改器。
+每个`while`循环必须带有大括号，因为它们包含两个语句——一个要执行的语句和一个修改器。
 
 ### Do 循环
 
-JavaScript 中提供的另一种循环类型是 `do while` 循环结构。这就像是 `while` 循环的倒置版本，详情可以在此处查阅。当每次迭代中执行的语句必须至少执行一次时，它是理想的选择。它的语法如下：
+JavaScript 中提供的另一种循环类型是`do while`循环结构。这就像是`while`循环的倒置版本，详情可以在此处查阅。当每次迭代中执行的语句必须至少执行一次时，它是理想的选择。它的语法如下：
 
 ```javascript
 do
@@ -11604,11 +12309,11 @@ while ( condition )
 
 ![image](img/pg366_1.jpg)
 
-`while` 关键字后面的括号包含一个条件，该条件在每次迭代后都会评估为一个布尔值。每次迭代要执行的语句被封装在大括号内，并与一个修改测试条件中值的语句放在一起，这样在某个时刻其评估结果将返回 false，循环就会退出。只要评估结果为 true，语句就会在循环的每次迭代中执行。
+`while`关键字后面的括号包含一个条件，该条件在每次迭代后都会评估为一个布尔值。每次迭代要执行的语句被封装在大括号内，并与一个修改测试条件中值的语句放在一起，这样在某个时刻其评估结果将返回 false，循环就会退出。只要评估结果为 true，语句就会在循环的每次迭代中执行。
 
-如果条件评估在第一次迭代时为 false，循环将立即退出，因此其大括号内的语句已执行了一次。`do while` 循环有时被称为“后测试”循环，因为测试条件是在语句执行后才评估的。
+如果条件评估在第一次迭代时为 false，循环将立即退出，因此其大括号内的语句已执行了一次。`do while`循环有时被称为“后测试”循环，因为测试条件是在语句执行后才评估的。
 
-通过使用计数器变量作为测试条件并在每次迭代中增加其值，可以让 `do while` 循环执行特定次数的迭代，类似于 `for` 循环。例如，执行 100 次一组语句的 `do while` 循环结构可能如下：
+通过使用计数器变量作为测试条件并在每次迭代中增加其值，可以让`do while`循环执行特定次数的迭代，类似于`for`循环。例如，执行 100 次一组语句的`do while`循环结构可能如下：
 
 ```javascript
 let i = 0
@@ -11624,7 +12329,7 @@ while ( i < 100 )
 
 ![image](img/hot.jpg)
 
-只有在语句必须至少执行一次时，才使用 `do while` 循环。
+只有在语句必须至少执行一次时，才使用`do while`循环。
 
 ![image](img/1g.jpg)创建一个 HTML 文档，其自执行函数从初始化一个循环计数器变量开始
 
@@ -11636,7 +12341,7 @@ let i = 2
 
 do.html
 
-![image](img/2g.jpg)接下来，插入一个 `do while` 循环结构，它将进行迭代并在每次迭代输出循环计数器的值，直到其超过 1000
+![image](img/2g.jpg)接下来，插入一个`do while`循环结构，它将进行迭代并在每次迭代输出循环计数器的值，直到其超过 1000
 
 ```javascript
 do
@@ -11657,15 +12362,15 @@ while( i < 1000 )
 
 ### 跳出（Break Out）
 
- JavaScript `break` 关键字可以在遇到指定条件时退出循环。条件测试应该出现在所有其他要执行的语句之前，以便循环能够立即结束。
+JavaScript `break`关键字可以在遇到指定条件时退出循环。条件测试应该出现在所有其他要执行的语句之前，以便循环能够立即结束。
 
 ![image](img/pg368_1.jpg)
 
-当嵌套在外部循环的循环中使用 `break` 语句时，流将在外部循环迭代中恢复。
+当嵌套在外部循环的循环中使用`break`语句时，流将在外部循环迭代中恢复。
 
- JavaScript `continue` 关键字可以在遇到指定条件时跳过循环的单次迭代。
+JavaScript `continue`关键字可以在遇到指定条件时跳过循环的单次迭代。
 
-当嵌套在外部循环的循环中使用 `continue` 语句时，流将在内部循环的下一次迭代继续。
+当嵌套在外部循环的循环中使用`continue`语句时，流将在内部循环的下一次迭代继续。
 
 ![image](img/1g.jpg)创建一个 HTML 文档，其自执行函数从初始化两个循环计数器变量开始
 
@@ -11678,7 +12383,7 @@ let j = 0
 
 break.html
 
-![image](img/2g.jpg)接下来，插入一个包含内部嵌套 `for` 循环的 `for` 循环
+![image](img/2g.jpg)接下来，插入一个包含内部嵌套`for`循环的`for`循环
 
 ```javascript
 for ( i = 1 ; i < 3 ; i++ )
@@ -11694,7 +12399,7 @@ for ( i = 1 ; i < 3 ; i++ )
 
 ![image](img/hot.jpg)
 
-`\t` 转义序列在这里用于在输出中包含制表符。
+`\t`转义序列在这里用于在输出中包含制表符。
 
 ![image](img/3g.jpg)保存 HTML 文档，然后在浏览器中打开它并启动控制台以查看外部循环的两次迭代和内部循环的三次迭代
 
@@ -11727,7 +12432,7 @@ let day = 32
 
 catch.html
 
-![image](img/2g.jpg)接下来，插入一个 `try` 块来识别无效值
+![image](img/2g.jpg)接下来，插入一个`try`块来识别无效值
 
 ```javascript
 try
@@ -11743,7 +12448,7 @@ try
 }
 ```
 
-![image](img/3g.jpg)现在，为 `try` 块附加一个 `catch` 块以处理无效值
+![image](img/3g.jpg)现在，为`try`块附加一个`catch`块以处理无效值
 
 ```javascript
 catch( err )
@@ -11759,7 +12464,7 @@ catch( err )
 }
 ```
 
-![image](img/4g.jpg)然后，为 catch 块附加一个 `finally` 块以输出最终消息
+![image](img/4g.jpg)然后，为`catch`块附加一个`finally`块以输出最终消息
 
 ```javascript
 finally
@@ -11780,46 +12485,70 @@ finally
 
 总结
 
-•基础条件测试使用 `if` 关键字执行，以测试布尔真值或假值。
+- 基础条件测试使用`if`关键字执行，以测试布尔真值或假值。
 
+- 可以通过`else`关键字扩展`if`语句来提供基本条件测试的备选分支。
 
+- 可以`switch`语句对大量条件进行布尔真值或假值的测试。
 
+- 在`switch`块中，每个`case`语句必须以`break`关键字结束，以便在找到匹配项时退出。
 
+- `switch`块可以包含一个最终的`default`语句，以便在未找到任何匹配项时执行。
 
-- 可以通过 `else` 关键字扩展 `if` 语句来提供基本条件测试的备选分支。
-- 可以 `switch` 语句对大量条件进行布尔真值或假值的测试。
-- 在 `switch` 块中，每个 `case` 语句必须以 `break` 关键字结束，以便在找到匹配项时退出。
-- `switch` 块可以包含一个最终的 `default` 语句，以便在未找到任何匹配项时执行。
-- `for` 循环必须指定一个初始化器、一个用于测试布尔真或假值的条件以及一个修饰符。
+- `for`循环必须指定一个初始化器、一个用于测试布尔真或假值的条件以及一个修饰符。
+
 - 循环修饰符必须使被测试的条件在某个时刻变为假值，以便退出循环。
-- `while` 循环和 `for` 循环在执行任何语句之前会评估测试条件。
-- `do while` 循环在执行语句之后评估测试条件。
-- 当遇到特定条件时可以使用 `break` 关键字退出循环。
-- 当遇到特定条件时可以使用 `continue` 关键字跳过循环的单次。
-- `try catch` 结构可以处理脚本中发生的异常错误。
-- 每个错误对象都可以有一个 `name` 属性和一个 `message` 属性，允许 `catch` 块描述其性质。
-- 可以 `throw` 关键字将字符串传递给 `catch` 块以识别错误。
-- `try catch` 结构后面可以跟一个 `finally` 块，其中包含在处理异常后执行的语句。
+
+- `while`循环和`for`循环在执行任何语句之前会评估测试条件。
+
+- `do while`循环在执行语句之后评估测试条件。
+
+- 当遇到特定条件时可以使用`break`关键字退出循环。
+
+- 当遇到特定条件时可以使用`continue`关键字跳过循环的单次。
+
+- `try catch`结构可以处理脚本中发生的异常错误。
+
+- 每个错误对象都可以有一个`name`属性和一个`message`属性，允许`catch`块描述其性质。
+
+- 可以`throw`关键字将字符串传递给`catch`块以识别错误。
+
+- `try catch`结构后面可以跟一个`finally`块，其中包含在处理异常后执行的语句。
 
 | 18 使用 Script 对象 | ![image](img/pg337_1.jpg) |
 
 *本章节介绍了如何创建脚本对象，并演示了如何使用内置的 JavaScript 对象。*
 
 - 自定义对象
+
 - 扩展对象
+
 - 内置对象
+
 - 创建数组
+
 - 循环元素
+
 - 切片数组
+
 - 排序元素
+
 - 获取日期
+
 - 提取日历
+
 - 提取时间
+
 - 设置日期
+
 - 匹配模式
+
 - 理解 JSON
+
 - 创建 Promise
+
 - 获取数据
+
 - 总结
 
 ## 自定义对象
@@ -11829,15 +12558,16 @@ finally
 现实世界的对象无处不在，它们每个都有我们可以描述的属性和行为：
 
 - 属性描述对象拥有的特征。
+
 - 行为描述对象可以执行的操作。
 
 例如，一辆汽车可以用“品牌”和“型号”属性，以及“加速”和“刹车”行为来描述。
 
 ![image](img/pg374_2.jpg)
 
-这些特征可以用 JavaScript 中的一个自定义汽车对象来表示，该对象包含品牌和型号的可变属性，以及 `accelerate()` 和 `brake()` 方法。
+这些特征可以用 JavaScript 中的一个自定义汽车对象来表示，该对象包含品牌和型号的可变属性，以及`accelerate()`和`brake()`方法。
 
-值通过在 `{}` 大括号内用逗号分隔的 `name:value` 对赋值给对象，如下所示：
+值通过在`{}`大括号内用逗号分隔的`name:value`对赋值给对象，如下所示：
 
 ```javascript
 let car = { make: ‘Jeep’, model: ‘Wrangler’,
@@ -11846,15 +12576,15 @@ let car = { make: ‘Jeep’, model: ‘Wrangler’,
 }
 ```
 
-你可以通过两种方式引用对象的属性值——使用 `objectName.propertyName` 的点符号语法，或使用 `objectName['propertyName']` 语法。
+你可以通过两种方式引用对象的属性值——使用`objectName.propertyName`的点符号语法，或使用`objectName['propertyName']`语法。
 
-可以使用点符号语法 `objectName.methodName()` 调用对象方法。
+可以使用点符号语法`objectName.methodName()`调用对象方法。
 
-`this` 关键字可以在对象方法定义中使用，引用“拥有”该方法的对象。在上面的示例中，指的是 `car` 对象，因此 `this.model` 引用 `car.model` 属性，而 `this.make` 引用 `car.make` 属性。
+`this`关键字可以在对象方法定义中使用，引用“拥有”该方法的对象。在上面的示例中，指的是`car`对象，因此`this.model`引用`car.model`属性，而`this.make`引用`car.make`属性。
 
 ![image](img/hot.jpg)
 
-在对象的 `name:value` 列表中，空格会被忽略，但不要忘记在对之间加上一个逗号。
+在对象的`name:value`列表中，空格会被忽略，但不要忘记在对之间加上一个逗号。
 
 ![image](img/1p.jpg) 创建一个带有自执行函数的 HTML 文档，该函数从声明一个包含对象定义的变量开始：
 
@@ -11884,7 +12614,7 @@ brake: function () {
   return this.make + ‘ pulls up’ }
 ```
 
-![image](img/4p.jpg) 那么，在变量声明的结束括号 `}` 之后，添加一条语句输出对象属性值的字符串
+![image](img/4p.jpg) 那么，在变量声明的结束括号`}`之后，添加一条语句输出对象属性值的字符串
 
 ```javascript
 console.log( ‘Car is a ‘ + car.make + ‘ ‘ + car['model'] )
@@ -11901,17 +12631,19 @@ console.log( car.brake() )
 
 ![image](img/pg375_1.jpg) 
 
-`break` 关键字可以在遇到特定条件时退出循环。
+`break`关键字可以在遇到特定条件时退出循环。
 
-`continue` 关键字可以在遇到特定条件时跳过循环的单次迭代。
+`continue`关键字可以在遇到特定条件时跳过循环的单次迭代。
 
 ## 扩展对象
 
 ![image](img/pg376_1.jpg)
 
-![image](img/forget)) 自定义对象非常灵活，可以通过赋值新值随时进行扩展，使用点符号引用 `objectName.propertyName`。
 
-特殊的 `for in` 循环可以使用此语法列出对象的所有属性名：
+
+![image](img/forget)) 自定义对象非常灵活，可以通过赋值新值随时进行扩展，使用点符号引用`objectName.propertyName`。
+
+特殊的`for in`循环可以使用此语法列出对象的所有属性名：
 
 ```javascript
 for (property in car) {
@@ -11919,20 +12651,20 @@ for (property in car) {
 }
 ```
 
-![image](img/1p.jpg) 为了在每次迭代中引用属性的值，需要将属性名放在方括号内。
+![image](img/1p.jpg)为了在每次迭代中引用属性的值，需要将属性名放在方括号内。
 
 ![image](img/pg376_2.jpg)
 
-![image](img/forget)) 示例中的 `property` 变量实际上可以赋予任何有效名称。
+![image](img/forget)) 示例中的`property`变量实际上可以赋予任何有效名称。
 
-![image](img/4p.jpg) 接下来，添加语句为两个现有对象属性赋值赋值
+![image](img/4p.jpg)接下来，添加语句为两个现有对象属性赋值赋值：
 
 ```javascript
 car.make = ‘Ford’
 car.model = ‘Bronco’
 ```
 
-![image](img/5p.jpg) 现在，添加语句为对象扩展一个额外的属性和额外的方法
+![image](img/5p.jpg)现在，添加语句为对象扩展一个额外的属性和额外的方法：
 
 ```javascript
 car.engine = ‘V6’
@@ -11940,16 +12672,16 @@ car.start = function () {
   return this.make + ‘ motor is running’ }
 ```
 
-![image](img/6p.jpg) 那么，添加语句输出包含对象属性值的字符串——使用引用引用技术
+![image](img/6p.jpg)那么，添加语句输出包含对象属性值的字符串——使用引用引用技术：
 
 ```javascript
 console.log( ‘\nCar is a ‘ + car.make + ‘ ‘ + car['model'] )
 console.log( ‘Engine Type: ‘ + car.engine )
 ```
 
-![image](img/hot.jpg) `\n` 转义序列在此语句中用于在输出中包含换行（行间符）。
+![image](img/hot.jpg)`\n`转义序列在此语句中用于在输出中包含换行（行间符）。
 
-![image](img/7p.jpg) 最后，添加语句调用每个对象方法
+![image](img/7p.jpg)最后，添加语句调用每个对象方法：
 
 ```javascript
 console.log( car.start() )
@@ -11957,35 +12689,33 @@ console.log( car.accelerate() )
 console.log( car.brake() )
 ```
 
-![image](img/8p.jpg) 再次保存 HTML 文档，然后刷新浏览器查看扩展后的对象的属性值和方法返回的字符串。
+![image](img/8p.jpg)再次保存 HTML 文档，然后刷新浏览器查看扩展后的对象的属性值和方法返回的字符串。
 
+| 对象 | 描述 |
+| :--- | :--- |
+| `String` | 仅当使用`new`关键字创建时为对象 |
+| `Number` | 仅当使用`new`关键字创建时为对象 |
+| `Boolean` | 仅当使用`new`关键字创建时为对象 |
+| `Object` | 由你定义的对象 |
+| `Date` | 一个包含日期和时间部分的对象 |
+| `Array` | 一个存储索引化数据的对象 |
+| `RegExp` | 一个描述正则表达式模式的对象 |
+| `Math` | 一个提供数学属性和方法的对象 |
+| `Error` | 一个提供错误详情的对象 |
 
+JavaScript 提供了上表列出的预内置对象。在这些对象中，除了`Math`之外，每个对象都有一个同名的构造方法，可以使用`new`关键字来创建该类型的对象——例如，通过`let now = new Date()`创建一个新的新的`Date`对象。
 
+然而，不建议你对`Error`和`Date`以外的任何对象类型使用`new`关键字和构造方法。JavaScript 可以根据赋值的值智能地识别出应该创建什么类型的对象，除非该值是字符串、数字或布尔值。这些各被视为“原始”字面量，没有属性或方法，因此`typeof`语句对这些值返回`string`、`number`、`boolean`——而不是`object`。
 
+所有的 JavaScript 内置对象都从顶层的`Object.prototype`对象继承属性和方法。例如，这为低级对象（如`Date.prototype`）提供了一个`toLocaleString()`方法，因此你可以向`Date`对象附加该方法的调用，以获取一个本地化格式的日期字符串。
 
-| `String` (仅当使用 `new` 关键字创建时为对象) |
-| `Number` (仅当使用 `new` 关键字创建时为对象) |
-| `Boolean` (仅当使用 `new` 关键字创建时为对象) |
-| `Object` – 由你定义的对象 |
-| `Date` – 一个包含日期和时间部分的对象 |
-| `Array` – 一个存储索引化数据的对象 |
-| `RegExp` – 一个描述正则表达式模式的对象 |
-| `Math` – 一个提供数学属性和方法的对象 |
-| `Error` – 一个提供错误详情的对象 |
-
-JavaScript 提供了上表列出的预内置对象。在这些对象中，除了 `Math` 之外，每个对象都有一个同名的构造方法，可以使用 `new` 关键字来创建该类型的对象——例如，通过 `let now = new Date()` 创建一个新的新的 `Date` 对象。
-
-然而，不建议你对 `Error` 和 `Date` 以外的任何对象类型使用 `new` 关键字和构造方法。JavaScript 可以根据赋值的值智能地识别出应该创建什么类型的对象，除非该值是字符串、数字或布尔值。这些各被视为“原始”字面量，没有属性或方法，因此 `typeof` 语句对这些值返回 `string`、`number`、`boolean`——而不是 `object`。
-
-所有的 JavaScript 内置对象都从顶层的 `Object.prototype` 对象继承属性和方法。例如，这为低级对象（如 `Date.prototype`）提供了一个 `toLocaleString()` 方法，因此你可以向 `Date` 对象附加该方法的调用，以获取一个本地化格式的日期字符串。
-
-你也可以在原始字符串、数字和布尔字面值上调用继承的方法，因为 JavaScript 会自动从等效对象调用该方法。这意味着你可以向数字字面值附加 `toLocaleString()` 方法调用，以获取本地化格式的数字字符串。
+你也可以在原始字符串、数字和布尔字面值上调用继承的方法，因为 JavaScript 会自动从等效对象调用该方法。这意味着你可以向数字字面值附加`toLocaleString()`方法调用，以获取本地化格式的数字字符串。
 
 ![image](img/hot.jpg)
 
-如果你是从头开始读这本书，你应该已经对 `String`、`Number`、`Boolean`、`Error` 和 `Object` 对象了于熟悉。`Array` 对象在此处介绍，`Date` 对象在此处介绍，`RegExp` 对象在此处介绍，而 `Math` 对象在此处介绍。
+如果你是从头开始读这本书，你应该已经对`String`、`Number`、`Boolean`、`Error`和`Object`对象了于熟悉。`Array`对象在此处介绍，`Date`对象在此处介绍，`RegExp`对象在此处介绍，而`Math`对象在此处介绍。
 
-![image](img/1p.jpg)创建一个带有自执行函数的 HTML 文档，该函数比开始将原始字面值赋值给三个变量
+![image](img/1p.jpg)创建一个带有自执行函数的 HTML 文档，该函数比开始将原始字面值赋值给三个变量：
 
 ```javascript
 let jsString = ‘Text’ // 而不是 new String( ‘Text’ ).
@@ -11995,9 +12725,9 @@ let jsBoolean = true // 而不是 new Boolean( true ).
 
 ![image](img/htmlp.jpg)
 
-builtin.html
+`builtin.html`
 
-![image](img/2p.jpg)接下来，赋值值以创建每个类型的对象
+![image](img/2p.jpg)接下来，赋值值以创建每个类型的对象：
 
 ```javascript
 let jsObject = { firstName: ‘Mike’, lastName: ‘McGrath’ }
@@ -12008,31 +12738,31 @@ let jsMath = Math
 let jsError = new Error( ‘Error!’ )
 ```
 
-![image](img/3p.jpg)现在，插入语句输出 Date 对象的内容和本地化格式的日期字符串
+![image](img/3p.jpg)现在，插入语句输出 Date 对象的内容和本地化格式的日期字符串：
 
 ```javascript
 console.log( ‘Date Object: ‘ + jsDate )
 console.log( ‘Locale Date String: ‘ + jsDate.toLocaleString() )
 ```
 
-![image](img/4p.jpg)然后，插入语句输出原始字面数字值和本地化格式的数字字符串
+![image](img/4p.jpg)然后，插入语句输出原始字面数字值和本地化格式的数字字符串：
 
 ```javascript
 console.log( ‘\nPrimitive Number: ‘ + jsNumber )
 console.log( ‘Locale Number String: ‘ + jsNumber.toLocaleString() )
 ```
 
-![image](img/5p.jpg)保存 HTML 文档，然后在浏览器中打开它并启动控制台查看输出字符串
+![image](img/5p.jpg)保存 HTML 文档，然后在浏览器中打开它并启动控制台查看输出字符串。
 
 ![image](img/pg379_1.jpg)
 
 ![image](img/forget.jpg)
 
-`Math` 对象是唯一不提供构造方法的 JavaScript 对象。
+`Math`对象是唯一不提供构造方法的 JavaScript 对象。
 
 ## 创建数组
 
-`Array` 对象是一个 JavaScript 内置对象，可以将多个项目（各种数据类型）存储在单个“元素”中。数组通过给变量赋值 `[]` 方括号来创建，该括号可以包含一个用逗号分隔的值列表以初始化数组元素。它的语法如下：
+`Array`对象是一个 JavaScript 内置对象，可以将多个项目（各种数据类型）存储在单个“元素”中。数组通过给变量赋值`[]`方括号来创建，该括号可以包含一个用逗号分隔的值列表以初始化数组元素。它的语法如下：
 
 ![image](img/pg380_1.jpg)
 
@@ -12042,7 +12772,7 @@ let arrayName = [ value1 , value2 , value3 ]
 
 与自定义对象（每个属性都有名称）不同，数组元素会自动编号——从零开始。因此第一个元素是 0，第二个是 1，第三个是 2，以此此类推。这种编号系统通常被称为“零索引”。
 
-存储在数组元素中的值可以通过在对象名称后的方括号中包含元素索引数字来引用。例如，`colors[0]` 将引用名为 `colors` 的数组中第一个元素的值。
+存储在数组元素中的值可以通过在对象名称后的方括号中包含元素索引数字来引用。例如，`colors[0]`将引用名为`colors`的数组中第一个元素的值。
 
 如果数组元素不需要立即初始化，可以创建一个数组并在稍后对其元素赋值，如下所示：
 
@@ -12052,17 +12782,17 @@ colors[0] = ‘Red’
 colors[1] = ‘Green’
 ```
 
-虽然 `Array` 提供了构造方法，但不应使用它来指定整数参数——创建一个空数组，如下所示：
+虽然`Array`提供了构造方法，但不应使用它来指定整数参数——创建一个空数组，如下所示：
 
 ```javascript
 let jsArray = new Array(10)
 ```
 
-你可能会预期 `jsArray[0]` 引用 10，但实际上返回的是 `undefined`。这是什么情况？这种异常只发生在你向构造方法指定单个整数时——创建一个空数组。
+你可能会预期`jsArray[0]`引用 10，但实际上返回的是`undefined`。这是什么情况？这种异常只发生在你向构造方法指定单个整数时——创建一个空数组。
 
 所有内置对象名称都以大写字母开头——所以构造函数名为“Array”，而不是“array”。
 
-![image](img/1p.jpg)创建一个带有自执行函数的 HTML 文档，该函数比创建一个数组——错误的方法
+![image](img/1p.jpg)创建一个带有自执行函数的 HTML 文档，该函数比创建一个数组——错误的方法：
 
 ```javascript
 let jsArray = new Array(10)
@@ -12070,22 +12800,22 @@ let jsArray = new Array(10)
 
 ![image](img/htmlp.jpg)
 
-array.html
+`array.html`
 
-![image](img/2p.jpg)接下来，添加语句输出第一个元素的值并列出整个数组
+![image](img/2p.jpg)接下来，添加语句输出第一个元素的值并列出整个数组：
 
 ```javascript
 console.log( jsArray[0])
 console.log( jsArray)
 ```
 
-![image](img/3p.jpg)现在，添加一个语句声明变量，并初始化为数组的变量
+![image](img/3p.jpg)现在，添加一个语句声明变量，并初始化为数组的变量：
 
 ```javascript
 let month, summer = [ ‘June‘, ‘July‘, ‘August’ ]
 ```
 
-![image](img/4p.jpg)然后，添加一个循环输出每个数组元素的索引数和值
+![image](img/4p.jpg)然后，添加一个循环输出每个数组元素的索引数和值：
 
 ```javascript
 for ( month in summer )
@@ -12097,7 +12827,7 @@ for ( month in summer )
 }
 ```
 
-![image](img/5p.jpg)最后添加语句输出第一个元素的值并列出整个数组
+![image](img/5p.jpg)最后添加语句输出第一个元素的值并列出整个数组：
 
 ```javascript
 console.log( ‘Start of Summer: ‘ + summer[0] )
@@ -12110,27 +12840,23 @@ console.log( summer )
 
 同样，可以使用循环快速读取每个数组元素中的值，并在循环的每次迭代中对该值执行适当的操作。
 
-有用的是，每个数组都有 `length` 属性，包含该数组元素总数的整数记录。由于零索引的结果，该值总是比最后一个元素的索引数大一，因此可以很容易地用于条件测试以终止循环。
+有用的是，每个数组都有`length`属性，包含该数组元素总数的整数记录。由于零索引的结果，该值总是比最后一个元素的索引数大一，因此可以很容易地用于条件测试以终止循环。
 
-
-
-
-
-![image](img/1p.jpg)创建一个 HTML 文档，其中包含一个自执行函数，该函数首先声明三个变量
+![image](img/1p.jpg)创建一个 HTML 文档，其中包含一个自执行函数，该函数首先声明三个变量：
 
 `let i, result, boolArray = [ ]`
 
 ![image](img/htmlp.jpg)
 
-elements.html
+`elements.html`
 
-![image](img/2p.jpg)接下来，输出一个简单的标题
+![image](img/2p.jpg)接下来，输出一个简单的标题：
 
 `console.log( ‘Fill Elements...’ )`
 
-![image](img/3p.jpg)现在，添加一个循环来填充 10 个布尔值元素，并输出它们的索引号和每个存储的值
+![image](img/3p.jpg)现在，添加一个循环来填充 10 个布尔值元素，并输出它们的索引号和每个存储的值：
 
-```
+```javascript
 for( i = 1 ; i < 11 ; i++ )
 {
   boolArray[ i ] = ( i % 2 === 0 ) ? true : false
@@ -12138,14 +12864,15 @@ for( i = 1 ; i < 11 ; i++ )
 }
 ```
 
-![image](img/4p.jpg)然后，输出第二个简单的标题并初始化一个为空字符串值的变量
+![image](img/4p.jpg)然后，输出第二个简单的标题并初始化一个为空字符串值的变量：
 
 `console.log( ‘Read Elements...’ )`
+
 `result = ‘’`
 
-![image](img/5p.jpg)接下来，添加一个循环，将任何包含 true 元素的索引号赋值给字符串
+![image](img/5p.jpg)接下来，添加一个循环，将任何包含 true 元素的索引号赋值给字符串：
 
-```
+```javascript
 for( i = 1 ; i < boolArray.length ; i++ )
 {
   if( boolArray[ i ] ) { result += i + ‘ | ‘ }
@@ -12154,118 +12881,120 @@ for( i = 1 ; i < boolArray.length ; i++ )
 
 ![image](img/hot.jpg)
 
-这里的数组 `length` 属性值为 11，因为数组有十一个元素——尽管零索引元素尚未填充。
+这里的数组`length`属性值为 11，因为数组有十一个元素——尽管零索引元素尚未填充。
 
-![image](img/6p.jpg)现在，输出字符串以显示包含 true 值的元素的索引号
+![image](img/6p.jpg)现在，输出字符串以显示包含 true 值的元素的索引号：
 
 `console.log( ‘True in Elements: ‘ + result )`
 
-![image](img/7p.jpg)将字符串变量重置为包含一个空字符串
+![image](img/7p.jpg)将字符串变量重置为包含一个空字符串：
 
 `result = ‘‘`
 
-![image](img/8p.jpg)然后，添加一个循环，将任何包含 false 值的元素的索引号赋值给字符串
+![image](img/8p.jpg)然后，添加一个循环，将任何包含 false 值的元素的索引号赋值给字符串：
 
-```
+```javascript
 for( i = 1 ; i < boolArray.length ; i++ )
 {
   if( !boolArray[ i ] ) { result += i + ‘ | ‘ }
 }
 ```
 
-![image](img/9p.jpg)最后，输出字符串以显示包含 false 值的元素的索引号
+![image](img/9p.jpg)最后，输出字符串以显示包含 false 值的元素的索引号：
 
 `console.log( ‘False in Elements: ‘ + result )`
 
-![image](img/10p.jpg)保存 HTML 文档，然后在浏览器中打开它并启动控制台来写入和读取数组元素
+![image](img/10p.jpg)保存 HTML 文档，然后在浏览器中打开它并启动控制台来写入和读取数组元素。
 
 ![image](img/pg383_1.jpg)
 
 ![image](img/forget.jpg)
 
-布尔值的条件测试不需要包含表达式 `=== true`，因为这是自动完成的。
+布尔值的条件测试不需要包含表达式`=== true`，因为这是自动完成的。
 
 # 切片数组
 
-JavaScript 对象具有属性和方法。除了 `length` 属性外，每个数组对象都有可以用于操作数组元素的方法。这些方法列在下表中，并附有它们所执行任务的简要描述：
+JavaScript 对象具有属性和方法。除了`length`属性外，每个数组对象都有可以用于操作数组元素的方法。这些方法列在下表中，并附有它们所执行任务的简要描述：
 
 ![image](img/pg384_1.jpg)
 
 | 方法 | 描述 |
 | :--- | :--- |
-| `join( *separator* )` | 将所有元素值合并为一个字符串，并用指定的分隔符隔开；如果没有指定分隔符，则使用逗号 |
-| `pop( )` | 删除数组的最后一个元素并返回其值 |
-| `push( *value , value* )` | 在数组末尾添加元素并返回新的长度 |
-| `reverse( )` | 反转数组中所有元素的顺序并返回每个元素重排序后的值 |
-| `shift( )` | 删除数组的第一个元素并返回其值 |
-| `slice( *begin , end* )` | 返回指定索引位置之间的元素；如果没有指定结束位置，则返回到数组末尾 |
-| `sort( )` | 将数组中的所有元素按字母或数字顺序排序，并返回每个元素重排序后的值 |
-| `splice( *position , number, value, value* )` | 从指定的索引位置开始替换指定数量的元素值，并返回被替换的值 |
-| `unshift( *value , value* )` | 在数组开头添加元素并返回新的长度 |
+| `join(separator)` | 将所有元素值合并为一个字符串，并用指定的分隔符隔开；如果没有指定分隔符，则使用逗号 |
+| `pop()` | 删除数组的最后一个元素并返回其值 |
+| `push(value, value)` | 在数组末尾添加元素并返回新的长度 |
+| `reverse()` | 反转数组中所有元素的顺序并返回每个元素重排序后的值 |
+| `shift()` | 删除数组的第一个元素并返回其值 |
+| `slice(begin, end)` | 返回指定索引位置之间的元素；如果没有指定结束位置，则返回到数组末尾 |
+| `sort()` | 将数组中的所有元素按字母或数字顺序排序，并返回每个元素重排序后的值 |
+| `splice(position, number, value, value)` | 从指定的索引位置开始替换指定数量的元素值，并返回被替换的值 |
+| `unshift(value, value)` | 在数组开头添加元素并返回新的长度 |
 
-当 `push( )` 或 `unshift()` 方法未指定任何值时，将向数组添加一个单一空元素。可以指定一个逗号分隔的值列表传递给 `push()`、`unshift()` 和 `splice()` 方法以更改多个元素。
+当`push()`或`unshift()`方法未指定任何值时，将向数组添加一个单一空元素。可以指定一个逗号分隔的值列表传递给`push()`、`unshift()`和`splice()`方法以更改多个元素。
 
 ![image](img/hot.jpg)
 
-`join( )` 方法在将大量元素值合并为单个字符串时更快，但 `+` 拼接运算符在合并少数元素值时更快。
+`join()`方法在将大量元素值合并为单个字符串时更快，但`+`拼接运算符在合并少数元素值时更快。
 
 ![image](img/snake.jpg)
 
-`slice( )` 方法返回直至但不包含可选的结束索引位置的元素值。
+`slice()`方法返回直至但不包含可选的结束索引位置的元素值。
 
-![image](img/1p.jpg)创建一个 HTML 文档，其中包含一个自执行函数，该函数首先创建一个数组
+![image](img/1p.jpg)创建一个 HTML 文档，其中包含一个自执行函数，该函数首先创建一个数组：
 
 `let seasons = [ ‘Spring’, ‘Summer’, ‘Fall’, ‘Winter’ ]`
+
 `console.log( ‘Elements: ‘ + seasons )`
 
 ![image](img/htmlp.jpg)
 
-slice.html
+`slice.html`
 
-![image](img/2p.jpg)接下来，输出修改后的元素列表
+![image](img/2p.jpg)接下来，输出修改后的元素列表：
 
 `console.log( ‘Joined: ‘ + seasons.join( ‘ & ‘ ) )`
 
-![image](img/3p.jpg)现在，从数组中提取最后一个元素
+![image](img/3p.jpg)现在，从数组中提取最后一个元素：
 
 `console.log( ‘Popped: ‘ + seasons.pop( )`
 
-![image](img/4p.jpg)然后，将最后一个元素放回数组
+![image](img/4p.jpg)然后，将最后一个元素放回数组：
 
 `console.log( ‘Pushed: ‘ + seasons.push( ‘Winter’ )`
 
-![image](img/5p.jpg)接下来，仅输出两个元素
+![image](img/5p.jpg)接下来，仅输出两个元素：
 
 `console.log( ‘Sliced: ‘ + seasons.slice( 1, 3 ) )`
 
-![image](img/6p.jpg)最后，替换第三个元素的值
+![image](img/6p.jpg)最后，替换第三个元素的值：
 
 `console.log( ‘Spliced: ‘ + seasons.splice( 2, 1, ‘Autumn’ ) )`
 
-![image](img/7p.jpg)保存 HTML 文档，然后在浏览器中打开它并启动控制台查看被操作的元素
+![image](img/7p.jpg)保存 HTML 文档，然后在浏览器中打开它并启动控制台查看被操作的元素。
 
 ![image](img/pg385_1.jpg)
 
 ![image](img/hot.jpg)
 
-使用不替换值的 `slice( )` 方法可以删除指定位置指定数量的元素，它将重新编号后续的所有元素。
+使用不替换值的`slice()`方法可以删除指定位置指定数量的元素，它将重新编号后续的所有元素。
 
 ![image](img/forget.jpg)
 
-`shift( )` 和 `unshift()` 方法类似于 `pop( )` 和 `push( )`，但作用于第一个元素而不是最后一个。`reverse( )` 和 `sort( )` 方法将在下面的示例中使用](#chapter18.xhtml_sec190)。
+`shift()`和`unshift()`方法类似于`pop()`和`push()`，但作用于第一个元素而不是最后一个。`reverse()`和`sort()`方法将在下面的示例中使用](#chapter18.xhtml_sec190)。
 
 # 排序元素
 
-通常需要使用数组 `sort( )` 方法按特定顺序排列数组的元素值。这可以选择地指定一个比较函数参数来定义排序顺序。
+通常需要使用数组`sort()`方法按特定顺序排列数组的元素值。这可以选择地指定一个比较函数参数来定义排序顺序。
 
 ![image](img/pg386_1.jpg)
 
-当未指定比较函数时，`sort( )` 方法默认将将所有元素值转换为字符串，然后按字典顺序进行词法排序——比较每个第一个字符，然后是第二个字符，依此类推。当元素包含仅在大小上不同的匹配字符串时，大写字母较多的字符串获得较低的索引位置——出现在大写字母较少的字符串之前。
 
 
+当未指定比较函数时，`sort()` 方法默认将所有元素值转换为字符串，然后按字典顺序进行词法排序——比较每个第一个字符，然后是第二个字符，依此类推。当元素包含仅在大小上不同的匹配字符串时，大写字母较多的字符串获得较低的索引位置——出现在大写字母较少的字符串之前。
 
+由 `sort()` 方法指定的比较函数将连续接收的一对元素值以进行比较，并且它必须返回一个整数值来表示每次比较的结果。当第一个值大于第二个值时，它应该返回一个大于零的值，表示第一个值应该被排序到较高的索引位置——即出现在第二个值之后。相反，比较函数应该返回小于零的值，表示第一个值应该被排序到较低的索引位置——即出现在第二个值之前。当两个值相同时，应返回零，表示元素的位置应保持不变。
 
-由 `sort()` 方法指定的比较函数将连续接收的一对对元素值以进行比较，并且它必须返回一个整数值来表示每次比较的结果。当第一个值大于第二个值时，它应该返回一个大于零的值，表示第一个值应该被排序到较高的索引位置——即出现在第二个值之后。相反，比较函数应该返回小于零的值，表示第一个值应该被排序到较低的索引位置——即出现在第二个值之前。当两个值相同时，应返回零，表示元素的位置应保持不变。当所有比较都完成后，元素将按数值升序排列。如果需要降序排列，则可以使用数组的 `reverse()` 方法来反转元素顺序。
+当所有比较都完成后，元素将按数值升序排列。如果需要降序排列，则可以使用数组的 `reverse()` 方法来反转元素顺序。
 
 如果比较函数正在比较数值型元素值，它只需要返回第一个传入值减去第二个传入值的结果即可达到所需的效果。
 
@@ -12277,11 +13006,13 @@ slice.html
 
 `sort()` 方法的默认行为等于使用以下语句比较参数 `x` 和 `y` 的比较函数：
 
-```
+```javascript
 if( x > y ) return 1 else if( x < y ) return -1 else return 0
 ```
 
-![image](img/1p.jpg)创建一个带有自执行函数的 HTML 文档，该函数开始创建两个数组
+![image](img/1p.jpg)
+
+创建一个带有自执行函数的 HTML 文档，该函数开始创建两个数组：
 
 ```javascript
 let hues = [ ‘Red’, ‘RED’, ‘red’, ‘Green’, ‘Blue’ ]
@@ -12290,9 +13021,11 @@ let nums = [ 1, 20, 3, 17, 14, 0.5 ]
 
 ![image](img/htmlp.jpg)
 
-sort.html
+`sort.html`
 
-![image](img/2p.jpg)接下来，输出每个数组中的值，并按字典排序顺序输出它们的元素值
+![image](img/2p.jpg)
+
+接下来，输出每个数组中的值，并按字典排序顺序输出它们的元素值：
 
 ```javascript
 console.log( ‘Colors: ‘ + hues )
@@ -12301,19 +13034,25 @@ console.log( ‘\nNumbers: ‘ + nums )
 console.log( ‘Dictionary Sort: ‘ + nums.sort( ) )
 ```
 
-![image](img/3p.jpg)现在，添加一个语句，在调用比较函数后输出排序后的数值
+![image](img/3p.jpg)
+
+现在，添加一个语句，在调用比较函数后输出排序后的数值：
 
 ```javascript
 console.log( ‘Numerical Sort: ‘ + nums.sort( sortNums ) )
 ```
 
-![image](img/4p.jpg)最后，在函数块中添加一个语句，按降序输出数值
+![image](img/4p.jpg)
+
+最后，在函数块中添加一个语句，按降序输出数值：
 
 ```javascript
 console.log( ‘Reversed Sort: ‘ + nums.reverse( ) )
 ```
 
-![image](img/5p.jpg)接下来，在脚本中添加比较函数
+![image](img/5p.jpg)
+
+接下来，在脚本中添加比较函数：
 
 ```javascript
 function sortNums( numOne, numTwo ) {
@@ -12321,7 +13060,9 @@ function sortNums( numOne, numTwo ) {
 }
 ```
 
-![image](img/6p.jpg)保存该 HTML 文档，然后在浏览器中打开它并启动控制台查看排序后的元素
+![image](img/6p.jpg)
+
+保存该 HTML 文档，然后在浏览器中打开它并启动控制台查看排序后的元素。
 
 ![image](img/pg387_1.jpg)
 
@@ -12331,7 +13072,7 @@ function sortNums( numOne, numTwo ) {
 
 ### 获取日期
 
-内置的 JavaScript `Date` 对象提供了表示特定日期、时间和时区的组件。使用 `new` 关键字、`Date()` 对象构造函数和变量名赋值来创建 `Date` 对象的实例。在不向构造函数传递任何参数的情况下，新的 `Date` 对象将根据运行浏览器的计算机的系统时间表示其创建时的日期时间。不考虑系统时间是否准确对应世界标准时间 (UTC) 或格林治标准时间 (GMT)。
+内置的 JavaScript `Date` 对象提供了表示特定日期、时间和时区的组件。使用 `new` 关键字、`Date()` 对象构造函数和变量名赋值来创建 `Date` 对象的实例。在不向构造函数传递任何参数的情况下，新的 `Date` 对象将根据运行浏览器的计算机的系统时间表示其创建时的日期时间。不考虑系统时间是否准确对应世界标准时间（UTC）或格林治标准时间（GMT）。
 
 ![image](img/pg388_1.jpg)
 
@@ -12339,7 +13080,7 @@ function sortNums( numOne, numTwo ) {
 
 可以使用 `toString()` 方法提取 `Date` 对象内部组件的字符串，或使用 `toUTCString()` 方法将其转换为 UTC 时间。
 
-通过检查当前 `Date` 对象的 `getTimezoneOffset()` 方法返回的值，JavaScript 可以确定用户所在的时区（假设系统已正确设置为本地时区）。该方法返回一个整数，表示当前本地时间与 UTC 时间相的分钟数。计算是以分钟而不是小时为单位，因为某些时区的偏移不是一小时的间隔——例如，加拿纽芬兰是 UTC -3:30（夏令时期间为 UTC -2:30）。
+通过检查当前 `Date` 对象的 `getTimezoneOffset()` 方法返回的值，JavaScript 可以确定用户所在的时区（假设系统已正确设置为本地时区）。该方法返回一个整数，表示当前本地时间与 UTC 时间相差的分钟数。计算是以分钟而不是小时为单位，因为某些时区的偏移不是一小时的间隔——例如，加拿大纽芬兰是 UTC -3:30（夏令时期间为 UTC -2:30）。
 
 时区偏移值可用于为美国时区提供本地化定制，但必须在夏令期间通过减去 60（分钟）进行调整。对应的示例调用了 `Date` 对象的 `getMonth()` 和 `getDate()` 方法，如果当前日期未实行夏令时，则调整时区偏移值。
 
@@ -12349,7 +13090,9 @@ function sortNums( numOne, numTwo ) {
 
 通过调用 `Date` 对象的许多方法来获取日期。
 
-![image](img/1p.jpg)创建一个带有自执行函数的 HTML 文档，该函数通过初始化三个变量开始
+![image](img/1p.jpg)
+
+创建一个带有自执行函数的 HTML 文档，该函数通过初始化三个变量开始：
 
 ```javascript
 const now = new Date( )
@@ -12359,9 +13102,11 @@ let dst = 60
 
 ![image](img/htmlp.jpg)
 
-date.html
+`date.html`
 
-![image](img/2p.jpg)接下来，添加语句从 11 月 3 日关闭夏令时
+![image](img/2p.jpg)
+
+接下来，添加语句从 11 月 3 日关闭夏令时：
 
 ```javascript
 if( now.getMonth( ) < 3 ) && ( now.getDate( ) < 10 )
@@ -12370,7 +13115,9 @@ if( now.getMonth( ) > 9 ) && ( now.getDate( ) > 2 )
   { dst = 0 }
 ```
 
-![image](img/3p.jpg)现在，添加一个语句建立时区
+![image](img/3p.jpg)
+
+现在，添加一个语句建立时区：
 
 ```javascript
 switch( offset )
@@ -12383,7 +13130,9 @@ switch( offset )
 }
 ```
 
-![image](img/4p.jpg)最后，添加语句输出日期、时间以及合适的问候语
+![image](img/4p.jpg)
+
+最后，添加语句输出日期、时间以及合适的问候语：
 
 ```javascript
 console.log( ‘System Time: ‘ + now.toString( ) )
@@ -12391,7 +13140,9 @@ console.log( ‘UTC (GMT) Time: ‘ + now.toUTCString( ) )
 console.log( ‘\nWelcome to ‘ + offset + ‘ Visitors’ )
 ```
 
-![image](img/5p.jpg)保存该 HTML 文档，然后在浏览器中打开它并启动控制台查看元素排序
+![image](img/5p.jpg)
+
+保存该 HTML 文档，然后在浏览器中打开它并启动控制台查看元素排序。
 
 ![image](img/pg389_1.jpg)
 
@@ -12399,7 +13150,9 @@ console.log( ‘\nWelcome to ‘ + offset + ‘ Visitors’ )
 
 `getMonth()` 方法返回一个从 0 开始的索引，其中三月位于位置 2——关于此更多信息请见下一个示例此处。
 
-![image](img/hot.jpg)发现时区可以引导浏览器进入进入该时区的页面——例如，为太平洋时区的用户提供一个仅包含加州经销商的页面。但要注意，系统时间可以被用户轻松更改任何时间、日期或时区，因此可能无法报告其实位置。
+![image](img/hot.jpg)
+
+发现时区可以引导浏览器进入该时区的页面——例如，为太平洋时区的用户提供一个仅包含加州经销商的页面。但要注意，系统时间可以被用户轻松更改为任何时间、日期或时区，因此可能无法报告其真实位置。
 
 ### 提取日历
 
@@ -12409,15 +13162,12 @@ JavaScript `Date` 对象提供了独立的方法来提取其年份、月份、�
 
 | 方法 | 返回 |
 | :--- | :--- |
-| `getFullYear()` | 四位数年份 (yyyy) |
-| `getMonth()` | 月份索引数字 (0-11) |
-| `getDate()` | 日期数字 (1-31) |
-| `getDay()` | 星期索引数字 (0-6) |
+| `getFullYear()` | 四位数年份（yyyy） |
+| `getMonth()` | 月份索引数字（0-11） |
+| `getDate()` | 日期数字（1-31） |
+| `getDay()` | 星期索引数字（0-6） |
 
-`Date` 对象的 `getFullYear()` 方法返回四位数的年份，例如 2025，而 `Date` 对象的 `getDate()` 方法返回月份中的几——因此在每月的第一天它返回 1。
-
-
-
+`Date` 对象的 `getFullYear()` 方法返回四位数的年份，例如 2025，而 `Date` 对象的 `getDate()` 方法返回月份中的日期——因此在每月的第一天它返回 1。
 
 由于国际化的原因，`getMonth()` 和 `getDay()` 返回的是索引值，这些值必须通过脚本转换为本地语言的月份和日期名称。月份名称的转换很容易实现：只需创建一个包含所有月份名称的数组（从一月开始），然后使用 `getMonth()` 返回的索引值从数组元素中引用相应的月份。
 
@@ -12425,57 +13175,79 @@ JavaScript `Date` 对象提供了独立的方法来提取其年份、月份、�
 
 随后，可以将这些组件组合成日期字符串，并根据任何区域偏好的日期格式进行排列。
 
-![image](img/1p.jpg)创建一个带有自执行函数的 HTML 文档，该函数从初始化变量开始
+![image](img/1p.jpg)
 
-`const days = [ ‘Sun’, ‘Mon’, ‘Tue’, ‘Wed’, ‘Thu’, ‘Fri’, ‘Sat’ ]`
+创建一个带有自执行函数的 HTML 文档，该函数从初始化变量开始：
 
-`const months = [ ‘Jan’, ‘Feb’, ‘Mar’, ‘Apr’, ‘May’, ‘Jun’, ‘Jul’, ‘Aug’, ‘Sep’, ‘Oct’, ‘Nov’, ‘Dec’ ]`
+```javascript
+const days = [ ‘Sun’, ‘Mon’, ‘Tue’, ‘Wed’, ‘Thu’, ‘Fri’, ‘Sat’ ]
 
-`const now = new Date( )`
+const months = [ ‘Jan’, ‘Feb’, ‘Mar’, ‘Apr’, ‘May’, ‘Jun’, ‘Jul’, ‘Aug’, ‘Sep’, ‘Oct’, ‘Nov’, ‘Dec’ ]
+
+const now = new Date( )
+```
 
 ![image](img/htmlp.jpg)
 
-calendar.html
+`calendar.html`
 
-![image](img/2p.jpg)接下来，添加语句使用 Date 对象的方法来提取单个日期组件
+![image](img/2p.jpg)
 
-`let year = now.getFullYear( )`
+接下来，添加语句使用 `Date` 对象的方法来提取单个日期组件：
 
-`let month = now.getMonth( )`
+```javascript
+let year = now.getFullYear( )
 
-`let dayNumber = now.getDate( )`
+let month = now.getMonth( )
 
-`let dayName = now.getDay( )`
+let dayNumber = now.getDate( )
 
-![image](img/3p.jpg)现在，添加语句将提取的索引值转换为月份名称和日期名称
+let dayName = now.getDay( )
+```
 
-`month = months[ month ]`
+![image](img/3p.jpg)
 
-`dayName = days[ dayName ]`
+现在，添加语句将提取的索引值转换为月份名称和日期名称：
 
-![image](img/4p.jpg)然后，将日期组件拼接成日期字符串——包括美式和英式日期格式
+```javascript
+month = months[ month ]
 
-`let usDate = dayName + ‘, ‘ + month + ‘ ‘ + dayNumber + ‘, ‘ + year`
+dayName = days[ dayName ]
+```
 
-`let ukDate = dayName + ‘, ‘ + dayNumber + ‘ ‘ + month + ‘, ‘ + year`
+![image](img/4p.jpg)
 
-![image](img/5p.jpg)最后，添加语句输出每个日期字符串
+然后，将日期组件拼接成日期字符串——包括美式和英式日期格式：
 
-`console.log( ‘U.S. Date: ‘ + usDate )`
+```javascript
+let usDate = dayName + ‘, ‘ + month + ‘ ‘ + dayNumber + ‘, ‘ + year
 
-`console.log( ‘U.K. Date: ‘ + ukDate )`
+let ukDate = dayName + ‘, ‘ + dayNumber + ‘ ‘ + month + ‘, ‘ + year
+```
 
-![image](img/6p.jpg)保存 HTML 文档，然后在浏览器中打开它并启动控制台查看格式化的日期字符串
+![image](img/5p.jpg)
+
+最后，添加语句输出每个日期字符串：
+
+```javascript
+console.log( ‘U.S. Date: ‘ + usDate )
+
+console.log( ‘U.K. Date: ‘ + ukDate )
+```
+
+![image](img/6p.jpg)
+
+保存 HTML 文档，然后在浏览器中打开它并启动控制台查看格式化的日期字符串。
 
 ![image](img/pg391_1.jpg)
 
 ![image](img/forget.jpg)
 
-月份索引从零 (0) 开始，而不是一 (1)——例如，三月的索引是 [2] 而不是 [3]。
+月份索引从零（0）开始，而不是一（1）——例如，三月的索引是 `[2]` 而不是 `[3]`。
 
 ## 提取时间
 
-JavaScript Date 对象提供了单独的方法来提取其每个时间组件，包括时、分、秒和毫秒：
+JavaScript `Date` 对象提供了单独的方法来提取其每个时间组件，包括时、分、秒和毫秒：
 
 ![image](img/pg392_1.jpg)
 
@@ -12486,7 +13258,7 @@ JavaScript Date 对象提供了单独的方法来提取其每个时间组件，�
 | `getSeconds()` | 秒（数字 0-59） |
 | `getMilliseconds()` | 毫秒（数字 0-999） |
 
-Date 对象的 `getHours()` 方法返回 24 小制的小时——范围为 0-23 的值。`getMinutes()` 和 `getSeconds()` 方法都返回范围在 0-59 的值。还有一个 `getMilliseconds()` 方法用于获得更高的精度，返回范围在 0-999 的值。
+`Date` 对象的 `getHours()` 方法返回 24 小时制的小时——范围为 0-23 的值。`getMinutes()` 和 `getSeconds()` 方法都返回范围在 0-59 的值。还有一个 `getMilliseconds()` 方法用于获得更高的精度，返回范围在 0-999 的值。
 
 每个组件的值可以拼接成时间字符串，但通常最好在单数的分钟和秒值前添加前零以获得更好的可读性。例如，10:05:02 比 10:5:2 更好。
 
@@ -12496,62 +13268,83 @@ Date 对象的 `getHours()` 方法返回 24 小制的小时——范围为 0-23 
 
 ![image](img/snake.jpg)
 
-时间组件基于用户的系统时间——而该时间可能准确。
+时间组件基于用户的系统时间——而该时间可能不准确。
 
-![image](img/1p.jpg)创建一个带有自执行函数的 HTML 文档，该函数从初始化五个变量开始
+![image](img/1p.jpg)
 
-`const now = new Date( )`
+创建一个带有自执行函数的 HTML 文档，该函数从初始化五个变量开始：
 
-`let hour = now.getHours( )`
+```javascript
+const now = new Date( )
 
-`let minute = now.getMinutes( )`
+let hour = now.getHours( )
 
-`let second = now.getSeconds( )`
+let minute = now.getMinutes( )
 
-`let millisecond = now.getMilliseconds( )`
+let second = now.getSeconds( )
+
+let millisecond = now.getMilliseconds( )
+```
 
 ![image](img/htmlp.jpg)
 
-time.html
+`time.html`
 
-![image](img/2p.jpg)接下来，添加语句为小于 10 的分钟和秒值前加零
+![image](img/2p.jpg)
 
-`if( minute < 10 ) { minute = ‘0’ + minute }`
+接下来，添加语句为小于 10 的分钟和秒值前加零：
 
-`if( second < 10 ) { second = ‘0’ + second }`
+```javascript
+if( minute < 10 ) { minute = ‘0’ + minute }
 
-![image](img/3p.jpg)现在，将时间组件拼接成字符串，然后输出该字符串
+if( second < 10 ) { second = ‘0’ + second }
+```
 
-`let time = ‘It is now: ‘ + hour + ‘:’ + minute + ‘:’ +`
-`second + ‘ and ‘ + millisecond + ‘ milliseconds’`
+![image](img/3p.jpg)
 
-`console.log( time )`
+现在，将时间组件拼接成字符串，然后输出该字符串：
 
-![image](img/4p.jpg)然后，以 12 小时制输出时间
+```javascript
+let time = ‘It is now: ‘ + hour + ‘:’ + minute + ‘:’ +
 
-`let suffix = hour >= 12 ? ‘PM’ : ‘AM’`
+second + ‘ and ‘ + millisecond + ‘ milliseconds’
 
-`let displayHour = hour > 12 ? hour - 12 : hour === 12 ? 12 : hour`
+console.log( time )
+```
 
-`console.log( ‘It is now: ‘ + displayHour + ‘:’ + minute + ‘:’ + second + ‘ ’ + suffix )`
+![image](img/4p.jpg)
 
-![image](img/5p.jpg)最后，输出每个日期字符串
+然后，以 12 小时制输出时间：
 
-`let greeting = hour < 12 ? ‘Good Morning’ : hour < 18 ? ‘Good Afternoon’ : ‘Good Evening’`
+```javascript
+let suffix = hour >= 12 ? ‘PM’ : ‘AM’
 
-`console.log( greeting + ‘, ‘ + time )`
+let displayHour = hour > 12 ? hour - 12 : hour === 12 ? 12 : hour
 
-![image](img/6p.jpg)保存 HTML 文档，然后在浏览器中打开它并启动控制台查看格式化的日期字符串
+console.log( ‘It is now: ‘ + displayHour + ‘:’ + minute + ‘:’ + second + ‘ ’ + suffix )
+```
+
+![image](img/5p.jpg)
+
+最后，输出每个日期字符串：
+
+```javascript
+let greeting = hour < 12 ? ‘Good Morning’ : hour < 18 ? ‘Good Afternoon’ : ‘Good Evening’
+
+console.log( greeting + ‘, ‘ + time )
+```
+
+![image](img/6p.jpg)
+
+保存 HTML 文档，然后在浏览器中打开它并启动控制台查看格式化的日期字符串。
 
 ![image](img/pg391_1.jpg)
 
-Date 对象还提供了获取日期和时间组件的方法。
+`Date` 对象还提供了获取日期和时间组件的方法。
 
+![image](img/4p.jpg)
 
-
-
-
-![image](img/4p.jpg)然后，添加语句以本地化字符串、日期字符串和时间字符串格式输出修改后的日期和时间
+然后，添加语句以本地化字符串、日期字符串和时间字符串格式输出修改后的日期和时间：
 
 ```javascript
 console.log( ‘Locale: ‘ + holiday.toLocaleString( ) )
@@ -12559,39 +13352,45 @@ console.log( ‘Date: ‘ + holiday.toDateString( ) )
 console.log( ‘Time: ‘ + holiday.toTimeString( ) )
 ```
 
-![image](img/5p.jpg)保存 HTML 文档，然后在浏览器中打开它并启动控制台查看设置的日期时间字符串
+![image](img/5p.jpg)
+
+保存 HTML 文档，然后在浏览器中打开它并启动控制台查看设置的日期时间字符串。
 
 ![image](img/pg395_1.jpg)
 
 ![image](img/hot.jpg)
 
-`Date` 对象还有一个 `setTime( )` 方法，该方法接受自纪元（epoch）以来的毫秒数作为参数——每天有 `86,400,000` 毫秒，因此 `setTime(86400000)` 将日期设置为 1970 年 1 月 1 日。
+`Date` 对象还有一个 `setTime()` 方法，该方法接受自纪元（epoch）以来的毫秒数作为参数——每天有 `86,400,000` 毫秒，因此 `setTime(86400000)` 将日期设置为 1970 年 1 月 1 日。
 
-## 匹配模式 (Match Patterns)
+## 匹配模式（Match Patterns）
 
-`RegExp` 对象是 JavaScript 的内置对象，可以包含一个“正则表达式”模式 – 用于描述字符串字符。正则表达式对于文本验证以及在文本内进行搜索和替换操作非常有用，通过将指定的模式与文本部分进行匹配来实现。
+`RegExp` 对象是 JavaScript 的内置对象，可以包含一个“正则表达式”模式——用于描述字符串字符。正则表达式对于文本验证以及在文本内进行搜索和替换操作非常有用，通过将指定的模式与文本部分进行匹配来实现。
 
 ![image](img/pg396_1.jpg)
 
-正则表达式模式可能完全由位于 `/ /` 之间的字面字符组成，描述要匹配的字符字符串。例如，正则表达式 `/wind/` 在“windows”中找到匹配项 – 该模式在字面上完全匹配了文本中的字符串。更常见的是，正则表达式模式由字面字符和这些“元字符”组合组成：
+正则表达式模式可能完全由位于 `/ /` 之间的字面字符组成，描述要匹配的字符字符串。例如，正则表达式 `/wind/` 在“windows”中找到匹配项——该模式在字面上完全匹配了文本中的字符串。更常见的是，正则表达式模式由字面字符和这些“元字符”组合组成：
 
 | 元字符 | 匹配项 | 示例 |
 | :--- | :--- | :--- |
 | `.` | 任意字符 | `ja..pt` |
 | `^` | 起始字符 | `^ja` |
+
+
+
 | `$` | 结尾字符 | `....pt$` |
+|---|---|---|
 | `*` | 0 次或多次重复 | `ja*` |
 | `+` | 一次或多次重复 | `ja+` |
 | `?` | 0 次或一次重复 | `ja?` |
 | `{ }` | 多次重复 | `ja{ 3 }` |
 | `[ ]` | 字符类 | `[ a-z ]` |
 | `\` | 任意数字 | `\d` |
-| `\||` | 或可选字符 | `a \| b` |
+| `\|` | 或可选字符 | `a \| b` |
 | `( )` | 表达式分组 | `( ... )` |
 
-模式在最后一个 `/` 字符之后还可以包含 `i` 修饰符以执行忽略大小写的搜索，或者包含 `g` 修饰符对模式的所有匹配项进行全局搜索。
+模式在最后一个`/`字符之后还可以包含`i`修饰符以执行忽略大小写的搜索，或者包含`g`修饰符对模式的所有匹配项进行全局搜索。
 
-`RegExp` 对象有一个 `test( )` 方法，在找到匹配时返回 true，否则返回 false。`RegExp` 对象还有一个 `exec( )` 方法，在未找到匹配时返回 null 值，如果搜索成功则返回找到的文本，以及它的 `index` 属性（包含了匹配开始的字符位置）。
+`RegExp`对象有一个`test()`方法，在找到匹配时返回`true`，否则返回`false`。`RegExp`对象还有一个`exec()`方法，在未找到匹配时返回`null`值，如果搜索成功则返回找到的文本，以及它的`index`属性（包含了匹配开始的字符位置）。
 
 ![image](img/snake.jpg)
 
@@ -12599,7 +13398,7 @@ console.log( ‘Time: ‘ + holiday.toTimeString( ) )
 
 ![image](img/forget.jpg)
 
-字符类 `[a-z]` 仅匹配小写字母，但 `[a-z0-9]` 也匹配数字。
+字符类`[a-z]`仅匹配小写字母，但`[a-z0-9]`也匹配数字。
 
 ![image](img/1p.jpg)创建一个带有自执行函数的 HTML 文档，该函数比开始初始化三个变量
 
@@ -12609,7 +13408,7 @@ const system = ‘Windows’, suite = ‘Office’ pattern = /ice/i
 
 ![image](img/htmlp.jpg)
 
-regexp.html
+`regexp.html`
 
 ![image](img/2p.jpg)接下来，添加语句输出两个搜索结果
 
@@ -12624,7 +13423,7 @@ console.log( ‘In ‘ + suite + ‘? ‘ + pattern.test( suite ) )
 let result = pattern.exec( suite )
 if( result )
 {
-  console.log( ‘Found: ‘ + result + ‘ at ‘ + result.index )
+  console.log( ‘Found: ‘+ result + ‘ at ‘ + result.index )
 }
 else { console.log( ‘No Match Found’ ) }
 ```
@@ -12654,42 +13453,38 @@ console.log( email + ‘ Valid? ‘ + format.test( email ) )
 
 ![image](img/hot.jpg)
 
-字符索引从零开始，所以第四个字符位于索引位置 3。
+字符索引从零开始，所以第四个字符位于索引位置`3`。
 
-## 认识 JSON (Meet JSON)
+## 认识 JSON（Meet JSON）
 
 ![image](img/pg398_1.jpg)
 
-JavaScript 对象表示法 (“JSON”) 是一种用于存储和交换数据的流行文本格式。它是 JavaScript 语言的一个子集，在其中数据被存储为键值对或数组：
+JavaScript 对象表示法（“JSON”）是一种用于存储和交换数据的流行文本格式。它是 JavaScript 语言的一个子集，在其中数据被存储为键值对或数组：
 
 - **String** – 位于双引号内
 - **Number** – 整数或浮点数
 - **Object** – 在花括号内
 - **Array** – 在方括号内
-- **Boolean** – true 或 false
+- **Boolean** – `true`或`false`
 - **Null** – 空值
 
-你可以使用 `JSON.stringify(` 方法将 JavaScript 对象转换为 JSON 字符串。反之，可以使用 `JSON.parse(` 方法将 JSON 字符串转换为 JavaScript 对象。JSON 是常用的数据交换格式，常用于服务器与客户端之间传输数据。
+你可以使用`JSON.stringify()`方法将 JavaScript 对象转换为 JSON 字符串。反之，可以使用`JSON.parse()`方法将 JSON 字符串转换为 JavaScript 对象。JSON 是常用的数据交换格式，常用于服务器与客户端之间传输数据。
 
-## 创建 Promise (Make Promises)
+## 创建 Promise（Make Promises）
 
 JavaScript 是一种单线程的“同步”语言。这意味着在任何时刻只能执行一个操作。随着脚本的进行，每个操作被添加到“调用栈”中，然后（按从上到下的顺序）执行——然后从栈中移除。
 
 ![image](img/pg400_1.jpg)
 
-
-
-
-
-然而，某些功能是由浏览器 API（“应用程序编程接口”）处理的，而不是由 JavaScript 引擎处理。例如，`setTimeout()` 方法由浏览器处理的——这样在等待计时器结束时，可以执行其他操作。当计时器结束时，它会将操作传递到“回调队列”，然后（当它到达队列头部时）就会被执行。整个过程由一个“事件循环”控制，该循环不断监控调用堆栈和回调队列的状态。
+然而，某些功能是由浏览器 API（“应用程序编程接口”）处理的，而不是由 JavaScript 引擎处理。例如，`setTimeout()`方法由浏览器处理的——这样在等待计时器结束时，可以执行其他操作。当计时器结束时，它会将操作传递到“回调队列”，然后（当它到达队列头部时）就会被执行。整个过程由一个“事件循环”控制，该循环不断监控调用堆栈和回调队列的状态。
 
 ![image](img/pg400_2.jpg)
 
-在 JavaScript 中，`Promise` 对象表示异步操作的最终完成或失败及其产生的值。它的状态可以是 `pending`（进行中）、`resolved`（已解决）或 `rejected`（已拒绝）。
+在 JavaScript 中，`Promise`对象表示异步操作的最终完成或失败及其产生的值。它的状态可以是`pending`（进行中）、`resolved`（已解决）或`rejected`（已拒绝）。
 
-你使用 JavaScript 的 `new` 关键字和 `Promise() ` 构造函数创建一个 promise。它接受一个函数作为参数，该函数反过来接受两个函数的名称，用于指定当 promise 被解决或拒绝时执行的操作。
+你使用 JavaScript 的`new`关键字和`Promise()`构造函数创建一个 promise。它接受一个函数作为参数，该函数反过来接受两个函数的名称，用于指定当 promise 被解决或拒绝时执行的操作。
 
-每个 JavaScript promise 都有 `then() ` 和 `catch() ` 方法，可以使用点符号在 promise 对象之后进行“链式调用”。`then() ` 方法可以处理异步操作的结果，而 `catch() ` 方法可以在被拒绝时处理错误。
+每个 JavaScript promise 都有`then()`和`catch()`方法，可以使用点符号在 promise 对象之后进行“链式调用”。`then()`方法可以处理异步操作的结果，而`catch()`方法可以在被拒绝时处理错误。
 
 ![image](img/hot.jpg)
 
@@ -12697,7 +13492,7 @@ Web 浏览器有多个 API，包括 Fetch API，它用于通过网络获取资�
 
 ![image](img/hot.jpg)
 
-你可以向 promise 链式添加多个 `then() ` 方法调用，但只有一个会接收到解析后的结果。
+你可以向 promise 链式添加多个`then()`方法调用，但只有一个会接收到解析后的结果。
 
 ![image](img/1p.jpg)以一个自执行函数开始脚本，该函数创建一个 JavaScript Promise 对象，该对象将在一秒延迟后执行两个函数之一一个
 
@@ -12713,7 +13508,7 @@ else
 
 ![image](img/htmlp.jpg)
 
-index.html（注：此处原文为 promise.html）
+`index.html`（注：此处原文为 `promise.html`）
 
 ![image](img/2p.jpg)接下来，添加一个带有链式方法的语句来显示 promise 状态并处理返回的值
 
@@ -12736,13 +13531,13 @@ promise
 
 ### Fetch 数据
 
-Web 浏览器支持 Fetch API，可以在 JavaScript 中通过网络获取资源。`fetch() ` 方法接受一个参数，即要获取的资源的 URL。
+Web 浏览器支持 Fetch API，可以在 JavaScript 中通过网络获取资源。`fetch()`方法接受一个参数，即要获取的资源的 URL。
 
 ![image](img/pg402_1.jpg)
 
-`fetch() ` 方法是异步的，这意味着在等待资源到达时可以执行其他操作。完成后，`fetch() ` 方法返回一个 `Promise` 对象，该对象包含一个响应（一个 `HTTPResponse` 对象）。
+`fetch()`方法是异步的，这意味着在等待资源到达时可以执行其他操作。完成后，`fetch()`方法返回一个`Promise`对象，该对象包含一个响应（一个`HTTPResponse`对象）。
 
-通常，`fetch() ` 方法可以获取 JSON 资源并使用 `HTTPResponse` 对象的 `json() ` 方法对其进行解析。返回的 JSON 数据可以作为参数传递给下一个链式 promise 方法，该方法反过来可以将 JSON 数据传递给处理函数。该过程的语法如下：
+通常，`fetch()`方法可以获取 JSON 资源并使用`HTTPResponse`对象的`json()`方法对其进行解析。返回的 JSON 数据可以作为参数传递给下一个链式 promise 方法，该方法反过来可以将 JSON 数据传递给处理函数。该过程的语法如下：
 
 ```javascript
 fetch( *url* )
@@ -12753,19 +13548,19 @@ fetch( *url* )
 
 ### 箭头函数表达式
 
-上面的函数定义可以可选地写成更简洁的 JavaScript `=>` 箭头函数表达式。这让你能够跳省略 `function` 关键字，如下：
+上面的函数定义可以可选地写成更简洁的 JavaScript`=>`箭头函数表达式。这让你能够跳省略`function`关键字，如下：
 
 ```javascript
 .then( ( response ) => { return response.json( ) } )
 ```
 
-如果函数体只包含一条语句，且该语句返回一个值，你也可以省略 `=>` 箭头函数的大括号和 `return` 关键字，如下：
+如果函数体只包含一条语句，且该语句返回一个值，你也可以省略`=>`箭头函数的大括号和`return`关键字，如下：
 
 ```javascript
 .then( ( response ) => response.json( ) )
 ```
 
-任何参数都可以像往常一样出现在圆括号 `()` 内的逗号分隔列表中，但如果只有一个参数，你甚至可以省略 `=>` 箭头函数中的括号——因此整个过程的语法可以可选地看起来：
+任何参数都可以像往常一样出现在圆括号`()`内的逗号分隔列表中，但如果只有一个参数，你甚至可以省略`=>`箭头函数中的括号——因此整个过程的语法可以可选地看起来：
 
 ```javascript
 fetch( *url* )
@@ -12774,11 +13569,11 @@ fetch( *url* )
 .catch( err => console.log( err ) )
 ```
 
-这更具可读性，但你应该注意 `=>` 箭头函数处理 `this` 关键字的方式与普通函数不同。
+这更具可读性，但你应该注意`=>`箭头函数处理`this`关键字的方式与普通函数不同。
 
 ![image](img/snake.jpg)
 
-使用箭头函数时，`this` 关键字表示原始上下文的对象，而在普通函数中，`this` 关键字表示调用函数的对象。
+使用箭头函数时，`this`关键字表示原始上下文的对象，而在普通函数中，`this`关键字表示调用函数的对象。
 
 ![image](img/1p.jpg)打开一个纯文本编辑器（如 Windows 的记事本应用），然后创建一个包含多个键值对的 JSON 文档
 
@@ -12795,7 +13590,7 @@ fetch( ‘localhost/data.json’ )
 .catch( err => console.log( err ) )
 ```
 
-index.html
+`index.html`
 
 现在，创建一个函数来打印数据
 
@@ -12808,13 +13603,9 @@ while( i < values.length ) { console.log( values[ i ] ) i++ }}
 
 ![image](img/5p.jpg)保存 HTML 文档和 JSON 文档，然后通过 HTTP 打开网页并启动开发者工具中的控制台查看数据
 
-
-
-
-
 # 19 字符串与数字 ![image](img/pg337_1.jpg)
 
-本章描述并演示了 JavaScript 内置 `Math` 和 `String` 对象的方法。
+本章描述并演示了 JavaScript 内置`Math`和`String`对象的方法。
 
 - 计算面积
 - 比较数字
@@ -12830,10 +13621,10 @@ while( i < values.length ) { console.log( values[ i ] ) i++ }}
 
 ![image](img/pg406_1.jpg)
 
-JavaScript 有一个内置的 `Math` 对象，提供了许多实用的方法和数学常量值。常量列在下表所示，以及它们的近似值：
+JavaScript 有一个内置的`Math`对象，提供了许多实用的方法和数学常量值。常量列在下表所示，以及它们的近似值：
 
 | **常量** | **描述** |
-| :--- | :--- |
+|---|---|
 | `Math.E` | 常数 E，自然对数的底数，近似值为 2.71828 |
 | `Math.LN2` | 2 的自然对数，近似值为 0.69315 |
 | `Math.LN10` | 10 的自然对数，近似值为 2.30259 |
@@ -12843,13 +13634,13 @@ JavaScript 有一个内置的 `Math` 对象，提供了许多实用的方法和�
 | `Math.SQRT1_2` | 0.5 的平方根，近似值为 0.70711 |
 | `Math.SQRT2` | 2 的平方根，近似值为 1.41421 |
 
-不需要创建 `Math` 对象的实例，因为它默认全局可访问，因此可以通过 `Math` 对象和点符号表示语法从脚本的任何地方访问 `Math` 常量和方法。
+不需要创建`Math`对象的实例，因为它默认全局可访问，因此可以通过`Math`对象和点符号表示语法从脚本的任何地方访问`Math`常量和方法。
 
-`Math` 常量主要用于具有特定数学目的的脚本，但为了完整性，上述列出了所有所有的 `Math` 常量。
+`Math`常量主要用于具有特定数学目的的脚本，但为了完整性，上述列出了所有所有的`Math`常量。
 
 ![image](img/hot.jpg)
 
-所有的 `Math` 方法都列在这里。
+所有的`Math`方法都列在这里。
 
 ![image](img/1o.jpg)创建一个 HTML 文档，包含一个自执行函数，从初始化变量开始
 
@@ -12860,7 +13651,7 @@ console.log( '\nRadius of Circle: ' + radius )
 
 ![image](img/htmlo.jpg)
 
-constants.html
+`constants.html`
 
 ![image](img/2o.jpg)接下来，添加语句执行数学计算并在输出中显示结果
 
@@ -12890,16 +13681,16 @@ console.log( '\nVolume of Sphere: ' + volume )
 
 ![image](img/snake.jpg)
 
-所有的 `Math` 常量名称必须大大写——例如，确保使用 `Math.PI` 而不是 `Math.pi`。
+所有的`Math`常量名称必须大大写——例如，确保使用`Math.PI`而不是`Math.pi`。
 
 ## 比较数字
 
 ![image](img/pg408_1.jpg)
 
-内置的 `Math` 对象提供了这些实用的方法：
+内置的`Math`对象提供了这些实用的方法：
 
 | **方法** | **返回** |
-| :--- | :--- |
+|---|---|
 | `Math.abs()` | 绝对值 |
 | `Math.acos()` | 反余弦值 |
 | `Math.asin()` | 反正弦值 |
@@ -12921,6 +13712,8 @@ console.log( '\nVolume of Sphere: ' + volume )
 
 ![image](img/1o.jpg)创建一个 HTML 文档，包含一个自执行函数，从初始化两个变量开始
 
+
+
 ```javascript
 let square = Math.pow( 5, 2 )     // 5 的 2 次方 ( 5 x 5 )
 let cube = Math.pow( 4, 3 )      // 4 的 3 次方 ( 4 x 4 x 4 )
@@ -12928,7 +13721,7 @@ let cube = Math.pow( 4, 3 )      // 4 的 3 次方 ( 4 x 4 x 4 )
 
 ![image](img/htmlo.jpg)
 
-math.html
+`math.html`
 
 ![image](img/2o.jpg)接下来，添加语句在输出中显示这两个正变量值中的最大值最小值
 
@@ -12953,7 +13746,7 @@ console.log( '\nSmallest Positive: ' + Math.min( square, cube ) )
 
 ![image](img/5o.jpg)最大的负值是靠近零的一个。
 
-## 小数舍
+## 小数舍入
 
 内置的 `Math` 对象提供了三种处理浮点数的方法。每个方法接收浮点数作为参数并返回一个整数。`Math.ceil()` 方法向上舍入，`Math.floor()` 方法向下取整，而 `Math.round()` 方法向最近的整数舍入。
 
@@ -12961,7 +13754,7 @@ console.log( '\nSmallest Positive: ' + Math.min( square, cube ) )
 
 在处理浮点值时，重要的是要意识到根据 IEEE（电气电子工程师学会）定义的计算机浮点数学与通常接受的数学准确性之间的差异。这是由于某些小数无法精确转换为二进制形式。例如，小数 `81.66` 无法精确转换为二进制，所以
 
-某些编程语言提供自动舍入来克服浮点差异，但 JavaScript 没有，因此必须小心，特别是在处理金额时，以避免数学错误的结果。建议的方法是先将浮点值乘以 100，执行数学运算，最后将结果除以 100 返回相同的相同的位数。
+某些编程语言提供自动舍入来克服浮点差异，但 JavaScript 没有，因此必须小心，特别是在处理金额时，以避免数学错误的结果。建议的方法是先将浮点值乘以 100，执行数学运算，最后将结果除以 100 返回相同的位数。
 
 类似的方法也可将长浮点值保留两位小数。在将值乘以 100 后，可以使用 `Math.round()` 方法对值进行舍入，然后通过除法返回两位小数。
 
@@ -12989,38 +13782,37 @@ let bodyTemp = 98.6
 
 ![image](img/htmlo.jpg)
 
-round.html
+`round.html`
 
 ![image](img/2o.jpg)接下来，添加语句显示最接近该浮点值的整数
 
-
-
-
-
 ```javascript
-console.log( ‘Ceiling: ‘ + Math.ceil( bodyTemp ) )
-console.log( ‘Floor: ‘ + Math.floor( bodyTemp ) )
-console.log( ‘Round: ‘ + Math.round( bodyTemp ) )
+console.log( 'Ceiling: ' + Math.ceil( bodyTemp ) )
+console.log( 'Floor: ' + Math.floor( bodyTemp ) )
+console.log( 'Round: ' + Math.round( bodyTemp ) )
 ```
+
 ![image](img/3o.jpg)现在，添加语句来显示表达式的错误计算结果以及修正后的等效结果
 
 ```javascript
-console.log( ‘\nImprecision: ‘ + ( 81.66 * 15 ) )
-console.log( ‘Corrected: ‘ + ( ( ( 81.66 * 100 ) * 15 ) / 100 ) )
+console.log( '\nImprecision: ' + ( 81.66 * 15 ) )
+console.log( 'Corrected: ' + ( ( ( 81.66 * 100 ) * 15 ) / 100 ) )
 ```
+
 ![image](img/4o.jpg)然后，添加语句显示一个长浮点值和一个经过交换后的等效值
 
 ```javascript
-console.log( ‘\nFloat: ‘ + Math.PI )
-console.log( ‘Commuted: ‘ + ( ( Math.round ( Math.PI * 100 ) / 100 ) ) )
+console.log( '\nFloat: ' + Math.PI )
+console.log( 'Commuted: ' + ( ( Math.round ( Math.PI * 100 ) / 100 ) ) )
 ```
+
 ![image](img/5o.jpg)保存 HTML 文档，然后在浏览器中打开并启动控制台以查看舍入后的数字
 
 ![image](img/pg411_1.jpg)
 
 ![image](img/forget.jpg)
 
-最内层括号中的表达式优先求。
+最内层括号中的表达式优先求值。
 
 ## 生成随机数
 
@@ -13044,24 +13836,25 @@ rand = Math.ceil(rand)
 let rand = Math.ceil(Math.random() * 10)
 ```
 
-可以在指定的范围内生成一组唯一的随机数。例如，在 1-59 范围内范围内产生一组随机彩票号码选择：
+可以在指定的范围内生成一组唯一的随机数。例如，在 1-59 范围内产生一组随机彩票号码选择：
 
 ![image](img/1o.jpg)创建一个带有自执行函数的 HTML 文档，该函数开始声明五个变量
 
 ```javascript
 let i, rand, temp, nums = [ ]
-let str = ‘\n\nYour Six Lucky Numbers: ‘
+let str = '\n\nYour Six Lucky Numbers: '
 ```
 
 ![image](img/htmlo.jpg)
 
-random.html
+`random.html`
 
 ![image](img/2o.jpg)接下来，添加一个循环将数组元素 1-59 填充为它们对应的索引号
 
 ```javascript
 for( i = 1 ; i < 60 ; i++ ) { nums[ i ] = i }
 ```
+
 ![image](img/3o.jpg)现在，添加一个循环将数组元素中的数字随机化
 
 ```javascript
@@ -13073,9 +13866,10 @@ for( i = 1 ; i < 60 ; i++ )
   nums[ rand ] = temp
 }
 ```
+
 ![image](img/hot.jpg)
 
-步骤 3 包含一个洗牌算法的算法，确保没有两个元素包含相同的数字。
+步骤 3 包含一个洗牌算法，确保没有两个元素包含相同的数字。
 
 ![image](img/4o.jpg)然后，添加一个循环将包含六个元素值的连字符列表附加到字符串变量
 
@@ -13083,21 +13877,21 @@ for( i = 1 ; i < 60 ; i++ )
 for( i = 1 ; i < 7 ; i++ )
 {
   str += nums[ i ]
-  if( i !== 6 ) { str += ‘ - ‘ }
+  if( i !== 6 ) { str += ' - ' }
 }
 ```
+
 ![image](img/5o.jpg)最后，添加一个语句输出字符串变量
 
 ```javascript
 console.log( str )
 ```
+
 ![image](img/6o.jpg)保存 HTML 文档，然后在浏览器中打开并启动控制台，以查看范围内的唯一随机数选择
 
 ![image](img/pg411_1.jpg)
 
 ![image](img/forget.jpg)
-
-等待，提供的文本包含大量的重复和碎片化部分。我将清理并整理提供的逻辑流。
 
 ## 合并字符串
 
@@ -13108,31 +13902,26 @@ JavaScript 拥有 `String` 对象，它提供了操作字符串的方法。
 - `concat()` 连接两个或多个字符串。
 - `length` 属性返回字符串中的字符数。
 
-(注：提供的源文本中关于字符串方法的描述包含高度损坏/重复的句子；我提取了所呈现的核心技术概念。)
+同样，`slice()` 方法可以用于返回起始位置之后的所有字符，该位置由单个参数指定；或者返回两个位置之间的所有字符，由两个参数指定。
 
-
-
-
-同样，`slice(()` 方法可以用于返回起始位置之后的所有字符，该位置由单个参数指定；或者返回两个位置之间的所有字符，由两个参数指定。
-
-有时复制由特定字符分隔的字符串部分是有用的。该分隔符字符可以作为字符串 `split(()` 方法的参数传递，该方法将返回一个包含所有该字符出现处之间的子字符串的数组。可选地，`split(()` 方法可以提供第二个参数，用于指定它应该返回的数组大小。在这种情况下，将返回指定分隔符之间的每个子字符串，直到达到限制，字符串的其余部分将被忽略。
+有时复制由特定字符分隔的字符串部分是有用的。该分隔符字符可以作为字符串 `split()` 方法的参数传递，该方法将返回一个包含所有该字符出现处之间的子字符串的数组。可选地，`split()` 方法可以提供第二个参数，用于指定它应该返回的数组大小。在这种情况下，将返回指定分隔符之间的每个子字符串，直到达到限制，字符串的其余部分将被忽略。
 
 这些字符串方法均不会修改原始字符串，而仅仅创建了原始字符串某个部分的副本。
 
 ![image](img/hot.jpg)
 
-`substr(()` 方法一认为认为比 `substring(()` 方法更容易使用——因为你只需要计算起始位置和子字符串长度，而不需要计算结束位置。
+`substr()` 方法被认为比 `substring()` 方法更容易使用——因为你只需要计算起始位置和子字符串长度，而不需要计算结束位置。
 
 ![image](img/hot.jpg)
 
-`split(()` 方法用于分离示例此处中的 cookie 数据。
+`split()` 方法用于分离示例此处中的 cookie 数据。
 
 ![image](img/1o.jpg)
 
 创建一个带有自执行函数的 HTML 文档，该函数从初始化一个变量开始
 
 ```javascript
-let definition = ‘JavaScript is the original dialect of \ the ECMAScript standard language.’
+let definition = 'JavaScript is the original dialect of \ the ECMAScript standard language.'
 ```
 
 ![image](img/hot.jpg)
@@ -13141,7 +13930,7 @@ let definition = ‘JavaScript is the original dialect of \ the ECMAScript stand
 
 ![image](img/htmlo.jpg)
 
-split.html
+`split.html`
 
 ![image](img/2o.jpg)接下来，添加语句将选定的字符串切片赋值给第二个变量，然后输出其值
 
@@ -13154,7 +13943,7 @@ console.log( str )
 ![image](img/3o.jpg)现在，添加语句输出切片中的四个独立的单词
 
 ```javascript
-console.log( str.split( ‘ ‘, 4 )
+console.log( str.split( ' ', 4 ) )
 ```
 
 ![image](img/4o.jpg)然后，添加语句将原始字符串中选定的子字符串赋值给第二个变量，然后输出其值
@@ -13172,42 +13961,42 @@ console.log( str )
 
 ![image](img/forget.jpg)
 
-将 `’’`（不带任何空格的空字符串）作为 `split(()` 函数的分隔符，以返回单个字符的数组。
+将 `''`（不带任何空格的空字符串）作为 `split()` 函数的分隔符，以返回单个字符的数组。
 
 ## 查找字符
 
-JavaScript String 对象提供了许多方法，允许在字符串中搜索特定字符或子字符串。字符串 `search(()` 方法接受子字符串作为参数，并返回该字符在搜索字符串中出现的位置，如果未找到则返回值 -1。或者，可以将子字符串作为字符串 `match(()` 方法的参数，如果该子字符串存在则返回该子字符串，如果不存在则返回 JavaScript 的 `null` 值。
+JavaScript `String` 对象提供了许多方法，允许在字符串中搜索特定字符或子字符串。字符串 `search()` 方法接受子字符串作为参数，并返回该字符在搜索字符串中出现的位置，如果未找到则返回值 -1。或者，可以将子字符串作为字符串 `match()` 方法的参数，如果该子字符串存在则返回该子字符串，如果不存在则返回 JavaScript 的 `null` 值。
 
 ![image](img/pg418_1.jpg)
 
-字符串 `indexOf(()` 方法接受子字符串作为参数，当子字符串存在时，返回其首次出现的索引位置，当不存在时返回 -1。`lastIndexOf(()` 方法的工作方式相同，但它是从字符串末尾反向搜索的，报告子字符串的最后一次出现。
+字符串 `indexOf()` 方法接受子字符串作为参数，当子字符串存在时，返回其首次出现的索引位置，当不存在时返回 -1。`lastIndexOf()` 方法的工作方式相同，但它是从字符串末尾反向搜索的，报告子字符串的最后一次出现。
 
-要发现字符串中特定索引位置的字符，可以将索引值作为 `charAt(()` 方法的参数，或者通过向 `charCodeAt(()` 方法指定索引值来揭示其数字 Unicode 值。相反，可以将一个或多个 Unicode 值作为 `String.fromCharCode(()` 方法的参数，以返回它们的字符值。
+要发现字符串中特定索引位置的字符，可以将索引值作为 `charAt()` 方法的参数，或者通过向 `charCodeAt()` 方法指定索引值来揭示其数字 Unicode 值。相反，可以将一个或多个 Unicode 值作为 `String.fromCharCode()` 方法的参数，以返回它们的字符值。
 
-此外，可以通过将字符或子字符串的值指定为字符串 `replace(()` 方法的第一个参数，并将替换值作为第二个参数，来替换它们的所有出现处。
+此外，可以通过将字符或子字符串的值指定为字符串 `replace()` 方法的第一个参数，并将替换值作为第二个参数，来替换它们的所有出现处。
 
 ![image](img/1o.jpg)创建一个带有自执行函数的 HTML 文档，该函数从初始化一个带有字符串值的变量开始
 
 ```javascript
-let str = ‘JavaScript in easy steps’
+let str = 'JavaScript in easy steps'
 ```
 
 ![image](img/htmlo.jpg)
 
-find.html
+`find.html`
 
 ![image](img/2o.jpg)接下来，添加语句输出两个大小敏感字符串搜索的结果
 
 ```javascript
-console.log( ‘”Script” Search: ‘ + str.search( ‘Script’ ) )
-console.log( ‘”script” Search: ‘ + str.search( ‘script’ ) )
+console.log( '"Script" Search: ' + str.search( 'Script' ) )
+console.log( '"script" Search: ' + str.search( 'script' ) )
 ```
 
 ![image](img/3o.jpg)现在，添加语句输出两个大小敏感字符串匹配的结果
 
 ```javascript
-console.log( ‘\n”Script” Match: ‘ + str.match( ‘Script’ ) )
-console.log( ‘”script” Match: ‘ + str.match( ‘script’ ) )
+console.log( '\n"Script" Match: ' + str.match( 'Script' ) )
+console.log( '"script" Match: ' + str.match( 'script' ) )
 ```
 
 ![image](img/snake.jpg)
@@ -13221,25 +14010,25 @@ console.log( ‘”script” Match: ‘ + str.match( ‘script’ ) )
 ![image](img/4o.jpg)添加语句，如果在字符串内找到字符，则输出该字符的第一个和最后一个索引位置
 
 ```javascript
-console.log( ‘nindexOf “s”: ‘ + str.indexOf( ‘s’ ) )
-console.log( ‘indexOf “m”: ‘ + str.indexOf( ‘m’ ) )
-console.log( ‘\nlastIndexOf “s”: ‘ + str.lastIndexOf( ‘s’ ) )
-console.log( ‘lastIndexOf “m”: ‘ + str.lastIndexOf( ‘m’ ) )
+console.log( 'indexOf "s": ' + str.indexOf( 's' ) )
+console.log( 'indexOf "m": ' + str.indexOf( 'm' ) )
+console.log( '\nlastIndexOf "s": ' + str.lastIndexOf( 's' ) )
+console.log( 'lastIndexOf "m": ' + str.lastIndexOf( 'm' ) )
 ```
 
 ![image](img/5o.jpg)然后，添加语句输出字符串中的第一个字符及其 Unicode 值，加上通过其 Unicode 值指定的字符
 
 ```javascript
-console.log( ‘charAt 0: ‘ + str.charAt( 0 ) )
-console.log( ‘charCodeAt 0: ‘ + str.charCodeAt( 0 ) )
-console.log( ‘fromCharCode: ‘ + String.fromCharCode( 74, 97, 118, 97 ) )
+console.log( 'charAt 0: ' + str.charAt( 0 ) )
+console.log( 'charCodeAt 0: ' + str.charCodeAt( 0 ) )
+console.log( 'fromCharCode: ' + String.fromCharCode( 74, 97, 118, 97 ) )
 ```
 
 ![image](img/6o.jpg)最后，添加语句输出原始字符串及其修改版本
 
 ```javascript
-console.log( ‘\nOriginal: ‘ + str )
-console.log( ‘Replaced: ‘ + str.replace( ‘easy’, ‘simple’ ) )
+console.log( '\nOriginal: ' + str )
+console.log( 'Replaced: ' + str.replace( 'easy', 'simple' ) )
 ```
 
 ![image](img/7o.jpg)保存 HTML 文档，然后在浏览器中打开它并启动控制台查看结果
@@ -13252,42 +14041,44 @@ Unicode 大写 A-Z 值为 65-90，小写 a-z 值为 97-122。
 
 ![image](img/forget.jpg)
 
-`replace(()` 方法返回原始字符串的修改版本，但不会实际更改原始字符串。
+`replace()` 方法返回原始字符串的修改版本，但不会实际更改原始字符串。
 
 ## 修剪字符串
 
-JavaScript String 对象提供了 `trim()` 方法，可以移除字符串两端的空白字符。这对于确保用户输入不包含意外的空格、制表符或换行符特别有用。
+JavaScript `String` 对象提供了 `trim()` 方法，可以移除字符串两端的空白字符。这对于确保用户输入不包含意外的空格、制表符或换行符特别有用。
 
 ![image](img/pg420_1.jpg)
 
-从字符串修剪空白后，你可以使用 `startsWith(()` 方法验证其起始字符，使用 `endsWith(()` 方法验证其结束字符。这些方法各接受字符或子字符串作为参数，并在字符串中进行大小敏感的匹配。如果找到匹配，它们将返回 true，如果未找到则返回 false。
+从字符串修剪空白后，你可以使用 `startsWith()` 方法验证其起始字符，使用 `endsWith()` 方法验证其结束字符。这些方法各接受字符或子字符串作为参数，并在字符串中进行大小敏感的匹配。如果找到匹配，它们将返回 `true`，如果未找到则返回 `false`。
 
 可以通过在字符串变量名后在 `[]` 方括号内指定索引位置来引用单个字符——例如，`str[ 0 ]` 用于引用名为 `str` 的字符串的字母。
 
-你还可以通过将字符或子字符串作为 `includes(()` 方法的参数，在字符串中进行大小敏感的匹配。如果找到匹配，这将返回 true，如果未找到将返回 false。
+你还可以通过将字符或子字符串作为 `includes()` 方法的参数，在字符串中进行大小敏感的匹配。如果找到匹配，这将返回 `true`，如果未找到将返回 `false`。
 
-如果你想构造一个包含多个字符串副本的新字符串，只需向 `repeat(()` 方法指定一个整数参数，以确定现有字符串在新创建的字符串中重复多少次。
+如果你想构造一个包含多个字符串副本的新字符串，只需向 `repeat()` 方法指定一个整数参数，以确定现有字符串在新创建的字符串中重复多少次。
 
 ![image](img/1o.jpg)创建一个带有自执行函数的 HTML 文档，该函数从初始化一个变量开始——其值包含字符串两侧的空白字符
 
+
+
 ```javascript
-let str = ‘   Love For All, Hatred For None.   ’
+let str = ‘   Love For All, Hatred For None.   ’
 ```
 
+![image](img/2o.jpg)
 
-
-
-
-![image](img/2o.jpg)接下来，添加语句来输出字符串并测试它的开头和结尾
+接下来，添加语句来输出字符串并测试它的开头和结尾：
 
 ```javascript
 console.log( ‘String: ‘ + str )
 console.log( ‘Starts With “L” ? ‘ + str.startsWith( ‘L’ ) )
-console.log( ‘Ends With “.” ? ‘ +str.endsWith( ‘.’ ) )
+console.log( ‘Ends With “.” ? ‘ + str.endsWith( ‘.’ ) )
 console.log( ‘First Letter: ‘ + str[ 0 ] )
 ```
 
-![image](img/3o.jpg)现在，添加一条语句将修剪后的字符串赋值给变量
+![image](img/3o.jpg)
+
+现在，添加一条语句将修剪后的字符串赋值给变量：
 
 ```javascript
 str = str.trim( )
@@ -13297,7 +14088,9 @@ str = str.trim( )
 
 `split()` 方法用于从示例此处中的 cookie 数据中移除空白字符。
 
-![image](img/4o.jpg)然后，添加语句输出修剪后的字符串并像之前一样测试它的开头和结尾：
+![image](img/4o.jpg)
+
+然后，添加语句输出修剪后的字符串并像之前一样测试它的开头和结尾：
 
 ```javascript
 conle.log( ‘Trimmed: ‘ + str )
@@ -13306,26 +14099,32 @@ console.log( ‘Ends With “.” ? ‘ +str.endsWith( ‘.’ ) )
 console.log( ‘First Letter: ‘ + str[ 0 ] )
 ```
 
-![image](img/5o.jpg)添加语句查看字符串中的子字符串
+![image](img/5o.jpg)
+
+添加语句查看字符串中的子字符串：
 
 ```javascript
 console.log( ‘\nIncludes “Hat” ? ‘+ str.includes( ‘Hat’ ) )
 console.log( ‘Includes “hat” ? ‘+ str.includes( ‘hat’ ) )
 ```
 
-![image](img/6o.jpg)最后，添加一条语句输出 10 次修剪后的字符串
+![image](img/6o.jpg)
+
+最后，添加一条语句输出 10 次修剪后的字符串：
 
 ```javascript
 console.log( ‘\nRepeat:\n’ + str.repeat( 10 ) )
 ```
 
-![image](img/7o.jpg)保存 HTML 文档，然后在浏览器中打开它并启动控制台查看输出结果
+![image](img/7o.jpg)
+
+保存 HTML 文档，然后在浏览器中打开它并启动控制台查看输出结果。
 
 ![image](img/pg421_1.jpg)
 
 ![image](img/hot.jpg)
 
-字符匹配也可以使用相等运算符完成，例如 `str[ 0 ] === ‘L’`
+字符匹配也可以使用相等运算符完成，例如 `str[ 0 ] === ‘L’`。
 
 ![image](img/forget.jpg)
 
@@ -13352,7 +14151,7 @@ console.log( ‘\nRepeat:\n’ + str.repeat( 10 ) )
 
 | 20 处理 Window 对象 | ![image](img/pg337_1.jpg) |
 
-*本章描述并演示了 浏览器环境中顶层 Window 对象的方法。*
+*本章描述并演示了浏览器环境中顶层 Window 对象的方法。*
 
 - 相识 DOM
 - 检查属性
@@ -13380,7 +14179,9 @@ console.log( ‘\nRepeat:\n’ + str.repeat( 10 ) )
 
 后面跟着方括号的项目是数组对象，而普通圆括号内的是各种表单元素。
 
-![image](img/1bl.jpg)创建一个带有空列表元素的 HTML 文档
+![image](img/1bl.jpg)
+
+创建一个带有空列表元素的 HTML 文档：
 
 ```html
 <ol id=”props” style=”column-count:3”> </ol>
@@ -13388,16 +14189,18 @@ console.log( ‘\nRepeat:\n’ + str.repeat( 10 ) )
 
 ![image](img/htmlbl.jpg)
 
-dom.html
+`dom.html`
 
-接下来，在脚本元素创建一个自执行函数，该函数从初始化两个变量开始
+接下来，在脚本元素创建一个自执行函数，该函数从初始化两个变量开始：
 
 ```javascript
 const list = document.getElementById( ‘props’ )
 let property = null
 ```
 
-![image](img/3bl.jpg)现在，添加一个循环，用浏览器窗口对象的直接属性填充列表元素：
+![image](img/3bl.jpg)
+
+现在，添加一个循环，用浏览器窗口对象的直接属性填充列表元素：
 
 ```javascript
 for( property in window )
@@ -13406,7 +14209,9 @@ for( property in window )
 }
 ```
 
-![image](img/4bl.jpg)保存 HTML 文档，然后在浏览器中打开它并启动控制台查看输出结果
+![image](img/4bl.jpg)
+
+保存 HTML 文档，然后在浏览器中打开它并启动控制台查看输出结果。
 
 ![image](img/pg425_1.jpg)
 
@@ -13414,7 +14219,9 @@ for( property in window )
 
 标签 `</li>` 是可选的，因此在此循环中省略了。
 
-![image](img/hot.jpg)滚动列表以检查所有属性 - 这一次共有 204。
+![image](img/hot.jpg)
+
+滚动列表以检查所有属性——这一次共有 204。
 
 ## 检查属性
 
@@ -13433,7 +14240,7 @@ for( property in window )
 
 现代计算机使用 24 位或 32 位硬件进行色彩显示，但旧的计算机使用 16 位硬件。只有非常旧的计算机和旧手机使用 8 位硬件显示色彩。
 
-还有一个 `window.screen.pixelDepth` 属性包含屏幕位深，但在现代计算机上，该值与 `window.screen.colorDepth` 相同 始终使用 `window.screen.colorDepth` 来发现色彩能力。
+还有一个 `window.screen.pixelDepth` 属性包含屏幕位深，但在现代计算机上，该值与 `window.screen.colorDepth` 相同。始终使用 `window.screen.colorDepth` 来发现色彩能力。
 
 某些浏览器现在支持 `window.screen.orientation` 对象，它有一个 `type` 属性描述屏幕当前的方向为横屏或竖屏，以及这是否是屏幕主要的或辅助的方向。
 
@@ -13447,15 +14254,13 @@ for( property in window )
 <p id=”props” style=”font:1.5em sans-serif”></p>
 ```
 
-
-
-
-
 ![image](img/htmlbl.jpg)
 
-screen.html
+`screen.html`
 
-![image](img/2bl.jpg)接下来，在 `script` 元素中，创建一个自执行函数，该函数初始化六个变量
+![image](img/2bl.jpg)
+
+接下来，在 `script` 元素中，创建一个自执行函数，该函数初始化六个变量：
 
 ```javascript
 const info = document.getElementById( ‘props’ )
@@ -13466,7 +14271,9 @@ let availH = window.screen.availHeight + ‘px’
 let colors = ‘Unknown’
 ```
 
-![image](img/3bl.jpg)现在，添加一条语句描述色彩能力
+![image](img/3bl.jpg)
+
+现在，添加一条语句描述色彩能力：
 
 ```javascript
 switch( window.screen.colorDepth )
@@ -13478,7 +14285,9 @@ case 32 : colors = ‘Deep Color’ ; break
 }
 ```
 
-![image](img/4bl.jpg)然后，添加语句显示屏幕信息
+![image](img/4bl.jpg)
+
+然后，添加语句显示屏幕信息：
 
 ```javascript
 info.innerHTML = ‘Screen Resolution: ‘ +
@@ -13493,7 +14302,9 @@ window.screen.orientation.type
 }
 ```
 
-![image](img/5bl.jpg)保存该 HTML 文档，然后在浏览器中打开它以查看屏幕信息
+![image](img/5bl.jpg)
+
+保存该 HTML 文档，然后在浏览器中打开它以查看屏幕信息。
 
 ![image](img/pg427_1.jpg)
 
@@ -13515,7 +14326,9 @@ window.screen.orientation.type
 
 还可以可以将消息作为 `window.prompt()` 方法的参数，以请求用户输入。它将显示在一个有“确定”按钮、“取消”按钮和一个文本输入字段的对话框上。点击任何按钮都会关闭对话框，但“确定”按钮返回文本框中的值，而“取消”按钮返回 `null` 值。还可以为 `window.prompt()` 方法提供第二个参数，以指定文本框的默认内容。
 
-![image](img/1bl.jpg)创建一个带有空段落的 HTML 文档
+![image](img/1bl.jpg)
+
+创建一个带有空段落的 HTML 文档：
 
 ```html
 <p id=”response” style=”font:1.5em sans-serif”></p>
@@ -13523,37 +14336,49 @@ window.screen.orientation.type
 
 ![image](img/htmlbl.jpg)
 
-dialogs.html
+`dialogs.html`
 
-![image](img/2bl.jpg)接下来，在 `script` 元素中，创建一个自执行函数，该函数初始化一个变量引用
+![image](img/2bl.jpg)
+
+接下来，在 `script` 元素中，创建一个自执行函数，该函数初始化一个变量引用：
 
 ```javascript
 const info = document.getElementById( ‘response’ )
 ```
 
-![image](img/3bl.jpg)现在，添加一条语句在简单的对话框上显示消息
+![image](img/3bl.jpg)
+
+现在，添加一条语句在简单的对话框上显示消息：
 
 ```javascript
 window.alert( ‘Hello from JavaScript’ )
 ```
 
-![image](img/4bl.jpg)然后，添加一条语句请求用户做出决定，并将响应写入段落
+![image](img/4bl.jpg)
+
+然后，添加一条语句请求用户做出决定，并将响应写入段落：
 
 ```javascript
 info.innerHTML = ‘Confirm: ‘ + window.confirm( ‘Go or Stop?’ )
 ```
 
-![image](img/5bl.jpg)接下来，添加一条语句请求用户输入文本，并将文本响应写入段落
+![image](img/5bl.jpg)
+
+接下来，添加一条语句请求用户输入文本，并将文本响应写入段落：
 
 ```javascript
 info.innerHTML += ‘<br>Prompt: ‘ + window.prompt( ‘Yes or No?’, ‘Yes’ )
 ```
 
-![image](img/6bl.jpg)保存该 HTML 文档，然后在浏览器中打开它，以看到消息出现在简单的对话框上出现
+![image](img/6bl.jpg)
+
+保存该 HTML 文档，然后在浏览器中打开它，以看到消息出现在简单的对话框上出现。
 
 ![image](img/pg429_1.jpg)
 
-![image](img/7bl.jpg)点击每个对话框上的“确定”按钮以依次关闭它们，然后看响应出现在段落中
+![image](img/7bl.jpg)
+
+点击每个对话框上的“确定”按钮以依次关闭它们，然后看响应出现在段落中。
 
 ![image](img/pg429_2.jpg)
 
@@ -13593,7 +14418,9 @@ DOM 对象有一个 `scrollX` 属性，存储水平滚动的像素数。它表�
 
 `scrollby()` 方法的效果只有在内容溢出窗口并导致滚动条出现时才会显现。
 
-![image](img/1bl.jpg)创建一个带有宽空段落的 HTML 文档，该段落距离窗口左侧会有
+![image](img/1bl.jpg)
+
+创建一个带有宽空段落的 HTML 文档，该段落距离窗口左侧会有：
 
 ```html
 <p id=”info” style=”width:2000px; margin-left:300px;
@@ -13602,16 +14429,20 @@ font:1.2em sans-serif”></p>
 
 ![image](img/htmlbl.jpg)
 
-scroll.html
+`scroll.html`
 
-![image](img/2bl.jpg)接下来，在 `script` 元素中，创建一个自执行函数，该函数初始化两个变量
+![image](img/2bl.jpg)
+
+接下来，在 `script` 元素中，创建一个自执行函数，该函数初始化两个变量：
 
 ```javascript
 const info = document.getElementById( ‘info’ )
 let i = 0
 ```
 
-![image](img/3bl.jpg)现在，添加一个循环向段落写入列 40 个数字
+![image](img/3bl.jpg)
+
+现在，添加一个循环向段落写入列 40 个数字：
 
 ```javascript
 for( i = 1 ; i < 41 ; i++ )
@@ -13620,7 +14451,9 @@ info.innerHTML += ( i + ‘<br> )
 }
 ```
 
-![image](img/4bl.jpg)然后，添加一条语句窗口向右水平滚动 200 像素，并向下滚动段落元素的高度
+![image](img/4bl.jpg)
+
+然后，添加一条语句窗口向右水平滚动 200 像素，并向下滚动段落元素的高度：
 
 ```javascript
 window.scrollBy( 200, info.clientHeight )
@@ -13630,20 +14463,19 @@ window.scrollBy( 200, info.clientHeight )
 
 
 
-
-
-注意这里使用了了元素的 `clientHeight` 属性。元素还有一个非常有用的 `clientWidth` 属性。
+注意这里使用了元素的 `clientHeight` 属性。元素还有一个非常有用的 `clientWidth` 属性。
 
 ![image](img/5bl.jpg)
 
-最后，添加一个语句来追加当前窗口滚动条位置的确认信息
+最后，添加一个语句来追加当前窗口滚动条位置的确认信息。
 
 ```javascript
 info.innerHTML += ‘scrollX: ‘ + window.scrollX + '& scrollY: ‘ + window.scrollY
 ```
 
 ![image](img/6bl.jpg)
-保存该 HTML 文档，然后在浏览器中打开它，以查看窗口的滚动位置和滚动条位置
+
+保存该 HTML 文档，然后在浏览器中打开它，以查看窗口的滚动位置和滚动条位置。
 
 ![image](img/pg431_1.jpg)
 
@@ -13651,7 +14483,7 @@ info.innerHTML += ‘scrollX: ‘ + window.scrollX + '& scrollY: ‘ + window.sc
 
 ![image](img/pg432_1.jpg)
 
-可以使用 `window` 对象的 `open()` ) 方法打开新的浏览器窗口。这需要三个参数来指定要在新窗口中加载的 HTML 文档的 URL 地址、新窗口的名称，以及一个用逗号分隔的特性列表，用于指定窗口应包含的特性——这些特性如下表所示：
+可以使用 `window` 对象的 `open()` 方法打开新的浏览器窗口。这需要三个参数来指定要在新窗口中加载的 HTML 文档的 URL 地址、新窗口的名称，以及一个用逗号分隔的特性列表，用于指定窗口应包含的特性——这些特性如下表所示：
 
 | 特性 | 说明 |
 | :--- | :--- |
@@ -13667,55 +14499,67 @@ info.innerHTML += ‘scrollX: ‘ + window.scrollX + '& scrollY: ‘ + window.sc
 | `top` | 窗口的屏幕 Y 坐标 |
 | `width` | 设置文档区域的宽度（像素） |
 
-当成功时，`window.open()` ) 方法将返回一个新的窗口对象并打开新的“弹出”窗口；如果失败，该方法将简单地返回 `null`。应将返回的结果赋值给一个变量，随后可以对该变量进行测试——如果该变量不为 `null`，则它必须代表弹出窗口对象。可以通过调用其 `close()` ) 方法关闭该窗口，或通过其 `print()` ) 方法打印其内容。
+当成功时，`window.open()` 方法将返回一个新的窗口对象并打开新的“弹出”窗口；如果失败，该方法将简单地返回 `null`。应将返回的结果赋值给一个变量，随后可以对该变量进行测试——如果该变量不为 `null`，则它必须代表弹出窗口对象。可以通过调用其 `close()` 方法关闭该窗口，或通过其 `print()` 方法打印其内容。
 
-可以通过指定 X 和 Y 屏幕轴坐标作为 `window.moveTo()` ) 方法的参数来对窗口进行定位。还有一个类似的 `window.moveBy()` ) 方法，它接受两个参数，用于指定窗口从当前屏幕位置沿 X 和 Y 轴移动的像素值。
+可以通过指定 X 和 Y 屏幕轴坐标作为 `window.moveTo()` 方法的参数来对窗口进行定位。还有一个类似的 `window.moveBy()` 方法，它接受两个参数，用于指定窗口从当前屏幕位置沿 X 和 Y 轴移动的像素值。
 
 ![image](img/forget.jpg)
 
 由于弹出窗口的烦人泛滥，浏览器制造商已添加弹出拦截器——因此不再建议使用弹出窗口，但为了完整性，此处演示了它们。
 
 ![image](img/1bl.jpg)
-创建一个包含标题的 HTML 文档
+
+创建一个包含标题的 HTML 文档。
 
 ```html
 <h1>弹出窗口</h1>
 ```
 
 ![image](img/htmlbl.jpg)
-popup.html
+
+`popup.html`
 
 ![image](img/htmlbl.jpg)
-opener.html
 
-![image](img/2bl.jpg)创建第二个包含标题的 HTML 文档
+`opener.html`
+
+![image](img/2bl.jpg)
+
+创建第二个包含标题的 HTML 文档。
 
 ```html
 <h1>主窗口</h1>
 ```
 
 ![image](img/3bl.jpg)
-接下来，在第二个文档的 script 元素中，添加一个自执行函数来创建一个窗口对象
+
+接下来，在第二个文档的 `script` 元素中，添加一个自执行函数来创建一个窗口对象。
 
 ```javascript
 const popWin = window.open( ‘popup.html’, ‘Popup’, ‘top=150,left=100,width=350,height=100’ )
 ```
 
-![image](img/4bl.jpg)保存两个 HTML 文档，然后打开第二个文档，查看其弹出窗口已被拦截
+![image](img/4bl.jpg)
+
+保存两个 HTML 文档，然后打开第二个文档，查看其弹出窗口已被拦截。
 
 ![image](img/pg433_1.jpg)
 
-![image](img/5bl.jpg)打开浏览器的弹出拦截对话框，并选择允许此页面的弹出
+![image](img/5bl.jpg)
+
+打开浏览器的弹出拦截对话框，并选择允许此页面的弹出。
 
 ![image](img/pg433_2.jpg)
 
-![image](img/6bl.jpg)现在，刷新浏览器窗口以查看带有指定特性的弹出窗口
+![image](img/6bl.jpg)
+
+现在，刷新浏览器窗口以查看带有指定特性的弹出窗口。
 
 ![image](img/pg433_3.jpg)
 
 ![image](img/snake.jpg)
 
-在特性列表字符串中不要包含任何空格，否则可能会导致 `window.open()` ) 方法失败。
+在特性列表字符串中不要包含任何空格，否则可能会导致 `window.open()` 方法失败。
 
 ![image](img/hot.jpg)
 
@@ -13723,27 +14567,29 @@ const popWin = window.open( ‘popup.html’, ‘Popup’, ‘top=150,left=100,w
 
 # 创建计时器
 
-JavaScript 的 `window` 对象有一个有趣的 `setTimeout()` ) 方法，它可以在指定的时间后重复评估指定的表达式。如果指定的表达式调用了出现 `window.setTimeout()` ) 语句的函数，就会创建一个递归循环——其中该函数将在指定的时间后被重复执行。
+JavaScript 的 `window` 对象有一个有趣的 `setTimeout()` 方法，它可以在指定的时间后重复评估指定的表达式。如果指定的表达式调用了出现 `window.setTimeout()` 语句的函数，就会创建一个递归循环——其中该函数将在指定的时间后被重复执行。
 
 ![image](img/pg434_1.jpg)
 
-`setTimeout()` ) 方法要评估的表达式必须作为其第一个参数指定，而时间必须作为其第二个参数指定的数字。时间以毫秒为单位，其中 1000 代表一秒。
+`setTimeout()` 方法要评估的表达式必须作为其第一个参数指定，而时间必须作为其第二个参数指定的数字。时间以毫秒为单位，其中 1000 代表一秒。
 
-`setTimeout()` ) 方法返回一个数值，该值可以赋值给变量以唯一标识等待过程。此值可以作为 `window` 对象 `clearTimeout()` ) 方法的参数，以便在某处终止计时器循环。
+`setTimeout()` 方法返回一个数值，该值可以赋值给变量以唯一标识等待过程。此值可以作为 `window` 对象 `clearTimeout()` 方法的参数，以便在某处终止计时器循环。
 
-`window` 对象还有 `setInterval()` ) 和 `clearInterval()` ) 方法，它们接受相同的参数且工作方式相似。区别在于，`setInterval()` 指定的时间是评估表达式的间隔，无论执行需要多长时间。反之，`setTimeout()` 方法指定的时间是等待周期。
+`window` 对象还有 `setInterval()` 和 `clearInterval()` 方法，它们接受相同的参数且工作方式相似。区别在于，`setInterval()` 指定的时间是评估表达式的间隔，无论执行需要多长时间。反之，`setTimeout()` 方法指定的时间是等待周期。
 
-创建一个带有空段落的 HTML 文档
+创建一个带有空段落的 HTML 文档。
 
 ```html
 <p id="info"></p>
 ```
 
 ![image](img/htmlbl.jpg)
-timer.html
+
+`timer.html`
 
 ![image](img/2bl.jpg)
-接下来，在 script 元素中，初始化一个返回内部函数的变量
+
+接下来，在 `script` 元素中，初始化一个返回内部函数的变量。
 
 ```javascript
 const count = function ( ) {
@@ -13753,7 +14599,8 @@ const count = function ( ) {
     }
 }
 ```
-现在，添加一个初始化变量的计时器函数
+
+现在，添加一个初始化变量的计时器函数。
 
 ```javascript
 function countDown( ) {
@@ -13772,14 +14619,16 @@ function countDown( ) {
 ```
 
 ![image](img/3bl.jpg)
-在函数块之后，添加一个语句在页面加载时调用计时器函数
+
+在函数块之后，添加一个语句在页面加载时调用计时器函数。
 
 ```javascript
 countDown()
 ```
 
 ![image](img/4bl.jpg)
-保存该 HTML 文档，然后在浏览器中打开它，查看计时器倒计时 10 秒
+
+保存该 HTML 文档，然后在浏览器中打开它，查看计时器倒计时 10 秒。
 
 ![image](img/pg435_1.jpg)
 
@@ -13793,14 +14642,11 @@ countDown()
 
 # 查看浏览器
 
-在 DOM 层次结构中，顶层 `window` 对象有许多子对象，每个对象都有自己的属性和方法。其中之一是 `window.navigator` 对象，它包含了有关浏览器的信息。由于顶层 `window` 对象存在于“全局命名空间”中，其所有子对象都可以省略地址的该部分，因此可以使用 `alert()` 直接调用 `window.alert()` ) 方法，可以使用 `onload` 引用 `window.onload` 属性，可以使用 `navigator` 引用 `window.navigator` 对象。
+在 DOM 层次结构中，顶层 `window` 对象有许多子对象，每个对象都有自己的属性和方法。其中之一是 `window.navigator` 对象，它包含了有关浏览器的信息。由于顶层 `window` 对象存在于“全局命名空间”中，其所有子对象都可以省略地址的该部分，因此可以使用 `alert()` 直接调用 `window.alert()` 方法，可以使用 `onload` 引用 `window.onload` 属性，可以使用 `navigator` 引用 `window.navigator` 对象。
 
 ![image](img/pg436_1.jpg)
 
 `navigator` 对象有一个 `appName` 属性包含浏览器名称，一个 `appCodeName` 属性包含其代码名称，以及 `appVersion` 属性包含其版本号。但你可能会对这些值感到惊讶，因为 Google Chrome、Firefox、Safari 和 Opera 的代码名称都是“Mozilla”。
-
-
-
 
 每个浏览器在向 Web 服务器发送请求时，都会在名为“User-Agent”的 HTTP 请求头中发送浏览器代码名称和版本，此字符串也可以通过 `navigator.userAgent` 属性获取。还有一个 `navigator.platform` 属性，用于描述浏览器的宿主操作系统。
 
@@ -13808,7 +14654,9 @@ countDown()
 
 例如，通过查询浏览器是否支持有用的 `addEventListener()` 方法，可以判断该浏览器是否支持现代文档对象模型（DOM）。
 
-![image](img/1bl.jpg)创建一个带有空列表的 HTML 文档
+![image](img/1bl.jpg)
+
+创建一个带有空列表的 HTML 文档。
 
 ```html
 <ul id="list"></ul>
@@ -13816,15 +14664,19 @@ countDown()
 
 ![image](img/htmlbl.jpg)
 
-browser.html
+`browser.html`
 
-![image](img/2bl.jpg)接下来，在 `<script>` 元素中创建一个自执行函数，该函数首先初始化一个变量引用
+![image](img/2bl.jpg)
+
+接下来，在 `<script>` 元素中创建一个自执行函数，该函数首先初始化一个变量引用。
 
 ```javascript
 const list = document.getElementById( ‘list’ )
 ```
 
-![image](img/3bl.jpg)现在，添加语句列出你浏览器的名称
+![image](img/3bl.jpg)
+
+现在，添加语句列出你浏览器的名称。
 
 ```javascript
 list.innerHTML = ‘<li>Browser: ‘ + navigator.appName
@@ -13835,14 +14687,18 @@ list.innerHTML += ‘<li>Code Name: ‘ + navigator.appCodeName
 
 之前的示例显式地使用了 `window` 前缀，使 `window` 对象方法和属性的父级关系清晰可见，但技术上最好省略 `window.` 前缀——这样它们就不会通过 `window` 对象自身的 `window` 属性被引用。例如，直接使用 `onload` 而不是 `window.onload`。
 
-![image](img/4bl.jpg)然后，添加语句列出你的浏览器和操作系统的版本详情
+![image](img/4bl.jpg)
+
+然后，添加语句列出你的浏览器和操作系统的版本详情。
 
 ```javascript
 list.innerHTML += ‘<li>Version: ‘ + navigator.appVersion
 list.innerHTML += ‘<li>Platform: ‘ + navigator.platform
 ```
 
-![image](img/5bl.jpg)最后，添加一条语句来确认你使用的是现代浏览器
+![image](img/5bl.jpg)
+
+最后，添加一条语句来确认你使用的是现代浏览器。
 
 ```javascript
 if( window.addEventListener )
@@ -13851,7 +14707,9 @@ if( window.addEventListener )
 }
 ```
 
-![image](img/6bl.jpg)保存 HTML 文档，然后在任何浏览器中打开它查看名称和版本详情
+![image](img/6bl.jpg)
+
+保存 HTML 文档，然后在任何浏览器中打开它查看名称和版本详情。
 
 ![image](img/pg437_1.jpg)
 
@@ -13861,7 +14719,7 @@ if( window.addEventListener )
 
 ![image](img/hot.jpg)
 
-在所有现代 浏览器中，`window` 对象都有一个 `addEventListener()` 方法——你将在第 21 章中发现更多相关信息，该章节演示了窗口事件。
+在所有现代浏览器中，`window` 对象都有一个 `addEventListener()` 方法——你将在第 21 章中发现更多相关信息，该章节演示了窗口事件。
 
 ![image](img/hot.jpg)
 
@@ -13881,7 +14739,9 @@ DOM 窗口对象的 `navigator` 子对象有一个 `javaEnabled()` 方法，只�
 
 同样，每个 `mimeTypes` 数组元素都有 `type` 和 `description` 属性，包含一个支持的 MIME 功能的详情。可以像常一样使用元素索引号引用它们。例如，`navigator.mimeTypes[0].type` 的是 `mimeTypes` 数组第一个元素的 `type` 属性。
 
-![image](img/1bl.jpg)创建一个带有空段落的 HTML 文档
+![image](img/1bl.jpg)
+
+创建一个带有空段落的 HTML 文档。
 
 ```html
 <p id="info"></p>
@@ -13889,23 +14749,29 @@ DOM 窗口对象的 `navigator` 子对象有一个 `javaEnabled()` 方法，只�
 
 ![image](img/htmlbl.jpg)
 
-enabled.html
+`enabled.html`
 
-![image](img/2bl.jpg)接下来，在 `<script>` 元素中创建一个自执行函数，该函数首先初始化两个变量
+![image](img/2bl.jpg)
+
+接下来，在 `<script>` 元素中创建一个自执行函数，该函数首先初始化两个变量。
 
 ```javascript
 const info = document.getElementById( ‘info’ )
 let status = ‘‘
 ```
 
-![image](img/3bl.jpg)现在，添加语句，只有在启用 Java 支持时才在段落中写入确认
+![image](img/3bl.jpg)
+
+现在，添加语句，只有在启用 Java 支持时才在段落中写入确认。
 
 ```javascript
 status = ( navigator.javaEnabled() ) ? ‘Enabled’ : ‘Disabled’
 info.innerHTML += ‘Java Support is ‘ + status + ‘<hr>’
 ```
 
-![image](img/4bl.jpg)然后，添加语句，只有在启用 cookie 支持时才在段落中写入确认
+![image](img/4bl.jpg)
+
+然后，添加语句，只有在启用 cookie 支持时才在段落中写入确认。
 
 ```javascript
 status = ( navigator.cookieEnabled ) ? ‘Enabled’ : ‘Disabled’
@@ -13916,7 +14782,9 @@ info.innerHTML += ‘Cookie Support is ‘ + status + ‘<hr>’
 
 这些数组元素的内容根据每个浏览器支持的功能而异。
 
-![image](img/5bl.jpg)现在，添加语句写入 plugins 数组的长度和一个示例元素
+![image](img/5bl.jpg)
+
+现在，添加语句写入 `plugins` 数组的长度和一个示例元素。
 
 ```javascript
 if ( navigator.plugins.length > 0 )
@@ -13927,7 +14795,9 @@ if ( navigator.plugins.length > 0 )
 }
 ```
 
-![image](img/6bl.jpg)最后，添加语句写入 MIME 类型数组的长度和一个示例元素
+![image](img/6bl.jpg)
+
+最后，添加语句写入 MIME 类型数组的长度和一个示例元素。
 
 ```javascript
 if ( navigator.mimeTypes.length > 0 )
@@ -13940,7 +14810,7 @@ if ( navigator.mimeTypes.length > 0 )
 
 ![image](img/7bl.jpg)
 
-你可以使用循环写入所有的 plugins 和 mimeTypes 元素。
+你可以使用循环写入所有的 `plugins` 和 `mimeTypes` 元素。
 
 ## 控制位置
 
@@ -13948,7 +14818,9 @@ if ( navigator.mimeTypes.length > 0 )
 
 ![image](img/pg440_1.jpg)
 
-![image](img/1bl.jpg)创建一个带有超链接锚点的段落的 HTML 文档
+![image](img/1bl.jpg)
+
+创建一个带有超链接锚点的段落的 HTML 文档。
 
 ```html
 <p id="info">
@@ -13958,16 +14830,21 @@ if ( navigator.mimeTypes.length > 0 )
 
 ![image](img/htmlbl.jpg)
 
-location.html
+`location.html`
 
-![image](img/2bl.jpg)接下来，在 `<script>` 元素中创建一个自执行函数，该函数首先初始化两个变量
+![image](img/2bl.jpg)
+
+接下来，在 `<script>` 元素中创建一个自执行函数，该函数首先初始化两个变量。
 
 ```javascript
 const info = document.getElementById( ‘info’ )
 let jump = confirm( ‘Jump to Fragment?’ )
 ```
 
-![image](img/3bl.jpg)现在，如果用户同意请求，则添加语句更改窗口的位置
+
+
+
+现在，如果用户同意请求，则添加语句更改窗口的位置：
 
 ```javascript
 if ( jump )
@@ -13976,7 +14853,7 @@ if ( jump )
 }
 ```
 
-![image](img/4bl.jpg)然后，添加语句在面板中写入当前位置地址的每个组件
+然后，添加语句在面板中写入当前位置地址的每个组件：
 
 ```javascript
 info.innerHTML += ‘<hr>Href: ‘ + location.href
@@ -13986,18 +14863,16 @@ info.innerHTML += ‘<br>Path:‘ + location.pathname
 info.innerHTML += ‘<br>Hash: ‘ + location.hash
 ```
 
-![image](img/5bl.jpg)保存 HTML 文档，然后在任何浏览器中打开它，看到一个确认框请求更改位置
+保存 HTML 文档，然后在任何浏览器中打开它，看到一个确认框请求更改位置。
 
-![image](img/6bl.jpg)点击取消按钮拒绝请求，并看到页面如常加载到其“根”位置
+点击取消按钮拒绝请求，并看到页面如常加载到其“根”位置。
 
 ![image](img/pg441_1.jpg)
-
-
-
 
 Web 浏览器可以加载任何支持的 MIME 类型的文件——例如，所有 PNG 文件的 MIME 类型为 `image/png`。
 
 ![image](img/7bl.jpg)
+
 刷新浏览器，然后点击 OK 按钮接受请求，并查看页面在相应片段位置的加载。
 
 ![image](img/pg441_3.jpg)
@@ -14006,15 +14881,16 @@ Web 浏览器可以加载任何支持的 MIME 类型的文件——例如，所�
 
 ![image](img/hot.jpg)
 
-此处显示的的是位于本地系统 Web 服务器上的页面位置。如果页面位于你的桌面上，则协议将是 `file:` 且没有 `host` 值。
+此处显示的是位于本地系统 Web 服务器上的页面位置。如果页面位于你的桌面上，则协议将是 `file:` 且没有 `host` 值。
 
 ## 历史记录
 
-Web 浏览器将当前会话中访问的 URL 历史存储在 `window` 对象的 `history` 子对象中的数组中。与其它数组一样，它有一个 `length` 属性，但还有 `back()` 和 `forward()` 方法用于在元素之间移动。或者，历史记录对象的 `go()` 方法接受一个正整数或负整数作为参数，指定沿数组移动多少个元素。例如，`history.go( 1 )`向前移动一个元素，而 `history.go( -2 )` 向后移动两个元素。
+Web 浏览器将当前会话中访问的 URL 历史存储在 `window` 对象的 `history` 子对象中的数组中。与其他数组一样，它有一个 `length` 属性，但还有 `back()` 和 `forward()` 方法用于在元素之间移动。或者，历史记录对象的 `go()` 方法接受一个正整数或负整数作为参数，指定沿数组移动多少个元素。例如，`history.go( 1 )` 向前移动一个元素，而 `history.go( -2 )` 向后移动两个元素。
 
 ![image](img/pg442_1.jpg)
 
 ![image](img/1bl.jpg)
+
 创建三个完全相同的 HTML 文档，它们包含一个空段落并嵌入同一个外部脚本文件。
 
 ```html
@@ -14024,13 +14900,14 @@ Web 浏览器将当前会话中访问的 URL 历史存储在 `window` 对象的 
 
 ![image](img/htmlbl.jpg)
 
-page-1.html
+`page-1.html`
 
-page-2.html
+`page-2.html`
 
-page-3.html
+`page-3.html`
 
 ![image](img/2bl.jpg)
+
 接下来，创建一个脚本文件，其中包含一个自执行函数，开始初始化一个变量引用。
 
 ```javascript
@@ -14039,9 +14916,10 @@ const info = document.getElementById( ‘info’ )
 
 ![image](img/jsbl.jpg)
 
-history.js
+`history.js`
 
 ![image](img/3bl.jpg)
+
 现在，在函数块中添加语句向空段落中写入内容。
 
 ```javascript
@@ -14053,6 +14931,7 @@ info.innerHTML += ‘<br>Current Location: ‘ + location.pathname + ‘<br>’
 ```
 
 ![image](img/4bl.jpg)
+
 然后添加语句在段落中创建按钮。
 
 ```javascript
@@ -14061,23 +14940,27 @@ info.innerHTML += ‘<button onclick=”history.forward( )”>Forward</button>�
 ```
 
 ![image](img/5bl.jpg)
+
 将 HTML 文档和 JavaScript 脚本文件保存在同一个文件夹中，然后清除浏览器历史记录。
 
 ![image](img/hot.jpg)
 
-要在 Google Chrome 浏览器中清除历史记录，点击 ![image](img/pg442_2.jpg)按钮，然后选择`更多工具`、`清除浏览数据`并点击`清除数据`按钮。
+要在 Google Chrome 浏览器中清除历史记录，点击![image](img/pg442_2.jpg)按钮，然后选择`更多工具`、`清除浏览数据`并点击`清除数据`按钮。
 
 ![image](img/6bl.jpg)
+
 打开第一个页面，查看初始历史长度为 1。
 
 ![image](img/pg443_1.jpg)
 
 ![image](img/7bl.jpg)
+
 点击链接加载第三页，查看历史长度增加到 2。
 
 ![image](img/pg443_2.jpg)
 
 ![image](img/8bl.jpg)
+
 点击后退按钮返回第一个页面，但看到历史长度保持为 2。
 
 ![image](img/pg443_3.jpg)
@@ -14092,25 +14975,25 @@ URL 以受保护的方式存储在 `history` 对象数组元素中，因此无�
 
 ## 总结
 
-- 文档对象模型 (DOM) 是 页面所有组件的层级树形表示。
+- 文档对象模型（DOM）是页面所有组件的层级树形表示。
 - `window` 对象是 DOM 层次结构中的顶层，具有描述浏览器窗口的属性。
-- `screen` 对象是 `window` 对象的子，具有描述屏幕尺寸和颜色深色的属性。
-- `window` 对象具有 `scrollBy()` 和 `scrollTo()` 方法以及指定滚动位置的 `scrollX` 和 `scrollY` 属性。
+- `screen` 对象是 `window` 对象的子对象，具有描述屏幕尺寸和颜色深度的属性。
+- `window` 对象具有 `scrollBy()` 和 `scrollTo()` 方法，以及指定滚动位置的 `scrollX` 和 `scrollY` 属性。
 - 可以使用 `window` 对象的 `alert()`、`confirm()` 和 `prompt()` 方法显示对话框。
-- 可以使用 `window` 对象的 `open()` 方法创建弹出窗口，但可能会被弹出窗口拦截拦截。
+- 可以使用 `window` 对象的 `open()` 方法创建弹出窗口，但可能会被弹出窗口拦截。
 - `window` 对象的 `setTimeout()` 方法创建一个计时器，稍后可以使用 `clearTimeout()` 方法取消。
-- `navigator` 对象是 `window` 对象的子，具有描述浏览器和主机平台版本的属性。
+- `navigator` 对象是 `window` 对象的子对象，具有描述浏览器和主机平台版本的属性。
 - `window` 对象存在于全局命名空间中，因此其所有子对象都不需要包含地址中的 `window` 部分。
 - 特性检测用于识别现代 DOM。
 - `navigator.plugins` 和 `navigator.mimeTypes` 属性是包含支持功能详情的数组。
-- `location` 对象是 `window` 对象的子，具有描述页面位置的属性。
-- `history` 对象是 `window` 对象的子，包含访问历史记录的数组。
+- `location` 对象是 `window` 对象的子对象，具有描述页面位置的属性。
+- `history` 对象是 `window` 对象的子对象，包含访问历史记录的数组。
 
 | 提取信息 | ![image](img/337.jpg) |
 | :--- | :--- |
-| *本章演示了如何使用 DOM 对象的属性和方法。* | |
+| 本章演示了如何使用 DOM 对象的属性和方法。 | |
 
-在所有 DOM 对象中最感兴趣的是 `document` 对象，它提供了对 HTML 文档的访问。
+在所有 DOM 对象中，最感兴趣的是 `document` 对象，它提供了对 HTML 文档的访问。
 
 - `document.title` 属性包含 HTML 标题元素中的值。
 - HTML 文档的位置包含在 `document.URL` 属性中，类似于 `location.href` 属性的值。
@@ -14119,6 +15002,7 @@ URL 以受保护的方式存储在 `history` 对象数组元素中，因此无�
 - `document.referrer` 属性存储用户加载当前 HTML 文档的网页 URL。只有当用户跟随超链接加载页面时才会设置，如果直接输入 URL 或使用其他方法加载页面则不会设置。
 
 ![image](img/1v.jpg)
+
 创建一个 HTML 文档，在其主体部分提供指向第二个（目标）HTML 文档的超链接。
 
 ```html
@@ -14129,9 +15013,10 @@ URL 以受保护的方式存储在 `history` 对象数组元素中，因此无�
 
 ![image](img/htmlv.jpg)
 
-info-1.html
+`info-1.html`
 
 ![image](img/2v.jpg)
+
 接下来，创建目标 HTML 文档，它包含一个空有序列表。
 
 ```html
@@ -14140,9 +15025,10 @@ info-1.html
 
 ![image](img/htmlv.jpg)
 
-info-2.html
+`info-2.html`
 
 ![image](img/3v.jpg)
+
 现在，在脚本元素中，创建一个自执行函数，开始初始化一个变量引用。
 
 ```javascript
@@ -14150,6 +15036,7 @@ const list = document.getElementById( ‘list’ )
 ```
 
 ![image](img/4v.jpg)
+
 然后，添加语句列出文档的特征。
 
 ```javascript
@@ -14158,21 +15045,19 @@ list.innerHTML += ‘<li>标题：’ + document.title
 list.innerHTML += ‘<li>URL：’ + document.URL
 ```
 
-
-
-
-
 ```javascript
 list.innerHTML += '<li>Domain: ' + document.domain;
 list.innerHTML += '<li>Last Modified: ' + document.lastModified;
 ```
 
-![image](img/5v.jpg) 
+![image](img/5v.jpg)
+
 将 HTML 文档保存在同一个文件夹中，然后在浏览器中打开包含链接的文档。
 
 ![image](img/pg447_1.jpg)
 
 ![image](img/6v.jpg)
+
 现在，点击超链接在浏览器中加载第二个 HTML 文档并查看文档信息。
 
 ![image](img/pg447_2.jpg)
@@ -14195,9 +15080,11 @@ DOM 文档对象具有表单、图像、链接、样式表和脚本的子对象�
 
 `links` 数组代表 HTML 文档中的 `<a>` 标签；`styleSheets` 数组代表 HTML `<style>` 标签；`scripts` 数组代表 HTML `<script>` 标签。
 
-`forms` 数组代表 HTML `<form>` 标签，但它也有自己的子元素对象，该对象是所有表单组件的数组。例如，HTML 文档中第一个表单的组件组件可以使用 `document.forms[0].elements[0].value` 来引用。在脚本中为此组件分配新值将动态地替换旧值。
+`forms` 数组代表 HTML `<form>` 标签，但它也有自己的子元素对象，该对象是所有表单组件的数组。例如，HTML 文档中第一个表单的组件可以使用 `document.forms[0].elements[0].value` 来引用。在脚本中为此组件分配新值将动态地替换旧值。
 
-![image](img/1v.jpg) 创建一个包含表单和空列表的 HTML 文档
+![image](img/1v.jpg)
+
+创建一个包含表单和空列表的 HTML 文档：
 
 ```html
 <form>
@@ -14210,9 +15097,12 @@ DOM 文档对象具有表单、图像、链接、样式表和脚本的子对象�
 ```
 
 ![image](img/htmlv.jpg)
-components.html
 
-![image](img/2v.jpg) 现在，添加一个样式表来设置字体和表单
+`components.html`
+
+![image](img/2v.jpg)
+
+现在，添加一个样式表来设置字体和表单：
 
 ```css
 <style>
@@ -14222,12 +15112,16 @@ form { width : 500px ; height : 100px ; background : url(bg.png) ; }
 ```
 
 ![image](img/pg448_2.jpg)
-user.png 64px x 64px (灰色区域为透明)
+
+`user.png` 64px x 64px（灰色区域为透明）
 
 ![image](img/pg448_3.jpg)
-bg.png 24px x 100px
 
-![image](img/3v.jpg) 下一步，在脚本元素中创建一个自执行函数，该函数从初始化变量引用开始
+`bg.png` 24px x 100px
+
+![image](img/3v.jpg)
+
+下一步，在脚本元素中创建一个自执行函数，该函数从初始化变量引用开始：
 
 ```javascript
 const list = document.getElementById('list');
@@ -14237,7 +15131,9 @@ const list = document.getElementById('list');
 
 注意 `styleSheets` 数组的“驼峰命名法”写法。
 
-![image](img/4v.jpg) 现在，添加语句列出文档的组件
+![image](img/4v.jpg)
+
+现在，添加语句列出文档的组件：
 
 ```javascript
 list.innerHTML = '<li>No. Forms: ' + document.forms.length;
@@ -14247,49 +15143,57 @@ list.innerHTML += '<li>No. Style Sheets: ' + document.styleSheets.length;
 list.innerHTML += '<li>No. Scripts: ' + document.scripts.length;
 ```
 
-![image](img/5v.jpg) 最后，添加语句列出两个属性值
+![image](img/5v.jpg)
+
+最后，添加语句列出两个属性值：
 
 ```javascript
 list.innerHTML += '<li>First Image URL: ' + document.images[0].src;
 list.innerHTML += '<li>First Form Element Value: ' + document.forms[0].elements[0].value;
 ```
 
-![image](img/6v.jpg) 保存 HTML 文档，然后在浏览器中打开它以列出文档组件。
+![image](img/6v.jpg)
+
+保存 HTML 文档，然后在浏览器中打开它以列出文档组件。
 
 ![image](img/pg449_1.jpg)
 
-注意，通过样式规则结合文档内的图像并不包含在 `images` 数组中，只有通过 HTML `<img>` 标签包含的图像——因此此处表单背景图像 (bg.png) 不在 `images` 数组中。同样，内联到 `style` 属性的样式规则也不包含在 `styleSheets` 数组中。
+注意，通过样式规则结合文档内的图像并不包含在 `images` 数组中，只有通过 HTML `<img>` 标签包含的图像——因此此处表单背景图像（`bg.png`）不在 `images` 数组中。同样，内联到 `style` 属性的样式规则也不包含在 `styleSheets` 数组中。
 
 数组元素仅代表相关的 HTML 标签。
 
 ## 元素
 
 ![image](img/forget.jpg)
+
 使用点表示法引用特定元素：
 
 - `document.getElementById(id)`：返回单个元素。
 - `document.getElementsByTagName(tagName)`：返回一个 `HTMLCollection`。
 - `document.getElementsByClassName(className)`：返回一个 `HTMLCollection`。
 
+![image](img/6v.jpg)
 
-
-
-
-![image](img/6v.jpg)保存 HTML 文档，然后在浏览器中打开它，以查看通过不同方法检索的元素值
+保存 HTML 文档，然后在浏览器中打开它，以查看通过不同方法检索的元素值。
 
 ![image](img/pg451_1.jpg)
 
 ## 写入内容
 
-如之前的示例所示，`document` 对象的 `innerHTML` 和 `innerText` 属性可以用于向现有元素写入内容。`document` 对象还有一个一个 `write()` 方法，它提供了写入内容的另一种方式，但它会自动调用 `document.open()` 方法来启动新文档——因此当前文档将不再显示。
+如之前的示例所示，`document` 对象的 `innerHTML` 和 `innerText` 属性可以用于向现有元素写入内容。`document` 对象还有一个 `write()` 方法，它提供了写入内容的另一种方式，但它会自动调用 `document.open()` 方法来启动新文档——因此当前文档将不再显示。
 
 ![image](img/pg452_1.jpg)
 
 更有用的是，`document.createElement()` 方法接受一个标签名称作为参数，并创建一个该类型的元素。然后，可以通过赋值给新元素的 `innerHTML` 或 `innerText` 属性来向新元素添加内容。接着，通过将新元素指定为 `document.appendChild()` 方法的参数，将其插入到现有元素内部的网页中。
 
-你还通过通过指定属性名和值作为元素 `setAttribute()` 方法的两个参数，动态地向元素写入属性。
+你还可以通过指定属性名和值作为元素 `setAttribute()` 方法的两个参数，动态地向元素写入属性。
 
-![image](img/1v.jpg)创建一个包含标题和一个包含三个项目的有序列表的 HTML 文档
+![image](img/1v.jpg)
+
+创建一个包含标题和一个包含三个项目的有序列表的 HTML 文档。
+
+
+
 
 ```html
 <h1 id="heading">前三大城市</h1>
@@ -14302,13 +15206,17 @@ list.innerHTML += '<li>First Form Element Value: ' + document.forms[0].elements[
 
 ![image](img/htmlv.jpg)
 
-write.html
+`write.html`
 
-![image](img/2v.jpg)保存 HTML 文档，然后在浏览器中打开它，以查看网页
+![image](img/2v.jpg)
+
+保存 HTML 文档，然后在浏览器中打开它，以查看网页。
 
 ![image](img/pg452_2.jpg)
 
-![image](img/3v.jpg)接下来，在 `<script>` 元素中，创建一个自执行函数，该函数初始化两个变量作为新的列表项元素和一个变量引用：
+![image](img/3v.jpg)
+
+接下来，在`<script>`元素中，创建一个自执行函数，该函数初始化两个变量作为新的列表项元素和一个变量引用：
 
 ```javascript
 const itemFour = document.createElement('li')
@@ -14316,43 +15224,53 @@ const itemFive = document.createElement('li')
 const heading = document.getElementById('heading')
 ```
 
-![image](img/4v.jpg)现在，为两个新元素分配文本内容：
+![image](img/4v.jpg)
+
+现在，为两个新元素分配文本内容：
 
 ```javascript
 itemFour.innerText = 'London, England'
 itemFive.innerText = 'Cape Town, South Africa'
 ```
 
-![image](img/5v.jpg)然后，将新元素内容作为有序列表元素的子元素插入网页：
+![image](img/5v.jpg)
+
+然后，将新元素内容作为有序列表元素的子元素插入网页：
 
 ```javascript
 document.getElementById('list').appendChild(itemFour)
 document.getElementById('list').appendChild(itemFive)
 ```
 
-![image](img/6v.jpg)为现有的标题元素添加属性以更改其字体颜色：
+![image](img/6v.jpg)
+
+为现有的标题元素添加属性以更改其字体颜色：
 
 ```javascript
 heading.setAttribute('style', 'color:Red')
 ```
 
-![image](img/7v.jpg)最后，更改标题以更好地描述扩展后的列表：
+![image](img/7v.jpg)
+
+最后，更改标题以更好地描述扩展后的列表：
 
 ```javascript
 heading.innerText = 'Best Five Cities'
 ```
 
-![image](img/8v.jpg)再次保存 HTML 文档，然后刷新浏览器以查看新写入的内容
+![image](img/8v.jpg)
+
+再次保存 HTML 文档，然后刷新浏览器以查看新写入的内容。
 
 ![image](img/pg453_1.jpg)
 
 ![image](img/hot.jpg)
 
-可以通过将现有元素指定为 `document.removeChild()` 方法的参数来从网页中移除，或者通过将新旧元素指定为 `document.replaceChild()` 方法的参数来替换。
+可以通过将现有元素指定为`document.removeChild()`方法的参数来从网页中移除，或者通过将新旧元素指定为`document.replaceChild()`方法的参数来替换。
 
 ![image](img/hot.jpg)
 
-你可以通过将属性指定作为元素 `removeAttribute()` 方法的参数来移除属性。
+你可以通过将属性指定为元素`removeAttribute()`方法的参数来移除属性。
 
 ## 管理 Cookie
 
@@ -14360,15 +15278,17 @@ heading.innerText = 'Best Five Cities'
 
 ![image](img/pg454_1.jpg)
 
-Cookie 数据存储在 DOM `document` 对象的 `cookie` 属性中，格式为一个或多个“key=value”对，并以“;”分号字符结束。值不应包含空格、逗号或分号，除非作为内置函数 `encodeURI()`的参数传递，该函数会将字符串以 Unicode 格式进行编码——例如，这会将一个空格表示为 %20。
+Cookie 数据存储在 DOM `document`对象的`cookie`属性中，格式为一个或多个“key=value”对，并以“;”分号字符结束。值不应包含空格、逗号或分号，除非作为内置函数`encodeURI()`的参数传递，该函数会将字符串以 Unicode 格式进行编码——例如，这会将一个空格表示为`%20`。
 
-默认情况下，cookie 的生存期限制为当前浏览器会话，除非在创建 cookie 时通过“expires=date”值对指定了过期日期，该日期值是一个 UTC 字符串。通常，这通过使用带有 `toUTCString()` 方法转换的 JavaScript `Date` 对象来实现。将现有 cookie 的过期日期设置为过去的时间将删除该 cookie。
+默认情况下，cookie 的生存期限制为当前浏览器会话，除非在创建 cookie 时通过“expires=date”值对指定了过期日期，该日期值是一个 UTC 字符串。通常，这通过使用带有`toUTCString()`方法转换的 JavaScript `Date`对象来实现。将现有 cookie 的过期日期设置为过去的时间将删除该 cookie。
 
-从 cookie 中检索数据需要一些字符串操作，以便使用内置的 `decodeURI()` 函数将 Unicode 转换为普通文本（使 %20 再次变为空格），并分离数据的名称和值项。在 cookie 字符串内部，可以通过指定“=”分号作为 `split()` 方法的参数来分离多个对。同样，可以通过指定=”字符作为 `split()` 方法的参数来分离键和值。同样，当值是用逗号分隔的项目列表时，可以指定逗逗号作为 `split()` 方法的参数将其作为数组元素分离。
+从 cookie 中检索数据需要一些字符串操作，以便使用内置的`decodeURI()`函数将 Unicode 转换为普通文本（使`%20`再次变为空格），并分离数据的名称和值项。在 cookie 字符串内部，可以通过指定“=”分号作为`split()`方法的参数来分离多个对。同样，可以通过指定“=”字符作为`split()`方法的参数来分离键和值。同样，当值是用逗号分隔的项目列表时，可以指定逗号作为`split()`方法的参数将其作为数组元素分离。
 
 创建一个包含“setter”和“getter”实用函数的外部 JavaScript 文件是有用的，这些函数可以被轻松调用以存储和检索 cookie 数据。
 
-![image](img/1v.jpg)以一个 setter 函数开始一个 JavaScript 文件，该函数具有 key、value 和 expiry 参数：
+![image](img/1v.jpg)
+
+以一个 setter 函数开始一个 JavaScript 文件，该函数具有 key、value 和 expiry 参数：
 
 ```javascript
 function setCookie(key, value, days) {
@@ -14381,7 +15301,7 @@ function setCookie(key, value, days) {
 
 ![image](img/jsv.jpg)
 
-cookie.js
+`cookie.js`
 
 ![image](img/snake.jpg)
 
@@ -14391,7 +15311,9 @@ cookie 的过期日期通常无法被 JavaScript 读取。如果需要可读，�
 
 此处设置 cookie 过期的数字是毫秒数。
 
-![image](img/2v.jpg)然后，添加一个 getter 函数来接受 key 参数：
+![image](img/2v.jpg)
+
+然后，添加一个 getter 函数来接受 key 参数：
 
 ```javascript
 function getCookie(key) {
@@ -14407,9 +15329,11 @@ function getCookie(key) {
 }
 ```
 
-注意这里使用了 `trim()` 方法 方法。
+注意这里使用了`trim()`方法方法。
 
-![image](img/3v.jpg)接下来，创建一个空列表并导入 JavaScript 文件的 HTML 文档：
+![image](img/3v.jpg)
+
+接下来，创建一个空列表并导入 JavaScript 文件的 HTML 文档：
 
 ```html
 <ul id="list"></ul>
@@ -14418,9 +15342,11 @@ function getCookie(key) {
 
 ![image](img/htmlv.jpg)
 
-cookie.html
+`cookie.html`
 
-![image](img/4v.jpg)现在，在另一个 `<script>` 元素中，创建一个自执行函数来设置 cookie 然后获取其值：
+![image](img/4v.jpg)
+
+现在，在另一个`<script>`元素中，创建一个自执行函数来设置 cookie 然后获取其值：
 
 ```javascript
 setCookie('User','Mike McGrath,12345', 7)
@@ -14434,7 +15360,9 @@ for (i = 0; i < value.length; i++) {
 }
 ```
 
-![image](img/5v.jpg)将 HTML 文档和 JavaScript 文件保存在 Web 服务器的同一文件夹中，然后在浏览器中打开网页以查看检索到的 cookie 值
+![image](img/5v.jpg)
+
+将 HTML 文档和 JavaScript 文件保存在 Web 服务器的同一文件夹中，然后在浏览器中打开网页以查看检索到的 cookie 值。
 
 ![image](img/pg455_1.jpg)
 
@@ -14448,179 +15376,193 @@ for (i = 0; i < value.length; i++) {
 
 DOM 允许 JavaScript 响应网页上发生的“事件”，方法是脚本作者提供在特定事件发生时执行的函数。这些函数被称为“事件处理器”，可以响应如下事件：
 
-- **load**: 在页面加载到浏览器中时触发
-- **click**: 在用户点击鼠标按钮时触发
-- **keydown**: 在用户按下键盘时触发
-- **change**: 在用户修改输入字段时触发
-- **submit**: 在用户提交 HTML 表单时触发
+- `load`：在页面加载到浏览器中时触发。
+- `click`：在用户点击鼠标按钮时触发。
+- `keydown`：在用户按下键盘时触发。
+- `change`：在用户修改输入字段时触发。
+- `submit`：在用户提交 HTML 表单时触发。
 
-
-
-
-
-为了响应加载事件（load event），可以通过赋值给 window 对象的 `onload` 属性来指定事件处理器函数名，其使用的语法如下：
+为了响应加载事件（load event），可以通过赋值给`window`对象的`onload`属性来指定事件处理器函数名，其使用的语法如下：
 
 `onload=function-name`
 
-或者，也可以将事件名称和事件处理器函数名作为 window 对象的 `addEventListener( )` 方法的参数，但事件名称必须包含在引号内，如下所示：
+或者，也可以将事件名称和事件处理器函数名作为`window`对象的`addEventListener()`方法的参数，但事件名称必须包含在引号内，如下所示：
 
-`addEventListener( ‘load’ , function-name )`
+`addEventListener('load', function-name)`
 
 load 事件的事件处理器可能用于检查浏览器的功能，并可以很好地检查 cookie 数据。
 
 ![image](img/1v.jpg)
+
 创建一个 HTML 文档，其中包含一个段落，该段落有一个指向 cookie 示例的链接，一个空段落，并导入上一个示例中的外部 JavaScript 文件。
 
 ```html
-<p><a href=”cookie.html”>Link</a></p>
-<p id=”info”></p>
-<script src=”cookie.js”></script>
+<p><a href="cookie.html">Link</a></p>
+<p id="info"></p>
+<script src="cookie.js"></script>
 ```
 
 ![image](img/htmlv.jpg)
 
-load.html
+`load.html`
 
 ![image](img/2v.jpg)
+
 接下来，在 script 元素中，指定一个事件处理器函数，在页面加载后执行。
 
 ```javascript
-addEventListener( ‘load’, welcome )
+addEventListener('load', welcome)
 ```
 
 ![image](img/hot.jpg)
 
-还有一个 unload 事件，它在用户离开页面时触发。它的事件处理器可以通过赋值给 `window.onunload` 属性来指定，也可以指定到 `addEventListener( )` 方法中。
+还有一个 unload 事件，它在用户离开页面时触发。它的事件处理器可以通过赋值给`window.onunload`属性来指定，也可以指定到`addEventListener()`方法中。
 
 ![image](img/3v.jpg)
+
 现在，添加事件处理器函数来问候用户。
 
 ```javascript
-function welcome( ) {
-  const info = document.getElementById( ‘info’ )
-  if( getCookie( ‘Name’ ) )
-  {
-    info.innerHTML = ‘Welcome Back, ‘ + getCookie( ‘Name’ )
-  }
-  else
-  {
-    let name = prompt( ‘Please Enter Your Name’, ‘User’ )
-    setCookie( ‘Name’, name, 7 )
-    info.innerHTML = ‘Welcome, ‘ + name
+function welcome() {
+  const info = document.getElementById('info')
+  if (getCookie('Name')) {
+    info.innerHTML = 'Welcome Back, ' + getCookie('Name')
+  } else {
+    let name = prompt('Please Enter Your Name', 'User')
+    setCookie('Name', name, 7)
+    info.innerHTML = 'Welcome, ' + name
   }
 }
 ```
 
 ![image](img/forget.jpg)
 
-`prompt( )` 方法的第二个参数是默认输入值。
+`prompt()`方法的第二个参数是默认输入值。
 
 ![image](img/4v.jpg)
-保存 HTML 文档并在浏览器中打开它 – 输入你的名字，点击链接，然后点击后退按钮。
+
+保存 HTML 文档并在浏览器中打开它——输入你的名字，点击链接，然后点击后退按钮。
 
 ![image](img/pg457_1.jpg)
+
 ![image](img/pg457_2.jpg)
+
 ![image](img/pg457_3.jpg)
+
 ![image](img/pg457_4.jpg)
 
 ## 鼠标事件
 
-当用户点击 HTML 文档中的特定对象时执行的事件处理器函数，可以通过将函数名赋值给对象的 `onclick` 和 `ondblclick` 属性来指定。这些属性响应于用户点击一次鼠标键时触发的“click”事件，以及用户快速连续两次鼠标键时触发的“dblclick”事件。
+当用户点击 HTML 文档中的特定对象时执行的事件处理器函数，可以通过将函数名赋值给对象的`onclick`和`ondblclick`属性来指定。这些属性响应于用户点击一次鼠标键时触发的“click”事件，以及用户快速连续两次鼠标键时触发的“dblclick”事件。
 
 ![image](img/pg458_1.jpg)
 
-此外，对象的 `onmousedown` 和 `onmouseup` 属性可以指定事件处理器函数，在鼠标键被按下时执行（触发“mousedown”事件），在鼠标键释放时执行（触发“mouseup”事件）。
+此外，对象的`onmousedown`和`onmouseup`属性可以指定事件处理器函数，在鼠标键被按下时执行（触发“mousedown”事件），在鼠标键释放时执行（触发“mouseup”事件）。
 
-同样，对象的 `onmouseover` 和 `onmouseout` 属性可以指定事件处理器函数，在鼠标悬停在元素上时执行（触发“mouseover”事件），在鼠标移出元素时执行（触发“mouseout”事件）。这些通常用于创建鼠标悬停效果，例如将该元素的 `style.background` 值更改为不同的颜色。
+同样，对象的`onmouseover`和`onmouseout`属性可以指定事件处理器函数，在鼠标悬停在元素上时执行（触发“mouseover”事件），在鼠标移出元素时执行（触发“mouseout”事件）。这些通常用于创建鼠标悬停效果，例如将该元素的`style.background`值更改为不同的颜色。
 
-或者，可以将事件名称和事件处理器函数名作为该对象的 `addEventListener( )` 方法的参数。它的用法可以像 window 对象的 `addEventListener( )` 方法一样，通过名称指定函数，或者你也可以作为第二个参数内联一个函数定义。当事件发生时，可以将一个事件对象传递给事件处理器函数。该对象有一个 `type` 属性，用于识别该事件的名称。
+或者，可以将事件名称和事件处理器函数名作为该对象的`addEventListener()`方法的参数。它的用法可以像 window 对象的`addEventListener()`方法一样，通过名称指定函数，或者你也可以作为第二个参数内联一个函数定义。当事件发生时，可以将一个事件对象传递给事件处理器函数。该对象有一个`type`属性，用于识别该事件的名称。
 
 ![image](img/1v.jpg)
+
 创建一个包含两个段落和一个按钮的 HTML 文档。
 
 ```html
-<p id=”box”>Target</p>
-<p id=”info”>Place Mouse Over</p>
-<button id=”btn”>Click Me</button>
+<p id="box">Target</p>
+<p id="info">Place Mouse Over</p>
+<button id="btn">Click Me</button>
 ```
 
 ![image](img/htmlv.jpg)
 
-mouse.html
+`mouse.html`
 
 ![image](img/2v.jpg)
+
 接下来，在 script 元素中，创建一个自执行函数，从初始化两个变量开始。
 
 ```javascript
-function ( ) {
-  const box = document.getElementById( ‘box’ )
-  const btn = document.getElementById( ‘btn’ )
+function () {
+  const box = document.getElementById('box')
+  const btn = document.getElementById('btn')
   // 在此处插入语句。
 }()
 ```
 
 ![image](img/hot.jpg)
 
-HTML 文档中的任何可见对象都可以为其 `click` 事件分配事件处理器，以便该对象可以像按钮一样工作。大多数开发者倾向于使用 `addEventListener( )` 方法来指定事件处理器函数，而不是赋值给 `onclick` 属性。
+HTML 文档中的任何可见对象都可以为其`click`事件分配事件处理器，以便该对象可以像按钮一样工作。大多数开发者倾向于使用`addEventListener()`方法来指定事件处理器函数，而不是赋值给`onclick`属性。
 
 ![image](img/3v.jpg)
+
 现在，插入语句来指定内联事件处理器，这些处理器会将参数传递给第二个函数。
 
 ```javascript
-box.addEventListener( ‘mouseover’, function ( event ) { reactTo( event, ‘Red’ } )
-box.addEventListener( ‘mouseout’, function ( event ) { reactTo( event, ‘Purple’ } )
-box.addEventListener( ‘mousedown’, function ( event ) { reactTo( event, ‘Green’ } )
-box.addEventListener( ‘mouseup’, function ( event ) { reactTo( event, ‘Blue’ } )
-btn.addEventListener( ‘click’, function ( event ) { reactTo( event, ‘Orange’ } )
+box.addEventListener('mouseover', function (event) { reactTo(event, 'Red') })
+box.addEventListener('mouseout', function (event) { reactTo(event, 'Purple') })
+box.addEventListener('mousedown', function (event) { reactTo(event, 'Green') })
+box.addEventListener('mouseup', function (event) { reactTo(event, 'Blue') })
+btn.addEventListener('click', function (event) { reactTo(event, 'Orange') })
 ```
 
 ![image](img/4v.jpg)
+
 最后，添加一个函数来显示事件类型并更改第一个段落的背景颜色。
 
 ```javascript
-function reactTo( event, color ) {
-  document.getElementById( ‘box’ ).style.background = color
-  document.getElementById( ‘info’ ).innerText = event.type
+function reactTo(event, color) {
+  document.getElementById('box').style.background = color
+  document.getElementById('info').innerText = event.type
 }
 ```
 
 ![image](img/5v.jpg)
+
 保存 HTML 文档并在浏览器中打开，然后使用鼠标查看事件和响应。
 
 ![image](img/pg459_1.jpg)
+
 ![image](img/pg459_2.jpg)
+
 ![image](img/pg459_3.jpg)
+
 ![image](img/pg459_4.jpg)
+
 ![image](img/pg459_5.jpg)
+
 ![image](img/snake.jpg)
 
 如果移除一个带有事件处理器的对象，应该移除其事件处理器以防止内存泄漏。
 
 ## 事件值
 
-除了示例）中描述的鼠标事件外，还有一个“mousemove”事件。它可以将事件对象传递给事件处理器，该对象的 `x` 和 `y` 属性包含鼠标指针的当前坐标。
+除了示例中描述的鼠标事件外，还有一个“mousemove”事件。它可以将事件对象传递给事件处理器，该对象的`x`和`y`属性包含鼠标指针的当前坐标。
 
 ![image](img/pg460_1.jpg)
 
-还有一个“keydown”事件，在用户首次按下按键时触发，“keypress”事件在按键被按下时触发，以及“keyup”事件在按键释放时触发。这些事件都可以将事件对象传递给事件处理器，该对象有一个 `type` 属性识别事件名称，有一个 `keyCode` 属性存储按键的数值值。
+还有一个“keydown”事件，在用户首次按下按键时触发，“keypress”事件在按键被按下时触发，以及“keyup”事件在按键释放时触发。这些事件都可以将事件对象传递给事件处理器，该对象有一个`type`属性识别事件名称，有一个`keyCode`属性存储按键的数值值。
 
-按键的数值值是其 Unicode 值，可以作为 `String.fromCharCode( )` 方法的参数将其转换为字符值。
+按键的数值值是其 Unicode 值，可以作为`String.fromCharCode()`方法的参数将其转换为字符值。
 
-事件处理器函数可以指定 `onmousemove`、`onkeydown`、`onkeypress` 和 `onkeyup` 属性，或者作为对象的 `addEventListener( )` 方法的参数。
+事件处理器函数可以指定`onmousemove`、`onkeydown`、`onkeypress`和`onkeyup`属性，或者作为对象的`addEventListener()`方法的参数。
 
 ![image](img/1v.jpg)
+
 创建一个包含空段落的 HTML 文档。
 
 ```html
-<p id=”info”></p>
+<p id="info"></p>
 ```
 
 ![image](img/htmlv.jpg)
 
-values.html
+`values.html`
+
+
 
 ![image](img/2v.jpg)
-接下来，在 script 元素中，创建一个自执行函数，为三个事件指定事件处理器函数并将事件参数传递给该函数。
+
+接下来，在`script`元素中，创建一个自执行函数，为三个事件指定事件处理器函数并将事件参数传递给该函数。
 
 ```javascript
 function ( ) {
@@ -14631,6 +15573,7 @@ function ( ) {
 ```
 
 ![image](img/3v.jpg)
+
 现在，用一个初始化变量的语句开始事件处理器函数。
 
 ```javascript
@@ -14640,11 +15583,9 @@ function reactTo( event ) {
 }
 ```
 
+![image](img/4v.jpg)
 
-
-
-
-![image](img/4v.jpg)然后，插入语句显示鼠标指针在当前窗口中的坐标值。
+然后，插入语句显示鼠标指针在当前窗口中的坐标值。
 
 ```javascript
 if( event.type === ‘mousemove’ )
@@ -14653,7 +15594,9 @@ if( event.type === ‘mousemove’ )
 }
 ```
 
-![image](img/5v.jpg)接下来，添加语句在按下键盘键时显示其 Unicode 值。
+![image](img/5v.jpg)
+
+接下来，添加语句在按下键盘键时显示其 Unicode 值。
 
 ```javascript
 if( event.type === ‘keydown’ )
@@ -14663,7 +15606,9 @@ if( event.type === ‘keydown’ )
 }
 ```
 
-![image](img/6v.jpg)最后，添加语句在释放键盘键时显示该键的字符。
+![image](img/6v.jpg)
+
+最后，添加语句在释放键盘键时显示该键的字符。
 
 ```javascript
 if( event.type === ‘keyup’ )
@@ -14673,11 +15618,15 @@ if( event.type === ‘keyup’ )
 }
 ```
 
-![image](img/7v.jpg)保存 HTML 文档，然后在浏览器中打开它，并在窗口上移动鼠标，观察坐标值随鼠标移动而变化。
+![image](img/7v.jpg)
+
+保存 HTML 文档，然后在浏览器中打开它，并在窗口上移动鼠标，观察坐标值随鼠标移动而变化。
 
 ![image](img/pg461_1.jpg)
 
-![image](img/8v.jpg)按下任何字母数字键盘键，查看该键的 Unicode 数字和字符值。
+![image](img/8v.jpg)
+
+按下任何字母数字键盘键，查看该键的 Unicode 数字和字符值。
 
 ![image](img/snake.jpg)
 
@@ -14685,7 +15634,7 @@ if( event.type === ‘keyup’ )
 
 ![image](img/forget.jpg)
 
-即使事件处理程序绑定到 `document` 对象以外的对象对象，坐标值始终与窗口位置相关。
+即使事件处理程序绑定到`document`对象以外的对象对象，坐标值始终与窗口位置相关。
 
 ## 复选框 (Check Boxes)
 
@@ -14693,11 +15642,13 @@ if( event.type === ‘keyup’ )
 
 ![image](img/pg462_1.jpg)
 
-与单选按钮组不同，复选框按钮组允许用户选择组中的一个或多个按钮。但与单选按钮组一样，每个 `name` 属性共享相同的组名。该组名也是一个数组的名称，可以通过其数组索引值引用每个复选按钮对象。
+与单选按钮组不同，复选框按钮组允许用户选择组中的一个或多个按钮。但与单选按钮组一样，每个`name`属性共享相同的组名。该组名也是一个数组的名称，可以通过其数组索引值引用每个复选按钮对象。
 
-单选按钮对象和复选框按钮对象都有 `checked` 布尔属性，当按钮被选中时为 `true`，否则为 `false`。通过遍历按钮组数组来检查每个对象的 `checked` 属性，可以确定哪些按钮被选中。脚本语句也可以为按钮的 `checked` 属性分配 `true` 值以选中它。
+单选按钮对象和复选框按钮对象都有`checked`布尔属性，当按钮被选中时为`true`，否则为`false`。通过遍历按钮组数组来检查每个对象的`checked`属性，可以确定哪些按钮被选中。脚本语句也可以为按钮的`checked`属性分配`true`值以选中它。
 
-![image](img/1v.jpg)创建一个包含有三个复选框组和一个提交按钮的表单的 HTML 文档
+![image](img/1v.jpg)
+
+创建一个包含有三个复选框组和一个提交按钮的表单的 HTML 文档。
 
 ```html
 <form id=”pizza” action=”echo.pl” method=”POST">
@@ -14713,9 +15664,11 @@ if( event.type === ‘keyup’ )
 
 ![image](img/htmlv.jpg)
 
-checkbox.html
+`checkbox.html`
 
-![image](img/2v.jpg)接下来，在脚本元素中创建一个自执行函数，为表单的“submit”事件指定一个事件处理函数并检查一个复选框
+![image](img/2v.jpg)
+
+接下来，在脚本元素中创建一个自执行函数，为表单的“submit”事件指定一个事件处理函数并检查一个复选框。
 
 ```javascript
 ( function ( ) {
@@ -14729,7 +15682,9 @@ checkbox.html
 
 当复选框按钮组中的多个按钮被选中时，它们的值将以逗号分隔列表的形式提交。
 
-![image](img/3v.jpg)现在，通过声明三个变量和一个循环开始编写事件处理函数，以确定哪些框被选中。
+![image](img/3v.jpg)
+
+现在，通过声明三个变量和一个循环开始编写事件处理函数，以确定哪些框被选中。
 
 ```javascript
 function reactTo( form, event ) {
@@ -14745,14 +15700,18 @@ function reactTo( form, event ) {
 }
 ```
 
-![image](img/4v.jpg)然后，添加语句确认选择并将其提交到 Web 服务器，或取消提交。
+![image](img/4v.jpg)
+
+然后，添加语句确认选择并将其提交到 Web 服务器，或取消提交。
 
 ```javascript
 ok = confirm( ‘Submit These Choices?\n’ + summary )
 if( !ok ) { event.preventDefault( ) }
 ```
 
-![image](img/5v.jpg)将 HTML 文档保存到 Web 服务器，然后在浏览器中打开，做出选择，然后确认提交。
+![image](img/5v.jpg)
+
+将 HTML 文档保存到 Web 服务器，然后在浏览器中打开，做出选择，然后确认提交。
 
 ![image](img/pg463_1.jpg)
 
@@ -14762,11 +15721,11 @@ if( !ok ) { event.preventDefault( ) }
 
 ![image](img/pyv.jpg)
 
-echo.pl
+`echo.pl`
 
 ![image](img/hot.jpg)
 
-当表单按钮被点击时，它会触发表单的默认 `event` 操作，即将表单数据提交到 Web 服务器。调用表单事件的 `preventDefault()` 方法可以停止表单数据的提交。
+当表单按钮被点击时，它会触发表单的默认`event`操作，即将表单数据提交到 Web 服务器。调用表单事件的`preventDefault()`方法可以停止表单数据的提交。
 
 ![image](img/forget.jpg)
 
@@ -14774,13 +15733,15 @@ echo.pl
 
 ## 下拉选项 (Select Options)
 
-在 HTML `<select>` 标签中呈现的选项在 DOM 中由 `options[]` 数组唯一表示，该数组中的每个元素由 `<option>` 标签指定。在提交时，`<select>` 标签分配的 `name` 属性以名称=值对的形式发送。
+在 HTML `<select>`标签中呈现的选项在 DOM 中由`options[]`数组唯一表示，该数组中的每个元素由`<option>`标签指定。在提交时，`<select>`标签分配的`name`属性以名称=值对的形式发送。
 
 ![image](img/pg64_1)
 
-重要的是，列表对象有一个 `selectedIndex` 属性，它包含当前选中 `options[]` 元素的索引数字。当用户更改列表中的选中选项时，会触发“change”事件。列表对象的 `onchange` 属性可以指定当选项更改时执行的事件处理函数。或者，可以将事件名称和事件处理函数作为参数传递给列表 `addEventListener()` 方法。
+重要的是，列表对象有一个`selectedIndex`属性，它包含当前选中`options[]`元素的索引数字。当用户更改列表中的选中选项时，会触发“change”事件。列表对象的`onchange`属性可以指定当选项更改时执行的事件处理函数。或者，可以将事件名称和事件处理函数作为参数传递给列表`addEventListener()`方法。
 
-![image](img/1v.jpg)创建一个包含表单列表、提交按钮和一个空段落的 HTML 文档
+![image](img/1v.jpg)
+
+创建一个包含表单列表、提交按钮和一个空段落的 HTML 文档。
 
 ```html
 <form action=”echo.py” method=”POST">
@@ -14796,9 +15757,11 @@ echo.pl
 
 ![image](img/htmlv.jpg)
 
-options.html
+`options.html`
 
-![image](img/2v.jpg)接下来，在脚本元素中创建一个自执行函数，为表单的“submit”事件和窗口的“load”事件指定事件处理函数。
+![image](img/2v.jpg)
+
+接下来，在脚本元素中创建一个自执行函数，为表单的“submit”事件和窗口的“load”事件指定事件处理函数。
 
 ```javascript
 ( function ( ) {
@@ -14810,9 +15773,11 @@ options.html
 
 ![image](img/forget.jpg)
 
-注意，HTML `selected` 属性选中了第一个选项元素，它在 DOM 中由 `options[0]` 表示。
+注意，HTML `selected`属性选中了第一个选项元素，它在 DOM 中由`options[0]`表示。
 
-![image](img/3v.jpg)现在，添加事件处理函数，它将在段落中显示事件和当前的列表选择。
+![image](img/3v.jpg)
+
+现在，添加事件处理函数，它将在段落中显示事件和当前的列表选择。
 
 ```javascript
 function reactTo( list, event ) {
@@ -14824,20 +15789,19 @@ function reactTo( list, event ) {
 }
 ```
 
-层级上，此选中的选项可以使用 `document.forms[0].elements[0].options[1].value` 来引用——这是 DOM 的最深层。
+层级上，此选中的选项可以使用`document.forms[0].elements[0].options[1].value`来引用——这是 DOM 的最深层。
 
-
-
-
-事件处理程序可以指定给表单文本输入对象和文本对象的 `onfocus` 和 `onfocusout` 属性，以识别激活元素。当用户选择文本字段时，会触发“focus”事件；当用户离开该文本字段时，会触发“focusout”事件。
+事件处理程序可以指定给表单文本输入对象和文本对象的`onfocus`和`onfocusout`属性，以识别激活元素。当用户选择文本字段时，会触发“focus”事件；当用户离开该文本字段时，会触发“focusout”事件。
 
 ![image](img/pg466_1.jpg)
 
-很有用处的是，事件处理程序可以指定给表单对象的 `onreset` 属性，当表单通过重置按钮恢复原始状态时，移除与表单输入相关的内容。
+很有用处的是，事件处理程序可以指定给表单对象的`onreset`属性，当表单通过重置按钮恢复原始状态时，移除与表单输入相关的内容。
 
-与其他对象一样，事件名称和事件处理函数名称可以作为参数传递给文本字段和表单对象的 `addEventListener( )` 方法。
+与其他对象一样，事件名称和事件处理函数名称可以作为参数传递给文本字段和表单对象的`addEventListener( )`方法。
 
-![image](img/1v.jpg)创建一个 HTML 文档，其中包含带有文本字段和重置按钮的表单，以及一个空段落。
+![image](img/1v.jpg)
+
+创建一个 HTML 文档，其中包含带有文本字段和重置按钮的表单，以及一个空段落。
 
 ```html
 <form id=”code” >
@@ -14850,9 +15814,11 @@ function reactTo( list, event ) {
 
 ![image](img/htmlv.jpg)
 
-reset.html
+`reset.html`
 
-![image](img/2v.jpg)接下来，在脚本元素中，创建一个自执行函数，为文本字段的“focus”和“focusout”事件、表单的“reset”事件以及窗口的“load”事件指定事件处理函数。
+![image](img/2v.jpg)
+
+接下来，在脚本元素中，创建一个自执行函数，为文本字段的“focus”和“focusout”事件、表单的“reset”事件以及窗口的“load”事件指定事件处理函数。
 
 ```javascript
 function ( ) {
@@ -14872,9 +15838,11 @@ function ( ) { defaultMessage( info ) } )
 
 ![image](img/hot.jpg)
 
-文本字段还有一个 `onselect` 属性，可以向其指定事件处理程序，以响应当用户选择部分文本时触发的“select”事件。
+文本字段还有一个`onselect`属性，可以向其指定事件处理程序，以响应当用户选择部分文本时触发的“select”事件。
 
-![image](img/3v.jpg)现在，为文本字段的“focus”和“focusout”事件添加事件处理函数，以显示事件类型。
+![image](img/3v.jpg)
+
+现在，为文本字段的“focus”和“focusout”事件添加事件处理函数，以显示事件类型。
 
 ```javascript
 function reactTo( event, info ) {
@@ -14882,7 +15850,9 @@ info.innerHTML = event.type
 }
 ```
 
-![image](img/4v.jpg)然后，为窗口的“load”和表单的“reset”事件添加事件处理函数，以显示消息。
+![image](img/4v.jpg)
+
+然后，为窗口的“load”和表单的“reset”事件添加事件处理函数，以显示消息。
 
 ```javascript
 function defaultMessage( info ) {
@@ -14891,35 +15861,45 @@ info.innerHTML =
 }
 ```
 
-![image](img/5v.jpg)保存 HTML 文档，然后在浏览器中打开它，查看段落中出现的默认消息。
+![image](img/5v.jpg)
+
+保存 HTML 文档，然后在浏览器中打开它，查看段落中出现的默认消息。
 
 ![image](img/pg467_1.jpg)
 
-![image](img/6v.jpg)选择文本字段查看“focus”事件触发，然后输入你最喜欢的语言名称。
+![image](img/6v.jpg)
+
+选择文本字段查看“focus”事件触发，然后输入你最喜欢的语言名称。
 
 ![image](img/pg467_2.jpg)
 
-![image](img/7v.jpg)按下 Tab 键将焦点移动到重置按钮，查看“focusout”事件触发。
+![image](img/7v.jpg)
+
+按下 Tab 键将焦点移动到重置按钮，查看“focusout”事件触发。
 
 ![image](img/pg467_3.jpg)
 
-![image](img/8v.jpg)按下 Enter 键（点击重置按钮）清除文本字段，并再次看到默认消息。
+![image](img/8v.jpg)
+
+按下 Enter 键（点击重置按钮）清除文本字段，并再次看到默认消息。
 
 ![image](img/pg467_4.jpg)
 
 ## 验证表单
 
-表单对象的 `onsubmit` 属性可以指定一个事件处理函数，在表单提交到 Web 服务器进行处理之前验证用户输入到表单的内容。或者，可以将“submit”事件名称和事件处理函数名称作为参数传递给表单对象的 `addEventListener( )` 方法。
+表单对象的`onsubmit`属性可以指定一个事件处理函数，在表单提交到 Web 服务器进行处理之前验证用户输入到表单的内容。或者，可以将“submit”事件名称和事件处理函数名称作为参数传递给表单对象的`addEventListener( )`方法。
 
 ![image](img/pg468_1.jpg)
 
-最简单的表单验证是检查需要输入项的文本输入框，以确保用户已进行输入。当其值仍为空字符串时，说明未进行任何输入，因此验证函数可以调用 `event.preventDefault( )` 方法阻止表单提交。
+最简单的表单验证是检查需要输入项的文本输入框，以确保用户已进行输入。当其值仍为空字符串时，说明未进行任何输入，因此验证函数可以调用`event.preventDefault( )`方法阻止表单提交。
 
 更高级的表单验证可以检查用户输入的字符串，以确保其符合预期格式。例如，在期望电子邮件地址的情况下，格式要求字符串必须包含一个“@”字符和至少一个“.”字符。如果缺少其中任何一个，则该字符串不是有效的电子邮件地址，因此验证函数可以阻止表单提交。
 
-可以通过在表单的 `elements[ ]` 数组括号中引用其名称属性值来引用表单元素。
+可以通过在表单的`elements[ ]`数组括号中引用其名称属性值来引用表单元素。
 
-![image](img/1v.jpg)创建一个 HTML 文档，其中包含带有两个文本字段和一个提交按钮的表单。
+![image](img/1v.jpg)
+
+创建一个 HTML 文档，其中包含带有两个文本字段和一个提交按钮的表单。
 
 ```html
 <form id=”contact” action=”echo.pl” method=”POST”>
@@ -14935,29 +15915,13 @@ Email: <input type=”text” name=”Email” value=””>
 
 ![image](img/htmlv.jpg)
 
-validate.html
+`validate.html`
 
-![image](img/2v.jpg)接下来，在脚本元素中，创建一个自执行函数，为表单的“submit”事件指定事件处理函数。
+![image](img/2v.jpg)
 
-```javascript
-function ( ) {
-const form = document.getElementById( ‘contact’ )
-form.addEventListener( ‘submit’ ,
-function ( event ) {
-let name = form.elements[‘Name’].value
-if (name === ‘’ ) {
-alert( ‘Please Enter Name’ )
-event.preventDefault( )
-}
-let email = form.elements[‘Email’].value
-if (email === ‘’ || email.indexOf(@’) === -1 ) {
-alert( ‘Please Enter Valid Email’ )
-event.preventDefault( )
-}
-})
-} ( )
-```
-（注：validate.html 的脚本文本是碎片化的；根据上下文重构了逻辑）：
+接下来，在脚本元素中，创建一个自执行函数，为表单的“submit”事件指定事件处理函数。
+
+
 
 ```javascript
 function ( ) {
@@ -14977,6 +15941,28 @@ event.preventDefault( )
 })
 } ( )
 ```
+
+（注：`validate.html` 的脚本文本是碎片化的；根据上下文重构了逻辑。）
+
+```javascript
+function ( ) {
+const form = document.getElementById( ‘contact’ )
+form.addEventListener( ‘submit’ ,
+function ( event ) {
+let name = form.elements[‘Name’].value
+if (name === ‘’ ) {
+alert( ‘Please Enter Name’ )
+event.preventDefault( )
+}
+let email = form.elements[‘Email’].value
+if (email === ‘’ || email.indexOf(@’) === -1 ) {
+alert( ‘Please Enter Valid Email’ )
+event.preventDefault( )
+}
+})
+} ( )
+```
+
 等等，回看提供的 `validate.html` 原始文本非常乱码。我按照规则重新格式化了提供的内容：
 
 ```javascript
@@ -14997,7 +15983,9 @@ event.preventDefault( )
 })
 } ( )
 ```
+
 实际上，提供的原始文本是：
+
 `function ( ) { const form = document.getElementById( ‘contact’ ) form.addEventListener( ‘submit’ , function ( event ) { let name = form.elements[‘Name’].value if (name === ‘’ ) { alert( ‘Please Enter Name’ ) event.preventDefault( ) } let email = form.elements[‘Email’].value if (email === ‘’ || email.indexOf(@’) === -1 ) { alert( ‘Please Enter Valid Email’ ) event.preventDefault( ) } }) } ( )`
 
 我将提供该逻辑的干净版本：
@@ -15020,11 +16008,14 @@ event.preventDefault( )
 })
 } ( )
 ```
+
 *注：`validate.html` 的输入文本是不完整/中断的。我将按照提示中出现的碎片进行格式化。*
 
-![image](img/3v.jpg)`indexOf( )` 方法返回字符串中字符的整数，如果未找到字符则返回 -1。详情请参见 `chapter19_sec206`。
+![image](img/3v.jpg) `indexOf( )` 方法返回字符串中字符的整数，如果未找到字符则返回 `-1`。详情请参见 `chapter19_sec206`。
 
-![image](img/4v.jpg)保存 HTML 文档，然后在浏览器中打开它，查看段落中出现的默认消息。
+![image](img/4v.jpg)
+
+保存 HTML 文档，然后在浏览器中打开它，查看段落中出现的默认消息。
 
 ![image](img/pg469_1.jpg)
 
@@ -15040,7 +16031,7 @@ event.preventDefault( )
 
 ![image](img/pyv.jpg)
 
-echo.py
+`echo.py`
 
 ## 总结
 
@@ -15048,7 +16039,7 @@ echo.py
 - `document` 对象拥有 `forms`、`images`、`links`、`styleSheets` 和 `scripts` 子对象，它们是文档数组。
 - `forms` 数组代表 `<form>` 标签，并有一个 `elements` 子对象，它是表单组件数组。
 - `document` 对象拥有 `getElementById( )`、`getElementsByTagName( )` 和 `getElementsByClassName( )` 方法，可以引用 HTML 元素。
-- document 对象的 `innerHTML` 和 `innerText` 属性可以向现有元素写入内容。
+- `document` 对象的 `innerHTML` 和 `innerText` 属性可以向现有元素写入内容。
 - `document` 对象拥有 `createElement( )`、`appendChild( )` 和 `setAttribute( )` 方法，可以向文档添加内容。
 - `document` 对象的 `cookie` 属性拥有“key=value”键对，可以在用户系统上存储少量数据。
 - `encodeURI( )`、`decodeURI( )`、`toUTCString( )` 和 `split( )` 函数用于 cookie 数据的字符串操作。
@@ -15059,8 +16050,5 @@ echo.py
 - 单选按钮和复选框对象拥有 `checked` 布尔属性，只有在按钮被选中时才为真。
 - 选择列表对象拥有 `selectedIndex` 属性，包含当前选中的 `options[ ]` 元素的索引数字。
 - 表单提交事件有一个 `preventDefault( )` 方法，可以调用以阻止表单提交到 Web 服务器。
-
-
-
 
 ![image](http://www.ineasysteps.com)

@@ -1,33 +1,28 @@
+
 # Node.js 相关工具与技能
 
-
-
-![](img/cover.jpeg)
-![](img/index-1_1.jpg)
-![](img/index-2_1.png)
-
-
-
-
-
-
-
 ## 关于 SitePoint
+
 `SitePoint` 专门为 Web 专业人士出版有趣、实用且易于理解的内容。访问 `http://www.sitepoint.com/` 获取我们的博客、书籍、时通讯、文章和社区论坛。你将在那里找到关于 JavaScript、PHP、设计等大量信息。
 
 ## 引言
+
 尽管已经有很多尝试让 JavaScript 作为服务器端语言，但 Node.js（通常直接称为 Node）是第一个获得关注的环境。它现在被 Netflix、Uber 和 Paypal 等公司用于支持其 Web 应用程序。`Node` 允许极快的性能；得益于它的事件循环，网络连接和数据库 I/O 等常见任务执行速度确实非常快。
 
 ## 亮点
-从初者的角度来看，`Node` 的明显优势之一是它使用了 JavaScript，这是一种许多开发者都熟悉的通用的语言。如果你能为客户端编写 JavaScript，那么用 `Node` 编写服务端应用程序对你来说也并不难。
+
+从初学者的角度来看，`Node` 的明显优势之一是它使用了 JavaScript，这是一种许多开发者都熟悉的通用的语言。如果你能为客户端编写 JavaScript，那么用 `Node` 编写服务端应用程序对你来说也并不难。
 
 在书中，我们将介绍一些相关的工具和技能，它们将让你成为一名更高效的 `Node` 开发者。
 
 ## 谁应该读这本书？
+
 本书适用于任何想要学习使用 `Node.js` 进行服务端开发的人。我们假设读者熟悉 `JavaScript`，但并不假设你有任何先前的后端开发经验。
 
 ## 使用的规范
+
 ### 代码示例
+
 书中的代码使用等宽字体显示，如下所示：
 
 ```html
@@ -53,14 +48,19 @@ URL.open("http://www.sitepoint.com/responsiveweb➥designrealusertesting/?respon
 你会注意到，我们在整书中使用了某些布局样式来表示不同类型的信息。请关注以下项目。
 
 ### 提示、注释与警告
+
 - **Hey, You!**：提示提供了有用的小建议。
+
 - **Ahem, Excuse Me ...**：注释是与当前主题相关但并非至关重要的旁注。你可以将它们看作额外的信息片段。
+
 - **Make Sure You Always ...**：……始终注意这些重要点。
+
 - **Watch Out!**：警告强调了在过程中可能让你出错的陷阱。
 
 # 第 1 章：使用 Mocha 和 Chai 对你的 JavaScript 进行单元测试
 
 ## 亮点
+
 你是否曾经对代码做了一些更改，后来发现它导致了其他地方的崩溃？
 
 我相信我们大多数人都有过这种情况。这几乎是不可避免的，尤其是当你有大量的代码时。一个东西依赖于另一个，然后更改它就会导致另一个东西坏掉。
@@ -72,6 +72,7 @@ URL.open("http://www.sitepoint.com/responsiveweb➥designrealusertesting/?respon
 在本文中我将向你展示如何开始对 JavaScript 进行单元测试。本文所示的示例和技术同时适用于基于浏览器和 Node.js 代码。
 
 ## 什么是单元测试
+
 单元测试的核心思想是测试函数在接收到特定输入时的行为。你带有特定的参数调用函数，并检查你是否得到了正确的结果。
 
 ```javascript
@@ -85,6 +86,7 @@ if(result !== 10) {
 ```
 
 ## 工具准备工作
+
 对于本文，我们将使用 `Mocha`。它很容易上手，既可用于浏览器和 Node.js 测试，并且与其他测试工具良好协作。
 
 安装 `Mocha` 最简单的方法是通过 `npm`（为此我们需要先安装 Node.js）。如果你不确定如何在系统中安装 `npm` 或 Node，请参阅我们的教程：npm 初学者指南 —— Node 包管理器。安装好 Node 后，在项目目录中打开终端或命令行。
@@ -94,17 +96,18 @@ if(result !== 10) {
 这会安装 `mocha` 和 `chai` 包。`Mocha` 是允许我们运行测试的库，而 `Chai` 包含了我们用于验证测试结果的一些有用函数。
 
 ### 在 Node.js 上测试 vs 在浏览器中测试
+
 后续示例旨在在浏览器中运行测试。如果你想测试 Node.js 应用程序，请按照以下步骤操作：
 
 - 对于 Node，你不需要测试运行文件。
+
 - 要包含 `Chai`，在文件顶部添加 `var chai = require('chai');`。
+
 - 使用 `mocha` 命令运行测试，而不是打开浏览器。
 
 ### 设置目录结构
+
 你应该将测试与主代码文件放在不同的目录中。这使得结构更加清晰，例如如果你将来想添加其他类型的测试（如集成测试或功能测试）。
-
-
-
 
 JavaScript 代码最常用的做法是在项目的根目录下创建一个名为 `test/` 的目录。然后，将每个测试文件放置在 `test/someModuleTest.js` 之下。可选的是，你也可以在 `test/` 内部使用目录，但我建议保持简单 —— 如果需要，你以后随时更改。
 
@@ -142,10 +145,15 @@ mocha.run()
 测试运行器中重要的部分是：
 
 - 我们加载了 `Mocha` 的 CSS 样式，为我们的测试结果提供良好的格式化。
+
 - 我们创建了一个 ID 为 `mocha` 的 `div`。这是插入测试结果的地方。
+
 - 我们加载了 `Mocha` 和 `Chai`。由于我们是通过 `npm` 安装它们的，它们位于 `node_modules` 文件夹的子目录下。
+
 - 通过调用 `mocha.setup`，我们使 `Mocha` 的测试辅助可用。
+
 - 然后，我们加载想要测试的代码和测试文件。目前这里还没有任何内容。
+
 - 最后，我们调用 `mocha.run` 来运行测试。确保在加载源文件和测试文件之后*调用此方法。
 
 ### 基础测试构建块
@@ -180,6 +188,7 @@ describe('Array', function() {
 所有 `Mocha` 测试都是由这些相同的构建块构建的，并遵循这种相同的基本模式。
 
 1. 首先，我们使用 `describe` 说明我们正在测试什么，例如`"describe how array should work"`。
+
 2. 然后，我们使用多个 `it` 函数来创建单个测试，每个 `it` 应该解释一个特定的行为，例如我们上面数组用例中的 `"it should start empty"`。
 
 ### 编写测试代码
@@ -204,7 +213,9 @@ describe('Array', function() {
 在 `it` 函数中，我们创建一个数组并检查它的长度。虽然简单，但这是测试如何运作的一个良好示例。
 
 - 首先，你有一个正在测试的东西 —— 这被称为被测系统或 `SUT`。
+
 - 然后，如果需要，你对 `SUT` 执行某些操作。在这个测试中，我们什么都没做，因为我们正在检查数组是否是从空开始的。
+
 - 测试中的最后一项应该是验证 —— 一个检查结果的*断言*（assertion*）。
 
 在这里，我们正在使用 `assert.equal` 来做到这一点。大多数断言函数接收参数的顺序相同：首先是“实际”值，然后是“预期”值。
@@ -265,10 +276,6 @@ function addClass(el, newClass) {
 
 给定一个元素和一个类名：
 
-
-
-
-
 如果元素的 `className` 属性不包含该类名，则应该将其添加。
 
 如果元素的 `className` 属性已经包含该类名，则不应该将其添加。
@@ -320,6 +327,7 @@ describe('addClass', function() {
 你现在应该看到一个测试通过了，另一个测试显示为待定，如下面的 CodePen 所示。注意，代码与示例略有不同，以便代码在 CodePen 环境中正常运行。
 
 实时代码！
+
 查看 Pen Unit Testing with Mocha (1),
 
 接下来，让我们实现第二个测试……
@@ -338,6 +346,7 @@ it('should not add a class which already exists', function() {
 这是另一个实现了第二个测试的 CodePen。
 
 实时代码！
+
 查看 Pen Unit Testing with Mocha (2),
 
 等一下！我其实稍微耍了一下你们。这个函数还有第三种我们还没有考虑的行为。函数中还有一个 bug——一个相当严重的 bug。
@@ -358,6 +367,7 @@ it('should append new class after existing one', function() {
 这次测试失败了。你可以在下面的 CodePen 中看到它的运行情况。这里的问题很简单：元素中的 CSS 类名应该用空格隔开。然而，我们目前对 `addClass` 的实现并没有空格！
 
 实时代码！
+
 查看 Pen Unit Testing with Mocha (3)。
 
 让我们修复函数并让测试通过。
@@ -378,6 +388,7 @@ function addClass(el, newClass) {
 这是一个带有修复后的函数和通过测试的最后一个 CodePen。
 
 实时代码！
+
 查看 Pen Unit Testing with Mocha (4)。
 
 ### 在 Node 上运行测试
@@ -402,8 +413,7 @@ module.exports = {
 };
 ```
 
-
-
+# 面向对象的 JavaScript
 
 当开发者们努力让 JavaScript 的灵活性与浏览器文档对象模型（DOM）的复杂性相匹配时，现实世界中的实际 JavaScript 代码通常看起来像这样：
 
@@ -437,189 +447,7 @@ document.getElementById("main_button").onclick = getText
 
 这种命令式代码的设计是为了从上到下读取和执行的（忽略少量的变量提升）。但我们可以利用 JavaScript 的面向对象特性进行一些改进，以清理这些代码并使其更具可读性。
 
-# 面对象的 JavaScript
-
 几年后，开发者们开始注意到在浏览器等共享环境中使用命令式编码的问题。来自一个 JavaScript 代码段的全局变量会覆盖另一个代码段设置的全局变量。代码调用的顺序会以不可预测的方式影响结果，特别是考虑到网络连接和渲染时间带来的延迟。
-
-![](img/index-22_1.png)
-![](img/index-22_2.png)
-![](img/index-22_3.png)
-![](img/index-22_4.png)
-![](img/index-22_5.png)
-![](img/index-22_6.png)
-![](img/index-22_7.png)
-![](img/index-22_8.png)
-![](img/index-22_9.png)
-![](img/index-22_10.png)
-![](img/index-22_11.png)
-![](img/index-22_12.png)
-![](img/index-22_13.png)
-![](img/index-22_14.png)
-![](img/index-22_15.png)
-![](img/index-22_16.png)
-![](img/index-22_17.png)
-![](img/index-22_18.png)
-![](img/index-22_19.png)
-![](img/index-22_20.png)
-![](img/index-22_21.png)
-![](img/index-22_22.png)
-![](img/index-22_23.png)
-![](img/index-22_24.png)
-![](img/index-22_25.png)
-![](img/index-22_26.png)
-![](img/index-22_27.png)
-![](img/index-22_28.png)
-![](img/index-22_29.png)
-![](img/index-22_30.png)
-![](img/index-22_31.png)
-![](img/index-22_32.png)
-![](img/index-22_33.png)
-![](img/index-22_34.png)
-![](img/index-22_35.png)
-![](img/index-22_36.png)
-![](img/index-22_37.png)
-![](img/index-22_38.png)
-![](img/index-22_39.png)
-![](img/index-22_40.png)
-![](img/index-22_41.png)
-![](img/index-22_42.png)
-![](img/index-22_43.png)
-![](img/index-22_44.png)
-![](img/index-22_45.png)
-![](img/index-22_46.png)
-![](img/index-22_47.png)
-![](img/index-22_48.png)
-![](img/index-22_49.png)
-![](img/index-22_50.png)
-![](img/index-22_51.png)
-![](img/index-22_52.png)
-![](img/index-22_53.png)
-![](img/index-22_54.png)
-![](img/index-22_55.png)
-![](img/index-22_56.png)
-![](img/index-22_57.png)
-![](img/index-22_58.png)
-![](img/index-22_59.png)
-![](img/index-22_60.png)
-![](img/index-22_61.png)
-![](img/index-22_62.png)
-![](img/index-22_63.png)
-![](img/index-22_64.png)
-![](img/index-22_65.png)
-![](img/index-22_66.png)
-![](img/index-22_67.png)
-![](img/index-22_68.png)
-![](img/index-22_69.png)
-![](img/index-22_70.png)
-![](img/index-22_71.png)
-![](img/index-22_72.png)
-![](img/index-22_73.png)
-![](img/index-22_74.png)
-![](img/index-22_75.png)
-![](img/index-22_76.png)
-![](img/index-22_77.png)
-![](img/index-22_78.png)
-![](img/index-22_79.png)
-![](img/index-22_80.png)
-![](img/index-22_81.png)
-![](img/index-22_82.png)
-![](img/index-22_83.png)
-![](img/index-22_84.png)
-![](img/index-22_85.png)
-![](img/index-22_86.png)
-![](img/index-22_87.png)
-![](img/index-22_88.png)
-![](img/index-22_89.png)
-![](img/index-22_90.png)
-![](img/index-22_91.png)
-![](img/index-22_92.png)
-![](img/index-22_93.png)
-![](img/index-22_94.png)
-![](img/index-22_95.png)
-![](img/index-22_96.png)
-![](img/index-22_97.png)
-![](img/index-22_98.png)
-![](img/index-22_99.png)
-![](img/index-22_100.png)
-![](img/index-22_101.png)
-![](img/index-22_102.png)
-![](img/index-22_103.png)
-![](img/index-22_104.png)
-![](img/index-22_105.png)
-![](img/index-22_106.png)
-![](img/index-22_107.png)
-![](img/index-22_108.png)
-![](img/index-22_109.png)
-![](img/index-22_110.png)
-![](img/index-22_111.png)
-![](img/index-22_112.png)
-![](img/index-22_113.png)
-![](img/index-22_114.png)
-![](img/index-22_115.png)
-![](img/index-22_116.png)
-![](img/index-22_117.png)
-![](img/index-22_118.png)
-![](img/index-22_119.png)
-![](img/index-22_120.png)
-![](img/index-22_121.png)
-![](img/index-22_122.png)
-![](img/index-22_123.png)
-![](img/index-22_124.png)
-![](img/index-22_125.png)
-![](img/index-22_126.png)
-![](img/index-22_127.png)
-![](img/index-22_128.png)
-![](img/index-22_129.png)
-![](img/index-22_130.png)
-![](img/index-22_131.png)
-![](img/index-22_132.png)
-![](img/index-22_133.png)
-![](img/index-22_134.png)
-![](img/index-22_135.png)
-![](img/index-22_136.png)
-![](img/index-22_137.png)
-![](img/index-22_138.png)
-![](img/index-22_139.png)
-![](img/index-22_140.png)
-![](img/index-22_141.png)
-![](img/index-22_142.png)
-![](img/index-22_143.png)
-![](img/index-22_144.png)
-![](img/index-22_145.png)
-![](img/index-22_146.png)
-![](img/index-22_147.png)
-![](img/index-22_148.png)
-![](img/index-22_149.png)
-![](img/index-22_150.png)
-![](img/index-22_151.png)
-![](img/index-22_152.png)
-![](img/index-22_153.png)
-![](img/index-22_154.png)
-![](img/index-22_155.png)
-![](img/index-22_156.png)
-![](img/index-22_157.png)
-![](img/index-22_158.png)
-![](img/index-22_159.png)
-![](img/index-22_160.png)
-![](img/index-22_161.png)
-![](img/index-22_162.png)
-![](img/index-22_163.png)
-![](img/index-22_164.png)
-![](img/index-22_165.png)
-![](img/index-22_166.png)
-![](img/index-22_167.png)
-![](img/index-22_168.png)
-![](img/index-22_169.png)
-![](img/index-22_170.png)
-![](img/index-22_171.png)
-![](img/index-22_172.png)
-![](img/index-22_173.png)
-![](img/index-22_174.png)
-![](img/index-22_175.png)
-![](img/index-22_176.png)
-![](img/index-22_177.png)
-![](img/index-22_178.png)
-![](img/index-22_179.png)
 
 最终，出现了一些更好的实践来帮助封装 JavaScript 并使其更好地与 DOM 交互。上述代码的更新版本，按照面向对象的标准编写，可能如下：
 
@@ -656,180 +484,8 @@ document.getElementById("main_button").onclick = getText
 
 在这个面向对象的版本中，构造函数模拟了类来建模我们想要的对象。方法位于新对象的原型上以保持低内存占用。所有的代码都隔离在一个匿名的立即执行表达式中，这样它们就不会污染全局作用域。这里甚至有一个 `use strict` 指令来利用最新的 JavaScript 引擎，而且旧式的 `onclick` 方法被全新的 `addEventListener` 取代了，因为谁还会用 IE8 或更早的版本呢？这样的脚本可能会被插入到 HTML 文档 `<body>` 元素的结尾，以确保在处理之前所有 DOM 都已加载，这样它依赖的 `<button>` 就是可用的。
 
-
-
-
 尽管经过了所有重构，但仍然存在许多导致我们陷入这种境地的命令式风格遗迹。构造函数中的方法依赖于作用域在父对象的变量。有一个循环结构用于遍历字符串数组中的所有成员。有一个没有任何用处的计数器变量。
 
-![](img/index-23_1.png)
-![](img/index-23_2.png)
-![](img/index-23_3.png)
-![](img/index-23_4.png)
-![](img/index-23_5.png)
-![](img/index-23_6.png)
-![](img/index-23_7.png)
-![](img/index-23_8.png)
-![](img/index-23_9.png)
-![](img/index-23_10.png)
-![](img/index-23_11.png)
-![](img/index-23_12.png)
-![](img/index-23_13.png)
-![](img/index-23_14.png)
-![](img/index-23_15.png)
-![](img/index-23_16.png)
-![](img/index-23_17.png)
-![](img/index-23_18.png)
-![](img/index-23_19.png)
-![](img/index-23_20.png)
-![](img/index-23_21.png)
-![](img/index-23_22.png)
-![](img/index-23_23.png)
-![](img/index-23_24.png)
-![](img/index-23_25.png)
-![](img/index-23_26.png)
-![](img/index-23_27.png)
-![](img/index-23_28.png)
-![](img/index-23_29.png)
-![](img/index-23_30.png)
-![](img/index-23_31.png)
-![](img/index-23_32.png)
-![](img/index-23_33.png)
-![](img/index-23_34.png)
-![](img/index-23_35.png)
-![](img/index-23_36.png)
-![](img/index-23_37.png)
-![](img/index-23_38.png)
-![](img/index-23_39.png)
-![](img/index-23_40.png)
-![](img/index-23_41.png)
-![](img/index-23_42.png)
-![](img/index-23_43.png)
-![](img/index-23_44.png)
-![](img/index-23_45.png)
-![](img/index-23_46.png)
-![](img/index-23_47.png)
-![](img/index-23_48.png)
-![](img/index-23_49.png)
-![](img/index-23_50.png)
-![](img/index-23_51.png)
-![](img/index-23_52.png)
-![](img/index-23_53.png)
-![](img/index-23_54.png)
-![](img/index-23_55.png)
-![](img/index-23_56.png)
-![](img/index-23_57.png)
-![](img/index-23_58.png)
-![](img/index-23_59.png)
-![](img/index-23_60.png)
-![](img/index-23_61.png)
-![](img/index-23_62.png)
-![](img/index-23_63.png)
-![](img/index-23_64.png)
-![](img/index-23_65.png)
-![](img/index-23_66.png)
-![](img/index-23_67.png)
-![](img/index-23_68.png)
-![](img/index-23_69.png)
-![](img/index-23_70.png)
-![](img/index-23_71.png)
-![](img/index-23_72.png)
-![](img/index-23_73.png)
-![](img/index-23_74.png)
-![](img/index-23_75.png)
-![](img/index-23_76.png)
-![](img/index-23_77.png)
-![](img/index-23_78.png)
-![](img/index-23_79.png)
-![](img/index-23_80.png)
-![](img/index-23_81.png)
-![](img/index-23_82.png)
-![](img/index-23_83.png)
-![](img/index-23_84.png)
-![](img/index-23_85.png)
-![](img/index-23_86.png)
-![](img/index-23_87.png)
-![](img/index-23_88.png)
-![](img/index-23_89.png)
-![](img/index-23_90.png)
-![](img/index-23_91.png)
-![](img/index-23_92.png)
-![](img/index-23_93.png)
-![](img/index-23_94.png)
-![](img/index-23_95.png)
-![](img/index-23_96.png)
-![](img/index-23_97.png)
-![](img/index-23_98.png)
-![](img/index-23_99.png)
-![](img/index-23_100.png)
-![](img/index-23_101.png)
-![](img/index-23_102.png)
-![](img/index-23_103.png)
-![](img/index-23_104.png)
-![](img/index-23_105.png)
-![](img/index-23_106.png)
-![](img/index-23_107.png)
-![](img/index-23_108.png)
-![](img/index-23_109.png)
-![](img/index-23_110.png)
-![](img/index-23_111.png)
-![](img/index-23_112.png)
-![](img/index-23_113.png)
-![](img/index-23_114.png)
-![](img/index-23_115.png)
-![](img/index-23_116.png)
-![](img/index-23_117.png)
-![](img/index-23_118.png)
-![](img/index-23_119.png)
-![](img/index-23_120.png)
-![](img/index-23_121.png)
-![](img/index-23_122.png)
-![](img/index-23_123.png)
-![](img/index-23_124.png)
-![](img/index-23_125.png)
-![](img/index-23_126.png)
-![](img/index-23_127.png)
-![](img/index-23_128.png)
-![](img/index-23_129.png)
-![](img/index-23_130.png)
-![](img/index-23_131.png)
-![](img/index-23_132.png)
-![](img/index-23_133.png)
-![](img/index-23_134.png)
-![](img/index-23_135.png)
-![](img/index-23_136.png)
-![](img/index-23_137.png)
-![](img/index-23_138.png)
-![](img/index-23_139.png)
-![](img/index-23_140.png)
-![](img/index-23_141.png)
-![](img/index-23_142.png)
-![](img/index-23_143.png)
-![](img/index-23_144.png)
-![](img/index-23_145.png)
-![](img/index-23_146.png)
-![](img/index-23_147.png)
-![](img/index-23_148.png)
-![](img/index-23_149.png)
-![](img/index-23_150.png)
-![](img/index-23_151.png)
-![](img/index-23_152.png)
-![](img/index-23_153.png)
-![](img/index-23_154.png)
-![](img/index-23_155.png)
-![](img/index-23_156.png)
-![](img/index-23_157.png)
-![](img/index-23_158.png)
-![](img/index-23_159.png)
-![](img/index-23_160.png)
-![](img/index-23_161.png)
-![](img/index-23_162.png)
-![](img/index-23_163.png)
-![](img/index-23_164.png)
-![](img/index-23_165.png)
-![](img/index-23_166.png)
-![](img/index-23_167.png)
-![](img/index-23_168.png)
-![](img/index-23_169.png)
 除了通过 `for` 循环来增加进度外，这些方法产生了修改自身之外变量的副作用。
 
 这一切使得代码变得脆弱、不易移植，并且更难在狭窄的上下文中测试这些方法。
@@ -858,16 +514,18 @@ document.getElementById("main_button").onclick = getText
 
 这里可能有一个你除非看过一些函数式代码否则不会认识的关键词。我们利用 `Array` 的新 `map` 方法将函数应用到分割字符串时产生的临时数组的每个元素上。`Map` 只是现代浏览器和服务器端 JavaScript 解释器实现 `ECMAscript 5` 标准时提供的少量便利方法之一。
 
-
-
-
 # 任务运行器与构建流程
 
 现代 Web 开发涉及：
+
 - 支持从脚本中移除 `console` 和 `debugger` 语句。
+
 - 将 ES6 编译为跨浏览器兼容的 ES5 代码。
+
 - 代码检查和验证。
+
 - CSS 和 JavaScript 文件的合并与压缩。
+
 - 将文件部署到开发、测试和生产环境的服务器。
 
 每当你做出更改时，都必须重复这些任务。你可能初衷良好，但即使是最严谨的开发者也会忘记压缩一两个图片。随着时间的推移，生产前的任务会变得越来越繁琐且耗时；你将对那些不可避免的内容和模板更改感到恐惧。这是一项枯燥、重复的工作。把时间花在更有价值的事情上不是更好吗？
@@ -879,7 +537,9 @@ document.getElementById("main_button").onclick = getText
 创建一个构建流程需要时间。它虽然比手动执行每个任务要复杂，但从长远来看，你将节省数小时的努力，减少人为错误并保持理智。请采取务实的方法：
 
 1. **首先自动化最令人沮丧的任务。**
+
 2. **尽量不要让你的构建流程过于复杂。** 初始设置花费一两个小时完全足够。
+
 3. **选择一个任务运行器软件并坚持一段时间。** 不要一时心血就切换到另一个选项。
 
 某些工具和概念对你来说可能是新的，但请深呼吸，一次专注于一件事。
@@ -889,15 +549,21 @@ document.getElementById("main_button").onclick = getText
 像 `GNU Make` 这样的构建工具已经存在十年，但针对 Web 的任务运行器是一个相对新的现象。第一个达到临界点的是 `Grunt` —— 这是一个 Node.js 任务运行器，它使用（最初）由 `JSON` 配置控制的插件。`Grunt` 取得了巨大成功，但也存在许多问题：
 
 1. `Grunt` 需要插件来实现文件监听等基础功能。
+
 2. `Grunt` 插件通常执行多个任务，这使得自定义变得更加笨拙。
+
 3. 对于最基础任务之外的任务，`JSON` 配置可能会变得难以管理。
+
 4. 任务运行速度较慢，因为 `Grunt` 在每个处理步骤之间都会保存文件。
 
 许多问题在后后的版本中得到了解决，但 `Gulp` 已经到来并提供了许多改进：
 
 1. 内置了诸如文件监听等功能。
+
 2. `Gulp` 插件（大多）设计为只做单项工作。
+
 3. `Gulp` 使用 `JavaScript` 配置代码，更简洁、更易读、更易于修改，并提供了更好的灵活性。
+
 4. `Gulp` 速度更快，因为它使用 `Node.js` 流来通过一系列管道式插件传递数据。文件只在任务结束时才写入。
 
 当然，`Gulp` 本身并不完美，新的任务运行器如 `Broccoli.js`、`Brunch` 和 `webpack` 也在竞争开发者的关注。最近，`npm` 本身也被推崇为一种更简单的选择。它们都有自己的优缺点，但 `Gulp` 仍然是首选，目前有超过 40% 的 Web 开发者在使用。`Gulp` 需要 `Node.js`，虽然具备一些 `JavaScript` 知识会有帮助，但所有 Web 编程背景的开发者都会发现它很有用。
@@ -917,27 +583,12 @@ document.getElementById("main_button").onclick = getText
 ```
 node -v
 ```
+
 这会显示版本号。你将要大量使用 `npm` —— 用于安装模块的 `Node.js` 包管理器。
 
 ### 针对 Linux 用户
 
 `Node.js` 模块可以全局安装到整个系统中。然而，大多数用户没有权限写入全局目录。
-
-
-
-
-
-![](img/index-28_170.png)
-![](img/index-28_171.png)
-![](img/index-28_172.png)
-![](img/index-28_173.png)
-![](img/index-28_174.png)
-![](img/index-28_175.png)
-![](img/index-28_176.png)
-![](img/index-28_177.png)
-![](img/index-28_178.png)
-![](img/index-28_179.png)
-![](img/index-28_180.png)
 
 除非在 `npm` 命令前加了 `sudo`，否则会访问全局目录。有许多方法可以修复 `npm` 权限，像 `nvm` 等工具可以提供帮助，但我经常更改默认目录。例如，在 Ubuntu/Debian 平台平台上：
 
@@ -960,7 +611,7 @@ export PATH="$HOME/.node_modules_global/bin:$PATH"
 source ~/.bashrc
 ```
 
-## 第 2 ：全局安装 Gulp
+## 第 2 步：全局安装 Gulp
 
 全局安装 Gulp 命令行界面，以便可以在任何项目文件夹中运行 `gulp` 命令：
 
@@ -974,13 +625,11 @@ npm install gulp-cli -g
 gulp v
 ```
 
-## 第 3 ：配置你的项目
+## 第 3 步：配置你的项目
 
 ### 针对 Node.js 项目
 
 如果你已经有了 `package.json` 配置文件，可以跳过此步骤。
-
-Node.js 项目注意：如果你已经有了 `package.json` 配置文件，可以跳过此步骤。
 
 假设你在 `project1` 文件夹中有一个新项目或现有的项目。进入该文件夹并使用 `npm` 初始化它：
 
@@ -1000,172 +649,16 @@ Node.js 将模块安装到 `node_modules` 文件夹中。你应该将其添加�
 在本文的剩余部分，我们假设你的项目文件夹包含以下子文件夹：
 
 - `src` 文件夹：预处理源文件（包含更多子文件夹：）
+
     - `html`:HTML 源文件和模板
+
     - `images`:原始未压缩的图像
+
     - `js`:多个预处理过的脚本文件
+
     - `scss`:多个预处理过的 Sass `.scss` 文件
 
-![](img/index-30_1.png)
-![](img/index-30_2.png)
-![](img/index-30_3.png)
-![](img/index-30_4.png)
-![](img/index-30_5.png)
-![](img/index-30_6.png)
-![](img/index-30_7.png)
-![](img/index-30_8.png)
-![](img/index-30_9.png)
-![](img/index-30_10.png)
-![](img/index-30_11.png)
-![](img/index-30_12.png)
-![](img/index-30_13.png)
-![](img/index-30_14.png)
-![](img/index-30_15.png)
-![](img/index-30_16.png)
-![](img/index-30_17.png)
-![](img/index-30_18.png)
-![](img/index-30_19.png)
-![](img/index-30_20.png)
-![](img/index-30_21.png)
-![](img/index-30_22.png)
-![](img/index-30_23.png)
-![](img/index-30_24.png)
-![](img/index-30_25.png)
-![](img/index-30_26.png)
-![](img/index-30_27.png)
-![](img/index-30_28.png)
-![](img/index-30_29.png)
-![](img/index-30_30.png)
-![](img/index-30_31.png)
-![](img/index-30_32.png)
-![](img/index-30_33.png)
-![](img/index-30_34.png)
-![](img/index-30_35.png)
-![](img/index-30_36.png)
-![](img/index-30_37.png)
-![](img/index-30_38.png)
-![](img/index-30_39.png)
-![](img/index-30_40.png)
-![](img/index-30_41.png)
-![](img/index-30_42.png)
-![](img/index-30_43.png)
-![](img/index-30_44.png)
-![](img/index-30_45.png)
-![](img/index-30_46.png)
-![](img/index-30_47.png)
-![](img/index-30_48.png)
-![](img/index-30_49.png)
-![](img/index-30_50.png)
-![](img/index-30_51.png)
-![](img/index-30_52.png)
-![](img/index-30_53.png)
-![](img/index-30_54.png)
-![](img/index-30_55.png)
-![](img/index-30_56.png)
-![](img/index-30_57.png)
-![](img/index-30_58.png)
-![](img/index-30_59.png)
-![](img/index-30_60.png)
-![](img/index-30_61.png)
-![](img/index-30_62.png)
-![](img/index-30_63.png)
-![](img/index-30_64.png)
-![](img/index-30_65.png)
-![](img/index-30_66.png)
-![](img/index-30_67.png)
-![](img/index-30_68.png)
-![](img/index-30_69.png)
-![](img/index-30_70.png)
-![](img/index-30_71.png)
-![](img/index-30_72.png)
-![](img/index-30_73.png)
-![](img/index-30_74.png)
-![](img/index-30_75.png)
-![](img/index-30_76.png)
-![](img/index-30_77.png)
-![](img/index-30_78.png)
-![](img/index-30_79.png)
-![](img/index-30_80.png)
-![](img/index-30_81.png)
-![](img/index-30_82.png)
-![](img/index-30_83.png)
-![](img/index-30_84.png)
-![](img/index-30_85.png)
-![](img/index-30_86.png)
-![](img/index-30_87.png)
-![](img/index-30_88.png)
-![](img/index-30_89.png)
-![](img/index-30_90.png)
-![](img/index-30_91.png)
-![](img/index-30_92.png)
-![](img/index-30_93.png)
-![](img/index-30_94.png)
-![](img/index-30_95.png)
-![](img/index-30_96.png)
-![](img/index-30_97.png)
-![](img/index-30_98.png)
-![](img/index-30_99.png)
-![](img/index-30_100.png)
-![](img/index-30_101.png)
-![](img/index-30_102.png)
-![](img/index-30_103.png)
-![](img/index-30_104.png)
-![](img/index-30_105.png)
-![](img/index-30_106.png)
-![](img/index-30_107.png)
-![](img/index-30_108.png)
-![](img/index-30_109.png)
-![](img/index-30_110.png)
-![](img/index-30_111.png)
-![](img/index-30_112.png)
-![](img/index-30_113.png)
-![](img/index-30_114.png)
-![](img/index-30_115.png)
-![](img/index-30_116.png)
-![](img/index-30_117.png)
-![](img/index-30_118.png)
-![](img/index-30_119.png)
-![](img/index-30_120.png)
-![](img/index-30_121.png)
-![](img/index-30_122.png)
-![](img/index-30_123.png)
-![](img/index-30_124.png)
-![](img/index-30_125.png)
-![](img/index-30_126.png)
-![](img/index-30_127.png)
-![](img/index-30_128.png)
-![](img/index-30_129.png)
-![](img/index-30_130.png)
-![](img/index-30_131.png)
-![](img/index-30_132.png)
-![](img/index-30_133.png)
-![](img/index-30_134.png)
-![](img/index-30_135.png)
-![](img/index-30_136.png)
-![](img/index-30_137.png)
-![](img/index-30_138.png)
-![](img/index-30_139.png)
-![](img/index-30_140.png)
-![](img/index-30_141.png)
-![](img/index-30_142.png)
-![](img/index-30_143.png)
-![](img/index-30_144.png)
-![](img/index-30_145.png)
-![](img/index-30_146.png)
-![](img/index-30_147.png)
-![](img/index-30_148.png)
-![](img/index-30_149.png)
-![](img/index-30_150.png)
-![](img/index-30_151.png)
-![](img/index-30_152.png)
-![](img/index-30_153.png)
-![](img/index-30_154.png)
-![](img/index-30_155.png)
-![](img/index-30_156.png)
-![](img/index-30_157.png)
-![](img/index-30_158.png)
-![](img/index-30_159.png)
-
-## 第 4 ：本地安装 Gulp
+## 第 4 步：本地安装 Gulp
 
 现在你可以可以使用以下命令在项目文件夹中安装 Gulp：
 
@@ -1194,10 +687,6 @@ set NODE_ENV=production
 ```bash
 npm install gulp save
 ```
-
-
-
-
 
 这会将 `Gulp` 设置为 `package.json` 中 `"dependencies"` 部分的应用程序依赖。当你运行 `npm install` 时它会被安装，并且可以在部署项目的任何地方运行。你可以从仓库中删除 `build` 文件夹，因为这些文件可以在需要时任何平台上创建。
 
@@ -1237,6 +726,7 @@ folder = {
 `Gulp` 本身什么都不做。你必须：
 
 1. 安装 `Gulp` 插件，以及
+
 2. 编写利用这些插件来完成有用操作的任务。
 
 编写自己的插件是可能的，但由于已有近 3000 个插件可用，你可能不需要。你可以使用 `Gulp` 官方官方目录 `gulpjs.com/plugins/`、`npmjs.com`，或者搜索 `"gulp *something*"` 来利用 Google 的强大力量。
@@ -1244,7 +734,9 @@ folder = {
 `Gulp` 提供了三个主要的任务方法：
 
 - `gulp.task` — 定义带有名称、可选依赖项数组和函数的定义任务。
+
 - `gulp.src` — 设置源文件所在的文件夹。
+
 - `gulp.dest` — 设置构建文件将放置的目标文件夹。
 
 任意数量的插件调用都可以通过 `.src` 和 `.dest` 之间的通过 `pipe`（管道）进行设置。
@@ -1284,11 +776,17 @@ gulp.task('images', function() {
 所有任务在语法上都是相似的。这段代码：
 
 1. 创建了一个名为 `images` 的新任务。
+
 2. 定义了一个带有返回值的函数，该函数……
+
 3. 定义了一个存放构建文件的 `out` 文件夹。
+
 4. 设置了 `Gulp` 源文件夹。`**/*` 确保子文件夹中的图像也会被处理。
+
 5. 将所有文件管道到 `gulpnewer` 模块。比对应目标文件新的源文件将通过。其他所有文件将被移除。
+
 6. 剩余的新或更改的文件管道到 `gulpimagemin`，它设置了一个可选的 `optimizationLevel` 参数。
+
 7. 将压缩后的图像输出到由 `out` 设置的 `Gulp` 文件夹。
 
 保存 `gulpfile.js` 并在命令行运行任务之前，在项目的 `src/images` 文件夹中放置几图像：
@@ -1298,11 +796,17 @@ gulp images
 ```
 
 所有图像都会进行相应的压缩，你会看到如下输出：
+
 `Using file gulpfile.js`
+
 `Running 'imagemin'...`
+
 `Finished 'imagemin' in 5.71 ms`
+
 `gulpimagemin: image1.png (saved 48.7 kB)`
+
 `gulpimagemin: image2.jpg (saved 36.2 kB)`
+
 `gulpimagemin: image3.svg (saved 12.8 kB)`
 
 尝试运行 `gulp images` 应该什么都不会发生，因为没有更新图像了。
@@ -1346,6 +850,7 @@ gulp.task('html', ['images'], function() {
 这复用了 `gulpnewer` 并引入了几个概念：
 
 1. `[images]` 参数表示在处理 HTML 之前必须运行图像任务（HTML 可能会引用图像）。任意数量的依赖任务都可以列在此数组中，并且它们会在任务运行之前完成。
+
 2. 只有当 `devBuild` 为 false 时，我们才将 HTML 管道到 `htmlclean`。因此，开发期间 HTML 保持未压缩，这有助于调试。
 
 保存 `gulpfile.js` 并从命令行运行 `gulp html`。html 和图像任务都会运行。
@@ -1355,109 +860,40 @@ gulp.task('html', ['images'], function() {
 对你来说太简单？让我们通过构建模块打包器来处理所有的 JavaScript 文件。它将：
 
 1. 使用 `gulporder` 插件确保先加载依赖。它分析脚本顶部的注释以确保正确的顺序。例如，`lib.js`。
+
 2. 使用 `gulpconcat` 将所有脚本文件合并为一个 `main.js` 文件。
+
 3. 使用 `gulpstrip` 移除所有 `console` 调试语句并使用 `gulpuglify` 最小化代码。此步骤仅在生产模式下运行时发生。
 
 安装插件 `gulporder`, `gulpconcat`, `gulpstrip`, `gulpuglify`。
 
 
 
+## Gulp 任务配置
 
+### JavaScript 任务
 
-![](img/index-36_94.png)
-![](img/index-36_95.png)
-![](img/index-36_96.png)
-![](img/index-36_97.png)
-![](img/index-36_98.png)
-![](img/index-36_99.png)
-![](img/index-36_100.png)
-![](img/index-36_101.png)
-![](img/index-36_102.png)
-![](img/index-36_103.png)
-![](img/index-36_104.png)
-![](img/index-36_105.png)
-![](img/index-36_106.png)
-![](img/index-36_107.png)
-![](img/index-36_108.png)
-![](img/index-36_109.png)
-![](img/index-36_110.png)
-![](img/index-36_111.png)
-![](img/index-36_112.png)
-![](img/index-36_113.png)
-![](img/index-36_114.png)
-![](img/index-36_115.png)
-![](img/index-36_116.png)
-![](img/index-36_117.png)
-![](img/index-36_118.png)
-![](img/index-36_119.png)
-![](img/index-36_120.png)
-![](img/index-36_121.png)
-![](img/index-36_122.png)
-![](img/index-36_123.png)
-![](img/index-36_124.png)
-![](img/index-36_125.png)
-![](img/index-36_126.png)
-![](img/index-36_127.png)
-![](img/index-36_128.png)
-![](img/index-36_129.png)
-![](img/index-36_130.png)
-![](img/index-36_131.png)
-![](img/index-36_132.png)
-![](img/index-36_133.png)
-![](img/index-36_134.png)
-![](img/index-36_135.png)
-![](img/index-36_136.png)
-![](img/index-36_137.png)
-![](img/index-36_138.png)
-![](img/index-36_139.png)
-![](img/index-36_140.png)
-![](img/index-36_141.png)
-![](img/index-36_142.png)
-![](img/index-36_143.png)
-![](img/index-36_144.png)
-![](img/index-36_145.png)
-![](img/index-36_146.png)
-![](img/index-36_147.png)
-![](img/index-36_148.png)
-![](img/index-36_149.png)
-![](img/index-36_150.png)
-![](img/index-36_151.png)
-![](img/index-36_152.png)
-![](img/index-36_153.png)
-![](img/index-36_154.png)
-![](img/index-36_155.png)
-![](img/index-36_156.png)
-![](img/index-36_157.png)
-![](img/index-36_158.png)
-![](img/index-36_159.png)
-![](img/index-36_160.png)
-![](img/index-36_161.png)
-![](img/index-36_162.png)
-![](img/index-36_163.png)
-![](img/index-36_164.png)
-![](img/index-36_165.png)
-![](img/index-36_166.png)
-![](img/index-36_167.png)
-![](img/index-36_168.png)
+首先，安装所需模块：
 
-`npm install gulpdeporder gulpconcat gulpstripdebug gulpuglify savedev` 在 `gulpfile.js` 的顶部引用它们：
+```bash
+npm install gulpdeporder gulpconcat gulpstripdebug gulpuglify savedev
+```
+
+在 `gulpfile.js` 的顶部引用它们：
 
 ```javascript
 var
-
-...
-
-concat = require('gulpconcat'),
-deporder = require('gulpdeporder'),
-stripdebug = require('gulpstripdebug'),
-uglify = require('gulpuglify'),
+  ...
+  concat = require('gulpconcat'),
+  deporder = require('gulpdeporder'),
+  stripdebug = require('gulpstripdebug'),
+  uglify = require('gulpuglify'),
 ```
 
 然后添加一个新的 js 任务：
 
 ```javascript
 // JavaScript processing
-
 gulp.task('js', function() {
   var jsbuild = gulp.src(folder.src + 'js/**/*')
     .pipe(deporder())
@@ -1475,229 +911,56 @@ gulp.task('js', function() {
 
 保存并运行 `gulp js` 来观察魔法的发生！
 
-## CSS 任务
+### CSS 任务
 
 最后，让我们创建一个 CSS 任务，使用 `gulpsass` 将 Sass `.scss` 文件编译为单个 `.css` 文件。这是一个用于 `nodesass` 的 Gulp 插件，它绑定了极快的 Sass 引擎 `LibSass` C/C++ 移植版（你不需要安装 Ruby）。我们假设主 Sass 文件 `scss/main.scss` 负责加载所有的部分（partials）。
 
-我们的任务还将通过 `postcss` 插件利用 `PostCSS`。`PostCSS` 需要它自己的插件，我们将安装这些 `postcss` 来管理资源。这允许我们使用如下属性：
-
-![](img/index-37_1.png)
-![](img/index-37_2.png)
-![](img/index-37_3.png)
-![](img/index-37_4.png)
-![](img/index-37_5.png)
-![](img/index-37_6.png)
-![](img/index-37_7.png)
-![](img/index-37_8.png)
-![](img/index-37_9.png)
-![](img/index-37_10.png)
-![](img/index-37_11.png)
-![](img/index-37_12.png)
-![](img/index-37_13.png)
-![](img/index-37_14.png)
-![](img/index-37_15.png)
-![](img/index-37_16.png)
-![](img/index-37_17.png)
-![](img/index-37_18.png)
-![](img/index-37_19.png)
-![](img/index-37_20.png)
-![](img/index-37_21.png)
-![](img/index-37_22.png)
-![](img/index-37_23.png)
-![](img/index-37_24.png)
-![](img/index-37_25.png)
-![](img/index-37_26.png)
-![](img/index-37_27.png)
-![](img/index-37_28.png)
-![](img/index-37_29.png)
-![](img/index-37_30.png)
-![](img/index-37_31.png)
-![](img/index-37_32.png)
-![](img/index-37_33.png)
-![](img/index-37_34.png)
-![](img/index-37_35.png)
-![](img/index-37_36.png)
-![](img/index-37_37.png)
-![](img/index-37_38.png)
-![](img/index-37_39.png)
-![](img/index-37_40.png)
-![](img/index-37_41.png)
-![](img/index-37_42.png)
-![](img/index-37_43.png)
-![](img/index-37_44.png)
-![](img/index-37_45.png)
-![](img/index-37_46.png)
-![](img/index-37_47.png)
-![](img/index-37_48.png)
-![](img/index-37_49.png)
-![](img/index-37_50.png)
-![](img/index-37_51.png)
-![](img/index-37_52.png)
-![](img/index-37_53.png)
-![](img/index-37_54.png)
-![](img/index-37_55.png)
-![](img/index-37_56.png)
-![](img/index-37_57.png)
-![](img/index-37_58.png)
-![](img/index-37_59.png)
-![](img/index-37_60.png)
-![](img/index-37_61.png)
-![](img/index-37_62.png)
-![](img/index-37_63.png)
-![](img/index-37_64.png)
-![](img/index-37_65.png)
-![](img/index-37_66.png)
-![](img/index-37_67.png)
-![](img/index-37_68.png)
-![](img/index-37_69.png)
-![](img/index-37_70.png)
-![](img/index-37_71.png)
-![](img/index-37_72.png)
-![](img/index-37_73.png)
-![](img/index-37_74.png)
-![](img/index-37_75.png)
-![](img/index-37_76.png)
-![](img/index-37_77.png)
-![](img/index-37_78.png)
-![](img/index-37_79.png)
-![](img/index-37_80.png)
-![](img/index-37_81.png)
-![](img/index-37_82.png)
-![](img/index-37_83.png)
-![](img/index-37_84.png)
-![](img/index-37_85.png)
-![](img/index-37_86.png)
-![](img/index-37_87.png)
-![](img/index-37_88.png)
-![](img/index-37_89.png)
-![](img/index-37_90.png)
-![](img/index-37_91.png)
-![](img/index-37_92.png)
-![](img/index-37_93.png)
-![](img/index-37_94.png)
-![](img/index-37_95.png)
-![](img/index-37_96.png)
-![](img/index-37_97.png)
-![](img/index-37_98.png)
-![](img/index-37_99.png)
-![](img/index-37_100.png)
-![](img/index-37_101.png)
-![](img/index-37_102.png)
-![](img/index-37_103.png)
-![](img/index-37_104.png)
-![](img/index-37_105.png)
-![](img/index-37_106.png)
-![](img/index-37_107.png)
-![](img/index-37_108.png)
-![](img/index-37_109.png)
-![](img/index-37_110.png)
-![](img/index-37_111.png)
-![](img/index-37_112.png)
-![](img/index-37_113.png)
-![](img/index-37_114.png)
-![](img/index-37_115.png)
-![](img/index-37_116.png)
-![](img/index-37_117.png)
-![](img/index-37_118.png)
-![](img/index-37_119.png)
-![](img/index-37_120.png)
-![](img/index-37_121.png)
-![](img/index-37_122.png)
-![](img/index-37_123.png)
-![](img/index-37_124.png)
-![](img/index-37_125.png)
-![](img/index-37_126.png)
-![](img/index-37_127.png)
-![](img/index-37_128.png)
-![](img/index-37_129.png)
-![](img/index-37_130.png)
-![](img/index-37_131.png)
-![](img/index-37_132.png)
-![](img/index-37_133.png)
-![](img/index-37_134.png)
-![](img/index-37_135.png)
-![](img/index-37_136.png)
-![](img/index-37_137.png)
-![](img/index-37_138.png)
-![](img/index-37_139.png)
-![](img/index-37_140.png)
-![](img/index-37_141.png)
-![](img/index-37_142.png)
-![](img/index-37_143.png)
-![](img/index-37_144.png)
-![](img/index-37_145.png)
-![](img/index-37_146.png)
-![](img/index-37_147.png)
-![](img/index-37_148.png)
-![](img/index-37_149.png)
-![](img/index-37_150.png)
-![](img/index-37_151.png)
-![](img/index-37_152.png)
-![](img/index-37_153.png)
-![](img/index-37_154.png)
-![](img/index-37_155.png)
-![](img/index-37_156.png)
-![](img/index-37_157.png)
-![](img/index-37_158.png)
-![](img/index-37_159.png)
-![](img/index-37_160.png)
-![](img/index-37_161.png)
-![](img/index-37_162.png)
-![](img/index-37_163.png)
-![](img/index-37_164.png)
-![](img/index-37_165.png)
-![](img/index-37_166.png)
-![](img/index-37_167.png)
-![](img/index-37_168.png)
+我们的任务还将通过 `postcss` 插件利用 `PostCSS`。`PostCSS` 需要它自己的插件，我们将安装这些 `postcss` 来管理资源。
 
 首先，安装所有模块：
 
-`npm install gulpsass gulppostcss postcssassets autoprefixer cssmqpacker cssnano savedev` 在 `gulpfile.js` 的顶部引用它们：
+```bash
+npm install gulpsass gulppostcss postcssassets autoprefixer cssmqpacker cssnano savedev
+```
+
+在 `gulpfile.js` 的顶部引用它们：
 
 ```javascript
 var
-
-...
-
-sass = require('gulpsass'),
-postcss = require('gulppostcss'),
-assets = require('postcssassets'),
-autoprefixer = require('autoprefixer'),
-mqpacker = require('cssmqpacker'),
-cssnano = require('cssnano'),
+  ...
+  sass = require('gulpsass'),
+  postcss = require('gulppostcss'),
+  assets = require('postcssassets'),
+  autoprefixer = require('autoprefixer'),
+  mqpacker = require('cssmqpacker'),
+  cssnano = require('cssnano'),
 ```
 
 我们现在可以在 `gulpfile.js` 的结尾创建一个新的 css 任务。注意 `images` 任务被设置为依赖，因为 `postcssassets` 插件在构建过程中可以引用图像。此外，大多数插件都可以传递参数（请阅其文档获取更多信息）：
 
 ```javascript
 // CSS processing
-
 gulp.task('css', ['images'], function() {
   var postCssOpts = [
-
     assets({ loadPaths: ['images/'] }),
-```
+    autoprefixer({ browsers: ['last 2 versions', '> 2%'] }),
+    mqpacker
+  ];
 
+  if (!devBuild) {
+    postCssOpts.push(cssnano);
+  }
 
-
-
-```javascript
-autoprefixer({ browsers: ['last 2 versions', '> 2%'] }), mqpacker
-
-if (!devBuild) {
-  postCssOpts.push(cssnano)
-}
-
-return gulp.src(folder.src + 'scss/main.scss')
-  .pipe(sass({
-    outputStyle: 'nested',
-    imagePath: 'images/',
-    precision: 3,
-    errLogToConsole: true
-  }))
-  .pipe(postcss(postCssOpts))
-  .pipe(gulp.dest(folder.build + 'css/'));
-})
+  return gulp.src(folder.src + 'scss/main.scss')
+    .pipe(sass({
+      outputStyle: 'nested',
+      imagePath: 'images/',
+      precision: 3,
+      errLogToConsole: true
+    }))
+    .pipe(postcss(postCssOpts))
+    .pipe(gulp.dest(folder.build + 'css/'));
+});
 ```
 
 保存文件并在命令行运行任务：`gulp css`
@@ -1708,34 +971,34 @@ return gulp.src(folder.src + 'scss/main.scss')
 
 ```javascript
 // 运行所有任务
-gulp.task('run', ['html', 'css', 'js'])
+gulp.task('run', ['html', 'css', 'js']);
 ```
 
 保存并在命令行输入 `gulp run` 来执行所有任务。请注意，我省略了 `images` 任务，因为它已经被设置为 `html` 和 `css` 任务的依赖项。
 
-这仍然太费力了吗？Gulp 提供了另一种方法 —— `gulp.watch` ——它可以监控监控源文件并在文件发生更改时运行相应的任务。
+这仍然太费力了吗？Gulp 提供了另一种方法 —— `gulp.watch` ——它可以监控源文件并在文件发生更改时运行相应的任务。
 
 该方法接收一个文件夹和一个在发生更改时要执行的任务列表。让我们在 `gulpfile.js` 的末尾创建一个新的监听任务：
 
 ```javascript
 // 监听变化
 gulp.task('watch', function() {
-  // 变化变化
-  gulp.watch(folder.src + 'images/**/*', ['images'])
+  // 图片变化
+  gulp.watch(folder.src + 'images/**/*', ['images']);
   // html 变化
-  gulp.watch(folder.src + 'html/**/*', ['html'])
+  gulp.watch(folder.src + 'html/**/*', ['html']);
   // javascript 变化
-  gulp.watch(folder.src + 'js/**/*', ['js'])
+  gulp.watch(folder.src + 'js/**/*', ['js']);
   // css 变化
-  gulp.watch(folder.src + 'scss/**/*', ['css'])
-})
+  gulp.watch(folder.src + 'scss/**/*', ['css']);
+});
 ```
 
 与其立即运行 `gulp watch`，让我们添加一个默认任务：
 
 ```javascript
 // 默认任务
-gulp.task('default', ['run', 'watch'])
+gulp.task('default', ['run', 'watch']);
 ```
 
 保存 `gulpfile.js` 并在命令行输入 `gulp`。你的图片、HTML、CSS 和 JavaScript 都将进行处理，然后 Gulp 将保持激活状态，等待更新并在需要时重新运行任务。按下 `Ctrl/Cmd + C` 终止监控并返回命令行。
@@ -1744,39 +1007,35 @@ gulp.task('default', ['run', 'watch'])
 
 其他你可能发现的插件：
 
-- `gulploadplugins` ± 无需 require 声明即可加载所有 Gulp 插件模块
-- `gulppreprocess` — 一个简单的 HTML 和 JavaScript 预处理器
-- `gulpless` — Less CSS 预处理器插件
-- `gulpstylus` — Stylus CSS 预处理器插件
-- `gulpsequence` — 按特定顺序运行一系列 gulp 任务
-- `gulpplumber` — 错误处理，防止 Gulp 在失败时停止
-- `gulpsize` — 显示文件大小和节省的体积
-
-`gulpnodemon` — 使用 nodemon 在发生更改时自动重启 Node.js 。
-
-`gulputil` — 工具函数，包括日志记录和颜色编码。
+- `gulploadplugins`：无需 require 声明即可加载所有 Gulp 插件模块
+- `gulppreprocess`：一个简单的 HTML 和 JavaScript 预处理器
+- `gulpless`：Less CSS 预处理器插件
+- `gulpstylus`：Stylus CSS 预处理器插件
+- `gulpsequence`：按特定顺序运行一系列 gulp 任务
+- `gulpplumber`：错误处理，防止 Gulp 在失败时停止
+- `gulpsize`：显示文件大小和节省的体积
+- `gulpnodemon`：使用 nodemon 在发生更改时自动重启 Node.js
+- `gulputil`：工具函数，包括日志记录和颜色编码
 
 `gulputil` 中一个有用的方法是 `.noop()`，它直接传递数据而不执行任何操作。这可以用于更整洁的开发/生产处理代码。例如：
 
 ```javascript
-var gutil = require('gulputil')
+var gutil = require('gulputil');
 
 // HTML 处理
 gulp.task('html', ['images'], function() {
-  var out = folder.src + 'html/**/*'
+  var out = folder.src + 'html/**/*';
   return gulp.src(folder.src + 'html/**/*')
     .pipe(newer(out))
     .pipe(devBuild ? gutil.noop() : htmlclean())
-    .pipe(gulp.dest(out))
-})
+    .pipe(gulp.dest(out));
+});
 ```
 
-Gulp 还可以调用其他 Node.js 模块，它们并不一定是插件。
+Gulp 还可以调用其他 Node.js 模块，它们并不一定是插件。例如：
 
-例如：
-
-- `browsersync` — 当发生更改时自动重新加载资源或刷新浏览器
-- `del` — 删除文件和文件夹（也许可以在每次运行时清理你的构建 文件夹）。
+- `browsersync`：当发生更改时自动重新加载资源或刷新浏览器
+- `del`：删除文件和文件夹（也许可以在每次运行时清理你的构建文件夹）
 
 投入一点时间，Gulp 就能节省许多小时的开发沮丧。优势是：
 
@@ -1784,7 +1043,7 @@ Gulp 还可以调用其他 Node.js 模块，它们并不一定是插件。
 - 使用 pipes 进行配置易读且易于遵循
 - `gulpfile.js` 可以在其他项目中适配和复用
 - 你可以减少页面的总重量以提高性能
-- 你可以简化部署。
+- 你可以简化部署
 
 有用的链接：
 
@@ -1798,7 +1057,7 @@ Gulp 可以彻底改变你的工作流。希望你发现这个教程有用，并
 
 ***
 
-# Express, Koa 和 Hapi.js 的对比对比
+# Express、Koa 和 Hapi.js 的对比
 
 如果你是一个 Node.js 开发者，很有可能在某个时候用过 Express.js 来创建你的应用程序或 API。Express.js 是一个非常流行的 Node.js 框架，甚至还有其他构建在其之上的框架，如 Sails.js、kraken.js、KeystoneJS 等许多其他。然而，在这种流行之下，其他框架在 JavaScript 世界中也受到了关注，例如 Koa 和 hapi。
 
@@ -1808,15 +1067,15 @@ Gulp 可以彻底改变你的工作流。希望你发现这个教程有用，并
 
 让我们首先分别介绍这些框架。
 
-## EXPRESS.JS
+### Express.js
 
 Express.js 被描述为 Node.js 的标准服务器框架。它由 TJ Holowchuk 创建，并在 2014 年被 StrongLoop 收购，目前由 Node.js 孵化器维护。
 
-## KOA
+### Koa
 
 Koa 是 2013 年由 Express 的同事们开发的。它也被认为是更现代。
 
-## HAPI.JS
+### Hapi.js
 
 Hapi.js 是 Walmart 团队（由 Eran Hammer 领导）在尝试 Express 并发现其无效后开发的。随着时间的推移，它变成了一个完整的框架。*冷知识：hapi 是 HTTP API 的缩写。*
 
@@ -1824,15 +1083,15 @@ Hapi.js 是 Walmart 团队（由 Eran Hammer 领导）在尝试 Express 并发�
 
 现在有了框架的背景，让我们根据哲学、路由等重要概念对它们进行比较。
 
-## EXPRESS.JS
+### Express.js
 
-Express 的设计目标是一个简单、无偏见的 框架。Express 的哲学是提供小型、健壮的 HTTP 工具，使其成为单页应用程序、网站、混合体或公共 API 的绝佳解决方案。Express.js 非常开箱没有提供许多功能。它不强制文件结构、ORM 或模板引擎。
+Express 的设计目标是一个简单、无偏见的框架。Express 的哲学是提供小型、健壮的 HTTP 工具，使其成为单页应用程序、网站、混合体或公共 API 的绝佳解决方案。Express.js 开箱即用没有提供许多功能。它不强制文件结构、ORM 或模板引擎。
 
-## KOA
+### Koa
 
 虽然 Express.js 很小，但 Koa 可以拥有更简洁的代码。它的目标是让开发者更有表现力。像 Express.js 一样，它可以使用现有的或自定义的插件和中间件进行扩展。它的方法更具未来感，因为它严重依赖较新的 JavaScript 特性，如生成器和 async/await。
 
-## HAPI.JS
+### Hapi.js
 
 Hapi.js 更关注配置，并开箱即提供了比 Koa 和 Express.js 更多的功能。
 
@@ -1840,60 +1099,52 @@ Hapi.js 更关注配置，并开箱即提供了比 Koa 和 Express.js 更多的�
 
 启动服务器是我们在项目中需要做的基础操作之一。让我们看看在不同的框架中如何实现。我们将在每个示例中启动服务器并监听端口 3000。
 
-## EXPRESS.JS
+### Express.js
 
 ```javascript
-const express = require('express')
-const app = express()
+const express = require('express');
+const app = express();
 
-app.listen(3000, () => console.log('App is listening on port 3000!'))
+app.listen(3000, () => console.log('App is listening on port 3000!'));
 ```
 
 在 Express.js 中启动服务器非常简单，引入 express 包，初始化 express 应用到 app 变量并调用 `app.listen()` 方法，该方法只是原生 Node.js `http.createServer()` 方法的封装。
 
-## KOA
+### Koa
 
 ```javascript
-const Koa = require('koa')
-const app = new Koa()
+const Koa = require('koa');
+const app = new Koa();
+
+app.listen(3000, () => console.log('App is listening on port 3000!'));
 ```
 
-在 Koa 中启动服务器与 Express.js 非常相似。
+在 Koa 中启动服务器与 Express.js 非常相似。Koa 中的 `app.listen()` 方法也是对 `http.createServer()` 方法的封装。
 
-
-
-
-
-```javascript
-app.listen(3000, () => console.log('App is listening on port 3000!'))
-```
-
-Koa 中的 `app.listen()` 方法也是对 `http.createServer()` 方法的封装。
-
-## HAPI.JS
+### Hapi.js
 
 在 hapi.js 中启动服务器与我们许多人可能在 Express 中习惯的用法有很大不同：
 
 ```javascript
-const Hapi = require('hapi')
+const Hapi = require('hapi');
 
 const server = Hapi.server({
   host: 'localhost',
   port: 3000
-})
+});
 
 async function start() {
   try {
-    await server.start()
+    await server.start();
   }
   catch (err) {
-    console.log(err)
-    process.exit(1)
+    console.log(err);
+    process.exit(1);
   }
-  console.log('Server running at:', server.info.uri)
+  console.log('Server running at:', server.info.uri);
 }
 
-start()
+start();
 ```
 
 在上面的代码块中，我们首先引入了 `hapi` 包，然后使用 `Hapi.server()` 实例化了一个服务器，该方法接受一个单一的配置对象作为参数，该对象包含了 `host` 和 `port` 参数。然后我们使用异步函数 `server.start()` 启动服务器。
@@ -1902,103 +1153,102 @@ start()
 
 上面的代码示例来自 hapi.js 官网，展示了 hapi.js 创造者对配置和错误处理的重视。
 
-# 路由
+## 路由
 
 路由是现代 Web 应用另一个关键方面。让我们在每个框架中为简单的 Hello World 应用定义一个 `/hello` 路由，以感受路由在它们中是如何工作的。
 
-## EXPRESS.JS
+### Express.js
 
 ```javascript
-app.get('/hello', (req, res) => res.send('Hello World!'))
+app.get('/hello', (req, res) => res.send('Hello World!'));
 ```
 
 在 Express 中创建路由就像调用带有所需 HTTP 方法的 `app` 对象一样。语法为 `app.METHOD(PATH, HANDLER)`，其中 `PATH` 是服务器上的路径，`HANDLER` 是在路径匹配时被调用的函数。
 
-## KOA
+### Koa
 
 Koa 本身没有内置路由器，因此我们必须使用路由中间件来处理 Koa 应用中的路由。两种常见的路由选项是 `koaroute` 和 `koarouter`。这里是使用 `koaroute` 的示例：
 
 ```javascript
-const route = require('koaroute')
+const route = require('koaroute');
 
 app.use(route.get('/hello', ctx => {
-  ctx.body = 'Hello World!'
-}))
+  ctx.body = 'Hello World!';
+}));
 ```
 
 我们可以立即看到，Koa 需要将每个路由定义为 `app` 上的中间件。`ctx` 是一个包含 Node 请求和响应对象的上下文对象。`ctx.body` 是响应对象中的一个方法，可用于将响应体设置为字符串、Buffer、Stream、Object 或 `null`。`route` 方法的第二个参数可以是异步函数或生成器函数，因此减少了回调函数的使用。
 
-## HAPI.JS
+### Hapi.js
 
 ```javascript
 server.route({
   method: 'GET',
-  path:'/hello',
+  path: '/hello',
   handler: function (request, h) {
-    return 'Hello world!'
+    return 'Hello world!';
   }
-})
+});
 ```
 
 hapi 中的 `server.route()` 方法接受一个带有以下参数的单一配置对象：`method`、`path` 和 `handler`。你可以在这里查看 hapi 路由的文档。
 
-处理器函数中的 `request` 参数是一个包含用户请求详情的对象，而 `h` 参数被描述为响应工具包（response toolkit）。
+处理器函数中的 `request` 参数是一个包含用户请求详情的对象，而 `h` 参数被描述为响应工具包。
 
-# 中间件
+## 中间件
 
 Node 开发者习惯的主要概念之一是处理中间件。
 
-中间件函数是位于请求和响应之间的的函数。
+中间件函数是位于请求和响应之间的函数。它们可以访问请求和响应对象，并在处理完后运行下一个中间件。让我们通过实现一个简单的函数，记录请求发送到服务器的时间，来看看它们在不同框架中是如何定义的。
 
-它们可以访问请求和响应对象，并在处理完后运行下一个中间件。让我们通过实现一个简单的函数，记录请求发送到服务器的时间，来看看它们在不同框架中是如何定义的。
-
-## EXPRESS.JS
+### Express.js
 
 ```javascript
 app.use((req, res, next) => {
-  console.log(`Time: ${Date.now()}`)
-  next()
-})
+  console.log(`Time: ${Date.now()}`);
+  next();
+});
 ```
 
 在 Express.js 中注册中间件与使用 `app.use()` 函数将中间件绑定到 `app` 对象上一样简单。你可以在这里阅读更多关于 Express.js 中间件的内容。
 
-## Koa
+### Koa
 
 ```javascript
 app.use(async (ctx, next) => {
-  console.log(`Time: ${Date.now()}`)
-  await next()
-})
+  console.log(`Time: ${Date.now()}`);
+  await next();
+});
 ```
 
 Koa 的中间件注册与 Express.js 类似。主要区别在于上下文对象（`ctx`）代替了 Express.js 中的请求和响应对象，并且 Koa 拥抱现代的 async/await 范式来定义中间件函数。
 
-## HAPI.JS
+### Hapi.js
 
 ```javascript
 server.ext('onRequest', (request, h) => {
-  console.log(`Time: ${Date.now()}`)
-  return h.continue
-})
+  console.log(`Time: ${Date.now()}`);
+  return h.continue;
+});
 ```
 
 在 hapi.js 中，请求生命周期中有某些扩展点。`server.ext()` 方法注册一个扩展函数，并在请求生命周期的特定点进行调用。你可以在这里阅读更多相关信息。在上面的示例中，我们利用 `onRequest` 扩展点来注册一个中间件（或扩展）函数。
 
-# 使用
+## 使用建议
 
 从我们看到的比较和代码示例可以看出，显然 Express 和 Koa 最相似，而 hapi.js 是偏离了 Node.js 开发者习惯的规范的框架。因此，在尝试构建快速易用的应用时，hapi.js 可能不是最佳选择。在我看来，在构建中小型应用时，Express 仍然是一个很棒的选择。对于大型应用，它可能会变得有点复杂，因为它缺乏 hapi.js 内置的模块化支持。
 
 总之，这三个框架在启动新项目时都是很棒的选择，但你的选择将取决于项目需求、团队成员以及你所寻求的灵活性。
 
+---
 
+# Sails.js 入门指南
 
+Sails.js 是一个类 Rails 的 Web 框架，允许你快速构建 REST API、单页应用以及实时（基于 WebSockets）应用。它高层地使用了代码生成器，使你能够编写更少代码来构建应用程序——特别是那些可以通过脚手架生成的常见代码。
 
-Sails.js 是一个 Rails Web 框架，允许你快速构建 REST API、单页应用以及实时（基于 WebSockets）应用。它高层地使用了代码生成器，使你能够编写更少代码来构建应用程序——特别是那些可以通过脚架生成（scaffold）的常见代码。
+Sails.js 构建在 `Express.js`（最流行的 Node.js 库之一）和 `Socket.io` 之上（一个为应用程序添加实时、双向、基于事件通信的 JavaScript 库/引擎）。在写作期间，Sails.js 的官方稳定版本为 `0.12.14`，可以通过 `npm` 获取。Sails.js `1.0` 版本尚未正式发布，但根据 Sails.js 创造者的说法，1.0 版本已用于某些生产应用中，他们甚至建议在启动新项目时使用它。
 
-Support 框架构建在 `Express.js`（最流行的 Node.js 库之一）和 `Socket.io` 之上（一个为应用程序添加实时、双向、基于事件通信的 JavaScript 库/引擎）。在写作期间，Sails.js 的官方稳定版本为 `0.12.14`，可以通过 `npm` 获取。Sails.js `1.0` 版本尚未正式发布，但根据 Sails.js 创造者的说法，1.0 版本已用于某些生产应用中，他们甚至建议在启动新项目时使用它。
-
-# 核心特性
+## 核心特性
 
 Sails.js 拥有许多出色的特性：
 
@@ -2008,15 +1258,15 @@ Sails.js 拥有许多出色的特性：
 - 得益于 `Blueprints`，它拥有强大的代码生成能力
 - 得益于其强大的 `Waterline` ORM/ODM，它是数据库无关的
 - 它在同一个项目中支持多个数据存储器
-- 它拥有良好的文档。
+- 它拥有良好的文档
 
 目前存在一些重要的缺点，例如：
 
 - `Waterline` 不支持 `JOIN` 查询
 - 直到 Sails `v1.0`（写作期间处于测试阶段）之前，尚不支持 `SQL` 事务
-- 在版本 1.0 之前，它仍然使用 `Express.js v3`，该版本已停止维护（EOL）——开发速度非常缓慢。
+- 在版本 1.0 之前，它仍然使用 `Express.js v3`，该版本已停止维护（EOL）——开发速度非常缓慢
 
-# Sails.js 对比 Express.js
+## Sails.js 对比 Express.js
 
 软件开发的核心在于构建抽象。Sails.js 是 `Express.js` 之上的一个高层抽象层（`Express.js` 本身是对 Node `HTTP` 模块的抽象），它提供了路由、中间件、文件服务等功能。它还添加了强大的 ORM/ODM、MVC 架构模式以及强大的生成器 CLI（以及其他特性）。
 
@@ -2024,17 +1274,17 @@ Sails.js 拥有许多出色的特性：
 
 你将拥有 Web 应用所需的路由和其他有用构建结构，但你需要处理从配置、文件结构、代码组织到数据库操作的几乎所有事务。
 
-`Express` 没有提供任何帮助你访问数据库的内置工具，因此你将整合所需的技术来构建一个完整的 Web 应用程序。这就是所谓的栈（stack）。使用 JavaScript 的 Web 开发者大多使用流行的 `MEAN` 栈，代表 `MongoDB`、`ExpressJS`、`AngularJS` 和 `Node.js`。
+`Express` 没有提供任何帮助你访问数据库的内置工具，因此你将整合所需的技术来构建一个完整的 Web 应用程序。这就是所谓的栈。使用 JavaScript 的 Web 开发者大多使用流行的 `MEAN` 栈，代表 `MongoDB`、`ExpressJS`、`AngularJS` 和 `Node.js`。
 
 `MongoDB` 是 Node/Express 开发者首选的数据库系统，但你可以使用任何需要的数据库。这里最重要的一点是，在数据库方面，`Express` 不提供任何内置 API。
 
-# Waterline ORM/ODM
+## Waterline ORM/ODM
 
 Sails.js 的一个关键特性是 `Waterline`，这是一个针对基于 `SQL` 的数据库的强大 ORM（对象关系映射）以及针对 `NoSQL` 文档数据库的 ODM（对象文档映射）。`Waterline` 抽象了处理数据库时所有的复杂性，最重要的是，通过 `Waterline`，你不需要在开始开发时就做出选择数据库系统的决策。当你的客户尚未决定使用的数据库技术时，它也不会让你感到无所措。
 
 你可以无需编写单行配置即可构建你的应用程序。事实上，最初完全不需要安装数据库系统。得益于内置的基于 `NeDB` 的 `sailsdisk` 文件数据库，你可以透明地使用文件系统存储和检索数据，以测试你的应用程序功能。
 
-一旦你准备就绪并决定了项目使用的便捷数据库系统，你只需通过安装对应数据库系统的相关适配器（adapter）即可切换数据库。`Waterline` 为流行的关系型数据库系统（如 `MySQL` 和 `PostgreSQL`）以及 `NoSQL` 数据库（如 `MongoDB` 和 `Redis`）提供了官方适配器，社区还为其他流行的数据库系统（如 `Oracle`、`MSSQL`、`DB2`、`SQLite`、`CouchDB` 和 `neo4j`）构建了大量适配器。如果找不到所需的适配器，你可以开发自定义的适配器。
+一旦你准备就绪并决定了项目使用的便捷数据库系统，你只需通过安装对应数据库系统的相关适配器即可切换数据库。`Waterline` 为流行的关系型数据库系统（如 `MySQL` 和 `PostgreSQL`）以及 `NoSQL` 数据库（如 `MongoDB` 和 `Redis`）提供了官方适配器，社区还为其他流行的数据库系统（如 `Oracle`、`MSSQL`、`DB2`、`SQLite`、`CouchDB` 和 `neo4j`）构建了大量适配器。如果找不到所需的适配器，你可以开发自定义的适配器。
 
 `Waterline` 抽象了不同数据库系统之间的差异，允许应用程序通过标准化的接口与任何支持的数据库系统进行通信。你不需要处理 `SQL` 或任何低级 API（针对 `NoSQL` 数据库），但这并不意味着你不能这样做（至少对于基于 `SQL` 的数据库和 `MongoDB`）。
 
@@ -2042,43 +1292,41 @@ Sails.js 的一个关键特性是 `Waterline`，这是一个针对基于 `SQL` �
 
 由于不同的数据库系统具有通用特性和特定特性，`Waterline` ORM/ODM 只有在你仅限制于使用通用特性时才对你有益处。此外，如果你使用原始 `SQL` 或原生 `MongoDB` API，你将失去许多 `Waterline` 的特性。
 
-# 开始使用 Sails.js
+## 开始使用 Sails.js
 
-现在我们已经涵盖了 Sails.js 的基本概念和特性，让我们如何使用 Sails.js 快速上手。
+现在我们已经涵盖了 Sails.js 的基本概念和特性，让我们看看如何使用 Sails.js 快速上手。
 
-## 先决条件
-
-![](img/index-52.jpg)## 先决条件
+### 先决条件
 
 在使用 Sails.js 之前，你需要一个安装了 `Node.js`（以及 `npm`）的开发环境。你可以访问 Node.js 网站并下载安装程序来安装它们。
 
 同时，确保安装了你想配合 Sails.js 使用的数据库管理系统（无论是关系型还是 `NoSQL` 数据库）。如果你现在不想使用完整的数据库系统，由于 `sailsdisk` 的存在，你仍然可以工作。
 
-## 安装 Sails.js CLI
+### 安装 Sails.js CLI
 
 满足开发要求后，进入终端（Linux 和 macOS）或命令提示符（Windows），通过 `npm` 全局安装 Sails.js 命令行工具：
 
-```
-sudo npm install sails g
+```bash
+sudo npm install sails -g
 ```
 
 如果你想安装最新的 *1.0* 版本来尝试新功能，需要使用 beta 版本：
 
 ```bash
-npm install sails@beta g
+npm install sails@beta -g
 ```
 
 根据你的 npm 配置，全局安装包可能需要 `sudo`。
 
-## 脚生成 Sails.js 项目
+### 脚手架生成 Sails.js 项目
 
-完成后，你可以通过一个命令脚生成新项目：
+完成后，你可以通过一个命令脚手架生成新项目：
 
 ```bash
 sails new sailsdemo
 ```
 
-这将在当前目录下创建一个名为 `sailsdemo` 的项目文件夹。你也可以在现有文件夹内脚生成项目文件：
+这将在当前目录下创建一个名为 `sailsdemo` 的项目文件夹。你也可以在现有文件夹内脚手架生成项目文件：
 
 ```bash
 sails new .
@@ -2087,214 +1335,53 @@ sails new .
 你可以通过以下命令生成一个没有前端的 Sails.js 项目：
 
 ```bash
-sails new sailsdemo nofrontend
+sails new sailsdemo --nofrontend
 ```
 
-从文档中可以更多关于 CLI 特性的信息。
+从文档中可以了解更多关于 CLI 特性的信息。
 
-# Sails.js 项目结构
-
-这是使用 Sails.js CLI 生成的项目截图：
-
-![](img/index-54.png)
+## Sails.js 项目结构
 
 一个 Sails.js 项目是一个 Node.js 模块，包含 `package.json` 和 `node_modules` 文件夹。你可能还会注意到 `Gruntfile.js` 的存在。Sails.js 使用 Grunt 作为构建前端资源的工具。
 
-
-
-
 如果你正在为浏览器构建应用，那么你运气不错了。Sails 内置了 Grunt ——这意味着你的整个前端资源工作流都是完全可定制的，并且支持目前现有的所有优秀 Grunt 模块。这包括对 Less、Sass、Stylus、CoffeeScript、JST、Jade、Handlebars、Dust 等许多模块的支持。当你准备好进入生产环境时，你的资源会自动进行压缩和 gzip 压缩。你甚至可以编译静态资源并将其推送到像 CloudFront 这样的 CDN，让应用加载得更快。（你可以在 Sails.js 网站上阅读更多关于这些点的信息。）
 
-你也可以通过生成器使用 Gulp 或 Webpack 作为你的构建系统，而不是 Grunt。请查看 GitHub 上的 `sailsgeneratenewgulp` 和 `sailswebpack` 项目。
+你也可以通过生成器使用 Gulp 或 Webpack 作为你的构建系统，而不是 Grunt。请查看 GitHub 上的 `sails-generate-new-gulp` 和 `sails-webpack` 项目。
 
 更多社区生成器，请查看 Sails.js 网站上的此文档页面。
 
-## 项目结构
+### 项目结构详解
 
 项目包含许多配置文件和文件夹。大多数内容都是一目了然的，但让我们过一下你最经常使用的几个：
 
-- `api/controllers`: 这是存放控制器的文件夹。控制器对应于 `MVC` 中的 `C` 部分。它是你应用程序业务逻辑所在的地方。
-- `api/models`: 存放模型的文件夹。模型对应于 `MVC` 架构中的 `M` 部分。你需要在这里放置映射到 SQL/NoSQL 数据的类或对象。
-- `api/policies`: 这是你存放应用程序策略（policies）的文件夹。
-- `api/responses`: 此文件夹包含服务器响应逻辑，例如处理 404 和 500 响应的函数等。
-- `api/services`: 这是你应用级服务所在地。服务是一个全局类，封装了可以在多个控制器中复用的通用逻辑。
-- `./views`: 此文件夹包含用于显示视图的模板。默认情况下，该文件夹包含 `ejs` 引擎模板，但你可以配置任何 Express 支持的引擎，如 EJS、Jade、Handlebars、Mustache 和 Underscore 等。
-- `./config`: 此文件夹包含许多配置文件，允许你配置应用程序的每一个细节，例如 CORS、CSRF 保护、i18n、http、模型、视图、日志和策略的设置等。你经常使用的一个重要文件是 `config/routes.js`，你可以在这里创建应用程序路由，并将它们映射到控制器的实际操作或直接映射到视图。
-- `./assets`: 这是你可以在其中应用程序放置任何静态文件（CSS、JavaScript 和图像等）的文件夹。
+- `api/controllers`：这是存放控制器的文件夹。控制器对应于 `MVC` 中的 `C` 部分。它是你应用程序业务逻辑所在的地方。
+- `api/models`：存放模型的文件夹。模型对应于 `MVC` 架构中的 `M` 部分。你需要在这里放置映射到 SQL/NoSQL 数据的类或对象。
+- `api/policies`：这是你存放应用程序策略的文件夹。
+- `api/responses`：此文件夹包含服务器响应逻辑，例如处理 404 和 500 响应的函数等。
+- `api/services`：这是你应用级服务所在地。服务是一个全局类，封装了可以在多个控制器中复用的通用逻辑。
+- `views`：此文件夹包含用于显示视图的模板。默认情况下，该文件夹包含 `ejs` 引擎模板，但你可以配置任何 Express 支持的引擎，如 EJS、Jade、Handlebars、Mustache 和 Underscore 等。
+- `config`：此文件夹包含许多配置文件，允许你配置应用程序的每一个细节，例如 CORS、CSRF 保护、i18n、http、模型、视图、日志和策略的设置等。你经常使用的一个重要文件是 `config/routes.js`，你可以在这里创建应用程序路由，并将它们映射到控制器的实际操作或直接映射到视图。
+- `assets`：这是你可以在其中应用程序放置任何静态文件（CSS、JavaScript 和图像等）的文件夹。
 
-## 运行你的 SAILS.JS 项目
+### 运行你的 Sails.js 项目
 
 你可以通过在项目根目录下运行以下命令来启动开发服务器：
 
-```
+```bash
 sails lift
 ```
 
 这会提示你选择一种迁移策略，然后启动开发服务器。
 
-![](img/index-56_1.png)
-![](img/index-56_2.png)
+然后你可以使用网络浏览器访问 [`localhost:1337/`](http://localhost:1337/)。如果你生成了一个带有前端的 Sails.js 项目（即没有使用 `--nofrontend` 选项），你将看到首页。
 
-然后你可以使用网络浏览器访问 [`localhost:1337/`](http://localhost:1337/)。如果你生成了一个带有前端的 Sails.js 项目（即没有使用 `nofrontend` 选项），你将看到这个首页：创建 WATERLINE 模型
-
-![](img/index-57_1.png)
-![](img/index-57_2.png)
-![](img/index-57_3.png)
-![](img/index-57_4.png)
-![](img/index-57_5.png)
-![](img/index-57_6.png)
-![](img/index-57_7.png)
-![](img/index-57_8.png)
-![](img/index-57_9.png)
-![](img/index-57_10.png)
-![](img/index-57_11.png)
-![](img/index-57_12.png)
-![](img/index-57_13.png)
-![](img/index-57_14.png)
-![](img/index-57_15.png)
-![](img/index-57_16.png)
-![](img/index-57_17.png)
-![](img/index-57_18.png)
-![](img/index-57_19.png)
-![](img/index-57_20.png)
-![](img/index-57_21.png)
-![](img/index-57_22.png)
-![](img/index-57_23.png)
-![](img/index-57_24.png)
-![](img/index-57_25.png)
-![](img/index-57_26.png)
-![](img/index-57_27.png)
-![](img/index-57_28.png)
-![](img/index-57_29.png)
-![](img/index-57_30.png)
-![](img/index-57_31.png)
-![](img/index-57_32.png)
-![](img/index-57_33.png)
-![](img/index-57_34.png)
-![](img/index-57_35.png)
-![](img/index-57_36.png)
-![](img/index-57_37.png)
-![](img/index-57_38.png)
-![](img/index-57_39.png)
-![](img/index-57_40.png)
-![](img/index-57_41.png)
-![](img/index-57_42.png)
-![](img/index-57_43.png)
-![](img/index-57_44.png)
-![](img/index-57_45.png)
-![](img/index-57_46.png)
-![](img/index-57_47.png)
-![](img/index-57_48.png)
-![](img/index-57_49.png)
-![](img/index-57_50.png)
-![](img/index-57_51.png)
-![](img/index-57_52.png)
-![](img/index-57_53.png)
-![](img/index-57_54.png)
-![](img/index-57_55.png)
-![](img/index-57_56.png)
-![](img/index-57_57.png)
-![](img/index-57_58.png)
-![](img/index-57_59.png)
-![](img/index-57_60.png)
-![](img/index-57_61.png)
-![](img/index-57_62.png)
-![](img/index-57_63.png)
-![](img/index-57_64.png)
-![](img/index-57_65.png)
-![](img/index-57_66.png)
-![](img/index-57_67.png)
-![](img/index-57_68.png)
-![](img/index-57_69.png)
-![](img/index-57_70.png)
-![](img/index-57_71.png)
-![](img/index-57_72.png)
-![](img/index-57_73.png)
-![](img/index-57_74.png)
-![](img/index-57_75.png)
-![](img/index-57_76.png)
-![](img/index-57_77.png)
-![](img/index-57_78.png)
-![](img/index-57_79.png)
-![](img/index-57_80.png)
-![](img/index-57_81.png)
-![](img/index-57_82.png)
-![](img/index-57_83.png)
-![](img/index-57_84.png)
-![](img/index-57_85.png)
-![](img/index-57_86.png)
-![](img/index-57_87.png)
-![](img/index-57_88.png)
-![](img/index-57_89.png)
-![](img/index-57_90.png)
-![](img/index-57_91.png)
-![](img/index-57_92.png)
-![](img/index-57_93.png)
-![](img/index-57_94.png)
-![](img/index-57_95.png)
-![](img/index-57_96.png)
-![](img/index-57_97.png)
-![](img/index-57_98.png)
-![](img/index-57_99.png)
-![](img/index-57_100.png)
-![](img/index-57_101.png)
-![](img/index-57_102.png)
-![](img/index-57_103.png)
-![](img/index-57_104.png)
-![](img/index-57_105.png)
-![](img/index-57_106.png)
-![](img/index-57_107.png)
-![](img/index-57_108.png)
-![](img/index-57_109.png)
-![](img/index-57_110.png)
-![](img/index-57_111.png)
-![](img/index-57_112.png)
-![](img/index-57_113.png)
-![](img/index-57_114.png)
-![](img/index-57_115.png)
-![](img/index-57_116.png)
-![](img/index-57_117.png)
-![](img/index-57_118.png)
-![](img/index-57_119.png)
-![](img/index-57_120.png)
-![](img/index-57_121.png)
-![](img/index-57_122.png)
-![](img/index-57_123.png)
-![](img/index-57_124.png)
-![](img/index-57_125.png)
-![](img/index-57_126.png)
-![](img/index-57_127.png)
-![](img/index-57_128.png)
-![](img/index-57_129.png)
-![](img/index-57_130.png)
-![](img/index-57_131.png)
-![](img/index-57_132.png)
-![](img/index-57_133.png)
-![](img/index-57_134.png)
-![](img/index-57_135.png)
-![](img/index-57_136.png)
-![](img/index-57_137.png)
-![](img/index-57_138.png)
-![](img/index-57_139.png)
-![](img/index-57_140.png)
-![](img/index-57_141.png)
-![](img/index-57_142.png)
-![](img/index-57_143.png)
-![](img/index-57_144.png)
-![](img/index-57_145.png)
-![](img/index-57_146.png)
-![](img/index-57_147.png)
-![](img/index-57_148.png)
-![](img/index-57_149.png)
-![](img/index-57_150.png)
-
-## Waterline 模型
+## 创建 Waterline 模型
 
 模型是一种抽象，通常在通用编程语言中用对象或类表示，它引用/映射到关系型数据库中的 SQL 表，或者 NoSQL 数据库中的文档（键值对）。
 
 你可以使用 Sails.js CLI 创建模型：
 
-```
+```bash
 sails generate model product
 ```
 
@@ -2311,7 +1398,7 @@ module.exports = {
   attributes: {
 
   }
-}
+};
 ```
 
 然后你可以为你的模型扩展属性。例如：
@@ -2322,7 +1409,7 @@ module.exports = {
     name: {
       type: 'string',
       defaultsTo: '',
-      required: 'true'
+      required: true
     },
     description: {
       type: 'string',
@@ -2335,25 +1422,22 @@ module.exports = {
       model: 'User'
     }
   }
-}
+};
 ```
 
-
-
-
-注意我们如何为模型 `User` 定义关联（一对多 `onetomany` 或属于 `belongsTo`关系）。你可以通过此 Sails.js 关联页面查看所有支持的关联以及如何创建它们。
+注意我们如何为模型 `User` 定义关联（一对多 `onetomany` 或属于 `belongsTo` 关系）。你可以通过 Sails.js 关联页面查看所有支持的关联以及如何创建它们。
 
 关于可用模型属性的更多信息，请参阅 Sails.js 属性页面。
 
 你也可以通过在模型定义中添加顶层属性来为每个模型或模型设置添加配置，这将覆盖 `config/models.js` 中的全局模型设置。你可以覆盖与模型属性、数据库连接等相关的设置。
 
-例如，让我们为 `product` 模型指定一个不同于项目范围内使用的全局数据存储器（datastore）：
+例如，让我们为 `product` 模型指定一个不同于项目范围内使用的全局数据存储器：
 
 ```javascript
 module.exports = {
   connection: 'mysqlcon',
-  attributes: { /*...*/}
-}
+  attributes: { /*...*/ }
+};
 ```
 
 这将指示 Sails.js 使用名为 `mysqlcon` 的连接来存储此模型的数据。
@@ -2373,25 +1457,26 @@ module.exports.connections = {
     password: 'YOUR_MYSQL_PASSWORD',
     database: 'YOUR_MYSQL_DB'
   }
-}
+};
 ```
 
-你还需要从 npm 安装 `sailsmysql` 适配器：`npm install sailsmysql@forsails0.12`
+你还需要从 npm 安装 `sailsmysql` 适配器：`npm install sailsmysql@forsails0.12`。
 
-你可以在 Sails.js 模型中找到可以指定的可用模型设置：
+你可以在 Sails.js 模型设置页面找到可以指定的可用模型设置。
 
-![](img/index-59_1.png) ![](img/index-59_2.png) ![](img/index-59_3.png) ![](img/index-59_4.png) ![](img/index-59_5.png) ![](img/index-59_6.png) ![](img/index-59_7.png) ![](img/index-59_8.png) ![](img/index-59_9.png) ![](img/index-59_10.png) ![](img/index-59_11.png) ![](img/index-59_12.png) ![](img/index-59_13.png) ![](img/index-59_14.png) ![](img/index-59_15.png) ![](img/index-59_16.png) ![](img/index-59_17.png) ![](img/index-59_18.png) ![](img/index-59_19.png) ![](img/index-59_20.png) ![](img/index-59_21.png) ![](img/index-59_22.png) ![](img/index-59_23.png) ![](img/index-59_24.png) ![](img/index-59_25.png) ![](img/index-59_26.png) ![](img/index-59_27.png) ![](img/index-59_28.png) ![](img/index-59_29.png) ![](img/index-59_30.png) ![](img/index-59_31.png) ![](img/index-59_32.png) ![](img/index-59_33.png) ![](img/index-59_34.png) ![](img/index-59_35.png) ![](img/index-59_36.png) ![](img/index-59_37.png) ![](img/index-59_38.png) ![](img/index-59_39.png) ![](img/index-59_40.png) ![](img/index-59_41.png) ![](img/index-59_42.png) ![](img/index-59_43.png) ![](img/index-59_44.png) ![](img/index-59_45.png) ![](img/index-59_46.png) ![](img/index-59_47.png) ![](img/index-59_48.png) ![](img/index-59_49.png) ![](img/index-59_50.png) ![](img/index-59_51.png) ![](img/index-59_52.png) ![](img/index-59_53.png) ![](img/index-59_54.png) ![](img/index-59_55.png) ![](img/index-59_56.png) ![](img/index-59_57.png) ![](img/index-59_58.png) ![](img/index-59_59.png) ![](img/index-59_60.png) ![](img/index-59_61.png) ![](img/index-59_62.png) ![](img/index-59_63.png) ![](img/index-59_64.png) ![](img/index-59_65.png) ![](img/index-59_66.png) ![](img/index-59_67.png) ![](img/index-59_68.png) ![](img/index-59_69.png) ![](img/index-59_70.png) ![](img/index-59_71.png) ![](img/index-59_72.png) ![](img/index-59_73.png) ![](img/index-59_74.png) ![](img/index-59_75.png) ![](img/index-59_76.png) ![](img/index-59_77.png) ![](img/index-59_78.png) ![](img/index-59_79.png) ![](img/index-59_80.png) ![](img/index-59_81.png) ![](img/index-59_82.png) ![](img/index-59_83.png) ![](img/index-59_84.png) ![](img/index-59_85.png) ![](img/index-59_86.png) ![](img/index-59_87.png) ![](img/index-59_88.png) ![](img/index-59_89.png) ![](img/index-59_90.png) ![](img/index-59_91.png) ![](img/index-59_92.png) ![](img/index-59_93.png) ![](img/index-59_94.png) ![](img/index-59_95.png) ![](img/index-59_96.png) ![](img/index-59_97.png) ![](img/index-59_98.png) ![](img/index-59_99.png) ![](img/index-59_100.png) ![](img/index-59_101.png) ![](img/index-59_102.png) ![](img/index-59_103.png) ![](img/index-59_104.png) ![](img/index-59_105.png) ![](img/index-59_106.png) ![](img/index-59_107.png) ![](img/index-59_108.png) ![](img/index-59_109.png) ![](img/index-59_110.png) ![](img/index-59_111.png) ![](img/index-59_112.png) ![](img/index-59_113.png) ![](img/index-59_114.png) ![](img/index-59_115.png) ![](img/index-59_116.png) ![](img/index-59_117.png) ![](img/index-59_118.png) ![](img/index-59_119.png) ![](img/index-59_120.png) ![](img/index-59_121.png) ![](img/index-59_122.png) ![](img/index-59_123.png) ![](img/index-59_124.png) ![](img/index-59_125.png) ![](img/index-59_126.png) ![](img/index-59_127.png) ![](img/index-59_128.png) ![](img/index-59_129.png) ![](img/index-59_130.png) ![](img/index-59_131.png) ![](img/index-59_132.png) ![](img/index-59_133.png) ![](img/index-59_134.png) ![](img/index-59_135.png) ![](img/index-59_136.png) ![](img/index-59_137.png) ![](img/index-59_138.png) ![](img/index-59_139.png) ![](img/index-59_140.png) ![](img/index-59_141.png) ![](img/index-59_142.png) ![](img/index-59_143.png) ![](img/index-59_144.png) ![](img/index-59_145.png) ![](img/index-59_146.png) ![](img/index-59_147.png) ![](img/index-59_148.png) ![](img/index-59_149.png) ![](img/index-59_150.png) ![](img/index-59_151.png) ![](img/index-59_152.png) ![](img/index-59_153.png) ![](img/index-59_154.png) ![](img/index-59_155.png) ![](img/index-59_156.png) ![](img/index-59_157.png) ![](img/index-59_158.png) ![](img/index-59_159.png) ![](img/index-59_160.png) ![](img/index-59_161.png) ![](img/index-59_162.png) ![](img/index-59_163.png) ![](img/index-59_164.png) ![](img/index-59_165.png) ![](img/index-59_166.png) ![](img/index-59_167.png) ![](img/index-59_168.png)
-设置页面。
-
-# SAILS.JS 控制器 (CONTROLLERS)
+## Sails.js 控制器
 
 控制器持有应用程序的业务逻辑。它们位于 `api/controllers` 中，并提供了一个胶接应用程序模型和视图的层。控制器包含绑定到路由并响应来自 Web/移动客户端 HTTP 请求的操作。
 
-控制器是一个 JavaScript 对象，包含名为“控制器操作”（controller actions）的方法，这些方法接收两个参数：`request` 和 `response`。
+控制器是一个 JavaScript 对象，包含名为“控制器操作”的方法，这些方法接收两个参数：`request` 和 `response`。
 
 你可以在 Sails.js 控制器页面找到更多关于控制器的信息。
 
-你可以使用 Sails.js CLI 生成控制器：`sails generate controller product`
+你可以使用 Sails.js CLI 生成控制器：
+
+```bash
+sails generate controller product
+```
 
 此命令将生成一个名为 `api/controllers/ProductController.js` 的控制器，内容如下：
 
@@ -2404,20 +1489,18 @@ module.exports.connections = {
 */
 module.exports = {
 
-}
+};
 ```
 
-代码导出一个空的 JavaScript 对象，你可以在其中添加新操作或覆盖默认（自动添加的的控制器操作。
+代码导出一个空的 JavaScript 对象，你可以在其中添加新操作或覆盖默认（自动添加）的控制器操作。
 
 此时，你实际上可以在不添加任何代码的情况下对你的服务器执行 CRUD 操作。由于 Sails.js 遵循“约定优于配置”的原则，它会将你的控制器连接到相应的路由，并为处理常见的 POST、GET、PUT 和 DELETE 请求提供默认操作。
 
-# 使用 POSTMAN 进行测试
+## 使用 Postman 进行测试
 
-使用 Postman，你可以发送 POST、GET 等请求来测试你的 API，所以请
+使用 Postman，你可以发送 POST、GET 等请求来测试你的 API，所以请获取适用于你操作系统的 Postman 版本。
 
-![](img/index-60_1.png) ![](img/index-60_2.png)
-
-获取适用于你操作系统的 Postman 版本。接下来，输入端点 URL `http://localhost:1337/product`。然后选择要发送的 HTTP 方法——在这里是 POST，因为我们要创建一个产品。接下来你需要提供数据，因此点击 *Body* 标签，选择 *Raw* 选项，然后输入以下：
+接下来，输入端点 URL `http://localhost:1337/product`。然后选择要发送的 HTTP 方法——在这里是 POST，因为我们要创建一个产品。接下来你需要提供数据，因此点击 *Body* 标签，选择 *Raw* 选项，然后输入以下内容：
 
 ```json
 {
@@ -2429,13 +1512,11 @@ module.exports = {
 
 然后点击 Send。你应该注意返回的状态码：200 OK 表示产品创建成功。
 
-你可以通过发送 GET 请求来验证产品是否创建：
+你可以通过发送 GET 请求来验证产品是否创建。
 
-![](img/index-61_1.png)
+你还可以通过发送 PUT 请求根据 ID 更新产品。
 
-你还可以通过发送 PUT 请求根据 ID 更新产品：最后，你可以通过发送 DELETE 请求根据 ID 删除产品：
-
-![](img/index-62_1.png)
+最后，你可以通过发送 DELETE 请求根据 ID 删除产品。
 
 对于自定义逻辑，也可以覆盖这些操作并实现自己的逻辑。
 
@@ -2450,24 +1531,20 @@ module.exports = {
 - remove from
 - update
 
-find where 和 find one，create、update 和 destroy 都是标准的 CRUD 操作
+`find where` 和 `find one`，`create`、`update` 和 `destroy` 都是大多数 API 中都需要存在的标准 CRUD 操作。其他的与外键记录有关：
 
-
-
-大多数 API 中都需要存在的操作。其他的与外键记录有关：`add to:`：用于将外键记录添加到另一个记录集中（例如将一个产品添加到用户的产品列表中）。
-
-`populate where:`：用于为另一个记录的关联填充并返回外键记录。在此处查看更多信息。
-
-`remove from:`：用于从相关的记录集合关联（例如用户的产品列表）中移除外键记录（例如某个产品）。在此处查看更多信息和示例。
+- `add to`：用于将外键记录添加到另一个记录集中（例如将一个产品添加到用户的产品列表中）。
+- `populate where`：用于为另一个记录的关联填充并返回外键记录。
+- `remove from`：用于从相关的记录集合关联（例如用户的产品列表）中移除外键记录（例如某个产品）。
 
 若要自定义默认操作的行为，你可以采取以下任一方法：
 
-1. 在指定的控制器中覆盖（Override）操作。也就是说，创建一个与这些操作之一同名的操作：`find`、`findOne`、`create`、`update`、`destroy`、`populate`、`add` 或 `remove`。
+1. 在指定的控制器中覆盖操作。也就是说，创建一个与这些操作之一同名的操作：`find`、`findOne`、`create`、`update`、`destroy`、`populate`、`add` 或 `remove`。
 2. 覆盖所有控制器的默认操作。你可以通过创建一个 `api/blueprints` 文件夹来实现，你需要在其中添加以默认操作小写命名的文件（例如 `find.js`、`findone.js`、`create.js` 等）。你可以通过检查 Sails.js Blueprint API 文档找到更多关于蓝图的信息。
 
-# SAILS.JS 中的路由
+## Sails.js 中的路由
 
-路由（Routes）允许你将 URL 映射到控制器或视图。与默认操作一样，Sails.js 会自动为默认操作添加默认路由，让你只需创建模型和控制器即可拥有自动 API。
+路由允许你将 URL 映射到控制器或视图。与默认操作一样，Sails.js 会自动为默认操作添加默认路由，让你只需创建模型和控制器即可拥有自动 API。
 
 你也可以为自定义操作或视图添加自定义路由。要添加路由，请打开 `config/routes.js` 文件并添加以下内容：
 
@@ -2476,7 +1553,7 @@ module.exports.routes = {
   '/products': {
     view: 'products'
   }
-}
+};
 ```
 
 这将 `/products` 映射到 `views` 文件夹中名为 `products` 的模板。
@@ -2488,7 +1565,7 @@ module.exports.routes = {
   'get /': {
     view: 'homepage'
   }
-}
+};
 ```
 
 你还可以为路由指定控制器操作。例如：
@@ -2496,178 +1573,18 @@ module.exports.routes = {
 ```javascript
 module.exports.routes = {
   'post /product': 'ProductController.create',
-}
+};
 ```
 
 这告诉 Sails.js 当客户端向 `/product` 端点发送 POST 请求时，调用 `ProductController` 控制器的 `create` 操作。
 
 ## 结论
 
-在本章中，你接触了 Sails.js。我们学习了 Sails.js 的基本概念、如何生成一个新的 Sails.js 项目，然后通过仅生成模型、添加一些属性并生成控制器创建了一个 API。Sails.js 还有其他高级概念，如服务（services）、策略（policies）、蓝图（blueprints）和钩子（hooks）。一旦掌握并熟悉了本介绍中的基本概念，你就可以进一步发现它们。
-
-![](img/index-65_1.png)
-![](img/index-65_2.png)
-![](img/index-65_3.png)
-![](img/index-65_4.png)
-![](img/index-65_5.png)
-![](img/index-65_6.png)
-![](img/index-65_7.png)
-![](img/index-65_8.png)
-![](img/index-65_9.png)
-![](img/index-65_10.png)
-![](img/index-65_11.png)
-![](img/index-65_12.png)
-![](img/index-65_13.png)
-![](img/index-65_14.png)
-![](img/index-65_15.png)
-![](img/index-65_16.png)
-![](img/index-65_17.png)
-![](img/index-65_18.png)
-![](img/index-65_19.png)
-![](img/index-65_20.png)
-![](img/index-65_21.png)
-![](img/index-65_22.png)
-![](img/index-65_23.png)
-![](img/index-65_24.png)
-![](img/index-65_25.png)
-![](img/index-65_26.png)
-![](img/index-65_27.png)
-![](img/index-65_28.png)
-![](img/index-65_29.png)
-![](img/index-65_30.png)
-![](img/index-65_31.png)
-![](img/index-65_32.png)
-![](img/index-65_33.png)
-![](img/index-65_34.png)
-![](img/index-65_35.png)
-![](img/index-65_36.png)
-![](img/index-65_37.png)
-![](img/index-65_38.png)
-![](img/index-65_39.png)
-![](img/index-65_40.png)
-![](img/index-65_41.png)
-![](img/index-65_42.png)
-![](img/index-65_43.png)
-![](img/index-65_44.png)
-![](img/index-65_45.png)
-![](img/index-65_46.png)
-![](img/index-65_47.png)
-![](img/index-65_48.png)
-![](img/index-65_49.png)
-![](img/index-65_50.png)
-![](img/index-65_51.png)
-![](img/index-65_52.png)
-![](img/index-65_53.png)
-![](img/index-65_54.png)
-![](img/index-65_55.png)
-![](img/index-65_56.png)
-![](img/index-65_57.png)
-![](img/index-65_58.png)
-![](img/index-65_59.png)
-![](img/index-65_60.png)
-![](img/index-65_61.png)
-![](img/index-65_62.png)
-![](img/index-65_63.png)
-![](img/index-65_64.png)
-![](img/index-65_65.png)
-![](img/index-65_66.png)
-![](img/index-65_67.png)
-![](img/index-65_68.png)
-![](img/index-65_69.png)
-![](img/index-65_70.png)
-![](img/index-65_71.png)
-![](img/index-65_72.png)
-![](img/index-65_73.png)
-![](img/index-65_74.png)
-![](img/index-65_75.png)
-![](img/index-65_76.png)
-![](img/index-65_77.png)
-![](img/index-65_78.png)
-![](img/index-65_79.png)
-![](img/index-65_80.png)
-![](img/index-65_81.png)
-![](img/index-65_82.png)
-![](img/index-65_83.png)
-![](img/index-65_84.png)
-![](img/index-65_85.png)
-![](img/index-65_86.png)
-![](img/index-65_87.png)
-![](img/index-65_88.png)
-![](img/index-65_89.png)
-![](img/index-65_90.png)
-![](img/index-65_91.png)
-![](img/index-65_92.png)
-![](img/index-65_93.png)
-![](img/index-65_94.png)
-![](img/index-65_95.png)
-![](img/index-65_96.png)
-![](img/index-65_97.png)
-![](img/index-65_98.png)
-![](img/index-65_99.png)
-![](img/index-65_100.png)
-![](img/index-65_101.png)
-![](img/index-65_102.png)
-![](img/index-65_103.png)
-![](img/index-65_104.png)
-![](img/index-65_105.png)
-![](img/index-65_106.png)
-![](img/index-65_107.png)
-![](img/index-65_108.png)
-![](img/index-65_109.png)
-![](img/index-65_110.png)
-![](img/index-65_111.png)
-![](img/index-65_112.png)
-![](img/index-65_113.png)
-![](img/index-65_114.png)
-![](img/index-65_115.png)
-![](img/index-65_116.png)
-![](img/index-65_117.png)
-![](img/index-65_118.png)
-![](img/index-65_119.png)
-![](img/index-65_120.png)
-![](img/index-65_121.png)
-![](img/index-65_122.png)
-![](img/index-65_123.png)
-![](img/index-65_124.png)
-![](img/index-65_125.png)
-![](img/index-65_126.png)
-![](img/index-65_127.png)
-![](img/index-65_128.png)
-![](img/index-65_129.png)
-![](img/index-65_130.png)
-![](img/index-65_131.png)
-![](img/index-65_132.png)
-![](img/index-65_133.png)
-![](img/index-65_134.png)
-![](img/index-65_135.png)
-![](img/index-65_136.png)
-![](img/index-65_137.png)
-![](img/index-65_138.png)
-![](img/index-65_139.png)
-![](img/index-65_140.png)
-![](img/index-65_141.png)
-![](img/index-65_142.png)
-![](img/index-65_143.png)
-![](img/index-65_144.png)
-![](img/index-65_145.png)
-![](img/index-65_146.png)
-![](img/index-65_147.png)
-![](img/index-65_148.png)
-![](img/index-65_149.png)
-![](img/index-65_150.png)
-![](img/index-65_151.png)
-![](img/index-65_152.png)
-![](img/index-65_153.png)
-![](img/index-65_154.png)
-![](img/index-65_155.png)
-![](img/index-65_156.png)
-![](img/index-65_157.png)
-![](img/index-65_158.png)
-![](img/index-65_159.png)
+在本章中，你接触了 Sails.js。我们学习了 Sails.js 的基本概念、如何生成一个新的 Sails.js 项目，然后通过仅生成模型、添加一些属性并生成控制器创建了一个 API。Sails.js 还有其他高级概念，如服务、策略、蓝图和钩子。一旦掌握并熟悉了本介绍中的基本概念，你就可以进一步发现它们。
 
 
 
-通过 git 从此处下载初始代码：
+# 通过 git 从此处下载初始代码
 
 ```bash
 git clone https://github.com/markbrown4/hapiapi.git
@@ -2686,7 +1603,7 @@ npm install
 [{ "so": "hapi!" }]
 ```
 
-让我们来看源码：
+## 让我们来看源码
 
 ```javascript
 // server.js
@@ -2705,180 +1622,6 @@ server.route({
   method: 'GET',
   path: '/',
   handler: () => {
-    ![](img/index-67_1.png)
-    ![](img/index-67_2.png)
-    ![](img/index-67_3.png)
-    ![](img/index-67_4.png)
-    ![](img/index-67_5.png)
-    ![](img/index-67_6.png)
-    ![](img/index-67_7.png)
-    ![](img/index-67_8.png)
-    ![](img/index-67_9.png)
-    ![](img/index-67_10.png)
-    ![](img/index-67_11.png)
-    ![](img/index-67_12.png)
-    ![](img/index-67_13.png)
-    ![](img/index-67_14.png)
-    ![](img/index-67_15.png)
-    ![](img/index-67_16.png)
-    ![](img/index-67_17.png)
-    ![](img/index-67_18.png)
-    ![](img/index-67_19.png)
-    ![](img/index-67_20.png)
-    ![](img/index-67_21.png)
-    ![](img/index-67_22.png)
-    ![](img/index-67_23.png)
-    ![](img/index-67_24.png)
-    ![](img/index-67_25.png)
-    ![](img/index-67_26.png)
-    ![](img/index-67_27.png)
-    ![](img/index-67_28.png)
-    ![](img/index-67_29.png)
-    ![](img/index-67_30.png)
-    ![](img/index-67_31.png)
-    ![](img/index-67_32.png)
-    ![](img/index-67_33.png)
-    ![](img/index-67_34.png)
-    ![](img/index-67_35.png)
-    ![](img/index-67_36.png)
-    ![](img/index-67_37.png)
-    ![](img/index-67_38.png)
-    ![](img/index-67_39.png)
-    ![](img/index-67_40.png)
-    ![](img/index-67_41.png)
-    ![](img/index-67_42.png)
-    ![](img/index-67_43.png)
-    ![](img/index-67_44.png)
-    ![](img/index-67_45.png)
-    ![](img/index-67_46.png)
-    ![](img/index-67_47.png)
-    ![](img/index-67_48.png)
-    ![](img/index-67_49.png)
-    ![](img/index-67_50.png)
-    ![](img/index-67_51.png)
-    ![](img/index-67_52.png)
-    ![](img/index-67_53.png)
-    ![](img/index-67_54.png)
-    ![](img/index-67_55.png)
-    ![](img/index-67_56.png)
-    ![](img/index-67_57.png)
-    ![](img/index-67_58.png)
-    ![](img/index-67_59.png)
-    ![](img/index-67_60.png)
-    ![](img/index-67_61.png)
-    ![](img/index-67_62.png)
-    ![](img/index-67_63.png)
-    ![](img/index-67_64.png)
-    ![](img/index-67_65.png)
-    ![](img/index-67_66.png)
-    ![](img/index-67_67.png)
-    ![](img/index-67_68.png)
-    ![](img/index-67_69.png)
-    ![](img/index-67_70.png)
-    ![](img/index-67_71.png)
-    ![](img/index-67_72.png)
-    ![](img/index-67_73.png)
-    ![](img/index-67_74.png)
-    ![](img/index-67_75.png)
-    ![](img/index-67_76.png)
-    ![](img/index-67_77.png)
-    ![](img/index-67_78.png)
-    ![](img/index-67_79.png)
-    ![](img/index-67_80.png)
-    ![](img/index-67_81.png)
-    ![](img/index-67_82.png)
-    ![](img/index-67_83.png)
-    ![](img/index-67_84.png)
-    ![](img/index-67_85.png)
-    ![](img/index-67_86.png)
-    ![](img/index-67_87.png)
-    ![](img/index-67_88.png)
-    ![](img/index-67_89.png)
-    ![](img/index-67_90.png)
-    ![](img/index-67_91.png)
-    ![](img/index-67_92.png)
-    ![](img/index-67_93.png)
-    ![](img/index-67_94.png)
-    ![](img/index-67_95.png)
-    ![](img/index-67_96.png)
-    ![](img/index-67_97.png)
-    ![](img/index-67_98.png)
-    ![](img/index-67_99.png)
-    ![](img/index-67_100.png)
-    ![](img/index-67_101.png)
-    ![](img/index-67_102.png)
-    ![](img/index-67_103.png)
-    ![](img/index-67_104.png)
-    ![](img/index-67_105.png)
-    ![](img/index-67_106.png)
-    ![](img/index-67_107.png)
-    ![](img/index-67_108.png)
-    ![](img/index-67_109.png)
-    ![](img/index-67_110.png)
-    ![](img/index-67_111.png)
-    ![](img/index-67_112.png)
-    ![](img/index-67_113.png)
-    ![](img/index-67_114.png)
-    ![](img/index-67_115.png)
-    ![](img/index-67_116.png)
-    ![](img/index-67_117.png)
-    ![](img/index-67_118.png)
-    ![](img/index-67_119.png)
-    ![](img/index-67_120.png)
-    ![](img/index-67_121.png)
-    ![](img/index-67_122.png)
-    ![](img/index-67_123.png)
-    ![](img/index-67_124.png)
-    ![](img/index-67_125.png)
-    ![](img/index-67_126.png)
-    ![](img/index-67_127.png)
-    ![](img/index-67_128.png)
-    ![](img/index-67_129.png)
-    ![](img/index-67_130.png)
-    ![](img/index-67_131.png)
-    ![](img/index-67_132.png)
-    ![](img/index-67_133.png)
-    ![](img/index-67_134.png)
-    ![](img/index-67_135.png)
-    ![](img/index-67_136.png)
-    ![](img/index-67_137.png)
-    ![](img/index-67_138.png)
-    ![](img/index-67_139.png)
-    ![](img/index-67_140.png)
-    ![](img/index-67_141.png)
-    ![](img/index-67_142.png)
-    ![](img/index-67_143.png)
-    ![](img/index-67_144.png)
-    ![](img/index-67_145.png)
-    ![](img/index-67_146.png)
-    ![](img/index-67_147.png)
-    ![](img/index-67_148.png)
-    ![](img/index-67_149.png)
-    ![](img/index-67_150.png)
-    ![](img/index-67_151.png)
-    ![](img/index-67_152.png)
-    ![](img/index-67_153.png)
-    ![](img/index-67_154.png)
-    ![](img/index-67_155.png)
-    ![](img/index-67_156.png)
-    ![](img/index-67_157.png)
-    ![](img/index-67_158.png)
-    ![](img/index-67_159.png)
-    ![](img/index-67_160.png)
-    ![](img/index-67_161.png)
-    ![](img/index-67_162.png)
-    ![](img/index-67_163.png)
-    ![](img/index-67_164.png)
-    ![](img/index-67_165.png)
-    ![](img/index-67_166.png)
-    ![](img/index-67_167.png)
-    ![](img/index-67_168.png)
-    ![](img/index-67_169.png)
-    ![](img/index-67_170.png)
-    ![](img/index-67_171.png)
-    ![](img/index-67_172.png)
-    ![](img/index-67_173.png)
-    ![](img/index-67_174.png)
     return [{ so: 'hapi!' }]
   }
 })
@@ -2908,299 +1651,7 @@ server.route({
 })
 ```
 
-
-
-
-
-![](img/index-69_48.png)
-![](img/index-69_49.png)
-![](img/index-69_50.png)
-![](img/index-69_51.png)
-![](img/index-69_52.png)
-![](img/index-69_53.png)
-![](img/index-69_54.png)
-![](img/index-69_55.png)
-![](img/index-69_56.png)
-![](img/index-69_57.png)
-![](img/index-69_58.png)
-![](img/index-69_59.png)
-![](img/index-69_60.png)
-![](img/index-69_61.png)
-![](img/index-69_62.png)
-![](img/index-69_63.png)
-![](img/index-69_64.png)
-![](img/index-69_65.png)
-![](img/index-69_66.png)
-![](img/index-69_67.png)
-![](img/index-69_68.png)
-![](img/index-69_69.png)
-![](img/index-69_70.png)
-![](img/index-69_71.png)
-![](img/index-69_72.png)
-![](img/index-69_73.png)
-![](img/index-69_74.png)
-![](img/index-69_75.png)
-![](img/index-69_76.png)
-![](img/index-69_77.png)
-![](img/index-69_78.png)
-![](img/index-69_79.png)
-![](img/index-69_80.png)
-![](img/index-69_81.png)
-![](img/index-69_82.png)
-![](img/index-69_83.png)
-![](img/index-69_84.png)
-![](img/index-69_85.png)
-![](img/index-69_86.png)
-![](img/index-69_87.png)
-![](img/index-69_88.png)
-![](img/index-69_89.png)
-![](img/index-69_90.png)
-![](img/index-69_91.png)
-![](img/index-69_92.png)
-![](img/index-69_93.png)
-![](img/index-69_94.png)
-![](img/index-69_95.png)
-![](img/index-69_96.png)
-![](img/index-69_97.png)
-![](img/index-69_98.png)
-![](img/index-69_99.png)
-![](img/index-69_100.png)
-![](img/index-69_101.png)
-![](img/index-69_102.png)
-![](img/index-69_103.png)
-![](img/index-69_104.png)
-![](img/index-69_105.png)
-![](img/index-69_106.png)
-![](img/index-69_107.png)
-![](img/index-69_108.png)
-![](img/index-69_109.png)
-![](img/index-69_110.png)
-![](img/index-69_111.png)
-![](img/index-69_112.png)
-![](img/index-69_113.png)
-![](img/index-69_114.png)
-![](img/index-69_115.png)
-![](img/index-69_116.png)
-![](img/index-69_117.png)
-![](img/index-69_118.png)
-![](img/index-69_119.png)
-![](img/index-69_120.png)
-![](img/index-69_121.png)
-![](img/index-69_122.png)
-![](img/index-69_123.png)
-![](img/index-69_124.png)
-![](img/index-69_125.png)
-![](img/index-69_126.png)
-![](img/index-69_127.png)
-![](img/index-69_128.png)
-![](img/index-69_129.png)
-![](img/index-69_130.png)
-![](img/index-69_131.png)
-![](img/index-69_132.png)
-![](img/index-69_133.png)
-![](img/index-69_134.png)
-![](img/index-69_135.png)
-![](img/index-69_136.png)
-![](img/index-69_137.png)
-![](img/index-69_138.png)
-![](img/index-69_139.png)
-![](img/index-69_140.png)
-![](img/index-69_141.png)
-![](img/index-69_142.png)
-![](img/index-69_143.png)
-![](img/index-69_144.png)
-![](img/index-69_145.png)
-![](img/index-69_146.png)
-![](img/index-69_147.png)
-![](img/index-69_148.png)
-![](img/index-69_149.png)
-![](img/index-69_150.png)
-![](img/index-69_151.png)
-![](img/index-69_152.png)
-![](img/index-69_153.png)
-![](img/index-69_154.png)
-![](img/index-69_155.png)
-![](img/index-69_156.png)
-![](img/index-69_157.png)
-![](img/index-69_158.png)
-![](img/index-69_159.png)
-![](img/index-69_160.png)
-![](img/index-69_161.png)
-![](img/index-69_162.png)
-![](img/index-69_163.png)
-![](img/index-69_164.png)
-![](img/index-69_165.png)
-![](img/index-69_166.png)
-![](img/index-69_167.png)
-![](img/index-69_168.png)
-![](img/index-69_169.png)
-![](img/index-69_170.png)
-![](img/index-69_171.png)
-![](img/index-69_172.png)
-![](img/index-69_173.png)
-![](img/index-69_174.png)
-![](img/index-69_175.png)
-![](img/index-69_176.png)
-![](img/index-69_177.png)
-![](img/index-69_178.png)
-![](img/index-69_179.png)
-![](img/index-69_180.png)
-![](img/index-69_181.png)
-![](img/index-69_182.png)
-![](img/index-69_183.png)
-![](img/index-69_184.png)
-![](img/index-69_185.png)
-![](img/index-69_186.png)
-![](img/index-69_187.png)
-![](img/index-69_188.png)
-![](img/index-69_189.png)
-![](img/index-69_190.png)
-![](img/index-69_191.png)
-![](img/index-69_192.png)
-![](img/index-69_193.png)
-![](img/index-69_194.png)
-![](img/index-69_195.png)
-![](img/index-69_196.png)
-![](img/index-69_197.png)
-![](img/index-69_198.png)
-![](img/index-69_199.png)
-![](img/index-69_200.png)
-![](img/index-69_201.png)
-![](img/index-69_202.png)
-![](img/index-69_203.png)
-![](img/index-69_204.png)
-![](img/index-69_205.png)
-![](img/index-69_206.png)
-![](img/index-69_207.png)
-![](img/index-69_208.png)
-![](img/index-69_209.png)
-![](img/index-69_210.png)
-![](img/index-69_211.png)
-![](img/index-69_212.png)
-![](img/index-69_213.png)
-![](img/index-69_214.png)
-![](img/index-69_215.png)
-![](img/index-69_216.png)
-![](img/index-69_217.png)
-![](img/index-69_218.png)
-![](img/index-69_219.png)
-![](img/index-69_220.png)
-![](img/index-69_221.png)
-![](img/index-69_222.png)
-![](img/index-69_223.png)
-![](img/index-69_224.png)
-![](img/index-69_225.png)
-![](img/index-69_226.png)
-![](img/index-69_227.png)
-![](img/index-69_228.png)
-![](img/index-69_229.png)
-![](img/index-69_230.png)
-![](img/index-69_231.png)
-![](img/index-69_232.png)
-![](img/index-69_233.png)
-![](img/index-69_234.png)
-![](img/index-69_235.png)
-![](img/index-69_236.png)
-![](img/index-69_237.png)
-![](img/index-69_238.png)
-![](img/index-69_239.png)
-![](img/index-69_240.png)
-![](img/index-69_241.png)
-![](img/index-69_242.png)
-![](img/index-69_243.png)
-![](img/index-69_244.png)
-![](img/index-69_245.png)
-![](img/index-69_246.png)
-![](img/index-69_247.png)
-![](img/index-69_248.png)
-![](img/index-69_249.png)
-![](img/index-69_250.png)
-![](img/index-69_251.png)
-![](img/index-69_252.png)
-![](img/index-69_253.png)
-![](img/index-69_254.png)
-![](img/index-69_255.png)
-![](img/index-69_256.png)
-![](img/index-69_257.png)
-![](img/index-69_258.png)
-![](img/index-69_259.png)
-![](img/index-69_260.png)
-![](img/index-69_261.png)
-![](img/index-69_262.png)
-![](img/index-69_263.png)
-![](img/index-69_264.png)
-![](img/index-69_265.png)
-![](img/index-69_266.png)
-![](img/index-69_267.png)
-![](img/index-69_268.png)
-![](img/index-69_269.png)
-![](img/index-69_270.png)
-![](img/index-69_271.png)
-![](img/index-69_272.png)
-![](img/index-69_273.png)
-![](img/index-69_274.png)
-![](img/index-69_275.png)
-![](img/index-69_276.png)
-![](img/index-69_277.png)
-![](img/index-69_278.png)
-![](img/index-69_279.png)
-![](img/index-69_280.png)
-![](img/index-69_281.png)
-![](img/index-69_282.png)
-![](img/index-69_283.png)
-![](img/index-69_284.png)
-![](img/index-69_285.png)
-![](img/index-69_286.png)
-![](img/index-69_287.png)
-![](img/index-69_288.png)
-![](img/index-69_289.png)
-![](img/index-69_290.png)
-![](img/index-69_291.png)
-![](img/index-69_292.png)
-![](img/index-69_293.png)
-![](img/index-69_294.png)
-![](img/index-69_295.png)
-![](img/index-69_296.png)
-![](img/index-69_297.png)
-![](img/index-69_298.png)
-![](img/index-69_299.png)
-![](img/index-69_300.png)
-![](img/index-69_301.png)
-![](img/index-69_302.png)
-![](img/index-69_303.png)
-![](img/index-69_304.png)
-![](img/index-69_305.png)
-![](img/index-69_306.png)
-![](img/index-69_307.png)
-![](img/index-69_308.png)
-![](img/index-69_309.png)
-![](img/index-69_310.png)
-![](img/index-69_311.png)
-![](img/index-69_312.png)
-![](img/index-69_313.png)
-![](img/index-69_314.png)
-![](img/index-69_315.png)
-![](img/index-69_316.png)
-![](img/index-69_317.png)
-![](img/index-69_318.png)
-![](img/index-69_319.png)
-![](img/index-69_320.png)
-![](img/index-69_321.png)
-![](img/index-69_322.png)
-![](img/index-69_323.png)
-![](img/index-69_324.png)
-![](img/index-69_325.png)
-![](img/index-69_326.png)
-![](img/index-69_327.png)
-![](img/index-69_328.png)
-![](img/index-69_329.png)
-![](img/index-69_330.png)
-![](img/index-69_331.png)
-![](img/index-69_332.png)
-![](img/index-69_333.png)
-![](img/index-69_334.png)
-![](img/index-69_335.png)
-![](img/index-69_336.png)
+## 配置数据库
 
 ```javascript
 // 配置数据库主机、用户、密码的连接，SQLite 不需要这些
@@ -3237,9 +1688,11 @@ server.route({
     // 尝试逐行注释掉这些代码
     return Article.findAll()
 
-    return Article.create({ title: '欢迎来到我的博客', body: '地球上的乐园' }) return Article.findById(1)
+    return Article.create({ title: '欢迎来到我的博客', body: '地球上的乐园' })
+    return Article.findById(1)
 
-    return Article.update({ title: '学习 Hapi', body: `JSON API 轻而易举.` }, { where: { id: 1 } }) return Article.findAll()
+    return Article.update({ title: '学习 Hapi', body: `JSON API 轻而易举.` }, { where: { id: 1 } })
+    return Article.findAll()
 
     return Article.destroy({ where: { id: 1 } })
 
@@ -3250,11 +1703,7 @@ server.route({
 
 如果你熟悉 SQL 或其他 ORM，`Sequelize` 的 API 应该是自而易懂的，它是基于 Promise 构建的，因此与 Hapi 的异步处理程序完美契合。
 
-
-
-
-
-注意：在本文演示的场景下，使用 `Article.sync()` 创建表或使用 `Article.sync({ force: true })` 丢并创建表都是可以的。如果你想在生产环境中使用它，应该检查 `sequelizecli` 并为任何架构更改编写 `Migrations`（迁移）。
+> **注意**：在本文演示的场景下，使用 `Article.sync()` 创建表或使用 `Article.sync({ force: true })` 删除并创建表都是可以的。如果你想在生产环境中使用它，应该检查 `sequelizecli` 并为任何架构更改编写 `Migrations`（迁移）。
 
 ## 我们的 RESTful 动作
 
@@ -3308,323 +1757,49 @@ exports.configureRoutes = (server) => {
 }
 ```
 
-![](img/index-71_1.png)
-![](img/index-71_2.png)
-![](img/index-71_3.png)
-![](img/index-71_4.png)
-![](img/index-71_5.png)
-![](img/index-71_6.png)
-![](img/index-71_7.png)
-![](img/index-71_8.png)
-![](img/index-71_9.png)
-![](img/index-71_10.png)
-![](img/index-71_11.png)
-![](img/index-71_12.png)
-![](img/index-71_13.png)
-![](img/index-71_14.png)
-![](img/index-71_15.png)
-![](img/index-71_16.png)
-![](img/index-71_17.png)
-![](img/index-71_18.png)
-![](img/index-71_19.png)
-![](img/index-71_20.png)
-![](img/index-71_21.png)
-![](img/index-71_22.png)
-![](img/index-71_23.png)
-![](img/index-71_24.png)
-![](img/index-71_25.png)
-![](img/index-71_26.png)
-![](img/index-71_27.png)
-![](img/index-71_28.png)
-![](img/index-71_29.png)
-![](img/index-71_30.png)
-![](img/index-71_31.png)
-![](img/index-71_32.png)
-![](img/index-71_33.png)
-![](img/index-71_34.png)
-![](img/index-71_35.png)
-![](img/index-71_36.png)
-![](img/index-71_37.png)
-![](img/index-71_38.png)
-![](img/index-71_39.png)
-![](img/index-71_40.png)
-![](img/index-71_41.png)
-![](img/index-71_42.png)
-![](img/index-71_43.png)
-![](img/index-71_44.png)
-![](img/index-71_45.png)
-![](img/index-71_46.png)
-![](img/index-71_47.png)
-![](img/index-71_48.png)
-![](img/index-71_49.png)
-![](img/index-71_50.png)
-![](img/index-71_51.png)
-![](img/index-71_52.png)
-![](img/index-71_53.png)
-![](img/index-71_54.png)
-![](img/index-71_55.png)
-![](img/index-71_56.png)
-![](img/index-71_57.png)
-![](img/index-71_58.png)
-![](img/index-71_59.png)
-![](img/index-71_60.png)
-![](img/index-71_61.png)
-![](img/index-71_62.png)
-![](img/index-71_63.png)
-![](img/index-71_64.png)
-![](img/index-71_65.png)
-![](img/index-71_66.png)
-![](img/index-71_67.png)
-![](img/index-71_68.png)
-![](img/index-71_69.png)
-![](img/index-71_70.png)
-![](img/index-71_71.png)
-![](img/index-71_72.png)
-![](img/index-71_73.png)
-![](img/index-71_74.png)
-![](img/index-71_75.png)
-![](img/index-71_76.png)
-![](img/index-71_77.png)
-![](img/index-71_78.png)
-![](img/index-71_79.png)
-![](img/index-71_80.png)
-![](img/index-71_81.png)
-![](img/index-71_82.png)
-![](img/index-71_83.png)
-![](img/index-71_84.png)
-![](img/index-71_85.png)
-![](img/index-71_86.png)
-![](img/index-71_87.png)
-![](img/index-71_88.png)
-![](img/index-71_89.png)
-![](img/index-71_90.png)
-![](img/index-71_91.png)
-![](img/index-71_92.png)
-![](img/index-71_93.png)
-![](img/index-71_94.png)
-![](img/index-71_95.png)
-![](img/index-71_96.png)
-![](img/index-71_97.png)
-![](img/index-71_98.png)
-![](img/index-71_99.png)
-![](img/index-71_100.png)
-![](img/index-71_101.png)
-![](img/index-71_102.png)
-![](img/index-71_103.png)
-![](img/index-71_104.png)
-![](img/index-71_105.png)
-![](img/index-71_106.png)
-![](img/index-71_107.png)
-![](img/index-71_108.png)
-![](img/index-71_109.png)
-![](img/index-71_110.png)
-![](img/index-71_111.png)
-![](img/index-71_112.png)
-![](img/index-71_113.png)
-![](img/index-71_114.png)
-![](img/index-71_115.png)
-![](img/index-71_116.png)
-![](img/index-71_117.png)
-![](img/index-71_118.png)
-![](img/index-71_119.png)
-![](img/index-71_120.png)
-![](img/index-71_121.png)
-![](img/index-71_122.png)
-![](img/index-71_123.png)
-![](img/index-71_124.png)
-![](img/index-71_125.png)
-![](img/index-71_126.png)
-![](img/index-71_127.png)
-![](img/index-71_128.png)
-![](img/index-71_129.png)
-![](img/index-71_130.png)
-![](img/index-71_131.png)
-![](img/index-71_132.png)
-![](img/index-71_133.png)
-![](img/index-71_134.png)
-![](img/index-71_135.png)
-![](img/index-71_136.png)
-![](img/index-71_137.png)
-![](img/index-71_138.png)
-![](img/index-71_139.png)
-![](img/index-71_140.png)
-![](img/index-71_141.png)
-![](img/index-71_142.png)
-![](img/index-71_143.png)
-![](img/index-71_144.png)
-![](img/index-71_145.png)
-![](img/index-71_146.png)
-![](img/index-71_147.png)
-![](img/index-71_148.png)
-![](img/index-71_149.png)
-![](img/index-71_150.png)
-![](img/index-71_151.png)
-![](img/index-71_152.png)
-![](img/index-71_153.png)
-![](img/index-71_154.png)
-![](img/index-71_155.png)
-![](img/index-71_156.png)
-![](img/index-71_157.png)
-![](img/index-71_158.png)
-![](img/index-71_159.png)
-![](img/index-71_160.png)
-![](img/index-71_161.png)
-![](img/index-71_162.png)
-![](img/index-71_163.png)
-![](img/index-71_164.png)
-![](img/index-71_165.png)
-![](img/index-71_166.png)
-![](img/index-71_167.png)
-![](img/index-71_168.png)
-![](img/index-71_169.png)
-![](img/index-71_170.png)
-![](img/index-71_171.png)
-![](img/index-71_172.png)
-![](img/index-71_173.png)
-![](img/index-71_174.png)
-
-
-
-
-
-![](img/index-72_58.png)
-![](img/index-72_59.png)
-![](img/index-72_60.png)
-![](img/index-72_61.png)
-![](img/index-72_62.png)
-![](img/index-72_63.png)
-![](img/index-72_64.png)
-![](img/index-72_65.png)
-![](img/index-72_66.png)
-![](img/index-72_67.png)
-![](img/index-72_68.png)
-![](img/index-72_69.png)
-![](img/index-72_70.png)
-![](img/index-72_71.png)
-![](img/index-72_72.png)
-![](img/index-72_73.png)
-![](img/index-72_74.png)
-![](img/index-72_75.png)
-![](img/index-72_76.png)
-![](img/index-72_77.png)
-![](img/index-72_78.png)
-![](img/index-72_79.png)
-![](img/index-72_80.png)
-![](img/index-72_81.png)
-![](img/index-72_82.png)
-![](img/index-72_83.png)
-![](img/index-72_84.png)
-![](img/index-72_85.png)
-![](img/index-72_86.png)
-![](img/index-72_87.png)
-![](img/index-72_88.png)
-![](img/index-72_89.png)
-![](img/index-72_90.png)
-![](img/index-72_91.png)
-![](img/index-72_92.png)
-![](img/index-72_93.png)
-![](img/index-72_94.png)
-![](img/index-72_95.png)
-![](img/index-72_96.png)
-![](img/index-72_97.png)
-![](img/index-72_98.png)
-![](img/index-72_99.png)
-![](img/index-72_100.png)
-![](img/index-72_101.png)
-![](img/index-72_102.png)
-![](img/index-72_103.png)
-![](img/index-72_104.png)
-![](img/index-72_105.png)
-![](img/index-72_106.png)
-![](img/index-72_107.png)
-![](img/index-72_108.png)
-![](img/index-72_109.png)
-![](img/index-72_110.png)
-![](img/index-72_111.png)
-![](img/index-72_112.png)
-![](img/index-72_113.png)
-![](img/index-72_114.png)
-![](img/index-72_115.png)
-![](img/index-72_116.png)
-![](img/index-72_117.png)
-![](img/index-72_118.png)
-![](img/index-72_119.png)
-![](img/index-72_120.png)
-![](img/index-72_121.png)
-![](img/index-72_122.png)
-![](img/index-72_123.png)
-![](img/index-72_124.png)
-![](img/index-72_125.png)
-![](img/index-72_126.png)
-![](img/index-72_127.png)
-![](img/index-72_128.png)
-![](img/index-72_129.png)
-![](img/index-72_130.png)
-![](img/index-72_131.png)
-![](img/index-72_132.png)
-![](img/index-72_133.png)
-![](img/index-72_134.png)
-![](img/index-72_135.png)
-![](img/index-72_136.png)
-![](img/index-72_137.png)
-![](img/index-72_138.png)
-![](img/index-72_139.png)
-![](img/index-72_140.png)
-![](img/index-72_141.png)
-![](img/index-72_142.png)
-![](img/index-72_143.png)
-![](img/index-72_144.png)
-![](img/index-72_145.png)
-![](img/index-72_146.png)
-![](img/index-72_147.png)
-![](img/index-72_148.png)
-![](img/index-72_149.png)
-![](img/index-72_150.png)
-![](img/index-72_151.png)
-![](img/index-72_152.png)
-![](img/index-72_153.png)
-![](img/index-72_154.png)
-![](img/index-72_155.png)
-![](img/index-72_156.png)
-![](img/index-72_157.png)
-![](img/index-72_158.png)
-![](img/index-72_159.png)
-![](img/index-72_160.png)
-![](img/index-72_161.png)
-![](img/index-72_162.png)
-![](img/index-72_163.png)
-![](img/index-72_164.png)
-![](img/index-72_165.png)
-![](img/index-72_166.png)
-![](img/index-72_167.png)
-![](img/index-72_168.png)
+```bash
 http GET http://localhost:3000/articles
 http GET http://localhost:3000/articles/2
 http PUT http://localhost:3000/articles/2 article='{"title": "True happiness, is an inner quality"}'
 http GET http://localhost:3000/articles/2
 http DELETE http://localhost:3000/articles/2
 http GET http://localhost:3000/articles
-Okay, everything seems to be working. let’s try few more: http GET http://localhost:3000/articles/12345
+```
+
+Okay, everything seems to be working. let’s try few more:
+
+```bash
+http GET http://localhost:3000/articles/12345
 http DELETE http://localhost:3000/articles/12345
-Yikes! When we try to fetch an article thatt exist, we get 200 with empty body and our handler throws in 500. This is happening because `findById` returns null. We want our API to respond with 404 in both cases. There’s few ways we can achieve this.
-DEFENSIVELY CHECK FOR NULL AND RETURN AN ERROR
-There’s package called `boom` which helps create standard response objects: `npm install boom`
-Import it and modify `/articles/:id` route:
+```
+
+Yikes! When we try to fetch an article that doesn't exist, we get 200 with empty body and our handler throws in 500. This is happening because `findById` returns null. We want our API to respond with 404 in both cases. There’s few ways we can achieve this.
+
+### 方案一：防御性地检查 NULL 并返回错误
+
+有一个名为 `boom` 的包可以帮助创建标准响应对象：`npm install boom`
+
+导入它并修改 `/articles/:id` 路由：
+
 ```javascript
 // routes.js
 const Boom = require('boom')
+
 {
   method: 'GET',
   path: '/articles/{id}',
-  handler: async (request) {
+  handler: async (request) => {
     const article = await Article.findById(request.params.id)
     if (article === null) return Boom.notFound()
     return article
   }
 }
 ```
-EXTEND SEQUELIZE.MODEL TO THROW AN ERROR
-`Sequelize.Model` is a reference to the prototype that all Models inherit from, so we can easily add a new method `find` to `findById` and throw an error if it returns null:
+
+### 方案二：扩展 SEQUELIZE.MODEL 以抛出错误
+
+`Sequelize.Model` 是所有模型继承的原型引用，因此我们可以轻松地添加一个新方法 `find` 来封装 `findById`，如果返回 null 则抛出错误：
+
 ```javascript
 // models.js
 const Boom = require('boom')
@@ -3634,147 +1809,85 @@ Sequelize.Model.find = async function (...args) {
   return obj
 }
 ```
-We can then revert the handler to its former glory and replace occurrences of `findById` with `find`:
+
+然后我们可以恢复处理程序的原始形式，并将 `findById` 的出现替换为 `find`：
+
 ```javascript
 {
   method: 'GET',
   path: '/articles/{id}',
-  handler: (request) {
+  handler: (request) => {
     return Article.find(request.params.id)
   }
 }
 ```
+
+```bash
 http GET http://localhost:3000/articles/12345
 http DELETE http://localhost:3000/articles/12345
-`Boom`. We now get a 404 Not Found error whenever we try to fetch something from the database that doesn’t exist. We’ve replaced our custom error checks with an easy understand convention that keeps our code clean.
-Note: another popular tool for making requests to REST APIs is Postman. If you prefer a UI and ability to save common requests, this is a great option.
-Path Parameters
-The routing in Hapi is a little different from other frameworks. The route is selected on the specificity of the path, so the order you define them doesn’t matter.
-`/hello/{name}` matches `/hello/bob` and passes 'bob' as the `name` param
-`/hello/{name?}` — the `?` makes name optional and matches both `/hello` and `/hello/bob`
-`/hello/{name*2}` — the `*` denotes multiple segments, matching `/hello/bob/marley` by passing 'bob/marley' as the `name` param
-`/{args*}` matches `/any/route/imaginable` and has the lowest specificity.
-The Request Object
-The request object that’s passed to the route handler has the following useful properties:
-`request.params` — path params
-`request.query` — query string params
-`request.payload` — request body for JSON or form params
-`request.state` — cookies
-`request.headers`
-`request.url`
-Adding a Second Model
-Our second model will handle comments on articles. Here’s the complete file:
+```
+
+`Boom`。现在每当我们尝试从数据库获取不存在的内容时，都会得到 404 Not Found 错误。我们用一个易于理解的约定替换了自定义错误检查，保持了代码的整洁。
+
+> **注意**：另一个用于向 REST API 发出请求的流行工具是 Postman。如果你更喜欢 UI 和保存常用请求的功能，这是一个不错的选择。
+
+### 路径参数
+
+Hapi 中的路由与其他框架略有不同。路由是根据路径的特异性来选择的，因此定义它们的顺序无关紧要。
+
+- `/hello/{name}` 匹配 `/hello/bob` 并将 'bob' 作为 `name` 参数传递
+- `/hello/{name?}` —— `?` 使 name 成为可选的，同时匹配 `/hello` 和 `/hello/bob`
+- `/hello/{name*2}` —— `*` 表示多个片段，匹配 `/hello/bob/marley` 并将 'bob/marley' 作为 `name` 参数传递
+- `/{args*}` 匹配 `/any/route/imaginable` 且具有最低的特异性。
+
+### 请求对象
+
+传递给路由处理程序的请求对象具有以下有用属性：
+
+- `request.params` —— 路径参数
+- `request.query` —— 查询字符串参数
+- `request.payload` —— JSON 或表单参数的请求体
+- `request.state` —— Cookies
+- `request.headers`
+- `request.url`
+
+## 添加第二个模型
+
+我们的第二个模型将处理文章的评论。这是完整的文件：
+
 ```javascript
 // models.js
 const path = require('path')
 const Sequelize = require('sequelize')
 const Boom = require('boom')
+
 Sequelize.Model.find = async function (...args) {
   const obj = await this.findById(...args)
   if (obj === null) throw Boom.notFound()
   return obj
 }
+
 const sequelize = new Sequelize(null, null, null, {
   dialect: 'sqlite',
   storage: path.join('tmp', 'db.sqlite')
 })
+
 const Article = sequelize.define('article', {
   title: Sequelize.STRING,
   body: Sequelize.TEXT
 })
-```
-![](img/index-75_1.png)
-![](img/index-75_2.png)
-![](img/index-75_3.png)
-![](img/index-75_4.png)
-![](img/index-75_5.png)
-![](img/index-75_6.png)
-![](img/index-75_7.png)
-![](img/index-75_8.png)
-![](img/index-75_9.png)
-![](img/index-75_10.png)
-![](img/index-75_11.png)
-![](img/index-75_12.png)
-![](img/index-75_13.png)
-![](img/index-75_14.png)
-![](img/index-75_15.png)
-![](img/index-75_16.png)
-![](img/index-75_17.png)
-![](img/index-75_18.png)
-![](img/index-75_19.png)
-![](img/index-75_20.png)
-![](img/index-75_21.png)
-![](img/index-75_22.png)
-![](img/index-75_23.png)
-![](img/index-75_24.png)
-![](img/index-75_25.png)
-![](img/index-75_26.png)
-![](img/index-75_27.png)
-![](img/index-75_28.png)
-![](img/index-75_29.png)
-![](img/index-75_30.png)
-![](img/index-75_31.png)
-![](img/index-75_32.png)
-![](img/index-75_33.png)
-![](img/index-75_34.png)
-![](img/index-75_35.png)
-![](img/index-75_36.png)
-![](img/index-75_37.png)
-![](img/index-75_38.png)
-![](img/index-75_39.png)
-![](img/index-75_40.png)
-![](img/index-75_41.png)
-![](img/index-75_42.png)
-![](img/index-75_43.png)
-![](img/index-75_44.png)
-![](img/index-75_45.png)
-![](img/index-75_46.png)
-![](img/index-75_47.png)
-![](img/index-75_48.png)
-![](img/index-75_49.png)
-![](img/index-75_50.png)
-![](img/index-75_51.png)
-![](img/index-75_52.png)
-![](img/index-75_53.png)
-![](img/index-75_54.png)
-![](img/index-75_55.png)
-![](img/index-75_56.png)
-![](img/index-75_57.png)
-![](img/index-75_58.png)
-![](img/index-75_59.png)
-![](img/index-75_60.png)
-![](img/index-75_61.png)
-![](img/index-75_62.png)
-![](img/index-75_63.png)
-![](img/index-75_64.png)
-![](img/index-75_65.png)
-![](img/index-75_66.png)
-![](img/index-75_67.png)
-![](img/index-75_68.png)
-![](img/index-75_69.png)
-![](img/index-75_70.png)
-![](img/index-75_71.png)
-![](img/index-75_72.png)
-![](img/index-75_73.png)
-![](img/index-75_74.png)
-![](img/index-75_75.png)
 
-
-
-
-
-```javascript
 const Comment = sequelize.define('comment', {
   commenter: Sequelize.STRING,
   body: Sequelize.TEXT
 })
 
-// These associations add an articleId foreign key to our comments
-// They add helpful methods like article.getComments() and article.createComment()
+// 这些关联向我们的评论添加了 articleId 外键
+// 它们添加了有用的方法，如 article.getComments() 和 article.createComment()
 Article.hasMany(Comment)
 Comment.belongsTo(Article)
 
-// Create tables
+// 创建表
 Article.sync()
 Comment.sync()
 
@@ -3800,19 +1913,19 @@ const { Article, Comment } = require('./models')
   path: '/articles/{articleId}/comments/{id}',
   handler: async (request) => {
     const { id, articleId } = request.params
-    const comment = await Comment.find(id, { where: {Id } })
+    const comment = await Comment.find(id, { where: { articleId } })
     return comment.destroy()
   }
 }
 ```
 
-You can pass options to findById as a second argument:
+你可以将选项作为第二个参数传递给 `findById`：
 
 ```javascript
 const comment = await Comment.find(id, { where: { articleId } })
 ```
 
-Lastly, we can extend `/articles/:id` to return both the article and its comments:
+最后，我们可以扩展 `/articles/:id` 以同时返回文章及其评论：
 
 ```javascript
 {
@@ -3826,7 +1939,7 @@ Lastly, we can extend `/articles/:id` to return both the article and its comment
 }
 ```
 
-`article` here is the `Model` object; `article.get()` returns a plain object with the model’s values, on which we can use the spread operator to combine with our comments. Let’s test it out:
+这里的 `article` 是 `Model` 对象；`article.get()` 返回一个包含模型值的普通对象，我们可以在其上使用展开运算符将其与评论合并。让我们测试一下：
 
 ```http
 http POST http://localhost:3000/articles/3/comments comment='{ "commenter": "mb4", "body": "Agreed, this blog rules!" }'
@@ -3836,505 +1949,40 @@ http POST http://localhost:3000/articles/3/comments comment='{ "commenter": "mb4
 http POST http://localhost:3000/articles/3/comments comment='{ "commenter": "Nigerian prince", "body": "You are the beneficiary of a Nigerian prince’s $4,000,000 fortune." }'
 ```
 
-![](img/index-75_78.png)
-![](img/index-75_79.png)
-![](img/index-75_80.png)
-![](img/index-75_81.png)
-![](img/index-75_82.png)
-![](img/index-75_83.png)
-![](img/index-75_84.png)
-![](img/index-75_85.png)
-![](img/index-75_86.png)
-![](img/index-75_87.png)
-![](img/index-75_88.png)
-![](img/index-75_89.png)
-![](img/index-75_90.png)
-![](img/index-75_91.png)
-![](img/index-75_92.png)
-![](img/index-75_93.png)
-![](img/index-75_94.png)
-![](img/index-75_95.png)
-![](img/index-75_96.png)
-![](img/index-75_97.png)
-![](img/index-75_98.png)
-![](img/index-75_99.png)
-![](img/index-75_100.png)
-![](img/index-75_101.png)
-![](img/index-75_102.png)
-![](img/index-75_103.png)
-![](img/index-75_104.png)
-![](img/index-75_105.png)
-![](img/index-75_106.png)
-![](img/index-75_107.png)
-![](img/index-75_108.png)
-![](img/index-75_109.png)
-![](img/index-75_110.png)
-![](img/index-75_111.png)
-![](img/index-75_112.png)
-![](img/index-75_113.png)
-![](img/index-75_114.png)
-![](img/index-75_115.png)
-![](img/index-75_116.png)
-![](img/index-75_117.png)
-![](img/index-75_118.png)
-![](img/index-75_119.png)
-![](img/index-75_120.png)
-![](img/index-75_121.png)
-![](img/index-75_122.png)
-![](img/index-75_123.png)
-![](img/index-75_124.png)
-![](img/index-75_125.png)
-![](img/index-75_126.png)
-![](img/index-75_127.png)
-![](img/index-75_128.png)
-![](img/index-75_129.png)
-![](img/index-75_130.png)
-![](img/index-75_131.png)
-![](img/index-75_132.png)
-![](img/index-75_133.png)
-![](img/index-75_134.png)
-![](img/index-75_135.png)
-![](img/index-75_136.png)
-![](img/index-75_137.png)
-![](img/index-75_138.png)
-![](img/index-75_139.png)
-![](img/index-75_140.png)
-![](img/index-75_141.png)
-![](img/index-75_142.png)
-![](img/index-75_143.png)
-![](img/index-75_144.png)
-![](img/index-75_145.png)
-![](img/index-75_146.png)
-![](img/index-75_147.png)
-![](img/index-75_148.png)
-![](img/index-75_149.png)
-![](img/index-75_150.png)
-![](img/index-75_151.png)
-![](img/index-75_152.png)
-![](img/index-75_153.png)
-![](img/index-75_154.png)
-![](img/index-75_155.png)
-![](img/index-75_156.png)
-![](img/index-75_157.png)
-![](img/index-75_158.png)
-![](img/index-75_159.png)
-![](img/index-75_160.png)
-![](img/index-75_161.png)
-![](img/index-75_162.png)
-![](img/index-75_163.png)
-![](img/index-75_164.png)
-![](img/index-75_165.png)
-![](img/index-75_166.png)
-![](img/index-75_167.png)
-![](img/index-75_168.png)
-![](img/index-75_169.png)
-![](img/index-75_170.png)
-![](img/index-75_171.png)
-![](img/index-75_172.png)
-![](img/index-75_173.png)
-![](img/index-75_174.png)
-![](img/index-76_1.png)
-![](img/index-76_2.png)
-![](img/index-76_3.png)
-![](img/index-76_4.png)
-![](img/index-76_5.png)
-![](img/index-76_6.png)
-![](img/index-76_7.png)
-![](img/index-76_8.png)
-![](img/index-76_9.png)
-![](img/index-76_10.png)
-![](img/index-76_11.png)
-![](img/index-76_12.png)
-![](img/index-76_13.png)
-![](img/index-76_14.png)
-![](img/index-76_15.png)
-
-
-
-
-`http GET http://localhost:3000/articles/3`
-
-`http DELETE http://localhost:3000/articles/3/comments/2`
-
-`http GET http://localhost:3000/articles/3`
+```bash
+http GET http://localhost:3000/articles/3
+http DELETE http://localhost:3000/articles/3/comments/2
+http GET http://localhost:3000/articles/3
+```
 
 我们的博客 API 几乎准备好上线生产了，只需要进行最后的完善。
 
 ## 使用 JWT 进行身份验证
 
-JSON Web Tokens 是 API 一种常见的身份验证机制。有一个名为 `hapiauthjwt2` 的插件可以设置它，但它还没有针对 Hapi 17.0 更新，因此我们目前需要安装一个分支：
+JSON Web Tokens 是 API 一种常见的身份验证机制。有一个名为 `hapi-auth-jwt2` 的插件可以设置它，但它还没有针对 Hapi 17.0 更新，因此我们目前需要安装一个分支：
 
 ```bash
-npm install save salzhrani/hapiauthjwt2#v17
+npm install save salzhrani/hapi-auth-jwt2#v17
 ```
 
-下面的代码注册了 `hapiauthjwt2` 插件，并使用 `jwt` `scheme` 设置了一个名为 `admin` 的 `strategy`。如果在头部、查询字符串或 Cookie 中发送了有效的 JWT 令牌，它将调用我们的 `validate` 函数来验证我们是否允许这些凭据的访问：
+下面的代码注册了 `hapi-auth-jwt2` 插件，并使用 `jwt` `scheme` 设置了一个名为 `admin` 的 `strategy`。如果在头部、查询字符串或 Cookie 中发送了有效的 JWT 令牌，它将调用我们的 `validate` 函数来验证我们是否允许这些凭据的访问：
+
+
 
 ```javascript
 // auth.js
 
 const jwtPlugin = require('hapiauthjwt2').plugin
 
-// 这在生产环境中应该是一个环境变量 const JWT_KEY = 'NeverShareYourSecret'
+// 这在生产环境中应该是一个环境变量
+const JWT_KEY = 'NeverShareYourSecret'
 
 var validate = function (credentials) {
-
-// 在此处运行任何检查以确认我们是否想要授予这些凭据访问
-```
-
-![](img/index-77_1.png)
-![](img/index-77_2.png)
-![](img/index-77_3.png)
-![](img/index-77_4.png)
-![](img/index-77_5.png)
-![](img/index-77_6.png)
-![](img/index-77_7.png)
-![](img/index-77_8.png)
-![](img/index-77_9.png)
-![](img/index-77_10.png)
-![](img/index-77_11.png)
-![](img/index-77_12.png)
-![](img/index-77_13.png)
-![](img/index-77_14.png)
-![](img/index-77_15.png)
-![](img/index-77_16.png)
-![](img/index-77_17.png)
-![](img/index-77_18.png)
-![](img/index-77_19.png)
-![](img/index-77_20.png)
-![](img/index-77_21.png)
-![](img/index-77_22.png)
-![](img/index-77_23.png)
-![](img/index-77_24.png)
-![](img/index-77_25.png)
-![](img/index-77_26.png)
-![](img/index-77_27.png)
-![](img/index-77_28.png)
-![](img/index-77_29.png)
-![](img/index-77_30.png)
-![](img/index-77_31.png)
-![](img/index-77_32.png)
-![](img/index-77_33.png)
-![](img/index-77_34.png)
-![](img/index-77_35.png)
-![](img/index-77_36.png)
-![](img/index-77_37.png)
-![](img/index-77_38.png)
-![](img/index-77_39.png)
-![](img/index-77_40.png)
-![](img/index-77_41.png)
-![](img/index-77_42.png)
-![](img/index-77_43.png)
-![](img/index-77_44.png)
-![](img/index-77_45.png)
-![](img/index-77_46.png)
-![](img/index-77_47.png)
-![](img/index-77_48.png)
-![](img/index-77_49.png)
-![](img/index-77_50.png)
-![](img/index-77_51.png)
-![](img/index-77_52.png)
-![](img/index-77_53.png)
-![](img/index-77_54.png)
-![](img/index-77_55.png)
-![](img/index-77_56.png)
-![](img/index-77_57.png)
-![](img/index-77_58.png)
-![](img/index-77_59.png)
-![](img/index-77_60.png)
-![](img/index-77_61.png)
-![](img/index-77_62.png)
-![](img/index-77_63.png)
-![](img/index-77_64.png)
-![](img/index-77_65.png)
-![](img/index-77_66.png)
-![](img/index-77_67.png)
-![](img/index-77_68.png)
-![](img/index-77_69.png)
-![](img/index-77_70.png)
-![](img/index-77_71.png)
-![](img/index-77_72.png)
-![](img/index-77_73.png)
-![](img/index-77_74.png)
-![](img/index-77_75.png)
-![](img/index-77_76.png)
-![](img/index-77_77.png)
-![](img/index-77_78.png)
-![](img/index-77_79.png)
-![](img/index-77_80.png)
-![](img/index-77_81.png)
-![](img/index-77_82.png)
-![](img/index-77_83.png)
-![](img/index-77_84.png)
-![](img/index-77_85.png)
-![](img/index-77_86.png)
-![](img/index-77_87.png)
-![](img/index-77_88.png)
-![](img/index-77_89.png)
-![](img/index-77_90.png)
-![](img/index-77_91.png)
-![](img/index-77_92.png)
-![](img/index-77_93.png)
-![](img/index-77_94.png)
-![](img/index-77_95.png)
-![](img/index-77_96.png)
-![](img/index-77_97.png)
-![](img/index-77_98.png)
-![](img/index-77_99.png)
-![](img/index-77_100.png)
-![](img/index-77_101.png)
-![](img/index-77_102.png)
-![](img/index-77_103.png)
-![](img/index-77_104.png)
-![](img/index-77_105.png)
-![](img/index-77_106.png)
-![](img/index-77_107.png)
-![](img/index-77_108.png)
-![](img/index-77_109.png)
-![](img/index-77_110.png)
-![](img/index-77_111.png)
-![](img/index-77_112.png)
-![](img/index-77_113.png)
-![](img/index-77_114.png)
-![](img/index-77_115.png)
-![](img/index-77_116.png)
-![](img/index-77_117.png)
-![](img/index-77_118.png)
-![](img/index-77_119.png)
-![](img/index-77_120.png)
-![](img/index-77_121.png)
-![](img/index-77_122.png)
-![](img/index-77_123.png)
-![](img/index-77_124.png)
-![](img/index-77_125.png)
-![](img/index-77_126.png)
-![](img/index-77_127.png)
-![](img/index-77_128.png)
-![](img/index-77_129.png)
-![](img/index-77_130.png)
-![](img/index-77_131.png)
-![](img/index-77_132.png)
-![](img/index-77_133.png)
-![](img/index-77_134.png)
-![](img/index-77_135.png)
-![](img/index-77_136.png)
-![](img/index-77_137.png)
-![](img/index-77_138.png)
-![](img/index-77_139.png)
-![](img/index-77_140.png)
-![](img/index-77_141.png)
-![](img/index-77_142.png)
-![](img/index-77_143.png)
-![](img/index-77_144.png)
-![](img/index-77_145.png)
-![](img/index-77_146.png)
-![](img/index-77_147.png)
-![](img/index-77_148.png)
-![](img/index-77_149.png)
-![](img/index-77_150.png)
-![](img/index-77_151.png)
-![](img/index-77_152.png)
-![](img/index-77_153.png)
-![](img/index-77_154.png)
-![](img/index-77_155.png)
-![](img/index-77_156.png)
-![](img/index-77_157.png)
-![](img/index-77_158.png)
-![](img/index-77_159.png)
-![](img/index-77_160.png)
-![](img/index-77_161.png)
-![](img/index-77_162.png)
-![](img/index-77_163.png)
-![](img/index-77_164.png)
-![](img/index-77_165.png)
-![](img/index-77_166.png)
-![](img/index-77_167.png)
-![](img/index-77_168.png)
-![](img/index-77_169.png)
-![](img/index-77_170.png)
-![](img/index-77_171.png)
-![](img/index-77_172.png)
-![](img/index-77_173.png)
-![](img/index-77_174.png)
-![](img/index-77_175.png)
-![](img/index-77_176.png)
-![](img/index-77_177.png)
-![](img/index-77_178.png)
-![](img/index-77_179.png)
-![](img/index-77_180.png)
-![](img/index-77_181.png)
-![](img/index-77_182.png)
-![](img/index-77_183.png)
-![](img/index-77_184.png)
-![](img/index-77_185.png)
-![](img/index-77_186.png)
-![](img/index-77_187.png)
-![](img/index-77_188.png)
-![](img/index-77_189.png)
-![](img/index-77_190.png)
-![](img/index-77_191.png)
-![](img/index-77_192.png)
-![](img/index-77_193.png)
-![](img/index-77_194.png)
-![](img/index-77_195.png)
-![](img/index-77_196.png)
-![](img/index-77_197.png)
-![](img/index-77_198.png)
-![](img/index-77_199.png)
-![](img/index-77_200.png)
-![](img/index-77_201.png)
-![](img/index-77_202.png)
-![](img/index-77_203.png)
-![](img/index-77_204.png)
-![](img/index-77_205.png)
-![](img/index-77_206.png)
-![](img/index-77_207.png)
-![](img/index-77_208.png)
-![](img/index-77_209.png)
-![](img/index-77_210.png)
-![](img/index-77_211.png)
-![](img/index-77_212.png)
-![](img/index-77_213.png)
-![](img/index-77_214.png)
-![](img/index-77_215.png)
-![](img/index-77_216.png)
-![](img/index-77_217.png)
-![](img/index-77_218.png)
-![](img/index-77_219.png)
-![](img/index-77_220.png)
-![](img/index-77_221.png)
-![](img/index-77_222.png)
-![](img/index-77_223.png)
-![](img/index-77_224.png)
-![](img/index-77_225.png)
-![](img/index-77_226.png)
-![](img/index-77_227.png)
-![](img/index-77_228.png)
-![](img/index-77_229.png)
-![](img/index-77_230.png)
-![](img/index-77_231.png)
-![](img/index-77_232.png)
-![](img/index-77_233.png)
-![](img/index-77_234.png)
-![](img/index-77_235.png)
-![](img/index-77_236.png)
-![](img/index-77_237.png)
-![](img/index-77_238.png)
-![](img/index-77_239.png)
-![](img/index-77_240.png)
-![](img/index-77_241.png)
-![](img/index-77_242.png)
-![](img/index-77_243.png)
-![](img/index-77_244.png)
-![](img/index-77_245.png)
-![](img/index-77_246.png)
-![](img/index-77_247.png)
-![](img/index-77_248.png)
-![](img/index-77_249.png)
-![](img/index-77_250.png)
-![](img/index-77_251.png)
-![](img/index-77_252.png)
-![](img/index-77_253.png)
-![](img/index-77_254.png)
-![](img/index-77_255.png)
-![](img/index-77_256.png)
-![](img/index-77_257.png)
-![](img/index-77_258.png)
-![](img/index-77_259.png)
-![](img/index-77_260.png)
-![](img/index-77_261.png)
-![](img/index-77_262.png)
-![](img/index-77_263.png)
-![](img/index-77_264.png)
-![](img/index-77_265.png)
-![](img/index-77_266.png)
-![](img/index-77_267.png)
-![](img/index-77_268.png)
-![](img/index-77_269.png)
-![](img/index-77_270.png)
-![](img/index-77_271.png)
-![](img/index-77_272.png)
-![](img/index-77_273.png)
-![](img/index-77_274.png)
-![](img/index-77_275.png)
-![](img/index-77_276.png)
-![](img/index-77_277.png)
-![](img/index-77_278.png)
-![](img/index-77_279.png)
-![](img/index-77_280.png)
-![](img/index-77_281.png)
-![](img/index-77_282.png)
-![](img/index-77_283.png)
-![](img/index-77_284.png)
-![](img/index-77_285.png)
-![](img/index-77_286.png)
-![](img/index-77_287.png)
-![](img/index-77_288.png)
-![](img/index-77_289.png)
-![](img/index-77_290.png)
-![](img/index-77_291.png)
-![](img/index-77_292.png)
-![](img/index-77_293.png)
-![](img/index-77_294.png)
-![](img/index-77_295.png)
-![](img/index-77_296.png)
-![](img/index-77_297.png)
-![](img/index-77_298.png)
-![](img/index-77_299.png)
-![](img/index-77_300.png)
-![](img/index-77_301.png)
-![](img/index-77_302.png)
-![](img/index-77_303.png)
-![](img/index-77_304.png)
-![](img/index-77_305.png)
-![](img/index-77_306.png)
-
-
-
-
-
-![](img/index-77_307.png)
-![](img/index-77_308.png)
-![](img/index-77_309.png)
-![](img/index-77_310.png)
-![](img/index-77_311.png)
-![](img/index-77_312.png)
-![](img/index-77_313.png)
-![](img/index-77_314.png)
-![](img/index-77_315.png)
-![](img/index-77_316.png)
-![](img/index-77_317.png)
-![](img/index-77_318.png)
-![](img/index-77_319.png)
-![](img/index-77_320.png)
-![](img/index-77_321.png)
-![](img/index-77_322.png)
-![](img/index-77_323.png)
-![](img/index-77_324.png)
-![](img/index-77_325.png)
-![](img/index-77_326.png)
-![](img/index-77_327.png)
-![](img/index-77_328.png)
-![](img/index-77_329.png)
-![](img/index-77_330.png)
-![](img/index-77_331.png)
-![](img/index-77_332.png)
-![](img/index-77_333.png)
-![](img/index-77_334.png)
-![](img/index-77_335.png)
-![](img/index-77_336.png)
-![](img/index-77_337.png)
-![](img/index-77_338.png)
-![](img/index-77_339.png)
-![](img/index-77_340.png)
-![](img/index-77_341.png)
-![](img/index-77_342.png)
-
-```javascript
-return {
-  isValid: true,
-  credentials // request.auth.credentials
-}
+  // 在此处运行任何检查以确认我们是否想要授予这些凭据访问
+  return {
+    isValid: true,
+    credentials // request.auth.credentials
+  }
 }
 
 exports.configureAuth = async (server) => {
@@ -4363,7 +2011,7 @@ const main = async () => {
 }
 ```
 
-现在，所有路由都将需要我们的 admin 认证策略。尝试以下三个：
+现在，所有路由都将需要我们的 `admin` 认证策略。尝试以下三个：
 
 `http GET localhost:3000/articles`
 
@@ -4378,193 +2026,11 @@ const main = async () => {
   method: 'GET',
   path: '/articles',
   handler: (request) => {
-    ![](img/index-78_1.png)
-    ![](img/index-78_2.png)
-    ![](img/index-78_3.png)
-    ![](img/index-78_4.png)
-    ![](img/index-78_5.png)
-    ![](img/index-78_6.png)
-    ![](img/index-78_7.png)
-    ![](img/index-78_8.png)
-    ![](img/index-78_9.png)
-    ![](img/index-78_10.png)
-    ![](img/index-78_11.png)
-    ![](img/index-78_12.png)
-    ![](img/index-78_13.png)
-    ![](img/index-78_14.png)
-    ![](img/index-78_15.png)
-    ![](img/index-78_16.png)
-    ![](img/index-78_17.png)
-    ![](img/index-78_18.png)
-    ![](img/index-78_19.png)
-    ![](img/index-78_20.png)
-    ![](img/index-78_21.png)
-    ![](img/index-78_22.png)
-    ![](img/index-78_23.png)
-    ![](img/index-78_24.png)
-    ![](img/index-78_25.png)
-    ![](img/index-78_26.png)
-    ![](img/index-78_27.png)
-    ![](img/index-78_28.png)
-    ![](img/index-78_29.png)
-    ![](img/index-78_30.png)
-    ![](img/index-78_31.png)
-    ![](img/index-78_32.png)
-    ![](img/index-78_33.png)
-    ![](img/index-78_34.png)
-    ![](img/index-78_35.png)
-    ![](img/index-78_36.png)
-    ![](img/index-78_37.png)
-    ![](img/index-78_38.png)
-    ![](img/index-78_39.png)
-    ![](img/index-78_40.png)
-    ![](img/index-78_41.png)
-    ![](img/index-78_42.png)
-    ![](img/index-78_43.png)
-    ![](img/index-78_44.png)
-    ![](img/index-78_45.png)
-    ![](img/index-78_46.png)
-    ![](img/index-78_47.png)
-    ![](img/index-78_48.png)
-    ![](img/index-78_49.png)
-    ![](img/index-78_50.png)
-    ![](img/index-78_1.png)
-    ![](img/index-78_52.png)
-    ![](img/index-78_53.png)
-    ![](img/index-78_54.png)
-    ![](img/index-78_55.png)
-    ![](img/index-78_56.png)
-    ![](img/index-78_57.png)
-    ![](img/index-78_58.png)
-    ![](img/index-78_59.png)
-    ![](img/index-78_60.png)
-    ![](img/index-78_61.png)
-    ![](img/index-78_62.png)
-    ![](img/index-78_63.png)
-    ![](img/index-78_64.png)
-    ![](img/index-78_65.png)
-    ![](img/index-78_66.png)
-    ![](img/index-78_67.png)
-    ![](img/index-78_68.png)
-    ![](img/index-78_69.png)
-    ![](img/index-78_70.png)
-    ![](img/index-78_71.png)
-    ![](img/index-78_72.png)
-    ![](img/index-78_73.png)
-    ![](img/index-78_74.png)
-    ![](img/index-78_75.png)
-    ![](img/index-78_76.png)
-    ![](img/index-78_77.png)
-    ![](img/index-78_78.png)
-    ![](img/index-78_79.png)
-    ![](img/index-78_80.png)
-    ![](img/index-78_81.png)
-    ![](img/index-78_82.png)
-    ![](img/index-78_83.png)
-    ![](img/index-78_84.png)
-    ![](img/index-78_85.png)
-    ![](img/index-78_86.png)
-    ![](img/index-78_87.png)
-    ![](img/index-78_88.png)
-    ![](img/index-78_89.png)
-    ![](img/index-78_90.png)
-    ![](img/index-78_91.png)
-    ![](img/index-78_92.png)
-    ![](img/index-78_93.png)
-    ![](img/index-78_94.png)
-    ![](img/index-78_95.png)
-    ![](img/index-78_96.png)
-    ![](img/index-78_97.png)
-    ![](img/index-78_98.png)
-    ![](img/index-78_99.png)
-    ![](img/index-78_100.png)
-    ![](img/index-78_101.png)
-    ![](img/index-78_102.png)
-    ![](img/index-78_103.png)
-    ![](img/index-78_104.png)
-    ![](img/index-78_105.png)
-    ![](img/index-78_106.png)
-    ![](img/index-78_107.png)
-    ![](img/index-78_108.png)
-    ![](img/index-78_109.png)
-    ![](img/index-78_110.png)
-    ![](img/index-78_111.png)
-    ![](img/index-78_112.png)
-    ![](img/index-78_113.png)
-    ![](img/index-78_114.png)
-    ![](img/index-78_115.png)
-    ![](img/index-78_116.png)
-    ![](img/index-78_117.png)
-    ![](img/index-78_118.png)
-    ![](img/index-78_119.png)
-    ![](img/index-78_120.png)
-    ![](img/index-78_121.png)
-    ![](img/index-78_122.png)
-    ![](img/index-78_123.png)
-    ![](img/index-78_124.png)
-    ![](img/index-78_125.png)
-    ![](img/index-78_126.png)
-    ![](img/index-78_127.png)
-    ![](img/index-78_128.png)
-    ![](img/index-78_129.png)
-    ![](img/index-78_130.png)
-    ![](img/index-78_131.png)
-    ![](img/index-78_132.png)
-    ![](img/index-78_133.png)
-    ![](img/index-78_134.png)
-    ![](img/index-78_135.png)
-    ![](img/index-78_136.png)
-    ![](img/index-78_137.png)
-    ![](img/index-78_138.png)
-    ![](img/index-78_139.png)
-    ![](img/index-78_140.png)
-    ![](img/index-78_141.png)
-    ![](img/index-78_142.png)
-    ![](img/index-78_143.png)
-    ![](img/index-78_144.png)
-    ![](img/index-78_145.png)
-    ![](img/index-78_146.png)
-    ![](img/index-78_147.png)
-    ![](img/index-78_148.png)
-    ![](img/index-78_149.png)
-    ![](img/index-78_50.png)
-    ![](img/index-78_1.png)
-    ![](img/index-78_52.png)
-    ![](img/index-78_53.png)
-    ![](img/index-78_54.png)
-    ![](img/index-78_55.png)
-    ![](img/index-78_56.png)
-    ![](img/index-78_57.png)
-    ![](img/index-78_58.png)
-    ![](img/index-78_59.png)
-    ![](img/index-78_60.png)
-    ![](img/index-78_61.png)
-    ![](img/index-78_62.png)
-    ![](img/index-78_63.png)
-    ![](img/index-78_64.png)
-    ![](img/index-78_65.png)
-    ![](img/index-78_66.png)
-    ![](img/index-78_67.png)
-    ![](img/index-78_68.png)
-    ![](img/index-78_69.png)
-    ![](img/index-78_70.png)
-    ![](img/index-78_71.png)
-    ![](img/index-78_72.png)
-    ![](img/index-78_73.png)
-    ![](img/index-78_74.png)
-    ![](img/index-78_75.png)
-    ![](img/index-78_76.png)
-    ![](img/index-78_77.png)
-    ![](img/index-78_78.png)
-    ![](img/index-78_79.png)
     return Article.findAll()
   },
   config: { auth: false }
 }
 ```
-
-
-
 
 # Express.js
 
@@ -4576,14 +2042,16 @@ Express.js 是一个 Node.js 框架，因其简单性而赢得了巨大的人气
 
 ## 支持
 
-虽然有各种启动项目和模板，但 Express 有一个自己的命令行工具用于启动应用，名为 `expressgenerator`。
+虽然有各种启动项目和模板，但 Express 有一个自己的命令行工具用于启动应用，名为 `express-generator`。
 
 ## 什么是 Express?
 
 Express 内置许多功能，还可以与其他包无缝集成获取更多功能，但它原生提供了三个核心功能：
 
 1. **路由**：这是通过 `/home`、`/blog` 和 `/about` 提供不同页面的方式。Express 允许将不同的路由放在不同的文件中，实现模块化。
+
 2. **中间件**：如果你对这个术语陌生，中间件基本上是“软件胶水”。它在路由获取请求之前访问请求，处理 Cookie 解析、文件上传、错误等问题。
+
 3. **视图**：这是渲染自定义 HTML 页的方式。传递要渲染的数据，Express 将使用你提供的视图引擎进行渲染。
 
 ## 如何开始
@@ -4591,13 +2059,13 @@ Express 内置许多功能，还可以与其他包无缝集成获取更多功能
 使用 Express 生成器启动新项目只需运行几条命令：
 
 ```bash
-npm install expressgenerator -g
+npm install express-generator -g
 express myapp
 cd myapp
 npm install
 ```
 
-expressgenerator 包含了几个 Express 服务器常用的依赖项。如果前端和 API 不在同一域名下，你需要开启 CORS：
+`express-generator` 包含了几个 Express 服务器常用的依赖项。如果前端和 API 不在同一域名下，你需要开启 CORS：
 
 ```javascript
 const express = require('express')
@@ -4619,10 +2087,7 @@ const server = express({
 })
 ```
 
-
-
-
-`c less|stylus|compass|sass`。默认情况下，生成器会为你创建一个基础的 CSS 文件，但选择 CSS 引擎将为你的新应用配置中间件，以编译上述任何选项。
+`express` 命令支持 `--css less|stylus|compass|sass` 参数。默认情况下，生成器会为你创建一个基础的 CSS 文件，但选择 CSS 引擎将为你的新应用配置中间件，以编译上述任何选项。
 
 现在我们已经设置好了项目并安装了依赖，可以通过运行以下命令来启动新服务器：
 
@@ -4637,33 +2102,38 @@ npm start
 生成的 Express 应用最初包含四个文件夹。
 
 ## BIN
+
 `bin` 文件夹包含启动应用程序的可执行文件。它会启动服务器（如果没有提供备选端口，则在 `3000` 端口启动）并设置一些基本的错误处理。你不需要真正担心这个文件，因为 `npm start` 会为你运行它。
 
 ## PUBLIC
+
 `public` 文件夹是重要的文件夹之一：
 
 * 此文件夹中的所有内容都都可以被连接到你应用程序的人访问。在这个文件夹中，你将放置用户访问你的网站时所需的 JavaScript、CSS、图像和其他资产。
 
 ## ROUTES
+
 `routes` 文件夹是你存放路由文件的地方。生成器创建了两个文件 `index.js` 和 `users.js`，它们作为如何分离应用程序路由配置的示例。
 
 通常，这里会为你网站上的每个主要路由准备不同的文件。因此，你可能在这个文件夹中拥有名为 `blog.js`、`home.js` 和/或 `about.js` 的文件。
 
 ## VIEWS
+
 `views` 文件夹存放模板引擎使用的文件的地方。生成器会配置 Express，以便在你调用 `render` 方法时在此处查找匹配的视图。
 
 在这些文件夹之外，有一个文件你应该非常熟悉。
 
 ### app.js
+
 `app.js` 文件非常特殊，因为它设置了你的 Express 应用程序并将所有不同部分胶合在一起。让我们来看一下它的功能。以下是文件的开头部分：
 
 ```javascript
 var express = require('express')
 var path = require('path')
-var favicon = require('servefavicon')
+var favicon = require('serve-favicon')
 var logger = require('morgan')
-var cookieParser = require('cookieparser')
-var bodyParser = require('bodyparser')
+var cookieParser = require('cookie-parser')
+var bodyParser = require('body-parser')
 ```
 
 该文件的前六行是引入（requires）。如果你是 Node 的初学者，请务必阅读《理解 Node.js 中的 `module.exports` 和 `exports`》。
@@ -4699,10 +2169,14 @@ app.use(cookieParser())
 app.use(express.static(path.join(__dirname, 'public')))
 ```
 
-- `favicon`。这个非常不而自明：它只是从你的 `public` 目录中提供 `favicon.ico`。
-- `logger`。当你运行应用时，你可能会注意到所有请求的路由都记录在控制台中。如果你想禁用此，可以直接注释掉这个中间件。
+- `favicon`。这个非常不言而喻：它只是从你的 `public` 目录中提供 `favicon.ico`。
+
+- `logger`。当你运行应用时，你可能会注意到所有请求的路由都记录在控制台中。如果你想禁用此功能，可以直接注释掉这个中间件。
+
 - `bodyParser`。你可能会注意到有两行用于解析传入的 HTTP 请求体。第一行处理通过 `POST` 请求发送的 JSON，并将这些数据放入 `request.body`。第二行解析 URL 中的查询字符串数据（例如 `/profile?id=5`）并将其放入 `request.query`。
+
 - `cookieParser`。它获取客户端发送的所有 cookie 并将其放入 `request.cookies` 中。它还允许你在将其发送回客户端之前通过更改 `response.cookies` 来修改它们。
+
 - `express.static`。此中间件从你的 `public` 文件夹中提供静态资产。如果你想重命名或移动 `public` 文件夹，可以在这里更改路径。
 
 接下来是路由：
@@ -4718,7 +2192,7 @@ app.use('/users', users)
 
 # 一个实用的工具
 
-希望你现在已经清楚了 `expressgenerator` 工具在启动新的基于 Express 的项目时，如何节省你编写重复样板代码的时间。通过提供合理的默认文件结构，并安装和连接通常所需的中间件，生成器只需几条命令就能为新应用奠定坚实的基础。
+希望你现在已经清楚了 `express-generator` 工具在启动新的基于 Express 的项目时，如何节省你编写重复样板代码的时间。通过提供合理的默认文件结构，并安装和连接通常所需的中间件，生成器只需几条命令就能为新应用奠定坚实的基础。
 
 # MongoDB 简介
 
@@ -4728,48 +2202,56 @@ MongoDB 是一个开源、面向文档的 NoSQL 数据库。如果你接触过�
 
 以下是官方文档对 MongoDB 的描述：MongoDB 是由 MongoDB Inc 开发的可扩展灵活数据库，以 JSON 类文档存储数据。
 
-NoSQL 数据库中的文档对应 SQL 数据库中的行。一组文档被称为集合，它大致同于关系型数据库中的表。关于 NoSQL 和 SQL 数据库及其差异的深度概述，我们已经在 SQL vs NoSQL 教程中涵盖了。
+NoSQL 数据库中的文档对应 SQL 数据库中的行。一组文档被称为集合，它大致相当于关系型数据库中的表。关于 NoSQL 和 SQL 数据库及其差异的深度概述，我们已经在 SQL vs NoSQL 教程中涵盖了。
 
 除了是一个 NoSQL 数据库，MongoDB 还有一些自身的特性。我在下面列出了一些关键特性：
 
 - 它易于安装和设置
 - 它使用 BSON（一种 JSON 类格式）存储数据，便于将文档对象映射到你的应用程序代码
-- 它声具有高度的可扩展性和可用性，并内置了复制支持
+- 它具有高度的可扩展性和可用性，并内置了复制支持
 - 它支持 MapReduce 操作，将海量数据压缩为有聚合结果
 - 它是免费且开源的。
 
-
-
-
 MongoDB 支持所有主流平台和发行版，如果你有疑问，可以查看它们的官方文档。
 
-我在下方涵盖了在 macOS 上安装 MongoDB 的说明。对于 Linux，MongoDB 建议使用你发行版的包管理器来帮助安装该软件。如果你使用的是 Windows，只需从 MongoDB 网站下载最新发布版本并运行交互式安装程序程序简单。
+我在下方涵盖了在 macOS 上安装 MongoDB 的说明。对于 Linux，MongoDB 建议使用你发行版的包管理器来帮助安装该软件。如果你使用的是 Windows，只需从 MongoDB 网站下载最新发布版本并运行交互式安装程序即可。
 
 # 使用 Homebrew 在 macOS 上安装 MongoDB
 
 Homebrew 是适用于 macOS 的包管理器，本教程假设你已经在机器上安装了 Homebrew。
 
 1. 打开终端应用程序（terminal）并运行
+
 ```bash
 brew update
 ```
+
 2. 一旦 `brew` 更新，按照以下步骤安装 `mongodb` 包：
+
 ```bash
 brew install mongodb
 ```
+
 3. 创建数据目录，以便 `mongod` 进程能够写入数据。默认情况下，该目录为 `/data/db`：
+
 ```bash
 mkdir -p /data/db
 ```
+
 4. 确保你的用户账户有权限向该目录读写数据：
+
 ```bash
-sudo chown -R $id /data/db
+sudo chown -R $USER /data/db
 ```
+
 # 输入你的密码
+
 5. 启动 mongo 服务。运行 `mongod` 命令启动服务器。
+
 6. 启动 Mongo shell。打开另一个终端窗口并运行 `mongo`。mongo shell 将尝试连接到我们之前启动的 mongo 守护进程。
 
 一旦成功连接，你就可以使用 shell 作为练习场安全地运行所有命令。
+
 7. 运行 `quit()` 退出 Mongo shell，按 `control + C` 停止 mongo 守护进程。
 
 现在我们已经运行了 mongo 守护进程，让我们熟悉一下 MongoDB 的基础。
@@ -4785,24 +2267,32 @@ connecting to: mongodb://127.0.0.1:27017
 MongoDB server version: 3.6.1
 connecting to: test
 ```
+
 登录时，你可以看到我的 MongoDB shell 版本。默认情况下，你连接到 `test` 数据库。你可以通过运行 `db` 来验证当前数据库名称：
+
 ```bash
 db
 test
 ```
+
 这太棒了，但如果我们想要一个新数据库呢？要创建一个数据库，MongoDB 有一个 `use DATABASE_NAME` 命令：
+
 ```bash
 use exampledb
 switched to db exampledb
 ```
+
 要显示所有现有数据库，尝试 `show dbs`：
+
 ```bash
 show dbs
 local 0.078GB
 prototype 0.078GB
 test 0.078GB
 ```
+
 `exampledb` 不在列表中，是因为我们需要向数据库中插入至少一个文档。要插入文档，你可以执行 `db.COLLECTION_NAME.insertOne({"key":"value"})`。这里有一个示例：
+
 ```javascript
 db.users.insertOne({'name':'Bob'})
 {
@@ -4810,7 +2300,9 @@ db.users.insertOne({'name':'Bob'})
   "insertedId" : ObjectId("5a52c53b223039ee9c2daaec")
 }
 ```
-MongoDB 会自动创建一个新的 users 集合并插入一个带有键值对 `'name':'Bob'` 的文档。返回的 `ObjectId` 是所插入文档的 id。MongoDB 在创建每个文档时都会创建一个唯一的 `ObjectId`，并成为 `_id` 字段的默认值：
+
+MongoDB 会自动创建一个新的 `users` 集合并插入一个带有键值对 `'name':'Bob'` 的文档。返回的 `ObjectId` 是所插入文档的 id。MongoDB 在创建每个文档时都会创建一个唯一的 `ObjectId`，并成为 `_id` 字段的默认值：
+
 ```bash
 show dbs
 exampledb 0.078GB
@@ -4818,23 +2310,30 @@ local 0.078GB
 prototype 0.078GB
 test 0.078GB
 ```
+
 同样，你可以使用 `show collections` 命令确认集合是否已创建：
+
 ```bash
 show collections
 users
 ```
-我们已经创建了一个数据库，添加了一个名为 users 的集合并向其中插入了一个文档。现在让我们尝试删除它。要删除现有数据库，请使用如下所示的 `dropDatabase()` 命令：
+
+我们已经创建了一个数据库，添加了一个名为 `users` 的集合并向其中插入了一个文档。现在让我们尝试删除它。要删除现有数据库，请使用如下所示的 `dropDatabase()` 命令：
+
 ```javascript
 db.dropDatabase()
 { "ok" : 1 }
 ```
+
 `show dbs` 确认数据库确实已被删除：
+
 ```bash
 show dbs
 local 0.078GB
 prototype 0.078GB
 test 0.078GB
 ```
+
 有关更多数据库操作，请参阅 MongoDB 关于数据库命令（Database Commands）的参考页面。
 
 # MongoDB CRUD 操作
@@ -4844,12 +2343,15 @@ test 0.078GB
 ## 创建操作 (CREATE OPERATION)
 
 创建等同于向集合中插入文档。在上一节中，我们使用 `db.collection.insertOne()` 语法插入了单个文档。还有另一种方法 `db.collection.insertMany()` 方法，它可以让你一次性插入多个文档。语法如下：
+
 ```javascript
 db.COLLECTION_NAME.insertMany(
   [ <document 1>, <document 2>, ... ]
 )
 ```
-让我们创建一个 users 集合并填充一些实际用户：
+
+让我们创建一个 `users` 集合并填充一些实际用户：
+
 ```javascript
 db.users.insertMany([
   { "name": "Tom","age":33, "email": "tom@example.com" },
@@ -4866,66 +2368,16 @@ db.users.insertMany([
   ]
 }
 ```
+
 `insertMany` 方法接受一个对象数组，返回的是一个 `ObjectId` 数组。
 
 ## 读取操作 (READ OPERATION)
 
 读取操作用于从集合中检索一个或多个文档。读取操作的语法如下：
+
 ```javascript
 db.collection.find(query, projection)
 ```
-
-
-
-
-![](img/index-92_127.png)
-![](img/index-92_128.png)
-![](img/index-92_129.png)
-![](img/index-92_130.png)
-![](img/index-92_131.png)
-![](img/index-92_132.png)
-![](img/index-92_133.png)
-![](img/index-92_134.png)
-![](img/index-92_135.png)
-![](img/index-92_136.png)
-![](img/index-92_137.png)
-![](img/index-92_138.png)
-![](img/index-92_139.png)
-![](img/index-92_140.png)
-![](img/index-92_141.png)
-![](img/index-92_142.png)
-![](img/index-92_143.png)
-![](img/index-92_144.png)
-![](img/index-92_145.png)
-![](img/index-92_146.png)
-![](img/index-92_147.png)
-![](img/index-92_148.png)
-![](img/index-92_149.png)
-![](img/index-92_150.png)
-![](img/index-92_151.png)
-![](img/index-92_152.png)
-![](img/index-92_153.png)
-![](img/index-92_154.png)
-![](img/index-92_155.png)
-![](img/index-92_156.png)
-![](img/index-92_157.png)
-![](img/index-92_158.png)
-![](img/index-92_159.png)
-![](img/index-92_160.png)
-![](img/index-92_161.png)
-![](img/index-92_162.png)
-![](img/index-92_163.png)
-![](img/index-92_164.png)
-![](img/index-92_165.png)
-![](img/index-92_166.png)
-![](img/index-92_167.png)
-![](img/index-92_168.png)
-![](img/index-92_169.png)
-![](img/index-92_170.png)
-![](img/index-92_171.png)
-![](img/index-92_172.png)
-![](img/index-92_173.png)
-![](img/index-92_174.png)
 
 要检索所有用户文档，你可以这样操作：
 
@@ -4933,33 +2385,32 @@ db.collection.find(query, projection)
 db.users.find().pretty()
 ```
 
+```json
 {
   "_id" : ObjectId("5a52cb2451dd8b08d5a22cf5"),
   "name" : "Tom",
   "age" : 33,
   "email" : "tom@example.com"
 }
-
 {
   "_id" : ObjectId("5a52cb2451dd8b08d5a22cf6"),
   "name" : "Bob",
   "age" : 35,
   "email" : "bob@example.com"
 }
-
 {
   "_id" : ObjectId("5a52cb2451dd8b08d5a22cf7"),
   "name" : "Kate",
   "age" : 27,
   "email" : "kate@example.com"
 }
-
 {
   "_id" : ObjectId("5a52cb2451dd8b08d5a22cf8"),
   "name" : "Watson",
   "age" : 15,
   "email" : "watson@example.com"
 }
+```
 
 这对应于 SQL 数据库中的 `SELECT * FROM USERS` 查询。
 
@@ -4971,16 +2422,19 @@ db.users.find().pretty()
 db.users.find({ "age": { $lt: 30 } })
 ```
 
+```json
 { "_id" : ObjectId("5a52cb2451dd8b08d5a22cf7"), "name" : "Kate", "age" : 27, "email" : "kate@example.com" }
 { "_id" : ObjectId("5a52cb2451dd8b08d5a22cf8"), "name" : "Watson", "age" : 15, "email" : "watson@example.com" }
+```
 
 `$lt` 是一个查询过滤器运算符，用于选择 `age` 字段值小于 30 的文档。有很多比较和逻辑查询过滤器可用，你可以在查询选择器（Query Selector）文档中查看完整列表。
 
 ## 更新操作
 
 更新操作修改集合中的文档。与创建操作类似，MongoDB 提供了两种更新文档的方法。它们是：
-1. `db.collection.updateMany(filter, update, options)`
-2. `db.collection.updateMany(filter, update, options)`。
+
+1. `db.collection.updateOne(filter, update, options)`
+2. `db.collection.updateMany(filter, update, options)`
 
 如果你需要向集合中的文档添加一个额外的字段，例如 `registration`，你可以：
 
@@ -4991,31 +2445,32 @@ db.collection.updateMany({ "age": { $lt: 30 } }, { $set: { "registration": "acti
 ## 删除操作
 
 删除操作从集合中移除文档。与更新操作类似，MongoDB 提供了两种删除文档的方法。它们是：
+
 1. `db.collection.deleteOne(filter)`
-2. `db.collection.deleteMany(filter)`。
+2. `db.collection.deleteMany(filter)`
 
 如果你需要删除匹配条件的单个文档，你可以使用：
 
 ```
-deleteOne({ "name": "Tom" })
+db.users.deleteOne({ "name": "Tom" })
 ```
 
 如果你需要删除匹配条件的所有文档，你可以使用：
 
 ```
-deleteMany({ $lt: 30 })
+db.users.deleteMany({ "age": { $lt: 30 } })
 ```
 
 ## 驱动概览
 
 为了让应用程序与服务器通信，你需要使用驱动。MongoDB 有官方和第三方驱动可以与数据库交互。
 
-### Node JS 驱动
+### Node.js 驱动
 
 这是 Node.js 的官方驱动。该驱动可以使用 Promise 或回调与数据库交互。下面的示例演示了连接服务器：
 
 ```javascript
-const MongoClient = require('mongodb');
+const { MongoClient } = require('mongodb');
 const assert = require('assert');
 
 // 连接 URL
@@ -5047,7 +2502,7 @@ const dbName = 'exampledb';
 
 然而，MongoDB 的最新版本已以 JSON schema 和模式验证的形式吸收了这些功能。
 
-除了模式之外，Mongoose 的其他功能还包括模型、验证器和中间件、populate 方法、插件等。你可以在 Mongoose 文档中了解更多这些内容。这里有一个使用 mongoose.connect() 连接数据库的示例：
+除了模式之外，Mongoose 的其他功能还包括模型、验证器和中间件、populate 方法、插件等。你可以在 Mongoose 文档中了解更多这些内容。这里有一个使用 `mongoose.connect()` 连接数据库的示例：
 
 ```javascript
 var mongoose = require('mongoose');
@@ -5070,15 +2525,18 @@ db.once('open', function() {
 
 MongoDB 是一种流行的 NoSQL 数据库解决方案，适用于现代开发需求。在本教程中，我们涵盖了 MongoDB 的基础知识、Mongo Shell 以及一些流行的驱动。我们还探索了 Mongo Shell 中常见的数据库操作和 CRUD 操作。现在是你去尝试这里涵盖的内容以及更多内容的时候了。如果你想学习更多，我建议使用 MongoDB 和 Node 创建一个 REST API，以熟悉常见的数据库操作和方法。
 
-
-
-
-
 # 第一章
+
 # 第二章
+
 # 第三章
+
 # 第四章
+
 # 第五章
+
 # 第六章
+
 # 第七章
+
 # 第八章

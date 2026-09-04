@@ -1,30 +1,13 @@
+
 # Foundation 快速启动指南
 
-
-
-![](img/cover.png)
-
-
-![SitePoint®](img/sitepoint-logo-2012.png)
-
-
-
-
-
-
 产品经理：Simon Mackie
+
 技术审核员：Ryan Reese
+
 英语编辑：Kelly Steele
+
 封面设计：Alex Walker
-
-
-
-
-![SitePoint®](img/sitepoint-logo-2012.png)
-
-
-
-***
 
 ## 关于 Syed Fazle Rahman
 
@@ -50,7 +33,7 @@ SitePoint 专门为 Web 专业人士出版幽有趣、实用且易于理解的�
 
 # 序言
 
-从零开始构建现代、专业的网站需要花费大量精力和。今天的网站需要是响应式的、移动优先的、设计精美的且快速的。这正是 Zurb Foundation 框架可以帮助你的地方。它提供了大量的 HTML 组件和一个网格系统，让创建专业的响应式模板变得轻而易举，显著缩短了开发时间。
+从零开始构建现代、专业的网站需要花费大量精力和时间。今天的网站需要是响应式的、移动优先的、设计精美的且快速的。这正是 Zurb Foundation 框架可以帮助你的地方。它提供了大量的 HTML 组件和一个网格系统，让创建专业的响应式模板变得轻而易举，显著缩短了开发时间。
 
 Foundation 这样的框架对所有人都有用，但对于初学者来说是一个福音。创建复杂 Web 组件所需的复杂 CSS 和 JavaScript 都已经编写完成。只需要一些 HTML 标记即可使其运行。经验丰富的开发者可以使用 Sass 对框架进行定制。
 
@@ -68,7 +51,7 @@ Foundation 这样的框架对所有人都有用，但对于初学者来说是一
 
 书中的代码将使用等宽字体显示，如下：
 
-```
+```html
 <h1>A Perfect Summer's Day</h1>
 <p>It was a lovely day for a walk in the park. The birds 
 were singing and the kids were all back at school.</p>
@@ -78,7 +61,7 @@ were singing and the kids were all back at school.</p>
 
 `example.css`
 
-```
+```css
 .footer {
   background-color: #CCC;
   border-top: 1px solid #333;
@@ -103,55 +86,51 @@ function animate() {
 
 ### 提示、注意和警告
 
-### 提示：嘿，你过来！
+> **提示：嘿，你过来！**
+>
+> 提示将给你提供有用的小建议。
 
-提示将给你提供有用的小建议。
+> **注意：啊，打扰一下**
+>
+> 注意是与当前主题相关但并非关键的补充说明。将它们视为额外的信息碎片。
 
-### 注意：啊，打扰一下
+> **重要：务必始终**
+>
+> 关注这些重要要点。
 
-注意是与当前主题相关但并非关重要的补充说明。将它们视为额外的信息碎片。
-
-### 重要：务必始终
-
-关注这些重要要点。
-
-### 警告：小心！
-
-警告将突出你在过程中可能会遇到的任何坑（陷阱）。
+> **警告：小心！**
+>
+> 警告将突出你在过程中可能会遇到的任何坑（陷阱）。
 
 ## 补充材料
 
 - [`www.sitepoint.com/store/jump-start-foundation/`](http://www.sitepoint.com/store/jump-start-foundation/)：书籍的网站，包含链接、更新、资源等。
+
 - [`github.com/spbooks/jsfoundation1`](https://github.com/spbooks/jsfoundation1)：本书的可下载代码存档。
+
 - [`community.sitepoint.com/c/html-css`](http://community.sitepoint.com/c/html-css)：SitePoint 论坛，用于解决任何棘手的 Web 问题。
+
 - `books@sitepoint.com`：我们的邮箱地址，如果您需要寻求支持、报告问题或出于其他原因联系我们可以使用。
 
 ## 想进一步学习吗？
 
 感谢你购买 SitePoint 的书籍。你想继续学习吗？现在你可以在 [SitePoint Premium](https://www.sitepoint.com/premium/home) 无限制访问所有的 SitePoint 书和课程，以及来自我们精选合作伙伴的高质量书籍。现在注册，从今天开始学习！
 
-# 第 1 章
+# 第 1 章 基础
 
-基础
+准备好用 Zurb Foundation 提供的所有功能大显身手了吗？这种热情绝对值得称赞，如果你和我一样对 CSS 框架感到兴奋，那么直接投入其中可能就是你来到此处。在我们深入学习之前，让我们花一点时间了解情况，确保我们对背后的思想和概念有良好的掌握。
 
-
-
-
-准备好用 Zurb Foundation 提供的所有功能大显身手了吗？这种热情绝对值得称赞，如果你和我一样对 CSS 框架感到兴奋，那么直接投入其中可能就是你来到此此。在我们深入学习之前，让我们花一点时间了解情况，确保我们对背后的思想和概念有良好的掌握。
-
-通过阅读本章的章节，你将对什么是 框架以及它如何对你的项目有所益获得良好的理解。你将在三个章节中找到这些有用信息。第一部分将从总体上涵盖 CSS 框架：它们是什么、为什么有用以及一些重要概念。在第二部分，你将找到编写本书的 CSS 框架高级概述。在这里你将发现 Foundation 区别于同类产品的特性。最后，第三部分将让你卷起袖子，通过设置基础项目开始你的 `Foundation 之旅`。
+通过阅读本章的章节，你将对什么是框架以及它如何对你的项目有益获得良好的理解。你将在三个章节中找到这些有用信息。第一部分将从总体上涵盖 CSS 框架：它们是什么、为什么有用以及一些重要概念。在第二部分，你将找到编写本书的 CSS 框架高级概述。在这里你将发现 Foundation 区别于同类产品的特性。最后，第三部分将让你卷起袖子，通过设置基础项目开始你的 `Foundation 之旅`。
 
 准备好投入了吗？让我们开始吧！
-[/content]
 
-[content]
 ## CSS 框架简介
 
 如果你从未用过软件`框架`，那么从建筑的角度来考虑它可能会有用。在建造房屋时，实际施工的第一步之一就是搭建框架。由许多基础元素组成的框架，作为一个统一的结构支撑着房子的其他部分。如果没有它，你将无处可以固定门框或放置墙壁。同样，一个 CSS 框架提供了一个样式结构，你可以从中更轻松地构建你的 Web 项目。
 
 我知道这些听起来对总承包来说很好，但它如何帮助你构建更好的 Web 项目呢？CSS 框架赋予了你使用预开发的 CSS 组件快速开发 Web 项目的能力。每当你开始一个新项目时不需要重新发明轮子。要使用这些大多数组件，你只需要编写所需的 HTML 标记即可。它让创建基础的 Web 用户界面变得更容易，而无需编写许多 CSS 或 JavaScript 代码。
 
-我将给你一个关于 CSS 框架在实践中如何运作的快速示例。在没有 CSS 框架帮助的情况下创建一个新的 Web 项目时，在创建样式表来定义最简单的元素之前，你的页面看起来只会比用打字机创建的好一点点。当到了开始设置样式的时候时，页面结构的每个方面都必须经过考虑并进行适当设置——从最基础的段落到完全自定义的 div 容器。不仅这些基础样式需要从零开始，像图像库或 JavaScript 功能等更高级的组件也必须手动开发或集成到项目中。
+我将给你一个关于 CSS 框架在实践中如何运作的快速示例。在没有 CSS 框架帮助的情况下创建一个新的 Web 项目时，在创建样式表来定义最简单的元素之前，你的页面看起来只会比用打字机创建的好一点点。当到了开始设置样式的时候，页面结构的每个方面都必须经过考虑并进行适当设置——从最基础的段落到完全自定义的 div 容器。不仅这些基础样式需要从零开始，像图像库或 JavaScript 功能等更高级的组件也必须手动开发或集成到项目中。
 
 你可以想象（如果你曾花过相当的时间从零开始开发 Web 项目的话）这个过程如何迅速变得耗费时间。但有了 CSS 框架，通过使用许多内置的 CSS 和 JavaScript 组件，这个过程变得极其简单了。
 
@@ -164,23 +143,33 @@ function animate() {
 ```html
 <a class="th" href="../img/image.png">
     <img src="../img/image.png">
-</a
+</a>
 ```
 
-只需指定缩略图类（在 Foundation 中为 `th`），图像就会自动设置样式并应用所需的 JavaScript 来创建一个精美的缩略图图像。再次，这只是 CSS 框架如何让你这个 Web 开发者的生活更简单的例子之一。我们将学习更多关于 Foundation 组件以及如何在我们的网站中轻松地使用它们，从第 4 章开始；然而，
+只需指定缩略图类（在 Foundation 中为 `th`），图像就会自动设置样式并应用所需的 JavaScript 来创建一个精美的缩略图图像。再次，这只是 CSS 框架如何让你这个 Web 开发者的生活更简单的例子之一。我们将学习更多关于 Foundation 组件以及如何在我们的网站中轻松地使用它们，从第 4 章开始；然而，在此之前，让我们先了解一下 Foundation 的核心概念。
 
+## 什么是 Zurb Foundation？
 
+Zurb Foundation 是一个强大的前端框架，用于快速构建响应式网站和应用程序。它由 Zurb 公司开发并维护，提供了一套完整的 HTML、CSS 和 JavaScript 组件。
 
+### Foundation 的核心特性
 
+Foundation 提供了许多开箱即用的组件，主要分为以下几类：
+
+#### 网格与布局
+
+- 网格系统
 - 切换响应式组件
 - 工具类
 - JavaScript 工具类
 - 从右向左语言（RTL）支持
 
-### 导航
+#### 导航
+
 有助于提供有效导航的组件：
-- 离线画布 (off-canvas)
-- 顶部栏 (top bar)
+
+- 离线画布
+- 顶部栏
 - 图标栏
 - 侧边导航
 - Magellan 吸粘导航
@@ -188,51 +177,63 @@ function animate() {
 - 面包屑导航
 - 分页器
 
-### 媒体
+#### 媒体
+
 用于存放图像和视频的组件：
-- 轨道滑块器 (Orbit slider)
+
+- 轨道滑块器
 - 缩略图
-- 清除灯箱 (clearing lightbox)
+- 清除灯箱
 - 弹性布局视频
 
-### 表单
-Foundation 提供了许多预定义的表单元素，有助于增强我们网页表单的用户体验：
-- 表单样式
-- 开关 (switches)
-- 范围滑块
--  验证 (Abide validation)
+#### 表单
 
-### 按钮
+Foundation 提供了许多预定义的表单元素，有助于增强我们网页表单的用户体验：
+
+- 表单样式
+- 开关
+- 范围滑块
+- 验证
+
+#### 按钮
+
 设计精美的操作元素（链接和按钮）：
+
 - 按钮
 - 按钮组
 - 拆分按钮
 - 下拉按钮
 
-### 字体
+#### 字体
+
 有助于增强我们网页中某些文本元素（如重要通知、列表项等）外观的组件：
+
 - 字体类型
 - 内联列表
 - 标签
 - 击键组合
 
-### 提示与引导
-有助于吸引用户注意力以传达重要信息的组件：
-- 展开模态框 (reveal modal)
-- 警报 (alerts)
-- 面板
-- 提示框 (tooltips)
-- 引导之旅 (Joyride)
+#### 提示与引导
 
-### 内容
+有助于吸引用户注意力以传达重要信息的组件：
+
+- 展开模态框
+- 警报
+- 面板
+- 提示框
+- 引导之旅
+
+#### 内容
+
 网页上常见的实用组件：
+
 - 下拉菜单
 - 价格表格
 - 进度条
 - 表格
-- 折叠面板 (accordion)
-- 选项卡 (tabs)
-- 均衡均衡器
+- 折叠面板
+- 选项卡
+- 均衡器
 
 如你所见，Foundation 开箱即提供了许多实用的组件！我们将在后面的章节中详细介绍其中许多组件，了解它们是如何制作的，以及在网页上创建它们需要哪些 HTML 标记。
 
@@ -250,22 +251,20 @@ Foundation 提供了许多预定义的表单元素，有助于增强我们网页
 
 可以浏览上述每个框架，发现它们提供了哪些预开发的组件。
 
-让我们把 Foundation 与其可以说是是最大的竞争对手 Bootstrap 进行比较。就像精美的苏格兰威士忌一样，哪个框架占据主导地位的问题在很大程度上取决于个人偏好。一旦你了解了一个框架，与其他框架的区别并不大。这些框架中使用的许多类名都是直观的；你只需要识别它们的命名方案即可。
+让我们把 Foundation 与其可以说是最大的竞争对手 Bootstrap 进行比较。就像精美的苏格兰威士忌一样，哪个框架占据主导地位的问题在很大程度上取决于个人偏好。一旦你了解了一个框架，与其他框架的区别并不大。这些框架中使用的许多类名都是直观的；你只需要识别它们的命名方案即可。
 
 以下是这两个流行的 CSS 框架主要属性的简要介绍：
 
 | | Foundation | Bootstrap |
 | --- | --- | --- |
 | **基础结构** | 网格 | 网格 |
-| **尺寸单位** | rem | 像素 (pixel) |
+| **尺寸单位** | rem | 像素 |
 | **许可证** | 开源 (MIT) | 开源 (MIT) |
 | **CSS 预处理器** | Sass | LESS/Sass |
 | **网格列数** | 12 | 12 |
 | **组件数量** | 很多 | 很多 |
 
-
-
-
+## 开始使用 Foundation
 
 针对我们的需求，我们将坚持第一种方案并下载“Complete”（完整）包。点击下载链接后，你将得到一个包含整个 Foundation 框架的 ZIP 文件。要安装该框架，只需将压缩包解压到你 Web 项目根目录下。解压后，你会发现 `css`、`img` 和 `js` 文件夹以及包括至关重要的 `index.html` 在内的几个文件，如图 1.3 所示。在编写本书时，Foundation 5.5.2 版本是最新发布版本，书中也一直使用了该版本。
 
@@ -283,9 +282,9 @@ Foundation 提供了许多预定义的表单元素，有助于增强我们网页
 
 至此，你已经完全准备好应对本书的其余内容了。我们相信你不会被刚刚接收到的丰富信息所压倒，但牢牢掌握什么是 CSS 框架以及它们为什么对 Web 开发者很有用是有用的。
 
-在本章中，我们涵盖了 Foundation 框架的基础知识，包括一个展示了如何快速使用 Foundation 搭建原型网站的示例。我们还学习了什么是 Zurb Foundation。随后，你看到了了 Foundation 与 CSS 框架领域另一大巨头 Bootstrap 的快速对比。最后，我们通过概述使用 Foundation 框架建立第一个项目的步骤来结束了本章。说实话，步骤并不多，但这是一件好事！你现在准备好大显身手，开始利用 Foundation 框架构建一个基础网站了。还在等什么？快进入第 2 章吧！
+在本章中，我们涵盖了 Foundation 框架的基础知识，包括一个展示了如何快速使用 Foundation 搭建原型网站的示例。我们还学习了什么是 Zurb Foundation。随后，你看到了 Foundation 与 CSS 框架领域另一大巨头 Bootstrap 的快速对比。最后，我们通过概述使用 Foundation 框架建立第一个项目的步骤来结束了本章。说实话，步骤并不多，但这是一件好事！你现在准备好大显身手，开始利用 Foundation 框架构建一个基础网站了。还在等什么？快进入第 2 章吧！
 
-# 第 2 章：网格系统的入门
+# 第 2 章 网格系统的入门
 
 谁不希望自己的网站在移动设备上看起来美观且结构良好呢？考虑到竞争用户关注的众多网站，我们的网站应该准备好针对任何显示设备进行自动调整。但这种网站设计具有挑战性，需要许多小时的 HTML 和 CSS 代码编写。相反，Foundation 框架赋予了你随时创建此类响应式网站的能力。你不需要编写单行 CSS 代码即可创建一个响应式网站。
 
@@ -293,20 +292,20 @@ Foundation 提供了许多预定义的表单元素，有助于增强我们网页
 
 ## 奠定基础
 
-正如你在第 1 章中学到的，Foundation 的主要目标是为你提供一个可以在其基础上构建的框架。Foundation 实现这一目标的方法是使用网格布局。在继续之前之前，让我们后退一步，看看 Web 设计是如何结构的。
+正如你在第 1 章中学到的，Foundation 的主要目标是为你提供一个可以在其基础上构建的框架。Foundation 实现这一目标的方法是使用网格布局。在继续之前，让我们后退一步，看看 Web 设计是如何结构的。
 
-在很久以前的一个遥远的银河系，当 Web 开发还处于婴儿时期时，设计通常由自由流动的段落元素组成。结果看起来更像凌乱的报纸页面，而不是我们今天看到的复杂的、多媒体丰富的的设计。
+在很久以前的一个遥远的银河系，当 Web 开发还处于婴儿时期时，设计通常由自由流动的段落元素组成。结果看起来更像凌乱的报纸页面，而不是我们今天看到的复杂的、多媒体丰富的设计。
 
 为了给混乱带来秩序，HTML 表格被使用了。虽然它们确实有助于清理混乱，但它们的僵硬给早期 Web 的面貌增添了明显的冷酷感。以下是 HTML 表格不适用于布局的几个原因：
 
-*   像这样使用表格描述的是呈现而非内容，因此使用表格布局的网站在语义上是不正确的。
-*   屏幕阅读器用户很难理解使用表格进行布局的网站。
-*   使用表格布局重新设计网站是非常困难的。
-*   表格可能会破坏文本复制，这对于某些用户来说非常困扰。
+* 像这样使用表格描述的是呈现而非内容，因此使用表格布局的网站在语义上是不正确的。
+* 屏幕阅读器用户很难理解使用表格进行布局的网站。
+* 使用表格布局重新设计网站是非常困难的。
+* 表格可能会破坏文本复制，这对于某些用户来说非常困扰。
 
 抱歉讲了一堂关于 Web 设计的历史课，但它很好地说明了为什么 Foundation（以及其他流行的 CSS 框架）选择网格布局作为其最基本的构建模块。你会发现，通常情况下，Web 是一个用于消费内容的巨大仓库。作为人类，我们习惯以有序的方式消费内容。网格布局以一种非常灵活的方式赋予了这种能力。
 
-在表格的僵硬与自定义 CSS 的自由之间取得了极佳的，网格代表了 Foundation 框架的基石。图 2.1 展示了网格布局在实践中样子的快速示例：
+在表格的僵硬与自定义 CSS 的自由之间取得了极佳的平衡，网格代表了 Foundation 框架的基石。图 2.1 展示了网格布局在实践中样子的快速示例：
 
 ![Foundation 网格系统的基本示例](img/Image-2-1.png)
 
@@ -328,18 +327,13 @@ Foundation 提供了许多预定义的表单元素，有助于增强我们网页
 
 ## 设置 Foundation 项目
 
-在开始编码之前，我们将使用 Foundation 框架设置我们的项目。在第 1 章中，我们看到根据需要决定哪个版本的 Foundation。为了方便在书中理解 Foundation，我们将使用静态的[Complete Foundation 5 版本]，它包含了所有静态编译后的 CSS 文件。让我们在系统中创建一个名为 Foundation Grid System Lessons 的新文件夹。将下载的 Foundation 项目中的所有文件复制到文件夹中，然后使用你喜欢的代码编辑器打开 `index.html`。我最喜欢的是 GitHub 的 [Atom 编辑器](https://atom.io)，但你可以使用任何你喜欢的。
+在开始编码之前，我们将使用 Foundation 框架设置我们的项目。在第 1 章中，我们看到根据需要决定哪个版本的 Foundation。为了方便在书中理解 Foundation，我们将使用静态的 Complete Foundation 5 版本，它包含了所有静态编译后的 CSS 文件。让我们在系统中创建一个名为 Foundation Grid System Lessons 的新文件夹。将下载的 Foundation 项目中的所有文件复制到文件夹中，然后使用你喜欢的代码编辑器打开 `index.html`。我最喜欢的是 GitHub 的 [Atom 编辑器](https://atom.io)，但你可以使用任何你喜欢的。
 
-index.html 看起来应该是这样的：
+`index.html` 看起来应该是这样的：
 
-```
-index.html (excerpt)
-```
+`index.html` (excerpt)
 
-
-
-
-```
+```html
 <!doctype html>
 <!--[if IE 9]><html class="lt-ie10" lang="en" > <![endif]-->
 <html class="no-js" lang="en">
@@ -382,7 +376,7 @@ index.html (excerpt)
 
 在创建任何列（columns）之前，我们首先需要承载它们的行（rows）。让我们先创建一个行：
 
-```
+```html
 <div class="row">
 </div>
 ```
@@ -393,20 +387,20 @@ Foundation 网格系统默认将屏幕划分为 12 个等宽的列。这些被�
 
 创建一个跨越所有 12 个 Foundation 虚拟列的单列的代码如下：
 
-```
+```html
 <div class="row">
     <div class="column large-12">
-</div>
+    </div>
 </div>
 ```
 
 在 Foundation 中，必须为每个列元素附加额外的类 `column`，因为这有助于 Foundation 轻松识别列。你也可以使用类 `columns` 代替 `column`，Foundation 会为你创建相同的列。`columns` 和 `column` 之间没有区别。
 
-让我们继续创建一个双列布局。如果我们要有两个等宽的列，那么每列将将占据六个 Foundation 虚拟列：
+让我们继续创建一个双列布局。如果我们要有两个等宽的列，那么每列将占据六个 Foundation 虚拟列：
 
-*index.html (节选)*
+`index.html` (excerpt)
 
-```
+```html
 <div class="row">
     <div class="large-6 column" style="background: #aaaaaa; height: 100px;">
         Column 1
@@ -425,9 +419,9 @@ Foundation 网格系统默认将屏幕划分为 12 个等宽的列。这些被�
 
 足够简单吧？让我们再添加另一行，这次在其中创建三个不同宽度的列。你可以在图 2.5 中看到结果：
 
-*index.html (节选)*
+`index.html` (excerpt)
 
-```
+```html
 <div class="row">
     <div class="large-2 column" style="background: #bbbbbb;height: 100px;">
         Column 3
@@ -445,15 +439,15 @@ Foundation 网格系统默认将屏幕划分为 12 个等宽的列。这些被�
 
 图 2.5. 两行：其一行有两个等宽的列，另一行有三个不同宽度的列
 
-### 注意：每行仅 12 个虚拟列
-
-每行中分配给每个列的虚拟列数量总和应始终等于 12。如果总和超过 12，Foundation 会自动创建一个新行并将多出的列移动到这个新行。你可以尝试一下，为上一个示例中的最后一列分配更大数量的虚拟列。
+> **注意：每行仅 12 个虚拟列**
+>
+> 每行中分配给每个列的虚拟列数量总和应始终等于 12。如果总和超过 12，Foundation 会自动创建一个新行并将多出的列移动到这个新行。你可以尝试一下，为上一个示例中的最后一列分配更大数量的虚拟列。
 
 Foundation 还允许你嵌套这些列；换句话说，在列内部插入一个新行。你所做的是在任何 `column` 元素内部创建一个新的 `row`，然后开始向其中插入列。这里的唯一区别是，行的宽度将取决于父列的宽度。让我们编写一个嵌套列：
 
-*index.html (节选)*
+`index.html` (excerpt)
 
-```
+```html
 <div class="row">
     <div class="large-6 column" style="background: #aaaaaa;height: 100px;">
         Column 1
@@ -481,16 +475,13 @@ Foundation 还允许你嵌套这些列；换句话说，在列内部插入一个
 
 图 2.6. 嵌套列
 
-### 偏移 (Offsets)
+### 偏移
 
 关于 Foundation 网格最后一个要讨论的话题是使用**偏移**（offsets）。Foundation 允许将任何列向右移动最多 11 个虚拟列。现在让我们想象一种新情况：我们想要创建一个跨越六个 Foundation 虚拟列的单列，并且它相对于浏览器窗口居中对齐。因此，为了让一个占据六个虚拟列的列居中，我们需要将其向右移动三个虚拟列。这是通过向列元素添加诸如 `.large-offset-*` 的类来实现的，其中 `*` 代表你想要偏移的 Foundation 虚拟列数量。以下是居中跨越六个 Foundation 虚拟列的单列的代码：
 
-*index.html (节选)*
+`index.html` (excerpt)
 
-
-
-
-```
+```html
 <div class="row">
     <div class="large-6 large-offset-3 column" style="background: 
 #ddd;height: 200px; margin-top: 50px;">
@@ -517,7 +508,7 @@ Foundation 还允许你嵌套这些列；换句话说，在列内部插入一个
 
 图 2.8. 较小屏幕上的双行布局
 
-在不添加任何自定义样式的情况下，我们简单的网格布局自动响应了屏幕尺寸的变化，行和列堆叠了一起。这再次说明了使用 Foundation 等框架的力量。网页开发过程中耗时的方面已变得自动化。然而，它们不仅是自动的，而且是健的，为定制和扩展留下了大量空间。
+在不添加任何自定义样式的情况下，我们简单的网格布局自动响应了屏幕尺寸的变化，行和列堆叠了一起。这再次说明了使用 Foundation 等框架的力量。网页开发过程中耗时的方面已变得自动化。然而，它们不仅是自动的，而且是健壮的，为定制和扩展留下了大量空间。
 
 尽管 Foundation 默认能够处理移动兼容性，但那种设计可能不是我们想要的。我们可能希望列根据网站显示在手机、平板电脑还是桌面显示器上有不同的适应。针对这种情况，Foundation 定义了一组用于手机和平板电脑的类。让我们仔细检查它们。
 
@@ -525,9 +516,9 @@ Foundation 还允许你嵌套这些列；换句话说，在列内部插入一个
 
 让我们如下修改第一行的代码：
 
-*index.html (节选)*
+`index.html` (excerpt)
 
-```
+```html
 <div class="row">
     <div class="large-6 medium-4 small-12 column" style="background:
 #aaaaaa; height: 100px;">
@@ -564,183 +555,19 @@ Foundation 还有偏移量类，你可以使用它们来在小型和中型屏幕
 
 ## 总结
 
-尽管 Foundation 默认能够处理移动兼容性，但那种设计可能不是我们想要的。我们可能希望列根据网站显示在手机、平板电脑还是桌面显示器上有不同的适应。针对这种情况，Foundation 定义了一组用于手机和平板电脑的类。让我们仔细检查它们。
+在本章中，我们深入探讨了 Foundation 的网格系统。我们学习了如何创建行和列，如何嵌套列，以及如何使用偏移类来定位元素。最重要的是，我们看到了 Foundation 如何通过 `small`、`medium`、`large` 等响应式类，让网格系统自动适应不同屏幕尺寸，从而轻松实现响应式网页设计。掌握网格系统是使用 Foundation 构建复杂布局的基础，请务必多加练习。
 
-对于宽度小于 640px 的设备，Foundation 有一组以 `small-#` 开头的类。对于宽度大于 640px 且小于 1024px 的设备，它有 `medium-#` 类。我们在上一节中使用的 `large-#` 类适用于宽度大于 1024px 的设备。这意味着没有必要修改上一节中编写的代码来分别适应平板电脑和智能手机。我们只需要添加更多尺寸类来让列以不同的方式显示。
-
-让我们如下修改第一行的代码：
-
-*index.html (节选)*
-
-```
-<div class="row">
-    <div class="large-6 medium-4 small-12 column" style="background:
-#aaaaaa; height: 100px;">
-        Column 1
-    </div>
-    <div class="large-6 medium-8 small-12 column" style="background:
-#cccccc; height: 100px;">
-        Column 2
-    </div>
-</div>
-```
-
-这里是三种浏览器宽度下的截图。
-
-图 2.9 显示，在桌面屏幕上，它看起来和之前一样。
-
-![较大屏幕上的修改后示例](img/Image-2-8.png)
-
-图 2.9. 较大屏幕上的修改后示例
-
-在图 2.10 中，我们可以看到它在平板电脑尺寸浏览器上的样子。第一列比第二列略小。
-
-![平板尺寸屏幕上的修改后示例](img/Image-2-9.png)
-
-图 2.10. 平板尺寸屏幕上的修改后示例
-
-在手机尺寸浏览器上，它看起来像图 2.11。两个列都占据了行的所有部分，因此它们堆叠在起。
-
-![智能手机尺寸屏幕上的示例](img/Image-2-10.png)
-
-图 2.11. 智能手机尺寸屏幕上的示例
-
-Foundation 还有偏移量类，你可以使用它们来在小型和中型屏幕上定义特定的偏移量：`small-offset-*` 和 `medium-offset-*`。
-
-[/content]
-
-[content]
-
-```
-<div class="row">
-    <div class="large-6 large-offset-3 column" style="background: 
-#ddd;height: 200px; margin-top: 50px;">
-        Hello World.
-    </div>
-</div>
-```
-
-这将创建一个居中的列，如图 2.7 所示。
-
-![使用偏移量居中的列](img/Image-2-11.png)
-
-图 2.7. 使用偏移量居中的列
-
-## Foundation 的响应式特性
-
-如今的网页设计世界与五年前已完全不同。有几个因素在推动我们所看到的设计格局的剧变中发挥了重要作用，但最引而注目的是技术的自然演进。网络技术不断完善，带宽不断增加，而我们用于消费网页内容的设备变得越来越强大。最近，这种变化带来了一个独特的挑战。长期以来，我们查看网页内容的界面（或屏幕）尺寸稳步增长，而现代移动设备的普及导致了人们在小得多的屏幕上浏览的频率增加。
-
-现代开发者不再仅仅关注少数流行的大型桌面屏幕尺寸，还必须为小屏幕制作同样出色的设计。将富媒体的大屏体验转化到小得多的移动屏幕的困难导致了`响应式网页设计`（RWD）的发展。简而言之，以响应式方式设计的网页内容会对不同的屏幕尺寸产生智能且动态的反应。页面会动态重构自身，根据用户的屏幕尺寸以最有意义的方式呈现内容。
-
-使用 Foundation 框架，你设计的每个页面在网格布局中构建时将天生具有响应性。为了证明我不是在开你玩笑，让我们看看在上一节中创建的两个行网格布局示例。你可能记得，我们在两个网格示例中都没有显式地定义任何响应式样式或行为；我们只是添加了行和列。让我们来看图 2.8，看看当我们缩小屏幕尺寸时会发生什么。
-
-![较小屏幕上的双行布局](img/Image-2-7.png)
-
-图 2.8. 较小屏幕上的双行布局
-
-在不添加任何自定义样式的情况下，我们简单的网格布局自动响应了屏幕尺寸的变化，行和列堆叠了一起。这再次说明了使用 Foundation 等框架的力量。网页开发过程中耗时的方面已变得自动化。然而，它们不仅是自动的，而且是健的，为定制和扩展留下了大量空间。
-
-尽管 Foundation 默认能够处理移动兼容性，但那种设计可能不是我们想要的。我们可能希望列根据网站显示在手机、平板电脑还是桌面显示器上有不同的适应。针对这种情况，Foundation 定义了一组用于手机和平板电脑的类。让我们仔细检查它们。
-
-对于宽度小于 640px 的设备，Foundation 有一组以 `small-#` 开头的类。对于宽度大于 640px 且小于 1024px 的设备，它有 `medium-#` 类。我们在上一节中使用的 `large-#` 类适用于宽度大于 1024px 的设备。这意味着没有必要修改上一节中编写的代码来分别适应平板电脑和智能手机。我们只需要添加更多尺寸类来让列以不同的方式显示。
-
-让我们如下修改第一行的代码：
-
-*index.html (节选)*
-
-```
-<div class="row">
-    <div class="large-6 medium-4 small-12 column" style="background:
-#aaaaaa; height: 100px;">
-        Column 1
-    </div>
-    <div class="large-6 medium-8 small-12 column" style="background:
-#cccccc; height: 100px;">
-        Column 2
-    </div>
-</div>
-```
-
-这里是三种浏览器宽度下的截图。
-
-图 2.9 显示，在桌面屏幕上，它看起来和之前一样。
-
-![较大屏幕上的修改后示例](img/Image-2-8.png)
-
-图 2.9. 较大屏幕上的修改后示例
-
-在图 2.10 中，我们可以看到它在平板电脑尺寸浏览器上的样子。第一列比第二列略小。
-
-![平板尺寸屏幕上的修改后示例](img/Image-2-9.png)
-
-图 2.10. 平板尺寸屏幕上的修改后示例
-
-在手机尺寸浏览器上，它看起来像图 2.11。两个列都占据了行的所有部分，因此它们堆叠在起。
-
-![智能手机尺寸屏幕上的示例](img/Image-2-10.png)
-
-图 2.11. 智能手机尺寸屏幕上的示例
-
-Foundation 还有偏移量类，你可以使用它们来在小型和中型屏幕上定义特定的偏移量：`small-offset-*` 和 `medium-offset-*`。
-
-## 总结
-
-尽管 Foundation 默认能够处理移动兼容性，但那种设计可能不是我们想要的。我们可能希望列根据网站显示在手机、平板电脑还是桌面显示器上有不同的适应。针对这种情况，Foundation 定义了一组用于手机和平板电脑的类。让我们仔细检查它们。
-
-对于宽度小于 640px 的设备，Foundation 有一组以 `small-#` 开头的类。对于宽度大于 640px 且小于 1024px 的设备，它有 `medium-#` 类。我们在上一节中使用的 `large-#` 类适用于宽度大于 1024px 的设备。这意味着没有必要修改上一节中编写的代码来分别适应平板电脑和智能手机。我们只需要添加更多尺寸类来让列以不同的方式显示。
-
-让我们如下修改第一行的代码：
-
-*index.html (节选)*
-
-```
-<div class="row">
-    <div class="large-6 medium-4 small-12 column" style="background:
-#aaaaaa; height: 100px;">
-        Column 1
-    </div>
-    <div class="large-6 medium-8 small-12 column" style="background:
-#cccccc; height: 100px;">
-        Column 2
-    </div>
-</div>
-```
-
-这里是三种浏览器宽度下的截图。
-
-图 2.9 显示，在桌面屏幕上，它看起来和之前一样。
-
-![较大屏幕上的修改后示例](img/Image-2-8.png)
-
-图 2.9. 较大屏幕上的修改后示例
-
-在图 2.10 中，我们可以看到它在平板电脑尺寸浏览器上的样子。第一列比第二列略小。
-
-![平板尺寸屏幕上的修改后示例](img/Image-2-9.png)
-
-图 2.10. 平板尺寸屏幕上的修改后示例
-
-在手机尺寸浏览器上，它看起来像图 2.11。两个列都占据了行的所有部分，因此它们堆叠在起。
-
-![智能手机尺寸屏幕上的示例](img/Image-2-10.png)
-
-图 2.11. 智能手机尺寸屏幕上的示例
-
-Foundation 还有偏移量类，你可以使用它们来在小型和中型屏幕上定义特定的偏移量：`small-offset-*` 和 `medium-offset-*`。
-
-
-
-
+# 第 3 章 构建原型：Photo Journal
 
 正如第 2 章 所示，我们将使用基础 Foundation 标记来启动此项目：
 
-```
+```html
 <!doctype html>
 <html class="no-js" lang="en">
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width,
-↵ initial-scale=1.0" />
+initial-scale=1.0" />
         <title>Foundation | Welcome</title>
         <link rel="stylesheet" href="css/foundation.css" />
         <script src="js/vendor/modernizr.js"></script>
@@ -753,7 +580,7 @@ Foundation 还有偏移量类，你可以使用它们来在小型和中型屏幕
             $(document).foundation();
         </script>
     </body>
-</</html>
+</html>
 ```
 
 让我们通过调整 `<head>` 元素中原型的标题来开始使用该框架。我们将它命名为“Photo Journal”（照片日志），以更好地反映我们项目的目的。
@@ -762,7 +589,7 @@ Foundation 还有偏移量类，你可以使用它们来在小型和中型屏幕
 
 正如前面提到的，使用 Foundation 构建 Web 项目只需要添加行（rows）、列（columns）和内容（content）。如此简单。所以让我们在一个类名为 `header` 的 `div` 中添加我们的第一行。这是在 Foundation 中创建行的基础代码：
 
-```
+```html
 <div class="header">
     <div class="row">
     </div>
@@ -773,7 +600,7 @@ Foundation 还有偏移量类，你可以使用它们来在小型和中型屏幕
 
 记住，我们页头的目标是创建一个带有叠加文本的全屏图像。我们将通过在 CSS 中指定背景来实现全屏图像，但为了适应叠加文本，我们需要利用 Foundation 带有偏移（offset）的列，将其推到图像的右侧。我们将使用的代码如下：
 
-```
+```html
 <div class="medium-4 medium-offset-8 columns">
     <h4>Photo Journey</h4>
     <p>Picturing the world one photo at a time.</p>
@@ -792,11 +619,13 @@ Foundation 还有偏移量类，你可以使用它们来在小型和中型屏幕
 
 我们现在就开始这样做。打开创建的 `app.css` 文件并添加以下内容：
 
-```
+`css/app.css` (excerpt)
+
+```css
 .header {
     height: 100%;
     background: url("http://placehold.it/1920x1080") center
-↵ no-repeat;
+no-repeat;
 }
 
 .header .row {
@@ -809,15 +638,15 @@ Foundation 还有偏移量类，你可以使用它们来在小型和中型屏幕
 
 第二个 CSS 规则修改了我们在 `header` `div` 中创建的行。在这种情况下，它是叠加文本。我们在顶部留了一些空间，并将文本颜色改为白色，以便它在背景图像上突出显示。在将其加载到浏览器之前，这是我们的代码：
 
-*index.html（节选）*
+`index.html`（节选）
 
-```
+```html
 <!doctype html>
 <html class="no-js" lang="en">
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width,
-↵ initial-scale=1.0" />
+initial-scale=1.0" />
         <title>Photo Journal</title>
         <link rel="stylesheet" href="css/foundation.css" />
         <link rel="stylesheet" href="css/app.css" />
@@ -854,7 +683,7 @@ Foundation 还有偏移量类，你可以使用它们来在小型和中型屏幕
 
 请在 `index.html` 中 `header` `div` 下方添加这两个 `div`：
 
-```
+```html
 <div class="section">
 </div>
 
@@ -870,26 +699,23 @@ Foundation 还有偏移量类，你可以使用它们来在小型和中型屏幕
 
 正如图 3.3 所示，对于我们的第一个 `section` 元素，我们将添加三行，每行包含一组不同的内容。与之前一样，在网格中添加新行只需如下：
 
-```
+```html
 <div class="row">
 </div>
 ```
 
 在第一行内部，让我们创建一个新的五列宽元素，以及一个七列宽的元素以填满行的宽度：
 
-```
+```html
 <div class="medium-5 columns">
 </div>
 <div class="medium-7 columns">
 </div>
 ```
 
-
-
-
 本节的第一部分将作为一种照片日志的形式，在五列宽的元素中包含图像，并在七列宽的元素中配有日志条目。我们只需要在这些 `div` 之间添加所需的内容即可。让我们在下方再添加几行来填满页面。对于第二行，我们将采取与第一行相反的操作。简单地将该行分为七列，然后是分为五列：
 
-```
+```html
 <div class="medium-7 columns">
 </div>
 <div class="medium-5 columns">
@@ -898,14 +724,14 @@ Foundation 还有偏移量类，你可以使用它们来在小型和中型屏幕
 
 这种垂直元素的排列将有助于打破我们的网格，并创造出更有趣的内容流。现在，让我们来编辑本节的最后一行，并使用整个网格宽度的全部十二列：
 
-```
+```html
 <div class="large-12 columns">
 </div>
 ```
 
 对于这一行，我们将使用 Foundation 块级网格元素在行内均匀地分布水平内容。为了做到这一点，我们创建一个无序列表，并为行中的每个元素创建一个列表项。当我们创建列表时，我们指定类名为 `"small-block-grid-1 medium-block-grid-3"`，这告诉框架在中等和大型屏幕尺寸上将行分为三列，在小屏幕上分为一列。以下是生成的代码：
 
-```
+```html
 <ul class="small-block-grid-1 medium-block-grid-3">
     <li></li>
     <li></li>
@@ -917,7 +743,7 @@ Foundation 还有偏移量类，你可以使用它们来在小型和中型屏幕
 
 `index.html`（节选）
 
-```
+```html
 <div class="section">
     <div class="row">
         <div class="medium-5 columns">
@@ -972,7 +798,7 @@ http://placehold.it/300x150"></li>
 
 保持节奏，让我们现在继续添加第二个区块。对于这一部分，我们将看到创建响应式媒体元素多么简单；在这种情况下，是一个视频区块。我们将利用 Foundation 的 flex-video 组件，它让框架处理诸如随屏幕尺寸变化的宽高比例和视频缩放等任务（我们将在第 5 章）中详细查看 flex video）。我们可以通过向第二个 `section` `div` 添加新行来开始：
 
-```
+```html
 <div class="section">
     <div class="row">
     </div>
@@ -1046,9 +872,6 @@ melius an per. Ad sed ignota nominavi reprimique. ...</p>
 
 在我们案例中我们将使用五个图标，因此我们添加了 `five-up` 属性将空间分为五个等份。为了向图标栏添加图标，我们在这个 `div` 内部创建一个带有类的列表项：
 
-
-
-
 ```html
 <a class="item">
     <i class="fi-mail"></i>
@@ -1073,12 +896,13 @@ melius an per. Ad sed ignota nominavi reprimique. ...</p>
 
 图 3.7. 我们原型中的页脚
 
-在这些每一个 `item` 锚点中，我们都添加了项目本身，它们仅仅是空白元素，其类名与我们想要使用的 Foundation 图标对应。这些图标是 Zurb 免费提供的字体图标。使用字体图标的优势是它们在任何显示分辨率下看起来都非常清晰。这些图标可以在 [Foundation 网站，](http://zurb.com/playground/foundation-icon-fonts-3) 找到，只需要下载并将它们存储在根目录的 `img` 文件夹中。通过向锚点标签添加 `href=""` 属性，我们可以将这些图标引导到我们想要的任何地方。就这样，我们的页脚就拥有了一个漂亮的图标栏，带有优雅（更不用说可扩展）的图标引导用户访问各种联系链接。
+在这些每一个 `item` 锚点中，我们都添加了项目本身，它们仅仅是空白元素，其类名与我们想要使用的 Foundation 图标对应。这些图标是 Zurb 免费提供的字体图标。使用字体图标的优势是它们在任何显示分辨率下看起来都非常清晰。这些图标可以在 [Foundation 网站](http://zurb.com/playground/foundation-icon-fonts-3) 找到，只需要下载并将它们存储在根目录的 `img` 文件夹中。通过向锚点标签添加 `href=""` 属性，我们可以将这些图标引导到我们想要的任何地方。就这样，我们的页脚就拥有了一个漂亮的图标栏，带有优雅（更不用说可扩展）的图标引导用户访问各种联系链接。
 
+# 第 4 章 组件详解
 
+## 表格
 
-
-图 4.3 显示了它在浏览器中的外观。
+Foundation 为表格提供了默认样式。图 4.3 显示了它在浏览器中的外观。
 
 ![默认 Foundation 表格](img/Image-4-3.png)
 
@@ -1088,18 +912,18 @@ melius an per. Ad sed ignota nominavi reprimique. ...</p>
 
 与许多其他 CSS 框架不同，Foundation 不提供各种类型的预样式表格；相反，你可以自定义默认表格。
 
-## 响应式 Foundation 表格
+### 响应式 Foundation 表格
 
 这种默认 Foundation 表格的主要问题之一是无法通过响应式测试。当表格中的列较多时，它在较小的屏幕上可能会显示异常。默认 Foundation 框架也不支持响应式表格；但是，Foundation 作为 [Foundation Playground](http://zurb.com/playground)网站（该网站分享技术实验）的一部分发布了一个独立的响应式表格包。该包可以从 [`zurb.com/playground/responsive-tables`](http://zurb.com/playground/responsive-tables) 下载。从该包中将 `responsive-tables.css` 和 `responsive-tables.js` 文件复制到你的项目目录，然后如下所示将 CSS 文件链接到 HTML 文件的 `<head>` 部分：
 
-```
+```html
 <link type="text/css" media="screen" rel="stylesheet" 
 href="css/responsive-tables.css" />
 ```
 
 现在按照如下所示将 JavaScript 文件插入 HTML 文件中：
 
-```
+```html
 <script type="text/javascript" src="js/responsive-tables.js">
 </script>
 ```
@@ -1110,11 +934,11 @@ href="css/responsive-tables.css" />
 
 现在继续为最近创建的表格添加 `responsive` 类吧。尝试调整浏览器窗口大小到较小尺寸，或使用 Chrome 的移动仿真模式在较小设备上检查表格。你可以看到表格被添加了水平滚动条，让你能够查看其全部内容。之前损坏的表格现在看起来好多了，并且完全可访问。
 
-## 警框 (Alerts)
+## 警框
 
-顾如名，`Alert` 组件用于在 Web 应用中显示提示消息。它们通常用于传递成功、失败或警告消息。首先，让我们创建一个基础警框框：
+顾名思义，`Alert` 组件用于在 Web 应用中显示提示消息。它们通常用于传递成功、失败或警告消息。首先，让我们创建一个基础警框：
 
-```
+```html
 <div data-alert class="alert-box">
   这里是警框内容。
   <a href="#" class="close">&times;</a>
@@ -1141,7 +965,7 @@ href="css/responsive-tables.css" />
 
 这是一个带有颜色类的警框示例：
 
-```
+```html
 <div data-alert class="alert-box success">
   支付成功！
   <a href="#" class="close">&times;</a>
@@ -1152,9 +976,9 @@ href="css/responsive-tables.css" />
 
 正如我们在面板部分看到的，`radius` 类添加了 `3px` 的圆角半径，而 `round` 类为警框框添加了 `1000px` 的圆角半径。图 4.5 显示了它们的样子：
 
-*alerts.html (节选)*
+`alerts.html` (excerpt)
 
-```
+```html
 <div data-alert class="alert-box success radius">
   带有 .radius 类的警框。
   <a href="#" class="close">&times;</a>
@@ -1172,9 +996,9 @@ href="css/responsive-tables.css" />
 
 正如提到的，你始终可以在 `app.css` 文件中覆盖 `round` 类的 `1000px` 圆角值。
 
-Foundation 还提供了一个自定义事件 `close.fndtn.alert`，它在警框关闭时触发。该事件可以用于在警框关闭后执行 Ajax 调用或客户端端操作。其用法如下：
+Foundation 还提供了一个自定义事件 `close.fndtn.alert`，它在警框关闭时触发。该事件可以用于在警框关闭后执行 Ajax 调用或客户端操作。其用法如下：
 
-```
+```javascript
 $(document).on('close.fndtn.alert', function(event) {
   console.log('警框已关闭！');
 });
@@ -1182,27 +1006,27 @@ $(document).on('close.fndtn.alert', function(event) {
 
 ## 组织内容
 
-良好的内容组织至关重要。你需要易于使用的导航，以便用户浏览你的内容。在本节中，我们将学习如何使用 Foundation 创建标签 (Tabs)、下拉列表和导航栏。
+良好的内容组织至关重要。你需要易于使用的导航，以便用户浏览你的内容。在本节中，我们将学习如何使用 Foundation 创建标签、下拉列表和导航栏。
 
-### 标签 (Tabs)
+### 标签
 
 `Tabs` 是 Foundation 的 JavaScript 组件之一。它允许你在单个容器中组织多个项目，并让你轻松在它们之间切换。就像任何其他组件一样，创建标签组件只需要添加 HTML 标记。
 
 创建标签组件需要两个 HTML 元素：**标签部分**和**标签内容**。
 
-标签部分使用带有 `tabs` 类的无列表 `<ul>` 元素创建，并带有 `data-tab` 的自定义属性。该自定义属性将 HTML 标记与 Foundation 的 JavaScript 绑定：
+标签部分使用带有 `tabs` 类的无序列表 `<ul>` 元素创建，并带有 `data-tab` 的自定义属性。该自定义属性将 HTML 标记与 Foundation 的 JavaScript 绑定：
 
-```
+```html
 <ul class="tabs" data-tab>
     <li></li>
 </ul>
 ```
 
-无列表中的每个子 `<li>` 元素代表界面中的标签。这些 `<li>` 元素应该包含一个链接到特定内容标签。为每个 `<li>` 元素添加 `tab-title` 类以继承 Foundation 的 CSS 样式。标签部分的标记应该如下所示：
+无序列表中的每个子 `<li>` 元素代表界面中的标签。这些 `<li>` 元素应该包含一个链接到特定内容标签。为每个 `<li>` 元素添加 `tab-title` 类以继承 Foundation 的 CSS 样式。标签部分的标记应该如下所示：
 
-*tabs.html (节选)*
+`tabs.html` (excerpt)
 
-```
+```html
 <ul class="tabs" data-tab>
     <li class="tab-title active"><a href="#panel1">标签 1</a></li>
     <li class="tab-title"><a href="#panel2">标签 2</a></li>
@@ -1215,36 +1039,32 @@ $(document).on('close.fndtn.alert', function(event) {
 
 创建标签内容需要创建一个带有 `tabs-content` 类的简单 `<div>` 元素。该元素作为所有子内容区域的父容器。每个子 `<div>` 元素都应该具有 `content` 类和一个唯一的 ID，与标签部分的链接相对应。
 
-
-
-
-
 ```html
 <div class="tabs-content">
     <div class="content active" id="panel1">
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 Duis vel aliquet augue.</p>
-    </div
+    </div>
     <div class="content" id="panel2">
         <p>Mauris ornare quam a lorem interdum, condimentum porta
 eros bibendum.</p>
-    </div
+    </div>
     <div class="content" id="panel3">
         <p>Cras bibendum vehicula turpis a mollis. Pellentesque
 tincid semper nunc, non porta massa volutpat quis.</p>
-    </div
+    </div>
     <div class="content" id="panel4">
         <p>Pellentesque accumsan tortor ut tincidunt sollicitudin.
 </p>
-    </</div>
+    </div>
 </div>
 ```
 
 很直观，不是吗？你必须确保 `content` 元素中的一个具有 `active` 类，以帮助 Foundation 识别要显示的初始内容。
 
-### 注意：不要忘记 `active` 类
-
-如果你忘记在 `tabs` 和 `tabs-content` 元素的子元素之一中添加 `active` 类，那么所有标签卡将不会显示。你必须在 `tabs` 和 `tabs-content` 元素中相同位置的子元素上添加 `active` 类。
+> **注意：不要忘记 `active` 类**
+>
+> 如果你忘记在 `tabs` 和 `tabs-content` 元素的子元素之一中添加 `active` 类，那么所有标签卡将不会显示。你必须在 `tabs` 和 `tabs-content` 元素中相同位置的子元素上添加 `active` 类。
 
 这个标签卡组件看起来就像图 4.6。
 
@@ -1252,7 +1072,7 @@ tincid semper nunc, non porta massa volutpat quis.</p>
 
 图 4.6. 一个标签卡组件
 
-Foundation 还允许你创建另一种类型的标签卡组件，其中标签卡位于左侧，内容位于右侧。这被称为**垂直标签卡**。只需插入一个额外的 `vertical` 类，Foundation 就会神奇地将基础标签卡组件转换为垂直标签卡组件，如图图 4.7 所示：
+Foundation 还允许你创建另一种类型的标签卡组件，其中标签卡位于左侧，内容位于右侧。这被称为**垂直标签卡**。只需插入一个额外的 `vertical` 类，Foundation 就会神奇地将基础标签卡组件转换为垂直标签卡组件，如图 4.7 所示：
 
 ```html
 <ul class="tabs vertical" data-tab>
@@ -1260,26 +1080,26 @@ Foundation 还允许你创建另一种类型的标签卡组件，其中标签卡
 </ul>
 <div class="tabs-content">
     …
-</</div>
+</div>
 ```
 
 ![一个垂直标签卡组件](img/Image-4-13.png)
 
 图 4.7. 一个垂直标签卡组件
 
-**深度链接**是 Foundation Tabs 的一个功能，它为每个标签卡提供一个唯一的 URL。例如，如果你的网站 URL 是 `www.mysite.com`，那么“标签 2”的 URL 可能可能是 `www.mysite.com/#panel2`。这里的 `#panel2` 是 `tabs-content` 元素中子 `content` 元素的 ID。当用户导航到此 URL 时，“标签 2”将被默认选中。
+**深度链接**是 Foundation Tabs 的一个功能，它为每个标签卡提供一个唯一的 URL。例如，如果你的网站 URL 是 `www.mysite.com`，那么“标签 2”的 URL 可能是 `www.mysite.com/#panel2`。这里的 `#panel2` 是 `tabs-content` 元素中子 `content` 元素的 ID。当用户导航到此 URL 时，“标签 2”将被默认选中。
 
 要启用深度链接，请通过标签卡组件的 `data-option` 属性向 Foundation 的 JavaScript 传递特定参数。方法如下：
 
 ```html
 <ul class="tabs" data-tab data-options="deep_linking: true">
  …
-</ul
+</ul>
 ```
 
 这里传递的值是 `deep_linking: true`。你会发现许多 Foundation 组件带有多个 `data-options` 参数，通过这些参数你可以自定义默认行为；请在[Foundation 文档](http://foundation.zurb.com/docs/)中查看这些内容。随着本书的进行，我们将学习更多内容。
 
-### 顶部栏 (Top Bar)
+### 顶部栏
 
 **顶部栏**主要用于导航和其他网站链接。Foundation 的顶部栏组件默认在所有设备尺寸上（小、中、大屏幕）运行良好。
 
@@ -1287,10 +1107,10 @@ Foundation 还允许你创建另一种类型的标签卡组件，其中标签卡
 
 ```html
 <nav class="top-bar" data-topbar>
-</nav
+</nav>
 ```
 
-这个顶部栏将有两个部分——**品牌标识 (branding)** 和**内容 (content)**。品牌标识是放置网站标题或 Logo 的地方。内容包含你在导航栏中所需的所有链接和下拉菜单。让我们如何创建它们。
+这个顶部栏将有两个部分——**品牌标识** 和**内容**。品牌标识是放置网站标题或 Logo 的地方。内容包含你在导航栏中所需的所有链接和下拉菜单。让我们如何创建它们。
 
 品牌标识部分使用带有 `title-area` 类的无序列表 `<ul>` 创建。它包含一个带有 `name` 类的 `<li>` 元素，其中包含网站标题：
 
@@ -1300,7 +1120,7 @@ Foundation 还允许你创建另一种类型的标签卡组件，其中标签卡
         <li class="name">
             <h1><a href="#">My Site</a></h1>
         </li>
-    </ul
+    </ul>
 </nav>
 ```
 
@@ -1312,7 +1132,7 @@ Foundation 还允许你创建另一种类型的标签卡组件，其中标签卡
 
 让我们添加一个汉堡图标，它仅在浏览器宽度窄到无法显示完整导航栏时可见。该图标位于 `title-area` 元素内部：
 
-*top-bar.html (节选)*
+`top-bar.html` (excerpt)
 
 ```html
 <nav class="top-bar" data-topbar>
@@ -1333,10 +1153,33 @@ Foundation 还允许你创建另一种类型的标签卡组件，其中标签卡
 </nav>
 ```
 
+### 下拉菜单
 
+要向顶部栏添加下拉菜单，只需在 `<li>` 元素中添加一个带有 `has-dropdown` 类的锚点标签，然后添加一个带有 `dropdown` 类的 `<ul>` 元素：
 
+`top-bar.html` (excerpt)
 
-## 图 4.12. 下拉菜单
+```html
+<ul class="menu">
+    <li><a href="#">Home</a></li>
+    <li class="has-dropdown">
+        <a href="#">Products</a>
+        <ul class="dropdown">
+            <li><a href="#">Product 1</a></li>
+            <li><a href="#">Product 2</a></li>
+            <li><a href="#">Product 3</a></li>
+        </ul>
+    </li>
+    <li><a href="#">Services</a></li>
+    <li><a href="#">Consulting</a></li>
+</ul>
+```
+
+图 4.12 显示了它在浏览器中的外观。
+
+![下拉菜单](img/Image-4-12.png)
+
+图 4.12. 下拉菜单
 
 该菜单是响应式的。当在较小的屏幕上折叠时，它侧侧显示并带有箭头图标指示，如图 4.13 所示。
 
@@ -1346,14 +1189,17 @@ Foundation 还允许你创建另一种类型的标签卡组件，其中标签卡
 
 你可以对顶栏组件进行一些额外有用且有趣的操作：
 
-- **固定顶栏 (Fixed top bar)**：若要让顶栏在滚动时保持固定，请将整个`<nav>` 元素封装在类为 `fixed` 的 `<div>` 元素中。顶栏将占据浏览器窗口的宽度，并固定在窗口顶部。
-- **对齐网格 (Contain to grid)**：默认情况下，顶栏占据浏览器宽度。如果你想让导航栏设置为你的网格宽度，请将其封装在类为 `contain-to-grid` 的 `<div>` 元素中。
-- **粘性顶栏 (Sticky top bar)**：假设你在页面中间有一个导航栏，并希望它在触碰浏览器顶部时悬浮并固定在顶部。这可以通过将导航栏封装在类为 `sticky` 的 `<div>` 元素中实现。
+- **固定顶栏**：若要让顶栏在滚动时保持固定，请将整个`<nav>` 元素封装在类为 `fixed` 的 `<div>` 元素中。顶栏将占据浏览器窗口的宽度，并固定在窗口顶部。
+- **对齐网格**：默认情况下，顶栏占据浏览器宽度。如果你想让导航栏设置为你的网格宽度，请将其封装在类为 `contain-to-grid` 的 `<div>` 元素中。
+- **粘性顶栏**：假设你在页面中间有一个导航栏，并希望它在触碰浏览器顶部时悬浮并固定在顶部。这可以通过将导航栏封装在类为 `sticky` 的 `<div>` 元素中实现。
+
+
+
 - **响应点击 (Respond to click)**：默认情况下，顶栏组件中的下拉菜单对鼠标悬停有响应。你可以覆盖此功能，通过向 `data-option` 属性传递参数 `is_hover: false` 来让它对鼠标点击做出响应。
 
   例如：
 
-```
+```html
 <nav class="top-bar" data-topbar data-options="is_hover: false">
   …
 </nav>
@@ -1375,10 +1221,9 @@ Foundation 还允许你创建另一种类型的标签卡组件，其中标签卡
 
 幸运的是，Foundation 为我们提供了名为 `flex-video` 的组件，它可以封装任何视频源的嵌入代码并使其变为响应式。创建一个 flex 视频非常简单。你只需要为 `<div>` 元素添加类 `flex-video` 即可。这是一个包含 YouTube 嵌入代码的 flex 视频示例：
 
-```
+```html
 <div class="flex-video">
-      <iframe width="420" height="315" src="//www.youtube.com/
-embed/k85mRPqvMbE" frameborder="0" allowfullscreen></iframe>
+  <iframe width="420" height="315" src="//www.youtube.com/embed/k85mRPqvMbE" frameborder="0" allowfullscreen></iframe>
 </div>
 ```
 
@@ -1388,12 +1233,11 @@ embed/k85mRPqvMbE" frameborder="0" allowfullscreen></iframe>
 
 *flex-video.html (片段)*
 
-```
+```html
 <div class="large-6 large-offset-3 small-8 small-offset-2 columns">
-    <div class="flex-video">
-        <iframe width="420" height="315" src="//www.youtube.com/
-embed/k85mRPqvMbE" frameborder="0" allowfullscreen></iframe>
-    </div>
+  <div class="flex-video">
+    <iframe width="420" height="315" src="//www.youtube.com/embed/k85mRPqvMbE" frameborder="0" allowfullscreen></iframe>
+  </div>
 </div>
 ```
 
@@ -1405,7 +1249,7 @@ embed/k85mRPqvMbE" frameborder="0" allowfullscreen></iframe>
 
 现在如果你尝试调整浏览器宽度，你会发现视频宽度也随之变化。它占据了居中网格列的全宽。
 
-Foundation 提供了两个额外的 CSS 类来样式化 flex ：`widescreen` 和 `vimeo`。通常，嵌入视频是正方形的。如果你想让它看起来更宽或呈矩形，请为 `flex-video` 元素添加类 `widescreen`。这将为 flex 视频添加 `56.34%` 的 `padding-bottom`。当嵌入 Vimeo 视频时，也可以为 flex 视频添加类 `vimeo`。这会移除嵌入 Vimeo 视频的额外内边距。
+Foundation 提供了两个额外的 CSS 类来样式化 flex 视频：`widescreen` 和 `vimeo`。通常，嵌入视频是正方形的。如果你想让它看起来更宽或呈矩形，请为 `flex-video` 元素添加类 `widescreen`。这将为 flex 视频添加 `56.34%` 的 `padding-bottom`。当嵌入 Vimeo 视频时，也可以为 flex 视频添加类 `vimeo`。这会移除嵌入 Vimeo 视频的额外内边距。
 
 ## 创建响应式图片幻灯片
 
@@ -1413,20 +1257,20 @@ Foundation 提供了两个额外的 CSS 类来样式化 flex ：`widescreen` 和
 
 基础的 Orbit 组件是使用单个无序列表 `<ul>` 标签并带有 `data-orbit` 属性创建的：
 
-```
+```html
 <ul data-orbit>
 ```
 
 列表中的每个 `<li>` 标签代表幻灯片中的幻灯片，每个 `<li>` 包含一个 `<img>` 标签；例如：
 
-```
+```html
 <ul data-orbit>
-    <li>
-        <img src="path to image 1"/>
-    </li>
-    <li>
-        <img src="path to image 2"/>
-    </li>
+  <li>
+    <img src="path to image 1"/>
+  </li>
+  <li>
+    <img src="path to image 2"/>
+  </li>
 </ul>
 ```
 
@@ -1446,22 +1290,22 @@ Foundation Orbit 组件默认是响应式的，而且对移动设备手势有响
 
 *orbit.html (片段)*
 
-```
+```html
 <ul data-orbit>
-    <li>
-        <img src="path to image 1"/>
-        <div class="orbit-caption">
-            First slide caption. Lorem ipsum dolor amet,
-            consectetur adipiscing elit.
-        </div>
-    </li>
-    <li>
-        <img src="path to image 2"/>
-        <div class="orbit-caption">
-            Second slide caption. Lorem ipsum dolor amet,
-            consectetur adipiscing elit.
-        </div>
-    </li>
+  <li>
+    <img src="path to image 1"/>
+    <div class="orbit-caption">
+      First slide caption. Lorem ipsum dolor amet,
+      consectetur adipiscing elit.
+    </div>
+  </li>
+  <li>
+    <img src="path to image 2"/>
+    <div class="orbit-caption">
+      Second slide caption. Lorem ipsum dolor amet,
+      consectetur adipiscing elit.
+    </div>
+  </li>
 </ul>
 ```
 
@@ -1481,23 +1325,16 @@ Foundation 的 Orbit 组件已被标记为废弃。虽然它仍然包含在 Foun
 
 虽然使用 Orbit 创建幻灯片很容易，但它可能不适用于创建某些图片幻灯片。Orbit 的主要问题之一是无法处理高度异的图片。
 
-
-
-
-
 通过 `Clearing` 组件，可以创建一个以全屏模式显示图片的幻灯片，并妥善处理高度可变的图片。它的外观类似于 Google+ 的照片灯箱，显示一组较小的图片缩略图，点击后即可全屏显示该图片。让我们来看看如何创建一个 `Clearing` 组件：
 
 *clearing.html (节选)*
 
 ```html
 <ul class="clearing-thumbs" data-clearing>
-  <li><a href="path/to/your/img"><img src="path/to/your/img-th"></a
-↵</li>
-  <li><a href="path/to/your/img"><img src="path/to/your/img-th"></a
-↵</li>
-  <li><a href="path/to/your/img"><img src="path/to/your/img-th"></a
-↵</li>
-</ul
+  <li><a href="path/to/your/img"><img src="path/to/your/img-th"></a></li>
+  <li><a href="path/to/your/img"><img src="path/to/your/img-th"></a></li>
+  <li><a href="path/to/your/img"><img src="path/to/your/img-th"></a></li>
+</ul>
 ```
 
 如你所见，你需要设置一个带有 `.clearing-thumbs` 的无序列表并添加 `data-clearing` 属性。列表中的每个 `<li>` 元素代表一个缩略图图像，其中包含一个包裹着图像标签的锚点标签。锚点标签链接到原始图片，而图像标签则包含图片缩略图的路径。
@@ -1522,10 +1359,9 @@ Foundation 的 Orbit 组件已被标记为废弃。虽然它仍然包含在 Foun
 
 ```html
 <ul class="clearing-thumbs" data-clearing>
-  <li class="th"><a href="path/to/your/img"><img src="path/to/your/
-↵img-th"></a></li>
- …
-</ul
+  <li class="th"><a href="path/to/your/img"><img src="path/to/your/img-th"></a></li>
+  …
+</ul>
 ```
 
 现在，每张缩略图都有了带有内边距的边框，使它们看起来更像缩略图。
@@ -1536,10 +1372,9 @@ Foundation 的 Orbit 组件已被标记为废弃。虽然它仍然包含在 Foun
 
 ```html
 <ul class="clearing-thumbs" data-clearing>
-  <li class="th"><a href="path/to/your/img"><img src="path/to/your/
-↵img-th" data-caption="First image caption"></a></li>
- …
-</ul
+  <li class="th"><a href="path/to/your/img"><img src="path/to/your/img-th" data-caption="First image caption"></a></li>
+  …
+</ul>
 ```
 
 ## 总结
@@ -1552,7 +1387,7 @@ Foundation 的 Orbit 组件已被标记为废弃。虽然它仍然包含在 Foun
 
 表单是任何网站至关重要的组件。登录页面、注册页面、评论框、反馈部分和问卷都是 HTML 表单。虽然使用基础 HTML 标记创建表单很容易，但为每个表单元素设置样式可能是一个无聊的任务。
 
-在本章中，我们将学习如何使用 Foundation 框架创建美观、响应式的表单。我们将探索 Foundation 的表单验证类，以及如何使用 `Abide` 验证表单。最后，我们将发现如何使用 Foundation 的切换开关（例如 iOS 设备中的开启/关闭按钮）。最后，我们将探索 Foundation 的表单验证类。。让我们开始吧。
+在本章中，我们将学习如何使用 Foundation 框架创建美观、响应式的表单。我们将探索 Foundation 的表单验证类，以及如何使用 `Abide` 验证表单。最后，我们将发现如何使用 Foundation 的切换开关（例如 iOS 设备中的开启/关闭按钮）。最后，我们将探索 Foundation 的表单验证类。让我们开始吧。
 
 ## 构建基础表单
 
@@ -1562,14 +1397,14 @@ Foundation 网格系统在表单中用于控制表单输入元素的宽度，并
 
 ```html
 <form>
-    <div class="row">
-        <div class="small-6 columns">
-            <input type="text" placeholder="First Name" />
-        </div>
-        <div class="small-6 columns">
-            <input type="text" placeholder="Last Name"/>
-        </div>
+  <div class="row">
+    <div class="small-6 columns">
+      <input type="text" placeholder="First Name" />
     </div>
+    <div class="small-6 columns">
+      <input type="text" placeholder="Last Name"/>
+    </div>
+  </div>
 </form>
 ```
 
@@ -1583,7 +1418,7 @@ Foundation 网格系统在表单中用于控制表单输入元素的宽度，并
 
 ```html
 <label>First Name
-    <input type="text" placeholder="First Name" />
+  <input type="text" placeholder="First Name" />
 </label>
 ```
 
@@ -1599,33 +1434,33 @@ Foundation 网格系统在表单中用于控制表单输入元素的宽度，并
 
 ```html
 <form>
-    <div class="row">
-        <div class="small-6 columns">
-            <input type="text" placeholder="First Name" />
-        </div>
-        <div class="small-6 columns">
-            <input type="text" placeholder="Last Name"/>
-        </div>
+  <div class="row">
+    <div class="small-6 columns">
+      <input type="text" placeholder="First Name" />
     </div>
-    <div class="row">
-        <div class="large-12 columns">
-            <label>Select Place
-                <select>
-                    <option value="husker">Alabama</option>
-                    <option value="starbuck">Alaska</option>
-                    <option value="hotdog">Arizona</option>
-                    <option value="apollo">California</option>
-                </select>
-            </label>
-        </div>
-    </div
-    <div class="row">
-        <div class="large-12 columns">
-            <label>Add comment
-                <textarea placeholder="Write something"></textarea>
-            </label>
-        </div>
+    <div class="small-6 columns">
+      <input type="text" placeholder="Last Name"/>
     </div>
+  </div>
+  <div class="row">
+    <div class="large-12 columns">
+      <label>Select Place
+        <select>
+          <option value="husker">Alabama</option>
+          <option value="starbuck">Alaska</option>
+          <option value="hotdog">Arizona</option>
+          <option value="apollo">California</option>
+        </select>
+      </label>
+    </div>
+  </div>
+  <div class="row">
+    <div class="large-12 columns">
+      <label>Add comment
+        <textarea placeholder="Write something"></textarea>
+      </label>
+    </div>
+  </div>
 </form>
 ```
 
@@ -1641,37 +1476,29 @@ Foundation 网格系统在表单中用于控制表单输入元素的宽度，并
 
 ```html
 <div class="row">
-    <div class="large-6 columns">
-        <label>Select Gender</label>
-        <input type="radio" name="gender" value="male" id="
-↵maleRadio"><label for="maleRadio">Male</label>
-        <input type="radio" name="gender" value="female" id="
-↵femaleRadio"><label for="femaleRadio">Female</label>
-    </div
+  <div class="large-6 columns">
+    <label>Select Gender</label>
+    <input type="radio" name="gender" value="male" id="maleRadio"><label for="maleRadio">Male</label>
+    <input type="radio" name="gender" value="female" id="femaleRadio"><label for="femaleRadio">Female</label>
+  </div>
 
-    <div class="large-6 columns">
-        <label>Preferred Color</label>
-        <input id="blueCheckbox" type="checkbox"><label for="
-↵blueCheckbox">Blue</label>
-        <input id="redCheckbox" type="checkbox"><label for="
-↵redCheckbox">Red</label>
-    </div
+  <div class="large-6 columns">
+    <label>Preferred Color</label>
+    <input id="blueCheckbox" type="checkbox"><label for="blueCheckbox">Blue</label>
+    <input id="redCheckbox" type="checkbox"><label for="redCheckbox">Red</label>
+  </div>
 </div>
 ```
 
 结果应该类似于图 6.4。
 
-
-
-
-
 ![我们的示例表单增加了单选按钮和复选框进行演变。](img/Image-6-4.png)
 
-图 6.4。我们的示例表单增加了单选按钮和复选框进行演变。
+图 6.4. 我们的示例表单增加了单选按钮和复选框进行演变。
 
 ### 前缀和后缀输入字段
 
-Foundation 有两种类型的输入字段：前缀（可以添加如 `$` 和 `€` 等符号）和后缀（可以添加如 `.com` 的文本）。可以在 图 6.5）中看到这一点。
+Foundation 有两种类型的输入字段：前缀（可以添加如 `$` 和 `€` 等符号）和后缀（可以添加如 `.com` 的文本）。可以在图 6.5 中看到这一点。
 
 ![前缀和后缀输入字段。](img/Image-6-5.png)
 
@@ -1679,14 +1506,14 @@ Foundation 有两种类型的输入字段：前缀（可以添加如 `$` 和 `�
 
 要创建一个前缀或后缀输入字段，首先使用 Foundation 网格系统构建一个双列布局。然后生成一个具有 `row` 和 `collapse` 类的 `<div>` 元素。在这里，`collapse` 将有助于移除列与列之间的默认内边距和外边距：
 
-```
+```html
 <div class="row collapse">
 </div>
 ```
 
 接下来，我们在这个 `row` 元素内部添加列。要创建一个前缀输入框，先构建一个窄列，一个宽列。让我们为窄列选择 `small-3`，为宽列选择 `small-9`：
 
-```
+```html
 <div class="row collapse">
   <div class="small-3 columns">
   </div>
@@ -1697,17 +1524,17 @@ Foundation 有两种类型的输入字段：前缀（可以添加如 `$` 和 `�
 
 记得在添加列宽的同时添加 `columns` 或 `column` 类。在窄列内部，使用 `<span>` 标签添加你所需的的前缀文本（例如 `$`）。它应该具有 `prefix` 类以应用 CSS 样式：
 
-```
+```html
 <div class="small-3 columns">
-    <span class="prefix">$</span>
+  <span class="prefix">$</span>
 </div>
 ```
 
 现在在宽列内部添加输入字段：
 
-```
+```html
 <div class="small-9 columns">
-    <input type="text" placeholder="Enter Amount"/>
+  <input type="text" placeholder="Enter Amount"/>
 </div>
 ```
 
@@ -1715,14 +1542,14 @@ Foundation 有两种类型的输入字段：前缀（可以添加如 `$` 和 `�
 
 对于后缀输入框，只需交换窄列和宽列的位置即可。然后对 `<span>` 标签使用 `postfix` 类而不是 `prefix`。以下是后缀输入框的代码：
 
-```
+```html
 <div class="row collapse">
-    <div class="small-9 columns">
-        <input type="text" placeholder="example" />
-    </div>
-    <div class="small-3 columns">
-        <span class="postfix">.com</span>
-    </div>
+  <div class="small-9 columns">
+    <input type="text" placeholder="example" />
+  </div>
+  <div class="small-3 columns">
+    <span class="postfix">.com</span>
+  </div>
 </div>
 ```
 
@@ -1732,20 +1559,20 @@ Foundation 有两种类型的输入字段：前缀（可以添加如 `$` 和 `�
 
 我们必须创建两列，一窄一宽。我们将使用 `small-3` 类作为窄列，使用 `small-9` 类作为宽列：
 
-```
+```html
 <div class="row collapse">
-    <div class="small-3 columns">
-    </div>
-    <div class="small-9 columns">
-    </div>
+  <div class="small-3 columns">
+  </div>
+  <div class="small-9 columns">
+  </div>
 </div>
 ```
 
 如下所示在窄列中添加 `<label>` 标签：
 
-```
+```html
 <div class="small-3 columns">
-    <label for="nameField">Enter Name</label>
+  <label for="nameField">Enter Name</label>
 </div>
 ```
 
@@ -1753,11 +1580,11 @@ Foundation 有两种类型的输入字段：前缀（可以添加如 `$` 和 `�
 
 ```html
 <div class="small-9 columns">
-    <input type="text" id="nameField" placeholder="John Doe" />
+  <input type="text" id="nameField" placeholder="John Doe" />
 </div>
 ```
 
-让我们在浏览器中查看。它看起来会像 图 6.6。
+让我们在浏览器中查看。它看起来会像图 6.6。
 
 ![一个内联标签](img/Image-6-6.png)
 
@@ -1765,13 +1592,13 @@ Foundation 有两种类型的输入字段：前缀（可以添加如 `$` 和 `�
 
 但是，这里有一个小问题。标签相对于输入框在垂直方向上没有对齐。我们需要添加一些 CSS 类来让它看起来很完美。在标签文本上添加 `right` 类将使其向右浮动。这会让它更靠近输入字段。添加另一个 CSS 类 `inline` 会为它添加一些内边距和外边距。
 
-```
+```html
 <div class="small-3 columns">
-    <label for="nameField" class="right inline">Enter Name</label>
+  <label for="nameField" class="right inline">Enter Name</label>
 </div>
 ```
 
-如果你重新加载浏览器页面，你应该能看到如 图 6.7 所示的完美对齐的标签文本。
+如果你重新加载浏览器页面，你应该能看到如图 6.7 所示的完美对齐的标签文本。
 
 ![我们调整后的内联标签](img/Image-6-7.png)
 
@@ -1783,28 +1610,26 @@ Foundation 有两种类型的输入字段：前缀（可以添加如 `$` 和 `�
 
 *index.html (节录)*
 
-```
+```html
 <div class="small-12 columns">
-    <label class="error">Name
-        <input type="text" placeholder="Name" />
-    </label>
-    <small class="error">Invalid entry</small>
+  <label class="error">Name
+    <input type="text" placeholder="Name" />
+  </label>
+  <small class="error">Invalid entry</small>
 </div>
 ```
 
-这看起来会像 图 6.8。
+这看起来会像图 6.8。
 
 ![带有错误状态的输入字段](img/Image-6-8.png)
 
 图 6.8. 带有错误状态的输入字段
 
-这在 Foundation 中指示一个输入字段是否有无效条目是极其直接的。只需在标签文本上添加 `error` 类即可使其变为红色。你还可以在输入字段下方放置额外的文本作为错误消息。此文本使用带有 `error` 类的 `<small>` 标签添加。以下是一个带有错误状态的输入字段示例：
-
 ### 使用 Abide 验证表单
 
 Abide 是一个提供客户端验证支持的库。在上一节中，我们看到了如何 *指示* 错误状态，但我们尚未学习如何 *调用* 那些错误状态。现在我们将使用 Abide 来验证表单。这是一个使用 Abide 的示例表单：
 
-```
+```html
 <form>
   <div class="name-field">
     <label>Your name
@@ -1822,7 +1647,7 @@ Abide 是一个提供客户端验证支持的库。在上一节中，我们看�
 </form>
 ```
 
-这个基础表单看起来会像 图 6.9。
+这个基础表单看起来会像图 6.9。
 
 ![没有验证的表单](img/Image-6-9.png)
 
@@ -1832,36 +1657,29 @@ Abide 是一个提供客户端验证支持的库。在上一节中，我们看�
 
 接下来，我们通过在 `<form>` 标签上添加 `data-abide` 属性来在表单上初始化 Abide 库：
 
-```
+```html
 <form data-abide>
 ...
 </form>
 ```
 
-现在，当你刷新页面后，错误状态应该是隐藏的，如 图 6.10 所示。
+现在，当你刷新页面后，错误状态应该是隐藏的，如图 6.10 所示。
 
 ![隐藏错误状态的表单](img/Image-6-15.png)
 
 图 6.10. 隐藏错误状态的表单
 
-现在如果你尝试提交此表单——当然是在刷新页面之后——你将看到验证正在工作，且空字段是不接受的，如 图 6.11 所示。
+现在如果你尝试提交此表单——当然是在刷新页面之后——你将看到验证正在工作，且空字段是不接受的，如图 6.11 所示。
 
 ![表单现在拒绝空字段](img/Image-6-11.png)
 
-图 6.11. 表单现在拒绝空字段。
-
-
-
-
-
-![表单现在拒绝空字段](img/Image-6-16.png)
 图 6.11. 表单现在拒绝空字段
 
-我们将通过添加更多细节来完善我们的表单验证。Abide 验证允许你为每个输入字段添加模式，以便它只接受特定的值。例如，如果你想让名称字段只接受字符而排除数字，那么有一个你必须向 Abide 库提供的特定模式。这些模式也也被称为 `regular expressions`（正则表达式）或 `RegEx`。你可以在 [MDN 开发者网络上阅读更多关于 RegEx 的知识](https://developer.mozilla.org/en/docs/Web/JavaScript/Guide/Regular_Expressions)。另一个可以让你轻松获取模式的酷炫在线工具是 [HTML5Pattern.](https://html5pattern.com) 你也可以参考 Foundation 的文档获取一些 [预定义模式。](http://foundation.zurb.com/docs/components/abide.html#predefined-patterns)
+我们将通过添加更多细节来完善我们的表单验证。Abide 验证允许你为每个输入字段添加模式，以便它只接受特定的值。例如，如果你想让名称字段只接受字符而排除数字，那么有一个你必须向 Abide 库提供的特定模式。这些模式也也被称为 `regular expressions`（正则表达式）或 `RegEx`。你可以在 [MDN 开发者网络上阅读更多关于 RegEx 的知识](https://developer.mozilla.org/en/docs/Web/JavaScript/Guide/Regular_Expressions)。另一个可以让你轻松获取模式的酷炫在线工具是 [HTML5Pattern](https://html5pattern.com)。你也可以参考 Foundation 的文档获取一些 [预定义模式](http://foundation.zurb.com/docs/components/abide.html#predefined-patterns)。
 
 让我们在名称字段中添加模式 `[a-zA-Z]+`。这将强制只提交字母字符：
 
-```
+```html
 <input type="text" required pattern="[a-zA-Z]+"/>
 ```
 
@@ -1873,16 +1691,17 @@ Abide 验证库仅提供客户端验证。它使用 `JavaScript` 在浏览器中
 
 ## 开关 (Switches)
 
-开关是一种切换元素，点击或触摸时可以在开启和关闭状态之间切换，如图图 6.12 所示。
+开关是一种切换元素，点击或触摸时可以在开启和关闭状态之间切换，如图 6.12 所示。
 
 ![开关](img/Image-6-13.png)
+
 图 6.12. 开关
 
 Foundation 框架中开关最好的地方在于它们是使用普通的复选框和单选按钮 HTML 元素生成的。因此，你可以使用传统的 JavaScript 方法检测这些元素的状态。
 
 要创建一个开关，设置一个具有类 `switch` 的 `<div>` 元素。然后在它内部插入一个带有标签标记的 HTML 复选框：
 
-```
+```html
 <div class="switch">
   <input id="exampleCheckboxSwitch" type="checkbox">
   <label for="exampleCheckboxSwitch"></label>
@@ -1894,11 +1713,12 @@ Foundation 框架中开关最好的地方在于它们是使用普通的复选框
 图 6.13 显示了它看起来应该是什么样。
 
 ![基础切换开关](img/Image-6-9.png)
+
 图 6.13. 基础切换开关
 
 你也可以使用相同的标记创建一组单选按钮开关。请确保你为所有开关都设置了相同的 `name` 属性，如代码所示。通过单选按钮驱动的开关，你可以确保一次只有一个开关被选中：
 
-```
+```html
 <div class="switch">
   <input id="exampleRadioSwitch1" type="radio" checked name="testGroup">
   <label for="exampleRadioSwitch1"></label>
@@ -1918,6 +1738,7 @@ Foundation 框架中开关最好的地方在于它们是使用普通的复选框
 结果将看起来像图 6.14 所示。
 
 ![单选按钮驱动的开关](img/Image-6-10.png)
+
 图 6.14. 单选按钮驱动的开关
 
 ### 开关尺寸
@@ -1935,7 +1756,7 @@ Foundation 框架中开关最好的地方在于它们是使用普通的复选框
 
 以下是这些类的用法示例：
 
-```
+```html
 <div class="switch large radius">
   <input id="exampleRadioSwitch4" type="radio" name="testGroup">
   <label for="exampleRadioSwitch4"></label>
@@ -1947,6 +1768,7 @@ Foundation 框架中开关最好的地方在于它们是使用普通的复选框
 图 6.15 显示了开关的所有形状和尺寸。
 
 ![各种尺寸和样式的开关](img/Image-6-11.png)
+
 图 6.15. 各种尺寸和样式的开关
 
 ### 禁用开关
@@ -1958,13 +1780,13 @@ Foundation 框架中开关最好的地方在于它们是使用普通的复选框
 ```css
 switch.disabled {
   opacity: 0.25;
-  pointer-events: none; // 阻止点击事件
+  pointer-events: none; /* 阻止点击事件 */
 }
 ```
 
 然后为 `<input>` 元素添加 `disabled` 类，例如：
 
-```
+```html
 <div class="switch large radius">
   <input id="exampleSwitch" type="radio" name="testGroup" disabled>
   <label for="exampleSwitch"></label>
@@ -1979,12 +1801,9 @@ switch.disabled {
 
 在下一章中，我们将发现如何使用 Sass 预处理器来自定义 Foundation 的默认样式。所以请休息一下，然后准备好进入这本书精彩的最后一章。
 
-
-
-
 编译这段 Sass 代码将生成以下输出：
 
-```
+```css
 .button{
   background: #00f;
   color: #fff;
@@ -2011,7 +1830,7 @@ switch.disabled {
 
 ### 安装 Git
 
-安装 Git 最简单的方法是[下载安装程序。](http://git-scm.com/download) 点击相应的操作系统，下载完成后，双击它并按照说明操作。
+安装 Git 最简单的方法是[下载安装程序](http://git-scm.com/download)。点击相应的操作系统，下载完成后，双击它并按照说明操作。
 
 要检查是否已成功安装 Git，请打开终端（OS X 中使用 Terminal，Windows 中使用命令提示符）并输入 `git --version`。它应该显示已安装的 Git 版本。
 
@@ -2029,27 +1848,27 @@ switch.disabled {
 
 ### 安装 Foundation CLI
 
-为了管理自身的更新——以及第三方库的更新——Foundation 使用 [Bower。](http://bower.io/) 如果你不熟悉 Bower，它是一个客户端包管理器，用于跟踪开发者使用的包。在这种情况下，我们需要的包是 Foundation 框架。我们还需要 `grunt-cli`，这是一个为 Foundation CLI 运行各种预定义任务的 JavaScript 程序。可以在 [`gruntjs.com`](http://gruntjs.com) 了解更多关于 Grunt 的信息。
+为了管理自身的更新——以及第三方库的更新——Foundation 使用 [Bower](http://bower.io/)。如果你不熟悉 Bower，它是一个客户端包管理器，用于跟踪开发者使用的包。在这种情况下，我们需要的包是 Foundation 框架。我们还需要 `grunt-cli`，这是一个为 Foundation CLI 运行各种预定义任务的 JavaScript 程序。可以在 [`gruntjs.com`](http://gruntjs.com) 了解更多关于 Grunt 的信息。
 
 打开终端并输入以下命令：
 
-```
+```bash
 npm install -g bower grunt-cli
 ```
 
 现在让我们使用以下命令安装 Foundation CLI：
 
-```
+```bash
 gem install foundation
 ```
 
 ### 注意：权限错误
 
-如果你在运行这两个命令时遇到任何权限错误，请在它们前面添加 `sudo` 单词，并在提示时输入你的系统密码。这应该解决你的问题。如果你遇到其他问题，我们建议你前往 [SitePoint 论坛。](http://community.sitepoint.com/)
+如果你在运行这两个命令时遇到任何权限错误，请在它们前面添加 `sudo` 单词，并在提示时输入你的系统密码。这应该解决你的问题。如果你遇到其他问题，我们建议你前往 [SitePoint 论坛](http://community.sitepoint.com/)。
 
 执行完命令后，输入以下内容以检查 Foundation 是否安装正确：
 
-```
+```bash
 foundation version
 ```
 
@@ -2063,13 +1882,13 @@ Compass 是一个开源 CSS 编写框架，使用 Sass 样式表语言。它将 
 
 安装 Compass 非常简单。你只需要输入以下命令：
 
-```
+```bash
 gem install compass
 ```
 
 安装完成后，使用终端导航到通常存放所有项目的文件夹；例如，`cd Documents`。接下来，输入以下命令生成你的第一个兼容 Sass 的 Foundation 项目：
 
-```
+```bash
 foundation new First_project
 ```
 
@@ -2083,7 +1902,7 @@ Gemfile 保留了你的 Rails 程序的 gem 依赖项列表。通过运行 `bund
 
 你必须为新项目运行一次 `bundle` 命令。使用此命令安装 Bundler：
 
-```
+```bash
 gem install bundler
 ```
 
@@ -2091,26 +1910,26 @@ gem install bundler
 
 安装 bundler 后，进入新创建的文件夹 `First_project` 并运行 `bundle` 命令：
 
-```
+```bash
 cd First_project
 bundle
 ```
 
 在 bundle 安装所有内容后，运行以下命令让 Compass 监听对 Sass 文件的更改并进行编译：
 
-```
+```bash
 bundle exec compass watch
 ```
 
 让我们检查 Compass 是否真的在工作。为了测试，打开 `scss/app.scss` 文件并在底部定义一个新的 Sass 变量：
 
-```
+```scss
 $mycolor: #FFF;
 ```
 
 一旦保存文件，你应该会在终端中看到 Compass 执行了某些命令：
 
-```
+```text
 modified scss/app.scss
 write stylesheets/app.css
 ```
@@ -2144,16 +1963,13 @@ write stylesheets/app.css
 
 假设你想在这个项目中安装 AngularJS。你可以使用类似的 Bower 命令下载它：
 
-```
+```bash
 bower install angular --save
 ```
 
 Bower 会在 `bower_components/angular` 文件夹中下载 AngularJS 包，并在 `bower.json` 文件中创建一个新条目。
 
-
-
-
-```
+```json
 {
   "name": "foundation-compass-app",
   "version": "0.0.1",
@@ -2167,15 +1983,15 @@ Bower 会在 `bower_components/angular` 文件夹中下载 AngularJS 包，并�
 
 Bower 的方便之处在于，在共享项目时，你可以简单地忽略 `bower_components` 文件夹。无论你与谁分享项目，他们只需运行以下命令即可快速安装依赖项：
 
-```
+```bash
 bower install
 ```
 
 这将为他们创建一个 `bower_components` 文件夹，其中包含所有所需的依赖项。
 
-`config.rb` 是一个 Compass ，用于指示 Compass 在项目的何处查找适当的文件。例如，它告诉 Compass 在何处定位 Sass 文件，以及在编译后将静态 CSS 文件存储在哪里。如果你打开这个文件，它的内容应该如下：
+`config.rb` 是一个 Compass 配置文件，用于指示 Compass 在项目的何处查找适当的文件。例如，它告诉 Compass 在何处定位 Sass 文件，以及在编译后将静态 CSS 文件存储在哪里。如果你打开这个文件，它的内容应该如下：
 
-```
+```ruby
 add_import_path "bower_components/foundation/scss"
 http_path = "/"
 css_dir = "stylesheets"
@@ -2216,7 +2032,7 @@ javascripts_dir = "js"
 
 现在取消以下行的注释：
 
-```
+```scss
 // $button-font-align: center;
 ```
 
@@ -2230,21 +2046,21 @@ Compass 将覆盖 `app.css` 中 `button` 类的默认 `text-align` 属性：
 
 ```css
 .button{
-    …
-    text-align: left; //从 center 改为 left
-    …
+  …
+  text-align: left; /* 从 center 改为 left */
+  …
 }
 ```
 
 接下来，取消此行的注释：
 
-```
+```scss
 // $button-margin-bottom: rem-calc(20);
 ```
 
 将其更改为：
 
-```css
+```scss
 $button-margin-bottom: rem-calc(40);
 ```
 
@@ -2252,15 +2068,15 @@ Compass 将覆盖 `app.css` 中 `button` 类的默认 `margin` 属性：
 
 ```css
 .button{
-    …
-    margin: 0 0 2.5rem; //原本是 0 0 1.5rem
-    …
+  …
+  margin: 0 0 2.5rem; /* 原本是 0 0 1.5rem */
+  …
 }
 ```
 
 ### 注意：引入 rem
 
-`Rem-calc` 是一个 Foundation Sass 函数，它将像素测量转换为 rem，这样你仍然可以以像素为单位思考，并获得可缩放的 em。如果你不熟悉这个新的 rem CSS 单位，请参考 CSS-Tricks 的文章[“对 REM 和 EM 感到惑？”](https://css-tricks.com/confused-rem-em/)。
+`rem-calc` 是一个 Foundation Sass 函数，它将像素测量转换为 rem，这样你仍然可以以像素为单位思考，并获得可缩放的 em。如果你不熟悉这个新的 rem CSS 单位，请参考 CSS-Tricks 的文章[“对 REM 和 EM 感到惑？”](https://css-tricks.com/confused-rem-em/)。
 
 我们已经看到了如何在 Sass 中定义变量。你可以使用此类变量为你的网站定义颜色方案。让我们创建一个新文件，为我们的网站存储一些可用的颜色。
 
@@ -2268,7 +2084,7 @@ Compass 将覆盖 `app.css` 中 `button` 类的默认 `margin` 属性：
 
 `_colors.scss`
 
-```
+```scss
 $theme-primary-color: #009688;
 $theme-secondary-color: #4DB6AC;
 $theme-text-color: #212121;
@@ -2288,9 +2104,9 @@ $theme-text-color: #212121;
 
 ```scss
 .standout-paragraph{
-    color: $theme-text-color;
-    padding: 20px;
-    background-color: $theme-secondary-color;
+  color: $theme-text-color;
+  padding: 20px;
+  background-color: $theme-secondary-color;
 }
 ```
 
@@ -2298,28 +2114,28 @@ $theme-text-color: #212121;
 
 ```css
 .standout-paragraph{
-    color: #212121;
-    padding: 20px;
-    background-color: #4DB6AC;
+  color: #212121;
+  padding: 20px;
+  background-color: #4DB6AC;
 }
 ```
 
-**嵌套**是组织和维护 CSS 样式的一种极方法。让我们通过修改 `.standout-paragraph` 的 Sass 代码来查看 Sass 中的嵌套：
+**嵌套**是组织和维护 CSS 样式的一种极好的方法。让我们通过修改 `.standout-paragraph` 的 Sass 代码来查看 Sass 中的嵌套：
 
-```css
+```scss
 .standout-paragraph{
-    color: $theme-text-color;
-    padding: 20px;
-    background-color: $theme-secondary-color;
-    //嵌套类型 1
-    a{
-        color: #FFFFFF;
-        text-decoration: none;
-    }
-    //嵌套类型 2
-    &.white-text{
-        color: #FFFFFF;
-    }
+  color: $theme-text-color;
+  padding: 20px;
+  background-color: $theme-secondary-color;
+  /* 嵌套类型 1 */
+  a{
+    color: #FFFFFF;
+    text-decoration: none;
+  }
+  /* 嵌套类型 2 */
+  &.white-text{
+    color: #FFFFFF;
+  }
 }
 ```
 
@@ -2327,36 +2143,33 @@ $theme-text-color: #212121;
 
 ```css
 .standout-paragraph{
-    color: #212121;
-    padding: 20px;
-    background-color: #4DB6AC;
+  color: #212121;
+  padding: 20px;
+  background-color: #4DB6AC;
 }
 
-//嵌套类型 1 的结果为
+/* 嵌套类型 1 的结果为 */
 .standout-paragraph a{
-    color: #FFFFFF;
+  color: #FFFFFF;
 }
 
-//嵌套类型 2 的结果为
+/* 嵌套类型 2 的结果为 */
 .standout-paragraph.white-text{
-    color: #FFFFFF;
+  color: #FFFFFF;
 }
 ```
 
 如 CSS 代码所示，嵌套类型 1 产生的 CSS 层级结构为 `.standout-paragraph a`。然而，嵌套类型 2 是通过 `&` 符号引用父选择器的一种方法。
 
-希望这让你对 Sass 中的嵌套有了基本的了解。如需进一步阅读，请参考 Sass 文档的[嵌套章节。](http://sass-lang.com/documentation/file.SASS_REFERENCE.html#nested_rules)
+希望这让你对 Sass 中的嵌套有了基本的了解。如需进一步阅读，请参考 Sass 文档的[嵌套章节](http://sass-lang.com/documentation/file.SASS_REFERENCE.html#nested_rules)。
 
 ### 理解 app.scss
 
-我们将移动到 `scss` 文件夹中的下一个重要文件，`app.scss`。它是项目的父 Sass 文件，通过该文件创建主 `app.`css 文件，它也是引入所有部分文件（partials）的地方。如上面提到的，部分文件是无法独立编译的 Sass 文件。
-
-
-
+我们将移动到 `scss` 文件夹中的下一个重要文件，`app.scss`。它是项目的父 Sass 文件，通过该文件创建主 `app.css` 文件，它也是引入所有部分文件（partials）的地方。如上面提到的，部分文件是无法独立编译的 Sass 文件。
 
 如果你打开 `app.scss` 文件，它的顶部应该有三个 `import` 语句：
 
-```
+```scss
 @import "colors";
 @import "settings";
 @import "foundation";
@@ -2366,7 +2179,7 @@ $theme-text-color: #212121;
 
 你会在这个 `app.scss` 文件中发现许多被注释的 `import` 语句，例如：
 
-```
+```scss
 // @import
 //   "foundation/components/accordion",
 //   "foundation/components/alert-boxes",
@@ -2377,13 +2190,13 @@ $theme-text-color: #212121;
 
 例如，如果你选择跳过 `accordion`、`flex-video` 和 `joyride` 组件，你可以取消其余组件的注释，并保持这些组件处于注释状态。为此，你需要注释掉这一行：
 
-```
+```scss
 // @import "foundation";
 ```
 
 并按照如下方式取消这些行的注释：
 
-```
+```scss
 @import
   "foundation/components/accordion",
   "foundation/components/flex-video",
@@ -2404,4 +2217,4 @@ $theme-text-color: #212121;
 * [免费的 Foundation 模板](http://foundation.zurb.com/templates.html)
 * [Foundation 字体图标](http://zurb.com/playground/foundation-icon-fonts-3)
 
-我希望你喜欢这本书并尝试 Foundation。祝你未来的 Web 项目以及 Foundation 之之旅好运！
+我希望你喜欢这本书并尝试 Foundation。祝你未来的 Web 项目以及 Foundation 之旅好运！

@@ -1,40 +1,34 @@
+
 # JS 快速原型设计：敏捷 JavaScript 开发
-
-
 
 ![](img/title_page.jpg)
 
 ![使用 JS 进行快速原型开发](img/title_page.jpg)
 
-
-
-
-本书可在 [`leanpub.com/rapid-prototyping-with-js`](http://leanpub.com/rapid-prototyping-with-js) 购买。
-
-此版本发布于 2014-05-28。
+本书可在 [`leanpub.com/rapid-prototyping-with-js`](http://leanpub.com/rapid-prototyping-with-js) 购买。此版本发布于 2014-05-28。
 
 ![出版者标志](img/leanpub-logo.png)
 
 * * * * * *
 
-这是一本 [Leanpub](http://leanpub.com) 书籍。Leanpub 通过精益出版（Lean Publishing）流程为作者和出版社赋能。[精益出版](http://leanpub.com/manifesto)是指使用轻量工具和多次迭代来发布进行中的电子书，以获取读者反馈，不断调整直到获得正确的书籍，并在一旦后后建立影响力。
+这是一本 [Leanpub](http://leanpub.com) 书籍。Leanpub 通过精益出版（Lean Publishing）流程为作者和出版社赋能。[精益出版](http://leanpub.com/manifesto)是指使用轻量工具和多次迭代来发布进行中的电子书，以获取读者反馈，不断调整直到获得正确的书籍，并在之后建立影响力。
 
 * * * * * *
 
-
-    * 6 Node.js 和 MongoDB
-
-
-
-
+- 6 Node.js 和 MongoDB
 
 ## 6.1 Node.js
 
 ### 6.1.1 在 Node.js 中构建“Hello World”
+
 ### 6.1.2 Node.js 核心模块
+
 ### 6.1.3 Node 包管理器 (NPM)
+
 ### 6.1.4 将“Hello World”部署到 PaaS
+
 ### 6.1.5 部署到 Windows Azure
+
 ### 6.1.6 部署到 Heroku
 
 ## 6.2 聊天：运行时内存版本
@@ -44,8 +38,11 @@
 ## 6.4 MongoDB
 
 ### 6.4.1 MongoDB Shell
+
 ### 6.4.2 MongoDB 原生驱动
+
 ### 6.4.3 Heroku 上的 MongoDB: MongoHQ
+
 ### 6.4.4 BSON
 
 ## 6.5 聊天：MongoDB 版本
@@ -53,71 +50,95 @@
 ## 7 整合应用
 
 ### 7.1 不同域名部署
+
 ### 7.2 更改端点
+
 ### 7.3 聊天应用程序
+
 ### 7.4 部署
+
 ### 7.5 同域名部署
 
 ## 8 赠送：Webapplog 文章
 
 ### 8.1 Node 中的异步性
 
-### 8.1.1 非阻塞 I/O
-### 8.1.2 异步编码方式
+#### 8.1.1 非阻塞 I/O
+
+#### 8.1.2 异步编码方式
 
 ### 8.2 使用 Monk 进行 MongoDB 迁移
 
 ### 8.3 在 Node.js 中使用 Mocha 进行测试驱动开发 (TDD)
 
-### 8.3.1 谁需要测试驱动开发？
-### 8.3.2 快速上手指南
+#### 8.3.1 谁需要测试驱动开发？
+
+#### 8.3.2 快速上手指南
 
 ### 8.4 Wintersmith — 静态网站生成器
 
-### 8.4.1 使用 Wintersmith
-### 8.4.2 其他静态网站生成器
+#### 8.4.1 使用 Wintersmith
+
+#### 8.4.2 其他静态网站生成器
 
 ### 8.5 Express.js 简介：使用 Monk 和 MongoDB 构建的简单 REST API 应用
 
-### 8.5.1 使用 Express.js 和 Monk 构建 REST API 应用
+#### 8.5.1 使用 Express.js 和 Monk 构建 REST API 应用
 
 ### 8.6 Express.js 简介：参数、错误处理和其他中间件
 
-### 8.6.1 请求处理器
-### 8.6.2 参数中间件
-### 8.6.3 错误处理
-### 8.6.4 其他中间件
-### 8.6.5 抽象
+#### 8.6.1 请求处理器
+
+#### 8.6.2 参数中间件
+
+#### 8.6.3 错误处理
+
+#### 8.6.4 其他中间件
+
+#### 8.6.5 抽象
 
 ### 8.7 使用 Mongoskin 和 Express.js 使用 Node.js 和 MongoDB 构建 JSON API 服务器
 
-### 8.7.1 测试覆盖率
-### 8.7.2 依赖项
-### 8.7.3 实现
-### 8.7.4 结论
+#### 8.7.1 测试覆盖率
+
+#### 8.7.2 依赖项
+
+#### 8.7.3 实现
+
+#### 8.7.4 结论
 
 ## 8.8 Node.js MVC：Express.js + Derby Hello World
 
-### 8.8.1 Node MVC 框架
-### 8.8.2 Derby 安装
-### 8.8.3 文件结构
-### 8.8.4 依赖项
-### 8.8.5 视图 (Views)
-### 8.8.6 主服务器
-### 8.8.7 Derby 应用
-### 8.8.8 启动 Hello World 应用
-### 8.8.9 向后端传递值
+#### 8.8.1 Node MVC 框架
+
+#### 8.8.2 Derby 安装
+
+#### 8.8.3 文件结构
+
+#### 8.8.4 依赖项
+
+#### 8.8.5 视图 (Views)
+
+#### 8.8.6 主服务器
+
+#### 8.8.7 Derby 应用
+
+#### 8.8.8 启动 Hello World 应用
+
+#### 8.8.9 向后端传递值
 
 ## 结论与延伸阅读
 
 ### 结论
+
 ### 延伸阅读
-* JavaScript 资源和免费电子书
-* JavaScript 书籍
-* Node.js 资源和免费电子书
-* Node.js 书籍
-* 互动在线课堂和课程
-* 创业书籍和博客
+
+- JavaScript 资源和免费电子书
+- JavaScript 书籍
+- Node.js 资源和免费电子书
+- Node.js 书籍
+- 互动在线课堂和课程
+- 创业书籍和博客
 
 ## 读者寄语
 
@@ -137,22 +158,17 @@
 
 ### 我们在互联网上做朋友
 
-* Twitter: `@RPJSbook` 和 `@azat_co`
-* Facebook: `facebook.com/RapidPrototypingWithJS`
-* 网站: `rapidprototypingwithjs.com/`
-* 博客: `webapplog.com`
-* GitHub: `github.com/azat-co/rpjs`
-
-
-
-
-
-*   Storify: [使用 JS 进行快速原型](https://storify.com/azat_co/rapid-prototyping-with-js)
+- Twitter: `@RPJSbook` 和 `@azat_co`
+- Facebook: `facebook.com/RapidPrototypingWithJS`
+- 网站: `rapidprototypingwithjs.com/`
+- 博客: `webapplog.com`
+- GitHub: `github.com/azat-co/rpjs`
+- Storify: [使用 JS 进行快速原型](https://storify.com/azat_co/rapid-prototyping-with-js)
 
 ## 其他联系方式
 
-* 邮箱：hi@rpjs.co
-* Google Group：rpjs@googlegroups.com 和 [`groups.google.com/forum/#!forum/rpjs`](https://groups.google.com/forum/#!forum/rpjs)
+- 邮箱：hi@rpjs.co
+- Google Group：`rpjs@googlegroups.com` 和 [`groups.google.com/forum/#!forum/rpjs`](https://groups.google.com/forum/#!forum/rpjs)
 
 ## 在 Twitter 上分享
 
@@ -198,12 +214,12 @@ RPJS 的典型读者应该预期一组快速上手指南、教程和建议（例
 
 我们建议准备以下内容以充分利用示例和材料的优势：
 
-* 掌握基础概念，如对象、函数、数据结构（数组、哈希）、循环（for, while）、条件（if/else）
-* 基础 Web 开发技能，包括但不限于 HTML 和 CSS
-* 强烈建议使用 Mac OS X 或 UNIX/Linux 系统进行本书的示例以及一般的 Web 开发，尽管在 Windows 系统上仍然可以实现。
-* 访问互联网
-* 5-20 小时的时间
-* 某些云服务即使是免费账户也需要用户的信用卡/借记卡信息
+- 掌握基础概念，如对象、函数、数据结构（数组、哈希）、循环（`for`, `while`）、条件（`if/else`）
+- 基础 Web 开发技能，包括但不限于 HTML 和 CSS
+- 强烈建议使用 Mac OS X 或 UNIX/Linux 系统进行本书的示例以及一般的 Web 开发，尽管在 Windows 系统上仍然可以实现。
+- 访问互联网
+- 5-20 小时的时间
+- 某些云服务即使是免费账户也需要用户的信用卡/借记卡信息
 
 ### 如何使用本书
 
@@ -215,13 +231,7 @@ RPJS 的典型读者应该预期一组快速上手指南、教程和建议（例
 
 这是书的数字版本，因此大多数链接像任何其他网页一样被隐藏了，例如使用 [jQuery](http://jquery.com) 而不是 [`jquery.com`](http://jquery.com)。在 PDF 版本中，URL 位于页面底部的脚注中。目录具有本地超链接，允许你跳转到书的任何部分或章节。
 
-在 PDF、EPUB 和 Mobi 版本中，你可以使用书开头的目录（它包含内部链接）跳转到最感兴趣的部分或章节。
-
-
-
-
-
-为了在书籍的不同部分、章节和节之间进行快速导航，请使用基于`Table of Contents`（目录）的书籍导航窗（如下所示）。
+为了在书籍的不同部分、章节和节之间进行快速导航，请使用基于 `Table of Contents`（目录）的书籍导航窗（如下所示）。
 
 ![Mac OS X 预览应用中的目录面板。](img/navigation.png)
 
@@ -247,10 +257,10 @@ Mac OS X 预览应用中的目录面板。
 ```
 1 $ git push origin heroku
 2 $ cd /etc/
-3 $ ls 
+3 $ ls
 ```
 
-内联文件名、路径/文件夹名称、引号以及特殊单词/名称使用*斜体*，而命令名称（例如 `mongod`）和强调词汇（例如 `Note`）则使用**粗体**。
+内联文件名、路径/文件夹名称、引号以及特殊单词/名称使用`斜体`，而命令名称（例如 `mongod`）和强调词汇（例如 `Note`）则使用**粗体**。
 
 ## 术语
 
@@ -266,17 +276,19 @@ Azat Mardan 在 Web、移动和软件开发方面拥有 12 年以上的经验。
 
 目前，Azat 在 [DocuSign](http://docusign.com) 担任高级软件工程师，他的团队使用 `Node.js`、`Express.js`、`Backbone.js`、`CoffeeScript`、`Jade`、`Stylus` 和 `Redis` 技术栈构建了 500 万用户产品（DocuSign Web 应用）。
 
-最近，他在精选社交媒体新闻聚合网站 [Storify.com](http://storify.com)（已被 [LiveFyre](http://livefyre.com) 收）担任工程师，该网站被 BBC、NBC、CNN、白宫等机构使用。与其他公司不同，Storify 的一切运行在 `Node.js` 上。它是开源库 [jade-browser](http://npmjs.org/jade-browser) 的维护者。
+最近，他在精选社交媒体新闻聚合网站 [Storify.com](http://storify.com)（已被 [LiveFyre](http://livefyre.com) 收购）担任工程师，该网站被 BBC、NBC、CNN、白宫等机构使用。与其他公司不同，Storify 的一切运行在 `Node.js` 上。它是开源库 [jade-browser](http://npmjs.org/jade-browser) 的维护者。
 
-在此之前，Azat 曾在 [Gizmo](http://www.crunchbase.com/company/gizmo) 担任 CTO/联合创始人——这是一个用于移动营销活动的企业级云平台，并参加过声誉卓远的 [500 Startups](http://500.co/) 业务加速计划。
+在此之前，Azat 曾在 [Gizmo](http://www.crunchbase.com/company/gizmo) 担任 CTO/联合创始人——这是一个用于移动营销活动的企业级云平台，并参加过声誉卓著的 [500 Startups](http://500.co/) 业务加速计划。
 
-在此之前，Azat 曾在华盛顿特区的政府机构开发过关键任务应用程序，包括[国立健康研究院](http://nih.gov)、[国立生物技术信息中心](http://ncbi.nlm.nih.gov)、[联邦存款保险公司](http://fdic.gov) 以及[洛希希德马丁](http://lockheedmartin.com)。
+在此之前，Azat 曾在华盛顿特区的政府机构开发过关键任务应用程序，包括[国立健康研究院](http://nih.gov)、[国立生物技术信息中心](http://ncbi.nlm.nih.gov)、[联邦存款保险公司](http://fdic.gov) 以及[洛克希德马丁](http://lockheedmartin.com)。
+
+
 
 Azat 是湾区地区技术聚会和黑客松的常客（[AngelHack](http://angelhack.com) 2012 年黑客松决赛选手，团队来自 [FashionMetric.com](http://fashionmetric.com)）。
 
-此外，Azat 还在 [General Assembly](http://generalassemb.ly)、[Hack Reactor](http://hackreactor.com)、[pariSOMA](http://parisoma.com) 和 [Marakana](http://marakana.com)（已被 Twitter 收购）教授技术课程并广受好。
+此外，Azat 还在 [General Assembly](http://generalassemb.ly)、[Hack Reactor](http://hackreactor.com)、[pariSOMA](http://parisoma.com) 和 [Marakana](http://marakana.com)（已被 Twitter 收购）教授技术课程并广受好评。
 
-在空余时间，他在自己的博客 [webAppLog.com](http://webapplog.com) 上编写技术文章，该博客在 Google “express.js tutorial”搜索中排名第一（http://expressjsguide.com/assets/img/expressjs-tutorial.png）。Azat 还是 [Express.js Guide](http://expressjsguide.com)、[Rapid Prototyping with JS](http://rpjs.co) 和 [Oh My JS](http://leanpub.com/ohmyjs) 的作者，以及开源项目 [ExpressWorks](http://npmjs.org/expressworks)、[mongoui](http://npmjs.org/mongoui) 和 [HackHall](http://npmjs.org/hackhall) 的创建者。
+在空余时间，他在自己的博客 [webAppLog.com](http://webapplog.com) 上编写技术文章，该博客在 Google "express.js tutorial" 搜索中排名第一（http://expressjsguide.com/assets/img/expressjs-tutorial.png）。Azat 还是 [Express.js Guide](http://expressjsguide.com)、[Rapid Prototyping with JS](http://rpjs.co) 和 [Oh My JS](http://leanpub.com/ohmyjs) 的作者，以及开源项目 [ExpressWorks](http://npmjs.org/expressworks)、`mongoui` 和 `HackHall` 的创建者。
 
 # 快速入门
 
@@ -284,11 +296,11 @@ Azat 是湾区地区技术聚会和黑客松的常客（[AngelHack](http://angel
 
 **摘要**：HTML、CSS 和 JavaScript 语法的概述；敏捷开发方法的简要介绍；云计算、Node.js 和 MongoDB 的优势；HTTP 请求/响应的描述。
 
-> “我认为每个人都应该学习编程，因为它教会你如何思考。我将计算机科学视为人文艺术，是每个人应该学习的。” —— 史蒂夫乔布
+> "我认为每个人都应该学习编程，因为它教会你如何思考。我将计算机科学视为人文艺术，是每个人应该学习的。" —— 史蒂夫乔布
 
 ### 1.1 前端定义
 
-### 1.1.1 整体视图
+#### 1.1.1 整体视图
 
 Web 和移动应用程序开发的整体视图包括以下步骤：
 
@@ -307,16 +319,11 @@ Web 和移动应用程序开发的整体视图包括以下步骤：
 * 使用 Objective-C 和 Java 构建的原生 iOS、Android、Blackberry 应用
 * 使用 JavaScript 在 [Appcelerator](http://www.appcelerator.com/) 或类似工具构建的应用，然后编译成原生 Objective-C 或 Java
 * 针对较小屏幕的响应式设计移动网站，使用 CSS 框架（如 [Twitter Bootstrap](https://twitter.github.io/bootstrap/) 或 [Foundation](http://foundation.zurb.com/)）、普通 CSS 或不同的模板
+* HTML5 应用由 HTML、CSS 和 JavaScript 组成，通常使用 [Sencha Touch](http://www.sencha.com/products/touch/)、[Trigger.io](https://trigger.io/)、[JO](http://joapp.com/) 等框架构建，然后使用 [PhoneGap](http://phonegap.com/) 封装成原生应用
 
+#### 1.1.2 超文本标记语言
 
-
-
-
-*   HTML5 应用由 HTML、CSS 和 JavaScript 组成，通常使用 [Sencha Touch](http://www.sencha.com/products/touch/)、[Trigger.io](https://trigger.io/)、[JO](http://joapp.com/) 等框架构建，然后使用 [PhoneGap](http://phonegap.com/) 封装成原生应用
-
-### 1.1.2 超文本标记语言
-
-超文本标记语言（或 `HTML`）本身并不是一种编程语言。它是一组标记标签，用于描述内容并以结构化和格式化的方式呈现。HTML 标签由尖括号（`<>`）内部的 `tag name` 组成。大多数情况下，标签包围内容，结束标签在标签名称前有一个 `forward slash`（正斜杠）。
+超文本标记语言（或 HTML）本身并不是一种编程语言。它是一组标记标签，用于描述内容并以结构化和格式化的方式呈现。HTML 标签由尖括号（`<>`）内部的 `tag name` 组成。大多数情况下，标签包围内容，结束标签在标签名称前有一个 `forward slash`（正斜杠）。
 
 在这个示例中，每行都是一个 HTML 元素：
 
@@ -326,7 +333,7 @@ Web 和移动应用程序开发的整体视图包括以下步骤：
 3 <link rel="stylesheet" type="text/css" href="style.css" />
 ```
 
-一个 一个 HTML 文档本身是 `html` 标签的一个元素，所有其他元素都是该 `html` 标签的子元素：
+一个 HTML 文档本身是 `html` 标签的一个元素，所有其他元素都是该 `html` 标签的子元素：
 
 ```
  1 <!DOCTYPE html>
@@ -345,57 +352,57 @@ HTML 有不同的种类和版本，例如 DHTML、XHTML 1.0、XHTML 1.1、XHTML 
 
 任何 HTML 元素都可以拥有属性。其中最重要的有：`class`、`id`、`style`、`data-name`、`onclick` 以及其他事件属性。
 
-### class
+##### class
 
-Class 属性定义了一个用于 CSS 样式设置或 DOM 操作的类，例如：
+`class` 属性定义了一个用于 CSS 样式设置或 DOM 操作的类，例如：
 
 ```
 1 <p class="normal">...</p>
 ```
 
-### id
+##### id
 
-Id 属性定义了一个 ID，其目的与元素类相似，但必须是唯一的，例如：
+`id` 属性定义了一个 ID，其目的与元素类相似，但必须是唯一的，例如：
 
 ```
 1 <div id="footer">...</div>
 ```
 
-### style
+##### style
 
-Style 属性定义了内联 CSS 来样式化元素，例如：
+`style` 属性定义了内联 CSS 来样式化元素，例如：
 
 ```
 1 <font style="font-size:20px">...</font>
 ```
 
-### title
+##### title
 
-Title 属性指定了额外信息，这些信息通常由大多数浏览器在工具提示中显示，例如：
+`title` 属性指定了额外信息，这些信息通常由大多数浏览器在工具提示中显示，例如：
 
 ```
 1 <a title="对答案点赞">...</a>
 ```
 
-### data-name
+##### data-name
 
-Data-name 属性允许在 DOM 中存储元数据，例如：
+`data-name` 属性允许在 DOM 中存储元数据，例如：
 
 ```
 1 <tr data-token="fa10a70c-21ca-4e73-aaf5-d889c7263a0e">...</tr>
 ```
 
-### onclick
+##### onclick
 
-Onclick 属性在点击事件发生时调用内联 JavaScript 代码，例如：
+`onclick` 属性在点击事件发生时调用内联 JavaScript 代码，例如：
 
 ```
 1 <input type="button" onclick="validateForm();">...</a>
 ```
 
-### onmouseover
+##### onmouseover
 
-Onmouseover 属性与 `onclick` 类似，但用于鼠标悬停事件，例如：
+`onmouseover` 属性与 `onclick` 类似，但用于鼠标悬停事件，例如：
 
 ```
 1 <a onmouseover="javascript: this.setAttribute('css','color:red')">...</a>
@@ -403,36 +410,36 @@ Onmouseover 属性与 `onclick` 类似，但用于鼠标悬停事件，例如：
 
 其他用于内联 JavaScript 代码的 HTML 元素属性有：
 
-*   `onfocus`: 当浏览器聚焦于元素时
-*   `onblur`: 当浏览器焦点离开元素时
-*   `onkeydown`: 当用户按下键盘键时
-*   `ondblclick`: 当用户双击鼠标时
-*   `onmousedown`: 当用户按下鼠标按钮时
-*   `onmouseup`: 当用户释放鼠标按钮时
-*   `onmouseout`: 当用户鼠标移出元素区域时
-*   `oncontextmenu`: 当用户弹出菜单时
+* `onfocus`: 当浏览器聚焦于元素时
+* `onblur`: 当浏览器焦点离开元素时
+* `onkeydown`: 当用户按下键盘键时
+* `ondblclick`: 当用户双击鼠标时
+* `onmousedown`: 当用户按下鼠标按钮时
+* `onmouseup`: 当用户释放鼠标按钮时
+* `onmouseout`: 当用户鼠标移出元素区域时
+* `oncontextmenu`: 当用户弹出菜单时
 
-此类事件的完整列表和浏览器兼容表可以在[事件兼容性表](http://www.quirksmode.org/dom/events/index.html)。
+此类事件的完整列表和浏览器兼容表可以在[事件兼容性表](http://www.quirksmode.org/dom/events/index.html)中找到。
 
 我们将在 Twitter Bootstrap 框架中大量使用类（classes），而使用内联 CSS 和 JavaScript 代码通常是一个坏主意，因此我们将尝试避免这样做。然而，了解 JavaScript 事件的名称是有好处的，因为它们在 jQuery、Backbone.js 以及当然原生 JavaScript 中随处可见。要将属性列表转换为 JS 事件列表，只需删除前缀 `on`，例如 `onclick` 属性意味着 `click` 事件。
 
 更多信息请访问 [示例：捕获鼠标点击](https://developer.mozilla.org/en-US/docs/JavaScript/Getting_Started#Example:_Catching_a_mouse_click)、[Wikipedia](http://en.wikipedia.org/wiki/HTML) 和 [w3schools](http://www.w3schools.com/html/html_intro.asp)。
 
-### 1.1.3 层叠样式表
+#### 1.1.3 层叠样式表
 
 层叠样式表（或 CSS）是一种格式化和呈现内容的方法。HTML 文档可以通过 `link` 标签包含外部样式表（如之前的示例所示），也可以直接在 `style` 标签中包含 CSS 代码：
 
 ```
 1 <style>
 2   body {
- 3     padding:60px; /* 简单的内边距 */
- 4   }
- 5 </style>
+3     padding:60px; /* 简单的内边距 */
+4   }
+5 </style>
 ```
 
 CSS 是 CSS 的升级，包含了新的方法，如圆角、边框和渐变。
 
-### 1.1.4 JavaScript
+#### 1.1.4 JavaScript
 
 JavaScript 始于 1995 年的 Netscape，最初名为 LiveScript。它与 Java 的关系就像仓鼠和火腿（ham）的关系一样。如今，JavaScript 同时用于客户端和服务器端，也用于桌面应用程序。
 
@@ -455,9 +462,9 @@ JavaScript 始于 1995 年的 Netscape，最初名为 LiveScript。它与 Java �
 
 运行 JavaScript 的其他方法包括：
 
-*   上文已介绍的内联方法
-*   WebKit 浏览器开发者工具和 FireBug 控制台
-*   交互式 Node.js 终端
+* 上文已介绍的内联方法
+* WebKit 浏览器开发者工具和 FireBug 控制台
+* 交互式 Node.js 终端
 
 JavaScript 语言的优点之一是它是松类型的。这种松/弱类型（与 C 和 Java 等语言中的[强类型](http://en.wikipedia.org/wiki/Strong_typing)相比）使得 JavaScript 成为更好的原型设计语言。以下是一些主要的 JavaScript 对象/类类型（它们上并不是真正的类；对象继承自对象）：
 
@@ -473,17 +480,13 @@ var num = 1;
 
 [Number](https://developer.mozilla.org/en-US/docs/JavaScript/Reference/Global_Objects/Number) 对象及其方法，例如：
 
-
-
-
-
 ```
 1 var numObj = new Number("123"); //Number object
 2 var num = numObj.valueOf(); //number primitive
 3 var numStr = numObj.toString(); //string representation
 ```
 
-### 字符串原始类型
+**字符串原始类型**
 
 单引号或双引号内的字符序列，例如：
 
@@ -494,7 +497,7 @@ var num = 1;
 
 为了方便起见，JS 会自动为字符串类型包装 `String` 对象方法，但[它们并不完全相同](https://developer.mozilla.org/en-US/docs/JavaScript/Reference/Global_Objects/String#Distinction_between_string_primitives_and_String_objects)。
 
-### 字符串对象
+**字符串对象**
 
 字符串对象有很多用的方法，如 `length`、`match` 等，例如：
 
@@ -505,7 +508,7 @@ var num = 1;
 4 str.match(/ab/); // 两种调用都会生效
 ```
 
-### 正则表达式对象
+**正则表达式对象**
 
 正则表达式（`RegExps`）是用于字符串查找匹配、替换、测试的字符模式：
 
@@ -514,7 +517,7 @@ var num = 1;
 2 str.match(/ab/); 
 ```
 
-### 特殊类型
+**特殊类型**
 
 当你对其有疑问时，可以随时调用 `typeof obj`。这里是 JS 中用到的一些特殊类型：
 
@@ -523,7 +526,7 @@ var num = 1;
 * `undefined`
 * `function`
 
-### 全局变量
+**全局变量**
 
 你可以在代码的任何地方调用这些方法，因为它们是全局方法：
 
@@ -540,7 +543,7 @@ var num = 1;
 * `Infinity`
 * `Intl`
 
-### JSON
+**JSON**
 
 `JSON` 库允许我们解析和序列化 JavaScript 对象，例如：
 
@@ -549,7 +552,7 @@ var num = 1;
 2 var stringObj = JSON.stringify({a:1,b:"hi"});
 ```
 
-### 数组对象
+**数组对象**
 
 [数组](https://developer.mozilla.org/en-US/docs/JavaScript/Reference/Global_Objects/Array)是基于零索引的列表。例如，创建一个数组：
 
@@ -560,7 +563,7 @@ var num = 1;
 
 `Array` 对象有很多很好的方法，如 `indexOf`、`slice`、`join`。确保你熟悉它们，因为如果用得当，它们将节省大量时间。
 
-### 数据对象
+**对象**
 
 ```
 1 var obj = {name: "Gala", url:"img/gala100x100.jpg",price:129}
@@ -574,7 +577,7 @@ var num = 1;
 
 更多关于继承模式请见下方。
 
-### 布尔值原始类型和对象
+**布尔值原始类型和对象**
 
 与 String 和 Number 相同，[Boolean](https://developer.mozilla.org/en-US/docs/JavaScript/Reference/Global_Objects/Boolean)既可以是原始类型也可以是对象。
 
@@ -584,7 +587,7 @@ var num = 1;
 3 var boolObj = new Boolean(false);
 ```
 
-### Date 对象
+**Date 对象**
 
 [Date](https://developer.mozilla.org/en-US/docs/JavaScript/Reference/Global_Objects/Date) 对象允许我们处理日期和时间，例如：
 
@@ -593,7 +596,7 @@ var num = 1;
 2 var d = new Date(); //Sun May 12 2013 18:17:11 GMT-0700 (PDT)
 ```
 
-### Math 对象
+**Math 对象**
 
 数学常量和[函数](https://developer.mozilla.org/en-US/docs/JavaScript/Reference/Global_Objects/Math)，例如：
 
@@ -602,7 +605,7 @@ var num = 1;
 2 var ran = Math.round(Math.random()*100);
 ```
 
-### 浏览器对象
+**浏览器对象**
 
 让我们访问浏览器及其属性（如 URL），例如：
 
@@ -611,13 +614,15 @@ var num = 1;
 2 console.log("test");
 ```
 
-### DOM 对象
+**DOM 对象**
 
 ```
 1 document.write("Hello World");
 2 var table = document.createElement('table');
 3 var main = document.getElementById('main');
 ```
+
+
 
 | ![warning](img/leanpub_warning.png) |  
 
@@ -629,9 +634,6 @@ JavaScript 和 DOM 对象的完整参考可以在 [Mozilla Developer Network](ht
 
 关于 JS 资源（如 ECMA 规范），请查看此列表 [JavaScript 语言资源](https://developer.mozilla.org/en-US/docs/JavaScript/Language_Resources)。截至本文编写，最新的 JavaScript 规范是 ECMA-262 第 5.1 版：[PDF](http://www.ecma-international.org/publications/files/ECMA-ST/Ecma-262.pdf) 和 [HTML](http://www.ecma-international.org/ecma-262/5)。
 
-
-
-
 3. 如果需要，重构代码，并在保持测试用例通过的同时添加功能。
 
 4. 重复此步骤直到完成所有任务。
@@ -641,12 +643,14 @@ JavaScript 和 DOM 对象的完整参考可以在 [Mozilla Developer Network](ht
 测试驱动开发（Test-Driven Development）的优势：
 
 * 更少的错误/缺陷
+
 * 更高效的代码库
+
 * 对代码能够正常运行且不破坏旧功能充满信心
 
 ### 1.2.3 持续部署与集成
 
-持续部署（Continuous Deployment，简称 `CD`）是一系列向客户快速交付新功能、错误修复和增强的技术。CD` 包含了自动化测试和自动化部署。通过利用持续部署，可以减少人工开销并最大限度地缩短反馈循环时间。基本上，开发者越快地从客户那里获得反馈，产品就能越早进行调整，从而在竞争中获得更多优势。与许多企业和大型公司典型的 6 到 12 个月的发布周期相比，许多初创公司每天内会部署多次。
+持续部署（Continuous Deployment，简称 `CD`）是一系列向客户快速交付新功能、错误修复和增强的技术。`CD` 包含了自动化测试和自动化部署。通过利用持续部署，可以减少人工开销并最大限度地缩短反馈循环时间。基本上，开发者越快地从客户那里获得反馈，产品就能越早进行调整，从而在竞争中获得更多优势。与许多企业和大型公司典型的 6 到 12 个月的发布周期相比，许多初创公司每天内会部署多次。
 
 持续部署方法的优势：缩短了反馈循环时间和人工工作开销。
 
@@ -655,7 +659,9 @@ JavaScript 和 DOM 对象的完整参考可以在 [Mozilla Developer Network](ht
 一些流行的持续集成解决方案：
 
 * [Jenkins](http://jenkins-ci.org/): 一个可扩展的开源持续集成服务器
+
 * [CircleCI](https://circleci.com/): 交付更好、更快速的代码
+
 * [Travis CI](https://travis-ci.org/): 为开源社区提供的托管持续集成服务
 
 ### 1.2.4 结对编程
@@ -665,6 +671,7 @@ JavaScript 和 DOM 对象的完整参考可以在 [Mozilla Developer Network](ht
 结对编程的优势：
 
 * 结使得代码库更短、更高效，并引入了更少的错误和缺陷。
+
 * 作为额外奖励，知识在程序员共同工作时会在他们之间传递。然而，开发者之间可能会出现冲突的情况，而且这完全并不罕见。
 
 ### 1.3 后端定义
@@ -680,8 +687,11 @@ Node.js 本身像 Ruby on Rails 那样的框架；它更类似于 PHP+Apache 的
 使用 Node.js 的优势：
 
 * 由于 JavaScript 是 Web 和移动开发的事实标准，开发者极有可能熟悉 JavaScript 语言。
+
 * 使用一种语言进行前端和后端开发加速了编码过程。开发者的大脑不需要在不同语法之间切换，即所谓的“上下文切换”。对方法和类的学习速度更快。
+
 * 通过 Node.js，你可以快速进行原型设计，并尽早进入市场进行客户开发和客户获取。对于其他使用不敏捷技术（例如 PHP 和 MySQL）的公司来说，这是一个重要的竞争优势。
+
 * Node.js 的设计初衷是利用 web-sockets 支持实时应用程序。
 
 欲了解更多信息，请访问 [Wikipedia](http://en.wikipedia.org/wiki/Nodejs)、[Nodejs.org](http://nodejs.org/about/) 以及 [ReadWrite](http://readwrite.com/2011/01/25/wait-whats-nodejs-good-for-aga) 和 [O’Reilly](http://radar.oreilly.com/2011/07/what-is-node.html) 上的文章。
@@ -695,7 +705,9 @@ MongoDB 源自 hu**MONGO**us，是一种用于处理海量数据的高性能无�
 使用 MongoDB 的优势：
 
 * 可扩展性：由于其分布式特性，多个服务器和数据中心可以拥有冗余数据。
+
 * 高性能：MongoDB 在存储和检索数据方面非常有效，这部分归功于数据库中元素和集合之间没有关系。
+
 * 灵活性：键值存储是原型设计的理想选择，因为它不需要模式架构（schema）。
 
 ### 1.3.3 云计算
@@ -703,16 +715,23 @@ MongoDB 源自 hu**MONGO**us，是一种用于处理海量数据的高性能无�
 云计算包括：
 
 * 基础设施即服务（IaaS），例如 Rackspace、Amazon Web Services
+
 * 平台即服务（PaaS），例如 Heroku、Windows Azure
+
 * 后端即服务（BaaS），例如 Parse.com、Firebase
+
 * 软件即服务（SaaS），例如 Google Apps、Salesforce.com
 
 云应用提供：
 
 * 可扩展性：例如在几分钟内创建新实例
+
 * 部署便利：例如推送到 Heroku 只需使用 `git push`
+
 * 按需付费计划：用户根据需求增加或减少内存和磁盘空间
+
 * 插件：方便安装和配置数据库、应用服务器
+
 * 安全
 
 PaaS 和 BaaS 是原型设计、构建最小可行性产品（MVP）以及早期初创公司的理想选择。
@@ -722,12 +741,15 @@ PaaS 和 BaaS 是原型设计、构建最小可行性产品（MVP）以及早期
 每个 HTTP 请求和响应包含以下组件：
 
 1. 头部（Header）：关于编码、主体长度、源、内容类型等信息。
+
 2. 主体（Body）：内容，通常是传递给服务器或返回给客户端的数据。
 
 此外，HTTP 请求包含：
 
 * 方法（Method）：有几种方法，最常见的 `GET`、`POST`、`PUT` 和 `DELETE`
+
 * URL：主机、端口、路径，例如 `https://graph.facebook.com/498424660219540`
+
 * 查询字符串（Query string）：URL 中问号之后的所有内容（例如 `?q=rpjs&page=20`）
 
 ### 1.3.5 RESTful API
@@ -737,23 +759,27 @@ RESTful（表现层状态转移）API 由于分布式系统的需求——每次
 RESTful API 的独特特征：
 
 * 由于不同组件可以独立部署到不同的服务器，因此具有更好的可扩展性支持
+
 * 由于更简单的动词和名词结构，取代了简单对象访问协议（SOAP）
 
-
-
-
-
-*   利用 HTTP 方法：`GET`, `POST`, `DELETE`, `PUT`, `OPTIONS` 等。
+* 利用 HTTP 方法：`GET`, `POST`, `DELETE`, `PUT`, `OPTIONS` 等。
 
 以下是一个用于消息集合（Message Collection）的简单增删改查（CRUD）REST API 示例：
 
 | 方法 |  | | 含义 |
+
 | --- | --- | --- |
+
 | GET | `/messages.json` | 以 JSON 格式返回消息列表 |
+
 | PUT | `/messages.json` | 更新/替换所有消息并以 JSON 格式返回状态/错误 |
+
 | POST | `/messages.json` | 创建新消息并以 JSON 格式返回其 id |
+
 | GET | `/messages/{id}.json` | 以 JSON 格式返回 id 为 `{id}` 的消息 |
+
 | PUT | `/messages/{id}.json` | 更新/替换 id 为 `{id}` 的消息，如果 `{id}` 消息不存在则创建它 |
+
 | DELETE | `/messages/{id}.json` | 删除 id 为 `{id}` 的消息，以 JSON 格式返回状态/错误 |
 
 REST 不是一种协议；它是一种架构，从这个意义上说，它比协议 SOAP 更灵活。因此，如果我们想支持这些格式，REST API 的 URL 可以看起来像 `/messages/list.html` 或 `/messages/list.xml`。
@@ -831,12 +857,17 @@ Chrome 开发者工具。
 
 Firebug 和开发者工具允许开发者执行许多事情，例如：
 
-*   调试 JavaScript
-*   操纵 HTML 和 DOM 元素
-*   即时修改 CSS
-*   监控 HTTP 请求和响应
-*   运行分析并检查堆转储
-*   查看已加载的资源，如图像、CSS 和 JS 文件
+* 调试 JavaScript
+
+* 操纵 HTML 和 DOM 元素
+
+* 即时修改 CSS
+
+* 监控 HTTP 请求和响应
+
+* 运行分析并检查堆转储
+
+* 查看已加载的资源，如图像、CSS 和 JS 文件
 
 ![掌握 Web 开发者工具的 Google 教程。(images/screenshots----dev-tools-tutorials.png)
 
@@ -844,9 +875,11 @@ Firebug 和开发者工具允许开发者执行许多事情，例如：
 
 优秀的 Chrome DevTools 教程：
 
-*   [探索并掌握 Chrome DevTools](http://discover)
-*   [Chrome DevTools](http://www.google.com)
-*   [Chrome DevTools](https://developers.google.com/)
+* [探索并掌握 Chrome DevTools](http://discover)
+
+* [Chrome DevTools](http://www.google.com)
+
+* [Chrome DevTools](https://developers.google.com/)
 
 ### 2.1.3 IDE 和编辑器
 
@@ -854,12 +887,17 @@ Firebug 和开发者工具允许开发者执行许多事情，例如：
 
 以下是 Web 开发中常用的编辑器和 IDE 列表：
 
-*   [TextMate](http://macromates.com/)：仅限 Mac OS X，免费 30 天试用。
-*   [Sublime Text](http://www.sublimetext.com/)：提供 Mac 和 Windows 版本。
-*   [Coda](http://panic.com/)：内置 FTP 浏览器和预览的全功能编辑器。
-*   [Aptana Studio](http://aptana.com/)：内置终端和许多工具的全尺寸 IDE。
-*   [Notepad++](http://notepad-plus-plus.org/)：仅限 Windows 的轻量级编辑器。
-*   [WebStorm](http://www.jetbrains.com/webstorm/)：支持 Node.js 调试的功能丰富的 IDE。
+* [TextMate](http://macromates.com/)：仅限 Mac OS X，免费 30 天试用。
+
+* [Sublime Text](http://www.sublimetext.com/)：提供 Mac 和 Windows 版本。
+
+* [Coda](http://panic.com/)：内置 FTP 浏览器和预览的全功能编辑器。
+
+* [Aptana Studio](http://aptana.com/)：内置终端和许多工具的全尺寸 IDE。
+
+* [Notepad++](http://notepad-plus-plus.org/)：仅限 Windows 的轻量级编辑器。
+
+* [WebStorm](http://www.jetbrains.com/webstorm/)：支持 Node.js 调试的功能丰富的 IDE。
 
 ![WebStorm IDE 首页。(images/screenshots----webstorm.png)
 
@@ -867,39 +905,41 @@ WebStorm IDE 首页。
 
 ### 2.1.4 版本控制系统
 
+
+
 [版本控制系统](http://en.wikipedia.org/wiki/Revision_control)即使在单人开发的情况下也是必不可少的。此外，许多云服务（例如 Heroku）需要 Git 进行部署。我们也强烈建议习惯 Git 和 Git 终端命令，而不是使用图形界面的 Git 客户端/应用：[GitX](http://gitx.frim.nl/)、[Gitbox](http://www.gitboxapp.com/) 或 [GitHub for Mac](http://mac.github.com/)。Subversion 是一种非分布式版本控制系统。这篇文章对比了 [Git 与 Subversion](https://git.wiki.kernel.org/index.php/GitSvnComparison)。是在机器上安装和设置 Git 的步骤：
 
-1.  从 [`git-scm.com/downloads`](http://git-scm.com/downloads) 下载适用于你系统的最新版本![下载最新版本的 Git。(images/screenshots----git-install.png)
+1. 从 [`git-scm.com/downloads`](http://git-scm.com/downloads) 下载适用于你系统的最新版本。
 
-    下载最新版本的 Git。
+![下载最新版本的 Git。](images/screenshots----git-install.png)
 
-2.  从下载的 `*.dmg` 软件包安装 Git，即运行 `*.pkg` 文件并按照向导操作。
+下载最新版本的 Git。
 
+2. 从下载的`*.dmg`软件包安装 Git，即运行`*.pkg`文件并按照向导操作。
 
+3. 在 OS X 上，使用`Command + Space`（又称为 Spotlight，请看下面的截图）查找终端应用程序。对于 Windows，你可以使用 [PuTTY](http://www.chiark.greenend.org.uk/~sgtatham/putty/) 或 [Cygwin](http://www.cygwin.com/)。
 
-
-
-3. 在 OS X 上，使用 `Command + Space`（又称为 Spotlight，请看下面的截图）查找终端应用程序。对于 Windows，你可以使用 [PuTTY](http://www.chiark.greenend.org.uk/~sgtatham/putty/) 或 [Cygwin](http://www.cygwin.com/)。![使用 Spotlight 查找并运行应用程序。](img/screenshots----spotlight.png)
+![使用 Spotlight 查找并运行应用程序。](img/screenshots----spotlight.png)
 
 使用 Spotlight 查找并运行应用程序。
 
-4. 在你的终端中输入以下命令，将 `John Doe` 和 `johndoe@example.com` 替换为你的名字和邮箱：
+4. 在你的终端中输入以下命令，将`John Doe`和`johndoe@example.com`替换为你的名字和邮箱：
 
 ```
-1  $ git config --global user.name "John Doe"				
-2  $ git config --global user.email johndoe@example.com 
+$ git config --global user.name "John Doe"
+$ git config --global user.email johndoe@example.com
 ```
 
 5. 要检查安装情况，运行命令：
 
 ```
-1  $ git version
+$ git version
 ```
 
 6. 你应该在终端窗口中看到类似的内容（你的版本可能有所不同；在例子中是 1.8.3.2）：
 
 ```
-1  git version 1.8.3.2
+git version 1.8.3.2
 ```
 
 ![配置并测试 Git 安装。](img/screenshots----git-configure.png)
@@ -908,7 +948,7 @@ WebStorm IDE 首页。
 
 生成 SSH 密钥并上传到 SaaS/PaaS 网站将在稍后介绍。
 
-### 2.1.5 本地 HTTP 服务器
+## 2.1.5 本地 HTTP 服务器
 
 虽然可以在没有本地 HTTP 服务器的情况下完成大部分前端开发，但在通过 HTTP 请求/AJAX 调用加载文件时需要它。此外，通常情况下使用本地 HTTP 服务器是一个良好的习惯。这样，你的开发环境就可以尽可能接近生产环境。你可能想要考虑对 Apache Web 服务器进行以下修改：
 
@@ -922,88 +962,84 @@ MAMP Mac 主页。
 
 MAMP、MAMP Stack 和 XAMPP 拥有直观的图形用户界面 (GUI)，允许你更改配置和 hosts 设置。
 
-| ![information](img/leanpub_information.png) |  
-
 ### 注意
 
-Node.js 与许多其他后端技术一样，拥有用于开发的自己的服务器。 |
+Node.js 与许多其他后端技术一样，拥有用于开发的自己的服务器。
 
-### 2.1.6 数据库：MongoDB
+## 2.1.6 数据库：MongoDB
 
-以下步骤更适用于基于 Max OS X/Linux 的系统，但通过某些修改也可以用于 Windows 系统，即 `$PATH` 变量——第 3 步。下面我们描述了从官方包安装 MongoDB，因为我们发现这种方法更稳健且冲突更少。然而，还有许多[在 Mac 上安装它的方法](http://docs.mongodb.org/manual/tutorial/install-mongodb-on-os-x/)，例如使用 Brew，以及在[其他系统](http://docs.mongodb.org/manual/installation/)上。
+以下步骤更适用于基于 Max OS X/Linux 的系统，但通过某些修改也可以用于 Windows 系统，即`$PATH`变量——第 3 步。下面我们描述了从官方包安装 MongoDB，因为我们发现这种方法更稳健且冲突更少。然而，还有许多[在 Mac 上安装它的方法](http://docs.mongodb.org/manual/tutorial/install-mongodb-on-os-x/)，例如使用 Brew，以及在[其他系统](http://docs.mongodb.org/manual/installation/)上。
 
 1. 可以在 [`www.mongodb.org/downloads`](http://www.mongodb.org/downloads) 下载 MongoDB。对于最新的 Apple 笔记本电脑（如 MacBook Air），选择 OS X 64-bit 版本。旧款 Mac 用户应该浏览链接 [`dl.mongodb.org/dl/osx/i386`](http://dl.mongodb.org/dl/osx/i386)。
 
-| ![tip](img/leanpub_tip.png) |  
-
 ### 提示
 
-要确定处理器的架构类型，请在命令行输入 `$uname -p`。 |
+要确定处理器的架构类型，请在命令行输入`$uname -p`。
 
-1. 将包解压到你的 Web 开发文件夹（`~/*Documents/Development*` 或其他位置）。如果你愿意，可以将 MongoDB 安装到 `/usr/local/mongodb` 文件夹。
+2. 将包解压到你的 Web 开发文件夹（`~/*Documents/Development*` 或其他位置）。如果你愿意，可以将 MongoDB 安装到`/usr/local/mongodb`文件夹。
 
-2. **可选**：如果你想在系统的任何地方访问 MongoDB 命令，你需要将 `mongodb` 路径添加到 `$PATH` 变量中。对于 Mac OS X，使用以下命令打开系统路径文件：
+3. **可选**：如果你想在系统的任何地方访问 MongoDB 命令，你需要将`mongodb`路径添加到`$PATH`变量中。对于 Mac OS X，使用以下命令打开系统路径文件：
 
 ```
-1  sudo vi /etc/paths
+sudo vi /etc/paths
 ```
 
 或者，如果你更喜欢使用 TextMate：
 
 ```
-1  mate /etc/paths 
+mate /etc/paths
 ```
 
-并将此行添加到 `/etc/paths` 文件中：
+并将此行添加到`/etc/paths`文件中：
 
 ```
-1  /usr/local/mongodb/bin
+/usr/local/mongodb/bin
 ```
 
-3. 创建数据文件夹；默认情况下，MongoDB 使用 `/data/db`。请注意，这在新版本的 MongoDB 中可能会不同。要创建它，请在终端输入并执行以下命令：
+4. 创建数据文件夹；默认情况下，MongoDB 使用`/data/db`。请注意，这在新版本的 MongoDB 中可能会不同。要创建它，请在终端输入并执行以下命令：
 
 ```
-1  $ sudo mkdir -p /data/db
-2  $ sudo chown `id -u` /data/db
+$ sudo mkdir -p /data/db
+$ sudo chown `id -u` /data/db
 ```
 
 ![MongoDB 初始化设置：创建数据目录。](img/screenshots----mongodb-data.png)
 
 MongoDB 初始化设置：创建数据目录。
 
-如果你喜欢使用 `/data/db` 以外的路径，可以使用 `--dbpath` 选项对 `mongod`（MongoDB 主服务）进行指定。
+如果你喜欢使用`/data/db`以外的路径，可以使用`--dbpath`选项对`mongod`（MongoDB 主服务）进行指定。
 
-4. 进入包含 `bin` 的文件夹。从那里输入以下：
+5. 进入包含`bin`的文件夹。从那里输入以下：
 
 ```
-1  $ ./mongod
+$ ./mongod
 ```
 
 ![启动 MongoDB。](img/screenshots----start.png)
 
 启动 MongoDB。
 
-5. 如果你看到
+6. 如果你看到
 
 ```
-1  waiting for connections
+waiting for connections
 ```
 
-这意味着服务器正在运行。关闭进程使用 `control + c`。如果你使用 `control + z`，它会将进程挂起（分离终端窗口）；在这种情况下，你可能会导致文件锁定，并且必须使用 kill 命令或活动监视器手动删除锁定文件。在原生终端中使用 `command + .`。
+这意味着服务器正在运行。关闭进程使用`control + c`。如果你使用`control + z`，它会将进程挂起（分离终端窗口）；在这种情况下，你可能会导致文件锁定，并且必须使用 kill 命令或活动监视器手动删除锁定文件。在原生终端中使用`command + .`。
 
-6. 在同一文件夹打开另一个终端并执行：
+7. 在同一文件夹打开另一个终端并执行：
 
 ```
-1  $mongo
+$mongo
 ```
 
 它应该显示类似的内容（我们使用的是 v0.6，但你的版本可能有所不同）：
 
-7. 然后输入并执行：
+8. 然后输入并执行：
 
 ```
-1  > db.test.save({ a: 1 })
-2  > db.test.find()
+> db.test.save({ a: 1 })
+> db.test.find()
 ```
 
 如果你看到记录已保存，说明一切正常：
@@ -1012,53 +1048,46 @@ MongoDB 初始化设置：创建数据目录。
 
 运行 MongoDB 客户端并存储。
 
-`find` 和 `save` 命令的作用正如你想象的那样。详细说明可以在 MongoDB 找到：[在 OS X 上安装 MongoDB](http://docs.mongodb.org/manual/tutorial/install-mongodb-on-os-x)。对于 Windows 用户，有一个很好的教程：[http://www.tuanle.com/blog/2011/10/installing/]。
-
-| ![information](img/leanpub_information.png) |  
+`find`和`save`命令的作用正如你想象的那样。详细说明可以在 MongoDB 找到：[在 OS X 上安装 MongoDB](http://docs.mongodb.org/manual/tutorial/install-mongodb-on-os-x)。对于 Windows 用户，有一个很好的教程：[http://www.tuanle.com/blog/2011/10/installing/]。
 
 ### 注意
 
-MAMP 和 XAMPP 应用程序带有 MySQL——开源传统数据库，以及 phpMyAdmin——MySQL 数据库的网络界面。 |
-
-| ![information](img/leanpub_information.png) |  
+MAMP 和 XAMPP 应用程序带有 MySQL——开源传统数据库，以及 phpMyAdmin——MySQL 数据库的网络界面。
 
 ### 注意
 
-在 Max OS X（以及大多数 Unix 系统）上，关闭进程使用 `control + c`。使用 `control + z`，它会将进程挂起（分离终端窗口）；在这种情况下，你可能会导致文件锁定，并且必须使用 kill 命令或活动监视器手动删除锁定文件。在原生终端中使用 `command + .` 是 `control + c` 的替代方案。 |
+在 Max OS X（以及大多数 Unix 系统）上，关闭进程使用`control + c`。使用`control + z`，它会将进程挂起（分离终端窗口）；在这种情况下，你可能会导致文件锁定，并且必须使用 kill 命令或活动监视器手动删除锁定文件。在原生终端中使用`command + .`是`control + c`的替代方案。
 
-### 2.1.7 其他组件
+## 2.1.7 其他组件
 
-#### 2.1.7.1 Node.js 安装
+### 2.1.7.1 Node.js 安装
 
-可以在 [`nodejs.org/#download`](http://nodejs.org/#download) 获取下载（请看下面的截图）。安装非常简单，即下载存档，运行 `*.pkg` 包安装程序。要检查 Node.js 的安装情况，你可以输入并执行：
+可以在 [`nodejs.org/#download`](http://nodejs.org/#download) 获取下载（请看下面的截图）。安装非常简单，即下载存档，运行`*.pkg`包安装程序。要检查 Node.js 的安装情况，你可以输入并执行：
 
 ```
-1 $ node -v
+$ node -v
 ```
 
 它应该显示类似的内容（我们使用的是 v0.8.1，但你的版本可能有所不同）：
 
-
-
-
-Node.js 安装包已经包含了 [Node 包管理器](https://npmjs.org) (NPM)。我们将广泛使用 `NPM` 来安装 Node.js 模块。
+Node.js 安装包已经包含了 [Node 包管理器](https://npmjs.org) (NPM)。我们将广泛使用`NPM`来安装 Node.js 模块。
 
 ![Node.js 首页。](img/screenshots----node.png)
 
 Node.js 首页。
 
-#### 2.1.7.2 JS 库
+### 2.1.7.2 JS 库
 
 前端 JavaScript 库是从它们各自的网站下载并解压的。这些文件通常存放在开发文件夹中（例如，`~/Documents/Development`）以备以后使用。通常，可以在经过压缩的生产版本（更多信息请见 *Intro to Backbone.js* 章节中的 AMD 和 Require.js 部分）和包含大量注释的开发版本之间进行选择。
 
 另一种方法是从 CDN 热链接这些脚本，例如 [Google 托管库](https://developers.google.com/speed/libraries/devguide), [CDNJS](http://cdnjs.com/), [Microsoft Ajax 内容分发网络](http://www.asp.net/ajaxlibrary/cdn.ashx) 等。通过这种方式，应用程序对某些用户来说运行得更快，但在没有互联网的情况下完全无法本地运行。
 
-*   `LESS` 作为前端解释器可以在 [lesscss.org](http://lesscss.org/) 获取 ——你可以将其解压到你的开发文件夹（`~/Documents/Development`）或任何地方。
-*   `Twitter Bootstrap` 是一个 CSS/LESS 框架。可以在 [twitter.github.com/bootstrap](http://twitter.github.com/bootstrap/) 获取。
-*   `jQuery` 可以在 [jquery.com](http://jquery.com) 获取。
-*   `Backbone.js` 可以在 [backbonejs.org](http://backbonejs.org) 获取。
-*   `Underscore.js` 可以在 [underscorejs.org](http://underscorejs.org) 获取。
-*   `Require.js` 可以在 [requirejs.org](http://requirejs.org) 获取。
+* `LESS` 作为前端解释器可以在 [lesscss.org](http://lesscss.org/) 获取 ——你可以将其解压到你的开发文件夹（`~/Documents/Development`）或任何地方。
+* `Twitter Bootstrap` 是一个 CSS/LESS 框架。可以在 [twitter.github.com/bootstrap](http://twitter.github.com/bootstrap/) 获取。
+* `jQuery` 可以在 [jquery.com](http://jquery.com) 获取。
+* `Backbone.js` 可以在 [backbonejs.org](http://backbonejs.org) 获取。
+* `Underscore.js` 可以在 [underscorejs.org](http://underscorejs.org) 获取。
+* `Require.js` 可以在 [requirejs.org](http://requirejs.org) 获取。
 
 ### 2.1.7.3 LESS App
 
@@ -1068,101 +1097,99 @@ Node.js 首页。
 
 Mac 版 LESS App 首页。
 
-### 2.2 云端设置
+## 2.2 云端设置
 
 ### 2.2.1 SSH 密钥
 
-SSH 密钥提供了安全连接，而无需每次输入用户名和密码。对于 GitHub 仓库，后者用于 HTTPS URL，例如 `https://github.com/azat-co/rpjs.git`；前者用于 SSH URL，例如 `git@github.com:azat-co/rpjs.git`。
+SSH 密钥提供了安全连接，而无需每次输入用户名和密码。对于 GitHub 仓库，后者用于 HTTPS URL，例如`https://github.com/azat-co/rpjs.git`；前者用于 SSH URL，例如`git@github.com:azat-co/rpjs.git`。
 
 在 Mac OS X/Unix 机器上为 GitHub 生成 SSH 密钥，请执行以下操作：
 
-1.  检查现有的 SSH 密钥
+1. 检查现有的 SSH 密钥
 
-    ```
-    1  $ cd ~/.ssh
-    2  $ ls -lah
-    ```
+```
+$ cd ~/.ssh
+$ ls -lah
+```
 
-2.  如果你看到类似 `id_rsa` 的文件（请参考下方的截图示例），你可以使用以下命令删除它们或将其备份到单独文件夹：
+2. 如果你看到类似`id_rsa`的文件（请参考下方的截图示例），你可以使用以下命令删除它们或将其备份到单独文件夹：
 
-    ```
-    1  $ mkdir key_backup
-    2  $ cp id_rsa* key_backup
-    3  $ rm id_rsa*
-    ```
+```
+$ mkdir key_backup
+$ cp id_rsa* key_backup
+$ rm id_rsa*
+```
 
-3.  现在我们可以使用 `ssh-keygen` 命令生成新的 SSH 密钥对，假设我们处于 `~/.ssh` 文件夹中：
+3. 现在我们可以使用`ssh-keygen`命令生成新的 SSH 密钥对，假设我们处于`~/.ssh`文件夹中：
 
-    ```
-    1  $ ssh-keygen -t rsa -C "your_email@youremail.com"
-    ```
+```
+$ ssh-keygen -t rsa -C "your_email@youremail.com"
+```
 
-4.  回答问题；最好保留默认名称：`id_rsa`。然后将 `id_rsa.pub` 文件的内容复制到剪贴板：
+4. 回答问题；最好保留默认名称：`id_rsa`。然后将`id_rsa.pub`文件的内容复制到剪贴板：
 
-    ```
-    1  $ pbcopy < ~/.ssh/id_rsa.pub
-    ```
+```
+$ pbcopy < ~/.ssh/id_rsa.pub
+```
 
-    ![为 SSH 生成 RSA 密钥并将公钥复制到剪贴板。](img/screenshots----ssh-copy.png)
+![为 SSH 生成 RSA 密钥并将公钥复制到剪贴板。](img/screenshots----ssh-copy.png)
 
-    为 SSH 生成 RSA 密钥并将公钥复制到剪贴板。
+为 SSH 生成 RSA 密钥并将公钥复制到剪贴板。
 
-5.  或者，在默认编辑器中打开 `id_rsa.pub` 文件：
+5. 或者，在默认编辑器中打开`id_rsa.pub`文件：
 
-    ```
-    1  $ open id_rsa.pub
-    ```
+```
+$ open id_rsa.pub
+```
 
-6.  或者在 TextMate 中：
+6. 或者在 TextMate 中：
 
-    ```
-    1  $ mate id_rsa.pub 
-    ```
+```
+$ mate id_rsa.pub
+```
 
 ### 2.2.2 GitHub
 
-1.  复制公钥后，访问 [github.com](http://github.com)，登录，进入账户设置，选择“SSH key”并添加新的 SSH 密钥。分配一个名称（例如你的计算机名称），并粘贴你的 `public` 密钥值。
+1. 复制公钥后，访问 [github.com](http://github.com)，登录，进入账户设置，选择“SSH key”并添加新的 SSH 密钥。分配一个名称（例如你的计算机名称），并粘贴你的`public`密钥值。
 
-2.  要检查你与 GitHub 的 SSH 连接，请在终端中输入并执行以下命令：
+2. 要检查你与 GitHub 的 SSH 连接，请在终端中输入并执行以下命令：
 
-    ```
-    1  $ ssh -T git@github.com
-    ```
+```
+$ ssh -T git@github.com
+```
 
-    如果你看到类似的内容：
+如果你看到类似的内容：
 
-    ```
-    1  Hi your-GitHub-username! You've successfully authenticated, 
-    2  but GitHub does not provide shell access.
-    ```
+```
+Hi your-GitHub-username! You've successfully authenticated,
+but GitHub does not provide shell access.
+```
 
-    那么一切都设置好了。
+那么一切都设置好了。
 
-3.  第一次连接到 GitHub 时，可能会收到“authenticity of host … can’t be established”警告。请不要被此类信息困扰 —— 只如下所示所示回答‘yes’即可继续。
+3. 第一次连接到 GitHub 时，可能会收到“authenticity of host … can’t be established”警告。请不要被此类信息困扰 —— 只如下所示所示回答‘yes’即可继续。
 
-    ![第一次测试到 GitHub 的 SSH 连接。(images/screenshots----github.png)
+![第一次测试到 GitHub 的 SSH 连接。](images/screenshots----github.png)
 
-    第一次测试到 GitHub 的 SSH 连接。
+第一次测试到 GitHub 的 SSH 连接。
 
-    由于某种原因你收到了不同的消息，请重复上一节 *SSH Keys* 中的第 3-4 步。
+由于某种原因你收到了不同的消息，请重复上一节 *SSH Keys* 中的第 3-4 步。
 
 ### 2.2.3 Heroku
 
 Heroku 是一个多语言敏捷应用部署平台 [`www.heroku.com/`](http://www.heroku.com/)。Heroku 的工作方式与 Windows Azure 类似，你可以使用 Git 进行部署。不需要为 MongoDB 安装虚拟机，因为 Heroku 有 [MongoHQ 插件](https://addons.heroku.com/mongohq)。
 
-| Windows Azure
-
-1.  在 [`heroku.com`](http://heroku.com) 注册。目前他们提供免费账户；要使用它，请将所有选项设置为最小 (0)，并将数据库设置为共享。
-
-2.  在 [`toolbelt.heroku.com`](https://toolbelt.heroku.com) 下载 Heroku Toolbelt。Toolbelt 是一个工具包，即包含 Heroku、Git 和 [Foreman](https://github.com/ddollar/foreman)。对于旧版 Mac 用户可以直接获取此[客户端](http://assets.heroku.com/heroku-client/heroku-client.tgz)。
-
-3.  安装完成后，你应该可以访问 **heroku** 命令。要检查它并登录 Heroku，请输入：
-
-    ```
-    1  $ heroku login
-    ```
+1. 在 [`heroku.com`](http://heroku.com) 注册。目前他们提供免费账户；要使用它，请将所有选项设置为最小 (0)，并将数据库设置为共享。
 
 
+
+2. 在 [`toolbelt.heroku.com`](https://toolbelt.heroku.com) 下载 Heroku Toolbelt。Toolbelt 是一个工具包，即包含 Heroku、Git 和 [Foreman](https://github.com/ddollar/foreman)。对于旧版 Mac 用户可以直接获取此[客户端](http://assets.heroku.com/heroku-client/heroku-client.tgz)。
+
+3. 安装完成后，你应该可以访问`heroku`命令。要检查它并登录 Heroku，请输入：
+
+```
+1  $ heroku login
+```
 
 它会要求你输入 Heroku 凭据（用户名和密码），如果你已经创建了 SSH 密钥，它将其将其上传到 Heroku 网站：
 
@@ -1170,7 +1197,7 @@ Heroku 是一个多语言敏捷应用部署平台 [`www.heroku.com/`](http://www
 
 成功执行 `$ heroku login` 命令的响应。
 
-4 如果一切进展顺利，若要在你特定的项目文件夹内创建一个 Heroku 应用程序，你应该可以运行：
+4. 如果一切进展顺利，若要在你特定的项目文件夹内创建一个 Heroku 应用程序，你应该可以运行：
 
 ```
 1  $ heroku create
@@ -1209,7 +1236,7 @@ JSON 已经成为 Web/移动应用不同组件与第三方服务之间传输数�
 4 }
 ```
 
-我们有一个包含键值对的对象。键在左侧，值在冒号（`:`）的右侧。在计算机科学术语中，JSON 等同于哈希表、键值列表或关联数组（取决于特定语言）。JSON 与 JS 对象字面量表示（原生 JS 对象）之间的唯一主要区别是前者更为严格，要求键标识符和字符串值使用双引号（`"`）。假设我们有一个字符串格式的有效 JSON 对象，两种类型都可以通过 `JSON.stringify()` 序列化为字符串表示，并通过 `JSON.parse()` 反序列化。
+我们有一个包含键值对的对象。键在左侧，值在冒号（`:`）的右侧。在计算机科学术语中，JSON 等同于哈希表、键值列表或关联数组（取决于特定语言）。JSON 与 JS 对象字面量表示（原生 JS 对象）之间的唯一主要区别是前者更为严格，要求键标识符和字符串值使用双引号（`"`）。假设我们有一个字符串格式的有效 JSON 对象，两种类型都可以通过`JSON.stringify()`序列化为字符串表示，并通过`JSON.parse()`反序列化。
 
 然而，对象的每个成员都可以是数组、原始类型或另一个对象；例如：
 
@@ -1232,17 +1259,17 @@ JSON 已经成为 Web/移动应用不同组件与第三方服务之间传输数�
  16   }
 ```
 
-在上面的示例中，我们有一个带有 `posts` 属性的对象。`posts` 属性的值是一个对象数组，每个对象都有 `title`、`votes` 和 `comments` 键。votes 属性是一个数字，而 comments 是字符串数组。我们也可以拥有函数作为值；在这种情况下，键被称为方法，即 `getData`。
+在上面的示例中，我们有一个带有`posts`属性的对象。`posts`属性的值是一个对象数组，每个对象都有`title`、`votes`和`comments`键。`votes`属性是一个数字，而`comments`是字符串数组。我们也可以拥有函数作为值；在这种情况下，键被称为方法，即`getData`。
 
 正如本文概述，JSON 比 XML 或数据格式灵活且紧凑得多——[JSON: XML 的无脂替代方案](http://www.json.org/xml.html)。方便的是，MongoDB 使用了一种名为 [BSON](http://bsonspec.org/) 的二进制 JSON 的类似格式。关于 BSON 的更多信息将在 *Node.js 和 MongoDB* 章节介绍。
 
 ### 3.1.2 AJAX
 
-AJAX 代表异步 JavaScript 和 XML，用于客户端（浏览器）通过利用 JavaScript 语言中的 `XMLHttpRequest` 对象从服务器发送和接收数据。尽管名称如此，并不要求使用 XML，通常使用 JSON 代替。这就是为什么开发者几乎不再说 AJAX 了。请记住 HTTP 请求可以同步进行。
+AJAX 代表异步 JavaScript 和 XML，用于客户端（浏览器）通过利用 JavaScript 语言中的`XMLHttpRequest`对象从服务器发送和接收数据。尽管名称如此，并不要求使用 XML，通常使用 JSON 代替。这就是为什么开发者几乎不再说 AJAX 了。请记住 HTTP 请求可以同步进行。
 
 ### 3.1.3 跨域调用
 
-出于安全考虑，初始实现不允许跨域调用。其中一种是使用 [JSONP](http://en.wikipedia.org/wiki/JSONP)——它动态生成 `script` 标签。例如：
+出于安全考虑，初始实现不允许跨域调用。其中一种是使用 [JSONP](http://en.wikipedia.org/wiki/JSONP)——它动态生成`script`标签。例如：
 
 ```
 1 https://graph.facebook.com
@@ -1263,7 +1290,7 @@ CORS 服务器头部示例：
 
 ### 3.2 jQuery
 
-在培训期间，我们将使用 jQuery ([`jquery.com/`](http://jquery.com/)) 进行 DOM 操作、HTTP 请求和 JSONP 调用。jQuery 因为它的 `$` 对象/函数成为了事实标准，因为它提供了一种简单高效的方法通过 ID、类、标签名、属性值、结构或任何组合访问页面上的任何 HTML DOM 元素。语法与 CSS 非常相似，我们使用 `#` 选择 ID，使用 `.` 选择类，例如：
+在培训期间，我们将使用 jQuery ([`jquery.com/`](http://jquery.com/)) 进行 DOM 操作、HTTP 请求和 JSONP 调用。jQuery 因为它的`$`对象/函数成为了事实标准，因为它提供了一种简单高效的方法通过 ID、类、标签名、属性值、结构或任何组合访问页面上的任何 HTML DOM 元素。语法与 CSS 非常相似，我们使用`#`选择 ID，使用`.`选择类，例如：
 
 ```
 1 $("#main").hide();
@@ -1274,22 +1301,30 @@ CORS 服务器头部示例：
 以下是最常用的 jQuery API 函数列表：
 
 * `find()`(http://api.jquery.com/find): 根据提供的选择器字符串选择元素
+
 * `hide()`(http://api.jquery.com/hide): 如果元素可见，则隐藏它
+
 * `show()`(http://api.jquery.com/show): 如果元素隐藏，则显示它
+
 * `html()`(http://api.jquery.com/html): 获取或设置元素的内部 HTML
+
 * `append()`(http://api.jquery.com/append): 将元素插入到所选元素的 DOM 之后
 
+* `prepend()`(http://api.jquery.com/prepend): 在所选元素之前向 DOM 插入一个元素
 
+* `on()`(http://api.jquery.com/on): 为元素挂载事件监听器
 
+* `off()`(http://api.jquery.com/off): 从元素上卸载事件监听器
 
-*   `[prepend()](http://api.jquery.com/prepend)` 在所选元素之前向 DOM 插入一个元素
-*   `[on()](http://api.jquery.com/on)`: 为元素挂载事件监听器
-*   `[off()](http://api.jquery.com/off)` 从元素上卸载事件监听器
-*   `[css()](http://api.jquery.com/css)`: 获取或设置元素的样式属性值
-*   `[attr()](http://api.jquery.com/attr)` 获取或设置元素的任何属性
-*   `[val()](http://api.jquery.com/val)`: 获取或设置元素的 value 属性
-*   `[text()](http://api.jquery.com/text)`: 获取元素及其子元素的组合文本
-*   `[each()](http://api.jquery.com/each)`: 遍历一组匹配的元素
+* `css()`(http://api.jquery.com/css): 获取或设置元素的样式属性值
+
+* `attr()`(http://api.jquery.com/attr): 获取或设置元素的任何属性
+
+* `val()`(http://api.jquery.com/val): 获取或设置元素的 value 属性
+
+* `text()`(http://api.jquery.com/text): 获取元素及其子元素的组合文本
+
+* `each()`(http://api.jquery.com/each): 遍历一组匹配的元素
 
 大多数 jQuery 函数不仅作用于调用它们的单个元素，而且当选择结果包含多个项目时，它们会作用于一组匹配的元素。这是一个导致 Bug 的常见陷阱，通常发生在 jQuery 选择器范围过大时。
 
@@ -1312,7 +1347,7 @@ CORS 服务器头部示例：
 8       ... (如果需要，其他文件)
 ```
 
-首先，让我们带有正确的标签创建 `index.html` 文件：
+首先，让我们带有正确的标签创建`index.html`文件：
 
 ```
 1 <!DOCTYPE html>
@@ -1341,7 +1376,7 @@ CORS 服务器头部示例：
 11 </html>
 ```
 
-使用 `container-fluid` 和 `row-fluid` 类应用骨架：
+使用`container-fluid`和`row-fluid`类应用骨架：
 
 ```
 1   <body>
@@ -1352,9 +1387,9 @@ CORS 服务器头部示例：
 6   </body>
 ```
 
-Twitter Bootstrap 使用 12 列网格。单个单元格的大小可以通过 `spanN` 类指定，例如，“span1”，“span2”，“span12”。还有 `offsetN` 类（例如“offset1”，“offset2”……“offset12”），用于将单元格移到右侧。完整的参考可以在 [`twitter.github.com/bootstrap/scaffolding.html`](http://twitter.github.com/bootstrap/scaffolding.html) 获取。
+Twitter Bootstrap 使用 12 列网格。单个单元格的大小可以通过`spanN`类指定，例如，"span1"，"span2"，"span12"。还有`offsetN`类（例如"offset1"，"offset2"……"offset12"），用于将单元格移到右侧。完整的参考可以在 [`twitter.github.com/bootstrap/scaffolding.html`](http://twitter.github.com/bootstrap/scaffolding.html) 获取。
 
-我们将使用 `span12` 和 `hero-unit` 类作为主内容块：
+我们将使用`span12`和`hero-unit`类作为主内容块：
 
 ```
  1     <div class="row-fluid">
@@ -1389,7 +1424,11 @@ Twitter Bootstrap 使用 12 列网格。单个单元格的大小可以通过 `sp
  30     </div>  <!-- row-fluid -->
 ```
 
-`index.html` 的完整源码如下：
+`index.html`的完整源码如下：
+
+
+
+`index.html` 文件的完整代码：
 
 ```
  1 <!DOCTYPE html>
@@ -1433,36 +1472,38 @@ Twitter Bootstrap 使用 12 列网格。单个单元格的大小可以通过 `sp
  39 </html>
 ```
 
-此示例可以在 GitHub [github.com/azat-co/rpjs](https://github.com/azat-co/rpjs) 的 [`rpjs/bootstrap` 目录下下载/获取。
+此示例可以在 GitHub [github.com/azat-co/rpjs](https://github.com/azat-co/rpjs) 的 [`rpjs/bootstrap`](https://github.com/azat-co/rpjs/tree/master/bootstrap) 目录下下载/获取。
 
 其他值得查看的工具：
 
-*   [Compass](http://compass-style.org/): CSS 框架
-*   [SASS](http://sass-lang.com/): CSS 扩展，类似于 LESS
-*   [Blueprint](http://blueprintcss.org/): CSS 框架
-*   [Foundation](http://foundation.zurb.com/): 响应式前端框架
-*   [Bootswatch](http://bootswatch.com/): 定制 Bootstrap 主题集合
-*   [WrapBootstrap](https://wrapbootstrap.com/): Bootstrap 主市场
+* [Compass](http://compass-style.org/): CSS 框架
+* [SASS](http://sass-lang.com/): CSS 扩展，类似于 LESS
+* [Blueprint](http://blueprintcss.org/): CSS 框架
+* [Foundation](http://foundation.zurb.com/): 响应式前端框架
+* [Bootswatch](http://bootswatch.com/): 定制 Bootstrap 主题集合
+* [WrapBootstrap](https://wrapbootstrap.com/): Bootstrap 主市场
 
 ### 3.4 LESS
 
-LESS 是一种动态样式表语言。有时，在这种情况下，多即是少](https://en.wikipedia.org/wiki/The_Paradox_of_Choice:_Why_More_Is_Less)。
+LESS 是一种动态样式表语言。有时，在这种情况下，多即是少（[The Paradox of Choice](https://en.wikipedia.org/wiki/The_Paradox_of_Choice:_Why_More_Is_Less)）。
 
 浏览器无法解释 LESS 语法，因此 LESS 源代码必须通过以下三种方式之一编译为 CSS：
 
-1.  在浏览器中通过 [LESS JavaScript 库](http://lesscss.googlecode.com/files/less-1.3.0.min.js)
-2.  在服务器端通过语言/框架，例如 Node.js 有 [LESS 模块](https://npmjs.org/package/less)
-3.  在你的 Mac OS X 本地通过 [LESS App](http://incident57.com/less/)、[SimLESS](http://wearekiss.com/simpless) 或类似的应用程序
+1. 在浏览器中通过 [LESS JavaScript 库](http://lesscss.googlecode.com/files/less-1.3.0.min.js)
+2. 在服务器端通过语言/框架，例如 Node.js 有 [LESS 模块](https://npmjs.org/package/less)
+3. 在你的 Mac OS X 本地通过 [LESS App](http://incident57.com/less/)、[SimLESS](http://wearekiss.com/simpless) 或类似的应用程序
 
 | ![warning](img/leanpub_warning.png) | |
 | :--- | :--- |
 | 警告 | 选项 1 用于开发环境尚可，但对于生产环境并非最优。 |
 
-#### 3.4.1 变量变量减少冗余并允许通过一个规范的位置快速更改值。我们知道在设计（和样式）中经常需要更改值！
+#### 3.4.1 变量
+
+变量减少冗余并允许通过一个规范的位置快速更改值。我们知道在设计（和样式）中经常需要更改值！
 
 LESS 拥有变量、混合和运算符，使得开发者能够更快地复用 CSS 规则。
 
-```
+```less
 1 @color: #4D926F;
 2 #header {
 3   color: @color;
@@ -1474,10 +1515,6 @@ LESS 拥有变量、混合和运算符，使得开发者能够更快地复用 CS
 
 等同于 CSS：
 
-
-
-
-
 ```css
 1 #header {
 2   color: #4D926F;
@@ -1487,7 +1524,7 @@ LESS 拥有变量、混合和运算符，使得开发者能够更快地复用 CS
 6 }
 ```
 
-### 3.4.2 Mixins（混合入）
+#### 3.4.2 Mixins（混合入）
 
 这是 mixin 的语法，它的作用类似于函数：
 
@@ -1529,7 +1566,7 @@ LESS 拥有变量、混合和运算符，使得开发者能够更快地复用 CS
 
 Mixins 可以不带参数使用，也可以带有多个参数使用。
 
-### 3.4.3 操作
+#### 3.4.3 操作
 
 通过操作，我们可以对数字、颜色或变量执行数学函数计算。
 
@@ -1571,11 +1608,11 @@ LESS 中运算符的示例：
 
 如你所见，LESS 极大地提高了原生 CSS 的重用性。以下是一些用于编译的在线工具：
 
-* [LESS2CSS](http://less2css.org/):基于 Express.js 构建的流畅浏览器端 LESS 到 CSS 转换器
-* [lessphp](http://leafo.net/lessphp/):在线演示版编译器
-* [Dopefly](http://www.dopefly.com/LESS-Converter/less-converter.html):在线 LESS 转换器
+* [LESS2CSS](http://less2css.org/): 基于 Express.js 构建的流畅浏览器端 LESS 到 CSS 转换器
+* [lessphp](http://leafo.net/lessphp/): 在线演示版编译器
+* [Dopefly](http://www.dopefly.com/LESS-Converter/less-converter.html): 在线 LESS 转换器
 
-其他 [LESS 特](http://lesscss.org/#docs)还包括：
+其他 [LESS 特性](http://lesscss.org/#docs)还包括：
 
 * 模式匹配
 * 嵌套规则
@@ -1591,7 +1628,7 @@ LESS 中运算符的示例：
 
 | ![information](img/leanpub_information.png) | |
 
-### 注意事项
+**注意事项**
 
 此示例使用 Twitter API `v1.0` 构建，可能无法在 Twitter API `v1.1` 上工作，后者对 REST API 调用需要用户身份验证。你可以在 [dev.twitter.com](https://dev.twitter.com) 获取必要的密钥。
 
@@ -1607,10 +1644,10 @@ LESS 中运算符的示例：
 7 });
 ```
 
-在在方的 `ajax()` 函数代码段中，我们使用了以下参数：
+在上述的 `ajax()` 函数代码段中，我们使用了以下参数：
 
 * `url` 是 API 的端点
-* `dataType` 是我们期望从服务器接收的数据类型，例如，“json”，“xml”
+* `dataType` 是我们期望从服务器接收的数据类型，例如，“json”、“xml”
 * `data` 是要发送到服务器的数据
 * `jsonpCallback` 是字符串形式的函数名
 * `type` 是 HTTP 方法
@@ -1644,10 +1681,6 @@ function fetchData(data) {
   // 处理数据的逻辑
 }
 ```
-
-
-
-
 
 ```javascript
 function fetchData (m) {
@@ -1702,7 +1735,7 @@ $('#info').html('Analyzed: ' + list.length +
 }
 ```
 
-`index.html` 文件的完整代码：
+
 
 ```javascript
 $(document).ready(function(){
@@ -1787,15 +1820,11 @@ function fetchData (m) {
 
 ### 注意事项
 
-此示例使用 Twitter API v1.0 构建，可能无法在 Twitter API v1.1 上，因为后者对 REST API 调用需要用户身份验证。你可以在 `twitter.com` 获取必要的密钥。如果你认为必须是一个可以运行的示例，请向我们提交反馈。
+此示例使用 Twitter API v1.0 构建，可能无法在 Twitter API v1.1 上，因为后者对 REST API 调用需要用户身份验证。你可以在`twitter.com`获取必要的密钥。如果你认为必须是一个可以运行的示例，请向我们提交反馈。
 
 ### 3. Parse.com
 
-`Parse.com` 是一个可以替代数据库并开始支持移动开发的服务。尽管如此，通过 REST API 和 JavaScript SDK，`Parse.com` 可以用于任何 Web 和桌面应用程序进行数据存储。
-
-
-
-
+`Parse.com`是一个可以替代数据库并开始支持移动开发的服务。尽管如此，通过 REST API 和 JavaScript SDK，`Parse.com`可以用于任何 Web 和桌面应用程序进行数据存储。
 
 ```javascript
 1 $(document).ready(function() {
@@ -1943,19 +1972,17 @@ function fetchData (m) {
 51 </html>
 ```
 
-
-
-
-
 表格将包含我们的消息。表单将为新消息提供输入。
 
 现在我们将编写三个主函数：
 
 1. `getMessages()`：获取消息的函数
+
 2. `updateView()`：渲染消息列表的函数
+
 3. `$('#send').click(...)`：触发发送新消息的函数
 
-为了简单，我们将所有逻辑都放在一个文件 `app.js` 中。当然，当你的项目变得越来越时，根据功能分离代码库是一个好主意。
+为了简单，我们将所有逻辑都放在一个文件`app.js`中。当然，当你的项目变得越来越时，根据功能分离代码库是一个好主意。
 
 将这些值替换为你自己的值，并注意使用 REST API Key（而不是上一个示例中的 JavaScript SDK Key）：
 
@@ -1964,7 +1991,7 @@ function fetchData (m) {
 2   var parseRestKey='YOUR_REST_API_KEY';
 ```
 
-将所有内容封装在 `document.ready` 中，获取消息，并在点击事件上定义 `SEND`：
+将所有内容封装在`document.ready`中，获取消息，并在点击事件上定义`SEND`：
 
 ```
 1 $(document).ready(function(){
@@ -1976,7 +2003,7 @@ function fetchData (m) {
 7     console.log('!'')
 ```
 
-当我们提交新消息时，我们使用 `jQuery.ajax` 函数进行 HTTP 调用：
+当我们提交新消息时，我们使用`jQuery.ajax`函数进行 HTTP 调用：
 
 ```
  1     $.ajax({
@@ -2006,7 +2033,7 @@ function fetchData (m) {
 25 })
 ```
 
-从我们的远程 REST API 服务器获取消息的方法也使用了 `jQuery.ajax` 函数：
+从我们的远程 REST API 服务器获取消息的方法也使用了`jQuery.ajax`函数：
 
 ```
  1 function getMessages() {
@@ -2021,7 +2048,7 @@ function fetchData (m) {
 10     type: 'GET',
 ```
 
-如果请求成功完成（状态码 200 或类似），我们调用 `updateView` 函数：
+如果请求成功完成（状态码 200 或类似），我们调用`updateView`函数：
 
 ```
 1     success: function(data) {
@@ -2035,209 +2062,206 @@ function fetchData (m) {
 9 }
 ```
 
+
+
 该函数正在渲染我们从服务器获取的消息列表：
 
 ```
-1 function updateView(messages) { 
+function updateView(messages) { 
 ```
 
-我们使用 jQuery 选择器 `.table tbody` 来创建一个引用该元素的对象。然后我们清空该元素的所有 `innerHTML`：
+我们使用 jQuery 选择器`.table tbody`来创建一个引用该元素的对象。然后我们清空该元素的所有`innerHTML`：
 
 ```
-1   var table=$('.table tbody');
-2   table.html('');
+var table=$('.table tbody');
+table.html('');
 ```
 
-我们使用 `jQuery.each` 函数遍历每条消息：
+我们使用`jQuery.each`函数遍历每条消息：
 
 ```
-1   $.each(messages.results, function (index, value) {
-2     var trEl = 
+$.each(messages.results, function (index, value) {
+  var trEl = 
 ```
 
 以下代码以编程方式创建 HTML 元素（以及这些元素的 jQuery 对象）：
 
 ```
-1       $('<tr><td>' 
-2         + value.username
-3         + '</td><td>'
-4         + value.message +
-5         '</td></tr>'); 
+$('<tr><td>' 
+  + value.username
+  + '</td><td>'
+  + value.message +
+  '</td></tr>'); 
 ```
 
-并追加（注入到）表格的 `tbody` 元素之后：
+并追加（注入到）表格的`tbody`元素之后：
 
 ```
-1     table.append(trEl);   
-2   });
-3   console.log(messages);
-4 }
+table.append(trEl);   
+});
+console.log(messages);
+}
 ```
 
-然后是 `app.js` 的全部：
+然后是`app.js`的全部：
 
 ```
- 1 var parseID='YOUR_APP_ID';
- 2 var parseRestKey='YOUR_REST_API_KEY';
- 3 
- 4 $(document).ready(function(){
- 5   getMessages();
- 6   $("#send").click(function(){
- 7     var username = $('input[name=username]').attr('value');
- 8     var message = $('input[name=message]').attr('value');
- 9     console.log(username)
-10     console.log('!'')
-11     $.ajax({
-12       url: 'https://api.parse.com/1/classes/MessageBoard',
-13       headers: {
-14         'X-Parse-Application-Id': parseID,
-15         'X-Parse-REST-API-Key': parseRestKey
-16       },
-17       contentType: 'application/json',
-18       dataType: 'json',
-19       processData: false,
-20       data: JSON.stringify({
-21         'username': username,
-22         'message': message
-23       }),
-24       type: 'POST',
-25       success: function() {
-26         console.log('sent');
-27         getMessages();
-28       },
-29       error: function() {
-30         console.log('error');
-31       }
-32     });
-33
+var parseID='YOUR_APP_ID';
+var parseRestKey='YOUR_REST_API_KEY';
+
+$(document).ready(function(){
+  getMessages();
+  $("#send").click(function(){
+    var username = $('input[name=username]').attr('value');
+    var message = $('input[name=message]').attr('value');
+    console.log(username)
+    console.log('!'')
+    $.ajax({
+      url: 'https://api.parse.com/1/classes/MessageBoard',
+      headers: {
+        'X-Parse-Application-Id': parseID,
+        'X-Parse-REST-API-Key': parseRestKey
+      },
+      contentType: 'application/json',
+      dataType: 'json',
+      processData: false,
+      data: JSON.stringify({
+        'username': username,
+        'message': message
+      }),
+      type: 'POST',
+      success: function() {
+        console.log('sent');
+        getMessages();
+      },
+      error: function() {
+        console.log('error');
+      }
+    });
 ```
-
-
-
-
 
 ### 3.10 部署到 Windows Azure
 
 你应该能够使用 Git 部署到 Windows Azure。
 
-1. 访问 Windows Azure 门户 `[`windows.azure.com/`](https://windows.azure.com/)`，使用你的 Live ID 登录，如果还没有创建网站站点，请创建一个。通过提供用户名和密码来启用“设置 Git 发布”（这些信息应与你的 Live ID 凭据不同）。将你的 URL 复制到某处。
+1. 访问 Windows Azure 门户`[`windows.azure.com/`](https://windows.azure.com/)`，使用你的 Live ID 登录，如果还没有创建网站站点，请创建一个。通过提供用户名和密码来启用“设置 Git 发布”（这些信息应与你的 Live ID 凭据不同）。将你的 URL 复制到某处。
 
 2. 在想要发布或部署的项目文件夹中创建一个本地 Git 仓库：
 
 ```
-1  $ git init
+$ git init
 ```
 
 3. 将所有文件添加到仓库并开始跟踪它们：
 
 ```
-1  $ git add .
+$ git add .
 ```
 
 4. 提交首次提交：
 
 ```
-1  $ git commit -am "initial commit"
+$ git commit -am "initial commit"
 ```
 
 5. 将 Windows Azure 添加为远程 Git 仓库目标：
 
 ```
-1  $ git remote add azure your-url-for-remote-repository
+$ git remote add azure your-url-for-remote-repository
 ```
 
 在我的情况下，该命令看起来像这样：
 
 ```
-1  $ git remote add 
+$ git remote add 
 ```
 
 ```
-1  > azure https://azatazure@azat.scm.azurewebsites.net/azat.git
+> azure https://azatazure@azat.scm.azurewebsites.net/azat.git
 ```
 
 6. 将你的本地 Git 仓库推送到远程 Windows Azure 仓库，这将部署文件和应用程序：
 
 ```
-1  $ git push azure master
+$ git push azure master
 ```
 
-与 GitHub 一样，当你以后更新文件时不需要重复前几个步骤，因为我们已经在项目文件夹根目录下以 `.git` 文件夹的形式拥有本地 Git 仓库。
+与 GitHub 一样，当你以后更新文件时不需要重复前几个步骤，因为我们已经在项目文件夹根目录下以`.git`文件夹的形式拥有本地 Git 仓库。
 
 ### 3.11 部署到 Heroku
 
-唯一的主要区别是 Heroku 使用 Cedar Stack，它不支持静态项目，即纯 HTML 应用（例如我们的 Parse.com 测试应用程序或 Parse.com 版本的 Chat 应用程序）。我们可以使用一个“伪”PHP 项目来绕过这个限制。在项目文件夹中与 `index.html` 同级目录下创建一个 `index.php` 文件，内容如下：
+唯一的主要区别是 Heroku 使用 Cedar Stack，它不支持静态项目，即纯 HTML 应用（例如我们的 Parse.com 测试应用程序或 Parse.com 版本的 Chat 应用程序）。我们可以使用一个“伪”PHP 项目来绕过这个限制。在项目文件夹中与`index.html`同级目录下创建一个`index.php`文件，内容如下：
 
 ```
-1 <?php echo file_get_contents('index.html'); ?>
+<?php echo file_get_contents('index.html'); ?>
 ```
 
-为了方便起见，`index.php` 文件已经包含在 `rpjs/rest` 中。
+为了方便起见，`index.php`文件已经包含在`rpjs/rest`中。
 
-在 Heroku 上使用 Cedar stack 发布静态文件还有一种更简单的方法，这在文章 `[Static Sites on Heroku Cedar](http://kennethreitz.com/static-sites-on-heroku-cedar.html)` 中有所描述。为了让 Cedar Stack 支持你的静态文件，你只需要在项目文件夹中输入并执行以下命令：
+在 Heroku 上使用 Cedar stack 发布静态文件还有一种更简单的方法，这在文章`[Static Sites on Heroku Cedar](http://kennethreitz.com/static-sites-on-heroku-cedar.html)`中有所描述。为了让 Cedar Stack 支持你的静态文件，你只需要在项目文件夹中输入并执行以下命令：
 
 ```
-1 $ touch index.php
-2 $ echo 'php_flag engine off' > .htaccess
+$ touch index.php
+$ echo 'php_flag engine off' > .htaccess
 ```
 
 或者，你也可以使用 Ruby Bamboo stack。在这种情况下，我们需要如下结构：
 
 ```
-1 -project folder
-2   -config.ru
-3   /public
-4     -index.html
-5     -/css
-6     app.js
-7     ...
+-project folder
+  -config.ru
+  /public
+    -index.html
+    -/css
+    app.js
+    ...
 ```
 
-`index.html` 中指向 CSS 和其他资源的路径应该是相对路径的，例如‘css/style.css’。`config.ru` 文件应该包含以下代码：
+`index.html`中指向 CSS 和其他资源的路径应该是相对路径的，例如‘css/style.css’。`config.ru`文件应该包含以下代码：
 
 ```
- 1 use Rack::Static, 
- 2   :urls => ["/stylesheets", "/images"],
- 3   :root => "public"
- 4 
- 5 run lambda { |env|
- 6   [
- 7     200, 
- 8     {
- 9       'Content-Type'  => 'text/html', 
-10       'Cache-Control' => 'public, max-age=86400' 
-11     },
-12     File.open('public/index.html', File::RDONLY)
-13   ]
-14 }
+use Rack::Static, 
+  :urls => ["/stylesheets", "/images"],
+  :root => "public"
+
+run lambda { |env|
+  [
+    200, 
+    {
+      'Content-Type'  => 'text/html', 
+      'Cache-Control' => 'public, max-age=86400' 
+    },
+    File.open('public/index.html', File::RDONLY)
+  ]
+}
 ```
 
-更多详细信息，你可以参考 `[devcenter.heroku.com/articles/static-sites-on-heroku](https://devcenter.heroku.com/articles/static-sites-on-heroku)`。
+更多详细信息，你可以参考`[devcenter.heroku.com/articles/static-sites-on-heroku](https://devcenter.heroku.com/articles/static-sites-on-heroku)`。
 
 一旦你准备了 Cedar stack 或 Bamboo 的所有支持文件，请按照以下步骤操作：
 
-1. 如果还没有，请创建一个本地 Git 仓库和 `.git` 文件夹：
+1. 如果还没有，请创建一个本地 Git 仓库和`.git`文件夹：
 
 ```
-1  $ git init
+$ git init
 ```
 
 2. 添加文件：
 
 ```
-1  $ git add .
+$ git add .
 ```
 
 3. 提交文件和更改：
 
 ```
-1  $ git commit -m "my first commit"
+$ git commit -m "my first commit"
 ```
 
 4. 创建 Heroku Cedar stack 应用程序并添加远程目标：
 
 ```
-1  $ heroku create
+$ heroku create
 ```
 
 如果一切顺利，它应该提示你远程已添加且应用已创建，并给你应用名称。
@@ -2245,13 +2269,13 @@ function fetchData (m) {
 5. 查看远程类型并执行（可选）：
 
 ```
-1  $ git remote show
+$ git remote show
 ```
 
 6. 将代码推送到 Heroku：
 
 ```
-1  $ git push heroku master
+$ git push heroku master
 ```
 
 终端日志应该会告诉你部署是否顺利
@@ -2259,7 +2283,7 @@ function fetchData (m) {
 7. 要要在你的默认浏览器中打开应用，输入：
 
 ```
-1  $ heroku open
+$ heroku open
 ```
 
 或者直接访问你的应用 URL，类似于“http://yourappname-NNNN.herokuapp.com”。
@@ -2267,15 +2291,15 @@ function fetchData (m) {
 8. 要查看此应用的 Heroku 日志，输入：
 
 ```
-1  $ heroku logs
+$ heroku logs
 ```
 
 要更新应用，请重复以下步骤：
 
 ```
-1 git add -A
-2 git commit -m "update"
-3 git push heroku master
+git add -A
+git commit -m "update"
+git push heroku master
 ```
 
 ## 4.js 简介
@@ -2284,326 +2308,280 @@ function fetchData (m) {
 
 总结：我们将使用 Backbone.js 和模型-视图-控制器 (MVC) 架构构建一个典型的应用程序。
 
-“Hello World”的源码可以在 `[github.com/azat-co/rpjs/backbone-world](https://github.com/azat-co/rpjs/backbone-world)` 获取。
+“Hello World”的源码可以在`[github.com/azat-co/rpjs/backbone-world](https://github.com/azat-co/rpjs/backbone-world)`获取。
 
 ### 4.1 依赖
 
 下载以下库：
 
 * [`jQuery 1.9](http://code.jquery.com/jquery-1.9.0/)
+
 * [`Underscore.js](http://underscorejs.org/)
+
 * [`Backbone.js](http://backbonejs.org/)
 
-并如下在 `index.html` 文件中引入这些框架：
+并如下在`index.html`文件中引入这些框架：
 
 ```
- 1 <!DOCTYPE html>
- 2 <html>
- 3 <head>
- 4   <script src="jquery.js"></script>
- 5   <script src="underscore.js"></script>
- 6   <script src="backbone.js"></script>
- 7 
- 8   <script>
- 9     //TODO 写一些 JS 代码!（编写一些 JS 代码！）
-10   </script>
- 11 
-12 </head>
-13 <body>
-14 </body>
-15 </html>
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="jquery.js"></script>
+  <script src="underscore.js"></script>
+  <script src="backbone.js"></script>
+
+  <script>
+    //TODO 写一些 JS 代码!（编写一些 JS 代码！）
+  </script>
+
+</head>
+<body>
+</body>
+</html>
 ```
 
 ### 4.1 从零开始设置 Backbone.js
 
-让我们在 `<script>` 标签内部定义一个简单的 Backbone.js Router：
+让我们在`<script>`标签内部定义一个简单的 Backbone.js Router：
 
 ```
-1   ...
-2   var router = Backbone.Router.extend({
-3   });
-4   ...
+...
+var router = Backbone.Router.extend({
+});
+...
 ```
 
-然后在 `extend` 调用中设置一个特殊的 `routes` 属性：
+然后在`extend`调用中设置一个特殊的`routes`属性：
 
 ```
-1   var router = Backbone.Router.extend({
-2     routes: {
-3     }
-4   });
+var router = Backbone.Router.extend({
+  routes: {
+  }
+});
 ```
 
-Backbone.js 的 `routes` 属性需要遵循以下格式：`'path/:param':'action'`，这将导致 `filename#path/param` URL 触发 Router 对象中名为 **action** 的函数。现在，我们添加一个的 **home** 路由：
+Backbone.js 的`routes`属性需要遵循以下格式：`'path/:param':'action'`，这将导致`filename#path/param` URL 触发 Router 对象中名为 **action** 的函数。现在，我们添加一个的 **home** 路由：
 
 ```
-1   var router = Backbone.Router.extend({
-2     routes: {
-3       '': 'home'
-4     }
-5   });
+var router = Backbone.Router.extend({
+  routes: {
+    '': 'home'
+  }
+});
 ```
 
 这样很好，但现在我们需要添加一个 **home** 函数：
 
-
-
-
 ```
-1   var router = Backbone.Router.extend({
-2     routes: {
-3       '': 'home'
-4     },
-5     home: function(){
-6       //TODO render html
-7     }
-8   });
+var router = Backbone.Router.extend({
+  routes: {
+    '': 'home'
+  },
+  home: function(){
+    //TODO render html
+  }
+});
 ```
 
-我们稍后会回到 `home` 函数来添加更多关于创建和渲染 View 的逻辑。现在，我们应该定义 `homeView`：
+我们稍后会回到`home`函数来添加更多关于创建和渲染 View 的逻辑。现在，我们应该定义`homeView`：
 
 ```
-1   var homeView = Backbone.View.extend({
-2   });
+var homeView = Backbone.View.extend({
+});
 ```
 
-看起来很熟悉，对吧？Backbone.js 对所有组件都使用了类似的语法：`extend` 函数以及一个 JSON 对象作为它的参数。
+看起来很熟悉，对吧？Backbone.js 对所有组件都使用了类似的语法：`extend`函数以及一个 JSON 对象作为它的参数。
 
-从现在起有多种处理方法，但最佳实践是使用 `el` 和 `template` 属性，这两个属性在 Backbone.js 中是“魔法”的，也就是说是特殊的：
-
-```
-1   var homeView = Backbone.View.extend({
-2     el: 'body',
-3     template: _.template('Hello World')   
-4   });
-```
-
-属性 `el` 只是一个包含 jQuery 选择器的字符串（你可以使用 `.` 配合类名或 `#` 配合 ID 名称）。
-
-`template` 属性被赋值了一个 Underscore.js 的 `template` 函数，其内容只是纯文本“Hello World”。
-
-为了渲染我们的 `homeView`，我们使用 `this.$el`（这是一个指向 `el` 属性中元素的编译 jQuery 对象）以及 jQuery 的 `.html()` 函数将 HTML 替换为 `this.template()` 的值。这里是 Backbone.js View 的完整代码：
+从现在起有多种处理方法，但最佳实践是使用`el`和`template`属性，这两个属性在 Backbone.js 中是“魔法”的，也就是说是特殊的：
 
 ```
-1   var homeView = Backbone.View.extend({
-2     el: 'body',
-3     template: _.template('Hello World'),
-4     render: function(){
-5       this.$el.html(this.template({}));
-6     }
-7   });
+var homeView = Backbone.View.extend({
+  el: 'body',
+  template: _.template('Hello World')   
+});
 ```
 
-现在，如果回到 `router`，我们可以在 `home` 函数中添加这两行代码：
+属性`el`只是一个包含 jQuery 选择器的字符串（你可以使用`.`配合类名或`#`配合 ID 名称）。
+
+`template`属性被赋值了一个 Underscore.js 的`template`函数，其内容只是纯文本“Hello World”。
+
+为了渲染我们的`homeView`，我们使用`this.$el`（这是一个指向`el`属性中元素的编译 jQuery 对象）以及 jQuery 的`.html()`函数将 HTML 替换为`this.template()`的值。这里是 Backbone.js View 的完整代码：
 
 ```
- 1   var router = Backbone.Router.extend({
- 2     routes: {
- 3       '': 'home'
- 4     },
- 5     initialize: function(){
- 6       
- 7     },
- 8     home: function(){
- 9       this.homeView = new homeView;
-10       this.homeView.render();
-11     }
-12   });
+var homeView = Backbone.View.extend({
+  el: 'body',
+  template: _.template('Hello World'),
+  render: function(){
+    this.$el.html(this.template({}));
+  }
+});
 ```
 
-第一行将创建 `homeView` 对象并将其赋值给路由器的 `homeView` 属性。第二行将调用 `homeView` 对象中的 `render()` 方法，触发“Hello World”的输出。
-
-最后，为了启动 Backbone 应用，我们在 `document-ready` 包装器内部调用 `new Router`，确保文件的 DOM 已完全加载：
+现在，如果回到`router`，我们可以在`home`函数中添加这两行代码：
 
 ```
-1 var app;
-2 $(document).ready(function(){
-3   app = new router;
-4   Backbone.history.start();      
-5 })
+var router = Backbone.Router.extend({
+  routes: {
+    '': 'home'
+  },
+  initialize: function(){
+    
+  },
+  home: function(){
+    this.homeView = new homeView;
+    this.homeView.render();
+  }
+});
 ```
 
-这是 `index.html` 文件的完整代码：
+第一行将创建`homeView`对象并将其赋值给路由器的`homeView`属性。第二行将调用`homeView`对象中的`render()`方法，触发“Hello World”的输出。
+
+最后，为了启动 Backbone 应用，我们在`document-ready`包装器内部调用`new Router`，确保文件的 DOM 已完全加载：
 
 ```
- 1 <!DOCTYPE>
- 2 <html
- 3 <head>
- 4   <script src="jquery.js"></script>
- 5   <script src="underscore.js"></script>
- 6   <script src="backbone.js"></script>
- 7 
- 8   <script>
- 9     var app;
-10     var router = Backbone.Router.extend({
-11       routes: {
-12         '': 'home'
-13       },
-14       initialize: function(){
-15        //some code to execute
-16        //when the object is instantiated 
-17       },
-18       home: function(){
-19         this.homeView = new homeView;
-20         this.homeView.render();
-21       }
-22     });
-23 
-24     var homeView = Backbone.View.extend({
-25       el: 'body',
-26       template: _.template('Hello World'),
-27       render: function(){
-28         this.$el.html(this.template({}));
-29       }
-30     });
-31 
-32     $(document).ready(function(){
-33       app = new router;
-34       Backbone.history.start();      
-35     })
-36 
-37   </script>
-38 </head>
-39 <body>
-40   <div></div>
-41 </body>
-42 </html>
+var app;
+$(document).ready(function(){
+  app = new router;
+  Backbone.history.start();      
+})
 ```
+
+这是`index.html`文件的完整代码：
+
+
 
 在浏览器中打开 `index.html` 查看其是否运行正常，即页面上应该出现“Hello World”消息。
 
 ### 4.2 与集合（Collections）交互
 
-此示例的完整源代码位于 [rpjs/backbone/collections](https://github.com/azat-co/rpjs/tree/master/backbone/collections)。它是基于**从零开始设置 Backbone.js 应用**练习中的“Hello World”示例构建的，该练习可以在 [rpjs/backbone/hello-world](https://github.com/azat-co/rpjs/tree/master/backbone/hello-world) 下载。
+此示例的完整源代码位于[rpjs/backbone/collections](https://github.com/azat-co/rpjs/tree/master/backbone/collections)。它是基于**从零开始设置 Backbone.js 应用**练习中的“Hello World”示例构建的，该练习可以在[rpjs/backbone/hello-world](https://github.com/azat-co/rpjs/tree/master/backbone/hello-world)下载。
 
-我们需要添加一些数据供玩玩，并填充我们的视图。为了做到这一点，请在 `script` 标签之后、其他代码之前添加以下内容：
-
-```
- 1   var appleData = [
- 2     {
- 3       name: "fuji",
- 4       url: "img/fuji.jpg"
- 5     },
- 6     {
- 7       name: "gala",
- 8       url: "img/gala.jpg"
- 9     }
-10  ];
-```
-
-
-
-为了让包含 HTML 标签的 JavaScript 字符串更具读性，我们可以使用反斜杠换行转义符（`\`），或者关闭字符串并使用加号（`+`）拼接。这是上方 `appleView` 的一个示例，使用了后者方法进行重构：
+我们需要添加一些数据供玩玩，并填充我们的视图。为了做到这一点，请在`script`标签之后、其他代码之前添加以下内容：
 
 ```
-1   var appleView = Backbone.View.extend({
-2     template: _.template(
-3         '<figure>'+
-4           +'<img src="<%= attributes.url %>"/>'+
-5           +'<figcaption><%= attributes.name %></figcaption>'+
-6         +'</figure>'),
-7   ...
+var appleData = [
+  {
+    name: "fuji",
+    url: "img/fuji.jpg"
+  },
+  {
+    name: "gala",
+    url: "img/gala.jpg"
+  }
+];
 ```
 
-请注意 `<%=` 和 `%>` 符号；它们是让 Undescore.js 打印 `attributes` 对象中 `url` 和 `name` 属性值的指令。
-
-最后，我们为 `appleView` 类添加了 `render` 函数。
+为了让包含 HTML 标签的 JavaScript 字符串更具读性，我们可以使用反斜杠换行转义符（`\`），或者关闭字符串并使用加号（`+`）拼接。这是上方`appleView`的一个示例，使用了后者方法进行重构：
 
 ```
-1   render: function(appleName){
-2     var appleModel = this.collection.where({name:appleName})[0];
-3     var appleHtml = this.template(appleModel);
-4     $('body').html(appleHtml);
-5   }
+var appleView = Backbone.View.extend({
+  template: _.template(
+    '<figure>'+
+    +'<img src="<%= attributes.url %>"/>'+
+    +'<figcaption><%= attributes.name %></figcaption>'+
+    +'</figure>'),
+...
 ```
 
-我们通过 `where()` 方法在集合中查找模型，并使用 `[]` 获取第一个元素。目前，`render` 函数负责加载数据和渲染数据。稍后我们将重构该函数，将这两个功能分离到不同的方法中。
+请注意`<%=`和`%>`符号；它们是让 Undescore.js 打印`attributes`对象中`url`和`name`属性值的指令。
 
-整个应用位于 [rpjs/backbone/collections/index.html](https://github.com/azat-co/rpjs/tree/master/backbone/collections) 文件夹，看起来如下：
+最后，我们为`appleView`类添加了`render`函数。
 
 ```
- 1 <!DOCTYPE>
- 2 <html>
- 3 <head>
- 4   <script src="jquery.js"></script>
- 5   <script src="underscore.js"></script>
- 6   <script src="backbone.js"></script>
- 7 
- 8   <script>
- 9    var appleData = [
-10       {
-11         name: "fuji",
-12         url: "img/fuji.jpg"
-13       },
-14       {
-15         name: "gala",
-16         url: "img/gala.jpg"
-17       }      
-18     ];
-19     var app;
-20     var router = Backbone.Router.extend({
-21       routes: {
-22         "": "home",
-23         "apples/:appleName": "loadApple"
-24       },
-25       initialize: function(){
-26         var apples = new Apples();
-27         apples.reset(appleData);
-28         this.homeView = new homeView({collection: apples});
-29         this.appleView = new appleView({collection: apples});
-30       },
-31       home: function(){        
-32         this.homeView.render();
-33       },
-34       loadApple: function(appleName){
-35         this.appleView.render(appleName);
-36       }
-37     });
-38 
-39     var homeView = Backbone.View.extend({
-40       el: 'body',
-41       template: _.template('Apple data: <%= data %>'),
-42       render: function(){
-43         this.$el.html(this.template({
-44         data: JSON.stringify(this.collection.models)
-45       }));
-46       }
-47       //TODO subviews
-48     });
-49 
-50     var Apples = Backbone.Collection.extend({
-51 
-52     });
-53     var appleView = Backbone.View.extend({
-54       template: _.template('<figure>\
-55                   <img src="<%= attributes.url %>"/>\
-56                   <figcaption><%= attributes.name %></figcaption>\
-57                 </figure>'),
-58       //TODO re-write with load apple and event binding
-59       render: function(appleName){
-60         var appleModel = this.collection.where({
-61           name:appleName
-62         })[0];
-63         var appleHtml = this.template(appleModel);
-64         $('body').html(appleHtml);
-65       }
-66     });
-67     $(document).ready(function(){
-68       app = new router;
-69       Backbone.history.start();      
-70     })
-71 
-72   </script>
-73 </head>
-74 <body>
-75   <div></div>
-76 </body>
-77 </html>
+render: function(appleName){
+  var appleModel = this.collection.where({name:appleName})[0];
+  var appleHtml = this.template(appleModel);
+  $('body').html(appleHtml);
+}
 ```
 
-在浏览器中打开 `collections/index.html` 文件。你应该能看到来自我们“数据库”的数据，即：`Apple data: [{"name":"fuji","url":"img/fuji.jpg"},{"name":"gala","url":"img/gala.jpg"}]`。
+我们通过`where()`方法在集合中查找模型，并使用`[]`获取第一个元素。目前，`render`函数负责加载数据和渲染数据。稍后我们将重构该函数，将这两个功能分离到不同的方法中。
 
-现在，在浏览器中访问 `collections/index.html#apples/fuji` 或 `collections/index.html#apples/gala`。我们预期看到一个带有标题的图片。这是一个项的详细视图，在这种情况下是一个苹果。干得好！
+整个应用位于[rpjs/backbone/collections/index.html](https://github.com/azat-co/rpjs/tree/master/backbone/collections)文件夹，看起来如下：
+
+```
+<!DOCTYPE>
+<html>
+<head>
+  <script src="jquery.js"></script>
+  <script src="underscore.js"></script>
+  <script src="backbone.js"></script>
+
+  <script>
+    var appleData = [
+      {
+        name: "fuji",
+        url: "img/fuji.jpg"
+      },
+      {
+        name: "gala",
+        url: "img/gala.jpg"
+      }      
+    ];
+    var app;
+    var router = Backbone.Router.extend({
+      routes: {
+        "": "home",
+        "apples/:appleName": "loadApple"
+      },
+      initialize: function(){
+        var apples = new Apples();
+        apples.reset(appleData);
+        this.homeView = new homeView({collection: apples});
+        this.appleView = new appleView({collection: apples});
+      },
+      home: function(){        
+        this.homeView.render();
+      },
+      loadApple: function(appleName){
+        this.appleView.render(appleName);
+      }
+    });
+
+    var homeView = Backbone.View.extend({
+      el: 'body',
+      template: _.template('Apple data: <%= data %>'),
+      render: function(){
+        this.$el.html(this.template({
+          data: JSON.stringify(this.collection.models)
+        }));
+      }
+      //TODO subviews
+    });
+
+    var Apples = Backbone.Collection.extend({
+
+    });
+    var appleView = Backbone.View.extend({
+      template: _.template('<figure>\
+                  <img src="<%= attributes.url %>"/>\
+                  <figcaption><%= attributes.name %></figcaption>\
+                </figure>'),
+      //TODO re-write with load apple and event binding
+      render: function(appleName){
+        var appleModel = this.collection.where({
+          name:appleName
+        })[0];
+        var appleHtml = this.template(appleModel);
+        $('body').html(appleHtml);
+      }
+    });
+    $(document).ready(function(){
+      app = new router;
+      Backbone.history.start();      
+    })
+
+  </script>
+</head>
+<body>
+  <div></div>
+</body>
+</html>
+```
+
+在浏览器中打开`collections/index.html`文件。你应该能看到来自我们“数据库”的数据，即：`Apple data: [{"name":"fuji","url":"img/fuji.jpg"},{"name":"gala","url":"img/gala.jpg"}]`。
+
+现在，在浏览器中访问`collections/index.html#apples/fuji`或`collections/index.html#apples/gala`。我们预期看到一个带有标题的图片。这是一个项的详细视图，在这种情况下是一个苹果。干得好！
 
 ### 4.3 事件绑定
 
@@ -2616,309 +2594,203 @@ Backbone.js 的 `routes` 属性需要遵循以下格式：`'path/:param':'action
 让我们更改路由器中的代码：
 
 ```
-1   ...
-2     loadApple: function(appleName){
-3       this.appleView.loadApple(appleName);
-4     }
-5   ...
+...
+loadApple: function(appleName){
+  this.appleView.loadApple(appleName);
+}
+...
 ```
 
-在到达 `appleView` 类之前，其他内容保持不变。我们需要添加一个构造函数或 `initialize` 方法，这是 Backbone.js 中一个特殊的单词/属性。
+在到达`appleView`类之前，其他内容保持不变。我们需要添加一个构造函数或`initialize`方法，这是 Backbone.js 中一个特殊的单词/属性。
 
 ```
-1   ...
-2   var appleView = Backbone.View.extend({
-3     initialize: function(){
-4       //在此处设置模型
-5       this.model = new Model();
-6     },
-7   ...
+...
+var appleView = Backbone.View.extend({
+  initialize: function(){
+    //在此处设置模型
+    this.model = new Model();
+  },
+...
 ```
 
-太棒了，我们有了 `initialize` 函数。现在我们需要创建一个代表单个苹果的模型并设置事件监听器。我们将使用两种类型的事件：`change` 和 `spinner`。为了这一点，我们将使用 `on()` 函数，它接受这些属性：`on(event, actions, context)` —— 更多信息请参阅 [backbonejs.org/Events-on](http://backbonejs.org/Events-on)：
+太棒了，我们有了`initialize`函数。现在我们需要创建一个代表单个苹果的模型并设置事件监听器。我们将使用两种类型的事件：`change`和`spinner`。为了这一点，我们将使用`on()`函数，它接受这些属性：`on(event, actions, context)` —— 更多信息请参阅[backbonejs.org/Events-on](http://backbonejs.org/Events-on)：
 
 ```
-1   ...
-2   var appleView = Backbone.View.extend({
-3     initialize: function(){
-4       this.model = new (Model.extend({}));
-5       this.model.bind('change', this.render, this);
-6       this.model.bind('spinner',this.showSpinner, this);
-7     },
-8   ... 
+...
+var appleView = Backbone.View.extend({
+  initialize: function(){
+    this.model = new (Model.extend({}));
+    this.model.bind('change', this.render, this);
+    this.model.bind('spinner',this.showSpinner, this);
+  },
+... 
 ```
 
 上面的代码归结为两个简单的事情：
 
-1. 当模型改变时，调用 `appleView` 的 `render()` 函数
-2. 当 `spinner` 事件触发时，调用 `appleView` 的 `showSpinner()` 方法
+1. 当模型改变时，调用`appleView`的`render()`函数
 
-到目前一切顺利，对吧？但是 spinner，即那个 GIF 图标呢？我们在 `appleView` 中创建一个新属性：
+2. 当`spinner`事件触发时，调用`appleView`的`showSpinner()`方法
 
-```
-1   ...
-2     templateSpinner: '<img src="spinner.gif" width="30"/>',
-3   ...
-```
-
-还记得路由器中的 `loadApple` 调用吗？这就是在 `appleView` 中实现该函数的方式：
+到目前一切顺利，对吧？但是 spinner，即那个 GIF 图标呢？我们在`appleView`中创建一个新属性：
 
 ```
- 1   ...
- 2   loadApple:function(appleName){
-3     this.trigger('spinner'); 
-4     //显示 spinner GIF 图标
-5     var view = this; 
-6     //我们需要在闭包内部访问它
-7     setTimeout(function(){ 
-8     //模拟从远程服务器获取数据的
-9     //真实时间延迟
-10       view.model.set(view.collection.where({
-11         name:appleName
-12       })[0].attributes);  
-13     },1000);    
-14   },
- 15   ...
+...
+templateSpinner: '<img src="spinner.gif" width="30"/>',
+...
 ```
 
-第一行将触发 `spinner` 事件（我们仍然需要编写该函数）。
+还记得路由器中的`loadApple`调用吗？这就是在`appleView`中实现该函数的方式：
+
+```
+...
+loadApple:function(appleName){
+  this.trigger('spinner'); 
+  //显示 spinner GIF 图标
+  var view = this; 
+  //我们需要在闭包内部访问它
+  setTimeout(function(){ 
+    //模拟从远程服务器获取数据的
+    //真实时间延迟
+    view.model.set(view.collection.where({
+      name:appleName
+    })[0].attributes);  
+  },1000);    
+},
+...
+```
+
+第一行将触发`spinner`事件（我们仍然需要编写该函数）。
 
 第二行仅仅是为了作用域问题（以便我们能够在闭包内部使用 **appleView**）。
 
-`setTimeout` 函数模拟了远程服务器响应的真实时间延迟。
+`setTimeout`函数模拟了远程服务器响应的真实时间延迟。
 
-现在我们可以从 `render` 方法中移除多余的代码并实现 `showSpinner` 函数。
-
-
-
+现在我们可以从`render`方法中移除多余的代码并实现`showSpinner`函数。
 
 ```javascript
-1   render: function(appleName){
-2     var appleHtml = this.template(this.model);
-3     $('body').html(appleHtml);
-4   },
-5   showSpinner: function(){
-6     $('body').html(this.templateSpinner);        
-7   }
-8   ...
+render: function(appleName){
+  var appleHtml = this.template(this.model);
+  $('body').html(appleHtml);
+},
+showSpinner: function(){
+  $('body').html(this.templateSpinner);        
+}
+...
 ```
 
-就这些！在浏览器中打开 `index.html#apples/gala` 或 `index.html#apples/fuji`，在等待苹果图片加载时享受加载动画。
+就这些！在浏览器中打开`index.html#apples/gala`或`index.html#apples/fuji`，在等待苹果图片加载时享受加载动画。
 
-`index.html` 文件的完整代码：
+`index.html`文件的完整代码：
 
-```javascript
- 1 <!DOCTYPE>
- 2 <html>
- 3 <head>
- 4   <script src="jquery.js"></script>
- 5   <script src="underscore.js"></script>
- 6   <script src="backbone.js"></script>
- 7 
- 8   <script>
- 9    var appleData = [
-10       {
-11         name: "fuji",
-12         url: "img/fuji.jpg"
-13       },
-14       {
-15         name: "gala",
-16         url: "img/gala.jpg"
-17       }      
-18     ];
-19     var app;
-20     var router = Backbone.Router.extend({
-21       routes: {
-22         "": "home",
-23         "apples/:appleName": "loadApple"
-24       },
-25       initialize: function(){
-26         var apples = new Apples();
-27         apples.reset(appleData);
-28         this.homeView = new homeView({collection: apples});
-29         this.appleView = new appleView({collection: apples});
-30       },
-31       home: function(){        
-32         this.homeView.render();
-33       },
-34       loadApple: function(appleName){
-35         this.appleView.loadApple(appleName);
-36 
-37       }
-38     });
-39 
-40     var homeView = Backbone.View.extend({
-41       el: 'body',
-42       template: _.template('Apple data: <%= data %>'),
-43       render: function(){
-44         this.$el.html(this.template({
-45           data: JSON.stringify(this.collection.models)
-46         }));
-47       }
-48       //TODO subviews
-49     });
-50 
-51     var Apples = Backbone.Collection.extend({
-52 
-53     });
-54     var appleView = Backbone.View.extend({
-55       initialize: function(){
-56         this.model = new (Backbone.Model.extend({}));
-57         this.model.on('change', this.render, this);
-58         this.on('spinner',this.showSpinner, this);
-59       },
-60       template: _.template('<figure>\
-61                 <img src="<%= attributes.url %>"/>\
-62                 <figcaption><%= attributes.name %></figcaption>\
-63                 </figure>'),
-64       templateSpinner: '<img src="img/spinner.gif" width="30"/>',
-66 
-66       loadApple:function(appleName){
-67         this.trigger('spinner');
-68         var view = this; //we'll need to access 
-69         //that inside of a closure
-70         setTimeout(function(){ //simulates real time 
-71         //lag when fetching data from the remote server
-72           view.model.set(view.collection.where({
-73             name:appleName
-74           })[0].attributes);  
-75         },1000);
-76 
-77       },
-78 
-79       render: function(appleName){
-80         var appleHtml = this.template(this.model);
-81         $('body').html(appleHtml);
-82       },
-83       showSpinner: function(){
-84         $('body').html(this.templateSpinner);        
-85       }
-86 
-87     });
-88     $(document).ready(function(){
-89       app = new router;
-90       Backbone.history.start();      
-91     })
-92 
-93   </script>
-94 </head>
-95 <body>
-96   <a href="#apples/fuji">fuji</a>
-97   <div></div>
-98 </body>
-99 </html>
-```
+
 
 ### 4.4 结合 Underscore.js 的视图和子视图
 
 此示例可以在 [rpjs/backbone/subview](https://github.com/azat-co/rpjs/tree/master/backbone/subview) 获取。
 
-子视图（Subviews）是在另一个 `Backbone View` 内部创建并使用的 `Backbone View` 实例。子视图是一个抽象（分离）UI 事件（例如点击）以及结构相似元素（例如苹果）模板的极佳方法。
+子视图（Subviews）是在另一个 `Backbone.View` 内部创建并使用的 `Backbone.View` 实例。子视图是一个抽象（分离）UI 事件（例如点击）以及结构相似元素（例如苹果）模板的极佳方法。
 
 `Subview` 的用例可能包括表格中的行、列表中的列表项、段落、新行等。
 
 我们将重构主页以显示一个精美的苹果列表。每个列表项将有一个苹果名称和一个带有 `onClick` 的“购买”链接。
 
 ```javascript
-1   render: function(appleName){
-2     var appleHtml = this.template(this.model);
-3     $('body').html(appleHtml);
-4   },
-5   showSpinner: function(){
-6     $('body').html(this.templateSpinner);        
-7   }
-8   ...
+render: function(appleName){
+  var appleHtml = this.template(this.model);
+  $('body').html(appleHtml);
+},
+showSpinner: function(){
+  $('body').html(this.templateSpinner);        
+}
+...
 ```
 
 我们将重构主页以显示一个精美的苹果列表。每个列表项将有一个苹果名称和一个带有 `onClick` 的“购买”链接。
 
-
-
-
-
-```
-1   ...
-2   template: _.template('Apple data: \
-3     <ul class="apples-list">\
-4     </ul>\
-5     <div class="cart-box"></div>'),
-6   ...
+```javascript
+...
+template: _.template('Apple data: \
+  <ul class="apples-list">\
+  </ul>\
+  <div class="cart-box"></div>'),
+...
 ```
 
 当 `homeView` 创建时（执行 `new homeView()`），会调用 `initialize` 函数——在该函数中，我们渲染了模板（使用了我们已经熟悉的 `html()` 函数），并为集合（一组苹果模型）绑定了一个事件监听器：
 
-```
-1   ...
-2     initialize: function() {
-3       this.$el.html(this.template);
-4       this.collection.on('addToCart', this.showCart, this);
-5     },
-6   ...
+```javascript
+...
+initialize: function() {
+  this.$el.html(this.template);
+  this.collection.on('addToCart', this.showCart, this);
+},
+...
 ```
 
 绑定事件的语法在上一节中介绍过。本质上，它是调用了 `homeView` 的 `showCart()` 函数。在这个函数中，我们将 `appleName` 添加到购物车中（同时带有一个换行符，即 `<br/>` 元素）：
 
-```
-1   ...    
-2     showCart: function(appleModel) {
-3       $(this.cartEl).append(appleModel.attributes.name+'<br/>');
-4     },
-5   ...
+```javascript
+...    
+showCart: function(appleModel) {
+  $(this.cartEl).append(appleModel.attributes.name+'<br/>');
+},
+...
 ```
 
 最后，是我们期待已久的 `render()` 方法，在该方法中我们遍历集合中的每个模型（每个苹果），为每个苹果创建一个 `appleItemView`，为每个苹果创建一个 `<li>` 元素，并将该元素添加到 `view.listEl` —— 即 DOM 中类名为 `apples-list` 的 `<ul>` 元素中：
 
-```
- 1   ...
- 2   render: function(){
- 3     view = this; 
- 4     //以便在闭包内部使用 view
- 5     this.collection.each(function(apple){
- 6       var appleSubView = new appleItemView({model:apple}); 
- 7       // 使用 model apple 创建子视图
- 8       appleSubView.render(); 
- 9       //编译模板和单个苹果数据
-10       $(view.listEl).append(appleSubView.$el);   
-11       //将单个苹果的 jQuery 对象
-12       //添加到 apples-list DOM 元素
-13     });
-14   }
-15   ...
+```javascript
+...
+render: function(){
+  view = this; 
+  //以便在闭包内部使用 view
+  this.collection.each(function(apple){
+    var appleSubView = new appleItemView({model:apple}); 
+    // 使用 model apple 创建子视图
+    appleSubView.render(); 
+    //编译模板和单个苹果数据
+    $(view.listEl).append(appleSubView.$el);   
+    //将单个苹果的 jQuery 对象
+    //添加到 apples-list DOM 元素
+  });
+}
+...
 ```
 
 让我们确保在 `homeView` Backbone View 中没有漏掉任何内容：
 
-```
- 1   ...
- 2   var homeView = Backbone.View.extend({
- 3     el: 'body',
- 4     listEl: '.apples-list',
- 5     cartEl: '.cart-box',
- 6     template: _.template('Apple data: \
- 7       <ul class="apples-list">\
- 8       </ul>\
- 9       <div class="cart-box"></div>'),
-10     initialize: function() {
-11       this.$el.html(this.template);
-12       this.collection.on('addToCart', this.showCart, this);
-13     },
-14     showCart: function(appleModel) {
-15       $(this.cartEl).append(appleModel.attributes.name+'<br/>');
-16     },      
-17     render: function(){
-18       view = this; //以便在闭包内部使用 view
-19       this.collection.each(function(apple){
-20         var appleSubView = new appleItemView({model:apple}); 
-21         // 使用 model apple 创建子视图
-22         appleSubView.render(); 
-23         //编译模板和单个苹果数据
-24         $(view.listEl).append(appleSubView.$el);   
-25         //将单个苹果的 jQuery 对象
-26         //添加到 apples-list DOM 元素
-27       });
-28     }
-29   }); 
-30   ...
+```javascript
+...
+var homeView = Backbone.View.extend({
+  el: 'body',
+  listEl: '.apples-list',
+  cartEl: '.cart-box',
+  template: _.template('Apple data: \
+    <ul class="apples-list">\
+    </ul>\
+    <div class="cart-box"></div>'),
+  initialize: function() {
+    this.$el.html(this.template);
+    this.collection.on('addToCart', this.showCart, this);
+  },
+  showCart: function(appleModel) {
+    $(this.cartEl).append(appleModel.attributes.name+'<br/>');
+  },      
+  render: function(){
+    view = this; //以便在闭包内部使用 view
+    this.collection.each(function(apple){
+      var appleSubView = new appleItemView({model:apple}); 
+      // 使用 model apple 创建子视图
+      appleSubView.render(); 
+      //编译模板和单个苹果数据
+      $(view.listEl).append(appleSubView.$el);   
+      //将单个苹果的 jQuery 对象
+      //添加到 apples-list DOM 元素
+    });
+  }
+}); 
+...
 ```
 
 你现在应该点击购买，购物车将填充你选择的苹果。查看单个苹果不再需要在向浏览器的 URL 地址栏中输入它的名称。我们可以点击名称，它会打开一个带有详细视图的新窗口。
@@ -2931,9 +2803,113 @@ Backbone.js 的 `routes` 属性需要遵循以下格式：`'path/:param':'action
 
 以防万一，这里是子视图示例的完整代码，你也可以在 [rpjs/backbone/subview/index.html](https://github.com/azat-co/rpjs/blob/master/backbone/subview/index.html) 找到它：
 
+```javascript
+<!DOCTYPE>
+<html>
+<head>
+  <script src="jquery.js"></script>
+  <script src="underscore.js"></script>
+  <script src="backbone.js"></script>
+
+  <script>
+   var appleData = [
+      {
+        name: "fuji",
+        url: "img/fuji.jpg"
+      },
+      {
+        name: "gala",
+        url: "img/gala.jpg"
+      }      
+    ];
+    var app;
+    var router = Backbone.Router.extend({
+      routes: {
+        "": "home",
+        "apples/:appleName": "loadApple"
+      },
+      initialize: function(){
+        var apples = new Apples();
+        apples.reset(appleData);
+        this.homeView = new homeView({collection: apples});
+        this.appleView = new appleView({collection: apples});
+      },
+      home: function(){        
+        this.homeView.render();
+      },
+      loadApple: function(appleName){
+        this.appleView.loadApple(appleName);
+
+      }
+    });
+
+    var homeView = Backbone.View.extend({
+      el: 'body',
+      template: _.template('Apple data: <%= data %>'),
+      render: function(){
+        this.$el.html(this.template({
+          data: JSON.stringify(this.collection.models)
+        }));
+      }
+      //TODO subviews
+    });
+
+    var Apples = Backbone.Collection.extend({
+
+    });
+    var appleView = Backbone.View.extend({
+      initialize: function(){
+        this.model = new (Backbone.Model.extend({}));
+        this.model.on('change', this.render, this);
+        this.on('spinner',this.showSpinner, this);
+      },
+      template: _.template('<figure>\
+                <img src="<%= attributes.url %>"/>\
+                <figcaption><%= attributes.name %></figcaption>\
+                </figure>'),
+      templateSpinner: '<img src="img/spinner.gif" width="30"/>',
+
+      loadApple:function(appleName){
+        this.trigger('spinner');
+        var view = this; //we'll need to access 
+        //that inside of a closure
+        setTimeout(function(){ //simulates real time 
+        //lag when fetching data from the remote server
+          view.model.set(view.collection.where({
+            name:appleName
+          })[0].attributes);  
+        },1000);
+
+      },
+
+      render: function(appleName){
+        var appleHtml = this.template(this.model);
+        $('body').html(appleHtml);
+      },
+      showSpinner: function(){
+        $('body').html(this.templateSpinner);        
+      }
+
+    });
+    $(document).ready(function(){
+      app = new router;
+      Backbone.history.start();      
+    })
+
+  </script>
+</head>
+<body>
+  <a href="#apples/fuji">fuji</a>
+  <div></div>
+</body>
+</html>
+```
 
 
 
+以下是使用 Backbone.js 构建的单页应用示例，展示了如何组织代码结构。
+
+首先，在`index.html`文件中，我们引入了必要的JavaScript库（jQuery、Underscore.js、Backbone.js）以及应用逻辑代码：
 
 ```html
 <!DOCTYPE html>
@@ -3070,9 +3046,7 @@ Backbone.js 的 `routes` 属性需要遵循以下格式：`'path/:param':'action
 </html>
 ```
 
-
-
-
+接下来，我们将代码拆分为多个文件以改善组织性。`homeView` 负责渲染主列表页面：
 
 ```javascript
 var homeView = Backbone.View.extend({
@@ -3190,7 +3164,7 @@ $(document).ready(function(){
 
 这是一种更好的代码组织方式，但远未完美，因为我们仍然在 JavaScript 代码中直接编写了 HTML 模板。问题在于设计人员和开发者无法在同一个文件中工作，而且任何对展示的更改都需要修改主代码库。
 
-我们可以在 `index.html` 文件中添加几个 JS 文件：
+我们可以在`index.html`文件中添加几个 JS 文件：
 
 ```html
 <script src="apple-item.tpl.js"></script>
@@ -3199,11 +3173,11 @@ $(document).ready(function(){
 <script src="apple.tpl.js"></script>
 ```
 
-通常，一个 Backbone 视图有一个模板，但在我们的 `appleView` —— 在独立窗口中显示苹果详细视图的情况下 —— 我们还有一个加载动画（spinner），即“loading”的 GIF 动画。
+通常，一个 Backbone 视图有一个模板，但在我们的`appleView` —— 在独立窗口中显示苹果详细视图的情况下 —— 我们还有一个加载动画（spinner），即“loading”的 GIF 动画。
 
-这些文件的内容只是赋值了某些字符串值的全局变量。稍后，我们在视图中调用 Underscore.js 辅助方法 `_.template()` 时，就可以使用这些变量。
+这些文件的内容只是赋值了某些字符串值的全局变量。稍后，我们在视图中调用 Underscore.js 辅助方法`_.template()`时，就可以使用这些变量。
 
-`apple-item.tpl.js` 文件：
+`apple-item.tpl.js`文件：
 
 ```javascript
 var appleItemTpl = '\
@@ -3213,7 +3187,7 @@ var appleItemTpl = '\
     ';
 ```
 
-`apple-home.tpl.js` 文件：
+`apple-home.tpl.js`文件：
 
 ```javascript
 var appleHomeTpl = 'Apple data: \
@@ -3222,13 +3196,13 @@ var appleHomeTpl = 'Apple data: \
         <div class="cart-box"></div>';
 ```
 
-`apple-spinner.tpl.js` 文件：
+`apple-spinner.tpl.js`文件：
 
 ```javascript
 var appleSpinnerTpl = '<img src="img/spinner.gif" width="30"/>';
 ```
 
-`apple.tpl.js` 文件：
+`apple.tpl.js`文件：
 
 ```javascript
 var appleTpl = '<figure>\
@@ -3237,13 +3211,15 @@ var appleTpl = '<figure>\
               </figure>';
 ```
 
-现在尝试启动应用程序。完整代码位于 [rpjs/backbone/refactor](https://github.com/azat-co/rpjs/tree/master/refactor) 文件夹下。
+现在尝试启动应用程序。完整代码位于[rpjs/backbone/refactor](https://github.com/azat-co/rpjs/tree/master/refactor)文件夹下。
 
 正如你在之前的示例所示，我们使用了全局作用域变量。
 
 ### 警告
 
-向全局命名空间（`window`）引入大量变量可能会导致冲突和其他不可预测的后果。例如，如果你编写了一个开源库，其他开发者直接使用了这些方法而不是接口，当你决定删除它们时会发生什么？为了防止这种情况，良好的库和应用程序使用了 JavaScriptJavaScript 闭包](https://developer.mozilla.org/en-US/JavaScript/Guide/Closures)。
+
+
+向全局命名空间（`window`）引入大量变量可能会导致冲突和其他不可预测的后果。例如，如果你编写了一个开源库，其他开发者直接使用了这些方法而不是接口，当你决定删除它们时会发生什么？为了防止这种情况，良好的库和应用程序使用了 [JavaScript 闭包](https://developer.mozilla.org/en-US/JavaScript/Guide/Closures)。
 
 使用闭包定义全局变量的示例：
 
@@ -3287,7 +3263,7 @@ AMD 允许我们将开发代码组织成模块、管理依赖并异步加载它�
   <script src="apple-app.js"></script>  
 </head>
 <body>
-  <div></</div>>
+  <div></div>
 </body>
 </html>
 ```
@@ -3311,9 +3287,6 @@ require([
 });
 ```
 
-
-
-
 基本上，我们告诉浏览器从文件名数组（`require()` 函数的第一个参数）中加载文件，然后将来自这些文件的模块作为变量传递给匿名回调函数（第二个参数）。在主函数（匿名回调）内部，我们可以通过引用这些变量来使用我们的模块。因此，我们的 `apple-app.js` 蜕变为：
 
 ```
@@ -3327,15 +3300,15 @@ require([
  8     'apple.view',
  9     'apples'  
 10   ],function(
- 11     appleItemTpl,
- 12     appleHomeTpl,
- 13     appleSpinnerTpl,
- 14     appleTpl,
- 15     appelItemView,
- 16     homeView,
- 17     appleView,
- 18     Apples
- 19     ){
+11     appleItemTpl,
+12     appleHomeTpl,
+13     appleSpinnerTpl,
+14     appleTpl,
+15     appelItemView,
+16     homeView,
+17     appleView,
+18     Apples
+19     ){
 20    var appleData = [
  21       {
  22         name: "fuji",
@@ -3454,7 +3427,7 @@ require([
 
 在 `apple-home.view.js` 文件中，我们需要声明对 `apple-home.tpl` 和 `apple-item.view.js` 文件的依赖：
 
-``````
+```
  1 define(['apple-home.tpl','apple-item.view'],function(
  2   appleHomeTpl,
  3   appleItemView){
@@ -3483,7 +3456,8 @@ require([
 26         }
 27       }
 28     });
-29 )```
+29 )
+```
 
 `apple.view.js` 文件依赖于 `apple.tpl`：
 
@@ -3510,9 +3484,6 @@ require([
 3 }); 
 ```
 
-
-
-
 ### 5. Backbone.js 和 Parse.com
 
 **摘要**：演示了 Backbone.js 与 Parse.com 及其 JavaScript SDK 在修改后的聊天应用中的用法；建议的额外功能列表。
@@ -3520,9 +3491,6 @@ require([
 > “Java 之于 JavaScript 就像汽车之于毯。” —— [Chris Heilmann](http://christianheilmann.com/)
 
 如果你编写过一些复杂的客户端应用，可能会发现维护 JavaScript 回调和 UI 事件的混乱代码是非常挑战性的。Backbone.js 提供了一种轻量且强大的方法，可以将你的逻辑组织成模型-视图-控制器（MVC）类型的结构。它还具有 URL 路由、REST API 支持、事件监听器和触发器等非常棒的功能。有关更多信息以及从零构建 Backbone.js 应用的逐步示例，请参阅 *Intro to Backbone.js* 章节。
-
-
-
 
 你可以在 [backbonejs.org](http://backbonejs.org) 下载 Backbone.js 库。然后，当你像包含其他 JavaScript 文件一样将其放在主 HTML 文件的 `head`（或 `body`）中，你就可以访问 `Backbone` 类了。例如，创建一个路由器：
 
@@ -3586,11 +3554,13 @@ Collection = Backbone.Collection.extend({
 
 显易看出，如果我们继续添加更多如“DELETE”、“UPDATE”以及其他功能的按钮，我们的异步回调系统将变得越来越复杂。我们必须根据数据是否发生变化来决定何时更新视图（即消息列表）。Backbone.js 的模型-视图-控制器（MVC）框架可以使复杂的应用程序更易于管理和维护。
 
-如果你对上一个示例感到熟悉，让我们在此基础上使用 Backbone.js 框架进行构建。在这里，我们将逐步使用 Backbone.js 和 Parse.com JavaScript SDK 创建一个聊天应用程序。如果你觉得已经足够熟悉它，可以在 [github.com/azat-co/super-simple-backbone-starter-kit](http://github.com/azat-co/super-simple-backbone-starter-kit) 下载 Super Simple Backbone Starter Kit。与 Backbone.js 的集成允许通过将用户操作绑定到集合的异步更新来实现简单的实现。
+
+
+如果你对上一个示例感到熟悉，让我们在此基础上使用 `Backbone.js` 框架进行构建。在这里，我们将逐步使用 `Backbone.js` 和 `Parse.com JavaScript SDK` 创建一个聊天应用程序。如果你觉得已经足够熟悉它，可以在 [github.com/azat-co/super-simple-backbone-starter-kit](http://github.com/azat-co/super-simple-backbone-starter-kit) 下载 `Super Simple Backbone Starter Kit`。与 `Backbone.js` 的集成允许通过将用户操作绑定到集合的异步更新来实现简单的实现。
 
 该应用程序可以在 [rpjs/sdk](https://github.com/azat-co/rpjs/tree/master/sdk) 获取，但我们鼓励你从零开始，仅将示例作为参考尝试编写自己的代码。
 
-以下是与 Parse.com 聊天、JavaScript SDK 和 Backbone.js 版本的结构：
+以下是与 `Parse.com` 聊天、`JavaScript SDK` 和 `Backbone.js` 版本的结构：
 
 ```
  /sdk
@@ -3615,7 +3585,7 @@ Collection = Backbone.Collection.extend({
     -text.js
 ```
 
-创建一个文件夹；在文件夹中创建一个包含以下内容骨架的 `index.html` 文件：
+创建一个文件夹；在文件夹中创建一个包含以下内容骨架的`index.html`文件：
 
 ```html
 <!DOCTYPE html>
@@ -3629,7 +3599,7 @@ Collection = Backbone.Collection.extend({
 </html>
 ```
 
-下载必要的库或从 Google API 热链接它们。现在将 JavaScript 库和 Twitter Bootstrap 样式表引入 `head` 元素中，同时包含其他重要但必需的 `meta` 元素。
+下载必要的库或从 `Google API` 热链接它们。现在将 `JavaScript` 库和 `Twitter Bootstrap` 样式表引入`head`元素中，同时包含其他重要但必需的`meta`元素。
 
 ```html
 <head>
@@ -3646,7 +3616,7 @@ Collection = Backbone.Collection.extend({
     content="width=device-width, initial-scale=1.0" />
 ```
 
-从 Google API 热链接 jQuery：
+从 `Google API` 热链接 `jQuery`：
 
 ```html
   <script type="text/javascript" 	
@@ -3654,13 +3624,13 @@ src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js">
 </script>
 ```
 
-备有 Twitter Bootstrap 插件更好：
+备有 `Twitter Bootstrap` 插件更好：
 
 ```html
   <script type="text/javascript" src="js/bootstrap.min.js"></script>
 ```
 
-Parse JavaScript SDK 从 Parse.com 热链接：
+`Parse JavaScript SDK` 从 `Parse.com` 热链接：
 
 ```html
   <script type="text/javascript" 
@@ -3668,7 +3638,7 @@ Parse JavaScript SDK 从 Parse.com 热链接：
 </script>
 ```
 
-Twitter Bootstrap CSS：
+`Twitter Bootstrap` CSS：
 
 ```html
   <link type="css" 
@@ -3683,7 +3653,7 @@ Twitter Bootstrap CSS：
 </head>
 ```
 
-填充 `body` 元素（关于 *Basics* 章节）：
+填充`body`元素（关于 *Basics* 章节）：
 
 ```html
 <body>
@@ -3703,25 +3673,27 @@ Twitter Bootstrap CSS：
 </body>
 ```
 
-在 `app.js` 文件中放置视图：
+在`app.js`文件中放置视图：
 
-使用 `jQuery.html()` 函数来渲染 HTML：
+使用`jQuery.html()`函数来渲染 HTML：
 
 ```javascript
 ```
 
-`app.js` 包含：
+`app.js`包含：
 
 - `headerView`: 菜单
+
 - `footerView`: 版权
+
 - `homeView`: 页面内容
 
 ```javascript
 ```
 
-使用 `Require.js` 插件模板：
+使用`Require.js`插件模板：
 
-使用 `Require.js` 语法和 shim 插件模板：
+使用`Require.js`语法和 shim 插件模板：
 
 ```javascript
 require([
@@ -3734,12 +3706,12 @@ require([
   footerTpl) { 
 ```
 
-在 Backbone.js 框架的基础上构建：
+在`Backbone.js`框架的基础上构建：
 
 ```javascript
 ```
 
-Backbone.js 路由单例：
+`Backbone.js`路由单例：
 
 ```javascript
 var ApplicationRouter = Backbone.Router.extend({
@@ -3779,7 +3751,7 @@ var ApplicationRouter = Backbone.Router.extend({
 });
 ```
 
-header Backbone View 绑定到 `#header` 元素并使用 `headerTpl` 模板：
+header `Backbone View` 绑定到`#header`元素并使用`headerTpl`模板：
 
 ```javascript
   HeaderView = Backbone.View.extend({
@@ -3801,7 +3773,7 @@ header Backbone View 绑定到 `#header` 元素并使用 `headerTpl` 模板：
   });
 ```
 
-footer Backbone View 使用 `footerTpl` 模板：
+footer `Backbone View` 使用`footerTpl`模板：
 
 ```javascript
   FooterView = Backbone.View.extend({
@@ -3813,7 +3785,7 @@ footer Backbone View 使用 `footerTpl` 模板：
   });
 ```
 
-home Backbone View 定义使用 `#content` DOM 元素：
+home `Backbone View` 定义使用`#content` DOM 元素：
 
 ```javascript
   HomeView = Backbone.View.extend({
@@ -3828,7 +3800,7 @@ home Backbone View 定义使用 `#content` DOM 元素：
   });
 ```
 
-View、Models 和 Collections 的创建方式相同：
+`View`、`Models` 和 `Collections` 的创建方式相同：
 
 ```javascript
 Model = Backbone.Model.extend({
@@ -3841,11 +3813,7 @@ Collection = Backbone.Collection.extend({
 });
 ```
 
-关于 Backbone.js 的更多详细信息，请参考 *Intro to Backbone.js* 章节。
-
-
-
-
+关于 `Backbone.js` 的更多详细信息，请参考 *Intro to Backbone.js* 章节。
 
 ```javascript
 require([
@@ -3912,13 +3880,15 @@ require([
 
 上面的代码显示了模板。所有的视图（views）和路由器（routers）都在内部，需要模块确保我们在开始处理之前模板已经加载。
 
-以下是 `home.html` 的内容：
+以下是`home.html`的内容：
 
 *   一个消息表格
-*   用于输出表格行的 Underscore.js 逻辑
+
+*   用于输出表格行的`Underscore.js`逻辑
+
 *   一个新的消息表单
 
-我们通过分配 `row-fluid` 和 `span12` 类来使用 Twitter Bootstrap 库结构（包含其响应式组件）：
+我们通过分配`row-fluid`和`span12`类来使用`Twitter Bootstrap`库结构（包含其响应式组件）：
 
 ```html
 <div class="row-fluid"  id="message-board">
@@ -3934,7 +3904,7 @@ require([
       <tbody>
 ```
 
-这部分包含了 Underscore.js 模板指令，它们仅仅是包裹在 `<%` 和 `%>` 标记中的一些 JS 代码。`_.each()` 是 UnderscoreJS 库中的一个迭代函数（[underscorejs.org/#each](http://underscorejs.org/#each)），它的作用正如其名义——遍历对象或数组的元素：
+这部分包含了`Underscore.js`模板指令，它们仅仅是包裹在`<%`和`%>`标记中的一些 JS 代码。`_.each()`是`UnderscoreJS`库中的一个迭代函数（[underscorejs.org/#each](http://underscorejs.org/#each)），它的作用正如其名义——遍历对象或数组的元素：
 
 ```html
       <% if (models.length>0) {
@@ -3956,7 +3926,7 @@ require([
 </div>
 ```
 
-对于新的消息表单，我们也使用了 `row-fluid` 类并添加了 `input` 元素：
+对于新的消息表单，我们也使用了`row-fluid`类并添加了`input`元素：
 
 ```html
 <div class="row-fluid"  id="new-message">
@@ -3975,7 +3945,9 @@ require([
 </div>
 ```
 
-`home.html` 模板文件的完整代码：
+`home.html`模板文件的完整代码：
+
+
 
 ```html
 <div class="row-fluid"  id="message-board">
@@ -4008,9 +3980,6 @@ require([
 </div>
 ```
 
-
-
-
 ```javascript
  1 /*
   2 Rapid Prototyping with JS is a JavaScript 
@@ -4021,115 +3990,115 @@ require([
   7 
   8 require([
   9   'libs/text!header.html', 
- 10   'libs/text!home.html', 
- 11   'libs/text!footer.html'],   
- 12   function (
- 13     headerTpl, 
- 14     homeTpl, 
- 15     footerTpl) {
- 16   Parse.initialize(
- 17     "your-parse-app-id", 
- 18     "your-parse-js-sdk-key");
- 19   var ApplicationRouter = Backbone.Router.extend({
- 20     routes: {
- 21       "": "home",
- 22       "*actions": "home"
- 23     },
- 24     initialize: function() {
- 25       this.headerView = new HeaderView();
- 26       this.headerView.render();
- 27       this.footerView = new FooterView();
- 28       this.footerView.render();
- 29     },
- 30     home: function() {
- 31       this.homeView = new HomeView();
- 32       this.homeView.render();
- 33     }
- 34   });
- 35 
- 36   HeaderView = Backbone.View.extend({
- 37     el: "#header",
- 38     templateFileName: "header.html",
- 39     template: headerTpl,
- 40     initialize: function() {
- 41     },
- 42     render: function() {
- 43       $(this.el).html(_.template(this.template));
- 44     }
- 45   });
- 46 
- 47   FooterView = Backbone.View.extend({
- 48     el: "#footer",
- 49     template: footerTpl,
- 50     render: function() {
- 51       this.$el.html(_.template(this.template));
- 52     }
- 53   });
- 54   Message = Parse.Object.extend({
- 55     className: "MessageBoard"
- 56   });
- 57   MessageBoard = Parse.Collection.extend ({
- 58     model: Message
- 59   });
- 60   
- 61   HomeView = Backbone.View.extend({
- 62     el: "#content",
- 63     template: homeTpl,
- 64     events: {
- 65       "click #send": "saveMessage"
- 66     },
- 67 
- 68     initialize: function() {
- 69       this.collection = new MessageBoard();
- 70       this.collection.bind("all", this.render, this);
- 71       this.collection.fetch();
- 72       this.collection.on("add", function(message) {
- 73         message.save(null, {
- 74           success: function(message) {
- 75             console.log('saved '+message);
- 76           },
- 77           error: function(message) {
- 78             console.log('error');
- 79           }
- 80         });
- 81         console.log('saved'+message);
- 82       })
- 83     },
- 84     saveMessage: function(){
- 85       var newMessageForm=$("#new-message");
- 86       var username = 
- 87         newMessageForm
- 88           .find('[name="username"]')
- 89           .attr('value');
- 90       var message = newMessageForm
- 91         .find('[name="message"]')
- 92         .attr('value');
- 93       this.collection.add({
- 94         "username": username,
- 95         "message": message
- 96         });
- 97     },
- 98     render: function() {
- 99       console.log(this.collection)
-100       $(this.el).html(_.template(
- 101         this.template, 
- 102         this.collection
- 103       ));
- 104     }
- 105   });
- 106 
- 107   app = new ApplicationRouter();
- 108   Backbone.history.start(); 
- 109 });
+  10   'libs/text!home.html', 
+  11   'libs/text!footer.html'],   
+  12   function (
+  13     headerTpl, 
+  14     homeTpl, 
+  15     footerTpl) {
+  16   Parse.initialize(
+  17     "your-parse-app-id", 
+  18     "your-parse-js-sdk-key");
+  19   var ApplicationRouter = Backbone.Router.extend({
+  20     routes: {
+  21       "": "home",
+  22       "*actions": "home"
+  23     },
+  24     initialize: function() {
+  25       this.headerView = new HeaderView();
+  26       this.headerView.render();
+  27       this.footerView = new FooterView();
+  28       this.footerView.render();
+  29     },
+  30     home: function() {
+  31       this.homeView = new HomeView();
+  32       this.homeView.render();
+  33     }
+  34   });
+  35 
+  36   HeaderView = Backbone.View.extend({
+  37     el: "#header",
+  38     templateFileName: "header.html",
+  39     template: headerTpl,
+  40     initialize: function() {
+  41     },
+  42     render: function() {
+  43       $(this.el).html(_.template(this.template));
+  44     }
+  45   });
+  46 
+  47   FooterView = Backbone.View.extend({
+  48     el: "#footer",
+  49     template: footerTpl,
+  50     render: function() {
+  51       this.$el.html(_.template(this.template));
+  52     }
+  53   });
+  54   Message = Parse.Object.extend({
+  55     className: "MessageBoard"
+  56   });
+  57   MessageBoard = Parse.Collection.extend ({
+  58     model: Message
+  59   });
+  60   
+  61   HomeView = Backbone.View.extend({
+  62     el: "#content",
+  63     template: homeTpl,
+  64     events: {
+  65       "click #send": "saveMessage"
+  66     },
+  67 
+  68     initialize: function() {
+  69       this.collection = new MessageBoard();
+  70       this.collection.bind("all", this.render, this);
+  71       this.collection.fetch();
+  72       this.collection.on("add", function(message) {
+  73         message.save(null, {
+  74           success: function(message) {
+  75             console.log('saved '+message);
+  76           },
+  77           error: function(message) {
+  78             console.log('error');
+  79           }
+  80         });
+  81         console.log('saved'+message);
+  82       })
+  83     },
+  84     saveMessage: function(){
+  85       var newMessageForm=$("#new-message");
+  86       var username = 
+  87         newMessageForm
+  88           .find('[name="username"]')
+  89           .attr('value');
+  90       var message = newMessageForm
+  91         .find('[name="message"]')
+  92         .attr('value');
+  93       this.collection.add({
+  94         "username": username,
+  95         "message": message
+  96         });
+  97     },
+  98     render: function() {
+  99       console.log(this.collection)
+  100       $(this.el).html(_.template(
+  101         this.template, 
+  102         this.collection
+  103       ));
+  104     }
+  105   });
+  106 
+  107   app = new ApplicationRouter();
+  108   Backbone.history.start(); 
+  109 });
 ```
 
 Backbone.js 和 Parse.com 聊天程序的完整源代码可以在 [rpjs/sdk](https://github.com/azat-co/rpjs/tree/master/sdk) 获取。
 
-### 5.2 将聊天功能部署到 PaaS
+## 5.2 将聊天功能部署到 PaaS
 
 一旦你确认前端应用程序在本地运行良好（无论是否使用如 MAMP 或 XAMPP 这样的本地 HTTP 服务器），请将其部署到 Windows Azure 或 Heroku。有关详细的部署说明请参见 `jQuery and Parse.com` 章节。
 
-### 5.3 增强聊天功能
+## 5.3 增强聊天功能
 
 在最后两个示例中，聊天程序的功能非常基础。你可以通过添加更多功能来增强应用程序。
 
@@ -4146,65 +4115,66 @@ Backbone.js 和 Parse.com 聊天程序的完整源代码可以在 [rpjs/sdk](htt
 
 Backbone.js 和 Parse.com 聊天程序的完整源代码可以在 [rpjs/sdk](https://github.com/azat-co/rpjs/tree/master/sdk) 获取。
 
+-   `http.listen()`: 在指定的端口和主机名开始接受连接
 
+-   `http.createClient()`: node 应用程序可以作为一个客户端并向其他服务器发送请求
 
-*   `http.listen()`: 在指定的端口和主机名开始接受连接
-*   `http.createClient()`: node 应用程序可以作为一个客户端并向其他服务器发送请求
-*   `http.ServerRequest()`: 将传入的请求传递给请求处理器
+-   `http.ServerRequest()`: 将传入的请求传递给请求处理器
 
-    **`data`: 当接收到消息体的一部分时触发
-    *   `end`: 每个请求恰好触发一次
-    *   `request.method()`: 字符串格式的请求方法
-    *   `request.url()`: 请求的 URL 字符串
-*   `http.ServerResponse()`: 该对象由 HTTP 服务器内部创建——而不是由用户创建，并作为请求处理器的输出
+    -   `data`: 当接收到消息体的一部分时触发
+    -   `end`: 每个请求恰好触发一次
+    -   `request.method()`: 字符串格式的请求方法
+    -   `request.url()`: 请求的 URL 字符串
 
-    *   `response.writeHead()`: 向请求发送响应头
-    *   `response.write()`: 发送响应体
-    *   `response.end()`: 发送并结束响应体
+-   `http.ServerResponse()`: 该对象由 HTTP 服务器内部创建——而不是由用户创建，并作为请求处理器的输出
 
-#### [util](http://nodejs.org/api/util.html)
+    -   `response.writeHead()`: 向请求发送响应头
+    -   `response.write()`: 发送响应体
+    -   `response.end()`: 发送并结束响应体
+
+### [util](http://nodejs.org/api/util.html)
 
 该模块提供了用于调试的实用程序。部分方法包括：
 
-*   `util.inspect()`: 返回对象的字符串表示，对调试非常有用
+-   `util.inspect()`: 返回对象的字符串表示，对调试非常有用
 
-#### [querystring](http://nodejs.org/api/querystring.html)
+### [querystring](http://nodejs.org/api/querystring.html)
 
 该模块提供了处理查询字符串的实用程序。部分方法包括：
 
-*   `querystring.stringify()`: 将对象序列化为查询字符串
-*   `querystring.parse()`: 将查询字符串反序列化为对象
+-   `querystring.stringify()`: 将对象序列化为查询字符串
+-   `querystring.parse()`: 将查询字符串反序列化为对象
 
-#### [url](http://nodejs.org/api/url.html)
+### [url](http://nodejs.org/api/url.html)
 
 该模块具有 URL 解析和解析的实用程序。部分方法包括：
 
-*   `parse()`: 接收 URL 字符串并返回一个对象
+-   `parse()`: 接收 URL 字符串并返回一个对象
 
-#### [fs](http://nodejs.org/api/fs.html)
+### [fs](http://nodejs.org/api/fs.html)
 
-fs 处理文件系统操作，如读取和写入文件。该库包含同步和异步方法。部分方法包括：
+`fs` 处理文件系统操作，如读取和写入文件。该库包含同步和异步方法。部分方法包括：
 
-*   `fs.readFile()`: 异步读取文件
-*   `fs.writeFile()`: 异步向数据写入文件
+-   `fs.readFile()`: 异步读取文件
+-   `fs.writeFile()`: 异步向数据写入文件
 
 不需要安装或下载核心模块。要在你的应用程序中包含它们，只需要遵循以下语法：
 
-```
-1 var http = require('http');
+```javascript
+var http = require('http');
 ```
 
 可以在以下位置找到非核心模块列表：
 
-*   [npmjs.org](https://npmjs.org): Node 包管理器注册表
-*   [GitHub 托管列表](https://github.com/joyent/node/wiki/Modules): 由 Joyent 维护的 Node.js 模块列表
-*   [nodtoolbox.com](http://nodetoolbox.com/): 基于统计的注册表
-*   [Nipster](http://eirikb.github.com/nipster/): Node.js 的 NPM 搜索工具
-*   [Node Tracking](http://nodejsmodules.org): 基于 GitHub 统计的注册表
+-   [npmjs.org](https://npmjs.org): Node 包管理器注册表
+-   [GitHub 托管列表](https://github.com/joyent/node/wiki/Modules): 由 Joyent 维护的 Node.js 模块列表
+-   [nodtoolbox.com](http://nodetoolbox.com/): 基于统计的注册表
+-   [Nipster](http://eirikb.github.com/nipster/): Node.js 的 NPM 搜索工具
+-   [Node Tracking](http://nodejsmodules.org): 基于 GitHub 统计的注册表
 
 如果你想知道如何编写自己的模块，请查看文章 [你的第一个 Node.js 模块](http://cnnr.me/blog/2012/05/27/your-first-node-dot-js-module/)
 
-#### 6.1.3 Node 包管理器
+### 6.1.3 Node 包管理器
 
 Node 包管理器（或 NPM）负责为你管理依赖关系并安装模块。Node.js 安装程序自带 NPM，其网站为 [npmjs.org](http://npmjs.org/)。
 
@@ -4212,50 +4182,50 @@ Node 包管理器（或 NPM）负责为你管理依赖关系并安装模块。No
 
 如果你想安装 `package.json` 中指定的包和依赖项，请输入：
 
-```
-1 $ npm install 
+```bash
+$ npm install 
 ```
 
 一个典型的 `package.json` 文件可能如下所示：
 
-```
- 1 {
- 2    "name": "Blerg",
- 3    "description": "Blerg blerg blerg.",
- 4    "version": "0.0.1",
- 5    "author": {
- 6       "name" : "John Doe", 
- 7       "email" : "john.doe@gmail.com"
- 8    },
- 9    "repository": {
-10        "type": "git",
-11        "url": "http://github.com/johndoe/blerg.git"
-12    },
- 13    "engines": [
-14        "node >= 0.6.2"
-15    ],
- 16    "license" : "MIT",
- 17    "dependencies": {
-18        "express": ">= 2.5.6",
-19        "mustache": "0.4.0",
-20        "commander": "0.5.2"
-21    },
- 22    "bin" : {
-23        "blerg" : "./cli.js"
-24    }
- 25 }
+```json
+{
+   "name": "Blerg",
+   "description": "Blerg blerg blerg.",
+   "version": "0.0.1",
+   "author": {
+      "name" : "John Doe", 
+      "email" : "john.doe@gmail.com"
+   },
+   "repository": {
+       "type": "git",
+       "url": "http://github.com/johndoe/blerg.git"
+   },
+   "engines": [
+       "node >= 0.6.2"
+   ],
+   "license" : "MIT",
+   "dependencies": {
+       "express": ">= 2.5.6",
+       "mustache": "0.4.0",
+       "commander": "0.5.2"
+   },
+   "bin" : {
+       "blerg" : "./cli.js"
+   }
+}
 ```
 
 要将包更新到当前最新版本，或 `package.json` 中定义的版本规范允许的最新版本，请使用：
 
-```
-1 $ npm update name-of-the-package
+```bash
+$ npm update name-of-the-package
 ```
 
 或者对于单个模块安装：
 
-```
-1 $ npm install name-of-the-package
+```bash
+$ npm install name-of-the-package
 ```
 
 示例中使用的唯一一个且不属于 Node.js 核心包的模块是 `mongodb`。我们将在书的后部分安装它。
@@ -4264,36 +4234,36 @@ Heroku 需要 `package.json` 来在服务器上运行 NPM。
 
 有关 NPM 的更多信息，请查看文章 [NPM 之之旅](http://tobyho.com/2012/02/09/)。
 
-#### 6.1.3 部署到 Azure
+### 6.1.3 部署到 Azure
 
 为了部署，我们需要创建一个仓库。在项目文件夹中执行：
 
-```
-1 $ git init
+```bash
+$ git init
 ```
 
 现在添加文件并进行首次提交：
 
-```
-1 $ git add .
-2 $ git commit -m "first commit"
+```bash
+$ git add .
+$ git commit -m "first commit"
 ```
 
-#### 6.1.5 部署到 Azure
+### 6.1.5 部署到 Azure
 
 为了部署应用程序，我们需要添加 Git 远程。命令与 Windows Azure 类似，但我们需要添加 Git 远程：
 
-```
-1 $ remote add azure
+```bash
+$ remote add azure
 ```
 
 完成后，推送并更新：
 
-```
-1 $ git push master
-2 $ git add .
-3 $ git commit -m "changes"
-4 $ git push master
+```bash
+$ git push master
+$ git add .
+$ git commit -m "changes"
+$ git push master
 ```
 
 ### 6.1.6 部署到 Heroku
@@ -4302,62 +4272,59 @@ Heroku 需要 `package.json` 来在服务器上运行 NPM。
 
 在我们的项目文件夹中拥有所有文件后，可以使用 Git 部署应用程序。命令与之前类似，但我们需要添加 Git 远程，并使用以下命令创建：
 
-```
-1 $ heroku create
+```bash
+$ heroku create
 ```
 
 完成后，推送并更新：
 
-```
-1 $ git push heroku master
-2 $ git add .
-3 $ git commit -am "changes"
-4 $ git push heroku master
+```bash
+$ git push heroku master
+$ git add .
+$ git commit -am "changes"
+$ git push heroku master
 ```
 
-#### 6.2 聊天：内存版本
+### 6.2 聊天：内存版本
 
 为了遵循 KISS 原则（保持简单），聊天后端应用程序的第一个版本将消息存储在内存存储中。这意味着每次我们启动/重置服务器时，数据都会丢失。
 
 我们将从一个简单的测试用例开始，以说明测试驱动开发（TDD）方法。
 
-#### 6.3 聊天测试用例
+### 6.3 聊天测试用例
 
 我们应该有两个方法：
 
 1.  使用 `getMessages()` 方法为 GET `/message` 端点以 JSON 对象数组的形式获取所有消息。
+2.  通过 `addMessage()` 函数为 POST `/messages` 路由添加带有 `name` 和 `message` 属性的新消息
 
 
 
-
-
-## 2. 通过 `addMessage()` 函数为 POST `/messages` 路由添加带有 `name` 和 `message` 属性的新消息
-
-我们首先创建一个空的 `mb-server.js` 文件。创建完成后，让我们切换到测试，并创建一个包含以下内容的 `test.js` 文件：
+我们首先创建一个空的`mb-server.js`文件。创建完成后，让我们切换到测试，并创建一个包含以下内容的`test.js`文件：
 
 ```
- 1 var http = require('http');
- 2 var assert = require('assert');
- 3 var querystring = require('querystring');
- 4 var util = require('util');
- 5 
- 6 var messageBoard = require('./mb-server');
- 7 
- 8 assert.deepEqual('[{"name":"John","message":"hi"}]',
- 9   messageBoard.getMessages());
-10 assert.deepEqual ('{"name":"Jake","message":"gogo"}',
-11   messageBoard.addMessage ("name=Jake&message=gogo"));
-12 assert.deepEqual('[{"name":"John","message":"hi"},{"name":"Jake","message":"gogo"}]', 
-13   messageBoard.getMessages("name=Jake&message=gogo"));
+var http = require('http');
+var assert = require('assert');
+var querystring = require('querystring');
+var util = require('util');
+
+var messageBoard = require('./mb-server');
+
+assert.deepEqual('[{"name":"John","message":"hi"}]',
+  messageBoard.getMessages());
+assert.deepEqual ('{"name":"Jake","message":"gogo"}',
+  messageBoard.addMessage ("name=Jake&message=gogo"));
+assert.deepEqual('[{"name":"John","message":"hi"},{"name":"Jake","message":"gogo"}]', 
+  messageBoard.getMessages("name=Jake&message=gogo"));
 ```
 
 请记住，这是一个非常简化的字符串比较，而不是 JavaScript 对象。因此，每个空格、引号和大小写至关重要。你可以通过将字符串解析为 JSON 对象来让比较变得更“智能”：
 
 ```
-1 JSON.parse(str);
+JSON.parse(str);
 ```
 
-为了测试我们的假设，我们使用了 Node.js 的核心模块 [assert](http://nodejs.org/api/assert.html)。它提供了很多实用的方法，如 `equal()`、`deepEqual()` 等。
+为了测试我们的假设，我们使用了 Node.js 的核心模块[assert](http://nodejs.org/api/assert.html)。它提供了很多实用的方法，如`equal()`、`deepEqual()`等。
 
 更高级的库包括提供了具有 TDD 和/或 BDD 方法的备选接口：
 
@@ -4372,184 +4339,180 @@ Heroku 需要 `package.json` 来在服务器上运行 NPM。
 * [Vows](http://vowsjs.org/)
 * [Chai](http://chaijs.com/)
 
-你现在可以将“Hello World”脚本复制到 `mb-server.js` 文件中，甚至保持它为空。如果我们通过终端命令运行 `test.js`：
+你现在可以将“Hello World”脚本复制到`mb-server.js`文件中，甚至保持它为空。如果我们通过终端命令运行`test.js`：
 
 ```
-1 $ node test.js 
+$ node test.js 
 ```
 
 我们应该会看到一个错误。可能类似于这样：
 
 ```
-1 TypeError: Object #<Object> has no method 'getMessages'
+TypeError: Object #<Object> has no method 'getMessages'
 ```
 
-这完全没，因为我们还没有写 `getMessages()` 方法。所以让我们来实现它，通过添加两个新方法让我们的应用程序更有用：获取聊天的消息列表，以及向集合中添加新消息。
+这完全没问题，因为我们还没有写`getMessages()`方法。所以让我们来实现它，通过添加两个新方法让我们的应用程序更有用：获取聊天的消息列表，以及向集合中添加新消息。
 
-### 带有全局 `exports` 对象的 mb-server.js 文件：
-
-```
-1 exports.getMessages = function() {
-2   return JSON.stringify(messages);
-3 };	
-4 exports.addMessage = function (data){		
-5   messages.push(querystring.parse(data));
-6   return JSON.stringify(querystring.parse(data));	
-7 };
-```
-
-到为止，没什么特别，对吧？为了存储消息列表，我们将使用数组：
+### 带有全局`exports`对象的`mb-server.js`文件
 
 ```
-1 var messages=[];
-2 //这个数组将持有我们的消息
-3 messages.push({
-4   "name":"John",
-5   "message":"hi"
-6 });
-7 //用于测试列表方法的示例消息
+exports.getMessages = function() {
+  return JSON.stringify(messages);
+};	
+exports.addMessage = function (data){		
+  messages.push(querystring.parse(data));
+  return JSON.stringify(querystring.parse(data));	
+};
+```
+
+到目前为止，没什么特别，对吧？为了存储消息列表，我们将使用数组：
+
+```
+var messages=[];
+//这个数组将持有我们的消息
+messages.push({
+  "name":"John",
+  "message":"hi"
+});
+//用于测试列表方法的示例消息
 ```
 
 | ![tip](img/leanpub_tip.png) | **提示**: 通常情况下，像虚拟数据这样的固定设备属于测试/规范文件，而不属于主应用程序代码库。 |
 
-我们的服务器代码看起来会稍微有趣一点。获取消息列表，根据 REST 方法论，我们需要发送 GET 请求。对于创建/添加新消息，应该是一个 POST 请求。因此在我们的 `createServer` 对象中，我们应该添加 `req.method()` 和 `req.url()` 来检查 HTTP 请求类型和 URL 路径。
+我们的服务器代码看起来会稍微有趣一点。获取消息列表，根据 REST 方法论，我们需要发送 GET 请求。对于创建/添加新消息，应该是一个 POST 请求。因此在我们的`createServer`对象中，我们应该添加`req.method()`和`req.url()`来检查 HTTP 请求类型和 URL 路径。
 
-加载 `http` 模块：
-
-```
-1 var http = require('http');
-```
-
-我们需要 `util` 和 `querystring` 模块中的一些方便函数（用于序列化和反序列化对象以及查询字符串）：
+加载`http`模块：
 
 ```
-1 var util = require('util');
-2 var querystring = require('ystring');
+var http = require('http');
 ```
 
-创建一个服务器并将其暴露给外部模块（即 `test.js`）：
+我们需要`util`和`querystring`模块中的一些方便函数（用于序列化和反序列化对象以及查询字符串）：
 
 ```
-1 exports.server=http.createServer(function (req, res) {
+var util = require('util');
+var querystring = require('querystring');
 ```
 
-在请求处理器回调内部，我们应该检查请求方法是否为 POST 且 URL 为 `/messages/create.json`：
+创建一个服务器并将其暴露给外部模块（即`test.js`）：
 
 ```
-1   if (req.method == "POST" && 
-2     req.url == "/messages/create.json") {
+exports.server=http.createServer(function (req, res) {
 ```
 
-如果上述条件成立，我们将消息添加到数组中。然而，在添加之前 `data` 必须转换为字符串类型（使用 UTF-8 编码），因为它是一个 Buffer 类型：
+在请求处理器回调内部，我们应该检查请求方法是否为 POST 且 URL 为`/messages/create.json`：
 
 ```
-1     var message = '';
-2     req.on('data', function(data, message){
-3       console.log(data.toString('utf-8'));
-4       message = exports.addMessage(data.toString('utf-8'));
+  if (req.method == "POST" && 
+    req.url == "/messages/create.json") {
+```
+
+如果上述条件成立，我们将消息添加到数组中。然而，在添加之前`data`必须转换为字符串类型（使用 UTF-8 编码），因为它是一个 Buffer 类型：
+
+```
+    var message = '';
+    req.on('data', function(data, message){
+      console.log(data.toString('utf-8'));
+      message = exports.addMessage(data.toString('utf-8'));
 ```
 
 这些日志将帮助我们在终端中监控服务器活动：
 
 ```
-1     })
-2     console.log(util.inspect(message, true, null));
-3     console.log(util.inspect(messages, true, null));
+    })
+    console.log(util.inspect(message, true, null));
+    console.log(util.inspect(messages, true, null));
 ```
 
 输出应为文本格式且状态码为 200：
 
 ```
-1     res.writeHead(200, {
-2       'Content-Type': 'text/plain'
-3     });
+    res.writeHead(200, {
+      'Content-Type': 'text/plain'
+    });
 ```
 
 我们输出新创建的消息：
 
 ```
-1     res.end(message);
-2   }
+    res.end(message);
+  }
 ```
 
-如果方法是 GET 且 URL 为 `/messages/list.json`，则输出消息列表：
+如果方法是 GET 且 URL 为`/messages/list.json`，则输出消息列表：
 
 ```
-1   if (req.method == "GET" && 
-2     req.url == "/messages/list.json") {
+  if (req.method == "GET" && 
+    req.url == "/messages/list.json") {
 ```
 
 获取消息列表：
 
 ```
-1     var body = exports.getMessages();
+    var body = exports.getMessages();
 ```
 
 响应体将包含我们的输出：
 
 ```
-1     res.writeHead(200, {
-2       'Content-Length': body.length,
-3       'Content-Type': 'text/plain'
-4     });
-5     res.end(body);
-6   }
-7   else {
+    res.writeHead(200, {
+      'Content-Length': body.length,
+      'Content-Type': 'text/plain'
+    });
+    res.end(body);
+  }
+  else {
 ```
 
 设置正确的头部和状态码：
 
 ```
-1     res.writeHead(200, {
-2       'Content-Type': 'text/plain'
-3     });
+    res.writeHead(200, {
+      'Content-Type': 'text/plain'
+    });
 ```
 
 如果不是上述两个端点之一，我们输出一个带有换行符的字符串：
 
 ```
-1     res.end('Hello World\n');
-2   };
-3   console.log(req.method);
+    res.end('Hello World\n');
+  };
+  console.log(req.method);
 ```
 
 ```
-1 }).listen(1337, "127.0.0.1");
+}).listen(1337, "127.0.0.1");
 ```
 
 现在，我们应该设置服务器的端口和 IP 地址：
 
 ```
-1 console.log('Server running at http://127.0.0.1:1337/');
+console.log('Server running at http://127.0.0.1:1337/');
 ```
 
-我们在 `test.js` 中导出单元测试的方法（`exports` 关键字），该函数返回字符串/文本格式的消息数组：
+我们在`test.js`中导出单元测试的方法（`exports`关键字），该函数返回字符串/文本格式的消息数组：
 
 ```
-1 exports.getMessages = function() {
-2   return JSON.stringify(messages);
-3 };
+exports.getMessages = function() {
+  return JSON.stringify(messages);
+};
 ```
 
-`addMessage()` 使用 `querystring` 的 `parse` 反序列化方法将字符串转换为 JavaScript 对象：
+`addMessage()`使用`querystring`的`parse`反序列化方法将字符串转换为 JavaScript 对象：
 
 ```
-1 exports.addMessage = function (data){
-2   messages.push(querystring.parse(data));
+exports.addMessage = function (data){
+  messages.push(querystring.parse(data));
 ```
 
 同时也返回一个 JSON 字符串格式的新消息：
 
 ```
-1   return JSON.stringify(querystring.parse(data));
-2 };
+  return JSON.stringify(querystring.parse(data));
+};
 ```
 
-这里是 `mb-server.js` 的完整代码。它在 [rpjs/test](https://github.com/azat-co/rpjs/tree/master/test) 处也可用：
-
-
-
-
+这里是`mb-server.js`的完整代码。它在[rpjs/test](https://github.com/azat-co/rpjs/tree/master/test)处也可用：
 
 ```javascript
 var http = require('http');
@@ -4630,7 +4593,7 @@ exports.addMessage = function (data){
 };
 ```
 
-要检查它，请访问 [localhost:1337/messages/list.json](http://localhost:1337/messages/list.json)。你应该能看到一个示例消息。或者，你使用终端命令：
+要检查它，请访问[localhost:1337/messages/list.json](http://localhost:1337/messages/list.json)。你应该能看到一个示例消息。或者，你使用终端命令：
 
 ```
 $ curl http://127.0.0.1:1337/messages/list.json
@@ -4642,16 +4605,13 @@ $ curl http://127.0.0.1:1337/messages/list.json
 curl -d "name=BOB&message=test" http://127.0.0.1:1337/messages/create.json
 ```
 
-并且你应该会在服务器终端窗口中获得输出，并在刷新 [localhost:1337/messages/list.json](http://localhost:1337/messages/list.json) 时看到新消息“test”。不用多说，所有三个测试都应该通过。
+并且你应该会在服务器终端窗口中获得输出，并在刷新[localhost:1337/messages/list.json](http://localhost:1337/messages/list.json)时看到新消息“test”。不用多说，所有三个测试都应该通过。
 
-你的应用程序可能会随着方法、需要解析的 URL 路径和条件的增加而变得更大。这正是框架大显身手的地方。它们提供了处理请求的助手以及其他功能，如静态文件支持、会 等。在这个示例中，我们故意没有使用任何框架，如 Express ([`expressjs.com/`](http://expressjs.com/)) 或 Restify ([`mcavage.github.com/node-restify/`](http://mcavage.github.com/node-restify/))。其他值得的 Node.js 框架：
+你的应用程序可能会随着方法、需要解析的 URL 路径和条件的增加而变得更大。这正是框架大显身手的地方。它们提供了处理请求的助手以及其他功能，如静态文件支持、会话等。在这个示例中，我们故意没有使用任何框架，如 Express ([`expressjs.com/`](http://expressjs.com/)) 或 Restify ([`mcavage.github.com/node-restify/`](http://mcavage.github.com/node-restify/))。其他值得的 Node.js 框架：
 
 - [Derby](http://derbyjs.com/): MVC 框架，使其易于编写在 Node.js 和浏览器中共同运行的实时协作应用程序
 - [Express.js](http://expressjs.com):最稳健、经过测试且被最广泛使用的 Node.js 框架
 - [Restify](http://mcavage.github.com/node-restify/):一个用于用 Node.js 构建微服务的快速、灵活的框架
-
-
-
 
 或者，为了你自己的开发，你可以使用其他的映射器（mappers），它们原生驱动（Native Driver）的扩展可用：
 
@@ -4662,331 +4622,41 @@ curl -d "name=BOB&message=test" http://127.0.0.1:1337/messages/create.json
 
 这个小示例将测试我们是否可以从 Node.js 脚本连接到本地 MongoDB 实例。
 
-在安装库之后，我们可以在 `db.js` 文件中引入 `mongodb` 库：
+在安装库之后，我们可以在`db.js`文件中引入`mongodb`库：
 
 ```
-1 var util = require('util');
-2 var mongodb = require ('mongodb');
+var util = require('util');
+var mongodb = require ('mongodb');
 ```
 
-这是建立与 MongoDB 服务器连接的方法之一，其中 `db` 变量将持有指定主机和端口的数据库引用：
+这是建立与 MongoDB 服务器连接的方法之一，其中`db`变量将持有指定主机和端口的数据库引用：
 
-```
-1 var Db = mongodb.Db;
-2 var Connection = mongodb.Connection;
-3 var Server = mongodb.Server;
-4 var host = '127.0.0.1';
-5 var port = 27017;
-6 
-7 var db=new Db ('test', new Server(host,port, {}));
-```
 
-要实际打开连接：
 
-```
-1 db.open(function(e,c){
-2 	//在此处对数据库进行操作
-3   // console.log (util.inspect(db));
-4   console.log(db._state);
-5   db.close();
-6 });
-```
+进入`/path/to/xxx`目录，找到`xxx.json`。
 
-这段代码段位于 [rpjs/db/db.js](https://github.com/azat-co/rpjs/blob/master/db/db.js) 下。如果我们运行它，终端应该输出“connected”。当你不确定并需要检查对象的属性时，`util` 模块中有一个非常有用的方法：
+在表达式`cvar = avar + bvar`中，加法运算符（`+`）将`avar`与`bvar`相加，得到它们的和`cvar`
 
-```
-1 console.log(util.inspect(db));
-```
+在`List.of(arg0, arg1, arg2)`中，`List`接口的工厂方法`of()`接受一系列的元素，返回包含它们的只读列表。
 
-### 6.4.3 Heroku  MongoDB: MongoHQ
+之后我们这样调用`cmd`命令：`cmd arg0 arg1 arg2`。
 
-在本地成功运行显示“connected”的应用程序后，是时候对其进行微调并部署到平台即服务（即 Heroku）了。
+if (condVar > someVal) {console.log("xxx")}
 
-我们建议使用 [MongoHQ add-on](https://addons.heroku.com/mongohq)，它是 [MongoHQ](https://www.mongohq.com/home) 技术的一部分。它提供了一个基于浏览器的 GUI 来查找和操作数据及集合。更多信息请访问 [`devcenter.heroku.com/articles/mongohq`](https://devcenter.heroku.com/articles/mongohq)。
 
-| ![information](img/leanpub_information.png) |  
-
-#### 注意
-
- 即使你选择了免费版本，你可能也需要提供信用卡信息才能使用 MongoHQ。不过，你不应该被收取费用。 |
-
-为了连接到数据库服务器，有一个数据库连接 URL（也称为 MongoHQ URL/URI），这在一个字符串中传输所有连接数据库所需信息的方法。
-
-数据库连接字符串 `MONGOHQ_URL` 具有以下格式：
-
-```
-1 mongodb://user:pass@server.mongohq.com/db_name
-```
-
-你可以从 Heroku 网站复制 MongoHQ URL 字符串（并硬编码），或者从 Node.js 的 `process.env` 对象获取该字符串：
-
-```
-1 process.env.MONGOHQ_URL;
-```
-
-或者
-
-```
-1 var connectionUri = url.parse(process.env.MONGOHQ_URL);
-```
-
-| ![tip](img/leanpub_tip.png) |  
-
-#### 提示
-
-全局对象 `process` 通过 `process.env` 访问环境变量。这些变量通常用于传递数据库主机名和端口、密码、API 密钥、端口号以及不应硬编码到主逻辑中的系统信息。
-
-为了让我们的代码在本地和 Heroku 上都能运行，我们可以使用逻辑或运算符 `||`，并在环境变量未定义时分配本地主机和端口：
-
-```
-1 var port = process.env.PORT || 1337;
-2 var dbConnUrl = process.env.MONGOHQ_URL || 
-3   'mongodb://@127.0.0.1:27017';
-```
-
-这是我们更新后的跨环境可用 `db.js` 文件：
-
-```
- 1 var url = require('url')
- 2 var util = require('util');
-3 var mongodb = require ('mongodb');
-4 var Db = mongodb.Db;
-5 var Connection = mongodb.Connection;
-6 var Server = mongodb.Server;
- 7
- 8 var dbConnUrl = process.env.MONGOHQ_URL ||
-9 'mongodb://127.0.0.1:27017';
-10 var host = url.parse(dbConnUrl).hostname;
-11 var port = new Number(url.parse(dbConnUrl).port);
-12  
-13 var db=new Db ('test', new Server(host,port, {}));
-14 db.open(function(e,c){
-15   // console.log (util.inspect(db));
-16   console.log(db._state);
-17 });
-```
-
-
-
-
-这里是关于如何在 Node.js 代码中使用 MongoDB 的教程：[mongodb.github.com/node-mongodb-native/api-articles/nodekoarticle1.html](http://mongodb.github.com/node-mongodb-native/api-articles/nodekoarticle1.html)。
-
-另一种方法是使用 MongoHQ 模块，地址为 [github.com/MongoHQ/mongohq-nodejs](https://github.com/MongoHQ/mongohq-nodejs)。
-
-此示例演示了 `mongodb` 库的另一种用法，通过输出集合和文档计数。完整源代码来自 [rpjs/db/collections.js](https://github.com/azat-co/rpjs/blob/master/db/collections.js)：
-
-```
- 1 var mongodb = require('mongodb');
- 2 var url = require('url');
- 3 var log = console.log;
- 4 var dbUri = process.env.MONGOHQ_URL || 'mongodb://localhost:27017/test';
- 5 
- 6 var connectionUri = url.parse(dbUri);
- 7 var dbName = connectionUri.pathname.replace(/^\//, '');
- 8 
- 9 mongodb.Db.connect(dbUri, function(error, client) {
-10   if (error) throw error;
-11 
-12   client.collectionNames(function(error, names){
-13     if(error) throw error;
-14 
-15     //output all collection names
-16     log("Collections");
-17     log("===========");
-18     var lastCollection = null;
-19     names.forEach(function(colData){
-20       var colName = colData.name.replace(dbName + ".", '')
-21       log(colName);
-22       lastCollection = colName;
-23     });
-24     if (!lastCollection) return;
-25     var collection = new mongodb.Collection(client, lastCollection);
-26     log("\nDocuments in " + lastCollection);
-27     var documents = collection.find({}, {limit:5});
-28 
-29     //output a count of all documents found
-30     documents.count(function(error, count){
-31       log("  " + count + " documents(s) found");
-32       log("====================");
-33 
-34       // output the first 5 documents
-35     documents.toArray(function(error, docs) {
-36         if(error) throw error;
-37 
-38         docs.forEach(function(doc){
-39           log(doc);
-40         });
-41      
-42         // close the connection
-43         client.close();
-44       });
-45     });
-46   });
-47 });
-```
-
-我们使用 `var log = console.log;` 为 `console.log()` 做了简写，并通过 `if (!lastCollection) return;` 作为控制流。
-
-### 6.4.4 BSON
-
-二进制 JSON（Binary JSON，简称 BSON）是 MongoDB 利用的一种特殊数据类型。它的表示法与 JSON 相似，但支持更多更复杂的数据类型。
-
-| ![warning](img/leanpub_warning.png) |  
-
-### 警告
-
-关于 BSON 的一点提示：MongoDB 中的 `ObjectId` 等同于 MongoDB Native Node.js 驱动中的 `ObjectID`，即确保使用正确的大小写。否则你将报错。更多关于类型的信息请参考：[MongoDB 中的 ObjectId](http://www.mongodb.org/display/DOCS/Object+IDs) 与 [MongoDB Native Node.js Driver 中的数据类型](https://github.com/mongodb/node-mongodb-native/#data-types)。使用 `mongodb.ObjectID()` 的 Node.js 代码示例：`collection.findOne({_id: new ObjectID(idString)}, console.log) // ok`。另一方面，在 MongoDB shell 中，我们使用：`db.messages.findOne({_id:ObjectId(idStr)});`。
-
-## 6.5 聊天：MongoDB 版本
-
-我们应该准备好编写 Node.js 应用的所有工作，它可以在本地也可以在 Heroku 上运行。源代码可以在 [rpjs/mongo](https://github.com/azat-co/rpjs/tree/master/mongo) 获取。应用程序的结构简单：
-
-```
-1 /mongo
-2   -web.js
-3   -Procfile
-4   -package.json
-```
-
-这是 `web.js` 的样子；首先我们包含了库：
-
-```
-1 var http = require('http');
-2 var util = require('util');
-3 var querystring = require('querystring');
-4 var mongo = require('mongodb');
-```
-
-然后输出一个连接 MongoDB 的魔法字符串：
-
-```
-1 var host = process.env.MONGOHQ_URL || "mongodb://@127.0.0.1:27017/twitter-clone";
-2 //MONGOHQ_URL=mongodb://user:pass@server.mongohq.com/db_name
-```
-
-| ![information](img/leanpub_information.png) |  
-
-### 注意
-
-URI/URL 格式包含了可选的数据库名称，我们的集合将存储其中。可以随时将其更改其他内容，例如‘rpjs’或‘test’。 |
-
-我们将所有逻辑以回调函数的形式写在打开的连接内部：
-
-```
- 1 mongo.connect(host, function(error, db) {
-2   if (error) throw error;
-3 
-4   var collection = db.collection('messages');
-5   var server = http.createServer(function(req, res) {
-6     if (req.method === 'GET') {
-7       collection.find({}).toArray(function(error, docs) {
-8         if (error) throw error;
-9         res.writeHead(200, {'Content-Type': 'application/json'});
-10        res.end(JSON.stringify(docs));
-11      });
-12    } else if (req.method === 'POST') {
-13      var body = '';
-14      req.on('data', function(chunk) {
-15        body += chunk;
-16      });
-17      req.on('end', function() {
-18        var data = querystring.parse(body);
-19        collection.insert(data, function(error, result) {
-20          if (error) throw error;
-21          res.writeHead(200, {'Content-Type': 'application/json'});
-22          res.end(JSON.stringify(result));
-23        });
-24      });
-25    }
-26  });
-27 
-28  server.listen(port);
-29 });
-30 });
-```
-
-
-
-
-
-# 总结：不同部署方法的说明、Chat 应用的最终版本及其部署。
-
-> *“调试比最初编写代码要困难一倍。因此，如果你编写代码时尽可能巧妙，那么从定义上来说，你就不够聪明去调试它。”* — [Brian W. Kernighan](http://en.wikipedia.org/wiki/Brian_Kernighan)
-
-现在，如果我们能将前端和后端应用放在一起让它们协同工作，那就好了。有几种实现方法：
-
-*   前端和后端应用使用不同的域名（Heroku 应用）：通过使用 `CORS` 或 `JSONP` 确保没有跨域问题。这种方法将在后文中进行详细介绍。
-*   同域名部署：确保 `Node.js` 处理前端应用程序的静态资源和资产——不建议用于正式的生产环境应用。
-
-### 7.1 不同域名部署
-
-到目前为止，这是生产环境的最佳实践。后端应用通常部署在 `http://app.*` 或 `http://api.*` 子域名下。
-
-实现跨域名部署的一种方法是使用 `JSONP` 克服 AJAX 技术的同源限制：
-
-```
-1 var request = $.ajax({
-2   url: url,
-3   dataType: "jsonp",
-4   data: {...},
-5   jsonpCallback: "fetchData",
-6   type: "GET" 
-7 });
-```
-
-另一种更好的方法是在输出之前，在 `Node.js` 服务器应用中添加 `OPTIONS` 方法和特殊的请求头（这些称为 `CORS`）：
-
-```javascript
-1   ...
-2   response.writeHead(200,{
-3     'Access-Control-Allow-Origin': origin,
-4     'Content-Type':'text/plain',
-5     'Content-Length':body.length
-6   });
-7   ...
-```
-
-或者
-
-```javascript
-1   ...
-2   res.writeHead(200, {
-3     'Access-Control-Allow-Origin', 'your-domain-name',
-4     ...
-5   });
-6   ...
-```
-
-对 `OPTIONS` 方法的需求在 [HTTP 访问控制 (CORS)](https://developer.mozilla.org/en-US/docs/HTTP_access_control) 中有所概述。`OPTIONS` 请求可以按照以下方式处理：
-
-```javascript
- 1   ...
- 2   if (request.method=="OPTIONS") {
- 3     response.writeHead("204", "No Content", {
- 4       "Access-Control-Allow-Origin": origin,
- 5       "Access-Control-Allow-Methods": 
- 6         "GET, POST, PUT, DELETE, OPTIONS",
- 7       "Access-Control-Allow-Headers": "content-type, accept",
- 8       "Access-Control-Max-Age": 10, // 秒。
- 9       "Content-Length": 0
-10     });            
-11     response.end();
-12   };
-13   ...
-```
 
 ### 7.2 更改端点
 
-我们的前端应用之前使用 `Parse.com` 作为后端应用。现在我们可以切换到自己的后端（是的，这非常简单！）。前端应用的源码位于 [rpjs/board](https://github.com/azat-co/rpjs/tree/master/board) GitHub 文件夹中。
+我们的前端应用之前使用`Parse.com`作为后端应用。现在我们可以切换到自己的后端（是的，这非常简单！）。前端应用的源码位于[rpjs/board](https://github.com/azat-co/rpjs/tree/master/board) GitHub文件夹中。
 
-在 `app.js` 开头，取消第一行的注释以便在本地运行，或者将 `URL` 值替换为 Heroku 或 Windows Azure 后端应用的公共 URL：
+在`app.js`开头，取消第一行的注释以便在本地运行，或者将`URL`值替换为Heroku或Windows Azure后端应用的公共URL：
 
 ```javascript
 1 // var URL = "http://localhost:5000/";
 2 var URL ="http://your-app-name.herokuapp.com/"; 
 ```
 
-如所示，`app.js` 中的大部分代码和文件夹结构保持完好，除了将 `Parse.com` 模型和集合替换为原始的 `Backbone.js` 模型之外：
+如所示，`app.js`中的大部分代码和文件夹结构保持完好，除了将`Parse.com`模型和集合替换为原始的`Backbone.js`模型之外：
 
 ```javascript
 1 Message = Backbone.Model.extend({
@@ -4998,9 +4668,9 @@ URI/URL 格式包含了可选的数据库名称，我们的集合将存储其中
 7 });
 ```
 
-这些是 `Backbone.js` 查找对应特定集合和模型的 REST API URL 的地方。
+这些是`Backbone.js`查找对应特定集合和模型的REST API URL的地方。
 
-以下是 [rpjs/board/app.js](https://github.com/azat-co/rpjs/blob/master/board/app.js) 文件的完整源码：
+以下是[rpjs/board/app.js](https://github.com/azat-co/rpjs/blob/master/board/app.js)文件的完整源码：
 
 ```javascript
  1 /*
@@ -5102,20 +4772,20 @@ URI/URL 格式包含了可选的数据库名称，我们的集合将存储其中
  97     render: function() {
  98       console.log(this.collection)
  99       $(this.el).html(_.template(
- 100         this.template, 
- 101         this.collection
- 102       ));
- 103     }
- 104   });
- 105 
- 106   app = new ApplicationRouter();
- 107   Backbone.history.start();
- 108 });
+100         this.template, 
+101         this.collection
+102       ));
+103     }
+104   });
+105 
+106   app = new ApplicationRouter();
+107   Backbone.history.start();
+108 });
 ```
 
-## 7.3 Chat 应用
+### 7.3 Chat 应用
 
-后端 Node.js 应用源码位于 [rpjs/node](https://github.com/azat-co/rpjs/tree/master/node) GitHub 文件夹中，结构如下：
+后端 Node.js 应用源码位于[rpjs/node](https://github.com/azat-co/rpjs/tree/master/node) GitHub文件夹中，结构如下：
 
 ```
 1 /node
@@ -5124,11 +4794,7 @@ URI/URL 格式包含了可选的数据库名称，我们的集合将存储其中
 4 	-package.json
 ```
 
-以下是 web.js 的源码，我们带有 CORS 头的 Node.js 应用：
-
-
-
-
+以下是`web.js`的源码，我们带有CORS头的Node.js应用：
 
 ```javascript
  /*
@@ -5207,9 +4873,9 @@ mongo.Db.connect(host, function(error, client) {
 
 ### 7.4 部署
 
-为了方便起见，我们将前端应用放在了 [rpjs/board](https://github.com/azat-co/rpjs/tree/master/board) 文件夹中，带有 CORS 的后端应用放在了 [rpjs/node](https://github.com/azat-co/rpjs/tree/master/node) 下。现在你可能已经知道怎么做了，但作为参考，下面是将这些示例部署到 Heroku 的步骤。
+为了方便起见，我们将前端应用放在了[rpjs/board](https://github.com/azat-co/rpjs/tree/master/board)文件夹中，带有CORS的后端应用放在了[rpjs/node](https://github.com/azat-co/rpjs/tree/master/node)下。现在你可能已经知道怎么做了，但作为参考，下面是将这些示例部署到Heroku的步骤。
 
-在 `node` 文件夹中执行：
+在`node`文件夹中执行：
 
 ```bash
 $ git init
@@ -5220,7 +4886,7 @@ $ heroku addons:add mongohq:sandbox
 $ git push heroku master
 ```
 
-复制 URL 并将其粘贴到 `board/app.js` 文件中，将其赋值给 `URL` 变量。然后，在 `board` 文件夹中执行：
+复制URL并将其粘贴到`board/app.js`文件中，将其赋值给`URL`变量。然后，在`board`文件夹中执行：
 
 ```bash
 $ git init
@@ -5233,9 +4899,15 @@ $ heroku open
 
 ### 7.5 同域名部署
 
-对于正式的生产应用程序，*不建议*同域名部署，因为静态资源通过像 nginx 等 Web 服务器（而不是 Node.js I/O 引擎）提供服务更好，而且分离 API 可以使测试更简单、增加健壮性并更快速地排除故障/监控。然而，同应用/同域名方法可以用于分地、测试、开发环境和/或小型应用。
+对于正式的生产应用程序，*不建议*同域名部署，因为静态资源通过像nginx等Web服务器（而不是Node.js I/O引擎）提供服务更好，而且分离API可以使测试更简单、增加健壮性并更快速地排除故障/监控。然而，同应用/同域名方法可以用于分地、测试、开发环境和/或小型应用。
 
-这是一个静态 Node.js 服务器的示例：
+这是一个静态Node.js服务器的示例：
+
+
+
+# 使用 Node.js 实现 HTTP 服务器与 MongoDB 数据迁移
+
+## 8.1 Node.js 异步编程示例
 
 ```javascript
 var http = require("http"),
@@ -5279,10 +4951,7 @@ var http = require("http"),
 }).listen(port);
 ```
 
-
-
-
-异步性对于熟悉 Python、PHP、C 或 Ruby 的程序员来说，需要一种不同的思维方式。如果忘记使用正确的 `return` 表达式来结束代码执行，很容易在无意中引入 bug。
+异步性对于熟悉 `Python`、`PHP`、`C` 或 `Ruby` 的程序员来说，需要一种不同的思维方式。如果忘记使用正确的 `return` 表达式来结束代码执行，很容易在无意中引入 bug。
 
 这里是一个说明该场景的简单示例：
 
@@ -5305,7 +4974,7 @@ var http = require("http"),
 16 });
 ```
 
-如果我们不使用 `return callback()` 而只是使用 `callback()`，那么我们的字符串 `test2` 将会被打印（`test` 不会被打印）。
+如果我们不使用`return callback()`而只是使用`callback()`，那么我们的字符串`test2`将会被打印（`test`不会被打印）。
 
 ```
 callback1
@@ -5313,7 +4982,7 @@ callback1
 3 tes2
 ```
 
-为了好玩，我为 `callback2` 字符串添加了 `setTimeout()` 延迟，现在顺序变了：
+为了好玩，我为`callback2`字符串添加了`setTimeout()`延迟，现在顺序变了：
 
 ```
  1 var test = function (callback) {
@@ -5346,16 +5015,16 @@ callback1
 
 最后一个示例说明了这两个函数是相互独立的，并且并行运行。较快的函数会比较慢的函数更早完成。回到我们的星巴克例子，你可能会比排在你前面的那个人更快拿到你的饮料。这对人有好处，对程序也有好处！:-)
 
-### 8.2 使用 Monk 进行 MongoDB 迁移
+## 8.2 使用 Monk 进行 MongoDB 迁移
 
-最近，我们的一个顶级用户抱怨说他的 [Storify](http://storify.com) 账户无法访问。我们检查了生产数据库，发现该账户可能被某些使用该用户账户凭据的人恶意删除了。得益于强大的 MongoHQ 服务，我们在 15 分钟内就准备好了备份数据库。继续迁移有两种方案可用：
+最近，我们的一个顶级用户抱怨说他的 [Storify](http://storify.com) 账户无法访问。我们检查了生产数据库，发现该账户可能被某些使用该用户账户凭据的人恶意删除了。得益于强大的 `MongoHQ` 服务，我们在 15 分钟内就准备好了备份数据库。继续迁移有两种方案可用：
 
-1. Mongo shell 脚本
-2. Node.js 程序
+1. `Mongo shell` 脚本
+2. `Node.js` 程序
 
-由于 Storify 用户账户的删除涉及删除所有相关对象——身份、关系（关注者、订阅）、赞、故事——我们决定采用后一种方案。它运行得非常完美，这是一个你可以作为 MongoDB 迁移模板板的简化版本（也可以在 [gist.github.com/4516139](https://gist.github.com/4516139)）。
+由于 `Storify` 用户账户的删除涉及删除所有相关对象——身份、关系（关注者、订阅）、赞、故事——我们决定采用后一种方案。它运行得非常完美，这是一个你可以作为 `MongoDB` 迁移模板板的简化版本（也可以在 [gist.github.com/4516139](https://gist.github.com/4516139)）。
 
-让我们加载所有需要的模块：[Monk](https://github.com/LearnBoost/monk)、[Progress](https://github.com/visionmedia/node-progress)、[Async](https://github.com/caolan/async) 以及 MongoDB：
+让我们加载所有需要的模块：[Monk](https://github.com/LearnBoost/monk)、[Progress](https://github.com/visionmedia/node-progress)、[Async](https://github.com/caolan/async) 以及 `MongoDB`：
 
 ```
 1 var async = require('async');
@@ -5364,9 +5033,9 @@ callback1
 4 var ObjectId=require('mongodb').ObjectID;
 ```
 
-顺便说一下，由 [LeanBoost](https://www.learnboost.com/) 开发的 Monk 是一个“为 Node.js 中的 MongoDB 使用提供简单且实质可用性改进的微型层”。
+顺便说一下，由 [LeanBoost](https://www.learnboost.com/) 开发的 `Monk` 是一个“为 `Node.js` 中的 `MongoDB` 使用提供简单且实质可用性改进的微型层”。
 
-Monk 采用以下格式的连接字符串：
+`Monk` 采用以下格式的连接字符串：
 
 ```
 username:password@dbhost:port/database
@@ -5385,7 +5054,7 @@ username:password@dbhost:port/database
 1 var userId = ObjectId(YOUR-OBJECT-ID); 
 ```
 
-这是一个实用的 `restore()` 函数，我们可以复用它通过指定查询来从相关集合中恢复对象（关于 MongoDB 查询的更多信息，请参阅文章 [查询 2000 万记录的 MongoDB 集合](http://www.webapplog.com/querying-20m-record-mongodb-collection/)）。要调用它，只需以字符串形式传递集合名称，例如 `"stories"`，以及一个将此集合中的对象与你的主对象关联的查询，例如 `{userId:user.id}`。进度条是为了在终端中显示良好的视觉效果：
+这是一个实用的`restore()`函数，我们可以复用它通过指定查询来从相关集合中恢复对象（关于 `MongoDB` 查询的更多信息，请参阅文章 [查询 2000 万记录的 MongoDB 集合](http://www.webapplog.com/querying-20m-record-mongodb-collection/)）。要调用它，只需以字符串形式传递集合名称，例如`"stories"`，以及一个将此集合中的对象与你的主对象关联的查询，例如`{userId:user.id}`。进度条是为了在终端中显示良好的视觉效果：
 
 ```
  1 var restore = function(collection, query, callback){
@@ -5424,7 +5093,7 @@ username:password@dbhost:port/database
 34 }
 ```
 
-现在我们可以使用 `async` 调用上述 `restore()` 函数：
+现在我们可以使用`async`调用上述`restore()`函数：
 
 ```
  1 async.series({
@@ -5443,18 +5112,18 @@ username:password@dbhost:port/database
 14       });
  15     });
  16   },
- 17 
- 18   restoreIdentity: function(callback){  
+17 
+18   restoreIdentity: function(callback){  
 19     restore('identities',{
 20       userid:userId
 21     }, callback);
  22   },
- 23 
- 24   restoreStories: function(callback){
+23 
+24   restoreStories: function(callback){
 25     restore('stories', {authorid:userId}, callback);
  26   }
- 27 
- 28   }, function(e) {
+27 
+28   }, function(e) {
 29   console.log();
 30   console.log('restoring is completed!');
 31   process.exit(1);
@@ -5462,9 +5131,6 @@ username:password@dbhost:port/database
 ```
 
 完整代码可以在 [gist.github.com/4516139](https://gist.github.com/4516139) 获取，并在此处所示：
-
-
-
 
 ```
  1 var async = require('async');
@@ -5549,7 +5215,7 @@ username:password@dbhost:port/database
 80 });
 ```
 
-要启动它，请运行 `npm install`/`npm update` 并更改硬编码的数据库值。
+要启动它，请运行`npm install`/`npm update`并更改硬编码的数据库值。
 
 ## 8.3 在 Mocha 中使用 Mocha 进行 TDD
 
@@ -5557,9 +5223,11 @@ username:password@dbhost:port/database
 
 假设你需要在现有接口上实现一个复杂的功能，例如在评论上添加“点赞”按钮。如果没有测试，你必须手动创建一个用户、登录、创建一个帖子、创建另一个用户、用另一个用户登录并点赞帖子。很累吗？如果你需要重复 10 次或 20 次才能发现并修复某个棘手的 Bug 呢？如果你的功能破坏了现有功能，但由于没有测试，你在发布六个月后才注意到呢？！
 
+
+
 不要浪费时间为一次性脚本编写测试，但请在主代码库中养成测试驱动开发的习惯。在开始花一点时间，你和你的团队以后将节省时间，并在发布新版本时充满信心。测试驱动开发真的是非常非常、非常好的事情。
 
-### 8.3.2 快速上手指南
+## 8.3.2 快速上手指南
 
 遵循此快速指南，使用 [Mocha](http://visionmedia.github.com/mocha/) 在 Node.js 中建立你的测试驱动开发流程。
 
@@ -5572,29 +5240,26 @@ $ sudo npm install -g mocha
 我们还会使用两个库：来自 [LearnBoost](https://github.com/LearnBoost) 的 [Superagent](https://github.com/visionmedia/superagent) 和 [expect.js](https://github.com/LearnBoost/expect.js/)。要安装它们，请在项目文件夹中运行如下 [NPM](https://npmjs.org/) 命令：
 
 ```
-1 $ npm install superagent
-2 $ npm install expect.js 
+$ npm install superagent
+$ npm install expect.js
 ```
 
 打开一个 `.js` 扩展的新文件并输入：
 
 ```
-1 var request = require('superagent');
-2 var expect = require('expect.js');
+var request = require('superagent');
+var expect = require('expect.js');
 ```
 
 到目前为止，我们包含了两个库。测试的结构如下：
 
 ```
-1 describe('suite', function(){
-2   it('test', function(done){
-3     done();
-4   });
-5 });
+describe('suite', function(){
+  it('test', function(done){
+    done();
+  });
+});
 ```
-
-
-
 
 Wintersmith 允许内容和模板使用不同的插件，你甚至可以[编写自己的插件](https://github.com/jnordberg/wintersmith#content-plugins)。
 
@@ -5605,47 +5270,47 @@ Wintersmith 允许内容和模板使用不同的插件，你甚至可以[编写�
 要全局安装 Wintersmith，请带有 `-g` 和 `sudo` 运行 NPM：
 
 ```
-1 $ sudo npm install wintersmith -g
+$ sudo npm install wintersmith -g
 ```
 
 然后运行以下命令使用默认博客模板：
 
 ```
-1 $ wintersmith new <path>
+$ wintersmith new <path>
 ```
 
 或者创建一个空站点：
 
 ```
-1 $ wintersmith new <path> -template basic
+$ wintersmith new <path> -template basic
 ```
 
 或者使用快捷键：
 
 ```
-1 $ wintersmith new <path> -T basic
+$ wintersmith new <path> -T basic
 ```
 
 类似于 Ruby on Rails 的脚手架工具，Wintersmith 将生成一个包含 `contents` 和 `templates` 文件夹的基础骨架。如需预览网站，请运行这些命令：
 
 ```
-1 $ cd <path>
-2 $ wintersmith preview
-3 $ open http://localhost:8080
+$ cd <path>
+$ wintersmith preview
+$ open http://localhost:8080
 ```
 
 大部分更改会在预览模式下自动更新，但 [config.json 文件](https://github.com/jnordberg/wintersmith#config) 除外。
 
 图片、CSS、JavaScript 和其他文件放入 `contents` 文件夹。Wintersmith 生成器具有以下逻辑：
 
-1. 在 contents 文件夹中查找 `*.md` 文件
+1. 在 `contents` 文件夹中查找 `*.md` 文件
 2. 读取[元数据](https://github.com/jnordberg/wintersmith#the-page-plugin)，例如模板名称
 3. 根据 `*.md` 文件中的元数据处理 `*.jade` [模板](https://github.com/jnordberg/wintersmith#templates)
 
 当你完成静态网站构建后，只需运行：
 
 ```
-1 $ wintersmith build
+$ wintersmith build
 ```
 
 ### 8.4.2 其他静态网站生成器
@@ -5666,191 +5331,183 @@ Wintersmith 允许内容和模板使用不同的插件，你甚至可以[编写�
 
 ### 8.5.1 使用 Express.js 和 Monk 构建的 REST API 应用
 
-此应用是 [mongoui](http://gitbhub.com/azat-co/mongoui) 的起点——这是一个用 Node.js 编写的 MongoDB 版 phpMyAdmin。其目标是提供一个具有良好 Web 管理用户界面的模块。它将类似于 [Parse.com](http://parse.com)、[Firebase.com](http://firebase.com)、[MongoHQ](http://mongohq.com) 或 [MongoLab](http://mongolab.com) 的功能，但不会绑定到任何特定服务。为什么我们每次想查询用户信息时都必须输入 `db.users.findOne({'_id':ObjectId('...')})` 呢？替代 [MongoHub](http://mongohub.todayclose.com/) Mac 应用很好（且免费），但使用起来很笨且不是基于 Web 的。
+此应用是 [mongoui](http://gitbhub.com/azat-co/mongoui) 的起点——这是一个用 Node.js 编写的 MongoDB 版 phpMyAdmin。其目标是提供一个具有良好 Web 管理用户界面的模块。它将类似于 [Parse.com](http://parse.com)、[Firebase.com](http://firebase.com)、[MongoHQ](http://mongohq.com) 或 [MongoLab](http://mongolab.com) 的功能，但不会绑定到任何特定服务。为什么我们每次想查询用户信息时都必须输入`db.users.findOne({'_id':ObjectId('...')})`呢？替代 [MongoHub](http://mongohub.todayclose.com/) Mac 应用很好（且免费），但使用起来很笨且不是基于 Web 的。
 
-Ruby 爱好者喜欢将 Express 与 [Sinatra](http://www.sinatrarb.com/) 框架进行比较。在开发者构建应用方面，它们同样灵活。应用程序路由以类似的方式设置，例如 `app.get('/products/:id', showProduct);`。目前 Express.js 的版本号为 3.1。除了 Express 之外，我们还将使用 [Monk](https://github.com/LearnBoost/monk) 模块。
+Ruby 爱好者喜欢将 Express 与 [Sinatra](http://www.sinatrarb.com/) 框架进行比较。在开发者构建应用方面，它们同样灵活。应用程序路由以类似的方式设置，例如`app.get('/products/:id', showProduct);`。目前 Express.js 的版本号为 3.1。除了 Express 之外，我们还将使用 [Monk](https://github.com/LearnBoost/monk) 模块。
 
 我们将使用 [Node Package Manager](http://npmjs.org)，它通常随 Node.js 一起安装。如果你还没有，可以去 [npmjs.org](http://npmjs.org) 获取。
 
 创建一个新文件夹并在其中创建 NPM 配置文件 `package.json`，内容如下：
 
 ```
- 1 {
- 2   "name": "mongoui",
- 3   "version": "0.0.1",
- 4   "engines": {
- 5     "node": ">= v0.6"
- 6   },
- 7   "dependencies": {
- 8     "mongodb":"1.2.14",
- 9     "monk": "0.7.1",
-10     "express": "3.1.0"
-11   }
-12 }
+{
+  "name": "mongoui",
+  "version": "0.0.1",
+  "engines": {
+    "node": ">= v0.6"
+  },
+  "dependencies": {
+    "mongodb":"1.2.14",
+    "monk": "0.7.1",
+    "express": "3.1.0"
+  }
+}
 ```
 
-现在运行 `npm install` 下载并安装模块到 `node_module` 文件夹。如果一切顺利，你将在 `node_modules` 文件夹中看到许多文件夹。我们应用程序的所有代码将放在文件 `index.js` 中，以保持简单直接（KISS）：
+现在运行`npm install`下载并安装模块到`node_module`文件夹。如果一切顺利，你将在`node_modules`文件夹中看到许多文件夹。我们应用程序的所有代码将放在文件`index.js`中，以保持简单直接（KISS）：
 
 ```
- 1 var mongo = require('mongodb');
- 2 var express = require('express');
- 3 var monk = require('monk');
- 4 var db = require('monk').connect('mongodb://localhost/mongoui');
- 5 var app = express();
- 6 
- 7 app.use(express.static(__dirname + '/public'));
- 8 
- 9 app.get('/', function(req,res){
-10   res.send('Hello World');
-11 });
- 12 
- 13 app.get('/products/:id', function(req,res){
-14   res.send('Product ID: ' + req.params.id);
-15 });
- 16 
- 17 app.listen(3000, function(){
-18   console.log('Server started on port 3000');
-19 });
+var mongo = require('mongodb');
+var express = require('express');
+var monk = require('monk');
+var db = require('monk').connect('mongodb://localhost/mongoui');
+var app = express();
+
+app.use(express.static(__dirname + '/public'));
+
+app.get('/', function(req,res){
+  res.send('Hello World');
+});
+
+app.get('/products/:id', function(req,res){
+  res.send('Product ID: ' + req.params.id);
+});
+
+app.listen(3000, function(){
+  console.log('Server started on port 3000');
+});
 ```
 
-
-
-
 ```
-1 $ node .
+$ node .
 ```
 
 或者
 
 ```
-1 $ node index.js
+$ node index.js
 ```
 
 要查看应用程序运行情况，请在 Chrome 中打开 [localhost:3000](http://localhost:3000)，并安装 [JSONViewer](https://chrome.google.com/webstore/detail/jsonview/chklaanhfefbnpoihckbnefhakgolnmc?hl=en) 扩展（用于美化渲染 JSON）。
 
 ### 8.6 Express.js 简介：参数、错误处理和其他中间件
 
-### 8.6.1 请求处理器
+#### 8.6.1 请求处理器
 
 Express.js 是一个 node.js 框架，它其他功能提供了一种组织路由的方法。每个路由都通过应用对象上的方法调用定义，并将 URL 模式作为第一个参数（也支持正则表达式）——例如：
 
 ```
-1 app.get('api/v1/stories/', function(res, req){
-2   ...
-3 })
+app.get('api/v1/stories/', function(res, req){
+  ...
+})
 ```
 
 或者，对于 POST 方法：
 
 ```
-1 app.post('/api/v1/stories'function(req,res){
-2   ...
-3 })
+app.post('/api/v1/stories'function(req,res){
+  ...
+})
 ```
 
 不用俗说，`DELETE` 和 `PUT` 方法也是[支持的](http://expressjs.com/api.html#app.VERB)。
 
-我们传递给 `get()` 或 `post()` 方法的回调被称为请求处理器，因为它们接收请求 (`req`)、处理它们，并写入响应 (`res`) 对象。例如：
+我们传递给`get()`或`post()`方法的回调被称为请求处理器，因为它们接收请求 (`req`)、处理它们，并写入响应 (`res`) 对象。例如：
 
 ```
-1 app.get('/about', function(req,res){
-2   res.send('About Us: ...');
-3 });
+app.get('/about', function(req,res){
+  res.send('About Us: ...');
+});
 ```
 
 我们可以有多个请求处理器 —— 因此它们被命名为 `middleware`（中间件）。它们接受第三个参数 `next`，调用它（`next()`）将把执行流切换到下一个处理器：
 
 ```
- 1 app.get('/api/v1/stories/:id', function(req,res, next) {
- 2   //进行权限验证
- 3   //如果没有授权或发生错误
- 4   //返回 next(error);
- 5   //如果授权且没有错误
- 6   return next();
- 7 }), function(req,res, next) {
- 8   //提取 id 并从数据库获取对象
- 9   //假设没有错误，将 story 保存到请求对象中
-110   req.story = story;
- 11   return next();
- 12 }), function(req,res) {
- 13   //输出数据库搜索结果
- 14   res.send(res.story);
- 15 });
+app.get('/api/v1/stories/:id', function(req,res, next) {
+  //进行权限验证
+  //如果没有授权或发生错误
+  //返回 next(error);
+  //如果授权且没有错误
+  return next();
+}), function(req,res, next) {
+  //提取 id 并从数据库获取对象
+  //假设没有错误，将 story 保存到请求对象中
+  req.story = story;
+  return next();
+}), function(req,res) {
+  //输出数据库搜索结果
+  res.send(res.story);
+});
 ```
 
 URL 模式中的 story ID 是查询字符串参数，我们需要它来在数据库中查找匹配项。
 
-### 8.6.2 参数中间件
+#### 8.6.2 参数中间件
 
-参数是通过请求 URL 中的查询字符串传递的值。如果没有 Express.js 或类似的库，而只使用核心 Node.js 模块，我们就必须通过某些 `require('querystring').parse(url)` 或 `require('url').parse(url, true)` 函数的技巧从 [HTTP.request](http://nodejs.org/api/http.html#http_http_request_options_callback) 对象中提取参数。
+参数是通过请求 URL 中的查询字符串传递的值。如果没有 Express.js 或类似的库，而只使用核心 Node.js 模块，我们就必须通过某些`require('querystring').parse(url)`或`require('url').parse(url, true)`函数的技巧从 [HTTP.request](http://nodejs.org/api/http.html#http_http_request_options_callback) 对象中提取参数。
 
 多亏了 [Connect framework](http://www.senchalabs.org/connect/) 和 [VisionMedia](https://github.com/visionmedia/express) 的人员，Express.js 已经以中间件的形式支持了参数、错误处理和许多其他重要功能。我们可以这样在应用程序中插件参数中间件：
 
 ```
- 1 app.param('id', function(req,res, next, id){
- 2   //对 id 进行某些操作
- 3   //将 id 或其他信息存储在 req 对象中
- 4   //完成后调用 next
- 5   next();
- 6 });
- 7 
- 8 app.get('/api/v1/stories/:id',function(req,res){
- 9   //参数中间件将在之前执行
-10   //我们期望 req 对象已经包含了所需信息
-11   //输出某些内容
-12   res.send(data);
-13 });
+app.param('id', function(req,res, next, id){
+  //对 id 进行某些操作
+  //将 id 或其他信息存储在 req 对象中
+  //完成后调用 next
+  next();
+});
+
+app.get('/api/v1/stories/:id',function(req,res){
+  //参数中间件将在之前执行
+  //我们期望 req 对象已经包含了所需信息
+  //输出某些内容
+  res.send(data);
+});
 ```
 
 例如：
 
 ```
- 1 app.param('id', function(req,res, next, id){
- 2   req.db.get('stories').findOne({_id:id}, function (e, story){
- 3     if (e) return next(e);
- 4     if (!story) return next(new Error('Nothing is found'));
- 5     req.story = story;
- 6     next();
- 7   });
- 8 });
- 9 
-10 app.get('/api/v1/stories/:id',function(req,res){
-11   res.send(req.story);
-12 });
+app.param('id', function(req,res, next, id){
+  req.db.get('stories').findOne({_id:id}, function (e, story){
+    if (e) return next(e);
+    if (!story) return next(new Error('Nothing is found'));
+    req.story = story;
+    next();
+  });
+});
+
+app.get('/api/v1/stories/:id',function(req,res){
+  res.send(req.story);
+});
 ```
 
-或者我们可以使用多个请求处理器，但概念保持相同：我们可以期望在执行此代码之前已经有了 `req.story` 对象或抛出了错误，因此我们抽象了获取参数及其相应对象的通用代码/逻辑：
+或者我们可以使用多个请求处理器，但概念保持相同：我们可以期望在执行此代码之前已经有了`req.story`对象或抛出了错误，因此我们抽象了获取参数及其相应对象的通用代码/逻辑：
 
 ```
-1 app.get('/api/v1/stories/:id', function(req,res, next) {
-2   //进行权限验证
-3   }),
-4   //我们在 req.story 中已经有一个对象，所以这里不需要额外工作
-5   function(req,res) {
-6   //输出数据库搜索结果
-7   res.send(story);
-8 });
+app.get('/api/v1/stories/:id', function(req,res, next) {
+  //进行权限验证
+  }),
+  //我们在 req.story 中已经有一个对象，所以这里不需要额外工作
+  function(req,res) {
+  //输出数据库搜索结果
+  res.send(story);
+});
 ```
 
 权限验证和输入清洗也是存放在中间件中的良好候选者。
 
-`param()` 函数特别别酷，因为我们可以组合不同的键，例如：
+`param()`函数特别别酷，因为我们可以组合不同的键，例如：
 
 ```
- 1 app.param('id', function(req,res, next, id){
+app.param('id', function(req,res, next, id){
 ```
 
-### 8.6.3 错误处理
+#### 8.6.3 错误处理
 
 错误处理通常用于整个应用程序，因此我们将其作为中间件来实现。
 
-
-
-
-
-
 ```javascript
- 1 function requiredParamHandler(param){
+function requiredParamHandler(param){
   //do something with a param, e.g, 
   //check that it's present in a query string
   return function (req,res, next) {
@@ -5876,9 +5533,11 @@ var story  = {
 
 ## 8.7 使用 Node.js、 MongoDB、Mongoskin 和 Express.js 构建 JSON REST API 服务器
 
-本教程将引导你如何使用 [Mocha](http://visionmedia.github.io/mocha/) 和 [Super Agent](http://visionmedia.github.io/superagent/) 库编写测试，然后以测试驱动开发的方式，利用 [Express.js](http://expressjs.com/) 框架和 [Mongoskin](https://github.com/kissjs/node-mongoskin) 库为 [MongoDB](http://www.mongodb.org/) 构建一个 [Node.js](http://nodejs.org) free JSON REST API 服务器。在这个 REST API 服务器中，我们将执行创建、更新、删除和删除（CRUD）操作，并利用 `app.param()` 和 `app.use()` 方法利用 Express.js [中间件](http://expressjs.com/api.html#middleware)概念。
 
-### 8.7.1 测试覆盖
+
+本教程将引导你如何使用 [Mocha](http://visionmedia.github.io/mocha/) 和 [Super Agent](http://visionmedia.github.io/superagent/) 库编写测试，然后以测试驱动开发的方式，利用 [Express.js](http://expressjs.com/) 框架和 [Mongoskin](https://github.com/kissjs/node-mongoskin) 库为 [MongoDB](http://www.mongodb.org/) 构建一个 [Node.js](http://nodejs.org) free JSON REST API 服务器。在这个 REST API 服务器中，我们将执行创建、更新、删除和删除（CRUD）操作，并利用`app.param()`和`app.use()`方法利用 Express.js [中间件](http://expressjs.com/api.html#middleware)概念。
+
+## 8.7.1 测试覆盖
 
 在进行其他操作之前，让我们编写向即将创建的 REST API 服务器发送 HTTP 请求的功能测试。如果你知道如何使用 [Mocha](http://visionmedia.github.io/mocha/) 或者只想直接开始 Express.js 应用实现，请尽管这样做。你也可以使用 CURL 终端命令进行测试。
 
@@ -5897,16 +5556,21 @@ $ npm install expect.js
 $ npm install superagent
 ```
 
-现在在同一文件夹中创建 `express.test.js` 文件，它将包含六个测试套件：
+现在在同一文件夹中创建`express.test.js`文件，它将包含六个测试套件：
 
 * 创建新对象
+
 * 通过 ID 获取对象
+
 * 获取整个集合
+
 * 通过 ID 更新对象
+
 * 通过 ID 检查更新后的对象
+
 * 通过 ID 对象
 
-使用 Super Agent 的链式函数处理 HTTP 请求变得轻而易举，我们将它们放在每个测试套件中。以下是 `express.test.js` 文件的完整源代码：
+使用 Super Agent 的链式函数处理 HTTP 请求变得轻而易举，我们将它们放在每个测试套件中。以下是`express.test.js`文件的完整源代码：
 
 ```javascript
 var superagent = require('superagent')
@@ -5988,12 +5652,9 @@ describe('express rest api server', function(){
 })
 ```
 
-
-
-
 注意：如果你想连接到远程数据库，例如 [MongoHQ](https://www.mongohq.com/home) 实例，请将字符串替换为你的用户名、密码、主机和端口值。URI 字符串的格式如下：`mongodb://[username:password@]host1[:port1][,host2[:port2],...[,hostN[:portN]]][/[database][?options]]`
 
-`app.param()` 方法是另一个 Express.js 中间件。它基本上表示“每当请求处理器的 URL 模式出现此值时，执行某些操作”。在我们的情况下，当请求模式包含带有冒号前缀的字符串 `collectionName` 时，我们会选择特定的集合（稍后会在路由中看到）：
+`app.param()`方法是另一个 Express.js 中间件。它基本上表示“每当请求处理器的 URL 模式出现此值时，执行某些操作”。在我们的情况下，当请求模式包含带有冒号前缀的字符串`collectionName`时，我们会选择特定的集合（稍后会在路由中看到）：
 
 ```javascript
 1 app.param('collectionName', 
@@ -6012,7 +5673,7 @@ describe('express rest api server', function(){
 3 })
 ```
 
-现在真正的工作开始了。以下是获取获取按 `_id` 排序并限制为 10 条的项目列表的方法：
+现在真正的工作开始了。以下是获取获取按`_id`排序并限制为 10 条的项目列表的方法：
 
 ```javascript
  1 app.get('/collections/:collectionName', 
@@ -6029,7 +5690,7 @@ describe('express rest api server', function(){
 12 )
 ```
 
-你是否注意到 URL 模式参数中的 `:collectionName` 字符串了？这个和之前的 `app.param()` 中间件为我们提供了 `req.collection` 对象，它指向数据库中指定的集合。
+你是否注意到 URL 模式参数中的`:collectionName`字符串了？这个和之前的`app.param()`中间件为我们提供了`req.collection`对象，它指向数据库中指定的集合。
 
 创建端点的对象稍微更容易理解，因为我们只需将整个负载传递给 MongoDB（方法即免费的 JSON REST API）：
 
@@ -6042,7 +5703,7 @@ describe('express rest api server', function(){
 6 })
 ```
 
-单个对象检索函数比 `find()` 快，但它们使用不同的接口（它们直接返回对象而不是游标），所以请注意这一点。此外，我们通过 Express.js 的魔术方法 `req.params.id` 从路径的 `:id` 部分提取 ID：
+单个对象检索函数比`find()`快，但它们使用不同的接口（它们直接返回对象而不是游标），所以请注意这一点。此外，我们通过 Express.js 的魔术方法`req.params.id`从路径的`:id`部分提取 ID：
 
 ```javascript
 1 app.get('/collections/:collectionName/:id', function(req, res) {
@@ -6055,11 +5716,11 @@ describe('express rest api server', function(){
 8 })
 ```
 
-PUT 请求处理器变得更有趣了，因为 `update()` 不返回修改后的对象，而是返回受影响对象的计数。
+PUT 请求处理器变得更有趣了，因为`update()`不返回修改后的对象，而是返回受影响对象的计数。
 
-此外，`{$set:req.body}` 是一个特殊的 MongoDB 运算符（运算符通常以美元符号开头），用于设置值。
+此外，`{$set:req.body}`是一个特殊的 MongoDB 运算符（运算符通常以美元符号开头），用于设置值。
 
-第二个参数 `{safe:true, multi:false}` 是一个带有选项的对象，告诉 MongoDB 在运行回调函数之前等待执行完成，并且只处理一个（第一个）项目。
+第二个参数`{safe:true, multi:false}`是一个带有选项的对象，告诉 MongoDB 在运行回调函数之前等待执行完成，并且只处理一个（第一个）项目。
 
 ```javascript
  1 app.put('/collections/:collectionName/:id', function(req, res) {
@@ -6086,7 +5747,7 @@ PUT 请求处理器变得更有趣了，因为 `update()` 不返回修改后的�
 8 })
 ```
 
-注意：`delete` 是 JavaScript 中的一个运算符，所以 Express.js 使用 `app.del` 代替。
+注意：`delete`是 JavaScript 中的一个运算符，所以 Express.js 使用`app.del`代替。
 
 在这种情况下，实际在端口 3000 上启动服务器的最后一行是：
 
@@ -6094,74 +5755,72 @@ PUT 请求处理器变得更有趣了，因为 `update()` 不返回修改后的�
 1 app.listen(3000)
 ```
 
-以防某些地方运行不正常，这里是 `express.js` 文件的完整代码：
+以防某些地方运行不正常，这里是`express.js`文件的完整代码：
+
+
 
 ```javascript
- 1 var express = require('express')
-2   , mongoskin = require('mongoskin')
-3 
-4 var app = express()
-5 app.use(express.bodyParser())
-6 
-7 var db = mongoskin.db('localhost:27017/test', {safe:true})
-8 app.param('collectionName', 
-9   function(req, res, next, collectionName) {
-10     req.collection = db.collection(collectionName)
-11     return next()
-12   }
-13 )
-14 app.get('/', function(req, res) {
-15   res.send('please select a collection, e.g., /collections/messages')
-16 })
-17 app.get('/collections/:collectionName', 
-18   function(req, res) {
-19     req.collection
-20       .find({},
-21         {limit:10, sort: [['_id',-1]]}
-22       ).toArray(function(e, results){
-23         if (e) return next(e)
-24         res.send(results)
-25       }
-26     )
-27   }
-28 )
-29 app.post('/collections/:collectionName', function(req, res) {
-30   req.collection.insert(req.body, {}, function(e, results){
-31     if (e) return next(e)
-32     res.send(results)
-33   })
-34 })
-35 app.get('/collections/:collectionName/:id', function(req, res) {
-36   req.collection.findOne({_id: req.collection.id(req.params.id)}, 
-37     function(e, result){
-38       if (e) return next(e)
-39       res.send(result)
-40     }
-41   )
-42 })
-43 app.put('/collections/:collectionName/:id', function(req, res) {
-44   req.collection.update({_id: req.collection.id(req.params.id)}, 
-45     {$set:req.body}, 
-46     {safe:true, multi:false}, 
-47     function(e, result){
-48       if (e) return next(e)
-49       res.send((result===1)?{msg:'success'}:{msg:'error'})
-50     }
-51   )
-52 })
-53 app.del('/collections/:collectionName/:id', function(req, res) {
-54   req.collection.remove({_id: req.collection.id(req.params.id)}, 55     function(e, result){
-56       if (e) return next(e)
-57     res.send((result===1)?{msg:'success'}:{msg:'error'})
-58     }
-59   )
-60 })
-61 app.listen(3000)
+var express = require('express')
+  , mongoskin = require('mongoskin')
+
+var app = express()
+app.use(express.bodyParser())
+
+var db = mongoskin.db('localhost:27017/test', {safe:true})
+app.param('collectionName', 
+  function(req, res, next, collectionName) {
+    req.collection = db.collection(collectionName)
+    return next()
+  }
+)
+app.get('/', function(req, res) {
+  res.send('please select a collection, e.g., /collections/messages')
+})
+app.get('/collections/:collectionName', 
+  function(req, res) {
+    req.collection
+      .find({},
+        {limit:10, sort: [['_id',-1]]}
+      ).toArray(function(e, results){
+        if (e) return next(e)
+        res.send(results)
+      }
+    )
+  }
+)
+app.post('/collections/:collectionName', function(req, res) {
+  req.collection.insert(req.body, {}, function(e, results){
+    if (e) return next(e)
+    res.send(results)
+  })
+})
+app.get('/collections/:collectionName/:id', function(req, res) {
+  req.collection.findOne({_id: req.collection.id(req.params.id)}, 
+    function(e, result){
+      if (e) return next(e)
+      res.send(result)
+    }
+  )
+})
+app.put('/collections/:collectionName/:id', function(req, res) {
+  req.collection.update({_id: req.collection.id(req.params.id)}, 
+    {$set:req.body}, 
+    {safe:true, multi:false}, 
+    function(e, result){
+      if (e) return next(e)
+      res.send((result===1)?{msg:'success'}:{msg:'error'})
+    }
+  )
+})
+app.del('/collections/:collectionName/:id', function(req, res) {
+  req.collection.remove({_id: req.collection.id(req.params.id)}, 55     function(e, result){
+      if (e) return next(e)
+    res.send((result===1)?{msg:'success'}:{msg:'error'})
+    }
+  )
+})
+app.listen(3000)
 ```
-
-
-
-
 
 [Express.js](http://expressjs.com) 是一个流行的 node 框架，它使用中间件概念来增强应用程序的功能。[Derby](http://derbyjs.com) 是一个新的复杂的模型-视图-控制器 ([MVC](http://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller)) 框架，设计用于配合 [Express](http://expressjs.com) 作为其中间件使用。Derby 还带有对 [Racer](https://github.com/codeparty/racer) 数据同步引擎以及类似于 handlebars 的模板引擎的支持。
 
@@ -6172,151 +5831,151 @@ PUT 请求处理器变得更有趣了，因为 `update()` 不返回修改后的�
 当然，我们需要 [Node.js](http://nodejs.org) 和 [NPM](http://npmjs.org)，它们可以在 [nodejs.org](http://nodejs.org) 获取。全局安装 Derby，运行：
 
 ```
-1 $ npm install -g derby
+$ npm install -g derby
 ```
 
 检查安装情况：
 
 ```
-1 $ derby -V
+$ derby -V
 ```
 
-我的版本（截至 2013 年 4 月）是 `0.3.15`。我们已经准备好创建我们的第一个应用了！
+我的版本（截至 2013 年 4 月）是`0.3.15`。我们已经准备好创建我们的第一个应用了！
 
 ## 文件结构
 
 这是项目的文件夹结构：
 
 ```
-1 project/
-2   -package.json
-3   -index.js
-4   -derby-app.js
-5   views/
-6     derby-app.html
-7   styles/
-8     derby-app.less
+project/
+  -package.json
+  -index.js
+  -derby-app.js
+  views/
+    derby-app.html
+  styles/
+    derby-app.less
 ```
 
 ## 依赖项
 
-在 `package.json` 文件中包含依赖和其他基本信息：
+在`package.json`文件中包含依赖和其他基本信息：
 
-```
- 1  {
- 2   "name": "DerbyTutorial",
- 3   "description": "",
- 4   "version": "0.0.0",
- 5   "main": "./server.js",
- 6   "dependencies": {
- 7     "derby": "*",
- 8     "express": "3.x"
- 9   },
-10   "private": true
-11 }
+```json
+{
+  "name": "DerbyTutorial",
+  "description": "",
+  "version": "0.0.0",
+  "main": "./server.js",
+  "dependencies": {
+    "derby": "*",
+    "express": "3.x"
+  },
+  "private": true
+}
 ```
 
-现在我们可以运行 `npm install`，这将我们的依赖项下载到 `node_modules` 文件夹中。
+现在我们可以运行`npm install`，这将我们的依赖项下载到`node_modules`文件夹中。
 
 ## 视图
 
-视图必须位于 `views` 文件夹中，并且必须位于与你的 derby app JavaScript 文件同名的文件夹下的 `index.html`（即 `views/derby-app/index.html`），或者位于与你的 derby app JS 文件同名的文件中（即 `derby-app.html`）。
+视图必须位于`views`文件夹中，并且必须位于与你的 derby app JavaScript 文件同名的文件夹下的`index.html`（即`views/derby-app/index.html`），或者位于与你的 derby app JS 文件同名的文件中（即`derby-app.html`）。
 
-在示例“Hello World”应用中，我们将使用 `<Body:>` 模板和 `{message}` 变量。Derby 使用类似于 mustache 的语法进行响应式绑定。`index.html` 如下：
-
-```
-1 <Body:>
-2   <input value="{message}"><h1>{message}</h1>
-```
-
-Stylus/LESS 文件也是如此；在我们的示例中，`index.css` 只有一行：
+在示例“Hello World”应用中，我们将使用`<Body:>`模板和`{message}`变量。Derby 使用类似于 mustache 的语法进行响应式绑定。`index.html` 如下：
 
 ```
-1 h1 {
-2   color: blue;
-3 }
+<Body:>
+  <input value="{message}"><h1>{message}</h1>
+```
+
+Stylus/LESS 文件也是如此；在我们的示例中，`index.css`只有一行：
+
+```
+h1 {
+  color: blue;
+}
 ```
 
 要了解更多关于这些优秀的 CSS 预处理器，请查看 [Stylus](http://learnboost.github.io/stylus/) 和 [LESS](http://lesscss.org/) 的文档。
 
 ## 主服务器
 
-`index.js` 是我们的主服务器文件，我们通过 `require()` 函数包含依赖项来启动它：
+`index.js`是我们的主服务器文件，我们通过`require()`函数包含依赖项来启动它：
 
 ```
-1 var http = require('http'),
-2   express = require('express'),
-3   derby = require('derby'),
-4   derbyApp = require('./derby-app');
+var http = require('http'),
+  express = require('express'),
+  derby = require('derby'),
+  derbyApp = require('./derby-app');
 ```
 
-最后一行是我们的 derby 应用程序文件 `derby-app.js`。
+最后一行是我们的 derby 应用程序文件`derby-app.js`。
 
 现在我们正在创建 Express.js 应用程序（v3.x 与 2.x 有显著差异）和 HTTP 服务器：
 
 ```
-1 var expressApp = new express(),
-2   server = http.createServer(expressApp);
+var expressApp = new express(),
+  server = http.createServer(expressApp);
 ```
 
 [Derby](http://derbyjs.com) 使用 [Racer](https://github.com/codeparty/racer) 数据同步库，我们这样创建它：
 
 ```
-1 var store = derby.createStore({
-2   listen: server
-3 });
+var store = derby.createStore({
+  listen: server
+});
 ```
 
 为了从后端获取一些数据到前端，我们实例化模型对象：
 
 ```
-1 var model = store.createModel();
+var model = store.createModel();
 ```
 
 重要的是我们需要将模型和路由作为中间件传递给 Express.js 应用。我们需要暴露 public 文件夹以便让 socket.io 正常工作。
 
 ```
-1 expressApp.
-2   use(store.modelMiddleware()).
-3   use(express.static(__dirname + '/public')).
-4   use(derbyApp.router()).
-5   use(expressApp.router);
+expressApp.
+  use(store.modelMiddleware()).
+  use(express.static(__dirname + '/public')).
+  use(derbyApp.router()).
+  use(expressApp.router);
 ```
 
 现在我们可以在端口 3001（或其他任何端口）上启动服务器：
 
 ```
-1 server.listen(3001, function(){
-2   model.set('message', 'Hello World!');
-3 });
+server.listen(3001, function(){
+  model.set('message', 'Hello World!');
+});
 ```
 
-`index.js` 的完整代码：
+`index.js`的完整代码：
 
 ```
-1 var http = require('http'),
-2   express = require('express'),
-3   derby = require('derby'),
-4   derbyApp = require('./derby-app');
-5 
-6 var expressApp = new express(),
-7   server = http.createServer(expressApp);
-8 
-9 var store = derby.createStore({
-10   listen: server
-11 });
-12 
-13 var model = store.createModel();
-14 
-15 expressApp.
-16   use(store.modelMiddleware()).
-17   use(express.static(__dirname + '/public')).
-18   use(derbyApp.router()).
-19   use(expressApp.router);
-20 
-21 server.listen(3001, function(){
-22   model.set('message', 'Hello World!');
-23 });
+var http = require('http'),
+  express = require('express'),
+  derby = require('derby'),
+  derbyApp = require('./derby-app');
+
+var expressApp = new express(),
+  server = http.createServer(expressApp);
+
+var store = derby.createStore({
+  listen: server
+});
+
+var model = store.createModel();
+
+expressApp.
+  use(store.modelMiddleware()).
+  use(express.static(__dirname + '/public')).
+  use(derbyApp.router()).
+  use(expressApp.router);
+
+server.listen(3001, function(){
+  model.set('message', 'Hello World!');
+});
 ```
 
 ## Derby 应用
@@ -6324,116 +5983,112 @@ Stylus/LESS 文件也是如此；在我们的示例中，`index.css` 只有一�
 [Derby](http://derbyjs.com) 使用 [Racer](https://github.com/codeparty/racer) 数据同步库，我们这样创建它：
 
 ```
-1 var store = derby.createStore({
-2   listen: server
-3 });
+var store = derby.createStore({
+  listen: server
+});
 ```
 
 为了从后端获取一些数据到前端，我们实例化模型对象：
 
 ```
-1 var model = store.createModel();
+var model = store.createModel();
 ```
 
 重要的是我们需要将模型和路由作为中间件传递给 Express.js 应用。我们需要暴露 public 文件夹以便让 socket.io 正常工作。
 
 ```
-1 expressApp.
-2   use(store.modelMiddleware()).
-3   use(express.static(__dirname + '/public')).
-4   use(derbyApp.router()).
-5   use(expressApp.router);
+expressApp.
+  use(store.modelMiddleware()).
+  use(express.static(__dirname + '/public')).
+  use(derbyApp.router()).
+  use(expressApp.router);
 ```
 
 现在我们可以在端口 3001（或其他任何端口）上启动服务器：
 
 ```
-1 server.listen(3001, function(){
-2   model.set('message', 'Hello World!');
-3 });
+server.listen(3001, function(){
+  model.set('message', 'Hello World!');
+});
 ```
 
-`derby-app.js` 的完整代码：
+`derby-app.js`的完整代码：
 
 ```
-1 derby = require('derby'),
-2   app = derby.createApp(module);
-3 
-4 app.get('/', function(page, model) {
-5   page.render();
-6   });
-7 });
+derby = require('derby'),
+  app = derby.createApp(module);
+
+app.get('/', function(page, model) {
+  page.render();
+  });
+});
 ```
 
 ## 启动应用
 
-现在一切都准备就绪了。执行 `node .` 或 `node index.js` 并在浏览器访问 `localhost:3001`。你应该看到：
+现在一切都准备就绪了。执行`node .`或`node index.js`并在浏览器访问`localhost:3001`。你应该看到：
 
 当然，静态数据不多，所以我们可以稍微修改应用，让前后端进行通信。
 
-在服务器文件 `index.js` 中，添加 `store.afterDb` 来监听 `message` 属性的事件：
+在服务器文件`index.js`中，添加`store.afterDb`来监听`message`属性的事件：
 
 ```
-1 server.listen(3001, function(){
-2   model.set('message', 'Hello World!');
-3   store.afterDb('set','message', function(txn, doc, prevDoc, done){
-4     console.log(txn)
-5     done();
-6   });
-7 });
+server.listen(3001, function(){
+  model.set('message', 'Hello World!');
+  store.afterDb('set','message', function(txn, doc, prevDoc, done){
+    console.log(txn)
+    done();
+  });
+});
 ```
 
-修改后 `index.js` 的完整代码：
+修改后`index.js`的完整代码：
 
 ```
-1 var http = require('http'),
-2   express = require('express'),
-3   derby = require('derby'),
-4   derbyApp = require('./derby-app');
-5 
-6 var expressApp = new express(),
-7   server = http.createServer(expressApp);
-8 
-9 var store = derby.createStore({
-10   listen: server
-11 });
-12 
-13 var model = store.createModel();
-14 
-15 expressApp.
-16   use(store.modelMiddleware()).
-17   use(express.static(__dirname + '/public')).
-18   use(derbyApp.router()).
-19   use(expressApp.router);
-20 
-21 server.listen(3001, function(){
-22   model.set('message', 'Hello World!');
-23   store.afterDb('set','message', function(txn, doc, prevDoc, done){
-24     console.log(txn)
-25     done();
-26   });
-27 });
+var http = require('http'),
+  express = require('express'),
+  derby = require('derby'),
+  derbyApp = require('./derby-app');
+
+var expressApp = new express(),
+  server = http.createServer(expressApp);
+
+var store = derby.createStore({
+  listen: server
+});
+
+var model = store.createModel();
+
+expressApp.
+  use(store.modelMiddleware()).
+  use(express.static(__dirname + '/public')).
+  use(derbyApp.router()).
+  use(expressApp.router);
+
+server.listen(3001, function(){
+  model.set('message', 'Hello World!');
+  store.afterDb('set','message', function(txn, doc, prevDoc, done){
+    console.log(txn)
+    done();
+  });
+});
 ```
 
-
-
-
-
 ```
- 1 var derby = require('derby'),
- 2   app = derby.createApp(module);
- 3 
- 4 app.get('/', function(page, model, params) {
- 5   model.subscribe('message', function() {
- 6     page.render();
- 7   })
- 8 });
- 9 
-10 app.ready(function(model) {
- 11   model.on('set', 'message', function(path, object) {
- 12     console.log('message has been changed: ' + object);
- 13   })
- 14 });
+var derby = require('derby'),
+  app = derby.createApp(module);
+
+app.get('/', function(page, model, params) {
+  model.subscribe('message', function() {
+    page.render();
+  })
+});
+
+app.ready(function(model) {
+  model.on('set', 'message', function(path, object) {
+    console.log('message has been changed: ' + object);
+  })
+});
 ```
 
 我们在终端窗口和浏览器开发者控制台中查看日志。浏览器中的最终结果如下：
@@ -6457,6 +6112,8 @@ Hello World App：终端控制台日志
 **总结**：本书的结论、JavaScript 博客文章、文章、电子书、书籍和其他资源列表。
 
 ### 结论
+
+
 
 我们希望你喜欢这本书。它的初衷是轻理论重实践，并为你提供现代敏捷 Web 开发中使用的多种技术、框架和技巧的概述。《JS 快速原型开发》涵盖了以下主题：
 
@@ -6489,14 +6146,14 @@ Hello World App：终端控制台日志
 
 聊天应用具备典型 Web/移动应用的所有基础：获取数据、显示数据、提交新数据。其他示例包括：
 
-* `jQuery` + `Twitter RESP API` “推文分析器”
+* `jQuery` + `Twitter REST API` “推文分析器”
 * `Parse.com` “保存 John”
 * `Node.js` “Hello World”
 * `MongoDB` “打印集合”
 * `Derby` + `Express` “Hello World”
 * `Backbone.js` “Hello World”
 * `Backbone.js` “苹果数据库”
-* `Monk` + `Expres.js` “REST API 服务器”
+* `Monk` + `Express.js` “REST API 服务器”
 
 如果你有任何反馈、评论、建议，或者发现了拼写错误、Bug、错误或其他偏差，请提交 GitHub issue：[`github.com/azat-co/rpjs/issues`](https://github.com/azat-co/rpjs/issues)。
 
@@ -6504,11 +6161,11 @@ Hello World App：终端控制台日志
 
 如果你喜欢 `Node.js` 并想了解更多关于使用 `Express.js` 构建生产级 Web 服务（Node.js Web 应用的事实标准），请查看我的新书 [Express.js Guide：最流行的 Node.js 框架手册](http://expressjsguide.com)。
 
-### 延伸阅读
+## 延伸阅读
 
 这是一份供进一步阅读的资源、课程、书籍和博客列表。
 
-#### JavaScript 资源和免费电子书
+### JavaScript 资源和免费电子书
 
 * [Oh My JS](https://leanpub.com/ohmyjs/read): 精选的最佳 JavaScript 文章集
 * [JavaScript For Cats](http://jsforcats.com/): 针对新编程者的入门教程
@@ -6522,19 +6179,14 @@ Hello World App：终端控制台日志
 * [Truthy and Falsey Values](http://docs.nodejitsu.com/articles/javascript-conventions/what-are-truthy-and-falsy-values)
 * [How to Write Asynchronous Code](http://docs.nodejitsu.com/articles/getting-started/control-flow)
 
-
-
-
-
-*   [Udacity](https://www.udacity.com/): 大规模开放课程
-*   [Coursera](https://www.coursera.org/)
+* [Udacity](https://www.udacity.com/): 大规模开放课程
+* [Coursera](https://www.coursera.org/)
 
 ### 创业书籍与博客
 
-*   [黑客与画家](http://www.amazon.com/Hackers-Painters-Big-Ideas-Computer/dp/1449389554)
-*   [精益创业](http://theleanstartup.com/book)
-*   [创业者手册](http://www.amazon.com/Startup-Owners-Manual-Step-Step/dp/0984999302)
-*   [创业者：客户开发指南](http://www.amazon.com/The-Entrepreneurs-Guide-Customer-Development/dp/0982743602/)
-*   [Venture Hacks](http://venturehacks.com/)
-*   [WebAppLog](http://webapplog.com)
-
+* [黑客与画家](http://www.amazon.com/Hackers-Painters-Big-Ideas-Computer/dp/1449389554)
+* [精益创业](http://theleanstartup.com/book)
+* [创业者手册](http://www.amazon.com/Startup-Owners-Manual-Step-Step/dp/0984999302)
+* [创业者：客户开发指南](http://www.amazon.com/The-Entrepreneurs-Guide-Customer-Development/dp/0982743602/)
+* [Venture Hacks](http://venturehacks.com/)
+* [WebAppLog](http://webapplog.com)

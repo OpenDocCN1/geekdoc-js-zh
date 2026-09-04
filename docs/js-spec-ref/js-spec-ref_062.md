@@ -1,9 +1,5 @@
-# 7.11 requestAnimationFrame
 
-*   概述
-*   cancelAnimationFrame 方法
-*   实例
-*   参考链接
+# 7.11 requestAnimationFrame
 
 ## 概述
 
@@ -84,7 +80,7 @@ $("#stop").on("click", function() {
 
 假定网页中有一个动画区块。
 
-```js
+```html
 <div id="anim">点击运行动画</div>
 ```
 
@@ -124,4 +120,5 @@ elem.onclick = function() {
 ## 参考链接
 
 *   Paul Irish, [requestAnimationFrame for smart animating](http://paulirish.com/2011/requestanimationframe-for-smart-animating/)
+
 *   Chris Coyier, [Using requestAnimationFrame](http://css-tricks.com/using-requestanimationframe/)

@@ -1,3 +1,4 @@
+
 # 实现更新和删除 Todo 项目
 
 > 原文：[`jsprimer.net/use-case/todoapp/update-delete/`](https://jsprimer.net/use-case/todoapp/update-delete/)
@@ -20,7 +21,7 @@
 
 首先，请确保在`src/App.js`中，将 TodoListModel 的`onChange`方法注册的监听函数内部修改，以显示复选框。
 
-在代表 Todo 项目的`<li>`元素中添加`<input>`元素，以显示复选框。 为复选框`<input>`元素添加`class`属性作为样式`checkbox`。 同时，如果已完成，则使用`<s>`元素显示删除线。
+在代表 Todo 项目的`<li>`元素中添加`<input>`元素，以显示复选框。 为复选框`<input>`元素添加`class`属性作为样式`checkbox`。 同时，如果已完成，则使用``元素显示删除线。
 
 从`src/App.js`中提取更改内容。
 
@@ -32,7 +33,9 @@ this.#todoListModel.onChange(() => {
         // 完了済みならchecked 属性をつけ、未完了ならchecked 属性を外す
         // input 要素にはcheckboxクラスをつける
         const todoItemElement = item.completed
-            ? element`<li><input type="checkbox" class="checkbox" checked><s>${item.title}</s></li>`
+            ? element`<li><input type="checkbox" class="checkbox" checked>${item.title}`
+
+</li>`
             : element`<li><input type="checkbox" class="checkbox">${item.title}</li>`;
         todoListElement.appendChild(todoItemElement);
     });
@@ -125,7 +128,9 @@ this.#todoListModel.onChange(() => {
     todoItems.forEach(item => {
         // 完了済みならchecked 属性をつけ、未完了ならchecked 属性を外す
         const todoItemElement = item.completed
-            ? element`<li><input type="checkbox" class="checkbox" checked><s>${item.title}</s></li>`
+            ? element`<li><input type="checkbox" class="checkbox" checked>${item.title}`
+
+</li>`
             : element`<li><input type="checkbox" class="checkbox">${item.title}</li>`;
         // チェックボックスがトグルしたときのイベントにリスナー関数を登録
         const inputCheckboxElement = todoItemElement.querySelector(".checkbox");
@@ -195,7 +200,9 @@ this.#todoListModel.onChange(() => {
         // 削除ボタン(x)をそれぞれ追加する
         const todoItemElement = item.completed
             ? element`<li><input type="checkbox" class="checkbox" checked>
-                <s>${item.title}</s>
+                ${item.title}`
+
+                
                 <button class="delete">x</button>
             </li>`
             : element`<li><input type="checkbox" class="checkbox">

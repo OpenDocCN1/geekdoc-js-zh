@@ -1,17 +1,16 @@
+
 # JavaScript 代码释放：技能进阶——通过代码示例、问题和深度解析高阶 JavaScript 概念
 
-
-
 ![](img/image_rsrc61C.jpg)
-
-
 
 Copyright © 2024 Laurence Svekis 版权所有。
 
 献给 Alexis 和 Sebastian Svekis
+
 感谢你的支持
 
 ## 目录
+
 - JavaScript 基础入门
 - JavaScript 核心原理与基础
 - Chrome 开发者工具
@@ -128,7 +127,7 @@ Copyright © 2024 Laurence Svekis 版权所有。
 - Promises 与 Async/Await
 - 练习题解答：以下问题
 - Async 和 await 测试题
-- 高级主题](#part0013.xhtml)
+- 高级主题
 - JavaScript 高级主题
 - 处理整数溢出
 - 垃圾回收与循环引用
@@ -141,11 +140,6 @@ Copyright © 2024 Laurence Svekis 版权所有。
 - 练习题解答：以下问题
 - JavaScript 高级主题测试题
 - 你的知识测试 JavaScript 测试题
-
-
-
-
-
 - 检查对象中的属性：验证对象内部是否存在属性的技巧。
 - 检查数字是否有限且非 NaN：验证数字的有限性和非 NaN 状态的方法。
 - JavaScript 中的提升概念：探索变量和函数声明是如何移动到其作用域顶部的。
@@ -179,7 +173,9 @@ Chrome 开发者工具（通常称为 DevTools）是一套直接构建在 Google
 打开 DevTools：有几种方法可以打开 Chrome DevTools。
 
 - 右键点击任何页面元素并选择“检查（Inspect）”。
+
 - 使用快捷键 `Ctrl+Shift+I`（Mac 上使用 `Cmd+Opt+I`）。
+
 - 从 Chrome 右上角的菜单中，转到“更多工具” > “开发者工具”。
 
 导航到控制台：打开 DevTools 后，你可以点击“Console（控制台）”标签切换到控制台视图。控制是一个强大的工具，允许开发者与当前页面的 JavaScript 上下文交互、运行脚本并记录信息。
@@ -205,6 +201,7 @@ console.log(1 + "2" + 3);
 当你在控制台中运行 `console.log(1 + "2" + 3)` 时，它会执行以下操作：
 
 - 首先，它评估 `1 + "2"`，结果为 `"12"`。在 JavaScript 中，当你对数字和字符串使用 `+` 运算符时，数字会被转换为字符串并进行拼接。
+
 - 接着，它评估 `"12" + 3`，由于相同的原因，结果为 `"123"`。
 
 因此，`console.log(1 + "2" + 3)` 向控制台输出 `"123"`。
@@ -212,7 +209,9 @@ console.log(1 + "2" + 3);
 关于 `undefined` 输出：
 
 - 在执行完一条条语句后，控制台还会显示该语句的返回值。
+
 - `console.log()` 本身不返回值（或者在 JavaScript 术语中，它返回 `undefined`）。
+
 - 因此，在控制台打印 "123" 之后，它还会显示 `undefined`，以表示 `console.log()` 函数调用的返回值。
 
 这种行为是控制台特有的。它的设计目的是提供关于执行语句返回值的即时反馈，这对于调试和交互式编码课程特别有用。
@@ -305,9 +304,6 @@ console.log('1' === 1); // false
 console.log(typeof null);
 ```
 
-
-
-
 输出: object (这是一个长期的 JavaScript 标记)。
 
 ```javascript
@@ -393,13 +389,14 @@ console.log(uniqueArray); // 输出: [1, 2, 3, 4, 5]
 
 ### JavaScript 中的提升 (Hoisting)
 
-提升是 JavaScript 的一种行为，在编译阶段将变量和函数声明移动到其所在作用域的顶部。这允许在代码声明之前使用变量和函数。
+提升是 JavaScript 的一种行为，在编译阶段将变量和函数声明移动到其所在作用域的顶部。这允在代码声明之前使用变量和函数。
 
 ```javascript
 console.log(x);
 
 var x = 5;
 ```
+
 输出: undefined（不是 ReferenceError，因为 `x` 的声明被提升了）。
 
 JavaScript 中的提升概念是指在代码执行之前将变量和函数声明移动到其所在作用域顶部的行为。这意味着变量和函数可以在代码声明之前被引用。需要注意的是，只有声明会被提升，而初始化不会。
@@ -490,10 +487,6 @@ console.log(rounded); // 输出: "2.35"
 ```javascript
 const roundedNumber = parseFloat(number.toFixed(2));
 ```
-
-
-
-
 
 ```javascript
 // const roundedNumber = Number(number.toFixed(2));
@@ -665,10 +658,6 @@ console.log(obj.hasOwnProperty('key')); // true
 console.log('key' in obj); // true
 ```
 
-
-
-
-
 ## 示例 3：使用可选链运算符 (?.) 和 undefined 检查
 
 虽然这不是直接检查属性是否存在，但可选链操作符 `?.` 允许你安全地访问嵌套对象的属性，而无需检查每一层嵌套。你可以将其与 `undefined` 检查结合，推断属性是否存在。
@@ -692,15 +681,25 @@ console.log(car.specs?.mileage !== undefined); // 输出: false
 ## 练习题：回答以下问题
 
 - 在 JavaScript 中使用 `==` 运算符进行相等比较的意义是什么？
+
 - JavaScript 中 `typeof null` 表达式返回什么？
+
 - 在 JavaScript 中尝试将 `Set` 展开到数组中的结果是什么？
+
 - JavaScript 中 `==` 和 `===` 之间的主要区别是什么？
+
 - JavaScript 中的“提升”（hoisting）是指什么？
+
 - JavaScript 中的 `void` 运算符的作用是什么？
+
 - 如何在 JavaScript 中将数字保留两位小数？
+
 - 如何检查一个数字是否是有限的且不是非数字？
+
 - 如何在 JavaScript 中检测用户的设备类型？
+
 - 在 ES6 中，使用哪个关键字来声明一个不可重新赋值的变量？
+
 - 如何检查 JavaScript 对象 `obj` 是否具有属性键？
 
 ## JavaScript 基础知识测试
@@ -710,8 +709,11 @@ console.log(car.specs?.mileage !== undefined); // 输出: false
 如何检查对象 `person` 中是否存在属性 `age`？
 
 A) `person.age`
+
 B) `person.hasOwnProperty('age')`
+
 C) `'age' in person`
+
 D) 选项 B 和 C 都对
 
 **答案：D**
@@ -723,8 +725,11 @@ D) 选项 B 和 C 都对
 使用哪个函数可以检查一个值是否是有限数字且非 NaN？
 
 A) `Number.isFinite(value)`
+
 B) `isFinite(value)`
+
 C) `isNaN(value)`
+
 D) `Number.isNaN(value)`
 
 **答案：A**
@@ -736,8 +741,11 @@ D) `Number.isNaN(value)`
 JavaScript JavaScript 中的提升意味着什么？
 
 A) 自动将变量声明移动到函数作用域或全局作用域的顶部。
+
 B) 将函数声明提升到脚本文件的顶部以获得更好的可见性。
+
 C) 在运行时将变量值与其声明一同提升。
+
 D) 一种通过预加载函数来优化代码执行的技术。
 
 **答案：A**
@@ -747,12 +755,17 @@ D) 一种通过预加载函数来优化代码执行的技术。
 ### 解析 JavaScript 代码输出
 
 以下代码段的输出是什么？
+
 ```javascript
 console.log(2 + '2');
 ```
+
 A) 4
+
 B) 22
+
 C) '22'
+
 D) TypeError
 
 **答案：C**
@@ -764,8 +777,11 @@ D) TypeError
 ES6 中使用哪个关键字来声明不可变变量？
 
 A) `var`
+
 B) `let`
+
 C) `const`
+
 D) `immutable`
 
 **答案：C**
@@ -777,8 +793,11 @@ D) `immutable`
 如何在 JavaScript 中检测用户的设备是否为移动设备？
 
 A) 使用 `window.mobileCheck()`
+
 B) 检查 `navigator.userAgent` 是否包含移动设备特征
+
 C) 使用 `document.isMobile`
+
 D) 在 JavaScript 中应用 CSS 媒体查询
 
 **答案：B**
@@ -790,8 +809,11 @@ D) 在 JavaScript 中应用 CSS 媒体查询
 JavaScript 中 `==` 和 `===` 的主要区别是什么？
 
 A) 没有区别；它们的功能完全相同。
+
 B) `==` 执行类型转换，而 `===` 不执行。
+
 C) `===` 仅用于数值比较。
+
 D) `==` 可以比较对象，但 `===` 不可以。
 
 **答案：B**
@@ -803,8 +825,11 @@ D) `==` 可以比较对象，但 `===` 不可以。
 为什么你可能使用 `==` 运算符而不是 `===`？
 
 A) 为了允许在比较时进行类型转换。
+
 B) 在比较相同的值时。
+
 C) 为了确保严格相等。
+
 D) 总是应该使用 `===` 而不是 `==`。
 
 **答案：A**
@@ -816,8 +841,11 @@ D) 总是应该使用 `===` 而不是 `==`。
 `null` 和 `undefined` 之间的区别是什么？
 
 A) `null` 表示值的缺失，而 `undefined` 表示未赋值。
+
 B) 它们是相同的类型。
+
 C) 没有区别。
+
 D) 表示一个空值。
 
 **答案：A**
@@ -829,8 +857,11 @@ D) 表示一个空值。
 表达式!!"false" == [] 在 JavaScript 中的结果是什么？
 
 A) true
+
 B) false
+
 C) TypeError
+
 D) undefined
 
 **答案：A**
@@ -842,8 +873,11 @@ D) undefined
 哪个方法可以将数字保留两位小数并返回字符串？
 
 A) `Math.round(num, 2)`
+
 B) `num.toFixed(2)`
+
 C) `Math.floor(num * 100) / 100`
+
 D) `Number(Math.round(num + 'e2') + 'e-2')`
 
 **答案：B**
@@ -855,17 +889,16 @@ D) `Number(Math.round(num + 'e2') + 'e-2')`
 如何在 JavaScript 中将 `set` 转换为数组？
 
 A) `Array.from(set)`
+
 B) `[...set]`
+
 C) `set.toArray()`
+
 D)  A 和 B 都对
 
 **答案：D**
 
 **解析：** `Array.from(set)` 和展开语法 `[...set]` 都用于从 set 创建数组。
-
-
-
-
 
 哪种方法没有直接在对象的链中检查属性的性？
 
@@ -927,13 +960,13 @@ D) `'undefined'`
 
 答案： B
 
-解释：内部的 `typeof 1` 返回 `'number'`，而 `typeof 'number'` 返回 `'string'`，因为 `typeof` 运算符始终返回一个指示求值表达式类型的字符串。
+解释：内部的 `typeof 1` 返回 `'number'`，而 `typeof 'number'` 返回 `'string'`，因为 `typeof` 运算符始终返回一个指示求值表达类型的字符串。
 
 ## 使用 ES6 不可变变量
 
 关于 ES6 中使用 `const` 声明变量的陈述哪个正确？
 
-A) 使用 `const` 声明的变量可以重新声明。
+A) 使用 `const` 声言的变量可以重新声明。
 
 B) 使用 `const` 声明的数组和对象不能修改其内容。
 
@@ -1044,9 +1077,13 @@ D) `Number(Math.round(1.005 + "e+2") + "e-2")`
 # Async JavaScript
 
 - **Async/Await 语法**：`async` 和 `await` 的介绍，用于简化异步编程，增强可读性。
+
 - **Promise.all 方法**：利用 `Promise.all` 高效处理多个异步操作，适用于并行数据获取。
+
 - **异步函数中的错误处理**：异步代码的健壮错误管理策略，关注 `try-catch` 块。
-- **事件循环与异步操作**：理解 JavaScript 的事件循环，以掌握异步操作及其模型。
+
+- **事件循环与异步操作**：理解 JavaScript 的事件循环，以掌�异步操作及其模型。
+
 - **确保异步函数抛出异常**：确保异步函数正确抛出异常的技术。
 
 ## 异步 JavaScript 简介
@@ -1073,13 +1110,9 @@ async function fetchData() {
 fetchData();
 ```
 
-JavaScript 中的 `async` 和 `await` 关键字用于简化 Promise，使异步代码更容易编写和阅读，几乎就像同步代码一样。这里有三个演示如何使用 async 和 await 简化异步代码的示例。
+JavaScript 中的 `async` 和 `await` 关键字用于简化 Promise，使异代码更容易编写和阅读，几乎就像同步代码一样。这里有三个演示如何使用 async 和 await 简化异步代码的示例。
 
 示例 1：从 API 获取数据
-
-
-
-
 
 没有 `async/await`，你可能需要 `.then()` 和 `.catch()` 方法来处理 `fetch` API 返回的 promise。使用 `async/await` 后，这个过程变得更加简洁。
 
@@ -1286,10 +1319,6 @@ getPostDetails(1).then(console.log).catch(console.error);
 
 在此函数中，如果 fetch 请求失败或响应状态不是 OK，它将抛出一个错误并被 `catch` 块捕获。这种模式与传统的 try/catch 错误处理相似，但在这里它被用于处理异步错误。
 
-
-
-
-
 ## 被拒绝的 Promise 会抛出错误
 
 为了确保异步函数在它等待的任何一个 `Promises` 被拒绝（rejected）时抛出错误，你可以在函数内部使用 `try-catch` 块。当 `await` 关键字与被拒绝的 `Promise` 一起使用时，会抛出一个可以被 `catch` 块捕获的异常，从而对被拒绝的 Promise 进行错误处理。
@@ -1344,112 +1373,181 @@ processUserData(1);
 ## 练习答案
 
 - `async/await` 语法如何帮助 JavaScript 中的异步代码？
+
 - `Promise.all` 方法的作用是什么？
+
 - 在 JavaScript 中，如何确保某段代码在多个异步操作完成后运行？
+
 - `async` 关键字在 JavaScript 函数中启用了什么功能？
+
 - 如何确保异步函数在它所等待的任何一个 `Promises` 被拒绝时抛出错误？
+
 - JavaScript 内部是如何处理 `setTimeout`、`fetch` 以及其他基于 Promise 的异步函数的？
 
 ## 异步 JavaScript 测验
 
 **当 `async` 关键字放在函数定义之前时，它的作用是什么？**
+
 A) 让函数同步执行。
+
 B) 允许函数返回一个 promise。
+
 C) 防止函数返回任何内容。
+
 D) 自动捕获函数内的任何错误。
+
 **答案：B**
+
 **解释：** `async` 关键字允许函数返回一个 promise，简化了异步操作的处理方式。
 
 **如何在异步函数内部等待 promise 的解析（resolve）？**
+
 A) 使用 `pause` 关键字。
+
 B) 使用 `await` 关键字。
+
 C) 使用 `wait` 关键字。
+
 D) 使用 `yield` 关键字。
+
 **答案：B**
+
 **解释：** `await` 关键字用于 `async` 函数内部，暂停执行，直到 promise 解析完成。
 
 **使用哪种方法并行执行多个 promise 并等待它们全部就绪（settle）？**
+
 A) `Promise.race()`
+
 B) `Promise.all()`
+
 C) `Promise.each()`
+
 D) `Promise.resolve()`
+
 **答案：B**
+
 **解释：** `Promise.all()` 接收一个 promise 迭代器并返回一个单一 Promise，当所有 promise 都就绪时（每个可能解析或拒绝），该 Promise 就会解析。
 
 **如果异步函数内部发生错误且未被捕获会发生什么？**
+
 A) 函数将返回 null。
+
 B) 函数将返回 undefined。
+
 C) 返回的 promise 将被拒绝。
+
 D) 错误将被忽略。
+
 **答案：C**
+
 **解释：** 如果 `async` 函数中发生错误且未被捕获，函数返回的 promise 将带有该错误被拒绝。
 
 **以下哪种是处理 async/await 语法中错误的正确方法？**
+
 A) `async` 函数内部的 `try-catch` 块。
+
 B) `await` 语句后的 `onError` 方法。
+
 C) 仅使用 `finally` 块，不使用 try-catch。
+
 D) 在函数调用之前使用 `error` 关键字。
+
 **答案：A**
+
 **解释：** `async` 函数中的错误可以使用 `try-catch` 块捕获，允许进行类似于同步代码的优雅错误处理。
 
 **JavaScript 事件循环的作用是什么？**
+
 A) 暂停异步代码的执行。
+
 B) 直接执行间隔。
+
 C) 以非阻塞的方式处理异步回调。
+
 D) 防止任何异步操作。
+
 **答案：C**
+
 **解释：** 事件循环以非阻塞的方式处理异步回调。
 
 **在什么场景下 `Promise.all()` 特别有用？**
+
 A) 当你需要顺序执行 promise 时。
+
 B) 当并行执行多个异步操作时。
-C) 当你只需要最快解析的结果时。
+
+C) 当你需要最快解析的结果时。
+
 D) 当你需要处理单个异步操作时。
+
 **答案：B**
+
 **解释：** `Promise.all()` 适用于执行多个异步操作，因为它会等待全部就绪。
 
 **如何强制异步函数抛出错误？**
+
 A) 返回 `Error`。
+
 B) 使用 `throw` 语句。
+
 C) 调用 `Promise.reject()`。
+
 D) 在没有返回语句的情况下退出函数。
+
 **答案：B**
+
 **解释：** 在 `async` 函数中，使用 `throw` 语句会强制函数拒绝提供的错误。
 
 **事件循环在 JavaScript 并发模型中的意义是什么？**
+
 A) 它允许 JavaScript 执行多线程。
+
 B) 它启用阻塞操作以阻止代码执行。
+
 C) 它在不阻塞主线程的情况下促进异步执行。
+
 D) 它优先考虑同步任务而非异步回调。
+
 **答案：C**
+
 **解释：** 事件循环对于 JavaScript 的并发模型至关重要，它在不阻塞主线程的情况下促进异步任务。
 
 **如果传递给 Promise.all() 的 promise 中有一个被拒绝了？**
+
 A) `Promise.all()` 将等待其他 promise 就绪后拒绝。
+
 B) `Promise.all()` 将立即以第一个被拒绝 promise 的原因拒绝。
+
 C) `Promise.all()` 将忽略拒绝并返回解析 promise 的值。
+
 D) `Promise.all()` 将重试被拒绝的 promise 直到解析。
+
 **答案：B**
+
 **解释：** 如果传递给 Promise.all() 的任何 promise 被拒绝，Promise.all() 将立即以第一个被拒绝 promise 的原因拒绝，忽略任何其他 promise 的结果。
 
 **关于 await 关键字的哪种说法是正确的？**
+
 A) 它只能在声明为 `async` 的函数内部使用。
+
 B) 它会导致浏览器冻结直到 promise 就绪。
+
 C) 它可以与任何函数一起使用，无论其是否为异步。
+
 D) 如果 promise 解析为 null 值，它将抛出错误。
+
 **答案：A**
-
-
-
-
 
 解析：`await` 关键字用于暂停 `async` 函数的执行，直到 promise 处于稳定状态（解析或拒绝），并且它只能在声明为 `async` 的函数内部使用。
 
 在使用 `Promise.all()` 时，处理错误的最佳实践是什么？
 
 A) 在将 promise 传递给 `Promise.all()` 之前，将每个 promise 封装在 `try-catch` 块中。
+
 B) 在 `Promise.all()` 调用周围使用单个的 `try-catch` 块。
+
 C) 在 `Promise.all()` 解析后检查每个 promise 的状态。
+
 D) `Promise.all()` 中的错误无法被捕获。
 
 答案：B
@@ -1459,19 +1557,25 @@ D) `Promise.all()` 中的错误无法被捕获。
 JavaScript 在底层是如何处理异步操作的？
 
 A) 使用多线程执行并发操作。
+
 B) 通过在调用栈中对异步操作排序。
+
 C) 通过事件循环（event loop），它与调用栈和回调队列协同工作。
+
 D) 通过阻塞主线程执行直到所有异步操作完成。
 
 答案：C
 
 解析：JavaScript 使用事件循环结合调用栈和回调队列来处理异步操作，使其能够高效地执行非阻塞操作。
 
-在 `async` 函数中，表达式 `await Promise.resolve(5)` 返回什么？
+在 `async` 函中，表达式 `await Promise.resolve(5)` 返回什么？
 
 A) 5
+
 B) `Promise<5>`
+
 C) `undefined`
+
 D) 它会导致运行时错误。
 
 答案：A
@@ -1481,8 +1585,11 @@ D) 它会导致运行时错误。
 `async/await` 在 Web 开发中的常见用例是什么？
 
 A) 同步操作 DOM。
+
 B) 执行同步计算。
+
 C) 让异步 API 调用更具可读性。
+
 D) 不需要异步操作的 for 循环迭代。
 
 答案：C
@@ -1492,8 +1599,11 @@ D) 不需要异步操作的 for 循环迭代。
 在 `async` 函数中不当处理错误的潜在缺点是什么？
 
 A) 浏览器可能会崩溃。
+
 B) 它可能导致未捕获的 promise 拒绝（uncaught promise rejections）。
+
 C) JavaScript 引擎切换到同步模式。
+
 D) 所有随后的 JavaScript 代码被忽略。
 
 答案：B
@@ -1503,8 +1613,11 @@ D) 所有随后的 JavaScript 代码被忽略。
 关于使用 `async/await` 配合 `try-catch` 进行错误处理，哪是正确的？
 
 A) 它显著降低了代码的可读性。
+
 B) 它仅适用于捕获语法错误。
+
 C) 它为异步代码中的错误处理提供了类似于同步的结构。
+
 D) 捕获的错误总是 `SyntaxError` 类型。
 
 答案：C
@@ -1514,8 +1627,11 @@ D) 捕获的错误总是 `SyntaxError` 类型。
 在使用 `Promise.all()` 时，如何确保即使一个失败，也会尝试所有 promise？
 
 A) 在将它们传递给 `Promise.all()` 之前，通过将每个 promise 封装在 `Promise.catch()` 方法中。
+
 B) 使用 `Promise.allSettled()` 代替 `Promise.all()`。
+
 C) 使用 for 循环顺序执行每个 promise。
+
 D) 将 `Promise.all()` 封装在另一个 `Promise.all()` 内部。
 
 答案：B
@@ -1533,8 +1649,11 @@ console.log(check());
 ```
 
 A) "Hello, world!"
+
 B) `Promise {<resolved>: "Hello, world!"}`
+
 C) `undefined`
+
 D) `Promise {<pending>}`
 
 答案：D
@@ -1544,8 +1663,11 @@ D) `Promise {<pending>}`
 JavaScript 使用什么机制来处理异步操作的回调？
 
 A) 仅用调用栈。
+
 B) 回调队列和事件循环。
+
 C) 为每个回调提供单独的线程。
+
 D) 堆内存。
 
 答案：B
@@ -1555,8 +1677,11 @@ D) 堆内存。
 如何让异步函数默认返回一个被拒绝的 promise？
 
 A) 省略 `return` 语句。
+
 B) 返回 `Promise.reject()`。
+
 C) 在函数内部抛出错误。
+
 D) 显式返回 false。
 
 答案：C
@@ -1566,19 +1691,25 @@ D) 显式返回 false。
 在 `async` 函数内部 `await` 一个非 promise 值会发生什么？
 
 A) 函数立即抛出 `TypeError`。
+
 B) 非 promise 值被封装在一个已解析的 promise 中。
+
 C) `async` 函数返回 `undefined`。
+
 D) 函数的执行被无限暂停。
 
 答案：B
 
-解析：如果你 `await` 一个非 promise 值，它会自动封装在一个以该值解析的 promise 中，允许 `async` 函数将其视为 promise。
+解析：如果你 `await` 一个非 promise 值，它会自动封装在一个以该值解析的 promise 中，允� `async` 函数将其视为 promise。
 
 JavaScript 中事件循环的主要目的是什么？
 
 A) 执行所有 JavaScript 代码。
+
 B) 允许 JavaScript 代码在多线程上运行。
+
 C) 在单线程环境中管理异步任务的执行。
+
 D) 将 JavaScript 编译为机器码。
 
 答案：C
@@ -1588,8 +1719,11 @@ D) 将 JavaScript 编译为机器码。
 如何处理 promise 链中抛出的异常？
 
 A) 在链的末尾添加 `.catch()`。
+
 B) 在 `.then()` 方法内部使用 `throw` 语句。
+
 C) 忽略它们，因为它们会自动处理。
+
 D) 在不加 catch 的情况下将 promise 链封装在 `try` 块中。
 
 答案：A
@@ -1599,17 +1733,18 @@ D) 在不加 catch 的情况下将 promise 链封装在 `try` 块中。
 哪项准确描述了 async 函数的行为？
 
 A) 它总是暂停整个程序的执行直到完成。
+
 B) 它在单独线程中与其他 async 函数并行运行。
+
 C) 它返回一个 promise，其执行可以通过 `await` 暂停。
+
 D) 它阻塞主线程直到所有 await 语句解析。
 
 答案：C
 
 解析：`async` 函数返回一个 promise，函数内部的执行可以在 `await` 表达式处暂停以等待 promise 解析，而不会阻塞主线程。
 
-
-
-
+## 错误处理与对象配置
 
 在 JavaScript 中，错误处理是编写健壮代码的关键方面，特别是在处理可能失败的操作时，例如从服务器获取数据或读取文件。`try-catch-finally` 语句是错误处理的基石，它允许开发者以优雅的方式响应错误，同时确保无论是否发生错误，始终会执行某些清理操作。
 
@@ -1633,7 +1768,7 @@ try {
 
 图片：上述代码的结果，显示了控制台中抛出的错误。
 
-在 JavaScript 中，`finally` 块是 `try-catch` 错误处理的一部分。它在 `try` 和 `catch` 块执行之后、但在 `try...catch...finally` 块之后的语句之前执行。无论是否抛出或捕获了异常，它总是执行的。
+在 JavaScript 中，`finally` 嫩是 `try-catch` 错误处理的一部分。它在 `try` 和 `catch` 块执行之后、但在 `try...catch...finally` 块之后的语句之前执行。无论是否抛出或捕获了异常，它总是执行的。
 
 ```javascript
 function testFinally() {
@@ -1680,6 +1815,8 @@ fetch('https://api.example.com/data')
 
  JavaScript 对象本质上是动态的，允许在对象创建后添加、修改或删除属性。
 
+
+
 然而，在某些情况下，锁定对象以防止进一步修改，同时允许更改现有属性是有益的。`Object.seal()` 是一个密封对象的方法，它会防止向对象中添加新属性，并将所有现有属性标记为不可配置的（non-configurable）。只要属性是可写的（writable），密封对象的属性仍然可以被修改。
 
 ```javascript
@@ -1713,16 +1850,16 @@ console.log(Object.isSealed(obj)); // true
 
 在 `Object.seal` 的示例中，我们演示了对象密封后，其属性仍然可以修改，但不能添加新属性，且现有属性无法移除。这展示了 `Object.seal` 如何为对象提供某种不可变性，在需要在保持对象形状不变但允许修改现有属性值的情况下，它是一个非常有用的工具。
 
-
-
-
 解析：`Object.seal()` 密封一个对象，防止向其添加新属性并防止删除现有属性，但它仍然允许修改现有属性的值。
 
 如何有效地使用错误处理中的 `finally` 块？
 
 A) 将错误日志记录到外部系统。
+
 B) 执行清理操作，例如关闭文件或释放资源。
+
 C) 根据捕获的异常抛出新错误。
+
 D) 在捕获错误之前执行高优先级代码。
 
 正确答案：B) 执行清理操作，例如关闭文件或释放资源。
@@ -1732,8 +1869,11 @@ D) 在捕获错误之前执行高优先级代码。
 如果 promise 后面跟一个 `finally` 子句并且它状态确定（settled），会发生什么？
 
 A) `finally` 子句被跳过。
+
 B) `finally` 子句在 promise 状态确定之前执行。
+
 C) `finally` 子句执行，其返回值会影响 promise 的结果。
+
 D) 无论 promise 的结果如何，`finally` 子句都会执行。
 
 正确答案：D) 无论 promise 的结果如何，`finally` 子句都会执行。
@@ -1743,8 +1883,11 @@ D) 无论 promise 的结果如何，`finally` 子句都会执行。
 以下哪项是对对象使用 `Object.seal()` 的真实影响？
 
 A) 对象的原型可以被更改。
+
 B) 可以向对象中添加属性。
+
 C) 如果属性是可写的（writable），仍然仍然更改属性值。
+
 D) 可以从对象中删除属性。
 
 正确答案：C) 如果属性是可写的（writable），仍然仍然更改属性值。
@@ -1754,8 +1897,11 @@ D) 可以从对象中删除属性。
 在什么情况下，`try-catch-finally` 语句中的 `finally` 块不会执行？
 
 A) 当 `try` 块中抛出错误时。
+
 B) 当 `catch` 块中捕获到错误时。
+
 C) 当 `try` 或 `catch` 块中存在 `return` 语句时。
+
 D) 无论什么种情况，`finally` 块都会执行。
 
 正确答案：D) 无论什么种情况，`finally` 块都会执行。
@@ -1765,8 +1911,11 @@ D) 无论什么种情况，`finally` 块都会执行。
 在 promise 状态确定并使用 `finally` 子句后，我们可以对执行流说明什么？
 
 A) `finally` 子句中断了 promise 链并返回一个新的 promise。
+
 B) `finally` 子句确保不再执行后续的 `.then` 或 `.catch` 处理程序。
+
 C) `finally` 之后的 `.then` 或 `.catch` 处理器的执行依赖于 promise 的结果。
+
 D) `finally` 子句标记了 promise 执行的结束，防止后续的 `then` 或 `catch` 子句运行。
 
 正确答案：C) `finally` 之后的 `.then` 或 `.catch` 处理器的执行取决于 promise 的结果。
@@ -1776,8 +1925,11 @@ D) `finally` 子句标记了 promise 执行的结束，防止后续的 `then` �
 `Object.seal()` 不对对象做了什么？
 
 A) 防止添加新属性。
+
 B) 使所有属性变为不可配置的（non-configurable）。
+
 C) 使所有属性变为不可可写的（non-writable）。
+
 D) 防止现有属性被删除。
 
 正确答案：C) 使所有属性变为不可可写的（non-writable）。
@@ -1787,8 +1939,11 @@ D) 防止现有属性被删除。
 哪种陈准确反映了 `finally` 块的局限性？
 
 A) 它可以执行 `return` 语句来改变函数的结果。
+
 B) 它无法访问在 `try` 和 `catch` 块中定义的变量。
+
 C) 它没有阻止错误传播的能力。
+
 D) 它仅限于同步操作，不能处理异步代码。
 
 正确答案：C) 它没有阻止错误传播的能力。
@@ -1798,8 +1953,11 @@ D) 它仅限于同步操作，不能处理异步代码。
 promise 链中的 `finally` 子句与同步错误处理中的 `finally` 块有何不同？
 
 A) 它只在 promise 被拒绝（rejected）时执行。
+
 B) 它在 promise 状态确定后执行清理代码，无论结果如何。
+
 C) 它可以改变 promise 链的结果。
+
 D) 它阻止了后续 `then` 或 `catch` 子句的执行。
 
 正确答案：B) 它在 promise 状态确定后执行清理代码，无论结果如何。
@@ -1809,16 +1967,16 @@ D) 它阻止了后续 `then` 或 `catch` 子句的执行。
 以下哪项最好描述了 `Object.seal()` 对对象配置性（configurability）的影响？
 
 A) 它使对象的所有属性变为可配置的。
+
 B) 它防止现有属性的配置性被更改。
+
 C) 它允许添加新属性但不允许配置。
+
 D) 它自动使所有属性变为不可配置且可写。
 
 正确答案：B) 它防止现有属性的配置性被更改。
 
 解析解析：`Object.seal()` 密封一个对象，使其现有属性变为不可配置，这意味着它们的配置性不能被更改。此操作防止了属性的添加或删除，但不会影响现有属性的可写性。
-
-
-
 
 # 理解 JavaScript 闭包
 
@@ -1873,7 +2031,7 @@ myInnerFunction(); // 输出: 100
 
 ### 示例 1：基础闭包
 
-此示例演示了闭包如何允许函数访问其外部作用域的变量。
+此示例演示了闭包如何允函数访问其外部作用域的变量。
 
 ```javascript
 function outerFunction() {
@@ -1984,6 +2142,7 @@ window.addEventListener('resize', debounce(() => {
 #### 工作原理：
 
 - **debounce 函数**：它接收两个参数，`func`（要防抖的函数）和 `delay`（等待毫秒）。它返回一个新函数，该函数每次执行都会重置定时器。如果在 `delay` 期间没有再次调用，则原始函数 `func` 将以正确的上下文（this）和参数（args）执行。
+
 - **在 `window.addEventListener` 中使用**：此处对窗口调整事件使用了 debounce。防抖函数只有在事件发生空闲 300 毫秒后才会触发，显著减少了处理程序的调用次数。
 
 ### 示例 2 防抖
@@ -2023,10 +2182,6 @@ person.greet(); // Hi, John
 如果 `greet` 在一个未定义 `this.name` 的不同上下文调用，它将无法按预期工作。
 
 **全局上下文**：在全局执行上下文中（任何函数之外），无论是否处于严格模式，`this` 均指向全局对象。
-
-
-
-
 
 ```javascript
 console.log(this === window); // 在浏览器环境中为 true
@@ -2188,10 +2343,6 @@ Array.from(document.getElementsByTagName('iframe')).forEach(iframe => {
 
 注意：跨源策略可能会限制访问。
 
-
-
-
-
 ## 单次事件监听器
 
 对于一次性事件监听器，你可以在 `addEventListener` 中使用 `{ once: true }` 选项。`addEventListener` 中的 `{ once: true }` 选项确保事件监听器在调用一次后自动移除。
@@ -2236,7 +2387,7 @@ document.getElementById('myInput').addEventListener('change', function(event) {
 
 ## 停止 setInterval()
 
-使用 `clearInterval()` 停止通过 `setInterval()` 设置的重复操作。
+使用 `clearInterval()` 停止通过 `setInterval()` 设置的重复操行。
 
 ```javascript
 const intervalID = setInterval(() => console.log('This prints every 2 seconds'), 2000);
@@ -2271,114 +2422,185 @@ setTimeout(() => {
 ## 练习题答案
 
 ● 如何确保函数被调用的频率不会超过指定的周期间隔，即使它被调用了多次？
+
 ● JavaScript 中 `bind` 方法的主要用例是什么？
+
 ●  哪种方法可以确保函数在特定的 `this` 上下文中被调用？
+
 ● 如何捕获文档中的所有点击事件，包括 iframe 内部的点击事件？
+
 ● 如何在 JavaScript 中确保函数 `myFunc` 在 500ms 延迟后执行？
+
 ● 如何在 JavaScript 中为元素添加一个只运行一次的事件监听器？
+
 ● 哪种 HTML 事件属性可以在用户更改 `<input>` 元素的内容时运行 JavaScript 代码？
+
 ● 如何在 JavaScript 中停止 `setInterval()` 的继续执行？
 
 ### 函数与作用域测验
 
 **什么是 JavaScript 中的闭包？**
+
 A) 循环的一种
+
 B) 一种错误处理机制
+
 C) 一个与其词法环境结合的函数
+
 D) 发送 HTTP 请求的方法
+
 **正确答案：** C) 一个与其词法环境结合的函数
+
 **解释：** JavaScript 中的闭包是一个即使在父函数关闭后仍能访问父级作用域的函数。这使得函数能够记住并访问其词法作用域中的变量。
 
 **JavaScript 中防抖（debouncing）的目的是什么？**
+
 A) 提高函数的执行速度
+
 B) 限制函数执行的频率
+
 C) 确保函数按特定顺序执行
-D) 将 `this` 关键字绑定到函数
+
+D) 将 `this` 关键字绑定到函�
+
 **正确答案：** B) 限制函数执行的频率
+
 **解释：** 防抖是一种用于限制函数执行频率的技巧。它特别适用于处理按键或滚动事件等快速触发的事件，从而提升性能和用户体验。
 
 **在全局上下文中 `this` 关键字指向什么？**
+
 A) 当前函数
+
 B) 全局对象
+
 C) 文档对象
+
 D) 窗口对象
+
 **正确答案：** D) 窗口对象
+
 **解释：** 在全局上下文中，`this` 关键字指向全局对象，在 浏览器中就是窗口对象（window）。
 
 **`bind` 方法如何影响 JavaScript 中的函数？**
+
 A) 删除函数
+
 B) 复制函数
+
 C) 永久设置函数的 `this` 上下文
-D) 立即调用函数
+
+D) 立即调用函�
+
 **正确答案：** C) 永久设置函数的 `this` 上下文
+
 **解释：** `bind` 方法会创建一个新函数，当该函数被调用时，其 `this` 关键字将被设置为提供的值，并在调用新函数时在任何提供的参数之前跟上一个给定的参数序列。
 
 **你会使用哪种方法来确保函数在事件处理期间只执行一次？**
+
 A) 带有 `{ once: true }` 的 `addEventListener`
+
 B) `setInterval`
+
 C) `setTimeout`
+
 **正确答案：** A) 带有 `{ once: true }` 的 `addEventListener`
+
 **解释：** `addEventListener` 中的 `{ once: true }` 选项确保事件监听器在调用一次后自动移除。
 
 **哪种函数可以在指定的延迟后执行 JavaScript 代码？**
+
 A) `setInterval`
+
 B) `setTimeout`
+
 C) `clearTimeout`
+
 D) `clearInterval`
+
 **正确答案：** B) `setTimeout`
+
 **解释：** `setTimeout` 用于在指定的延迟后执行代码。
 
 **在 JavaScript 中如何监听 `<input>` 元素的变化？**
+
 A) 使用 `onClick` 事件
+
 B) 使用 `onInput` 事件
+
 C) 使用 `onChange` 事件
+
 D) 使用 `onUpdate` 事件
+
 **正确答案：** C) 使用 `onChange` 事件
+
 **解释：** `onChange` 事件在 JavaScript 中用于响应 `<input>` 元素的变化。
 
 **防抖函数对连续的调用会做什么？**
+
 A) 确保所有调用都执行
+
 B) 取消除最后一次之前的调用
+
 C) 以固定延迟执行每次调用
+
 D) 每次调用增加延迟
+
 **正确答案：** B) 取消除最后一次之前的调用
+
 **解释：** 防抖通过在特定延迟内有新调用时取消之前的调用来限制执行频率，有效地确保只执行最后一次调用。
 
 **在什么场景下会在 JavaScript 中使用 `bind`？**
+
 A) 当你需要定期重复执行函数时
+
 B) 防止函数被调用过于频繁
+
 C) 确保函数在作为回调传递时保留其 `this` 上下文
+
 D) 在调用一次后移除事件监听器
+
 **正确答案：** C) 确保函数在作为回调传递时保留其 `this` 上下文
+
 **解释：** `bind` 用于将函数的 `this` 上下文设置为特定对象，确保即使函数作为回调传递时也能保留该上下文。
 
 **如何停止由 `setInterval` 调度的函数？**
+
 A) 使用 `stopInterval` 函数
+
 B) 使用 `clearInterval` 函数
+
 C) 将间隔设为 null
+
 D) 使用 `setTimeout` 函数
+
 **正确答案：** B) 使用 `clearInterval` 函数
+
 **解释：** `clearInterval` 函数用于停止通过 `setInterval` 设置为定期运行的函数。
 
 **关于 JavaScript 中的闭包，哪种说法是正确的？**
+
 A) 它们只能访问全局变量
+
 B) 它是封装私有数据的一种
+
 C) 它们阻止函数访问外部作用域变量
+
 D) 它们在创建后立即执行
+
 **正确答案：** B) 它是封装私有数据的一种
 
-
-
-
-
 ## 解析
+
 闭包（Closures）允许函数在外部函数执行完毕后仍然访问外部作用域中的变量，实现了数据封装和私有变量创建。
 
 ### JavaScript 中 `this` 关键字的哪种特性会导致混淆？
 
 A) 它的值始终是 `window` 对象
+
 B) 它不能在箭头函数中使用
+
 C) 它的值在运行时根据函数被调用的上下文确定
+
 D) 在严格模式下它始终为 `undefined`
 
 **正确答案：** C) 它的值在运行时根据函数被调用的上下文确定
@@ -2388,8 +2610,11 @@ D) 在严格模式下它始终为 `undefined`
 ### 在 Web 开发中，防抖（debouncing）解决了什么问题？
 
 A) 防止内存泄漏
+
 B) 优化递归函数调用
+
 C) 减少服务器负载
+
 D) 通过限制快速触发的事件来提高性能
 
 **正确答案：** D) 通过限制快速触发的事件来提高性能
@@ -2399,8 +2624,11 @@ D) 通过限制快速触发的事件来提高性能
 ### 在什么情况下你会使用 `apply` 方法而不是 `bind`？
 
 A) 当你想在一个特定的 `this` 上下文中立即调用函数时
+
 B) 当你需要为未来的执行调度函数时
+
 C) 当你想将函数永久绑定到对象上时
+
 D) 当移除事件监听器时
 
 **正确答案：** A) 当你想在一个特定的 `this` 上下文中立即调用函数时
@@ -2410,8 +2638,11 @@ D) 当移除事件监听器时
 ### 下列哪项是 JavaScript 中事件监听器的错误使用方法？
 
 A) 使用 `addEventListener` 为同一事件多次执行函数
+
 B) 使用带有 `{ once: true }` 选项的 `addEventListener` 执行一次函数
+
 C) 使用 `removeEventListener` 防止事件触发
+
 D) 使用 `addEventListener` 处理非 DOM 对象的事件
 
 **正确答案：** D) 使用 `addEventListener` 处理非 DOM 对象的事件
@@ -2421,9 +2652,12 @@ D) 使用 `addEventListener` 处理非 DOM 对象的事件
 ### JavaScript 中的 `setInterval` 函数的作用是什么？
 
 A) 按指定的时间推迟函数的执行
+
 B) 在指定的延迟后仅执行一次函数
+
 C) 以固定的时间间隔重复执行函数
-D) 在新线程中立即执行函数
+
+D) 在新线程中立即执行函�
 
 **正确答案：** C) 以固定的时间间隔重复执行函数
 
@@ -2432,8 +2666,11 @@ D) 在新线程中立即执行函数
 ### 表单元素中 `onChange` 事件的主要用途是什么？
 
 A) 在提交时验证表单数据
+
 B) 监控并响应输入值的变化
+
 C) 防止默认的表单提交行为
+
 D) 在输入框中添加占位符文本
 
 **正确答案：** B) 监控并响应输入值的变化
@@ -2443,8 +2680,11 @@ D) 在输入框中添加占位符文本
 ### JavaScript 如何处理箭头函数中的 `this` 关键字？
 
 A) 它将 `this` 绑定到全局对象
+
 B) 它允许通过 `bind` 动态设置 `this`
+
 C) 它根据周围环境进行词法绑定 `this`
+
 D) 它将 `this` 设置为 `null`
 
 **正确答案：** C) 它根据周围环境进行词法绑定 `this`
@@ -2454,9 +2694,12 @@ D) 它将 `this` 设置为 `null`
 ### 在 JavaScript 中使用 `clearTimeout` 的效果是什么？
 
 A) 停止由 `setInterval` 设置的重复间隔
+
 B) 防止由 `setTimeout` 设置的函数执行
+
 C) 在指定时间内暂停函数的执行
-D) 立即执行延迟的函数
+
+D) 立即执行延迟的函�
 
 **正确答案：** B) 防止由 `setTimeout` 设置的函数执行
 
@@ -2465,20 +2708,26 @@ D) 立即执行延迟的函数
 ### 为什么你可能在 JavaScript 中使用 `call` 方法？
 
 A) 调度函数在延迟后运行
-B) 使用显式设置的 `this` 值和单个参数执行函数
+
+B) 使用显式设置的 `this` 值和单个参数执行函�
+
 C) 防止函数被调用
+
 D) 将函数永久绑定到对象上
 
-**正确答案：** B) 使用显式设置的 `this` 值和单个参数执行函数
+**正确答案：** B) 使用显式设置的 `this` 值和单个参数执行函�
 
-**解析：** `call` 方法用于通过指定的 `this` 值和传递给函数的单个参数调用函数，允许灵活的函数调用。
+**解析：** `call` 方法用于通过指定的 `this` 值和传递给函数的单个参数调用函数，允灵活的函数调用。
 
 ### 在什么情况下会创建 JavaScript 闭包？
 
 A) 每当定义函数时
+
 B) 当函数作为参数传递给另一个函数时
+
 C) 当在另一个函数内部声明函数并访问外部函数的变量时
-D) 使用 `new` 关键字执行函数时
+
+D) 使用 `new` 关键字执行函�
 
 **正确答案：** C) 当在另一个函数内部声明函数并访问外部函数的变量时
 
@@ -2487,19 +2736,25 @@ D) 使用 `new` 关键字执行函数时
 ### 防抖技术防止了什么？
 
 A) 函数返回值
+
 B) 事件被捕获
+
 C) 响应高频事件频繁执行
+
 D) 事件的默认操作
 
 **正确答案：** C) 响应高频事件频繁执行
 
-**解析：** 防抖是一种编程实践，用于确保耗时操作不会如此频繁地触发，对于缩放、滚动或按键等事件特别有用。它通过在一段时间后执行函数来实现这一点。
+**解析：** 防抖是一种编程实践，用于确保耗时操作不会如此频繁地触发，对于缩放、滚动或按键等事件特别有用。它通过在一段时间后执函数来实现这一点。
 
 ### 关于 `bind` 方法，哪种描述是正确的？
 
-A) 它用于按固定间隔重复执行函数
+A) 它用于按固定间隔重复执行函�
+
 B) 它创建一个新函数，在调用时将其 `this` 设置为提供的值
-C) 它根据指定的延迟立即执行函数
+
+C) 它根据指定的延迟立即执行函�
+
 D) 使用 `setTimeout` 取消延迟的函数执行
 
 **正确答案：** B) 它创建一个新函数，在调用时将其 `this` 设置为提供的值
@@ -2509,8 +2764,11 @@ D) 使用 `setTimeout` 取消延迟的函数执行
 ### 在 JavaScript 中使用 `setInterval` 的主要原因是什么？
 
 A) 定期检查变量的值
-B) 在用户采取特定操作后延迟执行函数
+
+B) 在用户采取特定操作后延迟执行函�
+
 C) 固定时间间隔重复执行函数
+
 D) 确保函数在指定时间后执行一次
 
 **正确答案：** C) 固定时间间隔重复执行函数
@@ -2520,12 +2778,10 @@ D) 确保函数在指定时间后执行一次
 ### `onChange` 事件如何提高 Web 表单的用户体验？
 
 A) 每当输入值变化时重新加载页面
+
 B) 允许在用户与表单元素交互时提供实时反馈和验证
+
 C) 防止用户输入错误数据
-
-
-
-
 
 D) 当任何值发生变化时自动提交表单
 
@@ -2536,20 +2792,35 @@ D) 当任何值发生变化时自动提交表单
 # 数据结构与类型
 
 -   **原型继承 (Prototype Inheritance)**：JavaScript 的一种机制，允许对象从其他对象继承特性，使得对象的属性和方法可以被共享。
+
 -   **Set 对象 (Set Object)**：一种 JavaScript 对象，设计用于存储任何类型的唯一值，从而消除重复项。
+
 -   **数组去重 (Removing Duplicates from an Array)**：利用 `Set` 对象过滤掉数组中的重复值。
+
 -   **使用 Set 的优势 (Benefit of Using Set)**：`Set` 本生存储唯一值，简化了维护不同项目集合的过程，无需手动检查重复。
+
 -   **NaN**：代表“Not-a-Number”（不是数字），是一个特殊值，表示未定义或无法表示的数值结果。
+
 -   **null vs. undefined**：`null` 是一个赋值值，表示有意地不存在任何对象值；而 `undefined` 表示变量已声明但尚未赋值。
+
 -   **Array.prototype.reduce()**：该方法在数组的每个元素上执行还原器函数，最终产生单个输出值。
+
 -   **Array.prototype.flatMap()**：将 `map` 和 `flat` 合并为一个方法，它使用映射函数对每个元素进行映射，然后将结果平化为新数组。
+
 -   **Symbol.iterator**：一个指定对象默认迭代器的属性，用于需要对对象进行迭代的上下文（例如 `for...of` 循环）。
+
 -   **slice vs. splice**：`slice` 创建数组部分内容的浅拷贝且不修改原始数组；而 `splice` 则通过添加、删除或替换元素来更改数组。
+
 -   **Array.prototype.every()**：检查数组中的所有元素是否通过由提供的函数定义的测试，并返回一个布尔值 (`Boolean`)。
+
 -   **Array.prototype.map()**：创建一个新数组，其元素是通过在调用数组的每个元素上调用提供的函数所得到的结果。
+
 -   **Array.prototype.some()**：测试数组中至少有一个元素通过由提供的函数实现的测试，并返回一个布尔值 (`Boolean`)。
+
 -   **合并两个数组 (Concatenating Two Arrays)**：使用 `concat` 方法或扩展运算符 (`...`) 将两个数组合并为一个。
+
 -   **创建新的日期对象 (Creating a New Date Object)**：使用 `new Date()` 创建一个带有当前日期和时间的新日期对象。
+
 -   **转换值并累加结果 (Transforming Values and Accumulating Results)**：`reduce` 方法最适合转换数组值并将其累加为单个结果。
 
 ## JavaScript 中的原型继承
@@ -2657,10 +2928,6 @@ console.log(triangle.getType()); // 输出: triangle
 
 解释：在这里，`Triangle` 继承自 `Polygon`，而 `Polygon` 又继承自 `Shape`。这形成了原型链：`Triangle -> Polygon -> Shape`。方法和属性可以沿着链链访问，演示了 JavaScript 的原型继承允许对象从其祖先继承。
 
-
-
-
-
 `NaN` 代表 "Not-a-Number"不是数字），是一个在数值计算中表示未定义或不可表示值的特殊值。它的独特之处在于，它是 `JavaScript` 中唯一不等于自身的值。
 
 ```javascript
@@ -2686,6 +2953,7 @@ let b = null; // null
 ```
 
 - `null` 是一个表示没有值的赋值值。
+
 - `undefined` 意味着变量已声明但尚未赋值。
 
 ```javascript
@@ -2790,10 +3058,6 @@ for (const num of obj) {
 ```
 
 `Symbol.iterator` 属性是定义对象默认迭代器的基础。它被 `for...of` 循环和其他期望数据是可迭代的结构使用。这允许自定义对象与循环结构和扩展操作符无缝集成。
-
-
-
-
 
 `Array.prototype.map()` 方法创建一个新数组，其每个元素是通过对原数组的每个元素调用提供的函数得到的。它被广泛用于转换数组中的数据。
 
@@ -2909,18 +3173,31 @@ console.log(sum); // 10
 ## 练习题：回答以下问题
 
 - 什么是 JavaScript 中的原型继承？
+
 - Set 对象的目的是什么？
+
 - 如何从数组中删除重复项？
+
 - 存储唯一值时使用 Set 相比数组的主要优势是什么？
+
 - JavaScript 中的 NaN 是什么？
+
 - JavaScript 与 `undefined` 有什么区别？
+
 - `Array.prototype.reduce()` 方法的作用是什么？
+
 - `Array.prototype.flatMap` 在 JavaScript 中作用什么？
+
 - `Symbol.iterator` 属性的主要用例是什么？
+
 - `Array.prototype.slice` 方法与 `Array.prototype.splice` 方法有什么区别？
+
 - `Array.prototype.every()` 方法的作用是什么？
+
 - `Array.prototype.map()` 返回什么？
+
 - `Array.prototype.some()` 方法的典型用例是什么？
+
 - 如何在 JavaScript 中合并数组？
 
 ### 数据结构与类型测验
@@ -2928,26 +3205,29 @@ console.log(sum); // 10
 使用哪种方法在数组的每个元素上执行函数，并累加得到单个返回值？
 
 A) `Array.prototype.map()`
+
 B) `Array.prototype.filter()`
+
 C) `Array.prototype.reduce()`
+
 D) `Array.prototype.forEach()`
 
 正确答案：C) `Array.prototype.reduce()`
 
 解释：`Array.prototype.reduce()` 在数组的每个元素上执行还原器函数，产生一个单个输出值，使其非常适用于对数组值求和等操作。
 
-
-
-
-
 ## 解释
+
 使用 `Set` 的主要优势是它能够直接存储唯一值，简化了不同项目集合的维护，而不需要额外的逻辑来去重。
 
 ### 在 JavaScript 中 `NaN` 代表什么？
 
 A) 新颖且值得 (New and Noteworthy)
+
 B) 不是名字 (Not a Name)
+
 C) 不是数字 (Not a Number)
+
 D) 空且无效 (Null and Nullified)
 
 **正确答案：** C) Not a Number
@@ -2957,8 +3237,11 @@ D) 空且无效 (Null and Nullified)
 ## JavaScript 中 `null` 和 `undefined` 有什么区别？
 
 A) `null` 是数据类型，而 `undefined` 是一个值。
+
 B) `null` 表示变量已声明但未赋值，而 `undefined` 表示有意地缺失任何对象值。
+
 C) `null` 是一个对象，而 `undefined` 的类型是 `undefined`。
+
 D) `null` 表示有意地缺失任何对象值，而 `undefined` 表示变量已声明但尚未赋值。
 
 **正确答案：** D) `null` 表示有意地缺失任何对象值，而 `undefined` 表示变量已声明但尚未赋值。
@@ -2968,8 +3251,11 @@ D) `null` 表示有意地缺失任何对象值，而 `undefined` 表示变量已
 ## `Array.prototype.flatMap()` 方法的作用是什么？
 
 A) 它对数组的每个元素应用一个函数，并将结果展平一层。
+
 B) 它过滤数组然后将结果映射到新数组。
-C) 它将每个元素映射到新元素并移除重复。
+
+C) 它将每个元映射到新元素并移除重复。
+
 D) 它创建数组的深拷贝并对每个元素应用一个函数。
 
 **正确答案：** A) 它对数组的每个元素应用一个函数，并将结果展平一层。
@@ -2979,8 +3265,11 @@ D) 它创建数组的深拷贝并对每个元素应用一个函数。
 ## JavaScript 中 `Symbol.iterator` 属性的主要用例是什么？
 
 A) 为 `for-in` 循环定义迭代逻辑
+
 B) 允许对象通过 `for-of` 循环进行迭代
+
 C) 为对象生成唯一的属性键
+
 D) 按照插入顺序遍历对象的属性
 
 **正确答案：** B) 允许对象通过 `for-of` 循环进行迭代
@@ -2990,8 +3279,11 @@ D) 按照插入顺序遍历对象的属性
 ## `Array.prototype.slice()` 和 `Array.prototype.splice()` 方法有什么区别？
 
 A) `slice` 修改原始数组，而 `splice` 不修改。
+
 B) `slice` 返回数组部分的浅拷贝，而 `splice` 用于添加/删除项目并修改原始数组。
+
 C) `splice` 创建新数组，而 `slice` 修改原始数组。
+
 D) 两者没有区别；它们是互换的方法。
 
 **正确答案：** B) `slice` 返回数组部分的浅拷贝，而 `splice` 用于添加/删除项目并修改原始数组。
@@ -3001,8 +3293,11 @@ D) 两者没有区别；它们是互换的方法。
 ## `Array.prototype.every()` 方法返回什么？
 
 A) 一个包含所有通过所提供函数测试元素的新数组
+
 B) 一个布尔值，表示数组中的所有元素是否通过了所提供函数的测试
+
 C) 数组中第一个通过所提供函数测试的元素
+
 D) 一个布尔值，表示数组中至少有一个元素通过了所提供函数的测试
 
 **正确答案：** B) 一个布尔值，表示数组中的所有元素是否通过了所提供函数的测试
@@ -3012,8 +3307,11 @@ D) 一个布尔值，表示数组中至少有一个元素通过了所提供函�
 ## 在数组上调用 `Array.prototype.map()` 的结果是什么？
 
 A) 原始数组根据传递给 `map` 的函数被修改。
+
 B) 一个新数组，其中每个元素都是回调函数的结果。
+
 C) 原始数组通过函数测试的元素个数。
+
 D) 返回 true 或 false，取决于是否所有元素都通过了函数测试。
 
 **正确答案：** B) 一个新数组，其中每个元素都是回调函数的结果。
@@ -3023,8 +3321,11 @@ D) 返回 true 或 false，取决于是否所有元素都通过了函数测试�
 ## 如何描述 `Array.prototype.some()` 方法最合适？
 
 A) 它测试数组中的所有元素是否通过了所提供函数的测试。
+
 B) 它测试数组中至少有一个元素是否通过了所提供函数的测试。
+
 C) 它对数组中的每个元素应用函数而不创建新数组。
+
 D) 它创建一个新数组，其中每个元素都是回调函数的结果。
 
 **正确答案：** B) 它测试数组中至少有一个元素是否通过了所提供函数的测试。
@@ -3034,8 +3335,11 @@ D) 它创建一个新数组，其中每个元素都是回调函数的结果。
 ## 哪种 JavaScript 特性允许对象继承其他属性和方法？
 
 A) 对象映射
+
 B) 原型继承
+
 C) 函数式编程
+
 D) 类实例化
 
 **正确答案：** B) 原型继承
@@ -3045,8 +3349,11 @@ D) 类实例化
 ## `Set` 对象在 JavaScript 中的实际应用是什么？
 
 A) 存储顺序项目集合
+
 B) 维护唯一值集合
+
 C) 将键映射到值
+
 D) 将数据组织为键值对
 
 **正确答案：** B) 维护唯一值集合
@@ -3056,8 +3363,11 @@ D) 将数据组织为键值对
 ## 为什么 `NaN` 在 JavaScript 计算中可能是一个问题值？
 
 A) 它很容易与 `null` 或 `undefined` 值混淆。
+
 B) 它表示操作没有产生数值，可能意味着错误或意外输入。
+
 C) 它表示计算成功。
+
 D) 它在数学运算中等于零。
 
 **正确答案：** B) 它表示操作没有产生数值，可能意味着错误或意外输入。
@@ -3067,16 +3377,16 @@ D) 它在数学运算中等于零。
 ## 在什么情况下 `Array.prototype.flatMap()` 特别有用？
 
 A) 当你需要从数组中删除元素时
+
 B) 当在映射数组并将结果展平一层时
+
 C) 当检查数组中的每个元素是否通过了某个特定测试时
+
 D) 当计算数组中所有元素的和时
 
 **正确答案：** B) 当在映射数组并将结果展平一层时
 
 **解释：** `Array.prototype.flatMap()` 特别有用的情况是：你需要对数组的每个元素应用映射函数，然后将映射后的数组展平一层合并为一个单一数组，它将两个步骤合并为了一个。
-
-
-
 
 B) `splice()` 可以向数组中添加新元素，而 `slice()` 则不能。
 
@@ -3090,15 +3400,15 @@ D) `splice()` 创建数组的深克隆，而 `slice()` 创建浅拷贝。
 
 在 JavaScript 中使用 `Symbol.iterator` 的主要优势是什么？
 
-A) 它允许更高效地复制对象。
+A) 它允更高效地复制对象。
 
-B) 它允许对对象实现自定义迭代行为。
+B) 它允许对对象实现自定�迭代行为。
 
 C) 它能够安全地加密对象属性。
 
 D) 它为对象属性创建唯一标识符。
 
-正确答案：B) 它允许对对象实现自定义迭代行为。
+正确答案：B) 它允许对对象实现自定�迭代行为。
 
 解释：`Symbol.iterator` 属性允许对象定义其迭代行为，例如在通过 `for...of` 等循环进行迭代时如何表现，从而能够对自定义和复杂的数据结构进行迭代访问。
 
@@ -3168,23 +3478,29 @@ C) 使用 `isNaN()` 函数
 
 D) 通过检查值是否为 `null`
 
-正确答案：C) 使用 `isNaN()` 函数
+**正确答案：** C) 使用 `isNaN()` 函数
 
-解释：`NaN` 无法通过直接比较检查，因为 `NaN === NaN` 返回 `false`。`isNaN()` 函数
+**解释：** `NaN` 无法通过直接比较检查，因为 `NaN === NaN` 返回 `false`。`isNaN()` 函数
 
 # 模块与 ES6 特性
 
 - **JavaScript 模块**：模块对于将代码组织为可用部分、改进代码管理和封装至关重要。它们依赖于功能的导出和导入，有助于模块化的代码组织。
+
+
+
 - **动态导入**：利用动态导入 `import()` 允许按需加载模块。这是 Web 应用程序性能的关键，允许代码分割和懒加载以确保代码的高效使用。
+
 - **导入语句行为**：了解当模块没有导出默认时如何处理这种情况很重要，通过显式导入命名导出来实现功能的无缝集成。
+
 - **模块封装**：在 ES6 中通过导出和导入实现封装，有助于将模块的公共接口与其内部机制分离，确保代码的私密性和完整性。
+
 - **模板字符串**：这些字量允许轻松地创建动态和多行字符串，提供了一种更简单的方法通过嵌入表达式来操作字符串，从而提高可读性。
 
 ## JavaScript 模块与 ES6 特性
 
 在不断发展的 Web 开发版图中，JavaScript 始终处于前沿，提供了丰富的功能和能力来构建复杂高效的 Web 应用程序。随着 ES6（ECMAScript 2015）的引入，JavaScript 的功能得到了显著扩展，使语言变得更加强大且更容易使用。在这些进步中， JavaScript 模块和若干关键的 ES6 特性在现代 Web 开发实践中起着至关重要的作用。本节深入探讨了 JavaScript 模块、动态导入和其他 ES6 特性的概念，为如何利用这些工具增强代码组织、模块化和整体应用程序性能提供了全面的理解。
 
-通过探索这些概念，读者将获得使用 JavaScript 模块和 ES6 特性编写更高效、可维护且可扩展代码的坚实基础。无论是想要理解基础的初，还是旨在精炼技能的资深开发者，本节都为现代 Web 开发中充分利用 JavaScript 的潜力提供了宝贵的见解。
+通过探索这些概念，读者将获得使用 JavaScript 模坖和 ES6 特性编写更高效、可维护且可扩展代码的坚实基础。无论是想要理解基础的初，还是旨在精炼技能的资深开发者，本节都为现代 Web 开发中充分利用 JavaScript 的潜力提供了宝贵的见解。
 
 ## JavaScript 模块：概述
 
@@ -3220,14 +3536,7 @@ const needSpecialFeature = userPrefersAdvancedFeatures && browserSupportsFeature
 function getUserPreference() {
   // 实现逻辑以确定用户偏好
   // 例如，检查本地存储或用户设置
-}
-```
-
-
-
-
-```javascript
-return true; // Placeholder return value
+  return true; // Placeholder return value
 }
 
 function checkBrowserSupport() {
@@ -3280,7 +3589,9 @@ export const updateFeatureSettings = (settings) => {
 此模块导出了三个函数：
 
 - `activateFeature()`：激活特殊功能，其中可能包括渲染组件或启用某些功能。
+
 - `deactivateFeature()`：禁用该功能，执行任何必要的清理工作。
+
 - `updateFeatureSettings(settings)`：更新功能的设置或配置。
 
 当使用 `import('./specialFeatureModule.js')` 将此模块动态导入到应用程序的其他部分时，可以调用这些导出函数来根据应用程序的需求或用户交互在运行时控制功能的行为。
@@ -3347,6 +3658,7 @@ export const myVariable = '这是 myVariable';
 在此模块中：
 
 - `myFunction` 是一个简单的函数，调用它时它会在控制台打印一条消息。在真实场景中，此函数可以执行任何任务，例如获取数据、处理数据或触发某些应用程序逻辑。
+
 - `myVariable` 是一个持有字符串值的变量。根据你的需求，它可以是任何类型的可导出值，例如字符串、数字、对象或数组。
 
 当你使用 `import { myFunction, myVariable } from './myModule.js';` 导入这些时，你可以像这样直接在代码中使用它们：
@@ -3362,11 +3674,8 @@ console.log(myVariable); // 输出：这是 myVariable
 
 这展示了 ES6 模块允许从模块中导入特定的部分（如函数或变量），这有助于优化应用程序的性能和可维护性。
 
-
-
-
-
 - **文件路径**：你在`<script>` 标签的 `src` 属性以及 `import` 语句中提供的路径必须是正确的。对于本地开发，这通常意味着从 HTML 文件到 JavaScript 文件的相对路径，或者如果配置从特定目录提供，则使用绝对路径。
+
 - **浏览器支持**：虽然大多数现代浏览器都支持 ES 模块，但请确保你在支持该功能的浏览器中进行测试。一些旧版本的浏览器（包括旧版本的 `Internet Explorer`）不支持 ES 模块。
 
 通过遵循这些指南，你应该能够在能够在浏览器中使用原生 JavaScript 时，解决“Cannot use import statement outside a module”的错误。
@@ -3405,7 +3714,7 @@ loadModule();
 
 ## JavaScript 中模板字符串的作用
 
-JavaScript 中的模板字符串（Template literals）为创建字符串提供了一种更方便、更强大的 方式。它们允许创建多行字符串而无需拼接，并支持在字符串中直接嵌入表达式，实现了动态字符串的创建。这一特性大大增强了 JavaScript 中字符串操作的可读性和灵活性。
+JavaScript 中的模板字符串（Template literals）为创建字符串提供了一种更方便、更强大的 方式。它们允创建多行字符串而无需拼接，并支持在字符串中直接嵌入表达式，实现了动态字符串的创建。这一特性大大增强了 JavaScript 中字符串操作的可读性和灵活性。
 
 使用模板字符串的示例：
 
@@ -3471,83 +3780,120 @@ console.log(result);
 ## 练习答案
 
 - JavaScript 中的动态导入（`import()`）启用了哪些功能？
+
 - 如果指定的模块没有导出默认值，JavaScript 中 `import` 语句的默认行为是什么？
+
 - 如何在 JavaScript ES6 中实现模块封装？
+
 - 如何在 JavaScript 中动态导入模块？
+
 - JavaScript 中模板字符串的作用是什么？
 
 ### 模块与 ES6 测验
 
 **使用什么语法从 JavaScript 模块中导出单个函数或变量？**
+
 A) `export function myFunction() {}`
+
 B) `module.export = myFunction;`
+
 C) `export = myFunction;`
+
 D) `module.export { myFunction };`
 
 **答案：A**
+
 **解释**：在 ES6 JavaScript 中，从模块导出单个函数或变量的正确语法是 `export function myFunction() {}` 或 `export const myVariable = value;`。
 
 **如何从 JavaScript 模块导入默认导出？**
+
 A) `import myDefault from 'myModule';`
+
 B) `import { myDefault } from 'myModule';`
+
 C) `import * as myDefault from 'myModule';`
+
 D) `require('myModule');`
 
 **答案：A**
+
 **解释**：从模块导入默认出的正确语法是 `import myDefault from 'myModule';`。
 
 **JavaScript 中动态导入的作用是什么？**
+
 A) 一次导入所有模块
+
 B) 允许在运行时根据某些条件导入模块
+
 C) 提高代码的可读性
+
 D) 在文件开头打包所有导入
 
 **答案：B**
+
 **解释**：动态导入允许开发者在运行时根据某些条件导入模块，通过代码分割和懒加载优化性能。
 
 **关于模板字符串，以下哪项是正确的？**
+
 A) 它们只能用于创建单行字符串。
+
 B) 它们允许使用 `${expression}` 语法嵌入表达式。
+
 C) 它们被包含在单引号 '' 中。
+
 D) 模板字符串中的表达式不能包含函数调用。
 
 **答案：B**
+
 **解释**：模板字符串允许使用 `${expression}` 语法在字符串中嵌入表达式，并包含在反引号中。
 
 **如何在 ES6 中实现模块封装？**
+
 A) 使用 `private` 关键字
+
 B) 通过仅导出模块的必要部分
+
 C) 在 ES6 中无法实现模块封装
+
 D) 使用 IIFE（立即调用函数表达式）
 
 **答案：B**
+
 **解释**：在 ES6 中，模块封装通过只导出模块的必要部分来实现，从而隐藏了其内部实现细节。
 
 **`import * as myModule from 'myModule'` 语句的作用是什么？**
+
 A) 从模块导入默认导出
+
 B) 将整个模块作为对象 `myModule` 导入
+
 C) 从模块导入名为 `myModule` 的特定函数
+
 D) 导致语法错误
 
 **答案：B**
+
 **解释**：该语法将整个模块作为对象 `myModule` 导入，允许访问它的所有导出。
 
 **使用动态导入时，import()` 函数返回什么？**
+
 A) 模块的副本
+
 B) 代表模块路径的字符串
+
 C) 解析为模块的 Promise
+
 D) 模块的默认导出
 
 **答案：C**
+
 **解释**：`import()` 函数返回一个解析为模块的 Promise，允许异步模块加载。
 
 **关于命名导出，以下哪种说法是正确的？**
+
 A) 每个模块只能有一个命名导出。
+
 B) 命名导出总是被提升的。
-
-
-
-
 
 C) 你必须使用精确名称来导入命名导出（named export）。
 
@@ -3560,8 +3906,11 @@ D) 命名导出可以使用导入者选择的任何名称进行导入。
 JavaScript 中的模板字符串字量（template literals）支持什么传统字符串不支持的功能？
 
 A) 使用反斜线 `\` 字符
+
 B) 无需拼接即可多行字符串
+
 C) 仅存储数值值
+
 D) 对包含的文本进行加密
 
 答案：B
@@ -3571,8 +3920,11 @@ D) 对包含的文本进行加密
 当模块加载失败时，使用 `import()` 函数进行动态导入的结果是什么？
 
 A) `import()` 函数返回 `null`。
+
 B) `import()` 函数返回 `undefined`。
+
 C) 返回的 `Promise` 会被拒绝（rejected）。
+
 D) 脚本立即停止执行。
 
 答案：C
@@ -3582,8 +3934,11 @@ D) 脚本立即停止执行。
 你如何显式地仅从模块中导入命名导出？
 
 A) `import myModule from 'myModule';`
+
 B) `import { myFunction } from 'myModule';`
+
 C) `import * as myModule from 'myModule';`
+
 D) `import myFunction, myVariable from 'myModule';`
 
 答案：B
@@ -3592,9 +3947,12 @@ D) `import myFunction, myVariable from 'myModule';`
 
 模块封装（module encapsulation）的主要优势是什么？
 
-A) 增加 JavaScript 程序包的大小
+A) 增加 JavaScript 程序包的大量
+
 B) 使所有模块函数变为全局
+
 C) 增强代码的隐私性和完整性
+
 D) 强制使用动态导入
 
 答案：C
@@ -3604,8 +3962,11 @@ D) 强制使用动态导入
 以下哪项不是模板字符串字量的有效用例？
 
 A) 字符串的国际化
+
 B) 创建 SQL 查询
+
 C) 声明对象属性名
+
 D) 在字符串中嵌入表达式
 
 答案：A
@@ -3614,9 +3975,12 @@ D) 在字符串中嵌入表达式
 
 为了确保动态导入在网络浏览器中正常工作，必须做什么？
 
-A) 使用打包器预编译所有模块
+A) 使用打包器预编译所有模坖
+
 B) 在 script 标签中使用 `defer` 属性
+
 C) 确保服务器支持提供 ES 模块
+
 D) 无需特殊处理，因为所有浏览器都支持动态导入
 
 答案：C
@@ -3626,8 +3990,11 @@ D) 无需特殊处理，因为所有浏览器都支持动态导入
 在什么情况下你会倾向于使用动态导入而不是静态导入？
 
 A) 当应用程序每个用户都需要该模块时
+
 B) 当模块提供了应用程序启动所需的核心功能时
+
 C) 当模块仅在特定条件或特定页面需要时
+
 D) 永远不会，因为静态导入总是更高的
 
 答案：C
@@ -3637,8 +4004,11 @@ D) 永远不会，因为静态导入总是更高的
 以下导入语句的作用是什么？`import { myFunc as func } from 'myModule';`
 
 A) 以别名 `func` 导入 `myFunc`
+
 B) 在 `myModule` 内部将 `myFunc` 重命名为 `func`
+
 C) 导致语法错误
+
 D) 将 `myModule` 中的所有函数都导入为 `func`
 
 答案：A
@@ -3648,8 +4018,11 @@ D) 将 `myModule` 中的所有函数都导入为 `func`
 哪一个不是 ES6 模块的特征？
 
 A) 实时绑定（Live bindings）
+
 B) 自动分号插入
+
 C) 默认严格模式
+
 D) 依赖注入
 
 答案：D
@@ -3659,8 +4032,11 @@ D) 依赖注入
 你如何使用动态导入提高网络应用程序的性能？
 
 A) 通过预加载所有依赖项
+
 B) 通过在需要时动态加载模块
+
 C) 通过使用旧版本的 JavaScript 以进行兼容
+
 D) 通过避免使用外部模块
 
 答案：B
@@ -3670,8 +4046,11 @@ D) 通过避免使用外部模块
 什么是标签模板字符串字量（tagged template literal）？
 
 A) 带有特定 CSS 类标签的模板字符串字量
+
 B) 处理模板字符串字量字符串和表达式的函数
+
 C) 专门用于 HTML 模板的模板字符串字量
+
 D) JavaScript 中的语法错误
 
 答案：B
@@ -3681,8 +4060,11 @@ D) JavaScript 中的语法错误
 哪个语句正确导入了仅用于副作用（side effects）的模块？
 
 A) `import 'myModule';`
+
 B) `import {} from 'myModule';`
+
 C) `import * as myModule from 'myModule';`
+
 D) `import myModule;`
 
 答案：A
@@ -3692,8 +4074,11 @@ D) `import myModule;`
 使用命名导出而不是默认导出（default exports）的主要原因是什么？
 
 A) 命名导出改进了内存使用
+
 B) 命名导出只能导出函数
+
 C) 命名导出通过显式指定导出内容增强了代码的可读性和可维护性
+
 D) 默认导出不允许导出多个值
 
 答案：C
@@ -3703,8 +4088,11 @@ D) 默认导出不允许导出多个值
 如果尝试导入一个不存在的命名导出会发生什么？
 
 A) 导入静默失败
+
 B) 导入默认导出
+
 C) 模块作为空对象导入
+
 D) 抛出语法错误
 
 答案：D
@@ -3714,8 +4102,10 @@ D) 抛出语法错误
 模板字符串字量如何支持本地化和国际化？
 
 A) 根据用户的区域自动翻译文本
+
 B) 通过允许嵌入可以动态替换为本地化内容的变量和表达式
-C 模板字符串字量不支持本地化
+
+C) 模板字符串字量不支持本地化
 
 答案：B
 
@@ -3724,8 +4114,11 @@ C 模板字符串字量不支持本地化
 在 ES6 模块的语境下，“摇优化”（tree shaking）指的是什么？
 
 A) 物理摇动你的树以提高性能
+
 B) 由循环引起的引起的错误
+
 C) 从最终包中移除未使用导出的过程
+
 D) 按字母顺序导入依赖
 
 答案：C
@@ -3735,24 +4128,29 @@ D) 按字母顺序导入依赖
 以下哪项是使用动态导入的有效理由？
 
 A) 增加网络应用程序的初始加载时间
+
 B) 确保预先加载所有代码，无论是否使用
+
 C) 根据需要动态加载代码，提高性能和用户体验
-D 防止使用模板字符串字量
+
+D) 防止使用模板字符串字量
 
 答案：C
 
 解释：动态导入用于在需要时加载代码而不是一次性加载。这通过缩短初始加载时间和资源消耗，提升了网络应用程序的性能和用户体验。
 
+- **对象的深拷贝**：创建对象深拷贝的技术至关重要，包括 `JSON.parse(JSON.stringify(object))` 方法及其局限性。文中针对复杂场景讨论了替代方案，包括包含循环引用或特殊类型的对象，在这些情况下标准方法无法胜，凸显了使用第三方库或自定�解决方案的必要性。
 
-
-
-
-- **对象的深拷贝**：创建对象深拷贝的技术至关重要，包括 `JSON.parse(JSON.stringify(object))` 方法及其局限性。文中针对复杂场景讨论了替代方案，包括包含循环引用或特殊类型的对象，在这些情况下标准方法无法胜，凸显了使用第三方库或自定义解决方案的必要性。
 - **用于私有数据的 WeakMaps**：`WeakMaps` 允许在 JavaScript 中存储私有数据，其键可以被垃圾回收，强调了私有数据的有效管理。
+
 - **遍历对象属性**：涵盖了使用 `for...in` 循环和其他方法遍历对象属性的重要性，并探讨了遍历对象的最佳实践。
+
 - **类中的私有变量和方法**：ES6 中类私有字段和方法的语法增强了封装性，并支持面向对象的编程原则。
+
 - **将 NodeList 转换为数组**：将 `NodeList` 对象转换为数组的技术（例如使用扩展运算符和 `Array.from()` 方法）对于有效的 DOM 操控至关重要。
-- **定义不可枚举属性**：利用 `Object.defineProperty()` 在对象上定义不可枚举属性，可以对属性的可见性和枚举性进行更大的控制。
+
+- **定义不可枚举属性**：利用 `Object.defineProperty()` 在对象上定义不可枚属性，可以对属性的可见性和枚举性进行更大的控制。
+
 - **克隆时排除某些属性**：提供了选择性克隆对象的策略，包括使用解构和剩余参数来高效地排除不需要的属性。
 
 # 精通对象操作与迭代
@@ -3816,11 +4214,17 @@ console.log('Cloned Object Excluding Items:', clonedObjectExcludingItems);
 ```
 
 此示例演示了：
+
 - 如何创建一个包含嵌套对象和数组的深拷贝。注意：`JSON.parse(JSON.stringify(object))` 是一个简单的方法，但不适用于具有循环引用或 `Date`、`RegExp` 等特殊对象。
+
 - 使用 `Object.defineProperty()` 为对象添加不可枚举属性。
+
 - 使用解构和剩余参数在克隆对象时排除某些属性。
+
 - 使用 `for...in` 循环遍历对象属性并使用 `hasOwnProperty()` 检查属性所有权。
+
 - 使用 `Array.from()` 模拟将 `NodeList` 转换为数组以便演示（因为不在 DOM 环境中）。
+
 - 使用 `WeakMap` 将私有数据与对象关联，展示了 `WeakMap` 的键可以是对象而值可以是任何内容，这对于管理私有数据是非常理想的。
 
 这个综合示例包含了 JavaScript 对象操作和迭代的各种技术，说明了这些概念的实际应用。
@@ -3835,9 +4239,6 @@ const deepCopy = JSON.parse(JSON.stringify(obj));
 deepCopy.b.c = 20;
 console.log(obj.b.c); // 2, 原始对象未改变
 ```
-
-
-
 
 你可以使用 `for...in` 循环或 `Object.keys()`、`Object.values()` 和 `Object.entries()` 方法来遍历对象的属性。
 
@@ -3901,20 +4302,31 @@ class MyClass {
 `NodeList` 和 `Array` 都是 JavaScript 中的集合，但用途不同且具有不同的功能：
 
 ### NodeList
+
 - **来源**：`NodeList` 是节点集合，通常在从 DOM（文档对象模型）选择元素时，由 `document.querySelectorAll` 等方法返回。
+
 - **方法**：与数组相比，`NodeList` 对象的功能更为有限。例如，它们本身不包含如 `map`、`filter` 或 `reduce` 等数组方法。
+
 - **动态 vs 静态**：某些 `NodeList` 对象是“动态的”（live），这意味着当 DOM 变化时它们会自动更新。例如，`document.getElementsByTagName` 返回的集合是动态的。然而，`document.querySelectorAll` 返回的 `NodeList` 是静态的，不会反映创建后的 DOM 更改。
+
 - **迭代**：可以使用 `forEach`（现代浏览器中）和传统的 `for` 循环来遍历 `NodeList`。
 
 ### Array
+
 - **来源**：`Array` 是一个用于构建数组的全局对象，数组是一种高级的列表类对象。
+
 - **方法**：`Arrays` 提供了广泛的方法用于操作、搜索、排序、迭代和转换数组内容（`map`、`filter`、`reduce`、`find`、`sort` 等）。
+
 - **静态**：`Arrays` 是静态的。如果你更改了网页内容（从而改变了 DOM），从 DOM 元素创建的数组不会自动反映这些更改。
+
 - **通用性**：`Arrays` 可以存放任何类型的数据，而不仅仅是 DOM 节点，并且可以嵌套（数组中的数组）以创建复杂的数据结构。
 
 ### 主要区别
+
 - **方法的可用性**：`Arrays` 拥有更广泛的方法集用于操作和查询它们持有的数据。
+
 - **动态集合**：某些 `NodeList` 实例会自动反映 DOM 的当前状态（动态），而 `arrays` 则不然。
+
 - **使用场景**：`NodeList` 专门为处理 DOM 节点集合而设计，而 `arrays` 是用于任何 JavaScript 数据类型的通用容器。
 
 为了在 `NodeList` 上使用数组方法，开发者通常使用扩展运算符 `[...nodeList]`、`Array.from(nodeList)` 或 `Array.prototype.slice.call(nodeList)` 等技术将 `NodeList` 转换为 `array`。这种转换允许开发者使用 JavaScript 提供的丰富的数组方法对对集合进行更灵活的操作和使用。
@@ -3935,6 +4347,7 @@ const nodeArray2 = Array.from(nodeList);
 在 Web 开发处理文档对象模型 (DOM) 时，将 `NodeList` 转换为 `array`是一项常见任务。这种转换允许开发者对节点列表使用 `map`、`filter` 和 `forEach` 等数组方法。以下是三个在 JavaScript 中将 `NodeList` 转换为 `array` 的不同方法的示例：
 
 ### 示例 1：使用扩展运算符
+
 扩展运算符 `...` 允许将迭代器（如 `NodeList`）展开为单独元素，然后将它们放入新的 `array` 中。
 
 ```javascript
@@ -3949,6 +4362,7 @@ nodeArray.forEach(node => console.log(node));
 ```
 
 ### 示例 2：使用 Array.from()
+
 `Array.from()` 方法可以从类数组或可迭代对象创建新的浅拷贝 Array 实例，非常适合将 `NodeList` 转换为 `array`。
 
 ```javascript
@@ -3962,6 +4376,7 @@ nodeArray.map(node => console.log(text));
 ```
 
 ### 示例 3：使用 Array.prototype.slice.call()
+
 在扩展运算符和 `Array.from()` 引入之前，`Array.prototype.slice.call()` 是类数组对象转换为数组的常用方法。这种方法在不支持新语法的环境中仍然有效。
 
 ```javascript
@@ -3985,7 +4400,7 @@ function deepClone(obj, hash = new WeakMap()) {
     return obj;
   }
 
-  // 处理 Date
+  // 处 Date
   if (obj instanceof Date) {
     return new Date(obj);
   }
@@ -4026,9 +4441,6 @@ const obj = {
 };
 obj.self = obj; // 循环引用
 ```
-
-
-
 
 ```javascript
 const clonedObj = deepClone(obj);
@@ -4078,7 +4490,9 @@ for (const key in obj) {
 ```
 
 在此示例中：
+
 - `nonEnumerable` 属性的 `enumerable` 被设置为 `false`，因此当使用 `for...in` 循环遍历对象属性时，它不会显示。
+
 - `enumerable` 属性的添加方式使其默认可枚举的（因为直接添加到对象上的属性默认是可枚举的），因此它在 `for...in` 循环迭代期间会被打印。
 
 当你运行这段代码时，你会看到控制台打印了 `enumerable`，这演示了不可枚举属性是如何不包含在 `for...in` 循环迭代中的。正如预期的，`nonEnumerable` 属性没有出现在输出中。
@@ -4101,99 +4515,162 @@ console.log(cloneExcludingB); // { a: 1, c: 3 }
 ## 练习答案
 
 - 如何在 JavaScript 中复制对象？
+
 - 如何在 JavaScript 中遍历对象的属性？
+
 - 如何在 JavaScript 类中创建私有变量？
+
 - 如何在 JavaScript 类中创建私有方法？
+
 - 如何在 JavaScript 中将 `NodeList` 转换为数组？
+
 - 如何在 JavaScript 中深拷贝对象，包括包含循环引用的对象？
+
 - 如何在 ES6 中将 `NodeList` 转换为数组？
+
 - 如何在对象上定义一个在 `for...in` 循环中不可枚举或不在对象的键数组中的属性？
+
 - 在 JavaScript 中，如何在排除某些属性的情况下克隆对象？
 
 ### 对象操作与迭代测验
 
 **JavaScript 中通常用哪种方法执行对象的深拷贝？**
+
 A) `Object.assign()`
+
 B) `JSON.parse(JSON.stringify(object))`
+
 C) `Object.copyDeep()`
+
 D) `Array.from(object)`
+
 **答案：B**
+
 *解释：* `JSON.parse(JSON.stringify(object))` 是深拷贝对象的常用技术，但它有其局限性，例如无法处理循环引用和特殊对象类型。
 
 **使用 `JSON.parse(JSON.stringify(object))` 深拷贝对象的局限性是什么？**
+
 A) 它可以复制函数。
+
 B) 它处理循环引用。
+
 C) 它不能复制方法或 undefined 值。
+
 D) 它增加了对象的大小。
+
 **答案：C**
+
 *解释：* 这种方法无法复制函数或方法、undefined 值，而且遇到循环引用时会失败。
 
 **`WeakMap` 在 JavaScript 中主要提供什么？**
+
 A) 一种将键与值强链接的方法以防止垃圾回收。
+
 B) 字符串到值的映射。
+
 C) 一个键值对集合，其中键是被弱引用引用的。
+
 D) 一个可迭代的键值对集合。
+
 **答案：C**
+
 *解释：* `WeakMap` 允许键在没有其他引用时被垃圾回收。
 
 **如何在 ES6 中声明私有变量？**
+
 A) 在类内部使用 `var`。
+
 B) 在类名前面加上 `#`。
+
 C) 在类外部定义。
+
 D) 使用 `private` 关键字。
+
 **答案：B**
+
 *解释：* 在 ES6 中，私有字段通过使用 `#` 来创建。
 
 **以下哪种是将 `NodeList` 转换为数组正确方法？**
+
 A) `let array = Array(nodeList)`
+
 B) `let array = nodeList.toArray()`
+
 C) `let array = [...nodeList]`
+
 D) `let array = nodeList.split()`
+
 **答案：C**
+
 *解释：* 展开运算符 `...` 可以将 `NodeList` 转换为数组。
 
 **如何在对象上定义不可枚举属性？**
+
 A) `object.nonumerable = value;`
+
 B) `object.defineProperty('nonEnumerable', {value: value});`
+
 C) `Object.defineProperty(object, 'nonEnumerable', {value: 'hidden', enumerable: false});`
+
 D) `object.setNonEnumerable(value);`
+
 **答案：C**
-*解释：* `Object.defineProperty()` 允许定义属性，包括 `enumerable`。
+
+*解释：* `Object.defineProperty()` 允许定属性，包括 `enumerable`。
 
 **哪种技术可以在克隆对象时排除属性？**
+
 A) 使用 `JSON.parse(JSON.stringify(object))`
+
 B) 使用剩余运算符 `...` 过滤
+
 C) 使用解构和剩余参数
+
 D) 调用 `object.clone()`
+
 **答案：C**
+
 *解释：* 解构配合剩余参数允许通过将其提取来排除属性。
 
 **使用 `WeakMap` 存储私有数据的主要优势是什么？**
+
 A) 通过允许键进行垃圾回收防止内存泄漏
+
 B) 提高数据检索速度
+
 C) 允许访问数据
+
 D) 在不影响性能的情况下存储无限数据
+
 **答案：A**
+
 *解释：* `WeakMap` 的键是弱引用的，这有助于防止内存泄漏。
 
 **关于遍历对象的哪种陈述是正确的？**
+
 A) `for...in` 循环遍历对象的属性值。
+
 B) `Object.keys()` 返回可枚举和不可枚举的属性。
+
 C) `for...in` 循环可以遍历继承的属性。
+
 D) `forEach` 可以直接用于对象上。
+
 **答案：C**
+
 *解释：* `for...in` 循环遍历对象的可枚举属性，包括继承的属性。
 
 **使用 `JSON.parse(JSON.stringify(object))` 克隆对象的可能问题是什么？**
+
 A) 它可以复制函数和符号。
+
 B) 它没有保留原型链。
+
 C) 它增加了执行速度。
+
 D) 它会自动删除循环引用。
+
 **答案：B**
-
-
-
-
 
 # 解析：此方法不会保留原始对象的原型链，也不会复制函数、符号，并且无法处理循环引用。
 
@@ -4209,7 +4686,7 @@ D) 使用 `Object.freeze()`
 
 **答案：B**
 
-解析：需要一个自定义的递归函数（可能结合使用 `WeakMap` 来跟踪引用）来处理循环引用。
+解析：需要一个自定�的递归函数（可能结合使用 `WeakMap` 来跟踪引用）来处理循环引用。
 
 ## 在处理 `NodeList` 时，`Array.from()` 提供了什么功能？
 
@@ -4312,10 +4789,15 @@ D) 当遍历 `NodeList` 时。
 # 事件处理与 DOM
 
 - **事件委托模式**：在父元素上使用单个事件监听器来高效管理多个子元素的事件。这种技术利用了事件冒泡，显著减少了内存占用并提升了性能。
-- **阻止表单提交**：通过拦截表单提交过程，在提交之前实现自定义验证或处理。这种方法对于增强用户体验和维护数据完整性至关重要。
+
+- **阻止表单提交**：通过拦截表单提交过程，在提交之前实现自定�验证或处理。这种方法对于增强用户体验和维护数据完整性至关重要。
+
 - **停止事件传播**：对于复杂的事件处理场景至关重要，此方法允许防止事件在 DOM 中冒泡或捕获，从而对事件流进行精确控制。
+
 - **停止 CSS 动画**：讨论如何使用 JavaScript 技术响应用户交互来暂停、停止或重置 CSS 动画，提供对的的控制。
+
 - **从 DOM 中移除特定元素**：提供从 DOM 中动态移除元素的方法，以适应用户交互引起的页面内容变化。
+
 - **文档完全加载事件**：强调使用 `DOMContentLoaded` 事件来确保 JavaScript 脚本仅在 HTML 文档完全解析后执行，这对于正确初始化 JavaScript 功能至关重要。
 
 ## 导航事件处理 DOM 操作
@@ -4385,10 +4867,6 @@ document.addEventListener('DOMContentLoaded', function() {
 // 用于向列表动态添加项的函数
 ```
 
-
-
-
-
 ```javascript
 function addItemToList() {
   const list = document.getElementById('item-list');
@@ -4408,7 +4886,9 @@ document.getElementById('prevent-form-submit').addEventListener('submit', functi
 ### 代码示例说明
 
 - **事件委托**：此示例使用绑定在容器（`#event-delegation-container`）上的单个事件监听器，来处理对“添加项目”按钮以及列表项内动态添加的“删除”按钮的点击。这种技术利用了事件冒泡并减少了所需的事件监听器数量，从而提高了性能。
+
 - **动态添加和删除元素**：点击“添加项目”按钮会向列表中添加新项目，每个项目都有自己的“删除”按钮。点击“删除”按钮会从列表中移除该特定项目，演示了动态 DOM 操作。
+
 - **防止默认表单提交**：为了防止表单提交并刷新页面，使用 `event.preventDefault()` 阻止了事件的默认操作。这允许在决定是否通过程序提交表单之前，执行自定义的验证或处理。
 
 此示例展示了 JavaScript 中有效的事件处理和动态 DOM 操作的核心技术，适用于各种 Web 开发场景。
@@ -4434,7 +4914,9 @@ JavaScript 中的事件传播是一种定义了事件如何在 DOM 树中传播�
 ### 事件传播的阶段
 
 - **捕获阶段**：这是事件传播循环的第一阶段。在捕获阶段，事件从 `window` 对象开始，向下遍历 DOM 树到达目标元素，并在在此途中触发注册为捕获阶段的事件监听器。设置为捕获模式的事件监听器（将 `capture` 参数设置为 `true` 的 `addEventListener` 函数）将在此阶段执行。
+
 - **目标阶段**：当事件到达目标元素时，目标元素本身上的任何事件监听器都会被触发。此阶段被认为是捕获和冒泡阶段的一部分，这意味着目标元素上的监听器无论被设置为捕获还是冒泡都会执行。
+
 - **冒泡阶段**：在到达目标元素后，事件将从目标元素向上冒泡回 `window` 对象。在此阶段，事件会触发附加在目标元素父元素上的任何事件监听器，但只有那些设置为冒泡模式（如果未指定 `capture` 参数或设置为 `false` 的默认模式）的监听器。
 
 ### 控制事件传播
@@ -4442,7 +4924,9 @@ JavaScript 中的事件传播是一种定义了事件如何在 DOM 树中传播�
 JavaScript 提供了控制事件传播的方法：
 
 - `event.stopPropagation()`：可以在事件监听器内的事件对象上调用此方法，以防止事件继续传播。它会停止捕获和冒泡阶段，意味着在调用此方法后，该事件将不再有更多监听器被调用（同一元素上尚未被调用的监听器）。
+
 - `event.stopImmediatePropagation()`：与 `stopPropagation()` 类似，但它还会防止同一元素上针对同一事件的其他监听器被调用。当单个元素上绑定了多个监听器，且你希望在满足特定条件后防止任何后续监听器执行时，这种方法非常有用。
+
 - `event.preventDefault()`：虽然与传播没有直接关系，但此方法阻止与事件关联的默认操作（例如跟随链接、提交表单）。它通常与传播方法结合使用，以完全控制事件的行为。
 
 ### 用例和最佳实践
@@ -4531,10 +5015,6 @@ left: 100%;
 </head>
 ```
 
-
-
-
-
 ```html
 </head>
 <body>
@@ -4563,9 +5043,13 @@ document.addEventListener('DOMContentLoaded', function() {
 ## 解析
 
 - CSS 定义了一个简单的 `.animated-box`，它使用关键帧动画在其父容器中从左向右移动。
+
 - 动画被设置为在 5 秒内以线性方式无限循环。
+
 - JavaScript 监听 `DOMContentLoaded` 事件，以确保在尝试绑定事件监听器之前 DOM 已完全加载。
-- 为 ID 为 `stop-animation` 的按钮添加了点击事件监听器。
+
+- 为 ID 为 `stop-animation` 的按钏添加了点击事件监听器。
+
 - 当按钮被点击时，通过将 `animation-play-state` 设置为 `paused` 来暂停 `.animated-box` 的动画。这个示例演示了如何使用 JavaScript 控制 CSS 动画，为动画的呈现和交互提供了灵活性。
 
 ## 从 DOM 中移除特定元素
@@ -4591,7 +5075,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 ### 示例 2：使用 `Element.remove()`
 
-`remove()` 方法允许你直接移除元素，而无需引用其父元素。此方法不支持 IE 浏览器。
+`remove()` 方法允许你直接移除元器，而无需引用其父元素。此方法不支持 IE 浏览器。
 
 ```html
 <div id="elementToRemove">这是要移除的元素。</div>
@@ -4625,7 +5109,9 @@ document.addEventListener('DOMContentLoaded', function() {
 ## 解析
 
 - 示例 1 展示了 `parentNode.removeChild(child)` 的用法，即你先选择要移除的子元素，然后在其父元素上调用 `removeChild`。
+
 - 示例 2 展示了更简单的 `remove()` 方法，它直接从 DOM 中移除所选元素。
+
 - 示例 3 阐述了如何通过共同的类名选择多个元素，并使用循环对每个元素调用 `remove()` 来一次性移除它们。
 
 这些示例涵盖了你可能需要从 DOM 中移除元素的各种场景，提供了使用原生 JavaScript 实现此点的多种方法。
@@ -4633,6 +5119,8 @@ document.addEventListener('DOMContentLoaded', function() {
 ## 文档加载完成事件
 
 你可以使用 `DOMContentLoaded` 事件在 HTML 文档完全加载后运行 JavaScript 代码，而无需等待样式表、图像和子框架完成加载。
+
+
 
 ```javascript
 document.addEventListener('DOMContentLoaded', function() {
@@ -4645,63 +5133,99 @@ document.addEventListener('DOMContentLoaded', function() {
 ## 练习：回答以下问题
 
 - 如何使用 JavaScript 防止表单提交？
+
 - JavaScript 中的事件委托是什么？
+
 - 如何在 JavaScript 中停止事件冒泡（传播）？
+
 - 如何在 JavaScript 中停止 CSS 动画？
+
 - 如何使用 JavaScript 从 DOM 中移除特定元素？
+
 - 当文档完全加载（包括所有脚本、图像和样式表）后，会触发哪个 JavaScript 事件？
+
 - 如何使用 JavaScript 防止表单提交？
 
 ### 事件处理与 DOM 测
 
 **使用 JavaScript 事件委托的主要优势是什么？**
+
 A) 增加内存使用
+
 B) 允许对每个元素进行直接事件处理
+
 C) 通过在父元素上绑定单个监听器来减少监听器数量
+
 D) 需要编写更多代码
+
 **答案：C**
+
 *解析：* 事件委托通过在父元素上绑定单个监听器来减少监听器的数量，利用事件冒泡来处理多个子元素。
 
 **如何使用 JavaScript 防止表单提交？**
+
 A) `document.getElementById('form').submit(false);`
+
 B) 在表单提交监听器中使用 `event.preventDefault();`
+
 C) 在表的 `onsubmit` 属性中使用 `return false;`
+
 D) B 和 C 都正确
+
 **答案：D**
+
 *解析：* 在监听器中使用 `event.preventDefault()` 以及在 `onsubmit` 属性中使用 `return false;` 都可以防止表单提交。
 
 **`event.stopPropagation()` 的作用是？**
+
 A) 防止浏览默认行为
+
 B) 防止事件传播到其他事件处理器
+
 C) 在捕获阶段立即停止事件
+
 D) 移除该事件的所有监听器
+
 **答案：B**
+
 *解析：* `event.stopPropagation()` 防止事件在 DOM 树中冒泡或捕获，从而不会到达任何其他处理器。
 
 **哪种方法可以动态停止 CSS 动画？**
+
 A) `element.style.animationPlayState = 'running';`
+
 B) `element.style.animation = 'none';`
+
 C) `element.style.animationPlayState = 'paused';`
+
 D) `element.stopAnimation();`
+
 **答案：C**
+
 *解析：* 将 `element.style.animationPlayState` 设置为 `paused` 会在当前状态暂停 CSS 动画。
 
 **从 DOM 中移除特定元素的正确方法是？**
+
 A) `element.remove();`
+
 B) `document.removeChild(element);`
+
 C) `document.deleteElement(element);`
+
 D) `parentNode.deleteChild(element);`
+
 **答案：A**
+
 *解析：* `element.remove()` 方法允许你直接从 DOM 中移除元素，而无需引用其父元素。
 
-
-
-
-
 ### 问题
+
 A) 在浏览器完成所有图像和 iframe 加之后
+
 B) 在 HTML 文档完全解析后立即
+
 C) 在 HTML 文档开始加载之前
+
 D) 在 CSSOM 构建之后
 
 **答案：B**
@@ -4711,8 +5235,11 @@ D) 在 CSSOM 构建之后
 ### 关于防止表单提交，以下哪种描述是正确的？
 
 A) 仅只能在服务器端实现
+
 B) 在 JavaScript 中无法防止表单提交
+
 C) 在 `submit` 事件监听器中使用 `event.preventDefault()` 可以防止表单提交
+
 D) 表单提交一旦启动，就无法被截获或阻止
 
 **答案：C**
@@ -4722,8 +5249,11 @@ D) 表单提交一旦启动，就无法被截获或阻止
 ### 停止事件冒泡的一个常见用例是什么？
 
 A) 确保事件到达所有可能的处理器
+
 B) 防止事件到达任何处理器
+
 C) 启用浏览器对事件的默认处理
+
 D) 防止事件影响其他元素
 
 **答案：D**
@@ -4733,8 +5263,11 @@ D) 防止事件影响其他元素
 ### 事件委托如何提高 Web 应用程序的性能？
 
 A) 通过增加服务器负载
+
 B) 通过减少直接附加在单个元素上的事件监听器数量
+
 C) 通过向 DOM 中添加更多事件监听器
+
 D) 为每个事件重新加载页面
 
 **答案：B**
@@ -4744,8 +5277,11 @@ D) 为每个事件重新加载页面
 ### 在执行脚本之前，使用哪个 JavaScript 属性检查文档是否已完全加载？
 
 A) `document.readyState`
+
 B) `document.status`
+
 C) `window.onload`
+
 D) `document.loadComplete`
 
 **答案：A**
@@ -4755,8 +5291,11 @@ D) `document.loadComplete`
 ### 不使用事件委托的缺点是什么？
 
 A) 提高代码的清晰度
+
 B) 减少网页的整体内存占用
+
 C) 由于需要多个事件监听器而增加了内存占用
+
 D) 自动处理所有浏览器事件无需额外代码
 
 **答案：C**
@@ -4766,8 +5305,11 @@ D) 自动处理所有浏览器事件无需额外代码
 ### 使用哪种方法可以动态添加阻止表单提交的事件监听器？
 
 A) `document.addEventListener('submit', function(event) { event.preventDefault(); });`
+
 B) `form.onSubmit = function(event) { event.preventDefault(); };`
+
 C) `form.addEventListener('submit', function(event) { event.preventDefault(); });`
+
 D) `window.addEventListener('submit', function(event) { event.preventDefault(); });`
 
 **答案：C**
@@ -4777,8 +5319,11 @@ D) `window.addEventListener('submit', function(event) { event.preventDefault(); 
 ### 如何确保 JavaScript 函数在 DOM 完全加载后执行？
 
 A) 使用 `window.onload = function() {};`
+
 B) 使用 `document.onDOMContentLoaded = function() {};`
+
 C) 使用 `document.addEventListener('DOMContentLoaded', function() {});`
+
 D) 使用 `document.onload = function() {};`
 
 **答案：C**
@@ -4788,8 +5333,11 @@ D) 使用 `document.onload = function() {};`
 ### 在事件的捕获阶段调用 `event.stopPropagation()` 会发生什么？
 
 A) 事件立即被取消。
+
 B) 事件跳过目标阶段并直接进入冒泡阶段。
+
 C) 事件不会进入捕获或冒泡阶段的任何其他事件处理器。
+
 D) 事件的默认操作在没有任何中断的情况下执行。
 
 **答案：C**
@@ -4799,8 +5347,11 @@ D) 事件的默认操作在没有任何中断的情况下执行。
 ### 当需要根据用户操作暂停 CSS 动画时，推荐使用哪种方法？
 
 A) 使用服务器端脚本直接修改 CSS 文件
+
 B) 使用 `document.styleSheets` 移除动画规则
+
 C) 使用 JavaScript 将 `animation-play-state` 属性设置为 `'paused'`
+
 D) 从 DOM 中删除动画元素
 
 **答案：C**
@@ -4810,19 +5361,25 @@ D) 从 DOM 中删除动画元素
 ### 在事件委托中，为什么检查事件源是重要的？
 
 A) 确保事件监听器附加到正确的元素上
+
 B) 防止事件冒泡到父元素
+
 C) 识别是哪个子元素触发了事件，以便进行适当处理
+
 D) 停止事件的默认操作
 
 **答案：C**
 
-**解释：** 使用事件委托时，检查事件源（例如通过 `event.target`）对于确定哪个子元素触发了事件至关重要，从而允许根据元素的标识或类型进行特定处理。
+**解释：** 使用事件委托时，检查事件源（例如通过 `event.target`）对于确定哪个子元触发了事件至关重要，从而允许根据元素的标识或类型进行特定处理。
 
-### 在链接 (`<a>` 标签）的 `click` 事件监听器中调用 `event.preventDefault()` 的效果是什么？
+### 在链接 (`<a>` 标签) 的 `click` 事件监听器中调用 `event.preventDefault()` 的效果是什么？
 
 A) 它在新的标签页中打开链接
+
 B) 它取消事件，防止跳转到 `href` 地址
+
 C) 它从 DOM 中移除链接
+
 D) 它将链接的 `href` 复制到剪贴板
 
 **答案：B**
@@ -4832,8 +5389,11 @@ D) 它将链接的 `href` 复制到剪贴板
 ### 如何在用户点击元素内部的按钮时，从 DOM 中移除该元素？
 
 A) 使用 `element.click()`
+
 B) 使用 `element.parentNode.remove()`
+
 C) 使用 `element.remove()`
+
 D) 使用 `element.parentNode.removeChild(element)`
 
 **答案：C**
@@ -4843,8 +5403,11 @@ D) 使用 `element.parentNode.removeChild(element)`
 ### 与 `window.onload` 相比，使用 `document.addEventListener('DOMContentLoaded', function() {});` 的关键优势是什么？
 
 A) 它等待所有外部资源加载
+
 B) 它在 HTML 文档完全解析后立即执行，无需等待样式表和图像加载
+
 C) 它在用户与页面之前无法执行
+
 D) 它仅支持 Internet Explorer
 
 **答案：B**
@@ -4853,15 +5416,14 @@ D) 它仅支持 Internet Explorer
 
 ### 停止事件冒泡在 Web 应用程序中有什么帮助？
 
-
-
-
-
 ### 题目
 
 A) 加快事件处理过程
+
 B) 防止事件被多个事件处理器处理
+
 C) 确保所有事件都到达文档根节点
+
 D) 强制所有事件在捕获阶段被处理
 
 答案：B
@@ -4871,8 +5433,11 @@ D) 强制所有事件在捕获阶段被处理
 当从 DOM 中移除一个元素时，它的子元素会发生什么？
 
 A) 它们会自动附加到被移除元素的父元素。
+
 B) 它们留在 DOM 中，但与文档分离。
+
 C) 它们也会从 DOM 中移除。
+
 D) 它们被存储在临时缓冲区中供以后使用。
 
 答案：C
@@ -4882,8 +5447,11 @@ D) 它们被存储在临时缓冲区中供以后使用。
 哪种场景是事件委托的理想用例？
 
 A) 当你需要处理少数特定元素上的事件时
+
 B) 当需要对每个子元素以不同的方式处理事件时
+
 C) 当你有一个动态生成的项目列表，并需要处理所有这些项目的事件时
+
 D) 当处理不冒泡的事件（如 focus）时
 
 答案：C
@@ -4893,8 +5461,11 @@ D) 当处理不冒泡的事件（如 focus）时
 你如何确保停止表单提交的 JavaScript 函数在 DOM 完全加载后被调用？
 
 A) 将脚本放在 `<head>` 部分的顶部。
+
 B) 使用 `document.addEventListener('DOMContentLoaded', function() {});` 来封装你的函数。
+
 C) 将 `<script>` 标签放在 `<body>` 部分末尾。
+
 D) 使用 `window.onload = function() {};` 来封装你的函数。
 
 答案：B
@@ -4904,8 +5475,11 @@ D) 使用 `window.onload = function() {};` 来封装你的函数。
 在 Web 应用程序中手动停止事件传播的主要原因是什么？
 
 A) 通过阻塞外部脚本来增强 Web 应用程序的安全性
+
 B) 通过减少事件数量来增加页面的加载时间
+
 C) 防止事件触发 DOM 树中某点之外的处理器
+
 D) 在事件发生时自动暂停 CSS 动画
 
 答案：C
@@ -4915,8 +5489,11 @@ D) 在事件发生时自动暂停 CSS 动画
 # Promises 和 Async/Await
 
 - **JavaScript Promises**：`Promises` 是异步 JavaScript 中的基础概念，为创建 promise 时尚未知的值提供代理。它们有三种状态：等待中（pending）、已完成（fulfilled）和拒绝（rejected）。`Promises` 通过提供一种结构化的方法来处理未来的结果和错误，简化了异步操作。创建、解析、拒绝和链式调用 promise 是管理复杂异步流的关键技术。
+
 - **Async 关键字**：`Async` 函数通过通过自动返回 promise 自动化了处理 promise 的过程，并允许使用 `await` 暂停函数执行，直到被等待的 promise 解决。这通过使代码更具可读性且更容易编写，显著简化了异步编程。
+
 - **在延迟后执行代码**：`setTimeout` 是实现代码执行延迟的关键工具，适用于防抖（debouncing）和节流（throttling）用户输入或仅仅延迟代码执行等场景。它在异步 JavaScript 中起着关键作用，允许开发者调度任务在未来执行。
+
 - **Promise.race() 方法**：`Promise.race()` 在异步操作执行时机至关重要的场景下特别有用。它会在迭代器中第一个 promise 状态稳定（settle）时立即解析或拒绝，使其成为实现超时或处理只需要最快结果的多个异步任务的有效工具。
 
 ## 精通异步 JavaScript
@@ -4992,10 +5569,6 @@ async function fetchData() {
 
 你可以使用 `promise` 结合 `setTimeout` 在延迟后执行代码。这对于模拟 API 调用或文件读取等异步操作非常有用。
 
-
-
-
-
 ```javascript
 function delay(ms) {
   return new Promise(resolve => setTimeout(resolve, ms));
@@ -5052,7 +5625,7 @@ Promise.race([promise1, promise2]).then((value) => {
 
 ## Promises 和 Async/Await
 
-在现代 JavaScript 开发中，优雅地处理异步操作对于构建响应且高效的应用程序至关重要。这涉及执行诸如从服务器获取数据、读取文件或执行耗时计算等任务，而不会阻塞主线程。JavaScript 通过 `Promises` 和 `async/await` 语法解决了这些需求，为管理异步代码提供了强大的工具。
+在现代 JavaScript 开发中，优雅地处理异步操作对于构建响应且高效的应用程至关重要。这涉及执行诸如从服务器获取数据、读取文件或执行耗时计算等任务，而不会阻塞主线程。JavaScript 通过 `Promises` 和 `async/await` 语法解决了这些需求，为管理异步代码提供了强大的工具。
 
 下面是三个在 JavaScript 中使用 `Promises` 和 `Async/await` 的简单示例。每个示例都展示了不同的场景，以帮助理解如何有效地处理异步操作。
 
@@ -5124,7 +5697,9 @@ asyncFunction();
 **示例说明：**
 
 - 示例 1 说明了创建和使用 promise 的基本结构，包括如何解析以及处理解析后的值。
+
 - 示例 2 展示了通过链式调用多个 promise 来执行顺序异步操作，演示了一个 promise 的输出如何作为下一个 promise 的输入。
+
 - 示例 3 使用 `async/await` 简化了异步代码，通过以类似于同步的方式编写异步操作，使其更易阅读和维护。此示例还演示了使用 `try/catch` 进行错误处理。
 
 这些示例强调了 `Promises` 和 `Async/await` 在管理 JavaScript 异步操作中的威力和灵活性。
@@ -5134,73 +5709,114 @@ asyncFunction();
 ## 练习答案
 
 - 在函数声明前使用 `async` 关键字的作用是什么？
+
 - 如何确保在延迟后执行代码块？
 
 ### Async 和 Await 问答
 
 `Promise` 的初始状态是什么？
+
 A) 完成 (Fulfilled)
+
 B) 拒绝 (Rejected)
+
 C) 等待 (Pending)
+
 D) 稳定 (Settled)
+
 **答案: C**
+
 **解释：** JavaScript 中的 `Promise` 处于 `pending` 状态，表示其异步操作尚未完成或拒绝。
 
 `async` 函数返回什么？
+
 A) 值
+
 B) 数组
+
 C) Promise
+
 D) 未定义
+
 **答案: C**
+
 **解释：** `async` 函数会自动返回一个 `Promise`，更容易编写异步代码。
 
 哪个方法用于在延迟后执行代码？
+
 A) `setInterval()`
+
 B) `setTimeout()`
+
 C) `setImmediate()`
+
 D) `setDelay()`
+
 **答案: B**
-**解释：** `setTimeout()` 用于在毫秒后执行代码，适用于调度任务或延迟执行。
+
+**解释：** `setTimeout()` 用于在毫秒后执1000代码，适用于调度任务或延迟执行。
 
 `Promise.race()` 方法的作用是什么？
+
 A) 并行运行所有 promise 并等待全部稳定
+
 B) 顺序运行所有 promise
+
 C) 当可迭代对象中的任意一个 promise 稳定时立即解析或拒绝
+
 D) 取消除第一个之外的所有 promise
+
 **答案: C**
+
 **解释：** `Promise.race()` 在可迭代对象中的任意一个 promise 稳定时就会返回解析或拒绝，适用于时间敏感的操作。
 
 如何创建一个新的 `Promise` 对象？
+
 A) `new Promise()`
+
 B) `Promise.create()`
+
 C) `Promise.new()`
+
 D) `createPromise()`
+
 **答案: A**
-**解释：** 使用 `new Promise()` 构造函数创建新的 `Promise` 对象，它接收一个执行函数作为参数。
+
+**解释：** 使用 `new Promise 对象，它接收一个执行函数作为参数。
 
 哪个关键字用于暂停 `async` 函数的执行直到 `Promise` 稳定？
+
 A) `pause`
+
 B) `wait`
+
 C) `await`
+
 D) `yield`
+
 **答案: C**
+
 **解释：** `await` 关键字用于 `async` 函数内部，暂停执行直到 `Promise` 解析或拒绝。
 
 如果一个 `Promise` 被拒绝且没有拒绝处理器，会发生什么？
+
 A) 拒绝被忽略
+
 B) Promise 自动解析
+
 C) 抛出错误
+
 D) Promise 保持等待状态
+
 **答案: C**
+
 **解释：** 如果 `Promise` 被拒绝且没有拒绝处理器（`.catch` 或 `.then` 的第二个参数），则会产生错误，并可能导致未处理的 promise 拒绝。
 
 如何使用 `Promises` 链式调用多个异步操作？
+
 A) 使用 `for` 循环
+
 B) 使用 `Promise.all()` 方法
-
-
-
-
 
 C) 通过顺序使用 `.then()` 方法
 
@@ -5214,7 +5830,7 @@ JavaScript 中 `setTimeout()` 的作用是什么？
 
 A) 在每个给定的时间间隔重复执行函数
 
-B) 立即执行函数
+B) 立即执函数
 
 C) 在指定的延迟后执行函数
 
@@ -5269,13 +5885,20 @@ D) Promise 中的错误无法被捕获或处理
 # 高级主题
 
 - 整数溢出管理：JavaScript 使用 IEEE 754 标准处理数字，采用浮点算术处理大数，从而避开了传统的整数溢出问题。
+
 - 垃圾回收与循环引用：现代 JavaScript 引擎实现了标记-清除（mark-and-sweep）等垃圾回收算法，以高效管理内存并处理循环引用，维持应用程序的性能和内存效率。
+
 - 事件循环：JavaScript 非阻塞架构的核心，事件循环促进了异步操作、事件和回调的管理，确保应用程序保持响应。
+
 - 模块作用域：JavaScript 的模块系统通过封装代码并避免全局命名空间污染和变量冲突，支持整洁、可维护且可重用的代码。
+
 - `Promise.allSettled()` 方法：`Promise.allSettled()` 方法允许通过等待所有操作都稳定（无论结果如何）来处理多个异步操作，这与其他 Promise 方法不同。
+
 - 数组检测：可靠地识别数组对于健壮的代码至关重要，特别是对于操作数组结构的操作。
+
 - 类中的 static 关键字：`static` 关键字定义类级方法和属性，便于工具函数和单例模式，与实例级属性不同。
-- 严格模式检测：检测严格模式的技术能够实现更有规范的编码实践，有助于避免常见的编码陷阱和错误。
+
+- 严格模式检测：检测严格模度的技术能够实现更有规范的编码实践，有助于避免常见的编码陷阱和错误。
 
 ## JavaScript 高级主题
 
@@ -5323,7 +5946,7 @@ JavaScript 的垃圾回收机制旨在高效回收分配给不再需要的对象
 
 ## 事件循环
 
-JavaScript 的事件循环允许异步编程。它负责处理代码执行、事件收集和子任务执行。这种模型允许 JavaScript 执行非阻塞操作。
+JavaScript 的事件循环允�异步编程。它负责处理代码执行、事件收集和子任务执行。这种模型允许 JavaScript 执行非阻塞操作。
 
 ```javascript
 console.log('First');
@@ -5358,9 +5981,6 @@ import { myVar } from './file1.js';
 console.log(myVar); // 'Hello'
 ```
 
-
-
-
 JavaScript 通过将每个模块视为独立的作用域来处理模块作用域。这意味着模块中声明的变量、函数和类除非显式导出，否则从模块外部不可见不可访问。这种作用域机制通过防止命名空间污染和意外的全局变量声明，增强了代码的组织、可维护性和重用性。
 
 JavaScript 中的模块作用域允许开发者将代码封装在模块中，确保模块内声明的变量和函数除非显式导出，否则无法从外部访问。这通过防止命名空间污染和避免全局变量冲突，促进了整洁、可维护的代码。以下是使用原生 ES6 模块语法的三个示例。
@@ -5374,6 +5994,7 @@ JavaScript 中的模块作用域允许开发者将代码封装在模块中，确
 此示例展示了如何定义模块、导出函数或变量并在另一个文件中导入它们。
 
 **mathUtils.js**
+
 ```javascript
 // 定义一些基础算术函数
 export const add = (a, b) => a + b;
@@ -5384,6 +6005,7 @@ export const pi = 3.14159;
 ```
 
 **main.js**
+
 ```javascript
 // 从 mathUtils 模块导入特定的函数
 import { add, pi } from './mathUtils.js';
@@ -5396,6 +6018,7 @@ console.log(pi); // 输出: 3.14159
 此示例演示了如何将整个模块作为一个对象导入，从而访问其所有导出的成员。
 
 **stringUtils.js**
+
 ```javascript
 // 导出与字符串操作相关的函数
 export const capitalize = (str) => str.charAt(0).toUpperCase() + str.slice(1);
@@ -5403,6 +6026,7 @@ export const reverse = (str) => str.split('').reverse().join('');
 ```
 
 **main.js**
+
 ```javascript
 // 从 stringUtils 模块导入所有内容
 import * as stringUtils from './stringUtils.js';
@@ -5415,6 +6039,7 @@ console.log(stringUtils.reverse('hello')); // 输出: "olleh"
 此示例说明了默认导出的用法，当一个模块旨在导出单个主功能时，这种方法非常有用。
 
 **Calculator.js**
+
 ```javascript
 // 一个简单的计算器类
 export default class Calculator {
@@ -5428,6 +6053,7 @@ export default class Calculator {
 ```
 
 **main.js**
+
 ```javascript
 // 从 Calculator 模块导入默认导出
 import Calculator from './Calculator.js';
@@ -5439,7 +6065,9 @@ console.log(calc.subtract(10, 5)); // 输出: 5
 #### 注意事项：
 
 - ES6 模块语法（`import/export`）需要支持模块的 JavaScript 环境，例如带有 `<script type="module">` 的现代浏览器或启用了 ECMAScript 模块的 Node.js。
+
 - `import` 语句中的路径必须相对于导入文件的位置是正确的；在浏览器中使用时，你可能需要服务器来正确解析模块路径。
+
 - 这些示例假设 JavaScript 文件是在理解 ES6 模块语的环境环境中运行的，例如 HTML 中带有 `<script type="module">` 的现代浏览器，或配置为支持 ES Modules 的 Node.js 环境。
 
 ## Promise.allSettled() 方法
@@ -5521,12 +6149,19 @@ console.log(isStrictMode()); // 在严格模式下 true
 以下问题：
 
 - JavaScript 如何处理整数溢出？
+
 - JavaScript 的垃圾回收机制如何处理循环引用？
+
 - JavaScript 中的事件循环是什么？
+
 - JavaScript 如何处理模块作用域？
+
 - `Promise.allSettled()` 方法的作用是什么？
+
 - 如何在 JavaScript 中检测变量是否为数组？
+
 - 类中 static 关键字的目的是什么？
+
 - 如何检测代码是否运行在严格模式下？
 
 ### 高级主题测试题
@@ -5534,30 +6169,34 @@ console.log(isStrictMode()); // 在严格模式下 true
 JavaScript 如何处理大数字以避免整数溢出问题？
 
 A) 将大数字转换为字符串存储。
+
 B) 根据 IEEE 754 标准使用浮点算术。
+
 C) 自动将大数字转换为科学计数法。
+
 D) 截断大数字以拟到特定范围。
 
 **答案：B**
+
 解释：JavaScript 使用基于 IEEE 754 标准的浮点算术来处理大数字，这允许在一定范围内精确表示整数。
 
 现代 JavaScript 引擎通常使用哪种内存管理算法来高效处理循环引用？
 
 A) 栈分配
+
 B) 动态分配
+
 C) 标记-清除 (Mark-and-sweep)
+
 D) 适应分配
 
 **答案：C**
+
 解释：现代 JavaScript 引擎通常使用标记-清除算法来高效管理内存，特别是在处理循环引用时。
 
 JavaScript 中事件循环（Event Loop）的目的是什么？
 
 A) 处理网络请求
-
-
-
-
 
 ## B) 管理异步操作、事件和回调
 
@@ -5613,7 +6252,7 @@ D) 检查变量是否可迭代
 
 ## JavaScript `classes` 中的 `static` 关键字的作用是什么？
 
-A) 它定义了属于类实例的方法和属性。
+A) 它定义了属于类实�的方法和属性。
 
 B) 它防止实例在创建后被修改。
 
@@ -5677,10 +6316,6 @@ D) 一个包含所有 Promise 解析值的数组
 
 祝你好运，享受掌握 JavaScript 的之旅！
 
-
-
-
-
 正确答案：A) 事件循环允许 JavaScript 尽管是单线程的也能执行非阻塞 I/O 操作。
 
 解释：事件循环是一种机制，它通过尽可能地将操作卸载给系统内核，允许 JavaScript 执行非阻塞 I/O 操作。
@@ -5688,8 +6323,11 @@ D) 一个包含所有 Promise 解析值的数组
 ### 什么是 JavaScript 中的原型继承？
 
 A) 一种从现有类创建新类的方法。
+
 B) 对象可以直接从其他对象继承属性和方法的过程。
+
 C) 一个允许创建私有变量的功能。
+
 D) 一在 `Function` 原型上附加新属性的方法。
 
 正确答案：B) 对象可以直接从其他对象继承属性和方法的过程。
@@ -5706,8 +6344,11 @@ console.log(x[y]);
 ```
 
 A) {name: "Vivek"}
+
 B) {name: "Akki"}
+
 C) {name: "Ronny"}
+
 D) undefined
 
 正确答案：B) {name: "Akki"}
@@ -5717,8 +6358,11 @@ D) undefined
 ### 下面哪一项正确显示了如何在 JavaScript 中创建对象的深拷贝？
 
 A) `let objCopy = Object.assign({}, obj);`
+
 B) `let objCopy = {...obj};`
+
 C) `let objCopy = JSON.parse(JSON.stringify(obj));`
+
 D) `let objCopy = obj.slice();`
 
 正确答案：C) `let objCopy = JSON.parse(JSON.stringify(obj));`
@@ -5730,8 +6374,11 @@ D) `let objCopy = obj.slice();`
 `0.1 + 0.2 === 0.3`
 
 A) true
+
 B) false
+
 C) 它抛出一个 `TypeError`。
+
 D) 它取决于 JavaScript 引擎。
 
 正确答案：B) false
@@ -5741,8 +6388,11 @@ D) 它取决于 JavaScript 引擎。
 ### JavaScript 中 Set 对象的目的是什么？
 
 A) 存储任何类型值的集合，采用类似于数组的线性结构存储。
+
 B) 存储任何类型的唯一值，无论是原始值还是对象引用。
+
 C) 存储任何类型值的键值对。
+
 D) 在数组的每个项上执行函数。
 
 正确答案：B) 存储任何类型的唯一值，无论是原始值还是对象引用。
@@ -5752,8 +6402,11 @@ D) 在数组的每个项上执行函数。
 ### 关于 JavaScript 模块（modules），下面哪个陈述是正确的？
 
 A) JavaScript 模块在全局作用域中执行。
+
 B) JavaScript 模块允许你轻松创建私有和公共封装区域。
+
 C) 在模块中，用 `var` 声明的变量作用域是模块。
+
 D) 模块只能导出一个函数或变量。
 
 正确答案：B) JavaScript 模块允许你轻松创建私有和公共封装域。
@@ -5777,8 +6430,11 @@ console.log(generator.next().value);
 ```
 
 A) 1 2 3 undefined
+
 B) 1 2 3 4
+
 C) 1 1 1 1
+
 D) Error
 
 正确答案：A) 1 2 3 undefined
@@ -5788,8 +6444,11 @@ D) Error
 ### 如何确保一个函数即使被多次调用，其执行频率也不会超过指定的周期？
 
 A) 回调 (Callback)
+
 B) 节流 (Throttling)
+
 C) 防抖 (Debouncing)
+
 D) Promise (Promises)
 
 正确答案：B) 节流 (Throttling)
@@ -5799,8 +6458,11 @@ D) Promise (Promises)
 ### 关于 async 函数，哪个陈述是错误的？
 
 A) 它们总是返回一个 promise。
+
 B) 它们内部可以使用 `await` 关键字。
+
 C) 它们可以使用 `new` 运算符来创建实例。
+
 D) 它们让处理异步操作的风格更像同步。
 
 正确答案：C) 它们可以使用 `new` 运算符来创建实例。
@@ -5810,8 +6472,11 @@ D) 它们让处理异步操作的风格更像同步。
 ### 如果指定的模块没有导出默认值，JavaScript 中 `import` 语句的默认行为是什么？
 
 A) 它将返回 `undefined`。
+
 B) 它将抛出一个错误。
+
 C) 它将所有导出的成员作为一个对象导入。
+
 D) 它将创建一个默认导出。
 
 正确答案：B) 它将抛出一个错误。
@@ -5833,8 +6498,11 @@ console.log(getName());
 ```
 
 A) 'JavaScript'
+
 B) undefined
+
 C) null
+
 D) ''
 
 正确答案：B) undefined
@@ -5857,8 +6525,11 @@ console.log(num);
 ```
 
 A) 1 3
+
 B) 3 1
+
 C) 2 3
+
 D) 1 2
 
 正确答案：A) 1 3
@@ -5868,26 +6539,28 @@ D) 1 2
 ### JavaScript 中 Symbol 类型的目的是什么？
 
 A) 创建完全唯一的标识符。
+
 B) 为对象添加符号性质的属性。
+
 C) 将数字常量符号化。
+
 D) 为迭代器方法提供符号。
 
 正确答案：A) 创建完全唯一的标识符。
 
-解释：`Symbol` 类型允许创建唯一的标识符。`Symbol` 是不可变的，可以作为对象的属性使用以避免命名冲突等用途。
+解释：`Symbol` 类型允�创建唯一的标识符。`Symbol` 是不可变的，可以作为对象的属性使用以避免命名冲突等用途。
 
 ### `try-catch-finally` 语句中的 `finally` 块的作用是什么？
 
 A) 如果 `try` 块中发生错误，则执行它。
+
 B) 在 `try` 和 `catch` 块之后执行，无论是否抛出或捕获了异常。
+
 C) 如果没有抛出错误，它替换 `catch` 块。
+
 D) 只有当 `try` 块没有发生错误时才执行。
 
 正确答案：B) 在 `try` 和 `catch` 块之后执行，无论是否抛出或捕获了异常。
-
-
-
-
 
 解释：`finally` 块在 `try` 和 `catch` 块完成后都会执行，无论是否抛出异常。它通常用于清理操作。
 
@@ -5904,8 +6577,11 @@ for (let i = 0; i < arr.length; i++) {
 ```
 
 A) 闭包
+
 B) 事件循环
+
 C) 变量提升
+
 D) 回调队列
 
 正确答案：A) 闭包
@@ -5915,8 +6591,11 @@ D) 回调队列
 在对象上使用 `Object.freeze` 的结果是什么？
 
 A) 它使对象的所有属性变为只读。
+
 B) 它防止向对象添加新属性。
+
 C) 它防止修改现有属性并防止添加新属性。
+
 D) 它随着时间的推移删除对象的所有属性。
 
 正确答案：C) 它防止修改现有属性并防止添加新属性。
@@ -5926,8 +6605,11 @@ D) 它随着时间的推移删除对象的所有属性。
 JavaScript 如何处理整数溢出？
 
 A) 通过抛出错误处理。
+
 B) 通过回绕到最小值。
+
 C) 使用特殊的溢出值。
+
 D) JavaScript 数字是浮点数，因此它们在传统意义上不会溢出。
 
 正确答案：D) JavaScript 数字是浮点数，因此它们在传统意义上不会溢出。
@@ -5946,8 +6628,11 @@ const obj = {
 ```
 
 A) Promises
+
 B) 回调
+
 C) 对象方法中的 Async/Await
+
 D) 事件委托
 
 正确答案：C) 对象方法中的 Async/Await
@@ -5957,8 +6642,11 @@ D) 事件委托
 在 JavaScript 中使用 `==` 运算符进行等效比较的潜在缺点是什么？
 
 A) 它可能会导致类型转换（强制）。
+
 B) 它比 `===` 运算符慢。
+
 C) 它无法比较字符串值。
+
 D) 在比较不同类型时它总是返回 false。
 
 正确答案：A) 它可能会导致类型转换。
@@ -5968,19 +6656,25 @@ D) 在比较不同类型时它总是返回 false。
 哪一个陈述准确描述了 JavaScript 中 `null` 和 `undefined` 值的行为？
 
 A) `null` 是一个对象，`undefined` 是它自己的类型。
+
 B) `null` 和 `undefined` 都是对象类型。
+
 C) `null` 和 `undefined` 在类型和值上等等价。
+
 D) `null` 是一个赋值值，表示变量没有指向任何对象，而 `undefined` 表示值的缺失。
 
 正确答案：D) `null` 是一个赋值值，表示变量没有指向任何对象，而 `undefined` 表示值的缺失。
 
-解释：`null` 用于表示有意地缺失任何对象值，而 `undefined` 用于变量已声明但尚未被赋值值的情况。`typeof null` 返回 `"object"`，这是 JavaScript 中的一个遗留 Bug，但 `null` 和 `undefined` 是不同的类型。
+解释：`null` 用于表示有意地缺失任何对象值，而 `undefined` 表示变量已声明但尚未被赋值值的情况。`typeof null` 返回 `"object"`，这是 JavaScript 中的一个遗留 Bug，但 `null` 和 `undefined` 是不同的类型。
 
 在 JavaScript 中，`bind` 方法的主要用例是什么？
 
 A) 固定函数内部 `this` 的下文环境。
+
 B) 组合两个或多个函数。
+
 C) 延迟函数的执行。
+
 D) 重复多次执行一个函数。
 
 正确答案：A) 固定函数内部 `this` 的上下文环境。
@@ -5994,8 +6688,11 @@ typeof NaN
 ```
 
 A) "number"
+
 B) "NaN"
+
 C) "undefined"
+
 D) "object"
 
 正确答案：A) "number"
@@ -6010,8 +6707,11 @@ console.log(0.1 + 0.2);
 ```
 
 A) false, 0.30000000000000004
+
 B) true, 0.3
+
 C) false, 0.3
+
 D) true, 0.30000000000000004
 
 正确答案：A) false, 0.30000000000000004
@@ -6026,8 +6726,11 @@ console.log(set.size);
 ```
 
 A) 7
+
 B) 5
+
 C) Undefined
+
 D) Error
 
 正确答案：B) 5
@@ -6037,8 +6740,11 @@ D) Error
 哪个选项最能描述 JavaScript 中的事件委托？
 
 A) 在父元素上附加单个事件监听器以处理多个子元素的事件。
+
 B) 为想要处理事件的每个元素分配事件监听器。
+
 C) 在单个元素上使用多个事件监听器处理不同类型的事件。
+
 D) 将 JavaScript 执行委托给 web workers 进行处理。
 
 正确答案：A) 在父元素上附加单个事件监听器以处理多个子元素的事件。
@@ -6048,28 +6754,31 @@ D) 将 JavaScript 执行委托给 web workers 进行处理。
 尝试扩展被 `Object.freeze()` 冻结的 JavaScript 对象的结果是什么？
 
 A) 新属性将成功添加。
+
 B) 操作将静默失败而不添加新属性。
+
 C) 在严格模式下将抛出错误。
+
 D) 对象将解冻并添加新属性。
 
-正确答案：C) 在严格模式下将抛出错误。
+答案：C) 在严格模式下将抛出错误。
 
 解释：在严格模式下，尝试扩展（添加新属性）冻结的对象时，JavaScript 会抛出 `TypeError` 表示操作不允许。在非严格模式下，操作将静默失败而不添加新属性。
 
 `??` 运算符在 JavaScript 中如何工作？
 
 A) 如果左侧操作不是 null 或 undefined，则返回左侧操作数，否则返回右侧操作数。
+
 B) 它将两个对象或数组合并为一个对象或数组。
+
 C) 它检查两个值是否都为 null 或 undefined。
+
 D) 它对两个值进行位运算比较。
 
 正确答案：A) 如果左侧操作不是 null 或 undefined，则返回左侧操作数，否则返回右侧操作数。
 
-
-
-
-
 ## 解析
+
 空值合并运算符 `??` 是一种逻辑运算符，当其左侧操作数为 `null` 或 `undefined` 时，它会返回其右侧操作数，否则返回其左侧操作数。它作为提供默认值的方法。
 
 以下 JavaScript 代码的输出是什么？
@@ -6171,9 +6880,6 @@ D) 将元素映射到新值
 
 解释：`reduce()` 方法在数组的每个元素上执行回调函数，最终产生一个输出值。
 
-
-
-
 解释：代码首先同步打印 `1`。`setTimeout` 是异步的并被放在 Web APIs 中，因此 `console.log(2);` 被放入队列等待后续执行。`Promise.resolve().then()` 将 `console.log(3);` 放入微任务队列，而微任务队列的优先级高于 `setTimeout` 使用的回调队列，这使其在当前调用栈清空后、但在任何定时器或 I/O 事件之前执行。接下来是同步执行 `console.log(4);`。因此，正确的执行顺序是 `1, 4, 3, 2`。
 
 你如何确保一个返回 promise 的函数 `fetchData` 在失败时最多重试 3 次，然后放弃？
@@ -6196,7 +6902,7 @@ A) 它防止向对象添加任何新属性，并将所有现有属性标记为�
 
 B) 它完全冻结对象，防止对其属性进行任何更改。
 
-C) 它允许添加新属性，但防止删除现有属性。
+C) 它允�添加新属性，但防止删除现有属性。
 
 D) 它加密对象的属性以保护其数据。
 
@@ -6232,9 +6938,6 @@ D) 将嵌套数组展平为单个数组且不限深度。
 
 解释：`flatMap` 使用提供的函数映射每个元素，然后将结果展平一层。它等同于调用 `map()` 后再调用 `flat(1)`。
 
-
-
-
 正确答案：B) 允许对象变为可迭代对象，从而可以使用扩展语法和 `for-of` 循环使用。
 
 解释：`Symbol.iterator` 属性用于定义对象的默认迭代器。当一个对象实现了此方法时，它就变成了可迭代的，这意味着它可以使用 `for-of` 循环进行迭代，并且它的元素可以展开到数组或其他迭代对象中。
@@ -6258,18 +6961,25 @@ function debounce(func, wait) {
 A) 节流（throttle）技术，限制函数被调用的频率。
 
 B) 防抖（debounce）技术，防止函数在短时间内被重复调用。
+
 C) 由于超时处理不当导致的内存泄漏。
+
 D) 闭包由于超时导致内存泄漏的示例。
 
 正确答案：B) 防抖（debounce）技术，防止函数在短时间内被重复调用。
+
+
 
 解释：这段代码是防抖技术的示例，用于限制函数执行的频率。它确保特定任务不会触发得过于频繁以至于影响浏览器性能。`debounce` 特别适用于滚动、调整大小、文本输入中的按键触发等事件，这些事件可能会被频繁触发。
 
 在 JavaScript ES6 中，使用 `Set` 替数组来存储唯一值的主要优势是什么？
 
 A) `Set` 自动去重重复项，而数组不会。
+
 B) `Set` 在添加和删除元素方面具有更好的性能。
+
 C) `Set` 可以存储任何类型的值，而数组只能存储对象。
+
 D) 对于相同数量的元素，`Set` 比数组占用更少内存。
 
 正确答案：A) `Set` 自动去重重复项，而数组不会。
@@ -6279,8 +6989,11 @@ D) 对于相同数量的元素，`Set` 比数组占用更少内存。
 在 JavaScript 中，在函数声明前使用 `async` 关键字的作用是什么？
 
 A) 它表示函数返回一个 `Promise` 并允许在内部使用 `await`。
+
 B) 它使函数在单独线程中异步执行，类似于 `Web Worker`。
+
 C) 它会自动捕获函数内的任何错误并拒绝（reject） promise。
+
 D) 它通过与其他代码并行运行来优化函数性能。
 
 正确答案：A) 它表示函数返回一个 `Promise` 并允许在内部使用 `await`。
@@ -6295,8 +7008,11 @@ let arr = [...obj];
 ```
 
 A) `[{"a": 1, "b": 2}]`
+
 B) `["a", "b"]`
+
 C) `TypeError: obj is not iterable`
+
 D) `[{a: 1}, {b: 2}]`
 
 正确答案：C) `TypeError: obj is not iterable`
@@ -6306,8 +7022,11 @@ D) `[{a: 1}, {b: 2}]`
 在 JavaScript 中，如何确保某段代码在多个异步操作完成后运行？
 
 A) 使用 `for` 循环遍历这些异步操作。
+
 B) 使用 `Promise.all` 方法配合包含异步操作的数组。
+
 C) 将异步操作放在 `try-catch` 块中。
+
 D) 按顺序使用 `await` 关键字调用每个异步操作。
 
 正确答案：B) 使用 `Promise.all` 方法配合包含异步操作的数组。
@@ -6322,8 +7041,11 @@ console.log(3 > 2 > 1);
 ```
 
 A) `true and true`
+
 B) `true and false`
+
 C) `false and true`
+
 D) `false and false`
 
 正确答案：B) `true and false`
@@ -6333,8 +7055,11 @@ D) `false and false`
 如何在 JavaScript 中删除数组中的重复项？
 
 A) 使用 `Array.prototype.unique()` 方法。
+
 B) 通过从数组创建一个 `Set`。
+
 C) 使用 `Array.prototype.filter()` 方法。
+
 D) B 和 C 都是正确方法。
 
 正确答案：D) B 和 C 都是正确方法。
@@ -6344,8 +7069,11 @@ D) B 和 C 都是正确方法。
 JavaScript `try...catch` 中 `finally` 关键字的作用是什么？
 
 A) 在 `try` 块成功后执行。
+
 B) 处理未被 `catch` 捕获的错误。
+
 C) 无论是否抛出异常，都在 `try` 和 `catch` 块之后执行。
+
 D) 清理 `try` 之前分配的资源。
 
 正确答案：C) 无论是否抛出异常，都在 `try` 和 `catch` 块之后执行。
@@ -6355,8 +7083,11 @@ D) 清理 `try` 之前分配的资源。
 JavaScript 中的 `NaN` 是什么？
 
 A) 代表一个非数字的全局属性。
+
 B) 检查值是否为数字的函数。
+
 C) 表示数字转换失败的错误类型。
+
 D) 代表无法产生正常结果的值。
 
 正确答案：D) 代表无法产生正常结果的值。
@@ -6366,8 +7097,11 @@ D) 代表无法产生正常结果的值。
 哪种方法可以确保函数在特定的 `this` 上文中调用？
 
 A) `Function.prototype.call()`
+
 B) `Function.prototype.bind()`
+
 C) `Function.prototype.apply()`
+
 D) 以上
 
 正确答案：D) 以上
@@ -6377,12 +7111,10 @@ D) 以上
 JavaScript 的垃圾回收机制如何处理循环引用？
 
 A) JavaScript 无法收集循环引用的对象，会导致内存泄漏。
+
 B) 现代 JavaScript 引擎使用标记-清除算法，可以收集循环引用的对象。
+
 C) 必须由开发者手动打破循环引用才能进行垃圾回收。
-
-
-
-
 
 D) JavaScript 的垃圾回收机制不支持循环引用。
 
@@ -6401,8 +7133,11 @@ test().then(console.log);
 ```
 
 A) 21
+
 B) Promise {<resolved>: 21}
+
 C) undefined
+
 D) Promise {<pending>}
 
 **正确答案：** A) 21
@@ -6412,8 +7147,11 @@ D) Promise {<pending>}
 关于 JavaScript 中的 Web Workers，哪种陈述是正确的？
 
 A) 它们可以直接操作 DOM。
+
 B) 它们与主 JavaScript 代码在同一线程中运行，确保同步执行。
+
 C) 它们允许你在后台线程中运行 JavaScript，通过消息与主线程通信。
+
 D) 它们主要用于提高 JavaScript 事件循环的性能。
 
 **正确答案：** C) 它们允许你在后台线程中运行 JavaScript，通过消息与主线程通信。
@@ -6423,8 +7161,11 @@ D) 它们主要用于提高 JavaScript 事件循环的性能。
 在 JavaScript 中，`typeof null` 的结果是什么？
 
 A) "null"
+
 B) "undefined"
+
 C) "object"
+
 D) "no-value"
 
 **正确答案：** C) "object"
@@ -6434,8 +7175,11 @@ D) "no-value"
 如何使用 JavaScript 防止表单被提交？
 
 A) 将 `document.form.submit` 设置为 false。
+
 B) 在表单的 submit 事件处理器中使用 `event.preventDefault()`。
+
 C) 移除表单的 `action` 属性。
+
 D) 在表单的 `onsubmit` 属性末尾使用 `return false;`。
 
 **正确答案：** B) 在表单的 submit 事件处理器中使用 `event.preventDefault()`。
@@ -6457,8 +7201,11 @@ let x = 'outer scope';
 ```
 
 A) outer scope
+
 B) inner scope
+
 C) innermost scope
+
 D) undefined
 
 **正确答案：** C) innermost scope
@@ -6468,8 +7215,11 @@ D) undefined
 如何在 JavaScript ES6 中实现模块封装？
 
 A) 使用 `module` 关键字
+
 B) 使用 `export` 和 `import` 语句
+
 C) 将模块代码封装在函数内部
+
 D) 使用 `encapsulate` 关键字
 
 **正确答案：** B) 使用 `export` 和 `import` 语句
@@ -6491,8 +7241,11 @@ Promise.all([promise1, promise2, promise3]).then(values => {
 ```
 
 A) [3, 42, 'foo']
+
 B) [Promise, 42, Promise]
+
 C) [3, undefined, 'foo']
+
 D) SyntaxError
 
 **正确答案：** A) [3, 42, 'foo']
@@ -6502,8 +7255,11 @@ D) SyntaxError
 在 JavaScript 中，`?.` 运算符代表什么？
 
 A) 空值合并 (Nullish coalescing)
+
 B) 可选链 (Optional chaining)
+
 C) 存在运算符 (Existential operator)
+
 D) 逻辑或 (Logical OR)
 
 **正确答案：** B) 可选链 (Optional chaining)
@@ -6528,8 +7284,11 @@ async function fetchData() {
 ```
 
 A) 异步代码中的同步错误处理
+
 B) 使用 Fetch API 进行网络请求
+
 C) 处理网络错误并解析 JSON 响应
+
 D) 以上所有
 
 **正确答案：** D) 以上所有
@@ -6539,8 +7298,11 @@ D) 以上所有
 如何在 JavaScript 中停止事件的传播？
 
 A) `event.stop()`
+
 B) `event.preventDefault()`
+
 C) `event.stopPropagation()`
+
 D) `event.cancelBubble()`
 
 **正确答案：** C) `event.stopPropagation()`
@@ -6550,8 +7312,11 @@ D) `event.cancelBubble()`
 没有显式返回值的 JavaScript 函数的默认返回值是什么？
 
 A) null
+
 B) NaN
+
 C) undefined
+
 D) 0
 
 **正确答案：** C) undefined
@@ -6561,8 +7326,11 @@ D) 0
 ES6 引入的 `Set` 对象的主要用途是什么？
 
 A) 存储任意类型的唯一值的集合
+
 B) 为复杂数据结构存储键值对
+
 C) 将数据组织成结构化的表格格式
+
 D) 提供一种继承机制
 
 **正确答案：** A) 存储任意类型的唯一值的集合
@@ -6574,10 +7342,6 @@ D) 提供一种继承机制
 ```javascript
 console.log(0.1 + 0.2 === 0.3);
 ```
-
-
-
-
 
 A) true，因为 `0.1` 和 `0.2` 的和恰好等于 `0.3`
 
@@ -6623,7 +7387,7 @@ D) A 和 B 都是正确的。
 
 A) 只有在没有抛出异常的情况下，才在 `try` 块之后执行代码。
 
-B) 只有在捕获到异常的情况下，才在 `catch` 块之后执行代码。
+B) 只有在捕获到异异常的情况下，才在 `catch` 块之后执行代码。
 
 C) 无论是否抛出或捕获异常，都在 `try` 和 `catch` 块之后执行代码。
 
@@ -6712,8 +7476,11 @@ console.log(result);
 ```
 
  A) 16
+
 B) 17
+
 C) 18
+
 D) 19
 
 正确答案：D) 19
@@ -6745,10 +7512,6 @@ C) 创建一个新数组，其结果是对调用数组上的每个元素调用�
 D) 通过移除空元素减小数组的大小。
 
 正确答案：A) 通过对数组的每个元素执行还原器函数，将数组转换为单个值。
-
-
-
-
 
 ## JavaScript 概念
 
@@ -6809,7 +7572,7 @@ D) A 和 C 都是正确的。
 
 JavaScript 中的“变量提升”（hoisting）是什么？
 
-A) 将变量声明移动到其所在作用域顶部的过程。
+A) 将变量声移动到其所在作用域顶部的过程。
 
 B) 自动将局部变量转换为全局变量。
 
@@ -6941,10 +7704,6 @@ D) 每个 `NaN` 值被视为唯一的，允许存在多个 `NaN` 条目。
 **正确答案：C) 它认为所有 `NaN` 值是相同的，`Set` 中只允许一个 `NaN` 值。**
 
 解释：在 JavaScript 中，`Set` 对象认为所有 `NaN` 值都是相同的，尽管 `NaN` 在相等性比较中不等于自身。因此，`Set` 只能包含一个值为 `NaN` 的条目，这展示了对其他值使用的严格相等性比较的一个例外。
-
-
-
-
 
 ```
 console.log(Math.abs((0.1 + 0.2) - 0.3) < Number.EPSILON);
@@ -7082,18 +7841,18 @@ D) 一个数组。
 
 **解释：** 任何标记为 `async` 的函数都会返回一个 promise。即使你返回了一个非 promise 的值，JavaScript 也会将其封装在一个已解析的 promise 中。
 
-
-
-
-
 ## 解析
+
 选项 `A` 和 `B` 创建了 `sourceObject` 的浅拷贝。它们不会复制 `sourceObject` 内部嵌套的对象，这意味着嵌套对象在原始对象和副本之间仍保持链接。选项 `D` (`clone()`) 不是 JavaScript 用于克隆对象的原生方法。选项 `C`、`JSON.parse(JSON.stringify(sourceObject))` 创建了 `sourceObject` 的深拷贝，包括所有的嵌套对象。然而，这种方法无法准确地复制函数、循环引用或如 `Date`、`RegExp` 等特殊对象。
 
 ### 如何在 JavaScript 中延迟函数的执行？
 
 A) `setTimeout(function, milliseconds)`
+
 B) `delay(function, milliseconds)`
+
 C) `function.wait(milliseconds)`
+
 D) `pause(function, milliseconds)`
 
 正确答案：A) setTimeout(function, milliseconds)
@@ -7103,8 +7862,11 @@ D) `pause(function, milliseconds)`
 ### ES6 引入的 `Symbol` 原始类型主要目的是什么？
 
 A) 提供唯一的属性键以防止命名冲突
-B) 替换字符串枚举以提供更好的类型安全
+
+B) 替换字符串枚以提供更好的类型安全
+
 C) 创建私有对象成员
+
 D) 优化字符串值的内存使用
 
 正确答案：A) 提供唯一的属性键以防止命名冲突
@@ -7114,8 +7876,11 @@ D) 优化字符串值的内存使用
 ### JavaScript 中使用哪个方法向数组开头添加元素？
 
 A) `array.push(element)`
+
 B) `array.unshift(element)`
+
 C) `array.append(element)`
+
 D) `array.prepend(element)`
 
 正确答案：B) array.unshift(element)
@@ -7125,8 +7890,11 @@ D) `array.prepend(element)`
 ### 如何在 JavaScript 中创建一个新的 promise？
 
 A) `const promise = new Promise((resolve, reject) => { /* executor */ });`
+
 B) `const promise = Promise.create((resolve, reject) => { /* executor */ });`
+
 C) `const promise = Promise((resolve, reject) => { /* executor */ });`
+
 D) `const promise = async (resolve, reject) => { /* executor */ };`
 
 正确答案：A) const promise = new Promise((resolve, reject) => { /* executor */ });
@@ -7136,8 +7904,11 @@ D) `const promise = async (resolve, reject) => { /* executor */ };`
 ### JavaScript 中的 `async/await` 语法简化了什么功能？
 
 A) 事件监听器的回调函数
+
 B) 异步代码的同步执行
+
 C) 数组的迭代
+
 D) 对象的深拷贝
 
 正确答案：B) 异步代码的同步执行
@@ -7147,8 +7918,11 @@ D) 对象的深拷贝
 ### 下述哪个陈述可以正确从数组开头删除元素？
 
 A) `array.pop()`
+
 B) `array.shift()`
+
 C) `array.remove(0)`
+
 D) `array.delete(0)`
 
 正确答案：B) array.shift()
@@ -7158,8 +7932,11 @@ D) `array.delete(0)`
 ### 在 JavaScript 中，`document.querySelector()` 方法返回什么？
 
 A) 所有匹配指定选择器组元素。
+
 B) `document` 中匹配指定选择器的第一个元素。
+
 C) 匹配指定选择器的元素数组。
+
 D) `document` 中匹配指定选择器的最后一个元素。
 
 正确答案：B) `document` 中匹配指定选择器的第一个元素。
@@ -7169,13 +7946,16 @@ D) `document` 中匹配指定选择器的最后一个元素。
 ### 如何在 JavaScript 中遍历对象的属性？
 
 A) 使用 `for...of` 循环
+
 B) 使用 `for...in` 循环
+
 C) 使用 `Object.forEach()`
+
 D) 使用 `Array.map()`
 
 正确答案：B) 使用 for...in loop
 
-解析：`for...in` 循环用于遍历对象的所有可枚举属性，包括继承的可枚举属性。这使得它适合遍历对象属性。`for...of` 用于 `Arrays`、`Maps`、`Sets` 等可迭代对象，不直接适用于普通对象。`Object.forEach()` 和 `Array.map()` 不是直接遍历对象属性的有效方法。
+解析：`for...in` 循环用于遍历对象的所有可枚举属性，包括继承的可枚属性。这使得它适合遍历对象属性。`for...of` 用于 `Arrays`、`Maps`、`Sets` 等可迭代对象，不直接适用于普通对象。`Object.forEach()` 和 `Array.map()` 不是直接遍历对象属性的有效方法。
 
 ### 以下代码的输出是什么？
 
@@ -7191,8 +7971,11 @@ console.log(x);
 ```
 
 A) 1
+
 B) 2
+
 C) undefined
+
 D) ReferenceError
 
 解析：JavaScript 中的原始值（如数字）是通过值传递给函数的。这意味着 `changeX` 函数操作的是 `x` 的拷贝，而不是 `x` 本身。在函数内部更改 `y` 不影响函数外部的原始 `x`。因此，输出保持为 1。
@@ -7200,8 +7983,11 @@ D) ReferenceError
 ### 关于 JavaScript Promises 的哪个陈述是正确的？
 
 A) `Promise` 是一个连接生产代码和消费代码的 JavaScript 对象。
+
 B) `Promise` 只能解析一次，要么被完成（fulfilled），要么被拒绝（rejected）。
+
 C) 一旦 `Promise` 被完成或被拒绝，它就是不可变的，不能改变其状态。
+
 D) 以上所有内容都是正确的。
 
 正确答案：D) 以上所有都是正确的。
@@ -7211,8 +7997,11 @@ D) 以上所有内容都是正确的。
 ### 如何在 JavaScript 类中创建私有方法？
 
 A) 在方法名前加上 `#` 前缀
+
 B) 在构造函数内部声明方法
+
 C) 在方法名前使用 `private` 关键字
+
 D) JavaScript 不支持私有方法
 
 正确答案：A) 在方法名前加上 `#` 前缀
@@ -7222,57 +8011,69 @@ D) JavaScript 不支持私有方法
 ### JavaScript 中的 `flatMap` 方法的作用是什么？
 
 A) 它将嵌套数组扁平化一层，并使用映射函数映射每个元素。
+
 B) 使用提供的函数将每个元素映射到新元素，而不改变数组的结构。
+
 C) 它将多维数组展平为一维数组。
+
 D) 它对数组的每个元素应用函数并将结果展平为新数组。
 
 正确答案：A) 它将嵌套数组扁平化一层，并使用映射函数映射每个元素。
 
-
-
-
-
 ## 解析
+
 `flatMap` 方法首先使用映射函数对每个元素进行映射，然后将结果展平为一个新数组。此操作等同于一个 `map` 后接深度为 1 的 `flat`，但比调用 `map()` 再调用 `flat()` 更高效。
 
 ### 什么是 JavaScript 事件循环（Event Loop）？
 
-A) 一个不断检查用户事件并触发回调的循环。
+A) 一个不断检查用户事件并触回调的循环。
+
 B) 一种遍历事件监听器数组的编程结构。
+
 C) 在事件队列上处理执行多个 JavaScript 代码块的机制。
+
 D) Node.js 中用于处理异步操作的概念。
 
 **正确答案：C) 在事件队列上处理执行多个 JavaScript 代码块的机制。**
 
-解析：`Event Loop` 是 JavaScript 运行时模型的核心组成部分，它允许 JavaScript 执行非阻塞异步操作。尽管 JavaScript 是单线程的，但 `Event Loop` 通过管理事件队列并顺序执行代码块，有效地处理了事件、回调和 I/O 操作。
+解析：`Event Loop` 是 JavaScript 运行时模型的核心组成部分，它允� JavaScript 执行非阻塞异步操作。尽管 JavaScript 是单线程的，但 `Event Loop` 通过管理事件队列并顺序执行代码块，有效地处理了事件、回调和 I/O 操作。
 
 ### 如何在 JavaScript 对象中确保数据不可变性？
 
 A) 使用 `const` 声明对象
+
 B) 使用 `Object.freeze()`
+
 C) 使用 `Object.seal()`
+
 D) 使用 `Immutable.js` 库
 
 **正确答案：B) 使用 `Object.freeze()`**
 
-解析：`Object.freeze()` 通过防止向对象添加新属性、删除或修改现有属性，使 JavaScript 中的对象变为不可变。虽然 `const` 确保了对象的引用不能更改，但它不能让对象的属性不可变。`Object.seal()` 防止添加新属性并将所有现有属性标记为不可配置，但如果现有属性是可写的，则其值仍然可以被更改。
+解析：`Object.freeze()` 通过防止向对象添加新属性、删除或修改现属性，使 JavaScript 中的对象变为不可变。虽然 `const` 确保了对象的引用不能更改，但它不能让对象的属性不可变。`Object.seal()` 防止添加新属性并将所有现有属性标记为不可配置，但如果现有属性是可写的，则其值仍然可以被更改。
 
 ### 在 JavaScript 中，什么是高阶函数？
 
 A) 一个只接受函数作为参数的函数
+
 B) 一个操作其他函数的函数，通过将其作为参数或返回它们来实现
+
 C) 一个返回更高版本 ECMAScript 标准的函数
+
 D) 一个比其外部函数作用域更大的函数
 
 **正确答案：B) 一个操作其他函数的函数，通过将其作为参数或返回它们来实现**
 
-解析：高阶函数是函数式编程中的一个概念，函数可以接受一个或多个函数作为参数并/或返回一个函数。这允许像 `map`、`reduce` 和 `filter` 等函数式构造的使用，这些结构是函数式编程范式的基础。
+解析：高阶函函数是函数式编程中的一个概念，函数可以接受一个或多个函数作为参数并/或返回一个函数。这允许像 `map`、`reduce` 和 `filter` 等函数式构造的使用，这些结构是函数式编程范式的基础。
 
 ### 哪个方法可以确保 JavaScript 中的代码块按指定间隔重复运行？
 
 A) `setTimeout()`
+
 B) `setInterval()`
+
 C) `repeat()`
+
 D) `loop()`
 
 **正确答案：B) `setInterval()`**
@@ -7282,8 +8083,11 @@ D) `loop()`
 ### JavaScript 中的 `?.` 运算符的作用什么？
 
 A) 它是一个比较运算符，用于在不进行类型转换的情况下检查两个值是否相同。
+
 B) 它是一个数学运算符，用于对两个值求和，并通过将空值视为零来处理空值。
+
 C) 它是一个可选链运算符（optional chaining operator），允许读取位于连接对象链深处的属性的值，而无需显式验证链中的每个引用是否都有效。
+
 D) 它拼接两个字符串，如果其中一个字符串为空值，则返回 null。
 
 **正确答案：C) 它是一个可选链运算符，允许读取位于连接对象链深处的属性的值，而无需显式验证链中的每个引用是否都有效。**
@@ -7293,8 +8097,11 @@ D) 它拼接两个字符串，如果其中一个字符串为空值，则返回 n
 ### JavaScript 如何处理模块作用域（module scoping）？
 
 A) 通过将模块中的所有变量和函数与全局作用域隔离。
+
 B) 通过显式的 `export` 和 `import` 语句在模块之间共享变量。
+
 C) A 和 B 都是正确的。
+
 D) JavaScript 模块与全局作用域共享相同的作用域。
 
 **正确答案：C) A 和 B 都是正确的。**
@@ -7304,8 +8111,11 @@ D) JavaScript 模块与全局作用域共享相同的作用域。
 ### `Promise.allSettled()` 方法的作用是什么？
 
 A) 等待所有 promise 解析（resolve）或拒绝（reject），并返回一个描述每个 promise 结果的对象数组。
+
 B) 在第一个 promise 稳定（settled，无论是解析还是拒绝）时立即返回。
+
 C) 等待所有 promise 解析并返回它们结果的数组。
+
 D) 返回一个 promise，当任何输入 promise 解析时，该 promise 也解析。
 
 **正确答案：A) 等待所有 promise 解析或拒绝，并返回一个描述每个 promise 结果的对象数组。**
@@ -7315,8 +8125,11 @@ D) 返回一个 promise，当任何输入 promise 解析时，该 promise 也解
 ### 在 JavaScript 中，`Array.prototype.filter()` 方法的作用是什么？
 
 A) 在数组的每个元素上执行函数，而不更改原始数组。
+
 B) 创建新数组，包含所有通过提供的函数实现的测试的元素。
+
 C) 通过在数组的每个元素上执行提供的函数，将数组还原为单个值。
+
 D) 根据提供的转换函数更新数组中的每个元素。
 
 **正确答案：B) 创建新数组，包含所有通过提供的函数实现的测试的元素。**
@@ -7326,24 +8139,26 @@ D) 根据提供的转换函数更新数组中的每个元素。
 ### 在 JavaScript 中使用 `async` 函数配合 `await` 的重要性是什么？
 
 A) 并行执行异步代码。
+
 B) 编写异步代码，其行为像同步代码一样，便于阅读和维护。
+
 C) 同步调用函数，阻塞代码执行直到它们完成。
+
 D) 通过利用多线程提高 JavaScript 代码的性能。
 
-**正确答案：B) 编写异步代码，其行为像同步代码一样，便于阅读和维护。**
+**正确答案：B) 编写异代码，其行为像同步代码一样，便于阅读和维护。**
 
 解析：`async` 和 `await` 关键字允许用更整洁风格编写基于 promise 的异步行为，避免了链式 `.then()` 调用的需要。`await` 让 JavaScript 等待 promise 返回结果。它让异步代码看起来更像传统的同步代码，提高了可读性和可维护性。
 
 ### 在 JavaScript 打包（bundling）中，什么是“摇树优化（tree shaking）”？
 
 A) 一种通过在运行时动态加载必要模块来优化代码的过程。
+
 B) 从最终包中移除未使用的代码以减小其体积的过程。
+
 C) 一种重新排列和优化脚本执行顺序以提高性能的技术。
+
 D) 将 ES6+ 代码转换为 ES5 以确保与旧版浏览器兼容的行为。
-
-
-
-
 
 ## Tree shaking (摇优化)
 
@@ -7438,9 +8253,11 @@ console.log(doubled);
 ```
 
 A) `[1, 2, 3, 4]`
+
 B) `[2, 4, 6, 8]`
 
 C) `[0, 2, 4, 6]`
+
 D) `undefined`
 
 正确答案：B) `[2, 4, 6, 8]`
@@ -7455,17 +8272,16 @@ console.log(typeof numbers);
 ```
 
 A) `"array"`
+
 B) `"object"`
+
 C) `"undefined"`
+
 D) `"string"`
 
 正确答案：B) `"object"`
 
 解释：在 JavaScript 中，数组是对象的一种，因此 `typeof` 返回 `"object"`。
-
-
-
-
 
 ### 问题
 
@@ -7527,7 +8343,7 @@ D) SyntaxError
 
 **正确答案：** B) { a: 1, b: 3 }
 
-**解析：** 使用展开运算符 `{ ...obj }` 将属性从 `obj` 复制到 `copy`。随后在 `copy` 中定义了属性 `b: 3`，这会覆盖从 `obj` 复制的原始 `b` 值。因此，输出为 `{ a: 1, b: 3 }`，反映了 `b` 的更新后的值。
+**解析：** 使用展开运算符 `{ ...obj }` 将属性从 `obj` 复复到 `copy`。随后在 `copy` 中定义了属性 `b: 3`，这会覆盖从 `obj` 复制的原始 `b` 值。因此，输出为 `{ a: 1, b: 3 }`，反映了 `b` 的更新后的值。
 
 在 JavaScript 中尝试将 `Set` 展开到数组的结果是什么？
 
@@ -7576,17 +8392,18 @@ D) 使用展开运算符
 
 **解析：** `JSON.parse(JSON.stringify(obj))` 无法处理函数和循环引用；`Object.assign({}, obj)` 和展开运算符只能实现浅隆。实现包含函数和循环引用的深隆通常需要使用递归函数。
 
-
-
-
-
 ## 解释
+
 从 DOM 中删除特定元素的正确方法是在要删除的元素的父节点上调用 `removeChild()`，并将该元素作为参数传递进去。`element.remove();` 方法也适用于直接删除元素，而无需引用其父节点，因此在现代浏览器中 A 和 D 都是正确的。
 
 ### `<script>` 标签上的 `async` 属性的目的是什么？
+
 A) 延迟脚本的执行，直到页面加载完成。
+
 B) 指定脚本将异步执行，一旦下载完成就立即执行。
+
 C) 强制脚本按照它们在文档中出现的顺序同步加载。
+
 D) 指明脚本包含异步函数或 await 关键字。
 
 **正确答案：B) 指定脚本将异步执行，一旦下载完成就立即执行。**
@@ -7594,9 +8411,13 @@ D) 指明脚本包含异步函数或 await 关键字。
 **解释：** `<script>` 标签上的 `async` 属性告诉浏览器异步执行脚本，这意味着它将在后台下载脚本，并在下载完成后立即执行，而不会阻塞页面其他部分的解析。这与 `defer` 属性不同，`defer` 也会在后台下载脚本，但会将它们的执行推迟到文档解析之后。
 
 ### 哪个陈述可以正确检查浏览器是否支持 Web Workers？
+
 A) `if (window.Worker) { ... }`
+
 B) `if (navigator.worker) { ... }`
+
 C) `if (typeof Worker !== 'undefined') { ... }`
+
 D) A 和 C 都是正确的。
 
 **正确答案：D) A 和 C 都是正确的。**
@@ -7604,9 +8425,13 @@ D) A 和 C 都是正确的。
 **解释：** 你可以通过验证 `Worker` 构造函数是否存在来检查对 Web Workers 的支持。可以通过检查 `if (window.Worker) { ... }` 查看 `window` 对象上是否存在 `Worker` 属性，或者通过 `if (typeof Worker !== 'undefined') { ... }` 检查 `Worker` 的类型。这两种方法都能有效判断当前浏览器环境是否支持 Web Workers。
 
 ### 如何使用 JavaScript 防止表单提交？
+
 A) 使用 `event.cancel()`
+
 B) 在表单的提交事件处理器中使用 `event.preventDefault()`
+
 C) 在表单的 `onsubmit` 属性中使用 `return false`
+
 D) B 和 C 都是正确的
 
 **正确答案：D) B 和 C 都是正确的**
@@ -7614,9 +8439,13 @@ D) B 和 C 都是正确的
 **解释：** 为了防止表单提交，你可以在表单的提交事件处理器中使用 `event.preventDefault()`，或者从表单的内联 `onsubmit` 属性返回 `false`。这两种方法都会停止表单提交并允许你在提交之前执行额外的验证或处理。
 
 ### `Promise` 链中的 `finally` 子句的作用是什么？
+
 A) 在 Promise 被解析（resolved）或拒绝（rejected）后执行代码
+
 B) 替换对既 `.then()` 和 `.catch()` 方法的需求
+
 C) 确保 Promise 被解析
+
 D) 仅在 Promise 被解析时执行
 
 **正确答案：A) 在 Promise 被解析（resolved）或拒绝（rejected）后执行代码**
@@ -7624,9 +8453,13 @@ D) 仅在 Promise 被解析时执行
 **解释：** Promise 链中的 `finally` 子句用于在 Promise 被解析或拒绝后执行代码，无论结果如何。它通常用于清理工作或完成某些任务，例如隐藏加载指示器，这些任务无论 Promise 是成功还是失败都需要完成。
 
 ### 在 JavaScript 中，通过 `document.getElementById()` 定位的元素，其 CSS 中 `position` 属性的默认值是什么？
+
 A) static
+
 B) relative
+
 C) absolute
+
 D) fixed
 
 **正确答案：A) static**
@@ -7634,9 +8467,13 @@ D) fixed
 **解释：** CSS 中 `position` 属性的默认值是 `static`。这意味着，除非显式更改，通过 `document.getElementById()` 或任何其他方法定位的元素位置都是 `static`，导致它们在不考虑定位属性（top, right, bottom, left）的情况下流向正常的文档布局。
 
 ### 如何在 JavaScript 中检查一个对象是否是特定类的实例？
+
 A) 使用 `instanceof` 运算符
+
 B) 使用 `typeof` 运算符
+
 C) 检查对象的原型是否为该类的原型
+
 D) 将对象的 `constructor` 属性与类进行比较
 
 **正确答案：A) 使用 `instanceof` 运算符**
@@ -7644,29 +8481,41 @@ D) 将对象的 `constructor` 属性与类进行比较
 **解释：** JavaScript 中的 `instanceof` 运算符用于检查一个对象是否是特定类或构造函数的实例。它会检查对象的原型链中是否存在构造函数的 `prototype` 属性，这是一种确定实例关系的可靠方法。
 
 ### 在 JavaScript 中，如何找到字符串中特定索引处的字符？
+
 A) `string.charAt(index)`
+
 B) `string[index]`
+
 C) `string.charCodeAt(index)`
+
 D) A 和 B 都是正确的
 
 **正确答案：D) A 和 B 都是正确的**
 
-**解释：** 在 JavaScript 中，可以使用 `string.charAt(index)` 和括号表示法 `string[index]` 来访问字符串中特定索引处的字符。虽然 `charAt` 是专门为此设计的方法，但括号表示法是一种更通用的属性访问语法，也适用于字符串。
+**解释：** 在 JavaScript 中，可以使用 `string.charAt(index)` 和括号表示法 `string[index]` 来访问访问字符串中特定索引处的字符。虽然 `charAt` 是专门为此设计的方法，但括号表示法是一种更通用的属性访问语法，也适用于字符串。
 
 ### 使用哪种方法可以调度函数按指定间隔重复执行？
+
 A) `setTimeout()`
+
 B) `setInterval()`
+
 C) `requestAnimationFrame()`
+
 D) `repeat()`
 
-**正确答案：B) setInterval()**
+**正确答案：B) setInterval()`
 
 **解释：** `setInterval()` 用于按照指定的间隔（毫秒）重复调度调用某个函数。与在延迟后执行一次函数的 `setTimeout()` 不同，`setInterval()` 会持续调用该函数，直到使用 `clearInterval()` 显式停止它。
 
 ### 如何在 JavaScript 中从 DOM 节点移除所有子元素？
+
 A) `node.removeChild()`
+
 B) `node.innerHTML = ''`
+
 C) `while(node.firstChild) {node.removeChild()}`
+
 D) B 和 C 都是正确的
 
 **正确答案：D) B 和 C 都是正确的**
@@ -7674,9 +8523,13 @@ D) B 和 C 都是正确的
 **解释：** 设置 `node.innerHTML = ''` 可以通过清空 HTML 内容有效地移除节点的所有子元素。或者，使用循环 `while(node.firstChild) {node.removeChild()}` 可以逐个移除子节点，直到节点为空。这两种方法都能实现移除所有子元素的目标。
 
 ### `Array.prototype.map()` 方法返回什么？
+
 A) 被传递给 `map()` 修改后的原始数组
+
 B) 一个新数组，其元素是传递给 `map()` 函数的结果
+
 C) 函数处理的元素数量
+
 D) undefined
 
 **正确答案：B) 一个新数组，其元素是传递给 `map()` 函数的结果**
@@ -7684,9 +8537,13 @@ D) undefined
 **解释：** `Array.prototype.map()` 方法创建一个新数组，该数组填充为对数组中每个元素调用提供的函数的结果。它不会修改原始数组，而是返回一个新数组，是一个用于数据转换的纯函数。
 
 ### 在 JavaScript 中，使用 `document.createDocumentFragment()` 的意义是什么？
+
 A) 创建一个新的 HTML 文档
+
 B) 用于将 HTML 字符串解析为 DOM 节点
+
 C) 创建一个轻量级的非 DOM 容器用于存储 DOM 元素
+
 D) 初始化用于 XML 解析的 `Document` 对象
 
 **正确答案：C) 创建一个轻量级的非 DOM 容器用于存储 DOM 元素**
@@ -7694,18 +8551,18 @@ D) 初始化用于 XML 解析的 `Document` 对象
 **解释：** `document.createDocumentFragment()` 创建一个文档片段，它作为存储 DOM 元素的轻量级容器。文档片段可以在 DOM 之外组合更改，通过减少在操作文档时产生的重流和重绘来提高性能。
 
 ### 如何在 JavaScript 中编码 URL 组件？
+
 A) `encodeURI(component)`
+
 B) `encodeURIComponent(component)`
+
 C) `escape(component)`
+
 D) `URLEncode(component)`
 
 **正确答案：B) encodeURIComponent(component)**
 
 **解释：** `encodeURIComponent()` 函数通过转义某些字符来编码 URI 组件。它会编码包括 URI 分隔符在内的特殊字符，确保该组件安全地包含在 URL 参数中。与编码完整 URI 的 `encodeURI()` 不同，`encodeURIComponent()` 适用于单个 URI 组件，例如查询字符串值。
-
-
-
-
 
 ## 在 JavaScript 中如何判断一个变量是否是特定构造函数的实例？
 
@@ -7792,6 +8649,8 @@ C) 为每个数组元素执行一次提供的函数。
 D) 通过在每个元素上执行还原器函数将数组还原为单个值。
 
 正确答案：B) 检查数组中的每个元素是否通过所提供函数实现的测试。
+
+
 
 **解释：** `Array.prototype.every()` 方法测试数组中的所有元素是否通过所提供函数实现的测试。它返回一个布尔值——如果所有元素都满足条件则返回 `true`，否则返回 `false`。
 
@@ -7893,10 +8752,6 @@ B) `arrayLikeObject.toArray()`
 
 C) `[...arrayLikeObject]`
 
-
-
-
-
 ## D) A 和 C 都是正确的
 
 **正确答案：** D) A 和 C 都是正确的
@@ -7929,8 +8784,11 @@ console.log(multiply(5));
 ```
 
 A) NaN
+
 B) 5
+
 C) undefined
+
 D) 0
 
 **正确答案：** B) 5
@@ -7958,6 +8816,7 @@ A) 创建一个新的用于 XML 解析的空 `Document` 对象。
 B) 创建一个可以包含 DOM 节点的新的 `DocumentFragment` 对象。
 
 C) 解析 HTML 字符串并转换为 DOM 节点。
+
 D) 克隆现有的文档。
 
 **正确答案：** B) 创建一个可以包含 DOM 节点的新的 `DocumentFragment` 对象。
@@ -7981,8 +8840,11 @@ D) `const obj = { readonly prop: 'value' };`
 ## `void` 运算符在 JavaScript 中作用什么什么？
 
 A) 删除对象中的属性。
+
 B) 从任何操作中返回 `undefined` 而不影响周围的表达式。
+
 C) 立即终止函数的执行。
+
 D) 创建一个不返回任何值的 void 块。
 
 **正确答案：** B) 从任何操作中返回 `undefined` 而不影响周围的表达式。
@@ -7992,8 +8854,11 @@ D) 创建一个不返回任何值的 void 块。
 ## 在 JavaScript 中，`new` 运算符的作用是什么？
 
 A) 创建一个新的空对象。
+
 B) 从构造函数或类实例化新对象。
+
 C) 为新变量分配内存。
+
 D) 克隆现有对象。
 
 **正确答案：** B) 从构造函数或类实例化新对象。
@@ -8005,7 +8870,9 @@ D) 克隆现有对象。
 A) `document.location.href = 'http://newpage.com'`
 
 B) `window.navigate('http://newpage.com')`
+
 C) `browser.redirect('http://newpage.com')`
+
 D) `location.assign('http://newpage.com')`
 
 **正确答案：** D) `location.assign('http://newpage.com')`
@@ -8015,8 +8882,11 @@ D) `location.assign('http://newpage.com')`
 ## 当文档（包括样式表）完全加载后会触发哪种 JavaScript 事件？
 
 A) DOMContentLoaded
+
 B) documentLoaded
+
 C) load
+
 D) complete
 
 **正确答案：** C) load
@@ -8026,8 +8896,11 @@ D) complete
 ## 如何在 JavaScript 中实现继承？
 
 A) 在类声明中使用 `extends` 关键字
+
 B) 将一个构造函数的原型设置为另一个的实例
+
 C) 使用对象的 `inherit()` 方法
+
 D) A 和 B 都是
 
 **正确答案：** D) A 和 B 都是
@@ -8037,8 +8910,11 @@ D) A 和 B 都是
 ## 使用什么方法将 JSON 字符串转换为 JavaScript 对象？
 
 A) `JSON.parse(jsonString)`
+
 B) `JSON.stringify(jsonString)`
+
 C) `Object.parse(jsonString)`
+
 D) `Object.fromString(jsonString)`
 
 **正确答案：** A) `JSON.parse(jsonString)`
@@ -8048,8 +8924,11 @@ D) `Object.fromString(jsonString)`
 ## 如何在 JavaScript 中检测设备类型？
 
 A) 使用 `navigator.device` 属性
+
 B) 使用 `navigator.userAgent` 属性
+
 C) 使用 `window.deviceType`
+
 D) 使用 `screen.type`
 
 **正确答案：** B) 使用 `navigator.userAgent` 属性
@@ -8059,23 +8938,25 @@ D) 使用 `screen.type`
 ## 如何在 JavaScript 中停止 CSS 动画？
 
 A) `element.style.animation = "none";`
+
 B) `element.animation.pause();`
+
 C) `element.style.animationPlayState = "paused";`
+
 D) A 和 C 都是
 
 **正确答案：** D) A 和 C 都是
-
-
-
-
 
 解释：要停止元素上的 CSS 动画，你可以通过将 `element.style.animation` 设置为 `"none"` 来移除动画，或者通过将 `element.style.animationPlayState` 设置为 `"paused"` 来暂停它。后者允许动画从暂停的地方继续执行。
 
 在 JavaScript 中，如何检查一个对象是否为空？
 
 A) `Object.isEmpty(obj)`
+
 B) `Object.keys(obj).length === 0`
+
 C) `obj.length === 0`
+
 D) `obj === {}`
 
 正确答案：B) `Object.keys(obj).length === 0`
@@ -8085,8 +8966,11 @@ D) `obj === {}`
 在 Web Storage API 中，`localStorage` 和 `sessionStorage` 有什么区别？
 
 A) `localStorage` 在浏览器会话之间持久化；`sessionStorage` 数据在会话结束时清除
+
 B) `localStorage` 的存储限制比 `sessionStorage` 大
+
 C) `sessionStorage` 在标签页和窗口之间共享；`localStorage` 不共享
+
 D) `localStorage` 是同步的；`sessionStorage` 是异步的
 
 正确答案：A) `localStorage` 在浏览器会话之间持久化；`sessionStorage` 数据在会话结束时清除
@@ -8096,8 +8980,11 @@ D) `localStorage` 是同步的；`sessionStorage` 是异步的
 在 JavaScript 中如何移除数组中的重复值？
 
 A) `Array.from(new Set(array))`
+
 B) `array.unique()`
+
 C) `array.filter((item, index) => array.indexOf(item) === index)`
+
 D) A 和 C 都正确
 
 正确答案：D) A 和 C 都正确
@@ -8107,8 +8994,11 @@ D) A 和 C 都正确
 如何在 HTML 文档中延迟脚本的执行？
 
 A) 在 `<script>` 标签上添加 `defer` 属性
+
 B) 在脚本中使用 `setTimeout()`
+
 C) 将脚本放在 `<body>` 区域的底部
+
 D) A 和 C 都正确
 
 正确答案：D) A 和 C 都正确
@@ -8118,8 +9008,11 @@ D) A 和 C 都正确
 在 JavaScript 中，你会使用什么方法合并两个数组且不创建重复值？
 
 A) `array1.concat(array2)`
+
 B) `[...new Set([...array1, ...array2])]`
+
 C) `array1.push(...array2)`
+
 D) `Array.merge(array1, array2)`
 
 正确答案：B) `[...new Set([...array1, ...array2])]`
@@ -8129,8 +9022,11 @@ D) `Array.merge(array1, array2)`
 在 JavaScript 中如何动态导入模块？
 
 A) `import(moduleName)`
+
 B) `require(moduleName)`
+
 C) `import(moduleName).then(module => {})`
+
 D) `import(moduleName).then(module => {})`
 
 正确答案：D) `import(moduleName).then(module => {})`
@@ -8147,8 +9043,11 @@ console.log(x.y);
 ```
 
 A) 1
+
 B) 2
+
 C) undefined
+
 D) ReferenceError
 
 正确答案：A) 1
@@ -8158,8 +9057,11 @@ D) ReferenceError
 在 JavaScript 中，如何将字符串转换为数字？
 
 A) `parseInt(string)`
+
 B) `Number(string)`
+
 C) `parseFloat()`
+
 D) A 和 B 都正确
 
 正确答案：D) A 和 B 都正确
@@ -8169,8 +9071,11 @@ D) A 和 B 都正确
 如何从对象中删除属性？
 
 A) `delete object.propertyName`
+
 B) `object.propertyName.remove()`
+
 C) `object.remove(propertyName)`
+
 D) `object.propertyName = undefined`
 
 正确答案：A) `delete object.propertyName`
@@ -8180,8 +9085,11 @@ D) `object.propertyName = undefined`
 如何停止事件的进一步传播？
 
 A) `event.cancelBubble()`
+
 B) `event.stopPropagation()`
+
 C) `event.stop()`
+
 D) `event.preventDefault()`
 
 正确答案：B) `event.stopPropagation()`
@@ -8191,8 +9099,11 @@ D) `event.preventDefault()`
 `async` 关键字对函数起什么作用？
 
 A) 让它同步运行
+
 B) 允许它返回 promise
+
 C) 确保它在单独线程中运行
+
 D) 允许在函数体中使用 await 关键字
 
 正确答案：D) 允许在函数体中使用 await 关键字
@@ -8207,8 +9118,11 @@ promise.then(value => console.log(value));
 ```
 
 A) 5
+
 B) Promise {<resolved>: 5}
+
 C) undefined
+
 D) TypeError
 
 正确答案：A) 5
@@ -8218,34 +9132,39 @@ D) TypeError
 在 JavaScript 中如何克隆数组？
 
 A) `const clone = array.clone()`
+
 B) `const clone = [...array]`
+
 C) `const clone = array.slice()`
+
 D) B 和 C 都正确
 
 正确答案：D) B 和 C 都正确
-
-
-
-
 
 解析：展开运算符 `[...array]` 和 `slice()` 方法都可以用于创建数组的浅拷贝。这些方法将原始数组的元素复制到新数组中，允许对副本进行修改而不影响原始数组。
 
 ### 如何确保函数无论如何被调用，始终接收到一个特定的上下文（context）？
 
 A) `function.bind(context)`
+
 B) `function.call(context)`
+
 C) `function.apply(context)`
+
 D) `function.context = context`
 
 正确答案：A) `function.bind(context)`
 
-解析：`bind` 方法创建一个新函数，当它被调用时，其 `this` 关键字被设置为提供的值（`context`）。与 `call` 和 `apply` 不同（后者会立即使用指定的 `this` 上下文调用函数），`bind` 返回的是一个永久绑定了上下文的新函数，使得该函数无论如何调用都能接收到特定的 `this` 上下文。
+解析：`bind` 方法创建一个新函数，当它被调用时，其 `this` 关键字被设置为提供的值（`context`）。与 `call` 和 `apply` 不同（后者会立即使用指定的 `this` 上下调用函数），`bind` 返回的是一个永久绑定了上下文的新函数，使得该函数无论如何调用都能接收到特定的 `this` 上下文。
 
 ### ES6 的哪个功能允许简洁地声明匿名函数？
 
 A) 箭头函数 (Arrow functions)
+
 B) `function` 关键字
+
 C) 模板字符串 (Template literals)
+
 D) 解构赋值 (Destructuring assignments)
 
 正确答案：A) 箭头函数 (Arrow functions)
@@ -8261,8 +9180,11 @@ console.log(x === y);
 ```
 
 A) true
+
 B) false
+
 C) "10"
+
 D) TypeError
 
 正确答案：B) false
@@ -8272,19 +9194,25 @@ D) TypeError
 ### 在 JavaScript 中，使用哪种方法可以在不刷新页面的情况下从服务器获取数据？
 
 A) `XMLHttpRequest`
+
 B) `fetch`
+
 C) `axios.get`
+
 D) A 和 B 都正确
 
 正确答案：D) A 和 B 都正确
 
-解析：`XMLHttpRequest` 和 `fetch` API 都可以用于在不刷新页面的情况下异步请求数据。`fetch` 提供了一种更现代的基于 Promise 的方法处理异步请求，而 `XMLHttpRequest` 是旧标准。`axios.get` 也是一种有效的方法，但在这里没有列出。
+解析：`XMLHttpRequest` 和 `fetch` API 都可以用于在不刷新页面的情况下异步请求数据。`fetch` 提供了一种更现代的基于 Promise 的方法处理异步请请求，而 `XMLHttpRequest` 是旧标准。`axios.get` 也是一种有效的方法，但在这里没有列出。
 
 ### 如何在 JavaScript 中创建一个只读对象？
 
 A) JavaScript 不支持只读对象。
+
 B) 使用 `Object.freeze(new Date())`
+
 C) `const date = new Date(); date.readOnly = true;`
+
 D) `new Date().asReadOnly()`
 
 正确答案：A) JavaScript 不支持只读对象。（注：此处原文语境为：虽然 `Object.freeze()` 可以防止修改对象的属性，但无法阻止内部可变对象的修改，例如 `Date` 对象的状态。因此，JavaScript 没有原生的方法来创建一个只读的 `Date` 对象。）
@@ -8292,8 +9220,11 @@ D) `new Date().asReadOnly()`
 ### 如果没有元素匹配测试函数，`Array.prototype.find()` 方法返回什么？
 
 A) null
+
 B) undefined
+
 C) 0
+
 D) 空数组 `[]`
 
 正确答案：B) undefined
@@ -8303,8 +9234,11 @@ D) 空数组 `[]`
 ### 如何在 JavaScript 中实现模块封装和私有？
 
 A) 使用立即调用表达式 (IIFE)
+
 B) 使用 `const` 声明所有变量
+
 C) 将代码放在类内部
+
 D) 在类中使用 `#` 前缀定义私有变量
 
 正确答案：A) 使用立即调用表达式 (IIFE)
@@ -8323,8 +9257,11 @@ console.log(obj.a);
 ```
 
 A) 1
+
 B) 2
+
 C) 3
+
 D) SyntaxError
 
 正确答案：C) 3
@@ -8334,8 +9271,11 @@ D) SyntaxError
 ### 如何确保在 JavaScript 中延迟一段时间后执行代码块？
 
 A) `setTimeout(codeBlock, delay)`
+
 B) `setInterval(codeBlock, delay)`
+
 C) `time.sleep(delay); execute(codeBlock);`
+
 D) `Promise.after(delay).then(codeBlock)`
 
 正确答案：A) `setTimeout(codeBlock, delay)`
@@ -8345,17 +9285,16 @@ D) `Promise.after(delay).then(codeBlock)`
 ### JavaScript 中 `?.` 运算符的主要用途是什么？
 
 A) 指定可选函数参数
+
 B) 执行空值合并 (nullish coalescing)
+
 C) 如果存在则执行方法或访问属性，如果不存在则不会导致错误
+
 D) 以空安全的方式拼接字符串
 
 正确答案：C) 如果存在则执行方法或访问属性，如果不存在则不会导致错误
 
 解析：可选链运算符 (`?.`) 允许安全地访问对象的深层属性，而无需检查链中的每个引用是否为空值（`null` 或 `undefined`）。如果引用为空，表达式将短路返回并返回 `undefined` 而不会抛出错误。
-
-
-
-
 
 A) `const arr = Object.freeze([1, 2, 3])`
 
@@ -8569,10 +9508,6 @@ Explanation: `Array.isArray(obj)` 是检查对象是否为数组的标准方法�
 ## 如何在 JavaScript 中延迟函数的执行？
 
 A) `setTimeout(function, milliseconds)`
-
-
-
-
 
 ### B) `setInterval(function, milliseconds)`
 
@@ -8808,10 +9743,6 @@ let arr = [1, 2, 3];
 let [a, , c] = arr;
 ```
 
-
-
-
-
 ```
 console.log(a + c);
 ```
@@ -8840,7 +9771,7 @@ D) 在任何函数外部声明变量。
 
 正确答案：A) 在函数内部使用 `var` 关键字声明变量。
 
-解释：在函数内部用 `var`、`let` 或 `const` 声明的变量是该函数的局部变量，无法在函数外部访问，这实际上使它们对该函数是私有的。`private` 关键字和 `#` 符号用于类中定义私有字段或方法，而不是在函数内部。
+解释：在函数内部用 `var`、`let` 或 `const` 声言的变量是该函数的局部变量，无法在函数外部访问，这实际上使它们对该函数是私有的。`private` 关键字和 `#` 符号用于类中定义私有字段或方法，而不是在函数内部。
 
 在 JavaScript 中"5" - 2 的结果是什么？
 

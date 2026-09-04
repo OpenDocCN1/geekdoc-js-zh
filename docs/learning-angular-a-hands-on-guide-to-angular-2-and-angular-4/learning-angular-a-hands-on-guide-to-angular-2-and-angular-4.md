@@ -1,30 +1,5 @@
+
 # Angular 实用指南：Angular 2 与 Angular 4 实践指南
-
-
-
-
-
-
-
----
-
-
-
----
-
-
----
-
-
-
----
-
-
----
-
-
-
-
 
 ## 关于作者
 
@@ -53,8 +28,11 @@
 电子邮件：feedback@developers-library.info
 
 邮件：读者反馈
+
 Addison-Wesley Developer's Library
+
 800 East 96th Street
+
 Indianapolis, IN 46240 USA
 
 ## 读者服务
@@ -66,6 +44,7 @@ Indianapolis, IN 46240 USA
 你以任何格式购买本书，都包含对相应网络版的访问权限，该版本提供几个仅限在线的特殊功能：
 
 - 本书的完整文本
+
 - 更新和更正内容（在发布时提供）
 
 网络版可以在所有类型的计算机和移动设备上通过任何支持HTML5的现代网络浏览器查看。
@@ -73,9 +52,13 @@ Indianapolis, IN 46240 USA
 要获取 *Learning Angular* 网络版的访问权限，你只需注册本书：
 
 1. 访问 www.informit.com/register
+
 2. 登录或创建一个新帐户。
+
 3. 输入 ISBN：**9780134576978**
+
 4. 回答问题作为购买证明。
+
 5. 网络版将出现在你帐户页面的“数字购买”标签下。点击“启动”链接即可访问该产品。
 
 ## 引言
@@ -85,10 +68,15 @@ Indianapolis, IN 46240 USA
 本引言涵盖以下内容：
 
 - 谁应该阅读这本书
+
 - 为什么你应该阅读这本书
+
 - 使用本书你将能实现什么
+
 - 什么是Angular以及为什么它是一项伟大的技术
+
 - 本书的组织结构
+
 - 在哪里可以找到代码示例
 
 让我们开始吧。
@@ -110,24 +98,30 @@ Indianapolis, IN 46240 USA
 使用Angular技术可以让你将逻辑直接构建到网页中，从而将客户端Web应用程序的数据模型与后端服务和数据库绑定。Angular还使你能够轻松扩展HTML的功能，从而可以在HTML模板文件中轻松表达UI设计逻辑。以下只是你阅读本书时将学到的一些内容：
 
 - 如何使用内置指令快速构建Angular模板，以增强用户体验
+
 - 如何将UI元素绑定到数据模型，以便当模型改变时UI也随之改变，反之亦然
+
 - 如何将鼠标和键盘事件直接绑定到数据模型和后端功能，以提供稳健的用户交互
+
 - 如何定义你自己的自定义Angular指令来扩展HTML语言
+
 - 如何实现可以与Web服务器交互的客户端服务
-- 如何构建提供丰富用户交互的动态浏览器视图
+
+- 如何构建提供丰富用户交互的动态浏览器视视图
+
 - 如何创建可以在其他Angular应用程序中轻松重用的自定义服务
+
 - 如何实现丰富的UI组件（如可缩放图像和可扩展列表）作为自定义Angular指令
 
 ## 什么是Angular？
 
-Angular主要由Google开发的一个客户端JavaScript框架。Angular背后的整个理念是提供一个框架，使使用MVC或模型视图视图模型（MVVM）框架来实现设计精良、结构合理的网页和应用程序变得简单。
+Angular主要由Google开发的一个客户端JavaScript框架。Angular背后的整个</think>[content]提供一个框架，使使用MVC或模型视图视图模型（MVVM）框架来实现设计精良、结构合理的网页和应用程序变得简单。
 
 Angular提供了在浏览器中处理用户输入、在客户端操作数据以及控制元素在浏览器视图中显示方式的所有功能。以下是Angular提供的一些好处：
 
 - **数据绑定**：Angular使用其强大的作用域机制，提供了一种非常简洁的数据绑定到HTML元素的方法。
+
 - **可扩展性**：Angular架构使你能够轻松扩展该语言的几乎所有方面，以提供你自己的自定义实现。
-
-
 
 ## 本书组织结构
 
@@ -151,9 +145,9 @@ Angular提供了在浏览器中处理用户输入、在客户端操作数据以�
 
 第9章，“事件与变更检测”，涵盖您在Angular中将遇到的事件类型以及如何管理它们。您将学习如何创建和处理自己的自定义事件。本章还涵盖了如何使用可观察对象来监视和响应Web应用程序中的数据变化。
 
-第10章，“在Web应用中实现Angular服务”，涵盖Angular提供的内置服务。这些服务使您能够使用HTTP请求与Web服务器通信，实现路由以导航应用程序视图更改，以及在网页上实现动画。
+第10章，“在Web应用中实现Angular服务”，涵盖Angular提供的内置服务。这些服务使您能够使用HTTP请请求与Web服务器通信，实现路由以导航应用程序视图更改，以及在网页上实现动画。
 
-第11章，“创建您自己的自定义Angular服务”，涵盖Angular中可用于创建自定义服务的机制。自定义服务使您能够使功能可重用，因为您可以轻松地将这些服务提供的功能注入到多个应用程序中。
+第11章，“创建您自己的自定义Angular服务”，涵盖Angular中可用于创建自定服务的机制。自定义服务使您能够使功能可重用，因为您可以轻松地将这些服务提供的功能注入到多个应用程序中。
 
 第12章，“玩转Angular”，提供了几个在实际示例中使用Angular创建丰富UI组件的示例。您将有机会了解如何实现拖放、动画和其他UI元素。
 
@@ -179,7 +173,8 @@ Angular基于TypeScript构建，而TypeScript是JavaScript的超集。在进入A
 
 要使用JavaScript和/或TypeScript有效地构建Angular应用程序，您的开发环境需要包含以下组件：
 
--   **编辑器：** 编辑器使您能够创建构建Angular应用程序所需的必要JavaScript、HTML和CSS文件。市面上有很多编辑器，您可以选择一个自己熟悉的。本书使用Visual Studio Code，因为它内置了对TypeScript的兼容性。
+-   **编辑器：** 编辑器使您能够创建构建Angular应用程所需的必要JavaScript、HTML和CSS文件。市面上有很多编辑器，您可以选择一个自己熟悉的。本书使用Visual Studio Code，因为它内置了对TypeScript的兼容性。
+
 -   **浏览器：** 您需要一个Web浏览器来测试和试用您的应用程序。在大多数情况下，JavaScript和Angular应用程序在主要浏览器中的运行方式相同。
 
 Angular支持ECMAScript 5和6，大多数现代浏览器已经实现了ECMAScript 6的大部分功能。但是，某些功能在旧版浏览器中的行为可能不同。始终建议在您客户将使用的主要浏览器中测试您的应用程序，以确保它在所有浏览器中都能正确运行。
@@ -221,12 +216,11 @@ var newString = myString + " Some More Text";
 JavaScript使用数据类型来确定如何处理分配给变量的数据。变量类型决定了您可以对变量执行哪些操作，例如循环或执行。以下列表描述了您在本书中将最常处理的变量类型：
 
 -   **字符串：** 此数据类型将字符数据存储为字符串。字符数据用单引号或双引号指定。引号内的所有数据都分配给字符串变量。考虑以下示例：
+
     ```javascript
     var myString = 'Some Text';
     var anotherString = 'Some More Text';
     ```
-
-
 
 ### 数字
 
@@ -272,7 +266,7 @@ var name = obj.name;
 var newVar = null;
 ```
 
-**注意：** JavaScript 不是一种强类型语言。这意味着你不需要在脚本中指定变量的数据类型。解释器会自动确定变量的正确数据类型。此外，你可以将一种类型的变量赋值给不同类型的值。例如，以下代码定义了一个字符串变量，然后将其赋值给一个整数值类型：
+**注意：** JavaScript 不是一种强类型语言。这意味着你不需要在脚本中指变量的数据类型。解释器会自动确定变量的正确数据类型。此外，你可以将一种类型的变量赋值给不同类型的值。例如，以下代码定义了一个字符串变量，然后将其赋值给一个整数值类型：
 
 ```
 var id = "testID";
@@ -290,17 +284,29 @@ JavaScript 运算符允许你改变变量的值。你已经熟悉用于给变量
 **表 1.1 JavaScript 的算术运算符，初始 y=4 的结果**
 
 | 运算符 | 描述 | 示例 | 结果 x |
+
 |---|---|---|---|
+
 | + | 加法 | x=y+5 | 9 |
+
 | | | x=y+"5" | "45" |
+
 | | | x="Four"+y+"4" | "Four44" |
+
 | - | 减法 | x=y-2 | 2 |
+
 | ++ | 自增 | x=y++ | 4 |
+
 | | | x=++y | 5 |
+
 | -- | 自减 | x=y-- | 4 |
+
 | | | x=--y | 3 |
+
 | * | 乘法 | x=y*4 | 16 |
+
 | / | 除法 | x=10/y | 2.5 |
+
 | % | 取模（除法的余数） | x=y%3 | 1 |
 
 > **注意：** 你也可以使用 + 运算符将字符串连接在一起，或将字符串和数字连接在一起。它允许你快速地将字符串与输出字符串中的数字数据进行连接。表 1.1 显示，当你将一个数字值和一个字符串值相加时，数字值会被转换成字符串，然后两个字符串被连接起来。
@@ -312,12 +318,19 @@ JavaScript 运算符允许你改变变量的值。你已经熟悉用于给变量
 **表 1.2 JavaScript 的赋值运算符，初始 x=10 的结果**
 
 | 运算符 | 示例 | 等效算术运算符 | 结果 x |
+
 | :--- | :--- | :--- | :--- |
+
 | = | x=5 | x=5 | 5 |
+
 | += | x+=5 | x=x+5 | 15 |
+
 | -= | x-=5 | x=x-5 | 5 |
+
 | *= | x*=5 | x=x*5 | 50 |
+
 | /= | x/=5 | x=x/5 | 2 |
+
 | %= | x%=5 | x=x%5 | 0 |
 
 ### 应用比较和条件运算符
@@ -333,14 +346,23 @@ JavaScript 运算符允许你改变变量的值。你已经熟悉用于给变量
 **表 1.3 JavaScript 的比较运算符，初始 x=10 的结果**
 
 | 运算符 | 描述 | 示例 | 结果 |
+
 | :--- | :--- | :--- | :--- |
+
 | == | 等于（仅值） | x==8<br>x==10 | false<br>true |
+
 | === | 值和类型都相等 | x===10<br>x==="10" | true<br>false |
+
 | != | 不等于 | x!=5 | true |
+
 | !== | 值和类型都不相等 | x!="10"<br>x!==10 | true<br>false |
+
 | > | 大于 | x>5 | true |
+
 | >= | 大于或等于 | x>=10 | true |
+
 | < | 小于 | x<5 | false |
+
 | <= | 小于或等于 | x<=10 | true |
 
 你可以使用逻辑运算符和标准括号将多个比较链接在一起。表 1.4 列出了逻辑运算符并展示了如何使用它们将比较链接在一起。
@@ -348,15 +370,25 @@ JavaScript 运算符允许你改变变量的值。你已经熟悉用于给变量
 **表 1.4 JavaScript 的逻辑运算符，初始 x=10 和 y=5 的结果**
 
 | 运算符 | 描述 | 示例 | 结果 |
+
 | :--- | :--- | :--- | :--- |
+
 | && | 与 | (x==10 && y==5) | true |
+
 | | | (x==10 && y>x) | false |
+
 | \|\| | 或 | (x>=10 \|\| y>x) | true |
+
 | | | (x<10 && y>x) | false |
+
 | ! | 非 | !(x==y) | true |
+
 | | | !(x>y) | false |
+
 | 混合 | | (x>=10 && y<x \|\| x==y) | true |
+
 | | | ((x<y \|\| x>=10) && y>=5) | true |
+
 | | | (!(x==y) && y>=10) | false |
 
 ### 使用 if 语句
@@ -420,11 +452,9 @@ switch(expression){
 
 JavaScript 提供了执行 for 和 while 循环的功能，如下所述。
 
-### while 循环
+### while 循循环
 
 JavaScript 中最基本的循环类型是通过 while 循环实现的。while 循环测试一个表达式，并继续执行其 {} 括号中包含的代码，直到表达式评估为 false。
-
-
 
 例如，以下 `while` 循环会执行直到 `i` 等于 5：
 
@@ -481,7 +511,9 @@ for (assignment; condition; update;){
 `for` 语句在执行循环时按如下方式使用这三个语句：
 
 - **assignment:** 这在循环开始前执行，并且不再次执行。它用于初始化将在循环中用作条件的变量。
+
 - **condition:** 此表达式在循环的每次迭代前进行求值。如果表达式求值为 `true`，则执行循环；否则，`for` 循环执行结束。
+
 - **update**: 这在循环中的代码执行后，每次迭代时执行。这通常用于递增在 *condition* 中使用的计数器。
 
 以下示例说明了 `for` 循环以及一个循环嵌套在另一个循环内部的情况：
@@ -549,6 +581,7 @@ for (var idx in days) {
 一旦值是星期三，循环执行完全停止：
 
 - It's Monday
+
 - It's Tuesday
 
 此示例显示了在星期三时使用 `continue`：
@@ -565,8 +598,11 @@ for (var idx in days) {
 请注意，由于 `continue` 语句，星期三时没有执行写入操作，但循环执行完成了：
 
 - It's Monday
+
 - It's Tuesday
+
 - It's Thursday
+
 - It's Friday
 
 ### 创建函数
@@ -591,7 +627,7 @@ myFunction();
 
 ### 将变量传递给函数
 
-你经常需要将特定的值传递给函数，函数在执行其代码时会使用这些值。你以逗号分隔的形式将值传递给函数。函数定义需要 `()` 中的变量名列表，该列表与传入的参数数量相匹配。例如，以下函数接受两个参数 `name` 和 `city`，并使用它们构建输出字符串：
+你经常需要将特定的值传递给函函数，函数在执行其代码时会使用这些值。你以逗号分隔的形式将值传递给函数。函数定义需要 `()` 中的变量名列表，该列表与传入的参数数量相匹配。例如，以下函数接受两个参数 `name` 和 `city`，并使用它们构建输出字符串：
 
 ```
 function greeting(name, city) {
@@ -637,7 +673,7 @@ function myFunc(value) {
 
 到目前为止，本章中的所有示例都显示了命名函数。JavaScript 还允许你创建匿名函数。这些函数的优势在于，当你调用其他函数时，它们可以直接在参数集中定义，因此你不需要正式的定义。
 
-例如，以下代码定义了一个函数 `doCalc()`，它接受三个参数。前两个应该是数字，第三个是一个函数，该函数将被调用并将两个数字作为参数传递：
+例如，以下代码定了一个函数 `doCalc()`，它接受三个参数。前两个应该是数字，第三个是一个函数，该函数将被调用并将两个数字作为参数传递：
 
 ```
 function doCalc(num1, num2, calcFunction){
@@ -661,7 +697,7 @@ console.log( doCalc(5, 10, function(n1, n2){ return n1 + n2; }) );
 console.log( doCalc(5, 10, function(n1, n2){ return n1 * n2; }) );
 ```
 
-你可能已经看到，使用匿名函数的优点在于，你不需要一个不会在代码其他地方使用的正式定义。因此，匿名函数使 JavaScript 代码更简洁、更具可读性。作为参数传递并在内部调用的函数被称为 *回调函数*。使用回调函数的一个主要优点是，初始函数不需要知道将被执行的任何函数，因此你具有更大的灵活性。
+你可能已经看到，使用匿名函数的优点在于，你不需要一个不会在代码其他地方使用的正式定义。因此，匿名函数使 JavaScript 代码更简洁、更具可读性。作为参数传递并在内部调用的函数被称为 *回调函数*。使用回调函的一个主要优点是，初始函数不需要知道将被执行的任何函数，因此你具有更大的灵活性。
 
 ### 理解变量作用域
 
@@ -670,8 +706,6 @@ console.log( doCalc(5, 10, function(n1, n2){ return n1 * n2; }) );
 JavaScript 允许你定义全局版本和局部版本的变量。全局版本在主 JavaScript 中定义，而局部版本在函数内部定义。当你在函数中定义局部版本时，会在内存中创建一个新变量。在该函数内部，你引用的是局部版本。在该函数外部，你引用的是全局版本。
 
 为了更好地理解变量作用域，请考虑清单 1.1 中的代码。
-
-
 
 ### 使用 JavaScript 对象
 
@@ -811,14 +845,23 @@ var myStr = "Teach Yourself jQuery & JavaScript in 24 Hours";
 表 1.5 字符串对象转义码
 
 | 转义码 | 描述 | 示例 | 输出字符串 |
+
 |---|---|---|---|
+
 | `\'` | 单引号 | `"couldn\'t be"` | couldn't be |
+
 | `\"` | 双引号 | `"I \"think\" I \"am\""` | I "think" I "am" |
+
 | `\\` | 反斜杠 | `"one\\two\\three"` | one\two\three |
+
 | `\n` | 换行 | `"I am\nI said"` | I am\nI said |
+
 | `\r` | 回车符 | `"to be\ror not"` | to be\nor not |
+
 | `\t` | 制表符 | `"one\ttwo\tthree"` | one\ttwo\tthree |
+
 | `\b` | 退格符 | `"correctoin\b\b\bion"` | correction |
+
 | `\f` | 换页符 | `"Title A\fTitle B"` | Title A 然后 Title B |
 
 要确定字符串的长度，可以使用 `String` 对象的 `length` 属性，例如此示例：
@@ -832,17 +875,24 @@ var numOfChars = myStr.length;
 表 1.6 操作字符串对象的方法
 
 | 方法 | 描述 |
+
 |---|---|
+
 | `charAt(index)` | 返回指定索引处的字符。 |
+
 | `charCodeAt(index)` | 返回指定索引处字符的 Unicode 值。 |
+
 | `concat(str1, str2, ...)` | 连接两个或多个字符串，并返回连接后字符串的副本。 |
+
 | `fromCharCode()` | 将 Unicode 值转换为实际字符。 |
+
 | `indexOf(subString)` | 返回指定子字符串值首次出现的位置。如果未找到子字符串，则返回 -1。 |
+
 | `lastIndexOf(subString)` | 返回指定子字符串值最后一次出现的位置。如果未找到子字符串，则返回 -1。 |
+
 | `match(regex)` | 搜索字符串并返回所有与正则表达式匹配的结果。 |
+
 | `replace(subString/regex, replacementString)` | 搜索字符串以查找子字符串或正则表达式的匹配项，并将匹配的子字符串替换为新的子字符串。 |
-
-
 
 ### 组合字符串
 
@@ -927,20 +977,35 @@ var last = week[week.length-1];
 #### 表 1.7 操作数组对象的方法
 
 | 方法 | 描述 |
+
 | :--- | :--- |
+
 | `concat(arr1, arr2, ...)` | 返回数组和作为参数传递的数组的连接副本。 |
+
 | `indexOf(value)` | 返回值在数组中的第一个索引，如果未找到该项则返回 -1。 |
+
 | `join(separator)` | 使用分隔符将数组的所有元素连接成一个字符串。如果未指定分隔符，则使用逗号。 |
+
 | `lastIndexOf(value)` | 返回值在数组中的最后一个索引，如果未找到该值则返回 -1。 |
+
 | `pop()` | 从数组中移除最后一个元素并返回该元素。 |
+
 | `push(item1, item2, ...)` | 将一个或多个新元素添加到数组的末尾并返回新的长度。 |
+
 | `reverse()` | 反转数组中所有元素的顺序。 |
+
 | `shift()` | 移除数组的第一个元素并返回该元素。 |
+
 | `slice(start, end)` | 返回 `start` 和 `end` 索引之间的元素。 |
+
 | `sort(sortFunction)` | 对数组的元素进行排序。`sortFunction` 是可选的。 |
+
 | `splice(index, count, item1, item2...)` | 在指定的 `index` 处，移除 `count` 个项目，然后在 `index` 处插入作为参数传递的任何可选项目。 |
+
 | `toString()` | 返回数组的字符串形式。 |
+
 | `unshift()` | 将新元素添加到数组的开头并返回新的长度。 |
+
 | `valueOf()` | 返回 `Array` 对象的原始值。 |
 
 为了帮助你开始使用 `Array` 对象提供的功能，以下部分描述了一些可以使用 `Array` 对象方法完成的常见任务。
@@ -957,6 +1022,7 @@ var arr4 = arr1.concat(arr2);
 ```
 
 > 注意
+
 你可以组合一个数字数组和一个字符串数组。数组中的每个项目将保持其自身的对象类型。但是，在使用数组中的项目时，你需要跟踪具有多种数据类型的数组，以避免出现问题。
 
 ### 遍历数组
@@ -1002,22 +1068,30 @@ function message(day){
 #### 表 1.8 用于向数组添加和移除元素的 Array 对象方法
 
 | 语句 | x 的值 | arr 的值 |
+
 | :--- | :--- | :--- |
+
 | `var arr = [1,2,3,4,5];` | undefined | 1,2,3,4,5 |
+
 | `var x = 0;` | 0 | 1,2,3,4,5 |
+
 | `x = arr.unshift("zero");` | 6 (length) | zero,1,2,3,4,5 |
+
 | `x = arr.push(6,7,8);` | 9 (length) | zero,1,2,3,4,5,6,7,8 |
+
 | `x = arr.shift();` | zero | 1,2,3,4,5,6,7,8 |
+
 | `x = arr.pop();` | 8 | 1,2,3,4,5,6,7 |
+
 | `x = arr.splice(3,3,"four","five","six");` | 4,5,6 | 1,2,3,four,five,six,7 |
+
 | `x = arr.splice(3,1);` | four | 1,2,3,five,six,7 |
+
 | `x = arr.splice(3);` | five,six,7 | 1,2,3 |
 
 ### 添加错误处理
 
 JavaScript 编码的一个重要部分是为可能出现问题的情况添加错误处理。默认情况下，如果由于 JavaScript 中的问题导致代码异常，脚本将失败且不会完成加载。这通常不是期望的行为。事实上，这常常是灾难性的行为。为了防止这些严重问题，你应该将代码包装在 `try/catch` 块中。
-
-
 
 ### try/catch 块
 
@@ -1112,14 +1186,23 @@ Angular 建立在 TypeScript 之上，因此为了使用 Angular，理解它很�
 与 JavaScript 一样，TypeScript 使用数据类型来处理数据，但语法上有一些区别。TypeScript 还增加了一个额外的枚举类型。以下列表概述了 TypeScript 中的类型和变量及其语法：
 
 - **字符串（String）：** 此数据类型将字符数据存储为字符串。字符数据通过单引号或双引号指定。引号内包含的所有数据都将分配给字符串变量。考虑以下示例：
+
   `var myString: string = 'Some Text';`
+
   `var anotherString: string = "Some More Text";`
+
 - **数字（Number）：** 此数据类型将数据存储为数值。数字在计数、计算和比较中很有用。以下是一些示例：
+
   `var myInteger: number = 1;`
+
   `var cost: number = 1.33;`
+
 - **布尔值（Boolean）：** 此数据类型存储一个位，其值为 true 或 false。布尔值通常用作标志。例如，你可能在代码开始时将变量设置为 false，然后在完成时检查它，以查看代码执行是否到达了某个特定位置。以下示例定义了 true 和 false 变量：
+
   `var yes: boolean = true;`
+
   `var no: boolean = false;`
+
 - **数组（Array）：** 索引数组是一系列独立的数据项，全部存储在单个变量名下。可以通过基于零的索引访问数组中的项目，使用 array[index]。以下是创建简单数组然后访问第一个元素（位于索引 0）的两个示例：
 
 ```
@@ -1211,15 +1294,13 @@ newNum = function(num1: number, num2: number){
 var z = newNum(x, y);
 ```
 
-接口还允许你定义你希望数组如何呈现。你为数组提供索引类型以定义对象索引允许的类型。然后为索引提供返回类型。以下是一个示例：
+接口还允许你定义你希望数组如何呈现。你为数组提供索引类型以定义对象索引允的类型。然后为索引提供返回类型。以下是一个示例：
 
 ```
 interface Stringy {
     [index: number]: string;
 }
 ```
-
-
 
 # 第2章 跃入TypeScript
 
@@ -1228,7 +1309,7 @@ var coolArray: String[];
 coolArray = ["Apples", "Bananas"];
 ```
 
-最后，接口允许你定义类的结构。与函数接口类似，它允许你在每个类中设置所需的变量和方法。需要注意的是，这只描述了类的公共部分，而不是私有部分。（我们将在下一节中更详细地讨论类。）在这个例子中，接口有一个名为`name`的属性和一个名为`feed`的方法：
+最后，接口允许你定义类的结构。与函数接口类似，它允�你在每个类中设置所需的变量和方法。需要注意的是，这只描述了类的公共部分，而不是私有部分。（我们将在下一节中更详细地讨论类。）在这个例子中，接口有一个名为`name`的属性和一个名为`feed`的方法：
 
 ```typescript
 interface PersonInterface {
@@ -1397,7 +1478,9 @@ export class App {}
 指令是带有元数据的JavaScript类，用于定义结构和行为。指令为Angular应用程序提供了大部分的UI功能。指令主要有三种类型：
 
 - **组件：** 组件指令是一种将HTML模板与JavaScript功能相结合的指令，用于创建一个独立的UI元素，可以作为自定义HTML元素添加到Angular应用程序中。组件可能是你在Angular中使用最多的指令。
-- **结构指令：** 当你需要操作DOM时，可以使用结构指令。结构指令允许你从视图中创建和销毁元素及组件。
+
+- **结构指令：** 当你需要操作DOM时，可以使用结构指令。结构指令允许你从视视图中创建和销毁元素及组件。
+
 - **属性指令：** 属性指令通过使用HTML属性来改变HTML元素的外观和行为。
 
 ### 数据绑定
@@ -1412,8 +1495,6 @@ Angular最好的功能之一是内置的*数据绑定*——将组件中的数�
 
 依赖注入的一个常见用途是使用服务。例如，如果你正在定义一个需要通过HTTP请求访问Web服务器的组件，你可以注入
 
-
-
 ### 服务
 
 服务是 Angular 环境中的主要工作单元。服务是为 Web 应用提供功能的单例类。例如，Web 应用程序的一项常见任务是向 Web 服务器执行 AJAX 请求。Angular 提供了一个 HTTP 服务，其中包含了访问 Web 服务器的所有功能。
@@ -1427,27 +1508,39 @@ Angular最好的功能之一是内置的*数据绑定*——将组件中的数�
 以下是实现 Angular 时需要遵循的一些规则：
 
 -   视图作为应用程序的官方表示结构。将任何表示逻辑作为指令放在视图的 HTML 模板中。
--   如果你需要执行任何 DOM 操作，请在内置或自定义指令的 JavaScript 代码中进行——不要在其他任何地方。
--   将任何可重用的任务实现为服务，并通过依赖注入将它们添加到你的模块中。
--   确保元数据反映模型的当前状态，并且是视图消费数据的唯一来源。
--   在模块命名空间内定义控制器，而不是全局定义，以确保你的应用程序可以轻松打包并避免压倒全局命名空间。
+
+
+
+- 如果你需要执行任何 DOM 操作，请在内置或自定义指令的 JavaScript 代码中进行——不要在其他任何地方。
+
+- 将任何可重用任务时，请将其实现为服务，并通过依赖注入将其添加到模块中。
+
+- 确保元数据反映模型的当前状态，并且是视图消费数据的唯一来源。
+
+- 在模块命名空间内定义控制器，而不是全局定义，以确保应用程序可以轻松打包并避免压倒全局命名空间。
 
 ## 将 Angular 添加到你的环境中
 
 要开始使用 Angular，你需要先设置一些东西来使其准备好使用。你需要以下内容：
 
--   用于构建 Angular 应用程序的 Angular 库
--   用于向浏览器提供文件的 Web 服务器
--   用于将你的 TypeScript 代码转换回 JavaScript 的转译器
--   一个监视器，以便转译器知道文件何时发生更改
--   用于编写代码的编辑器
+- 用于构建 Angular 应用程序的 Angular 库
+
+- 用于向浏览器提供文件的 Web 服务器
+
+- 用于将 TypeScript 代码转换回 JavaScript 的转译器
+
+- 一个监视器，以便转译器知道文件何时发生更改
+
+- 用于编写代码的编辑器
 
 > **注意**
+
 > 我们建议你使用 Visual Studio Code (https://code.visualstudio.com/)；它内置了良好的 TypeScript 和 Angular 支持，并且是一个轻量级的编辑器，拥有许多可用的扩展。
 
 幸运的是，Angular 团队已经为你完成了大部分工作。你需要做的就是访问 Angular QuickStart 网站，它会引导你完成这个过程。以下 Angular QuickStart 网站将带你了解 Angular 的基础知识：https://angular.io/docs/ts/latest/quickstart.html。该网站解释了 Angular 命令行界面 (CLI) 的基础知识：https://angular.io/docs/ts/latest/cli-quickstart.html。
 
 > **注意**
+
 > 我们建议你在学习 Angular 时使用 CLI。CLI 会为你生成所有引导和配置文件。它还包括一个用于测试代码的轻量级服务器。
 
 ### 使用 Angular CLI
@@ -1485,9 +1578,11 @@ Angular 提供了一个强大的 CLI，它使构建 Angular 应用程序的过�
 对于这个示例，预计你已经开始使用 Angular QuickStart 指南并了解了 CLI 的基础知识。首先要做的是创建一个可以放置项目的目录。
 
 设置好目录后，下一步是生成你的第一个 Angular 应用程序。运行以下命令为本示例创建应用程序：
+
 ng new first
 
 接下来，运行以下命令启动一个服务器来渲染应用程序：
+
 ng serve
 
 以下部分描述了实现 Angular 应用程序的重要步骤以及每一步涉及的代码。这些步骤中的每一步都将在后面的章节中进行更详细的描述，因此不要在此处陷入困境。此时重要的是你要理解实现 HTML、组件、类和引导程序的过程，以及它们之间通常如何交互。
@@ -1525,13 +1620,20 @@ ng serve
 
 既然你已经创建了组件，你需要一种方法来告知应用程序的其他部分。你可以通过从 Angular 导入 NgModule 来实现。NgModule 是一个 Angular 装饰器，它允许你将特定模块的所有导入、声明和引导文件放在一个位置。这使得引导大型应用程序中的所有文件变得非常容易。NgModule 有几个元数据选项，允许导入、导出和引导不同的内容：
 
--   **providers:** 这是一个可注入对象的数组，可在当前模块的注入器中使用。
+- **providers:** 这是一个可注入对象的数组，可在当前模块的注入器中使用。
+
 -   **declarations:** 这是一个属于当前模块的指令、管道和/或组件的数组。
+
 -   **imports:** 这是一个指令、管道和/或组件的数组，可在当前模块内的其他模板中使用。
+
 -   **exports:** 这是一个指令、管道和/或模块的数组，可在导入当前模块的任何组件中使用。
+
 -   **entryComponents:** 这是一个组件数组，当定义当前模块时，它们将被编译并创建组件工厂。
+
 -   **bootstrap:** 这是一个组件数组，将在当前模块被引导时启动。
+
 -   **schemas:** 这是一个元素和属性的数组，它们不是指令或组件。
+
 -   **id:** 这是一个简单的字符串，作为唯一标识符来标识此模块。
 
 通常，最简单的方法是通过实践来学习，所以让我们开始使用 NgModule。导航到你应用程序文件夹中名为 `app.module.ts` 的文件。它看起来像这样：
@@ -1563,7 +1665,7 @@ ng serve
 export class AppModule { }
 ```
 
-首先，你导入 `NgModule`、`BrowserModule` 以及你的应用拥有的任何自定义组件、指令、服务等。其次，你配置 `@NgModule` 对象以将所有内容引导在一起。注意，当导入组件时，`bootstrap` 属性包含该组件的导出类名。最后，你导出名为 `AppModule` 的类。
+首先，你导入 `NgModule`、`BrowserModule` 以及你的应用拥有的任何自定组件、指令、服务等。其次，你配置 `@NgModule` 对象以将所有内容引导在一起。注意，当导入组件时，`bootstrap` 属性包含该组件的导出类名。最后，你导出名为 `AppModule` 的类。
 
 ## 创建Angular引导程序
 
@@ -1602,7 +1704,9 @@ platformBrowserDynamic().bootstrapModule(AppModule);
 清单3.2展示了引导组件的Angular模块。第1-4行显示了Angular模块 `BrowserModule`、`NgModule`、`FormsModule` 和 `HttpModule` 分别被导入。第6行显示了Angular组件 `Chap3Component` 被导入。第9-11行显示了组件被声明。第12-16行显示了imports数组，它使导入的模块对应用程序可用。第18行引导了应用程序的主要组件。
 
 > **注意**
+
 >
+
 > 此应用程序运行不需要 `FormsModule` 或 `HttpModule`。然而，包含它们是为了帮助展示将额外模块导入到应用程序中的语法。
 
 清单3.3展示了具有选择器 `message` 的Angular组件。此组件在浏览器中显示消息 `Hello World!`。
@@ -1674,7 +1778,9 @@ export class Chap3Component{
 清单3.4和3.5展示了从清单3.2和3.3中的TypeScript文件编译生成的JavaScript代码。
 
 > **注意**
+
 >
+
 > 这是本书中唯一一次向你展示编译后的JavaScript文件，因为这些文件在应用程序编译和运行时会自动生成——并且为了帮助保持本书的可读性。
 
 ### 清单3.4 app.module.js：引导应用程序的Angular模块的JavaScript版本
@@ -1758,8 +1864,6 @@ Angular框架为创建网站和Web应用程序提供了一种结构化的方法�
 
 本章探讨了Angular应用程序中的不同组件以及它们如何相互交互。在本章结束时，看到了一个关于如何实现基本Angular应用程序的详细示例，包括组件、模块和引导程序。
 
-
-
 ## Angular 组件
 
 Angular 组件是构建 Angular 应用程序的基石。Angular 组件允许你为应用程序构建独立的 UI 元素。组件使你能够通过 TypeScript 代码和 HTML 模板来控制应用程序的外观和功能。本章将讨论如何使用 TypeScript 类来创建 Angular 组件，该类定义了 UI 元素的外观和行为。
@@ -1783,11 +1887,16 @@ export class AppComponent{
 
 要创建组件，你需要从 Angular 导入 Component 并将其应用于一个 TypeScript 类，然后你可以使用该类来控制组件的外观和功能。在 @Component 装饰器内部，有几个你需要理解的组件配置选项。以下列表包含一些最重要的可用选项：
 
-- **selector**：此选项允许你定义用于通过 HTML 将组件添加到应用程序的 HTML 标签名称。
+- **selector**：此选项允你定义用于通过 HTML 将组件添加到应用程序的 HTML 标签名称。
+
 - **template**：此选项允许你添加内联 HTML 来定义组件的外观。适用于需要添加的代码不多的情况，并且在你不想创建额外文件时很有帮助。
+
 - **templateUrl**：此选项允许你导入外部模板文件，而不是使用内联 HTML。这有助于将大量 HTML 代码从组件中分离出来，以提高可维护性。
+
 - **styles**：此选项允许你为组件添加内联 CSS。当只需要进行细微的样式更改时使用它。
+
 - **stylesUrls**：此选项允许你导入一个或多个外部 CSS 样式表。导入外部 CSS 文件时，应使用此选项而非 styles。
+
 - **viewProviders**：这是一个依赖注入提供程序的数组。它允许你导入和使用提供应用程序功能（如 HTTP 通信）的 Angular 服务。
 
 ### 定义选择器
@@ -1801,9 +1910,11 @@ export class AppComponent{
 ```
 
 然后你可以使用以下语法将选择器添加到 HTML 文件中：
+
 `<angular-rules></angular-rules>`
 
 > **注意**
+
 > 需要注意的是，在定义选择器名称时，不能包含任何空格。例如，你不能将选择器命名为 `angular rules`，但可以命名为 `angular-rules` 或 `angular_rules`。
 
 ### 构建模板
@@ -1829,6 +1940,7 @@ export class AppComponent{
 ```
 
 > **注意**
+
 > 对于 template 和 styles 配置选项，你需要使用反引号（`` ` ``），通常与波浪符号（~）在同一个键上。
 
 你用于模板的相同原则也适用于 CSS。你使用关键字 `styles` 来告诉组件关于内联样式的信息。唯一的主要区别是 styles 接受一个字符串对象，而不仅仅是一个字符串。以下示例展示了一些内联样式：
@@ -1847,6 +1959,7 @@ export class AppComponent{
 ```
 
 > **注意**
+
 > 对于多行样式表，你需要使用反引号键。
 
 ### 在 Angular 应用程序中使用内联 CSS 和 HTML
@@ -1933,7 +2046,7 @@ export class AppComponent {
 
 ### 使用外部模板
 
-将模板和样式表集成到 Angular 组件中的另一种方法是通过单独的文件。使用这种方法很方便，因为它有助于你分离文件的功能。它也使组件更易于阅读。在 @Component 装饰器下，你放置关键字 `templateUrl`，后跟从应用程序根目录到模板 HTML 文件的路径。以下是一个示例。
+将模板和样式表集成到 Angular 组件中的另一种方法是通过单独的文件。使用这种方法很方便，因为它有助于你分离文件的功能。它也使组件更易于阅读。在 @Component 装饰器下，你放置关键字 `templateUrl`，后跟从应用程序根目到模板 HTML 文件的路径。以下是一个示例。
 
 ```
 @Component({
@@ -1953,9 +2066,8 @@ export class AppComponent {
 ```
 
 > **注意**
+
 > `styleUrls` 配置选项接受一个逗号分隔的字符串数组。
-
-
 
 在本章前面的“构建模板”部分，你已经学习了如何将外部HTML和CSS文件整合到Angular组件中。本节的示例将基于这些知识，带你浏览一个包含外部HTML和CSS文件的Angular应用程序。
 
@@ -2176,8 +2288,6 @@ import {Component, Input} from '@angular/core';
 
 Angular组件是Angular应用程序的主要构建块。本章展示了如何从装饰器到类构建一个组件。它展示了包含模板和样式表的不同方式，还展示了如何使用依赖注入在彼此之间整合外部指令或组件。
 
-
-
 ## 5 表达式
 
 Angular 的一个强大功能是能够在 HTML 模板中添加类似 JavaScript 的表达式。Angular 会计算表达式，然后可以动态地将结果添加到网页中。表达式与组件相关联，你可以使用利用组件中值的表达式，并且其值可以随着模型的变化而改变。
@@ -2204,7 +2314,7 @@ Angular 编译器会将表达式编译为 HTML 元素，以便显示表达式的
 OneTwo
 ```
 
-表达式与数据模型绑定，这带来了两大好处。首先，你可以在表达式中使用组件中定义的属性名称和函数。其次，因为表达式与组件绑定，所以当组件中的数据发生变化时，表达式也会随之变化。例如，假设一个组件包含以下值：
+表达式与数据模绑定，这带来了两大好处。首先，你可以在表达式中使用组件中定义的属性名称和函数。其次，因为表达式与组件绑定，所以当组件中的数据发生变化时，表达式也会随之变化。例如，假设一个组件包含以下值：
 
 ```
 name: string='Brad';
@@ -2222,12 +2332,19 @@ Adjusted: {{score+5}}
 Angular 表达式在多个方面与 TypeScript/JavaScript 表达式相似，但存在以下不同之处：
 
 -   **属性求值：** 属性名称根据组件模型进行求值，而不是根据全局 JavaScript 命名空间。
+
 -   **更宽松：** 表达式在遇到未定义或空值的变量类型时不会抛出异常；相反，它们将其视为没有值。
+
 -   **没有流程控制：** 表达式不允许以下操作：
+
     - 赋值（例如 =, +=, -=）
+
     - new 操作符
+
     - 条件语句
+
     - 循环
+
     - 递增和递减运算符 (++ 和 --)
 
 此外，你不能在表达式内部抛出错误。
@@ -2254,7 +2371,7 @@ Angular 将用于定义指令值的字符串视为表达式进行计算。这意
 
 清单 5.1 展示了一个 Angular 组件。该组件有一个模板，其中包含用双花括号（{{}}）包裹的几种类型的表达式。有些表达式只是数字或字符串，有些包含用于组合字符串和/或数字的 + 运算符，还有一个应用了 === 运算符来比较两个数字。
 
-图 5.1 展示了渲染后的网页。请注意，数字和字符串是直接渲染到最终视图的。将字符串和数字相加使你能够构建渲染到视图的文本字符串。另外请注意，使用比较运算符会将单词 true 或 false 渲染到视图中。
+图 5.1 展示了渲染后的网页。请注意，数字和字符串是直接渲渲到最终视图的。将字符串和数字相加使你能够构建渲染到视图的文本字符串。另外请注意，使用比较运算符会将单词 true 或 false 渲染到视图中。
 
 ```
 清单 5.1  basicExpressions.component.ts: 在 Angular 模板中使用基本字符串和数字进行简单数学运算
@@ -2289,7 +2406,7 @@ Angular 将用于定义指令值的字符串视为表达式进行计算。这意
 
 现在您已经看到了一些基本的 Angular 表达式，让我们来看看如何在 Angular 表达式中与组件类交互。在前面的示例中，所有表达式的输入都来自显式的字符串或数字。本节将展示 Angular 表达式通过与模型交互而带来的真正威力。
 
-清单 5.2 展示了一个 Angular 组件文件，该文件应用了 Angular 表达式，这些表达式使用组件类中的值将文本渲染到屏幕，并作为函数的参数。请注意，组件类中的变量名可以直接在表达式中使用。例如，第 9 行的表达式基于 `speed` 和 `vehicle` 变量的值创建了一个字符串。
+清单 5.2 展示了一个 Angular 组件文件，该文件应用了 Angular 表达式，这些表达使用组件类中的值将文本渲染到屏幕，并作为函数的参数。请注意，组件类中的变量名可以直接在表达式中使用。例如，第 9 行的表达式基于 `speed` 和 `vehicle` 变量的值创建了一个字符串。
 
 图 5.2 展示了基于表达式渲染后的网页。请注意，当点击页面上的链接时，产生的函数调用会调整组件类变量，从而改变前面讨论的表达式的渲染方式。
 
@@ -2311,32 +2428,32 @@ Angular 将用于定义指令值的字符串视为表达式进行计算。这意
 13         Click to change to Fast {{newVehicle}}</a><hr>
 14     <a (click)="setValues(newSpeed, 'Rocket')">
 15         Click to change to {{newSpeed}} Rocket</a><hr>
-16     <a (click)="vehicle='Car'">
-17         Click to change the vehicle to a Car</a><hr>
-18     <a (click)="vehicle='Enhanced ' + vehicle">
-19         Click to Enhance Vehicle</a><hr>
-20     `,
-21   styles:[`
-22       a{color: blue; text-decoration: underline; cursor: pointer}
-23   `]
-24 })
-25 export class AppComponent {
-26   speed = 'Slow';
-27   vehicle = 'Train';
-28   newSpeed = 'Hypersonic';
-29   newVehicle = 'Plane';
-30   upper = function(str: any){
-31     str = str.toUpperCase();
-32     return str;
-33   }
-34   lower = function(str: any){
-35     return str.toLowerCase();
-36   }
-37   setValues = function(speed: any, vehicle: any){
-38     this.speed = speed;
-39     this.vehicle = vehicle;
-40   }
-41 }
+15     <a (click)="vehicle='Car'">
+16         Click to change the vehicle to a Car</a><hr>
+17     <a (click)="vehicle='Enhanced ' + vehicle">
+18         Click to Enhance Vehicle</a><hr>
+19   `,
+20   styles:[`
+21       a{color: blue; text-decoration: underline; cursor: pointer}
+22   `]
+23 })
+24 export class AppComponent {
+25   speed = 'Slow';
+26   vehicle = 'Train';
+27   newSpeed = 'Hypersonic';
+28   newVehicle = 'Plane';
+29   upper = function(str: any){
+30     str = str.toUpperCase();
+31     return str;
+32   }
+33   lower = function(str: any){
+34     return str.toLowerCase();
+35   }
+36   setValues = function(speed: any, vehicle: any){
+37     this.speed = speed;
+38     this.vehicle = vehicle;
+39   }
+40 }
 ```
 
 ## 在 Angular 表达式中使用 TypeScript
@@ -2346,8 +2463,6 @@ Angular 将用于定义指令值的字符串视为表达式进行计算。这意
 清单 5.3 实现了一个 Angular 组件，该组件使用 Angular 表达式，利用 `push()` 和 `shift()` 来显示数组、显示数组长度并操作数组元素。请注意，将 Math 添加到组件类后，你可以在第 12 行和第 21 行的表达式中直接使用 TypeScript 的 Math 操作。
 
 图 5.3 展示了渲染后的 Angular 网页。请注意，随着链接被点击，数组被调整，表达式被重新计算。
-
-
 
 第5章 表达式
 
@@ -2421,7 +2536,7 @@ Angular 提供了多种管道类型，使你能够轻松地在组件模板中格
 表 5.1 修改 Angular 组件模板中表达式的管道
 
 | 过滤器 | 描述 |
-| :--- | :--- |
+|---|---|
 | `currency[:currencyCode[:symbolDisplay[:digits]]]` | 将数字格式化为货币，基于提供的 `currencyCode` 值。如果未提供 `currencyCode` 值，则使用区域设置的默认代码。以下是一个示例：<br><br>`{{123.46 \| currency:"USD" }}` |
 | `json` | 将 TypeScript 对象格式化为 JSON 字符串。以下是一个示例：<br><br>`{{ {'name':'Brad'} \| json }}` |
 | `slice:start:end` | 通过索引量限制表达式表示的数据。如果表达式是字符串，则限制字符数量。如果表达式的结果是数组，则限制元素数量。考虑以下示例：<br><br>`{{ "Fuzzy Wuzzy" \| slice:1:9 }}`<br>`{{ ['a','b','c','d'] \| slice:0:2 }}` |
@@ -2496,8 +2611,6 @@ Angular 使你能够创建自己的自定义管道，然后在表达式和服务
 
 管道类的工作方式与 Component 类非常相似，因为它是管道逻辑的所在。但是，逻辑需要位于一个 Transform 方法内，该方法告诉管道如何转换管道符号（|）左侧的任何内容。查看以下示例：
 
-
-
 ## 创建自定义管道
 
 本节将展示如何构建一个自定义管道，用于从字符串中过滤掉特定的单词。本示例的目的是向您展示如何创建和应用能够转换数据的自定义管道。
@@ -2559,11 +2672,17 @@ Angular 最佳功能之一是内置的数据绑定。数据绑定是将组件中
 在 Angular 中，有多种方式可以使用数据绑定使应用程序呈现不同的外观和行为。以下是本章将讨论的 Angular 2 中可用的数据绑定类型列表：
 
 - **插值：** 您可以使用双大括号 (`{{}}`) 直接从 Component 类中获取值。
+
 - **属性绑定：** 您可以使用此类型的绑定来设置 HTML 元素的属性。
+
 - **事件绑定：** 您可以使用此类型的绑定来处理用户输入。
+
 - **属性绑定：** 此类型的绑定允许设置 HTML 元素的属性。
+
 - **类绑定：** 您可以使用此类型的绑定为元素设置 CSS 类名。
+
 - **样式绑定：** 您可以使用此类型的绑定为元素创建内联 CSS 样式。
+
 - **使用 ngModel 的双向绑定：** 您可以将此类型的绑定与数据输入表单一起使用，以接收和显示数据。
 
 ### 插值
@@ -2632,6 +2751,7 @@ Angular 最佳功能之一是内置的数据绑定。数据绑定是将组件中
 ```
 
 > **注意**
+
 > 在许多情况下，可以使用插值来达到与属性绑定相同的效果。
 
 现在让我们来看一个属性绑定的示例。清单 6.2 展示了一个 Angular 组件。该组件有一个包含属性绑定类型的模板。它还将属性绑定与插值进行了比较。
@@ -2671,7 +2791,7 @@ Angular 最佳功能之一是内置的数据绑定。数据绑定是将组件中
 
 ![](img/6cec51936e44f3a6d2c21b1752185726_94_0.png)
 
-图 6.2 使用属性绑定来定义 imageSrc URL、将按钮设置为禁用模式以及分配类名
+图 6.2 使用属性绑来定义 imageSrc URL、将按钮设置为禁用模式以及分配类名
 
 ### 属性绑定
 
@@ -2682,6 +2802,7 @@ Angular 最佳功能之一是内置的数据绑定。数据绑定是将组件中
 ```
 
 > **注意**
+
 > 由于属性绑定和属性绑定的功能几乎相同，本书不提供属性绑定的示例。
 
 ### 类绑定
@@ -2694,8 +2815,6 @@ Angular 最佳功能之一是内置的数据绑定。数据绑定是将组件中
 ```
 
 现在让我们来看一个类绑定的示例。清单 6.3 展示了一个具有模板的 Angular 组件。该模板包含类绑定类型，展示了如何使用两种不同的方法应用类名。
-
-
 
 ## 清单 6.3 class.component.ts：带逻辑的属性绑定与类名的应用
 
@@ -2732,9 +2851,12 @@ Angular 最佳功能之一是内置的数据绑定。数据绑定是将组件中
 
 ## 样式绑定
 
+
+
 你使用样式绑定为 HTML 元素分配内联样式。样式绑定的工作原理是在方括号内定义 CSS 样式属性，赋值表达式放在引号中。其语法与类绑定几乎相同，只是将前缀从 *class* 改为 *style*：
 
 <p [style.styleProperty] = "assignment"></p>
+
 <div [style.backgroundColor] = "'green'">
 
 现在，让我们看一个样式绑定的例子。清单 6.4 展示了一个包含模板的 Angular 组件。该模板包含多种类型的样式绑定，演示了如何为应用程序应用自定义内联样式。
@@ -2936,10 +3058,10 @@ Angular 编译器遍历模板 DOM 并编译所有指令。然后，它通过将�
 你需要在 HTML 元素中实现的许多 Angular 功能都是通过内置指令提供的。这些指令为 Angular 应用程序提供了广泛的支持。以下部分描述了大多数 Angular 指令，它们分为三类：
 
 - **组件：** 带有模板的指令
+
 - **结构型：** 操作 DOM 中元素的指令
+
 - **属性型：** 操作 DOM 元素外观和行为的指令。
-
-
 
 以下章节将描述这三种类型的指令。您无需立即理解所有指令。后续章节提供了参考表格。此外，后续章节和全书提供了使用这些指令的示例代码。
 
@@ -2954,11 +3076,17 @@ Angular 组件是一种利用模板的结构型指令。组件创建一个选择
 #### 表 7.1 结构型指令
 
 | 指令 | 描述 |
+
 | --- | --- |
+
 | ngFor | 此指令用于为可迭代对象中的每个项目创建一个模板副本。示例如下： <div *ngFor="let person of people"></div> |
+
 | ngIf | 当此指令出现在元素中时，如果返回的值为 true，则将该元素添加到 DOM 中。如果返回的值为 false，则将该元素从 DOM 中移除，从而阻止该元素使用资源。示例如下： <div *ngIf="person"></div> |
+
 | ngSwitch | 此指令根据传入的值显示模板。与 ngIf 类似，如果值与 case 不匹配，则不会创建元素。示例如下： <div [ngSwitch]="timeOfDay"> <span [ngSwitchCase]="'morning'">Morning</span> <span [ngSwitchCase]="'afternoon'">Afternoon</span> <span [ngSwitchDefault]="'daytime'">Evening</span> ngSwitch 指令依赖另外两个指令才能工作：ngSwitchCase 和 ngSwitchDefault。这些指令将在下文解释。 |
+
 | ngSwitchCase | 此指令将其存储的值与传递给 ngSwitch 的值进行评估，以确定应是否创建其关联的 HTML 模板。 |
+
 | ngSwitchDefault | 如果所有上述 ngSwitchCase 表达式的评估结果均为 false，则此指令将创建 HTML 模板。这确保了无论如何都会生成一些 HTML。 |
 
 表 7.1 中的指令在代码的不同部分以多种不同方式使用。它们允许根据传递给它们的数据对 DOM 进行动态操作。结构型指令通过使用表达式或值来动态操作 DOM。两种最常见的结构型指令是 `ngIf` 和 `ngSwitch`。
@@ -2971,6 +3099,7 @@ Angular 组件是一种利用模板的结构型指令。组件创建一个选择
 ```
 
 > **注意**
+
 `ngFor` 是另一个使用 `*` 符号作为前缀让 Angular 知道其存在的指令示例。
 
 `ngSwitch` 使用 `ngSwitchCase`，当值或表达式返回 `true` 时显示一段 HTML。`ngSwitch` 被 `[]` 包围，作为单向数据绑定的一种形式，将数据传递给每个 `ngSwitchCase` 进行评估。以下是 `ngSwitch` 的语法示例：
@@ -3062,9 +3191,13 @@ Angular 属性型指令修改 HTML 元素的外观和行为。它们直接注入
 #### 表 7.2 属性型指令
 
 | 指令 | 描述 |
+
 |---|---|
+
 | ngModel | 此指令监视变量的变化，然后根据这些变化更新显示值。考虑这些示例： <code><input [(ngModel)]="text"><br> <h1>{{text}}</h1></code> |
+
 | ngForm | 此指令创建一个表单组，并允许其跟踪该表单组中的值和验证。通过使用 ngSubmit，您可以将表单数据作为对象传递给提交事件。示例如下： <code><form #formName="ngForm" (ngSubmit)="onSubmit(formName)"></form></code> |
+
 | ngStyle | 此指令更新 HTML 元素的样式。 |
 
 表 7.2 中的指令在代码的不同部分以多种不同方式使用。它们允许对应用程序的行为进行操作。以下示例展示了如何使用一些内置的属性型指令来构建一个将数据提交到模拟数据库的表单。
@@ -3099,26 +3232,21 @@ Angular 属性型指令修改 HTML 元素的外观和行为。它们直接注入
 17   }
 18   addClass(event: any){
 19     this.selectedClass = [];
+20
+21     var values = event.target.options;
+22     var opt: any;
+23
+24     for (var i=0, iLen = values.length; i<iLen; i++){
+25         opt = values[i];
+26
+27         if (opt.selected){
+28             this.selectedClass.push(opt.text);
+29         }
+30     }
+31 }
 ```
 
-
-
-# 第7章 内置指令
-
-```
-var values = event.target.options;
-var opt: any;
-
-for (var i=0, iLen = values.length; i<iLen; i++){
-    opt = values[i];
-
-    if (opt.selected){
-        this.selectedClass.push(opt.text);
-    }
-}
-```
-
-#### 清单 7.3 attribute.component.html：属性组件的 Angular 模板
+#### 清单 7.3 attribute.component.html：属性组件的 Angular �板
 
 ```
 <form>
@@ -3153,8 +3281,6 @@ for (var i=0, iLen = values.length; i<iLen; i++){
 </span><br>
 ```
 
-94 第7章 内置指令
-
 #### 清单 7.4 attribute.component.css：为应用程序添加样式的 CSS 文件
 
 ```
@@ -3179,7 +3305,7 @@ Angular 提供了许多内置指令，这些指令提供了操作应用程序外
 
 ## 8 自定义指令
 
-与 Angular 的许多其他特性一样，你可以通过创建自己的自定义指令来扩展功能。自定义指令允许你通过自己实现元素的行为来扩展 HTML 的功能。如果你有需要操作 DOM 的代码，应该将其放在自定义指令中实现。
+与 Angular 的许多其他特性一样，你可以通过创建自己的自定义指令来扩展功能。自定指令允许你通过自己实现元素的行为来扩展 HTML 的功能。如果你有需要操作 DOM 的代码，应该将其放在自定义指令中实现。
 
 你通过调用 `@directive` 类来实现自定义指令，这与定义组件的方式非常相似。`@directive` 类的元数据应包括在 HTML 中要使用的指令的选择器。`Directive` 导出类是指令逻辑的存放之处。例如，以下是指令的基本定义：
 
@@ -3195,7 +3321,7 @@ export class myDirective { }
 
 你可以定义无限多种类型的自定义指令，这使得 Angular 具有极强的可扩展性。自定义指令是 Angular 中最复杂的部分之一，解释起来也最具挑战性。为了让你入门，最好的方式是展示一个自定义指令的示例，让你感受它们是如何实现以及如何相互交互的。
 
-本节展示了如何实现一个自定义属性指令。本例中创建的 zoom 指令旨在为其所应用的任何图像添加自定义功能。应用此指令后，你可以使用鼠标滚轮在图像上滚动，使元素的大小增大或缩小。
+本节展示了如何实一个自定义属性指令。本例中创建的 zoom 指令旨在为其所应用的任何图像添加自定义功能。应用此指令后，你可以使用鼠标滚轮在图像上滚动，使元素的大小增大或缩小。
 
 清单 8.1 展示了 zoom 组件，它显示了一系列图像。这些图像应用了 zoom 指令，允许鼠标滚轮事件来增加或减少每张图像的大小。
 
@@ -3336,8 +3462,6 @@ export class ZoomDirective {
 </span>
 ```
 
-
-
 ## 代码清单 8.4 app.component.css：设置图片高度的CSS文件
 
 ```css
@@ -3348,7 +3472,7 @@ img {
 
 ![](img/6cec51936e44f3a6d2c21b1752185726_113_0.png)
 
-## 使用组件创建自定义指令
+## 使用组件创建自定指令
 
 Angular组件也是一种指令。组件与指令的区别在于，组件使用HTML模板来生成视图。但由于组件本质上就是指令，因此它可以应用于HTML元素，并以一些非常酷的方式添加自定义功能。
 
@@ -3506,7 +3630,7 @@ Angular拥有强大的浏览器事件，它通过使用Angular数据绑定来处
 
 ## 使用浏览器事件
 
-在Angular中使用内置事件的工作方式类似于数据绑定。通过将事件名包裹在`()`中，你让Angular知道你正在绑定什么事件。事件后面跟着一条语句，可用于操作数据。以下是内置事件的语法示例：
+在Angular中使用内置事件的工作方式类似于数据绑ning。通过将事件名包裹在`()`中，你让Angular知道你正在绑定什么事件。事件后面跟着一条语句，可用于操作数据。以下是内置事件的语法示例：
 
 ```
 <input type="text" (change)="myEventHandler($event)" />
@@ -3515,12 +3639,19 @@ Angular拥有强大的浏览器事件，它通过使用Angular数据绑定来处
 表9.1列出了一些HTML事件及其对应的Angular语法和简短描述。
 
 | HTML 事件 | Angular 语法 | 描述 |
+
 |---|---|---|
+
 | onclick | (click) | 当HTML元素被点击时触发的事件 |
+
 | onchange | (change) | 当HTML元素的值改变时触发的事件 |
+
 | onfocus | (focus) | 当HTML元素被选中时触发的事件 |
+
 | onsubmit | (submit) | 当表单提交时触发的事件 |
+
 | onkeyup, onkeydown, onkeypress | (keyup), (keydown), (keypress) | 当键盘按键被按下时断续触发的事件 |
+
 | onmouseover | (mouseover) | 当光标移动到HTML元素上时触发的事件 |
 
 其中一些事件你应该很熟悉，因为它们在前面的章节中已经使用过。请注意，Angular语法使用单向数据绑定，这涉及在每个事件周围使用`()`将事件信息传递给组件。
@@ -3552,13 +3683,11 @@ myFunction(){
 
 代码清单9.1、9.2和9.3展示了如何使用`EventEmitter`、`Output`、`emit`和事件处理程序在组件层次结构中发送和处理事件。
 
-
-
 # 第9章 事件与变化检测
 
 清单9.1展示了一个自定义事件组件，该组件利用子组件的自定义事件将数据传递给父组件中的一个变量。第9至11行实现了一个自定义事件处理程序，它接收一个事件并将其应用于变量`text`。
 
-在清单9.2中，第1行实现了一个名为`myCustomEvent`的自定义事件，该事件将事件传递给组件方法`eventHandler`。`eventHandler`方法接收触发的值，并将其赋给变量`text`，该变量在第3行输出。
+在清单9.2中，第1行实现了一个名为`myCustomEvent`的自定事件，该事件将事件传递给组件方法`eventHandler`。`eventHandler`方法接收触发的值，并将其赋给变量`text`，该变量在第3行输出。
 
 在清单9.3中，第1行从`@angular/core`导入了`Output`和`EventEmitter`，以便在组件内使用。第15行使用`Output`和`EventEmitter`创建了自定义事件`myCustomEvent`。第19行和第24行都触发了该事件，并将变量`message`传递给父组件。
 
@@ -3785,7 +3914,7 @@ private name: Observable<Array<number>>;
 08     data => { console.log(data) },
 09     Error => { errorHandler(Error) },
 10     () => { final() }
-11   });
+11   );
 12   subscribe.unsubscribe();
 13 }
 ```
@@ -3813,6 +3942,7 @@ private name: Observable<Array<number>>;
 图9.3展示了渲染后的网页。
 
 #### 清单9.10 observable.component.ts：用于检测数据变化的可观察对象
+
 ```typescript
 01 import { Component, OnInit } from '@angular/core';
 02 import { Observable } from 'rxjs/observable';
@@ -3854,7 +3984,7 @@ private name: Observable<Array<number>>;
 38     });
 39     this.run.subscribe(
 40       data => { this.combinedTotal += data.yards;
-41     });
+41     );
 42   }
 43   playLoop(observer){
 44     var time = this.getRandom(500, 2000);
@@ -3877,6 +4007,7 @@ private name: Observable<Array<number>>;
 ```
 
 #### 清单9.11 observable.component.html：组件的模板文件
+
 ```html
 01 <div>
 02   球队1码数：<br>
@@ -3887,7 +4018,7 @@ private name: Observable<Array<number>>;
 07   球队2码数：<br>
 08   传球码数：{{teams[1].passing}}<br>
 09   跑球码数：{{teams[1].running}}<br>
-10   总码数：{{teams[1].total}}<hr>
+10   总码数：{{teams[1].total}}<br>
 11   合计总码数：{{combinedTotal}}
 12 </div>
 ```
@@ -3927,10 +4058,15 @@ Angular提供了几个内置服务，这些服务包含在Angular模块中，通
 表10.1 Angular内置的常用服务
 
 | 服务 | 描述 |
+
 |---|---|
+
 | animate | 提供动画钩子，以连接到基于CSS和JavaScript的动画 |
-| http | 提供易于使用的功能，向Web服务器或其他服务发送HTTP请求 |
+
+| http | 提供易于使用的功能，向Web服务器或其他服务发送HTTP请请求 |
+
 | router | 提供视图之间以及视图内各部分之间的导航 |
+
 | forms | 提供一个允许动态和响应式表单的服务，具有简单的表单验证 |
 
 ### 使用http服务发送HTTP GET和PUT请求
@@ -3940,24 +4076,37 @@ http服务使你能够直接从Angular代码与Web服务器交互。http服务�
 有两种使用http服务的方式。最简单的是使用以下与标准HTTP请求对应的内置快捷方法之一：
 
 - delete(url, [options])
+
 - get(url, [options])
+
 - head(url, [options])
+
 - post(url, data, [options])
+
 - put(url, data, [options])
+
 - patch(url, data, [options])
 
-在这些方法中，url参数是Web请求的URL。可选的options参数是一个JavaScript对象，用于指定实现请求时使用的选项。表10.2列出了你可以在options参数中设置的一些属性。
+在这些方法中，url参数是Web请请求的URL。可选的options参数是一个JavaScript对象，用于指定实现请求时使用的选项。表10.2列出了你可以在options参数中设置的一些属性。
 
 表10.2 可在http服务请求的config参数中定义的属性
 
 | 属性 | 描述 |
+
 |---|---|
+
 | method | HTTP方法，例如GET或POST。 |
+
 | url | 被请求资源的URL。 |
+
 | params | 要发送的参数。可以是以下格式的字符串：?key1=value1&key2=value2&... 或者可以是一个对象，这种情况下它会被转换成JSON字符串。 |
+
 | body | 作为请求消息体发送的数据。 |
+
 | headers | 随请求发送的头信息。你可以指定一个对象，其中包含要作为属性发送的头名称。如果对象中的某个属性值为null，则该头信息不会被发送。 |
+
 | withCredentials | 一个布尔值，当为true时，表示XHR对象上的withCredentials标志被设置。 |
+
 | responseType | 期望的响应类型，例如JSON或文本。 |
 
 #### 配置HTTP请求
@@ -3974,8 +4123,11 @@ http({method: 'GET', url:'/myUrl'});
 当你使用http对象调用请求方法时，你会得到一个可观察对象，它允许持续观察发送到/从服务器接收的数据。可观察对象有许多使用RxJS库的运算符，允许转换和使用数据。以下是一些有用的方法：
 
 - map：将函数应用于可观察序列中的每个值。这允许你将可观察流的输出动态转换为自定义数据格式。
+
 - toPromise：将可观察对象转换为Promise对象，该对象可以访问Promise上可用的方法。Promise对象提供了处理异步操作的语法。
+
 - catch：指定一个函数来优雅地处理可观察序列中的错误。
+
 - debounce：指定可观察流发出值的间隔时间。只在间隔时间发出可观察对象的值；中间值不会被发出。
 
 以下是一个GET请求的简单示例，它返回一个可观察对象，并附有添加运算符的语法：
@@ -3988,11 +4140,9 @@ get(): Observable<any>{
 }
 ```
 
-
-
 ### 实现简单的JSON文件并使用http服务访问它
 
-清单10.1至10.5中的代码实现了一个简单的模拟Web服务器（以JSON文件形式）及其访问它的Angular应用程序。图10.1展示了输出结果。该Web服务器包含一个简单的JSON对象，其中包含用户列表。该Web应用程序允许用户查看用户列表。此示例非常基础，以确保代码易于理解；它包含了一个GET请求以及错误处理示例。
+清单10.1至10.5中的代码实现了一个简单的模拟Web服务器（以JSON文件形式）及其访问它的Angular应用程序。图10.1展示了输出结果。该Web服务器包含一个简单的JSON对象，其中包含用户列表。该Web应用程序允用户查看用户列表。此示例非常基础，以确保代码易于理解；它包含了一个GET请求以及错误处理示例。
 
 清单10.1展示了包含JSON对象的JSON文件。此文件可通过HTTP GET请求访问，这允许http服务抓取JSON对象并将其作为可观察对象返回给Angular应用程序。
 
@@ -4031,6 +4181,8 @@ get(): Observable<any>{
 清单10.2实现了Angular组件。http在第3行导入，rxjs在第5行导入。（注意：你可能需要通过npm安装rxjs。）rxjs允许在可观察对象上调用toPromise()方法。注意，constructor()方法在第15行实例化了http。第16行展示了一个HTTP GET请求，其中将dummyDB.JSON文件的路径作为url传入。调用toPromise()方法将http.get()方法返回的可观察响应转换为Promise对象。一旦Promise完成，便调用.then()，它接收Promise对象中的数据并将其应用到users数组上，以便在应用程序中显示。如果发生错误，则调用.catch()，将错误响应对象传递给一个回调函数进行处理。
 
 #### 清单10.2 http.component.ts：实现HTTP服务进行GET请求的组件
+
+
 
 ```
 import { Component } from '@angular/core';
@@ -4130,6 +4282,7 @@ span{
 清单10.6至10.11中的代码实现了一个简单的模拟Web服务器及其访问它的Angular应用程序。图10.2展示了输出结果。该Web服务器返回一个简单的JSON对象，其中包含用户列表。该Web应用程序使用HTTP GET、create和delete请求，允许用户查看、添加和移除用户列表。
 
 **注意**
+
 要创建模拟服务，你需要在控制台运行以下命令：
 
 ```
@@ -4138,7 +4291,7 @@ npm install Angular-in-memory-web-api
 
 此服务仅用于开发目的，不应用于生产应用程序。
 
-清单10.6是返回JSON对象的模拟数据服务。此文件将通过HTTP请求访问，这将允许http服务修改数据库。第1行导入了InMemoryDbService，它允许Angular将其用作一个在会话活动期间可以存储数据的数据库。该数据库在第3行通过createDb()方法创建并变得可用，该方法返回users作为JSON对象。
+清单10.6是返回JSON对象的模拟数据服务。此文件将通过HTTP请请求访问，这将允许http服务修改数据库。第1行导入了InMemoryDbService，它允许Angular将其用作一个在会话活动期间可以存储数据的数据库。该数据库在第3行通过createDb()方法创建并变得可用，该方法返回users作为JSON对象。
 
 #### 清单10.6 data.service.ts：返回名为users的JSON对象的Angular模拟服务
 
@@ -4224,8 +4377,6 @@ export class AppComponent implements OnInit {
     if (!user.userName || !user.email){
 ```
 
-
-
 # 第10章 在Web应用中实现Angular服务
 
 ```
@@ -4239,7 +4390,7 @@ export class AppComponent implements OnInit {
 53 }
 ```
 
-清单10.8实现了Angular服务`UserService`，它负责处理应用程序的所有HTTP请求。第16至21行定义了`deleteUser()`方法，该方法接收一个参数`id`。然后，使用`id`创建一个HTTP删除请求，发送到服务器以删除具有匹配ID的用户。第22至31行定义了`createUser()`方法，该方法接收一个用户对象。一个POST请求将用户作为JSON字符串传递给服务器，然后该用户被添加到服务器。
+清单10.8实现了Angular服务`UserService`，它负责处理应用程序的所有HTTP请求。第16至21行定义了`deleteUser()`方法，该方法接收一个参数`id`。然后，使用`id`创建一个HTTP删除请请求，发送到服务器以删除具有匹配ID的用户。第22至31行定义了`createUser()`方法，该方法接收一个用户对象。一个POST请求将用户作为JSON字符串传递给服务器，然后该用户被添加到服务器。
 
 #### 清单10.8 user.service.ts：一个使用http与服务器收发数据的Angular服务
 
@@ -4336,7 +4487,7 @@ export class AppComponent implements OnInit {
 
 清单10.11实现了一个Angular模块，该模块导入了模拟数据服务。第5行从`angular-in-memory-web-api`导入了`InMemoryWebApiModule`，它有助于将模拟数据库连接到应用程序。第8行从清单10.6导入了`InMemoryDataService`。第18行显示`InMemoryWebApiModule`使用其`forRoot`方法处理`InMemoryDataService`，完全使数据库服务可供HTTP请求使用。
 
-#### 清单10.11 app.module.ts：一个导入了InMemoryWebApiModule以供应用程序使用的Angular模块
+#### 清单10.11 app.module.ts：一个导入了InMemoryWebApiModule以供应用程使用的Angular模块
 
 ```
 01 import { BrowserModule } from '@angular/platform-browser';
@@ -4421,40 +4572,37 @@ export class AppComponent implements OnInit {
 12   styleUrls: ['./app.component.css'],
 13   providers: [UserService]
 14 })
-```
+export class AppComponent implements OnInit {
+  users = [];
+  selectedUser;
 
-
-
-导出类 AppComponent 实现 OnInit 接口 {
-  用户数组 = [];
-  已选用户;
-
-  构造函数(私有 用户服务: 用户服务){ }
+  constructor(private UserService: UserService){ }
 
   ngOnInit(){
-    this.获取用户()
+    this.getUsers()
   }
 
-  获取用户(): void {
-    this.用户服务
-      .获取用户()
-      .then(用户 => this.用户数组 = 用户)
+  getUsers(): void {
+    this.UserService
+        .getUsers()
+        .then(users => this.users = users)
   }
 
-  选择用户(用户){
-    this.已选用户 = 用户;
+  selectUser(user){
+    this.selectedUser = user;
   }
 
-  更新用户(用户){
-    this.已选用户 = null;
-    this.用户服务.更新用户(用户)
-    .then(() => this.获取用户());
+  updateUser(user){
+    this.selectedUser = null;
+    this.UserService.updateUser(user)
+    .then(() => this.getUsers());
   }
 }
+```
 
-清单 10.14 实现了 Angular 服务 `UserService`，该服务处理应用程序的所有 HTTP 请求。第 16 至 24 行定义了 `updateUser` 方法，该方法接受参数 `user`。然后生成一个 URL 来指定将要更新的用户。第 20 行发起一个 HTTP put 请求，传入生成的 URL 和用户对象，该对象被传递给 `json.stringify` 方法。`updateUser` 方法在成功时发送一个响应对象，在失败时则转向错误处理程序。
+清单10.14实现了Angular服务`UserService`，该服务处理应用程序的所有HTTP请求。第16至24行定义了`updateUser`方法，该方法接受参数`user`。然后生成一个URL来指定将要更新的用户。第20行发起一个HTTP put请求，传入生成的URL和用户对象，该对象被传递给`json.stringify`方法。`updateUser`方法在成功时发送一个响应对象，在失败时则转向错误处理程序。
 
-### 清单 10.14 user.service.ts: 获取用户和更新用户的 Angular 服务
+### 清单10.14 user.service.ts: 获取用户和更新用户的Angular服务
 
 ```typescript
 import { Injectable } from '@angular/core';
@@ -4488,11 +4636,11 @@ export class UserService {
 }
 ```
 
-# 第 10 章 在 Web 应用程序中实现 Angular 服务
+# 第10章 在Web应用程序中实现Angular服务
 
-清单 10.15 实现了一个 Angular 模板，该模板使用 `ngFor` 创建一个用户列表，以便在应用程序中显示。这些用户都是可选择的。当选择一个用户时，其信息会显示在一个可编辑的表单字段中，允许编辑和保存该用户。第 20 至 24 行显示了一个按钮，点击该按钮可以调用 `updateUser` 方法，并传入一个包含该用户更新信息的对象。
+清单10.15实现了一个Angular模板，该模板使用`ngFor`创建一个用户列表，以便在应用程序中显示。这些用户都是可选择的。当选择一个用户时，其信息会显示在一个可编辑的表单字段中，允许编辑和保存该用户。第20至24行显示了一个按钮，点击该按钮可以调用`updateUser`方法，并传入一个包含该用户更新信息的对象。
 
-### 清单 10.15 update.component.html: 显示用户列表并可更新的 Angular 模板
+### 清单10.15 update.component.html: 显示用户列表并可更新的Angular模板
 
 ```html
 <h1>
@@ -4523,11 +4671,11 @@ export class UserService {
 </div>
 ```
 
-使用 http 服务实现简单模拟服务器 131
+使用http服务实现简单模拟服务器 131
 
-清单 10.16 是一个 CSS 文件，它为应用程序设置样式，使每个用户易于区分和查看。它提供了一些逻辑来帮助用户知道每个用户都可以点击。
+清单10.16是一个CSS文件，它为应用程序设置样式，使每个用户易于区分和查看。它提供了一些逻辑来帮助用户知道每个用户都可以点击。
 
-### 清单 10.16 update.component.CSS: 为应用程序设置样式的 CSS 文件
+### 清单10.16 update.component.CSS: 为应用程序设置样式的CSS文件
 
 ```css
 span{
@@ -4553,13 +4701,13 @@ span{
 
 ![](img/6cec51936e44f3a6d2c21b1752185726_147_0.png)
 
-## 使用 `router` 服务更改视图
+## 使用`router`服务更改视图
 
-`router` 服务使您能够更改 Web 应用程序上的视图，从而可以在组件之间来回路由。这可以是整个页面视图的更改，也可以是单个页面应用程序中较小片段的更改。`router` 服务位于一个名为 `RouterModule` 的外部 Angular 模块中，需要将其包含在应用程序模块中才能在整个应用程序中使用。
+`router`服务使您能够更改Web应用程序上的视图，从而可以在组件之间来回路由。这可以是整个页面视图的更改，也可以是单个页面应用程序中较小片段的更改。`router`服务位于一个名为`RouterModule`的外部Angular模块中，需要将其包含在应用程序模块中才能在整个应用程序中使用。
 
-要设置一个支持路由的应用程序，您需要从 `@angular/router` 导入 `Routes` 和 `Router` 模块。为了帮助保持应用程序的简单性并易于维护，`router` 应该有自己的模块，可以导入到主应用程序模块中。
+要设置一个支持路由的应用程序，您需要从`@angular/router`导入`Routes`和`Router`模块。为了帮助保持应用程序的简单性并易于维护，`router`应该有自己的模块，可以导入到主应用程序模块中。
 
-为应用程序定义路由就像创建一个对象数组一样简单，每个对象定义一个特定的路由。每个路由的两个必需选项是 `path` 和 `component`。`path` 选项指定到达组件需要遵循的路径树。`component` 选项定义将加载到视图中的组件。以下示例展示了定义 `Routes` 数组的语法：
+为应用程序定义路由就像创建一个对象数组一样简单，每个对象定义一个特定的路由。每个路由的两个必需选项是`path`和`component`。`path`选项指定到达组件需要遵循的路径树。`component`选项定义将加载到视图中的组件。以下示例展示了定义`Routes`数组的语法：
 
 ```typescript
 const routes: Routes = [
@@ -4578,37 +4726,51 @@ const routes: Routes = [
 ]
 ```
 
-可以向 `route` 对象添加更多参数。表 10.3 显示了其中一些参数的列表。
+可以向`route`对象添加更多参数。表10.3显示了其中一些参数的列表。
 
-**表 10.3** 可在路由服务对象的 `config` 参数中定义的属性
+**表10.3** 可在路由服务对象的`config`参数中定义的属性
 
 | 属性 | 描述 |
+
 | :--- | :--- |
+
 | path | 显示此路由在路由树中的位置 |
+
 | component | 定义路由后将加载哪个组件 |
+
 | redirectTo | 重定向到定义的路径而不是当前路由 |
-| outlet | 指定用于渲染路由的 `RouterOutlet` 的名称 |
-| canActivate | 通过当为 `false` 时阻止激活来保护路由 |
-| canActivateChild | 通过当为 `false` 时阻止激活来保护子路由 |
+
+| outlet | 指定用于渲染路由的`RouterOutlet`的名称 |
+
+| canActivate | 通过当为`false`时阻止激活来保护路由 |
+
+| canActivateChild | 通过当为`false`时阻止激活来保护子路由 |
+
 | canDeactivate | 指定路由是否可以停用 |
+
 | canLoad | 允许您保护特定模块不被加载到路由中 |
+
 | data | 允许将数据传递到组件中 |
+
 | resolve | 指定一个解析器，在激活前为路由预取数据 |
+
 | children | 允许嵌套路由数组，其中包含路由对象（每个对象具有与此表中描述的相同选项。） |
+
 | loadChildren | 允许子路由的延迟加载 |
+
 | runGuardsAndResolvers | 定义守卫和解析器何时运行 |
 
-一旦定义了 `routes` 数组，就需要将其实施到路由器中，这样 `router` 服务才知道它的存在以及如何使用它。这是通过在 `RouterModule` 上使用 `forRoot` 方法来完成的。其结果包含在 `routing` 模块的 `imports` 数组中。语法如下所示：
+一旦定义了`routes`数组，就需要将其实施到路由器中，这样`router`服务才知道它的存在以及如何使用它。这是通过在`RouterModule`上使用`forRoot`方法来完成的。其结果包含在`routing`模块的`imports`数组中。语法如下所示：
 
 `imports: [RouterModule.forRoot(routes)]`
 
-第 10 章 在 Web 应用程序中实现 Angular 服务
+第10章 在Web应用程序中实现Angular服务
 
-### 在 Angular 中使用路由
+### 在Angular中使用路由
 
-要在 Angular 中使用路由，需要将路由模块包含在主应用程序模块内，并包含在导入中——这与内置的 Angular 模块相同。一旦它被包含在应用程序模块内，定义的路由就可在整个应用程序中使用。
+要在Angular中使用路由，需要将路由模块包含在主应用程序模块内，并包含在导入中——这与内置的Angular模块相同。一旦它被包含在应用程序模块内，定义的路由就可在整个应用程序中使用。
 
-为了能够在组件中使用 `Router`，需要从 `@angular/router` 导入 `Router` 和 `ActivatedRoute`。一旦导入，就需要通过构造函数来实施。以下代码展示了语法：
+为了能够在组件中使用`Router`，需要从`@angular/router`导入`Router`和`ActivatedRoute`。一旦导入，就需要通过构造函数来实施。以下代码展示了语法：
 
 ```typescript
 Constructor(
@@ -4617,7 +4779,7 @@ Constructor(
 ){}
 ```
 
-有两种方法在路由之间导航。第一种方法是直接从 HTML 中，使用 Angular 指令 `routerLink`，语法如下：
+有两种方法在路由之间导航。第一种方法是直接从HTML中，使用Angular指令`routerLink`，语法如下：
 
 ```html
 <a routerLink="/myRoute">
@@ -4631,7 +4793,7 @@ myFunction(){
 }
 ```
 
-当路由器连接完毕并准备好使用时，最后一步是确保路由在应用程序中显示。您可以通过使用 Angular HTML 标签 `router-outlet` 来完成此操作。需要注意的是，使用 `router-outlet` 的组件将位于路由器之外，除了 `router-outlet` 之外的任何内容都将始终显示，无论当前显示的是哪个路由。您可以通过使用以下语法来实施 `router-outlet`：
+当路由器连接完毕并准备好使用时，最后一步是确保路由在应用程序中显示。您可以通过使用Angular HTML标签`router-outlet`来完成此操作。需要注意的是，使用`router-outlet`的组件将位于路由器之外，除了`router-outlet`之外的任何内容都将始终显示，无论当前显示的是哪个路由。您可以通过使用以下语法来实施`router-outlet`：
 
 ```html
 <router-outlet></router-outlet>
@@ -4639,11 +4801,11 @@ myFunction(){
 
 #### 实现一个简单的路由器
 
-清单 10.17 至 10.23 实现了一个简单的路由器，允许用户在两个组件之间导航。图 10.4 显示了输出。此路由器使用 HTML 中的 Angular `routerLink` 指令进行导航，允许在视图之间切换。
+清单10.17至10.23实现了一个简单的路由器，允用户在两个组件之间导航。图10.4显示了输出。此路由器使用HTML中的Angular`routerLink`指令进行导航，允许在视图之间切换。
 
-清单 10.17 展示了应用程序模块，这是应用程序的主模块。`App.module` 从清单 10.17 导入了路由器模块。在第 6 行，此文件加载了 `AppRoutingModule`，该模块被添加到第 21 行的导入数组中。
+清单10.17展示了应用程序模块，这是应用程序的主模块。`App.module`从清单10.17导入了路由器模块。在第6行，此文件加载了`AppRoutingModule`，该模块被添加到第21行的导入数组中。
 
-##### 清单 10.17 app.module.ts: 导入路由器模块文件的 Angular 模块
+##### 清单10.17 app.module.ts: 导入路由器模块文件的Angular模块
 
 ```typescript
 import { BrowserModule } from '@angular/platform-browser';
@@ -4652,9 +4814,7 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 ```
 
-
-
-##### 10.18 app-routing.module.ts：一个为该应用定义路由的 Angular 模块
+##### 10.18 app-routing.module.ts：一个为该应用定义路由的Angular模块
 
 ```typescript
 01 import { NgModule } from '@angular/core';
@@ -4703,11 +4863,11 @@ import { HttpModule } from '@angular/http';
 26 export class AppModule { }
 ```
 
-清单 10.18 展示了路由器模块，它为应用程序定义路由。路由器模块导入了 `Routes` 和 `RouterModule` 以启用应用内的路由功能。路由器模块还导入了任何将用作路由的组件。第 5 到 14 行定义了路由数组，其中包含了应用程序的路由定义。第 6 到 9 行定义了主路由，由于 `path` 被设置为空字符串，应用程序将默认显示该路由。主路由使用 `HomeComponent` 作为控制视图的组件。第 10 到 13 行定义了第二个路由对象，当路径设置为 `route2` 时会显示该路由。此路由使用 `Route2Component`。
+清单10.18展示了路由器模块，它为应用程序定义路由。路由器模块导入了`Routes`和`RouterModule`以启用应用内的路由功能。路由器模块还导入了任何将用作路由的组件。第5到14行定义了路由数组，其中包含了应用程序的路由定义。第6到9行定义了主路由，由于`path`被设置为空字符串，应用程序将默认显示该路由。主路由使用`HomeComponent`作为控制视图的组件。第10到13行定义了第二个路由对象，当路径设置为`route2`时会显示该路由。此路由使用`Route2Component`。
 
-##### 10.19 app.component.ts：一个定义路由器出口的 Angular 组件
+##### 10.19 app.component.ts：一个定义路由器出口的Angular组件
 
-清单 10.19 展示了应用程序的根组件。该组件有一个简单的模板，输出 `router-outlet` 供路由器显示其路由。
+清单10.19展示了应用程序的根组件。该组件有一个简单的模板，输出`router-outlet`供路由器显示其路由。
 
 ```typescript
 01 import { Component } from '@angular/core';
@@ -4719,9 +4879,9 @@ import { HttpModule } from '@angular/http';
 07 export class AppComponent {}
 ```
 
-##### 10.20 home.component.html：作为默认显示路由的 HTML 文件
+##### 10.20 home.component.html：作为默认显示路由的HTML文件
 
-清单 10.20 展示了 home 组件的模板文件。该文件显示一条消息，告知用户路由正在工作，随后是一个使用 `routerLink` 导航用户到单独视图的链接。
+清单10.20展示了home组件的模板文件。该文件显示一条消息，告知用户路由正在工作，随后是一个使用`routerLink`导航用户到单独视图的链接。
 
 ```html
 01 <p>
@@ -4730,9 +4890,9 @@ import { HttpModule } from '@angular/http';
 04 <a routerLink="/route2">Route 2</a>
 ```
 
-##### 10.21 home.component.ts：一个包含带路由模板的 Angular 组件
+##### 10.21 home.component.ts：一个包含带路由模板的Angular组件
 
-清单 10.21 展示了 home 组件文件。该文件是组件中最基础的形式。其主要目的是加载模板文件并使其可供路由器使用。
+清单10.21展示了home组件文件。该文件是组件中最基础的形式。其主要目的是加载模板文件并使其可供路由器使用。
 
 ```typescript
 01 import { Component} from '@angular/core';
@@ -4745,9 +4905,9 @@ import { HttpModule } from '@angular/http';
 08 export class HomeComponent{}
 ```
 
-##### 10.22 route2.component.html：一个为应用程序设置样式的 CSS 文件
+##### 10.22 route2.component.html：一个为应用程序设置样式的CSS文件
 
-清单 10.22 展示了 route2 组件的模板文件。该文件显示一条消息，告知用户路由正在工作，随后是一个使用 `routerLink` 导航用户到单独视图的链接。
+清单10.22展示了route2组件的模板文件。该文件显示一条消息，告知用户路由正在工作，随后是一个使用`routerLink`导航用户到单独视图的链接。
 
 ```html
 01 <p>
@@ -4756,9 +4916,9 @@ import { HttpModule } from '@angular/http';
 04 <a routerLink="/">Route 1</a>
 ```
 
-##### 10.23 route2.component.ts：一个包含带路由模板的 Angular 组件
+##### 10.23 route2.component.ts：一个包含带路由模板的Angular组件
 
-清单 10.23 展示了基础的 route2 组件文件。其主要目的是加载模板文件并使其可供路由器使用。
+清单10.23展示了基础的route2组件文件。其主要目的是加载模板文件并使其可供路由器使用。
 
 ```typescript
 01 import { Component } from '@angular/core';
@@ -4772,11 +4932,11 @@ import { HttpModule } from '@angular/http';
 
 #### 实现带有导航栏的路由器
 
-清单 10.24 到 10.35 中的代码实现了一个带有导航栏的路由器，允许用户在嵌套的视图之间导航。图 10.5 展示了输出结果。此路由器使用 HTML 中的 Angular `routerLink` 指令进行导航，从而在不同视图之间切换。
+清单10.24到10.35中的代码实现了一个带有导航栏的路由器，允许用户在嵌套的视图之间导航。图10.5展示了输出结果。此路由器使用HTML中的Angular`routerLink`指令进行导航，从而在不同视图之间切换。
 
-##### 10.24 app-routing.module.ts：一个为应用程序定义路由的 Angular 模块
+##### 10.24 app-routing.module.ts：一个为应用程序定义路由的Angular模块
 
-清单 10.24 展示了路由器模块，它为应用程序定义路由。路由器模块导入了任何将用作路由的组件。此示例中没有主路由。如果路由为空，路由器会重定向到 `page1`，如第 22 到 25 行所示。此外，如果在 URL 中输入了无效路由，路由器也会再次重定向到 `page1`，如第 27 到 30 行所示。
+清单10.24展示了路由器模块，它为应用程序定义路由。路由器模块导入了任何将用作路由的组件。此示例中没有主路由。如果路由为空，路由器会重定向到`page1`，如第22到25行所示。此外，如果在URL中输入了无效路由，路由器也会再次重定向到`page1`，如第27到30行所示。
 
 ```typescript
 01 import { NgModule } from '@angular/core';
@@ -4818,9 +4978,9 @@ import { HttpModule } from '@angular/http';
 37 export class AppRoutingModule { }
 ```
 
-##### 10.25 nav.component.ts：一个创建持久导航栏以在视图间导航的 Angular 组件
+##### 10.25 nav.component.ts：一个创建持久导航栏以在视图间导航的Angular组件
 
-清单 10.25 展示了导航组件，它控制导航栏并链接到页面内的视图。第 9 到 19 行展示了一个可用页面的数组，导航栏可以使用该数组创建带有导航链接的按钮。
+清单10.25展示了导航组件，它控制导航栏并链接到页面内的视图。第9到19行展示了一个可用页面的数组，导航栏可以使用该数组创建带有导航链接的按钮。
 
 ```typescript
 01 import { Component, OnInit } from '@angular/core';
@@ -4845,9 +5005,9 @@ import { HttpModule } from '@angular/http';
 20 }
 ```
 
-##### 10.26 nav.component.html：一个创建导航栏视图的 Angular 模板
+##### 10.26 nav.component.html：一个创建导航栏视图的Angular模板
 
-清单 10.26 展示了导航组件的模板文件。它创建了一个按钮列表，允许在命名路由之间进行导航。
+清单10.26展示了导航组件的模板文件。它创建了一个按钮列表，允许在命名路由之间进行导航。
 
 ```html
 01 <span class="container" *ngFor="let page of pages">
@@ -4855,9 +5015,9 @@ import { HttpModule } from '@angular/http';
 03 </span>
 ```
 
-##### 10.27 nav.component.css：一个为应用程序的导航按钮设置样式的 CSS 文件
+##### 10.27 nav.component.css：一个为应用程序的导航按钮设置样式的CSS文件
 
-清单 10.27 展示了导航组件的 CSS 文件。该文件为导航栏按钮设置样式，使其看起来合理。第 9 到 12 行使得当用户将鼠标悬停在按钮上时，按钮和文本的颜色会发生变化。
+清单10.27展示了导航组件的CSS文件。该文件为导航栏按钮设置样式，使其看起来合理。第9到12行使得当用户将鼠标悬停在按钮上时，按钮和文本的颜色会发生变化。
 
 ```css
 01 a{
@@ -4874,11 +5034,11 @@ import { HttpModule } from '@angular/http';
 12 }
 ```
 
-140 第 10 章 在 Web 应用中实现 Angular 服务
+140 第10章 在Web应用中实现Angular服务
 
-##### 10.28 app.component.ts：一个作为应用程序根组件的 Angular 组件
+##### 10.28 app.component.ts：一个作为应用程序根组件的Angular组件
 
-清单 10.28 展示了根组件文件 `app.component.ts`，它作为应用程序的入口，并加载路由视图和导航组件。
+清单10.28展示了根组件文件`app.component.ts`，它作为应用程序的入口，并加载路由视图和导航组件。
 
 ```typescript
 01 import { Component } from '@angular/core';
@@ -4891,9 +5051,9 @@ import { HttpModule } from '@angular/http';
 08 export class AppComponent { }
 ```
 
-##### 10.29 app.component.html：一个加载导航组件后跟路由器出口的 Angular 模板
+##### 10.29 app.component.html：一个加载导航组件后跟路由器出口的Angular模板
 
-清单 10.29 展示了根组件模板文件，它加载导航组件，随后是路由器出口，应用程序的视图就在该处加载。
+清单10.29展示了根组件模板文件，它加载导航组件，随后是路由器出口，应用程序的视图就在该处加载。
 
 ```html
 01 <div><app-nav></app-nav></div>
@@ -4902,11 +5062,9 @@ import { HttpModule } from '@angular/http';
 
 ## 10.30
 
-清单 10.30 展示了根组件的 CSS 文件，它为导航栏提供了一些间距，使其显示得更美观。
+清单10.30展示了根组件的CSS文件，它为导航栏提供了一些间距，使其显示得更美观。
 
-
-
-## 清单 10.30 app.component.css：导入路由器模块文件的 Angular 模块
+## 清单10.30 app.component.css：导入路由器模块文件的Angular模块
 
 ```css
 01 div{
@@ -4914,9 +5072,9 @@ import { HttpModule } from '@angular/http';
 03 }
 ```
 
-清单 10.31 展示了 page1 组件。此组件加载一个模板，该模板将用作此应用程序的其中一个视图。第 5 行加载了一张图片以在视图中显示。
+清单10.31展示了page1组件。此组件加载一个模板，该模板将用作此应用程序的其中一个视图。第5行加载了一张图片以在视图中显示。
 
-##### 清单 10.31 page1.component.ts：导入路由器模块文件的 Angular 模块
+##### 清单10.31 page1.component.ts：导入路由器模块文件的Angular模块
 
 ```typescript
 01 import { Component } from '@angular/core';
@@ -4928,9 +5086,9 @@ import { HttpModule } from '@angular/http';
 07 export class Page1Component {}
 ```
 
-清单 10.32 展示了 page2 组件。此组件加载一个模板，该模板将用作此应用程序的其中一个视图。
+清单10.32展示了page2组件。此组件加载一个模板，该模板将用作此应用程序的其中一个视图。
 
-##### 清单 10.32 page2.component.ts：导入路由器模块文件的 Angular 模块
+##### 清单10.32 page2.component.ts：导入路由器模块文件的Angular模块
 
 ```typescript
 01 import { Component } from '@angular/core';
@@ -4942,9 +5100,9 @@ import { HttpModule } from '@angular/http';
 07 export class Page2Component { }
 ```
 
-清单 10.33 展示了 page2 模板文件，其中包含一些将被加载到视图中的占位文本。
+清单10.33展示了page2模板文件，其中包含一些将被加载到视图中的占位文本。
 
-##### 清单 10.33 page2.component.html：为页面 2 创建视图的 Angular 模板
+##### 清单10.33 page2.component.html：为页面2创建视图的Angular模板
 
 ```html
 01 <p>
@@ -4958,9 +5116,9 @@ import { HttpModule } from '@angular/http';
 09 </p>
 ```
 
-清单 10.34 展示了 page3 组件。此组件加载一个模板，该模板将用作此应用程序的其中一个视图。
+清单10.34展示了page3组件。此组件加载一个模板，该模板将用作此应用程序的其中一个视图。
 
-##### 清单 10.34 page3.component.ts：导入路由器模块文件的 Angular 模块
+##### 清单10.34 page3.component.ts：导入路由器模块文件的Angular模块
 
 ```typescript
 01 import { Component } from '@angular/core';
@@ -4972,26 +5130,26 @@ import { HttpModule } from '@angular/http';
 07 export class Page3Component {}
 ```
 
-清单 10.35 展示了 page3 模板文件，该文件创建了一个文本区域框以在视图中显示。
+清单10.35展示了page3模板文件，该文件创建了一个文本区域框以在视图中显示。
 
-##### 清单 10.35 page3.component.html：为页面 3 创建视图的 Angular 模板
+##### 清单10.35 page3.component.html：为页面3创建视图的Angular模板
 
 ```html
 01 <textarea rows="4" cols="50" placeholder="Some Text Here">
 02 </textarea>
 ```
 
-![图 10.5](img/6cec51936e44f3a6d2c21b1752185726_158_0.png)
+![图10.5](img/6cec51936e44f3a6d2c21b1752185726_158_0.png)
 
-图 10.5 实现 `http` 服务以允许 Angular 组件与 Web 服务器交互
+图10.5 实现`http`服务以允许Angular组件与Web服务器交互
 
 #### 实现带参数的路由器
 
-清单 10.36 至 10.40 实现了一个带有路由的路由器，该路由接受一个参数，允许通过 `url` 参数将数据传输到该视图。图 10.6 展示了输出结果。
+清单10.36至10.40实现了一个带有路由的路由器，该路由接受一个参数，允许通过`url`参数将数据传输到该视图。图10.6展示了输出结果。
 
-清单 10.36 展示了 `Router` 模块，它定义了应用程序的路由。`Router` 模块导入任何将用作路由的组件。第 14 行定义了通向页面 2 的路径，该路径接受参数 `this.text`。
+清单10.36展示了`Router`模块，它定义了应用程序的路由。`Router`模块导入任何将用作路由的组件。第14行定义了通向页面2的路径，该路径接受参数`this.text`。
 
-##### 清单 10.36 app-routing.module.ts：分配路由器参数的 Angular 模板
+##### 清单10.36 app-routing.module.ts：分配路由器参数的Angular模板
 
 ```typescript
 01 import { Component } from '@angular/core';
@@ -5019,9 +5177,9 @@ import { HttpModule } from '@angular/http';
 23 }
 ```
 
-清单 10.37 展示了根组件 app.component.ts。此文件包含一个模板，该模板声明了 router-outlet 以显示来自路由器的视图。
+清单10.37展示了根组件app.component.ts。此文件包含一个模板，该模板声明了router-outlet以显示来自路由器的视图。
 
-##### 清单 10.37 app.component.ts：作为应用程序入口点的 Angular 组件
+##### 清单10.37 app.component.ts：作为应用程序入口点的Angular组件
 
 ```typescript
 01 import { Component } from '@angular/core';
@@ -5033,9 +5191,9 @@ import { HttpModule } from '@angular/http';
 07 export class AppComponent { }
 ```
 
-清单 10.38 展示了 page1 组件。此组件从 `@angular/router` 导入了 Router 和 ActivatedRoute，以允许此组件访问路由器并读取或分配参数到 RouterState。第 10 至 13 行定义了构造函数，其中第 11 和 12 行将 ActivatedRoute 和 Router 实现为私有变量 route 和 router。第 14 至 22 行定义了 `gotoPage2()` 函数，该函数导航到 page2 并传入一个参数。第 16 行导航到 page2，并传入 `this.text` 作为参数。第 18 和 19 行允许应用程序在更改视图时不在浏览器中更改 URL。
+清单10.38展示了page1组件。此组件从`@angular/router`导入了`Router`和`ActivatedRoute`，以允许此组件访问路由器并读取或分配参数到RouterState。第10至13行定义了构造函数，其中第11和12行将ActivatedRoute和Router实现为私有变量route和router。第14至22行定义了`gotoPage2()`函数，该函数导航到page2并传入一个参数。第16行导航到page2，并传入`this.text`作为参数。第18和19行允许应用程序在更改视图时不在浏览器中更改URL。
 
-##### 清单 10.38 page1.component.ts：带参数导航到页面 2 的 Angular 组件
+##### 清单10.38 page1.component.ts：带参数导航到页面2的Angular组件
 
 ```typescript
 01 import { Component } from '@angular/core';
@@ -5063,9 +5221,9 @@ import { HttpModule } from '@angular/http';
 23 }
 ```
 
-清单 10.39 展示了 page1 模板文件。第 4 行显示了一个文本区域，该区域绑定到变量 text，当路由到 page2 时，该变量作为参数传递。第 5 行创建了一个按钮，该按钮调用 `gotoPage2` 函数以更改视图。仅当变量 text 具有非空值时，此按钮才可用。
+清单10.39展示了page1模板文件。第4行显示了一个文本区域，该区域绑定到变量text，当路由到page2时，该变量作为参数传递。第5行创建了一个按钮，该按钮调用`gotoPage2`函数以更改视图。仅当变量text具有非空值时，此按钮才可用。
 
-##### 清单 10.39 page1.component.html：提供输入字段以向路由器参数赋值的 HTML 模板
+##### 清单10.39 page1.component.html：提供输入字段以向路由器参数赋值的HTML模板
 
 ```html
 01 <span>
@@ -5075,9 +5233,9 @@ import { HttpModule } from '@angular/http';
 05 <button [disabled]="!text" (click)="gotoPage2()">Page 2</button>
 ```
 
-清单 10.40 展示了 page2 组件。此组件从 `@angular/router` 导入了 Router 和 ActivatedRoute，以允许此组件访问路由器以及路由加载时设置的参数。第 15 和 16 行创建了一个对 params 可观察对象的订阅，并将值分配给变量 text 以在视图中显示。
+清单10.40展示了page2组件。此组件从`@angular/router`导入了`Router`和`ActivatedRoute`，以允许此组件访问路由器以及路由加载时设置的参数。第15和16行创建了一个对params可观察对象的订阅，并将值分配给变量text以在视图中显示。
 
-##### 清单 10.40 page2.component.ts：在视图中显示路由器参数的 Angular 组件
+##### 清单10.40 page2.component.ts：在视图中显示路由器参数的Angular组件
 
 ```typescript
 01 import { Component, OnInit } from '@angular/core';
@@ -5104,9 +5262,9 @@ import { HttpModule } from '@angular/http';
 22 }
 ```
 
-清单 10.41 展示了 page2 模板文件。第 2 行显示了变量 text，其值来自路由参数。第 3 行创建了一个按钮，点击后可以导航回 page1。
+清单10.41展示了page2模板文件。第2行显示了变量text，其值来自路由参数。第3行创建了一个按钮，点击后可以导航回page1。
 
-##### 清单 10.41 page2.component.html：从路由器传递的参数
+##### 清单10.41 page2.component.html：从路由器传递的参数
 
 ```html
 01 <h3>Params From Page 1</h3>
@@ -5114,40 +5272,45 @@ import { HttpModule } from '@angular/http';
 03 <button (click)="goBack()" >back</button>
 ```
 
-![图 10.6](img/6cec51936e44f3a6d2c21b1752185726_162_0.png)
+![图10.6](img/6cec51936e44f3a6d2c21b1752185726_162_0.png)
 
-图 10.6 实现 http 服务以允许 Angular 组件与 Web 服务器交互。
+图10.6 实现http服务以允许Angular组件与Web服务器交互。
 
 ## 总结
 
-Angular 服务是包含可注入到其他 Angular 组件中的功能的对象。Angular 的内置服务提供了客户端代码所需的许多预构建功能。例如，`http` 服务允许你轻松地将 Web 服务器通信集成到你的 Angular 应用程序中，而 `router` 服务允许你管理视图之间的导航。
+Angular服务是包含可注入到其他Angular组件中的功能的对象。Angular的内置服务提供了客户端代码所需的许多预构建功能。例如，`http`服务允许你轻松地将Web服务器通信集成到你的Angular应用程序中，而`router`服务允许你管理视图之间的导航。
 
+## 创建您自己的自定义Angular服务
 
+Angular在其内置服务中提供了许多功能，但它也允许您实现自己的自定义服务以提供特定功能。任何需要向应用程序提供基于任务的功能时，您都应该实现一个自定义服务。
 
-## 创建您自己的自定义 Angular 服务
+在实现自定义服务时，您需要将每个服务视为执行一个或多个相关任务的可重用代码块。然后，您可以将它们设计并组合成库，这些库可以被多个不同的Angular应用程序轻松使用。
 
-Angular 在其内置服务中提供了许多功能，但它也允许您实现自己的自定义服务以提供特定功能。任何需要向应用程序提供基于任务的功能时，您都应该实现一个自定义服务。
+本章介绍了Angular自定义服务。它提供了几个自定义Angular服务的示例，以帮助您更清晰地理解如何设计和构建自己的服务。
 
-在实现自定义服务时，您需要将每个服务视为执行一个或多个相关任务的可重用代码块。然后，您可以将它们设计并组合成库，这些库可以被多个不同的 Angular 应用程序轻松使用。
+### 将自定义服务集成到Angular应用程序中
 
-本章介绍了 Angular 自定义服务。它提供了几个自定义 Angular 服务的示例，以帮助您更清晰地理解如何设计和构建自己的服务。
+当您开始为应用程序实现Angular服务时，您会发现有些非常简单，有些则非常复杂。服务的复杂性通常反映了底层数据及其所提供功能的复杂性。本节旨在为您提供不同类型自定�务的一些基本示例，以说明如何实现和使用它们。表11.1列出了一些服务的用途。
 
-### 将自定义服务集成到 Angular 应用程序中
-
-当您开始为应用程序实现 Angular 服务时，您会发现有些非常简单，有些则非常复杂。服务的复杂性通常反映了底层数据及其所提供功能的复杂性。本节旨在为您提供不同类型自定义服务的一些基本示例，以说明如何实现和使用它们。表 11.1 列出了一些服务的用途。
-
-表 11.1 自定义服务的用例
+**表11.1** 自定义服务的用例
 
 | 服务 | 描述 |
+
 |---|---|
-| 模拟服务 | 提供虚拟数据，用于在后端不可用时测试基于 HTTP 的服务 |
-| 常量数据 | 返回需要保持不变的数据变量，例如圆周率 π 的数学值 |
+
+| 模拟服务 | 提供虚拟数据，用于在后端不可用时测试基于HTTP的服务 |
+
+| 常量数据 | 返回需要保持不变的数据变量，例如圆周率π的数学值 |
+
 | 变量数据 | 返回可以更改的数据变量，更改后的值会保存到服务中供其他服务使用 |
-| 与后端的 HTTP 连接 | 应在自定义服务中使用，以创建与后端数据的接口 |
+
+| 与后端的HTTP连接 | 应在自定义服务中使用，以创建与后端数据的接口 |
+
 | 数据转换 | 接收待转换的数据形式，运行转换并返回转换后的值（例如，一个接收数字并返回其平方的平方服务） |
+
 | 共享服务 | 任何可以同时被多个组件使用的服务，当数据更改时，会自动为所有组件更新数据 |
 
-#### 将 Angular 服务添加到应用程序
+#### 将Angular服务添加到应用程序
 
 本节介绍如何在应用程序中创建和实现自定义服务。创建服务时，必须使其可注入，才能在整个应用程序中使用。以下示例展示了创建可注入服务的语法：
 
@@ -5157,7 +5320,7 @@ import { Injectable } from '@angular/core';
 export class CustomService { }
 ```
 
-创建可注入服务后，需要将其导入并提供给任何需要访问它的 Angular 组件。以下是导入自定义服务的语法，以及通过组件装饰器元数据中的 `providers` 数组注入自定义服务：
+创建可注入服务后，需要将其导入并提供给任何需要访问它的Angular组件。以下是导入自定义服务的语法，以及通过组件装饰器元数据中的`providers`数组注入自定义服务：
 
 ```
 import { CustomService } from './path_to_service';
@@ -5177,7 +5340,7 @@ constructor(
 ){}
 ```
 
-完成这些步骤后，自定义服务及其任何方法都通过实例 `myService` 提供给组件。
+完成这些步骤后，自定义服务及其任何方法都通过实例`myService`提供给组件。
 
 以下部分提供了示例，说明实现自定义服务的各种方式。
 
@@ -5185,10 +5348,10 @@ constructor(
 
 此示例展示了如何构建一个常量数据服务。本示例的目的是创建一个简单的服务，该服务返回一个常量数据变量。
 
-清单 11.1 展示了 pi 服务，该服务返回圆周率 π 的值。第 1 行和第 3 行导入并实现 Injectable，以使服务可供外部使用。第 4 行创建 PiService 类，其中包含服务的定义。第 5 至 7 行定义了 getPi 方法，该方法返回圆周率 π 的值。
+清单11.1展示了pi服务，该服务返回圆周率π的值。第1行和第3行导入并实现Injectable，以使服务可供外部使用。第4行创建PiService类，其中包含服务的定义。第5至7行定义了getPi方法，该方法返回圆周率π的值。
 
 ```
-清单 11.1 pi.service.ts：创建一个返回圆周率 π 值的服务
+清单11.1 pi.service.ts：创建一个返回圆周率π值的服务
 01 import { Injectable } from '@angular/core';
 02 
 03 @Injectable()
@@ -5199,10 +5362,10 @@ constructor(
 08 }
 ```
 
-清单 11.2 实现了一个 Angular 组件，该组件导入并实现 PiService。第 2 行和第 7 行显示 PiService 被导入，然后被提供，使其在组件中可用。第 12 行显示 PiService 被实例化为变量 PiService。第 14 至 16 行显示 ngOnInit 方法，该方法调用 PiService 的 getPi 方法并将其赋值给变量 pi。
+清单11.2实现了一个Angular组件，该组件导入并实现PiService。第2行和第7行显示PiService被导入，然后被提供，使其在组件中可用。第12行显示PiService被实例化为变量PiService。第14至16行显示ngOnInit方法，该方法调用PiService的getPi方法并将其赋值给变量pi。
 
 ```
-清单 11.2 app.component.ts：一个从 PiService 获取圆周率 π 值的 Angular 组件
+清单11.2 app.component.ts：一个从PiService获取圆周率π值的Angular组件
 01 import { Component, OnInit } from '@angular/core';
 02 import { PiService } from './pi.service';
 03 
@@ -5222,9 +5385,9 @@ constructor(
 17 }
 ```
 
-清单 11.3 展示了一个 Angular 模板，该模板将圆周率 π 的值显示到小数点后五位。
+清单11.3展示了一个Angular模板，该模板将圆周率π的值显示到小数点后五位。
 
-清单 11.3 app.component.html：一个将圆周率 π 的值显示到小数点后五位的 Angular 模板
+清单11.3 app.component.html：一个将圆周率π的值显示到小数点后五位的Angular模板
 
 ```
 01 <h1>
@@ -5233,20 +5396,20 @@ constructor(
 04 <p> the value of pi is: {{pi | number:'1.1-5'}}</p>
 ```
 
-图 11.1 显示了此示例在 Web 浏览器中的输出。
+图11.1显示了此示例在Web浏览器中的输出。
 
 ![](img/6cec51936e44f3a6d2c21b1752185726_167_0.png)
 
-图 11.1 一个显示从常量服务获取的圆周率 π 值的 Angular 组件的 HTML 页面
+图11.1 一个显示从常量服务获取的圆周率π值的Angular组件的HTML页面
 
 #### 实现数据转换服务
 
 此示例展示了如何构建一个简单的数据转换服务，该服务接收数据变量，计算形状的面积，并返回该形状的面积。
 
-清单 11.4 展示了一个名为 AreaCalcService 的自定义服务，其中包含多个以各种形状命名的方法。每个方法都接收变量，然后使用这些变量生成与其名称对应的形状的面积。第 1 行和第 3 行导入并实现 Injectable，以使服务可供外部使用。
+清单11.4展示了一个名为AreaCalcService的自定义服务，其中包含多个以各种形状命名的方法。每个方法都接收变量，然后使用这些变量生成与其名称对应的形状的面积。第1行和第3行导入并实现Injectable，以使服务可供外部使用。
 
 ```
-清单 11.4 area-calc.service.ts：一个具有计算形状面积方法的 Angular 服务
+清单11.4 area-calc.service.ts：一个具有计算形状面积方法的Angular服务
 01 import { Injectable } from '@angular/core';
 02 
 03 @Injectable()
@@ -5271,20 +5434,20 @@ constructor(
 22 }
 ```
 
-清单 11.5 展示了一个 Angular 组件，该组件根据从用户接收的值，从 AreaCalcService 获取形状的面积。第 2 行和第 8 行导入 AreaCalcService 并将其添加到 providers 中，使其可供组件使用。第 21 行创建 AreaCalcService 的实例 areaCalc，以与组件方法一起使用。
+清单11.5展示了一个Angular组件，该组件根据从用户接收的值从AreaCalcService获取形状的面积。第2行和第8行导入AreaCalcService并将其添加到providers中，使其可供组件使用。第21行创建AreaCalcService的实例areaCalc，以与组件方法一起使用。
 
-第 23 至 25 行定义了 doCircle 方法，该方法在 areaCalc 上调用 circle 方法以获取圆的面积。
+第23至25行定义了doCircle方法，该方法在areaCalc上调用circle方法以获取圆的面积。
 
-第 26 至 28 行定义了 doSquare 方法，该方法在 areaCalc 上调用 square 方法以获取正方形的面积。
+第26至28行定义了doSquare方法，该方法在areaCalc上调用square方法以获取正方形的面积。
 
-第 29 至 31 行定义了 doRectangle 方法，该方法在 areaCalc 上调用 rectangle 方法以获取矩形的面积。
+第29至31行定义了doRectangle方法，该方法在areaCalc上调用rectangle方法以获取矩形的面积。
 
-第 32 至 34 行定义了 doTriangle 方法，该方法在 areaCalc 上调用 triangle 方法以获取三角形的面积。
+第32至34行定义了doTriangle方法，该方法在areaCalc上调用triangle方法以获取三角形的面积。
 
-第 35 至 39 行定义了 doTrapezoid 方法，该方法在 areaCalc 上调用 trapezoid 方法以获取梯形的面积。
+第35至39行定义了doTrapezoid方法，该方法在areaCalc上调用trapezoid方法以获取梯形的面积。
 
 ```
-清单 11.5 app.component.ts：一个根据从用户接收的值从 AreaCalcService 获取形状面积的 Angular 组件
+清单11.5 app.component.ts：一个根据从用户接收的值从AreaCalcService获取形状面积的Angular组件
 01 import { Component } from '@angular/core';
 02 import { AreaCalcService } from './area-calc.service';
 03
@@ -5294,13 +5457,6 @@ constructor(
 07   styleUrls: ['./app.component.css'],
 08   providers: [ AreaCalcService ]
 09 })
-```
-
-
-
-### 11.5 创建自定义 Angular 服务
-
-```typescript
 export class AppComponent {
   circleRadius: number = 0;
   squareBase: number = 0;
@@ -5338,9 +5494,9 @@ export class AppComponent {
 }
 ```
 
-清单 11.6 展示了一个 Angular 模板文件，它创建了用于输入计算各种形状面积所需数据的表单字段。当数据输入后，面积会立即被计算并显示给用户。
+清单11.6展示了一个Angular模板文件，它创建了用于输入计算各种形状面积所需数据的表单字段。当数据输入后，面积会立即被计算并显示给用户。
 
-#### 清单 11.6 app.component.html：提供用户界面以创建表单字段接收形状面积的 Angular 模板
+#### 清单11.6 app.component.html：提供用户界面以创建表单字段接收形状面积的Angular模板
 
 ```html
 <label>Circle Radius:</label>
@@ -5377,9 +5533,9 @@ export class AppComponent {
 <span>Area: {{this.doTrapezoid()}}</span>
 ```
 
-清单 11.7 展示了一个 CSS 文件，用于设置应用程序的样式，将每个形状的独立表单分隔开来。
+清单11.7展示了一个CSS文件，用于设置应用程序的样式，将每个形状的独立表单分隔开来。
 
-#### 清单 11.7 app.component.css：用于设置应用程序样式的 CSS 文件
+#### 清单11.7 app.component.css：用于设置应用程序样式的CSS文件
 
 ```css
 label{
@@ -5399,13 +5555,15 @@ span{
 }
 ```
 
-图 11.2 展示了生成的 Angular 应用程序网页。随着组件中添加数值，区域会由自定义服务自动计算。
+图11.2展示了生成的Angular应用程序网页。随着组件中添加数值，区域会由自定义服务自动计算。
 
 ![](img/6cec51936e44f3a6d2c21b1752185726_171_0.png)
 
-图 11.2 使用自定义服务自动计算不同形状面积的 Angular 应用程序
+图11.2 使用自定义服务自动计算不同形状面积的Angular应用程序
 
 ### 实现一个变量数据服务
+
+
 
 本例展示了如何构建一个可变数据服务，该服务创建一个图像切换器，该切换器在随机时间从列表中随机选择一个图像并将其发送给组件进行显示。
 
@@ -5545,10 +5703,6 @@ div {
 }
 ```
 
-
-
-160   第11章  创建您自己的自定义 Angular 服务
-
 ```css
 p {
     font: bold 25px 'Times New Roman';
@@ -5557,7 +5711,7 @@ p {
 }
 ```
 
-图11.3展示了运行中的示例。服务会随机更改主图像的URL和大小。底部显示了随机显示的图像的滚动历史记录。
+图 11.3 展示了运行中的示例。服务会随机更改主图像的 URL 和大小。底部显示了随机显示的图像的滚动历史记录。
 
 ![](img/6cec51936e44f3a6d2c21b1752185726_175_0.png)
 
@@ -5565,10 +5719,11 @@ p {
 
 此示例展示了如何构建一个创建并返回 Promise 的服务。
 
-清单11.12展示了一个名为 `PromiseService` 的自定义服务，它创建一个异步计时器，在特定秒数后向用户发出警报。第6到13行定义了 `createTimedAlert` 方法，该方法接收 `seconds` 参数并返回一个 Promise。第8到10行创建了一个 resolve 函数，该函数仅在 Promise 完成后运行。此函数会创建一个警报，告知用户运行警报花了多长时间。
+清单 11.12 展示了一个名为 `PromiseService` 的自定义服务，它创建一个异步计时器，在特定秒数后向用户发出警报。第 6 到 13 行定义了 `createTimedAlert` 方法，该方法接收 `seconds` 参数并返回一个 Promise。第 8 到 10 行创建了一个 resolve 函数，该函数仅在 Promise 完成后运行。此函数会创建一个警报，告知用户运行警报花了多长时间。
+
+#### 清单 11.12 promise.service.ts：一个提供基于计时器警报的 Angular 服务
 
 ```typescript
-// 清单 11.12  promise.service.ts: 一个提供基于计时器警报的 Angular 服务
 import { Injectable } from '@angular/core';
 
 @Injectable()
@@ -5585,10 +5740,11 @@ export class PromiseService {
 }
 ```
 
-清单11.13展示了一个 Angular 组件，它使用 `PromiseService` 创建一个可以在稍后时间解析的异步请求。第2行和第7行显示了 `PromiseService` 被导入然后添加到 `providers` 数组中，使其对组件可用。第12行创建了一个名为 `alert` 的 `PromiseService` 实例。第15到17行定义了 `createAlert` 方法，该方法调用 `alert` 上的 `createTimedAlert` 方法并传入 `seconds` 变量。
+清单 11.13 展示了一个 Angular 组件，它使用 `PromiseService` 创建一个可以在稍后时间解析的异步请求。第 2 行和第 7 行显示了 `PromiseService` 被导入然后添加到 `providers` 数组中，使其对组件可用。第 12 行创建了一个名为 `alert` 的 `PromiseService` 实例。第 15 到 17 行定义了 `createAlert` 方法，该方法调用 `alert` 上的 `createTimedAlert` 方法并传入 `seconds` 变量。
+
+#### 清单 11.13 app.component.ts：使用 PromiseService 服务的 Angular 组件
 
 ```typescript
-// 清单 11.13  app.component.ts: 使用 PromiseService 服务的 Angular 组件
 import { Component } from '@angular/core';
 import { PromiseService } from './promise.service';
 
@@ -5609,33 +5765,35 @@ export class AppComponent {
 }
 ```
 
-清单11.14展示了一个 Angular 模板，其中有一个输入框供用户输入秒数。模板中有一个按钮，用于调用 `createAlert` 函数。
+清单 11.14 展示了一个 Angular 模板，其中有一个输入框供用户输入秒数。模板中有一个按钮，用于调用 `createAlert` 函数。
+
+#### 清单 11.14 app.component.html：一个显示按钮以启动异步警报请求的模板
 
 ```html
-<!-- 清单 11.14  app.component.html: 一个显示按钮以启动异步警报请求的模板 -->
 <h3>set the time in seconds to create an alert</h3>
 <input [(ngModel)]="seconds">
 <button (click)="createAlert()">go</button>
 ```
 
-图11.4显示了在时间流逝后，服务显示的异步警报。
+图 11.4 显示了在时间流逝后，服务显示的异步警报。
 
 ![](img/6cec51936e44f3a6d2c21b1752185726_177_0.png)
 
-图11.4 使用 Angular 服务提供异步警报
+图 11.4 使用 Angular 服务提供异步警报
 
 ### 实现一个共享服务
 
 此示例展示了如何构建一个在两个组件之间共享的服务。该服务将只有一个实例，这意味着当一个组件更改数据时，另一个组件也会看到该数据更改。
 
-清单11.15展示了一个名为 `SharedService` 的自定义服务，它创建一个角色数组的可观察对象。此可观察对象是可编辑的，这使其可用于减少角色的生命值。当值更改时，可观察对象会向所有订阅了该可观察对象的组件发出该更改。
+清单 11.15 展示了一个名为 `SharedService` 的自定义服务，它创建一个角色数组的可观察对象。此可观察对象是可编辑的，这使其可用于减少角色的生命值。当值更改时，可观察对象会向所有订阅了该可观察对象的组件发出该更改。
 
-第15到52行定义了 `characters` 数组，其中包含 `name`、`race`、`alignment` 和 `health` 值。第55到60行定义了 `constructor` 方法，该方法创建可观察对象 `charObservable`。观察者对象被保存到服务变量 `observer` 中。然后观察者发出 `characters` 数组。第62到64行定义了 `getCharacters` 方法，该方法返回 `charObservable`。
+第 15 到 52 行定义了 `characters` 数组，其中包含 `name`、`race`、`alignment` 和 `health` 值。第 55 到 60 行定义了 `constructor` 方法，该方法创建可观察对象 `charObservable`。观察者对象被保存到服务变量 `observer` 中。然后观察者发出 `characters` 数组。第 62 到 64 行定义了 `getCharacters` 方法，该方法返回 `charObservable`。
 
-第66到79行定义了 `hitCharacter` 方法，该方法接收两个参数：`character` 和 `damage`。然后该方法在 `characters` 数组中搜索 `character` 的索引。如果角色存在于数组中，该方法会从该角色的生命值中减去伤害值。然后，如果生命值小于或等于0，该方法会将该角色从数组中移除。最后，该方法发出更新后的 `characters` 数组。
+第 66 到 79 行定义了 `hitCharacter` 方法，该方法接收两个参数：`character` 和 `damage`。然后该方法在 `characters` 数组中搜索 `character` 的索引。如果角色存在于数组中，该方法会从该角色的生命值中减去伤害值。然后，如果生命值小于或等于 0，该方法会将该角色从数组中移除。最后，该方法发出更新后的 `characters` 数组。
+
+#### 清单 11.15 shared.service.ts：一个将在组件之间共享的 Angular 服务
 
 ```typescript
-// 清单 11.15  shared.service.ts: 一个将在组件之间共享的 Angular 服务
 import { Injectable } from '@angular/core';
 
 import { Observable }        from 'rxjs/Observable';
@@ -5715,9 +5873,9 @@ characters: character[] = [
 }
 ```
 
-清单11.16展示了一个 Angular 组件，它创建一个 `SharedService` 的单一实例，可以传递给子组件。由于每个子组件接收的是相同的 service 实例，所有注入 `SharedService` 并订阅其可观察对象的子组件都将在数据发生更改时得到更新。第2行和第7行导入并提供了 `SharedService` 供组件内部使用。第11行将 `SharedService` 赋值给变量 `shared`，以便在 HTML 中使用。
+清单 11.16 展示了一个 Angular 组件，它创建一个 `SharedService` 的单一实例，可以传递给子组件。由于每个子组件接收的是相同的 service 实例，所有注入 `SharedService` 并订阅其可观察对象的子组件都将在数据发生更改时得到更新。第 2 行和第 7 行导入并提供了 `SharedService` 供组件内部使用。第 11 行将 `SharedService` 赋值给变量 `shared`，以便在 HTML 中使用。
 
-#### 清单 11.16 `app.component.ts`: 一个分发 `SharedService` 的 Angular 组件
+#### 清单 11.16 app.component.ts：一个分发 SharedService 的 Angular 组件
 
 ```typescript
 import { Component } from '@angular/core';
@@ -5735,9 +5893,9 @@ export class AppComponent {
 }
 ```
 
-清单11.17展示了一个 Angular 模板，其中显示了两个部分：一个用于好家伙，一个用于坏家伙。第2行显示了 `Good Guys` 组件，它接收一个 `shared` 输入，并从 `app.component` 将 `shared` 可观察对象传递给 `good-guys.component`。第5行显示了 `Bad Guys` 组件，它接收一个 `shared` 输入，并从 `app.component` 将 `shared` 可观察对象传递给 `badguys.component`。
+清单 11.17 展示了一个 Angular 模板，其中显示了两个部分：一个用于好家伙，一个用于坏家伙。第 2 行显示了 `Good Guys` 组件，它接收一个 `shared` 输入，并从 `app.component` 将 `shared` 可观察对象传递给 `good-guys.component`。第 5 行显示了 `Bad Guys` 组件，它接收一个 `shared` 输入，并从 `app.component` 将 `shared` 可观察对象传递给 `badguys.component`。
 
-#### 清单 11.17 `app.component.html`: 一个将 `SharedService` 分发给两个组件的 Angular 模板文件
+#### 清单 11.17 app.component.html：一个将 SharedService 分发给两个组件的 Angular 模板文件
 
 ```html
 <h2>Good Guys</h2>
@@ -5747,13 +5905,9 @@ export class AppComponent {
 <app-badguys [shared]="shared"></app-badguys>
 ```
 
-清单11.18展示了 Angular 组件 `good-guys.component`。第9行显示了 `shared` 输入，它从 `app.component` 获取 `SharedService` 可观察对象。第14到16行显示了在 `shared` 服务上订阅 `getCharacters`；这会将变量 `characters` 设置为该方法返回的可观察对象发出的值。第18到20行定义了 `hitCharacter` 方法，该方法接收两个参数：`character` 和 `damage`。此方法调用共享服务上的 `hitCharacter` 方法，并将 `character` 和 `damage` 作为参数传入。
+清单 11.18 展示了 Angular 组件 `good-guys.component`。第 9 行显示了 `shared` 输入，它从 `app.component` 获取 `SharedService` 可观察对象。第 14 到 16 行显示了在 `shared` 服务上订阅 `getCharacters`；这会将变量 `characters` 设置为该方法返回的可观察对象发出的值。第 18 到 20 行定义了 `hitCharacter` 方法，该方法接收两个参数：`character` 和 `damage`。此方法调用共享服务上的 `hitCharacter` 方法，并将 `character` 和 `damage` 作为参数传入。
 
-
-
-## 166 第11章 创建自定义Angular服务
-
-清单 11.18 good-guys.component.ts：一个监视并显示共享可观察对象的Angular组件
+#### 清单 11.18 good-guys.component.ts：一个监视并显示共享可观察对象的 Angular 组件
 
 ```typescript
 import { Component, OnInit, Input } from '@angular/core';
@@ -5779,9 +5933,9 @@ export class GoodGuysComponent implements OnInit {
 }
 ```
 
-清单 11.19 展示了一个显示角色列表的Angular模板。第3至5行显示角色的名字、种族和生命值。第6至8行显示阵营为'坏'的角色拥有一个按钮，该按钮调用`hitCharacter`方法，该方法接受角色对象和数字25作为参数。
+清单 11.19 展示了一个显示角色列表的 Angular 模板。第 3 至 5 行显示角色的名字、种族和生命值。第 6 至 8 行显示阵营为 '坏' 的角色拥有一个按钮，该按钮调用 `hitCharacter` 方法，该方法接受角色对象和数字 25 作为参数。
 
-清单 11.19 good-guys.component.html：一个显示角色列表的Angular模板
+#### 清单 11.19 good-guys.component.html：一个显示角色列表的 Angular 模板
 
 ```html
 <div *ngFor="let character of characters">
@@ -5796,9 +5950,9 @@ export class GoodGuysComponent implements OnInit {
 </div>
 ```
 
-清单 11.20 展示了一个CSS文件，它为每个角色添加边框，以帮助区分角色作为独立的实体。
+清单 11.20 展示了一个 CSS 文件，它为每个角色添加边框，以帮助区分角色作为独立的实体。
 
-清单 11.20 good-guys.component.css：一个将角色视觉分隔为各自卡片的CSS文件
+#### 清单 11.20 good-guys.component.css：一个将角色视觉分隔为各自卡片的 CSS 文件
 
 ```css
 b{
@@ -5814,9 +5968,9 @@ div {
 }
 ```
 
-清单 11.21 展示了Angular组件`badguys.component`。第10行显示输入属性`shared`，它从`app.component`获取`SharedService`的可观察对象。第15至17行显示在共享服务上订阅`getCharacters`；这将变量`characters`设置为从该方法返回的可观察对象发出的值。第19至21行定义了`hitCharacter`方法，该方法接受两个参数：`character`和`damage`。此方法调用共享服务上的`hitCharacter`方法，传入`character`和`damage`作为参数。
+清单 11.21 展示了 Angular 组件 `badguys.component`。第 10 行显示输入属性 `shared`，它从 `app.component` 获取 `SharedService` 的可观察对象。第 15 至 17 行显示在共享服务上订阅 `getCharacters`；这将变量 `characters` 设置为从该方法返回的可观察对象发出的值。第 19 至 21 行定义了 `hitCharacter` 方法，该方法接受两个参数：`character` 和 `damage`。此方法调用共享服务上的 `hitCharacter` 方法，传入 `character` 和 `damage` 作为参数。
 
-清单 11.21 badguys.component.ts：一个监视并显示共享可观察对象的Angular组件
+#### 清单 11.21 badguys.component.ts：一个监视并显示共享可观察对象的 Angular 组件
 
 ```typescript
 import { Component, OnInit, Input } from '@angular/core';
@@ -5843,11 +5997,9 @@ export class BadguysComponent implements OnInit {
 }
 ```
 
-## 168 第11章 创建自定义Angular服务
+清单 11.22 展示了一个显示角色列表的 Angular 模板。第 3 至 5 行显示角色的名字、种族和生命值。第 6 至 8 行显示阵营为 '好' 的角色也拥有一个按钮，该按钮调用 `hitCharacter` 方法，该方法接受角色对象和 25 作为参数。
 
-清单 11.22 展示了一个显示角色列表的Angular模板。第3至5行显示角色的名字、种族和生命值。第6至8行显示阵营为'好'的角色也拥有一个按钮，该按钮调用`hitCharacter`方法，该方法接受角色对象和25作为参数。
-
-清单 11.22 badguys.component.html：一个显示角色列表的Angular模板
+#### 清单 11.22 badguys.component.html：一个显示角色列表的 Angular 模板
 
 ```html
 <div *ngFor="let character of characters">
@@ -5862,9 +6014,9 @@ export class BadguysComponent implements OnInit {
 </div>
 ```
 
-清单 11.23 展示了一个CSS文件，它为每个角色添加边框，以帮助将角色视觉分隔为独立的实体。
+清单 11.23 展示了一个 CSS 文件，它为每个角色添加边框，以帮助将角色视觉分隔为独立的实体。
 
-清单 11.23 badguys.component.css：一个将角色视觉分隔为各自卡片的CSS文件
+#### 清单 11.23 badguys.component.css：一个将角色视觉分隔为各自卡片的 CSS 文件
 
 ```css
 b{
@@ -5880,39 +6032,37 @@ div {
 }
 ```
 
-图 11.5 展示了将"好人"组件与"坏人"组件连接起来的应用程序。点击"攻击"按钮会更新共享服务，该服务被两个组件监视。
+图 11.5 展示了将 "好人" 组件与 "坏人" 组件连接起来的应用程序。点击 "攻击" 按钮会更新共享服务，该服务被两个组件监视。
 
-![图 11.5 使用共享Angular服务更新多个组件](img/6cec51936e44f3a6d2c21b1752185726_184_0.png)
+![图 11.5 使用共享 Angular 服务更新多个组件](img/6cec51936e44f3a6d2c21b1752185726_184_0.png)
 
 ## 总结
 
-Angular自定义服务提供可以注入到其他Angular服务和组件中的功能。服务允许你将代码组织成功能模块，可用于创建可供Angular应用程序使用的功能库。
+Angular 自定义服务提供可以注入到其他 Angular 服务和组件中的功能。服务允许你将代码组织成功能模块，可用于创建可供 Angular 应用程序使用的功能库。
 
-本章重点介绍了使你能够实现自己的自定义Angular服务以向应用程序提供基于任务功能的工具。本章提供了实现各种类型自定义Angular服务的示例。
+本章重点介绍了使你能够实现自己的自定义 Angular 服务以向应用程序提供基于任务功能的工具。本章提供了实现各种类型自定义 Angular 服务的示例。
 
-# 12 享受Angular的乐趣
+# 12 享受 Angular 的乐趣
 
-Angular提供了丰富的功能，是一个功能齐全的框架。本书前面的章节已经为你提供了理解Angular所能提供的一切所需的知识。本章与前面的章节有点不同。它提供了一些额外的示例，对你目前所学的知识进行了扩展。本章中的示例汇集了前面所有章节的内容，并向你展示了如何构建有趣且有用的应用程序，以展示Angular的更多能力。
+Angular 提供了丰富的功能，是一个功能齐全的框架。本书前面的章节已经为你提供了理解 Angular 所能提供的一切所需的知识。本章与前面的章节有点不同。它提供了一些额外的示例，对你目前所学的知识进行了扩展。本章中的示例汇集了前面所有章节的内容，并向你展示了如何构建有趣且有用的应用程序，以展示 Angular 的更多能力。
 
-## 实现一个使用动画服务的Angular应用程序
+## 实现一个使用动画服务的 Angular 应用程序
 
-清单 12.1 至 12.6 展示了如何创建一个使用动画服务来为图像设置动画的Angular应用程序。当鼠标悬停在图像标题上时，图像会淡入并增长到正确的大小。当鼠标离开时，图像会缩小并淡出视野。
+清单 12.1 至 12.6 展示了如何创建一个使用动画服务来为图像设置动画的 Angular 应用程序。当鼠标悬停在图像标题上时，图像会淡入并增长到正确的大小。当鼠标离开时，图像会缩小并淡出视野。
 
 本示例的文件夹结构如下：
 
-- ./app.module.ts：导入动画的应用程序模块（见清单 12.1）
-- ./app.component.ts：应用程序的Angular根组件（见清单 12.2）
-- ./app.component.html：`app.component`的Angular模板文件（见清单 12.3）
-- ./animated：动画组件文件夹
-- ./animated/animated.component.ts：处理动画的Angular组件（见清单 12.4）
-- ./animated/animated.component.html：动画组件的Angular模板（见清单 12.5）
-- ./animated/animated.component.css：动画组件的CSS文件（见清单 12.6）
+- `./app.module.ts`：导入动画的应用程序模块（见清单 12.1）
+- `./app.component.ts`：应用程序的 Angular 根组件（见清单 12.2）
+- `./app.component.html`：`app.component` 的 Angular 模板文件（见清单 12.3）
+- `./animated`：动画组件文件夹
+- `./animated/animated.component.ts`：处理动画的 Angular 组件（见清单 12.4）
+- `./animated/animated.component.html`：动画组件的 Angular 模板（见清单 12.5）
+- `./animated/animated.component.css`：动画组件的 CSS 文件（见清单 12.6）
 
-172 第12章 享受Angular的乐趣
+清单 12.1 展示了应用程序模块。为了使应用程序能够使用动画服务，需要加载 `BrowserAnimationsModule`。第 3 行和第 15 行显示了从 `@angular/platform-browser/animations` 导入 `BrowserAnimationsModule`，然后将其添加到 `imports` 数组中，以使动画对应用程序可用。
 
-清单 12.1 展示了应用程序模块。为了使应用程序能够使用动画服务，需要加载`BrowserAnimationsModule`。第3行和第15行显示了从`@angular/platform-browser/animations`导入`BrowserAnimationsModule`，然后将其添加到`imports`数组中，以使动画对应用程序可用。
-
-清单 12.1 app.module.ts：包含BrowserAnimationsModule的Angular模块
+#### 清单 12.1 app.module.ts：包含 BrowserAnimationsModule 的 Angular 模块
 
 ```typescript
 import { BrowserModule } from '@angular/platform-browser';
@@ -5937,9 +6087,9 @@ import { AnimatedComponent } from './animated/animated.component';
 export class AppModule { }
 ```
 
-清单 12.2 展示了一个作为应用程序根的Angular组件。此组件加载一个使用动画组件的模板文件。
+清单 12.2 展示了一个作为应用程序根的 Angular 组件。此组件加载一个使用动画组件的模板文件。
 
-清单 12.2 app.component.ts：一个作为应用程序根的Angular组件
+#### 清单 12.2 app.component.ts：一个作为应用程序根的 Angular 组件
 
 ```typescript
 import { Component } from '@angular/core';
@@ -5952,11 +6102,9 @@ import { AnimatedComponent } from './animated/animated.component';
 export class AppComponent {}
 ```
 
-清单 12.3 展示了一个Angular模板，它四次加载动画组件，并将图像URL传递给输入属性`src`。它还为输入属性`title`添加了一个标题。
+清单 12.3 展示了一个 Angular 模板，它四次加载动画组件，并将图像 URL 传递给输入属性 `src`。它还为输入属性 `title` 添加了一个标题。
 
-
-
-清单 12.3 app.component.html：使用动画组件的 Angular 模板
+#### 清单 12.3 app.component.html：使用动画组件的 Angular 模板
 
 ```html
 <animated title="Arch"
@@ -5979,7 +6127,7 @@ export class AppComponent {}
 
 第 24 至 34 行展示了触发器 `bounceState`，它包含了过渡 `void => *`。这个过渡创建了一个动画，导致菜单项在应用首次加载时上下弹动。第 45 至 47 行定义了 `enter` 方法，它将变量 `state` 设置为 `active`。第 48 和 49 行定义了 `leave` 方法，它将变量 `state` 设置为 `inactive`。
 
-清单 12.4 animated.component.ts：使用动画服务的 Angular 组件
+#### 清单 12.4 animated.component.ts：使用动画服务的 Angular 组件
 
 ```typescript
 import { Component, OnInit, Input,
@@ -6037,7 +6185,7 @@ export class AnimatedComponent implements OnInit {
 
 清单 12.5 展示了一个显示标题和图像的 Angular 模板。第 1 行展示了 Angular 动画 `@bounceState` 的使用；它接收来自组件的变量 `state`，以确定应使用哪个动画序列。第 7 和 8 行展示了 `@fadeState` 的实现；它也接收传入的 `state` 来确定动画序列。
 
-清单 12.5 animated.component.html：一个显示带动画图像的标题的 Angular 模板
+#### 清单 12.5 animated.component.html：一个显示带动画图像的标题的 Angular 模板
 
 ```html
 <div [@bounceState]="'state'">
@@ -6053,7 +6201,7 @@ export class AnimatedComponent implements OnInit {
 
 清单 12.6 展示了一个 CSS 文件，它为图像的标题添加样式，并设置图像的尺寸。
 
-清单 12.6 animated.component.css：为动画组件设置样式的 CSS 文件
+#### 清单 12.6 animated.component.css：为动画组件设置样式的 CSS 文件
 
 ```css
 div {
@@ -6085,17 +6233,17 @@ img {
 
 此示例的文件夹结构如下：
 
--   `./app/app.component.ts`：应用的根组件（见清单 12.7）
--   `./app/app.component.html`：根组件的 Angular 模板（见清单 12.8）
--   `./app/zoomit`：包含 `zoomit` 组件的文件夹
--   `./app/zoomit/zoomit.component.ts`：名为 `zoomit` 的 Angular 组件（见清单 12.9）
--   `./app/zoomit/zoomit.component.html`：`zoomit` 组件的 Angular 模板（见清单 12.10）
--   `./app/zoomit/zoomit.component.css`：`zoomit` 组件的 CSS 文件（见清单 12.11）
--   `./assets/images`：示例图像文件所在的文件夹
+- `./app/app.component.ts`：应用的根组件（见清单 12.7）
+- `./app/app.component.html`：根组件的 Angular 模板（见清单 12.8）
+- `./app/zoomit`：包含 `zoomit` 组件的文件夹
+- `./app/zoomit/zoomit.component.ts`：名为 `zoomit` 的 Angular 组件（见清单 12.9）
+- `./app/zoomit/zoomit.component.html`：`zoomit` 组件的 Angular 模板（见清单 12.10）
+- `./app/zoomit/zoomit.component.css`：`zoomit` 组件的 CSS 文件（见清单 12.11）
+- `./assets/images`：示例图像文件所在的文件夹
 
 清单 12.7 展示了一个作为应用根的 Angular 组件。该组件加载一个使用 `zoomit` 组件的模板文件。
 
-清单 12.7 app.component.ts：作为应用根的 Angular 组件
+#### 清单 12.7 app.component.ts：作为应用根的 Angular 组件
 
 ```typescript
 import { Component } from '@angular/core';
@@ -6110,7 +6258,7 @@ export class AppComponent {}
 
 清单 12.8 展示了一个 Angular 模板，它通过将图像 URL 作为属性 `zsrc` 传递，创建了三个 `zoomit` 组件。
 
-清单 12.8 app.component.html：实现组件 `zoomit` 的 Angular 模板
+#### 清单 12.8 app.component.html：实现组件 zoomit 的 Angular 模板
 
 ```html
 <hr>
@@ -6124,7 +6272,7 @@ export class AppComponent {}
 
 清单 12.9 展示了 Angular `zoomit` 组件，它通过使用浏览器事件来处理图像某个部分的放大。第 13 至 16 行定义了 `ngOnInit` 方法，它根据通过 `zsrc` 输入传入的图像名称生成一个获取图像的 URL。`ngOnInit` 然后设置一个默认位置。第 18 至 23 行定义了 `imageClick` 事件，它接收一个参数 `event`。然后它从事件对象中获取元素，并用它来设置新的 x 和 y 坐标，作为图像缩放的基准。
 
-清单 12.9 zoomit.component.ts：使用浏览器事件放大图像部分的 Angular 组件
+#### 清单 12.9 zoomit.component.ts：使用浏览器事件放大图像部分的 Angular 组件
 
 ```typescript
 import { Component, OnInit, Input } from '@angular/core';
@@ -6155,7 +6303,7 @@ export class ZoomitComponent implements OnInit {
 
 清单 12.10 展示了一个 Angular 模板，它显示一个图像以及其旁边的一个放大视图，使用从 `imageClick` 函数生成的坐标。
 
-清单 12.10 zoomit.component.html：显示图像及其放大视图的 Angular 模板
+#### 清单 12.10 zoomit.component.html：显示图像及其放大视图的 Angular 模板
 
 ```html
 <img src="{{zsrc}}" (click)="imageClick($event)"/>
@@ -6167,7 +6315,7 @@ export class ZoomitComponent implements OnInit {
 
 清单 12.11 展示了一个 CSS 文件，它通过为放大图像添加边框来为应用设置样式。它还设置了 `width` 和 `height` 为 100px。
 
-清单 12.11 zoomit.component.css：为应用设置样式的 CSS 文件
+#### 清单 12.11 zoomit.component.css：为应用设置样式的 CSS 文件
 
 ```css
 img {
@@ -6184,235 +6332,232 @@ img {
 
 图 12.2 展示了自定义组件如何显示图像的放大视图。当你点击图像时，缩放的位置会改变。
 
-
-
 ## 实现支持拖放的 Angular 应用程序
 
 清单 12.12 至 12.20 展示了如何创建一个 Angular 应用程序，该程序可以显示图片，并将描述性标签拖放到图片上。
 
 本示例的文件夹结构如下：
 
-- ./app/app.component.ts：应用程序的根组件（见清单 12.12）
-- ./app/app.component.html：根组件的 Angular 模板（见清单 12.13）
-- ./app/app.component.css：app.component 的 CSS 文件（见清单 12.14）
-- ./app/drop-item：包含 drop-item 组件的文件夹
-- ./app/drop-item/drop-item.component.ts：名为 drop-item 的 Angular 组件（见清单 12.15）
-- ./app/drop-item/drop-item.component.html：drop-item 组件的 Angular 模板（见清单 12.16）
-- ./app/drop-item/drop-item.component.css：drop-item 组件的 CSS 文件（见清单 12.17）
-- ./app/drag-item：包含 drag-item 组件的文件夹
-- ./app/drag-item/drop-item.component.ts：允许元素被拖动的 Angular 组件（见清单 12.18）
-- ./app/drag-item/drop-item.component.html：drag-item 组件的 Angular 模板（见清单 12.19）
-- ./app/drag-item/drop-item.component.css：drag-item 组件的 CSS 文件（见清单 12.20）
-- ./assets/images：示例图像文件存放的文件夹
+- `./app/app.component.ts`：应用程序的根组件（见清单 12.12）
+- `./app/app.component.html`：根组件的 Angular 模板（见清单 12.13）
+- `./app/app.component.css`：app.component 的 CSS 文件（见清单 12.14）
+- `./app/drop-item`：包含 drop-item 组件的文件夹
+- `./app/drop-item/drop-item.component.ts`：名为 drop-item 的 Angular 组件（见清单 12.15）
+- `./app/drop-item/drop-item.component.html`：drop-item 组件的 Angular 模板（见清单 12.16）
+- `./app/drop-item/drop-item.component.css`：drop-item 组件的 CSS 文件（见清单 12.17）
+- `./app/drag-item`：包含 drag-item 组件的文件夹
+- `./app/drag-item/drag-item.component.ts`：允许元素被拖动的 Angular 组件（见清单 12.18）
+- `./app/drag-item/drag-item.component.html`：drag-item 组件的 Angular 模板（见清单 12.19）
+- `./app/drag-item/drag-item.component.css`：drag-item 组件的 CSS 文件（见清单 12.20）
+- `./assets/images`：示例图像文件存放的文件夹
 
 清单 12.12 展示了一个 Angular 组件，它实现了 drag-item 和 drop-item 组件，以便将标签应用于图片。第 12 至 24 行定义了构造函数，它初始化了一个可拖放到图片上的标签列表。
 
-```
-清单 12.12 app.component.ts：一个作为应用程序根组件的 Angular 组件
-01 import { Component } from '@angular/core';
-02 import { DragItemComponent } from './drag-item/drag-item.component';
-03 import { DropItemComponent } from './drop-item/drop-item.component';
-04 
-05 @Component({
-06   selector: 'app-root',
-07   templateUrl: './app.component.html',
-08   styleUrls: ['./app.component.css']
-09 })
-10 export class AppComponent {
-11   tagList: string[];
-12   constructor() {
-13     this.tagList = [
-14       'Nature',
-15       'Landscape',
-16       'Flora',
-17       'Sunset',
-18       'Desert',
-19       'Beauty',
-20       'Inspiring',
-21       'Summer',
-22       'Fun'
-23     ]
-24   }
-25   ngOnInit() {
-26   }
-27 }
+#### 清单 12.12 app.component.ts：一个作为应用程序根组件的 Angular 组件
+
+```typescript
+import { Component } from '@angular/core';
+import { DragItemComponent } from './drag-item/drag-item.component';
+import { DropItemComponent } from './drop-item/drop-item.component';
+
+@Component({
+  selector: 'app-root',
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.css']
+})
+export class AppComponent {
+  tagList: string[];
+  constructor() {
+    this.tagList = [
+      'Nature',
+      'Landscape',
+      'Flora',
+      'Sunset',
+      'Desert',
+      'Beauty',
+      'Inspiring',
+      'Summer',
+      'Fun'
+    ]
+  }
+  ngOnInit() {
+  }
+}
 ```
 
 清单 12.13 展示了一个 Angular 模板，它实现了 `drag-item` 和 `drop-item` 组件，允许标签被拖放到图片上。
 
-### 清单 12.13 app.component.html：一个实现了 drag-item 和 drop-item 组件的 Angular 模板
+#### 清单 12.13 app.component.html：一个实现了 drag-item 和 drop-item 组件的 Angular 模板
 
-```
-01 <h1>Tagging Images</h1>
-02 <hr>
-03 <div class="tagBox">
-04   <span *ngFor="let tagText of tagList">
-05     <drag-item [tag]="tagText"></drag-item>
-06   </span>
-07 </div>
-08 <hr>
-09
-10 <drop-item
-11   [imgsrc]="'../../assets/images/arch.jpg'">
-12 </drop-item>
-13 <drop-item
-14   [imgsrc]="'../../assets/images/lake.jpg'">
-15 </drop-item>
-16 <drop-item
-17   [imgsrc]="'../../assets/images/jump.jpg'">
-18 </drop-item>
-19 <drop-item
-20   [imgsrc]="'../../assets/images/flower.jpg'">
-21 </drop-item>
-22 <drop-item
-23   [imgsrc]="'../../assets/images/volcano.jpg'">
-24 </drop-item>
+```html
+<h1>Tagging Images</h1>
+<hr>
+<div class="tagBox">
+  <span *ngFor="let tagText of tagList">
+    <drag-item [tag]="tagText"></drag-item>
+  </span>
+</div>
+<hr>
+
+<drop-item
+  [imgsrc]="'../../assets/images/arch.jpg'">
+</drop-item>
+<drop-item
+  [imgsrc]="'../../assets/images/lake.jpg'">
+</drop-item>
+<drop-item
+  [imgsrc]="'../../assets/images/jump.jpg'">
+</drop-item>
+<drop-item
+  [imgsrc]="'../../assets/images/flower.jpg'">
+</drop-item>
+<drop-item
+  [imgsrc]="'../../assets/images/volcano.jpg'">
+</drop-item>
 ```
 
 清单 12.14 展示了一个 CSS 文件，它为应用程序设置样式，为 `drop-item` 自定义 HTML 标签提供了直接样式。
 
-### 清单 12.14 app.component.css：一个为应用程序设置样式的 CSS 文件
+#### 清单 12.14 app.component.css：一个为应用程序设置样式的 CSS 文件
 
-```
-01 .tagBox {
-02   width: 320px;
-03   padding: 5px;
-04 }
-05 drop-item{
-06   display: inline-block;
-07   vertical-align: top;
-08   margin-bottom: 5px;
-09 }
+```css
+.tagBox {
+  width: 320px;
+  padding: 5px;
+}
+drop-item{
+  display: inline-block;
+  vertical-align: top;
+  margin-bottom: 5px;
+}
 ```
 
 清单 12.15 展示了 Angular 组件 drop-item，它使用浏览器事件允许元素被放置到组件元素上。第 11 至 13 行定义了构造函数，它将 tags 变量初始化为空数组。
 
-第 16 至 18 行定义了 allowDrop 方法，它接受一个事件对象作为参数。在该事件对象上调用了 preventDefault 方法。第 19 至 25 行定义了 onDrop 方法，它接受一个事件对象作为参数。在事件对象上调用了 preventDefault。然后，将变量 data 赋值为事件中的 tagData，从而允许 Angular 将该数据添加到 tags 数组以及图片上的列表中。
+第 16 至 18 行定义了 `allowDrop` 方法，它接受一个事件对象作为参数。在该事件对象上调用了 `preventDefault` 方法。第 19 至 25 行定义了 `onDrop` 方法，它接受一个事件对象作为参数。在事件对象上调用了 `preventDefault`。然后，将变量 data 赋值为事件中的 tagData，从而允许 Angular 将该数据添加到 tags 数组以及图片上的列表中。
 
-### 清单 12.15 drop.component.ts：一个允许元素被放置到其上的 Angular 组件
+#### 清单 12.15 drop-item.component.ts：一个允许元素被放置到其上的 Angular 组件
 
-```
-01 import { Component, OnInit, Input } from '@angular/core';
-02
-03 @Component({
-04   selector: 'drop-item',
-05   templateUrl: './drop-item.component.html',
-06   styleUrls: ['./drop-item.component.css']
-07 })
-08 export class DropItemComponent implements OnInit {
-09   @Input() imgsrc: string;
-10   tags: string[];
-11   constructor() {
-12     this.tags = [];
-13   }
-14   ngOnInit() {
-15   }
-16   allowDrop(event) {
-17     event.preventDefault();
-18   }
-19   onDrop(event) {
-20     event.preventDefault();
-21     let data = JSON.parse(event.dataTransfer.getData('tagData'));
-22     if (!this.tags.includes(data.tag)){
-23       this.tags.push(data.tag);
-24     }
-25   }
-26 }
+```typescript
+import { Component, OnInit, Input } from '@angular/core';
+
+@Component({
+  selector: 'drop-item',
+  templateUrl: './drop-item.component.html',
+  styleUrls: ['./drop-item.component.css']
+})
+export class DropItemComponent implements OnInit {
+  @Input() imgsrc: string;
+  tags: string[];
+  constructor() {
+    this.tags = [];
+  }
+  ngOnInit() {
+  }
+  allowDrop(event) {
+    event.preventDefault();
+  }
+  onDrop(event) {
+    event.preventDefault();
+    let data = JSON.parse(event.dataTransfer.getData('tagData'));
+    if (!this.tags.includes(data.tag)){
+      this.tags.push(data.tag);
+    }
+  }
+}
 ```
 
 清单 12.16 展示了一个 Angular 模板，它显示一张图片以及分配给该图片的所有标签。
 
-### 清单 12.16 drop.component.html：一个显示图片以及拖放到该图片上的所有标签的 Angular 模板
+#### 清单 12.16 drop-item.component.html：一个显示图片以及拖放到该图片上的所有标签的 Angular 模板
 
-```
-01 <div class="taggedImage"
-02     (dragover)="allowDrop($event)"
-03     (drop)="onDrop($event)">
-04   <img src="{{imgsrc}}" />
-05   <span class="imageTag"
-06         *ngFor="let tag of tags">
-07     {{tag}}
-08   </span>
-09 </div>
+```html
+<div class="taggedImage"
+    (dragover)="allowDrop($event)"
+    (drop)="onDrop($event)">
+  <img src="{{imgsrc}}" />
+  <span class="imageTag"
+        *ngFor="let tag of tags">
+    {{tag}}
+  </span>
+</div>
 ```
 
 清单 12.17 展示了一个 CSS 文件，它通过为附加到图片的标签添加自定义样式来为应用程序设置样式。
 
-### 清单 12.17 drop.component.css：一个为应用程序设置样式的 CSS 文件
+#### 清单 12.17 drop-item.component.css：一个为应用程序设置样式的 CSS 文件
 
-```
-01 img {
-02   width: 100px;
-03 }
-04 .taggedImage {
-05   display: inline-block;
-06   width: 100px;
-07   background: #000000;
-08 }
-09 .imageTag {
-10   display: inline-block;
-11   width: 100px;
-12   font: 16px/18px Georgia, serif;
-13   text-align: center;
-14   color: white;
-15   background: linear-gradient(#888888, #000000);
-16 }
+```css
+img {
+  width: 100px;
+}
+.taggedImage {
+  display: inline-block;
+  width: 100px;
+  background: #000000;
+}
+.imageTag {
+  display: inline-block;
+  width: 100px;
+  font: 16px/18px Georgia, serif;
+  text-align: center;
+  color: white;
+  background: linear-gradient(#888888, #000000);
+}
 ```
 
 清单 12.18 展示了 Angular 组件 `drag-item`，它使用浏览器事件允许元素被拖动。第 14 至 17 行定义了 `onDrag` 方法，它接受一个事件对象作为参数。此方法向事件对象的 `dataTransfer` 项添加数据，以便在元素被放置时可以传输标签数据。
 
-### 清单 12.18 drag.component.ts：一个允许元素被拖动的 Angular 组件
+#### 清单 12.18 drag-item.component.ts：一个允许元素被拖动的 Angular 组件
 
-```
-01 import { Component, OnInit, Input } from '@angular/core';
-02 
-03 @Component({
-04   selector: 'drag-item',
-05   templateUrl: './drag-item.component.html',
-06   styleUrls: ['./drag-item.component.css']
-07 })
-08 export class DragItemComponent implements OnInit {
-09   @Input() tag: string;
-10   constructor() {
-11   }
-12   ngOnInit() {
-13   }
-14   onDrag(event) {
-15     event.dataTransfer.setData('tagData',
-16         JSON.stringify({tag: this.tag}));
-17   }
-18 }
+```typescript
+import { Component, OnInit, Input } from '@angular/core';
+
+@Component({
+  selector: 'drag-item',
+  templateUrl: './drag-item.component.html',
+  styleUrls: ['./drag-item.component.css']
+})
+export class DragItemComponent implements OnInit {
+  @Input() tag: string;
+  constructor() {
+  }
+  ngOnInit() {
+  }
+  onDrag(event) {
+    event.dataTransfer.setData('tagData',
+        JSON.stringify({tag: this.tag}));
+  }
+}
 ```
 
 清单 12.19 展示了一个 Angular 模板，它显示一个可拖动的标签。
 
-### 清单 12.19 drag.component.html：一个显示图片标签的 Angular 模板
+#### 清单 12.19 drag-item.component.html：一个显示图片标签的 Angular 模板
 
-```
-01 <div class="tagItem"
-02     (dragstart)="onDrag($event)"
-03     draggable="true">
-04   {{tag}}
-05 </div>
+```html
+<div class="tagItem"
+    (dragstart)="onDrag($event)"
+    draggable="true">
+  {{tag}}
+</div>
 ```
 
 清单 12.20 展示了一个 CSS 文件，它通过为标签添加自定义样式来为应用程序设置样式。
 
-### 清单 12.20 drag.component.css：一个为应用程序设置样式的 CSS 文件
+#### 清单 12.20 drag-item.component.css：一个为应用程序设置样式的 CSS 文件
 
-```
-01 .tagItem {
-02   display: inline-block;
-03   width: 100px;
-04   font: 16px/18px Georgia, serif;
-05   text-align: center;
-06   background: linear-gradient(#FFFFFF, #888888);
-07 }
+```css
+.tagItem {
+  display: inline-block;
+  width: 100px;
+  font: 16px/18px Georgia, serif;
+  text-align: center;
+  background: linear-gradient(#FFFFFF, #888888);
+}
 ```
 
 图 12.3 展示了 drag-item 和 drop-item 组件在浏览器中的工作方式：当你将一个标签拖放到图片上时，该标签会被添加到下方的列表中。
-
-
 
 ![](img/6cec51936e44f3a6d2c21b1752185726_200_0.png)
 
@@ -6424,82 +6569,84 @@ img {
 
 此示例的文件夹结构如下：
 
-- `./app/app.module.ts`：应用程序的根组件（参见清单 12.21）
-- `./app/mockbackend.service.ts`：`root` 组件的 Angular 模板（参见清单 12.22）
-- `./app/app.module.ts`：`app.component` 的 CSS 文件（参见清单 12.23）
+- `./app/app.module.ts`：应用程序的根模块（参见清单 12.21）
+- `./app/mockbackend.service.ts`：模拟后端服务（参见清单 12.22）
+- `./app/ratings.service.ts`：评分服务（参见清单 12.23）
 - `./app/app.component.ts`：应用程序的根组件（参见清单 12.24）
-- `./app/app.component.html`：`root` 组件的 Angular 模板（参见清单 12.25）
-- `./app/app.component.css`：`app.component` 的 CSS 文件（参见清单 12.26）
-- `./app/rated-item`：包含 `rated-item` 组件的文件夹。
+- `./app/app.component.html`：根组件的 Angular 模板（参见清单 12.25）
+- `./app/app.component.css`：app.component 的 CSS 文件（参见清单 12.26）
+- `./app/rated-item`：包含 `rated-item` 组件的文件夹
 - `./app/rated-item/rated-item.component.ts`：允许用户对项目进行评分的 Angular 组件（参见清单 12.27）
 - `./app/rated-item/rated-item.component.html`：`rated-item` 组件的 Angular 模板（参见清单 12.28）
 - `./app/rated-item/rated-item.component.css`：`rated-item` 组件的 CSS 文件（参见清单 12.29）
 
-清单 12.21 展示了应用模块。该模块使用了 InMemoryWebApiModule，它允许创建一个模拟数据库。第 18 行展示了 InMemoryWebApiModule 的实现。
+清单 12.21 展示了应用模块。该模块使用了 `InMemoryWebApiModule`，它允许创建一个模拟数据库。第 18 行展示了 `InMemoryWebApiModule` 的实现。
 
-```
-清单 12.21  app.module.ts：一个实现了 InMemoryWebApiModule 的 Angular 模块
-01 import { BrowserModule } from '@angular/platform-browser';
-02 import { NgModule } from '@angular/core';
-03 import { HttpModule } from '@angular/http';
-04 import { InMemoryWebApiModule } from 'angular-in-memory-web-api';
-05 
-06 import { AppComponent } from './app.component';
-07 import { RatedItemComponent } from './rated-item/rated-item.component';
-08 import { MockbackendService } from './mockbackend.service';
-09 
-10 @NgModule({
-11   declarations: [
-12     AppComponent,
-13     RatedItemComponent
-14   ],
-15   imports: [
-16     BrowserModule,
-17     HttpModule,
-18     InMemoryWebApiModule.forRoot(MockbackendService)
-19   ],
-20   providers: [],
-21   bootstrap: [AppComponent]
-22 })
-23 export class AppModule { }
+#### 清单 12.21 app.module.ts：一个实现了 InMemoryWebApiModule 的 Angular 模块
+
+```typescript
+import { BrowserModule } from '@angular/platform-browser';
+import { NgModule } from '@angular/core';
+import { HttpModule } from '@angular/http';
+import { InMemoryWebApiModule } from 'angular-in-memory-web-api';
+
+import { AppComponent } from './app.component';
+import { RatedItemComponent } from './rated-item/rated-item.component';
+import { MockbackendService } from './mockbackend.service';
+
+@NgModule({
+  declarations: [
+    AppComponent,
+    RatedItemComponent
+  ],
+  imports: [
+    BrowserModule,
+    HttpModule,
+    InMemoryWebApiModule.forRoot(MockbackendService)
+  ],
+  providers: [],
+  bootstrap: [AppComponent]
+})
+export class AppModule { }
 ```
 
 清单 12.22 展示了一个用作应用程序模拟数据库的 Angular 服务。第 4 行到第 29 行创建了一个项目数组，可以通过 HTTP 请求进行检索和更新。
 
-```
-清单 12.22  mockbackend.service.ts：一个 Angular 模拟后端服务
-01 import { InMemoryDbService } from 'angular-in-memory-web-api';
-02 export class MockbackendService implements InMemoryDbService {
-03   createDb() {
-04     const items = [
-05       {
-06         id: 1,
-07         title: "Waterfall",
-08         url: "../../assets/images/cliff.jpg",
-09         rating: 4
-10       },
-11       {
-12       id: 2,
-13       title: "Flower",
-14       url: ".../assets/images/flower.jpg",
-15       rating: 5
-16     },
-17     {
-18       id: 3,
-19       title: "Pyramid",
-20       url: ".../assets/images/pyramid.jpg",
-21       rating: 3
-22     },
-23     {
-24       id: 4,
-25       title: "Lake",
-26       url: ".../assets/images/lake.jpg",
-27       rating: 5
-28     }
-29   ]
-30   return {items};
-31   }
-32 }
+#### 清单 12.22 mockbackend.service.ts：一个 Angular 模拟后端服务
+
+```typescript
+import { InMemoryDbService } from 'angular-in-memory-web-api';
+export class MockbackendService implements InMemoryDbService {
+  createDb() {
+    const items = [
+      {
+        id: 1,
+        title: "Waterfall",
+        url: "../../assets/images/cliff.jpg",
+        rating: 4
+      },
+      {
+        id: 2,
+        title: "Flower",
+        url: "../../assets/images/flower.jpg",
+        rating: 5
+      },
+      {
+        id: 3,
+        title: "Pyramid",
+        url: "../../assets/images/pyramid.jpg",
+        rating: 3
+      },
+      {
+        id: 4,
+        title: "Lake",
+        url: "../../assets/images/lake.jpg",
+        rating: 5
+      }
+    ]
+    return {items};
+  }
+}
 ```
 
 清单 12.23 展示了一个使用 HTTP 来检索和更新模拟数据库中项目的 Angular 服务。第 6 行到第 11 行定义了 `RatedItem` 接口，其中包含严格类型的变量名。第 19 行到第 24 行定义了构造函数，该函数创建了一个 `http` 实例和一个名为 `itemObservable` 的新可观察对象。
@@ -6508,127 +6655,125 @@ img {
 
 第 39 行到第 47 行定义了 `updateRating` 方法，该方法接受两个参数：`item` 和 `newRating`。它将 `item` 的 `rating` 赋值为 `newRating`，并使用 HTTP put 请求来更新数据库中的项目。
 
-### 清单 12.23  ratings.service.ts：一个使用 HTTP 来检索带评分项目列表的 Angular 服务
+#### 清单 12.23 ratings.service.ts：一个使用 HTTP 来检索带评分项目列表的 Angular 服务
 
-```
-01 import { Injectable, OnInit } from '@angular/core';
-02 import { Http }      from '@angular/http';
-03 import { Observable } from 'rxjs/Observable';
-04 import 'rxjs/add/operator/toPromise';
-05 
-06 export class RatedItem {
-07   id: number;
-08   url: string;
-09   title: string;
-10   rating: number;
-11 }
-12 
-13 @Injectable()
-14 export class RatingsService {
-15   url = 'api/items';
-16   items: RatedItem[];
-17   public itemObservable: Observable<any>;
-18   observer;
-19   constructor(private http: Http) {
-20     this.itemObservable = new Observable(observer => {
-21       this.observer = observer;
-22       this.getItems();
-23     })
-24   }
-25   ngOnInit(){
-26   }
-27   getObservable(){
-28     return this.itemObservable;
-29   }
-30   getItems(){
-31     this.http.get(this.url)
-32            .toPromise()
-33            .then( response => {
-34              this.items = response.json().data;
-35              this.observer.next(this.items);
-36            })
-37            .catch(this.handleError);
-38   }
-39   updateRating(item, newRating){
-40     item.rating = newRating;
-41     const url = `${this.url}/${item.id}`;
-42     this.http
-43       .put(url, JSON.stringify(item))
-44       .toPromise()
-45       .then(() => this.getItems())
-46       .catch(this.handleError)
-47   }
-48   private handleError(error: any): Promise<any> {
-49     console.error('An error occurred', error);
-50     return Promise.reject(error.message || error);
-51   }
-52 }
-```
+```typescript
+import { Injectable, OnInit } from '@angular/core';
+import { Http }      from '@angular/http';
+import { Observable } from 'rxjs/Observable';
+import 'rxjs/add/operator/toPromise';
 
-## 188 第 12 章 乐在 Angular
+export class RatedItem {
+  id: number;
+  url: string;
+  title: string;
+  rating: number;
+}
+
+@Injectable()
+export class RatingsService {
+  url = 'api/items';
+  items: RatedItem[];
+  public itemObservable: Observable<any>;
+  observer;
+  constructor(private http: Http) {
+    this.itemObservable = new Observable(observer => {
+      this.observer = observer;
+      this.getItems();
+    })
+  }
+  ngOnInit(){
+  }
+  getObservable(){
+    return this.itemObservable;
+  }
+  getItems(){
+    this.http.get(this.url)
+           .toPromise()
+           .then( response => {
+             this.items = response.json().data;
+             this.observer.next(this.items);
+           })
+           .catch(this.handleError);
+  }
+  updateRating(item, newRating){
+    item.rating = newRating;
+    const url = `${this.url}/${item.id}`;
+    this.http
+      .put(url, JSON.stringify(item))
+      .toPromise()
+      .then(() => this.getItems())
+      .catch(this.handleError)
+  }
+  private handleError(error: any): Promise<any> {
+    console.error('An error occurred', error);
+    return Promise.reject(error.message || error);
+  }
+}
+```
 
 清单 12.24 展示了一个处理从 `RatingsService` 获取项目的 Angular 组件。第 21 行到第 27 行定义了 `ngOnInit`，它调用 `ratingsService` 的 `getObservable` 方法，将项目可观察对象赋值给 `itemsObservable`。然后，`items` 变量被赋值为从 `itemsObservable` 接收到的响应。
 
-### 清单 12.24  app.component.ts：一个作为应用程序根的 Angular 组件
+#### 清单 12.24 app.component.ts：一个作为应用程序根的 Angular 组件
 
-```
-01 import { Component } from '@angular/core';
-02 import { RatedItemComponent } from './rated-item/rated-item.component';
-03 import { Observable } from 'rxjs/Observable';
-04 import { RatingsService } from './ratings.service';
-05 
-06 @Component({
-07   selector: 'app-root',
-08   templateUrl: './app.component.html',
-09   styleUrls: ['./app.component.css'],
-10   providers: [ RatingsService ]
-11 })
-12 export class AppComponent {
-13   title = 'app';
-14   itemsObservable: Observable<any>;
-15   items: any[];
-16   constructor(
-17     public ratingsService: RatingsService
-18   ){
-19     this.items = [];
-20   }
-21   ngOnInit(){
-22     this.itemsObservable = this.ratingsService.getObservable();
-23     this.itemsObservable.subscribe(
-24       itemList => {
-25         this.items = itemList;
-26       });
-27   }
-28 }
+```typescript
+import { Component } from '@angular/core';
+import { RatedItemComponent } from './rated-item/rated-item.component';
+import { Observable } from 'rxjs/Observable';
+import { RatingsService } from './ratings.service';
+
+@Component({
+  selector: 'app-root',
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.css'],
+  providers: [ RatingsService ]
+})
+export class AppComponent {
+  title = 'app';
+  itemsObservable: Observable<any>;
+  items: any[];
+  constructor(
+    public ratingsService: RatingsService
+  ){
+    this.items = [];
+  }
+  ngOnInit(){
+    this.itemsObservable = this.ratingsService.getObservable();
+    this.itemsObservable.subscribe(
+      itemList => {
+        this.items = itemList;
+      });
+  }
+}
 ```
 
 清单 12.25 展示了一个实现了 `rated-item` 组件以显示已评分项目列表的 Angular 模板。`rated-item` 接受两个输入：`item` 和 `ratingsService`。
 
-### 清单 12.25  app.component.html：一个使用 rated-item 组件创建已评分项目列表的 Angular 模板
+#### 清单 12.25 app.component.html：一个使用 rated-item 组件创建已评分项目列表的 Angular 模板
 
-```
-01 <h1> Rated Images </h1>
-02 <hr>
-03 <div class="item"
-04     *ngFor="let item of items">
-05   <rated-item
-06     [item]="item"
-07     [ratingsService]="ratingsService">
-08   </rated-item>
-09 </div>
+```html
+<h1> Rated Images </h1>
+<hr>
+<div class="item"
+    *ngFor="let item of items">
+  <rated-item
+    [item]="item"
+    [ratingsService]="ratingsService">
+  </rated-item>
+</div>
 ```
 
 清单 12.26 展示了一个为 `app.component.html` 上的 `item` 类设置样式的 CSS 文件。
 
-### 清单 12.26  app.component.css：一个为应用程序设置样式的 CSS 文件
+#### 清单 12.26 app.component.css：一个为应用程序设置样式的 CSS 文件
 
-```
-01 .item{
-02   border: .5px solid black;
-03   display: inline-block;
-04   width:175px;
-05   text-align: center;
-06 }
+```css
+.item{
+  border: .5px solid black;
+  display: inline-block;
+  width:175px;
+  text-align: center;
+}
 ```
 
 清单 12.27 展示了一个显示已评分项目的 Angular 组件。第 13 行到第 15 行定义了构造函数方法，该方法初始化 `starArray` 的值。
@@ -6637,252 +6782,414 @@ img {
 
 第 21 行到第 27 行定义了 `getStarClass` 方法，该方法接受参数 `rating`。此方法用于分配每颗星的 CSS 类，以准确表示项目的评分。
 
-### 清单 12.27  rated-item.component.ts：一个显示图像及其评分的 Angular 组件
+#### 清单 12.27 rated-item.component.ts：一个显示图像及其评分的 Angular 组件
 
+```typescript
+import { Component, OnInit, Input } from '@angular/core';
+import { RatingsService } from '../ratings.service';
+
+@Component({
+  selector: 'rated-item',
+  templateUrl: './rated-item.component.html',
+  styleUrls: ['./rated-item.component.css']
+})
+export class RatedItemComponent implements OnInit {
+  @Input ("item") item: any;
+  @Input ("ratingsService") ratingsService: RatingsService;
+  starArray: number[];
+  constructor() {
+    this.starArray = [1,2,3,4,5];
+  }
+  ngOnInit() {
+  }
+  setRating(rating){
+    this.ratingsService.updateRating(this.item, rating);
+  }
+  getStarClass(rating){
+    if(this.item.rating >= rating){
+      return 'star-full';
+    } else {
+      return 'star-empty';
+    }
+  }
+}
 ```
-01 import { Component, OnInit, Input } from '@angular/core';
-02 import { RatingsService } from '../ratings.service';
-03 
-04 @Component({
-05   selector: 'rated-item',
-06   templateUrl: './rated-item.component.html',
-07   styleUrls: ['./rated-item.component.css']
-08 })
-09 export class RatedItemComponent implements OnInit {
-10   @Input ("item") item: any;
-11   @Input ("ratingsService") ratingsService: RatingsService;
-12   starArray: number[];
-13   constructor() {
-14     this.starArray = [1,2,3,4,5];
-15   }
-16   ngOnInit() {
-17   }
-```
-
-
 
 ## 符号
 
 + (加法) 运算符, 8
+
 && (逻辑与) 运算符, 10
+
 = 赋值运算符, 9
+
 /= 赋值运算符, 9
+
 += 赋值运算符, 9
+
 -= 赋值运算符, 9
+
 %= 赋值运算符, 9
+
 *= 赋值运算符, 9
+
 ` (反引号), 50–51
+
 { } (花括号), 10, 14, 61, 62, 75
+
 - (递减) 运算符, 8
+
 / (除法) 运算符, 8
+
 == (相等) 运算符, 9
+
 === (严格相等) 运算符, 9
+
 \' 转义码, 20
+
 \" 转义码, 20
+
 \\ 转义码, 20
+
 > (大于) 运算符, 9
+
 >= (大于或等于) 运算符, 9
+
 ++ (递增) 运算符, 8
+
 < (小于) 运算符, 9
+
 <= (小于或等于) 运算符, 9
+
 % (取模) 运算符, 8
+
 * (乘法) 运算符, 8
+
 != (不等于) 运算符, 9
+
 !== (严格不等于) 运算符, 9
+
 ! (逻辑非) 运算符, 10
+
 || (逻辑或) 运算符, 10
+
 ( ) (圆括号), 10, 14, 82, 103
+
 | (管道符号), 72
+
 - (减法) 运算符, 8
+
 ~ (波浪号), 50–51
 
 app.component.css 清单
+
 AreaCalcService, 155
+
 带组件的自定义指令, 100
+
 拖放应用程序, 181–182
+
 RandomImageService, 159
+
 带导航栏的路由器, 141
+
 星级评分应用程序, 190
 
 ## A
 
 ActivatedRoute，导入, 134
+
 addClass() 方法, 92
+
 加法运算符, 8
+
 AddNums 接口, 31
+
 警报，异步, 162
+
 allowDrop() 方法, 182
+
 逻辑与运算符, 10
 
 app.component.html 清单
-- 动画应用程序, 172–173
-- AreaCalcService, 154–155
-- 带组件的自定义指令, 99–100
-- 拖放应用程序, 181
-- 图像缩放应用程序, 177
-- PiService, 152
-- PromiseService, 162
-- RandomImageService, 159
-- 带导航栏的路由器, 140
-- SharedService, 165
-- 星级评分应用程序, 189–190
-- 缩放指令, 97–98
 
-- Angular 引导程序，创建, 44–48
-  - app.module.js, 47
-  - app.module.ts, 46
-  - first.component.js, 48
-  - first.component.ts, 46
-  - first.html, 45
+动画应用程序, 172–173
+
+AreaCalcService, 154–155
+
+带组件的自定义指令, 99–100
+
+拖放应用程序, 181
+
+图像缩放应用程序, 177
+
+PiService, 152
+
+PromiseService, 162
+
+RandomImageService, 159
+
+带导航栏的路由器, 140
+
+SharedService, 165
+
+星级评分应用程序, 189–190
+
+缩放指令, 97–98
+
+Angular 引导程序，创建, 44–48
+
+app.module.js, 47
+
+app.module.ts, 46
+
+first.component.js, 48
+
+first.component.ts, 46
+
+first.html, 45
 
 Angular 快速入门网站, 40
+
 动画服务, 116
+
 动画组件
-- animated.component.css, 175
-- animated.component.html, 175
-- animated.component.ts, 173–174
+
+animated.component.css, 175
+
+animated.component.html, 175
+
+animated.component.ts, 173–174
 
 动画应用程序
-- animated.component.css, 175
-- animated.component.html, 175
-- animated.component.ts, 173–174
-- app.component.html, 172–173
-- app.component.ts, 172
-- app.module.ts, 171–172
+
+
+
+- `animated.component.css`, 175
+- `animated.component.html`, 175
+- `animated.component.ts`, 173–174
+- `app.component.html`, 172–173
+- `app.component.ts`, 172
+- `app.module.ts`, 171–172
 - 文件夹结构, 171
 
-app.component.ts 清单
+`app.component.ts` 清单
+
 - 动画应用程序, 172
-- AreaCalcService, 153–154
+- `AreaCalcService`, 153–154
 - 带组件的自定义指令, 99
 - 拖放应用程序, 180–181
 - 图像缩放应用程序, 176–177
-- PiService, 151
-- PromiseService, 161–162
-- RandomImageService, 158–159
+- `PiService`, 151
+- `PromiseService`, 161–162
+- `RandomImageService`, 158–159
 - 带导航栏的路由器, 140
 - 带参数的路由器, 144
-- SharedService, 165
+- `SharedService`, 165
 - 简单路由器应用程序, 135–136
 - 星级评分应用程序, 189
 
 匿名函数, 16
-any 数据类型, 30
 
-app.module.js 清单, 47
+`any` 数据类型, 30
 
-**app.module.ts 清单**
+`app.module.js` 清单, 47
+
+**`app.module.ts` 清单**
+
 Angular 引导程序, 46
+
 动画应用程序, 171–172
+
 简单模拟服务器实现, 119–120, 126
+
 简单路由器实现, 134–135
+
 星级评分应用程序, 186
-**AppRoutingModule，导入, 134**
-**app-routing.module.ts 清单**
+
+**`AppRoutingModule`，导入, 134**
+
+**`app-routing.module.ts` 清单**
+
 带导航栏的路由器, 138–139
+
 带参数的路由器, 144
+
 简单路由器实现, 135–136
-**AreaCalcService, 152–156**
-app.component.css, 155
-app.component.html, 154–155
-app.component.ts, 153–154
-area-calc.service.ts, 152–153
-**area-calc.service.ts 清单, 152–153**
+
+**`AreaCalcService`, 152–156**
+
+`app.component.css`, 155
+
+`app.component.html`, 154–155
+
+`app.component.ts`, 153–154
+
+`area-calc.service.ts`, 152–153
+
+**`area-calc.service.ts` 清单, 152–153**
+
 算术运算符, 8
-**Array 对象, 22–25**
+
+**`Array` 对象, 22–25**
+
 向其添加项, 25
+
 合并, 24
+
 转换为字符串, 24
+
 遍历, 24
+
 操作, 22–24
+
 方法, 23
+
 从中移除项, 25
+
 搜索, 25
+
 **数组**
+
 JavaScript, 7
+
 向其添加项, 25
+
 合并, 24
+
 转换为字符串, 24
+
 遍历, 24
+
 操作, 22–24
+
 方法, 23
+
 从中移除项, 25
+
 搜索, 25
+
 路由，定义, 132–133
+
 TypeScript, 30
+
 **赋值运算符, 8–9**
+
 星号 (*), 8
+
 异步管道, 70
+
 异步警报, 162
+
 属性绑定, 79
+
 **属性指令, 38, 91–94**
-attribute.component.css, 94
-attribute.component.html, 93
-attribute.component.ts, 92–93
+
+`attribute.component.css`, 94
+
+`attribute.component.html`, 93
+
+`attribute.component.ts`, 92–93
+
 自定义属性指令, 95–98
-ngForm, 91
-ngModel, 91
-ngStyle, 91
-**attribute.component.css 清单, 94**
-**attribute.component.html 清单, 93**
-**attribute.component.ts 清单, 92–93**
+
+`ngForm`, 91
+
+`ngModel`, 91
+
+`ngStyle`, 91
+
+**`attribute.component.css` 清单, 94**
+
+**`attribute.component.html` 清单, 93**
+
+**`attribute.component.ts` 清单, 92–93**
 
 ## B
 
-\b (退格) 转义码, 20
+`\b` (退格) 转义码, 20
+
 反引号 (`), 50–51
+
 退格转义码, 20
+
 **反派角色组件**
-badguys.component.css, 168
-badguys.component.html, 168
-badguys.component.ts, 167
-**basicExpressions.component.ts 清单, 63**
+
+`badguys.component.css`, 168
+
+`badguys.component.html`, 168
+
+`badguys.component.ts`, 167
+
+**`basicExpressions.component.ts` 清单, 63**
+
 绑定。参见数据绑定
+
 **布尔数据类型**
+
 JavaScript, 7
+
 TypeScript, 29
+
 引导元数据选项 (NgModule), 43
+
 引导程序，创建, 44–48
-- app.module.js, 47
-- app.module.ts, 46
-- first.component.js, 48
-- first.component.ts, 46
-- first.html 清单, 45
-border() 函数, 96
+
+- `app.module.js`, 47
+- `app.module.ts`, 46
+- `first.component.js`, 48
+- `first.component.ts`, 46
+- `first.html` 清单, 45
+
+`border()` 函数, 96
+
 花括号 ({ }), 61, 62
-break 语句, 13–14
+
+`break` 语句, 13–14
+
 浏览器事件, 103–104
-BrowserAnimationsModule，加载, 172
+
+`BrowserAnimationsModule`，加载, 172
+
 浏览器
+
 - 浏览器事件, 103–104
 - 支持情况, 5–6
+
 构建模板, 50–51
+
 内置指令, 87–88
+
 - 属性指令, 38, 91–94
-  - attribute.component.css, 94
-  - attribute.component.html, 93
-  - attribute.component.ts, 92–93
-  - ngForm, 91
-  - ngModel, 91
-  - ngStyle, 91
+  - `attribute.component.css`, 94
+  - `attribute.component.html`, 93
+  - `attribute.component.ts`, 92–93
+  - `ngForm`, 91
+  - `ngModel`, 91
+  - `ngStyle`, 91
 - 组件指令, 38, 88
 - 结构指令, 38, 88–91
   - 定义, 87
-  - ngFor, 88, 120, 125, 130, 159
-  - ngIf, 88–89
-  - ngSwitch, 88–89
-  - ngSwitchCase, 88, 89
-  - ngSwitchDefault, 88
-  - structural.component.ts, 89–90
+  - `ngFor`, 88, 120, 125, 130, 159
+  - `ngIf`, 88–89
+  - `ngSwitch`, 88–89
+  - `ngSwitchCase`, 88, 89
+  - `ngSwitchDefault`, 88
+  - `structural.component.ts`, 89–90
+
 内置事件, 103–104
+
 内置管道
-- builtInPipes.component.ts, 71–72
+
+- `builtInPipes.component.ts`, 71–72
 - 表格, 69–70
+
 内置服务
+
 - 动画, 116
 - 表单, 116
 - HTTP, 116
-  - 发送 GET 请求, 116–117
+  - 发送 GET 请请求, 116–117
   - JSON 文件实现与访问, 118–121
   - 发送 PUT 请求, 116–117
   - 请求配置, 117
@@ -6890,75 +7197,81 @@ BrowserAnimationsModule，加载, 172
   - 简单模拟服务器实现, 121–127
   - 简单模拟服务器更新, 127–132
 - 路由器, 116
-  - ActivatedRoute，导入, 134
+  - `ActivatedRoute`，导入, 134
   - 路由导航, 134
   - 路由对象参数, 133
-  - Router，导入, 134
+  - `Router`，导入, 134
   - 带导航栏的路由器, 138–143
   - 带参数的路由器, 143–147
   - 路由数组, 132–133
   - 包含路由模块, 134
   - 简单路由器实现, 134–137
-builtInPipes.component.ts 清单, 71–72
+
+`builtInPipes.component.ts` 清单, 71–72
 
 ## C
 
 回调函数, 16
-canActivate 属性 (路由对象), 133
-canActivateChild 属性 (路由对象), 133
-canDeactivate 属性 (路由对象), 133
-canLoad 属性 (路由对象), 133
+
+`canActivate` 属性 (路由对象), 133
+
+`canActivateChild` 属性 (路由对象), 133
+
+`canDeactivate` 属性 (路由对象), 133
+
+`canLoad` 属性 (路由对象), 133
+
 回车转义码, 20
+
 层叠样式表。参见 CSS (层叠样式表)
-catch() 方法, 117
 
+`catch()` 方法, 117
 
-
-catch 语句, 26
+`catch` 语句, 26
 
 变更检测, 111–114
 
 （变更）事件, 103
 
-changeLoop() 方法, 156
+`changeLoop()` 方法, 156
 
-changeSize() 函数, 96
+`changeSize()` 函数, 96
 
-character.component.css 清单, 108
+`character.component.css` 清单, 108
 
-character.component.html 清单, 108
+`character.component.html` 清单, 108
 
-character.component.ts 清单, 107–108
+`character.component.ts` 清单, 107–108
 
-charAt() 方法, 20
+`charAt()` 方法, 20
 
-charCodeAt() 方法, 20
+`charCodeAt()` 方法, 20
 
-charObservable, 163
+`charObservable`, 163
 
 子组件，从父组件删除数据, 107–110
 
-Children 属性（路由对象）, 133
+`Children` 属性（路由对象）, 133
 
 类绑定, 79–80
 
-class.component.ts 清单, 80
+`class.component.ts` 清单, 80
 
 类。**另见** 服务
 
-- @directive, 95
+- `@directive`, 95
 - 绑定, 79–80
-- Component, 64–66
+- `Component`, 64–66
 - 定义, 32
-- EventEmitter, 104
+- `EventEmitter`, 104
 - 导出类
-  - Directive, 95
-  - ZoomDirective, 97
+  - `Directive`, 95
+  - `ZoomDirective`, 97
 - 继承, 33
 - 管道, 72
-- SecretAgent, 33
+- `SecretAgent`, 33
 
-classExpressions.component.ts 清单, 64–65
+`classExpressions.component.ts` 清单, 64–65
 
 CLI（命令行界面）, 40–41。另见命令
 
@@ -6975,34 +7288,34 @@ CLI（命令行界面）, 40–41。另见命令
 
 命令。**另见** 指令
 
-- ng eject, 41
-- ng generate component, 41
-- ng generate directive, 41
-- ng generate enum, 41
-- ng generate guard, 41
-- ng generate interface, 41
-- ng generate module, 41
-- ng generate pipe, 41
-- ng generate service, 41
-- ng new, 41
-- ng serve, 41
-- npm install, 121
+- `ng eject`, 41
+- `ng generate component`, 41
+- `ng generate directive`, 41
+- `ng generate enum`, 41
+- `ng generate guard`, 41
+- `ng generate interface`, 41
+- `ng generate module`, 41
+- `ng generate pipe`, 41
+- `ng generate service`, 41
+- `ng new`, 41
+- `ng serve`, 41
+- `npm install`, 121
 
 比较运算符, 9–10
 
-Component 类, 64–66
+`Component` 类, 64–66
 
-**component 属性（路由对象）**, 133
+**`component` 属性（路由对象）**, 133
 
 **组件**, 42–43, 185–192。**另见** 清单；服务
 
 - Angular 引导程序, 44–48
 - 动画应用, 172–173
-  - animated.component.css, 175
-  - animated.component.html, 175
-  - animated.component.ts, 173–174
-  - app.component.ts, 172
-  - app.module.ts, 171–172
+  - `animated.component.css`, 175
+  - `animated.component.html`, 175
+  - `animated.component.ts`, 173–174
+  - `app.component.ts`, 172
+  - `app.module.ts`, 171–172
   - 文件夹结构, 171
 - 配置, 49–50
 - 构造函数, 53–54
@@ -7013,222 +7326,175 @@ Component 类, 64–66
   - 根组件, 99
     - 根组件的 CSS, 100
     - 根组件的 HTML, 99–100
-
-在组件中删除数据, 107–110
-
-依赖注入
-- 使用依赖注入构建嵌套组件, 56–58
-- 定义, 38–39, 56
-- 使用依赖注入传递数据, 58–59
-- 带有输入的示例应用, 59–60
-
-拖放应用
-- app.component.css, 181–182
-- app.component.html, 181
-- app.component.ts, 180–181
-- drag.component.css, 184
-- drag.component.html, 184
-- drag.component.ts, 184
-- drop.component.css, 183
-- drop.component.html, 183
-- drop.component.ts, 182
-- 文件夹结构, 179–180
-
-从组件发出自定义事件, 104
-
-图片缩放应用
-- app.component.html, 177
-- app.component.ts, 176–177
-- 文件夹结构, 176
-- zoomit.component.css, 178
-- zoomit.component.html, 178
-- zoomit.component.ts, 177–178
-
-导入, 42–43
-
-在组件中使用内联 CSS 和 HTML, 51–52
-
-将自定义服务集成到组件中, 149–150
-
-嵌套组件, 104–106
-
-NgModule, 43–44
-
-选择器, 50
-
-职责分离, 39
-
-星级评定应用
-- app.component.css, 190
-- app.component.html, 189–190
-- app.component.ts, 189
-- app.module.ts, 186
-- 文件夹结构, 185
-- mockbackend.service.ts, 186–187
-- rated-item.component.css, 191–192
-- rated-item.component.html, 191
-- rated-item.component.ts, 190–191
-- ratings.service.ts, 187–188
-
-模板
-- 构建, 50–51
-- 外部模板, 54–56
-
-组件指令, 38, 88
-
-concat() 方法, 20, 21, 23, 24
-
-条件语句
-- if 语句, 10
-- switch 语句, 11
-
-配置
-- 组件, 49–50
+- 在组件中删除数据, 107–110
+- 依赖注入
+  - 使用依赖注入构建嵌套组件, 56–58
+  - 定义, 38–39, 56
+  - 使用依赖注入传递数据, 58–59
+  - 带有输入的示例应用, 59–60
+- 拖放应用
+  - `app.component.css`, 181–182
+  - `app.component.html`, 181
+  - `app.component.ts`, 180–181
+  - `drag.component.css`, 184
+  - `drag.component.html`, 184
+  - `drag.component.ts`, 184
+  - `drop.component.css`, 183
+  - `drop.component.html`, 183
+  - `drop.component.ts`, 182
+  - 文件夹结构, 179–180
+- 从组件发出自定义事件, 104
+- 图片缩放应用
+  - `app.component.html`, 177
+  - `app.component.ts`, 176–177
+  - 文件夹结构, 176
+  - `zoomit.component.css`, 178
+  - `zoomit.component.html`, 178
+  - `zoomit.component.ts`, 177–178
+- 导入, 42–43
+- 在组件中使用内联 CSS 和 HTML, 51–52
+- 将自定义服务集成到组件中, 149–150
+- 嵌套组件, 104–106
+- `NgModule`, 43–44
 - 选择器, 50
-- 模板, 50–51
-- HTTP 请求, 117
-
-常量数据服务, 151–152
-- app.component.html, 152
-- app.component.ts, 151
-- pi.service.ts, 151
-
-constructor.component.ts 清单, 53
-
-构造函数, 53–54
-
-容器组件, 100
-- 其 CSS, 101
-- 其 HTML, 101
-
-容器指令
-- container.component.css, 101
-- container.component.html, 101
-- container.component.ts, 100
-
-内容，使用 CLI（命令行界面）生成, 40–41
-
-continue 语句, 13–14
-
-自定义服务, 201
-
-将数组转换为字符串, 24
-
-createAlert() 方法, 161
-
-createDb() 方法, 127
-
-createDelete.component.css 清单, 125–126
-
-createDelete.component.html 清单, 125
-
-createDelete.component.ts 清单, 123–124
-
-createTimedAlert() 方法, 161
-
-createUser() 方法, 122, 124
-
-创建。另见 定义
-- Angular 应用
-  - Angular 引导程序, 44–48
-  - 动画应用, 171–176
-  - 组件, 42–43
-  - 拖放应用, 179–185
-  - 图片缩放应用, 176–179
-  - NgModule, 43–44
-  - 星级评定应用, 185–192
-- 自定义指令
+- 职责分离, 39
+- 星级评定应用
+  - `app.component.css`, 190
+  - `app.component.html`, 189–190
+  - `app.component.ts`, 189
+  - `app.module.ts`, 186
+  - 文件夹结构, 185
+  - `mockbackend.service.ts`, 186–187
+  - `rated-item.component.css`, 191–192
+  - `rated-item.component.html`, 191
+  - `rated-item.component.ts`, 190–191
+  - `ratings.service.ts`, 187–188
+- 模板
+  - 构建, 50–51
+  - 外部模板, 54–56
+- 组件指令, 38, 88
+- `concat()` 方法, 20, 21, 23, 24
+- 条件语句
+  - `if` 语句, 10
+  - `switch` 语句, 11
+- 配置
+  - 组件, 49–50
+  - 选择器, 50
+  - 模板, 50–51
+  - HTTP 请请求, 117
+- 常量数据服务, 151–152
+  - `app.component.html`, 152
+  - `app.component.ts`, 151
+  - `pi.service.ts`, 151
+- `constructor.component.ts` 清单, 53
+- 构造函数, 53–54
+- 容器组件, 100
+  - 其 CSS, 101
+  - 其 HTML, 101
+- 容器指令
+  - `container.component.css`, 101
+  - `container.component.html`, 101
+  - `container.component.ts`, 100
+- 内容，使用 CLI（命令行界面）生成, 40–41
+- `continue` 语句, 13–14
+- 自定义服务, 201
+- 将数组转换为字符串, 24
+- `createAlert()` 方法, 161
+- `createDb()` 方法, 127
+- `createDelete.component.css` 清单, 125–126
+- `createDelete.component.html` 清单, 125
+- `createDelete.component.ts` 清单, 123–124
+- `createTimedAlert()` 方法, 161
+- `createUser()` 方法, 122, 124
+- 创建。另见 定义
+  - Angular 应用
+    - Angular 引导程序, 44–48
+    - 动画应用, 171–176
+    - 组件, 42–43
+    - 拖放应用, 179–185
+    - 图片缩放应用, 176–179
+    - `NgModule`, 43–44
+    - 星级评定应用, 185–192
+  - 自定义指令
+    - 自定义属性指令, 95–98
+    - 自定义组件指令, 98–102
+  - 自定义管道, 73–74
+  - `Observable` 对象, 110–111
+- CSS（层叠样式表）
+  - Angular 应用中的内联 CSS, 51–52
+  - 清单
+    - `app.component.css`, 100, 141, 159, 181–182, 190
+    - `attribute.component.css`, 94
+    - `character.component.css`, 108
+    - `container.component.css`, 101
+    - `details.component.css`, 109
+    - `drag.component.css`, 184
+    - `drop.component.css`, 183
+    - `external.css`, 55
+    - `http.component.css`, 120–121
+    - `outer.css`, 57
+    - `rated-item.component.css`, 191–192
+    - `update.component.css`, 131–132
+    - `zoomit.component.css`, 178
+- 花括号 ({{ }}), 10, 14, 75
+- `currency` 管道, 69
+- 自定义指令, 95
   - 自定义属性指令, 95–98
   - 自定义组件指令, 98–102
-- 自定义管道, 73–74
-- Observable 对象, 110–111
-
-CSS（层叠样式表）
-- Angular 应用中的内联 CSS, 51–52
-- 清单
-  - app.component.css, 100, 141, 159, 181–182, 190
-  - attribute.component.css, 94
-  - character.component.css, 108
-  - container.component.css, 101
-  - details.component.css, 109
-  - drag.component.css, 184
-  - drop.component.css, 183
-  - external.css, 55
-  - http.component.css, 120–121
-  - outer.css, 57
-  - rated-item.component.css, 191–192
-  - update.component.css, 131–132
-  - zoomit.component.css, 178
-
-花括号 ({{ }}), 10, 14, 75
-
-currency 管道, 69
-
-自定义指令, 95
-- 自定义属性指令, 95–98
-- 自定义组件指令, 98–102
-  - 容器组件, 100
-    - 容器组件的 CSS, 101
-    - 根组件的 CSS, 100
-    - 容器组件的 HTML, 101
-    - 根组件的 HTML, 99–100
-  - 根组件, 99
-
-自定义事件, 104
-- 使用自定义事件删除数据, 107–110
-- 从组件发出, 104
-- 使用监听器处理, 104
-- 在嵌套组件中实现, 104–106
-
-自定义对象, 18–19
-
-自定义管道, 72–74
-
-自定义服务, 149
-- 常量数据服务, 151–152
-  - app.component.html, 152
-  - app.component.ts, 151
-  - pi.service.ts, 151
-- 数据转换服务, 152–156
-  - app.component.css, 155
-  - app.component.html, 154–155
-  - app.component.ts, 153–154
-  - area-calc.service.ts, 152–153
-- 集成到应用中, 149–150
-- 返回 Promise 的服务, 161–162
-- 共享服务, 162–169
-  - app.component.html, 165
-  - app.component.ts, 165
-  - badguys.component.css, 168
-  - badguys.component.html, 168
-  - badguys.component.ts, 167
-  - good-guys.component.css, 167
-  - good-guys.component.html, 166
-  - good-guys.component.ts, 166
-  - shared.service.ts, 163–164
-- 可变数据服务, 156–160
-  - app.component.css, 159
-  - app.component.html, 159
-  - app.component.ts, 158–159
-  - random-image.service.ts, 157–158
-
-**customevent.component.html 清单, 105–106**
-
-**customevent.component.ts 清单, 105**
-
-**customPipes.component.ts 清单, 73–74**
-
-**custom.pipe.ts 清单, 73**
+    - 容器组件, 100
+      - 容器组件的 CSS, 101
+      - 根组件的 CSS, 100
+      - 容器组件的 HTML, 101
+      - 根组件的 HTML, 99–100
+    - 根组件, 99
+- 自定义事件, 104
+  - 使用自定义事件删除数据, 107–110
+  - 从组件发出, 104
+  - 使用监听器处理, 104
+  - 在嵌套组件中实现, 104–106
+- 自定义对象, 18–19
+- 自定义管道, 72–74
+- 自定义服务, 149
+  - 常量数据服务, 151–152
+    - `app.component.html`, 152
+    - `app.component.ts`, 151
+    - `pi.service.ts`, 151
+  - 数据转换服务, 152–156
+    - `app.component.css`, 155
+    - `app.component.html`, 154–155
+    - `app.component.ts`, 153–154
+    - `area-calc.service.ts`, 152–153
+  - 集成到应用中, 149–150
+  - 返回 Promise 的服务, 161–162
+  - 共享服务, 162–169
+    - `app.component.html`, 165
+    - `app.component.ts`, 165
+    - `badguys.component.css`, 168
+    - `badguys.component.html`, 168
+    - `badguys.component.ts`, 167
+    - `good-guys.component.css`, 167
+    - `good-guys.component.html`, 166
+    - `good-guys.component.ts`, 166
+    - `shared.service.ts`, 163–164
+  - 可变数据服务, 156–160
+    - `app.component.css`, 159
+    - `app.component.html`, 159
+    - `app.component.ts`, 158–159
+    - `random-image.service.ts`, 157–158
+- **`customevent.component.html` 清单, 105–106**
+- **`customevent.component.ts` 清单, 105**
+- **`customPipes.component.ts` 清单, 73–74**
+- **`custom.pipe.ts` 清单, 73**
 
 ## D
 
-delete() 方法, 116
+`delete()` 方法, 116
 
-deleteChar() 方法, 107
+`deleteChar()` 方法, 107
 
-deleteUser() 函数, 122
+`deleteUser()` 函数, 122
 
-deleteUser() 方法, 124
+`deleteUser()` 方法, 124
 
 删除数据, 107–110
 
@@ -7237,22 +7503,23 @@ deleteUser() 方法, 124
 - JavaScript, 6–7
 - TypeScript, 29–30
 
-**data.service.ts 清单, 122, 127–128**
+**`data.service.ts` 清单, 122, 127–128**
 
-date 管道, 70
+`date` 管道, 70
 
-debounce() 方法, 117
+`debounce()` 方法, 117
 
-declarations 元数据, 43, 56
+`declarations` 元数据, 43, 56
 
 ### 装饰器
 
-- @NgModule, 43–44, 56
-- @pipe, 72
+- `@NgModule`, 43–44, 56
+- `@pipe`, 72
 
 递减运算符, 8
 
 定义。另见 创建
+
 - 类, 32
 - 函数, 14–15
 - 接口, 31
@@ -7261,6 +7528,7 @@ declarations 元数据, 43, 56
 - 变量, 6
 
 依赖注入
+
 - 使用依赖注入构建嵌套组件, 56–58
 - 数据，使用依赖注入传递, 58–59
 - 定义, 38–39, 56
@@ -7269,6 +7537,7 @@ declarations 元数据, 43, 56
 - 使用场景, 149–150
 
 数据绑定, 75
+
 - 属性绑定, 79
 - 类绑定, 79–80
 - 定义, 38
@@ -7278,93 +7547,148 @@ declarations 元数据, 43, 56
 - 样式绑定, 81–82
 - 双向绑定, 85–86
 
-数据变更，使用可观测对象检测, 111–114
+数据变更，使用可观测对象检浫, 111–114
 
-**details.component.css 清单, 109**
+**`details.component.css` 清单, 109**
 
-**details.component.html 清单, 109**
+**`details.component.html` 清单, 109**
 
-**details.component.ts 清单, 108–109**
+**`details.component.ts` 清单, 108–109**
 
-Data 属性（路由对象）, 133
+`Data` 属性（路由对象）, 133
 
 数据转换服务, 152–156
 
 检测数据变更, 111–114
 
 - 开发环境, 5–6
-- @directive 类, 95
-- Directive 类, 95
+- `@directive` 类, 95
+- `Directive` 类, 95
 - 指令。另见 命令
   - 内置指令, 87–88
     - 属性指令, 38, 91–94
     - 组件指令, 38, 88
     - 结构指令, 38, 88–91
-  - 自定义指令, 95
+  - 自定指令, 95
     - 自定义属性指令, 95–98
     - 自定义组件指令, 98–102
   - 定义, 87
 - 除法运算符, 8
-- doCalc() 函数, 16
-- doCircle() 方法, 153
-- doRectangle() 方法, 153
-- doSquare() 方法, 153
-- doTrapezoid() 方法, 153
-- doTriangle() 方法, 153
+- `doCalc()` 函数, 16
+- `doCircle()` 方法, 153
+- `doRectangle()` 方法, 153
+- `doSquare()` 方法, 153
+- `doTrapezoid()` 方法, 153
+- `doTriangle()` 方法, 153
 - 双花括号 ([[]]), 75
-- do/while 循环, 12
+- `do/while` 循环, 12
 - 拖放应用
-  - app.component.css, 181–182
-  - app.component.html, 181
-  - app.component.ts, 180–181
-  - drag.component.css, 184
-  - drag.component.html, 184
-  - drag.component.ts, 184
-  - drop.component.css, 183
-  - drop.component.html, 183
-  - drop.component.ts, 182
+  - `app.component.css`, 181–182
+  - `app.component.html`, 181
+  - `app.component.ts`, 180–181
+  - `drag.component.css`, 184
+  - `drag.component.html`, 184
+  - `drag.component.ts`, 184
+  - `drop.component.css`, 183
+  - `drop.component.html`, 183
+  - `drop.component.ts`, 182
   - 文件夹结构, 179–180
 - 拖拽项组件
-  - app.component.css, 181–182
-  - app.component.html, 181
-  - app.component.ts, 180–181
-  - drag.component.css, 184
-  - drag.component.html, 184
-  - drag.component.ts, 184
+  - `app.component.css`, 181–182
+  - `app.component.html`, 181
+  - `app.component.ts`, 180–181
+  - `drag.component.css`, 184
+  - `drag.component.html`, 184
+  - `drag.component.ts`, 184
 - 放置项组件
-  - app.component.css, 181–182
-  - app.component.html, 181
-  - app.component.ts, 180–181
-  - drop.component.css, 183
-  - drop.component.html, 183
-  - drop.component.ts, 182
-- dummyDB.JSON 清单, 118
+  - `app.component.css`, 181–182
+  - `app.component.html`, 181
+  - `app.component.ts`, 180–181
+  - `drop.component.css`, 183
+  - `drop.component.html`, 183
+  - `drop.component.ts`, 182
+- `dummyDB.JSON` 清单, 118
 - 编辑器, 5
 - 数组元素，添加/删除, 25
-- emit() 方法, 104
+- `emit()` 方法, 104
 - 发出自定义事件, 104
-- entryComponents 元数据选项（NgModule）, 43
+- `entryComponents` 元数据选项（NgModule）, 43
 - 枚举数据类型, 30
 - 环境，向其中添加 Angular, 39–40
 - 等于运算符, 9
 - 等号 (=), 9
 - 错误处理, 25
-  - finally 关键字, 27
+  - `finally` 关键字, 27
   - 抛出错误, 26–27
-  - try/catch 块, 26
+  - `try/catch` 块, 26
 - 转义码, 20
 - 事件绑定, 82–85
-- event.component.ts 清单, 82–84
-- EventEmitter 类, 104
-- eventHandler() 方法, 105
+- `event.component.ts` 清单, 82–84
+- `EventEmitter` 类, 104
+- `eventHandler()` 方法, 105
 - 事件
   - 绑定, 82–85
   - 浏览器事件, 103–104
   - 自定义事件, 104
+- 除法运算符, 8
+- `doCalc()` 函数, 16
+- `doCircle()` 方法, 153
+- `doRectangle()` 方法, 153
+- `doSquare()` 方法, 153
+- `doTrapezoid()` 方法, 153
+- `doTriangle()` 方法, 153
+- 双花括号 ([[]]), 75
+- `do/while` 循环, 12
+- 拖放应用
+  - `app.component.css`, 181–182
+  - `app.component.html`, 181
+  - `app.component.ts`, 180–181
+  - `drag.component.css`, 184
+  - `drag.component.html`, 184
+  - `drag.component.ts`, 184
+  - `drop.component.css`, 183
+  - `drop.component.html`, 183
+  - `drop.component.ts`, 182
+  - 文件夹结构, 179–180
+- 拖拽项组件
+  - `app.component.css`, 181–182
+  - `app.component.html`, 181
+  - `app.component.ts`, 180–181
+  - `drag.component.css`, 184
+  - `drag.component.html`, 184
+  - `drag.component.ts`, 184
+- 放置项组件
+  - `app.component.css`, 181–182
+  - `app.component.html`, 181
+  - `app.component.ts`, 180–181
+  - `drop.component.css`, 183
+  - `drop.component.html`, 183
+  - `drop.component.ts`, 182
+- `dummyDB.JSON` 清单, 118
+- 编辑器, 5
+- 数组元素，添加/删除, 25
+- `emit()` 方法, 104
+- 发出自定义事件, 104
+- `entryComponents` 元数据选项（NgModule）, 43
+- 枚举数据类型, 30
+- 环境，向其中添加 Angular, 39–40
+- 等于运算符, 9
+- 等号 (=), 9
+- 错误处理, 25
+  - `finally` 关键字, 27
+  - 抛出错误, 26–27
+  - `try/catch` 块, 26
+- 转义码, 20
+- 事件绑定, 82–85
+- `event.component.ts` 清单, 82–84
+- `EventEmitter` 类, 104
+- `eventHandler()` 方法, 105
+- 事件
+  - 绑ning, 82–85
+  - 浏览器事件, 103–104
+  - 自定义事件, 104
 
 ## E
-
-
 
 使用……删除数据，107–110
 
@@ -7378,13 +7702,13 @@ Data 属性（路由对象）, 133
 
 指令，95
 
-ZoomDirective，97
+`ZoomDirective`，97
 
-export 关键字，38
+`export` 关键字，38
 
 导出模块，38
 
-exports 元数据选项 (NgModule)，43
+`exports` 元数据选项 (NgModule)，43
 
 表达式，61–62
 
@@ -7404,85 +7728,85 @@ TypeScript 在……中，65–68
 
 外部模板，54–56
 
-external.component.ts 清单，55
+`external.component.ts` 清单，55
 
-external.css 清单，55
+`external.css` 清单，55
 
-externalTemplate.html 清单，55
+`externalTemplate.html` 清单，55
 
 ## F
 
-\f（换页符）转义码，20
+`\f`（换页符）转义码，20
 
-@fadeState，173–175
+`@fadeState`，173–175
 
-feed() 方法，32
+`feed()` 方法，32
 
-finally 关键字，27
+`finally` 关键字，27
 
-first.component.js 清单，48
+`first.component.js` 清单，48
 
-first.component.ts 清单，46
+`first.component.ts` 清单，46
 
-first.html 清单，45
+`first.html` 清单，45
 
-(focus) 事件，103
+`(focus)` 事件，103
 
 换页符转义码，20
 
-formatGreeting() 函数，15
+`formatGreeting()` 函数，15
 
 表单服务，116
 
 正斜杠 (/)，8
 
-fromCharCode() 方法，20
+`fromCharCode()` 方法，20
 
 函数，14–15。*另见* 方法
 
 匿名函数，16
 
-border()，96
+`border()`，96
 
 回调函数，16
 
-changeSize()，96
+`changeSize()`，96
 
 定义，14–15
 
-deleteUser()，122
+`deleteUser()`，122
 
-doCalc()，16
+`doCalc()`，16
 
-formatGreeting()，15
+`formatGreeting()`，15
 
-getRandom()，156
+`getRandom()`，156
 
-gotoPage2()，144–145
+`gotoPage2()`，144–145
 
-greeting()，15
+`greeting()`，15
 
-imageClick()，178
+`imageClick()`，178
 
 向……传递变量，15
 
-playLoop()，111
+`playLoop()`，111
 
-resolve()，161
+`resolve()`，161
 
 从……返回值，15
 
-selectCharacter()，107
+`selectCharacter()`，107
 
-setTimeout()，156
+`setTimeout()`，156
 
-soldierOfGondor()，34
+`soldierOfGondor()`，34
 
 ## G
 
 使用 CLI（命令行界面）生成内容，40–41
 
-get() 方法，116
+`get()` 方法，116
 
 GET 请求
 
@@ -7490,47 +7814,47 @@ GET 请求
 
 发送，116–117
 
-getCharacters() 方法，163
+`getCharacters()` 方法，163
 
-getItems() 方法，187
+`getItems()` 方法，187
 
-getObservable() 方法，187，189
+`getObservable()` 方法，187，189
 
-getPi() 方法，151
+`getPi()` 方法，151
 
-getRandom() 函数，156
+`getRandom()` 函数，156
 
-getRandomImage() 方法，158
+`getRandomImage()` 方法，158
 
-getStarClass() 方法，190–191
+`getStarClass()` 方法，190–191
 
-getUsers() 方法，**122, 128**
+`getUsers()` 方法，**122, 128**
 
 ### Good Guys 组件
 
-- good-guys.component.css，167
-- good-guys.component.html，166
-- good-guys.component.ts，166
+- `good-guys.component.css`，167
+- `good-guys.component.html`，166
+- `good-guys.component.ts`，166
 
-gotoPage2() 函数，**144-145**
+`gotoPage2()` 函数，**144-145**
 
 大于运算符，9
 
 大于或等于运算符，9
 
-greeting() 函数，15
+`greeting()` 函数，15
 
 ## H
 
 处理自定义事件，104
 
-head() 方法，116
+`head()` 方法，116
 
-hitCharacter() 方法，163-166
+`hitCharacter()` 方法，163-166
 
-home.component.html 清单，136
+`home.component.html` 清单，136
 
-home.component.ts 清单，136
+`home.component.ts` 清单，136
 
 ### HTML（超文本标记语言）
 
@@ -7540,1373 +7864,1118 @@ Angular 应用中的内联 HTML，51-52
 
 清单
 
-- animated.component.html，175
-- app.component.html。*参见 app.component.html 清单*
-- app.module.ts，126
-- attribute.component.html，93
-- badguys.component.css，168
-- badguys.component.html，168
-- character.component.html，108
-- container.component.html，101
-- createDelete.component.CSS，125-126
-- createDelete.component.html，125
-- customevent.component.html，105-106
-- details.component.html，109
-- drag.component.html，184
-- drop.component.html，183
-- externalTemplate.html，55
-- first.html，45
-- good-guys.component.css，167
-- good-guys.component.html，166
-- home.component.html，136
-- http.component.html，119-120
-- observable.component.html，113
-- outer.html，57
-- page1.component.html，145
-- page2.component.html，142，146-147
-- page3.component.html，142-143
-- rated-item.component.html，191
-- route2.component.html，137
-- update.component.html，130-131
-- zoomit.component.html，178
-
-<router-outlet> 标签，134
+- `animated.component.html`，175
+- `app.component.html`。*参见 app.component.html 清单*
+- `app.module.ts`，126
+- `attribute.component.html`，93
+- `badguys.component.css`，168
+- `badguys.component.html`，168
+- `character.component.html`，108
+- `container.component.html`，101
+- `createDelete.component.CSS`，125-126
+- `createDelete.component.html`，125
+- `customevent.component.html`，105-106
+- `details.component.html`，109
+- `drag.component.html`，184
+- `drop.component.html`，183
+- `externalTemplate.html`，55
+- `first.html`，45
+- `good-guys.component.css`，167
+- `good-guys.component.html`，166
+- `home.component.html`，136
+- `http.component.html`，119-120
+- `observable.component.html`，113
+- `outer.html`，57
+- `page1.component.html`，145
+- `page2.component.html`，142，146-147
+- `page3.component.html`，142-143
+- `rated-item.component.html`，191
+- `route2.component.html`，137
+- `update.component.html`，130-131
+- `zoomit.component.html`，178
+- `<router-outlet>` 标签，134
 
 ### http 服务，116
 
 - GET 请求，发送，116-117
 - JSON 文件实现与访问，118-121
-    - app.module.ts，119-120
-    - dummyDB.JSON，118
-    - http.component.CSS，120-121
-    - http.component.html，119-120
-    - http.component.ts，119
+    - `app.module.ts`，119-120
+    - `dummyDB.JSON`，118
+    - `http.component.CSS`，120-121
+    - `http.component.html`，119-120
+    - `http.component.ts`，119
 - PUT 请求，发送，116-117
 - 请求配置，117
 - 响应回调函数，117
 - 简单模拟服务器实现，121-127
-    - app.module.ts，126
-    - createDelete.component.CSS，125-126
-    - createDelete.component.html，125
-    - createDelete.component.ts，123-124
+    - `app.module.ts`，126
+    - `createDelete.component.CSS`，125-126
+    - `createDelete.component.html`，125
+    - `createDelete.component.ts`，123-124
     - 创建，121
-    - data.service.ts，122
-    - user.service.ts，124–125
+    - `data.service.ts`，122
+    - `user.service.ts`，124–125
 - 简单模拟服务器更新，127–132
-    - data.service.ts，127–128
-    - update.component.CSS，131–132
-    - update.component.html，130–131
-    - update.component.ts，128–129
-    - user.service.ts，129–130
+    - `data.service.ts`，127–128
+    - `update.component.CSS`，131–132
+    - `update.component.html`，130–131
+    - `update.component.ts`，128–129
+    - `user.service.ts`，129–130
 
-http.component.CSS 清单，120–121
+`http.component.CSS` 清单，120–121
 
-http.component.html 清单，119–120
+`http.component.html` 清单，119–120
 
-http.component.ts 清单，119
+`http.component.ts` 清单，119
 
-HttpModule，导入，119–120
+`HttpModule`，导入，119–120
 
 超文本标记语言。参见 HTML（超文本标记语言）
 
 ### 拖放应用
 
-- app.component.css，181–182
-- app.component.html，181
-- app.component.ts，180–181
-- drag.component.css，184
-- drag.component.html，184
-- drag.component.ts，184
-- drop.component.css，183
-- drop.component.html，183
-- drop.component.ts，182
+- `app.component.css`，181–182
+- `app.component.html`，181
+- `app.component.ts`，180–181
+- `drag.component.css`，184
+- `drag.component.html`，184
+- `drag.component.ts`，184
+- `drop.component.css`，183
+- `drop.component.html`，183
+- `drop.component.ts`，182
 - 文件夹结构，179–180
 
 ### 图片缩放应用
 
-- app.component.html，177
-- app.component.ts，176–177
+- `app.component.html`，177
+- `app.component.ts`，176–177
 - 文件夹结构，176
-- zoomit.component.css，178
-- zoomit.component.html，178
-- zoomit.component.ts，177–178
+- `zoomit.component.css`，178
+- `zoomit.component.html`，178
+- `zoomit.component.ts`，177–178
 
-import 关键字，38
+`import` 关键字，38
 
 导入
 
 模块，38
 
-- ActivatedRoute，134
-- AppRoutingModule，134
-- Component，42–43
-- HttpModule，119–120
-- InMemoryDbService，122，127
-- InMemoryWebApiModule，126–127
-- NgModule，43–44
-- Router，134，138
-
-id 元数据选项 (NgModule)，43
-
-IDE（集成开发环境），5
-
-if 语句，10
-
-imageClick() 函数，178
+- `ActivatedRoute`，134
+- `AppRoutingModule`，134
+- `Component`，42–43
+- `HttpModule`，119–120
+- `InMemoryDbService`，122，127
+- `InMemoryWebApiModule`，126–127
+- `NgModule`，43–44
+- `Router`，134，138
+- `id` 元数据选项 (NgModule)，43
+- `IDE`（集成开发环境），5
+- `if` 语句，10
+- `imageClick()` 函数，178
 
 ### 图片
 
 - 动画应用
-    - animated.component.css，175
-    - animated.Component.html，175
-    - animated.component.ts，173–174
-    - app.component.html，172–173
-    - app.component.ts，172
-    - app.module.ts，171–172
+    - `animated.component.css`，175
+    - `animated.Component.html`，175
+    - `animated.component.ts`，173–174
+    - `app.component.html`，172–173
+    - `app.component.ts`，172
+    - `app.module.ts`，171–172
 - 拖放应用（见上文）
 - 图片缩放应用（见上文）
-
-Observable 对象，156–158
-
-imports 元数据选项 (NgModule)，43
-
-递增运算符，8
-
-索引数组，30
-
-indexOf() 方法，20，21，23，25
-
-继承，33
-
-内联 CSS 和 HTML，51–52
-
-InMemoryDbService，导入，122，127
-
-InMemoryWebApiModule
-
-- 实现，186
-- 导入，126–127
-
-inner.component.ts 清单，58
-
-Input 装饰器，58
-
-input.component.ts 清单，59–60
-
-JavaScript　　　207
-
-集成开发环境 (IDEs)，5
-
-回调函数，16
-
-interface 关键字，31
-
-changeSize()，96
-
-### 接口
-
-- Person，31
-- PersonInterface，32
-- RatedItem，187
-- Stringy，31
-- TypeScript，31–32
-
-createUser()，122
-
-定义，14–15
-
-deleteUser()，122
-
-doCalc()，16
-
-插值，76–77
-
-formatGreeting()，15
-
-interpolation.component.ts 清单，76–77
-
-getRandom()，156
-
-中断循环，13–14
-
-gotoPage2()，144–145
-
-intro.ts 清单，52
-
-greeting()，15
-
-遍历数组，24
-
-imageClick()，178
-
-向……传递变量，15
-
-playLoop()，111
-
-## J
-
-resolve()，161
-
-从……返回值，15
-
-JavaScript，5
-
-### 数组
-
-- 向数组添加项，25
-- 合并，24
-- 转换为字符串，24
-- 遍历，24
-- 操作，22–24
-- 方法，23
-- 从数组移除项，25
-- 搜索，25
-
-setTimeout()，156
-
-soldierOfGondor()，34
-
-### 条件语句
-
-- if 语句，10
-- switch 语句，11
-
-#### 关键字
-
-- export，38
-- finally，27
-- import，38
-- new，17
-- styles，51
-- styleUrls，54
-- templateUrl，54
-- var，6
-
-数据类型，6–7
-
-开发环境，5–6
-
-错误处理，25
-
-循环，11
-
-- finally 关键字，27
-- 抛出错误，26–27
-- try/catch 块，26
-
-- for/in，13
-- do/while，12
-- for，12–13
-- 中断，13–14
-- while，11–12
-
-函数，14–15
-
-- 匿名函数，16
-- border()，96
-
-方法，17
-
-# 208 JavaScript
-
-- changeLoop()，156
-- charAt()，20
-- charCodeAt()，20
-- concat()，20，21，23，24
-- createAlert()，161
-- createDb()，127
-- createTimedAlert()，161
-- createUser()，124
-- debounce()，117
-- 定义，17
-- delete()，116
-- deleteChar()，107
-- deleteUser()，124
-- doCircle()，153
-- doRectangle()，153
-- doSquare()，153
-- doTrapezoid()，153
-- doTriangle()，153
-- emit()，104
-- eventHandler()，105
-- feed()，32
-- fromCharCode()，20
-- get()，116
-- getCharacters()，163
-- getItems()，187
-- getObservable()，187，189
-- getPi()，151
-- getRandomImage()，158
-- getStarClass()，190-191
-- getUsers()，122，128
-- head()，116
-- hitCharacter()，163-166
-- indexOf()，20，21，23，25
-- join()，23，24
-- lastIndexOf()，20，23
-- leave()，173
-- map()，117
-
-- match()，20
-- ngOnInit()，111，128，151，177，189
-- onDrop()，182
-- patch()，116
-- pop()，23
-- post()，116
-- preventDefault()，182
-- push()，23
-- put，116
-- replace()，20，22
-- reverse()，23
-- search()，21
-- selectUser()，128
-- setRating()，190
-- shift()，23
-- slice()，21，23
-- sort()，23
-- split()，21，22
-- subscribe()，110
-- substr()，21
-- .then()，118-119
-- toLowerCase()，21
-- toPromise()，117，118-119
-- toString()，23
-- toUpperCase()，21
-- unshift()，23
-- updateRating()，187-188
-- updateUser()，128，129
-- valueOf()，21，23
-
-- 对象，17
+- `Observable` 对象，156–158
+- `imports` 元数据选项 (NgModule)，43
+- 递增运算符，8
+- 索引数组，30
+- `indexOf()` 方法，20，21，23，25
+- 继承，33
+- 内联 CSS 和 HTML，51–52
+- `InMemoryDbService`，导入，122，127
+- `InMemoryWebApiModule`
+  - 实现，186
+  - 导入，126–127
+- `inner.component.ts` 清单，58
+- `Input` 装饰器，58
+- `input.component.ts` 清单，59–60
+- `JavaScript`，207
+- 集成开发环境 (IDEs)，5
+- 回调函数，16
+- `interface` 关键字，31
+- `changeSize()`，96
+- ### 接口
+  - `Person`，31
+  - `PersonInterface`，32
+  - `RatedItem`，187
+  - `Stringy`，31
+  - `TypeScript`，31–32
+- `createUser()`，122
+- 定义，14–15
+- `deleteUser()`，122
+- `doCalc()`，16
+- 插值，76–77
+- `formatGreeting()`，15
+- `interpolation.component.ts` 清单，76–77
+- `getRandom()`，156
+- 中断循环，13–14
+- `gotoPage2()`，144–145
+- `intro.ts` 清单，52
+- `greeting()`，15
+- 遍历数组，24
+- `imageClick()`，178
+- 向……传递变量，15
+- `playLoop()`，111
+- ## J
+- `resolve()`，161
+- 从……返回值，15
+- `JavaScript`，5
+- ### 数组
+  - 向数组添加项，25
+  - 合并，24
+  - 转换为字符串，24
+  - 遍历，24
+  - 操作，22–24
+  - 方法，23
+  - 从数组移除项，25
+  - 搜索，25
+- `setTimeout()`，156
+- `soldierOfGondor()`，34
+- ### 条件语句
+  - `if` 语句，10
+  - `switch` 语句，11
+- #### 关键字
+  - `export`，38
+  - `finally`，27
+  - `import`，38
+  - `new`，17
+  - `styles`，51
+  - `styleUrls`，54
+  - `templateUrl`，54
+  - `var`，6
+- 数据类型，6–7
+- 开发环境，5–6
+- 错误处理，25
+- 循环，11
+  - `finally` 关键字，27
+  - 抛出错误，26–27
+  - `try/catch` 块，26
+  - `for/in`，13
+  - `do/while`，12
+  - `for`，12–13
+  - 中断，13–14
+  - `while`，11–12
+- 函数，14–15
+  - 匿名函数，16
+  - `border()`，96
+- 方法，17
+- # 208 JavaScript
+  - `changeLoop()`，156
+  - `charAt()`，20
+  - `charCodeAt()`，20
+  - `concat()`，20，21，23，24
+  - `createAlert()`，161
+  - `createDb()`，127
+  - `createTimedAlert()`，161
+  - `createUser()`，124
+  - `debounce()`，117
+  - 定义，17
+  - `delete()`，116
+  - `deleteChar()`，107
+  - `deleteUser()`，124
+  - `doCircle()`，153
+  - `doRectangle()`，153
+  - `doSquare()`，153
+  - `doTrapezoid()`，153
+  - `doTriangle()`，153
+  - `emit()`，104
+  - `eventHandler()`，105
+  - `feed()`，32
+  - `fromCharCode()`，20
+  - `get()`，116
+  - `getCharacters()`，163
+  - `getItems()`，187
+  - `getObservable()`，187，189
+  - `getPi()`，151
+  - `getRandomImage()`，158
+  - `getStarClass()`，190-191
+  - `getUsers()`，122，128
+  - `head()`，116
+  - `hitCharacter()`，163-166
+  - `indexOf()`，20，21，23，25
+  - `join()`，23，24
+  - `lastIndexOf()`，20，23
+  - `leave()`，173
+  - `map()`，117
+  - `match()`，20
+  - `ngOnInit()`，111，128，151，177，189
+  - `onDrop()`，182
+  - `patch()`，116
+  - `pop()`，23
+  - `post()`，116
+  - `preventDefault()`，182
+  - `push()`，23
+  - `put`，116
+  - `replace()`，20，22
+  - `reverse()`，23
+  - `search()`，21
+  - `selectUser()`，128
+  - `setRating()`，190
+  - `shift()`，23
+  - `slice()`，21，23
+  - `sort()`，23
+  - `split()`，21，22
+  - `subscribe()`，110
+  - `substr()`，21
+  - `.then()`，118-119
+  - `toLowerCase()`，21
+  - `toPromise()`，117，118-119
+  - `toString()`，23
+  - `toUpperCase()`，21
+  - `unshift()`，23
+  - `updateRating()`，187-188
+  - `updateUser()`，128，129
+  - `valueOf()`，21，23
+  - 对象，17
     - 数组，22-25
     - 自定义对象，18-19
     - 原型对象模式，19
     - 字符串，19-22
     - 语法，17-18
-
-
-
-#### 运算符
-
--   算术运算符，8
--   赋值运算符，8–9
--   比较运算符，9–10
-
-`(keyup)` 事件，104
-
-#### 关键字
-
-另请参阅语句
-
--   export，38
--   import，38
--   new，17
--   styles，51
--   styleUrls，54
--   templateUrl，54
--   var，6
-
-### 语句
-
--   break，13–14
--   catch，26
--   continue，13–14
--   if，10
--   return，15
--   switch，11
--   throw，26–27
--   try，26
-
-### 字符串
-
--   拼接，21
--   将数组转换为，24
--   操作，19–21
--   替换其中的单词，22
--   搜索，21
--   分割，22
--   与字符串相关的方法，20–21
-
-#### 变量
-
--   定义，6
--   传递给函数，15
--   作用域，16–17
-
-`join()` 方法，23，24
-
-JSON 文件实现与访问，**118–121**
-
--   `app.module.ts`，119–120
--   `dummyDB.JSON`，118
--   `http.component.CSS`，120–121
--   `http.component.html`，119–120
--   `http.component.ts`，119
-
-json 管道，69
-
-## L
-
+- #### 运算符
+  -   算术运算符，8
+  -   赋值运算符，8–9
+  -   比较运算符，9–10
+- `(keyup)` 事件，104
+- #### 关键字
+  - 另请参阅语句
+  -   `export`，38
+  -   `import`，38
+  -   `new`，17
+  -   `styles`，51
+  -   `styleUrls`，54
+  -   `templateUrl`，54
+  -   `var`，6
+- #### 语句
+  -   `break`，13–14
+  -   `catch`，26
+  -   `continue`，13–14
+  -   `if`，10
+  -   `return`，15
+  -   `switch`，11
+  -   `throw`，26–27
+  -   `try`，26
+- #### 字符串
+  -   拼接，21
+  -   将数组转换为，24
+  -   操作，19–21
+  -   替换其中的单词，22
+  -   搜索，21
+  -   分割，22
+  -   与字符串相关的方法，20–21
+- #### 变量
+  -   定义，6
+  -   传递给函数，15
+  -   作用域，16–17
+- `join()` 方法，23，24
+- JSON 文件实现与访问，**118–121**
+  -   `app.module.ts`，119–120
+  -   `dummyDB.JSON`，118
+  -   `http.component.CSS`，120–121
+  -   `http.component.html`，119–120
+  -   `http.component.ts`，119
+- `json` 管道，69
+- ## L
 -   `lastIndexOf()` 方法，20，23
 -   `leave()` 方法，173
 -   小于运算符，9
 -   小于等于运算符，9
 -   监听器，104
-
-### 清单
-
+- ### 清单
 -   `animated.component.css`，175
 -   `animated.component.html`，175
 -   `animated.component.ts`，173–174
 -   `app.component.css`
-    -   AreaCalcService，155
-    -   带组件的自定义指令，100
-    -   拖放应用，181–182
-    -   RandomImageService，159
-    -   带导航栏的路由，141
-    -   星级评分应用，190
+-   -   AreaCalcService，155
+-   -   带组件的自定义指令，100
+-   -   拖放应用，181–182
+-   -   RandomImageService，159
+-   -   带导航栏的路由，141
+-   -   星级评分应用，190
 -   `app.component.html`
-    -   动画应用，172–173
-    -   AreaCalcService，154–155
-    -   带组件的自定义指令，99–100
-    -   拖放应用，181
-    -   图片缩放应用，177
-    -   PiService，152
-    -   PromiseService，162
--   `(keydown)` 事件，104
--   `(keypress)` 事件，104
-
-## 210 清单
-
--   RandomImageService，159
--   带导航栏的路由，140
--   SharedService，165
--   星级评分应用，189–190
--   缩放指令，97–98
-
--   `badguys.component.css`，168
--   `badguys.component.html`，168
--   `badguys.component.ts`，167
--   `basicExpressions.component.ts`，63
--   `builtInPipes.component.ts`，71–72
-
--   `app.component.ts`
-    -   动画应用，172
-    -   AreaCalcService，153–154
-    -   带组件的自定义指令，99
-    -   拖放应用，180–181
-    -   图片缩放应用，176–177
-    -   PiService，151
-    -   PromiseService，161–162
-    -   RandomImageService，158–159
-    -   带导航栏的路由，140
-    -   带参数的路由，144
-    -   SharedService，165
-    -   简单路由应用，135–136
-    -   星级评分应用，189
-
--   `character.component.css`，108
--   `character.component.html`，108
--   `character.component.ts`，107–108
--   `class.component.ts`，80
--   `classExpressions.component.ts`，64–65
--   `constructor.component.ts`，53
--   `container.component.css`，101
--   `container.component.html`，101
--   `container.component.ts`，100
--   `createDelete.component.CSS`，125–126
--   `createDelete.component.html`，125
--   `createDelete.component.ts`，123–124
--   `customevent.component.html`，105–106
--   `customevent.component.ts`，105
--   `customPipes.component.ts`，73–74
--   `custom.pipe.ts`，73
--   `data.service.ts`，122，127–128
--   `details.component.css`，109
--   `details.component.html`，109
--   `details.component.ts`，108–109
--   `drag.component.css`，184
--   `drag.component.html`，184
--   `drag.component.ts`，184
--   `drop.component.css`，183
--   `drop.component.html`，183
--   `drop.component.ts`，182
--   `dummyDB.JSON`，118
--   `event.component.ts`，82–84
--   `external.component.ts`，55
--   `external.css`，55
--   `externalTemplate.html`，55
--   `first.component.js`，48
-
--   `app.module.js`，47
--   `app.module.ts`
-    -   Angular 引导程序，46
-    -   动画应用，171–172
-    -   简单模拟服务器实现，119–120，126
-    -   简单路由实现，134–135
-    -   星级评分应用，186
-
--   `app-routing.module.ts`
-    -   带导航栏的路由，138–139
-    -   带参数的路由，144
-    -   简单路由实现，135–136
-
--   `area-calc.service.ts`，152–153
--   `attribute.component.css`，94
--   `attribute.component.html`，93
--   `attribute.component.ts`，92–93
-
-`first.component.ts`，46
-
-`first.html`，45
-
-`good-guys.component.css`，167
-
-`good-guys.component.html`，166
-
-`good-guys.component.ts`，166
-
-`home.component.html`，136
-
-`home.component.ts`，136
-
-`http.component.CSS`，120–121
-
-`http.component.html`，119–120
-
-`http.component.ts`，119
-
-`inner.component.ts`，58
-
-`input.component.ts`，59–60
-
-`interpolation.component.ts`，76–77
-
-`intro.ts`，52
-
-`mockbackend.service.ts`，186–187
-
-`nav.component.CSS`，140
-
-`nav.component.html`，139
-
-`nav.component.ts`，139
-
-`observable.component.html`，113
-
-`observable.component.ts`，112–113
-
-`outer.component.ts`，57
-
-`outer.css`，57
-
-`outer.html`，57
-
-`page1.component.html`，145
-
-`page1.component.ts`
--   带导航栏的路由，141
--   带参数的路由，145
-
-`page2.component.html`
--   带导航栏的路由，142
--   带参数的路由，146–147
-
-`page2.component.ts`
--   带导航栏的路由，141
--   带参数的路由，146
-
-`page3.component.html`，142–143
-
-`page3.component.ts`，142
-
-`person.component.ts`，59
-
-`pi.service.ts`，151
-
-`promise.service.ts`，161
-
-`property.component.ts`，78
-
-`random-image.service.ts`，157–158
-
-`rated-item.component.css`，191–192
-
-`rated-item.component.html`，191
-
-`rated-item.component.ts`，190–191
-
-`ratings.service.ts`，187–188
-
-`route2.component.html`，137
-
-`route2.component.ts`，137
-
-`shared.service.ts`，163–164
-
-`structural.component.ts`，89–90
-
-`style.component.ts`，81，86
-
-`typescriptExpressions.component.ts`，67
-
-`update.component.CSS`，131–132
-
-`update.component.html`，130–131
-
-`update.component.ts`，128–129
-
-`user.service.ts`，124–125，129–130
-
-`zoom.component.ts`，96–98
-
-`zoom.directive.ts`，96–97
-
-`zoomit.component.css`，178
-
-`zoomit.component.html`，178
-
-`zoomit.component.ts`，177–178
-
-**`loadChildren` 属性 (路由对象)，133**
-
-### 循环
-
--   `for/in` 循环，13
--   `for` 循环，12–13
--   循环，11
-    -   `for/in`，13
-    -   `do/while`，12
-    -   `for`，12–13
-    -   中断，13–14
-    -   `while`，11–12
-
-**小写管道，69**
-
-### 操作
-
--   数组，22–24
--   字符串，19–21
-
-### `map()` 方法
-
-**`map()` 方法，117**
-
-**`match()` 方法，20**
-
-### 方法
-
-另请参阅函数
-
--   `addClass()`，92
--   `allowDrop()`，182
--   `catch()`，117
--   `changeLoop()`，156
--   `charAt()`，20
--   `charCodeAt()`，20
--   `concat()`，20，21，23，24
--   `createAlert()`，161
--   `createDb()`，127
--   `createTimedAlert()`，161
--   `createUser()`，122，124
--   `debounce()`，117
--   定义，17
--   `delete()`，116
--   `deleteChar()`，107
--   `deleteUser()`，124
--   `doCircle()`，153
--   `doRectangle()`，153
--   `doSquare()`，153
--   `doTrapezoid()`，153
--   `doTriangle()`，153
--   `emit()`，104
--   `eventHandler()`，105
--   `feed()`，32
--   `fromCharCode()`，20
--   `get()`，116
--   `getCharacters()`，163
--   `getItems()`，187
--   `getObservable()`，187，189
--   `getPi()`，151
--   `getRandomImage()`，158
--   `getStarClass()`，190–191
--   `getUsers()`，122，128
--   `head()`，116
--   `hitCharacter()`，163–166
--   `indexOf()`，20，21，23，25
--   `join()`，23，24
--   `lastIndexOf()`，20，23
--   `leave()`，173
--   `map()`，117
--   `match()`，20
--   `ngOnInit()`，111，128，151，177，189
--   `onDrop()`，182
--   `patch()`，116
--   `pop()`，23
--   `post()`，116
--   `preventDefault()`，182
--   `push()`，23
--   `put()`，116
--   `replace()`，20，22
--   `reverse()`，23
--   `search()`，21
--   `selectUser()`，128
--   `setRating()`，190
--   `shift()`，23
--   `slice()`，21，23
--   `sort()`，23
--   `split()`，21，22
--   `subscribe()`，110
--   `substr()`，21
--   `.then()`，118–119
--   `toLowerCase()`，21
--   `toPromise()`，117，118–119
--   `toString()`，23
--   `toUpperCase()`，21
--   `unshift()`，23
--   `updateRating()`，187–188
--   `updateUser()`，128，129
--   `valueOf()`，21，23
-
-**模拟后端服务，186–187**
-
-### 模拟 Web 服务器
-
-### 简单 JSON 文件实现，118–121
-
--   `app.module.ts`，119–120
--   `dummyDB.JSON`，118
+-   -   动画应用，172–173
+-   -   AreaCalcService，154–155
+-   -   带组件的自定义指令，99–100
+-   -   拖放应用，181
+-   -   图片缩放应用，177
+-   -   PiService，152
+-   -   PromiseService，162
+-   -   `(keydown)` 事件，104
+-   -   `(keypress)` 事件，104
+-   ## 210 清单
+-   -   RandomImageService，159
+-   -   带导航栏的路由，140
+-   -   SharedService，165
+-   -   星级评分应用，189–190
+-   -   缩放指令，97–98
+-   -   `badguys.component.css`，168
+-   -   `badguys.component.html`，168
+-   -   `badguys.component.ts`，167
+-   -   `basicExpressions.component.ts`，63
+-   -   `builtInPipes.component.ts`，71–72
+-   -   `app.component.ts`
+-   -   -   动画应用，172
+-   -   -   AreaCalcService，153–154
+-   -   -   带组件的自定义指令，99
+-   -   -   拖放应用，180–181
+-   -   -   图片缩放应用，176–177
+-   -   -   PiService，151
+-   -   -   PromiseService，161–162
+-   -   -   RandomImageService，158–159
+-   -   -   带导航栏的路由，140
+-   -   -   带参数的路由，144
+-   -   -   SharedService，165
+-   -   -   简单路由应用，135–136
+-   -   -   星级评分应用，189
+-   -   `character.component.css`，108
+-   -   `character.component.html`，108
+-   -   `character.component.ts`，107–108
+-   -   `class.component.ts`，80
+-   -   `classExpressions.component.ts`，64–65
+-   -   `constructor.component.ts`，53
+-   -   `container.component.css`，101
+-   -   `container.component.html`，101
+-   -   `container.component.ts`，100
+-   -   `createDelete.component.CSS`，125–126
+-   -   `createDelete.component.html`，125
+-   -   `createDelete.component.ts`，123–124
+-   -   `customevent.component.html`，105–106
+-   -   `customevent.component.ts`，105
+-   -   `customPipes.component.ts`，73–74
+-   -   `custom.pipe.ts`，73
+-   -   `data.service.ts`，122，127–128
+-   -   `details.component.css`，109
+-   -   `details.component.html`，109
+-   -   `details.component.ts`，108–109
+-   -   `drag.component.css`，184
+-   -   `drag.component.html`，184
+-   -   `drag.component.ts`，184
+-   -   `drop.component.css`，183
+-   -   `drop.component.html`，183
+-   -   `drop.component.ts`，182
+-   -   `dummyDB.JSON`，118
+-   -   `event.component.ts`，82–84
+-   -   `external.component.ts`，55
+-   -   `external.css`，55
+-   -   `externalTemplate.html`，55
+-   -   `first.component.js`，48
+-   -   `app.module.js`，47
+-   -   `app.module.ts`
+-   -   -   Angular 引导程序，46
+-   -   -   动画应用，171–172
+-   -   -   简单模拟服务器实现，119–120，126
+-   -   -   简单路由实现，134–135
+-   -   -   星级评分应用，186
+-   -   `app-routing.module.ts`
+-   -   -   带导航栏的路由，138–139
+-   -   -   带参数的路由，144
+-   -   -   简单路由实现，135–136
+-   -   `area-calc.service.ts`，152–153
+-   -   `attribute.component.css`，94
+-   -   `attribute.component.html`，93
+-   -   `attribute.component.ts`，92–93
+-   `first.component.ts`，46
+-   `first.html`，45
+-   `good-guys.component.css`，167
+-   `good-guys.component.html`，166
+-   `good-guys.component.ts`，166
+-   `home.component.html`，136
+-   `home.component.ts`，136
 -   `http.component.CSS`，120–121
 -   `http.component.html`，119–120
 -   `http.component.ts`，119
-
-### 简单模拟服务器实现，121–127
-
--   `app.module.ts`，126
--   `createDelete.component.CSS`，125–126
--   `createDelete.component.html`，125
--   `createDelete.component.ts`，123–124
--   创建，121
--   `data.service.ts`，122
--   `user.service.ts`，124–125
-
-### 简单模拟服务器更新，127–132
-
--   `data.service.ts`，127–128
--   `update.component.CSS`，131–132
--   `update.component.html`，130–131
--   `update.component.ts`，128–129
--   `user.service.ts`，129–130
-
-`mockbackend.service.ts` 清单，186–187
-
-### 模块
-
--   Angular，38
--   导入
-    -   `AppRoutingModule`，134
-    -   `BrowserAnimationsModule`，172
-    -   `Component`，42–43
-    -   `HttpModule`，119–120
-    -   `InMemoryDbService`，122，127
-    -   `InMemoryWebApiModule`，126–127
-    -   `NgModule`，43–44
-    -   `Router`，138
-    -   路由模块，134
-    -   TypeScript，33–34
-
-取模运算符，8
-`(mouseover)` 事件，104
-乘法运算符，8
-`myCustomEvent`，105
-
-## N
-
-`\n`（换行）转义码，20
-命名约定，50
-`nav.component.CSS` 清单，140
-`nav.component.html` 清单，139
-`nav.component.ts` 清单，139
-导航路由，134
-带导航栏的路由，138–143
-
--   `app.component.CSS`，141
--   `app.component.html`，140
--   `app.component.ts`，140
--   `app-routing.module.ts`，138–139
+-   `inner.component.ts`，58
+-   `input.component.ts`，59–60
+-   `interpolation.component.ts`，76–77
+-   `intro.ts`，52
+-   `mockbackend.service.ts`，186–187
 -   `nav.component.CSS`，140
 -   `nav.component.html`，139
 -   `nav.component.ts`，139
--   `page1.component.ts`，141
--   `page2.component.html`，142
--   `page2.component.ts`，141
--   `page3.component.html`，142–143
--   `page3.component.ts`，142
-
-### 嵌套组件
-
--   使用依赖注入构建，56–58
--   其中的自定义事件，104–106
-
-`new` 关键字，17
-换行转义码，20
-`ng eject` 命令，41
-`ng generate component` 命令，41
-`ng generate directive` 命令，41
-`ng generate enum` 命令，41
-`ng generate guard` 命令，41
-
-
-
-## 214 ng generate interface 命令
-
--   ng generate interface 命令, 41
--   ng generate module 命令, 41
--   ng generate pipe 命令, 41
--   ng generate service 命令, 41
--   ng new 命令, 41
--   ng serve 命令, 41
--   ng-content 指令, 98
--   ngFor 指令, 88, 120, 125, 130, 159
--   ngForm 指令, 91
--   ngIf 指令, 88-89
--   ngModel 指令, 91
--   NgModule, 43-44, 56
--   ngOnInit() 方法, 111, 128, 151, 177, 189
--   ngStyle 指令, 91
--   ngSwitch 指令, 88-89
--   ngSwitchCase 指令, 88, 89
--   ngSwitchDefault 指令, 88
--   不等于运算符, 9
--   非运算符, 10
--   npm install 命令, 121
--   null 数据类型
-    -   JavaScript, 7
-    -   TypeScript, 30
--   数字数据类型
-    -   JavaScript, 7
-    -   TypeScript, 29
--   数字管道, 69
-
--   迭代, 24
--   操作, 22-24
--   方法, 23
--   从中移除项, 25
--   搜索, 25
--   自定义对象, 18-19
--   Observable
-    -   创建, 110-111
-    -   用于检测数据变化, 111-114
--   属性, 17
--   对象原型模式, 19
--   路由, 133
--   字符串, 19-22
-    -   组合, 21
-    -   将数组转换为, 24
-    -   转义码, 20
-    -   操作, 19-21
-    -   方法, 20-21
-    -   替换其中的单词, 22
-    -   搜索, 21
-    -   分割, 22
--   语法, 17-18
--   Observable 对象
-    -   创建, 110-111
-    -   用于检测数据变化, 111-114
-    -   导入, 156-158
--   observable.component.html 列表, 113
--   observable.component.ts 列表, 112-113
--   observables
-    -   定义, 110
-    -   Observable 对象
-        -   创建, 110-111
-        -   用于检测数据变化, 111-114
--   onDrop() 方法, 182
--   运算符 (JavaScript), 8
-
-## O
-
--   对象字面量, 7
--   对象, 17. 另请参见 方法
-    -   数组, 22-25
-        -   向其添加项, 25
-        -   组合, 24
-        -   转换为字符串, 24
--   put() 方法, 215
--   算术运算符, 8
--   赋值运算符, 8-9
--   比较运算符, 9-10
--   或运算符, 10
--   outer.component.ts 列表, 57
--   outer.css 列表, 57
--   outer.html 列表, 57
--   outlet 属性 (路由对象), 133
-
--   patch() 方法, 116
--   path 属性 (路由对象), 133
--   百分号 (%), 8
--   Person 接口, 31
--   person.component.ts 列表, 59
--   PersonInterface, 32
--   管道类, 72
--   @pipe 装饰器, 72
--   管道符号 (|), 72
--   管道
-    -   内置管道
-        -   builtInPipes.component.ts, 71-72
-        -   列表, 69-70
-    -   自定义管道, 72-74
-    -   定义, 68-69
--   PiService, 151-152
-    -   app.component.html, 152
-    -   app.component.ts, 151
-    -   pi.service.ts, 151
--   pi.service.ts 列表, 151
--   playLoop() 函数, 111
--   加号 (+), 8
--   pop() 方法, 23
--   post() 方法, 116
--   preventDefault() 方法, 182
--   PromiseService, 161-162
--   promise.service.ts 列表, 161
--   属性
-    -   绑定, 77-79
-    -   定义, 17
--   属性绑定, 77-79
--   property.component.ts 列表, 78
--   对象原型模式, 19
--   providers 元数据选项 (NgModule), 43
--   push() 方法, 23
--   put() 方法, 116
-
-## P
-
--   page1.component.html 列表, 145
--   page1.component.ts 列表
-    -   带导航栏的路由器, 141
-    -   带参数的路由器, 145
--   page2.component.html 列表
-    -   带导航栏的路由器, 142
-    -   带参数的路由器, 146-147
--   page2.component.ts 列表
-    -   带导航栏的路由器, 141
-    -   带参数的路由器, 146
--   page3.component.html 列表, 142-143
--   page3.component.ts 列表, 142
--   参数, 带参数的路由器, 143-147
-    -   app.component.ts, 144
-    -   app-routing.module.ts, 144
-    -   page1.component.html, 145
-    -   page1.component.ts, 145
-    -   page2.component.html, 146-147
-    -   page2.component.ts, 146
--   父组件, 其中的数据删除, 107-110
--   括号 ( ), 10, 14, 82, 103
--   传递数据
-    -   通过依赖注入, 58-59
-    -   变量到函数, 15
-
-### PUT 请求
-
--   响应回调函数, 117
--   发送, 116–117
-
-## Q-R
-
--   \r (回车) 转义码, 20
-
-## RandomImageService, 156–160
-
--   app.component.css, 159
--   app.component.html, 159
--   app.component.ts, 158–159
--   random-image.service.ts, 157–158
-
--   random-image.service.ts 列表, 157–158
-
--   rated-item 组件, 189–190
-    -   rated-item.component.css, 191–192
-    -   rated-item.component.html, 191
-    -   rated-item.component.ts, 190–191
-
--   RatedItem 接口, 187
-
--   ratings.service.ts 列表, 187–188
-
--   redirectTo 属性 (路由对象), 133
-
--   从数组中移除项, 25
-
--   replace() 方法, 20, 22
-
--   替换字符串中的单词, 22
-
-### 请求
-
--   配置, 117
--   GET 请求, 116–117
--   PUT 请求, 116–117
--   响应回调函数, 117
-
--   resolve() 函数, 161
-
--   Resolve 属性 (路由对象), 133
-
--   响应回调函数 (HTTP), 117
-
--   职责分离, 39
-
--   return 语句, 15
-
--   返回值, 15
-
--   reverse() 方法, 23
-
-## 根组件 (自定义指令), 99
-
--   其 CSS, 100
--   其 HTML, 99–100
-
--   home.component.ts, 136
-
--   route2.component.html, 137
-
--   route2.component.ts, 137
-
--   `<router-outlet>` 标签, 134
-
--   定义路由数组, 132–133
-
--   包含路由模块, 134
-
--   runGuardsAndResolvers 属性 (路由对象), 133
-
--   http, 116
-
--   发送 GET 请求, 116–117
-
--   JSON 文件实现与访问, 118–121
-
--   发送 PUT 请求, 116–117
-
--   请求配置, 117
-
--   响应回调函数, 117
-
--   简单模拟服务器实现, 121–127
-
--   简单模拟服务器更新, 127–132
-
--   集成到应用程序中, 149–150
-
--   模拟后端服务, 186–187
-
--   目的, 115
-
--   评分服务, 187–188
-
--   路由器, 116
-
-    -   导入 ActivatedRoute, 134
-
-    -   路由导航, 134
-
-    -   路由对象参数, 133
-
-    -   导入 Router, 134
-
-    -   带导航栏的路由器, 138–143
-
-    -   带参数的路由器, 143–147
-
-    -   路由数组, 132–133
-
-    -   包含路由模块, 134
-
-    -   简单路由器实现, 134–137
-
-## S
-
--   schemas 元数据选项 (NgModule), 43
-
--   变量的作用域, 16–17
-
--   search() 方法, 21
-
--   搜索
-    -   数组, 25
-    -   字符串, 21
-
--   SecretAgent 类, 33
-
--   selectCharacter() 函数, 107
-
--   selector 选项 (组件), 49
-
--   选择器, 50
-
--   selectUser() 方法, 128
-
--   发送 HTTP 请求, 116–117
-
--   职责分离, 39
-
--   服务器. 另请参见 模拟 Web 服务器
-
-### 服务
-
--   返回 promise 的服务, 161–162
-
--   共享服务, 162–169
-    -   app.component.html, 165
-    -   app.component.ts, 165
-    -   badguys.component.css, 168
-    -   badguys.component.html, 168
-    -   badguys.component.ts, 167
-    -   good-guys.component.css, 167
-    -   good-guys.component.html, 166
-    -   good-guys.component.ts, 166
-    -   shared.service.ts, 163–164
-
--   使用场景, 149–150
-
-    -   动画, 116
-    -   常量数据服务, 151–152
-        -   app.component.html, 152
-        -   app.component.ts, 151
-        -   pi.service.ts, 151
-    -   数据转换服务, 152–156
-        -   app.component.css, 155
-        -   app.component.html, 154–155
-        -   app.component.ts, 153–154
-        -   area-calc.service.ts, 152–153
-    -   定义, 39
-    -   表单, 116
-
--   UserService, 129–130
--   可变数据服务, 156–160
-    -   app.component.css, 159
-    -   app.component.html, 159
-    -   app.component.ts, 158–159
-    -   random-image.service.ts, 157–158
--   setRating() 方法, 190
--   setTimeout() 函数, 156
--   共享服务, 162–169
-    -   app.component.html, 165
-    -   app.component.ts, 165
-    -   badguys.component.css, 168
-    -   badguys.component.html, 168
-    -   badguys.component.ts, 167
-    -   good-guys.component.css, 167
-    -   good-guys.component.html, 166
-    -   good-guys.component.ts, 166
-    -   shared.service.ts, 163–164
--   SharedService. 另请参见 共享服务
--   shared.service.ts 列表, 163–164
--   shift() 方法, 23
--   slice() 方法, 21, 23
--   slice:start:end 管道, 69
--   soldierOfGondor() 函数, 34
--   sort() 方法, 23
--   split() 方法, 21, 22
--   分割字符串, 22
-### 星级评分应用程序
-    -   app.component.css, 190
-    -   app.component.html, 189–190
-    -   app.component.ts, 189
-    -   app.module.ts, 186
-    -   文件夹结构, 185
-    -   mockbackend.service.ts, 186–187
-    -   rated-item.component.css, 191–192
-    -   rated-item.component.html, 191
-    -   rated-item.component.ts, 190–191
-    -   ratings.service.ts, 187–188
-
-## 语句. 另请参见 关键字
-
--   break, 13–14
--   catch, 26
--   continue, 13–14
--   finally, 27
--   if, 10
--   return, 15
--   switch, 11
--   throw, 26–27
--   try, 26
-
-## 字符串对象, 19–22
-
--   组合, 21
--   将数组转换为, 24
--   转义码, 20
--   操作, 19–21
--   方法, 20–21
--   替换其中的单词, 22
--   搜索, 21
--   分割, 22
-
-### 字符串
-
--   JavaScript, 6
-    -   组合, 21
-    -   将数组转换为, 24
-    -   转义码, 20
-    -   操作, 19–21
-    -   方法, 20–21
-    -   替换其中的单词, 22
-    -   搜索, 21
-    -   分割, 22
--   TypeScript, 29
-
--   Stringy 接口, 31
-
-## 结构指令, 38, 88–91
-
--   定义, 87
--   ngFor, 88
-
-
-
-user.service.ts 清单 219
-
--   ngIf, 88–89
-    ngSwitch, 88–89
-    ngSwitchCase, 88, 89
-    ngSwitchDefault, 88
-    structural.component.ts, 89–90
-    structural.component.ts 清单, 89–90
-    样式绑定, 81–82
-    style.component.ts 清单, 81, 86
-    样式, 绑定, 81–82
-    styles 关键字, 51
-    styles 选项 (组件), 50
-    styleUrls 选项 (组件), 50
-    styleUrls 关键字, 54
-    (submit) 事件, 103
-    subscribe() 方法, 110
-    substr() 方法, 21
-    搜索子字符串, 21
-    减法运算符, 8
-    switch 语句, 11
-    toPromise() 方法, 117, 118–119
-    toString() 方法, 23
-    toUpperCase() 方法, 21
-    try 语句, 26
-    双向绑定, 85–86
-    类型。参见数据类型
-    TypeScript, 29。另见清单
-    在 Angular 表达式中, 65–68
-    类
-        定义, 32
-        继承, 33
-    数据类型, 29–30
-    指令, 108–109
-    函数, 34–35
-    接口, 31–32
-    模块, 33–34
-    typescriptExpressions.component.ts 清单, 67
-
-T
-
-U
-
--   (tab) 转义码, 20
-    制表符转义码, 20
-    标签, <router-outlet> 134
-    模板选项 (组件), 50
-    模板
-        构建, 50–51
-        外部模板, 54–56
-    templateUrl 关键字, 54
-    templateUrl 选项 (组件), 50
-    .then() 方法, 118–119
-    throw 语句, 26–27
-    抛出错误, 26–27
-    波浪号 (~), 50–51
-    toLowerCase() 方法, 21
-    unshift() 方法, 23
-    update.component.CSS 清单, 131–132
-    update.component.html 清单, 130–131
-    update.component.ts 清单, 128–129
-    updateRating() 方法, 187–188
-    updateUser() 方法, 128, 129
-    更新模拟 Web 服务器项目, 127–132
-        data.service.ts, 127–128
-        update.component.CSS, 131–132
-        update.component.html, 130–131
-        update.component.ts, 128–129
-        user.service.ts, 129–130
-    大写管道, 69
-    UserService, 129–130
-    user.service.ts 清单, 124–125, 129–130
+-   `observable.component.html`，113
+-   `observable.component.ts`，112–113
+-   `outer.component.ts`，57
+-   `outer.css`，57
+-   `outer.html`，57
+-   `page1.component.html`，145
+-   `page1.component.ts`
+-   -   带导航栏的路由，141
+-   -   带参数的路由，145
+-   -   `page2.component.html`
+-   -   -   带导航栏的路由，142
+-   -   -   带参数的路由，146–147
+-   -   -   `page2.component.ts`
+-   -   -   带导航栏的路由，141
+-   -   -   带参数的路由，146
+-   -   `page3.component.html`，142–143
+-   -   `page3.component.ts`，142
+-   -   `person.component.ts`，59
+-   -   `pi.service.ts`，151
+-   -   `promise.service.ts`，161
+-   -   `property.component.ts`，78
+-   -   `random-image.service.ts`，157–158
+-   -   `rated-item.component.css`，191–192
+-   -   `rated-item.component.html`，191
+-   -   `rated-item.component.ts`，190–191
+-   -   `ratings.service.ts`，187–188
+-   -   `route2.component.html`，137
+-   -   `route2.component.ts`，137
+-   -   `shared.service.ts`，163–164
+-   -   `structural.component.ts`，89–90
+-   -   `style.component.ts`，81，86
+-   -   `typescriptExpressions.component.ts`，67
+-   -   `update.component.CSS`，131–132
+-   -   `update.component.html`，130–131
+-   -   `update.component.ts`，128–129
+-   -   `user.service.ts`，124–125，129–130
+-   -   `zoom.component.ts`，96–98
+-   -   `zoom.directive.ts`，96–97
+-   -   `zoomit.component.css`，178
+-   -   `zoomit.component.html`，178
+-   -   `zoomit.component.ts`，177–178
+-   **`loadChildren` 属性 (路由对象)**，133
+- ### 循环
+-   -   `for/in` 循环，13
+-   -   `for` 循环，12–13
+-   -   循环，11
+-   -       `for/in`，13
+-   -       `do/while`，12
+-   -       `for`，12–13
+-   -       中断，13–14
+-   -       `while`，11–12
+-   **小写管道，69**
+- ### 操作
+-   -   数组，22–24
+-   -   字符串，19–21
+-   ### `map()` 方法
+-   **`map()` 方法，117**
+-   **`match()` 方法，20**
+- ### 方法
+-   另请参阅函数
+-   -   `addClass()`，92
+-   -   `allowDrop()`，182
+-   -   `catch()`，117
+-   -   `changeLoop()`，156
+-   -   `charAt()`，20
+-   -   `charCodeAt()`，20
+-   -   `concat()`，20，21，23，24
+-   -   `createAlert()`，161
+-   -   `createDb()`，127
+-   -   `createTimedAlert()`，161
+-   -   `createUser()`，122，124
+-   -   `debounce()`，117
+-   -   定义，17
+-   -   `delete()`，116
+-   -   `deleteChar()`，107
+-   -   `deleteUser()`，124
+-   -   `doCircle()`，153
+-   -   `doRectangle()`，153
+-   -   `doSquare()`，153
+-   -   `doTrapezoid()`，153
+-   -   `doTriangle()`，153
+-   -   `emit()`，104
+-   -   `eventHandler()`，105
+-   -   `feed()`，32
+-   -   `fromCharCode()`，20
+-   -   `get()`，116
+-   -   `getCharacters()`，163
+-   -   `getItems()`，187
+-   -   `getObservable()`，187，189
+-   -   `getPi()`，151
+-   -   `getRandomImage()`，158
+-   -   `getStarClass()`，190–191
+-   -   `getUsers()`，122，128
+-   -   `head()`，116
+-   -   `hitCharacter()`，163–166
+-   -   `indexOf()`，20，21，23，25
+-   -   `join()`，23，24
+-   -   `lastIndexOf()`，20，23
+-   -   `leave()`，173
+-   -   `map()`，117
+-   -   `match()`，20
+-   -   `ngOnInit()`，111，128，151，177，189
+-   -   `onDrop()`，182
+-   -   `patch()`，116
+-   -   `pop()`，23
+-   -   `post()`，116
+-   -   `preventDefault()`，182
+-   -   `push()`，23
+-   -   `put()`，116
+-   -   `replace()`，20，22
+-   -   `reverse()`，23
+-   -   `search()`，21
+-   -   `selectUser()`，128
+-   -   `setRating()`，190
+-   -   `shift()`，23
+-   -   `slice()`，21，23
+-   -   `sort()`，23
+-   -   `split()`，21，22
+-   -   `subscribe()`，110
+-   -   `substr()`，21
+-   -   `.then()`，118–119
+-   -   `toLowerCase()`，21
+-   -   `toPromise()`，117，118–119
+-   -   `toString()`，23
+-   -   `toUpperCase()`，21
+-   -   `unshift()`，23
+-   -   `updateRating()`，187–188
+-   -   `updateUser()`，128，129
+-   -   `valueOf()`，21，23
+-   **模拟后端服务，186–187**
+- ### 模拟 Web 服务器
+- ### 简单 JSON 文件实现，118–121
+-   -   `app.module.ts`，119–120
+-   -   `dummyDB.JSON`，118
+-   -   `http.component.CSS`，120–121
+-   -   `http.component.html`，119–120
+-   -   `http.component.ts`，119
+- ### 简单模拟服务器实现，121–127
+-   -   `app.module.ts`，126
+-   -   `createDelete.component.CSS`，125–126
+-   -   `createDelete.component.html`，125
+-   -   `createDelete.component.ts`，123–124
+-   -   创建，121
+-   -   `data.service.ts`，122
+-   -   `user.service.ts`，124–125
+- ### 简单模拟服务器更新，127–132
+-   -   `data.service.ts`，127–128
+-   -   `update.component.CSS`，131–132
+-   -   `update.component.html`，130–131
+-   -   `update.component.ts`，128–129
+-   -   `user.service.ts`，129–130
+-   `mockbackend.service.ts` 清单，186–187
+- ### 模块
+-   -   Angular，38
+-   -   导入
+-   -       `AppRoutingModule`，134
+-   -       `BrowserAnimationsModule`，172
+-   -       `Component`，42–43
+-   -       `HttpModule`，119–120
+-   -       `InMemoryDbService`，122，127
+-   -       `InMemoryWebApiModule`，126–127
+-   -       `NgModule`，43–44
+-   -       `Router`，138
+-   -       路由模块，134
+-   -       TypeScript，33–34
+-   -   取模运算符，8
+-   -   `(mouseover)` 事件，104
+-   -   乘法运算符，8
+-   -   `myCustomEvent`，105
+- ## N
+-   -   `\n`（换行）转义码，20
+-   -   命名约定，50
+-   -   `nav.component.CSS` 清单，140
+-   -   `nav.component.html` 清单，139
+-   -   `nav.component.ts` 清单，139
+-   -   导航路由，134
+-   -   带导航栏的路由，138–143
+-   -       `app.component.CSS`，141
+-   -       `app.component.html`，140
+-   -       `app.component.ts`，140
+-   -       `app-routing.module.ts`，138–139
+-   -       `nav.component.CSS`，140
+-   -       `nav.component.html`，139
+-   -       `nav.component.ts`，139
+-   -       `page1.component.ts`，141
+-   -       `page2.component.html`，142
+-   -       `page2.component.ts`，141
+-   -       `page3.component.html`，142–143
+-   -       `page3.component.ts`，142
+-   - ### 嵌套组件
+-   -       使用依赖注入构建，56–58
+-   -       其中的自定义事件，104–106
+-   -   `new` 关键字，17
+-   -   换行转义码，20
+-   -   `ng eject` 命令，41
+-   -   `ng generate component` 命令，41
+-   -   `ng generate directive` 命令，41
+-   -   `ng generate enum` 命令，41
+-   -   `ng generate guard` 命令，41
+- ## 214 ng generate interface 命令
+-   -   ng generate interface 命令, 41
+-   -   ng generate module 命令, 41
+-   -   ng generate pipe 命令, 41
+-   -   ng generate service 命令, 41
+-   -   ng new 命令, 41
+-   -   ng serve 命令, 41
+-   -   ng-content 指令, 98
+-   -   ngFor 指令, 88, 120, 125, 130, 159
+-   -   ngForm 指令, 91
+-   -   ngIf 指令, 88-89
+-   -   ngModel 指令, 91
+-   -   NgModule, 43-44, 56
+-   -   ngOnInit() 方法, 111, 128, 151, 177, 189
+-   -   ngStyle 指令, 91
+-   -   ngSwitch 指令, 88-89
+-   -   ngSwitchCase 指令, 88, 89
+-   -   ngSwitchDefault 指令, 88
+-   -   不等于运算符, 9
+-   -   非运算符, 10
+-   -   npm install 命令, 121
+-   -   null 数据类型
+-   -       JavaScript, 7
+-   -       TypeScript, 30
+-   -   数字数据类型
+-   -       JavaScript, 7
+-   -       TypeScript, 29
+-   -   数字管道, 69
+-   -   迭代, 24
+-   -   操作, 22-24
+-   -   方法, 23
+-   -   从中移除项, 25
+-   -   搜索, 25
+-   -   自定对象, 18-19
+-   -   Observable
+-   -       创建, 110-111
+-   -       用于检测数据变化, 111-114
+-   -   属性, 17
+-   -   对象原型模式, 19
+-   -   路由, 133
+-   -   字符串, 19-22
+-   -       组合, 21
+-   -       将数组转换为, 24
+-   -       转义码, 20
+-   -       操作, 19-21
+-   -       方法, 20-21
+-   -       替换其中的单词, 22
+-   -       搜索, 21
+-   -       分割, 22
+-   -   语法, 17-18
+-   -   Observable 对象
+-   -       创建, 110-111
+-   -       用于检测数据变化, 111-114
+-   -   导入, 156-158
+-   -   observable.component.html 列表, 113
+-   -   observable.component.ts 列表, 112-113
+-   -   observables
+-   -       定义, 110
+-   -       Observable 对象
+-   -           创建, 110-111
+-   -           用于检测数据变化, 111-114
+-   -   onDrop() 方法, 182
+-   -   运算符 (JavaScript), 8
+- ## O
+-   -   对象字面量, 7
+-   -   对象, 17. 另请参见 方法
+-   -       数组, 22-25
+-   -           向其添加项, 25
+-   -           组合, 24
+-   -           转换为字符串, 24
+-   -   put() 方法, 215
+-   -   算术运算符, 8
+-   -   赋值运算符, 8-9
+-   -   比较运算符, 9-10
+-   -   或运算符, 10
+-   -   outer.component.ts 列表, 57
+-   -   outer.css 列表, 57
+-   -   outer.html 列表, 57
+-   -   outlet 属性 (路由对象), 133
+-   -   patch() 方法, 116
+-   -   path 属性 (路由对象), 133
+-   -   百分号 (%), 8
+-   -   Person 接口, 31
+-   -   person.component.ts 列表, 59
+-   -   PersonInterface, 32
+-   -   管道类, 72
+-   -   @pipe 装饰器, 72
+-   -   管道符号 (|), 72
+-   -   管道
+-   -       内置管道
+-   -           builtInPipes.component.ts, 71-72
+-   -           列表, 69-70
+-   -       自定义管道, 72-74
+-   -       定义, 68-69
+-   -   PiService, 151-152
+-   -       app.component.html, 152
+-   -       app.component.ts, 151
+-   -       pi.service.ts, 151
+-   -   pi.service.ts 列表, 151
+-   -   playLoop() 函数, 111
+-   -   加号 (+), 8
+-   -   pop() 方法, 23
+-   -   post() 方法, 116
+-   -   preventDefault() 方法, 182
+-   -   PromiseService, 161-162
+-   -   promise.service.ts 列表, 161
+-   -   属性
+-   -       绑定, 77-79
+-   -       定义, 17
+-   -   属性绑ning, 77-79
+-   -   property.component.ts 列表, 78
+-   -   对象原型模式, 19
+-   -   providers 元数据选项 (NgModule), 43
+-   -   push() 方法, 23
+-   -   put() 方法, 116
+- ## P
+-   -   page1.component.html 列表, 145
+-   -   page1.component.ts 列表
+-   -       带导航栏的路由器, 141
+-   -       带参数的路由器, 145
+-   -   page2.component.html 列表
+-   -       带导航栏的路由器, 142
+-   -       带参数的路由器, 146-147
+-   -   page2.component.ts 列表
+-   -       带导航栏的路由器, 141
+-   -       带参数的路由器, 146
+-   -   page3.component.html 列表, 142-143
+-   -   page3.component.ts 列表, 142
+-   -   参数, 带参数的路由器, 143-147
+-   -       app.component.ts, 144
+-   -       app-routing.module.ts, 144
+-   -       page1.component.html, 145
+-   -       page1.component.ts, 145
+-   -       page2.component.html, 146-147
+-   -       page2.component.ts, 146
+-   -   父组件, 其中的数据删除, 107-110
+-   -   括号 ( ), 10, 14, 82, 103
+-   -   传递数据
+-   -       通过依赖注入, 58-59
+-   -       变量到函数, 15
+-   ### PUT 请求
+-   -       响应回调函数, 117
+-   -       发送, 116–117
+- ## Q-R
+-   -   \r (回车) 转义码, 20
+- ## RandomImageService, 156–160
+-   -   app.component.css, 159
+-   -   app.component.html, 159
+-   -   app.component.ts, 158–159
+-   -   random-image.service.ts, 157–158
+-   -   random-image.service.ts 列表, 157–158
+-   -   rated-item 组件, 189–190
+-   -       rated-item.component.css, 191–192
+-   -       rated-item.component.html, 191
+-   -       rated-item.component.ts, 190–191
+-   -   RatedItem 接口, 187
+-   -   ratings.service.ts 列表, 187–188
+-   -   redirectTo 属性 (路由对象), 133
+-   -   从数组中移除项, 25
+-   -   replace() 方法, 20, 22
+-   -   替换字符串中的单词, 22
+-   ### 请求
+-   -       配置, 117
+-   -       GET 请求, 116–117
+-   -       PUT 请求, 116–117
+-   -       响应回调函数, 117
+-   -       resolve() 函数, 161
+-   -       Resolve 属性 (路由对象), 133
+-   -       响应回调函数 (HTTP), 117
+-   -       职责分离, 39
+-   -       return 语句, 15
+-   -       返回值, 15
+-   -       reverse() 方法, 23
+-   ## 根组件 (自定义指令), 99
+-   -       其 CSS, 100
+-   -       其 HTML, 99–100
+-   -       home.component.ts, 136
+-   -       route2.component.html, 137
+-   -       route2.component.ts, 137
+-   -       `<router-outlet>` 标签, 134
+-   -       定义路由数组, 132–133
+-   -       包含路由模块, 134
+-   -       runGuardsAndResolvers 属性 (路由对象), 133
+-   -       http, 116
+-   -       发送 GET 请求, 116–117
+-   -       JSON 文件实现与访问, 118–121
+-   -       发送 PUT 请求, 116–117
+-   -       请求配置, 117
+-   -       响应回调函数, 117
+-   -       简单模拟服务器实现, 121–127
+-   -       简单模拟服务器更新, 127–132
+-   -       集成到应用程序中, 149–150
+-   -       模拟后端服务, 186–187
+-   -       目的, 115
+-   -       评分服务, 187–188
+-   -       路由器, 116
+-   -           导入 ActivatedRoute, 134
+-   -           路由导舔, 134
+-   -           路由对象参数, 133
+-   -           导入 Router, 134
+-   -           带导航栏的路由器, 138–143
+-   -           带参数的路由器, 143–147
+-   -           路由数组, 132–133
+-   -           包含路由模块, 134
+-   -           简单路由器实现, 134–137
+- ## S
+-   -   schemas 元数据选项 (NgModule), 43
+-   -   变量的作用域, 16–17
+-   -   search() 方法, 21
+-   -   搜索
+-   -       数组, 25
+-   -       字符串, 21
+-   -   SecretAgent 类, 33
+-   -   selectCharacter() 函数, 107
+-   -   selector 选项 (组件), 49
+-   -   选择器, 50
+-   -   selectUser() 方法, 128
+-   -   发送 HTTP 请求, 116–117
+-   -   职责分离, 39
+-   -   服务器. 另请参见 模拟 Web 服务器
+-   ### 服务
+-   -   返回 promise 的服务, 161–162
+-   -   共享服务, 162–169
+-   -       app.component.html, 165
+-   -       app.component.ts, 165
+-   -       badguys.component.css, 168
+-   -       badguys.component.html, 168
+-   -       badguys.component.ts, 167
+-   -       good-guys.component.css, 167
+-   -       good-guys.component.html, 166
+-   -       good-guys.component.ts, 166
+-   -       shared.service.ts, 163–164
+-   -   使用场景, 149–150
+-   -       动画, 116
+-   -       常量数据服务, 151–152
+-   -           app.component.html, 152
+-   -           app.component.ts, 151
+-   -           pi.service.ts, 151
+-   -       数据转换服务, 152–156
+-   -           app.component.css, 155
+-   -           app.component.html, 154–155
+-   -           app.component.ts, 153–154
+-   -           area-calc.service.ts, 152–153
+-   -       定义, 39
+-   -       表单, 116
+-   -       UserService, 129–130
+-   -       可变数据服务, 156–160
+-   -           app.component.css, 159
+-   -           app.component.html, 159
+-   -           app.component.ts, 158–159
+-   -           random-image.service.ts, 157–158
+-   -   setRating() 方法, 190
+-   -   setTimeout() 函数, 156
+-   -   共享服务, 162–169
+-   -       app.component.html, 165
+-   -       app.component.ts, 165
+-   -       badguys.component.css, 168
+-   -       badguys.component.html, 168
+-   -       badguys.component.ts, 167
+-   -       good-guys.component.css, 167
+-   -       good-guys.component.html, 166
+-   -       good-guys.component.ts, 166
+-   -       shared.service.ts, 163–164
+-   -   SharedService. 另请参见 共享服务
+-   -   shared.service.ts 列表, 163–164
+-   -   shift() 方法, 23
+-   -   slice() 方法, 21, 23
+-   -   slice:start:end 管道, 69
+-   -   soldierOfGondor() 函数, 34
+-   -   sort() 方法, 23
+-   -   split() 方法, 21, 22
+-   -   分割字符串, 22
+-   ### 星级评分应用程序
+-       -   app.component.css, 190
+-       -   app.component.html, 189–190
+-       -   app.component.ts, 189
+-       -   app.module.ts, 186
+-       -   文件夹结构, 185
+-       -   mockbackend.service.ts, 186–187
+-       -   rated-item.component.css, 191–192
+-       -   rated-item.component.html, 191
+-       -   rated-item.component.ts, 190–191
+-       -   ratings.service.ts, 187–188
+- ## 语句. 另请参见 关键字
+-   -   break, 13–14
+-   -   catch, 26
+-   -   continue, 13–14
+-   -   finally, 27
+-   -   if, 10
+-   -   return, 15
+-   -   switch, 11
+-   -   throw, 26–27
+-   -   try, 26
+- ## 字符串对象, 19–22
+-   -   组合, 21
+-   -   将数组转换为, 24
+-   -   转义码, 20
+-   -   操作, 19–21
+-   -   方法, 20–21
+-   -   替换其中的单词, 22
+-   -   搜索, 21
+-   -   分割, 22
+-   ### 字符串
+-   -   JavaScript, 6
+-   -       组合, 21
+-       -   将数组转换为, 24
+-       -   转义码, 20
+-       -       操作, 19–21
+-       -       方法, 20–21
+-       -       替换其中的单词, 22
+-       -       搜索, 21
+-       -       分割, 22
+-   -   TypeScript, 29
+-   -   Stringy 接口, 31
+-   ## 结构指令, 38, 88–91
+-   -   定义, 87
+-   -   ngFor, 88
+-   user.service.ts 清单 219
+-   -   ngIf, 88–89
+-       ngSwitch, 88–89
+-       ngSwitchCase, 88, 89
+-       ngSwitchDefault, 88
+-       structural.component.ts, 89–90
+-       structural.component.ts 清单, 89–90
+-       样式绑定, 81–82
+-       style.component.ts 清单, 81, 86
+-       样式, 绑定, 81–82
+-       styles 关键字, 51
+-       styles 选项 (组件), 50
+-       styleUrls 选项 (组件), 50
+-       styleUrls 关键字, 54
+-       (submit) 事件, 103
+-       subscribe() 方法, 110
+-       substr() 方法, 21
+-       搜索子字符串, 21
+-       减法运算符, 8
+-       switch 语句, 11
+-       toPromise() 方法, 117, 118–119
+-       toString() 方法, 23
+-       toUpperCase() 方法, 21
+-       try 语句, 26
+-       双向绑定, 85–86
+-       类型。参见数据类型
+-       TypeScript, 29。另见清单
+-       在 Angular 表达式中, 65–68
+-       类
+-           定义, 32
+-           继承, 33
+-       数据类型, 29–30
+-       指令, 108–109
+-       函数, 34–35
+-       接口, 31–32
+-       模块, 33–34
+-       typescriptExpressions.component.ts 清单, 67
+- ## T
+- ## U
+-   -   (tab) 转义码, 20
+-       制表符转义码, 20
+-       标签, <router-outlet> 134
+-       模板选项 (组件), 50
+-       模板
+-           构建, 50–51
+-           外部模板, 54–56
+-       templateUrl 关键字, 54
+-       templateUrl 选项 (组件), 50
+-       .then() 方法, 118–119
+-       throw 语句, 26–27
+-       抛出错误, 26–27
+-       波浪号 (~), 50–51
+-       toLowerCase() 方法, 21
+-       unshift() 方法, 23
+-       update.component.CSS 清单, 131–132
+-       update.component.html 清单, 130–131
+-       update.component.ts 清单, 128–129
+-       updateRating() 方法, 187–188
+-       updateUser() 方法, 128, 129
+-       更新模拟 Web 服务器项目, 127–132
+-           data.service.ts, 127–128
+-           update.component.CSS, 131–132
+
+
+
+update.component.html, 130–131
+
+update.component.ts, 128–129
+
+user.service.ts, 129–130
+
+大写管道, 69
+
+UserService, 129–130
+
+user.service.ts 清单, 124–125, 129–130
 
 ## V
 
-**valueOf() 方法**, 21, 23
+`valueOf()` 方法, 21, 23
 
-**var 关键字**, 6
+`var` 关键字, 6
 
-**可变数据服务**, 156–160
+可变数据服务, 156–160
 
 -   app.component.css, 159
+
 -   app.component.html, 159
+
 -   app.component.ts, 158–159
+
 -   random-image.service.ts, 157–158
 
-**变量**, 6
+变量, 6
 
 -   传递给函数, 15
+
 -   作用域, 16–17
 
-**viewProviders 选项 (组件)**, 50
+`viewProviders` 选项 (组件), 50
 
-**Visual Studio Code**, 40
+Visual Studio Code, 40
 
-**void 数据类型**, 30
+`void` 数据类型, 30
 
 ## W
 
-**Web 应用程序**。参见组件；服务
+Web 应用程序。参见组件；服务
 
-**Web 浏览器**。参见浏览器
+Web 浏览器。参见浏览器
 
-**Web 服务器**。参见模拟 Web 服务器
+Web 服务器。参见模拟 Web 服务器
 
-**while 循环**, 11–12
+`while` 循环, 11–12
 
-**单词**, 在字符串中替换, 22
+单词, 在字符串中替换, 22
 
 ## X-Y-Z
 
-**zoom 应用程序**
+zoom 应用程序
 
 -   app.component.html, 177
+
 -   app.component.ts, 176–177
+
 -   文件夹结构, 176
+
 -   zoomit.component.css, 178
+
 -   zoomit.component.html, 178
+
 -   zoomit.component.ts, 177–178
 
-**zoom 指令**, 95–98
+`zoom` 指令, 95–98
 
-**ZoomDirective 导出类**, 97
+`ZoomDirective` 导出类, 97
 
-**zoom.directive.ts 清单**, 96–97
+`zoom.directive.ts` 清单, 96–97
 
-**zoomit 组件**
+`zoomit` 组件
 
 -   zoomit.component.css, 178
+
 -   zoomit.component.html, 178
+
 -   zoomit.component.ts, 177–178
 
 ### 访问免费开发版
 
-您可以使用**免费开发版**来试用 **Force.com 平台**。这是一个免费、功能完整的平台实例，可用于学习和开发。
+您可以使用免费开发版来试用 Force.com 平台。这是一个免费、功能完整的平台实例，可用于学习和开发。
 
 1.  访问 [developer.force.com](http://developer.force.com)
+
 2.  点击 **Sign up**
+
 3.  输入您的详细信息并点击 **Sign me up**
+
 4.  检查您的电子邮件，点击链接设置密码
+
 5.  登录到您的新开发版
 
 ### 访问免费网络版
@@ -8914,6 +8983,7 @@ U
 无论您以何种格式购买本书，均可访问相应的网络版，其中提供了几项仅在线可用的特殊功能：
 
 -   本书的完整文本
+
 -   在更正和更新可用时提供
 
 网络版可在所有类型的计算机和移动设备上通过任何支持 HTML5 的现代 Web 浏览器查看。
@@ -8921,9 +8991,13 @@ U
 要获取 *Learning Angular* 网络版，您只需注册本书：
 
 1.  访问 www.informit.com/register
+
 2.  登录或创建新账户。
+
 3.  输入 ISBN：**9780134576978**
+
 4.  回答问题以证明购买。
+
 5.  网络版将显示在您账户页面的数字购买选项卡下。点击启动链接以访问产品。
 
 ### 编程 / Web 开发
@@ -8939,27 +9013,37 @@ Angular 是 Web 开发领域中最令人兴奋和创新的新兴技术之一。�
 > >> Angular 通过强制您遵循基础结构和设计规则，帮助您成为更好的 Web 开发人员。
 
 -   了解 Angular 的组织方式，并学习设计 Angular 应用程序的最佳实践
+
 -   使用内置指令快速构建 Angular 模板，以增强用户体验
+
 -   将 UI 元素绑定到您的数据模型，以便对模型和 UI 的更改自动同步发生
+
 -   定义扩展 HTML 的自定义 Angular 指令
+
 -   实现可缩放的图像、可扩展的列表和其他丰富的 UI 组件
+
 -   实现与 Web 服务器交互的客户端服务
+
 -   构建动态浏览器视图以提供更丰富的用户交互
+
 -   创建可以轻松重用的自定义服务
+
 -   将丰富的 UI 组件实现为自定义 Angular 指令
 
 **BRAD DAYLEY** 是一位高级软件工程师，拥有超过 20 年的企业应用程序和 Web 界面开发经验。他设计并实现了各种各样的应用程序和服务，从应用服务器到复杂的 Web 应用程序。**BRENDAN DAYLEY** 是一位 Web 应用程序开发人员，他使用 JavaScript、TypeScript 和 Angular 构建了多个 Web 应用程序。**CALEB DAYLEY** 是一名学习计算机科学的大学生。他是 JavaScript、Python 和 C# 开发人员，并且是 Unity 平台的忠实粉丝。
 
-**免费网络版** 在 informit.com/register 注册您的书，即可免费访问本书的在线网络版，以及方便地下载、获取更新和更正（当它们可用时）。
+免费网络版 在 informit.com/register 注册您的书，即可免费访问本书的在线网络版，以及方便地下载、获取更新和更正（当它们可用时）。
 
 informit.com/learningseries
 
 文本印刷在再生纸上
 
 封面设计：Chuti Prasertsith
+
 封面摄影：ILeysen/ShutterStock
 
 ISBN-13: 978-0-13-457697-8
+
 ISBN-10: 0-13-457697-7
 
 ![](img/6cec51936e44f3a6d2c21b1752185726_243_0.png)

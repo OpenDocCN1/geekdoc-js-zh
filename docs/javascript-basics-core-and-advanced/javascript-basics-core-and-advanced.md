@@ -1,26 +1,5 @@
+
 # JavaScript：基础、核心与高级指南
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 关于作者
 
@@ -30,7 +9,7 @@
 
 在第二部分中，我们涵盖了 JavaScript 的核心。对象、数组、类型转换、字符串和数字。我们还回顾了可能会引起困惑的箭头函数。展开和剩余运算符非常强大。
 
-第三部分进入了高级主题。例如，理解执行上下文和调用栈是关重要的。同样，变量作用域和作用域链可以帮助你了解何时可以使用何时不能使用变量。
+第三部分进入了高级主题。例如，理解执行上下文和调用栈是至关重要的。同样，变量作用域和作用域链可以帮助你了解何时可以使用何时不能使用变量。
 
 总体来说，这本书让你对 JavaScript 的优势有一个清晰的认识。在多年的使用过程中，它已经进化很大。从很小开始成长为更完整的语言。
 
@@ -40,7 +19,7 @@
 
 我有一个坦白。JavaScript 和我的开始并不愉快。我的第一次尝试是为了表单验证。我曾咒它的存在。
 
-幸运的是，在重新接触之后，我开始尊重它。多年来，它已经成长了一种强大的语言。
+幸运的是，在重新接触之后，我开始尊重它。多年来，它已经成长一种强大的语言。
 
 ## JavaScript
 
@@ -124,6 +103,7 @@ let sum = sumTwoNumbers(6,4);
 如果你想调用函数，可以像这个例子这样做。在这里我们传入两个数字。这些数字也可以被替换为变量。
 
 最后，我们接触了为什么要使用 JavaScript。然后我们开始编写代码。通过语句和函数，我们开始看到内部运行了什么。亲自尝试一下吧！
+
 你不会后悔的。
 
 ## JavaScript 变量与值
@@ -144,7 +124,7 @@ let sum = sumTwoNumbers(6,4);
 let tomsJavaScriptVariable = "stuff";
 ```
 
-这个代码示例有一个值 "stuff" 和一个变量名。这里发生了很多事情，让我解释一下。
+这个代码示例有一个值 `"stuff"` 和一个变量名。这里发生了很多事情，让我解释一下。
 
 ### 声明
 
@@ -154,7 +134,7 @@ let tomsJavaScriptVariable = "stuff";
 let declareVariable; // 声明
 ```
 
-let 关键字后面跟着名称声明了变量。注意我们之前的例子设置了值。这个没有。
+`let` 关键字后面跟着名称声明了变量。注意我们之前的例子设置了值。这个没有。
 
 #### 初始化
 
@@ -168,7 +148,7 @@ declareVariable = 123; // 初始化变量
 
 #### 命名
 
-当你命名变量时，在 JavaScript 中需要学习一些规则。长度可以短到只有一个字符。没有上限。第一个字符限制为字母、下划线(_) 和美元符号($)。数字不允许作为第一个字符。
+当你命名变量时，在 JavaScript 中需要学习一些规则。长度可以短到只有一个字符。没有上限。第一个字符限制为字母、下划线(`_`) 和美元符号(`$`)。数字不允许作为第一个字符。
 
 ```javascript
 let a; // 字母
@@ -190,18 +170,18 @@ JavaScript 提供了许多命名选项。你的同事会感谢。我喜欢开玩
 
 #### const
 
-如果你有一个不想更改的变量，可以使用 const 关键字来声明它。这是替代 let 关键字的。
+如果你有一个不想更改的变量，可以使用 `const` 关键字来声明它。这是替代 `let` 关键字的。
 
 ```javascript
 const pi = 3.14; // 不能更改
 let exchangeRate = 3.4; // 可以更改
 ```
 
-只需确保你想清楚这一切。明智地使用 const 关键字。如果你疯狂使用它，就会有问题。
+只需确保你想清楚这一切。明智地使用 `const` 关键字。如果你疯狂使用它，就会有问题。
 
 #### let vs var
 
-变量也可以用 var 关键字声明。使用 var 关键字会在整个函数范围内声明变量。而 let 仅在它定义的块中有效。
+变量也可以用 `var` 关键字声明。使用 `var` 关键字会在整个函数范围内声明变量。而 `let` 仅在它定义的块中有效。
 
 ```javascript
 function varScoping() {
@@ -213,10 +193,6 @@ if (true) {
   var x = 2;
 }
 ```
-
-
-
-
 
 ```javascript
 console.log(x); // 将打印 2
@@ -308,7 +284,6 @@ greetTom();
 function calculateFlooring(length, width) {
   return length * width;
 }
-```
 
 calculateFlooring(12,10);
 ```
@@ -338,7 +313,8 @@ function calculateFlooring(length, width) {
 ```
 
 ```javascript
-let totalFlooring = o;
+let totalFlooring = 0;
+
 totalFlooring = calculateFlooring(length,width);
 ```
 
@@ -360,7 +336,7 @@ if(pizzaArrives) {
 
 所以，如果 `pizzaArrives` 为真，我们就调用 `openTheDoor` 函数。我在 `if` 语句后面添加了大括号。这是可选的，但有助于可读性。省略大括号可能会导致你漏掉 Bug。所以请包含它们！
 
-if/else
+### if/else
 
 有时你有两种不同的行动方案。我们可以在 `if` 的同时添加 `else` 语句。假设你正在煮一些汉堡。
 
@@ -391,7 +367,7 @@ if(sideCooked) {
 我们用于 `if` 语句的运算符必须解析为 `true` 或 `false`。这里有很多选项供你使用。根据经验，你需要测试这些内容并获得正确的那个。
 
 ```javascript
-if(9>5) { alert("Greater than"); // greater than
+if(9>5) { alert("Greater than"); } // greater than
 if(5<8) { alert("Less than"); } // less than
 ```
 
@@ -405,16 +381,15 @@ if(4!=6) { alert("Not equal to"); } // not equal to
 
 ```javascript
 const value1 = 4;
-const value2= -3;
+const value2 = -3;
 ```
 
 ```javascript
-console.log(value1 > o && value2 > o); // 预期输出:
-false
+console.log(value1 > 0 && value2 > 0); // 预期输出: false
 ```
 
 ```javascript
-console.log(value1 > o || value2 > o); // 预期输出: true
+console.log(value1 > 0 || value2 > 0); // 预期输出: true
 ```
 
 逻辑与必须两个值都真才能解析为真。逻辑或只需要一个为真。
@@ -425,6 +400,7 @@ console.log(value1 > o || value2 > o); // 预期输出: true
 
 ```javascript
 const shoes = 'Reebok';
+
 switch (shoes) {
   case 'Nike':
     console.log('Nike shoes are $200.');
@@ -433,7 +409,9 @@ switch (shoes) {
   case 'Reebok':
     console.log('Adidas and Reebok are $100 a pair.');
     // 预期输出: "Adidas and Reebok are $100 a pair."
-```...
+    break;
+}
+```
 
 ### 5
 
@@ -471,8 +449,6 @@ for (let i = 0; i < books.length; i++) {
 
 如果我的狗 Baxter 想吃东西，我想创建一个循环，在它饿的时候喂它吃。`while` 循环可以做到这一点。这是一个示例。
 
-
-
 ```javascript
 let baxterHungry = true;
 
@@ -492,13 +468,12 @@ while (baxterHungry) {
 
 ```javascript
 let donutsEaten = 0;
+
 do {
   console.log("Donuts eaten " + donutsEaten);
   donutsEaten++;
-```
-
-```javascript
 } while (donutsEaten < 5)
+
 console.log("I'm full of Donuts!");
 ```
 
@@ -565,8 +540,7 @@ console.log(localVariable);
 
 ```javascript
 console.log(localVariable);
-^
-ReferenceError: localVariable is not defined
+// ReferenceError: localVariable is not defined
 ```
 
 所以你可以看到当你不小心将变量放在错误位置时会发生什么。
@@ -577,10 +551,12 @@ ReferenceError: localVariable is not defined
 
 ```javascript
 console.log("here");
+
 {
   let blockScopeVariable = 0;
   console.log(blockScopeVariable);
 }
+
 // 我们在此处无法引用 blockScopeVariable
 ```
 
@@ -600,11 +576,13 @@ const colors = ['red', 'blue', 'white'];
 for (let i = 0, l = colors.length; i < l; i++) {
   console.log(colors[i]); // 'red', 'blue', 'white'
 }
+
 console.log(l); // ???
 console.log(i); // ???
 ```
 
 变量 `i` 和 `l` 将导致引用错误。它们与我们之前的示例一样超出了作用域。Dmitry Pavlutin 更深入地解释了这一点。他还涵盖了我们在编码中可能犯的更多常见错误。
+
 JavaScript 作用域有几个需要记住的基本原则。全局作用域随处可见。局部和块级作用域更集中。总体而言，你应该使用后者并避免前者。继续编码吧！
 
 ### 7
@@ -625,9 +603,9 @@ function outerFunction() {
   }
   return innerFunction;
 }
-```
 
 var inner = outerFunction();
+```
 
 ```javascript
 console.log(inner());
@@ -648,24 +626,25 @@ console.log(inner());
 词法作用域术是指变量定义的位置。以及它是否可以被引用。
 
 ```javascript
-let x = 10
+let x = 10;
+
 let myFunc = function () {
   let y = 20;
   console.log("x and y is accessible (outer):", x, y);
-  let insideFunc= function () {
+  let insideFunc = function () {
     let z = 30;
     console.log("x and y and z is accessible (inner):", x, y, z);
   }
   insideFunc();
   return;
 }
+
 myFunc();
 ```
 
-console.log("only x is accessible (global):", a);
-
-
-
+```javascript
+console.log("only x is accessible (global):", x);
+```
 
 延续我们之前的例子，我们有一个汽车对象和一个球的原始类型。前者可以改变，而后者不能。作为一名老牌 Java 程序员，这非常熟悉。
 
@@ -673,17 +652,16 @@ console.log("only x is accessible (global):", a);
 
 可以使用构造函数创建对象。继续以汽车为主题，让我们创建两个汽车对象，这样你就能它的样子了。
 
-```
+```javascript
 // Constructor function for Car objects
 function Car(make, model, year) {
-
   this.make = make;
   this.model = model;
   this.year = year;
 }
 ```
 
-```
+```javascript
 // Create two Car objects
 const myCar = new Car("Ford", "Pinto", "1971");
 const yourCar = new Car("Dodge", "Charger", "1977");
@@ -693,17 +671,16 @@ const yourCar = new Car("Dodge", "Charger", "1977");
 
 ### 属性
 
-我们创建了两个带有许多值的汽车对象。
-这些被称为属性。如果我们想将它们打印到日志中，可以这样做：
+我们创建了两个带有许多值的汽车对象。这些被称为属性。如果我们想将它们打印到日志中，可以这样做：
 
-```
+```javascript
 console.log(myCar.make);
 console.log(myCar.model);
 ```
 
 这是访问值的一种方法。或者你也可以这样做：
 
-```
+```javascript
 console.log(myCar["make"]);
 console.log(myCar["model"]);
 ```
@@ -714,7 +691,7 @@ console.log(myCar["model"]);
 
 JavaScript 对象有一些内置方法。例如，其中之一是 `keys()` 方法。它将键转换为数组。
 
-```
+```javascript
 // Initialize an object
 const car = {
   make: 'Ford',
@@ -723,12 +700,12 @@ const car = {
 };
 ```
 
-```
+```javascript
 // Get the keys of the object
 const keys = Object.keys(car);
 ```
 
-```
+```javascript
 console.log(keys);
 // outputs the following
 ["make", "model", "year"]
@@ -736,7 +713,7 @@ console.log(keys);
 
 同样还有一个 `values()` 方法。
 
-```
+```javascript
 // Initialize an object
 const game = {
   id: 1,
@@ -749,7 +726,6 @@ const game = {
 ```javascript
 // Get all values of the object
 const values = Object.values(game);
-
 console.log(values);
 // outputs the following
 [1, "23-March-2025", "Panthers vs Jayhawks", "St. Louis"]
@@ -834,7 +810,7 @@ console.log(bread.toString()); // white,wheat,sourdough
 const bread = ["white", "wheat", "sourdough"];
 ```
 
-```
+```javascript
 console.log(bread.join('-')); // white-wheat-sourdough
 ```
 
@@ -865,13 +841,9 @@ console.log(tomsArray[0]); // prints 11
 
 所以我们已经引起你对 JavaScript 数组的兴趣。你了解得更多了。我们讨论了如何创建和修改它们。编码愉快！
 
-
-
-
-
 ```javascript
 let stringSingleQuote = 'Example using single quotes';
-backTicksToo = `We can use back ticks`
+backTicksToo = `We can use back ticks`;
 ```
 
 与我们的第一个示例类似，我们可以使用双引号。单引号和反引号也是合法的。
@@ -882,7 +854,7 @@ JavaScript 允许字符串是原始类型或对象。
 
 ```javascript
 let primitiveString = "This is a primitive";
-let objectString = new String("This is an object.")
+let objectString = new String("This is an object.");
 ```
 
 第一个例子是原始类型，与之前的示例相似。第二个是一个对象。我们使用了 `new` 关键字和 `String` 构造函数。如果你想了解更多信息，可以查看 Flavio 的这篇文章。
@@ -908,7 +880,7 @@ let length = sampleText.length;
 
 ```javascript
 let sentence = "A quick brown fox jumped over the lazy dog.";
-let foxIndex = text.indexOf("fox");
+let foxIndex = sentence.indexOf("fox");
 ```
 
 使用 `indexOf` 和 `slice` 函数可以帮助你拆分字符串。
@@ -940,17 +912,14 @@ console.log(str1 === str2); // false
 这是一个严格比较的示例。
 
 ```javascript
-let num1= 23;
+let num1 = 23;
 let num2 = '23';
 ```
 
 ```javascript
 // 松相等
 console.log(num1 == num2); // true
-// 严格相等 
-```
-
-```javascript
+// 严格相等
 console.log(num1 === num2); // false
 ```
 
@@ -998,7 +967,7 @@ Number(new Date()); // 1712747922911
 Number("s:"); // NaN
 ```
 
-在这些示例中，你可以看到 true 和 false 解析为数字。日期也被转换为数字。然而，字母无法解析为数字。因此，它打印 "NaN"。代表 Not a Number（不是数字），参考指南提供了更多信息。
+在这些示例中，你可以看到 `true` 和 `false` 解析为数字。日期也被转换为数字。然而，字母无法解析为数字。因此，它打印 `"NaN"`。代表 Not a Number（不是数字），参考指南提供了更多信息。
 
 ### Precision
 
@@ -1027,20 +996,15 @@ console.log(num); // 3.14
 
 ```javascript
 const num = Math.PI.toPrecision(6);
-
 console.log(num); // 3.14159
 ```
 
 `toPrecision` 方法将给我们我们请求的数字。所以如果你需要设置显示多少位有效数字，这会对你很有用。
 
 在处理 JavaScript 数字时有很多选项。虽然这是一种通用的方法，但它是有效的。测试一下极限吧。
-```
-
-
-
 
 ```javascript
-console.log(o !== false);
+console.log(0 !== false);
 //Example 4: Expected output: true
 ```
 
@@ -1108,13 +1072,16 @@ let repository = obj.repo;
 ```json
 {"customers":[
   { "business":"ABC Inc.",
+    "city":"Ducktown"
+  },
+  { "business":"Delta LTD",
+    "city":"Jimmyville"
+  },
+  { "business":"XYZ Company",
+    "city":"New Heights"
+  }
+]}
 ```
-
-ABC Inc. Ducktown
-
-Delta LTD Jimmyville
-
-XYZ Company New Heights
 
 XML 中的标签可以使内容更冗长。JSON 也让内容变得短了一些。大多数编程语言都可以通过适当的库处理其中一种。
 
@@ -1139,7 +1106,7 @@ JSON 主要用于表示调用 API 的数据。许多开发者比起 XML 更喜�
   "result" : {
     "echo" : "Some text."
   }
-]
+}]
 ```
 
 我们在 SmartBear 的朋友对此更深入地描述了这一点。这个简单的示例让你对调用 API 或 Web 服务有一个基本的理解。
@@ -1192,7 +1159,7 @@ function total(...num) {
   }
   return tot;
 }
-console.log (total(11, 22, 33, 44)); // 110
+console.log(total(11, 22, 33, 44)); // 110
 ```
 
 这个 `total` 函数可以处理传递给它的多个参数。剩余运算符启用了该选项。
@@ -1239,7 +1206,6 @@ const promiseB = 2024;
 const promiseC = new Promise((resolve, reject) => {
   setTimeout(resolve, 100, 'foo');
 });
-```
 
 Promise.all([promiseA, promiseB, promiseC]).then((values) => {
   console.log(values);
@@ -1261,7 +1227,6 @@ const promise1 = Promise.resolve(3);
 const promise2 = new Promise((resolve, reject) => {
   setTimeout(reject, 100, 'foo');
 });
-
 const promises = [promise1, promise2];
 
 Promise.allSettled(promises).then((results) =>
@@ -1275,26 +1240,22 @@ Promise.allSettled(promises).then((results) =>
 
 所以再次重申一下，如果你使用 `Promise.all()`，一旦其中一个 Promise 被拒绝，它就会被拒绝。而 `Promise.allSettled()` 永远不会被拒绝，它会解析或拒绝数组中的每一个 Promise。
 
-结论是，JavaScript 的异步工作是有帮助的。
-
-
-
-
-
-`Promise.all()` 和 `Promise.allSettled()` 可以解决某些问题。请回顾你的用例并选择合适的一个。
+结论是，JavaScript 的异步工作是有帮助的。`Promise.all()` 和 `Promise.allSettled()` 可以解决某些问题。请回顾你的用例并选择合适的一个。
 
 # 执行上下文与调用栈
 
 当我们执行 JavaScript 代码时，代码会被经过编译的。然后，它会创建一个全局执行上下文。我们可以通过这段代码看到这一点。
 
-```
+```javascript
 const name = 'Tom';
+
 const primary = () => {
   let x = 1;
   const y = secondary();
   x = x + y;
   return x;
 }
+
 function secondary() {
   var z = 2;
   return z;
@@ -1321,7 +1282,7 @@ function secondary() {
 
 作用域链
 
-this 关键字
+`this` 关键字
 
 ## 箭头函数说明
 
@@ -1331,14 +1292,16 @@ this 关键字
 
 让我们回到之前的例子。当我们观察这段代码块时，我们需要看到三个不同的执行上下文被创建。
 
-```
+```javascript
 const name = 'Tom';
+
 const primary = () => {
   let x = 1;
   const y = secondary();
   x = x + y;
   return x;
 }
+
 function secondary() {
   var z = 2;
   return z;
@@ -1361,56 +1324,54 @@ function secondary() {
 
 在我们的代码中，变量并不总是可访问的。作用域是我们能够访问它们的区域。当我们无法访问它们时，我们说“它们超出了作用域”。让我们看一些代码来直观理解。
 
-```
+```javascript
 {
   let scopeExample = 2222;
 }
-// 这里**无法**使用 scopeExample
+// 这里无法使用 scopeExample
 ```
 
 我们在括号中声明了一个变量。一旦离开括号，该变量就超出了作用域。你在循环中经常看到这一点。这是一个块作用域的例子。注意，块作用域（block scope）是在 ES6 中添加的。块作用域变量用 `let` 和 `const` 创建。用 `var` 声明变量用于函数作用域。记住 `var` 最初就在 JavaScript 中。另外两个是后来添加的。
 
 让我们看看全局作用域是什么。
 
-```
+```javascript
 let globalVar = 93; // 在全局作用域中声明
 ```
 
-```
+```javascript
 function myFunction() {
     console.log(globalVar); // 在内部访问全局变量
 }
 ```
 
-```
+```javascript
 myFunction(); // 输出: 93
 ```
 
 我们创建了全局变量，然后在函数内部引用了它。现在我们可以用函数作用域来封装它。
 
-```
+```javascript
 var sport = "tennis"; // 全局
 ```
 
-```
+```javascript
 function changeSport() {
     var sport = "racquetball"; // 局域
     console.log(sport);
 }
 ```
 
-```
+```javascript
 console.log(sport);
 changeSport();
 ```
 
-```
+```javascript
 console.log(sport);
 ```
 
 你知道输出会是什么吗？答案在这里。
-
-![](img/ab725de6c0882bc442fb13461ecf8740_96_0.png)
 
 所以，一旦我们离开函数，变量就超出了作用域。我们从壁球回到了网球。
 
@@ -1418,7 +1379,7 @@ console.log(sport);
 
 当我们在 JavaScript 中引用变量时，它将向上查找作用域链来寻找。例如，我们的函数作用域示例有两个 `sport` 变量。一个在函数内，一个在全局。
 
-```
+```javascript
 let globalVar = 10; // 全局作用域
 ```
 
@@ -1441,8 +1402,6 @@ outer();
 
 在这个例子中，你可以看到作用域链的使用。随着代码的执行，`console.log` 语句访问变量中的值。它打印出：
 
-![](img/ab725de6c0882bc442fb13461ecf8740_97_0.png)
-
 ### 词法作用域
 
 JavaScript 还有词法作用域（Lexical Scope），它指的是根据源代码中的位置来如何访问变量和函数。
@@ -1452,15 +1411,18 @@ const vGlobal = "Global";
 
 function outerFunc() {
   const vOuter = "Outer";
+
   function innerFunc() {
     const vInner = "Inner";
     console.log(vGlobal);
     console.log(vOuter);
     console.log(vInner);
   }
+
   innerFunc();
   console.log(vInner);
 }
+
 outerFunc();
 console.log(vOuter);
 ```
@@ -1476,11 +1438,7 @@ at mn (<anonymous>:16:5455)
 
 全局变量随处可访问。外部变量在外部函数和内部函数中都是可访问的，因为它是嵌套的。内部变量只在内部函数中可访问。总结一下，内部函数可以访问在外部作用域声明的变量。反之则不然。外部函数无法访问在内部作用域声明的变量。
 
-
-
-
-TDZ（暂时性死区）。如果你在声明之前使用它，将会得到错误。
-它们是块级作用的。因此它们只存在于块中。
+TDZ（暂时性死区）。如果你在声明之前使用它，将会得到错误。它们是块级作用的。因此它们只存在于块中。
 
 ### 暂时性死区
 
@@ -1490,11 +1448,11 @@ TDZ（暂时性死区）。如果你在声明之前使用它，将会得到错�
 const car = 'Honda';
 
 if (car === 'Honda') {
-  console.log(`Car is a ${model}\`); // Error
+  console.log(`Car is a ${model}`); // Error
   const years = 2024 - 2012;
   console.log(years);
   const model = 'Accord';
-  console.log(`Car is a ${model}\`);
+  console.log(`Car is a ${model}`);
 }
 ```
 
@@ -1510,24 +1468,26 @@ Map 是一种将值映射到键的数据结构。类似于对象，但对象的�
 
 ```javascript
 const coffeeShops = new Map();
+
 coffeeShops.set(1,"Starbucks Main Street");
 coffeeShops.set(2,"Starbucks Clinton Avenue");
 coffeeShops.set(3,"Dunkin Donuts - First Ave");
+
 console.log(coffeeShops);
 ```
 
 在这种情况下，我只是将键设为了整数。在 Map 中，我也可以使用其他内容作为键。运行这段代码将会得到这条消息。
 
-![](img/ab725de6c0882bc442fb13461ecf8740_103_0.png)
-
 也可以像下面这样对 `set` 方法进行链式调用。
 
 ```javascript
 const coffeeShops = new Map();
+
 coffeeShops.set(1,"Starbucks Main Street");
 coffeeShops.set(2,"Starbucks Clinton Avenue");
 coffeeShops.set(3,"Dunkin Donuts - First Ave").set(4, "Tom's Coffee House");
 coffeeShops.set(5,"Central Perk");
+
 console.log(coffeeShops);
 ```
 
@@ -1539,31 +1499,31 @@ console.log(coffeeShops);
 
 ```javascript
 const coffeeShops = new Map();
+
 coffeeShops.set(1,"Starbucks Main Street");
 coffeeShops.set(2,"Starbucks Clinton Avenue");
 coffeeShops.set(3,"Dunkin Donuts - First Ave").set(4, "Tom's Coffee House");
 coffeeShops.set(5,"Central Perk");
+
 console.log(coffeeShops.get(4));
 ```
 
 当我们运行它时，我们得到了键为 4 的值。
 
-![](img/ab725de6c0882bc442fb13461ecf8740_104_0.png)
-
 重要的是，键的数据类型是有重要的。所以如果我把 4 改为字符串，它将无法工作。
 
 ```javascript
 const coffeeShops = new Map();
+
 coffeeShops.set(1,"Starbucks Main Street");
 coffeeShops.set(2,"Starbucks Clinton Avenue");
 coffeeShops.set(3,"Dunkin Donuts - First Ave").set(4, "Tom's Coffee House");
 coffeeShops.set(5,"Central Perk");
+
 console.log(coffeeShops.get('4'));
 ```
 
 虽然我们没有得到错误，但它返回的是 `undefined`。
-
-![](img/ab725de6c0882bc442fb13461ecf8740_105_0.png)
 
 所以请注意数据类型，否则你可能会错过什么。并不是说我永远不会犯错误 :)
 
@@ -1573,23 +1533,21 @@ console.log(coffeeShops.get('4'));
 
 ```javascript
 const coffeeShops = new Map();
+
 coffeeShops.set(1,"Starbucks Main Street");
 coffeeShops.set(2,"Starbucks Clinton Avenue");
 coffeeShops.set(3,"Dunkin Donuts - First Ave").set(4, "Tom's Coffee House");
 coffeeShops.set(5,"Central Perk");
+
 coffeeShops.delete(4);
+
 console.log(coffeeShops);
 ```
 
 然后输出被更新了。
 
 ```
-Console ×
-Map(4) {1: "Starbucks Main Street", 2: "Sta..."
-  Number 1: "Starbucks Main Street"
-  Number 2: "Starbucks Clinton Avenue"
-  Number 3: "Dunkin Donuts - First Ave"
-  Number 5: "Central Perk"}
+Map(4) {1: "Starbucks Main Street", 2: "Starbucks Clinton Avenue", 3: "Dunkin Donuts - First Ave", 5: "Central Perk"}
 ```
 
 现在 map 只剩下四个元素。
@@ -1600,10 +1558,12 @@ Map(4) {1: "Starbucks Main Street", 2: "Sta..."
 
 ```javascript
 const coffeeShops = new Map();
+
 coffeeShops.set(1,"Starbucks Main Street");
 coffeeShops.set(2,"Starbucks Clinton Avenue");
 coffeeShops.set(3,"Dunkin Donuts - First Ave").set(4, "Tom's Coffee House");
 coffeeShops.set(5,"Central Perk");
+
 console.log(coffeeShops.size);
 ```
 
@@ -1615,12 +1575,16 @@ console.log(coffeeShops.size);
 
 ```javascript
 const coffeeShops = new Map();
+
 coffeeShops.set(1,"Starbucks Main Street");
 coffeeShops.set(2,"Starbucks Clinton Avenue");
-coffeeShops.set(3,"Dunkin Donuts - First Ave").set(4,"Tom's Coffee House");
+coffeeShops.set(3,"Dunkin Donuts - First Ave").set(4, "Tom's Coffee House");
 coffeeShops.set(5,"Central Perk");
+
 console.log(coffeeShops.size);
+
 coffeeShops.clear();
+
 console.log(coffeeShops.size);
 ```
 
@@ -1633,13 +1597,13 @@ console.log(coffeeShops.size);
 ```javascript
 const numArr = [2,4];
 const numMap = new Map();
+
 numMap.set(numArr,"value");
+
 console.log(numMap.get(numArr));
 ```
 
 当我们运行它时，注意第二种场景下的输出。我们可以使用 `numArr` 的元素。
-
-![](img/ab725de6c0882bc442fb13461ecf8740_108_0.png)
 
 Map 可以为你做很多事情。花时间掌握它们吧。在我职业生涯早期，我对 JavaScript 随着这些功能而取得的进展感到惊讶。
 
@@ -1662,13 +1626,11 @@ const cars = new Set(["Ford", "Chevy", "Honda"]);
 Set 会为你处理重复项。它会移除重复的值。这里有一个我们添加了两次 Ford 的示例。
 
 ```javascript
-const cars = new Set(["Ford", "Chevy", "Honda"]);
+const cars = new Set(["Ford", "Chevy", "Honda", "Ford"]);
 console.log(cars);
 ```
 
 你认为这会打印什么？四个还是三个？让我们来看看吧。
-
-![](img/ab725de6c0882bc442fb13461ecf8740_110_0.png)
 
 ### 大小
 
@@ -1682,8 +1644,7 @@ console.log("set of running shoes has " + runningShoes.size + " elements.");
 输出看起来是这样的：
 
 ```
-set
-3 elements.
+set of running shoes has 3 elements.
 ```
 
 注意 `size` 用于 sets，而 `length` 用于数组。这可能会让人混淆。
@@ -1700,8 +1661,6 @@ console.log(taxYears.has(2015));
 
 这里有一个代表年份的集合。使用 `has` 方法检查我们的 set 是否包含这些年份。这是我们的输出。
 
-![](img/ab725de6c0882bc442fb13461ecf8740_112_0.png)
-
 `has` 方法类似于数组的 `includes` 方法。
 
 ### 删除
@@ -1711,13 +1670,13 @@ console.log(taxYears.has(2015));
 ```javascript
 const taxYears = new Set([2023, 2024, 2025]);
 console.log(taxYears);
+
 taxYears.delete(2025);
+
 console.log(taxYears);
 ```
 
 当我们运行它时，我们看到：
-
-![](img/ab725de6c0882bc442fb13461ecf8740_112_1.png)
 
 ### 清空
 
@@ -1726,7 +1685,9 @@ console.log(taxYears);
 ```javascript
 const taxYears = new Set([2023, 2024, 2025]);
 console.log(taxYears);
+
 taxYears.clear();
+
 console.log(taxYears);
 ```
 
@@ -1738,24 +1699,21 @@ console.log(taxYears);
 
 ```javascript
 const nbaLegends = new Set(["Michael Jordan", "Jerry West"]);
+
 for (let legend of nbaLegends) {
   console.log(legend);
 }
 ```
 
-
-
-
 ```javascript
 "Julius Erving";
+
 for (const legends of nbaLegends) {
   console.log(legends);
 }
 ```
 
 这段代码将产生以下输出。
-
-![](img/ab725de6c0882bc442fb13461ecf8740_114_0.png)
 
 集合（Sets）并不是为了替代数组（Arrays）。如果你需要保持顺序或保留重复项，集合将无法满足。在选择集合之前，理解其使用场景至关重要。此外，如果你需要操作数据，数组是更好的选择。
 
@@ -1773,6 +1731,7 @@ const person = {
     return this.firstName + " " + this.lastName;
   }
 };
+
 const person1 = {
   firstName: "Tom",
   lastName: "Henricksen"
@@ -1792,12 +1751,13 @@ const person = {
     city + ", " + state;
   }
 }
+
 const person1 = {
   firstName: "Tom",
   lastName: "Henricksen"
 };
-console.log(person.fullName.call(person1, "Newtown",
-"Pennsylvania"));
+
+console.log(person.fullName.call(person1, "Newtown", "Pennsylvania"));
 ```
 
 在这个例子中，我们使用了 `call` 方法，它提供了更多信息。这里的输出将是“Tom Henricksen, Newtown, Pennsylvania”。
@@ -1814,6 +1774,7 @@ const person = {
     return this.firstName + " " + this.lastName;
   }
 }
+
 const brother = {
   firstName: "John",
   lastName: "Henricksen"
@@ -1827,8 +1788,6 @@ console.log(fullName());
 
 在这个例子中，`brother` 对象从 `person` 对象借用了 `fullName` 方法。
 
-![](img/ab725de6c0882bc442fb13461ecf8740_117_0.png)
-
 如果你需要调用另一个函数并提供上下文参数，`apply` 可能会有效。
 
 ### Apply
@@ -1841,16 +1800,16 @@ const person = {
     return this.firstName + " " + this.lastName + ", " + city + ", " + state;
   }
 };
+
 const brother = {
   firstName: "John",
   lastName: "Henrickson"
 };
+
 console.log(person.fullName.apply(brother, ["Phoenix","Arizona"]));
 ```
 
 当我们运行它时，会看到以下输出。
-
-![](img/ab725de6c0882bc442fb13461ecf8740_118_0.png)
 
 这三种方法可以帮助你有效地使用 `this` 关键字。随着你学习和编写更多的 JavaScript 代码，你将发现利用它们的方法。将它们加入你的工具箱，它们将会非常用用。
 
@@ -1892,16 +1851,13 @@ console.log(message)
 
 这里是 JavaScript 代码的内容。我们将消息设置到了 header 中。
 
-![](img/ab725de6c0882bc442fb13461ecf8740_123_0.png)
-
 这是浏览器中的 HTML 页面。
 
 ```text
-Console ×
 Tom was here!
 ```
 
-输出也被发送到了控制台。你可以在这里看到。document 对象代表网页。我们使用 `querySelector` 查找页面上的元素。我们通过 `innerHTML` 属性修改内容。
+输出也被发送到了控制台。你可以在这里看到。`document` 对象代表网页。我们使用 `querySelector` 查找页面上的元素。我们通过 `innerHTML` 属性修改内容。
 
 ```javascript
 getElementById()
@@ -1947,8 +1903,6 @@ You clicked!!
 
 这里是输出，由于我点击了页面，消息被打印了出来。这些只是使用 DOM 的三个例子。你可以做的其他操作包括删除和添加元素。当用户填写表单时，你可以显示或隐藏信息。还可以处理页面上的系列元素。当有许多字段需要显示时，这非常有帮助。在医疗行业这种情况经常发生。
 
-![](img/ab725de6c0882bc442fb13461ecf8740_130_0.png)
-
 # 作者
 
 Tom Henricksen是一位解决问题的技术专家。他是 Code is Easy 的演讲者和作家。从开发者开始，他担任过项目经理、技术主管、Scrum Master 和软件开发经理。
@@ -1959,11 +1913,10 @@ Tom 还是创业者。他以技术角色为核心进行演讲和写作。Tom 是
 
 Tom 学习了如何解决挑战性的技术问题并领导技术团队。他也可以帮助你这些这些技能！你可以通过以下方式与我联系：
 
--   http://codeiseasy.co
-https://x.com/TomHenricksen
-https://www.linkedin.com/in/tomhenricksen
+- http://codeiseasy.co
+- https://x.com/TomHenricksen
+- https://www.linkedin.com/in/tomhenricksen
 
 订阅我的 newsletter：
 
--   https://t.co/NkolrQgXHM
-
+- https://t.co/NkolrQgXHM

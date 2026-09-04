@@ -1,61 +1,64 @@
+
 # Next.JS 现代 Web 应用：学习 Next.JS 构建并部署现代、可扩展且生产级 React 应用的高级技术
 
-
-
 ![](img/cover.jpg)
+
 ![image](img/cover.jpg)
 
-
 ![](img/line.jpg)
 
-
 ![](img/line.jpg)
-
 
 ![](img/logo.jpg)
 
 [www.orangeava.com](http://www.orangeava.com)
 
-
-
-
-
 [www.orangeava.com](http://www.orangeava.com)
 
 # 献给
+
 *那些塑造了我这段旅程的人：我的家人，感谢他们的养育之恩；我的朋友，感谢他们坚定的支持；我的导师，感谢他们的指导智慧；以及软件工程社区。*
 
-**Mathew Dony Chittezhath`**
+**Mathew Dony Chittezhath**
 
 献给梦想者和构建者，那些为行行代码注入灵魂并将想法转化为数字现实的人。本书献给那些推动 Web 开发领域创新的热忱大脑和不懈精神。献给那些将挑战视为机遇，并在技术与创造力的优雅舞蹈中发现乐趣的人。
 
 特别地，我将本书献给你，亲爱的读者。你的好奇心和对精通的追求激发了这些文字的本质。希望书中的知识能让你突破 `Next.js` 可能的边界。为了当我们带着目标编码、带着热忱学习、带着用心创作时，所展开的无限可能而干杯。
 
 *我亲爱的父母：*
+
 *Shri Pushpendra Jain*
+
 *Anjana Jain*
+
 *以及*
+
 *我的妻子 Riddhi Vanawat*
 
 **Shubham Jain**
 
 # 作者简介
-**Shubham Jain：** Shubham Jain 是一位经验丰富的全栈软件工程师，专于端到端的 Web 开发和部署。他拥有信息技术硕士学位，展现了他对学习和专业知识的奉献。他对技术有着深厚的热，并致力于创建以用户为中心的软件，始终处于不断演变的技术格局前沿，持续为用户提供愉悦的体验。
 
-**Mathew Dony Chittezhath：** Mathew Dony 是一位拥有 5 年以上经验的全栈软件工程师，`React`、`Next.js`、`Typescript` 和 `Node.js` 专家。他在澳大利亚斯威文伯大学获得信息技术硕士学位，对技术怀有极大热情，喜欢关注科技世界的最新进展，并享受开发能为所有用户提供愉悦体验的软件。
+**Shubham Jain：** Shubham Jain 是一位经验丰富的全栈软件工程师，专于端到端的 Web 开发和部署。他拥有信息技术硕士学位，展现了他对学习和专业知识的奉献。他对技术有着深厚的热情，并致力于创建以用户为中心的软件，始终处于不断演变的技术格局前沿，持续为用户提供愉悦的体验。
+
+**Mathew Dony Chittezhath：** Mathew Dony 是一位拥有 5 年以上经验的全栈软件工程师，`React`、`Next.js`、`Typescript` 和 `Node.js` 专家。他在澳大利亚斯威本伯大学获得信息技术硕士学位，对技术怀有极大热情，喜欢关注科技世界的最新进展，并享受开发能为所有用户提供愉悦体验的软件。
 
 # 技术评审人员简介
+
 **Gaurav Patel** 担任高级软件工程师（8 年以上经验），参与各种规模项目的开发和维护，以便在利用其在技术行业中学习和成长技能的同时，提升能力和效率。
 
 曾与 Web 服务合作并在项目中实施其实现，并负责 UI 的实现。
+
 广泛使用 `JavaScript` 框架 `JQuery` 构建由 `Ajax` 驱动的 Web 应用。
+
 良好的沟通能力和快速学习能力是他的专长。
 
 专业领域：`Javascript`、`Angular JS/2/4/5/6`、`React JS`、`Redux`、`MySQL`、`Apache`、`Jquery`、`Web Services`、`HTML5`、`CSS3`、`Node JS`、`Express JS`、`Java Core`、`Docker`、`Kubernetes`、`GitLab`、`Spring Boot`、`Java`、`.NET`、`SQL`、`Database`、`Design`、`Agile`、`API`、`Testing`、`AWS`、`CI/CD`、`NoSQL`、`Python`。
 
-**Supreet Sethi** 是一位在 `JavaScript` 和 `React` 领域拥有 10 年以上经验的资深专业人士。作为一名专注的技术主管，Supreet 专注于 Web 开发，使用 `Agile Scrum` 方法创建先进的 `SaaS` 应用。他的技术技能涵盖 `React.js`、`React Native`、`Redux` 和 `Next.js`，不仅展示了他的执行能力，还展现了在该领域的资深视角。在技术之外，Supreet 的领导力在成功引导团队和项目方面脱而出。他卓越的人际关系、批判性思维和目标导向的方法营造了创新的环境。此外，Supreet 教学出色，能够简化复杂概念并从现实场景提供实用见解。无论是领导团队、设计复杂结构还是教授下一代开发者，Supreet Sethi 都体现了在技术技能、领导力和教育方面的全方位卓越。
+**Supreet Sethi** 是一位在 `JavaScript` 和 `React` 领域拥有 10 年以上经验的资深专业人士。作为一名专注的技术主管，Supreet 专注于 Web 开发，使用 `Agile Scrum` 方法创建先进的 `SaaS` 应用。他的技术技能涵盖 `React.js`、`React Native`、`Redux` 和 `Next.js`，不仅展示了他的执行能力，还展现了在该领域的资深视角。在技术之外，Supreet 的领导力在成功引导团队和项目方面脱颖而出。他卓越的人际关系、批判性思维和目标导向的方法营造了创新的环境。此外，Supreet 教学出色，能够简化复杂概念并从现实场景提供实用见解。无论是领导团队、设计复杂结构还是教授下一代开发者，Supreet Sethi 都体现了在技术技能、领导力和教育方面的全方位卓越。
 
 # 致谢
+
 **Shubham Jain：** 我深感谢在本书创作过程中起到关键作用的若干个人和机构。他们坚定的支持和鼓励对于项目的完成至关重要。
 
 首先，我由衷感谢我的父母在整个写作过程中给予的坚定支持和鼓励。你们对我的信任是不断的动力源泉，没有你们的信念，我无法完成这本书。
@@ -63,10 +66,6 @@
 我想诚挚感谢在学习网络爬虫及掌握相关工具期间提供宝贵支持的教育机构和公司。他们的贡献对本书的开发不可或缺。
 
 我特别感谢从个人那里获得的无声支持，他们的指导和帮助产生了巨大影响。特别感谢 `Vhu Bansal` 提供严谨的技术评审和宝贵见解，这大大提升了本书的质量。
-
-
-
-
 
 特别感谢广大的 `React` 社区：开发者、导师、教育者和爱好者们。你们的开源贡献、富有见解的教程以及无价价值的反馈是本书的支柱。正是这个社区的集体智慧和经验，让理解和掌握 `React` 变得可行且有趣。
 
@@ -78,131 +77,115 @@
 
 欢迎阅读“*使用 Next.JS 构建现代 Web 应用程序”。在不断演变的 Web 开发世界中，保持技术前沿至关重要。`Next.js` 是一个构建在 `React` 之上的强大框架，因其构建稳健高效 Web 应用程序的能力而广受欢迎。
 
-本书旨在带你开启一段穿越 `Next.js` 和 `JavaScript` 的全面之旅，为你提供开发现代、高性能 Web 应用程序所需的知识和技能。无论你是寻求扩展技能树的资深开发者，还是 Web 开发领域的新手，本书都将为你提供在 Web 应用程序项目中脱颖出的工具。
-
+本书旨在带你开启一段穿越 `Next.js` 和 `JavaScript` 的全面之旅，为你提供开发现代、高性能 Web 应用程序所需的知识和技能。无论你是寻求扩展技能树的资深开发者，还是 Web 开发领域的新手，本书都将为你提供在 Web 应用程序项目中脱颖而出的工具。
 
 你将学习：Web 开发背景下的 Web 应用程序、`Next.js` 和 `JavaScript` 。
 
-
 你将学习：回顾关键的 `React` 概念和原理，为 `Next.js` 开发做准备。
-
 
 你将学习：`Next.js` 的核心原理和基础，包括路由和服务器端渲染。
 
-
 你将学习：探索最新版本的 `Next.js` 及其构建现代 Web 应用程序的核心概念。
-
 
 你将学习：为了性能和效率优化 `Next.js` 应用程序的技术和策略。
 
-
 你将学习：深入理解 `Next.js` 中的路由以及如何在页面间导航。
-
 
 你将学习：在 `Next.js` 应用中实现状态管理解决方案以处理数据。
 
-
 你将学习：在 `Next.js` 应用中实现 `RESTful` 和 `GraphQL` API，用于数据检索和操作。
-
 
 你将学习：与各种类型的数据库工作并将其集成到 `Next.js` 应用中。
 
-
 你将学习：理解客户端渲染和服务器渲染及其在 `Next.js` 中的应用。
-
 
 你将学习：使用 `Next Auth` 在 `Next.js` 应用中实现身份验证和授权机制。
 
-
-你将学习：使用 `Next.js` 从零开始构建 `CRUD`（增删改改、删）应用程序。
-
+你将学习：使用 `Next.js` 从零开始构建 `CRUD`（增删改查）应用程序。
 
 你将学习：探索将 `Next.js` 应用部署到生产环境的架构和策略。
 
-
 # 获取免费电子书
-
 
 如果你觉得这本书有帮助或有趣，如果你能花一点时间在 Amazon 上留一个 5 星好评的简短评论，我们将不胜感激。这有助于我们成长，并让其他读者发现我们的书籍。
 
-
 `[www.orangeava.com](http://www.orangeava.com)`
-
 
 ![](img/tick.jpg) **操作如下：**
 
-
 对你的评论截图，并发送邮件至 `info@orangeava.com`（只需发送确认屏幕即可）。
-
 
 非常感谢你的支持——这对我们意义重大！
 
-
 代码包和彩色图片
-
 
 # [`github.com/OrangeAVA/Modern-Web-Applications-Next.JS`](https://github.com/OrangeAVA/Modern-Web-Applications-Next.JS)
 
-
-`[`rebrand.ly/54338`](https://rebrand.ly/54338)`
-
+[`rebrand.ly/54338`](https://rebrand.ly/54338)
 
 # 勘误
 
-
 `errata@orangeava.com`
-
 
 # 你知道吗
 
-
 在 `[www.orangeava.com](http://www.orangeava.com)`，你还可以阅读免费的技术文章，订阅一系列免费新闻资讯，并获取 AVA™ 书籍和电子书的独家折扣优惠。
-
 
 如果你在互联网上任何地方发现我们作品的非法副本，如果你能提供地址或网站名称，我们将非常感激。请通过 `info@orangeava.com` 联系我们并附上材料链接。
 
-
-
-
-如果您在某个领域拥有专业知识，并且对写作或为书籍贡献感兴趣，请发送邮件至 business@orangeava.com。我们正致力于帮助开发者和技术专业人士洞察全球范围内发生的技术进步和创新，并建立一个相信“知识通过与他人分享和学习能够获得获得”的社区。请与我们联系，了解我们读者的需求以及您如何参与这场教育变革中来。我们也欢迎技术专家的建议，并帮助他们为自己的领域构建学习和开发内容。
+如果您在某个领域拥有专业知识，并且对写作或为书籍贡献感兴趣，请发送邮件至 `business@orangeava.com`。我们正致力于帮助开发者和技术专业人士洞察全球范围内发生的技术进步和创新，并建立一个相信“知识通过与他人分享和学习能够获得获得”的社区。请与我们联系，了解我们读者的需求以及您如何参与这场教育变革中来。我们也欢迎技术专家的建议，并帮助他们为自己的领域构建学习和开发内容。
 
 # 评论
+
 请留下评价。在阅读并使用此书后，为什么不在您购买的网站上留下评价呢？潜在的读者可以查看并参考您的中立意见做出购买决策。我们 Orange Education 非常乐意知道您对我们产品的看法，我们的作者也可以从您的反馈中学习。谢谢！
 
 有关 Orange Education 的更多信息，请访问 [www.orangeava.com](http://www.orangeava.com)。
+
 # 第 1 章：使用 Next.js 和 JavaScript 入门 Web 应用
 
 ## 引言
+
 欢迎来到 Web 应用的世界！在本章中，我们将探索如何使用 Next.js 和 React 构建稳健、高性能的 Web 应用。无论您是经验丰富的 Web 开发者还是初学者，本书都将为您提供对这一令人兴奋的 Web 开发世界的全面介绍。Next.js 是一个强大的框架，用于构建服务端渲染的 React 应用。通过将 React 的强大功能与 Next.js 的简单易用结合起来，我们可以创建既快速又可扩展的 Web 应用。那么，让我们开始吧，一起构建一些出色的 Web 应用！
 
 ## 章节结构
+
 在本章中，将涵盖以下主题：
 
 *   什么是 Web 应用？
+
 *   使用 Next.js 构建动态 Web 应用的特性和优势
+
 *   JavaScript 基础知识回顾，包括数据类型、控制结构、函数和对象
-*   高级 JavaScript 概念，如异步编程、承诺（Promises）和 ES6 特性
+
+*   高级 JavaScript 概念，如异步编程、`Promises` 和 ES6 特性
+
 *   如何在您的计算机上创建一个简单的 Next.js 应用
 
 ## Web 应用及其构建基块
+
 Web 开发是构建网站和 Web 应用的过程。Web 应用是一种运行在 Web 服务器上并通过 Web 浏览器访问的软件程序。Web 开发的三个基本构建基块是 HTML、CSS 和 JavaScript。
 
 ### 网站与 Web 应用的区别
+
 `website`（网站）和 `web application`（Web 应用）这两个术语经常通用，但它们有一些明显的区别。网站是静态网页的集合，为访问者提供信息或内容。网站通常设计供访问者导航，他们是内容的被动消费者。示例包括博客、新闻网站和公司首页。另一方面，Web 应用是通过 Web 浏览器访问并为用户提供交互功能的软件程序。Web 应用比网站更复杂，需要用户输入和交互才能运行。Web 应用示例包括社交媒体平台、在线市场和生产力工具。网站和 Web 应用的主要区别在于它们提供的交互和功能水平。网站主要侧重于提供信息，而 Web 应用允许用户执行复杂任务并与其他交互。另一个区别是 Web 应用提供的自定义和个性化程度。网站通常为所有访问者提供标准化的体验，而 Web 应用可以根据用户的偏好和行为定制其功能和内容。简而言之，虽然网站和 Web 应用都通过 Web 浏览器访问并托管在互联网上，但 Web 应用比网站提供了更具交互性和可定制的体验。
 
 ### HTML（超文本标记语言）
+
 HTML 是用于创建网页和应用程序的标准标记语言。它通过定义标题、段落、图像和超链接等元素，提供了网页和应用程序的结构和内容。HTML 使用基于标签的语言，每个标签代表页面上的一个特定元素。
 
 以下是 HTML 元素的定义示例：
+
 ```html
 <!DOCTYPE html>
 <html>
+<head>
 <title>我的 Web 应用</title>
 </head>
 <body>
 <p>我叫 Mathew，我们将学习 Next.js！</p>
 </body>
 </html>
+```
 
 上述代码在 Web 浏览器中查看时将产生以下输出：
 
@@ -219,8 +202,10 @@ CSS 用于描述网页的呈现，包括颜色、字体和布局。它用于为�
 ```css
 h1 {
   color: red;
+  font-size: 24px;
 }
 ```
+
 在上述示例中，我们定义了一个 CSS 规则应用于页面上所有的 `<h1>` 元素。我们将字体设置为 24 像素，颜色设置为红色。
 
 如果我们将上述 CSS 代码链接到 HTML 页面，将得到以下输出：
@@ -230,6 +215,7 @@ h1 {
 CSS 提供了大量的属性用于样式 HTML 元素。这些属性包括字体属性（`font-size`、`font-family`、`font-weight`、`font-style`）、颜色属性（`color`、`background-color`）、布局属性（`margin`、`padding`、`border`、`width`、`height`）以及更多。
 
 CSS 还提供了大量的选择器用于应用于页面特定元素。这些选择器包括标签选择器（`h1`、`p`、`ul`、`li`）、类选择器（`.my-class`）、ID 选择器（`#my-id`）、属性选择器（`[attribute=value]`）以及更多。
+
 ## JavaScript
 
 JavaScript 是一种高级编程语言，用于创建交互性和动态网页。它用于为网页添加功能，例如事件处理、表单验证以及 API 请求和响应。JavaScript 由浏览器执行，并与页面上的 HTML 和 CSS 交互。可以使用 `<script>` 元素将 JavaScript 代码添加到 HTML 文件中，它可以放置在 HTML 文件的 `<head>` 或 `<body>` 部分。或者，可以将 JavaScript 代码包含在单独的文件并通过 `src` 属性链接到 HTML 文件。
@@ -242,15 +228,18 @@ JavaScript 是一种高级编程语言，用于创建交互性和动态网页。
 <html>
 <head>
 <title>My Web App</title>
+</head>
 <body>
-<h1 style=”color:red;">Welcome to my web app!</h1>
-<p>My name is Mathew and we’re going to learn Next.js!</p>
+<h1 style="color:red;">Welcome to my web app!</h1>
+<p>My name is Mathew and we're going to learn Next.js!</p>
 <script>
-var button = document.getElementById(“myButton”);
-button.addEventListener(“click”, function() {
+var button = document.getElementById("myButton");
+button.addEventListener("click", function() {
+  alert("Button clicked!");
 });
 </script>
 </body>
+</html>
 ```
 
 在上一个示例中，我们为按钮上添加了一个带有 `onclick` 事件监听器的新按钮，该按钮将使用 `JavaScript` 执行浏览器警报。当我们点击按钮时，它将创建出下面的浏览器警报通知：
@@ -260,9 +249,11 @@ button.addEventListener(“click”, function() {
 通过结合这三个构建模块，我们可以创建强大且交互式的 Web 应用程序，提供极佳的用户体验。
 
 ## 定义 Next.js
+
 Next.js 是一个流行的用于构建服务端渲染 (SSR) 和静态站点生成 (SSG) React 应用的开源框架。Next.js 由 Vercel 开发，提供了一种直观且对开发者友好的构建 Web 应用的方法，让开发者能够专注于构建优秀的用户体验，而无需担心底层基础设施。
 
 得益于其通用渲染能力，开发者可以使用 Next.js 构建可以在任何服务器或平台上运行的动态且高性能的 Web 应用程序。Next.js 提供了一系列功能和优势，包括：
+
 *   服务端渲染 (SSR) 和静态站点生成 (SSG)
     Next.js 提供了强大的服务端渲染能力，允许开发者创建动态、交互式的 Web 应用，这些应用加载快速并提供极佳的用户体验。Next.js 还支持静态站点生成，允许开发者在构建时生成静态 HTML 文件，以便快速高效地提供服务。
 
@@ -277,10 +268,12 @@ Next.js 是一个流行的用于构建服务端渲染 (SSR) 和静态站点生�
 *   易于设置和部署
 
 *   社区支持和生态系统
-    Next.js 拥有庞大活跃的开发者和贡献者社区，他们提供支持、分享知识并为框架的发展做出贡献。此外，Next.js 拥有健的插件、工具和资源生态系统，可以帮助开发者构建更好、更高效的 Web 应用。
+    Next.js 拥有庞大活跃的开发者和贡献者社区，他们提供支持、分享知识并为框架的发展做出贡献。此外，Next.js 拥有健全的插件、工具和资源生态系统，可以帮助开发者构建更好、更高效的 Web 应用。
+
 ## Next.js 的用例
 
 Next.js 适用于广泛的 Web 应用开发用例，包括：
+
 *   电子商务应用
 *   内容驱动的网站和博客
 *   社交网络网站
@@ -305,21 +298,25 @@ Next.js 是一个使用 `React` 构建 Web 应用的流行框架。以下是您�
     Next.js 拥有庞大活跃的开发者和贡献者社区，他们提供支持、分享知识并为框架的发展做出贡献。这导致了许多有用插件、工具和资源的创建，帮助开发者构建更好、更高效的 Web 应用。
 
 总结，Next.js 是一个使用 `React` 构建 Web 应用的强大且多功能的框架。凭借其对服务端渲染、自动代码分割和优化、易于静态站点生成、易于部署以及庞大活跃社区的支持，Next.js 是构建构建高质量、高性能且可扩展 Web 应用的理想选择。
+
 *   TypeScript 支持
 
 
 
-Next.js 还提供了对 `TypeScript` 的内置支持，它是 JavaScript 的静态类型超集，可以帮助提高代码质量并在开发过程中尽早错误。`TypeScript` 的支持对于大型应用或团队特别有用，在这些情况下，代码库可能会变得复杂且难以管理。
+Next.js 还提供了对 `TypeScript` 的内置支持，它是 JavaScript 的静态类型超集，可以帮助提高代码质量并在开发过程中尽早发现错误。`TypeScript` 的支持对于大型应用或团队特别有用，在这些情况下，代码库可能会变得复杂且难以管理。
 
 Next.js 提供了灵活的数据获取选项，可以帮助简化应用程序中获取和管理数据的过程。该框架支持服务端和客户端数据获取，还支持增量静态再生（ISR），这允许你在无需重新构建整个页面的情况下使用新数据更新静态页面。
 
 ### 可扩展与可定制
 
 ### 对 React 的内置支持
-最后，Next.js 提供了对 `React` 的内置支持，这是一个用于构建用户界流行的 JavaScript 库。`React` 以简单、高性能和灵活性而闻名，并在 Web 开发社区被广泛使用。Next.js 提供了与 `React` 的无缝集成，允许你使用熟悉且流行的工具集构建强大且动态的 Web 应用。
+
+最后，Next.js 提供了对 `React` 的内置支持，这是一个用于构建用户界面流行的 JavaScript 库。`React` 以简单、高性能和灵活性而闻名，并在 Web 开发社区被广泛使用。Next.js 提供了与 `React` 的无缝集成，允许你使用熟悉且流行的工具集构建强大且动态的 Web 应用。
+
 总之，Next.js 提供了一系列优势和特性，使其成为构建高质量、高性能和可扩展 Web 应用程序的理想选择。凭借其改进的开发者体验、`TypeScript` 支持、灵活的数据获取选项、扩展性以及对 `React` 的内置支持，Next.js 是一个强大且多功能的框架，可以帮助你构建更好、更高效的 Web 应用。
 
 ## Next.js 的 JavaScript 基础
+
 在深入 Next.js 开发之前，对 JavaScript 基础有良好的理解是非常重要的。在本节，我们将涵盖开发 Next.js 应用所必需的一些 JavaScript 基础概念。
 
 ### 变量和数据类型
@@ -330,20 +327,20 @@ Next.js 提供了灵活的数据获取选项，可以帮助简化应用程序中
 `var` 是 JavaScript 中声明变量的旧方式，它具有一些可能会导致问题的特性。`let` 和 `const` 是 ES6 JavaScript 中引入的，是现代 JavaScript 中声明变量的首选方式。
 
 
-```
+```javascript
 // 使用 var 声明变量
-
+var x = 10;
 // 使用 let 声明变量
 let y = 20;
 // 使用 const 声明变量
 const z = 30;
-
 // z = 40; // 这将抛出错误
 ```
 
 
 * number（用于数值）
 * string（用于文本值）
+* boolean（用于布尔值）
 * null（用于空值）
 * undefined（用于未定义值）
 * object（用于复杂的数据结构）
@@ -351,59 +348,70 @@ const z = 30;
 
 ```javascript
 let a = 10;
-
 // 声明字符串变量
-
+let b = "Hello";
 // 声明布尔值变量
 let c = true;
 // 声明 null 变量
 let d = null;
-
 let e;
-
 // 声明对象变量
+let f = { name: "Mathew" };
 ```
 
 ## 控制流语句
 
 * `if…else` 语句
 * `for` 循环
+* `while` 循环
 * `switch` 语句
 
 以下是这些语句使用的示例：
+
 ```javascript
 // If…else 语句
 let age = 20;
-  console.log(“You are an adult.”);
+if (age >= 18) {
+  console.log("You are an adult.");
 } else {
-  console.log(“You are not yet an adult.”);
+  console.log("You are not yet an adult.");
+}
 // 输出: You are an adult
 
 // For 循环
+for (let i = 0; i < 5; i++) {
   console.log(i);
 }
 // 输出: 0 1 2 3 4
+
 // While 循环
 let i = 0;
 while (i < 5) {
+  console.log(i);
   i++;
 }
-// 输出:
+// 输出: 0 1 2 3 4
 
 // Switch 语句
-let day = “Monday”;
-  case “Monday”:
-    console.log(“Today is Monday.”);
+let day = "Monday";
+switch (day) {
+  case "Monday":
+    console.log("Today is Monday.");
     break;
-    console.log(“Today is Tuesday.”);
+  case "Tuesday":
+    console.log("Today is Tuesday.");
     break;
   default:
+    console.log("Other day.");
     break;
 }
 // 输出: Today is Monday
+```
 
 ## 函数
+
 函数用于将一组语句组合在一起并执行特定任务。在 JavaScript 中，可以使用 `function` 关键字或箭头函数语法来声明函数。
+
 这是一个示例：
 
 ```javascript
@@ -413,66 +421,81 @@ function add(x, y) {
 // 使用箭头函数语法声明函数
 const subtract = (x, y) => {
   return x - y;
+};
 ```
 
 ## 类
 
 这是一个示例：
 
+```javascript
 class Person {
   constructor(name, age) {
     this.name = name;
+    this.age = age;
   }
   sayHello() {
     console.log(`Hello, my name is ${this.name} and I am ${this.age}`);
+  }
 }
-
 // 创建一个对象
+const mathew = new Person("Mathew", 28);
 // 调用 sayHello 方法
 mathew.sayHello(); // 输出: Hello, my name is Mathew and I am 28
 ```
+
 ## 模块
+
 模块用于将代码组织成可重用的部分。在 Next.js 中，我们使用模块在不同部分间共享。
 
 
 ```javascript
 // 从文件导出函数
+export function add(x, y) {
   return x + y;
 }
 
 import { add } from "./math.js";
 // 调用函数
 console.log(add(5, 10)); // 输出: 15
+```
 
 ## Promise
-Promise 用于处理异步操作。它们是以更具读性和预测性的方式处理回调函数的方法。
+
+`Promise` 用于处理异步操作。它们是以更具读性和预测性的方式处理回调函数的方法。
+
 这是一个创建 `Promise` 的示例：
 
 ```javascript
 const promise = new Promise((resolve, reject) => {
   // 模拟异步操作
   setTimeout(() => {
-    resolve(“Data successfully retrieved!”);
+    resolve("Data successfully retrieved!");
   }, 2000);
 });
 // 调用 Promise
 promise.then((result) => {
   console.log(result); // 输出: Data successfully retrieved!
+});
 ```
 
 ## 箭头函数
 
 这是一个示例：
 
+```javascript
 // 传统函数表达式
 const add = function(x, y) {
   return x + y;
-
+};
 // 箭头函数表达式
-const add = (x, y) => x + y;
+const addArrow = (x, y) => x + y;
+```
 
 ## 解构
+
 解构是从对象或数组中提取值并将其赋值给变量的方法。它是赋值的简写方式，可以让代码更简洁。
+
 这是一个示例：
 
 ```javascript
@@ -480,92 +503,109 @@ const [first, second, third] = [1, 2, 3];
 console.log(first); // 输出: 1
 
 const person = {
-  name: “Mathew”,
+  name: "Mathew",
   age: 28
+};
 const { name, age } = person;
-console.log(name); // 输出: “Mathew”
+console.log(name); // 输出: "Mathew"
 ```
+
 ## 展开运算符
+
 展开运算符是将数组或对象展开为独立元素的方法。它可以用于将多个数组或对象合并为一个数组或对象。
 
-
-
-
+```javascript
 // 使用展开运算符合并数组
 const arr1 = [1, 2, 3];
 const arr2 = [4, 5, 6];
+const combined = [...arr1, ...arr2];
 console.log(combined); // Output: [1, 2, 3, 4, 5, 6]
 
 // 使用展开运算符拷贝对象
-  name: “Mathew”,
+const obj = {
+  name: "Mathew",
   age: 28
 };
-console.log(copy); // Output: { name: “Mathew”, age: 28 }
+const copy = { ...obj };
+console.log(copy); // Output: { name: "Mathew", age: 28 }
 ```
 
+## Async/await
 
-`Async/await` 是 JavaScript 中一个较新的特性，简化了 Promise 的操作。它允许你编写看起来和运行像同步的异步代码，使其更容易阅读和调试。
+`Async/await` 是 JavaScript 中一个较新的特性，简化了 `Promise` 的操作。它允许你编写看起来和运行像同步的异步代码，使其更容易阅读和调试。
 
 
 ```javascript
 // 使用 async/await 处理 Promise
-  const response = await fetch(‘https://api.example.com/data’);
+async function getData() {
+  const response = await fetch('https://api.example.com/data');
   const data = await response.json();
   return data;
+}
 // 调用异步函数
 const data = await getData();
 console.log(data);
+```
 
 ## 模板字符串 (Template literals)
 
-
 以下是一个示例：
 
+```javascript
 // 使用模板字符串插值变量
-const name = “Mathew”;
+const name = "Mathew";
 const message = `Hello, ${name}!`;
 ```
 
 ## 面向对象编程 (OOP)
+
 面向对象编程是一种使用对象来表示现实实体编程范式。是将代码组织成可重用、模块化组件的方法。
 
 以下是一个示例：
+
 ```javascript
 // 使用 OOP 创建类
 class Animal {
+  constructor(name, species) {
     this.name = name;
     this.species = species;
   }
+  speak() {
     console.log(`${this.name} says hello!`);
   }
 }
-const dog = new Animal(“Dottie”, “Dog”);
+const dog = new Animal("Dottie", "Dog");
 // 调用 speak 方法
-dog.speak(); // Output: “Dottie says hello!”
+dog.speak(); // Output: "Dottie says hello!"
+```
 
 通过理解这些额外的 JavaScript 概念，你将能够在 Next.js Web 应用程序中编写更强大、更灵活的代码。在接下来的章节中，我们将探索如何将这些概念具体应用于使用 Next.js 构建全栈 Web 应用程序。
 
-
 在用 Next.js 构建 Web 应用时，理解 SSR 和 CSR 之间的区别非常重要。这两种方法各有优劣，根据你的用例选择正确的方法非常关键。
-
 
 SSR 是渲染网页的传统方式。通过 SSR，服务器会响应请求向客户端发送一个完全渲染好的 HTML 页面。这意味着客户端只需要下载并显示该页面，而不需要进行任何额外的渲染或数据获取。
 
-
 以下是在 Next.js 中使用 SSR 的示例：
 
+```javascript
 // 一个使用 SSR 的简单 Next.js 页面
 function HomePage({ data }) {
   return (
-      <h1>Hello, {data.name}</h1></h1>
+    <div>
+      <h1>Hello, {data.name}</h1>
       <p>{data.description}</p>
     </div>
+  );
 }
+
 export async function getServerSideProps() {
   // 从外部 API 获取数据
+  const response = await fetch('https://api.example.com/data');
   const data = await response.json();
   // 将数据作为 props 传递给页面组件
   return { props: { data } };
+}
+
 export default HomePage;
 ```
 
@@ -575,60 +615,78 @@ CSR 是一种渲染网页的更现代的方法。通过 CSR，客户端下载一
 
 以下是在 Next.js 中使用 CSR 的示例：
 
+```javascript
 // 一个使用 CSR 的简单 Next.js 页面
+import { useState, useEffect } from 'react';
+
 function HomePage() {
   const [data, setData] = useState(null);
-    // 从外部 API 获取数据
-    async function fetchData() {
-      const response = await fetch(‘https://api.example.com/data’);
-      setData(data);
-    }
+  // 从外部 API 获取数据
+  async function fetchData() {
+    const response = await fetch('https://api.example.com/data');
+    const data = await response.json();
+    setData(data);
+  }
+  useEffect(() => {
     fetchData();
+  }, []);
 
   if (!data) {
     return <div>Loading…</div>;
+  }
 
   return (
     <div>
+      <h1>Hello, {data.name}</h1>
       <p>{data.description}</p>
     </div>
   );
+}
+
 export default HomePage;
 ```
-
 
 除了 SSR 和 CSR 之外，Next.js 还支持混合渲染，这是这两种方法的结合。通过混合渲染，你可以在服务器上获取数据并向客户端发送一个部分渲染的页面，然后在客户端继续渲染。
 
-
 以下是在 Next.js 中使用混合渲染的示例：
 
+```javascript
 // 一个使用混合渲染的简单 Next.js 页面
+import { useState, useEffect } from 'react';
+
 function HomePage({ data }) {
   const [dynamicData, setDynamicData] = useState(null);
-    // 在客户端获取动态数据
-    async function fetchDynamicData() {
-      const response = await fetch(‘https://api.example.com/dynamic-data’);
-      setDynamicData(dynamicData);
-    }
+
+  // 在客户端获取动态数据
+  async function fetchDynamicData() {
+    const response = await fetch('https://api.example.com/dynamic-data');
+    const dynamicData = await response.json();
+    setDynamicData(dynamicData);
+  }
+
+  useEffect(() => {
     fetchDynamicData();
+  }, []);
 
   return (
     <div>
+      <h1>Hello, {data.name}</h1>
       <p>{data.description}</p>
       {dynamicData && <p>{dynamicData.message}</p>}
     </div>
+  );
 }
+
 export async function getServerSideProps() {
   // 从外部 API 获取静态数据
-  const staticData = await staticResponse.json();
+  const response = await fetch('https://api.example.com/static-data');
+  const staticData = await response.json();
   // 将静态数据作为 props 传递给页面组件
   return { props: { data: staticData } };
+}
+
 export default HomePage;
 ```
-
-
-
-
 
 ### 第 1 步：安装 Node.js 和 npm
 
@@ -641,35 +699,49 @@ export default HomePage;
 
 这些命令将输出你在系统中安装的 Node.js 和 `npm` 的版本。
 
+```bash
+node -v
+npm -v
+```
 
 安装好 Node.js 和 `npm` 后，你可以使用 `create-next-app` 命令行工具创建一个新的 Next.js 项目。该工具会创建一个包含所有必要依赖和配置文件的新 Next.js 项目。
 
 
 ```bash
-npx create-next-app@latest
+npx create-next-app@latest my-app
+```
 
 运行命令后，系统将提示以下问题：
 
 `Would you like to use TypeScript? No / Yes`
+
 `Would you like to use ESLint? No / Yes`
+
 `Would you like to use Tailwind CSS? No / Yes`
+
 `Would you like to use App Router? (recommended) No / Yes`
+
 `Would you like to customize the default import alias? No / Yes`
+
 `What import alias would you like configured? @/*`
+
 该命令会向你询问一些问题以引导项目，并在名为 `my-app` 的目录中创建一个新的 Next.js 项目。在示例中，我们决定使用 TypeScript 代替 JavaScript。
 
 ### 第 3 步：启动开发服务器
+
 创建新的 Next.js 项目后，你可以使用 `npm run dev` 命令启动开发服务器。该命令会启动一个本地开发服务器，允许你在浏览器中预览你的 Next.js 应用。
 
 要启动开发服务器，请进入项目目录并在终端中运行以下命令：
+
 ```bash
 cd my-app
 npm run dev
+```
 
 ![](img/1.5.jpg)
 
 
-这将会在 `http://localhost:3000` 开发服务器。你可以在浏览器中打开此 URL 来查看你的 Next.js 应用。
+这将会在 `http://localhost:3000` 启动开发服务器。你可以在浏览器中打开此 URL 来查看你的 Next.js 应用。
 
 
 **图 1.6：** Next.js 本地服务器启动页
@@ -680,135 +752,154 @@ npm run dev
 
 ```bash
 npm install axios
+```
 
-这将安装 axios 库并将其添加到项目的 `package.json` 文件中。
-
+这将安装 `axios` 库并将其添加到项目的 `package.json` 文件中。
 
 ## 创建一个简单的 Next.js 应用
 
-
 ### 设置新的 Next.js 项目
-
 
 安装完成后，进入项目目录：
 
+```bash
 cd my-app
 ```
-
 
 ### 理解 Next.js 项目的结构
 
 
-`my-app/`
-`.next/`
-`src/`
-`pages/`
-`styles/`
-`package.json`
+```text
+my-app/
+├── .next/
+├── node_modules/
+├── public/
+├── src/
+│   ├── pages/
+│   └── styles/
+├── package.json
+```
 
 `.next` 目录是由 Next.js 生成的，包含了应用程序的构建文件。`node_modules` 目录包含由 `npm` 安装的所有依赖项。`pages` 目录包含了应用程序的所有页面。`public` 目录包含了所有静态资源，如图像、视频和字体。`styles` 目录包含了应用程序中所有的 CSS 样式表。`package.json` 文件包含了关于项目的元数据以及使用的依赖项。
+
 现在我们已经对 Next.js 项目的结构有了基本的了解，让我们创建第一个页面。
 
 ### 创建一个简单的“Hello World”应用
-在 Next.js 中，页面是一个 React 组件，并作为 `pages` 目录中文件的默认导出（default export）。为了创建一个简单的 **Hello World** 应用，让我们替换 `index.tsx` 中的代码：
+
+在 Next.js 中，页面是一个 React 组件，并作为 `pages` 目录中文件的默认导出（default export）。为了创建一个简单的 **Hello World** 应用，让我们替换 `pages/index.tsx` 中的代码：
 
 ```tsx
 function Home() {
-  return <h1>Hello World</h1>
+  return <h1>Hello World</h1>;
 }
+
 export default Home;
 ```
 
 
 现在，如果你运行以下命令启动开发服务器：
 
+```bash
 npm run dev
 ```
 
-
 ![](img/image6.jpg)
-
 
 最后，你成功创建了一个简单的 Next.js 应用！
 
-
 在本章中，我们学习了 Web 应用，理解了 Next.js 的基本原理、优势以及 HTML、CSS 和 JavaScript 的基本功能。我们还探索了如何在本地运行 Next.js Web 应用。
 
-
-# 第 2 章回顾 React
-
+# 第 2 章：回顾 React
 
 React 是一个用于构建界面的强大 JavaScript 库。在本章中，我们将回顾 React 的核心概念，这些概念对于构建健壮的 Web 应用至关重要。
 
-
 接下来，我们将深入探讨 React 中重要的 props 和 state 概念。我们将解释 props 如何在组件之间传递数据，而 state 则用于管理组件内部随时间变化的数据。我们将涵盖处理 props 和 state 的最佳实践，以及如何使用它们构建复杂且交互式的界面。
 
-
-
-
-在本章结束时，你将对 React 的核心概念有深入的理解，并准备好使用这个强大的库构建构建健且高性能的 Web 应用。
+在本章结束时，你将对 React 的核心概念有深入的理解，并准备好使用这个强大的库构建健壮且高性能的 Web 应用。
 
 ## 结构
+
 在本章中，将涵盖以下主题：
 
 *   React 框架简介，包括虚拟 DOM 和组件化架构
+
 *   JSX 语法及其与传统 HTML 的区别
+
 *   React 中的事件处理以及组件间的数据传递
+
 *   React state 和 props 的使用，包括组件间的数据流
+
 *   JavaScript 异步编程的基本概念以及如何在 React 中使用它们
 
 ## 介绍 React
+
 什么是 React？它为什么重要？React 是一个流行的 JavaScript 库，由 Meta（以前称为 Facebook）开发和维护，用于构建用户界面，特别是 Web 应用。它的创建是为了解决需要更高效、更可扩展的方式来处理复杂用户界面，同时提供卓越性能的需求。多年来，React 赢得了巨大的人气，因为它允许开发者构建既易于维护又扩展的可重用、模块化组件。
 
 React 如此受欢迎的主要原因之一是它对简单性和维护性的关注。通过将用户界面拆分为小的、自包含的组件，它让开发者能够轻松理解和修改代码，即使在大型应用中也是如此。此外，React 的性能优化（如虚拟 DOM）确保了用 React 构建的应用是快速且响应迅速的。
+
 ## 虚拟 DOM 及其优势
 
 虚拟 DOM 是 React 的核心特性之一，也是它卓越性能的主要原因。虚拟 DOM 是实际 DOM（文档对象模型）的轻量级内存表示，用于跟踪 UI 的变化。当发生变化时，React 会更新虚拟 DOM 而不是实际 DOM，后者可能是一个缓慢且耗资源的操作。
+
 React 使用一种称为“协调”（reconciliation）的过程将当前的虚拟 DOM 与由于组件状态或 props 变化产生的新 DOM 进行比较。然后，它会计算出更新实际 DOM 的有效方式以匹配新的虚拟 DOM。这个过程减少了实际 DOM 更新的次数，从而显著提高了性能。
 
 考虑以下示例：
+
 ```javascript
 import React, { useState } from "react";
 
+function Counter() {
   const [count, setCount] = useState(0);
   return (
     <div>
+      <p>Count: {count}</p>
       <button onClick={() => setCount(count + 1)}>Click me</button>
     </div>
   );
+}
 
 export default Counter;
 ```
+
 在这个简单的计数组件中，每当点击按钮时状态都会更新。React 使用虚拟 DOM 来确定实际 DOM 所需的最少更新，确保最优性能。
 
 ## React 中的组件化架构
+
 React 的组件化架构是其受欢迎和可维护性的重要因素。组件是自包含的、可重用的代码片段，代表用户界面的一部分。它们可以组合并嵌套以创建复杂的 UI 结构。
 
 React 组件化架构背后有两个主要原则如下：
-*   **单一职责原则**：每个组件都应该有一个单一的职责或目的。这使得代码更容易理解、测试和维护。
-*   **组合**：组件可以组合在一起以构建更复杂的 UI 结构。这允许开发者复用组件并创建更具维护性的代码。
 
+*   **单一职责原则**：每个组件都应该有一个单一的职责或目的。这使得代码更容易理解、测试和维护。
+
+*   **组合**：组件可以组合在一起以构建更复杂的 UI 结构。这允许开发者复用组件并创建更具维护性的代码。
 
 ```javascript
 import React from "react";
+import Header from "./Header";
 import Content from "./Content";
 import Footer from "./Footer";
 
+function App() {
   return (
     <div>
       <Header />
+      <Content />
       <Footer />
     </div>
   );
+}
 
 export default App;
 ```
+
 在这个示例中，`App` 组件由其他三个组件组成：`Header`、`Content` 和 `Footer`。这些组件中的每个都有自己的职责，使得整个应用程序更容易维护和理解。
 
 ## 理解函数组件和类组件
+
 React 组件可以写成函数组件或类组件。在 React 16.8 引入 Hooks 之前，函数组件是无状态的，仅用于展示数据，而类组件是有状态的，并用于更复杂的逻辑。然而，随着 Hooks 的引入，函数组件现在可以拥有状态并执行副作用，使得它们变得更加强大和灵活。
 
 函数组件比类组件更简单、更简洁，是许多开发者的首选。它们仅仅是 JavaScript 函数，接收 `props` 作为输入并返回 JSX 来渲染 UI。
+
 这里是一个函数组件的示例：
 
 ```javascript
@@ -818,96 +909,117 @@ function Welcome(props) {
 ```
 
 相比之下，类组件是继承自 `React.Component` 类的 JavaScript 类。它们有一个 `render()` 方法返回 JSX，并可以拥有本地状态和生命周期方法。
+
 这里是一个类组件的示例：
 
 ```javascript
+import React, { Component } from 'react';
+
 class Welcome extends Component {
   render() {
     return <h1>Hello, {this.props.name}!</h1>;
+  }
 }
+
 export default Welcome;
 ```
+
 虽然 React 仍然支持类组件，但 Hooks 的引入让函数组件变得更加强大和多功能。为了阐明在函数组件中使用 Hooks，让我们把之前的类组件示例转换为一个带有状态的函数组件：
 
 ```javascript
+import React, { useState } from 'react';
+
 function Welcome() {
   const [name, setName] = useState("John");
   const handleChange = (event) => {
+    setName(event.target.value);
   };
   return (
     <div>
+      <h1>Hello, {name}!</h1>
       <input type="text" value={name} onChange={handleChange} />
     </div>
   );
+}
+
 export default Welcome;
 ```
 
-
 ## React 组件生命周期方法及其用法
 
-
 *   **生命周期方法概述**：
+
     生命周期方法是类组件中的特殊方法，允许你在组件生命周期特定点运行代码。它们对于管理副作用（如获取数据、更新 DOM 和处理事件）至关重要。生命周期方法可以分为三个主要阶段：挂载（mounting）、更新（updating）和卸载（unmounting）。
+
     **注意**：随着 Hooks 的引入，函数组件可以使用 `useEffect` 执行类似的任务。本节重点关注类组件的生命周期方法，但了解函数组件中的这种替代方法也是重要的。
 
 *   **挂载阶段方法**
 
-
-
-
 *   `constructor`：构造函数用于初始化组件的状态并绑定事件处理器。它在组件挂载之前调用。
-
 
 ```javascript
 class MyComponent extends React.Component {
+  constructor(props) {
     super(props);
-    this.state = { message: “Hello, World!” };
+    this.state = { message: "Hello, World!" };
     this.handleClick = this.handleClick.bind(this);
+  }
 }
 ```
 
+*   `componentDidMount`：该方法在组件挂载到 DOM 后立即调用。它是执行副作用（如获取数据、设置订阅或手动操作 DOM）的理想位置。
 
   这是一个示例：
 
+```javascript
 class MyComponent extends React.Component {
   componentDidMount() {
-    console.log(“Component has been mounted.");
+    console.log("Component has been mounted.");
+  }
 }
 ```
 
+*   **更新阶段方法**
 
-更新阶段（Updating phase）发生在组件的状态或 props 发生变化导致重新渲染时。与此阶段相关的生命方法有两个：
+更新阶段（Updating phase）发生在组件的状态或 props 发生变化导致重新渲染时。与此阶段相关的生命周期方法有两个：
 
+*   `shouldComponentUpdate`：该方法在重新渲染之前调用。它允许你通过返回 `false` 来阻止不必要的重新渲染，从而优化性能。
 
   这是一个示例：
 
+```javascript
 class MyComponent extends React.Component {
   shouldComponentUpdate(nextProps, nextState) {
     return this.props.someValue !== nextProps.someValue;
+  }
 }
 ```
 
+*   `componentDidUpdate`：该方法在组件更新并重新渲染到 DOM 后立即调用。它适用于在更新后执行副作用，例如基于 prop 变化获取新数据。
 
   这是一个示例：
 
+```javascript
 class MyComponent extends React.Component {
   componentDidUpdate(prevProps, prevState) {
     if (this.props.someValue !== prevProps.someValue) {
+      console.log("Props changed!");
     }
   }
 }
+```
 
 ### 卸载阶段方法 (Unmounting phase methods)
 
-
 *   `componentWillUnmount`：该方法在组件卸载和销毁之前立即调用。它是执行清理任务的完美位置，例如取消网络请求、移除事件监听或清除定时器。
-
 
 ```javascript
 class MyComponent extends React.Component {
-    console.log(“Component will unmount.");
+  componentWillUnmount() {
+    console.log("Component will unmount.");
   }
 }
+```
 
 ### 生命周期方法中的错误处理 (Error handling in lifecycle methods)
 
@@ -917,41 +1029,51 @@ class MyComponent extends React.Component {
 
 ```javascript
 class MyComponent extends React.Component {
+  static getDerivedStateFromError(error) {
     return { hasError: true };
   }
 }
+```
 
 *   `componentDidCatch`：该方法在子组件捕获到错误时调用。它可以记录错误或执行其他副作用。
 
-
 ```javascript
 class MyComponent extends React.Component {
-    console.log(“Error caught:", error, info);
+  componentDidCatch(error, info) {
+    console.log("Error caught:", error, info);
   }
 }
+```
 
   这是一个在组件中使用两种错误处理方法的示例：
 
+```javascript
 class ErrorBoundary extends React.Component {
   constructor(props) {
     super(props);
+    this.state = { hasError: false };
   }
   static getDerivedStateFromError(error) {
     return { hasError: true };
-  componentDidCatch(error, info) {
-    console.log(“Error caught:", error, info);
   }
+  componentDidCatch(error, info) {
+    console.log("Error caught:", error, info);
+  }
+  render() {
     if (this.state.hasError) {
       return <h1>Something went wrong!</h1>;
     }
+    return this.props.children;
   }
 }
 
+// 使用示例
 <ErrorBoundary>
   <MyComponent />
 </ErrorBoundary>
+```
 
-在这个示例中，`ErrorBoundary` 是一个封装了 `MyComponent` 的高阶组件。如果 `MyComponent` 错误，错误边界将捕获它并显示备用 UI。
+在这个示例中，`ErrorBoundary` 是一个封装了 `MyComponent` 的高阶组件。如果 `MyComponent` 抛出错误，错误边界将捕获它并显示备用 UI。
 
 
 *   使用 `constructor` 初始化状态并绑定事件处理器。避免在构造函数中执行副作用。
@@ -968,24 +1090,30 @@ class ErrorBoundary extends React.Component {
 - 对于条件渲染，使用三元运算符或逻辑与 `&&` 表达式：
 
 ```javascript
+function MyComponent(props) {
   return (
     <div>
       {props.isLoggedIn ? (
+        <h1>欢迎回来！</h1>
       ) : (
         <h1>请登录。</h1>
       )}
+    </div>
   );
 }
 ```
 - 对于循环，使用 `map` 方法遍历数组并渲染元素：
 
 ```javascript
+function ItemList(props) {
   const items = props.items;
   return (
     <ul>
+      {items.map((item) => (
         <li key={item.id}>{item.name}</li>
       ))}
     </ul>
+  );
 }
 ```
 
@@ -995,35 +1123,43 @@ class ErrorBoundary extends React.Component {
 
 - **Style 属性**：在 JSX 中，`style` 属性期望一个 JavaScript 对象而不是 CSS 字符串。每个 CSS 属性应该用驼峰命名法编写。
 
+```javascript
 function MyComponent() {
   const divStyle = {
     color: "blue",
+    fontSize: "24px"
   };
   return <div style={divStyle}>Hello, World!</div>;
 }
+```
 
 - **关闭标签**：在 JSX 中，所有标签必须关闭，即使它们没有子元素。与 HTML 不同，HTML 中的某些标签（如 `<img>` 和 `<input>`）不需要关闭标签。在 JSX 中，这些元素应该是自闭合的，在结束右括号前加一个斜杠（例如 `<img />` 和 `<input />`）。
 
+```javascript
 // 正确
 function MyComponent() {
   return (
+    <div>
       <img src="example.jpg" alt="Example" />
       <input type="text" name="username" />
     </div>
+  );
 }
 
 // 错误
+function MyComponentWrong() {
   return (
     <div>
       <img src="example.jpg" alt="Example">
     </div>
   );
 }
+```
 
 - **JavaScript 表达式**：JSX 允许你使用大括号 `{}` 嵌入 JavaScript 表达式。这一功能在 HTML 中是不存在的，在 HTML 中，你必须使用模板字符串或其他机制来实现类似的功能。
 
 
-总结，JSX 是 JavaScript 的一种强大且灵活的语法扩展，允许你将在 JavaScript 代码中编写类 HTML 的代码。通过理解它的语法规则、最佳实践以及与传统 HTML 的区别，你可以有效地使用 JSX 创建整洁且易于维护的 React 组件。凭借嵌入 JavaScript 表达式、条件渲染内容和循环数组的能力，JSX 简化了构建复杂动态用户界面的的过程。
+总结，JSX 是 JavaScript 的一种强大且灵活的语法扩展，允许你在 JavaScript 代码中编写类 HTML 的代码。通过理解它的语法规则、最佳实践以及与传统 HTML 的区别，你可以有效地使用 JSX 创建整洁且易于维护的 React 组件。凭借嵌入 JavaScript 表达式、条件渲染内容和循环数组的能力，JSX 简化了构建复杂动态用户界面的的过程。
 
 
 本节将解释如何在 React 中管理事件以及将数据传递给组件。
@@ -1037,9 +1173,11 @@ function MyComponent() {
 
 ```javascript
 function handleClick() {
+  console.log("Clicked!");
 }
 
 function MyComponent() {
+  return <button onClick={handleClick}>点击我</button>;
 }
 ```
 
@@ -1049,9 +1187,11 @@ React 使用了一种名为合成事件（Synthetic Events）的概念，它是�
 
 ```javascript
 function handleClick(event) {
+  console.log("Native event:", event.nativeEvent);
 }
 
 function MyComponent() {
+  return <button onClick={handleClick}>点击我</button>;
 }
 ```
 
@@ -1061,30 +1201,41 @@ function MyComponent() {
 ```javascript
 class MyComponent extends React.Component {
   constructor(props) {
+    super(props);
     this.handleClick = this.handleClick.bind(this);
   }
+
   handleClick() {
+    console.log("Clicked!");
   }
+
   render() {
     return <button onClick={this.handleClick}>点击我</button>;
+  }
 }
 ```
 
 ```javascript
 class MyComponent extends React.Component {
   handleClick = () => {
+    console.log("Clicked!");
   };
+
   render() {
     return <button onClick={this.handleClick}>点击我</button>;
+  }
 }
 ```
 
 ```javascript
 class MyComponent extends React.Component {
   handleClick() {
+    console.log("Clicked!");
   }
+
   render() {
     return <button onClick={() => this.handleClick()}>点击我</button>;
+  }
 }
 ```
 
@@ -1094,9 +1245,11 @@ Props 是 React 中组件间传递数据的机制。它们允许你从父组件�
 
 ```javascript
 function Greeting(props) {
+  return <h1>Hello, {props.name}!</h1>;
 }
 
 function App() {
+  return <Greeting name="John" />;
 }
 ```
 
@@ -1106,39 +1259,52 @@ function App() {
 
 ```javascript
 class ParentComponent extends React.Component {
+  handleChildClick = (name) => {
     console.log("子组件按钮被点击:", name);
   }
+
   render() {
+    return <ChildComponent onClick={this.handleChildClick} />;
   }
 }
 
+function ChildComponent(props) {
   return <button onClick={() => props.onClick("Child")}>点击我</button>;
 }
 ```
+
 ## 提升状态与管理共享状态
 
 当多个组件需要共享并修改相同的数据时，最佳实践是将状态提升到最近的祖先。这意味着将状态管理移动到更高层次的组件，然后通过 props 将数据向下传递给子组件。
 这是一个示例：
 
 ```javascript
+class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = { counter: 0 };
   }
+
   incrementCounter() {
     this.setState((prevState) => ({ counter: prevState.counter + 1 }));
+  }
+
   render() {
     return (
       <>
+        <CounterDisplay count={this.state.counter} />
         <CounterButton onClick={this.incrementCounter} />
       </>
     );
+  }
 }
 
 function CounterDisplay(props) {
+  return <p>Count: {props.count}</p>;
 }
 
 function CounterButton(props) {
+  return <button onClick={props.onClick}>Increment</button>;
 }
 ```
 
@@ -1157,78 +1323,102 @@ React 组件中的状态（state）是存储和管理随时间变化的数据的
 
 要在函数组件中初始化状态，可以使用 `useState` Hook。它接受一个初始值作为参数，并返回一个包含两个元素的数组：当前状态值和一个更新状态的函数。你可以使用数组解构将返回的元素赋值给变量：
 
-import React, { useState } from ‘react’;
+```javascript
+import React, { useState } from 'react';
 
 function Counter() {
+  const [count, setCount] = useState(0);
   function increment() {
     setCount(count + 1);
   }
+  return (
     <div>
       <p>Count: {count}</p>
       <button onClick={increment}>Increment</button>
+    </div>
   );
 }
 ```
+
 ### 处理状态不可变性和最佳实践
 
 React 中的状态应该被视为不可变的（immutable）。这意味着，你不应该直接修改当前状态，而应该创建一个带有更新数据的新状态对象。这种做法有助于防止错误并优化性能，因为 React 可以高效地比较新旧状态对象以确定是否需要重新渲染。
+
 当根据当前状态更新状态时，请通过向状态更新器传递函数来使用函数更新：
 
 ```javascript
+function increment() {
   setCount((prevCount) => prevCount + 1);
 }
 ```
+
 ### Props 及其在组件通信中的作用
 
 如前所述，`props` 是 React 中组件之间传递数据的主要方式。`props` 是只读的，允许父组件将值传递给子组件。子组件随后可以通过其 `props` 对象访问传递的数据：
+
 ```javascript
 function Greeting({ name }) {
   return <h1>Hello, {name}!</h1>;
+}
 
 function App() {
-  return <Greeting name=”John” />;
+  return <Greeting name="John" />;
+}
 ```
 
 ### 使用 PropTypes 验证 props
+
 `PropTypes` 是一个库，允许你为组件指定预期的 `props` 类型。它是捕获错误和记录组件预期 `prop` 类型的有用工具。要使用 `PropTypes`，你需要导入该库并在组件上定义预期的 `prop` 类型：
 
 ```javascript
-import PropTypes from ‘prop-types’;
+import PropTypes from 'prop-types';
 
 function Greeting({ name }) {
+  return <h1>Hello, {name}!</h1>;
 }
 
 Greeting.propTypes = {
+  name: PropTypes.string.isRequired
 };
 
 export default Greeting;
+```
 
 ### 使用 Context API 管理状态和数据流
 
 
 要使用 `Context API`，你需要使用 `React.createContext()` 创建上下文，并用上下文提供者（provider）包裹你的组件树。提供者接收一个 `value` 属性，它可以是你任何想要跨越组件树共享的数据：
 
-import React, { useState, useContext } from ‘react’;
+```javascript
+import React, { useState, useContext } from 'react';
+
 const ThemeContext = React.createContext();
 
-  const [theme, setTheme] = useState('light’);
+function App() {
+  const [theme, setTheme] = useState('light');
   return (
     <ThemeContext.Provider value={{ theme, setTheme }}>
+      <Toolbar />
     </ThemeContext.Provider>
   );
 }
+
 function Toolbar() {
   return <ThemeSwitch />;
 }
+
 function ThemeSwitch() {
   const { theme, setTheme } = useContext(ThemeContext);
   function toggleTheme() {
+    setTheme(theme === 'light' ? 'dark' : 'light');
   }
   return (
     <button onClick={toggleTheme}>
+      Switch to {theme === 'light' ? 'dark' : 'light'}
     </button>
   );
 }
+```
 
 在这个示例中，`App` 组件初始化主题状态并将其提供给 `ThemeContext`。嵌套在 `Toolbar` 之中的 `ThemeSwitch` 组件可以使用 `useContext` 访问并更新主题。
 
@@ -1244,355 +1434,463 @@ function ThemeSwitch() {
 
 
 
-const response = await fetch('https://api.example.com/users/${userId}');
-const userData = await response.json();
-setUser(userData);
-fetchUser();
-}, [userId]);
-return (
-    {user ? (
-      <div>
-        <h1>{user.name}</h1>
-      </div>
-    ) : (
-      <p>Loading…</p>
-  </div>
-);
+```javascript
+import React, { useState, useEffect } from 'react';
+
+function UserProfile({ userId }) {
+  const [user, setUser] = useState(null);
+
+  useEffect(() => {
+    async function fetchUser() {
+      const response = await fetch(`https://api.example.com/users/${userId}`);
+      const userData = await response.json();
+      setUser(userData);
+    }
+    fetchUser();
+  }, [userId]);
+
+  return (
+    <div>
+      {user ? (
+        <div>
+          <h1>{user.name}</h1>
+          <p>{user.email}</p>
+        </div>
+      ) : (
+        <p>Loading…</p>
+      )}
+    </div>
+  );
 }
+```
 
 ### 实现用于复用逻辑的自定义 Hooks
 
 
 ```javascript
-import { useState, useEffect } from ‘react’;
+import { useState, useEffect } from 'react';
+
+function useFetch(url) {
   const [data, setData] = useState(null);
   const [loading, setLoading] = useState(true);
+
   useEffect(() => {
+    async function fetchData() {
       const response = await fetch(url);
       const jsonData = await response.json();
       setData(jsonData);
+      setLoading(false);
     }
     fetchData();
   }, [url]);
+
+  return { data, loading };
 }
+
 function App() {
-  const { data, loading } = useFetch('https://api.example.com/data’);
-    <div
+  const { data, loading } = useFetch('https://api.example.com/data');
+  return (
+    <div>
       {loading ? <p>Loading…</p> : <p>Data: {JSON.stringify(data)}</p>}
     </div>
+  );
 }
 ```
 
 
 `useContext` 和 `useReducer` Hooks 可以结合使用，创建类似于 Redux 的高级状态管理模式。`useContext` Hook 允许你访问组件树上最接近的上下文值，而 `useReducer` Hook 则使用 reducer 函数管理复杂的状态转换：
 
-import React, { createContext, useReducer, useContext } from ‘react’;
+```javascript
+import React, { createContext, useReducer, useContext } from 'react';
+
 const initialState = { count: 0 };
+
 function reducer(state, action) {
-    case ‘increment’:
+  switch (action.type) {
+    case 'increment':
       return { count: state.count + 1 };
-    case ‘decrement’:
+    case 'decrement':
+      return { count: state.count - 1 };
     default:
-      throw new Error(Unknown action type: ${action.type});
+      throw new Error(`Unknown action type: ${action.type}`);
   }
+}
+
 const CounterContext = createContext();
+
 function CounterProvider({ children }) {
   const [state, dispatch] = useReducer(reducer, initialState);
+  return (
     <CounterContext.Provider value={{ state, dispatch }}>
       {children}
     </CounterContext.Provider>
+  );
 }
+
 function Counter() {
   const { state, dispatch } = useContext(CounterContext);
-    <div
+  return (
+    <div>
       <p>Count: {state.count}</p>
-      <button onClick={() => dispatch({ type: ‘increment’ })})}>
+      <button onClick={() => dispatch({ type: 'increment' })}>
+        增加
       </button>
-      <button onClick={() => dispatch({ type: ‘decrement’ })})}>
+      <button onClick={() => dispatch({ type: 'decrement' })}>
         减少
+      </button>
     </div>
   );
 }
+
+function App() {
   return (
     <CounterProvider>
       <Counter />
+    </CounterProvider>
   );
 }
 ```
+
 ## 其他内置 Hooks 及其用例
 
 React 提供了其他几个内置 Hooks，每个 都有特定的用例：
+
 *   `useMemo`：通过记忆化一个值来优化性能，该值仅在其依赖项变化时才会重新计算。在处理计算密集型函数或对象时，此 Hook 非常有用。
+
 *   `useCallback`：与 `useMemo` 类似，但用于函数的记忆化。它返回回调函数的记忆化版本，只有当依赖项之一发生变化时，该函数才会改变。
+
 *   `useRef`：创建一个可变的 ref 对象，可以用于跨越渲染存储值，而不会触发重新渲染。常见的用例包括引用 DOM 元素和存储之前的状态。
 
 总之，React Hooks 为函数式组件提供了一种强大且简单的方式来管理状态、副作用以及 React 特性。内置 Hooks（如 `useState`、`useEffect`、`useContext` 和 `useReducer`）涵盖了广泛的用例，而自定义 Hooks 则允许在组件间创建可复用的逻辑。可以使用 `useContext` 和 `useReducer` 实现高级状态管理模式，而其他内置 Hooks 如 `useMemo`、`useCallback`、`useRef` 和 `useLayoutEffect` 为各种场景提供了额外功能。
 
-
 异步编程是一种允许任务并发运行而不阻塞界面的范式。JavaScript 是单线程的，这意味着一次只能执行一个操作。
-
 
 回调函数作为参数传递给其他函数，并在稍后执行。它们处理异步代码的最基础的形式：
 
+```javascript
 function getData(callback) {
   setTimeout(() => {
-    const data = ‘Sample data’;
+    const data = 'Sample data';
+    callback(data);
   }, 1000);
 }
+
 getData((data) => {
+  console.log(data);
 });
 ```
 然而，回调会导致回调地狱（callback hell）。
 ### Promises 和链式调用
 
-Promises 是处理异步代码的一种更高级的方法。Promise 代表一个未来可能可用的值。Promise 有三种状态：等待中（pending）、已完成（fulfilled）或拒绝（rejected）。你可以使用 `then` 方法在 Promise 完成时附加回调函数，或使用 `catch` 方法来处理错误：
+`Promises` 是处理异步代码的一种更高级的方法。Promise 代表一个未来可能可用的值。Promise 有三种状态：等待中（pending）、已完成（fulfilled）或拒绝（rejected）。你可以使用 `then` 方法在 Promise 完成时附加回调函数，或使用 `catch` 方法来处理错误：
+
 ```javascript
 function getData() {
   return new Promise((resolve, reject) => {
-      const data = ‘Sample data’;
+    setTimeout(() => {
+      const data = 'Sample data';
       resolve(data);
     }, 1000);
+  });
 }
+
 getData().then((data) => {
   console.log(data);
+});
 ```
 Promises 可以链式调用，使得代码更具读性和可维护性。
 
 
 `Async/await` 是一种现代语法，使得处理异步代码更加简单。`async` 函数返回一个 Promise，`await` 关键字用于暂停函数执行直到 Promise 解析：
 
+```javascript
 async function fetchData() {
-  const response = await fetch('https://api.example.com/data’);
+  const response = await fetch('https://api.example.com/data');
   const data = await response.json();
+  return data;
 }
 fetchData();
 ```
+
 ### 将异步代码集成到 React 组件中
 
 要在 React 函数式组件中集成异步代码，你可以使用 `useEffect` Hook 来获取数据或执行其他副作用：
+
 ```javascript
-import React, { useState, useEffect } from ‘react’;
+import React, { useState, useEffect } from 'react';
+
 function DataDisplay() {
+  const [data, setData] = useState(null);
+
   useEffect(() => {
     async function fetchData() {
-      const response = await fetch('https://api.example.com/data’);
+      const response = await fetch('https://api.example.com/data');
+      const jsonData = await response.json();
       setData(jsonData);
     }
     fetchData();
+  }, []);
+
   return <div>{data ? <p>{JSON.stringify(data)}</p> : <p>Loading…</p>}</div>;
 }
 ```
 
-
-
-
-```
+```javascript
 import React, { useState, useEffect } from 'react';
+
 function DataDisplay() {
   const [data, setData] = useState(null);
   const [error, setError] = useState(null);
+
   useEffect(() => {
     async function fetchData() {
       try {
+        const response = await fetch('https://api.example.com/data');
         const jsonData = await response.json();
         setData(jsonData);
       } catch (err) {
+        setError(err);
       }
     }
-  });
+    fetchData();
+  }, []);
+
+  if (error) return <p>Error: {error.message}</p>;
+  return <div>{data ? <p>{JSON.stringify(data)}</p> : <p>Loading…</p>}</div>;
+}
 ```
 
-异步编程对于在 JavaScript 和 React 中创建响应且高效的至关重要。从回调到 Promises 再到 `async/await` 语法，JavaScript 提供了多种管理异步代码的方法。在 React 中，`useEffect` Hook 允许在函数组件中无缝集成异步操作。适当的错误处理（例如使用 `try/catch` 块）可以确保在处理真实世界场景时提供更好的用户体验。通过理解并应用这些概念，你可以创建更健壮、性能更好的 React 应用，并优雅地处理异步操作。
+异步编程对于在 JavaScript 和 React 中创建响应且高效的应用至关重要。从回调到 Promises 再到 `async/await` 语法，JavaScript 提供了多种管理异步代码的方法。在 React 中，`useEffect` Hook 允许在函数组件中无缝集成异步操作。适当的错误处理（例如使用 `try/catch` 块）可以确保在处理真实世界场景时提供更好的用户体验。通过理解并应用这些概念，你可以创建更健壮、性能更好的 React 应用，并优雅地处理异步操作。
+
 ## 结论
 
-React 为构建现代 Web 应用提供了一个强大且灵活的框架。在过去的七章节中，我们探索了 React 的核心概念，从基于组件的架构、JSX 语法和状态管理，到事件处理、生命周期方法和 Hooks。此外，我们深入研究了异步编程技术以创建更具响应的应用。通过理解这些基础概念并应用最佳实践，你可以充分利用 React 的潜力，开发出高效、可维护且可扩展 Web 应用。
+React 为构建现代 Web 应用提供了一个强大且灵活的框架。在过去的章节中，我们探索了 React 的核心概念，从基于组件的架构、JSX 语法和状态管理，到事件处理、生命周期方法和 Hooks。此外，我们深入研究了异步编程技术以创建更具响应的应用。通过理解这些基础概念并应用最佳实践，你可以充分利用 React 的潜力，开发出高效、可维护且可扩展 Web 应用。
+
 在接下来的章节 *Next.js 基础* 中，你将接触 Next.js 框架及其主要优势。我们将引导你完成环境搭建、安装 Next.js、创建一个新的 Next.js 项目，并理解其文件夹结构。你将学习页面在 Next.js 中的核心作用，以及如何创建和渲染基础页面。最后，我们将探索如何使用 CSS Modules 实现 CSS 样式，这是管理组件样式的强大功能。本章结束时，你将掌握开始构建自己的健壮且可扩展的 Next.js 应用所需的坚实知识。
 
 ## 多选题
+
 1. React 中虚拟 DOM 的主要目的是什么？
+
     1. 通过减少直接 DOM 操作来提高性能
     2. 启用异步编程
+    3. 管理组件状态
     4. 完全替换真实 DOM
 
 2. React 中有两种种类型的组件？
+
+    1. 类组件和函数组件
     2. 函数组件和类组件
     3. 有状态组件和无状态组件
     4. 父组件和子组件
+
 3. JSX 和 HTML 的主要区别是什么？
+
     1. JSX 是标记语言，而 HTML 是编程语言
     2. JSX 允许嵌入 JavaScript 表达式，而 HTML 不允许
+    3. JSX 仅用于 React Native
     4. JSX 需要单独的文件来处理 CSS，而 HTML 不需要
 
 4. React Hooks 的主要目的是什么？
+
+    1. 允许在函数组件中使用状态和副作用
     2. 通过减少直接 DOM 操作来提高性能
     3. 简化 JavaScript 代码的语法
     4. 允许使用类组件
+
 5. 哪个 React Hook 用于在函数组件中执行副作用？
+
     1. `useState`
     2. `useEffect`
+    3. `useContext`
     4. `useReducer`
 
 6. 使用 `async/await` 语法相比 Promises 的主要优势是什么？
-    2. 使异步代码更容易读和写写
+
+    1. 它比 Promises 运行得更快
+    2. 使异步代码更容易读和写
     3. 允许在函数组件中使用状态
     4. 消除了对错误处理的需要
+
 7. 在哪个 React Hook 中使用了 context？
+
     1. `useState`
     2. `useEffect`
+    3. `useContext`
     4. `useReducer`
 
 8. props 在 React 中的主要作用是什么？
+
+    1. 管理组件内部状态
     2. 允许在组件内部状态
     3. 在组件之间传递数据
     4. 定义结构
+
 9. 哪个生命周期方法只在组件挂载时被调用？
+
     1. `componentDidMount`
     2. `componentDidUpdate`
+    3. `componentWillUnmount`
     4. `componentCatch`
 
-10. 下哪一个不是有效的状态名称？
+10. 下哪一个不是有效的 Promise 状态名称？
+
+    1. Pending（等待中）
     2. Fulfilled（已完成）
     3. Rejected（已拒绝）
     4. Completed（已完成）
+
 ## 答案
 
 1. A
+2. B
 3. B
 4. A
 5. B
+6. B
 7. C
 8. C
 9. A
+10. D
 
 # 第 3 章：Next.js 基础
 
-
 在本章中，我们将深入探讨 Next.js 的基础知识。我们将首先介绍 Next.js 一个强大的框架，同时阐述它的实际应用。
 
-
-随着学习的深入，我们将解释页面在 Next.js 中的关键作用，以及创建和渲染基础页面的。最后，我们将介绍 CSS Modules 并演示如何利用它们为你的应用程序设置样式。在本章结束时，你将拥有开始构建自己的应用所需的坚实理解。
-
+随着学习的深入，我们将解释页面在 Next.js 中的关键作用，以及创建和渲染基础页面的方法。最后，我们将介绍 CSS Modules 并演示如何利用它们为你的应用程序设置样式。在本章结束时，你将拥有开始构建自己的应用所需的坚实理解。
 
 在本章将涵盖以下主题：
 
 * 安装、设置和创建新的 Next.js 项目
+
 * 理解 Next.js 项目的文件夹结构
+
 * 理解页面在 Next.js 中的作用
+
 * 使用 CSS Modules 在 Next.js 中实现 CSS 样式
 
 ## 介绍 Next.js 框架及其优势
+
 Next.js 是一个强大的、开源的基于 React 的框架，用于构建服务端渲染和静态生成的应用程序。它由 Vercel 开发和维护，使用 JavaScript 构建，并利用了 React、Node.js 和 JavaScript 生态系统的力量。该框架旨在通过自动代码分割、预取和热代码加载等功能提供优化的用户体验。
 
 这里是一个基础 Next.js 组件的示例：
+
+
+
 ```javascript
 // 一个基础的 Next.js 组件
 function HomePage() {
 }
 
 export default HomePage;
-
-
-
+```
 
 - **静态站点生成 (SSG)**: Next.js 可以在构建时生成静态 HTML，减少对服务器的需求。这一功能对于内容更新不频繁的博客或文档站点非常理想。
 - **增量静态重新生成 (ISR)**: 这是 SSR 和 SSG 的结合。ISR 允许你在构建过程后增量更新静态页面，在保持内容最新的同时提供优的性能。
 - **API 路由**: Next.js 允许你在构建页面的同时构建 API 路由，简化了后端开发。
 
 例如：
-```
+
+```javascript
 // An example of API route in Next.js
 export default function handler(req, res) {
 }
 ```
 
-- **内置 CSS 和 Sass 支持**: Next.js 内置对 CSS 和 Sass 的支持，同时也支持如 styled components 或 emotion 等 CSS-in-JS 解决方案。
+- **内置 CSS 和 Sass 支持**: Next.js 内置对 CSS 和 Sass 的支持，同时也支持如 `styled components` 或 `emotion` 等 CSS-in-JS 解决方案。
 - **TypeScript 支持**: Next.js 开箱即用支持 TypeScript，允许在项目实现强类型。
 
+Next.js 在多个方面与 `Create React App (CRA)` 和 `Gatsby` 等 JavaScript 框架脱颖而出。虽然 CRA 非常适合构建单页应用 (SPA)，但它缺乏 Next.js 的 SSR 和 SSG 功能，而这些功能对于 SEO 和性能至关重要。另一方面，Gatsby 强调 SSG 但原生不支持 SSR 或 ISR。此外，Next.js 的自动路由和 API 路由使其成为全栈开发的更全面的解决方案。
 
-Next.js 在多个方面与 Create React App (CRA) 和 Gatsby 等 JavaScript 框架脱而出。虽然 CRA 非常适合构建单页应用 (SPA)，但它缺乏 Next.js 的 SSR 和 SSG 功能，而这些功能对于 SEO 和性能至关重要。另一方面，Gatsby 强调 SSG 但原生不支持 SSR 或 ISR。此外，Next.js 的自动路由和 API 路由使其成为全栈开发的更全面的解决方案。
-
-
-```
+```javascript
 // A dynamic route in Next.js
 function Post({ post }) {
   // Render post…
 }
-  const { id } = context.params
-  // Fetch data based on id…
-  return { props: { post } }
+
+const { id } = context.params;
+// Fetch data based on id…
+return { props: { post } };
+
 export default Post;
 ```
 
-
-由于其多功能性和强大的特性集，许多知名公司在技术栈中使用了 Next.js。Netflix、Twitch 和 Uber 等公司已经利用 Next.js 的力量来构建快速、可扩展且对 SEO 友 Web 应用程序。这些真实世界的应用验证了 Next.js 框架的实用性和企业级就绪性。
-
+由于其多功能性和强大的特性集，许多知名公司在技术栈中使用了 Next.js。Netflix、Twitch 和 Uber 等公司已经利用 Next.js 的力量来构建快速、可扩展且对 SEO 友好的 Web 应用程序。这些真实世界的应用验证了 Next.js 框架的实用性和企业级就绪性。
 
 Next.js 广泛的特性集减少了对其他框架中可能需要的额外配置或插件的需求。它的服务端渲染能力允许改进 SEO，而静态站点生成和增量静态重新生成为根据你的特定需求优化性能提供了多种选择。
 
-
-```
+```javascript
 // Static Site Generation in Next.js
 export async function getStaticPaths() {
   // Determine the paths at build time…
 }
+
+export async function getStaticProps({ params }) {
   // Fetch data based on params…
-  return { props: { … } }
+  return { props: { … } };
 }
+
+export default function Post({ post }) {
   // Render the post…
 }
 ```
+
 内置的路由系统简化了页面创建，原生 API 路由功能意味着你可以在同一个框架内处理后端功能，从而无缝的全栈开发体验。
 
-此外，Next.js 为 CSS 和 Sass、TypeScript 以及流行的 CSS-in-JS 解决方案提供了开箱即用的支持，消除了手动设置这些功能的需要。这种内置功能结合自动的热代码重载，带来了极的开发者体验。
+此外，Next.js 为 CSS 和 Sass、TypeScript 以及流行的 CSS-in-JS 解决方案提供了开箱即用的支持，消除了手动设置这些功能的需要。这种内置功能结合自动的热代码重载，带来了极佳的开发者体验。
+
 在将 Next.js 与 CRA 和 Gatsby 等其他流行框架进行比较时，显然 Next.js 为构建现代 Web 应用提供了更全面的工具集。虽然 CRA 和 Gatsby 各有优处，但 Next.js 的多功能性使其成为许多用例的有力竞争者。
 
 Netflix、Uber 和 Twitch 等知名公司采用 Next.js 进一步证明了它的能力实用性。这些公司需要高性能、可扩展且可靠的 Web 应用，他们选择使用 Next.js 表明该框架能够满足这些需求。
+
 无论你是刚开始 JavaScript 开发，还是寻求简化工作流的资深开发者，Next.js 提供的系列优势使其成为你下一个项目的绝佳选择。
 
 ## 安装并创建新的 Next.js 项目
+
 在本节中，我们将介绍安装 Next.js 的前提条件，并分析 Next.js 的目录结构。
 
 ## 安装 Next.js 的前提条件
-在开始使用 Next.js 之前，我们需要确保机器上安装了必要的工具。Node.js 和 `npm`（包管理器）对于设置 Next.js 项目至关重要。Node.js 是一个允许我们在服务器上运行 JavaScript 的 运行时，而 npm 是一个包管理器。
+
+在开始使用 Next.js 之前，我们需要确保机器上安装了必要的工具。Node.js 和 `npm`（包管理器）对于设置 Next.js 项目至关重要。Node.js 是一个允许我们在服务器上运行 JavaScript 的运行时，而 npm 是一个包管理器。
 
 你可以通过在终端中运行以下命令来检查是否安装了 Node.js 和 npm 并查看版本：
-```
+
+```bash
 node -v
 npm -v
+```
 
 如果你没有安装 Node.js，可以从 Node.js 官网 (https://nodejs.org) 下载。
 
+一旦安装了 Node.js 和 npm，得益于 `create-next-app` 命令，设置一个新的 Next.js 应用变得轻而易举。
 
-一旦安装了 Node.js 和 npm，得益于 `create-app` 命令，设置一个新的 Next.js 应用变得轻而易举。
-
-
+```bash
+npx create-next-app@latest my-next-app
 ```
-npx create-app@latest my-next-app
 
 在此命令中，`my-next-app` 是你的项目名称。将其替换为你所需的名称。
 
+`create-next-app` 命令以你的名称创建一个新目录，设置了必要的文件和文件夹并安装了依赖。它本质上是一个准备就绪的 Next.js 应用。
 
-`create-app` 命令以你的名称创建一个新目录，设置了必要的文件和文件夹并安装了依赖。它本质上是一个准备就绪的 Next.js 应用。
-
-
-```
+```bash
 cd my-next-app
-
-要启动开发服务器，使用 `npm` dev 命令：
-
-npm dev
 ```
 
+要启动开发服务器，使用 `npm run dev` 命令：
+
+```bash
+npm run dev
+```
 
 ## 理解初始设置
-
 
 - `pages`: 该目录包含你的应用程序页面。每个文件根据其文件名对应一个路由。
 - `public`: 该目录存储静态文件（如图像），这些文件通过根（/）URL 路径服务。
 - `package.json`: 该文件包含关于你的项目及其依赖的元数据。
 
 这是 Next.js 项目的目录结构：
-```
+
+```text
 my-next-app
 ├── pages
 │   ├── api
@@ -1601,21 +1899,17 @@ my-next-app
 │   ├── globals.css
 │   └── Home.module.css
 └── package.json
-
-
-
+```
 
 `pages` 目录包含一个 `index.js` 文件，它对应于 `/` 路由，以及 `_app.js`，这是一个用于初始化页面的自定义 App 组件。你可以通过覆盖它来控制页面初始化或添加全局样式。
 
-
 初始设置为你的 Next.js 项目奠定了坚实的基础，随着你在 Next.js 旅程中的进展，你将更多地了解这些组件中的每一个。
-
 
 理解 Next.js 项目的文件和文件夹结构至关重要，因为它能让你更好地感知项目的组织，并使开发更加顺畅。
 
-
 新创建的 Next.js 应用具有以下文件夹结构：
 
+```text
 my-next-app
 ├── pages
 │   ├── _app.js
@@ -1628,107 +1922,119 @@ my-next-app
 ```
 
 让我们逐一查看这些目录和文件，以更好地理解它们的角色。
+
 ## 探索 ‘pages’ 目录
 
 `pages` 目录是 Next.js 项目最重要的目录之一。你将在这里为应用程序添加所有页面。该目录中的每个文件都根据其文件名对应一个路由。
+
 例如，如果你在 `pages` 目录中创建一个 `about.js` 文件，它将可以通过 `http://localhost:3000/about` 访问。
 
-```
+```javascript
 export default function About() {
-return <h1>About Us</h1>
+  return <h1>About Us</h1>;
 }
+```
 
 `pages` 目录包含 `_app.js` 文件，这是一个自定义 App 组件。该文件允许你覆盖用于初始化页面的默认 App 组件。你可以用它来在页面之间保持状态、添加全局 CSS 或添加全局布局。
 
-
 ```javascript
 // pages/api/hello.js
-res.status(200).json({ text: ‘Hello’ })
+export default function handler(req, res) {
+  res.status(200).json({ text: 'Hello' });
 }
 ```
+
 ## 探索 public 目录
 
-`public` 目录是可以添加静态资源（如图像、字体或 robots.txt 文件）的地方。这些文件将从根路径 (`/`) URL 路径提供服务。例如，如果你在 `public` 目录中添加一个 `logo.png` 文件，你可以通过 `http://localhost:3000/logo.png` 访问它。
+`public` 目录是可以添加静态资源（如图像、字体或 `robots.txt` 文件）的地方。这些文件将从根路径 (`/`) URL 路径提供服务。例如，如果你在 `public` 目录中添加一个 `logo.png` 文件，你可以通过 `http://localhost:3000/logo.png` 访问它。
+
 此目录也用于 `manifest.json`、`robots.txt` 以及任何你想添加到域名根目录的静态文件。
 
 ## 探索 styles 目录
+
 Next.js 开箱支持 CSS 导入。`styles` 目录是你添加 CSS 文件的地方。默认情况下，Next.js 配置你的项目支持 CSS Modules，这允许你将 CSS 直接导入到 JavaScript 文件中。
 
 例如，你可以创建一个 `Button.module.css` 文件：
+
 ```css
 /* Button.module.css */
 .button {
-background-color: #0070f3;
-color: #fff;
-border: none;
+  background-color: #0070f3;
+  color: #fff;
+  border: none;
 }
 ```
-
 
 ```javascript
 // pages/index.js
+import styles from './Button.module.css';
+
 export default function Home() {
-return <button className={styles.button}>Click Me</button>
+  return <button className={styles.button}>Click Me</button>;
 }
+```
 
 `globals.css` 文件默认包含，可用于全局样式。这些样式将应用于应用程序中的所有页面和组件。你也可以使用此文件将其他 CSS 文件作为全局导入。
 
-
 `package.json` 文件包含项目的元数据并列出了它的依赖项。当你运行 `npm install <package>` 时，该包将作为依赖项添加。
-
 
 在 Next.js 中，页面是一个 React 组件，它根据 `pages` 目录中的文件名与路由相关联。这个概念是 Next.js 的基础方面之一，理解它对于使用该框架构建应用程序至关重要。
 
+在 Next.js 中，`pages` 目录中的每个文件都会变成一个自动被处理和渲染的路由。假设你有一个文件 `pages/about.js`，它将可以通过 `http://localhost:3000/about` 访问。
+
+### 自动路由
 
 在 Next.js 中，`pages` 目录中的每个文件都会变成一个自动被处理和渲染的路由。假设你有一个文件 `pages/about.js`，它将可以通过 `http://localhost:3000/about` 访问。
 
-
 ```javascript
 // pages/about.js
-return <h1>About Us</h1>
+export default function About() {
+  return <h1>About Us</h1>;
 }
 ```
-### 自动路由
-在 Next.js 中， `pages` 目录中的每个文件都会变成一个自动被处理和渲染的路由。假设你有一个文件 `pages/about.js`，它将可以通过 `http://localhost:3000/about` 访问。
 
+### 动态路由
 
-```javascript
-// pages/about.js
-return <h1>About Us</h1>
-}
-```
-# 动态路由
 如果你在 `pages` 目录中创建一个 `pages/[id].js` 文件，它将可以通过 `/any-id` 访问。
 
+```javascript
 // pages/[id].js
-import { useRouter } from 'next'
+import { useRouter } from 'next/router';
 
 // 此处代码示例不完整，但保持逻辑逻辑
+export default function Post() {
+  const router = useRouter();
+  const { id } = router.query;
+  return <div>Post: {id}</div>;
 }
 ```
+
 ### 嵌套路由
+
 你可以通过在 `pages` 目录中添加文件夹来创建嵌套路由。例如，`pages/blog/first.js` 将可以通过 `/blog/first` 访问。
 
 `pages` 内部的 `api` 目录是你创建 API 路由的地方。该目录中的每个文件都对应一个路由，可以用于创建一个完整的 API。
 
 ```javascript
 export default function handler(req, res) {
-res.status(200).json({ text: ‘Hello’ })
-}
-
-### 错误页面
-Next.js 有内置的 404 页面，当路由不存在时会自动提供。你可以通过创建一个 `pages/404.js` 文件来自定义 404 页面：
-```javascript
-// pages/404.js
-export default function Custom404() {
+  res.status(200).json({ text: 'Hello' });
 }
 ```
 
+### 错误页面
+
+Next.js 有内置的 404 页面，当路由不存在时会自动提供。你可以通过创建一个 `pages/404.js` 文件来自定义 404 页面：
+
+```javascript
+// pages/404.js
+export default function Custom404() {
+  return <h1>404 - Page Not Found</h1>;
+}
+```
 
 ## 在 Next.js 中创建和渲染基础页面
 
-
-正如之前提到的，Next.js 中的页面是来自 `pages` 目录中的 **.js**、**.jsx**、**.ts** 或 **.tsx** 文件的 React 组件。每个页面都根据其文件名与路由相关联。
+正如之前提到的，Next.js 中的页面是来自 `pages` 目录中的 `.js`、`.jsx`、`.ts` 或 `.tsx` 文件的 React 组件。每个页面都根据其文件名与路由相关联。
 
 在 Next.js 中创建新页面只需在 `pages` 目录中创建一个新文件。让我们为我们的应用程序创建一个新的 **About** 页面。在你的项目中，在 `pages/about.js` 创建新文件并添加以下代码：
 
@@ -1736,455 +2042,537 @@ export default function Custom404() {
 export default function About() {
   return (
     <div>
+      <h1>关于我们</h1>
+      <p>我们是一个专注于使用 Next.js 构建 Web 应用的开发者团队。</p>
     </div>
-  )
+  );
 }
-
-
-
-
-<p>我们是一个专注于使用 Next.js 构建 Web 应用的开发者团队。</p>
-
-)
-}
-
+```
 
 ### 查看新页面
 
-
 ### 页面之间的链接
-
 
 让我们从 `Home` 页面创建一个到 `About` 页面的 `Link`。打开 `pages/index.js` 文件并按如下所示更新：
 
+```javascript
 // pages/index.js
-import Link from ‘next/link’
+import Link from 'next/link';
+
 export default function Home() {
+  return (
     <div>
       <h1>Home</h1>
       <p>欢迎来到我们的网站！</p>
+      <Link href="/about">关于我们</Link>
     </div>
-  )
+  );
 }
+```
 
 在这段代码中，我们从 `next/link` 导入了 `Link` 组件，并使用它链接到 `About` 页面。`href` 属性用于指定链接的目标路由。
 
-
 ### 理解渲染过程
-
 
 1. **服务器接收请求**：当你导航到 Next.js 应用中的某个路由时，服务器会接收到该路由的请求。
 2. **服务器获取页面组件**：Next.js 随后从 `pages` 目录获取该路由的 React 组件。
+3. **服务器渲染 HTML**：服务器将 React 组件渲染为 HTML。
 4. **服务器发送 HTML 响应**：HTML 结果被发送到客户端，并带有用于水合（hydration）的极简 JavaScript 代码。
 5. **页面变为交互式**：JavaScript 代码在客户端运行，将 HTML **水合**为完全可交互的 React 应用。
 
-
 ### 总结
-
 
 ### 创建布局组件
 
-
 让我们创建一个布局组件，渲染一个带有指向 `Home` 和 `About` 页面链接的导航栏：
 
+```javascript
 // components/Layout.js
-import Link from ‘next/link’
+import Link from 'next/link';
+
 export default function Layout({ children }) {
+  return (
     <div>
       <nav>
-        <Link href=”/">首页</Link>
+        <Link href="/">首页</Link>
+        <Link href="/about">关于</Link>
       </nav>
       {children}
     </div>
+  );
 }
 ```
-
 
 现在，你可以在页面中使用此 `Layout` 组件：
 
+```javascript
 // pages/index.js
-import Layout from ‘../components/Layout’
+import Layout from '../components/Layout';
+
 export default function Home() {
+  return (
     <Layout>
       <h1>首页</h1>
       <p>欢迎来到我们的网站！</p>
-  )
-}
-
-import Layout from ‘../components/Layout’
-export default function About() {
-  return (
-      <h1>关于我们</h1>
-      <p>我们是一个专注于使用 Next.js 构建 Web 应用的开发者团队。</p>
     </Layout>
+  );
 }
 ```
 
+```javascript
+// pages/about.js
+import Layout from '../components/Layout';
+
+export default function About() {
+  return (
+    <Layout>
+      <h1>关于我们</h1>
+      <p>我们是一个专注于使用 Next.js 构建 Web 应用的开发者团队。</p>
+    </Layout>
+  );
+}
+```
 
 在下一节中，我们将查看如何使用 CSS Modules 在 Next.js 中进行样式设置。
 
-
 样式是任何 Web 应用的重要组成部分。在 Next.js 中，CSS Modules 提供了一种通过局部作用域样式应用的强大方法。
-
 
 CSS Modules 是类名默认局部作用域的 CSS 文件。CSS Modules 的核心思想是确保样式不会在组件之间泄漏。
 
-
 要创建一个 CSS Module，你需要创建一个 `.module.css` 文件。在你的项目目录下创建一个名为 `About.module.css` 文件：
 
+```css
 /* About.module.css */
 .container {
   margin: 20px;
   border: 1px solid #ddd;
 }
 
-  color: #007f3;
+.title {
+  color: #0070f3;
   font-size: 2em;
   margin-bottom: 10px;
+}
 
 .content {
   font-size: 1.2em;
 }
 ```
 
-
 ### 如何使用 CSS module
-
 
 ```javascript
 // pages/about.js
-import Layout from ‘../components/Layout’
+import styles from '../styles/About.module.css';
+import Layout from '../components/Layout';
+
 export default function About() {
   return (
+    <Layout>
       <div className={styles.container}>
         <h1 className={styles.title}>关于我们</h1>
         <p className={styles.content}>我们是一个专注于使用 Next.js 构建 Web 应用的开发者团队。</p>
+      </div>
     </Layout>
-  )
+  );
 }
+```
 
 在这个文件中，我们导入了之前创建的 CSS Module 并在组件中使用这些类。样式仅适用于此组件，其他组件使用了相同的类名。
 
-
 CSS Modules 允许组合样式，这意味着你可以在当前模块中使用其他 CSS Modules 的样式。它还支持全局样式，全局样式适用于整个应用程序。
-
 
 ```css
 /* Global.module.css */
-  color: #007f3;
+.globalTitle {
+  color: #0070f3;
 }
 
-@import ‘./Global.module.css’;
+@import './Global.module.css';
+
 .container {
-  composes: title from ‘./Global.module.css’;
+  composes: globalTitle from './Global.module.css';
 }
 ```
-
-
-
-
 
 在本章中，我们介绍了 Next.js，这是一个增强了 React 能力的强大框架，并探索了它的核心特性和优势。我们涵盖了新 Next.js 项目的安装与设置，理解了项目结构，并深入研究了页面（pages）的作用。我们还演示了创建和渲染基础页面，并学习了如何使用 CSS Modules 实现 CSS 样式。有了这些基础知识，你已经准备好开始构建自己的 Next.js 应用程序，并进一步探索这一强大框架的高级特性了。
 
-
 ## 单选题
 
+1. Next.js 是什么？
     1. 一个用于构建界面的 JavaScript 库
     2. 一个用于网页样式的 CSS 框架
     3. 一个功能全后端框架
+    4. 一个用于构建 Web 应用的 React 框架
 
 2. 使用什么命令创建新的 Next.js 应用程序？
     1. `npm create-next-app`
-    3. `npx create-next-app`
-    4. `npx start-next-app`
+    2. `npx create-next-app`
+    3. `npx start-next-app`
+    4. `npm start-next-app`
 
+3. Next.js 中的页面对应什么文件？
     1. `pages` 目录下的 `.js` 或 `.jsx` 文件
     2. `styles` 目录下的 `.css` 文件
     3. `markdown` 目录下的 `.md` 文件
+    4. `public` 目录下的静态文件
 
 4. Next.js 如何处理路由？
     1. 通过在 `routes.js` 文件中手动定义路由
+    2. 基于 `pages` 目录中的文件系统自动路由
     3. 使用 Express.js 路由系统
     4. Next.js 不处理路由
 
+5. 在 Next.js 中如何在页面之间创建链接？
     1. 使用 `<a>` HTML 元素
     2. 使用来自 `next/navigate` 包的 `navigate` 函数
     3. 使用来自 `next/link` 包的 `Link` 组件
+    4. 使用 `window.location.href`
 
 6. 在 Next.js 应用程序中请求页面时会发生什么？
     1. 浏览器下载整个应用程序
+    2. 服务器渲染 HTML 并发送到客户端进行水合
     3. 服务器发送请求页面的 JavaScript 代码
     4. 浏览器从头开始渲染页面
 
+7. 什么是 CSS Modules？
     1. 一个 CSS 文件，其中所有类名和动画名称默认都是全局作用域的
     2. 一个 CSS 文件，其中所有类名和动画名称默认都是局部作用域的
     3. 一个 JavaScript 文件，其中所有样式都定义为 JavaScript 对象
+    4. 一个 Sass 文件，编译后生成全局 CSS
 
 8. 如何在 Next.js 组件中应用 CSS Module 中的类？
     1. 使用 `className` 属性和类名
+    2. 使用 `style` 属性和类名
     3. 使用 `className` 属性并引用导入样式对象中的类
     4. 使用 `style` 属性并引用导入样式对象中的类
 
+9. 布局组件在 Next.js 中的主要用途是什么？
     1. 定义页面的结构
     2. 在多个页面之间共享通用组件
     3. 为页面设置样式
+    4. 处理数据获取
 
-10. 下列哪项**不是 Next.js 的特性？
+10. 下列哪项**不是 Next.js 的特性**？
     1. 自动路由
+    2. 服务端渲染 (SSR)
     3. 客户端渲染
     4. 将 JavaScript 代码自动翻译为 TypeScript
 
+## 答案
 
 1. D
-2. C
+2. B
+3. A
 4. B
 5. C
 6. B
+7. B
 8. C
 9. B
 10. D
+
 # 第 4 章
 
 # Next.js 13
+
 ## 导言
 
-在本章中，我们将深入研究 Next.js 的最新版本 v13，该版本在 Next.js Conf 2022 上发布。Next.js 13 代表了 React 框架世界的重大演进，引入了重新定义开发者构建 Web 应用程序方式的新颖概念和工具。它旨在简化开发流程，提供了丰富的功能，使得创建可扩展、高性能且符合 SEO 的 Web 应用程序变得更加简单。随着服务器组件（Server Components）和 TurboPack 等特性的引入，Next.js 13 处于现代 Web 开发的前沿，推向了可能的边界。关键变化之一是引入了 `app` ，这是从传统的 `pages` 结构的根本性转变。Next.js 13 不仅仅是更新——它是一次量子飞跃。
+在本章中，我们将深入研究 Next.js 的最新版本 v13，该版本在 Next.js Conf 2022 上发布。Next.js 13 代表了 React 框架世界的重大演进，引入了重新定义开发者构建 Web 应用程序方式的新颖概念和工具。它旨在简化开发流程，提供了丰富的功能，使得创建可扩展、高性能且符合 SEO 的 Web 应用程序变得更加简单。随着服务器组件（Server Components）和 TurboPack 等特性的引入，Next.js 13 处于现代 Web 开发的前沿，推向了可能的边界。关键变化之一是引入了 `app` 目录，这是从传统的 `pages` 结构的根本性转变。Next.js 13 不仅仅是更新——它是一次量子飞跃。
+
 ## 结构
 
 在本章中，将涵盖以下主题：
-* App Router
-* 客户端组件和服务器组件
-* 路由
-* 数据获取
+
+- App Router
+- 客户端组件和服务器组件
+- 路由
+- 数据获取
 
 ## 设置 Next.js 应用程序
+
 要下载最新版本的 Next.js（截至 2023 年 5 月为 13.4.3），请先在你的系统中安装 Node.js，然后输入以下命令：
 
 ```bash
+npx create-next-app@latest
 ```
 
 你将看到以下提示：
-* 是否要在项目中使用 TypeScript？Y/N
-* 是否要在项目中使用 ESLint？Y/N
-* 是否要在项目中使用 Tailwind CSS？Y/N
-* 想要配置什么导入别名？`@/*`
+
+- 是否要在项目中使用 TypeScript？Y/N
+- 是否要在项目中使用 ESLint？Y/N
+- 是否要在项目中使用 Tailwind CSS？Y/N
+- 想要配置什么导入别名？`@/*`
 
 提示完成后，`create-next-app` 将创建一个项目命名的文件夹并安装所需的依赖。如果你打开 `package.json` 文件，将看到以下脚本：
+
 ```json
 {
   "scripts": {
+    "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
+  }
 }
 ```
 
-* `dev`: 运行 `next dev` 以开发模式启动 Next.js。
-* `build`: 运行 `next build` 构建生产应用程序。
-* `start`: 运行 `next start` 启动 Next.js 服务器。
+- `dev`: 运行 `next dev` 以开发模式启动 Next.js。
+- `build`: 运行 `next build` 构建生产应用程序。
+- `start`: 运行 `next start` 启动 Next.js 服务器。
 
 打开 `app` 文件夹中的 **layout.tsx** 文件，将看到以下内容：
 
-import './globals.css'
-import { Inter } from 'next/font/google'
-
+```tsx
+import './globals.css';
+import { Inter } from 'next/font/google';
 
 export const metadata = {
   title: 'Create Next App',
-}
+};
 
 export default function RootLayout({
+  children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
+  return (
     <html lang="en">
       <body className={inter.className}>{children}</body>
     </html>
+  );
 }
 ```
-
 
 ```tsx
 export default function Page() {
+  return <h1>Hello, Next.js 13!</h1>;
 }
 ```
 
-
 ![](img/image1_1.jpg)
 
-
-
-
-
-我们已经在我们的计算机上成功搭建了一个 Next.js 13 。
-
+我们已经在我们的计算机上成功搭建了一个 Next.js 13 应用。
 
 Next.js 13 引入了基于 React Server Components（服务器组件）的新 App Router 结构，它支持嵌套路由、共享布局、错误处理和加载状态。App Router 在一个名为 `app` 的新文件夹中工作，它可以与 `pages` 目录并存。这有助于渐进地采用新的 App Router，并允许开发者按照自己的节奏学习新概念。在本章中，我们将重点关注随 `v13` 引入的新功能。
 
-
 在 App Router 中，文件夹用于定义路由。路由是由嵌套文件夹组成的单个路径，它们遵循从顶层根文件夹到包含 `page.js` 文件的最后一个叶子文件夹的层级结构。`page.js` 用于定义为特定路由显示的 UI。例如，如果我们在浏览器中访问 Next.js 13 应用程序的链接 [`mathewdony.com/dashboard`](https://mathewdony.com/dashboard)，应用程序将渲染位于 `app` 文件夹下 `dashboard` 文件夹中 `page.tsx` 文件中的 UI。
 
-
-```
+```text
 my-app
-│  ├─ dashboard
-│  │  ├─ page.tsx
+│  ├─ app
+│  │  ├─ dashboard
+│  │  │  ├─ page.tsx
 ```
+
 ### 文件约定
 
 Next.js 提供了一系列特殊文件，用于在嵌套路由创建具有特定行为的 UI。让我们来看看主要的几个：
+
 - `page.js`: 用于渲染路由的 UI 并使路径对用户公开。
 - `layout.js`: 用于为片段及其子级创建共享 UI。布局会封装一个页面或子片段，并可用于渲染跨多个路由共享的 UI，例如导航菜单或页眉组件。
 - `loading.js`: 用于为片段及其子级创建加载 UI。`loading.js` 在它们加载时显示加载 UI，其工作原理是将页面或子片段封装在 React Suspense Boundary（悬挂边界）中。
 
 ## 客户端组件与服务器组件
 
-
 客户端组件是从客户端（浏览器）获取并在客户端上渲染的，而服务器组件是从服务器上获取并在服务器上渲染的。
-
 
 在这种情况下，服务器组件非常有用。浏览器只需要下载客户端组件的 JavaScript 文件，而组件被定义为服务器组件是因为服务器构建了该组件并返回了服务器组件的渲染后的 HTML。这可以加速浏览器渲染并增强用户体验。
 
+在 Next.js 13 新引入的 `app` 目录中，所有组件默认都是服务器组件。这意味着只要你不指定该组件应在客户端渲染，否则所有组件和页面都将在服务器上渲染。以下是服务器组件在 `Next.js 13` 中看起来的样子：
 
-在 Next.js 13 新引入的 `app` 目录中，所有组件默认都是服务器组件。这意味着只要你指定该组件应在客户端渲染，否则所有组件和页面都将在服务器上渲染。以下是服务器组件在 `Next.js 13` 中看起来的样子：
-
+```javascript
 export default function Page() {
-return <h1>Hello, Next.js 13!</h1>;
+  return <h1>Hello, Next.js 13!</h1>;
 }
+```
 
 你可以从前面的代码中看到它只是一个普通的 React 组件，但由于 `Next.js 13` 中所有组件默认都是服务器组件，它会自动变成一个服务器组件。
 
-
 如果我们需要在应用中添加一个计数器，那么我们可以如下所示在 React 组件中导入 `useState`：
 
+```javascript
 import React, { useState } from "react";
+
 export default function Page() {
-const [count, setCount] = useState(0);
+  const [count, setCount] = useState(0);
+  return <button onClick={() => setCount(count + 1)}>Count: {count}</button>;
 }
 ```
-
 
 ![](img/4.2.jpg)
 
-
 要执行前面的代码，我们需要将服务器组件转换为客户端组件。可以通过在组件文件顶部添加 `use client` 指令来实现，如下：
 
+```javascript
 "use client";
+
 import React, { useState } from "react";
+
 export default function Page() {
-return <h1>Current Count: {count}</h1>;
+  const [count, setCount] = useState(0);
+  return (
+    <div>
+      <h1>Current Count: {count}</h1>
+      <button onClick={() => setCount(count + 1)}>Increment</button>
+    </div>
+  );
 }
 ```
+
 这解决了错误，应用程序如下所示正常运行：
 
 ![](img/image2_1.jpg)
 **图 4.3：** 错误后正常运行
 
 ## 路由
+
 Next.js 使用基于文件系统的路由器，每个文件夹定义一个路由。每个文件夹代表一个映射到 URL 段的路由，嵌套文件夹创建嵌套路由。
 
-# 动态路由
+### 动态路由
+
 在开发 Web 应用程序时，某些情况下开发者或用户无法预知段名称，并希望根据动态数据创建路由。在这种情况下，我们可以使用动态段（Dynamic Segment）。
 
 动态段可以通过将文件夹名称在方括号中创建。
+
 例如，如果你想渲染从 URL 段获取的动态数据，例如 `app/blog/[slug]/page.js`，其中 `[slug]` 是博客文章的动态段，你可以这样写 `page.js`：
 
-```
-return <div>My Post with ID {params.slug}</div>;
+```javascript
+export default function Page({ params }) {
+  return <div>My Post with ID {params.slug}</div>;
 }
 ```
+
 如果我们访问 URL `app/blog/1234`，我们将在 `params` 属性中获得 `1234`，正如示例所示。
 
 ### 错误处理
+
 `error.js` 文件约定允许开发者处理嵌套路由中的运行时错误。它可以用于将路由及其嵌套子级封装在 React Error Boundary 中。这允许开发者创建针对特定片段的错误 UI。`error.js` 文件约定的一个主要优势是允许错误隔离，而不影响应用的其他部分。通过在路由段中创建 `error.js` 文件并导出 React 组件，可以轻松添加错误 UI。
 
 ## 中间件
+
 我们可以在请求完成之前使用中间件执行代码。可以根据传入的请求通过重写、重定向、更改请求或响应标头来修改响应。
 
 # 渲染
+
 在 Next.js 中，路由可以是静态渲染或动态渲染的。在静态路由中，组件在构建时在服务器上进行渲染。这些工作会被缓存并在随后的请求中重用，而在动态路由中，组件在请求时在服务器上进行渲染。
 
 ### 静态渲染
 
-
-
 静态渲染是 Next.js 应用的默认渲染模式，它能够提高性能，因为所有的渲染工作都是提前完成的，并且可以通过地理位置更接近用户的内容分发网络（CDN）提供。
 
-我们也可以通过在布局（layout）或页面中使用动态函数或动态数据获取来选择动态渲染，这将导致 Next.js 在请求时 动态地渲染整个路由。
+我们也可以通过在布局（layout）或页面中使用动态函数或动态数据获取来选择动态渲染，这将导致 Next.js 在请求时动态地渲染整个路由。
+
 ## 动态渲染
 
-如果在静态渲染期间检测到动态函数或无缓存模式下的 `fetch()` 请求，Next.js 将在请求时切换为动态渲染整个路由。在动态渲染期间，任何缓存的数据请求仍然可以重用。动态数据获取是指其 `cache` 选项设置为‘no-store’或将 `revalidate` 设置为 0 的 `fetch` 请求。我们将在下一节中探索更多数据获取模式。
+如果在静态渲染期间检测到动态函数或无缓存模式下的 `fetch()` 请求，Next.js 将在请求时切换为动态渲染整个路由。在动态渲染期间，任何缓存的数据请求仍然可以重用。动态数据获取是指其 `cache` 选项设置为 `no-store` 或将 `revalidate` 设置为 0 的 `fetch` 请求。我们将在下一节中探索更多数据获取模式。
+
 # 数据获取
 
 React 和 Next.js 13 引入了在应用程序中获取和管理数据的新方法。新的数据获取系统工作在 app 目录中，并基于 `fetch()` Web API 构建。
+
 `fetch()` 是一个用于获取远程资源的 Web API，返回一个 promise。React 扩展了 `fetch` 以提供自动请求去重，而 Next.js 扩展了 `fetch` 选项对象，允许每个请求设置自己的缓存和重新验证。
 
 ### Server Components 中的 async 和 await
-以下是在 Server Components 中使用 `async` 和 `await` 获取数据的代码示例代码：
+
+以下是在 Server Components 中使用 `async` 和 `await` 获取数据的代码示例：
 
 ```javascript
+async function getData() {
   const res = await fetch('https://api.example.com/…');
+
   if (!res.ok) {
     // 这将激活最近的 error.js Error Boundary
+    throw new Error('Failed to fetch data');
   }
+
   return res.json();
 }
+
 export default async function Page() {
   const data = await getData();
   return <p>{data}</p>;
+}
 ```
 
 ### 静态数据获取
-默认情况下，`fetch` 将自动对数据进行无限期的 `fetch` 和缓存：
+
+默认情况下，`fetch` 将自动对数据进行无限期的缓存：
 
 ```javascript
+// 静态获取，数据缓存无限期
+async function getData() {
+  const res = await fetch('https://api.example.com/data');
+  return res.json();
+}
 ```
 
 ## 动态数据获取
+
 为了在每次 fetch 请求时获取最新数据，请使用缓存选项：`no-store`：
 
 ```javascript
+// 动态获取，每次请求都获取新数据
+async function getData() {
+  const res = await fetch('https://api.example.com/data', {
+    cache: 'no-store',
+  });
+  return res.json();
+}
 ```
 
 ## 结论
+
 在本章中，我们学习了 Next.js 13 这一最新的 Web 框架版本，并探索了它的新关键特性和优势。我们看到了它是如何采用 app router 的，使得开发者无需担心 Next.js 应用的渲染和缓存，因为这些情况都由框架自动处理。有了所有这些新功能，Next.js 13 已经成为 2023 年构建 Web 应用程序的明显选择。
 
 在接下来的章节——*优化 Next.js 应用*中，我们将学习可用于优化 Next.js 应用的不同策略，从而提高性能并提供更好的开发者体验。Next.js 提供了内置组件，如 `<Image />` 和 `<Link />`，为开发者提供了许多开箱即用的功能来优化他们的 Web 应用程序。
+
 ## 单选题
 
 1. 在本地启动 Next.js 开发服务器的命令是哪个？
+    1. `next dev`
     2. `next build`
     3. `next start`
     4. `next lint`
+
 2. Next.js 13 中的主目录是哪个？
     1. layout 文件夹
     2. pages 目录
+    3. app 目录
     4. public 文件夹
 
 3. 你将嵌套文件夹的单一路径称为什么？
+    1. Route（路由）
     2. Page（页面）
     3. App
     4. Folder（文件夹）
+
 4. 用于渲染路由 UI 的文件是？
     1. error.js
     2. loading.js
+    3. layout.js
     4. page.js
 
 5. Next.js 13 中组件的默认类型是什么？
+    1. Client Component
     2. Server Component
     3. App Component
     4. Router Component
+
 6. 将 Server Component 转换为 Client Component 的指令是什么？
     1. `use client`
     2. `use server`
-    4. set client
+    3. `use component`
+    4. `set client`
 
 7. 哪个文件提供了 Next.js 13 中的 React Error Boundary？
-    2. fault.js
-    3. error.js
-    4. error-boundary.js
+    1. fault.js
+    2. error.js
+    3. error-boundary.js
+    4. boundary.js
+
 8. Next.js 13 中 fetch API 的默认行为是什么？
-1. 强制缓存
+    1. 强制缓存
     2. 不缓存
     3. 增量缓存
     4. 周期缓存
@@ -2209,7 +2597,7 @@ export default async function Page() {
 4. D
 5. B
 6. A
-7. C
+7. B
 8. A
 9. C
 10. B
@@ -2220,32 +2608,24 @@ export default async function Page() {
 
 ## 引言
 
-作为一个精练的开发者，你知道 Next.js 应用需要优化。静态渲染是 Next.js 应用的默认渲染模式，它能够提高性能，因为所有的渲染工作都是提前完成的，并且可以通过地理位置更接近用户的内容分发网络（CDN）提供。
-
-我们也可以通过在布局（layout）或页面中使用动态函数或动态数据获取来选择动态渲染，这将导致 Next.js 在请求时 动态地渲染整个路由。
-
-动态渲染
-
-如果在静态渲染期间检测到动态函数或无缓存模式下的 `fetch()` 请求，Next.js 将在请求时切换为动态渲染整个路由。在动态渲染期间，任何缓存的数据请求仍然可以重用。动态数据获取是指其 `cache` 选项设置为‘no-store’或将 `revalidate` 设置为 0 的 `fetch` 请求。我们将在下一节中探索更多数据获取模式。
-
-在本章中，我们将探索 Next.js 的精彩世界，介绍它的许多特性，并讨论为什么优化你的 Next.js 应用如此重要。幸运的是，Next.js 处理了繁重的工作，让你自由创建可扩展、高性能的应用程序。
+作为一个精练的开发者，你知道 Next.js 应用需要优化。在本章中，我们将探索 Next.js 的精彩世界，介绍它的许多特性，并讨论为什么优化你的 Next.js 应用如此重要。幸运的是，Next.js 处理了繁重的工作，让你自由创建可扩展、高性能的应用程序。
 
 ## 结构
 
 在本章中，我们将涵盖以下主题：
 
-*   优化 Next.js 应用的重要性和好处
-*   使用 Head 组件向页面添加元数据
-*   在 Next.js 中实现静态文件服务
-*   理解使用 Next.js 图片组件进行优化
-*   理解 Next.js 架构及其工作原理
-*   为最佳性能配置 Next.js
-*   实现服务端渲染 (SSR) 和预渲染
-*   代码分割和动态导入
-*   缓存和改进数据获取
-*   分析和减少包体积
-*   部署策略和最佳实践
-*   监控和优化性能
+- 优化 Next.js 应用的重要性和好处
+- 使用 Head 组件向页面添加元数据
+- 在 Next.js 中实现静态文件服务
+- 理解使用 Next.js 图片组件进行优化
+- 理解 Next.js 架构及其工作原理
+- 为最佳性能配置 Next.js
+- 实现服务端渲染 (SSR) 和预渲染
+- 代码分割和动态导入
+- 缓存和改进数据获取
+- 分析和减少包体积
+- 部署策略和最佳实践
+- 监控和优化性能
 
 ## 优化 Next.js 应用的重要性和好处
 
@@ -2253,27 +2633,26 @@ export default async function Page() {
 
 优化 Next.js 应用有许多好处，包括：
 
-*   **提高性能**：优化 Next.js 应用可以帮助提高应用程序性能，获得更快的加载速度和更好的用户体验。
-*   **减少服务器负载**：优化 Next.js 应用可以帮助减少服务器负载，为开发者节省成本。
-*   **面向未来**：优化 Next.js 应用可以帮助应用程序面向未来，确保其随时间推移的可扩展性和可维护性。
-*   **提高开发者效率**：优化 Next.js 应用可以帮助提高开发者效率，因为它可以帮助更快地识别和解决性能问题。
+- **提高性能**：优化 Next.js 应用可以帮助提高应用程序性能，获得更快的加载速度和更好的用户体验。
+- **减少服务器负载**：优化 Next.js 应用可以帮助减少服务器负载，为开发者节省成本。
+- **面向未来**：优化 Next.js 应用可以帮助应用程序面向未来，确保其随时间推移的可扩展性和可维护性。
+- **提高开发者效率**：优化 Next.js 应用可以帮助提高开发者效率，因为它可以帮助更快地识别和解决性能问题。
 
-
-
+## 使用 Head 组件向页面添加元数据
 
 Next.js 中的 `Head` 组件允许你为单个页面定义元数据。元数据包括标题（title）、描述（description）以及各种标签，这些元素可以增强搜索引擎优化（SEO），并在社交媒体平台分享页面时改进显示效果。通过有效利用 `Head` 组件，你可以确保你的网页在不同平台上都有良好的展示效果，并获得更好的可见性。要使用 `Head` 组件，你需要从 `next/head` 模块导入它。
 
 让我们来看一个示例，我们想要为特定页面设置标题和描述：
 
 ```javascript
-import Head from ‘next/head’;
+import Head from 'next/head';
 
 function HomePage() {
   return (
     <div>
       <Head>
-        <title> Feature Books - NextCommercePro</title>
-        <meta name=”description” content=”Feature books in our collection” />
+        <title>Feature Books - NextCommercePro</title>
+        <meta name="description" content="Feature books in our collection" />
       </Head>
       {/* Rest of the page content */}
     </div>
@@ -2286,7 +2665,6 @@ export default HomePage;
 *图 5.1* 显示了带有元数据和标题的默认首页：
 
 ![](img/5.1.jpg)
-
 **图 5.1：** 默认首页
 
 在代码段中，我们从 `next/head` 模块导入了 `Head` 组件。在 `HomePage` 组件内部，我们将所需的元数据元素封装在 `Head` 组件中。在这种情况下，我们将标题设为 `My Next.js App - Home`，并将元数据描述设为 `Welcome to my Next.js application`！
@@ -2294,17 +2672,17 @@ export default HomePage;
 `Head` 组件还允许你添加各种其他元数据标签。例如，你可以包含 Open Graph (OG) 标签以获得更好的社交媒体共享效果：
 
 ```javascript
-import Head from ‘next/head’;
+import Head from 'next/head';
 
 function BookPage({ book }) {
   return (
     <div>
       <Head>
-        <title>{ book.title}</title>
-        <meta name=”description” content={ book.excerpt} />
-        <meta property=”og:title” content={ book.title} />
-        <meta property=”og:description” content={ book.excerpt} />
-        <meta property=”og:image” content={ book.thumbnail} />
+        <title>{book.title}</title>
+        <meta name="description" content={book.excerpt} />
+        <meta property="og:title" content={book.title} />
+        <meta property="og:description" content={book.excerpt} />
+        <meta property="og:image" content={book.thumbnail} />
       </Head>
       {/* Rest of the page content */}
     </div>
@@ -2317,14 +2695,13 @@ export default BookPage;
 *图 5.2* 描述了产品详情页：
 
 ![](img/5.2.jpg)
-
 **图 5.2：** 动态 BookPage
 
 在这个示例中，我们将 `post` 对象作为 prop 传递给 `BookPage` 组件。我们使用 `post` 的数据动态设置标题、描述和 Open Graph (OG) 标签。`og:title`、`og:description` 和 `og:image` 标签对于社交媒体平台在页面共享时显示正确的标题、描述和缩略图至关重要。
 
 通过使用 `Head` 组件，你可以轻松地为 Next.js 应用中的每个页面设置元数据，从而改进 SEO 并增强视觉表现。记得包含相关的元数据（如标题、描述和 OG 标签），以确保你的页面针对搜索引擎和社交共享进行了有效的优化。
 
-# 在 Next.js 中实现静态文件服务 (#toc.xhtml_s92a)
+## 在 Next.js 中实现静态文件服务
 
 在 Next.js 中实现静态文件服务时，不同类型的静态文件在 Web 开发中起着至关重要的作用，包括图像、CSS 样式表和 JavaScript 文件。在本节中，我们将探索如何在你的 Next.js 应用中高效地提供静态文件。我们将涵盖各种策略和最佳实践，以确保静态资源具有最佳性能并无缝集成到你的 Next.js 项目中。
 
@@ -2332,19 +2709,19 @@ export default BookPage;
 
 图像是现代 Web 开发不可或缺的一部分。在 Next.js 中，你可以按照以下步骤提供图像：
 
-*   在你的 Next.js 项目的根目录下创建一个名为 `public` 的文件夹。
-*   将你的图像文件（例如 `my-image.jpg`）放在 `public` 文件夹中。
-*   在你的 Next.js 组件中，使用 Next.js 的 `Image` 组件来显示图像。
+- 在你的 Next.js 项目的根目录下创建一个名为 `public` 的文件夹。
+- 将你的图像文件（例如 `my-image.jpg`）放在 `public` 文件夹中。
+- 在你的 Next.js 组件中，使用 Next.js 的 `Image` 组件来显示图像。
 
 这是一个示例：
 
 ```javascript
-import Image from ‘next/image’;
+import Image from 'next/image';
 
 const MyComponent = () => {
   return (
     <div>
-      <Image src=”/my-image.jpg” alt=”My Image” width={500} height={300} />
+      <Image src="/my-image.jpg" alt="My Image" width={500} height={300} />
     </div>
   );
 };
@@ -2356,24 +2733,24 @@ export default MyComponent;
 
 ### 提供 CSS 样式表
 
-在在 Next.js 中实现静态文件服务时，CSS 样式表是公式中不可的一部分。它们允许你对网页进行样式化，使其具有视觉吸引力。在本节中，我们将深入探讨如何在你的 Next.js 应用中高效地提供 CSS 样式表。
+在 Next.js 中实现静态文件服务时，CSS 样式表是公式中不可或缺的一部分。它们允许你对网页进行样式化，使其具有视觉吸引力。在本节中，我们将深入探讨如何在你的 Next.js 应用中高效地提供 CSS 样式表。
 
 首先，假设你有一个名为 `styles.css` 的 CSS 文件，其中包含了你 Next.js 应用的所有样式。以下是如何使用 Next.js 提供此 CSS 文件的示例：
 
-*   在你的 Next.js 项目的根目录下创建一个名为 `public` 的文件夹。该文件夹将存放你所有的静态文件，包括 CSS 样式表。
-*   将 `styles.css` 文件移动到 `public` 文件夹。
-*   在你的 Next.js 组件或布局文件中，在 `head` 部分使用 `link` 标签导入该 CSS 文件。
+- 在你的 Next.js 项目的根目录下创建一个名为 `public` 的文件夹。该文件夹将存放你所有的静态文件，包括 CSS 样式表。
+- 将 `styles.css` 文件移动到 `public` 文件夹。
+- 在你的 Next.js 组件或布局文件中，在 `head` 部分使用 `link` 标签导入该 CSS 文件。
 
 这是一个示例：
 
 ```javascript
-import Head from ‘next/head’;
+import Head from 'next/head';
 
 const MyComponent = () => {
   return (
     <div>
       <Head>
-        <link rel=”stylesheet” href=”styles.css” />
+        <link rel="stylesheet" href="/styles.css" />
       </Head>
       {/* Rest of the page content */}
     </div>
@@ -2383,9 +2760,9 @@ const MyComponent = () => {
 export default MyComponent;
 ```
 
-*   通过 `link` 标签，我们将 `rel` 属性指定为 `stylesheet`，表示这是一个样式表。`href` 属性指向相对于 Next.js 应用根目录的文件位置。在这种情况下，它是 `/styles.css`，因为我们将文件放在了公共文件夹。
+通过 `link` 标签，我们将 `rel` 属性指定为 `stylesheet`，表示这是一个样式表。`href` 属性指向相对于 Next.js 应用根目录的文件位置。在这种情况下，它是 `/styles.css`，因为我们将文件放在了公共文件夹。
 
-通过遵循这些步骤，你的 Next.js 应用将高效地提供 CSS 样式表。styles.css` 中定义的 CSS 规则将应用于相应的组件和元素。
+通过遵循这些步骤，你的 Next.js 应用将高效地提供 CSS 样式表。`styles.css` 中定义的 CSS 规则将应用于相应的组件和元素。
 
 重要的是，Next.js 会自动处理静态文件的缓存和优化。当你更改 CSS 文件时，Next.js 会生成新的文件名，确保客户端获取最新版本而无需手动刷新缓存。
 
@@ -2395,34 +2772,30 @@ export default MyComponent;
 
 在 Next.js 中提供 JavaScript 文件时，你可以遵循简单的流程以确保这些文件高效地交付并集成到应用中。以下是关于如何提供 JavaScript 文件的详细说明：
 
-1.  **创建“public”文件夹**：首先，在你的 Next.js 项目的根目录下创建一个名为 `public` 的文件夹（如果还没有）。该文件夹将存放你所有的静态文件。
-2.  **将 JavaScript 文件放在“public”文件夹中**：将你的 JavaScript 文件移动到 `public` 文件夹。例如，假设你有一个名为 `script.js` 的 JavaScript 文件。将其复制或移动到 `public` 文件夹。文件结构应如*图 5.3*所示：
+1. **创建“public”文件夹**：首先，在你的 Next.js 项目的根目录下创建一个名为 `public` 的文件夹（如果还没有）。该文件夹将存放你所有的静态文件。
+2. **将 JavaScript 文件放在“public”文件夹中**：将你的 JavaScript 文件移动到 `public` 文件夹。例如，假设你有一个名为 `script.js` 的 JavaScript 文件。将其复制或移动到 `public` 文件夹。文件结构应如*图 5.3*所示：
 
-    ![](img/image1111.jpg)
+   ![](img/image1111.jpg)
+   **图 5.3：** 文件夹结构
 
-    **图 5.3：** 文件夹结构
+3. **在 HTML 中引入 JavaScript 文件**：要在 HTML 中引入 JavaScript 文件，你可以使用 `script` 标签。Next.js 会自动将 `public` 文件夹中的任何文件作为静态文件提供，你可以通过相对于 Next.js 应用根目录的相对路径引用它们。在你的 HTML 文件或 Next.js 组件中，包含以下代码段来导入 JavaScript 文件：
 
-3.  **在 HTML 中引入 JavaScript 文件**：要在 HTML 中引入 JavaScript 文件，你可以使用 `script` 标签。Next.js 会自动将 `public` 文件夹中的任何文件作为静态文件提供，你可以通过相对于 Next.js 应用根目录的相对路径引用它们。在你的 HTML 文件或 Next.js 组件中，包含以下代码段来导入 JavaScript 文件：
+   ```html
+   <script src="/script.js"></script>
+   ```
 
-```html
-<script src=”/script.js”></script>
-```
+   在这里，`<script>`标签的 `src` 属性指向 JavaScript 文件相对于你的 Next.js 根目录的路径。在这种情况下，文件名为 `script.js`，并直接位于 `public` 文件夹中。
 
+4. **利用 JavaScript 功能**：一旦 JavaScript 文件包含在你的 HTML 或 Next.js 组件中，你就可以访问并利用它提供的功能。`script.js` 内部 JavaScript 代码可以包含各种函数、事件监听器或你想整合到应用程序中的其他逻辑。
 
+   例如，如果 `script.js` 包含一个名为 `myFunction` 的函数，你可以使用以下语法从你的 HTML 或 Next.js 组件中调用它：
 
-
-在这里，`<script>`标签的 `src` 属性指向 JavaScript 文件相对于你的 Next.js 根目录的路径。在这种情况下，文件名为 `script.js`，并直接位于 `public` 文件夹中。
-
-4. **利用 JavaScript 功能：**一旦 JavaScript 文件包含在你的 HTML 或 Next.js 组件中，你就可以访问并利用它提供的功能。`script.js` 内部 JavaScript 代码可以包含各种函数、事件监听器或你想整合到应用程序中的其他逻辑。
-
-例如，如果 `script.js` 包含一个名为 `myFunction` 的函数，你可以使用以下语法从你的 HTML 或 Next.js 组件中调用它：
-
-```html
-<script src="/script.js"></script>
-<script>
-myFunction(); // 调用 script.js 中定义的函数
-</script>
-```
+   ```html
+   <script src="/script.js"></script>
+   <script>
+     myFunction(); // 调用 script.js 中定义的函数
+   </script>
+   ```
 
 通过遵循这些步骤，Next.js 将将 JavaScript 文件作为静态资源提供，允许其高效地交付到客户端浏览器。然后，你可以根据需要并在应用程序中使用 JavaScript 功能。
 
@@ -2458,12 +2831,11 @@ export default HomePage;
 Next.js Image 组件会根据提供的尺寸自动优化图像。它在构建时生成多个优化后的图像版本，每个版本都针对不同的屏幕尺寸和设备进行了定制。系统根据视口和设备特性向客户端提供相应的图像，从而提高性能并减少带宽消耗 ([图 5.4])。
 
 ![](img/5.4.jpg)
-
 **图 5.4：** 产品列表页或书籍列表页
 
 Next.js Image 组件支持其他属性，你可以使用这些属性进一步优化图像交付：
 
-* **layout:** `layout` 属性决定了图像在页面上的布局方式。它可以设置为 `responsive`（默认值）、`fixed` 或 `intrinsic`。`responsive` 布局会根据容器的尺寸自动调整图像大小，而 `fixed` 和 `intrinsic` 则强制执行特定尺寸。
+- **layout:** `layout` 属性决定了图像在页面上的布局方式。它可以设置为 `responsive`（默认值）、`fixed` 或 `intrinsic`。`responsive` 布局会根据容器的尺寸自动调整图像大小，而 `fixed` 和 `intrinsic` 则强制执行特定尺寸。
 
 ```javascript
 import Image from 'next/image';
@@ -2485,11 +2857,10 @@ function HomePage() {
 
 export default HomePage;
 ```
+
 在前面的示例中，我们将 `layout` 属性设置为 `responsive`。这允许图像根据容器的尺寸动态调整大小，确保响应式布局。
 
-* **objectFit:** `objectFit` 属性决定了图像在容器内应如何缩放和定位。它可以设置为 `fill`（默认值）、`contain`、`cover`、`none` 或 `scale-down`。
-
-在接下来的示例中，我们将 `objectFit` 属性设置为 `cover`。这确保图像在保持宽高比例的同时覆盖整个容器。
+- **objectFit:** `objectFit` 属性决定了图像在容器内应如何缩放和定位。它可以设置为 `fill`（默认值）、`contain`、`cover`、`none` 或 `scale-down`。
 
 ```javascript
 import Image from 'next/image';
@@ -2511,7 +2882,9 @@ function HomePage() {
 export default HomePage;
 ```
 
-* **objectPosition:** `objectPosition` 属性指定了图像在容器内的水平和垂直位置。它接受的值如 `top`、`bottom`、`left`、`right`、`center` 或这些值的组合。
+在接下来的示例中，我们将 `objectFit` 属性设置为 `cover`。这确保图像在保持宽高比例的同时覆盖整个容器。
+
+- **objectPosition:** `objectPosition` 属性指定了图像在容器内的水平和垂直位置。它接受的值如 `top`、`bottom`、`left`、`right`、`center` 或这些值的组合。
 
 ```javascript
 import Image from 'next/image';
@@ -2535,9 +2908,10 @@ function HomePage() {
 
 export default HomePage;
 ```
+
 在此示例中，我们将 `objectPosition` 属性设置为 `top right`。这会将图像置在容器的右上角。
 
-* **loading:** `loading` 属性控制图像的懒加载行为。它可以设置为 `eager`（默认值）以便立即加载，或设置为 `lazy` 以延迟加载直到图像进入视口。
+- **loading:** `loading` 属性控制图像的懒加载行为。它可以设置为 `eager`（默认值）以便立即加载，或设置为 `lazy` 以延迟加载直到图像进入视口。
 
 ```javascript
 import Image from 'next/image';
@@ -2557,9 +2931,10 @@ function HomePage() {
 
 export default HomePage;
 ```
+
 在此示例中，我们将 `loading` 属性设置为 `lazy`，允许在图像进入视口时再加载，通过减少初始页面加载时间来提高性能。
 
-* **priority 属性:** Next.js Image 组件中的 `priority` 属性允许你优先加载图像，为关键内容提供更好的用户体验。通过对某些图像设置更高的优先级，可以确保它们先加载，减少页面上重要视觉元素的感知加载时间。
+- **priority 属性:** Next.js Image 组件中的 `priority` 属性允许你优先加载图像，为关键内容提供更好的用户体验。通过对某些图像设置更高的优先级，可以确保它们先加载，减少页面上重要视觉元素的感知加载时间。
 
 这是一个使用 `priority` 属性的示例：
 
@@ -2581,10 +2956,8 @@ function HomePage() {
 
 export default HomePage;
 ```
+
 在前面的代码段中，我们将图像组件设置了 `priority` 属性为 true。这表明图像在加载时应被赋予更高的优先级。
-
-
-
 
 通过设置 `priority` 属性，Next.js 将优先加载该图片，并在页面加载过程早期对其进行获取。这确保了图片能够尽快可用，通过缩短重要视觉元素的感知加载时间来提升用户体验。
 
@@ -2606,22 +2979,22 @@ Next.js 遵循混合渲染方法，允许你根据应用程序的需求在 SSR �
 
 在服务端渲染中，服务器为每个页面生成 HTML 内容并将其发送客户端。这意味着初始页面加载包含了完全渲染的 HTML，包括从 API 或数据库获取的内容。这种方法具有以下几个优势：
 
-* **改进 SEO**：搜索引擎可以轻松爬取并索引完全渲染的 HTML，从而获得更好的搜索引擎优化。
-* **更快的初始页面加载**：由于服务器将预渲染的 HTML 发送到客户端，用户即使在较慢的连接上也能更快看到内容。
-* **静态内容的更好性能**：静态内容在服务器上生成一次，并可以针对后续请求进行缓存，减少服务器负载。
+- **改进 SEO**：搜索引擎可以轻松爬取并索引完全渲染的 HTML，从而获得更好的搜索引擎优化。
+- **更快的初始页面加载**：由于服务器将预渲染的 HTML 发送到客户端，用户即使在较慢的连接上也能更快看到内容。
+- **静态内容的更好性能**：静态内容在服务器上生成一次，并可以针对后续请求进行缓存，减少服务器负载。
 
-要在 Next.js 中启用 SSR，你需要在 `pages` 目录中创建一个名为“page”的特殊类型文件。每个页面文件都导出一个代表该页面的内容的 `React` 组件。在构建处理过程中，Next.js 会预渲染这些页面并生成相应的 HTML 文件。
+要在 Next.js 中启用 SSR，你需要在 `pages` 目录中创建一个页面文件。每个页面文件都导出一个代表该页面的内容的 `React` 组件。在构建处理过程中，Next.js 会预渲染这些页面并生成相应的 HTML 文件。
 
-# 客户端渲染 (CSR)
+### 客户端渲染 (CSR)
 
 在客户端渲染中，服务器发送的初始 HTML 包含页面的最小骨架，由客户端 JavaScript 接管获取数据并动态渲染内容。这种方法提供了以下益处：
 
-* **交互式用户体验**：通过 CSR，你可以构建高度交互的应用程序，这些程序可以在客户端获取并显示数据，而无需刷新整个页面。
-* **实时更新**：通过异步获取数据，你可以实时更新 UI，而无需刷新整个页面。
+- **交互式用户体验**：通过 CSR，你可以构建高度交互的应用程序，这些程序可以在客户端获取并显示数据，而无需刷新整个页面。
+- **实时更新**：通过异步获取数据，你可以实时更新 UI，而无需刷新整个页面。
 
 Next.js 通过其强大的客户端路由系统支持 CSR。当用户导航到 Next.js 应用程序内部的不同页面时，仅会获取必要的 JavaScript 和数据，并在不重新加载整个页的情况下更新 UI。
 
-# Next.js 架构
+### Next.js 架构
 
 Next.js 使用无服务器架构，允许你将应用程序部署到 `Vercel`、`AWS Lambda` 或 `Netlify` 等无服务器平台。该架构根据传入的流量自动扩展，确保了性能并降低了基础设施成本。
 
@@ -2648,6 +3021,7 @@ export async function getServerSideProps() {
   // 从 API 或数据库获取数据
   const res = await fetch('https://api.example.com/data');
   const data = await res.json();
+
   return {
     props: {
       data,
@@ -2692,15 +3066,11 @@ next start
 
 使用生产构建可以移除不必要的开发特定代码和优化，从而缩短加载时间并提高性能。
 
-## 实现服务端缓存
+### 实现服务端缓存
 
 我们将简要讨论 Next.js 中服务端渲染和预渲染的概念，强调它们的优势以及如何在你的应用程序中实现它们。
 
 服务端缓存可以通过减少服务器负载和提高响应时间，显著提升 Next.js 应用程序的性能。Next.js 通过各种机制提供了对服务端缓存的内置支持：
-
-
-
-
 
 - **使用带有缓存的 getServerSideProps**：Next.js 中的 `getServerSideProps` 函数可以配置为对服务器渲染页面进行特定时间的缓存。通过设置 `revalidate` 属性，你可以控制缓存刷新的频率。这对于不经常变化的数据非常有用。
 - **实现外部缓存**：Next.js 应用可以受益于外部缓存机制，例如 CDN（内容分发网络）缓存或代理缓存。这些机制在更接近用户的边缘位置缓存生成的 HTML 或静态资源，从而获得更快的响应速度。
@@ -2713,7 +3083,7 @@ next start
 以下是在 Next.js 中带缓存使用 `getServerSideProps` 函数的示例：
 
 ```javascript
-import React from ‘react’;
+import React from 'react';
 
 function HomePage({ data }) {
   return (
@@ -2726,9 +3096,11 @@ function HomePage({ data }) {
 
 export async function getServerSideProps() {
   const cacheSeconds = 60; // 缓存 60 秒
+
   // 从 API 或数据库获取数据
-  const res = await fetch(‘https://api.example.com/data’);
+  const res = await fetch('https://api.example.com/data');
   const data = await res.json();
+
   return {
     props: {
       data,
@@ -2736,6 +3108,8 @@ export async function getServerSideProps() {
     revalidate: cacheSeconds,
   };
 }
+
+export default HomePage;
 ```
 
 在前面的代码示例中，我们有一个名为 `HomePage` 的基础 Next.js 页面组件。它接收 `data` 作为 prop 并在页面上渲染。`getServerSideProps` 函数是一个特殊的 Next.js 函数，运行在服务器上并从 API 或数据库获取数据。
@@ -2752,7 +3126,7 @@ export async function getServerSideProps() {
 
 ## 代码分割与动态导入
 
-本节将简要介绍代码分割（code splitting）和动态导入（dynamic imports），以及它们如何帮助减少 Next.js 的初始包大小大小并提高性能。你将理解这些技术如何通过仅加载特定页面或功能所需的代码来增强性能。
+本节将简要介绍代码分割（code splitting）和动态导入（dynamic imports），以及它们如何帮助减少 Next.js 的初始包大小并提高性能。你将理解这些技术如何通过仅加载特定页面或功能所需的代码来增强性能。
 
 代码分割和动态导入是用于将 JavaScript 数据包拆分为更小、更易管理的分块的技术。通过拆分代码并按需加载，你可以减小初始包大小并提高性能，对于较大的应用程序尤为如此。*[第 6 章，理解 Next.js 中的路由]*，将深入探讨这些概念，并提供操作示例来演示它们的实际应用。
 
@@ -2763,17 +3137,19 @@ export async function getServerSideProps() {
 以下是在 Next.js 应用中如何代码分割和动态导入的示例：
 
 ```javascript
-import React, { useState, useEffect } from ‘react’;
+import React, { useState, useEffect } from 'react';
 
 function HomePage() {
   const [data, setData] = useState(null);
+
   useEffect(() => {
-    import(‘./api’).then((module) => {
+    import('./api').then((module) => {
       module.getData().then((response) => {
         setData(response);
       });
     });
   }, []);
+
   return (
     <div>
       <h1>Welcome to Next.js!</h1>
@@ -2802,12 +3178,14 @@ Next.js 提供了可以利用的多种缓存机制：
   使用 SWR 的示例：
 
 ```javascript
-import useSWR from ‘swr’;
+import useSWR from 'swr';
 
 function UserProfile() {
-  const { data, error } = useSWR(‘/api/user’, fetcher);
+  const { data, error } = useSWR('/api/user', fetcher);
+
   if (error) return <div>Error loading user data</div>;
   if (!data) return <div>Loading…</div>;
+
   return (
     <div>
       <h1>Welcome, {data.name}!</h1>
@@ -2824,6 +3202,7 @@ function UserProfile() {
 ```javascript
 export async function getServerSideProps(context) {
   const data = await fetchUserFromAPI();
+
   return {
     props: {
       data,
@@ -2833,28 +3212,28 @@ export async function getServerSideProps(context) {
 }
 ```
 
-
-
-
-
-通过恰当实施缓存策略，你可以最大限地减少频繁获取数据的需求，并提高你的 Next.js 应用的整体性能。
+通过恰当实施缓存策略，你可以最大限度地减少频繁获取数据的需求，并提高你的 Next.js 应用的整体性能。
 
 ## 分析和缩小包大小
 
 我们将简要探索分析和减少 Next.js 应用包大小的技术。本概述将向你介绍可以帮助优化项目包大小以获得更好性能的工具和方法。
 
-你的 Next.js 应用的包大小会影响初始加载时间和性能。分析并缩小包大小对于确保快速、流畅的用户体验至关重要。以下是实现这一目标的一些：
+你的 Next.js 应用的包大小会影响初始加载时间和性能。分析并缩小包大小对于确保快速、流畅的用户体验至关重要。以下是实现这一目标的一些方法：
 
 - **代码分割 (Code splitting):** Next.js 支持自动代码分割，每个页面都会单独打包。这确保了每个页面只加载必要的代码，从而减小包的大小。你也可以像上一个主题介绍的那样，通过动态导入来手动配置代码分割。
 - **树摇 (Tree shaking):** 树摇是在构建过程中从包中移除未用代码的过程。Next.js 利用 `webpack` 等工具，它们会自动为你的应用程序执行树摇。请确保编写模块化代码并使用 ES 模块以优化树摇效果。
 - **代码压缩 (Minification):** 代码压缩是从代码中移除空格和注释等不必要字符的过程。Next.js 在生产构建中默认执行代码压缩，从而产生更小的包大小。
 - **优化依赖项:** 分析并优化应用程序中使用的依赖项。考虑使用更小的替代库或优化现有依赖项的配置以缩小包大小。
-- **部署策略和最佳实践:** 高效地部署 Next.js 应用对于确保其可用性、可扩展性和性能非常重要。以下是一些部署策略和最佳实践：
-    - **无服务器部署 (Serverless deployments):** Next.js 应用非常适合无服务器部署，你可以将应用程序部署到 `Vercel`、`AWS Lambda` 或 `Netlify` 等无服务器平台。无服务器部署提供了自动伸缩、更低的基础成本和更化的部署工作流。
-    - **持续集成与部署 (CI/CD):** 实现 CI/CD 流水线以自动化部署过程。可以使用 `GitHub Actions` 或 `Jenkins` 等工具在每次更改推送到仓库时构建并部署你的 Next.js 应用。
-    - **性能监控:** 使用 `Lighthouse`、`New Relic` 或 `Google Analytics` 等工具监控已部署应用的性能。这有助于识别性能瓶颈并优化你的应用程序以获得更好的用户体验。
-    - **安全性考虑:** 实施最佳安全实践，例如使用 `HTTPS`、安全的 API 集成和适当的访问控制，以保护你的 Next.js 应用及其数据。
-    - **可扩展性和负载均衡:** 配置你的部署环境，通过负载均衡器和自动伸缩机制进行水平扩展。这确保了你的 Next.js 应用能够处理增加的流量而不会性能下降。
+
+## 部署策略和最佳实践
+
+高效地部署 Next.js 应用对于确保其可用性、可扩展性和性能非常重要。以下是一些部署策略和最佳实践：
+
+- **无服务器部署 (Serverless deployments):** Next.js 应用非常适合无服务器部署，你可以将应用程序部署到 `Vercel`、`AWS Lambda` 或 `Netlify` 等无服务器平台。无服务器部署提供了自动伸缩、更低的基础成本和更简化的部署工作流。
+- **持续集成与部署 (CI/CD):** 实现 CI/CD 流水线以自动化部署过程。可以使用 `GitHub Actions` 或 `Jenkins` 等工具在每次更改推送到仓库时构建并部署你的 Next.js 应用。
+- **性能监控:** 使用 `Lighthouse`、`New Relic` 或 `Google Analytics` 等工具监控已部署应用的性能。这有助于识别性能瓶颈并优化你的应用程序以获得更好的用户体验。
+- **安全性考虑:** 实施最佳安全实践，例如使用 `HTTPS`、安全的 API 集成和适当的访问控制，以保护你的 Next.js 应用及其数据。
+- **可扩展性和负载均衡:** 配置你的部署环境，通过负载均衡器和自动伸缩机制进行水平扩展。这确保了你的 Next.js 应用能够处理增加的流量而不会性能下降。
 
 ## 部署策略和最佳实践
 
@@ -2863,7 +3242,7 @@ export async function getServerSideProps(context) {
 高效地部署 Next.js 应用对于确保其可用性、可扩展性和性能至关重要。以下你可以遵循的一些部署策略和最佳实践：
 
 - **无服务器部署:**
-  Next.js 应用非常适合无服务器部署，你可以将应用程序部署到 `Vercel`、`AWS Lambda` 或 `Netlify` 等无服务器平台。无服务器部署提供了自动伸缩、更低的基础成本和更化的部署工作流。
+  Next.js 应用非常适合无服务器部署，你可以将应用程序部署到 `Vercel`、`AWS Lambda` 或 `Netlify` 等无服务器平台。无服务器部署提供了自动伸缩、更低的基础成本和更简化的部署工作流。
 
   使用 Vercel 的示例：
 
@@ -2877,42 +3256,48 @@ export async function getServerSideProps(context) {
   vercel deploy
   ```
 
-  - **持续集成与部署 (CI/CD)**:
-    实现 CI/CD 流水线以自动化部署过程。可以使用 `GitHub Actions` 或 `Jenkins` 等工具在每次更改推送到仓库时构建并部署你的 Next.js 应用。
+- **持续集成与部署 (CI/CD):**
+  实现 CI/CD 流水线以自动化部署过程。可以使用 `GitHub Actions` 或 `Jenkins` 等工具在每次更改推送到仓库时构建并部署你的 Next.js 应用。
 
-  - **使用 GitHub actions 的示例:**
-    在仓库中创建一个工作流文件（例如 `.github/workflows/main.yml`）：
+  使用 GitHub actions 的示例:
+  在仓库中创建一个工作流文件（例如 `.github/workflows/main.yml`）：
 
-    ```yaml
-    name: Deploy Next.js App
-    on:
-      push:
-        branches:
-          - main
-    jobs:
-        deploy:
-          runs-on: ubuntu-latest
-          steps:
-            - name: Checkout code
-              uses: actions/checkout@v2
-            - name: Install dependencies
-              run: npm install
-            - name: Build and deploy
-              uses: vercel/actions@v21
-            with:
-              args: "deploy"
-    ```
+  ```yaml
+  name: Deploy Next.js App
+
+  on:
+    push:
+      branches:
+        - main
+
+  jobs:
+    deploy:
+      runs-on: ubuntu-latest
+      steps:
+        - name: Checkout code
+          uses: actions/checkout@v2
+        - name: Install dependencies
+          run: npm install
+        - name: Build and deploy
+          uses: vercel/actions@v21
+          with:
+            args: "deploy"
+  ```
+
+
+
+# 部署策略与最佳实践
 
 - **性能监控:** 使用 `Lighthouse`、`New Relic` 或 `Google Analytics` 等工具监控已部署应用的性能。这有助于识别性能瓶颈并优化你的应用程序以获得更好的用户体验。
 - **安全性考虑:** 实施最佳安全实践，如使用 `HTTPS`、安全 API 集成并实施适当的访问控制，以保护你的 Next.js 应用及其数据。
 - **可扩展性和负载均衡:** 配置你的部署环境，通过负载均衡器和自动伸缩机制进行水平扩展。这确保了你的 Next.js 应用能够处理增加的流量而不会性能下降。
 
-  使用 AWS Elastic Load Balancer 进行负载均衡的示例：
-  1. 在 `AWS` 中创建一个弹性负载均衡器。
-  2. 配置负载均衡器将流量分到你的 Next.js 应用的多个实例上。
-  3. 设置自动伸缩，根据流量自动添加或移除实例。
+使用 AWS Elastic Load Balancer 进行负载均衡的示例：
+1. 在 `AWS` 中创建一个弹性负载均衡器。
+2. 配置负载均衡器将流量分到你的 Next.js 应用的多个实例上。
+3. 设置自动伸缩，根据流量自动添加或移除实例。
 
-  通过遵循这些部署策略和最佳实践，你可以确保你的 Next.js 应用被高效部署、性能最佳且安全。这些实践实现了无缝的可扩展性，并为你的应用程序提供了流畅的用户体验。
+通过遵循这些部署策略和最佳实践，你可以确保你的 Next.js 应用被高效部署、性能最佳且安全。这些实践实现了无缝的可扩展性，并为你的应用程序提供了流畅的用户体验。
 
 ## 监控性能
 
@@ -2922,25 +3307,24 @@ export async function getServerSideProps(context) {
 - **真实用户监控 (RUM):** RUM 工具如 `Google Analytics` 或 `New Relic` 捕捉性能指标和用户交互。它们提供了应用程序在真实环境中运行情况的见解，并帮助你识别真实用户遇到的性能问题。
 
 使用 Lighthouse 的示例：
-  ```bash
-  # 安装 Lighthouse CLI
-  npm install -g lighthouse
 
-  # 对你的 Next.js 应用运行 Lighthouse 审计
-  lighthouse http://your-nextjs-app-url
-  ```
+```bash
+# 安装 Lighthouse CLI
+npm install -g lighthouse
 
-- **性能优化**
-  性能优化的一些特性如下：
-    - **代码分割:** 如前所述，Next.js 支持自动代码分割，允许你只加载每个页面必要的代码。通过分析应用程序的依赖项并优化代码分割，你可以缩小包大小并提高初始加载时间。
+# 对你的 Next.js 应用运行 Lighthouse 审计
+lighthouse http://your-nextjs-app-url
+```
 
+### 性能优化
 
+性能优化的一些特性如下：
 
-
+- **代码分割:** 如前所述，Next.js 支持自动代码分割，允许你只加载每个页面必要的代码。通过分析应用程序的依赖项并优化代码分割，你可以缩小包大小并提高初始加载时间。
 
 ## 优化策略
 
-- **图像优化**：Next.js 提供了 `Image` 组件，它可以高效地优化和交付图像。通过利用 `Image` 组件，你可以减小图像文件大小、实现图像懒加载，并根据设备的屏幕尺寸提供响应式图像（等等，纠正：根据设备的屏幕尺寸提供响应式图像）。
+- **图像优化**：Next.js 提供了 `Image` 组件，它可以高效地优化和交付图像。通过利用 `Image` 组件，你可以减小图像文件大小、实现图像懒加载，并根据设备的屏幕尺寸提供响应式图像。
 - **服务端缓存**：Next.js 允许使用 `getServerSideProps` 或 `getStaticProps` 等函数对服务端渲染的页面或静态数据进行缓存。通过实施适当的缓存策略，你可以减少服务器负载并提高响应速度。
 - **性能预算**：为你的 Next.js 应用定义性能预算，为包大小、网络请求和页面加载时间等指标指定阈值。定期监控这些指标，确保你的应用程序处于定义的性能阈值之内。
 
@@ -2971,7 +3355,7 @@ function MyComponent() {
 
 此外，我们讨论了部署策略和最佳实践，以及监控和优化性能。通过这些技术，你可以确保你的 Next.js 应用在优化性能和减少加载时间的同时，提供无缝的高质量体验。
 
-你今天就可以开始实施这些优化策略，将你的 Next.js 应用提升到层次！
+你今天就可以开始实施这些优化策略，将你的 Next.js 应用提升到新层次！
 
 在下一章中，我们将深入探讨 Next.js 的基于文件的路由。路由是任何 Web 应用的关键方面，而 Next.js 通过其直观且灵活的基于文件的路由系统使其变得轻而易举。
 
@@ -3015,13 +3399,13 @@ function MyComponent() {
 4. D
 5. B
 
-## 第 6 章
+# 第 6 章
 
-## 理解 Next.js 中的路由
+# 理解 Next.js 中的路由
 
 ## 引言
 
-路由就像 Web 应用的骨干，确保无无缝导航和愉悦的用户体验。在 Next.js 世界中，由于其内置路由器，路由变得轻而易举，它负责处理页面间跳转和处理动态路由时所有的繁重工作。所以，请系好安全带，让我们开启 Next.js 路由领域的精彩之旅。
+路由就像 Web 应用的骨干，确保无缝导航和愉悦的用户体验。在 Next.js 世界中，由于其内置路由器，路由变得轻而易举，它负责处理页面间跳转和处理动态路由时所有的繁重工作。所以，请系好安全带，让我们开启 Next.js 路由领域的精彩之旅。
 
 总体而言，本章旨在全面理解 Next.js 中路由是如何运作的。它涵盖了 Next.js 路由的基础、页面间的导航、动态路由的处理，以及利用 `Link` 组件实现高效的客户端导航。
 
@@ -3070,24 +3454,13 @@ const About = () => {
   return (
     <div>
       <h1>About Page</h1>
+      <p>这是 About 页面的内容。</p>
     </div>
   );
 }
-```
-
-
-
-
-
-`<p>这是 About 页面的内容。 </p>`
-
-`</div>`
-
-`);
-
-`};`
 
 export default About;
+```
 
 同样，我们可以为其他页面（如 Home 和 Contact）创建文件，每个文件都导出各自的 React 组件。
 
@@ -3095,15 +3468,15 @@ export default About;
 
 ```javascript
 // pages/index.js (Home page)
-import React from “react”;
-import Link from “next/link”;
+import React from "react";
+import Link from "next/link";
 
 const Home = () => {
   return (
     <div>
-      <h1>首页首页</h1>
+      <h1>首页</h1>
       <p>欢迎来到首页。</p>
-      <Link href=”/about">
+      <Link href="/about">
         <a>前往 About 页面 (Go to About page)</a>
       </Link>
     </div>
@@ -3120,11 +3493,11 @@ Next.js 路由使得定义路由和在页面间导航变得非常简单，在 Ne
 在最新的 Next.js 版本（13+）中，路由结构经过了细微调整。以下是更新后的文件夹结构及其简单描述：
 
 - `app`
-- `about`
-- `page.js` # 现在映射到 “/about”
-- `products`
-- `[productId]`
-- `page.js` # 现在映射到 “/products/:productId”
+  - `about`
+    - `page.js` # 现在映射到 “/about”
+  - `products`
+    - `[productId]`
+      - `page.js` # 现在映射到 “/products/:productId”
 
 该结构展示了 `app` 目录下的层级关系。值得注意的是，`about` 页面和 `products` 路由现在位于各自的文件夹中。重要的是，这些文件夹中的文件（如 `page.js`）已经过优化，可以直接与特定的 URL 路由对应。这种改进增强了 Next.js 路由系统的整体组织结构和用户友好性，促进了更高效、直观的 Web 应用程序开发方法。
 
@@ -3138,14 +3511,15 @@ Next.js Link 组件是一个内置功能，能够在 Next.js 应用内的页面�
   `href` 属性指定链接的目标目标 URL。它可以是一个表示静态路由的字符串，也可以是一个包含动态路由参数的对象。
 
   ```javascript
-  import Link from ‘next/link’;
+  import Link from 'next/link';
+
   // 静态路由
-  <Link href=”/about">
+  <Link href="/about">
     <a>关于 (About)</a>
   </Link>
 
   // 带有参数的动态路由
-  <Link href=”/users/[id]” as=”/users/1">
+  <Link href="/users/[id]" as="/users/1">
     <a>用户资料 (User Profile)</a>
   </Link>
   ```
@@ -3157,7 +3531,7 @@ Next.js Link 组件是一个内置功能，能够在 Next.js 应用内的页面�
   `replace` 属性决定导航应该是替换浏览器历史记录中的当前页面还是添加新条目。默认情况下，设置为 `false`，这意味着将添加新条目。
 
   ```javascript
-  <Link href=”/contact” replace>
+  <Link href="/contact" replace>
     <a>联系 (Contact)</a>
   </Link>
   ```
@@ -3166,7 +3540,7 @@ Next.js Link 组件是一个内置功能，能够在 Next.js 应用内的页面�
   `scroll` 属性控制点击链接时的滚动行为。可以设置为 `true` 以滚动到页面顶部，`false` 保留当前滚动位置，或设置为字符串值以滚动到目标页面上的特定元素 ID。
 
   ```javascript
-  <Link href=”/blog” scroll={true}>
+  <Link href="/blog" scroll={true}>
     <a>博客 (Blog)</a>
   </Link>
   ```
@@ -3175,7 +3549,7 @@ Next.js Link 组件是一个内置功能，能够在 Next.js 应用内的页面�
   `shallow` 属性启用浅路由（shallow routing），这意味着如果仅更改查询参数，页面组件将不会重新渲染。当你想要在更新 URL 而不获取新数据或重新运行页面的初始 props 时，它非常有用。
 
   ```javascript
-  <Link href=”/products” shallow>
+  <Link href="/products" shallow>
     <a>产品 (Products)</a>
   </Link>
   ```
@@ -3184,7 +3558,7 @@ Next.js Link 组件是一个内置功能，能够在 Next.js 应用内的页面�
   `prefetch` 属性启用在后台自动预取链接页的数据。这可以通过减少访问被链接页面时的加载时间来提升用户体验。
 
   ```javascript
-  <Link href=”/dashboard” prefetch>
+  <Link href="/dashboard" prefetch>
     <a>仪表板 (Dashboard)</a>
   </Link>
   ```
@@ -3197,8 +3571,8 @@ Link 组件封装了锚点标签 (`<a>`)，为客户端导航提供了必要的�
   `passHref` 属性设置为 `true` 时，会将 `href` 属性传递给底层的 `<a>` 标签。这在需要应用自定义样式时非常有用。
 
   ```javascript
-  <Link href=”profile” passHref>
-    <a className=”custom-link”>个人资料 (Profile)</a>
+  <Link href="/profile" passHref>
+    <a className="custom-link">个人资料 (Profile)</a>
   </Link>
   ```
 
@@ -3206,13 +3580,13 @@ Link 组件封装了锚点标签 (`<a>`)，为客户端导航提供了必要的�
   `active` 属性允许在链接匹配当前路由时应用特定的样式或类。这对于在导航菜单中高亮链接很有帮助。
 
   ```javascript
-  <Link href=”about” active={true}>
+  <Link href="/about" active={true}>
     <a>关于 (About)</a>
   </Link>
   ```
 
 - `onClick (函数, 可选):`
-  `onClick` 属性允许定义定义点击链接时执行的自定义函数。这在导航之前执行额外操作或触发事件时有用。
+  `onClick` 属性允许定义点击链接时执行的自定义函数。这在导航之前执行额外操作或触发事件时有用。
 
   ```javascript
   const handleClick = () => {
@@ -3220,7 +3594,7 @@ Link 组件封装了锚点标签 (`<a>`)，为客户端导航提供了必要的�
     console.log('Link clicked');
   };
 
-  <Link href=”/contact” onClick={handleClick}>
+  <Link href="/contact" onClick={handleClick}>
     <a>联系 (Contact)</a>
   </Link>
   ```
@@ -3229,16 +3603,14 @@ Link 组件封装了锚点标签 (`<a>`)，为客户端导航提供了必要的�
   除了内部导航，Link 组件还可以用于创建指向外部 URL 的链接。只需将完整 URL 作为 `href` 属性提供，Next.js 将处理跳转。
 
   ```javascript
-  <Link href=”https://www.example.com”>
+  <Link href="https://www.example.com">
     <a>外部链接 (External Link)</a>
   </Link>
   ```
 
 Next.js Link 组件简化了在 Next.js 应用中创建导航链接的过程。它确保了高效的客户端导航，处理了动态路由，并提供了自定义和优化选项。通过利用 Link 组件，可以在构建 Next.js 应用时创建无缝的用户体验。
 
-
-
-
+## 使用路由器在 Next.js 中进行页面跳转
 
 ### 访问路由器对象
 
@@ -3248,7 +3620,7 @@ Next.js Link 组件简化了在 Next.js 应用中创建导航链接的过程。�
 const router = useRouter();
 ```
 
-## 执行导航
+### 执行导航
 
 使用路由器对象提供的方法在页面间进行导航。常用的方法是 `push`，它允许你导航到一个新页面。
 
@@ -3260,7 +3632,7 @@ const handleNavigation = () => {
 
 你也可以使用其他方法，如 `replace` 来替换浏览器历史记录中的当前页面，或者使用 `back` 返回到上一个页面。
 
-## 处理导航事件
+### 处理导航事件
 
 Next.js 提供了多种事件，你可以在导航发生时对它们进行监听。例如，你可以监听 `routeChangeStart` 事件在路由切换前执行某些操作，或者监听 `routeChangeComplete` 事件在路由切换后执行操作。
 
@@ -3269,11 +3641,14 @@ useEffect(() => {
   const handleRouteChangeStart = () => {
     // 在路由切换前执行的操作
   };
+
   const handleRouteChangeComplete = () => {
     // 在路由切换后执行的操作
   };
+
   router.events.on('routeChangeStart', handleRouteChangeStart);
   router.events.on('routeChangeComplete', handleRouteChangeComplete);
+
   return () => {
     router.events.off('routeChangeStart', handleRouteChangeStart);
     router.events.off('routeChangeComplete', handleRouteChangeComplete);
@@ -3386,8 +3761,33 @@ if (!router.isReady) {
 }
 ```
 
+## 在 Next.js 中处理动态路由
 
+在 Next.js 中，动态路由允许你创建可以处理动态参数的页面。这对于根据 URL 参数（如产品 ID、用户名或博客文章 slug）显示不同内容的页面非常有用。
 
+### 定义动态路由
+
+要定义动态路由，请在 `pages` 目录中创建一个文件名包含方括号的文件。例如，要创建一个处理产品 ID 的动态路由，请创建一个名为 `pages/products/[productId].js` 的文件。
+
+```javascript
+// pages/products/[productId].js
+import React from 'react';
+import { useRouter } from 'next/router';
+
+const Product = () => {
+  const router = useRouter();
+  const { productId } = router.query;
+
+  return (
+    <div>
+      <h1>Product: {productId}</h1>
+      <p>Product details for ID: {productId}</p>
+    </div>
+  );
+};
+
+export default Product;
+```
 
 在前面的示例中，使用了 `useRouter` 钩子来获取路由对象。`router.query` 对象包含了动态参数，可以通过对象解构来访问（例如，`const { productId } = router.query`）。随后，你可以使用该动态参数（在本例中为 `productId`）来获取并显示相关的产品详情。
 
@@ -3395,7 +3795,7 @@ if (!router.isReady) {
 
 ## 结论
 
-*理解 Next.js 中的路由* 这一章节是一份全面的指南，探索了核心的路由概念和技术，为开发者在 Next.js 应用中进行导航和处理路由提供了坚实的基础。它涵盖了 Next.js 路由的基础知识、页面导航、动态路由处理、`Link` 组件、`useRouter` 钩子以及基于文件的路由。通过理解路由的作用，开发者可以深入了解页面导航是如何管理的，以及不同的路由是如何映射到其相应组件的。`Link` 组件的使用简化了用于页面切换的锚点标签的，在保留服务器渲染优势的同时确保了优化的客户端导航。动态路由允许处理带有动态参数的路由，构建出灵活且可重用的组件，根据提供的参数渲染不同的内容。`useRouter` 钩子赋予了对路由对象的访问权限，为路由工作提供了各种属性和方法。基于文件的路由通过将文件结构映射到 URL 结构，简化了路由的组织。本章让开发者掌握了这些知识，使他们能够在页面间跳转、处理动态路由、利用 `Link` 组件进行优化的客户端导航，并利用 `useRouter` 的 `useRouter` 钩子来增强路由控制和交互，从而在他们的 Next.js 应用中创建动态、交互且无缝的路由体验。下一章“Next.js 中的状态管理”将探索用于在 Next.js 应用中管理状态的各种技术和库。
+*理解 Next.js 中的路由* 这一章节是一份全面的指南，探索了核心的路由概念和技术，为开发者在 Next.js 应用中进行导航和处理路由提供了坚实的基础。它涵盖了 Next.js 路由的基础知识、页面导航、动态路由处理、`Link` 组件、`useRouter` 钩子以及基于文件的路由。通过理解路由的作用，开发者可以深入了解页面导航是如何管理的，以及不同的路由是如何映射到其相应组件的。`Link` 组件的使用简化了用于页面切换的锚点标签的创建，在保留服务器渲染优势的同时确保了优化的客户端导航。动态路由允许处理带有动态参数的路由，构建出灵活且可重用的组件，根据提供的参数渲染不同的内容。`useRouter` 钩子赋予了对路由对象的访问权限，为路由工作提供了各种属性和方法。基于文件的路由通过将文件结构映射到 URL 结构，简化了路由的组织。本章让开发者掌握了这些知识，使他们能够在页面间跳转、处理动态路由、利用 `Link` 组件进行优化的客户端导航，并利用 `useRouter` 钩子来增强路由控制和交互，从而在他们的 Next.js 应用中创建动态、交互且无缝的路由体验。下一章“Next.js 中的状态管理”将探索用于在 Next.js 应用中管理状态的各种技术和库。
 
 请参考 GitHub 仓库 *Building-Scalable-Web-Applications-with-Next.js-and-React* 中的 *[第 5 章]* 和 *[第 6 章]*。该仓库包含一个小型双页应用，展示了书籍列表和书籍详情，并结合了动态路由和优化技术。你可以将此仓库作为开发工作的宝贵参考。
 
@@ -3445,7 +3845,7 @@ if (!router.isReady) {
 
 ## 引言
 
-状态管理是构建 Web 应用的关键方面，特别是在复杂和动态的应用中。在 Next.js 中，状态管理在管理应用的数据、用户界面和其他组件方面起着至关的作用。状态管理是指以高效、可扩展且易于维护的方式管理应用数据和状态的技术和工具。
+状态管理是构建 Web 应用的关键方面，特别是在复杂和动态的应用中。在 Next.js 中，状态管理在管理应用的数据、用户界面和其他组件方面起着至关重要的作用。状态管理是指以高效、可扩展且易于维护的方式管理应用数据和状态的技术和工具。
 
 Next.js 为状态管理提供了多种选项，包括 React state、Redux 和 React context。这些选项每种都有其优缺点，选择正确的方案取决于应用的特定需求和要求。在本章中，我们将回顾这些状态管理选项，并讨论它们的优劣。我们还将指导你在何时使用每种方案，以及如何在 Next.js 应用中实现它们。
 
@@ -3463,18 +3863,14 @@ Next.js 为状态管理提供了多种选项，包括 React state、Redux 和 Re
 
 在本章中，我们将涵盖以下主题：
 
-* Next.js 状态管理的简介及其重要性
-* Next.js 中可用的不同状态管理选项的回顾
-* 每种状态管理选项的优缺点及适用时机
-* 如何使用 React state 实现状态管理，包括如何使用 `useState` 和 `useContext` 等钩子
-* Next.js 应用中管理状态的最佳实践，包括避免常见陷阱和优化性能
-* 如何使用 Redux 实现状态管理，包括设置 store、定义 actions 和 reducers 以及将组件连接到 store
-* 如何使用 React context 实现状态管理，包括创建 context、定义 providers 和 consumers 以及在组件中使用 context
-
-
-
-
--   关于如何在 Next.js 应用中实现状态管理的案例研究和示例，包括真实场景以及处理复杂状态的最佳实践。
+- Next.js 状态管理的简介及其重要性
+- Next.js 中可用的不同状态管理选项的回顾
+- 每种状态管理选项的优缺点及适用时机
+- 如何使用 React state 实现状态管理，包括如何使用 `useState` 和 `useContext` 等钩子
+- Next.js 应用中管理状态的最佳实践，包括避免常见陷阱和优化性能
+- 如何使用 Redux 实现状态管理，包括设置 store、定义 actions 和 reducers 以及将组件连接到 store
+- 如何使用 React context 实现状态管理，包括创建 context、定义 providers 和 consumers 以及在组件中使用 context
+- 关于如何在 Next.js 应用中实现状态管理的案例研究和示例，包括真实场景以及处理复杂状态的最佳实践
 
 ## 介绍 Next.js 中的状态管理及其重要性
 
@@ -3498,11 +3894,11 @@ Next.js 为状态管理提供了多种选项，包括 React state、Redux 和 Re
 
 在 `Next.js` 中，有几种状态管理库可以与 `React` 结合使用以有效处理状态。这些库为管理 Next.js 应用中的状态提供了多种方法和功能。以下是 `React` 中配合 `Next.js` 使用的一些流行的状态管理库：
 
--   **Redux**: `Redux` 是一个可预测的状态容器，有助于以集中方式管理应用程序的状态。它遵循单向数据流，并提供一个全局 store 来存储状态。`Redux` 被广泛使用并拥有庞大的社区，使其成为 Next.js 应用管理复杂状态的流行选择。
--   **React Context**: `React Context` 是 `React` 的内置功能，允许你在组件之间创建和共享状态，而无需手动传递 props。它提供了一种在组件树中传递数据的方法，而无需显式通过每一层。`React Context` 是小型应用程序或在少数嵌套层级的组件之间共享数据的轻量选项。
--   **MobX**: `MobX` 是一个简单且可扩展的状态管理库，强调自动观察性和细粒度响应。它允许你创建可观察对象，这些对象可以跟踪变化并在状态更新时触发组件的重新渲染。`MobX` 与 `React` 集成良好，并为 Next.js 应用的状态管理提供了直观的 API。
--   **Zustand**: `Zustand` 是一个轻量级的状态管理库，利用了 `Reacthooks` 和 `Context API`。它提供了一种简单且函数化的状态管理方法，专注于性能和极简设置。`Zustand` 是需要轻量且易用状态管理解决方案的中小型应用程序的良好选择。
--   **Recoil**: `Recoil` 是专为 `React` 应用设计的状态管理库。它提供了一种简单且高效的方法来管理跨组件共享的状态。`Recoil` 使用 `atoms` 和 `selectors` 来定义和访问状态，并提供了异步选择器和派生状态内置支持等功能。
+- **Redux**: `Redux` 是一个可预测的状态容器，有助于以集中方式管理应用程序的状态。它遵循单向数据流，并提供一个全局 store 来存储状态。`Redux` 被广泛使用并拥有庞大的社区，使其成为 Next.js 应用管理复杂状态的流行选择。
+- **React Context**: `React Context` 是 `React` 的内置功能，允许你在组件之间创建和共享状态，而无需手动传递 props。它提供了一种在组件树中传递数据的方法，而无需显式通过每一层。`React Context` 是小型应用程序或在少数嵌套层级的组件之间共享数据的轻量选项。
+- **MobX**: `MobX` 是一个简单且可扩展的状态管理库，强调自动观察性和细粒度响应。它允许你创建可观察对象，这些对象可以跟踪变化并在状态更新时触发组件的重新渲染。`MobX` 与 `React` 集成良好，并为 Next.js 应用的状态管理提供了直观的 API。
+- **Zustand**: `Zustand` 是一个轻量级的状态管理库，利用了 `React hooks` 和 `Context API`。它提供了一种简单且函数化的状态管理方法，专注于性能和极简设置。`Zustand` 是需要轻量且易用状态管理解决方案的中小型应用程序的良好选择。
+- **Recoil**: `Recoil` 是专为 `React` 应用设计的状态管理库。它提供了一种简单且高效的方法来管理跨组件共享的状态。`Recoil` 使用 `atoms` 和 `selectors` 来定义和访问状态，并提供了异步选择器和派生状态内置支持等功能。
 
 这些只是 Next.js 应用中可用状态管理库的示例。每个库都有自己的功能、优势和社区支持。根据你项目的特定需求和复杂性，你可以为 Next.js 应用的状态管理选择最合适的库。
 
@@ -3527,12 +3923,7 @@ Next.js 为状态管理提供了多种选项，包括 React state、Redux 和 Re
 | **React Context** | 为嵌套组件提供共享状态；避免 props 传递；React 生态系统的一部分 | 对于大型应用的可扩展性有限；在深度嵌套组件中可能有性能开销 | 有中等状态共享需求的中间应用，或重视简单性和 React 集成 |
 | **MobX** | 自动观察性和细粒度响应；高可扩展性；易于学习 | 与 React 集成可能需要额外设置；高级概念存在学习曲线 | 需要高可扩展和响应式状态管理，且偏好简单易用的应用 |
 | **Zustand** | 轻量级且函数化的状态管理；易于学习 | 工具和社区支持可能有限 | 优先考虑简单、性能和极简方法的的中小型应用 |
-
-
-
-
-
-| Recoil | 使用 atoms 和 selectors 进行 React 状态管理 | 易于学习 | 较新且不断发展的库 | 社区正在发展中 | 适用于需要灵活且高效状态管理的 React 应用，特别是中等规模的项目 |
+| **Recoil** | 使用 atoms 和 selectors 进行 React 状态管理；易于学习 | 较新且不断发展的库；社区正在发展中 | 适用于需要灵活且高效状态管理的 React 应用，特别是中等规模的项目 |
 
 **表 7.2：** 每种状态管理方案的优缺点
 
@@ -3546,7 +3937,7 @@ Next.js 为状态管理提供了多种选项，包括 React state、Redux 和 Re
 
 1. 导入必要的依赖项：
 ```javascript
-import React, { useState } from ‘react';
+import React, { useState } from 'react';
 ```
 
 2. 使用 `useState` 定义并初始化状态：
@@ -3573,10 +3964,11 @@ return (
 
 这是一个完整的示例，用于说明实现过程：
 ```javascript
-import React, { useState } from ‘react’;
+import React, { useState } from 'react';
 
 const MyComponent = () => {
   const [count, setCount] = useState(0);
+
   const incrementCount = () => { 
     setCount(count + 1);
   };
@@ -3608,7 +4000,7 @@ const MyContext = React.createContext();
 ```javascript
 return (
   <MyContext.Provider value={contextValue}>
-    { {/* 在此处放置你的组件 */}
+    { /* 在此处放置你的组件 */ }
   </MyContext.Provider>
 );
 ```
@@ -3622,11 +4014,12 @@ const contextValue = useContext(MyContext);
 
 这是一个完整的示例，用于说明实现过程：
 ```javascript
-import React, { useContext } from ‘react’;
+import React, { useContext } from 'react';
+
 const MyContext = React.createContext();
 
 const ParentComponent = () => {
-  const contextValue = ‘Hello from context’;
+  const contextValue = 'Hello from context';
   return (
     <MyContext.Provider value={contextValue}>
       <ChildComponent />
@@ -3654,28 +4047,16 @@ export default ParentComponent;
 
 在 Next.js 应用中管理状态时，有几个最佳实践需要遵循以避免常见的错误并优化性能。以下是需要考虑的关键实践：
 
-* **最小化全局状态：** 通常建议尽可能减少全局状态的使用。全局状态会引入复杂性，并使难以难以推断应用程序中的数据流。相反，努力在单个组件或较小范围的上下文中进行局部化状态管理。
-
+* **最小化全局状态：** 通常建议尽可能减少全局状态的使用。全局状态会引入复杂性，并使难以推断应用程序中的数据流。相反，努力在单个组件或较小范围的上下文中进行局部化状态管理。
 * **使用本地组件状态：** 利用 React 内置的状态管理能力（如 `useState`）来管理本地组件状态。这对于管理特定组件且不需要在多个组件之间共享的状态是理想的。
-
 * **选择合适的状态管理库：** 如果你有复杂的状态管理需求，或需要在多个组件之间共享状态，请考虑使用 Redux 或 MobX 等状态管理库。这些库提供了管理状态的高级功能，并帮助扩展你的应用状态。
-
 * **规范化状态形状：** 规范化你的状态结构以保持其简单和有序。这涉及将复杂的数据结构拆分为单独的实体并存储在规范化的格式中。规范化可以提高性能并简化数据检索和处理。
-
 * **避免不必要的渲染：** 通过使用记忆化（memoization）和 `React.memo` 等技术优化组件以避免不必要的渲染。记忆化有助于防止昂贵的计算在每次渲染时重复，而 `React.memo` 可以在 props 发生变化时防止组件重新渲染。
-
 * **使用不可变性：** 不可变数据有助于优化性能，允许 React 高效判断组件是否需要重新渲染。避免直接修改状态对象，而是创建副本或使用 Immutable.js 或 Immer 等不可变数据结构。
-
 * **谨慎使用 react context：** React Context 是跨组件共享状态的强大工具，但如果过度使用可能会影响性能。请谨慎使用上下文，并考虑属性传递（props drilling）或状态提升是否更适合你的特定用例。
-
 * **优化 API 请求：** 在从 API 获取数据时，实施缓存、防抖或分页等技术以减少不必要的请求并提高性能。考虑使用 SWR 或 React Query 等专为 React 应用设计的数据获取和缓存功能库。
-
 * **性能监控：** 使用 Lighthouse、Chrome DevTools 或性能分析库等工具监控应用的性能。识别并解决与状态管理相关的瓶颈或性能问题。
-
 * **测试与重构：** 为你的状态管理代码编写全面的单元测试，以确保正确性和可维护性。定期审查并重构你的状态管理代码，以保持其整洁、有序和优化。
-
-
-
 
 通过遵循这些最佳实践，你可以有效地管理 Next.js 应用中的状态，同时优化性能并避免常见的陷阱。请记住，应用程序的具体需求可能有所不同，因此在实施状态管理解决方案时，务必考虑你项目的上下文和需求。
 
@@ -3691,7 +4072,7 @@ export default ParentComponent;
 
 ## Flux
 
-`Flux` 是 Facebook 引入的一种架构模式，补充了 React 基于组件的架构。`Flux` 解决了大型应用中状态状态的挑战。它强制执行单向数据流并促进了清晰的关注点分离。
+`Flux` 是 Facebook 引入的一种架构模式，补充了 React 基于组件的架构。`Flux` 解决了大型应用中状态管理的挑战。它强制执行单向数据流并促进了清晰的关注点分离。
 
 `Flux` 由几个关键组件组成：
 
@@ -3716,11 +4097,7 @@ export default ParentComponent;
 
 通过结合 `Redux` 和 `Flux`，你可以受益于 `Redux` 强大的状态管理能力，同时利用 `Flux` 清晰的数据流和关注点分离。这种组合帮助你为应用程序状态维护单一数据源，确保状态更新的不可变性和可预测性，并以模块化和可扩展的方式组织你的状态管理逻辑。
 
-请记住，虽然 `Redux` 和 `Flux` 可以结合，但考虑你应用程序的复杂性和需求是非常关重要的。如果你的应用程序较小，或者不需要广泛的状态管理，仅使用 `Redux` 可能就足够了。然而，对于更大更复杂的应用程序，将 `Redux` 与 `Flux` 结合可以为管理状态提供有效的解决方案。
-
-
-
-
+请记住，虽然 `Redux` 和 `Flux` 可以结合，但考虑你应用程序的复杂性和需求是非常关键的。如果你的应用程序较小，或者不需要广泛的状态管理，仅使用 `Redux` 可能就足够了。然而，对于更大更复杂的应用程序，将 `Redux` 与 `Flux` 结合可以为管理状态提供有效的解决方案。
 
 首先使用你喜欢的方法设置基础的 Next.js 项目。你可以使用 Next.js CLI 或手动创建一个新项目。确保你已经安装了必要的依赖。
 
@@ -3737,13 +4114,14 @@ npm install redux react-redux redux-thunk
 在你的项目中，创建一个名为 `store.js` 的新文件。该文件将包含 Redux store 的配置。添加以下代码：
 
 ```javascript
-import { createStore, applyMiddleware } from 'redux'; import thunk from 'redux-thunk';
+import { createStore, applyMiddleware } from 'redux';
+import thunk from 'redux-thunk';
 
 // 在此处导入你的 reducers
-
 import rootReducer from './reducers';
 
-const store = createStore(rootReducer, applyMiddleware(thunk)); export default store;
+const store = createStore(rootReducer, applyMiddleware(thunk));
+export default store;
 ```
 
 确保你已经在 `reducers` 目录下的单独文件中定义了你的 reducers。
@@ -3753,7 +4131,8 @@ const store = createStore(rootReducer, applyMiddleware(thunk)); export default s
 在 `reducers` 目录中为每个 reducer 创建单独的文件。每个 reducer 文件都应该导出一个函数，该函数接收当前状态和 action 作为参数，并返回一个新的状态。例如：
 
 ```javascript
-// counterReducer.js 中的示例 reducer const initialState = {
+// counterReducer.js 中的示例 reducer
+const initialState = {
   count: 0,
 };
 
@@ -3776,12 +4155,14 @@ export default counterReducer;
 在 `actions` 目录中为每个 action 创建单独的文件。每个文件都应该导出返回 action 对象的 action creator 函数（action 创建器函数）。例如：
 
 ```javascript
-// counterActions.js 中的示例 actions export
-const increment = () => ({
+// counterActions.js 中的示例 actions
+export const increment = () => ({
   type: 'INCREMENT',
 });
 
-export const decrement = () => ({ type: 'DECREMENT', });
+export const decrement = () => ({
+  type: 'DECREMENT',
+});
 ```
 
 ### 步骤 6：合并 reducers
@@ -3790,10 +4171,10 @@ export const decrement = () => ({ type: 'DECREMENT', });
 
 ```javascript
 // reducers/index.js
-import { combineReducers } from 'redux'; import counterReducer from './counterReducer';
+import { combineReducers } from 'redux';
+import counterReducer from './counterReducer';
 
-const rootReducer = combineReducers({ counter: counterReducer, });
-
+const rootReducer = combineReducers({ counter: counterReducer });
 export default rootReducer;
 ```
 
@@ -3802,7 +4183,8 @@ export default rootReducer;
 创建使用 Redux store 并调度 actions 的 React 组件。例如：
 
 ```javascript
-// Counter.js 中的示例组件 import React from 'react';
+// Counter.js 中的示例组件
+import React from 'react';
 import { connect } from 'react-redux';
 import { increment, decrement } from './actions/counterActions';
 
@@ -3816,11 +4198,8 @@ const Counter = ({ count, increment, decrement }) => {
   );
 };
 
-const mapStateToProps = (state) => ({ count: state.counter.count, });
-
-const mapDispatchToProps = { increment,
-  decrement,
-};
+const mapStateToProps = (state) => ({ count: state.counter.count });
+const mapDispatchToProps = { increment, decrement };
 
 export default connect(mapStateToProps, mapDispatchToProps)(Counter);
 ```
@@ -3832,7 +4211,9 @@ export default connect(mapStateToProps, mapDispatchToProps)(Counter);
 ```javascript
 // pages/index.js
 import React from 'react';
-import Counter from '../components/Counter'; const HomePage = () => {
+import Counter from '../components/Counter';
+
+const HomePage = () => {
   return (
     <div>
       <h1>Redux with Flux Example</h1>
@@ -3850,7 +4231,9 @@ export default HomePage;
 
 ```javascript
 // pages/_app.js
-import { Provider } from 'react-redux'; import store from '../store';
+import { Provider } from 'react-redux';
+import store from '../store';
+
 function MyApp({ Component, pageProps }) {
   return (
     <Provider store={store}>
@@ -3858,6 +4241,7 @@ function MyApp({ Component, pageProps }) {
     </Provider>
   );
 }
+
 export default MyApp;
 ```
 
@@ -3869,7 +4253,7 @@ export default MyApp;
 
 你可以根据需要按照相同的模式添加更多 actions、reducers 和组件。这种方法允许你有效地管理 Next.js 应用的状态，并轻松处理复杂的状态交互。
 
-# Redux Thunk
+## Redux Thunk
 
 Redux Thunk 是 Redux 的中间件，Redux 是 JavaScript 中流行的状态管理库。它允许你编写返回函数而非普通 action 对象的 action creators。这使得你能够执行异步操作，例如 API 调用。
 
@@ -3901,7 +4285,8 @@ Thunk action creators 是可以调度 actions 的函数。例如：
 
 ```javascript
 // actions.js
-import axios from 'axios'; export const fetchData = () => {
+import axios from 'axios';
+export const fetchData = () => {
   return async (dispatch) => {
     dispatch({ type: 'FETCH_DATA_REQUEST' });
     try {
@@ -3928,7 +4313,6 @@ import { fetchData } from './actions';
 const Component = () => {
   const dispatch = useDispatch();
   const data = useSelector((state) => state.data);
-
   useEffect(() => {
     dispatch(fetchData());
   }, [dispatch]);
@@ -3941,9 +4325,6 @@ const Component = () => {
 export default Component;
 ```
 在此示例中，我们使用来自 react-redux 库的 `useDispatch` 钩来获取 `dispatch` 函数。然后我们在 `useEffect` 钩子中调度 `fetchData` thunk action creator，以便在组件挂载时触发 API 调用。
-
-
-
 
 以上是对 Redux Thunk 及其实现方式的基本概述。它允许你在 Redux actions 中处理异步操作并相应地管理状态。
 
@@ -3966,7 +4347,7 @@ React context 是 React 中的一项功能，允许你在组件之间共享数�
 ### 解决方案 1：状态提升（Uplifting State）：
 
 - 将所需的状态从组件 A 移动到父组件 APP。
-- 这解决了当前问题，但对于较大的应用程序来说并不实用用。
+- 这解决了当前问题，但对于较大的应用程序来说并不实用。
 
 ![](img/Figure-7.3.jpg)
 
@@ -4028,7 +4409,7 @@ Context API 简化了组件之间的数据共享，避免了 prop drilling。然
 
 ```javascript
 // AppContext.js
-import React, { createContext, useState } from ‘react';
+import React, { createContext, useState } from 'react';
 
 // 创建 context
 export const AppContext = createContext();
@@ -4039,19 +4420,22 @@ export const AppProvider = ({ children }) => {
     // 在此处定义你的初始状态
     count: 0,
   });
+
   // 定义任何更新状态的 actions
   const increment = () => {
     setState((prevState) => ({
-      …prevState,
+      ...prevState,
       count: prevState.count + 1,
     }));
   };
+
   const decrement = () => {
     setState((prevState) => ({
-      …prevState,
+      ...prevState,
       count: prevState.count - 1,
     }));
   };
+
   // 向子组件提供状态和 actions
   return (
     <AppContext.Provider value={{ state, increment, decrement }}>
@@ -4124,6 +4508,8 @@ const HomePage = () => {
 export default HomePage;
 ```
 
+
+
 ### 第 6 步：在组件外部访问 context（可选）
 
 如果你需要在组件外部访问 context（例如在实用函数或自定义 hook 中），你也可以使用 `useContext` hook。请注意，`useContext` 只能在函数组件中使用。
@@ -4134,29 +4520,26 @@ export default HomePage;
 
 就这样！你成功地在简单的 Next.js 应用程序中使用 React context 实现了状态管理。React context 允许组件之间共享状态和 actions，而无需 prop drilling。它简化了应用程序中管理和更新共享状态的过程。
 
-
-
-
 请记住，随着应用程序的增长，你可能需要更高级的功能，如中间件、异步操作或复杂的状态管理。在这种情况下，你可以考虑使用 `Redux` 或其他状态管理库。
 
 然而，对于状态需求较简单的小型应用程序，`react context` 可以作为一个轻量级且有效的解决方案。
 
 **注意：** 请查看 GitHub 仓库中第 7 章 *Building-Scalable-Web-Applications-with-Next.js-and-React* 的示例代码，以探索与章节内容相关的实际示例和实现。
 
-# 案例研究与示例 (#toc.xhtml_s126a)
+# 案例研究与示例
 
 在本节中，我们将看到如何在 Next.js 应用程序真实场景中实现状态管理。让我们探讨五个案例研究，以及处理复杂状态的最佳实践：
 
-### 电子商务购物车：
+### 电子商务购物车
 
 - **场景：** 假设你正在构建一个带有购物车功能的电子商务网站。
 - **实现方式：** 为了管理购物车状态，你可以使用 `Redux` 或 `React context`。在全局状态中存储购物车物品、数量和总价。实现动作（actions）和还原器（reducers）来处理购物车中物品的添加、删除或更新。将相关组件连接到状态管理解决方案以显示和更新购物车。
 - **最佳实践：**
     - 规范化购物车状态结构，以便高效处理大量物品。
-    - 使用选择器（selectors）或内存（memoization）技术优化渲染，防止购物车相关组件进行不重新渲染。
-    - 实现持久化以保存购物车状态，户户在关闭浏览器后也能返回购物车。
+    - 使用选择器（selectors）或内存（memoization）技术优化渲染，防止购物车相关组件进行不必要的重新渲染。
+    - 实现持久化以保存购物车状态，用户在关闭浏览器后也能返回购物车。
 
-### 社交媒体动态：
+### 社交媒体动态
 
 - **场景：** 假设你正在构建一个包含不同用户帖子流的社交媒体应用程序。
 - **实现方式：** 为了管理流状态，你可以利用 `React state` 或 `React context`。在组件状态或上下文中存储帖子及其元数据。实现函数来处理诸如添加新帖子、删除帖子或更新帖子点赞和评论等操作。根据状态数据渲染流组件。
@@ -4165,7 +4548,7 @@ export default HomePage;
     - 使用异步操作或 API 调用来获取和更新帖子，确保无缝的用户体验。
     - 实现缓存机制以提高性能，避免对同一帖子进行冗余的 API 调用。
 
-### 为天气应用实现 Redux：
+### 为天气应用实现 Redux
 
 - **场景：** 开发一个显示不同位置天气信息的应用程序。
 - **实现方式：** 使用 `Redux` 管理天气数据状态。将天气信息（如温度、状况和位置）存储在 `Redux store` 中。实现动作和还原器来获取和更新天气数据。使用 `react-redux` 库将相关组件连接到 store。
@@ -4174,29 +4557,29 @@ export default HomePage;
     - 利用 `Redux Thunk` 或 `Redux Saga` 等中间件来处理异步操作，例如从 API 获取天气数据。
     - 利用选择器从 store 中计算派生数据，减少不必要的计算并优化性能。
 
-### 为用户认证实现 React context：
+### 为用户认证实现 React context
 
 - **场景：** 构建一个具有用户身份验证功能的应用程序。
-- **实现方式：** 使用 `React context` 管理用户身份验证状态。在文中存储用户信息（如用户名和身份验证令牌）。实现上下文提供者（providers）和消费者（consumers）来处理用户登录、注销和身份检查。使用 `useContext` 钩子在整个应用程序中使用身份验证状态。
+- **实现方式：** 使用 `React context` 管理用户身份验证状态。在上下文中存储用户信息（如用户名和身份验证令牌）。实现上下文提供者（providers）和消费者（consumers）来处理用户登录、注销和身份检查。使用 `useContext` 钩子在整个应用程序中使用身份验证状态。
 - **最佳实践：**
     - 谨慎使用上下文，仅用于真正必要的全局共享状态。
     - 在单独的模块或自定义钩子中实现身份验证逻辑，以提高重用性和可维护性。
     - 考虑使用 `react-router` 等第三方库根据身份验证状态处理受保护路由。
 
-### 为待办列表实现 React state：
+### 为待办列表实现 React state
 
 - **场景：** 构建一个简单的待办事项应用程序。
 - **实现方式：** 使用 `React state` 管理任务列表。将任务以数组形式存储在组件状态中。实现添加新任务、标记任务为完成和删除任务的函数。使用 `useState` 钩子管理状态并根据用户更新列表。
 - **最佳实践：**
     - 将状态拆分为更小、可管理的部分，以避免不必要的重新渲染。
     - 在更新状态时使用不可变性，以确保行为的可预测性并防止错误。
-    - 考虑使用 `useEffect` 钩子将待办列表持久化到本地存储中，户在关闭浏览器后也能访问其列表。
+    - 考虑使用 `useEffect` 钩子将待办列表持久化到本地存储中，用户在关闭浏览器后也能访问其列表。
 
 在这些案例研究中，使用 `Redux` 或 `React context` 实现状态管理为 Next.js 应用程序中处理复杂状态提供了集中且高效的解决方案。通过遵循最佳实践（如规范化状态结构、使用选择器或内存优化渲染，以及实现持久化或缓存），你可以确保流畅的性能和对复杂状态的有效管理。
 
 请记住根据你的特定应用程序需求调整这些方法，并在实现状态管理解决方案时考虑你的项目需求。
 
-# 结论 (#toc.xhtml_s127a)
+# 结论
 
 本章广泛探讨了 Next.js 应用程序中状态管理的各个方面，并强调了其重要性。章节从介绍 Next.js 中的状态管理开始，强调了其在开发健壮 Web 应用程序中至关重要的作用。
 
@@ -4208,47 +4591,43 @@ export default HomePage;
 
 还涵盖了使用 `Redux` 实现状态管理的技巧，包括 store 的设置、动作和还原器的定义以及与组件的集成。这一全面的讲解让开发者掌握了在 Next.js 应用程序中使用 Redux 进行高级状态管理的技能。
 
-此外，本章介绍了使用 `React context` 进行状态管理，涵盖了创建创建、提供者消费者的定义以及在组件中的用法。这种理解使开发者能够有效利用 `React context`。
+此外，本章介绍了使用 `React context` 进行状态管理，涵盖了创建上下文、提供者消费者的定义以及在组件中的用法。这种理解使开发者能够有效利用 `React context`。
 
 研究了真实的案例研究和示例，以加强理解并展示 Next.js 应用程序中状态管理的实际实现。这些场景展示了处理复杂状态的最佳实践，为开发者提供了宝贵的见解。
 
 下一章将重点介绍 Next.js 应用程序中的 REST 和 GraphQL API。它将解释这些概念并展示如何使用它们构建健壮且灵活的 Web 应用程序。
 
-# 多选题 (#toc.xhtml_s128a)
+# 多选题
 
 1. Next.js 应用程序中状态管理的目的是什么？
     1. 处理用户身份验证
     2. 管理应用程序路由
-
-
-
-
-3. 在跨组件间高效地管理和共享数据
-4. 提高代码组织结构和可维护性
+    3. 在跨组件间高效地管理和共享数据
+    4. 提高代码组织结构和可维护性
 
 2. 哪种状态管理选项是 React 内置并提供的？
-1. Redux
-2. React state
-3. React context
-4. MobX
+    1. Redux
+    2. React state
+    3. React context
+    4. MobX
 
 3. 哪种状态管理选项基于 Flux 架构模式的？
-1. Redux
-2. React state
-3. React context
-4. MobX
+    1. Redux
+    2. React state
+    3. React context
+    4. MobX
 
 4. 使用 React context 进行状态管理的主要优势是什么？
-1. 具有预测数据流的中心化状态管理
-2. 内置支持时间旅行调试
-3. 简单易用
-4. 高性能和高效更新
+    1. 具有预测数据流的中心化状态管理
+    2. 内置支持时间旅行调试
+    3. 简单易用
+    4. 高性能和高效更新
 
 5. 在 Next.js 中，通常什么时候推荐将 Redux 作为状态管理选项？
-1. 适用于小型和简单的应用程序
-2. 处理复杂状态和数据流时
-3. 当需要服务端渲染时
-4. 当需要实时数据更新时
+    1. 适用于小型和简单的应用程序
+    2. 处理复杂状态和数据流时
+    3. 当需要服务端渲染时
+    4. 当需要实时数据更新时
 
 ## 答案
 
@@ -4268,7 +4647,7 @@ export default HomePage;
 
 在 Web 开发领域，API（应用程序编程接口）对于构建健壮的应用程序至关重要。它们实现了软件系统之间无缝通信和数据交换。本章将探索 API 在现代 Web 开发中的意义。
 
-在本章中，我们将介绍 API 并强调它们作为应用程序之间桥梁的重要性，提供访问外部功能的途径。我们将讨论 RESTful 和 GraphQL API 之间的差异以及它们对于设计的处。实践涵盖了如何在 Next.js 中设置 RESTful API 以及为 CRUD 操作创建端点。我们还将探索如何使用 Apollo Server 在 Next.js 中设置 GraphQL API，构建用于精确数据检索的强大 API 端点。
+在本章中，我们将介绍 API 并强调它们作为应用程序之间桥梁的重要性，提供访问外部功能的途径。我们将讨论 RESTful 和 GraphQL API 之间的差异以及它们对于设计的处理。实践涵盖了如何在 Next.js 中设置 RESTful API 以及为 CRUD 操作创建端点。我们还将探索如何使用 Apollo Server 在 Next.js 中设置 GraphQL API，构建用于精确数据检索的强大 API 端点。
 
 与 Next.js 应用程序的集成将侧重于服务端渲染，通过更快的页面加载提升用户体验。此外还讨论了 API 安全和身份验证的错误处理最佳实践。
 
@@ -4291,20 +4670,19 @@ export default HomePage;
 
 API 可以被视为一组定义了软件组件应如何交互的规则和协议。它指定了开发者可以用于在应用程序之间请求和交换信息的方法、数据格式和端点。
 
-### API 类型：
+### API 类型
 
-* Web APIs：这些 API 旨在允许基于网络的系统进行通信。它们使用 `HTTP`（超文本传输协议）作为底层协议，通常以 `JSON`（JavaScript 对象表示法）或 `XML`（可扩展标记语言）格式提供数据。
+* **Web APIs**：这些 API 旨在允许基于网络的系统进行通信。它们使用 `HTTP`（超文本传输协议）作为底层协议，通常以 `JSON`（JavaScript 对象表示法）或 `XML`（可扩展标记语言）格式提供数据。
+* **服务 APIs**：这些 API 由各种软件服务暴露，允许开发者访问这些服务的特定功能。例如，支付网关服务可能提供一个开发者可以在其应用程序中处理支付的 API。
 
-* 服务 APIs：这些 API 由各种软件服务暴露，允许开发者访问这些服务的特定功能。例如，支付网关服务可能提供一个开发者可以在其应用程序中处理支付的 API。
+### API 在现代 Web 开发中的重要性
 
-### API 在现代 Web 开发中的重要性：
+* **集成**：API 允许不同的应用程序无缝集成并共享数据、功能和服务。这种集成允许开发者利用现有的平台和服务，来快速增强他们的应用程序。
+* **效率**：API 促进了代码重用和模块化。开发者不需要从零开始一切，而是可以使用 API 访问预构建的功能，从而节省时间和精力。
+* **可扩展性**：API 促进了应用程序的可扩展性。开发者可以利用外部服务或平台来处理存储、身份验证或支付处理等任务，释放资源专注于应用程序的核心功能。
+* **协作**：API 促进了开发者和团队之间的协作。通过 API 暴露特定功能，开发者可以同时处理不同的组件，确保更快的开发周期。
 
-* 集成：API 允许不同的应用程序无缝集成并共享数据、功能和服务。这种集成允许开发者利用现有的平台和服务，来快速增强他们的应用程序。
-* 效率：API 促进了代码重用和模块化。开发者不需要从零开始一切，而是可以使用 API 访问预构建的功能，从而节省时间和精力的。
-* 可扩展性：API 促进了应用程序的可扩展性。开发者可以利用外部服务或平台来处理存储、身份验证或支付处理等任务，释放资源专注于应用程序的核心功能。
-* 协作：API 促进了开发者和团队之间的协作。通过 API 暴露特定功能，开发者可以同时处理不同的组件，确保更快的开发周期。
-
-API 是如何工作的？
+### API 是如何工作的？
 
 当开发者想要与 API 交互时，他们使用适当的 `HTTP` 方法（`GET`、`POST`、`PUT`、`DELETE` 等）向特定端点（`URL`）发送请求。API 处理请求，执行必要的操作，并返回带有请求数据或指示操作成功失败状态的响应。
 
@@ -4312,17 +4690,10 @@ API 是如何工作的？
 
 API 协议和架构是指规范 API 设计、通信和交互模式的标准和框架。以下是一些常用的 API 协议和架构：
 
-* REST（表述状态转移）：REST 是一种广泛采用的用于网络应用的架构风格。RESTful API 使用 `HTTP` 方法（`GET`、`POST`、`PUT`、`DELETE` 等）与由 `URLs`（统一资源定位符）标识的资源进行交互。REST API 强调无状态通信、可扩展性和关注点分离。它们被广泛用于 Web 开发，并遵循资源导向设计、无状态和统一接口等原则。
-
-* SOAP（简单对象访问协议）：SOAP 是一种用于使用 `XML` 在 Web 服务中交换结构化信息的协议。SOAP API 使用 `WSDL`（Web 服务描述语言）描述的 `XML` 契来定义消息格式、操作和合同。SOAP 以其丰富的功能、对复杂数据类型的支持、安全性和事务能力而闻名。它通常用于企业级集成和面向服务的架构。
-
-* gRPC（Google 远程过程调用）：gRPC 是一个由 Google 开发的高性能、语言无关的框架。它使用 `Protocol Buffers`（`protobuf`）来定义服务和消息。gRPC API 通过远程过程调用（`RPC`）实现服务之间高效且跨平台的通信。gRPC 以其速度、对双向流的支持、流量控制和身份验证而闻名。它通常用于微服务架构和分布式系统。
-
-* GraphQL：GraphQL 是一种用于 API 的开源查询语言和运行时。它允许客户端通过构建灵活且精确的查询来请求特定数据。与由服务器决定响应形状的 REST 不同，GraphQL 将控制权交给了客户端。GraphQL API 提供单一端点，并只返回客户端请求的数据，减少了数据的过度获取和获取不足。GraphQL 常用于对灵活性、高效数据检索和客户端驱动数据需求的场景。
-
-
-
-
+* **REST（表述状态转移）**：REST 是一种广泛采用的用于网络应用的架构风格。RESTful API 使用 `HTTP` 方法（`GET`、`POST`、`PUT`、`DELETE` 等）与由 `URLs`（统一资源定位符）标识的资源进行交互。REST API 强调无状态通信、可扩展性和关注点分离。它们被广泛用于 Web 开发，并遵循资源导向设计、无状态和统一接口等原则。
+* **SOAP（简单对象访问协议）**：SOAP 是一种用于使用 `XML` 在 Web 服务中交换结构化信息的协议。SOAP API 使用 `WSDL`（Web 服务描述语言）描述的 `XML` 契约来定义消息格式、操作和合同。SOAP 以其丰富的功能、对复杂数据类型的支持、安全性和事务能力而闻名。它通常用于企业级集成和面向服务的架构。
+* **gRPC（Google 远程过程调用）**：gRPC 是一个由 Google 开发的高性能、语言无关的框架。它使用 `Protocol Buffers`（`protobuf`）来定义服务和消息。gRPC API 通过远程过程调用（`RPC`）实现服务之间高效且跨平台的通信。gRPC 以其速度、对双向流的支持、流量控制和身份验证而闻名。它通常用于微服务架构和分布式系统。
+* **GraphQL**：GraphQL 是一种用于 API 的开源查询语言和运行时。它允许客户端通过构建灵活且精确的查询来请求特定数据。与由服务器决定响应形状的 REST 不同，GraphQL 将控制权交给了客户端。GraphQL API 提供单一端点，并只返回客户端请求的数据，减少了数据的过度获取和获取不足。GraphQL 常用于对灵活性、高效数据检索和客户端驱动数据需求的场景。
 
 这些是一些广泛使用的 API 协议和架构。每种协议都有其自身的优势和适用场景，选择取决于应用程序性质、性能需求、与现有系统的兼容性以及开发者的偏好等因素。
 
@@ -4360,6 +4731,7 @@ API 协议和架构是指规范 API 设计、通信和交互模式的标准和�
 ```bash
 npx create-next-app
 ```
+
 这将在当前目录下创建一个基础的 Next.js 项目。
 
 ### 步骤 2：创建 API 路由
@@ -4367,80 +4739,116 @@ npx create-next-app
 * 在项目目录内创建一个名为 `pages/api` 的新目录。
 * 在 `api` 目录下创建一个新的 JavaScript 文件，例如 `example.js`。该文件将代表你的 API 路由。
 
-### 步骤 3：为不同 HTTP 方法定义 API 路由：
+### 步骤 3：为不同 HTTP 方法定义 API 路由
 
-1. **GET 方法：从服务器检索数据。**
+#### 1. GET 方法：从服务器检索数据
 
 在 `example.js` 中，为 `GET` 方法定义 API 路由。例如：
 
 ```javascript
 export default function handler(req, res) {
-  if (req.method === ‘GET’) {
+
+  if (req.method === 'GET') {
+
     // 处理 GET 请求的逻辑
-    res.status(200).json({ message: ‘GET request received.’ });
+
+    res.status(200).json({ message: 'GET request received.' });
+
   } else {
+
     // 处理其他 HTTP 方法
-    res.status(405).json({ message: ‘Method Not Allowed’ });
+
+    res.status(405).json({ message: 'Method Not Allowed' });
+
   }
+
 }
 ```
 
-2. **POST 方法：向服务器发送数据以创建新资源。**
+#### 2. POST 方法：向服务器发送数据以创建新资源
 
 为了处理 `POST` 请求，向 `example.js` 中添加以下代码：
 
 ```javascript
 export default function handler(req, res) {
-  if (req.method === ‘POST’) {
+
+  if (req.method === 'POST') {
+
     // 处理 POST 请求的逻辑
+
     const data = req.body;
-    res.status(200).json({ message: ‘POST request received.’, data });
+
+    res.status(200).json({ message: 'POST request received.', data });
+
   } else {
+
     // 处理其他 HTTP 方法
-    res.status(405).json({ message: ‘Method Not Allowed’ });
+
+    res.status(405).json({ message: 'Method Not Allowed' });
+
   }
+
 }
 ```
 
 注意：对于 `POST` 方法，你需要解析请求体以访问数据。你可以使用 `body-parser` 或内置的 `express.json()` 中间件来实现这一点。
 
-3. **PUT 方法：向服务器发送数据以更新现有资源。**
+#### 3. PUT 方法：向服务器发送数据以更新现有资源
 
 对于 `PUT` 方法，你可以使用以下代码：
 
 ```javascript
 export default function handler(req, res) {
-  if (req.method === ‘PUT’) {
+
+  if (req.method === 'PUT') {
+
     // 处理 PUT 请求的逻辑
+
     const { id } = req.query; // 动态 URL
+
     const data = req.body;
+
     res.status(200).json({ message: `PUT request received for ID: ${id}`, data });
+
   } else {
+
     // 处理其他 HTTP 方法
-    res.status(405).json({ message: ‘Method Not Allowed’ });
+
+    res.status(405).json({ message: 'Method Not Allowed' });
+
   }
+
 }
 ```
 
 在此示例中，`PUT` 方法期望一个动态 URL `id` 来识别要更新的资源。`PUT` 和 `PATCH` 方法之间的主要区别如下：
 
-* **PUT：** `PUT` 方法用于用新表示完全替换现有资源。在发送 `PUT` 请求时，通常会在请求负载中发送整个资源。这意味着请求请求负载中未包含的任何字段都将被删除或重置为默认值。`PUT` 通常用于全量更新且是幂等的，这意味着多次发送相同的 `PUT` 请求将产生相同的结果。
-* **PATCH：** `PATCH` 方法用于部分更新现有资源。`PATCH` 请求通常不发送整个资源，而是只包含需要修改的特定字段或属性。这允许在不影响资源其他部分的情况下进行更细粒度的更新。`PATCH` 用于部分更新，且不一定是幂等的，这意味着多次发送相同的 `PATCH` 请求可能会产生不同的结果。
+* **PUT**：`PUT` 方法用于用新表示完全替换现有资源。在发送 `PUT` 请求时，通常会在请求负载中发送整个资源。这意味着请求负载中未包含的任何字段都将被删除或重置为默认值。`PUT` 通常用于全量更新且是幂等的，这意味着多次发送相同的 `PUT` 请求将产生相同的结果。
+* **PATCH**：`PATCH` 方法用于部分更新现有资源。`PATCH` 请求通常不发送整个资源，而是只包含需要修改的特定字段或属性。这允许在不影响资源其他部分的情况下进行更细粒度的更新。`PATCH` 用于部分更新，且不一定是幂等的，这意味着多次发送相同的 `PATCH` 请求可能会产生不同的结果。
 
-4. **DELETE 方法：向服务器发送请求以删除特定资源。**
+#### 4. DELETE 方法：向服务器发送请求以删除特定资源
 
 对于 `DELETE` 方法，你可以使用以下代码：
 
 ```javascript
 export default function handler(req, res) {
-  if (req.method === ‘DELETE’) {
+
+  if (req.method === 'DELETE') {
+
     // 处理 DELETE 请求的逻辑
+
     const { id } = req.query; // 动态 URL
+
     res.status(200).json({ message: `DELETE request received for ID: ${id}` });
+
   } else {
+
     // 处理其他 HTTP 方法
-    res.status(405).json({ message: ‘Method Not Allowed’ });
+
+    res.status(405).json({ message: 'Method Not Allowed' });
+
   }
+
 }
 ```
 
@@ -4454,7 +4862,7 @@ export default function handler(req, res) {
 npm run dev
 ```
 
-使用 Postman 或 cURL 等工具向你的 API 路由发送请求。例如，你可以向 `http://localhost:3000/api/example` 发送 `GET` 请求以查看 图 8.1：
+使用 Postman 或 cURL 等工具向你的 API 路由发送请求。例如，你可以向 `http://localhost:3000/api/example` 发送 `GET` 请求以查看图 8.1：
 
 ![](img/8.1.jpg)
 
@@ -4462,15 +4870,11 @@ npm run dev
 
 ## 使用 Apollo Server 在 Next.js 中设置和配置 GraphQL API
 
-
-
-
-
 在 GraphQL API 中，三个基本组件包括查询（queries）、变异（mutation）和解析器（resolvers）。
 
-*   **Query (查询)**：GraphQL 查询用于从服务器请求数据。它遵循 GraphQL schema 定义的特定结构，允许客户端指定想要检索的精确字段和关系。查询是并行执行的，响应结果与查询的形状匹配。
-*   **Mutation (变异)**：GraphQL 变异用于修改服务器上的数据。它允许客户端对资源执行创建、更新或删除操作。与查询一样，变异定义在 GraphQL schema 中并有其自己的结构。当进行会对服务器产生副作用的变化时，通常使用变异。
-*   **Resolver (解析器)**：解析器负责解析 GraphQL 中的查询或变异函数。它充当 API 与底层数据源之间的桥梁。schema 中的每个字段都定义了解析器，包含了获取或操作请求数据的逻辑。执行解析器以满足客户端的请求并返回对应的数据。
+* **Query (查询)**：GraphQL 查询用于从服务器请求数据。它遵循 GraphQL schema 定义的特定结构，允许客户端指定想要检索的精确字段和关系。查询是并行执行的，响应结果与查询的形状匹配。
+* **Mutation (变异)**：GraphQL 变异用于修改服务器上的数据。它允许客户端对资源执行创建、更新或删除操作。与查询一样，变异定义在 GraphQL schema 中并有其自己的结构。当进行会对服务器产生副作用的变化时，通常使用变异。
+* **Resolver (解析器)**：解析器负责解析 GraphQL 中的查询或变异函数。它充当 API 与底层数据源之间的桥梁。schema 中的每个字段都定义了解析器，包含了获取或操作请求数据的逻辑。执行解析器以满足客户端的请求并返回对应的数据。
 
 总的来说，查询用于检索数据，变异用于修改数据，而解析器处理这些请求的执行并提供请求的数据或执行必要的操作。
 
@@ -4478,26 +4882,27 @@ npm run dev
 
 ### 步骤 1：建立新的 Next.js 项目
 
-*   为你的项目创建一个新目录，并使用终端或命令行提示进入该目录。
-*   运行以下命令初始化一个新的 Next.js 项目：
+* 为你的项目创建一个新目录，并使用终端或命令行提示进入该目录。
+* 运行以下命令初始化一个新的 Next.js 项目：
 
-    ```
-    npx create-next-app
-    ```
-    将在当前目录下设置一个基础的 Next.js 项目。
+```bash
+npx create-next-app
+```
+
+将在当前目录下设置一个基础的 Next.js 项目。
 
 ### 步骤 2：安装所需的依赖项
 
-*   在你的项目目录中，运行以下命令安装 GraphQL 和 Apollo Server 需要的包：
+* 在你的项目目录中，运行以下命令安装 GraphQL 和 Apollo Server 需要的包：
 
-    ```bash
-    npm install apollo-server-micro graphql
-    ```
+```bash
+npm install apollo-server-micro graphql
+```
 
 ### 步骤 3：为 GraphQL 创建 API 路由
 
-*   在你的项目目录内，创建一个名为 `pages/api` 的新目录。
-*   在 `api` 目录中创建一个新的 JavaScript 文件，例如 `graphql.js`。该文件将代表你的 GraphQL API 路由。
+* 在你的项目目录内，创建一个名为 `pages/api` 的新目录。
+* 在 `api` 目录中创建一个新的 JavaScript 文件，例如 `graphql.js`。该文件将代表你的 GraphQL API 路由。
 
 ### 步骤 4：定义 GraphQL schema 和解析器
 
@@ -4507,75 +4912,149 @@ npm run dev
 import { ApolloServer, gql } from 'apollo-server-micro';
 
 const typeDefs = gql`
+
   type Book {
+
     id: ID!
+
     title: String!
+
     author: String!
+
   }
 
   type Query {
+
     books: [Book!]!
+
     book(id: ID!): Book
+
   }
 
   type Mutation {
+
     addBook(title: String!, author: String!): Book!
+
     updateBook(id: ID!, title: String, author: String): Book
+
     deleteBook(id: ID!): Book
+
   }
+
 `;
 
 const books = [
+
   { id: '1', title: 'Book 1', author: 'Author 1' },
+
   { id: '2', title: 'Book 2', author: 'Author 2' },
+
 ];
 
 const resolvers = {
+
   Query: {
+
     books: () => books,
+
     book: (parent, args) => books.find((book) => book.id === args.id),
+
   },
+
   Mutation: {
+
     addBook: (parent, args) => {
+
       const newBook = { id: String(books.length + 1), ...args };
+
       books.push(newBook);
+
       return newBook;
+
     },
+
     updateBook: (parent, args) => {
+
       const index = books.findIndex((book) => book.id === args.id);
+
       if (index >= 0) {
+
         const updatedBook = { ...books[index], ...args };
+
         books[index] = updatedBook;
+
         return updatedBook;
+
       }
+
       return null;
+
     },
+
     deleteBook: (parent, args) => {
+
       const index = books.findIndex((book) => book.id === args.id);
+
       if (index >= 0) {
+
         const deletedBook = books[index];
+
         books.splice(index, 1);
+
         return deletedBook;
+
       }
+
       return null;
+
     },
+
   },
+
 };
 ```
 
+### 步骤 5：创建 Apollo Server 实例
 
+```javascript
+const apolloServer = new ApolloServer({
 
+  typeDefs,
 
-`author`
+  resolvers,
 
-`}`
-}`
+});
 
-### Mutation：添加新书籍
+export const config = {
+
+  api: {
+
+    bodyParser: false,
+
+  },
+
+};
+
+export default apolloServer.createHandler({ path: '/api/graphql' });
+```
+
+### 步骤 6：测试 GraphQL API
+
+启动 Next.js 开发服务器：
+
+```bash
+npm run dev
+```
+
+在浏览器中访问 `http://localhost:3000/api/graphql` 以打开 GraphQL Playground。
+
+你可以使用以下查询和变异与 API 交互：
+
+#### Query：获取所有书籍
+
 ```graphql
-mutation {
-  addBook(title: “The Great Gatsby”, author: “F. Scott Fitzgerald”)
-  {
+query {
+  books {
     id
     title
     author
@@ -4583,36 +5062,62 @@ mutation {
 }
 ```
 
-### Mutation：更新书籍
+#### Query：按 ID 获取书籍
+
 ```graphql
-mutation {
-  updateBook(id: “bookId”, title: “New Title”, author: “New Author”) {
+query {
+  book(id: "1") {
     id
     title
     author
   }
 }
 ```
+
+#### Mutation：添加新书籍
+
+```graphql
+mutation {
+  addBook(title: "The Great Gatsby", author: "F. Scott Fitzgerald") {
+    id
+    title
+    author
+  }
+}
+```
+
+#### Mutation：更新书籍
+
+```graphql
+mutation {
+  updateBook(id: "bookId", title: "New Title", author: "New Author") {
+    id
+    title
+    author
+  }
+}
+```
+
 将 `bookId` 替换为想要更新的书籍的实际 ID。
 
-### Mutation：删除书籍
+#### Mutation：删除书籍
+
 ```graphql
 mutation {
-  deleteBook(id: “bookId”) {
+  deleteBook(id: "bookId") {
     id
     title
     author
   }
 }
 ```
+
 将 `bookId` 替换为想要删除书籍的实际 ID。
 
 你可以在 GraphQL Playground 界面中使用上述查询和变异与你的 GraphQL API 交互，并执行添加、更新和删除书籍等操作（参见图 8.2 和 图 8.3）。
 
 ![](img/8.2.jpg)
 **图 8.2：** 从 GraphQL API 获取数据
-
-图 8.3 显示了从 GraphQL API 添加数据：
 
 ![](img/8.3.jpg)
 **图 8.3：** 从 GraphQL API 添加数据
@@ -4627,13 +5132,15 @@ mutation {
 
 因此，虽然 GraphQL 查询确实可以同时通过 POST 和 GET 方法工作，但建议对大多数 GraphQL 操作使用 POST 请求，并仅在必要时对简单的只读查询使用 GET 请求。
 
-# 在 Next.js 中将 API 端点集成到客户端(#toc.xhtml_s137a)
+# 在 Next.js 中将 API 端点集成到客户端
 
-在将 REST API 集成到 Next.js 之前，你需要如何在 Next.js 中使用 SWR hook。此外，为了集成 GraphQL API，你可以利用 Apollo Client 库。让我让我分别解释每个库及其属性，并使用一个简短的代码示例进行说明。
+在将 REST API 集成到 Next.js 之前，你需要了解如何在 Next.js 中使用 SWR hook。此外，为了集成 GraphQL API，你可以利用 Apollo Client 库。让我分别解释每个库及其属性，并使用一个简短的代码示例进行说明。
 
-Next.js 中的 SWR（Stale-While-Revalidate）hook 是一个内置的数据获取库，它简化了数据获取、缓存以及客户端与服务器之间的同步。它提供了一种直观的方式来处理实时数据更新并优化应用程序的性能。以下是 SWR hook 属性及其用法说明：
+## Next.js 中的 SWR (Stale-While-Revalidate) Hook
 
-`useSWR`(key: string, fetcher: Function, options?: Config)`：这是 SWR hook 的主函数，用于获取和管理数据。它接受三个参数：
+Next.js 中的 SWR hook 是一个内置的数据获取库，它简化了数据获取、缓存以及客户端与服务器之间的同步。它提供了一种直观的方式来处理实时数据更新并优化应用程序的性能。以下是 SWR hook 属性及其用法说明：
+
+`useSWR(key: string, fetcher: Function, options?: Config)`：这是 SWR hook 的主函数，用于获取和管理数据。它接受三个参数：
 
 * `key`：正在获取的数据的唯一标识符。它可以是一个 URL、API 端点或任何代表数据源的字符串。
 * `fetcher`：负责执行实际 API 调用并返回响应的函数。fetcher 函数可以是异步的，并且通常应该以特定格式（如 JSON）返回获取的数据。
@@ -4642,13 +5149,20 @@ Next.js 中的 SWR（Stale-While-Revalidate）hook 是一个内置的数据获�
 这里有一个演示 SWR hook 用法的示例：
 
 ```javascript
-import useSWR from ‘swr’;
+import useSWR from 'swr';
+
 const fetcher = (url) => fetch(url).then((res) => res.json());
+
 const MyComponent = () => {
-  const { data, error } = useSWR‘/api/data’, fetcher);
-  if (error) return <<div>加载数据出错</</div>>;
-  if (!data) return <<div>加载中…</</div>>;
-  return <<div>>{data.message}</</div>>;
+
+  const { data, error } = useSWR('/api/data', fetcher);
+
+  if (error) return <div>加载数据出错</div>;
+
+  if (!data) return <div>加载中…</div>;
+
+  return <div>{data.message}</div>;
+
 };
 ```
 
@@ -4659,16 +5173,19 @@ const MyComponent = () => {
 
 此外，该 hook 还提供了以下函数：
 
-* `mutate`(data?, `shouldRevalidate`?, options?)：`mutate` 函数允许你手动更改数据。你可以使用它来更新数据。它接受三个参数：
+* `mutate(data?, shouldRevalidate?, options?)`：`mutate` 函数允许你手动更改数据。你可以使用它来更新数据。它接受三个参数：
     * `data`：要设置的新数据。
     * `shouldRevalidate`：布尔值，指示变异后是否应该进行重新验证。默认是 true。
     * `options`：变异的额外选项，例如 `revalidate`。
 * `revalidate()`：revalidate 函数触发数据的重新验证。
 * `isValidating`：`isValidating` 属性是一个布尔值，指示 SWR 是否正在验证（获取）数据。
 
-Apollo Client：Apollo Client 是一个强大的 GraphQL 客户端，用于 Next.js 应用程序中的数据获取和管理。它提供了缓存、本地状态管理和订阅等功能。以下是 Apollo Client 属性及其用法说明：
+## Apollo Client
+
+Apollo Client 是一个强大的 GraphQL 客户端，用于 Next.js 应用程序中的数据获取和管理。它提供了缓存、本地状态管理和订阅等功能。以下是 Apollo Client 属性及其用法说明：
 
 ### 1. 在 Next.js 中设置 Apollo Client
+
 要在 Next.js 中使用 Apollo Client，你需要安装必要的包：
 
 ```bash
@@ -4678,11 +5195,14 @@ npm install @apollo/client graphql
 安装完成后，你可以创建一个带有所需的 Apollo Client 实例，通常在一个单独的文件中：
 
 ```javascript
-import { ApolloClient, InMemoryCache } from ‘@apollo/client’;
+import { ApolloClient, InMemoryCache } from '@apollo/client';
 
 const client = new ApolloClient({
-  uri: ‘https://localhost:3000.com/graphql’, // 替换为你的 GraphQL API 端点
+
+  uri: 'https://localhost:3000.com/graphql', // 替换为你的 GraphQL API 端点
+
   cache: new InMemoryCache(),
+
 });
 
 export default client;
@@ -4691,18 +5211,26 @@ export default client;
 在前面的示例中，我们创建一个带有相应 GraphQL API 端点 (`uri`) 和用于数据缓存的 `InMemoryCache` 的 Apollo Client 实例。
 
 ### 2. Next.js 中的 Apollo Provider
+
 Next.js 提供了 `ApolloProvider` 组件来封装应用程序，并为层次结构所有组件提供 Apollo Client 实例。你通常可以在 `pages/_app.js` 文件中进行设置：
 
 ```javascript
-import { ApolloProvider } from ‘@apollo/client’;
-import client from ‘../path/to/apolloClient’;
+import { ApolloProvider } from '@apollo/client';
+
+import client from '../path/to/apolloClient';
 
 function MyApp({ Component, pageProps }) {
+
   return (
+
     <ApolloProvider client={client}>
-      <Component {…pageProps} />
+
+      <Component {...pageProps} />
+
     </ApolloProvider>
+
   );
+
 }
 
 export default MyApp;
@@ -4710,81 +5238,125 @@ export default MyApp;
 
 通过用 `ApolloProvider` 封装你的应用并传递 `client` 实例，应用程序中的所有组件都可以访问并利用 Apollo Client 进行数据获取和管理。
 
-#### 3. 使用 Apollo Client 查询数据：
-
-
-
-
+### 3. 使用 Apollo Client 查询数据
 
 要使用 Apollo Client 从 GraphQL API 获取数据，你可以使用 `@apollo/client` 提供的 `useQuery` hook。这是一个示例：
 
 ```javascript
-import { gql, useQuery } from ‘@apollo/client’;
+import { gql, useQuery } from '@apollo/client';
 
 const GET_USERS = gql`
+
   query {
+
     users {
+
       id
+
       name
+
     }
+
   }
+
 `;
 
 function MyComponent() {
+
   const { loading, error, data } = useQuery(GET_USERS);
+
   if (loading) return <div>Loading…</div>;
+
   if (error) return <div>Error loading data</div>;
+
   return (
-    <ul
+
+    <ul>
+
       {data.users.map((user) => (
+
         <li key={user.id}>{user.name}</li>
+
       ))}
+
     </ul>
+
   );
+
 }
 ```
 
-在上述述示例中，我们使用 `@apollo/client` 中的 `gql` 标签定义了一个 GraphQL 查询。然后使用 `useQuery` hook 根据 `GET_USERS` 查询获取数据。`loading` 属性表示数据是否正在获取中，`error` 属性捕获过程中发生的任何错误，而 `data` 属性包含包含获取的数据。
+在上述示例中，我们使用 `@apollo/client` 中的 `gql` 标签定义了一个 GraphQL 查询。然后使用 `useQuery` hook 根据 `GET_USERS` 查询获取数据。`loading` 属性表示数据是否正在获取中，`error` 属性捕获过程中发生的任何错误，而 `data` 属性包含包含获取的数据。
 
-### 使用 Apollo Client 进行 Mutation：
+### 使用 Apollo Client 进行 Mutation
 
 Apollo Client 提供了 `useMutation` hook 来处理 GraphQL 中的变异（数据修改）。这是一个示例：
 
 ```javascript
-import { gql, useMutation } from ‘@apollo/client’;
+import { gql, useMutation } from '@apollo/client';
 
 const ADD_USER = gql`
+
   mutation AddUser($input: UserInput!) {
+
     addUser(input: $input) {
+
       id
+
       name
+
     }
+
   }
+
 `;
 
 function MyComponent() {
+
   const [addUser, { loading, error, data }] = useMutation(ADD_USER);
+
   const handleAddUser = async () => {
+
     try {
+
       const { data } = await addUser({
+
         variables: {
+
           input: {
-            name: “John Doe”,
+
+            name: "John Doe",
+
           },
+
         },
+
       });
+
       console.log(data);
+
     } catch (error) {
+
       console.error(error);
+
     }
+
   };
+
   if (loading) return <div>Loading…</div>;
+
   if (error) return <div>Error adding user</div>;
+
   return (
+
     <div>
+
       <button onClick={handleAddUser}>Add User</button>
+
     </div>
+
   );
+
 }
 ```
 
@@ -4792,7 +5364,7 @@ function MyComponent() {
 
 在 `handleAddUser` 函数中，我们调用了 `addUser` 函数并提供了变异所需的变量。在这种情况下，我们正在添加一个名为“John Doe”的用户。可以相应地访问并利用响应数据。
 
-### Apollo Client 缓存：
+### Apollo Client 缓存
 
 Apollo Client 利用缓存来存储和管理获取的数据。缓存允许进行高效的数据检索和同步。默认情况下，Apollo Client 使用 `InMemoryCache` 实现，它提供了强大的缓存功能。
 
@@ -4800,7 +5372,7 @@ Apollo Client 利用缓存来存储和管理获取的数据。缓存允许进行
 
 这些是在 Next.js 中使用 Apollo Client 的一些关键方面。Apollo Client 还提供了许多功能和能力，包括本地状态管理、订阅和错误处理。它为在 Next.js 中使用 GraphQL 提供了全面的解决方案，简化了数据获取、缓存和操纵。
 
-**要使用 SWR (Stale-While-Revalidate) hook 在 Next.js 应用中集成 REST API 端点，你可以遵循以下步骤：**
+## 要使用 SWR (Stale-While-Revalidate) hook 在 Next.js 应用中集成 REST API 端点，你可以遵循以下步骤：
 
 1. 安装必要的依赖：
    `npm install swr`
@@ -4809,57 +5381,95 @@ Apollo Client 利用缓存来存储和管理获取的数据。缓存允许进行
 
 ```javascript
 export const fetchTodos = async () => {
-  const response = await fetch‘/api/todos’);
+
+  const response = await fetch('/api/todos');
+
   const data = await response.json();
+
   return data;
+
 };
 
 export const createTodo = async (todo) => {
-  const response = await fetch‘/api/todos’, {
-    method: ‘POST’,
+
+  const response = await fetch('/api/todos', {
+
+    method: 'POST',
+
     headers: {
-      ‘Content-Type’: ‘application/json’,
+
+      'Content-Type': 'application/json',
+
     },
+
     body: JSON.stringify(todo),
+
   });
+
   const data = await response.json();
+
   return data;
+
 };
 
 export const updateTodo = async (id, todo) => {
-  const response = await fetch`/api/todos/${id}`, {
-    method: ‘PUT’,
+
+  const response = await fetch(`/api/todos/${id}`, {
+
+    method: 'PUT',
+
     headers: {
-      ‘Content-Type’: ‘application/json’,
+
+      'Content-Type': 'application/json',
+
     },
+
     body: JSON.stringify(todo),
+
   });
+
   const data = await response.json();
+
   return data;
+
 };
 ```
 
 3. 在你的 Next.js 组件中，导入必要的依赖项并使用 SWR 获取和管理数据：
 
 ```javascript
-import useSWR from ‘swr’;
+import useSWR from 'swr';
+
 import { fetchTodos } from './api';
 
 const TodoList = () => {
-  const { data: todos, error } = useSWR‘/api/todos’, fetchTodos);
+
+  const { data: todos, error } = useSWR('/api/todos', fetchTodos);
 
   if (error) return <p>{error.message}</p>;
+
   if (!todos) return <p>Loading…</p>;
+
   return (
+
     <div>
+
       <h1>Todo List</h1>
+
       <ul>
+
         {todos.map((todo) => (
+
           <li key={todo.id}>{todo.title}</li>
+
         ))}
+
       </ul>
+
     </div>
+
   );
+
 };
 
 export default TodoList;
@@ -4869,96 +5479,205 @@ export default TodoList;
 
 ```javascript
 export default function handler(req, res) {
-  if (req.method === ‘GET’) {
+
+  if (req.method === 'GET') {
+
     const todos = [
-      { id: 1, title: ‘Todo 1’ },
-      { id: 2, title: ‘Todo 2’ },
+
+      { id: 1, title: 'Todo 1' },
+
+      { id: 2, title: 'Todo 2' },
+
     ];
+
     res.status(200).json(todos);
-  } else if (req.method === ‘POST’) {
+
+  } else if (req.method === 'POST') {
+
     // 处理创建 todo 的 POST 请求
-  } else if (req.method === ‘PUT’) {
+
+  } else if (req.method === 'PUT') {
+
     // 处理更新 todo 的 PUT 请求
-  } else if (req.method === ‘DELETE’) {
+
+  } else if (req.method === 'DELETE') {
+
     // 处理删除 todo 的 DELETE 请求
+
   }
+
 }
 ```
 
 5. 现在，你可以在 Next.js 应用中使用 `TodoList` 组件，它将使用 SWR 自动获取并更新 TODOs。
 
-    ![](img/8.4.jpg)
+![](img/8.4.jpg)
 
-    **图 8.4:** 示例 UI 使用 RESTfull
+**图 8.4:** 示例 UI 使用 RESTful
 
-记得启动你的 Next.js 应用 (`npm run dev`) 以查看更改。确保在正确的位置拥有所需的导入和文件，以便代码能够正常运行。（*参见 图 8.4*）：
+记得启动你的 Next.js 应用 (`npm run dev`) 以查看更改。确保在正确的位置拥有所需的导入和文件，以便代码能够正常运行。
 
+## 使用 Apollo Client 集成 GraphQL API
 
+要使用 Apollo Client 在 Next.js 应用中集成 GraphQL API 端点，请遵循以下步骤：
 
+1. 安装必要的依赖：
+   `npm install @apollo/client graphql`
+
+2. 创建一个新文件 `apolloClient.js` 来设置 Apollo Client 实例：
 
 ```javascript
-const { loading, error, data } = useQuery(GET_BOOKS, { client });
+import { ApolloClient, InMemoryCache } from '@apollo/client';
 
-if (loading) {
-  return <p>Loading…</p>;
-}
+const client = new ApolloClient({
 
-if (error) {
-  return <p>Error: {error.message}</p>;
-}
+  uri: 'http://localhost:3000/api/graphql',
 
-const { books } = data;
-return (
-  <div>
-    <h1>Books</h1>
-    {books.map((book) => (
-      <div key={book.id}>
-        <h2>{book.title}</h2>
-        <p>{book.author}</p>
-      </div>
-    ))}
-  </div>>
-);
-}
+  cache: new InMemoryCache(),
+
+});
+
+export default client;
+```
+
+3. 创建一个新页面 `pages/books.js` 来显示从 GraphQL API 获取的书籍列表：
+
+```javascript
+import { gql, useQuery } from '@apollo/client';
+
+const GET_BOOKS = gql`
+
+  query GetBooks {
+
+    books {
+
+      id
+
+      title
+
+      author
+
+    }
+
+  }
+
+`;
+
+const BooksPage = () => {
+
+  const { loading, error, data } = useQuery(GET_BOOKS, { client });
+
+  if (loading) {
+
+    return <p>Loading…</p>;
+
+  }
+
+  if (error) {
+
+    return <p>Error: {error.message}</p>;
+
+  }
+
+  const { books } = data;
+
+  return (
+
+    <div>
+
+      <h1>Books</h1>
+
+      {books.map((book) => (
+
+        <div key={book.id}>
+
+          <h2>{book.title}</h2>
+
+          <p>{book.author}</p>
+
+        </div>
+
+      ))}
+
+    </div>
+
+  );
+
+};
+
+export default BooksPage;
 ```
 
 4. 更新 API 路由文件 `api/graphql.js` 中的 `graphqlHandler`，以处理 CORS 头部并启用内省查询（introspection）：
 
 ```javascript
-import { ApolloServer, gql } from ‘apollo-server-micro’;
+import { ApolloServer, gql } from 'apollo-server-micro';
+
 const typeDefs = gql`
+
 type Book {
+
   id: ID!
+
   title: String!
+
   author: String!
+
 }
+
 type Query {
+
   books: [Book!]!
+
   book(id: ID!): Book
+
 }
+
 # …Mutation definitions…
+
 const books = [
-  { id: ‘1’, title: ‘Book 1’, author: ‘Author 1’ },
-  { id: ‘2’, title: ‘Book 2’, author: ‘Author 2’ },
+
+  { id: '1', title: 'Book 1', author: 'Author 1' },
+
+  { id: '2', title: 'Book 2', author: 'Author 2' },
+
 ];
+
 const resolvers = {
+
   Query: {
+
     books: () => books,
+
     book: (parent, args) => books.find((book) => book.id === args.id),
+
   },
+
   // …Mutation resolvers…
+
 };
+
 const apolloServer = new ApolloServer({
+
   typeDefs,
+
   resolvers,
+
   introspection: true,
+
 });
+
 export const config = {
+
   api: {
+
     bodyParser: false,
+
   },
+
 };
-export default apolloServer.createHandler({ path: ‘/api/graphql’ });
+
+export default apolloServer.createHandler({ path: '/api/graphql' });
 ```
 
 5. 现在，你可以访问 Next.js 应用中的 `books` 页面，查看从 API 获取的书籍列表。
@@ -4969,7 +5688,7 @@ export default apolloServer.createHandler({ path: ‘/api/graphql’ });
 
 在 Next.js 中，处理 API 调用中的错误和异常涉及在服务器端和客户端实现错误处理逻辑。以下你可以遵循的通用方法：
 
-## 1. 服务端错误处理
+### 1. 服务端错误处理
 
 * 在你的 API 路由处理器（`/pages/api/your-api-route.js`）中，将代码封装在 `try-catch` 块中。
 * 捕获 API 调用过程中可能发生的任何错误。
@@ -4977,16 +5696,23 @@ export default apolloServer.createHandler({ path: ‘/api/graphql’ });
 
 ```javascript
 export default async function handler(req, res) {
+
   try {
+
     // 此处编写 API 代码
-    res.status(200).json({ message: ‘Success’ });
+
+    res.status(200).json({ message: 'Success' });
+
   } catch (error) {
-    res.status(500).json({ message: ‘Internal Server Error’ });
+
+    res.status(500).json({ message: 'Internal Server Error' });
+
   }
+
 }
 ```
 
-## 2. 客户端错误处理
+### 2. 客户端错误处理
 
 * 在客户端代码（React 组件）中，处理 API 调用过程中可能发生的任何错误或异常。
 * 使用 `try-catch` 块或 `Promise.catch()` 来捕获 API 调用期间抛出的任何错误。
@@ -4994,26 +5720,46 @@ export default async function handler(req, res) {
 * 以下是一个 `fetch` 在 Next.js 客户端组件中处理错误的示例：
 
 ```javascript
-import { useState } from ‘react’;
+import { useState } from 'react';
+
 export default function MyComponent() {
+
   const [error, setError] = useState(null);
+
   const fetchData = async () => {
+
     try {
-      const response = await fetch(‘/api/your-api-route’);
+
+      const response = await fetch('/api/your-api-route');
+
       if (!response.ok) {
-        throw new Error(‘Request failed’);
+
+        throw new Error('Request failed');
+
       }
+
       // 处理响应数据
+
     } catch (error) {
-      setError(‘An error occurred’);
+
+      setError('An error occurred');
+
     }
+
   };
+
   return (
+
     <div>
+
       {error && <p>{error}</p>}
+
       <button onClick={fetchData}>Fetch Data</button>
+
     </div>
+
   );
+
 }
 ```
 
@@ -5022,12 +5768,18 @@ export default function MyComponent() {
 SWR 是一个用于 Next.js 的流行数据获取库，提供了内置的错误处理功能。
 
 ```javascript
-import useSWR from ‘swr';
+import useSWR from 'swr';
+
 const MyComponent = () => {
-  const { data, error } = useSWR(‘/api/your-api-route’, fetcher);
+
+  const { data, error } = useSWR('/api/your-api-route', fetcher);
+
   if (error) return <p>Error loading data</p>;
+
   if (!data) return <p>Loading...</p>;
+
   return <div>{JSON.stringify(data)}</div>;
+
 };
 ```
 
@@ -5036,35 +5788,61 @@ const MyComponent = () => {
 如果你在 Next.js 中使用 Apollo Client，可以使用 `useQuery` 处理错误。
 
 ```javascript
-import { useQuery, gql } from ‘@apollo/client’;
+import { useQuery, gql } from '@apollo/client';
+
 const GET_DATA = gql`
+
   query GetBooks {
+
     books {
+
       id
+
       title
+
       author
+
     }
+
   }
+
 `;
 
 const MyComponent = () => {
+
   const { data, error, loading } = useQuery(GET_DATA);
+
   if (loading) return <p>Loading...</p>;
+
   if (error) return <p>Error: {error.message}</p>;
+
   return <div>{JSON.stringify(data)}</div>;
+
 };
 ```
 
+## Next.js 应用程序中 API 安全和身份验证的最佳实践
 
+在 Next.js 应用程序中保护 API 和实现身份验证对于保护敏感数据和确保只有授权用户可以访问特定资源至关重要。以下是一些最佳实践：
 
-
-- **安全 API 密钥和密钥**：
+* **使用 HTTPS**：
+    - 始终通过 `HTTPS` 提供你的 `Next.js` 应用程序，以加密客户端和服务器之间传输的数据。这可以防止窃听和中间人攻击。
+* **实现身份验证**：
+    - 使用强大的身份验证机制，如 `JWT`（JSON Web Tokens）、`OAuth` 或基于会话的身份验证来验证用户身份。
+    - 考虑使用 `NextAuth.js` 等库，它提供了针对 Next.js 应用程序量身定制的内置身份验证解决方案。
+* **授权和访问控制**：
+    - 实施基于角色的访问控制（`RBAC`）或基于属性的访问控制（`ABAC`），以根据用户角色和权限限制对特定 API 端点或资源的访问。
+* **输入验证和清理**：
+    - 验证并清理所有传入的请求数据，以防止注入攻击（例如 `SQL` 注入、`XSS`）。使用 `Zod` 或 `Joi` 等库进行模式验证。
+* **速率限制**：
+    - 实施速率限制以防止滥用并保护 API 免受暴力攻击或拒绝服务（`DoS`）攻击。使用 `express-rate-limit` 等中间件或自定义逻辑。
+* **安全 API 密钥和密钥**：
     - 通过将 API 密钥、令牌和其他密钥存储在安全存储解决方案中（例如环境变量）来保护它们，并避免将其提交到版本控制中。
-- **启用 CORS（跨源资源共享）**：
+* **启用 CORS（跨源资源共享）**：
     - 适当配置 CORS 头部，限制未经授权的域访问您的 API，并防止跨源攻击。
-- **定期更新依赖**：
+* **定期更新依赖**：
     - 保持您的 `Next.js` 应用程序及其依赖为最新版本，以获得安全补丁和错误修复。
-- **进行安全审计和测试**：
+* **进行安全审计和测试**：
     - 定期进行安全审计、代码审查和漏洞扫描，以识别并解决潜在的安全漏洞。
     - 进行彻底的渗透测试和安全评估，以发现应用程序安全中的任何弱环节。
 
@@ -5144,7 +5922,7 @@ const MyComponent = () => {
 
 数据库安全至关重要，我们将为你提供保护数据的最佳实践。我们将讨论保护数据库、保护敏感信息以及防止常见漏洞的技术。
 
-此外，我们将进入数据建模和模式 设计领域。你将获得关于设计高效数据库结构、创建实体之间的关系以及优化查询以提高性能的见解。
+此外，我们将进入数据建模和模式设计领域。你将获得关于设计高效数据库结构、创建实体之间的关系以及优化查询以提高性能的见解。
 
 最后，我们将触及扩展数据库以满足不断增长的用户群。我们将讨论增强性能和确保高可用性的策略，允许你的应用程序有效地处理增加的流量和用户交互。
 
@@ -5164,51 +5942,45 @@ const MyComponent = () => {
 
 # 数据库管理系统快速概述
 
-
-
-
-
 数据库管理系统（DBMS）是一种允许用户高效地存储、组织和管理大量数据的软件系统。它提供了一种结构化且中心化的数据处理方法，使得信息更容易被访问、检索、修改和删除。
 
 ### DBMS 的核心组件
 
-*   **数据 (Data)**：DBMS 管理不同类型的数据，例如文本、数字、图像、视频等，这些数据存储在各种格式和结构中。
-*   **数据库 (Database)**：数据库是以结构化方式组织和存储的相关数据的集合。它由表、视图、索引以及定义数据结构和关系的对象组成。
-*   **数据库模式 (Database Schema)**：数据库模式定义了数据库的逻辑和物理结构。它描述了表及其属性（列）、数据类型、约束以及与其他表之间的关系。
-*   **数据操作语言 (DML)**：DML 是一种允许用户在数据库中检索、插入、更新和删除数据的语言。常见的 DML 语句包括 `SELECT`、`INSERT`、`UPDATE` 和 `DELETE`。
-*   **数据定义语言 (DDL)**：DDL 是一种用于定义和管理数据库结构的语言。它包括 `CREATE`、`ALTER` 和 `DROP` 等语句，用于创建表、修改其结构或删除表。
-*   **查询优化 (Query Optimization)**：DBMS 优化查询的执行以提高性能和效率。它分析查询，评估不同的执行计划，并选择最有效的方法检索数据。
-*   **事务管理 (Transaction Management)**：DBMS 确保事务的 ACID 特性。ACID 代表原子性（事务被视为单个工作单元）、一致性（确保数据完整性）、隔离性（事务之间彼此隔离，独立立执行）和持久性（一旦事务提交，其更改将是永久的）。
-*   **并发控制 (Concurrency Control)**：DBMS 处理多个用户或进程对数据库的并发访问。它确保在同时执行多个事务时维护数据完整性。使用锁定、时间戳和多会并发控制等技术来管理并发。
-*   **安全与授权 (Security and Authorization)**：DBMS 提供了控制数据库访问并确保数据安全的机制。它包括用户验证、授权和权限管理，以保护敏感数据免受未经授权的访问。
-*   **备份与恢复 (Backup and Recovery)**：DBMS 在发生系统故障、数据损坏或人为错误时便于数据的备份和恢复。它允许用户创建备份、将数据恢复到之前的状态并执行恢复操作以尽可能的减少数据丢失。
+* **数据 (Data)**：DBMS 管理不同类型的数据，例如文本、数字、图像、视频等，这些数据存储在各种格式和结构中。
+* **数据库 (Database)**：数据库是以结构化方式组织和存储的相关数据的集合。它由表、视图、索引以及定义数据结构和关系的对象组成。
+* **数据库模式 (Database Schema)**：数据库模式定义了数据库的逻辑和物理结构。它描述了表及其属性（列）、数据类型、约束以及与其他表之间的关系。
+* **数据操作语言 (DML)**：DML 是一种允许用户在数据库中检索、插入、更新和删除数据的语言。常见的 DML 语句包括 `SELECT`、`INSERT`、`UPDATE` 和 `DELETE`。
+* **数据定义语言 (DDL)**：DDL 是一种用于定义和管理数据库结构的语言。它包括 `CREATE`、`ALTER` 和 `DROP` 等语句，用于创建表、修改其结构或删除表。
+* **查询优化 (Query Optimization)**：DBMS 优化查询的执行以提高性能和效率。它分析查询，评估不同的执行计划，并选择最有效的方法检索数据。
+* **事务管理 (Transaction Management)**：DBMS 确保事务的 ACID 特性。ACID 代表原子性（事务被视为单个工作单元）、一致性（确保数据完整性）、隔离性（事务之间彼此隔离，独立执行）和持久性（一旦事务提交，其更改将是永久的）。
+* **并发控制 (Concurrency Control)**：DBMS 处理多个用户或进程对数据库的并发访问。它确保在同时执行多个事务时维护数据完整性。使用锁定、时间戳和多版本并发控制等技术来管理并发。
+* **安全与授权 (Security and Authorization)**：DBMS 提供了控制数据库访问并确保数据安全的机制。它包括用户验证、授权和权限管理，以保护敏感数据免受未经授权的访问。
+* **备份与恢复 (Backup and Recovery)**：DBMS 在发生系统故障、数据损坏或人为错误时便于数据的备份和恢复。它允许用户创建备份、将数据恢复到之前的状态并执行恢复操作以尽可能减少数据丢失。
 
 ### DBMS 的类型
 
-*   **关系数据库管理系统 (RDBMS)**：最广泛使用的类型，数据组织在具有预定义关系的表中。示例包括 `MySQL`、`Oracle Database` 和 `Microsoft SQL Server`。
-*   **面向对象的数据库管理系统 (OODBMS)**：这些系统以对象的形式存储数据，允许继承、封装和多态。它们适用于复杂的数据结构。示例包括 `MongoDB` 和 `Apache Cassandra`。
-*   **层次型 DBMS (Hierarchical DBMS)**：数据以树形结构组织，每个记录都有父子关系。它在早期很流行，但很大程度上已被其他模型取代。
-*   **网络型 DBMS (Network DBMS)**：与层次型 DBMS 类似，但结构更灵活。它允许记录拥有多个父和子记录，创建复杂的关系。
-*   **NoSQL DBMS**：NoSQL（不仅是 SQL）数据库旨在处理大规模、非结构化和多样化的数据。它们提供了高可扩展性、性能和灵活性。示例包括 `MongoDB`、`Cassandra` 和 `Redis`。
-*   **NewSQL DBMS**：NewSQL 数据库结合了 NoSQL 的可扩展性和性能以及传统关系数据库的 ACID 特性。它们旨在解决传统 RDBMS 在处理大量数据和并发用户方面的局限性。NewSQL 系统在保持事务一致性的同时提供了分布式架构和高效的并行处理。示例包括 `Google Spanner`、`Cockroach DB` 和 `TiDB`。
+* **关系数据库管理系统 (RDBMS)**：最广泛使用的类型，数据组织在具有预定义关系的表中。示例包括 `MySQL`、`Oracle Database` 和 `Microsoft SQL Server`。
+* **面向对象的数据库管理系统 (OODBMS)**：这些系统以对象的形式存储数据，允许继承、封装和多态。它们适用于复杂的数据结构。示例包括 `MongoDB` 和 `Apache Cassandra`。
+* **层次型 DBMS (Hierarchical DBMS)**：数据以树形结构组织，每个记录都有父子关系。它在早期很流行，但很大程度上已被其他模型取代。
+* **网络型 DBMS (Network DBMS)**：与层次型 DBMS 类似，但结构更灵活。它允许记录拥有多个父和子记录，创建复杂的关系。
+* **NoSQL DBMS**：NoSQL（不仅是 SQL）数据库旨在处理大规模、非结构化和多样化的数据。它们提供了高可扩展性、性能和灵活性。示例包括 `MongoDB`、`Cassandra` 和 `Redis`。
+* **NewSQL DBMS**：NewSQL 数据库结合了 NoSQL 的可扩展性和性能以及传统关系数据库的 ACID 特性。它们旨在解决传统 RDBMS 在处理大量数据和并发用户方面的局限性。NewSQL 系统在保持事务一致性的同时提供了分布式架构和高效的并行处理。示例包括 `Google Spanner`、`Cockroach DB` 和 `TiDB`。
 
 ## 使用 DBMS 的优势
 
-*   **数据中心化 (Data Centralization)**：DBMS 允许用户将数据存储在中心位置，为不同的应用程序和用户提供统一的数据视图。这消除了数据冗余和不一致性。
-*   **数据共享 (Data Sharing)**：DBMS 允许多个用户同时访问和共享数据。它通过并发控制机制提供受控的访问并确保数据完整性。
-*   **数据安全 (Data Security)**：DBMS 包含用户验证、访问控制和加密等功能，保护敏感数据免受未经授权的访问，确保数据安全并符合法规。
-*   **数据完整性 (Data Integrity)**：DBMS 强制执行数据完整性约束（如主键约束和引用完整性），以维护数据的准确性和一致性。
-*   **数据一致性 (Data Consistency)**：DBMS 确保即使在并发访问和更新期间数据也保持一致和有效。ACID 特性保证了事务的可靠执行并维护数据完整性。
-*   **数据可扩展性 (Data Scalability)**：DBMS 提供了高效处理大量数据的机制。它允许通过增加更多服务器或节点来分布数据和负载来实现水平扩展。
-*   **数据恢复 (Data Recovery)**：DBMS 支持备份和恢复机制，以防止在系统故障、灾难或人为错误时发生数据丢失。它允许将数据库恢复到之前的状态或进行点恢复。
-*   **数据独立性 (Data Independence)**：DBMS 通过将数据库的逻辑结构（模式）与物理存储细节分离来提供数据独立性。这允许在修改数据库模式而不影响使用这些数据的应用程序。
-*   **数据查询与报告 (Data Querying and Reporting)**：DBMS 提供了查询语言（例如 `SQL`）和工具来执行复杂的数据查询、生成报告并从数据中提取有用见解。
-*   **提高性能 (Improved Performance)**：DBMS 优化查询执行、索引和缓存技术以增强性能和响应时间。它利用查询优化算法选择最有效的执行计划。
-*   **数据维护 (Data Maintenance)**：DBMS 提供了管理和维护数据库的工具，如数据备份、恢复、索引和性能调优。它简化了管理任务。
+* **数据中心化 (Data Centralization)**：DBMS 允许用户将数据存储在中心位置，为不同的应用程序和用户提供统一的数据视图。这消除了数据冗余和不一致性。
+* **数据共享 (Data Sharing)**：DBMS 允许多个用户同时访问和共享数据。它通过并发控制机制提供受控的访问并确保数据完整性。
+* **数据安全 (Data Security)**：DBMS 包含用户验证、访问控制和加密等功能，保护敏感数据免受未经授权的访问，确保数据安全并符合法规。
+* **数据完整性 (Data Integrity)**：DBMS 强制执行数据完整性约束（如主键约束和引用完整性），以维护数据的准确性和一致性。
+* **数据一致性 (Data Consistency)**：DBMS 确保即使在并发访问和更新期间数据也保持一致和有效。ACID 特性保证了事务的可靠执行并维护数据完整性。
+* **数据可扩展性 (Data Scalability)**：DBMS 提供了高效处理大量数据的机制。它允许通过增加更多服务器或节点来分布数据和负载来实现水平扩展。
+* **数据恢复 (Data Recovery)**：DBMS 支持备份和恢复机制，以防止在系统故障、灾难或人为错误时发生数据丢失。它允许将数据库恢复到之前的状态或进行点恢复。
+* **数据独立性 (Data Independence)**：DBMS 通过将数据库的逻辑结构（模式）与物理存储细节分离来提供数据独立性。这允许在修改数据库模式而不影响使用这些数据的应用程序。
+* **数据查询与报告 (Data Querying and Reporting)**：DBMS 提供了查询语言（例如 `SQL`）和工具来执行复杂的数据查询、生成报告并从数据中提取有用见解。
+* **提高性能 (Improved Performance)**：DBMS 优化查询执行、索引和缓存技术以增强性能和响应时间。它利用查询优化算法选择最有效的执行计划。
+* **数据维护 (Data Maintenance)**：DBMS 提供了管理和维护数据库的工具，如数据备份、恢复、索引和性能调优。它简化了管理任务。
 
-
-
-
+## 关系型数据库管理系统
 
 关系型数据库基于关系模型，该模型将数据组织成由行和列组成的表。每个表代表一个实体或实体之间的关系。在 `MySQL` 中，表是通过特定的模式创建的，模式定义了列的结构和数据类型。
 
@@ -5216,30 +5988,32 @@ const MyComponent = () => {
 
 数据库规范化有几种范式，包括：
 
-- **第一阶范式 (1NF):** 确保表中的每一列都包含原子值（不可分割且不能进一步划分）。
-- **第二阶范式 (2NF):** 在 `1NF` 的基础上，要求表中的每个非键列都函数依赖于整个主键。
-- **第三阶范式 (3NF):** 在 `2NF` 的基础上，要求表中的每个非键列仅依赖于主键，而不依赖于其他非键列。
-- **Boyce-Codd 范式 (BCNF):** `3NF` 的一种严格形式，消除了非键列之间所有的函数依赖。
-- **第四阶范式 (4NF):** 确保表内部没有多值依赖。
+* **第一阶范式 (1NF):** 确保表中的每一列都包含原子值（不可分割且不能进一步划分）。
+* **第二阶范式 (2NF):** 在 `1NF` 的基础上，要求表中的每个非键列都函数依赖于整个主键。
+* **第三阶范式 (3NF):** 在 `2NF` 的基础上，要求表中的每个非键列仅依赖于主键，而不依赖于其他非键列。
+* **Boyce-Codd 范式 (BCNF):** `3NF` 的一种严格形式，消除了非键列之间所有的函数依赖。
+* **第四阶范式 (4NF):** 确保表内部没有多值依赖。
 
 现在让我们来讨论 OLAP（在线分析处理）和 OLTP（在线事务处理）：
 
 ### OLAP
+
 OLAP 是一类用于海量数据复杂分析和报告的软件和技术。它侧重于提供业务智能和决策支持能力。OLAP 数据库专为读密集型操作和复杂分析查询设计。它们通常将聚合数据存储在多维结构中，称为数据立方体，允许从不同的角度对数据进行快速查询、切片和分析。
 
 ### OLTP
+
 另一方面，OLTP 是一类用于管理和处理组织日常事务操作的软件和技术。OLTP 数据库专为高速数据处理、事务一致性和并发访问而设计。它们支持实时插入、更新和删除小量数据的操作。`MySQL` 作为关系型数据库管理系统（RDBMS），常用于对数据一致性和实时事务处理至关重要的 `OLTP` 应用。
 
 # NoSQL 数据库管理系统
 
-NoSQL（不仅仅是 SQL）是一种数据库管理系统，它偏离了 `MySQL` 等 RDBMS 中使用的传统关系模型。`MongoDB` 是 NoSQL  DBMS 的一个流行示例，让我们详细探讨它的特性和背景：
+NoSQL（不仅仅是 SQL）是一种数据库管理系统，它偏离了 `MySQL` 等 RDBMS 中使用的传统关系模型。`MongoDB` 是 NoSQL DBMS 的一个流行示例，让我们详细探讨它的特性和背景：
 
-- **面向文档的模型:** 包括 `MongoDB` 在内的 NoSQL 数据库使用面向文档的模型进行数据存储。`MongoDB` 不使用行列表，而是将数据存储在灵活的自描述文档中。这些文档通常以类似 JSON (BSON) 的格式表示，允许存储嵌套结构和动态模式。
-- **模式灵活性:** 与 RDBMS 的固定模式结构不同，像 `MongoDB` 这样的 NoSQL 数据库提供了模式灵活性。每个文档都可以有自己的结构，允许你在同一个集合中存储不同类型的数据。这种灵活性简化了开发过程，特别是在数据模式随时间演进的场景下。
-- **可扩展性和高性能:** NoSQL 数据库专为水平扩展而设计，这意味着它们可以将数据分布在多个服务器或节点上，以处理高数据量和流量。`MongoDB` 特别在扩展性方面表现，提供自动分片功能，将数据和查询分布到机器集群中。它为读和写操作都提供了高性能，使其适用于大规模应用程序。
-- **复制与高可用性:** `MongoDB` 支持副本集，副本集是维护相同数据副本的数据库节点集群。副本集提供了数据冗余和高可用性，确保系统在节点故障时仍能运行。`MongoDB` 使用自动故障转移机制选出新的主节点并保持服务的连续性。
-- **查询与索引:** `MongoDB` 提供了一种灵活且强大的查询语言来检索数据，称为 MongoDB 查询语言 (`MQL`)。`MQL` 支持广泛的查询能力，包括过滤、排序、聚合和地理查询。`MongoDB` 还支持索引，允许通过在特定字段上创建索引来优化查询性能。
-- **用例与背景:** `MongoDB` 特别适用于灵活性、可扩展性和实时数据处理至关重要的用例。它常用于内容管理系统、实时分析、日志和监控系统以及用户配置管理等场景。此外，`MongoDB` 的模型使其更容易与现代 Web 开发框架和语言集成。
+* **面向文档的模型:** 包括 `MongoDB` 在内的 NoSQL 数据库使用面向文档的模型进行数据存储。`MongoDB` 不使用行列表，而是将数据存储在灵活的自描述文档中。这些文档通常以类似 JSON (BSON) 的格式表示，允许存储嵌套结构和动态模式。
+* **模式灵活性:** 与 RDBMS 的固定模式结构不同，像 `MongoDB` 这样的 NoSQL 数据库提供了模式灵活性。每个文档都可以有自己的结构，允许你在同一个集合中存储不同类型的数据。这种灵活性简化了开发过程，特别是在数据模式随时间演进的场景下。
+* **可扩展性和高性能:** NoSQL 数据库专为水平扩展而设计，这意味着它们可以将数据分布在多个服务器或节点上，以处理高数据量和流量。`MongoDB` 特别在扩展性方面表现，提供自动分片功能，将数据和查询分布到机器集群中。它为读和写操作都提供了高性能，使其适用于大规模应用程序。
+* **复制与高可用性:** `MongoDB` 支持副本集，副本集是维护相同数据副本的数据库节点集群。副本集提供了数据冗余和高可用性，确保系统在节点故障时仍能运行。`MongoDB` 使用自动故障转移机制选出新的主节点并保持服务的连续性。
+* **查询与索引:** `MongoDB` 提供了一种灵活且强大的查询语言来检索数据，称为 MongoDB 查询语言 (`MQL`)。`MQL` 支持广泛的查询能力，包括过滤、排序、聚合和地理查询。`MongoDB` 还支持索引，允许通过在特定字段上创建索引来优化查询性能。
+* **用例与背景:** `MongoDB` 特别适用于灵活性、可扩展性和实时数据处理至关重要的用例。它常用于内容管理系统、实时分析、日志和监控系统以及用户配置管理等场景。此外，`MongoDB` 的模型使其更容易与现代 Web 开发框架和语言集成。
 
 ### SQL 和 NoSQL DBMS 的区别
 
@@ -5250,30 +6024,61 @@ NoSQL（不仅仅是 SQL）是一种数据库管理系统，它偏离了 `MySQL`
 | 查询语言 | 使用 `SQL`（结构化查询语言）定义和操作数据。 | 每个 NoSQL 数据库都有特定的查询语言（例如，`MongoDB` 使用类似于 JavaScript 的查询语言）。 |
 | 可扩展性 | 垂直扩展（扩展单个服务器的硬件资源）。 | 水平扩展（添加更多服务器来分担负载）。 |
 | 数据关系 | 使用外键支持表与之间的复杂关系。 | 主要设计用于处理具有极少或无关系的反规范化数据。 |
-| ACID 合从性 | 维护 `ACID` 特性（原子性、一致性、隔离性、持久性）。 | 为了提高可扩展性和性能，可能会牺牲某些 `ACID` 属性（例如，最终一致性）。 |
+| ACID 合规性 | 维护 `ACID` 特性（原子性、一致性、隔离性、持久性）。 | 为了提高可扩展性和性能，可能会牺牲某些 `ACID` 属性（例如，最终一致性）。 |
 
+## 在 Next.js 中设置数据库连接
 
+要在 Next.js 中设置数据库连接，请按照以下步骤操作：
 
+### 步骤 1：安装必要的依赖项
 
+* 在你的项目目录中，运行以下命令安装 `mongodb` 和 `mysql` 包：
+
+```bash
+npm install mongodb mysql
+```
+
+### 步骤 2：创建数据库连接文件
+
+在项目根目录下创建两个文件：`mongodb.js` 和 `mysql.js`。
+
+在 `mongodb.js` 中导入 `MongoClient` 并定义连接设置：
 
 ```javascript
-const dbName = ‘your-database-name’; // Replace with your database name
+const { MongoClient } = require('mongodb');
+
+const uri = 'mongodb://localhost:27017'; // Replace with your MongoDB URI
+
+const dbName = 'your-database-name'; // Replace with your database name
 
 const client = new MongoClient(uri, {
+
   useNewUrlParser: true,
+
   useUnifiedTopology: true,
+
 });
 
 async function connectMongoDB() {
+
   try {
+
     await client.connect();
-    console.log(‘Connected to MongoDB’);
+
+    console.log('Connected to MongoDB');
+
     const db = client.db(dbName);
+
     return db;
+
   } catch (error) {
-    console.error(‘Error connecting to MongoDB’, error);
+
+    console.error('Error connecting to MongoDB', error);
+
     throw error;
+
   }
+
 }
 
 module.exports = connectMongoDB;
@@ -5282,53 +6087,96 @@ module.exports = connectMongoDB;
 在 `mysql.js` 中导入 `mysql` 包并定义连接设置：
 
 ```javascript
-const mysql = require(‘mysql’);
+const mysql = require('mysql');
+
 const connection = mysql.createConnection({
-  host: ‘localhost’, // Replace with your MySQL host
-  user: ‘your-username’, // Replace with your MySQL username
-  password: ‘your-password’, // Replace with your MySQL password
-  database: ‘your-database-name’, // Replace with your database name
+
+  host: 'localhost', // Replace with your MySQL host
+
+  user: 'your-username', // Replace with your MySQL username
+
+  password: 'your-password', // Replace with your MySQL password
+
+  database: 'your-database-name', // Replace with your database name
+
 });
+
 connection.connect((error) => {
+
   if (error) {
-    console.error(‘Error connecting to MySQL’, error);
+
+    console.error('Error connecting to MySQL', error);
+
     throw error;
+
   }
-  console.log(‘Connected to MySQL’);
+
+  console.log('Connected to MySQL');
+
 });
+
 module.exports = connection;
 ```
 
-3. 在你的 Next.js 代码中，导入相应的数据库文件并根据需要使用连接。例如，创建一个名为 `pages/index.js` 的文件并包含以下代码：
+### 步骤 3：在 Next.js 代码中使用连接
+
+在你的 Next.js 代码中，导入相应的数据库文件并根据需要使用连接。例如，创建一个名为 `pages/index.js` 的文件并包含以下代码：
 
 ```javascript
-import { useEffect } from ‘react’;
-import connectMongoDB from ‘../mongodb’;
-import connectionMySQL from ‘../mysql’;
+import { useEffect } from 'react';
+
+import connectMongoDB from '../mongodb';
+
+import connectionMySQL from '../mysql';
+
 export default function HomePage() {
+
   useEffect(() => {
+
     async function fetchData() {
+
       const db = await connectMongoDB();
+
       // Perform MongoDB operations here
-      // Example: const collection = db.collection(‘your-collection’);
+
+      // Example: const collection = db.collection('your-collection');
+
       // Example: const data = await collection.find().toArray();
-      connectionMySQL.query(‘SELECT * FROM your-table’, (error, results, fields) => {
+
+      connectionMySQL.query('SELECT * FROM your-table', (error, results, fields) => {
+
         if (error) {
-          console.error(‘Error querying MySQL’, error);
+
+          console.error('Error querying MySQL', error);
+
           throw error;
+
         }
+
         // Process the MySQL query results here
+
       });
+
     }
+
     fetchData();
+
   }, []);
+
   return (
+
     <div>
+
       {/* Your page content */}
+
     </div>
+
   );
+
 }
 ```
+
+
 
 记得将占位值（如 `your-database-name`、`your-username`、`your-password` 等）替换为实际数据库连接详情。
 
@@ -5356,15 +6204,13 @@ PrismORM 的知名或流行程度不如上述其他所有库。然而，如果�
 | 迁移支持 (Migrations) | 否 | 是 | 是 |
 | 活跃开发 | 是 | 是 | 是 |
 
-
-
-
 ```javascript
 import sqliteConfig from "../config/database";
 
 export default function CreateUser() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
+
   const handleSubmit = async (event) => {
     event.preventDefault();
     try {
@@ -5378,6 +6224,7 @@ export default function CreateUser() {
       console.error("Error creating user:", error);
     }
   };
+
   return (
     <form onSubmit={handleSubmit}>
       <input
@@ -5423,9 +6270,9 @@ npm run dev
 - **连接数据库：** 在 Next.js 中与数据库交互时，你通常使用 `Prisma`、`Sequelize` 或 `Mongoose` 等库。这些库提供了连接数据库和执行查询的机制。确保在尝试任何操作之前建立数据库连接。
 - **查询执行：** 在执行数据库查询时，处理潜在错误至关重要。大多数数据库库都提供了捕捉和处理数据库服务器返回错误的机制。例如，使用 `Prisma` 时你可以使用 `try-catch` 块或基于 Promise 的错误处理来捕获并处理错误。
 - **错误消息：** 在数据库操作期间发生错误时，提供有意义的错误消息有助于调试。请包含相关信息，如错误类型、正在执行的查询以及任何相关的参数。将错误消息记录到日志文件或监控服务等中心系统有助于跟踪问题。
-- **优雅的错误处理：** 在 Next.js 中，你可以使用错误边界组件（ErrorBoundary Components）或 `getDerivedStateFromError` 方法来实现错误边界。这些技术允许你捕获组件内的错误并显示回退 UI，而不是导致整个应用程序崩溃。你可以向用户显示错误页面或特定的错误消息，并记录错误细节以便进一步调查。
+- **优雅的错误处理：** 在 Next.js 中，你可以使用错误边界组件或 `getDerivedStateFromError` 方法来实现错误边界。这些技术允许你捕获组件内的错误并显示回退 UI，而不是导致整个应用程序崩溃。你可以向用户显示错误页面或特定的错误消息，并记录错误细节以便进一步调查。
 
-# 调试技术
+### 调试技术
 
 - **日志记录：** 日志记录是调试数据库相关问题的必备技术。利用 `Winston`、`Pino` 或内置的 `console.log` 语句在运行时输出相关信息。记录重要细节（如查询执行时间、结果和错误消息）以跟踪问题。
 - **调试工具：** Next.js 提供了强大的调试工具和浏览器扩展，包括 React 开发工具和 Next.js DevTools。这些工具允许你检查组件、查看 props 并监控网络请求。
@@ -5444,7 +6291,7 @@ const { User } = require('../entities/User');
 async function getUserById(id) {
   try {
     const userRepository = getRepository(User);
-  const user = await userRepository.findOne(id);
+    const user = await userRepository.findOne(id);
     if (!user) {
       throw new Error('User not found');
     }
@@ -5456,7 +6303,7 @@ async function getUserById(id) {
 }
 ```
 
-在此示例中，我们从 `typeorm` 获取 `getRepository` 函数来获取 `User` 实的仓库。然后使用该仓库根据 ID 查找用户。如果没有找到用户，我们将抛出一个自定义错误。任何其他错误将在 `catch` 块中被捕获、记录并用通用错误重新抛出。
+在此示例中，我们从 `typeorm` 获取 `getRepository` 函数来获取 `User` 实体的仓库。然后使用该仓库根据 ID 查找用户。如果没有找到用户，我们将抛出一个自定义错误。任何其他错误将在 `catch` 块中被捕获、记录并用通用错误重新抛出。
 
 ### 2. 调试技术
 
@@ -5484,12 +6331,8 @@ async function getUserById(id) {
 
 在更新后的示例中，我们添加了 `console.log` 语句来输出获取的用户。这有助于检查数据并验证是否获取了正确的用户。你可以根据调试需求自定义日志语句。
 
-
-
-
 ```javascript
 const { getRepository } = require('typeorm');
-
 const { User } = require('../entities/User');
 
 async function getUsersWithPosts() {
@@ -5504,9 +6347,9 @@ async function getUsersWithPosts() {
 }
 ```
 
-在这个示例中，我们使用 TypeORM 的 `relations` 选项获取用户及其关联帖子。这简化了相关数据的检索，但如果由于用户或帖子过多导致查询变慢，您可以使用分页、懒加载加载或应用额外的过滤器来进一步优化。
+在这个示例中，我们使用 TypeORM 的 `relations` 选项获取用户及其关联帖子。这简化了相关数据的检索，但如果由于用户或帖子过多导致查询变慢，您可以使用分页、懒加载或应用额外的过滤器来进一步优化。
 
-### 5. **单元测试：**
+### 5. 单元测试
 
 单元测试对于捕捉错误和确保代码正确性至关重要。以下是一个使用 Jest 测试框架的示例：
 
@@ -5514,7 +6357,9 @@ async function getUsersWithPosts() {
 const { getRepository } = require('typeorm');
 const { User } = require('../entities/User');
 const { getUserById } = require('./user');
+
 jest.mock('typeorm');
+
 describe('getUserById', () => {
   test('returns a user when the database query is successful', async () => {
     const mockUser = { id: 1, name: 'John Doe' };
@@ -5527,6 +6372,7 @@ describe('getUserById', () => {
     expect(findOneMock).toHaveBeenCalledTimes(1);
     expect(findOneMock).toHaveBeenCalledWith(1);
   });
+
   test('throws an error when the user is not found', async () => {
     const findOneMock = jest.fn().mockResolvedValue(undefined);
     getRepository.mockReturnValueOnce({
@@ -5539,7 +6385,7 @@ describe('getUserById', () => {
 });
 ```
 
-在这个单元测试示例中，我们使用 Jest 的模拟（mock）功能对 TypeORM 的 `getRepository` 函数和 `findOne` 方法进行模拟。我们模拟了成功查询和返回 `undefined`（用户未找到）的查询。这确保了 `getUserById` 函数按预期运行并妥善处理了数据库错误。
+在这个单元测试示例中，我们使用 Jest 的模拟功能对 TypeORM 的 `getRepository` 函数和 `findOne` 方法进行模拟。我们模拟了成功查询和返回 `undefined`（用户未找到）的查询。这确保了 `getUserById` 函数按预期运行并妥善处理了数据库错误。
 
 通过采用这些技术，您可以有效地处理数据库错误，并在使用 TypeORM 的 Next.js 应用中调试问题，确保运行顺畅并更好的用户体验。
 
@@ -5547,109 +6393,90 @@ describe('getUserById', () => {
 
 在涉及 Next.js 数据库安全最佳实践时，有几个关键点需要考虑。让我们详细探讨它们：
 
-### 1. 保护数据库凭据：
+### 1. 保护数据库凭据
 
 *   安全地存储数据库凭据，例如使用环境变量或安全的密钥管理解决方案。
 *   避免在源代码、配置文件或版本控制仓库中硬编码凭据。
 *   限制对敏感文件的访问并确保设置了适当的权限。
 
-### 2. 实现用户身份验证与授权：
+### 2. 实现用户身份验证与授权
 
 *   使用安全的身份验证机制（如密码哈希和加盐）来保护用户凭据。
 *   实现适当的授权和访问控制，确保用户只能访问其授权查看或修改的数据。
 *   验证并清理用户输入，以防止常见的安全漏洞，如 SQL 注入攻击。
 
-### 3. 加密与数据保护：
+### 3. 加密与数据保护
 
 *   实现传输层安全协议（TLS），以加密在应用程序和数据库之间传输的数据。
-*   考虑实现静态加密（encryption at rest），以保护存储在数据库中的敏感数据。
+*   考虑实现静态加密，以保护存储在数据库中的敏感数据。
 *   利用数据库系统提供的加密库或内置加密函数。
 
-### 4. 定期更新与补丁：
+### 4. 定期更新与补丁
 
 *   保持您的数据库系统及相关库为最新的安全补丁和更新。
-*   监控安全告，并及时应用补丁以解决已识别的漏洞。
+*   监控安全公告，并及时应用补丁以解决已识别的漏洞。
 
-### 5. 输入验证与查询参数化：
+### 5. 输入验证与查询参数化
 
 *   验证并清理用户输入，防止恶意数据作为数据库查询的一部分执行。
 *   使用参数化查询或预处理语句来避免 SQL 注入攻击。
 *   利用自动处理查询参数化的查询构建器或 ORM（对象关系映射器）。
 
-### 6. 审计与日志记录：
+### 6. 审计与日志记录
 
 *   启用数据库系统提供的日志和审计功能，以跟踪和监控数据库活动。
 *   定期审查和分析数据库日志，以识别任何可疑活动或潜在的安全漏洞。
 
-### 7. 限制数据库访问：
+### 7. 限制数据库访问
 
 *   遵循最小权限原则，仅为数据库用户授予必要的权限。
 *   避免在常规应用程序操作中使用高权限数据库账户。
 *   实施强密码策略并强制密码复杂度规则。
 
-### 8. 定期备份与灾难恢复：
+### 8. 定期备份与灾难恢复
 
 *   定期对数据库进行备份，以确保数据的完整性和可用性。
 *   安全地存储备份并定期测试恢复过程。
 *   制定灾难恢复计划，以便从任何数据泄露或丢失中快速恢复。
 
-### 9. 安全部署与托管：
+### 9. 安全部署与托管
 
 *   利用提供强安全措施和合规标准的安全的托管平台或基础设施。
 *   遵循安全的部署和托管规范。
 
-### 10. 定期更新与补丁：
+### 10. 定期更新与补丁
 
 *   保持您的数据库系统及相关库为最新的安全补丁和更新。
-*   监控安全告，并及时应用补丁以解决已识别的漏洞。
+*   监控安全公告，并及时应用补丁以解决已识别的漏洞。
 
 ## 数据建模与模式设计
 
 使用 TypeORM 进行数据建模和模式设计涉及创建实体、定义列和关系。以下是关键术语和概念：
 
-*   **实体 (Entity)**：
-    实体代表一个表或集合集合。它通过 `@Entity()` 定义。
-
-*   **列 (Column)**：
-    列代表实体的字段或属性。它通过 `@Column()` 定义。
-
-*   **主键 (Primary Key)**：
-    主键唯一标识每行数据。它通常使用 `@PrimaryGeneratedColumn()`。
-
-*   **关系 (Relationships)**：
-    关系定义了实体之间如何关联。TypeORM 支持多种类型，包括：
-    *   一对一 (One-to-One)：一个实体与另一个实体关联。使用 `@OneToOne()`。
-    *   一对多 (One-to-Many)：一个实体与多个实体关联。使用 `@OneToMany()`。
-    *   多对一 (Many-to-One)：多个实体与一个实体关联。使用 `@ManyToOne()`。
-    *   多对多 (Many-to-Many)：多个实体与多个实体关联。使用 `@ManyToMany()`。
-
-*   **迁移 (Migration)**：
-    迁移是管理数据库模式更改的方法。当应用程序演进时，迁移帮助进行这些更改。TypeORM 提供了创建、运行和管理迁移的工具。
-
-*   **查询 (Querying)**：
-    查询根据特定标准从数据库检索数据的过程。TypeORM 提供查询构建器，允许通过链式调用来构建查询。这使得构建无需编写 SQL 语句的复杂查询变得简单。
-
-*   **事务 (Transactions)**：
-    事务确保数据库操作的原子性和一致性。事务将一组数据库操作组合为一个单元，要么全部成功要么全部失败。它确保如果事务的任何部分失败，所有更改都将回滚，从而维护数据完整性。
-
-*   **ORM (对象关系映射)**：
-    ORM 是一种将应用程序中的对象映射到关系型数据库表的编程技术。它允许通过处理对象来执行 CRUD 操作，无需编写 SQL 查询。
-    TypeORM 是一个 ORM 库，提供了一系列工具和功能，用于在应用程序中映射实体、关系并处理迁移。
+*   **实体**：实体代表一个表或集合。它通过 `@Entity()` 定义。
+*   **列**：列代表实体的字段或属性。它通过 `@Column()` 定义。
+*   **主键**：主键唯一标识每行数据。它通常使用 `@PrimaryGeneratedColumn()`。
+*   **关系**：关系定义了实体之间如何关联。TypeORM 支持多种类型，包括：
+    *   一对一：一个实体与另一个实体关联。使用 `@OneToOne()`。
+    *   一对多：一个实体与多个实体关联。使用 `@OneToMany()`。
+    *   多对一：多个实体与一个实体关联。使用 `@ManyToOne()`。
+    *   多对多：多个实体与多个实体关联。使用 `@ManyToMany()`。
+*   **迁移**：迁移是管理数据库模式更改的方法。当应用程序演进时，迁移帮助进行这些更改。TypeORM 提供了创建、运行和管理迁移的工具。
+*   **查询**：查询根据特定标准从数据库检索数据的过程。TypeORM 提供查询构建器，允许通过链式调用来构建查询。这使得构建无需编写 SQL 语句的复杂查询变得简单。
+*   **事务**：事务确保数据库操作的原子性和一致性。事务将一组数据库操作组合为一个单元，要么全部成功要么全部失败。它确保如果事务的任何部分失败，所有更改都将回滚，从而维护数据完整性。
+*   **ORM (对象关系映射)**：ORM 是一种将应用程序中的对象映射到关系型数据库表的编程技术。它允许通过处理对象来执行 CRUD 操作，无需编写 SQL 查询。TypeORM 是一个 ORM 库，提供了一系列工具和功能，用于在应用程序中映射实体、关系并处理迁移。
 
 总之，使用 TypeORM 进行数据建模和模式设计涉及创建实体、定义列和关系、管理模式更改的迁移、使用查询构建器查询数据以及确保事务完整性。这些概念有助于为应用程序设计高效、可扩展且易于维护的数据库结构。
 
 让我们深入学习使用 TypeORM 进行建模和模式设计，涵盖所有操作类型，包括 CRUD（增删改查）操作、查询、事务和迁移。
 
-1.  设置 TypeORM：
+### 1. 设置 TypeORM
 
-    首先使用 npm 或 yarn 安装必要的依赖：
+首先使用 npm 或 yarn 安装必要的依赖：
 
-    ```
-    npm install typeorm reflect-metadata
-    ```
-
-
-
+```bash
+npm install typeorm reflect-metadata
+```
 
 ### 2. 配置
 
@@ -5687,8 +6514,10 @@ import { Entity, PrimaryGeneratedColumn, Column, OneToMany, ManyToOne, JoinColum
 export class User {
   @PrimaryGeneratedColumn()
   id: number;
+
   @Column()
   name: string;
+
   @OneToMany(() => Post, post => post.user)
   posts: Post[];
 }
@@ -5697,10 +6526,13 @@ export class User {
 export class Post {
   @PrimaryGeneratedColumn()
   id: number;
+
   @Column()
   title: string;
+
   @Column({ type: 'text' })
   content: string;
+
   @ManyToOne(() => User, user => user.posts)
   @JoinColumn({ name: 'user_id' })
   user: User;
@@ -5709,7 +6541,7 @@ export class Post {
 
 在这个示例中，`@Entity()` 装饰器将类标记为 TypeORM 实体。`@PrimaryGeneratedColumn()` 装饰器定义了实体的主键。`@Column()` 装饰器指定了表中的列，而 `@OneToMany()` 和 `@ManyToOne()` 装饰器建立了 User 和 Post 实体之间的关系。
 
-## 4. 数据库连接
+### 4. 数据库连接
 
 使用 TypeORM 配置和实体类创建数据库连接。这是一个示例：
 
@@ -5733,7 +6565,7 @@ async function connectToDatabase() {
 connectToDatabase();
 ```
 
-## 5. CRUD 操作
+### 5. CRUD 操作
 
 TypeORM 使用其 `EntityManager` 简化了 CRUD 操作。以下是每个操作的示例：
 
@@ -5776,12 +6608,13 @@ const users = await connection.manager
   .leftJoinAndSelect('user.posts', 'post')
   .where('user.id = :userId', { userId: 1 })
   .getMany();
+
 console.log('User and their posts:', users);
 ```
 
-此查询使用左连接（left join）获取该用户及其关联的文章。
+此查询使用左连接获取该用户及其关联的文章。
 
-## 7. 事务
+### 7. 事务
 
 TypeORM 支持事务以确保原子性和一致性。这是一个示例：
 
@@ -5789,6 +6622,7 @@ TypeORM 支持事务以确保原子性和一致性。这是一个示例：
 const queryRunner = connection.createQueryRunner();
 await queryRunner.connect();
 await queryRunner.startTransaction();
+
 try {
   const user = new User();
   user.name = 'Jane Smith';
@@ -5809,13 +6643,16 @@ try {
   await queryRunner.release();
 }
 ```
+
 此示例演示了一个保存用户和文章的事务。
 
-## 8. 迁移 
+### 8. 迁移
 
 `TypeORM` 简化了数据库架构迁移。以下是创建和运行迁移的示例：
 
-`typeorm migration:create -n CreateUserTable`
+```bash
+typeorm migration:create -n CreateUserTable
+```
 
 此命令生成一个全新的迁移文件。编辑生成的文件以定义必要的更改。
 
@@ -5841,16 +6678,15 @@ export class CreateUserTable1612345678901 implements MigrationInterface {
 
 运行迁移：
 
-`typeorm migration:run`
+```bash
+typeorm migration:run
+```
 
 这些示例提供了使用 TypeORM 进行数据建模和架构设计的概览，涵盖了 CRUD、查询、事务和迁移等各种操作。TypeORM 的文档提供了关于高级功能和自定义选项的更多详细信息。
 
-
-
-
 - **查询优化**：分析并优化数据库查询以最大限度地减少执行时间。这可能涉及重写查询、使用适当的连接策略或优化数据模型。
 - **缓存**：实现缓存层将频繁访问的数据存储在内存中，减少对数据库查询的需求。
-- **反范式**：在某些情况下，对数据库模式反反规范（减少连接数量）可以通过降低查询复杂度来提高性能。
+- **反范式**：在某些情况下，对数据库模式反规范化（减少连接数量）可以通过降低查询复杂度来提高性能。
 - **分区**：根据特定标准（例如范围、列表或哈希）将大表划分为更小、更易管理的块。这允许更好的数据分布和更快的访问。
 
 ## 高可用性
@@ -5881,7 +6717,7 @@ export class CreateUserTable1612345678901 implements MigrationInterface {
 
 最后，讨论了扩展数据库以满足不断增长的用户群需求的策略，确保了高可用性和性能的提升。整个章节中展示了实际示例和用例，以阐述所讨论的概念。
 
-通过掌握本章介绍的知识和工具，读者现在有能力在他们的 Next.js 应用中利用不同类型的数据库，使他们能够构建利用数据力量的现代且健壮的 Web 应用。那么，让我们共同这段数据库之旅，释放 Next.js 的全部潜力！
+通过掌握本章介绍的知识和工具，读者现在有能力在他们的 Next.js 应用中利用不同类型的数据库，使他们能够构建利用数据力量的现代且健壮的 Web 应用。那么，让我们共同踏上这段数据库之旅，释放 Next.js 的全部潜力！
 
 在下一章中，我们将深入 Next.js 应用中渲染的迷人世界。我们将探索不同的渲染技术，例如服务器端渲染 (`SSR`)、客户端渲染 (`CSR`) 和静态站点生成 (`SSG`)，并理解它们的优势和用例。
 
@@ -5921,9 +6757,7 @@ export class CreateUserTable1612345678901 implements MigrationInterface {
 4. C
 5. C
 
-通过探索 `CRUD` 操作、`SQL`、`NoSQL`、`ACID` 和 `API` 等术语，读者能够加强对这些概念的理解，并掌握数据库管理的基础原理。这些交互问题允许读者巩固知识并增强理解。单选题作为评估读者对关键概念的理解和记忆的有效工具，为他们他们在现实场景中应用知识做准备。
-
-
+通过探索 `CRUD` 操作、`SQL`、`NoSQL`、`ACID` 和 `API` 等术语，读者能够加强对这些概念的理解，并掌握数据库管理的基础原理。这些交互问题允许读者巩固知识并增强理解。单选题作为评估读者对关键概念的理解和记忆的有效工具，为他们在现实场景中应用知识做准备。
 
 然而，客户端渲染也有其优点，特别是在动态内容和交互性至关重要的场景下。我们将探索客户端渲染大放异彩的不同场景，并演示如何在 `Next.js` 应用中有效实现它。从动态客户端渲染到最佳实践，本章将使你掌握在 `Next.js` 中利用客户端渲染能力所需的知识。
 
@@ -5931,20 +6765,20 @@ export class CreateUserTable1612345678901 implements MigrationInterface {
 
 本章涵盖的主题包括：理解客户端渲染和服务端渲染的基础知识、每种方法的优缺点、`Next.js` 的渲染处理方式、使用 `Next.js` 进行服务端渲染、使用 `Next.js` 进行客户端渲染、使用 `Next.js` 进行动态客户端渲染、何时使用客户端渲染而非服务端渲染，以及在 `Next.js` 应用中使用这些渲染技术的最佳实践。
 
-在本在本章结束时，你将对客户端渲染和服务端渲染有全面的理解，并了解它们如何在 `Next.js` 应用中有效运用。掌握了这些知识后，你将能够做出明智的决策并优化你的 `Next.js` 项目的渲染性能。现在，让我们深入探索 `Next.js` 迷人的渲染世界吧！
+在本章结束时，你将对客户端渲染和服务端渲染有全面的理解，并了解它们如何在 `Next.js` 应用中有效运用。掌握了这些知识后，你将能够做出明智的决策并优化你的 `Next.js` 项目的渲染性能。现在，让我们深入探索 `Next.js` 迷人的渲染世界吧！
 
 ## 结构
 
 在本章中，我们将涵盖以下主题：
 
-* 理解客户端渲染和服务端渲染的基础
-* 客户端渲染和服务端渲染的优缺点
-* `Next.js` 对客户端渲染和服务端渲染的处理方式
-* 使用 `Next.js` 进行服务端渲染
-* 使用 `Next.js` 进行客户端渲染
-* 使用 `Next.js` 进行动态客户端渲染
-* 何时使用客户端渲染以及何时使用服务端渲染
-* 在 `Next.js` 应用中使用客户端渲染和服务端渲染的最佳实践
+*   理解客户端渲染和服务端渲染的基础
+*   客户端渲染和服务端渲染的优缺点
+*   `Next.js` 对客户端渲染和服务端渲染的处理方式
+*   使用 `Next.js` 进行服务端渲染
+*   使用 `Next.js` 进行客户端渲染
+*   使用 `Next.js` 进行动态客户端渲染
+*   何时使用客户端渲染以及何时使用服务端渲染
+*   在 `Next.js` 应用中使用客户端渲染和服务端渲染的最佳实践
 
 ## 理解 Next.js 中的渲染机制
 
@@ -5960,16 +6794,11 @@ export class CreateUserTable1612345678901 implements MigrationInterface {
 
 让我们来理解客户端渲染、服务端渲染和静态站点生成的基础知识：
 
-*   **客户端渲染 (CSR)**：
-    客户端渲染涉及从服务器加载基础 HTML 页面，然后使用 `JavaScript` 在客户端浏览器中动态获取并渲染数据。客户端渲染过程通常涉及向 API 发请求以获取数据，并使用收到的数据更新 `DOM`（文档对象模型）。这种方法允许更具交互性和动态性的用户体验，因为内容无需刷新整个页面即可进行更新。然而，它给客户端设备带来了更沉重的负载，因为浏览器需要同时处理渲染和数据获取。
+*   **客户端渲染 (CSR)**：客户端渲染涉及从服务器加载基础 HTML 页面，然后使用 `JavaScript` 在客户端浏览器中动态获取并渲染数据。客户端渲染过程通常涉及向 API 发请求以获取数据，并使用收到的数据更新 `DOM`（文档对象模型）。这种方法允许更具交互性和动态性的用户体验，因为内容无需刷新整个页面即可进行更新。然而，它给客户端设备带来了更沉重的负载，因为浏览器需要同时处理渲染和数据获取。
+*   **服务端渲染 (SSR)**：另一方面，服务端渲染涉及在服务器上生成 HTML 内容，并将预渲染的 HTML 发送到客户端浏览器。在 SSR 中，服务器处理请求、获取必要的数据，并生成一个包含请求内容的完整 HTML 页面。该预渲染的 HTML 然后被发送给客户端，减轻了客户端设备的负载。SSR 对于搜索引擎优化 (SEO) 有益，因为内容对于搜索引擎爬虫来说是现成的。但与 CSR 相比，它的初始页面加载可能较慢，因为服务器需要处理请求并生成 HTML。
+*   **静态站点生成 (SSG)**：静态站点生成 (SSG) 是一种网站渲染技术，Web 页面在构建时进行预渲染，并作为静态 HTML 文件提供给客户端。通过 SSG，内容在构建过程中生成一次，在运行时不需要任何服务器端处理。这种方法具有许多优势，例如提高性能、降低服务器负载和增强安全性。它还能够实现更好的搜索引擎优化 (SEO)，因为搜索引擎可以轻松地爬取和索引静态页面。SSG 通常用于内容不经常更改的网站，如博客、文档站点和营销页面。
 
-*   **服务端渲染 (SSR)**：
-    另一方面，服务端渲染涉及在服务器上生成 HTML 内容，并将预渲染的 HTML 发送到客户端浏览器。在 SSR 中，服务器处理请求、获取必要的数据，并生成一个包含请求内容的完整 HTML 页面。该预渲染的 HTML 然后被发送给客户端，减轻了客户端设备的负载。SSR 对于搜索引擎优化 (SEO) 有益，因为内容对于搜索引擎爬虫来说是现用的。但与 CSR 相比，它的初始页面加载可能较慢，因为服务器需要处理请求并生成 HTML。
-
-*   **静态站点生成 (SSG)**：
-    静态站点生成 (SSG) 是一种网站渲染技术，Web 页面在构建时进行预渲染，并作为静态 HTML 文件提供给客户端。通过 SSG，内容在构建过程中生成一次，在运行时不需要任何服务器端处理。这种方法具有许多优势，例如提高性能、降低服务器负载和增强安全性。它还能够实现更好的搜索引擎优化 (SEO)，因为搜索引擎可以轻松地爬取和索引静态页面。SSG 通常用于内容不经常更改的网站，如博客、文档站点和营销页面。
-
-## CSR 和 SSR 之间的主要区别：
+## CSR 和 SSR 之间的主要区别
 
 *   **初始页面加载**：SSR 从服务器提供完全渲染的 HTML 页面，实现更快的初始渲染，而 CSR 要求在客户端进行额外的请求和处理。
 *   **SEO**：SSR 更符合 SEO 标准，因为搜索引擎可以轻松地爬取和索引预渲染的 HTML，而 CSR 需要额外努力才能让内容被搜索引擎发现。
@@ -5987,13 +6816,8 @@ export class CreateUserTable1612345678901 implements MigrationInterface {
 | 代码复杂度 | 客户端 `JavaScript` 代码较少 | 客户端 `JavaScript` 代码较多 |
 | 数据获取 | 不需要或需要额外的 API 请求 | 需要额外的 API 请求用于数据获取和渲染 |
 | 开发复杂度 | 服务器处理渲染，减少了客户端复杂度 | 客户端处理渲染，增加了客户端复杂度 |
-| 缓存 | 于实现服务器端缓存 | 缓存需要额外的客户端逻辑 |
+| 缓存 | 易于实现服务器端缓存 | 缓存需要额外的客户端逻辑 |
 | 场景 | 内容密集型网站、以 SEO 为优先的应用 | 交互性和动态化应用、单页应用 (SPA) |
-
-
-
-
-
 | 框架 | Next.js, Nuxt.js (Vue.js) | React, Angular, Vue.js, Ember.js 等 |
 
 **表 10.1:** CSR vs SSR
@@ -6004,25 +6828,25 @@ export class CreateUserTable1612345678901 implements MigrationInterface {
 
 CSR 和 SSR 都有各自的优缺点，理解它们可以帮助开发者根据特定的用例做出明智决策。让我们详细探讨每种渲染方式的优缺点：
 
-### CSR 的优点：
+### CSR 的优点
 
 *   **增强的用户体验**：CSR 通过允许在不刷新整个页面的情况下更新动态内容，实现了流畅且交互式的用户体验。由于用户可以与应用程序实时交互，它提供了更像应用程序的感觉。
 *   **初始加载后性能提升**：一旦加载了初始 HTML、CSS 和 JavaScript，随后的更新和数据获取就可以异步进行，而无需重新加载页面。这可以带来更快的响应速度和无缝的用户体验。
 *   **丰富的前端交互**：CSR 非常适合高度依赖客户端交互和动态内容的应用程序，例如实时仪表板、协作工具或社交媒体馈流。
 
-### CSR 的缺点：
+### CSR 的缺点
 
 *   **初始加载时间较慢**：CSR 需要下载初始 JavaScript 束并向 API 额外的请求以获取数据。与服务端渲染相比，这可能导致初始页面加载时间较慢。
-*   **SEO 挑战**：搜索引擎爬虫在索引和理解客户端渲染的内容时可能会遇到困难。可能需要额外的措施，如对关键页面进行服务端渲染或使用预渲染（prerendering）等技术，以确保良好的 效果。
+*   **SEO 挑战**：搜索引擎爬虫在索引和理解客户端渲染的内容时可能会遇到困难。可能需要额外的措施，如对关键页面进行服务端渲染或使用预渲染等技术，以确保良好的效果。
 *   **增加客户端复杂性**：CSR 需要更多的客户端代码来处理数据获取、渲染和状态管理。这种复杂性会使开发和调试更有挑战。
 
-### SSR 的优点：
+### SSR 的优点
 
 *   **更快的初始页面加载**：SSR 从服务器发送预渲染的 HTML，导致更快的初始页面加载时间。这对于内容丰富的网站或对快速加载至关重要的应用程序特别有利。
 *   **SEO 友好**：搜索引擎可以轻松地爬取并索引预渲染的 HTML，使 SSR 有利于更好的 SEO 效果。它确保内容可以随时被搜索引擎理解和排名。
 *   **优雅降级**：SSR 能够优雅地处理 JavaScript 被禁用或客户端设备/浏览器不支持的情况，确保用户仍然可以访问和查看内容。
 
-### SSR 的缺点：
+### SSR 的缺点
 
 *   **增加服务器负载**：SSR 给服务器带来了更沉重的负载，因为它需要为每个请求生成 HTML。这可能会影响服务器性能和可扩展性，特别是在高流量或资源密集型应用程序下。
 *   **有限的客户端交互性**：SSR 依赖于服务器生成的 HTML，这意味着与 CSR 相比，某些需要客户端处理的特定类型交互可能会受到限制。
@@ -6032,9 +6856,9 @@ CSR 和 SSR 都有各自的优缺点，理解它们可以帮助开发者根据�
 
 # Next.js 对 CSR 和 SSR 的方法
 
-Next.js 是一个流行的 `React` 框架，它为 CSR 和 SSR 提供了一种有主见的（opinionated）方法。它简化了实现这两种渲染策略的过程，为构建高效的 Web 应用程序提供了强大的工具集。让我们详细探讨 Next.js 对 CSR 和 SSR 的方法：
+Next.js 是一个流行的 `React` 框架，它为 CSR 和 SSR 提供了一种有主见的方法。它简化了实现这两种渲染策略的过程，为构建高效的 Web 应用程序提供了强大的工具集。让我们详细探讨 Next.js 对 CSR 和 SSR 的方法：
 
-### 使用 Next.js 进行服务端渲染 (SSR)：
+### 使用 Next.js 进行服务端渲染 (SSR)
 
 Next.js 通过允许开发者编写可以在服务器上渲染的组件，使服务端渲染变得简单。当向 `Next.js` 应用请求时，服务器获取所需的数据并在服务器上渲染组件。生成的 HTML 然后发送到客户端进行显示。这种方法提供了几个优点：
 
@@ -6042,15 +6866,15 @@ Next.js 通过允许开发者编写可以在服务器上渲染的组件，使服
 *   **更快的初始加载**：通过在服务器上预渲染页面，`Next.js` 向客户端交付完整的 HTML 页面，从而使初始加载更快。
 *   **优雅降级**：SSR 确保即使在禁用 JavaScript 的情况下页面也是可用的，为广泛的设备提供了更好的用户体验。
 
-## 使用 Next.js 进行客户端渲染 (CSR)：
+### 使用 Next.js 进行客户端渲染 (CSR)
 
-Next.js 也支持 CSR，允许使用 JavaScript 在客户端渲染组件。这种方法适用于动态内容和交互至关重要的场景。Next.js 利用了 `React` 客户端渲染的能力，允许在不重新加载整个面的面的高效更新组件。使用 Next.js 进行 CSR 的一些优点包括：
+Next.js 也支持 CSR，允许使用 JavaScript 在客户端渲染组件。这种方法适用于动态内容和交互至关重要的场景。Next.js 利用了 `React` 客户端渲染的能力，允许在不重新加载整个页面的情况下高效更新组件。使用 Next.js 进行 CSR 的一些优点包括：
 
 *   **增强的用户体验**：CSR 允许实时更新和交互，提供更具吸引力的用户体验。
 *   **动态内容**：`Next.js` 允许组件在客户端获取数据，使其易于渲染动态内容并处理用户交互。
 *   **代码分割和懒加载**：`Next.js` 提供了内置的代码分割和懒加载功能，通过仅在需要时加载所需的组件来优化性能。
 
-## 使用 Next.js 进行混合渲染：
+### 使用 Next.js 进行混合渲染
 
 Next.js 提供了一种混合渲染方法，允许开发者根据每个页面或每个组件在 SSR 和 CSR 之间选择。这种灵活性允许开发者在性能、交互性和 SEO 需求之间取得平衡。
 
@@ -6062,7 +6886,7 @@ Next.js 还通过利用自动代码分割、智能缓存和增量静态再生（
 
 # 使用 Next.js 进行 SSR
 
-以下是关于使用 Next.js 实现 SSR 的用函数的详细说明和代码示例：
+以下是关于使用 Next.js 实现 SSR 的函数的详细说明和代码示例：
 
 ### `getServerSideProps`
 
@@ -6089,14 +6913,6 @@ export async function getServerSideProps() {
     },
   };
 }
-```
-
-
-
-```javascript
-};
-
-}
 
 export default HomePage;
 ```
@@ -6108,7 +6924,7 @@ export default HomePage;
 `getStaticProps` 函数允许通过静态生成进行服务端渲染。它在构建时获取数据并生成静态 HTML 页面。生成的 HTML 随后在每次请求时被重用，从而提供更好的性能。以下是一个示例：
 
 ```javascript
-import React from ‘react’;
+import React from 'react';
 
 function HomePage({ data }) {
   return (
@@ -6132,14 +6948,14 @@ export async function getStaticProps() {
 export default HomePage;
 ```
 
-在前面的示例中，`getStaticProps` 函数在构建时从 API 端点获取数据。随后随后作为 prop（`data`）传递给 `HomePage` 组件，Next.js 生成一个包含已获取数据的静态 HTML 页面。
+在前面的示例中，`getStaticProps` 函数在构建时从 API 端点获取数据。随后作为 prop（`data`）传递给 `HomePage` 组件，Next.js 生成一个包含已获取数据的静态 HTML 页面。
 
 ### 3. `getStaticPaths`
 
 `getStaticPaths` 函数用于动态路由和通过静态生成进行服务端渲染。它定义了动态路由可能的路径，并指定了要预渲染的数据。以下是一个示例：
 
 ```javascript
-import React from ‘react’;
+import React from 'react';
 
 function Post({ post }) {
   return (
@@ -6190,7 +7006,7 @@ Next.js 中的 CSR 允许你在客户端渲染组件，这意味着初始 HTML �
 在 Next.js 中，你可以在 `pages` 目录中创建 React 组件，它们将在客户端自动进行渲染。以下是一个简单的客户端渲染组件的示例：
 
 ```javascript
-import React from ‘react’;
+import React from 'react';
 
 function HomePage() {
   return (
@@ -6236,7 +7052,7 @@ function HomePage() {
 export default HomePage;
 ```
 
-在更新后的示例中，我们使用 `useState` hook 子来管理 `data` 状态，使用 `useEffect` hook 子从 `https://api.example.com/data` 获取数据，并渲染组件。
+在更新后的示例中，我们使用 `useState` hook 来管理 `data` 状态，使用 `useEffect` hook 从 `https://api.example.com/data` 获取数据，并渲染组件。
 
 ### 3. 交互性与客户端更新
 
@@ -6274,16 +7090,13 @@ export default HomePage;
 
 对于初始页面加载或 SEO 至关重要的场景，你可以利用服务端渲染。在 SSR 中，服务器生成带有初始数据的 HTML，确保搜索引擎可以索引内容，并且用户即使未启用 JavaScript 也能看到完全渲染的页面。
 
-# 客户端渲染 (CSR)
+### 客户端渲染 (CSR)
 
 对于动态更新或交互性，你可以利用客户端渲染。CSR 允许你在客户端获取并更新数据，而无需重新加载整个页面，从而提供更快速响应的用户体验。这种方法适用于需要实时更新、用户交互或动态内容渲染的场景。
 
 为了同时实现 SSR 和 CSR，你可以遵循以下步骤：
 
-步骤 1：实现 SSR：
-
-
-
+#### 步骤 1：实现 SSR
 
 在 Next.js 页面中使用 `getServerSideProps` 函数可以在服务端获取数据，并将其作为 props 传递给你的组件。这允许你在将页面发送到客户端之前，使用初始数据进行渲染。
 
@@ -6300,14 +7113,16 @@ export async function getServerSideProps() {
 }
 ```
 
-### 第 2 步：实现 CSR：
+#### 步骤 2：实现 CSR
 
 对于动态更新或交互，你可以使用客户端渲染技术。你可以使用 `useEffect` 或其他客户端数据获取库（如 `axios` 或 `fetch`）来获取数据。
 
 ```javascript
-import React, { useEffect, useState } from ‘react’;
+import React, { useEffect, useState } from 'react';
+
 function MyComponent() {
   const [data, setData] = useState(null);
+
   useEffect(() => {
     const fetchData = async () => {
       const res = await fetch('https://api.example.com/data');
@@ -6316,8 +7131,9 @@ function MyComponent() {
     };
     fetchData();
   }, []);
+
   // 使用获取的数据渲染你的组件
-  return <<div>{data && <p>Data: {data}</p>}</div>;
+  return <div>{data && <p>Data: {data}</p>}</div>;
 }
 ```
 
@@ -6325,7 +7141,7 @@ function MyComponent() {
 
 在 CSR 和 SSR 之间做出选择取决于多种因素以及应用程序的具体需求。以下是关于何时使用每种渲染方式的详细说明：
 
-### 1. 客户端渲染 (CSR)：
+### 1. 客户端渲染 (CSR)
 
 在以下情况下使用客户端渲染：
 
@@ -6334,25 +7150,25 @@ function MyComponent() {
 *   **单页应用 (SPAs)**：如果你正在构建一个整个应用程序逻辑都位于客户端的单页应用，CSR 通常是默认方法。它能够在不同视图之间进行平滑导航和切换，无需全页加载。
 *   **移动应用和渐进式 Web 应用 (PWAs)**：在开发移动应用或 PWAs 时，CSR 可以提供类原生体验，具有平滑过渡、离线能力和高效的资源利用。
 
-### 2. 服务端渲染 (SSR)：
+### 2. 服务端渲染 (SSR)
 
 在以下情况下使用服务端渲染：
 
 *   **SEO 和初始页面加载**：如果搜索引擎优化 (SEO) 对你的应用程序至关重要，或者你希望即使在禁用 JavaScript 的情况下也能为用户提供完全渲染的内容，推荐使用 SSR。它确保搜索引擎能够有效爬取并索引你的页面，并且用户可以立即看到内容。
-*   **性能和可交互时间**：由于服务器向客户端发送预渲染的 HTML，SSR 可以提供更短的可交互时间。这缩短了初始页面加载所需并增强了感知性能，对于内容丰富的页面尤其如此。
+*   **性能和可交互时间**：由于服务器向客户端发送预渲染的 HTML，SSR 可以提供更短的可交互时间。这缩短了初始页面加载所需时间并增强了感知性能，对于内容丰富的页面尤其如此。
 *   **安全数据保护**：在处理敏感数据时，SSR 可以通过将数据保留在服务端提供更好的安全性。它减少了敏感信息暴露给客户端 JavaScript 代码的风险。
 *   **兼容性**：SSR 确保你的应用程序可以在广泛的设备、浏览器和用户设置上运行，因为它对客户端 JavaScript 执行的依赖较少。
 *   **社交媒体分享**：如果社交媒体分享是你的应用程序的一个重要方面，SSR 确保共享的链接显示有意义的内容和元数据，从而提高分享体验。
 
-需要注意的是，你也可以在混合方法结合 SSR 和 CSR，其中某些页面在服务端渲染，而另一些页面在客户端渲染。例如，Next.js 提供了为每个页面选择合适渲染策略的灵活性。
+需要注意的是，你也可以在混合方法中结合 SSR 和 CSR，其中某些页面在服务端渲染，而另一些页面在客户端渲染。例如，Next.js 提供了为每个页面选择合适渲染策略的灵活性。
 
 最终，CSR 和 SSR 之间的决策取决于应用程序的具体需求、权衡和目标。分析内容动态性、交互性、SEO、性能、安全性和兼容性等因素将帮助你确定最合适的渲染方法。
 
-在 Next.js 13+ 的动态领域中，开发者利用指令（directives）的力量来精细调整服务端和客户端的代码执行。本章深入探讨了两个关键指令 `use server` 和 `use client` 的使用，探索它们在服务端渲染 (SSR) 和客户端渲染 (CSR) 中的作用，以提高性能并精简代码组织。详细说明如下：
+在 Next.js 13+ 的动态领域中，开发者利用指令的力量来精细调整服务端和客户端的代码执行。本章深入探讨了两个关键指令 `use server` 和 `use client` 的使用，探索它们在服务端渲染 (SSR) 和客户端渲染 (CSR) 中的作用，以提高性能并精简代码组织。详细说明如下：
 
 *   **介绍 Next.js 指令**
 
-    在 Next.js 的上下文中，`use server` 和 `use client` 等指令充当代码标记，指定代码应应仅在服务端还是客户端执行。指令的策略性使用优化了 Next.js 应用程序的整体功能和响应。
+    在 Next.js 的上下文中，`use server` 和 `use client` 等指令充当代码标记，指定代码应仅在服务端还是客户端执行。指令的策略性使用优化了 Next.js 应用程序的整体功能和响应。
 
 *   **`use server` 的用途**
 
@@ -6363,11 +7179,13 @@ function MyComponent() {
     ```javascript
     // server-side.js
     use server;
+
     async function fetchData() {
       const response = await fetch('https://jsonplaceholder.typicode.com/posts/1');
       const data = await response.json();
       return data;
     }
+
     export default fetchData;
     ```
 
@@ -6382,10 +7200,12 @@ function MyComponent() {
     ```javascript
     // client-side.js
     use client;
+
     const handleClick = () => {
       const element = document.getElementById('button');
       element.textContent = 'Clicked!';
     };
+
     const button = document.getElementById('button');
     button.addEventListener('click', handleClick);
     ```
@@ -6394,7 +7214,7 @@ function MyComponent() {
 
 *   **策略性代码划分**
 
-    通过谨慎地实施 `use server` 和 `use client` 指令，开发者可以将代码有效地划分为服务端客户端组件。这不仅优化了代码组织，还提升了性能，为 Next.js 应用程序提供了无缝的用户体验。
+    通过谨慎地实施 `use server` 和 `use client` 指令，开发者可以将代码有效地划分为服务端和客户端组件。这不仅优化了代码组织，还提升了性能，为 Next.js 应用程序提供了无缝的用户体验。
 
 *   **默认行为配置**
 
@@ -6407,9 +7227,9 @@ function MyComponent() {
         serverActions: true,
       },
     };
+
     module.exports = nextConfig;
     ```
-
 
 
 
@@ -6447,9 +7267,9 @@ function MyComponent() {
 
 ## 结论
 
-客户端渲染和服务端渲染是 Web 开发中交付动态交互式内容的两种关键技术。本章探讨了这些渲染方法的基本概念和主要区别。服务端渲染被强调为 Next.js 应用的一个关键方面，因为它具有提高性能、增强搜索引擎优化和提升用户体验的能力。然而，客户端渲染也有其优势，特别是在需要动态内容和交互性的场景下。本章讨论了客户端渲染表现出色的不同场景，并对其在 Next.js 应用中的有效实现提供了见解。。还讨论了在 Next.js 应用中选择客户端渲染或服务端渲染的最佳实践，以及优化渲染性能的指南。通过理解这些渲染技术及其在 Next.js 中的应用，开发者可以做出明智的决策并优化项目中的渲染性能。
+客户端渲染和服务端渲染是 Web 开发中交付动态交互式内容的两种关键技术。本章探讨了这些渲染方法的基本概念和主要区别。服务端渲染被强调为 Next.js 应用的一个关键方面，因为它具有提高性能、增强搜索引擎优化和提升用户体验的能力。然而，客户端渲染也有其优势，特别是在需要动态内容和交互性的场景下。本章讨论了客户端渲染表现出色的不同场景，并对其在 Next.js 应用中的有效实现提供了见解。还讨论了在 Next.js 应用中选择客户端渲染或服务端渲染的最佳实践，以及优化渲染性能的指南。通过理解这些渲染技术及其在 Next.js 中的应用，开发者可以做出明智的决策并优化项目中的渲染性能。
 
-在下一章，*Securing App with Next Auth* 中，我们将深入探讨 Next.js 应用中的身份验证和安全领域。本章将引导你实现 `Next Auth`，这是一个强大的第三方身份验证库。通过利用 `Next Auth`，你将能够简化身份验证流程并无缝集成各种身份验证提供商，包括 Google、Facebook、Twitter 等流行的提供商。加入我们，共同探索 Next.js 中安全身份验证的世界，并学习如何使用 `Next Auth` 增强应用程序的安全性。
+在下一章 *Securing App with Next Auth* 中，我们将深入探讨 Next.js 应用中的身份验证和安全领域。本章将引导你实现 `Next Auth`，这是一个强大的第三方身份验证库。通过利用 `Next Auth`，你将能够简化身份验证流程并无缝集成各种身份验证提供商，包括 Google、Facebook、Twitter 等流行的提供商。加入我们，共同探索 Next.js 中安全身份验证的世界，并学习如何使用 `Next Auth` 增强应用程序的安全性。
 
 ## 单选题
 
@@ -6487,7 +7307,7 @@ function MyComponent() {
 4. B
 5. C
 
-# 第 11 章：使用 Auth 应用程序
+# 第 11 章：使用 Next Auth 保护应用程序
 
 在不断发展的 Web 应用格局中，确保稳健的身份验证和安全措施至关重要。在本章中，我们将深入探讨 Next.js 应用中的身份验证和安全领域。本章将引导你实现 `Next Auth`，这是一个强大的第三方身份验证库。通过利用 `Next Auth`，你将能够简化身份验证流程并无缝集成各种身份验证提供者，包括 Google、Facebook、Twitter 等流行的提供者。加入我们，共同探索 Next.js 中安全身份验证的世界，并学习如何使用 `Next Auth` 增强应用程序的安全性。为了开始探索，我们将从身份验证和安全的介绍开始。我们将讨论基本概念，强调身份验证和保护数据的意义。通过理解身份验证和安全的核心原理，你将获得将这些实践整合到应用程序中的见解。接下来，我们将深入 `Next Auth`，这是一个简化身份验证过程的强大第三方身份验证库。实际实现是关键，我们将引导你通过设置 `Next Auth` 来处理身份验证。通过扩展 `Next Auth` 的多功能，我们将发现如何利用各种提供者来身份验证用户。`Next Auth` 为 Next.js 应用程序提供无缝的身份验证体验，允许你的应用程序适应广泛的用户偏好。然而，身份验证只是一个方面；保护应用程序的页面和 API 路由同样重要。最后，我们将深入探讨 Next.js 应用中身份验证的最佳实践。我们将讨论诸如会话管理、缓解常见的安全漏洞以及维护用户信任等基本考虑因素。在整个章节中，我们将涵盖身份验证和安全的介绍、`Next Auth` 的概述、在 Next.js 应用中设置 `Next Auth`、实施不同的身份验证提供者、保护页面和 API 路由以及身份验证和安全的最佳实践。在本章结束时，你将拥有知识和实践方法来将 `Next Auth` 整合到你的 Next.js 应用中，有效地保护你的应用。
 
@@ -6503,7 +7323,7 @@ function MyComponent() {
 
 ## 身份验证和安全的介绍
 
-身份验证、授权和安全是 Web 开发的基础组件，它们共同确保数据和资源的完整性、机性和可用性。让我们详细探索每个概念并理解它们在 Web 开发背景下的重要性。
+身份验证、授权和安全是 Web 开发的基础组件，它们共同确保数据和资源的完整性、机密性和可用性。让我们详细探索每个概念并理解它们在 Web 开发背景下的重要性。
 
 - 身份验证：
   身份验证是验证用户或系统身份的过程。涉及提供用户名密码之类的凭证，以证明你所声称的身份。身份验证的主要目标是确保只有授权的个人或系统可以访问特定资源或执行某些操作。在 Web 开发中，身份验证通常涉及以下步骤：
@@ -6513,8 +7333,8 @@ function MyComponent() {
 
 - 授权：
   授权是在身份验证成功后确定用户允许访问的操作或资源的过程。一旦验证用户身份，授权机制就会定义应用程序内的权限和限制。在 Web 开发中，授权涉及：
-  - 基于角色的访问控制 (RBAC)：RBAC 根据职责或权限将角色分配给用户。每个角色都有一组关联。通过将用户分配给特定角色，你可以控制他们对应用程序不同功能或部分的访问。
-  - 访问控制列表 (ACL)：ACL 通过为每个用户或角色定义特定权限，对单个资源或操作进行更细粒度的控制。通过 ACL，你可以确定细粒度的访问。
+  - 基于角色的访问控制 (RBAC)：RBAC 根据职责或权限将角色分配给用户。每个角色都有一组关联权限。通过将用户分配给特定角色，你可以控制他们对应用程序不同功能或部分的访问。
+  - 访问控制列表 (ACL)：ACL 通过为每个用户或角色定义特定权限，对单个资源或操作进行更细粒度的控制。通过 ACL，你可以确定细粒度的访问权限。
 
 - 安全：
   安全涵盖了保护 Web 应用程序和系统免受各种威胁、漏洞和攻击的措施。它涉及实施保护措施以维护数据的机密性、完整性和可用性。在 Web 开发中，安全考虑包括：
@@ -6525,11 +7345,7 @@ function MyComponent() {
   - 定期安全更新：将 Web 应用及其依赖更新到最新的安全补丁和修复对于解决已知漏洞至关重要。
   - 安全测试：定期的安全评估（如渗透测试和漏洞扫描）可以识别应用程序中的潜在弱点。
 
-
-
-
-
-安装完成后，你需要在 Next.js 项目的根目录下创建一个 `[nextauth].js` 文件。该文件将作为 NextAuth.js 的配置文件，你可以在其中定义身份提供者、回调函数和其他设置。
+安装完成后，你需要在 Next.js 项目的根目录下创建一个 `[...nextauth].js` 文件。该文件将作为 NextAuth.js 的配置文件，你可以在其中定义身份提供者、回调函数和其他设置。
 
 ### 1. 身份提供者
 NextAuth.js 开箱即用支持多种身份提供者，包括：
@@ -6573,7 +7389,7 @@ NextAuth.js 提供了若干增强身份验证和授权的附加功能，包括�
 
 以下是在 Next.js 应用中如何设置 NextAuth 的分步指南：
 
-### 第 1 步安装所需的包
+### 第 1 步：安装所需的包
 
 首先创建一个新的 Next.js 应用或打开一个现有的。打开终端并导航到项目目录。安装以下包：
 
@@ -6583,7 +7399,7 @@ npm install axios
 npm install react-hook-form
 ```
 
-### 第 2 步创建 NextAuth.js 配置文件
+### 第 2 步：创建 NextAuth.js 配置文件
 
 接下来，在项目的根目录下创建一个名为 `next-auth.config.js` 的新文件。该文件将包含 NextAuth.js 的配置。
 
@@ -6634,34 +7450,32 @@ const options = {
 export default (req, res) => NextAuth(req, res, options)
 ```
 
-
-
-
-
 `options` 对象提供了更多配置选项，你可以在 NextAuth.js 文档中探索这些选项。这些选项包括指定数据库适配器、指定登录/注销的自定义页面、覆盖默认页面、配置电子邮件提供者等。
 
 最后，配置文件导出一个接收 `req` 和 `res` 对象的函数。该函数由 NextAuth.js 用于处理身份验证请求。
 
 ### 步骤 3：为 NextAuth 创建 API 路由
 
-接下来，创建一个名为 `pages/api/auth/[…nextauth].js` 的新文件。此文件将处理身份验证请求。将以下代码粘贴到文件中：
+接下来，创建一个名为 `pages/api/auth/[...nextauth].js` 的新文件。此文件将处理身份验证请求。将以下代码粘贴到文件中：
 
 ```javascript
-import NextAuth from ‘next-auth’
-import Providers from ‘next-auth/providers’
+import NextAuth from 'next-auth'
+import Providers from 'next-auth/providers'
+
 const options = {
   providers: [
     Providers.GitHub({
-      clientId: ‘YOUR_GITHUB_CLIENT_ID’,
-      clientSecret: ‘YOUR_GITHUB_CLIENT_SECRET’,
+      clientId: 'YOUR_GITHUB_CLIENT_ID',
+      clientSecret: 'YOUR_GITHUB_CLIENT_SECRET',
     }),
-    // 在添加更多身份验证提供者
+    // 在此处添加更多身份验证提供者
   ],
 }
+
 export default (req, res) => NextAuth(req, res, options)
 ```
 
-确保将 GitHub 客户端凭替换为你自己的。
+确保将 GitHub 客户端凭据替换为你自己的。
 
 ### 步骤 4：设置身份验证页面
 
@@ -6670,12 +7484,13 @@ export default (req, res) => NextAuth(req, res, options)
 以下是 `signin.js` 的示例代码：
 
 ```javascript
-import { signIn } from ‘next-auth/client’
+import { signIn } from 'next-auth/client'
+
 export default function SignIn() {
   return (
     <>
       <h1>登录</h1>
-      <button onClick={() => signIn(‘github’)}>
+      <button onClick={() => signIn('github')}>
         使用 GitHub 登录
       </button>
     </>
@@ -6683,7 +7498,7 @@ export default function SignIn() {
 }
 ```
 
-在例例中，我们正在使用来自 `next-auth/client` 包的 `signIn` 函数来启动与 GitHub 的身份验证工作流。你可以根据需要添加更多身份验证提供者和按钮。
+在此例中，我们正在使用来自 `next-auth/client` 包的 `signIn` 函数来启动与 GitHub 的身份验证工作流。你可以根据需要添加更多身份验证提供者和按钮。
 
 ### 步骤 5：在应用程序中使用 NextAuth
 
@@ -6692,20 +7507,24 @@ export default function SignIn() {
 这是一个示例：
 
 ```javascript
-import { useSession } from ‘next-auth/client’
+import { useSession } from 'next-auth/client'
+
 export default function MyPage() {
   const [session, loading] = useSession()
+
   if (loading) {
     return <p>加载中…</p>
   }
+
   if (!session) {
     return <p>请登录</p>
   }
+
   return <p>欢迎, {session.user.name}</p>
 }
 ```
 
-在此例中，我们使用 `useSession` 钩子来检查用户是否已通过身份验证。如果 `session` 对象不可，则意味着用户未通过验证，我们显示“请登录”的消息。否则，我们显示一条带有用户名称的欢迎消息。
+在此例中，我们使用 `useSession` 钩子来检查用户是否已通过身份验证。如果 `session` 对象不可用，则意味着用户未通过验证，我们显示“请登录”的消息。否则，我们显示一条带有用户名称的欢迎消息。
 
 就是这些！你已成功在 Next.js 应用程序中设置了 NextAuth。你现在可以根据需要自定义身份验证工作流、添加更多身份验证提供者并处理用户会话。请务必参考 NextAuth.js 文档获取更高级的配置选项和用法示例。
 
@@ -6732,14 +7551,15 @@ OAuth 提供者允许用户使用他们在热门平台现有账户登录你的�
    在 NextAuth.js 配置文件 (`next-auth.config.js`) 中，从 `next-auth/providers` 包导入提供者并将其包含在 `providers` 数组中。为提供者提供所需的 client ID 和 client secret：
 
    ```javascript
-   import Providers from ‘next-auth/providers’
+   import Providers from 'next-auth/providers'
+
    const options = {
      providers: [
        Providers.GitHub({
-          clientId: ‘YOUR_GITHUB_CLIENT_ID’,
-          clientSecret: ‘YOUR_GITHUB_CLIENT_SECRET’,
+          clientId: 'YOUR_GITHUB_CLIENT_ID',
+          clientSecret: 'YOUR_GITHUB_CLIENT_SECRET',
        }),
-       // 在处添加更多 OAuth 提供者
+       // 在此处添加更多 OAuth 提供者
      ],
    }
    // 剩余的 NextAuth.js 配置
@@ -6747,30 +7567,31 @@ OAuth 提供者允许用户使用他们在热门平台现有账户登录你的�
 
 3. **在提供者的平台上配置提供者**
 
-   每个 OAuth 提供者都需要在其平台侧进行某些配置。例如，要实现 GitHub 身份验证，你需要设置 GitHub OAuth ，并在 NextAuth.js 配置中提供生成的 client ID 和 client secret。
+   每个 OAuth 提供者都需要在其平台侧进行某些配置。例如，要实现 GitHub 身份验证，你需要设置 GitHub OAuth 应用，并在 NextAuth.js 配置中提供生成的 client ID 和 client secret。
 
 ## 2. 电子邮件/密码身份验证
 
-NextAuth.js 开箱即用电子邮件/密码身份验证。用户可以使用他们的电子邮件和密码组合登录。要实现电子邮件/密码身份验证：
+NextAuth.js 开箱即用支持电子邮件/密码身份验证。用户可以使用他们的电子邮件和密码组合登录。要实现电子邮件/密码身份验证：
 
 1. **在 NextAuth.js 配置中启用电子邮件/密码身份验证**
 
    在 NextAuth.js 配置文件中，通过将其添加到 `providers` 数组启用电子邮件/密码提供者：
 
    ```javascript
-   import Providers from ‘next-auth/providers’
+   import Providers from 'next-auth/providers'
+
    const options = {
      providers: [
        Providers.Email({
          server: {
-            host: ‘YOUR_HOST’,
-            port: ‘YOUR_PORT’,
+            host: 'YOUR_HOST',
+            port: 'YOUR_PORT',
             auth: {
-               user: ‘YOUR_USERNAME’,
-               pass: ‘YOUR_PASSWORD’,
+               user: 'YOUR_USERNAME',
+               pass: 'YOUR_PASSWORD',
             },
          },
-         from: ‘YOUR_EMAIL’,
+         from: 'YOUR_EMAIL',
        }),
      ],
    }
@@ -6794,7 +7615,7 @@ NextAuth.js 也支持 JWT 身份验证，你可以为用户发布并验证 JWT�
      providers: [],
      // 剩余的 NextAuth.js 配置
      jwt: {
-       secret: ‘YOUR_JWT_SECRET’,
+       secret: 'YOUR_JWT_SECRET',
      },
    }
    ```
@@ -6805,71 +7626,65 @@ NextAuth.js 也支持 JWT 身份验证，你可以为用户发布并验证 JWT�
 
 ### 4. 自定义提供者
 
-NextAuth.js 允许你创建自定义身份验证提供者，以集成你自己的身份验证系统或不支持第三方服务。要实现自定义提供者：
+NextAuth.js 允许你创建自定义身份验证提供者，以集成你自己的身份验证系统或不支持的第三方服务。要实现自定义提供者：
 
 1. **创建自定义提供者文件**
 
    为你的自定义提供者创建一个 JavaScript 文件，例如 `myCustomProvider.js`。在此文件中，定义用于身份验证和检索用户数据的必要函数。例如：
 
    ```javascript
-   import { Account, Provider } from ‘next-auth/providers’
+   import { Account, Provider } from 'next-auth/providers'
+
    const MyCustomProvider = (options) => {
      return {
-       id: ‘my-custom-provider’,
-       name: ‘自定义提供者’,
-       type: ‘oauth’,
-       version: ‘1.0’,
-       scope: ‘read:profile’,
-       accessTokenUrl: ‘https://mycustomprovider.com/oauth2/token’,
-       authorizationUrl: ‘https://mycustomprovider.com/oauth2/auth’,
-       profileUrl: ‘https://mycustomprovider.com/api/profile’,
+       id: 'my-custom-provider',
+       name: '自定义提供者',
+       type: 'oauth',
+       version: '1.0',
+       scope: 'read:profile',
+       accessTokenUrl: 'https://mycustomprovider.com/oauth2/token',
+       authorizationUrl: 'https://mycustomprovider.com/oauth2/auth',
+       profileUrl: 'https://mycustomprovider.com/api/profile',
+       clientId: options.clientId,
+       clientSecret: options.clientSecret,
+       async profile(profile, tokens) {
+         // Retrieve user data from the profile and tokens
+         return {
+           id: profile.id,
+           name: profile.name,
+           email: profile.email,
+           image: profile.image,
+         }
+       },
+       // Additional provider methods…
      }
    }
+
+   export default MyCustomProvider
    ```
 
+2. **在 NextAuth.js 配置中导入并添加自定义 provider**
 
+   在 NextAuth.js 配置文件中，导入自定义 provider 并将其包含在 `providers` 数组中，传递任何必要的选项：
 
+   ```javascript
+   import MyCustomProvider from './myCustomProvider'
 
+   const options = {
+     providers: [
+       MyCustomProvider({
+         clientId: 'YOUR_CUSTOM_PROVIDER_CLIENT_ID',
+         clientSecret: 'YOUR_CUSTOM_PROVIDER_CLIENT_SECRET',
+       }),
+       // Other providers…
+     ],
+   }
+   // Rest of the NextAuth.js configuration
+   ```
 
-```javascript
-clientId: options.clientId,
-clientSecret: options.clientSecret,
-async profile(profile, tokens) {
-  // Retrieve user data from the profile and tokens
-  return {
-    id: profile.id,
-    name: profile.name,
-    email: profile.email,
-    image: profile.image,
-  }
-},
-// Additional provider methods…
-}
-}
-export default MyCustomProvider
-```
+3. **实现必要的 provider 方法**
 
-### 2. 在 NextAuth.js 配置中导入并添加自定义 provider
-
-在 NextAuth.js 配置文件中，导入自定义 provider 并将其包含在 `providers` 数组中，传递任何必要的选项：
-
-```javascript
-import MyCustomProvider from './myCustomProvider'
-const options = {
-  providers: [
-    MyCustomProvider({
-      clientId: 'YOUR_CUSTOM_PROVIDER_CLIENT_ID',
-      clientSecret: 'YOUR_CUSTOM_PROVIDER_CLIENT_SECRET',
-    }),
-    // Other providers…
-  ],
-}
-// Rest of the NextAuth.js configuration
-```
-
-### 3. 实现必要的 provider 方法
-
-在自定义 provider 文件中，你需要实现必要的方法，如 `accessToken`、`refreshToken` 和 `profile`。这些方法处理身份验证流程、获取访问令牌、刷新令牌以及从 provider 的 API 中提取用户数据。
+   在自定义 provider 文件中，你需要实现必要的方法，如 `accessToken`、`refreshToken` 和 `profile`。这些方法处理身份验证流程、获取访问令牌、刷新令牌以及从 provider 的 API 中提取用户数据。
 
 **注意**：自定义 provider 需要根据你正在集成的特定 provider 进行额外的设置和配置。请参考该 provider 的文档以获取有关设置和配置自定义 provider 的详细说明。
 
@@ -6877,7 +7692,7 @@ const options = {
 
 # 使用身份验证保护页面和 API 路由
 
-在 Next.js 中，你可以通过实现身份验证机制来保护页面和 API 路由。身份验证确保只有经过验证和授权的用户才能访问某些页面或 API 端。虽然在 Next.js 中有多种方法可以实现这一点，我们将描述一种使用会话（sessions）和 cookie 的常用方法。
+在 Next.js 中，你可以通过实现身份验证机制来保护页面和 API 路由。身份验证确保只有经过验证和授权的用户才能访问某些页面或 API 端点。虽然在 Next.js 中有多种方法可以实现这一点，我们将描述一种使用会话和 cookie 的常用方法。
 
 以下是步骤：
 
@@ -6890,6 +7705,7 @@ const options = {
 ```javascript
 // api/auth.js
 import { ironSession } from 'next-iron-session';
+
 async function handler(req, res) {
   if (req.method === 'POST') {
     // Validate user credentials
@@ -6911,6 +7727,7 @@ async function handler(req, res) {
     res.status(405).end(); // Method not allowed
   }
 }
+
 export default ironSession(handler, {
   password: process.env.SESSION_PASSWORD,
   cookieName: 'session',
@@ -6920,7 +7737,7 @@ export default ironSession(handler, {
 });
 ```
 
-在此示例中，`/api/auth` 端点处理用于登录的 POST 请求和注销的 DELETE 请求。它使用 `next-iron-session` 验证用户凭据并相应创建/销会话。
+在此示例中，`/api/auth` 端点处理用于登录的 POST 请求和注销的 DELETE 请求。它使用 `next-iron-session` 验证用户凭据并相应创建/销毁会话。
 
 3. **实现用户身份验证逻辑**：在身份验证端点中，你需要实现验证用户凭据的逻辑，通常通过检查用户数据库或外部身份验证服务（例如 OAuth）。如果凭据有效，你创建一个会话并在其中存储相关的用户信息。
 
@@ -6929,6 +7746,7 @@ export default ironSession(handler, {
 ```javascript
 // authMiddleware.js
 import { ironSession } from 'next-iron-session';
+
 const withAuth = (handler) => {
   return ironSession(async (req, res) => {
     const user = req.session.get('user');
@@ -6957,18 +7775,22 @@ const withAuth = (handler) => {
 ```javascript
 // pages/dashboard.js
 import withAuth from '../middleware/authMiddleware';
+
 const DashboardPage = ({ user }) => {
   // Protected page content
 };
+
 export default withAuth(DashboardPage);
 ```
 
 ```javascript
 // pages/api/protected.js
 import withAuth from '../../middleware/authMiddleware';
+
 const protectedHandler = (req, res) => {
   // Protected API route logic
 };
+
 export default withAuth(protectedHandler);
 ```
 
@@ -6983,64 +7805,56 @@ export default withAuth(protectedHandler);
 实施强大的身份验证和安全实践对于确保 Next.js 应用中数据的完整性和机密性至关重要。关于 Next.js 应用的身份验证和安全，请遵循以下最佳实践：
 
 1. **使用强身份验证机制**
-
    * 使用 OAuth 2.0 或 JWT 等安全身份验证协议进行用户身份验证。
-
    * 强制强密码策略，包括复杂度要求、密码哈希和加盐。
-
    * 考虑实施多因素身份验证 (MFA) 以增加额外的安全层。
 
 2. **实现授权和访问控制**
-
-
-
-
-
-- 使用 `RBAC` 或 `ACL` 来控制用户权限，并限制对敏感资源或操作的访问。
-- 在服务器端验证用户角色或权限，以防止未经授权的访问。
+   * 使用 `RBAC` 或 `ACL` 来控制用户权限，并限制对敏感资源或操作的访问。
+   * 在服务器端验证用户角色或权限，以防止未经授权的访问。
 
 ### 3. 安全存储用户凭证
-- 使用强力加密算法（如 `bcrypt` 或 `Argon2`）对密码进行哈希和加盐处理。
-- 避免以明文形式存储密码或 API 密钥等敏感信息。
-- 考虑使用如 `AWS Secrets Manager` 或环境变量等安全凭据管理系统。
+* 使用强力加密算法（如 `bcrypt` 或 `Argon2`）对密码进行哈希和加盐处理。
+* 避免以明文形式存储密码或 API 密钥等敏感信息。
+* 考虑使用如 `AWS Secrets Manager` 或环境变量等安全凭据管理系统。
 
 ### 4. 防止跨站脚本 (XSS) 攻击
-- 实现输入验证和清洗，防止恶意用户输入被作为代码执行。
-- 使用 `DOMPurify` 等安全库在客户端渲染用户生成的内容之前对其进行清洗。
+* 实现输入验证和清洗，防止恶意用户输入被作为代码执行。
+* 使用 `DOMPurify` 等安全库在客户端渲染用户生成的内容之前对其进行清洗。
 
 ### 5. 防止 CSRF 攻击
-- 使用 `CSRF` 令牌并在服务器端对其进行验证，以防止来自外部网站的恶意请求。
-- 包含反 CSRF 保护机制，如 `SameSite` Cookie 和 `CSRF` 头部信息。
+* 使用 `CSRF` 令牌并在服务器端对其进行验证，以防止来自外部网站的恶意请求。
+* 包含反 CSRF 保护机制，如 `SameSite` Cookie 和 `CSRF` 头部信息。
 
 ### 6. 实施传输层安全 (TLS)
-- 使用 `HTTPS` 确保客户端与服务器之间的加密通信，保护敏感数据免受截获或篡改。
-- 获取并配置 `SSL/TLS` 证书以建立安全连接。
+* 使用 `HTTPS` 确保客户端与服务器之间的加密通信，保护敏感数据免受截获或篡改。
+* 获取并配置 `SSL/TLS` 证书以建立安全连接。
 
 ### 7. 清洗并验证用户输入
-- 实现服务器端输入验证，确保用户输入符合预期格式和限制。
-- 使用 `Joi` 或 `validator.js` 等库针对特定数据类型或模式验证用户输入。
+* 实现服务器端输入验证，确保用户输入符合预期格式和限制。
+* 使用 `Joi` 或 `validator.js` 等库针对特定数据类型或模式验证用户输入。
 
 ### 8. 定期更新依赖和补丁
-- 保持 `Next.js` 及其依赖的最新版本，以从安全修复和补丁中受益。
--get 安全公告并及时应用补丁以解决已知漏洞。
+* 保持 `Next.js` 及其依赖的最新版本，以从安全修复和补丁中受益。
+* 关注安全公告并及时应用补丁以解决已知漏洞。
 
 ### 9. 实施速率限制和安全头部
-- 强制执行速率限制以防止暴力攻击和资源过度消耗。
-- 设置 `CSP`、`HSTS` 和 `X-XSS-Protection` 等安全头部以缓解常见的 Web 漏洞。
+* 强制执行速率限制以防止暴力攻击和资源过度消耗。
+* 设置 `CSP`、`HSTS` 和 `X-XSS-Protection` 等安全头部以缓解常见的 Web 漏洞。
 
 ### 10. 定期进行安全审计和测试
-- 执行安全审计和渗透测试，以识别应用程序中的漏洞。
-- 定期进行代码审查和安全评估，以确保遵循最佳实践。
+* 执行安全审计和渗透测试，以识别应用程序中的漏洞。
+* 定期进行代码审查和安全评估，以确保遵循最佳实践。
 
 ### 11. 教育用户并维护审计日志
-- 向用户普及安全最佳实践，例如使用强密码并对钓鱼尝试保持警惕。
-- 维护身份验证和安全相关事件的日志以便审计和分析。
+* 向用户普及安全最佳实践，例如使用强密码并对钓鱼尝试保持警惕。
+* 维护身份验证和安全相关事件的日志以便审计和分析。
 
 通过遵循这些最佳实践，你可以增强 `Next.js` 应用程序的身份验证安全性，并防御常见的漏洞和威胁。
 
 ## 结论
 
-本章全面探讨了 `Next.js` 应用程序中的身份验证与安全性，特别关注了 `Next Auth`。我们首先强调了在 Web 应用程序中实施健的身份验证和安全措施的重要性。理解身份验证和安全的基础概念对于有效实施这些实践至关重要。
+本章全面探讨了 `Next.js` 应用程序中的身份验证与安全性，特别关注了 `Next Auth`。我们首先强调了在 Web 应用程序中实施健壮的身份验证和安全措施的重要性。理解身份验证和安全的基础概念对于有效实施这些实践至关重要。
 
 `Next Auth` 被作为一个强大的第三方身份验证库引入，它简化了跨提供者的身份验证过程。我们探索了它的功能、优势以及与 `Next.js` 应用程序的无缝集成。我们强调了实践落地，并为在 `Next.js` 应用程序中设置 `Next Auth` 提供了指导。
 
@@ -7050,31 +7864,29 @@ export default withAuth(protectedHandler);
 
 在下一章中，我们将深入研究开发 `CRUD` 应用程序的 `Next.js` 项目设置和配置。我们将探索如何处理路由、创建页面并实现应用程序的基本结构。此外，我们还将学习如何处理路由。
 
-
-
 接下来，我们将深入研究 To-do 应用的核心功能。我们将实现必要的逻辑，用于创建新任务、从数据库中检索现有任务、更新任务状态以及删除任务。我们还将探索如何处理验证和错误处理，以确保流畅的用户体验。
 
-在本章结束时，你将深刻理解如何利用 `Next.js` 和 `Supabase` 的强大来开发一个功能丰富的 CRUD 应用。你将掌握使用不同数据模型构建类似应用程序的技能，并扩展其功能以满足你的特定需求。现在，让我们深入其中，开启这段使用 `Next.js` 和 `Supabase` 构建 CRUD 应用的奇妙旅程吧！
+在本章结束时，你将深刻理解如何利用 `Next.js` 和 `Supabase` 的强大功能来开发一个功能丰富的 CRUD 应用。你将掌握使用不同数据模型构建类似应用程序的技能，并扩展其功能以满足你的特定需求。现在，让我们深入其中，开启这段使用 `Next.js` 和 `Supabase` 构建 CRUD 应用的奇妙旅程吧！
 
 ## 结构
 
 在本章中，将涵盖以下主题：
 
-*   CRUD 应用的介绍及其工作原理
-*   搭建 `Next.js` 开发环境并创建新项目
-*   为 CRUD 应用创建数据库模式并建立数据库连接
-*   使用 `React` 和 `Next.js` 为 CRUD 应用创建用户界面，包括创建组件和使用 `CSS` 进行样式化处理
-*   将应用部署到生产服务器
+* CRUD 应用的介绍及其工作原理
+* 搭建 `Next.js` 开发环境并创建新项目
+* 为 CRUD 应用创建数据库模式并建立数据库连接
+* 使用 `React` 和 `Next.js` 为 CRUD 应用创建用户界面，包括创建组件和使用 `CSS` 进行样式化处理
+* 将应用部署到生产服务器
 
 # 设置开发环境
 
 **前提条件：**
 
-*   Node `16.8` 或更高版本
-*   macOS、Windows（包含 WSL）或 Linux 操作系统
-*   `npm`（包管理器）
-*   Visual Studio Code
-*   GitHub 账号
+* Node `16.8` 或更高版本
+* macOS、Windows（包含 WSL）或 Linux 操作系统
+* `npm`（包管理器）
+* Visual Studio Code
+* GitHub 账号
 
 现在，我们将下载最新版本的 `Next.js`。打开终端并输入以下命令：
 
@@ -7088,7 +7900,7 @@ npx create-next-app@latest
 `Would you like to use TypeScript? No / Yes`
 `Would you like to use ESLint? No / Yes`
 `Would you like to use Tailwind CSS? No / Yes`
-`Would you like to use `src/` directory? No / Yes`
+`Would you like to use \`src/\` directory? No / Yes`
 `Would you like to use App Router? (recommended) No / Yes`
 `Would you like to customize the default import alias? No / Yes`
 
@@ -7121,11 +7933,13 @@ npm run dev
   padding: 0;
   margin: 0;
 }
+
 html,
 body {
   max-width: 100vw;
   overflow-x: hidden;
 }
+
 body {
   background: black;
   color: white;
@@ -7136,11 +7950,14 @@ body {
 ```js
 import './globals.css'
 import { Inter } from 'next/font/google'
+
 const inter = Inter({ subsets: ['latin'] })
+
 export const metadata = {
   title: 'To-Do app',
   description: 'Created using Next.js 13',
 }
+
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
@@ -7160,6 +7977,7 @@ export default function RootLayout({ children }) {
   padding: 6rem;
   min-height: 100vh;
 }
+
 .go-button {
   background: green;
   padding: 10px;
@@ -7170,12 +7988,13 @@ export default function RootLayout({ children }) {
 ```js
 import styles from "./page.module.css";
 import Link from "next/link";
+
 export default function Home() {
   return (
     <main className={styles.main}>
       <h1>To-Do app</h1>
       <p>This is an app created using Next.js 13</p>
-      <Link href="/" className={styles['go-button']}>Let’s Go!</Link>
+      <Link href="/crud" className={styles['go-button']}>Let's Go!</Link>
     </main>
   );
 }
@@ -7189,7 +8008,7 @@ export default function Home() {
 
 # 显示待办事项 (读取)
 
-我们已经为应用创建了落地页，用户访问首页时会看到。当用户点击 `Let’s Go` 按钮时，我们将他们重定向到应用的主页，可以在那里进行 CRUD 操作。
+我们已经为应用创建了落地页，用户访问首页时会看到。当用户点击 `Let's Go` 按钮时，我们将他们重定向到应用的主页，可以在那里进行 CRUD 操作。
 
 现在，我们在 app 文件夹内部创建一个新的 `crud` 文件夹并创建一个 `page.js` 来渲染 `crud` 路由的 UI，并创建一个 `page.module.css` 来编写样式。
 
@@ -7233,7 +8052,7 @@ export default function Crud() {
 我们将更改 `app/page.js` 中 `Link` 组件的 `href`：
 
 ```js
-<Link href="/crud" className={styles['go-button']}>Let’s Go!</Link>
+<Link href="/crud" className={styles['go-button']}>Let's Go!</Link>
 ```
 
 这样用户点击链接后，将被重定向到我们刚刚创建的 `crud` 路由。现在，我们在根目录下创建一个新的 `components` 文件夹并在其中创建一个 `ToDoItem` 组件。它将接收包含待办事项名称的 `item` 属性：
@@ -7246,6 +8065,7 @@ export default function Crud() {
 const ToDoItem = ({ item }) => {
   return <p>{item}</p>;
 };
+
 export default ToDoItem;
 ```
 
@@ -7278,64 +8098,79 @@ export default function Crud() {
 
 接下来，让我们完善待办事项列表的 UI。为了这一点，我们将安装名为 Material UI 的 UI 库。它有很多预构建的 UI 组件和工具。运行命令 `npm install @mui/material @emotion/react @emotion/styled @mui/icons-material` 安装 Material UI 及其图标包。我们将添加一个复选框来标记已完成，并为每个项目添加一个删除按钮：
 
-
-
 ```javascript
-newChecked.splice(currentIndex, 1);
-}
+// components/ToDoItem.jsx
+"use client";
+import React, { useState } from "react";
+import styles from "./ToDoItem.module.css";
+import ListItem from "@mui/material/ListItem";
+import ListItemButton from "@mui/material/ListItemButton";
+import ListItemIcon from "@mui/material/ListItemIcon";
+import Checkbox from "@mui/material/Checkbox";
+import ListItemText from "@mui/material/ListItemText";
+import DeleteIcon from "@mui/icons-material/Delete";
 
-setChecked(newChecked);
-};
+const ToDoItem = ({ item }) => {
+  const [checked, setChecked] = useState([]);
 
-return (
-  <ListItem className={styles.item} key={key}>
-    <ListItemButton onClick={handleToggle(key)}>
+  const handleToggle = (key) => {
+    let newChecked = [...checked];
+    const currentIndex = newChecked.indexOf(key);
+    if (currentIndex !== -1) {
+      newChecked.splice(currentIndex, 1);
+    } else {
+      newChecked.push(key);
+    }
+    setChecked(newChecked);
+  };
+
+  return (
+    <ListItem className={styles.item} key={key}>
+      <ListItemButton onClick={handleToggle(key)}>
+        <ListItemIcon>
+          <Checkbox
+            checked={checked.indexOf(key) !== -1}
+            tabIndex={-1}
+            className={styles.checkbox}
+          />
+        </ListItemIcon>
+        <ListItemText primary={item} />
+      </ListItemButton>
       <ListItemIcon>
-        <Checkbox
-          checked={checked.indexOf(key) !== -1}
-          tabIndex={-1}
-          className={styles.checkbox}
-        />
+        <DeleteIcon className={styles.delete} />
       </ListItemIcon>
-      <ListItemText primary={item} />
-    </ListItemButton>
-    <ListItemIcon>
-      <DeleteIcon className={styles.delete} />
-    </ListItemIcon>
-  </ListItem>
-);
+    </ListItem>
+  );
 };
 
 export default ToDoItem;
 ```
 
 **components/ToDoItem.module.css**
-
 ```css
-// CSS
-styles.item {
+.item {
   background: black;
   margin-bottom: 20px;
 }
+
 .checkbox {
   color: white;
 }
+
 .delete {
   color: rgb(235, 81, 81);
 }
 ```
 
 **crud/page.js**
-
 ```javascript
-// 渲染 Todo 的组件
-“use client”;
-import styles from “./page.module.css”;
-import TodoItem from “@/components/ToDoItem”;
-import List from “@mui/material/List”;
+"use client";
+import styles from "./page.module.css";
+import TodoItem from "@/components/ToDoItem";
+import List from "@mui/material/List";
 
 export default function Crud() {
-  const items = [“去健身房”, “买杂货”, “取邮件”];
+  const items = ["去健身房", "买杂货", "取邮件"];
   return (
     <div className={styles.main}>
       <h2>待办事项</h2>
@@ -7359,9 +8194,9 @@ export default function Crud() {
 
 到目前为止，我们还没有为删除按钮和复选框添加任何功能，因为我们将在接下来的章节中介绍这些内容。
 
-# 使用 Supabase 设置数据库 (#toc.xhtml_s183a)
+# 使用 Supabase 设置数据库
 
-我们的应用现在从静态数组 `items` 渲染 UI，内容为 `[“去健身房”, “买杂货”, “取邮件”]`。在现实应用中，此类数据将存储在数据库中。我们将通过 API 调用从服务器获取这些数据，然后在前端进行渲染。这正是我们现在要做的！
+我们的应用现在从静态数组 `items` 渲染 UI，内容为 `["去健身房", "买杂货", "取邮件"]`。在现实应用中，此类数据将存储在数据库中。我们将通过 API 调用从服务器获取这些数据，然后在前端进行渲染。这正是我们现在要做的！
 
 为此，请访问 Supabase.com 并使用你的 GitHub 账号登录。你会看到以下仪表板：
 
@@ -7369,7 +8204,7 @@ export default function Crud() {
 
 **图 12.9：** Supabase 仪表板
 
-点击 `New project` 按钮并填写 `Name` 和 `Type of organization`，如 图 12.10 所示：
+点击 `New project` 按钮并填写 `Name` 和 `Type of organization`，如图 12.10 所示：
 
 ![](img/image10.jpg)
 
@@ -7381,7 +8216,7 @@ export default function Crud() {
 
 **图 12.11：** 创建新项目屏幕
 
-进入 `Table Editor` 选项卡，将表命名为 `items,`，创建以下四个列，并点击 `Save`：
+进入 `Table Editor` 选项卡，将表命名为 `items`，创建以下四个列，并点击 `Save`：
 
 ![](img/image1_2.jpg)
 
@@ -7393,7 +8228,7 @@ export default function Crud() {
 
 **图 12.13：** 数据库条目
 
-我们正在进展！部分是通过 API 调用从我们的 Next.js 应用获取这些数据并渲染到我们的 UI 中。幸运的是，Supabase 提供了一种简单的方法，如 图 12.14 所示：
+我们正在进展！下一步是通过 API 调用从我们的 Next.js 应用获取这些数据并渲染到我们的 UI 中。幸运的是，Supabase 提供了一种简单的方法，如图 12.14 所示：
 
 ![](img/image12.jpg)
 
@@ -7404,33 +8239,38 @@ export default function Crud() {
 在根级别创建一个新的 `utils` 文件夹，并创建一个文件 `SupabaseClient.js`，用 Supabase 服务器初始化应用：
 
 ```javascript
-import { createClient } from “@supabase/supabase-js”;
-const supabase = createClient(
-  supabaseUrl,
-  supabaseKey
-);
+// utils/SupabaseClient.js
+import { createClient } from "@supabase/supabase-js";
+
+const supabaseUrl = "YOUR_SUPABASE_URL";
+const supabaseKey = "YOUR_SUPABASE_KEY";
+
+const supabase = createClient(supabaseUrl, supabaseKey);
+
 export default supabase;
 ```
 
-将 `supabaseUrl` 和 `supabaseKey` 替换为你 Supabase 帐户中的 API 密钥。
+将 `supabaseUrl` 和 `supabaseKey` 替换为你 Supabase 账户中的 API 密钥。
 
 更新 `crud/page.js` 为：
 
 ```javascript
-“use client”;
-import styles from “./page.module.css”;
-import TodoItem from “@/components/ToDoItem”;
-import List from “@mui/material/List”;
-import supabase from “@/utils/SupabaseClient”;
+// crud/page.js
+"use client";
+import styles from "./page.module.css";
+import TodoItem from "@/components/ToDoItem";
+import List from "@mui/material/List";
+import supabase from "@/utils/SupabaseClient";
 
 export default async function Crud() {
-  let { data: items, error } = await supabase.from(“items”).select(“*");
+  let { data: items, error } = await supabase.from("items").select("*");
+
   return (
     <div className={styles.main}>
       <h2>待办事项</h2>
       <List>
         {items.map((item) => (
-          <TodoItem item={item} key={index} />
+          <TodoItem item={item} key={item.id} />
         ))}
       </List>
     </div>
@@ -7438,17 +8278,17 @@ export default async function Crud() {
 }
 ```
 
-components/ToDoItem.jsx
-
+**components/ToDoItem.jsx**
 ```javascript
-“use client”;
-import React from { useState };
-import styles from “ToDoItem.module.css”;
-import ListItem from “@mui/material/ListItem”;
-import ListItemButton from “@mui/material/ListItemButton”;
-import ListItemIcon from “@mui/material/ListItemIcon”;
-import Checkbox from “@mui/material/Checkbox”;
-import ListItemText from “@mui/material/ListItemText”;
+"use client";
+import React, { useState } from "react";
+import styles from "./ToDoItem.module.css";
+import ListItem from "@mui/material/ListItem";
+import ListItemButton from "@mui/material/ListItemButton";
+import ListItemIcon from "@mui/material/ListItemIcon";
+import Checkbox from "@mui/material/Checkbox";
+import ListItemText from "@mui/material/ListItemText";
+import DeleteIcon from "@mui/icons-material/Delete";
 
 const ToDoItem = ({ item }) => {
   const [checked, setChecked] = useState([]);
@@ -7465,16 +8305,16 @@ const ToDoItem = ({ item }) => {
   };
 
   return (
-    <ListItem ...>
-      <ListItemButton onClick={handleToggle(key)}>
+    <ListItem className={styles.item} key={item.id}>
+      <ListItemButton onClick={() => handleToggle(item.id)}>
         <ListItemIcon>
           <Checkbox
-            checked={checked.indexOf(key) !== -1}
+            checked={checked.indexOf(item.id) !== -1}
             tabIndex={-1}
             className={styles.checkbox}
           />
         </ListItemIcon>
-        <ListItemText primary={item} />
+        <ListItemText primary={item.name} />
       </ListItemButton>
       <ListItemIcon>
         <DeleteIcon className={styles.delete} />
@@ -7488,22 +8328,21 @@ export default ToDoItem;
 
 ![](img/12.jpg)
 
-**12.15：** 从服务器渲染的待办事项
+**图 12.15：** 从服务器渲染的待办事项
 
-# 添加新项目 (创建) (#toc.xhtml_s84)
+# 添加新项目 (创建)
 
 在之前的章节中，我们成功地从 Supabase 获取数据并连接了我们的 Next.js 应用。在本节中，我们将尝试使用输入框和按钮向列表添加新的待办事项。
 
-crud/page.js
-
+**crud/page.js**
 ```javascript
-“use client”;
-import React, { useState, useEffect } from “react”;
-import { v4 as uuidv4 } from “uuid”;
-import styles from “./page.module.css”;
-import TodoItem from “@/components/ToDoItem”;
-import List from “@mui/material/List”;
-import supabase from “@/utils/SupabaseClient”;
+"use client";
+import React, { useState, useEffect } from "react";
+import { v4 as uuidv4 } from "uuid";
+import styles from "./page.module.css";
+import TodoItem from "@/components/ToDoItem";
+import List from "@mui/material/List";
+import supabase from "@/utils/SupabaseClient";
 
 export default function Crud() {
   const [items, setItems] = useState([]);
@@ -7511,7 +8350,7 @@ export default function Crud() {
 
   useEffect(() => {
     const fetchItems = async () => {
-      let { data, error } = await supabase.from(“items”).select(“*");
+      let { data, error } = await supabase.from("items").select("*");
       if (data) setItems(data);
     };
     fetchItems();
@@ -7519,7 +8358,7 @@ export default function Crud() {
 
   const addItem = async () => {
     if (!inputValue) return;
-    let { error } = await supabase.from(“items”).insert([{
+    let { error } = await supabase.from("items").insert([{
       id: uuidv4(),
       name: inputValue
     }]);
@@ -7533,9 +8372,9 @@ export default function Crud() {
     <div className={styles.main}>
       <h2>待办事项</h2>
       <div className={styles.container}>
-        <input 
-          value={inputValue} 
-          onChange={(e) => setInputValue(e.target.value)} 
+        <input
+          value={inputValue}
+          onChange={(e) => setInputValue(e.target.value)}
         />
         <button className={styles.button} onClick={addItem}>加入列表!</button>
       </div>
@@ -7555,10 +8394,6 @@ export default function Crud() {
 
 **图 12.16：** 从服务器数据渲染的待办事项
 
-
-
-
-
 ```javascript
 import TodoItem from "@/components/ToDoItem";
 import List from "@mui/material/List";
@@ -7567,13 +8402,16 @@ import supabase from "@/utils/SupabaseClient";
 export default function Crud() {
   const [newItem, setNewItem] = useState(null);
   const [items, setItems] = useState([]);
+
   const fetchData = async () => {
     const { data, error } = await supabase.from("items").select("*");
     setItems(data);
   };
+
   useEffect(() => {
     fetchData();
   }, []);
+
   const addItem = async () => {
     const { data, error } = await supabase
       .from("items")
@@ -7583,6 +8421,7 @@ export default function Crud() {
       fetchData();
     }
   };
+
   return (
     <div className={styles.main}>
       <h2>To-Do items</h2>
@@ -7605,7 +8444,7 @@ export default function Crud() {
 }
 ```
 
-注意，我们安装了一个名为 `uuidv4` 的库来生成 UUID。当你输入框中输入`‘Play football’`并点击`Add to list!`按钮时，它将向数据库发送 API 调用以添加此新项目，并刷新页面，这样我们就能在 UI 中看到新项目！
+注意，我们安装了一个名为 `uuidv4` 的库来生成 UUID。当你在输入框中输入 `'Play football'` 并点击 `Add to list!` 按钮时，它将向数据库发送 API 调用以添加此新项目，并刷新页面，这样我们就能在 UI 中看到新项目！
 
 ![](img/image3_2.jpg)
 
@@ -7616,7 +8455,6 @@ export default function Crud() {
 在这一部分，我们将根据 UI 中是否勾选来实现判断任务是否已完成。如果用户勾选或取消勾选一个待办事项，我们将更新 Supabase 表中的对应内容。为了实现这一点，我们将按照如下方式重构这两个文件：
 
 ### crud/page.js
-
 ```javascript
 "use client";
 import React, { useState, useEffect } from "react";
@@ -7629,13 +8467,16 @@ import supabase from "@/utils/SupabaseClient";
 export default function Crud() {
   const [newItem, setNewItem] = useState(null);
   const [items, setItems] = useState([]);
+
   const fetchData = async () => {
     const { data, error } = await supabase.from("items").select("*");
     setItems(data);
   };
+
   useEffect(() => {
     fetchData();
   }, []);
+
   const handleToggle = async (item) => {
     const { data, error } = await supabase
       .from("items")
@@ -7645,6 +8486,7 @@ export default function Crud() {
       fetchData();
     }
   };
+
   const addItem = async () => {
     const { data, error } = await supabase
       .from("items")
@@ -7654,6 +8496,7 @@ export default function Crud() {
       fetchData();
     }
   };
+
   return (
     <div className={styles.main}>
       <h2>To-Do items</h2>
@@ -7677,11 +8520,10 @@ export default function Crud() {
 ```
 
 ### components/ToDoItem.jsx
-
 ```javascript
 "use client";
 import React from "react";
-import styles from "./TodoItem.module.css";
+import styles from "./ToDoItem.module.css";
 import ListItem from "@mui/material/ListItem";
 import ListItemButton from "@mui/material/ListItemButton";
 import ListItemIcon from "@mui/material/ListItemIcon";
@@ -7693,6 +8535,7 @@ const ToDoItem = ({ item, onToggle }) => {
   const handleToggle = () => {
     onToggle(item);
   };
+
   return (
     <ListItem className={styles.item}>
       <ListItemButton onClick={handleToggle}>
@@ -7711,17 +8554,17 @@ const ToDoItem = ({ item, onToggle }) => {
     </ListItem>
   );
 };
+
 export default ToDoItem;
 ```
+
+
 
 # 删除待办事项（删除）
 
 我们终于完成了删除功能，当你点击 `delete` 按钮时，它将运行 Supabase 查询来从 Supabase 表中删除特定项目，并刷新 UI。
 
-
-
-
-此之后，前往 vercel.com 并使用你的 GitHub 账户登录。从列表中导入 todo-app 仓库并点击“Deploy”。这就完成了！你已成功将你的 Next.js 应用部署到网站上！
+此之后，前往 `vercel.com` 并使用你的 GitHub 账户登录。从列表中导入 `todo-app` 仓库并点击“Deploy”。这就完成了！你已成功将你的 Next.js 应用部署到网站上！
 
 ## 结论
 
@@ -7767,7 +8610,7 @@ export default ToDoItem;
 
 在部署过程中，会执行各种任务，例如编译代码、优化资源、配置设置以及搭建必要的设施。目标是确保应用程序在预期的环境中顺畅、安全且高效地运行。
 
-# 部署环境类型
+## 部署环境类型
 
 部署环境是指部署软件应用程序并让用户访问的计算基础设施。部署环境有几种类型，每种都有不同的用途。以下是一些常见类型：
 
@@ -7782,10 +8625,7 @@ export default ToDoItem;
 
 * **部署平台 (Deployment Platforms)**
 
-
-
-
-部署平台是促进应用程序部署的服务或托管提供商。这些平台提供了各种功能并支持不同的部署方法。一些流行的部署平台包括像 Amazon Web Services (AWS)、Microsoft Azure 或 Google Cloud Platform 这样的云服务提供用提供商，以及如 Netlify、Vercel 或 Heroku 这样专门的托管服务。这些平台提供基础设施、工具和服务，以简化部署过程并在不同的环境中管理应用程序。
+部署平台是促进应用程序部署的服务或托管提供商。这些平台提供了各种功能并支持不同的部署方法。一些流行的部署平台包括像 Amazon Web Services (AWS)、Microsoft Azure 或 Google Cloud Platform 这样的云服务提供商，以及如 Netlify、Vercel 或 Heroku 这样专门的托管服务。这些平台提供基础设施、工具和服务，以简化部署过程并在不同的环境中管理应用程序。
 
 需要注意的是，每个部署环境在软件开发生命周期中都有其特定的用途，确保应用程序在发布到用户访问和利用的生产环境之前已经经过了充分测试并运行良好。
 
@@ -7793,7 +8633,7 @@ export default ToDoItem;
 
 ## Next.js 中不同的部署流程类型：
 
-### 静态托管 
+### 静态托管
 
 如果你的 Next.js 应用程序是静态生成的，并且不需要服务器端渲染或 API 路由，你可以将其部署为一组静态文件。这种方法适用于 Netlify、Vercel 或 GitHub Pages 等托管平台。要使用静态托管部署你的应用程序，请遵循以下步骤：
 
@@ -7877,23 +8717,19 @@ Next.js 提供了 API 路由功能，允许你定义无服务器函数，这些�
 
 **在 Windows 和 Linux 环境下本地运行 Next.js 应用程序时，你可以在脚本中传递环境变量：**
 
-### Windows 环境 
+### Windows 环境
 
 在 Windows 中，你可以在执行脚本之前使用 `set` 命令内联设置环境变量。例如：
 ```bash
 set API_KEY=12345 && npm run dev
 ```
 
-
-
-
 在前面的示例中，在运行 `npm run dev` 脚本之前，`API_KEY` 被设置为 `12345`。你可以将 `API_KEY` 及其值替换为你特定的环境变量。
 
 ### Linux 环境
 
 在 Linux 中，你可以使用 `export` 命令在执行脚本之前内联设置环境变量。示例如下：
-
-```
+```bash
 export API_KEY=12345 && npm run dev
 ```
 
@@ -7901,35 +8737,31 @@ export API_KEY=12345 && npm run dev
 
 或者，你也可以将环境变量存储在单独的文件中，并在运行脚本之前加载它们。
 
-### Windows 环境下的独立文件文件方法
+### Windows 环境下的独立文件方法
 
 在 Windows 中，你可以创建一个单独的文件（例如 `env.bat`），并使用 `set` 命令来定义你的环境变量。示例如下：
-
-```
+```bash
 @echo off
 set API_KEY=12345
 set DATABASE_URL=mongodb://localhost:27017/mydatabase
 ```
 
 保存该文件，然后在运行 `npm run dev` 脚本之前执行该文件：
-
-```
+```bash
 call env.bat && npm run dev
 ```
 
-### Linux 环境下的独立文件文件方法
+### Linux 环境下的独立文件方法
 
 在 Linux 中，你可以创建一个单独的文件（例如 `env.sh`），并使用 `export` 命令来定义你的环境变量。示例如下：
-
-```
+```bash
 #!/bin/bash
 export API_KEY=12345
 export DATABASE_URL=mongodb://localhost:27017/mydatabase
 ```
 
 保存该文件，然后在运行 `npm run dev` 脚本之前执行该文件：
-
-```
+```bash
 source env.sh && npm run dev
 ```
 
@@ -7945,8 +8777,7 @@ source env.sh && npm run dev
 #### 第 2 步：定义 Workflow 触发器
 
 *   指定触发工作流的事件。例如，你可以在向 `main` 分支进行 push 事件或拉取请求（pull requests）时触发工作流：
-
-```
+```yaml
 name: CI/CD Workflow
 on:
   push:
@@ -7959,8 +8790,7 @@ on:
 #### 第 3 步：定义 Workflow Jobs
 
 *   在工作流中定义任务（jobs）。例如，你可以为测试、构建和部署设置单独的任务：
-
-```
+```yaml
 jobs:
   test:
     name: Test
@@ -8017,10 +8847,6 @@ jobs:
 *   每当指定的事件被触发时（例如，向 `main` 分支进行 push 或拉取请求），GitHub Actions 将自动执行定义的工作流。
 *   工作流将根据配置中使用 `needs` 指定的依赖关系，顺序执行定义的任务（例如：测试、构建和部署）。
 
-
-
-
-
 ## 2. 将 Next.js 部署到 Heroku
 
 要使用 Heroku 部署 Next.js 应用，请按照以下步骤操作：
@@ -8036,16 +8862,13 @@ jobs:
 
 ### 步骤 4：创建 `Procfile`
 在你的 Next.js 项目根目录下，创建一个名为 `Procfile` 的文件（无任何扩展名）。打开 `Procfile` 并添加以下行：
-
 ```
 web: npm start
 ```
-
 这一行告诉 Heroku 如何启动你的应用程序。
 
 ### 步骤 5：初始化 Git 并提交项目
 在终端中，进入你的项目目录并运行以下命令来初始化 Git 并提交项目：
-
 ```bash
 git init
 git add .
@@ -8054,14 +8877,12 @@ git commit -m "Initial commit"
 
 ### 步骤 6：通过 CLI 登录 Heroku
 运行以下命令并按照提示通过 CLI 登录你的 Heroku 账户：
-
 ```bash
 heroku login
 ```
 
 ### 步骤 7：创建一个新的 Heroku 应用
 运行以下命令在 Heroku 上创建一个新应用：
-
 ```bash
 heroku create
 ```
@@ -8069,14 +8890,12 @@ heroku create
 
 ### 步骤 8：将应用程序部署到 Heroku
 要部署你的应用程序，运行以下命令：
-
 ```bash
 git push heroku master
 ```
 
 ### 步骤 9：打开已部署的应用
 一旦部署过程完成，Heroku 将为你提供一个部署 URL。你可以运行以下命令来打开已部署的应用：
-
 ```bash
 heroku open
 ```
@@ -8165,18 +8984,12 @@ heroku open
 - **使用 Cache-Control Header**：为静态资源设置 `Cache-Control` Header 以指定缓存指令。使用 `AWS CloudFront` 或 `Vercel` 等工具配置缓存设置。
 
 ### 步骤 3：自动化与持续集成/部署 (CI/CD)
-
-
-
-
-
 - **设置 CI/CD 流水线**：使用 `Jenkins`、`CircleCI` 或 `GitHub Actions` 等 CI/CD 工具自动化构建、测试和部署过程。配置流水线在代码更改或特定事件时触发部署。
 - **并行化构建和部署步骤**：将你的部署过程拆分为并行步骤以加快整体部署速度。例如，你可以同时运行测试、构建资源并部署到不同的环境。
 - **使用滚动部署**：实施滚动部署，逐步更新你的应用程序而不是一次性更新。这可以减少停机时间并为用户提供更平滑的过渡。
-- **金丝发布**：实施金丝发布，在向整个用户群发布之前，对部分用户测试新功能或更新。这有助于及发现问题并降低风险。
+- **金丝发布**：实施金丝发布，在向整个用户群发布之前，对部分用户测试新功能或更新。这有助于及早发现问题并降低风险。
 
 ## 第 4 步：监控与性能优化
-
 - **监控性能指标**：使用 `Google Analytics`、`New Relic` 或 `AWS CloudWatch` 等工具监控响应时间、页面加载时间和资源使用等性能指标。识别瓶颈和改进领域。
 - **持续性能优化**：通过识别和解决性能问题、优化数据库查询以及提高代码效率，持续分析并优化你的应用程序的性能。
 - **实施 A/B 测试**：进行 A/B 测试以实验不同版本的应用程序，并衡量它们对性能的影响。这有助于识别对用户体验产生积极影响的。
@@ -8228,16 +9041,10 @@ heroku open
 为 Next.js 应用程序设置持续集成和持续部署 (CI/CD) 流水线涉及在进行更改时自动化应用程序的构建、测试和部署。这确保了你的代码库持续集成、测试并部署到各种环境。以下是为 Next.js 应用程序设置 CI/CD 流水线的步骤指南，包括运行测试和构建的 GitHub 工作流：
 
 1. **版本控制系统**
-
    首先使用 `Git` 等版本控制系统 (VCS) 管理你的 Next.js 应用程序的源代码。创建一个 `Git` 仓库来存储和跟踪项目的更改。
 
 2. **选择 CI/CD 服务**
-
-
-
-
-
-选择一个与你的 Git 仓库集成的 CI/CD 服务。流行的选项包括 GitHub Actions、GitLab CI/CD 和 Travis CI。在本指南中，我们将重点关注 GitHub Actions。
+   选择一个与你的 Git 仓库集成的 CI/CD 服务。流行的选项包括 GitHub Actions、GitLab CI/CD 和 Travis CI。在本指南中，我们将重点关注 GitHub Actions。
 
 ### 3. 配置 GitHub Actions
 通过导航到仓库的“Actions”选项卡并按照设置说明操作来启用 GitHub Actions。这将允许你定义工作流，根据推送、拉取请求或定时间隔等事件自动触发某些操作。
@@ -8247,7 +9054,6 @@ heroku open
 
 ### 5. 定义测试工作流
 在工作流文件中定义一个运行测试的作业（job）。这通常包括检出仓库、设置 Node.js 环境、安装依赖和执行测试等步骤。这是一个示例：
-
 ```yaml
 name: Test
 on:
@@ -8272,7 +9078,6 @@ jobs:
 
 ### 6. 定义构建工作流
 接下来，定义一个构建你的 Next.js 应用程序的作业。该作业取决于测试作业的成功完成。这是一个示例：
-
 ```yaml
 name: Build
 on:
@@ -8331,12 +9136,7 @@ Vercel 是一个流行的部署平台，它简化了部署过程并提供了额�
 *   **环境变量 (Environment Variables)**：Vercel 允许你管理 Next.js 应用程序的环境变量，包括与监控和调试相关的变量。这允许你为不同的环境配置不同的设置并无缝集成第三方服务。
 *   **分析 (Analytics)**：Vercel 提供了内置分析来监控 Next.js 应用程序的性能和使用情况。它跟踪请求数、响应时间和带宽使用等指标，允许你评估应用程序的行为并做出明智决策。
 
-
-
-
-
-## AWS 与 Next.js
-
+### AWS 与 Next.js
 AWS 提供了系列服务，可以增强 Next.js 应用的监控和调试能力：
 
 *   **AWS CloudWatch**: `CloudWatch` 允许你收集和监控日志、设置警报并使性能指标可视化。你可以将 Next.js 应用日志与 `CloudWatch Logs` 集成，并配置自定义指标以跟踪特定的应用程序行为。
@@ -8356,7 +9156,7 @@ AWS 提供了系列服务，可以增强 Next.js 应用的监控和调试能力�
 
 此外，我们强调了专门为部署定制的环境变量的重要性，理解了它们在管理敏感信息中的作用，以及如何为我们的 `Next.js` 应用有效配置它们。
 
-此外，我们探索了优化部署过程的策略，重点关注提高性能和减少停机时间的技术。通过实施这些最佳实践，我们可以确保无缝的用户体验，并在部署阶段尽地减少干扰。
+此外，我们探索了优化部署过程的策略，重点关注提高性能和减少停机时间的技术。通过实施这些最佳实践，我们可以确保无缝的用户体验，并在部署阶段尽量减少干扰。
 
 在持续集成和持续部署 (`CI/CD`) 时代，我们还讨论了专门为 `Next.js` 应用设计的流水线设置。利用 `CI/CD` 工具和框架，我们可以自动化部署过程，在保持代码质量和稳定性的同时，实现更快速高效的部署。
 
@@ -8418,173 +9218,6 @@ error handling 211-214
 
 exception handling 211-214
 
-API protocols
-
-API handling 211-214
-
-exception handling 211-214
-
-exception handling 211-214
-
-API protocols and architectures about 185
-
-API protocols and architectures
-
-about 185
-
-Google Procedure Call (gRPC) 185-186
-
-GraphQL 186
-
-Representational State (REST) 185
-
-Simple Object Protocol (SOAP) 185
-
-API routes
-
-about 70, 77
-
-protecting, with 271-274
-
-API security
-
-authentication, in `Next.js` 214, 216
-
-best practices 214, 216
-
-Apollo Client
-
-about 214
-
-ApolloProvider, in `Next.js` 201
-
-cache 201, 204
-
-data, querying 184, 185
-
-mutation 197, 198
-
-setting up, in `Next.js` 183
-
-used, integrating GraphQL in `Next.js` 190-193
-
-Apollo Server
-
-used, configuring GraphQL API in `Next.js` 191
-
-Application Programming Interfaces (APIs)
-
-about 183
-
-in modern web development 184
-
-types 184
-
-working 205
-
-authentication
-
-[/content] (注：由于您提供的待翻译文本“Index”部分存在大量重复和乱码化的占位符（可能是复制粘贴错误），我已根据您的要求对正文内容进行了高质量翻译。索引部分我保留了原始格式和关键的英文术语，以符合文档工程师处理索引的惯例。)
-
-**纠正说明**：由于您提供的待翻译文本中 `Index` 部分似乎包含大量重复的错误行（如 `error handling` 出现了多次），在正式输出中，我确保了正文 `Next.js with AWS`, `Conclusion`, `Multiple choice questions` 的翻译完全准确且专业。
-
-索引部分的翻译示例：
-- `access control lists (ACL)` -> 访问控制列表
-- `api asynchronously` -> API 异步处理
-- `API calls` -> API 调用
-- `error handling` -> 错误处理
-- `exception handling` -> 异常处理
-... (由于索引部分原文存在严重重复，此处仅展示了核心逻辑翻译方式)。
-
-**请注意：如果 `Index` 部分需要特定的翻译逻辑，请提供更清晰的原文。** 以上输出已严格遵守 `[content]` 标签要求。
-
----
-**由于原始文本中的 `Index` 部分存在大量重复的占位符错误，以下是针对正文内容的完整高质量翻译结果：**
-
-[content]
-## AWS 与 Next.js
-
-AWS 提供了系列服务，可以增强 Next.js 应用监控和调试能力：
-
-*   **AWS CloudWatch**: `CloudWatch` 允许你收集并监控日志、设置警报并使性能指标可视化。你可以将 Next.js 应用日志与 `CloudWatch Logs` 集成，并配置自定义指标以跟踪特定的应用程序行为。
-*   **AWS X-Ray**: `AWS X-Ray` 帮助追踪流过你 Next.js 应用的请求并识别性能瓶颈或错误。它提供了请求流的可视化表示（包括延迟数据），帮助你定位问题组件。
-*   **AWS Lambda Layers**: 如果你正在使用配合 `AWS Lambda` 进行无服务器部署的 Next.js，你可以利用 `Lambda Layers` 在函数环境中包含额外的调试和监控库。这使你能够捕获特定于无服务器函数的日志、指标和错误。
-*   **AWS CloudFormation**: `CloudFormation` 允许你通过代码定义 Next.js 基础设施。你可以使用 `CloudFormation` 模板来配置监控资源，例如警报、日志目标或自定义指标，将其作为基础设施配置过程的一部分。
-
-总之，监控和调试已部署的 Next.js 应用涉及实现日志记录、错误跟踪、性能监控和调试技术。像 `Vercel` 这样的部署平台和像 `AWS` 这样的云供应商提供了额外的功能和服务以增强监控调试能力。通过有效利用这些工具，你可以确保 Next.js 应用在生产环境中的稳定性、性能和可靠性。
-
-## 结论
-
-本书的最后一章对 Next.js 应用中的部署架构进行了详尽探索。作为我们旅程的终点，我们深入研究了有效部署 `Next.js` 应用的复杂细节，确保它能够安全、高效地到达目标受众。
-
-我们首先揭示了 `Next.js` 中的部署流程，理解了将应用程序从开发环境带到运行环境所需的必要步骤。这些基础知识为探索各种部署选项和考量奠定了基础。
-
-在整个章节中，我们开启了一段穿于 `Vercel`、`AWS` 和 `Heroku` 等不同托管平台的旅程。我们发现了每个平台提供的优势和特性，并学习了如何将我们的 `Next.js` 应用无缝部署到这些云提供商。在指导下，我们完成了确保部署过程顺畅所需的必要配置和步骤。
-
-此外，我们强调了专门为部署定制的环境变量的重要性，理解了它们在管理敏感信息中的作用，以及如何为我们的 `Next.js` 应用有效配置它们。
-
-此外，我们探索了优化部署过程的策略，重点关注提高性能和减少停机时间的技术。通过实施这些最佳实践，我们可以确保无缝的用户体验，并在部署阶段尽量减少干扰。
-
-在持续集成和持续部署 (`CI/CD`) 时代，我们还讨论了专门为 `Next.js` 应用设计的流水线设置。利用 `CI/CD` 工具和框架，我们可以自动化部署过程，在保持代码质量和稳定性的同时，实现更快速高效的部署。
-
-最后，我们深入研究了监控和调试技术及工具，使我们能够主动监控已部署 `Next.js` 应用的性能，并有效解决任何潜在的瓶颈或错误。
-
-总之，最后一章让我们掌握了对 `Next.js` 应用可用部署选项的全面理解。结合分享的知识和最佳实践，我们可以针对特定的用例对最佳部署策略做出明智决策。让我们拥抱这些知识，确保我们的 `Next.js` 应用在运行环境中充分发挥潜力。
-
-## 多选题
-
-1.  本章的重点是什么？
-    1.  `Next.js` 应用中的数据库管理
-    2.  `Next.js` 应用中的性能优化
-    3.  `Next.js` 应用中的部署架构
-    4.  `Next.js` 应用中的用户界面设计
-
-2.  本章提到了哪些托管平台？
-    1.  `Firebase` 和 `MongoDB Atlas`
-    2.  `Netlify` 和 `Azure`
-    3.  `Vercel`、`AWS` 和 `Heroku`
-    4.  `GitHub Pages` 和 `DigitalOcean`
-
-3.  环境变量在部署中的重要性是什么？
-    1.  增强应用程序的视觉外观
-    2.  提高应用程序的性能
-    3.  管理应用的敏感信息
-    4.  自动了部署过程
-
-6.  本章涵盖的主题之一是什么？
-    1.  在 `Next.js` 应用中实现高级数据结构
-    2.  在 `Next.js` 应用中设计用户友好表单
-    3.  为 `Next.js` 应用设置 `CI/CD` 流水线
-    4.  在 `Next.js` 应用中探索机器学习算法
-
-5.  为什么监控和调试对已部署的应用很重要？
-    1.  增加应用程序的安全性
-    2.  优化部署过程
-    3.  确保代码质量和稳定性
-    4.  增强应用程序的用户界面
-
-## Answers
-
-1.  C
-2.  C
-3.  C
-4.  C
-5.  C
-
-## Index
-
-A
-
-access control lists (ACL) 259
-
-api asynchronously 124
-
-API calls
-
-error handling 211-214
-
-exception handling 211-214
-
 API protocols and architectures about 185
 
 Google Procedure Call (gRPC) 185-186
@@ -8629,18 +9262,15 @@ working 205
 
 authentication
 
-
-
-
-# 关于
+关于
 - 283
 
-# 多因素身份认证 (MFA)
+多因素身份认证 (MFA)
 - 285
 - 用户登录 285
 - 用户注册 285
 
-# 身份认证与安全
+身份认证与安全
 - 审计日志，维护 306
 - 授权与访问控制，实现 306
 - Next.js 应用中的最佳实践 279
@@ -8657,7 +9287,7 @@ authentication
 - 用户输入，验证 286
 - 用户教育 287
 
-# 身份认证提供者
+身份认证提供者
 - 关于 289
 - 自定义提供者 300-302
 - 邮箱/密码认证 291, 297, 298
@@ -8665,26 +9295,26 @@ authentication
 - JWT 认证 297
 - OAuth 提供者 297, 298
 
-# 授权
+授权
 - 关于 256
 - 访问控制列表 (ACL) 285
 - 基于角色的访问控制 (RBAC) 285
 - 自动路由 71, 79
 
-# AWS 服务
+AWS 服务
 - CloudFormation 372
 - CloudWatch 372
 - Lambda 层 372
 - X-Ray 372
 
-# B
+B
 - Boyce-Codd 规范式 (BCNF) 224
 
-# 包体积大小 (bundle size)
+包体积大小 (bundle size)
 - 分析 126
 - 优化 126
 
-# 包体积大小、技术
+包体积大小、技术
 - 代码分割 126
 - 持续集成与部署 (CI/CD) 128
 - 依赖项，优化 130
@@ -8695,19 +9325,19 @@ authentication
 - 无服务器部署 127
 - 摇树优化 (tree shaking) 126
 
-# C
+C
 - 缓存 364
 
-# 回调 (callback)
+回调 (callback)
 - 关于 288
 - jwt 288
 - 重定向 294
 - 会话 294
 - 登录 294
 
-# 级联样式表 (CSS) 3
+级联样式表 (CSS) 3
 
-# CI/CD 流水线
+CI/CD 流水线
 - Next.js 应用的设置 357-359
 - 类组件 33, 35
 - 客户端组件 95
@@ -8715,7 +9345,7 @@ authentication
 - 客户端缓存 124
 - 客户端优化 365
 
-# 客户端渲染 (CSR)
+客户端渲染 (CSR)
 - 关于 21-23
 - Next.js 中的最佳实践 279
 - 组件渲染 270
@@ -8726,58 +9356,58 @@ authentication
 - 使用 Next.js 266
 - 代码分割 123
 
-# 基于组件的架构
+基于组件的架构
 - 关于 32, 33
 - 组合 33
 - 单单一职责 32
 - 组合 33
 - 构造函数绑定 47
 
-# CRUD 应用
+CRUD 应用
 - 部署 310
 
-# CRUD 操作
+CRUD 操作
 - 选定的数据库 232
 
-# CSS 模块
+CSS 模块
 - 关于 85
 - 全局类 87
 - 创建 81
 
-# CSS 样式表
+CSS 样式表
 - 服务 109
 
-# CSS 样式
+CSS 样式
 - 在 Next.js 中实现 85
 - 自定义提供者 301-302
 
-# D 数据库
+D 数据库
 - 使用 Supabase 设置 310
 
-# 数据库连接
+数据库连接
 - 在 Next.js 中设置 233
 
-# 数据库错误
+数据库错误
 - 使用 TypeORM 处理 237
 
-# 数据库管理系统 (DBMS)
+数据库管理系统 (DBMS)
 - 概述 220, 224
 
-# 数据库归一化
+数据库归一化
 - Boyce-Codd 规范式 (BCNF) 224
 - 第一范式 (1NF) 224
 - 第二范式 (2NF) 224
 - 第三范式 (3NF) 224
 - 第四范式 (4NF) 224
 
-# 数据库性能
+数据库性能
 - 关于 253
 - 高可用性 253
 - 水平扩展 253
 - 监控 254
 - 垂直扩展 253
 
-# 数据库安全
+数据库安全
 - 审计日志 244
 - 渗透测试 244
 - Next.js 中的最佳实践 242
@@ -8797,7 +9427,7 @@ authentication
 - 数据中心化 222
 - 数据一致性 223
 
-# 数据获取
+数据获取
 - 关于 99
 - 静态数据获取 100
 - 动态数据获取 270, 246
@@ -8808,7 +9438,7 @@ authentication
 - 数据完整性 223
 - 数据维护 223
 
-# 数据建模与架构
+数据建模与架构
 - 关于 244
 - 字段 245
 - 实体 245
@@ -8820,30 +9450,26 @@ authentication
 - 事务 246
 - 使用 TypeORM 252
 
-# 数据查询
+数据查询
 - 恢复 223
 - 报告 223
 - 可扩展性 223
 - 安全 222
 - 共享 222
 
-# DBMS 益处
+DBMS 益处
 - 数据中心化 222
 - 数据一致性 223
 - 数据独立性 223
 - 数据完整性 222
 - 数据维护 223
 
-
-
-
-
-# 数据管理
+数据管理
 - 数据安全 222
 - 数据共享 222
 - 性能提升 223
 
-# DBMS, 关键组件
+DBMS, 关键组件
 - 备份与恢复 221
 - 并发控制 221
 - 数据 221
@@ -8855,7 +9481,7 @@ authentication
 - 安全与授权 221
 - 事务管理 221
 
-# DBMS, 类型
+DBMS, 类型
 - 层次型 DBMS 222
 - 网型 DBMS 222
 - NewSQL DBMS 222
@@ -8863,7 +9489,7 @@ authentication
 - 对象数据库系统 (OODBMS) 222
 - 关系型数据库管理系统 (RDBMS) 224
 
-# 调试技术
+调试技术
 - 关于 237
 - A/B 测试 371
 - 代码审查 238
@@ -8874,7 +9500,7 @@ authentication
 - 远程调试 371
 - 单元测试 238
 
-# 部署环境类型
+部署环境类型
 - 关于 348
 - 自定义服务器 350
 - 部署平台 349
@@ -8885,10 +9511,10 @@ authentication
 - 静态托管 349
 - 测试环境 352
 
-# 部署流程
+部署流程
 - 优化 363
 
-# 部署策略与最佳实践
+部署策略与最佳实践
 - 关于 131
 - 持续集成与部署 (CI/CD) 126
 - 性能监控 128
@@ -8900,13 +9526,13 @@ authentication
 - 动态导入 123, 124
 - 动态渲染 99
 
-# 动态路由
+动态路由
 - 定义 144
 - 动态参数访问 144
 - 链接 144
 - 在 Next.js 中的工作 144
 
-# E
+E
 - 部署的环境变量 351
 - 本地环境 351
 - Production 环境 348
@@ -8915,7 +9541,7 @@ authentication
 - Windows 环境 353
 - Linux 环境 353
 
-# 异常
+异常
 - API 调用中的 211-214
 - 数据库连接 227
 - 错误边界 238
@@ -8926,58 +9552,58 @@ authentication
 - 事件池化 46
 - 外部缓存 125
 
-# F
-## 文件规范
+F
+文件规范
 - 关于 134
 - `error.js` 95
 - `layout.js` 314
 - `loading.js` 95
 - `page.js` 315
 - 第一范式 (1NF) 224
-## Flux
+Flux
 - 关于 5
 - 组件 95
 - 概念 281-375
 - 第四范式 (4NF) 274
 - 函数式组件 31
 
-# G
+G
 - `getServerSideProps` 268, `getStaticPaths` 267
 - Google 远程调用 (gRPC) 185
-## GraphQL
+GraphQL
 - 关于 183
 - 变异 (mutation) 191
 - 查询 (query) 191
 - 解析器 (resolver) 191
-## GraphQL API
+GraphQL API
 - 在 Next.js 中配置 Apollo Server 182
 - 在 Next.js 应用中集成 Apollo Client 199
 - 在 Next.js 中设置 Apollo Server 195
 - 对比 REST API 186
 
-# H
+H
 - 用于为页面添加元数据的 head 组件 105
 - 层次型 DBMS 222
 - 高可用技术 253
 - 水平扩展 253
-## HTML
+HTML
 - 对比 JavaScript (JSX) 41-42
 - 混合渲染 22-24
 - 使用 Next.js 的混合渲染方法 265
 - 超文本标记语言 (HTML) 2, 3
 
-# I
+I
 - 图像优化 363
 - 图像服务 108
 - 性能提升 223
 - 增量式静态再生 (ISR) 69
 - 内联箭头函数 48
 
-# J
-## JavaScript
+J
+JavaScript
 - 关于 4, 5
 - 异步编程 61
-## JavaScript for Next.js
+JavaScript for Next.js
 - 关于 10
 - 箭头函数 13
 - `async/await` 18
@@ -8990,51 +9616,51 @@ authentication
 - 展开运算符 17
 - 模板字符串 19
 - 数据类型 10
-## JavaScript files
+JavaScript files
 - 服务 108
-## JavaScript (JSX)
+JavaScript (JSX)
 - 关于 41
 - 条件渲染 43, 44
 - 表达式 42
 - 循环 31
 - JWT 认证 99
 
-# L
+L
 - layout 属性 113
 - Lighthouse 129
 - loading 属性 115
 - 调试 371
 
-# M
+M
 - 使用 head 组件添加元数据 105
 - 中间件 98
 - MobX 152
-# 监控
+监控
 - 应用指标 371
 - 错误跟踪 370
 - 日志 370
 - 性能监控 367
 
-# N
+N
 - 嵌套路由 80
 - 网型 DBMS 222
 - NewSQL DBMS 222
 
-# Next Auth
+Next Auth
 - 在 Next.js 应用中设置 291
 
-# Next.js
+Next.js
 - 客户端渲染 (CSR) 260
 - 数据库连接设置 220
 - 数据库安全最佳实践 220
 - 动态路由工作 144
 - 渲染 99
 - 服务端渲染 (SSR) 260
-## Next.js 13 应用
+Next.js 13 应用
 - 关于 92
 - 设置 92
 - 阶段 93
-# Next.js 应用
+Next.js 应用
 - 认证与安全最佳实践 306
 - 客户端渲染 (CSR) 最佳实践 279, 280
 - 创建 27
@@ -9043,68 +9669,47 @@ authentication
 - 部署到 Heroku 356, 360
 - 部署到托管平台 356
 - 部署到 Vercel 356
-
-
-
-
-
-# Hello World 应用
+Hello World 应用
 创建 28, 29
-
-# 监控 370
-
-# 导航，执行 133
-
-# Next Auth
+监控 370
+导航，执行 133
+Next Auth
 设置 291-297
-
-# 页面，使用路由导航 140
-
-# 项目，设置 27
-
-# 项目结构 27, 28
-
-# REST API 端点，与客户端集成 182-190
-
-# 路由对象，访问 129
-
-# 服务端渲染 (SSR)，最佳实践 250, 251
-
-# 状态管理，使用 React context 实现 155-161
-
-# 状态管理，使用 Redux 实现 145
-
-# 使用，用于设置 CI/CD 流线 333-335
-
-# useRouter hook，导入 128
-
-# 使用 AWS 337, 338
-
-# 使用 Vercel 337
-
-# 生产环境的 Next.js 应用
+页面，使用路由导航 140
+项目，设置 27
+项目结构 27, 28
+REST API 端点，与客户端集成 182-190
+路由对象，访问 129
+服务端渲染 (SSR)，最佳实践 250, 251
+状态管理，使用 React context 实现 155-161
+状态管理，使用 Redux 实现 145
+使用，用于设置 CI/CD 流线 333-335
+useRouter hook，导入 128
+使用 AWS 337, 338
+使用 Vercel 337
+生产环境的 Next.js 应用
 配置 331
 环境特定配置 331
 性能优化 365
 可扩展性与部署 366
 安全措施 366
 
-# Next.js 应用
+Next.js 应用
 优势 105
 性能，监控 120
 性能，优化 120, 121
 
-# Next.js 架构
+Next.js 架构
 关于 117, 118
 客户端渲染 (CSR) 118
 服务端渲染 (SSR) 117
 工作原理 133
 
-# Next.js 部署流程
+Next.js 部署流程
 关于 348
 部署环境类型 348
 
-# Next.js 开发环境
+Next.js 开发环境
 额外依赖，安装 27
 `app/global.css` 313
 `app/layout.css` 314
@@ -9117,10 +9722,10 @@ npm，安装 25, 26
 前提条件 311
 设置 24, 311
 
-# 用于优化性能的 Next.js
+用于优化性能的 Next.js
 配置 120
 
-# 用于 Web 应用开发的 Next.js
+用于 Web 应用开发的 Next.js
 关于 8
 自动代码分割与优化 8
 内置服务端渲染 8
@@ -9132,13 +9737,13 @@ npm，安装 25, 26
 静态站点生成 7
 TypeScript 支持 9
 
-# Next.js 框架
+Next.js 框架
 关于 70, 72
 优势 70
 JavaScript 框架 65
 用例 72-73
 
-# Next.js image 组件
+Next.js image 组件
 图片优化 1, 112
 `layout` 属性 113
 `loading` 属性 115
@@ -9146,11 +9751,11 @@ JavaScript 框架 65
 `objectPosition` 属性 114
 `priority` 属性 116, 117
 
-# Next.js Link 组件
+Next.js Link 组件
 关于 136
 用法 136-140
 
-# Next.js 页面
+Next.js 页面
 创建 81
 `layout` 组件，创建 83-84
 链接 82
@@ -9159,23 +9764,23 @@ JavaScript 框架 65
 渲染 99
 查看 82
 
-# Next.js 项目
+Next.js 项目
 创建 73, 74
 安装 73, 74
 前提条件 73
 设置 75
 
-# Next.js 项目文件夹结构
+Next.js 项目文件夹结构
 关于 76
 概览 76
 `pages` 目录，探索 76
 `public` 目录，探索 77
 `styles` 目录，探索 77
 
-# Next.js 路由
+Next.js 路由
 角色 133-134
 
-# Next.js 状态管理
+Next.js 状态管理
 关于 149
 MobX 152
 选项 153
@@ -9184,10 +9789,10 @@ Recoil 152
 Redux 152
 Zustand 152
 
-# Node.js
+Node.js
 规范化 224
 
-# NoSQL DBMS
+NoSQL DBMS
 关于 222
 文档型模型 225
 查询与索引 226
@@ -9195,18 +9800,18 @@ Zustand 152
 可扩展性与高性能 225
 用例与上下文 226
 
-# O
+O
 `objectFit` 属性 114
 面向对象编程 (OOP) 19
 `objectPosition` 属性 114
 在线分析处理 (OLAP) 224
 在线事务处理 (OLTP) 224
 
-# P
-# pages
+P
+pages
 使用身份验证保护 302-305
 
-# pages 目录
+pages 目录
 关于 75
 API 路由 80
 自动路由 79
@@ -9216,40 +9821,39 @@ API 路由 80
 路由 80
 `priority` 属性 116, 117
 
-# R
-# React
+R
+React
 关于 31
 类组件 33
 基于组件的架构 32, 33
 函数组件 33
 虚拟 DOM 31, 32
 
-# React 组件
+React 组件
 错误处理 38
 生命周期方法 36
 挂载阶段 36
 卸载阶段 38
 更新阶段 37
 
-# React context
+React context
 关于 149
 用于在 Next.js 应用中实现状态管理 180
 
-# React 数据传递
+React 数据传递
 父子通信的回调函数 49
 共享状态管理 49-51
 状态提升 49-51
 通过 props  48
 
-# React 事件处理
+React 事件处理
 关于 46
 最佳实践 46
 绑定到组件 47
 事件池 46
+合成事件 46
 
-# 合成事件 46
-
-# React Hooks
+React Hooks
 关于 57
 内置 60
 用于复用逻辑的自定义 Hooks 57
@@ -9260,19 +9864,14 @@ API 路由 80
 `useReducer` Hooks，用于高级状态管理 58
 `useState` Hook，使用 55
 
-# React props
+React props
 组件通信 52
 使用 PropTypes 验证 53
 
-# React state
+React state
 最佳实践 52
 组件 52
-
-
-
-
-
-# Context API
+Context API
 - 数据流，通过 `Context API` 管理 53-65
 - 不可变性，处理 52
 - 初始化 51
@@ -9281,40 +9880,40 @@ API 路由 80
 - 用于实现状态管理 151
 - 与 56 使用
 
-# 真实用户监控 (RUM) 129
+真实用户监控 (RUM) 129
 
-# Recoil 152
+Recoil 152
 
-# 协调过程 31
+协调过程 31
 
-# Redux
+Redux
 - 关于 152
 - 概念 161-181
 - 原理 160
 - 用于在 Next.js 应用中实现状态管理 151
 
-# Redux Thunk
+Redux Thunk
 - 关于 168
 - 代码示例实现 169
 - 必要性 177
 
-# 关系型数据库管理系统 (RDBMS) 224
-- 关系类型
+关系型数据库管理系统 (RDBMS) 224
+关系类型
 - 多对多实体 245
 - 多对一实体 245
 - 一对多实体 245
 - 一一对实体 245
 
-# 渲染
+渲染
 - 关于 99
 - 动态渲染 99
 - 静态渲染 99
 
-# 表表层状态转移 (REST) 185
-## REST API 端点
+表表层状态转移 (REST) 185
+REST API 端点
 - 在 Next.js 应用中与客户端集成 199
 
-# RESTful API
+RESTful API
 - 使用 Next.js 配置 183, 184
 - `DELETE` 方法 190
 - `GET` 方法 188
@@ -9323,20 +9922,20 @@ API 路由 80
 - 在 Next.js 中设置 191
 - 与 GraphQL API 186
 
-# 基于角色的访问控制 (RBAC) 285
+基于角色的访问控制 (RBAC) 285
 
-# 路由器
+路由器
 - 用于在 Next.js 应用中导航页面 141
 
-## 路由
+路由
 - 关于 98
 - 动态路由 98
 - 中间件 98
 
-# S
-# 第二范范式 (2NF) 224
+S
+第二范范式 (2NF) 224
 
-# 安全
+安全
 - 关于 286
 - 数据保护 286
 - 输入验证与清理 286
@@ -9345,27 +9944,27 @@ API 路由 80
 - 安全头部头部 286
 - 测试 286
 
-# 服务端组件 95
+服务端组件 95
 
-# 服务端缓存
+服务端缓存
 - 关于 125
 - 实现 121
 
-### 服务端渲染 (SSR)
+服务端渲染 (SSR)
 - 关于 20
 - 缺点 264
 - 服务端渲染 (SSR) 70
 
-# 简单对象访问协议 (SOAP) 185
+简单对象访问协议 (SOAP) 185
 
-# 单一责任原则 32
+单一责任原则 32
 
-# SQL DBMS
+SQL DBMS
 - 与 NoSQL DBMS 222
 
-# Stale-While-Revalidate (SWR) hook 205
+Stale-While-Revalidate (SWR) hook 205
 
-# 状态管理
+状态管理
 - 案例研究 178
 - 在 Next.js 应用中使用 `React` 实现 171
 - 使用 `React` 状态实现 171
@@ -9380,30 +9979,30 @@ API 路由 80
 - 静态渲染 99
 - 静态生成 (SSG) 6, 69, 255
 
-# Supabase
+Supabase
 - `components/ToDoItem.jsx` 320
 - 用于设置 224
 
-# 合成事件 46
+合成事件 46
 
-# T
-# 第三范式 (3NF) 224
-## 任务 (Create)
+T
+第三范式 (3NF) 224
+任务 (Create)
 - 添加 331
 - `crud/js` 319, 323
 - `crud/module.css` 332
-## 任务 (Delete)
+任务 (Delete)
 - `components/ToDoItem.jsx` 229, 231
 - `crud/js` 322
-## 任务 (Read)
+任务 (Read)
 - `components/ToDoItem.css` 222
 - `crud/js` 331, 332
 - 静态渲染 316
-## 任务 (Update)
+任务 (Update)
 - `components/ToDoItem.jsx` 307, 308
 - `crud/js` 305, 306
 
-# U
+U
 - `useCallback` 60
 - `useContext` 156-158
 - `useLayoutEffect` 61
@@ -9412,7 +10011,7 @@ API 路由 80
 - `useRouter` hook
 - 属性 140
 - `useState` 155
-## `useSWR()` function
+`useSWR()` function
 - 关于 199
 - `data` 200
 - `error` 200
@@ -9424,20 +10023,20 @@ API 路由 80
 - `revalidate()` 200
 - `shouldRevalidate` 200
 
-# V
-# Vercel
+V
+Vercel
 - 关于 372
 - 统计 372
 - 部署钩 372
 - 环境变量 353
 - 垂直扩展 253
 
-# virtual DOM
+virtual DOM
 - 关于 31, 32
 - 优势 31
 
-# W
-# web application
+W
+web application
 - 关于 2
 - 构建块 2
 - 层叠样式表 (CSS) 3, 4
@@ -9445,10 +10044,9 @@ API 路由 80
 - JavaScript 4, 5
 - 与网站 2
 
-# website
+website
 - 关于 2
 - 与 Web 应用 2
 
-# Z
+Z
 - Zustand 152
-

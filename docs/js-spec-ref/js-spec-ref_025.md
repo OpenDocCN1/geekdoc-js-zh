@@ -1,16 +1,5 @@
-# 3.10 ArrayBuffer：类型化数组
 
-*   分配内存
-*   视图
-    *   视图的生成
-    *   视图的操作
-    *   复合视图
-    *   DataView 视图
-    *   应用
-        *   Ajax
-        *   Canvas
-        *   File
-    *   参考链接
+# 3.10 ArrayBuffer：类型化数组
 
 类型化数组是 JavaScript 操作二进制数据的一个接口。
 
@@ -135,7 +124,7 @@ f64a[2] = f64a[0] + f64a[1];
 将一个数据类型符合要求的普通数组，传入构造函数，也能直接生成视图。
 
 ```js
-var typedArray = new Uint8Array( [ 1, 2, 3, 4 ] );
+var typedArray = new Uint8Array([1, 2, 3, 4]);
 ```
 
 上面代码将一个普通的数组，赋值给一个新生成的 8 位无符号整数的视图数组。
@@ -143,7 +132,7 @@ var typedArray = new Uint8Array( [ 1, 2, 3, 4 ] );
 视图数组也可以转换回普通数组。
 
 ```js
-var normalArray = Array.apply( [], typedArray );
+var normalArray = Array.apply([], typedArray);
 ```
 
 ### 视图的操作
@@ -274,7 +263,7 @@ b.set(a,2)
 
 （5）subarray 方法
 
-subarray 方法是对于类型化数组的一部分，再建立一个新的视图。
+subarray 方法是对于类型化数组的一部分，再建立一个新的视视图。
 
 ```js
 var a = new Uint16Array(8);
@@ -360,7 +349,7 @@ DataView 视图提供以下方法读取内存：
 *   getInt8：读取 1 个字节，返回一个 8 位整数。
 *   getUint8：读取 1 个字节，返回一个无符号的 8 位整数。
 *   getInt16：读取 2 个字节，返回一个 16 位整数。
-*   getUint16：读取 2 个字节，返回一个无符号的 16 位整数。
+*   getUint16：读取 2 个字节，返回一个无符�的 16 位整数。
 *   getInt32：读取 4 个字节，返回一个 32 位整数。
 *   getUint32：读取 4 个字节，返回一个无符号的 32 位整数。
 *   getFloat32：读取 4 个字节，返回一个 32 位浮点数。
@@ -375,10 +364,10 @@ var dv = new DataView(buffer);
 // 从第 1 个字节读取一个 8 位无符号整数
 var v1 = dv.getUint8(0);
 
-// 从第 2 个字节读取一个 16 位无符号整数
+// 从第 2 个字节读取一个 16 位无符�整数
 var v2 = dv.getUint16(1); 
 
-// 从第 4 个字节读取一个 16 位无符号整数
+// 从第 4 个字节读取一个 16 位无符�整数
 var v3 = dv.getUint16(3);
 ```
 
@@ -488,7 +477,7 @@ Uint8ClampedArray 类型确保将小于 0 的值设为 0，将大于 255 的值�
 
 ### File
 
-如果知道一个文件的二进制数据类型，也可以将这个文件读取为类型化数组。
+如果知道一个文件的二进数据类型，也可以将这个文件读取为类型化数组。
 
 ```js
 reader.readAsArrayBuffer(file);
@@ -555,5 +544,4 @@ bitmap.pixels = new Uint8Array(buffer, start);
 *   Ilmari Heikkinen, [Typed Arrays: Binary Data in the Browser](http://www.html5rocks.com/en/tutorials/webgl/typed_arrays/)
 *   Khronos, [Typed Array Specification](http://www.khronos.org/registry/typedarray/specs/latest/)
 *   Ian Elliot, [Reading A BMP File In JavaScript](http://www.i-programmer.info/projects/36-web/6234-reading-a-bmp-file-in-javascript.html)
-
 *   Renato Mangini, [How to convert ArrayBuffer to and from String](http://updates.html5rocks.com/2012/06/How-to-convert-ArrayBuffer-to-and-from-String)

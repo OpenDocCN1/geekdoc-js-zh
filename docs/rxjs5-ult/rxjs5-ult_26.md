@@ -1,17 +1,16 @@
-# Subject
 
 # Subject
 
-Subject 具有双重性质。它既具有 Observer 的行为，也具有 Observable 的行为。因此，以下是可能的：
+`Subject`具有双重性质。它既具有`Observer`的行为，也具有`Observable`的行为。因此，以下是可能的：
 
-发出值
+**发出值**
 
 ```
 subject.next( 1 )
 subject.next( 2 ) 
 ```
 
-订阅值
+**订阅值**
 
 ```
 const subscription = subject.subscribe( (value) => console.log(value) ) 
@@ -41,9 +40,9 @@ proxySubject.subscribe( (value) => console.log('proxy subscriber', value ) );
 proxySubject.next( 3 ); 
 ```
 
-因此，proxySubject `监听` `source$`
+因此，`proxySubject`监听`source$`。
 
-但它也可以做出自己的贡献
+但它也可以做出自己的贡献：
 
 ```
 proxySubject.next( 3 )  // emits 3 and then 0 1 2 ( async ) 
@@ -51,7 +50,7 @@ proxySubject.next( 3 )  // emits 3 and then 0 1 2 ( async )
 
 **注意**
 
-任何在创建订阅之前发生的`next()`都会丢失。还有其他可以满足此要求的 Subject 类型如下。
+任何在创建订阅之前发生的`next()`都会丢失。还有其他可以满足此要求的`Subject`类型如下。
 
 ### 业务案例
 
@@ -90,9 +89,9 @@ let replaySubscription = replaySubject.subscribe((value) => {
 }); 
 ```
 
-哇，这里发生了什么，第一个数字怎么了？
+哇，这里发生了什么？第一个数字怎么了？
 
-因此，在创建订阅之前发生的`.next()`通常会丢失。但是在`ReplaySubject`的情况下，我们有机会将发出的值保存在缓存中。在创建时，决定了缓存要保存两个值。
+在创建订阅之前发生的`.next()`通常会丢失。但是在`ReplaySubject`的情况下，我们有机会将发出的值保存在缓存中。在创建时，决定了缓存要保存两个值。
 
 让我们说明一下这是如何工作的：
 
@@ -109,7 +108,7 @@ let secondSubscriber( (value) => console.log(value) ) // 2,3
 
 ### 业务案例
 
-在这里很容易想象到业务案例。您获取了一些数据，并希望应用程序记住最新获取的内容，您获取的内容可能只在一定时间内有效，当足够的时间过去后，您会清除缓存。
+在这里很容易想象到业务案例。您获取了一些数据，并希望应用程序记住最新获取的内容。您获取的内容可能只在一定时间内有效，当足够的时间过去后，您会清除缓存。
 
 ## AsyncSubject
 
@@ -125,9 +124,9 @@ asyncSubject.next( 1 );
 asyncSubject.next( 2 ); 
 ```
 
-看到这个我们期望 1,2 会被发出对吗？错误。
+看到这个，我们期望`1`、`2`会被发出，对吗？错误。
 
-除非发生`complete()`，否则不会发出任何内容
+除非发生`complete()`，否则不会发出任何内容：
 
 ```
 asyncSubject.next( 3 )
@@ -136,7 +135,7 @@ asyncSubject.complete()
 // emit 3 
 ```
 
-`complete()`需要发生，无论之前的操作成功还是失败，所以
+`complete()`需要发生，无论之前的操作成功还是失败。所以：
 
 ```
 asyncSubject( 3 )
@@ -152,13 +151,13 @@ asyncSubject.complete()
 
 ## BehaviourSubject
 
-这个 Subject 发出以下内容：
+这个`Subject`发出以下内容：
 
-+   初始值
++ 初始值
 
-+   通常发出的值
++ 通常发出的值
 
-+   最后发出的值。
++ 最后发出的值。
 
 方法：
 
@@ -193,4 +192,4 @@ console.log('Behaviour current value',behaviorSubject.getValue());
 
 ### 业务案例
 
-这与`ReplaySubject`非常相似。不过有一个区别，我们可以利用一个默认/初始值，在第一个值开始到达之前，我们可以首先显示它。我们可以检查最新发出的值，当然也可以监听所有已发出的内容。因此，将`ReplaySubject`视为更长期的记忆，而将`BehaviourSubject`视为具有默认行为的短期记忆。
+这与`ReplaySubject`非常相似。不过有一个区别：我们可以利用一个默认/初始值，在第一个值开始到达之前，我们可以首先显示它。我们可以检查最新发出的值，当然也可以监听所有已发出的内容。因此，将`ReplaySubject`视为更长期的记忆，而将`BehaviourSubject`视为具有默认行为的短期记忆。

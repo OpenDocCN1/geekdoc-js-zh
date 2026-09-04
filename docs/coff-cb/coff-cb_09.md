@@ -1,3 +1,4 @@
+
 # 九、jQuery
 
 ## AJAX
@@ -41,7 +42,7 @@ request = $.get '/'
 
 ### 讨论
 
-其中的 jQuery 和 $ 变量可以互换使用。另请参阅 [Callback bindings](http://coffeescript-cookbook.github.io/chapters/jquery/callback-bindings-jquery) 。
+其中的 `jQuery` 和 `$` 变量可以互换使用。另请参阅 [Callback bindings](http://coffeescript-cookbook.github.io/chapters/jquery/callback-bindings-jquery) 。
 
 ## 回调绑定
 
@@ -69,7 +70,7 @@ $ ->
 
 ### 讨论
 
-通过使用等号箭头（=>）取代正常箭头（->），函数将会自动与对象绑定，并可以访问 @- 可变量。
+通过使用等号箭头（`=>`）取代正常箭头（`->`），函数将会自动与对象绑定，并可以访问 `@`- 可变量。
 
 ## 创建 jQuery 插件
 

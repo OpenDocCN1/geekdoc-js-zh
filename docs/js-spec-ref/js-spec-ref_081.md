@@ -1,30 +1,5 @@
-# 9.5 ECMAScript 6 介绍
 
-*   概述
-*   使用 ECMAScript 6 的方法
-*   数据类型
-    *   let 命令
-    *   const 命令
-    *   Set 数据结构
-    *   Map 数据结构
-    *   rest（...）运算符
-    *   遍历器（Iterator）
-    *   generator 函数
-    *   原生对象的扩展
-    *   语法糖
-        *   二进制和八进制表示法
-        *   增强的对象写法
-        *   箭头函数（arrow）
-        *   函数参数的默认值
-        *   模板字符串
-        *   for...of 循环
-        *   数组推导
-        *   多变量赋值
-    *   数据结构
-        *   class 结构
-        *   module 定义
-    *   ECMAScript 7
-    *   参考链接
+# 9.5 ECMAScript 6 介绍
 
 ## 概述
 
@@ -167,7 +142,7 @@ function f1() {
 
 （3）不存在变量提升
 
-需要注意的是，let 声明的变量不存在“变量提升”现象。
+需要注意的是，let 声令的变量不存在“变量提升”现象。
 
 ```js
 console.log(x);
@@ -220,9 +195,13 @@ for (i of s) {console.log(i)}
 set 数据结构有以下属性和方法：
 
 *   size：返回成员总数。
+
 *   add(value)：添加某个值。
+
 *   delete(value)：删除某个值。
+
 *   has(value)：返回一个布尔值，表示该值是否为 set 的成员。
+
 *   clear()：清除所有成员。
 
 ```js
@@ -257,10 +236,15 @@ console.log(m.get(o))
 Map 数据结构有以下属性和方法。
 
 *   size：返回成员总数。
+
 *   set(key, value)：设置一个键值对。
+
 *   get(key)：读取一个键。
+
 *   has(key)：返回一个布尔值，表示某个键是否在 Map 数据结构中。
+
 *   delete(key)：删除某个键。
+
 *   clear()：清除所有成员。
 
 ```js
@@ -691,7 +675,9 @@ var result = values.sort((a, b) => a - b);
 箭头函数有几个使用注意点。
 
 *   函数体内的 this 对象，绑定定义时所在的对象，而不是使用时所在的对象。
+
 *   不可以当作构造函数，也就是说，不可以使用 new 命令，否则会抛出一个错误。
+
 *   不可以使用 arguments 对象，该对象在函数体内不存在。
 
 关于 this 对象，下面的代码将它绑定定义时的对象。
@@ -750,7 +736,7 @@ console.log(`${ x } + ${ y } = ${ x + y}`)
 // "1 + 2 = 3"
 ```
 
-### for...of 循环
+### for...of 循循环
 
 JavaScript 原有的 for...in 循环，只能获得对象的键名，不能直接获取键值。ES6 提供 for...of 循环，允许遍历获得键值。
 
@@ -1125,7 +1111,7 @@ ECMAScript 7 可能包括的功能有：
 
 *   Object.observe：对象与网页元素的双向绑定，只要其中之一发生变化，就会自动反映在另一者上。
 
-*   Multi-Threading：多线程支持。目前，Intel 和 Mozilla 有一个共同的研究项目 RiverTrail，致力于让 JavaScript 多线程运行。预计这个项目的研究成果会被纳入 ECMAScript 标准。
+*   Multi-Threading：多线程支持。目前，Intel 和 Mozilla 有一个共同的研究项目 RiverTrail，致力于让 JavaScript 多线程运行。预计这个项目的研究成果会被纳入 ECMAScript 标标准。
 
 *   Traits：它将是“类”功能（class）的一个替代。通过它，不同的对象可以分享同样的特性。
 
@@ -1134,14 +1120,25 @@ ECMAScript 7 可能包括的功能有：
 ## 参考链接
 
 *   Sayanee Basu, [Use ECMAScript 6 Today](http://net.tutsplus.com/articles/news/ecmascript-6-today/)
+
 *   Ariya Hidayat, [Toward Modern Web Apps with ECMAScript 6](http://www.sencha.com/blog/toward-modern-web-apps-with-ecmascript-6/)
+
 *   Nick Fitzgerald, [Destructuring Assignment in ECMAScript 6](http://fitzgeraldnick.com/weblog/50/)
+
 *   jmar777, [What's the Big Deal with Generators?](http://devsmash.com/blog/whats-the-big-deal-with-generators)
+
 *   Nicholas C. Zakas, [Understanding ECMAScript 6 arrow functions](http://www.nczonline.net/blog/2013/09/10/understanding-ecmascript-6-arrow-functions/)
+
 *   Dale Schouten, [10 Ecmascript-6 tricks you can perform right now](http://html5hub.com/10-ecmascript-6-tricks-you-can-perform-right-now/)
+
 *   Mozilla Developer Network, [Iterators and generators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Iterators_and_Generators)
+
 *   Steven Sanderson, [Experiments with Koa and JavaScript Generators](http://blog.stevensanderson.com/2013/12/21/experiments-with-koa-and-javascript-generators/)
+
 *   Matt Baker, [Replacing callbacks with ES6 Generators](http://flippinawesome.org/2014/02/10/replacing-callbacks-with-es6-generators/)
+
 *   Domenic Denicola, [ES6: The Awesome Parts](http://www.slideshare.net/domenicdenicola/es6-the-awesome-parts)
+
 *   Casper Beyer, [ECMAScript 6 Features and Tools](http://caspervonb.github.io/2014/03/05/ecmascript6-features-and-tools.html)
+
 *   Luke Hoban, [ES6 features](https://github.com/lukehoban/es6features)

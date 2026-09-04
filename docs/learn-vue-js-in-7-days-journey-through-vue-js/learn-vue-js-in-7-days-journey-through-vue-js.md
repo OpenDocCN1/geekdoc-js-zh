@@ -1,10 +1,5 @@
+
 # 7天学会Vue.js：Vue.js学习之旅
-
-
-
-
-
-
 
 ## 关于作者
 
@@ -16,11 +11,9 @@
 
 除了开发软件，他将时间投入到技术社区活动、博客和制作屏幕录制视频中。因其技术博客活动和写作技巧，DZone也认可他为最具价值博主。乌特卡尔技术爱好者论坛（UTF）和TechBhubaneswar是印度奥里萨邦两个领先的技术社区。在这些社区中，尼尔马尔作为核心小组成员积极参与。他还在印度国内外的各种会议、学校、学院和大学进行各种技术主题的演讲。India Mentor也在其网站上介绍他，以表彰他为社区提供指导的活动。
 
-他的领英：
-linkedin.com/in/nirmalhota
+他的领英：linkedin.com/in/nirmalhota
 
-他的网站
-nirmalhota.com
+他的网站：nirmalhota.com
 
 ### 塔迪特·达什
 
@@ -31,32 +24,28 @@ nirmalhota.com
 由于他对技术社区的杰出贡献，微软在2014年至2018年期间授予他微软最有价值专家称号。CodeProject授予他CodeProject MVP称号（奥里萨邦首位，2014、2015和2016年连续三年获得）。因其持续的指导工作，IndiaMentor在其网站上将他介绍为青年导师。
 
 他也获得了DZone的认可，并被授予最具价值博主称号。
+
 在他的课程中激励学生是他广为人知的一点。他是一位常规的技术和励志演讲者。他曾多次在不同社区组织的各种本地活动中演讲。他曾是尼泊尔DevTechDay的特邀演讲者。
 
 他合著的以下两本书在亚马逊上获得了畅销书排名，并入选了Book Authority的“有史以来最佳ASP.NET书籍”。
 
 - .NET Core 2.0依赖注入
+
 - 使用.NET Core构建RESTful Web服务
 
 您可以在Facebook、Twitter和Instagram上通过账号@taditdash联系他。
 
-他的领英：
-linkedin.com/in/taditdash
-他的网站
-taditdash.wordpress.com
-taditdash.co.in
+他的领英：linkedin.com/in/taditdash
+
+他的网站：taditdash.wordpress.com、taditdash.co.in
 
 ### 维沙尔·贾恩博士
 
 自2017年7月至今，他一直担任新德里GGSIPU附属、AICTE认证的巴拉蒂维迪亚佩斯计算机应用与管理研究所（BVICAM）的副教授。维沙尔·贾恩博士已获得哈里亚纳邦法里达巴德林加亚大学计算机科学与工程博士学位、古鲁戈宾德·辛德拉德拉普拉沙迪大学大学信息技术学院（USIT）计算机科学与工程硕士学位、密鲁特肖比特大学人力资源管理硕士学位、锡金锡金曼尼帕尔大学计算机应用硕士学位。此外，他还获得了DOEACC "A"级和DOEACC "O"级认证、A.M Informatics计算机软件培训研究生文凭、ET&T（德里）计算机软件培训高级文凭、金奈全印度管理研究学院商业管理文凭、牛津计算机教育（德里）编程文凭、微软认证专家（通过070-210、070-215两个模块）和思科认证网络管理员（CCNA）。他于2012-13年度获得了印度计算机协会颁发的青年活跃会员奖。维沙尔·贾恩博士曾担任印度计算机协会德里分会德里州学生协调员（2014-2016年）。他的研究领域包括语义网、本体工程、云计算、大数据分析和自组织网络。
 
-他的领英：
+他的领英：linkedin.com/in/vishaljain83
 
-linkedin.com/in/vishaljain83
-
-他的网站
-
-vishaljain.webs.com
+他的网站：vishaljain.webs.com
 
 ## 致谢
 
@@ -76,15 +65,13 @@ vishaljain.webs.com
 
 我的祖母桑蒂普里亚·特里帕蒂、父亲戈宾达·钱德拉·达什博士、母亲萨斯米塔·特里帕蒂女士和兄弟特沃里特·达什确保我在写作期间始终保持充沛的精力（健康的饮食）和信心。我的叔叔阿尼尔·特里帕蒂先生、阿斯温·特里帕蒂先生和阿米亚·特里帕蒂先生总是指导我制定应对新挑战的方法。苏贾塔·特里帕蒂女士像母亲一样照顾我，而我的叔叔德本德拉·拉特先生从不错过任何机会与我讨论想法，以强化我的思考，从而让我交付最佳成果。
 
-
-
 源自专业与教育背景，我们作为作者决定编写一本合理的书籍，以满足当前行业中普遍存在的对JavaScript框架知识的渴求。
 
 当我们看到企业在项目中坚持使用特定框架或技术时，该决策在很大程度上取决于开发人员或架构师如何提出实际的实施流程。本书可作为学习VueJs简易性的便捷工具，以便利益相关者在从其他竞争框架中选择Vue时能采取适当的措施。
 
 您可能会在市面上找到同一主题的不同书籍，然而，我们的书特别侧重于通过适当的插图，循序渐进地学习该框架。最重要的是，对于相关概念，我们巧妙地回答了“为什么”和“如何”。如果您跟随本书逐章学习，7天后，您肯定会轻松掌握VueJs，毫无困难。
 
-在设计本书时，我们已适当注意从VueJs的基础知识开始介绍概念。然而，我们假设您至少对使用HTML、JavaScript和CSS进行Web开发有基本的了解。我们推荐这本书给学生以及想要深入学习VueJs的在职专业人士。对学生而言，这有助于他们为简历增添一项技能；对专业人士而言，这有助于他们快速入门，并为他们参与现有和新项目的决策提供更好依据。
+在设计本书时，我们已适当注意从VueJs的基础知识开始介�概念。然而，我们假设您至少对使用HTML、JavaScript和CSS进行Web开发有基本的了解。我们推荐这本书给学生以及想要深入学习VueJs的在职专业人士。对学生而言，这有助于他们为简历增添一项技能；对专业人士而言，这有助于他们快速入门，并为他们参与现有和新项目的决策提供更好依据。
 
 通过本书，您可以期望每章都有详细的、循序渐进的学习路径，并附有恰当的示例代码。讲解配有大量截图，方便您快速参考输出结果。如有任何问题，请随时向我们发送查询。
 
@@ -102,7 +89,7 @@ BPB Publications大家庭非常感谢您的支持、建议和反馈。
 
 在本章中，我们将介绍Vue.js。我们还将介绍Vue生态系统以搭建环境。本章还将简要描述安装过程、开发工具和用于项目脚手架的vue CLI等。
 
-众所周知，JavaScript是一种由浏览器解释的脚本语言，借助V8、Rhino等嵌入式JavaScript引擎。V8是现代Web浏览器中使用最广泛的JS引擎。JavaScript在Web开发世界中扮演着至关重要的角色，它在客户端执行用户请求，减少客户端-服务器请求响应往返，从而提升用户体验和性能。
+众所周知，JavaScript是一种由浏览器解释的脚本语言，借助V8、Rhino等嵌入式JavaScript引擎。V8是现代Web浏览器中使用最广泛的JS引擎。JavaScript在Web开发世界中扮演着至关重要的角色，它在客户端执行用户请请求，减少客户端-服务器请求响应往返，从而提升用户体验和性能。
 
 Vue是一个基于JavaScript构建的UI框架。它作用于Web应用程序的UI层。
 
@@ -117,8 +104,6 @@ Vue是一个基于JavaScript构建的UI框架。它作用于Web应用程序的UI
 Vue.js是一个开源的渐进式JavaScript框架。它最初由Evan You发明，他曾是Google的员工。他也曾参与过MeteroJS项目。尽管毕业于艺术专业，但他一直与开发保持联系。在Google工作期间，他有机会接触Angular。之后，他开始着手自己的项目，第一个Vue.js版本于2014年2月发布到Git，这可以说是Angular的一个改进版本。
 
 Vue.js具有一些关键特性，使其广受欢迎并易于采用。
-
-
 
 ## 轻量级
 
@@ -136,7 +121,7 @@ DOM 是 Document Object Model（文档对象模型）的缩写。我们在浏览
 
 ## 基于 HTML 的模板
 
-模板有助于创建可复用的 UI 组件。Vue 对象允许在对象内部使用 HTML 代码来定义模板，这有助于创建可复用的组件，并为现有的 HTML 添加了高级功能。
+模板有助于创建可复用的 UI 组件。Vue 对象允许在对象内部使用 HTML 代码来定义模板，这有助于创建可复用的组件，并为现代的 HTML 添加了高级功能。
 
 ## 响应式视图组件
 
@@ -181,6 +166,7 @@ Vue 支持双向绑定技术。数据模型与模板模型绑定，当数据模�
 我们使用了两个数据属性来保存用户的输入，并将它们与输入文本关联起来。
 
 - `first_name`
+
 - `last_name`
 
 Vue 对象中的方法 `get_full_name` 将两个变量连接起来，中间加上一个空格，并返回全名，该全名随后显示在屏幕上的问候消息中。我们使用了 `v-show` 指令，这样当屏幕上没有指定名字和姓氏时，就不会渲染问候消息。
@@ -239,6 +225,7 @@ Vue 对象中的方法 `get_full_name` 将两个变量连接起来，中间加�
 现在我们已经重构了现有代码。我们主要做了两件事。
 
 1.  我们移除了 `methods` 属性并添加了 `computed` 属性。
+
 2.  与方法不同，在页面中使用计算属性时不需要括号。
 
 ### 为什么这是解决方案？
@@ -248,8 +235,11 @@ Vue 对象中的方法 `get_full_name` 将两个变量连接起来，中间加�
 使用计算属性的优点如下：
 
 -   它被缓存。
+
 -   除非依赖的模型发生变化，否则值不会改变。
+
 -   可以从缓存中快速获取。
+
 -   比方法执行得更快。
 
 ### 计算属性与方法
@@ -267,8 +257,6 @@ Vue 对象中的方法 `get_full_name` 将两个变量连接起来，中间加�
 方法部分中的时间戳值有差异，尽管我们调用的是同一个方法。这意味着，同一个方法被反复调用以获取值。但在计算属性部分，值将始终与第一次调用时的值相同，因为它从缓存中获取值。在第一次调用时，生成的值（在这种情况下是当前时间戳）被存储在缓存中。后续调用时，该值仅从缓存中获取并显示，除非页面被刷新。刷新时，它会更改计算属性的值，因为此计算属性依赖于时间戳。
 
 多次刷新屏幕后，我们可以看到方法的值可能相同也可能不同，这取决于执行时间。但计算属性的值将始终相同。
-
-
 
 ## 方法调用
 
@@ -351,6 +339,7 @@ computed: {
 在`get`方法中，我们做了以下操作：
 
 - 我们返回了*名*和*姓*的组合值，以创建计算属性
+
 - 将`is_combined`变量设置为true
 
 在`set`方法中，我们做了以下操作：
@@ -511,8 +500,6 @@ VueJS支持使用`watch`标签来定义侦听属性。由于我们需要接受�
 侦听器不仅持续监视属性，还跟踪属性的旧值和新值。它缓存当前值。当发生变化时，侦听器将旧值作为旧值返回，将更改后的值作为新值返回。然后再次将新值缓存为当前值。
 
 如前面的示例所示，侦听器定义在vue对象的`watch`钩子下。作为经验法则，侦听器的名称必须与要监视的属性的名称相同。
-
-
 
 ## 侦听器
 
@@ -720,11 +707,9 @@ watch: {
 
 组件就是答案。我们需要组件来避免代码中的这些重复。
 
-
-
 ## 什么是组件？
 
-组件是可以被重复使用以执行特定任务的 Vue 实例。只需实例化同一个组件，就可以在多个地方复用它。
+组件是可以被重复使用以执特定任务的 Vue 实例。只需实例化同一个组件，就可以在多个地方复用它。
 
 我们将设计我们的第一个组件。
 
@@ -888,9 +873,10 @@ Vue 组件模板应该只有一个根元素。如果我们使用 `v-if`，那么
 
 图 4.8：向组件添加数据
 
-这里我们将使用两个模型变量来绑定输入文本。模型变量必须添加到 `data` 部分。我们将在浏览器中渲染上面的例子。
+这里我们将使用两个模变量来绑定输入文本。模型变量必须添加到 `data` 部分。我们将在浏览器中渲染上面的例子。
 
 | 地址行 1 | [输入框] |
+
 | 地址行 2 | [输入框] |
 
 我们可以看到它在浏览器中正确渲染。现在，我们需要检查 Vue 组件是否从输入框中获取了值。为了检查这一点，我们需要使用 Vue Chrome 扩展。
@@ -927,8 +913,6 @@ Vue 组件模板应该只有一个根元素。如果我们使用 `v-if`，那么
 让我们用实例渲染代码，看看 Vue 组件对象在屏幕上的反应。
 
 ![](img/2c298ca86478005a0a21c9796cebbd15_31_2.png)
-
-
 
 ## 4.12 使用 Vue Devtools 浏览渲染后的 Vue 对象
 
@@ -1174,8 +1158,6 @@ export default {
 
 在这种情况下，这个组件发出 validate_pin 事件，父组件将实现来显示消息。
 
-
-
 ```vue
 <template>
   <div id="app">
@@ -1232,65 +1214,76 @@ export default {
 
 我们已经学习了组件的基础知识。可重用性是使用组件的关键。它帮助我们减少重复编写相同的代码。我们可以定义组件的属性来接收来自页面以及父组件的数据。我们还学习了如何为属性指定验证和类型，以便属性能根据定义的规范获得有效的值。此外，字符串模板最好用`.vue`文件替代，这有助于编写更易管理的HTML代码。事件可以在父组件中处理，这些事件由子组件发出，数据可以通过事件传递。`$emit`是将事件从子组件暴露给父组件的关键。
 
-在下一章中，我们将学习如何进一步使用组件。我们还将学习如何建立从子组件到父组件的通信。我们将了解如何创建和使用自定义事件。我们还将学习动态组件、异步组件等。在本章中，我们还将介绍插槽及其作用。
+在下一章中，我们将学习如何进一步使用组件。我们还将学习如何建立从子组件到父组件的通信。我们将了解如何创建和使用自定事件。我们还将学习动态组件、异步组件等。在本章中，我们还将介绍插槽及其作用。
 
 第5天
 
 ## 深入组件
 
+
+
+# 深入组件：Props 与插槽
+
 在上一章中，我们学习了创建组件的方法。可重用性和可维护性是使用组件的关键。它帮助我们将工作分割成多个小部分。我们还探索了在另一个组件中使用组件的方法。传递机制也帮助我们实现了组件之间的数据传递。
 
-在本章中，我们将深入探讨组件。我们将更深入地研究props。我们将定义类型、应用验证等等。此外，我们将更多地使用组件，并学习插槽将如何帮助我们。
+在本章中，我们将深入探讨组件。我们将更深入地研究 props。我们将定义类型、应用验证等等。此外，我们将更多地使用组件，并学习插槽将如何帮助我们。
 
-## 深入Props
+## 深入 Props
 
-正如我们在上一章所讨论的，props是在组件之间传递数据的方式。它有助于父子组件之间的数据通信。
+正如我们在上一章所讨论的，props 是在组件之间传递数据的方式。它有助于父子组件之间的数据通信。
 
-在本章中，我们将更深入地探讨prop验证的实现。
+在本章中，我们将更深入地探讨 prop 验证的实现。
 
-## Prop类型验证
+## Prop 类型验证
 
-我们可以在定义prop时应用验证。子组件有完全的权力来决定接受什么和拒绝什么。因此，prop块可以指定属性的类型。
+我们可以在定义 prop 时应用验证。子组件有完全的权力来决定接受什么和拒绝什么。因此，prop 块可以指定属性的类型。
 
-让我们创建一个Vue组件，它只接受数值。同时，我们可以将其标记为必需。这样，每当使用该组件标签时，它都需要该属性值。
+让我们创建一个 Vue 组件，它只接受数值。同时，我们可以将其标记为必需。这样，每当使用该组件标签时，它都需要该属性值。
 
+```vue
+<template>
+  <div>数字是 {{ NumValue }}</div>
+</template>
+
+<script>
+export default {
+  props: {
+    NumValue: {
+      type: Number,
+      required: true
+    }
+  }
+}
+</script>
 ```
-数字是 {{ NumValue}}
-```
 
-我们定义了一个名为`NumValue`的属性，并指定了它接受的值的类型。为了检查它如何工作，我们需要将值传递给该组件。
+我们定义了一个名为 `NumValue` 的属性，并指定了它接受的值的类型。为了检查它如何工作，我们需要将值传递给该组件。
 
 我们已经将数字值传递给了组件，并且它在屏幕上正确地渲染。
 
-![img/2c298ca86478005a0a21c9796cebbd15_39_0.png](img/2c298ca86478005a0a21c9796cebbd15_39_0.png)
+![图 5.1：显示传递给 prop 的数字值](img/2c298ca86478005a0a21c9796cebbd15_39_0.png)
 
-![img/2c298ca86478005a0a21c9796cebbd15_39_1.png](img/2c298ca86478005a0a21c9796cebbd15_39_1.png)
+我们可以做一个小实验，添加一个字符串值而不是数字。让我们在标签的 `NumValue` prop 中添加一个字符串而不是数字。
 
-图5.1：显示传递给prop的数字值
-
-我们可以做一个小实验，添加一个字符串值而不是数字。让我们在标签的`NumValue`prop中添加一个字符串而不是数字。
-
-```
-<!-- 代码块（源代码中为空或最小化） -->
+```vue
+<my-component :num-value="'not a number'"></my-component>
 ```
 
 如果我们切换回浏览器屏幕，虽然它渲染在了屏幕上，但控制台中一定有一个错误。现在，让我们查看开发者工具中的控制台。控制台清晰地显示了错误。
 
-![img/2c298ca86478005a0a21c9796cebbd15_39_2.png](img/2c298ca86478005a0a21c9796cebbd15_39_2.png)
+![图 5.2：传递非数字值时的错误](img/2c298ca86478005a0a21c9796cebbd15_39_2.png)
 
-图5.2：传递非数字值时的错误
+错误明确说明该值无效。因此，我们可以从上述实验中得出结论，值会根据定义的类型被接受。如果我们把 prop 值从 `String` 改为 `Number`，问题就解决了。
 
-错误明确说明该值无效。因此，我们可以从上述实验中得出结论，值会根据定义的类型被接受。如果我们把prop值从`String`改为`Number`，问题就解决了。
-
-prop的默认值是`Any`。不设置任何类型或将类型设置为`null`将接受任何类型的数据。
+prop 的默认值是 `Any`。不设置任何类型或将类型设置为 `null` 将接受任何类型的数据。
 
 属性支持的类型是：
 
 ### 向属性传递数组
 
-与`String`、`Number`和`Boolean`一样，我们也可以向属性传递数组。我们将传递一个静态数组给组件，并遍历它以在屏幕上打印元素。
+与 `String`、`Number` 和 `Boolean` 一样，我们也可以向属性传递数组。我们将传递一个静态数组给组件，并遍历它以在屏幕上打印元素。
 
-虽然我们传递的是静态数组，但我们将使用`v-bind`。这样浏览器会将其视为JavaScript表达式而不是字符串。
+虽然我们传递的是静态数组，但我们将使用 `v-bind`。这样浏览器会将其视为 JavaScript 表达式而不是字符串。
 
 ```vue
 <template>
@@ -1311,27 +1304,21 @@ export default {
 </script>
 ```
 
-在这个组件代码片段中，我们可以看到`alphabets`prop。我们在这里使用的类型是`Array`。我们将遍历同一个数组，以在`li`标签中显示数组元素。
+在这个组件代码片段中，我们可以看到 `alphabets` prop。我们在这里使用的类型是 `Array`。我们将遍历同一个数组，以在 `li` 标签中显示数组元素。
 
 以下代码片段演示了我们如何创建数组并将其传递给组件属性：
 
 ```vue
 <template>
   <div>
-    <ul>
-      <li v-for="alphabet in alphabets" :key="alphabet">{{ alphabet }}</li>
-    </ul>
+    <child-component :alphabets="['A', 'B', 'C']"></child-component>
   </div>
 </template>
 
 <script>
+import ChildComponent from './ChildComponent.vue';
 export default {
-  props: {
-    alphabets: {
-      type: Array,
-      required: true
-    }
-  }
+  components: { ChildComponent }
 }
 </script>
 ```
@@ -1362,13 +1349,13 @@ export default {
 </script>
 ```
 
-如上面的代码片段所示，我们将prop的类型指定为`Object`。因此，当我们使用这些属性时，需要传递对象类型的值。
+如上面的代码片段所示，我们将 prop 的类型指定为 `Object`。因此，当我们使用这些属性时，需要传递对象类型的值。
 
-我们创建了一个包含属性的JSON对象，并将其传递给该属性。该组件的实现方式是从对象中提取值并将其打印在屏幕上。
+我们创建了一个包含属性的 JSON 对象，并将其传递给该属性。该组件的实现方式是从对象中提取值并将其打印在屏幕上。
 
 ### 多种类型的属性
 
-一个属性也可以是多种类型。让我们看一个示例属性。为其设置`String`和`Number`作为类型分配。
+一个属性也可以是多种类型。让我们看一个示例属性。为其设置 `String` 和 `Number` 作为类型分配。
 
 ```vue
 <template>
@@ -1386,7 +1373,7 @@ export default {
 </script>
 ```
 
-现在，让我们验证三个用例。首先，我们将分配一个`Number`并检查是否有错误。我们将在检查窗口控制台中检查。没有错误！运行正常。
+现在，让我们验证三个用例。首先，我们将分配一个 `Number` 并检查是否有错误。我们将在检查窗口控制台中检查。没有错误！运行正常。
 
 现在，让我们分配一个字符串值，以确保它不会在控制台中引起任何错误。
 
@@ -1394,15 +1381,13 @@ export default {
 
 虽然我们可以在屏幕上看到输出，但让我们检查控制台窗口。那里有警告。
 
-![img/2c298ca86478005a0a21c9796cebbd15_41_0.png](img/2c298ca86478005a0a21c9796cebbd15_41_0.png)
+![图 5.3：浏览器控制台错误显示 prop 类型检查失败](img/2c298ca86478005a0a21c9796cebbd15_41_0.png)
 
-图5.3：浏览器控制台错误显示prop类型检查失败
-
-警告明确说明，它期望`Number`或`String`，但收到了一个对象。
+警告明确说明，它期望 `Number` 或 `String`，但收到了一个对象。
 
 ## 使属性成为必需
 
-要使属性成为组件的必需项，我们可以添加一个名为`required`的额外属性。
+要使属性成为组件的必需项，我们可以添加一个名为 `required` 的额外属性。
 
 ```vue
 <template>
@@ -1421,23 +1406,21 @@ export default {
 </script>
 ```
 
-现在我们已经将`NumValue`标记为必需项。我们将在HTML中实例化该组件，而不包含`NumValue`属性。
+现在我们已经将 `NumValue` 标记为必需项。我们将在 HTML 中实例化该组件，而不包含 `NumValue` 属性。
 
 ```vue
 <my-component></my-component>
 ```
 
-我们使用了不包含`NumValue`属性的`my-component`标签。让我们检查控制台。
+我们使用了不包含 `NumValue` 属性的 `my-component` 标签。让我们检查控制台。
 
-![img/2c298ca86478005a0a21c9796cebbd15_41_1.png](img/2c298ca86478005a0a21c9796cebbd15_41_1.png)
+![图 5.4：显示缺少 prop 值的错误](img/2c298ca86478005a0a21c9796cebbd15_41_1.png)
 
-图5.4：显示缺少prop值的错误
-
-控制台中有缺少属性的警告。它表示，如果“required”参数设置为“true”，那么它将在组件实例化时寻找该属性。
+控制台中有缺少属性的警告。它表示，如果 “required” 参数设置为 “true”，那么它将在组件实例化时寻找该属性。
 
 ## 属性的自定义验证
 
-除了固定的类型验证外，我们还可以为props添加自定义验证器。我们可以在prop中使用“validator”级别来实现这一点。它接受一个自定义函数，该函数可以验证prop值。
+除了固定的类型验证外，我们还可以为 props 添加自定义验证器。我们可以在 prop 中使用 `validator` 级别来实现这一点。它接受一个自定义函数，该函数可以验证 prop 值。
 
 ```vue
 <template>
@@ -1458,17 +1441,15 @@ export default {
 </script>
 ```
 
-在这个验证器中，我们添加了一个函数，用于检查数值是否大于0。
+在这个验证器中，我们添加了一个函数，用于检查数值是否大于 0。
 
 ```vue
 <my-component :my-value="-1"></my-component>
 ```
 
-让我们测试一下验证器。因此，我们向prop添加了`-1`，如上面的代码片段所示。我们需要检查控制台窗口，以查看验证器是否工作。是的，我们在控制台中看到了警告消息。
+让我们测试一下验证器。因此，我们向 prop 添加了 `-1`，如上面的代码片段所示。我们需要检查控制台窗口，以查看验证器是否工作。是的，我们在控制台中看到了警告消息。
 
-![img/2c298ca86478005a0a21c9796cebbd15_41_2.png](img/2c298ca86478005a0a21c9796cebbd15_41_2.png)
-
-图5.5：自定义验证器失败时的控制台错误
+![图 5.5：自定义验证器失败时的控制台错误](img/2c298ca86478005a0a21c9796cebbd15_41_2.png)
 
 ## 属性的默认值
 
@@ -1491,8 +1472,6 @@ export default {
 </script>
 ```
 
-数字是 {{ NumValue}}
-
 在缺少输入值的情况下，默认值会填补空缺。该默认值将被组件使用。
 
 ## 插槽
@@ -1507,14 +1486,38 @@ export default {
 
 让我们用 `<slot>` 标签创建一个新的 Vue 组件。我们将在父组件中使用这个 Vue 组件来查看它的工作方式。我们将该组件命名为 `BasicSlot`。在 Vue 中添加以下代码。
 
+```vue
+<!-- BasicSlot.vue (子组件) -->
+<template>
+  <div>
+    <h3>这是子组件的内容</h3>
+    <slot></slot>
+  </div>
+</template>
+```
+
 这是我们将用来演示插槽工作方式的子组件。
 
 如代码所示，我们已经在子组件中添加了 `<slot>` 标签以及其他内容。
 
 现在，让我们在父组件中导入该组件，并添加一些内容来检查它的工作原理。
 
-```
+```vue
+<!-- 父组件 -->
+<template>
+  <div>
+    <BasicSlot>
+      这是从父组件注入的内容
+    </BasicSlot>
+  </div>
+</template>
 
+<script>
+import BasicSlot from './BasicSlot.vue';
+export default {
+  components: { BasicSlot }
+}
+</script>
 ```
 
 现在，我们可以看到来自父组件的注入内容。
@@ -1525,11 +1528,7 @@ export default {
 
 它将父组件中指定的内容注入到子组件的 `<slot>` 标签中，连同子组件的内容一起，正如我们在下图中看到的，该图清楚地指示了内容。顶部的矩形表示子组件内容，底部的矩形表示父组件内容。
 
-![](img/2c298ca86478005a0a21c9796cebbd15_43_0.png)
-
-![](img/2c298ca86478005a0a21c9796cebbd15_43_1.png)
-
-图 5.6：显示子组件和父组件的插槽内容
+![图 5.6：显示子组件和父组件的插槽内容](img/2c298ca86478005a0a21c9796cebbd15_43_0.png)
 
 如果我们想多次显示相同的父内容，那么我们也需要多次添加 `<slot>` 标签。换句话说，Vue 会在子组件中找到多少次 `<slot>` 标签，就注入多少次内容。
 
@@ -1543,23 +1542,44 @@ export default {
 
 让我们添加一个实现了 `<slot>` 标签的新组件。我们添加了一行文本，以了解父组件内容是否会覆盖子组件内容。我们将在父组件中使用同一个组件，并在 `<slot>` 标签内传递内容。
 
+```vue
+<!-- 子组件 FallbackSlot.vue -->
+<template>
+  <div>
+    <slot>这是子组件的默认（回退）内容</slot>
+  </div>
+</template>
+```
+
+```vue
+<!-- 父组件 -->
+<template>
+  <div>
+    <FallbackSlot>
+      这是父内容。它覆盖了子内容。
+    </FallbackSlot>
+  </div>
+</template>
+```
+
 这是父内容。它覆盖了子内容。
 
 我们在父组件中使用了 `<slot>` 标签并在其中传递了文本。在浏览器中，我们可以看到，如下图截图所示，父内容通过覆盖子内容进行显示。
 
-![](img/2c298ca86478005a0a21c9796cebbd15_44_0.png)
-
-这是父内容。它覆盖了子内容。
-
-图 5.7：通过覆盖子内容来显示父内容
+![图 5.7：通过覆盖子内容来显示父内容](img/2c298ca86478005a0a21c9796cebbd15_44_0.png)
 
 我们将通过移除父内容来增强同一个示例。结果，它应该在浏览器中渲染子内容。
 
-![](img/2c298ca86478005a0a21c9796cebbd15_44_1.png)
+```vue
+<!-- 父组件 (无内容) -->
+<template>
+  <div>
+    <FallbackSlot></FallbackSlot>
+  </div>
+</template>
+```
 
-这是父内容。它覆盖了子内容。
-
-图 5.8：当子内容为空时显示父内容
+![图 5.8：当父内容为空时显示子内容](img/2c298ca86478005a0a21c9796cebbd15_44_1.png)
 
 ## 具名插槽
 
@@ -1569,27 +1589,51 @@ export default {
 
 我们创建了一个包含三个插槽的组件。`Header` 和 `footer` 是在模板中定义的两个具名插槽。中间的插槽没有名称，将会被替换。
 
+```vue
+<!-- NamedSlots.vue (子组件) -->
+<template>
+  <div class="container">
+    <header>
+      <slot name="header">默认 Header</slot>
+    </header>
+    <main>
+      <slot>默认 Main 内容</slot>
+    </main>
+    <footer>
+      <slot name="footer">默认 Footer</slot>
+    </footer>
+  </div>
+</template>
+```
+
 欢迎来到具名插槽课程
 
 具名插槽在现实生活中的开发场景中非常有用。它提供了对从父到子内容注入的控制。
 
 感谢阅读
 
-![](img/2c298ca86478005a0a21c9796cebbd15_45_0.png)
-
-欢迎来到具名插槽课程
-
-具名插槽在现实生活中的开发场景中非常有用。它提供了对从父到子内容注入的控制。
-
-感谢阅读
-
-图 5.9：渲染具名插槽
+![图 5.9：渲染具名插槽](img/2c298ca86478005a0a21c9796cebbd15_45_0.png)
 
 header 插槽渲染在顶部，footer 插槽位于页脚，中间的内容不是具名插槽。
 
-具名插槽的内容应该用带有 `v-slot` 属性的 `<template>` 标签包裹起来。没有 `<template>` 标签的内容将被渲染到 `<slot>` 标签中。它们也可以放在 `v-slot` 模板中，如下所示：
+具名插槽的内容应该用带有 `v-slot` 属性的 `<template>` 标签包裹起来。没有 `<template>` 标签的内容将被渲染到默认的 `<slot>` 标签中。它们也可以放在 `v-slot` 模板中，如下所示：
 
-具名插槽在现实生活中的开发场景中非常有用。它提供了对从父到子内容注入的控制。
+```vue
+<!-- 父组件使用具名插槽 -->
+<template>
+  <NamedSlots>
+    <template v-slot:header>
+      <h1>自定义 Header</h1>
+    </template>
+    
+    <p>具名插槽在现实生活中的开发场景中非常有用。它提供了对从父到子内容注入的控制。</p>
+    
+    <template v-slot:footer>
+      <p>感谢阅读</p>
+    </template>
+  </NamedSlots>
+</template>
+```
 
 ## 作用域插槽
 
@@ -1597,247 +1641,272 @@ header 插槽渲染在顶部，footer 插槽位于页脚，中间的内容不是
 
 举个例子，父插槽需要将一个国家首都注入到子组件的插槽内容中。如果国家对象存在于父组件中，这相当容易。但是，如果对象在子组件端，而我们需要从父组件推送内容。
 
-```
-<slot v-bind:country="country">
-</slot>
+```vue
+<!-- 子组件 -->
+<template>
+  <div>
+    <slot v-bind:country="country">
+      <!-- 回退内容 -->
+    </slot>
+  </div>
+</template>
+
+<script>
+export default {
+  data() {
+    return {
+      country: { name: 'China', capital: 'Beijing' }
+    }
+  }
+}
+</script>
 ```
 
 我们需要在这里使用 `v-bind` 技术，将对象从子组件发送到父组件。
 
 国家对象通过 `v-bind` 绑定到插槽。这被称为插槽 Props。现在，插槽 Props 可以在父组件端被访问，并获得相同的值。
 
-```
-{{ childslotprop.country.capital }}
+```vue
+<!-- 父组件 -->
+<template>
+  <ScopedSlot v-slot="childslotprop">
+    {{ childslotprop.country.capital }}
+  </ScopedSlot>
+</template>
 ```
 
 我们使用了 slot prop 属性从子组件接收国家对象。我们可以使用任何变量作为 slot prop 来接收插槽对象。
 
 如果父组件的值只需要推送到一个插槽，那么我们可以采用以下简写方式。
 
-```
+```vue
 <ScopedSlot v-slot="childslotprop"> {{ childslotprop.country.capital }} </ScopedSlot>
 ```
 
 假设存在多个插槽需要推送值，我们也可以使用模板方式。
 
+```vue
+<!-- 子组件 -->
+<template>
+  <div>
+    <header>
+      <slot name="header" v-bind:country="country"></slot>
+    </header>
+    <main>
+      <slot v-bind:country="country"></slot>
+    </main>
+    <footer>
+      <slot name="footer" v-bind:country="country"></slot>
+    </footer>
+  </div>
+</template>
+```
+
 我们定义了两个具名插槽和一个默认插槽，以从父组件获取内容。在默认插槽中，我们使用 `v-bind` 传递了国家对象。
 
 父组件将使用具名插槽将内容推送到 header 和 footer 插槽，而默认插槽将使用插槽 Props 获取值。
 
-欢迎来到国家对象
+```vue
+<!-- 父组件 -->
+<template>
+  <ScopedSlot v-slot="childslotprop">
+    <template v-slot:header>
+      欢迎来到国家对象
+    </template>
+    
+    {{ childslotprop.country.capital }}
+    
+    <template v-slot:footer>
+      感谢阅读
+    </template>
+  </ScopedSlot>
+</template>
+```
 
-{{ childslotprop.country.capital }}
-
-感谢阅读
-
-![](img/2c298ca86478005a0a21c9796cebbd15_46_0.png)
+![图 5.10：作用域插槽示例](img/2c298ca86478005a0a21c9796cebbd15_46_0.png)
 
 我们已经学习了在组件中处理 props 的方法。Props 可以通过类型检查进行验证。它们也可以被标记为必需。我们还可以为组件 props 定义默认值。除了 props，要将内容从父组件传递到子组件，我们可以使用插槽技术。插槽 Props 可用于将数据从子组件传回父组件，这些数据本应在插槽内处理。我们还可以通过使用具名插槽来控制要显示的内容。
 
-在下一章，我们将学习混合、自定义指令、插件和过滤器。我们还将了解如何使用混合合并组件。我们还将探索创建新的自定义指令并使用它们的方法。
+在下一章，我们将学习混入、自定义指令、插件和过滤器。我们还将了解如何使用混入合并组件。我们还将探索创建新的自定义指令并使用它们的方法。
 
-## 第 6 天
+# 第 6 天：分发可重用功能
 
-### 分发可重用功能
+## 分发可重用功能
 
 在上一章中，我们学习了如何继续使用组件。我们以更易管理和可控的方式定义了 props。对组件中的 props 应用验证对于控制数据非常有用。此外，我们还看到了插槽如何帮助组件相互传递内容。
 
 现在，我们将研究使功能可分发的方法。本章我们将重点关注让事物更具可重用性。
 
-### 混合
+## 混入
 
 顾名思义，它会与组件混合。它通过将其内容混合到组件中来使可重用功能得以工作。
 
 假设我们有多个组件，它们共享一些共同的功能。为了适应这一点，我们需要将组件相互合并。这样，我们只需要暴露一个组件，而无需创建重复的代码。但是，这种方法还有另一个问题：如果我们将组件合并成一个，那么这两个组件都会获得一些它们并不真正需要的额外功能。
 
-为了解决这类问题，我们可以借助混合（Mixin）。我们可以将那些共同的功能放在一个混合中，并在两个组件中使用同一个混合。这样，我们就不需要合并组件了。
+为了解决这类问题，我们可以借助混入。我们可以将那些共同的功能放在一个混入中，并在两个组件中使用同一个混入。这样，我们就不需要合并组件了。
 
-在下面的例子中，我们将有两个共享电子邮件验证功能的组件。我们将把那个共同的功能封装在一个混合中。我们将该混合混合到两个组件中，以便它们都能获得电子邮件验证功能。
+在下面的例子中，我们将有两个共享电子邮件验证功能的组件。我们将把那个共同的功能封装在一个混入中。我们将该混入混合到两个组件中，以便它们都能获得电子邮件验证功能。
 
-在这个例子中，我们将创建一个名为 `EmailValidationMixin` 的混合。我们可以为它采用单独的文件夹结构。
+在这个例子中，我们将创建一个名为 `EmailValidationMixin` 的混入。我们可以为它采用单独的文件夹结构。
 
-![](img/2c298ca86478005a0a21c9796cebbd15_47_0.png)
+![文件夹结构示例](img/2c298ca86478005a0a21c9796cebbd15_47_0.png)
 
 文件夹结构不是强制性的。为了提高可读性和可维护性，我们将其放在一个单独的文件夹中。
 
-该混合是一个 JavaScript 文件，包含混合的代码。
+该混入是一个 JavaScript 文件，包含混入的代码。
 
-```
+```javascript
+// mixins/EmailValidator.js
 export const EmailValidatorMixin = {
+  methods: {
+    validate_email: function(email) {
+      if (email == "") {
+        alert("Please enter email");
+        return false;
+      }
+
+      var mailformat = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/igm;
+
+      if (mailformat.test(email)) {
+        alert("Email is Valid");
+      } else {
+        alert("Invalid email");
+      }
+    }
+  }
+}
 ```
 
-
-
-## 混入中的生命周期钩子
+### 混入中的生命周期钩子
 
 让我们考虑一种情况，当生命周期钩子在混入中实现时，同时该钩子也在组件中实现。在这种情况下，混入会赢得这场竞争。混入中定义的钩子会首先被调用，然后才是组件中的钩子。
 
-```
+```javascript
+// mixins/EmailValidator.js
 export const EmailValidatorMixin = {
-
-    created: function(){
-
-        alert("Mixin created");
-
-    },
-}
-```
-
-```
-methods: {
-
-    validate_email: function(email){
-
-        if(email == ""){
-
-            alert("Please enter email");
-
-            return false;
-        }
-
-        var mailformat = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/igm;
-
-        if (mailformat.test(email)){
-
-            alert("Email is Valid");
-
-        }
-
-        else{
-
-            alert("Invalid email");
-
-        }
-
+  created: function() {
+    alert("Mixin created");
+  },
+  methods: {
+    validate_email: function(email) {
+      // ... 验证逻辑
     }
-
-}
-}
+  }
 }
 ```
 
-如示例所示，我们在混入的 `created` 钩子中添加了一个警告提示。现在，让我们在组件中添加相同的钩子来进行测试。
+```vue
+<!-- 组件 CustomerValidation.vue -->
+<template>
+  <div>客户验证组件</div>
+</template>
 
-```
-import {EmailValidatorMixin} from '../mixins/EmailValidator.js'
+<script>
+import { EmailValidatorMixin } from '../mixins/EmailValidator.js'
 
 export default {
-
-    name: "CustomerValidation",
-
-    data() {
-
-        return{
-
-            cust_email: "",
-
-            cust_num: ""
-
-        }
-
-    },
-
-    mixins: [EmailValidatorMixin],
-
-    methods: {
-
-        validate_customer: function(){
-
-            if(this.cust_num == ""){
-
-                alert("Please enter Customer Number");
-
-                return false;
-            }
-
-            if(this.cust_num.indexOf("CN") == -1){
-
-                alert("Invalid Customer Number");
-
-            }
-
-            else{
-
-                alert("Customer Number is Valid");
-            }
-        }
-    },
-
-    created: function(){
-
-        alert("Component created");
-
+  name: "CustomerValidation",
+  data() {
+    return {
+      cust_email: "",
+      cust_num: ""
     }
+  },
+  mixins: [EmailValidatorMixin],
+  methods: {
+    validate_customer: function() {
+      // ... 客户验证逻辑
+    }
+  },
+  created: function() {
+    alert("Component created");
+  }
 }
+</script>
 ```
 
 从代码中可以看到，我们使用了两个警告提示来检查执行顺序。当我们在浏览器中运行时，混入中的警告信息会首先显示，然后才是组件中的警告。
 
-## 混入中的合并
+### 混入中的合并
 
 如前所学，混入会与组件合并。这也意味着混入中的数据对象也会与组件的数据对象合并。
 
-```
+```javascript
+// mixins/DataMergerMixin.js
 export const DataMergerMixin = {
-
-    data: function(){
-
-        return{
-
-            message : "Message from mixin"
-
-        }
-
+  data: function() {
+    return {
+      message: "Message from mixin"
     }
-
+  }
 }
 ```
 
 我们将在组件中定义一些数据。
 
-```
-        {{ $data }}
+```vue
+<template>
+  <div>{{ $data }}</div>
+</template>
+
+<script>
+import { DataMergerMixin } from './mixins/DataMergerMixin.js';
+export default {
+  mixins: [DataMergerMixin],
+  data() {
+    return {
+      component_message: "This is a component message"
+    }
+  }
+}
+</script>
 ```
 
 `{{ $data }}` 的结果将是两个数据对象的组合。
 
-```
+```json
 { "component_message": "This is a component message", "message": "Message from mixin" }
 ```
 
 需要注意的是，如果混入和组件中的数据变量名相同，那么组件的数据变量将被打印出来。让我们将组件中的 `component_message` 变量重命名为 `message`。
 
-```
-        {{ $data }}
+```vue
+<script>
+export default {
+  mixins: [DataMergerMixin],
+  data() {
+    return {
+      message: "This is a component message" // 同名 key
+    }
+  }
+}
+</script>
 ```
 
 现在，混入和组件中的数据变量名相同。因此，输出将被组件覆盖。
 
-```
+```json
 { "message": "This is a component message" }
 ```
 
-## 函数冲突
+### 函数冲突
 
 与数据变量冲突类似，当组件和混入中的函数发生冲突时，组件中的函数会覆盖混入中的函数。
 
-## 全局混入
+### 全局混入
 
 在全局作用域中定义的混入可以被所有组件访问。在通过 CLI 构建的 Vue 应用中，我们可以在 `main.js` 中定义一个混入。
 
-```
+```javascript
+// main.js
+import Vue from 'vue';
+
 Vue.mixin({
-
   methods: {
-
-    showAppInfo: function () {
-
+    showAppInfo: function() {
       alert("Learn Vue In 7 Days")
-
     }
-
   }
-
 })
 ```
 
@@ -1849,15 +1918,14 @@ Vue.mixin({
 
 现在，让我们创建我们自己的自定义指令。顾名思义，自定义指令将以自定义的方式工作。
 
-## 创建自定义指令
+### 创建自定义指令
 
 要创建自定义指令，我们需要使用 Vue 对象。指令将被添加到应用的 Vue 对象上。
 
-```
-Vue.directive('campaign name',
-
-  function(el, binding, vnode) {
-
+```javascript
+// main.js
+Vue.directive('campaign-name', function(el, binding, vnode) {
+  // 指令逻辑
 })
 ```
 
@@ -1869,165 +1937,156 @@ Vue.directive('campaign name',
 
 让我们创建我们的第一个自定义指令。我们使用 Vue CLI 环境来编写代码。我们将把指令添加到 `main.js` 中并访问它们。
 
-```
-Vue.directive('highlight',
-
-  function(el, binding, vnode) {
-
-    el.style.fontSize = '50px';
-
-    el.style.fontWeight = 'bold';
-
-  }
-
-)
+```javascript
+// main.js
+Vue.directive('highlight', function(el, binding, vnode) {
+  el.style.fontSize = '50px';
+  el.style.fontWeight = 'bold';
+})
 ```
 
 如上代码所示，我们创建了一个名为 `highlight` 的新自定义指令。它将设置其绑定的 DOM 元素的字体大小和字体粗细。
 
-## 自定义指令演示
+### 自定义指令演示
 
 `highlight` 指令将用于带有 `v-` 前缀的 HTML 元素。这里，我们将自定义指令添加到了 DOM 元素上。因此，格式化将应用于该元素。
 
-## 自定义指令演示
+```vue
+<template>
+  <div v-highlight>高亮显示的文本</div>
+</template>
+```
 
-![](img/2c298ca86478005a0a21c9796cebbd15_53_0.png)
-
-图 6.2：浏览器控制台显示添加到元素的自定义指令
+![图 6.1：浏览器控制台显示添加到元素的自定义指令](img/2c298ca86478005a0a21c9796cebbd15_53_0.png)
 
 当渲染到屏幕上时，指令会在运行时对 DOM 元素应用更改。
 
-## 向自定义指令传递值
+### 向自定义指令传递值
 
 在前面的例子中，我们创建了一个不接受外部值的自定义指令。它为 HTML 元素设置了固定的格式。我们也可以向自定义指令传递值。根据传递的值，自定义指令也可以应用格式。
 
-```
-Vue.directive('notify',
-
-    function(el, binding, vnode) {
-
-        var colour = (binding.value != undefined && binding.value != "") ? binding.value : "red";
-
-        el.style.fontSize = '15px';
-
-        el.style.fontWeight = 'bold';
-
-        el.style.color = colour;
-
-        el.style.backgroundColor='#ffcccc';
-
-    }
-
-)
+```javascript
+// main.js
+Vue.directive('notify', function(el, binding, vnode) {
+  var colour = (binding.value != undefined && binding.value != "") ? binding.value : "red";
+  el.style.fontSize = '15px';
+  el.style.fontWeight = 'bold';
+  el.style.color = colour;
+  el.style.backgroundColor = '#ffcccc';
+})
 ```
 
 在上面的代码中，我们创建了一个名为 `notify` 的自定义指令。我们可以从外部传递值来设置 DOM 元素的格式。
 
 在这个例子中，我们为 DOM 元素应用了除颜色以外的固定格式。颜色则接收来自用户的动态值。这里设置的默认颜色是红色。如果没有指定颜色，元素颜色将是红色，否则将使用用户输入的颜色。
 
-你已成功进入演示页面
+```vue
+<template>
+  <div v-notify="'blue'">你已成功进入演示页面</div>
+</template>
+```
 
 我们从 HTML 向指令传递了颜色值。该值需要在等号 `=` 之后的双引号内传递。
 
-![](img/2c298ca86478005a0a21c9796cebbd15_54_0.png)
-
-![](img/2c298ca86478005a0a21c9796cebbd15_54_1.png)
-
-图 6.3：显示通过向自定义指令传值应用的样式的截图
+![图 6.2：显示通过向自定义指令传值应用的样式的截图](img/2c298ca86478005a0a21c9796cebbd15_54_0.png)
 
 在浏览器中，它会根据用户输入的自定义颜色以及其他固定格式进行渲染。
 
-## 向自定义指令传递参数
+### 向自定义指令传递参数
 
 与传递值类似，我们也可以向自定义指令传递参数。要传递参数，我们需要使用冒号 `:` 代替等号。
 
-- 低流量
-- 中等流量
-- 高流量
+```vue
+<template>
+  <div v-traffic:low>低流量</div>
+  <div v-traffic:moderate>中等流量</div>
+  <div v-traffic:high>高流量</div>
+</template>
+```
 
 我们定义了一个带有不同延迟的交通灯系统示例。根据参数（`Low`/`Moderate`/`High`），交通信号将相应地运行。
 
 如上所示，我们使用冒号 `:` 将参数传递到自定义指令中。根据参数，它将改变元素样式以在网页中执行相应操作。
 
-```
-Vue.directive('traffic', function(el, binding, vnode){
-    var intervalObj;
-    var interval = 5000;
-    switch(binding.arg){
-        case "low":
-            interval = 5000;
-            break;
-        case "moderate":
-            interval = 10000;
-            break;
-        case "high":
-            interval = 20000;
-    }
+```javascript
+// main.js
+Vue.directive('traffic', function(el, binding, vnode) {
+  var intervalObj;
+  var interval = 5000;
+  switch (binding.arg) {
+    case "low":
+      interval = 5000;
+      break;
+    case "moderate":
+      interval = 10000;
+      break;
+    case "high":
+      interval = 20000;
+  }
+  // 实现信号灯切换逻辑...
 });
 ```
 
-
-
 此处的参数被放置在一个 `switch-case` 结构中。根据传入的参数，它将执行相应的任务。为了说明这一点，我们为低、中、高分别设置了 5 秒、10 秒和 20 秒的间隔，以改变信号灯颜色。
 
-![](img/2c298ca86478005a0a21c9796cebbd15_55_0.png)
+![图 6.3：实现向自定义指令传递参数的交通信号灯应用](img/2c298ca86478005a0a21c9796cebbd15_55_0.png)
 
-图 6.4：实现向自定义指令传递参数的交通信号灯应用
-
-## 向自定义指令传递修饰符
+### 向自定义指令传递修饰符
 
 我们可以向自定义指令传递修饰符。与上面不同，修饰符将使用 `.`（点）进行传递。
 
 ```html
-<div v-markText.underline.makeCapital>Mark the text</div>
+<div v-mark-text.underline.make-capital>Mark the text</div>
 ```
 
-在上面的 HTML 中，我们向自定义指令 `v-markText` 传递了多个修饰符。格式化将根据修饰符出现的顺序进行。
+在上面的 HTML 中，我们向自定义指令 `v-mark-text` 传递了多个修饰符。格式化将根据修饰符出现的顺序进行。
 
 ```javascript
+// main.js
 Vue.directive('markText', function(el, binding) {
-    if(binding.modifiers.underline){
-        el.style.textDecoration = "underline";
-    }
-    if(binding.modifiers.makeCapital){
-        el.style.textTransform = "uppercase";
-    }
-    if(binding.modifiers.makeHeading){
-        el.style.fontSize = '50px';
-        el.style.fontWeight = 'bold';
-    }
-    if(binding.modifiers.highlight){
-        el.style.backgroundColor = "yellow";
-    }
+  if (binding.modifiers.underline) {
+    el.style.textDecoration = "underline";
+  }
+  if (binding.modifiers.makeCapital) {
+    el.style.textTransform = "uppercase";
+  }
+  if (binding.modifiers.makeHeading) {
+    el.style.fontSize = '50px';
+    el.style.fontWeight = 'bold';
+  }
+  if (binding.modifiers.highlight) {
+    el.style.backgroundColor = "yellow";
+  }
 })
 ```
 
 文本将根据自定义指令中指定的修饰符进行格式化。
 
-## 自定义指令中的钩子
+### 自定义指令中的钩子
 
 自定义指令也支持钩子。这不应与 Vue 的钩子混淆。
 
 以下是自定义指令支持的钩子列表（根据 Vue 官方文档 https://vuejs.org/v2/guide/custom-directive.html#Hook-Functions ）及其描述。
 
--   **bind**：仅在指令首次绑定到元素时调用一次。这是你可以执行一次性设置工作的地方。
--   **inserted**：当绑定元素已插入其父节点时调用（这仅保证父节点存在，但不一定在文档中）。
--   **update**：在包含组件的 VNode 更新后调用，但可能在其子节点更新之前。指令的值可能已更改也可能未更改，但你可以通过比较绑定的当前值和旧值来跳过不必要的更新（请参见下面的钩子参数部分）。
--   **componentUpdate**：在包含组件的 VNode 及其子节点的 VNode 更新后调用。
--   **unbind**：仅在指令从元素解绑时调用一次。
+- **`bind`**：仅在指令首次绑定到元素时调用一次。这是你可以执行一次性设置工作的地方。
+- **`inserted`**：当绑定元素已插入其父节点时调用（这仅保证父节点存在，但不一定在文档中）。
+- **`update`**：在包含组件的 VNode 更新后调用，但可能在其子节点更新之前。指令的值可能已更改也可能未更改，但你可以通过比较绑定的当前值和旧值来跳过不必要的更新。
+- **`componentUpdated`**：在包含组件的 VNode 及其子节点的 VNode 更新后调用。
+- **`unbind`**：仅在指令从元素解绑时调用一次。
 
 最受欢迎的钩子是 `bind` 和 `inserted`。
 
 ```javascript
+// main.js
 Vue.directive("custom-hook", {
-    bind(el) {
-        el.style.color = "red";
-        console.log("Bind");
-    },
-    inserted(el) {
-        el.style.color = "blue";
-        console.log("Inserted");
-    }
+  bind(el) {
+    el.style.color = "red";
+    console.log("Bind");
+  },
+  inserted(el) {
+    el.style.color = "blue";
+    console.log("Inserted");
+  }
 });
 ```
 
@@ -2037,13 +2096,13 @@ Vue.directive("custom-hook", {
 
 过滤器是在运行时对数据应用额外格式化的选项。我们可以在数据中使用 `|`（管道）符号应用过滤器。有两种应用过滤器的方法。
 
-Mustache 插值：
+**Mustache 插值：**
 
 ```html
-{{ message | reverse}}
+{{ message | reverse }}
 ```
 
-v-bind 表达式：
+**`v-bind` 表达式：**
 
 ```html
 <div v-bind:id="recordid | formatfilter"></div>
@@ -2051,8 +2110,30 @@ v-bind 表达式：
 
 让我们创建一个自定义过滤器来反转数据。我们将在一个组件内部定义该过滤器。我们将创建一个新组件并将此过滤器添加到其中。
 
-```html
-{{ message | reverse }}
+```vue
+<template>
+  <div>{{ message | reverse }}</div>
+</template>
+
+<script>
+export default {
+  data() {
+    return {
+      message: 'Learn'
+    }
+  },
+  filters: {
+    reverse: function(value) {
+      value = value.toString();
+      var revString = "";
+      for (var i = 0; i <= value.length - 1; i++) {
+        revString = value.charAt(i) + revString;
+      }
+      return revString;
+    }
+  }
+}
+</script>
 ```
 
 我们使用了 `filters` 部分来定义过滤器方法。
@@ -2061,9 +2142,7 @@ v-bind 表达式：
 
 在上面的例子中，我们使用了 `message` 作为数据变量，并向其添加了一个固定字符串 “Learn”。在 `reverse` 过滤器中，我们反转了 `message` 数据。
 
-![](img/2c298ca86478005a0a21c9796cebbd15_57_0.png)
-
-图 6.6：应用于字符串的过滤器
+![图 6.4：应用于字符串的过滤器](img/2c298ca86478005a0a21c9796cebbd15_57_0.png)
 
 ### 过滤器中的多个参数
 
@@ -2071,19 +2150,32 @@ v-bind 表达式：
 
 为了了解多个参数如何工作，我们将创建另一个过滤器，将一个固定字符串附加到数据值。
 
-```html
-{{ message | append_string(" - It is actually fun.") }}
+```vue
+<template>
+  <div>{{ message | append_string(" - It is actually fun.") }}</div>
+</template>
+
+<script>
+export default {
+  data() {
+    return { message: 'Learn' }
+  },
+  filters: {
+    append_string: function(value, fixedString) {
+      return value + fixedString;
+    }
+  }
+}
+</script>
 ```
 
 在这个过滤器函数中，我们有两个参数 `value` 和 `fixedString`。我们可以注意到，在模板中，我们只传递了一个参数的值，即第二个参数。
 
 如上所述，数据值会自动设置为过滤器函数的第一个参数。因此，我们只需要传递第二个参数。
 
-![](img/2c298ca86478005a0a21c9796cebbd15_58_0.png)
+![图 6.5：在字符串过滤器上应用多个参数](img/2c298ca86478005a0a21c9796cebbd15_58_0.png)
 
 **Learn - It is actually fun.**
-
-图 6.7：在字符串过滤器上应用多个参数
 
 ### 过滤器链
 
@@ -2091,19 +2183,32 @@ v-bind 表达式：
 
 我们将使用上面的例子来反转数据，将反转后的数据首字母大写，并附加一个静态字符串。
 
-```html
-{{ message | reverse | capitalize | append_string(" - This string is reversed.") }}
+```vue
+<template>
+  <div>{{ message | reverse | capitalize | append_string(" - This string is reversed.") }}</div>
+</template>
+
+<script>
+export default {
+  data() {
+    return { message: 'Learn' }
+  },
+  filters: {
+    reverse: function(value) { /* ...反转逻辑... */ },
+    capitalize: function(value) { return value.charAt(0).toUpperCase() + value.slice(1); },
+    append_string: function(value, fixedString) { return value + fixedString; }
+  }
+}
+</script>
 ```
 
 我们定义了三个过滤器（`reverse`、`capitalize` 和 `append_string`）并在插值中使用。根据过滤器的顺序，`message` 是 `reverse` 过滤器的输入值。`reverse` 过滤器的结果将是 `capitalize` 过滤器的输入，而这个过滤器的结果将是 `append_string` 过滤器的输入。
 
 因此，它首先反转字符串。然后将反转后的字符串首字母大写。最后向反转并首字母大写的字符串添加一个固定字符串。
 
-![](img/2c298ca86478005a0a21c9796cebbd15_58_1.png)
+![图 6.6：应用于字符串的过滤器链](img/2c298ca86478005a0a21c9796cebbd15_58_1.png)
 
 **Nrael - This string is reversed.**
-
-图 6.8：应用于字符串的过滤器链
 
 ### 全局过滤器
 
@@ -2112,13 +2217,16 @@ v-bind 表达式：
 让我们全局创建相同的 `reverse` 过滤器，使其在整个应用程序中可访问。我们可以全局定义它。如果我们使用 Vue CLI，那么 `main.js` 是定义它的最佳位置之一。
 
 ```javascript
+// main.js
+import Vue from 'vue';
+
 Vue.filter('reverse', function(value) {
-    value = value.toString()
-    var revString = ""
-    for(var i=0; i<=value.length-1; i++){
-        revString = value.charAt(i) + revString
-    }
-    return revString
+  value = value.toString();
+  var revString = "";
+  for (var i = 0; i <= value.length - 1; i++) {
+    revString = value.charAt(i) + revString;
+  }
+  return revString;
 })
 ```
 
@@ -2135,30 +2243,19 @@ jQuery 是插件的一个很好的例子，此外，我们可以轻松地使用 
 编写插件并不困难。这是一个插件的框架。它只是一个带有 `install` 方法的 JavaScript 对象。
 
 ```javascript
-MyPlugin.install = (Vue, options) => {
-    // Plugin functionality.
-}
-```
-
-这个 `install` 方法接受两个参数 `Vue` 和 `options`。这些选项用于自定义插件的使用以适应特定需求。我们将逐步了解如何使用这些参数。
-
-让我们从一个简单的开始。通过 Vue CLI 创建一个项目后，在一个文件（例如 `myPlugin.js`）中添加以下代码。
-
-```javascript
+// plugins/myPlugin.js
 export default {
-    name: 'myPlugin',
-    install: function (Vue, options) {
-        console.log("Install started");
-        // 1. add global method or property
-        Vue.prototype.$myGlobalMethod = function () {
-            // some logic ...
-            console.log("Global Method called!");
-        }
+  name: 'myPlugin',
+  install: function (Vue, options) {
+    console.log("Install started");
+    // 1. add global method or property
+    Vue.prototype.$myGlobalMethod = function () {
+      // some logic ...
+      console.log("Global Method called!");
     }
+  }
 }
 ```
-
-
 
 如你所见，它有一个必须的 `install` 函数。当你在代码中引用这个插件时，它会调用这个 `install` 函数并执行其内部的所有内容。在我们的示例中，我们声明了一个名为 `$myGlobalMethod` 的原型方法，它只是向控制台输出日志。
 
@@ -2167,6 +2264,7 @@ export default {
 要将此插件添加到项目中，我们需要按如下方式更新 `main.js`：
 
 ```javascript
+// main.js
 import Vue from 'vue'
 import App from './App.vue'
 import MyPlugin from './plugins/myPlugin.js'
@@ -2184,47 +2282,61 @@ new Vue({
 
 下一步是使用这个插件做些事情。既然我们内部有一个全局方法，让我们尝试从一个按钮调用它。快速切换到 `App.vue` 并添加一个带有点击事件的按钮。
 
-当然，我们需要像以下这样定义 `invokePluginMethod`：
+```vue
+<!-- App.vue -->
+<template>
+  <div id="app">
+    <button @click="invokePluginMethod">Click Me</button>
+  </div>
+</template>
 
-```javascript
+<script>
 export default {
   name: 'app',
-  components: {
-    HelloWorld
-  },
   methods: {
     invokePluginMethod: function() {
       this.$myGlobalMethod()
     }
   }
 }
+</script>
 ```
+
+当然，我们需要像以下这样定义 `invokePluginMethod`：
 
 代码 `this.$myGlobalMethod()` 实际上调用了插件内部的方法。
 
 现在，让我们运行并看看会发生什么！
 
-![图 6.9：插件安装开始时的控制台结果](img/2c298ca86478005a0a21c9796cebbd15_61_0.png)
+![图 6.7：插件安装开始时的控制台结果](img/2c298ca86478005a0a21c9796cebbd15_61_0.png)
 
 我在底部打开了控制台。你可以看到消息 “Install started”。此消息是在 `myPlugin` 的 `install` 函数内部添加的。
 
 下一步是点击按钮 “Click Me”。一旦你这样做，你会在控制台上看到一条消息，内容为 “Global Method called!”。请查看以下截图：
 
-![图 6.10：插件全局方法调用的控制台结果](img/2c298ca86478005a0a21c9796cebbd15_61_1.png)
+![图 6.8：插件全局方法调用的控制台结果](img/2c298ca86478005a0a21c9796cebbd15_61_1.png)
 
 通常，插件是可配置的。如果你看声明，它在 `install` 方法中包含一个参数，我们可以像以下这样作为对象传递：
 
 ```javascript
+// main.js
 Vue.use(MyPlugin, { delaySeconds: 4 })
 ```
 
 这可以用来配置插件并相应地执行操作。假设，我们想使用这个值来延迟控制台日志。我们可以这样做：
 
 ```javascript
-Vue.prototype.$myGlobalMethod = function () {
-    setTimeout(() => {
+// plugins/myPlugin.js
+export default {
+  name: 'myPlugin',
+  install: function (Vue, options) {
+    console.log("Install started");
+    Vue.prototype.$myGlobalMethod = function () {
+      setTimeout(() => {
         console.log("Global Method called!");
-    }, options.delaySeconds * 1000);
+      }, options.delaySeconds * 1000);
+    }
+  }
 }
 ```
 
@@ -2243,14 +2355,15 @@ Vue.prototype.$myGlobalMethod = function () {
 基本上，结构将如下所示：
 
 ```javascript
+// plugins/ExpandSqueeze.js
 const ExpandSqueeze = {
-    install(Vue, options) {
-        Vue.directive('max-character-length', {
-            bind(el, binding, vnode, oldVnode) {
-                // 添加显示 “Read more...” 和 “Read less...” 的逻辑。
-            }
-        })
-    },
+  install(Vue, options) {
+    Vue.directive('max-character-length', {
+      bind(el, binding, vnode, oldVnode) {
+        // 添加显示 “Read more...” 和 “Read less...” 的逻辑。
+      }
+    })
+  },
 };
 
 export default ExpandSqueeze;
@@ -2281,13 +2394,13 @@ readLessLink.addEventListener('click', showLimitedText);
 
 ```javascript
 const showAllText = () => {
-    el.innerHTML = `${currentHTML} `;
-    el.appendChild(readLessLink);
+  el.innerHTML = `${currentHTML} `;
+  el.appendChild(readLessLink);
 }
 
 const showLimitedText = () => {
-    el.innerHTML = `${slicedHTML}... `;
-    el.appendChild(readMoreLink);
+  el.innerHTML = `${slicedHTML}... `;
+  el.appendChild(readMoreLink);
 }
 ```
 
@@ -2296,35 +2409,42 @@ const showLimitedText = () => {
 将它们组合在一起看起来如下所示：
 
 ```javascript
+// plugins/ExpandSqueeze.js
 const ExpandSqueeze = {
-    install(Vue, options) {
-        Vue.directive('max-character-length', {
-            bind(el, binding, vnode, oldVnode) {
-                const maxLimit = binding.value || 100;
-                const currentHTML = el.innerHTML;
-                const slicedHTML = currentHTML.slice(0, maxLimit);
-                const readMoreLink = document.createElement('a');
-                readMoreLink.innerHTML = 'Read more...';
-                readMoreLink.style.textDecoration = 'underline';
-                readMoreLink.style.cursor = 'pointer';
-                const readLessLink = document.createElement('a');
-                readLessLink.innerHTML = 'Read less...';
-                readLessLink.style.textDecoration = 'underline';
-                readLessLink.style.cursor = 'pointer';
-                const showAllText = () => {
-                    el.innerHTML = `${currentHTML} `;
-                    el.appendChild(readLessLink);
-                }
-                const showLimitedText = () => {
-                    el.innerHTML = `${slicedHTML}... `;
-                    el.appendChild(readMoreLink);
-                }
-                readMoreLink.addEventListener('click', showAllText);
-                readLessLink.addEventListener('click', showLimitedText);
-                showLimitedText();
-            }
-        })
-    },
+  install(Vue, options) {
+    Vue.directive('max-character-length', {
+      bind(el, binding, vnode, oldVnode) {
+        const maxLimit = binding.value || 100;
+        const currentHTML = el.innerHTML;
+        const slicedHTML = currentHTML.slice(0, maxLimit);
+        
+        const readMoreLink = document.createElement('a');
+        readMoreLink.innerHTML = 'Read more...';
+        readMoreLink.style.textDecoration = 'underline';
+        readMoreLink.style.cursor = 'pointer';
+        
+        const readLessLink = document.createElement('a');
+        readLessLink.innerHTML = 'Read less...';
+        readLessLink.style.textDecoration = 'underline';
+        readLessLink.style.cursor = 'pointer';
+        
+        const showAllText = () => {
+          el.innerHTML = `${currentHTML} `;
+          el.appendChild(readLessLink);
+        }
+        
+        const showLimitedText = () => {
+          el.innerHTML = `${slicedHTML}... `;
+          el.appendChild(readMoreLink);
+        }
+        
+        readMoreLink.addEventListener('click', showAllText);
+        readLessLink.addEventListener('click', showLimitedText);
+        
+        showLimitedText();
+      }
+    })
+  },
 };
 
 export default ExpandSqueeze;
@@ -2332,19 +2452,19 @@ export default ExpandSqueeze;
 
 最后，调用了 `showLimitedText`，以便我们看到有限的文本。以下截图证明了所述内容，它将文本限制为我在段落声明时提到的 70 个字符。
 
-![图 6.11：ExpandSqueeze 插件输出](img/2c298ca86478005a0a21c9796cebbd15_64_0.png)
+![图 6.9：ExpandSqueeze 插件输出](img/2c298ca86478005a0a21c9796cebbd15_64_0.png)
 
 当你点击 “Read more...” 时，它会显示所有文本并附加 “Read less...” 链接。
 
-![图 6.12：点击 Read more... 后的 ExpandSqueeze 插件输出](img/2c298ca86478005a0a21c9796cebbd15_64_1.png)
+![图 6.10：点击 Read more... 后的 ExpandSqueeze 插件输出](img/2c298ca86478005a0a21c9796cebbd15_64_1.png)
 
 在本章中，我们介绍了混入如何帮助定义公共逻辑并与组件合并。我们还学习了定义自定义指令以管理 UI 组件中的格式和显示的方法。此外，我们还学习了过滤器和插件。
 
 我们将学习使用状态管理开发单页网站的方法。我们将在下一章介绍状态管理。
 
-## 第 7 天
+# 第 7 天：单页应用
 
-# 单页应用
+## 单页应用
 
 在上一章中，我们探索了一些为我们的 Vue 应用构建可复用分布式功能的方法。
 
@@ -2359,6 +2479,7 @@ HTML5 History 模式将帮助我们为 SPA 创建路由，为用户动态地在�
 当然，我们将简要地看看这些状态管理技术之间的区别，以决定采用哪种。
 
 以下是我们将涵盖的主题：
+
 - 创建路由
 - 使用路由
 - 状态管理如何工作的基础
@@ -2370,52 +2491,67 @@ HTML5 History 模式将帮助我们为 SPA 创建路由，为用户动态地在�
 
 在单页应用中，路由是关键，因为你真的不希望页面为另一个请求而重新加载。传统应用的行为方式是，当你点击一个超链接时，它会去服务器并返回一个 HTML 页面。然而，在 SPA 中，页面只加载一次，当你通过页面上的操作（如点击链接或按钮）请求某些内容时，它会根据请求动态地更改内容以加载新的内容/页面。
 
-
-
 ### 创建路由
 
 由于 Vue 是基于组件的，让我们先为不同页面设计几个组件，如首页、关于和联系。
 
 **Home.vue**
 
-```
-# 这是首页！
+```vue
+<template>
+  <div># 这是首页！</div>
+</template>
 ```
 
 **Contact.vue**
 
-```
-# 这是联系页面！
+```vue
+<template>
+  <div># 这是联系页面！</div>
+</template>
 ```
 
 **About.vue**
 
-```
-# 这是关于页面！
+```vue
+<template>
+  <div># 这是关于页面！</div>
+</template>
 ```
 
-现在我们需要构建一种机制，将所有这些页面通过一种方法连接起来，这样我们就可以通过像 www.example.com/home、www.example.com/about、www.example.com/contact 这样的 URL 访问这些页面。
+现在我们需要构建一种机制，将所有这些页面通过一种方法连接起来，这样我们就可以通过像 `www.example.com/home`、`www.example.com/about`、`www.example.com/contact` 这样的 URL 访问这些页面。
 
 为此，让我们为所有页面定义一个路由对象。
 
-```
+```javascript
+// router/routes.js
 import Home from "./Home";
 import About from "./About";
 import Contact from "./Contact";
 
 const routes = {
-    "/": Home,
-    "/home": Home,
-    "/about": About,
-    "/contact": Contact
+  "/": Home,
+  "/home": Home,
+  "/about": About,
+  "/contact": Contact
 };
+
+export default routes;
 ```
 
 很简单，不是吗！基本上，我们是在请求将路由映射到各自的页面。请注意，我们将 `/` 和 `/home` 都分配给了 `Home.vue`，这是显而易见的。
 
 然而，这还不是全部。我们还没有对路由对象做任何事情。从逻辑上想，当一个特定页面（比如 `/about`）的请求到来时，我们需要以某种方式加载 `About.vue`。下面的代码就是为此，我们获取 `window.location.pathname` 并使用它从路由对象中检索组件名称。
 
-```
+```vue
+<!-- AppRouter.vue -->
+<template>
+  <component :is="routedComponent"></component>
+</template>
+
+<script>
+import routes from './router/routes';
+
 export default {
   data() {
     return { current: window.location.pathname };
@@ -2426,17 +2562,26 @@ export default {
     }
   }
 };
+</script>
 ```
 
 之后，我们需要一个模板来加载我们检索到的组件。为此，让我们使用 `:is` 指令和计算数据 `routedComponent` 添加以下代码。
 
 现在，将所有这些代码整合在一起，我们可以将它们保存在另一个名为 `AppRouter.vue` 的组件中。
 
-## 使用路由
+### 使用路由
 
 一切都准备就绪，只差 `App.vue` 来赋予这个 `AppRouter` 组件生命。在 `App.vue` 中添加以下代码。
 
-```
+```vue
+<!-- App.vue -->
+<template>
+  <div id="app">
+    <AppRouter></AppRouter>
+  </div>
+</template>
+
+<script>
 import AppRouter from "./components/AppRouter.vue";
 
 export default {
@@ -2444,39 +2589,45 @@ export default {
     AppRouter
   }
 };
+</script>
 ```
 
 注意：`App.vue` 位于根目录下，但上面讨论的所有其他组件都放在 "components" 文件夹中。
 
 让我们通过 `npm run serve` 命令运行应用程序，看看是否有效。
 
-![](img/2c298ca86478005a0a21c9796cebbd15_66_0.png)
+![图 7.1：简单路由示例初始状态](img/2c298ca86478005a0a21c9796cebbd15_66_0.png)
 
 有趣！没有输出。这是显而易见的，因为我们还没有在 `App.vue` 中包含 `AppRouter` 组件。
 
 现在再次运行它，它将显示以下输出！
 
-![](img/2c298ca86478005a0a21c9796cebbd15_67_0.png)
-
-图 7.2：简单路由示例
+![图 7.2：简单路由示例](img/2c298ca86478005a0a21c9796cebbd15_67_0.png)
 
 在这里我们可以看到图片中并排显示的四个输出。仔细看看这些 URL。`Localhost:8080` 和 `localhost:8080/home` 加载的是同一个页面 `Home.vue`。这正是我们在路由对象中声明的那样。`About` 和 `Contact` 组件也分别为 `localhost:8080/about` 和 `localhost:8080/contact` 加载。
 
 然而，在一个功能齐全的生产应用中，页面是相互链接的。也就是说，存在用于从一个页面导航到另一个页面的链接。如下所示：
 
-![](img/2c298ca86478005a0a21c9796cebbd15_67_1.png)
-
-图 7.3：带有导航链接的路由
+![图 7.3：带有导航链接的路由](img/2c298ca86478005a0a21c9796cebbd15_67_1.png)
 
 为此，我们可以在 `App.vue` 中添加一个包含路由的无序列表。
 
-- 首页
-- 关于
-- 联系
+```vue
+<!-- App.vue -->
+<template>
+  <div id="app">
+    <ul>
+      <li><a href="#" @click.prevent="loadPage('/')">首页</a></li>
+      <li><a href="#" @click.prevent="loadPage('/about')">关于</a></li>
+      <li><a href="#" @click.prevent="loadPage('/contact')">联系</a></li>
+    </ul>
+    <AppRouter></AppRouter>
+  </div>
+</template>
 
-这里的 `loadPage` 是一个方法，它会将路由加载到 `window.location` 中。
+<script>
+import AppRouter from "./components/AppRouter.vue";
 
-```
 export default {
   components: {
     AppRouter
@@ -2487,23 +2638,34 @@ export default {
     }
   }
 };
+</script>
 ```
+
+这里的 `loadPage` 是一个方法，它会将路由加载到 `window.location` 中。
 
 有了这段代码，我们可以看到上面的输出，每个页面上都有链接，这些链接会根据请求的 URL 加载特定的组件。
 
 到目前为止我们讨论的一切都适用于页面的常规加载，也就是说，当你点击链接时，页面会重新加载，内容会发生变化。然而，在 SPA 的情况下，页面会动态加载内容而无需重新加载。这正是我们将在下一个内容中学习的内容。
 
-## SPA 中的路由
+### SPA 中的路由
 
 通过对上面的代码进行一些更改，我们可以为单页应用实现路由。基本上，页面不应该重新加载。HTML5 History 模式将帮助我们管理页面历史。让我们开始吧。
 
 History API 有不同的方法可供我们使用。`pushState` 方法将替换 `window.location` 并且不会执行重新加载。让我们更新 `App.vue` 以实现 `pushState` 方法。
 
-```
-loadPage(route) {
-  //window.location = route;
-  history.pushState(null, null, route)
+```vue
+<!-- App.vue -->
+<script>
+import { push } from "./history";
+// ...
+methods: {
+  loadPage(route) {
+    // window.location = route;
+    // history.pushState(null, null, route)
+    push(route);
+  }
 }
+</script>
 ```
 
 现在让我们先不关注前两个参数。第三个参数是传递的路由。
@@ -2512,15 +2674,8 @@ loadPage(route) {
 
 首先添加 `push` 方法。
 
-```
-export const push = route => {
-  window.history.pushState(null, null, route);
-};
-```
-
-History 还需要监听路由的变化，为此，我们需要实现一个名为 `listen` 的方法，该方法将回调函数存储在一个 `listeners` 数组中。
-
-```
+```javascript
+// utils/history.js
 const listeners = [];
 
 export const push = route => {
@@ -2532,9 +2687,12 @@ export const listen = fn => {
 };
 ```
 
+History 还需要监听路由的变化，为此，我们需要实现一个名为 `listen` 的方法，该方法将回调函数存储在一个 `listeners` 数组中。
+
 现在，`push` 方法应该承担通知的责任，通过迭代 `listeners` 并调用回调函数，将路由作为参数传递。
 
-```
+```javascript
+// utils/history.js
 export const push = route => {
   const previousRoute = window.location.pathname;
   window.history.pushState(null, null, route);
@@ -2544,38 +2702,49 @@ export const push = route => {
 
 我们已经完成了 history 模块，让我们开始在 `App.vue` 中使用它。
 
-```
+```vue
+<!-- App.vue -->
+<script>
 import AppRouter from "./components/AppRouter.vue";
-import { push } from "./history";
+import { push } from "./utils/history";
+
 export default {
-  components: {
-    AppRouter
-  },
+  components: { AppRouter },
   methods: {
     loadPage(route) {
-      //window.location = route;
-      //history.pushState(null, null, route)
       push(route);
     }
   }
 };
+</script>
 ```
 
 我们现在不再直接使用 `history.pushState` 方法，而是直接调用位于 `history.js` 内的 `push` 方法。
 
 我们还有更多的工作要做。当我们在页面之间导航时，`AppRouter` 组件应该知道路由的变化。这是因为有一个 `this.current` 变量存储着当前路由。
 
-```
-// 其他代码在这里...
-import { listen } from "../history";
+```vue
+<!-- AppRouter.vue -->
+<script>
+import routes from './router/routes';
+import { listen } from "../utils/history";
+
 export default {
   created() {
     listen((route, previousRoute) => {
       this.current = route
     })
+  },
+  data() {
+    return { current: window.location.pathname };
+  },
+  computed: {
+    routedComponent() {
+      return routes[this.current];
+    }
   }
-  // 更多代码...
 };
+</script>
 ```
 
 在 `created` 钩子中调用 `listen` 方法是因为我们需要一次设置监听机制。这是因为下次为后续请求调用 `push` 时，其他一切都会自动工作。如果你看 `AppRouter` 内部的 `push` 方法，它实际上调用了注册到监听器数组中的方法。
@@ -2584,11 +2753,15 @@ export default {
 
 为了完成 SPA 路由，我们需要在 `AppRouter` 中添加另一小段代码，完整的代码如下所示：
 
-```
+```vue
+<!-- AppRouter.vue -->
+<script>
+import routes from './router/routes';
+import { listen } from "../utils/history";
+
 export default {
   created() {
     listen((route, previousRoute) => {
-      debugger;
       this.current = route
     });
     window.addEventListener(
@@ -2605,6 +2778,7 @@ export default {
     }
   }
 };
+</script>
 ```
 
 因此，当我们点击浏览器的后退和前进按钮时，会调用 `popstate` 方法，从而设置 `this.current` 的值。
@@ -2617,13 +2791,25 @@ export default {
 
 让我们通过一个逐步示例来了解如何在 Vue JS 应用程序中管理数据状态。
 
+### 数组组件示例
 
+一个示例的 `ArrayComponent` 可能如下所示。
 
-数组组件示例
+```vue
+<template>
+  <div>数字是 {{ numberArray }}！</div>
+</template>
 
-一个示例的 ArrayComponent 可能如下所示。
-
-## 数字是 {{ numberArray }}！
+<script>
+export default {
+  data() {
+    return {
+      numberArray: [1, 2, 3]
+    }
+  }
+}
+</script>
+```
 
 `data` 函数负责使 Vue 应用具有响应式。因此，如果某个数据属性正在被使用，那么对该属性的任何更改都将触发视图的重新渲染。
 
@@ -2635,45 +2821,131 @@ export default {
 
 首先，让我们尝试使用 props 将数据从一个组件传递到另一个组件。
 
-![](img/2c298ca86478005a0a21c9796cebbd15_71_0.png)
-
-图 7.4：使用 Props 进行父子组件通信的图示
+![图 7.4：使用 Props 进行父子组件通信的图示](img/2c298ca86478005a0a21c9796cebbd15_71_0.png)
 
 一个父组件可能如下：
 
-这里需要注意的重要事项是我们试图通过何种方式将数据传递给 ChildComponent。让我们看看 ChildComponent 的代码。
+```vue
+<!-- ParentComponent.vue -->
+<template>
+  <div>
+    <ChildComponent :number-array="numberArray"></ChildComponent>
+  </div>
+</template>
 
-## 数字是 {{ numberArray }}！
+<script>
+import ChildComponent from './ChildComponent.vue';
+export default {
+  components: { ChildComponent },
+  data() {
+    return {
+      numberArray: [10, 20, 30]
+    }
+  }
+}
+</script>
+```
 
-为了接收该属性，我们在 ChildComponent 中将其声明为一个数组，并在模板中渲染它。输出结果如下所示。
+这里需要注意的重要事项是我们试图通过何种方式将数据传递给 `ChildComponent`。让我们看看 `ChildComponent` 的代码。
 
-![](img/2c298ca86478005a0a21c9796cebbd15_72_0.png)
+```vue
+<!-- ChildComponent.vue -->
+<template>
+  <div>数字是 {{ numberArray }}！</div>
+</template>
 
-图 7.5：使用 Props 进行父子组件通信的输出结果
+<script>
+export default {
+  props: {
+    numberArray: {
+      type: Array,
+      required: true
+    }
+  }
+}
+</script>
+```
+
+为了接收该属性，我们在 `ChildComponent` 中将其声明为一个数组，并在模板中渲染它。输出结果如下所示。
+
+![图 7.5：使用 Props 进行父子组件通信的输出结果](img/2c298ca86478005a0a21c9796cebbd15_72_0.png)
 
 ### 使用自定义事件进行子组件到父组件的数据更新
 
 既然我们已经完成了从父到子的传递，现在让我们尝试反向操作：从子组件到父组件。Props 在这里是不可用的，因为它是单向的方式。Vue 自定义事件拯救了我们，它允许我们通知父组件数组发生了变化。
 
-![](img/2c298ca86478005a0a21c9796cebbd15_72_1.png)
-
-图 7.6：使用 Props 和自定义事件进行父子组件通信的图示
+![图 7.6：使用 Props 和自定义事件进行父子组件通信的图示](img/2c298ca86478005a0a21c9796cebbd15_72_1.png)
 
 从子组件向数组添加一个数字是我们可以快速尝试的事情。
 
-## 数字是 {{ numberArray }}！
+```vue
+<!-- ChildComponent.vue -->
+<template>
+  <div>
+    <div>数字是 {{ numberArray }}！</div>
+    <input v-model="number" type="number" placeholder="输入数字">
+    <button @click="addNumber">添加新数字</button>
+  </div>
+</template>
 
-添加新数字
+<script>
+export default {
+  props: {
+    numberArray: {
+      type: Array,
+      required: true
+    }
+  },
+  data() {
+    return {
+      number: 0
+    }
+  },
+  methods: {
+    addNumber() {
+      this.$emit('add-number', Number(this.number));
+    }
+  }
+}
+</script>
+```
 
 这里有一个文本框，它将捕获的输入绑定到 `number` 数据属性。
 
 注意这个按钮，它有一个点击事件，该事件会触发 `add-number` 自定义事件，并携带从上方文本框捕获的数字值（通过 `Number()` 转换为数字类型）。我们需要在父组件上为这个自定义事件设置一个监听器，这样我们才能将输入的数字添加到 `numberArray` 中。
 
+```vue
+<!-- ParentComponent.vue -->
+<template>
+  <div>
+    <ChildComponent 
+      :number-array="numberArray" 
+      @add-number="addNumberToArray"
+    ></ChildComponent>
+  </div>
+</template>
+
+<script>
+import ChildComponent from './ChildComponent.vue';
+export default {
+  components: { ChildComponent },
+  data() {
+    return {
+      numberArray: [10, 20, 30]
+    }
+  },
+  methods: {
+    addNumberToArray(number) {
+      this.numberArray.push(number);
+    }
+  }
+}
+</script>
+```
+
 你可以看到监听器将数字推入了数组。请参考下面的截图。
 
-![](img/2c298ca86478005a0a21c9796cebbd15_72_2.png)
-
-图 7.7：使用 Props 和自定义事件进行父子组件通信的输出结果
+![图 7.7：使用 Props 和自定义事件进行父子组件通信的输出结果](img/2c298ca86478005a0a21c9796cebbd15_72_2.png)
 
 至此，我们已经探索完了使用属性和自定义事件在父子组件之间进行通信的两种技术。但是，两个子组件之间如何通信呢？这是我们将要学习的下一个内容。
 
@@ -2681,16 +2953,18 @@ export default {
 
 有几种方法可以用于管理独立组件之间的状态。
 
--   EventBus
--   全局 Store
--   Vuex
--   EventBus
+- EventBus
+- 全局 Store
+- Vuex
+
+#### EventBus
 
 EventBus 有助于实现发布-订阅模式。借助 EventBus，我们可以轻松地在组件之间进行自定义事件通信。虽然我们了解到独立组件之间无法通过自定义事件通信，但是 EventBus 是一种全局性的通信管理器。让我们开始吧。
 
 添加一个名为 `event-bus.js` 的 JS 文件，其中包含以下实例化代码。
 
-```js
+```javascript
+// utils/event-bus.js
 import Vue from 'vue';
 
 export const EventBus = new Vue();
@@ -2698,43 +2972,85 @@ export const EventBus = new Vue();
 
 现在我们需要添加两个新的独立组件，一个可以向数组添加数字，另一个则用于显示结果。
 
-AddNumber.vue 的内容如下所示：
+`AddNumber.vue` 的内容如下所示：
 
-![](img/2c298ca86478005a0a21c9796cebbd15_73_0.png)
+```vue
+<!-- AddNumber.vue -->
+<template>
+  <div>
+    <input v-model="number" type="number">
+    <button @click="addNumber">Add Number</button>
+  </div>
+</template>
+
+<script>
+import { EventBus } from '../utils/event-bus';
+
+export default {
+  data() {
+    return { number: 0 }
+  },
+  methods: {
+    addNumber() {
+      EventBus.$emit('add-number', this.number);
+    }
+  }
+}
+</script>
+```
 
 基本上，我们添加了一个 `addNumber()` 方法，它使用 EventBus 实例触发 `add-number` 事件，并携带与文本框绑定的 `number` 数据。
 
 现在，只需监听由 EventBus 触发的 `add-number` 事件即可。让我们添加用于显示数字的组件。
 
-## {{ numbers }}
+```vue
+<!-- ShowNumbers.vue -->
+<template>
+  <div>
+    <h1>{{ numbers }}</h1>
+  </div>
+</template>
 
-注意监听器 `eventBus.$on("add-number", number => {...});`，它负责监听添加数字的触发事件。
+<script>
+import { EventBus } from '../utils/event-bus';
+
+export default {
+  data() {
+    return { numbers: [] }
+  },
+  created() {
+    EventBus.$on('add-number', (number) => {
+      this.numbers.push(number);
+    });
+  }
+}
+</script>
+```
+
+注意监听器 `EventBus.$on("add-number", number => {...});`，它负责监听添加数字的触发事件。
 
 当你将 `AddNumber.vue` 和 `ShowNumbers.vue` 这两个组件都包含在 `App.vue` 中，并在模板中实现它们时，效果将如下所示。
 
 因此，基本操作可以用以下图示来展示。
 
-![](img/2c298ca86478005a0a21c9796cebbd15_74_0.png)
-
-图 7.8：使用 EventBus 进行子组件间通信的图示
+![图 7.8：使用 EventBus 进行子组件间通信的图示](img/2c298ca86478005a0a21c9796cebbd15_74_0.png)
 
 现在运行应用程序，在浏览器中查看效果。
 
-![](img/2c298ca86478005a0a21c9796cebbd15_74_1.png)
-
-图 7.9：通过 EventBus 进行子组件交互的输出结果
+![图 7.9：通过 EventBus 进行子组件交互的输出结果](img/2c298ca86478005a0a21c9796cebbd15_74_1.png)
 
 根据我们的示例，EventBus 似乎非常容易设置和在应用程序中实现。然而，它也带来了一些在一个包含大量组件的生产就绪应用中不容忽视的缺点。
 
 它无法满足期望的原因在于通过 EventBus 触发事件的方式。随着应用程序的增长和更多组件的添加，跟踪触发的事件变得困难，因此这种技术的维护将成为一大难题。
 
-## 全局 Store
+#### 全局 Store
 
 这是一种非常常见且显而易见的应用数据处理模式。该技术涉及创建一个 store，用于存储所需数据以及管理应用状态的方法。
 
 让我们添加一个名为 `store.js` 的 store。
 
-```js
+```javascript
+// store/store.js
 export const store = {
   state: {
     numberArray: [500, 250, 390]
@@ -2748,6 +3064,7 @@ export const store = {
 这个 store 在 `state` 对象中包含了 `numberArray`，以及一个 `addNumber` 方法，该方法将新数字推入 `state.numberArray`。现在我们需要在将添加和显示数组的组件中使用这个 store。
 
 ```vue
+<!-- AddNumber.vue -->
 <template>
   <div>
     <input v-model="newNumber" type="number">
@@ -2756,13 +3073,11 @@ export const store = {
 </template>
 
 <script>
-import { store } from './store';
+import { store } from '../store/store';
 
 export default {
   data() {
-    return {
-      newNumber: 0
-    };
+    return { newNumber: 0 }
   },
   methods: {
     addNumber() {
@@ -2778,6 +3093,7 @@ export default {
 同样地，让我们添加显示组件。
 
 ```vue
+<!-- ShowNumbers.vue -->
 <template>
   <div>
     <h1>{{ storeState.numberArray }}</h1>
@@ -2785,7 +3101,7 @@ export default {
 </template>
 
 <script>
-import { store } from './store';
+import { store } from '../store/store';
 
 export default {
   computed: {
@@ -2799,116 +3115,34 @@ export default {
 
 我们只是显示了来自 store 对象的 `numberArray`。由于 Vue 的响应式特性，它运行得非常出色！当 `numberArray` 更新时，使用它的其他组件会自动更新。下面是输出结果。
 
-![](img/2c298ca86478005a0a21c9796cebbd15_75_0.png)
-
-图 7.10：通过全局 Store 进行独立组件交互的输出结果
+![图 7.10：通过全局 Store 进行独立组件交互的输出结果](img/2c298ca86478005a0a21c9796cebbd15_75_0.png)
 
 以下是图示表示。
 
-![](img/2c298ca86478005a0a21c9796cebbd15_75_1.png)
-
-图 7.11：通过全局 Store 进行独立组件交互的图示
+![图 7.11：通过全局 Store 进行独立组件交互的图示](img/2c298ca86478005a0a21c9796cebbd15_75_1.png)
 
 在继续之前，有几点需要注意。
 
-AddNumber：通过调用 store 方法直接更新数据。这可以被标记为 **Store Action**（存储操作）。
-
-Store 内部的方法：改变数据状态，这可以定义为 **Store Mutation**（存储变更）。
-
-ShowNumbers：只是获取 store 数据并显示，这可以表示为一个 **Store Getter**（存储获取器）。
+- **AddNumber**：通过调用 store 方法直接更新数据。这可以被标记为 **Store Action**（存储操作）。
+- **Store 内部的方法**：改变数据状态，这可以定义为 **Store Mutation**（存储变更）。
+- **ShowNumbers**：只是获取 store 数据并显示，这可以表示为一个 **Store Getter**（存储获取器）。
 
 因此，整个流程可以描述为：一个 Action 触发一个 Mutation。然后 Mutation 改变数据状态，进而影响视图和组件，因为 Getters 用于从 Store 中检索数据。
 
 我们讨论上述内容的原因是因为我们将在下一节中使用它们。
 
-### Vuex
+#### Vuex
 
 我们上面讨论的任何内容都类似于 Flux 风格的架构来管理状态。Vuex 实际上是一个类似 Flux 的状态管理库，用于状态管理。
 
-![](img/2c298ca86478005a0a21c9796cebbd15_76_0.png)
+![图 7.12：Vuex 的图示](img/2c298ca86478005a0a21c9796cebbd15_76_0.png)
 
-图 7.12：Vuex 的图示
+注意：Facebook 引入了 Flux，它实际上是一种设计模式。这种设计模式支持四个部分之间的单向数据管道，这四个部分分别命名为 Action、Dispatcher、Store 和 View。
 
-注意：Facebook 引入了 Flux，它实际上是一种设计模式。这种设计模式支持四个部分之间的单向数据管道，这四个部分分别命名为 Action、Dispatcher、Store 和 View。图示表示如下：
+让我们开始使用 Vuex 创建 store（`store.js`）。
 
-让我们开始使用 Vuex 创建 store（store.js）。
-
-```js
-export default new Vuex.Store({
-  state,
-  mutations,
-  actions,
-  getters
-});
-```
-
-如果你还记得上一节的要点，Vuex 使用了类似的结构。让我们逐一定义。
-
-State 不过是将在应用内共享的数据容器。
-
-```js
-const state = {
-  numberArray: [9090, 2090, 3087]
-};
-```
-
-接下来是 Mutations，负责直接变更 store 的状态。
-
-```js
-const mutations = {
-  ADD_NUMBER(state, payload) {
-    state.numberArray.push(payload);
-  }
-};
-```
-
-Mutations 可以通过第一个参数访问 state。参数 `payload` 是可选的。
-
-注意：Mutations 的命名约定遵循全大写规则，以便与应用中的其他方法区分开来。
-
-现在是 Actions，它们的存在是为了调用这些 mutations。
-
-```js
-const actions = {
-```
-
-
-
-addNumber(context, number) {
-  context.commit("ADD_NUMBER", number);
-}
-};
-```
-
-这里的 context 对象赋予了我们访问 store 其他属性（如 state 和 getters）的能力。这对于 Actions 中的业务逻辑非常重要。此处的 commit 函数有助于调用关联的 mutation，并将 "number" 作为 payload（载荷）传递。
-
-最后但同样重要的是 Getters，它们帮助我们从 state 中检索数据。
-
-```
-const getters = {
-  getNumbers(state) {
-    return state.numberArray;
-  }
-};
-```
-
-要使用所有这些 Vuex 功能，我们需要在顶部编写几行代码。
-
-```
-import Vue from "vue";
-import Vuex from "vuex";
-Vue.use(Vuex);
-```
-
-然而，这不会起作用，因为我们的应用中还没有这个包。为此，请运行以下命令。
-
-```
-npm install vuex --save
-```
-
-将所有部分组合在一起，store.js 将如下所示：
-
-```
+```javascript
+// store/index.js
 import Vue from "vue";
 import Vuex from "vuex";
 
@@ -2931,52 +3165,95 @@ const actions = {
 };
 
 const getters = {
-    getNumbers(state) {
-        return state.numberArray;
-    }
+  getNumbers(state) {
+    return state.numberArray;
+  }
 };
 
 export default new Vuex.Store({
-    state,
-    mutations,
-    actions,
-    getters
+  state,
+  mutations,
+  actions,
+  getters
 });
 ```
 
-Store 已经准备好了，但最后一步是告诉 Vue 我们有一个 store。更新你的 main.js 代码，在 Vue 对象声明中包含 store。
+如果你还记得上一节的要点，Vuex 使用了类似的结构。让我们逐一定义。
 
+State 不过是将在应用内共享的数据容器。
+
+接下来是 Mutations，负责直接变更 store 的状态。
+
+Mutations 可以通过第一个参数访问 state。参数 `payload` 是可选的。
+
+注意：Mutations 的命名约定遵循全大写规则，以便与应用中的其他方法区分开来。
+
+现在是 Actions，它们的存在是为了调用这些 mutations。
+
+这里的 `context` 对象赋予了我们访问 store 其他属性（如 state 和 getters）的能力。这对于 Actions 中的业务逻辑非常重要。此处的 `commit` 函数有助于调用关联的 mutation，并将 `number` 作为 payload（载荷）传递。
+
+最后但同样重要的是 Getters，它们帮助我们从 state 中检索数据。
+
+要使用所有这些 Vuex 功能，我们需要在顶部编写几行代码。
+
+然而，这不会起作用，因为我们的应用中还没有这个包。为此，请运行以下命令。
+
+```bash
+npm install vuex --save
 ```
+
+将所有部分组合在一起，`store.js` 将如下所示：
+
+Store 已经准备好了，但最后一步是告诉 Vue 我们有一个 store。更新你的 `main.js` 代码，在 Vue 对象声明中包含 store。
+
+```javascript
+// main.js
+import Vue from 'vue';
+import App from './App.vue';
+import store from './store';
+
 new Vue({
-    render: h => h(App),
-    store
+  render: h => h(App),
+  store
 }).$mount('#app')
 ```
 
 为了使用 store，我们可以添加能够读取或修改数据的组件。在组件中，你可以使用一个简单的计算属性，借助 getters 从 store 中读取数据。
 
-```
-getNumbers() {
-    return this.$store.getters.getNumbers;
+```vue
+<!-- 任意组件 -->
+<template>
+  <div># {{ getNumbers }}</div>
+</template>
+
+<script>
+export default {
+  computed: {
+    getNumbers() {
+      return this.$store.getters.getNumbers;
+    }
+  }
 }
-```
-
-组件整体看起来像这样：
-
-```
-# {{ getNumbers }}
+</script>
 ```
 
 让我向你展示可以添加到任何组件中的方法，该方法可以修改 store 中的数据。
 
-```
-methods: {
+```vue
+<script>
+export default {
+  methods: {
     addNumber(number) {
-        this.$store.dispatch("addNumber", Number(number));
+      this.$store.dispatch("addNumber", Number(number));
     }
+  }
 }
+</script>
 ```
-可以在按钮点击时调用此方法，使用 $store.dispatch 将一个数字添加到数组中。让我们快速查看一下浏览器上的输出。
+
+
+
+可以在按钮点击时调用此方法，使用 `$store.dispatch` 将一个数字添加到数组中。让我们快速查看一下浏览器上的输出。
 
 ![](img/2c298ca86478005a0a21c9796cebbd15_79_0.png)
 
@@ -2991,7 +3268,7 @@ Vuex 为我们提供了处理应用中数据状态的简单接口。通过 Actio
 
 图 7.14：Vue 开发工具中的 Vuex
 
-当你点击“Add new Number”时，它会向数组添加数据并显示，包括 Dev Tool（开发工具）内的一个 ADDNUMBER 行。它还可以向你显示 payload 和 mutation 类型，分别显示为 1212 和 ADDNUMBER。
+当你点击“Add new Number”时，它会向数组添加数据并显示，包括 Dev Tool（开发工具）内的一个 `ADDNUMBER` 行。它还可以向你显示 payload 和 mutation 类型，分别显示为 1212 和 `ADDNUMBER`。
 有趣的是，它还向你显示 state 和 getters 中的所有数据以供参考。此外，它还有一个选项可以通过点击 mutation 行上的一个图标来撤销此 mutation 并将状态恢复到之前的状态。让我在下面向你展示那个图标。
 
 ![](img/2c298ca86478005a0a21c9796cebbd15_79_2.png)
@@ -3016,7 +3293,7 @@ EventBus 非常容易设置和使用，但缺点是几乎没有可能的方法�
 
 在 Vue 应用中管理状态最有效的方式。也与 Vue 开发工具集成。然而，你需要对 Flux 架构有一点了解。
 
-请记住，Vuex 并不是唯一可以在 Vue 应用中管理状态的库。还有其他库可以完成这项工作，例如 redux-vue ( https://github.com/nadimtuhin/redux-vue ) 和 vuejs-redux ( https://github.com/titouancreach/vuejs-redux ) 。
+请记住，Vuex 并不是唯一可以在 Vue 应用中管理状态的库。还有其他库可以完成这项工作，例如 `redux-vue` ( https://github.com/nadimtuhin/redux-vue ) 和 `vuejs-redux` ( https://github.com/titouancreach/vuejs-redux ) 。
 
 ![](img/2c298ca86478005a0a21c9796cebbd15_80_0.png)
 
@@ -3044,15 +3321,15 @@ EventBus 为我们提供了一种方便的方式来实现自定义事件的发�
 
 ### 与模板有何不同
 
-与用 HTML 编写的模板不同，它主要是 Javascript。我们需要使用 Javascript 将 HTML 元素添加到 DOM 中。我们使用 render 钩子来定义和渲染 HTML 元素。
+与用 HTML 编写的模板不同，它主要是 Javascript。我们需要使用 Javascript 将 HTML 元素添加到 DOM 中。我们使用 `render` 钩子来定义和渲染 HTML 元素。
 
-元素是使用 Javascript 的 createElement 函数创建的。
+元素是使用 Javascript 的 `createElement` 函数创建的。
 
-让我们定义一个模板
+#### 让我们定义一个模板
 
-让我们使用 render 方法定义一个模板。我们将创建一个简单的 span 来在屏幕上显示文本。
+让我们使用 `render` 方法定义一个模板。我们将创建一个简单的 span 来在屏幕上显示文本。
 
-在这个例子中，我们使用了 createElement 方法在 DOM 中创建元素。它接受树结构中的元素。可以看到，我们定义了 a 作为父元素。在内部，我们放置了一个标签，然后在里面放置了一个。文本放在内部。渲染时，它将相应地渲染元素。
+在这个例子中，我们使用了 `createElement` 方法在 DOM 中创建元素。它接受树结构中的元素。可以看到，我们定义了 a 作为父元素。在内部，我们放置了一个标签，然后在里面放置了一个。文本放在内部。渲染时，它将相应地渲染元素。
 
 ![](img/2c298ca86478005a0a21c9796cebbd15_81_0.png)
 
@@ -3062,25 +3339,22 @@ EventBus 为我们提供了一种方便的方式来实现自定义事件的发�
 
 它接受以下参数：
 
-
-
-## createElement方法
+#### createElement 方法
 
 ```javascript
 // @returns {VNode}
+
 createElement(
   // {String | Object | Function}
   // 一个HTML标签名称、组件选项，或解析为其中一种的异步
   // 函数。必需。
   'div',
-
   // {Object}
   // 一个数据对象，对应于你将在模板中使用的
   // 属性。可选。
   {
     // （详情请参阅下一节）
   },
-
   // {String | Array}
   // 子VNode节点，使用`createElement()`构建，
   // 或使用字符串来获得'text VNode'。可选。
@@ -3096,17 +3370,17 @@ createElement(
 )
 ```
 
-图8.2：createElement方法接受的参数
+图 8.2：createElement 方法接受的参数
 
-## 添加多个元素
+#### 添加多个元素
 
-我们可以通过使用createElement方法来添加多个元素。我们将通过将元素添加到上述示例中来继续扩展它。
+我们可以通过使用 `createElement` 方法来添加多个元素。我们将通过将元素添加到上述示例中来继续扩展它。
 
-在包含“Hello vuejs”文本的元素中，我们为其添加了样式。它使用style标签作为参数。同时，我们可以在标签中注意到，我们在attrs标签下定义了HTML属性，如href。我们还可以注意到，组件的prop也可以使用span添加到元素中。
+在包含“Hello vuejs”文本的元素中，我们为其添加了样式。它使用 style 标签作为参数。同时，我们可以在标签中注意到，我们在 attrs 标签下定义了 HTML 属性，如 href。我们还可以注意到，组件的 prop 也可以使用 span 添加到元素中。
 
-为了渲染插槽，我们使用了`this.$slots.default`来获取插槽值，并将其放置在span标签内。
+为了渲染插槽，我们使用了 `this.$slots.default` 来获取插槽值，并将其放置在 span 标签内。
 
-类似地，我们还可以使用class、props、on、directives、slots等标签，分别为元素添加CSS类、组件属性、事件、指令、插槽等。
+类似地，我们还可以使用 class、props、on、directives、slots 等标签，分别为元素添加 CSS 类、组件属性、事件、指令、插槽等。
 
 ![](img/2c298ca86478005a0a21c9796cebbd15_83_0.png)
 
@@ -3114,89 +3388,92 @@ createElement(
 Hello world
 Hello vuejs
 Hello Learner
-
 # Welcome to Your Vue.js App
 Test the slot
 ```
 
-图8.3：使用渲染函数的UI
+图 8.3：使用渲染函数的 UI
 
-以下是显示树结构createElement方法输出的结果。
+以下是显示树结构 `createElement` 方法输出的结果。
 
 ## JSX
 
-它实际上是Javascript Expressions的缩写。这种在Javascript中以XML风格表示编写代码的方法是由Facebook工程团队发明的。这种方法主要在ReactJS中使用。Vue也支持JSX。我们可以用它来创建组件模板。
+它实际上是 Javascript Expressions 的缩写。这种在 Javascript 中以 XML 风格表示编写代码的方法是由 Facebook 工程团队发明的。这种方法主要在 ReactJS 中使用。Vue 也支持 JSX。我们可以用它来创建组件模板。
 
-它比渲染函数更具可读性和可维护性。这些是Javascript函数内部的类XML标签式书写。
+它比渲染函数更具可读性和可维护性。这些是 Javascript 函数内部的类 XML 标签式书写。
 
-> 要编译Vue JSX代码，我们需要添加babel插件以在Vue中使用JSX。
+> 要编译 Vue JSX 代码，我们需要添加 babel 插件以在 Vue 中使用 JSX。
 
-## 使用JSX的组件
+### 使用 JSX 的组件
 
-我们将使用JSX创建一个示例组件，以在屏幕上显示一条简单消息。
+我们将使用 JSX 创建一个示例组件，以在屏幕上显示一条简单消息。
 
 正如我们在上面的代码片段中看到的，我们使用了相同的渲染函数来创建模板。标签被添加并从渲染函数返回到视图。
 
-> 将**createElement**别名为**h**是Vue生态系统中常见的约定，并且是JSX所必需的。从Babel插件的**3.4.0版本**开始，我们会在任何使用ES2015语法声明的、包含JSX的方法和getter（不是函数或箭头函数）中自动注入`const h = this.$createElement`，因此你可以省略**(h)**参数。在插件的早期版本中，如果**h**在作用域中不可用，你的应用将会抛出错误。
+> 将 `createElement` 别名为 `h` 是 Vue 生态系统中常见的约定，并且是 JSX 所必需的。从 Babel 插件的 **3.4.0 版本** 开始，我们会在任何使用 ES2015 语法声明的、包含 JSX 的方法和 getter（不是函数或箭头函数）中自动注入 `const h = this.$createElement`，因此你可以省略 `(h)` 参数。在插件的早期版本中，如果 `h` 在作用域中不可用，你的应用将会抛出错误。
 
-图8.4：根据官方文档，createElement被h替代
+图 8.4：根据官方文档，createElement 被 h 替代
 
 它通常会在屏幕上显示该字符串。
 
-### Hello from JSX
+#### Hello from JSX
 
 ![](img/2c298ca86478005a0a21c9796cebbd15_84_0.png)
 
-图8.5：使用JSX渲染的HTML
+图 8.5：使用 JSX 渲染的 HTML
 
 在控制台窗口中，我们可以标记脚本中定义的元素和字符串的层次结构。
 
-### 显示Props
+#### 显示 Props
 
-作为组件，我们可以在其中定义props。props是从父组件获取值的属性。如果我们查看代码片段，可以注意到文本显示格式的差异。这里我们使用`{}`（单花括号）来在屏幕上渲染文本，而不是mustache表示法。
+作为组件，我们可以在其中定义 props。props 是从父组件获取值的属性。如果我们查看代码片段，可以注意到文本显示格式的差异。这里我们使用 `{}`（单花括号）来在屏幕上渲染文本，而不是 mustache 表示法。
 
 让我们扩展当前示例，并将组件添加到其中。这里，我们将导入本章中已经创建的组件。
 
-我们在此导入了HelloWorld组件，并将其添加到页面中。
+我们在此导入了 HelloWorld 组件，并将其添加到页面中。
 
 ![](img/2c298ca86478005a0a21c9796cebbd15_84_1.png)
 
-图8.6：使用JSX渲染组件UI
+图 8.6：使用 JSX 渲染组件 UI
 
-我们可以将其与插槽、格式化器等一起使用，这超出了本主题的范围。我们已经介绍了如何使用JSX以及它如何与Vue一起工作。
+我们可以将其与插槽、格式化器等一起使用，这超出了本主题的范围。我们已经介绍了如何使用 JSX 以及它如何与 Vue 一起工作。
 
-## 比较Vue
+## 比较 Vue
 
-Vue是一个基于Javascript构建的渐进式Javascript框架。它使用虚拟DOM来更新元素并在浏览器中渲染它们。像Vue一样，还有其他几个非常相似的框架。它们也可以像Vue一样工作。很多时候，在为应用程序开发选择框架时，我们需要做出决定。因此，为了选择，我们需要对它们进行比较。我们将Vue与一些流行的框架进行比较。
+Vue 是一个基于 Javascript 构建的渐进式 Javascript 框架。它使用虚拟 DOM 来更新元素并在浏览器中渲染它们。像 Vue 一样，还有其他几个非常相似的框架。它们也可以像 Vue 一样工作。很多时候，在为应用程序开发选择框架时，我们需要做出决定。因此，为了选择，我们需要对它们进行比较。我们将 Vue 与一些流行的框架进行比较。
 
-## React vs Vue
+### React vs Vue
 
-React也是用于应用程序开发的最受欢迎的Javascript框架之一。像Vue一样，它也使用虚拟DOM来更新和渲染浏览器中的元素。React也具有类似于Vue的基于组件的开发能力。
+React 也是用于应用程序开发的最受欢迎的 Javascript 框架之一。像 Vue 一样，它也使用虚拟 DOM 来更新和渲染浏览器中的元素。React 也具有类似于 Vue 的基于组件的开发能力。
 
-## 组件模板设计
-## 组件树渲染
-## CSS文件结构
-## 数据变更
+#### 组件模板设计
 
-这两个框架在语法和语义上还有更多差异。变量的处理、事件的处理、子/父组件的处理等等，在React和Vue之间都有所不同。但它们大多存在于编码语法中，我们无法一一涵盖。我们已经涵盖了上面大多数基本概念差异。
+#### 组件树渲染
 
-## Angular vs Vue
+#### CSS 文件结构
 
-以前且广为人知的Angular 2（编写本书时的当前版本为6）在此被称为Angular。它与AngularJS完全不同。我们将在这里将Angular与Vue进行比较。
+#### 数据变更
 
-## 学习曲线
-## 性能
+这两个框架在语法和语义上还有更多差异。变量的处理、事件的处理、子/父组件的处理等等，在 React 和 Vue 之间都有所不同。但它们大多存在于编码语法中，我们无法一一涵盖。我们已经涵盖了上面大多数基本概念差异。
 
-在性能方面，Angular和Vue看起来非常相似。Angular主要使用即时（AOT）编译来显著减小最终输出大小。然而，Vue也产生较小的大小。
+### Angular vs Vue
 
-## 概念差异
+以前且广为人知的 Angular 2（编写本书时的当前版本为 6）在此被称为 Angular。它与 AngularJS 完全不同。我们将在这里将 Angular 与 Vue 进行比较。
 
-Javascript框架不仅限于以上几种。我们只对流行的框架进行了比较。由于上述比较主要以开发者为中心，它将帮助开发者在启动任何项目时，在选择一项技术而非另一项技术时做出大多正确的决定。
+#### 学习曲线
+
+#### 性能
+
+在性能方面，Angular 和 Vue 看起来非常相似。Angular 主要使用即时（AOT）编译来显著减小最终输出大小。然而，Vue 也产生较小的大小。
+
+#### 概念差异
+
+Javascript 框架不仅限于以上几种。我们只对流行的框架进行了比较。由于上述比较主要以开发者为中心，它将帮助开发者在启动任何项目时，在选择一项技术而非另一项技术时做出大多正确的决定。
 
 ![](img/2c298ca86478005a0a21c9796cebbd15_85_0.png)
 
-在本章中，我们涵盖了设计Vue模板的替代方法。我们只涵盖了其中的基础部分。我们还看到了几个框架与VueJs的比较。
+在本章中，我们涵盖了设计 Vue 模板的替代方法。我们只涵盖了其中的基础部分。我们还看到了几个框架与 VueJs 的比较。
 
-当我们说，我们即将结束此学习时，我们的意思是，读者必须对Vue作为一个框架如何工作有一个概念。从生命周期钩子到组件，这将为使用VueJS框架提供一个不错的概念。我们还学习了创建可重用元素（如组件、插件、过滤器、指令等）的非常有用的方法。状态管理示例也将帮助开发者可视化应用程序设计方式。
+当我们说，我们即将结束此学习时，我们的意思是，读者必须对 Vue 作为一个框架如何工作有一个概念。从生命周期钩子到组件，这将为使用 VueJS 框架提供一个不错的概念。我们还学习了创建可重用元素（如组件、插件、过滤器、指令等）的非常有用的方法。状态管理示例也将帮助开发者可视化应用程序设计方式。
 
 当然，在单本书中涵盖关于框架的所有内容和所有知识是不可能的。本书将为开发人员在实际工作环境中提供快速参考。

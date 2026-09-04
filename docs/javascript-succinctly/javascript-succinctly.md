@@ -1,85 +1,37 @@
+
 # JavaScript 入门指南
-
-
-
-
-
-
-
-
-
 
 序言：Daniel Jebaraj
 
-
-
-
-
-
-
-
-
-
-
 编辑：
+
 本书由 Jay Natarajan 编辑，他为 Syncfusion, Inc. 的高级产品经理。
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-- 利用作用域链绕过嵌套函数................................................................97
-
-- 作用域链（即词法作用域）。.........................................104
-- 作用域由函数定义决定，而非调用................................106
-
-- 原型属性的概念概述...............................108
-- 默认原型属性是一个 Object() 对象.........................................110
-- 从构造函数创建的实例与构造函数的原型属性相连................................................................................................110
-- 原型链的终点是 Object.prototype..............................111
-- 原型链返回在链中找到的第一个匹配项....112
-- 用新对象替换原型属性将移除默认构造函数属性...........................................................................................113
-- 从原型继承属性的实例将始终获得最新值 ............ 114
-- 用新对象替换原型属性不会更新旧实例.................. 115
-- 用户定义的构造函数可以利用与原生构造函数相同的原型继承................................................ 116
-- 创建继承链（原始意图） ................................................................ 117
-
-- 在数组中添加和更新值.................................................. 121
-
-
-
+- 利用作用域链绕过嵌套函数
+- 作用域链（即词法作用域）
+- 作用域由函数定义决定，而非调用
+- 原型属性的概念概述
+- 默认原型属性是一个 `Object()` 对象
+- 从构造函数创建的实例与构造函数的原型属性相连
+- 原型链的终点是 `Object.prototype`
+- 原型链返回在链中找到的第一个匹配项
+- 用新对象替换原型属性将移除默认构造函数属性
+- 从原型继承属性的实例将始终获得最新值
+- 用新对象替换原型属性不会更新旧实例
+- 用户定义的构造函数可以利用与原生构造函数相同的原型继承
+- 创建继承链（原始意图）
+- 在数组中添加和更新值
 
 Daniel Jebaraj, Syncfusion, Inc. 副总裁
 
 ### 保持在前沿
+
 正如你们许多人所知，Syncfusion 是 Microsoft 平台软件组件的供应商。这使我们处于一个既兴奋又充满挑战的位置，即始终处于前沿。
 
 每当平台或工具从 Microsoft 发布时（如今似乎几乎每隔一周就有一次），我们都必须快速地自我教育。
 
 ### 信息虽丰富，但难以消化
+
 在现实中，这意味着大量的书籍订单、博客搜索和 Twitter 扫描。
 
 虽然信息在互联网上变得随手可得，出版的书籍也越来越多（即使是针对较新颖的话题），但一个持续阻碍我们的方面是无法找到简洁的科技概览类书籍。
@@ -87,6 +39,7 @@ Daniel Jebaraj, Syncfusion, Inc. 副总裁
 我们通常面临两种选择：阅读 500 页以上的厚书，或者在网络上搜索相关的博客文章和其他文章。和其他每一位有工作要做、有客户要服务的一样，我们发现这非常令人沮丧。
 
 ### Succinctly 系列
+
 这种挫败感转化为一种强烈的渴望，即编写一系列简洁的技术书籍，目标读者是在 Microsoft 平台上工作的开发者。
 
 我们深信，考虑到开发者所拥有的背景知识，大多数主题都可以编写成 50 到 100 页之间的书籍。
@@ -94,26 +47,26 @@ Daniel Jebaraj, Syncfusion, Inc. 副总裁
 这正是我们决定通过 *Succinctly* 系列实现的目标。难道不是所有美好的事物都源于对改善现状的深切愿望吗？
 
 ### 最优秀的作者，最好的内容
+
 每一位作者都是从才华横溢的专家库中精心挑选出来的，他们共享我们的愿景。你手中的这本书以及该系列中的其他书籍，都是作者们不懈努力的成果。你将发现，这些原创内容保证你在喝几杯咖啡的时间内就能上手。
 
 ### 永久免费
+
 Syncfusion 将致力于制作多个主题的书籍。这些书籍将永远免费。我们发布的任何更新也是免费的。
 
 ### 免费？有什么猫腻？
+
 这里没有猫腻。Syncfusion 在这项工作中有切身利益。
 
 作为组件供应商，我们的独特主张一直是提供比市场上任何其他对手都更深入、更广泛的框架。开发者教育极大地帮助我们营销并竞争那些承诺“一键支持 AJAX”或“把月亮变成奶酪”的竞争对手。
 
 ### 让我们知道你的想法
-如果你有任何感兴趣的主题、想法或反馈，请随时通过 succinctly-series@syncfusion.com 与我们联系。
+
+如果你有任何感兴趣的主题、想法或反馈，请随时通过 `succinctly-series@syncfusion.com` 与我们联系。
 
 我们衷心希望你喜欢这本书，并且它能帮助你更好地理解学习主题。感谢阅读。
 
 请在 Twitter 上关注我们并在 Facebook 上“点赞”我们，帮助我们推广 *Succinctly* 系列！
-
-
-
-
 
 # 关于作者
 
@@ -132,11 +85,6 @@ Cody Lindley 是一位客户端工程师（又称前端开发人员）以及一�
 首先，我必须承认，我写这本书是为了我自己。老实说，我制作这些材料是为了让自己能够“自饮其果”，并永远记住它的味道。对于他人，我希望有一份用自己语言编写的参考，以便需要时唤起记忆：
 
 - 库导致了“黑盒”症，这在某些方面可能有益，但在另一些方面有害。事情可能完成得快速且高效，但你不知道为什么或如何做到。当出现问题或性能成为问题时，“如何做”变得非常重要。事实上，任何在构建 Web 应用（或只是一个良好的注册页面）时打算实现 JavaScript 库或框架的人，都应该查看内部并理解引擎。这本书是为那些想要打开引擎盖并亲手操作 JavaScript 本身的人编写的。
-
-- 库导致了“黑盒”症，这在某些方面可能有益，但在另一些方面有害。事情可能完成得快速且高效，但你不知道为什么或如何做到。当出现问题或性能成为问题时，“如何做”变得非常重要。事实上，任何在构建 Web 应用（或只是一个良好的注册页面）时打算实现 JavaScript 库或框架的人，都应该查看内部并理解引擎。这本书是为那些想要打开引擎盖并亲手操作 JavaScript 本身的人编写的。
-
-
-
 
 # 第1章 JavaScript 对象
 
@@ -157,7 +105,8 @@ Cody Lindley 是一位客户端工程师（又称前端开发人员）以及一�
 然而，JavaScript 并不使用表格进行交流。它使用对象，而对象与 "cody" 表格中包含的部分相似。将 cody 表格翻译成真正的 JavaScript 对象看起来如下：
 
 ```html
-<!DOCTYPE html><html><body>// 创建 cody 对象
+<!DOCTYPE html><html><body><script>
+// 创建 cody 对象
 var cody = new Object();
 // 然后用属性填充 cody 对象（使用点表示法）
 cody.living = true;
@@ -226,9 +175,6 @@ console.log(myString); // 输出 foo {="f", 1="o", 2="o"}
 
 你可能会觉得以对象形式看到字符串值 'foo' 很奇怪，因为通常字符串被表示为原始值。
 
-
-
-
 默认情况下返回一个对象（即 `this`）而不是值 `false`。从函数返回的新对象被认为是构建它的构造函数的实例。
 
 再次考虑 `Person()` 构造函数，这次请仔细阅读以下代码示例中的注释，因为它们强调了 `new` 关键字的作用。
@@ -236,7 +182,7 @@ console.log(myString); // 输出 foo {="f", 1="o", 2="o"}
 示例：sample06.html
 
 ```html
-<!DOCTYPE html lang="en"><<body><script>
+<!DOCTYPE html lang="en"><body><script>
 
 /* Person 是一个构造函数。它的编写意图是
 与 new 关键字一起使用。 */
@@ -259,7 +205,7 @@ console.log(typeof cody); // 打印 object。
 console.log(cody); // 打印 cody 的内部属性和值。
 console.log(cody.constructor); // 打印 Person() 函数。
 }
-</script></body></</html>
+</script></body></html>
 ```
 
 sample06.html 代码利用了用户定义的构造函数（即 `Person()`）来创建 `cody` 对象。这与下面的代码中 `Array()` 构造函数创建 `Array()` 对象（例如 `new Array()`）没有区别。
@@ -267,7 +213,7 @@ sample06.html 代码利用了用户定义的构造函数（即 `Person()`）来�
 示例：sample07.html
 
 ```html
-<!DOCTYPE html lang="en"><<body><script>
+<!DOCTYPE html lang="en"><body><script>
 
     // 实例化一个名为 myArray 的 Array 对象。
     var myArray = new Array(); // myArray 是 Array 的实例。
@@ -279,7 +225,7 @@ object。
     console.log(myArray); // 打印 []
 
     console.log(myArray.constructor); // 打印 Array()
-</script></body></</html>
+</script></body></html>
 ```
 
 在 JavaScript 中，大多数值（排除原始值）都涉及从构造函数创建或实例化对象。从构造函数返回的对象被称为实例。请确保你熟悉这些语义，以及利用构造函数来生成对象的模式。
@@ -290,15 +236,15 @@ JavaScript 语言包含九种原生（或内置）对象构造函数。这些对
 
 JavaScript 随带的原生对象构造函数有：
 
-- Number()
-- String()
-- Boolean()
-- Object()
-- Array()
-- Function()
-- Date()
-- RegExp()
-- Error()
+- `Number()`
+- `String()`
+- `Boolean()`
+- `Object()`
+- `Array()`
+- `Function()`
+- `Date()`
+- `RegExp()`
+- `Error()`
 
 JavaScript 的大部分内容是由这九个对象以及字符串、数字和 Boolean 值构建而成的。详细了解这些对象是充分利用 JavaScript 独特的编程能力和语言灵活性的关键。
 
@@ -333,7 +279,7 @@ console.log(code); // 打印 Object {living=true, age=33, gender="male"}
 var lisa = new Person(true, 34, 'female');
 console.log(lisa); // 打印 Object {living=true, age=34, gender="female"}
 
-</script></body></</html>
+</script></body></html>
 ```
 
 你可以看到，使用唯一的参数并调用 `Person()` 构造函数，你可以轻松创建各种唯一的数字对象。当你需要两个或三个具有相同属性但不同值的对象时，这非常有用。想起来，这就是 JavaScript 处理原生对象的方式。`Person()` 构造函数遵循与 `Array` 构造函数相同的模式。因此，`new Array('foo', 'bar')` 与 `new Person(true, 33, 'male')` 并没有区别。创建你自己的构造函数只是在使用 JavaScript 自身用于原生构造函数时的相同模式。
@@ -357,7 +303,7 @@ sample09.html
 var myString = new String('foo');
 
 console.log(myString); // 打印 foo {0 = "f", 1 = "o", 2 = "o"}
-</script></body></</html>
+</script></body></html>
 ```
 
 在这个片段中，我们创建了一个 `String()` 构造函数实例的新对象。同样，我们在 JavaScript 中表示了一个字符串值。
@@ -374,7 +320,7 @@ sample10.html
 <!DOCTYPE html><html lang="en"><body><script>
 
 // 使用 new 为每个原生构造函数实例化一个实例
-</script></body></</html>
+</script></body></html>
 ```
 
 ```javascript
@@ -402,8 +348,8 @@ console.log(myRegExp.constructor); // Logs RegExp
 console.log(myError.constructor); // Logs Error
 ```
 
-```javascript
-</script></</body>></html>
+```html
+<script></body></html>
 ```
 
 通过使用 `new` 运算符，我们告诉 JavaScript 解释器我们想要一个作为相应构造函数实例的对象。例如，在代码示例中，`Date` 构造函数被用于创建日期对象。`Date` 构造函数就像一个日期的饼具模，它根据 `Date()` 构造函数定义的默认模式生成日期对象。
@@ -463,7 +409,7 @@ console.log(myRegExp.constructor, myRegExpLiteral.constructor);
 
 ## 注意事项
 
-在使用字面量用于 `String()`、`Number()` 和 `Boolean()` 时，在这些值被视为对象之前，永远不会创建实际的对象。换句话说，在你尝试使用或检索与构造函数相关的属性之前，你处理的是原始数据类型（例如 `var charactersFoo = 'foo'.length`）。当这种情况发生时，JavaScript 会在后台为该字面量值创建一个包装对象，允许该值被视为对象。然后，在调用方法之后，JavaScript 会丢弃包装对象，值返回字面量类型。这就是为什么字符串、数字和布尔值被认为是原始（或简单）数据类型。这澄清了“JavaScript 中的一切都是对象”的这一误解，正确的概念是“JavaScript 中的一切都可以像对象一样工作**”。
+在使用字面量用于 `String()`、`Number()` 和 `Boolean()` 时，在这些值被视为对象之前，永远不会创建实际的对象。换句话说，在你尝试使用或检索与构造函数相关的属性之前，你处理的是原始数据类型（例如 `var charactersFoo = 'foo'.length`）。当这种情况发生时，JavaScript 会在后台为该字面量值创建一个包装对象，允许该值被视为对象。然后，在调用方法之后，JavaScript 会丢弃包装对象，值返回字面量类型。这就是为什么字符串、数字和布尔值被认为是原始（或简单）数据类型。这澄清了“JavaScript 中的一切都是对象”的这一误解，正确的概念是“JavaScript 中的一切都可以像对象一样工作”。
 
 ## 原始（又称简单）值
 
@@ -510,10 +456,6 @@ console.log(myArray);
 ## 原始值 `null`、`undefined`、`"string"`、`10`、`true` 和 `false` 不是对象
 
 `null` 和 `undefined` 值是平凡的值，不需要构造函数，也不需要使用 `new` 运算符来建立为 JavaScript 值。要使用 `null` 或 `undefined`，你只需要像使用运算符一样使用它们即可。
-
-
-
-
 
 ```javascript
 var myString = new String('male');
@@ -621,181 +563,6 @@ console.log(price4 === price3); // 打印 false：price4 现在是基本值的�
 ```html
 <!DOCTYPE html><html lang="en"><body><script>
 
-// 生成基本值。
-var myList = null;
-var undefined = undefined;
-var primitiveString1 = "foo";
-var primitiveString2 = String('foo'); // 没有使用 new，所以我们得到了基本值。
-var primitiveNumber1 = 10;
-var primitiveNumber2 = Number('10');
-var primitiveBoolean1 = true;
-var primitiveBoolean2 = Boolean(true);
-var primitiveNull1 = null;
-var primitiveNull2 = null;
-var primitiveUndefined1 = undefined;
-var primitiveUndefined2 = undefined;
-
-// 当基本值被用作由构造函数创建的对象来使用时，JavaScript 会将其转换为对象以响应当前的表达式，然后丢弃对象的属性并将其变回基本值。在下面的代码中，我取了基本值并展示了当值被视为对象时会发生什么。
-
-// 生成基本值
-var myList = null;
-var undefined = undefined;
-var primitiveString1 = "foo";
-var primitiveString2 = String('foo'); // 没有使用 new，所以我们得到了基本值。
-var primitiveNumber1 = 10;
-var primitiveNumber2 = Number('10');
-var primitiveBoolean1 = true;
-var primitiveBoolean2 = Boolean(true);
-var primitiveNull1 = null;
-var primitiveNull2 = null;
-var primitiveUndefined1 = undefined;
-var primitiveUndefined2 = undefined;
-
-// 当基本值被用作由构造函数创建的对象来使用时，JavaScript 会将其转换为对象以响应当前的表达式，然后丢弃对象的属性并将其变回基本值。在下面的代码中，我取了基本值并展示了当值被视为对象时会发生什么。
-
-// 生成基本值
-var myList = null;
-var undefined = undefined;
-var primitiveString1 = "foo";
-var primitiveString2 = String('foo'); // 没有使用 new，所以我们得到了基本值。
-var primitiveNumber1 = 10;
-var primitiveNumber2 = Number('10');
-var primitiveBoolean1 = true;
-var primitiveBoolean2 = Boolean(true);
-var primitiveNull1 = null;
-var primitiveNull2 = null;
-var primitiveUndefined1 = undefined;
-var primitiveUndefined2 = undefined;
-
-// 当基本值被用作由构造函数创建的对象来使用时，JavaScript 会将其转换为对象以响应当前的表达式，然后丢弃对象的属性并将其变回基本值。在下面的代码中，我取了基本值并展示了当值被视为对象时会发生什么。
-
-// 生成基本值
-var myList = null;
-var undefined = undefined;
-var primitiveString1 = "foo";
-var primitiveString2 = String('foo'); // 没有使用 new，所以我们得到了基本值。
-var primitiveNumber1 = 10;
-var primitiveNumber2 = Number('10');
-var primitiveBoolean1 = true;
-var primitiveBoolean2 = Boolean(true);
-var primitiveNull1 = null;
-var primitiveNull2 = null;
-var primitiveUndefined1 = undefined;
-var primitiveUndefined2 = undefined;
-
-// (注：由于原文中存在大量重复段落，翻译已按逻辑合并并保持结构一致)
-```
-
-*(注：由于提供的原文中存在大量重复的段落和代码，作为高级文档工程师，我在翻译时确保了逻辑的连贯性，并遵循了指令“不要重复输出原文”的原则。以下是针对原文核心逻辑内容的完整翻译：)*
-
-[content]
-
-```javascript
-var myString = new String('male');
-var myBoolean = new Boolean(false);
-var myObject = new Object();
-var myArray = new Array('foo', 'bar');
-var myFunction = new Function('x', 'y', 'return x * y');
-var myDate = new Date();
-var myExp = new RegExp('[a-z]+\\b');
-var myError = new Error('Darn!');
-```
-
-```javascript
-// 打印 object object object object function object function
-console.log(
-  type myNumber,
-  type myString,
-  type myBoolean,
-  type myObject,
-  type myArray,
-  type myFunction, // 注意 typeof 对所有对象返回 function。
-  type myDate,
-  type myRegExp, // 注意 typeof 对 RegExp 返回 function
-  type myError
-);
-```
-
-```html
-<script></body></html>
-```
-
-我希望从上面的代码示例中学习到的是：基本值不是对象。基本值之所以特殊，是因为它们被用来表示简单的值。
-
-## 基本值在 JavaScript 中如何存储/复制
-
-理解基本值是按“面值”存储和操作的极其重要的。这听起来可能很简单，但这意味着如果我在一个名为 `myString` 的变量中存储字符串 "foo"，那么值 "foo" 就字面地存储在内存中。为什么这很重要？一旦你开始操作（例如复制）值，你就必须具备这种知识，因为基本值是按字面复制的。
-
-在接下来的示例中，我们将 `myString` 的值（'foo'）存储在变量 `myStringCopy` 中，它的值被字面地复制了。即使我们更改了原始值，由 `myStringCopy` 引用的复制值也保持不变。
-
-示例：sample14.html
-
-```html
-<!DOCTYPE html><html lang="en"><body><script>
-var myString = 'foo' // 创建一个基本字符串对象。
-var myStringCopy = myString; // 将其值复制到新变量中。
-var myString = null; // 修改存储在 myString 变量中的值。
-```
-
-```javascript
-/* myString 的原始值已复制到 myStringCopy 中。这通过更新 myString 的值然后检查 myCopy 的值得到了确认。*/
-
-console.log(myString, myStringCopy); // 打印 'null foo'
-```
-
-```html
-<script></body></html>
-```
-
-要掌握的概念是，基本值是作为不可约的值进行存储和操作的。通过它们的值来引用它们。在示例中，我们将 `myString` 值复制（或克隆）到变量 `myStringCopy`。当我们更新 `myString` 的值时，`myStringCopy` 的值仍然拥有旧 `myString` 的副本。
-
-## 基本值是按值相等的
-
-基本值可以进行比较，以查看它们的值是否在字面上是相同的。正如逻辑所暗示的那样，如果你比较一个包含数字值 10 的变量与另一个包含数字值 10 的变量，JavaScript 将认为它们是相等的，10 等于 10（即 10）。同样，如果你比较基本字符串 'foo' 和另一个值为 'foo' 的基本字符串，情况也是一样的。比较结果将根据它们的值说明它们之间是互为相等的（即 'foo' === 'foo'）。
-
-在接下来的代码中，我使用基本数字演示了“按值相等”，并与复杂的数字对象进行了对比。
-
-示例：sample15.html
-
-```html
-<!DOCTYPE html><html lang="en"><body><script>
-
-var price1 = 10;
-var price2 = 10;
-var price3 = new Number('10'); // 一个复杂的数字对象，因为我们使用了它。
-var price4 = price3;
-
-console.log(price1 === price2); // 打印 true。
-
-/* 打印 false是因为 price3 包含一个复杂的数字对象而 price1 是一个基本值。 */
-console.log(price1 === price3);
-
-// 打印 true是因为复杂值是按引用相等，而不是按值。
-console.log(price4 === price3);
-
-// 如果我们更新 price4 变量包含一个基本值怎么办？
-price4 = 10;
-```
-
-```javascript
-console.log(price4 === price3); // 打印 false：price4 现在是基本值的而不是复杂的。
-```
-
-```html
-<script></body></html>
-```
-
-这里要掌握的概念是，基本值在比较时，将检查所表达的值是否相等。当使用 `new` 关键字创建字符串、数字或布尔值（例如 `new Number('10')`）时，它不再是基本值了。因此，比较结果与通过字面量语法创建的值并不相同。这并不意外，因为基本值是按值存储的（即 10 === 10 为真），而复杂值是按引用存储的（即 price3 和 price4 是否包含同一个引用）。
-
-## 字符串、数字和基本值在像对象一样使用时表现得像对象
-
-当基本值被用作由构造函数创建的对象来使用时，JavaScript 会将其转换为对象以响应当前的表达式，然后丢弃对象的属性并将其变回基本值。在下面的代码中，我取了基本值并展示了当值被视为对象时会发生什么。
-
-示例：sample16.html
-
-```html
-<!DOCTYPE html><html lang="en"><body><script>
-
 // 生成基本值
 var myList = null;
 var undefined = undefined;
@@ -812,10 +579,6 @@ var primitiveUndefined2 = undefined;
 
 // 当基本值被用作由构造函数创建的对象来使用时，JavaScript 会将其转换为对象以响应当前的表达式，然后丢弃对象的属性并将其变回基本值。在下面的代码中，我取了基本值并展示了当值被视为对象时会发生什么。
 ```
-
-
-
-
 
 这里需要记住的观点是：当你改变一个复杂值时——因为它是通过引用存储的——你改变了所有引用该复杂值的变量中所存储的值。在我们的代码中，当你更新任意一个变量中存储的对象时，`myObject` 和 `copyOfOfObject` 都会发生变化。
 
@@ -878,7 +641,7 @@ console.log(objA.property, pointer1.property, pointer2.property);
 
 ## 用于原始值和复杂值的 typeof 运算符
 
-`typeof字体 运算符可以用于返回你正在处理的值的类型。但它返回的值并不完全一致，或者不像某些人所说的。以下代码展示了使用 `typeof` 运算符返回的值。
+`typeof` 运算符可以用于返回你正在处理的值的类型。但它返回的值并不完全一致，或者不像某些人所说的。以下代码展示了使用 `typeof` 运算符返回的值。
 
 示例：sample21.html
 
@@ -896,7 +659,6 @@ var primitiveBoolean2 = Boolean('true');
 
 console.log(typeof myNull); // 输出 object? 什么？注意点……
 console.log(typeof myUndefined); // 输出 undefined。
-</script></body></html>
 ```
 
 ```javascript
@@ -994,7 +756,6 @@ myError.constructor === Error
 </script></body></html>
 ```
 
-
 ```
 ););</script></body></html>
 ```
@@ -1036,17 +797,21 @@ Sample:26.html
 ```
 
 // 用户定义的对象构造函数。
+
 var CustomConstructor = function () { this.foo = 'bar'; };
 
 // 实例化 CustomConstructor。
+
 var instanceOfCustomObject = new CustomConstructor();
 
 console.log(instanceOfCustomObject instanceof CustomConstructor); // 打印 true.
 
 // 与原生对象的工作原理相同。
+
 console.log(new Array('foo') instanceof Array); // 打印 true.
 
 </script></body></html>
+
 ```
 
 ## Notes
@@ -1064,14 +829,17 @@ console.log(new Array('foo') instanceof Array); // 打印 true.
 Sample: sample27.html
 
 ```
+
 <!DOCTYPE html><html lang="en"><body><script>
 
 var myArray = new Array();
+
 myArray.prop = 'test';
 
 console.log(myArray.prop) // 打印 'test'.
 
 </script></body></html>
+
 ```
 
 这可以通过 `Object()`、`RegExp()` 或任何其他非原始构造函数实现——甚至可以是 `Boolean()`。
@@ -1079,39 +847,63 @@ console.log(myArray.prop) // 打印 'test'.
 **Sample:** sample28.html
 
 ```
+
 <!DOCTYPE html><html lang="en"><body><script>
+
 // 这可以使用任何实际上产生对象的原生构造函数完成。
+
 var myString = new String();
+
 var myNumber = new Number();
+
 var myBoolean = new Boolean(true);
+
 var myObject = new Object();
+
 varArray = new Array();
+
 var myFunction = new Function('return 2+2');
+
 var myRegExp = new RegExp('\b[a-z]+\b');
 
 myString.prop = 'test';
+
 myNumber.prop = 'test';
+
 myBoolean.prop = 'test';
+
 myObject.prop = 'test';
+
 myArray.prop = 'test';
+
 myFunction.prop = 'test';
+
 myRegExp.prop = 'test';
 
 // 打印 'test', 'test', 'test', 'test', 'test', 'test', 'test'.
+
 console.log(myString.prop,myNumber.prop,myBoolean.prop,myObject.prop,myArray.prop,myFunction.prop,myRegExp.prop);
 
 // 注意：实例属性对原始/字面量值不起。
+
 var myString = 'string';
+
 var myNumber = 1;
+
 var myBoolean = true;
 
 myString.prop = true;
+
 myNumber.prop = true;
+
 myBoolean.prop = true;
 
 // 打印 undefined, undefined, undefined.
+
 console.log(myString.prop,myNumber.prop,myBoolean.prop);
+
 </script></body></html>
+
 ```
 
 向从构造函数创建的对象添加属性有时会发生。记住，从构造函数创建的对象实例只是普通的对象。
@@ -1128,7 +920,7 @@ console.log(myString.prop,myNumber.prop,myBoolean.prop);
 
 你需要记住的是，`Object()` 对象是一种非常特定的值。它是一个通用的空对象。不要将其与用于指代大多数在 JavaScript 中可以表示为对象的值的“JavaScript 对象”术语混淆。
 
-## 第 2 章处理对象和属性
+# 第 2 章 处理对象和属性
 
 ## 复杂对象可以包含 JavaScript 的大部分内容
 
@@ -1137,23 +929,35 @@ console.log(myString.prop,myNumber.prop,myBoolean.prop);
 Sample: sample30.html
 
 ```
+
 <!DOCTYPE html><html lang="en"><body><script>
 
 // 使用对象进行封装创建对象链。
+
 var object1 = {
+
   object1_1: {
+
     object1_1_1: {foo: 'bar'},
+
     object1_1_2: {},
+
   },
+
   object1_2: {
+
     object1_2_1: {},
+
     object1_2_2: {},
+
   }
+
 };
 
 console.log(object1.object1_1.object1_1.foo); // 打印 'bar'
 
 </script></body></html>
+
 ```
 
 这里学习的简单概念是，复杂对象可以包含——或引用 JavaScript 中名上可以表示的任何内容。当你看到这种操作时不要惊讶，因为所有的原生对象都是可以被变的。这甚至适用于对象形式的 `String()`、`Number()` 和 `Boolean()` 值——即当它们使用 `new` 运算符创建时。
@@ -1162,34 +966,44 @@ console.log(object1.object1_1.object1_1.foo); // 打印 'bar'
 
 同样的事情也可以通过 `Array()` 对象（即多维数组）或 `Function()` 对象完成。
 
-
-
-
-
 ## 示例：sample3.html
 
 ```
+
 <!DOCTYPE html><html lang="en"><body><script>
 
 // 使用数组进行封装会创建一个多维数组链。
+
 var myArray = [[[]]]; // 一个空数组嵌套在一个空数组内，再嵌套在一个。
 
 /* 这是一个使用函数进行封装的示例：一个空函数内部嵌套另一个空函数。 */
+
 var myFunction = function () {
+
   // 空函数。
+
   var myFunction = function () {
+
     // 空函数。
+
     var myFunction = function () {
+
       // 空函数。
+
     }
+
   };
+
 };
 
 // 我们也可以进行疯狂天乱的混合和搭配。
+
 var foo = [{ foo: [{ bar: say: function () return 'hi'; }]];
+
 console.log(foo[0].foo[0].bar(say())); // 打印 'hi'。
 
 </script></body></html>
+
 ```
 
 这里掌握的核心概念是：某些复杂对象的设计是为了以一种程序有利的方式封装其他对象。
@@ -1203,39 +1017,59 @@ console.log(foo[0].foo[0].bar(say())); // 打印 'hi'。
 示例：sample2.html
 
 ```
+
 <!DOCTYPE html><html lang="en"><body><script>
 
 // 创建一个 cody() 对象。
+
 var cody = new Object();
 
 // 设置属性。
+
 cody.living = true;
+
 cody.age = 33;
+
 cody.gender = 'male';
+
 ```
 
 ```
+
 cody.getGender = function () { return cody.gender; };
 
 // 获取属性。
+
 console.log(
+
 cody.living,
+
 cody.age,
+
 cody.gender,
+
 cody.getGender()
+
 );// 打印 'true 33 male male'。
 
 // 更新属性，与设置完全一样。
+
 cody.living = false;
+
 cody.age = 99;
+
 cody.gender = 'female';
+
 cody.getGender = function () { return 'Gender = ' + cody.gender; };
+
 ```
 
 console.log(cody);
 
 ```
+
 <script></body></html>
+
 ```
 
 点表示法是获取、设置或更新对象属性最常用的表示法。除非需要，否则括号符号并不常用。在下面的示例中，我将上一个示例中的点表示法替换为括号符号。对象名后跟一个左括号，括号内是带引号的属性名，然后是右括号：
@@ -1243,36 +1077,55 @@ console.log(cody);
 示例：33.html
 
 ```
+
 <!DOCTYPE html><html>lang="en"><body><script>
 
 // 创建一个 cody Object() 对象。
+
 var cody = new Object();
 
 // 设置属性。
+
 cody['living'] = true;
+
 cody['age'] = 33;
+
 cody['gender'] = 'male';
+
 cody['getGender'] = function () { return cody.gender; };
 
 // 获取属性。
+
 console.log(
+
 cody['living'],
+
 cody['age'],
+
 cody['gender'],
+
 cody['getGender']() // 直接在末尾加上函数调用即可！
+
 );// 打印 'true 33 male male'。
 
 // 更新属性，与设置非常相似。
+
 cody['living'] = false;
+
 cody['age'] = 99;
+
 ```
 
 ```
+
 cody['gender'] = 'female';
+
 cody['getGender'] = function () { return 'Gender = ' + cody.gender; };
+
 console.log(cody);
 
 <script></body></html>
+
 ```
 
 当你需要访问属性键，而你必须处理的是一个包含代表属性名的字符串值的变量时，括号符号会非常有用。在下一个示例中，我演示了使用括号符号访问属性 `foobar` 较于点表示法的优势。通过使用两个变量并连接后，得到了 `foobarObject` 中包含的属性字符串版本。
@@ -1280,16 +1133,19 @@ console.log(cody);
 示例： sample34.html
 
 ```
+
 <!DOCTYPE html><html lang="en"><body><script>
 
 var foobarObject = { foobar: 'Foobar is code for no code' };
 
 var string1 = 'foo';
+
 var string2 = 'bar';
 
 console.log(foobarObject[string1 + string2]); // 看看点表示法如何做到这一点！
 
 <script></body></html>
+
 ```
 
 此外，括号符号在获取不是有效的 JavaScript 标识符的属性名时非常方便用。在下面的代码中，我使用数字和保留关键字作为属性名（作为字符串是有效的），只有括号符号可以访问。
@@ -1297,25 +1153,23 @@ console.log(foobarObject[string1 + string2]); // 看看点表示法如何做到�
 示例： sample35.html
 
 ```
+
 <!DOCTYPE html><html lang="en"><body><script>
 
 var myObject = { '123': 'zero', 'class': 'foo' };
 
 // 看看点表示法如何做到这一点！记住 'class' 是 JavaScript 中的一个关键字。
+
 console.log(myObject['123'], myObject['class']); // 打印 'zero foo'
 
 <script></body></html>
+
 ```
 
 
 
 
-
-```javascript
-console.log(myArray.hasOwnProperty('join')); // Logs false.
-
-<script></</body></html>
-```
+console.log(`myArray.hasOwnProperty('join')`); // Logs false.
 
 它目前并不存在。然而 `myArray` 却可以访问 `join()` 方法，就好像它是自己的属性一样。这里发生了什么？嗯，你刚刚观察了原型链的实际运作。我们访问了一个并不包含在 `myArray` 对象中的原型，但 JavaScript 可以在其他地方找到它。那个地方非常特殊。当 JavaScript 创建 `Array()` 构造函数时，`join()` 方法（以及其他方法）作为原型 `Array()` 的属性被添加了。
 
@@ -1326,18 +1180,19 @@ console.log(myArray.hasOwnProperty('join')); // Logs false.
 ## 示例：sample40.html
 
 ```html
-<!DOCTYPE html><html><body>
-
-<body>
+<!DOCTYPE html><html><body><script>
 
 // myArray 和 Array.prototype 不包含 toLowerCase() 方法。
+
 var myArray = ['foo', 'bar'];
 
 // toLowerCase() 实际上定义在
+
 Object.prototype.toLowerCase
+
 console.log(myArray.toLowerCase()); // Logs foo,bar.
 
-<script></</body></html>
+</script></body></html>
 ```
 
 `toLowerCase()` 方法没有定义在 `myArray` 对象内部。因此，触发了原型链，JavaScript 在 Array 的构造函数原型属性（例如 `Array.prototype`）中查找该属性。那里没有，所以触发了链规则，我们在 `Object()` 原型属性（`Object.prototype`）中查找该属性。是的，找到了。如果没有找到，JavaScript 将会产生一个错误，说明该属性未定义（undefined）。
@@ -1355,28 +1210,35 @@ console.log(myArray.toLowerCase()); // Logs foo,bar.
 ### 示例：sample41.html
 
 ```html
-<!DOCTYPE html><html>html lang="en"><body><script>
+<!DOCTYPE html><html lang="en"><body><script>
+
 var myObject = {foo: 'value'};
-console.log(myObject.hasOwnProperty('foo')) // Logs true.
+
+console.log(myObject.hasOwnProperty('foo')); // Logs true.
 
 // 对比一个来自原型链的属性。
+
 console.log(myObject.hasOwnProperty('toString')); // Logs false.
-</script></body>
+
+</script></body></html>
 ```
 
 当你需要确定一个属性是对象局部的还是继承自原型链时，应该利用 `hasOwnProperty` 方法。
 
 ## 使用 in 运算符检查对象是否包含给定属性
 
-`in` 运算符用于验证对象是否包含给定的属性（返回真或假）。在示例示例中，我们正在检查 `foo` 是否是 `myObject` 中的一个属性。
+`in` 运算符用于验证对象是否包含给定的属性（返回真或假）。在示例中，我们正在检查 `foo` 是否是 `myObject` 中的一个属性。
 
 ### 示例：sample42.html
 
 ```html
-<!DOCTYPE html><html>html lang="en"><body><script>
+<!DOCTYPE html><html lang="en"><body><script>
+
 var myObject = {foo: 'value'};
+
 console.log('foo' in myObject); // Logs true.
-</script></body>
+
+</script></body></html>
 ```
 
 你应该意识到，`in` 运算符不仅检查所引对象包含的属性，还检查对象通过原型链继承的任何属性。因此，相同的属性查找规则同样适用，如果当前对象中不存在，则将在原型链中搜索。
@@ -1386,9 +1248,10 @@ console.log('foo' in myObject); // Logs true.
 ## 示例：sample43.html
 
 ```html
-<!DOCTYPE html><html>html lang="en"><body><script>
+<!DOCTYPE html><html lang="en"><body><script>
 
 var myObject = { foo: 'value' };
+
 console.log('toString' in myObject); // Logs true.
 
 </script></body></html>
@@ -1403,18 +1266,26 @@ console.log('toString' in myObject); // Logs true.
 ### 示例：sample44.html
 
 ```html
-<!DOCTYPE html><html> lang="en"><body><script>
+<!DOCTYPE html><html lang="en"><body><script>
 
 var cody = {
+
   age: 23,
+
   gender: 'male'
+
 };
 
 for (var key in cody) { // key 是表示每个属性的变量。
+
   // 避免从原型链继承的属性。
+
   if (cody.hasOwnProperty(key)) {
+
     console.log(key);
+
   }
+
 }
 
 </script></body></html>
@@ -1424,7 +1295,7 @@ for (var key in cody) { // key 是表示每个属性的变量。
 
 `for...in` 循环有一个缺点。它不仅会访问被遍历对象的属性，还会包含通过原型链循环继承的任何属性。因此，如果这不是我们想要的结果（通常情况下不是），我们必须在循环内部使用简单的语句来确保只访问特定对象包含的属性。这可以通过所有对象继承的 `hasOwnProperty()` 方法来实现。
 
-循环中访问属性的顺序并不一定是它们定义的顺序。只有可枚举（即在遍历对象时可用）的属性才会出现在循环中。例如，`constructor` 属性就不会出现。可以使用 `propertyEnumerable` 方法检查哪些属性是枚举的。
+循环中访问属性的顺序并不一定是它们定义的顺序。只有可枚举（即在遍历对象时可用）的属性才会出现在循环中。例如，`constructor` 属性就不会出现。可以使用 `propertyIsEnumerable` 方法检查哪些属性是枚举的。
 
 ## 宿对象和原生对象
 
@@ -1434,29 +1305,33 @@ for (var key in cody) { // key 是表示每个属性的变量。
 
 在接下来的示例中，我检查了 `window` 对象的属性。
 
-### sample:45.html
+### 示例：sample45.html
 
 ```html
-<!DOCTYPE html><html>html lang="en"><body><script>
+<!DOCTYPE html><html lang="en"><body><script>
 
 for (x in window) {
+
     console.log(x); // 输出窗口的所有属性。
+
 }
 
-</script></body>
+</script></body></html>
 ```
 
 你可能已经注意到原生 JavaScript 对象没有列在宿对象列表中。浏览器通常区分宿对象和原生对象。
 
 对于网页浏览器而言，大多数宿对象是处理 HTML 文档的接口，也称为 DOM。接下来的示例是列出浏览器环境提供的 `window.document` 对象内部包含的所有对象。
 
-### sample:46.html
+### 示例：sample46.html
 
 ```html
-<!DOCTYPE html> lang="en"><body><script>
+<!DOCTYPE html><html lang="en"><body><script>
 
 for (x in window.document) {
+
     console.log();
+
 }
 
 </script></body></html>
@@ -1464,64 +1339,63 @@ for (x in window.document) {
 
 我想让你在这里学习的是，JavaScript 规范并不关心宿对象，反之亦然。在 JavaScript 提供的（例如）之间存在一条分界线。
 
-
 JavaScript 1.5, ECMA-262 第 3 版与 Mozilla 的 JavaScript 1.6, 1.7, 1.8, 1.8.1, 1.8.5 以及宿主环境提供的功能，它们不应被混淆。
 
 ## 注意
 
 运行 JavaScript 代码的宿主环境（例如网页浏览器）通常提供头对象（例如网页浏览器中的 `window` 对象），语言的原生部分存储在其中，同时还有宿主对象（例如网页浏览器中的 `window.Location`）和用户定义对象（例如你编写并在网页浏览器中运行的代码）。
 
-有时，网页浏览器制造商作为 JavaScript 解释器的宿主，会在规范被批准之前推送某个 JavaScript 版本或向 JavaScript 添加未来规范（例如 Mozilla Firefox 器的 JavaScript 1.6, 1.7, 1.8, 1.8.1, 1.8.5）。
+有时，网页浏览器制造商作为 JavaScript 解释器的宿主，会在规范被批准之前推送某个 JavaScript 版本或向 JavaScript 添加未来规范（例如 Mozilla Firefox 的 JavaScript 1.6, 1.7, 1.8, 1.8.1, 1.8.5）。
 
 # 使用 Underscore.js 增强和扩展对象
 
-在需要认真操作和管理对象时，JavaScript 1.5 显得捉不从心。如果你在网页浏览器中运行 JavaScript，我想大胆地建议，当你需要比 JavaScript 1.5 提供更多的功能时，使用 Underscore.js。Underscore.js 在处理对象时提供了这些功能。
+在需要认真操作和管理对象时，JavaScript 1.5 显得捉襟见肘。如果你在网页浏览器中运行 JavaScript，我想大胆地建议，当你需要比 JavaScript 1.5 提供更多的功能时，使用 Underscore.js。Underscore.js 在处理对象时提供了这些功能。
 
 这些函数适用于所有对象和数组：
 
-- each()
-- map()
-- reduce()
-- reduceRight()
-- detect()
-- select()
-- reject()
-- all()
-- any()
-- include()
-- invoke()
-- pluck()
-- max()
-- min()
-- sortBy()
-- sortIndex()
-- toArray()
-- size()
+- `each()`
+- `map()`
+- `reduce()`
+- `reduceRight()`
+- `detect()`
+- `select()`
+- `reject()`
+- `all()`
+- `any()`
+- `include()`
+- `invoke()`
+- `pluck()`
+- `max()`
+- `min()`
+- `sortBy()`
+- `sortIndex()`
+- `toArray()`
+- `size()`
 
 这些函数适用于所有对象：
 
-- keys()
-- values()
-- functions()
-- extend()
-- clone()
-- tap()
-- isEqual()
-- isEmpty()
-- isElement()
-- isArray()
-- isArguments()
-- isFunction()
-- isString()
-- isNumber
-- isBoolean()
-- isDate()
-- isRegExp
-- isNaN
-- isNull
-- isUndefined()
+- `keys()`
+- `values()`
+- `functions()`
+- `extend()`
+- `clone()`
+- `tap()`
+- `isEqual()`
+- `isEmpty()`
+- `isElement()`
+- `isArray()`
+- `isArguments()`
+- `isFunction()`
+- `isString()`
+- `isNumber()`
+- `isBoolean()`
+- `isDate()`
+- `isRegExp()`
+- `isNaN()`
+- `isNull()`
+- `isUndefined()`
 
-我喜欢这个库是因为它在浏览器支持时利用了 JavaScript 的新的原生特性，同时也为不支持这些浏览器提供了相同的功能，且除非万不得已否则否则修改 JavaScript 的原生实现。
+我喜欢这个库是因为它在浏览器支持时利用了 JavaScript 的新的原生特性，同时也为不支持这些浏览器提供了相同的功能，且除非万不得已否则修改 JavaScript 的原生实现。
 
 ## 注意
 
@@ -1537,22 +1411,32 @@ JavaScript 1.5, ECMA-262 第 3 版与 Mozilla 的 JavaScript 1.6, 1.7, 1.8, 1.8.
 
 ```html
 <!DOCTYPE html lang="en"><body><script>
+
 // 使用 new 关键字和 String() 构造函数创建一个字符串对象。
+
 var stringObject = new String('foo');
-console.log(stringObject); // 输出 foo {='f', 1 = 'o', 2 = 'o'}
+
+console.log(stringObject); // 输出 foo {0='f', 1 = 'o', 2 = 'o'}
+
 console.log(typeof stringObject); // 输出 'object'。
 
 // 直接使用 String 构造函数创建字符串字面量/原始值。
+
 var stringObjectWithoutNewKeyword = String('foo'); // 没有 new 关键字。
+
 console.log(stringObjectWithoutNewKeyword); // 输出 'foo'。
+
 console.log(typeof stringObjectWithoutNewKeyword); // 输出 'string'。
 
 // 创建字符串字面量/原始值（后台利用了构造函数）。
+
 var stringLiteral = 'foo';
+
 console.log(stringLiteral); // 输出 foo。
+
 console.log(typeof stringLiteral); // 输出 'string'。
 
-</script></body></html
+</script></body></html>
 ```
 
 ## String() 参数
@@ -1563,12 +1447,14 @@ console.log(typeof stringLiteral); // 输出 'string'。
 
 ```html
 <!DOCTYPE html lang="en"><body><script>
+
 // 创建字符串对象。
+
 var stringObject = new String('foo');
 
-console.log(stringObject); // 输出 foo {="f", 1="o", 2="o"}
+console.log(stringObject); // 输出 foo {0="f", 1="o", 2="o"}
 
-</script></body></html
+</script></body></html>
 ```
 
 ## 注意
@@ -1581,11 +1467,11 @@ console.log(stringObject); // 输出 foo {="f", 1="o", 2="o"}
 
 属性（例如 `String.prototype`）：
 
-- prototype
+- `prototype`
 
 方法（例如 `String.fromCharCode()`）：
 
-- fromCharCode()
+- `fromCharCode()`
 
 ## String 对象实例属性和方法
 
@@ -1593,28 +1479,28 @@ String 对象实例具有以下属性和方法（不包括继承的属性和方�
 
 实例属性（例如 `var myString = 'foo'; myString.length`）：
 
-- constructor
-- length
+- `constructor`
+- `length`
 
 实例方法（例如 `var myString = 'foo'; myString.toLowerCase()`）：
 
-- charAt()
-- charCodeAt()
-- concat()
-- indexOf()
-- lastIndexOf()
-- localeCompare()
-- match()
-- quote()
-- replace()
-- search()
-- slice()
-- split()
-- substring()
-- toLocaleLowerCase()
-- toLocaleUpperCase()
-- toLowerCase()
-- toUpperCase()
+- `charAt()`
+- `charCodeAt()`
+- `concat()`
+- `indexOf()`
+- `lastIndexOf()`
+- `localeCompare()`
+- `match()`
+- `quote()`
+- `replace()`
+- `search()`
+- `slice()`
+- `split()`
+- `substring()`
+- `toLocaleLowerCase()`
+- `toLocaleUpperCase()`
+- `toLowerCase()`
+- `toUpperCase()`
 
 # 第 4 章 Number()
 
@@ -1626,22 +1512,33 @@ String 对象实例具有以下属性和方法（不包括继承的属性和方�
 
 ```html
 <!DOCTYPE html lang="en"><body><script>
+
 // 使用 new 关键字和 Number() 构造函数创建一个数值对象。
+
 var numberObject = new Number(1);
+
 console.log(numberObject); // 输出 1。
+
 console.log(typeof numberObject); // 输出 'object'。
 
 // 不使用 new 关键字创建字面量/原始值。
+
 var numberObjectWithoutNew = Number(1);
+
 console.log(numberObjectWithoutNew); // 输出 1。
+
 console.log(typeof numberObjectWithoutNew); // 输出 'number'。
 
 // 创建字面量/原始值（后台利用了构造函数）。
+
 var numberLiteral = 1;
+
 console.log(numberLiteral); // 输出 1。
+
 console.log(typeof numberLiteral); // 输出 'number'。
 
-</script></</html>
+</script></body></html>
+```
 
 ## 整数和浮点数
 
@@ -1656,7 +1553,7 @@ console.log(integer); // 输出 '1232134'。
 
 var floatingPoint = 2.132;
 console.log(floatingPoint); // 输出 '2.132'。
-</script></body></html
+</script></body></html>
 ```
 
 ## 注意
@@ -1673,7 +1570,7 @@ console.log(floatingPoint); // 输出 '2.132'。
 <!DOCTYPE html lang="en"><body><script>
 var numberOne = new Number(456);
 console.log(numberOne); // 输出 '456'。
-</script></body></html
+</script></body></html>
 ```
 
 ## 注意
@@ -1686,12 +1583,12 @@ console.log(numberOne); // 输出 '456'。
 
 属性（例如 `Number.prototype`）：
 
-- MAX VALUE
-- MIN VALUE
-- NaN
-- NEGATIVE INFINITY
-- POSITIVE INFINITY
-- prototype
+- `MAX_VALUE`
+- `MIN_VALUE`
+- `NaN`
+- `NEGATIVE_INFINITY`
+- `POSITIVE_INFINITY`
+- `prototype`
 
 ## Number 对象实例属性和方法
 
@@ -1699,25 +1596,22 @@ Number 对象实例具有以下属性和方法（不包括继承的属性和方�
 
 实例属性：
 
-- constructor
+- `constructor`
 
 实例方法（例如 `var myNumber = 1.00324; myNumber.toFixed()`）：
 
-- toExponential()
-- toFixed()
-- toLocaleString()
-- toPrecision()
-- toString()
-- valueOf()
+- `toExponential()`
+- `toFixed()`
+- `toLocaleString()`
+- `toPrecision()`
+- `toString()`
+- `valueOf()`
 
-
-
-
-# 第5章 Boolean()
+# 第 5 章 Boolean()
 
 ## 使用 Boolean() 对象的概念概述
 
-Boolean() 构造函数可以用于创建 Boolean 对象，以及表示真（true）或假（false）值的 Boolean 原生值。
+`Boolean()` 构造函数可以用于创建 Boolean 对象，以及表示真（true）或假（false）值的 Boolean 原生值。
 
 在下面的代码中，我详细介绍了 JavaScript 中 Boolean 值的创建。
 
@@ -1737,13 +1631,12 @@ Boolean() 构造函数可以用于创建 Boolean 对象，以及表示真（true
   var myBoolean3 = false;
   console.log(typeof myBoolean3); // 输出 'boolean'.
   console.log(myBoolean1, myBoolean2, myBoolean3); // 输出 false false false
-false.
 </script></body></html>
 ```
 
 ## Boolean() 参数
 
-Boolean() 构造函数接受一个参数并转换为 Boolean 值（即 true 或 false）。任何不是 0、null、false、NaN、undefined 或空字符串 ("") 的有效 JavaScript 都会被转换为 true。在接接的示例中，我们创建了两个 Boolean 对象：一个真一个假。
+`Boolean()` 构造函数接受一个参数并转换为 Boolean 值（即 true 或 false）。任何不是 0、null、false、NaN、undefined 或空字符串 ("") 的有效 JavaScript 都会被转换为 true。在接下来的示例中，我们创建了两个 Boolean 对象：一个真一个假。
 
 示例：sample53.html
 
@@ -1757,38 +1650,39 @@ Boolean() 构造函数接受一个参数并转换为 Boolean 值（即 true 或 
   var bar = new Boolean(Math)
   console.log(bar);
 
-<script></body></html>
+</script></body></html>
 ```
 
-注意
-与 new 关键字配合使用时，来自 Boolean() 构造函数的实例会产生一个实际复杂对象。由于 `typeof` 运算符相关的问题，你应该避免使用 Boolean() 构造函数创建 Boolean 值（应使用字面量/原生数字）。`typeof` 运算符将 Boolean 对象报告为 'object'，而不是你可能期望的标签（'boolean'）。此外，字面量/原生值的编写速度更快。
+## 注意
+
+与 `new` 关键字配合使用时，来自 `Boolean()` 构造函数的实例会产生一个实际复杂对象。由于 `typeof` 运算符相关的问题，你应该避免使用 `Boolean()` 构造函数创建 Boolean 值（应使用字面量/原生数字）。`typeof` 运算符将 Boolean 对象报告为 'object'，而不是你可能期望的标签（'boolean'）。此外，字面量/原生值的编写速度更快。
 
 ## Boolean() 属性和方法
 
-Boolean() 对象具有以下属性：
+`Boolean()` 对象具有以下属性：
 
-属性（例如，Boolean.prototype）；
+属性（例如，`Boolean.prototype`）：
 
-- prototype
+- `prototype`
 
 ## Boolean 实例属性和方法
 
 Boolean 对象实例具有以下属性和方法（不包括继承的属性和方法）：
 
-实例属性（例如 var myBoolean = false; Boolean.constructor）；
+实例属性（例如 `var myBoolean = false; Boolean.constructor`）：
 
-- constructor
+- `constructor`
 
-实例方法（例如 var myNumber = false; Boolean.toString()）；
+实例方法（例如 `var myNumber = false; Boolean.toString()`）：
 
-- toString()
-- valueOf()
+- `toString()`
+- `valueOf()`
 
 ## 非原生的假 Boolean 对象会转换为真
 
-从 Boolean() 构造函数创建的 Boolean 对象（与原生值相反）是一个对象，而对象会转换为 true。当通过 Boolean() 构造函数创建假的 Boolean 对象时，值本身会转换为 true。在接的示例中，我演示了假的 Boolean 对象始终是“真值”（truthy）。
+从 `Boolean()` 构造函数创建的 Boolean 对象（与原生值相反）是一个对象，而对象会转换为 true。当通过 `Boolean()` 构造函数创建假的 Boolean 对象时，值本身会转换为 true。在接下来的示例中，我演示了假的 Boolean 对象始终是“真值”（truthy）。
 
-示例：sample4.html
+示例：sample54.html
 
 ```html
 <!DOCTYPE html><html lang="en"><body><script>
@@ -1799,7 +1693,7 @@ console.log(falseValue); // 我们有一个假的 Boolean 对象，但对象是�
 if (falseValue) { // Boolean 对象，即使是 Boolean 对象，也是真值的。
     console.log('falseValue is truthy');
 }
-<script></body></html>
+</script></body></html>
 ```
 
 如果你需要将非 Boolean 值转换为 Boolean，只需使用不带 `new` 关键字的 `Boolean()` 构造函数，返回的值将是值而不是 Boolean 对象。
@@ -1833,13 +1727,13 @@ console.log(Boolean(Array));
 
 # 第 6 章 与原生字符串、数字和 Boolean 值的操作
 
-当访问属性时，原生/字面量值会被转换为对象
+## 当访问属性时，原生/字面量值会被转换为对象
 
-不要被字符串、数字和 Boolean 字面量可以像带有属性的对象一样处理（例如 true.toString()）这一事实所误导。当这些原生值通过尝试访问其属性被当作对象处理时，JavaScript 将创建一个包装对象。包装对象的属性可以被访问，然后包装对象会被丢弃。原生值被转换为对象，以便被解释为对象。
+不要被字符串、数字和 Boolean 字面量可以像带有属性的对象一样处理（例如 `true.toString()`）这一事实所误导。当这些原生值通过尝试访问其属性被当作对象处理时，JavaScript 将创建一个包装对象。包装对象的属性可以被访问，然后包装对象会被丢弃。原生值被转换为对象，以便被解释为对象。
 
-String
+### String
 
-示例：sample6.html
+示例：sample56.html
 
 ```html
 <!DOCTYPE html><html lang="en"><body><script>
@@ -1853,12 +1747,12 @@ var stringLiteral = 'foo';
 console.log(stringLiteral.length); // 输出 3
 console.log(stringLiteral['length']); // 输出 3.
 console.log('bar'.length); // 输出 3
-console.log('bar['length']); // 输出 3.
+console.log('bar'['length']); // 输出 3.
 
 </script></body></html>
 ```
 
-Number
+### Number
 
 示例：sample57.html
 
@@ -1875,57 +1769,72 @@ console.log(numberLiteral.toFixed()); // 输出 1.
 console.log(numberLiteral['toFixed']()); // 输出 1.
 console.log((1234).toString()); // 输出 '1234'.
 console.log(1234['toString']()); // 输出 '1234'.
-```
-<script></body></html>
+</script></body></html>
 ```
 
-Boolean
+### Boolean
 
 示例：sample58.html
 
 ```html
 <!DOCTYPE html><html lang="en"><body><script>
+
 // 被当作对象处理的 Boolean 对象。
+
 var booleanObject = new Boolean();
+
 console.log(booleanObject.toString()); // 输出 'false'.
-console.log(booleanObject['toString']); // 输出 'false'.
+
+console.log(booleanObject['toString']()); // 输出 'false'.
 
 // 被当作对象处理的 Boolean 字面量/原生值。
+
 var booleanLiteral = false;
+
 console.log(booleanLiteral.toString()); // 输出 'false'.
-console.log(booleanLiteral['toString']); // 输出 'false'.
+
+console.log(booleanLiteral['toString']()); // 输出 'false'.
+
 console.log((true).toString()); // 输出 'true'.
-console.log(true['toString']); // 输出 'true'.
+
+console.log(true['toString']()); // 输出 'true'.
 
 </script></body></html>
 ```
 
-注意
-当直接在原生值上（未存储在变量中）访问属性时，必须先求值数字，然后该值才会被视为对象（例如 (1).toString(); 或 1..toString();）。为什么是两个点？第一个点被视为数字的小数，而不是访问对象属性的运算符。
+## 注意
+
+当直接在原生值上（未存储在变量中）访问属性时，必须先求值数字，然后该值才会被视为对象（例如 `(1).toString();` 或 `1..toString();`）。为什么是两个点？第一个点被视为数字的小数，而不是访问对象属性的运算符。
 
 ## 你通常应该使用原生字符串、数字和 Boolean 值
 
 表示字符串、数字或 Boolean 的字面量/原生值编写更快，并且在字面量形式下更简洁。
 
-
 由于此原因，你应该使用字面量值。此外，`typeof` 运算符的准确性取决于你如何创建该值（字面量还是构造函数调用）。如果你创建一个字符串、数字或 Boolean 对象，`typeof` 运算符会报告该类型为对象。如果你使用字面量，`typeof` 运算符将返回实际值类型的字符串名称（例如 `typeof 'foo' // 返回 'string'`）。
 
 我将在下面的代码中演示了这一事实。
 
-## 示例: sample59.html
+## 示例：sample59.html
 
 ```html
 <!DOCTYPE html lang="en"><body><script>
 
   // String, number, and Boolean objects.
+
   console.log(typeof new String('foo')); // Logs 'object'.
+
   console.log(typeof new Number(1)); // Logs 'object'.
+
   console.log(typeof new Boolean(true)); // Logs 'object'.
 
   // String, number, and Boolean literals/primitives.
+
   console.log(typeof 'foo'); // Logs 'string'.
+
   console.log(typeof 1); // Logs 'number'.
+
   console.log(typeof true); // Logs 'boolean'.
+
 </script></body></html>
 ```
 
@@ -1935,16 +1844,20 @@ console.log(true['toString']); // 输出 'true'.
 
 ## 使用 null 值的概念概述
 
-你可以使用 `null` 来显式地表示对象属性不包含值。通常情况下，如果一个属性被设置为包含一个值，但由于某些原因该值可用，应该使用值 `null` 来指示该引用属性为空值。
+你可以使用 `null` 来显式地表示对象属性不包含值。通常情况下，如果一个属性被设置为包含一个值，但由于某些原因该值不可用，应该使用值 `null` 来指示该引用属性为空值。
 
 示例：sample60.html
 
 ```html
 <!DOCTYPE html><html lang="en"><body><script>
+
  // The property foo is waiting for a value, so we set its initial value
 //to null.
+
   var myObject = { foo: null };
+
   console.log(myObject.foo); // Logs 'null'
+
 </script></body></html>
 ```
 
@@ -1960,10 +1873,13 @@ console.log(true['toString']); // 输出 'true'.
 
 ```html
 <!DOCTYPE html><html lang="en"><body><script>
+
   var myObject = null;
 
   console.log(typeof myObject); // Logs 'object', not exactly helpful.
+
   console.log(myObject === null); // Logs true, only for a real null value.
+
 </script></body></html>
 ```
 
@@ -1975,7 +1891,7 @@ console.log(true['toString']); // 输出 'true'.
 
 ## undefined 值的概念概述
 
- JavaScript 以两种略有的方式使用 `undefined`。
+JavaScript 以两种略有不同的方式使用 `undefined`。
 
 第一种用法是表示声明的变量（例如 `var foo`）没有被赋值。第二种用法是表示你尝试访问的对象属性未定义（即它甚至没有命名），并且在原型链中未找到。
 
@@ -1985,16 +1901,21 @@ console.log(true['toString']); // 输出 'true'.
 
 ```html
 <!DOCTYPE html><html lang="en"><body><script>
+
   var initializedVariable; // Declare variable.
 
   console.log(initializedVariable); // Logs undefined.
+
   console.log(typeof initializedVariable); // Confirm that JavaScript
-  undefined.
+  // returns undefined.
 
   var foo = {};
+
   console.log(foo.bar); // Logs undefined, no bar property in foo object.
+
   console.log(typeof foo.bar); // Confirm that JavaScript returns
-  undefined;
+  // undefined;
+
 </script></body></html>
 ```
 
@@ -2010,55 +1931,54 @@ console.log(true['toString']); // 输出 'true'.
 
 ```html
 <!DOCTYPE html><html lang="en"><body><script>
+
   // Confirm that undefined is a property of the global scope.
+
   console.log(undefined in this); // Logs true.
 
 </script></body></html>
 ```
 
-## 第 9 章 头对象/全局对象
+# 第 9 章 头对象/全局对象
 
 ## 头对象的概念概述
 
-JavaScript 本身必须包含在一个对象中。例如，在为 浏览器环境编写 JavaScript 代码时，JavaScript 被包含并执行在 `window` 对象中。这个 `window` 对象被认为是“头对象”（head object），有时也被混淆地称为“全局对象”。所有 JavaScript 的实现都要求使用单个头对象。
+JavaScript 本身必须包含在一个对象中。例如，在为浏览器环境编写 JavaScript 代码时，JavaScript 被包含并执行在 `window` 对象中。这个 `window` 对象被认为是“头对象”（head object），有时也被混淆地称为“全局对象”。所有 JavaScript 的实现都要求使用单个头对象。
 
 头对象是由 JavaScript 在启用之前设置的，用于存放与 JavaScript 重新封装的原生代码。用户定义的代码由 JavaScript 放置在头对象内部进行执行。让我们在 Web 浏览器方面验证这一点。
 
-在随后的示例中，我检查了 JavaScript 对 `undefined` 的两种用法。
-
-示例：sample60.html
+示例：sample64.html
 
 ```html
-<!DOCTYPE html><html> lang="en"><body><script>
- // The property foo is waiting for a value, so we set its initial value
-//to null.
-  var myObject = { foo: null };
-  console.log(myObject.foo); // Logs 'null'
+<!DOCTYPE html><html lang="en"><body><script>
+
+  var myObject = { foo: 'bar' };
+
+  console.log(window.myObject === myObject); // Logs true.
+
+  console.log(this.myObject === myObject); // Logs true.
+
 </script></body></html>
 ```
-
-等待，提供的 OCR 文本在第 69-72 页存在一些重复和合并问题。根据指令纠正错误并合并段，我将提供清理后的完整文本。
-
-（自我修正：第 69-72 页的 OCR 文本包含乱码或重复段落。）*
-
-
-
-
 
 ## 头对象是隐含的，通常不被显式引用
 
 通常不使用头对象（head object）引用，因为它是隐含的。例如，在浏览器环境中 `window.alert` 和 `alert()` 本质上是同一个语句。JavaScript 会填充空白处。因为 `window` 对象（即头对象）是作用链中查找某个值时创建的最后一个对象，所以 `window` 对象本质上总是隐含的。在下一个示例中，我们利用了全局作用域中的 `alert()` 函数。
 
-示例：sample68.html
+示例：sample65.html
 
-```
+```html
 <!DOCTYPE html><html lang="en"><body><script>
+
 var foo = { // window 在这里是隐含的，window.foo
-window.fooMethod: function () {
-  alert('foo' + 'bar'); // window 在这里是隐含的，window.alert
-  window.alert('foo' + 'bar'); // 使用使用了 window，效果相同。
-}
-nfoo.fooMethod(); // window 在这里是隐含的，window.foo.fooMethod()
+  fooMethod: function () {
+    alert('foo' + 'bar'); // window 在这里是隐含的，window.alert
+    window.alert('foo' + 'bar'); // 使用了 window，效果相同。
+  }
+};
+
+foo.fooMethod(); // window 在这里是隐含的，window.foo.fooMethod()
+
 </script></body></html>
 ```
 
@@ -2074,17 +1994,23 @@ nfoo.fooMethod(); // window 在这里是隐含的，window.foo.fooMethod()
 
 使用内置的 `Object()` 构造函数可以动态创建通用的空对象。事实上，如果你回想起第 1 章的开头，这正是我们创建 `cody` 对象时所做的事情。让我们重新创建 `cody` 对象。
 
-示例：sample69.html
+示例：sample66.html
 
-```
+```html
 <!DOCTYPE html><html lang="en"><body><script>
+
   var cody = new Object(); // 创建一个没有属性的空对象。
 
   for (key in cody) { // 确认 cody 是一个空通用对象。
+
     if (cody.hasOwnProperty(key)) {
+
       console.log(key); // 不应该看到任何日志，因为 cody 本身没有属性。
+
     }
+
   }
+
 </script></body></html>
 ```
 
@@ -2092,67 +2018,83 @@ nfoo.fooMethod(); // window 在这里是隐含的，window.foo.fooMethod()
 
 ## 注意
 
-如果还不显而易见，`Object()` 构造函数本身一个对象。也就是说，该构造函数是基于从 `Array` 构造函数创建的对象，`Object` 构造函数只是输出空白对象。是的，你可以创建任何你喜欢的对象。然而，创建一个像 `cody` 这样的空对象与创建一个带有预定义属性的自定义构造函数是完全不同的。确保你理解 `cody` 只是一个基于 `Object()` 构造函数的空对象。为了充分利用 JavaScript 的力量，你不仅需要学习如何从 `Object()` 创建空对象，还需要学习如何像 `Object()` 构造函数一样构建自己的对象“类”（例如 `Person()`）。
+如果还不显而易见，`Object()` 构造函数本身是一个对象。也就是说，该构造函数是基于从 `Function` 构造函数创建的对象。`Object` 构造函数只是输出空白对象。是的，你可以创建任何你喜欢的对象。然而，创建一个像 `cody` 这样的空对象与创建一个带有预定义属性的自定义构造函数是完全不同的。确保你理解 `cody` 只是一个基于 `Object()` 构造函数的空对象。为了充分利用 JavaScript 的力量，你不仅需要学习如何从 `Object()` 创建空对象，还需要学习如何像 `Object()` 构造函数一样构建自己的对象“类”（例如 `Person()`）。
 
 ## Object() 参数
 
 `Object()` 构造函数接受一个可选参数。该参数是你想要创建的值。如果你不提供任何参数，将假设为 `null` 或 `undefined` 值。
 
-## 示例：sample70.html
+## 示例：sample67.html
 
-```
+```html
 <!DOCTYPE html><html lang="en"><body><script>
 
 // 创建一个没有属性的空对象。
+
   var cody1 = new Object();
+
   var cody2 = new Object(undefined);
+
   var cody3 = new Object(null);
 
   console.log(typeof cody1, typeof cody2, typeof cody3); // 记录 'object object object'。
 
-</script></body>
+</script></body></html>
 ```
 
-如果将 `null` 或 `undefined` 值传递给 `Object` 构造函数，将得到一个 `null` 或 `undefined` 值（注：此处原文逻辑可能有误，此处按字面翻译）。理论上，我们可以使用对象字面量来创建对象，即使是隐含的。
+如果将 `null` 或 `undefined` 值传递给 `Object` 构造函数，将得到一个空对象。理论上，我们可以使用对象字面量来创建对象，即使是隐含的。
 
-示例：sample71.html
+示例：sample68.html
 
-```
+```html
 <!DOCTYPE html><html lang="en"><body><script>
 
-// 使用这里的 Object() 构造函数来创建 cody 
-// 对象。
-var cody = {
-  // 构造函数  传递的是一个值。
-};
+// 使用对象字面量来创建 cody 对象。
 
-/* 我们可以使用 
-// 对象字面量。 */
 var cody = {
+
   living: true,
+
   age: 23,
+
   gender: 'male',
+
   getGender: function () { return cody.gender; }
+
 };
 
-// 注意这里的 cody 
-// 对象。
+// 注意这里的 cody 对象。
+
 console.log(cody); // 记录 cody 对象。
-</script></body>
+
+</script></body></html>
 ```
 
-## Object() 属性
-
-`Object()` 构造函数接受一个可选参数。该参数是你想要创建的值。如果你不提供任何参数，将假设为 `null` 或 `undefined` 值。
-
 ## Object() 属性和方法
 
-`Object()` 实例具有以下属性和方法（包括继承的属性和方法）：
+`Object()` 构造函数具有以下属性和方法（包括继承的属性和方法）：
 
-- `constructor`
+属性（例如 `Object.prototype`）：
+
 - `prototype`
 
-## Object() 属性和方法
+方法（例如 `Object.create()`）：
+
+- `create()`
+- `defineProperty()`
+- `defineProperties()`
+- `getOwnPropertyDescriptor()`
+- `getOwnPropertyNames()`
+- `getPrototypeOf()`
+- `keys()`
+- `preventExtensions()`
+- `isExtensible()`
+- `seal()`
+- `isSealed()`
+- `freeze()`
+- `isFrozen()`
+
+## Object 对象实例属性和方法
 
 `Object()` 实例具有以下属性和方法（不包括继承的属性和方法）：
 
@@ -2168,54 +2110,76 @@ console.log(cody); // 记录 cody 对象。
 
 通过对象字面量创建对象，即使是隐含的，也是更简洁的。
 
-示例：sample72.html
+示例：sample69.html
 
-```
+```html
 <!DOCTYPE html><html lang="en"><body><script>
+
   var cody = {
+
     living: true,
+
     age: 23,
+
     gender: 'male',
+
     getGender: function () { return cody.gender; }
+
   };
-  // 注意这里的 cody 
-// 对象。
+
+  // 注意这里的 cody 对象。
+
   console.log(cody); // 记录 cody 对象。
-</script></body>
+
+</script></body></html>
 ```
 
-示例：sample73.html
+示例：sample70.html
 
-```
+```html
 <!DOCTYPE html><html lang="en"><body><script>
+
 var cody = {
+
   living: true,
+
   age: 23,
+
   gender: 'male',
+
   getGender: function () { return cody.gender; }
+
 };
-// 注意最后一个属性没有
-// 逗号。
+
+// 注意最后一个属性没有逗号。
 
 console.log(cody); // 记录 cody 对象。
-</script></body>
+
+</script></body></html>
 ```
 
-示例：sample74.html
+示例：sample71.html
 
-```
+```html
 <!DOCTYPE html><html lang="en"><body><script>
+
 var cody = {
+
   'living': true,
+
   'age': 23,
+
   'gender': 'male',
+
   getGender: function () { return cody.gender; }
+
 };
-// 注意最后一个属性没有
-// 逗号。
+
+// 注意最后一个属性没有逗号。
 
 console.log(cody); // 记录 cody 对象。
-</script></body>
+
+</script></body></html>
 ```
 
 ## 所有对象都继承自 Object.prototype
@@ -2224,23 +2188,21 @@ JavaScript 中的 `Object()` 构造函数是特殊的，因为 `prototype` 属�
 
 在下面的示例中，我为 `Object.prototype` 增加了一个 `foo` 属性，然后创建了一个字符串并尝试访问该字符串的 `foo` 属性。由于 `myString` 实例没有 `foo` 属性，原型链开始工作并在 `String.prototype` 中查找。那里没有，下一个查找的地方是 `Object.prototype`，这是 JavaScript 查找对象值的最终位置。`foo` 值找到了，因为我添加了它，然后它返回了 `foo` 的值。
 
-示例：sample.html
+示例：sample72.html
 
-```
+```html
 <!DOCTYPE html><html lang="en"><body><script>
+
   Object.prototype.foo = 'foo';
+
   var myString = 'bar';
 
   // 记录 'foo'，通过原型链在 Object.prototype.foo 找到。
+
   console.log(myString.foo);
-</script>
-</body>
-</html>
+
+</script></body></html>
 ```
-
-
-
-
 
 # 第 11 章 Function()
 
@@ -2250,20 +2212,26 @@ JavaScript 中的 `Object()` 构造函数是特殊的，因为 `prototype` 属�
 
 在接下来的代码中，我们创建了两个版本的 `addNumbers` 函数对象——一个使用 `new` 运算符，另一个是更常见的字面量模式。两者都期望接收两个参数。在每种情况下，我们都通过括号 `()` 运算符传递参数并调用该函数。
 
-示例：sample76.html
+示例：sample73.html
 
 ```html
 <!DOCTYPE html>
 <html lang="en">
-<body
+<body>
 <script>
+
 var addNumbersA = new Function('num1', 'num2', 'return num1 + num2');
+
 console.log(addNumbersA(2, 2)); // 打印 4.
+
 // 也可以用字面量方式编写，这常见得多。
+
 var addNumbersB = function(num1, num2) { return num1 + num2; };
+
 console.log(addNumbersB(2, 2)); // 打印 4.
+
 </script>
-</</body>>
+</body>
 </html>
 ```
 
@@ -2275,25 +2243,31 @@ console.log(addNumbersB(2, 2)); // 打印 4.
 
 在接下来的代码中，我对比了 `Function()` 构造函数的用法与实例化函数对象的更常用模式。
 
-示例：sample77.html
+示例：sample74.html
 
 ```html
 <!DOCTYPE html>
 <html lang="en">
-<body
+<body>
 <script>
+
 var addFunction = new Function('num1', 'num2', 'return num1 + num2');
+
 /* 或者，一个包含参数的逗号分隔的单个字符串可以作为
-构造函数的第一个参数，后面紧跟函数体。
-*/
+构造函数的第一个参数，后面紧跟函数体。 */
+
 var timesFunction = new Function('num1,num2', 'return num1 * num2');
-console.log(addFunction(2, timesFunction(2, 2)); // 打印 '4 4'
+
+console.log(addFunction(2, 2), timesFunction(2, 2)); // 打印 '4 4'
 
 // 与实例化函数的更常用模式对比：
+
 var addFunction = function (num1, num2) { return num1 + num2; }; // 表达式形式。
+
 function addFunction(num1, num2) { return num1 + num2; } // 语句形式。
+
 </script>
-</</body>>
+</body>
 </html>
 ```
 
@@ -2301,9 +2275,9 @@ function addFunction(num1, num2) { return num1 + num2; } // 语句形式。
 
 不建议直接利用 `Function()` 构造函数，通常也不会这样做，因为 JavaScript 将使用 `eval()` 来解析构建函数逻辑的字符串。许多人认为 `eval()` 是不必要的开销。如果使用了它，代码设计中可能存在缺陷。
 
-不带 `new` 关键字使用 `Function()` 构造函数的效果与仅使用构造函数创建对象相同（例如 `new Function('x','return x')` 与 `function('x','return x')`）。
+不带 `new` 关键字使用 `Function()` 构造函数的效果与仅使用构造函数创建对象相同（例如 `new Function('x','return x')` 与 `Function('x','return x')`）。
 
-直接调用 `Function()` 构造函数时不会创建闭（见第 7 章）。
+直接调用 `Function()` 构造函数时不会创建闭包（见第 7 章）。
 
 ## Function() 属性和方法
 
@@ -2311,7 +2285,7 @@ function addFunction(num1, num2) { return num1 + num2; } // 语句形式。
 
 属性（例如 `Function.prototype`）：
 
-- prototype
+- `prototype`
 
 ## 函数对象实例属性和方法
 
@@ -2319,53 +2293,59 @@ function addFunction(num1, num2) { return num1 + num2; } // 语句形式。
 
 实例属性（例如 `var myFunction = function(x, y, z){}; myFunction.length;`）：
 
-- arguments
-- constructor
-- length
+- `arguments`
+- `constructor`
+- `length`
 
 实例方法（例如 `var myFunction = function(x, y, z) {}; myFunction.toString());`）：
 
-- apply()
-- call()
-- toString()
+- `apply()`
+- `call()`
+- `toString()`
 
 ## 函数总是返回一个值
 
 虽然可以仅仅为了执行代码语句而创建一个函数，但函数返回一个值也很常见。在接下来的示例中，我们从 `sayHi` 函数返回了一个字符串。
 
-示例：sample78.html
+示例：sample75.html
 
 ```html
 <!DOCTYPE html>
 <html lang="en">
-<body
+<body>
 <script>
+
   var sayHi = function () {
     return 'Hi';
   };
+
   console.log(sayHi()); // 打印 "Hi"
+
 </script>
-</</body>>
+</body>
 </html>
 ```
 
 如果函数没有返回值，则返回 `undefined`。在接下来的示例中，我们调用了 `yelp` 函数，它向控制台打印了字符串 'yelp'，而没有显式返回一个值。
 
-示例：sample79.html
+示例：sample76.html
 
 ```html
 <!DOCTYPE html>
 <html lang="en">
-<body
+<body>
 <script>
+
   var yelp = function () {
     console.log('I am yelping!');
     // 即使我们不返回，函数也会返回 undefined。
   };
+
   /* 打印 true 因为总是返回一个值，即使我们没有特别指定返回一个。 */
   console.log(yelp() === undefined);
+
 </script>
-</</body>>
+</body>
 </html>
 ```
 
@@ -2375,38 +2355,48 @@ function addFunction(num1, num2) { return num1 + num2; } // 语句形式。
 
 在 JavaScript 中，函数是对象。这意味着函数可以存储在变量、数组或对象中。此外，函数可以传递给函数并从函数返回。函数拥有属性，因为它是一个对象。这些因素使得函数成为 JavaScript 中的一等公民。
 
-示例：sample80.html
+示例：sample77.html
 
 ```html
 <!DOCTYPE html>
 <html lang="en">
-<body
+<body>
 <script>
+
 var funcA = function () {};
+
 var funcE = function () {};
+
 funcE.answer = 'yup'; // 实例属性。
+
 console.log(funcE.answer); // 'yup'
-</body></html>
+
+</script>
+</body>
+</html>
 ```
 
 ## 向函数传递参数
 
-参数是在函数调用时将值传递到作用域的媒介。在接下来的示例中，我们预定义它接收两个参数，这两个值在它的作用域内是用的。
+参数是在函数调用时将值传递到作用域的媒介。在接下来的示例中，我们预定义它接收两个参数，这两个值在它的作用域内是可用的。
 
-示例：sample81.html
+示例：sample78.html
 
 ```html
 <!DOCTYPE html>
 <html lang="en">
-<body
+<body>
 <script>
+
 var addFunction = function (number1, number2) {
-var sum = number1 + number2;
-return sum;
+  var sum = number1 + number2;
+  return sum;
 }
+
 console.log(addFunction(3, 3)); // 打印 6.
+
 </script>
-</</body>>
+</body>
 </html>
 ```
 
@@ -2420,105 +2410,117 @@ console.log(addFunction(3, 3)); // 打印 6.
 
 在所有函数的作用域体内部，`arguments` 对象是一个类数组对象，包含了传递给函数的参数。在接下来的代码中，尽管我们在定义函数时没有指定参数，但我们可以依靠调用时传递的参数来访问它们。
 
-示例：sample8.html
+示例：sample79.html
 
 ```html
 <!DOCTYPE html>
 <html lang="en">
-<body
+<body>
 <script>
+
 var add = function () {
-return arguments[0] + arguments[1];
+  return arguments[0] + arguments[1];
 }
+
 console.log(add(4, 4)); // 返回 8.
+
 </script>
-</</body>>
+</body>
 </html>
 ```
 
-`this` 关键字传递所有传递，它是包含函数的对象的引用。正如你预期的，作为对象属性的函数（即方法）可以使用 `this` 来获取父对象的引用。当函数在全局作用域中定义时，`this` 的值是全局对象。查看以下代码并确保你理解它返回了什么。
+`this` 关键字传递给所有函数，它是包含函数的对象的引用。正如你预期的，作为对象属性的函数（即方法）可以使用 `this` 来获取父对象的引用。当函数在全局作用域中定义时，`this` 的值是全局对象。查看以下代码并确保你理解它返回了什么。
+
+示例：sample80.html
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<body>
+<script>
+
+var myObject1 = {
+  name: 'myObject1',
+  myMethod: function () { console.log(this); };
+}
+
+myObject1.myMethod(); // Logs 'myObject1'.
+
+var myObject2 = function () { console.log(this); };
+
+myObject2(); // Logs window.
+
+</script>
+</body>
+</html>
+```
+
+## arguments.callee 属性
+
+`arguments` 对象有一个名为 `callee` 的属性，它是对当前执行的函数的引用。该属性可以在函数作用域内引用该函数（例如 `arguments.callee`）——这是一个自引用。在下文中，我们使用该属性来获取调用函数的引用。
+
+示例：sample81.html
+
+```html
+<!DOCTYPE html><html lang="en"><body><script>
+
+var foo = function () {
+  console.log(arguments.callee); // Logs foo
+  // callee 可以用于递归地调用 foo 函数（例如 arguments.callee()）
+}
+
+</script></body></html>
+```
+
+当函数需要递归调用时，这非常有用。
+
+## 实例 length 属性与 arguments.length
+
+`arguments` 对象有一个唯一的 `length` 属性。虽然你可能认为这个 `length` 属性给出定义的参数的数量，但它实际上给出调用期间传递给函数的参数数量。
+
+示例：sample82.html
+
+```html
+<!DOCTYPE html><html lang="en"><body><script>
+
+var myFunction = function (z, s, d) {
+  return arguments.length;
+}
+
+console.log(myFunction()); // Logs 0 因为没有向函数传递任何参数。
+
+</script></body></html>
+```
+
+通过所有 `Function` 实例的 `length` 属性，我们实际上可以获取函数期望参数的总数。
 
 示例：sample83.html
 
 ```html
-<!DOCTYPE html>
-<html lang="en">
-<body
-<script>
-```
-
-
-
-```javascript
-var myObject1 = {
-  name: 'myObject1',
-  myMethod: function () { console.log(this); };
-}
-
-Object1.myMethod(); // Logs 'myObject1'.
-
-var myObject2 = function () { console.log(this); };
-
-myObject2(); // Logs window.
-
-<script></</body></script>
-```
-
-## arguments.callee 属性
-
-`arguments` 对象有一个名为 `callee` 的属性，它是对当前执行的函数的引用。该属性可以在函数作用域内引用该函数（例如 `arguments.callee`）——这是一个自引用。在下文中，我们使用该属性来获取调用函数的引用。
-
-示例：sample84.html
-
-```javascript
 <!DOCTYPE html><html lang="en"><body><script>
-var foo = function () {
-  console.log(arguments.callee); // Logs foo
-  // callee 可以用于递归地调用 foo 函数（例如 arguments.callee()）
-}
-</script></body></html>
-```
 
-当函数需要递归调用时，这非常有用。
-
-## 实例 length 属性与 arguments.length
-
-`arguments` 对象有一个唯一的 `length` 属性。虽然你可能认为这个 `length` 属性给出定义的参数的数量，但它实际上给出调用期间传递给函数的参数数量。
-
-示例：sample85.html
-
-```javascript
-<!DOCTYPE html><html lang="en"><body><script>
-var myFunction = function (z, s, d) {
-  return arguments.length;
-}
-
-console.log(myFunction()); // Logs 0 因为没有向函数传递任何参数。
-</script></body></html>
-```
-
-通过所有 `Function` 实例的 `length` 属性，我们实际上可以获取函数期望参数的总数。
-示例：sample06.html
-
-```javascript
-<!DOCTYPE html><html lang="en"><body><script>
 var myFunction = function (z, s, d, e, r, m, q) {
   return myFunction.length;
 };
+
   console.log(myFunction()); // Logs 7.
+
 </script></body></html>
 ```
 
 ## 注意事项
-`arguments.length` 属性在 JavaScript 1.4 中被弃用，可以从函数对象的 `length` 属性访问到函数的参数数量。今后，你可以利用 `callee` 属性首先获取对被调用函数的引用（即 `arguments.callee.length`），来获取长度值。
+
+`arguments.callee` 属性在严格模式下被弃用，可以从函数对象的 `length` 属性访问到函数的参数数量。今后，你可以利用 `callee` 属性首先获取对被调用函数的引用（即 `arguments.callee.length`），来获取长度值。
 
 ## 重新定义函数参数
 
 可以在函数内部重新定义参数，也可以通过使用 `arguments` 数组来实现。看这里：
-示例：sample87.html
 
-```javascript
+示例：sample84.html
+
+```html
 <!DOCTYPE html><html lang="en"><body><script>
+
 var foo = false;
 var bar = false;
 
@@ -2529,239 +2531,7 @@ var myFunction = function (foo, bar) {
 }
 
 myFunction();
-</script></body></html>
-```
 
-注意，我可以使用 `arguments` 索引或直接为参数重新赋值新值来重新定义 `bar` 参数的值。
-
-## 在函数完成前返回（即取消函数执行）
-
-在调用期间期间，可以随时使用带值或不带值的 `return` 关键字来取消函数。在接下来的示例中，如果参数未定义或不是数字，我们将取消 `add` 函数。
-
-示例：sample88.html
-
-```javascript
-<!DOCTYPE html><html lang="en"><body><script>
-var add = function(x, y) {
-  // 如果参数不是数字，则返回错误。
-  if (typeof x != 'number' || typeof y != 'number') { return 'pass in numbers';
-  }
-  console.log(add(3, 3)); // Logs 6.
-console.log(add('2', '2')); // Logs 'pass in numbers'.
-}
-</script></body></html>
-```
-
-这里的概念是，你可以在函数执行的任何点使用 `return` 关键字来取消函数的执行。
-
-## 定义函数（语句、表达式或构造函数）
-
-函数可以通过三种不同的方式定义：函数构造函数、函数语句或函数表达式。在下面的示例中，我演示了每种变化。
-
-示例：sample89.html
-
-```javascript
-<!DOCTYPE html><html lang="en"><body><script>
-/* 函数构造函数：最后一个参数是函数逻辑，
-所有内容都是参数。 */
-var addConstructor = new Function('x', 'y', 'return x + y');
-
-// 函数语句。
-function addStatement(x, y) {
-  return x + y;
-}
-
-// 函数表达式。
-var addExpression = function (x, y) {
-  return x + y;
-}
-</script>
-};
-console.log(addConstructor(2, 2), addStatement(2, 2), addExpression(2,
-2)); // Logs '4 4 4'.
-
-<script></</body></html>
-```
-
-## 注意事项
-
-有人说存在第四种函数定义类型，称为“命名函数表达式”。命名函数表达式仅仅是包含名称的函数表达式（例如 `var add = function add(x, y) {return x+y}`）。
-
-## 调用函数（函数、方法、构造函数或构造函数）
-
-函数通过不同的场景进行调用：
-- 作为函数
-- 作为方法
-- 作为构造函数
-- 使用 `apply()`
-
-在接下来的示例中，我们检查了这些的每种情况。
-
-示例：sample90.html
-
-```javascript
-<!DOCTYPE html><html lang="en"><body><script>
-// 函数模式。
-// 方法模式。
-// 构造函数模式。
-// 使用 apply().
-```
-
-## 匿名函数
-
-匿名函数是没有没有标识符的函数。匿名函数主要用于传递函数。
-
-示例：sample91.html
-
-```javascript
-<!DOCTYPE html><html lang="en"><body><script>
-// 匿名函数，但没有调用方法。
-```
-
-```javascript
-var sayHi = function (f) {
-  f(); // 调用匿名函数。
-}
-```
-
-```javascript
-sayHi(function () { console.log('hi'); }); // Logs 'hi'.
-```
-
-</content>
-
-## 自执行函数表达式
-
-函数表达式（实际上任何不是通过 `Function()` 构造函数创建的函数）可以在定义后使用括号运算符立即调用。在接下来的示例中，我们创建了一个 `sayword` 函数表达式并立即调用该函数。这被认为是自执行函数。
-
-示例：sample92.html
-
-```javascript
-<!DOCTYPE html><html lang="en"><body><script>
-var sayWord = function () { console.log('Word 2 mo!'); }; (); Logs
-'Word 2 mo!'
-
-</script></content>
-```
-
-## 自执行匿名函数语句
-
-可以创建一个自执行的匿名函数语句。这被称为自执行匿名。在接下来的示例中，我们创建了多个立即执行的匿名函数。
-
-示例：sample93.html
-
-```javascript
-<!DOCTYPE html><html lang="en"><body><script>
-
-// 在野外最常用/看到的。
-(function msg) {
-    console.log(msg);
-}('Hi');
-
-// 略有不同，但实现了相同的结果；
-(function msg) {
-    console.log(msg);
-} ('Hi');
-
-// 最短的解决方案。
-!function sayHi(msg) { console.log(msg); } ('Hi');
-
-// 提示，这不起作用！
-// function sayHi() {console.log('hi');};
-
-</script></body></html>
-```
-
-## 注意事项
-
-根据 ECMAScript 标准，如果要立即调用函数，则函数周围（或将函数转换为表达式的任何内容）的括号是必须的。
-
-*(注：由于用户提供的原始文本在多处存在格式混乱、断裂或重复，翻译时已根据逻辑对内容进行了修复和对齐，并确保了 Markdown 格式的完整性)*
-
-抱歉，我之前的回复中未能将所有文本在一个块 [content] 重新整合。以下是为您整理的完整翻译版本：*
-
-[content]
-
-```javascript
-var myObject1 = {
-  name: 'myObject1',
-  myMethod: function () { console.log(this); };
-}
-
-Object1.myMethod(); // Logs 'myObject1'.
-
-var myObject2 = function () { console.log(this); };
-
-myObject2(); // Logs window.
-
-<script></</body></script>
-```
-
-## arguments.callee 属性
-
-`arguments` 对象有一个名为 `callee` 的属性，它是对当前执行的函数的引用。该属性可以在函数作用域内引用该函数（例如 `arguments.callee`）——这是一个自引用。在下文中，我们使用该属性来获取调用函数的引用。
-
-示例：sample84.html
-
-```javascript
-<!DOCTYPE html><html lang="en"><body><script>
-var foo = function () {
-  console.log(arguments.callee); // Logs foo
-  // callee 可以用于递归地调用 foo 函数（例如 arguments.callee()）
-}
-</script></body></html>
-```
-
-当函数需要递归调用时，这非常有用。
-
-## 实例 length 属性与 arguments.length
-
-`arguments` 对象有一个唯一的 `length` 属性。虽然你可能认为这个 `length` 属性给出定义的参数的数量，但它实际上给出调用期间传递给函数的参数数量。
-
-示例：sample85.html
-
-```javascript
-<!DOCTYPE html><html lang="en"><body><script>
-var myFunction = function (z, s, d) {
-  return arguments.length;
-}
-
-console.log(myFunction()); // Logs 0 因为没有向函数传递任何参数。
-</script></body></html>
-```
-
-通过所有 `Function` 实例的 `length` 属性，我们实际上可以获取函数期望参数的总数。
-示例：sample06.html
-
-```javascript
-<!DOCTYPE html><html lang="en"><body><script>
-var myFunction = function (z, s, d, e, r, m, q) {
-  return myFunction.length;
-};
-  console.log(myFunction()); // Logs 7.
-</script></body></html>
-```
-
-## 注意事项
-`arguments.length` 属性在 JavaScript 1.4 中被弃用，可以从函数对象的 `length` 属性访问到函数的参数数量。今后，你可以利用 `callee` 属性首先获取对被调用函数的引用（即 `arguments.callee.length`），来获取长度值。
-
-## 重新定义函数参数
-
-可以在函数内部重新定义参数，也可以通过使用 `arguments` 数组来实现。看这里：
-示例：sample87.html
-
-```javascript
-<!DOCTYPE html><html lang="en"><body><script>
-var foo = false;
-var bar = false;
-
-var myFunction = function (foo, bar) {
-  arguments[0] = true;
-  bar = true;
-  console.log(arguments[0], bar); // Logs true true.
-}
-
-myFunction();
 </script></body></html>
 ```
 
@@ -2771,17 +2541,20 @@ myFunction();
 
 在调用期间，可以随时使用带值或不带值的 `return` 关键字来取消函数。在接下来的示例中，如果参数未定义或不是数字，我们将取消 `add` 函数。
 
-示例：sample88.html
+示例：sample85.html
 
-```javascript
+```html
 <!DOCTYPE html><html lang="en"><body><script>
+
 var add = function(x, y) {
   // 如果参数不是数字，则返回错误。
-  if (typeof x != 'number' || typeof y != 'number') { return 'pass in numbers';
-  }
-  console.log(add(3, 3)); // Logs 6.
-console.log(add('2', '2')); // Logs 'pass in numbers'.
+  if (typeof x != 'number' || typeof y != 'number') { return 'pass in numbers'; }
+  return x + y;
 }
+
+console.log(add(3, 3)); // Logs 6.
+console.log(add('2', '2')); // Logs 'pass in numbers'.
+
 </script></body></html>
 ```
 
@@ -2791,10 +2564,11 @@ console.log(add('2', '2')); // Logs 'pass in numbers'.
 
 函数可以通过三种不同的方式定义：函数构造函数、函数语句或函数表达式。在下面的示例中，我演示了每种变化。
 
-示例：sample89.html
+示例：sample86.html
 
-```javascript
+```html
 <!DOCTYPE html><html lang="en"><body><script>
+
 /* 函数构造函数：最后一个参数是函数逻辑，
 所有内容都是参数。 */
 var addConstructor = new Function('x', 'y', 'return x + y');
@@ -2808,12 +2582,10 @@ function addStatement(x, y) {
 var addExpression = function (x, y) {
   return x + y;
 }
-</script>
-};
-console.log(addConstructor(2, 2), addStatement(2, 2), addExpression(2,
-2)); // Logs '4 4 4'.
 
-<script></</body></html>
+console.log(addConstructor(2, 2), addStatement(2, 2), addExpression(2, 2)); // Logs '4 4 4'.
+
+</script></body></html>
 ```
 
 ## 注意事项
@@ -2830,47 +2602,49 @@ console.log(addConstructor(2, 2), addStatement(2, 2), addExpression(2,
 
 在接下来的示例中，我们检查了这些的每种情况。
 
-示例：sample90.html
+示例：sample87.html
 
-```javascript
+```html
 <!DOCTYPE html><html lang="en"><body><script>
+
 // 函数模式。
 // 方法模式。
 // 构造函数模式。
 // 使用 apply().
+
+</script></body></html>
 ```
 
 ## 匿名函数
 
-匿名函数是没有没有标识符的函数。匿名函数主要用于传递函数。
+匿名函数是没有标识符的函数。匿名函数主要用于传递函数。
 
-示例：sample91.html
+示例：sample88.html
 
-```javascript
+```html
 <!DOCTYPE html><html lang="en"><body><script>
-// 匿名函数，但没有调用方法。
-```
 
-```javascript
+// 匿名函数，但没有调用方法。
+
 var sayHi = function (f) {
   f(); // 调用匿名函数。
 }
-```
 
-```javascript
 sayHi(function () { console.log('hi'); }); // Logs 'hi'.
+
+</script></body></html>
 ```
 
 ## 自执行函数表达式
 
-函数表达式（实际上任何不是通过 `Function()` 构造函数创建的函数）可以在定义后使用括号运算符立即调用。在接下来的示例中，我们创建了一个 `sayword` 函数表达式并立即调用该函数。这被认为是自执行函数。
+函数表达式（实际上任何不是通过 `Function()` 构造函数创建的函数）可以在定义后使用括号运算符立即调用。在接下来的示例中，我们创建了一个 `sayWord` 函数表达式并立即调用该函数。这被认为是自执行函数。
 
-示例：sample92.html
+示例：sample89.html
 
-```javascript
+```html
 <!DOCTYPE html><html lang="en"><body><script>
-var sayWord = function () { console.log('Word 2 mo!'); }; (); Logs
-'Word 2 mo!'
+
+var sayWord = function () { console.log('Word 2 mo!'); }(); // Logs 'Word 2 mo!'
 
 </script></body></html>
 ```
@@ -2879,20 +2653,21 @@ var sayWord = function () { console.log('Word 2 mo!'); }; (); Logs
 
 可以创建一个自执行的匿名函数语句。这被称为自执行匿名。在接下来的示例中，我们创建了多个立即执行的匿名函数。
 
-示例：sample93.html
+示例：sample90.html
 
-```javascript
+```html
 <!DOCTYPE html><html lang="en"><body><script>
 
 // 在野外最常用/看到的。
-(function msg) {
+
+(function(msg) {
     console.log(msg);
-}('Hi');
+})('Hi');
 
 // 略有不同，但实现了相同的结果；
-(function msg) {
+(function(msg) {
     console.log(msg);
-} ('Hi');
+}) ('Hi');
 
 // 最短的解决方案。
 !function sayHi(msg) { console.log(msg); } ('Hi');
@@ -2907,27 +2682,45 @@ var sayWord = function () { console.log('Word 2 mo!'); }; (); Logs
 
 根据 ECMAScript 标准，如果要立即调用函数，则函数周围（或将函数转换为表达式的任何内容）的括号是必须的。
 
-
-
-
-
 # 函数可以嵌套
 
 函数可以无限地嵌套在其他函数内部。在下面的代码示例中，我们将 `foo` 函数封装在 `bar` 函数内部，而 `bar` 函数又在 `foo` 函数内部。
 
-示例：sample94.html
+示例：sample91.html
 
 ```html
 <!DOCTYPE html><html lang="en"><body><script>
-var foo = function () {
-  var bar = function () {
-    var goo = function () {
-      console.log(this); // 记录头 对象的引用。
-    }
+
+function foo() {
+  function bar() {
+    console.log('bar');
   }
-}();
+  bar();
+}
+foo();
+
 </script></body></html>
 ```
+
+
+
+<!DOCTYPE html><html lang="en"><body><script>
+
+var foo = function () {
+
+  var bar = function () {
+
+    var goo = function () {
+
+      console.log(this); // 记录头 对象的引用。
+
+    }
+
+  }
+
+}();
+
+</script></body></html>
 
 这里的简单概念是函数是可以嵌套的，且嵌套深度没有限制。
 
@@ -2945,13 +2738,19 @@ var foo = function () {
 
 ```html
 <!DOCTYPE html><html lang="en"><body><script>
+
 // 函数可以发送给函数，也可以从函数返回。
+
 var foo = function (f) {
+
   return f;
+
 }
+
 var bar = foo(function () { console.log('Hi'); });
 
 bar(); // 记录 'Hi'.
+
 </script></body></html>
 ```
 
@@ -2967,15 +2766,23 @@ bar(); // 记录 'Hi'.
 <!DOCTYPE html lang="en"><body><script>
 
 // 示例 1
+
 var speak = function () {
+
   sayYo(); // sayYo() 尚未被定义，但仍然可以被
+
   调用，记录 'Yo'。
+
   function sayYo(){ console.log('Yo'); }
+
 }; // 调用
 
 // 示例 2
+
 console.log(sum(2, 2)); // 调用 sum(),它尚未定义，但
+
 仍然可以被调用。
+
 function sum(x, y) { return x + y; }
 
 </script></body></html>
@@ -2995,15 +2802,25 @@ function sum(x, y) { return x + y; }
 
 ```html
 <!DOCTYPE html><html lang="en"><body><script>
+
 var countDown = function countDownFrom(num) {
+
   console.log(num);
+
   num--; // 修改参数值。
+
   if (num < 0) { return false; } // 如果 num < 0 则返回没有递归的函数。
+
   // 如果是匿名函数，也可以使用 arguments.callee(num);
+
   countDownFrom(num);
+
 }
+
 countDownFrom(5); // 启动函数，它分别记录 5, 4, 3, 2, 1, 0。
+
 </script>
+
 ```
 
 你应该意识到，函数调用自己（又名递归）或重复地这样做是自然的。
@@ -3019,14 +2836,23 @@ countDownFrom(5); // 启动函数，它分别记录 5, 4, 3, 2, 1, 0。
 
 ```html
 <!DOCTYPE html lang="en"><body><script>
+
 var cody = {
+
   living: true,
+
   age: 23,
+
   gender: 'male',
+
   getGender: function () { return cody.gender; }
+
 }
+
 console.log(cody.getGender()); // 记录 'male'
+
 </script></body>
+
 ```
 
 注意 Getter 函数，我们正在 `cody` 对象本身上使用点符号法（例如 `cody.gender`）访问 `gender` 属性。可以使用 `this` 重写，以访问 `this` 指向的 `cody` 对象。
@@ -3035,14 +2861,23 @@ console.log(cody.getGender()); // 记录 'male'
 
 ```html
 <!DOCTYPE html lang="en"><body><script>
+
 var cody = {
+
   living: true,
+
   age: 23,
+
   gender: 'male',
+
   getGender: function () { return this.gender; }
+
 }
+
 console.log(cody.getGender()); // 记录 'male'
+
 </script></body>
+
 ```
 
 注意 Getter 函数，我们正在 `cody` 对象本身上使用点符号法（例如 `cody.gender`）访问 `gender` 属性。可以使用 `this` 重写，以访问 `this` 指向的 `cody` 对象。
@@ -3055,18 +2890,25 @@ console.log(cody.getGender()); // 记录 'male'
 
 ```html
 <!DOCTYPE html lang="en"><body><script>
+
 window.foo = 'foo';
+
 window.myObject = { foo: 'I am myObject.foo' };
 
 window.sayFoo = function () {
+
   console.log(this.foo);
+
 };
 
 window.myObject.sayFoo = window.sayFoo;
 
 window.myObject.sayFoo(); // 记录 'I am myObject.foo'.
+
 window.sayFoo(); // 记录 'foo'.
+
 </script></</body>
+
 </html>
 ```
 
@@ -3086,29 +2928,32 @@ window.sayFoo(); // 记录 'foo'.
 
 ```html
 <!DOCTYPE html lang="en"><body><script>
+
 var myWeb = {
+
   func1: function () {
+
     console.log(this); // 记录 myObject.
+
     var func2 = function () {
+
       console.log(this) // 记录 window，并且从现在开始都是如此。
+
       var func3 = function () {
+
         console.log(this); // 记录 window，因为它是头对象。
+
       } ();
+
     })();
+
   }
+
 }
+
 </script></body>
+
 </html>
-```
-
-
-
-
-
-```
-}
-myObject.func1();
-<script><body></html>
 ```
 
 好消息是，这将在 ECMAScript 5 中得到修复。目前，你应该意识到这种困境，尤其是当将函数作为值传递给其他函数时。考虑下一个示例，以及当将匿名函数传递给 `foo.func1` 时会发生什么。当匿名函数在 `foo.func1` 内部被调用时（函数内部的函数），该匿名函数的 `this` 值将是（头）对象的引用。
@@ -3117,13 +2962,21 @@ myObject.func1();
 
 ```html
 <!DOCTYPE html><html lang="en"><<body><script>
+
 var foo = {
+
   func1: function (bar) {
+
     bar(); // 打印 window，而不是 foo。
+
     console.log(this); // 这里的 this 关键字将是指向 foo 对象的引用。
+
   }
+
 }
+
 foo.func1(function () { console.log(this) });
+
 </script></body></html>
 ```
 
@@ -3137,18 +2990,31 @@ foo.func1(function () { console.log(this) });
 
 ```html
 <!DOCTYPE html><html lang="en"><<body><script>
+
 var myObject = {
+
   myProperty : 'I can see the light',
+
   myMethod : function() {
+
     var that = this; // 在 myMethod 作用域中存储 this（即 myObject）的引用。
+
     var helperFunction = function() { // 子函数。
+
  // 通过作用域链打印 'I can see the light'，
+
  // = this.
+
  console.log(that.myProperty); // 打印 'I can see the light "that"。
+
  console.log(this); // 如果我们不使用 that，则打印 window 对象。
+
  }
+
 }
+
 myObject.myMethod(); // 调用 myMethod。
+
 <script></body></html>
 ```
 
@@ -3162,15 +3028,25 @@ myObject.myMethod(); // 调用 myMethod。
 
 ```html
 <!DOCTYPE html> <html lang="en"><<body><script>
+
 var myObject = {};
+
 var myFunction = function (param1, param2) {
+
  // 通过 call() 设置，当函数被调用时，'this' 指向 myObject。
+
  this.foo = param1;
+
  this.bar = param2;
+
  console.log(this); // 打印 Object {foo = 'foo', bar = 'bar'}
+
 }
+
 myFunction.call(myObject, 'foo', 'bar'); // 调用函数，将值设置为 myObject。
+
 console.log(myObject) // 打印 Object {foo = 'foo', bar = 'bar'}
+
 ```
 </body></html>
 ```
@@ -3272,10 +3148,6 @@ console.log(john.whatIsFullName()); // 输出 'John Doe'.
 
 如果实例或 `this` 指向的对象不包含所引用的属性，适用于任何属性查找的相同规则将适用，并在原型链上进行“查找”属性。因此在我们的示例中，如果实例不包含 `fullName` 属性，将在 `Person.prototype.fullName` 查找，然后是 `Object.prototype.fullName`。
 
-
-
-
-
 ## 第 13 章 作用域与闭包
 
 ## JavaScript 作用域概述
@@ -3312,6 +3184,7 @@ neval('var foo = 3; console.log(foo)'); // eval 作用域。
 ## 注意事项
 
 - 可以创建无限数量的函数和 eval 作用域，而 JavaScript 环境只使用一个全局作用域。
+
 - 全局作用域是作用域链的最后一个站点。
 
 链式的函数会创建堆栈的执行作用域。这些链在一起的栈通常被称为作用域链。
@@ -3466,7 +3339,6 @@ nestedFunction(); // 打印 foo，因为返回的函数通过作用域链访问 
 </script></body></html>
 ```
 
-
 你在这里应该汲取的结论是：作用链是在定义期间确定的——字面面上就是取决于代码的编写方式。在你的代码中传递函数不会改变作用链。
 
 ## 闭包是由作用链引起的
@@ -3581,9 +3453,6 @@ console.log(typeof myFunction.prototype); // 打印 'object'
 
 </script></body></html>
 ```
-
-
-
 
 ## 示例:sample121.html
 
@@ -3792,146 +3661,6 @@ console.log(NewFooInstance.x); // 输出 2。
 </script></body></html>
 ```
 
-
-这里需要掌握的核心思想是：一旦你开始创建实例，就不应该用新对象替换对象的原型（prototype）。这样做将导致实例拥有指向不同原型的链接。
-
-## 用户定义的构造函数可以利用与原生构造函数相同的原型继承
-
-希望在章节的这里，你已经理解了 JavaScript 是如何利用原型进行继承的（例如 `Array.prototype`）。在创建非原生的、用户定义的构造函数时，也可以利用这种模式。在接下来的示例中，我们取了经典的 `Person` 对象，并模拟了 JavaScript 用于继承的模式。
-
-**示例：sample130.html**
-
-```html
-<!DOCTYPE html><html lang="en"><<body><script>
-var Person = function () {
-  // 所有 Person 继承了 legs, arms 和 countLimbs 属性。
-  Person.prototype.legs = 2;
-  Person.prototype.arms = 2;
-  Person.prototype.countLimbs = function () { return this.legs + this.arms; };
-};
-
-var chuck = new Person();
-console.log(chuck.countLimbs()); // 志记输出 4.
-</script></body></html>
-```
-
-在这段代码中，创建了一个 `Person()` 构造函数。然后我们向 `Person()` 的 `prototype` 属性添加了属性，这些属性可以被所有实例继承。显然，你在代码中利用原型链的方式与 JavaScript 在原生对象继承中利用的方式是相同的。
-
-作为一个你可以继承多少内容的示例，你可以创建一个构造函数，如果未提供参数，则其实例将继承 `legs` 和 `arms` 属性。在接下来的示例中，如果向 `Person()` 构造函数传递了参数，这些参数将作为实例属性；但如果没有提供一个或多个属性，则有一个回退机制。这些实例属性会遮蔽（shadow）或掩盖继承来的属性，从而让你兼得两者之。
-
-**示例：sample131.html**
-
-```html
-<!DOCTYPE html><html lang="en"><<body><script>
-var Person = function (legs, arms) {
-  // 遮蔽原型值。
-  if (legs !== undefined) { this.legs = legs; }
-  if (arms !== undefined) { this.arms = arms; }
-}
-
-Person.prototype.legs = 2;
-Person.prototype.arms = 2;
-Person.prototype.countLimbs = function () { return this.legs + this.arms; };
-
-var chunk = new Person(0, 0);
-console.log(chunk.countLimbs()); // 志记输出 0.
-</script></body></html>
-```
-
-## 创建继承链（原始意图）
-
-原型继承允许创建模拟传统面向对象编程语言中模式的继承链。在 JavaScript 中，为了让一个对象继承另一个对象，你所做的就是创建一个想要继承的对象的实例，并将其赋值给要继承对象的 `prototype` 属性。
-
-在下方的代码示例中，`Chef` 对象（即 `cody`）继承自 `Person()`。这意味着如果在 `Chef` 对象中没有找到某个属性，它将在创建 `Person()` 对象的函数的原型上查找。要建立这种继承，你只需要将 `Person()` 的一个实例实例化，并作为 `Chef.prototype` 的值（即 `Chef.prototype = new Person()`）。
-
-**示例：sample132.html**
-
-```html
-<!DOCTYPE html><html lang="en"><<body><script>
-var Person = function () { this.bar = 'bar'; };
-Person.prototype.foo = 'foo';
-
-var Chef = function () { this.goo = 'goo'; };
-Chef.prototype = new Person();
-var cody = new Chef();
-
-console.log(cody.foo); // 志记输出 'foo'
-console.log(cody.goo); // 志记输出 'goo'
-console.log(cody.bar); // 志记输出 'bar'.
-</script></body></html>
-```
-
-在这个示例中，我们做的只是利用了一个已经存在的系统。我们在示例中做的所有工作都是利用了一个已经存在的系统。我们在示例中做的所有工作都是利用了一个已经存在的系统。我们在示例中做的所有工作都是利用了一个已经存在的系统。我们在示例中做的所有工作都是利用了一个已经存在的系统。我们在示例中做的所有工作都是利用了一个已经存在的系统。我们在示例中做的所有工作都是利用了一个已经存在的系统。我们在示例中做的所有工作都是利用了一个已经存在的系统。我们在示例中做的所有工作都是利用了一个已经存在的系统。*（注：此处翻译自原文似乎存在逻辑重复）*
-
-原型继承允许创建模拟传统面向对象编程语言中模式的继承链。在 JavaScript 中，为了让一个对象继承另一个对象，你所做的就是创建一个想要继承的对象的实例，并将其赋值给要继承对象的 `prototype` 属性。
-
-在下方的代码示例中，`Chef` 对象（即 `cody`）继承自 `Person()`。这意味着如果在 `Chef` 对象中没有找到某个属性，它将在创建 `Person()` 对象的函数的原型上查找。要建立这种继承，你只需要将 `Person()` 的一个实例实例化，并作为 `Chef.prototype` 的值（即 `Chef.prototype = new Person()`）。
-
-**示例：sample132.html**
-
-```html
-<!DOCTYPE html><html lang="en"><<body><script>
-var Person = function () { this.bar = 'bar'; };
-Person.prototype.foo = 'foo';
-
-var Chef = function () { this.goo = 'goo'; };
-Chef.prototype = new Person();
-var cody = new Chef();
-
-console.log(cody.foo); // 志记输出 'foo'
-console.log(cody.goo); // 志记输出 'goo'
-console.log(cody.bar); // 志记输出 'bar'.
-</script></body></html>
-```
-*(注：由于原文最后几段出现了大量重复的句子，此处已根据语意进行了精简处理，以保持核心逻辑一致)*
-
-原型继承允许创建模拟传统面向对象编程语言中模式的继承链。在 JavaScript 中，为了让一个对象继承另一个对象，你所做的就是创建一个想要继承的对象的实例，并将其赋值给要继承对象的 `prototype` 属性。
-
-在下方的代码示例中，`Chef` 对象（即 `cody`）继承自 `Person()`。这意味着如果在 `Chef` 对象中没有找到某个属性，它将在创建 `Person()` 对象的函数的原型上查找。要建立这种继承，你只需要将 `Person()` 的一个实例实例化，并作为 `Chef.prototype` 的值（即 `Chef.prototype = new Person()`）。
-
-**示例：sample132.html**
-
-```html
-<!DOCTYPE html><html lang="en"><<body><script>
-var Person = function () { this.bar = 'bar'; };
-Person.prototype.foo = 'foo';
-
-var Chef = function () { this.goo = 'goo'; };
-Chef.prototype = new Person();
-var cody = new Chef();
-
-console.log(cody.foo); // 志记输出 'foo'
-console.log(cody.goo); // 志记输出 'goo'
-console.log(cody.bar); // 志记输出 'bar'.
-</script></body></html>
-```
-*(注：由于原文文本末尾存在多处完全一致的句子重复，翻译时已根据文档工程规范进行了去重，确保输出内容清晰。)*
-
-原型继承允许创建模拟传统面向对象编程语言中模式的继承链。在 JavaScript 中，为了让一个对象继承另一个对象，你所做的就是创建一个想要继承的对象的实例，并将其赋值给要继承对象的 `prototype` 属性。
-
-在下方的代码示例中，`Chef` 对象（即 `cody`）继承自 `Person()`。这意味着如果在 `Chef` 对象中没有找到某个属性，它将在创建 `Person()` 对象的函数的原型上查找。要建立这种继承，你只需要将 `Person()` 的一个实例实例化，并作为 `Chef.prototype` 的值（即 `Chef.prototype = new Person()`）。
-
-**示例：sample132.html**
-
-```html
-<!DOCTYPE html><html lang="en"><<body><script>
-var Person = function () { this.bar = 'bar'; };
-Person.prototype.foo = 'foo';
-
-var Chef = function () { this.goo = 'goo'; };
-Chef.prototype = new Person();
-var cody = new Chef();
-
-console.log(cody.foo); // 志记输出 'foo'
-console.log(cody.goo); // 志记输出 'goo'
-console.log(cody.bar); // 志记输出 'bar'.
-</script></body></html>
-```
-*(注：由于原文文本末尾存在多处完全一致的句子重复，翻译时已根据文档工程规范进行了去重，确保输出内容清晰。)*
-
-**抱歉，由于您提供的原文文本在后半部分出现了严重的段落重复错误，以下是基于原文核心逻辑的完整翻译结果：**
-
-[content]
 这里需要掌握的核心思想是：一旦你开始创建实例，就不应该用新对象替换对象的原型（prototype）。这样做将导致实例拥有指向不同原型的链接。
 
 ## 用户定义的构造函数可以利用与原生构造函数相同的原型继承
@@ -4055,7 +3784,9 @@ console.log(bar[0], bar.length); // 志记输出 undefined 3
 Array 对象具有以下属性（不继承的）：
 
 属性：
+
 - prototype
+
 - length
 
 ### 数组对象的实例属性和方法
@@ -4063,22 +3794,32 @@ Array 对象具有以下属性（不继承的）：
 数组实例具有以下属性和方法（不继承的）：
 
 实例属性（例如 `var myArray = ['foo', 'bar']`）：
+
 - constructor
+
 - length
 
 实例方法（例如 `var myArray = ['foo']`）：
+
 - pop()
+
 - push()
+
 - reverse()
+
 - shift()
+
 - sort()
+
 - splice()
+
 - unshift()
+
 - concat()
+
 - join()
+
 - slice()
-
-
 
 对于空数组的数字索引 50，JavaScript 将在其之前填充所有必要的索引并赋予 `undefined` 值。
 
@@ -4237,8 +3978,6 @@ while (counter >= 0) {
 </script></body></</html>
 ```
 
-
-
 获取/设置/更新对象的属性是通过使用点符号（dot notation）或括号符号（bracket notation）完成的。当操作的对象属性名以表达式的形式时（例如 `Array['prototype']['join'].apply()`），使用括号符号会非常方便。
 
 在引用对象时，会使用查找链（lookup chain）首先在被引用的对象中查找该属性。如果没有找到该属性，则会在构造函数的 `prototype` 属性上查找。如果仍未找到，由于原型持有一个对象值，且该对象值是由 `Object()` 构造函数创建的，则会通过 `Object()` 构造函数的 `prototype` 属性进行查找。如果仍未找到，则该属性将被确定为 `undefined`。
@@ -4266,4 +4005,5 @@ JavaScript 提供了全局作用域，所有的 JavaScript 代码都存在此作
 在函数内部使用 `var` 声明的函数表达式和变量将变成全局属性。然而，函数作用域内部的函数声明（function statements）仍然定义在它们被编写的作用域中。
 
 - 在全局作用域中声明（不使用 `var`）的函数和变量将成为全局对象的属性。
+
 - 在全局作用域中声明（使用 `var`）的函数和变量将成为全局变量。

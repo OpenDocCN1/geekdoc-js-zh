@@ -1,8 +1,5 @@
+
 # Windows 系统管理员十大入门脚本（系统管理员优势系列）
-
-
-
-
 
 献给我的妻子 Kellie，我与她分享我的梦想和冒险。
 
@@ -29,9 +26,8 @@ https://archive.org/details/itadministrators0000fell
 脚本编写愉快！
 
 Jeff Fellinge
+
 2003年劳动节
-
-
 
 # 前言
 
@@ -74,8 +70,6 @@ Jeff Fellinge
 ![](img/eafd0e1632fc08452cf4d68dbe912652_26_0.png)
 
 如前所述，第 4 章到第 13 章分别介绍了你作为系统管理员或工程师在工作环境中可能遇到的不同问题。问题在每章开头引入，并列出任何约束和要求。在对问题陈述、要求和约束进行简要讨论之后，我们将探讨解决该问题可能采用的工具或方法。
-
-
 
 ## 书籍结构
 
@@ -128,8 +122,6 @@ cscript somescript.vbs
 
 与许多方法一样，你可能有自己的偏好，或者喜欢上这里未提及的其他工具。太棒了！你会发现你将精通某个特定工具，它提供的某个功能，无论多小，你都会喜欢，比如它的缩进方式或它能为你自动完成什么。可用的编辑器，按从简单到最先进的复杂性顺序排列，包括记事本、Microsoft Visual Basic Editor®、Macromedia® HomeSite™ 和 Microsoft Visual Studio .NET®。
 
-
-
 ### 记事本
 
 记事本提供了一个基本的脚本编辑器。大多数脚本编写者可能都是从这个基础工具（或其前身 MS-DOS® 编辑器）开始起步的。其功能列表包括跳转到特定行（按行号）和插入日期及时间的能力。除此之外，记事本只是一个非常基础的文本编辑器。它作为默认程序预装在每一个基于 Windows 的平台上，其无处不在的特性使其成为在未知机器上编写脚本时可靠的选择。
@@ -137,6 +129,7 @@ cscript somescript.vbs
 ### Microsoft Office 和 Microsoft Visual Basic 编辑器
 
 Microsoft® Office 核心应用程序支持 Visual Basic for Applications (VBA) 开发，并包含 Microsoft Visual Basic 编辑器。当你录制一个宏时，它实际上被写入保存在宿主 Office 文件内的一个模块中。可以通过选择“工具” > “宏” > “Visual Basic 编辑器”来访问宏。（或者，按 Alt + F11）。这个功能齐全的编辑器支持 VBA，并包含语法高亮和内联调试功能。该编辑器相当容易上手，非常适合编写快速脚本。由于 VBA 支持外部脚本技术，如 Windows Script Host (WSH) 或 Windows Management Interface (WMI)，你可以使用此编辑器和调试器来原型化或测试你的网络和 ADSI 脚本，并将脚本输出发送回易于使用和保存的 Office 文档。图 1.2 显示了 Microsoft Visual Basic 编辑器及其不同组件的示例。使用 Microsoft Visual Basic 编辑器的一个潜在缺点是它不支持 JScript 或 VBScript——仅支持 VBA。当你在 Office 应用程序内从头开始编写脚本时，这种选择的缺乏不会带来挑战，但如果你希望将现有脚本移植到 Office 应用程序中，这一点需要记住。
+
 编辑器由各种窗口组成——项目资源管理器、代码窗口、属性窗口、本地窗口和三个监视窗口。
 
 **项目资源管理器：** 项目资源管理器列出了应用程序的不同对象，例如你正在使用的工作表和任何模块。如果你正在创建一个新脚本，请右键单击“Microsoft Excel 对象”项，然后选择“插入” > “模块”，以在代码窗口中打开一个新模块。
@@ -151,7 +144,7 @@ Microsoft® Office 核心应用程序支持 Visual Basic for Applications (VBA) 
 
 **本地窗口和监视窗口：** 本地窗口和监视窗口对于调试代码非常有用。使用 Microsoft Visual Basic 编辑器进行编码的一个优势是它能够逐行单步执行你的代码（或运行到代码中的指定行，然后在特定行停止，称为断点）。当你单步执行代码时（通过连续选择“调试” > “逐语句”或按 F8），本地窗口和监视窗口会列出你代码的变量及其当前值。当这些值被你的代码更新时，它们会立即显示。此功能对于调试和确定程序为何未按预期运行非常有用。
 
-本地窗口列出你代码中识别的所有变量。监视窗口指定你代码中任何选定的变量或表达式。与显示所有局部变量的本地窗口不同，你必须明确指定希望在监视窗口中查看的对象。此外，你可以选择监视各种表达式。例如，指定 `Cells(i, j)` 会在变量 i 和 j 变化时显示单元格 i 和 j 的值。
+本地窗口列出你代码中识别的所有变量。监视窗口指定你代码中任何选定的变量或表达式。与显示所有局部变量的本地窗口不同，你必须明确指定希望在监视窗口中查看的对象。此外，你可以选择监视各种表达式。例如，指定 `Cells(i, j)` 会在变量 `i` 和 `j` 变化时显示单元格 `i` 和 `j` 的值。
 
 **立即窗口：** 你可以在立即窗口中实时设置变量到表达式。此功能对于在运行脚本的中间微调值或强制条件很有用。例如，如果你有一个从 1 循环到 1,000 的变量，并且你想跳到结束，你可以使用立即窗口强制变量变为一个更高的值，例如 995。请注意，在这种情况下，你将跳过所有中间处理，并继续执行，就好像变量是 995 一样。
 
@@ -185,9 +178,11 @@ Microsoft Visual Studio .NET 是一个强大的集成开发环境 (IDE)。这个
 
 简单来说，脚本节省时间并减少错误。花点时间思考一下你日常重复执行的工作任务，或者你必须收集、审查或呈现系统信息的项目行动项。以信息安全领域的工程师或管理员为例，他们负责持续监控和检查数千条数据。可疑数据通常深埋在大量合法信息中；诀窍是筛选所有好的数据以找到坏的。考虑以下任务，每个任务都涉及在详细级别上管理大量信息。
 
--   监控哪些机器的哪些端口暴露在互联网上。
--   审计敏感服务器的用户和组成员身份。
--   当有权访问服务器的 IT 员工离开公司时，建立一种可靠的方式来轮换所有服务器的密码。
+- 监控哪些机器的哪些端口暴露在互联网上。
+
+- 审计敏感服务器的用户和组成员身份。
+
+- 当有权访问服务器的 IT 员工离开公司时，建立一种可靠的方式来轮换所有服务器的密码。
 
 那么，你如何着手寻找你知道不应该存在的东西？你如何将相同的动作应用于多个服务器，同时最大限度地减少错误？手动扫描互联网痕迹、日志文件和帐户成员身份是乏味且容易出错的。自动化是关键，这就引出了下一个问题：是购买还是自己构建解决方案。
 
@@ -200,8 +195,6 @@ Microsoft Visual Studio .NET 是一个强大的集成开发环境 (IDE)。这个
 **监控哪些机器的哪些端口暴露在互联网上。**
 
 要查找可能已向互联网开放外部端口的新机器或新服务，请考虑使用命令行端口扫描程序（如 NMAP）。端口扫描程序可以配置为在你的 ISP 分配给你的整个外部 IP 范围内查找开放端口。定期运行扫描程序（例如每两周一次），并将结果与之前生成的基线结果集进行比较。脚本包含你希望扫描的子网并启动端口扫描程序。脚本还会解析定期运行的输出，并查找新的或更改的
-
-
 
 ### 编程语言——你说了什么？
 
@@ -255,7 +248,7 @@ Microsoft .NET 在发布 Visual Basic .NET (VB.NET) 和废弃 Visual Basic® 6.0
 WScript.Echo("Hello, World.");
 ```
 
-将此文件保存为 HelloWorld.js。（确保覆盖扩展名，以免文件被保存为 .txt 扩展名。）接下来，打开命令窗口。（点击"开始" > "运行"，然后输入 cmd。）
+将此文件保存为 `HelloWorld.js`。（确保覆盖扩展名，以免文件被保存为 `.txt` 扩展名。）接下来，打开命令窗口。（点击"开始" > "运行"，然后输入 `cmd`。）
 
 在命令行中，通过输入 `CScript HelloWorld.js` 来执行脚本。你应该会看到 CScript 引擎的标志，后面跟着 Hello, World 这几个字。
 
@@ -289,33 +282,58 @@ WScript.Echo "Hello, World."
 
 上面的示例确实既不那么激动人心，也不太困难。然而，所使用的概念和基础知识与本书中任何脚本所使用的都是相同的。尽管这个示例很简单，但它演示了创建和运行脚本的整个过程。使用简单的示例为构建更复杂的场景打下了良好的基础。
 
-> 话虽如此，让我们来了解一个基本脚本的框架，这个第一个示例分别用 JScript 和 VBScript 编写，如图 2.1 所示（包含在 CD-ROM 的 /chapter 2/scripts 文件夹中，作为清单 2.1 和 2.2）。
+> 话虽如此，让我们来了解一个基本脚本的框架，这个第一个示例分别用 JScript 和 VBScript 编写，如图 2.1 所示（包含在 CD-ROM 的 `/chapter 2/scripts` 文件夹中，作为清单 2.1 和 2.2）。
 
 | JScript (framework.js) | VBScript (framework.vbs) |
+
 | --- | --- |
+
 | `//**********************************` | `'**********************************` |
+
 | `//* Script Framework` | `' Script Framework` |
+
 | `//* framework.js` | `' framework.vbs` |
+
 | `//* Created: Feb 2003, Jeff Fellinge` | `' Created: Feb 2003, Jeff Fellinge` |
+
 | `//**********************************` | `'**********************************` |
+
 | `var i = 22;` | `Dim i` |
+
 | `var j = '1';` | `i = 22` |
+
 | `answer = sum(i, j);` | `Dim j` |
+
 | `WScript.Echo(answer);` | `j = "1"` |
+
 | `j = 1;` | `answer = sum(i, j)` |
+
 | `WScript.Echo(sum(i, j));` | `WScript.Echo answer` |
+
 | | `WScript.Echo concatenate(i, j)` |
+
 | `//**********************************` | `'**********************************` |
+
 | `//* sum/concatenate 2 variables` | `' Calculate sum of 2 numbers` |
+
 | `//**********************************` | `'**********************************` |
+
 | `function sum(a, b)` | `function sum(a, b)` |
+
 | `{` | `    sum = a + b` |
+
 | `    result = a + b;` | `end function` |
+
 | `    return result;` | `'**********************************` |
+
 | `}` | `' Concatenate two strings` |
+
 | | `'**********************************` |
+
 | | `function concatenate(a, b)` |
+
 | | `    concatenate = a & b` |
+
 | | `end function` |
 
 **图 2.1** 分别用 VBScript 和 JScript 并排编写的简单脚本的框架。
@@ -328,7 +346,7 @@ WScript.Echo "Hello, World."
 
 注释是对代码功能的解释。你必须将注释与代码区分开来，这样解释器才不会试图执行它们。
 
-> 避免使用"智能"文字处理器作为代码编辑器。例如，Microsoft Office 产品会自动将引号和撇号转换为弯引号和弯撇号，因此 ' 会变成 '，" 会变成 " 或 "。虽然这些字符看起来一样（即使复制到记事本中也是如此），但它们是不同的，可能会导致你编写脚本时出现头疼的问题。
+> 避免使用"智能"文字处理器作为代码编辑器。例如，Microsoft Office 产品会自动将引号和撇号转换为弯引号和弯撇号，因此 `'` 会变成 `'`，`"` 会变成 `"` 或 `"`。虽然这些字符看起来一样（即使复制到记事本中也是如此），但它们是不同的，可能会导致你编写脚本时出现头疼的问题。
 
 JScript 使用 C 风格的注释，以 `/*` 开始，以 `*/` 结束，如下所示：
 
@@ -366,17 +384,20 @@ VBScript 使用撇号注释每一行：
 示例脚本的下一部分是声明变量。JScript 和 VBScript 不要求你声明变量，但这样做是一个好习惯。如果你转向强类型语言，你就需要声明变量并显式定义其类型。图 2.3 展示了 JScript 和 VBScript 如何声明变量并设置其值。声明变量的另一个优点是，在调试时，已声明的变量会出现在"局部变量"窗口中，而未声明的变量则不会。
 
 | JScript | VBScript |
+
 |---------|----------|
+
 | `var i = 22;` | `Dim i` |
+
 | `var j = '1';` | `i = 22` |
+
 | | `Dim j` |
+
 | | `j = "1"` |
 
 **图 2.3** JScript 和 VBScript 之间的变量声明差异。
 
-JScript 和 VBScript 是弱类型语言，这意味着一旦变量被声明（使用关键字 `var`），它可以容纳许多不同的字面量（值）类型。还需注意，使用 JScript 时，我们可以在同一行中声明变量及其字面量。JScript 和 VBScript 会自动确定变量的类型（字符串、数字或布尔值）。你需要确保它正确地做到了这一点。查看图 2.1 中的前面示例。注意我们将变量 `j` 的类型从字符串 "1" 更改为数字 1。此外，该函数使用了运算符
-
-+，它不仅能将两个数字求和，还能拼接字符串与另一个字符串或数字。
+JScript 和 VBScript 是弱类型语言，这意味着一旦变量被声明（使用关键字 `var`），它可以容纳许多不同的字面量（值）类型。还需注意，使用 JScript 时，我们可以在同一行中声明变量及其字面量。JScript 和 VBScript 会自动确定变量的类型（字符串、数字或布尔值）。你需要确保它正确地做到了这一点。查看图 2.1 中的前面示例。注意我们将变量 `j` 的类型从字符串 "1" 更改为数字 1。此外，该函数使用了运算符 `+`，它不仅能将两个数字求和，还能拼接字符串与另一个字符串或数字。
 
 当我们运行此脚本时，会得到以下输出：
 
@@ -388,24 +409,38 @@ C:\>framework.js
 
 这可能并非我们预期的结果，具体取决于变量的类型。在本例中，值易于查看和控制。但如果你是从对象中返回值，或者处理的是未知变量，就需要确保能够控制其类型。为了便于排查问题，可以使用 JScript 的 `typeof` 运算符来确定变量或表达式的类型。
 
-VBScript 使用关键字 `Dim` 来声明变量。同时请注意图 2.1 中的示例，VBScript 区分求和运算符（+）和拼接运算符（&）。无论数据类型如何，VBScript 都会尝试将变量作为数字求值：如果使用 +，则对两个变量求和；如果使用 &，则始终进行拼接。在 VBScript 中，我们必须创建两个独立的函数来分别实现求和或拼接，以获得与前面 *framework.js* 示例类似的结果。表 2.1 列出了 VBScript 和 JScript 的不同语言数据类型。
+VBScript 使用关键字 `Dim` 来声明变量。同时请注意图 2.1 中的示例，VBScript 区分求和运算符（`+`）和拼接运算符（`&`）。无论数据类型如何，VBScript 都会尝试将变量作为数字求值：如果使用 `+`，则对两个变量求和；如果使用 `&`，则始终进行拼接。在 VBScript 中，我们必须创建两个独立的函数来分别实现求和或拼接，以获得与前面 *framework.js* 示例类似的结果。表 2.1 列出了 VBScript 和 JScript 的不同语言数据类型。
 
 #### 表 2.1 VBScript 和 JScript 的语言数据类型
 
 | VBScript | JScript |
+
 |----------|---------|
+
 | empty | undefined |
+
 | null | null |
+
 | Boolean | Boolean |
+
 | string | string |
+
 | object | object |
+
 | byte | number |
+
 | integer | |
+
 | currency | |
+
 | long | |
+
 | single | |
+
 | double | |
+
 | date (time) | |
+
 | error | |
 
 #### 命名约定
@@ -416,27 +451,39 @@ VBScript 使用关键字 `Dim` 来声明变量。同时请注意图 2.1 中的�
 
 ### 数组
 
-使用数组可以定义一个包含多个元素的单一对象。VBScript 支持一维和多维数组。虽然 JScript 不支持多维数组，但你可以通过创建数组的数组来实现类似的功能。配置和使用数组涉及声明、赋值和取值。JScript 提供了更强大的数组操作功能，例如 push 和 pop 方法，允许你使用单个命令向数组添加新元素或删除元素。
+使用数组可以定义一个包含多个元素的单一对象。VBScript 支持一维和多维数组。虽然 JScript 不支持多维数组，但你可以通过创建数组的数组来实现类似的功能。配置和使用数组涉及声明、赋值和取值。JScript 提供了更强大的数组操作功能，例如 `push` 和 `pop` 方法，允许你使用单个命令向数组添加新元素或删除元素。
 
 #### 表 2.2 本书中使用的变量命名约定
 
 | 数据类型 | 前缀 | 示例 |
+
 |---|---|---|
+
 | integer | i | iRow, iCol, i |
+
 | string | str | strName, strOutput, strServer |
+
 | Boolean | b | bGoHelp, bIsRandom, bIsUser |
+
 | object | obj | objState, objWsSetup, objShell |
+
 | date | dt | dtToday, dtCreated, dtPwdExpires |
+
 | array | a | aGroup, aDrives, aList |
+
 | XML 文档 | xml | xmlDoc, xmlRoot, xmlConfig |
+
 | 正则表达式 | re | reValidFile |
+
 | 对象集合 | col | colPrinters, colQFE |
+
 | 枚举器 | e | eGroups, eLogicalDisk |
+
 | | g_ | 全局 |
 
 ### VBScript 中的数组
 
-要在 VBScript 中使用数组，必须先声明一个变量，然后将其赋值为数组。如果你知道将来不需要调整数组大小，可以创建一个固定大小的静态数组（例如 `Dim aList(10)`）。也可以通过省略大小来定义动态数组（例如 `Dim aList()`），或者使用 Array 函数显式定义数组元素（例如 `Dim aMonth` 后跟 `aMonth=Array("January", ..., "March")`），后者将数组声明为动态的并隐式定义数组大小。在 VBScript 中，数组大小必须在声明静态数组时定义，或者稍后使用 `ReDim` 函数为动态数组定义。例如，`Dim aList(10)` 定义了一个包含 10 个元素的数组，可以立即使用；而 `Dim aList()` 定义了一个动态数组，在使用之前必须使用 `ReDim` 来设定大小。动态数组可以通过后续调用 `ReDim` 语句来重新调整大小。使用 `ReDim` 可以清除数组并设定新大小，或使用 `ReDim Preserve` 参数保留之前的数组值。通过将索引元素赋值来显式设置数组元素值（例如 `aMonth(3)="April"`）。代码清单 2.3 展示了如何在 VBScript 中定义数组，并使用 `For...Next` 循环配合 `Ubound` 函数（返回数组的上界）来遍历数组。
+要在 VBScript 中使用数组，必须先声明一个变量，然后将其赋值为数组。如果你知道将来不需要调整数组大小，可以创建一个固定大小的静态数组（例如 `Dim aList(10)`）。也可以通过省略大小来定义动态数组（例如 `Dim aList()`），或者使用 `Array` 函数显式定义数组元素（例如 `Dim aMonth` 后跟 `aMonth=Array("January", ..., "March")`），后者将数组声明为动态的并隐式定义数组大小。在 VBScript 中，数组大小必须在声明静态数组时定义，或者稍后使用 `ReDim` 函数为动态数组定义。例如，`Dim aList(10)` 定义了一个包含 10 个元素的数组，可以立即使用；而 `Dim aList()` 定义了一个动态数组，在使用之前必须使用 `ReDim` 来设定大小。动态数组可以通过后续调用 `ReDim` 语句来重新调整大小。使用 `ReDim` 可以清除数组并设定新大小，或使用 `ReDim Preserve` 参数保留之前的数组值。通过将索引元素赋值来显式设置数组元素值（例如 `aMonth(3)="April"`）。代码清单 2.3 展示了如何在 VBScript 中定义数组，并使用 `For...Next` 循环配合 `Ubound` 函数（返回数组的上界）来遍历数组。
 
 #### 代码清单 2.3 在 VBScript 中使用一维数组
 
@@ -453,7 +500,7 @@ For i = 0 to Ubound(aMonth)
 Next
 ```
 
-VBScript 支持多维数组。其构造方式与一维数组类似，只需在声明时定义数组维度即可（例如 Dim aMatrix(3,2)）。通过引用数组的行索引和列索引来设置值。与一维数组一样，使用 Ubound 函数返回数组的上界。不过，Ubound 还支持一个可选参数 dimension，用于指定要返回的维度上界。代码清单 2.4 展示了遍历 3x2 数组两个维度的示例。
+VBScript 支持多维数组。其构造方式与一维数组类似，只需在声明时定义数组维度即可（例如 `Dim aMatrix(3,2)`）。通过引用数组的行索引和列索引来设置值。与一维数组一样，使用 `Ubound` 函数返回数组的上界。不过，`Ubound` 还支持一个可选参数 `dimension`，用于指定要返回的维度上界。代码清单 2.4 展示了遍历 3x2 数组两个维度的示例。
 
 #### 代码清单 2.4 在 VBScript 中使用多维数组
 
@@ -475,7 +522,7 @@ Next
 
 ### JScript 中的数组
 
-JScript 数组必须首先使用 `new Array(x)` 代码创建，其中 `x` 是可选的数组大小定义。与 VBScript 不同，你不必在初始化时指定数组大小，JScript 的数组 length 属性会返回数组中实际定义的元素数量。JScript 中的数组元素可以定义为字面量或通过索引值定义，如代码清单 2.5 所示。使用 for 循环从数组的起始位置遍历到其长度，即可遍历 JScript 数组中的元素。VBScript 和 JScript 的数组都基于零索引，即第一个元素的索引为 0。数组元素值也可以通过索引号显式设置，同样参见代码清单 2.5。
+JScript 数组必须首先使用 `new Array(x)` 代码创建，其中 `x` 是可选的数组大小定义。与 VBScript 不同，你不必在初始化时指定数组大小，JScript 的数组 `length` 属性会返回数组中实际定义的元素数量。JScript 中的数组元素可以定义为字面量或通过索引值定义，如代码清单 2.5 所示。使用 `for` 循环从数组的起始位置遍历到其长度，即可遍历 JScript 数组中的元素。VBScript 和 JScript 的数组都基于零索引，即第一个元素的索引为 0。数组元素值也可以通过索引号显式设置，同样参见代码清单 2.5。
 
 #### 代码清单 2.5 在 JScript 中使用一维数组
 
@@ -492,7 +539,7 @@ for(i=0;i < aMonth.length;i++) {
 }
 ```
 
-与 VBScript 不同，JScript 不支持多维数组。JScript 中的多维数组功能可以通过使用数组的数组来模拟。（请注意，如果 VBScript 的多维数组功能无法满足特定需求，这种技术也可以在 VBScript 中使用。）创建一个三行两列的数组（3x2 数组）实际上需要创建四个数组。第一个数组 aMatrix 由三个数组组成（每行一个）。主数组的第一个元素（aMatrix[0]，其中 0 等于行号）实际上是另一个数组，代表第一行。该行数组的第一个元素是第一列（aMatrix[0][0]），第二个元素代表第二列。使用此技术需要额外的边界检查，因为与矩阵不同，在 JScript 的数组的数组中，每一行可能有不同数量的列。代码清单 2.6 演示了设置 3x2 矩阵的行和列元素的值，然后显示结果。实际上，JScript 数组是功能完善的对象，拥有众多有用的方法和属性。尽管 JScript 数组起初可能看起来比 VBScript 的对应物更复杂，但学会有效地使用这些对象无疑会增强你的脚本编写能力。
+与 VBScript 不同，JScript 不支持多维数组。JScript 中的多维数组功能可以通过使用数组的数组来模拟。（请注意，如果 VBScript 的多维数组功能无法满足特定需求，这种技术也可以在 VBScript 中使用。）创建一个三行两列的数组（3x2 数组）实际上需要创建四个数组。第一个数组 `aMatrix` 由三个数组组成（每行一个）。主数组的第一个元素（`aMatrix[0]`，其中 0 等于行号）实际上是另一个数组，代表第一行。该行数组的第一个元素是第一列（`aMatrix[0][0]`），第二个元素代表第二列。使用此技术需要额外的边界检查，因为与矩阵不同，在 JScript 的数组的数组中，每一行可能有不同数量的列。代码清单 2.6 演示了设置 3x2 矩阵的行和列元素的值，然后显示结果。实际上，JScript 数组是功能完善的对象，拥有众多有用的方法和属性。尽管 JScript 数组起初可能看起来比 VBScript 的对应物更复杂，但学会有效地使用这些对象无疑会增强你的脚本编写能力。
 
 #### 代码清单 2.6 在 JScript 中使用多维数组
 
@@ -503,34 +550,37 @@ aMatrix[0]=new Array();
 aMatrix[1]=new Array();
 ```
 
-
-
 ### 代码主体
 
-脚本中的代码主体是执行具体操作的地方。具有讽刺意味的是，根据代码的模块化程度，代码主体可能是（并且随着你在脚本编写、代码流程和最佳实践方面越来越熟练，它确实会是）脚本中最短的部分之一，因为你会开始使用函数来处理重复性工作。在我们的示例中，代码主体调用函数、传入变量，并在输出中显示结果。使用 Windows 脚本宿主时，我们调用的是 WScript 对象的 echo *方法*，如图 2.4 所示。方法提供与*对象*一起使用的操作。方法和对象都将在接下来的章节中介绍。
+脚本中的代码主体是执行具体操作的地方。具有讽刺意味的是，根据代码的模块化程度，代码主体可能是（并且随着你在脚本编写、代码流程和最佳实践方面越来越熟练，它确实会是）脚本中最短的部分之一，因为你会开始使用函数来处理重复性工作。在我们的示例中，代码主体调用函数、传入变量，并在输出中显示结果。使用 Windows 脚本宿主时，我们调用的是 `WScript` 对象的 `Echo` *方法*，如图 2.4 所示。方法提供与*对象*一起使用的操作。方法和对象都将在接下来的章节中介绍。
 
 | JScript | VBScript |
-| :--- | :--- |
-| answer=sum(i,j); | answer=sum(i,j) |
-| WScript.Echo(answer); | WScript.Echo answer |
-| j = 1; | WScript.Echo concatenate(i,j) |
-| WScript.Echo(sum(i,j)); | |
 
-**FIGURE 2.4** 代码主体调用函数来执行重复性或专门的工作。
+| :--- | :--- |
+
+| `answer=sum(i,j);` | `answer=sum(i,j)` |
+
+| `WScript.Echo(answer);` | `WScript.Echo answer` |
+
+| `j = 1;` | `WScript.Echo concatenate(i,j)` |
+
+| `WScript.Echo(sum(i,j));` | |
+
+**图 2.4** 代码主体调用函数来执行重复性或专门的工作。
 
 ##### 函数
 
 函数是独立的代码片段，被调用以执行特定的或重复的操作。程序的主体代码或其他函数都可以调用一个函数，并向其传递输入参数。函数随后对这些参数进行处理，然后将结果和代码执行返回给调用程序。函数的常见示例包括：将输出以特定格式写入文件或控制台的输出函数，或者列出某个组织单位中所有计算机或某个组中所有用户的函数。你会发现，能够将更多的代码分流或模块化为函数，代码的可移植性和可重用性就越高。理想情况下，一旦你创建了某个函数（例如管理日志文件的函数），就可以在许多其他脚本中重用该代码。为 JScript 和 VBScript 设置函数的语法如图 2.5 所示。
 
-![img/eafd0e1632fc08452cf4d68dbe912652_52_0.png](img/eafd0e1632fc08452cf4d68dbe912652_52_0.png)
+![](img/eafd0e1632fc08452cf4d68dbe912652_52_0.png)
 
-**FIGURE 2.5** 函数执行专门的工作，通常在不同的脚本之间重复使用。
+**图 2.5** 函数执行专门的工作，通常在不同的脚本之间重复使用。
 
 请注意，由于运算符的差异，VBScript 代码需要两个函数，一个用于求和，另一个用于连接。还要注意，JScript 函数可以将任何变量作为函数的返回值返回给调用程序，而在 VBScript 中，必须将返回值赋给函数名称。
 
-函数返回运算结果，并可用于表达式中。VBScript 包含另一种语句 Sub，它的操作类似于函数，但不同的是它不返回值，也不能用于表达式中。
+函数返回运算结果，并可用于表达式中。VBScript 包含另一种语句 `Sub`，它的操作类似于函数，但不同的是它不返回值，也不能用于表达式中。
 
-## ## 脚本构建模块
+## 脚本构建模块
 
 对象是编程构造，它将方法和属性组合成一个单元。方法可以执行操作或完成工作，属性是关于对象的信息，你可以读取，有时也可以写入。你可以通过对象及其相关方法和属性与外部编程实体进行交互。
 
@@ -554,11 +604,11 @@ aMatrix[1]=new Array();
 
 图 2.6 通过将脚本架构与脚本语法并排比较，展示了对象、方法和属性之间的关系。
 
-> 图 2.6 所示的示例包含在 CD-ROM 中，路径为 \chapter 2\scripts\listing_2_7.vbs)。
+> 图 2.6 所示的示例包含在 CD-ROM 中，路径为 `\chapter 2\scripts\listing_2_7.vbs`。
 
 在整本书中，我们会介绍和讨论新的不同的对象。然而，JScript 和 VBScript 各有其以语言为中心的对象，列于表 2.3 中。在脚本编写中，大多数时候你会使用 COM 来使用其他应用程序或库公开的对象。
 
-![img/eafd0e1632fc08452cf4d68dbe912652_54_0.png](img/eafd0e1632fc08452cf4d68dbe912652_54_0.png)
+![](img/eafd0e1632fc08452cf4d68dbe912652_54_0.png)
 
 ```vbscript
 ' Instantiate the WMI Locator object
@@ -579,27 +629,44 @@ For Each objQFE in colQFE
 Next
 ```
 
-**FIGURE 2.6** 脚本的构建模块包括对象、方法和属性的层次结构。
+**图 2.6** 脚本的构建模块包括对象、方法和属性的层次结构。
 
-**TABLE 2.3** VBScript 和 JScript 均内置的对象
+**表 2.3** VBScript 和 JScript 均内置的对象
 
-| J submerged obj| VBScript |
+| JScript | VBScript |
+
 | :--- | :--- |
+
 | ActiveX | class |
+
 | array | debug |
+
 | arguments | err |
+
 | Boolean | match |
+
 | date | regular expression |
+
 | debug | |
+
 | enumerator | |
+
 | error | |
+
 | function | |
+
 | global | |
+
 | math | |
+
 | number | |
+
 | RegExp | |
+
 | regular expression | |
+
 | string | |
+
 | VBArray | |
 
 ### 对象模型
@@ -618,7 +685,7 @@ Next
 
 方法实现对象理解并可以启动的操作。方法像函数一样接受参数，但它们与函数的不同之处在于方法与其父对象直接绑定，而函数是独立存在的。与函数一样，你可以创建自己的对象并定义自定义方法。然而，在你的大部分脚本编写中，你会引用现有对象及其定义的方法。
 
- JScript 对方法的依赖远甚于 VBScript。例如，JScript 的大部分 `math` 功能依赖于 Math 对象及众多 Math 方法。例如，要在 JScript 中计算一个数的平方根，你可以使用代码 `Math.sqrt(number)`。在此示例中，`Math` 是对象，`sqrt` 是方法。`sqrt` 方法的参数是 `number`。与之对比，VBScript 定义了函数 `Sqr` 来计算平方根。无需对象；只需调用 `Sqr(number)` 即可返回参数 `number` 的平方根。
+JScript 对方法的依赖远甚于 VBScript。例如，JScript 的大部分 `math` 功能依赖于 `Math` 对象及众多 `Math` 方法。例如，要在 JScript 中计算一个数的平方根，你可以使用代码 `Math.sqrt(number)`。在此示例中，`Math` 是对象，`sqrt` 是方法。`sqrt` 方法的参数是 `number`。与之对比，VBScript 定义了函数 `Sqr` 来计算平方根。无需对象；只需调用 `Sqr(number)` 即可返回参数 `number` 的平方根。
 
 对象支持使它们能够执行操作的方法。例如，要将网络驱动器映射到计算机，你可以使用 Windows Script Host 对象模型的对象和方法，如下面的 JScript 示例所示。首先，创建对 `WshNetwork` 对象的引用：
 
@@ -660,48 +727,87 @@ Set colQFE = objServices.ExecQuery("select * " _
 #### 表 2.4 内置 JScript 方法和函数，第 1 部分：方法
 
 | | | | |
+
 |:---|:---|:---|:---|
+
 | abs | getFullYear | moveFirst | splice |
+
 | acos | getHours | moveNext | split |
+
 | anchor | getItem | parse | sqrt |
+
 | apply | getMilliseconds | parseFloat | strike |
+
 | asin | getMinutes | parseInt | sub |
+
 | atan | getMonth | pop | substr |
+
 | atan2 | getSeconds | pow | substring |
+
 | attach | getTime | push | sup |
+
 | big | getTimezoneOffset | random | tan |
+
 | blink | getUTCDate | replace | test |
+
 | bold | getUTCDay | reverse | toArray |
+
 | call | getUTCFullYear | round | toDateString |
+
 | ceil | getUTCHours | search | toExponential |
+
 | charAt | getUTCMilliseconds | setDate | toFixed |
+
 | charCodeAt | getUTCMinutes | setFullYear | toGMTString |
+
 | compile | getUTCMonth | setHours | toLocaleDateString |
+
 | concat (Array) | getUTCSeconds | setMilliseconds | toLocaleLowerCase |
+
 | concat (String) | getVarDate | setMinutes | toLocaleString |
+
 | cos | getYear | setMonth | toLocaleTimeString |
+
 | decodeURI | hasOwnProperty | setSeconds | toLocaleUpperCase |
+
 | decodeURIComponent | indexOf | setTime | toLowerCase |
+
 | dimensions | isFinite | setUTCDate | toPrecision |
+
 | encodeURI | isNaN | setUTCFullYear | toString |
+
 | encodeURIComponent | isPrototypeOf | setUTCHours | toTimeString |
+
 | escape | italics | setUTCMilliseconds | toUpperCase |
+
 | eval | item | setUTCMinutes | toUTCString |
+
 | exec | join | setUTCMonth | ubound |
+
 | exp | lastIndexOf | setUTCSeconds | unescape |
+
 | fixed | lbound | setYear | unshift |
+
 | floor | link | shift | UTC |
+
 | fontcolor | localeCompare | sin | valueOf |
+
 | fontsize | log | slice (Array) | write |
+
 | fromCharCode | match | slice (String) | writeln |
+
 | getDate | max | small | |
+
 | getDay | min | sort | |
 
 #### 表 2.4 内置 JScript 方法和函数，第 2 部分：函数
 
 | | | | |
+
 |:---|:---|:---|:---|
+
 | GetObject | ScriptEngineBuildVersion | ScriptEngineMajorVersion | ScriptEngineMinorVersion |
+
 | ScriptEngine | | | |
 
 #### 表 2.5 内置 VBScript 方法和函数
@@ -709,47 +815,74 @@ Set colQFE = objServices.ExecQuery("select * " _
 ##### 方法
 
 | | | | |
+
 |:---|:---|:---|:---|
+
 | Clear | Raise | Test | WriteLine |
+
 | Execute | Replace | Write | |
 
 ##### 函数
 
 | | | | |
+
 |:---|:---|:---|:---|
+
 | Abs | Escape | LCase | Sgn |
+
 | Array | Eval | Left | Sin |
+
 | Asc | Exp | Len | Space |
+
 | Atn | Filter | LoadPicture | Split |
+
 | CBool | FormatCurrency | Log | Sqr |
+
 | CByte | FormatDateTime | LTrim; RTrim; and Trim | StrComp |
+
 | CCur | FormatNumber | Maths | String |
+
 | CDate | FormatPercent | Mid | StrReverse |
+
 | CDbl | GetLocale | Minute | Tan |
+
 | Chr | GetObject | Month | Time |
+
 | CInt | GetRef | MonthName | Timer |
+
 | CLng | Hex | MsgBox | TimeSerial |
+
 | Conversions | Hour | Now | TimeValue |
+
 | Cos | InputBox | Oct | TypeName |
+
 | CreateObject | InStr | RGB | UBound |
+
 | CSng | InStrRev | Right | UCase |
+
 | CStr | Int, Fix | Rnd | Unescape |
+
 | Date | IsArray | Round | VarType |
+
 | DateAdd | IsDate | ScriptEngine | Weekday |
+
 | DateDiff | IsEmpty | ScriptEngineBuildVersion | WeekdayName |
+
 | DatePart | IsNull | ScriptEngineMajorVersion | Write |
+
 | DateSerial | IsNumeric | ScriptEngineMinorVersion | WriteLine |
+
 | DateValue | IsObject | Second | Year |
+
 | Day | Join | SetLocale | |
+
 | 派生数学函数 | LBound | | |
-
-
 
 #### 属性
 
 如果说方法是对象关联的操作，那么属性就是对象可读取（有时可设置）的特征。如果我的狗是一个对象，它可能具有品种和名字这两个属性，其值分别为“黄色拉布拉多”和“Trooper”。我的狗还可能拥有“玩耍”、“停留”、“吃饭”或“睡觉”等方法。
 
-再次使用我们之前的例子（图2.6），我们显示了从 `Win32_QuickFixEngineering` 类返回的对象集合的属性。这个类没有方法，但确实有许多只读属性。（你会发现大多数 WMI 属性都是只读的。这个特性是因为许多属性代表了对象的物理状态，例如一个磁盘有一定数量的可用兆字节。你可以*获取*剩余空间大小，但不能*设置*剩余空间大小。明白了吗？）看看 `Win32_QuickFixEngineering` 类支持的属性：Caption、CSName、Description、FixComments、HotFixID、InstallDate、InstalledBy、InstalledOn、Name、ServicePackInEffect 和 Status。
+再次使用我们之前的例子（图2.6），我们显示了从 `Win32_QuickFixEngineering` 类返回的对象集合的属性。这个类没有方法，但确实有许多只读属性。（你会发现大多数 WMI 属性都是只读的。这个特性是因为许多属性代表了对象的物理状态，例如一个磁盘有一定数量的可用兆字节。你可以*获取*剩余空间大小，但不能*设置*剩余空间大小。明白了吗？）看看 `Win32_QuickFixEngineering` 类支持的属性：`Caption`、`CSName`、`Description`、`FixComments`、`HotFixID`、`InstallDate`、`InstalledBy`、`InstalledOn`、`Name`、`ServicePackInEffect` 和 `Status`。
 
 仅仅通过这一个类（仅 Win32 WMI 类就超过 180 个），你可能开始感受到 WMI 的强大功能，以及从你管理的任何计算机中提取自定义信息是多么容易。
 
@@ -758,22 +891,35 @@ Set colQFE = objServices.ExecQuery("select * " _
 #### 表 2.6 JScript 原生属性
 
 | $1...$9 | index | LOG10E | PI |
+
 | --- | --- | --- | --- |
+
 | 0...n | Infinity | LOG2E | POSITIVE_INFINITY |
+
 | arguments | input | MAX_VALUE | propertyIsEnumerable |
+
 | callee | lastIndex | message | prototype |
+
 | caller | lastMatch | MIN_VALUE | rightContext |
+
 | constructor | lastParen | multiline | source |
+
 | description | leftContext | name | SQRT1_2 |
+
 | E | length | NaN | SQRT2 |
+
 | global | LN10 | NEGATIVE_INFINITY | undefined |
+
 | ignoreCase | LN2 | number | |
 
 #### 表 2.7 VBScript 原生属性
 
 | VBScript | Global | IgnoreCase | Pattern |
+
 |---|---|---|---|
+
 | Description | HelpContext | Length | Source |
+
 | FirstIndex | HelpFile | Number | Value |
 
 ### 事件
@@ -863,26 +1009,38 @@ End Sub
 #### 表 2.8 内置 JScript 语句
 
 | `/*..*/` | `catch` | `function` | `throw` |
+
 |---|---|---|---|
+
 | `//` | `continue` | `if...else` | `try` |
+
 | `@cc_on` | `debugger` | `Labeled` | `var` |
+
 | `@if` | `do...while` | `return` | `while` |
+
 | `@set` | `for` | `switch` | `with` |
+
 | `break` | `for...in` | `this` | |
 
 #### 表 2.9 内置 VBScript 语句
 
 | `Call` | `Exit` | `Property Get` | `Set` |
+
 |---|---|---|---|
+
 | `Class` | `For Each...Next` | `Property Let` | `Stop` |
-| `Const` | `Forplex` | `Property Set` | `Sub` |
+
+| `Const` | `For...Next` | `Property Set` | `Sub` |
+
 | `Dim` | `Function` | `Public` | `While...Wend` |
+
 | `Do...Loop` | `If...Then...Else` | `Randomize` | `With` |
+
 | `Erase` | `On Error` | `ReDim` | |
+
 | `Execute` | `Option Explicit` | `Rem` | |
+
 | `ExecuteGlobal` | `Private` | `Select Case` | |
-
-
 
 ## IT 管理员入门必学的 10 个 Windows 脚本
 
@@ -910,13 +1068,13 @@ Next
 Set colQFE = objServices.ExecQuery("select * from Win32_QuickFixEngineering where HotFixID='Q329048'")
 ```
 
-此查询返回 HotFixID 等于 Q329048 的所有对象的集合。或者，我们也可以返回所有 `Win32_QuickFixEngineering` 项目：
+此查询返回 `HotFixID` 等于 Q329048 的所有对象的集合。或者，我们也可以返回所有 `Win32_QuickFixEngineering` 项目：
 
 ```vbscript
 Set colQFE = objServices.ExecQuery("select * from Win32_QuickFixEngineering")
 ```
 
-然后逐个循环遍历每个项目，检查 HotFixID 值是否匹配。以这种方式遍历结果不如直接查询所需结果高效，但如果你一开始不确定要查找什么，希望从一个更大的（或完整的）列表开始，这种做法会很有用。
+然后逐个循环遍历每个项目，检查 `HotFixID` 值是否匹配。以这种方式遍历结果不如直接查询所需结果高效，但如果你一开始不确定要查找什么，希望从一个更大的（或完整的）列表开始，这种做法会很有用。
 
 让我们通过列出计算机的共享和磁盘空间来进一步探讨这个问题，如清单 2.11 所示。
 
@@ -962,13 +1120,21 @@ Next
 **表 2.10** `Win32_LogicalDisk.DriveType` 属性表
 
 | 值 | 类型 |
+
 |-------|------|
+
 | 0 | 未知 |
+
 | 1 | 无根目录 |
+
 | 2 | 可移动磁盘 |
+
 | 3 | 本地磁盘 |
+
 | 4 | 网络驱动器 |
+
 | 5 | 光盘 |
+
 | 6 | RAM 磁盘 |
 
 出于文档目的，将我们关注的类型声明为表示 `DriveType` 属性值的常量会更加清晰，如下所示：
@@ -987,7 +1153,7 @@ Dim strServer
 strServer="EUROPA"
 ```
 
-> *你可能已经猜到了，但此示例也展示了在远程计算机上使用 WMI 有多么简单。尝试将 strServer 的值更改为网络上的其他计算机，以枚举它们的驱动器。（你必须拥有适当的权限，且远程计算机必须支持 WMI。）*
+> *你可能已经猜到了，但此示例也展示了在远程计算机上使用 WMI 有多么简单。尝试将 `strServer` 的值更改为网络上的其他计算机，以枚举它们的驱动器。（你必须拥有适当的权限，且远程计算机必须支持 WMI。）*
 
 接下来，我们必须创建相应的 WMI 对象来连接到 `strServer` 中指定的计算机。还要注意，我们从 `ExecQuery` 返回了所有记录，没有像前面的示例那样筛选条件。
 
@@ -1057,171 +1223,255 @@ Next
 var LOCAL_DRIVE = 3;
 var NETWORK_DRIVE = 4;
 var iFreeSpaceGb;
-```
-
-
-
 var strServer="panzer";
 var strOutput;
 
 objLocator = new ActiveXObject("WbemScripting.SWbemLocator");
 objServices = objLocator.ConnectServer(strServer);
+
 strQuery="SELECT * FROM Win32_LogicalDisk";
 colLogicalDisk = objServices.ExecQuery(strQuery);
 
 strOutput="显示服务器本地和网络驱动器的可用空间：" + strServer;
-
 WScript.Echo(strOutput);
 
 eLogicalDisk = new Enumerator(colLogicalDisk);
+
 for (;!eLogicalDisk.atEnd();eLogicalDisk.moveNext()) {
+
     x=eLogicalDisk.item()
+
     switch (x.DriveType) {
+
         case LOCAL_DRIVE:
+
         case NETWORK_DRIVE:
+
             if(!x.FreeSpace){
+
                 iFreeSpaceGb = 0 }
+
             else {
+
             iFreeSpaceGb=(x.FreeSpace/Math.pow(1024,3)).toFixed(1);
+
             }
+
             WScript.Echo(x.Name + " : " + iFreeSpaceGb + " GB");
+
         break;
+
         default:
+
         break;
+
     }
+
 }
+```
 
-在JScript中，你需要实例化一个新的`ActiveXObject`对象，而不是VBScript的`CreateObject`。同时，请注意每行代码以分号结束，循环和条件语句包含在花括号`({...})`中，而不是以某种`End`语句结束。JScript没有像VBScript（`_`）那样的行延续字符，因此为了确保代码行适合页面显示，示例将较长的输出字符串分解为变量`strOutput`，然后显示该变量。
+在 JScript 中，你需要实例化一个新的 `ActiveXObject` 对象，而不是 VBScript 的 `CreateObject`。同时，请注意每行代码以分号结束，循环和条件语句包含在花括号 `({...})` 中，而不是以某种 `End` 语句结束。JScript 没有像 VBScript（`_`）那样的行延续字符，因此为了确保代码行适合页面显示，示例将较长的输出字符串分解为变量 `strOutput`，然后显示该变量。
 
+```
 var LOCAL_DRIVE = 3;
 var NETWORK_DRIVE =  4;
 var iFreeSpaceGb;
 var temp;
-
 var strServer="panzer";
 var strOutput;
 
 objLocator = new ActiveXObject("WbemScripting.SWbemLocator");
 objServices = objLocator.ConnectServer(strServer);
+
 strQuery="SELECT * FROM Win32_LogicalDisk";
 colLogicalDisk = objServices.ExecQuery(strQuery);
 
 strOutput="显示服务器本地和网络驱动器的可用空间：";
 strOutput+=strServer;
-
 WScript.Echo(strOutput);
+```
 
-`Enumerator`对象包含来自`ExecQuery`的集合对象。它还包含自己的方法：`atEnd`、`item`、`moveFirst`和`moveNext`。在循环中使用这些方法来遍历枚举器对象。
+`Enumerator` 对象包含来自 `ExecQuery` 的集合对象。它还包含自己的方法：`atEnd`、`item`、`moveFirst` 和 `moveNext`。在循环中使用这些方法来遍历枚举器对象。
 
+```
 eLogicalDisk = new Enumerator(colLogicalDisk);
+
 for (;!eLogicalDisk.atEnd();eLogicalDisk.moveNext()) {
+```
 
-> *使用JScript，你可以使用`for...in`循环语句遍历对象的属性。但是，要遍历集合，必须使用`Enumerator`对象，因为对象是JScript内置的，并具有特殊支持。*
+> *使用 JScript，你可以使用 `for...in` 循环语句遍历对象的属性。但是，要遍历集合，必须使用 `Enumerator` 对象，因为对象是 JScript 内置的，并具有特殊支持。*
 
-如果你是JScript新手，你可能会注意到`for...loop`语法的一个奇特之处——它明显以分号开头。实际上，这个字符只是表示第一个参数是空的。此外，JScript的`for`循环比VBScript的`For...Next`或`For...Each`循环更灵活，因为它可以在参数中包含任何函数。注意在我们的语句中，我们有：
+如果你是 JScript 新手，你可能会注意到 `for...loop` 语法的一个奇特之处——它明显以分号开头。实际上，这个字符只是表示第一个参数是空的。此外，JScript 的 `for` 循环比 VBScript 的 `For...Next` 或 `For...Each` 循环更灵活，因为它可以在参数中包含任何函数。注意在我们的语句中，我们有：
 
+```
 for ( ; !eLogicalDisk.atEnd() ; eLogicalDisk.moveNext())
+```
 
-分解来看，我们可以说从现在开始，执行`moveNext`方法直到到达最后一个枚举器对象。但是，尽管这个函数类似于VBScript中集合的`For...Each`对象，我们可以在JScript循环中放入任何函数。例如：
+分解来看，我们可以说从现在开始，执行 `moveNext` 方法直到到达最后一个枚举器对象。但是，尽管这个函数类似于 VBScript 中集合的 `For...Each` 对象，我们可以在 JScript 循环中放入任何函数。例如：
 
+```
 for (foo ; bar ; f(foobar))
+```
 
-当然，你的函数`f(foobar)`应该让你从`foo`到达`bar`，否则你将陷入无限循环；但你可以看到这个函数比简单地按算术或连续方式迭代更灵活。
+当然，你的函数 `f(foobar)` 应该让你从 `foo` 到达 `bar`，否则你将陷入无限循环；但你可以看到这个函数比简单地按算术或连续方式迭代更灵活。
 
-另外，为了简化后续引用，我们将变量`x`设置为当前的枚举器项。我们同样可以使用引用`eLogicalDisk.item()`来引用属性。
+另外，为了简化后续引用，我们将变量 `x` 设置为当前的枚举器项。我们同样可以使用引用 `eLogicalDisk.item()` 来引用属性。
 
+```
 x=eLogicalDisk.item()
+```
 
-JScript使用`switch...case`，类似于VBScript的`Select Case`。注意`break`语句。这个语句导致程序退出`switch`语句。如果没有它，后续的`case`可能满足之前的`case`，这可能导致不可预见的问题。同时注意`default`语句。这个语句处理所有未被之前`case`满足的条件。
+JScript 使用 `switch...case`，类似于 VBScript 的 `Select Case`。注意 `break` 语句。这个语句导致程序退出 `switch` 语句。如果没有它，后续的 `case` 可能满足之前的 `case`，这可能导致不可预见的问题。同时注意 `default` 语句。这个语句处理所有未被之前 `case` 满足的条件。
 
-还要注意，我们使用不等于运算符`!`代替了VBScript的`isNull`函数。本例使用JScript的`Math.Pow`函数计算`1024^3`，并使用JScript的`toFixed`函数代替`FormatNumber`。
+还要注意，我们使用不等于运算符 `!` 代替了 VBScript 的 `isNull` 函数。本例使用 JScript 的 `Math.Pow` 函数计算 `1024^3`，并使用 JScript 的 `toFixed` 函数代替 `FormatNumber`。
 
+```
 switch (x.DriveType) {
-    case LOCAL_DRIVE:
-    case NETWORK_DRIVE:
-        if(!x.FreeSpace){
-            iFreeSpaceGb = 0
-        }
-        else {
-            iFreeSpaceGb=(x.FreeSpace/Math.pow(1024,3)).toFixed(1);
-        }
-        WScript.Echo(x.Name + " : " + iFreeSpaceGb + " GB");
-        break;
-    default:
-        break;
-}
 
-如你所见，代码结构在VBScript和JScript版本之间保持不变，但语法在语句以及使用的函数或方法上存在很大差异。有些人觉得VBScript比JScript更自然或更容易上手。然而，JScript是可以学习的，如果你看到自己将来会使用C#或其他高级语言，你会发现这些高级语言与JScript之间有更多相似之处。
+    case LOCAL_DRIVE:
+
+    case NETWORK_DRIVE:
+
+        if(!x.FreeSpace){
+
+            iFreeSpaceGb = 0
+
+        }
+
+        else {
+
+            iFreeSpaceGb=(x.FreeSpace/Math.pow(1024,3)).toFixed(1);
+
+        }
+
+        WScript.Echo(x.Name + " : " + iFreeSpaceGb + " GB");
+
+        break;
+
+    default:
+
+        break;
+
+}
+```
+
+如你所见，代码结构在 VBScript 和 JScript 版本之间保持不变，但语法在语句以及使用的函数或方法上存在很大差异。有些人觉得 VBScript 比 JScript 更自然或更容易上手。然而，JScript 是可以学习的，如果你看到自己将来会使用 C# 或其他高级语言，你会发现这些高级语言与 JScript 之间有更多相似之处。
 
 ### 运算符
 
-运算符比较或操作两个表达式。表2.11列出了JScript和VBScript中分别使用的运算符。JScript支持赋值运算符，它既计算表达式又执行操作。例如，JScript中的`i++`等同于VBScript中的`i=i+1`。
+运算符比较或操作两个表达式。表 2.11 列出了 JScript 和 VBScript 中分别使用的运算符。JScript 支持赋值运算符，它既计算表达式又执行操作。例如，JScript 中的 `i++` 等同于 VBScript 中的 `i=i+1`。
 
 | | JScript | VBScript |
+
 |---|---|---|
-| 加法赋值 | += | |
-| 加法 | + | + |
-| 字符串连接 | + | & |
-| 赋值 | = | = |
-| 按位与 | & | |
-| 按位或 | \| | |
-| 按位异或 | ^ | |
-| 逗号 | , | |
-| 条件三元 | ?: | |
-| 递减 | -- | |
-| 除法赋值 | /= | |
-| 除法 | / | / |
-| 等于 | == | = |
-| 排除 | | Xor |
-| 指数 (x^y) | Math.pow(x,y) | ^ |
-| 大于 | > | > |
-| 大于或等于 | >= | >= |
-| 严格相等 * | === | = |
-| 蕴含 | | Imp |
-| 递增 | ++ | |
-| 不等于 | != | <> |
-| 整数除法 | | \\ |
-| 小于 | < | < |
-| 小于或等于 | <= | <= |
-| 逻辑与 | && | And |
-| 逻辑非 | ! | Not |
-| 逻辑或 | \|\| | Or |
-| 取模赋值 | %= | |
-| 取模 | % | Mod |
-| 乘法赋值 | *= | |
-| 乘法 | * | * |
-| 严格不相等 * | !== | |
-| 减法赋值 | -= | |
-| 减法 | - | - |
-| 变量类型 | type of 运算符 | TypeName 函数 |
+
+| 加法赋值 | `+=` | |
+
+| 加法 | `+` | `+` |
+
+| 字符串连接 | `+` | `&` |
+
+| 赋值 | `=` | `=` |
+
+| 按位与 | `&` | |
+
+| 按位或 | `\|` | |
+
+| 按位异或 | `^` | |
+
+| 逗号 | `,` | |
+
+| 条件三元 | `?:` | |
+
+| 递减 | `--` | |
+
+| 除法赋值 | `/=` | |
+
+| 除法 | `/` | `/` |
+
+| 等于 | `==` | `=` |
+
+| 排除 | | `Xor` |
+
+| 指数 (x^y) | `Math.pow(x,y)` | `^` |
+
+| 大于 | `>` | `>` |
+
+| 大于或等于 | `>=` | `>=` |
+
+| 严格相等 * | `===` | `=` |
+
+| 蕴含 | | `Imp` |
+
+| 递增 | `++` | |
+
+| 不等于 | `!=` | `<>` |
+
+| 整数除法 | | `\\` |
+
+| 小于 | `<` | `<` |
+
+| 小于或等于 | `<=` | `<=` |
+
+| 逻辑与 | `&&` | `And` |
+
+| 逻辑非 | `!` | `Not` |
+
+| 逻辑或 | `\|\|` | `Or` |
+
+| 取模赋值 | `%=` | |
+
+| 取模 | `%` | `Mod` |
+
+| 乘法赋值 | `*=` | |
+
+| 乘法 | `*` | `*` |
+
+| 严格不相等 * | `!==` | |
+
+| 减法赋值 | `-=` | |
+
+| 减法 | `-` | `-` |
+
+| 变量类型 | `typeof` 运算符 | `TypeName` 函数 |
 
 排除：无符号移位和位运算符。
 
-* JScript中的严格相等和严格不相等运算符类似于等于和不等于运算符，但它们不尝试类型转换。
+* JScript 中的严格相等和严格不相等运算符类似于等于和不等于运算符，但它们不尝试类型转换。
 
-还要注意，JScript的赋值运算符与等于运算符非常不同。JScript表达式`i=1`将变量`i`设置为值`1`，而等于运算符`i==1`测试`i`是否等于值`1`。这个区别是JScript程序中bug的常见来源，下面的代码演示了这一点：
+还要注意，JScript 的赋值运算符与等于运算符非常不同。JScript 表达式 `i=1` 将变量 `i` 设置为值 `1`，而等于运算符 `i==1` 测试 `i` 是否等于值 `1`。这个区别是 JScript 程序中 bug 的常见来源，下面的代码演示了这一点：
 
+```
 i=0;
+
 if(i=1) {
+
     WScript.Echo("哎呀，用了一个赋值运算符。")
+
 }
+
 WScript.Echo(i); //返回 1
+```
 
 以下脚本可能是脚本编写者想要实现的：
 
+```
 i=0;
-if(i==1) {
-    WScript.Echo("使用了等于运算符。")
-}
-WScript.Echo(i); // 返回 0
 
-VBScript不区分赋值和等于运算符，`=`用于两者。
+if(i==1) {
+
+    WScript.Echo("使用了等于运算符。")
+
+}
+
+WScript.Echo(i); // 返回 0
+```
+
+VBScript 不区分赋值和等于运算符，`=` 用于两者。
 
 ### 调试
 
-不可避免地，你会花相当多的时间来调试程序中的错误或失误。所有程序员，无论其技能和经验如何，都会花时间调试他们的程序。调试有多种形式，从简单地纠正拼写错误的变量名到完全重写一段代码。最明显的错误发生在运行时，带有错误消息会中止脚本的执行；然而，要小心更深层、更微妙的错误，例如那些导致数据计算错误的情况。在这些情况下，脚本可能从头到尾运行没有任何问题迹象，但最终会得到错误的答案。在上述任何一种情况下，逐行单步执行程序有助于实时发现和纠正错误。同样有帮助的是，使用独立于脚本的方法找到并确定答案，然后将你的发现与脚本的结果进行比较。例如，如果你的脚本列出了一个域组中的所有用户，请使用Active Directory用户和计算机手动验证脚本输出是否与独立工具的输出匹配。
-
-
+不可避免地，你会花相当多的时间来调试程序中的错误或失误。所有程序员，无论其技能和经验如何，都会花时间调试他们的程序。调试有多种形式，从简单地纠正拼写错误的变量名到完全重写一段代码。最明显的错误发生在运行时，带有错误消息会中止脚本的执行；然而，要小心更深层、更微妙的错误，例如那些导致数据计算错误的情况。在这些情况下，脚本可能从头到尾运行没有任何问题迹象，但最终会得到错误的答案。在上述任何一种情况下，逐行单步执行程序有助于实时发现和纠正错误。同样有帮助的是，使用独立于脚本的方法找到并确定答案，然后将你的发现与脚本的结果进行比较。例如，如果你的脚本列出了一个域组中的所有用户，请使用 Active Directory 用户和计算机手动验证脚本输出是否与独立工具的输出匹配。
 
 此外，为了暴露缺陷，请在不同负载下的不同环境中运行您的脚本。例如，假设您的脚本检查您指定域中的所有计算机。在包含 10 台计算机的测试环境中运行脚本的结果，与在包含 500 或 1,000 台计算机的生产环境中运行脚本的结果相比，可能会暴露您脚本中存在的、在较小环境中未出现的缺陷。这些缺陷可能与计算机的数量有关（例如，某个变量的大小不足以处理更大的数量），或者仅仅是因为您的脚本必须运行的目标对象可能具有更大的多样性而暴露的缺陷。
 
@@ -1263,18 +1513,29 @@ CScript //D myscript.vbs
 
 ## 关键点
 
--   脚本提供了一套完全可定制、可重用的工具集，您可以利用它来构建解决方案，以减少重复性工作或自动化大型或冗长的任务。
--   VBScript 和 JScript 都提供了一套类似的脚本工具，您选择使用哪一个更可能取决于您的目标受众、应用程序、偏好或熟悉程度。
--   Windows 脚本宿主有两种形式：基于控制台的 CScript 和基于窗口的 WScript。某些方法和属性仅适用于特定的控制台。
--   使用注释来记录您的代码，并帮助他人理解您的思路。
--   养成声明变量的习惯，以避免错误并展现良好的编程实践。此外，声明变量可以让调试器知道在局部变量窗口中显示变量。
--   对象代表一个编程实体，该实体包含该实体的数据和功能；例如，到远程计算机的 WMI 连接是通过一个对象来引用的。
--   方法提供对象可以发起的操作；例如，ExecQuery 方法从远程计算机返回一组 WMI 数据。
--   函数提供可以从脚本或程序中调用的操作，独立于任何对象。
--   属性是对象的特征，可以读取（有时可以设置）；例如，Win32_LogicalDisk 类有一个名为 FreeSpace 的属性，它表示特定驱动器上的剩余空间。
--   事件是 Windows 操作系统的主要信号机制之一，可以由对象、应用程序甚至用户发送。
--   语句提供特定语言的词汇，是语言语法和结构的基础元素。循环、条件和声明都是语句的例子。
--   运算符比较或操作两个表达式；例如，=、>、*。
+- 脚本提供了一套完全可定制、可重用的工具集，您可以利用它来构建解决方案，以减少重复性工作或自动化大型或冗长的任务。
+
+- VBScript 和 JScript 都提供了一套类似的脚本工具，您选择使用哪一个更可能取决于您的目标受众、应用程序、偏好或熟悉程度。
+
+- Windows 脚本宿主有两种形式：基于控制台的 CScript 和基于窗口的 WScript。某些方法和属性仅适用于特定的控制台。
+
+- 使用注释来记录您的代码，并帮助他人理解您的思路。
+
+- 养成声明变量的习惯，以避免错误并展现良好的编程实践。此外，声明变量可以让调试器知道在局部变量窗口中显示变量。
+
+- 对象代表一个编程实体，该实体包含该实体的数据和功能；例如，到远程计算机的 WMI 连接是通过一个对象来引用的。
+
+- 方法提供对象可以发起的操作；例如，`ExecQuery` 方法从远程计算机返回一组 WMI 数据。
+
+- 函数提供可以从脚本或程序中调用的操作，独立于任何对象。
+
+- 属性是对象的特征，可以读取（有时可以设置）；例如，`Win32_LogicalDisk` 类有一个名为 `FreeSpace` 的属性，它表示特定驱动器上的剩余空间。
+
+- 事件是 Windows 操作系统的主要信号机制之一，可以由对象、应用程序甚至用户发送。
+
+- 语句提供特定语言的词汇，是语言语法和结构的基础元素。循环、条件和声明都是语句的例子。
+
+- 运算符比较或操作两个表达式；例如，`=`、`>`、`*`。
 
 第 3 章，“Windows 可脚本化技术”，将介绍一些更流行的 Windows 脚本技术：Windows 脚本宿主 (WSH)、Windows 管理规范 (WMI) 和活动目录服务接口 (ADSI)。
 
@@ -1288,7 +1549,7 @@ CScript //D myscript.vbs
 
 ### WINDOWS 脚本宿主
 
-Windows 脚本宿主 (WSH) 提供了一种与语言无关的机制，用于通过脚本管理和访问 Windows 平台。Microsoft 支持 VBScript 和 JScript，WSH 通过文件扩展名（.js 或 .vbs）识别脚本语言。WSH 使用直接调用的引擎（例如，*cscript script.vbs*）或使用注册的 WSH 脚本引擎（例如，在命令行中键入脚本名称，如 *script.vbs*，然后按 Enter 键）来处理脚本。CScript 提供命令行界面，而 WScript 提供基于 Windows 的界面。
+Windows 脚本宿主 (WSH) 提供了一种与语言无关的机制，用于通过脚本管理和访问 Windows 平台。Microsoft 支持 VBScript 和 JScript，WSH 通过文件扩展名（`.js` 或 `.vbs`）识别脚本语言。WSH 使用直接调用的引擎（例如，*cscript script.vbs*）或使用注册的 WSH 脚本引擎（例如，在命令行中键入脚本名称，如 *script.vbs*，然后按 Enter 键）来处理脚本。CScript 提供命令行界面，而 WScript 提供基于 Windows 的界面。
 
 除了 VBScript 和 JScript 语言解释器之外，WSH 还提供了对许多 Windows 平台资源的访问，包括文件系统、网络、Shell、环境变量以及可执行文件包装器，您可以从脚本中启动其他工具。此外，WSH 支持访问任何 ActiveX COM 支持的自动化接口，例如 Microsoft 活动目录 (AD) 或 WMI。这些对象、方法和属性提供了访问和编写脚本来提供 Windows 管理或维护功能。通过其支持的对象访问 WSH 基础结构。
 
@@ -1299,8 +1560,6 @@ Windows 脚本宿主 (WSH) 提供了一种与语言无关的机制，用于通�
 #### WScript.Argument
 
 `WScript` 对象提供了一种在脚本中捕获命令行参数的机制。参数是从外部传递给程序的参数，例如从命令行传递。让我们看一个使用常用工具 ping 的示例。
-
-
 
 ##### 清单 3.1 WScript.Arguments 的 JScript 示例
 
@@ -1399,11 +1658,17 @@ Windows 注册表编辑器（*regedit.exe*）的标准显示有两个窗格，�
 ##### 表 3.1 根项缩写
 
 | 根项 | 缩写 |
+
 |---|---|
+
 | HKEY_CLASSES_ROOT | HKCR |
+
 | HKEY_CURRENT_USER | HKCU |
+
 | HKEY_LOCAL_MACHINE | HKLM |
+
 | HKEY_USERS | HKEY_USERS |
+
 | HKEY_CURRENT_CONFIG | HKEY_CURRENT_CONFIG |
 
 `WshShell` 对象的注册表操作方法需要项的名称 *以及* 你希望读取或写入的特定值名称。此要求与命令行 *reg.exe* 二进制文件的要求略有不同，后者可以转储项以及值。
@@ -1415,10 +1680,15 @@ Windows 注册表编辑器（*regedit.exe*）的标准显示有两个窗格，�
 ##### 表 3.2 WshShell 注册表数据类型
 
 | 数据 | 类型 | 示例 |
+
 |---|---|---|
+
 | 字符串值 | REG_SZ | Q123456 或 C:\WINDOWS\ |
+
 | 二进制值 | REG_BINARY | 01 02 01 00 05 01 01 01 |
+
 | DWORD 值 | REG_DWORD | 0x00000002 或 21 |
+
 | 可扩展字符串值 | REG_EXPAND_SZ | %systemroot%\system32\ |
 
 > 注意：多字符串值数据类型 `REG_MULTI_SZ` 不被 `RegWrite` 方法支持。
@@ -1467,6 +1737,7 @@ strValue=objShell.RegDelete("HKLM\\SOFTWARE\\Gadget\\");
 将你的脚本视为你希望运行的可执行文件的一个包装器或外壳。下面是一些示例：
 
 - 一个登录脚本，在运行需要局域网连接的程序之前，先 ping 远程计算机以验证网络连接。
+
 - 一个指定 Windows 资源工具包工具（如 RoboCopy）运行参数的脚本。你的脚本可能包含一个源和目标网络名称数组，你遍历这些数组并生成在自定义和自动化参数下运行的 RoboCopy 实例。
 
 两个用于执行应用程序的 shell 方法是 `Exec` 和 `Run`。
@@ -1480,21 +1751,25 @@ WScript.Echo("Check Network using command line Ping")
 
 Set objShell = CreateObject("WScript.Shell")
 Set objWshScriptExec = objShell.Exec("%comspec% /c ping 127.0.0.1")
-```
-
-
 
 Set objStdOut = objWshScriptExec.StdOut
+
 While Not objStdOut.AtEndOfStream
+
     strLine = objStdOut.ReadLine
+
     if instr(strLine, "Re") then
+
         strOutput=strOutput & strLine & vbCrLf
+
     end if
+
 Wend
 
 WScript.Echo(strOutput)
+```
 
-这个脚本的前提是执行 shell 对象的 Exec 方法，并捕获、格式化和显示输出。Exec 方法的输出保存在一个新的 WshScriptExec 对象中。（在示例脚本中，这个对象存储在名为 objWshScriptExec 的变量中。）StdOut、StdIn 和 Stderr 都是 WshScriptExec 对象的属性，它们本身也具有额外的方法和属性。此示例脚本遍历 objWshScriptExec 对象的 StdOut 属性。
+这个脚本的前提是执行 shell 对象的 `Exec` 方法，并捕获、格式化和显示输出。`Exec` 方法的输出保存在一个新的 `WshScriptExec` 对象中。（在示例脚本中，这个对象存储在名为 `objWshScriptExec` 的变量中。）`StdOut`、`StdIn` 和 `Stderr` 都是 `WshScriptExec` 对象的属性，它们本身也具有额外的方法和属性。此示例脚本遍历 `objWshScriptExec` 对象的 `StdOut` 属性。
 
 > TextStream 对象稍后会在讨论 FileSystemObject 时详细说明。但是，适用于 TextStream 对象的许多方法和属性也适用于 Exec 方法的标准流。
 
@@ -1509,13 +1784,13 @@ While Not objStdOut.AtEndOfStream
 Wend
 ```
 
-此代码遍历输出的每一行，并查找字符串 "Re"，它对应于 ping 命令返回的 "Request timed out"（请求超时）或 "Reply from"（来自的回复）。如果脚本找到匹配项，它会将该行连接到之前的结果中，最后显示出来。VB 常量 vbCrLf 代表新行（在 JScript 中，换行符是 \n），并指示代码插入回车或换行符。使用这些字符来格式化你不想在单行上连续显示的输出。
+此代码遍历输出的每一行，并查找字符串 "Re"，它对应于 ping 命令返回的 "Request timed out"（请求超时）或 "Reply from"（来自的回复）。如果脚本找到匹配项，它会将该行连接到之前的结果中，最后显示出来。VB 常量 `vbCrLf` 代表新行（在 JScript 中，换行符是 `\n`），并指示代码插入回车或换行符。使用这些字符来格式化你不想在单行上连续显示的输出。
 
 ## Windows 管理员十大入门脚本
 
-%comspec% 环境变量代表系统的命令解释器。Windows 9x 使用 command.exe，而 Windows NT 及更高版本使用 cmd.exe。使用 %comspec% 环境变量可确保在可能运行不同版本 WSH 的更广泛平台上实现兼容性。
+`%comspec%` 环境变量代表系统的命令解释器。Windows 9x 使用 `command.exe`，而 Windows NT 及更高版本使用 `cmd.exe`。使用 `%comspec%` 环境变量可确保在可能运行不同版本 WSH 的更广泛平台上实现兼容性。
 
-旧版本的 WSH 不支持 Exec 对象，但你可以使用 Run 方法实现类似功能。Run 方法不支持访问标准输出，但你可以通过使用文本来规避此问题。只需将应用程序的输出重定向到一个文本文件（使用 >），然后从输出文本文件中读取结果。本章后面我们将介绍 FileSystemObject，并展示如何将 TextStream 对象与 Run 方法结合使用来实现这一目标。
+旧版本的 WSH 不支持 `Exec` 对象，但你可以使用 `Run` 方法实现类似功能。`Run` 方法不支持访问标准输出，但你可以通过使用文本来规避此问题。只需将应用程序的输出重定向到一个文本文件（使用 `>`），然后从输出文本文件中读取结果。本章后面我们将介绍 FileSystemObject，并展示如何将 TextStream 对象与 `Run` 方法结合使用来实现这一目标。
 
 ### WshShell-日志事件
 
@@ -1532,13 +1807,13 @@ objShell.LogEvent 0, strMessage
 
 运行此脚本会将一个事件记录到本地计算机的应用程序事件日志中，如图 3.3 所示。
 
-LogEvent 方法支持三个参数：type（类型）、message（消息）和 computer（计算机，可选）。
+`LogEvent` 方法支持三个参数：`type`（类型）、`message`（消息）和 `computer`（计算机，可选）。
 
 ```
 objShell.LogEvent type, message, computer
 ```
 
-message 是一个字符串，computer 是可选的。如果指定了计算机名称，该方法会将该消息记录到远程计算机的事件日志中。表 3.3 列出了可以使用 LogEvent 记录的不同类型的事件。
+`message` 是一个字符串，`computer` 是可选的。如果指定了计算机名称，该方法会将该消息记录到远程计算机的事件日志中。表 3.3 列出了可以使用 `LogEvent` 记录的不同类型的事件。
 
 ![](img/eafd0e1632fc08452cf4d68dbe912652_90_0.png)
 
@@ -1547,17 +1822,24 @@ message 是一个字符串，computer 是可选的。如果指定了计算机名
 **表 3.3** LogEvent 类型参数
 
 | 值 | 事件类型 |
+
 | :--- | :--- |
+
 | 0 | 成功 |
+
 | 1 | 错误 |
+
 | 2 | 警告 |
+
 | 4 | 信息 |
+
 | 8 | 审计成功 |
+
 | 16 | 审计失败 |
 
 ### WshShell–SendKeys
 
-WSH 支持 COM，可以直接与支持 COM 自动化的应用程序（如 Microsoft Office）进行互操作。自动化是对象模型将其 API 暴露给其他 COM 支持客户端的过程。例如，你可以创建一个将信息输出到新 Word 文档的脚本。但是，你可能需要与不支持自动化的应用程序进行交互。SendKeys 方法提供了一种驱动未暴露任何自动化对象的应用程序的方法。将 SendKeys 与 Exec 或 Run 以及 AppActivate 方法结合使用来操作应用程序。代码清单 3.7 中的示例展示了如何使用记事本创建一个简单的文本文件。
+WSH 支持 COM，可以直接与支持 COM 自动化的应用程序（如 Microsoft Office）进行互操作。自动化是对象模型将其 API 暴露给其他 COM 支持客户端的过程。例如，你可以创建一个将信息输出到新 Word 文档的脚本。但是，你可能需要与不支持自动化的应用程序进行交互。`SendKeys` 方法提供了一种驱动未暴露任何自动化对象的应用程序的方法。将 `SendKeys` 与 `Exec` 或 `Run` 以及 `AppActivate` 方法结合使用来操作应用程序。代码清单 3.7 中的示例展示了如何使用记事本创建一个简单的文本文件。
 
 **代码清单 3.7** SendKeys 使你能够操作不支持自动化的应用程序。
 
@@ -1575,13 +1857,13 @@ objShell.SendKeys "%{F4}"
 WScript.Echo("Used Notepad to create and save c:\test.txt")
 ```
 
-向程序发送按键可能是一个有风险的过程，因为控制时序和预测应用程序的结果可能很困难。例如，尝试运行上面的脚本两次。注意，由于第一次运行时文件已经存在，记事本会提示你是否替换该文件。由于我们没有为这个额外的按键操作编写代码，记事本实际上会跳出脚本。还要注意 Sleep 函数的使用。这个延迟会放慢脚本的执行速度，以确保前面的任务已经完成。例如，如果没有第一个延迟，脚本可能会在记事本完成加载之前尝试激活它。
+向程序发送按键可能是一个有风险的过程，因为控制时序和预测应用程序的结果可能很困难。例如，尝试运行上面的脚本两次。注意，由于第一次运行时文件已经存在，记事本会提示你是否替换该文件。由于我们没有为这个额外的按键操作编写代码，记事本实际上会跳出脚本。还要注意 `Sleep` 函数的使用。这个延迟会放慢脚本的执行速度，以确保前面的任务已经完成。例如，如果没有第一个延迟，脚本可能会在记事本完成加载之前尝试激活它。
 
-> 由于前面提到的原因，请避免使用 SendKeys，除非是最基础的应用程序，并且即使那样，也要在绝对确定应用程序每次都会如何响应时才使用。
+> 由于前面提到的原因，请避免使用 `SendKeys`，除非是最基础的应用程序，并且即使那样，也要在绝对确定应用程序每次都会如何响应时才使用。
 
-shell 对象方法 AppActivate 通过应用程序名称或进程 ID 激活应用程序，并将焦点切换到该应用程序。如果你打开了多个同名应用程序（并且选择不使用进程 ID），AppActivate 会随机将焦点切换到其中一个。
+shell 对象方法 `AppActivate` 通过应用程序名称或进程 ID 激活应用程序，并将焦点切换到该应用程序。如果你打开了多个同名应用程序（并且选择不使用进程 ID），`AppActivate` 会随机将焦点切换到其中一个。
 
-SendKeys 方法的参数包括你希望发送的字符字符串。表 3.4 分析了发送到记事本的字符串 `%fac:\test.txt%s`。
+`SendKeys` 方法的参数包括你希望发送的字符字符串。表 3.4 分析了发送到记事本的字符串 `%fac:\test.txt%s`。
 
 ```
 objShell.SendKeys "%fac:\test.txt%s"
@@ -1590,13 +1872,16 @@ objShell.SendKeys "%fac:\test.txt%s"
 ##### 表 3.4 SendKeys 方法参数示例分析
 
 | %f | a | C:\test.txt | %s |
+
 |---|---|---|---|
+
 | Alt-F | 另存为 | C:\test.txt | 保存 |
+
 | 访问文件菜单 | 选择另存为的快捷键 A | 结果对话框默认将光标置于文件名字段，因此只需发送文件名 | 使用 Alt-S 保存文件 |
 
 ### WshShell–环境变量
 
-WSH 通过 shell 对象的 Environment 属性提供对系统环境变量的访问。此属性返回一个 WshEnvironment 对象的集合，可以使用 VBScript 的 For...Each 循环或 JScript 的 Enumerator 对象进行枚举。
+WSH 通过 shell 对象的 `Environment` 属性提供对系统环境变量的访问。此属性返回一个 `WshEnvironment` 对象的集合，可以使用 VBScript 的 `For...Each` 循环或 JScript 的 `Enumerator` 对象进行枚举。
 
 环境分为四个不同的组：SYSTEM（系统）、USER（用户）、VOLATILE（易失性）和 PROCESS（进程）。代码清单 3.8 中的脚本显示了当前的 SYSTEM 和 USER 环境变量。
 
@@ -1618,7 +1903,7 @@ For Each objVariable In colEnvironment
 Next
 ```
 
-注意此集合与前述一些集合的区别。你不需要 item 方法来访问对象；你可以直接访问它。要访问特定的环境变量，请在集合对象中明确指定它，如下所示：
+注意此集合与前述一些集合的区别。你不需要 `item` 方法来访问对象；你可以直接访问它。要访问特定的环境变量，请在集合对象中明确指定它，如下所示：
 
 ```
 Set objShell = CreateObject("WScript.Shell")
@@ -1641,17 +1926,22 @@ WSH 通过使用 FileSystemObject (FSO) 对象模型来支持对文件系统的�
 FSO 模型的对象包括以下内容：
 
 - FileSystemObject
+
 - Drive
+
 - Drives
+
 - File
+
 - Files
+
 - Folder
+
 - Folders
+
 - TextStream
 
 代码清单 3.9 中的示例展示了如何使用 FSO 对象模型从路径（在此示例中是 c: 的根目录）返回一组文件夹和文件。到目前为止，你应该已经熟悉了创建对象并使用该对象访问其他对象、方法和属性的过程。
-
-
 
 ### 代码清单 3.9 使用 FileSystemObject 列出文件夹中的子文件夹和文件
 
@@ -1744,17 +2034,29 @@ ipconfig /all > C:\DOCUME~1\temp\LOCALS~1\Temp\out.txt
 ##### 表 3.5 Run 方法窗口显示值
 
 | 值 | 描述 |
+
 |---|---|
+
 | 0 | 隐藏窗口并激活另一个窗口。 |
+
 | 1 | 首次显示窗口时使用。激活并以原始大小和位置显示窗口。 |
+
 | 2 | 以最小化形式激活窗口。 |
+
 | 3 | 以最大化形式激活窗口。 |
+
 | 4 | 以当前大小和位置显示窗口，但保持活动窗口活动。 |
+
 | 5 | 激活并以当前大小和位置显示窗口。 |
+
 | 6 | 最小化指定窗口并激活下一个窗口（在 Z 序中）。 |
+
 | 7 | 最小化窗口，但保持活动窗口活动。 |
+
 | 8 | 以当前状态显示窗口，但保持活动窗口活动。 |
+
 | 9 | 将最小化的窗口恢复为其原始大小和位置。 |
+
 | 10 | 根据调用程序窗口的状态显示窗口。 |
 
 `wait on return` 参数定义了命令执行完毕后 `Run` 方法应执行的操作。将该值设置为 `True` 会暂停脚本的执行，直到命令完成，然后恢复执行。例如，如果您将代码清单 3.10 中的命令更改为 `tracert` 或其他通常需要较长时间完成的命令，并将 `wait on return` 设置为 `False`，脚本将不会等待 `tracert` 完成；相反，脚本仅显示 `tracert` 开始报告的内容。但请注意，`tracert` 会继续在后台运行。稍后检查会发现 `tracert` 已完成将输出写入 `%temp%` 目录中的文本文件。
@@ -1788,7 +2090,7 @@ Function ReadResults(strFileName)
 
 最后一个可选参数（在之前的代码示例中未使用）是格式值，用于指定文件应以 Unicode、ASCII 还是系统默认字符集打开。（Unicode 字符集是 ASCII 的超集，提供多语言字符支持。）
 
-与进程结束时会自动关闭的标准流不同，TextStream 对象必须显式关闭。我们通过 Close 方法来实现。最后，我们将包含所读文件内容的字符串赋值给函数名并结束函数。
+与进程结束时会自动关闭的标准流不同，TextStream 对象必须显式关闭。我们通过 `Close` 方法来实现。最后，我们将包含所读文件内容的字符串赋值给函数名并结束函数。
 
 ```
 objTextFile.Close
@@ -1801,13 +2103,13 @@ End function
 
 ### Echo、StdOut.Write 和 PopUp
 
-在脚本运行时向用户显示信息是一个有用且往往必要的功能。WSH 支持多种向用户显示信息的方法，其中一些已在前面演示过。最常见的方法是 Echo、StdOut.Write 和 PopUp。
+在脚本运行时向用户显示信息是一个有用且往往必要的功能。WSH 支持多种向用户显示信息的方法，其中一些已在前面演示过。最常见的方法是 `Echo`、`StdOut.Write` 和 `PopUp`。
 
 #### 基本 Echo
 
-WScript.Echo 是最简单的显示方法。它适用于 cscript.exe 和 wscript.exe，分别在控制台中显示一行文本（带换行符）或在消息框中显示文本。
+`WScript.Echo` 是最简单的显示方法。它适用于 `cscript.exe` 和 `wscript.exe`，分别在控制台中显示一行文本（带换行符）或在消息框中显示文本。
 
-图 3.4 和图 3.5 展示了使用代码清单 3.11 中的代码时，WScript.Echo 在 cscript.exe 和 wscript.exe 引擎下的示例输出。
+图 3.4 和图 3.5 展示了使用代码清单 3.11 中的代码时，`WScript.Echo` 在 `cscript.exe` 和 `wscript.exe` 引擎下的示例输出。
 
 ![](img/eafd0e1632fc08452cf4d68dbe912652_98_0.png)
 
@@ -1826,7 +2128,7 @@ WScript.Echo "Take 2- Line 1" , "Take 2- Line 2", strLine4
 
 **图 3.5** 通过 GUI *wscript.exe* WSH 引擎运行 WScript.Echo。
 
-使用 *wscript.exe* 时，每次调用 Echo 方法都会创建一个新对话框。要将多个结果输出到单个对话框中，可以考虑将每次调用的结果存储到一个临时字符串中，然后在脚本完成时显示该字符串，如代码清单 3.12 所示。
+使用 *wscript.exe* 时，每次调用 `Echo` 方法都会创建一个新对话框。要将多个结果输出到单个对话框中，可以考虑将每次调用的结果存储到一个临时字符串中，然后在脚本完成时显示该字符串，如代码清单 3.12 所示。
 
 **代码清单 3.12** 将字符串拼接到单个变量中，以便在单个 Echo 对话框中显示
 
@@ -1871,7 +2173,7 @@ Next
 
 **图 3.7** WScript.Echo 插入换行符，而 StdOut.Write 在同一行显示。
 
-调用 PopUp 方法非常简单。代码清单 3.14 中的代码创建一个带有感叹号图标以及"是"、"否"和"取消"按钮的对话框。脚本随后根据所选按钮执行相应操作。
+调用 `PopUp` 方法非常简单。代码清单 3.14 中的代码创建一个带有感叹号图标以及"是"、"否"和"取消"按钮的对话框。脚本随后根据所选按钮执行相应操作。
 
 **代码清单 3.14** PopUp 方法
 
@@ -1933,15 +2235,20 @@ Next
 
 **图 3.9** Network 对象为脚本提供对打印机、共享和其它网络信息的访问。
 
-请注意，EnumPrinterConnections 方法返回一个打印机集合，但后续遍历集合的循环使用的是 for...next 循环而非 for...each 循环。这种差异是因为返回的集合对象本身并不是一个对象，而是一个值数组，交替包含打印机连接和打印机名称。
+请注意，`EnumPrinterConnections` 方法返回一个打印机集合，但后续遍历集合的循环使用的是 `for...next` 循环而非 `for...each` 循环。这种差异是因为返回的集合对象本身并不是一个对象，而是一个值数组，交替包含打印机连接和打印机名称。
 
 实际数组如下表所示。
 
 | 数组元素 | 值 |
+
 |---|---|
+
 | 0 | USB001 |
+
 | 1 | EPSON Stylus Photo 1280 |
+
 | 2 | LPT1: |
+
 | 3 | \\omaha\HP LaserJet 5P |
 
 因此，我们以步长 2 遍历数组，在单次循环迭代中同时打印 `colPrinter.Item(i)` 和 `colPrinter.Item(i+1)`。使用 `EnumNetworkDrives` 方法枚举驱动器会返回类似的基于数组的集合。
@@ -1956,9 +2263,7 @@ Windows Management Instrumentation（WMI，Windows 管理规范）是 Microsoft 
 
 WBEM 定义了 Common Information Model（CIM，公共信息模型），用于定义对象层次结构。例如，你可以使用相同的 CIM 函数查询惠普® 服务器或戴尔® 服务器的风扇转速。供应商为其设备提供符合 WBEM 和 CIM 标准的模块，可通过一组通用 API 进行访问。这些对象和类构成了 WMI 对象模型。
 
-WMI 在 Windows 2000 及更高版本中已预装。对于旧版系统，可以从 Microsoft 下载并安装 WMI Core。此外，Microsoft 提供 GUI 工具来检查给定计算机的 WMI *命名空间*。CIM 被分为多个命名空间，每个命名空间包含一个或多个类。类是对象的逻辑分组；例如，WMI Win32_Process 类包含与计算机上运行的进程相关的对象、方法和属性。这些工具为 WMI 程序员提供了探索所有可用的不同类和对象的良好机会。（WMI Core、WMI Tools
-
-
+WMI 在 Windows 2000 及更高版本中已预装。对于旧版系统，可以从 Microsoft 下载并安装 WMI Core。此外，Microsoft 提供 GUI 工具来检查给定计算机的 WMI *命名空间*。CIM 被分为多个命名空间，每个命名空间包含一个或多个类。类是对象的逻辑分组；例如，WMI `Win32_Process` 类包含与计算机上运行的进程相关的对象、方法和属性。这些工具为 WMI 程序员提供了探索所有可用的不同类和对象的良好机会。（WMI Core、WMI Tools
 
 其他有用的 WMI 信息可以在 *http://msdn.microsoft.com/library/default.asp?url=/downloads/list/wmi.asp* 找到。
 
@@ -1990,9 +2295,9 @@ For Each objQFE in colQFE
 Next
 ```
 
-WMI 的脚本 API 称为 WbemScripting。要访问给定计算机上的对象，必须实例化一个 SWbemLocator 对象，该对象返回一个 SWbemServices 对象。ConnectServer 方法允许你指定特定服务器的名称。如清单 3.16 中所使用的，ConnectServer 方法连接 localhost 计算机和 root/cimv2 命名空间。你还可以选择指定用于连接的用户名和密码。
+WMI 的脚本 API 称为 WbemScripting。要访问给定计算机上的对象，必须实例化一个 `SWbemLocator` 对象，该对象返回一个 `SWbemServices` 对象。`ConnectServer` 方法允许你指定特定服务器的名称。如清单 3.16 中所使用的，`ConnectServer` 方法连接 localhost 计算机和 `root/cimv2` 命名空间。你还可以选择指定用于连接的用户名和密码。
 
-下一行将 Security_.ImpersonationLevel 设置为 3，这对应于 wbemImpersonationLevelImpersonate。此级别指示 WMI 对象在调用者的上下文中运行，并且是 WMI 核心组件 1.5（Windows 2000 及更高版本）中的默认级别。在早期版本的 WMI 中，默认级别设置为 ImpersonationLevel=Identify，这可能会导致脚本失败。如果你计划在早期版本的 WMI 核心组件下远程运行脚本，请确保将安全性设置为 impersonate。
+下一行将 `Security_.ImpersonationLevel` 设置为 3，这对应于 `wbemImpersonationLevelImpersonate`。此级别指示 WMI 对象在调用者的上下文中运行，并且是 WMI 核心组件 1.5（Windows 2000 及更高版本）中的默认级别。在早期版本的 WMI 中，默认级别设置为 `ImpersonationLevel=Identify`，这可能会导致脚本失败。如果你计划在早期版本的 WMI 核心组件下远程运行脚本，请确保将安全性设置为 impersonate。
 
 建立连接后，剩余的脚本会查询 WMI 以获取所需的数据类。如第 2 章简要介绍的那样，有几种查询数据的方法可用。使用 **InstancesOf** 或 **ExecQuery** 方法返回数据集合。
 
@@ -2002,7 +2307,7 @@ Set colQFE = objServices.InstancesOf ("Win32_QuickFixEngineering")
 Set colQFE = objServices.ExecQuery ("Select * from Win32_QuickFixEngineering")
 ```
 
-ExecQuery 方法支持 Windows 管理规范查询语言（WQL）。与仅限于基本查询指定类的较简单 InstancesOf 方法相比，该语言提供了额外的灵活性。
+`ExecQuery` 方法支持 Windows 管理规范查询语言（WQL）。与仅限于基本查询指定类的较简单 `InstancesOf` 方法相比，该语言提供了额外的灵活性。
 
 ### 使用 WMI Moniker
 
@@ -2013,11 +2318,11 @@ Set colQFE=GetObject("WinMgmts:{impersonationLevel=impersonate}" _
 & "!//localhost/root/cimv2:Win32_QuickFixEngineering").Instances_
 ```
 
-> 在上面的代码行中，第一个下划线（_）表示行继续，与前面的示例一样——代码应该在单行上。然而，第二个下划线是 Instances_ 方法名称的一部分，是必需的。它将该方法与底层对象的方法区分开来。
+> 在上面的代码行中，第一个下划线（`_`）表示行继续，与前面的示例一样——代码应该在单行上。然而，第二个下划线是 `Instances_` 方法名称的一部分，是必需的。它将该方法与底层对象的方法区分开来。
 
-此 moniker 返回一个 SWBemObject（不是集合），因此我们可以使用 SWBemObject.Instances_ 方法返回一个集合，然后像前面的示例一样进行迭代。
+此 moniker 返回一个 `SWBemObject`（不是集合），因此我们可以使用 `SWBemObject.Instances_` 方法返回一个集合，然后像前面的示例一样进行迭代。
 
-清单 3.17 中的代码使用 InstancesOf 方法返回类似的对象。
+清单 3.17 中的代码使用 `InstancesOf` 方法返回类似的对象。
 
 #### 清单 3.17 WMI moniker 提供了一种连接到 WMI 类的更短方式
 
@@ -2068,7 +2373,7 @@ For Each objClass in colClass
 Next
 ```
 
-图 3.11 显示了此脚本以输入参数 Win32_Processor 为例的运行结果。
+图 3.11 显示了此脚本以输入参数 `Win32_Processor` 为例的运行结果。
 
 ![WMI 从本地或远程系统提供大量信息。](img/eafd0e1632fc08452cf4d68dbe912652_109_0.png)
 
@@ -2078,7 +2383,7 @@ Next
 
 ### 如何查找内容：查询 WMI
 
-第 2 章中的一些示例演示了使用 WQL 的函数和方法——也称为 WMI 的结构化查询语言（SQL）。WQL 提供了一种强大的方法，用于从庞大的 WMI 存储库中提取特定数据。此外，构造良好的 WQL 查询比遍历整个数据集查找特定信息执行得更快。WQL 允许你执行数据、事件和架构查询。接下来的示例侧重于数据查询，因为这种查询类型可能是你脚本的大部分内容。请参阅前面的事件查询示例（第 2 章，事件部分）和架构查询示例。WQL 是 SQL 的子集。然而，学习返回基本 WMI 数据的基础知识一点也不复杂。以下示例逐步介绍查询和显示有关系统上运行进程的信息。清单 3.21 展示了使用 ExecQuery 方法的 WQL 查询的基本框架。此示例列出了本地主机系统上的所有进程。
+第 2 章中的一些示例演示了使用 WQL 的函数和方法——也称为 WMI 的结构化查询语言（SQL）。WQL 提供了一种强大的方法，用于从庞大的 WMI 存储库中提取特定数据。此外，构造良好的 WQL 查询比遍历整个数据集查找特定信息执行得更快。WQL 允许你执行数据、事件和架构查询。接下来的示例侧重于数据查询，因为这种查询类型可能是你脚本的大部分内容。请参阅前面的事件查询示例（第 2 章，事件部分）和架构查询示例。WQL 是 SQL 的子集。然而，学习返回基本 WMI 数据的基础知识一点也不复杂。以下示例逐步介绍查询和显示有关系统上运行进程的信息。清单 3.21 展示了使用 `ExecQuery` 方法的 WQL 查询的基本框架。此示例列出了本地主机系统上的所有进程。
 
 #### 清单 3.21 基本 WQL 查询
 
@@ -2104,7 +2409,7 @@ strWQL="SELECT * from Win32_Process"
 SELECT [某内容] FROM [某处] WHERE [某内容] [与] [其他内容比较]
 ```
 
-以下示例查询说明了这一点。要使用这些查询，只需将新的 strWQL 值替换到清单 3.21 中。
+以下示例查询说明了这一点。要使用这些查询，只需将新的 `strWQL` 值替换到清单 3.21 中。
 
 ```
 strWQL="SELECT * FROM Win32_Service WHERE State='Running' "_
@@ -2115,11 +2420,9 @@ strWQL="SELECT HotFixID FROM Win32_QuickFixEngineering"
 strWQL="SELECT Name,Size FROM Win32_LogicalDisk WHERE MediaType=12"
 ```
 
-第一个示例返回所有以手动模式运行的服务集合。第二个示例仅返回目标系统上安装的任何修补程序的 HotFixID，第三个示例返回任何固定硬盘介质的名称和大小（对应于 MediaType 为 12）。还记得感染未修补版本 SQL Server 的 SQL Slammer 蠕虫吗？想象一下，遍历 Win32_Services 查找 SQL Server 的运行实例，然后枚举 Win32_QuickFixEngineering 查看计算机是否已打补丁，这是多么容易。
+第一个示例返回所有以手动模式运行的服务集合。第二个示例仅返回目标系统上安装的任何修补程序的 `HotFixID`，第三个示例返回任何固定硬盘介质的名称和大小（对应于 `MediaType` 为 12）。还记得感染未修补版本 SQL Server 的 SQL Slammer 蠕虫吗？想象一下，遍历 `Win32_Services` 查找 SQL Server 的运行实例，然后枚举 `Win32_QuickFixEngineering` 查看计算机是否已打补丁，这是多么容易。
 
-
-
- # IT 管理员 Windows 入门十大脚本精选
+# IT 管理员 Windows 入门十大脚本精选
 
 WQL 查询由多个关键字组成，这里介绍了其中的主要关键字。更复杂的示例将在后续章节的一些脚本中演示。所有关键字均在 WMI SDK 中定义。
 
@@ -2186,20 +2489,30 @@ ADSI 提供了一组单一、定义明确的对象、方法和属性，用于与
 
 #### 相对可分辨名称（RDN）
 
-*相对可分辨名称*（RDN）是对象及其属性类型的简单名称；例如，OU=Finance，或 CN=jeff，或 CN=Server1。一些 RDN 属性和示例如表 3.6 所示。
+*相对可分辨名称*（RDN）是对象及其属性类型的简单名称；例如，`OU=Finance`，或 `CN=jeff`，或 `CN=Server1`。一些 RDN 属性和示例如表 3.6 所示。
 
 **表 3.6 相对可分辨名称属性**
 
 | 属性 | 字符串 | 示例 |
+
 | :--- | :--- | :--- |
+
 | 域组件 | DC | DC=Some, DC=Domain, DC=com |
+
 | 通用名称 | CN | CN=Jeff |
+
 | 组织单元 | OU | OU=Users |
+
 | 组织 | O | O= |
+
 | 街道名称 | STREET | STREET= |
+
 | 地区 | L | L= |
+
 | 州或省 | ST | ST= |
+
 | 国家 | C | C= |
+
 | 用户 ID | UID | UID= |
 
 #### 可分辨名称
@@ -2246,8 +2559,6 @@ WinNT://europa/jeff , user
 LDAP://CN=jeff, OU=users, DC=home, DC=blackstatic, dc=com
 ```
 
-
-
 ### ADSI 技术概要
 
 ADSI 对象是组件对象模型（COM）对象，我们在第 2 章中已经介绍过。访问和使用这些对象非常简单。首先，你需要获取对象的引用。然后请求你希望查看的属性（例如，使用 `GetInfo` 或 `Get` 方法）。之后你就可以查看或操作这些信息。用于访问 ADSI 对象的接口名称叫做 `IADs`，所有 ADSI 对象都支持该接口的方法和属性。`IADs` 接口定义了 ADSI 对象的命名方式、其父对象以及访问方式。
@@ -2257,57 +2568,92 @@ ADSI 对象是组件对象模型（COM）对象，我们在第 2 章中已经介
 **表 3.7** LDAP 和 WinNT 提供程序的 IADs 对象
 
 | LDAP 的 ADSI 对象 | WinNT 的 ADSI 对象 |
+
 |---|---|
+
 | IADs | IADs |
+
 | IADsClass | IADsClass |
+
 | | IADsCollection |
+
 | | IADsComputer |
+
 | | IADsComputerOperations |
+
 | IADsContainer | IADsContainer |
+
 | IADsDeleteOps | |
+
 | | IADsDomain |
+
 | | IADsFileService |
+
 | | IADsFileServiceOperations |
+
 | | IADsFileShare |
+
 | IADsGroup | IADsGroup |
+
 | IADsLocality | |
+
 | IADsMembers | IADsMembers |
+
 | IADsNameTranslate | |
+
 | IADsOU | |
+
 | IADsObjectOptions | |
+
 | IADsOpenDSObject | IADsOpenDSObject |
+
 | IADsOU | |
+
 | IADsPathname | |
+
 | | IADsPrintJob |
+
 | | IADsPrintJobOperations |
+
 | IADsPrintQueue | IADsPrintQueue |
+
 | IADsPrintQueueOperations | IADsPrintQueueOperations |
+
 | IADsProperty | IADsProperty |
+
 | IADsPropertyList | IADsPropertyList |
+
 | | IADsResource |
+
 | | IADsService |
+
 | | IADsServiceOperations |
+
 | | IADsSession |
+
 | IADsSyntax | IADsSyntax |
+
 | IADsUser | IADsUser |
+
 | IDirectoryObject | |
+
 | IDirectorySearch | |
 
 每个接口都支持许多对象特定的方法和属性，Microsoft ADSI SDK 提供了很好的参考，可以查阅每个接口的详细信息。你还可以通过脚本枚举给定对象的属性，尽管这不像枚举 WMI 类的属性那么容易。我们将在稍后讨论更多关于访问 ADSI 对象的内容时介绍该脚本。
 
 #### 目录服务层次结构
 
-AD 是容器对象和叶对象的层次结构。容器对象可以包含其他容器对象和叶对象。叶对象不能包含对象。所有容器对象都支持 IADsContainer 接口。IADsContainer 的方法包括创建和删除新对象，以及访问所包含对象的信息。
+AD 是容器对象和叶对象的层次结构。容器对象可以包含其他容器对象和叶对象。叶对象不能包含对象。所有容器对象都支持 `IADsContainer` 接口。`IADsContainer` 的方法包括创建和删除新对象，以及访问所包含对象的信息。
 
 #### 架构
 
 AD 架构定义了目录可以存储的所有数据类型。如果你安装过 Exchange 2000 或 Microsoft Internet Security and Accelerator® (ISA) Server，你可能记得"扩展"架构。这意味着这些产品向 AD 中添加了信息，以增强特定对象或资源。仅 Exchange 2000 就会向 AD 添加 Exchange 容器。
 
-AD 中的每个对象都必须遵循架构定义。例如，一个 OU 包含名称、地址、多个电话号码以及其他 60 多个属性。但是，如果你想为每个用户添加员工编号，那么你可以尝试将该编号放入现有属性中，或者扩展架构并添加一个新属性，例如名为 EmployeeNumber。
+AD 中的每个对象都必须遵循架构定义。例如，一个 OU 包含名称、地址、多个电话号码以及其他 60 多个属性。但是，如果你想为每个用户添加员工编号，那么你可以尝试将该编号放入现有属性中，或者扩展架构并添加一个新属性，例如名为 `EmployeeNumber`。
 
 ### 使用脚本绑定对象
 
-使用 ADSI 接口编写脚本时，第一步是绑定到所需对象。清单 3.23 中的示例展示了如何使用 DN 绑定到 AD 用户对象 Trooper。从中我们可以列出该对象的多个 IADs 属性。
+使用 ADSI 接口编写脚本时，第一步是绑定到所需对象。清单 3.23 中的示例展示了如何使用 DN 绑定到 AD 用户对象 Trooper。从中我们可以列出该对象的多个 `IADs` 属性。
 
 #### 清单 3.23 使用 ADSI LDAP 提供程序绑定到用户对象
 
@@ -2325,11 +2671,11 @@ WScript.Echo "The Schema: " & objUser.Schema
 WScript.Echo "The Class: " & objUser.Class
 ```
 
-此示例中的前两行定义了 DN，并将对象 objUser 绑定到目录服务对象的 ADsPath。接下来，示例使用六个 IADs 属性访问并显示目录中的用户属性信息。此示例的输出如图 3.13 所示。
+此示例中的前两行定义了 DN，并将对象 `objUser` 绑定到目录服务对象的 `ADsPath`。接下来，示例使用六个 `IADs` 属性访问并显示目录中的用户属性信息。此示例的输出如图 3.13 所示。
 
 图 3.13 使用 ADSI 从 Active Directory 检索用户信息。
 
-注意，如果将 DN 更改为另一个属性，例如组织单位，脚本仍然可以运行，如图 3.14 所示。此脚本仅访问所有 ADSI 对象都可用的 IADs 属性。要查看 AD 层次结构，请将清单 3.23 中的 DN 更改为表示 OU home users。
+注意，如果将 DN 更改为另一个属性，例如组织单位，脚本仍然可以运行，如图 3.14 所示。此脚本仅访问所有 ADSI 对象都可用的 `IADs` 属性。要查看 AD 层次结构，请将清单 3.23 中的 DN 更改为表示 OU home users。
 
 ```
 strPath="LDAP://OU=Home Users, DC=home, DC=blackstatic, DC=com"
@@ -2337,9 +2683,9 @@ strPath="LDAP://OU=Home Users, DC=home, DC=blackstatic, DC=com"
 
 图 3.14 Active Directory 层次结构中 OU 的高级属性。
 
-图 3.13 和图 3.14 展示了用户 Trooper 和 OU Home Users 的架构之间的关系。这些示例说明了 AD 的层次组织结构，以及如何通过架构属性唯一标识对象的位置。同时注意 class 属性的值。第一个示例指向一个遵循 user 类的用户对象。第二个示例指向一个 OU 并遵循该类。识别类很重要，因为它们有助于确定可用的其他 IADs 接口，以便从目录对象中提取额外的特定于类的属性（尽管类名和 IADs 接口之间不一定总是存在 1:1 的对应关系）。
+图 3.13 和图 3.14 展示了用户 Trooper 和 OU Home Users 的架构之间的关系。这些示例说明了 AD 的层次组织结构，以及如何通过架构属性唯一标识对象的位置。同时注意 `class` 属性的值。第一个示例指向一个遵循 user 类的用户对象。第二个示例指向一个 OU 并遵循该类。识别类很重要，因为它们有助于确定可用的其他 `IADs` 接口，以便从目录对象中提取额外的特定于类的属性（尽管类名和 `IADs` 接口之间不一定总是存在 1:1 的对应关系）。
 
-例如，既然我们知道该类是 user，我们就可以提取任何 IADsUser 属性，如清单 3.24 所示，通过使用 Select Case 语句来实现。
+例如，既然我们知道该类是 user，我们就可以提取任何 `IADsUser` 属性，如清单 3.24 所示，通过使用 `Select Case` 语句来实现。
 
 #### 清单 3.24 根据对象的 ADSI 类执行操作
 
@@ -2403,8 +2749,6 @@ Next
 ```
 
 此脚本的输出如图 3.16 所示。
-
-
 
 #### 图 3.16
 
@@ -2552,8 +2896,6 @@ Set objOU = GetObject(strPath)
 Set objNewUser=objOU.Create("User","cn=New User")
 ```
 
-
-
 #### 使用最少选项集创建的用户帐户是一个空帐户。
 
 ![](img/eafd0e1632fc08452cf4d68dbe912652_128_0.png)
@@ -2575,7 +2917,7 @@ objNewUser.SetInfo
 
 使用类似的方法来创建其他目录对象。清单 3.29 中的示例展示了如何创建新的 OU、组和用户，然后将该新用户添加到新创建的组中。这些示例让你了解如何操作目录中的对象。它们展示了如何使用 LDAP 提供程序，你可以使用类似的方法和对象，通过 WinNT 提供程序将本地用户添加到你的计算机中。
 
-创建组对象时的一个可选属性是 groupType。此属性允许你定义该组是本地组、域本地组、全局组还是通用组，以及它是通讯组还是安全组。该脚本包含组类型常量，你可以将它们的值相加来组合使用。例如，要创建一个通用安全组，你需要将 groupType 属性设置为：
+创建组对象时的一个可选属性是 `groupType`。此属性允许你定义该组是本地组、域本地组、全局组还是通用组，以及它是通讯组还是安全组。该脚本包含组类型常量，你可以将它们的值相加来组合使用。例如，要创建一个通用安全组，你需要将 `groupType` 属性设置为：
 
 ```
 ADS_GROUP_TYPE_UNIVERSAL_GROUP + ADS_GROUP_TYPE_SECURITY_ENABLED
@@ -2593,7 +2935,7 @@ ADS_GROUP_TYPE_UNIVERSAL_GROUP + ADS_GROUP_TYPE_SECURITY_ENABLED
 0x80000008.
 ```
 
-在脚本中表示此十六进制值的另一种方式是 &H80000008。
+在脚本中表示此十六进制值的另一种方式是 `&H80000008`。
 
 #### 清单 3.29 创建用户并将其分配到新的 OU 和组
 
@@ -2665,7 +3007,7 @@ Set objConnection = CreateObject("ADODB.Connection")
 objConnection.Provider = "ADsDSOObject"
 ```
 
-你可以选择设置连接的身份验证，例如用户名和密码。如果不指定身份验证信息，则使用当前登录用户的凭据。下面的代码展示了这些可选的连接属性，以及修改后的 `Connection::Open` 方法（传递用户名和密码）。Open 方法的第一个参数是表示 DSN、用户名和密码的替代字符串，它是可选的。
+你可以选择设置连接的身份验证，例如用户名和密码。如果不指定身份验证信息，则使用当前登录用户的凭据。下面的代码展示了这些可选的连接属性，以及修改后的 `Connection::Open` 方法（传递用户名和密码）。`Open` 方法的第一个参数是表示 DSN、用户名和密码的替代字符串，它是可选的。
 
 ```
 objConnection.Properties("User ID") = strUser
@@ -2680,18 +3022,18 @@ objConnection.Open "", strUser, strPassword
 objConnection.Open
 ```
 
-调用 Open 方法后，连接即被验证并建立。如果你选择使用特定身份验证但凭据不正确，脚本将在尝试打开连接时返回错误。
+调用 `Open` 方法后，连接即被验证并建立。如果你选择使用特定身份验证但凭据不正确，脚本将在尝试打开连接时返回错误。
 
 ##### Command
 
-Command 对象是可选的，但它包含用于调控查询的附加参数。创建一个新的 Command 对象，并将 ActiveConnection 设置为先前创建的 Connection 对象。
+Command 对象是可选的，但它包含用于调控查询的附加参数。创建一个新的 Command 对象，并将 `ActiveConnection` 设置为先前创建的 Connection 对象。
 
 ```
 Set objCommand = CreateObject("ADODB.Command")
 Set objCommand.ActiveConnection = objConnection
 ```
 
-接下来，设置 CommandText 以定义查询。（此代码都在一行中，但由于页面宽度限制，已使用行续接字符 (_) 多次拆分。）
+接下来，设置 `CommandText` 以定义查询。（此代码都在一行中，但由于页面宽度限制，已使用行续接字符 (`_`) 多次拆分。）
 
 ```
 objCommand.CommandText = "<LDAP://DC=Home, DC=Blackstatic, DC=com>;" _
@@ -2704,7 +3046,7 @@ ADSI ADO 提供程序理解两种查询方言：LDAP 方言和 SQL 方言。清�
 
 Command 对象支持许多可选参数。这些参数称为 Command 对象的属性，包括 Timeout、Time Limit、Sort on、Cache results 等。
 
-最后，在设置完 Command 对象的属性后，调用 Command::Execute 方法执行查询并将结果返回到 RecordSet 对象。
+最后，在设置完 Command 对象的属性后，调用 `Command::Execute` 方法执行查询并将结果返回到 RecordSet 对象。
 
 ```
 Set objRecordset=objCommand.Execute
@@ -2712,7 +3054,7 @@ Set objRecordset=objCommand.Execute
 
 ## RecordSet
 
-RecordSet 对象包含查询的结果，用于遍历和显示它们。脚本使用 EOF（文件末尾）和 MoveNext 方法遍历集合。脚本使用 Fields、Item 和 Value 方法及属性显示结果的名称和值，如下所示：
+RecordSet 对象包含查询的结果，用于遍历和显示它们。脚本使用 EOF（文件末尾）和 `MoveNext` 方法遍历集合。脚本使用 `Fields`、`Item` 和 `Value` 方法及属性显示结果的名称和值，如下所示：
 
 ```
 While Not objRecordset.EOF
@@ -2722,17 +3064,20 @@ While Not objRecordset.EOF
 Wend
 ```
 
-
-
 ### SQL 与 LDAP 查询方言
 
 ADSI 查询支持 LDAP 或 SQL 两种查询方言。两种查询类型都包含相同的基本参数：源、条件和返回字段；然而，它们的语法截然不同。表 3.8 展示了两种方言之间的基本查询参数映射。
 
 | | LDAP | SQL |
+
 |---|---|---|
+
 | source | 基础判别名 | FROM |
+
 | criteria | 搜索过滤器 | WHERE |
+
 | returned fields | 属性 | SELECT 属性 |
+
 | directory search instructions | | 搜索范围 |
 
 在代码中，这两种方言采用以下形式：
@@ -2758,39 +3103,46 @@ SQL 查询的语法与之前讨论的 WQL 查询类似。LDAP 方言包含四个
 
 #### 基础判别名
 
-基础判别名用于标识查询的起点，其形式为一个 ADsPath。基础判别名类似于 SQL 中的 FROM 子句。请将 ADsPath 括在方括号中。
+基础判别名用于标识查询的起点，其形式为一个 `ADsPath`。基础判别名类似于 SQL 中的 FROM 子句。请将 `ADsPath` 括在方括号中。
 
 #### 搜索过滤器
 
 LDAP 搜索过滤器运算符用于定义限制查询结果的条件。通过嵌套过滤器，可以实现一种强大且灵活的方式来定义返回的数据集。过滤器必须括在圆括号中。
 
-以下代码返回所有 objectClass 为 user 的对象：
+以下代码返回所有 `objectClass` 为 user 的对象：
 
 ```
 (objectClass=user)
 ```
 
-当你第一次使用上述过滤器运行查询时，它会同时返回用户和计算机对象。这是因为 objectClass 参数是多值的，包含对象所属的所有类，如表 3.9 所示。计算机对象默认属于以下对象类：top、person、organizationalPerson、user 和 computer。
+当你第一次使用上述过滤器运行查询时，它会同时返回用户和计算机对象。这是因为 `objectClass` 参数是多值的，包含对象所属的所有类，如表 3.9 所示。计算机对象默认属于以下对象类：top、person、organizationalPerson、user 和 computer。
 
 表 3.9 ADSI 对象具有层次结构特性，可能属于多个对象类
 
 | Computer 对象 | User 对象 |
+
 | :--- | :--- |
+
 | objectClass | objectClass |
+
 | top | top |
+
 | person | person |
+
 | organizationalPerson | organizationalPerson |
+
 | user | user |
+
 | computer | |
 
-使用单值属性 objectCategory 来查找特定类型的对象。objectCategory 已建立索引，可提供更高效的搜索查询。与 objectClass 属性类似，某些对象共享相同的 objectCategory，因此需要构造过滤器以确保获取所需的确切结果。例如，联系人和用户对象的 objectCategory 都是 person 类。要仅返回实际用户，我们必须使用过滤器组合。过滤器支持使用逻辑运算符进行圆括号嵌套，因此将上述两个示例组合在一起，我们得到了一个过滤器，返回所有 objectClass=user 且 objectCategory=person 的对象。（此方法能有效过滤掉计算机和类别对象。）注意我们使用了 & 逻辑运算符，表示"与"，并且该运算符位于两个单独过滤器的外部，格式如下：
+使用单值属性 `objectCategory` 来查找特定类型的对象。`objectCategory` 已建立索引，可提供更高效的搜索查询。与 `objectClass` 属性类似，某些对象共享相同的 `objectCategory`，因此需要构造过滤器以确保获取所需的确切结果。例如，联系人和用户对象的 `objectCategory` 都是 person 类。要仅返回实际用户，我们必须使用过滤器组合。过滤器支持使用逻辑运算符进行圆括号嵌套，因此将上述两个示例组合在一起，我们得到了一个过滤器，返回所有 `objectClass=user` 且 `objectCategory=person` 的对象。（此方法能有效过滤掉计算机和类别对象。）注意我们使用了 `&` 逻辑运算符，表示"与"，并且该运算符位于两个单独过滤器的外部，格式如下：
 
 ```
 (&(filter A)(filter B))
 (&(objectClass=user)(objectCategory=person))
 ```
 
-过滤器还可以包含通配符 *。以下示例返回任何通用名 cn= 中包含字符串 eff 的对象。
+过滤器还可以包含通配符 `*`。以下示例返回任何通用名 `cn=` 中包含字符串 eff 的对象。
 
 ```
 (cn=*eff*)
@@ -2799,16 +3151,27 @@ LDAP 搜索过滤器运算符用于定义限制查询结果的条件。通过嵌
 过滤器语法（包括逻辑运算符）在 RFC 1960 中定义，该 RFC 定义了 LDAP 搜索过滤器的字符串表示。部分列表如表 3.10 所示。
 
 | | |
+
 |---|---|
+
 | and | & |
+
 | or | \| |
+
 | not | ! |
+
 | equal | = |
+
 | approx | ~= |
+
 | greater than | >= |
+
 | less than | <= |
+
 | present | =* |
+
 | none | Null |
+
 | any | * |
 
 ##### 表 3.10 LDAP 搜索过滤器语法部分列表
@@ -2828,7 +3191,9 @@ LDAP 搜索过滤器运算符用于定义限制查询结果的条件。通过嵌
 ## 要点
 
 - Windows 脚本宿主提供了一系列与系统相关的对象、方法和属性，专注于帮助自动化基于 Windows 的任务，例如读取文本文件、管理注册表、执行应用程序或向控制台显示输出。
+
 - Windows 管理规范（WMI）提供了一套详细且强大的本地和远程系统管理信息，例如软件版本、已安装的硬件、正在运行的进程以及许多其他系统配置数据。
+
 - Active Directory 服务接口（ADSI）提供了一种查询和更新多种类型目录的机制，包括 Active Directory 以及本地计算机账户。
 
 现在真正令人兴奋的部分开始了。接下来的 10 章将通过各种实际问题，探讨通过脚本解决这些问题的机会和技术。让我们开始吧！
@@ -2853,11 +3218,11 @@ Microsoft 提供了多种工具来帮助管理 AD，从图形化 MMC 插件（�
 
 你是一家中型移动通信服务公司的系统工程师。你的公司为许多大型公司未提供服务的农村地区提供手机服务。三年前，你在整个公司部署了 AD，现在管理所有域。域结构由一个企业域和若干用于服务部门和测试部门的子域组成。
 
+
+
 多位业务经理找到你，请求帮助管理其组的访问权限。例如，财务部门希望每周获得所有用户访问客户数据的权限报告。在 AD 组上设置的安全访问控制列表（ACL）控制着对存储在 Windows 2000 文件服务器上的客户数据的访问。财务管理员（用户）以团队形式服务于较大的客户。团队定义了 AD 组成员身份，用于调控对特定客户数据的访问。随着财务管理员在客户团队之间轮换，组成员身份会定期变化。财务经理希望每周审查一份能够访问客户数据的人员名单。
 
 你的信息技术部门也提出了第二个请求。安全经理需要一份所有已安装并运行防病毒软件的域计算机清单。该经理需要一份各域中计算机的简单列表（每台计算机一行），然后可以将其输入到第二个命令行工具中以检查软件状态。
-
-
 
 ## 分析
 
@@ -2866,11 +3231,12 @@ Microsoft 提供了多种工具来帮助管理 AD，从图形化 MMC 插件（�
 **主程序：** 评估参数并调用程序的函数。
 
 - 评估输入参数，并设置相应的处理标志。
+
 - 调用处理函数。
 
 **ReadCriteria：** 从文件中读取组匹配条件。
 
-- 使用 `FileSystemObject` 从文本文件中读取条件列表。这些条件将用于从 AD 中过滤结果。脚本允许条件通过命令行传入，也可以从指定的文本文件导入。示例条件可能包括财务管理员所属的组名。
+- 使用`FileSystemObject`从文本文件中读取条件列表。这些条件将用于从 AD 中过滤结果。脚本允许条件通过命令行传入，也可以从指定的文本文件导入。示例条件可能包括财务管理员所属的组名。
 
 **QueryObjects：** 构建并执行 ADSI 查询。
 
@@ -2882,28 +3248,37 @@ Microsoft 提供了多种工具来帮助管理 AD，从图形化 MMC 插件（�
 
 **ListGroupMemberships：** 列举并显示指定用户所属的所有组。
 
-- 确定并显示指定用户或计算机对象的组成员关系。`ListGroupMemberships` 使用 `Groups` 方法返回该对象所属组的集合。
+- 确定并显示指定用户或计算机对象的组成员关系。`ListGroupMemberships`使用`Groups`方法返回该对象所属组的集合。
 
 **ListMembersOfGroup：** 列举并显示指定组的所有成员。
 
-- `ListMembersOfGroup` 使用 `Members` 属性返回并显示指定组对象的成员集合。
+- `ListMembersOfGroup`使用`Members`属性返回并显示指定组对象的成员集合。
 
 辅助函数如下：
 
 - **CurrentDomain：** 发现运行脚本的用户上下文的当前域。
-  - 绑定到 RootDSE（目录服务器上目录数据树的根）以确定运行脚本的账户所在域。要查询其他域，可以通过 -D [domain] 参数覆盖当前域并指定新域。
+
+  - 绑定到 RootDSE（目录服务器上目录数据树的根）以确定运行脚本的账户所在域。要查询其他域，可以通过`-D [domain]`参数覆盖当前域并指定新域。
+
 - **Heading：** 格式化输出标题。
+
   - 为显示输出标题提供一致的样式。
+
 - **Usage：** 显示脚本使用帮助屏幕。
+
   - 显示脚本的使用帮助。
+
 - **ParamError：** 当依赖的脚本参数未包含时显示错误文本。
-  - 如果参数未包含则显示错误。参数 -D [Domain]、-d [delimiter] 和 -f [file] 各自需要额外的依赖参数。
+
+  - 如果参数未包含则显示错误。参数`-D [Domain]`、`-d [delimiter]`和`-f [file]`各自需要额外的依赖参数。
+
 - **Tabulate：** 对齐文本输出。
+
   - 在指定的水平字符位置对齐列式输出。（需要 Windows Script 5.6 版本。）
 
 # 分发与安装
 
-该脚本由单个 JScript 文件组成，可在 Windows 2000 或更高版本上运行。你的公司使用 Microsoft Outlook®，它默认阻止访问 .vbs 和 .js 文件。因此，你决定将脚本发布到内部网上，有权限的用户可以下载并在本地运行。
+该脚本由单个 JScript 文件组成，可在 Windows 2000 或更高版本上运行。你的公司使用 Microsoft Outlook®，它默认阻止访问`.vbs`和`.js`文件。因此，你决定将脚本发布到内部网上，有权限的用户可以下载并在本地运行。
 
 将脚本计划为每周运行一次并将输出转储到文本文件中，为财务管理员提供便捷可靠的组成员关系更新。首先，使用 Windows 计划任务应用程序自动化脚本的周期性执行。接着，启动 Windows 2000 计划任务向导并设置新任务。将脚本复制到其运行位置，并指定启动脚本的程序。例如，选择使用包含指定参数的批处理文件来启动脚本，使后续更新变得简单。启动脚本的示例批处理文件可能包含一行：
 
@@ -2913,9 +3288,9 @@ Microsoft 提供了多种工具来帮助管理 AD，从图形化 MMC 插件（�
 
 ### 枚举和转储 Active Directory 的用户、组和计算机
 
-该批处理文件调用 cscript.exe 引擎来处理 ADSIQuery.js 脚本。发送给脚本的参数是指定的域（-D home）和 -gre admin，这告诉脚本列出组对象（g），使用正则表达式评估条件（r），枚举组的成员（e），并包含搜索条件 admin。使用方便的重定向符号 > 将控制台输出发送到指定的文本文件。（需要用户交互或显示必须点击才能通过的进度窗口的脚本不适合计划执行或重定向输出。）
+该批处理文件调用`cscript.exe`引擎来处理`ADSIQuery.js`脚本。发送给脚本的参数是指定的域（`-D home`）和`-gre admin`，这告诉脚本列出组对象（`g`），使用正则表达式评估条件（`r`），枚举组的成员（`e`），并包含搜索条件`admin`。使用方便的重定向符号`>`将控制台输出发送到指定的文本文件。（需要用户交互或显示必须点击才能通过的进度窗口的脚本不适合计划执行或重定向输出。）
 
-保存此批处理文件，并计划其每周一凌晨 4:00 运行。指定批处理文件运行所使用的用户名和密码。以这种方式计划脚本运行，使其可以独立于当前登录用户运行。以这种方式计划，此批处理文件将每周运行一次，并将其结果输出到 c:\scripts 目录。
+保存此批处理文件，并计划其每周一凌晨 4:00 运行。指定批处理文件运行所使用的用户名和密码。以这种方式计划脚本运行，使其可以独立于当前登录用户运行。以这种方式计划，此批处理文件将每周运行一次，并将其结果输出到`c:\scripts`目录。
 
 除了使用固定参数计划任务重复运行外，你还希望将其提供给公司其他系统管理员按需使用。只需在命令提示符下使用以下任意参数运行脚本：
 
@@ -2941,17 +3316,17 @@ ADSIQuery -cr dc[12] : Returns computers that match
 the regular expression dc[12] (e.g., dc1 or dc2)
 ```
 
-你必须使用 cscript.exe 引擎，因为脚本使用了 StdOut.Write 方法，该方法在 wscript.exe 引擎中不受支持。正如你将在代码中看到的，脚本会确定自身是如何被调用的，并相应地运行或向用户显示警告。在脚本中构建这些安全机制和检查可能需要更多时间，但当其他用户使用你的程序时，它们可以大大减少可能的挫败感。
+你必须使用`cscript.exe`引擎，因为脚本使用了`StdOut.Write`方法，该方法在`wscript.exe`引擎中不受支持。正如你将在代码中看到的，脚本会确定自身是如何被调用的，并相应地运行或向用户显示警告。在脚本中构建这些安全机制和检查可能需要更多时间，但当其他用户使用你的程序时，它们可以大大减少可能的挫败感。
 
 ## IT 管理员 Windows 入门十大脚本
 
-要访问不受信任域的目录，请考虑使用 runas 命令在该域的用户下执行命令 shell。（或者，你可以打开到该域中计算机的 Terminal Server、SSH 或 Telnet 会话，并在该会话中运行脚本。）在 Windows XP 中以其他用户身份启动命令 shell 的语法为：
+要访问不受信任域的目录，请考虑使用`runas`命令在该域的用户下执行命令 shell。（或者，你可以打开到该域中计算机的 Terminal Server、SSH 或 Telnet 会话，并在该会话中运行脚本。）在 Windows XP 中以其他用户身份启动命令 shell 的语法为：
 
 ```
 %windir%\System32\runas.exe /user:domain\user "cmd"
 ```
 
-runas 应用程序会提示你输入该用户的密码，然后打开一个在替代用户上下文中运行的命令提示符。在此新命令提示符下，针对所需域执行脚本。
+`runas`应用程序会提示你输入该用户的密码，然后打开一个在替代用户上下文中运行的命令提示符。在此新命令提示符下，针对所需域执行脚本。
 
 # 输出
 
@@ -2965,73 +3340,85 @@ runas 应用程序会提示你输入该用户的密码，然后打开一个在�
 
 此脚本演示了使用 WSH 和 ADSI 查询 AD 以及显示和格式化结果的几种方法。脚本使用以下对象和方法：
 
-ADODB.Connection
+### ADODB.Connection
 
 - Provider
+
 - Open
 
-
-
-# ADODB.Command
+### ADODB.Command
 
 - ActiveConnection
+
 - Properties
+
 - CommandText
+
 - Execute
 
-# ADSI
+### ADSI
 
 - GetObject
 
-# Array Object
+### Array Object
 
 - push
 
-# Enumerator
+### Enumerator
 
 - atEnd
+
 - MoveNext
 
-# LDAP Dialect Query
+### LDAP Dialect Query
 
 - Base DN
+
 - Filter
+
 - Attributes
+
 - Scope
 
-## RecordSet
+### RecordSet
 
 - EOF
+
 - Fields.Item(x).Value
 
 ### RegExp
 
 - test
 
-# RootDSE
+### RootDSE
 
-- GetObject("LDAP://RootDSE")
-- Get("defaultNamingContext")
+- `GetObject("LDAP://RootDSE")`
 
-## Scripting.FileSystemObject
+- `Get("defaultNamingContext")`
+
+### Scripting.FileSystemObject
 
 - OpenTextFileReadLine
+
 - FileExists
+
 - AtEndOfStream
+
 - Close
 
-# String Functions
+### String Functions
 
 - split
 
 ### WScript.Arguments
 
 - colArgs.length
+
 - colArgs.Item
 
 # 脚本本身
 
-图 4.1 展示了脚本 *ADSIQuery* 的一个示例输出，该脚本用于枚举并显示默认域中管理组的成员身份。在此示例中，第一个参数 `-grev` 实际上包含了三个参数。这些参数指定仅列出组（g）、使用正则表达式（r）以及枚举成员身份（e）。第二个参数 `admin` 定义了在过滤器中使用的实际标准。图 4.2 展示了该脚本的另一个示例，这次是列出域中的所有计算机。（正则表达式中的 `.`（点）代表通配符。）此示例说明了脚本参数输入的灵活性。参数可以组合输入，也可以按任意顺序单独输入。例如，脚本处理以下参数的效果是相同的：
+图 4.1 展示了脚本 *ADSIQuery* 的一个示例输出，该脚本用于枚举并显示默认域中管理组的成员身份。在此示例中，第一个参数`-grev`实际上包含了三个参数。这些参数指定仅列出组（`g`）、使用正则表达式（`r`）以及枚举成员身份（`e`）。第二个参数`admin`定义了在过滤器中使用的实际标准。图 4.2 展示了该脚本的另一个示例，这次是列出域中的所有计算机。（正则表达式中的`.`（点）代表通配符。）此示例说明了脚本参数输入的灵活性。参数可以组合输入，也可以按任意顺序单独输入。例如，脚本处理以下参数的效果是相同的：
 
 ```
 ADSIQuery -grev admin
@@ -3041,7 +3428,7 @@ ADSIQuery -rv -ge admin
 
 一个例外是分隔符和域参数，它们必须单独输入（例如，`-grev -D domainname -d ~`）。此示例将域中的所有计算机作为简单列表列出，适合导入到其他应用程序中。
 
-> 脚本文件位于 CD-ROM 的 `/chapter 4/scripts/ADSIQuery.js`。在继续下一节之前，请从 CD-ROM 打开实际脚本并在测试环境中运行几次，以感受其工作方式。自行浏览整个代码，然后继续阅读步骤详解，希望能解答您可能产生的任何疑问。此外，在脚本编辑器中查看完整的代码能让您对其范围有良好的把握，并允许我们在讲解其功能时对其进行调整。
+> 脚本文件位于 CD-ROM 的`/chapter 4/scripts/ADSIQuery.js`。在继续下一节之前，请从 CD-ROM 打开实际脚本并在测试环境中运行几次，以感受其工作方式。自行浏览整个代码，然后继续阅读步骤详解，希望能解答您可能产生的任何疑问。此外，在脚本编辑器中查看完整的代码能让您对其范围有良好的把握，并允许我们在讲解其功能时对其进行调整。
 
 本章剩余部分将逐步讲解 *ADSIQuery*，描述其工作原理以及为何做出某些设计决策。该脚本使用 JScript 编写，以展示该语言的众多特性。
 
@@ -3095,7 +3482,7 @@ intranet Admins (0 members)
 G:\>_
 ```
 
-**图 4.1** 脚本 ADSIQuery.js 提供了一种灵活的方法来查询 AD 并枚举成员身份。
+**图 4.1** 脚本`ADSIQuery.js`提供了一种灵活的方法来查询 AD 并枚举成员身份。
 
 ## IT 管理员的十大 Windows 入门脚本
 
@@ -3103,7 +3490,7 @@ G:\>_
 
 **图 4.2** 参数可以按任意顺序输入，并且可以有不同的输出详细级别。
 
-此类控制台工具的另一个好处是，可以快速添加新功能或调整脚本输出。例如，如果您想返回任何用户对象的电话号码，您可以快速将 AD 属性 `TelephoneNumber` 添加到 LDAP 方言查询中，然后在迭代 `Recordset` 时显示此属性。正如您将看到的，本文中的一些更通用的函数在各个脚本中被重复使用，例如读取文本文件、显示帮助或错误信息，以及其他可重用的代码。即使您有自己的 ADSI 转储工具选择，您也可能会发现这些函数和方法对于在完全不同的脚本中重复使用非常有用。
+此类控制台工具的另一个好处是，可以快速添加新功能或调整脚本输出。例如，如果您想返回任何用户对象的电话号码，您可以快速将 AD 属性`TelephoneNumber`添加到 LDAP 方言查询中，然后在迭代`Recordset`时显示此属性。正如您将看到的，本文中的一些更通用的函数在各个脚本中被重复使用，例如读取文本文件、显示帮助或错误信息，以及其他可重用的代码。即使您有自己的 ADSI 转储工具选择，您也可能会发现这些函数和方法对于在完全不同的脚本中重复使用非常有用。
 
 ## 初始化
 
@@ -3111,13 +3498,13 @@ G:\>_
 
 请谨慎使用全局变量，而是显式地将变量或对象传递给函数。使用全局变量通常会降低代码的可移植性，并增加错误或潜在安全漏洞的风险。尽管编程界不赞成广泛使用全局变量，但许多人同意，如果在有节制且特定的情况下使用，全局变量可以是有价值的。
 
-此脚本利用正则表达式来验证正确的文件名。正则表达式提供了强大的基于文本的过滤器，在模式匹配（以及其他许多方面）方面表现出色，此脚本展示了正则表达式提供的一些实用工具。正则表达式定义明确，许多 Unix 工具（例如 grep、sed、awk）广泛支持正则表达式模式匹配。尽管模式匹配语法通常在正则表达式实现中保持一致，但操作正则表达式的方法因语言而异。在网上搜索有关如何定义这些过滤器及其支持的一些更高级功能的更多信息。
+此脚本利用正则表达式来验证正确的文件名。正则表达式提供了强大的基于文本的过滤器，在模式匹配（以及其他许多方面）方面表现出色，此脚本展示了正则表达式提供的一些实用工具。正则表达式定义明确，许多 Unix 工具（例如`grep`、`sed`、`awk`）广泛支持正则表达式模式匹配。尽管模式匹配语法通常在正则表达式实现中保持一致，但操作正则表达式的方法因语言而异。在网上搜索有关如何定义这些过滤器及其支持的一些更高级功能的更多信息。
 
-在 JScript 中，正则表达式定义在斜杠之间，如下所示：`/RegExp/`。方括号表示位置内的可选字符。例如，正则表达式 `/[DdHh]og/` 将匹配文本 Dog、dog、Hog 和 hog。*ADSIQuery* 中的第一个正则表达式（`reValidFile`）定义了文件名中使用的无效字符。脚本在脚本运行时根据 `reValidFile` 测试用户提供的文件名，如果测试返回 true，脚本将拒绝该文件名。正则表达式 `/[\*\?\[\]\{\}\|\+\(\)]/` 仅查找字符 `*`、`?`、`[`、`]`、`{`、`}`、`|`、`+`、`(` 或 `)` 中的任何一个。反斜杠 `\` 代表正则表达式转义字符，用于定义这些原本具有特殊含义的字符。
+在 JScript 中，正则表达式定义在斜杠之间，如下所示：`/RegExp/`。方括号表示位置内的可选字符。例如，正则表达式`/[DdHh]og/`将匹配文本 Dog、dog、Hog 和 hog。*ADSIQuery* 中的第一个正则表达式（`reValidFile`）定义了文件名中使用的无效字符。脚本在脚本运行时根据`reValidFile`测试用户提供的文件名，如果测试返回 true，脚本将拒绝该文件名。正则表达式`/[\*\?\[\]\{\}\|\+\(\)]/`仅查找字符`*`、`?`、`[`、`]`、`{`、`}`、`|`、`+`、`(`或`)`中的任何一个。反斜杠`\`代表正则表达式转义字符，用于定义这些原本具有特殊含义的字符。
 
 ### 主体部分
 
-脚本使用数组对象来存储标准列表（`aCriteria`）以及匹配对象的 `ADsPath`（`aObjects`）。此脚本按顺序访问这些数组的成员，这与数组通过索引访问其成员的方式非常契合。
+脚本使用数组对象来存储标准列表（`aCriteria`）以及匹配对象的`ADsPath`（`aObjects`）。此脚本按顺序访问这些数组的成员，这与数组通过索引访问其成员的方式非常契合。
 
 ```
 //---------------------------------------------------------------
@@ -3132,7 +3519,7 @@ var aCriteria = new Array();
 var aObjects = new Array();
 ```
 
-此脚本依赖于一个自定义对象（`objState`）来定义过程标志。JScript 允许轻松创建和使用可通过属性（`object.elementname`）引用的自定义对象。通过属性引用提供了一种易于阅读的方式来引用特定标志。例如，要确定组属性的状态，我们可以直接调用它（`objState.group`）。或者，我们本可以为每个值定义单独的标志（例如 `iGroup`、`iComputer`），但将它们全部作为属性包含在单个对象中是一种整洁的设计，可以将所有状态变量放在一起。此外，我们可以将单个对象传递给函数来确定状态，而不是传递多个独立的变量。
+此脚本依赖于一个自定义对象（`objState`）来定义过程标志。JScript 允许轻松创建和使用可通过属性（`object.elementname`）引用的自定义对象。通过属性引用提供了一种易于阅读的方式来引用特定标志。例如，要确定组属性的状态，我们可以直接调用它（`objState.group`）。或者，我们本可以为每个值定义单独的标志（例如`iGroup`、`iComputer`），但将它们全部作为属性包含在单个对象中是一种整洁的设计，可以将所有状态变量放在一起。此外，我们可以将单个对象传递给函数来确定状态，而不是传递多个独立的变量。
 
 ```
 var objState = new Object;
@@ -3148,7 +3535,7 @@ objState.domain=0;
 objState.all=0;
 ```
 
-脚本使用了 `wscript.exe` 引擎不可用的功能。脚本使用 JScript 的 `IndexOf` 方法检查 `WScript` 对象的 `FullName` 属性，以确定脚本是否使用 `wscript.exe` 执行。如果是，脚本会显示一条警告，建议用户使用 `cscript.exe` 引擎重新运行脚本。
+脚本使用了`wscript.exe`引擎不可用的功能。脚本使用 JScript 的`IndexOf`方法检查`WScript`对象的`FullName`属性，以确定脚本是否使用`wscript.exe`执行。如果是，脚本会显示一条警告，建议用户使用`cscript.exe`引擎重新运行脚本。
 
 ```
 if(WScript.FullName.indexOf("WScript")>=0) {
@@ -3159,17 +3546,15 @@ if(WScript.FullName.indexOf("WScript")>=0) {
 }
 ```
 
-函数 `CurrentDomain` 确定运行脚本的帐户的当前域。此函数允许在任何域中运行脚本，而无需在脚本中硬编码域名。为了适应在其他域中运行脚本，脚本支持一个参数（`-D domain_name`）来指定要搜索的域。
+函数`CurrentDomain`确定运行脚本的帐户的当前域。此函数允许在任何域中运行脚本，而无需在脚本中硬编码域名。为了适应在其他域中运行脚本，脚本支持一个参数（`-D domain_name`）来指定要搜索的域。
 
-
-
-如果指定了备用域，脚本将绑定到该域，并使用运行脚本的账户的安全上下文执行目录服务查询。此实践说明了前述 `runas` 命令的实用之处：`runas` 允许你在不同的用户账户下运行脚本。通过指定域和用户账户，你可以从你的计算机查询任何域，前提是该域能在网络层面与你的计算机通信。或者，可以向脚本添加一个参数来定义不同的用户名，请求密码，然后使用该替代安全上下文执行查询。
+如果指定了备用域，脚本将绑定到该域，并使用运行脚本的账户的安全上下文执行目录服务查询。此实践说明了前述`runas`命令的实用之处：`runas`允许你在不同的用户账户下运行脚本。通过指定域和用户账户，你可以从你的计算机查询任何域，前提是该域能在网络层面与你的计算机通信。或者，可以向脚本添加一个参数来定义不同的用户名，请求密码，然后使用该替代安全上下文执行查询。
 
 ```
 strDomain=CurrentDomain();
 ```
 
-参数枚举包括提取传递给脚本的命令行参数，遍历每个参数，并根据需要设置状态变量。以下代码遍历 `WScript.Arguments` 中的每个参数，并使用定义脚本参数的正则表达式对其进行测试。第一个测试使用 JScript 的 `indexOf` 方法检查参数字符串开头是否存在连字符（-）。`indexOf` 在一个字符串中搜索另一个字符串的存在，如果找到，则返回子字符串的起始位置。如果我们想确定一个字符串是否以连字符开头，可以检查 `indexOf` 是否返回 0（表示字符串的开头）。如果未找到子字符串，`indexOf` 返回 -1。
+参数枚举包括提取传递给脚本的命令行参数，遍历每个参数，并根据需要设置状态变量。以下代码遍历`WScript.Arguments`中的每个参数，并使用定义脚本参数的正则表达式对其进行测试。第一个测试使用 JScript 的`indexOf`方法检查参数字符串开头是否存在连字符（`-`）。`indexOf`在一个字符串中搜索另一个字符串的存在，如果找到，则返回子字符串的起始位置。如果我们想确定一个字符串是否以连字符开头，可以检查`indexOf`是否返回 0（表示字符串的开头）。如果未找到子字符串，`indexOf`返回 -1。
 
 ```
 var colArgs = WScript.Arguments;
@@ -3178,7 +3563,7 @@ for(i=0;i<colArgs.length;i++) {
     if(strArg.indexOf("-") == 0) {
 ```
 
-第二组嵌套测试查找匹配的参数，并为后续处理设置适当的状态变量。同样，`indexOf` 用于测试参数字符串中是否存在某个字符。如果该方法返回的值大于或等于 0，则该参数存在于参数字符串中。脚本在一次遍历中评估以连字符开头的参数，且测试与顺序无关。这意味着脚本评估参数 `-cgue` 或 `-eugc` 会产生相同的结果，因为 `indexOf` 只查找参数字符在字符串中的存在。这种设计提供了顺序无关性以及一种紧凑的方式来评估脚本参数。
+第二组嵌套测试查找匹配的参数，并为后续处理设置适当的状态变量。同样，`indexOf`用于测试参数字符串中是否存在某个字符。如果该方法返回的值大于或等于 0，则该参数存在于参数字符串中。脚本在一次遍历中评估以连字符开头的参数，且测试与顺序无关。这意味着脚本评估参数`-cgue`或`-eugc`会产生相同的结果，因为`indexOf`只查找参数字符在字符串中的存在。这种设计提供了顺序无关性以及一种紧凑的方式来评估脚本参数。
 
 ```
     if(strArg.indexOf("c") >=0) objState.computer=1;
@@ -3191,9 +3576,9 @@ for(i=0;i<colArgs.length;i++) {
     if(strArg.indexOf("a") >=0) objState.all=1;
 ```
 
-某些参数需要依赖参数。参数 `f` 表示使用文件名，脚本将下一个参数评估为要导入搜索条件的文件名。脚本通过使用 `length` 属性将当前参数编号与参数总数进行比较，来检查后续参数是否存在。如果依赖参数不存在，脚本将抛出错误。接下来，脚本验证后续参数的文件名中不包含非法字符。
+某些参数需要依赖参数。参数`f`表示使用文件名，脚本将下一个参数评估为要导入搜索条件的文件名。脚本通过使用`length`属性将当前参数编号与参数总数进行比较，来检查后续参数是否存在。如果依赖参数不存在，脚本将抛出错误。接下来，脚本验证后续参数的文件名中不包含非法字符。
 
-JScript 中用于测试字符串是否匹配正则表达式的函数是 `re.text(string)`。如果测试为真，则脚本知道该字符串满足正则表达式。在我们的例子中，测试是查找包含非法字符的文件名。假设文件名结构良好，脚本将设置 `objState.file` 属性和 `strCriteriaFile`。
+JScript 中用于测试字符串是否匹配正则表达式的函数是`re.text(string)`。如果测试为真，则脚本知道该字符串满足正则表达式。在我们的例子中，测试是查找包含非法字符的文件名。假设文件名结构良好，脚本将设置`objState.file`属性和`strCriteriaFile`。
 
 为了在下一次迭代中跳过包含文件名的参数，脚本递增计数器（`i`）。否则，文件名将被添加为搜索条件。
 
@@ -3212,7 +3597,7 @@ if(strArg.indexOf("f") >=0) {
 }
 ```
 
-脚本对分隔符（`-d`）和域名（`-D`）参数的处理方式与文件名参数略有不同。脚本使用简单的条件语句检查参数是否等于 `-d` 或 `-D`。如果是，则脚本分别查找下一个参数作为分隔符或域名。像这样独立检查参数展示了与使用正则表达式不同的参数解释方法。分隔符定义了显示详细数据时使用的字符。自定义分隔符有助于在 Excel 等应用程序中进行未来的解析，你可以定义传统的逗号或制表符之外的自定义分隔符，而这些字符可能包含在有效数据中。域名允许用户查询与运行脚本的账户不同的域。
+脚本对分隔符（`-d`）和域名（`-D`）参数的处理方式与文件名参数略有不同。脚本使用简单的条件语句检查参数是否等于`-d`或`-D`。如果是，则脚本分别查找下一个参数作为分隔符或域名。像这样独立检查参数展示了与使用正则表达式不同的参数解释方法。分隔符定义了显示详细数据时使用的字符。自定义分隔符有助于在 Excel 等应用程序中进行未来的解析，你可以定义传统的逗号或制表符之外的自定义分隔符，而这些字符可能包含在有效数据中。域名允许用户查询与运行脚本的账户不同的域。
 
 ```
 if(strArg=="-d") {
@@ -3229,7 +3614,7 @@ if(strArg=="-D") {
 }
 ```
 
-最后，一个 `else` 语句捕获那些不是参数（即不以连字符开头）的剩余参数。脚本使用 `push` 方法将这些参数添加到数组 `aCriteria` 中。虽然我们可以通过索引在数组末尾添加一个新成员（例如 `aCriteria[aCriteria.length]="some criteria"`），但使用 `push` 方法稍微更简单、更优雅。这种方法允许你通过命令行指定任意数量的条件。
+最后，一个`else`语句捕获那些不是参数（即不以连字符开头）的剩余参数。脚本使用`push`方法将这些参数添加到数组`aCriteria`中。虽然我们可以通过索引在数组末尾添加一个新成员（例如`aCriteria[aCriteria.length]="some criteria"`），但使用`push`方法稍微更简单、更优雅。这种方法允许你通过命令行指定任意数量的条件。
 
 ```
 else {
@@ -3246,15 +3631,15 @@ ADSIQuery -gruf filename.txt admin operator -D home
 ADSIQuery -D home operator -fgru filename.txt admin
 ```
 
-图 4.3 显示了脚本如何处理这些参数来构建数组 `aCriteria`。
+图 4.3 显示了脚本如何处理这些参数来构建数组`aCriteria`。
 
 ![图 4.3](img/eafd0e1632fc08452cf4d68dbe912652_153_0.png)
 
-**图 4.3** *ADSIQuery* 灵活地处理命令行参数，构建用于搜索 Active Directory 的 `aCriteria` 数组。
+**图 4.3** *ADSIQuery* 灵活地处理命令行参数，构建用于搜索 Active Directory 的`aCriteria`数组。
 
-处理完参数后，脚本评估状态变量并采取相应的操作。`-?` 参数设置 `objState.help` 属性，这又会调用 `Usage` 函数来显示简短的帮助消息，然后退出脚本。将帮助消息分离到其自己的函数中也允许其他函数调用 `Usage`。
+处理完参数后，脚本评估状态变量并采取相应的操作。`-?`参数设置`objState.help`属性，这又会调用`Usage`函数来显示简短的帮助消息，然后退出脚本。将帮助消息分离到其自己的函数中也允许其他函数调用`Usage`。
 
-*ADSIQuery* 在整个脚本中频繁使用状态属性 `verbose`（`objState.verbose）` 来显示更多信息。例如，它在以下代码中与文件状态属性结合使用，向用户回显指定的文件名。如果设置了文件状态属性（`objState.file`），脚本将调用 `ReadFile` 函数来打开用户指定的文件并将条件读入数组 `aCriteria`。因为在命令行输入的任何条件已经定义在此数组中，所以它被传递给 `ReadFile` 函数，该函数随后使用 `push` 方法向其添加新成员。返回的数组随后包含命令行条件和从文件导入的条件。
+*ADSIQuery* 在整个脚本中频繁使用状态属性`verbose`（`objState.verbose`）来显示更多信息。例如，它在以下代码中与文件状态属性结合使用，向用户回显指定的文件名。如果设置了文件状态属性（`objState.file`），脚本将调用`ReadFile`函数来打开用户指定的文件并将条件读入数组`aCriteria`。因为在命令行输入的任何条件已经定义在此数组中，所以它被传递给`ReadFile`函数，该函数随后使用`push`方法向其添加新成员。返回的数组随后包含命令行条件和从文件导入的条件。
 
 ```
 if(objState.help) Usage();
@@ -3266,7 +3651,7 @@ if(objState.file) aCriteria=ReadFile(strCriteriaFile, aCriteria);
 iTotalCriteria=aCriteria.length;
 ```
 
-如果设置了 `objState.verbose`，脚本将遍历 `aCriteria` 并显示所有发现的条件。接下来，脚本可选择性地显示将要搜索的域名，然后调用 `QueryObjects` 函数。`QueryObjects` 函数构建并执行查询，然后显示结果。`QueryObjects` 将结果存储在第二个数组（`aObjects`）中，该数组在后续的枚举函数中使用。枚举函数（由参数 `-e` 指定）列出每个返回对象的成员关系。查询和枚举函数将在脚本后面列出函数代码时更详细地描述。
+如果设置了`objState.verbose`，脚本将遍历`aCriteria`并显示所有发现的条件。接下来，脚本可选择性地显示将要搜索的域名，然后调用`QueryObjects`函数。`QueryObjects`函数构建并执行查询，然后显示结果。`QueryObjects`将结果存储在第二个数组（`aObjects`）中，该数组在后续的枚举函数中使用。枚举函数（由参数`-e`指定）列出每个返回对象的成员关系。查询和枚举函数将在脚本后面列出函数代码时更详细地描述。
 
 ```
 if(objState.verbose){
@@ -3290,9 +3675,9 @@ if(objState.enumerate){
 
 ### ReadFile
 
-`ReadFile` 函数读取一个包含条件（每行一个项目）的文本文件，并将每个条件项插入一个数组中。除了之前验证文件名的检查外，`ReadFile` 在尝试打开文件之前调用 `FileExists` 方法来检查文件是否存在。该函数可以扩展以包含错误处理，例如验证文件是文本文件（而非二进制）、检查格式是否正确，或者在文件过大时停止处理。该函数使用 `OpenTextFile` 方法打开文件。在此脚本中，此方法所需的参数是要打开的文件的文件名和 `iomode`。`iomode` 定义了应如何打开文件，例如只读（1）、写入（2）或追加（8）。`OpenTextFile` 支持在第 3 章关于 `FileSystemObject` 的讨论中涵盖的其他可选要求。
+`ReadFile`函数读取一个包含条件（每行一个项目）的文本文件，并将每个条件项插入一个数组中。除了之前验证文件名的检查外，`ReadFile`在尝试打开文件之前调用`FileExists`方法来检查文件是否存在。该函数可以扩展以包含错误处理，例如验证文件是文本文件（而非二进制）、检查格式是否正确，或者在文件过大时停止处理。该函数使用`OpenTextFile`方法打开文件。在此脚本中，此方法所需的参数是要打开的文件的文件名和`iomode`。`iomode`定义了应如何打开文件，例如只读（1）、写入（2）或追加（8）。`OpenTextFile`支持在第 3 章关于`FileSystemObject`的讨论中涵盖的其他可选要求。
 
-脚本调用 `ReadLine` 方法，将文本文件中的每一行数据读入字符串。该字符串使用数组的 push 方法添加到条件数组中。本章前面讨论了 JScript 中的全局和局部作用域变量。请注意，此函数需要一个数组作为参数。然而，`ReadLine` 通过 `aContents` 来识别此对象，无论调用函数中使用的数组名称是什么。在函数末尾，`aContents` 通过 return 语句返回给调用函数。
+脚本调用`ReadLine`方法，将文本文件中的每一行数据读入字符串。该字符串使用数组的`push`方法添加到条件数组中。本章前面讨论了 JScript 中的全局和局部作用域变量。请注意，此函数需要一个数组作为参数。然而，`ReadLine`通过`aContents`来识别此对象，无论调用函数中使用的数组名称是什么。在函数末尾，`aContents`通过`return`语句返回给调用函数。
 
 ```
 //--------------------------------------------------
@@ -3320,11 +3705,11 @@ function ReadFile(strFileName, aContents)
 
 ### QueryObjects
 
-函数 `QueryObjects` 用于构建并执行 LDAP 查询。`QueryObjects` 需要三个参数：包含条件列表的数组、定义要搜索的域目录服务器的字符串，以及状态变量数组。`objState` 数组包含诸如是否搜索用户、计算机或组对象，以及是否显示详细输出等信息。
+函数`QueryObjects`用于构建并执行 LDAP 查询。`QueryObjects`需要三个参数：包含条件列表的数组、定义要搜索的域目录服务器的字符串，以及状态变量数组。`objState`数组包含诸如是否搜索用户、计算机或组对象，以及是否显示详细输出等信息。
 
-如第 3 章所述，一个 ADSI ADO 查询由三部分组成：`Connection` 对象、`Command` 对象和 `RecordSet` 对象。`Connection` 对象负责打开与 ADSI 目录服务的连接。
+如第 3 章所述，一个 ADSI ADO 查询由三部分组成：`Connection`对象、`Command`对象和`RecordSet`对象。`Connection`对象负责打开与 ADSI 目录服务的连接。
 
-虽然我们在此没有这样做，但你可以选择通过在 Connection 对象中设置这些属性来设置用户名和密码，以及是否对密码进行加密。例如，此脚本的一个扩展可能是向脚本添加一个用户名参数，然后提示用户输入密码。获取密码的一种简单方法是使用 `StdIn.Read` 方法。然而，此方法有一个缺点，即密码会以明文形式显示在控制台中，而不是使用 * 字符对密码进行哈希处理。此外，如果你确实选择提示输入用户名和密码，请务必将 `Connection("Encrypt Password")` 属性设置为 true。否则，用户名和密码会在发送到服务器的网络流量请求中清晰可见。
+虽然我们在此没有这样做，但你可以选择通过在 Connection 对象中设置这些属性来设置用户名和密码，以及是否对密码进行加密。例如，此脚本的一个扩展可能是向脚本添加一个用户名参数，然后提示用户输入密码。获取密码的一种简单方法是使用`StdIn.Read`方法。然而，此方法有一个缺点，即密码会以明文形式显示在控制台中，而不是使用`*`字符对密码进行哈希处理。此外，如果你确实选择提示输入用户名和密码，请务必将`Connection("Encrypt Password")`属性设置为 true。否则，用户名和密码会在发送到服务器的网络流量请求中清晰可见。
 
 ```
 //----------------------------------------------------
@@ -3338,7 +3723,7 @@ function QueryObjects(aCriteria, strDomain, objState)
 }
 ```
 
-Command 对象包含如何执行查询的指令。首先，我们将 ActiveConnection 设置为刚刚创建的 Connection 对象，然后设置任何可选的命令属性。例如，要按名称排序结果，请添加属性 `objCommand.Properties("Sort On") = "Name"`。
+Command 对象包含如何执行查询的指令。首先，我们将`ActiveConnection`设置为刚刚创建的 Connection 对象，然后设置任何可选的命令属性。例如，要按名称排序结果，请添加属性`objCommand.Properties("Sort On") = "Name"`。
 
 为了支持超过 1,000 条结果的大数据集，脚本设置了命令对象的 Page Size 属性，该属性会开启分页支持并设置页面大小。页面大小是从服务器返回到客户端的对象数量（例如，页面大小为 999 时，服务器从 10,000 个对象中返回数据需要 11 页）。在大多数情况下，多个页面的传输对用户是透明的。但是，用户可能会在页面之间看到短暂的停顿，具体取决于网络速度。如果不使用分页，查询将只返回前 1,000 条结果然后停止。
 
@@ -3355,7 +3740,7 @@ var strQScope;
 var reCriteria=new RegExp(".");
 ```
 
-LDAP 方言查询的组成部分及其对应的变量包括：基本 DN（strQBDN）、筛选器（strQFilter）、属性（strQAttributes）和范围（strQScope）。基本 DN 为 ADO 查询提供其起点和范围。此脚本假定从域的顶层开始（例如，`LDAP://DC=domain, DC=com`）；但是，基本 DN 也可以定义为较低级别的容器（例如 `LDAP://OU=users, DC=domain, DC=com`）。范围设置查询应深入的层级。ADSIQuery 搜索基本容器及其所有子容器（scope="SubTree"），但你也可以选择将其限制为仅基本容器（scope="Base"）或仅基本容器及其子级（scope="One-Level"）。查询属性包括要从查询中返回的所有 ADSI 属性列表。脚本使用 objectClass 和 objectCategory 属性来确定对象是用户、计算机还是组，并使用 ADsPath 属性来唯一标识返回的对象。脚本显示对象的 Name。
+LDAP 方言查询的组成部分及其对应的变量包括：基本 DN（`strQBDN`）、筛选器（`strQFilter`）、属性（`strQAttributes`）和范围（`strQScope`）。基本 DN 为 ADO 查询提供其起点和范围。此脚本假定从域的顶层开始（例如，`LDAP://DC=domain, DC=com`）；但是，基本 DN 也可以定义为较低级别的容器（例如`LDAP://OU=users, DC=domain, DC=com`）。范围设置查询应深入的层级。`ADSIQuery`搜索基本容器及其所有子容器（`scope="SubTree"`），但你也可以选择将其限制为仅基本容器（`scope="Base"`）或仅基本容器及其子级（`scope="One-Level"`）。查询属性包括要从查询中返回的所有 ADSI 属性列表。脚本使用`objectClass`和`objectCategory`属性来确定对象是用户、计算机还是组，并使用`ADsPath`属性来唯一标识返回的对象。脚本显示对象的`Name`。
 
 ```
 strQBDN = "<LDAP://" + strDomain + ">;";
@@ -3375,7 +3760,7 @@ ADSIQuery -ucg trooper topaz
 (&(|(&(objectClass=user)(objectCategory=person))(objectCategory=computer)(objectCategory=group))(|(Name=*trooper*)(Name=*topaz*)));
 ```
 
-其含义为：获取所有 objectClass 为 user 且 objectCategory 为 person、computer 或 group，且名称包含 trooper 或名称包含 topaz 的对象。
+其含义为：获取所有`objectClass`为`user`且`objectCategory`为`person`、`computer`或`group`，且名称包含`trooper`或名称包含`topaz`的对象。
 
 通过将筛选器拆分为不同的行，此逻辑可能更加清晰：
 
@@ -3390,7 +3775,7 @@ ADSIQuery -ucg trooper topaz
 );
 ```
 
-计算机对象也是 objectClass=user 的成员，因此用户对象必须进一步定义为所有 objectClass=user *且* objectCategory=person。使用 objectCategory 更为推荐，因为它是索引的单值属性，而 objectClass 是多值属性，在用于搜索时效率较低。*联系人* AD 对象也具有 objectCategory=person，为了仅返回用户对象（不包括计算机或联系人对象），我们使用筛选器 objectClass=user 和 objectCategory=person。
+计算机对象也是`objectClass=user`的成员，因此用户对象必须进一步定义为所有`objectClass=user`且`objectCategory=person`。使用`objectCategory`更为推荐，因为它是索引的单值属性，而`objectClass`是多值属性，在用于搜索时效率较低。*联系人* AD 对象也具有`objectCategory=person`，为了仅返回用户对象（不包括计算机或联系人对象），我们使用筛选器`objectClass=user`和`objectCategory=person`。
 
 ```
 strQFilter="(&";
@@ -3402,11 +3787,9 @@ if(objState.group) strQFilter += "(objectCategory=group)";
 strQFilter += ")";
 ```
 
-脚本还支持使用正则表达式进行搜索；但是，LDAP 方言不支持此功能，因此必须编写自定义代码。脚本查找标志 `objState.UseRegExp`，该标志指示用户是否指定使用正则表达式作为搜索条件（通过脚本参数 -r）。如果设置了该标志，脚本会使用用户、计算机或组筛选器构建并执行 ADO 查询，然后在单独的程序中根据正则表达式条件测试查询结果。可以想象，这种额外的处理会从两个方面显著降低脚本速度。首先，ADO 查询返回的数据集大得多，需要进行处理（例如，所有用户）。接下来，脚本必须通过一对嵌套循环检查每个对象是否符合每条条件。
+脚本还支持使用正则表达式进行搜索；但是，LDAP 方言不支持此功能，因此必须编写自定义代码。脚本查找标志`objState.UseRegExp`，该标志指示用户是否指定使用正则表达式作为搜索条件（通过脚本参数`-r`）。如果设置了该标志，脚本会使用用户、计算机或组筛选器构建并执行 ADO 查询，然后在单独的程序中根据正则表达式条件测试查询结果。可以想象，这种额外的处理会从两个方面显著降低脚本速度。首先，ADO 查询返回的数据集大得多，需要进行处理（例如，所有用户）。接下来，脚本必须通过一对嵌套循环检查每个对象是否符合每条条件。
 
-如果未设置 `objState.UseRegExp`，则脚本会遍历条件数组中包含的每一项，并使用 or 逻辑运算符（即 `|` 或 `&`，取决于用户是否指定了 all 参数（-a））将条件添加到 LDAP 方言筛选器中。包含（以及指定）这两个运算符中的任何一个都会增加脚本的实用性，因为它们允许用户指定输出结果
-
-应包含所有条件或任一条件。如果设置了详细标志，脚本将显示其根据条件及其他用户选择构建的查询筛选器。这通常有助于故障排查或为其他脚本或应用程序提取信息。
+如果未设置`objState.UseRegExp`，则脚本会遍历条件数组中包含的每一项，并使用 or 逻辑运算符（即`|`或`&`，取决于用户是否指定了`all`参数（`-a`））将条件添加到 LDAP 方言筛选器中。包含（以及指定）这两个运算符中的任何一个都会增加脚本的实用性，因为它们允许用户指定输出结果应包含所有条件或任一条件。如果设置了详细标志，脚本将显示其根据条件及其他用户选择构建的查询筛选器。这通常有助于故障排查或为其他脚本或应用程序提取信息。
 
 ```
 if(!objState.UseRegExp)
@@ -3429,16 +3812,16 @@ if(objState.verbose){
 }
 ```
 
-随后，该函数将每个 LDAP 方言查询组件连接起来，以定义 Command 对象的 CommandText 属性。定义完成后，脚本调用 Execute 方法来执行查询，并将结果返回到指定的 RecordSet 对象（objRecordset）。
+随后，该函数将每个 LDAP 方言查询组件连接起来，以定义 Command 对象的`CommandText`属性。定义完成后，脚本调用`Execute`方法来执行查询，并将结果返回到指定的 RecordSet 对象（`objRecordset`）。
 
 ```
 objCommand.CommandText=strQBDN + strQFilter + strQAttributes + strQScope;
 objRecordset=objCommand.Execute();
 ```
 
-显示结果的过程是遍历包含查询结果的 RecordSet 对象。除了显示名称外，脚本还会将对象的 ADsPath 添加到新数组中。以编程方式存储结果，便于后续使用而无需重新运行查询。ADsPath 是存储在数组中的唯一标识符，通过该标识符可以轻松引用有关该对象的其他信息。
+显示结果的过程是遍历包含查询结果的 RecordSet 对象。除了显示名称外，脚本还会将对象的`ADsPath`添加到新数组中。以编程方式存储结果，便于后续使用而无需重新运行查询。`ADsPath`是存储在数组中的唯一标识符，通过该标识符可以轻松引用有关该对象的其他信息。
 
-以下代码包含处理正则表达式搜索条件的循环。对于从查询返回的每个对象，脚本会遍历每个条件并调用正则表达式的 test 方法，将对象与条件进行比较。如果测试为真，则显示该对象并将其 ADsPath 添加到上述数组中。尽管正则表达式搜索在条件定义方面提供了更大的灵活性，但搜索所需时间更长，且返回的 RecordSet 比使用 LDAP 筛选器搜索条件时更大。
+以下代码包含处理正则表达式搜索条件的循环。对于从查询返回的每个对象，脚本会遍历每个条件并调用正则表达式的`test`方法，将对象与条件进行比较。如果测试为真，则显示该对象并将其`ADsPath`添加到上述数组中。尽管正则表达式搜索在条件定义方面提供了更大的灵活性，但搜索所需时间更长，且返回的 RecordSet 比使用 LDAP 筛选器搜索条件时更大。
 
 ```
 if(objState.verbose){
@@ -3471,9 +3854,9 @@ return aObjects;
 
 除了列出满足特定条件集的 AD 对象外，该脚本还提供对象的枚举功能，以显示它们与其他对象之间的关系。
 
-如果设置了枚举标志（objState.enumerate），主程序将调用 Enumerate 函数。Enumerate 函数检查每个对象的 Class。如果 Class 为用户或计算机，则该函数将对象的 ADsPath 发送给 ListGroupMemberships 函数。此函数确定并显示特定用户或计算机所属的所有组。如果对象 Class 为组，则 Enumerate 函数调用 ListMembersOfGroup 函数以显示该组的所有成员。
+如果设置了枚举标志（`objState.enumerate`），主程序将调用`Enumerate`函数。`Enumerate`函数检查每个对象的`Class`。如果`Class`为用户或计算机，则该函数将对象的`ADsPath`发送给`ListGroupMemberships`函数。此函数确定并显示特定用户或计算机所属的所有组。如果对象`Class`为组，则`Enumerate`函数调用`ListMembersOfGroup`函数以显示该组的所有成员。
 
-aObjects 数组包含要检查的每个对象的 ADsPath。脚本调用 GetObject 方法以返回指向该对象的指针给变量 objADs。此对象指针将传递给其他函数，用于收集此成员资格数据。
+`aObjects`数组包含要检查的每个对象的`ADsPath`。脚本调用`GetObject`方法以返回指向该对象的指针给变量`objADs`。此对象指针将传递给其他函数，用于收集此成员资格数据。
 
 ```
 //--------------------------------------------------------
@@ -3498,7 +3881,7 @@ function Enumerate(aObjects)
 
 #### ListGroupMemberships
 
-ListGroupMemberships 函数列出用户或计算机对象的所有组成员资格。此函数的输入参数是指向 AD 对象的指针。使用此指针，可以调用 Groups 方法，该方法专门返回对象所属的所有组。Groups 方法返回指向 IADsMembers 接口的指针，脚本使用 Enumerator 对该接口进行枚举。Groups 方法的 IADsMembers 接口 Count 属性存在已知问题（无法正常工作），因此脚本改为遍历对象来计数。
+`ListGroupMemberships`函数列出用户或计算机对象的所有组成员资格。此函数的输入参数是指向 AD 对象的指针。使用此指针，可以调用`Groups`方法，该方法专门返回对象所属的所有组。`Groups`方法返回指向`IADsMembers`接口的指针，脚本使用`Enumerator`对该接口进行枚举。`Groups`方法的`IADsMembers`接口`Count`属性存在已知问题（无法正常工作），因此脚本改为遍历对象来计数。
 
 ```
 //--------------------------------------------------------
@@ -3513,9 +3896,9 @@ function ListGroupMemberships(objADs)
         iCount++; }
 ```
 
-LDAP 查询返回的用户名称仅为名称本身（例如 Trooper），而使用 GetObject 方法绑定到对象并调用 IADs.Name 属性则返回对象的相对名称（例如，CN=Trooper）。我们希望脚本仅显示名称本身，而不显示相对名称属性。
+LDAP 查询返回的用户名称仅为名称本身（例如`Trooper`），而使用`GetObject`方法绑定到对象并调用`IADs.Name`属性则返回对象的相对名称（例如，`CN=Trooper`）。我们希望脚本仅显示名称本身，而不显示相对名称属性。
 
-为此，脚本使用正则表达式函数 split 在相对名称中搜索分隔符 =，然后仅显示其后的名称。split 方法将字符串与分隔符进行比较，并返回由分隔符之间的字段组成的数组。在我们之前的示例中，如果 strUser="CN=Trooper"，则 strUser.split("=") 返回一个包含两个成员的基于零的数组。（基于零的数组意味着第一个成员引用为零。例如，a[0]="first member"，a[1]="second member"。）第一个元素（由 a[0] 引用）是 "CN"，第二个元素 [1] 是 "Trooper"。综合起来，strUser.split("=")[1] = "Trooper"。
+为此，脚本使用正则表达式函数`split`在相对名称中搜索分隔符`=`，然后仅显示其后的名称。`split`方法将字符串与分隔符进行比较，并返回由分隔符之间的字段组成的数组。在我们之前的示例中，如果`strUser="CN=Trooper"`，则`strUser.split("=")`返回一个包含两个成员的基于零的数组。（基于零的数组意味着第一个成员引用为零。例如，`a[0]="first member"`，`a[1]="second member"`。）第一个元素（由`a[0]`引用）是`"CN"`，第二个元素`[1]`是`"Trooper"`。综合起来，`strUser.split("=")[1] = "Trooper"`。
 
 ```
 WScript.Echo("\nName: " + objADs.Name.split("=")[1] +
@@ -3525,9 +3908,9 @@ if(objState.verbose) {
 }
 ```
 
-接下来，该函数显示该计算机或用户对象所属的所有组。由于 IADsMembers 指针 groupList 仍然存在，我们可以再次对其进行枚举并显示每个对象的名称、类和 ADsPath。脚本调用自定义函数 Tabulate 以左对齐列格式显示条目。Tabulate 确保每列中的所有数据都从相同的水平字符位置开始。Tabulate 函数根据给定的要显示的字符串、列号以及分隔符字符或字符串来定位并显示数据。Tabulate 依赖于标准流的 Column 属性，这需要 Windows Script 5.6 版本。
+接下来，该函数显示该计算机或用户对象所属的所有组。由于`IADsMembers`指针`groupList`仍然存在，我们可以再次对其进行枚举并显示每个对象的名称、类和`ADsPath`。脚本调用自定义函数`Tabulate`以左对齐列格式显示条目。`Tabulate`确保每列中的所有数据都从相同的水平字符位置开始。`Tabulate`函数根据给定的要显示的字符串、列号以及分隔符字符或字符串来定位并显示数据。`Tabulate`依赖于标准流的`Column`属性，这需要 Windows Script 5.6 版本。
 
-如果成员资格为空，则 iCount 将等于 0，并显示文本 "-none-"。
+如果成员资格为空，则`iCount`将等于 0，并显示文本`-none-`。
 
 ```
 if (iCount>0) {
@@ -3549,9 +3932,9 @@ if (iCount>0) {
 
 ### ListMembersOfGroup
 
-前一个函数显示用户或计算机对象所属的所有组。下一个函数显示组对象的所有成员（用户、计算机或组）。使用指向组对象的指针作为输入，ListMembersOfGroup 函数调用 Members 方法以返回属于该组的对象集合。与前面提到的 Groups 函数类似，Members 方法返回指向 IADsMembers 接口的指针，脚本随后对其进行枚举并显示。Members 方法返回的 IADsMembers 接口支持 Count 属性，该属性返回集合中的对象数量。这意味着不需要像上一个函数那样进行单独的迭代来计算 iCount。
+前一个函数显示用户或计算机对象所属的所有组。下一个函数显示组对象的所有成员（用户、计算机或组）。使用指向组对象的指针作为输入，`ListMembersOfGroup`函数调用`Members`方法以返回属于该组的对象集合。与前面提到的`Groups`函数类似，`Members`方法返回指向`IADsMembers`接口的指针，脚本随后对其进行枚举并显示。`Members`方法返回的`IADsMembers`接口支持`Count`属性，该属性返回集合中的对象数量。这意味着不需要像上一个函数那样进行单独的迭代来计算`iCount`。
 
-脚本通过枚举 IADsMembers 集合并调用 Tabulate 函数来显示数据，从而呈现结果。
+脚本通过枚举`IADsMembers`集合并调用`Tabulate`函数来显示数据，从而呈现结果。
 
 ```
 //--------------------------------------------------------------------
@@ -3584,11 +3967,9 @@ function ListMembersOfGroup(objADs)
 }
 ```
 
-
-
 ### CurrentDomain
 
-`CurrentDomain` 函数用于确定运行脚本的账户所在的域。例如，如果你使用账户 `somedomain\user` 运行脚本，那么脚本会确定你位于 `somedomain` 域。脚本通过无服务器绑定到 LDAP RootDSE 对象来确定这一点。RootDSE 提供关于目录服务的信息。为了确定运行脚本的账户的域，脚本获取 `defaultNamingContext` 属性。此属性是目录服务器（本例中为 RootDSE）所属域的可分辨名称。
+`CurrentDomain`函数用于确定运行脚本的账户所在的域。例如，如果你使用账户`somedomain\user`运行脚本，那么脚本会确定你位于`somedomain`域。脚本通过无服务器绑定到 LDAP RootDSE 对象来确定这一点。RootDSE 提供关于目录服务的信息。为了确定运行脚本的账户的域，脚本获取`defaultNamingContext`属性。此属性是目录服务器（本例中为 RootDSE）所属域的可分辨名称。
 
 ```
 //--------------------------------------------------------------------
@@ -3603,7 +3984,7 @@ function CurrentDomain()
 
 ### Heading
 
-以下 `Heading` 函数展示了一种编程技巧，即将重复的操作委托给专用函数。将格式化操作委托给专用函数使代码更易于阅读并确保格式一致性。隔离重复操作对你的代码有多种好处。首先，它使代码更易于阅读，因为每当读者看到代码 `Heading(sometext)`，就知道会发生什么。此外，使用专用函数简化了代码维护，因为你只需要在一处更新代码。例如，如果你想更改标题格式，只需更新函数中的代码，下次脚本运行时，更改会立即在函数调用的任何地方反映出来。
+以下`Heading`函数展示了一种编程技巧，即将重复的操作委托给专用函数。将格式化操作委托给专用函数使代码更易于阅读并确保格式一致性。隔离重复操作对你的代码有多种好处。首先，它使代码更易于阅读，因为每当读者看到代码`Heading(sometext)`，就知道会发生什么。此外，使用专用函数简化了代码维护，因为你只需要在一处更新代码。例如，如果你想更改标题格式，只需更新函数中的代码，下次脚本运行时，更改会立即在函数调用的任何地方反映出来。
 
 ```
 //--------------------------------------------------------------------
@@ -3619,7 +4000,7 @@ function Heading(strMessage)
 
 ### Usage
 
-usage 函数出于对用户的礼貌，显示如何使用脚本的说明。它显示脚本的简要解释、用法、支持的参数列表，并包含一个示例。
+`Usage`函数出于对用户的礼貌，显示如何使用脚本的说明。它显示脚本的简要解释、用法、支持的参数列表，并包含一个示例。
 
 ```
 //-------------------------------------------------------------------------
@@ -3654,21 +4035,7 @@ WScript.Echo("the regular expression dc[12] (e.g., dc1 or dc2)");
 
 ### ParamError
 
-ParamError 是另一个在脚本中被重复调用的函数示例。与其维护多处代码实例，不如将此功能委托给其自身的函数，这样可以提高可读性并简化代码。
-
-```
-//------------------------------------------------
-// Display An error if a dependant script parameter is not included
-//------------------------------------------------
-function ParamError()
-{
-Heading("Parameter Error Received. Please check syntax.\n");
-Usage();
-WScript.Quit();
-}
-```
-
-### 枚举和转储 Active Directory 的用户、组和计算机
+`ParamError`是另一个在脚本中被重复调用的函数示例。与其维护多处代码实例，不如将此功能委托给其自身的函数，这样可以提高可读性并简化代码。
 
 ```
 //------------------------------------------------
@@ -3684,11 +4051,11 @@ WScript.Quit();
 
 ### Tabulate
 
-使用 WScript.Echo 显示多个不同字段行的一个问题是列通常未对齐，呈现锯齿状外观，有时难以阅读。此脚本使用 Tabulate 函数以有序列的形式显示列数据。Tabulate 在特定文本列显示字符串，并提供了一种整洁的方法以有序列呈现数据。Tabulate 使用 StdOut.Column 属性获取当前 Stdout 行的当前水平字符位置。
+使用`WScript.Echo`显示多个不同字段行的一个问题是列通常未对齐，呈现锯齿状外观，有时难以阅读。此脚本使用`Tabulate`函数以有序列的形式显示列数据。`Tabulate`在特定文本列显示字符串，并提供了一种整洁的方法以有序列呈现数据。`Tabulate`使用`StdOut.Column`属性获取当前`Stdout`行的当前水平字符位置。
 
-> StdOut.Column 属性在 Windows Script 5.6 及更高版本中可用。如果你在默认构建的 Windows 2000 计算机上运行此脚本，Column 属性无法正常工作。请下载并安装 Windows Script 5.6 来修复此问题。
+> `StdOut.Column`属性在 Windows Script 5.6 及更高版本中可用。如果你在默认构建的 Windows 2000 计算机上运行此脚本，`Column`属性无法正常工作。请下载并安装 Windows Script 5.6 来修复此问题。
 
-它会插入分隔符字符，直到达到所需的列，然后显示字符串。例如，调用函数 `Tabulate("MyData", 30, " ")` 会在第 30 列显示字符串 MyData。空格将被插入，直到间距在第 30 个字符处对齐。此函数还支持自定义分隔符字符（默认为空格，但此字符可以通过 `-d [delimiter]` 参数定义），这可能有助于解析输出。
+它会插入分隔符字符，直到达到所需的列，然后显示字符串。例如，调用函数`Tabulate("MyData", 30, " ")`会在第 30 列显示字符串`MyData`。空格将被插入，直到间距在第 30 个字符处对齐。此函数还支持自定义分隔符字符（默认为空格，但此字符可以通过`-d [delimiter]`参数定义），这可能有助于解析输出。
 
 ```
 //------------------------------------------------
@@ -3709,15 +4076,20 @@ WScript.StdOut.Write(strData);
 ## 关键点
 
 - 严格基于控制台的脚本的一个好处是，通常可以使用 Windows 计划任务进行调度，而无需大量特殊准备。
-- 使用 runas 命令以管理员凭据或其他域的凭据调用命令提示符，以允许你的脚本运行而无需更改当前登录会话。
-- 正则表达式为你的脚本带来极其强大的文本解析和过滤功能。虽然它们可能学起来很复杂，但其实用性会让你付出的学习曲线获得十倍的回报。要了解更多关于正则表达式的功能和用法，请访问 JScript 参考 MSDN 站点上的 RegEx 文档：http://msdn.microsoft.com/library/en-us/script56/html/js56reconIntroductionToRegularExpression.asp。
+
+- 使用`runas`命令以管理员凭据或其他域的凭据调用命令提示符，以允许你的脚本运行而无需更改当前登录会话。
+
+- 正则表达式为你的脚本带来极其强大的文本解析和过滤功能。虽然它们可能学起来很复杂，但其实用性会让你付出的学习曲线获得十倍的回报。要了解更多关于正则表达式的功能和用法，请访问 JScript 参考 MSDN 站点上的 RegEx 文档：`http://msdn.microsoft.com/library/en-us/script56/html/js56reconIntroductionToRegularExpression.asp`。
+
 - 使用函数来委托重复任务。这样做不仅使你的代码更简单、更易于阅读，还允许你在其他脚本中重用函数。
+
 - 自定义对象和数组为你的数据提供存储容器。数组是按顺序索引的，而对象允许你分配自定义属性和值。
-- WSH `FileSystemObject` 提供方法，使你的脚本能够读取和写入文本文件。
-- 使用 LDAP 或 SQL 查询语法来定义高效的 ADSI ADO 查询。ADO 查询由 `Connection` 对象、`Command` 对象和 `RecordSet` 对象组成。
-- 使用 `objRootDSE` 对象通过无服务器绑定（例如，`LDAP://RootDSE`）获取有关运行脚本的用户的默认目录服务器的信息。
 
+- WSH `FileSystemObject`提供方法，使你的脚本能够读取和写入文本文件。
 
+- 使用 LDAP 或 SQL 查询语法来定义高效的 ADSI ADO 查询。ADO 查询由`Connection`对象、`Command`对象和`RecordSet`对象组成。
+
+- 使用`objRootDSE`对象通过无服务器绑定（例如，`LDAP://RootDSE`）获取有关运行脚本的用户的默认目录服务器的信息。
 
 ## 5 转储域用户的详细账户信息
 
@@ -3762,39 +4134,56 @@ ADSI LDAP 提供程序公开了许多仅在各个域控制器上可用的目录�
 
 | 业务目标 | 技术需求 |
 | --- | --- |
-| 检查单个用户账户的状态。 | 创建 ADO ADSI 查询并选择与指定名称模式和 objectCategory='person' 匹配的用户账户。 |
-| 检查已禁用账户、过期密码。 | 检查 ADSI `AccountDisabled` 和 `IsAccountLocked` 属性。 |
-| 查找用户信息，包括全名、电话号码、域和 OU 信息。 | 获取 ADSI 属性，如 `Title`、`TelephoneNumber`、`sAMAccountName`、`uUPN`、`Name`、`DN`、`ADsPath` 和创建日期。 |
-| 显示账户上次使用时间。 | 需要确定 `LastLogon` 属性，该属性存储在每个域控制器上。通过查找 `PrimaryGroupID=516` 的计算机来查找所有域控制器。使用 ADSI WinNT 提供程序查询每个域控制器以获取指定用户的 `LastLogon`。捕获错误，以防用户未使用该域登录网络。 |
-| 显示 Exchange 2000 邮箱信息。 | 列出 ADSI `mail` 属性。 |
-| 列出组成员身份。 | 遍历 ADSI `Groups` 属性。此属性仅列出用户所属的域组，不包括本地计算机组的成员。 |
+| 检查单个用户账户的状态。 | 创建 ADO ADSI 查询并选择与指定名称模式和`objectCategory='person'`匹配的用户账户。 |
+| 检查已禁用账户、过期密码。 | 检查 ADSI`AccountDisabled`和`IsAccountLocked`属性。 |
+| 查找用户信息，包括全名、电话号码、域和 OU 信息。 | 获取 ADSI 属性，如`Title`、`TelephoneNumber`、`sAMAccountName`、`uUPN`、`Name`、`DN`、`ADsPath`和创建日期。 |
+| 显示账户上次使用时间。 | 需要确定`LastLogon`属性，该属性存储在每个域控制器上。通过查找`PrimaryGroupID=516`的计算机来查找所有域控制器。使用 ADSI WinNT 提供程序查询每个域控制器以获取指定用户的`LastLogon`。捕获错误，以防用户未使用该域登录网络。 |
+| 显示 Exchange 2000 邮箱信息。 | 列出 ADSI`mail`属性。 |
+| 列出组成员身份。 | 遍历 ADSI`Groups`属性。此属性仅列出用户所属的域组，不包括本地计算机组的成员。 |
 
 该脚本重用了第 4 章中讨论的 *ADSIQuery* 脚本的一些基本操作功能，包括参数处理代码和枚举代码。ADO 目录服务查询过程已重写为使用 SQL 方言而非 LDAP 方言，并且 ADO 代码已卸载到其自己的函数中以提高可重用性。通过将查询隔离到其自己的函数中，同一函数可用于执行脚本的两个主要查询：搜索匹配条件的用户账户和搜索域控制器。
 
-**主程序：** 评估参数并构建查询语法以发送到 queryDs 函数。
+**主程序：** 评估参数并构建查询语法以发送到`queryDs`函数。
 
 - 评估输入参数并设置适当的处理标志。
+
 - 构建目录服务查询。
+
 - 调用处理函数。
+
 - **ListUserInfo：** 显示有关存储在目录服务中的用户对象的 ADSI LDAP 属性，如姓名、电子邮件地址、电话号码、账户是否被锁定或禁用，以及不同的账户命名结构。
+
 - **ListLastLogon：** 使用 LDAP 和 WinNT 提供程序显示日期信息。
+
   - 使用 LDAP 提供程序绑定到指定（或默认）域的每个域控制器，并返回上次登录、密码过期和密码最后更改的日期和时间。
+
   - 使用 WinNT 提供程序绑定到各个域控制器以返回 *LastLogon* 日期。
+
 - **ListGroupMemberships：** 列出对象所属的组。
+
   - 表示第 4 章中介绍的组枚举函数的截断版本。
-- **QueryDS：** 返回满足给定 CommandText 的所有对象的数组。
-  - 表示第 4 章中介绍的 LDAP 查询引擎的更精简版本。此版本接受 Command 对象的 CommandText 属性作为输入，执行指定查询，并返回包含结果集中每个对象的 ADsPath 的数组。
+
+- **QueryDS：** 返回满足给定`CommandText`的所有对象的数组。
+
+  - 表示第 4 章中介绍的 LDAP 查询引擎的更精简版本。此版本接受 Command 对象的`CommandText`属性作为输入，执行指定查询，并返回包含结果集中每个对象的`ADsPath`的数组。
+
 - **GetDomainInfo：** 获取当前域和域控制器的名称。
+
   - 确定当前域和域控制器的名称。已从第 4 章重用的辅助函数：
+
     - **CurrentDomain：** 发现运行脚本的用户上下文的当前域。
+
     - **Heading：** 格式化输出标题。
+
     - **Usage：** 显示有关如何使用脚本的帮助屏幕。
+
     - **ParamError：** 如果未包含依赖的脚本参数，则显示错误文本。
+
     - **Tabulate：** 对齐文本输出。
 
 ### 分发和安装
 
-此脚本 `UserQuery.js` 重用了第 4 章中介绍的多个函数，使用 JScript 编写。该脚本将分发给帮助台工作人员，他们将从命令提示符运行该脚本。脚本使用 `WScript.StdOut` 方法，必须使用 `cscript.exe` 而非 `wscript.exe` 运行。
+此脚本`UserQuery.js`重用了第 4 章中介绍的多个函数，使用 JScript 编写。该脚本将分发给帮助台工作人员，他们将从命令提示符运行该脚本。脚本使用`WScript.StdOut`方法，必须使用`cscript.exe`而非`wscript.exe`运行。
 
 # 输出
 
@@ -3812,8 +4201,6 @@ UserQuery -le trooper
 
 *UserQuery* 提供了一个如何更新现有脚本以执行不同功能的示例。你会看到与第 4 章的 *ADSIQuery* 代码的相似之处；但是，请注意该脚本在某些地方更精简，而在其他地方增加了功能。该脚本有意使用不同的方法来解决第 4 章中解决的类似问题。检查多种替代方法可能会在你学习这些不同技术时带来额外的清晰度。此外，这种多管齐下的方法可能有助于回答第 4 章中遗留的问题。
 
-
-
 IT 管理员的 Windows 十大入门脚本
 
 # 目标
@@ -3821,58 +4208,88 @@ IT 管理员的 Windows 十大入门脚本
 设计一个命令行工具，用于查询并显示用户账户状态、创建日期、密码过期日期、组成员身份以及通讯组列表成员身份。此脚本演示了 WSH 参数、ADSI、ADO、以及 LDAP 和 WinNT 提供程序的使用。
 
 - **ADODB.Connection**
+
   - Provider
+
   - Open
+
 - **ADODB.Command**
+
   - ActiveConnection
+
   - Properties
+
   - CommandText
+
   - Execute
+
 - **ADSI—连接 LDAP 和 WinNT 提供程序**
+
   - GetObject
+
   - Groups
+
 - **Array**
+
   - push
+
 - **Enumerator**
+
   - atEnd
+
   - MoveNext
+
 - **JScript 错误处理**
+
   - Try...Catch
+
 - **SQL 方言查询**
+
   - SELECT, FROM, WHERE
+
 - **RecordSet**
+
   - EOF
+
   - Fields.Item(x).Value
+
 - **RootDSE**
-  - GetObject("LDAP://RootDSE")
-  - Get("defaultNamingContext")
+
+  - `GetObject("LDAP://RootDSE")`
+
+  - `Get("defaultNamingContext")`
 
 #### 字符串函数
+
 - split
 
 ### WScript.Arguments
+
 - colArgs.length
+
 - colArgs.Item
 
 #### WScript.StdOut
+
 - Write
+
 - Column
 
 # 脚本
 
-UserQuery 是一个命令行工具，用于显示用户账户信息，如图 5.1 所示。此脚本中展示的属性仅演示了 IADsUser 接口 50 多个属性中的一小部分，你可以根据自己的环境或需求添加更多属性来自定义脚本。
+`UserQuery`是一个命令行工具，用于显示用户账户信息，如图 5.1 所示。此脚本中展示的属性仅演示了`IADsUser`接口 50 多个属性中的一小部分，你可以根据自己的环境或需求添加更多属性来自定义脚本。
 
-运行该脚本会查询默认的 LDAP 目录服务（因为未指定 -d [域名]），使用的端口是众所周知的 LDAP 端口（TCP 端口 389）。
+运行该脚本会查询默认的 LDAP 目录服务（因为未指定`-d [域名]`），使用的端口是众所周知的 LDAP 端口（TCP 端口 389）。
 
--l 参数指示脚本列出用户账户的登录日期。当用户登录 Windows 2000 网络时，登录日期和时间仅存储在验证该用户的域控制器上。这意味着为了准确显示最后登录日期，脚本必须查询域中所有域控制器的最后登录日期。运行脚本的计算机通过 WinNT 提供程序调用这些 ADSI 查询，使用 TCP 端口 445 进行这些直接的机器查询。WinNT 提供程序使用的端口与 LDAP 提供程序不同，因为 Windows 计算机不运行 LDAP 服务来提供本地账户信息。但是，Windows 2000 域控制器同时支持 WinNT 和 LDAP 提供程序查询，这两个服务分别监听不同的端口，提供关于同一对象目录的相似但不完全相同的信息。
+`-l`参数指示脚本列出用户账户的登录日期。当用户登录 Windows 2000 网络时，登录日期和时间仅存储在验证该用户的域控制器上。这意味着为了准确显示最后登录日期，脚本必须查询域中所有域控制器的最后登录日期。运行脚本的计算机通过 WinNT 提供程序调用这些 ADSI 查询，使用 TCP 端口 445 进行这些直接的机器查询。WinNT 提供程序使用的端口与 LDAP 提供程序不同，因为 Windows 计算机不运行 LDAP 服务来提供本地账户信息。但是，Windows 2000 域控制器同时支持 WinNT 和 LDAP 提供程序查询，这两个服务分别监听不同的端口，提供关于同一对象目录的相似但不完全相同的信息。
 
 ![](img/eafd0e1632fc08452cf4d68dbe912652_174_0.png)
 
-该脚本在光盘中位于 /chapter 5/scripts/UserQuery.js。在继续下一节之前，请从光盘中打开实际脚本并在测试环境中运行几次，以感受其工作方式。自行浏览整个代码，然后继续阅读详解，希望能解答你可能有的任何问题。此外，在脚本编辑器中查看完整代码可以让你很好地了解其范围，也便于我们在讲解其功能时进行调整。
+该脚本在光盘中位于`/chapter 5/scripts/UserQuery.js`。在继续下一节之前，请从光盘中打开实际脚本并在测试环境中运行几次，以感受其工作方式。自行浏览整个代码，然后继续阅读详解，希望能解答你可能有的任何问题。此外，在脚本编辑器中查看完整代码可以让你很好地了解其范围，也便于我们在讲解其功能时进行调整。
 
 ### 主体
 
-现在，让我们来探讨脚本 *UserQuery.js*。脚本以传统的变量声明开头。变量 `i` 和 `j` 表示在整个脚本中使用的通用计数器变量。变量 `iTotalCriteria` 表示检测到的标准总数。对象 `objState` 包含各种状态标志参数，用于指示脚本应采取的操作。此脚本中定义的状态如下：
+现在，让我们来探讨脚本 *UserQuery.js*。脚本以传统的变量声明开头。变量`i`和`j`表示在整个脚本中使用的通用计数器变量。变量`iTotalCriteria`表示检测到的标准总数。对象`objState`包含各种状态标志参数，用于指示脚本应采取的操作。此脚本中定义的状态如下：
 
 | 属性 | 描述 |
 |----------|-------------|
@@ -3882,7 +4299,7 @@ UserQuery 是一个命令行工具，用于显示用户账户信息，如图 5.1
 | `objState.lastlogin` | 枚举检测到的域控制器，并查询每个控制器记录的最后登录属性。 |
 | `objState.enumerate` | 显示指定用户账户所属的组。 |
 
-*UserQuery* 使用三个数组来跟踪数据：`aCriteria`、`aObjects` 和 `aDCs`。第一个数组 `aCriteria` 包含脚本用于匹配用户账户名称的名称（或部分名称）列表。第二个数组 `aObjects` 包含匹配 `aCriteria` 中所有标准的实际用户账户的 `AdsPath`。（`IADs` 接口的 `AdsPath` 属性表示 AD 中某个对象的完整唯一 LDAP 名称。）最后一个数组 `aDCs` 包含在目标域中发现的每个域控制器的 `AdsPath`。
+*UserQuery* 使用三个数组来跟踪数据：`aCriteria`、`aObjects`和`aDCs`。第一个数组`aCriteria`包含脚本用于匹配用户账户名称的名称（或部分名称）列表。第二个数组`aObjects`包含匹配`aCriteria`中所有标准的实际用户账户的`AdsPath`。（`IADs`接口的`AdsPath`属性表示 AD 中某个对象的完整唯一 LDAP 名称。）最后一个数组`aDCs`包含在目标域中发现的每个域控制器的`AdsPath`。
 
 ```
 //----------------------------------------------------------------------------
@@ -3910,7 +4327,7 @@ if(WScript.FullName.indexOf("WScript")>=0) {
     }
 ```
 
-函数 strDomain 使用与第 4 章中介绍的相同方法来发现运行脚本的域账户名称。此外，此脚本中使用的参数枚举例程与 ADSIQuery 中使用的相同。如果用户指定帮助参数（-?），脚本会调用 Usage 函数然后退出。
+函数`strDomain`使用与第 4 章中介绍的相同方法来发现运行脚本的域账户名称。此外，此脚本中使用的参数枚举例程与`ADSIQuery`中使用的相同。如果用户指定帮助参数（`-?`），脚本会调用`Usage`函数然后退出。
 
 ```
 strDomain=CurrentDomain();
@@ -3946,15 +4363,15 @@ if(!objState.info && !objState.lastlogin && !objState.enumerate)
 if(objState.help) Usage();
 ```
 
-*UserQuery* 执行 ADSI 查询的方式与 *ADSIQuery* 略有不同。在 *ADSIQuery* 中，一个专用函数负责处理查询的整个构建和执行过程。然而，在 *UserQuery* 脚本中，主程序构建查询字符串，然后仅将 `CommandText` 字符串发送给查询函数 `QueryDS`。ADO `Command` 对象的 `CommandText` 属性定义了要执行的查询。然后 `QueryDS` 构建连接和命令对象、执行查询、解析 `RecordSet`，并将结果以数组形式返回给调用函数。
+*UserQuery* 执行 ADSI 查询的方式与 *ADSIQuery* 略有不同。在 *ADSIQuery* 中，一个专用函数负责处理查询的整个构建和执行过程。然而，在 *UserQuery* 脚本中，主程序构建查询字符串，然后仅将`CommandText`字符串发送给查询函数`QueryDS`。ADO`Command`对象的`CommandText`属性定义了要执行的查询。然后`QueryDS`构建连接和命令对象、执行查询、解析`RecordSet`，并将结果以数组形式返回给调用函数。
 
 *ADSIQuery* 仅使用一次查询引擎，因此将整个查询过程放在一个函数中是合理的。然而，*UserQuery* 在每次运行时执行多个不同的查询，将大部分查询逻辑分离到自己的函数中可以使其可复用并减少代码重复。
 
-另外，比较一下用于构建 ADSI 查询的 SQL 方言与第 4 章 *ADSIQuery* 中使用的 LDAP 方言。两个查询字符串实现相同的结果，`QueryDS` 使用的 `CommandText` 字符串可以采用任一方言。该查询搜索匹配给定标准集中的任何一个的用户对象。脚本将所有标准附加到查询字符串中，这意味着脚本只需执行一次查询，而无需遍历每个标准并为每个标准执行一次查询。
+另外，比较一下用于构建 ADSI 查询的 SQL 方言与第 4 章 *ADSIQuery* 中使用的 LDAP 方言。两个查询字符串实现相同的结果，`QueryDS`使用的`CommandText`字符串可以采用任一方言。该查询搜索匹配给定标准集中的任何一个的用户对象。脚本将所有标准附加到查询字符串中，这意味着脚本只需执行一次查询，而无需遍历每个标准并为每个标准执行一次查询。
 
-基于 SQL 方言的查询以 `SELECT` 语句开头。在以下代码中，查询字符串 `SELECT ADsPath,Name FROM LDAP://" + strDomain` 表示仅从 LDAP 服务器返回两个属性（`Adspath` 和 `Name`）给运行脚本的客户端。如第 3 章所述，定义 `LDAP://domainname` 而不指定特定域控制器的名称称为无服务器绑定。使用无服务器绑定时，Windows 会计算要连接和查询的最佳域控制器。
+基于 SQL 方言的查询以`SELECT`语句开头。在以下代码中，查询字符串`SELECT ADsPath,Name FROM LDAP://" + strDomain`表示仅从 LDAP 服务器返回两个属性（`Adspath`和`Name`）给运行脚本的客户端。如第 3 章所述，定义`LDAP://domainname`而不指定特定域控制器的名称称为无服务器绑定。使用无服务器绑定时，Windows 会计算要连接和查询的最佳域控制器。
 
-继续查看查询字符串，语法 `WHERE objectClass = 'user' AND objectCategory = 'person'` 仅定义用户对象。
+继续查看查询字符串，语法`WHERE objectClass = 'user' AND objectCategory = 'person'`仅定义用户对象。
 
 ```
 iTotalCriteria=aCriteria.length;
@@ -3982,7 +4399,7 @@ If Criteria > 1 then
   )
 ```
 
-通配符（\*）在每条条件的前后拼接，允许将部分条件与用户对象的 Name 属性进行匹配。例如，\*Tro\* 匹配 Trooper。根据应用程序的不同，您可能希望更改查询以匹配实际的用户名 sAMAccountName。例如，如果您的组织使用前缀 c- 来标识承包商账户（例如，c-jefff），并且您想要列出所有承包商账户的详细信息，您可以简单地更改查询字符串以返回 sAMAccountName 而不是 Name，然后匹配该属性。
+通配符（`*`）在每条条件的前后拼接，允许将部分条件与用户对象的`Name`属性进行匹配。例如，`*Tro*`匹配`Trooper`。根据应用程序的不同，您可能希望更改查询以匹配实际的用户名`sAMAccountName`。例如，如果您的组织使用前缀`c-`来标识承包商账户（例如，`c-jefff`），并且您想要列出所有承包商账户的详细信息，您可以简单地更改查询字符串以返回`sAMAccountName`而不是`Name`，然后匹配该属性。
 
 ```
 if(iTotalCriteria > 0){
@@ -3994,7 +4411,7 @@ if(iTotalCriteria > 0){
 }
 ```
 
-此时，查询的 CommandText 已完全定义。以下是包含三个条件项的已完成查询的 CommandText 实际示例：
+此时，查询的`CommandText`已完全定义。以下是包含三个条件项的已完成查询的`CommandText`实际示例：
 
 ```
 SELECT ADsPath, Name FROM 'LDAP://DC=blackstatic,DC=com' WHERE
@@ -4002,7 +4419,7 @@ objectClass = 'user' AND objectCategory = 'person' AND (Name='*jeff*'
 OR Name='*kellie*' OR Name='*trooper*')
 ```
 
-接下来，脚本显示有关查询的可选信息，然后通过将 CommandText 发送到函数 QueryDS 来执行查询。QueryDS 函数将结果返回到数组 aObjects 中。关于 QueryDS 如何运行的详细描述，请参见本脚本中实际函数部分的进一步说明。
+接下来，脚本显示有关查询的可选信息，然后通过将`CommandText`发送到函数`QueryDS`来执行查询。`QueryDS`函数将结果返回到数组`aObjects`中。关于`QueryDS`如何运行的详细描述，请参见本脚本中实际函数部分的进一步说明。
 
 ```
 if(objState.verbose){
@@ -4014,11 +4431,11 @@ if(objState.verbose){
 aObjects=QueryDS(strCommandText);
 ```
 
-之前我们提到，*ADSIQuery* 中使用的查询引擎分为两部分。第一部分定义查询字符串的独特特征，第二部分代表一个更通用的函数，可供不同类型的查询重复使用。接下来的代码展示了 `QueryDS` 函数的重复使用，并以新的 `CommandText` 属性定义开始。第二个查询返回指定域中的所有域控制器。稍后，脚本将绑定到每个域控制器以提取指定用户的最后登录日期。如果脚本未使用最后登录参数（-1）运行，则脚本将跳过整个查询。单独绑定到多台机器可能需要一些时间，这就是为什么脚本可选地提供此功能的原因。
+之前我们提到，*ADSIQuery* 中使用的查询引擎分为两部分。第一部分定义查询字符串的独特特征，第二部分代表一个更通用的函数，可供不同类型的查询重复使用。接下来的代码展示了`QueryDS`函数的重复使用，并以新的`CommandText`属性定义开始。第二个查询返回指定域中的所有域控制器。稍后，脚本将绑定到每个域控制器以提取指定用户的最后登录日期。如果脚本未使用最后登录参数（`-l`）运行，则脚本将跳过整个查询。单独绑定到多台机器可能需要一些时间，这就是为什么脚本可选地提供此功能的原因。
 
-查询语法使用 SQL 方言，尽管 `QueryDS` 函数接受并处理使用 SQL 或 LDAP 方言查询字符串的 `CommandText`。它开始使用与之前的用户对象条件语法相似的语法。此查询仅需要 `IADs` 接口属性 `AdsPath` 和 `PrimaryGroupID`。`AdsPath` 定义了域控制器的唯一位置。Windows 2000 AD 域中的域控制器定义的 `PrimaryGroupID` 为 `516`。（`PrimaryGroupID` 是用户主组的相对标识符（RID）。）
+查询语法使用 SQL 方言，尽管`QueryDS`函数接受并处理使用 SQL 或 LDAP 方言查询字符串的`CommandText`。它开始使用与之前的用户对象条件语法相似的语法。此查询仅需要`IADs`接口属性`AdsPath`和`PrimaryGroupID`。`AdsPath`定义了域控制器的唯一位置。Windows 2000 AD 域中的域控制器定义的`PrimaryGroupID`为`516`。（`PrimaryGroupID`是用户主组的相对标识符（RID）。）
 
-*找到区分您所需搜索参数的特定、唯一条件（例如通过 `PrimaryGroupID` 为 516 来查找域控制器）对您来说可能就像大海捞针。* 首先，尝试在互联网上寻找信息——您可能会对可用的详细脚本信息的丰富程度感到惊讶。如果您仍需要更多信息，请尝试枚举几个不同对象的所有属性，看看是否能发现定义搜索参数的独特特征。（第 3 章介绍了一个 ADSI 属性枚举脚本。）
+*找到区分您所需搜索参数的特定、唯一条件（例如通过`PrimaryGroupID`为 516 来查找域控制器）对您来说可能就像大海捞针。* 首先，尝试在互联网上寻找信息——您可能会对可用的详细脚本信息的丰富程度感到惊讶。如果您仍需要更多信息，请尝试枚举几个不同对象的所有属性，看看是否能发现定义搜索参数的独特特征。（第 3 章介绍了一个 ADSI 属性枚举脚本。）
 
 另外，要注意可能遗漏对象的查询。例如，在查找所有域控制器时，您可以查询内置组织单位"Domain Controllers"的内容；然而，有些组织可能并不总是使用那个容器，而可能将域控制器移动到其他容器中。搜索 RID 为 516 的结果会返回域控制器，无论它们在 AD 层次结构中被移动到何处。
 
@@ -4029,7 +4446,7 @@ SELECT ADsPath,PrimaryGroupID FROM 'LDAP://DC=blackstatic,DC=com'
 WHERE PrimaryGroupID = '516'
 ```
 
-此 CommandText 被发送到 QueryDS 函数，结果存储在数组 aDCs 中。脚本还可选地显示域控制器的 ADsPath。
+此`CommandText`被发送到`QueryDS`函数，结果存储在数组`aDCs`中。脚本还可选地显示域控制器的`ADsPath`。
 
 ```
 if(objState.lastlogin) {
@@ -4045,7 +4462,7 @@ if(objState.lastlogin) {
 }
 ```
 
-此时，所有用户账户对象和域控制器都已识别，现在脚本准备显示每个对象的信息。脚本遍历数组 aObjects，并使用 ADSI LDAP 提供程序绑定到每个用户账户对象。然后将此引用发送到三个函数进行最终处理。第一个函数 ListUserInfo 简单地收集有关对象的属性信息并将其显示到控制台。第二个函数 ListGroupMemberships 列出用户对象所属的所有组。最后一个函数 ListLastLogon 使用对象的 LDAP sAMAccountName 属性，通过 ADSI WinNT 提供程序绑定到每个域控制器。从每个域控制器提取用户账户日期信息，并以矩阵格式显示。这三个函数结束了脚本的主程序。
+此时，所有用户账户对象和域控制器都已识别，现在脚本准备显示每个对象的信息。脚本遍历数组`aObjects`，并使用 ADSI LDAP 提供程序绑定到每个用户账户对象。然后将此引用发送到三个函数进行最终处理。第一个函数`ListUserInfo`简单地收集有关对象的属性信息并将其显示到控制台。第二个函数`ListGroupMemberships`列出用户对象所属的所有组。最后一个函数`ListLastLogon`使用对象的 LDAP`sAMAccountName`属性，通过 ADSI WinNT 提供程序绑定到每个域控制器。从每个域控制器提取用户账户日期信息，并以矩阵格式显示。这三个函数结束了脚本的主程序。
 
 ```
 for(i=0;i<aObjects.length;i++) {
@@ -4056,7 +4473,7 @@ for(i=0;i<aObjects.length;i++) {
         ListUserInfo(objADs,strDelimit);
     }
     if(objState.enumerate) {
-        Wảnuit StdOut Wrirte("\n\nGroup Memberships");
+        WScript.StdOut.Write("\n\nGroup Memberships");
         ListGroupMemberships(objADs);
     }
     if(objState.lastlogin) {
@@ -4069,13 +4486,15 @@ WScript.Quit(0);
 
 #### ListUserInfo
 
-`ListUserInfo` 函数显示指定用户账户对象的各种 ADSI LDAP 属性值，如之前在图 5.1 中所见。该函数接受已建立的对象引用作为输入参数。（主程序（调用函数）之前通过调用方法 `GetObject(AdsPath)` 建立了此引用。）`ListUserInfo` 转而调用 `Tabulate` 函数，将 LDAP 属性左对齐到特定列。
+`ListUserInfo`函数显示指定用户账户对象的各种 ADSI LDAP 属性值，如之前在图 5.1 中所见。该函数接受已建立的对象引用作为输入参数。（主程序（调用函数）之前通过调用方法`GetObject(AdsPath)`建立了此引用。）`ListUserInfo`转而调用`Tabulate`函数，将 LDAP 属性左对齐到特定列。
 
-此函数还使用 JScript 条件三元运算符（"x?y:z"）来显示两个结果之一，具体取决于条件结果。类似于 Excel 中的 `if(statement, true, false)` 函数，三元运算符提供了一个评估条件逻辑的快捷方式。三元运算符评估问号左侧的语句，如果为真，则代码执行问号右侧的第一个语句。否则，代码执行冒号右侧的第二个语句。
+此函数还使用 JScript 条件三元运算符（`x?y:z`）来显示两个结果之一，具体取决于条件结果。类似于 Excel 中的`if(statement, true, false)`函数，三元运算符提供了一个评估条件逻辑的快捷方式。三元运算符评估问号左侧的语句，如果为真，则代码执行问号右侧的第一个语句。否则，代码执行冒号右侧的第二个语句。
 
 例如，以下语句：
+
 *(scripting is fun ? of course it is : don't worry, it will get better!)*
-如果 "scripting is fun" 评估为真，则程序返回 "of course it is"。否则，如果为假，程序返回 "don't worry, it will get better!" 三元运算符是对较长的 if...then...else 条件语句的优雅规避。
+
+如果 "scripting is fun" 评估为真，则程序返回 "of course it is"。否则，如果为假，程序返回 "don't worry, it will get better!" 三元运算符是对较长的`if...then...else`条件语句的优雅规避。
 
 ```
 //-----------------------------------------------------------------------
@@ -4089,8 +4508,6 @@ WScript.StdOut.Write("\n");
 Tabulate(objADs.IsAccountLocked?"Locked Out":"Not Locked Out",
 18,strDelimit);
 ```
-
-
 
 ```
 WScript.StdOut.Write("\n\nTitle: ");
@@ -4114,7 +4531,7 @@ Tabulate(objADs.whenCreated,18,strDelimit);
 }
 ```
 
-前面的函数 `ListUserInfo` 显示的是 AD LDAP 目录服务中的属性，而接下来的函数 `ListLastLogon` 则绑定到每个域控制器，从 WinNT 提供程序中提取指定用户账户的信息。
+前面的函数`ListUserInfo`显示的是 AD LDAP 目录服务中的属性，而接下来的函数`ListLastLogon`则绑定到每个域控制器，从 WinNT 提供程序中提取指定用户账户的信息。
 
 ![](img/eafd0e1632fc08452cf4d68dbe912652_182_0.png)
 
@@ -4122,31 +4539,31 @@ Tabulate(objADs.whenCreated,18,strDelimit);
 
 #### ListLastLogon
 
-函数 `ListLastLogon` 向域中发现的每个域控制器查询用户账户的日期信息，包括用户上次登录的日期和时间、密码过期时间以及密码上次更改的时间。你可能会感到惊讶，用户的实际上次登录信息并不会汇总到 LDAP 服务器，而是存储在对该用户进行身份验证的每个域控制器的本地。要确定实际上次登录时间，你必须查询每个域控制器并找到最近的日期。图 5.2 展示了使用 `ListLastLogon` 运行脚本的输出示例。
+函数`ListLastLogon`向域中发现的每个域控制器查询用户账户的日期信息，包括用户上次登录的日期和时间、密码过期时间以及密码上次更改的时间。你可能会感到惊讶，用户的实际上次登录信息并不会汇总到 LDAP 服务器，而是存储在对该用户进行身份验证的每个域控制器的本地。要确定实际上次登录时间，你必须查询每个域控制器并找到最近的日期。图 5.2 展示了使用`ListLastLogon`运行脚本的输出示例。
 
 ![](img/eafd0e1632fc08452cf4d68dbe912652_183_0.png)
 
-**图 5.2** ListLastLogon 使用 ADSI LDAP 和 WinNT 提供程序显示用户账户的上次登录日期。
+**图 5.2** `ListLastLogon`使用 ADSI LDAP 和 WinNT 提供程序显示用户账户的上次登录日期。
 
-> *变量 i 在此函数中使用——同时也在调用此函数的主程序中使用。如果变量在子函数中没有被重新声明，JScript 会将其视为全局变量，这可能会导致一些意想不到的结果。应通过在每个使用变量的函数中显式声明所有变量来避免使用全局变量。*
+> *变量`i`在此函数中使用——同时也在调用此函数的主程序中使用。如果变量在子函数中没有被重新声明，JScript 会将其视为全局变量，这可能会导致一些意想不到的结果。应通过在每个使用变量的函数中显式声明所有变量来避免使用全局变量。*
 
-ListLastLogon 遍历 aDCs 数组的每个成员，并绑定到每台计算机上的用户对象。从计算机的 WinNT 提供程序指定用户对象的语法如下：
+`ListLastLogon`遍历`aDCs`数组的每个成员，并绑定到每台计算机上的用户对象。从计算机的 WinNT 提供程序指定用户对象的语法如下：
 
 ```
 WinNT://ComputerName/UserName
 ```
 
-aDCs 数组包含域控制器的 ADsPath（例如，`LDAP://CN=dc1,OU=Domain Controllers,DC=blackstatic,DC=com`），并使用此属性绑定到 ADSI LDAP 对象以获取其 Name 属性（例如，*CN=dc1*）。函数获取此 Name 属性并使用字符串方法 split 提取正则表达式（`"="`）右侧的数据，在本例中即为计算机的简单名称（如 *dc1*）。（记住，split 方法返回一个包含被拆分字符串的数组，在本例中只有一个等号，因此有两个部分——等号左侧部分和等号右侧部分。第一部分由数组元素 `array[0]` 表示，第二部分由 `array[1]` 表示。）
+`aDCs`数组包含域控制器的`ADsPath`（例如，`LDAP://CN=dc1,OU=Domain Controllers,DC=blackstatic,DC=com`），并使用此属性绑定到 ADSI LDAP 对象以获取其`Name`属性（例如，*CN=dc1*）。函数获取此`Name`属性并使用字符串方法`split`提取正则表达式（`"="`）右侧的数据，在本例中即为计算机的简单名称（如 *dc1*）。（记住，`split`方法返回一个包含被拆分字符串的数组，在本例中只有一个等号，因此有两个部分——等号左侧部分和等号右侧部分。第一部分由数组元素`array[0]`表示，第二部分由`array[1]`表示。）
 
-最后，函数将前缀 `WinNT://` 与计算机名称以及斜杠（`/`）和用户名拼接在一起。然后使用此字符串绑定到该计算机上的该用户对象。
+最后，函数将前缀`WinNT://`与计算机名称以及斜杠（`/`）和用户名拼接在一起。然后使用此字符串绑定到该计算机上的该用户对象。
 
 #### 转储域用户的详细账户信息
 
-在显示表头之后，函数遍历并显示当前域控制器的名称。然后函数尝试从此域控制器获取用户账户的日期属性。如果用户尚未登录到特定域控制器，则该值不存在。这说明了你必须捕获和处理的那种错误，因为你不知道它何时何地会发生。此函数使用 JScript 的 try...catch 语句在尝试获取属性时保护代码的执行。
+在显示表头之后，函数遍历并显示当前域控制器的名称。然后函数尝试从此域控制器获取用户账户的日期属性。如果用户尚未登录到特定域控制器，则该值不存在。这说明了你必须捕获和处理的那种错误，因为你不知道它何时何地会发生。此函数使用 JScript 的`try...catch`语句在尝试获取属性时保护代码的执行。
 
-JScript 的 try...catch 语句是一个有用的编程工具，它为 JScript 提供了复杂的错误处理。这对语句允许你安全地尝试有风险的操作。如果操作失败并导致错误，程序会转而执行备用代码。这段备用代码仅在错误情况下执行。除了为你的代码提供安全网之外，try...catch 还支持 error 对象，你可以从中获取有用的调试信息，包括错误描述和错误代码。正如你在下面的代码中看到的，使用 try...catch 几乎类似于 if...then...else 语句的结构，这使得即使是对它不熟悉的新程序员也能轻松读懂。
+JScript 的`try...catch`语句是一个有用的编程工具，它为 JScript 提供了复杂的错误处理。这对语句允许你安全地尝试有风险的操作。如果操作失败并导致错误，程序会转而执行备用代码。这段备用代码仅在错误情况下执行。除了为你的代码提供安全网之外，`try...catch`还支持`error`对象，你可以从中获取有用的调试信息，包括错误描述和错误代码。正如你在下面的代码中看到的，使用`try...catch`几乎类似于`if...then...else`语句的结构，这使得即使是对它不熟悉的新程序员也能轻松读懂。
 
-如果属性不存在，就会发生错误，catch 例程会拦截错误（在下一个示例中，错误包含在变量 e 中）并运行一组替代语句。在下面的代码中，函数将变量 dtTemp 赋值为日期属性的值，如果该属性不存在，则将变量 dtTemp 赋值为字符串 na。
+如果属性不存在，就会发生错误，`catch`例程会拦截错误（在下一个示例中，错误包含在变量`e`中）并运行一组替代语句。在下面的代码中，函数将变量`dtTemp`赋值为日期属性的值，如果该属性不存在，则将变量`dtTemp`赋值为字符串`na`。
 
 ```
 //------------------------------------------------------------------------
@@ -4191,7 +4608,7 @@ for(i=0;i<aDCs.length;i++) {
 
 #### ListGroupMemberships
 
-ListGroupMemberships 函数类似于第 4 章中 ADSIQuery 所使用的函数，但进行了大幅简化。给定一个指向用户对象的现有 AdsPath 引用，该函数使用 Groups 方法枚举该对象所属的所有组。组的 Name 属性表示为相对可分辨名称 CN=groupname，因此使用正则表达式 split 方法将名称截取为仅保留组名部分。此名称会显示在控制台上。图 5.3 展示了使用 -e 参数运行脚本的输出示例，该参数会调用 ListGroupMemberships 函数。
+`ListGroupMemberships`函数类似于第 4 章中`ADSIQuery`所使用的函数，但进行了大幅简化。给定一个指向用户对象的现有`AdsPath`引用，该函数使用`Groups`方法枚举该对象所属的所有组。组的`Name`属性表示为相对可分辨名称`CN=groupname`，因此使用正则表达式`split`方法将名称截取为仅保留组名部分。此名称会显示在控制台上。图 5.3 展示了使用`-e`参数运行脚本的输出示例，该参数会调用`ListGroupMemberships`函数。
 
 ```
 //-------------------------------------------------------
@@ -4212,11 +4629,11 @@ for (;!eGroups.atEnd();eGroups.moveNext()) {
 
 ![](img/eafd0e1632fc08452cf4d68dbe912652_186_0.png)
 
-**图 5.3** ListGroupMemberships 枚举用户账户所属的域组。
+**图 5.3** `ListGroupMemberships`枚举用户账户所属的域组。
 
 ### CurrentDomain
 
-CurrentDomain 函数返回运行脚本的账户的当前域名。有关此函数的更多详情，请参阅第 4 章。
+`CurrentDomain`函数返回运行脚本的账户的当前域名。有关此函数的更多详情，请参阅第 4 章。
 
 ```
 //-----------------------------------------------------------
@@ -4230,9 +4647,7 @@ CurrentDomain 函数返回运行脚本的账户的当前域名。有关此函数
 
 ### QueryDS
 
-QueryDS 函数相对于第 4 章脚本 ADSIQuery 中使用的 LDAP 查询设计有了重大变化。在这里，整个 ADO 查询设计被隔离到一个独立的函数中。函数的输入是一个字符串
-
-该属性表示定义查询的 Command 对象的 CommandText 属性。该函数返回一个包含查询结果的数组。CommandText 字符串包含了查询的核心部分，正如前面代码描述所见，它可能相当复杂。其余的 ADO 查询机制相对简单，如以下代码所示，第 3 章将对其进行详细描述。与之前的 ADO 查询一样，首先创建 Connection 对象，然后创建 Command 对象，最后处理 RecordSet 对象，将感兴趣的数据添加到数组中并返回给调用函数。
+`QueryDS`函数相对于第 4 章脚本`ADSIQuery`中使用的 LDAP 查询设计有了重大变化。在这里，整个 ADO 查询设计被隔离到一个独立的函数中。函数的输入是一个字符串，该属性表示定义查询的 Command 对象的`CommandText`属性。该函数返回一个包含查询结果的数组。`CommandText`字符串包含了查询的核心部分，正如前面代码描述所见，它可能相当复杂。其余的 ADO 查询机制相对简单，如以下代码所示，第 3 章将对其进行详细描述。与之前的 ADO 查询一样，首先创建 Connection 对象，然后创建 Command 对象，最后处理 RecordSet 对象，将感兴趣的数据添加到数组中并返回给调用函数。
 
 ```
 //--------------------------------------------------------------------
@@ -4260,7 +4675,7 @@ return aObjects;
 
 ### Heading
 
-Format headers 函数为重复使用的标题提供了统一的显示方式。
+`Heading`函数为重复使用的标题提供了统一的显示方式。
 
 ```
 //--------------------------------------------------------------------
@@ -4276,7 +4691,7 @@ WScript.Echo("------------------------------------------------------------------
 
 ### Usage
 
-Usage 函数出于对用户的友好提示，显示有关如何使用脚本的说明。它展示了脚本的简要说明、使用方法、支持的参数列表以及一个示例。
+`Usage`函数出于对用户的友好提示，显示有关如何使用脚本的说明。它展示了脚本的简要说明、使用方法、支持的参数列表以及一个示例。
 
 ```
 //-------------------------------------------------------------------------
@@ -4308,7 +4723,7 @@ function Usage()
 
 ### ParamError
 
-ParamError 是脚本中反复调用的另一个函数示例。与其维护多份代码副本，不如将此功能抽取为独立函数，这样既提高了可读性，又精简了代码。
+`ParamError`是脚本中反复调用的另一个函数示例。与其维护多份代码副本，不如将此功能抽取为独立函数，这样既提高了可读性，又精简了代码。
 
 ```
 //-------------------------------------------------------------------------
@@ -4324,7 +4739,7 @@ function ParamError()
 
 ### Tabulate
 
-Tabulate 函数将字符串在指定的文本列位置进行左对齐。关于该函数的详细运行机制，请参阅第 4 章。
+`Tabulate`函数将字符串在指定的文本列位置进行左对齐。关于该函数的详细运行机制，请参阅第 4 章。
 
 ```
 //------------------------------------------------------------
@@ -4340,17 +4755,23 @@ function Tabulate(strData, iColumn, strDelimit)
 
 ### SUMMARY
 
-第 4 章的 ADSIQuery 引入了 ADSI 和 ADO 技术，用于从 AD 返回大量数据；而本章的 UserQuery 脚本提供了类似的查询功能，但对用户对象进行了更深入的检查。该脚本还演示了如何组合 LDAP 和 WinNT 提供程序查询，以收集用户对象的更多数据属性。UserQuery 还介绍了几种处理 ADSI 查询的替代方法，例如使用 SQL 方言以及将实际查询转移到独立函数中。在研究完本章的脚本后，请回顾第 4 章的 ADSIQuery，并比较从 ADSI 提取数据的不同方法。
+第 4 章的`ADSIQuery`引入了 ADSI 和 ADO 技术，用于从 AD 返回大量数据；而本章的`UserQuery`脚本提供了类似的查询功能，但对用户对象进行了更深入的检查。该脚本还演示了如何组合 LDAP 和 WinNT 提供程序查询，以收集用户对象的更多数据属性。`UserQuery`还介绍了几种处理 ADSI 查询的替代方法，例如使用 SQL 方言以及将实际查询转移到独立函数中。在研究完本章的脚本后，请回顾第 4 章的`ADSIQuery`，并比较从 ADSI 提取数据的不同方法。
 
 ### KEY POINTS
 
 - 使用 ADSI 不仅可以在整个目录中搜索大量对象，还可以返回特定对象的详细数据。
-- ADSI IADsUser 接口为用户帐户对象提供了超过 50 个可查看且大部分可定义的属性。
+
+- ADSI`IADsUser`接口为用户帐户对象提供了超过 50 个可查看且大部分可定义的属性。
+
 - *ADSIQuery* 使用 LDAP 方言，而 *UserQuery* 使用 SQL 方言来构建 ADSI 查询。两者各具优势，取决于你的需求。
+
 - 尽可能使用 ADSI LDAP 提供程序从目录服务器获取数据。不过，你可能会发现需要使用 WinNT 提供程序直接连接到计算机以获取某些属性信息。
-- 使你的函数具有通用性以提高可复用性。例如，对于 ADO 查询，通过在调用函数中定义命令字符串，你可以定义一个接受任意命令字符串的可复用函数，然后独立处理 `Connection`、`Command` 和 `Recordset` 对象。
+
+- 使你的函数具有通用性以提高可复用性。例如，对于 ADO 查询，通过在调用函数中定义命令字符串，你可以定义一个接受任意命令字符串的可复用函数，然后独立处理`Connection`、`Command`和`Recordset`对象。
+
 - JScript 三元运算符为简单的条件判断提供了一种便捷的简写方式（例如 *scripting is fun ? of course it is : don't worry, it will get better!*）。
-- 使用 JScript try...catch 语句进行健壮的错误处理和调试。
+
+- 使用 JScript`try...catch`语句进行健壮的错误处理和调试。
 
 ## 转储域用户的详细帐户信息
 
@@ -4368,8 +4789,6 @@ function Tabulate(strData, iColumn, strDelimit)
 
 服务台经理使用一个工单应用程序，该程序接受用户帐户列表以自动生成密码更换通知电子邮件。为了实现此功能，需要一个基于控制台的脚本，能够将数据输出到控制台或文本文件。
 
-
-
 ## 分析
 
 该脚本将 ADSI 查询和显示方法与日期处理程序相结合。日期处理有时会很棘手，但正如我们将看到的，JScript 和 VBScript 都包含日期处理方法，使计算变得可管理。业务目标可以映射为技术要求，如表 6.1 所示。
@@ -4379,18 +4798,18 @@ function Tabulate(strData, iColumn, strDelimit)
 | 业务目标 | 技术要求 |
 |---|---|
 | 列出所有密码将在两周内过期的账户。 | 将今天的日期与每个用户账户的密码过期日期进行比较，并显示将在两周内过期的账户。计算用户账户密码过期日期为密码上次更改的日期加上允许的最大密码有效期。 |
-| 定期安排脚本运行。 | 开发一个支持 Windows Script Host `cscript.exe` 引擎的脚本，该脚本将从命令行运行，并支持使用预定义的启动参数从计划任务运行。 |
-| 显示设置为永不过期的密码的账户。 | 检查 `UserAccountControl` 属性以查看账户是否设置为永不过期。（请注意，这与第 5 章不同，第 5 章列出的是密码*实际*已过期的情况。） |
+| 定期安排脚本运行。 | 开发一个支持 Windows Script Host`cscript.exe`引擎的脚本，该脚本将从命令行运行，并支持使用预定义的启动参数从计划任务运行。 |
+| 显示设置为永不过期的密码的账户。 | 检查`UserAccountControl`属性以查看账户是否设置为永不过期。（请注意，这与第 5 章不同，第 5 章列出的是密码*实际*已过期的情况。） |
 | 显示上周创建的账户。 | 将今天的日期与每个账户的创建日期进行比较，并只显示上周创建的账户列表。 |
-| 显示禁用的账户。 | 根据 `UserAccountControl` 列出账户是否被禁用。 |
-| 显示锁定的账户。 | 使用 ADSI WinNT 提供程序的 `IsAccountLocked` 属性列出账户是否被锁定。 |
-| 将脚本结果输出到控制台。 | 开发一个支持 Windows Script Host `cscript.exe` 引擎的脚本。 |
+| 显示禁用的账户。 | 根据`UserAccountControl`列出账户是否被禁用。 |
+| 显示锁定的账户。 | 使用 ADSI WinNT 提供程序的`IsAccountLocked`属性列出账户是否被锁定。 |
+| 将脚本结果输出到控制台。 | 开发一个支持 Windows Script Host`cscript.exe`引擎的脚本。 |
 
 该脚本通过扫描和生成显示账户创建和密码过期日期的列表，来审计您网络 AD 中定义的用户账户密码轮换策略。有效的密码管理策略包括指定使用强密码、在多次尝试输入错误密码后锁定账户，以及指定密码的最大有效期，超过该期限必须更改密码。这些策略中的许多都可以在技术上使用 AD 组策略强制执行，其中一些可以使用 ADSI 访问和查询。
 
 创建新的组策略对象 (GPO) 可以为您的安全策略提供集中式强制执行。在组策略中，您可以定义密码策略和账户锁定策略。密码策略（如图 6.1 所示）允许您指定是否强制执行密码历史记录、最小和最大密码有效期、最小密码长度，以及密码是否必须为"强"（并满足 Microsoft 定义的复杂性要求）。账户锁定策略（如图 6.2 所示）定义账户锁定持续时间和阈值，并指定在账户锁定计数器重置之前等待多长时间。
 
-![](img/eafd0e1632fc嬛e4fc08452cf4d68dbe912652_195_0.png)
+![](img/eafd0e1632fc08452cf4d68dbe912652_195_0.png)
 
 **图 6.1** 通过定义组策略密码策略来集中强制执行您公司的密码策略。
 
@@ -4405,49 +4824,71 @@ function Tabulate(strData, iColumn, strDelimit)
 ### 主程序
 
 - 读取和解析命令行参数。
+
 - 构建查询以选择用户账户和域控制器。
-- 遍历所有 `objectClass=user` 和 `objectCategory=person` 对象以收集账户数据，包括创建日期、账户是否被禁用或锁定，以及密码是否设置为永不过期。
+
+- 遍历所有`objectClass=user`和`objectCategory=person`对象以收集账户数据，包括创建日期、账户是否被禁用或锁定，以及密码是否设置为永不过期。
+
 - 确定所选域的最大密码有效期，并计算密码过期日期。
+
 - 调用函数以各种格式显示脚本结果，例如：
+
   - 显示在指定日期内创建的账户。
+
   - 显示将在指定日期内过期的账户。
+
   - 显示应该已经过期的账户。
+
   - 显示将永远不会过期的账户。
+
   - 显示账户属性设置。
 
 **ListAllDetail**
+
 - 显示所有账户设置（详细模式）。
 
 **ListCreated**
+
 - 显示在指定日期创建的账户。
 
 **ListExpired**
+
 - 显示将在指定日期过期的账户。
+
 - 显示应该已经过期的账户。
 
 **ListPwdExpires**
+
 - 显示密码将永远不会过期的账户。
 
 **ShowLockouts**
+
 - 显示锁定的账户。
 
 **DumpUAC**
-- 根据 `UserAccountControl` 属性计算用户账户设置。该属性包含 `ADS_USER_FLAG_ENUM` 枚举中由标志设置的 20 多个账户设置。
+
+- 根据`UserAccountControl`属性计算用户账户设置。该属性包含`ADS_USER_FLAG_ENUM`枚举中由标志设置的 20 多个账户设置。
+
 - 以矩阵和表格格式显示这些账户设置。
 
 **GetMaxPwdAge**
-- 获取 ADSI LDAP 属性 `maxPwdAge` 并将其从存储的大整数值（以 100 纳秒为间隔）转换为天数。
+
+- 获取 ADSI LDAP 属性`maxPwdAge`并将其从存储的大整数值（以 100 纳秒为间隔）转换为天数。
 
 **ConvertNanoDays**
+
 - 将 100 纳秒间隔转换为天数。
 
 **CurrentDomain**
+
 - 确定运行脚本的账户的域。
 
 **QueryDSA**
-- 构建 `Connection`、`Command` 和 `RecordSet` 对象以执行 ADSI 查询。在填充数组的对象中将数据集返回给调用程序。
+
+- 构建`Connection`、`Command`和`RecordSet`对象以执行 ADSI 查询。在填充数组的对象中将数据集返回给调用程序。
 
 **Heading**
+
 - 显示通用标题格式。
 
 ### 列出即将过期的域用户账户
@@ -4466,24 +4907,22 @@ function Tabulate(strData, iColumn, strDelimit)
 
 ### 分发和安装
 
-与之前的 ADSIQuery 和 UserQuery 脚本一样，本章的脚本 DateQuery.js 使用 JScript 编写。必须使用 cscript.exe 引擎运行。请记住，这一要求是因为使用了标准流 (WScript.StdOut)，而 wscript.exe 引擎不支持这些流。此外，Tabulate 函数使用的 StdOut.Column 属性仅在 Windows Script 版本 5.6 中受支持。dateQuery 的命令行参数如表 6.2 所示。
+与之前的`ADSIQuery`和`UserQuery`脚本一样，本章的脚本`DateQuery.js`使用 JScript 编写。必须使用`cscript.exe`引擎运行。请记住，这一要求是因为使用了标准流（`WScript.StdOut`），而`wscript.exe`引擎不支持这些流。此外，`Tabulate`函数使用的`StdOut.Column`属性仅在 Windows Script 版本 5.6 中受支持。`DateQuery`的命令行参数如表 6.2 所示。
 
-#### 表 6.2 dateQuery 的命令行参数
+#### 表 6.2 DateQuery 的命令行参数
 
 | 参数 | 说明 |
 | --- | --- |
-| -c | 列出在 [window] 天内创建的账户。 |
-| -e | 列出将在 [window] 天内过期的账户。 |
-| -l | 列出当前已锁定的账户。 |
-| -n | 列出密码设置为永不过期的账户。 |
-| -u[m] | 枚举 UserAccountControl 以显示账户属性。单独使用时，此参数遍历所有属性并显示满足每个属性的账户。与可选的 m 参数一起使用时，数据以矩阵格式为每个账户显示。 |
-| -v | 启用详细模式，显示比默认更多的数据。 |
-| -? | 显示帮助。 |
-| -w [window] | 指定脚本在确定即将过期的账户或最近创建的账户时应用作边界的天数。 |
-| -d | 指定用于分隔输出数据的可选分隔符。 |
-| -D | 用户可以指定要查询的其他域。 |
-
-
+| `-c` | 列出在`[window]`天内创建的账户。 |
+| `-e` | 列出将在`[window]`天内过期的账户。 |
+| `-l` | 列出当前已锁定的账户。 |
+| `-n` | 列出密码设置为永不过期的账户。 |
+| `-u[m]` | 枚举`UserAccountControl`以显示账户属性。单独使用时，此参数遍历所有属性并显示满足每个属性的账户。与可选的`m`参数一起使用时，数据以矩阵格式为每个账户显示。 |
+| `-v` | 启用详细模式，显示比默认更多的数据。 |
+| `-?` | 显示帮助。 |
+| `-w [window]` | 指定脚本在确定即将过期的账户或最近创建的账户时应用作边界的天数。 |
+| `-d` | 指定用于分隔输出数据的可选分隔符。 |
+| `-D` | 用户可以指定要查询的其他域。 |
 
 要显示当前域中所有将在 14 天内过期的账户，请从命令行运行该脚本，并指定所需报告的类型和日期范围。还可以选择指定替代域名。以下代码：
 
@@ -4509,17 +4948,17 @@ DateQuery -u
 
 **图 6.4** *DateQuery* 还显示在指定时间窗口内创建的账户。
 
-**图 6.5** *DateQuery* 演示了 UserAccountControl 属性的枚举，其中包含 21 个账户属性的设置，例如账户是否被锁定。
+**图 6.5** *DateQuery* 演示了`UserAccountControl`属性的枚举，其中包含 21 个账户属性的设置，例如账户是否被锁定。
 
 ## IT 管理员的 Windows 入门十大脚本
 
 **DateQuery -um**
 
-以矩阵格式呈现账户属性，如图 6.6 所示。要仅显示选定的信息，请运行 `DateQuery -um [n1] [n2]`，其中 n1 和 n2 是您希望查看的账户属性的编号。在日常域管理中，您可能不会用到所有这些账户属性，但本脚本中包含了所有属性，以展示 LDAP 属性 UserAccountControl 中存储的所有信息，该属性对应于 ADSI 枚举 ADS_USER_FLAG_ENUM。ADSI 枚举是一种在单个值中存储多个设置或标志的方法。例如，本脚本使用的 ADS_USER_FLAG_ENUM 枚举中存储的标志如表 6.3 所示。
+以矩阵格式呈现账户属性，如图 6.6 所示。要仅显示选定的信息，请运行`DateQuery -um [n1] [n2]`，其中`n1`和`n2`是您希望查看的账户属性的编号。在日常域管理中，您可能不会用到所有这些账户属性，但本脚本中包含了所有属性，以展示 LDAP 属性`UserAccountControl`中存储的所有信息，该属性对应于 ADSI 枚举`ADS_USER_FLAG_ENUM`。ADSI 枚举是一种在单个值中存储多个设置或标志的方法。例如，本脚本使用的`ADS_USER_FLAG_ENUM`枚举中存储的标志如表 6.3 所示。
 
 **图 6.6** 用户账户标志也可以矩阵格式显示，便于快速浏览属性。
 
-例如，要显示所有已禁用的账户，请运行 `DateQuery -u 2`。您可以指定多个数值参数。要查看所有已禁用的账户（2）或不需要密码的账户（5），请运行 `DateQuery -u 2 5`。请注意对 Microsoft 支持文章（Q250873）的引用，该文章指出使用 LDAP ADSI 提供程序时账户锁定信息无法正确显示。不幸的是，您在编写脚本的过程中可能会遇到必须承认并绕过的问题或缺陷。在本示例中，脚本通过使用一个完全独立的函数（`ShowLockouts`）来显示被锁定的账户，从而绕过了此缺陷。`-1` 参数调用一个单独的函数，该函数使用 ADSI WinNT 提供程序从主目录服务器获取数据。需要这个单独的函数来克服使用 LDAP 提供程序获取账户锁定状态时的已知 Microsoft 问题。
+例如，要显示所有已禁用的账户，请运行`DateQuery -u 2`。您可以指定多个数值参数。要查看所有已禁用的账户（2）或不需要密码的账户（5），请运行`DateQuery -u 2 5`。请注意对 Microsoft 支持文章（Q250873）的引用，该文章指出使用 LDAP ADSI 提供程序时账户锁定信息无法正确显示。不幸的是，您在编写脚本的过程中可能会遇到必须承认并绕过的问题或缺陷。在本示例中，脚本通过使用一个完全独立的函数（`ShowLockouts`）来显示被锁定的账户，从而绕过了此缺陷。`-l`参数调用一个单独的函数，该函数使用 ADSI WinNT 提供程序从主目录服务器获取数据。需要这个单独的函数来克服使用 LDAP 提供程序获取账户锁定状态时的已知 Microsoft 问题。
 
 虽然未来的软件版本或更新可能会修复此问题，但请记住，当您编写较大的脚本时，可能会遇到必须使用的工具的陷阱或不足之处。幸运的是，通常有不止一种方法可以解决问题，因此不要害怕从不同角度尝试解决。
 
@@ -4562,35 +5001,51 @@ DateQuery -u
 创建一个命令行工具，列出在指定范围内创建或将过期的 AD 账户。此外，显示账户状态，例如账户是否被锁定或已禁用、密码是否设置为永不过期，以及其他账户属性。
 
 - **ADODB.Connection**
+
   - Provider
+
   - Open
 
 - **ADODB.Command**
+
   - ActiveConnection
+
   - Properties
+
   - CommandText
+
   - Execute
 
 - **ADSI**
+
   - GetObject
+
   - LDAP Provider
+
   - WinNT Provider
 
 - **Arrays**
+
   - length
+
   - 遍历数组
 
 - **Date**
+
   - getTime
+
   - setTime
 
 - **Error Trapping**
+
   - Try...Catch
 
 - **Enumeration Data Types**
+
   - 从枚举数据类型中提取数据
 
 - **Large Integers**
+
   - 操作大整数
 
 - **JScript Objects**
@@ -4600,10 +5055,13 @@ object={prop: "some prop", value: "some value"}
 ```
 
 - **RecordSet**
+
   - EOF
+
   - Fields.Item(x).Value
 
 - **RegExp**
+
   - test
 
 - **RootDSE**
@@ -4614,9 +5072,13 @@ Get("defaultNamingContext")
 ```
 
 - **SQL Dialect Query**
+
   - 基本可分辨名称
+
   - 筛选器
+
   - 属性
+
   - 作用域
 
 - **Ternary Operator**
@@ -4626,16 +5088,20 @@ Get("defaultNamingContext")
 ```
 
 - **WScript.Arguments**
+
   - colArgs.length
+
   - colArgs.Item
 
 - **WScript.Stdout**
+
   - Write
+
   - Column
 
 # 脚本
 
-脚本首先声明主程序中使用的变量。DateQuery 使用包含具有多个属性的对象的数组来存储数据。例如，本脚本中使用的主要数组 aAccounts 的成员是具有账户属性的对象，例如账户名称、ADSPath、过期日期、创建日期和其他账户信息。数组非常适合此任务，因为脚本使用循环来扫描并选择性地显示数组中包含的所有对象的各种属性。虽然数组本身是一个对象，但其成员可以包含其他对象。
+脚本首先声明主程序中使用的变量。`DateQuery`使用包含具有多个属性的对象的数组来存储数据。例如，本脚本中使用的主要数组`aAccounts`的成员是具有账户属性的对象，例如账户名称、`ADSPath`、过期日期、创建日期和其他账户信息。数组非常适合此任务，因为脚本使用循环来扫描并选择性地显示数组中包含的所有对象的各种属性。虽然数组本身是一个对象，但其成员可以包含其他对象。
 
 用对象填充数组起初可能较难理解，但通过练习您会发现这是一种存储和检索数据的有用方法。数组可以包含任何数据类型，例如整数或字符串。数组还可以包含对象，如以下示例所示：
 
@@ -4676,7 +5142,7 @@ aSomeArray[0]= { name: "some name" , value: someValue};
 aSomeArray[1]= { name: "another name" , value: anotherValue};
 ```
 
-使用对象字面量为数组赋值可以让你随时回顾对象的属性。例如，`WScript.Echo(aSomeArray[1].name)` 输出文本 `some name`。类似地，`aSomeArray[2].value` 等于 `anotherValue`。数组 `aSomeArray` 包含两个元素，它们本身都是对象。每个对象有两个属性：`name` 和 `value`。换一种说法，你刚刚创建并定义了一个包含两个属性的自定义对象，你可以像使用任何其他对象一样使用这个对象，并将其传递给其他函数。
+使用对象字面量为数组赋值可以让你随时回顾对象的属性。例如，`WScript.Echo(aSomeArray[1].name)`输出文本`some name`。类似地，`aSomeArray[2].value`等于`anotherValue`。数组`aSomeArray`包含两个元素，它们本身都是对象。每个对象有两个属性：`name`和`value`。换一种说法，你刚刚创建并定义了一个包含两个属性的自定义对象，你可以像使用任何其他对象一样使用这个对象，并将其传递给其他函数。
 
 请看下面的示例，它演示了如何将对象数组中的某个元素传递给一个函数，并在保持其属性完整的情况下，将其作为对象本身进行操作：
 
@@ -4700,9 +5166,9 @@ function MyFunction(objSomeObject)
 WScript.Echo(aSomeArray[0].name);
 ```
 
-将输出文本 `some name`。
+将输出文本`some name`。
 
-或者，你可以遍历整个数组，同时显示 name 和 value 属性。（请注意，属性的命名完全取决于你自己；你不必拘泥于 "name" 或 "value" 这样的属性名称。）
+或者，你可以遍历整个数组，同时显示`name`和`value`属性。（请注意，属性的命名完全取决于你自己；你不必拘泥于 "name" 或 "value" 这样的属性名称。）
 
 ```
 for(i=0;i<aSomeArray.length;i++){
@@ -4710,15 +5176,15 @@ for(i=0;i<aSomeArray.length;i++){
 }
 ```
 
-本脚本中的 `QueryDSA` 和 `DumpUAC` 函数提供了更多关于如何设置和读取数组中对象的示例和说明。
+本脚本中的`QueryDSA`和`DumpUAC`函数提供了更多关于如何设置和读取数组中对象的示例和说明。
 
-本脚本在 CD-ROM 中的路径为 /chapter 6/scripts/DateQuery.js。在继续阅读下一节之前，请从 CD-ROM 中打开实际脚本，并在你的测试环境中运行几次，以感受其工作方式。自行浏览完整代码，然后再继续阅读代码演练，希望能解答你可能存在的任何疑问。此外，在脚本编辑器中查看完整代码能让你很好地把握其整体范围，同时也方便你在跟随代码演练的过程中对其进行调整。
+本脚本在 CD-ROM 中的路径为`/chapter 6/scripts/DateQuery.js`。在继续阅读下一节之前，请从 CD-ROM 中打开实际脚本，并在你的测试环境中运行几次，以感受其工作方式。自行浏览完整代码，然后再继续阅读代码演练，希望能解答你可能存在的任何疑问。此外，在脚本编辑器中查看完整代码能让你很好地把握其整体范围，同时也方便你在跟随代码演练的过程中对其进行调整。
 
 ### 主体部分
 
-通常你会发现，变量前缀 `dt` 代表日期时间变量。在本脚本中，`dtToday` 代表今天的日期（即脚本当前运行的日期）。变量 `dtWindowAhead` 和 `dtWindowAgo` 代表用于判断某个账户是否将在未来过期或在过去被创建的日期，判断依据是一个指定的时间窗口。变量 `iWindow` 可以通过参数 `-w [window days]` 进行设置，但如果未指定，则默认时间窗口为 14 天。脚本使用变量 `dtPwdExpires` 和 `dtPwdLastChg` 分别在日期计算中确定密码何时过期以及上次更改时间。你在前面脚本中已经见过的 `objState` 对象再次出现，用于跟踪用户通过命令行参数选择的不同运行选项。脚本用户可以通过 `-u` 或 `-um` 参数指定脚本应显示哪些账户属性，数组 `aUACTests` 包含要显示的这些属性的编号。数组 `aAccounts` 包含当前域中的所有账户信息，`objDomain` 包含指向主目录服务服务器的 LDAP 和 WinNT 提供程序引用。
+通常你会发现，变量前缀`dt`代表日期时间变量。在本脚本中，`dtToday`代表今天的日期（即脚本当前运行的日期）。变量`dtWindowAhead`和`dtWindowAgo`代表用于判断某个账户是否将在未来过期或在过去被创建的日期，判断依据是一个指定的时间窗口。变量`iWindow`可以通过参数`-w [window days]`进行设置，但如果未指定，则默认时间窗口为 14 天。脚本使用变量`dtPwdExpires`和`dtPwdLastChg`分别在日期计算中确定密码何时过期以及上次更改时间。你在前面脚本中已经见过的`objState`对象再次出现，用于跟踪用户通过命令行参数选择的不同运行选项。脚本用户可以通过`-u`或`-um`参数指定脚本应显示哪些账户属性，数组`aUACTests`包含要显示的这些属性的编号。数组`aAccounts`包含当前域中的所有账户信息，`objDomain`包含指向主目录服务服务器的 LDAP 和 WinNT 提供程序引用。
 
-与用于保存用户账户的数组（`aAccounts`）类似，脚本使用数组 `aUAC` 来包含定义 `ADS_USER_FLAG_ENUM` 枚举属性的对象。每个标志的符号引用、标志值和简短描述都被定义并存储在 `aUAC` 中作为属性。使用常量时，请使用它们的符号名称而非十六进制值来引用。这样做可以提高代码的可读性，并且通常被认为是良好的编程实践。请记住，通过在脚本开头声明和初始化这个数组（在调用任何其他函数之前），你可以确保该数组作为全局变量可供其他函数使用。在本例中，`aUAC` 同时被主程序和 `DumpUAC` 函数使用。
+与用于保存用户账户的数组（`aAccounts`）类似，脚本使用数组`aUAC`来包含定义`ADS_USER_FLAG_ENUM`枚举属性的对象。每个标志的符号引用、标志值和简短描述都被定义并存储在`aUAC`中作为属性。使用常量时，请使用它们的符号名称而非十六进制值来引用。这样做可以提高代码的可读性，并且通常被认为是良好的编程实践。请记住，通过在脚本开头声明和初始化这个数组（在调用任何其他函数之前），你可以确保该数组作为全局变量可供其他函数使用。在本例中，`aUAC`同时被主程序和`DumpUAC`函数使用。
 
 ```
 //-----------------------------------------------------------------------
@@ -4809,14 +5275,11 @@ if(WScript.FullName.indexOf("WScript")>=0) {
     }
 ```
 
-本脚本的第一个函数调用是 `CurrentDomain` 过程，它确定运行脚本的账户所属的域。此函数相对于前面章节中的版本做了少量修改。该函数不再仅返回 LDAP 术语中的域名（例如，`defaultNamingContext` 被返回到变量 `strDomain`），而是返回一个包含 `defaultNamingContext` 和 `dnsHostName` 的数组。`dnsHostName` 是主目录服务器的完全限定 DNS 名称（例如 *dc.domain.com*）。`dnsHostName` 由 `ShowLockouts` 函数中的 WinNT 提供程序用于绑定到用户账户。这两个值以名为 `winnt` 和 `ldap` 的属性形式存储在数组 `objDomain` 中，可以在脚本中通过 `objDomain.ldap` 和 `objDomain.winnt` 进行检索。
-
-
-
+本脚本的第一个函数调用是`CurrentDomain`过程，它确定运行脚本的账户所属的域。此函数相对于前面章节中的版本做了少量修改。该函数不再仅返回 LDAP 术语中的域名（例如，`defaultNamingContext`被返回到变量`strDomain`），而是返回一个包含`defaultNamingContext`和`dnsHostName`的数组。`dnsHostName`是主目录服务器的完全限定 DNS 名称（例如 *dc.domain.com*）。`dnsHostName`由`ShowLockouts`函数中的 WinNT 提供程序用于绑定到用户账户。这两个值以名为`winnt`和`ldap`的属性形式存储在数组`objDomain`中，可以在脚本中通过`objDomain.ldap`和`objDomain.winnt`进行检索。
 
 ### 列出即将过期的域用户帐户
 
-`GetMaxPwdAge` 函数返回指定域的密码到期前的天数，并将结果存储在变量 `iPwdExp` 中。该函数通过将提供程序字符串前缀 `LDAP://` 与存储在数组元素 `objDomain.ldap` 中的 `defaultNamingContext` 进行拼接，创建目录服务器的 ADsPath。变量 `iPwdExpMs` 存储将最大密码有效期（`iPwdExp`）转换为毫秒后的值，这是 JScript 日期函数所使用的首选时间单位。
+`GetMaxPwdAge`函数返回指定域的密码到期前的天数，并将结果存储在变量`iPwdExp`中。该函数通过将提供程序字符串前缀`LDAP://`与存储在数组元素`objDomain.ldap`中的`defaultNamingContext`进行拼接，创建目录服务器的`ADsPath`。变量`iPwdExpMs`存储将最大密码有效期（`iPwdExp`）转换为毫秒后的值，这是 JScript 日期函数所使用的首选时间单位。
 
 ```
 objDomain=CurrentDomain();
@@ -4825,11 +5288,11 @@ iPwdExpMs=1000*60*60*24*iPwdExp;
 var colArgs = WScript.Arguments;
 ```
 
-*DateQuery* 使用的参数处理例程与第 4 章和第 5 章中介绍的两个命令行脚本中的类似。`objState` 属性用于跟踪运行脚本的用户所做的选择。
+*DateQuery* 使用的参数处理例程与第 4 章和第 5 章中介绍的两个命令行脚本中的类似。`objState`属性用于跟踪运行脚本的用户所做的选择。
 
-与之前的脚本一样，如果用户没有在参数 `d`、`w` 或 `D` 之后指定后续参数，则会调用 `ParamError` 函数并退出脚本。
+与之前的脚本一样，如果用户没有在参数`d`、`w`或`D`之后指定后续参数，则会调用`ParamError`函数并退出脚本。
 
-任何不以连字符（`-`）开头或不属于后续参数一部分的参数都被视为一个或多个 `uACTests`。脚本确认该参数是 1 到 21 之间的数字，并将其添加到 `aUACTest` 数组中。
+任何不以连字符（`-`）开头或不属于后续参数一部分的参数都被视为一个或多个`uACTests`。脚本确认该参数是 1 到 21 之间的数字，并将其添加到`aUACTests`数组中。
 
 ```
 for(i=0;i<colArgs.length;i++) {
@@ -4879,7 +5342,7 @@ if(objState.verbose){
 }
 ```
 
-AD 中的用户对象具有 UserAccountControl 属性。该属性是一个位字段，从中可以提取超过 20 个用户帐户属性设置。此位字段中包含的值由 ADS 枚举 ADS_USER_FLAG_ENUM 描述。由于这些标志中有许多可能并不总是脚本运行者所关注的，因此脚本支持指定一个或多个要显示的标志。例如，`DateQuery -u 5 6` 向数组 `aUACTests` 添加两个元素：5 和 6。这些元素对应于脚本将要处理和显示的 ADS_USER_FLAG_ENUM 标志。例如，属性 5 和 6 分别对应于帐户密码是否不需要或用户是否无法更改其密码。这个编号没有特殊含义，也不是 ADSI 编程的一部分——只是恰好这些是 ADS_USER_FLAG_ENUM 标志列表中的第五和第六个属性。有关如何提取 ADS_USER_FLAG_ENUM 中包含的数据的说明，请参见主循环的说明和 DumpUAC 函数的说明。如果用户没有指定任何特定测试，脚本会构建包含所有测试的 `aUACTests` 数组，并用从 1 到 `aUAC` 数组长度的整数填充该数组，`aUAC` 数组表示每个帐户属性。
+AD 中的用户对象具有`UserAccountControl`属性。该属性是一个位字段，从中可以提取超过 20 个用户帐户属性设置。此位字段中包含的值由 ADS 枚举`ADS_USER_FLAG_ENUM`描述。由于这些标志中有许多可能并不总是脚本运行者所关注的，因此脚本支持指定一个或多个要显示的标志。例如，`DateQuery -u 5 6`向数组`aUACTests`添加两个元素：5 和 6。这些元素对应于脚本将要处理和显示的`ADS_USER_FLAG_ENUM`标志。例如，属性 5 和 6 分别对应于帐户密码是否不需要或用户是否无法更改其密码。这个编号没有特殊含义，也不是 ADSI 编程的一部分——只是恰好这些是`ADS_USER_FLAG_ENUM`标志列表中的第五和第六个属性。有关如何提取`ADS_USER_FLAG_ENUM`中包含的数据的说明，请参见主循环的说明和`DumpUAC`函数的说明。如果用户没有指定任何特定测试，脚本会构建包含所有测试的`aUACTests`数组，并用从 1 到`aUAC`数组长度的整数填充该数组，`aUAC`数组表示每个帐户属性。
 
 ```
 //Fill in the aUACTests if needed
@@ -4888,7 +5351,7 @@ if(aUACTests.length==0) {
 }
 ```
 
-脚本使用了第 5 章中介绍的目录服务查询函数的修改版本。函数 `QueryDSA` 不再返回包含 `ADsPath` 的简单数组，而是返回一个对象数组，每个对象包含两个属性：目标域中所有用户帐户的 `ADsPath` 和 `sAMAccountName`。与之前使用的一样，查询所有用户帐户的语句被定义为所有 `objectClass=user` 和 `objectCategory=person` 对象。有关此查询语法的更详细说明，请参见第 3 章中的 ADSI 查询部分以及第 4 章中关于 *QueryDS* 脚本的讨论。
+脚本使用了第 5 章中介绍的目录服务查询函数的修改版本。函数`QueryDSA`不再返回包含`ADsPath`的简单数组，而是返回一个对象数组，每个对象包含两个属性：目标域中所有用户帐户的`ADsPath`和`sAMAccountName`。与之前使用的一样，查询所有用户帐户的语句被定义为所有`objectClass=user`和`objectCategory=person`对象。有关此查询语法的更详细说明，请参见第 3 章中的 ADSI 查询部分以及第 4 章中关于 *QueryDS* 脚本的讨论。
 
 ```
 //Find the Users
@@ -4899,7 +5362,7 @@ strCommandText="SELECT ADsPath, sAMAccountName " +
 aAccounts=QueryDSA(strCommandText);
 ```
 
-两个变量 `dtWindowAgo` 和 `dtWindowAhead` 表示日期边界，用于确定是否显示最近创建的或即将过期的帐户。`dtWindowAgo` 和 `dtWindowAhead` 的值分别通过从今天的日期中减去或加上边界窗口（`iWindow`）来计算。日期计算可能有些棘手，因为必须考虑每月不同的天数、闰年，以及可能的不同时区。幸运的是，许多编程语言都包含将你从这些繁琐细节中抽象出来的方法。此脚本使用 JScript 的 `getTime` 方法来计算今天日期时间与 1970 年 1 月 1 日 GMT 午夜之间的毫秒数。接下来，脚本将 `iWindow` 从天转换为毫秒（每秒 1,000 毫秒，每分钟 60 秒，每小时 60 分钟，每天 24 小时），并将其添加到之前计算的自 1970 年 1 月 1 日以来的毫秒时间值。这个新值表示从 1970 年 1 月 1 日到日期窗口的毫秒数。最后，脚本使用 `setTime` 方法将此值转换回真正的日期和时间。脚本以这种方式计算 `dtWindowAhead` 和 `dtWindowAgo`。整个过程如图 6.7 所示。
+两个变量`dtWindowAgo`和`dtWindowAhead`表示日期边界，用于确定是否显示最近创建的或即将过期的帐户。`dtWindowAgo`和`dtWindowAhead`的值分别通过从今天的日期中减去或加上边界窗口（`iWindow`）来计算。日期计算可能有些棘手，因为必须考虑每月不同的天数、闰年，以及可能的不同时区。幸运的是，许多编程语言都包含将你从这些繁琐细节中抽象出来的方法。此脚本使用 JScript 的`getTime`方法来计算今天日期时间与 1970 年 1 月 1 日 GMT 午夜之间的毫秒数。接下来，脚本将`iWindow`从天转换为毫秒（每秒 1,000 毫秒，每分钟 60 秒，每小时 60 分钟，每天 24 小时），并将其添加到之前计算的自 1970 年 1 月 1 日以来的毫秒时间值。这个新值表示从 1970 年 1 月 1 日到日期窗口的毫秒数。最后，脚本使用`setTime`方法将此值转换回真正的日期和时间。脚本以这种方式计算`dtWindowAhead`和`dtWindowAgo`。整个过程如图 6.7 所示。
 
 ```
 //set the date windows
@@ -4910,13 +5373,13 @@ dtWindowAhead.setTime(dtToday.getTime() + iWindowMs);
 
 ![图 6.7](img/eafd0e1632fc08452cf4d68dbe912652_213_0.png)
 
-图 6.7 使用 JScript 的 getTime 和 setTime 函数可以轻松执行准确可靠的日期计算。
+图 6.7 使用 JScript 的`getTime`和`setTime`函数可以轻松执行准确可靠的日期计算。
 
 ### 主循环
 
-接下来，让我们检查 DateQuery 脚本的主循环，该循环遍历所有用户帐户并提取创建和过期日期参数以及其他帐户属性。此循环进一步用包含这些新帐户属性的新对象属性填充 `aAccounts` 数组。数组 `aAccounts` 由函数 `QueryDSA` 创建，最初包含具有两个属性的对象：名称（LDAP: sAMAccountName）和 ADsPath（LDAP: ADsPath）。name 属性提供了一个简短、易于识别的对象引用；ADsPath 属性提供了用户帐户的唯一字符串地址，可用于将来引用对象和获取数据。脚本立即使用当前用户对象的 ADsPath 来访问 UserAccountControl 属性。
+接下来，让我们检查`DateQuery`脚本的主循环，该循环遍历所有用户帐户并提取创建和过期日期参数以及其他帐户属性。此循环进一步用包含这些新帐户属性的新对象属性填充`aAccounts`数组。数组`aAccounts`由函数`QueryDSA`创建，最初包含具有两个属性的对象：名称（LDAP: `sAMAccountName`）和`ADsPath`（LDAP: `ADsPath`）。`name`属性提供了一个简短、易于识别的对象引用；`ADsPath`属性提供了用户帐户的唯一字符串地址，可用于将来引用对象和获取数据。脚本立即使用当前用户对象的`ADsPath`来访问`UserAccountControl`属性。
 
-如前所述，UserAccountControl 表示访问 ADS_USER_FLAG_ENUM 枚举标志的 LDAP 属性。要提取其中一个标志的值，必须对 UserAccountControl 属性和要检查的目标标志执行按位比较，以确定该属性是否为真。这是因为所有 21 个标志都存储在由 UserAccountControl 属性表示的单个值中，按位比较可以精确计算 21 个标志中是否有任何一个被设置。有关如何检查 ADS_USER_FLAG_ENUM 枚举标志的更多详细信息，请参见 DumpUAC 函数部分。
+如前所述，`UserAccountControl`表示访问`ADS_USER_FLAG_ENUM`枚举标志的 LDAP 属性。要提取其中一个标志的值，必须对`UserAccountControl`属性和要检查的目标标志执行按位比较，以确定该属性是否为真。这是因为所有 21 个标志都存储在由`UserAccountControl`属性表示的单个值中，按位比较可以精确计算 21 个标志中是否有任何一个被设置。有关如何检查`ADS_USER_FLAG_ENUM`枚举标志的更多详细信息，请参见`DumpUAC`函数部分。
 
 ```
 //main loop
@@ -4928,7 +5391,7 @@ for(i=0;i<aAccounts.length;i++) {
     var ADS_UF_ACCOUNTDISABLE = 0X0002;
 ```
 
-脚本使用三元运算符检查 ADS_USER_FLAG_ENUM 标志的值，然后设置 `aAccounts` 数组的新对象属性。一旦定义了一个对象（例如 `aAccounts` 中包含的任何帐户对象），可以通过简单地引用 `aAccount[x].someNewProperty` 来添加具有新属性的对象。通过这种方式，脚本设置 `bPwdExpires` 和 `disabled` 属性。
+脚本使用三元运算符检查`ADS_USER_FLAG_ENUM`标志的值，然后设置`aAccounts`数组的新对象属性。一旦定义了一个对象（例如`aAccounts`中包含的任何帐户对象），可以通过简单地引用`aAccount[x].someNewProperty`来添加具有新属性的对象。通过这种方式，脚本设置`bPwdExpires`和`disabled`属性。
 
 ```
 aAccounts[i].bPwdExpires=
@@ -4936,17 +5399,15 @@ aAccounts[i].bPwdExpires=
 aAccounts[i].bDisabled=(iUAC & ADS_UF_ACCOUNTDISABLE?true:false);
 ```
 
-上例中的 `&` 字符是按位与运算符，用于确定某个属性是否被设置。按位与运算在标题为*以矩阵形式显示帐户属性*的章节中有更详细的描述。
+上例中的`&`字符是按位与运算符，用于确定某个属性是否被设置。按位与运算在标题为*以矩阵形式显示帐户属性*的章节中有更详细的描述。
 
 ### Active Directory 对象日期
 
-AD 包含每个用户对象的创建日期，可以通过 `whenCreated` 属性（Top 类的一个属性）直接访问。
+AD 包含每个用户对象的创建日期，可以通过`whenCreated`属性（`Top`类的一个属性）直接访问。
 
-然而，`PasswordLastChanged` 属性仅存在于实际更改过密码的对象中。这意味着从未更改过密码的对象在脚本尝试访问此属性时会返回错误。为了捕获这种情况，脚本将此过程封装在 JScript 的 `try...catch` 语句中。如果获取 `PasswordLastChanged` 属性的尝试失败，则将值设置为空字符串（`""`）。
+然而，`PasswordLastChanged`属性仅存在于实际更改过密码的对象中。这意味着从未更改过密码的对象在脚本尝试访问此属性时会返回错误。为了捕获这种情况，脚本将此过程封装在 JScript 的`try...catch`语句中。如果获取`PasswordLastChanged`属性的尝试失败，则将值设置为空字符串（`""`）。
 
-如果脚本成功获取了 `PasswordLastChanged` 属性，则继续计算密码过期日期，其方式与脚本计算 `dtWindowAhead` 和 `dtWindowAgo` 的方式大致相同。将 `maxPwdAge`（以毫秒存储在 `iPwdExpMs` 中）添加到从 1970 年 1 月 1 日午夜转换而来的毫秒数 `PasswordLastChanged` 日期中。此新值被转换回日期并存储在
-
-dtPwdExpires。以下过程还会关闭遍历 `aAccounts` 数组各成员的主循环：
+如果脚本成功获取了`PasswordLastChanged`属性，则继续计算密码过期日期，其方式与脚本计算`dtWindowAhead`和`dtWindowAgo`的方式大致相同。将`maxPwdAge`（以毫秒存储在`iPwdExpMs`中）添加到从 1970 年 1 月 1 日午夜转换而来的毫秒数`PasswordLastChanged`日期中。此新值被转换回日期并存储在`dtPwdExpires`。以下过程还会关闭遍历`aAccounts`数组各成员的主循环：
 
 ```
 //Get account created date
@@ -4978,7 +5439,7 @@ if(objState.expire) ListExpired(aAccounts, strDelimit, dtWindowAhead,
     dtToday);
 if(objState.neverExpire) ListPwdExpires(aAccounts, strDelimit);
 if(objState.userAccountControl) {
-    DumpUAC(aAccounts, aUCTests, objState);
+    DumpUAC(aAccounts, aUACTests, objState);
 }
 if(objState.lockout) {
     ShowLockouts(aAccounts, objDomain);
@@ -4988,7 +5449,7 @@ WScript.Quit(0);
 
 ### ListAllDetail
 
-第一份报告提供了脚本计算的所有日期的详细列表，通过 verbose（-v）标志指定。该函数显示一个标题以及在 `GetMaxPwdAge` 函数中计算出的最大密码有效期（`iPwdExp`）。接下来，报告遍历 `aAccounts` 数组中包含的所有用户账户，并显示账户创建日期、密码上次更改日期以及密码到期日期。此外，如果账户的密码被设置为永不过期或账户已被禁用，则会打印 "x" 标记。
+第一份报告提供了脚本计算的所有日期的详细列表，通过`verbose`（`-v`）标志指定。该函数显示一个标题以及在`GetMaxPwdAge`函数中计算出的最大密码有效期（`iPwdExp`）。接下来，报告遍历`aAccounts`数组中包含的所有用户账户，并显示账户创建日期、密码上次更改日期以及密码到期日期。此外，如果账户的密码被设置为永不过期或账户已被禁用，则会打印`x`标记。
 
 ```
 //------------------------------------------------------
@@ -5017,11 +5478,11 @@ function ListAllDetail(aAccounts, strDelimit, iPwdExp)
 }
 ```
 
-与详细报告类似，`ListCreated` 和 `ListExpired` 函数也遍历 `aAccounts` 数组，以显示所有符合指定日期条件的用户账户。
+与详细报告类似，`ListCreated`和`ListExpired`函数也遍历`aAccounts`数组，以显示所有符合指定日期条件的用户账户。
 
 ### ListCreated
 
-`ListCreated` 函数列出在指定时间窗口内创建的所有账户。
+`ListCreated`函数列出在指定时间窗口内创建的所有账户。
 
 ```
 //--------------------------------------------------------------------------
@@ -5051,7 +5512,7 @@ function ListCreated(aAccounts, strDelimit, dtWindowAgo)
 
 ### ListExpired
 
-`ListExpired` 函数显示所有将在指定时间窗口内过期的账户。该函数对 `aAccounts` 进行第二次循环，检查密码到期日期是否已过。此报告对于查找一段时间内未活跃的账户非常有用。这两份报告都不包含已被禁用的账户，即 `aAccounts[i].bDisabled` 属性在主程序中已预先设置为禁用状态的账户。
+`ListExpired`函数显示所有将在指定时间窗口内过期的账户。该函数对`aAccounts`进行第二次循环，检查密码到期日期是否已过。此报告对于查找一段时间内未活跃的账户非常有用。这两份报告都不包含已被禁用的账户，即`aAccounts[i].bDisabled`属性在主程序中已预先设置为禁用状态的账户。
 
 ```
 //--------------------------------------------------------------------------
@@ -5090,7 +5551,7 @@ function ListExpired(aAccounts, strDelimit, dtWindowAhead, dtToday)
 
 ### ListPwdExpires
 
-`ListPwdExpires` 报告使用与前面相同的技术来遍历账户，并显示那些密码被设置为永不过期的账户。
+`ListPwdExpires`报告使用与前面相同的技术来遍历账户，并显示那些密码被设置为永不过期的账户。
 
 ```
 //-------------------------------------------------------------------
@@ -5112,13 +5573,13 @@ function ListPwdExpires(aAccounts, strDelimit)
 
 ### ShowLockouts
 
-快速检查当前被锁定的账户对于系统管理员来说是一个有用的故障排查工具。`ADS_USER_FLAG_ENUM` 枚举包含一个用于账户锁定的标志；然而，其存在一个实现上的 bug，在 AD 中并不总是能成功更新。为了可靠地获取账户锁定状态，此脚本调用 `ShowLockouts` 函数，该函数绕过 LDAP `User-AccountControl`，通过获取 ADSI WinNT 提供程序的 `IsAccountLocked` 属性来判断账户是否被锁定。使用 WinNT 提供程序连接到主目录服务服务器相当简单。我们已经通过 `CurrentDomain` 函数获取了脚本用户的主目录服务服务器的 DNS 主机名，并将其存储在 `objDomain.winnt` 中。我们可以使用此 DNS 主机名来绑定到该目录服务器上的用户对象，如下例所示：
+快速检查当前被锁定的账户对于系统管理员来说是一个有用的故障排查工具。`ADS_USER_FLAG_ENUM`枚举包含一个用于账户锁定的标志；然而，其存在一个实现上的 bug，在 AD 中并不总是能成功更新。为了可靠地获取账户锁定状态，此脚本调用`ShowLockouts`函数，该函数绕过 LDAP`User-AccountControl`，通过获取 ADSI WinNT 提供程序的`IsAccountLocked`属性来判断账户是否被锁定。使用 WinNT 提供程序连接到主目录服务服务器相当简单。我们已经通过`CurrentDomain`函数获取了脚本用户的主目录服务服务器的 DNS 主机名，并将其存储在`objDomain.winnt`中。我们可以使用此 DNS 主机名来绑定到该目录服务器上的用户对象，如下例所示：
 
 ```
 WinNT://directoryserver.domain.com/useraccountname
 ```
 
-该函数随后使用 `IADsUser` 接口属性方法来访问对象的 `IsAccountLocked` 属性。如果 `IsAccountLocked` 返回 true，则打印该对象的名称。
+该函数随后使用`IADsUser`接口属性方法来访问对象的`IsAccountLocked`属性。如果`IsAccountLocked`返回 true，则打印该对象的名称。
 
 ```
 //--------------------------------------------------------------------
@@ -5139,17 +5600,15 @@ function ShowLockouts(aAccounts, objDomain)
 
 ### DumpUAC
 
-到目前为止，我们已经多次引用了用户账户对象的 LDAP `UserAccountControl` 属性。现在让我们更深入地了解此属性。ADSI LDAP 提供程序的 `UserAccountControl` 属性提供了对 `ADS_USER_FLAG_ENUM` 枚举的访问，该枚举存储了 21 个账户属性的状态。你也可以通过 WinNT 提供程序的 `userFlags` 属性来访问这些账户属性。这些账户属性可以通过脚本进行读取和设置，而且大多数属性可以
-
-使用 Active Directory 用户和计算机 MMC 工具设置为账户选项，如图 6.8 所示。
+到目前为止，我们已经多次引用了用户账户对象的 LDAP`UserAccountControl`属性。现在让我们更深入地了解此属性。ADSI LDAP 提供程序的`UserAccountControl`属性提供了对`ADS_USER_FLAG_ENUM`枚举的访问，该枚举存储了 21 个账户属性的状态。你也可以通过 WinNT 提供程序的`userFlags`属性来访问这些账户属性。这些账户属性可以通过脚本进行读取和设置，而且大多数属性可以使用 Active Directory 用户和计算机 MMC 工具设置为账户选项，如图 6.8 所示。
 
 ![](img/eafd0e1632fc08452cf4d68dbe912652_220_0.png)
 
-该脚本以矩阵形式或简单列表形式显示所有用户账户对象（例如 `aAccounts` 中包含的对象）的 `UserAccountControl` 属性。此外，用户可以指定要显示哪些属性，这些属性由数组 `aUACTests` 标识。遍历所有用户对象，并对每个用户遍历所有 `UserAccountControl` 属性，需要两个循环。循环的顺序取决于所需的报告类型。
+该脚本以矩阵形式或简单列表形式显示所有用户账户对象（例如`aAccounts`中包含的对象）的`UserAccountControl`属性。此外，用户可以指定要显示哪些属性，这些属性由数组`aUACTests`标识。遍历所有用户对象，并对每个用户遍历所有`UserAccountControl`属性，需要两个循环。循环的顺序取决于所需的报告类型。
 
 ### 以矩阵形式显示账户属性
 
-脚本通过首先遍历每个用户对象，然后遍历每个 `ADS_USER_FLAG_ENUM` 标志来生成矩阵报告。在第一个循环之前，函数构建并显示矩阵标题。脚本遍历数组 `aUACTests` 的每个成员，并显示将要显示的flags编号。`aUACTests` 包含用户指定的标志编号。（如果用户未指定任何特定标志，则包含所有标志编号。）例如，如果用户指定仅显示编号为 2、5 和 12 的标志，则 `aUACTests` 将包含三个成员，索引分别为 0、1 和 2。在此示例中，数组如下所示：
+脚本通过首先遍历每个用户对象，然后遍历每个`ADS_USER_FLAG_ENUM`标志来生成矩阵报告。在第一个循环之前，函数构建并显示矩阵标题。脚本遍历数组`aUACTests`的每个成员，并显示将要显示的标志编号。`aUACTests`包含用户指定的标志编号。（如果用户未指定任何特定标志，则包含所有标志编号。）例如，如果用户指定仅显示编号为 2、5 和 12 的标志，则`aUACTests`将包含三个成员，索引分别为 0、1 和 2。在此示例中，数组如下所示：
 
 ```
 aUACTests[0]=2, aUACTests[1]=5, aUACTests[2]=12
@@ -5171,7 +5630,7 @@ if(objState.uACMatrix) {
     WScript.StdOut.Write("\n");
 ```
 
-显示矩阵标题后，开始第一个遍历 `aAccounts` 的循环。对于此数组的每个成员，脚本使用 `aAccounts[i].ADsPath` 属性绑定到账户，其中 `i` 是循环指定的当前账户的索引。脚本显示账户的名称并获取 `UserAccountControl` 属性。
+显示矩阵标题后，开始第一个遍历`aAccounts`的循环。对于此数组的每个成员，脚本使用`aAccounts[i].ADsPath`属性绑定到账户，其中`i`是循环指定的当前账户的索引。脚本显示账户的名称并获取`UserAccountControl`属性。
 
 ```
 for(i=0;i<aAccounts.length;i++) {
@@ -5180,11 +5639,11 @@ for(i=0;i<aAccounts.length;i++) {
     iUAC=objADs.Get("UserAccountControl");
 ```
 
-在 `ADS_USER_FLAG_ENUM` 枚举中存储数据的方法很有趣——尤其是对新手程序员而言。回想一下，LDAP `UserAccountControl` 属性包含一个引用所有已设置 `ADS_USER_FLAG_ENUM` 标志的单一值。该值通过累加所有为真的属性来计算。例如，一个普通账户（`ADS_UF_NORMAL_ACCOUNT = 0x0200`）且密码永不过期（`ADS_UF_DONT_EXPIRE_PASSWD = 0x10000`）的 `UserAccountControl` 值为 `0x10200`（`0x0200 + 0x10000`）。所有 21 个 `ADS_USER_FLAG_ENUM` 标志都有不同的定义值，因此当它们相加时，任何为真的标志组合都会求和得到一个唯一的数字。然后可以使用位比较（JScript 中的 `&` 运算符）将此数字与任何单个标志进行比较，以检查该标志是否为真。
+在`ADS_USER_FLAG_ENUM`枚举中存储数据的方法很有趣——尤其是对新手程序员而言。回想一下，LDAP`UserAccountControl`属性包含一个引用所有已设置`ADS_USER_FLAG_ENUM`标志的单一值。该值通过累加所有为真的属性来计算。例如，一个普通账户（`ADS_UF_NORMAL_ACCOUNT = 0x0200`）且密码永不过期（`ADS_UF_DONT_EXPIRE_PASSWD = 0x10000`）的`UserAccountControl`值为`0x10200`（`0x0200 + 0x10000`）。所有 21 个`ADS_USER_FLAG_ENUM`标志都有不同的定义值，因此当它们相加时，任何为真的标志组合都会求和得到一个唯一的数字。然后可以使用位比较（JScript 中的`&`运算符）将此数字与任何单个标志进行比较，以检查该标志是否为真。
 
-> 这些值和计算都是十六进制的，如果你使用 `WScript.Echo`（或使用 ADSIEdit MMC）打印 `UserAccountControl`，该值将以十进制显示。
+> 这些值和计算都是十六进制的，如果你使用`WScript.Echo`（或使用 ADSIEdit MMC）打印`UserAccountControl`，该值将以十进制显示。
 
-在获取当前用户账户的 `UserAccountControl` 属性值后，第二个循环遍历数组 `aUACTests` 的每个成员。将 `UserAccountControl` 值逐位与当前 `ADS_USER_FLAG_ENUM` 标志进行比较。使用按位 AND 进行此比较（在 JScript 中为 `&`，在 VBScript 中为 `AND`）。根据前面的示例，`UserAccountControl`（`0x10200`）& `ADS_UF_DONT_EXPIRE_PASSWD`（`0x10000`）将等于 `0x10000`，结果为真。然而，如果未设置 `ADS_UF_PASSWD_NOTREQD` 标志，则 `UserAccountControl` 将仅等于 `0x200`（`ADS_UF_NORMAL_ACCOUNT` 为真），且（`0x10000 & 0x200`）结果为零位匹配，为假。使用此过程，脚本将 `aUACTests` 中的每个成员与 `UserAccountControl` 值进行比较，并为每个匹配项在控制台显示一个 `x`。
+在获取当前用户账户的`UserAccountControl`属性值后，第二个循环遍历数组`aUACTests`的每个成员。将`UserAccountControl`值逐位与当前`ADS_USER_FLAG_ENUM`标志进行比较。使用按位 AND 进行此比较（在 JScript 中为`&`，在 VBScript 中为`AND`）。根据前面的示例，`UserAccountControl`（`0x10200`）& `ADS_UF_DONT_EXPIRE_PASSWD`（`0x10000`）将等于`0x10000`，结果为真。然而，如果未设置`ADS_UF_PASSWD_NOTREQD`标志，则`UserAccountControl`将仅等于`0x200`（`ADS_UF_NORMAL_ACCOUNT`为真），且（`0x10000 & 0x200`）结果为零位匹配，为假。使用此过程，脚本将`aUACTests`中的每个成员与`UserAccountControl`值进行比较，并为每个匹配项在控制台显示一个`x`。
 
 ```
 for(j=0;j<aUACTests.length;j++){
@@ -5198,7 +5657,7 @@ WScript.StdOut.Write("\n");
 WScript.StdOut.Write("\n");
 ```
 
-最后，脚本通过遍历 `aUACTests` 的每个成员并显示其编号和描述，来显示每个已执行测试的图例。
+最后，脚本通过遍历`aUACTests`的每个成员并显示其编号和描述，来显示每个已执行测试的图例。
 
 ```
 for(i=0;i<aUACTests.length;i++){
@@ -5210,7 +5669,7 @@ for(i=0;i<aUACTests.length;i++){
 
 ### 以列表形式显示账户属性
 
-脚本可以生成的第二种 `UserAccountControl` 报告是按 `ADS_USER_FLAG_ENUM` 标志列出的账户列表。可以将此报告视为矩阵报告的反向。外部循环遍历 `aUACTests` 数组中包含的所有指定标志，内部循环遍历 `aAccounts` 中包含的所有账户。如果某个账户对特定属性测试为真，则显示其名称。
+脚本可以生成的第二种`UserAccountControl`报告是按`ADS_USER_FLAG_ENUM`标志列出的账户列表。可以将此报告视为矩阵报告的反向。外部循环遍历`aUACTests`数组中包含的所有指定标志，内部循环遍历`aAccounts`中包含的所有账户。如果某个账户对特定属性测试为真，则显示其名称。
 
 ```
 else {
@@ -5235,9 +5694,9 @@ else {
 
 ### GetMaxPwdAge
 
-要计算实际的密码过期日期，脚本必须确定域的最大密码龄设置。此值是特定于域的，可以在域对象的 `maxPwdAge` 属性中找到。函数 `GetMaxPwdAge` 返回指定域的最大密码龄（以天为单位）。该函数输入域的标识名（例如 `LDAP://dc=domain,dc=com`）。使用此值，函数绑定到域并获取 `maxPwdAge` 属性。`maxPwdAge` 值是一个负值的八字节大整数，表示以 100 纳秒为单位的最大密码龄。
+要计算实际的密码过期日期，脚本必须确定域的最大密码龄设置。此值是特定于域的，可以在域对象的`maxPwdAge`属性中找到。函数`GetMaxPwdAge`返回指定域的最大密码龄（以天为单位）。该函数输入域的标识名（例如`LDAP://dc=domain,dc=com`）。使用此值，函数绑定到域并获取`maxPwdAge`属性。`maxPwdAge`值是一个负值的八字节大整数，表示以 100 纳秒为单位的最大密码龄。
 
-在使用此值之前，必须将大整数转换为可用数字，然后将值从 100 纳秒单位转换为天。脚本调用函数 `ConvertNanoDays` 进行此转换，取该数字的绝对值（使正数或负数变为正数），然后将数字四舍五入到最接近的整数。结果值即为以天为单位的最大密码龄。
+在使用此值之前，必须将大整数转换为可用数字，然后将值从 100 纳秒单位转换为天。脚本调用函数`ConvertNanoDays`进行此转换，取该数字的绝对值（使正数或负数变为正数），然后将数字四舍五入到最接近的整数。结果值即为以天为单位的最大密码龄。
 
 ```
 //-------------------------------------------------------------------
@@ -5255,7 +5714,7 @@ function GetMaxPwdAge(strADsPath)
 
 ### ConvertNanoDays
 
-AD 将一些大整数属性存储为八字节（64 位）对象，由 *high part* 和 *low part* 各 32 位组成。AD 返回一个具有 high part 和 low part 属性的对象。在使用这些值之前，必须提取并合并这些部分。high part 包含高 32 位，low part 包含低 32 位。要组装一个大整数，请使用以下公式：*assembled value = high part * 2^32 + low part*（在 JScript 中，2^32 使用 pow 方法表示为 `Math.pow(2,32)`）。
+AD 将一些大整数属性存储为八字节（64 位）对象，由 *high part* 和 *low part* 各 32 位组成。AD 返回一个具有 high part 和 low part 属性的对象。在使用这些值之前，必须提取并合并这些部分。high part 包含高 32 位，low part 包含低 32 位。要组装一个大整数，请使用以下公式：*assembled value = high part * 2^32 + low part*（在 JScript 中，2^32 使用`pow`方法表示为`Math.pow(2,32)`）。
 
 例如，如果 high part = -18,105，low part = 382,894,080，则：
 
@@ -5277,10 +5736,6 @@ AD 将一些大整数属性存储为八字节（64 位）对象，由 *high part
 //-------------------------------------------------------------------
 // Convert 8ByteInteger 100 Nanosecond Interval to Days
 //-------------------------------------------------------------------
-```
-
-
-
 function ConvertNanoDays(objLargeInteger)
 {
   var iOneHundredNanoSeconds, iNanoSeconds, iSeconds, iDays;
@@ -5291,10 +5746,11 @@ function ConvertNanoDays(objLargeInteger)
   iDays=iSeconds / 86400;
   return(iDays);
 }
+```
 
 ### CurrentDomain
 
-`CurrentDomain` 函数用于确定运行脚本的用户账户的域。第 4 章对此有详细说明。
+`CurrentDomain`函数用于确定运行脚本的用户账户的域。第 4 章对此有详细说明。
 
 ```
 //------------------------------------------------------------------------------
@@ -5312,7 +5768,7 @@ function CurrentDomain()
 
 ### QueryDSA
 
-`QueryDSA` 函数的工作方式与第 4 章中的 `QueryDS` 函数类似，但它不是将结果填充到一个简单的数组中，而是定义一个新数组，并用对象来填充它，每个对象包含两个属性：ADsPath 和 Name。数组成员是一个对象，遍历 RecordSet 对象的循环会显式定义对象的属性。回顾一下前面如何用字面量定义对象的示例：
+`QueryDSA`函数的工作方式与第 4 章中的`QueryDS`函数类似，但它不是将结果填充到一个简单的数组中，而是定义一个新数组，并用对象来填充它，每个对象包含两个属性：`ADsPath`和`Name`。数组成员是一个对象，遍历 RecordSet 对象的循环会显式定义对象的属性。回顾一下前面如何用字面量定义对象的示例：
 
 ```
 someObj= { name: "some name", value: someValue};
@@ -5324,7 +5780,7 @@ someObj= { name: "some name", value: someValue};
 someArray[i]= { name: "some name", value: someValue};
 ```
 
-属性也可以是变量。`QueryDSA` 从 ADSI 查询返回的 RecordSet 对象数据中获取 ADsPath 和 name 属性的值并赋给对象。对象定义完成后，可以直接添加其他属性，例如 expired、pwdLastChanged 等在主程序中赋值的属性。
+属性也可以是变量。`QueryDSA`从 ADSI 查询返回的 RecordSet 对象数据中获取`ADsPath`和`name`属性的值并赋给对象。对象定义完成后，可以直接添加其他属性，例如`expired`、`pwdLastChanged`等在主程序中赋值的属性。
 
 ```
 //-------------------------------------------------------------------
@@ -5356,7 +5812,7 @@ function QueryDSA(strCommandText)
 
 ### Heading、Usage、ParamError 和 Tabulate
 
-`Heading`、`Usage`、`ParamError` 和 `Tabulate` 函数均沿用自第 4 章和第 5 章，其构建细节可以在之前的讨论中找到。
+`Heading`、`Usage`、`ParamError`和`Tabulate`函数均沿用自第 4 章和第 5 章，其构建细节可以在之前的讨论中找到。
 
 ```
 //-------------------------------------------------------------------
@@ -5423,14 +5879,17 @@ function Tabulate(strData, iColumn, strDelimit)
 
 ### 总结
 
-本章描述的 `DateQuery` 脚本完成了三个以 ADSI 为核心的控制台脚本。如你所见，尽管每个脚本专注于不同的任务，甚至使用了不同的技术，但它们的设计从根本上遵循着类似的模式。`DateQuery` 演示了如何查询、处理和显示日期相关的账户信息以及用户账户属性。ADSI 包含丰富的信息，本脚本介绍了几个较复杂的 ADSI 属性的提取、处理和显示方法。处理日期和大整数的技术可以扩展到本脚本未使用的其他 ADSI 属性。例如，ADSI 的 `lastlogon` 属性也以大整数格式存储，ADSI 使用超过 30 种枚举来存储其他目录数据。你可以使用与获取 `ADS_USER_FLAG_ENUM` 数据类似的技巧来访问它们。
+本章描述的`DateQuery`脚本完成了三个以 ADSI 为核心的控制台脚本。如你所见，尽管每个脚本专注于不同的任务，甚至使用了不同的技术，但它们的设计从根本上遵循着类似的模式。`DateQuery`演示了如何查询、处理和显示日期相关的账户信息以及用户账户属性。ADSI 包含丰富的信息，本脚本介绍了几个较复杂的 ADSI 属性的提取、处理和显示方法。处理日期和大整数的技术可以扩展到本脚本未使用的其他 ADSI 属性。例如，ADSI 的`lastlogon`属性也以大整数格式存储，ADSI 使用超过 30 种枚举来存储其他目录数据。你可以使用与获取`ADS_USER_FLAG_ENUM`数据类似的技巧来访问它们。
 
 ### 关键要点
 
--   ADSI 中的大多数数据可以通过简单的属性和方法来检索和显示。然而，某些 AD 数据以大整数或位域的形式存储，需要提取和处理才能解释结果。
--   解码 `ADS_USER_FLAG_ENUM` ADSI 枚举，可以访问 ADSI 的 21 个属性，例如密码是否将过期或账户是否被禁用。
--   日期时间运算可能比较棘手；寻找一种将日期转换为整数的方法（例如自 1970 年 1 月 1 日以来的毫秒数），然后你就可以安全地在该数字上加减适当的单位，再将其转换回日期。
--   AD 中的许多时间值以大整数（八个字节长）的形式存储。将转换后的高部分加到低部分上，然后转换为你所需的单位。
+- ADSI 中的大多数数据可以通过简单的属性和方法来检索和显示。然而，某些 AD 数据以大整数或位域的形式存储，需要提取和处理才能解释结果。
+
+- 解码`ADS_USER_FLAG_ENUM` ADSI 枚举，可以访问 ADSI 的 21 个属性，例如密码是否将过期或账户是否被禁用。
+
+- 日期时间运算可能比较棘手；寻找一种将日期转换为整数的方法（例如自 1970 年 1 月 1 日以来的毫秒数），然后你就可以安全地在该数字上加减适当的单位，再将其转换回日期。
+
+- AD 中的许多时间值以大整数（八个字节长）的形式存储。将转换后的高部分加到低部分上，然后转换为你所需的单位。
 
 # 7 摆脱批处理文件——全新的登录脚本
 
@@ -5442,13 +5901,11 @@ function Tabulate(strData, iColumn, strDelimit)
 
 即使有了 Windows 2000 组策略和其他面向企业集中管理的迁移手段，登录脚本仍然是向众多客户端分发任意代码或设置的主要方式之一，在其中扮演着关键角色。
 
-登录脚本为处理用户登录提供了逻辑和结构。那些可能最初只是一条简单 `NET USE` 语句来映射驱动器的批处理文件，已经演变为能够调整或报告系统大部分运行状况的脚本。登录脚本提供了丰富的功能。例如，一个更智能的登录脚本不会每次用户登录时都反复尝试修补系统，而是首先检查注册表设置或其他来源以确定更新是否已应用。设想一个更精细的登录脚本，它不仅能映射驱动器，还能对计算机执行基本诊断、检查正在运行的服务，并在磁盘空间不足时向用户（或系统管理员）发出警告。你能将登录脚本扩展到什么程度，仅受限于你的想象力（当然，还有时间）。
+登录脚本为处理用户登录提供了逻辑和结构。那些可能最初只是一条简单`NET USE`语句来映射驱动器的批处理文件，已经演变为能够调整或报告系统大部分运行状况的脚本。登录脚本提供了丰富的功能。例如，一个更智能的登录脚本不会每次用户登录时都反复尝试修补系统，而是首先检查注册表设置或其他来源以确定更新是否已应用。设想一个更精细的登录脚本，它不仅能映射驱动器，还能对计算机执行基本诊断、检查正在运行的服务，并在磁盘空间不足时向用户（或系统管理员）发出警告。你能将登录脚本扩展到什么程度，仅受限于你的想象力（当然，还有时间）。
 
 企业中流行的应用程序，包括 Microsoft Systems Management Server® 和 Symantec Norton Anti-virus Corporate Edition®，都将登录脚本作为其产品的多种安装机制之一。登录脚本的另一个好处是，它们可以在任何登录到网络的客户端上运行——从 Windows 3.1 到 Windows Server 2003。请记住，编写登录脚本时要考虑哪些平台可能会登录到你的网络，或者提供与旧客户端兼容的向下兼容脚本。但如果你运行的是 Windows 2000 或更高版本的网络，你不仅可以利用本章中的各种方法，还能很好地在登录脚本中扩展和使用许多最新技术——如 WMI 和 ADSI。
 
-> 登录脚本在资源管理器加载并将控制权交给用户之前运行。这意味着配置不当的登录脚本可能会导致你的计算机在登录时挂起。请务必彻底测试你的登录脚本，并包含错误处理以降低脚本挂起的风险。此外，请在测试实验室中测试你的脚本，确保可以从另一台计算机编辑有问题的脚本。如果你通过本地计算机策略配置了登录脚本且计算机挂起（可能意味着你完全无法登录），请记住计算机的网络连接已经处于活动状态。使用第二台计算机远程访问挂起计算机的文件系统，删除或编辑有问题的脚本，然后重启（例如，对于 Windows 2000 服务器，访问管理共享 c$，编辑位于 \\machinename\c$\winnt\system32\grouppolicy 中的脚本，然后编辑 User 目录中的登录/注销脚本或 Machine 目录中的启动/关机脚本）。
-
-
+> 登录脚本在资源管理器加载并将控制权交给用户之前运行。这意味着配置不当的登录脚本可能会导致你的计算机在登录时挂起。请务必彻底测试你的登录脚本，并包含错误处理以降低脚本挂起的风险。此外，请在测试实验室中测试你的脚本，确保可以从另一台计算机编辑有问题的脚本。如果你通过本地计算机策略配置了登录脚本且计算机挂起（可能意味着你完全无法登录），请记住计算机的网络连接已经处于活动状态。使用第二台计算机远程访问挂起计算机的文件系统，删除或编辑有问题的脚本，然后重启（例如，对于 Windows 2000 服务器，访问管理共享`c$`，编辑位于`\\machinename\c$\winnt\system32\grouppolicy`中的脚本，然后编辑 User 目录中的登录/注销脚本或 Machine 目录中的启动/关机脚本）。
 
 ## 场景
 
@@ -5460,7 +5917,7 @@ function Tabulate(strData, iColumn, strDelimit)
 
 将批处理文件登录脚本转换为使用 Windows 脚本语言编写的脚本，可以更好地控制程序逻辑，同时还能访问许多 Windows 对象模型。起初您可能认为批处理文件登录脚本更简单、更简短。虽然对于基本脚本来说或许确实如此，但使用 JScript 或 VBScript 可以使代码的可管理性和适应未来变化的灵活性大大提高。
 
-此外，您可以相当快地将批处理文件对外部命令的调用转换为使用 WSH 的 exec 或 run 方法的 WSH 脚本。这些方法使您的脚本能够启动外部应用程序——这是登录脚本的一项常见功能。使用这些方法调用第三方或供应商提供的批处理文件或命令行工具，这些工具不受 WSH 支持。您的需求对应于表 7.1 中列出的以下技术要求。
+此外，您可以相当快地将批处理文件对外部命令的调用转换为使用 WSH 的`exec`或`run`方法的 WSH 脚本。这些方法使您的脚本能够启动外部应用程序——这是登录脚本的一项常见功能。使用这些方法调用第三方或供应商提供的批处理文件或命令行工具，这些工具不受 WSH 支持。您的需求对应于表 7.1 中列出的以下技术要求。
 
 ### 表 7.1 将登录脚本目标转化为技术要求
 
@@ -5469,26 +5926,36 @@ function Tabulate(strData, iColumn, strDelimit)
 | 向域中所有尚未安装补丁的系统部署跨供应商补丁。 | 检查注册表中是否有特定的更新键，以表明该更新是否已经安装。如果尚未安装，则安装该更新。将所有更新及其注册表安装检查存储在可扩展标记语言 (XML) 文件中。 |
 | 映射网络驱动器。 | 使用 WSH Network 对象删除冲突的驱动器映射，并添加存储在 XML 配置文件中的新驱动器映射。 |
 | 修改搜索路径。 | 从 XML 配置文件中读取所需的路径添加项，如果它们尚不存在，则将其添加到用户路径中。 |
-| 设置当前时间。 | 运行外部命令 NET TIME，将 Windows NT 4.0 计算机与域网络时间协议 (NTP) 服务器同步。 |
+| 设置当前时间。 | 运行外部命令`NET TIME`，将 Windows NT 4.0 计算机与域网络时间协议 (NTP) 服务器同步。 |
 | 安装杀毒软件。 | 运行外部命令检查公司杀毒软件是否已安装。 |
 | 记录登录信息和错误。 | 在所有人都可以访问的网络共享上创建或追加文本文件，并更新登录时间和任何已部署的更新。 |
 
 这些技术要求对应于以下功能：
 
 - **存根程序：** 主 JScript 登录脚本的批处理文件启动器。
+
   - 集中记录用户的登录。
+
   - 确保使用所需的 WSH 引擎执行主登录脚本。
 
 - **主程序：** 包含登录脚本的主要代码。
+
   - 构建欢迎消息。
+
   - 通知用户其主目录。
+
   - 映射主目录和网络驱动器。
+
   - 扩展用户的目录搜索路径以包含其他常用目录。
+
   - 将时间同步到网络时间协议 (NTP) 服务器。
+
   - 调用杀毒软件包的安装程序。
 
 - **日志文件**
+
   - 向网络共享或本地文件夹提供基于文件的日志服务。
+
   - **制表文件：** 与之前的制表函数类似，制表文件将输出格式化为日志文本文件。
 
 - **补丁系统：** 提供用于部署程序更新和补丁的注册表检查服务。
@@ -5499,11 +5966,11 @@ function Tabulate(strData, iColumn, strDelimit)
 
 ### 分发和安装
 
-登录脚本可以分配给域用户或本地计算机用户。域登录脚本可以在 AD 用户和计算机中指定，也可以在 GPO 中指定。如图 7.1 所示，使用 AD 用户和计算机指定登录脚本，可以使您的登录脚本能够被 Windows NT 4.0 计算机访问，并且这些脚本存储在 Windows 2000 域控制器的 NETLOGON 共享中，该共享物理映射到域控制器的 %Windir%\SYSVOL\sysvol\[domainname]\scripts 目录。该目录会复制到所有其他域控制器。
+登录脚本可以分配给域用户或本地计算机用户。域登录脚本可以在 AD 用户和计算机中指定，也可以在 GPO 中指定。如图 7.1 所示，使用 AD 用户和计算机指定登录脚本，可以使您的登录脚本能够被 Windows NT 4.0 计算机访问，并且这些脚本存储在 Windows 2000 域控制器的 NETLOGON 共享中，该共享物理映射到域控制器的`%Windir%\SYSVOL\sysvol\[domainname]\scripts`目录。该目录会复制到所有其他域控制器。
 
 ![](img/eafd0e1632fc08452cf4d68dbe912652_234_0.png)
 
-分配*本地*用户登录脚本的方法是：在目标计算机上打开计算机管理小程序，导航到本地用户和组，然后选择用户。双击该用户，单击配置文件选项卡，然后指定首选登录脚本的名称。本地登录脚本通常存储在 `%windir%\System32\Repl\Import\Scripts` 中。
+分配*本地*用户登录脚本的方法是：在目标计算机上打开计算机管理小程序，导航到本地用户和组，然后选择用户。双击该用户，单击配置文件选项卡，然后指定首选登录脚本的名称。本地登录脚本通常存储在`%windir%\System32\Repl\Import\Scripts`中。
 
 # 使用组策略部署登录脚本
 
@@ -5521,23 +5988,23 @@ function Tabulate(strData, iColumn, strDelimit)
 call cscript %0\..\logon-body.js
 ```
 
-此命令只是使用 *cscript.exe* 引擎调用 JScript 文件 *logon-body.js*。前缀 %0\..\ 确保 *logon-body.js* 的目录路径与调用批处理文件的目录路径相同（即，两个文件位于同一目录中）。此批处理文件中的变量 %0 包含批处理文件的名称和位置。因此，如果从 \\dc1\NETLOGON 调用，则 %0 将包含：\\dc1\NETLOGON\logon-stub.bat。整个参数 %0\..\logon.js 展开为 \\dc1\netlogon\logon.bat\..\logon.js。参数 .. INTERRUPash 指向对象的父目录，因此参数 \..\ 实际上会退回到文件名之上并仅返回路径（根据我们前面的例子，\\dc1\netlogon\）。请注意，这只是有效结果，意味着如果您展开 %0\..\logon.js，您会看到 \\dc1\NETLOGON\logon.bat\..\logon.js。通过附加新的批处理或脚本文件名，我们可以始终确保此第二个文件的确切位置，并且我们可以放心，从此批处理文件调用的任何后续文件如果存在于调用脚本所在的同一文件夹中，都将正常工作。（或者，如果您不介意将脚本放在用户登录的域控制器上，您也可以将第二个脚本的位置硬编码到所有用户都可以访问的网络共享。）
+此命令只是使用 *cscript.exe* 引擎调用 JScript 文件 *logon-body.js*。前缀`%0\..\`确保 *logon-body.js* 的目录路径与调用批处理文件的目录路径相同（即，两个文件位于同一目录中）。此批处理文件中的变量`%0`包含批处理文件的名称和位置。因此，如果从`\\dc1\NETLOGON`调用，则`%0`将包含：`\\dc1\NETLOGON\logon-stub.bat`。整个参数`%0\..\logon.js`展开为`\\dc1\netlogon\logon.bat\..\logon.js`。参数`..`指向对象的父目录，因此参数`\..\`实际上会退回到文件名之上并仅返回路径（根据我们前面的例子，`\\dc1\netlogon\`）。请注意，这只是有效结果，意味着如果您展开`%0\..\logon.js`，您会看到`\\dc1\NETLOGON\logon.bat\..\logon.js`。通过附加新的批处理或脚本文件名，我们可以始终确保此第二个文件的确切位置，并且我们可以放心，从此批处理文件调用的任何后续文件如果存在于调用脚本所在的同一文件夹中，都将正常工作。（或者，如果您不介意将脚本放在用户登录的域控制器上，您也可以将第二个脚本的位置硬编码到所有用户都可以访问的网络共享。）
 
 # 操作系统兼容性
 
 每个登录到域的设备都会运行您的登录脚本，这要求您考虑操作系统和应用程序版本的兼容性。例如，如果有人使用运行 Windows NT 4.0 的计算机登录到您的网络，它能处理您的登录脚本吗？如果不能，它会挂起、崩溃还是正常退出？在编写必须部署到各种系统的脚本时，请考虑它们是否识别以下技术：
 
 - **Active Directory 组策略** — Windows NT 4.0 无法识别。
+
 - **ADSI** — 必须在基于 Windows 2000 之前的计算机上安装 ADSI 扩展，才能提供部分（并非全部）兼容性。
+
 - **WMI** — 可以在早期操作系统上安装 WMI 核心组件，但即使是较新的 Windows 操作系统（如 Windows XP 和 Windows Server 2003）也提供了 Windows 2000 所没有的新类。
+
 - **WSH** — Windows 2000 安装的是 WSH 5.1；当前 WSH 版本为 5.6。
+
 - **XML** — Windows 2000 安装的是 MSXML 2.5。MSXML 支持并行安装，当前版本为 4.0。
 
-本章介绍的登录脚本设计用于基于 AD 的域中运行 Windows 2000 及更高版本的计算机；但是，本章中的脚本
-[/招人
-
-
-在脚本中加入错误处理和软件版本检查功能，以便在遇到不支持的功能时能够优雅地退出（尽管后续功能会被中止）。例如，如果你选择使用 AD 组策略（而不是用户账户管理中的配置文件选项卡），运行 Windows NT 4.0 的计算机将不会处理这些脚本，但它们不应锁定系统或造成其他不良影响。该脚本需要同时安装 WSH 5.6 和 MSXML 3.0，但不使用 WMI 或 ADSI 技术。
+本章介绍的登录脚本设计用于基于 AD 的域中运行 Windows 2000 及更高版本的计算机；但是，本章中的脚本在脚本中加入错误处理和软件版本检查功能，以便在遇到不支持的功能时能够优雅地退出（尽管后续功能会被中止）。例如，如果你选择使用 AD 组策略（而不是用户账户管理中的配置文件选项卡），运行 Windows NT 4.0 的计算机将不会处理这些脚本，但它们不应锁定系统或造成其他不良影响。该脚本需要同时安装 WSH 5.6 和 MSXML 3.0，但不使用 WMI 或 ADSI 技术。
 
 # 输出
 
@@ -5545,7 +6012,7 @@ call cscript %0\..\logon-body.js
 
 ## 解决方案概要
 
-你将创建两个文件：`logon-stub.bat` 和 `logon-body.js`，用于处理域用户的登录脚本功能。`logon-stub.bat` 文件是一个 MS-DOS 批处理文件，它通过 `cscript.exe` 引擎简单地调用 `logon-body.js` WSH 脚本。`logon-body.js` 脚本文件执行登录脚本的实际工作。这两个文件将被复制到域控制器的 NETLOGON 共享或特定的组策略登录脚本文件夹中，然后将被复制到你域中的所有其他域控制器。
+你将创建两个文件：`logon-stub.bat`和`logon-body.js`，用于处理域用户的登录脚本功能。`logon-stub.bat`文件是一个 MS-DOS 批处理文件，它通过`cscript.exe`引擎简单地调用`logon-body.js` WSH 脚本。`logon-body.js`脚本文件执行登录脚本的实际工作。这两个文件将被复制到域控制器的 NETLOGON 共享或特定的组策略登录脚本文件夹中，然后将被复制到你域中的所有其他域控制器。
 
 登录信息、状态和错误日志将被记录到一个集中的位置。此信息记录了谁在何时登录了哪台计算机。
 
@@ -5554,71 +6021,98 @@ call cscript %0\..\logon-body.js
 此脚本演示了使用 Windows 脚本技术编写登录脚本，以提供比传统 MS-DOS 登录脚本更强大的功能和灵活性。脚本使用了以下对象：
 
 ### 数组
+
 - length
+
 - 循环遍历数组
 
 ### 错误捕获
+
 - try...catch
 
 ### MSXML
+
 - async
+
 - getAttribute
+
 - getElementsByTagName
+
 - item
+
 - length
+
 - load
+
 - parseError
+
 - resolveExternals
+
 - selectSingleNode
+
 - setProperty
 
 ### RegExp
+
 - match
 
 ## Scripting.FileSystemObject
+
 - OpenTextFile
+
 - Column
+
 - CreateTextFile
+
 - WriteLine
 
 ### WScript.Arguments
+
 - Length
 
 ### WScript.Network
+
 - ComputerName
+
 - ExpandEnvironmentalStrings
+
 - UserDomain
+
 - UserName
 
 ### WScript.Shell
+
 - Environment("Process")
+
 - Environment("System")
+
 - Environment("User")
+
 - Run
+
 - RegRead
+
 - Popup
 
 # 脚本
 
-本章中的登录脚本实际上由两个脚本和一个配置文件组成：logon-stub.bat、logon-body.js 和 logon-config.xml。logon-stub.bat 的主要目的是确保使用适当的 WSH 引擎（cscript.exe）调用 logon-body.js，因为 logon-body.js 脚本使用了仅在此引擎中可用的方法和属性。此脚本通过使用此配置文件引入了 XML，并开始描述使用 XML 为你的脚本带来的一些好处。XML 的普及度不断提高，现在许多新的 IT 工具都支持导出 XML 格式的数据。了解 XML 的基础知识，即使只是通过像这样的基本脚本，也将帮助你在未来使用自己的脚本操作来自其他程序的 XML 数据。在查看登录脚本之前，让我们先通过检查此脚本使用的 XML 配置文件来简要介绍 XML。虽然此配置文件包含对我们尚未介绍的登录脚本的具体引用，但回顾 XML 文件的功能和形式为后面讨论实际登录脚本奠定了基础。
+本章中的登录脚本实际上由两个脚本和一个配置文件组成：`logon-stub.bat`、`logon-body.js`和`logon-config.xml`。`logon-stub.bat`的主要目的是确保使用适当的 WSH 引擎（`cscript.exe`）调用`logon-body.js`，因为`logon-body.js`脚本使用了仅在此引擎中可用的方法和属性。此脚本通过使用此配置文件引入了 XML，并开始描述使用 XML 为你的脚本带来的一些好处。XML 的普及度不断提高，现在许多新的 IT 工具都支持导出 XML 格式的数据。了解 XML 的基础知识，即使只是通过像这样的基本脚本，也将帮助你在未来使用自己的脚本操作来自其他程序的 XML 数据。在查看登录脚本之前，让我们先通过检查此脚本使用的 XML 配置文件来简要介绍 XML。虽然此配置文件包含对我们尚未介绍的登录脚本的具体引用，但回顾 XML 文件的功能和形式为后面讨论实际登录脚本奠定了基础。
 
 ### 为什么使用 XML？
 
-登录脚本使用一个 XML 数据文件来存储登录脚本配置信息。XML 是存储此数据的理想方法，因为它具有自我描述性（即，它不需要像数据库那样单独的外部结构或定义，尽管你可以选择定义一个外部结构，这称为模式），并且用于读取和访问数据的对象和方法非常适合处理各种数量的数据。此外，使用 XML 时，你可以按任何你希望的方式定义 XML，只要它是格式良好的。格式良好的 XML 遵循 XML 标准——基本上是一套规则。其中一些规则在“XML 配置文件”部分中进行了描述，该部分解释了配置 XML 数据文件的布局。XML 允许你定义自己的数据层次结构。例如，除配置信息外，此脚本的 XML 数据文件还定义了应安装哪些更新。使用 XML，你可以轻松添加新的更新。每个更新可以有一个或多个相关的标准来评估是否需要更新。在 XML 中，添加新的更新或标准就像添加定义新数据的新行一样简单。
+登录脚本使用一个 XML 数据文件来存储登录脚本配置信息。XML 是存储此数据的理想方法，因为它具有自我描述性（即，它不需要像数据库那样单独的外部结构或定义，尽管你可以选择定义一个外部结构，这称为模式），并且用于读取和访问数据的对象和方法非常适合处理各种数量的数据。此外，使用 XML 时，你可以按任何你希望的方式定义 XML，只要它是格式良好的。格式良好的 XML 遵循 XML 标准——基本上是一套规则。其中一些规则在"XML 配置文件"部分中进行了描述，该部分解释了配置 XML 数据文件的布局。XML 允许你定义自己的数据层次结构。例如，除配置信息外，此脚本的 XML 数据文件还定义了应安装哪些更新。使用 XML，你可以轻松添加新的更新。每个更新可以有一个或多个相关的标准来评估是否需要更新。在 XML 中，添加新的更新或标准就像添加定义新数据的新行一样简单。
 
-由于 XML 本质上是层次化的，你不需要像使用文本文件存储数据时那样担心编写复杂的解析例程来处理新的或特殊的数据。MSXML 文档对象模型（DOM）提供了一组内置的方法和属性，通常可以为你处理数据解析。在你审查以下代码时，请参考实际的 XML 配置文件，并注意脚本如何分层访问数据。理解 XML 可能一开始有点令人困惑，但想想你可能会如何使用文本文件和 FileSystemObject 编码来处理这个问题。你会同意使用 XML 可以节省你大量的时间和精力，因为它为你处理了大部分的数据组织和解析工作。许多实用程序除了支持更传统的 CSV、TSV 或其他格式化的文本外，开始支持 XML 数据输出。了解如何操作 XML 数据对于操作和显示这些应用程序的输出非常有用。此脚本示例涵盖从特定配置文件加载数据，但这些概念可以扩展到解析任何类型的 XML 数据。
+由于 XML 本质上是层次化的，你不需要像使用文本文件存储数据时那样担心编写复杂的解析例程来处理新的或特殊的数据。MSXML 文档对象模型（DOM）提供了一组内置的方法和属性，通常可以为你处理数据解析。在你审查以下代码时，请参考实际的 XML 配置文件，并注意脚本如何分层访问数据。理解 XML 可能一开始有点令人困惑，但想想你可能会如何使用文本文件和`FileSystemObject`编码来处理这个问题。你会同意使用 XML 可以节省你大量的时间和精力，因为它为你处理了大部分的数据组织和解析工作。许多实用程序除了支持更传统的 CSV、TSV 或其他格式化的文本外，开始支持 XML 数据输出。了解如何操作 XML 数据对于操作和显示这些应用程序的输出非常有用。此脚本示例涵盖从特定配置文件加载数据，但这些概念可以扩展到解析任何类型的 XML 数据。
 
 ### XML 配置文件
 
 XML 数据文件提供了一个存储登录脚本使用的配置数据的位置，这些数据可能因域而异。XML 数据看起来类似于 HTML，因为它使用标签（`<tag>`）来分隔对象。此脚本中提供的 XML 是基本的，不包括 XML 模式。XML 模式描述了数据必须遵守的结构和规则（例如，如果数据是字母数字混合的，其长度是否必须唯一等等）。如果你计划处理更大或更复杂的数据集，或者希望向可能使用你的 XML 数据的其他人提供清晰度，那么定义一个显式的 XML 模式是个好主意。
 
-XML 数据的结构相当简单，并遵循一套基本规则。元素用标签描述，例如 `<element>`，它们有一个开始标签和结束标签。结束标签用斜杠表示，例如 `</element>`。元素文本在标签之间描述——`<element>some data text</element>`——不需要引号。属性是分配给元素的附加名称-值对。例如，在 XML 元素 `<domain ntp="b1vu" name="Blackstatic">` 中，元素名称是 domain，它的两个属性是 ntp 和 name，它们的值分别是 b1vu 和 Blackstatic。
+XML 数据的结构相当简单，并遵循一套基本规则。元素用标签描述，例如`<element>`，它们有一个开始标签和结束标签。结束标签用斜杠表示，例如`</element>`。元素文本在标签之间描述——`<element>some data text</element>`——不需要引号。属性是分配给元素的附加名称-值对。例如，在 XML 元素`<domain ntp="b1vu" name="Blackstatic">`中，元素名称是`domain`，它的两个属性是`ntp`和`name`，它们的值分别是`b1vu`和`Blackstatic`。
 
-必须定义一个单一的顶层节点来包含所有其他元素；在我们的登录脚本示例中，顶层节点是 `<config>`。在 `<config>` 之下是两个元素，`<domain>` 和 `<updates>`。`<domain>` 元素包含登录脚本的配置信息，包括各种日志的位置、主驱动器和映射驱动器的定义，以及应添加的路径语句。你可以有多个并行的不同名称的元素，并且通常可以自由地为任何元素分配属性。虽然没有定义显式的模式，但如果定义了，它将只允许三个日志：一个类型为错误，一个类型为登录，最后一个类型为补丁。它只允许一个主驱动器，但允许多个映射驱动器和路径元素。现在你可能开始明白为什么使用 XML 配置文件确实提高了脚本的灵活性。要添加另一个映射驱动器，只需复制并粘贴一个 `<mapdrive>` 元素，并添加驱动器属性和共享文本，脚本下次运行时就会自动包含它。
+必须定义一个单一的顶层节点来包含所有其他元素；在我们的登录脚本示例中，顶层节点是`<config>`。在`<config>`之下是两个元素，`<domain>`和`<updates>`。`<domain>`元素包含登录脚本的配置信息，包括各种日志的位置、主驱动器和映射驱动器的定义，以及应添加的路径语句。你可以有多个并行的不同名称的元素，并且通常可以自由地为任何元素分配属性。虽然没有定义显式的模式，但如果定义了，它将只允许三个日志：一个类型为错误，一个类型为登录，最后一个类型为补丁。它只允许一个主驱动器，但允许多个映射驱动器和路径元素。现在你可能开始明白为什么使用 XML 配置文件确实提高了脚本的灵活性。要添加另一个映射驱动器，只需复制并粘贴一个`<mapdrive>`元素，并添加驱动器属性和共享文本，脚本下次运行时就会自动包含它。
 
-XML 数据文件的第二部分定义了我们希望登录脚本部署的更新。`<updates>` XML 结构允许多个 `<patch>` 元素，每个 `<patch>` 元素可以有一个或多个 `<criteria>` 元素。在部署某个 Microsoft 产品更新时，请考虑这种灵活性。对于一个给定的更新公告，你可能有多个版本的更新——一个用于 Windows NT，一个用于 Windows XP/2000/2003。接下来，你可能需要检查特定的产品版本。例如，Internet Explorer 5.01、5.5、6.0 和 6.0sp1 可能各自都有单独的更新。通过添加更多的 `<criteria>` 元素，你可以根据需要添加任意数量的子句。在下面的 XML 代码示例中，定义了一个补丁，其 `qfeid="sample"`。如果满足条件，登录脚本将运行位于 \\wkstn\patch 共享上的文件 applypatch.js。在此示例中，只有一个条件
-
-已定义。脚本会在注册表中查找键 `HKLM\SOFTWARE\sample\Sample Patch`，其值是否为 1。如果该键存在且值为 1，则根据 `installIfTrue` 属性，脚本将不会安装该补丁。
+XML 数据文件的第二部分定义了我们希望登录脚本部署的更新。`<updates>` XML 结构允许多个`<patch>`元素，每个`<patch>`元素可以有一个或多个`<criteria>`元素。在部署某个 Microsoft 产品更新时，请考虑这种灵活性。对于一个给定的更新公告，你可能有多个版本的更新——一个用于 Windows NT，一个用于 Windows XP/2000/2003。接下来，你可能需要检查特定的产品版本。例如，Internet Explorer 5.01、5.5、6.0 和 6.0sp1 可能各自都有单独的更新。通过添加更多的`<criteria>`元素，你可以根据需要添加任意数量的子句。在下面的 XML 代码示例中，定义了一个补丁，其`qfeid="sample"`。如果满足条件，登录脚本将运行位于`\\wkstn\patch`共享上的文件`applypatch.js`。在此示例中，只有一个条件已定义。脚本会在注册表中查找键`HKLM\SOFTWARE\sample\Sample Patch`，其值是否为 1。如果该键存在且值为 1，则根据`installIfTrue`属性，脚本将不会安装该补丁。
 
 ```
 <config>
@@ -5653,7 +6147,7 @@ XML 数据文件的第二部分定义了我们希望登录脚本部署的更新�
 
 > 该脚本由四行实际代码组成。在以下文本中，前两行和后两行实际上是单行，但由于本文的页面宽度限制而显示为两行。它们已经为可读性做了偏移处理，但在你的代码中应该是单行。
 
-第一行使用 MS-DOS 批处理 `echo` 命令和重定向追加运算符（`>`），将日期、时间、用户名和计算机名写入位于网络共享 `\\wkstn\logon` 上中心位置的名为 *logon.txt* 的文本文件中。
+第一行使用 MS-DOS 批处理`echo`命令和重定向追加运算符（`>`），将日期、时间、用户名和计算机名写入位于网络共享`\\wkstn\logon`上中心位置的名为 *logon.txt* 的文本文件中。
 
 （你需要更改此共享以反映你自己的环境。）下一行显示运行脚本的实际位置，通常仅供信息参考。了解此位置在排查从你的脚本调用的外部命令或批处理文件运行不正常的原因时很有用。有时问题可以追溯到缺失的文件或不正确的路径。第三行使用 *cscript.exe* 引擎调用主登录脚本，如前所述。*logon-body.js* 脚本的参数是一个 XML 登录脚本配置文件。最后一行将调用 *cscript.exe* 登录脚本时产生的任何错误报告到同一个 *logon.txt* 文件中。
 
@@ -5664,17 +6158,19 @@ call cscript %0\..\logon-body.js logon-config.xml
 If Errorlevel 1 echo Error: Check WSH installation and script location > \\wkstn\logon\logon.txt
 ```
 
-*此脚本在 CD-ROM 上以 /chapter 7/scripts/logon-stub.bat 提供。它设计为与本章的第二个脚本 logon-body.js 配合使用，该脚本同样位于 CD-ROM 的此文件夹中：/chapter 7/scripts.logon-body.js。如前所述，请记住在部署到任何生产系统之前，先在测试环境中测试此脚本。*
 
-### 激活登录脚本
+
+此脚本在 CD-ROM 上以 `/chapter 7/scripts/logon-stub.bat` 提供。它设计为与本章的第二个脚本 `logon-body.js` 配合使用，该脚本同样位于 CD-ROM 的此文件夹中：`/chapter 7/scripts.logon-body.js`。如前所述，请记住在部署到任何生产系统之前，先在测试环境中测试此脚本。
+
+## 激活登录脚本
 
 将脚本复制到域控制器 NETLOGON 共享或测试域的 AD 组策略登录脚本目录后，通过 AD 用户和计算机或 AD 组策略激活登录脚本。
 
-#### 在用户级别激活登录脚本
+### 在用户级别激活登录脚本
 
-使用 AD 用户和计算机为每个用户配置登录脚本是最直接的方法——但也是设置最耗时的，因为你必须为域中的每个用户执行此操作。（当然你应该将其编写为脚本！）导航到要设置登录脚本的用户对象，双击打开其属性。单击配置文件选项卡，在登录脚本字段中输入登录脚本的名称，本例中为 *logon-stub.bat*，如图 7.1 所示。此外，还可以选择输入用户 *主文件夹* 的相关信息。我们将在 *映射驱动器与主驱动器* 一节中介绍主文件夹和主驱动器，该节涵盖登录脚本的驱动器映射功能。将登录脚本调用的任何文件复制到域控制器的 NETLOGON 共享之一中，它们将被复制到其他域控制器并可供登录脚本使用。就这样。注销并重新登录到成员服务器（或域控制器），登录脚本应自动运行。
+使用 AD 用户和计算机为每个用户配置登录脚本是最直接的方法——但也是设置最耗时的，因为你必须为域中的每个用户执行此操作。（当然你应该将其编写为脚本！）导航到要设置登录脚本的用户对象，双击打开其属性。单击配置文件选项卡，在登录脚本字段中输入登录脚本的名称，本例中为 `logon-stub.bat`，如图 7.1 所示。此外，还可以选择输入用户主文件夹的相关信息。我们将在映射驱动器与主驱动器一节中介绍主文件夹和主驱动器，该节涵盖登录脚本的驱动器映射功能。将登录脚本调用的任何文件复制到域控制器的 NETLOGON 共享之一中，它们将被复制到其他域控制器并可供登录脚本使用。就这样。注销并重新登录到成员服务器（或域控制器），登录脚本应自动运行。
 
-#### 激活和使用 Active Directory 组策略
+### 激活和使用 Active Directory 组策略
 
 使用组策略配置和部署登录脚本稍微复杂一些。你应该理解并熟悉组策略，因为此处的更改可能会影响域中的部分或所有用户。与所有这些脚本一样，请先部署到测试域中，以确保脚本中的所有问题都已得到解决，包括对外部脚本、实用程序或程序的调用。
 
@@ -5682,9 +6178,9 @@ If Errorlevel 1 echo Error: Check WSH installation and script location > \\wkstn
 
 在以下示例中，我们配置了一个仅应用于实际人员用户账户的登录脚本。其他用户账户（如内置账户或服务账户）被排除在此组策略之外。我们通过将所有人员用户账户移至单独的 OU，然后为该 OU 专门配置一个运行登录脚本的 GPO 来实现。
 
-为该 OU 创建新的 GPO，并导航到"用户配置"、"Windows 设置"、"脚本（登录/注销）"节点，如前面图 7.2 所示。在右窗格中，双击"登录"节点以打开"登录属性"对话框。单击"显示文件"按钮，打开一个资源管理器窗口，显示此特定 GPO 的登录脚本位置。路径类似于 `\\domain\sysVol\domain\Policies\GUID\User\Scripts\Logon`，其中 domain 是你的域的完全限定域名（FQDN），GUID 是此 GPO 的全局唯一标识符。（GUID 是一个保证唯一的编号——例如 {6AC1786C-016F-11D2-945F-00C04fB984F9}。每个 GUID 都是唯一的，你的将会不同。）将 *logon-stub.bat*、*logon-body.js* 和 *logon-config.xml* 文件复制到此文件夹中，并记下其位置，如图 7.3 所示。日后更新登录脚本时，必须更新此位置中的文件才能生效。
+为该 OU 创建新的 GPO，并导航到"用户配置"、"Windows 设置"、"脚本（登录/注销）"节点，如前面图 7.2 所示。在右窗格中，双击"登录"节点以打开"登录属性"对话框。单击"显示文件"按钮，打开一个资源管理器窗口，显示此特定 GPO 的登录脚本位置。路径类似于 `\\domain\sysVol\domain\Policies\GUID\User\Scripts\Logon`，其中 `domain` 是你的域的完全限定域名（FQDN），`GUID` 是此 GPO 的全局唯一标识符。（`GUID` 是一个保证唯一的编号——例如 `{6AC1786C-016F-11D2-945F-00C04fB984F9}`。每个 `GUID` 都是唯一的，你的将会不同。）将 `logon-stub.bat`、`logon-body.js` 和 `logon-config.xml` 文件复制到此文件夹中，并记下其位置，如图 7.3 所示。日后更新登录脚本时，必须更新此位置中的文件才能生效。
 
-返回"登录属性"对话框，单击"添加"按钮。单击"浏览…"按钮，添加脚本 *logon-stub.bat*，如图 7.4 所示。在此对话框中，你可以添加多个登录脚本，但不要添加 *logon-body.js* 脚本，因为 *logon-stub.bat* 文件会直接调用它。单击两次"确定"退出对话框并关闭组策略 MMC。
+返回"登录属性"对话框，单击"添加"按钮。单击"浏览…"按钮，添加脚本 `logon-stub.bat`，如图 7.4 所示。在此对话框中，你可以添加多个登录脚本，但不要添加 `logon-body.js` 脚本，因为 `logon-stub.bat` 文件会直接调用它。单击两次"确定"退出对话框并关闭组策略 MMC。
 
 ## 摆脱批处理文件——一种新的登录脚本
 
@@ -5701,15 +6197,12 @@ If Errorlevel 1 echo Error: Check WSH installation and script location > \\wkstn
 ## 主体部分——logon-body.js
 
 主登录脚本由几个部分组成。第一部分从 XML 配置文件加载配置数据。下一部分处理登录脚本的各个步骤。最后一部分包含用于支持脚本的辅助函数。
+
 登录脚本使用对象数组来跟踪从 XML 配置文件加载的信息。（XML 配置文件在本章末尾脚本主体之后介绍。）变量 `strStatusText` 提供更新进度的滚动统计，并最终显示在弹出窗口中。数组 `aDrives`、`aPath` 和对象 `objLog` 包含用户定义的脚本数据，用于映射驱动器、添加路径语句以及指定脚本处理过程中使用的日志文件位置。`strNTPDomain` 包含用于将客户端同步到 NTP 时间服务的域名。`iResult` 用于评估通过 `Shell` 对象的 `Run` 命令调用的外部应用程序是否成功运行。脚本使用 `iStartIndex` 指定开始映射驱动器的 `aDrives` 索引，这对应于是否包含主目录。`strDomain`、`strUser` 和 `strComputer` 指的是 `Network` 对象的属性，分别指定运行登录脚本的域、用户和计算机。
 
 一个出错的登录脚本可能会挂起登录会话，甚至阻止用户登录。因此，此脚本包含一个大型的 `try...catch` 语句，涵盖了脚本的大部分内容。其中一些函数也使用了这种错误处理机制。如果脚本中发生错误，`catch` 语句会尝试将错误记录到中央日志文件中，该文件可用于识别可能的问题。JScript 错误处理的另一个有用特性是支持嵌套的 `try...catch` 语句。这意味着你可以在主程序中包含一个较大的 `try...catch` 语句，同时在从主程序调用的各种函数中创建较小的 `try...catch` 语句。函数中的 `try...catch` 语句可能以该函数特有的方式处理错误，但你可以选择重新抛出错误（使用 `throw` 语句），这将触发上一级的 `try...catch` 语句。以下示例展示了这种嵌套的工作原理。
 
 主程序包含一个 `try..catch` 语句。函数 `MyFunction` 也使用了自己的 `try...catch` 语句。在 `MyFunction` 中，故意抛出了一个错误（使用 `throw` 语句）。`MyFunction` 的 `try...catch` 语句使用其自身的局部错误处理来响应错误。然而，它随后重新抛出了该错误。这触发了主程序的 `try...catch` 语句，主程序使用其 `try...catch` 错误处理例程进行响应。
-
-
-
-[content]
 
 ### trycatch
 
@@ -5734,7 +6227,7 @@ catch(errorInMyFunction) {
 }
 ```
 
-此示例代码（保存为 *trycatch.js*）的输出结果如下：
+此示例代码（保存为 `trycatch.js`）的输出结果如下：
 
 ```
 C:\>trycatch
@@ -5746,7 +6239,7 @@ C:\>
 
 接下来，脚本创建了两个 WScript 对象：`Network` 和 `Shell`。脚本使用 `Network` 对象来获取运行登录脚本的域名、用户和计算机的名称。虽然该对象不如 WMI 或 ADSI 等其他技术强大，但它与旧系统的兼容性更好，因为旧系统可能未安装最新的技术。
 
-> *随着脚本分发范围的扩大，技术选择变得越来越重要。此登录脚本运行在安装了最新服务包的 Windows NT 4.0 上，但没有使用需要额外软件的 ADSI 或 WMI 技术。如果你的后续环境由 Windows XP、2000 或 Server 2003 计算机组成，或者你已加载了 WMI 核心组件或 ADSI 客户端扩展，则可以在登录脚本中使用这些技术来提供更多功能。*
+> 随着脚本分发范围的扩大，技术选择变得越来越重要。此登录脚本运行在安装了最新服务包的 Windows NT 4.0 上，但没有使用需要额外软件的 ADSI 或 WMI 技术。如果你的后续环境由 Windows XP、2000 或 Server 2003 计算机组成，或者你已加载了 WMI 核心组件或 ADSI 客户端扩展，则可以在登录脚本中使用这些技术来提供更多功能。
 
 ![配置文件示意图](img/eafd0e1632fc08452cf4d68dbe912652_246_0.png)
 
@@ -5796,7 +6289,7 @@ XML DOM 描述了用于操作 XML 数据的对象、方法和属性。XML 文件
 
 脚本使用 `load` 方法将 XML 文件加载并解析到 DOM 中，并将 XML 数据赋值给 XML 文档对象 `xmlDoc`。你可以通过 URL 或文件路径指定 XML 文件的位置。通过检查 `parseError` 对象来查看加载和解析过程中可能发生的任何错误。使用 DOM 时，XML 文档在加载时会自动解析错误，并通过 `parseError` 属性获取错误信息。XML DOM 的 `parseError` 对象返回一个对象，该对象进一步暴露其他属性来描述实际错误。例如，`parseError.reason` 描述错误内容，`parseError.line` 返回错误所在的行号。`parseError` 还包括 `errorCode`、`filepos`、`linepos`、`srcText` 和 `url`，用于进一步描述具体错误。
 
-*快速验证 XML 数据文件的一个便捷方法是直接在支持 XML 的 Web 浏览器（如 Internet Explorer）中打开它。任何错误都会显示在浏览器中。如果一切正常，浏览器会以可折叠的层次视图显示你的 XML 文件。Internet Explorer 5.0 及更高版本是出色的 XML 查看器。*
+快速验证 XML 数据文件的一个便捷方法是直接在支持 XML 的 Web 浏览器（如 Internet Explorer）中打开它。任何错误都会显示在浏览器中。如果一切正常，浏览器会以可折叠的层次视图显示你的 XML 文件。Internet Explorer 5.0 及更高版本是出色的 XML 查看器。
 
 ```javascript
 var xmlDoc=new ActiveXObject("Msxml2.DOMDocument.3.0");
@@ -5832,7 +6325,7 @@ for (i=0;i<objNodeList.length;i++) {
 WScript.echo(objNodeList.item(i).xml);}
 ```
 
-域名属性 `name` 是使用与获取 `ntp` 域成员相同的技术提取的。对象 `objLog` 包含脚本使用的三种不同日志的路径和文件名。脚本将错误记录到错误日志，用 `objLog.error` 表示。`objLog.logon` 记录登录信息，`objLog.patch` 记录补丁更新信息。这些日志的位置作为 XML 数据存储在 `xmlDoc` 对象中。如前面的提示所述，此代码使用 selectSingleNode 方法和 XPath 属性筛选器返回单个节点的文本。尽管有多个日志元素可用，但应该只有一个日志元素也具有 error、logon 或 patch 类型的属性。此代码将 objLog 对象设置为指定日志元素的文本。
+域名属性 `name` 是使用与获取 `ntp` 域成员相同的技术提取的。对象 `objLog` 包含脚本使用的三种不同日志的路径和文件名。脚本将错误记录到错误日志，用 `objLog.error` 表示。`objLog.logon` 记录登录信息，`objLog.patch` 记录补丁更新信息。这些日志的位置作为 XML 数据存储在 `xmlDoc` 对象中。如前面的提示所述，此代码使用 `selectSingleNode` 方法和 XPath 属性筛选器返回单个节点的文本。尽管有多个日志元素可用，但应该只有一个日志元素也具有 error、logon 或 patch 类型的属性。此代码将 `objLog` 对象设置为指定日志元素的文本。
 
 ```
 xmlDoc.setProperty("SelectionLanguage", "XPath");
@@ -5878,7 +6371,7 @@ for (i=0;i<objNodeList.length;i++)
 <name>Spitfire</name>
 ```
 
-注意，它返回了任何（以及所有）匹配的元素——甚至跨越兄弟节点。要仅返回 car 节点的元素，请使用以下代码。（为了适应多辆汽车，此示例使用 selectNodes 方法。）
+注意，它返回了任何（以及所有）匹配的元素——甚至跨越兄弟节点。要仅返回 car 节点的元素，请使用以下代码。（为了适应多辆汽车，此示例使用 `selectNodes` 方法。）
 
 ```
 objNodeList=xmlDoc.selectNodes("/objects/car");
@@ -5886,7 +6379,7 @@ for (i=0;i<objNodeList.length;i++) {
 WScript.echo(objNodeList.item(i).xml);}
 ```
 
-如果你想仅返回汽车的名称，以下稍微低效的代码可以实现。首先，我们从 /objects/car 获取节点子集。然后，我们获取第二个包含所有名为 name 的标签的节点列表，最后打印结果节点的 XML。
+如果你想仅返回汽车的名称，以下稍微低效的代码可以实现。首先，我们从 `/objects/car` 获取节点子集。然后，我们获取第二个包含所有名为 name 的标签的节点列表，最后打印结果节点的 XML。
 
 ```
 objNodeList=xmlDoc.selectNodes("/objects/car");
@@ -5898,7 +6391,7 @@ for (i=0;i<objNodeList.length;i++) {
 }
 ```
 
-更清晰的方法是直接深入到 /objects/car/name，如下面的代码所示：
+更清晰的方法是直接深入到 `/objects/car/name`，如下面的代码所示：
 
 ```
 objNodeList=xmlDoc.selectNodes("/objects/car/name");
@@ -5910,11 +6403,11 @@ for (i=0;i<objNodeList.length;i++)
 
 ### 映射驱动器与主驱动器
 
-此登录脚本区分主驱动器和通用映射驱动器。该脚本将主驱动器与 Windows 主文件夹相关联，该文件夹在用户对象的"配置文件"选项卡上定义，如图 7.1 所示。AD 主文件夹具有与典型映射驱动器不同的特性。例如，当你启动命令 shell 时，它默认指向你的主文件夹。此外，当你使用 AD 用户和计算机为用户定义主文件夹时，此工具会自动创建文件夹并设置适当的权限以限制对该特定用户的访问。主文件夹由三部分组成：homeDrive (p:)、homeShare (\\\\dc1\users) 和 homePath (\username)。这种共享和路径的分离使得 Windows NT 4.0 计算机也能受益于主驱动器，即使 Windows NT 4.0 不支持将驱动器映射到共享和路径。
+此登录脚本区分主驱动器和通用映射驱动器。该脚本将主驱动器与 Windows 主文件夹相关联，该文件夹在用户对象的"配置文件"选项卡上定义，如图 7.1 所示。AD 主文件夹具有与典型映射驱动器不同的特性。例如，当你启动命令 shell 时，它默认指向你的主文件夹。此外，当你使用 AD 用户和计算机为用户定义主文件夹时，此工具会自动创建文件夹并设置适当的权限以限制对该特定用户的访问。主文件夹由三部分组成：`homeDrive (p:)`、`homeShare (\\\\dc1\users)` 和 `homePath (\username)`。这种共享和路径的分离使得 Windows NT 4.0 计算机也能受益于主驱动器，即使 Windows NT 4.0 不支持将驱动器映射到共享和路径。
 
-由于这些区别，登录脚本将主驱动器与任何映射驱动器区分开来。由于只存在一个主驱动器，脚本使用 selectSingleNode 方法来填充 aDrives 数组第一个元素中存储的 objDrives 对象的两个属性。脚本设置属性 objDrives.drive 和 objDrives.share，然后将其设置为 aDrive[0]。这些属性使用以下命名法作为字面量设置：objDrives = { drive: "驱动器字母" share: "\\\\server\\share" }。*驱动器字母* 是 `<homedrive>` 元素的属性，而 `\\\\server\\share` 是 `<homedrive>` 元素的 text 属性。
+由于这些区别，登录脚本将主驱动器与任何映射驱动器区分开来。由于只存在一个主驱动器，脚本使用 `selectSingleNode` 方法来填充 `aDrives` 数组第一个元素中存储的 `objDrives` 对象的两个属性。脚本设置属性 `objDrives.drive` 和 `objDrives.share`，然后将其设置为 `aDrive[0]`。这些属性使用以下命名法作为字面量设置：`objDrives = { drive: "驱动器字母" share: "\\\\server\\share" }`。驱动器字母是 `<homedrive>` 元素的属性，而 `\\\\server\\share` 是 `<homedrive>` 元素的 text 属性。
 
-*此脚本显式设置对象的属性，然后将对象分配为数组的成员。或者，你可以采用快捷方法隐式进行此分配。例如，与其设置 obj.property1 和 obj.property2 然后设置 aArray[x]=obj，不如设置 aArray[x].property1 和 aArray[x].property2。*
+此脚本显式设置对象的属性，然后将对象分配为数组的成员。或者，你可以采用快捷方法隐式进行此分配。例如，与其设置 `obj.property1` 和 `obj.property2` 然后设置 `aArray[x]=obj`，不如设置 `aArray[x].property1` 和 `aArray[x].property2`。
 
 ```
 //homedirectory
@@ -5925,9 +6418,9 @@ objDrives={
 aDrives[0]=objDrives;
 ```
 
-脚本从 XML 数据文件中读取映射驱动器，并以类似方式填充 aDrives 数组；但是，由于可以存在任意数量的映射驱动器（而不仅仅是一个），脚本使用 getElementsByTagName 方法返回包含所有 mapdrive 节点的 NodeList 对象。你可能会注意到 getElementsByTagName 方法与 xmlDoc 对象一起使用，它会返回任何和所有名为 mapdrive 的元素，无论它们可能位于层次结构中的什么位置。因为我们控制 XML 数据，所以完全可以确定 XML 中不可能有其他 `<mapdrive>` 元素。
+脚本从 XML 数据文件中读取映射驱动器，并以类似方式填充 `aDrives` 数组；但是，由于可以存在任意数量的映射驱动器（而不仅仅是一个），脚本使用 `getElementsByTagName` 方法返回包含所有 `mapdrive` 节点的 `NodeList` 对象。你可能会注意到 `getElementsByTagName` 方法与 `xmlDoc` 对象一起使用，它会返回任何和所有名为 `mapdrive` 的元素，无论它们可能位于层次结构中的什么位置。因为我们控制 XML 数据，所以完全可以确定 XML 中不可能有其他 `<mapdrive>` 元素。
 
-脚本将 objDrives.drive 属性设置为 `<mapdrive>` 属性 drive，将 objDrives.share 属性设置为 `<mapdrive>` 元素 text。然后它将数组成员 aDrives[i+1] 设置为 objDrives。getElementsByTagName 从索引 0 开始，而 aDrives 从 1 开始，以便在需要时添加主驱动器。
+脚本将 `objDrives.drive` 属性设置为 `<mapdrive>` 属性 `drive`，将 `objDrives.share` 属性设置为 `<mapdrive>` 元素 text。然后它将数组成员 `aDrives[i+1]` 设置为 `objDrives`。`getElementsByTagName` 从索引 0 开始，而 `aDrives` 从 1 开始，以便在需要时添加主驱动器。
 
 ```
 //other mapped drives
@@ -5938,8 +6431,6 @@ for(i=0;i<objMapDrive.length;i++){
     aDrives[i+1]=objDrives;
 }
 ```
-
-
 
 ### 设置路径
 
@@ -5974,11 +6465,11 @@ strStatusText+="You have logged into " + strComputer +
 
 但是，脚本确实会检查是否已经设置了主文件夹，方法是查找 `HOMESHARE` 环境变量的存在。此变量仅在已指定主文件夹时才存在。如果指定了主文件夹，则脚本将显示该驱动器的盘符，并跳过处理 XML 指定的 `<homedrive>`。它通过将 `iStartIndex` 变量设置为 1 来实现这一点。`iStartIndex` 在遍历映射驱动器 `aDrives` 数组时用作起始点。（请记住，`aDrives[0]` 保存有关主驱动器的数据，将 `iStartIndex` 设置为 1 会跳过数组的此元素。）
 
-*Windows NT 4.0 用户的另一个注意事项：Windows NT 4.0 不支持将驱动器盘符映射到共享和路径（例如，`\\server\share\path`）。这意味着您必须将主驱动器指定为服务器（例如，`\\server`）。然后脚本会将用户名附加到此（例如，`\\server\username`）。您需要将每个用户的主目录作为共享本身共享出来。Windows 2000 允许映射到 `\\server\share\path`，并且您可以将主驱动器指定为 `\\server\share`。脚本附加用户名（例如，`\\server\share\username`），但只要 `\\server\share` 存在，并且在该共享下路径 `\\username` 存在，就可以访问它。*
+Windows NT 4.0 用户的另一个注意事项：Windows NT 4.0 不支持将驱动器盘符映射到共享和路径（例如，`\\server\share\path`）。这意味着您必须将主驱动器指定为服务器（例如，`\\server`）。然后脚本会将用户名附加到此（例如，`\\server\username`）。您需要将每个用户的主目录作为共享本身共享出来。Windows 2000 允许映射到 `\\server\share\path`，并且您可以将主驱动器指定为 `\\server\share`。脚本附加用户名（例如，`\\server\share\username`），但只要 `\\server\share` 存在，并且在该共享下路径 `\\username` 存在，就可以访问它。
 
 如果 `HOMESHARE` 环境变量不存在，则脚本会将用户名连接到指定的主驱动器值，并将其设置为 `aDrive[0].share` 属性。对于运行 Windows 2000 及更高版本的计算机，此方法提供了指向用户自定义共享和路径的映射驱动器。
 
-*主文件夹支持三个属性：drive、share 和 path，这也与 Windows NT 4.0 兼容。此特性代表了使用 AD 用户和计算机指定用户主文件夹的另一个好处，因为它将驱动器映射到 `\\server\share`，但也会将环境变量 `homePath` 设置为 `\username`。因此，当您启动命令 shell 时，它会打开到 `drive:\username`。*
+主文件夹支持三个属性：drive、share 和 path，这也与 Windows NT 4.0 兼容。此特性代表了使用 AD 用户和计算机指定用户主文件夹的另一个好处，因为它将驱动器映射到 `\\server\share`，但也会将环境变量 `homePath` 设置为 `\username`。因此，当您启动命令 shell 时，它会打开到 `drive:\username`。
 
 ```
 //Determine the users home directory
@@ -5999,11 +6490,11 @@ else {
 
 ### 步骤 1. 删除冲突的映射驱动器
 
-在将驱动器映射到 XML 配置中指定的驱动器之前，脚本会取消映射任何可能冲突的现有驱动器。脚本会遍历当前映射的每个驱动器，并将它们与脚本计划映射的驱动器进行比较。脚本使用 Network 对象的 `EnumNetworkDrives` 方法。`EnumNetworkDrives` 返回一个数组，其成员包含交替的驱动器和共享映射。例如，`aMappedDrives[0]` 等于第一个映射驱动器的盘符，`aMappedDrives[1]` 等于该驱动器的映射 `\\server\share`。因此，遍历现有映射驱动器的迭代步长为 2。
+在将驱动器映射到 XML 配置中指定的驱动器之前，脚本会取消映射任何可能冲突的现有驱动器。脚本会遍历当前映射的每个驱动器，并将它们与脚本计划映射的驱动器进行比较。脚本使用 `Network` 对象的 `EnumNetworkDrives` 方法。`EnumNetworkDrives` 返回一个数组，其成员包含交替的驱动器和共享映射。例如，`aMappedDrives[0]` 等于第一个映射驱动器的盘符，`aMappedDrives[1]` 等于该驱动器的映射 `\\server\share`。因此，遍历现有映射驱动器的迭代步长为 2。
 
 脚本使用正则表达式匹配方法将现有驱动器映射与建议的驱动器映射进行比较。脚本创建一个新的 `RegExp` 对象，其中包含正则表达式（在本例中是建议的驱动器盘符）和参数 `i`，该参数指定不区分大小写。如果 XML 配置数据为建议的驱动器映射包含 `h:` 或 `H:`，脚本将将其与现有的 `H:` 映射进行匹配。执行此比较并仅删除冲突的驱动器可确保用户可能先前配置的其他驱动器映射保持不变。
 
-脚本使用 Network 对象的 `RemoveNetworkDrive` 方法删除任何匹配的驱动器。此方法接受两个布尔参数。第一个参数 `bForce` 指示该方法强制删除映射的驱动器。第二个参数确定该方法是否应从用户配置文件中删除驱动器映射。此脚本将两者都设置为 `true`；登录脚本会删除之前的映射，并从用户的配置文件中删除该映射。
+脚本使用 `Network` 对象的 `RemoveNetworkDrive` 方法删除任何匹配的驱动器。此方法接受两个布尔参数。第一个参数 `bForce` 指示该方法强制删除映射的驱动器。第二个参数确定该方法是否应从用户配置文件中删除驱动器映射。此脚本将两者都设置为 `true`；登录脚本会删除之前的映射，并从用户的配置文件中删除该映射。
 
 ```
 //Unmap conflicting drives
@@ -6023,7 +6514,7 @@ for (e=0;e<aMappedDrives.length-1;e=e+2) {
 
 ### 步骤 2. 映射驱动器
 
-实际的驱动器映射使用 `WScript.Network MapNetworkDrive` 方法，该方法需要将要映射的驱动器盘符和共享作为输入参数。由于之前已删除了任何冲突的驱动器，因此脚本无需检查可能的冲突。但是，脚本会先使用 `FileSystemObject FolderExists` 方法检查共享是否存在。如果 XML 数据文件配置错误或托管共享的服务器不可访问，可能会出现此问题。尽管前面的 try...catch 语句本可以处理任何尝试映射到不存在的共享时产生的错误，但使用 `FolderExists` 方法提供了一种更优雅的方式来报告可能的配置错误或问题，并使脚本继续运行。
+实际的驱动器映射使用 `WScript.Network MapNetworkDrive` 方法，该方法需要将要映射的驱动器盘符和共享作为输入参数。由于之前已删除了任何冲突的驱动器，因此脚本无需检查可能的冲突。但是，脚本会先使用 `FileSystemObject FolderExists` 方法检查共享是否存在。如果 XML 数据文件配置错误或托管共享的服务器不可访问，可能会出现此问题。尽管前面的 `try...catch` 语句本可以处理任何尝试映射到不存在的共享时产生的错误，但使用 `FolderExists` 方法提供了一种更优雅的方式来报告可能的配置错误或问题，并使脚本继续运行。
 
 ```
 //Map Drives
@@ -6047,15 +6538,13 @@ for(i=iStartIndex;i<aDrives.length;i++) {
 
 ### 步骤 3. 更新路径
 
-登录脚本还会向用户的路径声明添加任意数量的额外路径。路径声明由两部分组成——*系统*路径和*用户*路径。这两部分都作为环境变量存储。（您可以通过编辑系统小应用程序的高级选项卡中的环境变量来手动设置路径，如图 7.5 所示。）您也可以通过命令提示符手动设置路径，只需键入 `path=%path%;c:\some\new\path`。然而，这仅在该命令 shell 会话中有效。
-
-
+登录脚本还会向用户的路径声明添加任意数量的额外路径。路径声明由两部分组成——系统路径和用户路径。这两部分都作为环境变量存储。（您可以通过编辑系统小应用程序的高级选项卡中的环境变量来手动设置路径，如图 7.5 所示。）您也可以通过命令提示符手动设置路径，只需键入 `path=%path%;c:\some\new\path`。然而，这仅在该命令 shell 会话中有效。
 
 ### 第 4 步：同步本地时间服务
 
 登录脚本尝试将客户端计算机的时间与域简单网络时间协议（SNTP）服务器同步。虽然 Windows 2000 及更高版本的计算机支持时间同步服务（W32Time），但对于 Windows NT 4.0 计算机，没有可用的直接方法通过脚本以编程方式同步时间，因此登录脚本只是运行一个命令 shell 并执行 net 实用工具。将时间设置为域的参数是 `net time /domain:somedomain /set /yes`。这会将时间设置为域 `somedomain`，并且不会在交互式提示中询问你是否要更改时间。使用 `net time` 扩展或自定义此示例，以运行你希望在登录时运行的任何其他实用工具。
 
-Shell 对象的 `Run` 方法调用 `cmd` 命令以打开一个命令 shell，从该 shell 发出 `net time` 命令。启动命令 shell 时，`/C` 参数指示命令 shell 执行字符串中指定的命令，然后终止。WSH 运行 `cmd` 命令，该命令执行 `net time` 命令。完成后，`cmd` 窗口关闭。请注意，命令 shell 的终止与 Shell 对象 `Run` 方法的终止不同。
+`Shell` 对象的 `Run` 方法调用 `cmd` 命令以打开一个命令 shell，从该 shell 发出 `net time` 命令。启动命令 shell 时，`/C` 参数指示命令 shell 执行字符串中指定的命令，然后终止。WSH 运行 `cmd` 命令，该命令执行 `net time` 命令。完成后，`cmd` 窗口关闭。请注意，命令 shell 的终止与 `Shell` 对象 `Run` 方法的终止不同。
 
 两个参数控制 `Run` 命令的执行。第一个参数定义窗口样式，你可以隐藏窗口（0），激活并显示窗口（1），或从多达 10 种样式中选择。第二个布尔参数 `bWaitOnReturn` 指示脚本等待命令终止还是继续处理。如果为 `true`，脚本将等待，在本例中，直到 `cmd` 窗口终止。如果为 `false`，登录脚本将立即继续处理，无论生成的命令 shell 的结果如何。在我们的代码中，`Run` 方法激活并显示窗口，并且在恢复处理之前不等待其退出。
 
@@ -6094,6 +6583,7 @@ else
 ### 第 6 步：使用关键更新更新系统
 
 登录脚本的最后一个主要功能提供基本的补丁安装服务。虽然基础，但此处展示的代码可能会让你了解如何结合使用 XML 与 Windows 脚本技术来评估计算机并根据观察到的结果采取行动。此代码的功能仅限于检查注册表中的指定值，以确定是否已安装补丁或应安装补丁；想象一下将此处理扩展为报告 Service Pack 级别、已安装的应用程序，或你可能需要定期报告的任何其他内容。
+
 脚本调用函数 `patchsystem` 来启动补丁管理功能。该函数需要补丁日志的位置、计算机和用户的名称，以及包含补丁管理数据的 XML 对象。
 
 ```javascript
@@ -6105,15 +6595,20 @@ strStatusText+= "Done.\n";
 
 ### 显示结果
 
-在结束时，登录脚本调用 Shell 对象的 `PopUp` 方法来显示脚本所执行操作的摘要，这些摘要包含在字符串 `strStatusText` 中。消息框的标题通过名称欢迎用户，主框包含状态文本。对话框保持显示 30 秒后自动关闭，这给用户时间查看，但不会强迫他们在每次登录域时手动关闭它。
+在结束时，登录脚本调用 `Shell` 对象的 `PopUp` 方法来显示脚本所执行操作的摘要，这些摘要包含在字符串 `strStatusText` 中。消息框的标题通过名称欢迎用户，主框包含状态文本。对话框保持显示 30 秒后自动关闭，这给用户时间查看，但不会强迫他们在每次登录域时手动关闭它。
 
-在主主体的末尾，脚本还完成了初始的 `try...catch` 错误处理。如果在运行脚本主体时发生错误，代码执行将在 `catch` 语句处继续，错误存储在 `error` 变量中，该变量表示一个错误对象。脚本尝试将原始错误写入错误日志，并通过 `PopUp` 方法在退出之前向登录系统的用户显示错误。错误对象支持四个属性：`description`、`method`、`name` 和 `number`。属性 `description` 和 `message` 以最易读的术语显示错误（例如，一条错误消息可能显示"*该对象不支持此属性或方法*"）。`name` 属性包含错误的名称（例如名称 "TypeError"）。
+在主主体的末尾，脚本还完成了初始的 `try...catch` 错误处理。如果在运行脚本主体时发生错误，代码执行将在 `catch` 语句处继续，错误存储在 `error` 变量中，该变量表示一个错误对象。脚本尝试将原始错误写入错误日志，并通过 `PopUp` 方法在退出之前向登录系统的用户显示错误。错误对象支持四个属性：`description`、`method`、`name` 和 `number`。属性 `description` 和 `message` 以最易读的术语显示错误（例如，一条错误消息可能显示"该对象不支持此属性或方法"）。`name` 属性包含错误的名称（例如名称 "TypeError"）。
 
 > 通常，你会通过其十进制或十六进制值在开发 SDK 或 Internet 上查找错误编号。错误对象的 `number` 属性是一个 32 位数字，同时包含设施（高 16 位）和错误代码（低 16 位）。使用按位 AND（在 JScript 中，这是 `&` 字符）来提取各组成部分。例如：
+
 >
+
 > `error.number >> 16 & 0x1FFF = facility`
+
 > `error.number & 0xFFFF = error code`
+
 >
+
 > 设施代表错误的数字类别，错误代码是实际的错误代码编号。使用这些属性，你可以从 `try...catch` 捕获的错误中提取有用的信息。
 
 ```javascript
@@ -6130,8 +6625,6 @@ catch(error) {
     WScript.Quit(0);
 }
 ```
-
-
 
 ### LogFile
 
@@ -6180,17 +6673,17 @@ function TabulateFile(strData, iColumn, strDelimit, objFile)
 
 ### 检查注册表和修补系统
 
-修补过程由三个函数组成：PatchSystem、EvalCriteria 和 CheckRegistry，它们协同工作，遍历每个补丁并评估指定的条件是否在系统注册表中匹配。函数 PatchSystem 和 EvalCriteria 负责设置并遍历 XML 配置文件中定义的不同补丁和条件。PatchSystem 遍历每个 `<patch>` 元素，并创建一个包含该特定补丁所有条件的新 NodeList。脚本将此 NodeList 发送给 EvalCriteria，后者遍历该特定补丁的每个条件。条件由注册表键和值组成，以及当键与值匹配或不匹配时应执行的操作说明。实际的注册表查找和比较由 CheckRegistry 函数处理，该函数根据键是否存在且匹配指定的值返回 true 或 false。（可以考虑对此脚本进行扩展，例如添加一个检查文件是否存在的函数，命名为 checkFile。可以添加新条件以包含文件名和文件位置。XML 数据扩展起来也很简单：只需添加一个新元素 `<criteria-file>` 并查找它，或者向 `<criteria>` 添加一个新属性来定义条件类型为注册表或文件。）
+修补过程由三个函数组成：`PatchSystem`、`EvalCriteria` 和 `CheckRegistry`，它们协同工作，遍历每个补丁并评估指定的条件是否在系统注册表中匹配。函数 `PatchSystem` 和 `EvalCriteria` 负责设置并遍历 XML 配置文件中定义的不同补丁和条件。`PatchSystem` 遍历每个 `<patch>` 元素，并创建一个包含该特定补丁所有条件的新 `NodeList`。脚本将此 `NodeList` 发送给 `EvalCriteria`，后者遍历该特定补丁的每个条件。条件由注册表键和值组成，以及当键与值匹配或不匹配时应执行的操作说明。实际的注册表查找和比较由 `CheckRegistry` 函数处理，该函数根据键是否存在且匹配指定的值返回 `true` 或 `false`。（可以考虑对此脚本进行扩展，例如添加一个检查文件是否存在的函数，命名为 `checkFile`。可以添加新条件以包含文件名和文件位置。XML 数据扩展起来也很简单：只需添加一个新元素 `<criteria-file>` 并查找它，或者向 `<criteria>` 添加一个新属性来定义条件类型为注册表或文件。）
 
 ### PatchSystem
 
-PatchSystem 函数的参数包括日志文件名和位置、计算机名和用户名，以及包含补丁数据的 XML 对象（xmlDoc）。与之前的处理可能的用户配置数据的函数一样，所有 PatchSystem 代码都使用 `try...catch` 系统来处理错误。
+`PatchSystem` 函数的参数包括日志文件名和位置、计算机名和用户名，以及包含补丁数据的 XML 对象（`xmlDoc`）。与之前的处理可能的用户配置数据的函数一样，所有 `PatchSystem` 代码都使用 `try...catch` 系统来处理错误。
 
-该函数首先使用 getElementsByTagName 方法构建所有 `<patch>` 元素的 NodeList，并将其存储在 objPatches 中。此过程本质上从 XML 对象中去除了我们之前使用的配置信息，提供了与补丁相关的数据子集。然后脚本逐一循环处理这些节点。对于每个单独的 `<patch>`，脚本进行第二次 getElementsByTagName 调用以提取 `<criteria>` 并将其存储在 NodeList 对象 objCriteria 中。脚本然后通过条件语句调用 EvalCriteria 函数。这意味着脚本将 objCriteria 发送给 EvalCriteria 进行进一步处理。EvalCriteria 函数返回一个布尔值（true 或 false），PatchSystem 函数据此决定是否安装补丁。
+该函数首先使用 `getElementsByTagName` 方法构建所有 `<patch>` 元素的 `NodeList`，并将其存储在 `objPatches` 中。此过程本质上从 XML 对象中去除了我们之前使用的配置信息，提供了与补丁相关的数据子集。然后脚本逐一循环处理这些节点。对于每个单独的 `<patch>`，脚本进行第二次 `getElementsByTagName` 调用以提取 `<criteria>` 并将其存储在 `NodeList` 对象 `objCriteria` 中。脚本然后通过条件语句调用 `EvalCriteria` 函数。这意味着脚本将 `objCriteria` 发送给 `EvalCriteria` 进行进一步处理。`EvalCriteria` 函数返回一个布尔值（`true` 或 `false`），`PatchSystem` 函数据此决定是否安装补丁。
 
-如果 EvalCriteria 返回 true，则应用补丁。如果系统需要应用补丁，脚本调用 getAttribute 方法从当前 objPatches 项中检索存储在名为 patchfile 的属性中的补丁路径和文件名。该函数使用 Shell 对象的 Run 方法（之前用于同步网络时间和启动防病毒安装软件）来应用补丁。最后，日志文件更新一行代码，记录该特定补丁已被应用。
+如果 `EvalCriteria` 返回 `true`，则应用补丁。如果系统需要应用补丁，脚本调用 `getAttribute` 方法从当前 `objPatches` 项中检索存储在名为 `patchfile` 的属性中的补丁路径和文件名。该函数使用 `Shell` 对象的 `Run` 方法（之前用于同步网络时间和启动防病毒安装软件）来应用补丁。最后，日志文件更新一行代码，记录该特定补丁已被应用。
 
-如果 EvalCriteria 函数返回 false，则不需要应用补丁，日志文件仅更新记录此信息。
+如果 `EvalCriteria` 函数返回 `false`，则不需要应用补丁，日志文件仅更新记录此信息。
 
 ```
 //------------------------------------------------------------------
@@ -6229,13 +6722,13 @@ WScript.Quit(0);
 
 ### EvalCriteria
 
-EvalCriteria 函数使用由 PatchSystem 预处理过的 `<criteria>` 元素标签组成的 NodeList。条件标签包含三个属性：regpath、value 和 installIfTrue。对于每个 `<criteria>` 元素，该函数检查运行登录脚本的系统上指定的 regpath 是否等于指定的 value。
+`EvalCriteria` 函数使用由 `PatchSystem` 预处理过的 `<criteria>` 元素标签组成的 `NodeList`。条件标签包含三个属性：`regpath`、`value` 和 `installIfTrue`。对于每个 `<criteria>` 元素，该函数检查运行登录脚本的系统上指定的 `regpath` 是否等于指定的 `value`。
 
-变量 bEval 表示条件匹配或不匹配时应执行的操作，它从 installIfTrue 属性转换而来。例如，假设一个 `<criteria>` 元素通过检查产品版本注册表键的值是否为 5.0（代表 Windows 2000）来判断计算机是否运行 Windows 2000。如果找到此键和值，则条件为 true，补丁将会应用。因此，installIfTrue 应为 yes，这通过三元运算符转换为 bEval 的值 true。
+变量 `bEval` 表示条件匹配或不匹配时应执行的操作，它从 `installIfTrue` 属性转换而来。例如，假设一个 `<criteria>` 元素通过检查产品版本注册表键的值是否为 5.0（代表 Windows 2000）来判断计算机是否运行 Windows 2000。如果找到此键和值，则条件为 `true`，补丁将会应用。因此，`installIfTrue` 应为 yes，这通过三元运算符转换为 `bEval` 的值 `true`。
 
-将此示例与检查特定更新是否已应用的 `<criteria>` 进行对比。通常（但不总是），Microsoft 更新会在注册表中记录成功的安装。在这种情况下，如果注册表检查为 true，则补丁已经安装。我们不希望重新安装它，因此我们将 installIfTrue 设置为 no，转换为 bEval 的值为 false。注意，这两个示例中注册表条目都存在；但一个表示补丁需要或适用，另一个表示不需要。
+将此示例与检查特定更新是否已应用的 `<criteria>` 进行对比。通常（但不总是），Microsoft 更新会在注册表中记录成功的安装。在这种情况下，如果注册表检查为 `true`，则补丁已经安装。我们不希望重新安装它，因此我们将 `installIfTrue` 设置为 no，转换为 `bEval` 的值为 `false`。注意，这两个示例中注册表条目都存在；但一个表示补丁需要或适用，另一个表示不需要。
 
-要实际测试注册表值，该函数调用 CheckRegistry 函数，并发送注册表键和值进行确认。此测试的结果也是布尔值，它们与 bEval 进行比较。如果结果等于 bEval，则函数返回 true，向调用函数 PatchSystem 指示应安装补丁。
+要实际测试注册表值，该函数调用 `CheckRegistry` 函数，并发送注册表键和值进行确认。此测试的结果也是布尔值，它们与 `bEval` 进行比较。如果结果等于 `bEval`，则函数返回 `true`，向调用函数 `PatchSystem` 指示应安装补丁。
 
 ```
 //---------------------------------------------------------------------
@@ -6251,8 +6744,6 @@ for(j=0;j<objCriteria.length;j++) {
     var bEval=(objCriteria.item(j)
         .getAttribute("installIfTrue")=="yes"?true:false);
 ```
-
-
 
 ```
 var bResult=CheckRegistry(strRegPath,strValue);
@@ -6288,17 +6779,24 @@ catch(error) { return(false); }
 
 在为自己的测试部署更新此脚本时，请记得配置以下文件：
 
-- *logon-stub.bat*——配置批处理文件，使其输出到所有用户都具有写入权限的网络共享位置。
-- *logon-body.js*——虽然 XML 文件包含了大部分自定义配置，但仍需自定义或移除防病毒软件登录安装过程。包含该过程是为了演示如何将你自己的遗留应用程序整合到基于 Windows 脚本的登录脚本中。
-- *logon-config.xml*——此 XML 文件包含大部分配置信息。请务必根据你的实际环境自定义此文件，并添加你希望扫描和部署的所有更新。
+- `logon-stub.bat`——配置批处理文件，使其输出到所有用户都具有写入权限的网络共享位置。
+
+- `logon-body.js`——虽然 XML 文件包含了大部分自定义配置，但仍需自定义或移除防病毒软件登录安装过程。包含该过程是为了演示如何将你自己的遗留应用程序整合到基于 Windows 脚本的登录脚本中。
+
+- `logon-config.xml`——此 XML 文件包含大部分配置信息。请务必根据你的实际环境自定义此文件，并添加你希望扫描和部署的所有更新。
 
 ## 要点
 
 - 开发基于组策略的登录脚本时要格外小心，确保任何编程错误都不会导致客户端计算机挂起。
+
 - 使用 `WScript.Shell` 对象的 `Run` 或 `Exec` 命令来运行登录时需要的第三方工具或批处理文件。
+
 - 你可能已经听说过 XML；考虑使用它来存储脚本的输入或输出数据。虽然与文本文件相比只稍微复杂一些，但 XML 提供了层次化结构和更强大的解析工具。
+
 - XML 文档对象模型（DOM）提供了 XML 读取和解析功能，并返回一个易于访问和操作的 XML 对象。
+
 - 将脚本输出记录到中央位置可以提供额外的故障排除工具，帮助排查异常行为。
+
 - 登录脚本在待登录用户的上下文下本地运行，这意味着你拥有比操作远程计算机时更大的脚本灵活性（例如使用 `WScript.Shell` 注册表方法进行本地注册表查询）。
 
 接下来，我们将脱离命令行 JScript 实用工具，研究如何利用 Office 应用程序和 Visual Basic for Applications（VBA）作为有用、强大且易于编程的平台，从中启动各种脚本。
@@ -6307,7 +6805,7 @@ catch(error) { return(false); }
 
 ## 概述
 
-你可能现在已经看出来，脚本为跨多个系统自动化执行大规模或可重复的变更提供了绝佳的机会。这些变更的一个重要基础，通常始于一份完整、可靠的清单，列出你希望逐个处理的所有计算机（或用户或其他对象）。我们在前面的脚本 *ADSIQuery* 和 *DateQuery* 中已经看到，使用 ADSI ADO 可以快速生成所需对象的列表，以此为基础执行后续操作。但有时，仅使用一次的动态生成列表并不理想。在某些情况下，你可能希望随着时间的推移维护一份对象及其特定属性的持久化清单。例如，你可以持续记录域中所有成员的防病毒软件的服务状态，或者记录一组系统中所有本地管理员的用户名和密码。又或者你可能想要扫描一组计算机上的所有本地共享，然后标注这些共享中包含的内容。但当你将来再次运行扫描时，你可能希望将数据追加到之前的运行结果中，而不是覆盖之前的标注。有一个工具在管理脚本输出和执行方面特别好用，那就是 Microsoft Excel。就像书本中的日志页面一样，Excel 工作表提供了一个出色的画布，可以记录脚本配置信息以及之前和当前运行的输出。对于脚本编写和执行，Excel 支持 Visual Basic for Applications（VBA），它提供了良好的开发环境并支持强大的调试功能。通过自动化和外部引用的引入，Excel（VBA）支持我们迄今使用过的大部分 Windows 脚本技术。此外，当你将脚本与 Excel 结合使用时，你还可以利用 Excel 对象模型，其中包括访问 Excel 函数、格式化功能以及 Excel 和 Office 特有的对象和方法——这些是 Windows Script Host 中没有的。
+你可能现在已经看出来，脚本为跨多个系统自动化执行大规模或可重复的变更提供了绝佳的机会。这些变更的一个重要基础，通常始于一份完整、可靠的清单，列出你希望逐个处理的所有计算机（或用户或其他对象）。我们在前面的脚本 `ADSIQuery` 和 `DateQuery` 中已经看到，使用 ADSI ADO 可以快速生成所需对象的列表，以此为基础执行后续操作。但有时，仅使用一次的动态生成列表并不理想。在某些情况下，你可能希望随着时间的推移维护一份对象及其特定属性的持久化清单。例如，你可以持续记录域中所有成员的防病毒软件的服务状态，或者记录一组系统中所有本地管理员的用户名和密码。又或者你可能想要扫描一组计算机上的所有本地共享，然后标注这些共享中包含的内容。但当你将来再次运行扫描时，你可能希望将数据追加到之前的运行结果中，而不是覆盖之前的标注。有一个工具在管理脚本输出和执行方面特别好用，那就是 Microsoft Excel。就像书本中的日志页面一样，Excel 工作表提供了一个出色的画布，可以记录脚本配置信息以及之前和当前运行的输出。对于脚本编写和执行，Excel 支持 Visual Basic for Applications（VBA），它提供了良好的开发环境并支持强大的调试功能。通过自动化和外部引用的引入，Excel（VBA）支持我们迄今使用过的大部分 Windows 脚本技术。此外，当你将脚本与 Excel 结合使用时，你还可以利用 Excel 对象模型，其中包括访问 Excel 函数、格式化功能以及 Excel 和 Office 特有的对象和方法——这些是 Windows Script Host 中没有的。
 
 ## 场景
 
@@ -6329,37 +6827,34 @@ Microsoft Excel 为此类脚本提供了一个易于使用的平台。由于数�
 | 标记缺失的计算机。 | 在输出工作表上高亮显示之前运行中存在但当前扫描中未找到的计算机。 |
 | 将结果通过电子邮件发送给其他人，并保持结果的可移植性。 | 脚本将输出写入 Excel 工作表，该工作表可以通过电子邮件发送给其他人或复制到单独的工作簿中。 |
 | 能够灵活地格式化结果。 | 脚本提供基本格式化功能，脚本用户可以使用任何 Excel 格式化工具来格式化输出工作表。由于输出工作表是重复使用的，后续运行会保留之前运行的格式。 |
-```
-
-
 
 此脚本使用的函数和子程序如下：
 
 **DumpComputers：** 主程序的起点。
 
-- 从*Setup*工作表中读取脚本输入参数。
+- 从 Setup 工作表中读取脚本输入参数。
 - 如果输出工作表尚不存在，则创建新的输出工作表。
-- 构建ADSI查询以从AD返回计算机。
-- 遍历ADSI查询结果，查找重复计算机、缺失计算机和新添加的计算机。
+- 构建 ADSI 查询以从 AD 返回计算机。
+- 遍历 ADSI 查询结果，查找重复计算机、缺失计算机和新添加的计算机。
 - 使用新找到的和更新的数据更新输出工作表。
 
-**LoadComputerList：** 从先前的输出工作表构建aComputers数组。
+**LoadComputerList：** 从先前的输出工作表构建 `aComputers` 数组。
 
 - 遍历指定的输出工作表，查找先前的计算机。
-- 使用新找到的数据构建aComputers数组。
+- 使用新找到的数据构建 `aComputers` 数组。
 - 在遍历输出工作表时标记找到的任何重复计算机。
 
-**QueryDS：** 执行ADSI查询。
+**QueryDS：** 执行 ADSI 查询。
 
-- 从提供的CommandText执行ADSI查询。
+- 从提供的 `CommandText` 执行 ADSI 查询。
 
 **FindPrevious：** 查找先前的匹配项。
 
-- 给定计算机名和域，在aComputer数组中查找任何先前的计算机和域匹配项。
+- 给定计算机名和域，在 `aComputer` 数组中查找任何先前的计算机和域匹配项。
 
-**MarkMissingComputers：** 标记在AD中找不到的计算机。
+**MarkMissingComputers：** 标记在 AD 中找不到的计算机。
 
-- 当输出工作表上的计算机在AD中找到（如从先前运行）或新添加到输出工作表时，aComputer(n).Exists属性（自定义数据类型）会更新。此脚本遍历aComputer数组并标记所有aComputer(n).Exists为False的计算机（表示ADSI查询未找到该计算机）。
+- 当输出工作表上的计算机在 AD 中找到（如从先前运行）或新添加到输出工作表时，`aComputer(n).Exists` 属性（自定义数据类型）会更新。此脚本遍历 `aComputer` 数组并标记所有 `aComputer(n).Exists` 为 `False` 的计算机（表示 ADSI 查询未找到该计算机）。
 
 **PreFormatTable：** 格式化新创建的输出工作表。
 
@@ -6373,86 +6868,82 @@ Microsoft Excel 为此类脚本提供了一个易于使用的平台。由于数�
 **FormatComputerMissing：** 格式化缺失计算机的行。
 
 - 将缺失计算机的行变为红色并添加删除线。
-- 将状态更新为*Missing*。
-
-Foundation: A Directory Computer-Dump Tool
+- 将状态更新为 Missing。
 
 **FormatComputerDuplicate：** 格式化重复计算机的行。
 
 - 将重复计算机的行变为蓝色并设为斜体。
-- 将状态更新为Duplicate on Row: n。
+- 将状态更新为 `Duplicate on Row: n`。
 
 **FormatComputerAdded：** 格式化新添加计算机的行。
 
 - 将新添加计算机的行变为青色。
-- 将状态更新为Newly Added。
+- 将状态更新为 Newly Added。
 
 **FormatClear：** 清除行的格式。
 
 - 关闭先前的粗体、斜体或删除线格式。
 - 将颜色设置为黑色。
-- 将状态更新为Active。
+- 将状态更新为 Active。
 
 ### 分发和安装
 
-要分发在Microsoft Office应用程序中创建的脚本，请共享或电子邮件发送包含脚本的文档。但是请记住，如果您使用Office应用程序提供的技术之外的技术（如ADSI、WMI或WSH），则必须注意在需要时更新收件人计算机上的这些技术。此做法与分发使用cscript.exe或wscript.exe的脚本没有什么不同。
+要分发在 Microsoft Office 应用程序中创建的脚本，请共享或电子邮件发送包含脚本的文档。但是请记住，如果您使用 Office 应用程序提供的技术之外的技术（如 ADSI、WMI 或 WSH），则必须注意在需要时更新收件人计算机上的这些技术。此做法与分发使用 `cscript.exe` 或 `wscript.exe` 的脚本没有什么不同。
 
-此脚本的安装包括两部分：配置Excel以识别脚本中使用的引用，然后打开并配置名为Setup的工作表上列出的脚本启动参数。
+此脚本的安装包括两部分：配置 Excel 以识别脚本中使用的引用，然后打开并配置名为 Setup 的工作表上列出的脚本启动参数。
 
 ### 指定引用
 
-开发环境和脚本解释器可能以不同方式访问对象库。例如，WSH使用new ActiveXObject或CreateObject语法提供对任何已注册对象的访问。使用Excel或其他Microsoft Office应用程序时，您可以像WSH中一样实例化新对象。还可以通过将其库添加到引用列表来使对象可用。当库作为引用添加到Office文档时，它提供对该库中包含的所有对象、方法和属性的访问，并允许Office直接使用这些对象（即，您可以将变量声明为该类型的对象）。例如，此脚本使用ADODB对象执行ADSI查询。在之前的脚本中，我们使用如下代码实例化新的ADODB连接对象：
+开发环境和脚本解释器可能以不同方式访问对象库。例如，WSH 使用 `new ActiveXObject` 或 `CreateObject` 语法提供对任何已注册对象的访问。使用 Excel 或其他 Microsoft Office 应用程序时，您可以像 WSH 中一样实例化新对象。还可以通过将其库添加到引用列表来使对象可用。当库作为引用添加到 Office 文档时，它提供对该库中包含的所有对象、方法和属性的访问，并允许 Office 直接使用这些对象（即，您可以将变量声明为该类型的对象）。例如，此脚本使用 ADODB 对象执行 ADSI 查询。在之前的脚本中，我们使用如下代码实例化新的 ADODB 连接对象：
 
 ```
 Set objConnection = CreateObject("ADODB.Connection").
 ```
 
-通过将ADODB库添加为引用，我们可以在代码中声明新的连接对象，如下所示：
+通过将 ADODB 库添加为引用，我们可以在代码中声明新的连接对象，如下所示：
 
 ```
 Dim objConnection As new ADODB.Connection.
 ```
 
-当以这种方式声明变量时，Excel支持语法完成，并且您需要设置对对象库的引用。这意味着，如果您开始使用先前定义的变量——如前面的示例中，如果我们输入objConnection.——那么在句点之后，Excel将提供Connection对象可用的所有不同方法和属性的列表。此功能提供了一种方便且有用的方法来记住可能的方法和属性。
+当以这种方式声明变量时，Excel 支持语法完成，并且您需要设置对对象库的引用。这意味着，如果您开始使用先前定义的变量——如前面的示例中，如果我们输入 `objConnection.`——那么在句点之后，Excel 将提供 `Connection` 对象可用的所有不同方法和属性的列表。此功能提供了一种方便且有用的方法来记住可能的方法和属性。
 
-但是，当您在其他计算机上运行此代码时，必须确保目标计算机上存在适当的引用。如果没有引用，您将收到错误消息：*Compile error:verbose Can't find project or library*。要检查缺失和可用的引用，首先加载包含脚本的Excel文档，然后按Alt-F11进入Visual Basic编辑器。接下来，从菜单Tools中选择References。您会看到所有已选引用的列表以及可能缺失的引用，如图8.1所示。请注意，在此图中，对*Microsoft ActiveX Data Objects 2.7 Library*的突出显示引用是缺失的，因为脚本是在Microsoft Excel 2003中创建的，并添加了ADO 2.7的引用。该图是在运行Microsoft Excel 2000的计算机上拍摄的，而ADO 2.7在此较旧的系统上不可用。修复此问题很简单；只需取消选中缺失的引用，然后选择替代品。在本例中，我们首先取消选择*Microsoft ActiveX Data Objects 2.7 library*。接下来，我们将可用引用列表滚动到Ms，直到找到*Microsoft ActiveX Data Objects 2.1 Library*，然后选择它以使其可用。选择较旧的库时要小心，因为脚本中使用的任何对象、方法或属性必须与较旧版本兼容——否则您必须将包含较新库的DLL添加到系统中（或升级Office）。此脚本使用早期库中可用的基本ADO命令，因此降级到2.1是可以的。
+但是，当您在其他计算机上运行此代码时，必须确保目标计算机上存在适当的引用。如果没有引用，您将收到错误消息：Compile error: Can't find project or library。要检查缺失和可用的引用，首先加载包含脚本的 Excel 文档，然后按 Alt-F11 进入 Visual Basic 编辑器。接下来，从菜单 Tools 中选择 References。您会看到所有已选引用的列表以及可能缺失的引用，如图 8.1 所示。请注意，在此图中，对 Microsoft ActiveX Data Objects 2.7 Library 的突出显示引用是缺失的，因为脚本是在 Microsoft Excel 2003 中创建的，并添加了 ADO 2.7 的引用。该图是在运行 Microsoft Excel 2000 的计算机上拍摄的，而 ADO 2.7 在此较旧的系统上不可用。修复此问题很简单；只需取消选中缺失的引用，然后选择替代品。在本例中，我们首先取消选择 Microsoft ActiveX Data Objects 2.7 library。接下来，我们将可用引用列表滚动到 Ms，直到找到 Microsoft ActiveX Data Objects 2.1 Library，然后选择它以使其可用。选择较旧的库时要小心，因为脚本中使用的任何对象、方法或属性必须与较旧版本兼容——否则您必须将包含较新库的 DLL 添加到系统中（或升级 Office）。此脚本使用早期库中可用的基本 ADO 命令，因此降级到 2.1 是可以的。
 
-> 为了避免从一开始就出现的向后兼容性问题，如果我们知道要在运行Office 2000的计算机上部署此脚本，我们可以在Excel 2003中选择ADO 2.1库。
+> 为了避免从一开始就出现的向后兼容性问题，如果我们知道要在运行 Office 2000 的计算机上部署此脚本，我们可以在 Excel 2003 中选择 ADO 2.1 库。
 
-### 配置Setup工作表
+### 配置 Setup 工作表
 
-在setup工作表上，指定要枚举的域名以及输出工作表的名称。
+在 setup 工作表上，指定要枚举的域名以及输出工作表的名称。
 
 ![](img/eafd0e1632fc08452cf4d68dbe912652_276_0.png)
 
-**图 8.1** Visual Basic编辑器引用对话框允许您指定要公开和使用的对象库，以便在Excel VBA脚本中使用。
+**图 8.1** Visual Basic 编辑器引用对话框允许您指定要公开和使用的对象库，以便在 Excel VBA 脚本中使用。
 
-# 输出
+## 输出
 
-脚本在*setup*工作表中指定的输出工作表上列出所选域中的所有计算机。如果输出工作表尚不存在，脚本将创建新的输出工作表；否则，它将数据附加到先前的运行。
+脚本在 setup 工作表中指定的输出工作表上列出所选域中的所有计算机。如果输出工作表尚不存在，脚本将创建新的输出工作表；否则，它将数据附加到先前的运行。
 
-脚本的主要目的是在指定域中搜索新计算机并将其记录到指定的输出工作表。此外，如果从先前运行记录的计算机从AD中删除，则脚本的后续运行会将这些计算机标记为缺失。表8.2列出了按列记录在输出工作表上的数据。在VBA中，您可以通过其字母数字地址（如A1）或其数字地址（如Cells(1,1)）引用Excel单元格。通过将行和列引用作为其数值来引用，可以更容易地遍历循环。
+脚本的主要目的是在指定域中搜索新计算机并将其记录到指定的输出工作表。此外，如果从先前运行记录的计算机从 AD 中删除，则脚本的后续运行会将这些计算机标记为缺失。表 8.2 列出了按列记录在输出工作表上的数据。在 VBA 中，您可以通过其字母数字地址（如 A1）或其数字地址（如 `Cells(1,1)`）引用 Excel 单元格。通过将行和列引用作为其数值来引用，可以更容易地遍历循环。
 
 ### 表 8.2 脚本在输出工作表上记录的数据
 
 | 列 | 列，索引 | 显示的数据 |
 |--------|-------------|----------------|
 | A | 1 | 将在将来的脚本中使用——用作标识行以供其他脚本将来处理的信号。 |
-| B | 2 | 计算机名称——ADSI名称属性。 |
+| B | 2 | 计算机名称——ADSI 名称属性。 |
 | C | 3 | 状态——列出系统在上次运行时的状态，包括：新添加、活动、重复或缺失。 |
-| C | 4 | 脚本发现系统的日期（当系统是新添加时）。 |
+| D | 4 | 脚本发现系统的日期（当系统是新添加时）。 |
 | E | 5 | 域名。 |
-| F | 6 | ADsPath——计算机的ADSI ADsPath属性。 |
+| F | 6 | `ADsPath`——计算机的 ADSI `ADsPath` 属性。 |
 
-列A将由将来的脚本使用，以表示要处理的具体计算机。列B列出计算机的名称，列C列出计算机在上次脚本运行时的状态（例如，新添加、活动、缺失）。在上次运行期间添加的计算机标记为*Newly Added*。脚本将先前运行记录的计算机标记为*Active*。在电子表格上列出但在AD中找不到的计算机标记为*Missing*，在输出工作表上列出多次的计算机标记为*Duplicates*状态，包括重复条目的行号。列D列出脚本记录计算机为新添加的日期。列E列出域，列F列出计算机的`ADsPath`。
+列 A 将由将来的脚本使用，以表示要处理的具体计算机。列 B 列出计算机的名称，列 C 列出计算机在上次脚本运行时的状态（例如，新添加、活动、缺失）。在上次运行期间添加的计算机标记为 Newly Added。脚本将先前运行记录的计算机标记为 Active。在电子表格上列出但在 AD 中找不到的计算机标记为 Missing，在输出工作表上列出多次的计算机标记为 Duplicates 状态，包括重复条目的行号。列 D 列出脚本记录计算机为新添加的日期。列 E 列出域，列 F 列出计算机的 `ADsPath`。
 
-图8.2显示了来自示例脚本运行的输出工作表，标识了活动、缺失、新添加和重复的计算机。在此示例中，脚本已运行两次。第一次运行生成了第6行至第17行中看到的列表。在第二次运行之前，删除了第12行和第14行中的计算机（*workstn006*和*workstn008*）。此外，第15行中的计算机（*workstn009*）被复制到第17行，第二次脚本运行将其标记为重复。第18行至第21行中的计算机在第一次运行后、第二次运行前添加到AD。如您所见，每周运行此脚本——即使没有其他功能或计算机扫描——也可以让您清楚了解AD中来来往往的情况。
-
-
+图 8.2 显示了来自示例脚本运行的输出工作表，标识了活动、缺失、新添加和重复的计算机。在此示例中，脚本已运行两次。第一次运行生成了第 6 行至第 17 行中看到的列表。在第二次运行之前，删除了第 12 行和第 14 行中的计算机（`workstn006` 和 `workstn008`）。此外，第 15 行中的计算机（`workstn009`）被复制到第 17 行，第二次脚本运行将其标记为重复。第 18 行至第 21 行中的计算机在第一次运行后、第二次运行前添加到 AD。如您所见，每周运行此脚本——即使没有其他功能或计算机扫描——也可以让您清楚了解 AD 中来来往往的情况。
 
 **图 8.2** 一个示例输出工作表，显示了活跃、缺失、新添加和重复的计算机。
 
-# 解决方案总结
+## 解决方案总结
 
 本章介绍的脚本为本书后续脚本奠定了基础。本质上，该脚本会扫描一个域，并在特定工作表上列出所有计算机对象。不过，计算机扫描是非破坏性的，新计算机会被追加到上次运行生成的列表中。通过这种方式，未来的脚本可以利用这些信息，并实际使用输出工作表来添加包含脚本特定数据的新列。
 
@@ -6465,7 +6956,7 @@ Dim objConnection As new ADODB.Connection.
 
 通过这些步骤，你可以在单个 Excel 文档中生成并维护计算机列表及未来数据。
 
-# 目标
+## 目标
 
 此脚本的目的是提供一个基于 Excel 的工具，用于添加和显示指定域的计算机成员。该脚本使用以下对象：
 
@@ -6495,7 +6986,7 @@ Dim objConnection As new ADODB.Connection.
 - **User Data Types**
   - Using Type to declare user-defined data types
 
-# 脚本
+## 脚本
 
 该脚本包含在一个 Excel 文档的 VBA 模块中。将 Excel 文档视为一个记事本，你在其中持久记录脚本的输入参数以及脚本输出。分配给宏的快捷键或工作表上的 Visual Basic 可点击按钮会启动你的脚本。（将宏视为你可以编写的任何子例程。）使用 VBA 的第一步是启动 Excel 并打开包含脚本的文档。
 
@@ -6503,7 +6994,7 @@ Dim objConnection As new ADODB.Connection.
 
 ### 设置宏安全性
 
-Microsoft 将 Excel 中的 VBA 脚本称为宏。当你加载包含 VBA 脚本或代码的文档时，根据你的宏安全设置，系统可能会提示你是否要启用或禁用宏来加载文档，如图 8.3 所示。（你必须启用宏才能运行此脚本——或 Excel 中的任何脚本。）要查看你的宏安全设置，请选择“工具”、“宏”、“安全性”。在此屏幕中，你可以选择设置高、中或低安全级别，如图 8.4 所示。中等安全性提供了良好的平衡，在此设置下，每当你打开包含宏（或 VBA 代码模块）的文档时，Excel 都会提示你。
+Microsoft 将 Excel 中的 VBA 脚本称为宏。当你加载包含 VBA 脚本或代码的文档时，根据你的宏安全设置，系统可能会提示你是否要启用或禁用宏来加载文档，如图 8.3 所示。（你必须启用宏才能运行此脚本——或 Excel 中的任何脚本。）要查看你的宏安全设置，请选择"工具"、"宏"、"安全性"。在此屏幕中，你可以选择设置高、中或低安全级别，如图 8.4 所示。中等安全性提供了良好的平衡，在此设置下，每当你打开包含宏（或 VBA 代码模块）的文档时，Excel 都会提示你。
 
 ![](img/eafd0e1632fc08452cf4d68dbe912652_280_0.png)
 
@@ -6515,11 +7006,9 @@ Microsoft 将 Excel 中的 VBA 脚本称为宏。当你加载包含 VBA 脚本�
 
 ### 脚本架构
 
-此脚本的框架由 VBA 代码和两个工作表组成。第一个名为 *setup* 的工作表包含脚本操作参数，如图 8.5 所示。这个简单的工作表包含用于处理脚本的参数——就像我们用来控制控制台脚本执行的命令行参数一样。在此工作表上，指定域的名称以及输出数据将写入的工作表的名称。当你准备好运行脚本时，单击 Visual Basic 按钮 *1. Pull Computers from Directory*，该按钮会执行一个调用脚本的过程。
+此脚本的框架由 VBA 代码和两个工作表组成。第一个名为 setup 的工作表包含脚本操作参数，如图 8.5 所示。这个简单的工作表包含用于处理脚本的参数——就像我们用来控制控制台脚本执行的命令行参数一样。在此工作表上，指定域的名称以及输出数据将写入的工作表的名称。当你准备好运行脚本时，单击 Visual Basic 按钮 1. Pull Computers from Directory，该按钮会执行一个调用脚本的过程。
 
-脚本使用的第二个工作表存储脚本输出，你在 *setup* 工作表上将其命名为输出工作表。在此示例中，输出工作表恰当地命名为 *output*，脚本生成的运行示例如图 8.6 所示。能够为输出工作表指定任何名称的一个优点是，你可以创建多次脚本运行（例如，为环境中的每个域运行一次），并将其存储在不同的工作表中。
-
-## 基础：目录计算机转储工具
+脚本使用的第二个工作表存储脚本输出，你在 setup 工作表上将其命名为输出工作表。在此示例中，输出工作表恰当地命名为 output，脚本生成的运行示例如图 8.6 所示。能够为输出工作表指定任何名称的一个优点是，你可以创建多次脚本运行（例如，为环境中的每个域运行一次），并将其存储在不同的工作表中。
 
 ![](img/eafd0e1632fc08452cf4d68dbe912652_282_0.png)
 
@@ -6527,13 +7016,13 @@ Microsoft 将 Excel 中的 VBA 脚本称为宏。当你加载包含 VBA 脚本�
 
 ![](img/eafd0e1632fc08452cf4d68dbe912652_282_1.png)
 
-**图 8.6** 脚本将数据写入 Setup 工作表上指定的输出工作表——在本例中，数据被写入名为 *output* 的工作表。
+**图 8.6** 脚本将数据写入 Setup 工作表上指定的输出工作表——在本例中，数据被写入名为 output 的工作表。
 
 该脚本支持随时间推移进行多次、后续运行，并捕获新添加的计算机和重复的计算机条目，同时标记那些在 AD 中已无法找到的计算机。通过这种方式，你可以管理 AD 中所有计算机的运行清单和历史记录。真正的优势在于能够扩展此脚本，作为未来可能针对此电子表格中存储的部分或全部计算机运行的脚本的基础。
 
 ### 如何在 Excel 中找到代码
 
-Excel 中的脚本可以存放在多个位置，但都可以通过 Visual Basic 编辑器访问。首先，从随附的 CD-ROM 加载文档 *Dump Computer List.xls*，然后通过选择“工具”、“宏”、“Visual Basic 编辑器”（或按快捷键 Alt-F11）访问 Visual Basic 编辑器，你将看到如图 8.7 所示的屏幕。注意位于屏幕左侧的工程资源管理器。（如果它不在那里，请使用“视图”、“工程资源管理器”激活它。）注意 VBA 工程（*ComputerList.xls*），其下有两个节点：*Microsoft Excel 对象* 和 *模块*。展开 Microsoft Excel 对象节点，你会看到两个工作表和工作簿的名称。双击名为 *Setup* 的工作表。在主要代码菜单中，你会看到一个名为 `CommandButton1_Click()` 的私有子例程调用。其中只有一行代码：
+Excel 中的脚本可以存放在多个位置，但都可以通过 Visual Basic 编辑器访问。首先，从随附的 CD-ROM 加载文档 Dump Computer List.xls，然后通过选择"工具"、"宏"、"Visual Basic 编辑器"（或按快捷键 Alt-F11）访问 Visual Basic 编辑器，你将看到如图 8.7 所示的屏幕。注意位于屏幕左侧的工程资源管理器。（如果它不在那里，请使用"视图"、"工程资源管理器"激活它。）注意 VBA 工程（ComputerList.xls），其下有两个节点：Microsoft Excel 对象 和 模块。展开 Microsoft Excel 对象节点，你会看到两个工作表和工作簿的名称。双击名为 Setup 的工作表。在主要代码菜单中，你会看到一个名为 `CommandButton1_Click()` 的私有子例程调用。其中只有一行代码：
 
 ```
 Call DumpComputers
@@ -6543,117 +7032,145 @@ Call DumpComputers
 
 **图 8.7** Visual Basic 编辑器为 Microsoft Office 应用程序提供了强大的开发环境。
 
-你所看到的是一个子例程，它定义了与 *Setup* 工作表上 `CommandButton1` 对象的单击事件关联的操作。当此事件发生时（即当单击按钮 `CommandButton1` 时），名为 `CommandButton1_Click` 的子例程会运行，并调用名为 `DumpComputers` 的子例程，这是执行实际工作的主脚本的实际名称。此按钮和单击事件代码提供了启动此脚本的入口点。（在 Excel 中启动脚本的另一种方法是使用“工具”、“宏”，但添加一个用户可以单击的按钮是启动脚本的一种更用户友好的方式。）但函数 `CommandButton1_Click` 如何与按钮关联呢？让我们现在来看看。
+你所看到的是一个子例程，它定义了与 Setup 工作表上 `CommandButton1` 对象的单击事件关联的操作。当此事件发生时（即当单击按钮 `CommandButton1` 时），名为 `CommandButton1_Click` 的子例程会运行，并调用名为 `DumpComputers` 的子例程，这是执行实际工作的主脚本的实际名称。此按钮和单击事件代码提供了启动此脚本的入口点。（在 Excel 中启动脚本的另一种方法是使用"工具"、"宏"，但添加一个用户可以单击的按钮是启动脚本的一种更用户友好的方式。）但函数 `CommandButton1_Click` 如何与按钮关联呢？让我们现在来看看。
 
-切换回 Excel 应用程序，单击（激活）*Setup* 工作表。除了一些基本的脚本配置文本外，还有一个名为 *1. Pull computers from Directory* 的大按钮。我们看到与 `CommandButton1_Click` 关联的代码告诉 Excel 当你单击 *Setup* 工作表上的按钮时该做什么。但是，如果你右键单击该按钮，则不会出现菜单，你也无法访问按钮的属性。你必须首先进入 Visual Basic 设计模式。从 Visual Basic 菜单（如果没有此菜单，请右键单击菜单栏以列出所有可用菜单并打开名为 Visual Basic 的菜单），单击“设计模式”按钮以激活设计模式，如图 8.8 所示。现在右键单击我们的大按钮并选择“属性”以显示按钮的所有属性。在这里，你可以更改按钮的标题（显示内容）、名称以及其他属性，如大小和颜色。要更改与单击它关联的操作，请关闭属性对话框并再次右键单击该按钮。这次，单击“查看代码”。注意，我们正在查看的是我们刚才查看的 `CommandButton1_Click` 的相同代码。但我们如何创建一个新的按钮或 Visual Basic 控件呢？这同样相当简单。
+切换回 Excel 应用程序，单击（激活）Setup 工作表。除了一些基本的脚本配置文本外，还有一个名为 1. Pull computers from Directory 的大按钮。我们看到与 `CommandButton1_Click` 关联的代码告诉 Excel 当你单击 Setup 工作表上的按钮时该做什么。但是，如果你右键单击该按钮，则不会出现菜单，你也无法访问按钮的属性。你必须首先进入 Visual Basic 设计模式。从 Visual Basic 菜单（如果没有此菜单，请右键单击菜单栏以列出所有可用菜单并打开名为 Visual Basic 的菜单），单击"设计模式"按钮以激活设计模式，如图 8.8 所示。现在右键单击我们的大按钮并选择"属性"以显示按钮的所有属性。在这里，你可以更改按钮的标题（显示内容）、名称以及其他属性，如大小和颜色。要更改与单击它关联的操作，请关闭属性对话框并再次右键单击该按钮。这次，单击"查看代码"。注意，我们正在查看的是我们刚才查看的 `CommandButton1_Click` 的相同代码。但我们如何创建一个新的按钮或 Visual Basic 控件呢？这同样相当简单。
 
 ![](img/eafd0e1632fc08452cf4d68dbe912652_284_0.png)
 
 **图 8.8** Microsoft Excel 中的设计模式允许你编辑 Visual Basic 控件。
 
-返回到*Setup*工作表，这次启用控件工具箱（与之前一样，右键单击菜单栏并启用菜单项Control Toolbox），如图8.9所示。此菜单为您提供了一个工具面板，您可以将工具拖放到工作表上。选择CommandButton（命令按钮），然后在*Setup*工作表上拖出一个轮廓，确定新按钮的位置。释放鼠标按钮时，请注意按钮已创建，并命名为类似`CommandButtonn`的名称。您应该仍处于之前的Design（设计）模式，因此可以右键单击此新按钮，并点击Properties（属性）或View Code（查看代码）来编辑其行为。如果您查看此新按钮的代码窗口，会看到一个名为`CommandButtonn_click`的新的子过程已创建，并且代码编辑器已将光标置于代码块内的位置。您在此处放置的任何代码都将在该按钮被点击时激活。
+返回到 Setup 工作表，这次启用控件工具箱（与之前一样，右键单击菜单栏并启用菜单项 Control Toolbox），如图 8.9 所示。此菜单为您提供了一个工具面板，您可以将工具拖放到工作表上。选择 CommandButton（命令按钮），然后在 Setup 工作表上拖出一个轮廓，确定新按钮的位置。释放鼠标按钮时，请注意按钮已创建，并命名为类似 `CommandButtonn` 的名称。您应该仍处于之前的 Design（设计）模式，因此可以右键单击此新按钮，并点击 Properties（属性）或 View Code（查看代码）来编辑其行为。如果您查看此新按钮的代码窗口，会看到一个名为 `CommandButtonn_click` 的新的子过程已创建，并且代码编辑器已将光标置于代码块内的位置。您在此处放置的任何代码都将在该按钮被点击时激活。
 
-![图8.9：控件工具箱提供对按钮和复选框等控件的访问，您可以将其添加到Excel文档中并通过脚本进行控制。](img/eafd0e1632fc08452cf4d68dbe912652_285_0.png)
+![](img/eafd0e1632fc08452cf4d68dbe912652_285_0.png)
 
-**图 8.9** 控件工具箱提供对按钮和复选框等控件的访问，您可以将其添加到Excel文档中并通过脚本进行控制。
+**图 8.9** 控件工具箱提供对按钮和复选框等控件的访问，您可以将其添加到 Excel 文档中并通过脚本进行控制。
 
-*Dump Computer List.xls*文档中的主脚本就是通过这种方式启动的。主按钮的click事件通过一个简单的call语句调用`DumpComputers`子过程，如下所示：
+Dump Computer List.xls 文档中的主脚本就是通过这种方式启动的。主按钮的 click 事件通过一个简单的 call 语句调用 `DumpComputers` 子过程，如下所示：
 
 ```
 Call DumpComputers()
 ```
 
-接下来，我们来看一下`DumpComputers`，即脚本的主要代码。与特定工作表或Excel对象无关的独立代码可以存储在模块中。在Visual Basic编辑器的项目资源管理器中，展开Microsoft Excel Objects节点下的Modules节点。双击DumpComputerList图标。（此模块已被重命名——当您从新工作簿开始时，第一个模块名为*Module1*。）在代码窗口中，您可以看到构成*DumpComputerList*脚本的所有代码。与之前的脚本一样，此代码以线性方式呈现，从一个主子过程（我们称之为程序主体）DumpComputers调用到其他子过程和函数。但首先，让我们看看模块级别的代码——不属于任何其他子过程或函数的代码。
+接下来，我们来看一下 `DumpComputers`，即脚本的主要代码。与特定工作表或 Excel 对象无关的独立代码可以存储在模块中。在 Visual Basic 编辑器的项目资源管理器中，展开 Microsoft Excel Objects 节点下的 Modules 节点。双击 DumpComputerList 图标。（此模块已被重命名——当您从新工作簿开始时，第一个模块名为 Module1。）在代码窗口中，您可以看到构成 DumpComputerList 脚本的所有代码。与之前的脚本一样，此代码以线性方式呈现，从一个主子过程（我们称之为程序主体）`DumpComputers` 调用到其他子过程和函数。但首先，让我们看看模块级别的代码——不属于任何其他子过程或函数的代码。
 
 ### 模块级代码
 
-模块级代码提供在特定VBA项目中所有代码都可用的定义和指令。我们的脚本在模块级别定义了选项、类型定义和公共常量。
+模块级代码提供在特定 VBA 项目中所有代码都可用的定义和指令。我们的脚本在模块级别定义了选项、类型定义和公共常量。
 
-`Option`关键字定义了脚本的特定操作参数，并支持四个语句。`Option Base`声明数组下标的下界——0或1。与JScript类似，VBA中的数组默认是基于零的。但是，声明`Option Base 1`后，您可以将基数设置为1，尽管通常坚持使用公认的基于零的数组标准会更有益。
+`Option` 关键字定义了脚本的特定操作参数，并支持四个语句。`Option Base` 声明数组下标的下界——0 或 1。与 JScript 类似，VBA 中的数组默认是基于零的。但是，声明 `Option Base 1` 后，您可以将基数设置为 1，尽管通常坚持使用公认的基于零的数组标准会更有益。
 
-`Option Compare [method]`将脚本中方法的默认比较方法设置为`Text`、`Binary`或`Database`。例如，此脚本使用`StrComp`方法比较两个字符串。由于此方法识别`Option Compare`设置，脚本只需在开头使用`Option Compare Text`语句设置一次，而不是在每次`StrComp`中设置为`Text`。
+`Option Compare [method]` 将脚本中方法的默认比较方法设置为 `Text`、`Binary` 或 `Database`。例如，此脚本使用 `StrComp` 方法比较两个字符串。由于此方法识别 `Option Compare` 设置，脚本只需在开头使用 `Option Compare Text` 语句设置一次，而不是在每次 `StrComp` 中设置为 `Text`。
 
-当设置`Option Explicit`时，所有变量都必须声明（例如，使用`Dim`语句），否则编译器会抛出错误。此语句有助于排查可能的变量拼写错误，并鼓励开发者更深入地思考所使用的变量。
+当设置 `Option Explicit` 时，所有变量都必须声明（例如，使用 `Dim` 语句），否则编译器会抛出错误。此语句有助于排查可能的变量拼写错误，并鼓励开发者更深入地思考所使用的变量。
 
-最后，语句`Option Private Module`可防止外部项目访问为其设置的项目内的公共数据。
+最后，语句 `Option Private Module` 可防止外部项目访问为其设置的项目内的公共数据。
 
-VBA的`Type`语句允许创建自定义的用户定义数据类型，类似于在JScript中创建对象或在C语言中创建结构体。用户定义的数据类型包含一个或多个元素。（您可以将新数据类型想象为类似于具有一种或多种属性的JScript对象。）在下面的代码中，我们创建了一个名为`ComputerData`的新数据类型，包含五个元素：`Name`、`Row`、`Domain`、`Exists`和`ADsPath`。用户定义的数据类型可以定义为数组，并且其元素的访问方式类似于JScript对象中的属性。（例如，如果`aComputer()`被定义为`ComputerData`类型的数组，那么`aComputer(5).Name`将返回`aComputer`数组第五个元素的名称。）
+VBA 的 `Type` 语句允许创建自定义的用户定义数据类型，类似于在 JScript 中创建对象或在 C 语言中创建结构体。用户定义的数据类型包含一个或多个元素。（您可以将新数据类型想象为类似于具有一种或多种属性的 JScript 对象。）在下面的代码中，我们创建了一个名为 `ComputerData` 的新数据类型，包含五个元素：`Name`、`Row`、`Domain`、`Exists` 和 `ADsPath`。用户定义的数据类型可以定义为数组，并且其元素的访问方式类似于 JScript 对象中的属性。（例如，如果 `aComputer()` 被定义为 `ComputerData` 类型的数组，那么 `aComputer(5).Name` 将返回 `aComputer` 数组第五个元素的名称。）
 
 ```
 Option Explicit
+
 Option Compare Text
 
 Type ComputerData
+
     Name As String
+
     Row As Integer
+
     Domain As String
+
     Exists As Integer
+
     ADsPath As String
+
 End Type
 ```
 
-脚本使用常量来定义输出工作表的列值。将这些值引用为常量可提高脚本的可读性，并且意味着您只需在一处更新定义。声明常量为Public可使其在VBA项目中的所有模块中可见。
+脚本使用常量来定义输出工作表的列值。将这些值引用为常量可提高脚本的可读性，并且意味着您只需在一处更新定义。声明常量为 Public 可使其在 VBA 项目中的所有模块中可见。
 
 ```
 Public Const COL_NAME = 2
+
 Public Const COL_STATUS = 3
+
 Public Const COL_DATE = 4
+
 Public Const COL_DOMAIN = 5
+
 Public Const COL_ADSPATH = 6
+
 Public Const COL_OPTION1 = 7
+
 Public Const COL_OPTION2 = 8
 ```
 
 ### DumpComputers
 
-DumpComputers子过程查询AD以获取指定域中的所有计算机，然后将结果输出到用户指定的输出工作表。作为一个子过程，DumpComputers不返回任何值，并且不能在表达式中使用（与函数不同）。
+`DumpComputers` 子过程查询 AD 以获取指定域中的所有计算机，然后将结果输出到用户指定的输出工作表。作为一个子过程，`DumpComputers` 不返回任何值，并且不能在表达式中使用（与函数不同）。
 
-脚本的主要数据存储在定义为用户数据类型ComputerData的数组中。数组aComputer存储从AD和脚本的先前运行中提取的所有计算机信息。
+脚本的主要数据存储在定义为用户数据类型 `ComputerData` 的数组中。数组 `aComputer` 存储从 AD 和脚本的先前运行中提取的所有计算机信息。
 
-由于我们已在Excel中包含了对ADO的显式引用，我们可以在对象的声明部分实例化一个新的ADODB对象。代码`Dim objRecordset As ADODB.Recordset`实例化了一个新对象`objRecordset`，它代表ADODB Recordset对象。脚本将脚本中使用的两个工作表表示为对象`objWsSetup`和`objWsOutput`。这些对象被实例化，并分别指向Setup工作表和在Setup工作表中由用户命名的输出工作表。
+由于我们已在 Excel 中包含了对 ADO 的显式引用，我们可以在对象的声明部分实例化一个新的 ADODB 对象。代码 `Dim objRecordset As ADODB.Recordset` 实例化了一个新对象 `objRecordset`，它代表 ADODB Recordset 对象。脚本将脚本中使用的两个工作表表示为对象 `objWsSetup` 和 `objWsOutput`。这些对象被实例化，并分别指向 Setup 工作表和在 Setup 工作表中由用户命名的输出工作表。
 
-> 您无需在Excel中运行Excel或VBA即可使用Excel对象。尽管工作表对象是Excel原生的，但它可以像任何其他对象一样从外部调用。例如，您可以创建一个cscript.exe控制台脚本，执行某些操作，然后创建一个新的Excel对象并将输出数据转储到其中。
+> 您无需在 Excel 中运行 Excel 或 VBA 即可使用 Excel 对象。尽管工作表对象是 Excel 原生的，但它可以像任何其他对象一样从外部调用。例如，您可以创建一个 `cscript.exe` 控制台脚本，执行某些操作，然后创建一个新的 Excel 对象并将输出数据转储到其中。
 
-`strCommandText`和`strDomain`分别表示用于代表ADSI查询命令和当前域的文本字符串。整数`i`、`iRowNum`和`iCount`表示子过程使用的各种计数器。
+`strCommandText` 和 `strDomain` 分别表示用于代表 ADSI 查询命令和当前域的文本字符串。整数 `i`、`iRowNum` 和 `iCount` 表示子过程使用的各种计数器。
 
 ```
 '--------------------------------------------------------------------
+
 ' 主函数: DumpComputers
+
 '--------------------------------------------------------------------
 
 Sub DumpComputers()
+
 Dim aComputer() As ComputerData
+
 Dim objRecordset As ADODB.Recordset
+
 Dim objWsSetup As Worksheet
+
 Dim objWsOutput As Worksheet
+
 Dim strWsOutput, strCommandText, strDomain As String
+
 Dim i, iRowNum, iCount As Integer
 ```
 
-与之前的脚本解析命令行参数来获取操作参数不同，此脚本使用`Cells(row,column).Value`属性从*Setup*工作表读取其操作参数。`Worksheets`对象是Excel原生的，您可以无需实例化自己的对象即可使用它（就像我们之前在WSH脚本中使用的`GetObject`方法一样）。创建或打开Excel文档会暴露这些Excel特定的对象。
+与之前的脚本解析命令行参数来获取操作参数不同，此脚本使用 `Cells(row,column).Value` 属性从 Setup 工作表读取其操作参数。`Worksheets` 对象是 Excel 原生的，您可以无需实例化自己的对象即可使用它（就像我们之前在 WSH 脚本中使用的 `GetObject` 方法一样）。创建或打开 Excel 文档会暴露这些 Excel 特定的对象。
 
 ```
 Set objWsSetup = Worksheets("Setup")
+
 strWsOutput = objWsSetup.Cells(11, 5).Value
+
 strDomain = objWsSetup.Cells(8, 5).Value
 ```
 
-脚本会检查指定的输出工作表是否存在。如果不存在，则会创建并格式化一个新的输出工作表，并根据*Setup*工作表上指定的名称为其命名。脚本支持多个输出工作表——只需更改Setup页面上的输出工作表名称并重新运行脚本即可。例如，如果您有三个域，您可以为每个域运行一次脚本。并且您可以为每个域指定输出工作表的名称为*Output-A*、*Output-B*和*Output-C*。通过这种方式，您可以在各自的工作表上分别管理所有这些域中的计算机。
+脚本会检查指定的输出工作表是否存在。如果不存在，则会创建并格式化一个新的输出工作表，并根据 Setup 工作表上指定的名称为其命名。脚本支持多个输出工作表——只需更改 Setup 页面上的输出工作表名称并重新运行脚本即可。例如，如果您有三个域，您可以为每个域运行一次脚本。并且您可以为每个域指定输出工作表的名称为 Output-A、Output-B 和 Output-C。通过这种方式，您可以在各自的工作表上分别管理所有这些域中的计算机。
 
-`On Error Resume Next`语句用于捕获在尝试设置输出工作表对象时可能生成的任何错误。脚本第一次运行时（或任何时候指定了新的输出工作表），会发生错误并将错误设置到变量`Err`。`On Error Resume Next`指示脚本在发生错误时继续处理，并跳过失败的代码。预期到此错误，脚本会立即测试`Err`是否存在。如果存在，脚本会创建新的输出工作表，将其命名为*Setup*工作表上指定的名称，并调用`PreFormatTable`子过程进行格式化。
+`On Error Resume Next` 语句用于捕获在尝试设置输出工作表对象时可能生成的任何错误。脚本第一次运行时（或任何时候指定了新的输出工作表），会发生错误并将错误设置到变量 `Err`。`On Error Resume Next` 指示脚本在发生错误时继续处理，并跳过失败的代码。预期到此错误，脚本会立即测试 `Err` 是否存在。如果存在，脚本会创建新的输出工作表，将其命名为 Setup 工作表上指定的名称，并调用 `PreFormatTable` 子过程进行格式化。
 
-
-
-用于格式化的例程。你可能还记得之前使用 Call 语句来运行子程序或函数。此语句并非必需；你可以直接调用过程。`On Error GoTo 0` 语句用于禁用错误处理。
+用于格式化的例程。你可能还记得之前使用 `Call` 语句来运行子程序或函数。此语句并非必需；你可以直接调用过程。`On Error GoTo 0` 语句用于禁用错误处理。
 
 ```
 On Error Resume Next
+
 Set objWsOutput = Worksheets(strWsOutput)
+
 If Err Then
+
     Set objWsOutput = Worksheets.Add(After:=Worksheets("Setup"))
+
     objWsOutput.Name = strWsOutput
+
     PreFormatTable
+
 End If
+
 On Error GoTo 0
 ```
 
@@ -6663,7 +7180,9 @@ On Error GoTo 0
 
 ```
 objWsOutput.Activate
+
 iRowNum = LoadComputerList(aComputer, objWsOutput)
+
 If iRowNum < 6 Then iRowNum = 6
 ```
 
@@ -6671,39 +7190,61 @@ If iRowNum < 6 Then iRowNum = 6
 
 ```
 strCommandText = "SELECT ADsPath,Name FROM 'LDAP://" & strDomain & _
+
     "' WHERE objectCategory = 'computer'"
+
 Set objRecordset = QueryDS(strCommandText)
 ```
 
 与 JScript 不同，Visual Basic 中的动态数组在使用前必须声明为一个固定值，而且没有 `length` 属性来返回数组的大小。（例如，如果你将数组声明为 `aArray(100)`，但只使用了 65 个元素，没有任何属性可以返回已使用的元素数量。）Visual Basic 确实支持 `UBound` 方法，它返回数组的上界。在前面的示例中，无论实际使用了多少元素，`UBound(aArray)` 始终返回 100。为了使用此方法，此脚本使用 `ReDim Preserve` 语句将数组重新定义为当前元素数加 1。通过这种方式，`UBound(aComputer)-1` 始终返回数组中元素的确切数量。
 
-脚本遍历 `objRecordset` 的每条记录，并调用 `Find-Previous` 函数，以检查 ADO 查询返回的计算机是否已存在于输出工作表中。如果计算机已存在，脚本不会对其进行任何操作，而是继续处理下一条记录。
+脚本遍历 `objRecordset` 的每条记录，并调用 `FindPrevious` 函数，以检查 ADO 查询返回的计算机是否已存在于输出工作表中。如果计算机已存在，脚本不会对其进行任何操作，而是继续处理下一条记录。
 
-但是，如果计算机不存在，脚本必须将其添加到输出工作表的第 `iRowNum` 行。请尽量不要将 `iRowNum` 与 `iCount` 混淆。`iRowNum` 表示新计算机的当前行号，而 `iCount` 变量表示 `aComputer` 数组中的计算机数量。添加新计算机时，脚本会递增 `iCount` 参数，并使用 `ReDim Preserve` 语句重新定义 `aComputer` 数组的大小。`Preserve` 关键字确保 `aComputer` 数组中的数据保持完整；否则，重新定义大小会清空数组。接下来，脚本将查询结果添加到 `aComputer` 数组中。计算机名称被转换为小写，并放入名为 `Name` 的用户定义数据类型 `ComputerData` 元素中。当前行号被添加到 `ComputerData Row` 元素中。脚本将 `aCompute.Exists` 设为 `True`，将 `aComputer.Domain` 设为 `strDomain`。
+但是，如果计算机不存在，脚本必须将其添加到输出工作表的第 `iRowNum` 行。请尽量不要将 `iRowNum` 与 `iCount` 混淆。`iRowNum` 表示新计算机的当前行号，而 `iCount` 变量表示 `aComputer` 数组中的计算机数量。添加新计算机时，脚本会递增 `iCount` 参数，并使用 `ReDim Preserve` 语句重新定义 `aComputer` 数组的大小。`Preserve` 关键字确保 `aComputer` 数组中的数据保持完整；否则，重新定义大小会清空数组。接下来，脚本将查询结果添加到 `aComputer` 数组中。计算机名称被转换为小写，并放入名为 `Name` 的用户定义数据类型 `ComputerData` 元素中。当前行号被添加到 `ComputerData Row` 元素中。脚本将 `aComputer.Exists` 设为 `True`，将 `aComputer.Domain` 设为 `strDomain`。
 
-更新 `aComputer` 数组后，脚本在输出工作表上记录新计算机。脚本使用 `Cells(iRowNum, specifiedcolumn)` 属性更新输出工作表，以包含新发现的计算机数据，包括其名称、日期、域和 `ADsPath`。脚本调用 `FormatComputer-Added` 子程序，将状态标注为新发现并高亮显示新增内容。脚本递增 `iRowNum` 并循环到下一条记录。
+更新 `aComputer` 数组后，脚本在输出工作表上记录新计算机。脚本使用 `Cells(iRowNum, specifiedcolumn)` 属性更新输出工作表，以包含新发现的计算机数据，包括其名称、日期、域和 `ADsPath`。脚本调用 `FormatComputerAdded` 子程序，将状态标注为新发现并高亮显示新增内容。脚本递增 `iRowNum` 并循环到下一条记录。
 
 ```
 iCount = UBound(aComputer)
+
 While Not (objRecordset.EOF)
+
     If FindPrevious(objRecordset.Fields.Item("Name").Value, _
+
         aComputer(), strDomain) = 0 Then
+
         iCount = iCount + 1
+
         ReDim Preserve aComputer(iCount)
+
         aComputer(iCount).Name = _
+
             LCase(objRecordset.Fields.Item("Name").Value)
+
         aComputer(iCount).Row = iRowNum
+
         aComputer(iCount).Exists = True
+
         aComputer(iCount).Domain = strDomain
+
         Cells(iRowNum, COL_NAME) = aComputer(iCount).Name
+
         Cells(iRowNum, COL_DATE) = FormatDateTime(Now(), vbShortDate)
+
         Cells(iRowNum, COL_DOMAIN) = strDomain
+
         Cells(iRowNum, COL_ADSPATH) = _
+
             objRecordset.Fields.Item("ADsPath").Value
+
         FormatComputerAdded iRowNum
+
         iRowNum = iRowNum + 1
+
     End If
+
     objRecordset.MoveNext
+
 Wend
 ```
 
@@ -6711,13 +7252,15 @@ Wend
 
 ```
 Cells(2, 1) = "Last Scan: " & FormatDateTime(Now(), vbShortDate)
+
 MarkMissingComputers aComputer(), strDomain
+
 PostFormatTable
 
 End Sub
 ```
 
-### **LoadComputerList**
+### LoadComputerList
 
 `LoadComputerList` 函数遍历输出工作表，解析每一行中的计算机信息，并将信息存储在 `aComputer` 数组中。脚本使用变量 `i` 作为计数器，表示当前 `aComputer` 数组的元素。变量 `strDomain` 和 `strComputer` 分别表示当前行的域和计算机名称。
 
@@ -6725,125 +7268,191 @@ End Sub
 
 ```
 '------------------------------------------------------------------
+
 ' Load Existing Computer List
+
 '------------------------------------------------------------------
+
 Function LoadComputerList(aComputer() As ComputerData, objWsOutput) _
+
   As Integer
+
   Dim i As Integer
+
   Dim strDomain, strComputer As String
+
   Dim iRowNum, iBlankLines, iDupeRow As Integer
+
   ReDim aComputer(1)
 
   i = 1
+
   iRowNum = 6
+
   iBlankLines = 0
+
   iDupeRow = 0
 ```
 
 解析函数由两个循环组成。第一个循环运行直到找到 10 个连续的空白行。第二个循环查找由输出工作表中应放置计算机名称的位置处的空单元格表示的单个空白行。如果单元格为空，则内层循环退出，`iRowNum` 和 `iBlankLines` 变量同时递增。如果 `iBlankLines` 大于 10，则外层循环退出。否则，将创建一个新的内层循环来检查新行号是否为空。
 
-假设计算机数据存在，当前行的计算机名称将*不*为空。脚本将 `iBlankLines` 重置为零，并清除之前的任何格式。脚本重置 `iBlankLines` 是因为我们查找的是连续 10 个空白行，而不是总共 10 个空白行。脚本在此循环执行期间将 `ScreenUpdating` 设为 `False`，以减少运行时间。`FormatClear` 函数设置单元格格式属性（例如关闭粗体和斜体），这会导致工作表重绘，从而显著减慢脚本运行速度。在此函数末尾，`ScreenUpdating` 会重新启用。
+假设计算机数据存在，当前行的计算机名称将不为空。脚本将 `iBlankLines` 重置为零，并清除之前的任何格式。脚本重置 `iBlankLines` 是因为我们查找的是连续 10 个空白行，而不是总共 10 个空白行。脚本在此循环执行期间将 `ScreenUpdating` 设为 `False`，以减少运行时间。`FormatClear` 函数设置单元格格式属性（例如关闭粗体和斜体），这会导致工作表重绘，从而显著减慢脚本运行速度。在此函数末尾，`ScreenUpdating` 会重新启用。
 
 要从输出工作表读取之前的数据，脚本将变量 `strComputer` 和 `strDomain` 分别设为当前行号对应 `COL_NAME` 和 `COL_DOMAIN` 列的单元格值。
 
 ```
 Application.ScreenUpdating = False
+
   While iBlankLines < 10
+
         While IsEmpty(Cells(iRowNum, COL_NAME)) = False
+
               iBlankLines = 0
+
               FormatClear iRowNum
+
               strComputer = Cells(iRowNum, COL_NAME).Value
+
               strDomain = Cells(iRowNum, COL_DOMAIN).Value
 ```
 
 获取名称和域后，脚本调用 `FindPrevious` 函数，检查在此循环中是否之前遇到过相同的计算机或域对。（注意，脚本重用了用于检查 ADO `RecordSet` 中的计算机是否与 `aComputer` 中的计算机匹配的同一个 `FindPrevious` 函数。）
 
+如果未发现重复项，函数会将 `aComputer` 数组的当前元素 (i) 加载上关于计算机对象的数据，包括名称、行号、域和 `ADsPath`。脚本递增 i 并将 `aComputer` 数组重新定义为增加一个元素。通过这种方式，`aComputer` 数组的边界得到了严格控制。处理完此计算机后，脚本递增 `iRowNum`。
 
-
-如果未发现重复项，函数会将 aComputer 数组的当前元素 (i) 加载上关于计算机对象的数据，包括名称、行号、域和 ADsPath。脚本递增 i 并将 aComputer 数组重新定义为增加一个元素。通过这种方式，aComputer 数组的边界得到了严格控制。处理完此计算机后，脚本递增 iRowNum。
-
-然而，如果新发现的计算机是之前某个计算机的重复项，脚本会将其标记为重复（包括原始计算机的行号），并调用 FormatComputerDuplicate 函数将该条目高亮显示为重复项。此条目不会被添加到 aComputer 数组中，脚本会递增 iRowNum 变量以处理下一行。
+然而，如果新发现的计算机是之前某个计算机的重复项，脚本会将其标记为重复（包括原始计算机的行号），并调用 `FormatComputerDuplicate` 函数将该条目高亮显示为重复项。此条目不会被添加到 `aComputer` 数组中，脚本会递增 `iRowNum` 变量以处理下一行。
 
 ```
 iDupeRow = FindPrevious(strComputer, aComputer(), strDomain)
+
 If (iDupeRow = 0) Then
+
     aComputer(i).Name = Cells(iRowNum, COL_NAME).Value
+
     aComputer(i).Row = iRowNum
+
     aComputer(i).Domain = Cells(iRowNum, COL_DOMAIN)
+
     aComputer(i).ADsPath = Cells(iRowNum, COL_ADSPATH)
+
     i = i + 1
+
     ReDim Preserve aComputer(i)
+
     iRowNum = iRowNum + 1
+
 Else
+
     FormatComputerDuplicate iRowNum, iDupeRow
+
     iRowNum = iRowNum + 1
+
 End If
+
 Wend
+
 iRowNum = iRowNum + 1
+
 iBlankLines = iBlankLines + 1
+
 Wend
 ```
 
-最后，作为清理步骤，脚本最后一次将 aComputer 数组重新定义为维度 i-1，这代表数组中计算机的真实数量。（请记住，脚本一直将数组定义多一个元素，是为了在添加下一个计算机时能提前准备好空间。）此外，由于允许有 10 个空行，脚本会从 iRowNum 中减去 10，并将该值返回给调用函数，这代表找到的最后一台计算机的行号。
+最后，作为清理步骤，脚本最后一次将 `aComputer` 数组重新定义为维度 i-1，这代表数组中计算机的真实数量。（请记住，脚本一直将数组定义多一个元素，是为了在添加下一个计算机时能提前准备好空间。）此外，由于允许有 10 个空行，脚本会从 `iRowNum` 中减去 10，并将该值返回给调用函数，这代表找到的最后一台计算机的行号。
 
 ```
 ReDim Preserve aComputer(i - 1)
+
 LoadComputerList = iRowNum - 10
+
 Application.ScreenUpdating = True
+
 End Function
 ```
 
 ### QueryDS
 
-QueryDS 函数本质上是对第 5 章脚本中使用的 JScript QueryDS 函数的 VBA 移植。该函数接受一个表示 CommandText 的字符串作为输入，并将查询结果作为 Recordset 返回给调用过程。该过程包含简短的错误处理，用于捕获用户输入无法访问的域名时可能发生的错误。因为我们添加了对 Active X Objects 2.x 的引用，所以可以方便地将返回的数据类型实例化为 ADODB.Recordset。
+`QueryDS` 函数本质上是对第 5 章脚本中使用的 JScript `QueryDS` 函数的 VBA 移植。该函数接受一个表示 `CommandText` 的字符串作为输入，并将查询结果作为 Recordset 返回给调用过程。该过程包含简短的错误处理，用于捕获用户输入无法访问的域名时可能发生的错误。因为我们添加了对 Active X Objects 2.x 的引用，所以可以方便地将返回的数据类型实例化为 `ADODB.Recordset`。
 
 ```
 '------------------------------------------------------------------------------
+
 ' 使用 LDAP 查询参数查询活动目录
+
 '------------------------------------------------------------------------------
+
 Function QueryDS(strCommandText) As ADODB.Recordset
+
 Dim iRowNum, iComputerCount As Integer
+
 Dim objConnection As New ADODB.Connection
+
 Dim objCommand As New ADODB.Command
+
 objConnection.Provider = "ADsDSOObject"
+
 objConnection.Open
+
 objCommand.ActiveConnection = objConnection
+
 objCommand.Properties("Sort On") = "Name"
+
 objCommand.CommandText = strCommandText
+
 On Error Resume Next
+
 Set QueryDS = objCommand.Execute()
+
 If Err <> 0 Then
+
     MsgBox "连接域控制器时出错。 " & _
+
     "请检查域名并重试。", _
+
     vbCritical, "检查域名"
+
     End
+
 End If
+
 On Error GoTo 0
+
 End Function
 ```
 
 ### FindPrevious
 
-FindPrevious 函数将计算机名称和域对与 aComputer 数组中存储的每个计算机名称和域对进行比较。该函数循环遍历 aComputer 数组的所有元素，并使用 StrComp 方法比较字符串。StrComp 的语法为 StrComp(string1, string2, compare)，其中 string1 和 string2 是要比较的两个字符串，compare 是可选的第三个参数，用于指定比较方法（vbBinaryCompare、vbTextCompare 或 vbDatabaseCompare）。在下一个示例中，我们不使用 compare 参数，因为我们在模块级别设置了语句 Option Compare Text，该语句指定了整个模块的比较属性。
+`FindPrevious` 函数将计算机名称和域对与 `aComputer` 数组中存储的每个计算机名称和域对进行比较。该函数循环遍历 `aComputer` 数组的所有元素，并使用 `StrComp` 方法比较字符串。`StrComp` 的语法为 `StrComp(string1, string2, compare)`，其中 `string1` 和 `string2` 是要比较的两个字符串，`compare` 是可选的第三个参数，用于指定比较方法（`vbBinaryCompare`、`vbTextCompare` 或 `vbDatabaseCompare`）。在下一个示例中，我们不使用 `compare` 参数，因为我们在模块级别设置了语句 `Option Compare Text`，该语句指定了整个模块的比较属性。
 
-如果找到重复项，则将其标记为已存在，并将 aComputer 中匹配计算机的行号返回给调用函数。
+如果找到重复项，则将其标记为已存在，并将 `aComputer` 中匹配计算机的行号返回给调用函数。
 
 ```
 '--------------------------------------------------
+
 ' 检查计算机名称是否已存在于 aComputer() 中
+
 '--------------------------------------------------
+
 Function FindPrevious(strComputer, aComputer() _
+
     As ComputerData, strDomain) As Integer
 
     FindPrevious = 0
 
     For i = 1 To UBound(aComputer)
+
         If StrComp(aComputer(i).Name, strComputer) = 0 And _
+
             StrComp(aComputer(i).Domain, strDomain) = 0 Then
+
             FindPrevious = aComputer(i).Row
+
             aComputer(i).Exists = True
+
             Exit Function
+
         End If
+
     Next i
 
 End Function
@@ -6851,17 +7460,25 @@ End Function
 
 ### MarkMissingComputers
 
-回想一下 DumpComputers 子程序中对 MarkMissingComputers 子程序的调用。此子程序扫描 aComputer 中的每台计算机，并检查 Exists 元素（这是我们用户定义数据类型 ComputerData 的一部分）。任何未将 Exists 设置为 true 的元素都未在 AD 扫描中被发现，这表明计算机可能已从 AD 中删除。此子程序仅处理在 Setup 工作表中指定的域中的计算机，并调用 FormatComputerMissing 子程序来高亮显示任何不再存在的计算机（或者更准确地说，在 ADSI 查询中未出现的计算机）。
+回想一下 `DumpComputers` 子程序中对 `MarkMissingComputers` 子程序的调用。此子程序扫描 `aComputer` 中的每台计算机，并检查 `Exists` 元素（这是我们用户定义数据类型 `ComputerData` 的一部分）。任何未将 `Exists` 设置为 `true` 的元素都未在 AD 扫描中被发现，这表明计算机可能已从 AD 中删除。此子程序仅处理在 Setup 工作表中指定的域中的计算机，并调用 `FormatComputerMissing` 子程序来高亮显示任何不再存在的计算机（或者更准确地说，在 ADSI 查询中未出现的计算机）。
 
 ```
 '--------------------------------------------------
+
 ' 标记工作表上所有不再存在于活动目录中的计算机
+
 '--------------------------------------------------
+
 Sub MarkMissingComputers(aComputer() As ComputerData, strDomain)
+
     Dim i As Integer
+
     For i = 1 To UBound(aComputer)
+
         If aComputer(i).Domain = strDomain And Not aComputer(i).Exists _
+
             Then FormatComputerMissing aComputer(i).Row
+
     Next i
 
 End Sub
@@ -6871,19 +7488,21 @@ End Sub
 
 使用脚本格式化 Excel 中的数据可以真正节省时间，并有助于加快对大量数据的审查。例如，想象编写一个函数来扫描跨越数百行的区域，查找特定的属性或值。如果找到，则将单元格高亮显示为绿色。此脚本的格式化子程序执行类似的功能，用于高亮显示数据类别。
 
-顾名思义，PreFormatTable 子程序格式化新创建的输出工作表。该函数主要使用 Excel 的方法和属性来设置字体名称、大小、颜色和样式，以及对行进行阴影处理和设置值。正如我们在之前的 Windows 脚本示例中已习惯看到的，对象及其方法和属性本质上是分层的。Excel 格式化对象也是如此。要格式化一个单元格，首先，我们指定 Cells 属性（单独调用时引用活动工作表），然后深入设置各个对象属性，如 Font.Name 和 Font.Size。
+顾名思义，`PreFormatTable` 子程序格式化新创建的输出工作表。该函数主要使用 Excel 的方法和属性来设置字体名称、大小、颜色和样式，以及对行进行阴影处理和设置值。正如我们在之前的 Windows 脚本示例中已习惯看到的，对象及其方法和属性本质上是分层的。Excel 格式化对象也是如此。要格式化一个单元格，首先，我们指定 `Cells` 属性（单独调用时引用活动工作表），然后深入设置各个对象属性，如 `Font.Name` 和 `Font.Size`。
 
-![格式化输出工作表](img/eafd0e1632fc08452cf4d68dbe912652_296_0.png)
-
-> 脚本使用 With 语句来捆绑一系列语句的执行。如果我们知道要对一个对象执行多个操作，我们可以使用 With 语句定义它来打开一个块，而不是反复引用该对象。后续的语句，如 .Name、.Size 和 .FontStyle，可以添加而无需重新指定对象。例如，以下示例展示了两段实现相同功能的代码，但使用 With 语句提高了可读性，也更为优雅。
+> 脚本使用 `With` 语句来捆绑一系列语句的执行。如果我们知道要对一个对象执行多个操作，我们可以使用 `With` 语句定义它来打开一个块，而不是反复引用该对象。后续的语句，如 `.Name`、`.Size` 和 `.FontStyle`，可以添加而无需重新指定对象。例如，以下示例展示了两段实现相同功能的代码，但使用 `With` 语句提高了可读性，也更为优雅。
 
 **使用 With**
 
 ```
 With Range("A1:A2").EntireRow.Font
+
     .Name = "Arial"
+
     .Size = 12
+
     .FontStyle = "Bold"
+
 End With
 ```
 
@@ -6891,105 +7510,165 @@ End With
 
 ```
 Range("A1:A2").EntireRow.Font.Name = "Arial"
+
 Range("A1:A2").EntireRow.Font.Size = 12
+
 Range("A1:A2").EntireRow.Font.FontStyle = "Bold"
 ```
 
-脚本使用 Range().Interior.ColorIndex 属性来设置标题的单元格底纹。
+脚本使用 `Range().Interior.ColorIndex` 属性来设置标题的单元格底纹。
 
 ```
 ' ---------------------------------------------------------------
+
 ' 格式化新的输出工作表。
+
 ' ---------------------------------------------------------------
 ```
-
-
-
-## IT 管理员 Windows 入门脚本 Top 10
 
 ```vba
 Sub PreFormatTable()
+
     Cells.Font.Name = "Arial Narrow"
+
     Cells(1, 1) = "Computer Listing"
+
     With Range("A1:A2").EntireRow.Font
+
         .Name = "Arial"
+
         .Size = 12
+
         .FontStyle = "Bold"
+
     End With
+
     Cells(4, COL_NAME) = "Name"
+
     Cells(4, COL_STATUS) = "Status"
+
     Cells(4, COL_DATE) = "Discovered"
+
     Cells(4, COL_DOMAIN) = "Domain"
+
     Cells(4, COL_ADSPATH) = "ADsPath"
+
     Cells(4, COL_OPTION1) = "Option 1"
+
     Cells(4, COL_OPTION2) = "Option 2"
+
     Range("A3:H4").Interior.ColorIndex = 15
+
     Range("A3:H4").Font.FontStyle = "Bold"
+
 End Sub
 ```
 
 ### PostFormatTable
 
-DumpComputers 子程序完成后会调用 PostFormatTable 子程序来自动调整列宽。不指定任何参数使用 Cells 属性会为当前活动工作表中的所有单元格设置该属性。代码 `Cells.EntireColumn.AutoFit` 表示取工作表中的所有单元格及其关联列（即所有列）并自动调整其内容。自动调整会根据内容调整列宽，使所有数据都能显示出来，不会隐藏在过窄的列后面。
+`DumpComputers` 子程序完成后会调用 `PostFormatTable` 子程序来自动调整列宽。不指定任何参数使用 `Cells` 属性会为当前活动工作表中的所有单元格设置该属性。代码 `Cells.EntireColumn.AutoFit` 表示取工作表中的所有单元格及其关联列（即所有列）并自动调整其内容。自动调整会根据内容调整列宽，使所有数据都能显示出来，不会隐藏在过窄的列后面。
 
 ```vba
 '------------------------------------------------------
+
 ' Format results after DumpComputer completes
+
 '------------------------------------------------------
+
 Sub PostFormatTable()
+
     Cells.EntireColumn.AutoFit
+
     Columns(1).ColumnWidth = 10
+
 End Sub
 ```
 
 ### 格式化子程序
 
-子程序 FormatComputerMissing、FormatComputerDuplicate、FormatComputerAdded 和 FormatClear 在概念上执行相同的操作，但指定了不同的格式。它们都接受一个行号作为参数，并为该行设置与该功能相关联的格式。例如，FormatComputerMissing 将指定行的字体颜色设置为红色，并添加删除线。将这些过程与调用函数分离可以缩短调用函数的长度，使其更易于阅读和调试。此外，当这些函数集中在一起并与调用过程隔离时，对其进行修改也会更容易。
+子程序 `FormatComputerMissing`、`FormatComputerDuplicate`、`FormatComputerAdded` 和 `FormatClear` 在概念上执行相同的操作，但指定了不同的格式。它们都接受一个行号作为参数，并为该行设置与该功能相关联的格式。例如，`FormatComputerMissing` 将指定行的字体颜色设置为红色，并添加删除线。将这些过程与调用函数分离可以缩短调用函数的长度，使其更易于阅读和调试。此外，当这些函数集中在一起并与调用过程隔离时，对其进行修改也会更容易。
 
 ```vba
 ' ----------------------------------------------------------------
+
 ' Format Rows: Computers in worksheet but not in Active Directory
+
 ' ----------------------------------------------------------------
+
 Sub FormatComputerMissing(iRowNum)
+
     With Cells(iRowNum, 1).EntireRow.Font
+
         .Strikethrough = True
+
         .ColorIndex = 3 'Red
+
     End With
+
     Cells(iRowNum, COL_STATUS).Value = "Missing"
+
 End Sub
 
 ' ----------------------------------------------------------------
+
 ' Format Rows: Duplicate computer/domain in worksheet
+
 ' ----------------------------------------------------------------
+
 Sub FormatComputerDuplicate(iRowNum, iDupeRow)
+
     With Cells(iRowNum, 1).EntireRow.Font
+
         .Italic = True
+
         .ColorIndex = 5 'Blue
+
     End With
+
     Cells(iRowNum, COL_STATUS).Value = "Duplicate on row:" & iDupeRow
+
 End Sub
 
 ' ----------------------------------------------------------------
+
 ' Format Rows: Computers in Active Directory but not in the Worksheet
+
 ' ----------------------------------------------------------------
+
 Sub FormatComputerAdded(iRowNum)
+
     With Cells(iRowNum, 1).EntireRow.Font
+
         .ColorIndex = 14 'Teal
+
     End With
+
     Cells(iRowNum, COL_STATUS).Value = "Newly Added"
+
 End Sub
 
 ' ----------------------------------------------------------------
+
 ' Format Rows: Clear formatting for subsequent runs.
+
 ' ----------------------------------------------------------------
+
 Sub FormatClear(iRowNum)
+
     With Cells(iRowNum, 1).EntireRow.Font
+
         .Italic = False
+
         .Bold = False
+
         .Strikethrough = False
+
         .ColorIndex = 0 'Black
+
     End With
+
     Cells(iRowNum, COL_STATUS).Value = "Active"
+
 End Sub
 ```
 
@@ -7004,19 +7683,19 @@ End Sub
 - 大多数脚本技术都直接在 Excel VBA 中工作——包括 ADSI、WMI 甚至 WSH。
 - 将格式化子程序与主函数分离可以提高代码的可读性并使更改更容易。
 - 通过加载先前数据并将其与当前运行进行比较，此脚本突出显示了域中计算机列表的添加和删除，从而更容易识别更改和新计算机以供未来脚本处理。
-- LoadComputerList 函数可以容忍多个空行，不关心行顺序，这提高了其灵活性，使你可以重新排序或分组计算机行（例如，将域控制器或服务器分组在一起）。
+- `LoadComputerList` 函数可以容忍多个空行，不关心行顺序，这提高了其灵活性，使你可以重新排序或分组计算机行（例如，将域控制器或服务器分组在一起）。
 
 此脚本提供了指定域内所有计算机的实时统计，并作为未来脚本的基础，例如接下来几章中的蠕虫扫描器和本地账户枚举工具。
 
-# 9 基于浏览器的计算机信息诊断
+## 基于浏览器的计算机信息诊断
 
 ## 概述
 
-许多组织依赖其服务台或技术支持部门提供从计算机系统的一般协助到特定应用程序支持的用户支持。Windows 操作系统内置的远程控制工具包括 Terminal Services®、Remote Assistance® 和 NetMeeting®，以及补充性的长期商业远程控制应用程序。然而，在许多情况下，这些工具可能过于侵入性或者不实用。例如，没有多少用户希望软件公司的技术支持技术人员远程控制他们的私人机器。此外，使用远程控制软件需要更高程度的计算机或应用程序和安全知识。检查注册表项和网络连接以及执行其他诊断需要操作系统知识以及对该用户如何配置其系统的熟悉程度。
+许多组织依赖其服务台或技术支持部门提供从计算机系统的一般协助到特定应用程序支持的用户支持。Windows 操作系统内置的远程控制工具包括 Terminal Services、Remote Assistance 和 NetMeeting，以及补充性的长期商业远程控制应用程序。然而，在许多情况下，这些工具可能过于侵入性或者不实用。例如，没有多少用户希望软件公司的技术支持技术人员远程控制他们的私人机器。此外，使用远程控制软件需要更高程度的计算机或应用程序和安全知识。检查注册表项和网络连接以及执行其他诊断需要操作系统知识以及对该用户如何配置其系统的熟悉程度。
 
 本章中的场景概述了一个易于使用的工具的需求，该工具收集基本的本地计算机配置信息，不需要侵入性的软件安装。该工具可以对机器执行多项诊断——例如确定机器类型、运行中的进程和网络连接——然后将这些结果呈现给用户，用户随后可以将结果通过电子邮件发送给服务台或技术支持。
 
-此脚本演示了如何编写一个基于*超文本应用程序（HTA）* shell 的基本客户端诊断应用程序，并使用 WMI 和 WSH 引擎收集数据。HTA 在 HTML GUI 中提供脚本功能——无需 Web 服务器。这意味着你可以通过浏览器直接从本地文件系统打开 HTA。此脚本假设你熟悉基本 HTML，例如创建和格式化表格和文本。
+此脚本演示了如何编写一个基于超文本应用程序（HTA）shell 的基本客户端诊断应用程序，并使用 WMI 和 WSH 引擎收集数据。HTA 在 HTML GUI 中提供脚本功能——无需 Web 服务器。这意味着你可以通过浏览器直接从本地文件系统打开 HTA。此脚本假设你熟悉基本 HTML，例如创建和格式化表格和文本。
 
 ## 场景
 
@@ -7026,13 +7705,11 @@ End Sub
 
 为了抵消自身客户支持部门不断上升的成本，你希望创建一个诊断工具来协助收集客户系统的信息。该工具必须便于客户运行，且不能损害他们的隐私。工具的输出必须便于客户、客户支持部门和 IT 部门阅读。此外，该工具必须易于扩展，以允许新功能和未来测试。
 
-
-
 ## 分析
 
-您与客户支持部门开会，讨论了该工具的需求。他们向您提供了应用程序的常见问题解答（FAQ)以及基础的故障排查技巧，用于解决最常见的问题。带着这些信息，您整理出了一份需求清单。这份清单可以防止*功能蔓延*，确保您的项目在功能和开发时间上都有适当的范围界定。我们都经历过功能蔓延——即项目在进行过程中范围不断扩展。例如，假设您打算粉刷家里的一个房间。在粉刷过程中，您决定把走廊和厨房也一起粉刷了。全部完成后，您花费了更多的时间（可能还有更多的金钱）来交付一个理想情况下更优质的产品。功能蔓延不一定是坏事，但如果不能识别并加以管理，它可能会对日程安排或资源造成严重破坏。
+您与客户支持部门开会，讨论了该工具的需求。他们向您提供了应用程序的常见问题解答（FAQ）以及基础的故障排查技巧，用于解决最常见的问题。带着这些信息，您整理出了一份需求清单。这份清单可以防止功能蔓延，确保您的项目在功能和开发时间上都有适当的范围界定。我们都经历过功能蔓延——即项目在进行过程中范围不断扩展。例如，假设您打算粉刷家里的一个房间。在粉刷过程中，您决定把走廊和厨房也一起粉刷了。全部完成后，您花费了更多的时间（可能还有更多的金钱）来交付一个理想情况下更优质的产品。功能蔓延不一定是坏事，但如果不能识别并加以管理，它可能会对日程安排或资源造成严重破坏。
 
-从客户支持部门的访谈中，您将业务目标提炼为一份技术需求清单，如表9.1所示。
+从客户支持部门的访谈中，您将业务目标提炼为一份技术需求清单，如表 9.1 所示。
 
 **表 9.1** 将业务目标映射到技术需求
 
@@ -7048,10 +7725,10 @@ End Sub
 
 **DoPCCheck：** 检查操作系统。
 
-- 检查操作系统版本——WMI，从 Win32_OperatingSystem 获取操作系统信息。
-- 检查品牌型号——WMI，从 Win32_ComputerSystem 获取。
-- 检查处理器速度——WMI，从 Win32_Processor 获取速度。
-- 检查内存——WMI，从 Win32_ComputerSystem 获取内存。
+- 检查操作系统版本——WMI，从 `Win32_OperatingSystem` 获取操作系统信息。
+- 检查品牌型号——WMI，从 `Win32_ComputerSystem` 获取。
+- 检查处理器速度——WMI，从 `Win32_Processor` 获取速度。
+- 检查内存——WMI，从 `Win32_ComputerSystem` 获取内存。
 
 **DoNetworkCheck：** 检查网络。
 
@@ -7062,27 +7739,27 @@ End Sub
 
 **DoProcessCheck：** 检查运行中的进程。
 
-- 检查所有运行中的进程，排查可能的冲突——WMI，从 Win32_Process 获取进程。
+- 检查所有运行中的进程，排查可能的冲突——WMI，从 `Win32_Process` 获取进程。
 
 该脚本运用了 WSH 和 WMI 的工具与技术。没有指定语言要求，因此您可以选择自己最熟悉的语言来编写。
 
-# 分发与安装
+## 分发与安装
 
-该脚本将由客户在他们的计算机上运行，需求强调易用性和易于安装。由于客户订阅的产品是基于 Web 的 ASP，我们可以推断他们拥有可正常使用的互联网浏览器和互联网连接。最简单的工具是那种可以从任何计算机下载并直接运行、无需安装过程的工具。直接从网页托管此工具会更加复杂，因为需要在安全的 Web 浏览器之外运行该工具。（Web 浏览器的安全机制旨在将 Web 页面限制在沙箱内，阻止其访问本地系统信息。)下载多个文件需要将它们打包成单一的自安装程序（如使用 WinZip Computing® WinZip® 或 InstallShield® Software Corporation InstallShield®），这会使安装更加复杂（且更具侵入性）。
+该脚本将由客户在他们的计算机上运行，需求强调易用性和易于安装。由于客户订阅的产品是基于 Web 的 ASP，我们可以推断他们拥有可正常使用的互联网浏览器和互联网连接。最简单的工具是那种可以从任何计算机下载并直接运行、无需安装过程的工具。直接从网页托管此工具会更加复杂，因为需要在安全的 Web 浏览器之外运行该工具。（Web 浏览器的安全机制旨在将 Web 页面限制在沙箱内，阻止其访问本地系统信息。）下载多个文件需要将它们打包成单一的自安装程序（如使用 WinZip 或 InstallShield），这会使安装更加复杂（且更具侵入性）。
 
 一种满足这些需求的技术是超文本应用程序，即 HTA。HTA 是一种基于 HTML 的脚本，在本地 Web 浏览器中运行，不通过 HTTP 从 Web 服务器提供。HTA 还在执行脚本的当前登录用户的安全上下文中运行，这扩展了脚本的操作功能，使其超越了浏览器沙箱的限制。另一个好处是，该工具支持用户交互，并且可以使用广泛熟知的 HTML 轻松设置格式。
 
-# 输出
+## 输出
 
-HTA 工具在 HTML 格式的窗口中显示工具的输出。HTA 支持运行它的计算机上可用的脚本环境。这意味着脚本可以使用 WSH FileScriptingObject 将输出写入文本文件。此外，根据原始规范，为确保所有人都能读取输出，脚本将包含一个将结果保存到文本文件的选项。
+HTA 工具在 HTML 格式的窗口中显示工具的输出。HTA 支持运行它的计算机上可用的脚本环境。这意味着脚本可以使用 WSH `FileScriptingObject` 将输出写入文本文件。此外，根据原始规范，为确保所有人都能读取输出，脚本将包含一个将结果保存到文本文件的选项。
 
 为了将结果转发给客户支持部门，客户可以直接从结果窗口复制并粘贴输出，也可以将输出文本文件作为附件通过电子邮件发送。
 
-# 解决方案总结
+## 解决方案总结
 
 客户将下载 HTA 应用程序，然后在他们的本地系统上运行。HTA 将在自己的上下文中运行，但不会连接到任何其他系统，因此隐私得以保护。客户将通过 HTML 前端界面导航，选择并启动诊断测试。HTA 将向用户展示测试的摘要输出，并允许他们将结果保存到文本文件。
 
-# 目标
+## 目标
 
 该脚本的目的是演示如何在格式易于设置的 HTA 脚本中，使用 WSH 和 WMI 脚本收集各种信息的过程。该脚本使用以下对象：
 
@@ -7106,49 +7783,57 @@ HTA 工具在 HTML 格式的窗口中显示工具的输出。HTA 支持运行它
 
 该脚本包含在一个超文本应用程序（.hta）文件中，它将编程功能和 HTML 格式指令结合在单个脚本中。HTA 可以使用简单的文本编辑器编写，并以 HTA 扩展名保存。默认情况下，所有 HTA 文档都与 Web 浏览器关联，因此要运行它，只需执行 HTA 文件，它将在浏览器中打开。
 
-# 脚本
+## 脚本
 
 图 9.1 展示了该工具的界面。脚本通过 HTML 表单控件接受用户输入，包括按钮、复选框和文本字段。用户可以选择要执行哪些测试，指定用于测试网络连接的 IP 地址，并最终将测试结果保存到文本文件。用户通过点击"运行"按钮启动测试，通过点击"退出"按钮退出应用程序。
 
 ![](img/eafd0e1632fc08452cf4d68dbe912652_305_0.png)
 
-该脚本在 CD-ROM 中以 /chapter 9/scripts/ClientCheck.hta 的形式提供。在继续下一部分之前，请从 CD-ROM 中打开实际脚本，在测试环境中运行几次以了解其工作方式。自行浏览整个代码，然后继续阅读逐步讲解，这将解答您可能有的任何问题。此外，在脚本编辑器中查看完整代码可以让您对其范围有很好的了解，并且允许我们在讲解其功能时您对其进行调整。
+该脚本在 CD-ROM 中以 `/chapter 9/scripts/ClientCheck.hta` 的形式提供。在继续下一部分之前，请从 CD-ROM 中打开实际脚本，在测试环境中运行几次以了解其工作方式。自行浏览整个代码，然后继续阅读逐步讲解，这将解答您可能有的任何问题。此外，在脚本编辑器中查看完整代码可以让您对其范围有很好的了解，并且允许我们在讲解其功能时您对其进行调整。
 
 在接下来的几页中，我们将逐步讲解实际脚本，并 inline 讨论它的工作原理以及做出某些决定的原因。
 
 ### 超文本应用程序
 
-超文本应用程序（HTA)本质上是用 HTML 编写的网页，不需要在 Web 服务器上托管即可运行。相反，HTA 使用客户端机器的 Web 浏览器来运行，但它与在本地打开简单网页（例如，在浏览器中打开某个 somefile.html）有显著区别。正常的浏览器界面不可见（例如，导航按钮和地址栏）。然而，您可以定义 HTA 窗口的外观，例如是否使用滚动条、窗口的大小和位置以及其他 GUI 特性。HTA 使用本地登录用户的安全上下文（或按照底层脚本中另行指定的）对本地文件系统和注册表具有读写访问权限。文件的结构类似于标准网页，使用 HTML 来格式化输出。这些特性使 HTA 成为一个强大的平台，可用于交付美观且交互式的各类脚本——包括前面讨论过的 WMI、ADSI 和 WSH 技术。
+超文本应用程序（HTA）本质上是用 HTML 编写的网页，不需要在 Web 服务器上托管即可运行。相反，HTA 使用客户端机器的 Web 浏览器来运行，但它与在本地打开简单网页（例如，在浏览器中打开某个 `somefile.html`）有显著区别。正常的浏览器界面不可见（例如，导航按钮和地址栏）。然而，您可以定义 HTA 窗口的外观，例如是否使用滚动条、窗口的大小和位置以及其他 GUI 特性。HTA 使用本地登录用户的安全上下文（或按照底层脚本中另行指定的）对本地文件系统和注册表具有读写访问权限。文件的结构类似于标准网页，使用 HTML 来格式化输出。这些特性使 HTA 成为一个强大的平台，可用于交付美观且交互式的各类脚本——包括前面讨论过的 WMI、ADSI 和 WSH 技术。
 
 HTA 是功能强大的工具，允许脚本在您 Web 浏览器的权限下运行。由于 Internet Explorer 和网页是病毒的热门目标和传播途径，某些杀毒程序在打开 HTA 时可能会警告您它可能包含病毒。对于在计算机上运行的任何 HTA，您都应该谨慎。在运行之前检查 HTA 文件很容易。在记事本（或您喜欢的文本编辑器）中打开 HTA 并查看源代码。作为最佳实践，您应该在运行来自本书或其他来源的任何脚本之前，先审查其源代码。
 
 HTA 以标准 HTML 框架开始，但可能会包含额外的 `<script>` 标签来定义应用程序的功能，如下面的伪代码所示。伪代码是程序的提纲，您可以稍后将其转换为实际的编程语句。使用伪代码有时有助于界定问题的范围，或向他人传达您对程序的想法。
 
-
-
 ```html
 <HTA:APPLICATION options/>
+
 <head>
+
     <title>Untitled</title>
+
     <style> Include Cascading Style Sheet information here </style>
+
     <script> Include the program functionality here </script>
+
 </head>
+
 <body>
+
     Include the HTML document defining the HTA format here and
+
     call functions or subroutines from this section.
+
 </body>
+
 </html>
 ```
 
-`<html>` 容器包裹整个应用程序。在此标签之后，使用 HTA:APPLICATION 对象来定义应用程序的操作方面。表 9.2 列出了可以在 HTA:APPLICATION 中设置的属性。
+`<html>` 容器包裹整个应用程序。在此标签之后，使用 `HTA:APPLICATION` 对象来定义应用程序的操作方面。表 9.2 列出了可以在 `HTA:APPLICATION` 中设置的属性。
 
 ### 表 9.2 HTA:APPLICATION 属性定义了 HTA 的操作方面
 
 | 名称 | 值（默认值） | 描述 |
 | :--- | :--- | :--- |
 | APPLICATIONNAME | | HTA 的名称。（与 `<title>` 不同。） |
-| BORDER | *thick*, dialog, none, thin | 定义 HTA 窗口的边框。边框类型还包括是否包含带有关闭框的标题栏。请注意，只有使用 thick 边框时才可以调整 HTA 的大小。 |
-| BORDERSTYLE | *normal*, complex, raised, static, sunken | 指定边框的外观。 |
+| BORDER | thick, dialog, none, thin | 定义 HTA 窗口的边框。边框类型还包括是否包含带有关闭框的标题栏。请注意，只有使用 thick 边框时才可以调整 HTA 的大小。 |
+| BORDERSTYLE | normal, complex, raised, static, sunken | 指定边框的外观。 |
 | CAPTION | yes, no | 打开标题栏。 |
 | CONTEXTMENU | yes, no | 开启和关闭上下文菜单（鼠标右键点击）。 |
 | ICON | 文件名 | 指定 HTA 的 32x32 图标。 |
@@ -7165,32 +7850,41 @@ HTA 以标准 HTML 框架开始，但可能会包含额外的 `<script>` 标签�
 | VERSION | 字符串 | 设置或读取 HTA 的版本号。 |
 | WINDOWSTATE | normal, minimize, maximize | 指定以最小化、最大化或正常状态打开 HTA。 |
 
-请注意，在以下 ClientCheck 脚本的 HTA:APPLICATION 定义中，滚动条被关闭了。这意味着整个窗口将没有滚动条，但内部元素（如包含脚本输出的 `<div>` 元素）仍然可以有滚动条，如图 9.2 所示。在 HTA 中使用多个专用区域非常适合将应用程序配置区域与实际结果输出分隔开来。ClientCheck HTA 前端 GUI 由一个包含三行的 HTML 表格组成：顶部行包含配置数据（按钮和复选框所在的位置）；较小的中间行在应用程序执行期间提供状态信息；底部较大的行包含应用程序的输出。
+请注意，在以下 ClientCheck 脚本的 `HTA:APPLICATION` 定义中，滚动条被关闭了。这意味着整个窗口将没有滚动条，但内部元素（如包含脚本输出的 `<div>` 元素）仍然可以有滚动条，如图 9.2 所示。在 HTA 中使用多个专用区域非常适合将应用程序配置区域与实际结果输出分隔开来。ClientCheck HTA 前端 GUI 由一个包含三行的 HTML 表格组成：顶部行包含配置数据（按钮和复选框所在的位置）；较小的中间行在应用程序执行期间提供状态信息；底部较大的行包含应用程序的输出。
 
-```
+```html
 <html>
+
 <!-- ------------------------------
+
 * ClientCheck.hta
+
 ---------------------------- -->
-```
 
-## IT 管理员的十大 Windows 入门脚本
-
-```
 <HTA:APPLICATION
+
     id="ClientDiagnostics"
+
     APPLICATIONNAME="Client Diagnostic Tool"
+
     SCROLL="no"
+
     SINGLEINSTANCE="yes"
+
     WINDOWSTATE="normal"
+
     BORDER="thick"
+
     BORDERSTYLE="normal"
+
     MAXIMIZEBUTTON="yes"
+
     MINIMIZEBUTTON="yes"
+
     SYSMENU="yes" />
 ```
 
-**图 9.2** *ClientCheck* HTA 的输出包含在由该容器滚动条管理的独立容器中。
+**图 9.2** ClientCheck HTA 的输出包含在由该容器滚动条管理的独立容器中。
 
 `<head>` 元素用于定义标题、样式和脚本。（网页还可以在此处定义元标签和搜索信息。）该工具的要求是无需安装过程即可轻松执行。整个工具包含在单个文件中，包括定义应用程序外观的层叠样式表（CSS），涵盖字体样式、大小和颜色。CSS 样式在 `<style>` 标签中定义。
 
@@ -7200,23 +7894,39 @@ HTA 以标准 HTML 框架开始，但可能会包含额外的 `<script>` 标签�
 
 样式控制 HTML 元素的格式，可应用于大多数 HTML 元素。内联文本也可以通过将其包含在 division `<div>` 或 span `<span>` 标签中来分配样式。以点（`.`）开头的样式继承自先前分配的样式。以井号（`#`）开头的样式应用于具有相同 id 的元素。元素可以被分配 ID，这些 ID 可以通过编程方式引用。在下一个示例中，样式 `#output` 和 `#update` 仅应用于 `id="output"` 和 `id="update"` 的元素。
 
-```
+```html
 <head>
+
 <title>Client Diagnostic Tool</title>
+
 <style>
+
 body
+
 {background-color:#e8e8e8; font-family:Arial; font-size: 8pt;
+
 margin-top:5px; margin-left:5px; margin-right:5px; margin-bottom:5px;}
+
 .tbox
+
 {font-family:Arial; font-size:8pt; width:25px;}
+
 .button
+
 {font-family:Arial; font-size:8pt; width:35px;}
+
 .table
+
 {font-family:Arial; font-size:8pt;}
+
 #output
+
 {font-family:Arial; font-size: 8pt;}
+
 #update
+
 {font-family: Arial; font-size: 10pt;color="Red";}
+
 </style>
 ```
 
@@ -7226,10 +7936,11 @@ margin-top:5px; margin-left:5px; margin-right:5px; margin-bottom:5px;}
 
 将跨所有函数和子程序使用的变量定义为 `Public`。在以下代码中，变量 `g_strTemp` 包含文本文件的路径和文件名，程序的所有子程序都使用该文件来存储临时数据。
 
-g_ 前缀表示该变量为全局变量，有助于提醒你（以及其他阅读你代码的人）它的特殊状态。
+`g_` 前缀表示该变量为全局变量，有助于提醒你（以及其他阅读你代码的人）它的特殊状态。
 
-```
+```vbscript
 <script type="text/vbscript">
+
 Option Explicit
 
 public g_strTemp
@@ -7237,35 +7948,47 @@ public g_strTemp
 
 ### Window_Onload
 
-子程序 Window_Onload 在 HTA 运行时（更准确地说，当 _Onload 事件触发时）被自动调用。此过程设置 HTA 的初始参数，包括其大小以及最初禁用"保存"按钮的指令（因为还没有数据需要保存）。window 属性引用当前窗口，cmdRun 和 cmdSave 是元素 ID。元素 ID 使脚本中任何过程都可以通过编程方式访问这些元素。
+子程序 `Window_Onload` 在 HTA 运行时（更准确地说，当 `_Onload` 事件触发时）被自动调用。此过程设置 HTA 的初始参数，包括其大小以及最初禁用"保存"按钮的指令（因为还没有数据需要保存）。`window` 属性引用当前窗口，`cmdRun` 和 `cmdSave` 是元素 ID。元素 ID 使脚本中任何过程都可以通过编程方式访问这些元素。
 
-```
+```vbscript
 '-------------------------------------------------------------------------------
+
 ' Initialize the Application
+
 '-------------------------------------------------------------------------------
+
 Sub Window_Onload
+
     Dim iReturn
+
     Dim objFSO
+
     Dim objShell
+
     Dim objLocator
+
     Dim strHTML
+
     window.ResizeTo 640,480
+
     cmdRun.disabled = False
+
     cmdSave.disabled = True
 ```
 
-下一段代码提供了基本的错误处理。应用程序打开错误处理，然后尝试创建一个新的 WMI 对象。失败的尝试会自动将 Err 变量设置为错误代码（该值为非零值）。脚本查找非零值并显示一些有用信息，以帮助用户纠正问题。
+下一段代码提供了基本的错误处理。应用程序打开错误处理，然后尝试创建一个新的 WMI 对象。失败的尝试会自动将 `Err` 变量设置为错误代码（该值为非零值）。脚本查找非零值并显示一些有用信息，以帮助用户纠正问题。
 
-> 在调试过程中，请记住禁用 On Error... 语句，因为它会隐藏真正的错误（它会按预期直接跳过有问题的语句）。虽然这听起来显而易见，但你会惊讶于它会多频繁地拖慢你查找软件 bug 的速度。
+> 在调试过程中，请记住禁用 `On Error...` 语句，因为它会隐藏真正的错误（它会按预期直接跳过有问题的语句）。虽然这听起来显而易见，但你会惊讶于它会多频繁地拖慢你查找软件 bug 的速度。
 
-```
+```vbscript
 On Error Resume Next
+
 Set objLocator = CreateObject("WbemScripting.SWbemLocator")
+
 If Err <> 0 Then
+
     strHTML=Heading("The WMI Core Components do not " &_
 ```
-
-
 
 ### PerformDiagnostics
 
@@ -7275,46 +7998,71 @@ If Err <> 0 Then
 
 根据三个诊断复选框的选中状态，程序调用每个实际执行单独测试的三个子程序。
 
-```
+```vbscript
 '--------------------------------------------------------------------------
+
 ' 运行诊断
+
 '--------------------------------------------------------------------------
+
 Sub PerformDiagnostics
+
     cmdQuit.disabled=True
+
     cmdSave.disabled=True
+
     cmdRun.disabled=True
+
     output.innerHTML="Client Diagnostics Tool."
+
     If chkPC.checked = true Then DoPCCheck()
+
     If chkProcess.checked = true Then DoProcessCheck()
+
     If chkNet.checked = true Then DoNetworkCheck()
+
     cmdSave.disabled = False
+
     update.innerHTML="Checks complete. Click Save to save results " &_
+
         "to a text file."
+
     cmdQuit.disabled=False
+
     cmdSave.disabled=False
+
     cmdRun.disabled=False
 
 End Sub
 ```
 
-如果系统不支持 WMI，脚本将禁用依赖 WMI 的诊断测试：`Check Process` 和 `Check PC`。程序 `<body>` 部分内的每个 HTML 输入元素都有一个唯一的 ID。`Check Process` 和 `Check PC` 复选框的 ID 分别是 `chkProcess` 和 `chkPC`。这些 ID 使得这些元素对脚本中的任何过程都可用，允许我们在此 `Window_Onload` 过程中通过将 `disabled` 设置为 `True` 和 `checked` 设置为 `False` 来禁用它们。同样，任何其他子程序也可以设置值、选中或取消选中复选框、获取或设置文本框值，或禁用控件。
+如果系统不支持 WMI，脚本将禁用依赖 WMI 的诊断测试：Check Process 和 Check PC。程序 `<body>` 部分内的每个 HTML 输入元素都有一个唯一的 ID。Check Process 和 Check PC 复选框的 ID 分别是 `chkProcess` 和 `chkPC`。这些 ID 使得这些元素对脚本中的任何过程都可用，允许我们在此 `Window_Onload` 过程中通过将 `disabled` 设置为 `True` 和 `checked` 设置为 `False` 来禁用它们。同样，任何其他子程序也可以设置值、选中或取消选中复选框、获取或设置文本框值，或禁用控件。
 
-```
+```vbscript
 output.innerHTML= strHTML
+
 chkPC.checked=False
+
 chkPC.disabled=True
+
 chkProcess.checked=False
+
 chkProcess.disabled=True
+
 End If
 ```
 
 在下面的代码中，公共变量 `g_strTemp` 被定义为位于用户计算机 `%temp%` 文件夹中的一个文件。此文件用于重定向从本程序调用的外部二进制文件（例如，`ping`、`tracert` 和 `ipconfig`）的执行输出。使用 `%temp%` 文件夹是一个好主意，特别是当您无法控制或不了解脚本运行所在的计算机时。这个特殊文件夹通常允许普通用户进行读写访问，而其他文件夹可能受到限制并导致程序停止。
 
-```
+```vbscript
 On Error Goto 0
+
 Set objShell=CreateObject ("WScript.Shell")
+
 g_strTemp=objShell.ExpandEnvironmentStrings("%temp%") &_
+
 "/tempdiagnostics.txt"
+
 End Sub
 ```
 
@@ -7322,16 +8070,25 @@ End Sub
 
 PC Check 子程序使用 WMI 来演示如何从本地计算机检索各种信息。结果被格式化并显示在 HTA 输出 `<div>` 中，状态显示在更新 `<div>` 中。
 
-```
+```vbscript
 '--------------------------------------------------------------------------
+
 ' 运行 PC 检查
+
 '--------------------------------------------------------------------------
+
 Sub DoPCCheck()
+
     Dim objLocator, objServices
+
     Dim colService, colQueryResult
+
     Dim objItem, objShell
+
     Dim strWQL, strHTML
+
     Dim iFreeSpace
+
     update.innerHTML="Running PC Check.<hr/>"
 ```
 
@@ -7339,113 +8096,173 @@ Sub DoPCCheck()
 
 `DoPCCheck` 子程序从五个不同的 WMI 类返回数据：`Win32_OperatingSystem`、`Win32_BIOS`、`Win32_ComputerSystem`、`Win32_Processor` 和 `Win32_LogicalDisk`。该过程调用 `ExecQuery` 来返回这些类的对象集合并显示特定属性。虽然脚本必须包含对 `ExecQuery` 方法的单独调用，但 `Locator` 对象和服务器连接的初始 WMI 设置可以设置一次并重用于后续查询。这是一种节省空间的方法，较短的代码通常等同于较少的错误。
 
-```
+```vbscript
 strHTML=Heading("Local Computer Information","Green")
+
 On Error Resume Next
+
 Set objLocator = CreateObject("WbemScripting.SWbemLocator")
+
 Set objServices = objLocator.ConnectServer(".")
+
 strWQL="Select * from Win32_OperatingSystem"
+
 Set colQueryResult = objServices.ExecQuery(strWQL)
 ```
 
 这五个类都以类似的方式使用 `For…Each` 循环枚举，以迭代返回的集合。这五个类的数据支持收集有关客户端计算机的处理器、磁盘和内存信息的设计要求。收集、格式化并显示各个属性。输出使用 HTML 语法格式化。该过程构建一个名为 `strHTML` 的单一字符串，而不是更新 `output.innerHTML`。在特定测试结束时，`strHTML` 被追加到现有的 `output.innerHTML` 中，并由浏览器呈现。
 
-```
+```vbscript
 strHTML=strHTML & "<br><b>Operating System</b><br>"
+
 For Each objItem In colQueryResult
+
     strHTML=strHTML &_
+
     "Operating System: <i>" & objItem.Caption & "</i><br>" &_
+
     "OS Version: <i>" &  objItem.Version & "</i><br>" &_
+
     "Service Pack Installed: SP <i>" &_
+
     objItem.ServicePackMajorVersion & "." &_
+
     objItem.ServicePackMinorVersion & "</i><br>"
+
 Next
 ```
 
-```
+```vbscript
 strWQL="Select * from Win32_BIOS"
+
 Set colQueryResult = objServices.ExecQuery(strWQL)
+
 strHTML=strHTML & "<br><b>BIOS Information</b><br>"
+
 For Each objItem In colQueryResult
+
     strHTML=strHTML &_
+
         "Bios: <i>" & objItem.Description & "</i><br>"
+
 Next
 ```
 
 物理内存总量从字节转换为兆字节，并使用 `FormatNumber` 方法四舍五入到下一个整数。
 
-```
+```vbscript
 strWQL="Select * from Win32_ComputerSystem"
+
 Set colQueryResult = objServices.ExecQuery(strWQL)
+
 strHTML=strHTML & "<br><b>Computer System Information</b><br>"
+
 For Each objItem In colQueryResult
+
     strHTML=strHTML &_
+
         "Current User: <i>" & objItem.UserName & "</i><br>" &_
+
         "Computer Name: <i>" & objItem.Name & "</i><br>" &_
+
         "Make and Model: <i>" & objItem.Manufacturer & " " &_
+
         objItem.Model & "</i><br> Total Physical Memory <i>" &_
+
         FormatNumber((objItem.TotalPhysicalMemory/1024)/1024,0)&_
+
         " </i>MB<br>"
+
 Next
 ```
 
-```
+```vbscript
 strWQL="Select * from Win32_Processor"
+
 Set colQueryResult = objServices.ExecQuery(strWQL)
+
 strHTML=strHTML & "<br><b>Processor Information</b><br>"
+
 For Each objItem In colQueryResult
+
     strHTML=strHTML &_
+
         "Processor: <i>" & objItem.Name & "</i><br>" &_
+
         "ClockSpeed: <i>" & objItem.MaxClockSpeed & " </i>Mhz<br>" &_
+
         "Percent Loaded: <i>" & objItem.LoadPercentage & "</i><br>"
+
 Next
 ```
 
 直到这一点，属性通常是唯一的（除非您在多处理器系统上运行此脚本，该系统会返回多个 `Win32_Processor` 对象）。一个显著的例外是枚举 `Win32_LogicalDisk` 集合，其中可能包含多个驱动器。脚本期望一个较大的数据集并构建一个 HTML 表格来显示结果。首先构建表格和包含标题信息的第一行。
 
-```
+```vbscript
 strWQL="Select * from Win32_LogicalDisk"
+
 Set colQueryResult = objServices.ExecQuery(strWQL)
+
 strHTML=strHTML &_
+
     Heading("Storage Information","Green") &_
+
     "<table Border=1 class=table width=600px>" &_
+
     "<tr style='FONT-WEIGHT: bold'><td>Drive</td><td>" &_
+
     "Free Space</td><td>Description</td></tr>"
 ```
 
-如果系统不支持 WMI，脚本将禁用依赖 WMI 的诊断测试：`Check Process` 和 `Check PC`。程序 `<body>` 部分内的每个 HTML 输入元素都有一个唯一的 ID。`Check Process` 和 `Check PC` 复选框的 ID 分别是 `chkProcess` 和 `chkPC`。这些 ID 使得这些元素对脚本中的任何过程都可用，允许我们在此 `Window_Onload` 过程中通过将 `disabled` 设置为 `True` 和 `checked` 设置为 `False` 来禁用它们。同样，任何其他子程序也可以设置值、选中或取消选中复选框、获取或设置文本框值，或禁用控件。
+如果系统不支持 WMI，脚本将禁用依赖 WMI 的诊断测试：Check Process 和 Check PC。程序 `<body>` 部分内的每个 HTML 输入元素都有一个唯一的 ID。Check Process 和 Check PC 复选框的 ID 分别是 `chkProcess` 和 `chkPC`。这些 ID 使得这些元素对脚本中的任何过程都可用，允许我们在此 `Window_Onload` 过程中通过将 `disabled` 设置为 `True` 和 `checked` 设置为 `False` 来禁用它们。同样，任何其他子程序也可以设置值、选中或取消选中复选框、获取或设置文本框值，或禁用控件。
 
-```
+```vbscript
 output.innerHTML= strHTML
+
 chkPC.checked=False
+
 chkPC.disabled=True
+
 chkProcess.checked=False
+
 chkProcess.disabled=True
+
 End If
 ```
 
-
-
- ## 下一步
+## 下一步
 
 接下来，循环遍历集合中的每个对象，并为每个逻辑驱动器创建一个新的表格行。请注意，以下代码包含额外的测试，以验证 `objItem.FreeSpace` 是否为数字。如果 `IsNull` 函数返回 `True`，则将 `objItem.FreeSpace` 设置为 `0`。此设置对于处理带有可移动介质的驱动器（如软盘或 CD-ROM 驱动器）是必要的。如果未插入磁盘，该驱动器的 `FreeSpace` 将报告为 `Null`。`Null` 值会在后续方法 `FormatNumber` 中引发错误，因为该方法期望输入参数为数字。最后，将字符串 `strHTML` 追加到现有 HTML 中，该 HTML 包含在元素 `id="output"` 的 `<div>` 内。
 
-```
+```vbscript
 For Each objItem In colQueryResult
+
     If Not IsNull(objItem.FreeSpace) Then
+
         iFreeSpace=(objItem.FreeSpace / 1024)/1024
+
     Else iFreeSpace=0
+
     End If
+
     strHTML=strHTML & "<tr>" & _
+
         "<td>" & objItem.Caption & "</td>" & _
+
         "<td>" & FormatNumber(iFreeSpace,2) & " MB free</td>" & _
+
         "<td>" & objItem.Description & "</td>" & _
+
         "</tr>"
+
 Next
+
 strHTML=strHTML & "</table><br>"
 
 output.innerHTML=output.innerHTML & strHTML
+
 On Error Goto 0
+
 End Sub
 ```
 
@@ -7453,45 +8270,59 @@ End Sub
 
 `DoProcessCheck` 子程序使用 WMI 检索所有活动进程。连接到 WMI 提供程序并从 `Win32_Process` 返回集合的过程与 `DoPCCheck` 函数中上述 WMI 调用类似。此子程序包含额外的测试和格式化，以 HTML 表格形式显示活动进程和一些关键属性。
 
-```
+```vbscript
 '----------------------------------------------------------------------
+
 ' Run Process Check
+
 '----------------------------------------------------------------------
+
 Sub DoProcessCheck()
+
     Dim strHTML, strCmdLine, strWQL
+
     Dim objLocator, objServices, objItem
+
     Dim colQueryResult, strFlagApp
+
     Dim bFlagApp
+
     Dim iPageFaults, iWSS, iPWSS
-```
 
-IT Administrator's Top 10 Introductory Scripts for Windows
-
-```
 On Error Resume Next
+
 Set objLocator = CreateObject("WbemScripting.SWbemLocator")
+
 Set objServices = objLocator.ConnectServer(".")
+
 update.innerHTML="Processes.<hr/>"
+
 strHTML=Heading("Current Processes","Green")
 ```
 
-变量 strFlagApp 支持一个更大的设计，用于标记可疑进程。这些进程由脚本管理员事先识别。如果发现有进程在系统上运行，它们将被标记并以**粗体红色**突出显示。被标记的应用程序也会在活动应用程序表格下方的单独列表中呈现。此设计旨在帮助诊断信息的接收方快速识别与其他应用程序之间先前已知的兼容性问题。
+变量 `strFlagApp` 支持一个更大的设计，用于标记可疑进程。这些进程由脚本管理员事先识别。如果发现有进程在系统上运行，它们将被标记并以粗体红色突出显示。被标记的应用程序也会在活动应用程序表格下方的单独列表中呈现。此设计旨在帮助诊断信息的接收方快速识别与其他应用程序之间先前已知的兼容性问题。
 
-```
+```vbscript
 strFlagApp="Flagged Applications:<br>"
+
 bFlagApp=FALSE
 ```
 
-WMI 类 Win32_Process 包含有关活动进程的大量信息，包括进程名称、启动时使用的命令行、进程消耗的内存量、进程导致的页面错误数等。由于我们想要列出所有进程，因此我们使用基本查询字符串调用 ExecQuery 方法。
+WMI 类 `Win32_Process` 包含有关活动进程的大量信息，包括进程名称、启动时使用的命令行、进程消耗的内存量、进程导致的页面错误数等。由于我们想要列出所有进程，因此我们使用基本查询字符串调用 `ExecQuery` 方法。
 
 使用 HTML 表格来格式化结果。第一行包含脚本显示数据的表格标题信息。
 
-```
+```vbscript
 strWQL="Select * from Win32_Process"
+
 Set colQueryResult = objServices.ExecQuery(strWQL)
+
 strHTML=strHTML & "<table class=table width=600px border=1>" & _
+
 "<tr style=" & chr(34) & "FONT-WEIGHT: bold" & chr(34) & _
+
 "><td>Process</td><td>Command Line</td><td>Memory (KB)</td>" & _
+
 "<td>Peak Mem(KB)</td><td>Page Faults</td></tr>"
 ```
 
@@ -7499,52 +8330,79 @@ strHTML=strHTML & "<table class=table width=600px border=1>" & _
 
 同样，脚本确认每个进程的当前和峰值内存利用率是否为数字，然后将该值转换为兆字节。如果该值不是数字，脚本将用 -1 替换该值以表示错误。
 
-```
+```vbscript
 For Each objItem In colQueryResult
-  If IsNull(objItem.CommandLine) Then
-    strCmdLine="n/a"
-```
 
-```
-Else strCmdLine=objItem.CommandLine
-End If
-If IsNumeric(objItem.WorkingSetSize) Then
-    iWSS=(objItem.WorkingSetSize / 1024)
-Else iWSS=-1
-End If
-If IsNumeric(objItem.PeakWorkingSetSize) Then
-    iPWSS=(objItem.PeakWorkingSetSize / 1024)
-Else iPWSS=-1
-End If
-If IsNumeric(objItem.PageFaults) Then
-iPageFaults=objItem.PageFaults
-Else iPageFaults=-1
-End If
+  If IsNull(objItem.CommandLine) Then
+
+    strCmdLine="n/a"
+
+  Else strCmdLine=objItem.CommandLine
+
+  End If
+
+  If IsNumeric(objItem.WorkingSetSize) Then
+
+      iWSS=(objItem.WorkingSetSize / 1024)
+
+  Else iWSS=-1
+
+  End If
+
+  If IsNumeric(objItem.PeakWorkingSetSize) Then
+
+      iPWSS=(objItem.PeakWorkingSetSize / 1024)
+
+  Else iPWSS=-1
+
+  End If
+
+  If IsNumeric(objItem.PageFaults) Then
+
+      iPageFaults=objItem.PageFaults
+
+  Else iPageFaults=-1
+
+  End If
 ```
 
 被标记的应用程序使用 `Select...Case` 语句进行检测。这允许多个应用程序快速添加到列表中。默认被标记的应用程序 `mshta.exe` 实际上是 HTA 应用程序本身，用于在任何系统上演示被标记应用程序的操作方式和外观。添加逗号分隔的字符串列表以标记其他应用程序。
 
-```
+```vbscript
 Select Case objItem.Description
+
     Case "mshta.exe"
+
         bFlagApp = TRUE
-        strHTML=str Blob strHTML & "<tr style='COLOR: RED'>"
+
+        strHTML=strHTML & "<tr style='COLOR: RED'>"
+
         strFlagApp=strFlagApp+objItem.Description & "<br>"
+
     Case Else
+
         strHTML=strHTML & "<tr>"
+
 End Select
 ```
 
 为每个进程构建一个单独的 HTML 表格行，并将数值数据四舍五入到下一个整数。
 
-```
+```vbscript
 strHTML=strHTML & "<td>" & objItem.Description & "</td>" &_
+
     "<td>" & strCmdLine & "</td>" &_
+
     "<td align=right>" & FormatNumber(iWSS,0) & "</td>" &_
+
     "<td align=right>" & FormatNumber(iPWSS,0) &"</td>" &_
+
     "<td align=right>" & FormatNumber(iPageFaults,0) & "</td>" &_
+
     "</tr>"
+
 Next
+
 strHTML=strHTML & "</table><br>"
 ```
 
@@ -7552,16 +8410,23 @@ strHTML=strHTML & "</table><br>"
 
 ### DoNetworkCheck
 
-DoNetworkCheck 子程序使用 WSH `Run` 方法和 `FileSystemObject` 方法来驱动外部应用程序，如 `ping`、`ipconfig` 和 `tracert`。这些外部应用程序在单独的进程中运行，其输出被重定向到临时文本文件 `g_strTemp`。此脚本的设计要求包括测量网络延迟和网络连接的一致性。脚本使用 `ping` 和 `tracert` 网络工具，这些工具安装在大多数 Windows 平台上。
+`DoNetworkCheck` 子程序使用 WSH `Run` 方法和 `FileSystemObject` 方法来驱动外部应用程序，如 `ping`、`ipconfig` 和 `tracert`。这些外部应用程序在单独的进程中运行，其输出被重定向到临时文本文件 `g_strTemp`。此脚本的设计要求包括测量网络延迟和网络连接的一致性。脚本使用 `ping` 和 `tracert` 网络工具，这些工具安装在大多数 Windows 平台上。
 
-```
+```vbscript
 '--------------------------------------------------------------------------
+
 ' DoNetworkCheck
+
 '--------------------------------------------------------------------------
+
 Sub DoNetworkCheck()
+
     Dim bNetworkUp
+
     Dim iReturn
+
     Dim objShell, objFSO
+
     Dim strHTML, strPingAddress, strTRAddress
 ```
 
@@ -7569,95 +8434,127 @@ Sub DoNetworkCheck()
 
 > 另外，可以使用单个字段，接受 IP 地址或系统的完全限定域名（FQDN）。可以使用正则表达式验证 IP 地址的格式是否正确。
 
-```
+```vbscript
 If txtIP1.Value > 223 or txtIP2.Value > 255 or txtIP3.Value > 255_
+
   or txtIP4.Value > 254 or txtIP1.Value < 1 or txtIP2.Value < 0_
+
   or txtIP3.Value < 0 or txtIP4.Value < 0 Then
+
     update.innerHTML="IP address is invalid. Please correct."
+
     Exit Sub
+
 End If
 
 strPingAddress=txtIP1.Value & "." & txtIP2.Value & "." &_
+
   txtIP3.Value & "." & txtIP4.Value
+
 strTRAddress=txtIP1.Value & "." & txtIP2.Value & "." &_
+
   txtIP3.Value & "." & txtIP4.Value
 ```
-
-
 
 ### 标题
 
-之前，在首次提到 Heading 函数时曾对其进行了简要介绍。以下代码展示了该函数的实际实现。此函数接收一个文本字符串和一个颜色作为输入，并返回一个格式化的 HTML 字符串。
+之前，在首次提到 `Heading` 函数时曾对其进行了简要介绍。以下代码展示了该函数的实际实现。此函数接收一个文本字符串和一个颜色作为输入，并返回一个格式化的 HTML 字符串。
 
-```
+```vbscript
 '---------------------------------------------------------------
+
 ' Format the Heading
+
 '---------------------------------------------------------------
+
 Function Heading(strHTML, strColor)
+
 Heading = "<br><br><div style=" & chr(34) & "color=" & strColor & _
+
 chr(34) & ">" & strHTML & "</div><hr/><br>"
+
 End Function
 ```
 
 ### ProcessResults
 
-ProcessResults 函数读取一个文本文件，并将其内容以字符串形式返回给调用过程。该函数不进行任何文本解析（例如去除空行）。错误检查仅限于调用 FileExists 方法。由于此函数读取的文本文件是由脚本创建的，因此不需要额外的错误检查。该方法使用 OpenTextFile 方法打开文件。OpenTextFile 的参数在第 3 章讨论 FileSystemObject 时以及在第 4 章讨论 ReadFile 函数时均有涉及。
+`ProcessResults` 函数读取一个文本文件，并将其内容以字符串形式返回给调用过程。该函数不进行任何文本解析（例如去除空行）。错误检查仅限于调用 `FileExists` 方法。由于此函数读取的文本文件是由脚本创建的，因此不需要额外的错误检查。该方法使用 `OpenTextFile` 方法打开文件。`OpenTextFile` 的参数在第 3 章讨论 `FileSystemObject` 时以及在第 4 章讨论 `ReadFile` 函数时均有涉及。
 
 文件读取完成后，该函数会删除文件。同样，这样做是可行且安全的，因为最初就是该脚本生成了文件。在使用完成后删除文件是一种良好的做法，因为它可以保持系统清洁，并且在脚本退出后不会残留任何文件。
 
-```
+```vbscript
 '----------------------------------------------------------------------------
+
 ' Read a text file and return the contents
+
 '----------------------------------------------------------------------------
+
 Function ProcessResults(strFileName)
+
 Dim objFSO, objTextFile
+
 Dim strHTML, strReadLine
 
 Set objFSO = CreateObject("Scripting.FileSystemObject")
+
 If (objFSO.FileExists(strFileName)) Then
+
     Set objTextFile = objFSO.OpenTextFile(strFileName,1)
+
     strHTML=""
+
     Do While objTextFile.AtEndOfStream <> True
+
         strReadLine=objTextFile.ReadLine
+
         strHTML=strHTML & strReadLine & "<br>"
+
     Loop
+
     objTextFile.Close
+
     objFSO.DeleteFile(strFileName)
+
 Else
+
     strHTML="Error reading file."
+
 End If
 
 ProcessResults=strHTML
+
 End Function
 ```
 
 ### SaveResults
 
-SaveResults 函数将脚本诊断生成的输出写入用户指定的文本文件。VBScript 函数 InputBox 提供了一种简便的方式来询问用户所需的文件名，如图 9.3 所示。InputBox 函数的参数如下：
+`SaveResults` 函数将脚本诊断生成的输出写入用户指定的文本文件。VBScript 函数 `InputBox` 提供了一种简便的方式来询问用户所需的文件名，如图 9.3 所示。`InputBox` 函数的参数如下：
 
 ```
 strAnswer = InputBox(strPrompt, strTitle, strDefault, xPosition, _
+
 yPosition, helpfile, context)
 ```
 
 - `strAnswer` 是一个包含用户输入值的字符串。唯一必需的参数是 `strPrompt`，即显示给用户以请求其输入的文本。
-- `strTitle` 标注 InputBox 的标题栏。
+- `strTitle` 标注 `InputBox` 的标题栏。
 - `strDefault` 是一个预先填充到文本字段中的字符串。
 - 可选地，通过设置 `xPosition` 和 `yPosition` 来指定对话框的位置。
-- InputBox 还支持链接帮助文件和上下文，这可以为用户提供额外的信息。
+- `InputBox` 还支持链接帮助文件和上下文，这可以为用户提供额外的信息。
 
 第一个过程从命令 `ipconfig` 收集机器的网络配置。
 
-![网络配置图像](img/eafd0e1632fc08452cf4d68dbe912652_320_0.png)
-
 > 一个设计假设是，所有将运行此程序的客户端机器上都已经安装了 `ipconfig`（以及其他外部应用程序）。然而，任何时候运行外部应用程序时，务必确保你完全确定它将如何运行。例如，`reg.exe` 命令（可用于从控制台读取和写入注册表设置）在 Windows XP 上经历了重大改造，大多数参数都发生了变化。如果你无法提供你在其上测试过的版本的外部应用程序（例如，通过将其复制到本地机器并使用精确路径调用已知应用程序的可执行文件），那么请注意你使用的参数，以防它们在未来的版本中发生变化。
 
-脚本使用 `WScript.Shell.Run` 方法，而不是支持标准流（StdIn、StdOut、StdErr）的 ` Exec` 方法。做出这一设计决策是因为该程序可能在多台 Windows 计算机上运行。`Exec` 方法是在较新版本的 WSH 中引入的，在较早版本的 Windows 上会失败。`Run` 方法适用于带有旧版本 WSH 的 Windows 平台。`Run` 方法调用命令 `ipconfig /all` 并将输出（使用大于号 `>`）重定向到临时数据文件。`Run` 方法中的其余参数指示它不显示窗口（`0`），并暂停脚本直到外部命令执行完毕（`true`）。
+脚本使用 `WScript.Shell.Run` 方法，而不是支持标准流（`StdIn`、`StdOut`、`StdErr`）的 `Exec` 方法。做出这一设计决策是因为该程序可能在多台 Windows 计算机上运行。`Exec` 方法是在较新版本的 WSH 中引入的，在较早版本的 Windows 上会失败。`Run` 方法适用于带有旧版本 WSH 的 Windows 平台。`Run` 方法调用命令 `ipconfig /all` 并将输出（使用大于号 `>`）重定向到临时数据文件。`Run` 方法中的其余参数指示它不显示窗口（`0`），并暂停脚本直到外部命令执行完毕（`true`）。
 
 ```vbscript
 update.innerHTML="Collecting IP and Network Information.<hr/>"
+
 Set objShell = CreateObject("WScript.Shell")
+
 iReturn=objShell.Run("%comspec% /C ipconfig /all > " & _
+
 g_strTemp,0,true)
 ```
 
@@ -7665,7 +8562,9 @@ g_strTemp,0,true)
 
 ```vbscript
 strHTML=ProcessResults(g_strTemp)
+
 output.innerHTML=output.innerHTML & _
+
 Heading("IP Configuration Settings","Green") & strHTML
 ```
 
@@ -7673,14 +8572,21 @@ Heading("IP Configuration Settings","Green") & strHTML
 
 ```vbscript
 update.innerHTML="Checking Network Connection.<hr/>"
+
 bNetworkUp = False
+
 iReturn=objShell.Run("%comspec% /C ping " & strPingAddress & _
+
 " -n 1 > " & g_strTemp,0,true)
 
 strHTML=ProcessResults(g_strTemp)
+
 If (InStr(strHTML, "Reply")) Then bNetworkUp = True
+
 If bNetworkUp Then
+
     strHTML= Heading("Network appears to be online.","Green")
+
     output.innerHTML= output.innerHTML & strHTML
 ```
 
@@ -7688,9 +8594,13 @@ If bNetworkUp Then
 
 ```vbscript
 update.innerHTML="Performing Ping.<hr/>"
+
 iReturn=objShell.Run("%comspec% /C ping " & strPingAddress & _
+
 " -n 10 > " & g_strTemp,0,true)
+
 strHTML= Heading("Ping Test to " & strPingAddress & _
+
 " : Succeeded","Green")
 
 strHTML= strHTML & ProcessResults(g_strTemp)
@@ -7700,11 +8610,15 @@ traceroute 命令测量客户端与其目的地之间每一跳的延迟。此测
 
 ```vbscript
 update.innerHTML="Performing Traceroute.<hr/>"
+
 iReturn=objShell.Run("%comspec% /C tracert " & strTRAddress & _
+
 " > " & g_strTemp,0,true)
 
 If Err Then alert("An error occurred")
+
 strHTML=strHTML & Heading("Trace Route Results","Green") & _
+
 ProcessResults(g_strTemp)
 ```
 
@@ -7712,59 +8626,85 @@ ProcessResults(g_strTemp)
 
 ```vbscript
 Else
+
     strHTML=Heading("Network appears to be offline.","Red") & _
+
     strHTML
+
 End If
+
 output.innerHTML= output.innerHTML & strHTML
+
 On Error Goto 0
+
 End Sub
 ```
 
+**图 9.3** VBScript 的 `InputBox` 函数提供了一种简便的方法来获取用户提供的信息。
 
+如果用户输入了空条目，`SaveResults` 子程序将退出，但不会检查文件名中是否使用了非法字符。接下来，脚本使用 `CreateTextFile` 方法创建一个新的文本文件，并逐行写入 `output.innerText` 的内容。
 
-**图 9.3** VBScript 的 InputBox 函数提供了一种简便的方法来获取用户提供的信息。
+`innerText` 属性与 `innerHTML` 属性类似，该脚本经常使用 `innerHTML` 将诊断数据发布到 `<div id="output">`。然而，`innerHTML` 支持 HTML，而 `innerText` 仅支持纯文本（无格式）。这一特性很有用，因为我们只想将文本写入保存文件。否则，如果脚本使用了 `innerHTML`，保存文件将包含实际的 HTML，用户阅读起来会更加困难。
 
-如果用户输入了空条目，SaveResults 子程序将退出，但不会检查文件名中是否使用了非法字符。接下来，脚本使用 CreateTextFile 方法创建一个新的文本文件，并逐行写入 output.innerText 的内容。
+> 或者，我们可以编写一个格式化为 HTML 文档的 `savefile.html`，这样我们就可以保留格式并写出 `innerHTML`。
 
-innerText 属性与 innerHTML 属性类似，该脚本经常使用 innerHTML 将诊断数据发布到 `<div id="output">`。然而，innerHTML 支持 HTML，而 innerText 仅支持纯文本（无格式）。这一特性很有用，因为我们只想将文本写入保存文件。否则，如果脚本使用了 innerHTML，保存文件将包含实际的 HTML，用户阅读起来会更加困难。
-
-> 或者，我们可以编写一个格式化为 HTML 文档的 savefile.html，这样我们就可以保留格式并写出 innerHTML。
-
-```
+```vbscript
 ' --------------------------------------------------
+
 ' save dialog
+
 ' --------------------------------------------------
+
 Sub SaveResults
+
     Dim objFSO
+
     Dim strFileName
+
     Dim objTextFile
 
     Set objFSO = CreateObject("Scripting.FileSystemObject")
+
     strFileName = InputBox("Please enter the path to save file" _
+
         , "Save File", "c:\DiagnosticsOutput.txt")
+
     If strFileName = "" Then Exit Sub
 
     Set objTextFile = objFSO.CreateTextFile(strFileName)
+
     objTextFile.WriteLine output.innerText
+
     objTextFile.Close
+
 End Sub
 ```
 
 ### QuitScript
 
-QuitScript 子程序会清理任何遗留文件并退出函数。之前的 ProcessResults 函数应该已经充分清理了每个文本文件，这里的额外步骤通常是多余的。然而，在退出时提供一个关闭、清理类型的函数通常是一个有用且恰当的步骤。window.close() 方法是一个 HTA 方法，用于关闭当前窗口。
+`QuitScript` 子程序会清理任何遗留文件并退出函数。之前的 `ProcessResults` 函数应该已经充分清理了每个文本文件，这里的额外步骤通常是多余的。然而，在退出时提供一个关闭、清理类型的函数通常是一个有用且恰当的步骤。`window.close()` 方法是一个 HTA 方法，用于关闭当前窗口。
 
-```
+```vbscript
 '-----------------------------------
+
 'Quit
+
 '-----------------------------------
+
 Sub QuitScript
+
     On Error Resume Next
+
     Set objShell = CreateObject("WScript.Shell")
+
     Set objFSO = CreateObject("Scripting.FileSystemObject")
+
     objFSO.DeleteFile g_strTemp
+
     Set objFSO = Nothing
+
     window.close()
+
 End Sub
 ```
 
@@ -7772,112 +8712,145 @@ End Sub
 
 使用 HTA 作为脚本的包装器或外壳的优势之一是易于格式化前端。这种便利性源于 HTA 本身就是一个基本的网页，并且支持 HTML 格式。
 
-当 HTA 打开时，浏览器会解析并渲染所有 HTML，然后调用 Window_onload。这个函数可以立即调用其他子程序。接下来的代码使用标准 HTML 来定义 HTA 前端的外观和交互性。应用程序的按钮、复选框和文本字段使用 HTML input 元素定义。子程序通过定义 onClick 事件来启动。脚本通过分配的 id 引用元素属性。类定义了用于呈现元素的样式。
+当 HTA 打开时，浏览器会解析并渲染所有 HTML，然后调用 `Window_onload`。这个函数可以立即调用其他子程序。接下来的代码使用标准 HTML 来定义 HTA 前端的外观和交互性。应用程序的按钮、复选框和文本字段使用 HTML `input` 元素定义。子程序通过定义 `onClick` 事件来启动。脚本通过分配的 `id` 引用元素属性。类定义了用于呈现元素的样式。
 
-还要注意，在 script 标签内部，注释使用 VBScript 的撇号（'）语法表示。在 script 标签外部，使用注释约定 `<!-- comment -->`，如本脚本开头所示。
+还要注意，在 `script` 标签内部，注释使用 VBScript 的撇号（`'`）语法表示。在 `script` 标签外部，使用注释约定 `<!-- comment -->`，如本脚本开头所示。
 
-```
+```html
 '-----------------------------------
+
 'Format the HTA using standard HTML
+
 '-----------------------------------
+
 </script>
+
 </head>
 
 <body>
 ```
 
-脚本显示在一个由三行四列组成的单个表格单元格中，如图 9.4 所示。在纸上绘制表格布局 diagramming 对编程表格元素很有帮助。在这个脚本中，底部的两行跨越了顶部一行中的所有四列。表格元素的尺寸对于确保 HTA 外观良好以及如果用户调整 HTA 大小时能够适当缩放也很重要。图 9.4 还显示了元素的初始尺寸。其中两个尺寸设置为 *，这意味着浏览器将浮动该维度以达到定义的容器总宽度或高度。其余元素保持固定大小。这导致 HTA 的窗口调整行为类似于典型的应用程序。
+脚本显示在一个由三行四列组成的单个表格单元格中，如图 9.4 所示。在纸上绘制表格布局 diagramming 对编程表格元素很有帮助。在这个脚本中，底部的两行跨越了顶部一行中的所有四列。表格元素的尺寸对于确保 HTA 外观良好以及如果用户调整 HTA 大小时能够适当缩放也很重要。图 9.4 还显示了元素的初始尺寸。其中两个尺寸设置为 `*`，这意味着浏览器将浮动该维度以达到定义的容器总宽度或高度。其余元素保持固定大小。这导致 HTA 的窗口调整行为类似于典型的应用程序。
 
-## IT 管理员的十大 Windows 入门脚本
-
-```
+```html
 <table width="100%" height="100%" class="table">
+
     <tr height = 75px>
+
         <td align="center" width=150px><b><i>Client Diagnostic Tool</i></b></td>
+
         <td width=50px>
 ```
 
-HTML input 元素提供了用户与脚本的交互。脚本通过它们的 id 属性引用这些元素。这些元素支持许多属性。样式按钮之前在脚本的 `<style>` 部分定义，并通过定义的类（例如 `class="button"`）与元素关联。value 设置按钮的文本标签。许多 HTML 元素还支持事件（如 onClick），当记录到某些操作时会触发。例如，在以下代码中，当用户单击运行按钮时，input 元素的 onClick 事件会调用子程序 PerformDiagnostics，从而启动诊断测试。类似地，单击保存和退出按钮会分别启动 SaveResults 和 QuitScript 过程。
+HTML `input` 元素提供了用户与脚本的交互。脚本通过它们的 `id` 属性引用这些元素。这些元素支持许多属性。样式按钮之前在脚本的 `<style>` 部分定义，并通过定义的类（例如 `class="button"`）与元素关联。`value` 设置按钮的文本标签。许多 HTML 元素还支持事件（如 `onClick`），当记录到某些操作时会触发。例如，在以下代码中，当用户单击运行按钮时，`input` 元素的 `onClick` 事件会调用子程序 `PerformDiagnostics`，从而启动诊断测试。类似地，单击保存和退出按钮会分别启动 `SaveResults` 和 `QuitScript` 过程。
 
-```
+```html
 <input id=cmdRun class="button" type="button" value="Run"
+
        name="cmdRun" onClick="PerformDiagnostics()"><br>
+
 <input id=cmdSave class="button" type="button" value="Save"
+
        name="cmdSave" onClick="SaveResults()"><br>
+
 <input id=cmdQuit class="button" type="button" value="Quit"
+
        name="cmdQuit" onClick="QuitScript()"><br>
+
 </td>
 ```
 
-复选框允许用户定义他们希望执行的测试。通过包含定义 CHECKED 来指定复选框元素是否最初被选中。
+复选框允许用户定义他们希望执行的测试。通过包含定义 `CHECKED` 来指定复选框元素是否最初被选中。
 
-```
+```html
 <td width=150px>
+
 <input id=chkNet class="button" type="checkbox" CHECKED >
+
  Do Network Check<br>
+
 <input id=chkPC class="button" type="checkbox" CHECKED >
+
  Do PC Check<br>
+
 <input id=chkProcess class="button" type="checkbox" CHECKED >
+
  Do Process Check<br>
+
 </td>
 ```
 
-input 元素 text 定义了文本字段，此脚本用于收集 IP 地址的四个八位字节。最大长度和初始值也在此处设置。
+`input` 元素 `text` 定义了文本字段，此脚本用于收集 IP 地址的四个八位字节。最大长度和初始值也在此处设置。
 
-```
+```html
 <td width=* valign=top>
+
 Check Network Connection to:<br>
+
 IP Address
+
 <input id=txtIP1 class="tbox" type="text" MAXLENGTH=3 Value="127">.
+
 <input id=txtIP2 class="tbox" type="text" MAXLENGTH=3 Value="0">.
+
 <input id=txtIP3 class="tbox" type="text" MAXLENGTH=3 Value="0">.
+
 <input id=txtIP4 class="tbox" type="text" MAXLENGTH=3 Value="1">
+
 </td>
+
 </tr>
 ```
 
-第二行由单个列组成，该列跨越上一行的所有四列。为了控制该区域中的文本，表格数据单元格被分配了一个 `id="update"`。执行诊断测试的许多函数通过将 update.innerHTML 属性设置为更新消息来更新其状态。
+第二行由单个列组成，该列跨越上一行的所有四列。为了控制该区域中的文本，表格数据单元格被分配了一个 `id="update"`。执行诊断测试的许多函数通过将 `update.innerHTML` 属性设置为更新消息来更新其状态。
 
-```
+```html
 <tr>
+
     <td  height = 50 colspan=4 id="update">
+
         Select tests and click Run to begin.<hr/></td>
+
 </tr>
 ```
 
-文本的输出显示方式与之前的更新文本类似。然而，接下来的代码使用了一种稍微不同的方法。没有将元素 `id="output"` 分配给表格数据单元格，而是创建了一个新的 division 元素 `<div>`，并为其分配了 id="output"。`<div>`（和 `<span>`）元素允许独立引用内联文本。因为此文本是此表格单元格中的唯一项目，`id="output"` 应该分配给表格数据单元格，但这种替代方法演示了如何将一个文本主体与一个 id 关联起来，如果在不使用表格元素的情况下可以使用这种方法。
+文本的输出显示方式与之前的更新文本类似。然而，接下来的代码使用了一种稍微不同的方法。没有将元素 `id="output"` 分配给表格数据单元格，而是创建了一个新的 division 元素 `<div>`，并为其分配了 `id="output"`。`<div>`（和 `<span>`）元素允许独立引用内联文本。因为此文本是此表格单元格中的唯一项目，`id="output"` 应该分配给表格数据单元格，但这种替代方法演示了如何将一个文本主体与一个 `id` 关联起来，如果在不使用表格元素的情况下可以使用这种方法。
 
-```
+```html
 <tr>
+
     <td height = * colspan=4><div id="output"
+
         style= "width:100%; height:100%; overflow:scroll"></div>
+
     </td>
+
 </tr>
 
 </table>
+
 </body>
+
 </html>
 ```
 
-
-
 ## 摘要
 
-*ClientCheck* HTA 脚本展示了通过将脚本编写为 HTA 来为脚本添加基本前端界面的便捷性。与在 Office 应用程序中运行不同，该脚本依赖浏览器运行，这增加了可运行该脚本的机器数量。然而，请谨慎操作，因为这些脚本可以在当前登录用户的本地安全上下文中运行，从而带来强大的威力。但正是这种灵活性和强大功能，使得 HTA 成为脚本工具库中的利器。
+ClientCheck HTA 脚本展示了通过将脚本编写为 HTA 来为脚本添加基本前端界面的便捷性。与在 Office 应用程序中运行不同，该脚本依赖浏览器运行，这增加了可运行该脚本的机器数量。然而，请谨慎操作，因为这些脚本可以在当前登录用户的本地安全上下文中运行，从而带来强大的威力。但正是这种灵活性和强大功能，使得 HTA 成为脚本工具库中的利器。
 
 ## 关键点
 
--   考虑使用超文本应用程序（HTA）为脚本提供易于设计的用户界面。
--   HTA 为脚本提供用户交互性，例如复选框、单选按钮、文本框和其他控件。
--   使用 WMI 方法 ExecQuery 从本地或远程计算机高效返回 WMI 类数据。
--   务必理解方法或函数返回的对象类型——例如，方法返回的是单个对象还是对象集合？返回的对象类型是什么？使用软件开发工具包（SDK）查询可能不确定的新方法的具体信息。本脚本使用了多个 ExecQuery 方法调用，这些调用返回对象集合，在列出之前必须先进行枚举。
--   如果你无法（或不需要）通过脚本解决问题，可以考虑调用并利用现有工具，然后解析结果。虽然这可能不如编写自己的解决方案优雅，但许多基于 IT 的工具都刻意追求快速实用，调用外部工具同样有效。
+- 考虑使用超文本应用程序（HTA）为脚本提供易于设计的用户界面。
+- HTA 为脚本提供用户交互性，例如复选框、单选按钮、文本框和其他控件。
+- 使用 WMI 方法 `ExecQuery` 从本地或远程计算机高效返回 WMI 类数据。
+- 务必理解方法或函数返回的对象类型——例如，方法返回的是单个对象还是对象集合？返回的对象类型是什么？使用软件开发工具包（SDK）查询可能不确定的新方法的具体信息。本脚本使用了多个 `ExecQuery` 方法调用，这些调用返回对象集合，在列出之前必须先进行枚举。
+- 如果你无法（或不需要）通过脚本解决问题，可以考虑调用并利用现有工具，然后解析结果。虽然这可能不如编写自己的解决方案优雅，但许多基于 IT 的工具都刻意追求快速实用，调用外部工具同样有效。
 
-# 10 蠕虫漏洞检测器
+## 蠕虫漏洞检测器
 
 ## 概述
 
-蠕虫、病毒攻击以及其他不加区分地探测和攻击任何服务器的恶意软件，对我们的 IT 基础设施构成了日益增长的威胁。许多更成功的蠕虫，如 *Code Red* 和 *Nimda*，实际上利用的是软件供应商在攻击发生前数月就已修补的已知漏洞。由于这些蠕虫出现的频率和传播范围不断增加，防病毒和安全软件供应商持续加强其产品。然而，即使对新威胁保持了这种高度敏感性，IT 管理员仍然面临检查每台计算机是否存在易受攻击的服务和已应用更新的不可避免且艰巨的任务。
+蠕虫、病毒攻击以及其他不加区分地探测和攻击任何服务器的恶意软件，对我们的 IT 基础设施构成了日益增长的威胁。许多更成功的蠕虫，如 Code Red 和 Nimda，实际上利用的是软件供应商在攻击发生前数月就已修补的已知漏洞。由于这些蠕虫出现的频率和传播范围不断增加，防病毒和安全软件供应商持续加强其产品。然而，即使对新威胁保持了这种高度敏感性，IT 管理员仍然面临检查每台计算机是否存在易受攻击的服务和已应用更新的不可避免且艰巨的任务。
 
 考虑一个轻量级、快速响应的脚本，它可以协助你侦察易受攻击的服务器。利用我们迄今为止探讨的一些技术——例如对每台计算机运行命令行工具、查找正在运行的特定服务以及检查已应用的补丁——我们可以创建一个脚本，评估你对特定蠕虫或漏洞利用的易受攻击性。
 
@@ -7901,62 +8874,60 @@ IP Address
 
 | 业务目标 | 技术要求 |
 | :--- | :--- |
-| 扫描域中的计算机。 | 使用第 8 章介绍的 *DumpComputerList* 脚本生成指定域中的计算机列表。Ping 每台机器以查看其是否在网络上响应，然后对列表中的每台活动计算机执行每个选定的扫描。 |
-| 扫描开放的 Windows 服务（例如名为 *w3svc* 的 Microsoft 万维网服务器）。 | 使用 WMI Win32_Service 类连接到远程计算机并查询所选服务的 State。突出显示状态为 Running 或 Stopped 的服务。 |
+| 扫描域中的计算机。 | 使用第 8 章介绍的 DumpComputerList 脚本生成指定域中的计算机列表。Ping 每台机器以查看其是否在网络上响应，然后对列表中的每台活动计算机执行每个选定的扫描。 |
+| 扫描开放的 Windows 服务（例如名为 w3svc 的 Microsoft 万维网服务器）。 | 使用 WMI `Win32_Service` 类连接到远程计算机并查询所选服务的 State。突出显示状态为 Running 或 Stopped 的服务。 |
 | 扫描开放的网络端口。 | 利用第三方的基于命令行的端口扫描工具扫描目标计算机的指定端口。 |
-| 扫描已安装的 Microsoft QFE 更新。 | 使用 WMI Win32_QuickFixEngineering 类确定是否已安装指定的 QFE 更新。 |
+| 扫描已安装的 Microsoft QFE 更新。 | 使用 WMI `Win32_QuickFixEngineering` 类确定是否已安装指定的 QFE 更新。 |
 
-此脚本包含多个函数，用于扫描针对特定蠕虫易受攻击的服务或系统。脚本检查正在运行的特定服务，利用流行的 *nmap* 网络扫描器查找特定的开放端口，并检查是否已应用特定的快速修复工程 (QFE) 热修复补丁。
+此脚本包含多个函数，用于扫描针对特定蠕虫易受攻击的服务或系统。脚本检查正在运行的特定服务，利用流行的 nmap 网络扫描器查找特定的开放端口，并检查是否已应用特定的快速修复工程 (QFE) 热修复补丁。
 
-> 该脚本利用了由 Fyodor 编写的流行命令行端口扫描器 nmap 的功能。从 www.insecure.org/nmap/nmap_download.html 下载 nmap 扫描器的 Windows 版本和详细的安装说明。要使用 nmap，你还需要 Windows 的 WinPcap 数据包捕获架构，可以从 http://winpcap.polito.it/install/default.htm 下载。此软件只需在执行实际扫描的计算机上安装。如果你选择不使用 nmap 扫描器，仍然可以通过从设置工作表中选择要运行的测试来执行其他测试。你可以通过编辑 PortCheck 函数来处理其他端口扫描器的语法参数和输出，从而使用你自己的命令行端口扫描器。
+> 该脚本利用了由 Fyodor 编写的流行命令行端口扫描器 nmap 的功能。从 www.insecure.org/nmap/nmap_download.html 下载 nmap 扫描器的 Windows 版本和详细的安装说明。要使用 nmap，你还需要 Windows 的 WinPcap 数据包捕获架构，可以从 http://winpcap.polito.it/install/default.htm 下载。此软件只需在执行实际扫描的计算机上安装。如果你选择不使用 nmap 扫描器，仍然可以通过从设置工作表中选择要运行的测试来执行其他测试。你可以通过编辑 `PortCheck` 函数来处理其他端口扫描器的语法参数和输出，从而使用你自己的命令行端口扫描器。
 
-此脚本使用 Win32_QuickFixEngineering WMI 类来收集远程计算机上所有已安装更新的列表。在早期版本的 Windows 2000 计算机（SP3 之前）上，调用 Win32_QuickFixEngineering 类存在一个缺陷，这可能导致脚本挂起，并使客户端计算机的 Winmgmt.exe 进程在内存和 CPU 使用率上增加。微软在适用于 SP3 之前计算机的热修复补丁以及 Windows 2000 SP3 中修复了此错误。有关此问题及其解决方案的更多信息，请参见微软知识库 (http://support.microsoft.com/default.aspx?scid=kb;en-us;279225)。
+此脚本使用 `Win32_QuickFixEngineering` WMI 类来收集远程计算机上所有已安装更新的列表。在早期版本的 Windows 2000 计算机（SP3 之前）上，调用 `Win32_QuickFixEngineering` 类存在一个缺陷，这可能导致脚本挂起，并使客户端计算机的 `Winmgmt.exe` 进程在内存和 CPU 使用率上增加。微软在适用于 SP3 之前计算机的热修复补丁以及 Windows 2000 SP3 中修复了此错误。有关此问题及其解决方案的更多信息，请参见微软知识库 (http://support.microsoft.com/default.aspx?scid=kb;en-us;279225)。
 
-因此，如果你知道目标机器已安装 SP3 或热修复补丁 Q279225.exe，则应指定仅扫描 QFE 更新。前述知识库文章中也包含了指向该热修复补丁的链接。如果你确实扫描了一台计算机，并且 Microsoft Excel 报告错误说 Excel 正在等待另一个应用程序完成 OLE 操作，那么你可能遇到了此缺陷。你将看到当前计算机的名称，此时应终止 Excel，检查远程计算机上的 Winmgmt.exe 进程，并将该计算机从未来的 QFE 更新扫描中移除（或按照知识库文章中的说明为该计算机打补丁）。
+因此，如果你知道目标机器已安装 SP3 或热修复补丁 `Q279225.exe`，则应指定仅扫描 QFE 更新。前述知识库文章中也包含了指向该热修复补丁的链接。如果你确实扫描了一台计算机，并且 Microsoft Excel 报告错误说 Excel 正在等待另一个应用程序完成 OLE 操作，那么你可能遇到了此缺陷。你将看到当前计算机的名称，此时应终止 Excel，检查远程计算机上的 `Winmgmt.exe` 进程，并将该计算机从未来的 QFE 更新扫描中移除（或按照知识库文章中的说明为该计算机打补丁）。
 
-此脚本建立在第 8 章介绍的基于 Excel 的 DumpComputerList 脚本基础上，并使用该工具构建要扫描的计算机列表和记录输出。此脚本使用的函数和子程序如下：
+此脚本建立在第 8 章介绍的基于 Excel 的 `DumpComputerList` 脚本基础上，并使用该工具构建要扫描的计算机列表和记录输出。此脚本使用的函数和子程序如下：
 
--   **SetupScan：** 解析 *Setup* 工作表以获取所需的扫描。
-    -   使用 *Setup* 工作表上识别的扫描更新 *Output* 工作表。
+- **SetupScan：** 解析 Setup 工作表以获取所需的扫描。
+  - 使用 Setup 工作表上识别的扫描更新 Output 工作表。
 
--   **SystemScan：** 遍历计算机列表，并调用各个扫描函数执行要执行的扫描。
-    -   支持单个或多个选定的计算机。
-    -   支持单个或多个选定的扫描。
+- **SystemScan：** 遍历计算机列表，并调用各个扫描函数执行要执行的扫描。
+  - 支持单个或多个选定的计算机。
+  - 支持单个或多个选定的扫描。
 
--   **Pingable：** 确定系统是否响应网络 ping。
-    -   使用 Shell 对象 Run 方法执行 ping 命令。
-    -   使用 FileSystemObject 解析输出。
+- **Pingable：** 确定系统是否响应网络 ping。
+  - 使用 `Shell` 对象 `Run` 方法执行 ping 命令。
+  - 使用 `FileSystemObject` 解析输出。
 
+**ServiceCheck：** 检查特定的运行服务。
+- 使用 WMI `Win32_Services` 类返回远程计算机上服务的运行状态。
 
+**PortCheck：** 使用命令行端口扫描器扫描机器上的开放端口。
+- 使用 `Shell` 对象的 `Run` 方法执行针对远程计算机的自定义 nmap 运行。Nmap 是一款流行的开源端口扫描器。
+- 使用 `FileSystemObject` 解析输出结果。
 
-**ServiceCheck：**检查特定的运行服务。
-- 使用 WMI Win32_Services 类返回远程计算机上服务的运行状态。
+**QFECheck：** 检查特定的 QFE 热修复补丁。
+- 执行 WMI `ExecQuery` 方法以确定是否已应用 QFE 热修复补丁。
 
-**PortCheck：**使用命令行端口扫描器扫描机器上的开放端口。
-- 使用 Shell 对象的 Run 方法执行针对远程计算机的自定义 *nmap* 运行。*Nmap* 是一款流行的开源端口扫描器。
-- 使用 FileSystemObject 解析输出结果。
-
-**QFECheck：**检查特定的 QFE 热修复补丁。
-- 执行 WMI ExecQuery 方法以确定是否已应用 QFE 热修复补丁。
-
-**DisplayResults：**检查特定的热修复补丁或更新。
+**DisplayResults：** 检查特定的热修复补丁或更新。
 - 在 Excel 的指定单元格中显示格式化文本。
 
-# 分发与安装
+## 分发与安装
 
-使用这个进化版脚本的方式与其前身 *DumpComputerList* 基本相同，后者在第 8 章中介绍过。在增强的 *Setup* 工作表上定义用于驱动脚本的参数。首先，与第 8 章的 *DumpComputerList* 脚本一样，输入域名和 *Output* 工作表的名称，然后单击第一个按钮（Pull Computers from Directory）以发起对指定域的目录查询。该脚本使用第 8 章中介绍的相同脚本创建并填充 *Output* 工作表。接下来，在第二个按钮下方显示的 Service Scan、Port Scan 和 QFE Scan 框中指定扫描信息，如图 10.1 所示。在您希望包含在 *Output* 工作表上的扫描旁边放置 x。通过这种选择性，您可以在此工作表上构建大量扫描列表，然后仅切换您希望复制到 *Output* 工作表的扫描。（在 *Output* 工作表上运行扫描之前，您可以进一步指定实际要运行的扫描。）*Column* 参数指定该扫描将添加到 *Output* 工作表的哪一列编号。更新 *nmap* 可执行文件的路径（或者如果 *nmap* 已在您的 Path 环境变量中，可以清除该单元格）。
+使用这个进化版脚本的方式与其前身 `DumpComputerList` 基本相同，后者在第 8 章中介绍过。在增强的 Setup 工作表上定义用于驱动脚本的参数。首先，与第 8 章的 `DumpComputerList` 脚本一样，输入域名和 Output 工作表的名称，然后单击第一个按钮（Pull Computers from Directory）以发起对指定域的目录查询。该脚本使用第 8 章中介绍的相同脚本创建并填充 Output 工作表。接下来，在第二个按钮下方显示的 Service Scan、Port Scan 和 QFE Scan 框中指定扫描信息，如图 10.1 所示。在您希望包含在 Output 工作表上的扫描旁边放置 x。通过这种选择性，您可以在此工作表上构建大量扫描列表，然后仅切换您希望复制到 Output 工作表的扫描。（在 Output 工作表上运行扫描之前，您可以进一步指定实际要运行的扫描。）Column 参数指定该扫描将添加到 Output 工作表的哪一列编号。更新 nmap 可执行文件的路径（或者如果 nmap 已在您的 Path 环境变量中，可以清除该单元格）。
 
 > 在 Excel 中，列可以通过字母（A、B 或 C）或数字（1、2 或 3）引用。脚本通常使用数字列引用，因为使用数字比使用字母更容易进行迭代。
 
-添加并配置好扫描后，准备更新 *Output* 工作表时，单击第二个按钮（Format Output Worksheet for System Scan）。这将启动 *SetupScan* 子程序，该子程序遍历三个扫描列表中的每一个，并将扫描类型和定义添加到 *Output* 工作表的相应列中。扫描类型包括服务扫描（s）、端口扫描（p）和 QFE 扫描（q）。
+添加并配置好扫描后，准备更新 Output 工作表时，单击第二个按钮（Format Output Worksheet for System Scan）。这将启动 `SetupScan` 子程序，该子程序遍历三个扫描列表中的每一个，并将扫描类型和定义添加到 Output 工作表的相应列中。扫描类型包括服务扫描（s）、端口扫描（p）和 QFE 扫描（q）。
 
-> 第二个按钮仅根据设置工作表中列出的参数格式化输出工作表。实际执行扫描的代码（SystemScan）仅使用输出工作表中的数据来确定要扫描的内容。如果您愿意，实际上可以跳过第二步并手动格式化输出工作表。第二步提供了便利，并确保输出工作表上的扫描语法格式正确。这就是设计自己的软件的美妙之处——您可以根据需要完全自定义外观、感觉和操作。
+> 第二个按钮仅根据设置工作表中列出的参数格式化输出工作表。实际执行扫描的代码（`SystemScan`）仅使用输出工作表中的数据来确定要扫描的内容。如果您愿意，实际上可以跳过第二步并手动格式化输出工作表。第二步提供了便利，并确保输出工作表上的扫描语法格式正确。这就是设计自己的软件的美妙之处——您可以根据需要完全自定义外观、感觉和操作。
 
 ![](img/eafd0e1632fc08452cf4d68dbe912652_335_0.png)
 
 **图 10.1** WormScanner 的修改版 Setup 工作表定义了要执行哪些扫描。
 
-单击第二个按钮运行脚本 SetupScan 后，单击 Output 工作表并确认您选择的扫描已转置到此工作表上，如图 10.2 所示。让我们看看此脚本的 Output 工作表与第 8 章 DumpComputerList 的 Output 工作表之间的一些差异。
+单击第二个按钮运行脚本 `SetupScan` 后，单击 Output 工作表并确认您选择的扫描已转置到此工作表上，如图 10.2 所示。让我们看看此脚本的 Output 工作表与第 8 章 `DumpComputerList` 的 Output 工作表之间的一些差异。
 
 ![](img/eafd0e1632fc08452cf4d68dbe912652_336_0.png)
 
@@ -7970,65 +8941,63 @@ IP Address
 
 **图 10.3** 该脚本生成一个信息矩阵，帮助您评估对可能利用漏洞服务或系统的蠕虫或病毒的易感性。
 
-该脚本使用对 Microsoft WMI Scripting V 1.2 Library 的 VBA 类型库引用。如果您计算机上没有较新版本，您可能需要将此库降级到 V 1.1。（从 Visual Basic 编辑器中，选择 Tools、References。取消选择标记为 *Missing* 的引用，然后查找并添加该库的旧版本。有关 Excel 如何使用引用的更多信息，请参阅第 8 章。）
+该脚本使用对 Microsoft WMI Scripting V 1.2 Library 的 VBA 类型库引用。如果您计算机上没有较新版本，您可能需要将此库降级到 V 1.1。（从 Visual Basic 编辑器中，选择 Tools、References。取消选择标记为 Missing 的引用，然后查找并添加该库的旧版本。有关 Excel 如何使用引用的更多信息，请参阅第 8 章。）
 
-# 输出
+## 输出
 
-脚本将输出记录在 *Setup* 工作表上命名的 *Output* 工作表上，如图 10.3 所示。
+脚本将输出记录在 Setup 工作表上命名的 Output 工作表上，如图 10.3 所示。
 
 ## 解决方案摘要
 
-这个基于 Excel 的脚本通过添加扫描选定计算机以查找可能的漏洞来源的功能，扩展了第 8 章中介绍的 *DumpComputerList* 脚本。该工具扫描运行中的服务、查找开放的网络端口，并检查已安装的 QFE 更新。
+这个基于 Excel 的脚本通过添加扫描选定计算机以查找可能的漏洞来源的功能，扩展了第 8 章中介绍的 `DumpComputerList` 脚本。该工具扫描运行中的服务、查找开放的网络端口，并检查已安装的 QFE 更新。
 
-# 目标
+## 目标
 
 一种基于 Excel 的工具，扫描计算机目录以查找特定服务、开放的网络端口或已安装的热修复补丁，以识别可能的蠕虫漏洞。
 
-## Excel 对象模型
+### Excel 对象模型
 
 - 工作表操作
 - 单元格/区域格式化
 
-## RecordSet
+### RecordSet
 
 - EOF
 - Fields.Item(x).Value
 
-## Scripting.FileSystemObject
+### Scripting.FileSystemObject
 
 - DeleteFile
 - OpenTextFile
 - ReadLine
 
-## VBA 选项
+### VBA 选项
 
 - Option Explicit
 - Option Compare Text
 
-## VBA 错误处理
+### VBA 错误处理
 
 - On Error Resume Next
 - On Error Goto 0
 
-## 用户数据类型
+### 用户数据类型
 
 - 使用 Type 声明用户自定义数据类型
 
-## WbemScripting.SwbemObject
+### WbemScripting.SwbemObject
 
 - ConnectServer
 - ExecQuery
 
-## WshShell
+### WshShell
 
 - Run
 - ExpandEnvironmentStrings
 
-# 脚本
+## 脚本
 
-这个脚本接续了第 8 章 *DumpComputerList* 脚本的内容。虽然对第 8 章的脚本进行了一些基本的单元格格式更改，但脚本的其余部分保持第 8 章中介绍的原样。该脚本呈现在 *WormScanner.xls* 工作簿的名为 *DumpComputerList* 的模块中。本章其余部分讨论的 *WormScanner* 脚本呈现在名为 *WormScanner* 的模块中。要访问代码，请打开工作簿 *WormScanner.xls* 和 Visual Basic 编辑器（从工作簿中按 Alt-F11），然后单击名为 *WormScanner* 的模块，如图 10.4 所示。
-
-314 IT Administrator's Top 10 Introductory Scripts for Windows
+这个脚本接续了第 8 章 `DumpComputerList` 脚本的内容。虽然对第 8 章的脚本进行了一些基本的单元格格式更改，但脚本的其余部分保持第 8 章中介绍的原样。该脚本呈现在 WormScanner.xls 工作簿的名为 DumpComputerList 的模块中。本章其余部分讨论的 WormScanner 脚本呈现在名为 WormScanner 的模块中。要访问代码，请打开工作簿 WormScanner.xls 和 Visual Basic 编辑器（从工作簿中按 Alt-F11），然后单击名为 WormScanner 的模块，如图 10.4 所示。
 
 ![](img/eafd0e1632fc08452cf4d68dbe912652_339_0.png)
 
@@ -8036,87 +9005,113 @@ IP Address
 
 > 注意在图 10.4 中，Declarations 下拉列表包含此特定模块的所有子程序和函数。这是在 Visual Basic 编辑器中查找特定子程序或函数的便捷方法。
 
-名为 *DumpComputerList* 的模块包含第 8 章中介绍的 *ComputerList* 代码。Declarations 下拉框提供了对模块内子程序和函数的便捷访问。
+名为 DumpComputerList 的模块包含第 8 章中介绍的 ComputerList 代码。Declarations 下拉框提供了对模块内子程序和函数的便捷访问。
 
-> 该脚本在 CD-ROM 上以 /chapter 10/scripts/wormscanner.xls 的形式提供。此脚本包含在需要 Excel 2000 或更高版本以及 Windows Script Host 5.6 的 Excel 文档中。与本书中的其他脚本一样，请记住在部署到任何生产系统之前，在测试环境中测试此脚本。
+> 该脚本在 CD-ROM 上以 `/chapter 10/scripts/wormscanner.xls` 的形式提供。此脚本包含在需要 Excel 2000 或更高版本以及 Windows Script Host 5.6 的 Excel 文档中。与本书中的其他脚本一样，请记住在部署到任何生产系统之前，在测试环境中测试此脚本。
 
 ### 模块级代码
 
-Option 语句必须为每个模块指定，我们已在此模块中添加了 Option Explicit 和 Option Compare Text 语句。请记住，
-
-
-
- Option Explicit 强制声明所有变量，Option Compare Text 将默认的字符串比较方法设置为 Text。
+`Option` 语句必须为每个模块指定，我们已在此模块中添加了 `Option Explicit` 和 `Option Compare Text` 语句。请记住，`Option Explicit` 强制声明所有变量，`Option Compare Text` 将默认的字符串比较方法设置为 `Text`。
 
 ```
 Option Explicit
+
 Option Compare Text
 ```
 
 ### SetupScan
 
-子程序 SetupScan 遍历*Setup*工作表中的三个扫描列表，并将标记为 x 的扫描转置到*Output*工作表的指定列中。
+子程序 `SetupScan` 遍历 Setup 工作表中的三个扫描列表，并将标记为 x 的扫描转置到 Output 工作表的指定列中。
 
-首先，脚本调用子程序 PreFormatTable 清除*Output*工作表上可能存在的任何标题，例如来自上一次运行的标题。接下来，它调用子程序 TransposeColumns 并传入多个参数。TransposeColumns 之所以这样命名，是为了说明**分解**的概念。分解是将重复的代码过程精简到最小化重复程度的过程。例如，与其创建三个代码块，每个都遍历不同的数据并显示类似的输出，SetupScan 函数只需三次调用一个函数即可。当这段代码需要维护时，维护人员只需在一个地方而不是三个地方修改代码。
+首先，脚本调用子程序 `PreFormatTable` 清除 Output 工作表上可能存在的任何标题，例如来自上一次运行的标题。接下来，它调用子程序 `TransposeColumns` 并传入多个参数。`TransposeColumns` 之所以这样命名，是为了说明分解的概念。分解是将重复的代码过程精简到最小化重复程度的过程。例如，与其创建三个代码块，每个都遍历不同的数据并显示类似的输出，`SetupScan` 函数只需三次调用一个函数即可。当这段代码需要维护时，维护人员只需在一个地方而不是三个地方修改代码。
 
-扫描配置信息包括扫描类型和扫描属性。第一组扫描数据是服务扫描，在*Output*工作表上用扫描类型 **s** 指定。服务扫描的唯一属性是服务名称（例如 w3svc）。
+扫描配置信息包括扫描类型和扫描属性。第一组扫描数据是服务扫描，在 Output 工作表上用扫描类型 s 指定。服务扫描的唯一属性是服务名称（例如 `w3svc`）。
 
-第二种扫描类型是端口扫描，用 **p** 表示。端口扫描属性包括协议（TCP 或 UDP）和端口号（1-65534）。例如，标准 Web 服务器通常在 TCP 端口 80。脚本在*Output*工作表上将此信息总结为 protocol-port（例如，TCP-80）。
+第二种扫描类型是端口扫描，用 p 表示。端口扫描属性包括协议（TCP 或 UDP）和端口号（1-65534）。例如，标准 Web 服务器通常在 TCP 端口 80。脚本在 Output 工作表上将此信息总结为 protocol-port（例如，TCP-80）。
 
-此脚本执行的最后一次扫描是查找已安装的 QFE 更新，用扫描类型 **q** 表示。QFE 扫描的属性包括 QFE HotFixID。
+此脚本执行的最后一次扫描是查找已安装的 QFE 更新，用扫描类型 q 表示。QFE 扫描的属性包括 QFE HotFixID。
 
-在此脚本中，TransposeColumns 需要三个参数，外加一个可选的第四参数。在声明函数或子程序时使用关键字 Optional 可将参数设为可选。此脚本中的参数代表操作列。第一个参数 iColName 代表包含扫描名称的列号。第二个参数 iColColumn 代表*Output*工作表上插入扫描数据的目标列号。第三个参数代表扫描的名称，**s**、**p** 或 **q** 分别代表服务扫描、端口扫描或 QFE 扫描。第四个参数 iColOptName 是可选的，代表可能包含扫描第二个名称的第二列的列号。它仅用于端口扫描，将两个名称（如 TCP 和 80）连接起来显示为 TCP-80。
+在此脚本中，`TransposeColumns` 需要三个参数，外加一个可选的第四参数。在声明函数或子程序时使用关键字 `Optional` 可将参数设为可选。此脚本中的参数代表操作列。第一个参数 `iColName` 代表包含扫描名称的列号。第二个参数 `iColColumn` 代表 Output 工作表上插入扫描数据的目标列号。第三个参数代表扫描的名称，s、p 或 q 分别代表服务扫描、端口扫描或 QFE 扫描。第四个参数 `iColOptName` 是可选的，代表可能包含扫描第二个名称的第二列的列号。它仅用于端口扫描，将两个名称（如 TCP 和 80）连接起来显示为 TCP-80。
 
 ```
 '-----------------------------------------------------------------------
+
 ' 从 Setup 工作表读取服务、端口和 QFE 信息
+
 ' 并添加到 Output 工作表
+
 '-----------------------------------------------------------------------
 
 Sub SetupScan()
+
 Dim i As Integer
+
 Dim objWsSetup, objWsOutput As Variant
+
 Set objWsSetup = Worksheets("Setup")
+
 Set objWsOutput = Worksheets(objWsSetup.Cells(6, 5).Value)
+
 PreFormatTable objWsOutput
 
 TransposeColumns 3, 4, "s"
+
 TransposeColumns 7, 9, "p", 8
+
 TransposeColumns 12, 13, "q"
 
 End Sub
 ```
 
-子程序 TransposeColumns 从 Setup 工作表读取指定的扫描配置数据，并将标记为 x 的扫描转置到 Output 工作表的指定列中。该子程序从第 23 行开始循环（对应于 Setup 工作表上每个扫描的第一行），并逐步遍历连续的行，直到遇到空单元格为止。对于每个扫描项，循环首先查找 x，如果存在，则读取扫描配置信息并将其插入到 Output 工作表的指定列中。
+子程序 `TransposeColumns` 从 Setup 工作表读取指定的扫描配置数据，并将标记为 x 的扫描转置到 Output 工作表的指定列中。该子程序从第 23 行开始循环（对应于 Setup 工作表上每个扫描的第一行），并逐步遍历连续的行，直到遇到空单元格为止。对于每个扫描项，循环首先查找 x，如果存在，则读取扫描配置信息并将其插入到 Output 工作表的指定列中。
 
-除了扫描属性之外，TransposeColumns 还在 Output 工作表的第 2 行放置一个 x。实际的扫描子程序 SystemScan 会查找这个 x 以确定是否应执行该扫描。这样，TransposeColumns 子程序默认启用所有扫描。相反，你可以简单地从 Output 工作表上其对应的上方移除 x 来禁用任何扫描。
+除了扫描属性之外，`TransposeColumns` 还在 Output 工作表的第 2 行放置一个 x。实际的扫描子程序 `SystemScan` 会查找这个 x 以确定是否应执行该扫描。这样，`TransposeColumns` 子程序默认启用所有扫描。相反，你可以简单地从 Output 工作表上其对应的上方移除 x 来禁用任何扫描。
 
 ```
 Sub TransposeColumns(iColName, iColColumn, strScanType, Optional iColOptName)
-Dim i
-Dim strName
-Dim objWsSetup, objWsOutput As Variant
-Set objWsSetup = Worksheets("Setup")
-Set objWsOutput = Worksheets(objWsSetup.Cells(6, 5).Value)
-i = 23
-While Not IsEmpty(objWsSetup.Cells(i, iColName))
-If InStr(objWsSetup.Cells(i, iColName - 1), "x") Then
-objWsOutput.Cells(2, objWsSetup.Cells(i, iColColumn).Value) = "x"
-objWsOutput.Cells(3, objWsSetup.Cells(i, iColColumn).Value) = _
-strScanType
-```
 
-```
+Dim i
+
+Dim strName
+
+Dim objWsSetup, objWsOutput As Variant
+
+Set objWsSetup = Worksheets("Setup")
+
+Set objWsOutput = Worksheets(objWsSetup.Cells(6, 5).Value)
+
+i = 23
+
+While Not IsEmpty(objWsSetup.Cells(i, iColName))
+
+If InStr(objWsSetup.Cells(i, iColName - 1), "x") Then
+
+objWsOutput.Cells(2, objWsSetup.Cells(i, iColColumn).Value) = "x"
+
+objWsOutput.Cells(3, objWsSetup.Cells(i, iColColumn).Value) = _
+
+strScanType
+
 If Not IsEmpty(objWsSetup.Cells(i, iColOptName)) Then
+
     strName = objWsSetup.Cells(i, iColName).Value & " - " & _
+
               objWsSetup.Cells(i, iColOptName).Value
+
 Else
+
     strName = objWsSetup.Cells(i, iColName).Value
+
 End If
+
 objWsOutput.Cells(4, objWsSetup.Cells(i, iColColumn).Value) = _
+
     strName
+
 End If
+
 i = i + 1
+
 Wend
 
 End Sub
@@ -8124,49 +9119,65 @@ End Sub
 
 ### SystemScan
 
-子程序 SystemScan 遍历指定 Output 工作表上列出的所有计算机，对于第 1 列中标记为 x 的每一行，脚本执行选定的扫描。正如我们在子程序 SetupScan 中看到的，扫描在指定 Output 工作表的第 2 到第 4 行中定义。如果第 2 行中的扫描标记为 x，脚本将执行该扫描。否则，它将增加列计数器 j 以查找下一个扫描。它继续处理各列，直到找到五个连续的空列，然后继续处理下一台计算机。通过放置或移除 x，你可以轻松配置脚本以对所有计算机执行所有扫描，或仅对特定计算机执行特定扫描。
+子程序 `SystemScan` 遍历指定 Output 工作表上列出的所有计算机，对于第 1 列中标记为 x 的每一行，脚本执行选定的扫描。正如我们在子程序 `SetupScan` 中看到的，扫描在指定 Output 工作表的第 2 到第 4 行中定义。如果第 2 行中的扫描标记为 x，脚本将执行该扫描。否则，它将增加列计数器 j 以查找下一个扫描。它继续处理各列，直到找到五个连续的空列，然后继续处理下一台计算机。通过放置或移除 x，你可以轻松配置脚本以对所有计算机执行所有扫描，或仅对特定计算机执行特定扫描。
 
-SystemScan 使用在第 8 章的 DumpComputerList 脚本中描述的自定义数据类型 aComputer 数组（在此工作簿的 DumpComputerList 模块中定义）来存储扫描中使用的计算机列表。脚本声明了多个字符串，用于存储每种扫描类型的输入和结果值。例如，strServiceName 包含要扫描的服务名称，strServiceState 包含该扫描的结果，例如服务是 Stopped 还是 Running。脚本使用变量 iBlankColumns 来计算 blank 列的数量，以指示要执行的扫描的结束。脚本还声明了 Setup（objWsSetup）和 Output（objWsOutput）工作表对象，以及定义当前域的字符串（strDomain）。
+`SystemScan` 使用在第 8 章的 `DumpComputerList` 脚本中描述的自定义数据类型 `aComputer` 数组（在此工作簿的 `DumpComputerList` 模块中定义）来存储扫描中使用的计算机列表。脚本声明了多个字符串，用于存储每种扫描类型的输入和结果值。例如，`strServiceName` 包含要扫描的服务名称，`strServiceState` 包含该扫描的结果，例如服务是 Stopped 还是 Running。脚本使用变量 `iBlankColumns` 来计算 blank 列的数量，以指示要执行的扫描的结束。脚本还声明了 Setup（`objWsSetup`）和 Output（`objWsOutput`）工作表对象，以及定义当前域的字符串（`strDomain`）。
 
-脚本使用函数 LoadComputerList 从 Output 工作表中列出的计算机填充数组 aComputer，该函数也在 DumpComputerList 脚本中先前讨论过。
+脚本使用函数 `LoadComputerList` 从 Output 工作表中列出的计算机填充数组 `aComputer`，该函数也在 `DumpComputerList` 脚本中先前讨论过。
 
 ```
 ' ------------------------------------------------------------------
+
 ' 执行服务和端口扫描的主程序
+
 ' ------------------------------------------------------------------
-```
 
-## IT Administrator's Top 10 Introductory Scripts for Windows
-
-```
 Sub SystemScan()
+
     Dim aComputer() As ComputerData
+
     Dim strDomain, strWsOutput, strServiceName, strServiceState As String
+
     Dim strProtocol, strPort, strPortState As String
+
     Dim strQFE, strQFEState As String
+
     Dim objWsSetup, objWsOutput As Worksheet
+
     Dim lFinalRowNum As Integer
+
     Dim i, j, iBlankColumns As Integer
+
     Set objWsSetup = Worksheets("Setup")
+
     strWsOutput = objWsSetup.Cells(6, 5).Value
+
     strDomain = objWsSetup.Cells(5, 5).Value
+
     Worksheets(strWsOutput).Activate
+
     lFinalRowNum = LoadComputerList(aComputer, objWsOutput)
 ```
 
-SystemScan 在真正启动扫描之前启动三个循环并确认多个条件。在第一个循环中，脚本遍历数组 aComputer 中的所有计算机。扫描脚本通过用户定义的数据类型元素 aComputer(i).Name 和 aComputer(i).Row 获取当前计算机的名称和行号，其中计数器变量 i 从 1 递增到数组的上界。为了使当前计算机始终显示在屏幕上，脚本选择当前行上的一个单元格——这可以防止数据滚动出屏幕。
+`SystemScan` 在真正启动扫描之前启动三个循环并确认多个条件。在第一个循环中，脚本遍历数组 `aComputer` 中的所有计算机。扫描脚本通过用户定义的数据类型元素 `aComputer(i).Name` 和 `aComputer(i).Row` 获取当前计算机的名称和行号，其中计数器变量 i 从 1 递增到数组的上界。为了使当前计算机始终显示在屏幕上，脚本选择当前行上的一个单元格——这可以防止数据滚动出屏幕。
 
 接下来，脚本检查当前计算机行的第 1 列是否包含 x，如果包含，则继续处理该计算机。如果不存在 x，则脚本继续处理下一台计算机。
 
-作为下一个扫描前检查，脚本调用 Pingable 函数来 ping 计算机，以确认它已启动并在网络上响应。某些 Windows 网络函数（例如从远程计算机获取对象）在计算机不存在时会有显著的超时，而 ping 的超时则要短得多。如果计算机响应 ping，则脚本将状态设置为 Up，并继续设置循环遍历每个所需的扫描。
+作为下一个扫描前检查，脚本调用 `Pingable` 函数来 ping 计算机，以确认它已启动并在网络上响应。某些 Windows 网络函数（例如从远程计算机获取对象）在计算机不存在时会有显著的超时，而 ping 的超时则要短得多。如果计算机响应 ping，则脚本将状态设置为 Up，并继续设置循环遍历每个所需的扫描。
 
 ```
 For i = 1 To UBound(aComputer)
+
     Cells(aComputer(i).Row, 7).Select
+
     If InStr(1, Cells(aComputer(i).Row, 1).Value, "x") Then
+
         If Pingable(aComputer(i).Name) Then
+
             Cells(aComputer(i).Row, COL_OPTION1) = "Up"
+
             j = 8
+
             iBlankColumns = 0
 ```
 
@@ -8174,12 +9185,15 @@ For i = 1 To UBound(aComputer)
 
 ### SystemScan
 
-`用于检查是否存在指定的扫描项，同时允许扫描之间存在最多四个空白单元格。在输出工作表中，在扫描类别之间添加空白列可能有用，脚本允许最多四个连续空白列。
+用于检查是否存在指定的扫描项，同时允许扫描之间存在最多四个空白单元格。在输出工作表中，在扫描类别之间添加空白列可能有用，脚本允许最多四个连续空白列。
+
 脚本通过检查当前列的第二行是否有 "x" 来判断是否应处理某台计算机，从而决定是否执行该扫描。如果存在 "x"，脚本将执行扫描；否则，它会跳过该扫描并继续处理下一个。
 
 ```
 While iBlankColumns < 5
+
     While Not IsEmpty(Cells(4, j))
+
         If InStr(Cells(2, j), "x") Then
 ```
 
@@ -8187,116 +9201,173 @@ While iBlankColumns < 5
 
 ```
 iBlankColumns = 0
+```
+
+
+
+```
 DisplayResult aComputer(i).Row, j, "Working", 3
+
 Select Case Cells(3, j)
 ```
 
-脚本从当前列的第四行获取要查找的服务名称。接下来，它调用 `ServiceCheck` 函数来确定该服务的状态。它将当前计算机名称和服务名称发送给 `ServiceCheck`，并将返回的服务状态赋值给 `strServiceState`。
-脚本通过第二个 `Select Case` 处理 `strServiceState`，以提供更细粒度的结果报告。如果服务状态是 "Running"，它将以绿色显示结果。"Stopped" 的服务以红色显示。如果 `ServiceCheck` 函数遇到错误（例如服务未安装），它会返回 0，该 `Select Case` 语句会将其显示为破折号 (-)。任何其他 `strServiceState` 值则直接显示。
+脚本从当前列的第四行获取要查找的服务名称。接下来，它调用`ServiceCheck`函数来确定该服务的状态。它将当前计算机名称和服务名称发送给`ServiceCheck`，并将返回的服务状态赋值给`strServiceState`。
+
+脚本通过第二个`Select Case`处理`strServiceState`，以提供更细粒度的结果报告。如果服务状态是 "Running"，它将以绿色显示结果。"Stopped" 的服务以红色显示。如果`ServiceCheck`函数遇到错误（例如服务未安装），它会返回 0，该`Select Case`语句会将其显示为破折号 (-)。任何其他`strServiceState`值则直接显示。
 
 ```
 Case "s"
+
     strServiceName = Cells(4, j)
+
     strServiceState = _
+
     ServiceCheck(aComputer(i).Name, _
+
                 strServiceName)
+
     Select Case strServiceState
+
         Case "Running"
+
             DisplayResult aComputer(i).Row, j, _
+
                 strServiceState, 4
+
         Case "Stopped"
+
             DisplayResult aComputer(i).Row, j, _
+
                 strServiceState, 3
+
         Case 0
+
             DisplayResult aComputer(i).Row, j, _
+
                 "-", 0
+
         Case Else
+
             DisplayResult aComputer(i).Row, j, _
+
                 strServiceState, 0
+
     End Select
 ```
 
-脚本将端口扫描定义为扫描类型 "p"。端口扫描器需要三个参数才能运行：计算机名称、要扫描的协议（TCP 或 UDP）以及要扫描的端口（1 到 65535 之间的整数）。当前列的第四行包含协议和端口，格式为 *协议-端口*（类似于 TCP-80）。脚本拆分字符串并根据协议将变量 `strProtocol` 赋值，TCP 对应 `T`，UDP 对应 `U`。由于本模块开头定义了 `Option Compare Text` 语句，`InStr` 的不区分大小写比较使用文本比较。`strPort` 被定义为协议-端口对的第二部分。
+脚本将端口扫描定义为扫描类型 "p"。端口扫描器需要三个参数才能运行：计算机名称、要扫描的协议（TCP 或 UDP）以及要扫描的端口（1 到 65535 之间的整数）。当前列的第四行包含协议和端口，格式为 *协议-端口*（类似于 TCP-80）。脚本拆分字符串并根据协议将变量`strProtocol`赋值，TCP 对应`T`，UDP 对应`U`。由于本模块开头定义了`Option Compare Text`语句，`InStr`的不区分大小写比较使用文本比较。`strPort`被定义为协议-端口对的第二部分。
 
-尽管 VBA 的 `Split` 方法语法与之前脚本中使用的 JScript `split` 方法不同，但该方法实现了类似的结果。两种方法都返回一个按定义分隔符拆分的字符串数组。例如，将字符串 TCP-80 通过分隔符为破折号 (-) 的拆分函数传递，会得到一个包含两个元素的数组，可直接访问如下：`Split("TCP-80","-")(0)` = TCP 且 `Split("TCP-80","-")(1)` = 80。
+尽管 VBA 的`Split`方法语法与之前脚本中使用的 JScript `split`方法不同，但该方法实现了类似的结果。两种方法都返回一个按定义分隔符拆分的字符串数组。例如，将字符串 TCP-80 通过分隔符为破折号 (-) 的拆分函数传递，会得到一个包含两个元素的数组，可直接访问如下：`Split("TCP-80","-")(0)` = TCP 且`Split("TCP-80","-")(1)` = 80。
 
-在脚本填充了字符串 `strProtocol` 和 `strPort` 之后，它调用函数 `PortCheck` 对所选计算机进行端口扫描。扫描结果返回给变量 `strPortState`，然后由脚本显示。（我们也可以像之前的服务扫描代码那样，进一步解析结果并为输出添加颜色编码。）
+在脚本填充了字符串`strProtocol`和`strPort`之后，它调用函数`PortCheck`对所选计算机进行端口扫描。扫描结果返回给变量`strPortState`，然后由脚本显示。（我们也可以像之前的服务扫描代码那样，进一步解析结果并为输出添加颜色编码。）
 
 ```
 Case "p"
+
     On Error Resume Next
+
     strProtocol = Split(Cells(4, j), "-")(0)
+
     If InStr(strProtocol, "u") Then
+
         strProtocol = "U"
+
     Else: strProtocol = "T"
+
     End If
+
     strPort = Split(Cells(4, j), "-")(1)
+
     strPortState = PortCheck( _
+
         aComputer(i).Name, strProtocol, strPort)
+
     On Error GoTo 0
+
     DisplayResult aComputer(i).Row, j, _
+
         strPortState, 0
 ```
 
-最后一种扫描用于检查当前计算机上是否安装了特定的 QFE（快速修复工程）。脚本从当前列的第四行提取 QFE 名称，并调用 `QFECheck` 函数来确定其是否已安装，然后显示结果。
+最后一种扫描用于检查当前计算机上是否安装了特定的 QFE（快速修复工程）。脚本从当前列的第四行提取 QFE 名称，并调用`QFECheck`函数来确定其是否已安装，然后显示结果。
 
-> 由于前面提到的 `Win32_QuickFixEngineering` 类中的一个错误，如果您打算针对一组计算机运行此脚本，但不知道它们安装了哪个服务包版本，则可以为此脚本添加一个检查是否安装了 SP3 的函数。如果安装了 SP3，脚本将调用 `QFECheck`，否则，它将简单地跳过 QFE 扫描。
+> 由于前面提到的`Win32_QuickFixEngineering`类中的一个错误，如果您打算针对一组计算机运行此脚本，但不知道它们安装了哪个服务包版本，则可以为此脚本添加一个检查是否安装了 SP3 的函数。如果安装了 SP3，脚本将调用`QFECheck`，否则，它将简单地跳过 QFE 扫描。
 
 ```
 Case "q"
+
     On Error Resume Next
+
     strQFE = Cells(4, j)
+
     strQFEState = QFECheck(aComputer(i).Name, _
+
         strQFE)
+
     On Error GoTo 0
+
     DisplayResult aComputer(i).Row, j, _
+
         strQFEState, 0
+
 Case Else
+
 End Select
 ```
 
-正如我们所看到的，SystemScan 子程序包含许多循环和条件语句，这可能会让人感到困惑，尤其是要记住哪个 `End If` 或 `Wend` 对应哪个语句。在心中理清这些语句的一种方法是插入循环或条件终止注释，如下所示的代码所示。这些是代码片段注释，旨在将结束语句与其配对的语句关联起来。简化复杂嵌套循环或条件语句的另一种方法是提取内部代码分支。使用这种方法，循环中的循环变成了一个只需调用函数的循环，而该函数包含另一个循环。以这种方式提取循环会增加所需函数的数量，但它有助于理清更复杂的代码。
+正如我们所看到的，SystemScan 子程序包含许多循环和条件语句，这可能会让人感到困惑，尤其是要记住哪个`End If`或`Wend`对应哪个语句。在心中理清这些语句的一种方法是插入循环或条件终止注释，如下所示的代码所示。这些是代码片段注释，旨在将结束语句与其配对的语句关联起来。简化复杂嵌套循环或条件语句的另一种方法是提取内部代码分支。使用这种方法，循环中的循环变成了一个只需调用函数的循环，而该函数包含另一个循环。以这种方式提取循环会增加所需函数的数量，但它有助于理清更复杂的代码。
 
 ```
 End If  ' 标记为要通过 x 处理的扫描
+
 j = j + 1
+
 Wend  ' 寻找空单元格的循环
+
 j = j + 1
+
 iBlankColumns = iBlankColumns + 1
+
 Wend ' 寻找 iBlankColumns 的循环
 ```
 
-如果函数 `Pingable` 返回 false，表示计算机不响应 ping，则脚本将计算机显示为 `Down` 并继续处理下一台计算机。对数组 `aComputer` 的循环完成，即完成了此子程序和整个 *WormScanner*。
+如果函数`Pingable`返回 false，表示计算机不响应 ping，则脚本将计算机显示为`Down`并继续处理下一台计算机。对数组`aComputer`的循环完成，即完成了此子程序和整个 *WormScanner*。
 
 ```
 Else ' else pingable if
+
     Cells(aComputer(i).Row, COL_OPTION1) = "Down"
+
 End If  'end pingable if
+
 End If  ' 标记为要通过 x 处理的计算机
+
 Next i
+
 End Sub
 ```
 
-本章中其余的子程序和函数用于支持 `SystemScan` 子程序。
+本章中其余的子程序和函数用于支持`SystemScan`子程序。
 
-#### Pingable
+### Pingable
 
-`Pingable` 函数使用 WSH shell 对象调用命令 shell 并执行 ping 命令。ping 命令将其输出重定向到一个临时文件，函数读取并解析该文件。
+`Pingable`函数使用 WSH shell 对象调用命令 shell 并执行 ping 命令。ping 命令将其输出重定向到一个临时文件，函数读取并解析该文件。
 
-> *Pingable* 调用 `Run` 方法而不是 `Exec` 方法，因为前者能够抑制命令 shell 对话框。如果我们使用 `Exec` 方法，我们会在屏幕上看到多个命令 shell 窗口弹出。很遗憾，支持标准流的 `Exec` 方法没有提供抑制显示被调用函数的属性。
+> *Pingable* 调用`Run`方法而不是`Exec`方法，因为前者能够抑制命令 shell 对话框。如果我们使用`Exec`方法，我们会在屏幕上看到多个命令 shell 窗口弹出。很遗憾，支持标准流的`Exec`方法没有提供抑制显示被调用函数的属性。
 
-该函数实例化一个 `FileSystemObject` 来逐行读取这个重定向的文本文件，并解析文本 "Reply"，以判断 ping 是否成功。（成功的 ping 会返回类似这样的行：*Reply from 192.168.0.3: bytes=32 time<1ms ttl=128*——此脚本寻找的是第一个单词 `Reply`。）此 ping 测试与第 9 章中介绍的 *ClientCheck* HTA 中的 ping 测试非常相似。
+该函数实例化一个`FileSystemObject`来逐行读取这个重定向的文本文件，并解析文本 "Reply"，以判断 ping 是否成功。（成功的 ping 会返回类似这样的行：*Reply from 192.168.0.3: bytes=32 time<1ms ttl=128*——此脚本寻找的是第一个单词`Reply`。）此 ping 测试与第 9 章中介绍的 *ClientCheck* HTA 中的 ping 测试非常相似。
 
 ```
 '------------------------------------------------------------------
+
 '向计算机发送单个 ping 以检查其是否正常运行。
+
 '------------------------------------------------------------------
 ```
-
-
 
 **Pingable 函数**
 
+```
 Function Pingable(strComputer) As Boolean
 Dim objShell As WshShell
 Dim strTemp As String
@@ -8318,36 +9389,49 @@ objTextFile.Close
 objFSO.DeleteFile (strTemp)
 
 End Function
+```
 
 ### 服务检查
 
-`ServiceCheck` 函数用于查询远程计算机并返回指定服务的状态（例如，服务是`已停止`还是`正在运行`）。为此，脚本会建立一个到远程计算机的 WMI 连接，并返回一个指向特定 `Win32_Service` 的对象。该函数返回此对象的 WMI `state` 属性，该属性代表服务的状态。如果此计算机上不存在该服务，WMI 将会抛出一个错误，但脚本会处理此错误并返回 0，表示服务未安装。另外，请注意 WMI 标识符中缺少 `ImpersonationLevel`。尽管这使得 WMI 调用更简短、更易读（也更容易记住），但也要回想一下第 3 章的内容：如果你计划在早于 Windows 2000 的操作系统上运行此脚本，则需要将 `ImpersonationLevel` 设置为 3（`wbemImpersonationLevelImpersonate`），这会指示 WMI 对象在调用者的上下文中运行。此脚本需要 WMI 核心组件 1.5 或更高版本（在 Windows 2000 及更高版本上可用）。如果你计划在更早版本的 WMI 核心组件上运行此脚本，请参阅第 3 章关于如何指定 `ImpersonationLevel`。
+`ServiceCheck`函数用于查询远程计算机并返回指定服务的状态（例如，服务是`已停止`还是`正在运行`）。为此，脚本会建立一个到远程计算机的 WMI 连接，并返回一个指向特定`Win32_Service`的对象。该函数返回此对象的 WMI `state`属性，该属性代表服务的状态。如果此计算机上不存在该服务，WMI 将会抛出一个错误，但脚本会处理此错误并返回 0，表示服务未安装。另外，请注意 WMI 标识符中缺少`ImpersonationLevel`。尽管这使得 WMI 调用更简短、更易读（也更容易记住），但也要回想一下第 3 章的内容：如果你计划在早于 Windows 2000 的操作系统上运行此脚本，则需要将`ImpersonationLevel`设置为 3（`wbemImpersonationLevelImpersonate`），这会指示 WMI 对象在调用者的上下文中运行。此脚本需要 WMI 核心组件 1.5 或更高版本（在 Windows 2000 及更高版本上可用）。如果你计划在更早版本的 WMI 核心组件上运行此脚本，请参阅第 3 章关于如何指定`ImpersonationLevel`。
 
-> **早期绑定与后期绑定**——在此函数中，请注意 `objService` 被声明为 `WbemScripting.SWbemObject` 数据类型。在 Visual Basic（包括 VBA）中，当一个变量被声明为一种数据类型时，这被称为早期绑定。早期绑定会在编译时（而非运行时）对对象进行验证（语法和类型检查）。与不将对象声明为特定类型的后期绑定相比，此方法具有性能优势。要实现对对象的早期绑定，我们必须在 Excel 中添加对 WMI 脚本库的引用。早期绑定还有其他优点。通过建立对此类型库的引用，Excel 可以识别此对象，并为开发人员提供额外功能——例如，在使用此对象时自动完成语法。例如，如果我们输入 `objService.`，在输入句点（`.`）之后，Excel 会提供一个列表，显示所有可以对 `WbemScripting.SWBemObject` 对象调用的不同属性和方法。在 VBScript 中，我们无法像这样声明对象，并且仅限于使用 `Variant` 数据类型。在 VBScript 或 JScript 中无法使用早期绑定。
+> **早期绑定与后期绑定**——在此函数中，请注意`objService`被声明为`WbemScripting.SWbemObject`数据类型。在 Visual Basic（包括 VBA）中，当一个变量被声明为一种数据类型时，这被称为早期绑定。早期绑定会在编译时（而非运行时）对对象进行验证（语法和类型检查）。与不将对象声明为特定类型的后期绑定相比，此方法具有性能优势。要实现对对象的早期绑定，我们必须在 Excel 中添加对 WMI 脚本库的引用。早期绑定还有其他优点。通过建立对此类型库的引用，Excel 可以识别此对象，并为开发人员提供额外功能——例如，在使用此对象时自动完成语法。例如，如果我们输入`objService.`，在输入句点（`.`）之后，Excel 会提供一个列表，显示所有可以对`WbemScripting.SWBemObject`对象调用的不同属性和方法。在 VBScript 中，我们无法像这样声明对象，并且仅限于使用`Variant`数据类型。在 VBScript 或 JScript 中无法使用早期绑定。
 
 ```
 ' --------------------------------------------------------------------------------
+
 ' 使用 WMI 检查指定服务的状态
+
 ' --------------------------------------------------------------------------------
 
 Function ServiceCheck(strComputer, strServiceName) As String
+
     Dim strWMI As String
+
     Dim objService As WbemScripting.SWbemObject
+
     On Error Resume Next
+
     strWMI = "WinMgmts://" & strComputer & _
+
         "/root/cimv2:Win32_Service='" & strServiceName & "'"
+
     Set objService = GetObject(strWMI)
+
     ServiceCheck = objService.State
+
     If Err > 1 Then ServiceCheck = 0
+
     On Error GoTo 0
+
 End Function
 ```
 
 ### 端口检查
 
-`PortCheck` 函数本质上为一个外部命令行端口扫描器提供了一个脚本运行环境。此脚本是针对流行的 *nmap* 扫描器的语法编写的；不过，修改此代码以支持你喜爱的其他命令行端口扫描器也相当容易。
+`PortCheck`函数本质上为一个外部命令行端口扫描器提供了一个脚本运行环境。此脚本是针对流行的 *nmap* 扫描器的语法编写的；不过，修改此代码以支持你喜爱的其他命令行端口扫描器也相当容易。
 
-与之前的 `Pingable` 函数非常相似，`PortCheck` 创建一个 `Shell` 对象来运行外部命令，并将输出重定向到一个临时文件。然后，它使用 `FileSystemObject` 来读取和解析基于文本的输出，并查找指定端口状态为“开放”、“关闭”或“已过滤”的关键字。该函数将端口的状态返回给调用函数。
+与之前的`Pingable`函数非常相似，`PortCheck`创建一个`Shell`对象来运行外部命令，并将输出重定向到一个临时文件。然后，它使用`FileSystemObject`来读取和解析基于文本的输出，并查找指定端口状态为“开放”、“关闭”或“已过滤”的关键字。该函数将端口的状态返回给调用函数。
 
 变量 strNmapCommand 包含用于执行扫描的 *nmap* 命令语法。尽管 *nmap* 支持大量命令行扫描选项，但此脚本使用基本语法来扫描单个计算机的单个端口，如下所示：
 
@@ -8371,40 +9455,67 @@ nmap -sU -p 53 dnsserver
 
 ```
 '---------------------------------------------------------------
+
 ' 使用 nmap 扫描器确定远程端口状态
+
 '---------------------------------------------------------------
+
 Function PortCheck(strComputer, strProtocol, strPort)
+
 Dim objShell As WshShell
+
 Dim strTemp, strNmapCommand, strLine, strNmapPath As String
+
 Dim iReturn As Integer
+
 Dim objFSO As FileSystemObject
+
 Dim objTextFile As TextStream
+
 strNmapPath = Worksheets("Setup").Cells(39, 6).Value
+
 PortCheck = "-"
+
 Set objShell = CreateObject("WScript.Shell")
+
 strTemp = objShell.ExpandEnvironmentStrings("%temp%") & _
+
     "\tempportscan.txt"
+
 strNmapCommand = strNmapPath & "nmap -s" & strProtocol & " -p " & _
+
 strPort & " " & strComputer
+
 iReturn = objShell.Run("%comspec% /C " & strNmapCommand _
+
  & " > " & strTemp, 0, True)
+
 Set objFSO = CreateObject("Scripting.FileSystemObject")
+
 Set objTextFile = objFSO.OpenTextFile(strTemp, 1)
+
 While Not objTextFile.AtEndOfStream
+
     strLine = objTextFile.ReadLine
+
     If InStr(strLine, "open") Then PortCheck = "Open"
+
     If InStr(strLine, "close") Then PortCheck = "Closed"
+
     If InStr(strLine, "filter") Then PortCheck = "Filtered"
 
 Wend
+
 objTextFile.Close
+
 objFSO.DeleteFile (strTemp)
+
 End Function
 ```
 
 ### QFE 检查
 
-`QFECheck` 函数通过向远程计算机发起 WMI 调用并查找特定的更新，来检查某个特定 QFE 更新的安装情况。此函数使用 WMI 的 ExecQuery 方法执行一个针对 Win32_QuickFixEngineering 类的小型 WQL 查询，该查询搜索特定的 QFE HotFixID。如果查询返回任何结果，`QFECheck` 被设置为 "Yes"；否则，它保持为 "No"。对于任何错误，`QFECheck` 都被设置为 "No"。
+`QFECheck`函数通过向远程计算机发起 WMI 调用并查找特定的更新，来检查某个特定 QFE 更新的安装情况。此函数使用 WMI 的 ExecQuery 方法执行一个针对 Win32_QuickFixEngineering 类的小型 WQL 查询，该查询搜索特定的 QFE HotFixID。如果查询返回任何结果，`QFECheck`被设置为 "Yes"；否则，它保持为 "No"。对于任何错误，`QFECheck`都被设置为 "No"。
 
 Microsoft 最近更改了其 QFE 更新的命名约定。现在不再是 Q123456，有些被称为 KB123456。
 
@@ -8412,28 +9523,41 @@ Microsoft 最近更改了其 QFE 更新的命名约定。现在不再是 Q123456
 
 ```
 '---------------------------------------------------------------------------
+
 ' 检查远程计算机是否已安装特定的 QFE
+
 '---------------------------------------------------------------------------
 
 Function QFECheck(strComputer, strQFE) As String
+
 Dim colQFE As Variant
+
 Dim objQFE As Variant
+
 QFECheck = "No"
+
 On Error Resume Next
+
 Set colQFE = GetObject("WinMgmts://" & strComputer & "/root/cimv2") _
+
  .ExecQuery("SELECT * FROM Win32_QuickFixEngineering " & _
+
   "WHERE HotFixID='" & strQFE & "'")
 ```
 
-
-
- ```
+```
 For Each objQFE In colQFE
+
     QFECheck = "Yes"
+
     Exit For
+
 Next
+
 If Err > 1 Then QFECheck = "No"
+
 On Error GoTo 0
+
 End Function
 ```
 
@@ -8443,12 +9567,15 @@ End Function
 
 ```
 '------------------------------------------------------------------------
+
 ' 在指定位置显示格式化输出
+
 '------------------------------------------------------------------------
 
 Sub DisplayResult(iRow, iColumn, strText, iColorIndex)
 
 Cells(iRow, iColumn) = strText
+
 Cells(iRow, iColumn).Font.ColorIndex = iColorIndex
 
 End Sub
@@ -8463,10 +9590,10 @@ WormScanner 扩展了第8章的 DumpComputerList 脚本，加入了多项实用�
 ### KEY POINTS
 
 - *WormScanner* 展示了将扫描或系统查询功能附加到 *DumpComputerList* 脚本上的众多可能性之一。
-- 如果需要对结果程序的格式有更多控制（例如，隐藏命令 shell 终端窗口），请使用 `WScript.Run` 方法而不是 `Exec` 方法。
+- 如果需要对结果程序的格式有更多控制（例如，隐藏命令 shell 终端窗口），请使用`WScript.Run`方法而不是`Exec`方法。
 - Excel 支持 WMI 对象、方法和属性，使其成为功能强大的库存或扫描工具——例如扫描服务及其状态，或检查已安装的快速修复工程（QFE）更新。
 - 使用 Excel 工作表来配置脚本设置选项，这使你的脚本更易于他人使用，也更容易重新配置和运行。
-- 考虑利用 `ping` 命令快速评估计算机是否在网络中，然后再执行更耗时的远程 Windows 网络调用。
+- 考虑利用`ping`命令快速评估计算机是否在网络中，然后再执行更耗时的远程 Windows 网络调用。
 
 接下来，我们将查看 *DumpComputerList* 的另一个扩展，该扩展枚举并显示域中计算机的所有本地账户和组。如果你曾经经历过 IT 审计，你可能会欣赏下一个脚本所提供的便利。
 
@@ -8502,16 +9629,17 @@ WormScanner 扩展了第8章的 DumpComputerList 脚本，加入了多项实用�
 |---|---|
 | 生成指定域中所有计算机的列表。 | 从第8章介绍的 *DumpComputerList* 脚本开始，从指定域生成计算机列表。 |
 | 列出列表中每个指定计算机的所有本地组。 | 使用 ADSI WinNT 提供程序，连接到每个选定的远程计算机并获取所有组对象的列表。在 *Output* 工作表上显示这些对象。脚本的后续运行应突出显示新增的组并标记已删除的组。 |
-```
-
-
 
 #### 表 11.1 将业务目标转化为技术需求（续）
 
 | 业务目标 | 技术需求 |
+
 | --- | --- |
+
 | 对于发现的每个本地组，枚举并显示其成员。 | 使用 ADSI **Members** 方法返回一个对象集合，该集合代表特定本地组的成员。在 *enum* 工作表上显示此输出。与前面的需求类似，组成员的增删应在后续运行中高亮显示。 |
+
 | 高亮显示与先前运行相比新增的本地组和新成员。 | 从 *Output* 工作表加载所有先前运行的数据，并与当前扫描进行比较。高亮显示新增项，并标记可能已删除的缺失组。 |
+
 | 格式化输出以便于打印和分发给外部人员（审计人员）。 | 以编程方式使用 Excel 格式化功能，通过边框、底纹和颜色来区分输出。此外，允许用户指定用于显示枚举输出的列数。 |
 
 本脚本或许是本书中最复杂的一个。这些概念不一定很高深；然而，用于操作和格式化数据的算法可能仅仅通过阅读定义它们的代码而难以理解。因此，请打开 *GroupScanner.xls* 文件中的脚本，并使用 Excel 调试器逐步执行代码。通过逐行执行脚本，你能更好地理解算法的工作原理和脚本的流程。获取计算机的本地组及其成员相对容易；事实上，第一个脚本 ADSIQuery 使用类似的方法从 AD 中提取组及其成员。但是，本脚本维护了组及其成员的列表。多次运行脚本可以高亮显示新增的组，划掉已删除的组，并将数据格式化为易于在 Excel 中打印的形式。正是格式化和审计功能增加了本脚本的复杂性。
@@ -8522,44 +9650,63 @@ WormScanner 扩展了第8章的 DumpComputerList 脚本，加入了多项实用�
 
 *GroupScanner* 中使用的函数和子程序描述如下：
 
--   **GroupScan:** 扫描计算机列表，以查找可用于获取本地组的合格计算机。
-    - 脚本的起点。
-    - 检查 *Output* 工作表是否存在，并循环浏览先前生成的计算机列表，查找要枚举本地组的候选计算机。
+- **GroupScan:** 扫描计算机列表，以查找可用于获取本地组的合格计算机。
 
--   **GetGroups:** 如果存在新组，则添加新组。
-    - 对于特定计算机，获取当前组列表并与先前运行进行比较。
-    - 将新组添加到 *Output* 工作表。
-    - 如果用户选择，则调用函数获取组成员。
-    - 以用户指定列数的矩阵形式显示新组。
+  - 脚本的起点。
 
--   **GetMembership:** 收集并显示特定组的成员。
-    - 在 *enum* 工作表上记录成员信息。
-    - 将新组添加到 *enum* 工作表。
-    - 将新成员添加到 *enum* 工作表。
+  - 检查 *Output* 工作表是否存在，并循环浏览先前生成的计算机列表，查找要枚举本地组的候选计算机。
 
--   **LoadRow:** 将组信息读入用户自定义的 `GroupData` 数据类型。
-    - 逐行扫描以读取先前发现的信息。
-    - 将信息添加到 `GroupData` 用户自定义数据类型中。
+- **GetGroups:** 如果存在新组，则添加新组。
 
--   **AddElement:** 比较并将对象添加到 `GroupData` 数据类型。
-    - 如果账户名尚不存在，则将其添加到先前构建的账户列表中。
+  - 对于特定计算机，获取当前组列表并与先前运行进行比较。
 
--   **MarkElementDeleted:** 高亮显示不再存在的组。
-    - 标记不再存在的账户的单元格。
+  - 将新组添加到 *Output* 工作表。
 
--   **InitializeEnumWs:** 构建 *enum* 工作表。
-    - 创建并命名用于存储枚举数据的工作表。
-    - 格式化工作表。
+  - 如果用户选择，则调用函数获取组成员。
 
--   **CheckIfGroup:** 确定对象是否为组。
-    - 检查账户的 objectClass 以查看对象是否为组对象。
-    - 将组对象的单元格格式设置为蓝色斜体，以区别于用户或计算机账户。
+  - 以用户指定列数的矩阵形式显示新组。
 
--   **FindLastRow:** 返回工作表上使用的最后一行。
-    - 用于确定插入新数据时要使用的下一行。
+- **GetMembership:** 收集并显示特定组的成员。
 
--   **HideColumns:** 隐藏用户选择的工作表上的列。
-    - 自动隐藏用户选择的列，使数据更易于阅读。
+  - 在 *enum* 工作表上记录成员信息。
+
+  - 将新组添加到 *enum* 工作表。
+
+  - 将新成员添加到 *enum* 工作表。
+
+- **LoadRow:** 将组信息读入用户自定义的`GroupData`数据类型。
+
+  - 逐行扫描以读取先前发现的信息。
+
+  - 将信息添加到`GroupData`用户自定义数据类型中。
+
+- **AddElement:** 比较并将对象添加到`GroupData`数据类型。
+
+  - 如果账户名尚不存在，则将其添加到先前构建的账户列表中。
+
+- **MarkElementDeleted:** 高亮显示不再存在的组。
+
+  - 标记不再存在的账户的单元格。
+
+- **InitializeEnumWs:** 构建 *enum* 工作表。
+
+  - 创建并命名用于存储枚举数据的工作表。
+
+  - 格式化工作表。
+
+- **CheckIfGroup:** 确定对象是否为组。
+
+  - 检查账户的 objectClass 以查看对象是否为组对象。
+
+  - 将组对象的单元格格式设置为蓝色斜体，以区别于用户或计算机账户。
+
+- **FindLastRow:** 返回工作表上使用的最后一行。
+
+  - 用于确定插入新数据时要使用的下一行。
+
+- **HideColumns:** 隐藏用户选择的工作表上的列。
+
+  - 自动隐藏用户选择的列，使数据更易于阅读。
 
 ### 分发和安装
 
@@ -8582,8 +9729,6 @@ WormScanner 扩展了第8章的 DumpComputerList 脚本，加入了多项实用�
 *Output* 工作表显示所列出的每台842每台计算机的本地组，如图 11.2 所示。请注意，组列表仅跨越三列，且 *ObjADs* 列（第 6 列）已隐藏。这两个配置确保工作表上的数据适合视图而无需向右滚动。此外，请注意名为 *aNewGroup* 的组的格式差异。*aNewGroup* 是在两次脚本运行之间添加到名为 *wkstn* 的计算机上的。脚本高亮显示了此新增项，使得在后续运行中轻松识别组的增删。
 
 > 注：原文中"842"应为排版错误，保留原样。
-
-
 
 ## 336 位IT管理员的十大Windows入门脚本
 
@@ -8608,20 +9753,35 @@ WormScanner 扩展了第8章的 DumpComputerList 脚本，加入了多项实用�
 ## IT管理员的十大Windows入门脚本
 
 - ADSI
+
   - WinNT Provider
+
   - 成员
+
   - 过滤器
+
   - 父级
+
 - Excel对象模型
+
   - 工作表操作
+
   - 单元格/区域格式设置
+
 - VBA选项
+
   - Option Explicit
+
   - Option Compare Text
+
 - VBA错误处理
+
   - On Error Resume Next
+
   - On Error Goto 0
+
 - 用户数据类型
+
   - 使用Type声明用户定义的数据类型
 
 # 脚本
@@ -8733,33 +9893,51 @@ If InStr(1, Cells(iRow, 1).Value, "x") Then
     DisplayResult iRow, 8, "Working", 3
 ```
 
+```
+If Pingable(aComputer(i).Name) Then
 
-
-如果 Pingable(aComputer(i).Name) 成立，那么
     Cells(iRow, 7) = "Up"
+
     GetGroups aComputer(i).Name, iRow
-否则
+
+Else
+
     Cells(iRow, 7) = "Down"
+
     DisplayResult iRow, 8, "", 0
+
 End If
+
 End If
+
 Next i
+```
 
 脚本在结束时会调用几个函数。PostFormatTable 用于格式化 Output 工作表，使所有数据可见；而 HideColumns 则根据 Setup 工作表中指定的列来开启其隐藏属性。最后，该函数使用 DateDiff 方法来显示运行所花费的时间，该方法返回开始日期 (dtStart) 和结束日期 (dtEnd) 之间的秒数 (s)。
 
+```
 PostFormatTable
+
 HideColumns 3
+
 HideColumns 7
+
 dtEnd = Now
+
 objWsOutput.Cells(3, 1) = "Elapsed Time: " & DateDiff("s", dtStart, dtEnd) & " seconds"
+
 End Sub
+```
 
 #### GetGroups
 
 GetGroups 在 Output 工作表上显示计算机的本地组。该函数的复杂性主要源于其设计能力：它能够查找任何先前已识别的组，然后将新发现的组添加到其中。同样，GetGroups 会突出显示任何不再能找到的组（例如，它们可能已被删除）。
-数组 `aGroup` 包含当前计算机的组数据，并将动态填充已存在于 Output 工作表上或通过 ADSI 调用发现的数据。变量 `pos` 是一个用户定义的变量类型 Position，包含下一个可用于添加新组的空白单元格的行号和列号。
-变量 `iTopRow` 和 `iStartCol` 代表其将显示的组列表的左上角起点。GetGroups 从第 10 列开始在 Output 工作表上显示组，因此子程序将 `iStartCol` 设置为 10。同样，子程序将 `iTopRow` 设置为 `iRow`，该变量作为参数传递给函数，表示当前正在处理的计算机的行号。函数使用这些引用来跟踪在构建组矩阵时应在何处显示数据。
-变量 `iRow` 和 `iCol` 表示特定组对象的当前行和列。变量 `iNewGroup` 为添加到计算机的新组提供一个计数器，并在函数完成时在 *Output* 工作表上显示。
+
+数组`aGroup`包含当前计算机的组数据，并将动态填充已存在于 Output 工作表上或通过 ADSI 调用发现的数据。变量`pos`是一个用户定义的变量类型 Position，包含下一个可用于添加新组的空白单元格的行号和列号。
+
+变量`iTopRow`和`iStartCol`代表其将显示的组列表的左上角起点。GetGroups 从第 10 列开始在 Output 工作表上显示组，因此子程序将`iStartCol`设置为 10。同样，子程序将`iTopRow`设置为`iRow`，该变量作为参数传递给函数，表示当前正在处理的计算机的行号。函数使用这些引用来跟踪在构建组矩阵时应在何处显示数据。
+
+变量`iRow`和`iCol`表示特定组对象的当前行和列。变量`iNewGroup`为添加到计算机的新组提供一个计数器，并在函数完成时在 *Output* 工作表上显示。
 
 ```
 '-------------------------------------------------------------------------------------
@@ -8776,7 +9954,7 @@ Sub GetGroups(strComputer, iRow)
     ReDim aGroup(0)
 ```
 
-GetGroups 的第一阶段是检查并加载在脚本先前运行期间发现的任何组。如果单元格 `iTopRow, iStartCol` 为空，则脚本准备添加新数据，并将当前行 (`iRow`) 和列 (`iCol`) 分别设置为 `iTopRow` 和 `iStartCol`。但是，如果单元格中存在数据，脚本将调用 `LoadRow` 函数来读取先前收集的数据。在此条件判断之后，我们可以确定变量 `iRow` 和 `iCol` 已被设置，并代表下一个可用于添加任何新组名的可用单元格。
+GetGroups 的第一阶段是检查并加载在脚本先前运行期间发现的任何组。如果单元格`iTopRow, iStartCol`为空，则脚本准备添加新数据，并将当前行 (`iRow`) 和列 (`iCol`) 分别设置为`iTopRow`和`iStartCol`。但是，如果单元格中存在数据，脚本将调用`LoadRow`函数来读取先前收集的数据。在此条件判断之后，我们可以确定变量`iRow`和`iCol`已被设置，并代表下一个可用于添加任何新组名的可用单元格。
 
 ```
     If IsEmpty(Cells(iTopRow, iStartCol)) Then
@@ -8789,7 +9967,7 @@ GetGroups 的第一阶段是检查并加载在脚本先前运行期间发现的�
     End If
 ```
 
-脚本使用 ADSI WinNT 提供程序直接连接到目标计算机。脚本将 `Filter` 属性设置为 `Group`，这将返回对象限制为仅那些是组的对象。脚本将变量 `iNewGroup` 设置为 0，准备计算在脚本本次运行期间发现的每个新组。
+脚本使用 ADSI WinNT 提供程序直接连接到目标计算机。脚本将`Filter`属性设置为`Group`，这将返回对象限制为仅那些是组的对象。脚本将变量`iNewGroup`设置为 0，准备计算在脚本本次运行期间发现的每个新组。
 
 ```
 Set objADs = GetObject("WinNT://" & strComputer)
@@ -8797,14 +9975,14 @@ objADs.Filter = Array("Group")
 iNewGroup = 0
 ```
 
-建立 ADSI 连接后，脚本开始循环遍历远程计算机上的组对象。对于这些组中的每一个，脚本都会调用 AddElement 函数来确定该组是否已在 LoadRow 函数的先前运行中被发现。组的名称 (objGroup.Name) 被传递给 AddElement 函数，以检查它是否已存在于数组 `aGroup` 中。如果它不在 `aGroup` 中，则 AddElement 返回 true，表示该组必须添加到 *Output* 工作表。
+建立 ADSI 连接后，脚本开始循环遍历远程计算机上的组对象。对于这些组中的每一个，脚本都会调用 AddElement 函数来确定该组是否已在 LoadRow 函数的先前运行中被发现。组的名称 (objGroup.Name) 被传递给 AddElement 函数，以检查它是否已存在于数组`aGroup`中。如果它不在`aGroup`中，则 AddElement 返回 true，表示该组必须添加到 *Output* 工作表。
 
 ```
 For Each objGroup In objADs
     If AddElement(aGroup(), objGroup.Name) Then
 ```
 
-如果确实需要添加一个组，则会检查当前列 (`iCol`) 以查看是否应该换行。如果 `iCol` 大于起始列 (`iStartCol`) 加上要跨越的列数 (`g_iSpanCol`)，则函数会换行。它在工作表中插入一个新行，递增行号，并将列设置回 `iStartCol`。
+如果确实需要添加一个组，则会检查当前列 (`iCol`) 以查看是否应该换行。如果`iCol`大于起始列 (`iStartCol`) 加上要跨越的列数 (`g_iSpanCol`)，则函数会换行。它在工作表中插入一个新行，递增行号，并将列设置回`iStartCol`。
 
 ```
 If iCol >= iStartCol + g_iSpanCol Then
@@ -8836,8 +10014,9 @@ Application.ScreenUpdating = True
 Next
 ```
 
-枚举完组后，脚本调用 MarkElementDeleted 函数，该函数遍历 `aGroup` 并突出显示任何 Exists 属性设置为 False 的组。（我们尚未介绍此函数；AddElement 为当前扫描中找到的每个组将用户定义的数据类型 `aGroup.Exists` 属性设置为 True。）
-最后，为了结束此函数，会显示总组数和新组数 (`iNewGroup`)。因为当新组添加到 `aGroup` 时，`aGroup` 会被动态调整大小，所以脚本使用 UBound 方法来确定其计数。脚本调用 PostFormatTable 以自动调整 *Output* 工作表中的单元格大小，使所有数据可见。
+枚举完组后，脚本调用 MarkElementDeleted 函数，该函数遍历`aGroup`并突出显示任何 Exists 属性设置为 False 的组。（我们尚未介绍此函数；AddElement 为当前扫描中找到的每个组将用户定义的数据类型`aGroup.Exists`属性设置为 True。）
+
+最后，为了结束此函数，会显示总组数和新组数 (`iNewGroup`)。因为当新组添加到`aGroup`时，`aGroup`会被动态调整大小，所以脚本使用 UBound 方法来确定其计数。脚本调用 PostFormatTable 以自动调整 *Output* 工作表中的单元格大小，使所有数据可见。
 
 ```
 MarkElementDeleted aGroup()
@@ -8854,9 +10033,13 @@ End Sub
 #### GetMembership
 
 GetMembership 函数仅在 *enum* 工作表上操作，该工作表的存在已由函数 InitializeEnumWs 先前确认或创建。GetMembership 与先前讨论的 GetGroups 函数非常相似。
-然而，`GetGroups` 枚举特定计算机的组，而 `GetMembership` 枚举特定组的成员身份。组的成员账户以与计算机显示组相同的水平方式显示。此函数甚至使用相同的函数：`LoadRow` 加载先前收集的数据，`AddElement` 检查这些先前的运行是否与当前数据匹配。
-不过，这两个函数之间确实存在一些差异。`GetGroups` 使用计算机名来查找先前运行的唯一实例，而 `GetMembership` 使用计算机名*和*组名。这种重复是因为一台计算机可能有多个组，而相同的组名可能用于多台计算机。为适应这种情况，*enum* 工作表包含一列代表此唯一键的列，标题为 `ComputerName/GroupName`。
-`GetMembership` 使用与先前函数 `GetGroups` 中描述的相同变量，但有几个例外。变量 `aTemp` 代表一个用作 `Split` 方法结果临时存储的数组。此外，起始列 (`iStartCol`) 在 *enum* 工作表上从第 5 列开始，而不是 *Output* 工作表使用的第 10 列。
+
+然而，`GetGroups`枚举特定计算机的组，而`GetMembership`枚举特定组的成员身份。组的成员账户以与计算机显示组相同的水平方式显示。此函数甚至使用相同的函数：`LoadRow`加载先前收集的数据，`AddElement`检查这些先前的运行是否与当前数据匹配。
+
+不过，这两个函数之间确实存在一些差异。`GetGroups`使用计算机名来查找先前运行的唯一实例，而`GetMembership`使用计算机名*和*组名。这种重复是因为一台计算机可能有多个组，而相同的组名可能用于多台计算机。为适应这种情况，*enum* 工作表包含一列代表此唯一键的列，标题为`ComputerName/GroupName`。
+
+`GetMembership`使用与先前函数`GetGroups`中描述的相同变量，但有几个例外。变量`aTemp`代表一个用作`Split`方法结果临时存储的数组。此外，起始列 (`iStartCol`) 在 *enum* 工作表上从第 5 列开始，而不是 *Output* 工作表使用的第 10 列。
+
 首先，函数激活 *enum* 工作表并开始处理。
 
 ```
@@ -8875,7 +10058,7 @@ iStartCol = 5
 objWsEnum.Activate
 ```
 
-`GetMembership` 的输入是当前正在被 `GetGroups` 处理的组和计算机名。此计算机名/组名也是 `GetMembership` 搜索先前收集数据的方式。该函数使用 Excel 的 `find` 方法搜索 computername/groupname 的任何先前出现。如果不存在，则我们知道需要添加新数据。然而，我们尚不知道在何处添加数据，因为 computer/groupname 的缺失可能意味着两种情况之一：要么计算机尚未被发现，要么该计算机上的组尚未被发现。为了解决此问题，脚本调用第二个 `find` 函数，仅查找计算机。
+`GetMembership`的输入是当前正在被`GetGroups`处理的组和计算机名。此计算机名/组名也是`GetMembership`搜索先前收集数据的方式。该函数使用 Excel 的`find`方法搜索 computername/groupname 的任何先前出现。如果不存在，则我们知道需要添加新数据。然而，我们尚不知道在何处添加数据，因为 computer/groupname 的缺失可能意味着两种情况之一：要么计算机尚未被发现，要么该计算机上的组尚未被发现。为了解决此问题，脚本调用第二个`find`函数，仅查找计算机。
 
 ```
 Set result = Range_("B5:B65536"). _
@@ -8885,7 +10068,7 @@ If result Is Nothing Then
         Find(strComputer, , ,xlWhole)
 ```
 
-如果找不到计算机名，第二次 `find` 的结果将返回 `Nothing`，这表明我们确实需要将新的计算机添加到 `enum` 工作表中。这台新计算机被添加到工作表上任何先前存在数据的底部。脚本调用 `FindLastRow` 来确定添加新数据的下一行，并将此值存储到变量 `iTopRow` 中。正如在 `GetGroups` 中，`iTopRow` 代表一个计算机的组数据的顶行，在这里，`iTopRow` 代表当前组的成员数据的第一行。接下来，脚本设置这个新行的填充颜色。（`GroupScanner` 在计算机之间交替使用填充颜色，以更好地在视觉上分隔数据。）因为这是一台新添加到工作表底部的计算机，脚本会检查其正上方计算机（位于 `iTopRow-1`）的单元格填充颜色。如果填充颜色不是灰色（`ColorIndex = 15`），则脚本将新计算机行的颜色设置为灰色。通过这种方式，脚本在计算机列表之间交替颜色。
+如果找不到计算机名，第二次`find`的结果将返回`Nothing`，这表明我们确实需要将新的计算机添加到`enum`工作表中。这台新计算机被添加到工作表上任何先前存在数据的底部。脚本调用`FindLastRow`来确定添加新数据的下一行，并将此值存储到变量`iTopRow`中。正如在`GetGroups`中，`iTopRow`代表一个计算机的组数据的顶行，在这里，`iTopRow`代表当前组的成员数据的第一行。接下来，脚本设置这个新行的填充颜色。（`GroupScanner`在计算机之间交替使用填充颜色，以更好地在视觉上分隔数据。）因为这是一台新添加到工作表底部的计算机，脚本会检查其正上方计算机（位于`iTopRow-1`）的单元格填充颜色。如果填充颜色不是灰色（`ColorIndex = 15`），则脚本将新计算机行的颜色设置为灰色。通过这种方式，脚本在计算机列表之间交替颜色。
 
 ```
 If result Is Nothing Then
@@ -8895,7 +10078,7 @@ If result Is Nothing Then
             iStartCol + g_iSpanCol - 1)).Interior.ColorIndex = 15
 ```
 
-然而，如果找到了计算机（但未找到组），那么我们只需要在该计算机的其他组旁边添加一个新组。`find` 语句返回对象第一次出现的行号，因此新的计算机/组对象被添加到先前记录的计算机/组对象的顶部。行号被设置为 `iTopRow`，并插入一个新行。（这导致 `iTopRow` 成为新的空行。）这一次，因为新组是先前记录的计算机的成员，其单元格底纹必须与其同类匹配。脚本将 `Interior.ColorIndex` 设置为与包含计算机对象的行（`iTopRow+1`）相同，并关闭该行的斜体格式，该格式可能是从上面一行继承的。
+然而，如果找到了计算机（但未找到组），那么我们只需要在该计算机的其他组旁边添加一个新组。`find`语句返回对象第一次出现的行号，因此新的计算机/组对象被添加到先前记录的计算机/组对象的顶部。行号被设置为`iTopRow`，并插入一个新行。（这导致`iTopRow`成为新的空行。）这一次，因为新组是先前记录的计算机的成员，其单元格底纹必须与其同类匹配。脚本将`Interior.ColorIndex`设置为与包含计算机对象的行（`iTopRow+1`）相同，并关闭该行的斜体格式，该格式可能是从上面一行继承的。
 
 ```
 Else
@@ -8908,7 +10091,7 @@ Else
 End If
 ```
 
-请记住，在脚本的这个阶段，我们仍然处于计算机/组名不存在的条件分支中，但我们已经确定了应该添加新数据的行号，并将该值存储在变量 `iTopRow` 中。接下来，脚本将计算机名/组名、计算机名和组名添加到 *enum* 工作表中，然后使用横跨新单元格顶部的连续边框对新行进行格式化。脚本还将字体颜色设置为蓝绿色（`ColorIndex=14`）以突出显示新增内容。新组已添加到电子表格中，但其成员身份尚未被枚举。
+请记住，在脚本的这个阶段，我们仍然处于计算机/组名不存在的条件分支中，但我们已经确定了应该添加新数据的行号，并将该值存储在变量`iTopRow`中。接下来，脚本将计算机名/组名、计算机名和组名添加到 *enum* 工作表中，然后使用横跨新单元格顶部的连续边框对新行进行格式化。脚本还将字体颜色设置为蓝绿色（`ColorIndex=14`）以突出显示新增内容。新组已添加到电子表格中，但其成员身份尚未被枚举。
 
 ```
 Cells(iTopRow, 2) = strComputer & "/" & strGroup
@@ -8922,7 +10105,7 @@ Range(Cells(iTopRow, 1), Cells(iTopRow, _
     xlContinuous
 ```
 
-但首先我们必须完成计算机名/组名已存在的情况的条件分支。如果脚本确实找到了计算机名/组名，它将执行此分支，并将 `iTopRow` 设置为找到结果的行号。脚本通过将其标记为活动并设置其颜色为黑色来注明此计算机/组组合先前已存在。
+但首先我们必须完成计算机名/组名已存在的情况的条件分支。如果脚本确实找到了计算机名/组名，它将执行此分支，并将`iTopRow`设置为找到结果的行号。脚本通过将其标记为活动并设置其颜色为黑色来注明此计算机/组组合先前已存在。
 
 ```
 Else
@@ -8935,7 +10118,7 @@ Else
 End If
 ```
 
-在此阶段的脚本中，我们已设置计算机/组并知道其行号。脚本将动态数组 `aGroupMembership` 重新调整为 0，准备加载任何先前发现的数据。然后它检查存储组成员的第一个单元格是否为空。如果单元格为空，则脚本假设此计算机/组组合先前不存在组，并将当前行和列设置为 iTopRow 和 iStartCol。
+在此阶段的脚本中，我们已设置计算机/组并知道其行号。脚本将动态数组`aGroupMembership`重新调整为 0，准备加载任何先前发现的数据。然后它检查存储组成员的第一个单元格是否为空。如果单元格为空，则脚本假设此计算机/组组合先前不存在组，并将当前行和列设置为 iTopRow 和 iStartCol。
 
 然而，如果单元格不为空，则脚本假设该组的成员身份已在先前运行中被发现，并且脚本调用 LoadRow 函数来读取数据。此函数与先前的 GetGroups 函数调用的 LoadRow 函数相同。并且像之前的函数一样，下一个可用于存储任何新成员数据的单元格被设置为坐标 iRow, iCol。
 
@@ -9001,8 +10184,6 @@ iCol = iCol + 1
 
 最后，此函数调用 MarkElementDeleted 函数来突出显示先前列出但不再是该组成员的任何帐户，并调用 PostFormatTable 来格式化 *enum* 工作表。
 
-
-
 #### LoadRow
 
 此脚本的一个主要设计元素是报告随着时间推移的组成员身份变化。该功能通过突出显示工具后续运行之间的差异来实现这一点。函数 LoadRow 从工具的先前运行中读取数据，以便与当前数据进行比较。
@@ -9012,16 +10193,22 @@ iCol = iCol + 1
 例如，如果 g_iSpanCol 设置为 3，之前运行的组列表可能如下所示：
 
 | | g_iSpanCol=3 | | |
+
 | --- | --- | --- | --- |
+
 | | 10 (iStartCol) | 11 | 12 |
+
 | iTopRow | administrators | backup operators | guests |
+
 | iTopRow+1 | power users | replicator | users |
+
 | iTopRow+2 | bangkoktesty | Web anonymous users | Web applications |
+
 | iTopRow+3 | WINS users | iRow,iCol | |
 
 在后续运行中，LoadRow 从 Cells(iTopRow,iStartCol) 开始，找到组名 administrators。此单元格不为空；函数将该名称读入数组 aElement 的第一个元素。函数移动到下一行 backup operators，并将其添加到 aElement 的第二个元素中。在读取组 guests 后，它遇到一个空白单元格。像打字机一样，函数移动到第二行，从 iStartCol 重新开始并读取 power users 组。它继续这样处理，直到处理完剩余的六个组。函数 LoadRow 返回下一个可用单元格的位置——在此示例中，是第 iTopRow+3 行，第 11 列。除了名称，LoadRow 还记录每个组名的行和列位置，这被 MarkElementDeleted 用于查找需要突出显示为缺失的组。
 
-该函数本质上由两个循环组成，其中有许多必须满足才能跳出循环的条件。从原点 `iRow`、`iCol` 开始，内部循环向右在行中前进（通过递增 `iCol`），直到遇到空白单元格。这会跳出内部循环，脚本递增 `iRow` 并将 `iCol` 设置为起始列 (`iStartCol`)，然后检查外部循环的条件。如果满足外部循环的条件，函数将遍历第二行，依此类推。
+该函数本质上由两个循环组成，其中有许多必须满足才能跳出循环的条件。从原点`iRow`、`iCol`开始，内部循环向右在行中前进（通过递增`iCol`），直到遇到空白单元格。这会跳出内部循环，脚本递增`iRow`并将`iCol`设置为起始列 (`iStartCol`)，然后检查外部循环的条件。如果满足外部循环的条件，函数将遍历第二行，依此类推。
 
 外部循环的条件决定了实际构成当前数据集的行数。请记住，每个新的计算机（或计算机/组）数据集都包含沿顶行的边框。脚本会查找此边框，如果看到边框，就知道它遇到了下一个计算机或组的数据并应停止。但是，第一行（也包含顶部边框）必须被处理，因此第一行被排除在此顶部边框检查之外。此外，如果正在检查的计算机或组位于工作表的最底部，则脚本会查找一个空单元格，这也表示数据集的结束。
 
@@ -9038,7 +10225,7 @@ Function LoadRow(ByVal iRow, ByVal iCol, aElement() As GroupData) _
     i = 1
 ```
 
-变量 `bFirstRow` 被设置为 true 以确保处理第一行（因为它也设置了顶部边框）。
+变量`bFirstRow`被设置为 true 以确保处理第一行（因为它也设置了顶部边框）。
 
 ```
 bFirstRow = True
@@ -9133,7 +10320,7 @@ End Function
 
 #### MarkElementDeleted
 
-函数 `MarkElementDeleted` 与第 8 章的函数 `MarkMissingComputers` 类似，但此函数已更新以处理 `GroupData` 用户定义数据类型。`MarkElementDeleted` 遍历数组 `aElement` 的所有成员，如果属性 `Exists` 为 `False`，则函数通过将其颜色更改为红色并打开删除线来突出显示该单元格。
+函数`MarkElementDeleted`与第 8 章的函数`MarkMissingComputers`类似，但此函数已更新以处理`GroupData`用户定义数据类型。`MarkElementDeleted`遍历数组`aElement`的所有成员，如果属性`Exists`为`False`，则函数通过将其颜色更改为红色并打开删除线来突出显示该单元格。
 
 ```
 '-----------------------------------------------------------------------
@@ -9154,7 +10341,7 @@ End Sub
 
 #### InitializeEnumWs
 
-函数 `InitializeEnumWs` 准备 *enum* 工作表以供 *GroupScanner* 脚本使用。该函数将对象 `g_objWsEnum` 设置为 *Setup* 工作表中命名的工作表。如果发生错误，指定的 *enum* 工作表可能不存在，因此脚本会创建一个新的工作表，为其命名，并格式化它以用作新的 *enum* 工作表。
+函数`InitializeEnumWs`准备 *enum* 工作表以供 *GroupScanner* 脚本使用。该函数将对象`g_objWsEnum`设置为 *Setup* 工作表中命名的工作表。如果发生错误，指定的 *enum* 工作表可能不存在，因此脚本会创建一个新的工作表，为其命名，并格式化它以用作新的 *enum* 工作表。
 
 ```
 '-----------------------------------------------------------------------
@@ -9171,8 +10358,6 @@ Sub InitializeEnumWs()
         objWsEnum.Cells.Font.Name = "Arial Narrow"
         objWsEnum.Cells(1, 1) = "计算机组成员枚举"
 ```
-
-
 
 **IT管理员十大入门脚本：Windows**
 
@@ -9230,7 +10415,7 @@ End Sub
 
 #### FindLastRow
 
-函数 `FindLastRow` 返回工作表底部下一个可用的行号。该函数在确定最后一行时检查三列（第2列、第5列和第10列）。检查多列是因为某些数据可能会延伸到计算机或组的主行（对于计算机来说称为 `iTopRow`）之下。该函数允许在有效数据之间存在最多99个空白行。
+函数`FindLastRow`返回工作表底部下一个可用的行号。该函数在确定最后一行时检查三列（第2列、第5列和第10列）。检查多列是因为某些数据可能会延伸到计算机或组的主行（对于计算机来说称为`iTopRow`）之下。该函数允许在有效数据之间存在最多99个空白行。
 
 ```
 '---------------------------------------------------------------------------
@@ -9256,7 +10441,7 @@ End Function
 
 #### HideColumns
 
-`HideColumns` 主要是一个用于美观的函数，它读取 *Setup*（设置）工作表，并根据哪些单元格包含 `x` 来隐藏相应的列。该函数很短，因为计数变量 `i` 也对应于正在检查的列号。当函数遍历各列时，它递增 *Setup* 工作表中的行号并查找 `x`。如果找到 `x`，函数通过将 `Hidden` 属性设置为 `True` 来隐藏该列。
+`HideColumns`主要是一个用于美观的函数，它读取 *Setup*（设置）工作表，并根据哪些单元格包含`x`来隐藏相应的列。该函数很短，因为计数变量`i`也对应于正在检查的列号。当函数遍历各列时，它递增 *Setup* 工作表中的行号并查找`x`。如果找到`x`，函数通过将`Hidden`属性设置为`True`来隐藏该列。
 
 ```
 ' -----------------------------------------------------------------------------
@@ -9287,13 +10472,13 @@ End Sub
 
 - 有时，脚本的呈现形式和格式化所占用的长度和考虑程度，可能比执行实际工作的代码更多。例如，*GroupScanner* 支持不同的列和多行数据，这增加了函数的复杂性。
 
-- *Groupscanner* 演示了如何重用处理类似格式但不同数据的函数。例如，`LoadRow` 和 `AddElement` 函数既适用于计算机组，也适用于组的成员。
+- *Groupscanner* 演示了如何重用处理类似格式但不同数据的函数。例如，`LoadRow`和`AddElement`函数既适用于计算机组，也适用于组的成员。
 
 - 由于可能遇到大量数据，此脚本包含额外的函数来高亮显示新增或删除的对象，例如将组添加到计算机或更改计算机的成员关系。
 
 - 该脚本使用 ADSI WinNT 提供程序远程连接到所有指定的计算机并访问其 SAM，以获取用户和组信息。
 
-- 而 *DumpComputerList* 和 *Wormscanner* 通过迭代对象数组来查找之前遇到的数据，*Groupscanner* 则利用专有的 Excel `find` 函数来实现类似的结果。使用优化的 `find` 函数执行搜索速度快得多，但将脚本的可移植性限制在仅能用于 Excel。
+- 而 *DumpComputerList* 和 *Wormscanner* 通过迭代对象数组来查找之前遇到的数据，*Groupscanner* 则利用专有的 Excel `find`函数来实现类似的结果。使用优化的`find`函数执行搜索速度快得多，但将脚本的可移植性限制在仅能用于 Excel。
 
 下一个脚本也是最后一个使用 *DumpComputerList* 框架的 Excel 脚本。它提供了一种方法，用于轮换域中计算机的本地管理员密码，并保留所有过去成功密码更改的存档记录。
 
@@ -9301,7 +10486,7 @@ End Sub
 
 ## 概述
 
-企业IT部门通常不赞成在匿名服务（如内网访问）之外使用共享账户。许多公司的安全策略规定了使用共享账户的准则，并限制超级用户或特权共享账户（如本地管理员账户）的使用。本地管理员可以在其计算机上执行任何操作，例如添加新用户和组、安装任何软件、重新配置系统和网络设置以及更改文件访问控制列表。此外，使用像本地管理员账户这样的通用账户所做的更改很难审计，因为任何知道用户名和密码并能访问计算机的人都可以进行更改。并且，所有更改都记录在本地管理员的名下（通常是 `计算机名\Administrator`）。因此，许多组织通常将单个用户账户（本地或域）添加到管理员组中，这提供了与本地管理员相似的访问级别，但允许由唯一的用户账户进行更改（和审计）。
+企业IT部门通常不赞成在匿名服务（如内网访问）之外使用共享账户。许多公司的安全策略规定了使用共享账户的准则，并限制超级用户或特权共享账户（如本地管理员账户）的使用。本地管理员可以在其计算机上执行任何操作，例如添加新用户和组、安装任何软件、重新配置系统和网络设置以及更改文件访问控制列表。此外，使用像本地管理员账户这样的通用账户所做的更改很难审计，因为任何知道用户名和密码并能访问计算机的人都可以进行更改。并且，所有更改都记录在本地管理员的名下（通常是`计算机名\Administrator`）。因此，许多组织通常将单个用户账户（本地或域）添加到管理员组中，这提供了与本地管理员相似的访问级别，但允许由唯一的用户账户进行更改（和审计）。
 
 每个基于 Windows NT 的计算机（包括 Windows XP、Windows 2000 和 Windows Server 2003）在安装时都会配置一个本地管理员账户。当计算机加入域时，该过程会将某些域账户添加到计算机的本地组中。例如，域组 *Domain Admins* 会被添加到本地组 *Administrators*，域组 *Domain Users* 会被添加到本地组 *Users*。这种添加允许集中管理的域账户访问本地计算机上的资源。Windows NT 自诞生以来一直以这种方式运行，并且运行良好。然而，即使有了这些集中管理的账户，原始的本地管理员账户仍然存在，并仍然提供对计算机的高级别访问权限。
 
@@ -9310,8 +10495,6 @@ End Sub
 管理和轮换计算机本地管理员账户的密码非常重要。在许多组织中，许多（或所有）计算机的本地管理员密码是相同的，因为它们是使用自动化脚本或流程构建的，这些脚本或流程将本地管理员密码设置为相同的值。同样脆弱的是使用配置文件构建的机器，其中密码以明文形式存储在构建软盘或网络共享上的简单文本文件中。有时，计算机的构建者将密码设置为 *password* 之类的值，之后忘记将其更改为更复杂的密码。
 
 许多组织将本地管理员账户的名称从 *administrator* 更改为其他更晦涩的名称，作为额外的保护层。然而，虽然你可以使用集中工具（如组策略）更改本地管理员账户的名称，但你无法从中心位置更改域中所有计算机的密码。本章中的脚本探讨了一种方法和设计，即使用基于 Excel 的 VBA 脚本集中管理组织内分布的本地管理员密码。该脚本可以存档和轮换域中计算机的本地管理员密码。
-
-
 
 # 本地密码审计与修改工具
 
@@ -9323,37 +10506,51 @@ End Sub
 
 ## 分析
 
-此脚本利用了第8章介绍的 *DumpComputerList* 工具，并扩展了其功能，以确定本地管理员账户的名称并在选定的计算机上设置其密码。脚本首先确定计算机的本地管理员，然后使用 `SetPassword` 方法为该账户设置密码。脚本会捕获并显示任何错误，以帮助您了解（以及为什么）将密码设置为特定值可能失败。此外，脚本可以使用六个预定义字符集中的字符为您随机生成八位字符密码。
+此脚本利用了第8章介绍的 *DumpComputerList* 工具，并扩展了其功能，以确定本地管理员账户的名称并在选定的计算机上设置其密码。脚本首先确定计算机的本地管理员，然后使用`SetPassword`方法为该账户设置密码。脚本会捕获并显示任何错误，以帮助您了解（以及为什么）将密码设置为特定值可能失败。此外，脚本可以使用六个预定义字符集中的字符为您随机生成八位字符密码。
 
 出于与 *GroupScanner* 场景（第11章）类似的原因，您决定使用Excel作为这些密码的首选存储文档。Excel提供了一个理想的工具来跟踪计算机名称和密码的矩阵，易于更新和参考。使用 *DumpComputerList* 工具，您已经有一种方法来收集域中的所有计算机名称，而Excel中的列则为管理本地管理员密码提供了直观、易于管理的统计信息。对于每台选定的计算机，您希望显示本地管理员账户的名称、通知密码更改进度的消息、建议的新密码以及旧密码的历史记录。
 
-用于创建密码的字符由其ASCII十进制值定义（例如，字符 `A` 的ASCII值为65，而 `a` 的值为97）。构成六个字符集的所有字符跨越ASCII范围33到122，如表12.1所示。
+用于创建密码的字符由其ASCII十进制值定义（例如，字符`A`的ASCII值为65，而`a`的值为97）。构成六个字符集的所有字符跨越ASCII范围33到122，如表12.1所示。
 
 | 字符集 | ASCII起始范围 | ASCII结束范围 |
+
 |:---|:---|:---|
+
 | 0-9 | 48 | 57 |
+
 | A-Z | 65 | 90 |
+
 | a-z | 97 | 122 |
+
 | !"#$%&'()*+,-./ | 33 | 47 |
+
 | :;<=>?@ | 58 | 64 |
+
 | [\]^_` | 91 | 96 |
 
-要从这些字符中的任何一个生成密码，密码生成器只需随机生成33到122之间的数字，然后使用 `Chr` 方法将每个ASCII值转换为相应的字符（例如，`Chr(65)=A`）。但是，根据用户选择包含哪些字符集，ASCII范围中可能存在空隙。例如，如果用户只选择字母数字字符集，则包含的字符将跨越ASCII值48-57、65-90和97-122。为了适应这些空隙，脚本会构建一个数组（`g_aValidChar`），其中包含所有选定字符的ASCII值。在前面的示例中，`g_aValidChar` 将包含62个元素，由三个字母数字字符集中的ASCII值组成。在函数认为随机生成的字符有效之前，它必须与 `g_aValidChar` 中的数字匹配。
+要从这些字符中的任何一个生成密码，密码生成器只需随机生成33到122之间的数字，然后使用`Chr`方法将每个ASCII值转换为相应的字符（例如，`Chr(65)=A`）。但是，根据用户选择包含哪些字符集，ASCII范围中可能存在空隙。例如，如果用户只选择字母数字字符集，则包含的字符将跨越ASCII值48-57、65-90和97-122。为了适应这些空隙，脚本会构建一个数组（`g_aValidChar`），其中包含所有选定字符的ASCII值。在前面的示例中，`g_aValidChar`将包含62个元素，由三个字母数字字符集中的ASCII值组成。在函数认为随机生成的字符有效之前，它必须与`g_aValidChar`中的数字匹配。
 
 *PWScanner* 中使用的函数和子程序描述如下。该脚本将识别本地管理员账户名称与实际更改密码分为两个独立的操作。
 
 - **PwScan**：扫描计算机列表以获取要处理的选定计算机。
+
   - 脚本的起点。
-  - 循环遍历计算机列表，并调用 `IDLocalAdmin` 和 `ChangePassword` 函数来识别本地管理员的名称，然后更改其密码。
+
+  - 循环遍历计算机列表，并调用`IDLocalAdmin`和`ChangePassword`函数来识别本地管理员的名称，然后更改其密码。
+
 - **IDLocalAdmin**：发现本地管理员账户。
+
   - 返回本地管理员账户的名称。
+
 - **ChangePassword**：为指定的用户账户设置新密码。
+
   - 更改用户账户的密码。
+
   - 确认更改成功。
 
 # 分发与安装
 
-您必须从具有对目标计算机管理员访问权限的特权账户（例如域管理员）运行此脚本。例如，要访问其他域，您可以使用 `RunAs` 工具在您希望工作的域中的特权用户上下文中启动Excel。整个脚本包含在Excel工作簿中。
+您必须从具有对目标计算机管理员访问权限的特权账户（例如域管理员）运行此脚本。例如，要访问其他域，您可以使用`RunAs`工具在您希望工作的域中的特权用户上下文中启动Excel。整个脚本包含在Excel工作簿中。
 
 ![分发与安装](img/eafd0e1632fc08452cf4d68dbe912652_390_0.png)
 
@@ -9363,15 +10560,13 @@ End Sub
 
 ![输出](img/eafd0e1632fc08452cf4d68dbe912652_390_1.png)
 
-要运行脚本，请从随附的CD-ROM中打开Excel工作簿 `pwscanner.xls`，并查看和设置 *Setup* 工作表上的配置参数，如图12.1所示。指定域名，然后单击第一个按钮 1. Pull Computers from Directory 以从指定域生成计算机列表。接下来，在 *Output* 工作表中，注意第1列中所有计算机最初都被x选中，如图12.2所示。这意味着脚本将对所有计算机进行操作。此时，您可以取消选择并重新选择计算机，对列表进行排序，或从生成的列表中删除计算机，直到获得您希望处理的计算机列表。
+要运行脚本，请从随附的CD-ROM中打开Excel工作簿`pwscanner.xls`，并查看和设置 *Setup* 工作表上的配置参数，如图12.1所示。指定域名，然后单击第一个按钮 1. Pull Computers from Directory 以从指定域生成计算机列表。接下来，在 *Output* 工作表中，注意第1列中所有计算机最初都被x选中，如图12.2所示。这意味着脚本将对所有计算机进行操作。此时，您可以取消选择并重新选择计算机，对列表进行排序，或从生成的列表中删除计算机，直到获得您希望处理的计算机列表。
 
 ![PWScanner 设置工作表](img/eafd0e1632fc08452cf4d68dbe912652_391_0.png)
 
 **图 12.1** *PWScanner Setup* 工作表允许您指定域名、是否强制使用强密码、保留旧密码，或指定在生成随机密码时使用哪些字符。
 
 对计算机列表满意后，返回 *Setup* 工作表并单击名为 2. Identify Local Administrators 的按钮。单击此按钮会调用发现所有选定计算机的本地管理员账户的脚本。返回 *Output* 工作表，您会看到脚本已发现本地管理员账户的名称并将其列在标题为 Account Name 的列中，如图12.3所示。如果本地管理员账户的名称在后续运行之间发生变化，脚本会突出显示旧名称以引起您对更改的注意。在图12.3中，两个本地管理员账户已更改为 *nt4Admin* 和 *sysadmin*。另外，请注意IP地址也已列出，这可能有助于进一步识别或排除计算机问题。
-
-
 
 ## 本地密码审计与更改工具
 
@@ -9383,7 +10578,7 @@ End Sub
 
 脚本的第一步是识别本地管理员账户的名称——它们可能并不总是 *Administrator*。
 
-更改密码是一个两步过程。首先，在 *Output* 工作表中，在名为 New Password 的列中输入所需的密码。如果你希望计算机自动生成一个随机密码，请为密码输入单词 `random`。当你准备好更改密码时，返回 *Setup* 工作表并单击名为 3. Change Passwords 的按钮。脚本会遍历计算机列表，并尝试更改所有选定计算机的密码。当过程完成时，你会看到突出显示进度的消息以及可能发生的任何错误。图 12.4 显示了更改密码后看到的消息示例。此图实际上包含大量关于脚本如何运行的数据。在第一列中，只选择了四台计算机进行处理。`workstnXXX` 计算机（通过 *Find local administrator* 脚本确定为 *Down*）未被选中进行处理，你可以从 Process 列中缺少 x 标记看出这一点。脚本会突出显示它在尝试更改密码时遇到的任何问题。在此示例中，我们选择处理计算机 `dc`，但没有输入新密码。因此，脚本会突出显示需要关注的单元格，并添加一条消息通知用户问题所在。
+更改密码是一个两步过程。首先，在 *Output* 工作表中，在名为 New Password 的列中输入所需的密码。如果你希望计算机自动生成一个随机密码，请为密码输入单词`random`。当你准备好更改密码时，返回 *Setup* 工作表并单击名为 3. Change Passwords 的按钮。脚本会遍历计算机列表，并尝试更改所有选定计算机的密码。当过程完成时，你会看到突出显示进度的消息以及可能发生的任何错误。图 12.4 显示了更改密码后看到的消息示例。此图实际上包含大量关于脚本如何运行的数据。在第一列中，只选择了四台计算机进行处理。`workstnXXX`计算机（通过 *Find local administrator* 脚本确定为 *Down*）未被选中进行处理，你可以从 Process 列中缺少 x 标记看出这一点。脚本会突出显示它在尝试更改密码时遇到的任何问题。在此示例中，我们选择处理计算机`dc`，但没有输入新密码。因此，脚本会突出显示需要关注的单元格，并添加一条消息通知用户问题所在。
 
 ![](img/eafd0e1632fc08452cf4d68dbe912652_393_0.png)
 
@@ -9400,21 +10595,37 @@ End Sub
 一个基于 Excel 的工具，用于扫描计算机目录、更改本地管理员账户的密码并维护更改记录。
 
 - **ASCII**
+
   - ASCII 字符处理
+
 - **ADSI**
+
   - WinNT Provider
+
   - SetPassword
+
   - SetInfo
+
 - **Excel 对象模型**
+
   - 工作表操作
+
   - 单元格/区域格式化
+
 - **随机数函数**
+
   - Randomize
+
   - Rnd
+
 - **VBA 错误处理**
+
   - On Error Resume Next
+
   - On Error Goto 0
+
 - **用户数据类型**
+
   - 使用 Type 声明用户定义的数据类型
 
 # 脚本
@@ -9425,7 +10636,7 @@ End Sub
 
 ### 模块级代码
 
-与之前的 VBA 脚本一样，*PWScanner* 要求声明变量。它还将默认的全局比较属性设置为 Text。脚本将 *Setup* 和 *Output* 工作表的工作表对象声明为 `Public` 变量，以便所有其他函数无需显式声明和引用即可访问这些工作表。脚本还将数组 `g_aValidChar` 声明为 `Public`。此数组存储允许的有效字符，随机密码生成器使用这些字符来创建密码。
+与之前的 VBA 脚本一样，*PWScanner* 要求声明变量。它还将默认的全局比较属性设置为 Text。脚本将 *Setup* 和 *Output* 工作表的工作表对象声明为`Public`变量，以便所有其他函数无需显式声明和引用即可访问这些工作表。脚本还将数组`g_aValidChar`声明为`Public`。此数组存储允许的有效字符，随机密码生成器使用这些字符来创建密码。
 
 ```
 Option Explicit
@@ -9437,15 +10648,15 @@ Public g_aValidChar()
 
 ### PWScan
 
-*PWScanner* 中的主函数名为 `PWScan`。`PWScan` 根据调用方式执行两个不同的功能。如果使用 1（`iSelection = 1`）调用 `PWScan`，则它会在指定的计算机上搜索本地管理员账户。如果使用 2（`iSelection=2`）调用 `PWScan`，则它尝试更改指定计算机上的本地管理员账户密码。因为这两个功能都需要遍历相同的计算机列表并 ping 它们以查看是否正在响应，所以在两个函数之间共享这段通用代码可以使脚本更短、更易于阅读，并鼓励代码重用。
+*PWScanner* 中的主函数名为`PWScan`。`PWScan`根据调用方式执行两个不同的功能。如果使用 1（`iSelection = 1`）调用`PWScan`，则它会在指定的计算机上搜索本地管理员账户。如果使用 2（`iSelection=2`）调用`PWScan`，则它尝试更改指定计算机上的本地管理员账户密码。因为这两个功能都需要遍历相同的计算机列表并 ping 它们以查看是否正在响应，所以在两个函数之间共享这段通用代码可以使脚本更短、更易于阅读，并鼓励代码重用。
 
 ## 本地密码审计与更改工具
 
-用户定义数据类型 `ComputerData` 的数组 `aComputer` 存储从第 8 章的 *DumpComputerList* 脚本生成的计算机列表。脚本使用变量 `dtStart` 和 `dtEnd` 来计时并显示整个脚本执行所需的时间。变量 `iCol` 和 `iRow` 在遍历工作表数据时表示列和行值。脚本使用变量 `i` 和 `iCharSetCount` 作为通用计数器变量。
+用户定义数据类型`ComputerData`的数组`aComputer`存储从第 8 章的 *DumpComputerList* 脚本生成的计算机列表。脚本使用变量`dtStart`和`dtEnd`来计时并显示整个脚本执行所需的时间。变量`iCol`和`iRow`在遍历工作表数据时表示列和行值。脚本使用变量`i`和`iCharSetCount`作为通用计数器变量。
 
-变量 `bIDLocalAdmin` 和 `bChangePassword` 分别表示脚本是应该查找本地管理员的名称还是更改本地管理员密码的代码分支。最初，这两个变量都设置为 `False`。如果使用 `1`（`iSelection=1`）调用 `PwScan`，则 `bIDLocalAdmin` 设置为 `True`，后续检查会查看 `bIDLocalAdmin` 以检查脚本是否应处理此代码分支。类似地，如果使用 `2`（`iSelection=2`）调用 `PwScan`，则 `bChangePassword` 设置为 `True`。
+变量`bIDLocalAdmin`和`bChangePassword`分别表示脚本是应该查找本地管理员的名称还是更改本地管理员密码的代码分支。最初，这两个变量都设置为`False`。如果使用`1`（`iSelection=1`）调用`PwScan`，则`bIDLocalAdmin`设置为`True`，后续检查会查看`bIDLocalAdmin`以检查脚本是否应处理此代码分支。类似地，如果使用`2`（`iSelection=2`）调用`PwScan`，则`bChangePassword`设置为`True`。
 
-为了完成基本的脚本初始化，该函数将 `Worksheet` 对象 `g_objWsSetup` 设置为 *Setup* 工作表，并将动态数组 `g_aValidChar` 的维度重新调整为 `0` 以准备使用。它还通过 `Now` 方法将 `dtStart` 设置为当前时间来设置脚本的开始时间。
+为了完成基本的脚本初始化，该函数将`Worksheet`对象`g_objWsSetup`设置为 *Setup* 工作表，并将动态数组`g_aValidChar`的维度重新调整为`0`以准备使用。它还通过`Now`方法将`dtStart`设置为当前时间来设置脚本的开始时间。
 
 ```
 '------------------------------------------------------------------------------
@@ -9464,9 +10675,7 @@ If iSelection = 1 Then bIDLocalAdmin = True
 If iSelection = 2 Then bChangePassword = True
 ```
 
-脚本允许你指定在创建随机密码时使用哪些字符。脚本将这些字符分为六个不同的集合。前三个集合代表字母数字字符 0-9、A-Z 和 a-z。后三个集合代表非字母数字字符：!"#$%&'()*+,-./ :;@=:?@ 和 [\]^_`。你可以通过 *Setup* 工作表选择任何一组或所有这些字符集，方法是在所需字符集旁边的单元格中放置一个 `x`。脚本生成的随机密码由你指定集合中的字符组成。
-
-
+脚本允许你指定在创建随机密码时使用哪些字符。脚本将这些字符分为六个不同的集合。前三个集合代表字母数字字符 0-9、A-Z 和 a-z。后三个集合代表非字母数字字符：!"#$%&'()*+,-./ :;@=:?@ 和 [\]^_`。你可以通过 *Setup* 工作表选择任何一组或所有这些字符集，方法是在所需字符集旁边的单元格中放置一个`x`。脚本生成的随机密码由你指定集合中的字符组成。
 
 请注意，您自身的网络密码策略可能要求通过本地或组策略强制使用*强*密码。Windows NT（及更高版本）的强密码定义要求密码必须包含以下四个字符集中的三个：0-9、A-Z、a-z以及非字母数字字符。无论您的密码策略如何，该脚本都允许您选择任意数量的字符集来生成随机密码。当脚本尝试为需要强密码的计算机设置密码时，如果您选择的字符集少于三个，脚本将失败并通知您需要强密码。如果您在*设置*工作表中选择了*要求强密码*（在 Cells(15,5) 中输入 x），那么脚本会检查定义强密码的四个字符集中是否至少勾选了三个。如果选择的字符集少于三个，脚本会发出警告。
 
@@ -9543,13 +10752,13 @@ For i = 1 To UBound(aComputer)
         DisplayResult iRow, 7, "Working", 3
 ```
 
-脚本首先通过 `Pingable` 函数 ping 计算机名称，以检查计算机是否已启动并正在运行。第10章中的 `Pingable` 函数已修改，不仅返回响应（通过 `responding` 属性），还返回通过 DNS 解析的计算机 IP 地址。`Pingable` 函数将 ping 响应和计算机的 IP 地址返回给变量 `computer`，该变量已定义为用户自定义数据类型 `PingInfo`。
+脚本首先通过`Pingable`函数 ping 计算机名称，以检查计算机是否已启动并正在运行。第10章中的`Pingable`函数已修改，不仅返回响应（通过`responding`属性），还返回通过 DNS 解析的计算机 IP 地址。`Pingable`函数将 ping 响应和计算机的 IP 地址返回给变量`computer`，该变量已定义为用户自定义数据类型`PingInfo`。
 
-> 通过从 `PWScanner` 工作簿打开 Visual Basic 编辑器，可以查看对 `Pingable` 函数的更改。双击名为 *WormScanner* 的模块，即可查看函数的新更改。
+> 通过从`PWScanner`工作簿打开 Visual Basic 编辑器，可以查看对`Pingable`函数的更改。双击名为 *WormScanner* 的模块，即可查看函数的新更改。
 
-有时，错误的 DNS 条目在远程工作时可能会导致问题。在计算机名称旁显示解析后的 DNS IP 地址有助于故障排除。脚本在 `Cells(iRow,8)` 中显示计算机的 IP 地址（`computer.ip`）（由 DNS 返回）。
+有时，错误的 DNS 条目在远程工作时可能会导致问题。在计算机名称旁显示解析后的 DNS IP 地址有助于故障排除。脚本在`Cells(iRow,8)`中显示计算机的 IP 地址（`computer.ip`）（由 DNS 返回）。
 
-如果计算机响应 ping（`computer.responding = True`），则脚本会更新消息单元格以注明计算机已启动。然后，根据 `PwScan` 是处于查找本地管理员还是更改密码模式（如之前由变量 `iSelection` 定义），它会调用 `IDLocalAdmin` 或 `ChangePassword` 子程序。
+如果计算机响应 ping（`computer.responding = True`），则脚本会更新消息单元格以注明计算机已启动。然后，根据`PwScan`是处于查找本地管理员还是更改密码模式（如之前由变量`iSelection`定义），它会调用`IDLocalAdmin`或`ChangePassword`子程序。
 
 如果计算机不响应 ping（`computer.responding = False`），则脚本会更新消息单元格以注明计算机*已关闭*。
 
@@ -9568,7 +10777,7 @@ Else
 End If
 ```
 
-通过 `IDLocalAdmin` 或 `ChangePassword` 函数处理完计算机后，脚本会关闭该行的斜体格式，以表明它不再是当前行。
+通过`IDLocalAdmin`或`ChangePassword`函数处理完计算机后，脚本会关闭该行的斜体格式，以表明它不再是当前行。
 
 然后，脚本更新活动计算机的当前密码单元格。此过程会查找计算机最后更改的密码，并将该密码插入到当前密码列中。通过这种方式，即使脚本的每次运行并非更改了所有密码，当前密码列也包含给定计算机的最后设置密码。图12.5显示了一个示例，说明脚本如何在当前密码列中显示每台计算机的当前密码，无论密码最后何时设置。
 
@@ -9576,9 +10785,7 @@ End If
 
 **图12.5** 即使您选择仅在少数计算机上运行 *PWScanner*，脚本也会将所有当前密码汇总到“当前密码”列中。
 
-完成此任务的过程使用 `Do..Loop..Until` 语句继续执行，直到 `iCol` 达到某个值或到达工作表末尾。（Excel 工作表有 256 列，这就是为什么此循环的上限以 256 结束的原因。）
-
-
+完成此任务的过程使用`Do..Loop..Until`语句继续执行，直到`iCol`达到某个值或到达工作表末尾。（Excel 工作表有 256 列，这就是为什么此循环的上限以 256 结束的原因。）
 
 大于255的值）。从当前列（12,）右边紧邻的列开始，检查每个单元格的值。如果找到值，则将当前密码列（11）设置为此值。如果没有找到，则`iCol`递增，检查下一个单元格。
 
@@ -9596,7 +10803,7 @@ End If
     Next i
 ```
 
-最后，脚本格式化结果。它调用 `PostFormatTable` 函数（在第8章中描述），并为第10列和第11列添加右边框，以区分不同的密码列（新密码、当前密码和存档密码）。为了结束此子程序，脚本调用 `HideColumns` 函数（在第11章中描述）来隐藏用户指定的任何列，并显示执行脚本所花费的时间。
+最后，脚本格式化结果。它调用`PostFormatTable`函数（在第8章中描述），并为第10列和第11列添加右边框，以区分不同的密码列（新密码、当前密码和存档密码）。为了结束此子程序，脚本调用`HideColumns`函数（在第11章中描述）来隐藏用户指定的任何列，并显示执行脚本所花费的时间。
 
 ```
     PostFormatTable
@@ -9614,7 +10821,7 @@ End If
 
 ### IDLocalAdmin
 
-子程序 `IDLocalAdmin` 远程连接到一台计算机，并枚举其本地用户，以查找本地管理员账户的名称。默认情况下，此账户名为 *Administrator*。然而，许多组织选择将此名称更改为其他名称，以提高安全性。（可以说，安全性得到了提高，因为要登录到一个账户，您必须知道账户名和密码，如果您将众所周知的账户名 *Administrator* 更改为其他名称，就会使登录更加困难。）子程序 `IDLocalAdmin` 使用当前计算机的行号作为输入，并从该行获取处理所需的所有信息。计算机名存储在变量 `strComputer` 中。对象 `objADs` 和 `objUser` 分别表示到远程计算机的 ADSI 连接以及建立连接时对单个用户对象的引用。脚本使用布尔变量 `bUser` 和 `bAdmin` 来标记和跟踪可能的警报。脚本使用临时数组 `aTemp` 来存储 `objectSID` 属性的内容，该属性用于确定给定账户是否是本地管理员账户。
+子程序`IDLocalAdmin`远程连接到一台计算机，并枚举其本地用户，以查找本地管理员账户的名称。默认情况下，此账户名为 *Administrator*。然而，许多组织选择将此名称更改为其他名称，以提高安全性。（可以说，安全性得到了提高，因为要登录到一个账户，您必须知道账户名和密码，如果您将众所周知的账户名 *Administrator* 更改为其他名称，就会使登录更加困难。）子程序`IDLocalAdmin`使用当前计算机的行号作为输入，并从该行获取处理所需的所有信息。计算机名存储在变量`strComputer`中。对象`objADs`和`objUser`分别表示到远程计算机的 ADSI 连接以及建立连接时对单个用户对象的引用。脚本使用布尔变量`bUser`和`bAdmin`来标记和跟踪可能的警报。脚本使用临时数组`aTemp`来存储`objectSID`属性的内容，该属性用于确定给定账户是否是本地管理员账户。
 
 ```
 ''--------------------------------------------------------------------
@@ -9628,8 +10835,9 @@ Dim g_aValidChar() As Integer
 Dim aTemp() As Byte
 ```
 
-首先，脚本将 `bUser` 和 `bAdmin` 设置为 `False`。随着脚本的推进，如果子程序通过某些目标，它会将这些变量更新为 `True`。最后，根据这些变量的状态，脚本显示自定义消息。
-脚本还将变量 `strComputer` 设置为 `Cells(iRow,2)` 的值，该单元格包含计算机名称。`IDLocalAdmin` 使用 ADSI WinNT 提供程序连接到计算机，并将 `filter` 设置为所有 `User` 对象。这确保从此连接返回的所有对象仅为 `Users`，而不是计算机或组。
+首先，脚本将`bUser`和`bAdmin`设置为`False`。随着脚本的推进，如果子程序通过某些目标，它会将这些变量更新为`True`。最后，根据这些变量的状态，脚本显示自定义消息。
+
+脚本还将变量`strComputer`设置为`Cells(iRow,2)`的值，该单元格包含计算机名称。`IDLocalAdmin`使用 ADSI WinNT 提供程序连接到计算机，并将`filter`设置为所有`User`对象。这确保从此连接返回的所有对象仅为`Users`，而不是计算机或组。
 
 ```
 bUser = False
@@ -9639,44 +10847,67 @@ Set objADs = GetObject("WinNT://" & strComputer)
 objADs.Filter = Array("User")
 ```
 
-`objADs` 引用远程计算机 `strComputer` 上的所有用户对象。脚本遍历每个对象，并尝试识别本地管理员账户，无论该账户可能已被重命名。
-但首先，我们到达第一个检查点。请记住，此时远程计算机是正常运行的（它响应 ping）。但是，如果 `objADs` 不包含任何对象，那么运行脚本的账户可能没有足够的权限连接到此远程计算机，或者该计算机可能是非 Windows 计算机。但是，如果远程计算机确实至少有一个脚本可以读取的用户对象，那么 `bUser` 将设置为 `True`，这表明脚本可以成功枚举此远程计算机的本地用户。
+`objADs`引用远程计算机`strComputer`上的所有用户对象。脚本遍历每个对象，并尝试识别本地管理员账户，无论该账户可能已被重命名。
+
+但首先，我们到达第一个检查点。请记住，此时远程计算机是正常运行的（它响应 ping）。但是，如果`objADs`不包含任何对象，那么运行脚本的账户可能没有足够的权限连接到此远程计算机，或者该计算机可能是非 Windows 计算机。但是，如果远程计算机确实至少有一个脚本可以读取的用户对象，那么`bUser`将设置为`True`，这表明脚本可以成功枚举此远程计算机的本地用户。
 
 ```
 For Each objUser In objADs
     bUser = True
 ```
 
-请记住，本地管理员账户并不总是命名为 *Administrator*，这阻碍了我们简单地寻找以此名称命名的账户。确定真正本地管理员的一种方法是检查账户的 SID（安全标识符）。Windows 中的每个账户都有一个唯一的 SID。唯一账户（如本地管理员或来宾）具有不会更改的特定 SID 属性。例如，本地管理员的 SID 为 `S-1-5-21-x-y-z-500`，来宾账户的 SID 为 `S-1-5-21-x-y-z-501`。尽管前面示例中的 x、y 和 z 变量会随每个账户而变化，但相对标识符（RID）不会更改。RID 值是 SID 中的最后一个值。本地管理员的 RID 为 500，来宾账户的 RID 为 501。当 SID 表示为 `S-R-I-S-S`（例如 `S-1-5-21-x-y-z-500`）时，它被称为 *字符串* SID 格式。
+请记住，本地管理员账户并不总是命名为 *Administrator*，这阻碍了我们简单地寻找以此名称命名的账户。确定真正本地管理员的一种方法是检查账户的 SID（安全标识符）。Windows 中的每个账户都有一个唯一的 SID。唯一账户（如本地管理员或来宾）具有不会更改的特定 SID 属性。例如，本地管理员的 SID 为`S-1-5-21-x-y-z-500`，来宾账户的 SID 为`S-1-5-21-x-y-z-501`。尽管前面示例中的 x、y 和 z 变量会随每个账户而变化，但相对标识符（RID）不会更改。RID 值是 SID 中的最后一个值。本地管理员的 RID 为 500，来宾账户的 RID 为 501。当 SID 表示为`S-R-I-S-S`（例如`S-1-5-21-x-y-z-500`）时，它被称为 *字符串* SID 格式。
 
 > 提示：*要亲自查看 SID，请使用资源工具包实用程序 getsid.exe。此程序显示给定计算机和账户的字符串 SID。*
 
-ADSI WinNT 提供程序提供对名为 `ObjectSID` 的属性的访问，该属性包含本地账户的 SID。对于每个用户账户，脚本获取 `ObjectSID`，其中包含以 *八位字节字符串* 形式存储的 SID 的字节表示。八位字节字符串格式与上述 SID 字符串格式不同。不幸的是，尽管 C++ 和 C# 都包含将一种 SID 格式转换为另一种格式的方法，但 Visual Basic 和 JScript 没有（尽管您可以找到第三方 DLL 和外部 Microsoft DLL，您可以安装它们来为您进行这些转换）。但是，我们可以通过检查 `ObjectSID` 在其本机格式中的结构来绕过这个不便。每个 `ObjectSID` 是一个包含 28 个元素的数组。每个元素都是字节数据类型。图 12.6 显示了多个账户的 ObjectSID 元素示例。请注意编号为 24 和 25 的元素。它们对于管理员账户是相同的。本地管理员账户的第 24 和 25 个元素的字节值分别为 244 和 1。
+ADSI WinNT 提供程序提供对名为`ObjectSID`的属性的访问，该属性包含本地账户的 SID。对于每个用户账户，脚本获取`ObjectSID`，其中包含以 *八位字节字符串* 形式存储的 SID 的字节表示。八位字节字符串格式与上述 SID 字符串格式不同。不幸的是，尽管 C++ 和 C# 都包含将一种 SID 格式转换为另一种格式的方法，但 Visual Basic 和 JScript 没有（尽管您可以找到第三方 DLL 和外部 Microsoft DLL，您可以安装它们来为您进行这些转换）。但是，我们可以通过检查`ObjectSID`在其本机格式中的结构来绕过这个不便。每个`ObjectSID`是一个包含 28 个元素的数组。每个元素都是字节数据类型。图 12.6 显示了多个账户的 ObjectSID 元素示例。请注意编号为 24 和 25 的元素。它们对于管理员账户是相同的。本地管理员账户的第 24 和 25 个元素的字节值分别为 244 和 1。
 
 通过这种方式，我们不需要将 SID 转换为 SID 字符串来确定一个账户是否是本地管理员账户；我们只需检查第 24 个元素的值是否等于 244，第 25 个元素的值是否等于 1。
 
 | 计算机名 | 账户名 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 | 13 | 14 | 15 | 16 | 17 | 18 | 19 | 20 | 21 | 22 | 23 | 24 | 25 | 26 | 27 |
-| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+
 | svr2 | jeff | 5 | 0 | 0 | 0 | 0 | 0 | 5 | 21 | 0 | 0 | 0 | 67 | 23 | 10 | 50 | 15 | 248 | 96 | 29 | 22 | 192 | 234 | 50 | 247 | 3 | 0 | 0 |
+
 | dc1 | krbtgt | 5 | 0 | 0 | 0 | 0 | 0 | 5 | 21 | 0 | 0 | 0 | 217 | 49 | 248 | 66 | 209 | 218 | 116 | 3 | 7 | 229 | 59 | 43 | 246 | 1 | 0 | 0 |
+
 | svr2 | SQLDebugger | 5 | 0 | 0 | 0 | 0 | 0 | 5 | 21 | 0 | 0 | 0 | 67 | 23 | 10 | 50 | 15 | 248 | 96 | 29 | 22 | 192 | 234 | 50 | 246 | 3 | 0 | 0 |
+
 | svr2 | ACTUser | 5 | 0 | 0 | 0 | 0 | 0 | 5 | 21 | 0 | 0 | 0 | 67 | 23 | 10 | 50 | 15 | 248 | 96 | 29 | 22 | 192 | 234 | 50 | 245 | 3 | 0 | 0 |
+
 | svr1 | Guest | 5 | 0 | 0 | 0 | 0 | 0 | 5 | 21 | 0 | 0 | 0 | 252 | 227 | 21 | 49 | 187 | 140 | 51 | 94 | 130 | 139 | 166 | 40 | 245 | 1 | 0 | 0 |
+
 | dc1 | Guest | 5 | 0 | 0 | 0 | 0 | 0 | 5 | 21 | 0 | 0 | 0 | 217 | 49 | 248 | 66 | 209 | 218 | 116 | 3 | 7 | 229 | 59 | 43 | 245 | 1 | 0 | 0 |
+
 | wkstn1 | Guest | 5 | 0 | 0 | 0 | 0 | 0 | 5 | 21 | 0 | 0 | 0 | 87 | 41 | 2 | 76 | 248 | 159 | 180 | 116 | 21 | 37 | 175 | 71 | 245 | 1 | 0 | 0 |
+
 | wkstn2 | Guest | 5 | 0 | 0 | 0 | 0 | 0 | 5 | 21 | 0 | 0 | 0 | 205 | 124 | 65 | 102 | 253 | 67 | 70 | 30 | 21 | 37 | 175 | 71 | 245 | 1 | 0 | 0 |
+
 | wkstn3 | Guest | 5 | 0 | 0 | 0 | 0 | 0 | 5 | 21 | 0 | 0 | 0 | 252 | 227 | 21 | 49 | 77 | 100 | 73 | 46 | 7 | 229 | 59 | 43 | 245 | 1 | 0 | 0 |
+
 | svr2 | Guest | 5 | 0 | 0 | 0 | 0 | 0 | 5 | 21 | 0 | 0 | 0 | 67 | 23 | 10 | 50 | 15 | 248 | 96 | 29 | 22 | 192 | 234 | 50 | 245 | 1 | 0 | 0 |
+
 | svr1 | Administrator | 5 | 0 | 0 | 0 | 0 | 0 | 5 | 21 | 0 | 0 | 0 | 252 | 227 | 21 | 49 | 187 | 140 | 51 | 94 | 130 | 139 | 166 | 40 | 244 | 1 | 0 | 0 |
+
 | dc1 | Administrator | 5 | 0 | 0 | 0 | 0 | 0 | 5 | 21 | 0 | 0 | 0 | 217 | 49 | 248 | 66 | 209 | 218 | 116 | 3 | 7 | 229 | 59 | 43 | 244 | 1 | 0 | 0 |
+
 | wkstn1 | Administrator | 5 | 0 | 0 | 0 | 0 | 0 | 5 | 21 | 0 | 0 | 0 | 87 | 41 | 2 | 76 | 248 | 159 | 180 | 116 | 21 | 37 | 175 | 71 | 244 | 1 | 0 | 0 |
+
 | wkstn2 | Administrator | 5 | 0 | 0 | 0 | 0 | 0 | 5 | 21 | 0 | 0 | 0 | 205 | 124 | 65 | 102 | 253 | 67 | 70 | 30 | 21 | 37 | 175 | 71 | 244 | 1 | 0 | 0 |
+
 | wkstn3 | Administrator | 5 | 0 | 0 | 0 | 0 | 0 | 5 | 21 | 0 | 0 | 0 | 252 | 227 | 21 | 49 | 77 | 100 | 73 | 46 | 7 | 229 | 59 | 43 | 244 | 1 | 0 | 0 |
+
 | svr2 | Administrator | 5 | 0 | 0 | 0 | 0 | 0 | 5 | 21 | 0 | 0 | 0 | 67 | 23 | 10 | 50 | 15 | 248 | 96 | 29 | 22 | 192 | 234 | 50 | 244 | 1 | 0 | 0 |
+
 | svr2 | VUSR_svr2 | 5 | 0 | 0 | 0 | 0 | 0 | 5 | 21 | 0 | 0 | 0 | 67 | 23 | 10 | 50 | 15 | 248 | 96 | 29 | 22 | 192 | 234 | 50 | 244 | 3 | 0 | 0 |
+
 | svr2 | ASPNET | 5 | 0 | 0 | 0 | 0 | 0 | 5 | 21 | 0 | 0 | 0 | 67 | 23 | 10 | 50 | 15 | 248 | 96 | 29 | 22 | 192 | 234 | 50 | 242 | 3 | 0 | 0 |
+
 | svr2 | IWAM_svr2 | 5 | 0 | 0 | 0 | 0 | 0 | 5 | 21 | 0 | 0 | 0 | 67 | 23 | 10 | 50 | 15 | 248 | 96 | 29 | 22 | 192 | 234 | 50 | 241 | 3 | 0 | 0 |
+
 | svr1 | SWMAccount | 5 | 0 | 0 | 0 | 0 | 0 | 5 | 21 | 0 | 0 | 0 | 252 | 227 | 21 | 49 | 187 | 140 | 51 | 94 | 130 | 139 | 166 | 40 | 241 | 3 | 0 | 0 |
+
 | svr2 | IUSR_svr2 | 5 | 0 | 0 | 0 | 0 | 0 | 5 | 21 | 0 | 0 | 0 | 67 | 23 | 10 | 50 | 15 | 248 | 96 | 29 | 22 | 192 | 234 | 50 | 240 | 3 | 0 | 0 |
 
 **图 12.6** 通过检查构成 ObjectSID 的 28 个元素，我们可以在不将 SID 转换为字符串 SID 格式的情况下识别不同类型的用户账户。
@@ -9690,12 +10921,12 @@ If aTemp(24) = 244 And aTemp(25) = 1 Then
 ```
 
 在脚本记录本地管理员的名称之前，它首先查看是否在之前的运行中为此计算机找到了本地管理员。脚本查看包含本地管理员账户名称的单元格（Cells(iRow, 9)）的值。如果该单元格不为空，并且该单元格的值与当前本地管理员的名称不同，则脚本显示此差异的消息。（如果有人在此脚本的后续运行之间更改了本地管理员账户的名称，可能会发生这种情况。）
+
 否则，脚本更新消息单元格，指出计算机是 Up（它过去报告当前状态为 Up: Working），并在 Output 工作表上记录本地管理员的名称。
+
 此步骤完成了已找到本地管理员的条件判断。Next 语句指示脚本继续处理下一个用户账户。
 
-
-
-在搜索完所有用户账户后，脚本会报告其发现。如果未找到本地管理员账户，`bAdmin` 保持为 `False`，脚本会更新 *Output* 工作表，显示找不到本地管理员账户的消息。
+在搜索完所有用户账户后，脚本会报告其发现。如果未找到本地管理员账户，`bAdmin`保持为`False`，脚本会更新 *Output* 工作表，显示找不到本地管理员账户的消息。
 
 如果脚本找不到任何用户账户（例如，如果计算机运行的是非 Windows 操作系统，或远程计算机上设置的权限阻止了账户枚举），则会显示一条消息，表明无法读取用户数据。
 
@@ -9713,9 +10944,9 @@ End Sub
 
 ### ChangePassword
 
-子过程 `ChangePassword`，顾名思义，实际上就是更改本地管理员账户的密码。与 `IDLocalAdmin` 一样，`ChangePassword` 获取指定行 (`iRow`) 上的计算机和用户账户名。子过程从指定行的计算机读取变量 `strComputer` 和 `strUser` 的值。`strPassword` 存储该账户的新密码，其值要么从当前行读取，要么随机生成，具体取决于脚本是否配置为生成随机密码。
+子过程`ChangePassword`，顾名思义，实际上就是更改本地管理员账户的密码。与`IDLocalAdmin`一样，`ChangePassword`获取指定行 (`iRow`) 上的计算机和用户账户名。子过程从指定行的计算机读取变量`strComputer`和`strUser`的值。`strPassword`存储该账户的新密码，其值要么从当前行读取，要么随机生成，具体取决于脚本是否配置为生成随机密码。
 
-脚本使用布尔变量 `bRandom` 来指示密码是随机生成的还是显式指定的。变量 `objUser` 代表用于实际更改密码的远程计算机-用户对象连接。脚本使用 `iCounter` 作为通用计数器变量。
+脚本使用布尔变量`bRandom`来指示密码是随机生成的还是显式指定的。变量`objUser`代表用于实际更改密码的远程计算机-用户对象连接。脚本使用`iCounter`作为通用计数器变量。
 
 ```
 '----------------------------------------------------------------------------
@@ -9759,9 +10990,9 @@ Select Case Cells(iRow, 10).Value
         Cells(iRow, 10).Interior.ColorIndex = 35
 ```
 
-除了检查包含密码的单元格是否为空外，脚本还会检查该单元格是否包含值 `Random`（或其大小写变体 `random` 或 `RANDOM`）。如果是，则脚本为当前计算机的本地管理员生成一个随机密码。脚本将变量 `bRandom` 设置为 `True` 并调用函数 `GetRandomPassword`，该函数实际上根据 *Setup* 工作表上指定的字符集生成一个随机密码。
+除了检查包含密码的单元格是否为空外，脚本还会检查该单元格是否包含值`Random`（或其大小写变体`random`或`RANDOM`）。如果是，则脚本为当前计算机的本地管理员生成一个随机密码。脚本将变量`bRandom`设置为`True`并调用函数`GetRandomPassword`，该函数实际上根据 *Setup* 工作表上指定的字符集生成一个随机密码。
 
-如果密码单元格不为空且不包含 `random` 这个词，则假定它包含此账户所需密码，变量 `strPassword` 将被设置为该值。
+如果密码单元格不为空且不包含`random`这个词，则假定它包含此账户所需密码，变量`strPassword`将被设置为该值。
 
 ```
 Case "random"
@@ -9772,7 +11003,7 @@ Case Else
 End Select
 ```
 
-在继续执行实际更改密码的代码之前，脚本检查 `strUser` 和 `strPassword` 是否不为空。使用 ADSI WinNT 提供程序，脚本尝试连接到远程计算机上的用户对象。如果运行此脚本的账户没有权限进行此连接，或者用户账户不存在，则会发生错误。为了捕获这些错误，脚本启用错误处理，并在 *Output* 工作表上内联报告遇到的任何错误的描述。
+在继续执行实际更改密码的代码之前，脚本检查`strUser`和`strPassword`是否不为空。使用 ADSI WinNT 提供程序，脚本尝试连接到远程计算机上的用户对象。如果运行此脚本的账户没有权限进行此连接，或者用户账户不存在，则会发生错误。为了捕获这些错误，脚本启用错误处理，并在 *Output* 工作表上内联报告遇到的任何错误的描述。
 
 ```
 If strUser <> "" And strPassword <> "" Then
@@ -9786,25 +11017,28 @@ If strUser <> "" And strPassword <> "" Then
     End If
 ```
 
-实际更改密码的代码出奇地简单。首先，脚本调用 `SetPassword` 方法来指定新密码。（请注意，使用此方法时，您不需要知道现有密码即可进行更改；但是，您确实需要具有适当的管理员级权限，例如是 *Domain Admins* 的成员或远程计算机 *Administrators* 组的成员账户。）脚本调用 `SetPassword` 方法后，会调用 `SetInfo` 方法将更改实际更新到远程计算机。直到调用 `SetInfo` 方法，更改才会提交到远程计算机。
+实际更改密码的代码出奇地简单。首先，脚本调用`SetPassword`方法来指定新密码。（请注意，使用此方法时，您不需要知道现有密码即可进行更改；但是，您确实需要具有适当的管理员级权限，例如是 *Domain Admins* 的成员或远程计算机 *Administrators* 组的成员账户。）脚本调用`SetPassword`方法后，会调用`SetInfo`方法将更改实际更新到远程计算机。直到调用`SetInfo`方法，更改才会提交到远程计算机。
 
 ```
 objUser.SetPassword strPassword
 objUser.SetInfo
 ```
 
-实际更改密码可能因多种原因而失败。例如，如果密码不够长、在要求强密码的情况下密码不够强，或者用户没有权限更改密码。脚本会查找 `Err` 不等于 0 时指示的任何错误。
+实际更改密码可能因多种原因而失败。例如，如果密码不够长、在要求强密码的情况下密码不够强，或者用户没有权限更改密码。脚本会查找`Err`不等于 0 时指示的任何错误。
 
 假设运行脚本的账户具有在远程计算机上更改密码的适当权限，您可能遇到的最常见错误是尝试设置不符合密码策略的密码。（您可以通过本地或组策略设置密码策略并控制设置，例如最小长度或密码是否必须满足强密码要求等。）例如，如果您的域组策略要求强密码，而您指定密码为 *apple*，则会出现以下描述的错误（错误号 2147022651）：
 
 > *Automation error*
+
 > *The password does not meet the password policy requirements. Check the minimum password length, password complexity and password history requirements.*
 
 在尝试更改密码时，可能会发生多种错误，脚本会捕获并显示这些错误。然而，脚本为三种特定结果做了准备：
 
--   随机密码生成器创建的密码不符合强密码设置。
--   脚本用户指定的密码不符合强密码设置（或发生其他错误）。
--   密码已成功更改。
+- 随机密码生成器创建的密码不符合强密码设置。
+
+- 脚本用户指定的密码不符合强密码设置（或发生其他错误）。
+
+- 密码已成功更改。
 
 在第一种情况下，即使选择了所有字符集，随机密码生成器仍有可能创建不符合强密码设置的密码。强密码必须包含四个字符集中的三个字符集的字符。密码生成器从指定集合中的字符随机创建密码。因此，偶尔可能会生成一个全是大写、混合大小写（无数字）等的密码。为了检查这种情况，脚本会确定是否遇到了与密码策略相关的特定错误（`Err=-2147022651`），以及用户是否指定了一个随机
 
@@ -9812,7 +11046,7 @@ objUser.SetInfo
 
 如果用户确实指定了要求强密码，那么脚本*有可能*创建出真正的强密码（只是密码生成器随机生成了一个“弱”密码）。当*要求强密码*启用时，脚本会强制要求至少选择四类字符集中的三类。
 
-根据此设计，如果满足前述条件且*要求强密码*设置已启用，那么脚本会再次调用 `ChangePassword` 函数以重新开始并创建一个新的随机密码。此过程将持续，直到密码被成功更改。
+根据此设计，如果满足前述条件且*要求强密码*设置已启用，那么脚本会再次调用`ChangePassword`函数以重新开始并创建一个新的随机密码。此过程将持续，直到密码被成功更改。
 
 > *此脚本的密码生成自动重试旨在更改组成密码的实际字符。如果您的密码策略限制了其他某些设置——例如要求密码长于八个字符——则必须修改此脚本，否则将无限循环。对于大多数使用当前版本 Windows 的组织，此脚本内的设置是典型的，并且在通常的密码策略内有效。*
 
@@ -9858,9 +11092,9 @@ End Sub
 
 ### GetRandomPassword
 
-函数 `GetRandomPassword` 生成一个随机的八位密码，由用户选定的字符集中的字符组成。脚本用户在*设置*工作表上指定使用哪些字符集。`GetRandomPassword` 包含两个主要部分。第一部分确定字符集是否已加载到 `g_aValidChar` 数组中，第二部分则实际生成密码。
+函数`GetRandomPassword`生成一个随机的八位密码，由用户选定的字符集中的字符组成。脚本用户在*设置*工作表上指定使用哪些字符集。`GetRandomPassword`包含两个主要部分。第一部分确定字符集是否已加载到`g_aValidChar`数组中，第二部分则实际生成密码。
 
-该函数使用变量 `iRow` 在读取字符集时跟踪*设置*工作表上的行。顾名思义，变量 `randomASC2` 是一个介于 33 到 122 之间的随机数，代表建议密码字符的 ASCII 值。如果随机生成的字符存在于所选字符集的 `g_aValidChar` 数组中，则脚本将 `bValidChar` 的值设置为 `True`。变量 `strPassword` 在函数将字符拼接其上时存储新密码。
+该函数使用变量`iRow`在读取字符集时跟踪*设置*工作表上的行。顾名思义，变量`randomASC2`是一个介于 33 到 122 之间的随机数，代表建议密码字符的 ASCII 值。如果随机生成的字符存在于所选字符集的`g_aValidChar`数组中，则脚本将`bValidChar`的值设置为`True`。变量`strPassword`在函数将字符拼接其上时存储新密码。
 
 ```
 ' --------------------------------------------------------------------
@@ -9872,11 +11106,11 @@ Dim bValidChar As Boolean
 Dim strPassword As String
 ```
 
-*PWScanner* 将 `g_aValidChar` 声明为 Public 变量，而主函数 PwScan 将其重新调整为长度为 0。当脚本第一次调用 `GetRandomPassword` 时，`g_aValidChar` 的上界将为 0，函数将构建数组 `g_aValidChar`。
+*PWScanner* 将`g_aValidChar`声明为 Public 变量，而主函数 PwScan 将其重新调整为长度为 0。当脚本第一次调用`GetRandomPassword`时，`g_aValidChar`的上界将为 0，函数将构建数组`g_aValidChar`。
 
-变量 `iCounter` 代表 `g_aValidChar` 的当前索引，函数为添加到 `g_aValidChar` 的每个字符递增 `iCounter`。
+变量`iCounter`代表`g_aValidChar`的当前索引，函数为添加到`g_aValidChar`的每个字符递增`iCounter`。
 
-每个字符集的实际 ASCII 上下限存储在*设置*工作表的随机字符配置部分，第 26 到 31 行。脚本逐行遍历，并在该行的第 7 列中查找 x。如果存在 x，则脚本会创建第二个循环，从第 8 列的值开始，到第 9 列的值结束。例如，如果 `Cells(26,8).Value=48` 且 `Cells(26,9).Value=57`，则函数将从 48 循环到 57，并用以下值填充 `g_aValidChar`：48、49、50、51、52、53、54、55、56 和 57。首先，脚本将数组 `g_aValidChar` 增量地重新调整为索引 `iCounter`，然后将新值添加到此索引，接着递增 `iCounter`。通过这种方式，函数构建 `g_aValidChar`，完成后，`g_aValidChar` 的上界等于数组中的元素数量。
+每个字符集的实际 ASCII 上下限存储在*设置*工作表的随机字符配置部分，第 26 到 31 行。脚本逐行遍历，并在该行的第 7 列中查找 x。如果存在 x，则脚本会创建第二个循环，从第 8 列的值开始，到第 9 列的值结束。例如，如果`Cells(26,8).Value=48`且`Cells(26,9).Value=57`，则函数将从 48 循环到 57，并用以下值填充`g_aValidChar`：48、49、50、51、52、53、54、55、56 和 57。首先，脚本将数组`g_aValidChar`增量地重新调整为索引`iCounter`，然后将新值添加到此索引，接着递增`iCounter`。通过这种方式，函数构建`g_aValidChar`，完成后，`g_aValidChar`的上界等于数组中的元素数量。
 
 ```
 If UBound(g_aValidChar) = 0 Then
@@ -9894,9 +11128,9 @@ If UBound(g_aValidChar) = 0 Then
 End If
 ```
 
-`GetRandomPassword` 的第二部分实际上创建了八位随机密码。脚本首先随机生成一个字符，并检查该字符是否是有效字符集（`g_aValidChar`）的成员来创建密码。如果字符有效，脚本将字符添加到字符串 `strPassword` 中。此过程重复，直到 `strPassword` 的长度（`len`）达到八个字符。
+`GetRandomPassword`的第二部分实际上创建了八位随机密码。脚本首先随机生成一个字符，并检查该字符是否是有效字符集（`g_aValidChar`）的成员来创建密码。如果字符有效，脚本将字符添加到字符串`strPassword`中。此过程重复，直到`strPassword`的长度（`len`）达到八个字符。
 
-该函数持续创建随机字符，直到生成有效字符。如果找到匹配项，布尔变量 `bValidChar` 被设置为 True，循环终止。
+该函数持续创建随机字符，直到生成有效字符。如果找到匹配项，布尔变量`bValidChar`被设置为 True，循环终止。
 
 ```
 While Len(strPassword) < 8
@@ -9904,9 +11138,9 @@ While Len(strPassword) < 8
     While Not bValidChar
 ```
 
-该函数使用 `Randomize` 语句用系统计时器的值为内置随机数生成器播种。随机数生成器需要一个种子值来生成随机数。种子值越随机，生成的数字就越随机。许多数学家和计算机科学家已经从理论上探讨了如何实际生成真正的随机数；然而，出于此脚本的目的，使用系统计时器生成随机种子值可产生令人满意的随机数。`Rnd` 函数实际上使用从 `Randomize` 语句生成的种子值生成大于 0 且小于 1 的随机数。
+该函数使用`Randomize`语句用系统计时器的值为内置随机数生成器播种。随机数生成器需要一个种子值来生成随机数。种子值越随机，生成的数字就越随机。许多数学家和计算机科学家已经从理论上探讨了如何实际生成真正的随机数；然而，出于此脚本的目的，使用系统计时器生成随机种子值可产生令人满意的随机数。`Rnd`函数实际上使用从`Randomize`语句生成的种子值生成大于 0 且小于 1 的随机数。
 
-脚本使用函数 `(122-33+1)*Rnd+33` 将随机生成的数字转换为介于 33 到 122 之间的值，然后使用 `Round` 方法将其四舍五入到最接近的整数。这个新的整数表示要用于新密码的建议字符的 ASCII 值。但首先，脚本会遍历 `g_aValidChar` 数组中的每个元素，并验证此新字符是否包含在所选字符集之一中。如果字符有效，函数将 `bValidChar` 设置为 `True`，并将字符附加到 `strPassword`。
+脚本使用函数`(122-33+1)*Rnd+33`将随机生成的数字转换为介于 33 到 122 之间的值，然后使用`Round`方法将其四舍五入到最接近的整数。这个新的整数表示要用于新密码的建议字符的 ASCII 值。但首先，脚本会遍历`g_aValidChar`数组中的每个元素，并验证此新字符是否包含在所选字符集之一中。如果字符有效，函数将`bValidChar`设置为`True`，并将字符附加到`strPassword`。
 
 ```
 Randomize
@@ -9921,7 +11155,7 @@ Wend
 strPassword = strPassword + Chr(randomASC2)
 ```
 
-使用 Excel 存储密码时的一个特别注意事项是它将字符 `=` 和 `'` 解释为表示操作的特殊字符。当单元格值以等号（`=`）字符为前缀时，Excel 将该单元格视为函数，而单引号（`'`）表示单元格中的文本输入。为避免误解密码，脚本会丢弃任何以 `=` 或 `'` 开头的密码。
+使用 Excel 存储密码时的一个特别注意事项是它将字符`=`和`'`解释为表示操作的特殊字符。当单元格值以等号（`=`）字符为前缀时，Excel 将该单元格视为函数，而单引号（`'`）表示单元格中的文本输入。为避免误解密码，脚本会丢弃任何以`=`或`'`开头的密码。
 
 ```
 Select Case Left(strPassword, 1)
@@ -9945,8 +11179,11 @@ End Function
 ## 要点
 
 - *PWScanner* 演示了如何使用基本的内置 ADSI 调用来查找本地管理员账户。
+
 - 该脚本包含了适度的错误处理，以通知用户在使用远程计算机账户和密码时可能出现的各种问题。
+
 - 脚本在更改密码时会报告其进度，并始终尝试通知用户当前密码是什么，或者在出现问题时，告知尝试过的密码是什么。
+
 - 脚本使用随机数函数和 ASCII 字符值来创建随机密码，这些密码可满足用户选择的字符集或强密码策略的要求。
 
 本脚本完成了基于 Excel VBA 的脚本部分。下一章也是最后一章介绍的脚本提供了额外的功能，你可以将其插入到任何以前的脚本中或你自己的创作中。下一个脚本演示了如何使用 CDO 将脚本结果通过电子邮件发送给其他人。
@@ -9970,70 +11207,89 @@ End Function
 你的公司使用 Microsoft Exchange 作为主要的消息平台，并且仅对邮件系统中也拥有邮箱的收件人支持中继 SMTP 消息。这种中继限制对于大多数企业 SMTP 服务器来说是典型的，但因为你计划将脚本配置为仅向 Exchange 系统的收件人发送，所以你不认为这会是一个问题。
 
 > **注意**
+
 >
+
 > 由于未经请求的商业电子邮件（UCE，或称为垃圾邮件）的大量增加，邮件中继限制最近变得更加突出。当你使用 CDO 生成和发送电子邮件时，你是以 SMTP 消息的形式发送到远程 SMTP 服务器，根据你的收件人和发件人地址，该服务器可能会充当中继。例如，如果你的脚本通过 SMTP 服务器 smtp.internal.com 从 script@localhost 发送电子邮件到 someone@anexternaldomain.com，内部 SMTP 服务器可能会拒绝中继。但是，从 script@localhost 发送到 someone@internal.com 并通过 smtp.internal.com 发送的电子邮件很可能会成功。
 
 ## 分析
 
-本章提出的场景的解决方案包含一个利用基于 CDO 的小型 `Mail` 函数的 JScript 脚本，该函数可在未来的脚本中重复使用。
+本章提出的场景的解决方案包含一个利用基于 CDO 的小型`Mail`函数的 JScript 脚本，该函数可在未来的脚本中重复使用。
 
 该脚本包含一个简单的函数，你可以将其包含在现有脚本中，使它们能够使用 SMTP 将结果通过电子邮件发送给邮件收件人。这个独立的命令行驱动脚本接受许多与消息相关的参数，例如*收件人*、*发件人*、*抄送*和*密送*收件人，自定义*主题*和*正文*字段，以及附件支持。为了支持外部脚本输出的电子邮件发送，用户可以指定将文件作为附件发送，或将文件内容作为电子邮件正文发送。该脚本还支持通过标准电子邮件附件发送二进制文件。
 
-驱动实际消息处理的基于 CDO 的 `Mail` 函数会检测本地 SMTP 服务是否正在运行，并使用该服务或指定的远程 SMTP 服务器（如果找不到本地服务器）。此功能使用 Windows 2000 的 CDO，它使用 SMTP，不需要 Exchange 服务器来创建和发送消息。此函数用 JScript 编写，但可以轻松移植到 VBScript。表 13.1 显示了这些功能请求如何映射到技术要求。
+驱动实际消息处理的基于 CDO 的`Mail`函数会检测本地 SMTP 服务是否正在运行，并使用该服务或指定的远程 SMTP 服务器（如果找不到本地服务器）。此功能使用 Windows 2000 的 CDO，它使用 SMTP，不需要 Exchange 服务器来创建和发送消息。此函数用 JScript 编写，但可以轻松移植到 VBScript。表 13.1 显示了这些功能请求如何映射到技术要求。
 
-邮件函数的配套脚本提供了一个基本的命令行驱动脚本，允许你以各种格式发送电子邮件。此函数解释传递给脚本的命令行参数，解析它们，并生成电子邮件。脚本通常成对解释参数，例如 `-arg [option]`。例如，`-s "这是主题"` 指定参数 `-s`，表示主题，后跟所需的主题文本。因为命令行参数以空格分隔，所以必须将包含空格的任何文本用引号括起来。
+邮件函数的配套脚本提供了一个基本的命令行驱动脚本，允许你以各种格式发送电子邮件。此函数解释传递给脚本的命令行参数，解析它们，并生成电子邮件。脚本通常成对解释参数，例如`-arg [option]`。例如，`-s "这是主题"`指定参数`-s`，表示主题，后跟所需的主题文本。因为命令行参数以空格分隔，所以必须将包含空格的任何文本用引号括起来。
 
 ### 表 13.1 将功能请求映射到技术要求
 
 | 功能请求 | 技术要求 |
+
 | :--- | :--- |
+
 | 为新脚本添加邮件功能。 | 创建新的 JScript 函数，可以插入到新脚本中并作为脚本的组成部分调用。此功能利用 Windows 2000 的 CDO。 |
+
 | 为旧脚本添加邮件功能。 | 提供一个辅助脚本，读取文本文件或文件附件，并独立于创建数据的脚本发送数据。此脚本也使用 CDO，不需要 Exchange Server。 |
 
 这些服务的主要功能如下：
 
-**Main 函数：** 提供 `Mail` 函数的配套脚本，解析命令行参数以设置新消息。
+**Main 函数：** 提供`Mail`函数的配套脚本，解析命令行参数以设置新消息。
 
 - 支持指定*收件人*、*发件人*、*抄送*和*密送*。
+
 - 指定自定义主题和正文行。
+
 - 支持多个文件附件。
+
 - 支持读取文本文件并将其内容作为新消息的正文插入。
 
 **mail：** 提供使用 SMTP 向一个或多个收件人发送消息主题、正文和可选附件的功能。
 
 - 支持本地和远程 SMTP 服务器。
+
 - 利用 Microsoft CDO 技术。
+
 - 不需要 Exchange 服务器。
 
 **ReadTextFile：** 打开并读取文本文件并返回结果。
 
-- 使用 `FileSystemObject` 读取文本文件。
+- 使用`FileSystemObject`读取文本文件。
+
 - 将结果作为字符串返回给调用函数。
+
 - 由邮件配套脚本用于将文本文件内容作为消息正文插入。
 
 **ServiceCheck：** 在指定计算机上搜索正在运行的服务。
 
-- 检查本地或远程计算机上指定服务的 `Win32_Service` 状态。
+- 检查本地或远程计算机上指定服务的`Win32_Service`状态。
+
 - 由邮件配套脚本用于查看 SMTP 服务是否正在运行。
 
 **ParamError：** 显示格式统一的错误。
 
 **Usage：** 显示脚本帮助。
 
-
-
 此脚本支持的参数如表13.2所示。
 
 **表 13.2** *Mail* 脚本命令行参数与变量
 
 | Mail 属性 | 参数 | mail.js 中的变量 | CDO 属性（通过 objMsg 引用） | 描述 |
+
 |---|---|---|---|---|
+
 | 收件人 | default | strTo | objMsg.To | 电子邮件的主要收件人。 |
+
 | 主题 | -s | strSubject | objMsg.Subject | 电子邮件的主题。 |
+
 | 正文 | -b | strTextBody | objMsg.TextBody | 电子邮件的正文内容。 |
+
 | 发件人 | -f | strFrom | objMsg.From | 电子邮件的发送者。 |
+
 | 抄送 | -cc | strCC | objMsg.CC | 电子邮件的次要收件人。 |
+
 | 密送 | -bcc | strBCC | objMsg.BCC | 将收到电子邮件但不会被其他收件人看到的收件人。 |
+
 | 附件 | -a | strAttachment, aAttachment | objMsg.AddAttachment | 此方法允许多次添加附件。 |
 
 # 分发与安装
@@ -10069,16 +11325,27 @@ End Function
 创建一个命令行脚本，用于生成基于标准 SMTP 的电子邮件，这些邮件可用于通过电子邮件发送其他特定任务脚本的结果。
 
 - 数组 (JScript)
+
   - push
+
 - Windows 2000 的 CDO
+
   - CDO 配置对象
+
   - sendusing、smtpserverport 和 smtpserver 配置字段
+
   - To、From、CC 和 BCC 字段
+
   - Subject 和 TextBody 字段
+
   - AddAttachment
+
 - FileSystemObject
+
   - OpenTextFile
+
   - ReadLine
+
   - Close
 
 # 脚本
@@ -10089,7 +11356,7 @@ End Function
 
 脚本以变量声明开始。此脚本旨在作为命令行邮件实用程序，因此包含了您自己独特的部署可能不需要的许多额外参数——例如，您可能不需要附加文件或密送收件人。
 
-主要的字符串变量在前面的表13.2中已定义。脚本使用变量 `colArgs` 处理命令行参数，并使用 `bHelp` 跟踪用户是否指定了（或需要）脚本帮助命令。CDO 使用 `AddAttachment` 方法添加电子邮件附件，脚本使用数组 `aAttachment` 跟踪这些附件。
+主要的字符串变量在前面的表13.2中已定义。脚本使用变量`colArgs`处理命令行参数，并使用`bHelp`跟踪用户是否指定了（或需要）脚本帮助命令。CDO 使用`AddAttachment`方法添加电子邮件附件，脚本使用数组`aAttachment`跟踪这些附件。
 
 ```
 //-----------------------------------------------------------------
@@ -10102,7 +11369,7 @@ var bHelp = false;
 var aAttachment = new Array();
 ```
 
-脚本初始化常见变量，例如主题、收件人地址和发件人地址。这确保了如果脚本运行时缺少其中一个参数，脚本将用通用值替代并继续运行。域名 `@localhost` 指的是用户正在使用的计算机，在大多数情况下在 Windows 系统上无法投递。它仅用作占位符。
+脚本初始化常见变量，例如主题、收件人地址和发件人地址。这确保了如果脚本运行时缺少其中一个参数，脚本将用通用值替代并继续运行。域名`@localhost`指的是用户正在使用的计算机，在大多数情况下在 Windows 系统上无法投递。它仅用作占位符。
 
 ```
 strTextBody="";
@@ -10112,9 +11379,9 @@ strFrom="script@localhost";
 strTo="postmaster@localhost";
 ```
 
-为了开始参数解析，脚本将变量 `colArgs` 设置为参数集合，然后开始循环遍历该集合的每个成员。脚本调用 JScript 的 `toLowerCase` 方法将参数字符串转换为全小写，并将 `strArgs` 设置为此值。这种设置允许用户在命令行参数中指定 `-From`、`-from` 或 `-FrOm`，脚本会以与 `-from` 相同的方式处理所有这三种情况。
+为了开始参数解析，脚本将变量`colArgs`设置为参数集合，然后开始循环遍历该集合的每个成员。脚本调用 JScript 的`toLowerCase`方法将参数字符串转换为全小写，并将`strArgs`设置为此值。这种设置允许用户在命令行参数中指定`-From`、`-from`或`-FrOm`，脚本会以与`-from`相同的方式处理所有这三种情况。
 
-接下来，脚本使用正则表达式 `/^-/` 检查参数是否以连字符 (`-`) 开头。脚本根据 `/^-/` 检查每个参数，该正则表达式匹配"行首后跟连字符"。因此，我们的参数 `-s`、`-cc` 都匹配，但 `user@localhost` 不匹配且不满足条件。参数解析的构造使得非连字符开头的参数被视为发送给（`To`）地址。
+接下来，脚本使用正则表达式`/^-/`检查参数是否以连字符 (`-`) 开头。脚本根据`/^-/`检查每个参数，该正则表达式匹配"行首后跟连字符"。因此，我们的参数`-s`、`-cc`都匹配，但`user@localhost`不匹配且不满足条件。参数解析的构造使得非连字符开头的参数被视为发送给（`To`）地址。
 
 ```
 var colArgs = WScript.Arguments;
@@ -10164,8 +11431,6 @@ if(strArg=="-from") {
     i++;
 }
 ```
-
-
 
 ```
 if(strArg=="-smtp") {
@@ -10255,7 +11520,7 @@ Windows 2000 的 CDO 支持使用本地安装的 SMTP 服务发送邮件，或�
 
 编写脚本以将电子邮件发送到远程 SMTP 服务器需要配置 CDO SMTP 配置属性。通过使用 -SMTP 参数后跟 SMTP 服务器名称来指定远程服务器（例如，*smtp.yourcompany.com*）。脚本将您指定的 SMTP 服务解释为触发向远程服务器发送所需的额外代码。
 
-如果您未指定使用远程 SMTP 服务器，并且未安装和运行 SMTP 服务，则脚本会显示错误。脚本调用函数 `ServiceCheck`，传入运行脚本的本地计算机名称（localhost）和 SMTP 服务名称（SMTPSVC），以检查服务的状态。如果服务正在运行，`ServiceCheck` 返回 `true`。否则，它返回 `false`，脚本将向用户显示错误。
+如果您未指定使用远程 SMTP 服务器，并且未安装和运行 SMTP 服务，则脚本会显示错误。脚本调用函数`ServiceCheck`，传入运行脚本的本地计算机名称（localhost）和 SMTP 服务名称（SMTPSVC），以检查服务的状态。如果服务正在运行，`ServiceCheck`返回`true`。否则，它返回`false`，脚本将向用户显示错误。
 
 ```
 if(!ServiceCheck("localhost", "SMTPSVC") & strSMTPServer=="") {
@@ -10267,7 +11532,7 @@ if(!ServiceCheck("localhost", "SMTPSVC") & strSMTPServer=="") {
     }
 ```
 
-在将消息参数传递给邮件函数之前，脚本会检查用户是否指定了（或需要）帮助，并调用 `Usage` 函数向用户显示帮助消息。否则，脚本将使用所有用户指定的参数调用 `mail` 函数。
+在将消息参数传递给邮件函数之前，脚本会检查用户是否指定了（或需要）帮助，并调用`Usage`函数向用户显示帮助消息。否则，脚本将使用所有用户指定的参数调用`mail`函数。
 
 ```
 if(bHelp) Usage();
@@ -10277,7 +11542,7 @@ mail(strFrom, strSubject, strTextBody, strTo, strCC, strBCC,
 
 ### Mail
 
-函数 `mail` 处理多个输入参数，以配置和发送使用 CDO 的基于 SMTP 的消息。该函数使用的两个主要 CDO 对象是 `Message` 和 `Configuration` 对象，在脚本中表示为 `objMsg` 和 `objConfiguration`。
+函数`mail`处理多个输入参数，以配置和发送使用 CDO 的基于 SMTP 的消息。该函数使用的两个主要 CDO 对象是`Message`和`Configuration`对象，在脚本中表示为`objMsg`和`objConfiguration`。
 
 ```
 //---------------------------------------------------------
@@ -10292,15 +11557,15 @@ objConfiguration = new ActiveXObject("CDO.Configuration");
 
 CDO 使用 Configuration 对象来处理 CDO 实体的各种配置设置。如果您没有设置 CDO Configuration，那么 CDO 会在每次发送消息之前使用默认值为您设置一个。或者，您可以一次性设置 CDO Configuration，然后将其用于您发送的每条消息。在此脚本中，我们首先配置 CDO Configuration 对象，然后将此配置与我们要发送的 Message 关联起来。
 
-我们使用的配置字段以名称/值对的形式指定，名称存储为*统一资源标识符*（URI）。URI 是表示资源的字符串。最常见的 URI 形式是统一资源定位符（URL），例如 `http://www.microsoft.com`。例如，CDO 配置字段 `smtpserverport` 完全（且唯一地）由 URI `http://schemas.microsoft.com/cdo/smtpserver` 标识。
+我们使用的配置字段以名称/值对的形式指定，名称存储为*统一资源标识符*（URI）。URI 是表示资源的字符串。最常见的 URI 形式是统一资源定位符（URL），例如`http://www.microsoft.com`。例如，CDO 配置字段`smtpserverport`完全（且唯一地）由 URI`http://schemas.microsoft.com/cdo/smtpserver`标识。
 
-> 如果您使用支持类型库的语言（如 VBA），则不必引用 URI。在这种情况下，在建立 CDO 引用后，您可以直接使用它们的名称来引用配置；例如，使用 `smtpserver` 而不是 `http://schemas.microsoft.com/cdo/smtpserver`。
+> 如果您使用支持类型库的语言（如 VBA），则不必引用 URI。在这种情况下，在建立 CDO 引用后，您可以直接使用它们的名称来引用配置；例如，使用`smtpserver`而不是`http://schemas.microsoft.com/cdo/smtpserver`。
 
-此脚本使用的三个配置字段是 `sendusing`、`smtpserverport` 和 `smtpserver`。配置字段 `sendusing` 指示 CDO 是使用本地 SMTP 服务（`sendusing = 1`）发送消息（或其他 CDO 实体，如日历条目），发送到远程 SMTP 服务器（`sendusing=2`），还是使用 Exchange Server 邮件提交 URI（`sendusing=3`）发送。`sendusing` 默认使用本地 SMTP 服务，脚本仅在使用远程服务器时配置此项。
+此脚本使用的三个配置字段是`sendusing`、`smtpserverport`和`smtpserver`。配置字段`sendusing`指示 CDO 是使用本地 SMTP 服务（`sendusing = 1`）发送消息（或其他 CDO 实体，如日历条目），发送到远程 SMTP 服务器（`sendusing=2`），还是使用 Exchange Server 邮件提交 URI（`sendusing=3`）发送。`sendusing`默认使用本地 SMTP 服务，脚本仅在使用远程服务器时配置此项。
 
-字段 `smtpserverport` 指定要使用的所需 TCP SMTP 端口，默认为 25。如果您的远程 SMTP 服务器在其他端口上监听，您可以将 CDO 配置为向该端口发送。
+字段`smtpserverport`指定要使用的所需 TCP SMTP 端口，默认为 25。如果您的远程 SMTP 服务器在其他端口上监听，您可以将 CDO 配置为向该端口发送。
 
-我们指定的最后一个配置字段是 `smtpserver`。此字段表示我们希望转发消息的远程 SMTP 服务器的名称。您可以指定 IP 地址或可解析的名称（例如 `smtp` 或 `smtp.your-company.com`）。如果您无法与 SMTP 服务器通信，请尝试 ping SMTP 服务器的名称，以确认您的名称解析工作正常。
+我们指定的最后一个配置字段是`smtpserver`。此字段表示我们希望转发消息的远程 SMTP 服务器的名称。您可以指定 IP 地址或可解析的名称（例如`smtp`或`smtp.your-company.com`）。如果您无法与 SMTP 服务器通信，请尝试 ping SMTP 服务器的名称，以确认您的名称解析工作正常。
 
 最后，我们必须通过调用 Update 方法来更新配置。
 
@@ -10400,7 +11665,7 @@ function ServiceCheck(strComputer, strServiceName)
 }
 ```
 
-`ParamError` 函数在用户未正确输入参数时显示错误信息，`Usage` 函数向用户显示有关如何使用此脚本的帮助信息。
+`ParamError`函数在用户未正确输入参数时显示错误信息，`Usage`函数向用户显示有关如何使用此脚本的帮助信息。
 
 ```
 //-----------------------------------------------------------------------
@@ -10433,8 +11698,6 @@ function Usage()
 }
 ```
 
-
-
 ## # 14 接下来该怎么做
 
 在本书中，我们仅探索了 Windows 提供的众多脚本可能性中的一小部分。通过使用一些较大且更易上手的脚本技术，如 ADSI、WSH、WMI 以及一些 Excel 对象，我们创建了许多以 IT 为核心的脚本。比这些脚本本身的适用性更重要的是，你能够将这些函数和子例程改造以适应你自己的环境和需求，或者以它们为模板（或仅仅是激发灵感），创建自己的脚本来解决你遇到的谜题和问题。
@@ -10457,9 +11720,9 @@ Microsoft SDK 提供了关于如何访问和使用其所有产品开发能力的
 
 http://microsoft.com/msdownload/platformsdk/sdkupdate/
 
-不要被吓到；SDK 包含了 Microsoft 开发工具各个方面的开发信息，远远超出了脚本的范畴。SDK 包含对 Microsoft 对象的引用——例如，它展示了如何正确使用 ADSI `IADsGroup::Members` 方法，同时也引用了非 Microsoft 技术，例如如何使用 JScript `try…catch…finally` 语句。
+不要被吓到；SDK 包含了 Microsoft 开发工具各个方面的开发信息，远远超出了脚本的范畴。SDK 包含对 Microsoft 对象的引用——例如，它展示了如何正确使用 ADSI`IADsGroup::Members`方法，同时也引用了非 Microsoft 技术，例如如何使用 JScript`try…catch…finally`语句。
 
-如图 14.1 所示的 SDK 文档查看器，包含搜索对话框、结果和文档窗口。在图 14.1 中，我们搜索了 *member* 这个词，找到了超过 500 个与之相关的话题。在本例中，如果我们正在寻找返回组成员的 ADSI 方法，那我们很幸运，因为 `IADsGroup::Members` 排在第一位。但如果你不太确定要找什么，可以点击搜索窗格的"索引"选项卡，尝试从那个角度入手。例如，如果我们正在寻找 ADSI 接口，可以切换到索引并开始输入 *IAD…*。如图 14.2 所示，索引结果可能有助于唤醒我们的记忆。
+如图 14.1 所示的 SDK 文档查看器，包含搜索对话框、结果和文档窗口。在图 14.1 中，我们搜索了 *member* 这个词，找到了超过 500 个与之相关的话题。在本例中，如果我们正在寻找返回组成员的 ADSI 方法，那我们很幸运，因为`IADsGroup::Members`排在第一位。但如果你不太确定要找什么，可以点击搜索窗格的"索引"选项卡，尝试从那个角度入手。例如，如果我们正在寻找 ADSI 接口，可以切换到索引并开始输入 *IAD…*。如图 14.2 所示，索引结果可能有助于唤醒我们的记忆。
 
 ![](img/eafd0e1632fc08452cf4d68dbe912652_438_0.png)
 
@@ -10473,7 +11736,7 @@ SDK 中的文档提供了关于如何显式使用特定对象、方法、属性�
 
 ### 其他 Microsoft 文档
 
-除了 SDK，Microsoft 还提供了关于各种脚本技术的独立文档。例如，你可以下载 *JScript Language Reference*，它专门针对 JScript——从如何使用该语言到简短教程和语言参考。虽然许多参考材料包含在 SDK 中，但较小且更专注的 JScript 参考文档面向脚本编写者，在该文档中更容易找到关于如何完成 JScript 相关操作的具体信息。该指南还包含精选的教程，用于完成更常见的脚本任务。例如，它有一个关于使用 `FileSystemObject` 枚举计算机本地驱动器的优秀教程。
+除了 SDK，Microsoft 还提供了关于各种脚本技术的独立文档。例如，你可以下载 *JScript Language Reference*，它专门针对 JScript——从如何使用该语言到简短教程和语言参考。虽然许多参考材料包含在 SDK 中，但较小且更专注的 JScript 参考文档面向脚本编写者，在该文档中更容易找到关于如何完成 JScript 相关操作的具体信息。该指南还包含精选的教程，用于完成更常见的脚本任务。例如，它有一个关于使用`FileSystemObject`枚举计算机本地驱动器的优秀教程。
 
 ### 新闻组
 
@@ -10487,8 +11750,6 @@ Microsoft 托管了多个以开发为中心的公共新闻组，是获取信息�
 
 Microsoft 提供了大量在线和可下载的参考资料，你可以利用它们来提升你的编程知识和效率。浏览 MSDN 网站不仅能让你发现新的工具来充实自己的技能库，还能看到所有其他的编程资源和能力，这些资源和能力用于构建各种形态和规模的软件——从一个简短的脚本到一个完整的企业级应用程序。
 
-
-
 ## 关于 CD-ROM
 
 随《*IT 管理员 Windows 入门脚本精选 Top 10*》附赠的 CD-ROM 包含了书中所有示例的代码和项目。
@@ -10498,20 +11759,29 @@ Microsoft 提供了大量在线和可下载的参考资料，你可以利用它�
 CD-ROM 上的每个章节都对应一个文件夹，并包含两个子文件夹：*figures* 和 *scripts*。
 
 *第 # 章 - 标题\figures*：包含本章的插图。
+
 *第 # 章 - 标题\scripts*：包含本章的所有脚本和示例代码清单。
 
 ### 整体系统要求
 
 - Windows NT、Windows 2000、Windows XP Professional 或 Windows Server 2003
+
   - 请注意，本文中的许多示例代码和脚本利用并展示了使用 Windows 2000 技术的脚本编写。某些脚本在运行 Windows NT 的计算机上无法运行或无法针对其运行。如果您使用 Windows NT，则必须加载适用于 Windows NT 的 WMI 和 ADSI 技术，但某些脚本功能可能会受限。此外，其中一些脚本专门针对 Active Directory，这需要基于 Windows 2000 Server 或 Windows Server 2003 Active Directory 的域结构。
+
 - Pentium II 或更高级别的处理器
+
 - CD-ROM 驱动器
+
 - 硬盘驱动器
+
 - 最低 128MB RAM，推荐 256MB RAM
+
 - 强烈建议：WSH 5.6
+
 - 当前版本的 Microsoft Platform SDK
 
 Windows Script Host 5.6 提供了 Windows Script Host 的最新对象、方法和属性。您可以使用 WSH 5.6 运行本文中的所有脚本，并确保您自己的脚本可以利用最新的开发工具。早期版本的 Windows 包含较旧版本的 Windows Script Host，因此您必须从 Microsoft 网站下载并安装最新版本：
+
 http://msdn.microsoft.com/library/default.asp?url=/downloads/list/webdev.asp
 
 Microsoft Platform SDK 不是必需的，但它会很方便，可作为查找本文中大多数代码定义和语法的参考。Platform SDK 可从 MSDN 网站 www.microsoft.com/msdownload/platformsdk/sdkupdate/ 获取。
@@ -10521,557 +11791,1037 @@ Microsoft Platform SDK 不是必需的，但它会很方便，可作为查找本
 ### A
 
 - aAttachment 数组，397
+
 - 访问，管理，114–118
+
 - 帐户。请参见用户，帐户
+
 - aCriteria 数组，构造，127–128
+
 - Active Directory Services Interface (ADSI)
+
   - Active Directory (AD) 和，88，118–143
+
   - ADSIQuery 脚本，120–122，123–143，152，154，401
+
   - ADS_USER_FLAG_ENUM ADSI 枚举标志，177，197
+
   - 数据，检索/显示，203
+
   - 总体讨论，87–88
+
   - IASuser 接口，164
+
   - 对象，93–95，109
+
   - 搜索，105–107
+
   - 技术概述，91–93
+
 - ActiveX Data Objects (ADO)，105–107
+
 - AddAttachment 方法定义，397，399
+
 - AddElement 函数定义，333，354
+
 - 管理员帐户
+
   - 检测与 PWScanner，367，369
+
   - IDLocalAdmin 子程序定义，365，376–380
+
   - 密码，362
+
   - 安全标识符 (SID) 和，378
+
   - WinNT，配置，362
+
 - ADSIQuery 脚本，120–122，123–143，152，154，401
+
 - ADS_USER_FLAG_ENUM ADSI 枚举标志，177，197
+
 - 警报，跟踪，377
+
 - 防病毒程序，检查安装，236
+
 - AppActivate 方法定义，66–67
+
 - 应用程序编程接口 (API)，28
+
 - 应用程序，操作，66
+
 - 参数处理例程，基本，57–58
+
 - 参数定义，56
+
 - 数组
+
   - aAttachment，397
+
   - aCriteria，127–128
+
   - 总体讨论，22–23
+
   - JScript，24–26
+
   - Microsoft Visual Basic Editor (VBA)，261
+
   - 和对象，180
+
   - 填充，180
+
 - ASCII
+
   - 字符集边界，386
+
   - 和密码生成，364
+
 - 异步查询定义，37，38–39
+
 - 属性，XML 定义，215
 
 ### B
 
 - 基础专有名称定义，108
+
 - 批处理编程和脚本，14
+
 - 书籍
+
   - 读者对象，3–4
+
   - 内容组织，1–2
+
   - 结构，2–3
 
 ### C
 
 - CDO。请参见 Microsoft Collaboration Data Objects (CDO)
+
 - ChangePassword 函数定义，365
+
 - ChangePassword 子程序定义，368，380–385
+
 - 字符集，计数，372
+
 - CheckIfGroup 函数定义，334，356–357
+
 - CheckRegistry 函数定义，209，242
+
 - ClientCheck HTA，输出，284，301
+
 - 客户端诊断应用程序
+
   - 分发/安装，278–279
+
   - 概述，275–276
+
 - 代码，主体部分，26
+
 - Code 窗口，VBA 定义，6
+
 - Command 对象定义，107
+
 - Command Window-Immediate 定义，51
+
 - 注释
+
   - 目的，53
+
   - 语法，19–20
+
 - Common Information Model (CIM)，30
+
 - 兼容性问题，避免，250
+
 - Component Object Model (COM)，30
+
 - 计算机
+
   - 帐户，枚举，329–330
+
   - 域列表，生成，247，331–332
+
   - Pingable 函数定义，308，322–323，374
+
   - ping 命令定义，56–57，296
+
   - 查询远程与 Windows Management Instrumentation (WMI)，42
+
   - 扫描，307，312
+
   - 易受攻击的，识别，306
+
 - Configuration 对象定义，404
+
 - Connection 对象定义，106
+
 - 容器对象定义，92
+
 - Continue 选项定义，50
+
 - Control Toolbox，Excel 定义，260
+
 - ConvertNanoDays 函数定义，172，199–200
+
 - CScript，功能，17
+
 - CurrentDomain 函数定义，116，124，139，146，161，172，200
 
 ### D
 
 - 数据
+
   - 转换，222
+
   - 目录，返回，99–100
+
   - 层级结构，导航，226
+
   - 操作/显示，225，332
+
   - 管道传输，400–402
+
   - 检索/显示与 Active Directory Services Interface (ADSI)，203
+
   - 返回，99–100，114–118
+
   - 扫描，311
+
   - 敏感数据，365
+
   - XML
+
     - 访问/操作，222，223
+
     - 验证，224
+
     - XSLT 和，222
+
 - 日期计算，执行，188
+
 - DateQuery 脚本
+
   - 命令行参数，173
+
   - 功能，185
+
   - 循环，主循环，188–189
+
   - 技术要求/目标，169，390
+
 - 调试，49–53，286。*另请参见* 错误处理
+
 - 设计模式定义，Excel，259
+
 - 开发，软件，16
+
 - 诊断
+
   - 客户端应用程序
+
     - 分发/安装，278–279
+
     - 概述，275–276
+
   - PerformDiagnostics 子程序定义，287–288
+
   - 工具，创建，276，277
+
 - 目录。*另请参见* Active Directory Services Interface (ADSI)；Microsoft Active Directory (AD)
+
   - 数据，返回，99–100
+
   - 修改，102–103
+
 - 磁盘空间，操作，43–44
+
 - DisplayResults 子程序定义，309，327
+
 - 专有名称 (DN) 定义，90
+
 - 域控制器
+
   - 查找，154，155
+
   - 和登录脚本，210
+
   - 搜索，145–147
+
 - DoNetworkCheck 子程序定义，278，294–297
+
 - DoPCCCheck 子程序定义，278，288–291
+
 - DoProcessCheck 子程序定义，278，291–294
+
 - 驱动器
+
   - 冲突，移除，231
+
   - 映射，232
+
   - 映射 *与* 主目录，227–228
+
 - dt 变量前缀定义，182
+
 - DumpComputers 子程序
+
   - 架构，256–258，260–261
+
   - 定义，248，262–266
+
   - 输出，记录/扫描，308
+
   - 和密码，363–365
+
 - DumpUAC 函数定义，172，194–195
 
 ### E
 
 - echo，基本显示方法，73–75
+
 - 元素，XML 定义，215
+
 - else 语句定义，127
+
 - 电子邮件
+
   - 附件，添加，399，400
+
   - 二进制文件，391
+
   - 域列表，247
+
   - 多个收件人，405
+
   - 通知，概述，389–390
+
   - 中继限制，391
+
   - 脚本，启用，390
+
   - SMTP 服务器，远程，403
+
 - Enumerate 函数定义，115，135–136
+
 - 枚举
+
   - ADS_USER_FLAG_ENUM ADSI 枚举标志，177，197
+
   - 总体讨论，40–47
+
   - 成员资格，120–122，332
+
   - 对象属性，96–97
+
   - 打印机，78–79
+
   - 用户帐户，329–330
+
 - Enumerator 对象定义，46
+
 - 环境变量，WshShell，67–68
+
 - 错误处理。*另请参见* 调试
+
   - 定义，58–59
+
   - 禁用，264
+
   - 超文本应用程序 shell (HTA)，286
+
   - 和登录脚本，242
+
   - 基本，43–44
+
   - try...catch 语句，JScript，159，165
+
 - 错误对象，属性，237
+
 - EvalCriteria 函数定义，209，241–242
+
 - 事件
+
   - 总体讨论，36–39，54
+
   - 记录，64–65
+
 - Excel。*请参见* Microsoft Excel
+
 - Exec 方法定义，62–63，69
+
 - ExecQuery 方法定义，32，81，304
+
 - 表达式定义，28
 
 ### F
 
 - 因式分解定义，315
+
 - 文件
+
   - 二进制文件，电子邮件发送，391
+
   - 配置文件，XML，215–216
+
   - 名称，验证，123
+
   - 文本文件，读取/写入，69–70
+
 - 文件系统对象，WSH，68–73
+
 - FindLastRow 函数定义，334，357
+
 - FindPrevious 函数定义，248，269–270
+
 - 脚本分叉逻辑，基于属性，96
+
 - FormatClear 子程序定义，249，272
+
 - FormatComputerAdded 子程序定义，249，272
+
 - FormatComputerDuplicate 子程序定义，249，268，272
+
 - FormatComputerMissing 子程序定义，248，272
+
 - 函数，总体讨论，26–27，30，53。*另请参见具体函数名称*
 
 ### G
 
 - GetDomainInfo 函数定义，146
+
 - GetGroups 函数定义，333，342–345
+
 - GetInfoEx 方法定义，98
+
 - GetInfo 方法定义，98
+
 - GetMaxPwdAge 函数定义，185，198–199
+
 - GetMembership 函数定义，333，345–351
+
 - GetRandomPassword 函数定义，385–388
+
 - 全局唯一标识符 (GUID) 定义，218
+
 - g_ 前缀定义，286
+
 - 组策略和登录脚本，部署，210–211
+
 - 组，列出，331
+
 - GroupScan 函数定义，333，339–342
+
 - GroupScanner 脚本
+
   - 安装/分发，334–335
+
   - 输出，335–336
+
   - 概述，331–334
 
 ### H
 
 - Heading 函数定义，116，139，146，162，172，297
+
 - HideColumns 函数定义，334，357–358
+
 - 主目录文件夹，属性，230
+
 - Homesite。*请参见* Macromedia Homesite
+
 - HTA。*请参见* 超文本应用程序 shell (HTA)
+
 - HTA:APPLICATION 属性定义，282–283
+
 - HTML 前端，创建，300–303
+
 - 匈牙利命名法与命名，22
+
 - 超文本应用程序 shell (HTA)
+
   - ClientCheck HTA，输出，284，301
+
   - 定义，281–285，304
+
   - 分发/安装，278–279
+
   - 错误处理/调试，286
+
   - 概述，275–276
-
-
 
 ### I
 
 iCount 变量定义，265
+
 IDLocalAdmin 子程序定义，365、376–380
+
 Immediate 窗口，VBA 定义，8
+
 indexOf 方法，JScript 定义，125、233
+
 信息显示，73–77
+
 InitializeEnumWs 函数定义，333、355–356
+
 innerHTML，299
+
 innerText，299
+
 InputBox 函数定义，VBScript，298–299
+
 iPwdExpMs 变量定义，185
+
 iRowNum 方法定义，265
 
 ### J
 
 JScript
+
 - 数组，24–26
+
 - 注释语法，19–20
+
 - 与枚举，44–47
+
 - 表达式，定义，123
+
 - 函数，27
+
 - indexOf 方法定义，125、233
+
 - 方法，30–34
+
 - Microsoft Visual Basic 编辑器 (VBA) 和，6
+
 - MSDN 参考网址，28
+
 - 命名约定，22、23
+
 - 对象，29、124
+
 - 运算符，47–49
+
 - 属性，35–36
+
 - 脚本框架，简单，18
+
 - 语句，39
+
 - 字符串，测试，126
+
 - 三元运算符，156、165、189
+
 - toLowerCase 方法，397
+
 - try ... catch 语句和错误处理，159、165
+
 - 变量，20–21、22、122
+
 - 和 Windows 脚本宿主 (WSH)，16
+
 - WScript.Arguments 和，57
 
 ### L
 
 语言和脚本，13–14
+
 LDAP
+
 - 属性，110
+
 - 方言筛选器，功能，132
+
 - 方言查询，构建，131
+
 - IADs 对象，91–92
+
 - 对象，绑定，93
+
 - 查询方言 *与* SQL 对比，108
+
 - 搜索筛选器，109–110
+
 - 搜索范围，110
+
 - *与* WinNT 对比，101–102
 
 叶对象定义，92
+
 ListAllDetail 函数定义，172、191
+
 ListCreated 函数定义，172、192
+
 ListExpired 函数定义，172、192–193
+
 ListGroupMemberships 函数定义，115、136–137、146、155、160
+
 ListLastLogon 函数定义，146、155、157–160
+
 ListMembersOfGroup 函数定义，115、138
+
 ListPwdExpires 函数定义，172、193
+
 列表，域，247
+
 ListUserInfo 函数定义，146、155、156–157
+
 LoadComputerList 函数定义，248、266–268
+
 LoadRow 函数定义，333、351–354
+
 Locals 窗口，VBA 定义，7–8
+
 本地时间服务，同步，235
+
 LogEvent 方法定义，64–65
+
 LogFile 函数定义，208、238
+
 logon-body.js 脚本，220–227
+
 登录脚本。*参见* 脚本，登录
+
 循环，一般讨论，40
 
 ### M
 
 Macromedia Homesite，8
+
 mail 函数定义，391、392、403–406
+
 Mail 脚本
+
 - 代码，396–403
+
 - 命令行参数和变量，393
+
 - 输出，394
+
 MapNetworkDrive 方法定义，31
+
 MarkElementDeleted 函数定义，333、345、355
+
 MarkMissingComputers 子程序定义，248、270
+
 成员身份
+
 - 审计，13
+
 - 通讯组列表，检查，148–164
+
 - 枚举/显示，120–122、332、337
+
 - Microsoft Active Directory (AD)，查询，114–118
+
 - 方法，一般讨论，30–34、53。*另见* 各方法名称
+
 Microsoft Active Directory (AD)
+
 - 目录服务层次结构，92
+
 - 组策略，激活，218–220
+
 - 对象日期，189–190
+
 - 概述，87、113–114
+
 - 属性，枚举，96–97
+
 - 查询，90
-    - ADSI/WSH，118–143
-    - 组成员身份，114–118
+
+  - ADSI/WSH，118–143
+
+  - 组成员身份，114–118
+
 - 架构，93
+
 - 用户对象，186
+
 Microsoft 基线安全分析器 (MBSA)，330
+
 Microsoft 协作数据对象 (CDO)
+
 - 概述，390
+
 - 属性，405
+
 Microsoft 开发人员网络，412
+
 Microsoft Excel
+
 - 单元格，引用，251
+
 - 列，引用，309
+
 - 列值，定义，262
+
 - 对象，特定，263
+
 - 输出，格式化，251–253、310
+
 - 和输出管理，246
+
 - VBA，编辑，259
+
 - VBA 和，246
+
 Microsoft Office 和脚本技术，6–8
+
 Microsoft 脚本编辑器和调试，50、51、52
+
 Microsoft Visual Basic 编辑器 (VBA)
+
 - 访问，258
+
 - 数组，261
+
 - 调试，50
+
 - 编辑，259
+
 - 引用，检查，250、251
+
 - 和脚本技术，6–8
+
 Microsoft Visual Studio.NET 和脚本，8
+
 MSDN JScript 参考网址，28
+
 MSDN VBScript 参考网址，28
 
 ### N
 
 命名约定
+
 - 一般讨论，22、23
+
 - 匈牙利命名法和，22
+
 - QFE 更新，326
+
 网络连接，测量，296
+
 网络对象，77–79
+
 网络密码策略，要求，372
+
 新闻组，415
+
 nmap 扫描器，307–308、325
+
 记事本和脚本，5–6
 
 ### O
 
 objADs 对象定义，377
+
 对象
+
 - 和数组，180
+
 - 绑定，93–95
+
 - 集合，遍历，40–47
+
 - 容器定义，92
+
 - 创建/设置，104–105、249
+
 - 定义，27、28–29、53
+
 - JScript，29、124
+
 - 模型，30
+
 - 网络，77–79
+
 - 和旧系统，221
+
 - 属性
-    - 枚举，96–97
-    - 列出，95–99
-    - 回想，181
-    - 设置，228
+
+  - 枚举，96–97
+
+  - 列出，95–99
+
+  - 回想，181
+
+  - 设置，228
+
 - 查询，90
+
 ObjectSID 和用户帐户，识别，379
+
 objectState.domain 状态定义，150
+
 objectState.enumerate 状态定义，150
+
 objectState.help 状态定义，150
+
 objectState.lastlogin 状态定义，150
+
 objectState.verbose 状态定义，150
+
 ObjUser 变量定义，377
+
 八进制字符串，格式，378
+
 Office。*参见* Microsoft Office
+
 OpenTextFile 方法定义，72–73
+
 运算符，47–49、54
+
 Option Base 关键字定义，261
+
 Option Compare [method] 定义，261
+
 Option Explicit 命令定义，285
+
 Option 关键字定义，261
+
 Option Private Module 语句定义，261
+
 操作系统功能和登录脚本，211–212
 
 ### P
 
 ParamError 函数定义，116、140–141、146、163–164、173、392、407
+
 PasswordLastChanged 属性定义，189
+
 密码
+
 - 管理员帐户，362
+
 - 归档，373
+
 - ASCII 和，364
+
 - 捕获，131
+
 - 更改，368、382、383
+
 - 检查和 PWScanner，375
+
 - DumpComputers 子程序，363–365
+
 - 过期日期，检查，148–164、168–178
+
 - 生成，363、364–388
+
 - 管理策略，170
+
 - 概述，361–362
+
 - 随机，创建，371、382、386
+
 - 安全，361–362
+
 补丁，部署，207–212
+
 PatchSystem 函数定义，209、239–241
+
 路径
+
 - 添加到，233
+
 - 表示，234
+
 - 设置，229
+
 - 更新，232–234
+
 path 语句定义，232
+
 PerformDiagnostics 子程序定义，287–288
+
 Perl 和脚本，14–15
+
 权限和脚本，5
+
 电话号码，返回，122
+
 Pingable 函数定义，308、322–323、374
+
 ping 命令定义，56–57、296
+
 Platform SDK 索引，414
+
 PopUp 方法定义，75–77
+
 PortCheck 函数定义，309、324–326
-移植，15–16、18
+
 端口
+
 - 监控，12–13
+
 - PortCheck 函数定义，309、324–326
+
 - 扫描，307、312、320、325
+
 端口扫描属性，315
+
 PostFormatTable 子程序定义，248、272
+
 PreFormatTable 函数定义，248、271–272
+
 PrimaryGroupID 定义，154
+
 打印机，枚举，78–79
+
 ProcessResults 函数定义，295、297–298
+
 progID，指定，223
+
 Project Explorer 窗口，VBA 定义，6
+
 属性
+
 - 分配，225
+
 - 一般讨论，35–36、63
+
 - 字面量，设置，228
+
 - 查询，40–47
+
 - ستخدم，98
+
 Properties 窗口，VBA 定义，7
+
 伪代码定义，281
+
 PWScan 函数定义，365、370–376
+
 PWScanner
+
 - 管理员帐户，检测，367
+
 - 密码，检查，375
+
 - Setup 工作表，366
+
 - 变量，声明，370
 
 ### Q
 
 QFECheck 函数定义，309、326–327
+
 QFE 扫描属性，315
+
 QueryDSA 函数定义，172、200–201
+
 QueryDS 函数定义，146、153、161–162、248、269
+
 查询
+
 - ADSIQuery 脚本，120–122、123–143、152、154、401
+
 - 异步查询定义，37、38–39
+
 - LDAP
-    - 方言查询，构建，131
-    - 查询方言 vs. SQL，108
+
+  - 方言查询，构建，131
+
+  - 查询方言 vs. SQL，108
+
 - Microsoft Active Directory (AD)，90
-    - ADSI/WSH，118–143
-    - 组成员身份，114–118
+
+  - ADSI/WSH，118–143
+
+  - 组成员身份，114–118
+
 - 对象，90
+
 - 属性，40–47
+
 - SQL 查询，基于方言，152、165
+
 - 同步查询定义，37
+
 - Windows 管理规范查询语言 (WQL)，32、37、81
+
 - Windows 管理规范 (WMI)，40、42、84–87
+
 - WinNT，165
+
 QueryObjects 函数定义，115、129、130–135
+
 QuitScript 子程序定义，300
 
 ### R
 
 ReadCriteria 函数定义，115
+
 ReadFile 函数定义，129–130
+
 ReadResults 函数定义，72
+
 ReadTextFile 函数定义，392、406–408
+
 RecordSet 对象定义，107
+
 引用
+
 - 检查，250、251
+
 - MSDN 网址，28
+
 - 指定，249
+
 注册表
+
 - 检查，239
+
 - CheckRegistry 函数定义，209、242
+
 - 项，添加/更新，61–62
+
 - 部分，59–60
+
 - 读取/写入，59、61
+
 - 值
-    - 添加/更新，61–62
-    - 测试，241–242
+
+
+
+# 索引
+
+## A
+
+- 添加/更新，61–62
+- 测试，241–242
+
 相对可分辨名称 (RDN) 定义，89
+
 相对标识符 (RID) 定义，154、378
-RemoveNetworkDrive 方法定义，231
+
+`RemoveNetworkDrive`方法定义，231
+
 结果和提供程序，100–101
-re.text(string) 定义，126
+
+`re.text(string)`定义，126
+
 根键缩写，60
-runas 命令定义，125
-run 命令，参数，235
-Run 方法
+
+`runas`命令定义，125
+
+`run`命令，参数，235
+
+`Run`方法
+
 - 定义，64、69、70
 - 显示值，71
 
-### S
+## S
 
-SaveResults 函数定义，298
+`SaveResults`函数定义，298
+
 扫描类型，309–310
+
 脚本
+
 - 应用程序编程接口 (API)，28
 - 批处理编程，14
 - 构建块，27–49
@@ -11089,257 +12839,303 @@ SaveResults 函数定义，298
 - 工具，选择，9
 - 用户帐户，5
 - 包装器和，12
+
 脚本
+
 - 定义，16
 - 元素定义，285
 - 电子邮件，启用，390
 - 登录
-    - 激活，217
-    - 域控制器，210
-    - 错误处理，242
-    - 组策略，210–211
-    - 目标到技术要求，208
-    - 和操作系统功能，211–212
-    - 概述，205–206、209–210
-    - Windows 脚本宿主 (WSH)，216–217
-    - 和 Windows 脚本技术，212–242
-    - XML，214
+  - 激活，217
+  - 域控制器，210
+  - 错误处理，242
+  - 组策略，210–211
+  - 目标到技术要求，208
+  - 和操作系统功能，211–212
+  - 概述，205–206、209–210
+  - Windows 脚本宿主 (WSH)，216–217
+  - 和 Windows 脚本技术，212–242
+  - XML，214
+
 安全
+
 - 宏，设置，255–256
 - Microsoft 基线安全分析器 (MBSA)，330
 - 密码，361–362
 - 安全帐户管理器 (SAM) 数据库，WinNT，329–330
 - 安全标识符 (SID) 和管理员帐户，378
+
 种子值，生成，387
-SendKeys，66–67
+
+`SendKeys`，66–67
+
 无服务器绑定定义，152
-ServiceCheck 函数定义，309、323–324、392、406
+
+`ServiceCheck`函数定义，309、323–324、392、406
+
 服务扫描，315
-SetInfo 方法定义，383
-SetPassword 方法定义，382
-SetupScan 子程序定义，308、309、315–317
-Setup 工作表，配置，250–251
-ShowLockouts 函数定义，172、194
+
+`SetInfo`方法定义，383
+
+`SetPassword`方法定义，382
+
+`SetupScan`子程序定义，308、309、315–317
+
+`Setup`工作表，配置，250–251
+
+`ShowLockouts`函数定义，172、194
+
 软件
+
 - 开发，原则，16
 - 状态检查，114–118
+
 软件开发工具包 (SDK)，412–414
-split 方法定义，137
+
+`split`方法定义，137
+
 SQL
+
 - LDAP 查询方言 vs.，108
 - 查询，基于方言，152、165
+
 标准流定义，400
+
 语句
+
 - 定义，28
 - 一般讨论，39、54
-stdOut.write 方法定义，75
-Step Into 选项定义，50
-Step Over 选项定义，50
-strComputer 变量定义，377
-strFlagApp 变量定义，292
+
+`stdOut.write`方法定义，75
+
+`Step Into`选项定义，50
+
+`Step Over`选项定义，50
+
+`strComputer`变量定义，377
+
+`strFlagApp`变量定义，292
+
 字符串，连接，74–75
+
 样式，定义，285
+
 同步查询定义，37
+
 系统，更新，236
+
 系统要求，CD-ROM，417
-SystemScan 子程序定义，308、317–322
 
-### T
+`SystemScan`子程序定义，308、317–322
 
-TabulateFile 函数定义，209、239
-Tabulate 函数定义，116、141、146、164、173
+## T
+
+`TabulateFile`函数定义，209、239
+
+`Tabulate`函数定义，116、141、146、164、173
+
 三元运算符，156、165、189
+
 文本
+
 - 列格式，输出，238
 - 文件，读取/写入，69–70
 - 单一节点，返回，226
 
-TextStream 对象定义，69–70
-toLowerCase 方法，JScript，397
-traceroute 命令定义，296
-TransposeColumns 子程序定义，315–316
-Type 语句定义，VBA，261
+`TextStream`对象定义，69–70
 
-### U
+`toLowerCase`方法，JScript，397
 
-UBound 方法，VBA 定义，264–265
+`traceroute`命令定义，296
+
+`TransposeColumns`子程序定义，315–316
+
+`Type`语句定义，VBA，261
+
+## U
+
+`UBound`方法，VBA 定义，264–265
+
 统一资源标识符定义，404
+
 统一资源定位符定义，404
+
 返回参数单位定义，71
+
 更新
+
 - 部署，207–212
 - 扫描，307、312
-- Win32_QuickFixEngineering WMI 类和，308
-Usage 函数定义，116、140、146、163、173、392、407
-UserAccountControl 属性定义，186、195
-UserQuery 脚本
+- `Win32_QuickFixEngineering` WMI 类和，308
+
+`Usage`函数定义，116、140、146、163、173、392、407
+
+`UserAccountControl`属性定义，186、195
+
+`UserQuery`脚本
+
 - 主体，主要，150–164
 - 分发/安装，146
 - 输出，147
 - 概述，144、149
+
 用户
+
 - 帐户
-    - 管理员，362、365、367、369、376–380
-    - 枚举，329–330
-    - 标志，显示，176
-    - 识别和 ObjectSID，379
-    - 信息，转储，143–165
-    - 列表显示，198–203
-    - 锁定策略，170–171
-    - 矩阵显示，196–197
-    - 成员身份，显示，337
-    - 属性，呈现，176
-    - 和脚本，5
-    - 状态，144–147、148–164、168–195
+  - 管理员，362、365、367、369、376–380
+  - 枚举，329–330
+  - 标志，显示，176
+  - 识别和 `ObjectSID`，379
+  - 信息，转储，143–165
+  - 列表显示，198–203
+  - 锁定策略，170–171
+  - 矩阵显示，196–197
+  - 成员身份，显示，337
+  - 属性，呈现，176
+  - 和脚本，5
+  - 状态，144–147、148–164、168–195
 - 创建，102–103
 - 信息
-    - 转储，143–165
-    - 检索，94
+  - 转储，143–165
+  - 检索，94
 - 登录脚本，209–210、217
 - 对象，AD，186
 
-### V
+## V
 
 变量
+
 - 声明，20–21、53、250、370
 - 定义，20、22
 
-
-
 # IT 管理员十大 Windows 入门脚本
 
--   dt 前缀定义，第 182 页
--   iCount 定义，第 265 页
--   iPwdExpMs 变量定义，第 185 页
--   邮件脚本，第 393 页
--   ObjUser 定义，第 377 页
--   Windows 环境，第 229 页
--   WshShell 环境，第 67–68 页
--   VBA。参见 Microsoft Visual Basic Editor (VBA)
+- `dt`前缀定义，第 182 页
+- `iCount`定义，第 265 页
+- `iPwdExpMs`变量定义，第 185 页
+- 邮件脚本，第 393 页
+- `ObjUser`定义，第 377 页
+- Windows 环境，第 229 页
+- `WshShell`环境，第 67–68 页
+- VBA。参见 Microsoft Visual Basic Editor (VBA)
+- VBScript
+  - 集合，遍历，第 41 页
+  - 注释语法，第 19–20 页
+  - 以及枚举，第 44 页
+  - 函数，第 27 页
+  - `InputBox`函数定义，第 298–299 页
+  - 循环，第 40 页
+  - 方法，第 30–34 页
+  - 以及 Microsoft Visual Basic Editor (VBA)，第 6, 15 页
+  - MSDN 参考网址，第 28 页
+  - 命名约定，第 22, 23 页
+  - 对象，第 29 页
+  - 运算符，第 47–49 页
+  - 属性，第 35–36 页
+  - 简单脚本框架，第 18 页
+  - 语句，第 39 页
+  - 变量，第 20–21, 22 页
+  - Windows Script Host (WSH)，第 16 页
 
--   VBScript
-    -   集合，遍历，第 41 页
-    -   注释语法，第 19–20 页
-    -   以及枚举，第 44 页
-    -   函数，第 27 页
-    -   InputBox 函数定义，第 298–299 页
-    -   循环，第 40 页
-    -   方法，第 30–34 页
-    -   以及 Microsoft Visual Basic Editor (VBA)，第 6, 15 页
-    -   MSDN 参考网址，第 28 页
-    -   命名约定，第 22, 23 页
-    -   对象，第 29 页
-    -   运算符，第 47–49 页
-    -   属性，第 35–36 页
-    -   简单脚本框架，第 18 页
-    -   语句，第 39 页
-    -   变量，第 20–21, 22 页
-    -   Windows Script Host (WSH)，第 16 页
+## W
 
-### W
+- 监视窗口，VBA 定义，第 7–8, 51 页
+- Windows 环境变量，类型，第 229 页
+- Windows Management Instrumentation 查询语言 (WQL)
+  - 事件与，第 37 页
+  - 以及查询函数，第 32 页
+  - WMI 与，第 81 页
+- Windows Management Instrumentation (WMI)
+  - 连接，第 80–81 页
+  - 概述，第 79–80 页
+  - 信息，转储，第 83–84 页
+  - moniker 字符串定义，第 82 页
+  - 查询，第 40, 84–87 页
+  - 以及远程计算机查询，第 42 页
+  - WQL 与，第 81 页
+- Windows Script Host (WSH)
+  - 配置参数，第 17 页
+  - 以及数据，管道传输，第 402 页
+  - 调试，第 50 页
+  - 文件系统对象，第 68–77 页
+  - 概述，第 56 页
+  - 以及 JScript，第 16 页
+  - 登录脚本，第 216–217 页
+  - 对象模型与，第 30, 31 页
+  - 查询 Microsoft Active Directory (AD)，第 118–143 页
+  - 流处理与，第 400 页
+  - 以及 VBScript/JScript，第 16 页
+  - `WScript.Argument`，第 56–59 页
+  - `WScript.Shell`，第 59 页
 
--   监视窗口，VBA 定义，第 7–8, 51 页
--   Windows 环境变量，类型，第 229 页
--   Windows Management Instrumentation 查询语言 (WQL)
-    -   事件与，第 37 页
-    -   以及查询函数，第 32 页
-    -   WMI 与，第 81 页
+## WinNT
 
--   Windows Management Instrumentation (WMI)
-    -   连接，第 80–81 页
-    -   概述，第 79–80 页
-    -   信息，转储，第 83–84 页
-    -   moniker 字符串定义，第 82 页
-    -   查询，第 40, 84–87 页
-    -   以及远程计算机查询，第 42 页
-    -   WQL 与，第 81 页
+- 管理员账户，配置，第 362 页
+- 驱动器，映射，第 230 页
+- `IADs`对象，第 91–92 页
+- 查询使用，第 165 页
+- 安全账户管理器 (SAM) 数据库，第 329–330 页
+- 强密码定义，第 372, 384 页
+- 与 LDAP 比较，第 101–102 页
+- WinPcap 数据包捕获和 nmap，第 307–308 页
+- `Win32_QuickFixEngineering` WMI 类和更新，第 308, 321 页
+- `With`语句定义，第 271 页
+- `WormScanner`
+  - 代码，第 314 页
+  - 概述，第 305–306, 328 页
+  - 安装工作表，第 310 页
+  - 蠕虫漏洞检测器，第 305–306 页
+- WQL。Windows Management Instrumentation 查询语言 (WQL)
+- 包装器和脚本，第 12 页
+- `WScript`
+  - 定义，第 56 页
+  - 功能，第 17 页
+- `WScript.Argument`，第 56–59 页
+- `WScript.Shell`
+  - 执行应用程序，第 62–64 页
+  - 概述，第 59 页
+  - 对象注册表操作方法，第 60 页
+  - 注册表数据类型，第 61 页
+- `WshShell`
+  - 环境变量，第 67–68 页
+  - 日志事件，第 64–65 页
+  - 注册表，第 59–62 页
+  - `SendKeys`，第 66–67 页
 
--   Windows Script Host (WSH)
-    -   配置参数，第 17 页
-    -   以及数据，管道传输，第 402 页
-    -   调试，第 50 页
-    -   文件系统对象，第 68–77 页
-    -   概述，第 56 页
-    -   以及 JScript，第 16 页
-    -   登录脚本，第 216–217 页
-    -   对象模型与，第 30, 31 页
-    -   查询 Microsoft Active Directory (AD)，第 118–143 页
-    -   流处理与，第 400 页
-    -   以及 VBScript/JScript，第 16 页
-    -   WScript.Argument，第 56–59 页
-    -   WScript.Shell，第 59 页
+## X
 
-### WinNT
+## XML
 
--   管理员账户，配置，第 362 页
--   驱动器，映射，第 230 页
--   IADs 对象，第 91–92 页
--   查询使用，第 165 页
--   安全账户管理器 (SAM) 数据库，第 329–330 页
--   强密码定义，第 372, 384 页
--   与 LDAP 比较，第 101–102 页
-
--   WinPcap 数据包捕获和 nmap，第 307–308 页
--   Win32_QuickFixEngineering WMI 类和更新，第 308, 321 页
--   With 语句定义，第 271 页
--   WormScanner
-
-    -   代码，第 314 页
-    -   概述，第 305–306, 328 页
-    -   安装工作表，第 310 页
-    -   蠕虫漏洞检测器，第 305–306 页
--   WQL。Windows Management Instrumentation 查询语言 (WQL)
--   包装器和脚本，第 12 页
-
--   WScript
-    -   定义，第 56 页
-    -   功能，第 17 页
-
--   WScript.Argument，第 56–59 页
-
--   WScript.Shell
-    -   执行应用程序，第 62–64 页
-    -   概述，第 59 页
-    -   对象注册表操作方法，第 60 页
-    -   注册表数据类型，第 61 页
-
--   WshShell
-    -   环境变量，第 67–68 页
-    -   日志事件，第 64–65 页
-    -   注册表，第 59–62 页
-    -   SendKeys，第 66–67 页
-
-### X
-
-### XML
-
--   属性定义，第 215 页
--   配置文件，第 215–216 页
--   数据
-    -   访问/操作，第 222, 223 页
-    -   验证，第 224 页
-    -   XSLT 与，第 222 页
--   文档对象模型 (DOM)，第 222, 223 页
--   元素定义，第 215 页
--   以及登录脚本，第 214 页
--   查询，第 224–225 页
--   模式，第 214 页
-
--   XPath
-    -   语法，数据访问，第 225 页
--   XSLT 和 XML 数据，第 222 页
+- 属性定义，第 215 页
+- 配置文件，第 215–216 页
+- 数据
+  - 访问/操作，第 222, 223 页
+  - 验证，第 224 页
+  - XSLT 与，第 222 页
+- 文档对象模型 (DOM)，第 222, 223 页
+- 元素定义，第 215 页
+- 以及登录脚本，第 214 页
+- 查询，第 224–225 页
+- 模式，第 214 页
+- XPath
+  - 语法，数据访问，第 225 页
+- XSLT 和 XML 数据，第 222 页
 
 ---
 
 # Windows 2000 入门脚本管理员指南
 
 安装说明：
-1.  将 CD-ROM 插入驱动器
-2.  浏览至 CD-ROM 文件
+
+1. 将 CD-ROM 插入驱动器
+2. 浏览至 CD-ROM 文件
 
 ©2004 CHARLES RIVER MEDIA, INC.
+
 版权所有。
+
 ISBN: 1-58450-212-6
+
 所有商标均为其各自所有者的财产。
 
 CHARLES RIVER MEDIA
@@ -11360,43 +13156,57 @@ Jeff Fellinge
 
 ## 关键特性
 
--   提供一个可以立即用于管理脚本目的的实践参考
--   以循序渐进的方式解释编程概念，帮助新手脚本编写者入门
--   包含现成的脚本，用于转储域用户的详细账户信息、列出即将过期的域用户账户、基于 XML 的登录脚本、蠕虫漏洞扫描器、计算机管理工具、密码归档和更改工具等
--   专注于 ADSI、WSH、WMI 和 XML 等新技术
--   讨论了使用不同脚本工具和技术创建基于 VBScript、JScript 和 VBA 脚本的优缺点
--   附带 CD-ROM，包含所有 10 个脚本的源代码
+- 提供一个可以立即用于管理脚本目的的实践参考
+- 以循序渐进的方式解释编程概念，帮助新手脚本编写者入门
+- 包含现成的脚本，用于转储域用户的详细账户信息、列出即将过期的域用户账户、基于 XML 的登录脚本、蠕虫漏洞扫描器、计算机管理工具、密码归档和更改工具等
+- 专注于 ADSI、WSH、WMI 和 XML 等新技术
+- 讨论了使用不同脚本工具和技术创建基于 VBScript、JScript 和 VBA 脚本的优缺点
+- 附带 CD-ROM，包含所有 10 个脚本的源代码
 
 ## 关于作者
 
 Jeff Fellinge（华盛顿州贝尔维尤市）是 aQuantive, Inc. 的信息安全官。他曾为多家杂志撰稿，如 Windows & .NET Magazine、Security Administrator 和 Connected Home。
 
 **书架分类：** 操作系统 / 网络
+
 **级别：** 初级 / 中级
 
 ISBN 1-58450-212-6
+
 美国售价 $49.95 加拿大售价 $69.95
 
 ## CD 内容！
+
 （详见附录）
 
--   **脚本**
-    包含书中所有现成的脚本和示例代码清单
--   **图表**
-    包含书中所有全彩图表，按章节排列
+- **脚本**
+
+  包含书中所有现成的脚本和示例代码清单
+
+- **图表**
+
+  包含书中所有全彩图表，按章节排列
 
 ## 系统要求
 
 PC：Windows NT、Windows 2000、Windows XP Pro 或 Windows Server 2003
+
 （请注意，本书中的许多示例代码和脚本利用并演示了使用 Windows 2000 技术的脚本编写。有些脚本无法在运行 Windows NT 的计算机上运行，或无法针对运行 Windows NT 的计算机运行。如果您使用 Windows NT，则需要为 Windows NT 加载 WMI 和 ADSI 技术，并且某些脚本功能可能会受到限制。此外，其中几个脚本专门针对 Active Directory，这需要基于 Windows 2000 Server 或 Windows Server 2003 的 Active Directory 域结构。）；奔腾 II 或更高处理器；CD-ROM 驱动器；硬盘；最低 128 MB RAM，推荐 256 MB RAM；强烈推荐：WSH 5.6
 
 **CHARLES RIVER MEDIA**
+
 10 Downer Avenue
+
 Hingham, MA 02043
+
 (781) 740-0400
+
 (781) 740-8816 传真
+
 info@charlesriver.com
+
 www.charlesriver.com
 
 所有商标和服务标志均为其各自所有者的财产。
+
 美国印刷。封面设计：The Printed Image

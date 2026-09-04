@@ -1,13 +1,11 @@
+
 # Java：初学者 Java 编程 - Java 编程简单入门（软件工程师编写）（Java，Java 编程，Java 8, Javascript ... Java ee，初学者 Java 书第 1 卷）
-
-
 
 ![](img/cover.jpeg)
 
 ![Image 1](img/index-1_1.jpg)
 
 # 初学者 Java 入门
-
 
 ## 引言
 
@@ -63,13 +61,7 @@ Java 是为了网络环境设计的。
 
 ### 动态
 
-Java 被认为比 C 或 C++ 更具动态性，因为它旨在适应
-
-
-
-
-
-一个不断进步的环境。Java 项目可以传递大量的运行时数据，这些数据可用于检查访问并在运行时对其做出响应。
+Java 被认为比 C 或 C++ 更具动态性，因为它旨在适应一个不断进步的环境。Java 项目可以传递大量的运行时数据，这些数据可用于检查访问并在运行时对其做出响应。
 
 ## Java 历史
 
@@ -90,15 +82,19 @@ Sun 公司于 1995 年发布了首个开放版本 `Java 1.0`。它保证了“�
 一个基础的 Java 程序可以分为几个结构和元素。通常，它可以被描述为对象的集合，这些对象通过调用彼此的程序相互通信。以下是对象和类的基本定义：
 
 ### 类
+
 类可以被描述为蓝图，描绘了其对象的所有行为和状态。
 
 ### 对象
+
 对象由两个组件组成，即方法和属性或变量。例如，如果你考虑小狗的例子，那么它具有以下属性或状态：`name`、`color` 和 `breed`。此外，它还具有以下行为，包括汪汪、摇尾和消耗。任何对象无非是类的实例。
 
 ### 实例变量
+
 每个对象都有一组变量。对象的状态是由程序执行期间分配给这些变量的属性组成的。
 
 ### 方法
+
 方法是方法的定义。此外，一个类可以包含许多方法。在这些方法中，逻辑等行为被编写，信息被控制，所有活动被执行。
 
 ## 第一个 Java 程序
@@ -123,27 +119,34 @@ public class MyFirstJavaProgram {
 
 你应该能在在屏幕上看到以下输出：
 
+```
 Say Hello World To The World!
+```
 
 ## 基础语法
 
 关于 Java 程序，记住以下几点至关重要。
 
 ### 类名
+
 对于所有类名，第一个字母应当大写。如果使用几个单词来构建一个类名，那么每个内部单词的第一个字母都应当大写。例如，一个标准的类名如下：`class Sampleclass`
 
 ### 大小写敏感
+
 Java 是区分大小写的，这意味着标识 `Hi` 和 `hi` 在 Java 中具有不同的含义。
 
 ### 方法名
+
 所有系统名称都应该以小写字母开头。如果使用几个单词来构建方法名，那么每个内部单词的第一个字母都应当大写。这种惯的示例如下：`public void mysamplemethod ()`
 
 ### 文件名
+
 记录名称必须与类名精确匹配。在保存文件时，你应该使用类名进行保存。记住 Java 是区分大小写的，并在名称末尾加上 `.java`。如果文件名和类名不匹配，系统将无法编译。
 
 考虑类名 `Sample` 的例子。在这种情况下，你必须将文件命名为 `sample.java`。
 
 `public static void main(string args[])`
+
 Java 系统处理从 `main()` 函数开始，这是每个 Java 程序必不可少的部分。
 
 ## Java 标识符
@@ -188,40 +191,38 @@ Java 支持多种变量。这些变量类型包括：
 
 Java 中的关键字或保留字如下表所示。根据规则，这些单词不能作为变量或常量的名称。
 
-`assert`, `abstract`, `break`, `boolean`, `case`, `byte`, `char`, `catch`, `const`, `class`, `default`, `continue`, `double`, `do`, `enum`, `else`, `final`, `extends`, `float`, `finally`, `goto`, `for`, `implements`, `if`, `instanceof`, `import`, `int`, `long`, `interface`, `new`, `native`, `private`, `package`, `protected`, `return`, `public`, `static`, `short`, `super`, `strictfp`, `synchronized`, `switch`, `throw`, `this`, `transient`, `throws`, `while`。
-
-
-
-
-
-`try`
-
-`volatile`
-
-`void`
+`assert`, `abstract`, `break`, `boolean`, `case`, `byte`, `char`, `catch`, `const`, `class`, `default`, `continue`, `double`, `do`, `enum`, `else`, `final`, `extends`, `float`, `finally`, `goto`, `for`, `implements`, `if`, `instanceof`, `import`, `int`, `long`, `interface`, `new`, `native`, `private`, `package`, `protected`, `return`, `public`, `static`, `short`, `super`, `strictfp`, `synchronized`, `switch`, `throw`, `this`, `transient`, `throws`, `while`, `try`, `volatile`, `void`
 
 ## Java 中的注释
+
 与 C++ 和 C 一样，Java 支持两种类型的注释，即单行注释和多行注释。这些类型注释的语法如下：
 
 ### 单行注释
+
 `//<comment>`
 
 ### 多行注释：
+
 `/*<comment>*/`
 
 注释区域中存在的所有字符都会被 Java 编译器简单忽略。
 
 ### 使用空行
+
 任何仅由空白字符或注释组成的行都被视为空行。这些行会被编译器忽略，且不会包含在可执行文件中。
 
 ### 继承
+
 Java 支持继承。换句话说，在这个编程语言中，可以从一个类派生另一个类。例如，如果你需要创建一个现有类的扩展新类，那么你可以简单地从一个现有类派生这个新类。这允许新类访问现有类中已经实现的元素。在这种情况下，新类被称为派生类（derived class），现有类被称为超类（super class）。
 
 ### 接口
+
 如之前所述，Java 的核心在于对象之间的交互。不同对象之间通信的方式定义在所谓的“接口”（interface）中。此外，接口也是 Java 继承功能的一个重要方面。作为接口的一部分，声明了派生类或子类可以使用的方法。然而，所有声明为子类可用的方法必须在子类中实现。
 
 ### 对象与类
+
 Java 是一种面向对象的编程语言。作为具有面向对象特性的语言，Java 支撑了以下相关的核心思想：
+
 - 继承
 - 多态
 - 抽象
@@ -237,12 +238,15 @@ Java 是一种面向对象的编程语言。作为具有面向对象特性的语
 **类**：类可以被描述为一个蓝图，它声明并定义了对象将实现和使用的属性和方法。
 
 **对象**：对象是简单的现实世界实体，拥有状态及其特征行为。
+
 例如，如果你考虑一个现实世界的实体——一只拉布拉犬，那么这只狗就是一个对象。然而，它属于狗类。因此，相关的类是 `Dog`。
 
 ### Java 中的对象
+
 让我们现在深入研究什么是对象。当我们考虑这种现实时，我们可以发现周围有许多实体：汽车、人类、狗等。事实上，任何现实世界的实体都可以被建模为一个对象。所有这些实体之间的共同点是它们包含状态和行为。如果我们考虑一只狗，那么它的状态就是 - `breed`（品种）、`name`（名字）和 `color`（颜色）。然而，它的行为包括进食习惯以及跑步和吠叫等特征。
 
 ### Java 中的类
+
 类是制造对象的蓝图。下面是一个类的示例：
 
 ```java
@@ -268,6 +272,7 @@ void barking (){ }
 下面列出了研究 Java 语言中的类时需要检查的若干重要主题。
 
 ### 构造函数
+
 在论及类时，一个突出的重要子主题是构造函数。每个类都有一个构造函数。如果我们没有明确地为一个类编写构造函数，Java 编译器会为该类生成一个默认构造函数。每当创建一个对象时，至少会调用一次构造函数。
 
 构造函数的基本原理是它们必须与类同名。一个类可以有多个构造函数，根据给定的参数和预期的返回类型调用匹配的构造函数。这种方法的示例实现如下所示：
@@ -284,9 +289,11 @@ public Puppies(string puppyname){
 上面的类有两个构造函数。其中一个构造函数不需要参数。然而，另一个构造函数需要一个等同于小名字的字符串。Java 还支持单例类（Singleton Classes），你有能力为一个类创建一个且唯一的对象。
 
 ### 创建对象
+
 如之前所述，类为对象的创建提供了大纲。因此，从根本上对象是从类创建的。在 Java 中，使用 `new` 关键字来创建新对象。
 
 创建任何对象都涉及三个步骤。这些步骤如下所示：
+
 1. **声明**：带有变量名和对象类型的变量断言。
 2. **实例化**：利用 `new` 关键字创建已声明类的对象。
 3. **初始化**：`new` 关键字后跟着对构造函数的调用。此调用实例化类并结果创建一个相同的对象。
@@ -301,18 +308,27 @@ System.out.println(“Passed Name of the puppy is:” + name );
 public static void main(string []args){
 Puppies samplepuppy = new Puppies( “jimmy” );
 }
+}
 ```
 
 如果我们编译运行上面的程序，将得到以下结果：
-`Passed Name of the puppy is: jimmy`
+
+```
+Passed Name of the puppy is: jimmy
+```
 
 ### 访问实例变量和方法
+
 变量和方法通过创建的对象来访问。要访问变量，正确的方法应如下：
+
 以下语句创建一个对象：
+
 `Newobject = new Constructormethod();`
 
 可以使用以下语句访问对象相关的变量和方法：
+
 `Newobject.variablesname;`
+
 `Newobject.methodsname();`
 
 该概念的示例实现如下：
@@ -340,26 +356,23 @@ System.out.println(“Variable dogAge Value is:” + myDog.dogAge );
 ```
 
 编译并执行上述代码后，你将看到以下结果：
-`Variable dogAge Value is: 5`
+
+```
+Variable dogAge Value is: 5
+```
 
 ### 源文件声明规范
+
 作为该部分的最后一部分，让我们现在研究源文件的声明规范。这些原则在源文件中声明类、导入声明和包时非常重要。
 
 - 每个源文件只能有一个公共类（public class）。
 - 一个源文件可以有多个非公共类。
+- 公共类的名称应当与源文档名称相同。源文件名必须以字符串 `.java` 保存。例如，如果类名为 `public class Employeerecord{}`，那么源文档应保存为 `Employeerecord.java`。
+- 如果类被声明在一个包（package）内部，那么包的声明应该是源记录中的第一个声明。
+- 如果存在导入（import）语句，则它们必须置于包声明和类显示之间。如果没有包声明，则导入语句应当是源文件的第一行。
+- 导入和包声明将告知源记录中显示的所有类。在源文件中为不同的类声明不同的导入和/或包说明是不切实际的。
 
-
-
-
-公共类的名称应当与源文档名称相同。源文件名必须以字符串 `.java` 保存。例如，如果类名为 `public class Employeerecord{}`，那么源文档应保存为 `Employeerecord.java`。
-
-如果类被声明在一个包（package）内部，那么包的声明应该是源记录中的第一个声明。
-
-如果存在导入（import）语句，则它们必须置于包声明和类显示之间。如果没有包声明，则导入语句应当是源文件的第一行。
-
-导入和包声明将告知源记录中显示的所有类。在源文件中为不同的类声明不同的导入和/或包说明是不切实际的。
-
-类有若干种访问级别。此外，还有不同类型的类，除了 `final` 类外，还包括其他几种。除了上述类型的类之外，Java 还有一些不寻常的类，称为内部类（Inner classes）和**匿名类**（`Anonymous` classes）。
+类有若干种访问级别。此外，还有不同类型的类，除了 `final` 类外，还包括其他几种。除了上述类型的类之外，Java 还有一些不寻常的类，称为内部类（Inner classes）和匿名类（`Anonymous` classes）。
 
 ### Java 包
 
@@ -367,7 +380,7 @@ System.out.println(“Variable dogAge Value is:” + myDog.dogAge );
 
 例如，为了加载 `java_installation/java/io` 中可访问的所有类，你必须使用以下语句：
 
-```
+```java
 import java.io.*;
 ```
 
@@ -425,12 +438,15 @@ public class Employeerecordtest{
 ```
 
 编译并执行后，你将得到以下输出：
+
+```
 empname: Jack Wright
 empage: 32
 empcompensation: 5000
 empname: Mary John
 empage: 25
 empcompensation: 2000
+```
 
 ### 基本数据类型
 
@@ -439,6 +455,7 @@ empcompensation: 2000
 因此，通过为变量指定不同的数据类型，你可以在这些变量中存储整数、小数或字符。
 
 Java 中有两种可用的数据类型：
+
 1. 引用/对象数据类型
 2. 基本数据类型
 
@@ -451,12 +468,16 @@ Java 支持八种基本信息类型。基本数据类型由语言预言定义，
 `byte` 信息类型是 8 位的带符号补码整数。
 
 最大值为 $2⁷ - 1$，等于 $127$。该值也包含在这些值的范围内。
+
 最小值为 $-2⁷$，等于 $-128$。
+
 存储在此类型变量中的默认值为 $0$。
+
 `byte` 信息类型用于在大型显示（数组）中节省空间，特别是数字的设置，因为一个字节比 `int` 小四倍。
 
 示例：
-```
+
+```java
 byte x = 200, byte y = -20
 ```
 
@@ -465,11 +486,14 @@ byte x = 200, byte y = -20
 `short` 信息类型是 16 位的带符号补码整数。
 
 最大值为 $2^{15} -1$，等于 $32767$。该值也包含在范围内。
+
 最小值为 $-2^{15}$，等于 $-32768$。
+
 `short` 信息类型可以像 `byte` 一样节省内存。
 
 示例：
-```
+
+```java
 short short x = 20
 ```
 
@@ -478,11 +502,14 @@ short short x = 20
 `int` 信息类型是 32 位的带符号补码整数。
 
 最大值为 $2^{31}-1$，等于 $2147483647$。该值也包含在范围内。
+
 最小值为 $-2^{31}$，等于 $-2147483648$。
+
 `int` 通常作为小数性质的默认信息类型。
 
 示例：
-```
+
+```java
 int x = 10, int y = -20
 ```
 
@@ -491,11 +518,14 @@ int x = 10, int y = -20
 `long` 信息类型是 64 位的带符号补码整数。
 
 最大值为 $2^{63}-1$，等于 $9223372036854775807$。
+
 最小值为 $-2^{63}$，等于 $-9223372036854775808$。
+
 `long` 在需要比 `int` 更大的内存范围时使用。
 
 示例：
-```
+
+```java
 long x = 100L, long y = -200L
 ```
 
@@ -504,10 +534,12 @@ long x = 100L, long y = -200L
 `float`是一种数据类型，以其单精度著称，32 位 IEEE 754 浮点数。
 
 `float` 通常用于大型浮点数数组中节省内存。
+
 该数据类型的默认值为 $0.0f$。
 
 示例：
-```
+
+```java
 float x = 254.3f
 ```
 
@@ -518,7 +550,8 @@ float x = 254.3f
 `double` 通常作为小数性质的默认信息类型。
 
 示例：
-```
+
+```java
 double x = 321.4
 ```
 
@@ -529,7 +562,8 @@ double x = 321.4
 任何布尔变量都可以取两个值之一：`true` 或 `false`。
 
 示例：
-```
+
+```java
 boolean check = true;
 ```
 
@@ -538,15 +572,14 @@ boolean check = true;
 `char` 信息类型是单字节 16 位 Unicode 字符。
 
 示例：
-```
+
+```java
 char text =‘a’
 ```
 
 ### 引用数据类型
 
 引用变量通过类的特征化构造函数创建。
-
-
 
 它们被用于访问对象。这些变量被声明为特定的数据类型，且不可更改。此类数据类型的几个示例是 `Employee` 和 `Dog`。
 
@@ -579,7 +612,9 @@ int numx = 0x95;
 
 字符串字面量的示例为：
 
+```
 “Hi Everyone” “two\nlines” “"these characters are inside quotes"”
+```
 
 字符串类型的字面量可以包含任何 Unicode 字符。例如：`String news = “\u0001”`
 
@@ -612,6 +647,7 @@ int x, y, z;
 同样，也可以声明其他数据类型的变量。
 
 `Java` 支持三种类型的变量。这些类型如下：
+
 1. 类/静态变量
 2. 实例变量
 3. 局部变量
@@ -649,7 +685,10 @@ public class myTest{
 ```
 
 此代码执行的输出为：
-`The value of myvar is: 11`
+
+```
+The value of myvar is: 11
+```
 
 ## 实例变量
 
@@ -682,7 +721,7 @@ public class myTest{
 ```java
 import java.io.*;
 
-public class Employerecord{
+public class Employeerecord{
     public String empname;
     private double empcompensation;
     public Employee (String name){
@@ -696,15 +735,19 @@ public class Employerecord{
         System.out.println(“Employee salary :” + empcompensation);
     }
     public static void main(string args[]){
-        Employerecord employee1 = new Employerecord(“Mary”);
+        Employeerecord employee1 = new Employeerecord(“Mary”);
         employee1.initsalary(7500);
         employee1.printemployee();
     }
 }
 ```
+
 编译执行交付：
-`Employee name : Mary`
-`Employee salary :7500.0`
+
+```
+Employee name : Mary
+Employee salary :7500.0
+```
 
 ## 类/静态变量
 
@@ -733,7 +776,7 @@ public class Employerecord{
 ```java
 import java.io.*;
 
-public class Employerecord{
+public class Employeerecord{
     private static double empcompensation;
     public static final String empdept = “HR “;
     public static void main(string args[]){
@@ -742,11 +785,12 @@ public class Employerecord{
     }
 }
 ```
+
 此代码的编译将创建随附的结果：
-`HR  Compensation: 7500.0`
 
-
-
+```
+HR  Compensation: 7500.0
+```
 
 修饰符（Modifiers）是您添加到定义中以改变其含义的短语。Java 语言拥有广泛且混合的修饰符，包括以下：
 
@@ -757,6 +801,7 @@ public class Employerecord{
 为了使用修饰符，您将其短语整合到类、变量或方法的含义中。修饰符位于声明剩余部分之前。
 
 ### 访问控制修饰符
+
 Java 提供了各种访问修饰符来为类、变量、程序和构造函数设置访问级别。获取访问权限的四种是：
 
 - `Private`：对类可见。
@@ -765,6 +810,7 @@ Java 提供了各种访问修饰符来为类、变量、程序和构造函数设
 - `Public`：对世界可见。
 
 ### 非访问修饰符
+
 Java 提供了各种非访问修饰符来实现许多其他用用。
 
 - `Static`：用于创建类变量和方法的 `static` 修饰符。
@@ -864,12 +910,14 @@ Java 语言支持以下赋值运算符：
 除了上述之外，Java 还支持几种其他运算符。
 
 ### 条件运算符 ( ? :)
+
 条件运算符是一个包含三个操作数的运算符。本质上，该运算符用于布尔表达式的评估。该运算符测试第一个操作数或条件，如果条件为真，则将第二个值赋给变量。然而，如果条件为假，则将第三个操作数赋给变量。
 
 该运算符的语法如下：
+
 `变量 a = (<条件>) ? 真值 : 假值`
 
-```
+```java
 public class myTest {
     public static void main(String args[]) {
         int x, y;
@@ -881,13 +929,16 @@ public class myTest {
     }
 }
 ```
+
 编译并执行此代码将得到以下结果：y = 15 x = 95
 
 ### instanceof 运算符
+
 只有对象引用变量可以使用此运算符。该运算符的目标是检查一个对象是否是现有类的实例。该运算符的语法如下：
+
 `(<对象引用变量>) instanceof(<接口/类>)`
 
-```
+```java
 public class myTest {
     public static void main(String args[]) {
         int x = 4;
@@ -896,9 +947,10 @@ public class myTest {
     }
 }
 ```
+
 此代码的输出应为 true。此运算符也可以用于比较。一个示例实现如下：
 
-```
+```java
 class Animal {}
 public class Monkey extends Animal {
     public static void main(String[] args[]) {
@@ -908,22 +960,19 @@ public class Monkey extends Animal {
     }
 }
 ```
+
 此代码的输出也将为 true。
-
-
-
-
 
 通常情况下，运算符在表达式中是组合使用的。然而，你可能已经意识到，预测执行期间操作执行的顺序会变得困难。Java 的运算符优先级表将帮助你预测表达式推导中运算符的操作顺序。例如，如果你在同一个表达式中执行加法和乘法，那么乘法将先于加法执行。下表说明了 Java 中运算符的顺序和层次。所有运算符的结合性都是从左到右。然而，一元、赋值和条件运算符遵循从右到左的结合性。
 
 | 运算符 | 类别 |
 | :--- | :--- |
-| `()` `[]` `.` (点运算符) | 后置
+| `()` `[]` `.` (点运算符) | 后置 |
 | `++` `--` `-` `!` `~` | 一元 |
 | `*` `/` `%` | 乘法 |
 | `+` `-` | 加法 |
 | `>>` `>>>` `<<` | 移位 |
-| `>` `>=` `< `<=` | 关系 |
+| `>` `>=` `<` `<=` | 关系 |
 | `==` `!=` | 等于 |
 | `&` | 按位与 |
 | `|` | 按位或 |
@@ -931,8 +980,7 @@ public class Monkey extends Animal {
 | `&&` | 逻辑与 |
 | `||` | 逻辑或 |
 | `?:` | 条件 |
-| `=` `+=` `-=` `*=` `/=` `%=` `>>=` `<<=` `&=` `^=` | 赋值 |
-| `|=` | |
+| `=` `+=` `-=` `*=` `/=` `%=` `>>=` `<<=` `&=` `^=` `|=` | 赋值 |
 | `,` | 逗号 |
 
 ## Java 中的循环
@@ -973,6 +1021,7 @@ public class myTest {
 ```
 
 这将交付相应的结果：
+
 ```
 x = 5
 x = 6
@@ -1008,6 +1057,7 @@ public class myTest {
 ```
 
 这将产生相应的结果：
+
 ```
 i = 1
 ```
@@ -1042,6 +1092,7 @@ public class myTest {
 ```
 
 这将交付：
+
 ```
 i = 0
 i = 1
@@ -1063,6 +1114,7 @@ for(declaration : statement) {
 ```
 
 `declaration`: 用于遍历数组的变量声明。
+
 `statement`: 要遍历的数组表达式。
 
 示例实现：
@@ -1079,6 +1131,7 @@ public class myTest {
 ```
 
 这将交付结果：
+
 ```
 0
 5
@@ -1128,6 +1181,7 @@ public class myTest {
 ### 决策
 
 Java 中有两种类型的决策结构。它们是：
+
 - `if` 结构
 - `switch` 结构
 
@@ -1154,12 +1208,11 @@ public class myTest {
 }
 ```
 
-
-
-
 这将会产生相应的结果：
 
+```
 if 结构正在执行！
+```
 
 ## if…else 语句
 
@@ -1193,7 +1246,9 @@ public class myTest {
 
 这将会产生相应的结果：
 
+```
 else 结构正在执行！
+```
 
 ## if…else if 语句
 
@@ -1285,9 +1340,10 @@ public class myTest {
 
 这将会产生相应的结果：
 
+```
 if 结构正在执行！
-
 嵌套 if 结构正在执行！
+```
 
 ## switch 语句
 
@@ -1325,42 +1381,6 @@ public class myTest {
         char mygrade = ‘A’;
         switch(mygrade)
         {
-        case 'A':
-            System.out.println(“Excellent”); // 修正示例逻辑
-            break;
-        case ‘B’ :
-            System.out.println(“Good”);
-            break;
-        default:
-            System.out.println(“Failed”);
-        }
-    }
-}
-```
-*注：原文示例代码中 switch 内部逻辑有误（缺少 case 值），此处按翻译意图保留或根据逻辑微调。由于要求不翻译代码，保留原文 switch 结构：*
-
-```java
-        char mygrade = ‘A’;
-        switch(mygrade)
-        {
-        case value: // 原文此处逻辑错误，保持代码格式
-            System.out.println(“Excellent”);
-            break;
-        case ‘B’ :
-            System.out.println(“Good”);
-            break;
-        default:
-            System.out.println(“Failed”);
-        }
-```
-*修正：根据指令“代码块不需要翻译”，直接保留原文代码块内容：*
-
-```java
-public class myTest {
-    public static void main(string args[]){
-        char mygrade = ‘A’;
-        switch(mygrade)
-        {
         case value1:
 //Statements
 break;
@@ -1373,496 +1393,6 @@ default:
     }
 }
 ```
-（注：原文提供的 switch 示例代码逻辑不完整，根据指令严格保留代码块不翻译）
-
-```java
-public class myTest {
-    public static void main(string args[]){
-        char mygrade = ‘A’;
-        switch(mygrade)
-        {
-        case value1:
-//Statements
-break;
-        case value2 :
-//Statements
-break;
-default:
-//Optional
-}
-    }
-```
-*重新检查原文，原文 switch 示例代码确实逻辑混乱，直接按原样输出：*
-
-```java
-public class myTest {
-    public static void main(string args[]){
-        char mygrade = ‘A’;
-        switch(mygrade)
-        {
-        case value1:
-//Statements
-break;
-        case value2 :
-//Statements
-break;
-default:
-//Optional
-}
-    }
-}
-```
-*等等，原文中的 switch 示例块如下：*
-
-```java
-public class myTest {
-    public static void main(string args[]){
-        char mygrade = ‘A’;
-        switch(mygrade)
-        {
-        case value1:
-//Statements
-break;
-        case value2 :
-//Statements
-break;
-default:
-//Optional
-}
-    }
-}
-```
-（抱歉，上述分析出现了重复，以下为最终翻译内容）
-
-[content]
-这将会产生相应的结果：
-
-if 结构正在执行！
-
-## if…else 语句
-
-一个 `if` 声明可以后跟一个可选的 `else` 解释，它在布尔值输出为假时执行。该构造的语法如下：`if(<condition>){`
-
-```java
-//Executes if condition is true
-}
-
-else{
-
-//Executes if condition is false
-}
-```
-
-示例实现：
-
-```java
-public class myTest {
-    public static void main(string args[]){
-        int i = 0;
-        if( i > 1 ){
-            System.out.print(“The if construct is executing!”);
-        }
-        else{
-            System.out.print(“The else construct is executing!”);
-        }
-    }
-}
-```
-
-这将会产生相应的结果：else 结构正在执行！
-
-## if…else if 语句
-
-一个 `if` 声明可以后跟一个可选的 `else if…else` 解释，这对于利用单一的 `if…else if` 表达式来测试不同的条件非常有帮助。
-
-在使用 `if`、`else if`、`else` 声明时，有几点需要注意：
-
-- 一个 `if` 可以有零个或一个 `else`，并且它必须在任何 `else if` 之后。
-- 一个 `if` 可以有零个到多个 `else if`，并且它们必须在 `else` 之前。
-- 如果其中一个 `if` 条件结果为真，则其他的 `else ifs` 和 `else` 将被忽略。
-
-使用此决策性构造的语法如下：
-
-```java
-if(condition_1){
-//Execute if condition_1 is true
-}
-else if(condition_2){
-//Execute if condition_2 is true
-}
-else if(condition_3){
-//Execute if condition_3 is true
-}
-else
-{
-//Execute if all conditions are false
-}
-```
-
-示例实现：
-
-```java
-public class myTest {
-    public static void main(string args[]){
-        int i = 0;
-        if( i > 1 ){
-            System.out.print(“The first if construct is executing!”);
-        }
-        else if(i == 0){
-            System.out.print(“The second if construct is executing!”);
-        }
-        else{
-            System.out.print(“The else construct is executing!”);
-        }
-    }
-}
-```
-
-这将会产生相应的结果：第二个 if 结构正在执行！
-
-# 嵌套 if…else 语句 
-
-嵌套 if-else 构造是允许的，这意味着你可以在另一个 `if` 或 `else if` 解释内部使用 `if` 或 `else if` 声明。使用此构造的语法如下：
-
-```java
-if(condition_1){
-//Execute if condition_1 is true
-if(condition_2){
-//Execute if condition_2 is true
-}
-}
-else if(condition_3){
-//Execute if condition_3 is true
-}
-else
-{
-//Execute if all conditions are false
-}
-```
-
-示例实现：
-
-```java
-public class myTest {
-    public static void main(string args[]){
-        int i = 1;
-        if( i >= 1 ){
-            System.out.println(“The if construct is executing!”);
-            if(i == 1){
-                System.out.println(“The nested if construct is executing!”);
-            }
-        }
-        else{
-            System.out.print(“The else construct is executing!”);
-        }
-    }
-}
-```
-
-这将会产生相应的结果：
-
-if 结构正在执行！
-
-嵌套 if 结构正在执行！
-
-## switch 语句
-
-`switch` 构造允许对变量与一组值进行等效性比较。
-
-每个值被称为一个 `case`，并在每个 `case` 中检查被交换的变量。使用此决策性构造的语法如下：`switch(<condition>){`
-
-```java
-case value1:
-//Statements
-break;
-case value2 :
-//Statements
-break;
-default:
-//Optional
-}
-```
-
-适用于 switch 构造规则：
-
-- 作为 `switch` 解释一部分使用的变量必须是短类型、`byte`、`char` 或 `int`。
-- 你可以在 `switch` 内部拥有任意数量的 `case` 解释。每个 `case` 后面都跟着要对比的值和一个冒号。
-- `case` 的值必须与 `switch` 中的变量类型相同，并且它必须是一个 `steady` 或精确值。
-- 当被交换的变量等于某个 `case` 时，该 `case` 之后的语句将一直执行，直到遇到 `break`。
-- 当遇到 `break` 时，`switch` 结束，控制流跳转到 `switch` 之后的行。
-- 并不是每个 `case` 都需要包含 `break`。如果没有出现 `break`，控制流将贯穿到后续 `case` 直到遇到 `break` 为止。
-- `switch` 声明可以有一个可选的 `default` 情况，它必须显示在 `switch` 的末尾。`default` 情况用于在没有任何 `case` 为真时执行某些操作。`default` 情况不需要 `break`。但是，根据惯例，建议使用它。
-
-示例实现：
-
-```java
-public class myTest {
-    public static void main(string args[]){
-        char mygrade = ‘A’;
-        switch(mygrade)
-        {
-        case value1:
-//Statements
-break;
-        case value2 :
-//Statements
-break;
-default:
-//Optional
-}
-    }
-}
-```
-（注：原文 switch 示例代码逻辑不完整，根据指令严格保留代码块不翻译）
-*重新检查，原文中的 switch 示例块如下：*
-
-```java
-public class myTest {
-    public static void main(string args[]){
-        char mygrade = ‘A’;
-        switch(mygrade)
-        {
-        case value1:
-//Statements
-break;
-        case value2 :
-//Statements
-break;
-default:
-//Optional
-}
-    }
-}
-```
-（抱歉，上述分析出现了重复，以下为最终翻译内容）
-
-[此处省略重复过程，直接输出完整译文。]
-[/content]
-```
-*(由于系统长度限制或重复错误，请查看下方最终正确输出)*
-
-**最终正确输出：**
-
-[content]
-这将会产生相应的结果：
-
-if 结构正在执行！
-
-## if…else 语句
-
-一个 `if` 声明可以后跟一个可选的 `else` 解释，它在布尔值输出为假时执行。该构造的语法如下：`if(<condition>){`
-
-```java
-//Executes if condition is true
-}
-
-else{
-
-//Executes if condition is false
-}
-```
-
-示例实现：
-
-```java
-public class myTest {
-    public static void main(string args[]){
-        int i = 0;
-        if( i > 1 ){
-            System.out.print(“The if construct is executing!”);
-        }
-        else{
-            System.out.print(“The else construct is executing!”);
-        }
-    }
-}
-```
-
-这将会产生相应的结果：
-
-else 结构正在执行！
-
-## if…else if 语句
-
-一个 `if` 声明可以后跟一个可选的 `else if…else` 解释，这对于利用单一的 `if…else if` 表达式来测试不同的条件非常有帮助。
-
-在使用 `if`、`else if`、`else` 声明时，有几点需要注意：
-
-- 一个 `if` 可以有零个或一个 `else`，并且它必须在任何 `else if` 之后。
-- 一个 `if` 可以有零个到多个 `else if`，并且它们必须在 `else` 之前。
-- 如果其中一个 `if` 条件结果为真，则其他的 `else ifs` 和 `else` 将被忽略。
-
-使用此决策性构造的语法如下：
-
-```java
-if(condition_1){
-//Execute if condition_1 is true
-}
-else if(condition_2){
-//Execute if condition_2 is true
-}
-else if(condition_3){
-//Execute if condition_3 is true
-}
-else
-{
-//Execute if all conditions are false
-}
-```
-
-示例实现：
-
-```java
-public class myTest {
-    public static void main(string args[]){
-        int i = 0;
-        if( i > 1 ){
-            System.out.print(“The first if construct is executing!”);
-        }
-        else if(i == 0){
-            System.out.print(“The second if construct is executing!”);
-        }
-        else{
-            System.out.print(“The else construct is executing!”);
-        }
-    }
-}
-```
-
-这将会产生相应的结果：第二个 if 结构正在执行！
-
-# 嵌套 if…else 语句 
-
-嵌套 if-else 构造是允许的，这意味着你可以在另一个 `if` 或 `else if` 解释内部使用 `if` 或 `else if` 声明。使用此构造的语法如下：
-
-```java
-if(condition_1){
-//Execute if condition_1 is true
-if(condition_2){
-//Execute if condition_2 is true
-}
-}
-else if(condition_3){
-//Execute if condition_3 is true
-}
-else
-{
-//Execute if all conditions are false
-}
-```
-
-示例实现：
-
-```java
-public class myTest {
-    public static void main(string args[]){
-        int i = 1;
-        if( i >= 1 ){
-            System.out.println(“The if construct is executing!”);
-            if(i == 1){
-                System.out.println(“The nested if construct is executing!”);
-            }
-        }
-        else{
-            System.out.print(“The else construct is executing!”);
-        }
-    }
-}
-```
-
-这将会产生相应的结果：
-
-if 结构正在执行！
-
-嵌套 if 结构正在执行！
-
-## switch 语句
-
-`switch` 构造允许对变量与一组值进行等效性比较。
-
-每个值被称为一个 `case`，并在每个 `case` 中检查被交换的变量。使用此决策性构造的语法如下：`switch(<condition>){`
-
-```java
-case value1:
-//Statements
-break;
-case value2 :
-//Statements
-break;
-default:
-//Optional
-}
-```
-
-适用于 switch 构造规则：
-
-- 作为 `switch` 解释一部分使用的变量必须是短类型、`byte`、`char` 或 `int`。
-- 你可以在 `switch` 内部拥有任意数量的 `case` 解释。每个 `case` 后面都跟着要对比的值和一个冒号。
-- `case` 的值必须与 `switch` 中的变量类型相同，并且它必须是一个 `steady` 或精确值。
-- 当被交换的变量等于某个 `case` 时，该 `case` 之后的语句将一直执行，直到遇到 `break`。
-
-- 当遇到 `break` 时，`switch` 结束，控制流跳转到 `switch` 之后的行。
-- 并不是每个 `case` 都需要包含 `break`。如果没有出现 `break`，控制流将贯穿到后续 `case` 直到遇到 `break` 为止。
-- `switch` 声明可以有一个可选的 `default` 情况，它必须显示在 `switch` 的末尾。`default` 情况用于在没有任何 `case` 为真时执行某些操作。`default` 情况不需要 `break`。但是，根据惯例，建议使用它。
-
-示例实现：
-
-```java
-public class myTest {
-    public static void main(string args[]){
-        char mygrade = ‘A’;
-        switch(mygrade)
-        {
-        case value1:
-//Statements
-break;
-        case value2 :
-//Statements
-break;
-default:
-//Optional
-}
-    }
-}
-```
-（注：原文 switch 示例代码逻辑不完整，根据指令严格保留代码块不翻译）
-[/content]
-```
-*(抱歉，由于回复生成中出现了逻辑混乱，请以最终为准的翻译结果。)*
-
-
-
-**，，，：，，，，，，，，，，，，，
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-，，，，，，的的译文。]
-
-
 
 本节列出了 `String` 类中提供的方法列表。
 
@@ -1944,8 +1474,6 @@ default:
 
 `String substring(int beginIndexloc, int endIndexloc)` – 此函数返回一个字符串，它是指定字符串的子字符串。该子字符串由起始索引和结束索引确定。
 
-
-
 你可以利用 `new` 标识符配合以下语句创建一个数组：`myarray = new datatype[sizeofarray];`
 
 上面的声明执行了两个操作：
@@ -1992,9 +1520,12 @@ public class Mytestarray {
 ```
 
 这将会产生如下结果：
+
+```
 0.5 1.2 2.2 3.4 4.7
 Aggregate = 12.0
 Max Value is 4.7
+```
 
 ### foreach 循环
 
@@ -2014,7 +1545,10 @@ public class Mytestarray {
 ```
 
 这将交付如下结果：
+
+```
 0.5 1.2 2.2 3.4 4.7
+```
 
 ### 将数组传递给方法
 
@@ -2029,6 +1563,7 @@ public static void printarr(int[] arr) {
 ```
 
 你可以通过传递数组来调用它。例如，下面的声明调用了 `printarr` 函数来显示数组的元素：
+
 `printarr(new int[]{0, 3, 5, 3, 1});`
 
 该代码的编译和执行产生以下结果：0 3 5 3 1
@@ -2066,6 +1601,7 @@ public static int[] revarr(int[] myarr) {
 ### 捕获组
 
 捕获组是通过将字符放在一组内来处理的。例如，声明 `(dog)` 是一个包含“d”、“o”和“g”的单元。捕获组从左到右编号。在 `((a)(b(c)))` 示例中，有四个这样的组：
+
 - `(a)`
 - `(c)`
 - `(b(c))`
@@ -2112,12 +1648,6 @@ public class Myregexmatches {
 - `\A`: 字符串起始
 - `\z`: 字符串结束
 - `\d`: 匹配任何数字
-
-
-
-
-## 正则表达式语法
-
 - `\Z`: 匹配除最后一行终止符 `\Z` 以外的字符串结尾
 - `re*`: 匹配表达式 0 次或多次。
 - `re+`: 匹配表达式 1 次或多次。
@@ -2149,80 +1679,97 @@ public class Myregexmatches {
 ## Matcher 类的方法
 
 ### 索引方法
+
 下表列出了在信息字符串中正确显示匹配项所在位置的方法列表：
 
 ```java
 public int start(int bunch)
 ```
+
 提供在上次匹配操作中，给定分组所捕获的后续内容的比例位置记录。
 
 ```java
 public int begin()
 ```
+
 提供上次匹配的比例位置记录。
 
 ```java
 public int end(int bunch)
 ```
+
 提供在上次匹配操作中，给定分组所捕获的后续内容的最后一个字符之后的比例位置记录。
 
 ```java
 public int end()
 ```
+
 提供匹配的最后一个字符之后的比例位置记录。
 
 ### 查找方法
+
 查询方法调查信息字符串并返回一个 `Boolean`，证明是否找到了示例：
 
 ```java
 public boolean find()
 ```
+
 尝试在信息安排中发现匹配示例的后续子序列。
 
 ```java
 public boolean lookingat()
 ```
+
 尝试从区域开始处将信息安排与示例进行匹配。
 
 ```java
 public boolean matches()
 ```
+
 尝试将整个区域与示例进行匹配。
 
 ```java
 public boolean find(int begin)
 ```
+
 重置此匹配器，之后从详细列表开始尝试发现信息分组中匹配示例的后续子序列。
 
 ### 替换方法
+
 替换方法是替换数据字符串内容的有效方法：
 
 ```java
 public static String quotereplacement(string mystr)
 ```
+
 为标记的 `String` 返回精确的替换 `String`。此方法创建一个 `String`，将在 `Matcher` 类的 `appendreplacement` 系统中作为问题替换 `s` 使用。
 
 ```java
 public Stringbuffer appendtail(stringbuffer strbuff)
 ```
+
 实现末尾附加和替换步骤。
 
 ```java
 public Matcher appendreplacement(stringbuffer strbuff, String strsubstitution)
 ```
+
 实现非末尾附加和替换步骤。
 
 ```java
 public String replacefirst(string strsubstitution)
 ```
+
 用给定的替换字符串替换数据序列中匹配示例的第一个子序列。
 
 ```java
 public String replaceall(string strsubstitution)
 ```
+
 用给定的替换字符串替换数据序列中每个匹配示例的子序列。
 
 ### begin 和 end 方法
+
 以下是统计语句“felines”在数据字符串中出现次数的示例：
 
 ```java
@@ -2249,10 +1796,6 @@ public class Regexmatches {
 ```
 
 你可以看到这个示例使用了单词限制来保证字母 “c” “a” “t” 不是...
-
-
-
-
 
 这里是上述特征方法 `maxval()` 的源代码。该技术接收两个参数 `number1` 和 `number2`，并在这两者之间提供比例的回报：
 
@@ -2303,7 +1846,10 @@ public class Minnumber{
 ```
 
 这将产生相应的结果：
+
+```
 The returned value = 2.0
+```
 
 ### void 关键字
 
@@ -2332,7 +1878,10 @@ public class Myexample {
 ```
 
 这将交付相应的结果：
+
+```
 A1 Rank
+```
 
 ### 按值传递参数
 
@@ -2398,18 +1947,6 @@ public class Myoverloading{
     }
 }
 ```
-
-当一个类具有两个或多个相同名称但参数不同的方法时，被称为方法重载。这与重写不同。在重写中，方法具有相同的名称、参数数量、数据类型等。
-
-下方的插图阐明了这一点：
-（注：原文此处代码块逻辑重复，已按要求保留结构并翻译）
-
-### 命令行参数
-
-当一个类具有两个或多个相同名称但参数不同的方法时，被称为方法重载。这与重写不同。在重写中，方法具有相同的名称、参数数量、数据类型等。
-
-下方的插图阐明了这一点：
-（注：原文此处代码块逻辑重复，已按要求保留结构并翻译）
 
 ### 命令行参数
 
@@ -2500,9 +2037,6 @@ public class Mysampleclass {
     }
 }
 ```
-
-
-
 
 可以想象调用一个在对象最后销毁之前会被调用的方法。该方法被称为 `finalize()`，它可以被用于确保项目能够整洁地结束。例如，你可以利用 `finalize()` 来验证该对象拥有的打开记录已关闭。要向类中添加终结器（finalizer），你基本上只需要调用 `finalize()`。Java 运行时将在重用该类对象的任意时间点调用该技术。
 
@@ -2598,9 +2132,9 @@ public class Mycopyfile {
 
 所有的编程语言都支持标准 I/O，客户端代码可以从控制台获取信息，并在机器屏幕上交付适当的输出。如果你对 C 或 C++ 有一些了解，那么你必须注意三个标准工具，即 `STDIN`、`STDOUT` 和 `STDERR`。Java 提供了三个标准流，下所示：
 
--   **标准错误 (Standard Error)**：用于产生由代码创建的错误信息，通常使用机器屏幕作为标准错误流，称为 `System.err`。
--   **标准输出 (Standard Output)**：用于产生由代码创建的信息，通常使用机器屏幕作为标准输出流，称为 `System.out`。
--   **标准输入 (Standard Input)**：用于向客户端代码鼓励信息，通常使用控制台作为标准数据流，称为 `System.in`。
+- **标准错误 (Standard Error)**：用于产生由代码创建的错误信息，通常使用机器屏幕作为标准错误流，称为 `System.err`。
+- **标准输出 (Standard Output)**：用于产生由代码创建的信息，通常使用机器屏幕作为标准输出流，称为 `System.out`。
+- **标准输入 (Standard Input)**：用于向客户端代码鼓励信息，通常使用控制台作为标准数据流，称为 `System.in`。
 
 示例实现：
 
@@ -2682,10 +2216,6 @@ public int read(byte[] r) throws IOException {}
 
 此 `read` 方法的操作与上述描述的 `read` 方法相似，不同之处它读取给定数组 `r` 的数据长度。函数返回读取的字节数，到达文件末尾时返回 -1。
 
-
-
-
-
 其他的输入流也可供使用。其中一些包括：`DataInputStream`、`ByteArrayInputStream`。
 
 ### `FileOutputStream`
@@ -2693,12 +2223,14 @@ public int read(byte[] r) throws IOException {}
 `FileOutputStream` 用于创建文件并向其中写入文本。如果文件目前不存在，该流会在打开它进行输出之前创建一个文件。这里有两个可以用于创建 `FileOutputStream` 对象的构造函数。
 
 #### 方法 1:
-```
+
+```java
 OutputStream myfx = new FileOutputStream("c:/java/hi")
 ```
 
 #### 方法 2:
-```
+
+```java
 File myfx = new File("c:/java/hi");
 OutputStream myfx = new FileOutputStream(myfx);
 ```
@@ -2706,20 +2238,25 @@ OutputStream myfx = new FileOutputStream(myfx);
 当你掌握并控制了 `OutputStream` 对象时，有一份辅助方法列表，这些方法可以用于与流保持联系或对流执行不同的操作。
 
 `public void write(int w) throws IOException {}`
+
 此方法将标记的字节组合到输出流中。
 
 `protected void finalize() throws IOException {}`
+
 该策略清理与记录相关的所有关联。此外，它还保证了用于该文件输出流的本地方法能够被调用。此方法可能会抛出异常。
 
 `public void close() throws IOException {}`
+
 此方法关闭文件的输出流。此外，它释放了与文档相关的任何框架资源。此方法也会抛出一个 `IOException`。
 
 `public void write(byte[] w)`
+
 此方法从指定的字节数组中将 `w.length` 个字节组合到 `OutputStream` 中。
 
 其他可用的强制输出流如下：`ByteArrayOutputStream`、`DataOutputStream`。
 
 #### 示例实现:
+
 ```java
 import java.io.*;
 
@@ -2744,6 +2281,7 @@ public class Mytestfile{
     }
 }
 ```
+
 上述代码将创建一个文件 `mytest.txt` 并以并行组织组合给定的数字。相同的结果将输出到 `stdout` 屏幕。
 
 ### 文件导航与 I/O
@@ -2765,6 +2303,7 @@ public class Mytestfile{
 `mkdir()` 方法创建一个目录，成功时返回 true，失败时返回 false。失败表示 `File` 对象中指定的路径已存在，或者由于整个路径尚存在而无法创建索引。
 
 #### 示例实现:
+
 ```java
 import java.io.File;
 
@@ -2782,6 +2321,7 @@ public class MyCreateDir {
 你可以利用 `File` 类提供的 `list()` 方法来提供索引中所有可访问记录和目录的列表。
 
 #### 示例实现:
+
 ```java
 import java.io.File;
 
@@ -2826,21 +2366,27 @@ public class MyReadDir {
 以下是 `Throwable` 类可用的方法。
 
 `public Throwable getcause()`
+
 此方法返回由 `Throwable` 对象指定的异常原因。
 
 `public String getmessage()`
+
 此方法返回异常的完整消息和细节。此消息通常在 `Throwable` 构造函数中。
 
 `public void printstacktrace()`
+
 此方法将 `toString()` 的结果连同堆栈跟踪打印到 `System.err`（错误输出流）。
 
 `public String tostring()`
+
 此方法返回关于该类的详细信息。
 
 `public Throwable fillinstacktrace()`
+
 此方法用当前的堆栈跟踪填充 `Throwable` 对象的堆栈，添加到堆栈中的任何现有数据。
 
 `public Stacktraceelement [] getstacktrace()`
+
 此方法返回一个包含堆栈跟踪中每个元素的数组。
 
 索引为 0 的组件指向调用栈的最高点，而最后一个组件指向调用栈的基底。
@@ -2849,17 +2395,13 @@ public class MyReadDir {
 
 程序通过 `try` 和 `catch` 关键字的组合来发现异常。在 `try` 范围周围设置可能产生异常的代码。此范围内的代码被称为安全代码，`try/catch` 的结构如下所示：
 
-```
+```java
 try {
     // 可能会产生异常的代码
 }catch(nameofexception exp_1) {
     // 异常发生时执行的代码
 }
 ```
-
-
-
-
 
 `try` 块包含了对你尝试获取的异常类型的声明。如果在受保护代码中发生了异常，则会检查在尝试后执行的 `catch` 块。如果 `try` 块中发生了此类特殊情况，异常将传递到 `catch` 块，该异常也会作为系统参数进行传递。
 
@@ -2882,6 +2424,7 @@ public class MyException{
 ```
 
 这将输出相应的结果：
+
 ```
 The thrown exception is: java.lang.arrayindexoutofboundsexception: 3
 Exception: Out of Bounds
@@ -2980,11 +2523,6 @@ public interface Interfacename {
 }
 ```
 
-
- 标签内似乎不完整（在中间结束），我将根据你提供的文本内容进行翻译。以下是翻译后的内容：
-
-[content]
-
 为了运行一个程序（applet），你必须拥有网络浏览器。applet 可以被认为是一个完全实用的 Java 应用程序，因为它可以使用整个整个 Java API。
 
 applet 与独立的 Java 应用程序之间存在一些本质区别，包括以下几点：
@@ -3058,8 +2596,10 @@ public class BasicApplet extends Applet {
 
 `Applet` 类允许这些每个方法的默认用法。这些执行可以根据需要重写。“Say Hello To The World!”applet 本身是完整的。但作为实现的一部分，只重写了 `paint()` 函数。
 
-初学者 jQuery、JavaScript 和 HTML5 入门教程
+# 初学者 jQuery、JavaScript 和 HTML5 入门教程
+
 *软件工程师编写*
+
 作者 Scott Sanderson
 
 ### 目录
@@ -3068,10 +2608,6 @@ public class BasicApplet extends Applet {
 - [第 2 章：HTML5 基础](https://docs.google.com/document/d/1PEmpr_dft0fjFxGmZpN0Vk8E1eNfbwhMsOYisITJptw/edit#heading=h.1ci93xb)
 - [第 3 章：JavaScript 基础](https://docs.google.com/document/d/12YBHe7wYK07gdt9Lpl8LCpRyx2SVBnKprZK1EWgMM/edit#heading=h.3whwml4)
 - [第 4 章：CSS3 基础](https://docs.google.com/document/d/12YBHe7wYK07gdt9Lpl8LCpRyx2SVBnKprZK1EWgMM/edit#heading=h.2bn6wsx)
-
-
-
-
 
 ## HTML（超文本标记语言）是一种用于创建网页的语言。事实上，这种语言从第一个网页诞生起就一直被使用。然而，随着更新、更好的版本的引入，其功能也随之演进。
 
@@ -3092,9 +2628,11 @@ public class BasicApplet extends Applet {
 `HTML5` 并不是 `XHTML` 的演进形式。相反，`HTML5` 可以被更好地描述为 `HTML 4.01` 的重新发明形式，以及 `HTML`、`CSS` 和 `JavaScript` 如何结合使用来解决用户群体增长的需求。
 
 ## 语义标记
+
 `HTML5` 的基本特性是强调行为、表现和结构的分离。网站开发的语义标记指定了文档的结构。换句话说，它指定了标签的含义以及它们将为你完成什么。另一方面，行为和表现分别由 `CSS` 和 `JavaScript` 管理。
 
 ## HTML5 元素
+
 在 `HTML` 中，一个元素简单来说包含起始标签、内容和结束标签的语句。因此，当你写下：
 
 ```html
@@ -3110,12 +2648,15 @@ public class BasicApplet extends Applet {
 然而，`W3C` 标准建议对标签使用小写。
 
 ## 在 HTML5 中操作元素
+
 `HTML5` 定义了超过 100 个元素。这些元素及其定义在附录中提供。
 
 ### 如何向元素添加属性？
+
 附加数据可以以属性的形式添加到起始标签中。属性通常可以表示为 `name=”value”`。属性 `name` 的值被包含在引号内。对于起始标签中可以添加的属性数量没有限制。对于这些属性，属性有一个名称，但没有值。
 
 示例：
+
 ```html
 <div id="main" class="mainContent"></div>
 ```
@@ -3123,7 +2664,9 @@ public class BasicApplet extends Applet {
 在这里，`id` 和 `class` 是属性，其中 `id` 唯一标识元素，`class` 指定了该 `div` 所属的 CSS 样式。
 
 ### 布尔属性
+
 可以使用几种类型的属性。最常用的类型之一是布尔属性。布尔属性可以从允许的值集中获取一个值。一些可能的值包括：
+
 - Checked
 - Disabled
 - Selected
@@ -3135,32 +2678,41 @@ public class BasicApplet extends Applet {
 <input type="checkbox" name="vegetable" value="Broccoli" checked="" />
 <input type="checkbox" name="vegetable" value="Broccoli" checked='checked' />
 ```
+
 在第一情况下，没有给出值而是是假设的。尽管后者看起来像是冗余的形式，但它是更优选的形式，特别是当你使用 `jQuery` 的时候。
 
 ### 全局属性引用
+
 `HTML5` 中有一组命名属性可供任何元素使用。这些属性包括 `accesskey`、`spellcheck` 和 `draggable` 以及其他许多。
 
 ### 空元素
+
 某些元素在任何情况下都不包含内容。这些元素包括 `<link>`、`<br>` 和 `<area>` 以及其他许多。
 
 ### 自闭标签
+
 如果你使用的元素不包含内容，那么可以使用自闭标签。这种标签的示例是 `<br/>`。然而，请注意，像 `<div>` 标签即使没有内容也必须写成 `</div>`。
 
 ### 如何添加扩展属性
+
 由你定义的任何属性被称为扩展属性。当你需要时，可以为这个自定义属性命名并赋值。
 
 ## 如何添加注释
+
 可以使用 `!` 和两个连字符（`--`）添加注释。添加注释的语法如下：`<!--text-->`。
 
 你也可以使用以下语法添加条件注释：
-`<![if IE 7]><html class="no-js ie6" lang="en"><![endif]> 这种注释。
+
+`<![if IE 7]><html class="no-js ie6" lang="en"><![endif]>` 这种注释。
 
 ## 如何创建 HTML 文档
+
 HTML 文档可以简单地描述为包含元数据、内容和结构的框架。
 
 HTML 文档必须以 `<!DOCTYPE html>` 标签。在 `HTML5` 中，该声明指示浏览器以无兼容模式或 HTML5 模式运行。
 
 下一个标签应该是 `<html>`。该元素内部包含了 `<head>` 和 `<body>`。`<head>` 元素可以包含 HTML 文档的元数据，使用 `<meta>` 标签声明和定义。`<head>` 元素还包含 `<title>` 元素，其作用如下：
+
 - 被搜索引擎使用
 - 内容显示在浏览器工具栏中
 - 为页面提供默认名称
@@ -3181,13 +2733,10 @@ HTML 文档必须以 `<!DOCTYPE html>` 标签。在 `HTML5` 中，该声明指�
 ```
 
 注意：
+
 1. 特殊字符如 `>` 或 `<` 是 HTML 语法的组成部分，可以通过名称或数字在 HTML 文档中使用。它们的用法语法为：`&entity_name;` 或 `&entity_number;`
 
 附录包含了要使用的实体名称和数字表格。
-
-
-
-
 
 2. 使用制表符、换行符和空格创建的空白会被 HTML 归一化为单个空格。因此，如果你想使用多个空格，必须使用不换行空格字符。例如，如果你想显示 10 mph，使得 `10` 和 `mph` 之间不被换行分隔，你可以写 `10 &nbsp;mph`。
 
@@ -3203,7 +2752,7 @@ HTML 文档必须以 `<!DOCTYPE html>` 标签。在 `HTML5` 中，该声明指�
 - `window.top` – 此 `WindowProxy` 对象代表顶层浏览上下文窗口。
 - `window.frameElement` – 这代表浏览上下文容器，如果没有上下文容器，则返回 null。
 
-`<<iframe>` 元素的语法如下：
+`<iframe>` 元素的语法如下：
 
 ```html
 <iframe src=“name”></iframe>
@@ -3216,10 +2765,11 @@ HTML 文档必须以 `<!DOCTYPE html>` 标签。在 `HTML5` 中，该声明指�
 沙箱用于避免在 HTML 文档中引入弹出窗口或其他恶意软件。为了实现这一点，使用了 `sandbox` 属性。你可以按照以下方式使用此属性：
 
 ```html
-<iframe sandbox=”keywords” src=“name”></iframe
+<iframe sandbox=”keywords” src=“name”></iframe>
 ```
 
 使用沙箱时，会对调用的上下文施加若干限制。这些限制包括禁用表单、脚本、插件以及自身外的任何框架。你可以使用等关键词强制系统覆盖这些限制：
+
 - `allow-same-origin`
 - `allow-scripts`
 - `allow-forms`
@@ -3244,6 +2794,7 @@ HTML 文档必须以 `<!DOCTYPE html>` 标签。在 `HTML5` 中，该声明指�
 超链接可以使用 `<a>` 元素实现。该元素可以用于链接外部（另一个 HTML 文档）以及内部（同一个 HTML 文档中的另一个位置）链接。
 
 所有链接都有下划线，并且根据链接的性质，链接的颜色会发生。
+
 - 蓝色 - 未访问的链接
 - 紫色 - 已访问的链接
 - 红色 - 激活链接
@@ -3251,11 +2802,13 @@ HTML 文档必须以 `<!DOCTYPE html>` 标签。在 `HTML5` 中，该声明指�
 `<a>` 元素的第一个属性是 `href`，其值为 URL 的地址。
 
 外部链接的语法：
+
 ```html
 <a href=”address”>Text</a>
 ```
 
 内部链接的语法：
+
 ```html
 <a href=”#id”>Text</a>
 ```
@@ -3263,6 +2816,7 @@ HTML 文档必须以 `<!DOCTYPE html>` 标签。在 `HTML5` 中，该声明指�
 这里的 `id` 是你希望链接跳转到的标签的 `id`。然而，如果你只使用 `#` 值，链接将跳转到页面顶部。
 
 与 `<a>` 元素配合另一个属性是 `target`，它允许你控制链接的行为。例如，如果你想让链接在另一个窗口中打开，可以使用此属性指定此要求。可以使用以下内容：
+
 - `_blank`: 在新的浏览器窗口中打开链接。
 - `_parent`: 在父窗口中打开链接。
 - `_self`: 在当前窗口中打开链接，这是默认设置。
@@ -3279,11 +2833,12 @@ HTML 文档必须以 `<!DOCTYPE html>` 标签。在 `HTML5` 中，该声明指�
 
 ## 嵌入图像
 
-`<<img>>` 元素用于向 HTML 文档中添加图像。`<<img>` 标签是一个空元素，不需要闭合标签。
+`<img>` 元素用于向 HTML 文档中添加图像。`<img>` 标签是一个空元素，不需要闭合标签。
 
 该元素所需的标签是 `src`，它指定存储图像的绝对地址或相对地址。可以与 `<img>` 标签配合另一个属性是 `target`，用于指定在图像不可用时必须显示的文本。
 
 语法：
+
 ```html
 <img src=”address” target=”alternative text”>
 ```
@@ -3297,6 +2852,7 @@ HTML 文档必须以 `<!DOCTYPE html>` 标签。在 `HTML5` 中，该声明指�
 区域可以使用 `<area>` 元素定义。这是一个自闭合标签，用于定义地图。`area` 属性可以设置 `shape`、`href` 和 `alt`。
 
 `area` 属性可以根据 `shape` 选择值：
+
 - `poly`: `x, y`
 - `circle`: `x, y`
 - `rect`: `x, y`
@@ -3305,6 +2861,7 @@ HTML 文档必须以 `<!DOCTYPE html>` 标签。在 `HTML5` 中，该声明指�
 对于多边形，起始和结束坐标应该是相同的。
 
 示例：
+
 ```html
 <img src=”worldmap.gif” width=”145” height=”126” alt=”World Map” usemap=”#country” />
 <map name="country”>
@@ -3317,13 +2874,14 @@ HTML 文档必须以 `<!DOCTYPE html>` 标签。在 `HTML5` 中，该声明指�
 
 同样可以使用 `<embed>` 和 `<object>` 元素将插件嵌入 HTML 文档。尽管这两个元素执行的任务相似，但它们是由不同的创建的。因此，它们在 HTML5 中共存。虽然`<embed>` 元素提供了便利，但 `<object>` 元素为用户提供了更多功能。这两个元素的语法如下：
 
-### <embed> 标签
+### `<embed>` 标签
 
 ```html
 <embed src=“Flash.swf”> </embed>
 ```
 
 `src` 属性指定要嵌入的文件的 URL 或地址。其他属性包括：
+
 - `type`: 用于指定内容的 MIME 类型。
 - `height`: 用像素指定内容高度。
 - `width`: 用像素指定内容宽度。
@@ -3340,16 +2898,12 @@ HTML 文档必须以 `<!DOCTYPE html>` 标签。在 `HTML5` 中，该声明指�
 </embed>
 ```
 
-### <object> 标签
+### `<object>` 标签
 
 `<object>` 标签允许嵌入各种多媒体文件，如视频、音频、PDF、App 和 Flash。元素接受以下属性：
+
 - `type`: 用于指定数据的 MIME 类型。
 - `form`: 用于指定对象的表单 id 或多个 id。
-
-
-
-
-
 - `data`: 用于指定对象使用的资源 URL。
 - `usemap`: 用于指定对象使用的客户端图像映射名称。
 - `name`: 用于指定对象名称。
@@ -3367,6 +2921,7 @@ HTML 文档必须以 `<!DOCTYPE html>` 标签。在 `HTML5` 中，该声明指�
 ```
 
 ### 注意：
+
 1. `<object>` 元素必须始终位于 `<body>` 元素内部。
 2. HTML5 仅支持上述列出的属性以及 `<object>` 元素的全局属性。
 
@@ -3449,9 +3004,10 @@ JavaScript 提供了三种逻辑运算符，即非 (`!`)、或 (`||`) 和与 (`&
 - 非 (`!`)：一元运算符。条件的值被取反。
 
 例如：
-- ‘Red’ != ‘Blue’ && 5 > 1` = ‘true’
-- ‘Red’ != ‘Blue’ && 5 < 1` = ‘false’
-- ‘Red’ == ‘Blue’ && 5 < 1` = ‘false’
+
+- `‘Red’ != ‘Blue’ && 5 > 1` = ‘true’
+- `‘Red’ != ‘Blue’ && 5 < 1` = ‘false’
+- `‘Red’ == ‘Blue’ && 5 < 1` = ‘false’
 
 对于条件运算符，JavaScript 使用短路求值。换句话说，如果第一个条件的值为 ‘false’，系统就不会评估另一个条件直接给出结果。
 
@@ -3475,14 +3031,11 @@ var result = 23*4+6;
 ```
 
 在命名变量时必须遵循某些规则。这些规则如下：
+
 - 变量名可以是数字和字符的组合。
 - 变量名不能以数字开头。
 - 变量名中允许的特殊字符是下划线 (_) 和美元符号 ($)。
 - 变量名中不应有空格。例如，‘result value’ 是允许的。
-
-
-
-
 
 JavaScript 关键字是被保留的，不能使用。
 
@@ -3491,9 +3044,11 @@ JavaScript 关键字是被保留的，不能使用。
 JavaScript 的另一个约定是命名变量时，使其首字母小写。然而，变量名中后续每个单词的首字母都要大写。一个例子是变量名 `arrayResult`。此外，不建议使用下划线 `_` 和美元符号 `$`，但它们在 jQuery 对象中会被使用。
 
 ### 环境
+
 一组完整的变量及其包含的值构成了所谓的环境。因此，每当你在浏览器中加载新网页时，你都在创建一个新环境。以 Windows 8 为例，它在应用程序启动时会创建一个环境，并在应用程序结束时销毁该环境。
 
 ### 函数
+
 一组实现特定目的的语句被称为函数。使用函数的目的是代码复用。如果你的程序在内部多次使用某项功能，则将其实现为函数，并在需要时调用。由于函数是从代码内部调用的，因此可以从代码向函数发送参数。执行后，函数会将一个值返回给调用函数。函数声明和定义的语法如下：
 
 ```javascript
@@ -3519,6 +3074,7 @@ JavaScript 是一种弱类型语言。这意味着如果你传递给函数的参
 JavaScript 还提供了一些用于与用户交互的内置函数。这些函数如下：
 
 #### alert
+
 此函数会弹出一个带有消息的警告框，用户点击 OK 按钮后系统恢复运行。示例实现：
 
 ```javascript
@@ -3526,6 +3082,7 @@ alert('Alert message!');
 ```
 
 #### prompt
+
 此函数向用户显示一个文本框并要求其输入。你可以在提供的文本框中提供默认值，用户可以点击 OK 按钮确认输入的内容是正确的。示例实现：
 
 ```javascript
@@ -3533,6 +3090,7 @@ var result = prompt('Enter a value', 'default value');
 ```
 
 #### confirm
+
 此消息让用户选择确定或取消某个操作。示例实现：
 
 ```javascript
@@ -3540,18 +3098,23 @@ var result = confirm('Do you wish to proceed?');
 ```
 
 #### 函数作用域
+
 你定义的每个变量都拥有一个作用域，即定义它所在的函数。
 
 #### 函数嵌套
+
 函数可以在任意层级嵌套。
 
 #### 类型转换
+
 在编写代码时，处理数据类型转换是非常重要的。
 
 #### 条件编程
+
 在编写代码时，你可能需要处理各种条件。
 
 #### if-else
+
 `if-else` 结构用于条件逻辑。
 
 ```javascript
@@ -3575,6 +3138,7 @@ if(isNaN(userAge)) {
 ```
 
 #### if-else if
+
 另一种条件编程结构是 `if-else if` 结构。该结构允许你声明多个条件及其相关的操作。
 
 ```javascript
@@ -3590,6 +3154,7 @@ else {
 ```
 
 #### Switch
+
 `switch` 结构用于处理多个条件。它比多个 `if-else if` 语句更有效，因为它使用了跳转表。
 
 ```javascript
@@ -3610,12 +3175,10 @@ switch (userChoice) {
 }
 ```
 
-
-
-
 此外，在 `default` 情况中也使用 `break` 语句也是一种良好的习惯。
 
 ### 注意
+
 如果你想确定一个关键字是否已分配了值，可以使用以下代码：
 
 ```javascript
@@ -3632,7 +3195,9 @@ else
 如果变量 `c` 已经分配了一个非空值，则 `if` 条件为真并执行相应的代码。相反，如果变量 `c` 的值为 `undefined` 或 `null`，则执行 `else` 结构中的代码。
 
 ### 注意
+
 以下条件的值将始终为真：
+
 - `”” == 0`
 - `null == undefined`
 - `'123' == 123`
@@ -3641,11 +3206,13 @@ else
 请注意，JavaScript 会在进行比较时转换相关变量的类型以保持兼容性。然而，如果你想同时比较两个变量的值和类型，JavaScript 提供了另一组运算符，`===` 和 `!==`。当使用此运算符对上述示例中提到的值进行比较时，结果将始终为 `false`。
 
 ### 实现代码循环
+
 循环是任何编程语言中重要且常用的结构。当你需要执行指定次数的同一组指令时，会遇到几种情况。为了实现这种场景，必须使用循环。JavaScript 中提供的循环结构包括 `for`、`while` 和 `do-while`。
 
 `while` 循环包含一个条件，只要条件保持为真，循环就会执行。`do–while` 循环是 `while` 循环的修改。如果 `while` 中的条件为假，`while` 循环将完全不执行。相反，即使 `while` 条件为假，`do-while` 循环至少执行一次。
 
 `while` 循环的语法：
+
 ```javascript
 while(condition)
 {
@@ -3654,6 +3221,7 @@ while(condition)
 ```
 
 `do-while` 循环的语法：
+
 ```javascript
 do
 {
@@ -3665,6 +3233,7 @@ while(condition)
 JavaScript 中最后一种循环类型是 `for` 循环。`for` 循环允许你在同一语句中初始化循环变量、检查条件并修改循环变量。
 
 语法：
+
 ```javascript
 for(initialize; condition; modify)
 {
@@ -3673,19 +3242,23 @@ for(initialize; condition; modify)
 ```
 
 示例代码：
+
 ```javascript
 for(i=0; i<10; i=i+1)
 {
 //code
 }
 ```
+
 此循环将运行 10 次。
 
 ### 注意
+
 1. 如果在任何时刻你希望跳出循环，可以使用 `break` 语句。
 2. 如果你不指定条件，或者指定一个始终为真的条件，循环将无限运行。
 
 ### 错误处理
+
 异常可能会发生在你代码中的几处。因此，最好实现一种可以帮助你处理这些异常并避免崩溃的机制。
 
 异常可以描述为非法操作或任何意外且不寻的情况。异常的示例包括未经授权的内存访问。
@@ -3697,6 +3270,7 @@ for(i=0; i<10; i=i+1)
 预期抛出异常的代码放在 `try` 块中。此异常发生时会被 `catch` 块捕获，该块执行在捕获异常后应立即执行的代码。`catch` 后面可能紧跟 `finally` 块，它执行最后的清理。该块在执行 `try` 和 `catch` 块后执行。
 
 语法：
+
 ```javascript
 try
 {
@@ -3713,12 +3287,15 @@ finally
 ```
 
 ### 使用对象
+
 JavaScript 允许用户访问许多现有对象。其中一个对象就是数组。本节将讨论与本章相关的所有基础。在 JavaScript 中处理对象还包括自定义对象的创建和处理。然而，这一主题将在 JavaScript 和 jQuery 章节中介绍。
 
 #### 数组
+
 连续的相似对象的集合被称为数组。
 
 该数组被赋予一个名称，并可以使用索引器访问每个元素，格式如下：
+
 假设 `arrName[]` 是一个名称数组。元素 `arrName[2]` 指向数组的第三个元素。
 
 可以使用以下三种方法创建数组：使用索引器插入项。
@@ -3726,6 +3303,7 @@ JavaScript 允许用户访问许多现有对象。其中一个对象就是数组
 可以使用 `new` 关键字创建数组，然后通过给数组的独立元素赋值来将元素添加到数组中。`new` 关键字使用同名的构造函数创建 `Array` 对象的实例。
 
 示例实现：
+
 ```javascript
 var arrName = new Array();
 arrName [0] = ‘Jack’;
@@ -3733,20 +3311,25 @@ arrName [1] = ‘Alex’;
 ```
 
 **压缩数组**
+
 第二种实现也使用了 `new` 关键字。然而，在这种情况下，值作为 `Array` 对象构造器的参数分配给元素。
 
 示例实现：
+
 ```javascript
 var arrName = new Array('Jack', 'Alex');
 ```
 
 **字面量数组**
+
 在这种数组定义中，值在方括号内提供。
 
 示例实现：
+
 ```javascript
 var arrName = ['Jack','Alex'];
 ```
+
 第一种类型的优点是允许你在代码的任何地方分配值。相反，第二种和第三种实现要求你预先拥有元素列表。
 
 所有对象都有一些属性。一个非常有帮助的属性是 `length`，它是一个只读值，调用时返回数组中元素的数量。你可以在循环和条件中使用此属性。
@@ -3766,12 +3349,7 @@ var arrName = ['Jack','Alex'];
 - `splice`: 此方法在指定的数组中删除和添加元素。该方法取的参数是起始索引（系统开始删除元素的索引）、要删除元素的数量以及要添加的元素。如果传递的元素数量值为 0，则不删除任何元素。相反，如果此值大于数组的大小，则删除从起始索引到数组结束的所有元素。
 - `toString`: 此方法创建一个字符串，它是数组中存在的所有元素的逗号分隔的连接字符串。
 - `unshift`: 此方法在数组的第一个位置添加元素并返回修改后的长度值。
-- `valueOf`
-
-
-
-
-此方法返回一个字符串，该字符串是包含数组中所有值的、以逗号分隔的拼接字符串。
+- `valueOf`: 此方法返回一个字符串，该字符串是包含数组中所有值的、以逗号分隔的拼接字符串。
 
 ### 注意事项
 
@@ -3787,21 +3365,27 @@ DOM 是对象层级结构的表示。可以使用内置的 `document` 变量来�
 DOM 可用的搜索方法包括：
 
 #### `getElementById`
+
 此方法返回具有指定 ID 的第一个元素的引用。
 
 #### `getElementsByTagName`
+
 此方法返回具有指定标签名的活跃 `NodeList`。
 
 #### `getElementsByName`
+
 此方法返回具有指定名称的活跃 `NodeList`。这是单选项按钮（option buttons）的首选方法。
 
 #### `getElementsByClass`
+
 此方法返回具有指定类名的活跃 `NodeList`。然而，此方法不支持 Internet Explorer 8 及之前的版本。
 
 #### `querySelector`
+
 此方法接受 CSS 选择器作为参数并返回第一个匹配的元素。然而，此方法不支持 Internet Explorer 7 及之前的版本。
 
 #### `querySelectorAll`
+
 此方法接受 CSS 选择器作为参数并返回所有匹配的元素。因此，它返回一个静态的 `NodeList`。然而，此方法不支持 Internet Explorer 7 及之前的版本。
 
 ### 事件
@@ -3815,12 +3399,15 @@ DOM 可用的搜索方法包括：
 在 JavaScript 中，事件基于发布-订阅方法论。在创建对象时，开发者可以发布与该对象相关的事件。此外，每当使用该对象时，都可以向该对象添加事件处理器。事件处理函数会通知被订阅的事件事件已经触发。此通知包含了有关事件的信息，如鼠标位置和按键点击，以及其他与事件相关的若干其他细节。
 
 #### 捕获事件
+
 在某些情况下，事件可能会绑定到按钮点击上，而该按钮可能位于超链接内部。在这种情况下，元素是嵌套的。因此，事件在触发时会沿着 DOM 层级结构向下传递。这个过程被称为事件捕获。然而，一旦事件到达元素，它就会向上冒泡。这个过程被称为事件冒泡。事件在层级结构中的移动为开发者提供了根据需要订阅或取消传播的机会。
 
 #### 订阅事件
+
 可以使用函数 `addEventListener` 进行订阅过程。该函数需要三个参数：事件、事件发生时需要调用的函数，以及一个决定该函数是否在捕获或冒泡过程中被调用的布尔值（true – 捕获，false – 冒泡）。通常，此值被设置为 false。正如 W3C 标准中提到的，这是订阅的首选方法。
 
 示例代码：
+
 ```javascript
 var btn = document.getElementById(‘btnDownload’);
 btn.addEventListener(‘click’, initiateDownload, false);
@@ -3840,6 +3427,7 @@ btn.onclick = initiateDownload;
 ```
 
 #### 取消订阅
+
 可以使用函数 `removeEventListener` 取消订阅，它接受与 `addEventListener` 相同的参数 set。对于上一个示例中使用的 `btn` 变量，可以通过以下方式实现：
 
 ```javascript
@@ -3848,6 +3436,7 @@ btn.removeEventListener(‘click’, initiateDownload, false);
 ```
 
 #### 如何取消传播？
+
 使用函数 `stopPropagation` 执行此操作。可以通过以下方式实现：
 
 ```javascript
@@ -3861,7 +3450,9 @@ function initiateDownload (e){
 ```
 
 #### 如何阻止默认操作？
+
 可以通过以下方式使用函数 `preventDefault` 来实现：
+
 ```javascript
 var hyperlink = document.getElementById(‘linkSave’);
 hyperlink.addEventListener(‘click’, saveData, false);
@@ -3869,37 +3460,38 @@ hyperlink.addEventListener(‘click’, saveData, false);
 function saveData(e){
   //save
   e.preventDefault();
-
+}
 ```
 
 JavaScript 还提供了 `this` 关键字，如果你想访问触发事件的元素，可以使用它。
 
 #### 窗口事件
+
 当前浏览器窗口由 `window` 变量表示，它是 Window 对象的实例。与此对象相关的事件有：afterprint, beforeonload, beforeprint, error, blur, haschange, load, message, focus, online, offline, pageshow, pagehide, redo, popstate, storage, resize, unload, undo。
 
 #### 表单事件
+
 在 HTML 表单内部发生的动作触发事件有：change, blur, focus, contextmenu, forminput, formchange, invalid, input, select。
 
 #### 键盘事件
+
 键盘触发的事件有：keyup, keypress, keydown。
 
 #### 鼠标事件
+
 鼠标触发的事件有：click, drag, drop, scroll, dblclick, dragenter, dragstart, dragend, dragover, dragleave, mousemove, mousedown, mouseover, mouseout, mousewheel, mouseup。
 
 #### 媒体事件
+
 视频、图像和音频等媒体元素也会触发事件：canplay, abort, waiting, durationchange, canplaythrough, ended, emptied, loadeddata, error, loadstart, loadedmetadata, play, pause, progress, playing, ReadyState, ratechange, seeking, seeked, suspend, stalled, volumechange, timeupdate。
 
-### 第 4 章：CSS3 基础
+# 第 4 章：CSS3 基础
 
 级联样式表或 CSS 提供了网页所闻名的呈现效果。
 
 尽管 HTML 能够为网页提供基本结构，但 CSS 为开发者提供了大量的设计选项。此外，它是快速且高效的，这使得它成为更受欢迎的设计工具。
 
 CSS 已知演变自 SGML（标准化通用标记语言）。这些努力的目标是标准化网页外观的方式。该技术的最新版本是 CSS3，它是 50 个模块的集合。
-
-
-
-
 
 `CSS` 最强大的特性是它的层级联能力。简单来说，它允许网页从多个样式表中获取样式，使得后续读取的样式表中对样式的更改将覆盖从之前一个或多个一个样式表中已实现的样式。
 
@@ -3950,7 +3542,6 @@ body {
   </style>
 </head>
 <body>
-</body>
 </body>
 </html>
 ```
@@ -4148,10 +3739,6 @@ a[title = value]
 
 每个浏览器都有一个内置样式表，该表应用于所有使用此浏览器打开的网页。事实上，该样式表会在任何其他样式表之前应用。你可以使用工具中的“无障碍”选项为浏览器定义自己的样式表。然而，用户样式表是特定于浏览器的。因此，如果你打开另一个浏览器，可能无法访问你定义的样式表。
 
-
-
-
-
 在情况下，如果你希望用户定义的样式表覆盖 HTML 页面中指定的任何其他样式，可以使用 `!important` 修饰符。该修饰符为指定的样式语句设置最高优先级。示例实现：
 
 ```css
@@ -4250,7 +3837,7 @@ border: 10px;
 }
 ```
 
-## 第 5 章：HTML5 详解
+# 第 5 章：HTML5 详解
 
 本章重点介绍 HTML5 的基础知识以及如何使用它们创建高性能的新一代页面。然而，该章节解释的大多数元素包含了 HTML5 从其前身中继承的元素。本章将你在学习 HTML5 的道路上更进一步，引入了该技术新增的概念。
 
@@ -4289,38 +3876,41 @@ border: 10px;
 
 父角色类之一是地标角色类，它定义了网页上的导航地标。父角色类的子类包括：`banner`。
 
-
-
-
-
 这定义了网站特定的内容，这些内容预计不会在不同网页之间发生变化，例如页眉。
 
 `application`
+
 这定义了指定的区域是一个 Web 应用程序。
 
 `contentinfo`
+
 这定义了网页中包含的关于网页的信息，例如版权信息。这些信息大部分是页脚内容的一部分。
 
 `complementary`
+
 这定义了页面中的一个区域，该区域在脱离页面时也具有意义。
 
 `main`
+
 使用此子角色类来定义网页的主要内容。
 
 `form`
+
 这定义了网页中预期接收网页输入的区域。
 
 `search`
+
 此子角色类用于定义网页上用于获取用户搜索查询并显示搜索结果的位置。
 
 `navigation`
+
 包含导航链接的区域是此子角色类的一部分。
 
 这些角色可以用于提供语义化。然而，HTML5 包含的新元素本身就具有语义。尽管如此，某些某些 HTML5 中无法提供的实用工具，对于这些工具，可以使用 `role` 属性。
 
 ### 如何使用 `<div>` 元素控制格式？
 
-如前所述，“<div>` 元素本质上是不可见的，不会为元素提供任何语义。然而，如果你只想将其用于格式化目的，那么它是实现此目的的完美选择。
+如前所述，`<div>` 元素本质上是不可见的，不会为元素提供任何语义。然而，如果你只想将其用于格式化目的，那么它是实现此目的的完美选择。
 
 ### 如何添加主题分隔符？
 
@@ -4328,13 +3918,13 @@ border: 10px;
 
 ### 如何对内容进行注释？
 
-有几个元素可用于注释。这些包括你已经使用了很久的 `<<b>>` 和 `<i>`。然而，除了它们所表示的样式之外，它们现在有了新的含义。例如，`<<b>>` 元素表示“**粗体**”（bold）样式。此外，HTML5 增加了“对有特殊关注的文本范围，但语气、重要性级别或含义没有变化”的含义。
+有几个元素可用于注释。这些包括你已经使用了很久的 `<b>` 和 `<i>`。然而，除了它们所表示的样式之外，它们现在有了新的含义。例如，`<b>` 元素表示“**粗体**”（bold）样式。此外，HTML5 增加了“对有特殊关注的文本范围，但语气、重要性级别或含义没有变化”的含义。
 
-虽然在这一语境下使用粗体样式更有意义，但你仍然可以使用此元素来表示评论中的产品名称或关键词。同样，`<<strong>` 元素指示内容的相对重要性，而 `<i>` 表示相关内容语气或含义的变化。此外，`<<em>>` 元素用于读者将交替发读的文本。
+虽然在这一语境下使用粗体样式更有意义，但你仍然可以使用此元素来表示评论中的产品名称或关键词。同样，`<strong>` 元素指示内容的相对重要性，而 `<i>` 表示相关内容语气或含义的变化。此外，`<em>` 元素用于读者将交替发读的文本。
 
 ### 如何使用 `<abbr>` 处理缩写词和略语？
 
-在 HTML 的之前的版本中，`<acronym>` 元素用于此目的。然而，该元素已过时，用于此目的的新元素是 `<abbr>`。它是一个内联元素，通常与 `<<em>>` 和 `<<strong>>` 等内联元素一起使用。
+在 HTML 的之前的版本中，`<acronym>` 元素用于此目的。然而，该元素已过时，用于此目的的新元素是 `<abbr>`。它是一个内联元素，通常与 `<em>` 和 `<strong>` 等内联元素一起使用。
 
 ### 元素 - `<address>`
 
@@ -4342,9 +3932,9 @@ border: 10px;
 
 ### 引用与引文
 
-你可以使用 `<<blockquote>>` 元素来指示特定文本为引用，它用于长引文，而 `<q>` 用于行内引用。你可以使用 `cite` 属性或 `<cite>` 元素来提到引用的来源。
+你可以使用 `<blockquote>` 元素来指示特定文本为引用，它用于长引文，而 `<q>` 用于行内引用。你可以使用 `cite` 属性或 `<cite>` 元素来提到引用的来源。
 
-然而，在 `<q>` 和 `<<blockquote>>` 元素内部使用 `<cite>` 元素被认为是更好的方法。请记住，`<cite>` 元素只能提到作品名称，其他信息元素（如作者姓名和出版地）不包含在内。
+然而，在 `<q>` 和 `<blockquote>` 元素内部使用 `<cite>` 元素被认为是更好的方法。请记住，`<cite>` 元素只能提到作品名称，其他信息元素（如作者姓名和出版地）不包含在内。
 
 ### 如何在 HTML5 中记录代码？
 
@@ -4399,7 +3989,7 @@ This is Screen.
 
 图像和图表是任何网页内容的不可或缺的一部分。因此，每个图表也可以被视为内容单元，它可能由一个标题和一个指向其所属页面的引用组成。为了定义一个或多个图像，使用了 `<figure>` 元素。`<figurecaption>` 元素可以用于定义图表。
 
-然而，在这里需要说明，`<figure>` 元素没有赋予图表位置任何重要性，该位置与内容一同包含。然而，如果图表的位置和位置对你很重要，那么你应该考虑使用 `<<div>>` 元素。
+然而，在这里需要说明，`<figure>` 元素没有赋予图表位置任何重要性，该位置与内容一同包含。然而，如果图表的位置和位置对你很重要，那么你应该考虑使用 `<div>` 元素。
 
 ### `<summary>` 和 `<details>` 元素
 
@@ -4424,18 +4014,18 @@ This is Screen.
 
 你可能需要在文本中使用中文、日语或韩语来源的字符。为了支持这种包含，可以使用 `<ruby>` 元素。在此元素内部，其他元素如 `<bdi>` 和 `<bdo>` 用于定义文本的隔离和方向。此外，`<rt>` 和 `<rp>` 元素也可用于在 `<ruby>` 文本中放置注释或括号。
 
-
-
-
 此用例中的元素。列表的元素简单地表示为项目符号。
 
 ### 描述列表
+
 这种类型的列表使用 `<dl>` 元素声明。使用该元素，你可以提供一个包含零或多个术语的描述。此外，列表的元素使用 `<dt>` 元素声明，用于指定术语，并使用 `<dd>` 给出该术语的描述。
 
 ### 自定义列表
+
 开发者可以使用 CSS 样式来创建自定义列表。在这种情况下，可以为嵌套列表的每一层创建不同的样式规则。
 
 ### 使用表格
+
 在网页中安排和展示数据的另一种格式是表格。表格使用 `<table>` 元素声明，并以行-列格式表示数据。表格的单元格使用 `<tr>` 和 `<td>` 元素定义。`<tr>` 用于行，而 `<td>` 用于列。
 
 尽管 HTML5 表格是开发者可用的最强大的结构之一，但理解何时以及在何处最合适地使用表格是非常重要的。以下是不应使用表格的原因：为网页页创建的表格在读取到 `</table>` 标签之前不会渲染。另一方面，如果使用 `<div>` 元素创建相同的结构，内容将在读取时进行渲染。
@@ -4445,6 +4035,7 @@ This is Screen.
 表格对于辅助功能设备来说难以解释。
 
 ### 示例实现：
+
 ```html
 <table>
 <tr>
@@ -4463,11 +4054,14 @@ This is Screen.
 ```
 
 上面创建的表格看起来如下：
+
+```
 Frank
 1978
 David 1967
 Alex
 1989
+```
 
 当你观察表格时，你一定已经意识到，除非我们了所谓的表头，否则表格是不完整的。这可以使用 `<th>` 元素完成。你可以同时在垂直和水平方向上创建表头。例如，我们可以在上面使用的代码中定义以下表头：
 
@@ -4493,6 +4087,8 @@ Alex
 ```
 
 该代码生成的表格如下所示：
+
+```
 Name
 Year of Birth
 Franky 1978
@@ -4500,8 +4096,10 @@ David
 1967
 Alex
 1989
+```
 
 在上面的情况下，表头仅仅是字体大一些。然而，你可以通过样式规则按你想要对它们进行样式。可以通过以下方式实现：
+
 ```css
 th {
   background-color: black;
@@ -4515,7 +4113,7 @@ th {
 
 在创建的表格中必须添加的下一个重要内容特性是表格标题。为了定义表格标题，使用了 `<caption>` 元素。
 
-在某些情况下，你可能觉得需要对单独列设置样式。考虑到表格在 HTML 中本质上是以行为为中心的，这可能看起来是一项艰巨的任务。虽然你有 `<tr>` 元素来识别行，但没有用于识别列的 `<tc>` 元素。`<td>` 元素识别单元格。然而，你仍然可以使用 `<colgroup>` 或 `<col>` 元素对单独列设置样式。`<table>` 元素可以包含 `<colgroup>` 元素，它包含了作为该组元素一部分的列的 `<col>` 元素。此外，`<col>` 元素还有一个 `span` 属性用于定义作为该组一部分的列。下面提供了一个解释其工作原理的示例实现：
+在某些情况下，你可能觉得需要对单独列设置样式。考虑到表格在 HTML 中本质上是以行为中心的，这可能看起来是一项艰巨的任务。虽然你有 `<tr>` 元素来识别行，但没有用于识别列的 `<tc>` 元素。`<td>` 元素识别单元格。然而，你仍然可以使用 `<colgroup>` 或 `<col>` 元素对单独列设置样式。`<table>` 元素可以包含 `<colgroup>` 元素，它包含了作为该组元素一部分的列的 `<col>` 元素。此外，`<col>` 元素还有一个 `span` 属性用于定义作为该组一部分的列。下面提供了一个解释其工作原理的示例实现：
 
 ```html
 <colgroup>
@@ -4524,6 +4122,7 @@ th {
 ```
 
 用于这组列设置样式的 CSS 样式规则可能如下：
+
 ```css
 .vHeader {
   color: red;
@@ -4532,13 +4131,16 @@ th {
 
 虽然目前讨论的表格是普通表格，但 HTML5 也支持不规则表格，这可以描述为每行的列数不同的表格。`rowspan` 和 `colspan` 属性可以用于管理表格的布局。
 
-### 第 6 章：JAVASCRIPT 和 JQUERY
+# 第 6 章：JAVASCRIPT 和 JQUERY
+
 你可能已经习惯了 JavaScript 的强大。在 JavaScript 章节中，你已经学习了如何创建和添加 JavaScript 来使网页动态化。Web 开发最大的挑战是设计可以在任何浏览器上运行良好的网页元素，因为不同的浏览器对不同的元素提供支持，这使得寻找共同点变得困难。
 
 本章通过教你如何创建对象并使用它们，在 JavaScript 开发上更进了一步。此外，它向你引入了 jQuery 的概念，尝试创建兼容的代码。
 
 #### 如何创建 JavaScript 对象
+
 从数字到字符串在 JavaScript 中都是对象。因此，了解如何创建对象至关重要。创建对象的简单方法是使用对象字面量语法。以下示例说明了这一点：
+
 ```javascript
 var customer1 = {
   yearOfBirth: 2000,
@@ -4548,9 +4150,11 @@ var customer1 = {
   }
 };
 ```
+
 这段代码创建了一个对象 `customer1`，拥有成员 `name` 和 `yearOfBirth`。注意 `this` 关键字的使用，它可以正确地访问或引用对象的值。
 
 此外，你还可以使用 `new` 关键字动态地创建对象。继承的方法包括：`constructor`、`isPrototypeOf`、`hasOwnProperty`、`toLocaleString`、`propertyIsEnumerable`、`valueOf`、`toString`。一旦对象已创建，可以通过以下方式添加属性：
+
 ```javascript
 function getCustomer(myName, myYearOfBirth) {
   var newCust = new Object();
@@ -4562,25 +4166,28 @@ function getCustomer(myName, myYearOfBirth) {
   return newCust;
 }
 ```
+
 这段代码动态创建了一个对象 `newCust`。可以通过以下方式创建多个实例：
+
 ```javascript
 var cust1 = getCustomer('Alex', 1978);
 var cust2 = getCustomer('David', 1986);
 ```
+
 尽管 JavaScript 不支持特定的 `class` 关键字，但可以使用上述方法模拟类。
 
 #### 命名空间
+
 实现命名空间没有特定的 `namespace` 关键字。然而，可以使用类和对象的概念来实现。如果你将变量和方法分类到对象并作为这些对象的实例访问它们，那么你就将这些对象的名称放在全局命名空间中，并将变量的作用范围限制在它们所属的对象中。
 
 #### 实现继承
+
 通过创建对象并根据它们的共同特征对对象进行分类，可以在 JavaScript 中定义对象之间的“是”关系。例如，如果你正在为公司的员工实现一个对象。你可以为特定类型的对象创建对象，如 `managerTechnical`、`managerGeneral`、`technicalStaff`、`recruitmentStaff` 和 `officeStaff`，然后将它们分类为对象 `technicalStaff`（包含 `managerTechnical` 和 `technicalStaff` 对象）以及 `adminStaff`（包含 `managerGeneral`、`recruitmentStaff` 和 `officeStaff`）。以类似的方法，也可以定义新函数。
-
-
-
 
 `JQuery` 是一个浏览器兼容的辅助函数库，你可以在代码中使用它来尽量减少输入、实现和测试所需的精力。这些函数本质上是用 JavaScript 编写的。因此，你也可以调用 `jquery`，这是一个 JavaScript 库。
 
 `jQuery` 提供的功能列表包括：
+
 - `Attributes`（属性）：一组用于获取和设置 DOM 元素属性的方法。
 - `Ajax`：一组提供同步和异步服务器调用支持的方法。
 - `Core Methods`（核心方法）：基础的 `jQuery` 函数。
@@ -4670,7 +4277,7 @@ $(document).ready(function () {
 
 这可以放在 HTML 文档的底部。它将调用 `initializationFunction`。
 
-## 第 7 章：表单
+# 第 7 章：表单
 
 在之前的章节中，你已经学习了如何创建和操作 HTML 文档。以它们为基础，我们现在可以开始理解表单，这是网页开发中最关键且最常用的内容单元之一。
 
@@ -4679,6 +4286,7 @@ $(document).ready(function () {
 ### 网络通信
 
 在进入表单的工作之前，了解 HTTP 的一些基础知识是重要的。典型的网络通信由以下活动组成：
+
 1. 当用户浏览网页时，通过发送 `GET` HTTP 请求发起对网络服务器资源的访问请求。
 2. 服务器处理请求并使用 HTTP 协议向浏览器发送响应。
 3. 浏览器处理服务器的响应并以“表单”的形式呈现给用户。
@@ -4710,38 +4318,61 @@ $(document).ready(function () {
 该表单接收编号并返回一个显示客户详情的页面。
 
 注意的是，并不是所有元素都可以用于表单提交数据。用于此目的的元素有：
+
 - `<textarea>`：接受多行输入。
 - `<button>`：可点击的按钮，可以放置在任何内容或图像上。
+
+
+
+# HTML 表单元素
+
 - `<select>`：下拉列表，允许多选。可以使用 jQuery 识别选中的选项：`$('option:selected')`。
-- `<input type='checkbox'>`：复选框，具有 value 属性，用于设置以及读取复选框的状态。识别已勾选复选框的 jQuery 为：`$('input[type=checkbox]:checked')`。
 
+- `<input type='checkbox'>`：复选框，具有 `value` 属性，用于设置以及读取复选框的状态。识别已勾选复选框的 jQuery 为：`$('input[type=checkbox]:checked')`。
 
+- `<input type='button'>`：这是一个可点击的按钮，带有文本提示。
 
+- `<input type='datetime'>`：这是一个控件，显示日期和时间（UTC）。
 
+- `<input type='date'>`：这是一个控件，仅显示日期。
 
-- `<input type=’button’>` - 这是一个可点击的按钮，带有文本提示。
-- `<input type=’datetime’>` - 这是一个控件，显示日期和时间（UTC）。
-- `<input type=’date’>` - 这是一个控件，仅显示日期。
-- `<input type=’email’>` - 这是一个文件选择字段，带有一个浏览按钮用于上传文件。
-- `<input type=’color’>` - 这是一个颜色选择器。
-- `<input type=’hidden’>` - 这是一个隐藏输入字段。
-- `<input type=’datetime-local’>` - 这是一个控件，显示日期和时间（任意时区）。
-- `<input type=’month’>` - 这是一个月-年控件。
-- `<input type=’image’>` - 这是一个图像提交按钮。
-- `<input type=’password’>` - 这是一个密码字段，带有掩码字符。
-- `<input type=’number’>` - 这是一个数值字段。
-- `<input type=’range’>` - 这是一个控件，接受数值并定义允许的数值范围。
-- `<input type=’radio’>` - 这是一个单选按钮，具有用于设置和读取按钮状态的 value 属性。用于识别已选单选按钮的 jQuery 是 `$(‘input[type=radio]:checked’`。
-- `<input type=’search’>` - 这是一个文本字段，用于输入搜索字符串。
-- `<input type=’reset’>` -这是一个用于重置表单字段的按钮。
-- `<input type=’url’>` - 这是一个 URL 字段。
-- `<input type=’tel’>` - 这是一个电话号码字段。
-- `<input type=’submit’>` - 这是一个提交按钮。
-- `<input type=’time’>` - 这是一个控件，接受时间值。
-- `<input type=’text’>` - 这是一个单行文本字段。
-- `<input type=’week’>` - 这是一个周-年控件。
+- `<input type='email'>`：这是一个文件选择字段，带有一个浏览按钮用于上传文件。
 
-## `<label>` 
+- `<input type='color'>`：这是一个颜色选择器。
+
+- `<input type='hidden'>`：这是一个隐藏输入字段。
+
+- `<input type='datetime-local'>`：这是一个控件，显示日期和时间（任意时区）。
+
+- `<input type='month'>`：这是一个月-年控件。
+
+- `<input type='image'>`：这是一个图像提交按钮。
+
+- `<input type='password'>`：这是一个密码字段，带有掩码字符。
+
+- `<input type='number'>`：这是一个数值字段。
+
+- `<input type='range'>`：这是一个控件，接受数值并定义允许的数值范围。
+
+- `<input type='radio'>`：这是一个单选按钮，具有用于设置和读取按钮状态的 `value` 属性。用于识别已选单选按钮的 jQuery 是 `$('input[type=radio]:checked')`。
+
+- `<input type='search'>`：这是一个文本字段，用于输入搜索字符串。
+
+- `<input type='reset'>`：这是一个用于重置表单字段的按钮。
+
+- `<input type='url'>`：这是一个 URL 字段。
+
+- `<input type='tel'>`：这是一个电话号码字段。
+
+- `<input type='submit'>`：这是一个提交按钮。
+
+- `<input type='time'>`：这是一个控件，接受时间值。
+
+- `<input type='text'>`：这是一个单行文本字段。
+
+- `<input type='week'>`：这是一个周-年控件。
+
+## `<label>`
 
 它是用于向用户传达元素的含义。该元素中的文本显示在文本框内，当用户点击它时，会自动移除。你还可以指定标签的样式。
 
@@ -4751,19 +4382,19 @@ $(document).ready(function () {
 
 ## 如何触发表单提交
 
-触发时，从表单或相同 id 的表单的提交元素收集的所有数据都将使用 HTTP 方法发送到服务器。`<input>` 元素可以触发表单提交。此外，你也可以使用 JavaScript 实现此目的。为了实现这一点，你必须给相关的表单指定一个 `id`，`myFirstForm`。链接到 HTML 文档的 `default.js` 文件必须包含以下代码：
+触发时，从表单或相同 `id` 的表单的提交元素收集的所有数据都将使用 HTTP 方法发送到服务器。`<input>` 元素可以触发表单提交。此外，你也可以使用 JavaScript 实现此目的。为了实现这一点，你必须给相关的表单指定一个 `id`，`myFirstForm`。链接到 HTML 文档的 `default.js` 文件必须包含以下代码：
 
 ```javascript
 $(document).ready(function () {
-  $(‘#myFirstButton’).on(‘click’, submitMyFirstForm);
+  $('#myFirstButton').on('click', submitMyFirstForm);
 });
 
 function submitMyFirstForm() {
-  $(‘#myFirstForm’).submit();
+  $('#myFirstForm').submit();
 }
 ```
 
-如果没有给 method 属性赋值，则设置为默认的 `GET`。
+如果没有给 `method` 属性赋值，则设置为默认的 `GET`。
 
 此外，`action` 属性也会有一个默认值。因此，点击按钮将引用相同的页面。但现在 URL 将包含一个 `QueryString`，它是用户选择或输入的值的组合。例如，如果表单要求用户输入客户 ID，而用户输入了 1245，那么 `QueryString` 将是：
 
@@ -4771,14 +4402,14 @@ function submitMyFirstForm() {
 
 此 `QueryString` 将按以下方式附加到 URL：`Mywebpage.asp?customerID=1245`
 
-这里还需要提到的是，`QueryString` 是经过 URI 编码的。因此，特殊字符由特定的值表示。例如，空格表示为‘+’，感叹号（`!`）表示为 `%21`。键值对表示为 `name=value`，键值对之间用 `&` 分隔。
+这里还需要提到的是，`QueryString` 是经过 URI 编码的。因此，特殊字符由特定的值表示。例如，空格表示为 `+`，感叹号（`!`）表示为 `%21`。键值对表示为 `name=value`，键值对之间用 `&` 分隔。
 
 ## 如何序列化表单
 
 你可以使用 jQuery 的 `serialize` 方法对表单进行序列化。可以通过以下方式实现：
 
 ```javascript
-var myFormData = $(‘#myFirstForm’).serialize();
+var myFormData = $('#myFirstForm').serialize();
 ```
 
 你可以使用以下方法解码 URI 编码的字符串：
@@ -4789,25 +4420,34 @@ var data = decodeURIComponent(myFormData);
 
 ## 使用 Autofocus 属性
 
-默认情况下，焦点没有设置在表单的任何元素上。但你可以使用 `focus` 方法设置焦点，其实现方式如下：`$(‘input[name=“firstName”]’).focus();`。
+默认情况下，焦点没有设置在表单的任何元素上。但你可以使用 `focus` 方法设置焦点，其实现方式如下：`$('input[name="firstName"]').focus();`。
 
 不过，你也可以通过以下方式设置 `autofocus`：
 
 ```html
-<input type=“text” name=“firstName” autofocus=“autofocus”/>
+<input type="text" name="firstName" autofocus="autofocus"/>
 ```
 
 ## 如何使用数据提交约束
 
 表单只有在满足以下约束时才能发送数据：
-- 必须设置 name 属性。
+
+- 必须设置 `name` 属性。
+
 - 你必须设置表单提交元素的值。
+
 - `<form>` 元素必须定义了表单提交元素，且表单元素不应被禁用。
+
 - 如果实现了多个提交按钮，则只有在点击激活的提交按钮时才会提交值。
+
 - 选择勾选框。
+
 - 选择单选框。
+
 - `<option>` 元素必须有。
+
 - 如果有选择字段。
+
 - 对象的 `declare` 属性必须设置。
 
 始终记住，重置按钮不会发送任何数据。
@@ -4825,87 +4465,84 @@ var data = decodeURIComponent(myFormData);
 最简单的验证形式是在 `<select>` 元素中使用 `required` 属性。你可以通过以下方式设置该属性：
 
 ```html
-<select name=“dateOfBirth” required=“required”>
+<select name="dateOfBirth" required="required">
 ```
 
 生成的验证错误取决于浏览器，每个浏览器与用户通信的方法不同。
 
 增加了时间、日期和基于类型的输入使得验证变得简单得多，因为可以直接检查它们是否具有有效值。此外，电子邮件、数字和范围也可以轻松验证。HTML5 执行验证并与 `:valid` 或 `:invalid` 伪类进行匹配。如果验证成功，则匹配 `:valid`，否则匹配 `:invalid`。然而，如果一个值不是 `required`，它将匹配 `:optional` 伪类。此外，`placeholder` 属性也可用……
 
-## 第 8 章：网络服务
+# 第 8 章：网络服务
 
-到为止的所有章节都涉及浏览器端的编码和脚本。然而，现在是时候转向服务器端脚本了。本章重点关注在服务器端使用 JavaScript，这可以通过 Node.js 的帮助实现，以及如何处理网络服务。
+到目前为止的所有章节都涉及浏览器端的编码和脚本。然而，现在是时候转向服务器端脚本了。本章重点关注在服务器端使用 JavaScript，这可以通过 Node.js 的帮助实现，以及如何处理网络服务。
 
-### Node.js 基础
+## Node.js 基础
 
 第一步是打开任何文本编辑器并创建一个名为 `myFile.js` 的文件。在文件中，编写代码：
 
 ```javascript
-var http = require(‘http’);
+var http = require('http');
 ```
-
-
-
-
 
 ```javascript
 http.createServer(function (request, response) {
-  response.writeHead(200, {‘Content-Type’: ‘text/plain’});
-  response.end(‘Hello World!\n’);
-  console.log(‘Handled request’);
-}).listen(8080, ‘localhost’);
-console.log(‘Server running at http://localhost:8080/’);
+  response.writeHead(200, {'Content-Type': 'text/plain'});
+  response.end('Hello World!\n');
+  console.log('Handled request');
+}).listen(8080, 'localhost');
+console.log('Server running at http://localhost:8080/');
 ```
 
 第一行加载了 `http` 模块，第二行创建一个服务器对象。`createServer` 函数接收两个参数：`request` 和 `response`。所有的网站处理都通过这些函数完成。在这个示例中，响应函数通过在屏幕上写入“Hello World”来结束。
 
-`createServer` 函数返回一个服务器对象，该对象调用 `listen` 函数。该函数监听端口 `8080`，且主机的 IP 地址被设置为 `127.0.0.1`。因此，如果你的系统中安装了网络适配器，你的 Web 服务器将立即开始监听网络请求。最后一行会在屏幕上打印一行内容，让用户服务器正在运行并监听请求。
+`createServer` 函数返回一个服务器对象，该对象调用 `listen` 函数。该函数监听端口 `8080`，且主机的 IP 地址被设置为 `127.0.0.1`。因此，如果你的系统中安装了网络适配器，你的 Web 服务器将立即开始监听网络请求。最后一行会在屏幕上打印一行内容，让用户知道服务器正在运行并监听请求。
 
 一旦你创建了文件并按照上述方法保存了文件内容，你必须打开命令行提示符并输入命令：
 
-`Node myFile.js`
+`node myFile.js`
 
-现在，保持命令行提示符处于状态，你必须打开浏览器并输入地址：`http://localhost:8080/`
+现在，保持命令行提示符处于打开状态，你必须打开浏览器并输入地址：`http://localhost:8080/`
 
-一旦发送请求并收到响应，将通过控制台窗口传递给用户。如果你成功地完成了这一操作，那么你刚刚创建了你的第一个 node.js 网站。如果你想停止运行代码，只需按下 `Ctrl+C`。
+一旦发送请求并收到响应，将通过控制台窗口传递给用户。如果你成功地完成了这一操作，那么你刚刚创建了你的第一个 Node.js 网站。如果你想停止运行代码，只需按下 `Ctrl+C`。
 
 现在你已经了解了如何接收请求，是时候查看这些请求是如何被处理以及如何生成响应的。你可能需要使用 `url` 模块来解析 `QueryString`。
 
 下面的代码展示了你如何解析 URL 字符串并根据它生成响应。
 
 ```javascript
-var http = require(‘http’);
-var url = require(‘url’);
+var http = require('http');
+var url = require('url');
 http.createServer(function (request, response) {
   var url_parts = url.parse(request.url, true);
-  response.writeHead(200, {‘Content-Type’: ‘text/plain’}); response.end(‘Hey ‘ + url_parts.query.name + ‘.\n’);
-  console.log(‘Handled request from ‘ + url_parts.query.name);
-}).listen(8080, ‘localhost’);
-console.log(‘Server is running at: http://localhost:8080/’);
+  response.writeHead(200, {'Content-Type': 'text/plain'});
+  response.end('Hey ' + url_parts.query.name + '.\n');
+  console.log('Handled request from ' + url_parts.query.name);
+}).listen(8080, 'localhost');
+console.log('Server is running at: http://localhost:8080/');
 ```
 
-你可以以之前代码类似的方式测试这段代码的运行。
+你可以以与之前代码类似的方式测试这段代码的运行。
 
 ## 如何创建 Node.js 模块
 
 你可以通过编写函数形式的代码创建模块，然后从主代码中调用这些模块。
 
 ```javascript
-var myHttp = require(‘http’);
-var myUrl = require(‘url’);
+var myHttp = require('http');
+var myUrl = require('url');
 function start(){
   http.createServer(function (request, response) {
     var url_parts = url.parse(request.url, true);
-    response.writeHead(200, {‘Content-Type’: ‘text/plain’});
-    response.end(‘Hello ‘ + url_parts.query.name + ‘!\n’);
-    console.log(‘Handled request from ‘ + url_parts.query.name);
-  }).listen(8080, ‘localhost’);
-  console.log(‘Server running at http://localhost:8080/’);
+    response.writeHead(200, {'Content-Type': 'text/plain'});
+    response.end('Hello ' + url_parts.query.name + '!\n');
+    console.log('Handled request from ' + url_parts.query.name);
+  }).listen(8080, 'localhost');
+  console.log('Server running at http://localhost:8080/');
 }
 exports.start = start;
 ```
 
-当你将这段代码保存到文件中时，一个模块就被创建了。其他函数可以通过 `require` 函数使用此模块。例如，如果文件保存为 `sample1.js`，则可以在另一个函数中使用以下方式使用 `start()`：`var samplex = require(‘./sample1.js’);`
+当你将这段代码保存到文件中时，一个模块就被创建了。其他函数可以通过 `require` 函数使用此模块。例如，如果文件保存为 `sample1.js`，则可以在另一个函数中使用以下方式使用 `start()`：`var samplex = require('./sample1.js');`
 
 `sample1.start();`
 
@@ -4914,12 +4551,19 @@ exports.start = start;
 模块集合被称为应用程序。一旦发布了包，就可以被安装和使用。例如考虑一个包含不同数学模块的包。
 
 根文件夹必须包含以下内容：
+
 - `README.md`
+
 - `\packName`
+
 - `\lib`
+
   - `main.js`
+
 - `\bin`
+
   - `mod1.js`
+
   - `mod2.js`
 
 ## 创建聚合模块
@@ -4938,8 +4582,10 @@ samplePackage package
 ```
 
 在 `samplePackage` 中，可用函数有：
-- `add`: 执行两个数字相加并显示结果。
-- `sub`: 从一个数字中减去另一个数字并显示结果。
+
+- `add`：执行两个数字相加并显示结果。
+
+- `sub`：从一个数字中减去另一个数字并显示结果。
 
 ## 如何创建 package.json 文件
 
@@ -4951,10 +4597,10 @@ samplePackage package
 
 ```json
 {
-  “name”: “sample”,
-  “version”: “0.0.0”,
-  “description”: “这是一个示例文件”,
-  “main”: “main.js”,
+  "name": "sample",
+  "version": "0.0.0",
+  "description": "这是一个示例文件",
+  "main": "main.js"
 }
 ```
 
@@ -4964,21 +4610,21 @@ samplePackage package
 
 ## 如何安装和使用包
 
-发布的包可以被任何用户下载和安装。你只需要进入文件夹并输入命令：`npm install samplePackage`。这本地安装包。另一方面，如果你想全局安装包，可以使用命令：`npm install -g samplePackage`。对于全局安装，你需要使用命令 `npm link` 创建应用程序的链接。
+发布的包可以被任何用户下载和安装。你只需要进入文件夹并输入命令：`npm install samplePackage`。这会在本地安装包。另一方面，如果你想全局安装包，可以使用命令：`npm install -g samplePackage`。对于全局安装，你需要使用命令 `npm link` 创建应用程序的链接。
 
 全局安装路径是一个节点。你可以使用 `cd` 命令进入 `node_modules` 文件夹。进入该文件夹后，可以使用 `npm install contoso` 来启动安装。你现在可以编写使用该包的代码。示例如下：
 
 ```javascript
-var samplePackage = require(‘samplePackage’);
+var samplePackage = require('samplePackage');
 var finalResult = 0;
 console.log();
-finalResult = samplePackage.add (5,10);
-console.log(‘add (5,10) = ‘ + finalResult);
+finalResult = samplePackage.add(5,10);
+console.log('add (5,10) = ' + finalResult);
 console.log();
-result = samplePackage.sub (50,10);
-console.log(‘sub(50,10) = ‘ + finalResult);
+result = samplePackage.sub(50,10);
+console.log('sub(50,10) = ' + finalResult);
 console.log();
-console.log(‘done’);
+console.log('done');
 ```
 
 这段代码测试了包的模块。你可以使用 `node main` 执行代码。
@@ -4987,17 +4633,13 @@ console.log(‘done’);
 
 ## 如何使用 Express
 
-1. 第一步是安装 Node.js 并创建一个存放所有 .js 文件和项目的示例。此外，你必须安装 Express，它是一个用于 Node.js 开发的 Web 框架。
+1. 第一步是安装 Node.js 并创建一个存放所有 `.js` 文件和项目的示例。此外，你必须安装 Express，它是一个用于 Node.js 开发的 Web 框架。
 
 2. 你可以使用以下命令和指令创建一个包。
 
-1. `npm init`
+   1. `npm init`
 
-2. 你可以创建一个包含以下内容的 `myPackage.js` 文件（注：原文此处为 myPackage.js，但内容为 JSON 格式，通常对应 package.json）：
-
-
-
-
+   2. 你可以创建一个包含以下内容的 `myPackage.js` 文件（注：原文此处为 `myPackage.js`，但内容为 JSON 格式，通常对应 `package.json`）：
 
 ```json
 {
@@ -5014,19 +4656,22 @@ console.log(‘done’);
 
 为了在 `Express` 中使用该文件，必须添加依赖。
 
-此外，如果你不将其定义为私有（private），当计算机尝试加载页面时，可能会来自防火墙的错误提示。
+此外，如果你不将其定义为私有（`private`），当计算机尝试加载页面时，可能会收到来自防火墙的错误提示。
 
 3. 执行安装命令：`npm install`
 
 4. 你可以使用命令 `npm ls` 来查看该包是否存在于注册表中。
 
-4. 你可以使用以下一组指令来创建一个简单的应用程序：0. 创建一个文件 `myApp.js` 并向文件中添加以下内容：
+5. 你可以使用以下一组指令来创建一个简单的应用程序：
+
+   1. 创建一个文件 `myApp.js` 并向文件中添加以下内容：
+
 ```javascript
 var express = require('express');
 var app = express();
 ```
 
-2. 你可以使用 `myApp.Method()` 语法定义路由。
+   2. 你可以使用 `myApp.Method()` 语法定义路由。
 
 ```javascript
 app.get('/', function(request, response){
@@ -5034,20 +4679,21 @@ app.get('/', function(request, response){
 });
 ```
 
-上述代码将在接收到请求时发送响应‘Hey World!'。
+上述代码将在接收到请求时发送响应 `Hey World!`。
 
-3. 必须添加的最后一段代码是监听请求。
+   3. 必须添加的最后一段代码是监听请求。
 
 代码如下：
+
 ```javascript
 var port = 8080;
 app.listen(port);
 console.log('Listening on port: ' + port);
 ```
 
-4. 一旦文件完成，你就可以保存并使用命令 `node app` 运行它。现在如果你打开浏览器并输入地址 `http://localhost:8080/`，你将获得响应 *Hey World!*。
+   4. 一旦文件完成，你就可以保存并使用命令 `node app` 运行它。现在如果你打开浏览器并输入地址 `http://localhost:8080/`，你将获得响应 *Hey World!*。
 
-5. 你可以通过将 `app.get` 语句替换为 `app.use(express.static(__dirname + '/public'));` 为应用程序添加网页。这将允许对多个网页使用相同的代码。该概念的示例实现如下：
+   5. 你可以通过将 `app.get` 语句替换为 `app.use(express.static(__dirname + '/public'));` 为应用程序添加网页。这将允许对多个网页使用相同的代码。该概念的示例实现如下：
 
 ```html
 <!DOCTYPE html>
@@ -5065,6 +4711,7 @@ console.log('Listening on port: ' + port);
 ```
 
 请注意 `action` 属性被设置为 `/submitHey`。换句话说，该资源会在服务器调用，用于处理通过 `QueryString` 传递它的数据。`myApp.js` 文件应包含以下内容：
+
 ```javascript
 var express = require('express');
 var app = express();
@@ -5082,9 +4729,9 @@ console.log('Listening on port: ' + port);
 
 该应用可以按照上述方式运行。
 
-5. 可以使用 *formidable* 包来回传数据。虽然之前的方法使用了 GET 方法，而此方法使用 POST 方法。
+6. 可以使用 *formidable* 包来回传数据。虽然之前的方法使用了 GET 方法，而此方法使用 POST 方法。
 
-1. 为了说明其工作原理，创建一个如下 HTML：
+   1. 为了说明其工作原理，创建一个如下 HTML：
 
 ```html
 <!DOCTYPE html>
@@ -5101,9 +4748,10 @@ console.log('Listening on port: ' + port);
 </html>
 ```
 
-2. 现在，在命令行提示符中，你需要给出一个命令来获取 `formidable` 包，即：`npm info formidable`
+   2. 现在，在命令行提示符中，你需要给出一个命令来获取 `formidable` 包，即：`npm info formidable`
 
-3. 你也可以按照如下方式修改 `package.jason` 文件：
+   3. 你也可以按照如下方式修改 `package.json` 文件：
+
 ```json
 {
   "name": "HelloExpress",
@@ -5123,11 +4771,12 @@ console.log('Listening on port: ' + port);
 }
 ```
 
-4. 现在你可以在命令行提示符中输入以下命令来安装 *formidable* 包：`npm install`
+   4. 现在你可以在命令行提示符中输入以下命令来安装 *formidable* 包：`npm install`
 
 此命令在本地安装包。因此，你需要在 `myApp.js` 中添加一行允许文件引用该包：`var formidable = require('formidable');`
 
-5. 示例 `myApp.js` 文件应该像这样所示：
+   5. 示例 `myApp.js` 文件应该像这样所示：
+
 ```javascript
 var express = require('express');
 var app = express();
@@ -5144,23 +4793,19 @@ app.post('/SubmitHeyPost', function (request, response) {
 // ... remaining logic
 ```
 
-
-
-
-
-这种类型的 Web 服务也被大型 Web 服务。此类服务的示例是 `WCF` 或 `Windows Communication Foundation`（Windows 通信框架）。任意 Web 服务通过不将其操作仅映射到协议的某些方面，扩展了其运行范围。
+这种类型的 Web 服务也被大型 Web 服务所使用。此类服务的示例是 `WCF` 或 `Windows Communication Foundation`（Windows 通信框架）。任意 Web 服务通过不将其操作仅映射到协议的某些方面，扩展了其运行范围。
 
 因此，它们提供了更多功能，包括许多安全机制和消息路由。
 
 这种类型的 Web 服务具有典型的接口格式，客户端可以使用它来读取和解析信息。因此，客户端可以立即调用该服务。一种常见的 API 格式是 `Web Services Description Language`（`WSDL`）。对于任意 Web 服务，客户端必须在 `SOAP`（简单对象访问协议）消息的帮助下组装其请求。这种 Web 服务不使用 `HTTP` 协议，而是使用 `TCP`。
 
-### 如何使用 Node.js 创建 RESTful Web 服务
+## 如何使用 Node.js 创建 RESTful Web 服务
 
 在之前提到的示例中，`samplePackage` 可以暴露为 Web 服务。
 
 可以在该包上使用 `GET` 方法并将操作作为参数传递。该包的一个良好 RESTful 实现可能像这样：`http://localhost:8080/samplePackage?operation=add&x=1&y=5`
 
-### 如何使用 AJAX 调用 Web 服务
+## 如何使用 AJAX 调用 Web 服务
 
 可以使用 `AJAX` 异步调用 Web 服务，`AJAX` 实际上是 `JavaScript`。`AJAX` 并不是向服务器调用并重绘 HTML 文档，而是直接回调服务器。在这种情况下，屏幕不会重绘。下面给出了一个示例实现：
 
@@ -5187,18 +4832,18 @@ app.post('/SubmitHeyPost', function (request, response) {
 
 必须修改 `default.js` 文件以包含处理这些功能所需的代码。务必检查 `jQuery` 的版本以及它是否与你在 `default.js` 文件中提到的版本名称匹配。此处使用的 `<form>` 元素仅用于排列数据格式的方法，数据实际上并没有通过表单发送到服务器。`JavaScript` 和 `jQuery` 访问输入的数据并执行 `AJAX` 调用。
 
-### 如何使用 XMLHttpRequest
+## 如何使用 XMLHttpRequest
 
 实际执行 `AJAX` 用的对象是 `XMLHttpRequest`，它可以用于发送/接收 XML 以及其他类型的数据。该对象可以使用以下方式使用：
 
 ```javascript
 var xmlhttp=new XMLHttpRequest();
-xmlhttp.open("GET"," "/add?x=50&y=1",false);
+xmlhttp.open("GET","/add?x=50&y=1",false);
 xmlhttp.send();
 var xmlDoc=xmlhttp.responseXML;
 ```
 
-第一行创建对象，第二行设置使用带有指定 `QueryString` 的 `GET` 方法，使用 `'false'` 表示操作必须同步方式执行。下一行发送请求，最后一行将响应设置给变量，稍后可以读取并解析以处理响应。
+第一行创建对象，第二行设置使用带有指定 `QueryString` 的 `GET` 方法，使用 `false` 表示操作必须以同步方式执行。下一行发送请求，最后一行将响应设置给变量，稍后可以读取并解析以处理响应。
 
 然而，生成的输出是 `JSON` 而不是 `XML`，因此 `default.js` 文件必须更改为：
 
@@ -5227,7 +4872,7 @@ node app
 
 该命令启动 Web 服务，之后你就可以使用链接打开浏览器窗口：`http://localhost:8080/SamplePage.html`
 
-这段代码现在可以运行了。但是，你可能希望以异步方式执行 `AJAX` 调用。为了实现，你必须找到 `open` 方法并将 `'false'` 参数更改为 `'true'`。此外，你还需要订阅 `onreadystateschange` 来管理异步调用。这可以通过以下方式实现：
+这段代码现在可以运行了。但是，你可能希望以异步方式执行 `AJAX` 调用。为了实现，你必须找到 `open` 方法并将 `false` 参数更改为 `true`。此外，你还需要订阅 `onreadystatechange` 来管理异步调用。这可以通过以下方式实现：
 
 ```javascript
 function addTwoNum () {
@@ -5246,14 +4891,13 @@ function addTwoNum () {
 ```
 
 状态有：
-0 - 未初始化
-1 - 已加载
-2 - 交互完成
-4 - 已完成
 
+- 0 - 未初始化
 
+- 1 - 已加载
 
+- 2 - 交互完成
 
+- 4 - 已完成
 
-- Java Applets
-
+## Java Applets

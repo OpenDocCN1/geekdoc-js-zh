@@ -1,14 +1,11 @@
+
 # JavaScript 入门指南
-
-
-
 
 我想将这本书献给使用它的的学生们。祝你们未来职业取得成功，并希望你们永停止学习。
 
+## 概述
 
-# 概述
-
-## 什么是 JavaScript？
+### 什么是 JavaScript？
 
 JavaScript 是一种动态计算机编程语言。它是轻量级的，最常用作网页的一部分，其实现方式允许客户端脚本与用户交互并创建动态页面。它是一种具有面向对象能力的解释型编程语言。
 
@@ -22,11 +19,11 @@ JavaScript 最初被称为 `LiveScript`，但 Netscape 将其更名为 JavaScrip
 - 与 HTML 互补并集成。
 - 开放且跨平台
 
-## 客户端 JavaScript
+### 客户端 JavaScript
 
 客户端 JavaScript 是该语言最常见的形式。脚本应该包含在 HTML 中或通过 HTML 引用。
 
-## JavaScript 的优势
+### JavaScript 的优势
 
 使用 JavaScript 的优点是：
 
@@ -35,7 +32,7 @@ JavaScript 最初被称为 `LiveScript`，但 Netscape 将其更名为 JavaScrip
 - **增强交互性**
 - **更丰富的界面**
 
-## JavaScript 的局限性
+### JavaScript 的局限性
 
 我们不能将 JavaScript 视为完全
 
@@ -44,7 +41,7 @@ JavaScript 最初被称为 `LiveScript`，但 Netscape 将其更名为 JavaScrip
 
 JavaScript 是一种轻量级的解释型编程语言，允许你使用简单的文本编辑器在静态页面中构建交互。
 
-## JavaScript 开发工具
+### JavaScript 开发工具
 
 JavaScript 的主要优点之一是不需要贵的开发工具。你可以从 Notepad 等简单的文本编辑器开始。
 
@@ -54,7 +51,7 @@ JavaScript 的主要优点之一是不需要贵的开发工具。你可以从 No
 - **Macromedia Dreamweaver MX**：专业网页领域流行的 HTML 和 JavaScript 编辑器。它提供了许多实用的 JavaScript 组件，与数据库良好集成，并符合 XHTML 和 XML 等标准。
 - **Macromedia HomeSite 5**：HomeSite 5 是 Macromedia 受欢迎的 HTML 和 JavaScript 编辑器，可用于个人网站。
 
-## 现在的 JavaScript？
+### 现在的 JavaScript？
 
 ECMAScript 第 5 版标准是多年来的首次更新。JavaScript 2.0 符合 ECMAScript 第 5 版标准，两者之间的差异极小。
 
@@ -62,7 +59,7 @@ JavaScript 2.0 的规范可以在以下网站找到：`http://www.ecmascript.org
 
 今天，Netscape 的 JavaScript 和微软的 JScript 都符合 ECMAScript 标准，尽管这两种语言仍然支持标准之外的功能。
 
-### 语法
+#### 语法
 
 JavaScript 可以通过放在网页 `<script>... </script>` HTML 标签内的 JavaScript 语句来实现。
 
@@ -81,10 +78,6 @@ JavaScript 代码
 script 标签带有两个重要的属性：
 
 - **Language**：此属性指定你正在使用的脚本语言。通常，它的值为 `javascript`。尽管最新版本的 HTML（及其继任者 XHTML）已经废弃了该属性的使用。
-
-
-
-
 -   **Type** − 此属性是目前推荐用于指示所使用的脚本语言的，其值应设置为 "text/javascript"。
 
 因此，你的 JavaScript 段将如下所示 −
@@ -95,7 +88,7 @@ JavaScript code
 </script>
 ```
 
-## 你的第一段 JavaScript 代码
+### 你的第一段 JavaScript 代码
 
 让我们通过一个示例来打印 "Hello World"。我们添加了一个可选的 HTML 注释并包裹在我们的 JavaScript 代码周围。这是为了防止代码被不支持 JavaScript 的浏览器执行。注释以 `//-->` 结束。在这里，`//` 表示 JavaScript 中的注释，因此我们添加了它以防止浏览器将 HTML 注释的结束标记读取为 JavaScript 代码。接下来，我们调用了函数 `document.write`，它会向我们的 HTML 文档写入一个字符串。
 
@@ -117,11 +110,11 @@ document.write("Hello World!")
 
 Hello World!
 
-## 空格与换行
+### 空格与换行
 
 JavaScript 会忽略出现在 JavaScript 程序中的空格、制表符和换行符。你可以在程序中自由使用空格、制表符和换行符，并自由以整洁一致的方式格式化和缩进你的程序，使代码易于阅读和理解。
 
-## 分号可选
+### 分号可选
 
 JavaScript 中的简单语句通常跟着一个分号字符，就像在 C、C++ 和 Java 中一样。然而，如果你的每个语句都单独成行，JavaScript 允许你省略此分号。例如，以下代码可以在不写分号的情况下编写。
 
@@ -146,7 +139,7 @@ var1 =  10; var2 =  20;
 
 **注意** − 使用分号是一个良好的编程习惯。
 
-## 大写敏感
+### 大写敏感
 
 JavaScript 是一种大小写敏感的语言。这意味着语言关键字、变量、函数名和任何其他标识符必须始终使用一致的大小写进行输入。
 
@@ -154,7 +147,7 @@ JavaScript 是一种大小写敏感的语言。这意味着语言关键字、变
 
 **注意** − 在 JavaScript 中编写变量和函数名时应小心。
 
-## JavaScript 中的注释
+### JavaScript 中的注释
 
 JavaScript 同时支持 C 风格和 C++ 风格的注释，因此 −
 
@@ -163,7 +156,7 @@ JavaScript 同时支持 C 风格和 C++ 风格的注释，因此 −
 -   JavaScript 还能识别 HTML 注释开启序列 `<!--`。JavaScript 将其视为单行注释，就像处理 `//` 注释一样。
 -   HTML 注释结束序列 `-->` 不被 JavaScript 识别，因此应写为 `-->`。
 
-### 示例
+#### 示例
 
 下面的示例了如何在 JavaScript 中使用注释。
 
@@ -183,7 +176,7 @@ JavaScript 同时支持 C 风格和 C++ 风格的注释，因此 −
 
 所有现代浏览器都内置了对 JavaScript 的支持。经常，你可能需要手动启用或禁用此支持。本章解释了在你的浏览器中 Internet Explorer、Firefox、Chrome 和 Opera 中启用和禁用 JavaScript 支持的步骤。
 
-## Internet Explorer 中的 JavaScript
+### Internet Explorer 中的 JavaScript
 
 是在 Internet Explorer 中开启或关闭 JavaScript 的简单步骤 −
 
@@ -196,7 +189,7 @@ JavaScript 同时支持 C 风格和 C++ 风格的注释，因此 −
 
 要在 Internet Explorer 中禁用 JavaScript 支持，需要在 **Active scripting（活动脚本）** 下选择 **Disable（禁用）** 单选按钮。
 
-## Firefox 中的 JavaScript
+### Firefox 中的 JavaScript
 
 是在 Firefox 中开启或关闭 JavaScript 的步骤 −
 
@@ -208,7 +201,7 @@ JavaScript 同时支持 C 风格和 C++ 风格的注释，因此 −
 
 如果 `javascript.enabled` 为 true；点击 **toggle** 后它将变为 false。如果 JavaScript 被禁用；点击切换 后它将启用。
 
-## Chrome 中的 JavaScript
+### Chrome 中的 JavaScript
 
 是在 Chrome 中开启或关闭 JavaScript 的步骤 −
 
@@ -219,7 +212,7 @@ JavaScript 同时支持 C 风格和 C++ 风格的注释，因此 −
 -   在 **Privacy（隐私）** 部分，点击 **Content（内容）**。
 -   在 "Javascript" 部分，选择 "Do not allow any site to run（不允许任何网站运行）" 或 "Allow all sites to run（允许所有网站运行）"。
 
-## Opera 中的 JavaScript
+### Opera 中的 JavaScript
 
 是在 Opera 中开启或关闭 JavaScript 的步骤 −
 
@@ -264,7 +257,7 @@ Sorry...需要 JavaScript
 
 在接下来的部分，我们将查看如何以不同的方式在 HTML 文件中放置 JavaScript。
 
-## `<head>.../head>` 部分
+### `<head>.../head>` 部分
 
 如果你希望在某些事件运行时脚本（例如当用户点击某处时），你将把脚本放在 head 中：
 
@@ -285,7 +278,7 @@ alert("Hello World")
 </html>
 ```
 
-## `<body>.../</body>` 部分
+### `<body>.../</body>` 部分
 
 如果你需要在页面加载时运行脚本，以便在页面中生成内容，那么脚本位于文档的 `<body>` 部分。在这种情况下，你将使用 JavaScript 定义任何函数。请看以下代码。
 
@@ -303,9 +296,6 @@ document.write("Hello World")
 </body>
 </html>
 ```
-
-
-
 
 你可以将 JavaScript 代码分别存放在 `<head>` 和 `<body>` 部分，如下所示 −
 
@@ -469,6 +459,7 @@ function checkscope() {
 | delete | implements | short | while |
 | do | import | static | with |
 | double | in | super | |
+| double | in | super | |
 
 这些词不能作为变量名。
 
@@ -503,9 +494,6 @@ JavaScript 支持以下算术运算符 −
 | 7 | `--` (自减) 将整数值减一 **例如**：`A--` 得到 9 |
 
 **注意** − 加法运算符 (+) 既适用于数值，也适用于字符串。例如 `"a" + 10` 将得到 `"a10"`。
-
-
-
 
 以下代码展示了如何在 JavaScript 中使用算术运算符。
 
@@ -578,8 +566,6 @@ a + b + c = 43Test
 JavaScript 支持以下比较运算符 −
 
 假设变量 `A` 存储值为 10，变量 `B` 存储值为 20，则 −
-
-
 
 | 序号 | 运算符与描述 |
 | :--- | :--- |
@@ -813,13 +799,6 @@ JavaScript 支持以下赋值运算符 −
  | 序号 | 运算符与描述 |
 | :--- | :--- |
 | 1 | `=` (简单赋值 )将右侧操作数的值赋给左侧操作数。例：`C = A + B` 将 A + B 的值赋给 `C` |
-
-]
-
-
-
-| No | Operator | Description |
-| :--- | :--- | :--- |
 | 2 | `+=` | (加赋值) 将右操作数加到左操作数，并将结果赋值给左操作数。**例：** `C += A` 等于 `C = C + A` |
 | 3 | `-=` | (减赋值) 从左操作数中减去右操作数，并将结果赋值给左操作数。**例：** `C -= A` 等于 `C = C - A` |
 | 4 | `*=` | (乘赋值) 将右操作数与左操作数相乘并将结果赋值给左操作数。**例：** `C *= A` 等于 `C = C * A` |
@@ -874,11 +853,17 @@ document.write(linebreak);
 ### 输出
 
 Value of a => (a = b) => 10
+
 Value of a => (a += b) => 20
+
 Value of a => (a -= b) => 10
+
 Value of a => (a *= b) => 100
+
 Value of a => (a /= b) => 10
+
 Value of a => (a %= b) => 0
+
 将变量设置为不同的值和不同的运算符，然后尝试...
 
 ## 杂运算符
@@ -923,7 +908,9 @@ document.write(linebreak);
 ### 输出
 
 ((a > b) ? 100 : 200) => 200
+
 ((a < b) ? 100 : 200) => 100
+
 将变量设置为不同的值和不同的运算符，然后尝试...
 
 ### typeof 运算符
@@ -986,10 +973,8 @@ document.write(linebreak);
 </body>
 </html>
 ```
+
 *(注：由于原文中包含大量重复且混乱的格式描述，译文已根据要求提取了核心逻辑。)*
-
-
-
 
 ```
 如果 `expression 2` 为真，则执行语句(s)
@@ -1011,32 +996,45 @@ document.write(linebreak);
 尝试以下代码来学习如何在 JavaScript 中实现 `if-else-if` 语句。
 
 ```html
+
 <html>
 
 <body>
 
 <script  type  =  "text/javascript">
+
 <!--
 
 var book =  "maths";
 
 if( book ==  "history"  ){
+
 document.write("<b>History Book</b>");
+
 }  else  if( book ==  "maths"  ){
+
 document.write("<b>Maths Book</b>");
+
 }  else  if( book ==  "economics"  ){
+
 document.write("<b>Economics Book</b>");
+
 }  else  {
+
 document.write("<b>Unknown Book</b>");
+
 }
 
 //-->
+
 </script>
 
 <p>将变量设置为不同的值，然后尝试...</p>
 
 </body>
+
 </html>
+
 ```
 
 ### 输出
@@ -1062,16 +1060,27 @@ Maths Book
 `switch` 语句的目标是给出一个表达式进行求值，并根据表达式的值执行几个不同的语句。解释器会将表达式的值与每个 `case` 进行比较，直到找到匹配项为止。如果没有匹配项，则将使用 `default` 条件。
 
 ```javascript
+
 switch (expression) {
+
 case condition 1: statement(s)
+
 break;
+
 case condition 2: statement(s)
+
 break;
+
 ...
+
 case condition n: statement(s)
+
 break;
+
 default: statement(s)
+
 }
+
 ```
 
 `break` 语句表示特定 case 的结束。如果省略了它们，解释器将继续执行后续每个 case 中的每个语句。
@@ -1083,11 +1092,13 @@ default: statement(s)
 尝试以下示例来实现实现 switch-case 语句。
 
 ```html
+
 <html>
 
 <body>
 
 <script  type  =  "text/javascript">
+
 <!--
 
 var grade =  'A';
@@ -1095,28 +1106,43 @@ var grade =  'A';
 document.write("Entering switch block<br />");
 
 switch  (grade)  {
+
 case  'A': document.write("Good job<br />");
+
 break;
+
 case  'B': document.write("Pretty good<br />");
+
 break;
+
 case  'C': document.write("Passed<br />");
+
 break;
+
 case  'D': document.write("Not so good<br />");
+
 break;
+
 case  'F': document.write("Failed<br />");
+
 break;
+
 default: document.write("Unknown grade<br />")
+
 }
 
 document.write("Exiting switch block");
 
 //-->
+
 </script>
 
 <p>将变量设置为不同的值，然后尝试...</p>
 
 </body>
+
 </html>
+
 ```
 
 ### 输出
@@ -1132,11 +1158,13 @@ Exiting switch block
 Break 语句在 switch-case 语句中起着重要作用。尝试以下没有使用任何 break 语句的 switch-case 语句。
 
 ```html
+
 <html>
 
 <body>
 
 <script  type  =  "text/javascript">
+
 <!--
 
 var grade =  'A';
@@ -1144,23 +1172,33 @@ var grade =  'A';
 document.write("Entering switch block<br />");
 
 switch  (grade)  {
+
 case  'A': document.write("Good job<br />");
+
 case  'B': document.write("Pretty good<br />");
+
 case  'C': document.write("Passed<br />");
+
 case  'D': document.write("Not so good<br />");
+
 case  'F': document.write("Failed<br />");
+
 default: document.write("Unknown grade<br />")
+
 }
 
 document.write("Exiting switch block");
 
 //-->
+
 </script>
 
 <p>将变量设置为不同的值，然后尝试...</p>
 
 </body>
+
 </html>
+
 ```
 
 ### 输出
@@ -1202,9 +1240,13 @@ JavaScript 中最基本的循环是 `while` 循环，将在本章中讨论。`wh
 JavaScript 中 `while` 循环的语法如下：
 
 ```javascript
+
 while (expression) {
+
 如果表达式为真，则执行语句(s)
+
 }
+
 ```
 
 ### 示例
@@ -1212,11 +1254,13 @@ while (expression) {
 尝试以下示例来实现 while 循环。
 
 ```html
+
 <html>
 
 <body>
 
 <script  type  =  "text/javascript">
+
 <!--
 
 var count = 0;
@@ -1224,19 +1268,25 @@ var count = 0;
 document.write("Starting Loop ");
 
 while(count < 10) {
+
 document.write("Current Count : " + count + "<br />");
+
 count++;
+
 }
 
 document.write("Loop stopped!");
 
 //-->
+
 </script>
 
 <p>将变量设置为不同的值，然后尝试...</p>
 
 </body>
+
 </html>
+
 ```
 
 ### 输出
@@ -1280,9 +1330,13 @@ Loop stopped!
 JavaScript 中 `do...while` 循环的语法如下：
 
 ```javascript
+
 do {
+
 语句(s);
+
 } while (expression);
+
 ```
 
 **注意**：不要忘记 `do...while` 循环末尾的分号。
@@ -1292,11 +1346,13 @@ do {
 尝试以下示例学习如何在 JavaScript 中实现 `do...while` 循环。
 
 ```html
+
 <html>
 
 <body>
 
 <script  type  =  "text/javascript">
+
 <!--
 
 var count = 0;
@@ -1304,20 +1360,27 @@ var count = 0;
 document.write("Starting Loop<br />");
 
 do {
+
 document.write("Current Count : " + count + "<br />");
+
 count++;
+
 }
+
 while(count < 5);
 
 document.write ("Loop stopped!");
 
 //-->
+
 </script>
 
 <p>将变量设置为不同的值，然后尝试...</p>
 
 </body>
+
 </html>
+
 ```
 
 ### 输出
@@ -1357,9 +1420,13 @@ JavaScript `for` 循环的流程图如下：
 JavaScript `for` 循环的语法如下：
 
 ```javascript
+
 for (initialization; test condition; iteration statement) {
+
 如果测试条件为真，则执行语句(s)
+
 }
+
 ```
 
 ### 示例
@@ -1367,42 +1434,54 @@ for (initialization; test condition; iteration statement) {
 尝试以下示例学习 JavaScript 中的 `for` 循环是如何工作的。
 
 ```html
+
 <html>
 
 <body>
 
 <script  type  =  "text/javascript">
+
 <!--
 
 var count;
 
 for (count = 0; count < 10; count++) {
+
 document.write("Current Count : " + count + "<br />");
+
 }
 
 document.write("Loop stopped!");
 
 //-->
+
 </script>
 
 <p>将变量设置为不同的值，然后尝试...</p>
 
 </body>
+
 </html>
+
 ```
 
 
 
 
 ```javascript
+
 document.write("Starting Loop"  +  "<br />");
 
 for(count =  0; count <  10; count++)  {
+
   document.write("Current Count : "  + count );
+
   document.write("<br />");
+
 }
 
 document.write("Loop stopped!");
+
 ```
 
 <p>将变量设置为不同的值并尝试...</p>
@@ -1432,9 +1511,13 @@ Loop stopped!
 `for..in` 循环的语法如下 −：
 
 ```javascript
+
 for (variablename in object) {
+
   要执行的语句或块
+
 }
+
 ```
 
 在每次迭代中，`object` 中的一个属性会被赋值给 `variablename`，此循环会一直持续直到对象的所有属性都被遍历完毕。
@@ -1443,22 +1526,39 @@ for (variablename in object) {
 尝试以下示例来实现 `for-in` 循环。它会打印网络浏览器的 `Navigator` 对象。
 
 ```html
+
 <html>
+
 <body>
+
 <script type  =  "text/javascript">
+
 <!--
+
 var aProperty;
+
 document.write("Navigator Object Properties<br /> ");
+
 for  (aProperty in navigator)  {
+
   document.write(aProperty);
+
   document.write("<br />");
+
 }
+
 document.write ("Exiting from the loop!");
+
 //-->
+
 </script>
+
 <p>将变量设置为不同的对象并尝试...</p>
+
 </body>
+
 </html>
+
 ```
 
 ### 输出
@@ -1516,25 +1616,45 @@ break 语句的流程图所示 −
 
 
 ```html
+
 <html>
+
 <body>
+
 <script type  =  "text/javascript">
+
 <!--
+
 var x =  1;
+
 document.write("Entering the loop<br /> ");
+
 while  (x <  20)  {
+
   if  (x ==  5)  {
+
     break;  // 完全跳出循环
+
   }
+
   x = x +  1;
+
   document.write( x +  "<br />");
+
 }
+
 document.write("Exiting the loop!<br /> ");
+
 //-->
+
 </script>
+
 <p>将变量设置为不同的值并尝试...</p>
+
 </body>
+
 </html>
+
 ```
 
 ### 输出
@@ -1549,31 +1669,51 @@ Exiting the loop!
 我们已经见过 `break` 语句在 switch 内部的用法。
 
 ## continue 语句
-`continue` 语句告诉解释器立即开始循环的下一次迭代并跳过剩余代码块。当遇到 `continue` 语句时，程序流会立即移动到循环检查表达式，如果条件仍为真，则开始下一次迭代，否则控制将退出循环。
+`continue` 语句告诉解释器立即开始循环的下一次迭代并跳过剩余代码块。当遇到 `continue` 语句时，程序流会立即移动到循检查表达式，如果条件仍为真，则开始下一次迭代，否则控制将退出循环。
 
 ### 示例
 此示例说明了在 while 循环中使用 `continue` 语句。请注意当变量 `x` 中的索引达到 5 时，如何使用 `continue` 语句跳过打印 −
 
 ```html
+
 <html>
+
 <body>
+
 <script type  =  "text/javascript">
+
 <!--
+
 var x =  1;
+
 document.write("Entering the loop<br /> ");
+
 while  (x <  10)  {
+
   x = x +  1;
+
   if  (x ==  5)  {
+
     continue;
+
   }
+
   document.write( x +  "<br />");
+
 }
+
 document.write("Exiting the loop!<br /> ");
+
 //-->
+
 </script>
+
 <p>将变量设置为不同的值并尝试...</p>
+
 </body>
+
 </html>
+
 ```
 
 ### 输出
@@ -1601,13 +1741,21 @@ Exiting the loop!
 基本语法所示。
 
 ```html
+
 <script type="text/javascript">
+
 <!--
+
 function functionname(parameter-list) {
+
 statements
+
 }
+
 //-->
+
 </script>
+
 ```
 
 ### 示例
@@ -1615,13 +1763,21 @@ statements
 尝试以下示例。它定义了一个名为 `sayHello` 的函数，不接受任何参数——
 
 ```html
+
 <script type  = "text/javascript">
+
 <!--
+
 function sayHello()  {
+
 alert("Hello there");
+
 }
+
 //-->
+
 </script>
+
 ```
 
 ## 调用函数
@@ -1629,22 +1785,39 @@ alert("Hello there");
 要在脚本的后续某个地方调用函数，你只需要像下面的代码所示编写该函数的名称即可。
 
 ```html
+
 <html>
+
 <head>
+
 <script type = "text/javascript">
+
 function sayHello()  {
+
 document.write ("Hello there!");
+
 }
+
 </script>
+
 </head>
+
 <body>
+
 <p>点击下面的按钮调用函数</p>
+
 <form>
+
 <input type = "button" onclick = "sayHello()" value = "Say Hello">
+
 </form>
+
 <p>在 write 方法中使用不同的文本然后尝试...</p>
+
 </body>
+
 </html>
+
 ```
 
 ### 输出
@@ -1658,22 +1831,39 @@ document.write ("Hello there!");
 尝试以下示例。我们在这里修改了 `sayHello` 函数。现在它接受两个参数。
 
 ```html
+
 <html>
+
 <head>
+
 <script type = "text/javascript">
+
 function sayHello(name, age)  {
+
 document.write (name + " is "  + age + " years old.");
+
 }
+
 </script>
+
 </head>
+
 <body>
+
 <p>点击下面的按钮调用函数</p>
+
 <form>
+
 <input type = "button" onclick = "sayHello('Zara', 7)" value = "Say Hello">
+
 </form>
+
 <p>在函数内部使用不同的参数然后尝试...</p>
+
 </body>
+
 </html>
+
 ```
 
 ### 输出
@@ -1689,29 +1879,53 @@ JavaScript 函数可以有一个可选的 `return` 语句。如果你想从函�
 尝试以下示例。它定义了一个接受两个参数的函数，并在调用程序中返回结果之前对它们进行拼接。
 
 ```html
+
 <html>
+
 <head>
+
 <script type = "text/javascript">
+
 function concatenate(first, last)  {
+
 var full;
+
 full = first + last;
+
 return full;
+
 }
+
 function secondFunction()  {
+
 var result;
+
 result = concatenate('Zara', 'Ali');
+
 document.write (result );
+
 }
+
 </script>
+
 </head>
+
 <body>
+
 <p>点击下面的按钮调用函数</p>
+
 <form>
+
 <input type = "button" onclick = "secondFunction()" value = "Call Function">
+
 </form>
+
 <p>在函数内部使用不同的参数然后尝试...</p>
+
 </body>
+
 </html>
+
 ```
 
 ### 输出
@@ -1745,23 +1959,41 @@ JavaScript 与 HTML 的交互通过事件处理，这些事件会在用户或浏
 尝试以下示例。
 
 ```html
+
 <html>
+
 <head>
+
 <script type = "text/javascript">
+
 <!--
+
 function sayHello()  {
+
 alert("Hello World")
+
 }
+
 //-->
+
 </script>
+
 </head>
+
 <body>
+
 <p>点击下面的按钮查看结果</p>
+
 <form>
+
 <input type = "button" onclick = "sayHello()" value = "Say Hello" />
+
 </form>
+
 </body>
+
 </html>
+
 ```
 
 ### 输出
@@ -1775,22 +2007,39 @@ alert("Hello World")
 下面的示例展示了如何使用 `onsubmit`。在这里 `validate()` 在表单之前被触发。
 
 ```html
+
 <html>
+
 <head>
+
 <script type = "text/javascript">
+
 <!--
+
 function validate()  {
+
 all here
+
 }
+
 //-->
+
 </script>
+
 </head>
+
 <body>
+
 <form>
+
 <input type = "button" onsubmit = "validate()" value = "Submit" />
+
 </form>
+
 </body>
+
 </html>
+
 ```
 
 ## onmouseover 和 onmouseout
@@ -1798,33 +2047,52 @@ all here
 这两个事件类型可以帮助你为图像甚至文本创建效果。`onmouseover` 事件在你将鼠标移到任何元素上时触发，而 `onmouseout` 在你移出时触发。尝试以下示例。
 
 ```html
+
 <html>
+
 <head>
+
 <script type = "text/javascript">
+
 <!--
+
 function over()  {
+
 document.write ("Mouse Over");
+
 }
+
 function out()  {
+
 document.write ("Mouse Out");
+
 }
+
 //-->
+
 </script>
+
 </head>
+
 <body>
+
 <p>将鼠标移入 div 内查看结果：</p>
+
 <div onmouseover = "over()" onmouseout = "out()">
+
 <h2> 在 div 内部</h2>
+
 </div>
+
 </body>
+
 </html>
-```
 
-### 输出
 
-## HTML5 标准事件
 
-这里列出了标准的 HTML5 事件供参考。这里的 script 表示针对事件执行的 JavaScript 函数。
+### HTML5 标准事件
+
+这里列出了标准的 HTML5 事件供参考。这里的 `script` 表示针对事件执行的 JavaScript 函数。
 
 | 属性 | 值 | 说明 |
 | :--- | :--- | :--- |
@@ -1847,10 +2115,6 @@ document.write ("Mouse Out");
 | ondragover | script | 拖放操作开始时触发 |
 | ondragstart | script | 拖放操作开始时触发 |
 | ondrop | script | 拖放元素被释放时触发 |
-
-
-
-
 
 | 事件 | 类型 | 描述 |
 | :--- | :--- | :--- |
@@ -1910,7 +2174,7 @@ document.write ("Mouse Out");
 
 ## 什么是 Cookie？
 
- 浏览器和服务器使用 HTTP 协议进行通信，而 HTTP 是一个无状态协议。但对于商业网站来说，需要在不同页面之间维持会话信息。例如，一个用户的注册在完成多个页面后才结束。但如何在所有网页中维持该用户的会话信息呢？
+浏览器和服务器使用 HTTP 协议进行通信，而 HTTP 是一个无状态协议。但对于商业网站来说，需要在不同页面之间维持会话信息。例如，一个用户的注册在完成多个页面后才结束。但如何在所有网页中维持该用户的会话信息呢？
 
 在许多情况下，使用 cookie 是记忆和跟踪偏好、购买、佣金以及为了改善访问体验或网站统计所需的其他信息的有效方法。
 
@@ -1955,7 +2219,6 @@ function WriteCookie() {
   document.cookie = "name=" + cookievalue;
   document.write ("设置的 Cookie : " + "name=" + cookievalue );
 }
-}
 </script>
 </head>
 <body>
@@ -1985,14 +2248,6 @@ function WriteCookie() {
 <html>
 <head>
 <script type="text/javascript">
-//
-```
-
-
-
-
-
-```javascript
 function ReadCookie() {
   var allcookies = document.cookie;
   document.write ("All Cookies : " + allcookies);
@@ -2005,16 +2260,16 @@ function ReadCookie() {
     document.write ("Key is : " + name + " and Value is : " + value);
   }
 }
-```
-`</script>`
-</head>`
-<<body>
+</script>
+</head>
+<body>
 <form name="myform" action="">
   <p> 点击以下按钮并查看结果：</p>
   <input type="button" value="Get Cookie" onclick="ReadCookie()"/>
 </form>
 </body>
-`</html>`
+</html>
+```
 
 **Note** — 在这里 `length` 是 `Array` 类的一个方法，用于返回数组的长度。我们将在单独的章节中讨论数组。在此之前，请尝试理解它。
 
@@ -2029,10 +2284,9 @@ function ReadCookie() {
 尝试以下示例。它演示了如何将 Cookie 的过期日期延长 1 个月。
 
 ```html
-<<html>
+<html>
 <head>
 <script type="text/javascript">
-<!--
 function WriteCookie() {
   var now = new Date();
   now.setMonth( now.getMonth() + 1 );
@@ -2041,7 +2295,6 @@ function WriteCookie() {
   document.cookie = "expires=" + now.toUTCString() + ";";
   document.write ("Setting Cookies : " + "name=" + cookievalue );
 }
-//-->
 </script>
 </head>
 <body>
@@ -2064,10 +2317,9 @@ function WriteCookie() {
 尝试以下示例。它演示了如何通过将过期日期设置为当前日期的一个月前来删除 Cookie。
 
 ```html
-<<html>
+<html>
 <head>
 <script type="text/javascript">
-<!--
 function WriteCookie() {
   var now = new Date();
   now.setMonth( now.getMonth() - 1 );
@@ -2076,7 +2328,6 @@ function WriteCookie() {
   document.cookie = "expires=" + now.toUTCString() + ";";
   document.write("Setting Cookies : " + "name=" + cookievalue );
 }
-//-->
 </script>
 </head>
 <body>
@@ -2111,14 +2362,12 @@ function WriteCookie() {
 这非常简单。
 
 ```html
-<<html>
+<html>
 <head>
 <script type="text/javascript">
-<!--
 function Redirect() {
   window.location = "https://tutorialpoint.com";
 }
-//-->
 </script>
 </head>
 <body>
@@ -2140,13 +2389,11 @@ function Redirect() {
 <html>
 <head>
 <script type="text/javascript">
-<!--
 function Redirect() {
   window.location = "tutorialpoint.com";
 }
 document.write("You will be redirected.");
 setTimeout('Redirect()', 10000);
-//-->
 </script>
 </head>
 <body>
@@ -2166,7 +2413,6 @@ setTimeout('Redirect()', 10000);
 <html>
 <head>
 <script type="text/javascript">
-<!--
 var browsername = navigator.appName;
 if( browsername == "Netscape") {
   window.location = "http://tutorialpoint.com/ns.htm";
@@ -2175,7 +2421,6 @@ if( browsername == "Netscape") {
 } else {
   window.location = "http://tutorialpoint.com/other.htm";
 }
-//-->
 </script>
 </head>
 <body>
@@ -2199,12 +2444,10 @@ Alert 警告对话框主要用于向用户提供警告消息。例如，如果�
 <html>
 <head>
 <script type="text/javascript">
-<!--
 function Warn() {
   alert ("这是一个警告消息！");
   document.write ("这是一个警告消息！");
 }
-//-->
 </script>
 </head>
 <body>
@@ -2230,40 +2473,23 @@ function Warn() {
 <html>
 <head>
 <script type="text/javascript">
-<!--
 function getConfirmation() {
   var retVal = confirm("你想继续吗？");
   if( retVal == true ) {
     document.write ("用户想要继续！");
     return true;
   } else {
-```
-
-
-
-
-```javascript
-document.write ("User does not want to continue!");
-
-return false;
-
+    document.write ("User does not want to continue!");
+    return false;
+  }
 }
-
-}
-
-//-->
 </script>
-
 </head>
-
 <body>
-
 <p>点击以下按钮查看结果：</p>
-
 <form>
 <input type="button" value="Click Me" onclick="getConfirmation();" />
 </form>
-
 </body>
 </html>
 ```
@@ -2286,12 +2512,10 @@ return false;
 <html>
 <head>
 <script type="text/javascript">
-<!--
 function getValue() {
 var retVal = prompt("Enter your name : ", "your name here");
 document.write("You have entered : " + retVal);
 }
-//-->
 </script>
 </head>
 <body>
@@ -2313,18 +2537,12 @@ document.write("You have entered : " + retVal);
 
 `void` 的语法可以是以下两种之一 ——
 
-```html
-<head>
-<script type="text/javascript">
-<!--
+```javascript
 void func()
 javascript:void func()
 or:
 void(func())
 javascript:void(func())
-//-->
-</script>
-</head>
 ```
 
 ### 示例 1
@@ -2334,11 +2552,9 @@ javascript:void(func())
 在这里，表达式 `alert ('Warning!!!')` 被求值，但它没有被加载回当前文档 ——
 
 ```html
-<html
+<html>
 <head>
 <script type="text/javascript">
-<!--
-//-->
 </script>
 </head>
 <body>
@@ -2358,8 +2574,6 @@ javascript:void(func())
 <html>
 <head>
 <script type="text/javascript">
-<!--
-//-->
 </script>
 </head>
 <body>
@@ -2376,16 +2590,14 @@ javascript:void(func())
 `void` 的另一个用法是故意生成 `undefined` 值，如下所示。
 
 ```html
-<html
+<html>
 <head>
 <script type="text/javascript">
-<!--
 function getValue() {
 var a,b,c;
 a = void ( b = 5, c = 7 );
 document.write('a = ' + a + ' b = ' + b +' c = ' + c );
 }
-//-->
 </script>
 </head>
 <body>
@@ -2410,11 +2622,9 @@ JavaScript 打印函数 `window.print()` 在执行时会打印当前网页。你
 尝试下面的示例。
 
 ```html
-<html
+<html>
 <head>
 <script type="text/javascript">
-<!--
-//-->
 </script>
 </head>
 <body>
@@ -2426,240 +2636,6 @@ JavaScript 打印函数 `window.print()` 在执行时会打印当前网页。你
 ```
 
 ### 输出
-
-很多时候，你可能想在网页上放置一个按钮，通过实际打印机打印该网页的内容。JavaScript 帮助你使用 `window` 对象的 `print` 函数来实现此功能。
-
-JavaScript 打印函数 `window.print()` 在执行时会打印当前网页。你可以像下面的示例所示使用 `onclick` 事件直接调用此函数。
-
-JavaScript 打印函数 `window.print()` 在执行时会打印当前网页。你可以像下面的示例所示使用 `onclick` 事件直接调用此函数。
-
-JavaScript 打印函数 `window.print()` 在执行时会打印当前网页。你可以像下面的示例所示使用 `onclick` 事件直接调用此函数。
-
-JavaScript 打印函数 `window.print()` 在执行时会打印当前网页。你可以像下面的示例所示使用 `onclick` 事件直接调用此函数。
-
-JavaScript 打印函数 `window.print()` 在执行时会打印当前网页。你可以像下面的示例所示使用 `onclick` 事件直接调用此函数。
-
-JavaScript 打印函数 `window.print()` 在执行时会打印当前网页。你可以像下面的示例所示使用 `onclick` 事件直接调用此函数。
-
-JavaScript 打印函数 `window.print()` 在执行时会打印当前网页。你可以像下面的示例所示使用 `onclick` 事件直接调用此函数。
-
-JavaScript 打印函数 `window.print()` 在执行时会打印当前网页。你可以像下面的示例所示使用 `onclick` 事件直接调用此函数。
-
-JavaScript 打印函数 `window.print()` 在执行时会打印当前网页。JavaScript 帮助你使用 `window` 对象的 `print` 函数来实现此功能。
-
-### 示例
-
-尝试下面的示例。
-
-```html
-<html
-<head>
-<script type="text/javascript">
-<!--
-//-->
-</script>
-</head>
-<body>
-<form>
-<input type="button" value="Print" onclick="window.print()" />
-</form>
-</body>
-</html>
-```
-
-### 输出
-
-JavaScript 帮助你使用 `window` 对象的 `print` 函数来实现此功能。
-
-JavaScript 打印函数 `window.print()` 在执行时会打印当前网页。你可以像下面的示例所示使用 `onclick` 事件直接调用此函数。
-
-JavaScript 打印函数 `window.print()` 在执行时会打印当前网页。你可以像下面的示例所示使用 `onclick` 事件直接调用此函数。
-
-JavaScript 打印函数 `window.print()` 在执行时会打印当前网页。你可以像下面的示例所示使用 `onclick` 事件直接调用此函数。
-
-JavaScript 打印函数 `window.print()` 在执行时会打印当前网页。你可以像下面的示例所示使用 `onclick` 事件直接调用此函数。
-
-JavaScript 打印函数 `window.print()` 在执行时会打印当前网页。你可以像下面的示例所示使用 `onclick` 事件直接调用此函数。
-
-JavaScript 打印函数 `window.print()` 在执行时会打印当前网页。你可以像下面的示例所示使用 `onclick` 事件直接调用此函数。
-
-JavaScript 打印函数 `window.print()` 在执行时会打印当前网页。你可以像下面的示例所示使用 `onclick` 事件直接调用此函数。
-
-JavaScript 打印函数 `window.print()` 在执行时会打印当前网页。你可以像下面的示例所示使用 `onclick` 事件直接调用此函数。
-
-JavaScript 打印函数 `window.print()` 在执行时会打印当前网页。你可以像下面的示例所示使用 `onclick` 事件直接调用此函数。
-
-JavaScript 打印函数 `window.print()` 在执行时会打印当前网页。你可以像下面的示例所示使用 `onclick` 事件直接调用此函数。
-
-JavaScript 打印函数 `window.print()` 在执行时会打印当前网页。你可以像下面的示例所示使用 `onclick` 事件直接调用此函数。
-
-JavaScript 打印函数 `window.print()` 在执行时会打印当前网页。你可以像下面的示例所示使用 `onclick` 事件直接调用此函数。
-
-JavaScript 打印函数 `window.print()` 在执行时会打印当前网页。你可以像下面的示例所示使用 `onclick` 事件直接调用此函数。
-
-JavaScript 打印函数 `window.print()` 在执行时会打印当前网页。你可以像下面的示例所示使用 `onclick` 事件直接调用此函数。
-
-JavaScript 打印函数 `window.print()` 在执行时会打印当前网页。你可以像下面的示例所示使用 `onclick` 事件直接调用此函数。
-
-JavaScript 打印函数 `window.print()` 在执行时会打印当前网页。你可以像下面的示例所示使用 `onclick` 事件直接调用此函数。
-
-JavaScript 打印函数 `window.print()` 在执行时会打印当前网页。你可以像下面的示例所示使用 `onclick` 事件直接调用此函数。
-
-JavaScript 打印函数 `window.print()` 在执行时会打印当前网页。你可以像下面的示例所示使用 `onclick` 事件直接调用此函数。
-
-JavaScript 打印函数 `window.print()` 在执行时会打印当前网页。你可以像下面的示例所示使用 `onclick` 事件直接调用此函数。
-
-JavaScript 打印函数 `window.print()` 在执行时会打印当前网页。你可以像下面的示例所示使用 `onclick` 事件直接调用此函数。
-
-JavaScript 打印函数 `window.print()` 在执行时会打印当前网页。你可以像下面的示例所示使用 `onclick` 事件直接调用此函数。
-
-JavaScript 打印函数 `window.print()` 在执行时会打印当前网页。你可以像下面的示例所示使用 `onclick` 事件直接调用此函数。
-
-JavaScript 打印函数 `window.print()` 在执行时会打印当前网页。你可以像下面的示例所示使用 `onclick` 事件直接调用此函数。
-
-JavaScript 打印函数 `window.print()` 在执行时会打印当前网页。你可以像下面的示例所示使用 `onclick` 事件直接调用此函数。
-
-JavaScript 打印函数 `window.print()` 在执行时会打印当前网页。你可以像下面的示例所示使用 `onclick` 事件直接调用此函数。
-
-JavaScript 打印函数 `window.print()` 在执行时会打印当前网页。你可以像下面的示例所示使用 `onclick` 事件直接调用此函数。
-
-JavaScript 打印函数 `window.print()` 在执行时会打印当前网页。你可以像下面的示例所示使用 `onclick` 事件直接调用此函数。
-
-JavaScript 打印函数 `window.print()` 在执行时会打印当前网页。你可以像下面的示例所示使用 `onclick` 事件直接调用此函数。
-
-JavaScript 打印函数 `window.print()` 在执行时会打印当前网页。你可以像下面的示例所示使用 `onclick` 事件直接调用此函数。
-
-JavaScript 打印函数 `window.print()` 在执行时会打印当前网页。JavaScript 帮助你使用 `window` 对象的 `print` 函数来实现此功能。
-
-JavaScript 打印函数 `window.print()` 在执行时会打印当前网页。你可以像下面的示例所示使用 `onclick` 事件直接调用此函数。
-
-JavaScript 打印函数 `window.print()` 在执行时会打印当前网页。你可以 像下面的示例所示使用 `onclick` 事件直接调用此函数。
-
-JavaScript 打印函数 `window.print()` 在执行时会打印当前网页。你可以像下面的示例所示使用 `onclick` 事件直接调用此函数。
-
-JavaScript 打印函数 `window.print()` 在执行时会打印当前网页。你可以像下面的示例所示使用 `onclick` 事件直接调用此函数。
-
-JavaScript 打印函数 `window.print()` 在执行时会打印当前网页。你可以像下面的示例所示使用 `onclick` 事件直接调用此函数。
-
-JavaScript 打印函数 `window.print()` 在执行时会打印当前网页。你可以像下面的示例所示使用 `onclick` 事件直接调用此函数。
-
-JavaScript 打印函数 `window.print()` 在执行时会打印当前网页。你可以像下面的示例所示使用 `onclick` 事件直接调用此函数。
-
-JavaScript 打印函数 `window.print()` 在执行时会打印当前网页。你可以像下面的示例所示使用 `onclick` 事件直接调用此函数。
-
-JavaScript 打印函数 `window.print()` 在执行时会打印当前网页。你可以像下面的示例所示使用 `onclick` 事件直接调用此函数。
-
-JavaScript 打印函数 `window.print()` 在执行时会打印当前网页。你可以像下面的示例所示使用 `onclick` 事件直接调用此函数。
-
-JavaScript 打印函数 `window.print()` 在执行时会打印当前网页。你可以像下面的示例所示使用 `onclick` 事件直接调用此函数。
-
-JavaScript 打印函数 `window.print()` 在执行时会打印当前网页。你可以像下面的示例所示使用 `onclick` 事件直接调用此函数。
-
-JavaScript 打印函数 `window.print()` 在执行时会打印当前网页。你可以像下面的示例所示使用 `onclick` 事件直接调用此函数。
-
-JavaScript 打印函数 `window.print()` 在执行时会打印当前网页。你可以像下面的示例所示使用 `onclick` 事件直接调用此函数。
-
-JavaScript 打印函数 `window.print()` 在执行时会打印当前网页。你可以像下面的示例所示使用 `onclick` 事件直接调用此函数。
-
-JavaScript 打印函数 `window.print()` 在执行时会打印当前网页。你可以像下面的示例所示使用 `onclick` 事件直接调用此函数。
-
-JavaScript 打印函数 `window.print()` 在执行时会打印当前网页。你可以像下面的示例所示使用 `onclick` 事件直接调用此函数。
-
-JavaScript 打印函数 `window.print()` 在执行时会打印当前网页。你可以像下面的示例所示使用 `onclick` 事件直接调用此函数。
-
-JavaScript 打印函数 `window.print()` 在执行时会打印当前网页。你可以像下面的示例所示使用 `onclick` 事件直接调用此函数。
-
-JavaScript 打印函数 `window.print()` 在执行时会打印当前网页。你可以像下面的示例所示使用 `onclick` 事件直接调用此函数。
-
-JavaScript 打印函数 `window.print()` 在执行时会打印当前网页。你可以像下面的示例所示使用 `onclick` 事件直接调用此函数。
-
-JavaScript 打印函数 `window.print()` 在执行时会打印当前网页。你可以像下面的示例所示使用 `onclick` 事件直接调用此函数。
-
-JavaScript 打印函数 `window.print()` 在执行时会打印当前网页。你可以像下面的示例所示使用 `onclick` 事件直接调用此函数。
-
-JavaScript 打印函数 `window.print()` 在执行时会打印当前网页。你可以像下面的示例所示使用 `onclick` 事件直接调用此函数。
-
-JavaScript 打印函数 `window.print()` 在执行时会打印当前网页。你可以像下面的示例所示使用 `onclick` 事件直接调用此函数。
-
-JavaScript 打印函数 `window.print()` 在执行时会打印当前网页。你可以像下面的示例所示使用 `onclick` 事件直接调用此函数。
-
-JavaScript 打印函数 `window.print()` 在执行时会打印当前网页。你可以像下面的示例所示使用 `onclick` 事件直接调用此函数。
-
-JavaScript 打印函数 `window.print()` 在执行时会打印当前网页。你可以像下面的示例所示使用 `onclick` 事件直接调用此函数。
-
-JavaScript 打印函数 `window.print()` 在执行时会打印当前网页。你可以像下面的示例所示使用 `onclick` 事件直接调用此函数。
-
-JavaScript 打印函数 `window.print()` 在执行时会打印当前网页。你可以像下面的示例所示使用 `onclick` 事件直接调用此函数。
-
-JavaScript 打印函数 `window.print()` 在执行时会打印当前网页。你可以像下面的示例所示使用 `onclick` 事件直接调用此函数。
-
-JavaScript 打印函数 `window.print()` 在执行时会打印当前网页。你可以像下面的示例所示使用 `onclick` 事件直接调用此函数。
-
-JavaScript 打印函数 `window.print()` 在执行时会打印当前网页。你可以 像下面的示例所示使用 `onclick` 事件直接调用此函数。
-
-JavaScript 打印函数 `window.print()` 在执行时会打印当前网页。你可以像下面的示例所示使用 `onclick` 事件直接调用此函数。
-
-JavaScript 打印函数 `window.print()` 在执行时会打印当前网页。你可以像下面的示例所示使用 `onclick` 事件直接调用此函数。
-
-JavaScript 打印函数 `window.print()` 在执行时会打印当前网页。你可以像下面的示例所示使用 `onclick` 事件直接调用此函数。
-
-JavaScript 打印函数 `window.print()` 在执行时会打印当前网页。你可以像下面的示例所示使用 `onclick` 事件直接调用此函数。
-
-JavaScript 打印函数 `window.print()` 在执行时会打印当前网页。你可以像下面的示例所示使用 `onclick` 事件直接调用此函数。
-
-JavaScript 打印函数 `window.print()` 在执行时会打印当前网页。你可以像下面的示例所示使用 `onclick` 事件直接调用此函数。
-
-JavaScript 打印函数 `window.print()` 在执行时会打印当前网页。你可以像下面的示例所示使用 `onclick` 事件直接调用此函数。
-
-JavaScript 打印函数 `window.print()` 在执行时会打印当前网页。你可以像下面的示例所示使用 `onclick` 事件直接调用此函数。
-
-JavaScript 打印函数 `window.print()` 在执行时会打印当前网页。你可以像下面的示例所示使用 `onclick` 事件直接调用此函数。
-
-JavaScript 打印函数 `window.print()` 在执行时会打印当前网页。你可以像下面的示例所示使用 `onclick` 事件直接调用此函数。
-
-JavaScript 打印函数 `window.print()` 在执行时会打印当前网页。你可以像下面的示例所示使用 `onclick` 事件直接调用此函数。
-
-JavaScript 打印函数 `window.print()` 在执行时会打印当前网页。你可以像下面的示例所示使用 `onclick` 事件直接调用此函数。
-
-JavaScript 打印函数 `window.print()` 在执行时会打印当前网页。你可以像下面的示例所示使用 `onclick` 事件直接调用此函数。
-
-JavaScript 打印函数 `window.print()` 在执行时会打印当前网页。你可以像下面的示例所示使用 `onclick` 事件直接调用此函数。
-
-JavaScript 打印函数 `window.print()` 在执行时会打印当前网页。你可以像下面的示例所示使用 `onclick` 事件直接调用此函数。
-
-JavaScript 打印函数 `window.print()` 在执行时会打印当前网页。你可以像下面的示例所示使用 `onclick` 事件直接调用此函数。
-
-JavaScript 打印函数 `window.print()` 在执行时会打印当前网页。你可以像下面的示例所示使用 `onclick` 事件直接调用此函数。
-
-JavaScript 打印函数 `window.print()` 在执行时会打印当前网页。你可以像下面的示例所示使用 `onclick` 事件直接调用此函数。
-
-JavaScript 打印函数 `window.print()` 在执行时会打印当前网页。你可以像下面的示例所示使用 `onclick` 事件直接调用此函数。
-
-JavaScript 打印函数 `window.print()` 在执行时会打印当前网页。你可以像下面的示例所示使用 `onclick` 事件直接调用此函数。
-
-JavaScript 打印函数 `window.print()` 在执行时会打印当前网页。你可以像下面的示例所示使用 `onclick` 事件直接调用此函数。
-
-JavaScript 打印函数 `window.print()` 在执行时会打印当前网页。你可以像下面的示例所示使用 `onclick` 事件直接调用此函数。
-
-JavaScript 打印函数 `window.print()` 在执行时会打印当前网页。你可以像下面的示例所示使用 `onclick` 事件直接调用此函数。
-
-JavaScript 打印函数 `window.print()` 在执行时会打印当前网页。你可以像下面的示例所示使用 `onclick` 事件直接调用此函数。
-
-JavaScript 打印函数 `window.print()` 在执行时会打印当前网页。你可以像下面的示例所示使用 `onclick` 事件直接调用此函数。
-
-JavaScript 打印函数 `window.print()` 在执行时会打印当前网页。你可以像下面的示例所示使用 `onclick` 事件直接调用此函数。
-
-JavaScript 打印函数 `window.print()` 在执行时会打印当前网页。你可以像下面的示例所示使用 `onclick` 事件直接调用此函数。
-
-JavaScript 打印函数 `window.print()` 在执行时会打印当前网页。你可以像下面的示例所示使用 `onclick` 事件直接调用此函数。
-
-JavaScript 打印函数 `window.print()` 在执行时会打印当前网页。你可以像下面的示例所示使用 `onclick` 事件直接调用此函数。
-
-JavaScript 打印函数 `window.print()` 在执行时会打印当前网页。你可以像下面的示例所示使用 `onclick` 事件直接调用此函数。
-
-JavaScript 打印函数 `window.print()` 在执行时会打印当前网页。你可以像下面的示例所示使用 `onclick` 事件直接调用此函数。
-
-JavaScript 打印函数 `window.print()` 在执行时会打印当前网页。JavaScript 帮助你使用 `window` 对象的 `print` 函数来实现此功能。
 
 ## 自定义对象 (User-Defined Objects)
 
@@ -2669,23 +2645,17 @@ JavaScript 打印函数 `window.print()` 在执行时会打印当前网页。Jav
 
 `new` 运算符用于创建对象的实例。要创建一个对象，`new` 运算符后面跟着构造方法。
 
-在下面的示例中，构造方法是 Object()、Array() 和 Date()。这些构造方法是内置的 JavaScript 函数。
+在下面的示例中，构造方法是 `Object()`、`Array()` 和 `Date()`。这些构造方法是内置的 JavaScript 函数。
 
 ```javascript
 var employee = new Object();
-
 var books = new Array("C++", "Perl", "Java");
-
 var day = new Date("August 15, 1947");
 ```
 
 ### Object() 构造函数
 
-
-
-
-
-构造函数（constructor）是一个创建并初始化对象的函数。JavaScript 提了一个名为 `Object()` 的特殊构造函数来构建对象。`Object()` 构造函数的返回值会被赋值给变量。
+构造函数（constructor）是一个创建并初始化对象的函数。JavaScript 提供了一个名为 `Object()` 的特殊构造函数来构建对象。`Object()` 构造函数的返回值会被赋值给变量。
 
 该变量包含指向新对象的引用。赋值给对象的属性不是变量，且不是使用 `var` 关键字定义的。
 
@@ -2847,6 +2817,7 @@ Book price is : 100
 JavaScript 有几个内置或原生对象。这些对象可以在程序的任何地方访问，并在运行于任何操作系统的任何浏览器中以相同的方式工作。
 
 以下是所有原生对象的列表——
+
 * `Number Object`（数字对象）
 * `Boolean Object`（布尔对象）
 * `String Object`（字符串对象）
@@ -2883,7 +2854,7 @@ var val = Number(number)
 
 ## Number 方法
 
-`Number` 对象包含了每个对象都拥的方法：
+`Number` 对象包含了每个对象都拥有的方法：
 
 | 序号 | 方法 | 描述 |
 | :--- | :--- | :--- |
@@ -2919,12 +2890,7 @@ var val = new Boolean(value)
 | :--- | :--- | :--- |
 | 1 | `toSource()` | 返回包含 Boolean 对象源码的字符串 |
 | 2 | `toString()` | 返回 "true" 或 "false" 的字符串 |
-
-
-
-
-
-| 3 | `valueOf()` 返回 `Boolean` 对象的原始值。 |
+| 3 | `valueOf()` | 返回 `Boolean` 对象的原始值。 |
 
 在接下来的章节中，我们将通过几个示例来演示 `Boolean` 方法的使用。
 
@@ -2938,7 +2904,7 @@ var val = new Boolean(value)
 
 使用以下语法来创建一个 `String` 对象 ——
 
-```
+```javascript
 var val = new String(string);
 ```
 
@@ -2968,7 +2934,7 @@ var val = new String(string);
 | 4 | `indexOf()` 返回指定值在调用 `String` 对象中首次出现的索引，如果未找到则返回 -1。 |
 | 5 | `lastIndexOf()` 返回指定值在调用 `String` 对象中最后一次出现的索引，如果未找到则返回 -1。 |
 | 6 | `localeCompare()` 返回一个数字，表示引用字符串在排序顺序上是在给定字符串之前、之后还是与之相同。 |
-| 7 | `match()` 用于对字符串进行正则表达式匹配。 | |
+| 7 | `match()` 用于对字符串进行正则表达式匹配。 |
 | 8 | `replace()` 用于查找正则表达式与字符串之间的匹配项，并将匹配到的子字符串替换为新的子字符串。 |
 | 9 | `search()` 执行正则表达式与指定字符串之间的匹配搜索。 |
 | 10 | `slice()` 提取字符串的一个部分并返回一个新字符串。 |
@@ -3012,7 +2978,7 @@ var val = new String(string);
 
 使用以下语法创建一个 `Array` 对象 ——
 
-```
+```javascript
 var fruits = new Array("apple", "orange");
 ```
 
@@ -3053,19 +3019,14 @@ var fruits = new Array("apple", "orange");
 | 11 | `reduce()` 对数组中的两个值（从左到右）同时应用函数，以将其归约为单个值。 |
 | 12 | `reduceRight()` 对数组中的两个值（从右到左）同时应用函数，以将其归约为单个值。 |
 | 13 | `reverse()` 反转数组元素的顺序 —— 第一个变成最后一个，最后一个变成第一个。 |
-
-
-
-
-
-| 14 | `shift()` | 从数组中移除第一个元素并返回该元素。 |
-| 15 | `slice()` | 提取数组的一个部分并返回新数组。 |
-| 16 | `some()` | 如果数组中至少有一个元素满足提供的测试函数，则返回 true。 |
-| 17 | `toSource()` | 代表对象的源代码。 |
-| 18 | `sort()` | 对数组的元素进行排序。 |
-| 19 | `splice()` | 在数组中添加和或删除元素。 |
-| 20 | `toString()` | 返回一个表示数组及其元素的字符串。 |
-| 21 | `unshift()` | 在数组开头添加一个或多个元素，并返回数组的新长度。 |
+| 14 | `shift()` 从数组中移除第一个元素并返回该元素。 |
+| 15 | `slice()` 提取数组的一个部分并返回新数组。 |
+| 16 | `some()` 如果数组中至少有一个元素满足提供的测试函数，则返回 true。 |
+| 17 | `toSource()` 代表对象的源代码。 |
+| 18 | `sort()` 对数组的元素进行排序。 |
+| 19 | `splice()` 在数组中添加和或删除元素。 |
+| 20 | `toString()` 返回一个表示数组及其元素的字符串。 |
+| 21 | `unshift()` 在数组开头添加一个或多个元素，并返回数组的新长度。 |
 
 在接下来的章节中，我们将通过几个示例来演示 Array 方法的使用。
 
@@ -3081,7 +3042,7 @@ ECMAScript 标准要求 `Date` 对象能够表示 1970/1/1 前后 1 亿天范围
 
 你可以使用以下任何语法通过 `Date()` 构造函数创建 `Date` 对象。
 
-```
+```javascript
 new Date()
 new Date(milliseconds)
 new Date(datestring)
@@ -3130,13 +3091,13 @@ new Date(year,month,date[,hour,minute,second,millisecond ])
 | 7 | `getMinutes()` - 根据本地时间返回指定日期的分钟。 |
 | 8 | `getMonth()` - 根据本地时间返回指定日期的月份。 |
 | 9 | `getSeconds()` - 根据本地时间返回指定日期的秒。 |
-| 10 | `getTime()` - 返回指定日期的数值值，表示自 1970 年 1 月 1 日 00:00:00 UTC رام的毫秒数。 |
+| 10 | `getTime()` - 返回指定日期的数值值，表示自 1970 年 1 月 1 日 00:00:00 UTC 的毫秒数。 |
 | 11 | `getTimezoneOffset()` - 返回当前本地时区的偏移量（单位为分钟）。 |
 | 12 | `getUTCDate()` - 根据通用时间返回指定日期的几几（日期）。 |
 | 13 | `getUTCDay()` - 根据通用时间返回指定日期的星期几。 |
 | 14 | `getUTCFullYear()` - 根据通用时间返回指定日期的年份。 |
 | 15 | `getUTCHours()` - 根据通用时间返回指定日期的小时。 |
-| 16 | `getUTMilliseconds()` - 根据通用时间返回指定日期的毫秒。 |
+| 16 | `getUTCMilliseconds()` - 根据通用时间返回指定日期的毫秒。 |
 | 17 | `getUTCMinutes()` - 根据通用时间返回指定日期的分钟。 |
 | 18 | `getUTCMonth()` - 根据通用时间返回指定日期的月份。 |
 | 19 | `getUTCSeconds()` - 根据通用时间返回指定日期的秒。 |
@@ -3165,16 +3126,9 @@ new Date(year,month,date[,hour,minute,second,millisecond ])
 | 42 | `toLocaleTimeString()` - 根据本地化习惯返回 Date 对象的时间部分的字符串。 |
 | 43 | `toSource()` - 返回表示等效 Date 对象的源代码字符串；你可以使用此值创建新对象。 |
 | 44 | `toString()` - 返回表示指定 Date 对象的字符串。 |
-
-
-
-
-
-| 45 | `toTimeString()` 将 `Date` 的“时间”部分返回为人类可读的字符串。 |
-| 46 | `toUTCString()` 将日期转换为字符串，使用通用时间表示法。 |
-| 47 | `valueOf()` 返回 `Date` 对象的原始值。 |
-
-使用通用时间表示法将日期转换为字符串。
+| 45 | `toTimeString()` - 将 `Date` 的“时间”部分返回为人类可读的字符串。 |
+| 46 | `toUTCString()` - 将日期转换为字符串，使用通用时间表示法。 |
+| 47 | `valueOf()` - 返回 `Date` 对象的原始值。 |
 
 ## Date 静态方法
 
@@ -3189,7 +3143,7 @@ new Date(year,month,date[,hour,minute,second,millisecond ])
 
 ## Math 对象
 
-`math` 对象为你提供了用于数学常数和泛的属性和方法。与其他全局对象不同，`Math` 不是一个构造函数。`Math` 的所有属性和方法都是静态的，可以通过 `Math` 作为对象直接调用，无需创建实例。
+`Math` 对象为你提供了用于数学常数和函数的属性和方法。与其他全局对象不同，`Math` 不是一个构造函数。`Math` 的所有属性和方法都是静态的，可以通过 `Math` 作为对象直接调用，无需创建实例。
 
 因此，你将常量 `pi` 引用为 `Math.PI`，调用 `sine` 函数为 `Math.sin(x)`，其中 `x` 是该方法的参数。
 
@@ -3199,9 +3153,10 @@ new Date(year,month,date[,hour,minute,second,millisecond ])
 
 ```javascript
 var pi_val = Math.PI;
-
 var sine_val = Math.sin(30);
 ```
+
+
 
 ## Math 属性
 
@@ -3338,13 +3293,6 @@ var pattern = /pattern/attributes;
 | :--- | :--- |
 | 1 | `.` 单个字符 |
 | 2 | `\s` 空白字符（空格、制表符、换行符） |
-
-
-
-
-
-| # | 描述 |
-| :--- | :--- |
 | 3 | `\S` 非空白字符 |
 | 4 | `\d` 数字 (0-9) |
 | 5 | `\D` 非数字 |
@@ -3371,7 +3319,7 @@ var pattern = /pattern/attributes;
 
 | Sr.No. | 属性 & 描述 |
 | :--- | :--- |
-| 1 | `constructor` 指定创建对象原型的函数。 |
+| 1 | `constructor` 指指定创建对象原型的函数。 |
 | 2 | `global` 指定是否设置了 `g` 修饰符。 |
 | 3 | `ignoreCase` 指定是否设置了 `i` 修饰符。 |
 | 4 | `lastIndex` 开始下次匹配的索引。 |
@@ -3420,7 +3368,7 @@ var pattern = /pattern/attributes;
 
 如果你想编写一个灵活的脚本，根据可用性使用 W3C DOM 或 IE 4 DOM，那么你可以使用能力测试方法，首先检查方法或属性是否存在，以判断浏览器是否具有你所需的能力。例如——
 
-```
+```javascript
 if (document.getElementById) {
     // 如果 W3C 方法存在，则使用它
 } else if (document.all) {
@@ -3443,8 +3391,7 @@ if (document.getElementById) {
 ```html
 <script type="javascript">
 window.print(;
-//
-</script>
+//</script>
 ```
 
 当 JavaScript 中发生语法错误时，只有该线程的代码受影响。
@@ -3473,7 +3420,7 @@ JavaScript 的最新版本增加了异常能力。JavaScript 实现了 `try...ca
 
 这是 `try...catch...finally` 块的语法：
 
-```
+```javascript
 try {
     // 执行的代码
 } catch (e) {
@@ -3527,10 +3474,7 @@ function myFunc() {
 </script>
 </head>
 ...
-
-
-
-
+```
 
 ```javascript
 alert("Value of variable a is : "  + a );
@@ -3661,7 +3605,9 @@ window.onerror = function () {
 `onerror` 事件处理器提供三个信息来识别错误的确切性质——
 
 - `Error message` − 浏览器为给定错误显示的相同消息
+
 - `URL` − 发生错误的文件
+
 - `Line number` − 给定 URL 中导致错误的行号
 
 这里是显示如何提取这些信息的示例。
@@ -3708,7 +3654,8 @@ window.onerror = function (msg, url, line) {
 
 JavaScript 提供了一种在将数据发送到服务器之前在客户端验证数据的方法。表单验证通常执行以下功能：
 
-- `基础验证` ― 首先，必须检查表单以确保必填字段已填写。
+- `基础验证` ― 首先，必须检查表表单以确保必填字段已填写。
+
 - `数据验证` ― 其次，必须检查输入数据的正确性。
 
 ### 示例
@@ -3718,7 +3665,7 @@ JavaScript 提供了一种在将数据发送到服务器之前在客户端验证
 ```html
 <html>
 <head>
-<title>表单验证</title>
+<title>表单验验证</title>
 <script type = "text/javascript">
 <!--
 // 验证函数将在这里
@@ -3811,16 +3758,16 @@ function validateEmail() {
 你可以使用 JavaScript 创建复杂的动画，包含但不限于以下元素——
 
 - 烟花
+
 - 淡入淡出
+
 - 滚入或滚出
+
 - 页面进入或页面退出
+
 - 对象移动
 
 你可能对现有的 JavaScript 动画库感兴趣：**Script.Aculo.us**。
-
-
-
-
 
 本教程将提供关于如何使用 `JavaScript` 创建动画的基础知识。
 
@@ -3829,7 +3776,9 @@ function validateEmail() {
 `JavaScript` 提供了以下两个在动画程序中频繁使用的函数：
 
 - `setTimeout(function, duration)` − 此函数在当前 `duration` 毫秒后调用 `function`。
+
 - `setInterval(function, duration)` − 此函数每每隔 `duration` 毫秒调用一次 `function`。
+
 - `clearTimeout(setTimeout_variable)` − 此函数清除由 `setTimeout()` 函数设置的任何计时器。
 
 `JavaScript` 还可以设置 DOM 对象的属性，包括其在屏幕上的位置。你可以设置对象的 `top` 和 `left` 属性来将其放置在屏幕的任何位置。以下是其语法结构。
@@ -3849,8 +3798,11 @@ object.style.top = distance in pixels or points;
 现在，让我们使用 DOM 对象属性和 `JavaScript` 函数来实现这样一个简单的动画。以下列表包含了不同的 DOM 方法。
 
 - 我们正在使用 `JavaScript` 函数 `getElementById()` 来获取一个 DOM 对象，然后将其赋值给全局变量 `imgObj`。
+
 - 我们定义了一个初始化函数 `init()` 来初始化 `imgObj`，其中我们设置了它的 `position` 和 `left` 属性。
+
 - 我们在窗口加载时调用初始化函数。
+
 - 最后，我们调用 `moveRight()` 函数将左侧距离增加 10 像素。你也可以将其设置为负值以将其移动到左侧。
 
 ### 示例
@@ -3883,7 +3835,7 @@ window.onload = init;
 <input type="button" value="Click Me" onclick="moveRight();" />
 </form>
 </body>
-</</html>
+</html>
 ```
 
 ### 输出
@@ -3895,6 +3847,7 @@ window.onload = init;
 在这里我们添加了更多方法。让我们看看这里有什么新内容 ——
 
 - `moveRight()` 函数调用 `setTimeout()` 函数来设置 `imgObj` 的位置。
+
 - 我们添加了一个新函数 `stop()` 来清除由 `setTimeout()` 函数设置的计时器，并将对象设置到初始位置。
 
 ### 示例
@@ -3934,7 +3887,7 @@ window.onload = init;
 <input type="button" value="Stop" onclick="stop();" />
 </form>
 </body>
-</</html>
+</html>
 ```
 
 ## 鼠标事件滚停
@@ -3944,9 +3897,13 @@ window.onload = init;
 让我们看看下面的示例中使用了什么 ——
 
 - 在加载此页面时，`if` 语句检查图像对象是否存在。如果图像对象不可用，则此块不会执行。
+
 - `Image()` 构造函数创建并预加载了一个名为 `image` 的新图像对象。
+
 - 同样，我们创建了 `image2`。
+
 - `onOver` 事件由鼠标触发。
+
 - `onOut` 事件由鼠标触发。
 
 ```html
@@ -3957,10 +3914,6 @@ window.onload = init;
 <!--
 ... (等待，提供的文本在此处中断，但我将根据提供的片段进行格式化)
 ```
-
-
-
-
 
 ```javascript
 function play() {
@@ -3992,14 +3945,21 @@ function rewind() {
 <<body>
 
 <embed id="demo" name="demo" src="http://www.amrood.com/games/kumite.swf" width="318" height="300" play="false" loop="false" pluginspage="http://www.macromedia.com/go/getflashplayer" swliveconnect="true">
+
 <form name="form" id="form" action="#" method="get">
+
 <input type="button" value="Start" onclick="play();" />
+
 <input type="button" value="Stop" onclick="stop();" />
-<input type="button" value="Rewind" onclick="rewind(); /> own</form>
+
+<input type="button" value="Rewind" onclick="rewind();" />
+
+</form>
 
 </body>
 
 </html>
+```
 
 如果你正在使用 Mozilla、Firefox 或 Netscape，那么
 
@@ -4047,7 +4007,7 @@ function rewind() {
 
 JavaScript 最方便的验证器是 Douglas Crockford 的 JavaScript Lint，它可以在 `Douglas Crockford's JavaScript Lint` 免费获取。
 
-只需访问该网页，将你的 JavaScript（仅 JavaScript）代码粘贴到提供的文本区域，并点击 jslint 按钮。此程序将解析你的 JavaScript 代码，确保所有的变量和函数定义遵循正确的语法。它还会检查 JavaScript 语句（如 `if` 和 `while`），以确保它们也遵循正确的格式。
+只需访问该网页，将你的 JavaScript（仅 JavaScript）代码粘贴到提供的文本区域，并点击 jslint 按钮。此程序将解析你的 JavaScript 代码，确保所有的变量和函数定遵循正确的语法。它还会检查 JavaScript 语句（如 `if` 和 `while`），以确保它们也遵循正确的格式。
 
 ### 在程序中添加调试代码
 
@@ -4078,12 +4038,19 @@ if( debugging )
 你可以记住以下提示以减少错误的数量
 
 - 使用大量的 `comments`（注释）。注释允许你解释为什么你这样写脚本，并解释复杂的章节。
+
 - 始终使用 `indentation`（缩进）来使你的代码易于阅读。缩进也更容易匹配开始和结束标签、大括号。
+
 - 编写 `modular code`（模块化代码）。尽可能将你的语句分组为函数。函数让你能够以最小的精力测试和重用代码部分。
+
 - 在命名变量时保持一致。尝试使用足够长且描述函数目的的名称。 统一使用全小写或全大写；如果你使用驼峰命名法，就使用它。以模块化的方式测试长脚本。不要尝试编写整个脚本。写一部分并让其工作，再添加下一部分。
+
 - 使用 `描述性的变量和函数名`，避免使用单字符名称。
+
 - 注意你的引号。记住引号用于成对字符串，且两个引号必须类型相同（单引号或双引号）。
+
 - 注意你的等号。你不应该用单符号进行比较。
+
 - 使用 `var` 关键字显式声明变量。
 
 # 图片映射
@@ -4091,9 +4058,6 @@ if( debugging )
 你可以使用 JavaScript 创建客户端。客户端图片映射通过 `<img>` 标签的 `usemap` 启用，并由特殊的 `<map>` 和 `<area>` 扩展标签定义。
 
 形成映射的图像像往常一样使用 <img> 元素插入页面，只是它携带了一个名为 `usemap` 的额外属性。`usemap` 属性的值是 `<map>` 元素的 `name` 属性的值，前面带一个井号或 # 号。
-
-
-
 
 以下代码结合了图像映射（imagemaps）和 JavaScript，当鼠标移动在图像的不同部分时，会在文本框中生成消息。
 

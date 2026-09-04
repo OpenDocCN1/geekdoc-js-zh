@@ -1,12 +1,5 @@
-# 2.9 错误处理机制
 
-*   Error 对象
-*   JavaScript 的原生错误类型
-*   自定义错误
-*   throw 语句
-*   try...catch 结构
-*   finally 代码块
-*   参考连接
+# 2.9 错误处理机制
 
 ## Error 对象
 

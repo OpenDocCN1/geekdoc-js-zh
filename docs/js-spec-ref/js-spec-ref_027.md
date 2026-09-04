@@ -1,20 +1,5 @@
-# 4.1 概述
 
-*   简介
-    *   对象和面向对象编程
-    *   构造函数
-    *   new 命令
-    *   new 命令的原理
-    *   instanceof 运算符
-    *   this 关键字
-        *   涵义
-        *   使用场合
-        *   使用注意点
-    *   固定 this 的方法
-        *   call 方法
-        *   apply 方法
-        *   bind 方法
-    *   参考链接
+# 4.1 概述
 
 ## 简介
 
@@ -424,7 +409,7 @@ o.f1()
 
 （2）避免数组处理方法中的 this
 
-数组的 map 和 foreach 方法，允许提供一个函数作为参数。这个函数内部不应该使用 this。
+数组的 map 和 foreach 方法，允提供一个函数作为参数。这个函数内部不应该使用 this。
 
 ```js
 var o = {
@@ -858,5 +843,7 @@ bind(f,o)() // 123
 ## 参考链接
 
 *   Jonathan Creamer, [Avoiding the "this" problem in JavaScript](http://tech.pro/tutorial/1192/avoiding-the-this-problem-in-javascript)
+
 *   Erik Kronberg, [Bind, Call and Apply in JavaScript](https://variadic.me/posts/2013-10-22-bind-call-and-apply-in-javascript.html)
+
 *   Axel Rauschmayer, [JavaScript’s this: how it works, where it can trip you up](http://www.2ality.com/2014/05/this.html)

@@ -1,3 +1,4 @@
+
 # 5.5 Event 对象
 
 事件是一种异步编程的实现方式，本质上是程序各个组成部分之间传递的特定消息。DOM 支持大量的事件，本节介绍 DOM 的事件编程。
@@ -78,9 +79,7 @@ target.addEventListener(type, listener[, useCapture]);
 上面是使用格式，addEventListener 方法接受三个参数。
 
 *   type，事件名称，大小写不敏感。
-
 *   listener，监听函数。指定事件发生时，会调用该监听函数。
-
 *   useCapture，监听函数是否在捕获阶段（capture）触发（参见后文《事件的传播》部分）。该参数是一个布尔值，默认为 false（表示监听函数只在冒泡阶段被触发）。老式浏览器规定该参数必写，较新版本的浏览器允许该参数可选。为了保持兼容，建议总是写上该参数。
 
 下面是一个例子。
@@ -187,7 +186,7 @@ HTML 语言允许在元素标签的属性中，直接定义某些事件的监听
 
 使用这个方法指定的监听函数，只会在冒泡阶段触发。
 
-注意，使用这种方法时，on-属性的值是“监听代码”，而不是“监听函数”。也就是说，一旦指定事件发生，这些代码是原样传入 JavaScript 引擎执行。因此如果要执行函数，必须在函数名后面加上一对圆括号。
+注意，使用这种方法时，on-属性的值是“监听代码”，而不是“监听函数”。也就是说，一旦指定事件发生，这些代码是原样传入 JavaScript 引擎执行。因此如果要执函数，必须在函数名后面加上一对圆括号。
 
 另外，Element 节点的 setAttribue 方法，其实设置的也是这种效果。
 
@@ -224,9 +223,7 @@ addEventListener 方法的详细介绍，参见本节 EventTarget 接口的部�
 addEventListener 是推荐的指定监听函数的方法。它有如下优点：
 
 *   可以针对同一个事件，添加多个监听函数。
-
 *   能够指定在哪个阶段（捕获阶段还是冒泡阶段）触发回监听函数。
-
 *   除了 DOM 节点，还可以部署在 window、XMLHttpRequest 等对象上面，等于统一了整个 JavaScript 的监听函数接口。
 
 ### this 对象的指向
@@ -313,9 +310,7 @@ element.setAttribute('onclick', 'doSomething()');
 当一个事件发生以后，它会在不同的 DOM 节点之间传播（propagation）。这种传播分成三个阶段：
 
 *   第一阶段：从 window 对象传导到目标节点，称为“捕获阶段”（capture phase）。
-
 *   第二阶段：在目标节点上触发，称为“目标阶段”（target phase）。
-
 *   第三阶段：从目标节点传导回 window 对象，称为“冒泡阶段”（bubbling phase）。
 
 这种三阶段的传播模型，会使得一个事件在多个节点上触发。比如，假设 div 节点之中嵌套一个 p 节点。
@@ -381,7 +376,7 @@ ul.addEventListener('click', function(event) {
 });
 ```
 
-上面代码的 click 事件的监听函数定义在 ul 节点，但是实际上，它处理的是子节点 li 的 click 事件。这样做的好处是，只要定义一个监听函数，就能处理多个子节点的事件，而且以后再添加子节点，监听函数依然有效。
+上面代码的 click 事件的监听函数定义在 ul 节点，但是实际上，它处理的是子节点 li 的 click 事件。这样做的好处是，只要定一个监听函数，就能处理多个子节点的事件，而且以后再添加子节点，监听函数依然有效。
 
 如果希望事件到某个节点为止，不再传播，可以使用事件对象的 stopPropagation 方法。
 
@@ -418,7 +413,6 @@ event = new Event(typeArg, eventInit);
 Event 构造函数接受两个参数。第一个参数是字符串，表示事件的名称；第二个参数是一个对象，表示事件对象的配置。该参数可以有以下两个属性。
 
 *   bubbles：布尔值，可选，默认为 false，表示事件对象是否冒泡。
-
 *   cancelable：布尔值，可选，默认为 false，表示事件是否可以被取消。
 
 ```js
@@ -670,7 +664,7 @@ click 事件当用户在 Element 节点、document 节点、window 对象上，�
 
 ```js
 div.addEventListener("click", function( event ) {
-  // 显示在该节点，鼠标连续点击的次数
+  // 显示在该节点，鼠连续点击的次数
   event.target.innerHTML = "click count: " + event.detail;
 }, false);
 ```
@@ -743,7 +737,7 @@ test.addEventListener("mouseover", function( event ) {
 
 mouseout 事件和 mouseleave 事件，都是鼠标离开一个节点时触发。
 
-两者的区别是，mouseout 事件会冒泡，mouseleave 事件不会。子节点的 mouseout 事件会冒泡到父节点，进而触发父节点的 mouseout 事件。mouseleave 事件就没有这种效果，所以离开子节点时，不会触发父节点的监听函数。
+两者的区别是，mouseout 事件会冒泡，mouseleave 事件不会。子节点的 mouseout 事件会冒泡到父节点，进而触父节点的 mouseout 事件。mouseleave 事件就没有这种效果，所以离开子节点时，不会触发父节点的监听函数。
 
 （7）contextmenu
 
@@ -979,9 +973,7 @@ var syntheticEvent = new WheelEvent("syntheticWheel", {"deltaX": 4, "deltaMode":
 键盘事件用来描述键盘行为，主要有 keydown、keypress、keyup 三个事件。
 
 *   keydown：按下键盘时触发该事件。
-
 *   keypress：只要按下的键并非 Ctrl、Alt、Shift 和 Meta，就接着触发 keypress 事件。
-
 *   keyup：松开键盘时触发该事件。
 
 下面是一个例子，对文本框设置 keypress 监听函数，只允许输入数字。
@@ -1058,17 +1050,11 @@ charCode 属性返回一个数值，表示 keypress 事件按键的 Unicode 值�
 进度事件有以下几种。
 
 *   abort 事件：当进度事件被中止时触发。如果发生错误，导致进程中止，不会触发该事件。
-
 *   error 事件：由于错误导致资源无法加载时触发。
-
 *   load 事件：进度成功结束时触发。
-
 *   loadstart 事件：进度开始时触发。
-
 *   loadend 事件：进度停止时触发，发生顺序排在 error 事件\abort 事件\load 事件后面。
-
 *   progress 事件：当操作处于进度之中，由传输的数据块不断触发。
-
 *   timeout 事件：进度超过限时触发。
 
 ```js
@@ -1108,9 +1094,7 @@ error 事件有一个特殊的性质，就是不会冒泡。这样的设计是�
 进度事件使用 ProgressEvent 对象表示。ProgressEvent 实例有以下属性。
 
 *   lengthComputable：返回一个布尔值，表示当前进度是否具有可计算的长度。如果为 false，就表示当前进度无法测量。
-
 *   total：返回一个数值，表示当前进度的总长度。如果是通过 HTTP 下载某个资源，表示内容本身的长度，不含 HTTP 头部的长度。如果 lengthComputable 属性为 false，则 total 属性就无法取得正确的值。
-
 *   loaded：返回一个数值，表示当前进度已经完成的数量。该属性除以 total 属性，就可以得到目前进度的百分比。
 
 下面是一个例子。
@@ -1204,25 +1188,17 @@ draggable 属性可用于任何 Element 节点，但是图片（img 元素）和
 当 Element 节点或选中的文本被拖拉时，就会持续触发拖拉事件，包括以下一些事件。
 
 *   drag 事件：拖拉过程中，在被拖拉的节点上持续触发。
-
 *   dragstart 事件：拖拉开始时在被拖拉的节点上触发，该事件的 target 属性是被拖拉的节点。通常应该在这个事件的监听函数中，指定拖拉的数据。
-
 *   dragend 事件：拖拉结束时（释放鼠标键或按下 escape 键）在被拖拉的节点上触发，该事件的 target 属性是被拖拉的节点。它与 dragStart 事件，在同一个节点上触发。不管拖拉是否跨窗口，或者中途被取消，dragend 事件总是会触发的。
-
-*   dragenter 事件：拖拉进入当前节点时，在当前节点上触发，该事件的 target 属性是当前节点。通常应该在这个事件的监听函数中，指定是否允许在当前节点放下（drop）拖拉的数据。如果当前节点没有该事件的监听函数，或者监听函数不执行任何操作，就意味着不允许在当前节点放下数据。在视觉上显示拖拉进入当前节点，也是在这个事件的监听函数中设置。
-
+*   dragenter 事件：拖拉进入当前节点时，在当前节点上触触发，该事件的 target 属性是当前节点。通常应该在这个事件的监听函数中，指定是否允许在当前节点放下（drop）拖拉的数据。如果当前节点没有该事件的监听函数，或者监听函数不执行任何操作，就意味着不允许在当前节点放下数据。在视觉上显示拖拉进入当前节点，也是在这个事件的监听函数中设置。
 *   dragover 事件：拖拉到当前节点上方时，在当前节点上持续触发，该事件的 target 属性是当前节点。该事件与 dragenter 事件基本类似，默认会重置当前的拖拉事件的效果（DataTransfer 对象的 dropEffect 属性）为 none，即不允许放下被拖拉的节点，所以如果允许在当前节点 drop 数据，通常会使用 preventDefault 方法，取消重置拖拉效果为 none。
-
 *   dragleave 事件：拖拉离开当前节点范围时，在当前节点上触发，该事件的 target 属性是当前节点。在视觉上显示拖拉离开当前节点，就在这个事件的监听函数中设置。
-
 *   drop 事件：被拖拉的节点或选中的文本，释放到目标节点时，在目标节点上触发。注意，如果当前节点不允许 drop，即使在该节点上方松开鼠标键，也不会触发该事件。如果用户按下 Escape 键，取消这个操作，也不会触发该事件。该事件的监听函数负责取出拖拉数据，并进行相关处理。
 
 关于拖拉事件，有以下几点注意事项。
 
 *   拖拉过程只触发以上这些拖拉事件，尽管鼠标在移动，但是鼠标事件不会触发。
-
 *   将文件从操作系统拖拉进浏览器，不会触发 dragStart 和 dragend 事件。
-
 *   dragenter 和 dragover 事件的监听函数，用来指定可以放下（drop）拖拉的数据。由于网页的大部分区域不适合作为 drop 的目标节点，所以这两个事件的默认设置为当前节点不允许 drop。如果想要在目标节点上 drop 拖拉的数据，首先必须阻止这两个事件的默认行为，或者取消这两个事件。
 
 ```js
@@ -1340,7 +1316,7 @@ dropEffect 属性一般在 dragenter 和 dragove 事件的监听函数中设置�
 
 （2）effectAllowed
 
-effectAllowed 属性设置本次拖拉中允许的效果，可能的值包括 copy（复制被拖拉的节点）、move（移动被拖拉的节点）、link（创建指向被拖拉节点的链接）、copyLink（允许 copy 或 link）、copyMove（允许 copy 或 move）、linkMove（允许 link 或 move）、all（允许所有效果）、none（无法放下被拖拉的节点）、uninitialized（默认值，等同于 all）。如果某种效果是不允许的，用户就无法在目标节点中达成这种效果。
+effectAllowed 属性设置本次拖拉中允的效果，可能的值包括 copy（复制被拖拉的节点）、move（移动被拖拉的节点）、link（创建指向被拖拉节点的链接）、copyLink（允许 copy 或 link）、copyMove（允许 copy 或 move）、linkMove（允许 link 或 move）、all（允许所有效果）、none（无法放下被拖拉的节点）、uninitialized（默认值，等同于 all）。如果某种效果是不允许的，用户就无法在目标节点中达成这种效果。
 
 dragstart 事件的监听函数，可以设置被拖拉节点允许的效果；dragenter 和 dragover 事件的监听函数，可以设置目标节点允许的效果。
 
@@ -1481,6 +1457,8 @@ dt.setData("text/plain", imageurl);
 
 可以一次提供多种格式的数据。
 
+
+
 ```js
 var dt = event.dataTransfer;
 dt.setData("application/x-bookmark", bookmarkString);
@@ -1577,7 +1555,9 @@ div.addEventListener("dragstart", function(e) {
 触摸 API 由三个对象组成。
 
 *   Touch
+
 *   TouchList
+
 *   TouchEvent
 
 Touch 对象表示触摸点（一根手指或者一根触摸笔），用来描述触摸动作，包括位置、大小、形状、压力、目标元素等属性。有时，触摸动作由多个触摸点（多根手指或者多根触摸笔）组成，多个触摸点的集合由 TouchList 对象表示。TouchEvent 对象代表由触摸引发的事件，只有触摸屏才会引发这一类事件。
@@ -1612,7 +1592,7 @@ radiusX 属性和 radiusY 属性，分别返回触摸点周围受到影响的椭
 
 rotationAngle 属性表示触摸区域的椭圆的旋转角度，单位为度数，在 0 到 90 度之间。
 
-上面这三个属性共同定义了用户与屏幕接触的区域，对于描述手指这一类非精确的触摸，很有帮助。指尖接触屏幕，触摸范围会形成一个椭圆，这三个属性就用来描述这个椭圆区域。
+上面这三个属性共同定义了用户与屏幕接触的区域，对于描述手指这一类非精确的触摸，很有帮助。指尖接触屏Screen，触摸范围会形成一个椭圆，这三个属性就用来描述这个椭圆区域。
 
 （4）force
 
@@ -1639,8 +1619,11 @@ TouchEvent 对象继承 Event 对象和 UIEvent 对象，表示触摸引发的�
 以下属性都为只读属性，返回一个布尔值，表示触摸的同时，是否按下某个键。
 
 *   altKey 是否按下 alt 键
+
 *   ctrlKey 是否按下 ctrl 键
+
 *   metaKey 是否按下 meta 键
+
 *   shiftKey 是否按下 shift 键
 
 （2）changedTouches
@@ -1742,7 +1725,9 @@ elem.addEventListener('select', function() {
 Change 事件当、、的值发生变化时触发。它与 input 事件的最大不同，就是不会连续触发，只有当全部修改完成时才会触发，而且 input 事件必然会引发 change 事件。具体来说，分成以下几种情况。
 
 *   激活单选框（radio）或复选框（checkbox）时触发。
+
 *   用户提交时触发。比如，从下列列表（select）完成选择，在日期或文件输入框完成选择。
+
 *   当文本框或 textarea 元素的值发生改变，并且丧失焦点时触发。
 
 下面是一个例子。
@@ -2088,7 +2073,7 @@ elem.addEventListener('build', function (e) { ... }, false);
 elem.dispatchEvent(event);
 ```
 
-上面代码触发了自定义事件，该事件会层层向上冒泡。在冒泡过程中，如果有一个元素定义了该事件的监听函数，该监听函数就会触发。
+上面代码触发了自定事件，该事件会层层向上冒泡。在冒泡过程中，如果有一个元素定义了该事件的监听函数，该监听函数就会触发。
 
 由于 IE 不支持这个 API，如果在 IE 中自定义事件，需要使用后文的“老式方法”。
 
@@ -2157,7 +2142,7 @@ function simulateClick() {
 }
 ```
 
-### 自定义事件的老式写法
+### 自定事件的老式写法
 
 老式浏览器不一定支持各种类型事件的构造函数。因此，有时为了兼容，会用到一些非标准的方法。这些方法未来会被逐步淘汰，但是目前浏览器还广泛支持。除非是为了兼容老式浏览器，尽量不要使用。
 
@@ -2182,13 +2167,21 @@ document.dispatchEvent(event);
 createEvent 方法接受一个字符串作为参数，可能的值参见下表“数据类型”一栏。使用了某一种“事件类型”，就必须使用对应的事件初始化方法。
 
 | 事件类型 | 事件初始化方法 |
+
 | --- | --- |
+
 | UIEvents | event.initUIEvent |
+
 | MouseEvents | event.initMouseEvent |
+
 | MutationEvents | event.initMutationEvent |
+
 | HTMLEvents | event.initEvent |
+
 | Event | event.initEvent |
+
 | CustomEvent | event.initCustomEvent |
+
 | KeyboardEvent | event.initKeyEvent |
 
 （2）event.initEvent()
@@ -2204,8 +2197,11 @@ someElement.dispatchEvent(event);
 initEvent 方法可以接受四个参数。
 
 *   type：事件名称，格式为字符串。
+
 *   bubbles：事件是否应该冒泡，格式为布尔值。可以使用 event.bubbles 属性读取它的值。
+
 *   cancelable：事件是否能被取消，格式为布尔值。可以使用 event.cancelable 属性读取它的值。
+
 *   option：为事件对象指定额外的属性。
 
 ### 事件模拟的老式写法
@@ -2249,7 +2245,7 @@ divElement.dispatchEvent(simulateDivClick);
 event.initUIEvent(type, canBubble, cancelable, view, detail)
 ```
 
-该方法的参数含义，可以参见 MouseEvent 构造函数的部分。其中，detail 参数是一个数值，含义与事件类型有关，对于鼠标事件，这个值表示鼠标按键在某个位置按下的次数。
+该方法的参数含义，可以参见 MouseEvent 构造函数的部分。其中，detail 参数是一个数值，含义与事件类型有关，对于鼠事件，这个值表示鼠标按键在某个位置按下的次数。
 
 ```js
 var e = document.createEvent("UIEvent");
@@ -2259,6 +2255,9 @@ e.initUIEvent("click", true, true, window, 1);
 ## 参考链接
 
 *   Wilson Page, [An Introduction To DOM Events](http://coding.smashingmagazine.com/2013/11/12/an-introduction-to-dom-events/)
+
 *   Mozilla Developer Network, [Using Firefox 1.5 caching](https://developer.mozilla.org/en-US/docs/Using_Firefox_1.5_caching)
+
 *   Craig Buckler, [How to Capture CSS3 Animation Events in JavaScript](http://www.sitepoint.com/css3-animation-javascript-event-handlers/)
+
 *   Ray Nicholus, [You Don't Need jQuery!: Events](http://blog.garstasio.com/you-dont-need-jquery/events/)

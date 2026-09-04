@@ -1,10 +1,7 @@
+
 # JavaScript 入门指南
 
-
-
 ![](img/calibre_cover.jpg)
-
-
 
 ## JavaScript 思维
 
@@ -26,7 +23,7 @@ Aravind Shenoy 是 Packt Publishing 的内部作者。他毕业于马尼帕尔�
 
 ## www.PacktPub.com
 
-在 `www.PacktPub.com`，你可以阅读到系列免费技术文章，订阅一系列新闻邮件，并接收 Packt 书籍和电子书的专属折扣和优惠。
+在`www.PacktPub.com`，你可以阅读到系列免费技术文章，订阅一系列新闻邮件，并接收 Packt 书籍和电子书的专属折扣和优惠。
 
 ![www.PacktPub.com](img/00001.jpg)
 
@@ -40,7 +37,7 @@ Aravind Shenoy 是 Packt Publishing 的内部作者。他毕业于马尼帕尔�
 
 ### Packt 账户持有者的免费访问
 
-如果你在 `www.PacktPub.com` 拥有 Packt 账户，你现在就可以用它访问 PacktLib 查看完全免费的书。只需使用你的登录凭据即可立即访问。
+如果你在`www.PacktPub.com`拥有 Packt 账户，你现在就可以用它访问 PacktLib 查看完全免费的书。只需使用你的登录凭据即可立即访问。
 
 ## 概述
 
@@ -51,6 +48,7 @@ Aravind Shenoy 是 Packt Publishing 的内部作者。他毕业于马尼帕尔�
 JavaScript 是一种用于 Web 的脚本语言。在我们开始深入研究 JavaScript 的复杂性之前，我们需要知道为什么要使用它。HTML 告诉浏览器页面看起来什么样，而 JavaScript 将用于动态内容和添加功能。
 
 开始学习 JavaScript 的前提条件如下：
+
 - 之前的 HTML 知识
 - 文本编辑器（如记事本）
 - 你的网络浏览器已启用 JavaScript
@@ -75,18 +73,15 @@ JavaScript 执行代码不需要编译器。JavaScript 可以嵌入到 HTML 代�
 </html>
 ```
 
-当我们看这段代码时，可以看到我们在 `<head>` 部分包含了一行：`script type="text/javascript"`。`script` 标签及其 `type 属性` 告诉浏览器我们已在 HTML 代码中引入了 JavaScript。我们还可以看到代码中有一个 `alert` 命令。我们将在本书的稍后部分讨论 `alert` 命令。在执行代码时，我们可以在屏幕上看到以下输出：
+当我们看这段代码时，可以看到我们在`<head>`部分包含了一行：`script type="text/javascript"`。`script`标签及其`type 属性`告诉浏览器我们已在 HTML 代码中引入了 JavaScript。我们还可以看到代码中有一个`alert`命令。我们将在本书的稍后部分讨论`alert`命令。在执行代码时，我们可以在屏幕上看到以下输出：
 
 ![应用 JavaScript](img/00002.jpg)
 
-我们可以看到 JavaScript 代码必须插入在 `<script>` 和 `</script>` 标签之间。
+我们可以看到 JavaScript 代码必须插入在`<script>`和`</script>`标签之间。
 
+我们的 JavaScript 代码可以放在`<head>`或`<body>`标签中。这取决于选择，并取决于网页。如果有很多样式和视频，最好将 JavaScript 代码保留在`<body>`标签中。这可以确保在 JavaScript 出现之前，网页及其资源已经完全加载。另一个原因是，除了 JavaScript 文件外，任何资源都是异步加载的。然而，当正在加载 JavaScript 文件时，它们是由于一个接一个地加载的。这会阻碍性能。
 
-
-
-我们的 JavaScript 代码可以放在 `<head>` 或 `<body>` 标签中。这取决于选择，并取决于网页。如果有很多样式和视频，最好将 JavaScript 代码保留在 `<body>` 标签中。这可以确保在 JavaScript 出现之前，网页及其资源已经完全加载。另一个原因是，除了 JavaScript 文件外，任何资源都是异步加载的。然而，当正在加载 JavaScript 文件时，它们是由于一个接一个地加载的。这会阻碍性能。
-
-我们必须理解，如果有很多代码要写，那么将 JavaScript 代码与 HTML 代码分离始终是系统化的做法。在书中，为了方便起见，我们将 JavaScript 嵌入在 HTML 的 `<script>` 标签之间。然而，在实际情况中，将 JavaScript 代码作为独立文件是一个良好的实践。为此，我们需要创建一个独立的 JavaScript 文件，并以 `.js` 扩展名保存它。JavaScript 代码必须写在这个单独的 `.js` 文件中。假设我们创建了一个名为 `main.js` 的 JavaScript 文件。然后我们在 HTML 代码中调用该 `main.js` 文件。让我们来看代码示例以查看过程：
+我们必须理解，如果有很多代码要写，那么将 JavaScript 代码与 HTML 代码分离始终是系统化的做法。在书中，为了方便起见，我们将 JavaScript 嵌入在 HTML 的`<script>`标签之间。然而，在实际情况中，将 JavaScript 代码作为独立文件是一个良好的实践。为此，我们需要创建一个独立的 JavaScript 文件，并以`.js`扩展名保存它。JavaScript 代码必须写在这个单独的`.js`文件中。假设我们创建了一个名为`main.js`的 JavaScript 文件。然后我们在 HTML 代码中调用该`main.js`文件。让我们来看代码示例以查看过程：
 
 ```html
 <!DOCTYPE html>
@@ -98,19 +93,19 @@ JavaScript 执行代码不需要编译器。JavaScript 可以嵌入到 HTML 代�
 </html>
 ```
 
-在 `.js` 文件中，我们需要编写以下代码段：
+在`.js`文件中，我们需要编写以下代码段：
 
 ```javascript
 alert(" Welcome to Packt ");
 ```
 
-当我们执行该代码时，我们将得到与之前的示例相同的输出。正如我们所看到的，我们在 HTML 文件中通过使用以下代码调用了 `main.js` 文件：
+当我们执行该代码时，我们将得到与之前的示例相同的输出。正如我们所看到的，我们在 HTML 文件中通过使用以下代码调用了`main.js`文件：
 
 ```html
 <script type="text/javascript" src="main.js"></script>
 ```
 
-在这里，`main.js` 文件应该与 HTML 文件在相同的路径下。如果它在不同的文件夹中，我们需要指定整个路径。
+在这里，`main.js`文件应该与 HTML 文件在相同的路径下。如果它在不同的文件夹中，我们需要指定整个路径。
 
 因此，我们已经看到了在代码中应用 JavaScript 的过程。
 
@@ -126,11 +121,11 @@ var amount=5;
 const a;
 ```
 
-显而易见，变量前面应该有 `var` 关键字，而常量前面必须有 `const` 关键字。我们还可以看到在声明变量时可以给它赋值。
+显而易见，变量前面应该有`var`关键字，而常量前面必须有`const`关键字。我们还可以看到在声明变量时可以给它赋值。
 
 ### 注意
 
-`const` 兼容除 Internet Explorer 之外的所有现代浏览器版本。
+`const`兼容除 Internet Explorer 之外的所有现代浏览器版本。
 
 变量可以是局部的也可以是全局的。让我们看看我们如何区分局部变量和全局变量。
 
@@ -140,7 +135,7 @@ const a;
 
 ## 全局和局部变量
 
-`Global variables`（全局变量）可以从脚本的任何位置访问，而 `local variables`（局部变量）只能在函数内部访问。
+`Global variables`（全局变量）可以从脚本的任何位置访问，而`local variables`（局部变量）只能在函数内部访问。
 
 让我们通过以下代码更好地理解：
 
@@ -164,10 +159,6 @@ const a;
 </body>
 </html>
 ```
-
-
-
-
 
 让我们来看这段代码段：
 
@@ -222,11 +213,11 @@ JavaScript 中有许多内置函数。我们也可以在 JavaScript 中编写自
 
 ![函数](img/00007.jpg)
 
-在点击 `Click Here` 链接后，我们可以看到以下输出：
+在点击`Click Here`链接后，我们可以看到以下输出：
 
 ![函数](img/00008.jpg)
 
-我们得到一个请求输入的提示框。假设我们输入名称 `Joe` 并点击 `OK`。我们将得到如代码中定义的如下警报框。
+我们得到一个请求输入的提示框。假设我们输入名称`Joe`并点击`OK`。我们将得到如代码中定义的如下警报框。
 
 ![函数](img/00009.jpg)
 
@@ -235,21 +226,21 @@ JavaScript 中有许多内置函数。我们也可以在 JavaScript 中编写自
 - `alert`
 - `prompt`
 
-`alert` 和 `prompt` 是 JavaScript 中的内置函数。
+`alert`和`prompt`是 JavaScript 中的内置函数。
 
 ### 注意
 
-JavaScript 是区分大小写的；因此，我们必须使用小写的 `alert` 和 `prompt`，否则代码将无法运行。
+JavaScript 是区分大小写的；因此，我们必须使用小写的`alert`和`prompt`，否则代码将无法运行。
 
-`alert` 和 `prompt` 函数在 JavaScript 中常用。当我们需要通知用户某些进展时，使用 alert 框。当我们要在用户点击链接或浏览网站之前提供一些信息时，也会使用它。同样，当我们要在用户访问页面之前获取输入时，就会使用 `prompt` 框。
+`alert`和`prompt`函数在 JavaScript 中常用。当我们需要通知用户某些进展时，使用 alert 框。当我们要在用户点击链接或浏览网站之前提供一些信息时，也会使用它。同样，当我们要在用户访问页面之前获取输入时，就会使用`prompt`框。
 
-如果你观察代码可以明显看出 `PacktPub()` 函数在调用它之前已经声明。在 `PacktPub()` 函数中，我们使用了 `prompt` 和 `alert` 函数。`prompt` 命令在执行时会提示用户输入。`Hey` 后的双引号 `""` 是用于输入的默认字符串。在代码中，`x` 是一个变量，被了 `prompt` 函数的结果。同样，`x` 在下一行的 `alert` 命令中被使用。一旦我们输入名称 `Joe`，就会得到一个警报：`Welcome to Packt, Joe`。
+如果你观察代码可以明显看出`PacktPub()`函数在调用它之前已经声明。在`PacktPub()`函数中，我们使用了`prompt`和`alert`函数。`prompt`命令在执行时会提示用户输入。`Hey`后的双引号`""`是用于输入的默认字符串。在代码中，`x`是一个变量，被了`prompt`函数的结果。同样，`x`在下一行的`alert`命令中被使用。一旦我们输入名称`Joe`，就会得到一个警报：`Welcome to Packt, Joe`。
 
 现在必须已经理解了函数的概念。函数在 JavaScript 中被广泛使用，并在现实编程中广泛用于返回结果。因此，函数是 JavaScript 的核心组成部分。
 
 ## 对象及其在 JavaScript 中的作用
 
-JavaScript 是一种面向对象的语言。我们有了一些内置对象，例如 `Math`、`Date` 和 `Document`。然而，我们也可以创建自己的对象并进行自定义以适应我们的需求。
+JavaScript 是一种面向对象的语言。我们有了一些内置对象，例如`Math`、`Date`和`Document`。然而，我们也可以创建自己的对象并进行自定义以适应我们的需求。
 
 对象通过属性和方法来定义。这些是赋予 JavaScript 中面向对象概念意义的属性。属性（property）是定义对象值的属性。方法定义了可以在对象上执行的操作。让我们看看以下代码来理解属性如何定义对象的值：
 
@@ -273,7 +264,7 @@ JavaScript 是一种面向对象的语言。我们有了一些内置对象，例
 
 ![对象及其在 JavaScript 中的作用](img/00010.jpg)
 
-因此，我们为一只名为 `Monster` 的狗定义了属性。如果你观察代码和输出，我们可以看到我们使用连接运算符（concatenation operator）通过字符串值连接了属性。需要记住的一点是，字符串中的空格是被考虑在内的。观察我们在 `" is a dog that has "` 字符串前后各有一个空格，以及它是如何反映在输出中的。回到对象，我们通过指定名称、年龄和眼睛颜色定义了这只狗。在 JavaScript 中，所有用户定义的对象和内置对象都属于一个名为 `Object` 的对象。让我们理解 `new` 运算符和构造函数。在前面的代码中，有一行代码 `var animal=new Object();`。因此，显然 `new` 运算符用于创建对象的实例。在这种情况下使用的构造函数是 `Object()`。`new` 运算符后面跟着构造方法。这解释了创建新对象的结构。除了内置函数，我们也可以使用自定义函数。让我们看看以下代码来理解它是如何工作的：
+因此，我们为一只名为`Monster`的狗定义了属性。如果你观察代码和输出，我们可以看到我们使用连接运算符（concatenation operator）通过字符串值连接了属性。需要记住的一点是，字符串中的空格是被考虑在内的。观察我们在`" is a dog that has "`字符串前后各有一个空格，以及它是如何反映在输出中的。回到对象，我们通过指定名称、年龄和眼睛颜色定义了这只狗。在 JavaScript 中，所有用户定义的对象和内置对象都属于一个名为`Object`的对象。让我们理解`new`运算符和构造函数。在前面的代码中，有一行代码`var animal=new Object();`。因此，显然`new`运算符用于创建对象的实例。在这种情况下使用的构造函数是`Object()`。`new`运算符后面跟着构造方法。这解释了创建新对象的结构。除了内置函数，我们也可以使用自定义函数。让我们看看以下代码来理解它是如何工作的：
 
 ```html
 <html>
@@ -305,20 +296,17 @@ JavaScript 是一种面向对象的语言。我们有了一些内置对象，例
 
 ![对象及其在 JavaScript 中的作用](img/00011.jpg)
 
-我们需要理解函数和方法非常相似。唯一的区别在于，函数是一个独立的语句块，而方法属于一个对象，并且可以通过 `this` 关键字被引用。在代码中，我们定义了 `rate` 函数将作为方法使用；然后我们将 `rate` 方法作为属性赋值到 `prose` 函数中。因此，我们看到了 JavaScript 对象中属性和方法的概念。
+我们需要理解函数和方法非常相似。唯一的区别在于，函数是一个独立的语句块，而方法属于一个对象，并且可以通过`this`关键字被引用。在代码中，我们定义了`rate`函数将作为方法使用；然后我们将`rate`方法作为属性赋值到`prose`函数中。因此，我们看到了 JavaScript 对象中属性和方法的概念。
 
 正如我们提到的，JavaScript 是一种面向对象的语言。正如任何面向对象的语言一样，面向对象编程（OOP）概念也适用于 JavaScript。封装、继承、抽象和多态是可以应用于 JavaScript 的 OOP 特性。
 
-
-
-
-我们也可以通过在 `new Array` 构造函数直接输入项来创建一个数组。下面的代码段将展示它的工作原理：
+我们也可以通过在`new Array`构造函数直接输入项来创建一个数组。下面的代码段将展示它的工作原理：
 
 ```javascript
 var animals = new Array("cat", "dog", "mouse");
 ```
 
-我们还可以不使用 `new Array` 构造函数来定义数组。
+我们还可以不使用`new Array`构造函数来定义数组。
 
 ```javascript
 var animals = ["cat", "dog", "mouse"];
@@ -333,6 +321,8 @@ var animals = ["cat", "dog", "mouse"];
 如果我们想获取数组中的第三元素，我们需要指定它的索引位置。
 
 让我们来看下面的代码以理解它的工作原理：
+
+
 
 ```html
 <<html>
@@ -374,22 +364,22 @@ document.write(y);
 
 简而言之，让我们来看数组的各种属性和方法：
 
-*   **push**: 在数组末尾添加项
-*   **pop**: 从数组末尾删除项
-*   **reverse**: 反转数组中元素的顺序
-*   **toString**: 将数组转换为字符串
-*   **sort**: 按字母顺序或数字按升序或降序对项目进行排序
+- `push`：在数组末尾添加项
+- `pop`：从数组末尾删除项
+- `reverse`：反转数组中元素的顺序
+- `toString`：将数组转换为字符串
+- `sort`：按字母顺序或数字按升序或降序对项目进行排序
 
-# jQuery 概览 – 时代之需
+# jQuery 概览——时代之需
 
-jQuery 是一个多浏览器 JavaScript 库，由 John Resig 发明。它是一个开源库。具有大量动画和导航的现代复杂网站可以使用 jQuery 轻松开发。`jQuery mobile` (`JQM`) 也是 jQuery 的一个衍生产品。随着智能手机和平板电脑的出现，响应式网页设计是当今趋势。使用 jQuery 可以实现响应式网页设计。
+jQuery 是一个多浏览器 JavaScript 库，由 John Resig 发明。它是一个开源库。具有大量动画和导航的现代复杂网站可以使用 jQuery 轻松开发。`jQuery mobile`（`JQM`）也是 jQuery 的一个衍生产品。随着智能手机和平板电脑的出现，响应式网页设计是当今趋势。使用 jQuery 可以实现响应式网页设计。
 
 ## 将 jQuery 添加到网页中
 
 可以通过以下方式将 jQuery 添加到网站：
 
-*   通过下载库副本在本地引入 jQuery
-*   引入托管的 jQuery 副本
+- 通过下载库副本在本地引入 jQuery
+- 引入托管的 jQuery 副本
 
 让我们在接下来的章节中查看这两种方法。
 
@@ -427,7 +417,7 @@ jQuery 是一个多浏览器 JavaScript 库，由 John Resig 发明。它是一�
 
 ### 引入托管的 jQuery 副本
 
-我们可以使用 Google 或 Microsoft 的`内容分发网络` (`CDN`) 来托管 jQuery 文件。让我们来看下面的代码看看它是如何工作的：
+我们可以使用 Google 或 Microsoft 的`内容分发网络`（`CDN`）来托管 jQuery 文件。让我们来看下面的代码看看它是如何工作的：
 
 ```html
 <script src="//ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
@@ -496,10 +486,6 @@ alert("Welcome to Packt Publishing");
 ![使用 document ready 功能](img/00016.jpg)
 
 因此，在 jQuery 中包含 document ready 功能是一个良好的做法。我们必须使用以下语法来来实现 document ready 功能：
-
-
-
-
 
 ```javascript
 $(document).ready(function()
@@ -616,11 +602,10 @@ Packt Publishing
 
 ![Anonymous functions](img/00017.jpg)
 
-当我们点击 **Click here to Hide** 时，包含 **Packt Publishing** 的框消失了。当我们点击 **Click here to Display** 时，框再次出现。我们在 jQuery 代码中使用了 `show()` 方法和 `hide()` 方法。我们还指定了过渡发生的毫秒时间。
+当我们点击 `Click here to Hide` 时，包含 `Packt Publishing` 的框消失了。当我们点击 `Click here to Display` 时，框再次出现。我们在 jQuery 代码中使用了 `show()` 方法和 `hide()` 方法。我们还指定了过渡发生的毫秒时间。
 
 因此，我们可以看到使用 jQuery 创建动画是多么简单。还有许多其他方法，例如 `toggle` 和 `fade`（仅列举几项），但我们无法在书中涵盖 jQuery 所提供的所有功能。
 
 jQuery 是一个庞杂的主题，这本书将只关注它的某一方面。Packt 有许多关于 jQuery 的书籍，例如 *jQuery for Designers: Beginner's Guide*（Packt Publishing），你可以访问我们的网页 [`www.packtpub.com/books?keys=jquery`](http://www.packtpub.com/books?keys=jquery) 来查看针对你的需求定制的各种 jQuery 书籍。
 
 编程会随着练习变得更好。如果你能将书中提到的代码复制到记事本或 Notepad++ 等编辑器中练习，我们将不胜感激。当你在现实生活中实现书中学到的内容时，你将发现实际操作 JavaScript 是多么有趣的事情。我们在书中涵盖了对象和数组。还有不同类型的对象，例如 `Math` 对象和 `Date` 对象等（等等）。然而，这里无法涵盖所有内容。
-

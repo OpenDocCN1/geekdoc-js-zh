@@ -1,3 +1,5 @@
+
+
 # 第四章：抽象语法树
 
 > 原文：[从零开始编译汇编](https://keleshev.com/compiling-to-assembly-from-scratch/04-abstract-syntax-tree)
@@ -33,7 +35,7 @@ new Return(
 
 ![对应于 n * factorial(n - 1) 的 AST](img/12cdfb9105052361e252391b35466581.png)
 
-对应于`**return**` `n * factorial(n - 1)`的 AST
+对应于`return n * factorial(n - 1)`的 AST。
 
 为什么使用抽象语法树（AST）？当处理语言结构时，AST 使得对其进行操作变得方便：查询、构建和修改。
 
@@ -42,16 +44,14 @@ new Return(
 例如，AST 可以包含源位置信息以进行错误报告。或者，如果我们的编译器需要处理这些，它可以包含文档注释。或者，如果我们想要有风格保留的转换，如自动重构，它可以包含所有注释和一些空白的概念。
 
 > **实际上，**
-> 
+>
 > 还有**具体语法树**，也称为**解析树**。它们反映了结构层次直到每个输入符号。它们通常包含太多我们不关心的细节，当我们编写编译器时。但它们非常适合风格保留的转换。
 
 我们将代表 AST 中的每种节点类型作为一个单独的类：`Return`、`Multiply`、`Id`等。然而，在类型级别上，我们希望能够引用“任何 AST 节点”。为此，TypeScript 提供了几个工具：
 
-+   接口，
-
-+   抽象类，
-
-+   联合类型。
+- 接口
+- 抽象类
+- 联合类型
 
 这两种方法都有效。我们将使用一个接口：
 
@@ -93,9 +93,9 @@ class Number implements AST {
 
 它节省了我们相当多的输入，这将会很有用，因为我们需要定义许多类型的 AST 节点。
 
-我们将我们的 AST 节点命名为 `Number`，因为 JavaScript 和 TypeScript 中的数据类型被称为 `number`。然而，我们的编译器将只处理无符号整数。
+我们将我们的 AST 节点命名为`Number`，因为 JavaScript 和 TypeScript 中的数据类型被称为`number`。然而，我们的编译器将只处理无符号整数。
 
-`Number` 节点的示例
+`Number`节点的示例：
 
 | 源代码 | 抽象语法树 (AST) |
 | --- | --- |
@@ -104,7 +104,7 @@ class Number implements AST {
 
 ## 标识符节点
 
-标识符，或简称为 *id*，指的是代码中的变量。
+标识符，或简称为`id`，指的是代码中的变量。
 
 ```js
 class Id implements AST {
@@ -114,7 +114,7 @@ class Id implements AST {
 }
 ```
 
-`Id` 节点的示例
+`Id`节点的示例：
 
 | 源代码 | 抽象语法树 (AST) |
 | --- | --- |
@@ -123,7 +123,7 @@ class Id implements AST {
 
 ## 操作符节点
 
-下一个 AST 节点是 `Not`，它代表逻辑否定运算符 (`!`)。
+下一个 AST 节点是`Not`，它代表逻辑否定运算符（`!`）。
 
 ```js
 class Not implements AST {
@@ -133,16 +133,16 @@ class Not implements AST {
 }
 ```
 
-`Not` 节点的示例
+`Not`节点的示例：
 
 | 源代码 | 抽象语法树 (AST) |
 | --- | --- |
 | `!x` | `new Not(new Id("x"))` |
 | `!42` | `new Not(new Number(42))` |
 
-否定是唯一的一种 *前缀运算符*（或 *一元运算符*）。然而，我们定义了几个 *中缀运算符*（或 *二元运算符*）。
+否定是唯一的一种**前缀运算符**（或**一元运算符**）。然而，我们定义了几个**中缀运算符**（或**二元运算符**）。
 
-等于运算符 (`==`) 和其相反运算符 (`!=`)。
+等于运算符（`==`）和其相反运算符（`!=`）：
 
 ```js
 class Equal implements AST {
@@ -160,14 +160,14 @@ class NotEqual implements AST {
 }
 ```
 
-`Equal` 和 `NotEqual` 节点的示例
+`Equal`和`NotEqual`节点的示例：
 
 | 源代码 | 抽象语法树 (AST) |
 | --- | --- |
 | `x == y` | `new Equal(new Id("x"), new Id("y"))` |
 | `10 != 25` | `new NotEqual(new Number(10), new Number(25))` |
 
-加法 (`+`)、减法 (`-`)、乘法 (`*`) 和除法 (`/`)：
+加法（`+`）、减法（`-`）、乘法（`*`）和除法（`/`）：
 
 ```js
 class Add implements AST {
@@ -201,33 +201,16 @@ class Divide implements AST {
 }
 ```
 
-`Add` 和 `Multiply` 节点的示例
+`Add`和`Multiply`节点的示例：
 
 | 源代码 | 抽象语法树 (AST) |
 | --- | --- |
-| `x + y` |
-
-```js
- new Add(new Id("x"),
- new Id("y"))
-```
-
-
-
-|  |  |
-| --- | --- |
-| `10 * 25` |
-
-```js
- new Multiply(new Number(10),
- new Number(25))
-```
-
-
+| `x + y` | `new Add(new Id("x"), new Id("y"))` |
+| `10 * 25` | `new Multiply(new Number(10), new Number(25))` |
 
 注意，由于参数本身就是 AST，这意味着它们可以任意嵌套。
 
-例如，`42 + !(20 != 10)` 将变为：
+例如，`42 + !(20 != 10)`将变为：
 
 ```js
 new Add(new Number(42),
@@ -239,7 +222,7 @@ new Add(new Number(42),
 
 ## 调用节点
 
-`Call` 指的是函数名（或 *callee*），以及参数数组。例如，`f(x)` 变为：`new Call("f", [new Id("x")])`。
+`Call`指的是函数名（或`callee`），以及参数数组。例如，`f(x)`变为：`new Call("f", [new Id("x")])`。
 
 ```js
 class Call implements AST {
@@ -258,47 +241,23 @@ class Call implements AST {
 
 我们的基础编译器的语言限制使得只能调用命名函数。
 
-我们不能将参数数组命名为 `arguments`，因为这会与 JavaScript 内置的 `arguments` 对象冲突。所以我们有些不情愿地将其称为 `args`。
+我们不能将参数数组命名为`arguments`，因为这会与 JavaScript 内置的`arguments`对象冲突。所以我们有些不情愿地将其称为`args`。
 
-`Call` 节点很有趣，因为它既有原始字符串，又有 AST 数组作为其成员。JavaScript 没有一个统一的协议来处理相等性；这就是为什么 `Call` 是实现 JavaScript 中 `equals` 方法的优秀示例：
+`Call`节点很有趣，因为它既有原始字符串，又有 AST 数组作为其成员。JavaScript 没有一个统一的协议来处理相等性；这就是为什么`Call`是实现 JavaScript 中`equals`方法的优秀示例：
 
-+   它使用 `instanceof` 运算符来检查另一个 AST 是否也是 `Call`。
-
-+   它使用 `===` 运算符比较 `callee` 字符串。
-
-+   它使用每个参数的 `.equals` 方法来比较 AST 节点。
-
-+   它通过长度比较数组并检查`每个`元素。
+- 它使用`instanceof`运算符来检查另一个 AST 是否也是`Call`。
+- 它使用`===`运算符比较`callee`字符串。
+- 它使用每个参数的`.equals`方法来比较 AST 节点。
+- 它通过长度比较数组并检查每个元素。
 
 除了 JavaScript 之外的语言通常有更优雅的方式来处理结构相等性。
 
-`Call` 节点的示例
+`Call`节点的示例：
 
 | 源代码 | 抽象语法树 (AST) |
 | --- | --- |
-| `f(x, y)` |
-
-```js
- new Call("f", [
- new Id("x"),
- new Id("y"),
- ])
-```
-
-
-
-|  |  |
-| --- | --- |
-| `factorial(n - 1)` |
-
-```js
- new Call("factorial", [
- new Subtract(new Id("n"),
- new Number(1)),
- ])
-```
-
-
+| `f(x, y)` | `new Call("f", [new Id("x"), new Id("y")])` |
+| `factorial(n - 1)` | `new Call("factorial", [new Subtract(new Id("n"), new Number(1))])` |
 
 ## 返回节点
 
@@ -310,33 +269,16 @@ class Return implements AST {
 }
 ```
 
-`Return` 节点的示例
+`Return`节点的示例：
 
 | 源代码 | 抽象语法树 (AST) |
 | --- | --- |
-| `return 0;` |
-
-```js
-new Return(new Number(0))
-```
-
-
-
-|  |  |
-| --- | --- |
-| `return n - 1;` |
-
-```js
-new Return(
- new Subtract(new Id("n"),
- new Number(1)))
-```
-
-
+| `return 0;` | `new Return(new Number(0))` |
+| `return n - 1;` | `new Return(new Subtract(new Id("n"), new Number(1)))` |
 
 ## 块节点
 
-`Block` 指的是由花括号分隔的代码块。
+`Block`指的是由花括号分隔的代码块。
 
 ```js
 class Block implements AST {
@@ -346,57 +288,20 @@ class Block implements AST {
 }
 ```
 
-`Block` 节点的示例
+`Block`节点的示例：
 
 | 源代码 | 抽象语法树 (AST) |
 | --- | --- |
+| `{}` | `new Block([])` |
+| `{ f(x); return y; }` | `new Block([new Call("f", [new Id("x")]), new Return(new Id("y"))])` |
 
-
-
-```js
-{}
-```
-
-
-
-```js
-new Block([])
-```
-
-
-
-|  |  |
-| --- | --- |
-
-
-
-```js
-{
- f(x);
- return y;
-}
-```
-
-
-
-```js
-new Block([
- new Call("f", [new Id("x")]),
- new Return(new Id("y")),
-])
-```
-
-
-
-## If 节点
+## `If`节点
 
 `If`节点有三个分支：
 
-+   `conditional`指的是评估为真或假的表达式，
-
-+   `consequence`是在真情况下采取的分支，并且
-
-+   `alternative`是在假情况下采取的分支。
+- `conditional`指的是评估为真或假的表达式；
+- `consequence`是在真情况下采取的分支；以及
+- `alternative`是在假情况下采取的分支。
 
 ```js
 class If implements AST {
@@ -428,7 +333,7 @@ new If(
 )
 ```
 
-大括号对于 if 语句是可选的，因此以下：
+大括号对于`if`语句是可选的，因此以下：
 
 ```js
 if (x == 42)
@@ -463,7 +368,7 @@ class Function implements AST {
 }
 ```
 
-考虑以下函数定义。
+考虑以下函数定义：
 
 ```js
 function f(x, y) {
@@ -471,7 +376,7 @@ function f(x, y) {
 }
 ```
 
-当转换为 AST 时，它变成如下所示。
+当转换为 AST 时，它变成如下所示：
 
 ```js
 new Function("f", ["x", "y"], new Block([
@@ -508,33 +413,16 @@ class Assign implements AST {
 
 赋值与变量声明在以下方面有所不同：赋值改变现有变量的值，而不是定义一个新的变量。至少，这是我们将会假设的区分。JavaScript 允许对尚未定义的变量进行赋值；在这种情况下，它将创建一个全局变量。另一方面，TypeScript 不允许这种可能导致错误的行为。
 
-`Assign`节点的示例
+`Assign`节点的示例：
 
 | 源代码 | AST |
 | --- | --- |
-| `x = 42;` |
+| `x = 42;` | `new Assign("x", new Number(42))` |
+| `y = a + b;` | `new Assign("y", new Add(new Id("a"), new Id("b")))` |
 
-```js
-new Assign("x", new Number(42))
-```
+## `While`循环节点
 
-
-
-|  |  |
-| --- | --- |
-| `y = a + b;` |
-
-```js
-new Assign("y",
- new Add(new Id("a"),
- new Id("b"))))
-```
-
-
-
-## While 循环节点
-
-我们 AST 的最后一个节点和我们的基线语言的最后一个结构是 while 循环。
+我们 AST 的最后一个节点和我们的基线语言的最后一个结构是`while`循环。
 
 ```js
 class While implements AST {
@@ -545,38 +433,13 @@ class While implements AST {
 }
 ```
 
-`While`节点的示例
+`While`节点的示例：
 
 | 源代码 | AST |
 | --- | --- |
+| `while (x) f();` | `new While(new Id("x"), new Call("f", []))` |
+| `while (x) { f(); }` |  |
 
-
-
-```js
-while (x)
- f();
-```
-
-
-
-```js
-new While(
- new Id("x"),
- new Call("f", []))
-```
-
-
-
-|  |  |
-| --- | --- |
-
-
-
-```js
-while (x) {
- f();
-}
-```
 
 
 
@@ -585,8 +448,6 @@ new While(new Id("x"), new Block([
  new Call("f", []),
 ]))
 ```
-
-
 
 ## 总结
 
@@ -619,196 +480,23 @@ new Function("factorial", ["n"], new Block([
 ]))
 ```
 
-我们以一个表格结束本章，该表格总结了我们所涵盖的所有 AST 构造函数，它们的签名以及这些 AST 节点可以表示的源代码示例。
+我们以一个表格结束本章，该表格总结了我们所涵盖的所有 AST 构造函数、它们的签名以及这些 AST 节点可以表示的源代码示例。
 
-AST 构造函数签名及其示例总结
+### AST 构造函数签名及其示例总结
 
 | AST 构造函数签名 | 示例 |
 | --- | --- |
-
-
-
-```js
-Number(value: number)
-Id(value: string)
-Not(term: AST)
-Equal(left: AST, right: AST)
-NotEqual(left: AST, right: AST)
-Add(left: AST, right: AST)
-Subtract(left: AST, right: AST)
-Multiply(left: AST, right: AST)
-Divide(left: AST, right: AST)
-```
-
-
-
-```js
-42
-x
-!term
-left == right
-left != right
-left + right
-left - right
-left * right
-left / right
-```
-
-
-
-|  |  |
-| --- | --- |
-
-
-
-```js
-Call(callee: string,
- args: Array<AST>)
-```
-
-
-
-```js
-callee(a1, a2, a3)
-```
-
-
-
-|  |  |
-| --- | --- |
-
-
-
-```js
-Return(term: AST)
-```
-
-
-
-```js
-return term;
-```
-
-
-
-|  |  |
-| --- | --- |
-
-
-
-```js
-Block(statements: Array<AST>)
-```
-
-
-
-```js
-{ s1; s2; s3; }
-```
-
-
-
-|  |  |
-| --- | --- |
-
-
-
-```js
-If(conditional: AST,
- consequence: AST,
- alternative: AST)
-```
-
-
-
-```js
-if (conditional)
- consequence
-else
- alternative
-```
-
-
-
-|  |  |
-| --- | --- |
-
-
-
-```js
-Function(
- name: string,
- parameters: Array<string>,
- body: AST,
-)
-```
-
-
-
-```js
-function name(p1) {
- body;
-}
-```
-
-
-
-|  |  |
-| --- | --- |
-
-
-
-```js
-Var(name: string,
- value: AST)
-```
-
-
-
-```js
-var name = value;
-```
-
-
-
-|  |  |
-| --- | --- |
-
-
-
-```js
-Assignment(name: string,
- value: AST)
-```
-
-
-
-```js
-name = value;
-```
-
-
-
-|  |  |
-| --- | --- |
-
-
-
-```js
-While(conditional: AST,
- body: AST)
-```
-
-
-
-```js
-while (conditional)
- body;
-```
-
-
-
-在接下来的两章中，你将学习如何将程序从源代码转换为 AST，换句话说，就是关于*解析*。
+| ```js<br>Number(value: number)<br>Id(value: string)<br>Not(term: AST)<br>Equal(left: AST, right: AST)<br>NotEqual(left: AST, right: AST)<br>Add(left: AST, right: AST)<br>Subtract(left: AST, right: AST)<br>Multiply(left: AST, right: AST)<br>Divide(left: AST, right: AST)<br>``` | ```js<br>42<br>x<br>!term<br>left == right<br>left != right<br>left + right<br>left - right<br>left * right<br>left / right<br>``` |
+| ```js<br>Call(callee: string,<br> args: Array<AST>)<br>``` | ```js<br>callee(a1, a2, a3)<br>``` |
+| ```js<br>Return(term: AST)<br>``` | ```js<br>return term;<br>``` |
+| ```js<br>Block(statements: Array<AST>)<br>``` | ```js<br>{ s1; s2; s3; }<br>``` |
+| ```js<br>If(conditional: AST,<br> consequence: AST,<br> alternative: AST)<br>``` | ```js<br>if (conditional)<br> consequence<br>else<br> alternative<br>``` |
+| ```js<br>Function(<br> name: string,<br> parameters: Array<string>,<br> body: AST,<br>)<br>``` | ```js<br>function name(p1) {<br> body;<br>}<br>``` |
+| ```js<br>Var(name: string,<br> value: AST)<br>``` | ```js<br>var name = value;<br>``` |
+| ```js<br>Assignment(name: string,<br> value: AST)<br>``` | ```js<br>name = value;<br>``` |
+| ```js<br>While(conditional: AST,<br> body: AST)<br>``` | ```js<br>while (conditional)<br> body;<br>``` |
+
+在接下来的两章中，你将学习如何将程序从源代码转换为 AST，换句话说，就是关于`解析`。
 
 下一章：第五章\. 解析器组合器
 

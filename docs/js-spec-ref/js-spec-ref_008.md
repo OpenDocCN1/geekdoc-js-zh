@@ -1,15 +1,5 @@
-# 2.4 对象
 
-*   概述
-    *   生成方法
-    *   读写属性
-    *   属性的删除
-    *   对象的引用
-    *   in 运算符
-    *   for...in 循环
-    *   类似数组的对象
-    *   with 语句
-    *   参考链接
+# 2.4 对象
 
 ## 概述
 
@@ -75,7 +65,7 @@ var o = {
 
 上面的代码中 m 属性后面的那个逗号，有或没有都不算错。但是，ECMAScript 3 不允许添加逗号，所以如果要兼容老式浏览器（比如 IE 8），那就不能加这个逗号。
 
-### 生成方法
+## 生成方法
 
 对象的生成方法，通常有三种方法。除了像上面那样直接使用大括号生成（{}），还可以用 new 命令生成一个 Object 对象的实例，或者使用 Object.create 方法生成。
 
@@ -87,7 +77,7 @@ var o3 = Object.create(null);
 
 上面三行语句是等价的。一般来说，第一种采用大括号的写法比较简洁，第二种采用构造函数的写法清晰地表示了意图，第三种写法一般用在需要对象继承的场合。关于第二种写法，详见《标准库》一章的 Object 对象一节，第三种写法详见《面向对象编程》一章。
 
-### 读写属性
+## 读写属性
 
 （1）读取属性
 
@@ -181,7 +171,7 @@ Object.keys(o);
 // ["key1", "key2"]
 ```
 
-### 属性的删除
+## 属性的删除
 
 删除一个属性，需要使用 delete 命令。
 
@@ -225,7 +215,7 @@ delete o.p // false
 
 另外，需要注意的是，delete 命令只能删除对象本身的属性，不能删除继承的属性（关于继承参见《面向对象编程》一节）。delete 命令也不能删除 var 命令声明的变量，只能用来删除属性。
 
-### 对象的引用
+## 对象的引用
 
 如果不同的变量名指向同一个对象，那么它们都是这个对象的引用，也就是说指向同一个内存地址。修改其中一个变量，会影响到其他所有变量。
 
@@ -254,7 +244,7 @@ y // 1
 
 上面的代码中，当 x 的值发生变化后，y 的值并不变，这就表示 y 和 x 并不是指向同一个内存地址。
 
-### in 运算符
+## in 运算符
 
 in 运算符用于检查对象是否包含某个属性（注意，检查的是键名，不是键值），如果包含就返回 true，否则返回 false。
 
@@ -307,7 +297,7 @@ o.hasOwnProperty('toString') // false
 
 上面代码中，toString 方法不是对象 o 自身的属性，而是继承的属性，hasOwnProperty 方法可以说明这一点。但是，in 运算符不能识别，对继承的属性也返回 true。
 
-### for...in 循环
+## for...in 循环
 
 for...in 循环用来遍历一个对象的全部属性。
 
@@ -553,6 +543,9 @@ p.join('') // "Hello Alice!"
 ## 参考链接
 
 *   Dr. Axel Rauschmayer，[Object properties in JavaScript](http://www.2ality.com/2012/10/javascript-properties.html)
+
 *   Lakshan Perera, [Revisiting JavaScript Objects](http://www.laktek.com/2012/12/29/revisiting-javascript-objects/)
+
 *   Angus Croll, [The Secret Life of JavaScript Primitives](http://javascriptweblog.wordpress.com/2010/09/27/the-secret-life-of-javascript-primitives/)i
+
 *   Dr. Axel Rauschmayer, [JavaScript’s with statement and why it’s deprecated](http://www.2ality.com/2011/06/with-statement.html)

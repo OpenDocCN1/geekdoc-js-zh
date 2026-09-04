@@ -1,27 +1,28 @@
-# Ember.js 入门指南之三十包裹内容
 
-准备工作：
+# Ember.js 入门指南之三十：包裹内容
+
+## 准备工作
 
 ```js
-ember g route wrapping-content-in-component-route  
-ember g component wrapping-content-in-component 
+ember g route wrapping-content-in-component-route
+ember g component wrapping-content-in-component
 ```
 
 有些情况下，你需要定义一个包裹其他模板提供的数据的组件。比如下面的例子：
 
 ```js
-<!--  app/templates/components/wrapping-content-in-component.hbs  -->
+<!-- app/templates/components/wrapping-content-in-component.hbs -->
 
-<h1>{{title}}</h1>  
-<div class='body'>{{body}}</div> 
+<h1>{{title}}</h1>
+<div class='body'>{{body}}</div>
 ```
 
 上述代码定义了一个普通的组件。
 
 ```js
-<!--  app/templates/wrapping-content-in-component-route.hbs  -->
+<!-- app/templates/wrapping-content-in-component-route.hbs -->
 
-{{wrapping-content-in-component title=model.title body=model.body}} 
+{{wrapping-content-in-component title=model.title body=model.body}}
 ```
 
 调用组件，传入两个指定名称的参数，更多有关组件参数传递问题请看[Ember.js 入门指南之二十九属性传递](http://blog.ddlisting.com/2016/04/07/ember-js-ru-men-zhi-nan-zhi-er-shi-jiu-shu-xing-chuan-di/)。
@@ -29,15 +30,15 @@ ember g component wrapping-content-in-component
 下面在`route`中增加一些测试数据。
 
 ```js
-//  app/routes/wrapping-content-in-component-route.js
+// app/routes/wrapping-content-in-component-route.js
 
 import Ember from 'ember';
 
-export default Ember.Route.extend({  
+export default Ember.Route.extend({
     model: function() {
         return { id: 1, title: 'test title', body: 'this is body ...', author: 'ubuntuvim' };
     }
-}); 
+});
 ```
 
 如果程序代码没写错，界面应该会显示如下信息。
@@ -53,11 +54,11 @@ export default Ember.Route.extend({
 稍加改造前面的例子，这时候不只是传递一个简单的数据，而是传入一个包含 HTML 标签的简单模板。
 
 ```js
-<!--  app/templates/components/wrapping-content-in-component.hbs  -->
+<!-- app/templates/components/wrapping-content-in-component.hbs -->
 
-<h1>{{title}}</h1>  
-<!--  模板编译渲染之后{{yield}}助手会被组件标签 wrapping-content-in-component 包含的内容替换掉 -->  
-<div class='body'>{{yield}}</div> 
+<h1>{{title}}</h1>
+<!-- 模板编译渲染之后{{yield}}助手会被组件标签 wrapping-content-in-component 包含的内容替换掉 -->
+<div class='body'>{{yield}}</div>
 ```
 
 注意此时`div`标签内使用的是`{{yield}}`助手，而不是直接使用`{{body}}`。
@@ -65,15 +66,17 @@ export default Ember.Route.extend({
 下面是调用组件的模板。
 
 ```js
-<!--  app/templates/wrapping-content-in-component-route.hbs  -->
+<!-- app/templates/wrapping-content-in-component-route.hbs -->
 
 {{!wrapping-content-in-component title=model.title body=model.body}}
-<!--  调用组件的方式必须是以标签的形式，  
-    模板编译渲染之后 small 标签和{{body}}这两行的内容会渲染到组件 wrapping-content-in-component 的{{yield}}助手上  -->
+<!--
+调用组件的方式必须是以标签的形式，
+模板编译渲染之后 small 标签和{{body}}这两行的内容会渲染到组件 wrapping-content-in-component 的{{yield}}助手上
+-->
 {{#wrapping-content-in-component title=model.title}}
     {{model.body}}
     <small>by {{model.author}}</small>
-{{/wrapping-content-in-component}} 
+{{/wrapping-content-in-component}}
 ```
 
 页面加载之后效果如下：

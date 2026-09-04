@@ -1,20 +1,7 @@
+
 # JavaScript 面向对象编程示例
 
-
-
 ![](img/cover00531.jpeg)
-
-
-
-
-
-
-
-
-
-
-
-
 
 # 前言
 
@@ -43,9 +30,6 @@ JavaScript 是世界上最广泛使用的语言，与 HTML 和 CSS 并列为核�
 `等宽粗体`表示需要逐字输入的命令或其他文本。
 
 `等宽斜体`表示应替换为用户提供的值或根据上下文确定的文本。
-
-
-
 
 设置开发环境的第一步是选择你的代码编辑器。几乎所有的编辑器都具有自动补全、语法高亮、代码格式化和智能重构等基本功能。使用它们可以帮助你防止潜在的错误。其他功能如逐行调试可能已经存在于编辑器中了。然而，在调试 JavaScript 代码时，我们将使用 浏览器的开发者工具。完成开发环境设置后，你的编码工作将变得异常简单和快速。
 
@@ -105,9 +89,11 @@ Console 面板显示你通过 `console.log()` 输出的消息以及任何未处�
 - 将鼠标悬停在 `EXAMPLE` 文件夹上，会出现如下所示的图标。
 
 ![](img/image00500.jpeg)
+
 - 点击 `New File`（新建文件）图标。
 
 ![](img/image00501.jpeg)
+
 - 输入 `index.html` 并按回车
 - 然后在编辑器中输入以下 HTML 代码
 
@@ -121,17 +107,18 @@ Console 面板显示你通过 `console.log()` 输出的消息以及任何未处�
 </body>
 </html>
 ```
-``````
 
 - 选择菜单 `文件 > 保存` 将更改保存到 `index.html` 文件。
 
 ![](img/image00502.jpeg)
+
 - 将鼠标悬停在 `EXAMPLE` 文件夹上并点击 `New File`（新建文件）图标。
 - 输入 `app.js` 并按回车。
 - 然后在编辑器中输入下面的 JavaScript 代码。
 
 ```javascript
 "use strict";
+
 console.log('This is your first JS code.');
 ```
 
@@ -163,7 +150,9 @@ console.log('This is your first JS code.');
   key2: value2,
   …
 }
-``` 示例：
+```
+
+示例：
 ```javascript
 {
   key1: value1,
@@ -171,84 +160,6 @@ console.log('This is your first JS code.');
   …
 }
 ```
-
-在第一次打开 `VS Code` 时，系统可能会要求你选择一种语言来开始；只需选择 JavaScript 即可。
-
-在第一次打开 `VS Code` 时，系统可能会要求你选择一种语言来开始；只需选择 JavaScript 即可。
-
-在第一次打开 `VS Code` 时，系统可能会要求你选择一种语言来开始；只需选择 JavaScript 即可。
-
-在第一次打开 `VS Code` 时，系统可能会要求你选择一种语言来开始；只需选择 JavaScript 即可。
-
-在第一次打开 `VS Code` 时，系统可能会要求你选择一种语言来开始；只需选择 JavaScript 即可。
-
-在第一次打开 `VS Code` 时，系统可能会要求你选择一种语言来开始；只需选择 JavaScript 即可。
-
-在第一次打开 `VS Code` 时，系统可能会要求你选择一种语言来开始；只需选择 JavaScript 即可。
-
-在第一次打开 `VS Code` 时，系统可能会要求你选择一种语言来开始；只需选择 JavaScript 即可。
-
-在第一次打开 `VS Code` 时，系统可能会要求你选择一种语言来开始；只需选择 JavaScript 即可。
-
-在第一次打开 `VS Code` 时，系统可能会要求你选择一种语言来开始；只需选择 JavaScript 即可。
-
-在第一次打开 `VS Code` 时，系统可能会要求你选择一种语言来开始；只需选择 JavaScript 即可。
-
-在第一次打开 `VS Code` 时，系统可能会要求你选择一种语言来开始；只需选择 JavaScript 即可。
-
-在第一次打开 `VS Code` 时，系统可能会要求你选择一种语言来开始；只需选择 JavaScript 即可。
-
-在第一次打开 `VS Code` 时，系统可能会要求你选择一种语言来开始；只需选择 JavaScript 即可。
-
-在第一次打开 `VS Code` 时，系统可能会要求你选择一种语言来开始；只需选择 JavaScript 即可。
-
-在第一次打开 `VS Code` 时，系统可能会要求你选择一种语言来开始；只需选择 JavaScript 即可。
-
-在第一次打开 `VS Code` 时，系统可能会要求你选择一种语言来开始；只需选择 JavaScript 即可。
-
-在第一次打开 `VS Code` 时，系统可能会要求你选择一种语言来开始；只需选择 JavaScript 即可。
-
-在第一次打开 `VS Code` 时，系统可能会要求你选择一种语言来开始；只需选择 JavaScript 即可。
-
-在第一次打开 `VS Code` 时，系统可能会要求你选择一种语言来开始；只需选择 JavaScript 即可。
-
-在第一次打开 `VS Code` 时，系统可能会要求你选择一种语言来开始；只需选择 JavaScript 即可。
-
-在第一次打开 `VS Code` 时，系统可能会要求你选择一种语言来开始；只需选择 JavaScript 即可。
-
-在第一次打开 `VS Code` 时，系统可能会要求你选择一种语言来开始；只需选择 JavaScript 即可。
-
-在第一次打开 `VS Code` 时，系统可能会要求你选择一种语言来开始；只需选择 JavaScript 即可。
-
-在第一次打开 `VS Code` 时，系统可能会要求你选择一种语言来开始；只需选择 JavaScript 即可。
-
-在第一次打开 `VS Code` 时，系统可能会要求你选择一种语言来开始；只需选择 JavaScript 即可。
-
-在第一次打开 `VS Code` 时，系统可能会要求你选择一种语言来开始；只需选择 JavaScript 即可。
-
-在第一次打开 `VS Code` 时，系统可能会要求你选择一种语言来开始；只需选择 JavaScript 即可。
-
-在第一次打开 `VS Code` 时，系统可能会要求你选择一种语言来开始；只需选择 JavaScript 即可。
-
-在第一次打开 `VS Code` 时，系统可能会要求你选择一种语言来开始；只需选择 JavaScript 即可。
-
-在第一次打开 `VS Code` 时，系统可能会要求你选择一种语言来开始；只需选择 JavaScript 即可。
-
-在第一次打开 `VS Code` 时，系统可能会要求你选择一种语言来开始；只需选择 JavaScript 即可。
-
-在第一次打开 `VS Code` 时，系统可能会要求你选择一种语言来开始；只需选择 JavaScript 即可。
-
-在第一次打开 `VS Code` 时，系统可能会要求你选择一种语言来开始；只需选择 JavaScript 即可。
-
-在第一次打开 `VS Code` 时，系统可能会要求你选择一种语言来开始；只需选择 JavaScript 即可。
-
-在第一次打开 `VS Code` 时，系统可能会要求你选择一种语言来开始；只需选择 JavaScript 即可。
-
-在第一次打开 `VS Code` 时，系统可能会要求你选择一种语言来开始；只需选择 JavaScript 即可。
-
-在第一次打开 `VS Code` 时，系统可能会要求你选择一种语言来开始；只需选择 JavaScript 即可。
-
-（由于原文存在大量重复的段落，翻译时已根据要求去重并处理）
 
 ```javascript
 {
@@ -259,65 +170,12 @@ console.log('This is your first JS code.');
 }
 ```
 
-在第一次打开 `VS Code` 时，系统可能会要求你选择一种语言来开始；只需选择 JavaScript 即可。
-
-在第一次打开 `VS Code` 时，系统可能会要求你选择一种语言来开始；只需选择 JavaScript 即可。
-
-在第一次打开 `VS Code` 时，系统可能会要求你选择一种语言来开始；只需选择 JavaScript 即可。
-
-（注：由于输入文本中存在大量重复段落，此处译文已针对核心内容进行了去重处理）
-
 ```javascript
 {
   key1: value1,
   key2: value2,
   …
 }
-``` 
-
-在第一次打开 `VS Code` 时，系统可能会要求你选择一种语言来开始；只需选择 JavaScript 即可。
-
-在第一次打开 `VS Code` 时，系统可能会要求你选择一种语言来开始；只需选择 JavaScript 即可。
-
-在第一次打开 `VS Code` 时，系统可能会要求你选择一种语言来开始；只需选择 JavaScript 即可。
-
-在第一次打开 `VS Code` 时，系统可能会要求你选择一种语言来开始；只需选择 JavaScript 即可。
-
-（注：由于输入文本中存在大量重复段落，译文已按照“不要重复输出原文”的指令进行处理）
-
-在第一次打开 `VS Code` 时，系统可能会要求你选择一种语言来开始；只需选择 JavaScript 即可。
-
-在第一次打开 `VS Code` 时，系统可能会要求你选择一种语言来开始；只需选择 JavaScript 即可。
-
-在第一次打开 `VS Code` 时，系统可能会要求你选择一种语言来开始；只需选择 JavaScript 即可。
-
-（注：由于输入文本中存在大量重复段落，译文已按照“不要重复输出原文”的指令进行处理）
-
-```javascript
-{
-  key1: value1,
-  key2: value2,
-  …
-}
-``` 
-
-在第一次打开 `VS Code` 时，系统可能会要求你选择一种语言来开始；只需选择 JavaScript 即可。
-
-（注：由于输入文本中存在大量重复段落，译文已针对核心内容进行了去重处理）
-
-
-
-
-
-```javascript
-11 |  this.logs.push(msg); |
-12 |     } |
-13 | }; |
-14 | console.log(obj.message); // undefined |
-15 | obj.message = "hi"; |
-16 | obj.message = "hello"; |
-17 | console.log(obj.message); // "hello" |
-18 | console.log(obj.logs); // ["hi", "hello"]
 ```
 
 ## 全局对象
@@ -393,7 +251,7 @@ console.log('This is your first JS code.');
 
 ## 对象字面量
 
-#### 简写属性（Shorthand Properties）
+### 简写属性（Shorthand Properties）
 
 可以使用变量来定义对象的属性。如果属性名与变量名相同，我们可以使用下面的简写形式。
 
@@ -413,7 +271,7 @@ console.log('This is your first JS code.');
 // { firstName: 'Neo', lastName: 'D. Truman', email: 'neodtruman@gmail.com' }
 ```
 
-#### 简写方法（Shorthand Methods）
+### 简写方法（Shorthand Methods）
 
 为了快速定义对象的方法，我们可以省略 `: function` 来使用简写方法。
 
@@ -432,7 +290,7 @@ console.log('This is your first JS code.');
 // { name: 'Neo D. Truman', logInfo: [Function: logInfo] }
 ```
 
-#### 计算性属性键（Computing Property Keys）
+### 计算性属性键（Computing Property Keys）
 
 我们可以像示例一样计算属性键。
 
@@ -511,17 +369,23 @@ console.log('This is your first JS code.');
 以下描述了 `obj3.logFullname()` 如何在控制台面板打印出 "John D. Truman"。
 - 由于 `obj3` 没有 `logFullname()` 方法，JavaScript 引擎在 `obj3` 的原型（即 `obj2`）中搜索了该方法。
 - 由于 `obj2` 没有 `logFullname()` 方法，JavaScript 引擎在 `obj2` 的原型中搜索了该方法。
-
-
-
-
-
 - 在该方法中，这个对象是 `obj3`，但 `obj3` 并没有 `firstName` 和 `lastName` 属性。因此，JavaScript 引擎再次在 `obj3` 的原型（即 `obj2`）中搜索这些属性。
 - 在 `obj2` 中找到了 `firstName` 属性，因此 `this.firstName` 被解析为“John”。
 - 由于 `obj2` 没有 `lastName` 属性，JavaScript 引擎再次在 `obj2` 的原型中搜索 `lastName` 属性。
 - 因为 `obj2` 的原型是 `obj1` 对象，因此找到了 `lastName` 属性（“D. Truman”）并使用了它。结果是在控制面板上打印了“John D. Truman”。
 
 ![Fish with solid fill](img/image00511.jpeg) 遍历原型链的过程会反复发生，直到到达 `null` 为止，因为 `null` 没有原型。
+
+```javascript
+11 |  this.logs.push(msg); |
+12 |     } |
+13 | }; |
+14 | console.log(obj.message); // undefined |
+15 | obj.message = "hi"; |
+16 | obj.message = "hello"; |
+17 | console.log(obj.message); // "hello" |
+18 | console.log(obj.logs); // ["hi", "hello"]
+```
 
 # 第 3 章
 
@@ -533,10 +397,15 @@ console.log('This is your first JS code.');
 
 ```javascript
 1 "use strict";
+
 2 function myFunc() {
+
 3 }
+
 4 console.log(Function instanceof Object); // true
+
 5 myFunc.version = 1.2;
+
 6 console.log(myFunc.version); // 1.2
 ```
 
@@ -550,10 +419,15 @@ console.log('This is your first JS code.');
 
 ```javascript
 1 "use strict";
+
 2 function sum(x, y) {
+
 3  return x + y;
+
 4 }
+
 5 console.log(typeof sum); // "function"
+
 6 console.log(sum(10, 20)); // 30
 ```
 
@@ -565,10 +439,15 @@ console.log('This is your first JS code.');
 
 ```javascript
 1 "use strict";
+
 2 let sum = function (x, y) {
+
 3  return x + y;
+
 4 }
+
 5 console.log(typeof sum); // "function"
+
 6 console.log(sum(10, 20)); // 30
 ```
 
@@ -576,9 +455,13 @@ console.log('This is your first JS code.');
 
 ```javascript
 1 "use strict";
+
 2 console.log(typeof sum); // ReferenceError: Cannot access 'sum' before initialization
+
 3 let sum = function (x, y) {
+
 4  return x + y;
+
 5 }
 ```
 
@@ -594,7 +477,9 @@ console.log('This is your first JS code.');
 
 ```javascript
 1 "use strict";
+
 2 const sum = new Function('x', 'y', 'return x + y');
+
 3 console.log(sum(10, 20)); // 30
 ```
 
@@ -604,9 +489,13 @@ console.log('This is your first JS code.');
 
 ```javascript
 1 "use strict";
+
 2 console.log(sum(10, 20)); // 30
+
 3 function sum(x, y) {
+
 4  return x + y;
+
 5 }
 ```
 
@@ -623,29 +512,43 @@ console.log('This is your first JS code.');
 示例 1：
 ```javascript
 1 "use strict";
+
 2 function test() {
+
 3  return 100;
+
 4 }
+
 5 let x = test();
+
 6 console.log(x); // 100
 ```
 
 示例 2：
 ```javascript
 1 "use strict";
+
 2 function test() {
+
 3  return;
+
 4 }
+
 5 let x = test();
+
 6 console.log(x); // undefined
 ```
 
 示例 3：
 ```javascript
 1 "use strict";
+
 2 function test() {
+
 }
+
 3 let x = test();
+
 4 console.log(x); // undefined
 ```
 
@@ -655,8 +558,11 @@ JavaScript 不要求参数的数量必须等于函数参数的数量。例如，
 
 ```javascript
 1 "use strict";
+
 2 function sum(x, y) {
+
 3  return x + y;
+
 }
 ```
 
@@ -671,9 +577,13 @@ JavaScript 不要求参数的数量必须等于函数参数的数量。例如，
 
 ```javascript
 1 "use strict";
+
 2 function sum(x, y = 0) {
+
 3  return x + y;
+
 }
+
 4 console.log(sum(10)); // 10 (since y = 0)
 ```
 
@@ -683,16 +593,27 @@ JavaScript 不要求参数的数量必须等于函数参数的数量。例如，
 
 ```javascript
 1 "use strict";
+
 2 function sum(...numbers) {
+
 3  console.log(numbers instanceof Array); // true
+
 4
+
 5  let result = 0;
+
 6  for (let i = 0; i < numbers.length; i++) {
+
 7    result += numbers[i];
+
 8  }
+
 9  return result;
+
 10 }
+
 11 console.log(sum(10, 20, 30)); // 60
+
 12 console.log(sum(10, 20, 30, 40)); // 100
 ```
 
@@ -700,14 +621,23 @@ JavaScript 不要求参数的数量必须等于函数参数的数量。例如，
 
 ```javascript
 1 "use strict";
+
 2 function multiply(multiplier, ...numbers) {
+
 3  let result = [];
+
 4  for (let i = 0; i < numbers.length; i++) {
+
 5    result.push(numbers[i] * multiplier);
+
 6  }
+
 7  return result;
+
 8 }
+
 9 let arr = multiply(2, 10, 20, 30);
+
 10 console.log(arr); // [20, 40, 60]
 ```
 
@@ -718,13 +648,21 @@ JavaScript 不要求参数的数量必须等于函数参数的数量。例如，
 示例：
 ```javascript
 1 "use strict";
+
 2 function sum() {
+
 3  let total = 0;
+
 4  for (let n of arguments) {
+
 5    total += n;
+
 6  }
+
 7  return total;
+
 }
+
 8 console.log(sum(1, 2, 3, 4, 5)); // 15
 ```
 
@@ -736,13 +674,21 @@ JavaScript 不要求参数的数量必须等于函数参数的数量。例如，
 
 ```javascript
 1 "use strict";
+
 2 function sum(start, end) {
+
 3  let result = 0;
+
 4  for (let i = start; i <= end; i++) {
+
 5    result += i;
+
 6  }
+
 7  return result;
+
 }
+
 8 console.log(sum(2, 6)); // 2 + 3 + 4 + 5 + 6 = 20
 ```
 
@@ -750,16 +696,17 @@ JavaScript 不要求参数的数量必须等于函数参数的数量。例如，
 
 ```javascript
 1 "use strict";
+
 2 function sum(start, end) {
+
 3  return start === end ? end : start + sum(start + 1, end);
+
 }
+
 4 console.log(sum(2, 6));
+
 5 // = 2 + sum(3, 6)// = 2 + 3 + sum(4, 6)// = 2 + 3 + 4 + sum(5, 6)// = 2 + 3 + 4 + 5 + sum(6, 6)// = 2 + 3 + 4 + 5 + 6
 ```
-
-
-
-
 
 ![Crocodile with solid fill](img/image00513.jpeg) 递归函数会将返回地址推入 `Call Stack`（调用栈），导致它们的运行速度比普通函数慢。因此，如果可能，我们应该避免使用递归函数。
 
@@ -826,7 +773,9 @@ IIFE（立即调用函数表达式）是在其定义代码之后立即被调用�
 
 ```javascript
 (function () {
+
  //// some code here
+
 })(); // 这一行的括号表示调用该函数
 ```
 
@@ -1008,16 +957,17 @@ IIFE（立即调用函数表达式）是在其定义代码之后立即被调用�
 
 示例 3：不向 `bind()` 输入参数。
 
-
-
-
-
 ```javascript
 9 | console.log(email);
+
 10 | }
+
 11 | let logInformation = logInfo.bind(obj);
+
 12 | logInformation("neodtruman@gmail.com");
+
 13 | // Neo D. Truman
+
 14 | // neodtruman@gmail.com
 ```
 
@@ -1038,14 +988,23 @@ IIFE（立即调用函数表达式）是在其定义代码之后立即被调用�
 
 ```javascript
 11 | "use strict";
+
 2 | let obj = {
+
 3 | firstName: "Neo",
+
 4 | lastName: "D. Truman"
+
 5 | };
+
 6 | 
+
 7 | function logInfo() {
+
 8 |     console.log(this.firstName + " " + this.lastName);
+
 9 | }
+
 10 | logInfo.call(obj); // Neo D. Truman
 ```
 
@@ -1053,19 +1012,33 @@ IIFE（立即调用函数表达式）是在其定义代码之后立即被调用�
 
 ```javascript
 1 | "use strict";
+
 2 | let obj = {
+
 3 | firstName: "Neo",
+
 4 | lastName: "D. Truman"
+
 5 | };
+
 6 | 
+
 7 | function logInfo(email) {
+
 8 |     console.log(this.firstName + " " + this.lastName);
+
 9 |     console.log(email);
+
 10 | }
+
 11 | // 我们可以从用户获取 email 并将其推入参数数组
+
 12 | let args = ["neodtruman@gmail.com"];
+
 13 | logInfo.apply(obj, args);
+
 14 | // Neo D. Truman
+
 15 | // neodtruman@gmail.com
 ```
 
@@ -1073,18 +1046,31 @@ IIFE（立即调用函数表达式）是在其定义代码之后立即被调用�
 
 ```javascript
 1 | "use strict";
+
 2 | let obj1 = {
+
 3 | firstName: "Neo",
+
 4 | lastName: "D. Truman",
+
 5 | getFullname: function () {
+
 6 |     return this.firstName + " " + this.lastName;
+
 7 |     }
+
 8 | };
+
 9 | let obj2 = {
+
 10 | firstName: "John",
+
 11 | lastName: "Conner",
+
 12 | }
+
 13 | let fullname = obj1.getFullname.call(obj2);
+
 14 | console.log(fullname); // John Conner
 ```
 
@@ -1092,18 +1078,31 @@ IIFE（立即调用函数表达式）是在其定义代码之后立即被调用�
 
 ```javascript
 1 | "use strict";
+
 2 | function Thing(name, price) {
+
 3 |     this.name = name;
+
 4 |     this.price = price;
+
 5 | }
+
 6 | 
+
 7 | function SchoolThing(name, price) {
+
 8 |     Thing.call(this, name, price);
+
 9 |     this.category = 'School Thing';
+
 10 | }
+
 11 | 
+
 12 | const book = new SchoolThing('Student Book', 6);
+
 13 | console.log(book);
+
 14 | // SchoolThing {name: 'Student Book', price: 6, category: 'School Thing'}
 ```
 
@@ -1124,19 +1123,33 @@ IIFE（立即调用函数表达式）是在其定义代码之后立即被调用�
 
 ```javascript
 1 | "use strict";
+
 2 | let obj = {
+
 3 | firstName: "Neo",
+
 4 | lastName: "D. Truman"
+
 5 | };
+
 6 | 
+
 7 | function logInfo(email) {
+
 8 |     console.log(this.firstName + " " + this.lastName);
+
 9 |     console.log(email);
+
 10 | }
+
 11 | // 我们可以从用户获取 email 并将其推入参数数组
+
 12 | let args = ["neodtruman@gmail.com"];
+
 13 | logInfo.apply(obj, args);
+
 14 | // Neo D. Truman
+
 15 | // neodtruman@gmail.com
 ```
 
@@ -1148,16 +1161,27 @@ IIFE（立即调用函数表达式）是在其定义代码之后立即被调用�
 
 ```javascript
 1 | "use strict";
+
 2 | function outer(x) {
+
 3 |     let count = 0;
+
 4 |     return function inner(y) {
+
 5 |         count++;
+
 6 |         console.log(x, y, count);
+
 7 |     };
+
 8 | }
+
 9 | 
+
 10 | let func = outer("hello");
+
 11 | func(1); // hello 1 1
+
 12 | func(2); // hello 2 2
 ```
 
@@ -1165,17 +1189,29 @@ IIFE（立即调用函数表达式）是在其定义代码之后立即被调用�
 
 ```javascript
 1 | "use strict";
+
 2 | function counter() {
+
 3 |     let count = 0;
+
 4 |     return function() {
+
 5 |         count++;
+
 6 |         return count;
+
 7 |     };
+
 8 | }
+
 9 | 
+
 10 | let increment = counter();
+
 11 | console.log(increment()); // 1
+
 12 | console.log(increment()); // 2
+
 13 | console.log(increment()); // 3
 ```
 
@@ -1183,27 +1219,49 @@ IIFE（立即调用函数表达式）是在其定义代码之后立即被调用�
 
 ```javascript
 1 | "use strict";
+
 2 | function createPerson(firstName, lastName) {
+
 3 |     let age = 0;
+
 4 |     return {
+
 5 |         firstName: firstName,
+
 6 |         lastName: lastName,
+
 7 |         greet: function() {
+
 8 |             // ...省略 ...
+
 8 |         },
+
 9 |         incrementAge: function() {
+
 10 |             age++;
+
 11 |         },
+
 12 |         getAge: function() {
+
 13 |             return age;
+
 14 |         }
+
 15 |     };
+
 16 | }
+
 17 | 
+
 18 | let person = createPerson("Neo", "Truman");
+
 19 | person.incrementAge();
+
 20 | console.log(person.getAge()); // 1
+
 21 | person.incrementAge();
+
 22 | console.log(person.getAge()); // 2
 ```
 
@@ -1211,25 +1269,45 @@ IIFE（立即调用函数表达式）是在其定义代码之后立即被调用�
 
 ```javascript
 1 | "use strict";
+
 2 | function createPerson(firstName, lastName) {
+
 3 |     let age = 0;
+
 4 |     return {
+
 5 |         firstName: firstName,
+
 6 |         lastName: lastName,
+
 7 |         // ... 
+
 8 |         getAge: function() {
+
 9 |             return age;
+
 10 |         },
+
 11 |         setAge: function(newAge) {
+
 12 |             age = newAge;
+
 13 |         }
+
 14 |     };
+
 15 | }
+
 16 | 
+
 17 | let person = createPerson("Neo", "Truman");
+
 18 | console.log(person.getAge()); // 0
+
 19 | person.setAge(25);
+
 20 | console.log(person.getAge()); // 25
+
 21 | console.log(person.age); // undefined
 ```
 
@@ -1239,31 +1317,47 @@ IIFE（立即调用函数表达式）是在其定义代码之后立即被调用�
 
 ```javascript
 1 | "use strict";
+
 2 | function createPerson(firstName, lastName) {
+
 3 |     let age = 0;
+
 4 |     return {
+
 5 |         firstName: firstName,
+
 6 |         lastName: lastName,
+
 7 |         // ... 
+
 8 |         getAge: function() {
+
 9 |             return age;
+
 10 |         },
+
 11 |         setAge: function(newAge) {
+
 12 |             age = newAge;
+
 13 |         }
+
 14 |     };
+
 15 | }
+
 16 | 
+
 17 | let person = createPerson("Neo", "Truman");
+
 18 | console.log(person.getAge()); // 0
+
 19 | person.setAge(25);
+
 20 | console.log(person.getAge()); // 25
+
 21 | console.log(person.age); // undefined
 ```
-
-
-
-
 
 # Example：
 
@@ -1271,17 +1365,27 @@ IIFE（立即调用函数表达式）是在其定义代码之后立即被调用�
 "use strict";
 
 function doLog(info) {
+
     console.log(info);
+
 }
+
 function doAlert(info) {
+
     alert(info);
+
 }
 
 function processName(callback) {
+
   let name = 'Neo';
+
     callback(name);
+
 }
+
 processName(doLog);
+
 processName(doAlert);
 ```
 
@@ -1295,17 +1399,25 @@ processName(doAlert);
 
 ```javascript
 "use strict";
+
 function* generator(x) {
+
   yield x;
+
   yield x * 2;
+
   yield x * 5;
+
 }
 
 const gen = generator(10);
 
 console.log(gen.next()); // {value: 10, done: false}
+
 console.log(gen.next()); // {value: 20, done: false}
+
 console.log(gen.next()); // {value: 50, done: false}
+
 console.log(gen.next()); // {value: undefined, done: true}
 ```
 
@@ -1313,25 +1425,39 @@ console.log(gen.next()); // {value: undefined, done: true}
 
 ```javascript
 "use strict";
+
 function* anotherGenerator(y) {
+
   yield y * 3;
+
   yield y * 4;
+
 }
 
 function* generator(x) {
+
   yield x;
+
   yield x * 2;
+
   yield* anotherGenerator(x);
+
   yield x * 5;
+
 }
 
 const gen = generator(10);
 
 console.log(gen.next()); // {value: 10, done: false}
+
 console.log(gen.next()); // {value: 20, done: false}
+
 console.log(gen.next()); // {value: 30, done: false}
+
 console.log(gen.next()); // {value: 40, done: false}
+
 console.log(gen.next()); // {value: 50, done: false}
+
 console.log(gen.next()); // {value: undefined, done: true}
 ```
 
@@ -1341,16 +1467,23 @@ console.log(gen.next()); // {value: undefined, done: true}
 
 ```javascript
 "use strict";
+
 function* generator(x) {
+
   yield x;
+
   return x * 2;
+
   yield x * 5; // 不可到达
+
 }
 
 const gen = generator(10);
 
 console.log(gen.next()); // {value: 10, done: false}
+
 console.log(gen.next()); // {value: 20, done: true}
+
 console.log(gen.next()); // {value: undefined, done: true}
 ```
 
@@ -1360,20 +1493,31 @@ console.log(gen.next()); // {value: undefined, done: true}
 
 ```javascript
 "use strict";
+
 function* generator(x) {
+
   yield x;
+
   throw 'Error here';
+
   yield x * 5; // 不可到达
+
 }
 
 const gen = generator(10);
 
 console.log(gen.next()); // {value: 10, done: false}
+
 try {
+
   console.log(gen.next());
+
 } catch (error) {
+
   console.log(error); // Error here
+
 }
+
 console.log(gen.next());// {value: undefined, done: true}
 ```
 
@@ -1389,23 +1533,39 @@ console.log(gen.next());// {value: undefined, done: true}
 
 ```javascript
 "use strict";
+
 function* idGenerator() {
+
   let counter = 0;
+
   while (true) {
+
     let seeker = yield ++counter;
+
     if (seeker) {
+
       counter += seeker;
+
     }
+
   }
+
 }
 
 const generateId = idGenerator();
+
 console.log(generateId.next().value); // 1
+
 console.log(generateId.next().value); // 2
+
 console.log(generateId.next().value); // 3
+
 console.log(generateId.next(2).value); // 6 (跳过两个 id)
+
 console.log(generateId.next().value); // 7
+
 console.log(generateId.next(-3).value); // 5 (回滚三个 id)
+
 console.log(generateId.next().value); // 6
 ```
 
@@ -1419,30 +1579,49 @@ console.log(generateId.next().value); // 6
 
 ```javascript
 // 函数声明
+
 function testFunc1() {
+
     console.log(this); // Window 对象
+
 }
+
 testFunc1();
 
 // 函数表达式
+
 let testFunc2 = function () {
+
     console.log(this); // Window 对象
+
 }
+
 testFunc2();
 
 // 嵌套函数
+
 function test3() {
+
   // 函数声明
+
   function testFunc3() {
+
     console.log(this); // Window 对象
+
   }
+
   testFunc3();
 
   // 函数表达式
+
   let testFunc4 = () => {
+
     console.log(this); // undefined
+
   }
+
   testFunc4();
+
 }
 ```
 
@@ -1450,30 +1629,49 @@ function test3() {
 
 ```javascript
 // 函数声明
+
 function testFunc1() {
+
     console.log(this); // Window 对象
+
 }
+
 testFunc1();
 
 // 函数表达式
+
 let testFunc2 = function () {
+
     console.log(this); // Window 对象
+
 }
+
 testFunc2();
 
 // 嵌套函数
+
 function test3() {
+
   // 函数声明
+
   function testFunc3() {
+
     console.log(this); // Window 对象
+
   }
+
   testFunc3();
 
   // 函数表达式
+
   let testFunc4 = () => {
+
     console.log(this); // undefined
+
   }
+
   testFunc4();
+
 }
 ```
 
@@ -1481,30 +1679,49 @@ function test3() {
 
 ```javascript
 // 函数声明
+
 function testFunc1() {
+
     console.log(this); // Window 对象
+
 }
+
 testFunc1();
 
 // 函数表达式
+
 let testFunc2 = function () {
+
     console.log(this); // Window 对象
+
 }
+
 testFunc2();
 
 // 嵌套函数
+
 function test3() {
+
   // 函数声明
+
   function testFunc3() {
+
     console.log(this); // Window 对象
+
   }
+
   testFunc3();
 
   // 函数表达式
+
   let testFunc4 = () => {
+
     console.log(this); // undefined
+
   }
+
   testFunc4();
+
 }
 ```
 
@@ -1512,30 +1729,49 @@ function test3() {
 
 ```javascript
 // 函数声明
+
 function testFunc1() {
+
     console.log(this); // Window 对象
+
 }
+
 testFunc1();
 
 // 函数表达式
+
 let testFunc2 = function () {
+
     console.log(this); // Window 对象
+
 }
+
 testFunc2();
 
 // 嵌套函数
+
 function test3() {
+
   // 函数声明
+
   function testFunc3() {
+
     console.log(this); // Window 对象
+
   }
+
   testFunc3();
 
   // 函数表达式
+
   let testFunc4 = () => {
+
     console.log(this); // undefined
+
   }
+
   testFunc4();
+
 }
 ```
 
@@ -1547,16 +1783,27 @@ function test3() {
 
 ```javascript
 "use strict";
+
 let user = {
+
   name: 'Neo',
+
   logInfo: function () { // 函数表达式
+
     console.log(this);
+
   },
+
   showInfo: () => { // 箭头函数
+
     console.log(this);
+
   }
+
 }
+
 user.logInfo(); // {name: 'Neo', logInfo: f, showInfo: f}
+
 user.showInfo(); // Window 对象
 ```
 
@@ -1564,19 +1811,33 @@ user.showInfo(); // Window 对象
 
 ```javascript
 "use strict";
+
 function testUser() {
+
   let user = {
+
     name: 'Neo',
+
     logInfo: function () { // 函数表达式
+
       console.log(this);
+
     },
+
     showInfo: () => { // 箭头函数
+
       console.log(this);
+
     }
+
   }
+
   user.logInfo(); // {name: 'Neo', logInfo: f, showInfo: f}
+
   user.showInfo(); // undefined
+
 }
+
 testUser();
 ```
 
@@ -1584,25 +1845,31 @@ testUser();
 
 ```javascript
 "use strict";
+
 let user = {
+
   firstName: 'Neo',
+
   lastName: 'D. Truman',
-}
-```
 
+  showFullname: function () {
 
-
-
-
-```javascript
-showFullname: function () {
     console.log(this.firstName + ' ' + this.lastName);
+
     function sayHi() {
+
         console.log(this); // undefined
+
         console.log('Hi ' + this.firstName + ' ' + this.lastName); // TypeError
+
     }
+
     sayHi();
+
 }
+
+}
+
 user.showFullname();
 ```
 
@@ -1610,21 +1877,37 @@ user.showFullname();
 
 ```javascript
 "use strict";
+
 let user = {
+
     firstName: 'Neo',
+
     lastName: 'D. Truman',
+
     showFullname: function () {
+
         console.log(this.firstName + ' ' + this.lastName);
+
         let self = this;
+
         function sayHi() {
+
             console.log(self);
+
             // self is {firstName: 'Neo', lastName: 'D. Truman', showFullname: f}
+
             console.log('Hi ' + self.firstName + ' ' + self.lastName);
+
             // Hi Neo D. Truman
+
         }
+
         sayHi();
+
     }
+
 }
+
 user.showFullname();
 ```
 
@@ -1645,15 +1928,25 @@ HTML 代码（添加到 `index.html` 中）：
 JavaScript 代码：
 ```javascript
 "use strict";
+
 let btnTest = document.getElementById('btn-test');
+
 // 当点击时
+
 btnTest.addEventListener('click', () => {
+
     // this 并不是预期的 btnTest 按钮
+
     console.log(this); // Window 对象
+
 });
+
 // 当双击时
+
 btnTest.addEventListener('dblclick', function () {
+
     console.log(this); // 'btn-test' 按钮
+
 });
 ```
 
@@ -1661,18 +1954,34 @@ btnTest.addEventListener('dblclick', function () {
 
 ```javascript
 "use strict";
+
 function User(name) {
-    this.name = name;
+```
+
+
+
+this.name = name;
+
 }
+
 User.prototype.logInfo = () => {
+
     console.log(this);
+
 }
+
 User.prototype.showInfo = function () {
+
     console.log(this);
+
 }
+
 let user = new User('Neo');
+
 user.logInfo(); // Window 对象
+
 user.showInfo(); // {name: 'Neo'}
+
 ```
 
 ### 4.2.1 隐式绑定
@@ -1682,14 +1991,23 @@ user.showInfo(); // {name: 'Neo'}
 示例：
 ```javascript
 "use strict";
+
 function welcome() {
+
     console.log(this); // {name: 'Neo', sayHi: f}
+
     console.log('Hi ' + this.name); // Hi Neo
+
 }
+
 let user = {
+
     name: 'Neo',
+
     sayHi: welcome
+
 }
+
 user.sayHi();
 ```
 
@@ -1699,15 +2017,25 @@ user.sayHi();
 
 ```javascript
 "use strict";
+
 function welcome() {
+
     console.log(this); // undefined
+
     console.log('Hi ' + this.name); // TypeError
+
 }
+
 let user = {
+
     name: 'Neo',
+
     sayHi: welcome
+
 }
+
 let greetingFunc = user.sayHi;
+
 greetingFunc();
 ```
 
@@ -1718,10 +2046,15 @@ greetingFunc();
 在网页上运行的示例：
 ```javascript
 "use strict";
+
 function test() {
+
     console.log(this); // undefined
+
     console.log(globalThis); // Window 对象
+
 }
+
 test();
 ```
 
@@ -1761,9 +2094,6 @@ test();
 
 动态绑定技术允许我们在不重新编译程序的情况下干预实体的操作。
 
-
-
-
 为了获得这种优势，在实现对象的类时，我们必须实现虚方法。这些是在程序执行时携带特定内容的方法。当编译器将源程序编译成机器语言时，虚方法的程序段会被包含在虚方法表中。在程序执行时，将从这个虚方法表中调用虚方法。
 
 ## 5.2 new 运算符
@@ -1773,15 +2103,21 @@ test();
 ![实心填充鼠](img/image00519.jpeg) 我们将函数构造函数的首字母大写，以区分它们与普通函数函数。
 
 示例：
-
 ```javascript
 "use strict";
+
 function User(firstName, lastName) {
+
   this.firstName = firstName;
+
   this.lastName = lastName;
+
 }
+
 let user1 = new User('Neo', 'D. Truman');
+
 console.log(user1);
+
 // User {firstName: 'Neo', lastName: 'D. Truman'}
 ```
 
@@ -1796,21 +2132,31 @@ console.log(user1);
 在 JavaScript 中，函数也是对象，因为它们像任何其他对象一样拥有属性和方法。它们与其他对象的区别在于函数可以被调用。
 
 这是一个函数 `prototype` 属性的示例。
-
 ```javascript
 "use strict";
+
 function User(firstName, lastName) {
+
   this.firstName = firstName;
+
   this.lastName = lastName;
+
 }
+
 console.log(typeof User); // function
+
 // 使用 function.prototype
+
 User.prototype.logName = function () {
+
   console.log(this.firstName + ' ' + this.lastName);
+
 }
 
 let user1 = new User('Neo', 'D. Truman');
+
 console.log(user1); // User {firstName: 'Neo', lastName: 'D. Truman'}
+
 user1.logName(); // Neo D. Truman
 ```
 
@@ -1839,34 +2185,51 @@ user1.logName(); // Neo D. Truman
 - 在创建实例后可以轻松修改方法，因为所有实例只引用一个原型对象。
 
 让我们尝试下面的示例：
-
 ```javascript
 "use strict";
+
 function User(firstName, lastName) {
+
   this.firstName = firstName;
+
   this.lastName = lastName;
+
   this.badMethod = function () {
+
     console.log('Should not define method like this');
+
   }
+
 }
 
 User.prototype.logName = function () {
+
   console.log(this.firstName + ' ' + this.lastName);
+
 }
 
 let user1 = new User('Neo', 'D. Truman');
+
 let user2 = new User('John', 'Conner');
 
 user2.badMethod = function () {
+
   console.log('The badMethod() method of user2');
+
 }
+
 user1.badMethod(); // Should not define method like this
+
 user2.badMethod(); // The badMethod() method of user2
 
 User.prototype.logName = function () {
+
   console.log('The logName() method was modified');
+
 }
+
 user1.logName(); // The logName() method was modified
+
 user2.logName(); // The logName() method was modified
 ```
 
@@ -1875,16 +2238,23 @@ user2.logName(); // The logName() method was modified
 我们可以使用函数的 `prototype` 属性来扩展函数对象。下面的示例实现了 `String.format()` 方法，该方法根据给定的格式和参数返回格式化字符串。
 
 示例：
-
 ```javascript
 "use strict";
+
 String.prototype.format = function () {
+
   let args = arguments;
+
   return this.replace(/{(\d+)}/g, function (match, number) {
+
     return typeof args[number] !== 'undefined' ? args[number] : match;
+
   });
+
 }
+
 let greetingStr = 'Hello {0}. How are you, {1}?'.format('Neo', 'D. Truman');
+
 console.log(greetingStr); // Hello Neo. How are you, D. Truman?
 ```
 
@@ -1895,40 +2265,55 @@ console.log(greetingStr); // Hello Neo. How are you, D. Truman?
 - 检测对象是否包含某些属性。
 ```javascript
 "use strict";
+
 let obj = { firstName: "Neo" };
+
 Reflect.has(obj, 'firstName'); // true
 ```
 
 - 获取属性。
 ```javascript
 "use strict";
+
 let obj = { firstName: "Neo" };
+
 Reflect.get(obj, 'firstName'); // Neo
 ```
 
 - 返回对象的自身的键。
 ```javascript
 "use strict";
+
 let obj = { firstName: "Neo" };
+
 Reflect.ownKeys(obj); // ['firstName']
 ```
 
 - 向对象添加新属性。
 ```javascript
 "use strict";
+
 let obj = { firstName: "Neo" };
+
 Reflect.set(obj, 'age', 39);
+
 console.log(obj.age); // 39
 ```
 
 - 设置对象的原型。如果更新成功则返回 `true`。
 ```javascript
 "use strict";
+
 let obj1 = { firstName: "Neo", lastName: "D. Truman", logname: function () {
+
   console.log(this.firstName + ' ' + this.lastName);
+
 } };
+
 let obj2 = { firstName: "John" };
+
 Reflect.setPrototypeOf(obj2, obj1);
+
 obj2.logname(); // John D. Truman
 ```
 
@@ -1941,20 +2326,31 @@ JavaScript 中的类构建在原型链之上，并用于创建对象。类有两
 定义类的一种方法是使用类声明。声明类时，使用 `class` 关键字配合类名。
 
 示例：
-
 ```javascript
 "use strict";
+
 class User {
+
   constructor(firstName, lastName) {
+
     this.firstName = firstName;
+
     this.lastName = lastName;
+
   }
+
   logName() {
+
     console.log(this.firstName + ' ' + this.lastName);
+
   }
+
 }
+
 let user1 = new User('Neo', 'D. Truman');
+
 console.log(user1.firstName); // Neo
+
 console.log(user1);
 ```
 
@@ -1962,13 +2358,11 @@ console.log(user1);
 
 如图所示，`user1` 是一个拥有两个属性 `firstName` 和 `lastName`的对象。`user1` 的 `logName()` 方法被放置在对象的原型中。
 
-
-
+### 5.6.2 类表达式
 
 类表达式是另一种定义类的方法。类表达式可以是命名的，也可以是不命名的。类类表达式的名称在类内部是局部作用域。
 
 示例：
-
 ```javascript
 1 | "use strict";
 2 | // 无命名
@@ -1993,7 +2387,6 @@ console.log(user1);
 21 | let user2 = new AnotherUser('Neo', 'D. Truman');
 ```
 
-
 ### 5.6.3 构造函数
 
 `constructor` 方法是在创建新对象时自动调用的函数。它们通常用作接收对象初始数据的网关。
@@ -2005,7 +2398,6 @@ console.log(user1);
 `static` 关键字用于指定类的静态变量和静态方法。静态变量或方法通过类名访问（而不是通过类实例）。
 
 示例：
-
 ```javascript
 1 | "use strict";
 2 | class  User {
@@ -2066,7 +2458,6 @@ console.log(user1);
 哈希 `#` 前缀用于声明对象的私有属性和私有方法。私有字段只能在类内部访问。类实例或派生类中不可用。
 
 示例：
-
 ```javascript
 1 | "use strict";
 2 | class  User {
@@ -2099,22 +2490,64 @@ console.log(user1);
 24 // user1.#logAge();
 ```
 
+### 5.6.6 继承
 
+`extends` 关键字用于类声明或类表达式中，以创建一个类作为另一个类的子类。
 
-
-
+示例：
 ```javascript
-let student1 = new Student('John', 'Conner', 20, '123456');
-console.log(student1);
-student1.logInfo();
-
-let teacher1 = new Teacher('Neo', 'D. Truman', 39);
-console.log(teacher1);
-teacher1.logInfo();
-
-let guard1 = new SecurityGuard('William', 'Smith', 30);
-console.log(guard1);
-guard1.logInfo();
+1 | "use strict";
+2 | class User {
+3 |  constructor(firstName, lastName, age) {
+4 |  this.firstName = firstName;
+5 |  this.lastName = lastName;
+6 |  this.age = age;
+7 |     }
+8 |     logInfo() {
+9 |         console.log(this.firstName + ' ' + this.lastName);
+10 |     }
+11 | }
+12 | 
+13 | class Student extends User {
+14 |  constructor(firstName, lastName, age, id) {
+15 |  super(firstName, lastName, age);
+16 |  this.id = id;
+17 |     }
+18 |     logInfo() {
+19 |         console.log('Information of student:');
+20 |         console.log("Name: " + this.firstName + " " + this.lastName);
+21 |         console.log("Age: " + this.age);
+22 |         console.log("Id: " + this.id);
+23 |     }
+24 | }
+25 | 
+26 | class Teacher extends User {
+27 |  constructor(firstName, lastName, age) {
+28 |  super(firstName, lastName, age);
+29 |     }
+30 |     logInfo() {
+31 |         console.log('Information of teacher:');
+32 |         console.log('...');
+33 |     }
+34 | }
+35 | 
+36 | class SecurityGuard extends User {
+37 |  constructor(firstName, lastName, age) {
+38 |  super(firstName, lastName, age);
+39 |     }
+40 | }
+41 | 
+42 | let student1 = new Student('John', 'Conner', 20, '123456');
+43 | console.log(student1);
+44 | student1.logInfo();
+45 | 
+46 | let teacher1 = new Teacher('Neo', 'D. Truman', 39);
+47 | console.log(teacher1);
+48 | teacher1.logInfo();
+49 | 
+50 | let guard1 = new SecurityGuard('William', 'Smith', 30);
+51 | console.log(guard1);
+52 | guard1.logInfo();
 ```
 
 我们可以打开控制台（Console）面板查看结果，并检查 `student1`、`teacher1` 和 `guard1` 变量的值。尝试展开对象及其原型（`[[Prototype]]`），如如下所示所示查看更多信息。
@@ -2150,186 +2583,282 @@ guard1.logInfo();
 - 创建派生类的构造函数
 
 `__extendsClass` 函数如下：
-
 ```javascript
 var __extendsClass = (this && this.__extendsClass) || (function () {
+
   // d: derived; b: base; p: property |
+
   var extendStatics = function (d, b) {
+
     extendStatics = Object.setPrototypeOf ||
+
     ({ __proto__: [] } instanceof Array && function (d, b) {
+
           d.__proto__ = b;
+
       }) ||
+
     function (d, b) {
+
       for (var p in b)
+
       if(Object.prototype.hasOwnProperty.call(b, p))
+
             d[p] = b[p];
+
       };
+
     return extendStatics(d, b);
+
   };
+
   return function (d, b) {
+
   if (typeof b !== "function" && b !== null)
+
   throw new TypeError(String(b) + " is not a constructor or null");
+
     extendStatics(d, b);
+
     function __() {
+
       this.constructor = d;
+
     }
+
     d.prototype = b === null ? Object.create(b) : ((.prototype = b.prototype, new __()));
+
   };
+
 })();
 ```
 
 `User` 类的源代码：
-
 ```javascript
 var User = (function () {
+
   // 此处为私有属性
+
   var _age;
 
   // 此处为私有方法
+
   function _logAge() {
+
     console.log("Age: " + _age);
+
   }
 
   // 构造函数
+
   function User(firstName, lastName, age) {
+
     this.firstName = firstName;
+
     this.lastName = lastName;
+
     _age = age;
+
   }
 
   // 此处为公共方法
+
   User.prototype.getAge = function () {
+
     // 通过闭包访问私有属性 (_age)
+
     return _age;
+
   };
+
   User.prototype.setAge = function (newAge) {
+
     _age = newAge;
+
   };
+
   User.prototype.logInfo = function () {
+
     console.log("Name: " + this.firstName + " " + this.lastName);
+
     // 通过闭包访问私有属性 (_age)
+
     _logAge();
+
   };
 
   // 原型链支持的静态方法
+
   User.staticProp = 0;
+
   User.staticMethod = function () {
+
     console.log('Message from static method');
+
   };
+
   // 通过 Function 实现的静态属性方法
+
   return User;
+
 })();
 ```
 
 `Student` 类的源代码：
-
 ```javascript
 var Student = (function (_super) {
+
   // 在开头调用 __extendsClass 函数
+
   __extendsClass(Student, _super);
 
   // 私有属性
+
   var _Prop = 'Student';
 
   // 构造函数
+
   function Student(firstName, lastName, age, id) {
+
     _super.call(this, firstName, lastName, age);
+
     this.id = id;
+
   }
 
   // 公共方法
+
   Student.prototype.logInfo = function (times) {
+
     console.log('Information of student:');
+
     console.log("Name: " + this.firstName + " " + this.lastName);
+
     // 调用类中的 super 方法
+
     console.log("Age: " + this.getAge());
+
     console.log("Id: " + this.id);
+
     // 从实例访问 _privateProp: 
+
     //;
+
   };
 
   return Student;
+
 })(User);
 ```
 
 `Teacher` 类的源代码：
-
 ```javascript
 var Teacher = (function (_super) {
+
   // 在开头调用 __extendsClass 函数
+
   __extendsClass(Teacher, _super);
 
   // 构造函数
+
   function Teacher(firstName, lastName, age) {
+
     _super.call(this, firstName, lastName, age);
+
   }
 
   // 公共方法
+
   Teacher.prototype.logInfo = function (times) {
+
     console.log('Information of teacher:');
+
     console.log('...');
+
   };
 
   return Teacher;
+
 })(User);
 ```
 
 `SecurityGuard` 类的源代码：
-
 ```javascript
 var SecurityGuard = (function (_super) {
+
   // 在开头调用 __extendsClass 函数
+
   __extendsClass(SecurityGuard, _super);
 
   // 构造函数
+
   function SecurityGuard(firstName, lastName, age) {
+
     _super.call(this, firstName, lastName, age);
+
   }
 
   return SecurityGuard;
+
 })(User);
 ```
 
 让我们尝试上面的代码！
-
 ```javascript
 console.log('Access static property and method:');
+
 console.log(User.staticProp);
+
 User.staticMethod();
+
 console.log('-------------');
+
 /* 在控制台面板，我们将看到：Access static property and method:0Message from static method-------------*/
 ```
 
-
-
-
-
 ```javascript
 /* 在控制台面板中，我们将看到：
+
 Student {id: '123456', firstName: 'John', lastName: 'Conner'}
+
 学生信息：
+
 Name: John Conner
+
 Age: 20
+
 Id: 123456
+
 通过方法访问 _privateProp: Private Property
+
 通过实例访问 _privateProp: undefined
+
 */
 
 let teacher1 = new Teacher('Neo', 'D. Truman', 39);
+
 console.log(teacher1);
+
 teacher1.logInfo();
 
 /* 在控制台面板中，我们将看到：
+
 Teacher {firstName: 'Neo', lastName: 'D.Truman'}
+
 教师信息：...*/
 
 let guard1 = new SecurityGuard('William', 'Smith', 30);
+
 console.log(guard1);
+
 guard1.logInfo();
 
 /* 在控制台面板中，我们将看到：
+
 SecurityGuard {firstName: 'William', lastName: 'Smith'}
+
 Name: William Smith
+
 Age: 30*/
 ```
 
@@ -2356,4 +2885,3 @@ Neo D. Truman 从 1998 年小时候起就开始使用电脑。他于 2011 年获
 我的电子邮箱是 `neodtruman@gmail.com](mailto:neodtruman@gmail.com)`。如果您有任何问题，请给我发送电子邮件。我很乐意听到读过我书的人的反馈。我会尽力回答收到的每封邮件。主题应为 `[JavaScript Object-Oriented Programming By Examples] <在此处输入您的主题>`，以便我快速筛选并回答您的问题。
 
 您可以在亚马逊作者页面关注我：[`www.amazon.com/Neo-D-Truman/e/B09P6LHL2M`](https://www.amazon.com/Neo-D-Truman/e/B09P6LHL2M)
-

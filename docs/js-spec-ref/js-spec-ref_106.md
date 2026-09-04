@@ -1,15 +1,5 @@
-# 13.9 Events 模块
 
-*   概述
-    *   基本用法
-    *   on 方法
-    *   emit 方法
-    *   EventEmitter 接口的部署
-    *   事件类型
-    *   EventEmitter 实例的方法
-        *   once 方法
-        *   removeListener 方法
-    *   参考链接
+# 13.9 Events 模块
 
 ## 概述
 
@@ -148,6 +138,7 @@ radio.on('close', function(station) {
 Events 模块默认支持两个事件。
 
 *   newListener 事件：添加新的回调函数时触发。
+
 *   removeListener 事件：移除回调时触发。
 
 ```js
@@ -239,7 +230,7 @@ function onlyOnce () {
 emitter.on("firstConnection", onlyOnce);
 ```
 
-（3）removeAllListeners 方法
+### removeAllListeners 方法
 
 该方法用于移除某个事件的所有回调函数。
 
@@ -259,7 +250,7 @@ emitter.removeAllListeners("firstConnection");
 emitter.removeAllListeners();
 ```
 
-（4）listener 方法
+### listener 方法
 
 该方法接受一个事件名称作为参数，返回该事件所有回调函数组成的数组。
 

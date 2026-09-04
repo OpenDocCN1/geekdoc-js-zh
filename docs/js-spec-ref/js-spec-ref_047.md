@@ -1,15 +1,5 @@
-# 6.8 IndexedDB：浏览器端数据库
 
-*   概述
-*   indexedDB.open 方法
-*   indexedDB 实例对象的方法
-    *   createObjectStore 方法
-    *   objectStoreNames 属性
-    *   transaction 方法
-    *   createIndex 方法
-    *   index 方法
-    *   IDBKeyRange 对象
-    *   参考链接
+# 6.8 IndexedDB：浏览器端数据库
 
 ## 概述
 
@@ -21,17 +11,17 @@
 
 IndexedDB 具有以下特点。
 
-（1）键值对储存。 IndexedDB 内部采用对象仓库（object store）存放数据。所有类型的数据都可以直接存入，包括 JavaScript 对象。在对象仓库中，数据以“键值对”的形式保存，每一个数据都有对应的键名，键名是独一无二的，不能有重复，否则会抛出一个错误。
+（1）键值对储存。IndexedDB 内部采用对象仓库（object store）存放数据。所有类型的数据都可以直接存入，包括 JavaScript 对象。在对象仓库中，数据以“键值对”的形式保存，每一个数据都有对应的键名，键名是独一无二的，不能有重复，否则会抛出一个错误。
 
-（2）异步。 IndexedDB 操作时不会锁死浏览器，用户依然可以进行其他操作，这与 localStorage 形成对比，后者的操作是同步的。异步设计是为了防止大量数据的读写，拖慢网页的表现。
+（2）异步。IndexedDB 操作时不会锁死浏览器，用户依然可以进行其他操作，这与 localStorage 形成对比，后者的操作是同步的。异步设计是为了防止大量数据的读写，拖慢网页的表现。
 
-（3）支持事务。 IndexedDB 支持事务（transaction），这意味着一系列操作步骤之中，只要有一步失败，整个事务就都取消，数据库回到事务发生之前的状态，不存在只改写一部分数据的情况。
+（3）支持事务。IndexedDB 支持事务（transaction），这意味着一系列操作步骤之中，只要有一步失败，整个事务就都取消，数据库回到事务发生之前的状态，不存在只改写一部分数据的情况。
 
-（4）同域限制 IndexedDB 也受到同域限制，每一个数据库对应创建该数据库的域名。来自不同域名的网页，只能访问自身域名下的数据库，而不能访问其他域名下的数据库。
+（4）同域限制。IndexedDB 也受到同域限制，每一个数据库对应创建该数据库的域名。来自不同域名的网页，只能访问自身域名下的数据库，而不能访问其他域名下的数据库。
 
-（5）储存空间大 IndexedDB 的储存空间比 localStorage 大得多，一般来说不少于 250MB。IE 的储存上限是 250MB，Chrome 和 Opera 是剩余空间的某个百分比，Firefox 则没有上限。
+（5）储存空间大。IndexedDB 的储存空间比 localStorage 大得多，一般来说不少于 250MB。IE 的储存上限是 250MB，Chrome 和 Opera 是剩余空间的某个百分比，Firefox 则没有上限。
 
-（6）支持二进制储存。 IndexedDB 不仅可以储存字符串，还可以储存二进制数据。
+（6）支持二进制储存。IndexedDB 不仅可以储存字符串，还可以储存二进制数据。
 
 目前，Chrome 27+、Firefox 21+、Opera 15+和 IE 10+支持这个 API，但是 Safari 完全不支持。
 
@@ -58,8 +48,11 @@ open 方法的第一个参数是数据库名称，格式为字符串，不可省
 打开数据库的结果是，有可能触发 4 种事件。
 
 *   success：打开成功。
+
 *   error：打开失败。
+
 *   upgradeneeded：第一次打开该数据库，或者数据库版本发生变化。
+
 *   blocked：上一次的数据库连接还未关闭。
 
 第一次打开数据库时，会先触发 upgradeneeded 事件，然后触发 success 事件。
@@ -143,7 +136,9 @@ var store = t.objectStore("firstOS");
 transaction 方法有三个事件，可以用来定义回调函数。
 
 *   abort：事务中断。
+
 *   complete：事务完成。
+
 *   error：事务出错。
 
 ```js
@@ -311,8 +306,11 @@ var request = index.get(name);
 IDBKeyRange 对象的作用是生成一个表示范围的 Range 对象。生成方法有四种：
 
 *   lowerBound 方法：指定范围的下限。
+
 *   upperBound 方法：指定范围的上限。
+
 *   bound 方法：指定范围的上下限。
+
 *   only 方法：指定范围中只有一个值。
 
 下面是一些代码实例：
@@ -372,6 +370,9 @@ index.openCursor(range).onsuccess = function(e) {
 ## 参考链接
 
 *   Raymond Camden, [Working With IndexedDB – Part 1](http://net.tutsplus.com/tutorials/javascript-ajax/working-with-indexeddb/)
+
 *   Raymond Camden, [Working With IndexedDB – Part 2](http://net.tutsplus.com/tutorials/javascript-ajax/working-with-indexeddb-part-2/)
+
 *   Tiffany Brown, [An Introduction to IndexedDB](http://dev.opera.com/articles/introduction-to-indexeddb/)
+
 *   David Fahlander, [Breaking the Borders of IndexedDB](https://hacks.mozilla.org/2014/06/breaking-the-borders-of-indexeddb/)

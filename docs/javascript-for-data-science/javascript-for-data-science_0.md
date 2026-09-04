@@ -1,20 +1,22 @@
+
 # 数据科学的 JavaScript
 
-
-
-
-
 *献辞*
+
 _____________
+
 *献给 Jordan，他教我失败是通往成功的铺路石。 — Maya*
+
 *献给 Oskar。 — Toby*
+
 *献给 Kara, Claudia, Erin, Gabriela, Hannah, Laura 和 Julia。 — Greg*
+
 *本书销售产生的所有版税都将捐赠给 R-Ladies，这是一个全球性组织，其使命是促进 R 社区的性别多样性。*
 
-
-David Beazley 认为“JavaScript 对比数据科学”会是这本书更好的标题。虽然这个词概括了许多人对这种语言的看法，但我们希望能够说服你现代 JavaScript 既好用又有用。我们在编写这本书时考虑到的是科学家和工程师，但我们希望这些课程也能帮助图书管理员、数字人文学者以及其他在研究中使用计算的人。
+David Beazley 认为"JavaScript 对比数据科学"会是这本书更好的标题。虽然这个词概括了许多人对这种语言的看法，但我们希望能够说服你现代 JavaScript 既好用又有用。我们在编写这本书时考虑到的是科学家和工程师，但我们希望这些课程也能帮助图书管理员、数字人文学者以及其他在研究中使用计算的人。
 
 我们将涵盖：
+
 - 现代 JavaScript 的核心特性
 - 使用回调和承诺进行编程
 - 创建对象和类
@@ -38,13 +40,10 @@ David Beazley 认为“JavaScript 对比数据科学”会是这本书更好的�
 **Sumi** 正在完成 19 世纪历史博士学位。作为其研究的一部分，她正在转录和编目录几十位日裔美国助产士的记录。她已经创建和定制 WordPress 网站多年，并在此期间学了一些 JavaScript 碎片。Sumi 即将开始找工作，并想创建一个交互式网站来展示她的研究。这本书将填补她知识中的某些空白，并向她展示如何利用 JavaScript 更现代的特性。
 
 这些典型用户：
+
 - 可以编写使用列表、循环、条件判断和函数的两页程序
 - 可以在 Unix shell 中运行命令以导航文件系统并创建和删除目录及文件
 - 拥有可靠的互联网访问权限
-
-
-
-
 
 `Maya Gans` 是一位拥有定量生物学背景的自由数据科学家和前端开发人员。她拥有 4 年的 `R` 编程经验，对数据可视化的热情带她进入了奇妙的 `JavaScript` 世界。当她不在调试代码或编写代码博客时，她可能在某个偏远的地方攀登大山。她将这本书献给她的自学程序员同仁们，他们曾被告诉自己不够优秀，但他们动力十足且充满激情，完全不在乎这些。
 
@@ -150,30 +149,27 @@ for (let value of otherValues) {
 }
 ```
 
-
-
-
-`true` 的类型是 `boolean`
-
-`undefined` 的类型是 `undefined`
-
-`null` 的类型是 `object`
+```
+true 的类型是 boolean
+undefined 的类型是 undefined
+null 的类型是 object
+```
 
 如上例所示，我们创建了一个名为 `otherValues` 的值数组进行循环。我们使用 `for` 关键字初始化循环。在括号中，`let` 创建了一个名为 `value` 的变量，用于遍历 `otherValues` 中的每个元素，而 `value` 是 `otherValues` 中不断变化的数组元素 `value`。最后，在花括号中，我们对每个值执行所需的操作。
 
 请注意，我们使用了 `let` 而不是旧的 `var`，使用了 `of` 而不是 `in`：后者返回集合的索引（例如 0, 1, 2），这对于粗心留心的人来说有一些陷阱（附录 G.2）。同样注意，索引从 0 开始而不是 1 开始，而且缩进是可选的，仅为了可读性。这可能与你习惯的语言有所不同。
 
 > **常量与变量**
-
+> 
 > *除非真的需要是变量，否则你应该将事物设为常量，因为对于人类和计算机来说，追踪定义一次且永远改变的事物更容易。*
 
-在完成这一切之后，类型本身显得有些平淡。JavaScript 的 `boolean` 类型可以是 `true` 或 `false`，尽管我们在下文中会看到其他东西也可以被视为布尔值。`undefined` 意味着“尚未赋值”，而 `null` 意味着“有一个值，但它是空”。
+在完成这一切之后，类型本身显得有些平淡。JavaScript 的 `boolean` 类型可以是 `true` 或 `false`，尽管我们在下文中会看到其他东西也可以被视为布尔值。`undefined` 意味着"尚未赋值"，而 `null` 意味着"有一个值，但它是空"。
 
 ![图像](img/fig2_1.jpg)
 
 图 2.1：嵌套循环遍历
 
-## 2.3 控制流 #07_Contents.xhtml_ch2-3
+## 2.3 控制流
 
 我们已经见过 for 循环和扁平数组，所以让我们来看看嵌套数组和条件判断。我们从包含其他数组的数组开始，通常通过嵌套循环进行处理：
 
@@ -188,10 +184,12 @@ for (let outer of nested) {
 }
 ```
 
+```
 northwest
 northeast
 southwest
 southeast
+```
 
 对于 `outer loop`（外层循环）的每次迭代，`inner loop`（内层循环）都会运行完整的迭代周期。赋值给变量 `outer` 的每个值是一对，因此赋值给 `inner` 的每个值都是该对中的两个字符串之一（图 2.1）。
 
@@ -209,6 +207,7 @@ for (let element of values) {
 }
 ```
 
+```
 0 of type number is falsy
 1 of type number is truthy
 of of string is falsy
@@ -217,16 +216,17 @@ undefined of type undefined is falsy
 null of type object is falsy
 of type object is truthy
 2,3 of type object is truthy
+```
 
-这个示例展示了数组是异构的，即它们可以包含许多不同类型的值。它还显示了 JavaScript 对“真”的本质有一些相当奇怪的想法。0 是假的（falsy），而所有其他数字都是真的（truthy）；同样，空字符串是假的，而所有其他字符串都是真的。`undefined` 和 `null` 都是假的，正如大多数程序员预期的那样。
+这个示例展示了数组是异构的，即它们可以包含许多不同类型的值。它还显示了 JavaScript 对"真"的本质有一些相当奇怪的想法。0 是假的（falsy），而所有其他数字都是真的（truthy）；同样，空字符串是假的，而所有其他字符串都是真的。`undefined` 和 `null` 都是假的，正如大多数程序员预期的那样。
 
 但正如输出的最后两行所示，空数组是真的的，这与在大多数编程语言中的处理方式不同。JavaScript 支持者的论点是，空数组确实在那里，它恰好是空的，但这种行为仍然是 bug 的常见原因。在测试数组时，请检查 `Array.length` 是否为 0。（注意这是一个 `property`，而不是 `method`，即它应该被视为变量，而不是像函数一样被调用。）
 
 > **安全提示**
+> 
+> *在 JavaScript 中测试相等和不相等时，请始终使用 `===`（三等号）和 `!==`。`==` 和 `!=` 会进行类型转换，这可能会产生一些糟糕的意外（章节 G.1）。*
 
-> *在 JavaScript 中测试相等和不相等时，请始终使用 `===`（三等号）和 `!==`。`==` 和 `!=` 会进行类型转换，这可能会产生一些糟糕的意外（章节 G.1）。
-
-## 2.4 格式化字符串 #07_Contents.xhtml_ch2-4
+## 2.4 格式化字符串
 
 与其打印多个字符串和表达式，我们可以将值插值到反引号括的字符串中。（我们必须使用反引号，因为这个功能是在语言最初创建很久之后才添加到 JavaScript 中的。）如下例所示，要进行插值的值放在 `${…}` 中，并且可以是任何有效的 JavaScript 表达式，包括函数或方法调用。
 
@@ -237,10 +237,12 @@ for (let color of [′red′, ′green′, ′blue′]) {
 }
 ```
 
+```
 color is red and capitalized is RED
 color is green and capitalized is BLUE
+```
 
-## 2.5 对象 #07_Contents.xhtml_ch2-5
+## 2.5 对象
 
 对象 (`object`) 是键值对的集合，等同于 Python 中的字典。我们可以将对象可视化为一个表格，其中一列是键，另一列是值（图 2.1）。对象的类型总是 `object`。我们可以使用 `object[key]` 获取与键关联的值，但如果键是简单名称，可以使用 `object.key`。
 
@@ -255,15 +257,15 @@ const creature = {
 };
 ```
 
-当我们想要对象包含什么时，[`object Object`] 并不是非常有用的输出。为了获得更有帮助的字符串表示，请使用 `JSON.stringify(object)`：
+当我们想要对象包含什么时，`[object Object]` 并不是非常有用的输出。为了获得更有帮助的字符串表示，请使用 `JSON.stringify(object)`：
 
 ```javascript
 console.log(JSON.stringify(creature)) {"order":"Primates","family":"Callitidae","genus":"Callithrix","species":"Jacchus"}
 ```
 
-在这里，JSON 代表“JavaScript 对象表示”；我们将在第 11 章 中学习更多。
+在这里，JSON 代表"JavaScript 对象表示"；我们将在第 11 章 中学习更多。
 
-## 2.6 函数 #07_Contents.xhtml_ch2-6
+## 2.6 函数
 
 函数让凡人能够理解程序，因为它允许我们一次只考虑一部分。这里有一个寻找数组中最低和最高值的函数：
 
@@ -283,9 +285,6 @@ function limits (values) {
 ```
 
 它的定义由 `function` 关键字、名称、一个括号括的**参数**列表（可能是空的）以及它的主体组成。
-
-
-
 
 函数的体始于对该对象进行测试，该对象在函数内部被称为 `values`，它是作为函数的 `argument` 传入的。如果 `values` 没有长度——即它不包含多个条目——该函数将返回 `[undefined, undefined]`。（我们将在练习中讨论这种行为背后的原理。）
 
@@ -335,11 +334,13 @@ for (let test of allTests) {
 }
 ```
 
+```
 limits of are,
 limits of 9 are 9,9
 limits of 3,30,300 are 3,300
 limits of apple, Grapefruit, banana are Grapefruit, banana
 limits of 3, apple, sub-array are 3,3
+```
 
 程序员通常不再以这种方式编写函数，因为它们与语言的其他特性产生了奇怪的交互；Section G.3 详细详细解释了原因以及如何这样做。现在，大多数程序员编写的是**箭头函数**（fat arrow functions），它由参数列表、`=>` 符号和函数体组成。箭头函数没有名称，因此必须将函数赋值给常量或变量以便以后使用：
 
@@ -361,14 +362,16 @@ const limits = (values) => {
 无论函数如何定义，每个函数都是一个 `scope`（作用域），这意味着它的参数和在内部创建的任何变量都是该函数的 `local`（局部的）。我们将在 第 3 章 中更详细地讨论作用域。
 
 > **固步过去**
+> 
 > 为什么 JavaScript 引入了另一种语法，而不是修复用 `function` 定义的行为？两个答案是：更改会破坏依赖旧行为的遗留程序，以及语言的开发者希望定义小函数变得非常容易。在这里和其他地方，我们将看到语言的历史和用途如何塑造它的演变。
 
-## 2.7 模块](#07_Contents.xhtml_ch2-7)
+## 2.7 模块
 
 随着我们的程序变大，我们将希望将代码放在多个文件中。不可避免的坏消息是，JavaScript 有多种模块系统：Node 仍然使用一个名为 CommonJS 的系统，但正在转换为名为 ES6 的现代标准，因此我们在命令行使用的与在浏览器中使用的不同（目前）。
 
 > **Ee Ess**
-> JavaScript 的正式名称是 ECMAScript，尽管只有在日常对话中使用“datum”一词的人才会这样称呼它。因此，该语言的后续被称为 ES5、ES6 等，除非它们被称为（例如）ES2018。
+> 
+> JavaScript 的正式名称是 ECMAScript，尽管只有在日常对话中使用"datum"一词的人才会这样称呼它。因此，该语言的后续被称为 ES5、ES6 等，除非它们被称为（例如）ES2018。
 
 由于我们将在浏览器中进行任何操作之前将先构建命令行程序，我们将首先介绍 Node 的模块系统（图 2.3）。我们首先将这段代码放在名为 `utilities.js` 的文件中：
 
@@ -396,7 +399,7 @@ module.exports = {
 
 函数定义非常直观；正如你可能猜的那样，`bound = DEFAULT_BOUND` 为该参数设置了默认值，使得只需传入数组即可调用 `clip`。你可能也猜到了 `Array.push` 会将一个值添加到数组的末尾；如果你不知道，好吧，现在你知道了。
 
-更重要的是将对象赋值给 `module.exports`。只有在该对象中命名的内容对外部世界可见，因此 `DEFAULT_BOUND` 不可见。记住，简单的键不需要引号，所以 `clip`: `clip` 意味着“将函数 `clip` 的引用与字符串键 `"clip"` 关联”。
+更重要的是将对象赋值给 `module.exports`。只有在该对象中命名的内容对外部世界可见，因此 `DEFAULT_BOUND` 不可见。记住，简单的键不需要引号，所以 `clip`: `clip` 意味着"将函数 `clip` 的引用与字符串键 `"clip"` 关联"。
 
 要使用我们新定义的模块，我们必须 `require` 它。例如，我们可以将此放入 `application.js`：
 
@@ -408,14 +411,16 @@ console.log(`clip(${data}) -> ${utilities.clip(data)}`)
 console.log(`clip(${data}, 5) -> ${utilities.clip(data, 5)}`)
 ```
 
+```
 clip(-1,5,3,0,10) -> -1,3,0
 clip(-1,5,3,0,10, 5) -> -1,3,0
+```
 
 `require` 返回了赋值给 `module.exports` 的对象。我们使用以 `./` 或 `../` 开头的路径导入本地文件；赋值给变量 `utilities` 后我们调用该函数。
 
-## 2.8 练习](#07_Contents.xhtml_ch2-8)
+## 2.8 练习
 
-## TYPEOF
+### TYPEOF
 
 `typeof` 是什么类型的？它是一个表达式？函数？还是其他？你可能会发现 `typeof` 是你的朋友，正如 Mozilla Developer Network 一。
 
@@ -442,11 +447,13 @@ for (let line of table) {
 }
 ```
 
+```
 square of 4 is 16
 square of 3 is 9
 square of 2 is 4
 square of 1 is 1
 square of 0 is 0
+```
 
 ### 是否真
 
@@ -482,10 +489,6 @@ console.log(total)
 
 解释创建常量 `creature` 的赋值语句中发生了什么。
 
-
-
-
-
 ```javascript
 const genus = ′Callithrix′
 const species = ′Jacchus′
@@ -509,6 +512,7 @@ console.log(′species is ${species}′)
 ```
 
 它输出了输出：
+
 ```
 genus is Callithrix
 species is Jacchus
@@ -527,6 +531,7 @@ console.log(′species is ${species}′)
 ```
 
 它输出了：
+
 ```
 genus is undefined
 species is undefined
@@ -552,14 +557,14 @@ console.log(result)
 ```
 
 1. `Going to add ${first} to ${second}`
-`9`
+   `9`
 2. `Going to add 3 to 6`
-`9`
-`Finished summing`
+   `9`
+   `Finished summing`
 3. `Going to add 3 to 6`
-`9`
+   `9`
 4. `Going to add 3 to 6`
-`36`
+   `36`
 
 ### 关键点
 
@@ -567,7 +572,7 @@ console.log(result)
 - 使用点符号 `X.Y` 获取对象 `X` 的部分 `Y`。
 - 基础数据类型是布尔值、数字和字符字符串。
 - 数组顺序存储多个值。
-- 特殊值 `null` 和 `undefined` 意味着“无值”和“不存在”。
+- 特殊值 `null` 和 `undefined` 意味着"无值"和"不存在"。
 - 使用 `const` 定义常量，使用 `let` 定义变量。
 - `typeof` 返回值的类型。
 - `for (let variable of collection) {…}` 遍历数组中的值。
@@ -594,6 +599,7 @@ JavaScript 高度依赖回调函数：与其让函数立即给我们返回结果
 当 JavaScript **解析** 表达式 `let name = "text"` 时，它会分配一块足够存储四个字符的内存，并将指向该字符块的引用存储在变量 `name` 中。我们可以通过绘制像图 3.1 这样的内存图来展示这一点。
 
 ![Image](img/fig3_1.jpg)
+
 图 3.1：名称和值
 
 当我们写下：
@@ -617,6 +623,7 @@ console.log(anotherName(5))
 ```
 
 ![Image](img/fig3_2.jpg)
+
 图 3.2：内存中的函数
 
 这样做调用函数：3.3。调用栈允许我们编写函数而不必担心引用错误。在调用 `temp = first(initial)` 期间，在值返回赋值给 `temp` 之前，内存看起来如图 3.6。反转函数的顺序会改变结果：
@@ -639,11 +646,13 @@ doTwice(hello)
 ```
 
 ![Image](img/fig3_4.jpg)
+
 图 3.4：调用栈
 
 再次，当我们观察 `doTwice` 运行时内存的状态时，这变得清晰（图 3.5）。
 
 ![Image](img/fig3_5.jpg)
+
 图 3.5：函数的函数
 
 当传入的函数或函数有自己的参数时，这变得更有用。例如，`pipeline` 函数将值传递给一个函数，然后将该函数的结果传递给第二个，并返回最终结果：
@@ -666,9 +675,6 @@ const trimThenDot = pipeline(original, trim, dot)
 
 console.log(′trim then dot: |${trimThenDot}|′)
 ```
-
-
-
 
 我们可以通过传递函数数组来创建一个更通用的流水线：
 
@@ -714,7 +720,9 @@ const final = pipeline(original, [double, trim, dot])
 console.log(`|${original}| -> |${final}|`)
 ```
 
-`| some text | -> |some.text..some.text|`
+```
+| some text | -> |some.text..some.text|
+```
 
 操作顺序如下：
 
@@ -750,7 +758,9 @@ const upper = transform(data, (x) => { return x.toUpperCase() })
 console.log(`upper: ${upper}`)
 ```
 
-`upper: ONE, TWO, THREE`
+```
+upper: ONE, TWO, THREE
+```
 
 获取单词的首字母是如此简单，以至于不值专门为这个函数命名，所以，让我们将定义移动到 `transform` 的调用中：
 
@@ -759,7 +769,9 @@ const first = transform(data, (x) => { return x[0] })
 console.log(`first: ${first}`)
 ```
 
-`first: o,t,t`
+```
+first: o,t,t
+```
 
 在定义处使用且未赋值命名的函数被称为**匿名函数**。JavaScript 中的大多数回调函数都是这样编写的：带有给定参数和体的函数（在此例中为 `x` 和 `return x[0]`）被直接传递给其他地方（在此例中为 `transform`）以便调用。
 
@@ -798,7 +810,9 @@ const newArray = pure(test)
 console.log(`test: ${newArray}`)
 ```
 
-`test: 2,3,4`
+```
+test: 2,3,4
+```
 
 JavaScript 数组提供了多种方法来支持函数式编程。例如，`Array.some` 在数组中*任意*元素通过测试时返回 `true`，而 `Array.every` 在数组中*所有*元素都通过测试时返回 `true`。它们的工作方式如下：
 
@@ -810,8 +824,10 @@ console.log(data.some((x) => x.length > 3))
 console.log(data.every((x) => x.length > 3))
 ```
 
-`true`
-`false`
+```
+true
+false
+```
 
 `Array.map` 通过为现有数组的每个元素调用函数来创建一个新数组：
 
@@ -821,7 +837,9 @@ const shortened = data.map((x) => x.slice(0, 2))
 console.log(shortened)
 ```
 
-`["th", "is", "", "te"]`
+```
+["th", "is", "", "te"]
+```
 
 最后，`Array.reduce` 使用合并函数和起始值将数组归约为单个值。合并函数必须接收两个值：当前运行的总和和数组中的下一个值；如果数组为空，`Array.reduce` 返回起始值。
 
@@ -836,7 +854,9 @@ for (let value of data) {
 console.log(`acronym of ${data} is ${acronym}`)
 ```
 
-`acronym of this, is, a, test`
+```
+acronym of this, is, a, test
+```
 
 上面的短程序中有三个关键要素：输入数据、变量 `acronym` 的初始值以及更新该变量的方式。使用 `Array.reduce` 时，数组是数据，初始值和更新函数作为参数传递：
 
@@ -858,8 +878,6 @@ acronym = data.reduce((accum, next) => {
 }, ′′)
 console.log(`all in one step: ${acronym}`)
 ```
-
-
 
 我们最后一个需要介绍的工具是内存处理方式产生的一种极其有用的副作用。最简单的的解释方法是使用示例。我们已经定义了一个名为 `pipeline` 的函数，它可以将任意数量的其他函数链在一起：
 
@@ -889,6 +907,9 @@ const add_1 = adder(1)
 const add_2 = adder(2)
 
 console.log(`add_1(100) is ${add_1(100)}, add_2(100) is ${add_2(100)}`)
+```
+
+```
 add_1(100) is 101, add_2(100) is 102
 ```
 
@@ -907,6 +928,9 @@ add_1(100) is 101, add_2(100) is 102
 ```javascript
 const result = pipeline(100, [adder(1), adder(2)])
 console.log(`adding 1 and 2 to 100 -> ${result}`)
+```
+
+```
 adding 1 and 2 to 100 -> 103
 ```
 
@@ -917,6 +941,9 @@ adding 1 and 2 to 100 -> 103
 ```javascript
 const result = pipeline(100, [(x) => x + 1, (x) => x + 2])
 console.log(`adding 1 and 2 to 100 -> ${result}`)
+```
+
+```
 adding 1 and 2 to 100 -> 103
 ```
 
@@ -936,7 +963,7 @@ adding 1 and 2 to 100 -> 103
 
 ## 3.6 练习题
 
-## 使用 `FOREACH` 的副作用
+### 使用 `FOREACH` 的副作用
 
 JavaScript 数组有一个名为 `forEach` 的方法，它会为数组的每个元素调用一次回调函数。与 `map` 不同，`forEach` *不会* 保存这些调用返回的值，也不会返回结果数组。其完整语法为：
 
@@ -954,6 +981,9 @@ someArray.forEach((value, location, container) => {
 const vals = [1, 2, 3]
 doubleInPlace(vals)
 console.log(`vals after change: ${vals}`)
+```
+
+```
 vals after change: 2,4,6
 ```
 
@@ -1044,8 +1074,6 @@ const show_all = (shapes) => {
 show_all([square, circle])
 ```
 
-
-
 只要我们只使用值名以及 `area` 和 `perimeter`（周长）函数，我们就不需要知道它是哪种形状。这被称为**多态**，它允许我们在不改变循环代码的情况下添加新的形状。换句话说，它允许旧代码（在此例中为 `show_all` 函数）使用新代码（新对象 `rectangle`）：
 
 ```javascript
@@ -1060,9 +1088,11 @@ const rectangle = {
 show_all([square, circle, rectangle])
 ```
 
+```
 square: area 25 perimeter 20
 circle: area 28.274333882308138 perimeter 18.84955592153876
 rectangle: area 6 perimeter 10
+```
 
 ## 4.2 类
 
@@ -1086,7 +1116,9 @@ const sq = new Square(3)
 console.log(`sq name ${sq.name} and area ${sq.area()}`)
 ```
 
+```
 sq name square and area 9
+```
 
 ![Image](img/fig4_1.jpg)
 
@@ -1097,6 +1129,7 @@ sq name square and area 9
 在 `new` 将新创建的对象交还给程序之前，它会调用特殊命名的**构造函数**来初始化对象的状态。在构造函数和其他方法内部，被操作的对象通过代词 `this` 来指代。例如，如果构造函数将数组赋值给 `this.values`，那么该类的每个实例都将获得自己的数组。
 
 > 故旧皆为新
+> 
 > 方法在类内部内部使用经典的 `function` 语法定义，而不是我们一直在使用的箭头函数（fat arrows）。这种不一致性是遗憾的，但这种定义方法的方法是当前版本 Node 偏好的；我们将在第 8 章进一步探讨这个话题。
 
 在前面的三个段落中包含了许多新术语，让我们重新追溯以下代码的执行：
@@ -1148,9 +1181,11 @@ for (let thing of everything) {
 }
 ```
 
+```
 square: area 12.25 perimeter 14
 circle: area 19.634954084936208 perimeter 15.70796326794896
 rectangle: area 0.75 perimeter 4
+```
 
 ## 4.3 继承
 
@@ -1165,7 +1200,7 @@ class Person {
     if (formal) {
       return `Hello, my name is ${this.name}`
     } else {
-      return `Hi, I’m ${this.name}`
+      return `Hi, I'm ${this.name}`
     }
   }
   farewell () {
@@ -1181,7 +1216,9 @@ const parent = new Person('Hakim')
 console.log(`parent: ${parent.greeting(true)} - ${parent.farewell()}`)
 ```
 
+```
 parent: Hello, my name is Hakim - Goodbye
+```
 
 现在我们可以**扩展** `Person` 来创建一个新类 `Scientist`，在这种情况下我们说 `Scientist` **继承**自 `Person`，或者 `Person` 是 `Scientist` 的**父类**，而 `Scientist` 是 `Person` 的**子类**。
 
@@ -1192,19 +1229,21 @@ class Scientist extends Person {
     this.area = area
   }
   greeting (formal) {
-    return `${super.greeting(formal)}. Let’s talk about ${this.area}...`
+    return `${super.greeting(formal)}. Let's talk about ${this.area}...`
   }
 }
 ```
 
 这告诉我们 `Scientist` 是一个：
+
 - 拥有专业领域和名字的人
 - 以稍微长一点的方式招呼
 - 以与 `Person`相同的方式告别（因为 `Scientist` *没有*定义自己的 `farewell` 方法）
 
 `super` 一词在这里有两种用法：
+
 - 在 `Scientist` 的构造函数中，`super(name)` 调用父类 `Person` 的构造函数，以便在 `Scientist` 执行自己的初始化之前执行它的初始化。这避免了我们重复步骤。
-- 在 `greeting` 内部，表达式 `super.greeting(formal)` 意味着“调用父类对象的 `greeting` 方法”。这允许子类定义的方法添加或修改父类定义的方法的行为，再次避免了代码重复。
+- 在 `greeting` 内部，表达式 `super.greeting(formal)` 意味着"调用父类对象的 `greeting` 方法"。这允许子类定义的方法添加或修改父类定义的方法的行为，再次避免了代码重复。
 
 让我们尝试一下：
 
@@ -1213,10 +1252,9 @@ const child = new Scientist('Bhadra', 'microbiology')
 console.log(`child: ${child.greeting(false)} - ${child.farewell()}`)
 ```
 
-child: Hi, I’m Bhadra. Let’s talk about microbiology… - Goodbye
-
-
-
+```
+child: Hi, I'm Bhadra. Let's talk about microbiology… - Goodbye
+```
 
 - 它在对象 `child` 中查找是否存在名称正确的函数。
 - 并没有，所以它通过 `child` 的链接跳转到它的类 `Scientist`，查看那里是否有该函数。
@@ -1240,9 +1278,11 @@ for (let value of ['b', 'c', 'd' ]) {
 }
 ```
 
+```
 b -> a
 c -> b
 d -> c
+```
 
 像 `Delay` 这样的类有时被称为**有状态的**（stateful），因为它会在每次调用之间记住它的状态。
 
@@ -1258,11 +1298,13 @@ for (let value of ['a', 'b', 'c', 'd', 'e']) {
 }
 ```
 
+```
 a -> null
 b -> b
 c -> c
 d -> d
 e -> null
+```
 
 像 `Filter` 这样的类有时被称为**无状态的**（stateless），因为它不会在调用之间记住它的状态。
 
@@ -1278,11 +1320,13 @@ for (let value of ['a', 'b', 'c', 'd', 'e']) {
 }
 ```
 
+```
 a -> null
 b -> a
 c -> b
 d -> c
 e -> null
+```
 
 ### 活跃表达式 (ACTIVE EXPRESSIONS)
 
@@ -1365,6 +1409,7 @@ head 内部的 `title` 元素赋予页面标题。这在页面打开时显示在
 ## 5.3 页面
 
 HTML 页面应该具有：
+
 - 一个包含所有内容的 `html` 元素
 - 一个包含页面信息的 `head` 元素
 - 一个包含要显示内容的 `body` 元素
@@ -1377,10 +1422,10 @@ HTML 页面应该具有：
 <html>
   <head>
     <!-- 页面描述在这里 -->
-  </head>
+ </head>
   <body>
     <!-- 页面内容在这里 -->
-  </body>
+ </body>
 </html>
 ```
 
@@ -1390,24 +1435,20 @@ HTML 页面应该具有：
 <html>
   <head>
     <title>这段文字显示在浏览器栏中</title>
-  </head>
+ </head>
   <body>
     <h1>显示内容从这里开始</h1>
     <p>
       本课程介绍了 <em>JavaScript</em>的核心功能，
       并展示了在何时以及如何使用它们。
-    </p>
+   </p>
     <!-- "JavaScript" 一词在前面的段落中是斜体（强调） -->
     <!-- 段落。 -->
-  </body>
+ </body>
 </html>
 ```
 
-
-
-
-
--   在标题或段落中，我们可以使用 `em` 来*强调*文本。我们也可以使用 `strong` 让文本变得*更粗*。这类标签比 `i`（用于斜体）或 `b`（用于加粗）标签更好，因为它们传达的是意图，而不是强制特定的布局。视障人士或使用小屏幕设备的人可能希望以不同的方式显示各种类型的强调。
+- 在标题或段落中，我们可以使用 `em` 来*强调*文本。我们也可以使用 `strong` 让文本变得*更粗*。这类标签比 `i`（用于斜体）或 `b`（用于加粗）标签更好，因为它们传达的是意图，而不是强制特定的布局。视障人士或使用小屏幕设备的人可能希望以不同的方式显示各种类型的强调。
 
 ## 5.4 属性
 
@@ -1420,7 +1461,7 @@ HTML 页面应该具有：
 将 `h1` 标题居中显示在页面，同时：
 
 ```html
-<p class="disclaimer">This planet provided as-is.</p>
+<p class="disclaimer">This planet provided as-is</p>
 ```
 
 将此段落标记为免责声明。这对 HTML 来说并没有特殊含义，但正如我们之后将看到的，我们可以根据元素的 `class` 属性定义样式。
@@ -1445,9 +1486,9 @@ HTML 页面应该具有：
 </ul>
 ```
 
--   first
--   second
--   third
+- first
+- second
+- third
 
 ```html
 <ol>
@@ -1469,34 +1510,34 @@ HTML 页面应该具有：
     <ol>
       <li>minor p</li>
       <li>minor q</li>
-    </ol>
-  </li>
+   </ol>
+ </li>
   <li>Major B
     <ol>
       <li>minor r</li>
       <li>minor s</li>
-    </ol>
-  </li>
+   </ol>
+ </li>
 </ol>
 ```
 
 1. Major A
-1. minor p
-2. minor q
+   1. minor p
+   2. minor q
 2. Major B
-1. minor r
-2. minor s
+   1. minor r
+   2. minor s
 
 ## 5.6 表格
 
-列表是入门的很好的方法，但如果我们*真的*想用我们的数据科学技能来惊艳他人，我们需要表格。意乎所的是，我们使用 `table` 元素来创建这些。每一行都是一个 `tr`（代表“table 行”），在行内，列项通过 `td`（代表“table 数据”）或 `th`（代表“table 表头”）显示。
+列表是入门的很好的方法，但如果我们*真的*想用我们的数据科学技能来惊艳他人，我们需要表格。意乎所的是，我们使用 `table` 元素来创建这些。每一行都是一个 `tr`（代表"table 行"），在行内，列项通过 `td`（代表"table 数据"）或 `th`（代表"table 表头"）显示。
 
 ```html
 <table>
-  <tr><th>Alkali</th><th>Noble Gas</th></tr>
-  <tr><td>Hydrogen</td><td>Helium</td></tr>
-  <tr><td>Lithium</td><td>Neon</td></tr>
-  <tr><td>Sodium</td><td>Argon</td></tr>
+  <tr><th>Alkali</th><th>Noble Gas</th</tr>
+  <tr><td>Hydrogen</td><td>Helium</td</tr>
+  <tr><td>Lithium</td><td>Neon</td</tr>
+  <tr><td>Sodium</td><td>Argon</td</tr>
 </table>
 ```
 
@@ -1520,18 +1561,20 @@ HTML 页面应该具有：
 
 图 5.2：页面与链接
 
-```html
+
+
 <a href="https://nodejs.org/">Node.js</a>
 <br/>
 <a href="https://facebook.github.io/react/">React</a>
 <br/>
 <a href="../index.html">home page (relative path)</a>
-```
 
 它显示为：
 
 Node.js
+
 React
+
 home page (relative path)
 
 具有通常的点击性。
@@ -1549,6 +1592,7 @@ home page (relative path)
 需要注意的两点：
 
 1. `img` 标签的 `src` 属性指定了查找文件的位置；与 `a` 元素的 `href` 属性一样，这可以是 URL 或本地路径。
+
 2. 每一个 `img` 还应该包含一个 `title` 属性（其目的不言自明）和一个带有描述性文本的 `alt` 属性，以帮助辅助功能和搜索引擎。
 
 ## 5.9 级联样式
@@ -1594,9 +1638,6 @@ span.keyword {
 }
 ```
 
-
-
-
 每个条目都采用 `tag.class` 的形式，后面跟着大括号内的属性组，每个属性都是一个键值对。我们可以省略类名只写（例如）：
 
 ```css
@@ -1607,14 +1648,14 @@ p{
 
 在这种情况下，样式将适用于所有带有该标签的内容。如果这样这样做，我们可以用特定规则来覆盖通用规则：免责声明段落的样式由 `p` 定义，而覆盖规则由 `p.disclaimer` 定义。我们也可以省略标签，简单地使用 `.class,`，在这种情况下，每个具有该类的元素都具有该样式。
 
-正如之前对分隔符的讨论所建议的，元素的 `class` 可以有多个值，例如 `<span class="keyword highlight">…</</span>`。（`span` 元素只是标记一段文本区域，但除非对其应用样式，否则它没有作用。）
+正如之前对分隔符的讨论所建议的，元素的 `class` 可以有多个值，例如 `<span class="keyword highlight">…</span>`。（`span` 元素只是标记一段文本区域，但除非对其应用样式，否则它没有作用。）
 
 这些特性是 CSS 中一个（但遗憾不是唯一的）常见的困惑来源：如果人们既可以用特定规则覆盖通用规则，又可以为 `class` 提供多个值，我们该如何跟踪哪些规则将适用于具有多个类的元素呢？CSS 规则优先级的详细讨论超出了本教程的范围。我们建议那些可能经常处理样式表的人阅读（并考虑收藏）这个 W3Schools 页面¹。
 
 CSS 能够做的另一一件事是匹配特定元素。我们可以使用 `id` 属性在页面内唯一地标记特定元素，然后使用 `#name` 作为选择器引用这些元素。例如，如果我们创建一个页面，为两个 `span` 分赋予了唯一的 ID：
 
 ```html
-<<html>
+<html>
   <head>
     <link rel="stylesheet" href="selector-style.css" />
   </head>
@@ -1643,7 +1684,7 @@ CSS 能够做的另一一件事是匹配特定元素。我们可以使用 `id` �
 
 ### 内部链接
 
-我们可以在链接的 `href:` 中使用 `#name` 来链接页面中的元素，例如，`<a href="page.html#place">text</a>` 指向 `page.html` 中的 `#place` 元素。这在页面内部特别有用：`<a href="#place">jump</a>` 会直接带我们跳转到本页面内的 `#place` 元素。这样的内部链接通常用于交叉引用和创建目录。
+我们可以在链接的 `href` 中使用 `#name` 来链接页面中的元素，例如，`<a href="page.html#place">text</a>` 指向 `page.html` 中的 `#place` 元素。这在页面内部特别有用：`<a href="#place">jump</a>` 会直接带我们跳转到本页面内的 `#place` 元素。这样的内部链接通常用于交叉引用和创建目录。
 
 ## 5.10 BOOTSTRAP
 
@@ -1712,12 +1753,15 @@ Bootstrap 是响应式的：元素会随着页面变窄而改变大小，当屏�
 ```
 
 1. 如果漏掉 `p>` 或 `li>` 会发生什么？
+
 2. 你可以对 `ul` 或 `ol` 进行缩进吗？
 
 ### 混合搭配
 
 1. 创建一个包含 2x2 表格的页面，每个单元格中都有一个三点符号项目列表（无序列表）。
+
 2. 在不同的浏览器（例如 Firefox 或 Edge）中打开你的页面。它们会显示缩进列表吗？
+
 3. 为什么程序的行为不一致？为什么要对我们这样做？为什么 为什么 为什么？
 
 ### 命名
@@ -1735,20 +1779,28 @@ HTML 和 CSS 定义了少数颜色的名称。所有其他颜色都必须使用 
 ### 关键点
 
 - HTML 是长长标记语言序列中的最新成果。
+
 - HTML 文档包含元素（用角括号中的标签表示）和文本。
+
 - 元素必须严格嵌套。元素可以包含属性。
+
 - 使用以与符号开头的转义序列来表示特殊字符。
+
 - 每个页面都应该有一个 `html` 元素，其中包含一个 `head` 和一个 `body`。
+
 - 使用 `ul` 和 `ol` 用于无序列表和有序列表，使用 `li` 用于列表元素。
+
 - 使用 `table` 用于表格，`tr` 用于行，`th` 用于表头，`td` 用于普通数据。
+
 - 使用 `<a href="…"></a>` 创建链接。
+
 - 使用 `<img src="…" title="…" alt="…" />` 包含图像。
+
 - 使用 CSS 定义元素的外观。
+
 - 使用 `class` 和 `id` 识别元素。
+
 - 使用选择器指定 CSS 应用于哪些元素。
-
-
-
 
 # 6 操作页面
 
@@ -1788,7 +1840,9 @@ HTML 和 CSS 定义了少数颜色的名称。所有其他颜色都必须使用 
 此页面有三个主要部分：
 
 1. `head` 包含一个 `meta` 标签，指定了页面的**字符编码**，即用于表示 1970 年代标准美国键盘上不存在的字符的方案。字符集和字符编码超出了本课的范围；请参阅这本文[¹]](#13_Chapter06.xhtml_fn6_1) 中关于这一永不过的话题的讨论。
+
 2. `body` 的上半部分有一些标题和段落，供 JavaScript 操作。它还包含一个标记为 `class="fill"` 的 `div`，我们的脚本最终会在其中填充计数结果。
+
 3. 脚本本身位于页面底部的 `script` 标签中；我们将在下文中对其进行深入探讨。
 
 > 当脚本运行时
@@ -1882,12 +1936,10 @@ const items = headings
 container.innerHTML = '<ul>' + items + '</ul>'
 ```
 
-
-
-
 和之前一样，第一行获取了我们要填充的 `div`。第二行抓取了所有的 `h2` 标题，我们人为决定这些标题是唯一值得包含在目录中的内容。我们将 `document.querySelectorAll` 的结果通过 `Array.from` 函数，因为前者的结果并不是 JavaScript 数组：出于某些可能对某人、某处是有道理的原因，它是一个被称为 `NodeList` 的类型，它缺少了 `Array` 的绝大多数有用方法。
 
 > 静态方法
+>
 > `Array.from` 是一个静态方法：它属于类本身，而不是属于该类的对象。静态方法主要用于将工具函数与类关联，例如下面示例中的 `dist`。与像 `magnitude` 这样的实例方法的调用不同，静态方法使用 `class.method()` 进行调用，而不是 `some_object.method()`。
 
 接，我们有三行代码完成了该函数的大部分工作。第一行告诉我们 `items` 将被赋值为源自 `headings` 的内容；第二行将标题数组转换为字符串数组，第三行将这些字符串连接起来创建一个单个字符串。观察 `map` 调用，每个标题都变成一个列表列表项 (li)，其中包含一个链接 (a)，其 `href` 属性是标题的 ID，而其显示内容（`<a…>` 和 `</a>` 之间的文本）是标题的文本。`href` 属性的值以 `#` 开头，这使其成为本地链接（即它链接到同一页面内部的内容）。如果我们的 `h2` 标题之一没有设置 `id`，这个 `map` 将失败；我们将在练习中探索处理这种情况的方法。
@@ -2011,11 +2063,10 @@ const sortLists = () => {
 我们通过 `lists.forEach` 分别处理每个列表。`forEach` 内部的回调函数使用 `Array.from` 创建包含主列表元素子节点的数组，然后过滤该列表以移除任何文本节点。我们需要 `Array.from` 调用是因为（再次）DOM 不使用 JavaScript 数组来存储子节点，而是使用自己设计的一种结构，该结构缺少我们想要调用的方法。我们移除文本节点是因为它们代表了列表元素之间的空白，例如闭合标签 `</li>` 之后和下一个开启标签 `<li>` 之前的换行符。
 
 > 识别文本节点
+>
 > 我们可以检查 `c.nodeType` 而不是 `c.nodeName` 来识别文本节点，但我们觉得 `nodeName` 让代码更易理解。一如既常，我们使用 `!==` 进行比较以防止不必要的意外。
 
 现在我们有了一个要排序的 `li` 元素数组，可以使用 `Array.sort` 对它们进行排序。由于我们想要根据包含的文本进行排序，我们必须提供自己的排序函数，返回负数、0 或正数，以显示其 `left` 参数小于、等于还是大于 `right` 参数。我们使用节点的 `textContent` 成员来获取它包含的文本，并使用字符串对象的 `localeCompare` 来获取 -1/0/1 的结果。这一切都是通过网上搜索发现的，主要在 W3Schools 网站上。
-
-
 
 于是，我们来到了本节中最大的例子。HTML 有一个用于格式化引用的 `cite` 标签，但它不允许我们直接链接到参考文献条目。为了尽可能减少学术论文中的打字量，我们希望找到像这样的链接：
 
@@ -2090,8 +2141,11 @@ Array.from(document.querySelectorAll('a'))
 ```
 
 // *输出:*
+
 // - `<a href="#b">Moreau1896</a>`
+
 // - `<a href="#b">Brundle1982, Brundle1984</a>`
+
 // - `<a href="http://somewhere.org">http://somewhere.org</a>` 作者的站点
 
 （我们在注释中显示节点，以视觉化流水线中每一步的操作。）我们随后过滤此数组以找到指向 `#b` 的链接，我们正用它来标记引用：
@@ -2105,7 +2159,9 @@ Array.from(document.querySelectorAll('a'))
 ```
 
 // *输出:*
+
 // - `<a href="#b">Moreau1896</a>`
+
 // - `<a href="#b">Brundle1982, Brundle1984</a>`
 
 我们现在遇到了一个问题。可以使用 `map` 调用来从每个链接中提取文本并对其进行处理，但这样我们拥有的只是一个字符串数组。稍后我们还需要这些字符串所属的节点，以便能够修改它们的 `href` 属性，因此我们必须以某种方式在流水线中将节点和字符串一起传递。一种方案是为每个元素创建一个包含两个元素的数组：
@@ -2126,10 +2182,15 @@ Array.from(document.querySelectorAll('a'))
 ```
 
 // *输出:*
+
 // - {node: <a href="#b">Moreau1896</a>,
+
 //   text: ['Moreau1896']}
+
 // - {node: <a href="#b">Brundle1982, Brundle1984</a>,
+
 //   text: ['Brundle1982', 'Brundle1984']}
+
 ```
 
 在这里，我们将每个链接转换为一个对象，其 `"node"` 键的值是链接的 DOM 节点，其 `"text"` 键是节点的文本，我们对其进行了逗号分割并去除了首尾空格。
@@ -2143,12 +2204,19 @@ Array.from(document.querySelectorAll('a'))
 在完成所有这些之后，流水线的下一个阶段几乎是解脱：
 
 ```javascript
+
 .map(({node, text}) => (
+
   {
+
     node,
+
     text: text.map(cite => `<a href="../bib/#${cite}">${cite}</a>`)
+
   }
+
 ))
+
 ```
 
 // *输出:*
@@ -2171,13 +2239,11 @@ Array.from(document.querySelectorAll('a'))
 
 这正是我们在流水线中一直传递节点本身得到了回报的地方。我们创建一个 `span` 元素，通过赋值给其 `innerHTML` 属性来填充它，然后用刚刚创建的节点替换原始链接节点。如果我们现在在函数之后添加一个事件监听器，在页面加载时调用它，就能看到按我们期望格式化的引用。
 
-## 6.5  实时时钟
+## 6.5 实时时钟
 
 我们将用一个简短的例子结束本节，但它预示了未来的可能性：
 
 ![图像](img/pg66_1.jpg)
-
-
 
 定义一个函数：`check`。在 DOM 准备就绪时调用该函数：`check`。函数内部呢？很容易猜到 `Date()` 创建了一个包含日期的对象，而且由于我们将该对象赋值给名为 `today` 的变量，你甚至可能猜到，如果我们不指定想要的日期，我们得到的就是今天的值。然后，我们从日期中提取小时、分钟和秒，并将它们放入数组中，这样我们就可以将每个值转换为两个字符的字符串（必要时在前面补零），然后连接这些字符串以创建一个类似 `17:48:02` 的时间，并将其填充到 ID 为 `current` 的元素中。
 
@@ -2188,16 +2254,19 @@ Array.from(document.querySelectorAll('a'))
 ## 这是什么编码？
 
 1. 写一个函数，查找脚本所在页面的字符编码并将其打印到控制台。
+
 2. 扩展该函数以查找当前页面中所有的 meta 标签，并打印它们的名称和值。
 
 ### 单词计数
 
 1. 写一个名为 `countWords` 的函数，找到页面中所有的文本节点，按空白拆分，并返回页面中的总单词数。
+
 2. 写第二个名为 `showWords` 的函数，使用第一个函数找到单词数，然后将该数字显示在 ID 为 `wordcount` 的段落中。
 
 ### 更健壮的目录
 
 1. 如果 `h2` 没有 `id` 属性，目录示例会生成什么？
+
 2. 修改示例，使目录中仅包含具有 `id` 属性的 `h2` 元素。
 
 ### 显式创建节点
@@ -2207,16 +2276,27 @@ Array.from(document.querySelectorAll('a'))
 ### 核心要点
 
 - 在页面页头中使用 `meta` 标签来指定页面的字符编码。
+
 - 页面使用文档对象模型 (DOM) 在内存中表示。
+
 - `document` 对象代表脚本所在的页面。
+
 - 使用 `querySelectorAll` 方法查找匹配条件的 DOM 节点。
+
 - 将 HTML 文本赋值给节点的 `innerHTML` 属性以更改节点内容。
+
 - 使用 `((params) => {…})(arguments)` 在单条语句中创建并调用函数。
+
 - 事件监听器是浏览器在特定事件发生时运行的函数。
+
 - 为 `DOMContentLoaded` 创建事件监听器，以便在 DOM 构建后触发脚本执行。
+
 - 检查 DOM 节点的 `nodeType` 或 `nodeName` 属性以确定它是什么类型的节点。
+
 - 解构赋值允许我们在单条语句中按名称为多个变量赋值。
+
 - 使用 `setTimeout` 在延迟后触发函数的执行。
+
 - 要让程序无限运行，让 `setTimeout` 调用的函数设置相同函数的另一个定时。
 
 # 7 动态页面
@@ -2228,16 +2308,12 @@ Array.from(document.querySelectorAll('a'))
 随着浏览器和 JavaScript 变得越来越强大，平衡向客户端页面生成倾斜。在这种模型中，浏览器从一个或多个服务器获取数据，并将这些数据交给 JavaScript 库，由其在浏览器中生成 HTML 并显示。这允许客户端决定如何渲染渲染数据，随着手机和平板电脑取代桌面和笔记本电脑，这一点变得越来越重要。它还将计算负担从服务器转移到客户端设备，因此已经创建并广泛使用了（许多）用于此类生成的 JavaScript 框架。其设计原则是：
 
 1. 我们使用 React 来决定“什么”。
+
 2. 使用事件监听器决定“何时”变化。
+
 3. 我们使用 DOM 来更新 HTML。
 
-## 7.1 页面生成 (07_Contents.xhtml_ch7)
-
-![图 7.1: 页面生成](img/fig7.jpg)
-
-等等，让我们重新检查 7.1 节提供的文本，因为它看起来有些错乱。让我们根据逻辑重构它：
-
-让我们从开始：
+## 7.1 页面生成
 
 ```html
 <!DOCTYPE html>
@@ -2260,26 +2336,21 @@ Array.from(document.querySelectorAll('a'))
 </html>
 ```
 
-（等等，7.1 节提供的文本实际上是描述和代码片段的混合。我将按照规则格式化提示词块中提供的*实际文本*。）
-
 页面的 `head` 从网络加载两个库；我们稍后将使用本地安装的。`body` 包含一个带有 ID 的 `div` 以便查找。当我们的脚本运行时，React 将将其生成的 HTML 放入此 `div` 中。
 
 脚本本身使用 `React.DOM.h1` 创建一个带有“Hello, React”文本的 `h1`，然后找到 ID 为 `"app"` 的文档元素，并使用 `ReactDOM.render` 将前者插入后者。这改变了内存中页面的表示，而不是磁盘上页面源码；如果我们想检查生成的 HTML，我们必须在浏览器中进行。最后，我们将脚本放在页面底部，这样浏览器在脚本运行之前就会将 HTML 转换为 DOM 树。我们稍后会回来修复这一点。
 
 > 检查工具
-
-> 如果你正在使用 Firefox 浏览器，可以通过主菜单并选择 `工具 (Tools)… 网页开发者… 切换调试工具` 来打开开发者工具面板。页面底部将打开一个标签页显示；选择 `检查器 (Inspector)` 来查看页面内容和页面的 CSS。当你在页面本身移动鼠标时，相应的结构元素会被高亮。这其实非常酷*……
+>
+> *如果你正在使用 Firefox 浏览器，可以通过主菜单并选择 `工具 (Tools)… 网页开发者… 切换调试工具` 来打开开发者工具面板。页面底部将打开一个标签页显示；选择 `检查器 (Inspector)` 来查看页面内容和页面的 CSS。当你在页面本身移动鼠标时，相应的结构元素会被高亮。这其实非常酷*……
 
 `React.DOM.h1` 的第一个参数在示例中是 `null`，但更通用地说，它可以是一个指定我们希望新创建的节点拥有的属性的对象。这里有一些特殊之处——例如我们必须使用 `fontStyle` 而不是 `font-style`，以便属性对象的键看起来像法的 JavaScript 变量：
 
 ```html
 <body>
-    <div id="app"></</div>
+    <div id="app"></div>
     <script>
 ```
-
-
-
 
 ```javascript
 const attributes = {
@@ -2293,8 +2364,10 @@ ReactDOM.render(
   document.getElementById("app")
 )
 ```
+
 </script>
-</body
+
+</body>
 
 ## 7.2 JSX
 
@@ -2395,20 +2468,25 @@ React 最强大的功能之一是它允许我们创建看起来像自定义 HTML
 
 > **使用 Node 包管理器初始化项目**
 >
-> 如果你直在跟着写代码，到为止我们创建了 HTML 和 JavaScript 文件，并在终端运行了 JavaScript 文件，但还没有使用 Node 包管理器 `npm`。在安装 Parcel 之前，我们可以通过输入命令我们将创建 HTML 和 JavaScript 文件的目录转换为项目：
+> *如果你直在跟着写代码，到为止我们创建了 HTML 和 JavaScript 文件，并在终端运行了 JavaScript 文件，但还没有使用 Node 包管理器 `npm`。在安装 Parcel 之前，我们可以通过输入命令我们将创建 HTML 和 JavaScript 文件的目录转换为项目：*
+>
 > `npm init -y`
 >
-> 安装 Parcel，运行：
+> *安装 Parcel，运行：*
+>
 > `npm install parcel-bundler`
 >
-> 安装好 Parcel 后，我们可以这样让它运行一个测试页面：
+> *安装好 Parcel 后，我们可以这样让它运行一个测试页面：*
+>
 > `node_modules/.bin/parcel serve -p 4000 src/dynamic/pass-params.html`
-> 服务器正在运行在 http://localhost:4000
-> + 构建耗时 128ms。
-
+>
+> *服务器正在运行在 http://localhost:4000*
+>
+> *+ 构建耗时 128ms。*
+>
 > **退出 Parcel**
 >
-> 使用键盘中断 Control-C 离开 Parcel。
+> *使用键盘中断 Control-C 离开 Parcel。*
 
 这之所以有效，是因为当 NPM 在项目的 `node_modules` 目录中安装库时，该库可能会在 `node_modules/.bin` 中放入可执行脚本（注意是带领先点的 .bin，而不是 bin）。当我们要求 Parcel 服务应用程序时，它：
 
@@ -2432,14 +2510,10 @@ Parcel 还会在 `./cache` 中缓存内容，这样它就不需要重复工作�
 },
 ```
 
-
-
-
 我们现在可以使用 `npm run dev – src/dynamic/pass-params.html` 了，因为 `–` 之后的所有内容都会传递给正在运行的脚本。这不仅为我们节省了输入时间，还为其他开发者提供了一份如何使用项目的记录。遗憾的是，并没有标准的方法可以在 JSON 文件中添加注释。……
 
 > 哎呀
 >
-
 > *注意：如果我们不小心指定了目录名称（如 `src/dynamic`）而不是 HTML 文件的名称，Parcel 会在控制台打印错误“no entries found”（未找到条目）。这是因为它试图将目录本身作为文件来读取。*
 
 ## 7.5 多文件
@@ -2495,13 +2569,14 @@ ReactDOM.render(
 ```
 
 > **安装 React 和 ReactDOM**
+>
 > *现在我们已经使用 `npm init` 创建了项目文件夹，并创建了 `project.json` 文件，我们可以安装我们的第一个模块了：*
-
-`$ npm install react`
-
-`$ npm install reactDOM`
-
-通常情况下，使用 `require` 函数表示我们需要安装该库以访问模块的函数。
+>
+> `$ npm install react`
+>
+> `$ npm install reactDOM`
+>
+> 通常情况下，使用 `require` 函数表示我们需要安装该库以访问模块的函数。
 
 更重要的是，我们将重写 `app.js`，让它加载所需的库，因为无法保证在 `head` 中加载的库在 `app.js` 运行时已是可用的：
 
@@ -2535,12 +2610,12 @@ ReactDOM.render(
 
 ## 7.6 练习
 
-## 该死的大括号
+### 该死的大括号
 
 我们的列表构建示例包含了这行代码：
 
 ```html
-<<ul>{allNames.map((name) => <<li>{name}</li> )}</ul>
+<ul>{allNames.map((name) => <li>{name}</li> )}</ul>
 ```
 
 为什么紧跟在 `<ul>` 元素内部的大括号是必要的？如果把它们删掉会发生什么？
@@ -2548,7 +2623,9 @@ ReactDOM.render(
 ### 真实数据
 
 1. 创建一个名为 `programmers.js` 的文件，定义一个名为 `programmers` 的 JSON 对象列表，其中包含我们程序员的 `firstName` 和 `lastName` 字段。（你可以在互联网上搜索他们的名字。）
+
 2. 像加载其他 JavaScript 文件一样在页面中加载该文件。
+
 3. 从应用程序中删除 `allNames` 列表，并将其修改为使用来自 `programmers` 列表的数据。
 
 加载此类常量数据是测试期间常用的做法。
@@ -2569,21 +2646,27 @@ ReactDOM.render(
 
 假设我们想用背景颜色高亮交替行（这是一种糟糕的设计，但我们想要对齐）。
 
-### 关键点点
+### 关键点
 
 - 表格很棒，但可视化通常更有效——前提是它们设计良好且你的受众有视力。
+
 - 在浏览器中可视化数据的方法甚至比前端工具包的方法还要多。
+
 - Vega-Lite 是一个`声明式`框架：作为用户，你指定数据和设置，并让库处理一切。它并不做所有，但它能很好且轻松地处理常见事务，并与 React 良好地交互。
+
 - 服务器上的旧版动态网站。
+
 - 客户端的新的动态网站。
+
 - React 将 HTML 表示为函数调用。
+
 - JSX 翻译为 JavaScript（不保存在磁盘上）。
+
 - 使用 Babel 翻译 JSX。
+
 - 使用 props 定义组件。
+
 - 属性以对象的形式传递。
-
-
-
 
 ```javascript
 let spec = {
@@ -2604,6 +2687,7 @@ let spec = {
   }
 }
 ```
+
 `</script>`
 
 …页面的其余部分与之前相同
@@ -2611,27 +2695,6 @@ let spec = {
 在这种情况下，我们将二维数据表表示为具有显式索引 `"a"` 和 `"b"` 的对象。我们必须这样做，是因为 JSON（如 JavaScript）没有带有行和列标题的二维数组的原生表示。
 
 一旦我们创建了规范（spec），就可以调用 `vegaEmbed`，传入持有可视化结果的元素 ID、规范以及一些选项（目前我们将把它们留空）：
-
-```javascript
-let spec = {
-  "$schema": "https://vega.github.io/schema/vega-lite/v2.0.json",
-  "description": "Create data array but do not display anything.",
-  "data": {
-    "values": [
-      // …如上所示
-    ]
-  }
-}
-
-vegaEmbed("#vis", spec, {})
-```
-
-但是，当我们打开页面时，什么也没有出现，因为我们还没有告诉 Vega-Lite *如何* 显示这些数据。要做到这一点，我们需要在规范中再添加两个字段：
-
-*   `mark` 指定用于数据的视觉元素
-*   `encoding` 告诉 Vega 如何将值映射到标记（marks）
-
-这是我们更新后的规范：
 
 ```javascript
 let spec = {
@@ -2652,17 +2715,16 @@ let spec = {
 vegaEmbed("#vis", spec, {})
 ```
 
-现在当我们打开页面时，我们看到了一个柱状图，并感到非常自豪（图 8.1）。
+但是，当我们打开页面时，什么也没有出现，因为我们还没有告诉 Vega-Lite *如何* 显示这些数据。要做到这一点，我们需要在规范中再添加两个字段：
 
-![Image](img/fig8_1.jpg)
+*   `mark` 指定用于数据的视觉元素
+*   `encoding` 告诉 Vega 如何将值映射到标记（marks）
 
-图 8.1：Mark 和 Encoding
-
-还有一些我们不会使用的各种控件的样式糟糕的链接。我们可以通过填充 `vegaEmbed` 的选项参数来关闭它们：
+这是我们更新后的规范：
 
 ```javascript
 let spec = {
-  "Sschema": "https://vega.github.io/schema/vega-lite/v2.0.json",
+  "$schema": "https://vega.github.io/schema/vega-lite/v2.0.json",
   "description": "Disable control links.",
   "data": {
     // …如之前所示
@@ -2723,11 +2785,10 @@ vegaEmbed("#vis", spec, {})
 
 ![Image](img/fig8_3.jpg)
 
-
-
-
 - Vega-Lite 规范包含一个模式标识符、描述、数据、标记（marks）和编码（encodings）。
+
 - Vega-Lite 可视化的整体布局可以通过设置选项来控制。
+
 - 某些应用程序将使用 `require` 处理服务端代码，使用 `import` 处理客户端代码。
 
 # 9 承诺 (Promises)
@@ -2735,6 +2796,7 @@ vegaEmbed("#vis", spec, {})
 到目前我们已经习惯了将回调函数作为参数传递给其他函数。回调由于以下原因会迅速变得复杂：
 
 - 嵌套：一个延迟计算可能需要另一个延迟计算的结果，而那个结果还需要……
+
 - 错误处理：谁来注意到并处理错误？（这在现实生活中通常也是问题。）
 
 例如，假设我们想将一组 CSV 文件转换为 HTML 页面。我们函数的输入是包含一个或多个 CSV 文件的目录名称以及一个输出目录的名称；预期的结果是：如果输出目录不存在则创建它；为每个 CSV 文件创建一个 HTML 文件；删除目录中任何`不`对应于 CSV 文件的 HTML 文件；并创建一个包含所有页面链接的索引页。
@@ -2747,7 +2809,7 @@ vegaEmbed("#vis", spec, {})
 
 与其使用纠缠的回调嵌套，不如使用 `promises`，然后使用 `async` 和 `await` 让事情变得更简单。JavaScript 提供了三种机制，是因为随着语言的演进，它的开发者发明了更好的处理问题的方法，但如果不理解它们的工作原理，简单的高层想法往往是没有意义的（这在现实生活中也是一个问题）。
 
-## 9.1 执行队列 (EXECUTION QUEUE)
+## 9.1 执行队列
 
 为了让后续任何内容都有意义，理解 JavaScript 的 `event loop`（事件循环）至关重要，这里有完整的解释。大多数函数按顺序执行：
 
@@ -2756,8 +2818,11 @@ vegaEmbed("#vis", spec, {})
   console.log(t)
 })
 ```
+
 1000
+
 1500
+
 500
 
 然而，内置函数会延迟执行：它们不是立即运行，而是将回调添加到 JavaScript 解释器用于跟踪待执行事项的列表中。当一个任务完成时，解释器会取出下一个并运行。
@@ -2770,11 +2835,17 @@ vegaEmbed("#vis", spec, {})
   setTimeout(() => {console.log(`inside handler for ${t}`)}, t)
 })
 ```
+
 about to setTimeout for 1000
+
 about to setTimeout for 1500
+
 about to setTimeout for 500
+
 inside handler for 500
+
 inside handler for 1000
+
 inside handler for 1500
 
 这并不奇怪：如果我们请求 JavaScript 延迟执行，执行就会延迟。奇怪的是，设置零超时也会延迟执行：
@@ -2788,13 +2859,21 @@ values.forEach(t => {
 })
 console.log(`finishing`)
 ```
+
 starting...
+
 about to setTimeout for 1000
+
 about to setTimeout for 1500
+
 about to setTimeout for 500
+
 …finishing
+
 inside handler for 500
+
 inside handler for 1000
+
 inside handler for 1500
 
 图 9.1 显示了在打印 `…finishing` 之前的执行队列。我们可以使用 `setTimeout` 构建一个通用的非阻塞函数：
@@ -2813,11 +2892,17 @@ const nonBlocking = (callback) => {
   nonBlocking(() => console.log(`inside callback for ${val}`))
 })
 ```
+
 about to do nonBlocking for a
+
 about to do nonBlocking for b
+
 about to do nonBlocking for c
+
 inside callback for a
+
 inside callback for b
+
 inside callback for c
 
 为什么要这样做？因为我们可能想给其他事情运行的机会。特别是从计算机的角度来看，文件 I/O 和任何涉及网络请求极其缓慢。如果一个 CPU 周期是一秒钟，那么从 RAM 获取数据需要几分钟，从固态硬盘获取数据需要六到八天，而通过网络获取则相当于八年。JavaScript 的设计是为了让我们（或我们的浏览器）切换任务去做其他事情。
@@ -2830,11 +2915,17 @@ inside callback for c
   setImmediate(() => console.log(`inside immediate handler for ${val}`))
 })
 ```
+
 about to do setImmediate for a
+
 about to do setImmediate for b
+
 about to do setImmediate for c
+
 inside immediate handler for a
+
 inside immediate handler for b
+
 inside immediate handler for c
 
 ## 9.2 Promises
@@ -2845,6 +2936,7 @@ inside immediate handler for c
 const fs = require('fs-extra')
 fs.stat('moby-dick.txt').then((stats) => console.log(stats.size))
 ```
+
 1276201
 
 `fs-extra.stat` 将最终产生关于文件的统计信息，但这将需要一段时间，所以 `fs-extra.stat` 会立即返回一个 `Promise` 类的对象。`Promise` 有一个方法 `then` 接收回调并存储在 promise 对象中。当 `stat` 调用完成时，记录的回调会被调用，并传递另一个包含文件统计信息的对象（包括它的大小）。
@@ -2868,7 +2960,11 @@ const prom = new Promise((resolve, reject) => {
 
 这段代码构造了一个新的 `Promise` 对象。构造函数接收一个参数；这必须是一个有两个参数的回调函数，约定命名为 `resolve` 和 `reject`。在回调体内，如果一切按计划进行，我们调用 `resolve` 返回一个值。该值随后会被传递给 `Promise` 的 `then` 方法。
 
-这似乎是一种迂回的方法，但它一次性解决了多个问题。第一个也是最重要的是错误处理：如果在传递给 `Promise` 构造函数的回调内部发生了了错误，我们可以调用 `reject` 而不是 `resolve`。就像 `then` 处理传递给 `resolve` 的任何内容一样，`Promise` 定义了一个名为 `catch` 的方法来处理传递给 `reject` 的任何内容。因此，我们可以构建一个稍微健壮的数据获取器，如果我们把月份误写为 `80`，它会报告合理的提示：
+
+
+# 9.3 PROMISES
+
+这似乎是一种迂回的方法，但它一次性解决了多个问题。第一个也是最重要的是错误处理：如果在传递给 `Promise` 构造函数的回调内部发生了错误，我们可以调用 `reject` 而不是 `resolve`。就像 `then` 处理传递给 `resolve` 的任何内容一样，`Promise` 定义了一个名为 `catch` 的方法来处理传递给 `reject` 的任何内容。因此，我们可以构建一个稍微健壮的数据获取器，如果我们把月份误写为 `80`，它会报告合理的提示：
 
 ```javascript
 const fetch = require('node-fetch')
@@ -2883,9 +2979,6 @@ new Promise((resolve, reject) => {
       }
     })
 ```
-
-
-
 
 ```javascript
 }
@@ -2916,16 +3009,22 @@ else {
 
 图 9.3：作为对象的 Promise（执行 then 和 catch 之后）
 
-调用 `then` 和 `catch`会将回调分配给 promise 对象的成功操作和错误操作成员。这些方法随后作为 `resolve` 和 `reject` 传递给初始操作回调，也就是说，如果因为页面获取成功而调用了 `resolve`，实际上调用的是 promise 的成功操作，即传递给 `then` 的回调函数。另一方面，如果调用了 `reject`，它将触发错误操作的执行，即传递给 `catch` 的回调函数。
+调用 `then` 和 `catch` 会将回调分配给 promise 对象的成功操作和错误操作成员。这些方法随后作为 `resolve` 和 `reject` 传递给初始操作回调，也就是说，如果因为页面获取成功而调用了 `resolve`，实际上调用的是 promise 的成功操作，即传递给 `then` 的回调函数。另一方面，如果调用了 `reject`，它将触发错误操作的执行，即传递给 `catch` 的回调函数。
 
-是的，这很复杂——复杂到 JavaScript 增加了一层（我们将在第 9.4 节
+是的，这很复杂——复杂到 JavaScript 增加了一层（我们将在第 9.4 节讨论）：
+
+```javascript
 url = 'https://api.nasa.gov/neo/rest/v1/feed' + '?api_key=DEMO_KEY&start_date=2018-80-20' // 非法日期
 
 try {
+
     fetch(url)
+
 }
 catch (err) {
+
     console.log(err)
+
 }
 ```
 
@@ -2941,42 +3040,55 @@ catch (err) {
 
 图 9.4：当 Try…Catch 失败时
 
-回到上面的 `fs–extra.stat` 示例，如果我们想处理多个文件（例如计算它们的总大小）该怎么办？我们可以写一个循环：
+回到上面的 `fs-extra.stat` 示例，如果我们想处理多个文件（例如计算它们的总大小）该怎么办？我们可以写一个循环：
 
 ```javascript
 const fs = require('fs-extra')
+
 let total_size = 0
+
 const files = ['jane-eyre.txt', 'moby-dick.txt', 'life-of-frederick-douglass.txt']
 
 for (let fileName of files) {
+
     fs.stat(fileName).then((stats) => {
+
         total_size += stats.size
+
     })
+
 }
+
 console.log(total_size)
 ```
 
-但这是行通的：每次迭代中的 `stat` 都是异步执行的，因此在任何 promise 代码运行之前，循环就会结束，脚本会打印总大小为零。
+但这是行不通的：每次迭代中的 `stat` 都是异步执行的，因此在任何 promise 代码运行之前，循环就会结束，脚本会打印总大小为零。
 
 方案 B 是将 promises 链起来，以确保每个 promise 只在上一个 resolve 后才执行：
 
 ```javascript
 const fs = require('fs-extra')
+
 let total_size = 0
 
 new Promise((resolve, reject) => {
+
     fs.stat('jane-eyre.txt').then((jeStats) => {
+
         fs.stat('moby-dick.txt').then((mdStats) => {
+
             fs.stat('life-of-frederick-douglass.txt').then((fdStats) => {
+
                 resolve(jeStats.size + mdStats.size + fdStats.size)
+
             })
+
         })
+
     })
+
 }).then((total) => console.log(total))
 ```
-
-
-
 
 ```javascript
 .then(files => console.log('glob + Promise.all(…)', files))
@@ -2998,18 +3110,24 @@ glob + Promise.all(…) [ Stats {
 // …前面的的导入和参数与之前相同..
 
 const statPair = (filename) => {
+
   return new Promise((resolve, reject) => {
+
     fs.stat(filename)
       .then(stats => resolve({filename, stats}))
       .catch(error => reject(error))
+
   })
+
 }
 ```
 
-`glob('${srcDir}/**/*.txt')`
+```javascript
+glob('${srcDir}/**/*.txt')
   .then(files => Promise.all(files.map(f => statPair(f))))
   .then(files => console.log('glob + Promise.all(…)', files))
   .catch(error => console.error(error))
+```
 
 ```javascript
 glob + Promise.all(…) [ { filename: './common-sense.txt',
@@ -3028,10 +3146,10 @@ glob + Promise.all(…) [ { filename: './common-sense.txt',
 ```javascript
 // …前面的导入和参数与之前相同..
 
-glob('$ srcDir}/**/*.txt’)
+glob('${srcDir}/**/*.txt')
   .then(files => Promise.all(files.map(f => statPair(f))))
   .then(files => files.filter(pair => pair.stats.size > 100000))
-  .then(files => Promise.all(files.map(f => fs.readFile(f.filename, ′utf8’))))
+  .then(files => Promise.all(files.map(f => fs.readFile(f.filename, 'utf8'))))
   .then(contents => console.log('…readFile', contents.map(c => c.length)))
   .catch(error => console.error(error))
 ```
@@ -3047,17 +3165,21 @@ glob('$ srcDir}/**/*.txt’)
 // …前面的导入和参数与之前相同..
 
 const countLines = (text) => {
+
   return text.split('\n').length
+
 }
 ```
 
-`glob('${srcDir}/**/*.txt')`
+```javascript
+glob('${srcDir}/**/*.txt')
   .then(files => Promise.all(files.map(f => statPair(f))))
   .then(files => files.filter(pair => pair.stats.size > 100000))
-  .then(files => Promise.all(files.map(f => fs.readFile(f.filename, ′utf8’))))
+  .then(files => Promise.all(files.map(f => fs.readFile(f.filename, 'utf8'))))
   .then(contents => contents.map(c => countLines(c)))
   .then(lengths => console.log('lengths', lengths))
   .catch(error => console.error(error))
+```
 
 ```javascript
 lengths [ 2654, 21063, 4105, 22334, 13028, 3584
@@ -3075,22 +3197,28 @@ lengths [ 2654, 21063, 4105, 22334, 13028, 3584
 
 程序员们从不满足于现状，因此 JavaScript 的最新版本提供了另一个工具来管理异步计算。正如我们在上面看到的，`Promise.then` 的结果是另一个 promise，这允许我们创建长链的 `.then(…)` 调用。这种方法虽然有效，但它不是可读性最好的表示法，并且已知会产生一种被困住的感觉。
 
-我们可以使用两个新关键字 `async` 和 `await` 来避免这种情况。`async` 告诉 JavaScript 函数是非异步的，即它可能想要等待某些事情完成。在异步函数内部，`await` 告诉 JavaScript 表现得就像已经等待了某事情完成一样。我们这样结合使用它们：
+我们可以使用两个新关键字 `async` 和 `await` 来避免这种情况。`async` 告诉 JavaScript 函数是异步的，即它可能想要等待某些事情完成。在异步函数内部，`await` 告诉 JavaScript 表现得就像已经等待了某事情完成一样。我们这样结合使用它们：
 
 ```javascript
 const fs = require('fs-extra')
 
 const statPairAsync = async (filename) => {
+
   const stats = await fs.stat(filename)
+
   return {filename, stats}
+
 }
 ```
 
-`statPairAsync('moby-dick.txt').then((white_whale) => console.log(white_whale))`async` 函数仍然返回 `Promise`，但我们可以通过 `await` 将这些 promises 链起来，正如之前所做的，我们可以使用 `catch` 来处理抛出的异常。让我们使用上一个章节的示例：
+```javascript
+statPairAsync('moby-dick.txt').then((white_whale) => console.log(white_whale))
+```
+
+`async` 函数仍然返回 `Promise`，但我们可以通过 `await` 将这些 promises 链起来，正如之前所做的，我们可以使用 `catch` 来处理抛出的异常。让我们使用上一个章节的示例：
 
 ```javascript
 const fs = require('fs-extra')
-
 const glob = require('glob')
 
 const statPairAsync = async (filename) => {
@@ -3104,20 +3232,19 @@ const countLines = (text) => {
 
 const processFiles = async (globpath) => {
   const filenames = await glob(globpath)
-  const pairs = await Promise.all(filenames.map(f => statPair(f)))
+  const pairs = await Promise.all(filenames.map(f => statPairAsync(f)))
   const filtered = pairs.filter(pair => pair.stats.size > 100000)
-  const contents = await Promise.all(filtered.map(f => fs.readFile(f.filename, ′utf8’)))
+  const contents = await Promise.all(filtered.map(f => fs.readFile(f.filename, 'utf8')))
   const lengths = contents.map(c => countLines(c))
   return lengths
 }
 
 const srcDir = process.argv[2]
+
 processFiles(`${srcDir}/**/*.txt`)
   .then(lengths => console.log(lengths))
   .catch(e => console.log(e))
 ```
-
-`${srcDir}/**/*.txt)`
 
 ## 9.5 EXERCISES
 
@@ -3202,14 +3329,10 @@ const makePromise = (someInteger) => {
   return ___ Promise((resolve, reject) => {
 ```
 
-
-
-
 ```javascript
 setTimeout(___(someInteger), someInteger * 1000)
 })
 }
-
 Promise. ([
   makePromise(7),
   makePromise(___),
@@ -3308,9 +3431,7 @@ Promise. ([
 $ parcel dev src/interactive.html
 > js4ds@0.1.0 dev
 > parcel -p 4000 "src/interactive.html"
-
 Server running at http://localhost:4000
-
 /Users/stj/js4ds/src/interactive/app.js:11:12: Unexpected token (11:12)
   9 | }
   10 | increment = (event) => {
@@ -3349,10 +3470,6 @@ Babel 能救我们吗？
 
 答案是“肯定的”，尽管这需要在网上进行大量的搜索才能找到答案（特别是当你不知道自己在寻找什么时）。魔力在于在项目根目录下创建一个名为 `.babelrc` 的文件，并添加以下行：
 
-
-
-
-
 ```json
 {
   "presets": [
@@ -3381,13 +3498,13 @@ Babel 能救我们吗？
 完成这些操作后，我们的依赖项将由 `parcel` 打包。因此，我们必须从 HTML `header` 中移除脚本加载。整个页面如下：
 
 ```html
-<<html>
+<html>
   <head>
     <meta charset="utf-8">
     <title>Up and Down</title>
   </head>
   <body>
-    <div id="app"></</div>
+    <div id="app"></div>
     <script src="app.js"></script>
   </body>
 </html>
@@ -3555,10 +3672,6 @@ export {AsteroidList}
 
 如果我们不为创建的元素提供唯一的 `key` 来区分它们，`React` 会报错，因为拥有这些 `key` 有助于它跟踪组件与 DOM 之间的关系，从而使更新变得高效得多¹。由于每个小行星的名字应该是唯一的，我们使用该名称作为每行的 `key`。
 
-
-
-
-
 `AsteroidList` 期望数据通过 `props.asteroids` 传入，因此我们先在 `App` 中放置一些虚拟值，稍后将其传递进去：
 
 ```javascript
@@ -3718,7 +3831,7 @@ transform = (raw) => {
 修改应用程序，如果当点击按钮时起始日期无效，则应用程序显示警告消息而不是获取数据。
 1. 在状态中添加一个名为 `validDate` 的字段并将其初始化为 true。
 2. 添加一个 `ErrorMessage` 组件，根据 `validDate` 的值显示包含“日期有效”或“日期无效”的段落。
-3. 修改 `onSubmitNewDate`，使其或者*获取新数据*或者*修改 `validDate`。
+3. 修改 `onSubmitNewDate`，使其或者*获取新数据*或者*修改 `validDate`*。
 完成后，在网上搜索 React 验证和错误消息，并探索用于执行此操作的其他工具。
 
 ### 关键点总结
@@ -3731,9 +3844,7 @@ transform = (raw) => {
 * 使用解构一步步从对象中获取单个成员。
 * 现代 JavaScript 使用 promise 管理异步活动。
 
-
-
-
+# 11 数据格式
 
 用于表格数据最广泛的文本格式无疑是`逗号分隔值` (CSV)。表格的每行都是文件中的一行；每行中的值（即列）由逗号分隔。数字以原始形式出现；字符串可能包含或不包含在引号中，除非它们本身包含逗号，在这种情况下它们一定会被包含：
 
@@ -3741,8 +3852,7 @@ transform = (raw) => {
 "maroon",128,0,0
 "olive",128,128,0
 "aqua",0,255,255
-"fuchsia",2
-55,0,255
+"fuchsia",255,0,255
 ```
 
 CSV 文件的第一行通常是`表头`，用于定义列的名称。例如，上面显示的小表用下面的方式表示更好：
@@ -3752,8 +3862,7 @@ CSV 文件的第一行通常是`表头`，用于定义列的名称。例如，�
 "maroon",128,0,0
 "olive",128,128,0
 "aqua",0,255,255
-"fuchsia",2
-55,0,255
+"fuchsia",255,0,255
 ```
 
 遗憾的是，CSV 并不要求第一行必须是表头，且 CSV 文件通常不指定单位或数据类型。我们可以推测上面表格中的值是整数，但非常常见的情况是 CSV 文件的列标记为“高度”和“重量”，但没有任何指示显示高度是英尺还是米，或者重量是磅还是千克。
@@ -3783,7 +3892,7 @@ const colors = [
   {"name": "maroon", "red": 128, "green": 0, "blue": 0},
   {"name": "olive", "red": 128, "green": 128, "blue": 0},
   {"name": "aqua", "red": 0, "green": 255, "blue": 255},
-  {"name": "fuchsia", "red": 2 55, "green": 0, "blue": 2 55}
+  {"name": "fuchsia", "red": 255, "green": 0, "blue": 255}
 ]
 ```
 
@@ -3806,15 +3915,12 @@ const sample = lines.slice(1)
   .sort((left, right) => { return left[0] - right[0] })
   .slice(0, parseInt(numLines))
   .map(pair => pair[1])
-fs.writeFileSync(outputFile, header + '\n' +
-sample.join('\n'))
+fs.writeFileSync(outputFile, header + '\n' + sample.join('\n'))
 ```
 
 当我们在命令行运行它时：
 
-`$ node select-random.js ../../data/surveys.csv 10`
-
-`slice.csv`
+`$ node select-random.js ../../data/surveys.csv 10 slice.csv`
 
 我们得到了：
 
@@ -3836,10 +3942,10 @@ record_id, month,day,year,plot_id,species_id,sex,hindfoot_length,weight
 
 > **切分命令行参数**
 >
-> *当我们运行：：*
+> *当我们运行：*
 >
-> `$ node select-random.js ../../data/surveys.csv 10`
-> `slice.csv`
+> `$ node select-random.js ../../data/surveys.csv 10 slice.csv`
+>
 > `process.argv` 包含五个字符串：`node`、`select-random.js`、输入文件、行数和输出文件。`process.argv.slice(2)` 丢弃了 0 和 1，留下我们需要的三个：`inputFile`、`numLines` 和 `outputFile`。
 
 我们决定我们的数据管理器能够回答两个问题：
@@ -3849,12 +3955,11 @@ record_id, month,day,year,plot_id,species_id,sex,hindfoot_length,weight
 
 我们将使用 PapaParse 来解析我们的 CSV，所以第一步是安装它：
 
-`$ npm install paparse`
+`$ npm install papaparse`
 
 ```javascript
 const fs = require('fs')
-const papa = require('paparse')
-
+const papa = require('papaparse')
 class DataManager {
   constructor (filename) {
     const raw = fs.readFileSync(filename, 'utf-8')
@@ -3862,11 +3967,10 @@ class DataManager {
     this.data = papa.parse(raw, options).data
   }
 }
-
 module.exports = DataManager
 ```
 
-`papa.parse` 两个参数：要解析 CSV 以及控制解析器行为的配置对象。此配置是高度自定义的；在这里，`options` 指示解析器将第一行视为头部（设置列名称）并将像数字的内容转换为数字。`papa.parse` 的输出如下：
+`papa.parse` 接受两个参数：要解析 CSV 以及控制解析器行为的配置对象。此配置是高度自定义的；在这里，`options` 指示解析器将第一行视为头部（设置列名称）并将像数字的内容转换为数字。`papa.parse` 的输出如下：
 
 ```json
 {
@@ -3888,7 +3992,7 @@ module.exports = DataManager
 }
 ```
 
-所以 `papa.parse(raw, options).data` 获取了我们想要的 JSON  数据。让我们写一个方法来获取整体统计信息：
+所以 `papa.parse(raw, options).data` 获取了我们想要的 JSON 数据。让我们写一个方法来获取整体统计信息：
 
 ```javascript
 getSurveyStats () {
@@ -3898,24 +4002,18 @@ getSurveyStats () {
     record_count: this.data.length
   }
 }
-
 // ...其他方法...
-
 _get(values, field, func) {
   return func(...values.map(rec => rec[field]).filter(val => !isNaN(val)))
 }
 ```
 
-
-
-
-
-`Math.min` 和 `Math.max` 等函数接受任意数量的标量值作为参数，但并不直接处理数组。输入`扩展语法`（spread syntax）……符号 `func(…array)` 意味着“将数组中的所有值作为独立的参数传递”，这让我们避免了编写自定义的最小值和最大值函数。因此，`func(…this.data.map(rec => rec[field]))` 意味着“从 `this.data` 中的每条记录中选择指定的字段以创建一个字段数组，然后将这些值作为参数传递给 `func`”。我们在 `_get` 名称的开头包含了一个下划线，表示我们打算将其仅在 `DataManager` 内部使用，而不是在其他地方调用。
+`Math.min` 和 `Math.max` 等函数接受任意数量的标量值作为参数，但并不直接处理数组。输入`扩展语法`（spread syntax）符号 `func(...array)` 意味着“将数组中的所有值作为独立的参数传递”，这让我们避免了编写自定义的最小值和最大值函数。因此，`func(...this.data.map(rec => rec[field]))` 意味着“从 `this.data` 中的每条记录中选择指定的字段以创建一个字段数组，然后将这些值作为参数传递给 `func`”。我们在 `_get` 名称的开头包含了一个下划线，表示我们打算将其仅在 `DataManager` 内部使用，而不是在其他地方调用。
 
 添加一个获取特定年份范围内重量和后跟长度的方法相对简单。首先，我们写一个函数来计算一个或多个参数的平均值：
 
 ```javascript
-const _average = (…values) => {
+const _average = (...values) => {
   let sum = 0
   for (let v of values) {
     sum += v
@@ -3943,10 +4041,11 @@ getSurveyRange (minYear, maxYear) {
         return {
           key : toString(year),
           year : year,
-          min_hindfoot_length :this._get(subset, 'hindfoot_length', Math.min),
-          ave_hindfoot_length :this._get(subset, 'hindfoot_length', _average),
-          max_hindfoot_length :this._get(subset, 'hindfoot_length', Math.max),
-          min_weight : this._get(subset, 'weight', Math.min), ave_weight : this._get(subset, 'weight', _average),
+          min_hindfoot_length : this._get(subset, 'hindfoot_length', Math.min),
+          ave_hindfoot_length : this._get(subset, 'hindfoot_length', _average),
+          max_hindfoot_length : this._get(subset, 'hindfoot_length', Math.max),
+          min_weight : this._get(subset, 'weight', Math.min),
+          ave_weight : this._get(subset, 'weight', _average),
           max_weight : this._get(subset, 'weight', Math.max)
         }
       }
@@ -3954,9 +4053,9 @@ getSurveyRange (minYear, maxYear) {
 }
 ```
 
-## 11.4 练习](#07_Contents.xhtml_ch11-4)
+## 11.4 练习
 
-## 数据追踪
+### 数据追踪
 
 追踪创建原始数据小样本的实用程序的执行过程，解释传递到每个链式方法调用中的内容。
 
@@ -3964,14 +4063,14 @@ getSurveyRange (minYear, maxYear) {
 
 依赖随机数的程序是无法测试的，因为（故意）没有方法可以预测它们的输出。幸运的是，计算机程序并不真正使用随机数：它们使用以一种可重复但不可预测的方式生成的`伪随机数`。给定相同的初始种子，伪随机数生成器总是产生相同的数值序列。
 
-原生无法无法为 `Math.random` 设置种子，但 `seedrandom`18_Chapter11.xhtml_fn11_3) 包提供了一个为此目的附加函数。安装该包并修改切片选择工具，使其接受单词或短语作为命令行参数，并使用它为随机数生成器设置种子。
+原生无法为 `Math.random` 设置种子，但 `seedrandom` 包提供了一个为此目的附加函数。安装该包并修改切片选择工具，使其接受单词或短语作为命令行参数，并使用它为随机数生成器设置种子。
 
 ### 每年一条记录
 
 为了测试划分数据的另一种方法是从每年选择一条记录。编写一个小型命令行 JavaScript 程序，功能如下：
 
 1. 从 CSV 读取所有数据。
-2. 保留每年每年找到的第一条记录。
+2. 保留每年找到的第一条记录。
 3. 将这些记录格式化为 SQL 插入语句并打印。
 
 ### 错误处理
@@ -3988,7 +4087,7 @@ getSurveyRange(minYear, maxYear, 'hindfoot_length')
 
 ### 处理命令行参数
 
-读取 `process.argv`[18_Chapter11.xhtml_fn11_4) 并使用 `slice`。
+读取 `process.argv` 并使用 `slice`。
 
 ### 关键点
 
@@ -4000,7 +4099,7 @@ getSurveyRange(minYear, maxYear, 'hindfoot_length')
 
 # 12 创建服务器
 
-现在我们已经有了数据 (11_Chapter11.xhtml))，下一步是创建一个服务器，我们将构建它。
+现在我们已经有了数据，下一步是创建一个服务器，我们将构建它。
 
 ## 12.1 HTTP
 
@@ -4038,9 +4137,6 @@ HTTP 请求只是一个包含两个重要部分的文本块：
 
 与字典不同，键可以出现任意次数，这允许请求执行诸如指定它接受多种内容类型的操作。请求的**正文**（body）是与之关联的任何额外数据，例如正在上传的文件。如果存在正文，请求必须包含 `Content-Length` 标头，以便服务器知道需要读取多少数据（图 12.2）。
 
-
-
-
 HTTP 响应中的头部和正文具有相同的格式，含义也相同。至关重要的是，响应还包含一个 `status code`，用于指示发生了什么：200 表示 OK，404 表示“页面未找到”，等等。其中一些常见的代码显示在表 12.1 中。
 
 我们需要理解的最后一点是 URL 的结构和解释。这个：
@@ -4051,6 +4147,11 @@ HTTP 响应中的头部和正文具有相同的格式，含义也相同。至关
 
 -   协议 `http`，规定了将使用哪些规则来交换数据。
 -   主机名 `hostname` `example.org`，告诉客户端哪里寻找服务器。如果我们自己在自己的电脑上运行服务器进行测试，可以使用名称 `localhost` 来连接它。（计算机依赖名为 `DNS` 的服务来查找与人类可读主机名关联的机器，但它的操作不在本教程的范围内。）
+-   端口 `port` `1234`，告诉客户端去哪里调用它想要的服务。（如果说主机像一栋办公大楼，那么端口就像这栋大楼里的电话号码。我们认为电话号码有物理位置，这一事实说明了我们的年龄……）
+-   路径 `/some/path` 告诉服务器客户端想要什么。
+-   查询参数 `query parameters` `value=deferred and limit=200`。这些位于问号之后，用 am 符号分隔，用于提供额外信息。
+
+以前通过路径识别服务器上的实际文件很常见，但服务器可以按照自己的意愿解释路径。特别是当我们在编写数据服务时，路径的段可以标识我们正在请求什么数据。或者，通常的做法是将路径看作标识我们想要调用的服务器上的函数，并将查询参数看作该函数的参数。在我们看到简单服务器如何工作之后，我们将回到这些观点上。
 
 | **代码** | **名称** | **含义** |
 | --- | --- | --- |
@@ -4068,12 +4169,6 @@ HTTP 响应中的头部和正文具有相同的格式，含义也相同。至关
 | 601 | Connection Timed Out | 服务器在连接超时之前未响应 |
 
 **表 12.1 HTTP 状态码**
-
--   端口 `port` `1234`，告诉客户端去哪里调用它想要的服务。（如果说主机像一栋办公大楼，那么端口就像这栋大楼里的电话号码。我们认为电话号码有物理位置，这一事实说明了我们的年龄……）
--   路径 `/some/path` 告诉服务器客户端想要什么。
--   查询参数 `query parameters` `value=deferred and limit=200`。这些位于问号之后，用 am 符号分隔，用于提供额外信息。
-
-以前通过路径识别服务器上的实际文件很常见，但服务器可以按照自己的意愿解释路径。特别是当我们在编写数据服务时，路径的段可以标识我们正在请求什么数据。或者，通常的做法是将路径看作标识我们想要调用的服务器上的函数，并将查询参数看作该函数的参数。在我们看到简单服务器如何工作之后，我们将回到这些观点上。
 
 ## 12.2 HELLO, EXPRESS
 
@@ -4112,15 +4207,28 @@ listening...
 
 我们的小服务器现在正在等待某些向它请求东西。如果我们进入浏览器并请求 `http://localhost:3418/`，我们就会得到一个带有大标题 Asteroids 的页面。我们的服务器已经工作了，我们现在可以通过 Ctrl-C 停止它。
 
+## 12.3 提供文件
 
+让我们提供一些实际的文件。我们将使用 `path` 模块来处理路径，使用 `fs` 来读取文件。
 
+```javascript
+const express = require('express')
+const path = require('path')
+const fs = require('fs')
+const PORT = 3418
+const root = process.argv[2]
+const app = express()
+app.use((req, res, next) => {
+  const actual = path.join(root, req.url)
+  const data = fs.readFileSync(actual, 'utf-8')
+  res.status(200).send(data)
+})
+app.listen(PORT, () => {console.log('listening…') })
+```
 
 1. 客户端请求的 URL 通过 `req.url` 传递给我们。
-
 2. 我们使用 `path.join` 将其与根目录路径结合，该路径是我们在运行服务器运行时从命令行参数中获取的。
-
 3. 我们尝试使用 `readFileSync` 读取该文件，这会阻塞服务器直到文件被读取完毕。稍后我们将看到如何进行这种异步 I/O 操作，以便我们的服务器具有更高的响应能力。
-
 4. 一旦文件被读取，我们就用状态码 200 返回它。
 
 如果一个名为 `web-dir` 的子目录包含一个名为 `title.html` 的文件，并且我们这样运行服务器：
@@ -4129,12 +4237,12 @@ listening...
 $ node serve-pages.js ./web-dir
 ```
 
-那么我们就可以请求 [`http://localhost:3418/title.html`](http://localhost:3418) 并获取 `web-dir/title.html` 的内容。注意，目录 `./web-dir` 并没有出现在 URL 中：我们的服务器解释所有路径，就好像我们给它的目录就是文件系统的根目录一样。
+那么我们就可以请求 `http://localhost:3418/title.html` 并获取 `web-dir/title.html` 的内容。注意，目录 `./web-dir` 并没有出现在 URL 中：我们的服务器解释所有路径，就好像我们给它的目录就是文件系统的根目录一样。
 
-如果我们请求一个不存在的页面，如 [`http://localhost:3418/missing.html`](http://localhost:3418)，我们会得到：
+如果我们请求一个不存在的页面，如 `http://localhost:3418/missing.html`，我们会得到：
 
 ```
-Error: ENOENT: no such file or directory, open ′web-dir/missing.html′
+Error: ENOENT: no such file or directory, open 'web-dir/missing.html'
 	at Object.openSync (fs.js:434:3)
 	at Object.readFileSync (fs.js:339:35)
 … etc. ...
@@ -4145,32 +4253,33 @@ Error: ENOENT: no such file or directory, open ′web-dir/missing.html′
 > 收藏夹和图标
 > *如果我们使用浏览器请求如 `title.html` 这样的页面，浏览器实际上可能会发送两次请求：一个是请求页面，另一个请求名为 `favicon.ico` 的文件。浏览器会自动执行操作，然后在标签页、书签列表等地方显示该文件。尽管有 `.ico` 后缀，该文件（通常）是一个较小的 PNG 格式图像，并且必须放置在网站的根目录下。*
 
-## 12.5 内容类型
+## 12.4 内容类型
 
 到为止，我们只提供了 HTML，但服务器可以发送任何类型的数据，包括图像和其他二进制文件。例如，让我们提供一些 JSON 数据：
 
-*// …如前所示..*.
-
 ```javascript
+// …如前所示..
 app.use((req, res, next) => {
   const actual = path.join(root, req.url)
-  if (actual.endsWith(′.json′)) {
-    const data = fs.readFileSync(actual, ′utf-8′) const json = JSON.parse(data)
-    res.setHeader(′Content-Type′, ′application/json′) res.status(200).send(json)
+  if (actual.endsWith('.json')) {
+    const data = fs.readFileSync(actual, 'utf-8')
+    const json = JSON.parse(data)
+    res.setHeader('Content-Type', 'application/json')
+    res.status(200).send(json)
   }
   else {
-    const data = fs.readFileSync(actual, ′utf-8′)
+    const data = fs.readFileSync(actual, 'utf-8')
     res.status(200).send(data)
   }
 })
 ```
 
-这里的不同之处在于当请求的路径以 `.json` 结尾时，我们显式地将 `Content-Type` 头部设置为 `application/json`，告诉客户端如何解释我们返回的字节。如果我们使用 `web-dir` 作为提供服务的目录运行此服务器，并请求 [`http://localhost:3418/data.json`](http://localhost:3418)，现代浏览器将提供数据的折叠显示，而不是显示原始文本。
+这里的不同之处在于当请求的路径以 `.json` 结尾时，我们显式地将 `Content-Type` 头部设置为 `application/json`，告诉客户端如何解释我们返回的字节。如果我们使用 `web-dir` 作为提供服务的目录运行此服务器，并请求 `http://localhost:3418/data.json`，现代浏览器将提供数据的折叠显示，而不是显示原始文本。
 
 > 什么是 API？
-> 库的**应用程序编程接口**（API）简单来说就是其他程序允许调用的函数集合。这通常是库中定义的所有函数的子集，因为许多函数可能是仅供内部使用的辅助函数。同样，服务器的 API 是它知道如何响应的请求集。例如，NASA 的近地小行星 API（第 10.3 节）可以处理包含身份验证密钥和日期的请求，而我们在本章中构建的服务器可以响应对 HTML 和 JSON 文件的请求。我们将在 第 15.2 节*更深入地查看 API 设计。
+> 库的**应用程序编程接口**（API）简单来说就是其他程序允许调用的函数集合。这通常是库中定义的所有函数的子集，因为许多函数可能是仅供内部使用的辅助函数。同样，服务器的 API 是它知道如何响应的请求集。例如，NASA 的近地小行星 API（第 10.3 节）可以处理包含身份验证密钥和日期的请求，而我们在本章中构建的服务器可以响应对 HTML 和 JSON 文件的请求。我们将在 第 15.2 节更深入地查看 API 设计。
 
-## 12.6 练习
+## 12.5 练习
 
 ### 报告缺失文件
 
@@ -4188,9 +4297,9 @@ app.use((req, res, next) => {
 
 URL 可以包含如下形式的查询参数：
 
-http://site.edu?first=123&second=beta
+`http://site.edu?first=123&second=beta`
 
-阅读 Express 的在线文档² 以了解如何在服务器中访问它们，然后编写一个服务器来执行简单的算术运算：URL [`http://localhost:3654/add?left=1&right=2`](http://localhost:3654) `应该返回 3`，而 URL `http://localhost:3654/subtract?left=1&right=2` 。
+阅读 Express 的在线文档² 以了解如何在服务器中访问它们，然后编写一个服务器来执行简单的算术运算：URL `http://localhost:3654/add?left=1&right=2` 应该返回 3，而 URL `http://localhost:3654/subtract?left=1&right=2`。
 
 ### 关键要点
 
@@ -4213,7 +4322,7 @@ http://site.edu?first=123&second=beta
 
 ## 13.1 引入 Mocha
 
-JavaScript 的测试库几乎和前端框架一样。我们将使用一个名为 Mocha[¹ 的流行且文档良好的库。与我们之前过的库不同，我们不需要导入任何东西来使用它；相反，是它导入我们的代码并调用我们的函数。
+JavaScript 的测试库几乎和前端框架一样。我们将使用一个名为 Mocha 的流行且文档良好的库。与我们之前过的库不同，我们不需要导入任何东西来使用它；相反，是它导入我们的代码并调用我们的函数。
 
 当我们编写 Mocha 要运行的测试时，我们使用名为 `describe` 的函数创建一个测试组，并使用名为 `it` 的函数作为该组中的每个测试：
 
@@ -4232,15 +4341,17 @@ describe('first test', () => {
 
 （选择这个名字是因为当我们朗读测试时，听起来就像我们在说“它应该这样做或那样”。）在每个测试结束时我们调用 `done` 来信号它已完成。我们必须这样做是因为回调是无序的，所以 Mocha 需要知道每个回调何时完成。
 
-
-
-
-
 我们可以通过调用 `mocha` 并传递包含测试用的文件路径，在 shell 中运行测试：
 
 ```bash
 $ ./node_modules/.bin/mocha path/to/test.js
 ```
+
+
+
+# 第 13 章 测试
+
+## 13.1 运行测试
 
 第一个测试
 
@@ -4252,11 +4363,8 @@ $ ./node_modules/.bin/mocha path/to/test.js
 
 ```json
 {
-  …
   "scripts": {
-    …
-    "test": "mocha",
-    …
+    "test": "mocha"
   }
 }
 ```
@@ -4264,10 +4372,10 @@ $ ./node_modules/.bin/mocha path/to/test.js
 到 `package.json` 之后，我们的命令变为：
 
 ```bash
-$ npm test – path/to/test.js
+$ npm test -- path/to/test.js
 ```
 
-（再次，– 之后的所有内容都会传递给脚本本身。）如果我们不指定查找测试的位置，Mocha 会查找一个名为 `test` 的目录，并运行其中找到的以 `test` 开头的文件（图 13.1）。
+（再次，`--` 之后的所有内容都会传递给脚本本身。）如果我们不指定查找测试的位置，Mocha 会查找一个名为 `test` 的目录，并运行其中找到的以 `test` 开头的文件（图 13.1）。
 
 ## 13.2 重构
 
@@ -4285,7 +4393,6 @@ $ npm test – path/to/test.js
 ```javascript
 const server = require('./server')
 const PORT = 3418
-
 server.listen(PORT,
   () => { console.log(`listening on port ${PORT}…`) })
 ```
@@ -4294,14 +4401,12 @@ server.listen(PORT,
 
 ```javascript
 const express = require('express')
-// *主服务器对象*.
+// 主服务器对象.
 let app = express()
-
-// *根页面*.
+// 根页面.
 app.get('/', (req, res, next) => {
   res.status(200).send('<html><body><h1>Home</h1></body></html>')
 })
-
 // …如之前一样…
 module.exports = app
 ```
@@ -4326,7 +4431,6 @@ $ node standalone.js
 const assert = require('assert')
 const request = require('supertest')
 const server = require('./server')
-
 describe('server', () => {
   it('应该返回带有预期标题的 HTML', (done) => {
     request(server)
@@ -4391,7 +4495,8 @@ describe('server', () => {
 ```text
 server
 + 应该返回带有预期标题的 HTML (42ms)
-+ 应该返回带有预期标题的 HTML 页面 + 其他页面应该返回 404
++ 应该返回带有预期标题的 HTML 页面
++ 其他页面应该返回 404
 3 个通过 (62ms)
 ```
 
@@ -4406,7 +4511,6 @@ const assert = require('assert')
 const request = require('supertest')
 const cheerio = require('cheerio')
 const server = require('./server')
-
 describe('server', () => {
   it('应该有正确的标题', (done) => {
     request(server)
@@ -4433,7 +4537,7 @@ server
 
 ## 13.5 练习
 
-## 未完成
+### 未完成
 
 如果我们在测试中忘记调用 `done()` 会怎样？
 
@@ -4453,18 +4557,13 @@ server
 - 单元测试的结果可以是通过、失败或错误。
 - 使用 Mocha 编写和运行 JavaScript 单元测试。
 - 在单元测试中使用断言检查结果。
+- 将测试用例组合成套以便于管理。
+- 将模块划分为交互部分和非交互部分以便于测试。
+- 使用 `supertest` 模拟与服务器的交互进行测试。
+- HTML 在内存中通过文档对象模型（DOM）表示。
+- 测试时，检查 DOM 的结构而非 HTML 的文本表示。
 
-
-
-
-
--   将测试用例组合成套以便于管理。
--   将模块划分为交互部分和非交互部分以便于测试。
--   使用 `supertest` 模拟与服务器的交互进行测试。
--   HTML 在内存中通过文档对象模型（DOM）表示。
--   测试时，检查 DOM 的结构而非 HTML 的文本表示。
-
-# 14 使用 Data-Forge
+# 第 14 章 使用 Data-Forge
 
 现在我们已经看到了如何在 JavaScript 中完成除了实际的数据科学之外，数据科学家想要做的所有操作。遗憾的是，这是该语言仍然落后于 R 和 Python 的领域之一，但统计库现在正在出现，如果说过去的十五年教会了我们什么，那就是不要低估 JavaScript。
 
@@ -4472,10 +4571,10 @@ server
 
 像 Pandas 和 tidyverse 一样，Data-Forge 设计用于处理整洁数据（tidy data）。正如 [Wick2014] 定义，如果满足以下条件，表格数据就是整洁的：
 
--   每列包含一个统计变量（即一个测量或观测的属性）。
--   每个不同的观测值位于不同的行。
--   每组观测值对应有一张表格。
--   如果有多个表格，每个表格都有一列包含唯一键（unique key），以便链接相关数据。
+- 每列包含一个统计变量（即一个测量或观测的属性）。
+- 每个不同的观测值位于不同的行。
+- 每组观测值对应有一张表格。
+- 如果有多个表格，每个表格都有一列包含唯一键（unique key），以便链接相关数据。
 
 例如，这些数据不是整洁的：
 
@@ -4574,10 +4673,7 @@ fromSpec as array:
 然而，我们通常不会这样直接创建 dataframe；相反，我们将从文件或数据库中读取数据。Data-Forge 提供了一个名为 `fromCSV` 的函数来此此：
 
 ```javascript
-const text = 'ones,tens
-7,70
-8,80
-9,90'
+const text = 'ones,tens\n7,70\n8,80\n9,90'
 const fromText = DF.fromCSV(text)
 console.log('fromText as array:\n', fromText.toArray())
 ```
@@ -4596,7 +4692,7 @@ console.log(data.getColumnNames())
 ```
 
 ```text
-[ ' ones', ' tens' ]
+[ 'ones', 'tens' ]
 ```
 
 或者获取其列表列表（而不是对象列表）：
@@ -4684,7 +4780,7 @@ console.log(justResults.toArray())
   { sum: 33, product: 90 } ]
 ```
 
-由于每个 dataframe 方法都返回一个 dataframe，我们可以使用**方法链式**来组合操作（图 14.2）。我们以前在 promise 的 then 调用链中见过这种技术；在这里，它的用法就像 Unix 命令行中的管道或现代 R 代码中的管道运算符 `%%>%` 一样：
+由于每个 dataframe 方法都返回一个 dataframe，我们可以使用**方法链式**来组合操作（图 14.2）。我们以前在 promise 的 then 调用链中见过这种技术；在这里，它的用法就像 Unix 命令行中的管道或现代 R 代码中的管道运算符 `|>` 一样：
 
 ```javascript
 const result = data
@@ -4708,9 +4804,6 @@ fuchsia,255,0,255
 aqua,0,255,255
 ```
 
-
-
-
 我们可以将此文件名作为命令行参数传递给程序，读取它（记得将编码设置为 UTF-8，以便我们获得的是字符而不是原始字节），然后将其显示：
 
 ```javascript
@@ -4718,8 +4811,10 @@ const fs = require('fs')
 const DF = require('data-forge')
 const text = fs.readFileSync(process.argv[2], 'utf-8')
 const colors = DF.fromCSV(text)
-
 console.log(colors.toArray())
+```
+
+```text
 [ { name: 'maroon', red: '128', green: '0', blue: '0' },
   { name: 'lime', red: '0', green: '255', blue: '0' },
   { name: 'navy', red: '0', green: '0', blue: '128' },
@@ -4729,6 +4824,7 @@ console.log(colors.toArray())
 ```
 
 ![Image](img/fig14_3.jpg)
+
 图 14.3: 排序与子排序
 
 如果我们想按字母顺序查看颜色，我们调用 `orderBy` 并传入一个回调函数，该函数返回 Data-Forge 用于排序的值：
@@ -4736,6 +4832,9 @@ console.log(colors.toArray())
 ```javascript
 const sorted = colors.orderBy(row => row.name)
 console.log(sorted.toArray())
+```
+
+```text
 [ { name: 'aqua', red: '0', green: '255', blue: '255' },
   { name: 'fuchsia', red: '255', green: '0', blue: '255' },
   { name: 'lime', red: '0', green: '255', blue: '0' },
@@ -4744,7 +4843,7 @@ console.log(sorted.toArray())
   { name: 'yellow', red: '255', green: '255', blue: '0' } ]
 ```
 
-若要按另一列（[图 14.3]）子排序，我们使用 `thenBy`：
+若要按另一列（图 14.3）子排序，我们使用 `thenBy`：
 
 ```javascript
 const doubleSorted = colors
@@ -4752,6 +4851,9 @@ const doubleSorted = colors
   .thenBy(row => row.blue)
   .dropSeries(['name', 'red'])
 console.log(doubleSorted.toArray())
+```
+
+```text
 [ { green: '0', blue: '0' },
   { green: '0', blue: '128' },
   { green: '0', blue: '255' },
@@ -4765,6 +4867,9 @@ console.log(doubleSorted.toArray())
 ```javascript
 const notTheSame = colors.distinct(row => row.red)
 console.log(notTheSame.toArray())
+```
+
+```text
 [ { name: 'maroon', red: '128', green: '0', blue: '0' },
   { name: 'lime', red: '0', green: '255', blue: '0' },
   { name: 'yellow', red: '255', green: '255', blue: '0' } ]
@@ -4778,6 +4883,9 @@ const multiColumn = colors
   .orderBy(row => row.red)
   .thenBy(row => row.green)
 console.log(multiColumn.toArray())
+```
+
+```text
 [ { name: 'navy', red: '0', green: '0', blue: '128' },
   { name: 'lime', red: '0', green: '255', blue: '0' },
   { name: 'aqua', red: '0', green: '255', blue: '255' },
@@ -4807,12 +4915,36 @@ console.log('Data has', earthquakes.count(), 'rows')
 ```javascript
 console.log(earthquakes.head(3).toArray())
 [ ... ]
-
 console.log(earthquakes.skip(10).take(3).toArray())
 [ ... ]
 ```
 
+我们也可以使用 `where` 按值选择：
 
+```javascript
+const bigOnes = earthquakes.where(row => row.Magnitude >= 5.0)
+console.log('Big ones:', bigOnes.count())
+console.log(bigOnes.toArray())
+```
+
+```text
+Big ones: 2
+[ { Time: 2016-08-19T06:38:41.000Z, Latitude: -17.5547, Longitude: -175.378, Depth_Km: 578.33, Magnitude: 5.4 },
+  { Time: 2016-08-24T10:38:41.000Z, Latitude: 36.4417, Longitude: 141.073, Depth_Km: 10, Magnitude: 6.0 } ]
+```
+
+## 14.4 分组与汇总
+
+Data-Forge 的强大功能之一是它能够对数据进行分组并计算汇总统计量。`groupBy` 方法接受一个回调函数，该函数返回用于分组的键。它返回一个包含每个组对应的 dataframe 的数组。
+
+```javascript
+const grouped = earthquakes.groupBy(row => row.Magnitude)
+console.log('Groups:', grouped.length)
+```
+
+```text
+Groups: 28
+```
 
 如输出所示，`groupBy` 返回一个数组，其中包含原始数据中每个组对应的新 `data-frame`。以下是我们根据震级查找地震平均深度的方法：
 
@@ -4825,17 +4957,18 @@ const averaged = earthquakes
   }))
   .inflate()
   .orderBy(row => row.Magnitude)
-
 console.log(averaged.toArray())
 ```
 
+```text
 [ { Magnitude: 2, Depth_Km: 9.901052631578946 },
   { Magnitude: 2.1, Depth_Km: 9.702083333333333 },
   { Magnitude: 2.2, Depth_Km: 9.843037974683545 },
-…
+  ...
   { Magnitude: 4.5, Depth_Km: 9.4 },
   { Magnitude: 5.4, Depth_Km: 8 },
   { Magnitude: 6, Depth_Km: 8.1 } ]
+```
 
 逐步分析：
 
@@ -4870,10 +5003,10 @@ const fs = require('fs')
 const DF = require('data-forge')
 const text = fs.readFileSync('../../data/national_parks.csv', 'utf-8')
 const raw = DF.fromCSV(text)
-
 console.log(raw.head(2).toArray())
 ```
 
+```text
 [ { year: '1904',
   gnis_id: '1163670',
   geometry: 'POLYGON',
@@ -4898,6 +5031,7 @@ console.log(raw.head(2).toArray())
   unit_name: 'Lake Roosevelt National Recreation Area',
   unit_type: 'National Recreation Area',
   visitors: '0' } ]
+```
 
 在深入任何分析之前，查看数据结构总是好的。`data-frame` 方法 `detectTypes` 向我们展示了 `data-frame` 中数据类型的频率：
 
@@ -4921,35 +5055,86 @@ console.log(typesDf.toString())
 | `10` | `string` | `100` | `unit_type` |
 | `11` | `string` | `100` | `visitors` |
 
-在深入任何分析之前，查看数据结构总是好的。`data-frame` 方法 `detectTypes` 向我们展示了 `data-frame` 中数据类型的频率：
+我们需要将 `year` 和 `visitors` 转换为数字。我们还注意到 `region` 和 `state` 列有前导空格。让我们清洗数据：
 
 ```javascript
-const typesDf = raw.detectTypes()
-console.log(typesDf.toString())
+const clean = raw
+  .parseInts(['year', 'visitors'])
+  .transformSeries({
+    region: s => s.trim(),
+    state: s => s.trim()
+  })
+console.log(clean.head(2).toArray())
 ```
 
-（注：原文文本中存在大量重复，此处已根据要求进行去重和逻辑处理。）
+```text
+[ { year: 1904, visitors: 1500, ... },
+  { year: 1941, visitors: 0, ... } ]
+```
 
+现在我们按年份分组并汇总游客总数：
 
+```javascript
+const byYear = clean
+  .groupBy(row => row.year)
+  .select(group => ({
+    year: group.first().year,
+    visitors: group.deflate(row => row.visitors).sum()
+  }))
+  .inflate()
+  .orderBy(row => row.year)
+console.log(byYear.tail(5).toArray())
+```
+
+```text
+[ { year: 2014, visitors: 292800000 },
+  { year: 2015, visitors: 307200000 },
+  { year: 2016, visitors: 331000000 },
+  { year: 2017, visitors: 331000000 },
+  { year: 2018, visitors: 318200000 } ]
+```
+
+最后，我们过滤掉 2009 年之前的数据：
+
+```javascript
+const recent = byYear.where(row => row.year > 2009)
+console.log(recent.toArray())
+```
+
+```text
+[ { year: 2010, visitors: 281300000 },
+  { year: 2011, visitors: 279000000 },
+  { year: 2012, visitors: 282800000 },
+  { year: 2013, visitors: 273600000 },
+  { year: 2014, visitors: 292800000 },
+  { year: 2015, visitors: 307200000 },
+  { year: 2016, visitors: 331000000 },
+  { year: 2017, visitors: 331000000 },
+  { year: 2018, visitors: 318200000 } ]
+```
+
+## 14.6 练习
+
+### 类型检测
 
 编写一个短的管道（pipeline），打印出 `year` 和 `visitors` 列中最终转换为 `NaN` 的值。（提示：复制这些列，将副本转换为数字，过滤以保留这些行，然后打印原始值。）
 
 ### 关键点
 
--   从具有相同键的对象数组创建 `DataFrame`，或者从带有 `columnNames` 和 `rows` 字段的规范（spec），或者通过解析包含 CSV 或 JSON 的文本创建。
--   如果你在 dataframe 上使用循环，那么你的方法用错了。
--   使用链式调用（method chaining）来创建管道，从而过滤数据并从旧值创建新值。
--   使用分组（grouping）和聚合（aggregation）对数据进行摘要。
+- 从具有相同键的对象数组创建 `DataFrame`，或者从带有 `columnNames` 和 `rows` 字段的规范（spec），或者通过解析包含 CSV 或 JSON 的文本创建。
+- 如果你在 dataframe 上使用循环，那么你的方法用错了。
+- 使用链式调用（method chaining）来创建管道，从而过滤数据并从旧值创建新值。
+- 使用分组（grouping）和聚合（aggregation）对数据进行摘要。
 
-# 15 毕业项目
+# 第 15 章 毕业项目
 
 是时候将所有内容整合到一个扩展示例中了：一个对来自 Portal Project 教学数据库的物种数据的（略）交互式可视化。我们的计划是：
 
--   为测试切分数据，
--   编写一个数据服务器来提供这些数据，
--   测试服务器，
--   构建数据的交互式表格，
--   添加可视化。
+- 为测试切分数据，
+- 编写一个数据服务器来提供这些数据，
+- 测试服务器，
+- 构建数据的交互式表格，
+- 添加可视化。
 
 这将需要一些新想法，但大部分将重温之前出现的内容。
 
@@ -5049,7 +5234,6 @@ const PORT = 3418
 const filename = process.argv[2]
 const db = new DataManager(filename)
 const app = server(db)
-
 app.listen(PORT, () => {
   console.log(`listening on port ${PORT}...`)
 })
@@ -5059,23 +5243,17 @@ app.listen(PORT, () => {
 
 ```javascript
 const express = require('express')
-
 // 'dataManager' 是指向数据库的全局变量。
 // 它必须在创建服务器时设置。
 let dataManager = null
-
 // 主服务器对象。
 const app = express()
-
 // …处理请求…
-
 module.exports = (dbm) => {
   dataManager = dbm
   return app
 }
 ```
-
-
 
 我们将在下一节介绍如何处理数据请求。目前最重要的是我们管理与数据管理器连接的方式。在 `server-0.js` 的底部，我们导出一个函数，将它的唯一参数赋值给名为 `dataManager` 的变量。在处理请求的方法中，我们能够向 `dataManager` 发送数据库查询。
 
@@ -5092,7 +5270,6 @@ app.get('/survey/stats', (req, res, next) => {
   res.setHeader('Content-Type', 'application/json')
   res.status(200).send(data)
 })
-
 // Get a slice of the survey data.
 app.get('/survey/:start/:end', (req, res, next) => {
   const start = parseInt(req.params.start)
@@ -5122,7 +5299,7 @@ const assert = require('assert')
 const request = require('supertest')
 const DataManager = require('./data-manager')
 const make_server = require('./server-0')
-TEST_DATA_PATH = path.resolve( dirname, 'test-data.csv')
+TEST_DATA_PATH = path.resolve(__dirname, 'test-data.csv')
 describe('server', () => {
   it('should return statistics about survey data', (done) => {
     expected = {
@@ -5132,6 +5309,7 @@ describe('server', () => {
     }
     const db = new DataManager(TEST_DATA_PATH)
     const server = make_server(db)
+    request(server)
       .get('/survey/stats')
       .expect(200)
       .expect('Content-Type', 'application/json')
@@ -5146,12 +5324,12 @@ describe('server', () => {
 注意年份范围是 1979-2000，这**不是**完整数据集中的范围。我们通过以下命令运行：
 
 ```bash
-npm test – src/capstone/back/test-server.js
+npm test -- src/capstone/back/test-server.js
 ```
 
 并且它通过了。
 
-## 15.4 THE DISPLAY
+## 15.4 显示层
 
 前端是对之前所做内容的简单复述。有一个名为 `index.html` 的单 HTML 页面：
 
@@ -5164,7 +5342,7 @@ npm test – src/capstone/back/test-server.js
     <script src="app.js" async></script>
   </head>
   <body>
-    <div id="app"></</div>
+    <div id="app"></div>
   </body>
 </html>
 ```
@@ -5177,7 +5355,6 @@ import ReactDOM from 'react-dom'
 import SurveyStats from './SurveyStats'
 import ChooseRange from './ChooseRange'
 import DataDisplay from './DataDisplay'
-
 class App extends React.Component {
   constructor(props) {
     super(props)
@@ -5189,7 +5366,6 @@ class App extends React.Component {
       data: null
     }
   }
-
   componentDidMount() {
     const url = `${this.baseUrl}/survey/stats`
     fetch(url).then((response) => {
@@ -5198,6 +5374,7 @@ class App extends React.Component {
       this.setState({
         summary: summary
       })
+    })
   }
 }
 ```
@@ -5264,48 +5441,37 @@ render = () => {
 }
 ```
 
-## 15.5 THE TABLES
+## 15.5 表格
 
-我们将表格的形式显示调查统计数据，并在没有数据时显示段落回退。首先，我们在页面顶部以表格形式显示整个数据集的统计摘要（由我们之前为 `GET /survey/stats 查询` 的处理程序返回）。再次，我们需要在 HTML 片段周围加上括号以便它能正确解析。）
+我们将表格的形式显示调查统计数据，并在没有数据时显示段落回退。首先，我们在页面顶部以表格形式显示整个数据集的统计摘要（由我们之前为 `GET /survey/stats` 查询的处理程序返回）。再次，我们需要在 HTML 片段周围加上括号以便它能正确解析。
 
 ```javascript
 import React from 'react'
-
 const SurveyStats = ({data}) => {
   if (data === null) {
     return (<p>no data</p>)
   }
+  return (
+    <table>
+      <tbody>
+        <tr><th>记录计数</th><td>{data.record_count}</td></tr>
+        <tr><th>年度最低值</th><td>{data.year_low}</td></tr>
+        <tr><th>年度最高值</th><td>{data.year_high}</td></tr>
+      </tbody>
+    </table>
+  )
 }
-```
-
-
-
-
-```javascript
-return (
-  <table>
-    <tbody>
-      <tr><th>记录计数</th><td>{data.record_count}</td></tr>
-      <tr><th>年度最低值</th><td>{data.year_low}</td></tr>
-      <tr><th>年度最高值</th><td>{data.year_high}</td></tr>
-    </tbody>
-  </table>
-)
-}
-
 export default SurveyStats
 ```
 
-```接下来，我们在另一个表格中显示给定年份范围的聚合统计数据（`GET /survey/:start/:end query`）。
+接下来，我们在另一个表格中显示给定年份范围的聚合统计数据（`GET /survey/:start/:end` query）。
 
 ```javascript
 import React from 'react'
-
 const DataDisplay = ({data}) => {
   if (! data) {
     return (<p>no data</p>)
   }
-
   const columns = [
     'year',
     'min_hindfoot_length',
@@ -5326,7 +5492,6 @@ const DataDisplay = ({data}) => {
     </table>
   )
 }
-
 export default DataDisplay
 ```
 
@@ -5334,7 +5499,7 @@ export default DataDisplay
 
 ## 15.6 图表
 
-我们最初尝试直接使用 `Vega-Lite` 绘制图表，但在几次失败和一些在线搜索后，我们切换到了 `react-vega-lite`：`Vega-Lite 的 vega-embed` 在被调用时想要修改现有的 DOM 元素，而 `react-vega-lite` 则构建一个在合适时间放置的元素，这被证明更容易使用。步骤如下：
+我们最初尝试直接使用 `Vega-Lite` 绘制图表，但在几次失败和一些在线搜索后，我们切换到了 `react-vega-lite`：`Vega-Lite` 的 `vega-embed` 在被调用时想要修改现有的 DOM 元素，而 `react-vega-lite` 则构建一个在合适时间放置的元素，这被证明更容易使用。步骤如下：
 
 1. 如果没有数据，创建一个段落占位符。
 2. 将非空数据重新组织成图表所需的格式。
@@ -5345,7 +5510,6 @@ export default DataDisplay
 ```javascript
 import React from 'react'
 import VegaLite from 'react-vega-lite'
-
 const DataChart = ({data}) => {
   if (! data) {
     return (<p>no data</p>)
@@ -5395,7 +5559,7 @@ export default DataChart
 
 显示如下：
 
-```
+```text
 > js4ds@0.1.0 /Users/js4ds
 > parcel serve -p 4000 "src/capstone/index.html"
 Server running at http://localhost:4000 in 15s.
@@ -5439,7 +5603,7 @@ module.exports = (dbm) => {
 
 ## 15.8 练习
 
-## 报告其他数据
+### 报告其他数据
 
 一个用户请求每年观察到的雄性和雌性动物数量。
 
@@ -5462,15 +5626,11 @@ module.exports = (dbm) => {
 
 ### 合并显示
 
-
-
-
-
 前端的 `SurveyStats` 和 `DataDisplay` 组件都显示表格。
 
 1. 编写一个新组件 `TableDisplay`，它能够根据提供的列名列表和对象列表（这些对象应（至少）包含这些字段）来显示任意表格。
 2. 用你的新组件替换 `SurveyStats` 和 `DataDisplay`。
-3. 修改你的组件，为表格中的每个值生成一个唯一的 ID。（提示：你可能需要向每次调用传递第三个参数，用作这些唯一 ID 的根根节点或前缀。）
+3. 修改你的组件，为表格中的每个值生成一个唯一的 ID。（提示：你可能需要向每次调用传递第三个参数，用作这些唯一 ID 的根节点或前缀。）
 
 ### 格式化
 
@@ -5482,13 +5642,11 @@ module.exports = (dbm) => {
 
 ### 核心要点
 
-• 使用实际数据的切片（slices）来测试应用程序。
+- 使用实际数据的切片（slices）来测试应用程序。
+- 测试摘要和小型用例，以便手动检查结果。
+- 将状态存储在类中，使用纯函数来显示它。
 
-• 测试摘要和小型用例，以便手动检查结果。
-
-• 将状态存储在类中，使用纯函数来显示它。
-
-# 16 终章
+# 第 16 章 终章
 
 自 [第 2 章] 中的 `console.log('hello, world')` 以来，我们已经走了很远。回调和承诺、JSON 和 Web 服务器、打包、单元测试以及可视化：每种现代语言都能做到这些，但 JavaScript 是一个日益受欢迎的选择。是的，它有它的缺陷，但如果我们避开 [附录 G] 中的某些遗留特性，它既实用又强大。
 
@@ -5498,9 +5656,8 @@ module.exports = (dbm) => {
 
 ### 核心要点
 
-• 我们学了很多。
-
-• 非常欢迎任何贡献。
+- 我们学了很多。
+- 非常欢迎任何贡献。
 
 ## 参考文献
 
@@ -5526,7 +5683,7 @@ module.exports = (dbm) => {
 
 `Wils2019` Greg Wilson. *Teaching Tech Together*. 如何创建并交付有效的课程，并围绕它们建立教学社区。Taylor & Francis, 2019. ISBN: 978-0-367-35535.
 
-# A 许可证
+# 附录 A 许可证
 
 *本内容是许可协议的可读性摘要（而非替代内容）。请访问 https://creativecommons.org/licenses/by-nc/4.0/legalcode 查看全文*。
 
@@ -5534,52 +5691,39 @@ module.exports = (dbm) => {
 
 **你可以：**
 
-• **共享**——以任何媒体或格式复制并分发本材料。
-
-• **改编**——重混、转换并基于本材料进行创作。
+- **共享**——以任何媒体或格式复制并分发本材料。
+- **改编**——重混、转换并基于本材料进行创作。
 
 **须遵循以下条款：**
 
-• **署名**——你必须提供适当的 credit，提供许可链接，并说明是否进行了更改。你可以以任何合理的方式这样做，但不能以任何暗示许可者认可你或认可你的使用的方式。
-
-• **非商业性**——你不能将本材料用于商业目的。
+- **署名**——你必须提供适当的 credit，提供许可链接，并说明是否进行了更改。你可以以任何合理的方式这样做，但不能以任何暗示许可者认可你或认可你的使用的方式。
+- **非商业性**——你不能将本材料用于商业目的。
 
 **无额外限制**——你不能应用法律条款或技术措施来限制他人执行许可协议允许的行为。
 
 **注意事项：**
 
-• 许可证可能未授予你预期用途所需的所有权限。例如，公开权、隐私权或人格权等其他权利可能会限制你对材料的使用。
+- 许可证可能未授予你预期用途所需的所有权限。例如，公开权、隐私权或人格权等其他权利可能会限制你对材料的使用。
+- 对于公有领域的材料元素或适用豁免或限制允许的使用，你无需遵守该许可证。
 
-• 对于公有领域的材料元素或适用豁免或限制允许的使用，你无需遵守该许可证。
-
-# B 行为准则
+# 附录 B 行为准则
 
 我们致力于为每个人参与我们的项目和社区提供一个不受骚扰的体验，无论年龄、体型、残障、种族、性别身份和表达、经验水平、教育、社会经济地位、国籍、外貌、宗教或性身份和取向。
 
 有助于营造良好环境的行为包括：
 
-• 使用友好且包容的语言，
-
-• 尊重不同的观点和经验，
-
-• 优雅地接受建设性批评，
-
-• 关注对社区最好的事情，以及对社区成员展现理心。
+- 使用友好且包容的语言，
+- 尊重不同的观点和经验，
+- 优雅地接受建设性批评，
+- 关注对社区最好的事情，以及对社区成员展现理心。
 
 参与者不可接受的行为包括：
 
-• 使用性暗示语言或图像，以及不受欢迎的性关注或搭讪，
-
-• 喷子、侮辱/贬低评论，以及个人或政治攻击，
-
-• 公开或私下的骚扰，
-
-• 未经明确许可发布他人的隐私信息（如物理或电子地址），以及
-
-• 其他在专业环境中可能被合理认为不当的行为。
-
-
-
+- 使用性暗示语言或图像，以及不受欢迎的性关注或搭讪，
+- 喷子、侮辱/贬低评论，以及个人或政治攻击，
+- 公开或私下的骚扰，
+- 未经明确许可发布他人的隐私信息（如物理或电子地址），以及
+- 其他在专业环境中可能被合理认为不当的行为。
 
 ## B.2 我们的责任
 
@@ -5601,17 +5745,17 @@ module.exports = (dbm) => {
 
 本行为规范改编自贡献者公约（Contributor Covenant）[²]版本 1.4。
 
-## C 贡献
+# 附录 C 贡献
 
 我们欢迎各种类型的贡献，从错误修正和微小改进到全新的章节和内容：请向我们的 GitHub 仓库[¹] 提交问题（issue）或拉取请求（pull request）。所有工作被纳入的项目都会获得感谢；请注意，所有贡献者都必须遵守我们的行为规范（附录 B）。请注意，我们使用的是简化式英语而非传统英语，即使用美式拼写和语法。我们鼓励翻译；如果您愿意承担这项工作，请发送电子邮件联系我们[²]。
 
 如果您想报告错误或对措辞提出建议，请在报告正文的第一行包含章节名称（例如：`Testing Data Analysis`）。
 
-# D 术语表
+# 附录 D 术语表
 
 **绝对路径 (absolute path)**：无论在何处评估，都指向文件系统中相同位置的路径。绝对路径等同于地理中的经纬度。参见**相对路径 (relative path)**。
 
-**聚合函数 (aggregation function)**：将多个值合并为一个值的函数，例如 `sum or max`。
+**聚合函数 (aggregation function)**：将多个值合并为一个值的函数，例如 `sum` 或 `max`。
 
 **别名 (alias)**：指代相同数据或函数的第二个或后续名称。
 
@@ -5641,11 +5785,13 @@ module.exports = (dbm) => {
 
 **缓存 (cache)**：存储最近使用的值副本的地方，以便更快地访问。
 
+
+
 **调用栈 (call stack)**：一种存储正在进行中的函数调用信息的数据结构。每次函数调用都会在栈顶添加另一个变量-值对的表；当函数完成时，该表会被丢弃。参见**闭包 (closure)**。
 
 **回调函数 (callback function)**：传递给另一个函数 `B` 以供 `B` 在稍后调用的函数 `A`。回调函数用于实现延迟操作，例如在响应网络请求的数据到达时做什么。
 
-**层叠样式表 (CSS)**：一种描述如何渲染 HTML 的。
+**层叠样式表 (CSS)**：一种描述如何渲染 HTML 的语言。
 
 **捕获 (catch)**：负责处理**异常 (exception)**。`catch` 是**抛出 (throw)** 的对应项。
 
@@ -5671,17 +5817,13 @@ module.exports = (dbm) => {
 
 **构造函数 (constructor)**：在创建对象时自动调用以初始化对象的“方法”。
 
-**逗号分隔值 (CSV)**：一种用于表格数据的文本格式，其中每个记录为一行，字段由逗号分隔。有许多细微变，特别是在字符串的引号处理。
+**逗号分隔值 (CSV)**：一种用于表格数据的文本格式，其中每个记录为一行，字段由逗号分隔。有许多细微变体，特别是在字符串的引号处理。
 
 **连接管理器 (connection manager)**：一个维护到数据库连接的对象。当代码完成对数据库的操作时，连接管理器确保连接被关闭，这有助于避免数据损坏。
 
 **内容分发网络 (CDN)**：一组地理分布的服务器，用于存储常用或最近使用的数据（如网页），以便更快地提供服务。
 
-
-
-
-
-`constant`: 一个值不能更改的变量。注意，值本身可能会被改变：例如，在语句 `const v = [’a’, ’b’]` 之后，名称 `v` 将始终指向同一个数组，但数组的内容可以被更改。另参见 variable（变量）。
+`constant`: 一个值不能更改的变量。注意，值本身可能会被改变：例如，在语句 `const v = ['a', 'b']` 之后，名称 `v` 将始终指向同一个数组，但数组的内容可以被更改。另参见 variable（变量）。
 
 `Cross-Origin Resource Sharing (CORS)`: 一种控制请求的方式，请求的数据和其他资源并非由提供浏览器原始页面的网站提供。
 
@@ -5697,7 +5839,7 @@ module.exports = (dbm) => {
 
 `document`: 整个 HTML 页面。
 
-`Document Object Model (DOM)`: 一种在内存中表示 HTML 的标准方法。面的元素、属性及其文本以组织成树的节点形式存储。
+`Document Object Model (DOM)`: 一种在内存中表示 HTML 的标准方法。页面的元素、属性及其文本以组织成树的节点形式存储。
 
 `dotted notation`: 编程语言中引用结构各个部分的常用方式。`whole.part` 意味着“属于 `whole` 的 `part`”。
 
@@ -5709,7 +5851,7 @@ module.exports = (dbm) => {
 
 `escape sequence`: 一种字符序列，用于表示某些否则具有特殊含义的字符。例如，转义序列 `\"` 用于在双引号字符串内部表示双引号字符。
 
-`event handler`: 回回调函数，用于响应与浏览器的特定交互（如按下键或点击链接），执行某些操作。
+`event handler`: 回调函数，用于响应与浏览器的特定交互（如按下键或点击链接），执行某些操作。
 
 `event listener`: 另参见 event handler（事件处理器）。
 
@@ -5735,9 +5877,9 @@ module.exports = (dbm) => {
 
 `global installation`: 放置在所有用户和项目都可以访问的位置的 JavaScript 库。另参见 local installation（本地安装）。
 
-`global variable`: 定义在任何特定之外之外变量，因此对所有函数可见。另参见 local variable（局部变量）。
+`global variable`: 定义在任何特定函数之外的变量，因此对所有函数可见。另参见 local variable（局部变量）。
 
-`GNU Public License (GPL)`: 一种允许人们重用软件的许可，只要他们分发修改后的。
+`GNU Public License (GPL)`: 一种允许人们重用软件的许可，只要他们分发修改后的代码。
 
 `header row`: 如果存在，CSV 文件的第一行，用于定义列名（不幸的是，没有定义它们的数据类型或单位）。
 
@@ -5745,11 +5887,11 @@ module.exports = (dbm) => {
 
 `higher-order function`: 一个作用于其他函数的函数。例如，高阶函数 `forEach` 在数组的每个值上执行一次给定函数。高阶函数在函数式编程中被广泛使用。
 
-`homogeneous`: 具有单一类型。例如，如果一个数组只包含数字或只包含字符字符串而不是而不是者的混合，则称它是同质的。
+`homogeneous`: 具有单一类型。例如，如果一个数组只包含数字或只包含字符字符串而不是它们的混合，则称它是同质的。
 
 `hostname`: URL 中指定要通信计算机的部分。在 URL `http://example.com/something/` 中，主机是 `example.com`；在 URL `http://localhost:1234/` 中，主机是 `localhost`。
 
-`HyperText Transfer Protocol (HTTP)`: 用于在浏览器和网站之间、更广泛地说是在其他客户端和服务器之间交换信息的“超文本传输协议”。HTTP 是一个无状态协议，其通信由请求和响应组成。
+`HyperText Transfer Protocol (HTTP)`: 用于在浏览器和网站之间、更广泛地说是在其他客户端和服务器之间交换信息的协议。HTTP 是一个无状态协议，其通信由请求和响应组成。
 
 `HTTP header`: HTTP 请求或响应开头的键值对。头部用于指定发送者可以处理的数据格式、消息发送的日期时间等。
 
@@ -5775,16 +5917,13 @@ module.exports = (dbm) => {
 
 `internal style sheet`: 一组放置在网页内部而非外部文件中的 CSS 定义。另参见 external style sheet（外部样式表）。
 
+**JavaScript Object Notation (JSON)**：一种通过将数字和字符字符串等基本值在`arrays` 和键值结构中组合来表示数据的方法。该缩写代表“JavaScript Object Notation”；与 `XML` 这种定义更良好的标准不同，它不受注释语法或定义`schemas`方式的约束。
 
+- **library**: 参见 `module`。
 
+- **list**: 参见 `array`。
 
-**JavaScript Object Notation (JSON)**: 一种通过将数字和字符字符串等基本值在`arrays` 和键值结构中组合来表示数据的方法。该缩写代表“JavaScript Object Notation”；与 `XML` 这种定义更良好的标准不同，它不受注释语法或定义`schemas.`方式的。
-
-- **library**: 参见 `module.`。
-
-- **list**: 参见 `array.`。
-
-- **local installation**: 放置在特定项目中的 JavaScript 库，仅在该项目内部可访问。参见 `global installation.`。
+- **local installation**: 放置在特定项目中的 JavaScript 库，仅在该项目内部可访问。参见 `global installation`。
 
 - **local server**: 运行在用户自己计算机上的`server`，通常用于开发期间的测试目的。
 
@@ -5794,23 +5933,23 @@ module.exports = (dbm) => {
 
 - **logging transport**: 发送 `logging` 消息的通道，例如标准输出（用于用户的屏幕）或数据库连接。
 
-- **member variable**: 参见 `property.`。
+- **member variable**: 参见 `property`。
 
 - **memory diagram**: 显示程序包含的变量及其引用的数据的图片。
 
-- **method**: 附加到 `object` 的函数，通常使用 `dotted notation.` 调用。在 JavaScript 和许多其他语言中，为方法提供了一个名为 `this` 的特殊变量，用于指代调用该方法的特定对象。
+- **method**: 附加到 `object` 的函数，通常使用 `dotted notation` 调用。在 JavaScript 和许多其他语言中，为方法提供了一个名为 `this` 的特殊变量，用于指代调用该方法的特定对象。
 
-- **method chaining**: 一种编程风格，其中每个方法调用返回原始对象或新构建的对象，以便其他方法调用可以附加其上以创建长计算链。方法链产生的代码看起来像 `obj.a().b().c().`。
+- **method chaining**: 一种编程风格，其中每个方法调用返回原始对象或新构建的对象，以便其他方法调用可以附加其上以创建长计算链。方法链产生的代码看起来像 `obj.a().b().c()`。
 
 - **minimization**: 从源文件中删除空格和其他多余字符（甚至可能重命名变量）。这使得这些文件更小且部署更快，但是以牺牲可读性为代价。
 
 - **MIT License**: 一种允许人们在无限制的情况下重用软件的许可。
 
-- **model (of data)**: 数据存储的方式。另参见 `view.`。
+- **model (of data)**: 数据存储的方式。另参见 `view`。
 
-- **module**: 一组在一起的变量、函数和/或类，以便于管理（通常但并非总是单个文件）。模块有时也被称为 `libraries.`。
+- **module**: 一组在一起的变量、函数和/或类，以便于管理（通常但并非总是单个文件）。模块有时也被称为 `libraries`。
 
-- **module variable**: 在模块内部可见但在外部不可可见的变量。另参见 `scope.`。
+- **module variable**: 在模块内部可见但在外部不可可见的变量。另参见 `scope`。
 
 - **mutation**: 原地修改数据，例如修改数组元素或向数据库添加记录。
 
@@ -5820,7 +5959,7 @@ module.exports = (dbm) => {
 
 - **Node**: 一种用于浏览器之外的 JavaScript 开源实现。
 
-- **node**: HTML 页面元素的内存表示（不要与 `Node.js` 混淆）。另参见 `DOM.`。
+- **node**: HTML 页面元素的内存表示（不要与 `Node.js` 混淆）。另参见 `DOM`。
 
 - **NoSQL database**: 任何不使用 `relational` 模型的数据库。这个奇怪的名字来自于此类数据库不使用 `SQL` 作为查询语言。
 
@@ -5846,7 +5985,7 @@ module.exports = (dbm) => {
 
 - **parsing**: 将程序的文本转换为数据结构。
 
-- **polymorphism**: 字面意思是“具有多种形式”。该术指的是 `objects` 如何具有相同的名称。
+- **polymorphism**: 字面意思是“具有多种形式”。该术语指的是 `objects` 如何具有相同的名称。
 
 - **port**: 通信的逻辑端点，类似于电话号码。
 
@@ -5858,7 +5997,7 @@ module.exports = (dbm) => {
 
 - **pseudo-random number**: 以可重复的方式生成的值。
 
-- **pseudo-random number generator**: 在用用 `seed` 初始化后，可以生成一系列 `pseudo-random numbers` 的函数。
+- **pseudo-random number generator**: 在用 `seed` 初始化后，可以生成一系列 `pseudo-random numbers` 的函数。
 
 - **public domain license (CC-0)**: 一种允许人们以任何想要的方式无限制地重用材料的许可。
 
@@ -5872,97 +6011,95 @@ module.exports = (dbm) => {
 
 - **relational database**: 将信息组织成 `tables` 的数据库，每个表有一组固定的命名 `fields`（显示为列）和数量不等的 `records`（显示为行）。另参见 `SQL`。
 
+- **relative path (相对路径)**：其目标相对于其他位置（如当前目录）解释的路径。相对路径等同于使用“直行”和“左转”等术语给出指示。参见**absolute path (绝对路径)**。
 
+- **responsive design (响应式设计)**：构建网页和其他应用程序的方法，能够根据不同的屏幕尺寸流畅地调整和重新组织内容。
 
+- **RGB**：使用红、绿、蓝强度三元组表示颜色的方法，每个分量的范围都是从 0 到 255。在现代系统中，RGB 通常会扩展为 RGBA，其中第四个组件是像素的透明度。
 
+- **root (根)**：`tree` 中唯一没有 `parent`（父节点）的节点。
 
--   **relative path (相对路径)**：其目标相对于其他位置（如当前目录）解释的路径。相对路径等同于使用“直行”和“左转”等术语给出指示。参见**absolute path (绝对路径)**。
+- **root directory (根目录)**：直接或间接包含其他内容的目录。根目录写为 `/`（裸的正斜杠）。
 
--   **responsive design (响应式设计)**：构建网页和其他应用程序的方法，能够根据不同的屏幕尺寸流畅地调整和重新组织内容。
+- **root element (根元素)**：文档中包含所有其他元素。网页的根元素是 `html` 元素。
 
--   **RGB**：使用红、绿、蓝强度三元组表示颜色的方法，每个分量的范围都是从 0 到 255。在现代系统中，RGB 通常会扩展为 RGBA，其中第四个组件是像素的透明度。
+- **schema**：数据“形状”的规范，例如构成数据库表的 `fields` 或结构在 `JSON` 中嵌套的方式。
 
--   **root (根)**：`tree` 中唯一没有 `parent`（父节点）的节点。
+- **scope (作用域)**：程序中定义可以可见并使用的部分。参见 `global-variable`、`local-variable`、`module-variable` 以及（如果你足够勇敢）`closure`。
 
--   **root directory (根目录)**：直接或间接包含其他内容的目录。根目录写为 `/`（裸的正斜杠）。
+- **seed (种子)**：用于初始化伪随机数生成器的值。
 
--   **root element (根元素)**：文档中包含所有其他元素。网页的根元素是 `html` 元素。
+- **selector (选择器)**：识别 HTML 文档中元素的方法。例如，选择器 `h2#contents` 意味着“ID 为 `contents` 的 `h2` 元素”。
 
--   **schema**：数据“形状”的规范，例如构成数据库表的 `fields` 或结构在 `JSON` 中嵌套的方式。
+- **server (服务器)**：等待来自 `clients` 请求并向其发送数据的程序。有时将服务器想象成试图照看满屋顽皮小孩的疲惫父母，这会很有帮助。
 
--   **scope (作用域)**：程序中定义可以可见并使用的部分。参见 `global-variable`、`local-variable`、`module-variable` 以及（如果你足够勇敢）`closure`。
+- **server-side page generation (服务端页面生成)**：在服务器上创建 HTML 页面。该 HTML 页面随后按原样传递给浏览器进行显示。参见**client-side page generation (客户端页面生成)**。
 
--   **seed (种子)**：用于初始化伪随机数生成器的值。
+- **spread syntax (展开语法)**：`… in …some_array`，意味着“在处插值数组的值”。
 
--   **selector (选择器)**：识别 HTML 文档中元素的方法。例如，选择器 `h2#contents` 意味着“ID 为 `contents` 的 `h2` 元素”。
+- **SQL**：用于为**rel databases (关系型数据库)** 编写查询的语言。该术语最初是 Structured Query Language 的缩写。
 
--   **server (服务器)**：等待来自 `clients` 请求并向其发送数据的程序。有时将服务器想象成试图照看满屋顽皮小孩的疲惫父母，这会很有帮助。
+- **signature (签名)**：函数或 `method`所需的参数数据类型的有序列表。如果两个函数或方法具有相同的签名，则可以用相同的方式调用它们。
 
--   **server-side page generation (服务端页面生成)**：在服务器上创建 HTML 页面。该 HTML 页面随后按原样传递给浏览器进行显示。参见**client-side page generation (客户端页面生成)**。
+- **stateful (有状态的)**：从一个操作保留信息到下一个操作。
 
--   **spread syntax (展开语法)**：`… in …some_array`，意味着“在处插值数组的值”。
+- **stateless (无状态的)**：不从一个操作保留信息到下一个操作。
 
--   **SQL**：用于为**rel databases (关系型数据库)** 编写查询的语言。该术语最初是 Structured Query Language 的缩写。
+- **static method (静态方法)**：属于整个类而不是该类对象的方法。静态方法通常用于实现类的辅助方法。参见**instance method (实例方法)**。
 
--   **signature (签名)**：函数或 `method`所需的参数数据类型的有序列表。如果两个函数或方法具有相同的签名，则可以用相同的方式调用它们。
+- **string (字符串)**：程序中的块文本。该术语是“character string”（字符字符串）的缩写。
 
--   **stateful (有状态的)**：从一个操作保留信息到下一个操作。
+- **string interpolation (字符串插值)**：将对应于指定值的文本插入字符串中的过程，通常是为了使输出人类可读。
 
--   **stateless (无状态的)**：不从一个操作保留信息到下一个操作。
+- **table (表格)**：**relational database (关系型数据库)** 中一组格式统一的 `records`（记录）。表格通常用行（每行代表一条记录）和列（每列代表一个 `field` 字段）绘制。
 
--   **static method (静态方法)**：属于整个类而不是该类对象的方法。静态方法通常用于实现类的辅助方法。参见**instance method (实例方法)**。
+- **tag (标签)**：识别 HTML 页面中某种元素的短文本标签。常用的标签包括 `p`（用于段落）和 `h1`（一级标题）。
 
--   **string (字符串)**：程序中的块文本。该术语是“character string”（字符字符串）的缩写。
+- **template (模板)**：带有某些占位符的文档，这些占位符可以用特定值填充。模板通常用于创建个性化的电子邮件消息和网页，尽管它们的效能取决于现代社会对“个人化”构成要素的感知的持续商业化和贬值。
 
--   **string interpolation (字符串插值)**：将对应于指定值的文本插入字符串中的过程，通常是为了使输出人类可读。
+- **test runner (测试运行器)**：查找并运行 `unit tests`（单元测试）并报告其结果的程序。
 
--   **table (表格)**：**relational database (关系型数据库)** 中一组格式统一的 `records`（记录）。表格通常用行（每行代表一条记录）和列（每列代表一个 `field` 字段）绘制。
+- **test suite (测试套件)**：一组 `unit tests`（单元测试），通常存储在遵循规定命名规范的文件中。
 
--   **tag (标签)**：识别 HTML 页面中某种元素的短文本标签。常用的标签包括 `p`（用于段落）和 `h1`（一级标题）。
+- **throw (抛出)**：创建一个 `exception`（异常）并交给错误处理系统来信号程序中发生了意外或异常的情况，系统随后尝试在程序中找到可以 `catch`（捕获）它的点。（某些语言称之为 *raising* 异常。）
 
--   **template (模板)**：带有某些占位符的文档，这些占位符可以用特定值填充。模板通常用于创建个性化的电子邮件消息和网页，尽管它们的效能取决于取决于现代社会对“个人化”构成要素的感知的持续商业化和贬值。
+- **tidy data (整洁数据)**：满足四个条件的表格数据：
+  - 每列包含一个统计变量（即一个被测量或观察的属性）。
+  - 每个不同的观测在不同的行中。
+  - 每组观测对应一个表格。
+  - 如果有多个表格，每个表格都有一个包含唯一键的列，以便链接相关数据。
 
--   **test runner (测试运行器)**：查找并运行 `unit tests`（单元测试）并报告其结果的程序。
+- **tree (树)**：一种包含严格嵌套 `nodes`（节点）的数据结构。除了 `root node`（根节点）之外，每个节点必须恰好有一个 `parent node`（父节点），但每个节点可以有零或多个 `children`（子节点）。
 
--   **test suite (测试套件)**：一组 `unit tests`（单元测试），通常存储在遵循规定命名规范的文件中。
+- **truthy (真)**：真正的奥威尔式新词，意味着“不等于假”。参见**falsy (假值)**，但仅当你能够放下对英语语言的尊重时。
 
--   **throw (抛出)**：创建一个 `exception`（异常）并交给错误处理系统来信号程序中发生了意外或异常的情况，系统随后尝试在程序中找到可以 `catch`（捕获）它的点。（某些语言称之为 *raising* 异常。）
+- **Unicode (Unicode)**：一种为数以万个字符和符号定义数值代码的标准。Unicode 不定义如何存储这些数字；那是由 `UTF-8` 等标准完成的。
 
--   **tidy data (整洁数据)**：满足四个条件的表格数据：
--   每列包含一个统计变量（即一个被测量或观察的属性）。
--   每个不同的观测在不同的行中。
--   每组观测对应一个表格。
--   如果有多个表格，每个表格都有一个包含唯一键的列，以便链接相关数据。
+- **unit test (单元测试)**：对系统的某个属性或预期行为进行测试。
 
--   **tree (树)**：一种包含严格嵌套 `nodes`（节点）的数据结构。除了 `root node`（根节点）之外，每个节点必须恰好有一个 `parent node`（父节点），但每个节点可以有零或多个 `children`（子节点）。
+- **URL**：指定计算机网络上某些内容的多个部分标识符。URL 可能包含协议（如 `http`）、主机名（如 `example.com`）、端口（如 `80`）、路径（如 `/homepage.html`）以及 **query parameters (查询参数)**。
 
--   **truthy (真)**)**真正的奥威尔式新词，意味着“不等于假”。参见**falsy (假值)**，但仅当你能够放下对英语语言的尊重时。
+- **UTF-8**：一种在内存中存储表示 Unicode 字符的数值的方法，与旧的 `ASCII` 标准兼容。
 
--   **Unicode (Unicode)**：一种为数以万个字符和符号定义数值代码的标准。Unicode 不定义如何存储这些数字；那是由 `UTF-8` 等标准完成的。
+- **variable (变量)**：程序中关联某些数据的名称。变量的值在定义后可以更改。参见**constant (常量)**。
 
--   **unit test (单元测试)**：对系统的某个属性或预期行为进行测试。
+- **view (of data) (数据视图)**：数据呈现的方式。参见**model (模型)**。
 
--   **URL**：指定计算机网络上某些内容的多个部分标识符。URL 可能包含协议（如 `http`）、主机名（如 `example.com`）、端口（如 `80`）、路径（如 `/homepage.html`）以及 **query parameters (查询参数)**。
+- **whitespace (空白字符)**：占用空间但不产生可见标记的空格、换行符、回车以及水平和垂直制表符。该名字源于打字机时代在打印页面上的外观。
 
--   **UTF-8**：一种在内存中存储表示 Unicode 字符的数值的方法，与旧的 `ASCII` 标准兼容。
-
--   **variable (变量)**：程序中关联某些数据的名称。变量的值在定义后可以更改。参见**constant (常量)**。
-
--   **view (of data) (数据视图)**：数据呈现的方式。参见**model (模型)**。
-
--   **whitespace (空白字符)**：占用空间但不产生可见标记的空格、换行符、回车以及水平和垂直制表符。该名字源于打字机时代在打印页面上的外观。
-
--   **XML**：一组定义 HTML 类标签并使用它们格式化文档（通常是数据）的规则。XML 在 2000 年代初获得了普及，但其复杂性导致许多程序员转而采用 `JSON`。
+- **XML**：一组定义 HTML 类标签并使用它们格式化文档（通常是数据）的规则。XML 在 2000 年代初获得了普及，但其复杂性导致许多程序员转而采用 `JSON`。
 
 # E 关键点
 
-### INTRODUCTION 引言
+## INTRODUCTION 引言
+
 - 现代 JavaScript 是构建桌面和基于 Web 的应用程序的良好工具。
 - 本课程适用于那些知道循环和函数，但从未使用过 JavaScript 或构建过 Web 应用的人。
 - `Node` 是 JavaScript 的命令行解释器，可以交互式使用，也可以用于运行文件中的脚本。
 - `NPM` 是 Node 包管理器，可用于查找、安装、更新、构建和执行 JavaScript 库。
 
-### BASIC FEATURES 基础特性
+## BASIC FEATURES 基础特性
+
 - 使用 `console.log` 打印消息。
 - 使用点表示法 `X.Y` 获取对象 `X` 的部分 `Y`。
 - 基础数据类型是布尔值、数字和字符串。
@@ -5981,16 +6118,11 @@ module.exports = (dbm) => {
 - `name = (…parameters…) => {…body… }` 是定义函数的新方法。
 - 在函数体内使用 `return` 在任何点返回一个值。
 - 使用模块将代码划分在多个文件之间以便复用。
-
-
-
-
-
 - 赋值给 `module.exports` 以指定模块导出的内容。
 - `require(…path…)` 导入模块。
 - 以 `.` 或 `/` 开头的路径从本地导入，而没有 `.` 或 `/` 的路径会在库中查找。
 
-### 回调函数 (CALLBACKS)
+## 回调函数 (CALLBACKS)
 
 - JavaScript 像其他对象一样在内存中存储函数的指令。
 - 函数对象可以赋值给变量、放入列表、作为其他函数的参数传递等。
@@ -6003,7 +6135,7 @@ module.exports = (dbm) => {
 - `Array.reduce` 将数组归约为单个值。
 - 闭包是在函数定义期间捕获的一组变量。
 
-### 对象与类 (OBJECTS AND CLASSES)
+## 对象与类 (OBJECTS AND CLASSES)
 
 - 创建类来定义数据和行为的组合。
 - 使用类的构造函数来初始化对象。
@@ -6012,7 +6144,7 @@ module.exports = (dbm) => {
 - 有时扩展现有类来创建新类。
 - 重写方法以更改或扩展它们的行为。
 
-### HTML 与 CSS
+## HTML 与 CSS
 
 - HTML 是漫长标记语言系列中的最新。
 - HTML 文档包含元素（用尖括号中的标签表示）和文本。
@@ -6029,7 +6161,7 @@ module.exports = (dbm) => {
 - 使用 `class` 和 `id` 标识元素。
 - 使用选择器指定 CSS 应用于哪些元素。
 
-### 页面操作 (MANIPULATING PAGES)
+## 页面操作 (MANIPULATING PAGES)
 
 - 在页面的头部中使用 `meta` 标签来指定页面的字符编码。
 - 页面使用文档对象模型 (DOM) 在内存中表示。
@@ -6040,11 +6172,11 @@ module.exports = (dbm) => {
 - 事件监听器是浏览器在某些特定事件发生时运行的函数。
 - 为 `DOMContentLoaded` 创建事件监听器，以便在 DOM 构建后触发脚本执行。
 - 检查 DOM 节点的 `nodeType` 或 `nodeName` 属性以确定它是什么种的节点。
-- 解构构赋值允许我们在单条语句中通过名称为多个变量赋值。
+- 解构赋值允许我们在单条语句中通过名称为多个变量赋值。
 - 使用 `setTimeout` 在延迟后触发函数的执行。
 - 要让某个永久运行，让 `setTimeout` 调用的函数设置另一个相同函数的超时。
 
-### 动态页面 (DYNAMIC PAGES)
+## 动态页面 (DYNAMIC PAGES)
 
 - 旧的动态网站在服务器上生成页面。
 - 较新的动态网站在客户端生成页面。
@@ -6056,21 +6188,21 @@ module.exports = (dbm) => {
 - 使用伪 HTML 元素和相应的函数定义新的 React 组件。
 - 传递给伪 HTML 的属性作为 `props` 对象传递给 JavaScript 函数。
 
-### 数据可视化 (VISUALIZING DATA)
+## 数据可视化 (VISUALIZING DATA)
 
 - Vega-Lite 是构建常见可视化的简单方法。
 - Vega-Lite 是声明式的：用户创建一个描述其想要的内容的数据结构，由库创建可视化结果。
 - Vega-Lite 规范包含架构标识符、描述、数据、标记 (marks) 和编码 (encodings)。
 - Vega-Lite 可视化的整体布局可以通过设置选项来控制。
 
-### 承诺 (PROMISES)
+## 承诺 (PROMISES)
 
 - JavaScript 使用 promise 来管理异步活动。
 - 使用 `resolve` 表示成功完成，使用 `reject` 失败。使用 `then` 处理下一步，使用 `catch` 处理错误。
 - 使用 `Promise.all` 等待列表中的所有 promise，使用 `Promise.race` 等待集合中的第一个。
 - 使用 `await` 等待结果。
 
-### 交互式网站 (INTERACTIVE SITES)
+## 交互式网站 (INTERACTIVE SITES)
 
 - 定义事件处理器以指定当用户进行交互时浏览器应该采取的操作。
 - 浏览器将事件对象传递给事件处理器。
@@ -6079,7 +6211,7 @@ module.exports = (dbm) => {
 - 使用 `fetch` 从服务器获取数据。
 - 使用解构从对象中获取单个成员。
 
-### 数据管理 (MANAGING DATA)
+## 数据管理 (MANAGING DATA)
 
 - 小型表格化数据集通常存储为逗号分隔值 (CSV)。
 - CSV 只能表示常规数据，且 CSV 文件通常不包含单位。
@@ -6087,7 +6219,7 @@ module.exports = (dbm) => {
 - 表格数据的 JSON 表示通常包含列名的冗余（可能不一致的）规范。
 - PapaParse 是一个健壮的 CSV 解析库，可生成 JSON。
 
-### 创建服务器 (CREATING A SERVER)
+## 创建服务器 (CREATING A SERVER)
 
 - HTTP 请求或响应由一个纯文本头部和一个可选体组成。
 - HTTP 是无状态协议。
@@ -6097,7 +6229,7 @@ module.exports = (dbm) => {
 - 使用 `Content-Type` 指定返回的数据类型。
 - 使用动态加载来支持插件扩展。
 
-### 测试 (TESTING)
+## 测试 (TESTING)
 
 - 单元测试隔离检查一个软件组件的行为。
 - 单元测试的结果可以是通过、失败或错误。
@@ -6109,35 +6241,31 @@ module.exports = (dbm) => {
 - HTML 使用文档对象模型 (DOM) 在内存中表示。
 - 测试时检查 DOM 的结构而非 HTML 的文本表示。
 
-### 使用 DATA-FORGE (USING DATA-FORGE)
+## 使用 DATA-FORGE (USING DATA-FORGE)
 
 - 从具有相同键的对象数组、从带有 `columnNames` 和 `rows` 字段的规范中、或通过解析包含 CSV 或 JSON 的文本来创建 `DataFrame`。
 - 如果你在 dataframe 上使用循环，那么你的方法错了。
 - 使用方法链创建过滤数据并从旧值创建新值的流水线项目。
 - 使用分组和聚合来汇总数据。
 
-### 毕业项目 (CAPSTONE PROJECT)
+## 毕业项目 (CAPSTONE PROJECT)
 
 - 使用实际数据的切片来测试应用程序。
 - 测试摘要和小情况用例，以便可以手动检查结果。
+- 在类中存储状态，使用纯函数来显示它。
 
+## 结语
 
+- 我们学习了很多东西。
+- 非常欢迎各种贡献。
 
-
--   在类中存储状态，使用纯函数来显示它。
-
-### 结语
-
--   我们学习了很多东西。
--   非常欢迎各种贡献。
-
-# [F 协作]
+# F 协作
 
 一个项目可以在组织糟糕的代码中生存；但如果人们感到困惑、方向不一或充满敌意，没有任何一个项目能长久。因此，本附录将讨论项目可以做什么来让新成员感到受到欢迎，并在此后让事情运行顺畅。
 
 在 JavaScript 教程中包含这些材料似乎很奇怪，但正如 Freeman 在 [`Free1972`] 中所指出的，每个小组都有权力结构；唯一的问题在于它是正式且负责任的，还是非正式且不予负责任的。在自由软件运动采取其现代、自我意识的形式三十年后，它的成功与失败已经表明，如果一个项目没有明确说明谁有权做什么，它最终将由那个叫门最大、争论最久的人来运行。关于这些问题的更深入的讨论，请参阅 [`Foge2005`]。
 
-## [F.1 软件许可]
+## F.1 软件许可
 
 如果法律或出版协议阻止人们阅读你的作品或使用你的软件，你可能正在损害自己的职业生涯。你可能为了尊重个人或商业机密而这样做，但包容性的第一条也是最重要的规则是默认开放。
 
@@ -6146,6 +6274,7 @@ module.exports = (dbm) => {
 因此，每个项目都应该包含一个明确的许可。这种许可应该尽早选择：如果你在开始时没有正确设置，那么每个合作者都将拥有其作品的版权，在选择许可时需要征得他们的批准。按照惯例，许可通常放在项目根目录下名为 `LICENSE` 或 `LICENSE.txt` 的文件中。该文件应明确说明提供内容的许可（或许可）；使用复数形式是因为代码、数据和文本可能受不同许可的。
 
 > 不要编写自己的许可
+>
 > 即使你是一个律师也不行：法律术语是一种高度技术性的语言，词汇的含义并不如你想的那样。
 
 为了让许可选择尽可能简单，GitHub 允许你在创建存储库时选择最常见的许可之一。开源倡议（Open Source Initiative）维护了一个许可列表，choosealicense.com 将帮助你找到适合所需的许可。你需要考虑的一些事项包括：
@@ -6159,15 +6288,16 @@ module.exports = (dbm) => {
 两种流行的软件许可是 MIT 许可和 GNU 公共许可证 (GPL)。MIT 许可（以及与其相似的 BSD 许可）规定，只要引用原始来源，人们就可以对软件进行任何想要的操作，并且在出现问题时作者不承担任何责任。GPL 给了人们类似的权利，但要求他们以相同的条件共享自己的工作：
 
 > 只要你在源文件中跟踪更改/日期，你就可以复制、分发和修改软件。对软件（包括通过编译器包含的 GPL 许可代码）的任何修改也必须在 GPL 下提供，并附带构建和安装说明。
+>
 > — 而言之
 
 我们推荐 MIT 许可：它对未来行动的限制最少，以后可以变得更严格，而且过去三十年的经验表明，它足以保持工作开放。
 
-## [F.2 数据和文档的许可]
+## F.2 数据和文档的许可
 
 MIT 许可和 GPL 适用于软件。涉及到数据和报告时，最广泛使用的许可家族是知识共享（Creative Commons）制作的许可，这些许可由律师编写和检查，并被社区良好理解。
 
-最宽松的许可被称为 CC-0，其中“0”代表“零限制”。CC-0 将作品置于公领域，即允许任何想使用它的人以他们意意的方式进行使用，而不受任何限制。这通常是数据的最佳选择，因为它简化了聚合分析。例如，如果你为数据选择了一种种要求人们引用来源的许可，那么任何在分析中使用该数据的人都必须引用你；引用他们结果的人也必须如此，以此此类推，这很快就会变得难以处理。
+最宽松的许可被称为 CC-0，其中“0”代表“零限制”。CC-0 将作品置于公领域，即允许任何想使用它的人以他们意愿的方式进行使用，而不受任何限制。这通常是数据的最佳选择，因为它简化了聚合分析。例如，如果你为数据选择了一种要求人们引用来源的许可，那么任何在分析中使用该数据的人都必须引用你；引用他们结果的人也必须如此，以此类推，这很快就会变得难以处理。
 
 其次常见的许可是知识共享-署名许可，通常称为 CC-BY。这允许人们在引用原始来源的情况下对作品进行任何想要的操作。这是用于手稿的最佳许可，因为你希望人们广泛分享，同时也希望为你的工作获得认可。
 
@@ -6177,15 +6307,11 @@ MIT 许可和 GPL 适用于软件。涉及到数据和报告时，最广泛使�
 - NC（非商业使用）并不意味着人们不能对包含你工作的内容收费，尽管某些出版商仍试图暗示这一点，以吓走人们。相反，NC 条款意味着未经你的明确许可，人们不能对使用你工作的内容收费，你可以根据你喜欢的任何条件提供这种许可。
 - 最后，SA（相同共享）要求人们以你使用的相同条件分享包含你作品的作品。再次，这在原则上没有问题，但在实践中会让聚合变成一个头疼的问题。
 
-## [F.3 行为准则]
+## F.3 行为准则
 
-你不指发生火灾，但每座大型建筑或活动都应该有消防安全计划。同样，为你的项目拥有像附录 B 这样的行为准则，可以减少参与者对于可接受和不可接受行为的不确定性。你可能认为这显而易见，但长期的经验表明，清晰简洁地阐述它可以减少因预期不同而引起的问题，特别是当来自不同文化背景的人尝试协作时。明确的行为准则对新成员特别有帮助，因此拥有它可以帮助你的项目成长并鼓励人们向你提供反馈。
+你不指望发生火灾，但每座大型建筑或活动都应该有消防安全计划。同样，为你的项目拥有像附录 B 这样的行为准则，可以减少参与者对于可接受和不可接受行为的不确定性。你可能认为这显而易见，但长期的经验表明，清晰简洁地阐述它可以减少因预期不同而引起的问题，特别是当来自不同文化背景的人尝试协作时。明确的行为准则对新成员特别有帮助，因此拥有它可以帮助你的项目成长并鼓励人们向你提供反馈。
 
 对于边缘化或代表性不足的成员来说，拥有行为准则特别重要，他们以前可能经历过骚扰或不受欢迎的行为。通过采用准则，你传递了一个信号，你的项目正试图成为比 YouTube、Twitter 和其他在线垃圾场更好的地方。有些人可能会反对，声称没有必要，或者它侵犯了言论自由，但根据我们的经验，他们通常的意思是，思考他们可能从过去的不平等中获益让他们感到不舒服，或者他们喜欢为了争论而争论。如果行为准则会导致他们去别的地方，那可能会让你的项目运行得更顺畅。
-
-
-
-
 
 正如你不应该为项目编写自己的许可证一样，你可能也不应该自己编写自己的行为准则。我们建议在开发项目中使用“贡献者公约”（Contributor Covenant），在面对面的活动中使用来自“Geek Feminism Wiki”的示例行为准则。这两者都经过了仔细的考虑，并根据经验进行了修订，而且目前都已广泛使用，以至于你项目中的许多潜在参与者不需要再对其进行解释。
 
@@ -6217,7 +6343,7 @@ JavaScript 现在已经二十五年历史了，像很多事物一样，它仍在
 
 ## G.1 平等
 
-Gary Bernhardt 在 2012 年的闪电可能是观看最多的 JavaScript 演示。在演讲中，他列出关于该语言的一些可能让你惊讶的真相。
+Gary Bernhardt 在 2012 年的闪电演讲可能是观看最多的 JavaScript 演示。在演讲中，他列出关于该语言的一些可能让你惊讶的真相。
 
 | 操作 | 代码 | 结果 |
 | --- | --- | --- |
@@ -6233,13 +6359,14 @@ Gary Bernhardt 在 2012 年的闪电可能是观看最多的 JavaScript 演示�
 1. 数组是对象，其键恰好是顺序的。
 2. 当 JavaScript 尝试加非数字内容时，它会尝试将它们转换为数字，如果无效，则转换为字符串（因为它可以拼接字符串）。
 3. 要将数组转换为字符串，JavaScript 会将元素转换为字符串并将它们拼接。如果数组是空的，结果则为空字符串。
-4. 在将对象转换为字符串时，JavaScript 会生成 `object`，其中 `CLASS` 是对象类类的名称。
+4. 在将对象转换为字符串时，JavaScript 会生成 `[object CLASS]`，其中 `CLASS` 是对象类类的名称。
 5. `{}` 可以被解释为空对象或空代码块。
 
 所以：
+
 - 空数组加空数组变成空字符串加空字符串。
 - 空数组加空对象变成空字符串加 `object Object`（因为空对象的类只是 `Object`）。
-- `{} + []` 被解释为“产生任何内容的空代码块，紧接着是 []”，这变成了“+ 空数组的数值”，然后变成了“+ 0”。
+- `{} + []` 被解释为“产生任何内容的空代码块，紧接着是 `[]`”，这变成了“+ 空数组的数值”，然后变成了“+ 0”。
 - 空对象加空对象被解释为一个空对象加一个空代码块，由于空代码块不产生结果，它的“值”是 `NaN`（非数字）。
 
 这是编程（以及现实生活）中许多情况之一，即在简单情况下方便的做法，在不常见的情况下会产生困惑。除了加拿大语英语外，每种语言都有这类瑕疵。
@@ -6255,6 +6382,8 @@ for (let key in things) {
   console.log(key);
 }
 ```
+
+```
 0
 1
 2
@@ -6268,6 +6397,8 @@ for (let i = 0; i < things.length; i += 1) {
   console.log(i);
 }
 ```
+
+```
 0
 1
 2
@@ -6280,6 +6411,8 @@ for (let key of things) {
   console.log(key);
 }
 ```
+
+```
 x
 y
 z
@@ -6291,6 +6424,8 @@ z
 things.forEach((val, loc, array) => {
   console.log(`element ${loc} of ${array} is ${val}`);
 })
+```
+
 ```
 element 0 of x,y,z is x
 element 1 of x,y,z is y
@@ -6323,10 +6458,10 @@ Cone.prototype = iceCream;
 const dessert = new Cone('mustard');
 console.log(`flavor "${dessert.flavor}" size "${dessert.size}"`);
 ```
+
+```
 flavor "mustard" size "large"
-
-
-
+```
 
 如果我们更改了甜点的 `size`，查找操作在沿着原型链查找父对象之前，会先查找对象的属性：
 
@@ -6334,13 +6469,14 @@ flavor "mustard" size "large"
 
 图 G.1: 原型
 
-`dessert.size = ′extra-large′`
+```javascript
+dessert.size = 'extra-large'
+console.log(`new flavor "${dessert.flavor}" size "${dessert.size}"`)
+```
 
 ```
-console.log(`new flavor "**${dessert.flavor}" size "**${dessert.size}"`)
-```
-
 new flavor "mustard" size "extra-large"
+```
 
 原型是面向对象编程中实现继承的一种方式；问题在于这种机制相当笨拙，与大多数程序员习惯的写法大不相同，因此人们在原型之上构建了许多层。为了让事情变得更加复杂，`this` 的行为可能会出现一些非常奇怪的情况，人们再次构建了层级来试图让自己远离这些奇特性。原型仍然有它的追随者，但大多数人发现现代 JavaScript 的类（classes）更易用。
 
@@ -6375,7 +6511,7 @@ new flavor "mustard" size "extra-large"
 
 这些内容需要消化，所以表 H.1 显示了一些示例。正则表达式可以匹配数量惊人的其他模式，但在程序中使用相当简单。像字符串和数组一样，它们是带有方法的对象：如果模式是一个正则表达式，那么 `string.test(pattern)` 在 `pattern` 匹配字符串时返回 `true`，否则返回 `false`，而 `string.match(pattern)` 返回一个匹配子串的数组。如果我们在正则表达式的结束斜杠后添加修饰符“g”使其成为“全局的”，那么 `string.match(pattern)` 返回*所有*匹配的子串。
 
-```
+```javascript
 Tests = [
   'Jamie: james@geneinfo.org',
   'Zara: zetsure@bio123.edu',
@@ -6416,10 +6552,6 @@ aszego@euphoric.edu
 
 我们使用的 `console` 是**日志记录**（logging）。
 
-
-
-
-
 在上面的脚本中，我们通过一个额外的命令行参数设置日志级别。如果我们用 `debug` 级别运行脚本，所有的消息都会显示。如果我们用 `info` 级别运行，启动消息和 404 错误消息会显示；如果我们只用 `error` 级别，则只显示后者。
 
 ```bash
@@ -6439,7 +6571,7 @@ $ node src/logging/logging-server.js src/logging/web-dir/info
 假设我们想以某种方式扩展第 12 章中的服务器。我们可以编辑源文件并添加更多的 URL 处理器，或者让它动态加载并运行 JavaScript。
 
 ```javascript
-const express = require(′express’)
+const express = require('express')
 const PORT = 3418
 
 // 主服务器对象。
@@ -6447,15 +6579,15 @@ const app = express()
 
 // 处理所有请求。
 app.use((req, res, next) => {
-  if (req.url.endsWith(′.js′)) {
-    const libName = ′./′.concat(req.url.slice(0, -3))
+  if (req.url.endsWith('.js')) {
+    const libName = './'.concat(req.url.slice(0, -3))
     const dynamic = require(libName)
     const data = dynamic.page()
     res.status(200).send(data)
   }
   else {
     res.status(404).send(
-      `<<html><body><p>"${req.url}" not found</p></body></html>`);)
+      `<html><body><p>"${req.url}" not found</p></body></html>`)
   }
 })
 app.listen(PORT, () => { console.log(`listening on port ${PORT}…`) })
@@ -6465,7 +6597,7 @@ app.listen(PORT, () => { console.log(`listening on port ${PORT}…`) })
 
 ```javascript
 function page() {
-  return (′<html><body><h1>Plugin Content</h1></body></html 熾);
+  return ('<html><body><h1>Plugin Content</h1></body></html>');
 }
 
 module.exports = {
@@ -6496,7 +6628,7 @@ drop table if exists Workshop;
 create table Workshop(
   ident integer unique not null primary key,
   name text unique not null,
-  duration integer not null – 以分钟为单位时长
+  duration integer not null -- 以分钟为单位时长
 );
 
 insert into Workshop values(1, "Building Community", 60);
@@ -6510,7 +6642,7 @@ insert into Workshop values(2, "ENIAC Programming", 150);
 我们的类被形象地命名为 `Database`，它接受 SQLite 数据库文件的路径作为构造函数参数，并创建一个**连接管理器**，通过它可以发送查询并获取结果。我们将为每个想要运行的查询创建一个方法，并编写一个显示查询结果的辅助方法。我们将为所有查询方法提供相同的签名，以便可以相互处理。整个结构如下：
 
 ```javascript
-const sqlite3 = require(′sqlite3′)
+const sqlite3 = require('sqlite3')
 
 class Database {
   constructor (path) {
@@ -6582,38 +6714,32 @@ where
 constructor (mode, path) {
   this.path = path
   switch (mode) {
-```
-
-
-
-
-
-```javascript
-case 'memory' :
-  const setup = fs.readFileSync(this.path, 'utf-8')
-  this.db = new sqlite3.Database(':memory:', sqlite3.OPEN_READWRITE,
-    (err) => {
-      if (err) {
-        this.fail(`In-memory database open error "${err}"`)
-      }
-    })
-  this.db.exec(setup,(err) => {
-    if (err) {
-      this.fail(`Cannot initialize in-memory database from "${this.path}"`)
-    }
-  })
-  break
-case 'file' :
-  this.db = new sqlite3.Database(this.path, sqlite3.OPEN_READWRITE,
-    (err) => {
-      if (err) {
-        this.fail(`Database open error ${err} for "${path}"`)
-      }
-    })
-  break
-default :
-  this.fail(`Unknown mode "{mode}"`)
-  break
+    case 'memory' :
+      const setup = fs.readFileSync(this.path, 'utf-8')
+      this.db = new sqlite3.Database(':memory:', sqlite3.OPEN_READWRITE,
+        (err) => {
+          if (err) {
+            this.fail(`In-memory database open error "${err}"`)
+          }
+        })
+      this.db.exec(setup,(err) => {
+        if (err) {
+          this.fail(`Cannot initialize in-memory database from "${this.path}"`)
+        }
+      })
+      break
+    case 'file' :
+      this.db = new sqlite3.Database(this.path, sqlite3.OPEN_READWRITE,
+        (err) => {
+          if (err) {
+            this.fail(`Database open error ${err} for "${path}"`)
+          }
+        })
+      break
+    default :
+      this.fail(`Unknown mode "{mode}"`)
+      break
+  }
 }
 ```
 
@@ -6625,7 +6751,7 @@ default :
 function main () {
   const [mode, path, action, ...args] = process.argv.splice(2)
   const database = new Database(mode, path)
-  databaseaction
+  database[action](args)
 }
 ```
 
@@ -6701,7 +6827,7 @@ function main () {
   if (!(action in database)) {
     database.fail(`No such operation "${action}"`)
   }
-  databaseaction
+  database[action](args)
 }
 ```
 
@@ -6711,14 +6837,14 @@ function main () {
 
 ```javascript
 class Database {
-  //…如之前*…
-  getAll (args) {
+  //…如之前…
+  getAll (args, callback) {
     this.db.all(Q_WORKSHOP_GET_ALL, [], (err, rows) => {
       if (err) this.fail(err)
-      return rows
+      callback(rows)
     })
   }
-  ////…如之前*…
+  //…如之前…
 }
 ```
 
@@ -6741,7 +6867,7 @@ const main = () => {
   if (!(action in database)) {
     database.fail(`No such operation "${action}"`)
   }
-  databaseaction
+  database[action](args, display)
 }
 ```
 
@@ -6757,7 +6883,7 @@ drop table if exists Workshop;
 create table Workshop(
   ident integer not null primary key,
   name text not null,
-  duration integer not null – duration in minutes
+  duration integer not null -- duration in minutes
 );
 insert into Workshop values(1, "Building Community", 60);
 insert into Workshop values(2, "ENIAC Programming", 150);
@@ -6792,42 +6918,34 @@ describe('database', () => {
 })
 ```
 
-
-
-
-
 ## K.5 更新数据库
 
 我们在[第 11 章]中构建的数据管理器只允许我们读取数据；我们无法修改它。让我们为我们的 `Database` 类添加一些新功能以支持变异（mutation）：
 
 ```javascript
-// *…导入如上*…
+// ...导入如上...
 
-const Q_WORKSHOP_GET_ALL = *//…如上*…
+const Q_WORKSHOP_GET_ALL = //...如上...
 
-const Q_WORKSHOP_GET_ONE = *//…如上*…
+const Q_WORKSHOP_GET_ONE = //...如上...
 
 const Q_WORKSHOP_ADD = `
-
 insert into Workshop(name, duration) values(?, ?);
-
 `
 
 const Q_WORKSHOP_DELETE = `
-
 delete from Workshop where ident = ?;
-
 `
 
 class Database {
   constructor (mode, arg) {
-    // *…如上*…
+    // ...如上...
   }
   getAll (args, callback) {
-    // *…如上*…
+    // ...如上...
   }
   getOne (args, callback) {
-    // *…如上*…
+    // ...如上...
   }
   addOne (args, callback) {
     this.db.run(Q_WORKSHOP_ADD, args, function (err, rows) {
@@ -6842,13 +6960,13 @@ class Database {
     })
   }
   fail (msg) {
-    // *…如上*…
+    // ...如上...
   }
   _inMemory (script) {
-    // *…如上*…
+    // ...如上...
   }
   _inFile (path) {
-    // *…如上*…
+    // ...如上...
   }
 }
 module.exports = Database
@@ -6857,39 +6975,39 @@ module.exports = Database
 这些新增非常直观：执行操作的查询语句被传递给 `this.db.run`，连同指定要添加或删除内容的传入参数，并将一个空行列表传递给操作回调（因为添加和删除不返回任何内容）。测试需要更多的打字工作，因为我们要检查操作执行后数据库是否处于正确的状态：
 
 ```javascript
-// *…导入如上*…
+// ...导入如上...
 
-const FIXTURE = // *…如上*…
+const FIXTURE = // ...如上...
 
-describe(′mutating database′, () => {
-  it(′can add a workshop′, (done) => {
-    const duration = 35, name = ′Creating Bugs′
-    const db = new Database(′direct′, FIXTURE)
+describe('mutating database', () => {
+  it('can add a workshop', (done) => {
+    const duration = 35, name = 'Creating Bugs'
+    const db = new Database('direct', FIXTURE)
     db.addOne([name, duration], function (results, lastID) {
-      assert.deepEqual(results, [], ′Got empty list as result when adding′)
-      assert.equal(lastID, 3, ′Got the correct last ID after adding′)
+      assert.deepEqual(results, [], 'Got empty list as result when adding')
+      assert.equal(lastID, 3, 'Got the correct last ID after adding')
       db.getAll([], (results) => {
         expected = [
-          { workshopName: ′Building Community′, workshopDuration: 60, workshopId: 1 },
-          { workshopName: ′ENIAC Programming′, workshopDuration: 150, workshopId: 2 }, { workshopName: name, workshopDuration: duration, workshopId: 3 }
+          { workshopName: 'Building Community', workshopDuration: 60, workshopId: 1 },
+          { workshopName: 'ENIAC Programming', workshopDuration: 150, workshopId: 2 }, { workshopName: name, workshopDuration: duration, workshopId: 3 }
         ]
         assert.deepEqual(results, expected,
-          ′Got expected workshops after add′)
+          'Got expected workshops after add')
         done()
       })
     })
   })
-  it(′can delete a workshop′, (done) => {
-    const db = new Database(′direct′, FIXTURE)
+  it('can delete a workshop', (done) => {
+    const db = new Database('direct', FIXTURE)
     db.deleteOne([1], (results, lastID) => {
-      assert.equal(lastID, undefined, ′Expected last ID to be undefined′)
-      assert.deepEqual(results, [], ′Got empty list as result when deleting′)
+      assert.equal(lastID, undefined, 'Expected last ID to be undefined')
+      assert.deepEqual(results, [], 'Got empty list as result when deleting')
       db.getAll([], (results) => {
         expected = [
-          { workshopName: ′ENIAC Programming′, workshopDuration: 150, workshopId: 2 }
+          { workshopName: 'ENIAC Programming', workshopDuration: 150, workshopId: 2 }
         ]
         assert.deepEqual(results, expected,
-          ′Got expected workshops after delete′)
+          'Got expected workshops after delete')
         done()
       })
     })
@@ -6911,9 +7029,11 @@ describe(′mutating database′, () => {
 const db = new Database(path)
 const rows = db.getLongerThan(100)
 assert.deepEqual(rows, [
-  {workshopName: ′ENIAC Programming′, workshopDuration: 150, workshopId: 2}
+  {workshopName: 'ENIAC Programming', workshopDuration: 150, workshopId: 2}
 ])
 ```
+
+
 
 你的 `Database.getLongerThan` 方法的 SQL 查询需要使用 `where` 子句来选择特定记录。
 
@@ -6950,23 +7070,19 @@ where
 
 在笔记本电脑上运行应用程序是可以的，但早晚我们希望将其放到网上。最简单的平台之一是 Glitch，它旨在帮助学生构建交互式网站。要尝试它，访问 glitch.com 并创建一个免费账户。然后你可以点击“New Project”按钮并选择 `hello-express`，这将创建一个基础 Express 应用。该项目包含几个文件：
 
-- `README.md`: Markdown 格式的项目描述。
-- `package.json`: 项目的 NPM 包列表。
-- `server.js`: 服务器。初始设置为将 `/` 请求路由到 index.html，但可以变得任意复杂。注意它使用了变量 `__dirname`（带有两个下划线）来获取服务器运行所在的目录名称；这是必要的，因为 Glitch 控制应用程序运行的位置。
-- `views/index.html`: 应用程序首页。我们可以添加许多其他页面，但它们必须放在 `views` 文件夹中。
-- `public/client.js`: 在浏览器中运行的用户界面代码。public 文件夹作为服务器的根目录，因此在 `views/index.html` 和其他页面中，我们将 `public/client.js` 简单引用为 `/client.js`。
-- `public/style.css`: 为应用程序样式的 CSS。同样，在 `views/index.html` 中将其引用为 `/style.css` 而无需命名 public 文件夹。
-- `.env`: 脚本，用于定义应用程序所需的任何配置变量，例如数据库密码。与上述文件不同，人们克隆我们的应用程序时不会复制它。如果我们在文件中定义了一个名为 `PASSWORD` 的变量，那么我们的服务器就可以使用 `process.env.PASSWORD` 获取其值（字符串格式）。
+- `README.md`：Markdown 格式的项目描述。
+- `package.json`：项目的 NPM 包列表。
+- `server.js`：服务器。初始设置为将 `/` 请求路由到 index.html，但可以变得任意复杂。注意它使用了变量 `__dirname`（带有两个下划线）来获取服务器运行所在的目录名称；这是必要的，因为 Glitch 控制应用程序运行的位置。
+- `views/index.html`：应用程序首页。我们可以添加许多其他页面，但它们必须放在 `views` 文件夹中。
+- `public/client.js`：在浏览器中运行的用户界面代码。public 文件夹作为服务器的根目录，因此在 `views/index.html` 和其他页面中，我们将 `public/client.js` 简单引用为 `/client.js`。
+- `public/style.css`：为应用程序样式的 CSS。同样，在 `views/index.html` 中将其引用为 `/style.css` 而无需命名 public 文件夹。
+- `.env`：脚本，用于定义应用程序所需的任何配置变量，例如数据库密码。与上述文件不同，人们克隆我们的应用程序时不会复制它。如果我们在文件中定义了一个名为 `PASSWORD` 的变量，那么我们的服务器就可以使用 `process.env.PASSWORD` 获取其值（字符串格式）。
 
 ![Image](img/figL_1.jpg)
 
 图 L.1：Glitch 部署
 
 两个不存在的是许可证和行为准则，但可以通过点击“New File”按钮轻松添加。多种广泛使用的开源许可证可供选择，行为准则基于一个在开源项目中也被广泛使用的版本。添加这两者可以明确我们允许并期望人们对我们的项目做什么。
-
-
-
-
 
 文件资源器底部的“重置”（Rewind）按钮让我们能够查看项目历史。Glitch 使用 `Git` 来存储更改，但将这些更改呈现为时间轴，这样我们就可以向前向后滚动，查看何时发生了什么变化。“工具”（Tools）按钮（同样位于文件资源器底部）允许我们访问日志和性能信息，并将项目连接到 GitHub 上的仓库。
 
@@ -6985,12 +7101,12 @@ where
   - 长度，8
   - 嵌套，7
 - 数组方法
-  - `every`,25
-  - `filter`,26
-  - `forEach`,30
-  - `map`,26
-  - `reduce`,26
-  - `some`,25
+  - `every`，25
+  - `filter`，26
+  - `forEach`，30
+  - `map`，26
+  - `reduce`，26
+  - `some`，25
 - 断言，133
 - async，97
 - 异步加载，77
@@ -7051,239 +7167,222 @@ where
   - undefined，6
   - 整数（缺失的），5
   - 数字，5
-  - 声明式，79 部署，225
-  - 解构，65
-  - 解构赋值，16
-  - 开发者工具，56, 71
-  - DNS，126
-  - 文档，43
-  - 对象模型，57
-  - DOM，57
-  - 点符号法，5
-  - 驱动程序，215
-  - ECMAS，12
-  - 
-    - ID，51
-    - 根，43
-    - 元素，43
-    - EMBL，2
-    - 入口点，212
-  - 等
-    - 形式，8
-    - ES6 模块系统，12
-    - 转义，207
-    - 转义序列，43
-    - 事件处理器，103
-    - 事件监听器，61
-    - 事件循环，87
-    - 事件对象，103
-    - 异常，224
-  - Express，125
-  - 扩展，37
-  - 外部样式表，50
-  - 假值，8
-  - 箭头函数，11
-  - fetch，90, 114
-  - 字段，213
-  - 固件，133
-  - `for` 循环，6
-  - 函数
-    - 匿名的，24
-    - 经典的，10
-    - 默认值，11
-    - 箭头，11
-    - 高阶，25
-    - 参数，10
-    - 返回，11
-  - 函数式编程，25
-  - 全局安装，3
-  - 全局地，3
-  - GNU 许可证，198
-  - head（HTML 页面），44
-  - header（HTTP），126
-  - 头部行，117
-  - heading（在 HTML 中），46
-  - 异构的，8
-  - 高阶函数，25
-  - 主机名，126
-  - HTML 模板，69
-  - HTTP，125
-  - header，126
-  - 请求，125
-  - 响应，125
-  - 状态码，126
-  - 图像（HTML 页面中），49
-  - 不可变的，141
-  - 内存数据库，215
-  - 继承，37
-  - 内部循环，7
-  - `innerHTML` 属性，57
-  - 实例，35
-
-
-
-
-
-## 实例方法, 58
-
-## 内部样式表, 52
-
-## 插值
-- 字符串, 8
-- JSON, 10, 79, 117
-- JSX, 71
-
-## 链接
-- HTML 页面中的, 48
-- 内部, 51
-- 列表（HTML 页面中）, 46
-- 本地安装, 3
-- 本地服务器, 74
-- 本地变量, 12
-- 在地地, 3
-- 日志, 209
-
-## 循环
-- `for`, 6
-- `while`, 62
-- 嵌套, 7
-- 内存图, 19
-- 方法, 8, 35, 125
-- 重写, 36
-- 方法链式, 145
-- 最小化, 52
-- MIT 许可证, 198
-- Mocha, 133
-- 模型, 107
-- 模块, 5
-- `require`, 13
-- 导出, 13
-- 导入, 13
-
-## 模块系统
-- CommonJS, 12
-- ES6, 12
-- 模块变量, 161
-- Mozilla 开发者网络, 14
-- 变异, 221
-- 命名冲突, 20
-- `NaN` (非数字), 14, 122
-- 逻辑论（糟糕的）, 8
-- 嵌套数组, 7
-- 循环, 7
-- `Node`, 3
-- 节点（树的）, 57
-- `Node 包管理器 (npm)`, 3
-- NoSQL 数据库, 213
-- 不是数字, 14
-- `npm`, 3
-- 对象, 8
-- 键, 9
-- 字符串表示, 10
-- 值, 9
-- 观察者/可观察, 41
-- `onload` 属性（页面）, 60
-- 外部循环, 7
-- 重写方法, 36
-- 包管理器, 3
-- `package.json`, 75
-- Pandas, 141
-- PapaParse, 119
-- 参数, 10
-- React, 73
-- Parcel, 74, 168
-- 父类, 37
-- 解析, 19
-
-## 路径
-- 绝对, 49
-- 相对, 49
-- 多态, 34, 36
-- 端口, 127
-
-## 编程
-- 声明式, 79
-- 函数式, 25
-- 面向对象, 33
-- Promise, 87
-- `async` 和 `await`, 97
-- 全部, 94
-- 错误处理, 90
-- 执行, 90
-- 属性, 8
-- 原型, 34, 205
-- 伪随机数, 122
-- 查询参数, 127
-- 查询选择器, 56
-- 竞态条件, 56
-- React, 69
-- props 对象, 73
-- 组件, 72
-- 唯一键的, 111
-- 参数, 73
-- 读-执行-打印循环 (REPL), 3
-- 记录, 213
-- 重构, 134
-- 正则表达式, 22, 36, 207
-- 关系数据库, 213
-- 相对路径, 49
-- REPL, 3
-- 响应式设计, 53
-- 返回语句, 11
-- RGB, 54
-- 根目录, 49
-- 根元素, 43
-- RStudio, 3
-- RunKit, 3
-- JavaScript, 77
-- 命令行, 3
-- 浏览器中, 56
-- 作用域（变量）, 12
-- 种子, 119, 123
-- 选择器, 51
-- 服务器, 69
-- 服务器端页面生成, 69
-- 签名, 213
-- Software Carpentry, 2
-- 展开语法, 121
-- SQL, 213
-- 有状态, 38
-- 无状态, 40
-- 静态方法, 58
-- 状态码（HTTP), 126
-- 字符串插值, 8
-
-## 样式表
-- 外部, 50
-- 内部, 52
-- super, 37
-- supertest, 135
-- 表格, 213
-- 表格（HTML 页面中）, 47
-- 标签, 43
-- 模板（HTML）, 69
-- 测试运行器, 133
-- 测试套件, 133
-- this, 35
-- 抛出, 224
-- 整洁数据, 141
-- tidyverse, 141
-- 传输, 209
-- 树, 43
-- 节点, 57
-- 真值, 8
-- `typeof` 运算符, 5
-- Unicode, 6
-- 单元测试, 133
-- URL, 125
-
-## 变量
-- 定义, 6
-- 本地, 12
-- 变量作用域, 12
-- Vega-Lite, 79, 167
-- 视图, 107
-- Webpack, 74
-- `while` 循环, 62
-- 空格, 62
-
+- 声明式，79
+- 部署，225
+- 解构，65
+- 解构赋值，16
+- 开发者工具，56, 71
+- DNS，126
+- 文档，43
+- 对象模型，57
+- DOM，57
+- 点符号法，5
+- 驱动程序，215
+- ECMAS，12
+- ID，51
+- 根，43
+- 元素，43
+- EMBL，2
+- 入口点，212
+- 形式，8
+- ES6 模块系统，12
+- 转义，207
+- 转义序列，43
+- 事件处理器，103
+- 事件监听器，61
+- 事件循环，87
+- 事件对象，103
+- 异常，224
+- Express，125
+- 扩展，37
+- 外部样式表，50
+- 假值，8
+- 箭头函数，11
+- fetch，90, 114
+- 字段，213
+- 固件，133
+- `for` 循环，6
+- 函数
+  - 匿名的，24
+  - 经典的，10
+  - 默认值，11
+  - 箭头，11
+  - 高阶，25
+  - 参数，10
+  - 返回，11
+- 函数式编程，25
+- 全局安装，3
+- 全局地，3
+- GNU 许可证，198
+- head（HTML 页面），44
+- header（HTTP），126
+- 头部行，117
+- heading（在 HTML 中），46
+- 异构的，8
+- 高阶函数，25
+- 主机名，126
+- HTML 模板，69
+- HTTP，125
+- header，126
+- 请求，125
+- 响应，125
+- 状态码，126
+- 图像（HTML 页面中），49
+- 不可变的，141
+- 继承，37
+- 内部循环，7
+- `innerHTML` 属性，57
+- 实例，35
+- 实例方法，58
+- 内部样式表，52
+- 插值
+  - 字符串，8
+- JSON，10, 79, 117
+- JSX，71
+- 链接
+  - HTML 页面中的，48
+  - 内部，51
+- 列表（HTML 页面中），46
+- 本地安装，3
+- 本地服务器，74
+- 本地变量，12
+- 在地地，3
+- 日志，209
+- 循环
+  - `for`，6
+  - `while`，62
+- 嵌套，7
+- 内存图，19
+- 方法，8, 35, 125
+- 重写，36
+- 方法链式，145
+- 最小化，52
+- MIT 许可证，198
+- Mocha，133
+- 模型，107
+- 模块，5
+- `require`，13
+- 导出，13
+- 导入，13
+- 模块系统
+  - CommonJS，12
+  - ES6，12
+- 模块变量，161
+- Mozilla 开发者网络，14
+- 变异，221
+- 命名冲突，20
+- `NaN` (非数字)，14, 122
+- 逻辑论（糟糕的），8
+- 嵌套数组，7
+- 循环，7
+- `Node`，3
+- 节点（树的），57
+- `Node 包管理器 (npm)`，3
+- NoSQL 数据库，213
+- 不是数字，14
+- `npm`，3
+- 对象，8
+- 键，9
+- 字符串表示，10
+- 值，9
+- 观察者/可观察，41
+- `onload` 属性（页面），60
+- 外部循环，7
+- 重写方法，36
+- 包管理器，3
+- `package.json`，75
+- Pandas，141
+- PapaParse，119
+- 参数，10
+- React，73
+- Parcel，74, 168
+- 父类，37
+- 解析，19
+- 路径
+  - 绝对，49
+  - 相对，49
+- 多态，34, 36
+- 端口，127
+- 编程
+  - 声明式，79
+  - 函数式，25
+  - 面向对象，33
+- Promise，87
+- `async` 和 `await`，97
+- 全部，94
+- 错误处理，90
+- 执行，90
+- 属性，8
+- 原型，34, 205
+- 伪随机数，122
+- 查询参数，127
+- 查询选择器，56
+- 竞态条件，56
+- React，69
+- props 对象，73
+- 组件，72
+- 唯一键的，111
+- 参数，73
+- 读-执行-打印循环 (REPL)，3
+- 记录，213
+- 重构，134
+- 正则表达式，22, 36, 207
+- 关系数据库，213
+- 相对路径，49
+- REPL，3
+- 响应式设计，53
+- 返回语句，11
+- RGB，54
+- 根目录，49
+- 根元素，43
+- RStudio，3
+- RunKit，3
+- JavaScript，77
+- 命令行，3
+- 浏览器中，56
+- 作用域（变量），12
+- 种子，119, 123
+- 选择器，51
+- 服务器，69
+- 服务器端页面生成，69
+- 签名，213
+- Software Carpentry，2
+- 展开语法，121
+- SQL，213
+- 有状态，38
+- 无状态，40
+- 静态方法，58
+- 状态码（HTTP)，126
+- 字符串插值，8
+- 样式表
+  - 外部，50
+  - 内部，52
+- super，37
+- supertest，135
+- 表格，213
+- 表格（HTML 页面中），47
+- 标签，43
+- 模板（HTML），69
+- 测试运行器，133
+- 测试套件，133
+- this，35
+- 抛出，224
+- 整洁数据，141
+- tidyverse，141
+- 传输，209
+- 树，43
+- 节点，57
+- 真值，8
+- `typeof` 运算符，5
+- Unicode，6
+- 单元测试，133
+- URL，125
+- 变量
+  - 定义，6
+  - 本地，12
+  - 变量作用域，12
+- Vega-Lite，79, 167
+- 视图，107
+- Webpack，74
+- `while` 循环，62
+- 空格，62

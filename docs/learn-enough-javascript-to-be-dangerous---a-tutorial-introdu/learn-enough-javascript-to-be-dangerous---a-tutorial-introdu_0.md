@@ -1,18 +1,9 @@
+
 # 学会足够的 JavaScript 以应对挑战 - JavaScript 编程入门指南 [第2版初稿]
-
-
-
-
-
-
-
 
 ## 前言
 
 *学习足够的 JavaScript 以以走天下* 旨在让你尽可能快地开始编写实用的现代 JavaScript 程序，使用最新的 JavaScript 技术，并关注软件开发者每天使用的真实工具。JavaScript 是一门大语言，相应的教程也极其巨大。但好消息是，你不需要学习所有内容就可以开始——你只需要学习足够变得*危险*的内容。
-
-
-
 
 与大多数 JavaScript 教程不同，《学会足够的 JavaScript 以应对挑战》（*Learn Enough JavaScript to Be Dangerous*从一开始就将 JavaScript 视为一种*通用型*编程语言，因此我们的示例不仅限于浏览器。除了交互式 HTML 网站外，你还将学习如何编写命令行程序和自包含的 JavaScript 包。我们甚至有机会探索重要的软件开发实践，如版本控制、函数式编程和测试驱动开发。其结果是一个关于 JavaScript 的实用叙述性介绍——既是对浏览器内编码教程的完美补充，也是对 Web 上庞杂但难以检索的 JavaScript 参考资料的完美补充。
 
@@ -48,9 +39,6 @@ Learn Enough 致力于为尽可能广泛的人提供技术教育。作为这一�
 
 正如 2019 年 RailsConf 快速演讲中（[`youtu.be/AI5wmnzzBqc?t=1076`](https://youtu.be/AI5wmnzzBqc?t=1076)）提到的，Learn Enough 学学金的申请过程极其简单：只需填写一个机密文本区域，告诉我们一些关于你的情况。奖学金标准慷慨且灵活——我们理解想要奖学金的原因有许多，从学生身份到失业状态，再到生活在对美元汇率不利的国家。迄为止，Learn Enough 已为全国及各地的有志开发人员授予了 2500 多份奖学金。如需申请，请访问 Learn Enough 页面 `www.learnenough.com/scholarship`。也许下一个奖学金获得者就是你！
 
-
-
-
 你无法学到 JavaScript 的所有知识——那需要数千页的内容和几个世纪的努力——但你将学会足够的 JavaScript 来变得`独当一面`（图 1.1）。^(1)
 
 1. 图片由谢 Kirk Fisher/Shutterstock 提供。
@@ -59,12 +47,16 @@ Learn Enough 致力于为尽可能广泛的人提供技术教育。作为这一�
 
 **图 1.1:** JavaScript 知识就像罗马一样，不是一天之功的。
 
-《Learn Enough JavaScript to Be Dangerous》没有编程前提条件，尽管如果你有过编程经验，那无疑大有益。重要的是你已经开始培养自己的`技术素养`（框 1.1），无论是自学还是使用之前的 Learn Enough 教程（[`www.learnenough.com/courses`](https://www.learnenough.com/courses））。这些教程包含了以下内容，它们共同构成了本书良好的先决条件列表：
+《Learn Enough JavaScript to Be Dangerous》没有编程前提条件，尽管如果你有过编程经验，那无疑大有益。重要的是你已经开始培养自己的`技术素养`（框 1.1），无论是自学还是使用之前的 Learn Enough 教程（[`www.learnenough.com/courses`](https://www.learnenough.com/courses)）。这些教程包含了以下内容，它们共同构成了本书良好的先决条件列表：
 
 1. *Learn Enough Command Line to Be Dangerous*（[https://www.learnenough.com/command-line](https://www.learnenough.com/command-line)）
+
 2. *Learn Enough Text Editor to Be Dangerous*（[`www.learnenough.com/text-editor`](https://www.learnenough.com/text-editor)）
+
 3. *Learn Enough Git to Be Dangerous*（[`www.learnenough.com/git`](https://www.learnenough.com/git)）
+
 4. *Learn Enough HTML to Be Dangerous*（[`www.learnenough.com/html`](https://www.learnenough.com/html)）
+
 5. *Learn Enough CSS & Layout to Be Dangerous*（[`www.learnenough.com/cssand-layout`](https://www.learnenough.com/cssand-layout)）
 
 **框 1.1: 技术素养**
@@ -93,9 +85,7 @@ Learn Enough 致力于为尽可能广泛的人提供技术教育。作为这一�
 
 在第 10 章中，我们将学习使用 JavaScript 编写非简单的`脚本`，这是一个经常被忽视的话题，包含了从文件和 URL 读取数据，就像处理一个 HTML 页面一样。
 
-在第 11 章中，我们将把第 9 章和第 10 章](#ch10.xhtml_ch10)的技术应用于一个真实的工业级网站。特别是，我们将扩展 *Learn Enough CSS & Layout To Dangerous* 的示例应用程序，添加一个功能性的图片库，它可以根据用户的点击动态更改图像、CSS 类和页面文本。（我们将使用 `Git` 直接 `clone` 仓库，因此即使你没有完成 *Learn Enough CSS & Layout To Dangerous*，也能构建该图片库。）
-
-
+在第 11 章中，我们将把第 9 章和第 10 章](#ch10.xhtml_ch10)的技术应用于一个真实的工业级网站。特别是，我们将扩展 *Learn Enough CSS & Layout To Dangerous* 的示例应用程序，添加一个功性的图片库，它可以根据用户的点击动态更改图像、CSS 类和页面文本。（我们将使用 `Git` 直接 `clone` 仓库，因此即使你没有完成 *Learn Enough CSS & Layout To Dangerous*，也能构建该图片库。）
 
 我们现在称为 `JavaScript` 的语言最初由其 Netscape 创造者称为“LiveScript”，但在计划发布当时，由 Sun Microsystems 开发的语言 `Java` 正引起着极大的热度。为了利用这一热度，Netscape 将 LiveScript 的名称改为“JavaScript”——这让开发者们在疑惑它与 `Java` 有什么关系时产生了无尽的困惑。（答案是：毫无关系。）后来，人们创建一个名为 `ECMAScript` 的 `JavaScript` 标准版本（读音为 ECK-muh-script），旨在提高跨浏览器兼容性。从技术上讲，大多数人所说的“JavaScript”更恰切的称呼本应是“ECMAScript”，而 `JavaScript` 仅是 ECMAScript 最常见的实现方式，但在本教程中，我们遵循通用惯例，使用“JavaScript”来泛指这种语言。该规则的一个主要例外是我们偶尔会使用诸如“ES6”之类的缩写名称，它指的是 `ECMAScript` 的第六版（这是一个特别巨大且重要的更新，为 ECMAScript/JavaScript 标准增加了许多实用功能）。
 
@@ -104,8 +94,11 @@ Learn Enough 致力于为尽可能广泛的人提供技术教育。作为这一�
 为了给您提供最全面的 `JavaScript` 编程介绍，*Learn Enough JavaScript to Be Dangerous* 使用了四种主要方法：
 
 1. 运行在用户浏览器中的前端 `JavaScript` 程序
+
 2. 带有 `Node.js` 读-评估-打印循环（REPL）的交互式提示符
+
 3. 独立的 `JavaScript` 文件（包括 Node 包管理器）
+
 4. Shell 脚本（如在 *Learn Enough Text Editor to Be Dangerous* 中介绍的）
 
 我们将从这一悠老的主题——“hello, world”程序的四种变体开始学习 `JavaScript`，这一传统可以追溯到 C 语言语言的早期。“hello, world”的主要目的是确认我们的系统配置正确，能够执行一个在屏幕上打印字符串 `hello, world!`（或某些类似的变体）的简单程序。从设计上来说，该程序非常简单，使我们能够专注于让程序运行起来这一挑战本身。
@@ -184,10 +177,6 @@ $ git commit -m "Initialize repository"
 
 **列表 1.2：** JavaScript 编写的“Hello, world!”。
 
-
-
-
-
 ```
 <!DOCTYPE html>
 
@@ -256,7 +245,7 @@ $ git push -u origin main
 
 完成后，你现在可以通过以下 URL 访问你的网站：^(4)
 
-4。要学习如何使用自定义域名托管 GitHub Pages 网站，请查看免费教程 *Learn Enough Custom Domains to Be Dangerous*（[`www.learnenough.com/custom-domains`](https://www.learnenough.com/custom-domains)）。
+4。要学习如何使用自定域名托管 GitHub Pages 网站，请查看免费教程 *Learn Enough Custom Domains to Be Dangerous*（[`www.learnenough.com/custom-domains`](https://www.learnenough.com/custom-domains)）。
 
 ```
 https://<username>.github.io/js_tutorial
@@ -318,15 +307,11 @@ https://<username>.github.io/js_tutorial
 
 **图 1.14：** 在浏览器控制台中打印出“hello, world!”。
 
-
-
-
-
 警觉的读者（此处并非双关语）可能已经注意到，列表 1.3 中的命令包含一个终止分号（图 1.3），而图 1.14 中显示的命令则没有。之所以包含这种差异，是为了说明这两个命令的作用是相同的，而且在用交互式控制台时，省略分号是常见做法。为了保持一致性，在本文教程的后续部分中，我们通常会包含分号（即使在控制台中也是），但了解这两种约定是有处的，以防你在他人的代码中看到不同的写法。
 
 ### 1.3.2 Node 提示符
 
-已知宇宙中的每个网络浏览器都可以执行 JavaScript 程序，但将 JavaScript 视为通用编程语言的一部分也意味着要在命令行中运行它。这意味着需要安装并使用一个能够评估 JavaScript 程序的命令行程序，如今最流行的选择已经显而易见：`Node.js`（通常读作“node jay-ess”，通常简称为 `Node`）。
+已知宇宙中的每个网络浏览器都可以执行 JavaScript 程序，但将 JavaScript 视为通用编程语言的一部分也意味着要在命令行中运行它。这意味着需要安装并使用一个能够评估 JavaSCRIPT 程序的命令行程序，如今最流行的选择已经显而易见：`Node.js`（通常读作“node jay-ess”，通常简称为 `Node`）。
 
 你的系统中可能已经安装了 `Node.js`。最简单的方法是使用 `which` 命令（在 *Learn Enough Command Line to Be Dangerous* 一书中 ([https://www.learnenough.com/command-line-tutorial/inspecting_files#sec-downloading_a_file]) 有描述）：
 
@@ -336,7 +321,7 @@ $ which node
 /usr/local/bin/node
 ```
 
-如果显示了 `node` 可执行文件的路径，那么你就可以使用了。
+如果显示了 `node` 可执文件的路径，那么你就可以使用了。
 
 如果系统中没有 Node，你应该在此时安装它。如果你使用的是安装了 Homebrew ([https://www.learnenough.com/dev-environment-tutorial#sec-homebrew]) 的 Macintosh，你可以运行：
 
@@ -402,7 +387,7 @@ $ touch hello.js
 console.log("hello, world!");
 ```
 
-此时，我们准备好使用与列表 1.4 中启动 Node 提示符相同的 `node` 命令来执行我们的程序。唯一的区别是这次我们包含了一个文件名的参数：
+此时，我们准备好使用与列表 1.4 中启动 Node 提示符相同的 `node` 命来执行我们的程序。唯一的区别是这次我们包含了一个文件名的参数：
 
 ```
 $ node hello.js
@@ -461,10 +446,6 @@ console.log("hello, world!");
 ```
 $ chmod +x hello
 ```
-
-
-
-
 
 此时，该文件应该是可执行的，我们可以通过在命令前加上 `./` 来执行它，这会告诉我们的系统在当前目录（点 = `.`）中查找可执行文件。（将 `hello` 脚本添加到 `PATH`（[`www.learnenough.com/text-editor-tutorial/advanced_text_editing#code-export_path`](https://www.learnenough.com/text-editor-tutorial/advanced_text_editing#code-export_path)）中以便从任何目录调用，这将留作为一个练习。）结果如下：
 
@@ -532,10 +513,8 @@ let name = "Alice";
 ### 2.2.1 练习
 
 1. 创建两个字符串并使用 `+` 运算符将它们拼接。
+
 2. 创建变量并使用插值将其值插入字符串中。
-
-
-
 
 ```javascript
 /* console.log("foobar");
@@ -631,21 +610,37 @@ var lastName  = "Hartl";
 
 
 ```html
+
 <!DOCTYPE html>
+
 <html
+
   <head>
+
     <title>Learn Enough JavaScript</title>
+
     <meta charset="utf-8">
+
     <script>
+
       alert("hello, world!");
+
       console.log("This page contains a friendly greeting.");
+
     </script>
+
   </head>
+
   <body>
+
     <h1>Hello, world!</h1>
+
     <p>This page includes an alert written in JavaScript.</p>
+
   </body>
+
 </html>
+
 ```
 
 结果是索引页（在显示警告框后）将消息打印到控制台，如图 2.5 所示。
@@ -657,9 +652,11 @@ var lastName  = "Hartl";
 最后，值得注意的是（如第 1.4.1 节简要提到的），`console.log` 的默认行为是插入空格：
 
 ```
+
 > console.log(firstName, lastName);
 
 Michael Hartl
+
 ```
 
 如果你实际上想要得到一个代表组合的字符串（如第 2.2 节所示），那么这对你帮助不大，但这意味着如果你只感兴趣输出，那么你可以省略拼接或插值。
@@ -672,9 +669,10 @@ Michael Hartl
 
 JavaScript 中的几乎所有内容（包括字符串）都是对象。这意味着我们可以使用第 1.3.1 节中引入的点符号语法来获取有关字符串的有用信息并对其进行有用操作。
 
-我们将从访问字符串属性（也称为特征）开始，它是附加到对象上的数据。特别是在控制台中，我们可以使用 `length` 属性来查找字符串中的字符数：
+我们将从访问字符丝属性（也称为特征）开始，它是附加到对象上的数据。特别是在控制台中，我们可以使用 `length` 属性来查找字符串中的字符数：
 
 ```
+
 $ node
 
 > "badger".length;   // 访问字符串的 "length" 属性
@@ -684,6 +682,7 @@ $ node
 > "".length          // 空字符串的长度为 0。
 
 0
+
 ```
 
 恰好，`length` 是字符串对象的唯一属性，你可以通过 MDN 的 String 条目 ([`developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)) 以及使用浏览器的“查找”功能搜索字符串“properties”来验证。
@@ -691,6 +690,7 @@ $ node
 `length` 属性在比较中特别有用，例如检查字符串长度以查看它与特定值的比较（注意 REPL 支持使用“上箭头”来检索之前的行，就像命令行终端一样）：
 
 ```
+
 > "badger".length > 3;
 
 true
@@ -710,14 +710,17 @@ true
 > "badger".length == 6;
 
 true
+
 ```
 
 最后一行使用了相等比较运算符 `==`，JavaScript 与许多其他语言共享该运算符，但有一个巨大的陷阱：
 
 ```
+
 > "1" == 1;     // 噢！
 
 true
+
 ```
 
 换句话说，JavaScript 认为字符串 `"1"` 等于数字 `1`，至少在使用 `==` 进行比较时是这样。
@@ -725,9 +728,11 @@ true
 作为编程语言，这种行为是不寻常的，对于从其他语言转向 JavaScript 的人来说，这可能是令人沮丧的错误来源。为了避免混乱，最好使用三等号：
 
 ```
+
 > "1" === 1;     // 这可能是你想要的。
 
 false
+
 ```
 
 在教程的其余部分，我们将始终使用 `===` 进行相等比较。
@@ -745,6 +750,7 @@ false
 **代码列表 2.6：** 使用 `if` 的控制流。
 
 ```
+
 > let password = "foo";
 
 > if (password.length < 6) {
@@ -754,6 +760,7 @@ false
   }
 
 'Password is too short.'
+
 ```
 
 注意在列表 2.6 中，`if` 之后的比较在括号内，而字符串在大括号 `{...}` 内部。
@@ -763,14 +770,21 @@ false
 
 
 ```
+
 > password = "foobar";
 
 > if (password.length < 6) {
+
     "Password is too short.";
+
   } else {
+
     "Password is long enough.";
+
   }
+
 'Password is long enough.'
+
 ```
 
 Listing 2.7 中的第一行通过为 `password` 赋新值来重新定义了它（不需要 `let`，因为在之前已经定义过了）。重新赋值后，`password` 变量的长度为 6，因此 `password.length < 6` 的结果为 `false`。结果是语句的 `if` 部分（称为 `if` 分支）不会被评估；相反，JavaScript 会评估 `else` 分支，结果是一个指示密码长度足够的消息。
@@ -784,6 +798,7 @@ Listing 2.7 中的第一行通过为 `password` 赋新值来重新定义了它�
 **Listing 2.8:** `&&`（“与”）的真值表。
 
 ```
+
 > true && true
 
 true
@@ -799,6 +814,7 @@ false
 > false && false
 
 false
+
 ```
 
 我们可以像 Listing 2.9 所示将将其应用于条件语句中。
@@ -806,16 +822,23 @@ false
 **Listing 2.9:** 在条件中使用 `&&` 运算符。
 
 ```
+
 > let x = "foo";
 
 > let y = "";
 
 > if (x.length === 0 && y.length === 0) {
+
     "两个字符串都是空的!";
+
   } else {
+
     "至少有一个字符串是非空的.";
+
   }
+
 '至少有一个字符串是非空的.'
+
 ```
 
 在 Listing 2.9 中，`y.length` 实际上是 `0`，但 `x.length` 不是，所以组合结果为 `false`（与 Listing 2.8 一致），因此 JavaScript 评估了 `else` 分支。
@@ -825,6 +848,7 @@ false
 **Listing 2.10:** `||`（“或”）的真值表。
 
 ```
+
 > true || true
 
 true
@@ -840,6 +864,7 @@ true
 > false || false
 
 false
+
 ```
 
 我们可以像 Listing 2.11 所示在条件语句中使用 `||`。
@@ -847,12 +872,19 @@ false
 **Listing 2.11:** 在条件中使用 `||` 运算符。
 
 ```
+
 > if (x.length === 0 || y.length === 0) {
+
     "至少有一个字符串是空的!";
+
   } else {
+
     "两个字符串都不是空的.";
+
   }
+
 '至少有一个字符串是空的!'
+
 ```
 
 注意来自 Listing 2.10，`||` 并不是排他的，这意味着即使当两个语句都为 `true` 时，结果也是 `true`。这与口语中的用法形成对比，在口语中，像“我想要薯条或烤土豆”这样的语句意味着你想要薯条或者烤土豆，但两者都不要（Figure 2.8）。^(7)
@@ -868,6 +900,7 @@ false
 **Listing 2.12:** `!` 的真值表。
 
 ```
+
 > !true
 
 false
@@ -875,6 +908,7 @@ false
 > !false
 
 true
+
 ```
 
 我们可以像 Listing 2.13 所示在条件语句中使用 `!`。
@@ -882,29 +916,45 @@ true
 **Listing 2.13:** 在条件中使用 `!` 运算符。
 
 ```
+
 > if (!(x.length === 0)) {
+
   "x 不是空的.";
+
   } else {
+
   "x 是空的.";
+
 }
+
 'x 不是空的.'
+
 ```
 
 Listing 2.13 中的代码是有效的，因为它简单地反转了 `x.length === 0`，产生了 `true`：
 
 ```
+
 > (!(x.length === 0)
+
 true
+
 ```
 
 在这种情况下，更常见的是使用 `!==`（“不等于”）：
 
 ```
+
 > if (x.length !== 0) {
+
     "x 不是空的.";
+
   } else {
+
   "x 是空的.";
+
   }
+
 ```
 
 ### 2.4.2 Bang Bang
@@ -912,6 +962,7 @@ true
 并不是所有的布尔值都是比较的结果，事实上，每个 JavaScript 对象在布尔上下文中都有一个 `true` 或 `false` 的值。我们可以使用 `!!` 强制 JavaScript 使用布尔上下文（`!!` 读作“bang bang”，这是因为 `!` 会在 `true` 和 `false` 之间转换，使用两个感叹号让我们回到了原始值）：
 
 ```
+
 > !!true
 
 true
@@ -919,21 +970,27 @@ true
 > !!false
 
 false
+
 ```
 
 使用这个技巧可以让我们看到一个像 `"foo"` 这样的字符串在布尔上下文中是 `true`：
 
 ```
+
 > !!"foo"
 
 true
+
 ```
 
 恰好，空字符串在布尔上下文中是 `false`：^(8)。这种正是随语言而异的细节。例如，在 Ruby 中，即使是空字符串在布尔上下文中也是 `true`。
 
 ```
+
 > !!""
+
 false
+
 ```
 
 因此，我们可以像 Listing 2.9 所示，通过省略长度（同时反转 `x` 和 `y`）来更简洁地重写 Listing 2.14：
@@ -941,12 +998,19 @@ false
 **Listing 2.14:** 使用条件强制布尔上下文。
 
 ```
+
 > if (!x && !y) {
+
     "两个字符串都是空的!";
+
   } else {
+
     "至少有一个字符串是非空的.";
+
   }
+
 'x 是非空的.'
+
 ```
 
 ### 2.4.3 练习
@@ -967,6 +1031,7 @@ false
 **Figure 2.9:** 原来这只蜜蜜獾曾是 HONEY BADGER，但他不在乎。
 
 ```
+
 $ node
 
 > "HONEY BADGER".toLowerCase();
@@ -988,9 +1053,6 @@ $ node
 ```
 toLowerCase()
 ```
-
-
-
 
 以圆合括号结尾：`toLowerCase` 是一个不接受任何参数的函数。请注意，官方 JavaScript 字符串方法也遵循相同的大小写约定（首字母小写的驼峰命名法），这正是我们在第 2.2 节中介绍过的。
 
@@ -1021,7 +1083,9 @@ toLowerCase()
 检查图 2.11 中的方法，我们在底部看到一些类似这样的代码：
 
 ```
+
 String.prototype.includes()
+
 ```
 
 后面跟着简短的描述。这里的 `String.prototype` 是什么意思？我们将在第 7 章中找到，但真正的答案是，*使用文档并不需要确切知道它的含义*。选择性的无知是典型的技术老练。
@@ -1053,6 +1117,7 @@ String.prototype.includes()
 **列表 2.15：** 包含还是不包含？这是一个问题。
 
 ```
+
 > let soliloquy = "To be, or not to be, that is the question:";
 
 > soliloquy.includes("To be");        // 它包含子字符串 "To be" 吗？
@@ -1078,6 +1143,7 @@ false
 > soliloquy.includes("o be,", 1);     // 前一个的提示
 
 true
+
 ```
 
 在列表 2.15 的行中，你可能无法立刻弄懂只有最后两行。你将在章节练习部分找到找到这个谜团的答案，以及指向其他常用字符串方法的提示。
@@ -1102,9 +1168,13 @@ true
 `for` 循环是最常用的循环结构，它允许你精确地控制循环的次数。它的语法如下：
 
 ```javascript
+
 for (初始化; 条件; 迭代) {
+
   // 循环体中的代码
+
 }
+
 ```
 
 这个结构包含三个部分：
@@ -1115,31 +1185,45 @@ for (初始化; 条件; 迭代) {
 让我们看一个简单的例子：
 
 ```javascript
+
 for (let i = 0; i < 5; i++) {
+
   console.log(i);
+
 }
+
 ```
 
 这段代码会输出 0, 1, 2, 3, 4。当 `i` 增加到 5 时，条件 `i < 5` 为假，循环结束。
 
-### `while` 循环
+### `while` 循循环
 
 `while` 循环在条件为 `true` 时会一直执行代码块。它在你不知道循环需要执行多少次，但知道何时停止条件时非常有用。
 
 ```javascript
+
 while (条件) {
+
   // 循环体中的代码
+
 }
+
 ```
 
 例如：
 
 ```javascript
+
 let count = 0;
+
 while (count < 5) {
+
   console.log(count);
+
   count++;
+
 }
+
 ```
 
 ### `do...while` 循环
@@ -1147,19 +1231,29 @@ while (count < 5) {
 `do...while` 循环与 `while` 循环的区别在于，它会至少执行一次代码块，然后再检查条件。
 
 ```javascript
+
 do {
+
   // 循环体中的代码
+
 } while (条件);
+
 ```
 
 例如：
 
 ```javascript
+
 let i = 0;
+
 do {
+
   console.log(i);
+
   i++;
+
 } while (i < 5);
+
 ```
 
 ### `break` 和 `continue`
@@ -1171,11 +1265,17 @@ do {
 例如：
 
 ```javascript
+
 for (let i = 0; i < 10; i++) {
+
   if (i === 5) break; // 当 i 等于 5 时停止循环
+
   if (i === 2) continue; // 跳过 i 为 2 的情况
+
   console.log(i);
+
 }
+
 ```
 
 这会输出 0, 1, 3, 4。
@@ -1199,19 +1299,23 @@ for (let i = 0; i < 10; i++) {
 让我们结合 Listing 2.16 和 Listing 2.17 来遍历哈姆特著名独白第一行中的所有字符。我们唯一的新需求是循环停止时的索引。在 Listing 2.17 中，我们硬编码了上限（`i < 5`），如果我们想的话，在这里也可以这样做。不过，`soliloquy` 变量太长了，不方便手动计数，所以让 JavaScript 使用 `length` 属性告诉我们（第 2.4 节）：
 
 ```
+
 > soliloquy.length
 
 42
+
 ```
 
 这个异常吉利的结果暗示编写这样的代码：
 
 ```
+
 for (let i = 0; i < 42; i++) {
 
   console.log(soliloquy.charAt(i));
 
 }
+
 ```
 
 这段代码可以运行，而且与 Listing 2.17 完美对应，但它也提出了一个问题：既然我们可以在循环本身中使用 `length` 属性，为什么还要硬编码长度呢？
@@ -1221,6 +1325,7 @@ for (let i = 0; i < 42; i++) {
 **Listing 2.18：** 结合 `charAt` 和 `for` 循环。
 
 ```
+
 > for (let i = 0; i < soliloquy.length; i++) {
 
   console.log(soliloquy.charAt(i));
@@ -1228,18 +1333,31 @@ for (let i = 0; i < 42; i++) {
 }
 
 T
+
 o
+
 b
+
 e
+
 .
+
 .
+
 .
+
 .
+
 t
+
 i
+
 o
+
 n
+
 n:
+
 ```
 
 如上所述，如果可能，最好避免使用 `for` 循环，但这种不优雅的循环风格仍然是一个极佳的开始点。正如我们在第 8 章中将看到的，一种强大的技术是为我们想要的功能编写一个*测试*，然后尽一切办法让它通过测试，最后*重构*代码以使用更优雅的方法。这个过程的第二步（称为*测试驱动开发*，或 TDD）通常涉及编写不优雅但易于理解的代码——这项任务我们擅长。
@@ -1258,14 +1376,17 @@ n:
 到为止我们在字符串上花费了大量时间，但从这里可以看出 `split` 返回的是一个数组：
 
 ```
+
 > "ant cat".split(" ");
 
 [ 'ant', 'cat' ]
+
 ```
 
 我们可以对任何其他内容进行分割，分割是最常用的操作之一：
 
 ```
+
 > "ant,bat,cat".split(",");
 
 [ 'ant', 'bat', 'cat' ]
@@ -1273,14 +1394,17 @@ n:
 > "ant cat".split(" ");
 
 [ 'ant', 'bat', 'cat' ]
+
 ```
 
 我们甚至可以对空字符串进行分割：
 
 ```
+
 > "badger".split("")
 
 [ 'b', 'a', 'd', 'g', 'e', 'r' ]
+
 ```
 
 最后，值得注意的是 `split` 支持*正则表达式*，这将在第 4.3 节](#ch04.xhtml_43)中介绍。
@@ -1295,7 +1419,9 @@ n:
 通过 `split` 方法连接字符串与数组后，我们首先将字符数组赋值给变量：
 
 ```
+
 > let a = "badger".split("");
+
 ```
 
 我们可以使用方括号符号访问 `a` 的特定元素，这种符号在许多语言中都很常见，如 Listing 3.1。
@@ -1303,6 +1429,7 @@ n:
 **Listing 3.1：** 使用方括号访问数组。
 
 ```
+
 > a[0];
 
 'b'
@@ -1314,11 +1441,13 @@ n:
 > a[2];
 
 'd'
+
 ```
 
 Listing 3.1 看起来眼眼吗？它是我们在 Listing 2.16 中通过 `charAt` 方法看到的字符与数值索引之间的相同关系。（上句中的符号表示 `charAt` 是一个*实例方法*，即字符串实例的方法。）事实上，方括号符号可以直接作用于字符串：
 
 ```
+
 > "badger"[0];
 
 'b'
@@ -1326,6 +1455,7 @@ Listing 3.1 看起来眼眼吗？它是我们在 Listing 2.16 中通过 `charAt`
 > "badger"[1];
 
 'a'
+
 ```
 
 我们从 Listing 3.1 中看到，与字符串一样，数组是*零偏移的*，这意味着“第一个”元素的索引为 `0`，“第二个”元素的索引为 `1`，以此此类推。这种约定可能会令人困惑，事实上，将零偏移数组的初始元素称为“零位”（zeroth）元素是为了提醒人们索引从 0 开始。在使用多种语言（某些语言数组索引从 1 开始）时，这种约定也可能令人困惑，如 xkcd 漫画“Donald Knuth”([`m.xkcd.com/163/`](https://m.xkcd.com/163/)) 所示。^(1)
@@ -1335,6 +1465,7 @@ Listing 3.1 看起来眼眼吗？它是我们在 Listing 2.16 中通过 `charAt`
 到为止我们处理的完全都是字符数组，但 JavaScript 数组可以包含各种类型的元素：
 
 ```
+
 > a = ["badger", 42, soliloquy.includes("To be")];
 
 [ 'badger', 42, true ]
@@ -1346,6 +1477,7 @@ true
 > a[3];
 
 undefined
+
 ```
 
 
@@ -1363,30 +1495,37 @@ undefined
 除了支持第 3.2 节描述的括号表示，JavaScript 还支持一种名为数组切片（array slicing）的技术，用于一次访问多个元素。为了在第 3.4 节学习排序做好准备，让我们重新定义数组 `a`，使其包含纯数字元素：
 
 ```
+
 > a = [42, 8, 17, 99];
 
 [ 42, 8, 17, 99 ]
+
 ```
 
 切片数组最简单的方法是仅提供一个参数，它将返回从该索引开始的所有元素。例如，对于一个包含四个元素的数组，`slice(1)` 返回第二个、第三和第四个元素（记住“第一个”或第 0 个元素的索引为 `0`）：
 
 ```
+
 > a.slice(1);
 
 [ 8, 17, 99 ]
+
 ```
 
 我们也可以从一个索引切片到另一个索引：
 
 ```
+
 > a.slice(1, 3);
 
 [ 8, 17 ]
+
 ```
 
 切片为我们提供了一种执行常用任务的简单方法，即访问数组的最后一个元素。数组像字符串一样，有一个 `length` 属性，所以我们可以这样找到最后一个元素：
 
 ```
+
 > a.length;
 
 4
@@ -1394,32 +1533,39 @@ undefined
 > a[a.length-1];
 
 99
+
 ```
 
 不过，如果变量名很长，这可能会变得有点凌乱，这在有很多变量的大型项目中经常发生：
 
 ```
+
 > let aMuchLongerArrayName = a;
 
 > aMuchLongerArrayName[aMuchLongerArrayName.length - 1];
 
 99
+
 ```
 
 这引出了我们提取最后一个元素的第二方法，即使用带负数的 `slice`，它从末尾开始计数：
 
 ```
+
 > aMuchLongerArrayName.slice(-1);
 
 [ 99 ]
+
 ```
 
 这是一个包含一个元素的数组，所以我们可以使用括号表示法选择该元素本身：
 
 ```
+
 > aMuchLongerArrayName.slice(-1)[0];
 
 99
+
 ```
 
 最后一个常见的情况是，我们想要访问最后一个元素的同时将其删除。我们将在第 3.4.2 节中介绍实现此操作。
@@ -1436,7 +1582,9 @@ undefined
 正如字符串一样，数组响应 `includes` 方法来测试包含性：
 
 ```
+
 > a = ["ant", "bat", "cat", 42];
+
 [ 'ant', 'bat', 'cat', 42 ]
 
 > a.includes(42);
@@ -1446,6 +1594,7 @@ true
 > a.includes("foo");
 
 false
+
 ```
 
 ### 3.4.1 排序与反转
@@ -1453,21 +1602,25 @@ false
 你还可以对数组进行排序，使用 `sort()` 在地进行排序：
 
 ```
+
 > a.sort();
 
 [ 42, "ant", "bat", "cat" ]
 
 > a;
+
 ```
 
 你可能会注意到这里奇怪的地方，`sort()` 对元素的排序并不是根据它们的数值，而是按照“字母”顺序（这在第 5 节中会讨论）。另一个方法是 `reverse()`，由于 `reverse()` 会就地反转数组：
 
 ```
+
 > a.reverse();
 
 [ "cat", "bat", "ant", 42 ]
 
 > a;
+
 ```
 
 ### 3.4.2 推入与弹出 (Push and Pop)
@@ -1475,6 +1628,7 @@ false
 一组实用的数组方法是 `push` 和 `pop`；`push` 允许向数组末尾添加元素，而 `pop` 则移除它（返回被移除的）：
 
 ```
+
 > a = [42, 8, 17, 99];
 
 > a.push(6);
@@ -1482,6 +1636,7 @@ false
 5
 
 > a;
+
 [ 42, 8, 17, 99, 6 ]
 
 > a.pop();
@@ -1489,8 +1644,11 @@ false
 6
 
 > a;
+
 [ 42, 8, 17, 99 ]
-```
+
+
+
 
 正如注释所示，`pop` 返回被移除的元素，而 `push`（有点反直觉地）返回新数组的长度。
 
@@ -1501,6 +1659,7 @@ false
 **列表 3.2:** 不同的连接方式。
 
 ```
+
 > a = ["ant", "bat", "cat", 42];
 
 [ 'ant', 'bat', 'cat', 42 ]
@@ -1520,6 +1679,7 @@ false
 > a.join(""); // 空字符串连接。
 
 'antbat42'
+
 ```
 
 注意 `42` 是一个整数，在 join 中会被自动转换为字符串。
@@ -1533,13 +1693,12 @@ false
 
 数组最常见的任务之一是遍历其元素并对每个元素执行操作。这听起来可能很熟悉，因为我们在第 2.6 节中用字符串解决过完全相同的问题，实际上解决方案也几乎相同。我们只需要将列表 2.18 中的 `for` 循环适配到数组即可。
 
-
-
 我们可以相当容易地一步到达该目标，但如果我们先使用中括号访问符号重写字符串 `for` 循环，这种联系会变得更加清晰（正如我们在第 3.2 节中看到的，这种方法也适用于字符串）。在列表 2.15 中定义的 `soliloquy` 字符串的结果显示在列表 3.3 中。
 
 **列表 3.3：** 结合字符串访问与 `for` 循环。
 
 ```
+
 > for (let i = 0; i < soliloquy.length; i++) {
 
   console.log(soliloquy[i]);
@@ -1547,17 +1706,29 @@ false
 }
 
 T
+
 o
+
 b
+
 e.
+
 .
+
 .
+
 .
+
 t
+
 i
+
 o
+
 n
+
 :
+
 ```
 
 列表 3.3 中的结果与列表 2.18 中所示的完全相同。
@@ -1567,6 +1738,7 @@ n
 **列表 3.4：** 结合数组访问与 `for` 循环。
 
 ```
+
 > for (let i = 0; i < a.length; i++) {
 
     console.log(a[i]);
@@ -1574,9 +1746,13 @@ n
   }
 
 ant
+
 bat
+
 cat
+
 42
+
 ```
 
 这里值得注意的一点是迭代索引变量 `i` 在两个 `for` 循环中都出现了。正如你可能记得的，如果你完成了第 2.2.2 节中的练习，重新定义已经用 `let` 声明的变量通常会导致错误。为什么我们在这个语境下可以重用 `i` ？
@@ -1598,6 +1774,7 @@ cat
 **列表 3.5：** 计算总和的骨架。
 
 ```
+
 > let total = "";
 
 > for (let i = 0; i < a.length; i++) {
@@ -1605,6 +1782,7 @@ cat
     // 将 total 设置为运行总和加上当前元素
 
   }
+
 ```
 
 ## 第 4 章。其他原生对象
@@ -1616,6 +1794,7 @@ cat
 和大多数编程语言一样，JavaScript 支持大量的数学运算：
 
 ```
+
 > 1 + 1;
 
 2
@@ -1633,9 +1812,10 @@ cat
 2 > 2/3;
 
 0.6666666666666666
+
 ```
 
-注意这里的最后一个例子并不是精确的；它是一个浮点数（也称为 float），计算机无法精确表示。但事实上 JavaScript 只有一种数值类型，即使是像 `1` 或 `2` 这样的数字在底层也被被视为浮点数。这对我们程序员来说非常方便，因为这意味着我们不需要在不同类型的数字之间进行区分。(1)
+注意这里的最后一个例子并不是精确的；它是一个浮点数（也称为 float），计算机无法精确表示。但事实上 JavaScript 只有一种数值类型，即使是像 `1` 或 `2` 这样的数字在底层也被视为浮点数。这对我们程序员来说非常方便，因为这意味着我们不需要在不同类型的数字之间进行区分。(1)
 
 与 JavaScript 相反，许多语言区分整数和浮点数，这导致了陷阱，例如 `1.0/2.0` 预期是 `0.5`，但 `1/2` 却是 `0`。
 
@@ -1646,6 +1826,7 @@ cat
 JavaScript 通过一个名为 `Math` 的全局对象支持更高级的操作，该对象具有用于数学常数、指数（幂）、根和三角函数的属性和方法。增加对双星号 `**` 幂的支持正在进行中，但到编写时尚未在全球范围内实现。
 
 ```
+
 > Math.PI
 
 3.141592653589793
@@ -1661,3028 +1842,413 @@ JavaScript 通过一个名为 `Math` 的全局对象支持更高级的操作，�
 > Math.cos(2)
 
 -0.4161468365445397
-```
 
-这里的最后一个例子并不是精确的；它是一个浮点数（也称为 float），计算机无法精确表示。但事实上 JavaScript 只有一种数值类型，即使是像 `1` 或 `2` 这样的数字在底层也被视为浮点数。这对我们程序员来说非常方便，因为这意味着我们不需要在不同类型的数字之间进行区分。(1)
-
-与 JavaScript 相反，许多语言区分整数和浮点数，这导致了陷阱，例如 `1.0/2.0` 预期是 `0.5`，但 `1/2` 却是 `0`。
-
-许多程序员（包括在内）发现，需要时启动 REPL 并将其作为简单的计算器非常方便。它并不高级，但快速且相对强大，而且定义变量的能力通常很有用。
-
-### 4.1.1 更高级的操作
-
-JavaScript 通过一个名为 `Math` 的全局对象支持更高级的操作，该对象具有用于数学常数、指数（幂）、根和三角函数的属性和方法。增加对双星号 `**` 幂的支持正在进行中，但到编写时尚未在全球范围内实现。
-
-```
-> Math.PI
-
-3.141592653589793
-
-> Math.pow(2, 3);
-
-8
-
-> Math.sqrt(3)
-
-1.732050807568877
-
-> Math.cos(2)
-
--0.4161468365445397
-```
-
-这里的最后一个例子并不是精确的；它是一个浮点数（也称为 float），计算机无法精确表示。但事实上 JavaScript 只有一种数值类型，即使是像 `1` 或 `2` 这样的数字在底层也被视为浮点数。这对我们程序员来说非常方便，因为这意味着我们不需要在不同类型的数字之间进行区分。(1)
-
-与 JavaScript 相反，许多语言区分整数和浮点数，这导致了陷阱，例如 `1.0/2.0` 预期是 `0.5`，但 `1/2` 却是 `0`。
-
-许多程序员（包括在内）发现，需要时启动 REPL 并将其作为简单的计算器非常方便。它并不高级，但快速且相对强大，而且定义变量的能力通常很有用。
-
-### 4.1.1 更高级的操作
-
-JavaScript 通过一个名为 `Math` 的全局对象支持更高级的操作，该对象具有用于数学常数、指数（幂）、根和三角函数的属性和方法。增加对双星号 `**` 幂的支持正在进行中，但到编写时尚未在全球范围内实现。
-
-```
-> Math.PI
-
-3.141592653589793
-
-> Math.pow(2, 3);
-
-8
-
-> Math.sqrt(3)
-
-1.732050807568877
-
-> Math.cos(2)
-
--0.4161468365445397
 ```
 （注：由于提供的待翻译文本存在大量重复段落，根据“不要重复输出原文”的原则，此处译文已按逻辑结构完成完整翻译，但由于输入文本本身存在内容重复，上述译文涵盖了所有不同的逻辑点。）
 
 [抱歉，由于提供的待翻译文本包含大量完全重复的段落，为了遵循“不要重复输出原文”的指令，我在翻译时合并了重复内容。以下是基于您提供内容的精简翻译：]
 
-[/content]
 
-*(注：由于您提供的原始文本中存在严重的段落重复（例如从 "We could get there..." 开始的内容重复出现了多次），以下是针对该文本中不重复部分的中文译文：)*
 
-[content]
-我们可以相当容易地一步到达该目标，但如果我们先使用中括号访问符号重写字符串 `for` 循环，这种联系会变得更加清晰（正如我们在第 3.2 节中看到的，这种方法也适用于字符串）。在列表 2.15 中定义的 `soliloquy` 字符串的结果显示在列表 3.3 中。
 
-**列表 3.3：** 结合字符串访问与 `for` 循环。
+# 与命令式版本相比，函数式版本的行数只有五分之一（`1` 行，而不是 `5` 行），它没有修改任何变量（这通常是命令式编程中容易出错的步骤），而且确实完全消除了中间数组 `urls`。这正是让 `Mike Vanier` 非常开心的事情（Figure 6.4）。^(5)
 
-```
-> for (let i = 0; i < soliloquy.length; i++) {
+5. 据我上次检查，`Mike` 最喜欢的语言是一门“纯函数式”语言。
 
-  console.log(soliloquy[i]);
+![images](img/06fig04.jpg)
 
-}
+**Figure 6.4:** 函数式编程。
 
-T
-o
-b
-e.
-.
-.
-.
-t
-i
-o
-n
-:
-```
+## 6.1 练习
 
-列表 3.3 中的结果与列表 2.18 中所示的完全相同。
-
-现在应该很清楚这种模式在数组上的应用了。我们只需要将 `soliloquy` 替换为 `a`，如列表 3.4 所示；代码的其他部分完全相同。
-
-**列表 3.4：** 结合数组访问与 `for` 循环。
-
-```
-> for (let i = 0; i < a.length; i++) {
-
-    console.log(a[i]);
-
-  }
-
-ant
-bat
-cat
-42
-```
-
-这里值得注意的一点是迭代索引变量 `i` 在两个 `for` 循环中都出现了。正如你可能记得的，如果你完成了第 2.2.2 节中的练习，重新定义已经用 `let` 声明的变量通常会导致错误。为什么我们在这个语境下可以重用 `i` ？
-
-答案是，在 `for` 循环的语境下，变量的作用范围被限制在循环内部，并在循环结束时消失。
-
-这很方便，但并不是遍历数组的最佳方法，而且 Mike Vanier 仍然不会高兴（图 3.1）。我们将在第 5.4 节中看到更简洁的数组遍历方法，并在第 6 章中看到完全避免迭代的方法。
-
-![images](img/03fig01.jpg)
-
-**图 3.1：** Mike Vanier 仍然对输入 `for` 循环感到恼恼。
-
-### 3.5.1 练习
-
-1. 显示标识符 `i` 在 `for` 循环执行之前之后都是未定义的。（你可能需要退出并重新进入 Node 控制。）
-
-2. 定义一个累加变量 `total` 并将其与循环结合，加上列表 3.4 中的所有元素。你可以使用列表 3.5 中的代码作为开始（只需将注释替换为相应的代码）。`total` 的值与 `a.join("")` 相比如何？
-
-**列表 3.5：** 计算总和的骨架。
-
-```
-> let total = "";
-
-> for (let i = 0; i < a.length; i++) {
-
-    // 将 total 设置为运行总和加上当前元素
-
-  }
-```
-
-## 第 4 章。其他原生对象
-
-现在我们已经查看了字符串和数组，我们将继续介绍其他重要的 JavaScript 对象：数学、日期、正则表达式和通用对象。
-
-## 4.1 Math 和 Number
-
-和大多数编程语言一样，JavaScript 支持大量的数学运算：
-
-```
-> 1 + 1;
-
-2
-
-> 2 - 3;
-
--1
-
-> 2 * 3;
-
-6
-
-> 10/5;
-
-2 > 2/3;
-
-0.6666666666666666
-```
-
-注意这里的最后一个例子并不是精确的；它是一个浮点数（也称为 float），计算机无法精确表示。但事实上 JavaScript 只有一种数值类型，即使是像 `1` 或 `2` 这样的数字在底层也被视为浮点数。这对我们程序员来说非常方便，因为这意味着我们永远不需要在不同类型的数字之间进行区分。(1)
-
-与 JavaScript 相反，许多语言区分整数和浮点数，这导致了陷阱，例如 `1.0/2.0` 预期是 `0.5`，但 `1/2` 却是 `0`。
-
-许多程序员（包括在内）发现，需要时启动 REPL 并将其作为简单的计算器非常方便。它并不高级，但快速且相对强大，而且定义变量的能力通常很有用。
-
-### 4.1.1 更高级的操作
-
-JavaScript 通过一个名为 `Math` 的全局对象支持更高级的操作，该对象具有用于数学常数、指数（幂）、根和三角函数的属性和方法。增加对双星号 `**` 幂的支持正在进行中，但到编写时尚未在全球范围内实现。
-
-```
-> Math.PI
-
-3.141592653589793
-
-> Math.pow(2, 3);
-
-8
-
-> Math.sqrt(3)
-
-1.732050807568877
-
-> Math.cos(2)
-
--0.4161468365445397
-```
-*(注：由于输入文本存在大量重复，以上译文仅保留非重复逻辑部分。)*
-
-
-
-
-另一个经常使用的内置对象是 `Date`，它代表时间中的某一个时刻。
-
-`Date` 对象让我们第一次有机会使用 `new` 函数的机会，这是一种所谓的*构造函数*，它是 JavaScript 中创建新对象的标准方式。到目前为止，我们一直依赖于引号和方括号等“字面量构造函数”，但我们也可以使用 `new` 来定义字符串和数组等：
-
-```
-> let s = new String("A man, a plan, a canal—Panama!");
-
-> s;
-
-[String: 'A man, a plan, a canal—Panama!']
-
-> s.split(",  ");
-
-[ 'A man', 'a plan', 'a canal—Panama!' ]
-```
-
-and
-
-```
-> let a = new Array();
-
-> a.push(3);
-
-1
-
-> a.push(4);
-
-2
-
-> a.push("hello, world!");
-
-3
-
-> a;
-
-[ 3, 4, 'hello, world!' ]
-
-> a.pop();
-
-'hello, world!'
-```
-
-与字符串和数组不同，日期没有字面量构造函数，因此在这种情况下我们*必须*使用 `new`：
-
-```
-> let now = new Date();
-
-> now;
-
-2018-03-01T05:01:47.136Z
-
-> let moonLanding = new Date("July 20, 1969 20:18");
-
-> now - moonLanding;
-
-1534038227136
-```
-
-这里的的结果是自首次登月之日期和时间以来的毫秒数（图 4.2）。^(4)（当然，你的结果会有不同，因为时间在流逝，你的 `new Date()` 取值也会不同。）
-
-4. 图片感谢 Castleski/Shutterstock。
-
-![images](img/04fig02.jpg)
-
-**图 4.2：** 巴兹·奥尔德林和尼尔·阿姆斯特朗竟然在没有 JavaScript 的情况下到达月球（并回来了！）。
-
-与其他 JavaScript 对象一样，`Date` 对象也响应多种方法：
-
-```
-> now.getYear();        // 出了一个奇怪的答案
-
-118
-
-> now.getFullYear();    // 这才是我们想要的。
-
-2018
-
-> now.getMonth();
-
-1
-
-> now.getDay();
-
-3
-```
-
-这里的的第一行显示，JavaScript 方法的结果有时会令人困惑，因此保持警惕并偶尔手动双检值是非常重要的。
-
-月份和日期等内容是以索引返回的，和 JavaScript 中的所有内容一样，它们是从零偏移的。例如，月份 `0` 是一月，月份 `1` 是二月，月份 `2` 是三月，以此此类推。
-
-尽管官方国际标准规定星期一是第一天，但 JavaScript 遵循使用周日的美国习惯。我们可以通过为星期创建一个字符串数组，然后使用 `getDay()` 作为数组的索引（使用括号符号）来获取名称（第 3.1 节）：
-
-```
-> let daysOfTheWeek = ["Sunday", "Monday", "Tuesday", "Wednesday",
-
-                       "Thursday", "Friday", "Saturday"];
-
-> daysOfTheWeek[now.getDay()];
-
-'Wednesday'
-```
-
-当然，你的结果会有不同，除非你恰好在周三读到这里。
-
-作为最后一个练习，让我们更新网页，添加一个包含星期的警报框。代码出现在列表 4.1 中，结果如图 4.3 所示。
-
-![images](img/04fig03.jpg)
-
-**图 4.3：** 仅为今天定制的问候语。
-
-**列表 4.1：** 添加根据星期定制的问候。
-
-`index.html`
-
-```html
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>学习足够的 JavaScript</title>
-    <meta charset="utf-8">
-    <script>
-      const daysOfTheWeek = ["Sunday", "Monday", "Tuesday", "Wednesday",
-                             "Thursday", "Friday", "Saturday"];
-      let now = new Date();
-      let dayName = daysOfTheWeek[now.getDay()];
-      alert(`Hello, world! Happy ${dayName}.`);
-    </script>
-  </head>
-  <body>
-  </body>
-</html>
-```
-
-注意列表 4.1 在定义 `daysOfTheWeek` 时使用了 `const` 而不是 `let`：
+在这里，我们对数组执行了匿名函数的映射（Section 5.4），生成了每个元素的平方。在箭头函数表示法（Section 5.1.2）下，看起来更加整洁：
 
 ```javascript
-const daysOfTheWeek = ["Sunday", "Monday", "Tuesday", "Wednesday",
-                       "Thursday", "Friday", "Saturday"];
-```
-
-这里的 `const`（你可能猜到了，它是“constant”的缩写）为我们提供了一种方法来指示变量的值不会改变。^(5) 有人甚至倾向于尽可能地使用 `const` 而不是 `let`。我偏向于使用 `const`。
-
-
-
-
-
-基础正则表达式由一组匹配特定模式的字符序列组成。我们可以使用 `RegExp` 对象在第 4.2 节中的 `new` 函数来创建一个新的正则表达式。例如，这里有一个匹配标准美国邮政编码（图 4.6）的正则表达式：`^(6)`，它由连续的五个数字组成：
-
-6。图片来自 4kclips/123RF。
-
-```
-> let zipCode = new RegExp("\\d{5}");
-```
-
-![images](img/04fig06.jpg)
-
-**图 4.6：**90210 是美国昂贵的邮政编码之一。
-
-在这里，`\d` 代表任何数字（0–9），第一个反斜杠是为了`转义`第二个反斜杠，从而在字符串中获得一个字面上的反斜杠。（我们将在第 4.3.2 节中看到如何使用字面量构造函数来避免这种不便的要求。）同时，`{5}` 表示匹配连续的五个数字。
-
-如果你经常使用正则表达式，最终你会记住很多这些规则，但你始终可以在快速参考表（图 4.5）中查找它们。
-
-现在让我们如何判断一个字符串是否匹配某个正则表达式。正则表达式带有一个 `exec` 方法，它可以在字符串上“执行”正则表达式：
-
-```
-> let result = zipCode.exec("Beverly Hills 90210");
-
-> result;
-
-[ '90210', index: 14, input: 'Beverly Hills 90210' ]
-```
-
-这里的结果包含了匹配的字符串、匹配开始的索引以及原始输入。
-
-我不喜欢上面结果的格式，主要是因为输出是一个奇怪且令人困惑的伪数组，它似乎有三个元素，但实际上长度为 `1`：
-
-```
-> result.length
-
-1
-```
-
-## 4.3.2 字符串方法
-
-进行正则匹配的更方便的方法是使用字符串方法。还有一种字面量正则表达式构造语法，对于大多数用途来说更方便。
-
-正如我们在第 4.2 节中所学习的，某些 JavaScript 对象需要使用 `new` 创建，而另一些对象具有可选的字面量构造函数，例如用于创建字符串的引号和用于创建数组的中括号。正则表达式也支持这种字面量构造语法，即斜杠内部的模式：
-
-```
-> zipCode = /\d{5}/;
-
-/\d{5}/
-```
-
-注意，与第 4.3.1 节中的具名 `RegExp` 构造函数不同，使用字面量构造函数时，我们不需要用额外的反斜杠来转义 `\d`。
-
-现在我们来构建一个包含多个邮政编码的较字符串（图 4.7）：`^(7)`
-
-7。图片来自 kitleong/123RF。
-
-![images](img/04fig07.jpg)
-
-**图 4.7：**91125 是加州理工学院（Caltech）校区的专用邮政编码。
-
-```
-> let s = "Beverly Hills 90210 was a '90s TV show set in Los Angeles.";
-
-> s += " 91125 is another ZIP code in the Los Angeles area."
-
-'Beverly Hills 90210 was a \'90s TV show set in Los Angeles. 91125 is another
-
-ZIP code in the Los Angeles area.'
-```
-
-如果你以前没见过它，你应该能够利用你的技术素养（框 1.1）来推断 `+=` 运算符在这里的作用（这可能涉及进行快速的 Google 搜索）。
-
-要找出字符串是否匹配正则表达式，我们可以使用字符串的 `match` 方法：
-
-```
-> s.match(zipCode);
-
-[ '90210',
-
-  index: 14,
-
-  input: 'Beverly Hills 90210 was a \'90s TV show set in Los Angeles. 91125 is
-
-   another ZIP code in the Los Angeles area.' ]
-```
-
-结果是我们在第 4.3.1 节中看到的同样奇怪的伪数组，但至少在第二次运行时会得到相同的结果：
-
-```
-> s.match(zipCode);
-
-[ '90210',
-
-  index: 14,
-
-  input: 'Beverly Hills 90210 was a \'90s TV show set in Los Angeles. 91125 is
-
-   another ZIP code in the Los Angeles area.' ]
-```
-
-`match` 方法在条件语句中特别有用；回想起第 2.4.2 节中的“双叹号”符号，我们可以对匹配进行求值：
-
-```
-> !!s.match(zipCode);
-
-true
-```
-
-因此，我们可以这样做：
-
-```javascript
-if (s.match(zipCode)) {
-  console.log("Looks like there's at least one ZIP code!");
-}
-```
-
-更好方法是使用 `global` 标志匹配所有出现项的常用技术：
-
-```javascript
-zipCode = /\d{5}/g;
-```
-
-结果输出为：
-
-```
-> s.match(zipCode);
-
-[ '90210', '91125' ]
-```
-
-我们在这里看到了字面量构造函数的值：对于短正则表达式，没有定义中间变量；相反，我们可以直接使用正则表达式。
-
-```
-**列表 4.2：带有换行符的文本。
-
-```javascript
-const sonnet = `Let me not to the marriage of true minds
-
-Admit impediments. Love is not love
-
-Which alters when alteration finds,
-
-Or bends with the remover to remove.
-
-O no, it is an ever-fixed mark
-
-That looks on tempests and is never shaken;
-
-It is the star to every wand'ring bark,
-
-Whose worth's unknown, although his height be taken.
-
-Love's not time's fool, though rosy lips and cheeks
-
-Within his bending sickle's compass come:
-
-Love alters not with his brief hours and weeks,
-
-But bears it out even to the edge of doom.
-
-   If this be error and upon me proved,
-
-   I never writ, nor no man ever loved.`;
-```
-
-### 4.3.3 练习
-
-1. 编写一个正则表达式来匹配扩展格式的邮政编码，由五个数字、一个连字符和四个数字扩展组成（例如 10118-0110）。使用 `match()` 确认其有效性。
-
-2. 编写一个仅按换行符分割的正则表达式。这种正则表达式用于将文本块分割成行。具体来说，通过将列表 4.2 中的诗歌粘贴到控制台并使用 `sonnet.split(/your regex/)` 来测试你的正则表达式。结果数组的长度是多少？
-
-
-
-
-
-`object` 一词在 JavaScript 的各种上下文中都会被使用，通常指的是数据集合（属性）和函数集合（方法）的抽象概念。正如第 2.4 节所出的，JavaScript 中的（几乎）一切内容都是对象，我们将在第 7 章中看到如何定义与 `String`、`Array` 和 `RegExp` 等内置对象平行的对象。在本节中，我们将关注 `plain objects`（普通对象），它们的定义比我们目前遇到的更通用的对象要简单。
-
-通常情况下，JavaScript 中的对象可能复杂得令人眼晕，但在简单的形式下，它们的工作方式类似于其他语言中的哈希表（也称为`关联数组`）。你可以将它们想象成普通数组，但使用字符串而不是整数作为索引。因此，每个元素都是一对值：一个字符串（`key`键）和一个任意类型的元素（`value`值）。这些元素也被称为 `key/value pairs`（键值对）。
-
-作为一个简单的示例，让我们创建一个对象来存储用户的姓和名，就像我们在 Web 应用程序中可能需要的那样：
-
-```
-> let user = {};                     // {} 是一个空 Object。
-
-{}
-
-> user["firstName"] = "Michael";     // Key "firstName", value "Michael"
-
-'Michael'
-
-> user["lastName"] = "Hartl";        // Key "lastName", value "Hartl"
-
-'Hartl'
-```
-
-如你所见，空的 `Object` 用大括号表示，我们可以使用与数组相同的方括号语法进行赋值。我们可以以相同的方式获取值：
-
-```
-> user["firstName"];      // 元素访问类似于数组
-
-'Michael'
-
-> user["lastName"];
-
-'Hartl'
-```
-
-我们对象中的键无非我们在第 2.4 节中首次遇到的 `properties`（属性），因此，它们也可以使用我们过的点符号（dot notation）来访问，例如 `string.length`：
-
-```
-> user.firstName;       // 使用点符号访问元素
-
-'Michael'
-
-> user.lastName;
-
-'Hartl'
-```
-
-决定使用哪种语法取决于上下文和风格。注意，在何种情况下，未定义的键/属性名简单地返回 `undefined`：
-
-```
-> user["dude"];
-
-undefined
-
-> user.dude;
-
-undefined
-
-> !!user.dude
-
-false
-```
-
-最后这一行提醒我们，`undefined` 在布尔上下文中为 `false`，如果你解决过第 3.2.1 节中相应的练习，你可能会回起来。
-
-最后，我们可以简单地显示或定义整个对象，从而展示所有的键值对（列表 4.3）。
-
-**列表 4.3：** 对象的字面量表示。
-
-```
-> user;
-
-{ firstName: 'Michael', lastName: 'Hartl' }
-
-> let otherUser = { firstName: 'Foo', lastName: 'Bar' };
-
-> otherUser["firstName"];
-
-'Foo'
-
-> otherUser["lastName"];
-
-'Bar'
-```
-
-## 4.4.1 练习
-
-1. 证明 `new Object()` 也可以创建一个新的空对象。如果你给对象构造函数传递一个与列表 4.3 输出相等的参数，会发生什么？
-
-## 4.5 应用：唯一单词
-
-让我们将普通对象应用于一个挑战性练习中，这包含了我们到目前为止编写的最长程序。我们的任务是从一段相当长的文本中提取所有唯一的单词，并统计每个单词出现的次数。
-
-由于命令序列相当冗长，我们的主要工具将是一个 JavaScript 文件（第 1.4 节）。由于我们打算让它成为一个通用的脚本，因此我们将使用 `node` 命令来执行它（这正如我们在第 1.5 节中提到的）。在每个阶段，我建议使用 REPL 交互式执行代码，如果你有任何疑问。
-
-让我们创建文件开始：
-
-```
-$ touch count.js
-```
-
-现在，向其中填充一个包含文本的 `const`，我们将从第 2.2 节中介绍的列表 4.2 中选择，并再次在列表 4.4 中显示。注意，在莎士比亚的原始发音中，像“love”和“remove”这样的单词是押韵的，正如“come”和“doom”一样。10 的图片由 psychoshadowmaker/123 提供。
-
-![04fig9.jpg](img/04fig9.jpg)
-
-**图 4.9：** 十四行诗 16。
-
-**列表 4.4：** 添加一些 `const`。
-
-*`count.js`*
-
-```
-const sonnet = `Let me not to the marriage of true minds
-
-Admit impediments. Love is not love
-
-Which alters when alteration finds,
-
-Or bends with remove.
-
-O no, it is an ever-fixed mark
-
-That looks on tempests and is never shaken;
-
-It is the star to every wand'ring bark,
-
-Whose worth's unknown, although his height be taken.
-
-Love's not time's fool, though rosy lips and cheeks
-
-Within his bending sickle's come:
-
-But bears it out even to the edge of doom.
-
-   If this be error and upon me proved,
-
-   I never writ, nor no man ever loved.`;```
-
-注意列表 4.4 使用了反引号（第 2.2 节），这允许我们换行（特别是某些版本的 Sublime Text 可能需要正确配置）。
-
-12 的图片来自 to。
-
-12 我不得不搜索学习如何。
-
-接下来，我们将初始化对象，将其命名为 `uniques`，因为它对每个唯一的单词有一个条目：
-
-```
-let uniques = {};
-```
-
-为了这个练习，我们将“单词”定义为一个或多个（字母或数字）的连续序列。
-
-现在是程序的核心。我们将遍历 `words`数组（第 3.5 节）并执行以下操作：
-
-1. 如果该单词在 `uniques` 对象中已，则将其计数加 `1`。
-
-2. 如果该单词尚未在 `uniques` 中条目，则将其初始化为 `1`。
-
-使用我们在第 4.3.2 节中简要遇到过的 `+=` 运算符，结果如下：
-
-
-
-
-
-```javascript
-for (let i = 0; i < words.length; i++) {
-  let word = words[i];
-  if (uniques[word]) {
-    uniques[word] += 1;
-  } else {
-    uniques[word] = 1;
-  }
-}
-```
-
-除此之外，我们在这里看到了方括号访问符号的威力，因为使用点符号语法（dot syntax）无法完成同样的任务。请注意，如果 `word` 还不是一个有效的键，我们依赖于 `uniques[word]` 将是 `undefined`（在布尔语境下为 `false`）。
-
-最后，我们将结果打印到终端：
-
-```javascript
-console.log(uniques)
-```
-
-完整的程序（带有添加的注释）如代码列表 4.6 所示。
-
-**代码列表 4.6：** 一个统计文本中单词数的程序。
-
-`count.js`
-
-```javascript
-const sonnet = `Let me not to the marriage of true minds
-
-Admit impediments. Love is not love
-
-Which alters when it alteration finds,
-
-Or bends with the remover to remove.
-
-O no, it is an ever-fixed mark
-
-That looks on tempests and is never shaken;
-
-It is the star to every wand'ring bark,
-
-Whose worth's unknown, although his height be taken.
-
-Love's not time's fool, though rosy lips and cheeks
-
-Within his bending sickle's compass come:
-
-Love alters not with his brief hours and weeks,
-
-But bears it out even to the edge of doom.
-
-   If this be error and upon me proved,
-
-   I never writ, nor no man ever loved.`;
-
-// 唯一单词
-let uniques = {};
-
-// 中所有的单词
-let words = sonnet.match(/\w+/g);
-
-// 遍历 `words` 并构建一个唯一单词的关联数组。
-for (let i = 0; i < words.length; i++) {
-  let word = words[i];
-  if (uniques[word]) {
-    uniques[word] += 1;
-  } else {
-    uniques[word] = 1;
-  }
-}
-
-console.log(uniques)
-```
-
-值得注意的是，即使是在像代码列表 4.6 这样较短的程序中，让所有的大括号、括号等匹配起来也很困难。良好的文本编辑器可以提供帮助；例如，当光标位于右大括号旁边时，Atom 会开启/关闭对的每个成员下方显示细微的线条（图 4.10）。
-
-![images](img/04fig10.jpg)
-
-**图 4.10：** 文本编辑器在匹配大括号等方面非常有帮助。
-
-在终端中运行 `count.js` 的结果看起来如下：
-
-```bash
-$ node count.js
-
-{ Let: 1,
-  me: 2,
-  not: 4,
-  to: 4,
-  the: 4,
-  marriage: 1,
-  .
-  .
-  .
-  upon: 1,
-  proved: 1,
-  I: 1,
-  writ: 1,
-  nor: 1,
-  man: 1,
-  loved: 1 }
-```
-
-### 4.5.1 Map
-
-虽然原生 JavaScript 对象可以作为哈希表/关联数组（如我们上面所做的），但它们确实有局限性，例如性能较慢以及对提取键和值的支持有限。JavaScript 提供了一个专门的 `Map` 对象来解决这些局限性，并带有 `set` 和 `get` 方法通过键设置和获取值：
-
-```javascript
-> let uniques = new Map();
-> uniques.set("loved", 0);
-Map { 'loved' => 0 }
-> let currentValue = uniques.get("loved");
-> uniques.set("loved", currentValue + 1);
-Map { 'loved' => 1 }
-```
-
-将上述技术结合起来重写 `count.js` 程序是一项练习（ 4.5.2 节）。
-
-### 4.5.2 练习题
-
-1. 扩展代码列表 4.6 中使用的正则表达式，以包含撇号，使其能够匹配，例如“wand’ring”。*提示*：将 regex101 中的第一个引用正则（图 4.11）与 `\w`、撇号以及加号运算符 `+` 结合。
-
-![images](img/04fig11.jpg)
-
-**图 4.11：** 练习提示。
-
-2. 使用 `Map`（ 6.1 节）代替原生 JavaScript 对象重写代码列表 4.6。
-
-## 第 5 章. 函数
-
-到在本教程目前为止，我们反复提到了 JavaScript 函数，在本章中，我们终于学习如何定义自己的函数。这种能力让我们作为程序员具有更大的灵活性，并让许多强大的技术成为可能，如 `forEach`（ 5.4 节）和*函数式编程*（第 6 章）。函数：成就已解锁（图 5.1）。
-
-![images](img/05fig1.jpg)
-
-**5.1：** 升级。
-
-## 5.1 函数定义
-
-在 2.2 节 中看到的，函数调用由一个名称和位于括号内的内容组成：
-
-```javascript
-> log("hello!");
-hello!
-```
-
-在 2.5 节 中看到的，函数由一个名称和括号内的内容组成：
-
-```javascript
-> function greet() {
-  log("hello world!");
-}
-```
-
-在 1 节 中讨论的，函数定义包含一个 `return` 来返回值：
-
-```javascript
-> function test() {
-  return "hello";
-}
-```
-
-理解 `return` 对于调用者来说是重要的。在 1.1 节 中，我们看到 `return` 的使用：
-
-```javascript
-> test()
-"hello"
-```
-
-在 2.2 节 中看到的，函数定义包含一个参数：
-
-```javascript
-> function greet(name) {
-  log(name);
-}
-```
-
-在 2.3 节 中看到的，函数定义包含多个参数：
-
-```javascript
-> function add(a, b) {
-  log(a + b);
-}
-```
-
-在 2.4 节 中看到的，函数定义可以包含默认参数：
-
-```javascript
-> function greet(name = "Guest") {
-  log(name);
-}
-```
-
-在 2.5 节 中看到的，函数定义可以使用剩余参数（rest parameters）：
-
-```javascript
-> function sum(...numbers) {
-  log(numbers);
-}
-```
-
-在 3.1 节 中看到的，函数定义可以返回一个值：
-
-```javascript
-> function multiply(a, b) {
-  return a * b;
-}
-```
-
-在 3.2 节 中看到的，函数定义可以返回另一个函数：
-
-```javascript
-> function getAdder(x) {
-  return function(y) {
-    return x + y;
-  };
-}
-```
-
-在 3.3 节 中看到的，函数可以使用闭包：
-
-```javascript
-> function counter() {
-  let count = 0;
-  return function() {
-    count++;
-    return count;
-  };
-}
-```
-
-在 3.4 节 中看到的，函数可以使用箭头函数：
-
-```javascript
-> const add = (a, b) => a + b;
-```
-
-在 3.5 节 中看到的，箭头函数可以有多个语句：
-
-```javascript
-> const multiply = (a, b) => {
-  log(a * b);
-  return a * b;
-};
-```
-
-在 3.6 节 中看到的，箭头函数可以是异步的：
-
-```javascript
-> const fetchData = async (url) => {
-  const response = await fetch(url);
-  return response.json();
-};
-```
-
-### 5.1.1 排序数组
-
-在 3.4 节 中，我们看到 JavaScript 默认按“字母顺序”排序数组：
-
-```javascript
-> let a = [8, 17, 42, 99];
-> a.sort();
-[17, 42, 8, 99]
-```
-
-为了按数值排序数组，我们可以定义一个函数（我们将命名为 `numberCompare`），它接收两个数字 `a` 和 `b`并在 `a > b` 时返回 `1`，在 `a < b` 时返回 `-1`，在它们相等时返回 `0`。这是[Array sort 文档要求的格式](https://developer.mozilla.org/en-US/docs/Web/Reference/Global_Objects/Array/sort)(https://developer.mozilla.org/en-US/docs/Web/Reference/Global_Objects/Array/sort)，正如我们将看到的，这会让 `sort` 知道我们想要按数值排序而不是按字母顺序。
-
-```javascript
-function numberCompare(a, b) {
-  if (a > b) {
-    return 1;
-  } else if (a < b) {
-    return -1;
-  } else {
-    return 0;
-  }
-}
-```
-
-我们可以通过以下方式直接测试它：
-
-```javascript
-> numberCompare(8, 17);
--1
-> numberCompare(17, 99);
--1
-> numberCompare(99, 42);
-1
-> numberCompare(99, 99);
-0
-```
-
-此时，我们可以通过给 `sort` 传递*函数参数*来排序数组，这会改变它的默认比较：
-
-```javascript
-> a.sort(numberCompare);
-[8, 17, 42, 99]
-```
-
-这就是我们寻找的结果。在底层，JavaScript 正在遍历数组并询问：“`numberCompare(a, b)` 的值是多少？”如果为负，则 `a` 在 `b` 之前；如果正，则 `b` 在 `a` 之前。（如果它们相等，则无所谓。）”结果是按照我们直觉预期的方式排序的数组。
-
-
-
-
-当我们在第 5.4 节中学习*匿名函数*（没有名字的函数）时，我们将看到更好的数组排序方法。特别是，第 5.4.1 节中的某项练习包含了最符合惯用法的 JavaScript 数组数值排序方法（代码清单 5.17）。
-
-### 5.1.2 胖箭头函数 (Fat Arrow)
-
-ES6 添加了另一种定义函数的方法，称为“胖箭头”（fat arrow），用等号加大于号表示：`=>`。我们可以通过结合 `=>` 和 `let` 关键字来定义备的字符串消息函数：
-
-```
-> let altStringMessage = (string) => {
-
-    if (string) {
-
-      return "The string is nonempty.";
-
-    } else {
-      return "It's an empty string!";
-
-    }
-
-  }
-
-> altStringMessage("honey badger");
-
-'The string is nonempty '
-```
-
-这里，`(string) => ...` 表示创建一个带参数（`string`）的函数，函数体由箭头右侧的代码定义。换句话，
-
-```
-function name(arg) {
-
-  // code
-
-}
-```
-
-等同于
-
-```
-let name = (arg) => {
-
-   // code
-
-}
-```
-
-一些开发者更倾向于对*所有*函数都使用这种替代表示法，这最终可能成为一种通用做法，但目前使用 `function` 仍然*非常*常见。它也能更整洁地映射到你实际调用函数的方式：
-
-```
-function foo(bar, baz) {
-
-  // do something with bar and baz
-
-}
-
-let x = 1;
-
-let y = 2;
-
-let result = foo(x, y);
-```
-
-因为这里的实际代码使用了 `foo(x, y)`，所以能在函数定义中看到类似的字符序列是很棒的。
-
-在本教程中，我们通常会坚持使用 `function` 来定义函数，但在某些语境下，我们将对匿名函数使用箭头符号，特别是在第 6 节中讨论的*函数式编程*技术背景下。
-
-与 `var` 和 `let`/`const` 一样，`function` 和 `=>` 都在使用。即使你为自己的代码统一了某种约定，你也必须熟悉这两种语法才能阅读他人编写的代码。
-
-### 5.1.3 练习题
-
-1. 使用 `function` 定义一个返回数字平方的 `square` 函数。同样使用胖箭头表示法定义一个类似的 `altSquare` 函数。
-
-## 5.2 文件中的函数
-
-虽然在 REPL 中定义函数对于演示目的很方便，但这样做有点繁琐，更好的做法是将它们放在文件中（正如我们在第 4.5 节的脚本中所做的那样）。我们将首先在第 1.2 节中创建的 `index.html` 文件中直接定义函数，然后将该函数移动到更方便的外部文件中。
-
-回想第 4.2 节，`Date` 对象有一个 `getDay()` 方法，该方法返回对应星期几的索引（星期为 `0`，星期一为 `1` 等等）。在代码清单 4.1 中，我们为星期几定义了一个 `const`，然后使用 `getDay()` 定义了 `dayName` 变量：
-
-```
-const daysOfTheWeek = ["Sunday", "Monday", "Tuesday", "Wednesday",
-
-                       "Thursday", "Friday", "Saturday"];
-
-let now = new Date();
-
-let dayName = daysOfTheWeek[now.getDay()];
-
-alert(`Hello, world! Happy ${dayName}.`);
-```
-
-将此定义和逻辑*封装*在一个 `dayName` 函数中将非常方便，这样我们就可以这样写 alert：
-
-```
-alert(`Hello, world! Happy ${dayName(now)}.`);
-```
-
-这消除了对 `dayName` 变量的使用，取而代之的是函数调用 `dayName(now)`。
-
-应用第 5.1 节中的函数定义语法，可以得到如下 `dayName` 函数：
-
-```
-function dayName(date) {
-
-  const daysOfTheWeek = ["Sunday", "Monday", "Tuesday", "Wednesday",
-
-                         "Thursday", "Friday", "Saturday"];
-
-  return daysOfTheWeek[date.getDay()];
-
-}
-```
-
-注意我们是如何从变量 `now` 切换到听起来更通用的 `date` 的，这表明我们的函数可以处理传递给它的任何日期。
-
-将此定义放入代码清单 4.1 的代码中，可以很好地将 `alert` 逻辑与生成星期几的代码隔离开，如代码清单 5.2 所示。结果如图 5.2 中。
-
-![images](img/05fig2.jpg)
-**图 5.2：** 分离逻辑。
-
-**代码清单 5.2：** 将逻辑提取到函数中。*`index.html`*
-
-```html
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Learn JavaScript</title>
-  <meta charset="utf-8">
-  <script>
-    const daysOfTheWeek = ["Sunday", "Monday", "Tuesday", "Wednesday",
-                           "Thursday", "Friday", "Saturday"];
-
-    function dayName(date) {
-      return daysOfTheWeek[date.getDay()];
-    }
-
-    let now = new Date();
-    alert(`Hello, world! Happy ${dayName(now)}`);
-  </script>
-</head>
-<body>
-</body>
-</html>
-```
-
-
-
-
-- **注释掉代码。** 有时，将你怀疑与问题无关的代码注释掉是一个好主意，这可以让你专注于那些无法运行的代码。
-- **使用 REPL。** 启动 REPL 并粘贴出现问题的代码通常是隔离问题的极佳方法。
-- **用 Google 搜索。** 搜索错误信息或其他与 bug 相关的搜索词（这通常会引导找到 Stack Overflow 上非常有用的帖子）是每个现代开发人员的必备技能（图 5.4）。
-
-![images](img/05fig04.jpg)
-
-**图 5.4：** 在有 Google 之前，人们是如何调试的？
-
-问题在于我们已经从 `index.html` 的 `script` 部分删除了 `dayName`，所以理所当然，我们的页面不知道它是什么。解决方案是使用第二个 `script>` 标签包含它，其中 `src`（源）属性指向包含定义的文件：
-
-```
-<script src="day.js"></script>
-
-<script>
-  let now = new Date();
-
-  alert(`Hello, world! Happy ${dayName(now)}!`);
-</script>
-```
-
-这段代码看起来可能很熟悉，因为它与包含图片的语法类似（[`www.learnenough.com/html-tutorial/filling_in_the_index_page#sec-images`](https://www.learnenough.com/html-tutorial/filling_in_the_index_page#sec-images)）（图 5.5）：^(3。图片素材由 halfmax.ru/Shutterstock 提供。
-
-![images](img/05fig05.jpg)
-
-**图 5.5：** 认出这个来自 [*Learn Enough HTML to Be Dangerous](https://www.learnenough.com/html)* 的可爱小（[`www.learnenough.com/html-tutorial#fig-kitten`](https://www.learnenough.com/html-tutorial#fig-kitten)）吗？
-
-```
-<img src="images/kitten.jpg" alt="An adorable kitten">
-```
-
-特别地，`src` 需要文件的完整路径，因此 `scripts/` 目录下的 JavaScript 源文件 `site.js` 将通过以下方式引用：
-
-```
-<script src="scripts/site.js"></script>
-```
-
-将带有 `src` 的新 `script` 标签放入 `index.html` 的结果显示在列表 5.5 中。重新加载页面后，我们的问候现在如预期所示（图 5.6）。
-
-![images](img/05fig06.jpg)
-
-**图 5.6：** 问候恢复了。
-
-**列表 5.5：** 使用外部文件中的函数。
-
-*index.html*
-
-```html
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Learn Enough JavaScript</title>
-    <meta charset="utf-8">
-    <script src="day.js"></script>
-    <script>
-      let now = new Date();
-      alert(`Hello, world! Happy ${dayName(now)}!`);
-    </script>
-  </head>
-  <body>
-  </body>
-</html>
-```
-
-需要注意的是，源脚本必须在脚本中定义的任何函数被使用*之前*。否则，结果与图 5.3 相同。确认这一点被留作了一项练习（章节 5.2.1）。
-
-### 5.2.1 练习
-
-1. 如果 `src` 行在列表 5.5 之后会发生什么？
-2. 将列表 5.4 中的插字符串替换为 `day.js` 中的一个 `greeting` 函数。填充列表 5.6 中的代码以使列表 5.7 在控制台中工作。
-
-**列表 5.6：** 定义 `greeting` 函数。
-
-*day.js*
-
-```javascript
-// 返回给定日期的星期。
-function dayName(date) {
-  const daysOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-  return daysOfWeek[date.getDay()];
-}
-
-// 返回给定日期的问候。
-function greeting(date) {
-  // 填充
-}
-```
-
-**列表 5.7：** 使用 `greeting` 函数。
-
-*index.html*
-
-```html
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Learn Enough JavaScript</title>
-    <meta charset="utf-8">
-    <script src="day.js"></script>
-    <script>
-      let now = new Date();
-      alert(greeting(now));
-    </script>
-  </head>
-  <body>
-  </body>
-</html>
-```
-
-## 5.3 方法链式调用
-
-在本节中，我们将开始开发 `palindrome`（回文，即正反读相同的单词、短语、数字或其他序列）。我们的目标是编写一个函数，如果字符串是回文则返回 `true`，否则返回 `false`。
-
-由于链式调用，我们可以在一行内实现：
-
-1. 将字符串拆分以创建字符数组。
-2. 反转数组。
-3. 将数组合并以创建反转后的字符串。
-
-```javascript
-function palindrome(string) {
-  return string.split("").reverse().join("") === string;
-}
-```
-
-（由于 `split("")`的工作方式，这种方法对于包含表情符号的文本实际上会失败。我们将在章节 5.3.1 修复这个小瑕疵。）
-
-让我们将 `reverse` 函数放入回文库中，命名为 `palindrome.js`：
-
-```bash
-$ touch palindrome.js
-```
-
-**列表 5.8：** 反转字符串的函数。
-
-*palindrome.js*
-
-```javascript
-// 反转字符串。
-function reverse(string) {
-  return string.split("").reverse().join("");
-}
-```
-
-注意列表 5.8 包含了一个*文档注释*（在列表 5.3 中简要介绍），说明函数的用途。这并不是强制要求的，但对于未来的编程人员（包括我们）来说，这是一种良好的习惯。
-
-为了检查列表 5.8 的效果，我们可以在 Node REPL 中使用“点加载”（dot load）加载外部文件（注意后面没有结尾的分号，为了避免错误是必要的）：
-
-```javascript
-> .load palindrome.js
-> reverse("Racecar");
-
-'racecaR'
-```
-
-
-
-
-我们现在可以编写回文函数的第一个版本了，它将把一个字符串与其自身的反转字符串进行比较：
-
-```
-> string;    // 只是提醒一下我们的字符串是什么
-
-'Racecar'
-
-> string === reverse(string);
-
-false
-```
-
-`palindrome` 的最终定义出现在 Listing 5.9 中。
-
-**Listing 5.9：** 我们初始的 `palindrome` 函数。
-
-`palindrome.js`
-
-```
-// 反转一个字符串。
-
-function reverse(string) {
-
-  return string.split("").reverse().join("");
-}
-
-// 如果是回文则返回 true，否则返回 false。
-
-function palindrome(string) {
-
-  return string === reverse(string);
-}
-```
-
-重新加载 `palindrome.js` 让我们可以直接检查 `palindrome` 函数的节点：
-
-```
-> .load palindrome.js
-
-> palindrome("To be or not to be");
-
-false
-
-> palindrome("Racecar");
-
-false
-
-> palindrome("level");
-
-true
-```
-
-它可以工作！
-
-有一个非常好的立即添加的微小改进，就是能够不区分大小写地检测回文。换句话说，我们希望对于“Racecar”这样的字符串返回 `true`，即使初始字母“R”是大写写的。我们可以通过在比较之前将字符串转换为小写来实现这一点，我们可以使用 Section 2.5 中的 `toLowerCase` 方法：
-
-```
-> let processedContent = string.toLowerCase();
-
-> processedContent;
-
-'racecar'
-
-> processedContent === reverse(processedContent);
-
-true
-```
-
-将此放入 `palindrome.js` 中得到 Listing 5.10。
-
-**Listing 5.10：** 不区分大小写的回文检测。
-
-`palindrome.js`
-
-```javascript
-// 反转一个字符串。
-
-function reverse(string) {
-
-  return string.split("").reverse().join("");
-}
-
-// 如果是回文则返回 true，否则返回 false。
-
-function palindrome(string) {
-
-  let processedContent = string.toLowerCase();
-
-  return processedContent === reverse(processedContent);
-}
-```
-
-使用 REPL，我们可以确认它是有效的：
-
-```
-> .load palindrome.js
-
-> palindrome("racecar");
-
-true
-
-> palindrome("Racecar");
-
-true
-
-> palindrome("Able was I ere I saw Elba");
-
-true
-```
-
-### 5.3.1 表情符号注意事项
-
-在 Listing 5.10 中开发的 `reverse` 方法有一个微小的注意事项，就是它无法适用于包含更复杂字符（如表情符号）的文本。例如，尝试反转一个包含“狐狸脸”和“狗脸”表情符号的句子会得到混乱的结果，如 Figure 5.7 所示。
-
-![images](img/05fig07.jpg)
-
-**Figure 5.7：** 失败的表情符号反转。
-
-这是因为每个表情符号实际上被表示为两个独立的字符，而像 Listing 5.10 那样通过空字符串进行分割会将每个表情符号拆分成半（哎！）。解决方案是使用不同的方法从字符串创建数组，使用一个名为 `Array.from()` 的自定义数组方法：
-
-```
-> Array.from('honey badger');
-
-[ 'h', 'o', 'n', 'e', 'y', '  ', 'b', 'a', 'd', 'g', 'e', 'r' ]
-```
-
-将 Listing 5.10 中的 `split` 替换为这种改进的方法将得到 Listing 5.11 中更新的 `reverse` 代码。
-
-**Listing 5.11：** 使用 `Array.from` 改进 `reverse`。
-
-```javascript
-// 反转一个字符串。
-
-function reverse(string) {
-
-  return Array.from(string).reverse().join("")
-}
-
-// 如果是回文则返回 true，否则返回 false。
-
-function palindrome(string) {
-
-  let processedContent = string.toLowerCase();
-
-  return processedContent === reverse(processedContent);
-}
-```
-
-确认这段代码是否有效将留作为练习题。
-
-### 5.3.2 练习题
-
-1. 使用方法链调用和 Listing 5.12 中的模板，编写函数 `emailParts` 以为形如 `username@example.com` 格式的标准电子邮件地址返回用户名和域名的数组。*注意*：确保你的函数对于 `USERNAME@EXAMPLE.COM` 返回相同的结果。
-2. 使用 Node REPL，确认在 Listing 5.11 中定义的 `reverse` 函数可以正确反转包含表情符号的字符串。（你可能会发现 Emojipedia ([`emojipedia.org/`](https://emojipedia.org/)) 中关于狐狸脸和狗脸表情符号的链接很有帮助。）你的结果应该看起来像 Figure 5.8。
-
-![images](img/05fig08.jpg)
-
-**Figure 5.8：** 成功的表情符号反转。
-
-**Listing 5.12：** 返回电子邮件部分
-
-```javascript
-function emailParts(email) {
-  // 在此处实现
-}
-```
-
-## 5.4 迭代
-
-到到为止，我们看到了几种迭代的示例：字符串（Section 2.6）、数组（Section 3）和对象（Section 4）。在本节中，我们将学习 `forEach`，它允许我们对数组的每个元素执行操作，而无需使用索引变量。将：
-
-```
-for (let i = 0; i < array.length; i++) {
-
-  console.log(array[i]);
-}
-```
-
-改为：
-
-```javascript
-array.forEach(function(element) {
-
-  console.log(element);
-});
-```
-
-
-
-结果是一个字符数组，我们可以使用 `forEach` 对其进行迭代。
-
-我们首先在 `foreach.js` 文件中包含列表 2.15 中的 `soliloquy` 变量，然后使用 `Array.from` 和 `forEach`。生成的代码（我们将将其放在列表 5.13 中的数组迭代之后）如列表 5.15 所示。
-
-**列表 5.15：** 使用 `forEach` 循环遍历字符串。
-
-*foreach.js*
-
-```javascript
-.
-
-.
-
-.
-
-let soliloquy = "To be, or not to be, that is the question:";
-
-Array.from(soliloquy).forEach(function(character) {
-
-  console.log(character);
-
-});
-```
-
-在命令行中执行列表 5.15 中的程序，得到的输出与我们在列表 2.18 中看到的相同（在此情况下，之前是来自列表 5.14 的输出），如列表 5.16 所示。
-
-**列表 5.16：** 字符串迭代的输出。
-
-```bash
-$ node foreach.js
-
-ant
-
-bat
-
-cat
-
-42
-
-T
-
-o
-
-b
-
-e
-
-.
-
-.
-
-.
-
-t
-
-i
-
-o
-
-n
-
-:
-```
-
-使用 `forEach` 方法，我们可以直接遍历数组中的元素，从而避免了输入 Mike Vanier 的*心头之患*——“for (i = 0; i < N; i++)”。结果是更简洁的代码和更快乐的程序员（图 5.9）。
-
-![images](img/05fig09.jpg)
-
-**图 5.9：** 使用 `forEach` 让 Mike Vanier 变得快乐了一些。
-
-### 5.4.1 练习
-
-1. 使用节 5.1.2 中的箭头符号重写列表 5.13 中的 `forEach` 循环。
-
-2. 我们在列表 5.1 中看到了如何定义一个数字比较函数，让我们能够对 JavaScript 数组进行数值排序。在在那里我们使用了 `1`、`-1` 和 `0` 的返回值，但事实证明 `sort` 只关心比较的*符号*，所以 `17` 等于 `1`，`-42` 等于 `-1` 等。对于数字 `a` 和 `b`，值 `a - b` 具有正确的符号，请证明列表 5.17 中使用匿名函数的代码能够正确地对数组排序。
-
-3. 写一个 `forEach` 循环来打印上一个练习的值。
-
-**列表 5.17：** 以匿名方式排序数组。
-
-```javascript
-> let a = [8, 17, 42, 99];
-
-> a.sort(function(a, b) { return a - b; });
-
-[ 8, 17, 42, 99 ]
-```
-
-# 第 6 章 函数式编程
-
-在学习了如何在几种不同的环境下定义函数并应用它们之后，现在我们将通过学习*函数式编程*的基础将我们的编程提升到一个水平。这是一种强调函数——你猜得没错——的编程风格。这是一个具有挑战性的章节，你可能需要进行一些练习才能完全理解它（框 6.1），但回报确实是非常丰厚的。
-
-**框 6.1：进行练习**
-
-在从武术、象棋到语言学习的各种语境下，实践者都会达到一个点，无论进行多少分析或反思都无法帮助他们进步——他们只需要进行更多的重复，或者说“练习”。
-
-通过尝试某事、似懂非懂地（但可能并不完全），然后*再次做一遍*，你能获得多少进步是令人惊讶的。在像这样的教程语境下，有时这意味着重读某个特别棘手的章节或小节。有些人（包括我）甚至会重读整本书。
-
-进行练习的一个重要方面是*悬起自我评判*——允许自己不要立刻就变好。（许多人——再次包括我——往往需要通过练习才能习惯于不需要立刻就变好。可以说这是练习的“元练习”。）
-
-给自己放个假，进行你的练习，看着你的技术熟练度与日增长。
-
-函数式编程淡化了变异和副作用等内容，而是关注应用函数来处理和转换函数的参数。这个定义相当抽象，而且主题本身非常庞大，因此我们将通过关注函数式编程中常用的经典三剑客方法：`map`、`filter` 和 `reduce`，让事情变得具体且易于管理。
-
-## 6.1 Map
-
-我们三剑客中的第一种是 `map`，它通过对数组中的每个元素应用相同的函数来工作。例如，为了将数字数组中的每个元素平方，我们可以对数组映射函数 `n * n`，如 REPL 所示：
-
-```javascript
-> [1, 2, 3, 4].map(function(n) { return n * n; });
-
-[ 1, 4, 9, 16 ]
-```
-
-三剑客中的第二种是 `filter`，它通过创建一个仅包含通过测试元素的数组来工作。例如，从数组中获取偶数，如 REPL 所示：
-
-```javascript
-> [1, 2, 3, 4].filter(function(n) { return n % 2 === 0; });
-
-[ 2, 4 ]
-```
-
-三剑客最后的最后是 `reduce`，它用于将数组还原为单个值。例如，对数组中的数字求和，如 REPL 所示：
-
-```javascript
-> [1, 2, 3, 4].reduce(function(acc, n) { return acc + n; }, 0);
-
-10
-```
-
-通过这三种方法——`map`、`filter` 和 `reduce`，我们可以高效地执行大量的数组操作。让我们看看如何使用它们来解决问题。
-
-### 6.1.1 生成 URL 字符串
-
-假设我们有一个名称数组，并想要创建一个 URL 字符串数组。为了这一点，我们需要：
-
-1. 将每个字符串转换为小写。
-2. 根据一个或多个空白字符将每个字符串分割。
-3. 用连字符将单词连接起来。
-
-使用我们目前学到的技术，可以使用 `forEach` 循环来实现，但使用 `map` 会优雅得多。
-
-以下是我们如何使用 `map` 创建 URL 友好字符串数组：
-
-```javascript
-let states = ["Kansas", "Nebraska", "North Dakota", "South Dakota"];
-
-let urls = states.map(function(state) {
-  return state.toLowerCase().split(/\s+/).join("-");
-});
-
-console.log(urls);
-```
-
-输出是 `['kansas', 'nebraska', 'north-dakota', 'south-dakota']`。
-
-注意这比命令式的 `forEach` 循环简洁得多。`map` 方法为我们创建新数组，所以我们不需要手动创建一个空数组并向其中元素元素。现在，让我们看看如何使用 `filter` 获取数组中的长名称。
-
-```javascript
-let states = ["Kansas", "Nebraska", "North Dakota", "South Dakota"];
-
-let longStates = states.filter(function(state) {
-  return state.length > 10;
-});
-
-console.log(longStates);
-```
-
-输出是 `['North Dakota', 'South Dakota']`。
-
-最后，让我们看看如何使用 `reduce` 来对数组中的所有数字求和。
-
-```javascript
-let numbers = [1, 2, 3, 4];
-
-let sum = numbers.reduce(function(acc, n) {
-  return acc + n;
-}, 0);
-
-console.log(sum);
-```
-
-输出是 `10`。
-
-
-
-在这里，我们对数组执行了匿名函数的映射（Section 5.4)），生成了每个元素的平方。在箭头函数表示法（Section 5.1.2）下，看起来更加整洁：
-
-```
 > [1, 2, 3, 4].map( (n) => { return n * n; });
-
 [ 1, 4, 9, 16 ]
 ```
 
 更棒的是，对于单参数这种非常常见的情况，JavaScript 允许我们省略括号、大括号，甚至 `return` 关键字，从而得到了极其紧凑的代码：
 
-```
+```javascript
 > [1, 2, 3, 4].map(n => n * n);
-
 [ 1, 4, 9, 16 ] 
 ```
 
 回到我们的主示例，我们可以将“小写后分割再连接”的转换视为单个操作，并使用 `map` 将该操作按顺序应用于数组中的每个元素。结果非常紧凑，可以轻松放入 REPL 中：
 
-```
+```javascript
 > let states = ["Kansas", "Nebraska", "North Dakota", "South Dakota"];
-
 > states.map(state => state.toLowerCase().split(/\s+/).join('-'));
-
 [ 'kansas', 'nebraska', 'north-dakota', 'south-dakota' ] 
 ```
 
-将其粘贴到 `function.js` 中，如 Listing 6.2 所示，我们可以看到它短了多少。
+将其粘贴到 `function.js` 中，如 Listing 6.2 所示，我们可以看到它短了多少。
 
-**Listing 6.2:** 使用 `map` 添加一种函数式技巧。
+**Listing 6.2:** 使用 `map` 添加一种函数式技巧。
 
 `functional.js`
 
-```
+```javascript
 let states = ["Kansas", "Nebraska", "North Dakota", "South Dakota"];
 
 // urls: 命令式版本
-
 function imperativeUrls(elements) {
-
   let urls = [];
-
   elements.forEach(function(element) {
-
     urls.push(element.toLowerCase().split(/\s+/).join("-"));
   });
-
   return urls;
 }
-
 console.log(imperativeUrls(states));
 
 // urls: 函数式版本
-
 function functionalUrls(elements) {
-
   return elements.map(element => element.toLowerCase().split(/\s+/).join('-'));
 }
-
 console.log(functionalUrls(states));
 ```
 
 我们可以在命令行确认结果是相同的：
 
-```
+```bash
 $ node functional.js
-
 [ 'kansas', 'nebraska', 'north-dakota', 'south-dakota' ]
-
 [ 'kansas', 'nebraska', 'north-dakota', 'south-dakota' ]
 ```
 
-我们的函数式程序确实将 `map` 应用到了这些州名上（Figure 6.3）。^(4)
+我们的函数式程序确实将 `map` 应用到了这些州名上（Figure 6.3）。^(4)
 
-4. 图片来自 Creative Jen Designs/Shutterstock。
+4. 图片来自 Creative Jen Designs/Shutterstock。
 
 ![images](img/06fig03.jpg)
 
-**Figure 6.3:** 在 `map` 上放置一些州名。
+**Figure 6.3:** 在 `map` 上放置一些州名。
 
 作为最后的优化，我们将负责将字符串转换为 URL 兼容格式的方法链提取到一个名为 `urlify` 的独立辅助函数：
 
-```
+```javascript
 // 返回字符串的 URL 友好版本。
-
 // 示例: "North Dakota" -> "north-dakota"
-
 function urlify(string) {
-
   return string.toLowerCase().split(/\s+/).join('-');
 }
 ```
 
-在 `functional.js` 中定义此函数并在命令式和函数式版本中使用它，得到了 Listing 6.3 所示的代码。
+在 `functional.js` 中定义此函数并在命令式和函数式版本中使用它，得到了 Listing 6.3 所示的代码。
 
-**Listing 6.3:** 定义一个辅助函数。
+**Listing 6.3:** 定义一个辅助函数。
 
 `functional.js`
 
-```
+```javascript
 let states = ["Kansas", "Nebraska", "North Dakota", "South Dakota"]; 
-
 // 返回字符串的 URL 友好版本。
-
-//   示例: "North Dakota" -> "north-dakota"
-
+// 示例: "North Dakota" -> "north-dakota"
 function urlify(string) {
-
   return string.toLowerCase().split(/\s+/).join("-");
 }
 
 // urls: 命令式版本
-
 function imperativeUrls(elements) {
-
   let urls = [];
-
   elements.forEach(function(element) { 
-
     urls.push(urlify(element));
   });
-
   return urls;
 }
-
 console.log(imperativeUrls(states));
 
 // urls: 函数式版本
-
 function functionalUrls(elements) {
-
   return elements.map(element => urlify(element));
 }
-
 console.log(functionalUrls(states));
 ```
 
 与之前一样，结果是相同的：
 
-```
+```bash
 $ node functional.js
-
 [ 'kansas', 'nebraska', 'north-dakota', 'south-dakota' ]
-
 [ 'kansas', 'nebraska', 'north-dakota', 'south-dakota' ]
 ```
 
-与命令式版本相比，函数式版本的行数只有五分之一（1 行，而不是 5 行），它没有修改任何变量（这通常是命令式编程中容易出错的步骤），而且确实完全消除了中间数组 `urls`。这正是让 Mike Vanier 非常开心的事情（Figure 6.4）。^(5)
+与命令式版本相比，函数式版本的行数只有五分之一（`1` 行，而不是 `5` 行），它没有修改任何变量（这通常是命令式编程中容易出错的步骤），而且确实完全消除了中间数组 `urls`。这正是让 `Mike Vanier` 非常开心的事情（Figure 6.4）。^(5)
 
-5. 据我上次检查，Mike 最喜欢的语言是一门“纯函数式”语言。
+5. 据我上次检查，`Mike` 最喜欢的语言是一门“纯函数式”语言。
 
 ![images](img/06fig04.jpg)
 
-**Figure 6.4:** 函数式编程。
-
-### 6.1 练习
-
-在这里，我们对数组执行了匿名函数的映射（Section 5.4)），生成了每个元素的平方。在箭头函数表示法（Section 5.1.2）下，看起来更加整洁：
-
-```
-> [1, 2, 3, 4].map( (n) => { return n * n; });
-
-[ 1, 4, 9, 16 ]
-```
-
-更棒的是，对于单参数这种非常常见的情况，JavaScript 允许我们省略括号、大括号，甚至 `return` 关键字，从而得到了极其紧凑的代码：
-
-```
-> [1, 2, 3, 4].map(n => n * n);
-
-[ 1, 4, 9, 16 ] 
-```
-
-回到我们的主示例，我们可以将“小写后分割再连接”的转换视为单个操作，并使用 `map` 将该操作按顺序应用于数组中的每个元素。结果非常紧凑，可以轻松放入 REPL 中：
-
-```
-> let states = ["Kansas", "Nebraska", "North Dakota", "South Dakota"];
-
-> states.map(state => state.toLowerCase().split(/\s+/).join('-'));
-
-[ 'kansas', 'nebraska', 'north-dakota', 'south-dakota' ] 
-```
-
-将其粘贴到 `function.js` 中，如 Listing 6.2 所示，我们可以看到它短了多少。
-
-**Listing 6.2:** 使用 `map` 添加一种函数式技巧。
-
-`functional.js`
-
-```
-let states = ["Kansas", "Nebraska", "North Dakota", "South Dakota"];
-
-// urls: 命令式版本
-
-function imperativeUrls(elements) {
-
-  let urls = [];
-
-  elements.forEach(function(element) {
-
-    urls.push(element.toLowerCase().split(/\s+/).join("-"));
-  });
-
-  return urls;
-}
-
-console.log(imperativeUrls(states));
-
-// urls: 函数式版本
-
-function functionalUrls(elements) {
-
-  return elements.map(element => element.toLowerCase().split(/\s+/).join('-'));
-}
-
-console.log(functionalUrls(states));
-```
-
-我们可以在命令行确认结果是相同的：
-
-```
-$ node functional.js
-
-[ 'kansas', 'nebraska', 'north-dakota', 'south-dakota' ]
-
-[ 'kansas', 'nebraska', 'north-dakota', 'south-dakota' ]
-```
-
-我们的函数式程序确实将 `map` 应用到了这些州名上（Figure 6.3）。^(4)
-
-4. 图片来自 Creative Jen Designs/Shutterstock。
-
-![images](img/06fig03.jpg)
-
-**Figure 6.3:** 在 `map` 上放置一些州名。
-
-作为最后的优化，我们将负责将字符串转换为 URL 兼容格式的方法链提取到一个名为 `urlify` 的独立辅助函数：
-
-```
-// 返回字符串的 URL 友好版本。
-
-// 示例: "North Dakota" -> "north-dakota"
-
-function urlify(string) {
-
-  return string.toLowerCase().split(/\s+/).join('-');
-}
-```
-
-在 `functional.js` 中定义此函数并在命令式和函数式版本中使用它，得到了 Listing 6.3 所示的代码。
-
-**Listing 6.3:** 定义一个辅助函数。
-
-`functional.js`
-
-```
-let states = ["Kansas", "Nebraska", "North Dakota", "South Dakota"]; 
-
-// 返回字符串的 URL 友好版本。
-
-//   示例: "North Dakota" -> "north-dakota"
-
-function urlify(string) {
-
-  return string.toLowerCase().split(/\s+/).join("-");
-}
-
-// urls: 命令式版本
-
-function imperativeUrls(elements) {
-
-  let urls = [];
-
-  elements.forEach(function(element) { 
-
-    urls.push(urlify(element));
-  });
-
-  return urls;
-}
-
-console.log(imperativeUrls(states));
-
-// urls: 函数式版本
-
-function functionalUrls(elements) {
-
-  return elements.map(element => urlify(element));
-}
-
-console.log(functionalUrls(states));
-```
-
-与之前一样，结果是相同的：
-
-```
-$ node functional.js
-
-[ 'kansas', 'nebraska', 'north-dakota', 'south-dakota' ]
-
-[ 'kansas', 'nebraska', 'north-dakota', 'south-dakota' ]
-```
-
-与命令式版本相比，函数式版本的行数只有五分之一（1 行，而不是 5 行），它没有修改任何变量（这通常是命令式编程中容易出错的步骤），而且确实完全消除了中间数组 `urls`。这正是让 Mike Vanier 非常开心的事情（Figure 6.4）。^(5)
-
-5. 据我上次检查，Mike 最喜欢的语言是一门“纯函数式”语言。
-
-![images](img/06fig04.jpg)
-
-**Figure 6.4:** 函数式编程。
+**Figure 6.4:** 函数式编程。
 
 ## 6.2 Filter
 
-我们可以在命令行确认结果是相同的：
+将结果再次放入我们的示例文件中，这强调了函数式版本要紧凑得多（列表 6.5）。
 
-```
-$ node functional.js
-
-[ 'kansas', 'nebraska', 'north-dakota', 'south-dakota' ]
-
-[ 'kansas', 'nebraska', 'north-dakota', 'south-dakota' ]
-```
-
-
-
-将结果再次放入我们的示例文件中，这强调了函数式版本要紧凑得多（列表 6.5）。
-
-**列表 6.5：** 使用函数式解决过滤问题。
+**列表 6.5：** 使用函数式解决过滤问题。
 
 `functional.js`
 
-```
+```javascript
 let states = ["Kansas", "Nebraska", "North Dakota", "South Dakota"];
 
-.
-
-.
-.
-
-// singles: 渐进式版本
-
+// singles: 命令式版本
 function imperativeSingles(elements) {
-
   let singles = [];
-
   elements.forEach(function(element) {
     if (element.split(/\s+/).length === 1) {
       singles.push(element);
     }
   });
-
   return singles;
 }
-
 console.log(imperativeSingles(states)); 
 
 // singles: 函数式版本
-
 function functionalSingles(elements) {
-
   return elements.filter(element => element.split(/\s+/).length === 1);
 }
-
 console.log(functionalSingles(states));
 ```
 
 按照要求，结果是相同的：
 
-```
+```bash
 $ node functional.js
-
 [ 'kansas', 'nebraska', 'north-dakota', 'south-dakota' ]
-
 [ 'kansas', 'nebraska', 'north-dakota', 'south-dakota' ]
-
 [ 'Kansas', 'Nebraska' ]
-
 [ 'Kansas', 'Nebraska' ] 
 ```
 
 ### 6.2.1 练习
 
-1. 编写两个 `filter` 函数来返回两个达科他州（Dakotas）：一个使用 `String#includes`（章节 2.5 节）测试字符串“Dakota”是否存在，另一个使用正则表达式测试分割后数组的长度是否为 `2`。
+1. 编写两个 `filter` 函数来返回两个达科他州（`Dakotas`）：一个使用 `String#includes`（章节 2.5）测试字符串 “Dakota” 是否存在，另一个使用正则表达式测试分割后数组的长度是否为 `2`。
 
 ## 6.3 Reduce
 
-我们终于达到了剑客中的第三成员，强大的 `reduce`（图 6.6）(7)——到目前为止它是三者中最复杂的。
+我们终于达到了剑客中的第三成员，强大的 `reduce`（图 6.6）^(7)——到目前为止它是三者中最复杂的。
 
-7. 图片致谢 colaimages/Alamy Stock Photo。
+7. 图片致谢 `colaimages/Alamy Stock Photo`。
 
 ![images](img/06fig06.jpg)
 
-**图 6.6：** 第三位剑客，格纳乌·庞培厄·马格努斯（大庞培）。
+**图 6.6：** 第三位剑客，格纳乌·庞培厄·马格努斯（大庞培）。
 
-由于 `reduce` 特别具有挑战性，我们将涵盖两个例子：首先，我们将对整数数组的 `sum` 操作创建迭代版本和函数式版本；其次，我们将创建一个普通的 JavaScript 对象（章节 4.4 节），将州名映射到每个名称的长度，结果如下：
+由于 `reduce` 特别具有挑战性，我们将涵盖两个例子：首先，对整数数组的 `sum` 操作创建迭代版本和函数式版本；其次，创建一个普通的 JavaScript 对象，将州名映射到每个名称的长度，结果如下：
 
-```
+```javascript
 { "Kansas": 6,
-
   "Nebraska": 8,
-
-  .
-  .
-  .
+  /* ... */
 }
 ```
 
-### 6.3.1 Reduce，示例 1
+### 6.3.1 Reduce，示例 1
 
-我们将从 `sum` 函数的渐进式解决方案开始，这涉及到（惯常）一个 `forEach` 循环和一个辅助变量（`total`），我们用它来累加结果。结果出现在列表 6.6 中。
-
-**列表 6.6：** 整数求的渐进式解决方案。
+**列表 6.6：** 整数求的渐进式解决方案。
 
 `functional.js`
 
-```
-.
-
-.
-.
-
+```javascript
 let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
 // sum: 渐进式解决方案
-
 function imperativeSum(elements) {
-
   let total = 0;
-
   elements.forEach(function(n) {
     total += n;
   });
-
   return total;
 }
-
 console.log(imperativeSum(numbers));
 ```
 
-我们再次看到了熟悉的模式：初始化一个辅助变量（`total`），然后遍历集合，通过将每个数字加到 `total` 中来累加结果。
+结果为 `55`：
 
-结果如要求所示为 55：
-
-```
+```bash
 $ node functional.js
-
-[ 'kansas', 'nebraska', 'north-dakota', 'south-dakota' ]
-
-[ 'kansas', 'nebraska', 'north-dakota', 'south-dakota' ]
-
-[ 'Kansas', 'Nebraska' ]
-
-[ 'Kansas', 'Nebraska' ]
-
 55
 ```
 
-现在来看 `reduce` 解决方案。它有点复杂，所以让我们在 REPL 中操作：
+`reduce` 解决方案：
 
-```
+```javascript
 > let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-
 > numbers.reduce((total, n) => {
     total += n;
     return total;
   }, 0);
-
 55
 ```
 
-你可以明白我说的“复杂”是什么意思。`reduce` 方法接受一个两个参数的函数，第一个参数是结果的*累加器*，第二个参数是数组元素本身。（匿名）函数的返回值会被传回给 `reduce`，作为数组中下一个元素的起始值。`reduce` 的第二个参数是累加器的初始值（在这种情况下为 `0`）。
+进一步简化：
 
-我们可以进行两项改进。首先，`+=` 运算符会返回它的值，因此我们实际上可以在赋值一个值的同时对其递增（或返回它）：
-
-```
-> let i = 0;
-
-> let j = i += 1;
-
-> i
-1
-
-> j
-1
-```
-
-这意味着我们可以直接返回 `total += n`：
-
-```
-> numbers.reduce((total, n) => { return total += n }, 0);
-
+```javascript
+> numbers.reduce((total, n) => total += n, 0);
 55
 ```
 
-其次，初始值默认是数组的第一个元素（此时 `reduce` 过程从第二个元素开始），因此在这种情况下它可以省略：
+省略初始值（默认使用数组第一个元素）：
 
-```
-> numbers.reduce((total, n) => { return total += n });
-
+```javascript
+> numbers.reduce((total, n) => total += n);
 55
 ```
 
-将结果放入我们的示例文件中，一如常，相比迭代版本有了显著改进（列表 6.7）。
-
-**列表 6.7：** 整数求的函数函数解决方案。
+**列表 6.7：** 整数求的函数式解决方案。
 
 `functional.js`
 
-```
-.
-
-.
-.
-
+```javascript
 let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
 // sum: 渐进式解决方案
-
 function imperativeSum(elements) {
-
   let total = 0;
-
   elements.forEach(function(n) {
     total += n;
   });
-
   return total;
 }
-
 console.log(imperativeSum(numbers));
-
 ```
 
- 函数式解决方案：
+函数式解决方案（在 REPL 中运行）：
 
-```
+```bash
 $ node functional.js
-
-[ 'kansas', 'nebraska', 'north-dakota', 'south-dakota' ]
-
-[ 'kansas', 'nebraska', 'north-dakota', 'south-dakota' ]
-
-[ 'Kansas', 'Nebraska' ]
-
-[ 'Kansas', 'Nebraska' ]
-
 55
 ```
 
-函数式求和的结果应该与迭代版本相同。
+使用 `reduce` 将状态数组映射为长度对象：
 
+**列表 6.9：** 状态/长度对应的函数式解决方案。
 
-
-
-
-```javascript
-(lengths, state) => {
-  lengths[state] = state.length;
-  return lengths;
-}
-```
-
-同时，`reduce` 方法的初始值不是 `0`，而是空对象 `{}`：
+`functional.js`
 
 ```javascript
-reduce((lengths, state) => {
-  lengths[state] = state.length;
-  return lengths;
-}, {});
-```
-
-注意，这些是代码片段，而不是 REPL 会话；`reduce`（以及通用的函数式解决方案）的一个缺点是它们难以进行增量式构建。稍后会详细介绍这一点。
-
-结合上述思想，我们可以使用 `reduce` 来遍历 `states` 数组，在 `lengths` 参数中累积所需的关联数组，然后返回它，如 列表 6.9 所示。
-
-**列表 6.9：** 一种状态/长度对应的函数式解决方案。
-
-*functional.js*
-
-```javascript
-.
-
-.
-.
-
 // lengths: 命令式解决方案
-
 function imperativeLengths(elements) {
   let lengths = {};
-
   elements.forEach(function(element) {
     lengths[element] = element.length;
   });
-
   return lengths;
 }
-
 console.log(imperativeLengths(states));
 
 // lengths: 函数式解决方案
-
 function functionalLengths(elements) {
   return elements.reduce((lengths, element) => {
-                          lengths[element] = element.length;
-                          return lengths;
-                      }, {});
+    lengths[element] = element.length;
+    return lengths;
+  }, {});
 }
-
 console.log(functionalLengths(states));
 ```
 
-尽管它在文本编辑器中跨了多行，但 列表 6.9 中的函数式解决方案返回的是单个 `reduce` 的结果，这与 `map`（列表 6.2）和 `filter`（列表 6.5）的函数式解决方案非常相似。
-
-按照要求，结果与命令式解决方案相同：
+结果相同：
 
 ```bash
-$ node functional.js 
-
-.
-.
-.
-
+$ node functional.js
 { Kansas: 6, Nebraska: 8, 'North Dakota': 12, 'South Dakota': 12 }
-
 { Kansas: 6, Nebraska: 8, 'North Dakota': 12, 'South Dakota': 12 }
 ```
-
-对比 列表 6.9 中的命令式和函数式解决方案，`reduce` 的优势并不像在 `map` 和 `filter` 情况下那样明显。事实上，可以很有理由地认为命令式解决方案更加清晰。
-
-使用哪种方法取决于个人喜好。我发现，用函数式编程用得越多，就越想用它，而且使用 `reduce` 在单行（逻辑上）内解决问题有一种奇特的快感。同样值得注意的是，`reduce` 是高级程序员之间的一种常用技术，此外，它在一种高效处理大型数据集的重要技术（称为 MapReduce）中起着关键作用。
 
 ### 6.3.3 函数式编程与 TDD
 
-在构建 列表 6.9 时，你可能注意到的一点是，函数式解决方案很难拆解为步骤。优势是我们通常可以将一个函数式解决方案压缩成单行，但代价是它可能难以增量地理解。事实上，我发现在我们这三剑客函数中，这是一种贯的模式：终点通常非常优简洁，但到达那里可能是一个挑战。
+在构建列表 6.9 时，函数式解决方案难以拆解为步骤。我们使用**测试驱动开发**（`TDD`）来确保行为正确，然后重构为更简洁的函数式代码。
 
-我应对这种挑战的最爱技术是*测试驱动开发*（TDD），它涉及编写一个*自动化测试*来在代码中捕获预期的行为。然后我们可以使用任何想要的方法让测试通过，包括一个丑陋但易于理解的迭代解决方案。此时，我们可以对代码进行*重构*——改变其形式但不改变其功能——以使用更简洁的函数式解决方案。只要测试仍然通过，我们就可以放心地代码仍然有效。
+## 7 对象与原型
 
-在第 8 章中，我们将恰好将这种技术应用到第 7 章中开发的父对象上。特别是，我们将使用 TDD 实现对在第 5.3 节中首次看到的 `palindrome` 函数的高级扩展，它可以检测出这类复杂的回文，例如“A man, a plan, a canal—Panama!”（图 6.7）。9
+### 7.1 定义对象
 
-9。图片由 Everett Collection Historical/Alamy Stock Photo 提供。
-
-![images](img/06fig07.jpg)
-
-**图 6.7：** 特德·罗斯福是一个是一个有计划的人。
-
-### 6.3.4 练习
-
-1. 使用 `reduce` 编写一个函数，返回数组中所有元素的乘积。*提示*：`+=` 是加法，`*=` 是乘法。
-2. 移除列表 6.9 中 `reduce` 解决方案中的换行符，将其变为单行长。它还能给出正确答案吗？
-
-# 第 7 章 对象与原型
-
-在第 4 节中，我们学习了普通对象，并将其作为键值对。在本章中，我们将创建更通用的对象，即具有属性（数据）和方法（函数）的对象。
-
-## 7.1 定义对象
-
-在 JavaScript 中定义对象的方法令人眼花缭乱，但我们将关注其中最经典的一种，即使用函数来创建（*实例化*）对象（第 5 章）。我们将首先定义一个可以表示“Madam, I’m Adam.”的 `Phrase` 对象。不过，起初我们只是定义 `Phrase` 构造函数。让我们在 REPL 中操作：
+在 JavaScript 中，使用函数来创建（实例化）对象是最经典的方式。下面定义一个可以表示 “Madam, I’m Adam.” 的 `Phrase` 对象：
 
 ```javascript
-function Phrase(content)
+function Phrase(content) {
+  this.content = content;
+}
 ```
 
-在 `Phrase` 函数内部，`this` 代表该对象，我们可以像在第 4 节中处理普通对象一样为它分配属性。定义 `Phrase` 的效果是我们可以使用 `new` 创建一个新的句子：
+在 REPL 中：
 
 ```javascript
 let greeting = new Phrase("Hello, world!");
+greeting.content; // 'Hello, world!'
 ```
 
-就像 `String` 对象的 `length` 属性一样（第 2 节),我们可以使用点符号访问句子的内容：
+### 7.1.1 练习
+
+为 `Phrase` 添加 `louder` 方法，使其返回内容的大写版本：
 
 ```javascript
-> greeting.content;
-
-'Hello, world!'
-```
-
-注意，对象的名称通常使用驼峰命名法（图 2.3），且首字母大写（与首字母小写的变量不同）。我们目前看到的所有原生对象——`String`、`Array`、`Date` 和 `RegExp` 都遵循这一一致的命名规范。
-
-我们将构建一个可以检测回文的 `Phrase` 对象，我们将在第 5.3 节中创建的 `palindrome.js` 文件中工作。为了参考，文件内容如下，并包含了我们简单的 `Phrase` 对象定义（列表 7.1）。注意列表 7.1 使用了在列表 5.11 中开发的改进版 `reverse`。
-
-```javascript
-// 反转字符串。
-
-function reverse(string) {
-  return Array.from(string).reverse().join("");
-} 
-
-// 如果是回文则返回 true，否则返回 false。
-
-function palindrome(string) {
-  let processedContent = string.toLowerCase();
-  return processedContent === reverse(processedContent);
-} 
-
-// 定义 Phrase 对象。
-
 function Phrase(content) {
   this.content = content;
-}
-```
-
-
-
-
-
-```
-> .load palindrome.js
-
-> phrase = new Phrase("Racecar");
-
-> phrase.content;
-
-'Racecar'
-```
-
-下一步，我们将 `palindrome` 函数移动到 `Phrase` 对象中，并将其作为一个方法添加。实现这一目标的方法是将一个 `function` 直接赋值给 `palindrome` 属性——从本质上说，方法就是一个绑定到函数的属性。
-
-由于所需的 `content` 字符串在方法内部可以通过 `this.content` 访问，因此 `palindrome` 函数不再需要将其作为参数传入。这允许我们将 `palindrome` 从一个带有一个变量的函数转变为一个零参数函数。换句话说，我们将把这段代码：
-
-```
-function palindrome(string) {
-
-  let processedContent = string.toLowerCase();
-
-   return processedContent === reverse(processedContent);
-
-}
-```
-
-修改为：
-
-```
-this.palindrome = function palindrome() {
-
-  let processedContent = this.content.toLowerCase();
-
-   return processedContent === reverse(processedContent);
-
-}
-```
-
-将 `palindrome` 方法放在 `Phrase` 方法中合适的位置，即可得到列表 7.2 所示的代码。请注意，即使在对象定义内部我们可以使用 `reverse` 方法；我们将在第 7.3 节](#ch07.xhtml_ch7lev3)中实现一种更优雅的字符串反转方法。
-
-**列表 7.2：** 将 `palindrome` 移动到方法。
-
-`palindrome.js`
-
-```
-// 反转字符串。
-
-function reverse(string) {
-
-  return Array.from(string).reverse().join("");
-
-}
-
-// 定义 Phrase 对象。
-
-function Phrase(content) {
-
-  this.content = content; 
-
-  // 如果短语是回文，则返回 true，否则返回 false。
-
-  this.palindrome = function palindrome() {
-
-    let processedContent = this.content.toLowerCase();
-
-    return processedContent === reverse(processedContent);
-
-  }
-
-}
-```
-
-在 REPL 中加载该文件显示其运行正常（图 7.1）：^(1)
-
-1. 图片感谢 msyaraafiq/Shutterstock.
-
-![images](img/07fig01.jpg)
-
-**图 7.1：** 一个一级方程式赛的回文。
-
-```
-> .load palindrome.js
-
-> phrase = new Phrase("Racecar");
-
-> phrase.palindrome();
-
-true
-```
-
-列表 7.2 中的回文检测器相当原始，但我们现在为在第 8 章](#ch08.xhtml_ch08)中构建（并测试）更复杂的回文检测器奠定了良好的基础。
-
-### 7.1.1 练习题
-
-1.  通过填充列表 7.3 中的代码，为 `Phrase` 对象添加一个 `louder` 方法，该方法返回内容的 LOUDER（全大写）版本。在 REPL 中确认结果显示得如列表 7.4 所示。
-
-**列表 7.3：** 让内容变得大写。
-
-`palindrome.js`
-
-```
-// 定义 Phrase 对象。
-
-function Phrase(content) {
-
-  this.content = content;
-
-  // 让短语大写。
-
   this.louder = function() {
-
-    // 在此处填写
-
+    return this.content.toUpperCase();
   };
-
 }
 ```
 
-**列表 7.4：**在 REPL 中使用 `louder`。
+### 7.2 原型 (Prototypes)
 
-```
-> .load palindrome.js
+通过原型可以让多个对象共享方法，避免重复定义。例如，让 `TranslatedPhrase` 继承 `Phrase`：
 
-> let p = new Phrase("adrian!");
-
-> p.louder();
-```
-
-## 7.2 原型 (Prototypes)
-
-如果你在寻找关于原型的细节，请查看[JavaScript 原型](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Inheritance_and_prototypes)。如果你查看 JavaScript 中的类型，你会发现它们几乎都是[对象](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global/Object)。
-
-
-
-
-DRY 原则的核心思想是：良好的代码应该尽可能地减少不必要的重复实例。这纯粹是因为，如果你在许多地方都写了相同的代码，那么每当你想要进行更改时，都必须更新应用程序中重复该代码的所有不同位置。例如，如果你想更改 `palindrome` 方法的定义，你就必须在*每一个*定义它的对象中进行相同的更改。如果只有两个对象，这可能很难看但尚可接受，但对于更大的项目来说，这将是一场噩梦。
-
-程序员是一类特殊的“懒惰”者——特别是在处理那些可以通过少量额外编程来更高效完成的重复性工作时。为了让“偷懒”变得更容易，富有进取精神的程序员会花费大量时间创建系统，让其他开发者无需重复自己的工作。我们都受益于这些开发者，他们曾在某个时刻决定在*现在*加倍努力，以便在将来可以少花点力气。
-
-`Inheritance`（继承）就是这些理念之一。它允许对象*继承*其他对象的属性，这样它们共有的任何方法只需要定义一次。结果是，我们可以定义*一次* `palindrome` 方法，然后让其他对象从父方法继承 `palindrome`。在 JavaScript 中，这种机制被称为*原型系统*（prototype system）。
-
-相反，我们将使用面向对象编程中一个重要的概念——`inheritance`，并安排 `TranslatedPhrase` 直接从 `Phrase` 继承所需的 `palindrome` 方法。在 JavaScript 中实现这一点是将第二种对象类型*原型*（prototype）设置为第一个类型的实例；即，我们需要将 `TranslatedPhrase.prototype` 设置为 `new Phrase()`，如 Listing 7.8 所示。
-
-**Listing 7.8：** 定义一个具有 `Phrase` 原型的 `TranslatedPhrase` 对象。
-
-*`palindrome.js`*
-
-```
- .
-
-.
-
-.
-
-// Defines a TranslatedPhrase object.
-
+```javascript
 function TranslatedPhrase(content, translation) {
-
   this.content = content;
-
   this.translation = translation;
-
 }
-
-TranslatedPhrase.prototype = new Phrase(); 
-```
-
-由于 `TranslatedPhrase` 的 `prototype` 属性已被设置为一个 `Phrase` 对象，`TranslatedPhrase` 的实例自动拥有了 `Phrase` 实例的所有方法，包括 `palindrome`。让我们创建一个名为 `frase` 的变量（读音为“FRAH-seh”，西班牙语中的“phrase”）来查看它是如何工作的（Listing 7.9）。
-
-**Listing 7.9：** 定义 `TranslatedPhrase`。
-
-```
-> .load palindrome.js
-
-> let frase = new TranslatedPhrase("recognize", "reconocer");
-
-> frase.palindrome();
-
-false
-```
-
-我们看到 `frase` 确实如所说拥有一个 `palindrome()` 方法，并且它返回 `false`，因为“recognize”不是回文。
-
-但如果我们想使用*翻译*（translation）而不是内容来判断翻译后的短语是否为回文呢？由于我们已经将 `processedContent` 提取到了独立的方法中（Listing 7.6），我们可以通过在 `TranslatedPhrase` 中*重写*（overriding）`processedContent` 方法来实现这一点，如 Listing 7.10 所示。
-
-**Listing 7.10：** 重写方法。
-
-*`palindrome.js`*
-
-```
-// Reverses a string.
-
-function reverse(string) {
-
-  return Array.from(string).reverse().join("");
-
-}
-
-// Defines a Phrase object.
-
-function Phrase(content) {
-
-  this.content = content; 
-
-  // Returns content processed for palindrome testing.
-
-  this.processedContent = function processedContent() {
-
-    return this.content.toLowerCase();
-
-  }
-
-  // Returns true if the phrase is a palindrome, false otherwise.
-
-  this.palindrome = function palindrome() {
-
-    return this.processedContent() === reverse(this.processedContent());
-
-  }
-
-}
-
-// Defines a TranslatedPhrase object.
-
-function TranslatedPhrase(content, translation) {
-
-  this.content = content;
-
-  this.translation = translation;
-
-    // Returns translation processed for palindrome testing.
-
-  this.processedContent = function processedContent() {
-
-    return this.translation.toLowerCase();
-
-  }
-
-}
-
 TranslatedPhrase.prototype = new Phrase();
 ```
 
-Listing 7.10 中的关键点在于，我们在 `TranslatedPhrase` 版本的 `processedContent` 中使用了 `this.translation` 而不是 `this.content`，因此 JavaScript 知道使用后者而不是 `Phrase` 中的那个。因为翻译“reconocer”*确实是*一个回文，我们得到了一个与 Listing 7.9 中不同的结果，如 Listing 7.11 所示。（注意，我们需要重新赋值 `frase` 以使用更新后的 `TranslatedPhrase` 版本。）
+重写 `processedContent` 以使用翻译：
 
-**Listing 7.11：** 为 `TranslatedPhrase` 定义 `processedContent` 之后。
-
-```
-> .load palindrome.js
-
-> frase = new TranslatedPhrase("recognize", "reconocer");
-
-> frase.palindrome();
-
-true
-```
-
-这种重写的做法赋予了我们极大的灵活性。我们可以追踪两种情况下 `frase.palindrome()` 的执行过程：
-
-情况 1：Listing 7.8 和 Listing 7.9
-1. `frase.palindrome()` 调用 `frase` 实例上的 `palindrome()`，该实例是一个 `TranslatedPhrase`。由于 `TranslatedPhrase` 对象中没有 `palindrome()` 方法，JavaScript 使用了 `Phrase` 中的那个。
-2. `Phrase` 中的 `palindrome()` 方法调用 `processedContent()` 方法。由于 `TranslatedPhrase` 对象中没有 `processedContent()` 方法，JavaScript 使用了 `Phrase` 中的那个。
-3. 结果是比较 `this.content` 的处理后版本与其自身的反转字符串。由于“recognize”不是回文，结果为 `false`。
-
-情况 2：Listing 7.10 和 Listing 7.11
-1. `frase.palindrome()` 调用 `frase` 实例上的 `palindrome()`，该实例是一个 `TranslatedPhrase`。与情况 1 一样，`TranslatedPhrase` 对象中没有 `palindrome()` 方法，所以 JavaScript 使用了 `Phrase` 中的那个。
-2. `Phrase` 中的 `palindrome()` 方法调用 `processedContent()` 方法。由于 `TranslatedPhrase` 对象中*存在* `processedContent()` 方法，JavaScript 使用了 `TranslatedPhrase` 中的那个而不是 `Phrase` 中的。
-3. 结果是比较 `this.translation` 的处理后版本与其自身的反转字符串。由于“reconocer”*是*一个回文，结果为 `true`。
-
-### 7.2.1 练习
-
-1. 在填充 Listing 7.10 中的代码后，`Phrase` 和 `TranslatedPhrase` 都显式调用了 `toLowerCase` 方法。通过填充 Listing 7.12 来定义一个返回内容小写版本的 `processor` 方法，从而消除这种重复。
-
-
-
-
-
-```
-// 反转一个字符串。
-
-function reverse(string) {
-  return Array.from(string).reverse().join("");
-}
-
-function Phrase(content) {
-  this.content = content;
-  this.processor = function(string) {
-    // 填充
-  }
-  this.processedContent = function processedContent() {
-    return this.processor(this.content);
-  }
-  // 如果短语是回文，则返回 true，否则返回 false。
-  this.palindrome = function palindrome() {
-    return this.processedContent() === reverse(this.processedContent());
-  }
-}
-
+```javascript
 function TranslatedPhrase(content, translation) {
   this.content = content;
-  this.translation = translation; 
-
-  // 返回用于回文测试的翻译。
-  this.processedContent = function processedContent() {
-    return this.processor(this.translation);
-  }
+  this.translation = translation;
+  this.processedContent = function() {
+    return this.translation.toLowerCase();
+  };
 }
+TranslatedPhrase.prototype = new Phrase();
 ```
 
-## 7.3 修改原生对象
+### 7.3 修改原生对象
 
-在理解 JavaScript 原型链的最后一步，我们将学习如何修改原生 JavaScript 对象。具体来说，我们将把列表 5.11 中的 `reverse` 函数作为方法添加到 `String` 对象上。
+向 `String` 原型添加 `reverse` 方法：
 
-需要提醒读者的是，我们即将要做的事情是有争议的。正如 Mozilla 开发者网络（MDN）所说（[`developer.mozilla.org/en-US/docs/Web/JavaScript/Inheritance_and_the_prototype_chain`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Inheritance_and_the_prototype_chain)）（原文强调）：
-
-**坏习惯：扩展原生原型**
-
-经常被使用的一种误用特性是扩展 `Object.prototype` 或其他内置原型。
-
-这种技术被称为猴子补丁（monkey patching），它破坏了*封装性*。虽然 Prototype.js 等流行框架在使用它，但仍然没有正当理由向内置类型添加额外的*非标准*功能。
-
-扩展内置原型的**唯一**合理理由是后向新 JavaScript 引擎的功能，例如 `Array.forEach`。
-
-这个建议让我想起了电影《特洛伊》中的一个场景：希腊最强大的战士阿基琉斯（Ἀشي留留ς）正在训练他的亲密好友帕特洛克洛斯（Πάτροκλος，电影中描绘为阿基琉斯的表哥）。在一次模拟剑斗中，阿基琉斯将木训练剑从右手换到左手，抵住帕特洛克洛斯的脖子。作为回应，帕特洛克洛斯喊道：“你告诉过不要换手！”“是的，”阿基琉斯回答道，“当你学会如何使用它时，你就不会听从*我的*命令了。”
-
-同样，一旦我们知道了何时以及为什么要扩展内置原型，我们就不会听从 Mozilla 开发者网络（图 7.3）。^(3)
-
-3. 图片感谢来自 Historic Images/Alamy Stock Photo。
-
-![images](img/07fig03.jpg)
-
-**图 7.3：** 帕特洛克洛斯和阿基琉斯礼貌地拒绝了 Mozilla 开发者网络的建议。
-
-修改原生对象的能力无疑是强大的——可以说好比一把“利刀”。但我们并没有被动地接受 MDN 的建议，而是遵循 Ruby on Rails 框架创建者 David Heinemeier Hansson 所推崇的哲学。正如 DHH 所说（[`twitter.com/dhh/status/965618592606638080`](https://twitter.com/dhh/status/965618592606638080)）（图 7.4）：“不要任何人告诉你某种强大的技术对你来说太可怕或太危险。让它激发你的好奇心。”
-
-![images](img/07fig04.jpg)
-
-**图 7.4：** DHH 同意利刀是可以的（只要小心使用）。
-
-考虑到这些前提，让我们看看如何向 `String` 添加 `reverse`。技巧是将函数直接赋值给 `String.prototype` 属性，正如我们可以在 REPL 中直接看到的：
-
-```
-> String.prototype.reverse = function() {
-    return Array.from(this).reverse().join("");
-  }
-```
-
-完成此赋值后，我们现在可以直接在字面量字符串上调用 `reverse`：
-
-```
-> "foobar".reverse();
-'raboof'
-
-> "Racecar".reverse();
-'racecaR'
-```
-
-它在字符串变量上同样有效：
-
-```
-> let string = "Able was I ere I saw Elba";
-> string.reverse();
-'ablE was I ere I saw elbA'
-```
-
-将 `palindrome.js` 中的 `reverse` 替换为上述代码得到列表 7.13。（由于 `TranslatedPhrase` 对象不再需要用于演示，我们现在已经删除了它。）
-
-**列表 7.13：** 将 `processedContent` 移动到方法中。
-
-*palindrome.js*
-
-```
-// 为所有字符串添加 `reverse`。
-
+```javascript
 String.prototype.reverse = function() {
   return Array.from(this).reverse().join("");
-}
-
-// 定义一个 Phrase。
-function Phrase(content) {
-  this.content = content;
-
-  // 返回用于回文测试的内容。
-  this.processedContent = function processedContent() {
-    return this.content;
-  }
-
-  // 如果短语是回文，则返回 true，否则返回 false。
-  this.palindrome = function palindrome() {
-    return this.processedContent() === reverse(this.processedContent());
-  }
-}
+};
 ```
 
-正如所要求的，我们的代码仍然可以找到回文（图 7.5）。^(4)
+现在可以直接调用：
 
-4. 图片感谢来自 Historic Images/Alamy Stock Photo。
-
-![images](img/07fig05.jpg)
-
-**图 7.5：** 拿破在在之前是有能力的。
-
-```
-> .load palindrome.js
-> let napoleament = new Phrase("Able was I ere I saw Elba");
-> napoleament.palindrome();
-true
+```javascript
+"foobar".reverse(); // 'raboof'
 ```
 
-作为最后的评论，值得思考我们是否应该为 `String` 添加 `palindrome()`。答案在某种程度上取决于语言。某些语言（如 Ruby）允许向原生对象添加方法，只要不滥用即可。对于 JavaScript，根据 MDN 对不添加*非标准*功能的告诫，我们将坚持添加 `reverse`。但如果你想自己为 `String` 添加 `palindrome()`，我或阿基琉斯都不会阻止你。
+## 8 测试与测试驱动开发
 
-### 7.3.1 练习
+### 8.1 测试环境搭建
 
-1. 为字符串原型添加一个 `blank` 方法，如果字符串为空或仅包含空白字符（空格、制表符或换行符），则返回 `true`。*提示*：使用正则表达式匹配字符串的开头和结尾（节 4.3.2（图 7.6）。
+使用 `mocha` 作为测试框架：
 
-2. 使用你喜欢的方法（直接索引或切片），为数组原型添加一个 `last` 方法，返回数组的最后一个元素。*提示*：参考节 3.3。
-
-# 第 8 章 测试与测试驱动开发
-
-虽然在介绍性教程中很少涵盖，但*自动化测试*是现代软件开发中最重要的主题之一。因此，本章包含了 JavaScript 测试的介绍，包括对*测试驱动开发*（TDD）的初步了解。
-
-测试驱动开发在第 6.3.3 节（ch06.xhtml_ch6lev33）中简要提到，该节承诺我们将使用测试技术来增强寻找回文的能力，即能够检测复杂的回文，例如“A man, a plan, a canal— Panama!”（图 6.7）或“Madam, I’m Adam.”（图 8.1）。^(1) 本章实现了这一承诺。
-
-1. 图片感谢来自 Album/Alamy Stock Photo.
-
-![images](img/08fig01.jpg)
-
-**图 8.1：** 乐甸园曾拥有一切——甚至是回文。
-
-
-
-
-事实证明，学习如何编写 JavaScript 测试将让我们有机会机会学习如何创建和使用名为 `NPM modules` 的自包含软件包，这是另一项非常有价值的现代 JavaScript 技能。
-
-（除了测试 NPM 模块之外，在 Web 应用程序中测试 JavaScript 当然也是可能的，但选择并不标准化，而且通常与底层浏览器和操作系统紧密耦合。因此，本教程侧重于测试背后的基本`思想`，从而为以后可能的浏览器测试做好准备。）
-
-以下是我们测试当前回文代码并将其扩展到更复杂短语的策略：
-
-1. 设置自动化测试系统（第 8.1 节）。
-2. 为现有的 `palindrome` 功能编写自动化测试（第 8.2 节）。
-3. 为增强后的回文检测器编写一个`失败`的测试（RED）（第 8.3 节）。
-4. 编写（可能很丑的）代码以使测试`通过`（GREEN）（第 8.4 节）。
-5. `重构`代码使其更漂亮，同时确保测试套件保持 GREEN（第 8.5 节）。
-
-## 8.1 测试环境搭建
-
-我们选择的测试工具是 Mocha ([`mochajs.org/`](https://mochajs.org/))（图 8.2），这是一个用于 Node.js 的强大测试框架。我们可以使用 Node Package Manager（即 NPM）安装它，它会随 Node 自动安装。要全局安装它，我们使用 `npm` 命令（作为 Node.js 的一部分自动包含）配合 `--global` 标志：
-
-![images](img/08fig02.jpg)
-
-**图 8.2:** Mocha 是一个流行且强大的 JavaScript 测试框架。
-
-```
+```bash
 $ npm install --global mocha
 ```
 
-（关于 NPM 模块的通用规则是：如果你只想访问对应的可执行文件——在此例中为 `mocha`——则将其全局安装；如果你希望该模块成为当前项目的一部分，则将其本地安装（省略 `--global` 标志）。我们将从第 9.1 节开始看到后者的示例。）
+创建 `palindrome` 模块并在 `package.json` 中设置 `test` 命令为 `mocha`。
 
-作为第二个设置步骤，我们还必须将 `palindrome.js` 本身配置为 NPM 模块。这是因为（在第 5.3 节中简要提到）JavaScript 没有原生方法将一个源文件的功能包含另一个文件中（这对于编程语言来说是一种不寻常的状态，在这种是因为 JavaScript 根于浏览器）。在这种情况下，我们希望能够在网页（第 9 章
-```
+### 8.2 初始测试覆盖率
 
-会将相应模块的功能包含在当前应用程序中。
-
-我们的回文检测器作为一个独立的模块存在；也就是说，它是自包含的，适用于引入其他程序（网页、shell 脚本或其他模块）。因此，我们将模块的所有代码放在一个单独的目录，名为 `palindrome`：
-
-```
-$ cd ~/repos/
-
-$ mkdir palindrome
-
-$ cd palindrome 
-```
-
-接下来，我们将通过将之前章节中开发的 `palindrome.js` 文件复制到 `index.js` 文件来开始我们的 `palindrome` 模块，`index.js` 是 NPM 模块中主文件的标准名称：
-
-```
-$ cp ~/repos/js_tutorial/palindrome.js index.js 
-```
-
-在本章的剩余部分，我们将此文件调整为完整的回文检测器。
-
-由于目录现在为空，我们可以使用 Git 对其进行版本控制：
-
-```
-$ git init
-
-$ git add -A
-
-$ git commit -m "Initialize repository"
-```
-
-此时，我建议按照第 1.2.1 节中的说明在 GitHub 上为该模块创建一个公共仓库。这将也将为您提供一个用于下一步的 GitHub 仓库 URL。
-
-为了让我们开始一个新模块，`npm` 程序带了一个名为 `npm init` 的有用命令，它包含一系列交互式问题。我建议运行 `npm init` 并参考列表 8.1 填充值；特别确保使用 `mocha` 作为“测试命令”，并使用版本号 0.1.0（框 8.1）。（我们将在第 8.5 节中用唯一的用户名替换 `mhartl`。
-
-**列表 8.1:** 初始化 NPM 模块。
-
-```
-$ npm init
-
-package name: mhartl-palindrome
-
-version: 0.1.0
-
-description: Palindrome detector
-
-entry point: index.js
-
-test command: mocha
-
-git repository: https://github.com/mhartl/palindrome
-
-author: Michael Hartl
-
-license: ISC
-```
-
-列表 8.1](#ch08.xhtml_ch8list1) 的结果是一个名为 `package.json` 的文件，它使用 JavaScript 对象表示法 JSON（通常读作“Jsun”或“JAY-sahn”）来记录模块的配置。
-
-**框 8.1: Semver**
-
-您可能在列表 8.1 中注意到我们为新模块使用了版本号 0.1.0。前前的零表示我们的包处于早期阶段，通常被称为“beta”（非常早期项目甚至称为“alpha”）。
-
-我们可以通过增加版本号中间的数字来表示更新，例如从 0.1.0 变为 0.2.0、`0.3.0` 等。错误修复通过增加最右侧的数字表示，如 0.2.1、`0.2.2`，而成熟版本（供他人使用，可能与之前的版本不兼容）由版本 1.0.0 表示。
-
-这些命名约定被称为*语义版本化*（semantic versioning），简称 *semver*。有关更多信息，请参见 NPM 关于如何使用语义版本的文章（[`docs.npmjs.com/about-semantic-versioning`](https://docs.npmjs.com/about-semantic-versioning)）。
-
-准备测试模块的最后一步是*导出* `Phrase` 对象以便在其他文件中使用（我们将在第 8.2 节中学习如何*导入* Phrase*）。只需要一行 `export` 语句，我们可以将其放在文件的顶部（列表 8.2）。
-
-**列表 8.2:** 导出模块。
-
-*`~/repos/palindrome/index.js`*
-
-
-
-
-
-```javascript
-module.exports = Phrase;
-
-// 为所有字符串添加 `reverse` 方法。
-
-String.prototype.reverse = function() {
-
-  return Array.from(this).reverse().join("");
-
-}
-
-// 定义一个 Phrase 对象。
-
-function Phrase(content) {
-
-  this.content = content; 
-
-  // 返回经过回文测试处理处理的内容。
-  this.processedContent = function processedContent() {
-    return this.content.toLowerCase();
-  }
-
-  // 如果短语是回文则返回 true，否则返回 false。
-  this.palindrome = function palindrome() {
-    return this.processedContent() === this.processedContent().reverse();
-  }
-}
-```
-
-### 8.1.1 练习
-
-1. 正如 NPM 指南（[`docs.npmjs.com/about-package-readme-files`](https://docs.npmjs.com/about-package-readme-files)）中的“如何发布与更新包”([[`docs.npmjs.com/packages-and-modules/contributing-packages-to-the-registry`](https://docs.npmjs.com/packages-and-modules/contributing-packages-to-the-registry)]) 所示，包含一个带有模块信息的“README”文件是一个良好的做法。创建一个名为 `readme.md` 的所需文件，并在其中填写关于该模块的信息。如果你愿意，可以参考我的 readme ([[`github.com/mhartl/mhartl-palindrome#phrase-object-with-palindrome-detector`](https://github.com/mhartl/mhartl-palindrome#phrase-object-with-palindrome-detector)]）。
-
-## 8.2 初始测试覆盖率
-
-在完成第 8.1 节 的准备工作后，我们现在已经准备好开始自动化测试了。我们将首先创建一个 `test` 目录和 `test.js` 文件：
-
-```bash
- $ mkdir test/
-$ touch test/test.js 
-```
-
-现在，我们需要向 `test.js` 填充 `palindrome` 方法的测试代码。我们首先使用 `require` 函数在 `test.js` 中引入两个 NPM 模块，这是 Node 从外部文件导入功能的方式。第一个是断言库，允许我们在测试中断言某些结果为真；第二个是 `Phrase` 对象本身：
-
-```javascript
-let assert = require("assert");
-let Phrase = require("../index.js"); 
-```
-
-接下来，我们将使用来自 `assert` 的两个函数，称为 `describe` 和 `it`。`describe` 函数接收一个字符串和另一个函数。例如，为了描述 `Phrase` 对象，我们可以这样开头：
-
-```javascript
-describe("Phrase", function() { 
-```
-
-接下来，由于我们要测试 `Phrase` 对象内部的 `palindrome`，我们将嵌套第二个 `describe` 的调用。特别是，正如我们在第 3.2 节中简要看到的过的，指示对象方法的通常方法是在方法前使用一个哈希标记 `#`（`Phrase#palindrome`），我们可以在测试中如下标明它：
-
-```javascript
-describe("Phrase", function() {
-  describe("#palindrome", function() {
-```
-
-最后，在 `describe` 函数内部，我们将添加对 `it` 函数的调用，它也接收一个字符串和一个函数：
-
-```javascript
-describe("Phrase", function() { 
-  describe("#palindrome", function() { 
-    it("should return false for a non-palindrome", function() {
-      let nonPalindrome = new Phrase("apple");
-      assert(!nonPalindrome.palindrome());
-    });
-    .
-    .
-    .
-```
-
-在这里我们使用了 `assert` 来断言“apple”不应该是一个回文（图 8.3），^(2)，其中“惯例”使用感叹号（“bang”）`!` 来表示“非”([第 2.4.1 节])。
-
-2. 图片致谢 Glayan/Shutterstock。
-
-![images](img/08fig03.jpg)
-
-**图 8.3：** 单词“apple”：不是回文。
-
-以类似的方式，我们可以通过再次调用 `it` 来测试一个普通的回文（即正反读都完全相同的词）：
-
-```javascript
-it("should return true for a plain palindrome", function() {
-  let plainPalindrome = new Phrase("racecar");
-  assert(plainPalindrome.palindrome());
-});
-```
-
-将上述讨论的代码组合在一起得到了我们的初始测试文件，如列表 8.3 所示。
-
-**列表 8.3：** 我们的初始测试套件。
-
-`~/repos/palindrome/test/test.js`
-
-```javascript
-let assert = require("assert");
-let Phrase = require("../index.js"); 
-
-describe("Phrase", function() {  
-  describe("#palindrome", function() {
-    it("should return false for a non-palindrome", function() {
-      let nonPalindrome = new Phrase("apple");
-      assert(!nonPalindrome.palindrome());
-    });
-
-    it("should return true for a plain palindrome", function() {
-      let plainPalindrome = new Phrase ("racecar");
-      assert(plainPalindrome.palindrome());
-    });
-  });
-});
-```
-
-### 8.2.1 待处理测试
-
-在继续之前，我们将添加几个待处理测试，这些是我们想要编写的测试的占位符。编写待处理测试的方法简单是仅使用 `it` 配合一个字符串，如列表 8.5 所示。
-
-**列表 8.5：** 添加待处理测试。
-
-`~/repos/palindrome/test/test.js`
+`test/test.js`：
 
 ```javascript
 let assert = require("assert");
@@ -4694,109 +2260,17 @@ describe("Phrase", function() {
       let nonPalindrome = new Phrase("apple");
       assert(!nonPalindrome.palindrome());
     });
-
     it("should return true for a plain palindrome", function() {
       let plainPalindrome = new Phrase("racecar");
       assert(plainPalindrome.palindrome());
     });
-
-    it("should return true for a mixed-case palindrome"); 
-    it("should return true for a palindrome with punctuation");
   });
 });
 ```
 
-我们可以通过重新运行测试套件来看到列表 8.5 的结果：
+### 8.3 Red
 
-**列表 8.6：** GREEN
-
-```bash
-$ npm test 
-
-  Phrase
-
-    #palindrome
-      should return false for a non-palindrome
-      should return true for a plain palindrome
-      - should return true for a mixed-case palindrome
-      - should return true for a palindrome with punctuation
-
-2 passing (6ms)
-
-2 pending
-```
-
-现在 Mocha 显示有待处理测试的指示。（有时人们将带有待处理测试的套件称为黄色，类比交通灯的红黄绿配色方案。）
-
-填充大小写回文的测试留作练习（解决方案将在下一节给出），而填充第二个待处理测试则是第 8.3 节和第 8.4 节的主题。
-
-### 8.2.2 练习
-
-1. 通过填充列表 8.7 中的代码，为像“RaceCar”这样的大小写回文添加测试。测试套件仍然是 GREEN 吗？
-
-2. 为了 100% 确保测试正在测试我们认为它们测试的内容，良好的做法是通过故意破坏测试来进入失败状态（RED）。依次更改应用程序代码以破坏每个现有测试，然后在恢复原始代码后确认它们再次变为 GREEN。破坏上一个练习中测试（但不会破坏其他测试）的代码示例出现在列表 8.8 中。（先写测试的优势之一是这种 RED—GREEN 循环会自动发生。）
-
-
-
-
-
-```javascript
-it("should return true for a mixed-case palindrome", function() {
-  let mixedCase = new Phrase("RaceCar");
-  // 此此行
-});
-```
-
-**Listing 8.8:** 刻意破坏测试。RED
-
-`~/repos/palindrome/index.js`
-
-```javascript
-module.exports = Phrase; 
-
-// 为所有字符串添加 `reverse` 方法。
-String.prototype.reverse = function() {
-  return Array.from(this).reverse().join("");
-}
-
-// 定义一个 Phrase 对象。
-function Phrase(content) {
-  this.content = content; 
-  // 返回处理后的回文测试的内容。
-  this.processedContent = function processedContent() {
-    return this.content;
-  }
-  // 如果短语是回文则返回 true，否则返回 false。
-  this.palindrome = function palindrome() {
-    return this.processedContent() === this.processedContent().reverse();
-  }
-}
-```
-
-## 8.3 Red
-
-在这一节中，我们将迈出重要的第一步，能够检测更复杂的回文，例如“Madam, I’m Adam.”和“A man, a plan, a canal— Panama!”与我们之前遇到的字符串不同，这些包含空格和标点符号的短语在字面意义上并不是严格的回文，即使我们忽略大小写也是如此。我们不需要原样测试字符串，而是必须想出一种只选择字母的方法，然后查看生成的字母正反读是否相同。
-
-实现这一点的代码相当复杂，但对它的测试却简单。这是测试驱动开发（TDD）特别大异彩的情况之一（Box 8.2）。我们可以编写简单的测试，从而达到 RED 状态，然后以我们想要的方式编写应用代码进入 GREEN 状态（Section 8.4）。此时，有了测试保护我们免受未发现的错误的影响，我们可以放心地修改应用代码（Section 8.5）。
-
-#### Box 8.2: 何时测试
-
-在决定何时以及如何测试时，理解*为什么*测试是有帮助的。在我看来，编写自动化测试有三个主要好处：
-
-1. 测试可以防止`regressions`，即正常的功能由于某些原因停止工作。
-2. 测试允许更有信心地对代码进行`refactored`（即在不改变功能的情况下改变其形式）。
-3. 测试充当应用代码的`client`，从而帮助确定其设计以及与系统其他部分的接口。
-
-虽然上述优点并没有*要求*先写测试，但在许多情况下，测试驱动开发（TDD）是你工具箱中极具价值的工具。决定何时以及如何测试在很大程度上取决于你对编写测试的熟悉程度；许多开发者发现，随着编写测试水平的提高，他们更倾向于先写测试。它还取决于测试相对于应用代码的难度、所需功能已知描述的精确程度，以及该功能在未来崩溃的概率。
-
-在这种背景下，拥有一套关于何时应该先测试（或是否要测试）的指南是有帮助的。以下是根据我个人经验的一些建议：
-
-- 当测试与其所测试的代码相比特别短或简单时，倾向于先写测试。
-- 当期望的行为尚不清晰时，倾向于先编写应用代码，然后编写测试来将结果代码化。
-- 每当发现 bug 时，编写一个测试来复现它并防止回归，然后编写应用代码来修复它。
-- 在重构代码之前编写测试，重点测试那些容易出错且特别可能崩溃的代码。
-
-我们将从为一个带标点的回文编写测试开始，这与 Listing 8.3 中的测试相似：
+为带标点的回文添加测试（RED）：
 
 ```javascript
 it("should return true for a palindrome with punctuation", function() {
@@ -4805,297 +2279,61 @@ it("should return true for a palindrome with punctuation", function() {
 });
 ```
 
-更新后的测试套件出现在 Listing 8.9 中，它还包含了 Listing 8.7 中练习题的解答（Figure 8.4）。（为了简便，只有 Listing 8.9 中高亮了新的 `let` 和断言，但你也应该包含 `it` 块。）
+### 8.4 Green
 
-![images](img/08fig04.jpg)
-
-**Figure 8.4:** “RaceCar”仍然是一个回文（忽略大小写）。
-
-**Listing 8.9:** 为带标点的回文添加测试。RED
-
-`~/repos/palindrome/test/test.js`
+在 `index.js` 中实现 `letters` 方法并改进 `palindrome`：
 
 ```javascript
-let assert = require("assert");
-let Phrase = require("../index.js"); 
-
-describe("Phrase", function() { 
-  describe("#palindrome", function() { 
-    it("should return false for a non-palindrome", function() {
-      let nonPalindrome = new Phrase("apple");
-      assert(!nonPalindrome.palindrome());
-    });
-
-    it("should return true for a plain palindrome", function() {
-      let plainPalindrome = new Phrase("racecar");
-      assert(plainPalindrome.palindrome());
-    });
-
-    it("should return true for a mixed-case palindrome", function() {
-      let mixedCase = new Phrase("RaceCar");
-      assert(mixedCase.palindrome());
-    });
-
-    it("should return true for a palindrome with punctuation", function() {
-      let punctuatedPalindrome = new Phrase("Madam, I'm Adam.");
-      assert(punctuatedPalindrome.palindrome());
-    });
-  });
-});
-```
-
-正如要求的，测试套件现在是 RED：
-
-**Listing 8.10:** RED
-
-```
- $ npm test
-
-  Phrase
-    should return false for a non-palindrome
-    should return true for a plain palindrome
-    should return true for a mixed-case palindrome
-
-  3 passing (8ms)
-  1 failing 
-
-  1) Phrase
-    should return true for a palindrome with punctuation: AssertionError [ERR_ASSERTION]: false == true
-    + expected - actual
-    -false
-    +true
-```
-
-此时我们可以开始思考如何为 `Phrase` 对象编写一个 `letters` 方法，返回字符串中的所有字母。换句话说，代码
-
-```javascript
-new Phrase("Madam, I'm Adam.").letters(); 
-```
-
-应该是：
-
-```
-MadamAdam
-```
-
-（注意这里我们可以在 `new Phrase` 上调用 `letters()`。）达到这种状态将允许我们使用当前的回文检测器判断原始字符串是否为回文。
-
-有了这个规范，我们现在可以为 `letters` 编写一个简单的测试。我们可以遵循之前测试的模式并直接断言（严格）相等性（Listing 8.11）。
-
-**Listing 8.11:** 直接断言。
-
-```javascript
-let punctuatedPalindrome = new Phrase("Madam, I'm Adam.");
-assert(punctuatedPalindrome.letters() === "MadamImAdam");
-```
-
-然而，`assert` 模块对这种比较有原生支持（见官方文档 [`www.npmjs.com/package/assert`](https://www.npmjs.com/package/assert)），导致如 Listing 8.12 所示的断言形式。
-
-**Listing 8.12:** 使用原生断言。
-
-```javascript
-assert.strictEqual(<actual>, <expected>);
-```
-
-正如我们将看到的，尽可能使用原生断言更好，因为这样可以为失败的测试提供更有用的信息。为了这种失败测试消息，按照上述的“实际，期望”顺序包含参数也是重要的。
-
-在当前情况下，“实际”结果是 `punctuatedPalindrome.letters()`，而“期望”值是 `”MadamImAdam”`，因此我们可以这样填充断言：
-
-
-
-
-
-```
-let punctuatedPalindrome = new Phrase("Madam, I'm Adam.");
-
-assert.strictEqual(punctuatedPalindrome.letters(), "MadamImAdam"); 
-```
-
-为 `letters` 添加一个新的新的 `describe` 函数（并添加哈希符号 `#` 以表示我们正在测试 `Phrase#letters`）将导致如 Listing 8.13 所示的代码。
-
-**列表 8.13:** 为 `letters` 方法添加测试。RED
-
-`~/repos/palindrome/test/test.js`
-
-```
-describe("Phrase", function() {
-
-  .
-
-  .
-  .
-
-  describe("#palindrome", function() {
-
-    .
-
-    .
-    .
-  });
-
-  describe("#letters", function() {
-
-    it("should return only letters", function() {
-
-      let punctuatedPalindrome = new Phrase("Madam, I'm Adam.");
-
-      assert.strictEqual(punctuatedPalindrome.letters(), "MadamImAdam");
-
-    });
-  });
-
-});
-```
-
-由于 `letters` 方法完全不存在，当前失败的信息并没有什么帮助：
-
-**列表 8.14:** RED
-
-```
- $ npm test
-
-  .
-
-  .
-  .
-  2) Phrase
-
-      #letters
-
-        should return only letters:
-
-      TypeError: punctuatedPalindrome.letters is not a function
-```
-
-我们可以通过为 `letters` 添加一个存根（stub）来进入更有用的 RED 状态：一个不起作用但至少存在的方法。为了简单起见，我们将直接返回内容的内容，如 Listing 8.15 所示。
-
-**列表 8.15:** `letters` 方法的存根。RED
-
-`~/repos/palindrome/index.js`
-
-```
-module.exports = Phrase;
-
-.
-  .
-  .
-
 function Phrase(content) {
-
-  .
-
-  .
-  .
-  // 返回内容中的字母。
-
-  this.letters = function letters() {
-
-    return this.content; // 存根返回值
-
-  }
-
-  // 如果短语是回文则返回 true，否则返回 false。
-
-  this.palindrome = function palindrome() {
-
+  this.content = content;
+  this.processedContent = function() {
+    return this.letters().toLowerCase();
+  };
+  this.letters = function() {
+    return this.content.replace(/[^a-zA-Z]/g, "");
+  };
+  this.palindrome = function() {
     return this.processedContent() === this.processedContent().reverse();
-
-  }
-
+  };
 }
+module.exports = Phrase;
 ```
 
-正如承诺的那样，错误信息现在很有用，如 Listing 8.16 所示。
+### 8.5 重构
 
-**列表 8.16:** RED
+将通用的字母提取逻辑抽取为独立函数 `processor`，并在 `Phrase` 与 `TranslatedPhrase` 中复用。
 
-```
-$ npm test
-
-  Phrase
-
-    #palindrome
-
-      should return false for a non-palindrome
-
-      should return true for a plain palindrome
-
-      should return true for a mixed-case palindrome
-
-      1) should return true for a palindrome with punctuation
-
-    #letters
-
-      2) should return only letters
-
-  3 passing (9ms)
-
-  2 failing
-
-  1) Phrase
-
-       #palindrome
-
-         should return true for a palindrome with punctuation: 
-
-      AssertionError [ERR_ASSERTION]: false == true
-
-      + expected - actual
-
-      -false
-
-      +true
-
-      at Context.<anonymous> (test/test.js:25:7)
-  2) Phrase
-
-       #letters
-
-         should return only letters:
-
-      AssertionError [ERR_ASSERTION]: 'Madam, Iḿ Adam.' === 'MadamImAdam'
-
-      + expected - actual
-
-      -Madam, I'm Adam.
-
-      +MadamImAdam
+```javascript
+function processor(str) {
+  return str.replace(/[^a-zA-Z]/g, "");
+}
+function Phrase(content) {
+  this.content = content;
+  this.processor = processor;
+  this.processedContent = function() {
+    return this.processor(this.content).toLowerCase();
+  };
+  // ...其余保持不变
+}
+function TranslatedPhrase(content, translation) {
+  this.content = content;
+  this.translation = translation;
+  this.processor = processor;
+  this.processedContent = function() {
+    return this.processor(this.translation).toLowerCase();
+  };
+}
+TranslatedPhrase.prototype = new Phrase();
 ```
 
-随着我们的两个 RED 测试捕获了预期的行为，我们现在可以转向应用程序代码，并尝试将其变为 GREEN。
+这样，所有测试均通过，代码保持简洁且易于维护。
 
-### 8.3.1 练习
 
-1. 使用 Listing 8.11 所示的直接 `===` 断言时的错误信息是什么？为什么它没有 Listing 8.16 中的信息那么用？
-
-2. 如果在 Listing 8.16 中反转实际值和预期值（Listing 8.12）。
-
-主要的挑战是实现 `letters`，它返回一个由 `Phrase` 内容（但不包含其他字符）组成的字母字符串。换句话说，我们需要选择匹配特定模式的字符。这听起来像是正则表达式（Section 4.3 所示带有正则表达式的在线正则匹配器是一个极佳的主意。事实上，有时它们会让事情变得*过于*简单，例如当参考中正好有你需要的正则表达式时（Figure 8.5）。
-
-![images](img/08fig05.jpg)
-
-**图 8.5:** 我们需要的精确正则表达式。
-
-```
-[a-zA-Z]
-```
-
-让我们在控制台中测试它：
-
-```
-//   new Phrase("Hello, world!").letters() === "Helloworld"
-```
-
-将所有内容整合得到原始字符串中的 `letters` 方法：
-
-```
-module.exports = Phrase; 
-
-// 为所有字符串添加 `reverse`。
 
 String.prototype.reverse = function() {
 
   return Array.from(this).reverse().join("");
+
 }
 
 // 定义 Phrase。
@@ -5113,7 +2351,11 @@ function Phrase(content) {
   } 
 
   // 返回内容中的字母。
+
+ 字母。
+
   // 示例：
+
   //   new Phrase("Hello, world!").letters() === "Helloworld"
 
   this.letters = function letters() {
@@ -5127,9 +2369,11 @@ function Phrase(content) {
         theLetters.push(this.content.charAt(i));
 
       }
+
     }
 
     return theLetters.join("");
+
   } 
 
   // 如果短语是回文则返回 true，否则返回 false。
@@ -5141,6 +2385,7 @@ function Phrase(content) {
   }
 
 }
+
 ```
 
 虽然整个测试套件仍然是 RED，但我们的 `letters` 测试现在应该是 GREEN 的：
@@ -5148,6 +2393,7 @@ function Phrase(content) {
 **列表 8.18:** RED
 
 ```
+
 $ npm test 
 
   Phrase
@@ -5183,6 +2429,7 @@ $ npm test
       -false
 
       +true
+
 ```
 
 我们可以通过将 `processedContent` 方法中的 `content` 替换为 `letters()` 来让最后的 RED 测试通过。结果如 Listing 8.19 所示。
@@ -5194,49 +2441,73 @@ $ npm test
 
 
 ```javascript
+
 module.exports = Phrase; 
 
 // 为所有字符串添加 `reverse` 方法。
 
 String.prototype.reverse = function() {
+
   return Array.from(this).reverse().join("");
+
 } 
 
 // 定义一个 Phrase 对象。
 
 function Phrase(content) {
+
   this.content = content; 
 
   // 返回用于回文测试处理后的内容。
+
   this.processedContent = function processedContent() { 
+
     return this.letters().toLowerCase();
+
   } 
 
   // 返回内容中的字母。
+
   // 例如：
+
   // new Phrase("Hello, world!").letters() === "Helloworld"
+
   this.letters = function letters() {
+
     let theLetters = [];
+
     for (let i =0 ; i < this.content.length; i++) {
+
       if (this.content.charAt(i).match(/[a-zA-Z]/)) {
+
         theLetters.push(this.content.charAt(i));
+
       }
+
     }
+
     return theLetters.join("");
+
   }
 
   // 如果短语是回文则返回 true，否则返回 false。
+
   this.palindrome = function palindrome() {
+
     return this.processedContent() === this.processedContent().reverse();
+
   }
+
 }
-```
-
-
-
-
 
 ```
+
+
+
+
+
+```
+
 module.exports = Phrase; 
 
 // 为所有字符串添加 `reverse` 方法。
@@ -5258,23 +2529,31 @@ function Phrase(content) {
   this.processedContent = function processedContent() {
 
     return this.letters().toLowerCase();
+
   } 
 
   // 返回内容中的字母。
+
   // 例如：
 
   //   new Phrase("Hello, world!").letters() === "Helloworld"
 
   this.letters = function letters() {
+
       return Array.from(this.content).filter(c => c.match(/[a-z]/i)).join("");
+
   }
 
   // 如果短语是回文则返回 true，否则返回 false。
+
   this.palindrome = function palindrome() {
+
     return this.processedContent() === this.processedContent().reverse();
+
   }
 
 } 
+
 ```
 
 正如在第 6 章中提到的，函数式程序很难增量地构建，这就是为什么拥有一个测试套件来检查它是否达到了预期效果是非常棒的原因之一：^(3)
@@ -5284,6 +2563,7 @@ function Phrase(content) {
 **列表 8.24：** 绿色 (GREEN)
 
 ```bash
+
 $ npm test 
 
   Phrase
@@ -5303,6 +2583,7 @@ $ npm test
        应只返回字母  
 
   5 passing (6ms) 
+
 ```
 
 太好了！我们的测试套件仍然通过，所以我们那个单行的 `letters` 方法可以工作了。
@@ -5310,6 +2591,7 @@ $ npm test
 这是一项巨大的改进，但实际上还有一次重构，它是展示 JavaScript 力量的绝佳例子。回想第 4.3 节中的内容，`match` 可以使用正则表达式从字符串返回一个数组。通过与来自第 4.5 节的全局标志 `g` 结合，我们可以直接选择字母：
 
 ```javascript
+
 > "Madam, I'm Adam.".match(/[a-z]/gi);
 
 [ 'M', 'a', 'd', 'a', 'm', 'I', 'm', 'A', 'd', 'a', 'm' ]
@@ -5317,11 +2599,13 @@ $ npm test
 > "Madam, I'm Adam.".match(/[a-z]/gi).join("");
 
 'MadamImAdam'
+
 ```
 
 通过对我们在本节一直使用的相同正则表达式进行匹配，然后用空字符串连接，我们几乎复制了 `letters` 方法的功能！只有一个细微之处，即当*没有*字母时，结果是 `null`：
 
 ```javascript
+
 > "1234".match(/[a-z]/gi);
 
 null
@@ -5331,6 +2615,7 @@ null
 "1234".match(/[a-z]/gi).join("");
 
 TypeError: Cannot read property 'join' of null
+
 ```
 
 我们可以使用 `||`（“或”）运算符（第 2.4 节）修复这个问题，它使用一种被称为“短路求值”的方法。
@@ -5338,9 +2623,11 @@ TypeError: Cannot read property 'join' of null
 如果 `||` 语句列表中的第一个元素评估为 `true`，评估将“短路”，JavaScript 会立即返回该元素。如果第一个元素为 `false`，JavaScript 将评估下一个，依此类推，直到找到一个 `true` 元素，然后返回最后一个元素（如果所有元素都是 `false`，则返回最后一个元素）。这意味着我们可以这样处理上面的情况：
 
 ```javascript
+
 > null || []
 
 []
+
 ```
 
 在这里，JavaScript 看到 `null`，将其评估为 `false`，然后移动到 `[]`，它是 `true` 并因此被返回。
@@ -5348,6 +2635,7 @@ TypeError: Cannot read property 'join' of null
 我们可以如下将此想法与 `match` 结合使用：
 
 ```javascript
+
 > ("1234".match(/[a-z]/gi) || []);
 
 []
@@ -5355,15 +2643,17 @@ TypeError: Cannot read property 'join' of null
 > ("1234".match(/[a-z]/gi) || []).join("");
 
 ''
+
 ```
 
 使用这种技术，我们可以进一步简化应用程序代码，如列表 8.25 所示。
 
-**列表 8.25：** 用 `match` 替换 `letters`。
+**列表 8.25:** 用 `match` 替换 `letters`。
 
 `~/repos/palindrome/index.js`
 
 ```javascript
+
 module.exports = Phrase; 
 
 // 为所有字符串添加 `reverse` 方法。
@@ -5385,9 +2675,11 @@ function Phrase(content) {
   this.processedContent = function processedContent() {
 
     return this.letters().toLowerCase();
+
   } 
 
   // 返回内容中的字母。
+
   // 例如：
 
   //   new Phrase("Hello, world!").letters() === "Helloworld"
@@ -5395,15 +2687,19 @@ function Phrase(content) {
   this.letters = function letters() {
 
       return Array.from(this.content).filter(c => c.match(/[a-z]/i)).join("");
+
   }
 
   // 如果短语是回文则返回 true，否则返回 false。
 
   this.palindrome = function palindrome() {
+
     return this.processedContent() === this.processedContent().reverse();
+
   }
 
 }
+
 ```
 
 ## 8.5 发布模块
@@ -5413,20 +2709,29 @@ function Phrase(content) {
 首先，我们应该进行 Git 提交并推送到远程仓库：
 
 ```bash
+
 $ git add -A
+
 $ git commit -m "Finish refactored"
+
 $ git push
+
 ```
 
 要发布 NPM 模块，你需要添加用户（除非你已经是成员），使用 `npm adduser` 非常简单（你应该使用自己的姓名、用户名和电子邮件地址）：
 
 ```bash
+
 $ npm adduser
+
 Michael Hartl
+
 Username: mhartl Password:
+
 Email: michael@hartl.com
 
 Logged in as mhartl on https://registry.npmjs.org/
+
 ```
 
 NPM 要求你在发布之前验证电子邮件地址（可能是为了防止滥用他们的系统），所以你应该检查邮件并点击验证链接继续（图 8.8）。
@@ -5438,7 +2743,9 @@ NPM 要求你在发布之前验证电子邮件地址（可能是为了防止滥�
 这样我们就可以使用了！只需 `npm publish` 将模块发布到公共列表：
 
 ```bash
+
 $ npm publish
+
 ```
 
 对于任何后续修订，你可以根据 semver 的规则增加 `package.json` 中的版本号（第 8.1 节）。
@@ -5449,7 +2756,7 @@ $ npm publish
 
 2. 重新引入来自列表 8.21 的 `lettersRegEx` 变量（现在带有来自列表 8.25 的 `g` 标志），并通过填充列表 8.28 所示的代码将其应用到函数式的 `letters` 方法中。测试套件仍然通过吗？
 
-**列表 8.27：** 测试没有字母的字符串。红色
+**列表 8.27:** 测试没有字母的字符串。红色
 
 *`~/repos/palindrome/test/test.js`*
 
@@ -5457,6 +2764,7 @@ $ npm publish
 
 
 ```
+
 describe("Phrase", function() {
 
   .
@@ -5470,11 +2778,15 @@ describe("Phrase", function() {
     .
 
     .
+
     .
+
   }); 
 
   describe("#letters", function() {
+
     it("should return only letters", function() {
+
       let punctuatedPalindrome = new Phrase("Madam, I'm Adam.");
 
       assert.strictEqual(punctuatedPalindrome.letters(), "MadamImAdam");
@@ -5482,13 +2794,17 @@ describe("Phrase", function() {
     }); 
 
     it("should return the empty string on no match", function() {
+
       let noLetters = new Phrase("1234.56");
 
       assert.strictEqual(noLetters.letters(), "");
 
     });
+
   });
+
 }); 
+
 ```
 
 **Listing 8.28:** 重新引入 `lettersRegEx` 变量。GREEN
@@ -5496,6 +2812,7 @@ describe("Phrase", function() {
 `~/repos/palindrome/index.js`
 
 ```
+
 this.letters = function letters() {
 
   const lettersRegEx = /[a-z]/gi;
@@ -5503,6 +2820,7 @@ this.letters = function letters() {
   return // FILL IN
 
 }
+
 ```
 
 # 第 9 章：事件与 DOM 操控
@@ -5516,29 +2834,35 @@ this.letters = function letters() {
 为了开始构建我们的回文检测器，我们将创建一个 HTML 文件和网站的主 JavaScript 文件，分别称为 `palindrome.html` 和 `main.js`：
 
 ```
+
 $ cd ~/repos/js_tutorial
 
 $ touch palindrome.html main.js
+
 ```
 
 正如第 1 章所示，我们将创建一个最小的“你好，世界”应用，仅为了证明一切基本正常。为了实现这一点，我们需要安装在第 8.1 节中创建的 `<username>-palindrome` 模块：
 
 ```
+
 $ npm install <username>-palindrome   # 将 <username> 替换为你的用户名
+
 ```
 
 如果由于某种原因没有完成第 8.1 节，你可以使用我版本的模块 `mhartl-palindrome`。
 
 要使用模块导出的 `Phrase` 对象（列表 8.2），我们只需要编辑 `main.js` 并使用 `let` 将名称 `Phrase` 绑定到 `require` 函数的结果，如列表 9.1 所示。
 
-**列表 9.1：** 添加一个概念验证。
+**列表 9.1:** 添加一个概念验证。
 
 `main.js`
 
 ```
+
 let Phrase = require("<username>-palindrome");
 
 alert(new Phrase("Madam, I'm Adam.").palindrome());
+
 ```
 
 列表 9.1 也包含一个 `alert`，如果它运行，将告诉我们 `require` 成功。
@@ -5546,27 +2870,35 @@ alert(new Phrase("Madam, I'm Adam.").palindrome());
 回想第 5.2 节，可以使用 `script` 标签的 `src` 属性包含外部 JavaScript 文件（列表 5.5）：
 
 ```
+
 <script src="filename.js"></script> 
+
 ```
 
 你可能认为我们可以直接包含 `main.js`，如下：
 
 ```
+
 <script src="main.js"></script> 
+
 ```
 
 遗憾的是，由于浏览器不支持 `require`，这将不起。相反，我们需要使用一个名为 `browserify` 的 NPM 模块（搜索“require node module into browser”）：
 
 ```
+
 $ npm install --global browserify
+
 ```
 
 `browserify` 工具将我们的离线代码以浏览器可以理解的方式进行打包，如列表 9.2 所示。
 
-**列表 9.2：** 使用 `browserify` 为浏览器准备 JavaScript 程序包。
+**列表 9.2:** 使用 `browserify` 为浏览器准备 JavaScript 程序包。
 
 ```
+
 $ browserify main.js -o bundle.js
+
 ```
 
 使用 `-o`（输出文件）标记，列表 9.2 安排创建一个名为 `bundle.js` 的文件，该文件*可以*包含在浏览器中。(1)（browserify 是如何做到的？我不知道。能够使用内部原理神秘的模块是技术老练的一个重要部分。）
@@ -5580,11 +2912,13 @@ $ browserify main.js -o bundle.js
 **列表 9.5:** 告诉 GitHub Pages 不要使用 Jekyll 静态站点生成器。
 
 ```
+
 $ touch .nojekyll
 
 $ git add -A
 
 $ git commit -m "Prevent Jekyll build"
+
 ```
 
 ## 9.2 事件监听器
@@ -5600,18 +2934,31 @@ $ git commit -m "Prevent Jekyll build"
 `palindrome.html`
 
 ```
+
 <!DOCTYPE html>
+
 <html>
+
   <head>
+
     <title>Palindrome Tester</title>
+
     <meta charset="utf-8">
+
     <script src="bundle.js"></script>
+
   </head>
+
   <body>
+
     <h1>Palindrome Tester</h1>
+
     <button id="palindromeTester">Is it a palindrome?</button>
+
   </body>
+
 </html>
+
 ```
 
 注意，列表 9.6 中的按钮使用了 CSS `id`。这符合《精通 CSS 与布局》（Learn Enough CSS & Layout to Be Dangerous](https://www.learnenough.com/css-and-layout)）中讨论的建议（[`www.learnenough.com/css-and-layout-tutorial/style-of-style#sec-css_why`](https://www.learnenough.com/css-and-layout-tutorial/style-of-style#sec-css_why)），即建议不要使用 `ids` 进行样式设置（优先使用类），并将它们留给 JavaScript 应用程序等用途（现在已经到了！）。
@@ -5629,22 +2976,33 @@ $ git commit -m "Prevent Jekyll build"
 `main.js`
 
 ```
+
 function palindromeTester() {
+
   let string = prompt("Please enter a string for palindrome testing:");
+
   let phrase = new Phrase(string); 
 
   if (phrase.palindrome()) {
+
     alert(`"${phrase.content}" is a palindrome!`);
+
   } else {
+
     alert(`"${phrase.content}" is not a palindrome.`)
+
   }
+
 }
+
 ```
 
 接下来，我们将创建一个表示按钮本身的特殊对象。实现此方法的方法使用强大的 `querySelector` 函数，它允许我们通过 id 查找页面 DOM 中的元素：2。我原本打算在本文教程中介绍流行的 jQuery 库，但使用它确实会引入一些开销和第三方依赖，所以我发现 `querySelector` 和与其密切相关的 `querySelectorAll`（第 11.2 节）已经让原生 JavaScript 对于我们的需求变得足够强大。
 
 ```
+
 let button = document.querySelector("#palindromeTester");
+
 ```
 
 这里注意，JavaScript 知道要查找 CSS id（而不是 CSS 类），因为 `#palindromeTester` 以哈希符号 `#` 开头。回想《精通 CSS 与布局》（Learn Enough CSS & Layout to Be Dangerous）中的[`www.learnenough.com/css-and-layout-tutorial/style-of-style#sec-naming_things`](https://www.learnenough.com/css-and-layout-tutorial/style-of-style#sec-naming_things)，这与 CSS 中选择 CSS id 的表示法相同。
@@ -5656,6 +3014,7 @@ let button = document.querySelector("#palindromeTester");
 
 
 ```javascript
+
 document.addEventListener("DOMContentLoaded", function() {
 
   let button = document.querySelector("#palindromeTester");
@@ -5667,15 +3026,17 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 
 });
+
 ```
 
 让我们这段扩展后的代码放入 `main.js` ([列表 9.9) 中看看会发生什么。
 
-**列表 9.9：** 用于 DOM 加载的事件监听器。
+**列表 9.9:** 用于 DOM 加载的事件监听器。
 
 `main.js`
 
 ```javascript
+
 let Phrase = require("<username>-palindrome"); 
 
 function palindromeTester() {
@@ -5689,8 +3050,11 @@ function palindromeTester() {
     alert(`"${phrase.content}" is a palindrome!`);
 
   } else {
+
     alert(`"${phrase.content}" is not a palindrome.`)
+
   }
+
 }
 
 document.addEventListener("DOMContentLoaded", function() {
@@ -5702,53 +3066,71 @@ document.addEventListener("DOMContentLoaded", function() {
     palindromeTester();
 
   });
+
 });
+
 ```
 
 重新运行 列表 9.2，刷新浏览器并点击按钮，显示它正在工作！结果显示在 图 9.7 中。
 
 ![images](img/09fig07.jpg)
 
-**图 9.7：** 在等待 DOM 加载后点击按钮。
+**图 9.7:** 在等待 DOM 加载后点击按钮。
 
 与 第 9.1 节 中的初始版本一样，当前页面在 `alert` 中显示结果，如 图 9.8 所示。
 
 ![images](img/09fig08.jpg)
 
-**图 9.8：** 仍然是 alert。
+**图 9.8:** 仍然是 alert。
 
 这是一个很好的开始。在 第 9.3 节 中，我们将学习如何在 HTML 本身显示结果。
 
 ### 9.2.1 练习题
 
-1. 处理按钮最常见的方法是将其放在 HTML `form` 中（在 第 9.4 节 中进一步讨论）。使用 列表 9.10 和 列表 9.11 中的代码确认，可以将表单、按钮和对 `submit` 事件的监听器结合以实现与普通按钮行为。（不要忘记重新运行 `browserify` 以更新 `bundle.js`。）
+1. 处理按钮最常见的方法是将其放在 HTML `form` 中（在 第 9.4 节 中进一讨论）。使用 列表 9.10 和 列表 9.11 中的代码确认，可以将表单、按钮和对 `submit` 事件的监听器结合以实现与普通按钮行为。（不要忘记重新运行 `browserify` 以更新 `bundle.js`。）
 
-**列表 9.10：** 添加一个简单的 HTML 表单。
+**列表 9.10:** 添加一个简单的 HTML 表单。
 
 `palindrome.html`
 
 ```html
+
 <!DOCTYPE html>
+
 <html>
+
   <head>
+
     <title>Palindrome Tester</title>
+
     <meta charset="utf-8">
+
     <script src="bundle.js"></script>
+
   </head>
+
   <body>
+
     <h1>Palindrome Tester</h1>
+
     <form id="palindromeTester">
+
       <button type="submit">Is it a palindrome?</button>
+
     </form>
+
   </body>
+
 </html>
+
 ```
 
-**列表 9.11：** 监听 `submit` 事件。
+**列表 9.11:** 监听 `submit` 事件。
 
 `main.js`
 
 ```javascript
+
 let Phrase = require("<username>-palindrome"); 
 
 function palindromeTester() {
@@ -5758,11 +3140,15 @@ function palindromeTester() {
   let phrase = new Phrase(string); 
 
   if (phrase.palindrome()) {
+
     alert(`"${phrase.content}" is a palindrome!`);
 
   } else {
+
     alert(`"${phrase.content}" is not a palindrome.`)
+
   }
+
 }
 
 document.addEventListener("DOMContentLoaded", function() {
@@ -5776,6 +3162,7 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 
 });
+
 ```
 
 ## 9.3 动态 HTML
@@ -5784,45 +3171,68 @@ document.addEventListener("DOMContentLoaded", function() {
 
 为了准备这一工作，让我们为结果添加另一个标题和一个带有 CSS id 的段落（列表 9.12）。
 
-**列表 9.12：** 为回文结果添加 HTML。
+**列表 9.12:** 为回文结果添加 HTML。
 
 `palindrome.html`
 
 ```html
+
 <!DOCTYPE html>
+
 <html>
+
   <head>
+
     <title>Palindrome Tester</title>
+
     <meta charset="utf-8">
+
     <script src="bundle.js"></script>
+
   </head>
+
   <body>
+
     <h1>Palindrome Tester</h1> 
+
     <button id="palindromeTester">Test palindrome</button>
+
     <h2>Result</h2> 
+
     <p id="palindromeResult"></p>
+
   </body>
+
 </html> 
+
 ```
 
 注意 列表 9.12 中的段落（`<p>`）是空的；这是因为我们将动态填充它。令人惊讶的是，将代码改为使用 HTML 而不是 `alert` 只需要一行。我们首先使用 `querySelector`：
 
 ```javascript
+
 function palindromeTester() {
+
   let string = prompt("Please enter a string for palindrome testing:");
 
   let phrase = new Phrase(string); 
 
   if (phrase.palindrome()) {
+
     alert(`"${phrase.content}" is a palindrome!`);
 
   } else {
+
     alert(`"${phrase.content}" is not a palindrome.`)
+
   }
+
 }
 
 // 修改后
+
 function palindromeTester() {
+
   let string = prompt("Please enter a string for palindrome testing:");
 
   let phrase = new Phrase(string);
@@ -5830,17 +3240,25 @@ function palindromeTester() {
   let palindromeResult = document.querySelector("#palindromeResult");
 
   if (phrase.palindrome()) {
+
     palindromeResult.innerHTML = `"${phrase.content}" is a palindrome!`;
+
   } else {
+
     palindromeResult.innerHTML = `"${phrase.content}" is not a palindrome.`;
+
   }
+
 }
+
 ```
 
 然后，而不是使用 `alert`，我们只需将字符串赋值给 `palindromeResult` 的 `innerHTML`：
 
 ```javascript
+
 function palindromeTester() {
+
   let string = prompt("Please enter a string for palindrome testing:");
 
   let phrase = new Phrase(string);
@@ -5848,20 +3266,27 @@ function palindromeTester() {
   let palindromeResult = document.querySelector("#palindromeResult");
 
   if (phrase.palindrome()) {
+
     palindromeResult.innerHTML = `"${phrase.content}" is a palindrome!`;
+
   } else {
+
     palindromeResult.innerHTML = `"${phrase.content}" is not a palindrome.`;
+
   }
+
 }
+
 ```
 
 完整的 `main.js` 现在出现在 列表 9.13 中。
 
-**列表 9.13：** 添加结果通知。
+**列表 9.13:** 添加结果通知。
 
 `main.js`
 
 ```javascript
+
 let Phrase = require("<username>-palindrome"); 
 
 function palindromeTester() {
@@ -5873,10 +3298,15 @@ function palindromeTester() {
   let palindromeResult = document.querySelector("#palindromeResult");
 
   if (phrase.palindrome()) {
+
     palindromeResult.innerHTML = `"${phrase.content}" is a palindrome!`;
+
   } else {
+
     palindromeResult.innerHTML = `"${phrase.content}" is not a palindrome.`;
+
   }
+
 }
 
 document.addEventListener("DOMContentLoaded", function() {
@@ -5890,6 +3320,7 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 
 });
+
 ```
 
 
@@ -5900,6 +3331,7 @@ document.addEventListener("DOMContentLoaded", function() {
 第一步是将 `button` 标签（Listing 9.12）封装在表单中：
 
 ```
+
 <form id="palindromeTester">
 
   <textarea name="phrase" rows="10" cols="30"></textarea>
@@ -5909,6 +3341,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <button type="submit">Is it a palindrome?</button>
 
 </form> 
+
 ```
 
 在这里，我们将 CSS `id` 转移到了 `form` 标签本身，并引入了 HTML `textarea` 标签（10 行高、30 列宽），同时将 `button` 标识为类型 `"submit"`。同样注意，`textarea` 有一个 `name` 属性（值为 `"phrase"`）；这在稍后会变得重要。
@@ -5921,53 +3354,81 @@ document.addEventListener("DOMContentLoaded", function() {
 **Listing 9.14:** 在回文页面上添加表单。
 
 ```html
+
 <!DOCTYPE html>
+
 <html>
+
   <head>
+
     <title>Palindrome Tester</title>
+
     <meta charset="utf-8">
+
     <script src="bundle.js"></script>
+
   </head>
+
   <body>
+
     <h1>Palindrome Tester</h1>
+
     <form id="palindromeTester">
+
       <textarea name="phrase" rows="10" cols="30"></textarea>
+
       <br>
+
       <button type="submit">Is it a palindrome?</button>
+
     </form>
+
     <h2>Result</h2>
+
     <p id="palindromeResult"></p>
+
   </body>
+
 </html>
+
 ```
 
 由于我们更改了事件类型，我们需要更新监听器，将其从 `"click"` 更改为 `"submit"`：
 
 ```javascript
+
 document.addEventListener("DOMContentLoaded", function() {
 
   let tester = document.querySelector("#palindromeTester");
 
   tester.addEventListener("submit", function(event) {
+
     palindromeTester(event);
 
   });
 
 });
+
 ```
 
 注意，我们在调用 `palindromeTester` 时在函数参数中添加了 `event` 参数；更多内容稍后会介绍。然后，在 `palindromeTester` 方法中，我们必须做两处更改。第一个涉及防止表单的默认行为，即是将信息提交回服务器。由于我们的“服务器”只是一个静态页面，我们无法处理此类提交，因此我们需要阻止这一默认行为：
 
 ```javascript
+
 function palindromeTester(event) {
+
   event.preventDefault();
+
 }
+
 ```
 
 在这里，`event` 是 JavaScript 专门为此类情况提供的特殊对象。第二个更改是，不再从 `prompt` 获取短字符串，而是直接从表单提交中获取。这就是表单中 `textarea` 的 `name` 属性（Listing 9.14）发挥作用：我们可以从 `event` 的 `target` 获取短语。在这种情况下，`event.target` 只是 `form` 对象，所以 `event.target` 就是表单本身。此外，由于表单 `textarea` 中存在 `name="phrase"` 键值对，`event.target` 拥有一个 `value` 为提交字符串的属性。换句话说，如果我们输入了例如“Madam, I’m Adam.”，我们可以这样提取值：
 
 ```javascript
+
 event.target.phrase // 结果为 "Madam, I'm Adam."
+
 ```
 
 将此应用于 `palindromeTester` 函数并结合新的监听器，将得到 Listing 9.15 所示的结果。顺便说一下，在 `function(event)` 中包含 `event` 在某些系统上并不是必要的，但为了最大的浏览器兼容性，应该包含。
@@ -5975,28 +3436,41 @@ event.target.phrase // 结果为 "Madam, I'm Adam."
 **Listing 9.15:** 在 JavaScript 中处理表单提交。
 
 ```javascript
+
 let Phrase = require("./username-palindrome");
 
 function palindromeTester(event) {
+
   event.preventDefault();
+
   let phrase = new Phrase(event.target.phrase.value);
+
   let palindromeResult = document.querySelector("#palindromeResult"); 
 
   if (phrase.palindrome()) {
+
     palindromeResult.innerHTML = `${phrase.content} is a palindrome!`;
+
   } else {
+
     palindromeResult.innerHTML = `${phrase.content} is not a palindrome.`;
+
   }
+
 }
 
 document.addEventListener("DOMContentLoaded", function() {
+
   let tester = document.querySelector("#palindromeTester");
 
   tester.addEventListener("submit", function(event) {
+
      palindromeTester(event);
+
   });
 
 });
+
 ```
 
 重新运行 Listing 9.2，刷新并在 `textarea` 中填充我最喜欢的超长回文句之一（Figure 9.14），将得到 Figure 9.15 所示的结果。Figure 9.14 中惊人的回文句是由计算机科学家 Guy Steele 在 1983 年在程序的帮助下创建的。
@@ -6021,7 +3495,9 @@ document.addEventListener("DOMContentLoaded", function() {
 **Listing 9.18:** 更新 NPM 模块。
 
 ```
+
 $ npm update <username>-palindrome
+
 ```
 
 # 第 10 章 使用 Node.js 编写 Shell 脚本
@@ -6030,24 +3506,28 @@ $ npm update <username>-palindrome
 
 也许令人惊讶的是，在此过程中发现，在第 9 章中开发的 DOM 操作技巧在 shell 脚本中仍然有用。事实上，我们将大幅扩展能力，其方向恰好是第 11 章中用到的更高级操作所需的。
 
-第一个程序（第 10.1 节）展示了如何使用 JavaScript 从文件系统读取并处理文件内容。第 10.2 节中的程序随后展示了如何实现读取 URL 内容类似的功能。（这对我来说很有意义，因为我清楚地记得第一次编写自动化程序从 Web 读取并处理文本时，那在当时看起来简直是奇迹。）最后，在第 10.3 节中，我们将编写一个我曾为自己编写的程序改编而来的真实实用程序；它包含了对 Web 浏览器之外背景下的 DOM 操作的介绍（上文已提及）。
+第一个程序（第 10.1 节）展示了如何使用 JavaJS 从文件系统读取并处理文件内容。第 10.2 节中的程序随后展示了如何实现读取 URL 内容类似的功能。（这对我来说很有意义，因为我清楚地记得第一次编写自动化程序从 Web 读取并处理文本时，那在当时看起来简直是奇迹。）最后，在第 10.3 节中，我们将编写一个我曾为自己编写的程序改编而来的真实实用程序；它包含了对 Web 浏览器之外背景下的 DOM 操作的介绍（上文已提及）。
 
 ## 10.1 从文件中读取
 
 我们的第一个任务是读取并处理文件内容。该示例在设计上很简单，但它演示了必要的原理，并为你提供了阅读更高级文档所需的背景。
 
-我们将首先使用 `curl` 下载一个包含简单短语的文件（注意，这应该位于我们在第 8 章），并在 Google 上搜索了“node open file”。（为什么不搜“javascript open file”呢？那可能有效，但我怀疑——事实证明我是对的——JavaScript 以浏览器为中心的起源使得“node”成为一个更有前景的搜索词。）这次搜索很快就找到了文件系统模块 `fs`，它恰好解决了我们面临的问题：
+我们将首先使用 `curl` 下载一个包含简单短语的文件（注意，这应该位于我们在第 8 章），并在 Google 上搜索了“node open file”。（为什么不搜“javascript open file”呢？那可能有效，但我怀疑——事实上我是对的——JavaScript 以浏览器为中心的起源使得“node”成为一个更有前景的搜索词。）这次搜索很快就找到了文件系统模块 `fs`，它恰好解决了我们面临的问题：
 
 ```
+
 $ npm install --global fs
-```
-
-文件系统的文档可能让人无从下手，因此我又深入研究了一下，找到了文章使用 Node.js 读取文件)，它描述了我们问题的准确解决方案。根据我们当前的文件名和编程规范（例如用 `let` 代替 `var`，使用双引号），它在 REPL 中看起来如下：
 
 ```
+
+文件系统的文档可能让人无从下手，因此我又深入研究了一下，找到了文章使用 Node.js 读取文件），它描述了我们问题的准确解决方案。根据我们当前的文件名和编程规范（例如用 `let` 代替 `var`，使用双引号），它在 REPL 中看起来如下：
+
+```
+
 > let fs = require("fs");
 
 > let text = fs.readFileSync("phrases.txt", "utf-8");
+
 ```
 
 在这里，我们选择了 `readFile` 函数的“Sync”（同步）版本，主要是因为我们没有需要同时运行多个此类程序（那是“异步”的用处）。我们还（遵循博客文章）添加了第二个参数来指示源是 UTF-8，这是在*Learn Enough HTML to Be Dangerous*（[`www.learnenough.com/html`](https://www.learnenough.com/html））中讨论过的 Unicode 字符集（[https://www.learnenough.com/htmltutorial/html_intro#sec-an_html_skeleton](https://www.learnenough.com/htmltutorial/html_intro#sec-an_html_skeleton)）。
@@ -6055,6 +3535,7 @@ $ npm install --global fs
 运行这段代码的结果是将文本文件的完整内容加载到 `text` 变量中：
 
 ```
+
 > text.length;
 
 1373
@@ -6062,6 +3543,7 @@ $ npm install --global fs
 > text.split("\n")[0];     // 按换行符分割并提取第一个短语。
 
 'A butt tuba'
+
 ```
 
 这里的第二个命令按换行符 `\n` 分割文本并选择索引零的元素，揭示了文件中神秘的第一行，“A butt tuba”。
@@ -6069,9 +3551,11 @@ $ npm install --global fs
 让我们把 REPL 中的想法放入脚本中：
 
 ```
+
 $ touch palindrome_file
 
 $ chmod +x palindrome_file
+
 ```
 
 脚本本身非常简单：我们只需打开文件，按换行符分割内容，并遍历生成的数组，打印任何是回文的行。
@@ -6087,28 +3571,35 @@ $ chmod +x palindrome_file
 3。出于某些我不太理解的原因，`urllib` 模块的全局安装不起作用（至少在我的系统上是这样），所以我们在这里本地安装。
 
 ```
+
 $ npm install urllib
+
 ```
 
 然后我们就可以像第 10.1 节那样创建我们的脚本：
 
 ```
+
 $ touch palindrome_url
 
 $ chmod +x palindrome_url
+
 ```
 
 查阅 `urllib` 文档 ([`www.npmjs.com/package/urllib`](https://www.npmjs.com/package/urllib))，我们发现了（截至本书时）列表 10.2 中的示例代码。
 
-**列表 10.2：** 读取 URL 内容的示例代码。
+**列表 10.2:** 读取 URL 内容的示例代码。
 
 ```
+
 var urllib = require('urllib');
 
 urllib.request('http://cnodejs.org/', function (err, data, res) {
 
   if (err) {
+
     throw err; // 你需要处理错误
+
   }
 
   console.log(res.statusCode);
@@ -6120,6 +3611,7 @@ urllib.request('http://cnodejs.org/', function (err, data, res) {
   console.log(data.toString());
 
 });
+
 ```
 
 基于列表 10.2 这样的代码示例进行引导是一项很好的实践。事实上，在每个阶段实际执行代码并不是一个坏主意，但为了简洁起见，我将在脚本完成之前省略输出。
@@ -6127,6 +3619,7 @@ urllib.request('http://cnodejs.org/', function (err, data, res) {
 我们可以通过更新约定（例如使用 `let` 代替 `var`）、使用更具描述性的名称以及删除我们确定不需要的行来根据我们的目的修改默认代码：
 
 ```
+
 let urllib = require("urllib");
 
 urllib.request("http://www.cnodejs.org/", function(error, data, response) {
@@ -6134,6 +3627,7 @@ urllib.request("http://www.cnodejs.org/", function(error, data, response) {
   console.log('body:', data.toString());
 
 });
+
 ```
 
 我们开始看到解决方案的雏形。`urllib` 模块为给定的 URL 开启网络请求，并接受一个带有三个参数的函数：一个错误（如果有）、一个包含页面主体的数据对象（它是*完整*页面，不要与 HTML `body` 标签混淆）以及一个响应对象。
@@ -6141,7 +3635,9 @@ urllib.request("http://www.cnodejs.org/", function(error, data, response) {
 此时需要强调的是，*我并不清楚这些对象具体是什么*，所以你也不需要清楚。我知道的——也就是从列表 10.2 的示例代码中合理推断出的——是 `data.toString()` 是一个可以替代列表 10.1 中 `text` 的字符串。（回想一下，我们在第 4.1.2 节中见过对数字应用 `toString()` 方法。）这已经足够解决我们的问题了，因为这意味着我们可以将列表 10.2 中的 cnodejs.org URL 替换为 `phrases.txt` 的 URL，并将
 
 ```
+
 console.log('body:', data.toString());
+
 ```
 
 替换为列表 10.1 中的回文检测逻辑。
@@ -6150,19 +3646,22 @@ console.log('body:', data.toString());
 
 ![images](img/10fig02.jpg)
 
-**图 10.2：** 访问短 URL。
+**图 10.2:** 访问短 URL。
 
 某些 URL 库默认遵循重定向，但 `urllib` 不，因此我们必须在 `urllib` 文档中添加 `followRedirect` 选项 ([`www.npmjs.com/package/urllib`](https://www.npmjs.com/package/urllib))：
 
 ```
+
 urllib.request(url, { followRedirect: true }, function(error, data, response) {
+
 ```
 
 将 `followRedirect` 选项设置为 `true` 后，`urllib` 将如图 10.2 所示所示遵循 301 重定向。
 
-**列表 10.3：** 一个 URL 读取脚本。
+**列表 10.3:** 一个 URL 读取脚本。
 
 ```
+
 #!/usr/bin/node
 
 let urllib = require("urllib");
@@ -6176,43 +3675,71 @@ urllib.request(url, { followRedirect: true }, function(error, data, response) {
   let body = data.toString();
 
   body.split("\n").forEach(function(line) {
+
     let phrase = Phrase(line);
 
     if (phrase) {
+
       console.log("palindrome detected:", line);
+
     }
+
   });
 
 });
+
 ```
 
 此时，我们准备好在命令行中尝试该脚本：
 
 ```
+
 $ ./palindrome_url
+
 ```
 
 ```
+
 palindrome detected: Anna
+
 palindrome detected: Bob
+
 palindrome detected: Civic
+
 palindrome detected: Did
+
 palindrome detected: Eve
+
 palindrome detected: Hannah
+
 palindrome detected: Eye
+
 palindrome detected: Kay
+
 palindrome detected: Level
+
 palindrome detected: Madam
+
 palindrome detected: Mom
+
 palindrome detected: Noon
+
 palindrome detected: Nan
+
 palindrome detected: Otto
+
 palindrome detected:ed
+
 palindrome detected: Race
+
 palindrome detected: Renner
+
 palindrome detected: Tenet
+
 palindrome detected: Wow
+
 palindrome detected: Go, banana boy!
+
 ```
 
 
@@ -6223,9 +3750,10 @@ palindrome detected: Go, banana boy!
 
 1\. 通常需要一个独立的变量来存储你选择的项（在本例中，是回文）。使用第 6.2 节中讨论的 `filter` 方法，创建一个包含回文数组的 `palindromes` 变量，如列表 10.4 所示。其输出与列表 10.3 的输出相同吗？
 
-**列表 10.4：** 用函数方式读取 URL。
+**列表 10.4:** 用函数方式读取 URL。
 
 ```
+
 #!/usr/bin/node
 
 let urllib = require("urllib");
@@ -6249,6 +3777,7 @@ urllib.request(url, { followRedirect: true }, function(error, data, response) {
   });
 
 });
+
 ```
 
 ## 10.3 命令行中的 DOM 操作
@@ -6274,7 +3803,7 @@ urllib.request(url, { followRedirect: true }, function(error, data, response) {
 过了一段时间，我注意到两个持续存在的摩擦点：
 
 -   手动复制大量段落非常繁琐。
--   手动复制文本往往会选中我不需要的内容，特别是 `reference numbers`（引用数字），TTS 系统会如实地读出它们，导致句子中间出现随机数字（例如，“Se define como orientado a objetos, 3 [tres] basado en prototipos” = “It’s defined as object-oriented, 3 [three] based on prototypes.”¿Qué pasó?）。
+-   手动复制文本往往会选中我不需要的内容，特别是 `reference numbers`（引用数字），TTS 系统会如实地读出它们，导致句子中间出现随数字（例如，“Se define como orientado a objetos, 3 [tres] basado en prototipos” = “It’s defined as object-oriented, 3 [three] based on prototypes.”¿Qué pasó?）。
 
 这种摩擦启发了许多实用脚本，于是 `wikp`（“维基百科段落”）诞生了，这是一个下载维基百科文章的 HTML 源码、提取段落并消除引用数字，并将所有结果输出到屏幕的程序。
 
@@ -6290,9 +3819,11 @@ urllib.request(url, { followRedirect: true }, function(error, data, response) {
 让我们从创建初始脚本开始：
 
 ```
+
 $ touch wikp
 
 $ chmod +x wikp
+
 ```
 
 现在我们准备好开始编写主程序了。对于上面的每个任务，我将包含你可能会用来研究如何操作的 Google 搜索词。
@@ -6304,6 +3835,7 @@ $ chmod +x wikp
 `wikp`
 
 ```javascript
+
 #!/usr/local/bin/node
 
 // 从维基百科链接返回返回的段落，并去除引用数字。
@@ -6313,20 +3845,25 @@ let urllib = require("urllib");
 let url = process.argv[2];
 
 console.log(url);
+
 ```
 
 我们可以确认 列表 10.5 正如广告所示工作：
 
 ```
+
 $ ./wikp https://es.wikipedia.org/wiki/JavaScript
 
 https://es.wikipedia.org/wiki/JavaScript
+
 ```
 
 接下来，我们需要学习如何用 Node 解析 HTML（node parse html），这有几种可能性。与我们已有知识衔接得最好的是 JSDOM：
 
 ```
+
 $ npm install jsdom
+
 ```
 
 将 JSDOM 添加到我们的脚本中得到了 列表 10.6。
@@ -6336,6 +3873,7 @@ $ npm install jsdom
 `wikp`
 
 ```javascript
+
 #!/usr/local/bin/node
 
 // 从维基百科链接返回返回的段落，并去除引用数字。
@@ -6347,12 +3885,15 @@ let url = process.argv[2];
 const jsdom = require("jsdom");
 
 const { JSDOM } = jsdom;
+
 ```
 
 为什么 列表 10.5 有这个看起来奇怪的赋值？
 
 ```javascript
+
 const { JSDOM } = jsdom;
+
 ```
 
 答案是，我并不清楚；我是直接从 JSDOM 文档复制并粘贴的代码（[`github.com/jsdom/jsdom#basic-usage`](https://github.com/jsdom/jsdom#basic-usage)）。这是每位开发者的必备技能（图 10.5）。^(4)
@@ -6372,6 +3913,7 @@ const { JSDOM } = jsdom;
 
 
 ```
+
 #!/usr/local/bin/node
 
 // Returns the paragraphs from a Wikipedia link, stripped of reference numbers.
@@ -6399,15 +3941,19 @@ urllib.request(url, { followRedirect: true }, function(error, data, response) {
   let references = document.querySelectorAll(".reference");
 
 });
+
 ```
 
 到此为止，我们几乎已经完成了。我们只需要移除引用，然后打印每个段落的内容。第一个任务很简单，因为有一个原生的 `remove` 方法可以移除 HTML “节点”（文档对象模型树中的一个元素；javascript dom 移除元素）：
 
 ```
+
 references.forEach(function(reference) {
 
   reference.remove();
+
 });
+
 ```
 
 请注意，这涉及到假设 `references` 是一个可以使用 `forEach` 进行迭代的集合，这在目前应该已经在你的技术能力范围之内。（从技术上讲，`querySelectorAll` 返回的不是数组，而是一个“NodeList”。尽管如此，该对象仍然可以使用 `forEach` 进行遍历。）
@@ -6415,19 +3961,23 @@ references.forEach(function(reference) {
 一旦知道每个元素都有一个 `textContent` 属性（javascript dom 元素打印内容），第二个任务也很简单：
 
 ```
+
 paragraphs.forEach(function(paragraph) {
 
   console.log(paragraph.textContent);
+
 });
+
 ```
 
 将所有内容整合在一起，就得到了列表 10.9 所示的 `wikp` 脚本。
 
-**列表 10.9：** 最终的维基百科段落脚本。
+**列表 10.9:** 最终的维基百科段落脚本。
 
 `wikp`
 
 ```
+
 #!/usr/local/bin/node
 
 // Returns the paragraphs from a Wikipedia link, stripped of reference numbers.
@@ -6471,11 +4021,13 @@ urllib.request(url, { followRedirect: true }, function(error, data, response) {
   });
 
 });
+
 ```
 
 让我们看看结果如何：
 
 ```
+
 $ ./wikp https://es.wikipedia.org/wiki/JavaScript
 
 .
@@ -6495,12 +4047,15 @@ sobre el lenguaje. JSLint analiza el código JavaScript para que este quede
 conforme con un conjunto de normas y directrices y que aseguran su correcto
 
 funcionamiento y mantenibilidad.
+
 ```
 
 成功！通过在终端中向上滚动，我们现在可以选择所有文本并将其粘贴到 Google 翻译或我们选择的文本编辑器中。在 macOS 上，我们可以通过管道（[`www.learnenough.com/command-line-tutorial/inspecting_files#sec-wordcount_and_pipes`](https://www.learnenough.com/command-line-tutorial/inspecting_files#sec-wordcount_and_pipes)）将结果传递给 `pbcopy`，它会自动结果复制到 macOS 剪贴板（也称为“clipboard”）：
 
 ```
+
 $ ./wikp https://es.wikipedia.org/wiki/JavaScript | pbcopy
+
 ```
 
 此时，粘贴到 Google 翻译（或其他任何地方）将粘贴完整文本^(5)
@@ -6536,18 +4091,23 @@ $ ./wikp https://es.wikipedia.org/wiki/JavaScript | pbcopy
 **图 11.4:** 在 GitHub 上获取克隆 URL。
 
 ```
+
 $ git clone <clone URL> <username>.github.io
-```
-
-如果你通过遵循 *Learn Enough CSS & Layout to Be Dangerous* 已经在 `<username>.github.io` 拥有了一个仓库，你应该通过省略 `git clone` 的第二个参数，将画廊应用（不重命名）克隆到默认目录：
 
 ```
+
+如果你通过遵循 *Learn Enough CSS & Layout to Be Dangerous* 已有了一个仓库在 `<username>.github.io`，你应该通过省略 `git clone` 的第二个参数，将画廊应用（不重命名）克隆到默认目录：
+
+```
+
 $ git clone <clone URL>     # 如果你已经有了 <username>.github.io 使用此命令
+
 ```
 
 这将创建一个名为 `le_js_full` 的本地仓库，你可以将其作为复制所需文件的参考。特别是，你需要画廊的 `index.html` 以及大、小图片：
 
 ```
+
 # 仅在你已经拥有 <username>.github.io 时运行这些命令
 
 # 假设遵循了 Learn Enough CSS & Layout to Be Dangerous。
@@ -6557,6 +4117,7 @@ $ cd le_js_full/
 $ cp gallery/index.html /path/to/repo/<username>.github.io/gallery/
 
 $ cp -r images/* /path/to/repo/<username>.github.io/images/
+
 ```
 
 （如果你在 `<username>.github.io` 已经有一个仓库，但该仓库不是遵循 *Learn Enough CSS & Layout to Be Dangerous* 的结果，我假设你已经具备足够的技术水平来自己解决问题。）
@@ -6564,19 +4125,25 @@ $ cp -r images/* /path/to/repo/<username>.github.io/images/
 无论哪种情况，一旦应用组合完成后，你就可以使用 Jekyll 静态站点生成器运行它。*Learn Enough CSS & Layout to Be Dangerous* 中的 Jekyll 设置说明 ([https://www.learnenough.com/cssand-layout-tutorial/struct-layout#sec-jekyll]) 解释了如果你的系统中尚未安装 Jekyll，该如何安装它。简短版本是是你首先需要安装 *Bundler*：
 
 ```
+
 $ gem install bundler -v 2.2.17
+
 ```
 
 然后使用 `bundle` 命令安装仓库中包含的 `Gemfile` 里列出的 `jekyll` 宝石：
 
 ```
+
 $ bundle _2.2.17_ install
+
 ```
 
 一旦安装了 Jekyll，你就可以使用 Bundler 执行正确版本的 `jekyll` 程序来启动示例网站：
 
 ```
+
 $ bundle exec jekyll serve
+
 ```
 
 此时，应用将运行在 localhost:4000 上，并且看起来应该像 图 11.5 所示。
@@ -6590,36 +4157,52 @@ $ bundle exec jekyll serve
 作为最后的准备工作，我们将为主画廊函数 `activateGallery` 添加一个存位（stub），我们将在本章的其余部分填充该函数。由于我们将使用原生 JavaScript 完成所有工作，因此不需要包含任何 Node 模块、运行 `browserify` 等。事实上，我们需要做的只是创建一个目录和 JavaScript 文件：
 
 ```
+
 $ mkdir js
 
 $ touch js.js
+
 ```
 
 为了开始，我们将在 `js.js` 中添加一个初始警告（图 11.1）：
 
 ```javascript
+
 function activateGallery() {
+
   alert("Hello from the gallery!");
+
 }
+
 ```
 
 在文件的 head 部分，我们将使用 `src` 属性包含画廊 JavaScript，并添加一个事件监听器在 DOM 加载后自动运行画廊函数（图 11.2）。结果如图 11.2 所示：
 
 ```html
+
 <head>
+
   .
+
   .
+
   <link rel="stylesheet" href="/css/main.css">
 
   <script src="/js/gallery.js"></script>
 
   <script>
+
     document.addEventListener("DOMContentLoaded",function() {
+
       activateGallery();
+
     });
+
   </script>
+
 </head>
-```
+
+
 
 现在访问本地页面确认 JavaScript 已正确加载（图 11.6）：
 
@@ -6645,10 +4228,6 @@ function activateGallery() {
 
 `gallery/index.html`
 
-
-
-
-
 正如第 10.3 节中简要提到的，从技术上讲，`querySelectorAll` 的结果是一个“NodeList”对象而不是数组，但为了迭代的目的，我们可以将其视为数组。具体来说，我们可以使用 `forEach` 方法遍历它的元素。
 
 ```
@@ -6670,6 +4249,7 @@ thumbnails.forEach(function(thumbnail) {
   });
 
 });
+
 ```
 
 这安排了监听我们在代码列表 9.13 中看到的同一个“click”事件。
@@ -6704,27 +4284,38 @@ mainImage.setAttribute("src", newImageSrc);
 如果你一直在紧跟步骤，你现在已经意识到除了 `newImageSrc`（新图像的源）之外，我们需要的所有内容都已创建。幸运的是，示例应用程序已经安排在图像标签本身中编码了必要的路径。假设我们点击了太平洋日落图像，其 HTML 如下：
 
 ```html
-<<div>
+
+<div>
+
   <img src="/images/small/sunset.jpg" alt="sunset"
+
        data-large-version="/images/large/sunset.jpg"
+
        data-title="Pacific Sunset"
+
        data-description="A sunset over the Pacific Ocean.">
+
 </div>
+
 ```
 
 在像这样的标签中编码数据是非侵入式 JavaScript（unobtrusive JavaScript）的一个重要方面，这涉及到永远不要将 JavaScript 放在 HTML 体内部。当在 HTML 标签上使用这些数据属性时，浏览器会自动创建一个特殊的 `dataset` 属性，其值与 HTML 源代码对应如下：
 
 ```
+
 data-large-version -> thumbnail.dataset.largeVersion
+
 data-title         -> thumbnail.dataset.title
+
 data-description   -> thumbnail.dataset.description
+
 ```
 
 通常，HTML 元素 `object` 上的数据标签 `data-foo-bar-baz` 对应变量 `object.dataset.fooBarBaz`，最后的属性采用驼峰命名法（CamelCase）（图 2.3）。
 
 现在我们有了将主图替换为点击图像所需的一切。如果你想自己尝试，这将是一个非常好的练习。照旧，如果你遇到问题，请使用调试控制台（Box 5.1）。答案出现在代码列表 11.4 中。
 
-**列表 11.4：** 设置画库主图像。
+**列表 11.4:** 设置画库主图像。
 
 `js/gallery.js`
 
@@ -6732,18 +4323,31 @@ data-description   -> thumbnail.dataset.description
 // 激活图像库。
 // 主要任务是为画库中的每个图像附加事件监听器
 // 并在点击时做出相应响应。
+
 function activateGallery() {
+
   let thumbnails = document.querySelector("#gallery-thumbs").
+
                             querySelectorAll("img");
+
   let mainImage = document.querySelector("#gallery-photo img"); 
+
   thumbnails.forEach(function(thumbnail) {
+
     thumbnail.addEventListener("click", function() {
+
       // 将点击的图像设置为主图。
+
       let newImageSrc = thumbnail.dataset.largeVersion;
+
       mainImage.setAttribute("src", newImageSrc);
+
     });
+
   });
+
 }
+
 ```
 
 除了更改 `src` 属性外，我们应该更改替换图像的 `alt` 属性。添加这一细节留作练习（第 11.2.1 节）。
@@ -6754,17 +4358,12 @@ function activateGallery() {
 
 2. 正如正文中所暗示的，可以更改代码列表 11.4 中的 `thumbnails` 定义以消除链式调用。我们首先注意到画库缩略图是位于 CSS id 为 `gallery-thumbs` 的元素内部 `div` 标签内的 `img` 标签；方便的是，我们可以使用右角括号 `>` 表示“内部”。通过将代码列表 11.6 中的 `???` 替换为相应的标签，展示可以将 `thumbnails` 的定义压缩为单行。*注意*：我通常建议选择一种约定并坚持下去，但目前我们将保持 `querySelectorAll` 和 `querySelector` 的参数不一致（一个带角括号，一个不带），以强调任何表示法都是行的。
 
-
-
-
-
 **Listing 11.6:** 将 `thumbnails`（缩略图）压缩为一行。
 
 `js/gallery.js`
 
 ```
 // 激活图像图库。
-
 // 主要任务是为图库中的每个图像绑定事件监听器
 // 并在点击时做出相应响应。
 
@@ -6781,6 +4380,7 @@ function activateGallery() {
   .
 
 }
+
 ```
 
 ## 11.3 设置图像为当前
@@ -6790,6 +4390,7 @@ function activateGallery() {
 如 Listing 11.3 所示，HTML 源代码中使用一个名为 `current` 的 CSS 类来指示当前图像：
 
 ```
+
 <div class="current">
 
    <img src="/images/small/beach.jpg" alt="Venice Beach"
@@ -6801,14 +4402,19 @@ function activateGallery() {
         data-description="加州威尼斯海滩的俯拍图。">
 
 </div>
+
 ```
 
 这由于 `main.css` 中的某行代码产生了橙色的框阴影：
 
 ```css
+
 .
+
 .
+
 .
+
 .gallery-thumbs .current img {
 
   box-shadowshadow: 0 0 0 5px #ed6e2f;
@@ -6818,8 +4424,11 @@ function activateGallery() {
 }
 
 .
+
 .
+
 .
+
 ```
 
 我们的基本策略是向 Listing 11.4 中的监听器添加代码，从当前缩略图上移除当前图像指示，并将其移动到被点击的缩略图上。这比看起来要稍微复杂一点，因为该类不在图像上，而是在环图像的 `div` 上。幸运的是，JavaScript 让我们能够轻松地上下遍历 DOM，因此我们可以轻松访问树中上一层的 DOM 元素（图 9.6）——所谓的父节点。
@@ -6832,13 +4441,17 @@ function activateGallery() {
 由于页面上只有一个类名为 `current` 的元素，我们可以使用 `querySelector` 选择它：
 
 ```javascript
+
 document.querySelector(".current");
+
 ```
 
 但我们如何移除该类呢？啊：javascript dom 移除类。这引导我们使用 `classList` 方法及其连带的 `remove` 方法：
 
 ```javascript
+
 document.querySelector(".current").classList.remove("current");
+
 ```
 
 这里有很多方法链，但其意义足够清晰。
@@ -6846,7 +4459,9 @@ document.querySelector(".current").classList.remove("current");
 幸运的是，一旦我们知道如何找到元素的父节点（javascript dom 父节点），我们就可以使用相应的 `classList.add` 方法（javascript dom 添加类）来添加所需的类：
 
 ```javascript
+
 thumbnail.parentNode.classList.add("current");
+
 ```
 
 将这些组合在一起意味着我们已经完成了！结果出现在 Listing 11.7 中（包含了解决第 11.2.1 节中练习题的答案）。
@@ -6856,8 +4471,8 @@ thumbnail.parentNode.classList.add("current");
 `js/gallery.js`
 
 ```javascript
-// 激活图像图库。
 
+// 激活图像图库。
 // 主要任务是为图库中的每个图像绑定事件监听器
 // 并在点击时做出相应响应。
 
@@ -6868,17 +4483,27 @@ function activateGallery() {
   let mainImage = document.querySelector("#gallery-photo img");
 
   thumbnails.forEach(function(thumbnail) {
+
     thumbnail.addEventListener("click", function() {
+
       // 设置当前图像为显示图像。
+
       let newImageSrc = thumbnail.dataset.largeVersion;
+
       mainImage.setAttribute("src", newImageSrc);
 
       // 更改哪个图像是当前的。
+
       document.querySelector(".current").classList.remove("current");
+
       thumbnail.parentNode.classList.add("current");
+
     });
+
   });
+
 }
+
 ```
 
 作为 Listing 11.7 中代码的结果，点击缩略图会自动更新当前图像，无论是位于蒙特利湖山（图 11.12）还是加利福尼亚州的亨廷顿（图 11.13）。
@@ -6905,13 +4530,17 @@ Listing 11.7 中的代码在第 11.2 节中有些重复，特别是 `current` �
 为了获取点击图像的值，我们使用第 11.2 节中引入的 `dataset` 属性：
 
 ```javascript
+
 thumbnail.dataset.title
+
 ```
 
 用于标题，
 
 ```javascript
+
 thumbnail.dataset.description
+
 ```
 
 用于描述。
@@ -6919,8 +4548,11 @@ thumbnail.dataset.description
 最后的拼图是我们在第 9.3 节中看到的 `innerHTML` 属性，它可以让我们直接更新 DOM 元素的内部 HTML：
 
 ```javascript
+
 title.innerHTML         = thumbnail.dataset.title;
+
 description.innerHTML = thumbnail.dataset.description;
+
 ```
 
 将所有内容组合在一起，得到了 `activateGallery` 函数的最终版本，如 Listing 11.8 所示。
@@ -6930,8 +4562,8 @@ description.innerHTML = thumbnail.dataset.description;
 `js/gallery.js`
 
 ```javascript
-// 激活图像图库。
 
+// 激活图像图库。
 // 主要任务是为图库中的每个图像绑定事件监听器
 // 并在点击时做出相应响应。
 
@@ -6950,33 +4582,43 @@ function activateGallery() {
   let description = galleryInfo.querySelector(".description");
 
   thumbnails.forEach(function(thumbnail) {
+
     thumbnail.addEventListener("click", function() {
+
       // 设置点击的图像为显示图像。
+
       let newImageSrc = thumbnail.dataset.largeVersion;
+
       mainImage.setAttribute("src", newImageSrc);
 
       // 更改哪个图像是当前的。
+
       document.querySelector(".current").classList.remove("current");
+
       thumbnail.parentNode.classList.add("current");
 
       // 更新图像信息。
+
       title.innerHTML         = thumbnail.dataset.title;
+
       description.innerHTML = thumbnail.dataset.description;
+
     });
+
   });
+
 }
+
 ```
-
-
-
 
 我们的最后一次更改是同步新访客的三列内容，以便第一列（当前图像指示器）、第二列（主图）和第三列（图像信息）全部保持一致。这只需要像列表 11.9 中那样更新画廊索引的 HTML 即可。
 
-**列表 11.9：** 三列均已同步。
+**列表 11.9:** 三列均已同步。
 
 `gallery/index.html`
 
 ```
+
 ---
 
 layout: default
@@ -6994,7 +4636,9 @@ title: Gallery for Learn Enough JavaScript to Be Dangerous
       <img src="/images/small/beach.jpg" alt="Venice Beach"
 
            data-large-version="/images/large/beach.jpg"
+
            data-title="Venice Beach"
+
            data-description="An overhead shot of Venice Beach, California.">
 
     </div>
@@ -7004,61 +4648,72 @@ title: Gallery for Learn Enough JavaScript to Be Dangerous
     .
 
     .
+
   </div>
+
   <div class="col col-content">
+
     <div class="gallery-photo" id="gallery-photo">
+
       <img src="/images/large/beach.jpg" alt="Venice Beach">
+
    </div>
+
  </div>
+
  <div class="col col-aside gallery-info" id="gallery-info">
+
    <h3 class="title">Venice Beach</h3>
+
    <p class="description">An overhead shot of Venice Beach, California.</p>
+
   </div>
+
 </div>
+
 ```
 
 现在，我们的所有三列内容都达成了一致，无论迎接新访客的是来自威尼斯斯海滩的照片（图 11.14）、一只友善的海龟（图 11.15）、洛杉矶市中心的华特·迪士尼音乐厅（图 11.16），还是罗马的弗拉白圆形剧场（斗兽场）（图 11.17）。
 
 ![images](img/11fig14.jpg)
 
-**图 11.14：** 威尼斯斯海滩的俯拍图。
+**图 11.14:** 威尼斯斯海滩的俯拍图。
 
 ![images](img/11fig15.jpg)
 
-**图 11.15：** 一只友善的海龟。
+**图 11.15:** 一只友善的海龟。
 
 ![images](img/11fig16.jpg)
 
-**图 11.16：** 洛杉矶市中心的华特·迪士尼音乐厅。
+**图 11.16:** 洛杉矶市中心的华特·迪士尼音乐厅。
 
 ![images](img/11fig17.jpg)
 
-**图 11.17：** 罗马的弗拉白圆形剧场（斗兽场）。
+**图 11.17:** 罗马的弗拉白圆形剧场（斗兽场）。
 
 ### 11.4.1 部署
 
 由于所有必要文件（包括所有的 JavaScript）完全位于我们的项目中（与之前章节中的某些 NPM 模块不同），我们可以通过简单的 `git push` 将此应用部署到 GitHub Pages：
 
 ```
+
 $ git add -A
 
 $ git commit -m "Finish the JavaScript gallery"
 
 $ git push
+
 ```
 
 访问 `<username>.github.io` 上的画廊并点击图像即可确认这一点：我们已经将动态 JavaScript 应用部署到了实时 Web 上（图 11.18）！（要学习如何使用自定义域名而非 github.io 子域名托管 GitHub Pages ，请参见免费教程 *Learn Enough Custom Domains to Be Dangerous*（[`www.learnenough.com/custom-domains`](https://www.learnenough.com/custom-domains)）。
 
 ![images](img/11fig18.jpg)
 
-**图 11.18：** 实时 Web 上的 JavaScript 画廊应用。
+**图 11.18:** 实时 Web 上的 JavaScript 画廊应用。
 
 ### 11.4.2 练习
 
 1. 在实时网站上点击新的缩略图时（图 11.14），可以确认这一点：我们已经将动态 JavaScript 应用部署到了实时 Web 上！
-
-
-
 
 虽然 Sinatra 适用于较大的应用程序，但它是一个更简单的框架，并包含在 *Learn Enough Ruby to Be Dangerous*（[`www.learnenough.com/ruby`](https://www.learnenough.com/ruby)) 一书中。Rails 是我构建数据库 Web 应用程序的首选框架，并在 *Ruby on Rails Tutorial*（[`railstutorial.org/book`](https://railstutorial.org/book)) 中有详尽介绍。此外，两者都可以配合 JavaScript 使用，其中 Rails/JavaScript 的集成为受欢迎。
 
@@ -7068,3 +4723,4 @@ $ git push
 * Ruby on Rails Tutorial
 
 最后，对于想要在技术造诣上建立尽可能坚实基础的人来说，Learn Enough Society ([`www.learnenough.com/society-tutorial`](https://www.learnenough.com/society-tutorial))是一项订阅服务，它提供了所有 Learn Enough 书籍的特殊在线版本，以及超过 40 小时的流媒体视频教程。去看看吧，并告诉我你的感受！
+

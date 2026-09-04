@@ -1,15 +1,11 @@
-# Javascript 基础入门指南 CIW 应用开发者系列
 
-
-
-
-
+# JavaScript 基础入门指南 CIW 应用开发者系列
 
 ![](img/36826ab6f960cbecb919bb0737cbffa0_0_0.png) ![](img/36826ab6f960cbecb919bb0737cbffa0_0_1.png)
 
 # CIW 互联网技能认证计划
 
-CIW 互联网技能认证计划面向致力于设计、开发、管理、安全保障和支持互联网或局域网服务的专业人士。它为学习、展示和证明在与 Web 相关的技术方面的能力提供了独特机会。所有 CIW 认证均由国际网页主主协会（IWA）和互联网专业人士协会（AIP）背书。在欧洲，这些认证是与国际互联网认证协会（ICII）合作提供的。
+CIW 互联网技能认证计划面向致力于设计、开发、管理、安全保障和支持互联网或局域网服务的专业人士。它为学习、展示和证明在与 Web 相关的技术方面的能力提供了独特机会。所有 CIW 认证均由国际网页主协会（IWA）和互联网专业人士协会（AIP）背书。在欧洲，这些认证是与国际互联网认证协会（ICII）合作提供的。
 
 ![](img/36826ab6f960cbecb919bb0737cbffa0_2_0.png)
 
@@ -19,9 +15,9 @@ CIW 互联网技能认证提供了全行业对互联网和 Web 知识与技能�
 
 # 认证考试
 
-CIW 认证考试由 Prometric, Inc. 通过全球范围内的授权 Prometric 测试中心（APCs）以及虚拟大学企业（VUE）测试中心进行。考试旨在衡量技术熟练程度，并确立成为 CIW 所需的核心能力水平。拨打 Prometric, Inc. 电话1-800-380-EXAM 安排任何 CIW 考试，拨打 1-877-803-6867 安排 CompTIA i-Net 考试。访问 www.vue.com 通过 VUE 测试中心安排任何 CIW 考试。
+CIW 认证考试由 Prometric, Inc. 通过全球范围内的授权 Prometric 测试中心（APCs）以及虚拟大学企业（VUE）测试中心进行。考试旨在衡量技术熟练程度，并确立成为 CIW 所需的核心能力水平。拨打 Prometric, Inc. 电话 `1-800-380-EXAM` 安排任何 CIW 考试，拨打 `1-877-803-6867` 安排 CompTIA i-Net 考试。访问 `www.vue.com` 通过 VUE 测试中心安排任何 CIW 考试。
 
-我们鼓励您与选择的 CIW 培训伙伴联系，以进一步了解有关厂商中性的 CIW 互联网技能计划。要查找 CIW 培训伙伴，请访问 www.CIWcertified.com 并选择“培训定位器”（Training Locator）链接，根据位置、合作伙伴或课程选择您所需的培训伙伴。
+我们鼓励您与选择的 CIW 培训伙伴联系，以进一步了解有关厂商中性的 CIW 互联网技能计划。要查找 CIW 培训伙伴，请访问 `www.CIWcertified.com` 并选择“培训定位器”（Training Locator）链接，根据位置、合作伙伴或课程选择您所需的培训伙伴。
 
 # CIW 认证与路径
 
@@ -40,88 +36,70 @@ CIW 认证考试由 Prometric, Inc. 通过全球范围内的授权 Prometric 测
 
 **Master CIW 设计师：** 由两个五天的系列组成，每个系列代表一个互联网职位角色，并有其自己的考试（网站设计师和电子商务设计师系列）。
 
-
 # Master CIW 企业级开发人员与开发人员系列
 
 CIW 应用开发人员使用快速应用程序工具和组件技术构建客户端和服务器端 Web 应用，以实现双层数据库连接解决方案。
 
 | 基础 / i-Net+ 5天系列 CIW 考试 1D0-410 和/或 i-Net 考试 ICD-001 | 目标群体 |
 | :--- | :--- |
-| 网页主、软件开发人员、应用程序程序员以及客户端/服务器开发人员。 |
+| 网页主、软件开发人员、应用程序程序员以及客户端/服务器开发人员。 | |
+
 | 岗位职责 | 使用客户端和服务器端 Web 应用创建交互式 Web 页面；使用组件技术从应用程序访问关系型数据库系统；为环境变量创建参数。 |
+| :--- | :--- |
+
 | 先决条件 | 学生必须具备： |
+| :--- | :--- |
 | Web 语言 5天系列 JavaScript 考试 1D0-435 Perl 考试 1D0-437 | • CIW Foundations 系列认证（考试 1D0-410），和 |
 | 应用开发人员 5天系列 CIW 考试 1D0-430 | • CIW 语言认证（JavaScript 1D0-435 和 Perl 1D0-437 考试）， |
 | Java 编程 5天系列 Sun 认证考试 | 或对于寻求 Master CIW 企业级开发人员认证的学生具有同等经验。 |
-| 面向对象分析与设计 5天系列 CIW 考试 1D0-438 | 学生在参加 CIW 开发人员 1D0-430 考试之前应参加以下两门课程（或具有同等经验）：<br>• 使用 Perl 的 CGI 基础（2天)<br>• 动态服务器页面（3天） |
+| 面向对象分析与设计 5天系列 CIW 考试 1D0-438 | 学生在参加 CIW 开发人员 1D0-430 考试之前应参加以下两门课程（或具有同等经验）：<br>• 使用 Perl 的 CGI 基础（2天）<br>• 动态服务器页面（3天） |
 | 数据库专家 5天系列 2000年12月可用 CIW 考试 1D0-441 | 认证奖励：要获得 CIW 企业级开发人员认证，学生必须通过基础 1D0-410、Web 语言 1D0-435 和应用开发人员 1D0-430、OO 分析 1D0-438、数据库专家 1D0-441 以及企业专家 1D0-440 考试，由 Prometric 或 VUE 管理。 |
-| 企业专家 10天系列 CIW 考试 1D0-340 | 鼓励候选人参加 2000 年发布的考试，但在所有考试于2001 年发布之前无法获得完整证书。 |
+| 企业专家 10天系列 CIW 考试 1D0-340 | 鼓励候选人参加 2000 年发布的考试，但在所有考试于 2001 年发布之前无法获得完整证书。 |
 | Master CIW 企业级开发人员 | 要获得 CIW 专业人士称号，必须通过基础 1D0-410 和任何 CIW 职位角色考试。 |
 
 **为互联网专业人士提供通用标准**
 
-
-
-
-
-
 ## 开发者
+
 Lisa Pease
 
 ## 贡献者
+
 Brian Danks
 
 ## 编辑
+
 Susan M. Lane
-
-
-
-
-
-
-
-
 
 ![](img/36826ab6f960cbecb919bb0737cbffa0_9_0.png)
 
-
 为什么？ ................................................................................................... 7-3
 
-
-
-
-
-
 理解框架与目标 ................................................................ 9-3
+
 更改两个或多个框架............................................................................... 9-23
+
 定位窗口............................................................................... 9-28
+
 窗口、函数与变量............................................................... 9-28
 
-
 图像热地图........................................................................................... 10-4
+
 为图像热地图添加脚本............................................................... 10-8
 
-
 自定义对象的优势................................................................... 11-3
+
 创建 JavaScript 对象：构造函数.................................................. 11-4
+
 创建对象方法............................................................................... 11-7
+
 复杂的自定义对象........................................................................... 11-20
 
-
 错误类型....................................................................................... 附录-7
+
 运行时错误...................................................................................... 附录-10
+
 逻辑错误....................................................................................... 附录-12
-
-
-
-
-
-
-
-
-
-
-
 
 ## Prosoft 课程软件
 
@@ -131,7 +109,7 @@ Susan M. Lane
 
 ## 课程描述
 
-欢迎学习 JavaScript 基础，这是一门为期两天的课程，旨在教你 JavaScript 语言的特性。本课程将赋予你设计平台无关解决方案的技能，极大地增加了你的 站价值。第一天将学习 JavaScript 模型、控制程序流、验证表单、制作动画、定位框架并创建 Cookie。第二天将基于你所学的知识，构建功能强大且有趣的网页。学习如何与用户交互。
+欢迎学习 JavaScript 基础，这是一门为期两天的课程，旨在教你 JavaScript 语言的特性。本课程将赋予你设计平台无关解决方案的技能，极大地增加了你的站价值。第一天将学习 JavaScript 模型、控制程序流、验证表单、制作动画、定位框架并创建 Cookie。第二天将基于你所学的知识，构建功能强大且有趣的网页。学习如何与用户交互。
 
 ## 课程目标
 
@@ -180,41 +158,41 @@ Susan M. Lane
 | 视频适配器 | 至少 4 MB |
 | 显示器 | 15 英寸显示器 |
 | 网络集线器 | 两个 10 口 10BaseT 或 100BaseTX (10 或 100 Mbps) 集线器 |
-| 路由器 | 带有三块网卡的的多主机系统（Windows NT 4.0 服务器)* |
+| 路由器 | 带有三块网卡的的多主机系统（Windows NT 4.0 服务器）* |
 
 > * 必须符合通用 CIW 硬件要求。
-
-
-
-
 
 ### 软件
 
 用于完成书中练习的计算机推荐软件配置如下。
 
-- *Microsoft Windows 95 或 98*。
+- `Microsoft Windows 95 或 98`。
 - Internet Explorer 4.0 或更高版本（也可以使用 Netscape Navigator 4.0）。
 - 如果你愿意，可以使用 Windows NT 作为你的平台。这一选择不会对实验课程产生显著影响，尽管教师可能需要指导学生如何登录等。否则，实验课程将按照说明正常运行。
 
 ### 连接性
 
-本课程需要连接互联网。使用 28.8-Kbps 调制解调器即可达到最低要求；但建议使用更高的连接速率。TCP/IP (IPv4) 是本课程使用的网络协议。每台系统都应配置为使所有计算机都属于同一个工作组，并能够访问互联网。
+本课程需要连接互联网。使用 `28.8-Kbps` 调制解调器即可达到最低要求；但建议使用更高的连接速率。TCP/IP (IPv4) 是本课程使用的网络协议。每台系统都应配置为使所有计算机都属于同一个工作组，并能够访问互联网。
 
 ### 本书中使用的约定和图形
 
 Prosoft 课程教材使用了以下约定。
 
-### 术语
+#### 术语
+
 在页边栏中定义的技术术语在文中首次出现时以**粗体**表示。并不是每个粗体单词都是需要定义的术语。
 
-### 练习文本
+#### 练习文本
+
 你在练习中输入的文本将以**粗体**显示。你在练习中访问或更改的组件名称也将以**粗体**显示。
 
-### 符号
+#### 符号
+
 *关于截图、练习或其他文本的符号或注释用斜体表示。*
 
-### 程序代码或命令
-用于程序代码或操作系统命令的文本采用 *Lucida Sans* 字体，即等宽字体。
+#### 程序代码或命令
+
+用于程序代码或操作系统命令的文本采用 `Lucida Sans` 字体，即等宽字体。
 
 Prosoft 课程教材使用了以下图形。
 
@@ -284,16 +262,13 @@ JavaScript 在 Navigator 2.0 版本中首次获得支持，从以来在 Internet
 
 由于 JavaScript 程序设计为运行在 HTML 文档内部，因此它们不受特定硬件平台或操作系统的限制。然而，JavaScript 程序取决于特定的用户代理。通常，这些用户代理是浏览器。记住，每个用户代理实现 JavaScript 的方式不同。不同的厂商和用户代理版本可能会增加 JavaScript 实现的复杂性。由于你通常无法保证用户使用特定的用户代理访问你的 JavaScript 代码，因此请务必创建能够在尽可能平台上运行的代码。
 
-
-
-
-
 ## JavaScript 实现了快速开发
 
-由于 JavaScript 不需要耗时的编译，因此可以在很短的时间内开发脚本。这一优势得到了进一步增强，事实是：大多数界面特性（如表单、框架和其他**图形用户界面 (GUI)** 元素）都由浏览器和 HTML 代码处理。JavaScript 程序员无需担心创建或处理应用程序中的这些元素。
+由于 JavaScript 不需要耗时的编译，因此可以在很短的时间内开发脚本。这一优势得到了进一步增强，事实是：大多数界面特性（如表单、框架和其他 `图形用户界面 (GUI)` 元素）都由浏览器和 HTML 代码处理。JavaScript 程序员无需担心创建或处理应用程序中的这些元素。
 
-图形用户界面 (GUI)
-一种通过菜单和屏幕图标提供图形化导航的程序。
+> **图形用户界面 (GUI)**
+>
+> 一种通过菜单和屏幕图标提供图形化导航的程序。
 
 ## JavaScript 相对易于学习
 
@@ -309,7 +284,7 @@ JavaScript 并不具备与 Java 关联相关的复杂语法和规则。即使你
 
 如今的专业程序员倾向于使用 C++、Visual Basic 或 Java 编写代码。这三种高级语言是强大的，并为程序员开发者提供了丰富的功能。它们也是“面向对象”的语言。在编程中，对象封装了指定的属性和行为。它们通常与相似的对象一起归类。就像现实生活中的对象一样，JavaScript 对象具有某些属性和行为。
 
-开发者通过其他三个术语来引用属性和行为：属性（properties）、值（values）和方法（methods）。属性代表对象的各种特征，如高度、颜色、字体大小、句子长度等。方法是属性可以执行的操作，例如计算、屏幕移动或在窗口中写入文本。方法描述属性的行为。
+开发者通过其他三个术语来引用属性和行为：`属性（properties）`、`值（values）` 和 `方法（methods）`。属性代表对象的各种特征，如高度、颜色、字体大小、句子长度等。方法是属性可以执行的操作，例如计算、屏幕移动或在窗口中写入文本。方法描述属性的行为。
 
 为了进一步解释属性、值和方法，请从基于对象的角度考虑一支笔。它显然是一个对象。笔有确定的、可识别的属性，例如长度、墨水颜色、笔尖样式等。然而，两支笔可能具有相似的属性（例如相同的长度、颜色），但它们这些属性的值可能不同。换句话说，所有的笔都有颜色（即属性），但并不是所有的笔都具有相同的颜色（即值）。
 
@@ -319,7 +294,7 @@ JavaScript 并不具备与 Java 关联相关的复杂语法和规则。即使你
 
 ## Java 和 JavaScript
 
-尽管名称相似，但 Java 和 JavaScript 是不同的语言。Java 是一种完全面向对象的编程语言。Java 同样由太阳系统公司（Sun Microsystems）开发，可用于创建独立应用程序和一种称为 Java Applet 的特殊微应用程序。Applet 用 Java 编写、编译，然后通过  中的 `<APP>` 标签进行引用。Applet 可以为网站提供各种附加功能。
+尽管名称相似，但 Java 和 JavaScript 是不同的语言。Java 是一种完全面向对象的编程语言。Java 同样由太阳系统公司（Sun Microsystems）开发，可用于创建独立应用程序和一种称为 Java Applet 的特殊微应用程序。Applet 用 Java 编写、编译，然后通过 `<APP>` 标签进行引用。Applet 可以为网站提供各种附加功能。
 
 JavaScript 是一种基于对象的脚本语言。虽然由于使用了对象，它使用了一些 Java 的表达式语法和基础程序流控制，但 JavaScript 是独立的，不依赖 Java。事实上，两者之间的任何相似之处都是由于它们都使用了对象。JavaScript 并非由同一公司开发，也不是为了 Java 而开发。图 1-1 说明了这些相似性是偶然的。
 
@@ -352,11 +327,11 @@ VBScript 对传统对象类的依赖少得多，更多地依赖动态的、内�
 
 正如 JavaScript 是一个与 Java 有相似之处的独立语言，VBScript 是一个与 Visual Basic 有相似之处的语言。为了进一步说明 Visual Basic 和 VBScript 的关系，你可以将图 1-1 中的 Java 和 JavaScript 替换为 Visual Basic 和 VBScript。
 
-## JavaScript、JavaScript 和 ECMAScript
+## JavaScript、JScript 和 ECMAScript
 
-微软对 JavaScript 的实现称为 JavaScript。这些实现之间存在差异。尽管某些差异是微小的，但另一些会导致兼容性问题。
+微软对 JavaScript 的实现称为 JScript。这些实现之间存在差异。尽管某些差异是微小的，但另一些会导致兼容性问题。
 
-1997 年，JavaScript 的发明者 Netscape 宣布欧洲国际协会（ECMA）已批准 JavaScript 为国际标准。在某些圈子中，JavaScript 现在正式被称为 ECMAScript，许多人希望它被广泛接受。ECMA 标准旨在减少 JavaScript 之间的差异。有关 ECMAScript 的更多信息，请访问 ECMA 主页：http://www.ecma.com
+1997 年，JavaScript 的发明者 Netscape 宣布欧洲国际协会（ECMA）已批准 JavaScript 为国际标准。在某些圈子中，JavaScript 现在正式被称为 ECMAScript，许多人希望它被广泛接受。ECMA 标准旨在减少 JavaScript 之间的差异。有关 ECMAScript 的更多信息，请访问 ECMA 主页：`http://www.ecma.com`
 
 现在你已经了解其他语言与 JavaScript 的关系，准备好学习如何以及何时使用 JavaScript。
 
@@ -378,35 +353,31 @@ LiveWire 技术包含了可以操作 Informix、Oracle 和 Sybase 等关系型�
 
 本课程教你如何实现客户端应用程序。从向用户发送消息或启动新窗口，到处理框架或创建你自己的对象，客户端 JavaScript 允许你构建许多可扩展的解决方案。
 
-
-
-
-
 ## 将 JavaScript 嵌入 HTML
 
 JavaScript 存在于 HTML 文档中。它通常使用 `<SCRIPT>` 标签放入 HTML 文档中。你可以向 HTML 文档的 `<head>` 部分或 `<body>` 部分（或两者）添加脚本。之后，你还将学习如何将脚本指令直接嵌入到某些 HTML 标签中。这种技术被称为内联脚本（inline scripting）。
 
 带有 JavaScript 的 HTML 文件的基本结构如下（粗体部分为 JavaScript）：
 
-```
+```html
 <HTML>
 <HEAD>
 <TITLE>此处是页面标题</TITLE>
 <SCRIPT>
---
+<!--
 JavaScript 代码放在这里
 //
 </SCRIPT>
 </HEAD>
-<body>
+<BODY>
 此处是页面正文
 <SCRIPT>
---
+<!--
 JavaScript 代码也在这里
 //
 </SCRIPT>
 此处也是页面正文
-</body></HTML>
+</BODY></HTML>
 ```
 
 ![](img/36826ab6f960cbecb919bb0737cbffa0_32_0.png)
@@ -421,13 +392,13 @@ JavaScript 代码也在这里
 
 要创建一个外部 JavaScript 文件，请使用 `.js` 文件扩展名。然后你可以在 `<head>` 或 `<body>` 标签内编写如下代码：
 
-```
+```html
 <SCRIPT LANGUAGE="JavaScript" SRC="JavaScriptCode.js"> </SCRIPT>
 ```
 
 以下是一个你可以包含在外部文件中的非常简单的脚本示例：
 
-```
+```javascript
 alert("Hello, " + prompt("What is your name?","") + ".");
 ```
 
@@ -445,15 +416,14 @@ JavaScript 使用两种类型的注释指示符。一种指示符用于区分单
 
 你已经使用 `//` 来注释掉结束的 HTML 注释标签。然而，单行注释指示符不仅限于此用途。你可以使用这种方法为整行或部分行添加注释，如下所示代码示例所示：
 
-```
+```javascript
 <SCRIPT>
-<!---
+<!--
 
 // 在这里定义变量
 
 var firstName = 20
 var secondNum = 0 // 此值将会改变
-```
 ```
 
 在这个示例中，从 `//` 到行尾的编码部分将被 JavaScript 忽略。
@@ -464,10 +434,12 @@ var secondNum = 0 // 此值将会改变
 
 以下是一个多行注释的示例：
 
-```
+```javascript
 <SCRIPT>
-<!---
-/* addNumbers( ) 函数用于...
+<!--
+
+/* addNumbers() 函数用于...
+
 */
 
 function addNumbers() {
@@ -485,7 +457,7 @@ function addNumbers() {
 
 你以前学过任何脚本语言吗？如果是，请想一下它能做什么。如果不是，你认为脚本语言应该做什么？
 
-# 第 2 ：变量与数据
+# 第 2 节：变量与数据
 
 ## 目标
 
@@ -500,53 +472,51 @@ function addNumbers() {
 - 使用运算符。
 - 实现简单的事件如 `onload` 和 `onunload`。
 
-# 为什么？
+## 为什么？
 
 变量、数据类型、表达式和运算符是任何编程语言的基础概念。JavaScript 也不例外。任何脚本语言的讨论都应该从简单的概念开始，例如在变量中存储数据。
 
-# 与用户通信
+## 与用户通信
 
 在许多程序中，偶尔会看到弹出窗口来提示你变化、必须做出的选择或其他警告。
 
-作为网页开发者，你可以快速地编写脚本，在页面加载时或发生其他事件（如鼠标点击）时弹出。现在，你将使用主要的事件——页面加载来启动你编写的脚本。你将检查四种通信方式：在弹出窗口中显示文本、在弹出窗口中请求信息、在弹出窗口中提问以及在浏览器窗口中显示文本。这些通信方法都将向你展示如何操作各种 JavaScript 对象，以及如何命名和使用变量。因此，当你学习如 `alert()`、`prompt()` 和 `confirm()` 等方法时，请记住这些 JavaScript 实现都依赖于更大的概念。例如，`alert()`、`prompt()` 和 `confirm()` 是窗口对象的方法。
+作为网页开发者，你可以快速地编写脚本，在页面加载时或发生其他事件（如鼠标点击）时弹出。现在，你将使用主要的事件——页面加载来启动你编写的脚本。你将检查四种通信方式：在弹出窗口中显示文本、在弹出窗口中请求信息、在弹出窗口中提问以及在浏览器窗口中显示文本。这些通信方法都将向你展示如何操作各种 JavaScript 对象，以及如何命名和使用变量。因此，当你学习如 `alert()`、`prompt()` 和 `confirm()` 等方法时，请记住这些 JavaScript 实现都依赖于更大的概念。例如，`alert()`、`prompt()` 和 `confirm()` 是 `window` 对象的方法。
 
-# alert 方法
+## alert 方法
 
-`alert()` 方法是 JavaScript 提供的一种用于与用户通信的简单方法。它是 JavaScript 中窗口对象的一个方法。你将在课程后期学习更多关于窗口对象的细节，以及整个文档对象模型层次结构。
+`alert()` 方法是 JavaScript 提供的一种用于与用户通信的简单方法。它是 JavaScript 中 `window` 对象的一个方法。你将在课程后期学习更多关于 `window` 对象的细节，以及整个文档对象模型层次结构。
 
-要调用 `alert()` 方法，你只需要在文档的某个脚本块中放置一行简单的代码（称为语句）。如果你的脚本中没有其他代码，则每次页面加载时消息框都会弹出。如果脚本中有其他代码，消息窗口将在代码序列调用它时弹出。这是因为 `alert()` 方法始终意味着对窗口对象的使用。
+要调用 `alert()` 方法，你只需要在文档的某个脚本块中放置一行简单的代码（称为语句）。如果你的脚本中没有其他代码，则每次页面加载时消息框都会弹出。如果脚本中有其他代码，消息窗口将在代码序列调用它时弹出。这是因为 `alert()` 方法始终意味着对 `window` 对象的使用。
 
 使用 `alert()` 方法的语法如下：
 
-```alert("message");
+```javascript
+alert("message");
 ```
 
 在下面的练习中，你将使用 `alert()` 方法创建你的第一个脚本。该练习使用一个单语句脚本示例。
 
 在开始此练习之前，请从随书提供的补充光盘复制 `Student Files` 文件夹。该文件夹包含了 Afrikunda 网站的文件。你将在整个课程中向该网站添加 JavaScript 代码。
 
-
-
-
-
 ## 练习 2-1：向用户发送消息
 
-- 1. 编辑器：从 Afrikunda 网站打开 `default.htm` 文件。
-- 2. 编辑器：在文档的 <HEAD> 部分输入以下源代码：
-<SCRIPT LANGUAGE="JavaScript">
-<!--
-alert("Good Morning!");
-// -->
-</SCRIPT>
-
-- 3. 编辑器：保存 `default.htm` 文件。
-- 4. 浏览器：打开 `default.htm`。你的屏幕应该类似于图 2-1。如果不是不是，请检查你输入的源代码是否正确。
+1. **编辑器**：从 Afrikunda 网站打开 `default.htm` 文件。
+2. **编辑器**：在文档的 `<HEAD>` 部分输入以下源代码：
+   ```html
+   <SCRIPT LANGUAGE="JavaScript">
+   <!--
+   alert("Good Morning!");
+   // -->
+   </SCRIPT>
+   ```
+3. **编辑器**：保存 `default.htm` 文件。
+4. **浏览器**：打开 `default.htm`。你的屏幕应该类似于图 2-1。如果不是，请检查你输入的源代码是否正确。
 
 ![](img/36826ab6f960cbecb919bb0737cbffa0_42_0.png)
 
 图 2-1：警报消息
 
-- 5. 浏览器：点击 OK 后，你的屏幕应该类似于图 2-2。
+5. **浏览器**：点击 OK 后，你的屏幕应该类似于图 2-2。
 
 ![](img/36826ab6f960cbecb919bb0737cbffa0_43_0.png)
 
@@ -556,7 +526,7 @@ alert("Good Morning!");
 
 ## 在 JavaScript 中使用分号
 
-注意，在上一个练习中，`alert()` 语句后面有一个分号。分号在编程中经常用于将各个语句隔开。除非你正在组合语句，否则在 JavaScript 中分号并不是必须的。然而，许多程序员认为在每个语句后都使用分号是一种良好的编程习惯。如果你在一行源代码中有多多个语句，这种做法格为有用——甚至是必须的。
+注意，在上一个练习中，`alert()` 语句后面有一个分号。分号在编程中经常用于将各个语句隔开。除非你正在组合语句，否则在 JavaScript 中分号并不是必须的。然而，许多程序员认为在每个语句后都使用分号是一种良好的编程习惯。如果你在一行源代码中有多个语句，这种做法格外有用——甚至是必须的。
 
 ## 从用户处获取数据：prompt() 方法
 
@@ -564,7 +534,7 @@ alert("Good Morning!");
 
 `prompt()` 方法通过对话框内的文本字段请求用户输入。用户在文本框中输入的任何内容都将作为可操作的文本字符串作为 `prompt()` 的结果返回，然后你可以将其作为另一个方法的参数使用。使用 `prompt()` 的基本语法如下：
 
-```
+```javascript
 prompt("给用户的消息", "默认响应文本")
 ```
 
@@ -580,36 +550,37 @@ prompt("给用户的消息", "默认响应文本")
 
 ## 练习 2-2：处理用户输入
 
-- 1. **编辑器**：打开 default.htm。
-- 2. **编辑器**：修改加粗所示的源代码：
-<SCRIPT LANGUAGE="JavaScript">
-<!--
-alert("Hello, " + prompt("What is your name?", "")) + ".");
--->
-</SCRIPT>
-
-- 3. **编辑器**：保存 default.htm。
-- 4. **浏览器**：打开 default.htm。当页面加载时，你应该看到一个类似于图 2-3 的对话框。如果不是，请检查你输入的源代码是否正确。
+1. **编辑器**：打开 `default.htm`。
+2. **编辑器**：修改加粗所示的源代码：
+   ```html
+   <SCRIPT LANGUAGE="JavaScript">
+   <!--
+   alert("Hello, " + prompt("What is your name?", "") + ".");
+   // -->
+   </SCRIPT>
+   ```
+3. **编辑器**：保存 `default.htm`。
+4. **浏览器**：打开 `default.htm`。当页面加载时，你应该看到一个类似于图 2-3 的对话框。如果不是，请检查你输入的源代码是否正确。
 
 ![](img/36826ab6f960cbecb919bb0737cbffa0_45.png)
 
-- 5. **浏览器**：输入名字并点击 OK。你的屏幕应该显示类似于图 2-4 的消息。
+5. **浏览器**：输入名字并点击 OK。你的屏幕应该显示类似于图 2-4 的消息。
 
 ![](img/36826ab6f960cbecb919bb0737cbffa0_46.png)
 
-- 6. **浏览器**：点击 OK 后，你会看到 Afrikunda 页面。在之前的练习中，无论 `prompt()` 还是 `alert()` 都会被处理。在执行顺序上，`prompt()` 始终在 `alert()` 之前处理。现在你将进一步检查 `prompt()` 方法。在之前的练习中，`prompt()` 如下：
+6. **浏览器**：点击 OK 后，你会看到 Afrikunda 页面。在之前的练习中，无论 `prompt()` 还是 `alert()` 都会被处理。在执行顺序上，`prompt()` 始终在 `alert()` 之前处理。现在你将进一步检查 `prompt()` 方法。在之前的练习中，`prompt()` 如下：
 
-```
-prompt("What is your name?",");
-```
+   ```javascript
+   prompt("What is your name?","");
+   ```
 
-注意括号内有两组引号。第一组引号包含了要显示的文本。第二组引号是 `prompt()` 的默认值。你可以尝试在第二组引号内输入不同的文本，看看会产生什么效果。
+   注意括号内有两组引号。第一组引号包含了要显示的文本。第二组引号是 `prompt()` 的默认值。你可以尝试在第二组引号内输入不同的文本，看看会产生什么效果。
 
 ## confirm() 方法
 
 在编程中，你经常需要向用户询问一个“是或否”的问题。你可以通过带有 OK 和 Cancel 按钮的对话框来实现这一点。`confirm()` 方法与 `alert()` 方法的一个区别是：它返回 `true` 或 `false` 值。这个返回值可以被捕获并使用。`confirm()` 的语法如下：
 
-```
+```javascript
 confirm("问题?");
 ```
 
@@ -617,24 +588,25 @@ confirm("问题?");
 
 ## 练习 2-3：使用 confirm() 方法
 
-- 1. 编辑器：打开 default.htm。
-- 2. 编辑器：修改加粗所示的源代码：
-<SCRIPT LANGUAGE="JavaScript">
-<!--
-alert(confirm("OK or Cancel"));
-// -->
-</SCRIPT>
-
-- 3. 编辑器：保存 default.htm。
-- 4. 浏览器：打开 default.htm。当页面加载时，你应该看到一个类似于图 2-5 的对话框。如果不是，请检查你输入的源代码是否正确。
+1. **编辑器**：打开 `default.htm`。
+2. **编辑器**：修改加粗所示的源代码：
+   ```html
+   <SCRIPT LANGUAGE="JavaScript">
+   <!--
+   alert(confirm("OK or Cancel"));
+   // -->
+   </SCRIPT>
+   ```
+3. **编辑器**：保存 `default.htm`。
+4. **浏览器**：打开 `default.htm`。当页面加载时，你应该看到一个类似于图 2-5 的对话框。如果不是，请检查你输入的源代码是否正确。
 
 ![](img/36826ab6f960cbecb919bb0737cbffa0_47.png)
 
-- 5. 浏览器：点击 OK 按钮。你的屏幕应该类似于图 2-6。
+5. **浏览器**：点击 OK 按钮。你的屏幕应该类似于图 2-6。
 
 ![](img/36826ab6f960cbecb919bb0737cbffa0_48.png)
 
-- 6. 浏览器：刷新 default.htm。点击 Cancel 按钮。你的屏幕应该类似于图 2-7。
+6. **浏览器**：刷新 `default.htm`。点击 Cancel 按钮。你的屏幕应该类似于图 2-7。
 
 ![](img/36826ab6f960cbecb919bb0737cbffa0_49.png)
 
@@ -642,7 +614,7 @@ alert(confirm("OK or Cancel"));
 
 `confirm()` 方法的返回值可以用于许多不同的场景。例如，`confirm()` 可以用于验证表单操作。如果你想帮助用户做出准确的选择，你可以在 `<FORM>` 标签中放置一个表单事件处理器。例如：
 
-```
+```html
 <FORM METHOD="post" ACTION="[相应的操作]"
 onsubmit="return confirm('确定提交吗？');">
 ```
@@ -669,37 +641,33 @@ prompt("你好，我叫 James。你呢？", ""));
 </HTML>
 ```
 
-
-
-
-
 这种语法与 `alert()` 和 `prompt()` 不同之处在于它包含了新对象的指定，该对象称为 `document`。你之前使用的三个方法 `alert()`、`prompt()` 和 `confirm()` 是 JavaScript 语言中 `window` 对象的方法。它们也可以以以下方式编写：
 
-```
+```javascript
 window.alert();
 ```
 
 或者：
 
-```
+```javascript
 window.prompt();
 ```
 
 或者：
 
-```
+```javascript
 window.confirm();
 ```
 
-**因为 window 对象是默认对象**，所以在在每个方法之前指定 `window` 是没有必要的。但现在你正在使用 `document` 对象的 `write()` 方法，它不是默认对象，因此需要显式引用。你可以使用“点表示法”来实现这一点。点表示法的典型语法如下：
+**因为 `window` 对象是默认对象**，所以在在每个方法之前指定 `window` 是没有必要的。但现在你正在使用 `document` 对象的 `write()` 方法，它不是默认对象，因此需要显式引用。你可以使用“点表示法”来实现这一点。点表示法的典型语法如下：
 
-```
+```javascript
 objectName.methodName();
 ```
 
 或者：
 
-```
+```javascript
 objectName.propertyName;
 ```
 
@@ -709,35 +677,29 @@ objectName.propertyName;
 
 # 练习 2-4：为用户自定义页面
 
-1. 编辑器（Editor）：打开 `default.htm`。
-
-2. 编辑器（Editor）：按照加粗所示的内容修改源代码：
-
-```
-<SCRIPT LANGUAGE="JavaScript">
-<!-- -->
-document.write("<H2>The Afrikunda site welcomes " + prompt("Hello! Please type your name in the box,",") + ".</H2>");
-// -->
-</SCRIPT>
-```
-
-3. 编辑器（Editor）：保存文件为 `default.htm`。
-
-4. 浏览器（Browser）：打开 `default.htm`。你应该能看到一个与图 2-8 类似的对话框。
+1. **编辑器（Editor）**：打开 `default.htm`。
+2. **编辑器（Editor）**：按照加粗所示的内容修改源代码：
+   ```html
+   <SCRIPT LANGUAGE="JavaScript">
+   <!-- -->
+   document.write("<H2>The Afrikunda site welcomes " + prompt("Hello! Please type your name in the box,", "") + ".</H2>");
+   // -->
+   </SCRIPT>
+   ```
+3. **编辑器（Editor）**：保存文件为 `default.htm`。
+4. **浏览器（Browser）**：打开 `default.htm`。你应该能看到一个与图 2-8 类似的对话框。
 
 ![](img/36826ab6f960cbecb91bbbb0737cbffa0_51_0.png)
 
-5. 浏览器（Browser）：在对话框中输入你的名字，然后点击 OK。你的屏幕应该类似于图 2-9。
+5. **浏览器（Browser）**：在对话框中输入你的名字，然后点击 OK。你的屏幕应该类似于图 2-9。
 
 ![](img/36826ab6f960cbecb919bb0737cbffa0_52_0.png)
 
 6. 如果你有时间，可以编辑初始的 `prompt` 以在文本输入字段中包含一条消息。将你想要的文本字符串放在现在空的引号内。例如，你可以插入此处加粗所示的文本：
-
-```
-prompt("Hello! Please type your name in the box.") + "" + "Thank you for entering your name here." + "</H2>";
-```
-
-此添加将更改初始的警告框，如图 2-10 所示。请确保在 `document.write` 语句之后包含修改后的 `prompt`。
+   ```javascript
+   prompt("Hello! Please type your name in the box.") + "" + "Thank you for entering your name here." + "</H2>";
+   ```
+   此添加将更改初始的警告框，如图 2-10 所示。请确保在 `document.write` 语句之后包含修改后的 `prompt`。
 
 ![](img/36826ab6f960cbecb919bb0737cbffa0_52_1.png)
 
@@ -762,7 +724,7 @@ JavaScript 中的变量可以存储四种数据类型：`number`（数字）、`
 | 数据类型 | 示例 |
 |---|---|
 | Number | 任何数值（例如，3, 5.3, 或 45e8） |
-| String | 任何字母数字字符串（例如，“Hello, World!”，“555-1212" 或 "KA12V2B334"） |
+| String | 任何字母数字字符串（例如，“Hello, World!”、“555-1212" 或 "KA12V2B334"） |
 | Boolean | 仅限 True 或 False 值 |
 | Null | 用于空值的特殊关键字 |
 
@@ -782,11 +744,29 @@ JavaScript 中的变量可以存储四种数据类型：`number`（数字）、`
 
 变量应该具有意义且描述性的名称。考虑每个变量在脚本上下文中代表什么，然后为它选择一个合适的名称。
 
+## 练习 2-5：使用变量存储用户输入
 
+1. **编辑器**：打开 `default.htm`。
+2. **编辑器**：修改加粗所示的源代码：
+   ```html
+   <SCRIPT LANGUAGE="JavaScript">
+   <!--
+   var userName = prompt("What is your name?", "");
+   alert("Hello, " + userName + ".");
+   document.write("<H2>The Afrikunda site welcomes " + userName + ".</H2>");
+   // -->
+   </SCRIPT>
+   ```
+3. **编辑器**：保存 `default.htm`。
+4. **浏览器**：打开 `default.htm`。你应该看到一个类似于图 2-11 的对话框。
 
+![](img/36826ab6f960cbecb919bb0737cbffa0_55_0.png)
 
+5. **浏览器**：输入名字并点击 OK。你的屏幕应该显示类似于图 2-12 的消息。
 
-## 6. 浏览器：再次点击 OK，你的屏幕应该类似于图 2-13。
+![](img/36826ab6f960cbecb919bb0737cbffa0_56_0.png)
+
+6. **浏览器**：再次点击 OK，你的屏幕应该类似于图 2-13。
 
 ![](img/36826ab6f960cbecb919bb0737cbffa0_57_0.png)
 
@@ -794,9 +774,9 @@ JavaScript 中的变量可以存储四种数据类型：`number`（数字）、`
 
 如果你尝试在浏览器中存在 alert 消息的情况下编辑文件，在点击 OK 按钮之前，你可能无法保存文件。如果你不确认警告，可能会收到来自操作系统的“文件共享”违规错误。
 
-在在上一个练习中，你声明了一个名为 `userName` 的变量。在该变量中，你存储了 `prompt()` 命令的结果。`=` 字符被用赋值运算符。
+在上一个练习中，你声明了一个名为 `userName` 的变量。在该变量中，你存储了 `prompt()` 命令的结果。`=` 字符被用赋值运算符。
 
-然后，你使用 `+` 运算符将字符串 "Hello, " 与变量 `userName` 拼接，并将结果显示在 alert框中。在用户确认第一个 alert 后，你生成了一个 `document.write()` 语句，在变量 `userName` 的前后都有文本。
+然后，你使用 `+` 运算符将字符串 "Hello, " 与变量 `userName` 拼接，并将结果显示在 alert 框中。在用户确认第一个 alert 后，你生成了一个 `document.write()` 语句，在变量 `userName` 的前后都有文本。
 
 此时你可能会疑惑是否可以使用 `+` 运算符来加数字，因为 `+` 是文本拼接的运算符。然而，在学习更多内容之前，你必须先学习保留词、表达式和运算符。
 
@@ -875,33 +855,33 @@ JavaScript 语言包含某些你必须使用以实现特定结果的单词；这
 表达式是语句的一部分，被求值为值。异常是一个赋值表达式，它为变量赋值值。表达式可以使用变量、字面量、运算符和其他表达式的任何组合。在 JavaScript 中，有四种表达式：
 
 - **赋值 (Assignment)**：给变量赋值。
-示例：a=25
-值 25 已赋值给变量 *a*。
-运算符是 `=` (赋值)
+  示例：`a=25`
+  值 25 已赋值给变量 `a`。
+  运算符是 `=` (赋值)
 
 - **算术 (Arithmetic)**：求值为一个数字。
-示例：25+75
-该表达式求值为 25 和 75 的和，即 100。
-运算符是 `+` (加法)
+  示例：`25+75`
+  该表达式求值为 25 和 75 的和，即 100。
+  运算符是 `+` (加法)
 
 - **字符串 (String)**：求值为一个字符串。
-示例："Hello, " + "Sandy"
-该表达式求值为显示为 "Hello, Sandy" 的新字符串。
-运算符是 `+` (拼接)
+  示例：`"Hello, " + "Sandy"`
+  该表达式求值为显示为 "Hello, Sandy" 的新字符串。
+  运算符是 `+` (拼接)
 
 - **逻辑 (Logical)**：求值为 true 或 false。
-示例：25<75
-因为 25 不小于 75，该表达式求值为布尔值 true。
-运算符是 `<` (比较)
-示例：25>=75
-因为 25 不大于或等于 75，该表达式求值为布尔值 false。
-运算符是 `>=` (比较)
+  示例：`25<75`
+  因为 25 小于 75，该表达式求值为布尔值 true。
+  运算符是 `<` (比较)
+  示例：`25>=75`
+  因为 25 不大于或等于 75，该表达式求值为布尔值 false。
+  运算符是 `>=` (比较)
 
 这些表达式中的每一个都依赖于一个运算符。现在我们仔细查看 JavaScript 中的运算符。
 
 ## 运算符
 
-在 JavaScript 中，运算符用于表达式以存储或返回一个值。运算符有多种类型：赋值、算术、单元、逻辑等。表 2-3 出了出了最常用的 JavaScript 运算符及其用途。你将在整个课程中使用许多此类运算符。
+在 JavaScript 中，运算符用于表达式以存储或返回一个值。运算符有多种类型：赋值、算术、单元、逻辑等。表 2-3 列出了最常用的 JavaScript 运算符及其用途。你将在整个课程中使用许多此类运算符。
 
 表 2-3：JavaScript 运算符
 
@@ -918,11 +898,11 @@ JavaScript 语言包含某些你必须使用以实现特定结果的单词；这
 | * | 算术 | 将操作数相乘。 |
 | / | 算术 | 将左侧操作数除以右侧操作数。 |
 | % | 算术 | 将左侧操作数除以右侧操作数并计算余数。 |
-| && | 逻辑 | 逻辑“与”当两个操作数都为 true时，求值为 true。 |
-| || | 逻辑 | 逻辑“或”当任一操作数为 true 时，求值为 true。 |
+| && | 逻辑 | 逻辑“与”当两个操作数都为 true 时，求值为 true。 |
+| \|\| | 逻辑 | 逻辑“或”当任一操作数为 true 时，求值为 true。 |
 | ! | 逻辑 | 逻辑“非”；当操作数为 false 时求值为 true，当为 true 时求值为 false。 |
 
-### 表 2-3：JavaScript 运算符（续上） |
+### 表 2-3：JavaScript 运算符（续）
 
 | 运算符 | 类型 | 说明 |
 | --- | --- | --- |
@@ -940,13 +920,13 @@ JavaScript 语言包含某些你必须使用以实现特定结果的单词；这
 
 表达式依赖于各种运算符。例如，`+` 是加法运算符，也是拼接运算符。赋值运算符是 `=`，但与你预期的相反，它从不作为比较运算符。例如，考虑以下语句：
 
-```
+```javascript
 userName="Nancy";
 ```
 
 在脚本中，该语句将 "Nancy" 赋值给 userName。如果你想比较 userName 与 "Nancy"，你会使用以下代码：
 
-```
+```javascript
 userName=="Nancy";
 ```
 
@@ -954,57 +934,54 @@ userName=="Nancy";
 
 在此表达式中，userName 和 "Nancy" 都是操作数，即脚本处理和操作的数据值。
 
-## 练习 2-6：变量的赋值与相
+## 练习 2-6：变量的赋值与相加
 
-- 1. **编辑器**：打开辅助磁盘中的 addnumbs.htm 文件。
-- 2. **编辑器**：添加加粗所示的源代码：
-```javascript
-<SCRIPT LANGUAGE="JavaScriptScript">
-<!--
-var a=4;
-var b=9;
-c=a+b;
-alert(c);
-// ---->
-</SCRIPT>
-```
-- 3. **编辑器**：保存源文件。
-- 4. **浏览器**：打开源文件 **addnumbs.htm**。你的屏幕应该立即显示一个 alert 框，如图 2-14 所示。
-- 5. **编辑器**：在 alert(c) 行之后，添加以下源代码：
-alert("4 " + 9 = " + a + b);
-- 6. **编辑器**：保存文件。
+1. **编辑器**：打开辅助磁盘中的 `addnumbs.htm` 文件。
+2. **编辑器**：添加加粗所示的源代码：
+   ```javascript
+   <SCRIPT LANGUAGE="JavaScript">
+   <!--
+   var a=4;
+   var b=9;
+   c=a+b;
+   alert(c);
+   // --->
+   </SCRIPT>
+   ```
+3. **编辑器**：保存源文件。
+4. **浏览器**：打开源文件 `addnumbs.htm`。你的屏幕应该立即显示一个 alert 框，如图 2-14 所示。
+5. **编辑器**：在 `alert(c)` 行之后，添加以下源代码：
+   ```javascript
+   alert("4 + 9 = " + a + b);
+   ```
+6. **编辑器**：保存文件。
 
-注意：辅助磁盘包含该练习步骤的完成版本，文件名为 addnumbsconcatenate.htm。
+注意：辅助磁盘包含该练习步骤的完成版本，文件名为 `addnumbsconcatenate.htm`。
 
-
-
-
-7. 浏览器：重新加载文件。你的屏幕应该显示一个带有 13 的警告框，如前面的图片所示。当你点击 OK 时，应该会看到图 2-15 所示的警告框。
+7. **浏览器**：重新加载文件。你的屏幕应该显示一个带有 13 的警告框，如前面的图片所示。当你点击 OK 时，应该会看到图 2-15 所示的警告框。
 
 ![](img/36826ab6f960cbecb919bb0737cbffa0_63_0.png)
 
-此警告框显示 + 号被解释为字符串连接的运算符。由于值被连接在在一起，脚本返回了 49 的结果。
+此警告框显示 `+` 号被解释为字符串连接的运算符。由于值被连接在一起，脚本返回了 49 的结果。
 
-8. 编辑器：修改**粗体**显示的源代码（你在第 5 步中添加的代码）。保存文件。
+8. **编辑器**：修改**粗体**显示的源代码（你在第 5 步中添加的代码）。保存文件。
+   ```javascript
+   alert("4 + 9 = " + (a + b));
+   ```
+   通过添加括号，你是在要求 JavaScript 先计算 `(a+b)`，然后将其附加到前面的文本字符串上。
 
-```
-alert("4 + 9 = " + (a + b));
-```
-
-通过添加括号，你是在要求 JavaScript 先计算 (a+b)，然后将其附加到前面的文本字符串上。
-
-9. 浏览器：重新加载文件。现在，当你点击 OK 时，你应该按顺序看到图 2-14 和图 2-16 所示的警告框。
+9. **浏览器**：重新加载文件。现在，当你点击 OK 时，你应该按顺序看到图 2-14 和图 2-16 所示的警告框。
 
 ![](img/36826ab6f960cbecb919bb0737cbffa0_63_1.png)
 
-你已经看到了向脚本指示你是想相加数字还是连接数字的重要性。在之前的练习中，当你对语句中的 a+b 部分包含另一组括号时，JavaScript 就知道你想在连接额外值之前执行该操作。
+你已经看到了向脚本指示你是想相加数字还是连接数字的重要性。在之前的练习中，当你对语句中的 `a+b` 部分包含另一组括号时，JavaScript 就知道你想在连接额外值之前执行该操作。
 
 ## 内联脚本、简单用户事件以及 onload 和 onunload 事件处理程序
 
-到目前为止，你已经你已经创建了存在于 `<SCRIPT>` 标签之间的脚本。然而，你也可以在你已经熟悉的许多 HTML 标签中包含 JavaScript。这种做法被称为**内联脚本编写（inline scripting）**。例如，你可以将 JavaScript 封装在 `<BODY>` 标签内：
+到目前为止，你已经创建了存在于 `<SCRIPT>` 标签之间的脚本。然而，你也可以在你已经熟悉的许多 HTML 标签中包含 JavaScript。这种做法被称为**内联脚本编写（inline scripting）**。例如，你可以将 JavaScript 封装在 `<BODY>` 标签内：
 
-```
-<BODY onload="alert('Goodbye, ' + userName + '! Hurry back!')">
+```html
+<BODY onUnload="alert('Goodbye, ' + userName + '! Hurry back!')">
 ```
 
 这段代码的作用是每当用户离开页面时向用户发出警告。除了这里所示的简单告警外，你还可以包含一个引用更复杂函数和变量的脚本。例如，你可以包含一个对加载事件的引用，它会自动运行浏览器的独立实例。
@@ -1013,7 +990,7 @@ alert("4 + 9 = " + (a + b));
 
 JavaScript 通过称为**事件处理程序（event handlers）**的代码段响应事件。不要将用户生成的事件与脚本驱动的事件混淆。注意，在 `alert()` 中，只使用了单引号来表示文本。你使用双引号来包裹整个语句，从 alert 之前到闭合括号（但在最后一个括号之前）。
 
-如果你仔细观察上面的代码，你会发现它使用 `onload` 事件处理程序来处理（或处理）`unload` 事件。当页面（由 `<BODY>` 标签表示）卸载时，`alert()` 消息就会出现。
+如果你仔细观察上面的代码，你会发现它使用 `onUnload` 事件处理程序来处理（或处理）`unload` 事件。当页面（由 `<BODY>` 标签表示）卸载时，`alert()` 消息就会出现。
 
 你也可以使用 `onload` 事件处理程序。事实上，JavaScript 隐含了它的使用；到目前为止，你写的每个脚本都包含 `load` 和 `onload` 事件处理程序，因为脚本在浏览器加载页面时会立即运行。你将在课程的后面学习更多关于事件和事件处理程序的知识。
 
@@ -1021,35 +998,29 @@ JavaScript 通过称为**事件处理程序（event handlers）**的代码段响
 
 ## 练习 2-7：使用 onUnload 事件处理程序和内联脚本
 
-- 1. **编辑器：**打开 **default.htm**。
-
-- 2. **编辑器：**输入以下**粗体**所示的源代码：
-
-```
-<BODY onUnload="alert('Goodbye, ' + userName + '! Hurry back!')">
-```
-
-- 3. **编辑器：**保存 **default.htm**。
-
-- 4. **浏览器：**打开 **default.htm**。*当你开始时，你应该会看到一系列对话框和警告框。*在提示对话框中输入你的名字并点击 **OK**（见图 2-17）。
+1. **编辑器：** 打开 `default.htm`。
+2. **编辑器：** 输入以下**粗体**所示的源代码：
+   ```html
+   <BODY onUnload="alert('Goodbye, ' + userName + '! Hurry back!')">
+   ```
+3. **编辑器：** 保存 `default.htm`。
+4. **浏览器：** 打开 `default.htm`。*当你开始时，你应该会看到一系列对话框和警告框。* 在提示对话框中输入你的名字并点击 **OK**（见图 2-17）。
 
 ![](img/36826ab6f960cbecb919bb0737cbffa0_65_0.png)
 
-- 5. **浏览器：**将出现问候警告框，如图 2-18 所示。点击 **OK**。
+5. **浏览器：** 将出现问候警告框，如图 2-18 所示。点击 **OK**。
 
 ![](img/36826ab6f960cbecb919bb0737cbffa0_65_1.png)
 
-## 第 2 节：处理变量和数据
-
-6. 浏览器：将出现 Afrikunda 首页，并带有个性化的问候，如图 2-19 所示。
+6. **浏览器：** 将出现 Afrikunda 首页，并带有个性化的问候，如图 2-19 所示。
 
 ![](img/36826ab6f960cbecb919bb0737cbffa0_66_0.png)
 
-7. 浏览器：选择“家居装饰”（Home Furnishings）链接。你应该看到图 2-20 所示的警告框。
+7. **浏览器：** 选择“家居装饰”（Home Furnishings）链接。你应该看到图 2-20 所示的警告框。
 
 ![](img/36826ab6f960cbecb919bb0737cbffa0_66_1.png)
 
-8. 浏览器：当你点击警告框中的 OK 时，将连接到“家居装饰”页面。
+8. **浏览器：** 当你点击警告框中的 OK 时，将连接到“家居装饰”页面。
 
 你将在接下来的课程中学习更多关于内联脚本、事件和事件处理程序的知识。
 
@@ -1093,7 +1064,7 @@ JavaScript 通过称为**事件处理程序（event handlers）**的代码段响
 
 在下面的示例中，`toUpperCase()` 方法作为函数工作，因为它在转换为大写字母后返回了答案：
 
-```
+```javascript
 var answer;
 var correctAnswer="SACRAMENTO";
 answer = prompt("What is the capital of California?");
@@ -1101,10 +1072,6 @@ answer = answer.toUpperCase();
 ```
 
 在这段代码中，用户对提示输入了 "SACRAMENTO"。但 `correctAnswer` 变量包含 "sacramento"。由于 JavaScript 是区分大小写的，如果用户没有用大写字母输入，这个答案可能会被认为无效。通过使用 `toUpperCase()` 方法，你可以将答案转换为对应的大写形式，从而进行有用的比较，而不会因为用户误用大写字母而受到惩罚。那么，`toUpperCase` 方法作为函数运行，因为它返回了一个你可以在程序的其他部分使用的值。本节的最后一个练习演示了 String 对象的 `toUpperCase()` 方法的使用。
-
-
-
-
 
 # 定义函数
 
@@ -1116,7 +1083,7 @@ answer = answer.toUpperCase();
 
 函数的语法如下：
 
-```
+```javascript
 function functionName(argument1, argument2, ...) {
   //statement(s) here
 }
@@ -1137,12 +1104,13 @@ JavaScript 拥有几个内置函数，可以让你的工作更轻松。其中两
 
 在编码中使用 `parseInt()` 或 `parseFloat()` 函数，可以消除当你想要 `+` 符号作为数学运算符时，它被解释为字符串拼接的问题。你将在下一个练习中通过创建一个简单的函数来整合这些思想，该函数添加用户指定的三个数字。你将发现 `parseInt()` 函数解决了 JavaScript 解释双用途 `+` 符号的问题。
 
-浮点数计算：
-一种在计算过程中，允许小数点根据需要移动以考虑有效数字的计算。
+> **浮点数计算**
+>
+> 一种在计算过程中，允许小数点根据需要移动以考虑有效数字的计算。
 
 在开始此练习之前，请在编辑器中打开 `default.htm` 文件。在你上一节课的代码周围加上注释观察符，如下所示：
 
-```
+```javascript
 <SCRIPT LANGUAGE="JavaScript">
 <!--\var username:
 username = prompt("What is your name?","");
@@ -1162,57 +1130,50 @@ document.write("<H2>The Afrikunda site welcomes " + username + ".</H2>");*/
 
 # 练习 3-1：创建用户定义函数
 
-技术提示：在以下代码中，注意函数定义内部的语句被缩进了。缩进语句对函数没有影响。但这被认为是一种良好的编码习惯，它让代码变得更容易读。
+> **技术提示**：在以下代码中，注意函数定义内部的语句被缩进了。缩进语句对函数没有影响。但这被认为是一种良好的编码习惯，它让代码变得更容易读。
 
-- 编辑器：从 Afrikunda 网站打开 `furnishings.htm`。
-- 编辑器：输入源代码：
-```
-<SCRIPT LANGUAGE="JavaScript">
-<!--
-function addItems() {
-    var x = prompt("How many astrays?", "");
-    var y = prompt("How many tables?", "");
-    var z = prompt("How many chairs?", "");
-
-    items = x + y + z;
-    alert("You ordered " + items + " items.");
-}
- -->
-</SCRIPT>
-```
-- 编辑器：找到文档底部的 `<FORM>` 标签。按照加粗所示修改 `<INPUT>` 标签：
-
-```
-<FORM>
-<INPUT TYPE="button" VALUE="Order" onclick="addItems();">nFORM>
-```
-
-4. 编辑器：保存 `furnishings.htm`。
-5. 浏览器：打开 `default.htm`。点击 Home Furnishings 链接。你的屏幕应该类似于图 3-1。
-6. 浏览器：滚动到页面底部并点击 Order 按钮。通过点击按钮，你创建了一个点击事件，从而调用了编写在 `<INPUT>` 标签内的 `onClick` 事件处理器。该事件处理器被编写为调用 `addItems()` 函数。
+1. **编辑器**：从 Afrikunda 网站打开 `furnishings.htm`。
+2. **编辑器**：输入源代码：
+   ```javascript
+   <SCRIPT LANGUAGE="JavaScript">
+   <!--
+   function addItems() {
+       var x = prompt("How many astrays?", "");
+       var y = prompt("How many tables?", "");
+       var z = prompt("How many chairs?", "");
+       items = x + y + z;
+       alert("You ordered " + items + " items.");
+   }
+    -->
+   </SCRIPT>
+   ```
+3. **编辑器**：找到文档底部的 `<FORM>` 标签。按照加粗所示修改 `<INPUT>` 标签：
+   ```html
+   <FORM>
+   <INPUT TYPE="button" VALUE="Order" onclick="addItems();">nFORM>
+   ```
+4. **编辑器**：保存 `furnishings.htm`。
+5. **浏览器**：打开 `default.htm`。点击 Home Furnishings 链接。你的屏幕应该类似于图 3-1。
+6. **浏览器**：滚动到页面底部并点击 Order 按钮。通过点击按钮，你创建了一个点击事件，从而调用了编写在 `<INPUT>` 标签内的 `onClick` 事件处理器。该事件处理器被编写为调用 `addItems()` 函数。
 
 # 第 3 Lesson：函数、方法和事件
 
-7. 浏览器：你应该看到一个提示框询问第一个订单项目的数量。输入一个数字并选择 OK。然后你会收到第二个和第三个对话框，询问所购物品的数量。在每个对话框中输入一个数字。你会看到一个类似于图 3-2 的序列，其中用户分别输入了 3、2 和 1。
+7. **浏览器**：你应该看到一个提示框询问第一个订单项目的数量。输入一个数字并选择 OK。然后你会收到第二个和第三个对话框，询问所购物品的数量。在每个对话框中输入一个数字。你会看到一个类似于图 3-2 的序列，其中用户分别输入了 3、2 和 1。
 
 图 3-2：数字输入序列
 
 为了完全理解此练习，你应该注意 `prompt()` 方法返回的是字符串数据类型，而不是数值数据类型。因此，JavaScript 将数字视为字符串。因此，alert 消息显示你的数字是拼接的，而不是相加。你将使用 `parseInt()` 函数来确保数字被相加。其余步骤假设你将使用整数作为值。
 
-8. 编辑器：在你的脚本中找到以下行：
-
-```
-items = x + y + z;
-```
-
+8. **编辑器**：在你的脚本中找到以下行：
+   ```javascript
+   items = x + y + z;
+   ```
 9. 按照加粗所示修改此行：
-
-```
-items = parseInt(x) + parseInt(y) + parseInt(z);
-```
-
-10. 编辑器：保存 `furnishings.htm`。
-11. 浏览器：刷新 `furnishings.htm`。假设你在对话框中输入了 3、2 和 1，你应该看到图 3-3 所示的 alert 窗口。
+   ```javascript
+   items = parseInt(x) + parseInt(y) + parseInt(z);
+   ```
+10. **编辑器**：保存 `furnishings.htm`。
+11. **浏览器**：刷新 `furnishings.htm`。假设你在对话框中输入了 3、2 和 1，你应该看到图 3-3 所示的 alert 窗口。
 
 使用 `parseInt()` 强制 JavaScript 将 x、y 和 z 视为数字而不是字符串，因此 `+` 符号用于相加而不是拼接。
 
@@ -1222,16 +1183,14 @@ items = parseInt(x) + parseInt(y) + parseInt(z);
 
 函数可以从一个函数调用另一个，从用户事件调用，或从 `<SCRIPT>` 块调用。在上一个练习中，你通过选择设置了该函数的按钮来调用函数。以下使用一个函数调用另一个函数的示例：
 
-```
+```javascript
 <SCRIPT LANGUAGE="JavaScript">
 <!---
 var userName;
-
 function showName() {
     getName();
     alert(userName);
 }
-
 function getName() {
     userName=prompt("Please enter your name:");
 }
@@ -1248,7 +1207,7 @@ function getName() {
 
 参数是从外部传入函数的值。这些值随后在函数内部使用，并在函数完成语句后被丢弃。以下脚本演示了向函数传递参数的语法：
 
-```
+```javascript
 <SCRIPT LANGUAGE="JavaScript">
 --
 function showName(firstName, lastName) {
@@ -1269,10 +1228,6 @@ showName("John", "Doe");
 ```
 
 注意第二个 `<SCRIPT>` 块中，传递给 `showName()` 函数的值是一个逗号分隔的列表。此示例也显示了传递字面量。可以将变量传递给函数，在函数内部更改参数的值不会改变外部原始变量的值。而且前面提到的，参数只在函数的生命周期内存在。可以向函数传递任意数量的参数。
-
-
-
-
 
 ## 从函数返回值
 
@@ -1303,7 +1258,7 @@ onclick="alert('The result is ' + returnValue() + '.')">
 
 ## 运算符优先级
 
-英文文本是从左到右读取的。当浏览器读取 JavaScript 时，必须确定先执行哪些操作。运算符优先级决定了哪些表达式会在其他表达式之前评估。考虑表达式 `4+6*2`，记住乘法的优先级高于加法，因此该表达式求值为 16。然而，如果你将此表达式重写为 `(4+6)*2`，它的求值将为20，因为括号表达式的优先级高于乘法。
+英文文本是从左到右读取的。当浏览器读取 JavaScript 时，必须确定先执行哪些操作。运算符优先级决定了哪些表达式会在其他表达式之前评估。考虑表达式 `4+6*2`，记住乘法的优先级高于加法，因此该表达式求值为 16。然而，如果你将此表达式重写为 `(4+6)*2`，它的求值将为 20，因为括号表达式的优先级高于乘法。
 
 ## 全局变量与局部变量
 
@@ -1317,69 +1272,61 @@ onclick="alert('The result is ' + returnValue() + '.')">
 
 ## 练习 3-2：从函数内部调用函数
 
-1. **编辑器：从 Afrikunda 网站打开 `carvings.htm`**。
+1. **编辑器**：从 Afrikunda 网站打开 `carvings.htm`。
+2. **编辑器**: 输入以下源代码：
+   ```javascript
+   <SCRIPT LANGUAGE="JavaScript">
+   //
+    var numCorrect=0;
+   function takeTest() {
+     var response="";
+     var points=0;
+     var q1 = "What is the price of the Teak Elephants?";
+     var a1 = "$55.00";
+     var q2 = "From what type of wood is the Lion carved?";
+     var a2 = "EBONY";
+     var q3 = "What is the last name of both carvers mentioned on this page";
+     var a3 = "MANE";
+     response = prompt(q1,"$0.00");
+     if (response) points=runningTotal(response==a1) ? 1 : 0;
+     alert(points);
+     response = prompt(q2,"");
+     if (response) points=runningTotal(response.toUpperCase()==a2) ? 1 : 0;
+     alert(points);
+     response = prompt(q3,"");
+     if (response) points=runningTotal(response.toUpperCase()==a3) ? 1 : 0;
+     alert("You announced a total of " + points + " correctly.");
+     numCorrect = 0;
+     points = 0;
+   }
+   function runningTotal(i) {
+     numCorrect += i;
+     return numCorrect;
+   }
+   //
+   </SCRIPT>
+   ```
 
-2. **编辑器:** 输入以下源代码：
 
-```javascript
-<SCRIPT LANGUAGE="JavaScript">
-//
- var numCorrect=0;
-
-function takeTest() {
-  var response="";
-  var points=0;
-
-  var q1 = "What is the price of the Teak Elephants?";
-  var a1 = "$55.00";
-
-  var q2 = "From what type of wood is the Lion carved?";
-  var a2 = "EBONY";
-
-  var q3 = "What is the last name of both carvers mentioned on this page";
-  var a3 = "MANE";
-
-  response = prompt(q1,"$0.00");
-  if (response) points=runningTotal(response==a1) ? 1 : 0;
-  alert(points);
-
-  response = prompt(q2,"");
-  if (response) points=runningTotal(response.toUpperCase()==a2) ? 1 : 0;
-  alert(points);
-  response = prompt(q3,"");
-  if (response) points=runningTotal(response.toUpperCase()==a3) ? 1 : 0;
-  alert("You announced a total of " + points + " correctly.");
-  numCorrect = 0;
-  points = 0;
-}
-
-function runningTotal(i) {
-  numCorrect += i;
-  return numCorrect;
-}
-
-//
-</SCRIPT>
-```
 
 ![](img/36826ab6f960cbecb919bb0737cbffa0_84_0.png)
 
-3. 编辑器：找到文档底附近的 `<FORM>` 标签。按照加粗所示修改 `<INPUT>` 标签：
+### 3. 编辑器：找到文档底附近的 `<FORM>` 标签。按照加粗所示修改 `<INPUT>` 标签：
 
 ```html
 <FORM>
 <INPUT TYPE="button" VALUE="Quiz" onclick="takeTest();"></FORM>
 ```
 
-4. 编辑器：保存 `carvings.htm`。
+### 4. 编辑器：保存 `carvings.htm`。
 
-5. 浏览器：打开 `carvings.htm`。你的屏幕应该类似于图 3-4。如果不是，请检查你输入的源代码是否正确。
+### 5. 浏览器：打开 `carvings.htm`。你的屏幕应该类似于图 3-4。如果不是，请检查你输入的源代码是否正确。
 
 ![](img/36826ab6f960cbecb919bb0737cbffa0_85_0.png)
 
-图 3-4：carvings.htm
+**图 3-4：carvings.htm**
 
-6. 浏览器：滚动到页面底部并点击 Quiz 按钮。对每个提示做出回答。输入正确和错误的答案以检查你的测验的逻辑。
+### 6. 浏览器：滚动到页面底部并点击 Quiz 按钮。对每个提示做出回答。输入正确和错误的答案以检查你的测验的逻辑。
 
 ## 练习回顾
 
@@ -1396,13 +1343,13 @@ function runningTotal(i) {
 - 9. `var q3="What is the last name of both carvers mentioned in this page?"`
 - 10. `var a3="MANE"`
 - 11. `response = prompt(q1,"$0.00")`
-- 12. `points =runningTotal(response==a1) ? 1 : 0;`
+- 12. `points = runningTotal(response==a1) ? 1 : 0;`
 - 13. `alert(points);`
 - 14. `response = prompt(q2,"")`
-- 15. `points=runningTotal(response.toUpperCase()==a2) ? 1 : 0;`
+- 15. `points = runningTotal(response.toUpperCase()==a2) ? 1 : 0;`
 - 16. `alert(points);`
 - 17. `response = prompt(q3,"")`
-- 18. `points=runningTotal(response.toUpperCase()==a3) ? 1 : 0;`
+- 18. `points = runningTotal(response.toUpperCase()==a3) ? 1 : 0;`
 - 19. `alert("You announced a total of " + points + " correctly.");`
 - 20. `numCorrect = 0;`
 - 21. `points = 0;`
@@ -1411,12 +1358,6 @@ function runningTotal(i) {
 - 24. `numCorrect += i;`
 - 25. `return numCorrect;`
 - 26. `}`
-
-
-
-
-
-[content]
 
 ## 用户事件与 JavaScript 事件处理程序
 
@@ -1435,7 +1376,7 @@ function runningTotal(i) {
 | mouseOut | 当鼠标指针离开链接或区域对象时发生。 |
 | select | 当用户选择表单字段时发生。 |
 
-## 第 3 ：函数、方法与事件
+## 第 3 课：函数、方法与事件
 
 ### 表 3-2：JavaScript 事件处理器
 
@@ -1486,7 +1427,7 @@ function runningTotal(i) {
 
 在没有备用选项的简单 `if` 条件中，语法如下：
 
-```
+```javascript
 if (expression) {
   //如果表达式为真，则执行这些语句
 }
@@ -1496,57 +1437,7 @@ if (expression) {
 
 以下是一个使用 `if` 语句的代码段：
 
-```
-if (userAnswer=25) {
-  alert("You win the grand prize!");
-}
-```
-
-在例例中，如果用户回答正确，她将将看到一条消息。
-
-## 多个条件
-
-假设此例中的用户回答错误。在这种情况下，你需要多一个条件来处理回答错误的情况。以下是处理多个条件的语法：
-
-```
-if (expression) {
-  //如果表达式为真，则执行这些语句
-} else {
-  //如果表达式为假，则执行这些语句
-}
-```
-
-例如，假设正确答案是 25，但用户输入了 30。检查以下内容：
-
-```
-if (userAnswer==25) {
-  alert("You win the grand prize!");
-}
-```
-
-在此例中，如果用户回答正确，她将看到一条消息。（等等，此处的 OCR 文本在原文中似乎重复/乱码，我将保持逻辑流）。
-
-*自纠：来自第 95-98 页的 OCR 文本包含大量的结构重复和乱码的 HTML/代码片段。我将在清理格式的同时，保留提示字符串中提供的文本内容。*
-
-[根据提供的文本流重新处理第 95-98 页]
-
-（注：此处由于原文存在大量重复内容，翻译时已根据要求“不要重复输出原文”的原则进行了整合，保留核心逻辑部分。）
-
-## 单一条件
-
-在没有备用选项的简单 `if` 条件中，语法如下：
-
-```
-if (expression) {
-  //如果表达式为真，则执行这些语句
-}
-```
-
-大括号包围了一个单条或多个语句的块，当表达式返回布尔值 `true` 时，这些语句将执行。
-
-以下是一个使用 `if` 语句的代码段：
-
-```
+```javascript
 if (userAnswer=25) {
   alert("You win the grand prize!");
 }
@@ -1558,7 +1449,7 @@ if (userAnswer=25) {
 
 假设此例中的用户回答错误。在这种情况下，你需要多一个条件来处理回答错误的情况。以下是处理多个条件的语法：
 
-```
+```javascript
 if (expression) {
   //如果表达式为真，则执行这些语句
 } else {
@@ -1568,23 +1459,19 @@ if (expression) {
 
 例如，假设正确答案是 25，但用户输入了 30。检查以下内容：
 
-```
+```javascript
 if (userAnswer==25) {
   alert("You win the grand prize!");
 }
 ```
 
-（注：第 95-98 页的 OCR 文本高度重复并包含 HTML 标签。我已按源文本呈现。）
-
-## 使用 if...else 语句
-
-编程中最常见的需求之一是根据你编写的某些条件的结果，分支到两个过程之一。例如，如果用户正确回答了问题，可能会产生一个结果。如果她回答错误，将产生另一个结果。`if...else` 语句允许你为此类情况编写脚本。
+在此例中，如果用户回答正确，她将看到一条消息。
 
 ## 附加语句
 
-如果你想测试多个条件，可以使用 `else` 语句。下面的示例演示了：
+如果你想测试多个条件，可以使用 `else if` 语句。下面的示例演示了：
 
-```
+```javascript
 if (condition a) {
   //执行这些语句
 } else if (condition b) {
@@ -1600,62 +1487,53 @@ if (condition a) {
 
 `while` 语句用于在某个条件为 `true` 时执行代码组。语法如下：
 
-```
+```javascript
 while (expression) {
 //一条或多个语句
 }
 ```
 
+### 练习 4-1：使用 while 循环
 
-
-
-# 练习 4-1：使用 while 循环
-
-- 1. **编辑器**：从 Afrikunda 网站打开 fashions.htm 文件。
-
-- 2. **编辑器**：在文档的 <HEAD> 部分中输入以下源代码：
+- **1. 编辑器**：从 Afrikunda 网站打开 `fashions.htm` 文件。
+- **2. 编辑器**：在文档的 `<HEAD>` 部分中输入以下源代码：
 
 ```javascript
 <SCRIPT LANGUAGE="JavaScript">
 <!--
-
 function whileTest() {
     var items;
-
     while (items == "" || items == null) {
         items = prompt("How many items would you like to order?","");
     }
     alert("You ordered " + items + " items.");
 }
-
-// ---->
-
+// ----> 
 </SCRIPT>
 ```
 
-- 3. **编辑器**：保存 fashions.htm。
-
-- 4. **浏览器**：打开 default.htm。点击 **Fashions** 链接。滚动到页面底部并点击 **Order** 按钮。你应该能看到图 4-1 所示的提示框。如果没有看到，请检查你输入的源代码是否正确。
+- **3. 编辑器**：保存 `fashions.htm`。
+- **4. 浏览器**：打开 `default.htm`。点击 **Fashions** 链接。滚动到页面底部并点击 **Order** 按钮。你应该能看到图 4-1 所示的提示框。如果没有看到，请检查你输入的源代码是否正确。
 
 ![](img/36826ab6f960cbecb919bb0737cbffa0_99_0.png)
 
-- 5. **浏览器**：在不输入任何信息的情况下点击 OK 或 Cancel 按钮。你会再次看到提示。输入一个数字并点击 OK。你应该看到一个类似于图 4-2 的 alert 框。
+- **5. 浏览器**：在不输入任何信息的情况下点击 OK 或 Cancel 按钮。你会再次看到提示。输入一个数字并点击 OK。你应该看到一个类似于图 4-2 的 alert 框。
 
 ![](img/36826ab6f960cbecb919bb0737cbffa0_100_0.png)
 
-正如你所想象的，误用 while 循环会导致挫败感并产生问题。必须记住，while 语句执行的条件值必须在某个时刻变为 `false`。否则，while 语句将无限循环，用户必须退出浏览器程序或重启电脑才能跳出循环。
+正如你所想象的，误用 while 循环会导致挫败感并产生问题。必须记住，`while` 语句执行的条件值必须在某个时刻变为 `false`。否则，`while` 语句将无限循环，用户必须退出浏览器程序或重启电脑才能跳出循环。
 
 # for 语句
 
-for 语句的主要目的是为了某些特定的值范围重复执行一组语句。其语法如下：
+`for` 语句的主要目的是为了某些特定的值范围重复执行一组语句。其语法如下：
 
-```
+```javascript
 for (x, y, z) {
   //一条或多条语句
 }
 ```
 
-其中 x 是初始表达式，y 是循环重复的条件，z 是更新表达式。考虑以下 for 语句：
+其中 `x` 是初始表达式，`y` 是循环重复的条件，`z` 是更新表达式。考虑以下 `for` 语句：
 
 ```javascript
 var x = 0;
@@ -1665,28 +1543,29 @@ for (i=0; i<5; i++) {
 alert("1+2+3+4 = " + x);
 ```
 
-在这个示例中，for 循环将为变量 i 接收初始值 0。循环每次执行时，i 都会增加 1。for 循环将在 i=0, 1, 2, 3 和 4 时执行，将这些值中的每一个都加到名为 x 的变量运行总和中。然而，当 i 达到值 5 时，由于 5 并不小于 5（这是 for 语句中的条件），循环将结束，并将控制权交给下一行代码：即 alert 语句。到此地，用户将看到一条类似于图 4-3 的消息。
+在这个示例中，`for` 循环将为变量 `i` 接收初始值 0。循环每次执行时，`i` 都会增加 1。`for` 循环将在 `i=0, 1, 2, 3` 和 `4` 时执行，将这些值中的每一个都加到名为 `x` 的变量运行总和中。然而，当 `i` 达到值 5 时，由于 5 并不小于 5（这是 `for` 语句中的条件），循环将结束，并将控制权交给下一行代码：即 `alert` 语句。到此地，用户将看到一条类似于图 4-3 的消息。
 
 ![](img/36826ab6f960cbecb919bb0737cbffa0_101_0.png)
 
-图 4-3：for 循环 alert 信息
+**图 4-3：for 循环 alert 信息**
 
 ### 嵌套
+
 将一个脚本块嵌入另一个脚本块的常用编程做法。
 
-下一个练习演示了如何使用 for 循环代替 while 循环来收集用户的订单信息。该练习还演示了如何在循环中嵌套 if 语句。if 语句将使用 `isNaN` 方法来检查用户的输入。`isNaN` 方法用于判断一个值是否为数值数据类型。如果用户输入任何数字以外的值，循环将结束。这一结果通过使用 `break` 语句实现，我们将在接下来讨论它。
+下一个练习演示了如何使用 `for` 循环代替 `while` 循环来收集用户的订单信息。该练习还演示了如何在循环中嵌套 `if` 语句。`if` 语句将使用 `isNaN` 方法来检查用户的输入。`isNaN` 方法用于判断一个值是否为数值数据类型。如果用户输入任何数字以外的值，循环将结束。这一结果通过使用 `break` 语句实现，我们将在接下来讨论它。
 
 # break 语句
 
-退出本会继续执行的循环的方法是使用 `break` 语句。通常，你会在 if 子句中找到 `break` 关键字。如果达到了某个条件，允许用户跳出循环。如果循环将继续，你可以在 for 循环、while 循环以及 switch 语句中使用 `break` 语句。
+退出本会继续执行的循环的方法是使用 `break` 语句。通常，你会在 `if` 子句中找到 `break` 关键字。如果达到了某个条件，允许用户跳出循环。如果循环将继续，你可以在 `for` 循环、`while` 循环以及 `switch` 语句中使用 `break` 语句。
 
-在下一个练习中，你将修改上一个练习的代码以包含一个 for 语句和一个嵌套的 if。如果用户输入任何数字以外的值，循环将结束。否则，用户将弹出一个框，询问他们想要页面上每个项目所需的数量。
+在下一个练习中，你将修改上一个练习的代码以包含一个 `for` 语句和一个嵌套的 `if`。如果用户输入任何数字以外的值，循环将结束。否则，用户将弹出一个框，询问他们想要页面上每个项目所需的数量。
 
 ## 练习 4-2：在 for 循环内部嵌套 if 和 break 语句
 
-- 1. 编辑器：从 Afrikunda 网站打开 masks.htm 文件。
+- **1. 编辑器**：从 Afrikunda 网站打开 `masks.htm` 文件。
+- **2. 编辑器**：在文档的 `<HEAD>` 部分中输入以下源代码：
 
-- 2. 编辑器：在文档的 <HEAD> 部分中输入以下源代码：
 ```html
 <SCRIPT LANGUAGE="JavaScript">
 <!--
@@ -1702,36 +1581,34 @@ for (i=0; i<3; i++){
   if (isNaN(items)) break;
   itemCount += items;
 }
-
 alert("You ordered a total of " + itemCount + " masks.");
 }
 //-->
 </SCRIPT>
 ```
 
-- 3. 编辑器：保存 masks.htm。
-
-- 4. 浏览器：打开 default.htm 并选择 Masks 链接。你的屏幕应该类似于图 4-4。
+- **3. 编辑器**：保存 `masks.htm`。
+- **4. 浏览器**：打开 `default.htm` 并选择 Masks 链接。你的屏幕应该类似于图 4-4。
 
 ![](img/36826ab6f960cbecb919bb0737cbffa0_103_0.png)
 
-图 4-4：masks.htm
+**图 4-4：masks.htm**
 
-- 5. 浏览器：滚动到页面底部并点击 Order 按钮。你应该看到类似于图 4-5 的提示。如果没有，请检查你输入的源代码是否正确。
+- **5. 浏览器**：滚动到页面底部并点击 Order 按钮。你应该看到类似于图 4-5 的提示。如果没有，请检查你输入的源代码是否正确。
 
 ![](img/36826ab6f960cbecb919bb0737cbffa0_103_1.png)
 
-图 4-5：masks.htm 提示
+**图 4-5：masks.htm 提示**
 
-- 6. 浏览器：在不输入任何信息的情况下点击 OK 或 Cancel 按钮。你会再次看到提示。输入一个数字并点击 OK。你应该看到一个类似于图 4-6 的 alert 框，询问你页面上每个项目的数量。
+- **6. 浏览器**：在不输入任何信息的情况下点击 OK 或 Cancel 按钮。你会再次看到提示。输入一个数字并点击 OK。你应该看到一个类似于图 4-6 的 alert 框，询问你页面上每个项目的数量。
 
 ![](img/36826ab6f960cbecb919bb0737cbffa0_104_0.png)
 
-- 7. 浏览器：再次点击 Order 按钮。这次点击提示框中的 Cancel。这将导致循环结束。你应该看到类似于前图的 alert，说明你在选择 Cancel 之前订购的项目数量。
+- **7. 浏览器**：再次点击 Order 按钮。这次点击提示框中的 Cancel。这将导致循环结束。你应该看到类似于前图的 alert，说明你在选择 Cancel 之前订购的项目数量。
 
 # continue 语句
 
-`continue` 语句用于强制控制流返回循环顶部。你可以将 `continue` 视为一个“跳过”或绕过的命令。当执行遇到 `continue` 语句时，它到循环结束之间的所有语句都会被跳过，执行返回循环顶部。`continue` 语句只能在 for 循环或 while 循环中使用。
+`continue` 语句用于强制控制流返回循环顶部。你可以将 `continue` 视为一个“跳过”或绕过的命令。当执行遇到 `continue` 语句时，它到循环结束之间的所有语句都会被跳过，执行返回循环顶部。`continue` 语句只能在 `for` 循环或 `while` 循环中使用。
 
 # 在 while 循环中使用 continue
 
@@ -1745,7 +1622,6 @@ alert("You ordered a total of " + itemCount + " masks.");
 --
 var leapYears = 0;
 var curYear=1901;
-
 while (curYear<2000) {
   curYear++;
   if ((curYear % 4) != 0) {
@@ -1754,7 +1630,6 @@ while (curYear<2000) {
   leapYears++;
   document.write(curYear + " ");
 }
-
 // -->
 </SCRIPT>
 </HEAD>
@@ -1773,15 +1648,15 @@ document.write(leapYears);
 
 ![](img/36826ab6f960cbecb919bb0737cbffa0_106_0.png)
 
-图 4-7：闰年示例
+**图 4-7：闰年示例**
 
 # switch 语句
 
-`switch` 语句是随 JavaScript 1.2 引入的。该语句将一个值与其他值进行比较。本质上，`switch` 与多个 if 语句的功能。然而，`switch` 可读性更高，并允许在脚本未找到匹配项时指定一组默认执行语句。
+`switch` 语句是随 JavaScript 1.2 引入的。该语句将一个值与其他值进行比较。本质上，`switch` 与多个 `if` 语句的功能。然而，`switch` 可读性更高，并允许在脚本未找到匹配项时指定一组默认执行语句。
 
 创建 `switch` 语句的语法如下：
 
-```
+```javascript
 switch (variableName) {
   case "str1" :
     //执行的语句
@@ -1800,17 +1675,9 @@ switch (variableName) {
 
 下面的练习演示了 `switch` 语句的使用。记住，这种构造是随 JavaScript 1.2 引入的，需要版本 4（或更高）的浏览器才能正确执行。
 
+### 练习 4-3：使用 switch 语句
 
-
-
-
-# 第 4 Lesson：控制程序流程
-
-![](img/36826ab6f960cbecb919bb0737cbffa0_108_0.png)
-
-## 练习 4-3：使用 switch 语句
-
-**1. 编辑：** 从 Afrikunda 网站打开 price.htm 文件。
+**1. 编辑：** 从 Afrikunda 网站打开 `price.htm` 文件。
 
 **2. 编辑：** 查看以下源代码：
 
@@ -1917,11 +1784,11 @@ function switchTest(index){
 </SCRIPT>
 ```
 
-3. **编辑：** 滚动到源代码底部。查看 SELECT 对象的代码：
+**3. 编辑：** 滚动到源代码底部。查看 SELECT 对象的代码：
 
 ```html
 <FORM NAME="myForm">
-<SELECT NAME="mySelect" change="switchChoose();document.myForm.mySelect.selectedIndex=0;">
+<SELECT NAME="mySelect" onchange="switchChoose();document.myForm.mySelect.selectedIndex=0;">
 <OPTION>Choose an item</OPTION>
 <OPTION>Mask Ashanti</OPTION>
 <OPTION>Sculpted Chair</OPTION>
@@ -1950,10 +1817,6 @@ function switchTest(index){
 </FORM>
 ```
 
-
-
-
-
 ## 为什么？
 
 JavaScript 专为 Web 页面而设计。为了利用浏览器提供的不同功能和能力，JavaScript 语言中内置了特殊的浏览器对象。JavaScript 语言本身还提供了对象，可以帮助你以有用的方式处理字符串、日期和数学信息。JavaScript 还提供了实用的 `Array` 对象，你将在本课程中使用它。
@@ -1964,7 +1827,7 @@ JavaScript 对象模型将对象分为三组：浏览器对象、语言对象和
 
 ![](img/36826ab6f960cbecb919bb0737cbffa0_118_0.png)
 
-图 5-1：JavaScript 对象资源管理器 4.0
+**图 5-1：JavaScript 对象资源管理器 4.0**
 
 Netscape Navigator 4.0（及更高版本）和 Microsoft Internet Explorer（及更高版本）都支持图中所示的模型。Microsoft Internet Explorer 3.0 支持 `Array` 对象，但不支持它的 `length` 属性。Internet Explorer 3.0 不支持将图像作为可以操作的对象。由于许多人仍在使用旧版本的浏览器，因此在编写解决方案时，你应该考虑这些兼容性问题。
 
@@ -1972,25 +1835,25 @@ Netscape Navigator 4.0（及更高版本）和 Microsoft Internet Explorer（及
 
 包含关系关系到一个原则：如果不引用父对象或容器对象，某些对象无法被使用或引用。例如，在 JavaScript 中，如果不引用包含该表单的 form 对象和 document 对象，就无法引用表单元素。要引用名为 `myForm` 的表单上名为 `chkTennis` 的复选框，你需要编写 `document.myForm.chkTennis`。`window` 对象是包含其下方许多对象的默认对象，不需要通过名称引用。`document` 对象包含 `form` 对象，`form` 对象包含包括复选框元素在内的表单元素。
 
-> 注意 注意，语言对象（不引用浏览器相关对象的对象）以大写字母命名。始终记住 JavaScript 是区分大小写的。使用错误的大小写字母引用对象将导致错误。
+> **注意** 注意，语言对象（不引用浏览器相关对象的对象）以大写字母命名。始终记住 JavaScript 是区分大小写的。使用错误的大小写字母引用对象将导致错误。
 
 ## 常用对象
 
-在本节中，我们将讨论一些最常用的对象及其相关的属性和方法。我们将在本节中引入 `navigator` 对象，并在课程后后对其进行进一步检查。
+在本节中，我们将讨论一些最常用的对象及其相关的属性和方法。我们将在本节中引入 `navigator` 对象，并在课程后对其进行进一步检查。
 
 ## window 对象
 
 `window` 对象是 JavaScript 对象层次结构中最高级的对象之一。它也是默认对象。表 5-1 概述了与 `window` 对象相关的常用属性、方法和事件处理器。
 
-表 5-1：window 属性、方法和事件处理器
+### 表 5-1：window 属性、方法和事件处理器
 
 | 属性 | 方法 | 事件处理器 |
 | --- | --- | --- |
-| status 包含默认状态栏文本的字符串值。 | `alert(messageText)` 弹出一个以 `messageText` 为消息的窗口。 | `onload` 当窗口或框架加载完成时处理。 |
-| frames 跟踪窗口中帧（frames）数量的 `Array` 对象。你可以通过在 `frames` 数组中引用帧编号，在 JavaScript 中定位某个帧。 | `close()` 关闭当前窗口。在 JavaScript 中需要使用 `window.close()` 命令才能使其被识别。 | `onUnload` 当窗口或框架卸载完成时处理。 |
-| length 表示父窗口中帧数量的整数值。 | `confirm(messageText)` 弹出一个显示 `messageText` 的消息框，并带有“确定”和“取消”按钮。 | | |
-| name 包含窗口或框架名称的字符串值。 | `open(url,name,featureList)` 打开一个新窗口，由 `URL` 填充，目标名称为 `name`，以及 `featureList` 中指定的任何特性。 | | |
-| parent 包含父窗口名称的字符串值（如果有的话）。 | `prompt(messageText, response)` 弹出一个显示 `messageText` 的消息框，并带有一个供用户输入响应的文本框，如果没有留空，则包含 `response`。如果留空，文本框中将显示“undefined”。 | | |
+| status 包含默认状态栏文本的字符串值。 | `alert(messageText)` 弹出一个以 `messageText` 为消息的窗口。 | onload 当窗口或框架加载完成时处理。 |
+| frames 跟踪窗口中帧（frames）数量的 `Array` 对象。你可以通过在 `frames` 数组中引用帧编号，在 JavaScript 中定位某个帧。 | `close()` 关闭当前窗口。在 JavaScript 中需要使用 `window.close()` 命令才能使其被识别。 | onUnload 当窗口或框架卸载完成时处理。 |
+| length 表示父窗口中帧数量的整数值。 | `confirm(messageText)` 弹出一个显示 `messageText` 的消息框，并带有“确定”和“取消”按钮。 | |
+| name 包含窗口或框架名称的字符串值。 | `open(url,name,featureList)` 打开一个新窗口，由 `URL` 填充，目标名称为 `name`，以及 `featureList` 中指定的任何特性。 | |
+| parent 包含父窗口名称的字符串值（如果有的话）。 | `prompt(messageText, response)` 弹出一个显示 `messageText` 的消息框，并带有一个供用户输入响应的文本框，如果没有留空，则包含 `response`。如果留空，文本框中将显示“undefined”。 | |
 
 ### 表 5-1：window 属性、方法和事件处理器（续）
 
@@ -2008,22 +1871,20 @@ JavaScript 让你能够随心打开新窗口，并用现有信息、动态创建
 
 使用 `open()` 方法打开新窗口的语法为：
 
-```
+```javascript
 open("URL","WindowName","Feature List")
 ```
 
 例如，要打开显示 CIW 主页的新浏览器窗口，你可能使用以下语句：
 
-```
+```javascript
 open("http://www.ciwcertified.com","Ciwwindow",
-toolbar=1,location=1,menubar=1,scrollbars=1,status=1,resizable=1);
+"toolbar=1,location=1,menubar=1,scrollbars=1,status=1,resizable=1");
 ```
-
-## 第 5 节：JavaScript 对象模型
 
 **feature** 列表由一组指定显示或不显示的属性组成。这些属性的接受值为 1 或 "yes"（显示），或 "no"（不显示）。表 5-2 列出了常用的窗口属性。
 
-表 5-2：open() 方法可访问的窗口属性
+### 表 5-2：open() 方法可访问的窗口属性
 
 | 名称 | 描述 |
 | --- | --- |
@@ -2041,48 +1902,43 @@ toolbar=1,location=1,menubar=1,scrollbars=1,status=1,resizable=1);
 
 ![](img/36826ab6f960cbecb919bb0737cbffa0_122_0.png)
 
-你不能在窗口名称区域中包含空格。在之前的示例中，"SearchWindow" 是有效的，但 "Search Window" 将导致错误。此外，你不能在窗口特性列表的 = 字符周围包含空格。例如，“toolbar =1” 不会导致工具栏显示，但“toolbar=1”会。
+你不能在窗口名称区域中包含空格。在之前的示例中，"SearchWindow" 是有效的，但 "Search Window" 将导致错误。此外，你不能在窗口特性列表的 `=` 字符周围包含空格。例如，“toolbar =1” 不会导致工具栏显示，但“toolbar=1”会。
 
 接下来的练习是可选的。该练习启动指向另一个网站的浏览器实例。如果时间允许，老师可能会在课布置此任务。
 
 ## 练习 5-1：使用 open() 方法启动新窗口（可选）
 
-- 1. **编辑器**：打开 default.htm。
+- **1. 编辑器**：打开 `default.htm`。
+- **2. 编辑器**：在现有的 `<SCRIPT>` 标签内输入以下代码：
 
-- 2. **编辑器**：在现有的 <SCRIPT> 标签内输入以下代码：
-
-```
+```javascript
 function myWin() {
   open("http://www.afrikunda.com","newWindow",
-  toolbar=1,location=1,menubar=1,scrollbars=1,status=1,resizable=1\n)
+  "toolbar=1,location=1,menubar=1,scrollbars=1,status=1,resizable=1")
 }
 ```
 
-- 3. **编辑器**：滚动到代码底部，在结束 </DIV> 标签之前输入以下代码：
+- **3. 编辑器**：滚动到代码底部，在结束 `</DIV>` 标签之前输入以下代码：
 
-```
+```html
 <FORM>
   <INPUT TYPE="button" VALUE="Afrikunda on the Web"
   onClick="myWin();"
 </FORM>
 ```
 
-- 4. **编辑器**：保存 default.htm。
-
-
-
-
-5. 浏览器：打开 default.htm。滚动到页面底部。你的屏幕应该如图 5-2 所示。如果不是，请检查你输入的源代码是否正确。
+- **4. 编辑器**：保存 `default.htm`。
+- **5. 浏览器**：打开 `default.htm`。滚动到页面底部。你的屏幕应该如图 5-2 所示。如果不是，请检查你输入的源代码是否正确。
 
 ![](img/36826ab6f960cbecb919bb0737cbffa0_124_0.png)
 
-图 5-2：带有按钮的 default.htm
+**图 5-2：带有按钮的 default.htm**
 
-6. 浏览器：点击“Afrikunda on the Web”按钮启动一个新窗口。由于你没有指定大小，新窗口的大小将与现有窗口的大小完全一致。你的屏幕应该类似于图 5-3。
+- **6. 浏览器**：点击“Afrikunda on the Web”按钮启动一个新窗口。由于你没有指定大小，新窗口的大小将与现有窗口的大小完全一致。你的屏幕应该类似于图 5-3。
 
 ![](img/36826ab6f960cbecb919bb0737cbffa0_125_0.png)
 
-图 5-3：Afrikunda 网站
+**图 5-3：Afrikunda 网站**
 
 在之前的练习中，你目标化了（指定）了一个特定的 URL，并使用它来填充你打开的新窗口。你还定义了一个函数 `myWin()`，它包含一个 `open()` 方法。函数 `myWin()` 是通过按钮对象的 `onClick` 事件处理程序调用的。
 
@@ -2090,13 +1946,13 @@ function myWin() {
 
 在下一次练习中，你将学习如何打开和关闭一个小型空白窗口。你将使用 `width` 和 `height` 属性来更改窗口尺寸。你还将为窗口分配一个名称，用于引用新窗口的对象和属性。在稍后的练习中，你将向此类窗口输出内容。
 
-## 第 5 Lesson：JavaScript 对象模型
+## 第 5 课：JavaScript 对象模型
 
 ## 练习 5-2：打开和关闭新窗口
 
-**1. 编辑器：打开 default.htm。** 在现有的 `<SCRIPT>` 标签内输入以下源代码：
+**1. 编辑器：打开 `default.htm`。** 在现有的 `<SCRIPT>` 标签内输入以下源代码：
 
-```
+```javascript
 function newWin() {
   myWindow = open("NewWin","width=50,height=50");
 }
@@ -2104,67 +1960,66 @@ function newWin() {
 
 **2. 编辑器：** 滚动到源代码底部，并在现有的 `<FORM>` 标签内输入以下代码：
 
-```
+```html
 <INPUT TYPE="button" VALUE="New Window" onclick="newWin();">
 ```
 
-**3. 编辑器：保存 default.htm。**
+**3. 编辑器：保存 `default.htm`。**
 
-**4. 浏览器：打开 default.htm。** 滚动到页面底部。你的屏幕应该类似于图 5-4。如果不是，请检查你输入的源代码是否正确。
+**4. 浏览器：打开 `default.htm`。** 滚动到页面底部。你的屏幕应该类似于图 5-4。如果不是，请检查你输入的源代码是否正确。
 
 ![](img/36826ab6f960cbecb919bb0737cbffa0_126_0.png)
 
-图 5-4：带有按钮的 default.htm
+**图 5-4：带有按钮的 default.htm**
 
-5. 浏览器：点击“New Window”按钮。你现在应该能看到一个小窗口，如图 5-5 所示。如果不是，请检查你输入的源代码是否正确。
+**5. 浏览器：点击“New Window”按钮。** 你现在应该能看到一个小窗口，如图 5-5 所示。如果不是，请检查你输入的源代码是否正确。
 
 ![](img/36826ab6f960cbecb919bb0737cbffa0_127_0.png)
 
-6. 浏览器：关闭小窗口。
+**6. 浏览器：关闭小窗口。**
 
-7. 编辑器：在 default.htm 中，修改**加粗**指示的源代码以向新窗口添加内容：
+**7. 编辑器：在 `default.htm` 中，修改加粗指示的源代码以向新窗口添加内容：**
 
-```
+```javascript
 function newWin() {
-  mywindow = open("", "",width=50,height=50");
+  mywindow = open("", "", "width=50,height=50");
   mywindow.document.write("<FORM><INPUT TYPE='button' VALUE='Close' ");
   mywindow.document.write(" onclick='window.close();'></FORM>");
 }
 ```
 
-8. 编辑器：保存 default.htm。
+**8. 编辑器：保存 `default.htm`。**
 
-## 第 5 Lesson：JavaScript 对象模型
+## 第 5 课：JavaScript 对象模型
 
-9. 浏览器：重新加载 default.htm。滚动到页面底部并点击“New Window”按钮。你的屏幕应该类似于图 5-6。如果不是，请检查你输入的源代码是否正确。
+**9. 浏览器：重新加载 `default.htm`。** 滚动到页面底部并点击“New Window”按钮。你的屏幕应该类似于图 5-6。如果不是，请检查你输入的源代码是否正确。
 
 ![](img/36826ab6f960cbecb919bb0737cbffa0_128_0.png)
 
-图 5-6：带有关闭按钮的新窗口
+**图 5-6：带有关闭按钮的新窗口**
 
-10. 浏览器：点击新窗口中的“Close”按钮。新窗口应该关闭。如果不是，请检查你输入的源代码是否正确。
+**10. 浏览器：点击新窗口中的“Close”按钮。** 新窗口应该关闭。如果不是，请检查你输入的源代码是否正确。
 
 在这次练习中，你学习了可以给窗口赋予一个身份。在这种情况下，新窗口被赋予了名为 `mywindow` 的名称。因为窗口有一个名称，所以你可以访问窗口的 `document`，向新窗口写入内容，并使用 `close()` 方法关闭该特定窗口。这一概念将在本节中进一步探讨。
 
-## 点表示法 (Dot notation)
+## 点表示法
 
 点表示法用于将对象的名称与对象的属性或方法相关联。
 
 点表示法的语法如下：
 
-```
+```javascript
 objectName.objectProperty
 objectName.objectProperty = value
 objectName.objectMethod() ~ required
 objectName.objectMethod(argument1,argument2,...)
-
 parentObjectName.objectName.objectProperty
 parentObjectName.objectName.objectMethod
 ```
 
 例如，上一个练习中写入新窗口的语句使用了点表示法将 `myWindow` 的 `document` 对象的 `write()` 方法相关联。
 
-```
+```javascript
 window.document.write("<FORM>INPUT TYPE='button VALUE='Close'");
 mywindow.document.write("onclick='window.close();'</FORM>");
 ```
@@ -2177,11 +2032,11 @@ mywindow.document.write("onclick='window.close();'</FORM>");
 
 你可以通过脚本随时随地通过 `status` 属性更改状态栏文本。你也可以通过超链接对状态栏进行这些更改。在下一次练习中，你将学习如何使用 `status` 进行这些更改。使用 `with` 语句可以帮助你完成这些代码。
 
-## with 语句 (The with Statement)
+## with 语句
 
 如果你要引用对象的多个属性或方法，应该使用 `with` 语句。使用 `with` 的语法如下：
 
-```
+```javascript
 with(objectname) {
   //statement
 }
@@ -2189,14 +2044,13 @@ with(objectname) {
 
 `with` 语句可以节省你的打字时间。以下是一个使用 `with` 语句添加颜色的示例：
 
-```
+```html
 <HTML>
 <HEAD>
 <TITLE>Certified Webmaster</TITLE>
 <SCRIPT>
 <!--
 myWindow = open("",newwin","height=100,width=100");
-
 with(myWindow.document) {
   open();
   bgColor = "blue";
@@ -2217,7 +2071,9 @@ with(myWindow.document) {
 
 为了说明使用 `with` 语句如何节省打字时间，表 5-3 将上一个示例中使用 `with` 语句的代码与不使用 `with` 的代码进行了对比。
 
-表 5-3：使用 with 语句的代码 | 不使用 with 的代码 |
+### 表 5-3：使用 with 语句的代码 vs 不使用 with 的代码
+
+| 使用 with 语句的代码 | 不使用 with 的代码 |
 |---|---|
 | open() | window.document.open() |
 | bgColor = "blue" | window.document.bgColor = "blue" |
@@ -2227,48 +2083,44 @@ with(myWindow.document) {
 
 你将在课程的以后有机会使用 `with` 语句。然而，在代码允许的情况下，你应该使用它。
 
-## 第 5 Lesson：JavaScript 对象模型
+## 第 5 课：JavaScript 对象模型
 
 在下一次练习中，你将使用 `<A>` 标签的 `onMouseOver` 处理程序来更改状态栏文本。
 
 ## 练习 5-3：更改状态栏文本
 
-- 1. 编辑器：从 Afrikunda 打开 `paintings.htm` 文件。
-- 2. 编辑器：找到 `<IMG SRC="productimages/spmusic1">` 标签。在图像周围添加锚点标签，如**加粗**所示：
+- **1. 编辑器：** 从 Afrikunda 打开 `paintings.htm` 文件。
+- **2. 编辑器：** 找到 `<IMG SRC="productimages/spmusic1">` 标签。在图像周围添加锚点标签，如加粗所示：
 
-```
+```html
 <A HREF="productimages/spmusic.jpg"
-MouseOver="status='View a larger image of the sand painting.';
-return true;"
+MouseOver="status='View a larger image of the sand painting.'; return true;"
 MouseOut="status=''; return true;">
-
 <IMG SRC="productimages/spmusic1.jpg" BORDER="0"></A>
 ```
 
-- 3. 编辑器：在源代码中，找到位于图像右侧的 Senegal 文本。在文本周围添加锚点标签，如**加粗**所示：
+- **3. 编辑器：** 在源代码中，找到位于图像右侧的 Senegal 文本。在文本周围添加锚点标签，如加粗所示：
 
-```
+```html
 <A HREF="http://www.africaguide.com/country/senegal/"
 TARGET="_blank"
 MouseOver="status='Find out about Senegal.'; return true;"
-MouseOut="status=''; return true;">>Senegal</A>
+MouseOut="status=''; return true;">Senegal</A>
 ```
 
-- 4. 编辑器：保存 paintings.htm。
+- **4. 编辑器：** 保存 `paintings.htm`。
 
 ![](img/36826ab6f960cbecb919bb0737cbffa0_132_0.png)
 
-
-
-5. 浏览器：打开 `default.htm` 并选择“Paintings”（绘画）链接。将鼠标指针悬停在沙画图像上。你的屏幕应该类似于图 5-8。如果不是，请检查你输入的源代码是否正确。
+- **5. 浏览器：** 打开 `default.htm` 并选择“Paintings”（绘画）链接。将鼠标指针悬停在沙画图像上。你的屏幕应该类似于图 5-8。如果不是，请检查你输入的源代码是否正确。
 
 ![](img/36826ab6f960cbecb919bb0737cbffa0_133_0.png)
 
-6. 浏览器：将鼠标指针悬停在“Senegal”（塞内加尔）链接上，不要点击，观察状态栏中文本的变化。你的屏幕应该类似于图 5-9。如果不是，请检查你输入的源代码是否正确。
+- **6. 浏览器：** 将鼠标指针悬停在“Senegal”（塞内加尔）链接上，不要点击，观察状态栏中文本的变化。你的屏幕应该类似于图 5-9。如果不是，请检查你输入的源代码是否正确。
 
 ![](img/36826ab6f960cbecb919bb0737cbffa0_134_0.png)
 
-图 5-9：onmouseover 状态栏变化
+**图 5-9：onmouseover 状态栏变化**
 
 © 2000 ProsoftTraining.com 版所有。版本 3.17
 
@@ -2284,7 +2136,7 @@ MouseOut="status=''; return true;">>Senegal</A>
 
 表 5-4 概述了与 document 对象相关的常用属性和方法。注意，document 对象还关联事件和事件处理程序，尽管它们并不常用。
 
-表 5-4：document 属性和方法
+### 表 5-4：document 属性和方法
 
 | 属性 | 方法 |
 |---|---|
@@ -2309,7 +2161,7 @@ MouseOut="status=''; return true;">>Senegal</A>
 
 ## bgColor 和 fgColor 属性
 
-document 的两个显著属性是它的背景颜色 (bgColor) 和前景颜色 (fgColor)。背景颜色定义了页面本身的颜色，而前景颜色定义了文本。许多浏览器识别很长的预定义颜色列表，例如“lightblue”和“crimson”。例如，你可以使用：
+document 的两个显著属性是它的背景颜色 (`bgColor`) 和前景颜色 (`fgColor`)。背景颜色定义了页面本身的颜色，而前景颜色定义了文本。许多浏览器识别很长的预定义颜色列表，例如“lightblue”和“crimson”。例如，你可以使用：
 
 ```javascript
 document.bgColor = "#000000";
@@ -2335,7 +2187,7 @@ document.write("This last updated " + document.lastModified);
 
 除了使用当前窗口和文档对象，你还可以访问其他方法的并更改它们的属性。在下一个练习中，你将结合使用 document 属性（如表 5-5 所示）来启动并写入新窗口。
 
-表 5-5：document 和 window 属性
+### 表 5-5：document 和 window 属性
 
 | 属性或方法 | 说明 |
 |---|---|
@@ -2349,42 +2201,36 @@ document.write("This last updated " + document.lastModified);
 
 ## 练习 5-4：使用对象的属性和方法
 
-1. 编辑器：打开 `default.htm`。
-
-2. 编辑器：按加粗所示修改 `newWin()` 函数：
+1. **编辑器：** 打开 `default.htm`。
+2. **编辑器：** 按加粗所示修改 `newWin()` 函数：
 
 ```javascript
 function newWin() {
   var textColor, backColor, cardImage,
   recipientName, cardMsg, pageContent;
-
   textColor = prompt("Please choose a color:","red");
   backColor = prompt("Please choose a background color:","black");
   pageTitle = prompt("Your card will be titled:");
   cardImage = prompt("Please choose an image for your card?","Statuette");
 ```
 
-3. 编辑器：按所示修改调用 `newWin()` 函数的按钮：`<input type="button" value="Create a Card" onclick="newWin()">`
+3. **编辑器：** 按所示修改调用 `newWin()` 函数的按钮：`<input type="button" value="Create a Card" onclick="newWin()">`
 
-4. 编辑器：保存 `default.htm`。
+4. **编辑器：** 保存 `default.htm`。
 
-5. 浏览器：打开 `default.htm`。点击“Create a Card”按钮。你将看到一系列提示对话框，这些框会在你输入数据时出现（见图 5-10）。如果不是，请检查你输入的源代码是否正确。
+5. **浏览器：** 打开 `default.htm`。点击“Create a Card”按钮。你将看到一系列提示对话框，这些框会在你输入数据时出现（见图 5-10）。如果不是，请检查你输入的源代码是否正确。
 
 ![](img/36826ab6f960cbecb919bb0737cbffa0_140_0.png)
 
-6. 浏览器：在所有对话框中输入数据并点击**OK** 后，将启动一个类似于图 5-11 的新窗口。
+6. **浏览器：** 在所有对话框中输入数据并点击 **OK** 后，将启动一个类似于图 5-11 的新窗口。
 
 ![](img/36826ab6f960cbecb919bb0737cbffa0_141_0.png)
 
-7. 浏览器：注意 Netscape Navigator 4.7 对于动态创建的文档不会通过 `lastModified` 属性返回正确的日期和时间。同样注意前面的图形显示了具有正确背景色的文档。点击**OK** 按钮。你的屏幕应该类似于图 5-12。
+7. **浏览器：** 注意 Netscape Navigator 4.7 对于动态创建的文档不会通过 `lastModified` 属性返回正确的日期和时间。同样注意前面的图形显示了具有正确背景色的文档。点击 **OK** 按钮。你的屏幕应该类似于图 5-12。
 
 ![](img/36826ab6f960cbecb919bb0737cbffa0_141_1.png)
 
-
-
-
-
-9. 浏览器：如果你在 Internet Explorer 5 中执行相同的代码，结果应该与图 5-13 和 5-14 相似。
+9. **浏览器：** 如果你在 Internet Explorer 5 中执行相同的代码，结果应该与图 5-13 和 5-14 相似。
 
 ![](img/36826ab6f960cbecb919bb0737cbffa0_142_0.png)
 
@@ -2392,7 +2238,7 @@ function newWin() {
 
 前面的练习说明，你的脚本可以利用你对 HTML 的熟练程度。你对 HTML 的知识越丰富，在设计动态生成的 Web 页面时就越有创意。
 
-## image 对象 (Object)
+## image 对象
 
 image 对象在 JavaScript 层级结构中位于文档对象（document object）之下。此对象允许你在 Internet Explorer 4.0（及更高版本）和 Netscape Navigator 3.0（及更高版本）中操作图像。
 
@@ -2400,7 +2246,7 @@ image 对象常用的用途之一是创建当鼠标悬停时就会产生动画�
 
 如果你有一个包含任何图像的 HTML 文档，那么你就可以通过 image 对象通过数组索引访问该图像。使用 `images` 数组的标准语法如下：
 
-```
+```javascript
 document.images[0].src = "newImage.jpg";
 ```
 
@@ -2440,7 +2286,7 @@ imageVarName = new Image(150, 200);
 
 表 5-6 列出了 image 对象的属性。image 对象没有内置方法。image 对象的局限性之一是如果你用一张图像替换另一张，新图像必须与原始图像相同或更小。
 
-表 5-6：image 对象属性和事件处理器
+### 表 5-6：image 对象属性和事件处理器
 
 | 属性 (Properties) | 事件处理器 (Event Handlers) |
 | :--- | :--- |
@@ -2498,7 +2344,7 @@ function changeBack(imageName) {
 </script>
 ```
 
-2. **编辑器：** 滚动到文档底部，找到包裹 `<IMG>` 标签的 `<A>` 标签：
+**2. 编辑器：** 滚动到文档底部，找到包裹 `<IMG>` 标签的 `<A>` 标签：
 
 ```html
 <A HREF="about.htm"
@@ -2509,7 +2355,7 @@ function changeBack(imageName) {
 </A>
 ```
 
-3. **编辑器：** 对三个图像的 `<A>` 标签进行类似的更改。分别输入以下代码：
+**3. 编辑器：** 对三个图像的 `<A>` 标签进行类似的更改。分别输入以下代码：
 
 ```html
 <A HREF="contact.htm"
@@ -2538,18 +2384,13 @@ function changeBack(imageName) {
 </A>
 ```
 
-4. **编辑器：** 保存 `sculpture.htm`。
+**4. 编辑器：** 保存 `sculpture.htm`。
 
-5. **浏览器：** 打开 `default.htm` 并点击 Sculpture 链接。滚动到页面底部。你的屏幕应该与图 5-15 相似。
+**5. 浏览器：** 打开 `default.htm` 并点击 Sculpture 链接。滚动到页面底部。你的屏幕应该与图 5-15 相似。
 
-6. **浏览器：** 将鼠标指针悬停在 About Us 链接上。你的屏幕应该与图 5-16 相似。如果不是，请验证你输入的源代码是否正确。
-
-
-
-
+**6. 浏览器：** 将鼠标指针悬停在 About Us 链接上。你的屏幕应该与图 5-16 相似。如果不是，请验证你输入的源代码是否正确。
 
 - **7. 浏览器：** 当鼠标悬停在关于我们（About Us）链接上时，你应该能看到图像发生变化，鼠标移开后恢复为原始图像。
-
 - **8. 编辑器：** 如果时间允许，修改你的代码以更改窗口对象的 `status` 属性，以便指示链接将用户带往的页面，如上所示。
 
 # history 对象
@@ -2560,28 +2401,26 @@ function changeBack(imageName) {
 
 要访问访问过的之前的页面，可以使用带有 `back()` 和 `forward()` 方法的 history 对象。语法如下：
 
-```
+```javascript
 history.back();
 ```
 
 或者：
 
-```
+```javascript
 history.forward();
 ```
 
-表 5-7 列出了与 history 对象相关的属性和方法。请注意，history 对象没有关联任何事件。
-
-表 5-7: history 属性和方法
+### 表 5-7: history 属性和方法
 
 | 属性 | 方法 |
 | --- | --- |
 | length | back() |
 | 表示 history 对象当前引用的链接数量的整数值。 | 将用户发送到历史列表中的上一个页面。 |
 | | forward() |
-| 将用户发送到历史列表中的下一个页面。 |
+| | 将用户发送到历史列表中的下一个页面。 |
 | | go(x) |
-| 如果 x 是整数，用户将返回到历史列表中的第 x 个页面。如果 x 是字符串值，用户将返回到历史列表中 URL 与 x 匹配的页面。 |
+| | 如果 x 是整数，用户将返回到历史列表中的第 x 个页面。如果 x 是字符串值，用户将返回到历史列表中 URL 与 x 匹配的页面。 |
 
 # location 对象
 
@@ -2589,13 +2428,13 @@ history.forward();
 
 location 对象允许你在脚本中指定 URL。因此，你可以创建按钮而不是文本或图形链接来将用户发送到不同的目标。你将经常使用的 location 对象的关键属性是 `href` 属性，它指定了当前或目标 URL 的超文本引用。例如，考虑以下行代码：
 
-```
+```javascript
 location.href=http://www.wcertified.com;
 ```
 
 在语句中添加此行代码将在该语句被处理时将用户发送到该网站。你可以使用内联脚本在 `<FORM>` 标签中包含这样的语句。语法如下：
 
-```
+```html
 <FORM>
 <INPUT TYPE="button" VALUE="Click Here" onclick="location.href='http://www.wcertified.com'">
 </FORM>
@@ -2603,13 +2442,13 @@ location.href=http://www.wcertified.com;
 
 记住，按钮必须位于一对 `<FORM>` 标签内。请注意，从 `location` 开始到标签结束，脚本被包含在双引号中，而 URL 本身被包含在单引号中。location 对象的属性与形成完整 URL 的各种信息有关。在许多应用程序中，访问这些信息极其重要。这些属性允许开发者轻松访问数据而无需进行字符串操作。URL 的各个部分标识如下：
 
-```
+```javascript
 protocol://hostname:port/pathname/search#hash
 ```
 
 如表 5-8 所示，可以从 location 对象中提取 URL 的每个元素。
 
-表 5-8: location 属性
+### 表 5-8: location 属性
 
 | 属性 | 说明 |
 | --- | --- |
@@ -2622,11 +2461,11 @@ protocol://hostname:port/pathname/search#hash
 | search | 返回 `?` 字符后面的文本（如果存在搜索字符串）。 |
 | hash | 指定内部链接锚点名称，它跟在 URL 中的符号 `(#)` 之后。 |
 
-# 将 location 对象与条件赋值运算符结合
+## 将 location 对象与条件赋值运算符结合
 
 在本课程之前的章节中，你学习了条件赋值运算符，它在条件为真时返回一个值，在条件为假时返回另一个值。你可以如下所示将此运算符与 location 对象结合：
 
-```
+```javascript
 location.href=(condition)?URL if true : URL false
 ```
 
@@ -2640,37 +2479,30 @@ location.href=(condition)?URL if true : URL false
 
 **2. 编辑器：** 在以下代码中添加 `location.href` 语句和一个条件赋值运算符，以便根据用户的测验分数，正确答案将把用户发送到“恭喜”页面或“下次好运”页面。
 
-```
+```javascript
 <SCRIPT LANGUAGE="JavaScript">
 var Correct=0;
-
 function takeTest() {
 var response="";
 var points=0;
-
 var q1 = "What is the price of the Teak Elephants?";
 var a1 = "$55.00";
-
 var q2 = "From what type of wood is the Lion carved?";
 var a2 = "EBONY";
-
 var q3 = "What is the last name of both carvers mentioned on this page?";
 var a3 = "MANE";
-
 response = prompt(q1,"$55.00");
 if (response) points=runningTotal(response==a1 ? 1 : 0);
 alert(points);
 response = prompt(q2,"");
 if (response) points=runningTotal(response.toUpperCase()==a2 ? 1 : 0);
 alert(points);
-
 response = prompt(q3,"");
 if (response) points=runningTotal(response.toUpperCase()==a3 ? 1 : 0);
 alert("You answered a total of " + points + " correctly.");
 numCorrect = 0;
 points=0;
 }
-
 function runningTotal(i) {
 numCorrect+=i;
 return numCorrect;
@@ -2690,39 +2522,42 @@ return numCorrect;
 
 navigator 对象反映了所用浏览器的信息。此对象可以确定浏览器的品牌和版本，甚至识别用户的操作系统。例如，以下行将客户端的名称赋值给 `userBrowser` 变量：
 
-```
+```javascript
 var userBrowser = navigator.appName;
 ```
 
-# 第 5 ：JavaScript 对象模型
 
-表 5-9 显示了 navigator对象的属性和方法。
 
-表 5-9: navigator 对象属性和方法
+# 第 5 课：JavaScript 对象模型
+
+表 5-9 显示了 `navigator` 对象的属性和方法。
+
+## 表 5-9：navigator 对象属性和方法
 
 | 属性 | 方法 |
-| --- | --- |
-| appCodeName | JavaEnabled() |
-| 包含客户端代码名的字符串值（例如，Netscape 为 Mozilla）。 | 如果客户端启用了 Java，则返回 true；否则返回 false。 |
-| AppName | preference() |
-| 包含客户端名称的数组对象（例如，Navigator 为 Mozilla）。 | 读取并设置浏览器偏好（仅限签名脚本）。 |
-| AppVersion | taintEnabled() |
-| 包含客户端版本的字符串值。 | 如果客户端启用了数据污染，则返回 true；否则返回 false。 |
-| language | | 表明浏览器语言的代码。 |
-| mimeTypes | | 一个表示客户端支持的所有 MIME 类型的数组。 |
-| platform | | 识别编译该浏览器时针对的操作系统。 |
-| plugins | | 一个表示在特定浏览器上安装的所有插件的数组。 |
-| user | | 包含在 HTTP 请求中发送的 user-agent 标头的完整值的字符串值。 |
+| :--- | :--- |
+| `appCodeName` | `javaEnabled()` |
+| 包含客户端代码名的字符串值（例如，Netscape 为 "Mozilla"）。 | 如果客户端启用了 Java，则返回 `true`；否则返回 `false`。 |
+| `appName` | `preference()` |
+| 包含客户端名称的字符串值（例如，Navigator 为 "Netscape"）。 | 读取并设置浏览器偏好（仅限签名脚本）。 |
+| `appVersion` | `taintEnabled()` |
+| 包含客户端版本的字符串值。 | 如果客户端启用了数据污染，则返回 `true`；否则返回 `false`。 |
+| `language` | |
+| 表明浏览器语言的代码。 | |
+| `mimeTypes` | |
+| 一个表示客户端支持的所有 MIME 类型的数组。 | |
+| `platform` | |
+| 识别编译该浏览器时针对的操作系统。 | |
+| `plugins` | |
+| 一个表示在特定浏览器上安装的所有插件的数组。 | |
+| `userAgent` | |
+| 包含在 HTTP 请求中发送的 user-agent 标头的完整值的字符串值。 | |
 
-navigator 对象将在课程稍后部分演示。
-
-
-
-
+`navigator` 对象将在课程稍后部分演示。
 
 ## 课程总结
 
-在本节课程中，你对 JavaScript 对象层次结构有了全面的概述，包括 window、document、image、history、Location 和 navigator 对象。在下节课程中，你将学习语言对象，包括 String 对象的数值评估方法，以及 Date 和 Math 对象的用途。
+在本节课程中，你对 JavaScript 对象层次结构有了全面的概述，包括 `window`、`document`、`image`、`history`、`location` 和 `navigator` 对象。在下节课程中，你将学习语言对象，包括 `String` 对象的数值评估方法，以及 `Date` 和 `Math` 对象的用途。
 
 ![](img/36826ab6f960cbecb919bb0737cbffa0_157_0.png)
 
@@ -2732,45 +2567,45 @@ navigator 对象将在课程稍后部分演示。
 
 ![](img/36826ab6f960cbecb919bb0737cbffa0_159_0.png)
 
-# 第 6 ：JavaScript 语言对象
+# 第 6 课：JavaScript 语言对象
 
 ## 目标
 
 在本节课程结束后，你将能够：
 
-- 使用 String 对象测试用户输入。
-- 部署 Array 对象创建更高效的代码。
-- 识别 Date 和 Math 对象的用途。
+- 使用 `String` 对象测试用户输入。
+- 部署 `Array` 对象创建更高效的代码。
+- 识别 `Date` 和 `Math` 对象的用途。
 
 ## 为什么？
 
-JavaScript 将 HTML 表单和表单元素视为对象，可以用实用的方式处理字符串、日期和数学信息。例如，你可以使用 String 对象在表单发送到 CGI 脚本或其他进程之前对其进行处理和测试。
+JavaScript 将 HTML 表单和表单元素视为对象，可以用实用的方式处理字符串、日期和数学信息。例如，你可以使用 `String` 对象在表单发送到 CGI 脚本或其他进程之前对其进行处理和测试。
 
-使用 Date 对象，你可以动态自定义 Web 页面；使用 Math 对象可以进一步增强创建应用程序的能力。JavaScript 还提供了 Array 对象，你将在本课程的剩余部分中使用它。请注意，上一节中所示的 JavaScript 对象层次模型包含了 Function、Boolean 和 Number 对象。虽然这些对象是添加到 JavaScript 1.2 的，但本课程将不会讨论它们。
+使用 `Date` 对象，你可以动态自定义 Web 页面；使用 `Math` 对象可以进一步增强创建应用程序的能力。JavaScript 还提供了 `Array` 对象，你将在本课程的剩余部分中使用它。请注意，上一节中所示的 JavaScript 对象层次模型包含了 `Function`、`Boolean` 和 `Number` 对象。虽然这些对象是添加到 JavaScript 1.2 的，但本课程将不会讨论它们。
 
 你将在下节课程中学习更多关于表单的内容。
 
 ## JavaScript 语言对象
 
-String、Math、Array 和 Date 对象被称为语言对象。它们不属于上一节中的包含层次结构，但它们仍然是 JavaScript 语言的一部分。首先，你将处理 String 对象。
+`String`、`Math`、`Array` 和 `Date` 对象被称为语言对象。它们不属于上一节中的包含层次结构，但它们仍然是 JavaScript 语言的一部分。首先，你将处理 `String` 对象。
 
 ## String 对象
 
-字符串也许是任何程序中最常见的元素之一。字符串可以是文本、数字，或任何作为文本运行的字符组合。字符串可以是字面量，例如 "How are you today?"，也可以是变量中的，例如 userName。JavaScript 的数据类型之一是字符串类型，但同时也存在一个 String 对象。
+字符串也许是任何程序中最常见的元素之一。字符串可以是文本、数字，或任何作为文本运行的字符组合。字符串可以是字面量，例如 `"How are you today?"`，也可以是变量中的，例如 `userName`。JavaScript 的数据类型之一是字符串类型，但同时也存在一个 `String` 对象。
 
-你已经看到过 String 对象的一个方法，即 `toUpperCase()` 方法。你脚本中的任何现有字符串都可以访问 JavaScript 对象的方法。
+你已经看到过 `String` 对象的一个方法，即 `toUpperCase()` 方法。你脚本中的任何现有字符串都可以访问 JavaScript 对象的方法。
 
-String 对象具有许多方法，允许你测试某些字符是否存在、从给定字符串中提取子集（称为子字符串）、查找字符或子字符串在字符串中的位置，以及检索字符串中的字符数。在本节课程中，你将处理文本字符串的格式化，以及允许操作字符串的属性和方法。
+`String` 对象具有许多方法，允许你测试某些字符是否存在、从给定字符串中提取子集（称为子字符串）、查找字符或子字符串在字符串中的位置，以及检索字符串中的字符数。在本节课程中，你将处理文本字符串的格式化，以及允许操作字符串的属性和方法。
 
 ## String 对象格式化方法
 
-String 对象提供了用于格式化文本的预定义方法。在 JavaScript 中创建 String 对象的标准方法是使用：
+`String` 对象提供了用于格式化文本的预定义方法。在 JavaScript 中创建 `String` 对象的标准方法是使用：
 
 ```javascript
 var str = new String("Hello");
 ```
 
-然而，你不限于这种标准方法。字符串在 JavaScript 中被常用使得程序员可以轻松地访问 String 方法，而无需显式创建 String 对象。例如，你可以在不显式创建 String 对象的情况下让文本字符串加粗显示，如下：
+然而，你不限于这种标准方法。字符串在 JavaScript 中被常用使得程序员可以轻松地访问 `String` 方法，而无需显式创建 `String` 对象。例如，你可以在不显式创建 `String` 对象的情况下让文本字符串加粗显示，如下：
 
 ```javascript
 "Hello, World!".bold();
@@ -2784,28 +2619,28 @@ userName.bold();
 
 但是，理解 JavaScript 创建字符串的正式方式非常重要，因为在使用 `Array()` 和 `Date()` 对象时需要进行实例化。
 
-表 6-1 概述了 String 对象的格式化方法及其用法示例。
+表 6-1 概述了 `String` 对象的格式化方法及其用法示例。
 
 ### 表 6-1：String 对象格式化方法
 
 | 方法 | 示例 | HTML 等效于 |
-|---|---|---|
-| anchor("anchorName") | "Part 2".anchor("p2") | <A NAME="p2">Part 2</A> |
-| big() | "Welcome!".big() | <BIG>Welcome!</BIG> |
-| blink() | "New today:".blink() | <BLINK>New Today:</BLINK> |
-| bold() | "Links".bold() | <B>Links</B> |
-| fixed() | "Name Phone".fixed() | <TT>Name Phone</TT> |
-| fontcolor("color") | "Hi!".fontcolor("blue") | <FONT COLOR="blue">Hi!</FONT> |
-| | "Hi!".fontcolor("#0000FF") | <FONT COLOR="#0000FF">Hi!</FONT> |
-| fontsize(size) | "Sky Tech".fontsize(6) | <FONT SIZE=6>Sky Tech</FONT> |
-| italics() | "thank you".italics() | <I>thank you.</I> |
-| link("URL") | "NASA".link("http://www.nasa.gov") | <A HREF="http://www.nasa.gov">NASA</A> |
-| small() | "Don't look here".small() | <SMALL>Don't look here.</SMALL> |
-| strike() | "shall grant".strike() | <STRIKE>shall grant</STRIKE> |
-| sub() | "H" + "2".sub() | <SUB>2</SUB> |
-| sup() | "E" + "2".sup() | <SUP>2</SUP> |
-| toLowerCase() | "Hello".toLowerCase() | hello |
-| toUpperCase() | "Hello".toUpperCase() | HELLO |
+| :--- | :--- | :--- |
+| `anchor("anchorName")` | `"Part 2".anchor("p2")` | `<A NAME="p2">Part 2</A>` |
+| `big()` | `"Welcome!".big()` | `<BIG>Welcome!</BIG>` |
+| `blink()` | `"New today:".blink()` | `<BLINK>New Today:</BLINK>` |
+| `bold()` | `"Links".bold()` | `<B>Links</B>` |
+| `fixed()` | `"Name Phone".fixed()` | `<TT>Name Phone</TT>` |
+| `fontcolor("color")` | `"Hi!".fontcolor("blue")` | `<FONT COLOR="blue">Hi!</FONT>` |
+| | `"Hi!".fontcolor("#0000FF")` | `<FONT COLOR="#0000FF">Hi!</FONT>` |
+| `fontsize(size)` | `"Sky Tech".fontsize(6)` | `<FONT SIZE=6>Sky Tech</FONT>` |
+| `italics()` | `"thank you".italics()` | `<I>thank you.</I>` |
+| `link("URL")` | `"NASA".link("http://www.nasa.gov")` | `<A HREF="http://www.nasa.gov">NASA</A>` |
+| `small()` | `"Don't look here".small()` | `<SMALL>Don't look here.</SMALL>` |
+| `strike()` | `"shall grant".strike()` | `<STRIKE>shall grant</STRIKE>` |
+| `sub()` | `"H" + "2".sub()` | `<SUB>2</SUB>` |
+| `sup()` | `"E" + "2".sup()` | `<SUP>2</SUP>` |
+| `toLowerCase()` | `"Hello".toLowerCase()` | `hello` |
+| `toUpperCase()` | `"Hello".toUpperCase()` | `HELLO` |
 
 ## String 特殊字符
 
@@ -2814,15 +2649,15 @@ userName.bold();
 ### 表 6-2：特殊字符
 
 | 字符 | 描述 |
-|---|---|
-| \b | 退格 |
-| \f | 换页 |
-| \n | 换行符 |
-| \r | 回车 |
-| \t | 制表符 |
-| " | 双引号 |
-| ' | 单引号 |
-| \ | 反斜杠 |
+| :--- | :--- |
+| `\b` | 退格 |
+| `\f` | 换页 |
+| `\n` | 换行符 |
+| `\r` | 回车 |
+| `\t` | 制表符 |
+| `\"` | 双引号 |
+| `\'` | 单引号 |
+| `\\` | 反斜杠 |
 
 假设你想在文本中放入引号，必须使用 `\"` 来输入它们。例如，考虑以下内容：
 
@@ -2836,28 +2671,27 @@ content += "\"favorite\".italics();
 
 ### 练习 6-1：使用 String 对象
 
-- 1. 编辑：从 Afrikunda 站点打开 aboutus.htm 文件。
-- 2. 编辑：在文档的 <HEAD> 部分输入以下代码：
+1. **编辑器**：从 Afrikunda 站点打开 `aboutus.htm` 文件。
+2. **编辑器**：在文档的 `<HEAD>` 部分输入以下代码：
 
 ```javascript
 <SCRIPT LANGUAGE="JavaScript">
+<!--
 function linksFun() {
-  var content="";
-  content += "<html><HEAD><BASE TARGET='_blank'</HEAD>\n";
+  var content = "";
+  content += "<html><HEAD><BASE TARGET='_blank'></HEAD>\n";
   content += "<BODY BGCOLOR='#CC9966' TEXT='#330000'>\n";
   content += "Related Sites.".big().fontcolor("blue") + "<p>\n";
   content += "Afrikunda".italics() + " patrons.<p>\n";
   content += "<ul><li>\n";
-  content += "Senegal".link("http://www.africude.com/country/senegal/");n";
+  content += "Senegal".link("http://www.africude.com/country/senegal/") + "\n";
   content += "\n<li>\n";
-  content += "Ivory Coast".link("http://www.africude.com/country/ivory-cost/");n";
+  content += "Ivory Coast".link("http://www.africude.com/country/ivory-cost/") + "\n";
   content += "\n<li>\n";
-  content += "Zaire".link("http://www.africude.com/country/zaire/");n;
-  content += "\n</ul></body></HTML>\n"
-
-  linkwindow=open("Links", "width=350,height=200, resizable=1");
-
-  with(linkWindow.document) {
+  content += "Zaire".link("http://www.africude.com/country/zaire/") + "\n";
+  content += "\n</ul></body></HTML>\n";
+  linkWindow = open("", "Links", "width=350,height=200,resizable=1");
+  with (linkWindow.document) {
     open();
     write(content);
     close();
@@ -2867,51 +2701,47 @@ function linksFun() {
 </SCRIPT>
 ```
 
-- 3. 编辑：在源代码中找到 <IMG SRC="images/Logo17-6.gif"> 标签。按照加粗所示所示修改代码：
+3. **编辑器**：在源代码中找到 `<IMG SRC="images/Logo17-6.gif">` 标签。按照加粗所示修改代码：
 
-```javascript
+```html
 <A HREF="javascript:linksFun();"
 onMouseEnter="status='Related Links'; return true;"
 onMouseOut="status=''; return true;">Related Links
 <IMG SRC="images/Logo17-6.gif" WIDTH="60" HEIGHT="96"
-BORDER="0">/A>
+BORDER="0"></A>
 ```
 
-- 4. 保存 aboutus.htm。
-- 5. 浏览器：打开 default.htm 并选择 About Us 链接。你的屏幕应该类似于图 6-1。如果不是，请检查你输入的代码是否正确。
-
-
-
-
-6. 浏览器：点击“相关链接”或其下方的图像。你应该看到一个较小的窗口出现。该小窗口应该类似于图 6-2。如果不是这样，请检查你输入的源代码是否正确。
+4. **编辑器**：保存 `aboutus.htm`。
+5. **浏览器**：打开 `default.htm` 并选择 About Us 链接。你的屏幕应该类似于图 6-1。如果不是，请检查你输入的代码是否正确。
+6. **浏览器**：点击“相关链接”或其下方的图像。你应该看到一个较小的窗口出现。该小窗口应该类似于图 6-2。如果不是这样，请检查你输入的源代码是否正确。
 
 ![](img/36826ab6f960cbecb919bb0737cbffa0_168_0.png)
 
-7. 浏览器：点击链接以确保它们可以访问相应的站点。
+7. **浏览器**：点击链接以确保它们可以访问相应的站点。
 
-在前面的的练习中，你学习了如何使用 String 对象的某些格式化方法来影响新窗口中的文本。尝试编辑源代码文件，以包含其他的格式化方法和其他特殊字符。
+在前面的练习中，你学习了如何使用 `String` 对象的某些格式化方法来影响新窗口中的文本。尝试编辑源代码文件，以包含其他的格式化方法和其他特殊字符。
 
 ## 额外的 String 对象方法
 
-到此为止，本节向你介绍了字符串以及与 String 对象相关的几种文本格式化方法。现在，你将学习与之相关的其他方法。
+到此为止，本节向你介绍了字符串以及与 `String` 对象相关的几种文本格式化方法。现在，你将学习与之相关的其他方法。
 
-任何文本字符串（无论是字面量还是作为变量的内容），都会自动获得与 String 对象相关的相同属性和方法。你之前关注了通过脚本实现字符串格式化的方法，以及更改字符串大小的方法：`toUpperCase()` 和 `toLowerCase()`。现在，你将学习允许你对字符串进行评估的方法，例如长度、内容以及某些字符的存在与否。
+任何文本字符串（无论是字面量还是作为变量的内容），都会自动获得与 `String` 对象相关的相同属性和方法。你之前关注了通过脚本实现字符串格式化的方法，以及更改字符串大小的方法：`toUpperCase()` 和 `toLowerCase()`。现在，你将学习允许你对字符串进行评估的方法，例如长度、内容以及某些字符的存在与否。
 
 ## 评估字符串
 
-为了检查字符串（例如你想验证表单或 cookie 时），你必须先学习 String 对象可用的评估方法。本节将为你提供必要的基本工具，以便出于编程目的有效地检查你的字符串数据。
+为了检查字符串（例如你想验证表单或 cookie 时），你必须先学习 `String` 对象可用的评估方法。本节将为你提供必要的基本工具，以便出于编程目的有效地检查你的字符串数据。
 
 ## length 属性
 
 数据验证中的常见任务是测试字符串的长度。例如，假设你创建一个包含文本框的表单，用户在其中输入电子邮件地址。在提交表单之前，你可以测试电子邮件地址是否至少有六个字符。要确定任何字符串的长度，语法如下：
 
-```
+```javascript
 string.length;
 ```
 
 这是一个测试字面量字符串长度的示例：
 
-```
+```javascript
 "Hello, World!".length;
 ```
 
@@ -2919,61 +2749,61 @@ string.length;
 
 ## indexOf() 和 lastIndexOf() 方法
 
-`indexOf()` 方法测试给定的字符的存在和位置。例如，假设你想测试用户是否输入了电子邮件地址。你可以测试任何给定字符（如 @ 符号）的存在和位置。
+`indexOf()` 方法测试给定的字符的存在和位置。例如，假设你想测试用户是否输入了电子邮件地址。你可以测试任何给定字符（如 `@` 符号）的存在和位置。
 
 `indexOf()` 方法的通用语法如下：
 
-```
-indexOf(searchText,startingIndexPosition);
+```javascript
+indexOf(searchText, startingIndexPosition);
 ```
 
 例如，考虑以下语句：
 
-```
-"This is a test".indexOf("h",0);
+```javascript
+"This is a test".indexOf("h", 0);
 ```
 
 该语句将返回值 1，因为字母 "h" 是字符串起始右侧的第一个字符。在 JavaScript 中，字符串的索引是从 0 开始的。因此，此示例字符串中的 "T" 位于位置 0。现在考虑以下示例：
 
-```
-"johndoe@company.com".indexOf("@",0);
+```javascript
+"johndoe@company.com".indexOf("@", 0);
 ```
 
 该语句将返回值 4。然而，考虑以下语句：
 
-```
-"johndoe@company.com".indexOf("@",5);
+```javascript
+"johndoe@company.com".indexOf("@", 5);
 ```
 
-该语句将返回值 -1，因为从位置 5（从左侧数第 6 个）到字符串结束没有找到字符串 "@"。值 -1 始终意味着从指定的起始位置向后没有找到找到查找的字符串。
+该语句将返回值 -1，因为从位置 5（从左侧数第 6 个）到字符串结束没有找到字符串 "@"。值 -1 始终意味着从指定的起始位置向后没有找到查找的字符串。
 
 如果你想验证电子邮件地址的正确格式，可以使用 `indexOf("@")` 表达式来验证 "@" 是否存在；
 
 `lastIndexOf()` 方法是 `indexOf()` 的变体。正如你所假设的，该方法返回指定的搜索文本最后一次出现位置的索引值。其机制略有不同，`lastIndexOf()` 从字符串的结束位置开始计数，而不是从起始位置。`lastIndexOf()` 的语法如下：
 
-```
-lastIndexOf(searchText,endingIndexPosition);
+```javascript
+lastIndexOf(searchText, endingIndexPosition);
 ```
 
 例如：
 
-```
-"ABRACADABRA".lastIndexOf("ABRA",10);
+```javascript
+"ABRACADABRA".lastIndexOf("ABRA", 10);
 ```
 
 该语句将返回值 7，即使 "ABRA" 从位置 0 开始出现。考虑下一个示例：
 
-```
-"ABRACADABRA".lastIndexOf("ABRA",6);
+```javascript
+"ABRACADABRA".lastIndexOf("ABRA", 6);
 ```
 
 该语句将返回值 0。
 
 ## substring() 方法
 
-当你想要检查字符串的一部分时时，可以使用 `substring()` 方法。`substring()` 方法的语法如下：
+当你想要检查字符串的一部分时，可以使用 `substring()` 方法。`substring()` 方法的语法如下：
 
-```
+```javascript
 substring(startingIndexPosition, endIndex);
 ```
 
@@ -2981,19 +2811,19 @@ substring(startingIndexPosition, endIndex);
 
 考虑以下示例：
 
-```
-"ABC1234XYZ".substring(3,7);
+```javascript
+"ABC1234XYZ".substring(3, 7);
 ```
 
 该语句将返回以下值：
 
-```
+```text
 1234
 ```
 
 在该语句中，“1" 是第四个字符，位于位置 3，而 "4" 是位置 7 之前的最后一个字符。因此，“1234”是符合位置 3 到不包含位置 7 的序列。`substring()` 和 `indexOf()` 方法经常配合使用以执行字符串处理和验证。例如，你可以如下确定电子邮件地址中的主机名：
 
-```
+```javascript
 var myEmail = "gregory@someplace.com";
 var start = myEmail.indexOf("@") + 1;
 var myHost = myEmail.substring(start);
@@ -3003,46 +2833,47 @@ var myHost = myEmail.substring(start);
 
 当你想要确定字符串中特定位置出现哪个字符时，可以使用 `charAt()` 方法。`charAt()` 方法的语法如下：
 
-```
+```javascript
 charAt(indexPosition);
 ```
 
 考虑以下示例：
 
-```
+```javascript
 "ABCDEF".charAt(3);
 ```
 
 该语句将返回值：
 
+```text
 D
+```
 
 此方法与 `substring()` 类似，但 `charAt()` 只提取单个字符。
 
 ## 使用字符串方法进行表单验证
 
-使用字符串方法，你可以测试 Visa、MasterCard 和 American Express 号的模式。虽然这种技术的特定实现出了本课程的范围，但你应该考虑这种方式使用字符串。测试长度、检查某些字符的存在、检查子字符串以及你学到的其他方法对于验证非常重要。虽然没有方法可以确保用户输入的信息是正确的，但例如，如果你在输入电子邮件地址，且不存在 @ 字符，你可以确定输入的信息是错误的。然而，存在 @ 并不保证地址有效。有限的验证比没有验证要好。
+使用字符串方法，你可以测试 Visa、MasterCard 和 American Express 号的模式。虽然这种技术的特定实现超出了本课程的范围，但你应该考虑这种方式使用字符串。测试长度、检查某些字符的存在、检查子字符串以及你学到的其他方法对于验证非常重要。虽然没有方法可以确保用户输入的信息是正确的，但例如，如果你在输入电子邮件地址，且不存在 `@` 字符，你可以确定输入的信息是错误的。然而，存在 `@` 并不保证地址有效。有限的验证比没有验证要好。
 
 ## 练习 6-2：将多个字符串方法应用于文本
 
-1. 编辑器：打开来自 Afunda 站的 `form.htm` 文件。
-
-2. 编辑器：检查以下 JavaScript 代码：
+1. **编辑器**：打开来自 Afrikunda 站的 `form.htm` 文件。
+2. **编辑器**：检查以下 JavaScript 代码：
 
 ```javascript
 <SCRIPT LANGUAGE="JavaScript">
-//
+<!--
 function showUpper(checked) {
-     (checked) {
+    if (checked) {
         showThis = document.forms[0].name.value.toUpperCase();
     } else {
         showThis = document.forms[0].name.value.toLowerCase();
     }
-    document.forms[0].name.value=showThis;
+    document.forms[0].name.value = showThis;
 }
 
 function cmdTest() {
-    if (document.forms[0].email_address.value.indexOf("@",0) < 0) {
+    if (document.forms[0].email_address.value.indexOf("@", 0) < 0) {
         alert("这不是有效的电子邮件地址!");
     } else {
         alert("这是一个可能的电子邮件地址");
@@ -3050,53 +2881,37 @@ function cmdTest() {
 }
 
 function showFirst() {
-    firstChars=document.forms[0].phone_number.value.substring(0,2);
+    firstChars = document.forms[0].phone_number.value.substring(0, 2);
     alert(firstChars);
 }
-//
+// -->
 </SCRIPT>
 ```
 
-3. 编辑器：在源代码中找到 `<FORM>` 标签并检查以下内容（特别是加粗的代码）：
+3. **编辑器**：在源代码中找到 `<FORM>` 标签并检查以下内容（特别是加粗的代码）：
 
 ```html
 <FORM>
 Name:<BR>
 <INPUT TYPE="text" SIZE="30" NAME="name">
-
 <INPUT TYPE="checkbox" onclick="showUpper(this.checked);">
 将字符串转换为大写或小写<BR>
-```
 
 电子邮件地址:<BR>
-<INPUT TYPE="text" SIZE="30" NAME="email_address>
-
-```html
-<INPUT TYPE="checkbox" onclick="(this.checked) ? cmdTest();:'";
+<INPUT TYPE="text" SIZE="30" NAME="email_address">
+<INPUT TYPE="checkbox" onclick="(this.checked) ? cmdTest() : '';">
 测试电子邮件地址<BR>
-```
 
-
-
-
-
-# 第 6 ：JavaScript 语言对象
-
-```html
 <INPUT TYPE="text" SIZE="30" NAME="phone_number"><BR>
 Fax number:<BR>
 <INPUT TYPE="text" SIZE="30" NAME="fax_number"><P>
-
-<INPUT TYPE="text" VALUE="first two characters of phone number" onclick="showFirst2();"><P>
-
+<INPUT TYPE="text" VALUE="first two characters of phone number" onclick="showFirst();"><P>
 <INPUT TYPE="text" VALUE="fax number length" onclick="var strLength=document.forms[0].fax_number.value; alert('That string is ' + strLength + ' characters long');">
-
 </FORM>
 ```
 
-4. 编辑器：关闭文件。
-
-5. 浏览器：加载文件 form1.htm。你的屏幕应该类似于图 6-3。输入一些文本并测试你的选项。
+4. **编辑器**：关闭文件。
+5. **浏览器**：加载文件 `form1.htm`。你的屏幕应该类似于图 6-3。输入一些文本并测试你的选项。
 
 ![](img/36826ab6f960cbecb919bb0737cbffa0_174_0.png)
 
@@ -3104,7 +2919,7 @@ Fax number:<BR>
 
 ## 数组对象
 
-所有主要的编程语言都使用数组这一概念。你可以将数组数组为一个具有多个存储不同值的“槽”的单个变量。每个槽都可以通过其索引数字来引用。由于 JavaScript 使用从零开始的数组，因此任何数组的第一个槽索引为 0。
+所有主要的编程语言都使用数组这一概念。你可以将数组视为一个具有多个存储不同值的“槽”的单个变量。每个槽都可以通过其索引数字来引用。由于 JavaScript 使用从零开始的数组，因此任何数组的第一个槽索引为 0。
 
 你已经使用的一些对象内部内置了数组。例如，`window` 对象有一个内置的 `frames` 数组，允许你通过其内部的索引数字来引用帧。在下一节中，你将看到表单字段可以在 `elements` 数组中引用。
 
@@ -3146,6 +2961,7 @@ questions[200] = "Which horse won the 1980 Derby";
 所有 `Array` 对象都有一个 `length` 属性，返回数组中的项目总数。记住，拥有三个项目的数组其索引数字为 0、1 和 2。
 
 使用之前的示例，假设你输入了以下内容：
+
 ```javascript
 alert(questions.length);
 ```
@@ -3158,64 +2974,56 @@ alert(questions.length);
 
 ## 练习 6-3：创建一个链接数组
 
-1. 编辑器：从 Afrikunda 网站打开 aboutus.htm 文件。
-
-2. 编辑器：按照加粗部分的指示修改源代码：
+1. **编辑器**：从 Afrikunda 网站打开 `aboutus.htm` 文件。
+2. **编辑器**：按照加粗部分的指示修改源代码：
 
 ```html
 <SCRIPT LANGUAGE="JavaScript">
 <!--
 function linksFun() {
-var myLinks = new Array();
-myLinks[0] = "Senegal".link("http://www.africaguide.com/country/senegal/");
-myLinks[1] = "Ivory Coast".link("http://www.africaguide.com/country/ivorycoast/");
-myLinks[2] = "Zaire".link("http://www.africaguide.com/country/zaire/");
-
-var content="";
-content += "<HTML><HEAD><BASE TARGET='_blank'></HEAD>";
-content += "<BODY BGCOLOR='#C9966' TEXT='#330000'>";
-content += "Related Sites".font.color("blue") + "<P>\n";
-content += "These sites are of interest to ";
-content += "Afrikunda".italics();
-content += "patrons.<P>\n";
-
-content += "<UL>";
-
-for (var i = 0; i < myLinks.length; i++) {
-content += "<LI>" + myLinks[i] + "\n";
+  var myLinks = new Array();
+  myLinks[0] = "Senegal".link("http://www.africaguide.com/country/senegal/");
+  myLinks[1] = "Ivory Coast".link("http://www.africaguide.com/country/ivorycoast/");
+  myLinks[2] = "Zaire".link("http://www.africaguide.com/country/zaire/");
+  var content = "";
+  content += "<HTML><HEAD><BASE TARGET='_blank'></HEAD>";
+  content += "<BODY BGCOLOR='#CC9966' TEXT='#330000'>";
+  content += "Related Sites".fontcolor("blue") + "<P>\n";
+  content += "These sites are of interest to ";
+  content += "Afrikunda".italics();
+  content += " patrons.<P>\n";
+  content += "<UL>";
+  for (var i = 0; i < myLinks.length; i++) {
+    content += "<LI>" + myLinks[i] + "\n";
+  }
+  content += "</UL>";
+  linkWindow = open("", "Links", "width=350,height=200,resizable=1");
+  with (linkWindow.document) {
+    open();
+    write(content);
+    close();
+  }
 }
-content += "</UL>";
-
-linkWindow.open("","Links",
-width=350,height=200,resizable=1,"");
-
-with(linkWindow.document) {
-open();
-write(content);
-close();
-}
-
-<!---->
+// -->
 </SCRIPT>
 ```
 
 ![](img/36826ab6f960cbecb919bb0737cbffa0_177_0.png)
 
-3. 编辑器：保存 aboutus.htm。
-
-4. 浏览器：打开 aboutus.htm。你的屏幕应该类似于图 6-5。如果不是，请检查代码是否正确。
+3. **编辑器**：保存 `aboutus.htm`。
+4. **浏览器**：打开 `aboutus.htm`。你的屏幕应该类似于图 6-5。如果不是，请检查代码是否正确。
 
 ![](img/36826ab6f960cbecb919bb0737cbffa0_178_0.png)
 
 图 6-5：Aboutus.htm
 
-5. 浏览器：点击“Related Sites”链接。你会看到一个如图 6-6 所示的窗口。如果没有，请检查代码是否正确。
+5. **浏览器**：点击“Related Sites”链接。你会看到一个如图 6-6 所示的窗口。如果没有，请检查代码是否正确。
 
 ![](img/36826ab6f960cbecb919bb0737cbffa0_179_0.png)
 
 图 6-6：Aboutus.htm
 
-6. 浏览器：查看弹出窗口的代码。在之前的练习中，你看到使用 `Array` 对象可以生成很多行代码。现在我们来学习 `Date` 对象。
+6. **浏览器**：查看弹出窗口的代码。在之前的练习中，你看到使用 `Array` 对象可以生成很多行代码。现在我们来学习 `Date` 对象。
 
 ## Date 对象
 
@@ -3238,14 +3046,14 @@ var myObject = new Date();
 | `getDate()` | 获取月份数字（1-31）。 |
 | `getDay()` | 获取星期几（0-6，0代表星期日）。 |
 | `getMonth()` | 获取月份（0-11，0代表一月）。 |
-| `getYear()` | 获取年份（从1900开始）。 |
+| `getFullYear()` | 获取完整年份（四位数）。 |
 | `getHours()` | 获取小时（0-23）。 |
 | `getMinutes()` | 获取分钟（0-59）。 |
 | `getSeconds()` | 获取秒（0-59）。 |
 | `getTime()` | 获取自1970年1月1日以来的毫秒数。 |
-| `getDate(value)` | 设置日期。 |
+| `setDate(value)` | 设置日期。 |
 | `setMonth(value)` | 设置月份（0-11）。 |
-| `setYear(value)` | 设置年份。 |
+| `setFullYear(value)` | 设置年份。 |
 | `setHours(value)` | 设置小时（0-23）。 |
 | `setMinutes(value)` | 设置分钟（0-59）。 |
 | `setSeconds(value)` | 设置秒（0-59）。 |
@@ -3257,9 +3065,8 @@ var myObject = new Date();
 
 ## 练习 6-4：使用 Date 对象
 
-1. 编辑器：打开 Student Folder 中的 date.htm 文件。
-
-2. 与老师一起检查以下源代码：
+1. **编辑器**：打开 Student Folder 中的 `date.htm` 文件。
+2. **编辑器**：与老师一起检查以下源代码：
 
 ```html
 <HTML>
@@ -3268,51 +3075,31 @@ var myObject = new Date();
 <SCRIPT>
 <!--
 var today = new Date();
-
-var monthName = new Array(11)
-monthName[0] = "January"
-monthName[1] = "February"
-monthName[2] = "March"
-monthName[3] = "April"
-monthName[4] = "May"
-monthName[5] = "June"
-monthName[6] = "July"
-monthName[7] = "August"
-monthName[8] = "September"
-monthName[9] = "October"
-monthName[10] = "November"
-monthName[11] = "December"
-
+var monthName = new Array(12);
+monthName[0] = "January";
+monthName[1] = "February";
+monthName[2] = "March";
+monthName[3] = "April";
+monthName[4] = "May";
+monthName[5] = "June";
+monthName[6] = "July";
+monthName[7] = "August";
+monthName[8] = "September";
+monthName[9] = "October";
+monthName[10] = "November";
+monthName[11] = "December";
 var myYear = today.getFullYear();
-
-if (myYear < 2000) myYear = myYear + 1900;
-
 var myDate = today.getDate();
-
-var dayExt="th"
-
-if ((myDate == 1) || (myDate == 21) || (myDate == 31)) dayExt="st"
-if ((myDate == 2) || (myDate == 22)) dayExt="nd"
-if ((myDate == 3) || (myDate == 23)) dayExt="rd"
-
-varExt = myDate + dayExt
-
+var dayExt = "th";
+if ((myDate == 1) || (myDate == 21) || (myDate == 31)) dayExt = "st";
+if ((myDate == 2) || (myDate == 22)) dayExt = "nd";
+if ((myDate == 3) || (myDate == 23)) dayExt = "rd";
+var extDate = myDate + dayExt;
 alert("The month number is: " + (today.getMonth() + 1));
 alert("The date number is: " + today.getDate());
 alert("The year number is: " + today.getFullYear());
-
-//--
+// -->
 </SCRIPT>
-```
-
-
-
-
-6-24
-
-JavaScript 基础
-
-```html
 </HEAD>
 <BODY>
 <H1>Welcome.</H1>
@@ -3320,63 +3107,61 @@ JavaScript 基础
 <h3>Today is the
 <SCRIPT>
 <!--
-document.write(extDate + " day of ");\ndocument.write(monthName[today.getMonth()] + " in the year ");\ndocument.write(myYear + ".");
+document.write(extDate + " day of ");
+document.write(monthName[today.getMonth()] + " in the year ");
+document.write(myYear + ".");
 // -->
 </SCRIPT>
-</</h3>
+</h3>
 </BODY>
 </HTML>
 ```
 
-3. 编辑器：关闭文件。
-
-4. 浏览器：加载文件 date.htm。你的屏幕应该与图 6-8 相似，但显示的日期、月份和年份有所不同。
+3. **编辑器**：关闭文件。
+4. **浏览器**：加载文件 `date.htm`。你的屏幕应该与图 6-8 相似，但显示的日期、月份和年份有所不同。
 
 ![](img/36826ab6f960cbecb919bb0737cbffa0_183_0.png)
 
 图 6-8：通过脚本计算日期信息
 
-© 2000 ProsoftTraining.com 版所有
+© 2000 ProsoftTraining.com 版权所有
 
 版本 3.17
 
-5. **浏览器：打开 default.htm 并点击“Our Guarantee”链接。** 此页面演示了此前代码的用法之一，代码经过略微修改并应用于 Afrikunda 网站。你的屏幕应该与图 6-9 相似，但显示的日期、月份和年份有所不同。
+5. **浏览器**：打开 `default.htm` 并点击“Our Guarantee”链接。此页面演示了此前代码的用法之一，代码经过略微修改并应用于 Afrikunda 网站。你的屏幕应该与图 6-9 相似，但显示的日期、月份和年份有所不同。
 
 ![](img/36826ab6f960cbecb919bb0737cbffa0_184_0.png)
 
-在在上一个练习中，你使用了 Array 对象以及 Date 对象来确定和使用有关当前日期的信息。你还使用了一个简单的公式，为日期的数字添加适当的后缀（将基数词转换为日期中常用的序数词）。
+在上一个练习中，你使用了 `Array` 对象以及 `Date` 对象来确定和使用有关当前日期的信息。你还使用了一个简单的公式，为日期的数字添加适当的后缀（将基数词转换为日期中常用的序数词）。
 
 # 设置和提取时间信息
 
-设置和提取时间信息的步骤与设置和提取日期信息的步骤相同。你首先需要创建一个 Date 对象的新实例。使用表 6-3 中指定的 Date 对象的相应方法，你就可以使用时间信息了。
+设置和提取时间信息的步骤与设置和提取日期信息的步骤相同。你首先需要创建一个 `Date` 对象的新实例。使用表 6-3 中指定的 `Date` 对象的相应方法，你就可以使用时间信息了。
 
-在接下来的练习中，你将查看一段在页面表单字段中创建数字钟的代码。该练习引入了 window 对象的一个新且非常有价值的方法：`setTimeout()`。该方法允许你根据经过的时间间隔调用函数。这个内置计时器对象可以递归运行脚本。`setTimeout()` 方法的语法如下：
+在接下来的练习中，你将查看一段在页面表单字段中创建数字钟的代码。该练习引入了 `window` 对象的一个新且非常有价值的方法：`setTimeout()`。该方法允许你根据经过的时间间隔调用函数。这个内置计时器对象可以递归运行脚本。`setTimeout()` 方法的语法如下：
 
-```
-name=setTimeout(expression, time);
+```javascript
+name = setTimeout(expression, time);
 ```
 
 术语 `expression` 指在指定的时间间隔后要执行的命令或函数，时间以毫秒为单位。术语 `name` 是你可以分配给此方法的可选标识符。如果你想使用 `clearTimeout()` 方法来停止计时器，就需要这个名称标识符。该方法的语法如下：
 
-```
+```javascript
 clearTimeout(name);
 ```
 
 如果你不需要清除计时器，则不需要给它命名，可以使用以下语法：
 
-```
+```javascript
 setTimeout(expression, time);
 ```
 
 在接下来的练习中，你将创建一个使用 `setTimeout()` 方法每秒更新一次的钟。
 
-# 第 6 节：JavaScript 语言对象
+## 练习 6-5：创建一个屏幕时钟
 
-# 练习 6-5：创建一个屏幕时
-
-1. 编辑器：从 Student 文件夹打开 timeclock.htm 文件。
-
-2. 编辑器：检查文件中的以下代码：
+1. **编辑器**：从 Student 文件夹打开 `timeclock.htm` 文件。
+2. **编辑器**：检查文件中的以下代码：
 
 ```html
 <HTML>
@@ -3390,22 +3175,19 @@ function runClock() {
   var minutes = timeNow.getMinutes();
   var seconds = timeNow.getSeconds();
   var ampm = "";
-
-  (seconds<10) ? "0" + seconds : seconds;
-  (minutes<10) ? "0" + minutes : minutes;
-  (hours<12) ? ampm = "AM" : ampm = "PM";
-  (hours>=12) ? hours = hours-12 : hours;
+  seconds = (seconds < 10) ? "0" + seconds : seconds;
+  minutes = (minutes < 10) ? "0" + minutes : minutes;
+  (hours < 12) ? ampm = "AM" : ampm = "PM";
+  (hours >= 12) ? hours = hours - 12 : hours;
   (hours == 0) ? hours = 12 : hours;
-
-  var stringTime = "" + hours + ":" + minutes + ":" + 
-  seconds + " " + ampm;
-  document.forms[0].clock.value=stringTime;
-  setTimeout(runClock(),1000);
+  var stringTime = "" + hours + ":" + minutes + ":" + seconds + " " + ampm;
+  document.forms[0].ClockBox.value = stringTime;
+  setTimeout(runClock, 1000);
 }
-<!--
+// -->
 </SCRIPT>
+</HEAD>
 <BODY onload="runClock()">
-
 <FORM>
 <TABLE WIDTH="100%">
 <TR VALIGN="BOTTOM">
@@ -3415,71 +3197,69 @@ function runClock() {
 </TD></TR></TABLE>
 <HR>
 </FORM>
-
 </BODY>
 </HTML>
 ```
 
-3. 编辑器：关闭文件。
-
-4. 浏览器：加载文件 timeclock.htm。你的屏幕应该与图 6-10 相似。
+3. **编辑器**：关闭文件。
+4. **浏览器**：加载文件 `timeclock.htm`。你的屏幕应该与图 6-10 相似。
 
 ![](img/36826ab6f960cbecb919bb0737cbffa0_187_0.png)
 
 5. 此代码很容易应用于 Afrikunda 网站。如果时间允许，选择一个合适的页面来显示时间。
 
-在你用 JavaScript 编程时，将频繁使用 Date 对象。
+在你用 JavaScript 编程时，将频繁使用 `Date` 对象。
 
 # Math 对象
 
-Math 对象包含了帮助你创建高级数学计算的属性和方法。该对象不是一个值，而是一个包含某些值（如 PI 的值）作为属性的静态对象。你不需要像对待 Date 那样创建 Math 的新实例，也不能重新分配 Math 对象的任何值。对于在特定领域工作的程序员来说，Math 对象非常有用。如果你对如何使用 Math 对象感兴趣，提供了以下信息。从 Math 对象获取值的基本语法如下：
+`Math` 对象包含了帮助你创建高级数学计算的属性和方法。该对象不是一个值，而是一个包含某些值（如 PI 的值）作为属性的静态对象。你不需要像对待 `Date` 那样创建 `Math` 的新实例，也不能重新分配 `Math` 对象的任何值。对于在特定领域工作的程序员来说，`Math` 对象非常有用。如果你对如何使用 `Math` 对象感兴趣，提供了以下信息。从 `Math` 对象获取值的基本语法如下：
 
-```
+```javascript
 variableName = Math.method(value);
 ```
 
-表 6-4 列出了 Math 对象中常用的方法。
+表 6-4 列出了 `Math` 对象中常用的方法。
 
-表 6-4：Math 对象的方法
+### 表 6-4：Math 对象的方法
 
 | 方法 | 返回值 |
 | :--- | :--- |
-| abs(value) | value 的绝对值 |
-| acos(value) | value 的余弦（弧度） |
-| asin(value) | value 的正弦（弧度） |
-| atan(value) | value 的正切（弧度） |
-| ceil(value) | >= value 的整数 |
-| cos(value) | value 的余弦 |
-| exp(value) | e 的 value 次方 |
-| floor(value) | <= value 的整数 |
-| log(value) | value 的自然对数（底数为 e） |
-| max(value, value) | value 或 value 中的较大值 |
-| min(value, value) | value 或 value 中的较小值 |
-| pow(value, value) | value 的幂 |
-| random() | 0 到 1 之间的随机值 |
-| round(value) | 将 value舍五入到最近的整数（例如，1.5 舍五入到 2；1.4 舍五入到 1） |
-| sin(value) | value 的正弦（弧度） |
-| sqrt(value) | value 的平方根 |
-| tan(value) | value 的正切（弧度） |
+| `abs(value)` | `value` 的绝对值 |
+| `acos(value)` | `value` 的反余弦（弧度） |
+| `asin(value)` | `value` 的反正弦（弧度） |
+| `atan(value)` | `value` 的反正切（弧度） |
+| `ceil(value)` | 大于等于 `value` 的最小整数 |
+| `cos(value)` | `value` 的余弦 |
+| `exp(value)` | e 的 `value` 次方 |
+| `floor(value)` | 小于等于 `value` 的最大整数 |
+| `log(value)` | `value` 的自然对数（底数为 e） |
+| `max(value, value)` | 两个 `value` 中的较大值 |
+| `min(value, value)` | 两个 `value` 中的较小值 |
+| `pow(value, value)` | `value` 的幂 |
+| `random()` | 0 到 1 之间的随机值 |
+| `round(value)` | 将 `value` 四舍五入到最近的整数（例如，1.5 变为 2；1.4 变为 1） |
+| `sin(value)` | `value` 的正弦（弧度） |
+| `sqrt(value)` | `value` 的平方根 |
+| `tan(value)` | `value` 的正切（弧度） |
 
-表 6-5 列出了 Math 对象中常用的属性。
+表 6-5 列出了 `Math` 对象中常用的属性。
 
-表 6-5：Math 对象属性
+### 表 6-5：Math 对象属性
 
 | 属性 | 描述 | 返回值 |
 | :--- | :--- | :--- |
-| E | 欧常数 | 2.7182818 |
-| LN2 | 2 的自然对数 | 0.69314718 |
-| LN10 | 10 的自然对数 | 2.30258509 |
-| LOG2E | 底数为 2 的 E 对数 | 1.44269504 |
-| LOG10E | 底数为 10 的 E 对数 | 0.43429448 |
-| PI | 周率 | 3.14159265 |
-| SQRT1_2 | 0.5 的平方根 | 0.70710678 |
-| SQRT2 | 2 的平方根 | 1.41421356 |
+| `E` | 自然常数 | 2.7182818 |
+| `LN2` | 2 的自然对数 | 0.69314718 |
+| `LN10` | 10 的自然对数 | 2.30258509 |
+| `LOG2E` | 底数为 2 的 E 对数 | 1.44269504 |
+| `LOG10E` | 底数为 10 的 E 对数 | 0.43429448 |
+| `PI` | 圆周率 | 3.14159265 |
+| `SQRT1_2` | 0.5 的平方根 | 0.70710678 |
+| `SQRT2` | 2 的平方根 | 1.41421356 |
 
-# 使用 Math 对象
+## 使用 Math 对象
 
-以下源码演示了如何使用 Math 对象的 round() 方法对数字进行舍五入。在这个例子中，数字 5.2 被舍五入为 5。
+以下源码演示了如何使用 `Math` 对象的 `round()` 方法对数字进行四舍五入。在这个例子中，数字 5.2 被四舍五入为 5。
 
 ```html
 <HTML>
@@ -3487,14 +3267,11 @@ variableName = Math.method(value);
 <TITLE>Certified Internetmaster Professional</TITLE>
 <SCRIPT>
 <!--
-var num=5.2;
+var num = 5.2;
 alert(num);
-
 var newnum = Math.round(num);
 alert(newnum);
-
-//
--->
+// -->
 </SCRIPT>
 </HEAD>
 <BODY>
@@ -3507,26 +3284,16 @@ alert(newnum);
 
 图 6-11：Math 对象警告框序列
 
-# 第 6 节：JavaScript 语言对象
+## 练习 6-6：使用 Math 对象生成随机引言
 
-下一个练习演示了如何使用 Math 对象的两个方法从预定义的引言数组中生成随机引言。
-
-注意，此练习中的引言应该单行输入，不允许像本书中那样换行。在 JavaScript 中，除非经过正确拼接，否则无法将文本字符串跨行分割。
-
-![](img/36826ab6f960cbecb919bb0737cbffa0_192_0.png)
-
-# 练习 6-6：使用 Math 对象生成随机引言
-
-1. 编辑器：从 Student 文件夹打开并检查 randquotes.htm 文件。
-
-2. 编辑器：按照加粗指示修改源码：
+1. **编辑器**：从 Student 文件夹打开并检查 `randquotes.htm` 文件。
+2. **编辑器**：按照加粗指示修改源码：
 
 ```html
 <HTML>
 <HEAD>
 <TITLE>Quote of the Day</TITLE>
 </HEAD>
-
 <BODY>
 <DIV ALIGN=CENTER>
 <h1>Quote of the Day</h1>
@@ -3534,54 +3301,41 @@ alert(newnum);
 <FONT COLOR="navy" SIZE="5">
 <SCRIPT LANGUAGE="JavaScript">
 <!--
-
 // 确保这些引言在文件中没有换到下一行
-
 var quotes = new Array();
-quotes[0] = "历史每重演一次，价格就会上涨。<BR><small><i>Anonymous</i></small></small>";
-quotes[1] = "当你认为你理解了一件伟大的艺术品时，它已经死了。<BR><small><i>Robert Wilson</i></small></small>";
-quotes[2] = "爱一个私生活的人是贫穷且痛苦的。<BR><small><i>Traherne</i></small></small>";
-quotes[3] = "每一次对真理违反不仅是谎言者的一种自杀，是对人类社会健康的伤害。<BR><small><i>Ralph Waldo Emerson</i></small></small>";
-quotes[4] = "人存在于理性中，神存在于激情中。<BR><small><i>G. C. Lichtenberg</i></small></small>";
-quotes[5] = "大创新不应强加于少数人。<BR><small><i>Thomas Jefferson</i></small></small>";
-```
+quotes[0] = "历史每重演一次，价格就会上涨。<BR><small><i>Anonymous</i></small>";
+quotes[1] = "当你认为你理解了一件伟大的艺术品时，它已经死了。<BR><small><i>Robert Wilson</i></small>";
+quotes[2] = "爱一个私生活的人是贫穷且痛苦的。<BR><small><i>Traherne</i></small>";
+quotes[3] = "每一次对真理违反不仅是谎言者的一种自杀，是对人类社会健康的伤害。<BR><small><i>Ralph Waldo Emerson</i></small>";
+quotes[4] = "人存在于理性中，神存在于激情中。<BR><small><i>G. C. Lichtenberg</i></small>";
+quotes[5] = "大创新不应强加于少数人。<BR><small><i>Thomas Jefferson</i></small>";
+quotes[6] = "In this world nothing can be said to be certain, death and taxes.<BR><small><i>- Benjamin Franklin</i></small>";
+quotes[7] = "Nine-tenths of wisdom consists in being wise in time.<BR><small><i>- Theodore Roosevelt</i></small>";
+quotes[8] = "We have no more right to consume happiness without producing it than to consume wealth without producing it.<BR><small><i>- George Bernard Shaw</i></small>";
+quotes[9] = "So little done, so much to do.<BR><small><i>- Cecil Rhodes</i></small>";
 
-
-
-```javascript
-quotes[6] = "In this world nothing can be said to be certain, death and taxes.<BR><small><i>- Benjamin Franklin/</i></small>\nquotes[7] = "Nine-tenths of wisdom consists in being wise in time.<BR><small><i>- Theodore Roosevelt/</i></small>\nquotes[8] = "We have no more right to consume happiness producing it to consume wealth without producing it.<BR><small><i>- George Bernard Shaw/</i></small>\nquotes[9] = "So little do, so much to do.<BR><small><i>- Cecil Rhodes/</i></small>";
-```
-
-```javascript
-// The next line displays one of the quotes, chosen
-// onscreen
-document.write(quotes[Math.round(Math.random()*9)]);
-```
-
-```html
+// The next line displays one of the quotes, chosen randomly onscreen
+document.write(quotes[Math.round(Math.random() * 9)]);
 // -->
 </SCRIPT>
 </FONT>
-
 </DIV>
-
 </BODY>
 </HTML>
 ```
 
-3. 编辑器：保存文件。
-
-4. 浏览器：加载 randquotes.htm。你的屏幕显示应该类似于图 6-12。
+3. **编辑器**：保存文件。
+4. **浏览器**：加载 `randquotes.htm`。你的屏幕显示应该类似于图 6-12。
 
 ![](img/36826ab6f960cbecb919bb0737cbffa0_193_0.png)
 
-5. 浏览器：多次加载文件。你会看到不同的引言。因为生成器是真正的随机的，你可能会多次看到同一条引言，即使是之后。如果你加载足够多次，最终将看到所有的引言。再次，这段代码可以很容易地修改并添加到 Afrikunda 网站。例如，可以更改引言以适应网站的主题，并将随机生成器添加到适当页面。
+5. **浏览器**：多次加载文件。你会看到不同的引言。因为生成器是真正的随机的，你可能会多次看到同一条引言，甚至连续多次。如果你加载足够多次，最终将看到所有的引言。再次，这段代码可以很容易地修改并添加到 Afrikunda 网站。例如，可以更改引言以适应网站的主题，并将随机生成器添加到适当页面。
 
 ## 课程总结
 
-在本节中，你学习了 JavaScript 语言对象。你学习了 String 对象及其在验证用户输入方面的价值，以及 Array、Date 和 Math 对象的使用。
+在本节中，你学习了 JavaScript 语言对象。你学习了 `String` 对象及其在验证用户输入方面的价值，以及 `Array`、`Date` 和 `Math` 对象的使用。
 
- 第 7 节：开发交互式表单
+# 第 7 课：开发交互式表单
 
 ### 目标
 
@@ -3592,8 +3346,8 @@ document.write(quotes[Math.round(Math.random()*9)]);
 - 定义表单对象。
 - 使用按钮对象。
 - 使用复选框对象。
-- 评估 text 和 textarea 对象中的文本。
-- 处理单按钮选项。
+- 评估 `text` 和 `textarea` 对象中的文本。
+- 处理单选按钮选项。
 - 从选择列表中获取选择。
 - 进行表单验证。
 
@@ -3603,28 +3357,28 @@ document.write(quotes[Math.round(Math.random()*9)]);
 
 ### 表单控件概述
 
-在开始处理这些表单控件之前，请考虑表 7-1 中列出的可用 HTML 控件。你可能还想回顾第 5 节中所示的 JavaScript 对象模型，以查看这些控件位于对象层次结构的什么位置。
+在开始处理这些表单控件之前，请考虑表 7-1 中列出的可用 HTML 控件。你可能还想回顾第 5 课中所示的 JavaScript 对象模型，以查看这些控件位于对象层次结构的什么位置。
 
-表 7-1：表单控件
+### 表 7-1：表单控件
 
 | 表单控件 | 说明 |
 | :--- | :--- |
-| Button (按钮) | 除提交（Submit）或重置（Reset）之外的按钮。 |
+| Button (按钮) | 除提交或重置之外的按钮。 |
 | Checkbox (复选框) | 一个复选框。 |
 | Hidden (隐藏) | 一个隐藏字段，包含在用户无法察觉的情况下传递的信息。 |
-| Password (密码) | 一个显示星号（***）的文本框，以向查看屏幕的人隐藏输入内容。 |
+| Password (密码) | 一个显示星号的文本框，以向查看屏幕的人隐藏输入内容。 |
 | Radio (单选) | 互斥选项组中的一个选项。 |
 | Reset (重置) | 一个重置按钮。 |
 | Select (选择) | 选择列表，可以从中进行单选或多选。 |
 | Submit (提交) | 一个提交按钮。 |
 | Text (文本) | 一个文本字段。 |
-| Textarea (文本区域) | 一个可滚的文本框。 |
+| Textarea (文本区域) | 一个可滚动的文本框。 |
 
 使用表单控件时的一个重要要求是将你的表单元素封装在一对 `<FORM>` 和 `</FORM>` 标签内。否则，控件将不会出现在浏览器中。此外，Netscape Navigator 3.0 在处理未从服务器传递给你的表单方面存在一个问题。问题在于，当你添加或更改字段时，除非从磁盘重新打开页面，否则表单字段无法正确显示。如果你使用 Navigator 3.0，将在本节的练习中遇到这个问题。
 
 ### 引用表单对象
 
-引用表单对象有两种方法：通过它的名称或通过它在 forms 数组中的索引。考虑以下示例：
+引用表单对象有两种方法：通过它的名称或通过它在 `forms` 数组中的索引。考虑以下示例：
 
 ```html
 <FORM NAME="myForm">
@@ -3632,7 +3386,7 @@ document.write(quotes[Math.round(Math.random()*9)]);
 </FORM>
 ```
 
-在这个示例中，表单的名称是 myForm，文本框的名称是 firstName。要引用文本框中的值，你可以使用以下两种语法类型：
+在这个示例中，表单的名称是 `myForm`，文本框的名称是 `firstName`。要引用文本框中的值，你可以使用以下两种语法类型：
 
 ```javascript
 document.forms[0].elements[0].value;
@@ -3644,7 +3398,7 @@ document.forms[0].elements[0].value;
 document.myForm.firstName.value;
 ```
 
-在第一个示例中，你正在使用 forms 和 elements 数组来指定第一个表单以及该表单中的字段元素。在第二个示例中，你同时通过表单名称和字段名称来引用表单字段。两者都必须以 `document` 开头，因为表单是文档对象的子元素。你还可以结合这两种样式，如下：
+在第一个示例中，你正在使用 `forms` 和 `elements` 数组来指定第一个表单以及该表单中的字段元素。在第二个示例中，你同时通过表单名称和字段名称来引用表单字段。两者都必须以 `document` 开头，因为表单是文档对象的子元素。你还可以结合这两种样式，如下：
 
 ```javascript
 document.forms[0].firstName.value;
@@ -3654,56 +3408,60 @@ document.forms[0].firstName.value;
 
 ### form 对象
 
-form 对象在 JavaScript 中代表一个 HTML 表单。当 HTML 文档中存在 `<FORM>` 标签时，该对象即可用。页面上的每个表单都由 form 对象的单独实例表示。form 对象用于访问表单的所有属性，包括组成表单的所有元素。
+`form` 对象在 JavaScript 中代表一个 HTML 表单。当 HTML 文档中存在 `<FORM>` 标签时，该对象即可用。页面上的每个表单都由 `form` 对象的单独实例表示。`form` 对象用于访问表单的所有属性，包括组成表单的所有元素。
 
-表 7-2 描述了 form 对象常用的属性、方法和事件处理程序。
+表 7-2 描述了 `form` 对象常用的属性、方法和事件处理程序。
 
-表 7-2：form 对象的特性
+### 表 7-2：form 对象的特性
 
-| 属性 (Properties) | 方法 (Methods) | 事件处理程序 (Event Handlers) |
+| 属性 | 方法 | 事件处理程序 |
 | :--- | :--- | :--- |
-| action | reset() | | 指定提交表单数据的 URL 的字符串值。 | 就像用户点击重置按钮一样重置表单元素。 | 指定当表单重置时执行的 JavaScript 代码。 |
-| elements | submit() | onSubmit | 每个表单元素的对象数组，按元素在表单中出现的顺序排列。 | 就像用户点击提交按钮一样提交表单。 | 指定当表单提交时执行的 JavaScript 代码。 |
-| encoding | | | 包含表单 MIME 编码的字符串（在 ENCTYPE 属性中指定）。 | | |
-| length | | | 返回表单中元素的数量。 | | |
-| method | | | 包含向服务器提交表单数据的方法的字符串值。 | | |
-| name | | | 代表在 `<FORM>` 标签中定义的表单名称。 | | |
-| target | | | 包含表单提交目标窗口名称的字符串值。 | | |
+| `action` | `reset()` | `onReset` |
+| 指定提交表单数据的 URL 的字符串值。 | 就像用户点击重置按钮一样重置表单元素。 | 指定当表单重置时执行的 JavaScript 代码。 |
+| `elements` | `submit()` | `onSubmit` |
+| 每个表单元素的对象数组，按元素在表单中出现的顺序排列。 | 就像用户点击提交按钮一样提交表单。 | 指定当表单提交时执行的 JavaScript 代码。 |
+| `encoding` | | |
+| 包含表单 MIME 编码的字符串（在 ENCTYPE 属性中指定）。 | | |
+| `length` | | |
+| 返回表单中元素的数量。 | | |
+| `method` | | |
+| 包含向服务器提交表单数据的方法的字符串值。 | | |
+| `name` | | |
+| 代表在 `<FORM>` 标签中定义的表单名称。 | | |
+| `target` | | |
+| 包含表单提交目标窗口名称的字符串值。 | | |
 
 ### button 对象
 
-button 对象是所有对象中最简单的。它的主要事件处理程序是 `onClick`。通用按钮语法如下：
+`button` 对象是所有对象中最简单的。它的主要事件处理程序是 `onClick`。通用按钮语法如下：
 
 ```html
 <INPUT TYPE="button" VALUE="Text on Button" onclick="script to execute()">
 ```
 
-表 7-3 描述了与 button 对象相关的属性、方法和事件处理程序。
+表 7-3 描述了与 `button` 对象相关的属性、方法和事件处理程序。
 
-表 7-3：button 对象的特性
+### 表 7-3：button 对象的特性
 
-| 属性 (Properties) | 方法 (Methods) | 事件处理程序 (Event Handlers) |
+| 属性 | 方法 | 事件处理程序 |
 | :--- | :--- | :--- |
-| name | click() | onClick 由 NAME 属性决定的对象名称的字符串值。 | 模拟用户点击按钮。 | 当用户点击按钮或调用 `click()` 方法时处理。 |
-| value | | | 由 VALUE 属性决定的按钮上文本的字符串值。 | | |
+| `name` | `click()` | `onClick` |
+| 由 NAME 属性决定的对象名称的字符串值。 | 模拟用户点击按钮。 | 当用户点击按钮或调用 `click()` 方法时处理。 |
+| `value` | | |
+| 由 VALUE 属性决定的按钮上文本的字符串值。 | | |
 
+### checkbox 对象
 
+`checkbox`（复选框）是一个小正方形形状的切换对象，可以被选中（“勾选”）或取消。复选框对象及其相应文本的语法如下：
 
-
-
-# checkbox 对象
-
-checkbox（选择框）是一个小正方形形状的切换对象，可以被选中（“勾选”）或取消。复选框对象及其相应文本的语法如下：
-
-```
+```html
 <INPUT TYPE="checkbox" VALUE="ValueReturnIfChecked">caption text
 ```
 
 例如，考虑表单上的以下复选框：
 
-```
-<INPUT TYPE="checkbox" VALUE="Likes Swimming">
-你喜欢游泳吗？
+```html
+<INPUT TYPE="checkbox" VALUE="Likes Swimming">你喜欢游泳吗？
 ```
 
 如果用户勾选了这个复选框，脚本将在提交表单时返回值 "Likes Swimming"。
@@ -3714,24 +3472,19 @@ checkbox（选择框）是一个小正方形形状的切换对象，可以被选
 
 以下示例显示如果勾选了“我喜欢这个网站”复选框，将向用户表示感谢。此外，此示例引入了字段引用自身的一种快捷方法：`this.checked` 比输入 `document.likedIt.checked` 更快。参见示例：
 
-```
+```html
 <FORM NAME="responseForm">
-
 <INPUT TYPE="checkbox" NAME="likedIt"
 OnClick="if (this.checked) {
-alert('Thanks - glad you liked it!');
-}"
-
+  alert('Thanks - glad you liked it!');
+}">
 你喜欢这个网站吗？
-
 </FORM>
 ```
 
-# 第 7课：开发交互式表单
-
 注意上一个示例，`<INPUT>` 标签中包含了一个 `if` 子句。要在脚本中点击复选框之后的某个时间（例如当选择提交或其他类型的按钮时）引用复选框对象，你必须引用对象的 `checked` 属性。在本示例中，你将使用以下语句测试对象是否已被勾选：
 
-```
+```javascript
 document.forms[0].elements[0].checked;
 ```
 
@@ -3739,70 +3492,75 @@ document.forms[0].elements[0].checked;
 
 你也可以通过名称引用表单和字段，如下：
 
-```
+```javascript
 document.formName.checkBox1.checked;
 ```
 
 表 7-4 描述了与复选框对象相关的常用属性、方法和事件处理器。
 
-表 7-4：复选框对象的特性
+### 表 7-4：复选框对象的特性
 
 | 属性 | 方法 | 事件处理器 |
-| --- | --- | --- |
-| checked | click() | onClick | 布尔值，如果框被勾选则为 `true`，如果未勾选则为 `false`。 | 模拟用户点击复选框。 | 当用户点击复选框或调用 `click()` 方法时进行处理。 |
-| default | | | 布尔值，如果在复选框对象的 `<INPUT>` 标签中使用了 `CHECKED` 属性，则为 `true`。 |
-| name | | | 由 `NAME` 属性确定的对象名称的字符串值。 |
-| value | | | 由 `VALUE` 属性确定的字符串值。 |
+| :--- | :--- | :--- |
+| `checked` | `click()` | `onClick` |
+| 布尔值，如果框被勾选则为 `true`，如果未勾选则为 `false`。 | 模拟用户点击复选框。 | 当用户点击复选框或调用 `click()` 方法时进行处理。 |
+| `defaultChecked` | | |
+| 布尔值，如果在复选框对象的 `<INPUT>` 标签中使用了 `CHECKED` 属性，则为 `true`。 | | |
+| `name` | | |
+| 由 `NAME` 属性确定的对象名称的字符串值。 | | |
+| `value` | | |
+| 由 `VALUE` 属性确定的字符串值。 | | |
 
-# text 和 textarea 对象
+### text 和 textarea 对象
 
 对于 JavaScript 来说，`text` 和 `textarea` 对象是类似的。但对于用户来说，它们非常不同。`text` 对象只能显示单行文本，而 `textarea` 对象可以显示多行可滚动的文本。这里将在此讨论 `text` 对象，但请理解，两者都可以使用相同的属性、方法和事件处理器。
 
 `text` 对象显示一个文本框，允许用户输入字符串或数值。`text` 对象的通用语法如下：
 
-```
-<INPUT TYPE = "text" NAME = "boxName"
-VALUE = "defaultValue" SIZE = "size">
+```html
+<INPUT TYPE="text" NAME="boxName" VALUE="defaultValue" SIZE="size">
 ```
 
 `text` 对象像按钮和复选框表单对象一样，可以包含在事件调用的内联脚本。例如，如果用户通过 Tab 离开文本框，你可能希望立即检查用户是否留空了字段。以下示例演示三个功能：使用关键字 `this` 引用当前对象；内联脚本；调用使用 `if` 语句的 `focus()` 文本框方法；如果用户留空了字段，则将光标返回文本框。
 
-```
+```html
 <INPUT TYPE="text"
 NAME="userName"
-onBlur=""
-if (this.value == "") {
-  alert("Please do not leave the name field blank.");
+onBlur="
+if (this.value == '') {
+  alert('Please do not leave the name field blank.');
   this.focus();
 } else {
-  alert("Thank you, " + this.value + "!");
+  alert('Thank you, ' + this.value + '!');
 }
+">
 ```
-
-# 第 7课：开发交互式表单
 
 表 7-5 描述了与 `text` 和 `textarea` 对象相关的常用属性、方法和事件处理器。
 
-表 7-5：text 和 textarea 对象的特性
+### 表 7-5：text 和 textarea 对象的特性
 
 | 属性 | 方法 | 事件处理器 |
-| --- | --- | --- |
-| defaultValue | blur() | onBlur | 字符串值，表示 `<INPUT>` 标签中 `VALUE` 属性所指定的值。 | 将光标移开此对象，使其失去焦点或模糊。 | 当用户将光标离开此对象时进行处理。 |
-| name | focus() | onFocus | 由 `NAME` 属性确定的对象名称的字符串值。 | 将光标移到此对象，赋予焦点。 | 当用户将光标移到此对象时进行处理。 |
-| value | select() | onSelect | 当前文本框内容的字符串值。 | 高亮（选中）此对象中的文本。 | 当用户高亮（选中）此对象中的文本时进行处理。注意：*JavaScript 在此事件上存在已知问题。截至本文编写时，它在所有浏览器中无法正常工作。* |
+| :--- | :--- | :--- |
+| `defaultValue` | `blur()` | `onBlur` |
+| 字符串值，表示 `<INPUT>` 标签中 `VALUE` 属性所指定的值。 | 将光标移开此对象，使其失去焦点或模糊。 | 当用户将光标离开此对象时进行处理。 |
+| `name` | `focus()` | `onFocus` |
+| 由 `NAME` 属性确定的对象名称的字符串值。 | 将光标移到此对象，赋予焦点。 | 当用户将光标移到此对象时进行处理。 |
+| `value` | `select()` | `onSelect` |
+| 当前文本框内容的字符串值。 | 高亮（选中）此对象中的文本。 | 当用户高亮（选中）此对象中的文本时进行处理。注意：JavaScript 在此事件上存在已知问题。截至本文编写时，它在所有浏览器中无法正常工作。 |
 
 事件也与方法相关。例如，如果在脚本中你想让光标移出文本框，可以调用 `blur()` 方法。在调用 `focus()` 方法后，你还可以调用 `select()` 方法来高亮文本。以下练习使用了其中的一些方法。
 
-# 练习 7-1：创建文本框、复选框和按钮
+## 练习 7-1：创建文本框、复选框和按钮
 
-- 1. **编辑器**：从 Afrikunda 网站打开 `form2.html` 文件
-- 2. **编辑器**：在文档的 `<HEAD>` 部分添加以下源代码：
+1. **编辑器**：从 Afrikunda 网站打开 `form2.html` 文件。
+2. **编辑器**：在文档的 `<HEAD>` 部分添加以下源代码：
 
-```
+```javascript
 <SCRIPT LANGUAGE="JavaScript">
 <!--
 function checkForm(form) {
-    if (form.name.value=="Your name here") {
+    if (form.name.value == "Your name here") {
         alert("Please enter your name!");
         form.name.focus();
         form.name.select();
@@ -3810,79 +3568,78 @@ function checkForm(form) {
         var hello = "Thank you, ";
         hello += form.name.value;
         hello += "\nYour responses: ";
-
         var response = "";
         if (form.certified.checked) {
-            response += "\nY CIW certified.";
+            response += "\nYou are CIW certified.";
         }
-
         if (form.like_Site.checked) {
             response += "\nYou liked the site.";
         }
-
         alert(hello + response);
     }
 }
--->
+// -->
 </SCRIPT>
 ```
 
-# 开发交互式表单
-
-- 3. **编辑器**：找到源代码中的 `<INPUT>` 标签。注意我们在这里添加了 `onclick` 属性。
-- 4. **编辑器**：保存 `form2.html`。
-- 5. **浏览器**：打开 `form2.html`。
-- 6. **浏览器**：输入你的名字，选择提交。注意出现的消息。
-- 7. **浏览器**：交替勾选和取消勾选复选框，观察这对消息的影响。
-- 8. **浏览器**：输入你的名字，再次提交。
+3. **编辑器**：找到源代码中的 `<INPUT>` 标签。注意我们在这里添加了 `onclick` 属性。
+4. **编辑器**：保存 `form2.html`。
+5. **浏览器**：打开 `form2.html`。
+6. **浏览器**：输入你的名字，选择提交。注意出现的消息。
+7. **浏览器**：交替勾选和取消勾选复选框，观察这对消息的影响。
+8. **浏览器**：输入你的名字，再次提交。
 
 此练习演示了基本的表单验证。你可以在脚本中检测复选框对象的状态。同样注意表单信息是如何传递给函数的。检查以下脚本：
 
-```
+```javascript
 function checkForm(form) {
 }
 ```
 
-```
+```html
 <INPUT TYPE="button" VALUE="Submit" onclick="checkForm(this.form)">
 ```
 
+### radio 对象
 
+`radio`（单选按钮）对象是一组互斥的选项。单选按钮的语法如下：
 
+```html
+<INPUT TYPE="radio" NAME="groupName" VALUE="value">Label
+```
 
-之前的脚本的问题在于，它没有测试 "yes" 选项（第一个选项）是否被选中。无论单选按钮是否被选中，它都会返回 "yes" 的值。下一个练习演示了一个确定哪个单选按钮被选中的函数。请注意，要检查的单选按钮数量是通过单选对象的 `length` 属性确定的。
+所有具有相同 `NAME` 属性的单选按钮属于同一组，同一时间只能选中一个。
 
 表 7-6 描述了与单选对象相关的常用属性、方法和事件处理器。
 
-## 表 7-6：单选对象的特性
+### 表 7-6：单选对象的特性
 
-| 属性 (Properties) | 方法 (Methods) | 事件处理器 (Event Handlers) |
-| --- | --- | --- |
-| checked | click() | onClick |
-| 布尔值，如果按钮被选中则为 true，未选中则为 false。 | 模拟用户对单选按钮点击。 | 当用户点击单选按钮或调用 `click()` 方法时处理。 |
-| checked | | |
-| 布尔值，指示在单选对象的 `<INPUT>` 标签中是否使用了 CHECKED 属性。 | | |
-| length | | |
+| 属性 | 方法 | 事件处理器 |
+| :--- | :--- | :--- |
+| `checked` | `click()` | `onClick` |
+| 布尔值，如果按钮被选中则为 `true`，未选中则为 `false`。 | 模拟用户对单选按钮点击。 | 当用户点击单选按钮或调用 `click()` 方法时处理。 |
+| `defaultChecked` | | |
+| 布尔值，指示在单选对象的 `<INPUT>` 标签中是否使用了 `CHECKED` 属性。 | | |
+| `length` | | |
 | 整数值，表示一组中单选对象的数量。 | | |
-| name | | |
-| 由 NAME 属性确定的对象名称的字符串值。 | | |
-| value | | |
-| 由 VALUE 属性确定的字符串值。 | | |
+| `name` | | |
+| 由 `NAME` 属性确定的对象名称的字符串值。 | | |
+| `value` | | |
+| 由 `VALUE` 属性确定的字符串值。 | | |
 
 ## 练习 7-2：使用单选按钮
 
-1. **编辑器 (Editor)**：打开 `form2.htm` 文件。
-
-2. **编辑器 (Editor)**：按照加粗所示所示修改源代码：
+1. **编辑器**：打开 `form2.htm` 文件。
+2. **编辑器**：按照加粗所示修改源代码：
 
 ```javascript
 <SCRIPT LANGUAGE="JavaScript">
-//
+<!--
 var answer = "";
 
 function getResponse(form) {
     var x = form.mail_List.length;
-    for (i=0; i<x; i++) {
+    for (var i = 0; i < x; i++) {
         if (form.mail_List[i].checked) {
             answer += "You said ";
             answer += form.mail_List[i].value;
@@ -3890,181 +3647,130 @@ function getResponse(form) {
         }
     }
 }
-```
 
-```javascript
 function checkForm(form) {
-    if (form.name.value="Your name here") {
+    if (form.name.value == "Your name here") {
         alert("Please enter your name!");
         form.name.focus();
         form.name.select();
-    }
-    else {
+    } else {
         var hello = "Thank you, ";
         hello += form.name.value;
         hello += ".\nYour responses: ";
-
         var response = "";
         if (form.certified.checked) response += "You are CIW certified.\n";
         if (form.like_Site.checked) response += "You liked the site. :)";
-        if (response=="") response = "You're not certified and don't like your site!";
-
+        if (response == "") response = "You're not certified and don't like your site!";
         alert(hello + response + answer);
         answer = "";
     }
 }
-// //
+// -->
 </SCRIPT>
 ```
 
-3. 编辑器 (Editor)：在源代码中找到 `<FORM>` 标签。在表单底部添加以下加粗所示的源代码：
+3. **编辑器**：在源代码中找到 `<FORM>` 标签。在表单底部添加以下加粗所示的源代码：
 
+```html
 如果是 CIW 认证请点击此处。
-<INPUT TYPE="checkbox" value="yes" name="certified">
-
+<INPUT TYPE="checkbox" VALUE="yes" NAME="certified">
 你喜欢这个网站吗？
-<INPUT TYPE="checkbox" value="yes" name="like_Site"><BR>
-
+<INPUT TYPE="checkbox" VALUE="yes" NAME="like_Site"><BR>
 你想被加入我们的邮件列表吗？
-<INPUT TYPE="radio" VALUE="yes" NAME="Mail_List"> Yes
-<INPUT TYPE="radio" VALUE="no" NAME="Mail_List"> No
-<INPUT TYPE="button" VALUE="Submit"
-OnClick="getResponse(this.form);checkForm(this.form);&nbsp;
+<INPUT TYPE="radio" VALUE="yes" NAME="mail_List"> Yes
+<INPUT TYPE="radio" VALUE="no" NAME="mail_List"> No
+<INPUT TYPE="button" VALUE="Submit" OnClick="getResponse(this.form);checkForm(this.form);">
 <INPUT TYPE="reset">
+```
 
-4. 编辑器 (Editor)：保存 `form2.html`。
-
-5. 浏览器 (Browser)：加载修改后的 `form2.html`。你的屏幕应该类似于图 7-4。
+4. **编辑器**：保存 `form2.html`。
+5. **浏览器**：加载修改后的 `form2.html`。你的屏幕应该类似于图 7-4。
 
 ![](img/36826ab6f960cbecb919bb0737cbffa0_213_0.png)
 
-6. 浏览器 (Browser)：在表单中输入信息并选择 Yes 单选按钮。点击 Submit 按钮。注意图 7-5 所示的响应。
+6. **浏览器**：在表单中输入信息并选择 Yes 单选按钮。点击 Submit 按钮。注意图 7-5 所示的响应。
 
 ![](img/36826ab6f960cbecb919bb0737cbffa0_214_0.png)
 
-图 7-5：针对 Yes 选择的 JavaScript 警框
+图 7-5：针对 Yes 选择的 JavaScript 警告框
 
-7. 浏览器 (Browser)：点击 OK。现在选择 No 单选按钮，然后点击 Submit 按钮。注意图 7-6 所示的响应。
+7. **浏览器**：点击 OK。现在选择 No 单选按钮，然后点击 Submit 按钮。注意图 7-6 所示的响应。
 
 ![](img/36826ab6f960cbecb919bb0737cbffa0_214_1.png)
 
-图 7-6：针对 No 选择的 JavaScript 警框
+图 7-6：针对 No 选择的 JavaScript 警告框
 
 此练习演示了可以在脚本中获取单选对象的状态。它还演示了可以使用一个事件处理器处理两个 JavaScript 语句。检查以下脚本：
 
 ```html
-<INPUT TYPE="button" VALUE="Submit"
-OnClick="getResponse(this.form);checkForm(this.form)">
+<INPUT TYPE="button" VALUE="Submit" OnClick="getResponse(this.form);checkForm(this.form);">
 ```
 
 注意用分号分隔语句。你可以根据需要执行任意数量的语句，只要这些语句位于分号分隔的列表中即可。
 
-## select 对象
+### select 对象
 
-`select` 对象是 HTML 表单中使用的下拉列表或项目列表框。选择列表（selection list）允许你从列表中选择一个项目。列表框（list box）允许你从列表中选择一个或多个项目。
+`select` 对象是 HTML 表单中使用的下拉列表或项目列表框。选择列表允许你从列表中选择一个项目。列表框允许你从列表中选择一个或多个项目。
 
 虽然这些对象在表单中很有用，但它们也可以作为独立项目使用，为用户提供背景颜色、访问页面或多选题的可能答案选择。
 
-（注：原文文本中存在大量重复和碎片，已根据逻辑流进行了清理处理）。
+### select 的属性
 
-## 练习 7-3：更改 URL
+`select` 对象有几个方法，例如 `blur()` 和 `focus()`，尽管它们并不常用。`select` 对象有三个事件处理器：`onBlur`、`onFocus` 和 `onChange`。这些事件处理器将在本节课程的稍后部分进行详细描述。
 
-1. 编辑器 (Editor)：在源代码中找到 `<FORM>` 标签。在表单底部添加以下加粗所示的源代码：
+`select` 对象还包含 `options` 属性的子属性。在下表中，示例字符串 `...formRef` 代表实际表单名称或索引数字，以及元素名称或索引数字。例如，考虑以下引用：
 
-如果是 CIW 认证请点击此处。
-<INPUT TYPE="checkbox" value="yes" name="certified">
-
-你喜欢这个网站吗？
-<INPUT TYPE="checkbox" value="yes" name="like_Site"><BR>
-
-你想被加入我们的邮件列表吗？
-<INPUT TYPE="radio" VALUE="yes" NAME="Mail_List"> Yes
-<INPUT TYPE="radio" VALUE="no" NAME="Mail_List"> No
-<INPUT TYPE="button" VALUE="Submit"
-OnClick="getResponse(this.form);checkForm(this.form);&nbsp;
-<INPUT TYPE="reset">
-
-4. 编辑器 (Editor)：保存 `form2.html`。
-
-5. 浏览器 (Browser)：加载修改后的 `form2.html`。你的屏幕应该类似于图 7-4。
-
-![](img/36826ab6f960cbecb919bb0737cbffa0_213_0.png)
-
-6. 浏览器 (Browser)：在表单中输入信息并选择 Yes 单选按钮。点击 Submit 按钮。注意图 7-5 所示的响应。
-
-![](img/36826ab6f960cbecb919bb0737cbffa0_214_0.png)
-
-图 7-5：针对 Yes 选择的 JavaScript 警框
-
-7. 浏览器 (Browser)：点击 OK。现在选择 No 单选按钮，然后点击 Submit 按钮。注意图 7-6 所示的响应。
-
-![](img/36826ab6f960cbecb919bb0737cbffa0_214_1.png)
-
-图 7-6：针对 No 选择的 JavaScript 警框
-
-
-
-
-## select 的属性
-
-select 对象有几个方法，例如 `blur()` 和 `focus()`，尽管它们并不常用。select 对象有三个事件处理器：onBlur、Focus 和 onChange。这些事件处理器将在本节课程的稍后部分进行详细描述。
-
-select 对象还包含 `options` 属性的子属性。在下表中，示例字符串 `...formRef` 代表实际表单名称或索引数字，以及元素名称或索引数字。例如，考虑以下引用：
-
-```
+```javascript
 document.myForm.mySelectField.length
 ```
 
 该引用将缩写为：
 
--   ...formRef.length
+- `...formRef.length`
 
-表 7-7 列出了 select 对象的属性和子属性。
+表 7-7 列出了 `select` 对象的属性和子属性。
 
 ### 表 7-7：select 对象的属性
 
 | 属性 | 描述或子属性 | 描述 |
-| --- | --- | --- |
-| length | ...formRef.length | 表示 select 对象中选项数量的整数值。 |
-| name | ...formRef.name | 由 `<SELECT>` 标签中的 `NAME` 属性确定的 select 对象名称的字符串值。 |
-| options | ...formRef.options | 从起始 `<SELECT>` 标签到结束 `</SELECT>` 标签的实际 HTML 代码的字符串值。 |
-| | length | ...formRef.options.length 表示 select 对象中选项数量的整数值。 |
-| | selectedIndex | ...formRef.options.selectedIndex 被选中选项的数组索引整数值。 | |
-| options[i] | 其中 i 是当前选中选项的索引数字。 | |
-| | defaultSelected | ...formRef.options[i].defaultSelected 由所代表选项在原始 `<OPTION>` 标签中是否被默认选中的布尔值。 | |
-| | selected | ...formRef.options[i].selected 由所代表选项是否被选中的布尔值。 | |
-| | text | ...formRef.options[i].text HTML 代码中代表选项的 `<OPTION>` 标签后的文本的字符串值。 | |
-| | value | ...formRef.options[i].value 返回 `<OPTION>` 标签内指定的 `VALUE` 属性的字符串值。 | |
+| :--- | :--- | :--- |
+| `length` | `...formRef.length` | 表示 `select` 对象中选项数量的整数值。 |
+| `name` | `...formRef.name` | 由 `<SELECT>` 标签中的 `NAME` 属性确定的 `select` 对象名称的字符串值。 |
+| `options` | `...formRef.options` | 从起始 `<SELECT>` 标签到结束 `</SELECT>` 标签的实际 HTML 代码的字符串值。 |
+| | `length` | `...formRef.options.length` 表示 `select` 对象中选项数量的整数值。 |
+| | `selectedIndex` | `...formRef.options.selectedIndex` 被选中选项的数组索引整数值。 |
+| `options[i]` | 其中 `i` 是当前选中选项的索引数字。 | |
+| | `defaultSelected` | `...formRef.options[i].defaultSelected` 由所代表选项在原始 `<OPTION>` 标签中是否被默认选中的布尔值。 |
+| | `selected` | `...formRef.options[i].selected` 由所代表选项是否被选中的布尔值。 |
+| | `text` | `...formRef.options[i].text` HTML 代码中代表选项的 `<OPTION>` 标签后的文本的字符串值。 |
+| | `value` | `...formRef.options[i].value` 返回 `<OPTION>` 标签内指定的 `VALUE` 属性的字符串值。 |
 
 ## 表单验证
 
 客户端 JavaScript 最常见且功能性的用途之一是验证表单字段提交。正如课程早期提到的，无法完全验证所有的表单提交，但某些验证总比没有要好。客户端验证的某些优点包括：
 
--   提高表单提交的有效性。
--   提高终端用户的满意度。
--   节省带宽。
+- 提高表单提交的有效性。
+- 提高终端用户的满意度。
+- 节省带宽。
 
-应尽可能进行客户端表单验证。然而，你必须保持谨慎。例如，某些终端用户可能会对程序的干预感到恼。找到程序交互的平衡点需要深熟编程和彻底的应用测试。
+应尽可能进行客户端表单验证。然而，你必须保持谨慎。例如，某些终端用户可能会对程序的干预感到恼火。找到程序交互的平衡点需要深熟编程和彻底的应用测试。
 
 下面的练习演示了客户端表单验证。
 
 ## 练习 7-5：进行表单验证
 
-1. **编辑器：** 打开来自 Afrikunda 网站的 form.htm 文件。
+1. **编辑器**：打开来自 Afrikunda 网站的 `form.htm` 文件。
+2. **编辑器**：将以下源代码添加到文档的 `<HEAD>` 部分：
 
-2. **编辑器：** 将以下源代码添加到文档的 `<HEAD>` 部分：
-
-```
+```javascript
 <SCRIPT LANGUAGE="JavaScript">
 <!--
 function checkForm(form) {
     var x = form.elements.length;
     var validated = true;
-    for (var i=0; i<x; i++) {
-        if (form.elements[i].value == null ||
-            form.elements[i].value == "") &&
-            (typeof form.elements[i] != 'submit' ||
-            typeof form.elements[i] != 'reset')) {
+    for (var i = 0; i < x; i++) {
+        if ((form.elements[i].value == null || form.elements[i].value == "") &&
+            (form.elements[i].type != 'submit' && form.elements[i].type != 'reset')) {
             validated = false;
             alert("Please enter your " + form.elements[i].name + "");
             form.elements[i].focus();
@@ -4074,61 +3780,47 @@ function checkForm(form) {
     return validated;
 }
 
-function emailTestCase(form) {
-    var email=form.elements[1].value.toLowerCase();
-    var symbol=email.indexOf("@",0);
-    var addr1=email.indexOf(".com",0);
-    var addr2=email.indexOf(".org",0);
-    var addr3=email.indexOf(".net",0);
-    var addr4=email.indexOf(".edu",0);
-    var addr5=email.indexOf(".gov",0);
-    var addr6=email.indexOf(".mil",0);
-    var addr7=email.indexOf(".int",0);
-    if (((addr1==-1) && (addr2==-1) && (addr4==-1) &&
-        (addr5==-1) && (addr6==-1) && (addr7==-1)) || (symbol==-1)) {
+function emailTest(form) {
+    var email = form.elements[1].value.toLowerCase();
+    var symbol = email.indexOf("@", 0);
+    var addr1 = email.indexOf(".com", 0);
+    var addr2 = email.indexOf(".org", 0);
+    var addr3 = email.indexOf(".net", 0);
+    var addr4 = email.indexOf(".edu", 0);
+    var addr5 = email.indexOf(".gov", 0);
+    var addr6 = email.indexOf(".mil", 0);
+    var addr7 = email.indexOf(".int", 0);
+    if (((addr1 == -1) && (addr2 == -1) && (addr3 == -1) &&
+        (addr4 == -1) && (addr5 == -1) && (addr6 == -1) && (addr7 == -1)) || (symbol == -1)) {
         alert("Please enter a valid email address.");
         form.elements[1].focus();
     }
 }
-
 // -->
 </SCRIPT>
 ```
 
-3. 编辑器：在源代码中找到 `<FORM>` 标签。按照加粗部分的指示修改源代码：
+3. **编辑器**：在源代码中找到 `<FORM>` 标签。按照加粗部分的指示修改源代码：
 
-```
-<FORM NAME="myForm" METHOD="post"
-ACTION="http://ssl.prosofttraining.com/cgi-bin/process.pl">
+```html
+<FORM NAME="myForm" METHOD="post" ACTION="http://ssl.prosofttraining.com/cgi-bin/process.pl">
 Name:<BR>
 <INPUT TYPE="text" SIZE="30" NAME="name"><BR>
 Email address:<BR>
-<INPUT TYPE="text" SIZE="30" NAME="email" onblur="emailTest(this)"><BR>
+<INPUT TYPE="text" SIZE="30" NAME="email" onblur="emailTest(this.form)"><BR>
 Phone number:<BR>
-<INPUT TYPE="text" SIZE="30" NAME="phone number"><BR>
+<INPUT TYPE="text" SIZE="30" NAME="phone_number"><BR>
 Fax number:<BR>
-<INPUT TYPE="text" SIZE="30" NAME="fax number"><P>
-<INPUT TYPE="submit" VALUE="Submit" onclick="return checkForm(this)">
+<INPUT TYPE="text" SIZE="30" NAME="fax_number"><P>
+<INPUT TYPE="submit" VALUE="Submit" onclick="return checkForm(this.form)">
 </FORM>
 ```
-
-4. 编辑器：保存表单。
-
-5. 浏览器：加载 Load.htm。你的屏幕应该类似于图 7-10。
-
-6. 浏览器：打开表单。你的屏幕应该类似于图 7-11。
-
-7. 浏览器：在表单中输入信息后，点击提交按钮。你的屏幕应该类似于图 7-12。
-
-8. 浏览器：通过输入数据并点击提交按钮进行实验。
-
-
 
 
 
 ## 课程总结
 
-在本节中，你学习了如何使用 String 对象方法来评估字符串中是否存在某些字符，如何提取额外信息，以及如何在表单验证的场景下使用这些方法。你还学习了如何评估哪个单选按钮被选中、如何测试复选框的状态，以及如何将脚本绑定到选择列表选项上。
+在本节中，你学习了如何使用 `String` 对象方法来评估字符串中是否存在某些字符，如何提取额外信息，以及如何在表单验证的场景下使用这些方法。你还学习了如何评估哪个单选按钮被选中、如何测试复选框的状态，以及如何将脚本绑定到选择列表选项上。
 
 ![](img/36826ab6f960cbecb91bb0737cbffa0_228_0.png)
 
@@ -4159,7 +3851,7 @@ JavaScript 之所以流行的原因之一是它能够分配 Cookie。JavaScript 
 
 Cookies 是从服务器发送到你的计算机的微型内存驻信息。Cookie 起初存储在计算机的内存中，但 Web 服务器也可以将这些信息更持久地存储在硬盘上。硬盘 Cookie 存储已经变得非常流行。几乎每个商业网站都使用 Cookie；一个网站仅在访问一次后，就可以在你的硬盘上存几个这样的文件。Cookie 通常被称为“持久性 Cookie”，甚至被称为“持久性 HTML”。你将在本节课程中学习到更多关于这些文件的存储知识。
 
-“Cookie”这个词是随机选择的，没有特殊含义。一种可能的解释是它是用于表示交易的小型令牌的俚语。例如，当你去电影院支付票钱时，你收到的票就是一种“Cookie”，你可以用它来证明你有进入权限。另一种解释可能是 UNIX 程序包含了被称为“魔法饼干”（magic cookies）的运算符或关键字。这些饼 cookies 有助于跟踪用户对特定程序的使用情况（例如用户在哪里加载了它等）。
+“Cookie”这个词是随机选择的，没有特殊含义。一种可能的解释是它是用于表示交易的小型令牌的俚语。例如，当你去电影院支付票钱时，你收到的票就是一种“Cookie”，你可以用它来证明你有进入权限。另一种解释可能是 UNIX 程序包含了被称为“魔法饼干”（magic cookies）的运算符或关键字。这些 cookies 有助于跟踪用户对特定程序的使用情况（例如用户在哪里加载了它等）。
 
 无论是存储在内存中还是硬盘上的微小文本字符串中，Cookies 都有多种用途。它们可以帮助维护状态、辅助身份验证、移除冗余步骤并跟踪用户行为。你将在本节中学习更多关于这些用途的知识。
 
@@ -4181,14 +3873,12 @@ Set-Cookie: name=value; expires=date; path=path; domain=domain; secure
 
 每个 Cookie 头都包含一组参数。为了使用 Cookie，并不是所有这些参数都必须分配，也不必须按照以下格式分配。Cookie 头参数包括：
 
-- **name=value**：name=value 对是生成 Cookie 唯一所需的信息。所有其他参数都是可选的。
-- **expires=date**：expires=date 对决定了 Cookie 何时过期。日期格式如下：
-
-weekday, DD-Mon-YY HH:MM:SS GMT
-
-（GMT 代表格林尼治标准时间。）时间过期方案在 RFC 822、850、1036 和 1123 中规定。
-- **path=path; domain=domain**：path 和 domain 对包含了发布 Cookie 的 URL 的路径部分和域名。当形成 HTTP 请求时，会检查路径和域名对；如果它们与请求的页面匹配，任何与该域名相关的 Cookie 都将返回给服务器。
-- **secure**：如果存在 secure 参数，则使用安全协议发送 Cookie（假设可用可用）。
+- `name=value`：`name=value` 对是生成 Cookie 唯一所需的信息。所有其他参数都是可选的。
+- `expires=date`：`expires=date` 对决定了 Cookie 何时过期。日期格式如下：
+  weekday, DD-Mon-YY HH:MM:SS GMT
+  （GMT 代表格林尼治标准时间。）时间过期方案在 RFC 822、850、1036 和 1123 中规定。
+- `path=path; domain=domain`：`path` 和 `domain` 对包含了发布 Cookie 的 URL 的路径部分和域名。当形成 HTTP 请求时，会检查路径和域名对；如果它们与请求的页面匹配，任何与该域名相关的 Cookie 都将返回给服务器。
+- `secure`：如果存在 `secure` 参数，则使用安全协议发送 Cookie（假设可用可用）。
 
 ## 谁可以发送 Cookie？
 
@@ -4206,21 +3896,17 @@ Cookie 的通用指南是：只有当用户访问站点时，服务器才能设�
 
 目前，一个域名在用户计算机上最多可以存储 20 个 Cookie，用户在硬盘上总共最多可以存储 300 个 Cookie。如果达到此限制，浏览器将删除最少使用的 Cookie。Cookie 的 HTTP 头不能超过 4 千字节。
 
-Cookie 以字符串形式存储 name=value 对。Cookie 可以在用户退出发布 Cookie 的站点时立即过期，也可以被设置为在未来的某个日期过期。由于这个原因，Cookie 正式被称为持久性客户端状态 HTTP Cookie。它们在过期或被用户删除之前会一直存在。
-
-
-
-
+Cookie 以字符串形式存储 `name=value` 对。Cookie 可以在用户退出发布 Cookie 的站点时立即过期，也可以被设置为在未来的某个日期过期。由于这个原因，Cookie 正式被称为持久性客户端状态 HTTP Cookie。它们在过期或被用户删除之前会一直存在。
 
 ## Netscape Navigator 和 Microsoft Internet Explorer
 
 存在许多不同的浏览器，每个浏览器存储 cookie 的方式也不同。此外，同一个程序的不同版本会将 cookie 存储在不同的目录（或“cookie 桶”）中。为了清晰起见，本文将讨论两种主流浏览器：Netscape Navigator 和 Microsoft Internet Explorer。
 
-## Netscape Navigator
+### Netscape Navigator
 
-Netscape 产品始终将 cookie 存储在一个名为 cookies.txt 的单文件中。Netscape 4.0 将 cookie 文件存放在 `systemroot\Program Files\Netscape\Users\Username` 目录下。3.0 版本则将文件存储在 `Program Files\Netscape\Navigator\Program` 文件夹中。
+Netscape 产品始终将 cookie 存储在一个名为 `cookies.txt` 的单文件中。Netscape 4.0 将 cookie 文件存放在 `systemroot\Program Files\Netscape\Users\Username` 目录下。3.0 版本则将文件存储在 `Program Files\Netscape\Navigator\Program` 文件夹中。
 
-## Microsoft Internet Explorer
+### Microsoft Internet Explorer
 
 无论版本如何，Microsoft Internet Explorer 都将 cookie 存储在单独的文本文件中。Internet Explorer 3.0 将文件存在 `systemroot\Windows\Cookies` 目录下。Internet Explorer 4.0 将 cookie 存储在 `systemroot\Temporary Internet Files\*` 目录下。
 
@@ -4236,13 +3922,13 @@ Netscape 产品始终将 cookie 存储在一个名为 cookies.txt 的单文件�
 
 Cookie 可用于许多原因。你可以在你的网站上使用 cookie 来提供身份验证、存储用户信息或维护用户状态。
 
-## 身份验证
+### 身份验证
 
 你可以部署 cookie 来辅助用户身份验证。例如，如果用户访问你的网站并正确通过了身份验证，你可以在用户的硬盘上存入 cookie。那么，当用户返回时，他就不需要再次输入密码，因为该信息存储在他硬盘的 cookie 中。
 
 虽然这种做法可以提供某种便利，但也可能带来风险。因为 cookie 存储在用户的硬盘上，任何其他用户都可以坐在那台电脑前立即登录受密码保护的网站，从而伪装原始经过身份验证的用户。
 
-## 存储用户信息
+### 存储用户信息
 
 通过 cookie，网站可以获取有关客户端的以下信息：
 
@@ -4251,7 +3937,7 @@ Cookie 可用于许多原因。你可以在你的网站上使用 cookie 来提�
 - IP 地址。
 - 访问过的站点历史。
 
-## 使用 Cookie 维护状态
+### 使用 Cookie 维护状态
 
 Cookie 最常见的用途之一是存储用户信息以维护状态。HTTP 主要使用 TCP，这是一种有状态的（即面向连接的）协议。然而，大多数 Web 服务器会在短时间内终止这些连接。用户快速结束连接也是自然的。
 
@@ -4259,7 +3945,7 @@ Cookie 最常见的用途之一是存储用户信息以维护状态。HTTP 主�
 
 Cookie 没有好坏之分。你可以出于任何需要的目的使用它们，但要准备好用户可能会拒绝或删除 cookie 的可能性。
 
-## 为回头访问者节省时间
+### 为回头访问者节省时间
 
 作为状态维护的一部分，你可以创建消除某些步骤的 cookie。例如，在注册过程中，Amazon.com 会存入一个 cookie，允许用户只需点击即可购买书籍。用户无需重新输入信用卡或其他任何信息。
 
@@ -4335,9 +4021,9 @@ name1=value1,name2=value2, etc.
 1. 从主菜单中，选择 View（查看）。
 2. 从 View 菜单选择 Internet Options（Internet 选项）。
 3. 点击 Advanced（高级）选项卡访问这些选项。
-4.向下滚动，然后选择图 8-2 所示的单选按钮。
+4. 向下滚动，然后选择图 8-2 所示的单选按钮。
 
-按照以下步骤在 Internet Explorer 5-x 中启用或禁用 cookie。
+按照以下步骤在 Internet Explorer 5.x 中启用或禁用 cookie。
 
 1. 从主菜单中，选择 Tools（工具）。
 2. 从 Tools 菜单选择 Internet Options（Internet 选项）。
@@ -4345,99 +4031,87 @@ name1=value1,name2=value2, etc.
 4. 点击 Custom Level（自定义级别）按钮。
 5. 在 Security Settings 对话框中向下滚动，并选择图 8-3 所示的单选按钮。
 
+## 练习 8-1：设置、查看和清除 cookie
 
-
-
-
-## 8-14
-## JavaScript 基础
-
-![](img/36826ab6f960cbecb919bb0737cbffa0_243_0.png)
-
-### 练习 8-1：设置、查看和清除 cookie
-
-- 1. 系统：如有必要，启动你的 Web 服务器。同时，确认浏览器已设置为对传入的 cookie 进行警告。
-- 2. 编辑器：从辅助光盘打开 cookie.htm 文件。
-- 3. 编辑器：在文件的 <HEAD> 部分输入以下代码：
+1. **系统**：如有必要，启动你的 Web 服务器。同时，确认浏览器已设置为对传入的 cookie 进行警告。
+2. **编辑器**：从辅助光盘打开 `cookie.htm` 文件。
+3. **编辑器**：在文件的 `<HEAD>` 部分输入以下代码：
 
 ```javascript
 <SCRIPT LANGUAGE="JavaScript">
-<-
+<!--
 var x = prompt("Please enter a color:","white");
 if(x==="null" || x==="" || x.length<3) x="#ffffff";
 document.cookie="testCookie=" + x;
 alert(document.cookie);
 var y = (confirm("Delete cookie?")) ? "delete" : "keep";
-
 if(y==="delete") {
-document.cookie="testCookie=" + x + ";expires=01-01-97;";
-message+=""After deleting, your cookie looks like this: ";
-message+=document.cookie;
-alert(message);
+  document.cookie="testCookie=" + x + ";expires=01-01-97;";
+  message="After deleting, your cookie looks like this: ";
+  message+=document.cookie;
+  alert(message);
 } else {
-message+=""After keeping, your cookie looks like this: ";
-message+=document.cookie;
+  message="After keeping, your cookie looks like this: ";
+  message+=document.cookie;
 }
 var pos = document.cookie.indexOf("cookie=",0) + 1;
 var color = document.cookie.substring(pos, pos + x.length);
-
-//--
+//-->
 </SCRIPT>
 ```
 
-- 4. 编辑器：在文件的 <BODY> 标签之后输入以下代码：
+4. **编辑器**：在文件的 `<BODY>` 标签之后输入以下代码：
 
 ```javascript
 <SCRIPT LANGUAGE="JavaScript">
-<---
+<!--
 if(color==="null" || color=="") color="#ffffff";
 document.bgColor = color;
 document.write("Background color is: " + document.bgColor + "<BR>");
-document.write("Cookie contents: " + document.cookie(");\n
-//--
+document.write("Cookie contents: " + document.cookie + ");\n");
+//-->
 </SCRIPT>
 ```
 
-- 5. 编辑器：保存 cookie.htm。
-- 6. 浏览器：加载 cookie.htm 文件。此过程在 Netscape Navigator 或 Microsoft Internet Explorer 4.0 或更高版本中可以正常运行。如果你使用的是 Internet Explorer 3.0，只有当你通过服务器检索文件时，此过程才能正常工作。
-- 7. 浏览器：你应该先看到一个请求颜色的提示框。然后你将看到一系列问题和回答。你看到的第一个消息应该类似于图 8-4。
+5. **编辑器**：保存 `cookie.htm`。
+6. **浏览器**：加载 `cookie.htm` 文件。此过程在 Netscape Navigator 或 Microsoft Internet Explorer 4.0 或更高版本中可以正常运行。如果你使用的是 Internet Explorer 3.0，只有当你通过服务器检索文件时，此过程才能正常工作。
+7. **浏览器**：你应该先看到一个请求颜色的提示框。然后你将看到一系列问题和回答。你看到的第一个消息应该类似于图 8-4。
 
 ![](img/36826ab6f960cbecb919bb0737cbffa0_244_0.png)
 
-- 8. 浏览器：对于此练习，点击 OK 以允许设置 cookie。下一个消息将指定你刚刚接受的 cookie，如图 8-5 所示。
+8. **浏览器**：对于此练习，点击 OK 以允许设置 cookie。下一个消息将指定你刚刚接受的 cookie，如图 8-5 所示。
 
 ![](img/36826ab6f960cbecb919bb0737cbffa0_244_1.png)
 
-- 9. 浏览器：选择 OK 继续。你将被询问是否要删除 cookie，如图 8-6 所示。
+9. **浏览器**：选择 OK 继续。你将被询问是否要删除 cookie，如图 8-6 所示。
 
 ![](img/36826ab6f960cbecb919bb0737cbffa0_244_2.png)
-- 10. 浏览器：对于此练习，点击 OK 继续。你将看到一条关于“新” cookie 的警告消息，这实际上是带有回溯过期期的同一个 cookie，如图 8-7 所示。
+
+10. **浏览器**：对于此练习，点击 OK 继续。你将看到一条关于“新” cookie 的警告消息，这实际上是带有回溯过期期的同一个 cookie，如图 8-7 所示。
 
 ![](img/36826ab6f960cbecb919bb0737cbffa0_245_0.png)
 
 图 8-7：Netscape Navigator cookie 通知
 
-- 11. 浏览器：点击 OK 设置过期的 cookie。这将删除具有同名的现有 cookie。然后你将看到图 8-8 所示的警告。
+11. **浏览器**：点击 OK 设置过期的 cookie。这将删除具有同名的现有 cookie。然后你将看到图 8-8 所示的警告。
 
 ![](img/36826ab6f960cbecb919bb0737cbffa0_245_1.png)
 
 图 8-8：Netscape Navigator cookie 警告
 
-## 第 8 课：Cookies 和 JavaScript 安全
-
-- 12. 浏览器：点击 OK 继续。你的 cookie 消失了。你的屏幕应该类似于图 8-9。
+12. **浏览器**：点击 OK 继续。你的 cookie 消失了。你的屏幕应该类似于图 8-9。
 
 ![](img/36826ab6f960cbecb919bb0737cbffa0_246_0.png)
 
 图 8-9：Cookie.htm
 
-- 13. 浏览器：重新加载文件。重复步骤 7 到 9，但这次在询问是否要删除 cookie 时，选择 Cancel。你将看到图 8-10 所示的屏幕。
+13. **浏览器**：重新加载文件。重复步骤 7 到 9，但这次在询问是否要删除 cookie 时，选择 Cancel。你将看到图 8-10 所示的屏幕。
 
 ![](img/36826ab6f960cbecb919bb0737cbffa0_246_1.png)
 
 图 8-10：取消删除 cookie 后 Netscape Navigator 的警告
 
-## 14. 浏览器：在点击警告框上的 OK 后，你的屏幕应该类似于图 8-11。
+14. **浏览器**：在点击警告框上的 OK 后，你的屏幕应该类似于图 8-11。
 
 ![](img/36826ab6f960cbecb919bb0737cbffa0_247_0.png)
 
@@ -4449,12 +4123,11 @@ document.write("Cookie contents: " + document.cookie(");\n
 
 下一个练习演示了如何在 cookie 中存储密码。你将使用一个 cookie 来访问第二个 HTML 页面。如果受保护的页面中存在 cookie 且用户输入正确的密码，将允许查看页面。如果密码错误，用户将被发送到上一个页面。
 
-## 练习 B：Cookies 和 JavaScript
+## 练习 8-2：Cookies 和 JavaScript
 
-![](img/36826ab6f960cbecb919bb0737cbffa0_248_0.png)
+1. **编辑器**：从 Afrikunda 网站打开 `password.htm` 文件。
+2. **编辑器**：在文档的 `<HEAD>` 部分输入以下代码：
 
-- 1. 编辑器：从 Afrikunda 网站打开 password.htm 文件。
-- 2. 编辑器：在文档的 <HEAD> 部分输入以下代码：
 ```javascript
 <SCRIPT LANGUAGE="JavaScript">
 <!--
@@ -4467,18 +4140,18 @@ function storePass(form) {
 </SCRIPT>
 ```
 
-- 3. 编辑器：向下查看以下内容：
+3. **编辑器**：向下查看以下内容：
 
 ```html
 <FORM>
 <INPUT TYPE="text" NAME="pword">
-<INPUT TYPE="button" VALUE="Submit" onclick="storePass(form)">
+<INPUT TYPE="button" VALUE="Submit" onclick="storePass(this.form)">
 </FORM>
 ```
 
-- 4. 编辑器：保存 password.htm。
-- 5. 编辑器：从 Afrikunda 网站打开 passworded.htm 文件。
-- 6. 编辑器：在 <HEAD> 部分输入以下代码：
+4. **编辑器**：保存 `password.htm`。
+5. **编辑器**：从 Afrikunda 网站打开 `passworded.htm` 文件。
+6. **编辑器**：在 `<HEAD>` 部分输入以下代码：
 
 ```javascript
 <SCRIPT LANGUAGE="JavaScript">
@@ -4493,46 +4166,44 @@ if (document.cookie.indexOf("password=") != -1) {
 </SCRIPT>
 ```
 
-- 7. 编辑器：保存 passworded.htm。
-- 8. 浏览器：加载 password.htm。你的屏幕应该类似于图 8-12。
+7. **编辑器**：保存 `passworded.htm`。
+8. **浏览器**：加载 `password.htm`。你的屏幕应该类似于图 8-12。
 
 ![](img/36826ab6f960cbecb919bb0737cbffa0_249_0.png)
 
 图 8-12：密码按钮
 
-- 9. 浏览器：输入密码并点击 Submit。你将看到图 8-13 中的警告。
+9. **浏览器**：输入密码并点击 Submit。你将看到图 8-13 中的警告。
 
 ![](img/36826ab6f960cbecb919bb0737cbffa0_249_1.png)
 
 图 8-13：密码警告
 
-## 第 8 课：Cookies 和 JavaScript 安全
-
-- 10. 浏览器：对于此练习，点击 OK 继续。你将看到关于“新” cookie 的警告消息，这实际上是带有回溯过期期的同一个 cookie，如图 8-14 所示。
+10. **浏览器**：对于此练习，点击 OK 继续。你将看到关于“新” cookie 的警告消息，这实际上是带有回溯过期期的同一个 cookie，如图 8-14 所示。
 
 ![](img/36826ab6f960cbecb919bb0737cbffa0_250_0.png)
 
 图 8-14：Netscape Navigator cookie 通知
 
-- 11. 浏览器：点击 OK 设置过期的 cookie。这将删除具有同名的现有 cookie。你将看到图 8-15 所示的警告。
+11. **浏览器**：点击 OK 设置过期的 cookie。这将删除具有同名的现有 cookie。你将看到图 8-15 所示的警告。
 
 ![](img/36826ab6f960cbecb919bb0737cbffa0_250_1.png)
 
 图 8-15：密码页面
 
-- 12. 浏览器：点击 OK 继续。你的 cookie 消失了。你的屏幕应该类似于图 8-16。
+12. **浏览器**：点击 OK 继续。你的 cookie 消失了。你的屏幕应该类似于图 8-16。
 
 ![](img/36826ab6f960cbecb919bb0737cbffa0_251_0.png)
 
 图 8-16：Cookie.htm
 
-- 13. 浏览器：重新加载文件。重复步骤 7 到 9，但这次在询问是否要删除 cookie 时，选择 Cancel。你将看到图 8-17 所示的屏幕。
+13. **浏览器**：重新加载文件。重复步骤 7 到 9，但这次在询问是否要删除 cookie 时，选择 Cancel。你将看到图 8-17 所示的屏幕。
 
 ![](img/36826ab6f960cbecb919bb0737cbffa0_251_1.png)
 
 图 8-17：取消删除 cookie 后 Netscape Navigator 的警告
 
-## 14. 浏览器：在点击警告框上的 OK 后，你的屏幕应该类似于图 8-18。
+14. **浏览器**：在点击警告框上的 OK 后，你的屏幕应该类似于图 8-18。
 
 ![](img/36826ab6f960cbecb919bb0737cbffa0_252_0.png)
 
@@ -4546,64 +4217,55 @@ if (document.cookie.indexOf("password=") != -1) {
 
 ## JavaScript 和辅助程序
 
-如果用户为某些 MIME 类型定义了辅助程序，黑客可以使用 JavaScript 启动它们。这种方法相当粗浅，因为它还会产生“内存不足”错误，这会提醒警觉的用户出现某些问题。MIME 代表多用途互联网邮件扩展。插件（在浏览器中运行的程序）依赖指定的 MIME 信息来定义哪些文件格式和扩展需要哪些插件或辅助程序。MIME 类型由两种信息定义：内容类型和子类型。例如，一个声音文件的 MIME 类型可能是 audio/x-wav。在例例中，“audio”识别了类别或内容类型（声音文件），而“x-wav”指示子类型（WAV 文件）。“x”表示该文件类型不是 MIME 标准类型。
+如果用户为某些 MIME 类型定义了辅助程序，黑客可以使用 JavaScript 启动它们。这种方法相当粗浅，因为它还会产生“内存不足”错误，这会提醒警觉的用户出现某些问题。MIME 代表多用途互联网邮件扩展。插件（在浏览器中运行的程序）依赖指定的 MIME 信息来定义哪些文件格式和扩展需要哪些插件或辅助程序。MIME 类型由两种信息定义：内容类型和子类型。例如，一个声音文件的 MIME 类型可能是 `audio/x-wav`。在例例中，“audio”识别了类别或内容类型（声音文件），而“x-wav”指示子类型（WAV 文件）。“x”表示该文件类型不是 MIME 标准类型。
 
 ## 恶意和无意编码
 
 意外或恶意的编码可能会生成无限序列，可能导致浏览器挂起。如果发生这种情况，用户必须强制退出浏览器。以下练习演示了这一点。
 
+## 练习 8-3：使用 JavaScript 锁定浏览器
 
-
-
-
-# 练习 8-3：使用 JavaScript 锁定浏览器
-
-- 1. **编辑器**：从辅助磁盘打开 `lockup.htm` 文件。
-
-- 2. **编辑器**：检查以下源代码：
+1. **编辑器**：从辅助磁盘打开 `lockup.htm` 文件。
+2. **编辑器**：检查以下源代码：
 
 ```html
 <HTML>
+<HEAD>
 <TITLE>Browser Locker</TITLE>
 <SCRIPT LANGUAGE="JavaScript">
 <!--
-
 for (i=0;i>=0;i++) {
-alert("Stop me if you can!");
+  alert("Stop me if you can!");
 }
-
 -->
 </SCRIPT>
 </HEAD>
-<body
+<BODY>
 Are you frustrated yet?
-</body>
+</BODY>
 </HTML>
 ```
 
-- 3. **编辑器**：关闭 lockup.htm。
-
-- 4. **系统**：关闭所有打开的程序。
-
-- 5. **浏览器**：加载文件 `lockup.htm`。你的屏幕应该类似于图 8-17。
+3. **编辑器**：关闭 `lockup.htm`。
+4. **系统**：关闭所有打开的程序。
+5. **浏览器**：加载文件 `lockup.htm`。你的屏幕应该类似于图 8-17。
 
 ![](img/36826ab6f960cbecb919bb0737cbffa0_253_0.png)
 
-6. 浏览器：你可以反复点击确定 按钮，但消息会再次出现。
-
-7. 系统：要停止此脚本的执行，你必须关闭浏览器并重启。执行此操作，按住 CTRL 和 ALT 键并按下 DELETE 键。此操作将弹出类似于图 8-18 的对话框。
+6. **浏览器**：你可以反复点击“确定”按钮，但消息会再次出现。
+7. **系统**：要停止此脚本的执行，你必须关闭浏览器并重启。执行此操作，按住 `CTRL` 和 `ALT` 键并按下 `DELETE` 键。此操作将弹出类似于图 8-18 的对话框。
 
 ![](img/36826ab6f960cbecb919bb0737cbffa0_254_0.png)
 
 图 8-18：结束程序菜单
 
-8. 系统：验证 Netscape 选项是否被选中。点击结束任务按钮关闭浏览器。你将看到图 8-19 所示的消息。
+8. **系统**：验证 Netscape 选项是否被选中。点击“结束任务”按钮关闭浏览器。你将看到图 8-19 所示的消息。
 
 ![](img/36826ab6f960cbecb919bb0737cbffa0_254_1.png)
 
 图 8-19：结束任务消息
 
-9. 系统：再次点击结束任务以完成操作。你现在已经关闭了浏览器。
+9. **系统**：再次点击“结束任务”以完成操作。你现在已经关闭了浏览器。
 
 在编码时很容易出错。然而，不建议或恶意的用户可能会故意将此类脚本上传到万维网。你可能犯的其他编码错误也会导致类似的问题。我们的目标是教你如何预防而不是引起此类错误。
 
@@ -4625,7 +4287,7 @@ Are you frustrated yet?
 
 ![](img/36826ab6f960cbecb919bb0737cbffa0_257_0.png)
 
-# 第 9 ：在 JavaScript 中控制框架
+# 第 9 节：在 JavaScript 中控制框架
 
 ## 目标
 
@@ -4638,17 +4300,17 @@ Are you frustrated yet?
 - 与相关窗口配合函数和变量。
 - 定位“打开器”（opener）窗口。
 
-# 为什么？
+## 为什么？
 
 现在的许多用户拥有具有框架功能的浏览器。框架有助于通过允许始终为用户保留某些信息来最大限度地提高你网站的复杂性。这种技术提供了导航的便利性，以及控制用户路径和目的地的方法。
 
 通过 JavaScript，你对网站上框架的显示、内容和协调拥有完全且灵活的控制。
 
-# 理解框架和目标
+## 理解框架和目标
 
 框架存在于 frameset 之中。frameset 中的每个框架通常会有一个默认源文件。然而，任何链接都可以通过通过名称“定位”框架将新信息加载到另一个框架中。
 
-下面的示例演示了一个简单的 frameset，包含两个名为 "A" 和 "B" 的框架，它们对应于文件 a.htm 和 b.htm。你可以通过打开学生文件夹中的 Frames Review 文件，使用浏览器跟随此讨论。
+下面的示例演示了一个简单的 frameset，包含两个名为 "A" 和 "B" 的框架，它们对应于文件 `a.htm` 和 `b.htm`。你可以通过打开学生文件夹中的 Frames Review 文件，使用浏览器跟随此讨论。
 
 ```
 Filename: twoframes.htm
@@ -4656,7 +4318,7 @@ Filename: twoframes.htm
 <HEAD>
 <TITLE>Simple Frameset</TITLE>
 </HEAD>
-<FRAMES COLS="25%,75%">
+<FRAMESET COLS="25%,75%">
 <FRAME SRC="a.htm" NAME="A">
 <FRAME SRC="b.htm" NAME="B">
 <NOFRAMES>
@@ -4664,11 +4326,11 @@ Filename: twoframes.htm
 如果你有一个具有框架功能的浏览器，你将在这里看到框架。
 </BODY>
 </NOFRAMES>
-</FRAMES>
+</FRAMESET>
 </HTML>
 ```
 
-# 这个 frameset 在浏览器中应该类似于图 9-1。
+这个 frameset 在浏览器中应该类似于图 9-1。
 
 ![](img/36826ab6f960cbecb919bb0737cbffa0_261_0.png)
 
@@ -4680,15 +4342,13 @@ Filename: twoframes.htm
 
 图 9-2：文件和框架层级
 
-# 第 9 节：在 JavaScript 中控制框架
-
 如果你在 A 中有一个链接并想定位框架 B，你可以按照这种方式设置超链接：
 
 ```
 <A HREF="URL" TARGET="B"> 链接文本 </A>
 ```
 
-在此标记中，"URL" 是你想要从此链接加载的页面相应 URL。要从 B 定位 A，你将输入 TARGET="A"。下面的示例演示了一个嵌入在另一个中的 frameset。
+在此标记中，"URL" 是你想要从此链接加载的页面相应 URL。要从 B 定位 A，你将输入 `TARGET="A"`。下面的示例演示了一个嵌入在另一个中的 frameset。
 
 ```
 Filename: 3frames.htm
@@ -4696,22 +4356,22 @@ Filename: 3frames.htm
 <HEAD>
 <TITLE>Complex Frameset</TITLE>
 </HEAD>
-<FRAMET COLS="25%,75%">
+<FRAMESET COLS="25%,75%">
 <FRAME SRC="a.htm" NAME="A">
-<FRAMET ROWS="25%,75%">
+<FRAMESET ROWS="25%,75%">
 <FRAME SRC="b.htm" NAME="B">
 <FRAME SRC="c.htm" NAME="C">
-</FRAMET>
+</FRAMESET>
 <NOFRAMES>
-<body>
+<BODY>
 如果你有一个具有框架功能的浏览器，你将在这里看到框架。
 </BODY>
 </NOFRAMES>
-</FRAMET>
+</FRAMESET>
 </HTML>
 ```
 
-# 这个 frameset 在浏览器中应该类似于图 9-3。
+这个 frameset 在浏览器中应该类似于图 9-3。
 
 ![](img/36826ab6f960cbecb919bb0737cbffa0_263_0.png)
 
@@ -4721,8 +4381,7 @@ Filename: 3frames.htm
 
 | 主框架集 |
 | Filename: 3frames.htm |
-| Target reference:
-| "parent" to frames |
+| Target reference: "parent" to frames |
 
 | 框架源 |
 | Filename: a.htm |
@@ -4738,16 +4397,15 @@ Filename: 3frames.htm
 
 图 9-4：框架层级
 
-# 第 9 节：在 JavaScript 中控制框架
-
 在本示例中，你可以按照第一个示例中的相同步骤定位框架 A、B 或 C。然而，你可以以稍微不同的方式创建这些框架，这将影响定位它们的方式。参见以下代码：
 
 ```
 Filename: 3frames-1.htm
-<HTML><<HEAD>
+<HTML>
+<HEAD>
 <TITLE>Simple Frameset</TITLE>
 </HEAD>
-<FRAMSET COLS="25%,75%">
+<FRAMESET COLS="25%,75%">
 <FRAME SRC="a.htm" NAME="A">
 <FRAME SRC="3frames-2.htm" NAME="twofer">
 <NOFRAMES>
@@ -4755,23 +4413,24 @@ Filename: 3frames-1.htm
 如果你有一个具有框架功能的浏览器，你将在这里看到框架。
 </BODY>
 </NOFRAMES>
-</FRAMSET>
+</FRAMESET>
 </HTML>
 ```
 
 ```
 Filename: 3frames-2.htm
-<HTML><<HEAD>
+<HTML>
+<HEAD>
 <TITLE>Simple Frameset</TITLE>
 </HEAD>
-<FRAMSET ROWS="25%,75%">
+<FRAMESET ROWS="25%,75%">
 <FRAME SRC="b.htm" NAME="B">
 <FRAME SRC="c.htm" NAME="C">
-</FRAMSET>
+</FRAMESET>
 </HTML>
 ```
 
-在本示例中，你将在浏览器中加载第一个文件（3frames-1.htm），如图 9-5 所示。
+在本示例中，你将在浏览器中加载第一个文件（`3frames-1.htm`），如图 9-5 所示。
 
 ![](img/36826ab6f960cbecb919bb0737cbffa0_265_0.png)
 
@@ -4781,25 +4440,18 @@ Filename: 3frames-2.htm
 
 | 主框架集 |
 | Filename: 3frames-1.htm |
-| Target reference:
-| "parent" to frame A and twofer |
-| "top" to all frames |
+| Target reference: "parent" to frame A and twofer; "top" to all frames |
 
 | 框架源 | 框架集 |
 | Filename: a.htm | Filename: 3frames-2.htm |
 | Target name: A | Target name: twofer |
-| | Target reference:
-| | "parent" to frames |
-| | B and C |
+| | Target reference: "parent" to frames B and C |
 
 | 框架源 | 框架源 |
 | Filename: b.htm | Filename: c.htm |
 | Target name: B | Target name: C |
 
 图 9-6：3frames-1.htm 层级
-
-
-
 
 现在，有了更多目标选项。虽然你可以直接针对 A、B 或 C，你也可以针对名为 "twofer" 的框架，它是位于 `3frames-2.htm` 文件中的第二个框架集（frameset）。从框架 A 的语法如下：
 
@@ -4817,30 +4469,30 @@ Filename: 3frames-2.htm
 
 对于下一个示例，你可以参考 Frames Review B（在 Student 文件夹中）补充光盘上提供的五个文件。你将使用的五个文件是：
 
-- master.htm
-- menu.htm
-- banner.htm
-- main.htm
-- new.htm
+- `master.htm`
+- `menu.htm`
+- `banner.htm`
+- `main.htm`
+- `new.htm`
 
-顶层文件 master.htm 包含两个框架集，如下：
+顶层文件 `master.htm` 包含两个框架集，如下：
 
 ```
 Master.htm
 <HTML><HEAD><TITLE>Parent File</TITLE>
 </HEAD>
-<FRAMET COLS="25%,75%">
+<FRAMESET COLS="25%,75%">
 <FRAME SRC="menu.htm" NAME="left">
-<FRAMET ROWS="25%,75%">
+<FRAMESET ROWS="25%,75%">
 <FRAME SRC="banner.htm" NAME="rightTop">
 <FRAME SRC="main.htm" NAME="rightBottom">
-</FRAMET>
+</FRAMESET>
 <NOFRAMES>
 <BODY>
 如果你有一个可以查看框架的浏览器，你将看到此站点。
 </BODY>
 </NOFRAMES>
-</FRAMET>
+</FRAMESET>
 </HTML>
 ```
 
@@ -4850,8 +4502,6 @@ Master.htm
 
 图 9-7：父文件
 
-## 课程 9：在 JavaScript 中控制框架
-
 在 HTML 中，目标名称由 `<FRAME>` 标签中指定的 NAME 属性表示。JavaScript 在定位时识别这些相同的名称。
 
 "menu" 框架中将新 URL 加载到 "rightBottom" 框架的链接语法如下：
@@ -4860,13 +4510,13 @@ Master.htm
 <A HREF="new.htm" TARGET="rightBottom">Load "new.htm" into the frame named "rightBottom"</A>
 ```
 
-如果你点击 menu.htm 文件左侧框架中的链接（如上图所示），你将看到图 9-8 所示的屏幕。
+如果你点击 `menu.htm` 文件左侧框架中的链接（如上图所示），你将看到图 9-8 所示的屏幕。
 
 ![](img/36826ab6f960cbecb91bb0737cbffa0_268_0.png)
 
-正如链接所示，文件 new.htm 已加载到目标名称为 "main" 的框架中。
+正如链接所示，文件 `new.htm` 已加载到目标名称为 "main" 的框架中。
 
-new.htm 文件中链接的源代码如下：
+`new.htm` 文件中链接的源代码如下：
 
 ```
 <A HREF=main.htm TARGET="_parent">
@@ -4874,19 +4524,22 @@ Load main into the parent of this frameset:
 </A>
 ```
 
-对目标 "_parent" 的引用会将链接的文件 main.htm 加载到当前框架集的父级中，或者包含加载父文件 master.htm 的文件的框架中。在这种情况下，父文件加载到全窗口。如果点击了此链接，将出现图 9-9 所示的屏幕。
+对目标 "_parent" 的引用会将链接的文件 `main.htm` 加载到当前框架集的父级中，或者包含加载父文件 `master.htm` 的文件的框架中。在这种情况下，父文件加载到全窗口。如果点击了此链接，将出现图 9-9 所示的屏幕。
 
 ![](img/36826ab6f960cbecb91bb0737cbffa0_269_0.png)
 
 为了理解用户遵循任一一个链接的结果，请检查这两个链接的源码：
 
-<A HREF="master.htm">Reload Frameset into current Frame</A><A HREF="master.htm" target="_top">Reload Frameset from "_top"</A>
+```
+<A HREF="master.htm">Reload Frameset into current Frame</A>
+<A HREF="master.htm" target="_top">Reload Frameset from "_top"</A>
+```
 
-如果点击，main.htm 中的第一个链接会将框架集重新加载到当前框架中。由于当前框架是整个窗口，你将返回原始屏幕，如图 9-10 所示。
+如果点击，`main.htm` 中的第一个链接会将框架集重新加载到当前框架中。由于当前框架是整个窗口，你将返回原始屏幕，如图 9-10 所示。
 
 ![](img/36826ab6f960cbecb91bb0737cbffa0_270_0.png)
 
-如果再次点击该链接，master.html 中的框架集本身将被加载到 "main" 框架中，如图 9-11 所示。
+如果再次点击该链接，`master.html` 中的框架集本身将被加载到 "main" 框架中，如图 9-11 所示。
 
 > ! 不建议你以这种方式创建目标链接。你很少需要将框架集加载到其自身。
 
@@ -4894,7 +4547,7 @@ Load main into the parent of this frameset:
 
 图 9-11：将框架集加载到框架后
 
-如果点击第二个链接（针对 "top" 的），master.htm 的框架集将从屏幕的 "top" 加载，清除所有预定义的框架以创建图 9-12。
+如果点击第二个链接（针对 "top" 的），`master.htm` 的框架集将从屏幕的 "top" 加载，清除所有预定义的框架以创建图 9-12。
 
 ![](img/36826ab6f960cbecb91bb0737cbffa0_272_0.png)
 
@@ -4911,57 +4564,49 @@ Load main into the parent of this frameset:
 
 ```
 Filename: 3frames-1.htm
-<FRAMETLS="25%,75%">
+<FRAMESET COLS="25%,75%">
 <FRAME SRC="a.htm" NAME="A">
 <FRAME SRC="b.htm" NAME="twofer">
-</FRAMET>
+</FRAMESET>
 ```
 
 ```
 Filename: 3frames-2.htm
-<FRAMET ROWS="25%,75%">
+<FRAMESET ROWS="25%,75%">
 <FRAME SRC="b.htm" NAME="B">
 <FRAME SRC="c.htm" NAME="C">
-</FRAMET>
+</FRAMESET>
 ```
 
-## 课程 9：在 JavaScript 中控制框架
-
-如果你加载文件 3frames-1.htm，你的屏幕应该类似于图 9-13。
-
-![](img/36826ab6f960cbecb91bb0737cbffa0_274_0.png)
-
- 9-13：3frames-1.htm
-
-所需的文件位于 Frames 文件夹（在 Afrikunda 站点）。master.htm 是框架集。代码如下：
+所需的文件位于 Frames 文件夹（在 Afrikunda 站点）。`master.htm` 是框架集。代码如下：
 
 ```
 <HTML><HEAD><TITLE>African Marketplace</TITLE>
 </HEAD>
-<FRAMET COLS="25%,75%">
+<FRAMESET COLS="25%,75%">
 <FRAME SRC="toc.htm" NAME="toc">
 <FRAME SRC="minor.htm" NAME="twoframes">
-</FRAMET>
+</FRAMESET>
 <NOFRAMES>
-<body>
+<BODY>
 如果你有一个支持框架的浏览器，你将在这里看到框架。
-</body>
+</BODY>
 </NOFRAMES>
-</FRAMET>
+</FRAMESET>
 </HTML>
 ```
 
 ```
 <HTML><HEAD><TITLE>Second Frameset</TITLE>
 </HEAD>
-<FRAMET ROWS="25%,75%">
+<FRAMESET ROWS="25%,75%">
 <FRAME SRC="banner.htm" NAME="banner">
 <FRAME SRC="default.htm" NAME="main">
-</FRAMET>
+</FRAMESET>
 </HTML>
 ```
 
-如果你加载 major.htm，你的屏幕应该类似于图 9-14。
+如果你加载 `major.htm`，你的屏幕应该类似于图 9-14。
 
 ![](img/36826ab6f960cbecb91bb0737cbffa0_275_0.png)
 
@@ -4969,62 +4614,56 @@ Filename: 3frames-2.htm
 
 ## 练习 9-1：定位框架
 
-1. **编辑器**：打开 Frames 文件夹（位于 Afrikunda 站点）中的 toc.htm 文件。你将添加几个加载文件到多个目标框架的按钮。
-
+1. **编辑器**：打开 Frames 文件夹（位于 Afrikunda 站点）中的 `toc.htm` 文件。你将添加几个加载文件到多个目标框架的按钮。
 2. **编辑器**：在 `<BODY>` 标签之后添加以下表单按钮，保存文件：
+
 ```html
 <FORM>
-<INPUT TYPE="button" VALUE="New Banner" onclick="top.frames[1].location.href='banner2.htm';
-<INPUT TYPE="button" VALUE="About Us" onclick="top.twoframes.main.location.href='aboutus.htm';
-<INPUT TYPE="button" VALUE="Contact Us" onclick="parent.main.location.href='contactus.htm';
-<INPUT TYPE="button" VALUE="Our Guarantee" onclick="parent.twoframes[1].location.href='ourguarantee.htm';
-<INPUT TYPE="button" VALUE="Home" onclick="parent.frames[1].location.href='default.htm';
-<INPUT TYPE="button" VALUE="Afrikunda" onclick="top.location.href='http://www.afrikunda.com";
+<INPUT TYPE="button" VALUE="New Banner" onclick="top.frames[1].location.href='banner2.htm';">
+<INPUT TYPE="button" VALUE="About Us" onclick="top.twoframes.main.location.href='aboutus.htm';">
+<INPUT TYPE="button" VALUE="Contact Us" onclick="parent.main.location.href='contactus.htm';">
+<INPUT TYPE="button" VALUE="Our Guarantee" onclick="parent.twoframes[1].location.href='ourguarantee.htm';">
+<INPUT TYPE="button" VALUE="Home" onclick="parent.frames[1].location.href='default.htm';">
+<INPUT TYPE="button" VALUE="Afrikunda" onclick="top.location.href='http://www.afrikunda.com';">
 </FORM>
 ```
 
-3. **浏览器**：加载 major.htm 文件。你的屏幕应该类似于图 9-15。
+3. **浏览器**：加载 `major.htm` 文件。你的屏幕应该类似于图 9-15。
 
 ![](img/36826ab6f960cbecb91bb0737cbffa0_276_0.png)
 
-
-
-
-## 4. 浏览器：点击“新建”（New）按钮。你的屏幕应该类似于图 9-16。
+4. **浏览器**：点击“新建”（New）按钮。你的屏幕应该类似于图 9-16。
 
 ![](img/36826ab6f960cbecb919bb0737cbffa0_277_0.png)
 
-## 5. 浏览器：点击“关于我们”（About Us）按钮。你的屏幕应该类似于图 9-17。
+5. **浏览器**：点击“关于我们”（About Us）按钮。你的屏幕应该类似于图 9-17。
 
 ![](img/36826ab6f960cbecb919bb0737cbffa0_277_1.png)
 
 图 9-16：新横幅加载到横幅框架
-
 图 9-17：关于我们页面加载到主框架
 
-## 第 9 节：在 JavaScript 中控制框架
-
-6. 浏览器：点击 Afrikunda 按钮。你的屏幕应该类似于图 9-18。
+6. **浏览器**：点击 Afrikunda 按钮。你的屏幕应该类似于图 9-18。
 
 ![](img/36826ab6f960cbecb919bb0737cbffa0_278_0.png)
 
-7. 浏览器：点击浏览器上的返回按钮，返回到增强了框架的 Afrikunda 站点。测试所有按钮以确保它们正常工作。
+7. **浏览器**：点击浏览器上的返回按钮，返回到增强了框架的 Afrikunda 站点。测试所有按钮以确保它们正常工作。
 
 假设你想从横幅框架或主框架将文档加载到目录框架中。你的选项如下：
 
-- top.toc.location.href="new.htm"
-- top.frames[0].location.href="new.htm"
-- parent.parent.toc.location.href="new.htm"
-- parent.parent.frames[0].location.href="new.htm"
+- `top.toc.location.href="new.htm"`
+- `top.frames[0].location.href="new.htm"`
+- `parent.parent.toc.location.href="new.htm"`
+- `parent.parent.frames[0].location.href="new.htm"`
 
 要从目录框架目标定到主框架或横幅框架，你有几种选择（如练习所示）：
 
-- top.frames[1].main.location.href="new.htm"
-- top.twoframes.main.location.href="new.htm"
-- parent.twoframes.frames[1].location.href="new.htm"
-- parent.twoframes.main.location.href="new.htm"
-- parent.frames[1].frames[1].location.href="new.htm"
-- parent.frames[1].main.location.href="new.htm"
+- `top.frames[1].main.location.href="new.htm"`
+- `top.twoframes.main.location.href="new.htm"`
+- `parent.twoframes.frames[1].location.href="new.htm"`
+- `parent.twoframes.main.location.href="new.htm"`
+- `parent.frames[1].frames[1].location.href="new.htm"`
+- `parent.frames[1].main.location.href="new.htm"`
 
 在前面的示例和练习中，你学习了如何定位一个框架以更改其内容。然而，你可能还有其他定位框架的理由。例如，你可能想提取当前出现在任何给定框架中的标题。你可能想更改特定框架或一组框架中文档的颜色。对于这些任何任务，正确的定位程序将被证明非常有用。
 
@@ -5038,13 +4677,13 @@ Filename: 3frames-2.htm
 <FORM>
 <INPUT TYPE="button" VALUE="Change Frames" onclick="changeFrames();">
 </FORM>
-
 <SCRIPT>
 <!--
 function changeFrames() {
   parent.rightTop.location.href="newbanner.htm";
   parent.rightBottom.location.href="newmain.htm";
 }
+-->
 </SCRIPT>
 ```
 
@@ -5080,13 +4719,9 @@ parent.testFunction();
 
 下一个练习将演示这些概念。
 
-## 第 9 节：在 JavaScript 中控制框架
+## 练习 9-2：从父框架调用函数
 
-![](img/36826ab6f960cbecb919bb0737cbffa0_282.png)
-
-## 练习 9：从父框架调用函数
-
-1. **编辑器：从父框架打开 major.htm**。在 `<HEAD>` 部分中添加以下代码，然后保存文件：
+1. **编辑器**：从父框架打开 `major.htm`。在 `<HEAD>` 部分中添加以下代码，然后保存文件：
 
 ```html
 <SCRIPT>
@@ -5099,116 +4734,103 @@ function testFunction(name){
 </SCRIPT>
 ```
 
-2. **编辑器：从父框架打开 toc.htm**。添加以下按钮，然后保存：
+2. **编辑器**：从父框架打开 `toc.htm`。添加以下按钮，然后保存：
 
 ```html
 <INPUT TYPE="button" VALUE="Function" onclick="var x = prompt('Who is calling this?'); var y = parent.testFunction(x); alert(y);">
 ```
 
-3. **浏览器：打开 major.htm**。你的屏幕应该类似于图 9-19。
+3. **浏览器**：打开 `major.htm`。你的屏幕应该类似于图 9-19。
 
 ![](img/36826ab6f960cbecb919bb0737cbffa0_283_0.png)
 
-4. **浏览器：点击 Function 按钮**。你将看到一个类似于图 9-20 的提示框。
+4. **浏览器**：点击 Function 按钮。你将看到一个类似于图 9-20 的提示框。
 
 ![](img/36826ab6f960cbecb919bb0737cbffa0_283_1.png)
 
-5. **浏览器：输入信息并点击 OK 按钮**。你将看到在 `testFunction()` 中定义的警告框。
+5. **浏览器**：输入信息并点击 OK 按钮。你将看到在 `testFunction()` 中定义的警告框。
 
 ![](img/36826ab6f960cbecb919bb0737cbffa0_284_0.png)
 
-6. **浏览器：点击 OK**。你将看到在 `toc.htm` 中定义的最终警告框，如图 9-22 所示。
+6. **浏览器**：点击 OK。你将看到在 `toc.htm` 中定义的最终警告框，如图 9-22 所示。
 
 ![](img/36826ab6f960cbecb919bb0737cbffa0_284_1.png)
 
 这个练习演示了父框架和子框架之间存在双向通信。你能够调用在父框架上定义的函数，并向该函数传递参数。函数被执行，并将值返回给定义在子框架上的调用语句。父框架页面上定义的变量也可以从子框架进行访问。
 
-
-
-
-
-# 第 9 节：JavaScript 中的框架控制 9-29
-
-接下来的练习将演示父窗口与子窗口之间的双向通信。
-
-![](img/36826ab6f960cbecb919bb0737cbffa0_286_0.png)
-
 ## 练习 9-3：从父窗口和子窗口调用函数
 
-- **编辑器：从 Frames 文件夹中打开 toc.htm**。按照**粗体**所示的指示修改源代码，然后保存文件：
+1. **编辑器**：从 Frames 文件夹中打开 `toc.htm`。按照**粗体**所示的指示修改源代码，然后保存文件：
 
 ```html
-<INPUT TYPE="button" VALUE="New Banner"
-OnClick="top.frames[1].banner.location.href='banner3.htm';<P>
+<INPUT TYPE="button" VALUE="New Banner" OnClick="top.frames[1].banner.location.href='banner3.htm';">
 ```
 
-- **编辑器：从 Frames 文件夹中打开 minor.htm**。检查以下源代码：
+2. **编辑器**：从 Frames 文件夹中打开 `minor.htm`。检查以下源代码：
 
 ```javascript
 <SCRIPT LANGUAGE="JavaScript">
---
-  function myFunction(){
-    alert("This function is defined on a parent frame page.");
-    myWin = open("", "width=200,height=200");
-
-    with(myWin.document){
-      open();
-      write("<html><HEAD><SCRIPT>function myTest(){");
-      write("alert('This function is defined on the child window.');\n");
-      write(" and is called from the parent window.");\n");
-      write("</SCRIPT></HEAD><body><h2>2 Test Window</h2><HR><HR>");\n");
-      write("<FORM><INPUT TYPE='button' VALUE='Parent window function'");
-      write("onclick='opener.winFunction();'");\n");
-      write("</FORM></body></html>");
-    }
+<!--
+function myFunction(){
+  alert("This function is defined on a parent frame page.");
+  myWin = open("", "width=200,height=200");
+  with(myWin.document){
+    open();
+    write("<html><HEAD><SCRIPT>function myTest(){");
+    write("alert('This function is defined on the child window.');\n");
+    write(" and is called from the parent window.\");\n");
+    write("</SCRIPT></HEAD><body><h2>2 Test Window</h2><HR><HR>");\n");
+    write("<FORM><INPUT TYPE='button' VALUE='Parent window function'");
+    write("onclick='opener.winFunction();'");\n");
+    write("</FORM></body></html>");
   }
+}
 
-  function winFunction(){
-    alert("This function is called by the child window\n" + 
-    "and is defined on the parent window.");
-    myWin.focus();
-  }
-  //--
+function winFunction(){
+  alert("This function is called by the child window\n" + 
+  "and is defined on the parent window.");
+  myWin.focus();
+}
+//-->
 </SCRIPT>
 ```
 
-## 3. 编辑器：从 Frames 文件夹中打开 banner3.htm**。检查以下代码：
+3. **编辑器**：从 Frames 文件夹中打开 `banner3.htm`。检查以下代码：
 
 ```html
 <A HREF="javascript:void(parent.parent.twoframes.myFunction())">父框架函数</A>
-
-<A HREF="javascript:void(parent.parent.twoframes.myWin.test())">子窗口函数</A>
+<A HREF="javascript:void(parent.parent.twoframes.myWin.myTest())">子窗口函数</A>
 ```
 
-## 4. 浏览器：加载 major.htm 并点击 New Banner 按钮。你的屏幕应类似于图 9-23。
+4. **浏览器**：加载 `major.htm` 并点击 New Banner 按钮。你的屏幕应类似于图 9-23。
 
 ![](img/36826ab6f960cbecb919bb0737cbffa0_287_0.png)
 
 图 9-23：带有 banner3.htm 的 major.htm
 
-## 5. 浏览器：点击 Parent Frame Function 链接。你会看到一个类似于图 9-24 的 alert 对话框。
+5. **浏览器**：点击 Parent Frame Function 链接。你会看到一个类似于图 9-24 的 alert 对话框。
 
 ![](img/36826ab6f960cbecb919bb0737cbffa0_287_1.png)
 
 图 9-24：alert对话框
 
-## 6. 浏览器。点击 OK。你的屏幕应类似于图 9-25。
+6. **浏览器**：点击 OK。你的屏幕应类似于图 9-25。
 
 ![](img/36826ab6f960cbecb919bb0737cbffa0_288_0.png)
 
 图 9-25：启动的新窗口
 
-## 7. 浏览器：点击 Child Window Function 链接。你的屏幕应类似于图 9-26。
+7. **浏览器**：点击 Child Window Function 链接。你的屏幕应类似于图 9-26。
 
 ![](img/36826ab6f960cbecb919bb0737cbffa0_288_1.png)
 
 图 9-26：调用的子窗口函数
 
-## 8. 浏览器：点击 OK。点击新窗口上的 Parent Window Function 按钮。你的屏幕应类似于图 9-27。
+8. **浏览器**：点击 OK。点击新窗口上的 Parent Window Function 按钮。你的屏幕应类似于图 9-27。
 
 ![](img/36826ab6f960cbecb919bb0737cbffa0_289_0.png)
 
-本练习演示了父框架与子框架之间存在的双向通信，这种通信也存在于父窗口与子窗口之间。练习还演示了可以从 `<A>` 标签启动函数的语法。`void` 关键字用于防止链接访问其目标，同时调用特定的函数。javascript 协议与 `void` 运算符配合使用来实现这一点。
+本练习演示了父框架与子框架之间存在的双向通信，这种通信也存在于父窗口与子窗口之间。练习还演示了可以从 `<A>` 标签启动函数的语法。`void` 关键字用于防止链接访问其目标，同时调用特定的函数。`javascript` 协议与 `void` 运算符配合使用来实现这一点。
 
 © 2000 ProsoftTraining.com 版权所有。版本 3.17
 
@@ -5220,7 +4842,7 @@ OnClick="top.frames[1].banner.location.href='banner3.htm';<P>
 
 你如何在自己的 Web 页面中使用框架？你能想象改变框架的内容吗？你如何从 JavaScript 中定位窗口？
 
-## 第 10 节：客户端的 JavaScript
+# 第 10 节：客户端的 JavaScript
 
 ## 目标
 
@@ -5235,7 +4857,7 @@ OnClick="top.frames[1].banner.location.href='banner3.htm';<P>
 
 ## 为什么？
 
-父框架与子框架之间的双向通信是普遍的。父窗口与子窗口之间的通信也是如此。父窗口与子窗口之间的通信是普遍的。这种特性是如何在 JavaScript 脚本中实现的？
+父框架与子框架之间的双向通信是普遍的。父窗口与子窗口之间的通信也是如此。这种特性是如何在 JavaScript 脚本中实现的？
 
 ## 图像地图
 
@@ -5302,15 +4924,14 @@ area.onclick = function() {
 };
 ```
 
-
 要添加“搜索”（Search）区域，你需要在定义的地图中添加另一个 `<AREA>` 标签。在定义所有四个区域后，你的 HTML 地图代码将类似于：
 
 ```
 <MAP NAME="ButtonMap">
-<AREA COOR="0,0,77,75" HREF="home.htm">
-<AREA COOR="78,0,156,75" HREF="search.htm">
-<AREA COOR="156,0,234,75" HREF="help.htm">
-<AREA COOR="234,0,312,75" HREF="order.htm">
+<AREA COORDS="0,0,77,75" HREF="home.htm">
+<AREA COORDS="78,0,156,75" HREF="search.htm">
+<AREA COORDS="156,0,234,75" HREF="help.htm">
+<AREA COORDS="234,0,312,75" HREF="order.htm">
 </MAP>
 <IMG SRC="button.gif" USEMAP="#ButtonMap">
 ```
@@ -5325,28 +4946,23 @@ area.onclick = function() {
 
 ```
 <MAP NAME="AfrikundaMap">
-<AREA COOR="45,160,220,210"
-HREF="http://www.africaguide.com/country/senegal/"
-<AREA COOR="20,255,315,280"
-HREF="http://www.africaguide.com/country/ivory-c/"
-<AREA COOR="185,20,310,160"
-HREF="http://www.africaguide.com/country/zaire/"
-<AREA COOR="50,25,160,150" HREF="#">
+<AREA COORDS="45,160,220,210" HREF="http://www.africaguide.com/country/senegal/">
+<AREA COORDS="20,255,315,280" HREF="http://www.africaguide.com/country/ivory-c/">
+<AREA COORDS="185,20,310,160" HREF="http://www.africaguide.com/country/zaire/">
+<AREA COORDS="50,25,160,150" HREF="#">
 </MAP>
 <IMG SRC="images/imagememap.gif" USEMAP="#AfrikundaMap">
 ```
 
-# 练习 10-1：创建客户端图像映射
+## 练习 10-1：创建客户端图像映射
 
-- 1. **浏览器：** 从 Afrikunda 网站打开 `imagemap.htm` 文件。
-
-- 2. **浏览器：** 将鼠标移动在地图的不同区域上。注意状态栏中的 URL 会发生变化，以对应鼠标经过的区域。
-
-- 3. **浏览器：** 点击任何区域以访问相应的网站。点击浏览器的**后退**（Back）按钮返回 `imagemap.htm`。点击不同的区域直到访问完该网站上的所有页面。
+1. **浏览器**：从 Afrikunda 网站打开 `imagemap.htm` 文件。
+2. **浏览器**：将鼠标移动在地图的不同区域上。注意状态栏中的 URL 会发生变化，以对应鼠标经过的区域。
+3. **浏览器**：点击任何区域以访问相应的网站。点击浏览器的“后退”（Back）按钮返回 `imagemap.htm`。点击不同的区域直到访问完该网站上的所有页面。
 
 你可能已经了状态栏中显示的 URL。通过脚本，你可以根据需要修改状态栏的显示。
 
-# 在图像映射中添加脚本
+## 在图像映射中添加脚本
 
 如果你想在图像映射区域中添加脚本，可以将脚本与点击事件或鼠标移动进入或离开区域范围的事件关联起来。
 
@@ -5356,36 +4972,23 @@ HREF="http://www.africaguide.com/country/zaire/"
 
 ![](img/36826ab6f960cbecb919bb0737cbffa0_299_0.png)
 
-# 课程 10：客户端 JavaScript
+## 练习 10-2：在图像映射中添加脚本
 
-# 练习 10-2：在图像映射中添加脚本
-
-- 1. **编辑器：** 打开 `imagemap.htm`。
-
-- 2. **编辑器：** 按照加粗所示编辑以下源代码。可以按照所示在 `<AREA>` 标签内添加换行。
+1. **编辑器**：打开 `imagemap.htm`。
+2. **编辑器**：按照加粗所示编辑以下源代码。可以按照所示在 `<AREA>` 标签内添加换行。
 
 ```html
 <HTML>
 <HEAD>
 <TITLE>Image Map </TITLE>
 </HEAD>
-
-<BODY BCOLOR="#CC9966" TEXT="#330000">
+<BODY BGCOLOR="#CC9966" TEXT="#330000">
 <DIV ALIGN="center">
 <MAP NAME="AfrikundaMap">
-<AREA COORDS="45,160,220,210"
-HREF="http://www.africaguide.com/country/senegal/"
-mouseover="Visit Senegal; return true;"
-onMouseOut="status='';return true;"
-<AREA COORDS="202,255,315,280"
-HREF="http://www.africaguide.com/country/ivoryc/"
-mouseover="Visit the Ivory Coast; return true;"
-onMouseOut="status='';return true;"
-<AREA COORDS="185,20,310,160"
-HREF="http://www.africaguide.com/country/zaire/"
-mouseover="Visit Zaire; return true;"
-onMouseOut="status='';return true;"
-<AREA COORDS="50,25,160,150" HREF="#"
+<AREA COORDS="45,160,220,210" HREF="http://www.africaguide.com/country/senegal/" onmouseover="status='Visit Senegal'; return true;" onMouseOut="status='';return true;">
+<AREA COORDS="202,255,315,280" HREF="http://www.africaguide.com/country/ivoryc/" onmouseover="status='Visit the Ivory Coast'; return true;" onMouseOut="status='';return true;">
+<AREA COORDS="185,20,310,160" HREF="http://www.africaguide.com/country/zaire/" onmouseover="status='Visit Zaire'; return true;" onMouseOut="status='';return true;">
+<AREA COORDS="50,25,160,150" HREF="#">
 </MAP>
 <IMG SRC="images/imagememap.gif" USEMAP="#AfrikundaMap">
 </DIV>
@@ -5393,27 +4996,21 @@ onMouseOut="status='';return true;"
 </HTML>
 ```
 
-- 3. **编辑器：** 保存 `imagemap.htm`。
-
-- 4. **浏览器：** 加载 `imagemap.htm`。将鼠标移动到图像上的热点上。当鼠标移动过各个区域时，你应该看到状态栏变为你的新文本，如图 10-5 所示。
+3. **编辑器**：保存 `imagemap.htm`。
+4. **浏览器**：加载 `imagemap.htm`。将鼠标移动到图像上的热点上。当鼠标移动过各个区域时，你应该看到状态栏变为你的新文本，如图 10-5 所示。
 
 ![](img/36826ab6f960cbecb919bb0737cbffa0_301_0.png)
 
 图 10-5：鼠标位于热点上的状态栏
 
-在编写时，Microsoft Internet Explorer 5.x 不支持 `<AREA>` 标签内部的 `onMouseOver`set。到目前为止，你已经在 `<AREA>` 标签内添加了简单的内联脚本来替换状态栏中的完整 URL。在下一个练习中，你将编写脚本，在点击热点时调用一个弹出信息的函数。
+在编写时，Microsoft Internet Explorer 5.x 不支持 `<AREA>` 标签内部的 `onMouseOver` 事件。到目前为止，你已经在 `<AREA>` 标签内添加了简单的内联脚本来替换状态栏中的完整 URL。在下一个练习中，你将编写脚本，在点击热点时调用一个弹出信息的函数。
 
-# 课程 10：客户端 JavaScript
+## 练习 10-3：从图像映射调用函数
 
-![](img/36826ab6f960cbecb919bb0737cbffa0_302_0.png)
+1. **编辑器**：打开 `imagemap.htm`。
+2. **编辑器**：按照所示修改以下源代码：
 
-# 练习 10-3：从图像映射调用函数
-
-- 1. **编辑器：** 打开 `imagemap.htm`。
-
-- 2. **编辑器：** 按照所示修改以下源代码：
-
-```
+```html
 <HTML>
 <HEAD>
 <TITLE>Image Map</TITLE>
@@ -5426,75 +5023,55 @@ function showHelp() {
 }
 </SCRIPT>
 </HEAD>
-
 <BODY BGCOLOR="#CC9966" TEXT="#330000">
 <DIV ALIGN="center">
 <MAP NAME="AfrikundaMap">
-<AREA COORDS="45,160,220,210"
-HREF="http://www.africaguide.com/country/senegal/"
-mouseover="Visit Senegal; return true;"
-onMouseOut="status='';return true;">
-<AREA COORDS="20,255,315,280"
-HREF="http://www.africaguide.com/country/ivoryc/"
-mouseover="Visit the Ivory Coast; return true;"
-onMouseOut="status='';return true;">
-<AREA COORDS="185,210,310,160"
-HREF="http://www.africaguide.com/country/zaire/"
-mouseover="Visit Zaire; return true;"
-onMouseOut="status='';return true;">
-<AREA COORDS="50,25,160,150"
-HREF="javascript:showHelp();"
-mouseover="status='Click for help'; return true;"
-onMouseOut="status='';return true;">
+<AREA COORDS="45,160,220,210" HREF="http://www.africaguide.com/country/senegal/" onmouseover="status='Visit Senegal'; return true;" onMouseOut="status='';return true;">
+<AREA COORDS="20,255,315,280" HREF="http://www.africaguide.com/country/ivoryc/" onmouseover="status='Visit the Ivory Coast'; return true;" onMouseOut="status='';return true;">
+<AREA COORDS="185,210,310,160" HREF="http://www.africaguide.com/country/zaire/" onmouseover="status='Visit Zaire'; return true;" onMouseOut="status='';return true;">
+<AREA COORDS="50,25,160,150" HREF="javascript:showHelp();" onmouseover="status='Click for help'; return true;" onMouseOut="status='';return true;">
 </MAP>
 <IMG SRC="images/imagemap.gif" USEMAP="#AfrikundaMap">
 </DIV>
 </BODY>
+</HTML>
 ```
 
-- 3. **编辑器：** 保存 `imagemap.htm`。
-
-- 4. **浏览器：** 加载 `imagemap.htm` 并点击“Click for Help”区域。你的屏幕应该类似于图 10-6。
+3. **编辑器**：保存 `imagemap.htm`。
+4. **浏览器**：加载 `imagemap.htm` 并点击“Click for Help”区域。你的屏幕应该类似于图 10-6。
 
 ![](img/36826ab6f960cbecb919bb0737cbffa0_303_0.png)
-
-# 课程 10：客户端 JavaScript
 
 在前面的练习中，你看到了空运算符（void operator）的另一个示例。类似于 `<a>` 标签，`<AREA>` 标签的 `HREF` 属性可以使用 `javascript:void` 语句调用脚本。下一个练习将从图像映射获取信息并将其显示在文本框中。此函数是现在状态栏中显示信息的替代方案。
 
 ![](img/36826ab6f960cbecb919bb0737cbffa0_304_0.png)
 
-- 1. **编辑器：** 从 Afrikunda 网站打开 `textimage.htm`。
+## 练习 10-4：在文本框中显示图像映射信息
 
-- 2. **编辑器：** 检查文件源代码：
+1. **编辑器**：从 Afrikunda 网站打开 `textimage.htm`。
+2. **编辑器**：检查文件源代码：
 
 ```html
 <HTML>
 <HEAD>
 <TITLE>Sightseeing Image Map</TITLE>
 </HEAD>
-
 <BODY BGCOLOR="#CC9966" text="#330000">
 <DIV ALIGN="center">
-
 <MAP NAME="AfrikundaMap">
-<AREA COORDS="45,160,220,210" HREF="http://www.africaguide.com/country/senegal/" onmouseover="showPlace('Visit Senegal')" return true; onMouseOut="noPlace();">
-<AREA COORDS="20,255,315,280" HREF="http://www.africaguide.com/country/ivoryc/" onmouseover="showPlace('Visit the Ivory Coast')" return true; onMouseOut="noPlace();">
-<AREA COORDS="185,20,310,160" HREF="http://www.africaguide.com/country/zaire/" onmouseover="showPlace('Visit Zaire')" return true; onMouseOut="noPlace();">
-<AREA COORDS="50,25,160,150" HREF="http://www.africaguide.com/news.htm" onmouseover="showPlace('Get the latest news from Africa')" return true; onMouseOut="noPlace();">
+<AREA COORDS="45,160,220,210" HREF="http://www.africaguide.com/country/senegal/" onmouseover="showPlace('Visit Senegal'); return true;" onMouseOut="noPlace();">
+<AREA COORDS="20,255,315,280" HREF="http://www.africaguide.com/country/ivoryc/" onmouseover="showPlace('Visit the Ivory Coast'); return true;" onMouseOut="noPlace();">
+<AREA COORDS="185,20,310,160" HREF="http://www.africaguide.com/country/zaire/" onmouseover="showPlace('Visit Zaire'); return true;" onMouseOut="noPlace();">
+<AREA COORDS="50,25,160,150" HREF="http://www.africaguide.com/news.htm" onmouseover="showPlace('Get the latest news from Africa'); return true;" onMouseOut="noPlace();">
 </MAP>
-
 <IMG SRC="images/imagemap.gif" USEMAP="AfrikundaMap">
 <H1>Explore Africa!</H1>
 <FORM>
 <INPUT TYPE="text" SIZE="40" NAME="textBox">
 </FORM>
-
 </BODY>
 </HTML>
 ```
-
-
 
 表 10-2 描述了 navigator 对象的方法。
 
@@ -5502,23 +5079,27 @@ onMouseOut="status='';return true;">
 
 | 方法 | 说明 |
 | --- | --- |
-| javaEnabled() | 如果客户端启用了 Java，则返回 true；否则返回 false。 |
-| preference() | 读取并设置浏览器用户偏好（仅限签名脚本）。 |
-| taintEnabled() | 如果客户端启用了数据污染（data tainting），则返回 true；否则返回 false。 |
+| `javaEnabled()` | 如果客户端启用了 Java，则返回 true；否则返回 false。 |
+| `preference()` | 读取并设置浏览器用户偏好（仅限签名脚本）。 |
+| `taintEnabled()` | 如果客户端启用了数据污染（data tainting），则返回 true；否则返回 false。 |
 
 可以通过脚本访问 navigator 对象属性的任何一个值。接下来的练习将演示你能够从这些属性中检测到什么类型的信息。
 
 ## 练习 10-5：使用 navigator 对象
 
-- 1. **编辑器：** 从 Afrikunda 网站打开 browser.htm。
-
-- 2. **编辑器：** 在文件的 <HEAD> 部分输入以下源代码：
+1. **编辑器**：从 Afrikunda 网站打开 `browser.htm`。
+2. **编辑器**：在文件的 `<HEAD>` 部分输入以下源代码：
 
 ```javascript
 <SCRIPT LANGUAGE="JavaScript">
-<--
+<!--
 function showInfo() {
-var info=""
+  var info=""
+```
+
+
+
+```javascript
 info += "\nWelcome, " + navigator.appCode;
 info += " \nuser!\nYou are using the "
 info += navigator.appName + " browser,\n"
@@ -5526,18 +5107,14 @@ info += navigator.appVersion + "\nYour user agent ";
 info += "information is " + navigator.userAgent;
 alert(info);
 }
-
-<!----
-</SCRIPT>
 ```
 
-- 3. **编辑器：** 保存 browser.htm。
-
-- 4. **浏览器：** 在 Netscape Navigator 中加载文件 browser.htm。你的屏幕应该类似于图 10-9。
+- 3. **编辑器：** 保存`browser.htm`。
+- 4. **浏览器：** 在 Netscape Navigator 中加载文件`browser.htm`。你的屏幕应该类似于图 10-9。
 
 ![](img/36826ab6f960cbecb919bb0737cbffa0_309_0.png)
 
-- 5. Netscape Navigator：点击图片。你应该看到一个类似于图 10-10 的警报框。
+- 5. **Netscape Navigator：** 点击图片。你应该看到一个类似于图 10-10 的警报框。
 
 ![](img/36826ab6f960cbecb919bb0737cbffa0_310_0.png)
 
@@ -5545,7 +5122,7 @@ alert(info);
 
 ![](img/36826ab6f960cbecb919bb0737cbffa0_310_1.png)
 
-你可以使用来自 navigator 对象的信息来确定用户访问你网站时使用的浏览器。你还可以根据正在使用的浏览器版本在脚本中做出决策。
+你可以使用来自`navigator`对象的信息来确定用户访问你网站时使用的浏览器。你还可以根据正在使用的浏览器版本在脚本中做出决策。
 
 接下来的练习演示了如何使用脚本利用浏览器应用程序的特定特性。Navigator 和 Internet Explorer 处理表格的方式不同，你将根据所使用的浏览器使用 JavaScript 不同的指令。
 
@@ -5553,57 +5130,51 @@ alert(info);
 
 ## 练习 10-6：创建随所用浏览器变化的脚本
 
-- 1. 编辑器：从 Afrikunda 网站打开 navigator.htm。
-
-- 2. 编辑器：检查以下源代码：
+- 1. **编辑器：** 从 Afrikunda 网站打开`navigator.htm`。
+- 2. **编辑器：** 检查以下源代码：
 
 ```html
 <HTML>
 <HEAD>
 <TITLE>Navigator 对象演示</TITLE>
 </HEAD>
-
 <BODY BGCOLOR="#CC9966" TEXT="#330000">
 <DIV ALIGN="center">
 <SCRIPT LANGUAGE="JavaScript">
 <!--
-
 if (navigator.appName == "Microsoft Internet Explorer") {
   document.write("<TABLE WIDTH='50%' BORDERCOLOR='brown' BACKGROUND='images/border.gif\">");
   document.write("<TD CELLPADDING=5 BORDER=3 CELLSPACING=10>");
   document.write("<TR background='images/mask.jpg'><H1>");
-  document.write("<FONT COLOR='brown'>Internet Explorer supports </H1>");
-  document.write("background images in tables. </H1>");
-  document.write("<H3 FONT COLOR='brown'>You can also customize individual cells </H3>");
-  document.write("with images and colors. </H3>");
-  document.write("TD></TR></TABLE>");
+  document.write("<FONT COLOR='brown'>Internet Explorer supports</H1>");
+  document.write("background images in tables.</H1>");
+  document.write("<H3 FONT COLOR='brown'>You can also customize individual cells</H3>");
+  document.write("with images and colors.</H3>");
+  document.write("TD</TR</TABLE>");
 } else {
   document.write("<TABLE WIDTH='50%' BORDERCOLOR='brown' BACKGROUND='images/mask.jpg\">");
   document.write("<TD CELLPADDING=5 BORDER=3 CELLSPACING=10>");
   document.write("<TR><TD color='brown'><H1>");
   document.write("<FONT COLOR='brown'>Netscape Navigator 4.0 lets you ");
-  document.write("use background images in tables, as. </H1 ");
+  document.write("use background images in tables, as.</H1 ");
   document.write("<H3 FONT COLOR='brown'>However, it does not support images or ");
-  document.write("background colors within individual table cells. </H3>");
-  document.write("TD></TR></TABLE>");
+  document.write("background colors within individual table cells.</H3>");
+  document.write("TD</TR</TABLE>");
 }
-```
 //-->
 </SCRIPT>
-
 </DIV>
-
 <BODY>
 </HTML>
 ```
 
-- 3. 浏览器：在 Microsoft Internet Explorer 中打开文件 navigator.htm。你的屏幕应该类似于图 10-12。
+- 3. **浏览器：** 在 Microsoft Internet Explorer 中打开文件`navigator.htm`。你的屏幕应该类似于图 10-12。
 
 ![](img/36826ab6f960cbecb919bb0737cbffa0_312_0.png)
 
-图 10-12：Internet Explorer 中的 navigator.htm
+图 10-12：Internet Explorer 中的`navigator.htm`
 
-- 4. 浏览器：在 Netscape Navigator 中打开文件 navigator.htm。你的屏幕应该类似于图 10-13。
+- 4. **浏览器：** 在 Netscape Navigator 中打开文件`navigator.htm`。你的屏幕应该类似于图 10-13。
 
 ![](img/36826ab6f960cbecb919bb0737cbffa0_313_0.png)
 
@@ -5625,7 +5196,7 @@ JavaScript 开发中最挑战性的方面之一对象。随着应用程序的增
 
 ### 为什么？
 
-任何基于对象的语言最有用的功能之一就是其创建对象的能力。JavaScript 提供了非常有用的对象，如 `Date()` 和 `Array()`。然而，你并不限于这些；作为程序员，你必须理解如何以及何时创建自己的对象。
+任何基于对象的语言最有用的功能之一就是其创建对象的能力。JavaScript 提供了非常有用的对象，如`Date()`和`Array()`。然而，你并不限于这些；作为程序员，你必须理解如何以及何时创建自己的对象。
 
 ### 自定义对象的优势
 
@@ -5635,7 +5206,7 @@ JavaScript 开发中最挑战性的方面之一对象。随着应用程序的增
 
 为了进一步演示用户定义对象的优势，你将定义并部署一个 JavaScript 对象。该项目是一个 Afrikunda 网站的库存数据库。
 
-你将通过创建一个自定义产品对象开始此项目，该对象将存储产品的 ID、名称、描述、材料和价格。此外，你还将该对象添加一个客户端可以调用的方法。最后，你将以各种方式显示这些信息（存储在对象的实例中）。通过通过这个演示，你将学习创建自定义对象所需的本质且常用的编程步骤。
+你将通过创建一个自定义产品对象开始此项目，该对象将存储产品的 ID、名称、描述、材料和价格。此外，你还将该对象添加一个客户端可以调用的方法。最后，你将以各种方式显示这些信息（存储在对象的实例中）。通过这个演示，你将学习创建自定义对象所需的本质且常用的编程步骤。
 
 ### 创建 JavaScript 对象：构造函数
 
@@ -5643,37 +5214,35 @@ JavaScript 开发中最挑战性的方面之一对象。随着应用程序的增
 
 你使用一个名为**构造函数**（constructor）的特殊函数来定义或创建一个自定义 JavaScript 对象。构造函数定义了对象的属性和方法。定义构造函数是创建对象的第一步。具体来说，构造函数创建了一个空模板，从该模板可以生成实时对象。
 
+你可以将这些参数命名为`id`、`item`、`description`、`material`和`price`。
 
-
-
-你可以将这些参数命名为 `id`、`item`、`description`、`material` 和 `price`。
 仅凭这些信息，你就可以编写如下构造函数：
 
 ```javascript
 function productObject(id,item,description,material,price) {
-this.id = id;
-this.item = item;
-this.description = description;
-this.material = material;
-this.price = price;
+  this.id = id;
+  this.item = item;
+  this.description = description;
+  this.material = material;
+  this.price = price;
 }
 ```
 
 这段代码定义了一个新的 JavaScript 对象模板。检查构造函数中的一条语句：
 
-```
+```javascript
 this.description = description;
 ```
 
 该语句也可以写成如下形式：
 
-```
+```javascript
 this.myDescription = description;
 ```
 
-换句话说，这两个单词不需要完全匹配。但是，等号右侧（在本例中为单词 `description`）必须与在函数参数列表中声明的参数相匹配。
+换句话说，这两个单词不需要完全匹配。但是，等号右侧（在本例中为单词`description`）必须与在函数参数列表中声明的参数相匹配。
 
-一旦定义了构造函数，你就需要创建对象的新实例。这个过程被称为“实例化”。当你实例化了对象的新副本后，你就可以用信息填充对象的属性。
+一旦定义了构造函数，你就需要创建对象的新实例。这个过程被称为"实例化"。当你实例化了对象的新副本后，你就可以用信息填充对象的属性。
 
 ## 创建自定义对象的实例
 
@@ -5684,9 +5253,9 @@ ashtray = new productObject("hf-01","Mask Ashtray","Senegal ashtray","wood","$30
 chair = new productObject("hf-02","Sculpted Chair Elephant","Ivory Coast sculpted chair","mahogany","$140.00");
 ```
 
-这些行创建了两个产品对象的实例，使用 `hf-01` 作为名为 `ashtray` 的产品的 ID，依此类推。
+这些行创建了两个产品对象的实例，使用`hf-01`作为名为`ashtray`的产品的 ID，依此类推。
 
-由于你将希望对大多数对象执行重复性任务，因此你会发现将产品添加到数组变量中比像所示创建单个变量更有帮助。要创建一个数组，你需要声明一个 `Array()` 对象的新实例。以下代码显示了如何在 `product` 数组变量中存储五个个产品对象：
+由于你将希望对大多数对象执行重复性任务，因此你会发现将产品添加到数组变量中比像所示创建单个变量更有帮助。要创建一个数组，你需要声明一个`Array()`对象的新实例。以下代码显示了如何在`product`数组变量中存储五个产品对象：
 
 ```javascript
 var product = new Array();
@@ -5701,7 +5270,7 @@ product[4] = new productObject("ac-02","Lion","Senegal carved lion","ebony","$40
 
 ## 创建对象方法
 
-为了检索（即查看）你刚刚存储的信息，你应该定义一个方法，允许你查看此产品对象实例中的数据。再次，你可以根据需要为你的对象创建任意数量的方法。你可以根据喜意让它们变得简单或复杂。对于这个项目，你将创建一个方法，允许客户端快速打开新窗口并查看所有对象信息。你将调用 `displayInfo()` 方法。然后你将从图 11-1 所示的“Get Info”按钮中调用此方法。
+为了检索（即查看）你刚刚存储的信息，你应该定义一个方法，允许你查看此产品对象实例中的数据。再次，你可以根据需要为你的对象创建任意数量的方法。你可以根据喜意让它们变得简单或复杂。对于这个项目，你将创建一个方法，允许客户端快速打开新窗口并查看所有对象信息。你将调用`displayInfo()`方法。然后你将从图 11-1 所示的"Get Info"按钮中调用此方法。
 
 ![](img/36826ab6f960cbecb919bb0737cbffa0_322_0.png)
 
@@ -5713,20 +5282,20 @@ product[4] = new productObject("ac-02","Lion","Senegal carved lion","ebony","$40
 
 ```javascript
 function productObject(id,item,description,material,price) {
-this.id = id;
-this.item = item;
-this.description = description;
-this.material = material;
-this.price = price;
-this.displayOne = displayOne;
+  this.id = id;
+  this.item = item;
+  this.description = description;
+  this.material = material;
+  this.price = price;
+  this.displayOne = displayOne;
 }
 ```
 
 注意方法名后跟着括号。如果放在方法名后放置括号，代码将在该刻调用该函数，这并不是预期的操作。
 
-仅凭源代码并没有表明 `price` 是一个属性而 `displayOne` 是一个方法。你必须创建一个同名的独立函数使 `displayOne` 成为一个方法。然而，在通过独立函数创建该方法之前，你必须创建一个你将在其中使用产品对象的 HTML 页面。在页面的信息语文中创建该方法将是有帮助的。
+仅凭源代码并没有表明`price`是一个属性而`displayOne`是一个方法。你必须创建一个同名的独立函数使`displayOne`成为一个方法。然而，在通过独立函数创建该方法之前，你必须创建一个你将在其中使用产品对象的 HTML 页面。在页面的信息语文中创建该方法将是有帮助的。
 
-最终，你将创建一个与前图相似的页面。你将使用 JavaScript 用 `product` 数组填充下拉列表。文件的该部分将如下：
+最终，你将创建一个与前图相似的页面。你将使用 JavaScript 用`product`数组填充下拉列表。文件的该部分将如下：
 
 ```html
 <SELECT NAME="itemName">
@@ -5740,28 +5309,28 @@ document.write("<OPTION>" + product[i].item);
 </SELECT>
 ```
 
-脚本块位于普通的 `<SELECT>` 标签序列中间。你不需要手动创建单个 `<options>`，而将使用 `product` 数组和 `item` 属性来生成每个 `<OPTION>` 的文本。
+脚本块位于普通的`<SELECT>`标签序列中间。你不需要手动创建单个`<options>`，而将使用`product`数组和`item`属性来生成每个`<OPTION>`的文本。
 
-## 为了检索（即查看）你刚刚存储的信息，你应该定义一个方法，允许你查看此产品对象实例中的数据。再次，你可以根据需要为你的对象创建任意数量的方法。你可以根据喜意让它们变得简单或复杂。对于这个项目，你将创建一个方法，允许客户端快速打开新窗口并查看所有对象信息。你将调用 `displayInfo()` 方法。然后你将从图 11-1 所示的“Get Info”按钮中调用此方法。
+## 为了检索（即查看）你刚刚存储的信息，你应该定义一个方法，允许你查看此产品对象实例中的数据。再次，你可以根据需要为你的对象创建任意数量的方法。你可以根据喜意让它们变得简单或复杂。对于这个项目，你将创建一个方法，允许客户端快速打开新窗口并查看所有对象信息。你将调用`displayInfo()`方法。然后你将从图 11-1 所示的"Get Info"按钮中调用此方法。
 
 为了确保该方法能够正常工作，你必须返回刚刚创建的构造函数，并修改它以包含你即将创建的新方法。记住，构造函数允许你创建对象，而为了使用提议的新窗口方法，你必须首先定义它。注意以下代码中的该行：
 
 ```javascript
 function productObject(id,item,description,material,price) {
-this.id = id;
-this.item = item;
-this.description = description;
-this.material = material;
-this.price = price;
-this.displayOne = displayOne;
+  this.id = id;
+  this.item = item;
+  this.description = description;
+  this.material = material;
+  this.price = price;
+  this.displayOne = displayOne;
 }
 ```
 
 注意方法名后跟着括号。如果放在方法名后放置括号，代码将在该刻调用该函数，这并不是预期的操作。
 
-仅凭源代码并没有表明 `price` 是一个属性而 `displayOne` 是一个方法。你必须创建一个同名的独立函数使 `displayOne` 成为一个方法。然而，在通过独立函数创建该方法之前，你必须创建一个你将在其中使用产品对象的 HTML 页面。在页面的信息语文中创建该方法将是有帮助的。
+仅凭源代码并没有表明`price`是一个属性而`displayOne`是一个方法。你必须创建一个同名的独立函数使`displayOne`成为一个方法。然而，在通过独立函数创建该方法之前，你必须创建一个你将在其中使用产品对象的 HTML 页面。在页面的信息语文中创建该方法将是有帮助的。
 
-最终，你将创建一个与前图相似的页面。你将使用 JavaScript 用 `product` 数组填充下拉列表。文件的该部分将如下：
+最终，你将创建一个与前图相似的页面。你将使用 JavaScript 用`product`数组填充下拉列表。文件的该部分将如下：
 
 ```html
 <SELECT NAME="itemName">
@@ -5775,7 +5344,7 @@ document.write("<OPTION>" + product[i].item);
 </SELECT>
 ```
 
-脚本块位于普通的 `<SELECT>` 标签序列中间。你不需要手动创建单个 `<options>`，而将使用 `product` 数组和 `item` 属性来生成每个 `<OPTION>` 的文本。
+脚本块位于普通的`<SELECT>`标签序列中间。你不需要手动创建单个`<options>`，而将使用`product`数组和`item`属性来生成每个`<OPTION>`的文本。
 
 ## 11- JavaScript 对象
 
@@ -5786,9 +5355,9 @@ ashtray = new productObject("hf-01","Mask Ashtray","Senegal ashtray","wood","$30
 chair = new productObject("hf-02","Sculpted Chair Elephant","Ivory Coast sculpted chair","mahogany","$140.00");
 ```
 
-这些行创建了两个产品对象的实例，使用 `hf-01` 作为名为 `ashtray` 的产品的 ID，依此类推。
+这些行创建了两个产品对象的实例，使用`hf-01`作为名为`ashtray`的产品的 ID，依此类推。
 
-由于你将希望对大多数对象执行重复性任务，因此你会发现将产品添加到数组变量中比像所示创建单个变量更有帮助。要创建一个数组，你需要声明一个 `Array()` 对象的新实例。以下代码显示了如何在 `product` 数组变量中存储五个个产品对象：
+由于你将希望对大多数对象执行重复性任务，因此你会发现将产品添加到数组变量中比像所示创建单个变量更有帮助。要创建一个数组，你需要声明一个`Array()`对象的新实例。以下代码显示了如何在`product`数组变量中存储五个产品对象：
 
 ```javascript
 var product = new Array();
@@ -5803,7 +5372,7 @@ product[4] = new productObject("ac-02","Lion","Senegal carved lion","ebony","$40
 
 ## 创建对象方法
 
-为了检索（即查看）你刚刚存储的信息，你应该定义一个方法，允许你查看此产品对象实例中的数据。再次，你可以根据需要为你的对象创建任意数量的方法。你可以根据喜意让它们变得简单或复杂。对于这个项目，你将创建一个方法，允许客户端快速打开新窗口并查看所有对象信息。你将调用 `displayInfo()` 方法。然后你将从图 11-1 所示的“Get Info”按钮中调用此方法。
+为了检索（即查看）你刚刚存储的信息，你应该定义一个方法，允许你查看此产品对象实例中的数据。再次，你可以根据需要为你的对象创建任意数量的方法。你可以根据喜意让它们变得简单或复杂。对于这个项目，你将创建一个方法，允许客户端快速打开新窗口并查看所有对象信息。你将调用`displayInfo()`方法。然后你将从图 11-1 所示的"Get Info"按钮中调用此方法。
 
 ![](img/36826ab6f960cbecb919bb0737cbffa0_322_0.png)
 
@@ -5815,20 +5384,20 @@ product[4] = new productObject("ac-02","Lion","Senegal carved lion","ebony","$40
 
 ```javascript
 function productObject(id,item,description,material,price) {
-this.id = id;
-this.item = item;
-this.description = description;
-this.material = material;
-this.price = price;
-this.displayOne = displayOne;
+  this.id = id;
+  this.item = item;
+  this.description = description;
+  this.material = material;
+  this.price = price;
+  this.displayOne = displayOne;
 }
 ```
 
 注意方法名后跟着括号。如果放在方法名后放置括号，代码将在该刻调用该函数，这并不是预期的操作。
 
-仅凭源代码并没有表明 `price` 是一个属性而 `displayOne` 是一个方法。你必须创建一个同名的独立函数使 `displayOne` 成为一个方法。然而，在通过独立函数创建该方法之前，你必须创建一个你将在其中使用产品对象的 HTML 页面。在页面的信息语文中创建该方法将是有帮助的。
+仅凭源代码并没有表明`price`是一个属性而`displayOne`是一个方法。你必须创建一个同名的独立函数使`displayOne`成为一个方法。然而，在通过独立函数创建该方法之前，你必须创建一个你将在其中使用产品对象的 HTML 页面。在页面的信息语文中创建该方法将是有帮助的。
 
-最终，你将创建一个与前图相似的页面。你将使用 JavaScript 用 `product` 数组填充下拉列表。文件的该部分将如下：
+最终，你将创建一个与前图相似的页面。你将使用 JavaScript 用`product`数组填充下拉列表。文件的该部分将如下：
 
 ```html
 <SELECT NAME="itemName">
@@ -5842,7 +5411,7 @@ document.write("<OPTION>" + product[i].item);
 </SELECT>
 ```
 
-脚本块位于普通的 `<SELECT>` 标签序列中间。你不需要手动创建单个 `<options>`，而将使用 `product` 数组和 `item` 属性来生成每个 `<OPTION>` 的文本。
+脚本块位于普通的`<SELECT>`标签序列中间。你不需要手动创建单个`<options>`，而将使用`product`数组和`item`属性来生成每个`<OPTION>`的文本。
 
 ## 11- JavaScript 对象
 
@@ -5852,28 +5421,29 @@ document.write("<OPTION>" + product[i].item);
 ashtray = new productObject("hf-01","Mask Ashtray","Senegal ashtray","wood","$30.00");
 chair = new productObject("hf-02","Sculpted Chair Elephant","Ivory Coast sculpted chair","mahogany","$140.00");
 ```
+
 （由于提供的文本存在大量重复，此处已按逻辑结构合并并翻译）
 
-现在你已经有了创建 `displayOne()` 方法的语境。请检查 `displayOne()` 函数：
+现在你已经有了创建`displayOne()`方法的语境。请检查`displayOne()`函数：
 
 ```javascript
 function displayOne() {
-content="<HTML><HEAD><TITLE>" + this.item + "</TITLE></HEAD>" +
-content="<BODY BGCOLOR='#CC96' TEXT='#330000' ALIGN='center'>" +
-content="<TABLE WIDTH='75%'><TR><TD COLSPAN='2' ALIGN='center'>" +
-content="<FONT SIZE='5'>Item: " + this.bold() + ";<HR>" +
-content="</FONT><TR><TD B=ID:" + this.id + ";" +
-content="<TR><TD B=Description:" + this.description + ";" +
-content="<TR><TD B=Price:" + this.price + ";" +
-content="</TABLE><INPUT TYPE='button' VALUE='OK' onclick='window.close();'>" +
-newwindow = open("displayWindow", "width=400,height=240");
-newwindow(newwindow);
+  content="<HTML><HEAD><TITLE>" + this.item +</TITLE</HEAD>" +
+  content="<BODY BGCOLOR='#CC96' TEXT='#330000' ALIGN='center'>" +
+  content="<TABLE WIDTH='75%'><TR><TD COLSPAN='2' ALIGN='center'>" +
+  content="<FONT SIZE='5'>Item: " + this.bold() + ";<HR>" +
+  content="</FONT><TR><TD B=ID:" + this.id + ";" +
+  content="<TR><TD B=Description:" + this.description + ";" +
+  content="<TR><TD B=Price:" + this.price + ";" +
+  content="</TABLE><INPUT TYPE='button' VALUE='OK' onclick='window.close();'>" +
+  newwindow = open("displayWindow", "width=400,height=240");
+  newwindow(newwindow);
 }
 ```
 
-注意函数中使用了关键字 `this` 来替换对象的属性值。如果选择了选择列表中的第一个项目，你运行的是 `product[0]` 的方法。单词 `this` 在执行时将被替换为 `product[0]`。
+注意函数中使用了关键字`this`来替换对象的属性值。如果选择了选择列表中的第一个项目，你运行的是`product[0]`的方法。单词`this`在执行时将被替换为`product[0]`。
 
-函数的最后一行调用了另一个函数，该函数打开一个窗口并写入在 `displayOne()` 方法中创建的内容。因为你将需要从此函数以及后面的函数写入窗口，你希望你的窗口写入函数是灵活的并写入正确的窗口。每个函数都将目标窗口的名称传递 `newwindow()` 函数，在其中它被存储并引用为之前的函数：
+函数的最后一行调用了另一个函数，该函数打开一个窗口并写入在`displayOne()`方法中创建的内容。因为你将需要从此函数以及后面的函数写入窗口，你希望你的窗口写入函数是灵活的并写入正确的窗口。每个函数都将目标窗口的名称传递`newwindow()`函数，在其中它被存储并引用为之前的函数：
 
 ```javascript
 function newwindow(x) {
@@ -5885,26 +5455,23 @@ function newwindow(x) {
 }
 ```
 
-函数的第一行 `x.document.close()` 用于确保每次调用 `newwindow()` 函数时数据流都是干净的。脚本最后一行每次调用此函数时会将窗口带到窗口栈的最顶层。
+函数的第一行`x.document.close()`用于确保每次调用`newwindow()`函数时数据流都是干净的。脚本最后一行每次调用此函数时会将窗口带到窗口栈的最顶层。
 
-> 警告在此语境下使用的 `Focus()` 方法在 Internet Explorer 3.0 中会导致错误，因为它目前不识别窗口对象的 `Focus()` 方法。然而，此方法在 Internet Explorer 4.0 及更高版本，以及 Netscape Navigator 3.0 及更高版本中运行良好。记住，在为基于 Web 网络编写脚本时，后兼容性始终是一个问题。
-
-
-
+> **警告** 在此语境下使用的`Focus()`方法在 Internet Explorer 3.0 中会导致错误，因为它目前不识别窗口对象的`Focus()`方法。然而，此方法在 Internet Explorer 4.0 及更高版本，以及 Netscape Navigator 3.0 及更高版本中运行良好。记住，在为基于 Web 网络编写脚本时，后兼容性始终是一个问题。
 
 图 11-2 显示了该方法处理列表中第一个项目的结果：面罩托盘（maskhtray）。
 
 ![](img/36826ab6f960cbecb919bb0737cbffa0_326_0.png)
 
-你可以在不将此函数创建为 `productObject` 对象方法的情况下，实现相同的效果。然而，如果你不将函数创建为方法，你就无法像显示的那样使用 `this` 关键字，且调用语句会有所不同。有时将函数写成方法会更快；但有时则不然。选择权交由你决定，但请始终记住，你的方法应该根据具体情况而定。
+你可以在不将此函数创建为`productObject`对象方法的情况下，实现相同的效果。然而，如果你不将函数创建为方法，你就无法像显示的那样使用`this`关键字，且调用语句会有所不同。有时将函数写成方法会更快；但有时则不然。选择权交由你决定，但请始终记住，你的方法应该根据具体情况而定。
 
 在下一节中，你将创建两个不是方法的函数，这些函数将用于以不同的方式操作产品信息。
 
 ## 为你的对象创建函数
 
-方法在单个对象实例上操作，而不是针对所有对象。当你需要评估数组中的多个对象时，你需要一个函数而不是方法。不是方法的函数不会像 `display()` 方法那样被列在对象构造函数中。你将额外创建两个函数来完成你的产品信息页：一个可以搜索 ID 号并返回产品名称的函数，以及一个可以列出所有产品的函数。你将“搜索”函数命名为 `findItem()`，并将显示产品的函数命名为 `showAll()`。
+方法在单个对象实例上操作，而不是针对所有对象。当你需要评估数组中的多个对象时，你需要一个函数而不是方法。不是方法的函数不会像`display()`方法那样被列在对象构造函数中。你将额外创建两个函数来完成你的产品信息页：一个可以搜索 ID 号并返回产品名称的函数，以及一个可以列出所有产品的函数。你将"搜索"函数命名为`findItem()`，并将显示产品的函数命名为`showAll()`。
 
-检查 `findItem()` 函数：
+检查`findItem()`函数：
 
 ```javascript
 function findItem() {
@@ -5920,15 +5487,14 @@ product[i].id==document.prodForm.innerText.value.toLowerCase()) {
     message += "\n\n";
     alert(message);
   } else {
-    var message = "It appears you have entered a
-discontinued ID.\n";
+    var message = "It appears you have entered a discontinued ID.\n";
     message += "Please try again.";
     alert(message);
   }
 }
 ```
 
-如果你回顾了本课程开始时的原始产品数据，你会发现某个物品的 ID 为 H-01。如果你在页面中输入此 ID 并点击“搜索”按钮，你将看到图 11-3 所示的消息。
+如果你回顾了本课程开始时的原始产品数据，你会发现某个物品的 ID 为 H-01。如果你在页面中输入此 ID 并点击"搜索"按钮，你将看到图 11-3 所示的消息。
 
 ![](img/36826ab6f960cbecb919bb0737cbffa0_327_0.png)
 
@@ -5938,50 +5504,49 @@ discontinued ID.\n";
 
 图 11-4：无效输入的搜索结果
 
-现在，创建一个 `showAll()` 函数，它可以打开一个包含每个产品超链接的窗口。你可以看到使用客户端——最终是服务器端数据库的用途。
+现在，创建一个`showAll()`函数，它可以打开一个包含每个产品超链接的窗口。你可以看到使用客户端——最终是服务器端数据库的用途。
 
-点击超链接将调用之前创建的 `displayOne()` 方法。当你向用户提供数据并且你的代码生成了通往深入显示数据的链接时，你允许用户一次仔细关注某项数据。`showAll()` 函数将提供项目名称、材料和价格。当用户点击链接进一步研究数据时，她将看到由 `displayOne()` 方法显示的完整数据。
+点击超链接将调用之前创建的`displayOne()`方法。当你向用户提供数据并且你的代码生成了通往深入显示数据的链接时，你允许用户一次仔细关注某项数据。`showAll()`函数将提供项目名称、材料和价格。当用户点击链接进一步研究数据时，她将看到由`displayOne()`方法显示的完整数据。
 
 ## 检查 showAll() 函数：
 
 ```javascript
 function showAll() {
   content=""
-  content+="<HTML><HEAD><TITLE>All Products</TITLE></HEAD>;
-  content+="<BODY BGCOLOR='#CC9966' TEXT='#330000'>DIV
-ALIGN='center'>
+  content+="<HTML><HEAD><TITLE>All Products</TITLE</HEAD>;
+  content+="<BODY BGCOLOR='#CC9966' TEXT='#330000'>DIV ALIGN='center'>
   content+="<TABLE WIDTH='85%' ORDER='1'>
   content+="<TR TH COLSPAN='3' ALIGN='center'>
   content+="Product Information"
-  content+="<TR><th>Item</th><th>Material</th><th>Price:</th>
+  content+="<TR><th>Item</th><th>Material</th><th>Price</th>
   for (i=0; i<product.length; i++) {
     content+="<td>";
     content+="<A HREF='javascript:window.opener.product[" + i +
-    '\].displayOne(); return false;'>";
+    '].displayOne(); return false;'>";
     content+="product[i].item + "/A>";
     content+="<td>" + product[i].material;
     content+="<td>" + product[i].price;
   }
   content+="</TABLE><FORM>\n  content+="<INPUT TYPE='button' VALUE='OK
 onclick='close();'">";
-  content+="</FORM></div></body></html>";
+  content+="</FORM</div</body</html>";
   fullWindow =
   open("AllWindow","width=450,height=375,scrollbars=1,resizable=1");
   newWindow(fullWindow);
 }
 ```
 
-注意，此代码使用了 `window.opener` 属性来查找执行所需的 JavaScript 代码。该属性在课程早些时候讨论过。
+注意，此代码使用了`window.opener`属性来查找执行所需的 JavaScript 代码。该属性在课程早些时候讨论过。
 
-与你的 `displayOne()` 类似，函数的最后一行调用 `newWindow()` 函数向窗口写入内容。在这种情况下，内容将进入名为 `fullWindow` 的窗口。
+与你的`displayOne()`类似，函数的最后一行调用`newWindow()`函数向窗口写入内容。在这种情况下，内容将进入名为`fullWindow`的窗口。
 
-如你所示，`<A HREF` 标签是由脚本创建的。脚本还创建了指向 `product[i].displayOne()` 的链接，其中 `i` 是当前产品对象的索引数字。如果你查看弹出窗口中的代码，它看起来像下面：
+如你所示，`<A HREF`标签是由脚本创建的。脚本还创建了指向`product[i].displayOne()`的链接，其中`i`是当前产品对象的索引数字。如果你查看弹出窗口中的代码，它看起来像下面：
 
 ```html
 <A HREF='' onclick='window.opener.product[3].displayOne();return false;'>
 ```
 
-`return false` 语句将阻止链接的处理。正常情况下，如果你链接到一个不存在的页面，导航器将会列表，因为它不知道该去哪里。通过添加 `return false` 语句，只有在 `displayOne()` 方法被调用后才会抵消链接的处理。当你点击“显示全部”按钮时，你应该能看到图 11-5 所示的带有链接的窗口。
+`return false`语句将阻止链接的处理。正常情况下，如果你链接到一个不存在的页面，导航器将会列表，因为它不知道该去哪里。通过添加`return false`语句，只有在`displayOne()`方法被调用后才会抵消链接的处理。当你点击"显示全部"按钮时，你应该能看到图 11-5 所示的带有链接的窗口。
 
 ![](img/36826ab6f960cbecb919bb0737cbffa0_330_0.png)
 
@@ -5989,13 +5554,10 @@ onclick='close();'">";
 
 ![](img/36826ab6f960cbecb919bb0737cbffa0_331_0.png)
 
-
-
-
 ```javascript
 content="<INPUT TYPE='button' VALUE='OK'
 onclick="window.close();"
-content+="</FORM><div></body></html>"
+content+="</FORM><div</body</html>"
 oneWindow
 oneWindow = open("Newwindow","width=400,height=240\nnewWindow(oneWindow);
 }
@@ -6015,8 +5577,7 @@ function findItem() {
     message += "\n\n";
     alert(message);
   } else {
-    var message = "It appears you have entered a
-discontinued ID.\n\n";
+    var message = "It appears you have entered a discontinued ID.\n\n";
     message += "Please try again.";
     alert(message);
   }
@@ -6025,22 +5586,21 @@ discontinued ID.\n\n";
 
 ```javascript
 function showAll() {
-  content+="<HTML><HEAD><TITLE>All Products</TITLE></HEAD>"
-  content+="<BODY COLOR='#CC9966' TEXT='#330000'<DIV
-ALIGN="center">\n  content+="<TABLE WIDTH='85%' ORDER='1>
+  content+="<HTML><HEAD><TITLE>All Products</TITLE</HEAD>"
+  content+="<BODY COLOR='#CC9966' TEXT='#330000'<DIV ALIGN="center">\n  content+="<TABLE WIDTH='85%' ORDER='1>
   content+="<TR><TH COLSPAN='3' ALIGN="center">\n  content+="Product Information"
   content+="<TR><Th>Item<Th>Material<Th>Price"
   for (i=0;i<product.length;i++) {
     content+="<TR><td>"
     content+="<A HREF="" onclick="window.opener.product[i +
   ].display(oneWindow); return false;">"
-    content+=product[i].item + "</td><td>"
-    content+=product[i].material + "</td><td>"
-    content+=product[i].price + "</td></tr>"
+    content+=product[i].item +</td><td>"
+    content+=product[i].material +</td><td>"
+    content+=product[i].price +</td</tr>"
   }
   content+="</TABLE><FORM>"
   content+="<INPUT TYPE='button' VALUE='OK'
-onclick="window.close();\n  content+="</FORM><div></body></html>"
+onclick="window.close();\n  content+="</FORM><div</body</html>"
 fullWindow
  = open("Allwindow","width=450,height=375,scrollbars=1,resizable
 =1");
@@ -6050,11 +5610,11 @@ newWindow(fullWindow);
 
 ```javascript
 function newWindow(x) {
-x.document.close();
-x.document.open();
-x.document.write(content);
-x.document.close();
-x.focus();
+  x.document.close();
+  x.document.open();
+  x.document.write(content);
+  x.document.close();
+  x.focus();
 }
 ```
 
@@ -6093,14 +5653,16 @@ Enter Product ID: <INPUT TYPE="text" SIZE="5" NAME="idText">
 <TD>
 <INPUT TYPE="button" VALUE="Search" onclick="findItem();"
 <TR TDSPAN="2" ALIGN="center">
-<FONT COLOR="#0000FF"><B>OR...</B></FONT>
+<FONT COLOR="#0000FF"><B>OR</B</FONT>
 <TR><TDSPAN="2" ALIGN="center">
 <INPUT TYPE="button" VALUE="Show All Products"\onclick="showAll();"
 </TABLE>
 </FORM>
 </BODY>
 </html
-```## 复杂自定义对象
+```
+
+## 复杂自定义对象
 
 在前代码中定义的产品对象被称为简单自定义对象，因为该对象只关联了一层属性和方法。JavaScript 还支持复杂对象。复杂对象是指对象的属性本身也是一个对象，并拥有它自己的属性。
 
@@ -6108,8 +5670,7 @@ Enter Product ID: <INPUT TYPE="text" SIZE="5" NAME="idText">
 
 ```javascript
 //product 构造函数
-function
-productObject(id,item,description,material,price,supplier) {
+function productObject(id,item,description,material,price,supplier) {
   this.id = id;
   this.item = item;
   this.description = description;
@@ -6120,7 +5681,7 @@ productObject(id,item,description,material,price,supplier) {
 }
 ```
 
-在这个示例中，`productObject` 构造函数添加了一个 `supplier` 属性。你可以如下为该属性创建一个构造函数：
+在这个示例中，`productObject`构造函数添加了一个`supplier`属性。你可以如下为该属性创建一个构造函数：
 
 ```javascript
 //supplier 构造函数
@@ -6134,7 +5695,7 @@ function supplier(name,address,city,country,phone,delivery) {
 }
 ```
 
-##  1：自定义 JavaScript 对象
+## 1：自定义 JavaScript 对象
 
 为了进一步推进这一概念，假设供应商信息需要包含运货信息。同样，运货信息是另一组独立的数据。将其构建到供应商对象中是不合理的。因此，delivery 对象可以有自己的构造函数，如下：
 
@@ -6149,7 +5710,7 @@ function delivery(dName, dAddress, dCity, dCountry, dPhone) {
 }
 ```
 
-你可以看到，利用这些原理可以构建复杂的数据集。你可以根据需要使用“属性即对象”的概念。如果需要，对象的每个属性都可以有自己的构造函数。一旦你定义了对象的构造函数，只需要实例化对象即可。再次，数组在实例化方面非常好用。考虑以下代码：
+你可以看到，利用这些原理可以构建复杂的数据集。你可以根据需要使用"属性即对象"的概念。如果需要，对象的每个属性都可以有自己的构造函数。一旦你定义了对象的构造函数，只需要实例化对象即可。再次，数组在实例化方面非常好用。考虑以下代码：
 
 ```javascript
 //添加 delivery
@@ -6190,23 +5751,23 @@ supplierArray[0] = new supplier("Senegal Arts", "City Centre 092", "Dakar", "Sen
 product[0] = new productObject("hf-01", "Mask Ashtray", "ashtray", "wood", "30.00", supplierArray[0]);
 ```
 
-现在，`supplier` 和 `delivery` 对象中的所有数据对 `product` 对象可用。只需要访问信息的正确语法。为了访问数据必须创建的对象层次结构。例如，为了获取运货人的电话，脚本中将包含类似下面的语句：
+现在，`supplier`和`delivery`对象中的所有数据对`product`对象可用。只需要访问信息的正确语法。为了访问数据必须创建的对象层次结构。例如，为了获取运货人的电话，脚本中将包含类似下面的语句：
 
 ```javascript
 this.supplier.delivery.dPhone
 ```
 
-记得在执行时关键字 `this` 会被替换为 `product[index]`。因此前面的语句实际上如下：
+记得在执行时关键字`this`会被替换为`product[index]`。因此前面的语句实际上如下：
 
 ```javascript
 product[0].supplier.delivery.dPhone;
 ```
 
-你可以看到，使用点符号来遵循由“属性即对象”概念建立的层次结构。
+你可以看到，使用点符号来遵循由"属性即对象"概念建立的层次结构。
 
 ## 第 11 Lesson：自定义 JavaScript 对象
 
-随附书籍的光盘提供了一个复杂对象的示例。它被称为 `cInventoryList.htm`，可以在练习解决方案文件夹中找到。`cInventoryList.htm` 文件包含了若干改进。例如，它包含一个在主文档接收焦点时关闭任何窗口的函数。仔细检查代码以确定如何实现这种窗口关闭。以下是示例代码：
+随附书籍的光盘提供了一个复杂对象的示例。它被称为`cInventoryList.htm`，可以在练习解决方案文件夹中找到。`cInventoryList.htm`文件包含了若干改进。例如，它包含一个在主文档接收焦点时关闭任何窗口的函数。仔细检查代码以确定如何实现这种窗口关闭。以下是示例代码：
 
 ```html
 <HTML>
@@ -6224,17 +5785,16 @@ var suppWindowStatus = false;
 var fullWindowStatus = false;
 
 function closeAllWindows() {
-if((oneWindowStatus) && (oneWindow.closed))
-oneWindow.close();
-if((suppWindowStatus) && (!suppWindow.closed))
-suppWindow.close();
-if((fullWindowStatus) && (!fullWindow.closed))
-fullWindow.close();
-oneWindowStatus = false;
-suppWindowStatus = false;
-fullWindowStatus = false;
+  if((oneWindowStatus) && (oneWindow.closed))
+    oneWindow.close();
+  if((suppWindowStatus) && (!suppWindow.closed))
+    suppWindow.close();
+  if((fullWindowStatus) && (!fullWindow.closed))
+    fullWindow.close();
+  oneWindowStatus = false;
+  suppWindowStatus = false;
+  fullWindowStatus = false;
 }
-```
 ```
 
 ```javascript
@@ -6245,11 +5805,11 @@ this.delivery = delivery;
 ```javascript
 //delivery 构造函数
 function delivery(dName, dAddress, dCity, dCountry, dPhone) {
-this.dName = dName;
-this.dAddress = dAddress;
-this.dCity = dCity;
-this.dCountry = dCountry;
-this.phone = dPhone;
+  this.dName = dName;
+  this.dAddress = dAddress;
+  this.dCity = dCity;
+  this.dCountry = dCountry;
+  this.phone = dPhone;
 }
 ```
 
@@ -6303,10 +5863,6 @@ product[20] = new productObject("is-02", "Burkina Djembe", "Senegal djembe", "wo
 product[21] = new productObject("is-03", "Sabar Drums", "Senegal drum", "wood", "$850.00",supplierArray[0]);
 ```
 
-
-
-
-
 ## 第 11 课：自定义 JavaScript 对象
 
 ```html
@@ -6324,7 +5880,7 @@ Enter Product Name: <INPUT TYPE="text" SIZE=15>
 <TD>
 <INPUT TYPE="button" VALUE="Search Suppliers" onclick="findSupplier('')">
 <TR><TD COLSPAN="2" ALIGN="center">
-<FONT COLOR="#0000ff"><OR...</FONT>
+<FONT COLOR="#0000ff"><OR</FONT>
 <TR><TD COLSPAN="2" ALIGN="center">
 <INPUT TYPE="button" VALUE="Show All Products" onclick="showAll('')">
 <TABLE>
@@ -6383,7 +5939,9 @@ Netscape Navigator 和 Microsoft Internet Explorer 之间的 JavaScript 解释�
 
 看到消息后，在地址字段中输入以下字符串：
 
+```
 javascript:
+```
 
 确保包含地址字段中的文本，你将看到一个类似于图 A-3 的窗口。
 
@@ -6426,11 +5984,11 @@ Internet Explorer 生成的消息与 Navigator 2.0 到 4.0 中找到的消息非
 
 接下来的章节将详细检查这些每一个类别。你还将回顾一些可以用于跟踪错误的技巧。
 
-HTML 错误
+### HTML 错误
 
-JavaScript 对 HTML 的问题会有负面反应。即使你的代码写得很好，这些错误也会影响代码的性能。例如，假设你使用表单按钮来调用 JavaScript 函数，但忘记使用 `<FORM>` 标签。如果你不确定 HTML 代码的正确语法，请参考 HTML 3.2 和 4.0（附录 C 和 D）。
+JavaScript 对 HTML 的问题会有负面反应。即使你的代码写得很好，这些错误也会影响代码的性能。例如，假设你使用表单按钮来调用 JavaScript 函数，但忘记使用`<FORM>`标签。如果你不确定 HTML 代码的正确语法，请参考 HTML 3.2 和 4.0（附录 C 和 D）。
 
-语法错误
+### 语法错误
 
 当你产生语法错误时，JavaScript 解释器会自动标记。此类错误包括未关闭的引号、使用不当的大小写、遗漏括号等。
 
@@ -6442,11 +6000,7 @@ JavaScript 对 HTML 的问题会有负面反应。即使你的代码写得很好
 
 图 A-8：JavaScript 错误消息
 
-在 Navigator 4.0 生成的这条错误消息中，注意指向括号字符的 ........ 符号。如果你不阅读整条消息，你可能会错误地认为在该字符上发生了问题。然而，如果你阅读了错误错误之前的文本（它正确地说明了问题），你就不会被误导。在前面一个图的案例中，消息提醒你 `=` 是赋值符号，而不是逻辑相等比较测试的符号，而本应该使用 `==`。
-
-
-
-
+在 Navigator 4.0 生成的这条错误消息中，注意指向括号字符的 ........ 符号。如果你不阅读整条消息，你可能会错误地认为在该字符上发生了问题。然而，如果你阅读了错误错误之前的文本（它正确地说明了问题），你就不会被误导。在前面一个图的案例中，消息提醒你`=`是赋值符号，而不是逻辑相等比较测试的符号，而本应该使用`==`。
 
 这些消息可能很难关闭。例如，如果 OK 按钮不可见，请使用滚动条调整消息，如图 A-9 所示。
 
@@ -6454,7 +6008,7 @@ JavaScript 对 HTML 的问题会有负面反应。即使你的代码写得很好
 
 图 A-9：滚动错误消息以显示 OK 按钮
 
-# 运行时错误
+## 运行时错误
 
 你可能编写了一段合法的代码，但它仍然会产生错误。一个常见的例子是除以零错误。在数学上（以及在编程中），将任何数字除以零是不可能的。如果你的脚本调用了此操作，你将收到运行时错误消息。如果除数从未为零，则相同的脚本不会产生错误。
 
@@ -6469,9 +6023,9 @@ JavaScript 对 HTML 的问题会有负面反应。即使你的代码写得很好
 <SCRIPT>
 <!--
 function getNumbers(){
-var number1 = prompt("Please enter a number: ", "");
-var number2 = prompt("Please enter another number: ", "");
-alert("You entered these numbers:\n" + number1 + " " + number2);
+  var number1 = prompt("Please enter a number: ", "");
+  var number2 = prompt("Please enter another number: ", "");
+  alert("You entered these numbers:\n" + number1 + " " + number2);
 }
 -->
 </SCRIPT>
@@ -6484,7 +6038,7 @@ alert("You entered these numbers:\n" + number1 + " " + number2);
 </html
 ```
 
-# 附录-11
+## 附录-11
 
 虽然脚本编写正确且表单按钮使用了有效的语法调用函数，但脚本中的函数名称与按钮调用的函数名称不匹配。这种差异会导致生成错误，如图 A-10 所示。
 
@@ -6492,13 +6046,13 @@ alert("You entered these numbers:\n" + number1 + " " + number2);
 
 图 A-10：运行时错误
 
-不明显的问题是不会立即出现的问题。例如，假设你正在除以一个随机数。JavaScript 创建随机数，值从零到一不等。你的脚本在大多数时候都能运行良好，但在生成的随机数为零的情况下，你将收到错误。你应该设置特殊测试（使用 if 语句或其他适当程序）来规避此类潜在问题。
+不明显的问题是不会立即出现的问题。例如，假设你正在除以一个随机数。JavaScript 创建随机数，值从零到一不等。你的脚本在大多数时候都能运行良好，但在生成的随机数为零的情况下，你将收到错误。你应该设置特殊测试（使用`if`语句或其他适当程序）来规避此类潜在问题。
 
 © 2000 ProsoftTraining.com 版权所有。
 
 版本 3.17
 
-# 逻辑错误
+## 逻辑错误
 
 逻辑错误是指导致脚本返回非预期结果的错误。例如，如果你编写了一个旨在打开新窗口并将背景设置为蓝色的脚本，但新窗口以粉色背景出现，那么你在代码逻辑上犯了错误。
 
@@ -6506,47 +6060,42 @@ alert("You entered these numbers:\n" + number1 + " " + number2);
 
 防止此类错误的唯一方法是绝对明确脚本的预期功能，然后仔细检查脚本的每个部分，以确保所有语句都编写正确。在脚本结束处，验证你是否收到了预期的结果。如果你的脚本涉及决策分支，输入数据强制脚本进入一个分支，然后是下一个分支，直到脚本的所有部分都执行完毕。
 
-# 真正的漏洞
+## 真正的漏洞
 
-任何操作系统、应用程序或语言都会存在已知的问题或“漏洞”，这些问题会阻止代码按照预期方式运行。通过关注新闻组讨论、阅读行业出版物以及查看主要供应商网站的每日新闻来跟进此类问题。
+任何操作系统、应用程序或语言都会存在已知的问题或"漏洞"，这些问题会阻止代码按照预期方式运行。通过关注新闻组讨论、阅读行业出版物以及查看主要供应商网站的每日新闻来跟进此类问题。
 
-# 调试代码的步骤
+## 调试代码的步骤
 
 当你遇到调试代码的困难时，请遵循此处提供的步骤。如果你遵循这些步骤并仔细观察，你将能够发现并可能解决代码中的每个错误。
 
 - 1. 从检查 HTML 开始。
-    - 检查你的结构标签 (<HTML>, <TITLE>, <HEAD>, <BODY> 等)。
-    - 检查你的 <SCRIPT> 标签。确保它们已正确打开和关闭。确保你也正确地打开和关闭了注释标签。
-- 2. 使用 alert 消息在脚本中设置节点。你可以使用它们来测试脚本在遇到问题之前的运行情况。你还可以使用 alert 消息显示整个脚本中变量的内容，以便查看变量的内容是否正确。
-- 3. 如果你有大量代码，使用 JavaScript 注释符号防止大段代码执行，以努力定位问题。你可以使用 /* 开始多行注释块，并用 */ 结束。在执行脚本时，/* 和 */ 之间的任何代码都会被忽略。对于单行代码，请使用 //。
-- 4. 了解该语言。如果你不熟悉 JavaScript，将很难确定问题。如果你不确定语言中任何部分的用法，请学习 Netscape 网站上的官方 JavaScript 参考页面。1.2 规范的 URL 为 http://developer.netscape.com/docs/manuals/communicator/jsguide4/index.htm。如果你想找到 JavaScript 1.1 规范，请咨询以下 URL：http://home.netscape.com/eng/mozilla/3/handbook/javascript/。关于建议的 1.3 标准的信息可以在 developer.netscape.com 找到。
+    - 检查你的结构标签（`<HTML>`, `<TITLE>`, `<HEAD>`, `<BODY>`等）。
+    - 检查你的`<SCRIPT>`标签。确保它们已正确打开和关闭。确保你也正确地打开和关闭了注释标签。
+- 2. 使用`alert`消息在脚本中设置节点。你可以使用它们来测试脚本在遇到问题之前的运行情况。你还可以使用`alert`消息显示整个脚本中变量的内容，以便查看变量的内容是否正确。
+- 3. 如果你有大量代码，使用 JavaScript 注释符号防止大段代码执行，以努力定位问题。你可以使用`/*`开始多行注释块，并用`*/`结束。在执行脚本时，`/*`和`*/`之间的任何代码都会被忽略。对于单行代码，请使用`//`。
+- 4. 了解该语言。如果你不熟悉 JavaScript，将很难确定问题。如果你不确定语言中任何部分的用法，请学习 Netscape 网站上的官方 JavaScript 参考页面。1.2 规范的 URL 为`http://developer.netscape.com/docs/manuals/communicator/jsguide4/index.htm`。如果你想找到 JavaScript 1.1 规范，请咨询以下 URL：`http://home.netscape.com/eng/mozilla/3/handbook/javascript/`。关于建议的 1.3 标准的信息可以在`developer.netscape.com`找到。
 - 5. [文本根据 OCR 截断/不完整]
 - 6. [文本根据 OCR 截断/不完整]
 - 7. [文本根据 OCR 截断/不完整]
 
 如果你遵循这些步骤并仔细观察，你将能够发现并可能解决代码中的每个错误。
 
-# 调试与测试代码
+## 调试与测试代码
 
 调试是学习错误发生原因的过程。很难完全预测他人的反应。因此，如果可行，请让其他人测试你的代码。通过这样做，你可能会发现自己没有想到的问题。
 
-
-
-
-
-# 声明和初始化变量
+## 声明和初始化变量
 
 正如你在课程中反复看到的，JavaScript 并不要求在运行变量之前声明它。然而，这样做被认为是一种良好的编程习惯。这样，任何查看你脚本的人从从开始就知道哪些单词代表变量。如果你在声明变量时对其进行初始化，那么查看你脚本的人就能立即知道它们可能包含什么类型的数据。
 
-# 保持单个字符串的短小
+## 保持单个字符串的短小
 
 有时你会使用一个变量来存储大量内容。如果是这样，请尝试将拼接过程拆分到多个语句。考虑以下示例：
 
-```
+```javascript
 menuDescription = "This restaurant serves delicious Cajun catfish,
 surrounded by spicy garlic potatoes with green beans and sweet white
 corn.",
-
 menuDescription = "This restaurant serves "
 menuDescription += "delicious Cajun catfish, surrounded by "
 menuDescription += "spicy garlic potatoes with green beans "
@@ -6555,44 +6104,44 @@ menuDescription += "and sweet white corn."
 
 该语句可以按如下方式分段编写：
 
-# 预判错误
+## 预判错误
 
-在你的代码中直接构建错误捕获方法。例如，如果你正在执行除法，请检查用于除数的数字以判断它是否为零，如果是，则处理该问题（因为除以零肯定会产生错误）。为了练习，请打开辅助光盘中的 `errorcity.htm` 文件。检查此文件并修复错误。如果你有任何问题，请咨询练习解决方案附录并查看修正后的 `errorcity.htm` 文件。
+在你的代码中直接构建错误捕获方法。例如，如果你正在执行除法，请检查用于除数的数字以判断它是否为零，如果是，则处理该问题（因为除以零肯定会产生错误）。为了练习，请打开辅助光盘中的`errorcity.htm`文件。检查此文件并修复错误。如果你有任何问题，请咨询练习解决方案附录并查看修正后的`errorcity.htm`文件。
 
-# 附录 B：JavaScript 与活动内容
+## 附录 B：JavaScript 与活动内容
 
 你可以使用 JavaScript 来操作和自定义某些 Java applet 和 ActiveX 控制。在本附录中，你将学习如何使用 JavaScript 处理动态内容。
 
-## Java Applets
+### Java Applets
 
 Java applets 是用 Java 语言编写的程序，专门设计用于在 Web 浏览器中运行。Applets 之前引入程序对象的第一项技术。Applets 和 ActiveX 控制都增加了交互性，并提供了对数据库和多媒体服务的访问。
 
 Applets 由你的浏览器运行。你必须拥有支持 Java 的浏览器才能运行 Java applets。Navigator（3.0 及更高）和 Internet Explorer（3.0 及更高）都支持 Java applets。
 
-## 对象与安全问题
+### 对象与安全问题
 
 在开始处理下载的活动内容（如 applet 和 ActiveX 对象）之前，你需要熟悉相关的安全问题，并学习保护自己免受敌意入侵。
 
-Applets 和 ActiveX 都允许信息在你的系统上“运行”。某些 applet 和 ActiveX 控制可能会导致不便或数据丢失。开发者创建了恶意的 applet 和 ActiveX 控制来展示这两种技术的安全漏洞。你不太可能无意中浏览带有恶意 applet 或 ActiveX 控制的页面，因为大多数都贴有清晰的标签，且仅作为这种可能危险技术的演示。
+Applets 和 ActiveX 都允许信息在你的系统上"运行"。某些 applet 和 ActiveX 控制可能会导致不便或数据丢失。开发者创建了恶意的 applet 和 ActiveX 控制来展示这两种技术的安全漏洞。你不太可能无意中浏览带有恶意 applet 或 ActiveX 控制的页面，因为大多数都贴有清晰的标签，且仅作为这种可能危险技术的演示。
 
 你可以保护你的系统免受此类入侵。例如，Internet Explorer 和 Navigator 都提供了控制选项，可以启用或禁用 Java 程序的处理。
 
-# 活动内容与 <OBJECT> 标签
+### 活动内容与 `<OBJECT>` 标签
 
-每当你插入活动内容时，应该使用 `<OBJECT>` 标签。你也可以使用 `<APPLET>`，但 `<OBJECT>` 符合 HTML 4.0 标准。例如，如果你要插入 ActiveX 控制，将对 `<OBJECT>` 使用以下语法：
+每当你插入活动内容时，应该使用`<OBJECT>`标签。你也可以使用`<APPLET>`，但`<OBJECT>`符合 HTML 4.0 标准。例如，如果你要插入 ActiveX 控制，将对`<OBJECT>`使用以下语法：
 
-```
+```html
 <OBJECT ID="IELabel1" WIDTH=140 HEIGHT=39
 CLASSID="CLSID:99B42120-66C7-11CF-A6C7-00AA00A47DD2">
 ```
 
-正如你所看到的，你也使用 `<OBJECT>` 将活动对象插入 HTML 页面。
+正如你所看到的，你也使用`<OBJECT>`将活动对象插入 HTML 页面。
 
-# 带有 JavaScript 的 ActiveX 参数
+### 带有 JavaScript 的 ActiveX 参数
 
-以下是一个 ActiveX 控制的 `<OBJECT>` 起始和结束标签之间的代码示例。该代码包含大量可自定义参数，以 `<PARAM>` 标签的形式输入：
+以下是一个 ActiveX 控制的`<OBJECT>`起始和结束标签之间的代码示例。该代码包含大量可自定义参数，以`<PARAM>`标签的形式输入：
 
-```
+```html
 <PARAM NAME="ExtentX" VALUE="3625">
 <PARAM NAME="ExtentY" VALUE="1005">
 <PARAM NAME="Caption" VALUE="88:88 pm">
@@ -6613,29 +6162,31 @@ CLASSID="CLSID:99B42120-66C7-11CF-A6C7-00AA00A47DD2">
 <PARAM NAME="BotPoints" VALUE="0">
 ```
 
-PARAM 是 parameter 的缩写。你可以使用 JavaScript 来帮助设置这些参数，这些参数是对象可自定义元素的属性设置。NAME 表示每个属性的名称。VALUE 表示每个项目的可接受值。其中某些值是可以直观识别的，例如 `FontName` 和 `Arial` 值。任何使用 Windows 的人都能识别出 Arial 是系统可用字体之一。
+PARAM 是 parameter 的缩写。你可以使用 JavaScript 来帮助设置这些参数，这些参数是对象可自定义元素的属性设置。NAME 表示每个属性的名称。VALUE 表示每个项目的可接受值。其中某些值是可以直观识别的，例如`FontName`和`Arial`值。任何使用 Windows 的人都能识别出 Arial 是系统可用字体之一。
 
-其他值并不那么明显。零表示属性的设置为 false（假）。注意 `FontItalic`、`FontBold` 和 `FontUnderline` 都设置为零，这意味着字体将不会加粗、斜体或下划线。如果你想让 `FontBold` 属性为 true 而不是 false，你可以输入值 1 来表示真状态。
+其他值并不那么明显。零表示属性的设置为 false（假）。注意`FontItalic`、`FontBold`和`FontUnderline`都设置为零，这意味着字体将不会加粗、斜体或下划线。如果你想让`FontBold`属性为 true 而不是 false，你可以输入值 1 来表示真状态。
 
-# JavaScript Applets：LiveConnect
+### JavaScript Applets：LiveConnect
 
 并不是所有的 applet 都可以被操作。并不是所有的 applet 都可以通过脚本操作。为了引用被 Internet Explorer 和 Netscape Navigator 识别的 applet，你必须使用 applet 的名称。Navigator 也允许你通过名称引用 applet。然而，Internet Explorer 不识别 applet 对象，因此你应该按照如下方式引用 applet 的方法：
 
-```
+```javascript
 document.appletName.method()
 ```
 
 在当前示例中，语法如下：
 
-```
+```javascript
 document.myApplet.setBgColor("black")
 ```
 
-附录 C：HTML 3.2 元素与属性
 
-本附录列出了 W3C HTML 3.2get正式包含的元素和属性。
 
-表 C-1：HTML 3.2 元素和属性
+# 附录 C：HTML 3.2 元素与属性
+
+本附录列出了 W3C HTML 3.2 正式包含的元素和属性。
+
+## 表 C-1：HTML 3.2 元素和属性
 
 | 元素 | 属性 | 结束标签 | 描述 |
 |---|---|---|---|
@@ -6647,23 +6198,13 @@ document.myApplet.setBgColor("black")
 | BASE | HREF | (F)<BASE> | 文档基础 URL。 |
 | BASEFONT | SIZE | (F)<BASEFONT> | 基础字体大小。 |
 | BIG | | (R)<BIG></BIG> | 创建大号文本。 |
-
-
-
-
-
-# 表 C-1: HTML 3.2 元素和属性（续）
-
-| 元素 | 属性 | 结束标签 | 描述 |
-| --- | --- | --- | --- |
-| | | (R) 必须 (F) 禁止 (O) 可选 | |
 | BLOCKQUOTE | | (R) <BLOCKQUOTE></BLOCKQUOTE> | 文本缩进；适用于长段引用。 |
 | BODY | BACKGROUND, BGCOLOR, TEXT, LINK, VLINK, ALINK | (O) <BODY> </BODY> | 包含 HTML 文档的主体。 |
 | BR | CLEAR | (F) <BR> | 创建不带空格的强制换行。 |
 | CAPTION | ALIGN | (R) <CAPTION></CAPTION> | 创建表格或图片的标题。 |
 | CENTER | | (R) <CENTER></CENTER> | 常用于代替标准的 `<DIV align="center">` 标签。 |
 | CITE | | (R) <CITE></CITE> | 用于引用作品或标题的引用样式。 |
-| CODE | | (R) CODE </CODE> | 用于引用计算机代码字符串。 |
+| CODE | | (R) <CODE></CODE> | 用于引用计算机代码字符串。 |
 | DD | | (O) <DD></DD> | 定义描述；指定 DL 定义项。 |
 | DFN | | (R) <DFN></DFN> | 所含文本的定义实例。 |
 | DIR | COMPACT | (R) <DIR></DIR> | 用于目录列表。 |
@@ -6682,8 +6223,8 @@ document.myApplet.setBgColor("black")
 | H6 | ALIGN | (R) <H6></H6> | 六级标题。 |
 | HEAD | | (O) <HEAD></HEAD> | 包含文档头部。HEAD 可以包含以下任何元素：TITLE, STYLE, SCRIPT, INDEX, BASE, META, LINK。 |
 | HR | ALIGN, NOSHADE, SIZE, WIDTH | (F) <HR> | 水平线。 |
-| HTML | VERSION | (R) <HTML></HTML> | 标识文档为 HTML。（注：在实践中，你可以省略 HTML 标签而改用 `!DOCTYPE` 声明。） |
-| I | | (R) <i> </i> | 创建斜体样式文本。 |
+| HTML | VERSION | (R) <HTML></HTML> | 标识文档为 HTML。（注：在实践中，你可以省略 HTML 标签而改用 `<!DOCTYPE>` 声明。） |
+| I | | (R) <I></I> | 创建斜体样式文本。 |
 | IMG | SRC, ALT, ALIGN, HEIGHT, WIDTH, BORDER, HSPACE, VSPACE, ISMAP | (F) <IMG> | 插入图像。 |
 | INPUT TYPE=text | TYPE, NAME, VALUE, SIZE, MAXLENGTH | (F) <INPUT> | 定义文本字段输入。 |
 | INPUT TYPE=password | TYPE, NAME, VALUE, SIZE, MAXLENGTH | (F) <INPUT> | 定义一个文本字段，其中输入的任何文本都会被星号掩盖。 |
@@ -6708,52 +6249,40 @@ document.myApplet.setBgColor("black")
 | PRE | WIDTH | (R) <PRE></PRE> | 预格式文本。 |
 | SAMP | | (R) <SAMP></SAMP> | 代码示例。 |
 | SCRIPT | | (R) <SCRIPT></SCRIPT> | 脚本块，如 JavaScript。 |
-| SELECT | NAME, SIZE, MULTIPLE | (R) <SELECT></SELECT> 下拉列表。 |
+| SELECT | NAME, SIZE, MULTIPLE | (R) <SELECT></SELECT> | 下拉列表。 |
 | SMALL | | (R) <SMALL></SMALL> | 小字体。 |
 | STRIKE | | (R) <STRIKE></STRIKE> | 删除线文本。 |
 | STRONG | | (R) <STRONG></STRONG> | 强调（类似于粗体）。 |
-| STYLE | | (R) <STYLE></STYLE> 样式表。 |
-| SUB | (R) <SUB></SUB> | 下标。 |
-| SUP | (R) <SUP></SUP> | 上标。 |
+| STYLE | | (R) <STYLE></STYLE> | 样式表。 |
+| SUB | | (R) <SUB></SUB> | 下标。 |
+| SUP | | (R) <SUP></SUP> | 上标。 |
 | TABLE | ALIGN, BORDER, CELLSPACING, CELLPADDING | (R) <TABLE></TABLE> | 创建表格。 |
-| TD | NOWRAP, ROWSPAN, COLSPAN, ALIGN, VALIDIGN, WIDTH | (O) <TD></TD> 插入表格单元格。 |
-| TEXTAREA | NAME, COLS | (R) <TEXTAREA></TEXTAREA> 多行文本字段。 |
-| TH | NOWRAP, ROWSPAN, COLSPAN, ALIGN, VALIDIGN, WIDTH | (O) <TH></TH> 表格头单元格。 |
-| TITLE | | (R) <TITLE></TITLE> 指定文档标题。 |
-| TR | ALIGN, VALIGN | (O) <TR></TR> 定义表格行。 |
-| TT | | (R) <TT></TT> 打字机字体。 |
-| U | | (R) <u> </u> 下划线文本样式。 |
-| UL | TYPE, COMPACT | (R) <UL></UL> 创建无序列表。 |
-
- |
+| TD | NOWRAP, ROWSPAN, COLSPAN, ALIGN, VALIDIGN, WIDTH | (O) <TD></TD> | 插入表格单元格。 |
+| TEXTAREA | NAME, COLS | (R) <TEXTAREA></TEXTAREA> | 多行文本字段。 |
+| TH | NOWRAP, ROWSPAN, COLSPAN, ALIGN, VALIDIGN, WIDTH | (O) <TH></TH> | 表格头单元格。 |
+| TITLE | | (R) <TITLE></TITLE> | 指定文档标题。 |
+| TR | ALIGN, VALIGN | (O) <TR></TR> | 定义表格行。 |
+| TT | | (R) <TT></TT> | 打字机字体。 |
+| U | | (R) <U></U> | 下划线文本样式。 |
+| UL | TYPE, COMPACT | (R) <UL></UL> | 创建无序列表。 |
 
 # 附录 D：HTML 4.0 元素和属性
 
 此附录列出了 W3C HTML 4.0 建议包含的元素和属性。
 
-表 D-1：HTML 4.0 元素和属性
+## 表 D-1：HTML 4.0 元素和属性
 
 | 元素 | 属性 | 结束标签 | 描述 |
 | --- | --- | --- | --- |
 | A | ACCESSKEY, CHARSET, CLASS, COORDS, DIR, HREF, ID, LANG, NAME, ONBLUR, ONCLICK, ONDBLICK, ONKEYDOWN, KEYPRESS, ONMOUSEUSEDOWN, ONMOUSEMOVE, ONMOUSEOUT, ONMOUSEOVER, ONMOUSEUP, REL, REV, STYLE, TABINDEX, TARGET, TITLE | (R) <a> | 锚点标签；用于超文本链接。 |
 | ABBR | CLASS, DIR, ID, LANG, ONCLICK, ONDBLICK, ONKEYDOWN, KEYPRESS, ONMOUSEUSEDOWN, ONMOUSEMOVE, ONMOUSEOUT, ONMOUSEOVER, ONMOUSEUP, STYLE, TITLE | (R) <ABBR></ABBR> | 用于表示缩写。 |
 | ACRONYM | CLASS, DIR, ID, LANG, ONCLICK, ONDBLICK, ONKEYDOWN, KEYPRESS, ONMOUSEUSEDOWN, ONMOUSEMOVE, ONMOUSEOUT, ONMOUSEOVER, ONMOUSEUP, STYLE, TITLE | (R) <ACRONYM></ACRONYM> | 标识缩写词，例如 POTS、WAN 等。 |
-
-
-
-
-
-## 表 D-1: HTML 4.0 元素和属性（续）
-
-| 元素 | 属性 | 结束标签 | 描述 |
-| --- | --- | --- | --- |
-| | | (R) 强制 (F) 禁止 (O) 可选 | |
 | APPLET | ARCHIVE, CLASS, CODE, CODEBASE, HEIGHT, HSPACE, ID, NAME, OBJECT, STYLE, TITLE, VSPACE, WIDTH | (R) <APPLET></APPLET> | 用于嵌入 Java applet。可以包含 PARAM 元素。注意：W3C 已弃用此元素。 |
 | AREA | ACCESSKEY, ALT, COORD, DIR, HREF, LANG, NOHREF, ONBLUR, ONCLICK, ODBCCLICK, ONFOCUS, ONKEYDOWN, ONKEYPRESS, ONKEYUP, ONMOUSEDOWN, ONMOUSEMOVE, ONMOUSEOUT, ONMOUSEOVER, ONMOUSEUP, STYLE, TABINDEX, TARGET | (F) <AREA> | 识别图像映射的区域。 |
 | B | CLASS, DIR, ID, LANG, TITLE, ONCLICK, ODBCCLICK, ONKEYDOWN, ONKEYPRESS, ONKEYUP, ONMOUSEDOWN, ONMOUSEMOVE, ONMOUSEOUT, ONMOUSEOVER, ONMOUSEUP | (R) <B></B> | 创建粗体文本。 |
 | BASE | HREF | (F) <BASE> | 文档基础 URL。 |
 | BASEFONT | COLOR, FACE, ID, LANG, SIZE | (R) <BASEFONT></BASEFONT> | 基础字体大小。 |
-| BDO | CLASS, DIR, ID, LANG, STYLE, TITLE | ONCLICK, ODBCCLICK, ONKEYDOWN, ONKEYPRESS, ONKEYUP, ONMOUSEDOWN, ONMOUSEMOVE, ONMOUSEOUT, ONMOUSEOVER, ONMOUSEUP | (R) <BDO></BDO> | 覆盖浏览器中的双向算法。 |
+| BDO | CLASS, DIR, ID, LANG, STYLE, TITLE, ONCLICK, ODBCCLICK, ONKEYDOWN, ONKEYPRESS, ONKEYUP, ONMOUSEDOWN, ONMOUSEMOVE, ONMOUSEOUT, ONMOUSEOVER, ONMOUSEUP | (R) <BDO></BDO> | 覆盖浏览器中的双向算法。 |
 | BIG | CLASS, DIR, ID, LANG, STYLE, TITLE, ONCLICK, ODBCCLICK, ONKEYDOWN, ONKEYPRESS, ONKEYUP, ONMOUSEDOWN, ONMOUSEMOVE, ONMOUSEOUT, ONMOUSEOVER, ONMOUSEUP | (R) <BIG></BIG> | 创建大号文本。 |
 | BLOCKQUOTE | CITE, CLASS, ID, LANG, DIR, ONCLICK, ONDBCLICK, ONKEYDOWN, ONKEYPRESS, ONMOUSEDOWN, ONMOUSEOUT, ONMOUSEVER, ONMOUSEUP, STYLE, TITLE | (R) <BLOCKQUOTE> | 文本缩进；适用于长引用。 |
 | BODY | CLASS, ID, DIR, ONCLICK, ONDBCLICK, ONKEYDOWN, ONKEYPRESS, ONKEYUP, ONLOAD, ONMOUSEDOWN, ONMOUSEOUT, ONMOUSEVER, ONMOUSEUP, UNLOAD, STYLE, TITLE | (O) </BODY> | 封装 HTML 文档的主体。 |
@@ -6786,130 +6315,66 @@ document.myApplet.setBgColor("black")
 | H6 | ALIGN, CLASS, DIR, ID, LANG, ONCLICK, ODBCBLCLICK, ONKEYDOWN, ONKEYUP, ONMOUSEDOWN, ONMOUSEOUT, ONMOUSEOVER, ONMOUSEUP, STYLE, TITLE | (R) <H6></H6> | 六级标题。 |
 | HEAD | DIR, LANG, PROFILE | (O) <HEAD></HEAD> | 封装文档头部。 |
 | HR | ALIGN, CLASS, ID, NOSHADE, ONCLICK, ODBCBLCLICK, ONKEYDOWN, ONKEYUP, ONMOUSEDOWN, ONMOUSEMOVE, ONMOUSEOUT, ONMOUSEOVER, ONMOUSEUP, SIZE, STYLE, TITLE, WIDTH | (F) <HR> | 水平线。 |
-
-
-
-
-
-# 表 D-1：HTML 4.0 元素和属性（续）
-
-| 元素 | 属性 | 描述 |
-| --- | --- | --- |
-| HTML | DIR, LANG, VERSION | (O) <HTML> </HTML> 标识文档为 HTML。 |
-| I | CLASS, DIR, ID, LANG, ONCLICK, DBBLCLICK, ONKEYDOWN, ONKEYPRESS, ONKEYUP, ONMOUSEDOWN, ONMOUSEMOVE, ONMOUSEOUT, ONMOUSEOVER, ONMOUSEUP, STYLE, TITLE | (R) <I> </I> 定义斜体文本。 |
-| IFRAME | ALIGN, CLASS, BORDER, HEIGHT, ID, LONGDESC, MARGINHEIGHT, MARGINWIDTH, NAME, SCROLLING, SRC, TITLE, WIDTH | (R) <IFRAME> </IFRAME> 定义浮框。 |
-| IMG | ALT, BORDER, CLASS, HEIGHT, ID, ISMAP, LONGDESC, ONCLICK, ONKEYDOWN, ONKEYPRESS, ONKEYUP, ONMOUSEDOWN, ONMOUSEMOVE, ONMOUSEOUT, ONMOUSEOVER, ONMOUSEUP, STYLE, TITLE, USEP, SPACE, WIDTH | (F) <img> 插入图像。 |
-| INPUT TYPE=button | ACCESSKEY, CLASS, DIR, DISABLED, ID, NAME, ONBLUR, ONCHANGE, ONCLICK, DBBLCLICK, ONFOCUS, ONKEYDOWN, ONKEYPRESS, ONKEYUP, ONMOUSEDOWN, ONMOUSEMOVE, ONMOUSEOUT, ONMOUSEOVER, ONMOUSEUP, ONSELECT, READONLY, SIZE, STYLE, TABINDEX, TYPE, VALUE | (F) <INPUT> 定义按钮。 |
-| INPUT TYPE=checkbox | ACCESSKEY, CHECKED, CLASS, DISABLED, ID, NAME, ONBLUR, ONCHANGE, ONCLICK, DBBLCLICK, ONFOCUS, ONKEYDOWN, ONKEYPRESS, ONKEYUP, ONMOUSEDOWN, ONMOUSEMOVE, ONMOUSEOUT, ONMOUSEOVER, ONMOUSEUP, ONSELECT, READONLY, STYLE, TABINDEX, TITLE, TYPE, VALUE | (F) <INPUT> 定义复选框。 |
-
-# 附录 - 36
-
-# 表 D-1：HTML 4.0 元素和属性（续）
-
-| 元素 | 属性 | 结束标签 | 描述 |
-| --- | --- | --- | --- |
+| HTML | DIR, LANG, VERSION | (O) <HTML> </HTML> | 标识文档为 HTML。 |
+| I | CLASS, DIR, ID, LANG, ONCLICK, DBBLCLICK, ONKEYDOWN, ONKEYPRESS, ONKEYUP, ONMOUSEDOWN, ONMOUSEMOVE, ONMOUSEOUT, ONMOUSEOVER, ONMOUSEUP, STYLE, TITLE | (R) <I> </I> | 定义斜体文本。 |
+| IFRAME | ALIGN, CLASS, BORDER, HEIGHT, ID, LONGDESC, MARGINHEIGHT, MARGINWIDTH, NAME, SCROLLING, SRC, TITLE, WIDTH | (R) <IFRAME> </IFRAME> | 定义浮框。 |
+| IMG | ALT, BORDER, CLASS, HEIGHT, ID, ISMAP, LONGDESC, ONCLICK, ONKEYDOWN, ONKEYPRESS, ONKEYUP, ONMOUSEDOWN, ONMOUSEMOVE, ONMOUSEOUT, ONMOUSEOVER, ONMOUSEUP, STYLE, TITLE, USEP, SPACE, WIDTH | (F) <img> | 插入图像。 |
+| INPUT TYPE=button | ACCESSKEY, CLASS, DIR, DISABLED, ID, NAME, ONBLUR, ONCHANGE, ONCLICK, DBBLCLICK, ONFOCUS, ONKEYDOWN, ONKEYPRESS, ONKEYUP, ONMOUSEDOWN, ONMOUSEMOVE, ONMOUSEOUT, ONMOUSEOVER, ONMOUSEUP, ONSELECT, READONLY, SIZE, STYLE, TABINDEX, TYPE, VALUE | (F) <INPUT> | 定义按钮。 |
+| INPUT TYPE=checkbox | ACCESSKEY, CHECKED, CLASS, DISABLED, ID, NAME, ONBLUR, ONCHANGE, ONCLICK, DBBLCLICK, ONFOCUS, ONKEYDOWN, ONKEYPRESS, ONKEYUP, ONMOUSEDOWN, ONMOUSEMOVE, ONMOUSEOUT, ONMOUSEOVER, ONMOUSEUP, ONSELECT, READONLY, STYLE, TABINDEX, TITLE, TYPE, VALUE | (F) <INPUT> | 定义复选框。 |
 | INPUT TYPE=file | ACCEPT, ACCESSKEY, CLASS, DISABLED, ID, NAME, ONBLUR, ONCHANGE, ONCLICK, DBBLCLICK, ONFOCUS, ONKEYDOWN, ONKEYPRESS, ONKEYUP, ONMOUSEDOWN, ONMOUSEMOVE, ONMOUSEOUT, ONMOUSEOVER, ONMOUSEUP, ONSELECT, SIZE, STYLE, TABINDEX, TITLE, VALUE | (F) <INPUT> | 定义一个可以存储文件名以用于上传文件的字段。注意：包含文件输入的表单必须在 <FORM> 中指定 METHOD=post 和 ENCTYPE="multipart/form-data" |
 | INPUT TYPE=hidden | ACCESSKEY, CLASS, DISABLED, ID, LANG, MAXLENGTH, NAME, ONBLUR, ONCLICK, DBBLCLICK, ONFOCUS, ONKEYDOWN, ONKEYPRESS, ONKEYUP, ONMOUSEDOWN, ONMOUSEMOVE, ONMOUSEOUT, ONMOUSEOVER, ONMOUSEUP, ONSELECT, SIZE, TABINDEX, TITLE, VALUE | (F) <INPUT> | 定义一个隐藏字段，该字段携带的用户不可见的信息。 |
-| INPUT TYPE=image | ALT, ACCESSKEY, CLASS, DISABLED, ID, NAME, ONBLUR, ONCLICK, DBBLCLICK, ONFOCUS, ONKEYDOWN, ONKEYPRESS, ONKEYUP, ONMOUSEDOWN, ONMOUSEMOVE, ONMOUSEOUT, ONMOUSEOVER, ONMOUSEUP, SRC, STYLE, TABINDEX, TITLE, VALUE | | (F) <INPUT> | 定义一个作为提交按钮的图像。 |
+| INPUT TYPE=image | ALT, ACCESSKEY, CLASS, DISABLED, ID, NAME, ONBLUR, ONCLICK, DBBLCLICK, ONFOCUS, ONKEYDOWN, ONKEYPRESS, ONKEYUP, ONMOUSEDOWN, ONMOUSEMOVE, ONMOUSEOUT, ONMOUSEOVER, ONMOUSEUP, SRC, STYLE, TABINDEX, TITLE, VALUE | (F) <INPUT> | 定义一个作为提交按钮的图像。 |
 | INPUT TYPE=password | ACCESSKEY, CLASS, DISABLED, DIR, ID, LANG, MAXLENGTH, NAME, ONBLUR, ONCLICK, DBBLCLICK, ONFOCUS, ONKEYDOWN, ONKEYPRESS, ONKEYUP, ONMOUSEDOWN, ONMOUSEMOVE, ONMOUSEOUT, ONMOUSEOVER, ONMOUSEUP, ONSELECT, SIZE, STYLE, TABINDEX, TITLE, VALUE | (F) <INPUT> | 定义一个文本被掩码的文本字段。 |
-
-# 表 D-1：HTML 4.0 元素和属性（续）
-
-| 元素 | 属性 | 结束标签 | 描述 |
-| --- | --- | --- | --- |
 | INPUT TYPE= radio | ACCESSKEY, CHECKED, CLASS, DISABLED, ID, NAME, ONBLUR, ONCHANGE, ONCLICK, DBBLCLICK, ONFOCUS, ONMOUSESEDOWN, ONMOUSEMOVE, ONMOUSEOUT, ONMOUSEOVER, ONMOUSEUP, ONKEYPRESS, ONKEYUP, READONLY, STYLE, TABINDEX, TITLE, VALUE | (F) <INPUT> | 定义单选按钮。(R) 必需 (F) 禁止 (O) 可选 |
 | INPUT TYPE= reset | ACCESSKEY, CLASS, ... (已省略) | (F) <INPUT> | 定义重置按钮。 |
 | INPUT TYPE= submit | ACCESSKEY, CLASS, ... (已省略) | (F) <INPUT> | 定义提交按钮。 |
 | INPUT TYPE= text | ACCESSKEY, CLASS, DIR, ... (已省略) | (F) <INPUT> | 定义文本字段。 |
-
-# 表 D-1：HTML 4.0 元素和属性（续）
-
-| 元素 | 属性 | 结束标签 | 描述 |
-| :--- | :--- | :--- | :--- |
 | INS | CITE, CLASS, DATETIME, DIR, ID, LANG, STYLE, TITLE, ONCLICK, ONBLUR, ONKEYDOWN, ONKEYPRESS, ONKEYUP, ONMOUSEDOWN, ONMOUSEMOVE, ONMOUSEOUT, ONMOUSEOVER, ONMOUSEUP | (R) <INS> | 表示自上一个版本以来添加的文本。 |
 | ISINDEX | CLASS, DIR, ID, LANG, PROMPT, STYLE | (F) <INDEX> | 注意：W3C 已废弃此元素，改用 INPUT 代替。 |
 | KBD | CLASS, DIR, ID, LANG, ONCLICK, ONKEYDOWN, ONKEYPRESS, ONKEYUP, ONMOUSEDOWN, ONMOUSEMOVE, ONMOUSEOUT, ONMOUSEOVER, STYLE | (R) <KBD> | 用户输入的文本。 |
-| LABEL | ACCESSKEY, CLASS, DIR, FOR, ID, LANG, ONCLICK, ONBLUR, ONKEYDOWN, ONKEYPRESS, ONKEYUP, ONMOUSEDOWN, ONMOUSEMOVE, ONMOUSEOUT, ONMOUSEOVER, ONMOUSEUP, STYLE | (R) 连接到控件。 |
+| LABEL | ACCESSKEY, CLASS, DIR, FOR, ID, LANG, ONCLICK, ONBLUR, ONKEYDOWN, ONKEYPRESS, ONKEYUP, ONMOUSEDOWN, ONMOUSEMOVE, ONMOUSEOUT, ONMOUSEOVER, ONMOUSEUP, STYLE | (R) | 连接到控件。 |
 | LEGEND | ACCESSKEY, CLASS, DIR, ID, LANG, ONCLICK, ONBLUR, ONKEYDOWN, ONKEYPRESS, ONKEYUP, ONMOUSEDOWN, ONMOUSEMOVE, ONMOUSEOUT, ONMOUSEOVER, ONMOUSEUP, STYLE | (R) </LEGEND> | 为 FIELDSET 指定标题。 |
 | LI | CLASS, DIR, ID, LANG, ONCLICK, ONBLUR, ONMOUSEDOWN, ONMOUSEMOVE, ONMOUSEOUT, ONMOUSEOVER, ONKEYPRESS, ONKEYUP, STYLE, TITLE, VALUE | (O) <LI> | UL 或 OL 元素中的列表项。 |
-
-# 表 D-1：HTML 4.0 元素和属性（续）
-
-| 元素 | 属性 | 结束标签 | 描述 |
-| --- | --- | --- | --- |
-| | | (R) 必需 (F) 禁止 (O) 可选 |
 | LINK | CHARSET, CLASS, DIR, HREF, HREFLANG, ID, LANG, MEDIA, ONCLICK, DBBLCLICK, ONKEYDOWN, ONKEYPRESS, ONMOUSESOWN, ONMOUSEMOVE, ONMOUSEOUT, ONMOUSEVER, ONMOUSEUP, REL, TARGET, TYPE | (F) <LINK> | 创建媒体无关的链接。 |
 | MAP | CLASS, LANG, MAP, ONCLICK, DBBLCLICK, ONKEYDOWN, ONKEYPRESS, ONMOUSESOWN, ONMOUSEMOVE, ONMOUSEOUT, ONMOUSEVER, ONMOUSEUP, STYLE | (R) <MAP> | 定义客户端图像映射。 |
 | MENU | CLASS, COMPACT, DIR, LANG, ONCLICK, DBBLCLICK, ONKEYDOWN, ONKEYPRESS, ONMOUSESOWN, ONMOUSEMOVE, ONMOUSEOUT, ONMOUSEVER, ONMOUSEUP, STYLE | (R) <MENU> | 创建菜单列表。注意：W3C 已废弃此元素：用 <UL> 代替 <DIR> 和 <MENU>。 |
 | META | CONTENT, HTTP-EQUIV, LANG, NAME, SCHEME | (F) <META> | 列出关于页面、作者和 HTML 版本的信息。 |
 | NOFRAMES | | (R) <NOFRAMES></NOFRAMES> | 当浏览器无法渲染帧时。 |
 | NOSCRIPT | | (R) <NOSCRIPT></NOSCRIPT> | 当浏览器无法渲染脚本时。 |
-
-# 表 D-1：HTML 4.0 元素和属性（续）
-
-| 元素 | 属性 | 结束标签 | 描述 |
-| --- | --- | --- | --- |
 | OBJECT | ALIGN, ARCHIVE, BORDER, CLASS, CLASSID, CODEBASE, CODETYPE, DATA, DECLARE, DIR, HEIGHT, HSPACE, ID, LANG, NAME, ONCLICK, DBBLCLICK, ONKEYPRESS, ONMOUSEDOWN, ONMOUSEMOVE, ONMOUSEOUT, ONMOUSEOVER, STANDBY, STYLE, TABINDEX, TYPE, USMAP, VSPACE, WIDTH | (R) <OBJECT></OBJECT> | 用于插入浏览器和外部应用程序支持的内容。 |
-| OL | COMPACT, CLASS, DIR, ID, LANG, ONCLICK, DBBLCLICK, ONKEYDOWN, ONKEYPRESS, ONKEYUP, ONMOUSEDOWN, ONMOUSEMOVE, ONMOUSEOUT, ONMOUSEOVER, START, STYLE, TITLE, TYPE | (R) <OL></OL> | 有序（编号）列表；包含 LI 元素。 |
+| OL | COMPACT, CLASS, DIR, ID, LANG, ONCLICK, DBBLCLICK, ONKEYDOWN, ONKEYPRESS, ONKEYUP, ONMOUSEDOWN, ONMOUSEMOVE, ONMOOUSEOUT, ONMOUSEOVER, START, STYLE, TITLE, TYPE | (R) <OL></OL> | 有序（编号）列表；包含 LI 元素。 |
 | OPTGROUP | CLASS, DIR, DISALLOWED, ID, LABEL, LANG, MULTIPLE, ONCLICK, DBBLCLICK, ONKEYDOWN, ONKEYPRESS, ONKEYUP, ONMOUSEDOWN, ONMOUSEMOVE, ONMOUSEOUT, ONMOUSEOVER, ONMOUSEUP, STYLE, TITLE | (R) <OPTGROUP></OPTGROUP> | 创建一组相关的表单元素。 |
 | OPTION | CLASS, DIR, DISALLOWED, ID, LABEL, LANG, DBBLCLICK, ONKEYDOWN, ONKEYPRESS, ONKEYUP, ONMOUSEDOWN, ONMOUSEMOVE, ONMOUSEOUT, ONMOUSEOVER, ONMOUSEUP, SELECTED, STYLE, TITLE, VALUE | (O) <OPTION></OPTION> | 在列表中创建选项选择。 |
 | P | ALIGN, CLASS, DIR, ID, LANG, ONCLICK, DBBLCLICK, ONKEYDOWN, ONKEYPRESS, ONKEYUP, ONMOUSEDOWN, ONMOUSEMOVE, ONMOUSEOUT, ONMOUSEOVER, ONMOUSEUP, STYLE, TITLE | (O) <P></P> | 创建带有空格的换行。 |
-| PARAM | ID, NAME, TYPE, VALUE, VALUETYPE | (F) 禁止 <PARAM> | APPLET 元素的参数。 |
-
-
-
-
-
-## 表 D-1: HTML 4.0 元素和属性（续）
-
-| 元素 | 属性 | 结束标签 | 描述 |
-| --- | --- | --- | --- |
+| PARAM | ID, NAME, TYPE, VALUE, VALUETYPE | (F) <PARAM> | APPLET 元素的参数。 |
 | PRE | ID, CLASS, DIR, LANG, ONCLICK, ODBCLICK, ONKEYDOWN, ONKEYPRESS, ONKEYUP, ONMOUSEEDOWN, ONMOUSEMOVE, ONMOUSEOUT, ONMOUSEOVER, ONMOUSEUP, STYLE, WIDTH. | (R)<br><PRE></PRE> | 用于渲染预格式文本。 |
 | Q | CITE, CLASS, DIR, ID, LANG, ONCLICK, ODBCLICK, ONKEYDOWN, ONKEYPRESS, ONKEYUP, ONMOUSEEDOWN, ONMOUSEMOVE, ONMOUSEOUT, ONMOUSEOVER, ONMOUSEUP, STYLE, TITLE. | (R)<br><Q></Q> | 用于短的内联引用。 |
-| S | CLASS, DIR, ID, LANG, ONCLICK, ODBCLICK, ONKEYDOWN, ONKEYPRESS, ONKEYUP, ONMOUSEEDOWN, ONMOUSEMOVE, ONMOUSEOUT, ONMOUSEOVER, ONMOUSEUP, STYLE, TITLE. | (R)<br><s></s> | 删除线文本。<br><br><br>注意：W3C 已弃用此元素。 |
-| SAMP | CLASS, DIR, ID, LANG, ONCLICK, ODBCLICK, ONKEYDOWN, ONKEYPRESS, ONKEYUP, ONMOUSEEDOWN, ONMOUSEMOVE, ONMOUSEOUT, ONMOUSEOVER, ONMOUSEUP, STYLE, TITLE. | (R)<br><SAMPLE></SAMPLE> | 用于渲染示例和程序代码输出。 |
+| S | CLASS, DIR, ID, LANG, ONCLICK, ODBCLICK, ONKEYDOWN, ONKEYPRESS, ONKEYUP, ONMOUSEEDOWN, ONMOUSEMOVE, ONMOUSEOUT, ONMOUSEOVER, ONMOUSEUP, STYLE, TITLE. | (R)<br><S></S> | 删除线文本。<br>注意：W3C 已弃用此元素。 |
+| SAMP | CLASS, DIR, ID, LANG, ONCLICK, ODBCLICK, ONKEYDOWN, ONKEYPRESS, ONKEYUP, ONMOUSEEDOWN, ONMOUSEMOVE, ONMOUSEOUT, ONMOUSEOVER, ONMOUSEUP, STYLE, TITLE. | (R)<br><SAMP></SAMP> | 用于渲染示例和程序代码输出。 |
 | SCRIPT | CHARSET, DEFER, LANGUAGE, SRC, TYPE. | (R)<br><SCRIPT></SCRIPT> | 脚本块的容器，如 VBScript 和 JavaScript。 |
 | SELECT | CLASS, DIR, DISABLED, ID, MULTIPLE, NAME, ONBLUR, ONCHANGE, ONCLICK, ODBCLICK, ONFOCUS, ONKEYDOWN, ONKEYPRESS, ONKEYUP, ONMOUSEEDOWN, ONMOUSEMOVE, ONMOUSEOUT, ONMOUSEOVER, ONMOUSEUP, SIZE, STYLE, TABINDEX, TITLE. | (R)<br><SELECT></SELECT> | 创建包含 OPTION 元素的下拉列表表单字段。 |
-## 表 D-1: HTML 4.0 元素和属性（续）
-
-| 元素 | 属性 | 结束标签 | 描述 |
-| --- | --- | --- | --- |
-| | | (R) 必须<br>(F) 禁止<br>(O) 可选 | |
 | SMALL | CLASS, DIR, ID, LANG, ONCLICK, ODBCLICK, ONKEYDOWN, ONKEYPRESS, ONUP, ONMOUSEDOWN, ONMOUSEMOVE, ONMOUSEOUT, ONMOUSEVER, ONMOUSEUP, STYLE, TITLE | (R)<br><SMALL></SMALL> | 用于创建小文本。 |
 | SPAN | CLASS, DIR, ID, LANG, ONCLICK, ODBCLICK, ONKEYPRESS, ONUP, ONMOUSEDOWN, ONMOUSEMOVE, ONMOUSEOUT, ONMOUSEVER, ONMOUSEUP, STYLE, TITLE | (R)<br><span></span> | 定义内联样式；为文档添加结构。 |
 | STRIKE | CLASS, DIR, ID, LANG, ONCLICK, ODBCLICK, ONKEYPRESS, ONUP, ONMOUSEDOWN, ONMOUSEMOVE, ONMOUSEOUT, ONMOUSEVER, ONMOUSEUP, STYLE, TITLE | (R)<br><STRIKE></STRIKE> | 创建删除线文本（在文本上画一条线）。 |
 | STRONG | CLASS, DIR, ID, LANG, ONCLICK, ODBCLICK, ONKEYPRESS, ONUP, ONMOUSEDOWN, ONMOUSEMOVE, ONMOUSEOUT, ONMOUSEVER, ONMOUSEUP, STYLE, TITLE | (R)<br><strong> </strong> | 强力强调（类似于加粗）。 |
 | STYLE | DIR, LANG, MEDIA, TYPE | (R)<br><STYLE></STYLE> | 为 HTML 文档定义样式表；放置在 HEAD 部分。 |
 | SUB | CLASS, DIR, ID, LANG, ONCLICK, ODBCLICK, ONKEYPRESS, ONUP, ONMOUSEDOWN, ONMOUSEMOVE, ONMOUSEOUT, ONMOUSEVER, ONMOUSEUP, STYLE, TITLE | (R)<br><sub> </sub> | 将文本渲染为下标。 |
-## 表 D-1: HTML 4.0 元素和属性（续）
-
-| 元素 | 属性 | 结束标签 | 描述 |
-|---|---|---|---|
-| | | (R) 必须 (F) 禁止 (O) 可选 | |
 | SUP | CLASS, DIR, ID, LANG, ONCLICK, ONDBLCLICK, ONKEYDOWN, ONKEYPRESS, ONKEYUP, ONMOUSEDOWN, ONMOUSEMOVE, ONMOUSEOUT, ONMOUSEVER, ONMOUSEUP, STYLE, TITLE | (R) <sup> </sup> | 将文本渲染为上标。 |
 | TABLE | ALIGN, BORDER, CELLPADDING, CLASS, DIR, FRAME, ID, LANG, ONCLICK, ONDBLCLICK, ONKEYDOWN, ONKEYPRESS, ONKEYUP, ONMOUSEDOWN, ONMOUSEMOVE, ONMOUSEOUT, ONMOUSEVER, ONMOUSEUP, RULES, STYLE, SUMMARY, WIDTH | (R) <table></table> | 创建一个 HTML 表格。 |
-| TBODY | ALIGN, CHAR, CHAROFF, CLASS, DIR, ID, ONCLICK, ONDBLCLICK, ONKEYDOWN, ONKEYPRESS, ONKEYUP, ONMOUSEDOWN, ONMOUSEMOVE, ONMOUSEOUT, ONMOUSEVER, ONMOUSEUP, STYLE, TITLE, VALIGN | (O) <tbody></tbody> | 表格的主体部分。 || TD | ABBR, ALIGN, CHAR, CELLSPAN, DIR, HEADERS, HEIGHT, ID, LANG, NOWRAP, ONCLICK, ONDBLCLICK, ONKEYDOWN, ONKEYPRESS, ONKEYUP, ONMOUSEDOWN, ONMOUSEMOVE, ONMOUSEOUT, ONMOUSEVER, ONMOUSEUP, SCOPE, STYLE, VALIGN, WIDTH | (O) <td> </td> | 插入单元格信息。 |
+| TBODY | ALIGN, CHAR, CHAROFF, CLASS, DIR, ID, ONCLICK, ONDBLCLICK, ONKEYDOWN, ONKEYPRESS, ONKEYUP, ONMOUSEDOWN, ONMOUSEMOVE, ONMOUSEOUT, ONMOUSEVER, ONMOUSEUP, STYLE, TITLE, VALIGN | (O) <tbody></tbody> | 表格的主体部分。 |
+| TD | ABBR, ALIGN, CHAR, CELLSPAN, DIR, HEADERS, HEIGHT, ID, LANG, NOWRAP, ONCLICK, ONDBLCLICK, ONKEYDOWN, ONKEYPRESS, ONKEYUP, ONMOUSEDOWN, ONMOUSEMOVE, ONMOUSEOUT, ONMOUSEVER, ONMOUSEUP, SCOPE, STYLE, VALIGN, WIDTH | (O) <td> </td> | 插入单元格信息。 |
 | TEXTAREA | ACCESSKEY, CLASS, COLS, DIR, DISABLED, ID, LANG, NAME, ONBLUR, ONCHANGE, ONCLICK, ONDBLCLICK, ONFOCUS, ONKEYDOWN, ONKEYPRESS, ONKEYUP, ONMOUSEDOWN, ONMOUSEMOVE, ONMOUSEOUT, ONMOUSEVER, ONMOUSEUP, READONLY, ROWS, STYLE, TABINDEX | (R) <textarea></textarea> | 多行文本字段。 |
-## 表 D-1: HTML 4.0 元素和属性（续）
-
-| 元素 | 属性 | 结束标签 | 描述 |
-|---|---|---|---|
-| | | (R) 必须 (F) 禁止 (O) 可选 | |
-| TFOOT | ALIGN, CHAR, CHAROFF, CLASS, DIR, ID, LANG, ONCLICK, ONDBLCLICK, ONKEYDOWN, ONKEYPRESS, ONKEYUP, ONMOUSEDOWN, ONMOUSEMOVE, ONMOUSEOUT, ONMOUSEVER, ONMOUSEUP, STYLE, TITLE, VALIGN | (O) <footer></footer> | 表格的页脚部分。 |
+| TFOOT | ALIGN, CHAR, CHAROFF, CLASS, DIR, ID, LANG, ONCLICK, ONDBLCLICK, ONKEYDOWN, ONKEYPRESS, ONKEYUP, ONMOUSEDOWN, ONMOUSEMOVE, ONMOUSEOUT, ONMOUSEVER, ONMOUSEUP, STYLE, TITLE, VALIGN | (O) <tfoot></tfoot> | 表格的页脚部分。 |
 | TH | ABBR, ALIGN, CHAR, CHAROFF, CLASS, COLSPAN, DIR, HEADERS, HEIGHT, ID, LANG, NOWRAP, ONCLICK, ONDBLCLICK, ONKEYDOWN, ONKEYPRESS, ONKEYUP, ONMOUSEDOWN, ONMOUSEMOVE, ONMOUSEOUT, ONMOUSEVER, ONMOUSEUP, SCOPE, STYLE, VALIGN, WIDTH | (O) <th> </th> | 创建头单元格。 |
 | THEAD | ALIGN, CHAR, CHAROFF, CLASS, DIR, ID, LANG, ONCLICK, ONDBLCLICK, ONKEYDOWN, ONKEYPRESS, ONKEYUP, ONUP, ONMOUSEDOWN, ONMOUSEMOVE, ONMOUSEOUT, ONMOUSEVER, ONMOUSEUP, STYLE, TITLE, VALIGN | (O) <thead></thead> | 表格的头部分。 |
 | TITLE | DIR, LANG | (R) <title></title> | 文档标题。属于 HEAD 元素。 |
 | TR | ALIGN, CHAR, CHAROFF, CLASS, DIR, ID, LANG, ONCLICK, ONDBLCLICK, ONKEYDOWN, ONKEYPRESS, ONKEYUP, ONMOUSEDOWN, ONMOUSEMOVE, ONMOUSEOUT, ONMOUSEVER, ONMOUSEUP, STYLE, TITLE, VALIGN | (O) <tr></tr> | 定义一行。 |
-## 表 D-1: HTML 4.0 元素和属性（续）
-
-| 元素 | 属性 | 结束标签 | 描述 |
-| --- | --- | --- | --- |
 | TT | CLASS, DIR, ID, LANG, ONCLICK, ODBCLICK, ONKEYDOWN, ONKEYPRESS, ONKEYUP, ONMOUSEDOWN, ONMOUSEMOVE, ONMOUSEOUT, ONMOUSEVER, ONMOUSEUP, STYLE, TITLE | (R) <tt></tt> | 使用等宽字体的打字样式。 |
 | U | CLASS, DIR, ID, LANG, ONCLICK, ODBCLICK, ONKEYDOWN, ONKEYPRESS, ONKEYUP, ONMOUSEDOWN, ONMOUSEMOVE, ONMOUSEOUT, ONMOUSEVER, ONMOUSEUP, STYLE, TITLE | (R) <u></u> | 下划线文本。 |
 | UL | COMPACT, CLASS, DIR, ID, LANG, ONCLICK, ODBCLICK, ONKEYDOWN, ONKEYPRESS, ONKEYUP, ONMOUSEDOWN, ONMOUSEMOVE, ONMOUSEOUT, ONMOUSEVER, ONMOUSEUP, STYLE, TITLE | (R) <ul></ul> | 创建无序列表（项目符号列表）；包含 LI 元素。 |
 | VAR | CLASS, DIR, ID, LANG, ONCLICK, ODBCLICK, ONKEYDOWN, ONKEYPRESS, ONKEYUP, ONMOUSEDOWN, ONMOUSEMOVE, ONMOUSEOUT, ONMOUSEVER, ONMOUSEUP, STYLE, TITLE | (R) <var></var> | 用于表示变量或程序参数。 |
 
-## 附录 E：颜色名称和值
+# 附录 E：颜色名称和值
 
 本附录中的颜色表提供了颜色的名称和 RGB 值。你也可以在网上搜索其他颜色工具。取决于你的浏览器，你可能无法使用名称来指定颜色。但 RGB 值是兼容的。
 
@@ -6932,8 +6397,6 @@ document.myApplet.setBgColor("black")
 | CHARTREUSE | #7FF00 | DARKSEAGREEN | #FFC8B |
 | CHOCOLATE | #D2691E | DARKSLATEBLUE | #483D8B |
 | CORAL | #FF7F50 | DARKSLATEGRAY | #2F4F |
-| 名称 | RGB 值 | 名称 | RGB 值 |
-|---|---|---|---|
 | CORNFLOWER | #6495ED | DARKTUR | #00CED1 |
 | CORNSILK | #FFF8DC | DARKVIOLET | #9400D3 |
 | DEEPPINK | #FF1493 | LEMONCHIFFON | #FFACD |
@@ -6953,15 +6416,6 @@ document.myApplet.setBgColor("black")
 | LINEN | #FAF0E6 | MAGENTA | #FF00FF |
 | MAROON | #800000 | MEDIUMAQUAMARINE | #66CDAA |
 | MEDIUMBLUE | #0000CD | | |
-
-
-
-
-
-# 附录 - 48
-
-| 名称 | RGB 数值 | 名称 | RGB 数值 |
-|---|---|---|---|
 | 薰衣草 | #E6E6FA | 中兰花 | #BA55D3 |
 | 薰衣草粉 | #FF0F05 | 中紫色 | #9370DB |
 | 长草绿 | #F7CFC00 | 中海绿 | #3CB371 |
@@ -6995,138 +6449,120 @@ document.myApplet.setBgColor("black")
 
 # 附录 F: JavaScript 资源
 
-本附录为 JavaScript 应用开发提供了一些在线在线和纸质资源。
+本附录为 JavaScript 应用开发提供了一些在线和纸质资源。
 
 ## 在线资源
 
 可以在网上找到以下资源。请注意，由于互联网的动态性和演变，某些地址可能已失效。
 
 - HotSyte JavaScript 首页
-http://www.serve.com/hotsyte/
-
+  `http://www.serve.com/hotsyte/`
 - HotWired Webmonkey JavaScript 首页
-http://hotwired.lycos.com/webmonkey/programming/javascript/
-
+  `http://hotwired.lycos.com/webmonkey/programming/javascript/`
 - The JavaScript Source 首页
-http://javascript.internet.com/
-
+  `http://javascript.internet.com/`
 - JavaScript.com 首页
-http://www.javascript.com/
-
+  `http://www.javascript.com/`
 - Netscape DevEdge JavaScript 指南
-http://developer.netscape.com/docs/manuals/communicator/jsguide4/index.htm
-
+  `http://developer.netscape.com/docs/manuals/communicator/jsguide4/index.htm`
 - Netscape DevEdge JavaScript 引用手册
-http://developer.netscape.com/docs/manuals/communicator/jsref/index.htm
-
+  `http://developer.netscape.com/docs/manuals/communicator/jsref/index.htm`
 - Yahoo! JavaScript 首页
-http://dir.yahoo.com/computers_and_internet/programming_languages/javascript/
+  `http://dir.yahoo.com/computers_and_internet/programming_languages/javascript/`
 
 ## 纸质资源
 
 以下 JavaScript 资源是通过当地和在线书店可以找到纸质出版物。
 
-Anderson, William F. Netscape Developer's Guide to JavaScript 1.2. London: Prentice Hall, 1998.
-
-Bercik, Bill and Jill Bond. Inside JavaScript. Indianapolis: New Riders Publishing, 1996.
-
-Flanagan, David, and Dan Shafer. JavaScript: The Definitive Guide, third edition. Sebastopol, California: O'Reilly and Associates, 1998.
-
-Goldman, Danny. JavaScript Bible, third edition. Foster City, California: IDG Books Worldwide, 1998.
-
-Hall, Marty, and Gary Cornell. Core Web Programming. London: Prentice Hall, 1998.
-
-Kooros, Paul and Michele De Wolfe. JavaScript. New York: Prima Publishing, 1996.
-
-Lloyd, Doug. The Official Netscape Visual JavaScript Book. Durham, North Carolina: The Coriolis Group, 1998.
-
-Negrin, Tom and Dori Smith. JavaScript for the World Web: Visual QuickStart, second edition. New York: Peach Press, 1998.
-
-Purcell, Lee. The ABCs of JavaScript. Alameda, California: 1997.
-
-Vander Veer, Emily: JavaScript for Dummies. Foster City, California: IDG Books Worldwide.
+- Anderson, William F. *Netscape Developer's Guide to JavaScript 1.2*. London: Prentice Hall, 1998.
+- Bercik, Bill and Jill Bond. *Inside JavaScript*. Indianapolis: New Riders Publishing, 1996.
+- Flanagan, David, and Dan Shafer. *JavaScript: The Definitive Guide*, third edition. Sebastopol, California: O'Reilly and Associates, 1998.
+- Goldman, Danny. *JavaScript Bible*, third edition. Foster City, California: IDG Books Worldwide, 1998.
+- Hall, Marty, and Gary Cornell. *Core Web Programming*. London: Prentice Hall, 1998.
+- Kooros, Paul and Michele De Wolfe. *JavaScript*. New York: Prima Publishing, 1996.
+- Lloyd, Doug. *The Official Netscape Visual JavaScript Book*. Durham, North Carolina: The Coriolis Group, 1998.
+- Negrin, Tom and Dori Smith. *JavaScript for the World Web: Visual QuickStart*, second edition. New York: Peach Press, 1998.
+- Purcell, Lee. *The ABCs of JavaScript*. Alameda, California: 1997.
+- Vander Veer, Emily: *JavaScript for Dummies*. Foster City, California: IDG Books Worldwide.
 
 # 附录 G: 引用文献
 
 本附录提供了课程中使用的任何参考文献的完整检索信息。
 
-Bercik, Bill and Jill Bond. Inside JavaScript. Indianapolis: New Riders Publishing, 1996.
-
-Wagner, Richard and Paul Colton. JavaScript Unleashed. New York: Sams-net, 1996.
+- Bercik, Bill and Jill Bond. *Inside JavaScript*. Indianapolis: New Riders Publishing, 1996.
+- Wagner, Richard and Paul Colton. *JavaScript Unleashed*. New York: Sams-net, 1996.
 
 # 附录 H: 术语表
 
-- 参数：传递给函数或过程的值或表达式。
-- 调用：传递到子程序、过程或函数的语句。
-- 连接：连接两个或多个单元（如字符串）。
-- 构造函数：用于创建对象的特殊函数。
-- 事件处理：允许语言响应特定事件的代码。
-- 浮点计算：允许小数位数字的计算。
-- 图形用户界面 (GUI)：提供菜单导航的程序。
-- 方法：对象可以执行的操作。
-- 嵌套：在一个脚本块中嵌入另一个脚本块的常见做法。
-- 对象：使用类对抽象“对象”进行建模。
-- 属性：对象的描述性特征，如颜色、高度，程序员在创建对象时指定的。
-- 语句：在脚本或程序中执行的单行代码。
-- 用户代理：W3C 术语，指为用户渲染 HTML 的应用程序（如浏览器）。
-- 值：属于对象的属性。
+- **参数**：传递给函数或过程的值或表达式。
+- **调用**：传递到子程序、过程或函数的语句。
+- **连接**：连接两个或多个单元（如字符串）。
+- **构造函数**：用于创建对象的特殊函数。
+- **事件处理**：允许语言响应特定事件的代码。
+- **浮点计算**：允许小数位数字的计算。
+- **图形用户界面 (GUI)**：提供菜单导航的程序。
+- **方法**：对象可以执行的操作。
+- **嵌套**：在一个脚本块中嵌入另一个脚本块的常见做法。
+- **对象**：使用类对抽象“对象”进行建模。
+- **属性**：对象的描述性特征，如颜色、高度，程序员在创建对象时指定的。
+- **语句**：在脚本或程序中执行的单行代码。
+- **用户代理**：W3C 术语，指为用户渲染 HTML 的应用程序（如浏览器）。
+- **值**：属于对象的属性。
 
 # 附录 I: 辅助磁盘
 
 JavaScript 辅助磁盘包含两个主要文件夹。Exercise 文件夹包含了整个课程的所有练习解答；按课程列出。Student 文件夹包含了完成练习所需的初始文件。
 
-- Exercise Solutions
-  - Appendix
-  - Lesson 02
-  - Lesson 04
-  - Lesson 06
-  - Lesson 07
-  - Lesson 08
-  - Lesson 09
-- Exercise Solutions/Afrikund
-  - Lesson 02
-  - Lesson 04
-  - Lesson 07
-  - Lesson 08
-  - Lesson 09
-- Student/Afrikunda
-  - frames
-  - images
-  - productimages
-  - Aboutus.htm
-  - browser.htm
-  - Carvings.htm
-  - cInventoryList.htm
-  - congrats.htm
-  - contacts.htm
-  - Default.htm
-  - elephant.jpg
-  - Fashions.htm
-  - form.htm
-  - form1.htm
-  - form2.htm
-  - furnishings.htm
-  - imageMap.htm
-  - instruments.htm
-  - inventoryList.htm
-  - Jewelry.htm
-  - jclass.class
-  - Masks.htm
-  - masks.jpg
-  - navigator.htm
-  - ohwell.htm
-  - guarantee.htm
-  - paintings.htm
-  - password.htm
-  - price.htm
-  - pworded.htm
-  - sculpture.htm
-  - textImage.jpg
-  - Thinker.jpg
-
-
-
-
+```
+Exercise Solutions
+├── Appendix
+├── Lesson 02
+├── Lesson 04
+├── Lesson 06
+├── Lesson 07
+├── Lesson 08
+├── Lesson 09
+Exercise Solutions/Afrikund
+├── Lesson 02
+├── Lesson 04
+├── Lesson 07
+├── Lesson 08
+├── Lesson 09
+Student/Afrikunda
+├── frames
+├── images
+├── productimages
+├── Aboutus.htm
+├── browser.htm
+├── Carvings.htm
+├── cInventoryList.htm
+├── congrats.htm
+├── contacts.htm
+├── Default.htm
+├── elephant.jpg
+├── Fashions.htm
+├── form.htm
+├── form1.htm
+├── form2.htm
+├── furnishings.htm
+├── imageMap.htm
+├── instruments.htm
+├── inventoryList.htm
+├── Jewelry.htm
+├── jclass.class
+├── Masks.htm
+├── masks.jpg
+├── navigator.htm
+├── ohwell.htm
+├── guarantee.htm
+├── paintings.htm
+├── password.htm
+├── price.htm
+├── pworded.htm
+├── sculpture.htm
+├── textImage.jpg
+├── Thinker.jpg
+```
 
 打开此软件包即表示您同意受以下协议的约束：
 

@@ -1,94 +1,105 @@
+
 # Adobe AIR 创意修改复用
 
-
-
-
-
-# 在 Wrox.com 获取更多资源！
+## 在 Wrox.com 获取更多资源！
 
 ### 专题优惠
-每月享受特别优惠
+
+每月享受特别优惠。
 
 ### 免费章节预览
-抢先预览最新 Wrox 出版物的章节
 
-### 无限访问 ...
-... 我们 Wrox 参考库中超过 200 本图书的在线内容（详见在线详情）
+抢先预览最新 Wrox 出版物的章节。
+
+### 无限访问……
+
+……我们 Wrox 参考库中超过 200 本图书的在线内容（详见在线详情）。
 
 ### 论坛，论坛，还是论坛
-与程序员同伴积极参与在线讨论
+
+与程序员同伴积极参与在线讨论。
 
 ### 会见 Wrox 作者！
-阅读作者关于编程经历及任何他们想谈论话题的实时评论
+
+阅读作者关于编程经历及任何他们想谈论话题的实时评论。
 
 ### 浏览图书
-- .NET
-- SQL Server
-- Java
-- XML
-- Visual Basic
-- C# / C++
 
-# 加入社区！
-在 [newsletter.wrox.com](http://newsletter.wrox.com) 注册我们的免费月度通讯
+- `.NET`
+- `SQL Server`
+- `Java`
+- `XML`
+- `Visual Basic`
+- `C# / C++`
+
+## 加入社区！
+
+在[`newsletter.wrox.com`](http://newsletter.wrox.com)注册我们的免费月度通讯。
 
 # Adobe® AIR™
-创建-修改-复用
 
+创建-修改-复用。
 
-由 Internet Archive 于 2018 年数字化，资金来自 Kahle/Austin 基金会
+由 Internet Archive 于 2018 年数字化，资金来自 Kahle/Austin 基金会。
 
-https://archive.org/details/adobeaircreatemoo000leuc
-
-
-
+[`https://archive.org/details/adobeaircreatemoo000leuc`](https://archive.org/details/adobeaircreatemoo000leuc)
 
 # 关于作者
 
-**Marc Leuchner** 是波士顿广告集团 Almighty 的高级 Flash 开发人员。他在公司内的角色和才能主要围绕 Flash 开发和交互设计。多年来，他曾与 New Balance、ABC、Condé Nast、PUMA、BMW/Mini、Comcast 和 GAP, Inc. 等客户合作。Marc 拁有罗切斯特理工学院新媒体/设计学士学位。业余时间，他与合著者 Matt Wright 一起撰写技术博客 www.nobien.net/。
+`Marc Leuchner`是波士顿广告集团 Almighty 的高级 Flash 开发人员。他在公司内的角色和才能主要围绕 Flash 开发和交互设计。多年来，他曾与 New Balance、ABC、Condé Nast、PUMA、BMW/Mini、Comcast 和 GAP, Inc. 等客户合作。Marc 拥有罗切斯特理工学院新媒体/设计学士学位。业余时间，他与合著者 Matt Wright 一起撰写技术博客[`www.nobien.net/`](http://www.nobien.net/)。
 
-**Todd Anderson** 是 Infrared5 的高级软件工程师。Todd 在 RIA 和游戏开发领域拥有超过五年的 Flash 平台开发经验，曾为 McGraw-Hill、Thomson、Motorola 和 Condé Nast 等出版和娱乐行业的公司提供网络和桌面解决方案。他运营 www.custardbelly.com/blog，专注于 Flash 平台开发和游戏开发。
+`Todd Anderson`是 Infrared5 的高级软件工程师。Todd 在 RIA 和游戏开发领域拥有超过五年的 Flash 平台开发经验，曾为 McGraw-Hill、Thomson、Motorola 和 Condé Nast 等出版和娱乐行业的公司提供网络和桌面解决方案。他运营[`www.custardbelly.com/blog`](http://www.custardbelly.com/blog)，专注于 Flash 平台开发和游戏开发。
 
-**Matthew Wright** 是纽约市全服务数字机构 ROKKAN 的高级 Flash 开发人员。自 2005 年以来，他主要为包括 Virgin America、可口可乐公司、Atlantic Records、时代华纳、NBA 和 2K Games 在内的众多客户交付了消费体验 Flash 站点和应用程序。在 ROKKAN 之前，他在纽约州锡拉丘兹的一家名为 2ndNature 的互动机构开始了他的职业生涯。正是在这里，他发现了自己对 Flash 平台的热爱。工作之余，Matthew 与朋友、同事和合著者 Marc Leuchner 一起为 Flash 和技术博客 www.nobien.net 做出贡献。他还曾在 FlashForward 上发表演讲。Matthew 与他漂亮的女朋友 Chewy 住在纽约布鲁克林。
-
-
+`Matthew Wright`是纽约市全服务数字机构 ROKKAN 的高级 Flash 开发人员。自 2005 年以来，他主要为包括 Virgin America、可口可乐公司、Atlantic Records、时代华纳、NBA 和 2K Games 在内的众多客户交付了消费体验 Flash 站点和应用程序。在 ROKKAN 之前，他在纽约州锡拉丘兹的一家名为 2ndNature 的互动机构开始了他的职业生涯。正是在这里，他发现了自己对 Flash 平台的热爱。工作之余，Matthew 与朋友、同事和合著者 Marc Leuchner 一起为 Flash 和技术博客[`www.nobien.net`](http://www.nobien.net/)做出贡献。他还曾在 FlashForward 上发表演讲。Matthew 与他漂亮的女朋友 Chewy 住在纽约布鲁克林。
 
 ## 致谢
 
-**执行编辑**
+### 执行编辑
+
 克里斯·韦伯
 
-**制作经理**
+### 制作经理
+
 蒂姆·泰特
 
-**开发编辑**
+### 开发编辑
+
 布莱恩·赫尔曼
 
-**副总裁兼执行出版人**
+### 副总裁兼执行出版人
+
 理查德·斯瓦德利
 
-**技术编辑**
+### 技术编辑
+
 阿什利·阿特金斯
 
-**副总裁兼执行出版人**
+### 副总裁兼执行出版人
+
 约瑟夫·B·维克特
 
-**制作编辑**
+### 制作编辑
+
 丹尼尔·斯克里布纳
 
-**项目协调员，封面**
+### 项目协调员，封面
+
 林赛·斯坦福
 
-**文案编辑**
+### 文案编辑
+
 卢安·鲁夫
 
-**校对员**
+### 校对员
+
 南希·贝尔
 
-**编辑经理**
+### 编辑经理
+
 玛丽·贝丝·韦克菲尔德
 
-**索引编制员**
+### 索引编制员
+
 罗恩·施特劳斯
 
 ## 致谢
@@ -99,22 +110,19 @@ https://archive.org/details/adobeaircreatemoo000leuc
 
 ### 托德·安德森
 
-我要感谢马克·洛伊希纳和马特·赖特，在这项工作中成为优秀的共同作者，在撰写本书时提供了专业知识和幽默。对于我的家人，我无法用言语表达我对你们巨大支持和爱的感激——我美丽的妻子嘉莉，妈妈，爸爸，布莱恩，克丽莎，艾玛，凯尔西亚，以及卡尤加。我还要感谢我的朋友们以及我从Flash社区获得的巨大支持。非常感谢并致以敬意给阿什·阿特金斯，他在技术编辑过程中提供了宝贵的智慧。最后，我要感谢布莱恩·赫尔曼、克里斯·韦伯和威立团队，感谢他们的耐心、理解和辛勤工作。
+我要感谢马克·洛伊希纳和马特·赖特，在这项工作中成为优秀的共同作者，在撰写本书时提供了专业知识和幽默。对于我的家人，我无法用言语表达我对你们巨大支持和爱的感激——我美丽的妻子嘉莉，妈妈，爸爸，布莱恩，克丽莎，艾玛，凯尔西亚，以及卡尤加。我还要感谢我的朋友们以及我从 Flash 社区获得的巨大支持。非常感谢并致以敬意给阿什·阿特金斯，他在技术编辑过程中提供了宝贵的智慧。最后，我要感谢布莱恩·赫尔曼、克里斯·韦伯和威立团队，感谢他们的耐心、理解和辛勤工作。
 
 ### 马特·赖特
 
 首先，我要感谢威立公司的人们，感谢他们给我机会撰写一本关于我真正喜欢的主题的书。特别感谢克里斯·韦伯，感谢他信任我撰写我的第一本关于全新技术的书。这样的机会并不常有。其次，我要感谢布莱恩·赫尔曼和阿什·阿特金斯，感谢他们成为如此出色且乐于助人的编辑。没有他们，这本书将无从立足。我还要向我的共同作者托德·安德森和马克·洛伊希纳表达许多感谢。这两位既聪明又鼓舞人心。我只希望我们能更经常地合作。我还要感谢我的家人，最重要的是我的母亲和父亲，感谢他们支持我和我的职业生涯。没有他们，我不会有今天的成就。最后，我要向我的女友丘伊表达巨大的感谢，感谢她在本书撰写过程中给予的所有支持和耐心。
 
-## 目录
+# 目录
 
-
-
-
-# 引言
+## 引言
 
 Adobe Flex 3 的发布，包含 AIR SDK（软件开发工具包），标志着 Adobe Flash 技术演进的最新进展。Flash 的最初版本（当时称为 FutureSplash）是一个能够为 Web 创建动画的程序。随着 ActionScript 语言的后续添加和修订，Flash 转变为一个强大的开发工具，进而催生了 Flex 框架。Flex 的最初两个版本使得开发者能够相对轻松地独立于 Flash IDE 创建富互联网应用程序。Flex 3 版本引入了专门为 Adobe AIR 运行时创建应用程序的能力，从而将 Flash 家族从基于 Web 的应用程序扩展到了基于桌面的应用程序。
 
-每一次新技术的发布，都会伴随着海量的新学习材料——书籍、视频、博客文章等等。Adobe AIR 和 Flex 3 也不例外。事实上，由于 Adobe 发布了其软件的公开测试版，这种效应被放大了。人们对 Flex 3 的新功能感到兴奋，尤其是它与 AIR SDK 的集成。这种兴奋使得更容易找到*如何*使用 Adobe AIR，但如果你已经超越了这个阶段，想要开始构建应用程序呢？同样，有些人通过剖析示例应用程序学习效果最好。毕竟，兴奋感推动了使用 Flex 3 和 Adobe AIR 构建有用事物的需求。本书试图将这份热情和知识传递给你。
+每一次新技术的发布，都会伴随着海量的新学习材料——书籍、视频、博客文章等等。Adobe AIR 和 Flex 3 也不例外。事实上，由于 Adobe 发布了其软件的公开测试版，这种效应被放大了。人们对 Flex 3 的新功能感到兴奋，尤其是它与 AIR SDK 的集成。这种兴奋使得更容易找到如何使用 Adobe AIR，但如果你已经超越了这个阶段，想要开始构建应用程序呢？同样，有些人通过剖析示例应用程序学习效果最好。毕竟，兴奋感推动了使用 Flex 3 和 Adobe AIR 构建有用事物的需求。本书试图将这份热情和知识传递给你。
 
 ## 本书适合谁
 
@@ -136,32 +144,32 @@ Adobe Flex 3 的发布，包含 AIR SDK（软件开发工具包），标志着 A
 
 每一章的结构如下：
 
--   引言和概述：将涵盖哪些 AIR 和 Flex 功能
--   设计：应用程序的主要技术概念和目标
--   代码和代码解释
--   构建和部署：如何编译和打包应用程序
--   总结和修改建议
+- 引言和概述：将涵盖哪些 AIR 和 Flex 功能
+- 设计：应用程序的主要技术概念和目标
+- 代码和代码解释
+- 构建和部署：如何编译和打包应用程序
+- 总结和修改建议
 
 本书各章、包含的应用程序以及 AIR 功能的简要列表如下：
 
--   第 1 章，“开发环境”，概述了设置和命令行工具。
--   第 2 章，“简易文本编辑器”，涵盖了基本文件系统功能，包括浏览、读取和写入文件。
--   第 3 章，“简易 RSS 阅读器”，涵盖了间歇性连接和托盘式警报。
--   第 4 章，“音乐播放器”，涵盖了递归文件搜索、浏览、复制、读取、写入文件以及无边框应用程序。
--   第 5 章，“迷你 CMS”，涵盖了处理 XML、文件上传、写入文件和保存设置。
--   第 6 章，“图片查看器和编辑器”，涵盖了创建图像文件、使用 Flex 3 SDK 中可用的编解码器以及原生拖放操作。
--   第 7 章，“HTML 和 CSS 编辑器”，涵盖了编辑已加载页面的 HTML 和 CSS，以及 HTML 控件（包括 JavaScript 集成）。
--   第 8 章，“天气小组件”，涵盖了上下文菜单、无边框应用程序、自定义图标以及系统托盘/程序坞交互。
--   第 9 章，“地图应用程序”，涵盖了通过 HTML 控件中的 JavaScript 与在线 API 通信，以及与本地数据库的通信。
--   第 10 章，“Blogger 代理”，涵盖了将文章发布到你的 Blogger 帐户，或在你连接时保存以供稍后发布。还涵盖了用于存储敏感信息的 SQLite DB 和 LocalEncrypted-Store。
--   第 11 章，“幻灯片制作器”，涵盖了自定义文件类型的序列化和窗口 API。
--   第 12 章，“视频播放器”，涵盖了 Flash 9 和 AIR 的 H.264 与 FLV 播放支持、拖放、上下文和窗口菜单以及全屏视频。
+- 第 1 章，“开发环境”，概述了设置和命令行工具。
+- 第 2 章，“简易文本编辑器”，涵盖了基本文件系统功能，包括浏览、读取和写入文件。
+- 第 3 章，“简易 RSS 阅读器”，涵盖了间歇性连接和托盘式警报。
+- 第 4 章，“音乐播放器”，涵盖了递归文件搜索、浏览、复制、读取、写入文件以及无边框应用程序。
+- 第 5 章，“迷你 CMS”，涵盖了处理 XML、文件上传、写入文件和保存设置。
+- 第 6 章，“图片查看器和编辑器”，涵盖了创建图像文件、使用 Flex 3 SDK 中可用的编解码器以及原生拖放操作。
+- 第 7 章，“HTML 和 CSS 编辑器”，涵盖了编辑已加载页面的 HTML 和 CSS，以及 HTML 控件（包括 JavaScript 集成）。
+- 第 8 章，“天气小组件”，涵盖了上下文菜单、无边框应用程序、自定义图标以及系统托盘/程序坞交互。
+- 第 9 章，“地图应用程序”，涵盖了通过 HTML 控件中的 JavaScript 与在线 API 通信，以及与本地数据库的通信。
+- 第 10 章，“Blogger 代理”，涵盖了将文章发布到你的 Blogger 帐户，或在你连接时保存以供稍后发布。还涵盖了用于存储敏感信息的 SQLite DB 和 LocalEncrypted-Store。
+- 第 11 章，“幻灯片制作器”，涵盖了自定义文件类型的序列化和窗口 API。
+- 第 12 章，“视频播放器”，涵盖了 Flash 9 和 AIR 的 H.264 与 FLV 播放支持、拖放、上下文和窗口菜单以及全屏视频。
 
 对于 Flex 新手，推荐的章节是 2、3、7、8 和 12。
 
 ## 使用本书的条件
 
-因为 Adobe Flex 3 和 AIR SDK 是开源的，你只需要下载包含编译器的 SDK 和一个文本编辑器。当然，强烈推荐使用 Flex Builder 3。Flex 3 和 AIR 可用于 Windows、Mac OS X 和 Linux 平台。Flex Builder 3 以及开源的 Flex 3 和 AIR SDK 的试用版可在 www.adobe.com 获取。如果你需要一个优秀的 ActionScript 编辑器，并且没有 Flex Builder 或 Eclipse，可以试试 FlashDevelop，这是一个免费的 ActionScript 编辑器（www.flashdevelop.org）。
+因为 Adobe Flex 3 和 AIR SDK 是开源的，你只需要下载包含编译器的 SDK 和一个文本编辑器。当然，强烈推荐使用 Flex Builder 3。Flex 3 和 AIR 可用于 Windows、Mac OS X 和 Linux 平台。Flex Builder 3 以及开源的 Flex 3 和 AIR SDK 的试用版可在[`www.adobe.com`](http://www.adobe.com)获取。如果你需要一个优秀的 ActionScript 编辑器，并且没有 Flex Builder 或 Eclipse，可以试试 FlashDevelop，这是一个免费的 ActionScript 编辑器（[`www.flashdevelop.org`](http://www.flashdevelop.org)）。
 
 ## 约定
 
@@ -173,310 +181,319 @@ Adobe Flex 3 的发布，包含 AIR SDK（软件开发工具包），标志着 A
 
 至于文本中的样式：
 
--   新术语和重要词语在引入时以斜体显示。
--   键盘按键显示如下：Ctrl+A。
--   文件名、URL 和代码在文本中显示如下：persistence.properties。
--   代码以两种不同的方式呈现：
+- 新术语和重要词语在引入时以斜体显示。
+- 键盘按键显示如下：`Ctrl+A`。
+- 文件名、URL 和代码在文本中显示如下：`persistence.properties`。
+- 代码以两种不同的方式呈现：
 
-```
+```text
 大多数代码示例使用无高亮的等宽字体。
 ```
 
-```
+```text
 灰色高亮用于强调当前上下文中特别重要的代码。
 ```
 
 ## 源代码
 
-在你学习本书示例的过程中，你可以选择手动输入所有代码，或使用随书附带的源代码文件。本书中使用的所有源代码均可在 www.wrox.com 下载。访问该网站后，只需找到本书的书名（使用搜索框或标题列表之一），然后单击书籍详细信息页面上的“Download Code”链接即可获取本书的所有源代码。
+在你学习本书示例的过程中，你可以选择手动输入所有代码，或使用随书附带的源代码文件。本书中使用的所有源代码均可在[`www.wrox.com`](http://www.wrox.com)下载。访问该网站后，只需找到本书的书名（使用搜索框或标题列表之一），然后单击书籍详细信息页面上的“Download Code”链接即可获取本书的所有源代码。
 
-> 因为许多书籍有相似的书名，你可能会发现通过 ISBN 搜索是最简单的方法；本书的 ISBN 是 978-0-470-18207-9。
+> 因为许多书籍有相似的书名，你可能会发现通过 ISBN 搜索是最简单的方法；本书的 ISBN 是 `978-0-470-18207-9`。
 
-下载代码后，只需用你喜欢的压缩工具解压缩即可。或者，你可以访问 Wrox 的主要代码下载页面 www.wrox.com/dynamic/books/download.aspx，查看本书以及所有其他 Wrox 书籍的可用代码。
+下载代码后，只需用你喜欢的压缩工具解压缩即可。或者，你可以访问 Wrox 的主要代码下载页面[`www.wrox.com/dynamic/books/download.aspx`](http://www.wrox.com/dynamic/books/download.aspx)，查看本书以及所有其他 Wrox 书籍的可用代码。
 
 ## 勘误
 
 我们竭尽全力确保文本或代码中没有错误。然而，没有人是完美的，错误确实会发生。如果你在我们的某本书中发现错误，例如拼写错误或一段有问题的代码，我们将非常感谢你的反馈。提交勘误可以为其他读者节省数小时的挫折感，同时你也在帮助我们提供更高质量的信息。
 
-要查找本书的勘误页面，请访问 www.wrox.com，并使用搜索框或标题列表之一找到书名。然后，在书籍详细信息页面上，单击“Book Errata”链接。在此页面上，你可以查看为本书提交并由 Wrox 编辑发布的所有勘误。完整的书籍列表（包括每本书的勘误链接）也可在 www.wrox.com/misc-pages/booklist.shtml 获取。
+要查找本书的勘误页面，请访问[`www.wrox.com`](http://www.wrox.com)，并使用搜索框或标题列表之一找到书名。然后，在书籍详细信息页面上，单击“Book Errata”链接。在此页面上，你可以查看为本书提交并由 Wrox 编辑发布的所有勘误。完整的书籍列表（包括每本书的勘误链接）也可在[`www.wrox.com/misc-pages/booklist.shtml`](http://www.wrox.com/misc-pages/booklist.shtml)获取。
 
-如果你没有在“Book Errata”页面上发现“你的”错误，请访问 www.wrox.com/contact/techsupport.shtml 并填写表格，将你发现的错误发送给我们。我们将检查信息，如果合适，会在本书的勘误页面上发布消息，并在后续版本中修正该问题。
+如果你没有在“Book Errata”页面上发现“你的”错误，请访问[`www.wrox.com/contact/techsupport.shtml`](http://www.wrox.com/contact/techsupport.shtml)并填写表格，将你发现的错误发送给我们。我们将检查信息，如果合适，会在本书的勘误页面上发布消息，并在后续版本中修正该问题。
 
 ## p2p.wrox.com
 
-要进行作者和同行讨论，请加入 p2p.wrox.com 的 P2P 论坛。这些论坛是一个基于 Web 的系统，你可以发布与 Wrox 书籍及相关技术相关的消息，并与其他读者和技术用户互动。论坛提供订阅功能，当有新帖子发布时，会通过电子邮件发送你选择的感兴趣主题。Wrox 作者、编辑、其他行业专家以及你的读者同行都在这些论坛上。
+要进行作者和同行讨论，请加入[`p2p.wrox.com`](http://p2p.wrox.com)的 P2P 论坛。这些论坛是一个基于 Web 的系统，你可以发布与 Wrox 书籍及相关技术相关的消息，并与其他读者和技术用户互动。论坛提供订阅功能，当有新帖子发布时，会通过电子邮件发送你选择的感兴趣主题。Wrox 作者、编辑、其他行业专家以及你的读者同行都在这些论坛上。
 
-在 http://p2p.wrox.com 上，你会发现许多不同的论坛，它们不仅能在你阅读本书时提供帮助，也能在你开发自己的应用程序时提供帮助。要加入论坛，只需按照以下步骤操作：
+在[`http://p2p.wrox.com`](http://p2p.wrox.com)上，你会发现许多不同的论坛，它们不仅能在你阅读本书时提供帮助，也能在你开发自己的应用程序时提供帮助。要加入论坛，只需按照以下步骤操作：
 
-1.  访问 p2p.wrox.com 并单击“Register”链接。
-2.  阅读使用条款并单击“Agree”。
+1. 访问[`p2p.wrox.com`](http://p2p.wrox.com)并单击“Register”链接。
+2. 阅读使用条款并单击“Agree”。
+3. 填写必要的信息以加入，并填写任何您希望提供的可选信息，然后点击提交。
+4. 您将收到一封电子邮件，其中包含如何验证您的账户并完成加入过程的信息。
 
-
-
-# 简介
-
-1.  填写必要的信息以加入，并填写任何您希望提供的可选信息，然后点击提交。
-2.  您将收到一封电子邮件，其中包含如何验证您的账户并完成加入过程的信息。
-
-> 您无需加入P2P即可在论坛中阅读消息，但要发布自己的消息，您必须加入。
+> 您无需加入 P2P 即可在论坛中阅读消息，但要发布自己的消息，您必须加入。
 
 加入后，您可以发布新消息并回复其他用户发布的消息。您可以随时在线阅读消息。如果您希望将特定论坛的新消息通过电子邮件发送给您，请在论坛列表中点击论坛名称旁边的“订阅此论坛”图标。
 
-有关如何使用Wrox P2P的更多信息，请务必阅读P2P常见问题解答，以获取有关论坛软件如何工作的问题的答案，以及许多针对P2P和Wrox书籍的常见问题。要阅读常见问题解答，请点击任何P2P页面上的FAQ链接。
+有关如何使用 Wrox P2P 的更多信息，请务必阅读 P2P 常见问题解答，以获取有关论坛软件如何工作的问题的答案，以及许多针对 P2P 和 Wrox 书籍的常见问题。要阅读常见问题解答，请点击任何 P2P 页面上的 FAQ 链接。
 
-# 第1章 开发环境
+# 第 1 章 开发环境
 
-一个可靠的开发环境将在您准备调试和部署应用程序时为您节省大量时间。本章介绍如何安装和使用命令行工具来构建AIR（Adobe Integrated Runtime）应用程序。本章的格式与后续章节略有不同，因为它介绍了在AIR中构建应用程序的开发过程，并概述了常用工具。
+一个可靠的开发环境将在您准备调试和部署应用程序时为您节省大量时间。本章介绍如何安装和使用命令行工具来构建 AIR（Adobe Integrated Runtime）应用程序。本章的格式与后续章节略有不同，因为它介绍了在 AIR 中构建应用程序的开发过程，并概述了常用工具。
 
-下一节“SDK安装”解释了从哪里下载以及如何安装Flex 3 SDK，该SDK包含构建Flex和AIR应用程序所需的所有工具和API（应用程序编程接口）。本节涵盖开发环境的基础知识，并简要概述了本书中用于部署AIR应用程序的命令行工具。
+下一节“SDK 安装”解释了从哪里下载以及如何安装 Flex 3 SDK，该 SDK 包含构建 Flex 和 AIR 应用程序所需的所有工具和 API（应用程序编程接口）。本节涵盖开发环境的基础知识，并简要概述了本书中用于部署 AIR 应用程序的命令行工具。
 
-“构建您的第一个应用程序”部分将引导您完成构建第一个AIR应用程序的过程，重点是如何使用命令行工具来部署、调试和打包您的应用程序以进行安装。
+“构建您的第一个应用程序”部分将引导您完成构建第一个 AIR 应用程序的过程，重点是如何使用命令行工具来部署、调试和打包您的应用程序以进行安装。
 
-“安装与卸载”部分探讨了AIR应用程序的安装过程以及应用程序文件在用户机器上的存储方式。
+“安装与卸载”部分探讨了 AIR 应用程序的安装过程以及应用程序文件在用户机器上的存储方式。
 
-最后的“额外工具”部分介绍了两种帮助开发者简化开发过程的额外方法：一种Apache Ant构建方案，用于帮助自动化构建过程；以及一个简单的调试面板，用于接收来自AIR应用程序的基本跟踪语句。
+最后的“额外工具”部分介绍了两种帮助开发者简化开发过程的额外方法：一种 Apache Ant 构建方案，用于帮助自动化构建过程；以及一个简单的调试面板，用于接收来自 AIR 应用程序的基本跟踪语句。
 
-## SDK安装
+## SDK 安装
 
-Adobe AIR是一个跨平台运行时，用于运行在AIR框架下编译的桌面应用程序。通过包含两种主要的Web技术Flash和HTML，Adobe AIR使开发人员能够向桌面传递相同的富互联网应用程序体验。我们假设您没有集成开发环境，例如Adobe FlexBuilder，它结合了文本编辑器、必要的编译器、调试器以及其他对您的AIR应用程序有用的工具。虽然欢迎您使用任何您选择的IDE来辅助应用程序开发，但本书中的所有示例都是使用本节讨论的软件开发工具包和命令行进行部署和打包的。在本章后面，您将学习如何通过使用Apache Ant构建方案使此过程更加顺畅，同时构建您的第一个AIR应用程序——无处不在的*Hello World*。
+Adobe AIR 是一个跨平台运行时，用于运行在 AIR 框架下编译的桌面应用程序。通过包含两种主要的 Web 技术 Flash 和 HTML，Adobe AIR 使开发人员能够向桌面传递相同的富互联网应用程序体验。我们假设您没有集成开发环境，例如 Adobe Flex Builder，它结合了文本编辑器、必要的编译器、调试器以及其他对您的 AIR 应用程序有用的工具。虽然欢迎您使用任何您选择的 IDE 来辅助应用程序开发，但本书中的所有示例都是使用本节讨论的软件开发工具包和命令行进行部署和打包的。在本章后面，您将学习如何通过使用 Apache Ant 构建方案使此过程更加顺畅，同时构建您的第一个 AIR 应用程序——无处不在的 `Hello World`。
 
 ### 必要文件
 
-首先，您需要安装AIR（Adobe Integrated Runtime）。如果您的机器上尚未安装，请访问www.adobe.com/go/air下载AIR运行时。由于这是一本关于开发AIR应用程序的书，而不一定是对AIR运行时或Flash软件本身的概述，因此建议您遵循Adobe提供的安装运行时文档，并在您决定自定义AIR运行时安装时参考制造商指南。
+首先，您需要安装 AIR（Adobe Integrated Runtime）。如果您的机器上尚未安装，请访问[`www.adobe.com/go/air`](http://www.adobe.com/go/air)下载 AIR 运行时。由于这是一本关于开发 AIR 应用程序的书，而不一定是对 AIR 运行时或 Flash 软件本身的概述，因此建议您遵循 Adobe 提供的安装运行时文档，并在您决定自定义 AIR 运行时安装时参考制造商指南。
 
-一旦安装了AIR运行时，就该开始设置一个可靠的环境了，该环境将使您能够在开发过程中不必考虑流程的这一方面即可交付应用程序。您将可以自由地进行编码，而当需要调试或部署时，系统将到位以处理这些阶段的所有方面。
+一旦安装了 AIR 运行时，就该开始设置一个可靠的环境了，该环境将使您能够在开发过程中不必考虑流程的这一方面即可交付应用程序。您将可以自由地进行编码，而当需要调试或部署时，系统将到位以处理这些阶段的所有方面。
 
-对于这个开发环境，您需要下载Flex 3 SDK，它包含AIR API和所有必需的命令行工具。AIR SDK也适用于使用HTML或AJAX创建应用程序的开发人员，尽管本书中的示例主要是在Flex中构建的。
+对于这个开发环境，您需要下载 Flex 3 SDK，它包含 AIR API 和所有必需的命令行工具。AIR SDK 也适用于使用 HTML 或 AJAX 创建应用程序的开发人员，尽管本书中的示例主要是在 Flex 中构建的。
 
-## SDK安装
-
-本节说明如何下载和安装Adobe提供的软件开发工具包，以及如何配置设置以使用其中的命令行工具。
-
-### Flex 3 SDK
-
-从http://opensource.adobe.com/wiki/display/flexsdk/Flex+SDK下载Adobe Flex 3 SDK。下载完成后，在您下载文件的目录中将有一个名为flex_sdk_3（或类似名称）的文件可用。在本例中，该目录是桌面。将flex_sdk_3的内容解压到一个反映您工作方式和文件组织方式的目录中。在以下示例中，Flex 3 SDK安装在Windows上的C:/flex_sdk_3和Mac OS X上的/Applications/flex_sdk_3。如果您的安装目录不同，请将所有对此安装目录的引用更改为Flex SDK的实际安装位置。
-
-向系统属性添加路径，以便在我们的开发过程中调用一些有价值的可执行文件。您主要关心的文件（因为它们与调试和部署相关）可以在Flex SDK安装目录的/bin文件夹中找到。编译器的可执行文件调用Java程序，这些程序可以在该目录的/lib文件夹中找到。您可以选择将Java程序本身添加到CLASSPATH变量中，但您将直接访问这些本机可执行文件本身——即adt.bat、adl.exe、mxmlc.exe和amxmlc.bat。为了能够直接从命令行调用它们而无需每次都提供完整路径（例如C:/flex_sdk_3/bin），请将/bin目录添加到Path变量。
-
-在Windows上：
-
-1.  从控制面板打开“系统”。
-2.  从菜单中单击“高级”选项卡。
-3.  单击“环境变量”。
-4.  在“系统变量”网格中，找到并双击“Path”。
-5.  在“变量值”字段中，如果最后一个字符不是分号（;），请输入分号，然后输入Flex SDK安装目录中/bin文件夹的路径。在本例中，该路径为;C:\flex_sdk_3\bin。
-
-在Mac OS X上：
-
-1.  打开终端并输入> open -e .profile。
-2.  如果您没有设置PATH变量，请添加以下行：
-    export PATH:$PATH://Application/flex_sdk_2/bin/
-    如果您已设置PATH变量，请先输入冒号（:）以分隔路径，然后将bin文件夹的路径添加到其后。
-
-现在您可以直接访问命令行工具了。这些工具也要求您的机器上安装了Java。您可能已经安装了Java；如果没有，请从http://java.sun.com下载JRE并将其安装到您选择的目录中。尝试获取最新的稳定版本，但请注意本书中的所有代码——包括Apache Ant构建方案——都在Java 1.5+上进行了测试。记住您安装JRE的位置，或者提醒自己其已安装位置，因为在您准备调试Hello World应用程序时可能需要该目录路径。
-
-### 命令行工具概述
-
-Flex SDK安装目录的/bin文件夹中包含了您将用于调试、部署和打包AIR应用程序的命令行工具。带有Flex徽标图标（带有文本fx的黑色圆圈）的.exe文件是Flex SDK软件包中包含的可执行文件。.bat文件和adl.exe（带有AIR徽标图标）是AIR SDK附带的可执行文件。
-
-mxmlc可执行文件是负责从MXML和ActionScript代码生成Shockwave Flash文件的编译器。它的AIR“姐妹”文件——amxmlc.bat文件——使用/frameworks文件夹中找到的air-config.xml文件来为AIR配置编译器。运行mxmlc本身使用的是也位于/frameworks文件夹中的flex-config.xml文件。在部署和调试要打包到AIR应用程序安装程序中的SWF文件时，都会调用amxmlc编译器。AIR应用程序安装程序文件是通过调用安装目录/bin文件夹中的ADT批处理文件（adt.bat）创建的。
-
-在此上下文中，术语“部署”指的是将与您的AIR应用程序打包在一起的SWF文件的创建。通过调用amxmlc编译器，并将您的主.mxml文件作为参数，将生成一个SWF文件。但是，在此操作期间不会启动SWF文件，并且仅使用amxmlc编译器无法让您预览在AIR运行时环境中运行的Flash影片。运行AIR调试启动器将启动由amxmlc编译器生成的SWF文件。
+## SDK 安装
 
 
 
-## 第一章：开发环境
+本节说明如何下载和安装 Adobe 提供的软件开发工具包，以及如何配置设置以使用其中的命令行工具。
+
+## Flex 3 SDK
+
+从 `http://opensource.adobe.com/wiki/display/flexsdk/Flex+SDK` 下载 Adobe Flex 3 SDK。下载完成后，在您下载文件的目录中将有一个名为 `flex_sdk_3`（或类似名称）的文件可用。在本例中，该目录是桌面。将 `flex_sdk_3` 的内容解压到一个反映您工作方式和文件组织方式的目录中。在以下示例中，Flex 3 SDK 安装在 Windows 上的 `C:/flex_sdk_3` 和 Mac OS X 上的 `/Applications/flex_sdk_3`。如果您的安装目录不同，请将所有对此安装目录的引用更改为 Flex SDK 的实际安装位置。
+
+向系统属性添加路径，以便在我们的开发过程中调用一些有价值的可执行文件。您主要关心的文件（因为它们与调试和部署相关）可以在 Flex SDK 安装目录的 `/bin` 文件夹中找到。编译器的可执行文件调用 Java 程序，这些程序可以在该目录的 `/lib` 文件夹中找到。您可以选择将 Java 程序本身添加到 `CLASSPATH` 变量中，但您将直接访问这些本机可执行文件本身——即 `adt.bat`、`adl.exe`、`mxmlc.exe` 和 `amxmlc.bat`。为了能够直接从命令行调用它们而无需每次都提供完整路径（例如 `C:/flex_sdk_3/bin`），请将 `/bin` 目录添加到 `Path` 变量。
+
+### 在 Windows 上
+
+1. 从控制面板打开“系统”。
+2. 从菜单中单击“高级”选项卡。
+3. 单击“环境变量”。
+4. 在“系统变量”网格中，找到并双击“Path”。
+5. 在“变量值”字段中，如果最后一个字符不是分号（`;`），请输入分号，然后输入 Flex SDK 安装目录中 `/bin` 文件夹的路径。在本例中，该路径为 `;C:\flex_sdk_3\bin`。
+
+### 在 Mac OS X 上
+
+1. 打开终端并输入 `open -e .profile`。
+2. 如果您没有设置 `PATH` 变量，请添加以下行：
+
+   ```bash
+   export PATH:$PATH://Application/flex_sdk_2/bin/
+   ```
+
+   如果您已设置 `PATH` 变量，请先输入冒号（`:`）以分隔路径，然后将 `bin` 文件夹的路径添加到其后。
+
+现在您可以直接访问命令行工具了。这些工具也要求您的机器上安装了 Java。您可能已经安装了 Java；如果没有，请从 `http://java.sun.com` 下载 JRE 并将其安装到您选择的目录中。尝试获取最新的稳定版本，但请注意本书中的所有代码——包括 Apache Ant 构建方案——都在 Java 1.5+ 上进行了测试。记住您安装 JRE 的位置，或者提醒自己其已安装位置，因为在您准备调试 Hello World 应用程序时可能需要该目录路径。
+
+## 命令行工具概述
+
+Flex SDK 安装目录的 `/bin` 文件夹中包含了您将用于调试、部署和打包 AIR 应用程序的命令行工具。带有 Flex 徽标图标（带有文本 fx 的黑色圆圈）的 `.exe` 文件是 Flex SDK 软件包中包含的可执行文件。`.bat` 文件和 `adl.exe`（带有 AIR 徽标图标）是 AIR SDK 附带的可执行文件。
+
+`mxmlc` 可执行文件是负责从 MXML 和 ActionScript 代码生成 Shockwave Flash 文件的编译器。它的 AIR“姐妹”文件——`amxmlc.bat` 文件——使用 `/frameworks` 文件夹中找到的 `air-config.xml` 文件来为 AIR 配置编译器。运行 `mxmlc` 本身使用的是也位于 `/frameworks` 文件夹中的 `flex-config.xml` 文件。在部署和调试要打包到 AIR 应用程序安装程序中的 SWF 文件时，都会调用 `amxmlc` 编译器。AIR 应用程序安装程序文件是通过调用安装目录 `/bin` 文件夹中的 ADT 批处理文件（`adt.bat`）创建的。
+
+在此上下文中，术语“部署”指的是将与您的 AIR 应用程序打包在一起的 SWF 文件的创建。通过调用 `amxmlc` 编译器，并将您的主 `.mxml` 文件作为参数，将生成一个 SWF 文件。但是，在此操作期间不会启动 SWF 文件，并且仅使用 `amxmlc` 编译器无法让您预览在 AIR 运行时环境中运行的 Flash 影片。运行 AIR 调试启动器将启动由 `amxmlc` 编译器生成的 SWF 文件。
+
+# 第一章：开发环境
 
 此外，如果 `amxmlc` 在编译 SWF 文件时被设置为调试模式，你将有机会通过运行 ADL 和 Flash Debugger 来调试你的应用程序。
 
-当你为 AIR 应用程序创建安装程序文件时，会使用 AIR Development Tool (ADT)。AIR 安装程序文件需要进行代码签名。建议你通过链接来自证书颁发机构（如 VeriSign 和 Thawte）的证书来签名你的 AIR 应用程序，因为它能验证你（发布者）是签名者，并且应用程序未被恶意篡改——确保最终用户安装的不是伪造版本。你也可以使用 ADT 工具创建自签名证书。请注意，使用自签名证书时，你的发布者身份在安装过程中无法被验证。此外，如果你后续发布使用自签名证书的现有应用程序的更新版本，那么在创建安装程序文件时需要使用原始证书。本书中的示例包含了创建自签名证书的过程。
+当你为 AIR 应用程序创建安装程序文件时，会使用 AIR Development Tool（ADT）。AIR 安装程序文件需要进行代码签名。建议你通过链接来自证书颁发机构（如 VeriSign 和 Thawte）的证书来签名你的 AIR 应用程序，因为它能验证你（发布者）是签名者，并且应用程序未被恶意篡改——确保最终用户安装的不是伪造版本。你也可以使用 ADT 工具创建自签名证书。请注意，使用自签名证书时，你的发布者身份在安装过程中无法被验证。此外，如果你后续发布使用自签名证书的现有应用程序的更新版本，那么在创建安装程序文件时需要使用原始证书。本书中的示例包含了创建自签名证书的过程。
 
-在下一节中，你将直接开始构建，以查看通过安装 SDK 并为命令行工具设置系统路径而搭建的开发环境，将如何帮助你调试、部署和交付你的第一个 AIR 应用程序——熟悉的 *Hello World*。
+在下一节中，你将直接开始构建，以查看通过安装 SDK 并为命令行工具设置系统路径而搭建的开发环境，将如何帮助你调试、部署和交付你的第一个 AIR 应用程序——熟悉的 `Hello World`。
 
-## 构建你的第一个应用程序
+# 构建你的第一个应用程序
 
 既然你已经拥有了部署和打包 AIR 应用程序所需的文件，你应该仔细考虑你打算如何开发应用程序。创建一个你将在其中进行开发的目录同样重要，因为你将花费大部分时间在此交付产品。
 
-> *尽管本书中的示例使用了以下各节概述的项目目录结构，但它并非旨在取代你可能已有的任何组织技巧。如果这里使用的结构与你的工作流程不符，建议你采用自己的方法并相应地进行编辑。*
+> 尽管本书中的示例使用了以下各节概述的项目目录结构，但它并非旨在取代你可能已有的任何组织技巧。如果这里使用的结构与你的工作流程不符，建议你采用自己的方法并相应地进行编辑。
 
-一些 IDE 实际上会在你计算机上的 `Documents` 目录内创建一个开发目录——在 Windows 上是 User \ My Documents，在 Mac 上是 User \ Documents。虽然这是你开发环境的一个可行解决方案，但出于本书的目的，请在计算机的根驱动器上创建一个名为 `Development` 的文件夹——在 Windows 上是 C:\，在 Mac 上是硬盘驱动器名称。在此文件夹内，将包含你用于开发应用程序的软件类型的目录，包括其中任何项目的子目录。
+一些 IDE 实际上会在你计算机上的 `Documents` 目录内创建一个开发目录——在 Windows 上是 `User \ My Documents`，在 Mac 上是 `User \ Documents`。虽然这是你开发环境的一个可行解决方案，但出于本书的目的，请在计算机的根驱动器上创建一个名为 `Development` 的文件夹——在 Windows 上是 `C:\`，在 Mac 上是硬盘驱动器名称。在此文件夹内，将包含你用于开发应用程序的软件类型的目录，包括其中任何项目的子目录。
 
-在 Windows 上：
+### 在 Windows 上
 
-1.  导航到 C:\ 驱动器的根目录。
-2.  创建一个名为 `Development` 的文件夹。
-3.  在该 `Development` 文件夹内，创建一个名为 `AIR` 的文件夹。
+1. 导航到 `C:\` 驱动器的根目录。
+2. 创建一个名为 `Development` 的文件夹。
+3. 在该 `Development` 文件夹内，创建一个名为 `AIR` 的文件夹。
 
-在 Mac 上：
+### 在 Mac 上
 
-1.  导航到硬盘驱动器。
-2.  创建一个名为 `Development` 的文件夹。
-3.  在该 `Development` 文件夹内，创建一个名为 `AIR` 的文件夹。
+1. 导航到硬盘驱动器。
+2. 创建一个名为 `Development` 的文件夹。
+3. 在该 `Development` 文件夹内，创建一个名为 `AIR` 的文件夹。
 
-在此目录——C:/Development/AIR 或 /Development/AIR——中，将存放你的 AIR 项目子目录。从现在起，这将被称为“开发目录”。
+在此目录——`C:/Development/AIR` 或 `/Development/AIR`——中，将存放你的 AIR 项目子目录。从现在起，这将被称为“开发目录”。
 
-你的第一个项目将创建一个简单的 Hello World 应用程序。这个应用程序没有什么特别之处，除了 WindowedApplication 容器外，它不会涉及太多 AIR API。其目的是向你介绍编译、调试和打包应用程序。
+你的第一个项目将创建一个简单的 Hello World 应用程序。这个应用程序没有什么特别之处，除了 `WindowedApplication` 容器外，它不会涉及太多 AIR API。其目的是向你介绍编译、调试和打包应用程序。
 
-在你的开发目录中，创建一个名为 HelloWorld 的文件夹。编译和部署 AIR 应用程序至少需要两个文件：
+在你的开发目录中，创建一个名为 `HelloWorld` 的文件夹。编译和部署 AIR 应用程序至少需要两个文件：
 
-- 一个主文件——可以是 MXML (.mxml) 或 ActionScript (.as) 文件。
+- 一个主文件——可以是 MXML（`.mxml`）或 ActionScript（`.as`）文件。
 - 一个使用 XML 标记的应用程序描述符文件。
 
-本书中找到的大多数（如果不是全部）示例都有一个 MXML 文件作为应用程序的主文件。在编译时，你将把这个文件作为主文件参数提供给 amxmlc 编译器。对于 Hello World 应用程序，这将是 HelloWorld.mxml。
+本书中找到的大多数（如果不是全部）示例都有一个 MXML 文件作为应用程序的主文件。在编译时，你将把这个文件作为主文件参数提供给 `amxmlc` 编译器。对于 Hello World 应用程序，这将是 `HelloWorld.mxml`。
 
-本书中使用的项目应用程序描述符文件的命名约定是在项目名称后附加字符串 -app，但你可以根据自己的意愿命名该文件。对于 Hello World 应用程序，应用程序描述符文件名为 HelloWorld-app.xml。生成的 SWF 文件和应用程序描述符将用于在打包之前部署和预览你的应用程序。要创建 AIR 安装程序，你需要一个签名证书、生成的 SWF、应用程序描述符文件以及任何所需的辅助文件（如图形文件）。
+本书中使用的项目应用程序描述符文件的命名约定是在项目名称后附加字符串 `-app`，但你可以根据自己的意愿命名该文件。对于 Hello World 应用程序，应用程序描述符文件名为 `HelloWorld-app.xml`。生成的 SWF 文件和应用程序描述符将用于在打包之前部署和预览你的应用程序。要创建 AIR 安装程序，你需要一个签名证书、生成的 SWF、应用程序描述符文件以及任何所需的辅助文件（如图形文件）。
 
 由于 Flex 和 AIR 命令行工具在已安装的 SDK 内可用，你无需依赖 IDE，可以通过启动你最喜欢的文本编辑器继续开发。
 
-## 代码与代码解释
+# 代码与代码解释
 
 打开你最喜欢的编辑器，创建一个新文档。然后，完成以下步骤：
 
-1.  输入以下标记（或者，你可以在随附网站上本章的代码文件中找到此示例）：
+1. 输入以下标记（或者，你可以在随附网站上本章的代码文件中找到此示例）：
+
+   ```xml
+   <?xml version="1.0" encoding="UTF-8"?>
+   <application xmlns="http://ns.adobe.com/air/application/1.0">
+       <id>com.aircmr.HelloWorld</id>
+       <version>0.1</version>
+       <filename>HelloWorld</filename>
+       <name>Hello World</name>
+       <description>An AIR app to say Hello</description>
+       
+       <initialWindow>
+           <content>HelloWorld.swf</content>
+           <title>Hello World</title>
+           <systemChrome>standard</systemChrome>
+           <transparent>false</transparent>
+           <visible>true</visible>
+       </initialWindow>
+       <installFolder>AIRCMR/HelloWorld</installFolder>
+       <programMenuFolder>AIRCMR</programMenuFolder>
+   </application>
+   ```
+
+2. 将文件保存为 `HelloWorld-app.xml`，位于你之前设置的项目目录中——在 Windows 上是 `C:\Development\AIR\HelloWorld`，在 Mac 上是 `/Development/AIR/HelloWorld`。创建一个新文档并输入以下内容：
+
+   ```xml
+   <?xml version="1.0" encoding="utf-8"?>
+   <mx:WindowedApplication
+       xmlns:mx="http://www.adobe.com/2006/mxml"
+       layout="vertical"
+       windowComplete="completeHandler();">
+
+       <mx:Script>
+           <![CDATA[
+
+               // 窗口已完成初始布局并变为可见。
+               private function completeHandler():void
+               {
+               }
+
+           ]]>
+       </mx:Script>
+
+       <mx:Label text="Hello World" />
+
+   </mx:WindowedApplication>
+   ```
+
+3. 将文件保存为 `HelloWorld.mxml`，与 `HelloWorld-app.xml` 一起放在项目目录中。
+
+第一段代码片段保存为 `HelloWorld-app.xml`，是 Hello World 应用程序的描述符文件。虽然使用 `amxmlc` 编译器编译 SWF 不需要描述符文件，但对于调试、预览以及将应用程序打包以便安装是必需的。描述符文件指定了与 AIR 应用程序相关的属性。它包含在安装过程中将显示的值，以及安装后操作系统将显示的数据。描述符文件还允许你通过 `<initialWindow>` 元素节点自定义 AIR 应用程序边框——或可视化显示窗口——的外观。本示例中定义的属性只是可用属性的子集。许多属性是可选的，已省略。后续章节将在构建特定应用程序时使用它们。
+
+`application` 标签是应用程序描述符文件的根标签。`xmlns` 属性是 AIR 命名空间的 URI 引用。命名空间的最后一段（`1.0`）是运行 AIR 应用程序所需的运行时版本。根 `application` 标签的必需子元素是 `id`、`filename`、`version` 和父 `initialWindow`。`id` 元素的值必须唯一——这意味着你机器上安装的两个 AIR 应用程序不能共享相同的应用程序 ID。因此，最佳实践是使用点分隔的反向 DNS 风格字符串作为标识符。`id` 支持的字符包括 `0-9`、`a-z`、`A-Z`、点和连字符。任何特殊字符（点和连字符除外），包括空格，在启动 AIR 应用程序时都会抛出 Invalid Application 错误。对于本示例，唯一 ID 被赋予值 `com.aircmr.HelloWorld`，因为它与随附网站上本章代码中找到的示例相关。
+
+# 第一章：开发环境
+
+`filename` 元素反映了赋予应用程序的名称，并在安装程序窗口中作为“应用程序名称”的值显示。当描述符文件中设置了可选的 `programMenuFolder` 属性时，`filename` 也会显示在 Windows“开始”⇔“程序”菜单的子路径中。
+
+`version` 属性是应用程序定义的标识符，与 AIR 的版本无关。其值由开发者指定，通常遵循 `主版本号.次版本号` 的标准形式。在本例中，版本值为 `0.1`。
+
+`initialWindow` 元素包含各种可选的子元素，这些子元素与应用于初始应用程序窗口的属性相关。诸如定位和大小等属性作为 `initialWindow` 节点的子项应用，但大多数属性都有默认值，被视为可选。`title`、`systemChrome`、`transparent` 和 `visible` 属性都是可选的，但在本例中包含了它们的默认值，因为它们常用于自定义应用程序的外观。`initialWindow` 唯一必需的属性是 `content` 元素。`content` 的值是编译应用程序时生成的 SWF 文件的 URL。
+
+`name`、`description`、`installationFolder` 和 `programMenuFolder` 属性都是可选的。`description` 值显示在安装窗口中。`name` 值出现在安装窗口的标题中；它是卸载面板中可用的应用程序名称，也是赋予安装文件夹的名称。`installFolder` 元素的值指定了应用程序在操作系统应用目录中的安装位置——在 Windows 上是 `C:\Program Files`，在 Mac OS X 上是 `HD name/Applications`。`programMenuFolder` 是在 Windows“开始”⇔“程序”菜单中显示的子路径，应用程序可在 `filename` 的值下找到。此设置会被除 Windows 外的任何操作系统忽略。`installFolder` 和 `programMenuFolder` 属性值遵循与操作系统文件和文件夹命名约定相同的字符限制。
+
+在应用程序描述符文件中还可以设置更多特定于操作系统（如关联文件类型）和 AIR 应用程序外观（如图标）的属性。这些是可选的，并将在本书的应用程序中加以说明。
+
+你保存为 `HelloWorld.mxml` 的第二个代码片段是你的主应用程序文件。本书不涵盖 Flex 语言和 MXML 标记，但它确实描述了与 AIR 相关的应用程序编程接口（API）的补充和更改。一个很好的起点是 `WindowedApplication` 容器：
 
 ```xml
-<?xml version="1.0" encoding="UTF-8"?>
-<application xmlns="http://ns.adobe.com/air/application/1.0">
-    <id>com.aircmr.HelloWorld</id>
-    <version>0.1</version>
-    <filename>HelloWorld</filename>
-    <name>Hello World</name>
-    <description>An AIR app to say Hello</description>
-    
-    <initialWindow>
-        <content>HelloWorld.swf</content>
-        <title>Hello World</title>
-        <systemChrome>standard</systemChrome>
-        <transparent>false</transparent>
-        <visible>true</visible>
-    </initialWindow>
-    <installFolder>AIRCMR/HelloWorld</installFolder>
-    <programMenuFolder>AIRCMR</programMenuFolder>
-</application>
-```
-
-2.  将文件保存为 HelloWorld-app.xml，位于你之前设置的项目目录中——在 Windows 上是 C:\Development\AIR\HelloWorld，在 Mac 上是 /Development/AIR/HelloWorld。创建一个新文档并输入以下内容：
-
-```xml
-<?xml version="1.0" encoding="utf-8"?>
 <mx:WindowedApplication
     xmlns:mx="http://www.adobe.com/2006/mxml"
     layout="vertical"
     windowComplete="completeHandler();">
-
-    <mx:Script>
-        <![CDATA[
-
-            // 窗口已完成初始布局并变为可见。
-            private function completeHandler():void
-            {
-            }
-
-        ]]>
-    </mx:Script>
-
-    <mx:Label text="Hello World" />
-
-</mx:WindowedApplication>
 ```
 
-3.  将文件保存为 HelloWorld.mxml，与 HelloWorld-app.xml 一起放在项目目录中。
+`WindowedApplication` 标签定义了应用程序的容器。熟悉 Flex 语言的人习惯于将 `Application` 定义为他们的应用程序容器。实际上，`WindowedApplication` 扩展了 `Application` 组件。它具有可在描述符文件中设置并可在此标签中覆盖的额外属性，以及 `WindowedApplication` 特有的指定事件和样式。`windowComplete` 事件就是这样一个独特的事件，它在窗口的初始布局完成并变为可见时触发。`<mx:Script>` 标签中的 `completeHandler()` 方法是此事件的处理程序。目前，此方法中未执行任何操作，但将在下一节讨论 ADL 工具时添加。
 
-第一段代码片段保存为 HelloWorld-app.xml，是 Hello World 应用程序的描述符文件。虽然使用 amxmlc 编译器编译 SWF 不需要描述符文件，但对于调试、预览以及将应用程序打包以便安装是必需的。描述符文件指定了与 AIR 应用程序相关的属性。它包含在安装过程中将显示的值，以及安装后操作系统将显示的数据。描述符文件还允许你通过 <initialWindow> 元素节点自定义 AIR 应用程序边框——或可视化显示窗口——的外观。本示例中定义的属性只是可用属性的子集。许多属性是可选的，已省略。后续章节将在构建特定应用程序时使用它们。
+为了给这杯魔法加点料，包含了一个 `Label` 组件，其 `text` 属性设置为“Hello World”：
 
-application 标签是应用程序描述符文件的根标签。xmlns 属性是 AIR 命名空间的 URI 引用。命名空间的最后一段（1.0）是运行 AIR 应用程序所需的运行时版本。根 application 标签的必需子元素是 id、filename、version 和 parent initialWindow。id 元素的值必须唯一——这意味着你机器上安装的两个 AIR 应用程序不能共享相同的应用程序 ID。因此，最佳实践是使用点分隔的反向 DNS 风格字符串作为标识符。id 支持的字符包括 0-9、a-z、A-Z、点和连字符。任何特殊字符（点和连字符除外），包括空格，在启动 AIR 应用程序时都会抛出 Invalid Application 错误。对于本示例，唯一 ID 被赋予值 com.aircmr.HelloWorld，因为它与随附网站上本章代码中找到的示例相关。
-
-
-
-## 第一章：开发环境
-
-`filename`元素反映了赋予应用程序的名称，并在安装程序窗口中作为"应用程序名称"的值显示。当描述符文件中设置了可选的`programMenuFolder`属性时，`filename`也会显示在Windows"开始"⇔"程序"菜单的子路径中。
-
-`version`属性是应用程序定义的标识符，与AIR的版本无关。其值由开发者指定，通常遵循`主版本号.次版本号`的标准形式。在本例中，版本值为0.1。
-
-`initialWindow`元素包含各种可选的子元素，这些子元素与应用于初始应用程序窗口的属性相关。诸如定位和大小等属性作为`initialWindow`节点的子项应用，但大多数属性都有默认值，被视为可选。`title`、`systemChrome`、`transparent`和`visible`属性都是可选的，但在本例中包含了它们的默认值，因为它们常用于自定义应用程序的外观。`initialWindow`唯一必需的属性是`content`元素。`content`的值是编译应用程序时生成的SWF文件的URL。
-
-`name`、`description`、`installationFolder`和`programMenuFolder`属性都是可选的。`description`值显示在安装窗口中。`name`值出现在安装窗口的标题中；它是卸载面板中可用的应用程序名称，也是赋予安装文件夹的名称。`installFolder`元素的值指定了应用程序在操作系统应用目录中的安装位置——在Windows上是`C:\Program Files`，在Mac OS X上是`HD name/Applications`。`programMenuFolder`是在Windows"开始"⇔"程序"菜单中显示的子路径，应用程序可在`filename`的值下找到。此设置会被除Windows外的任何操作系统忽略。`installFolder`和`programMenuFolder`属性值遵循与操作系统文件和文件夹命名约定相同的字符限制。
-
-在应用程序描述符文件中还可以设置更多特定于操作系统（如关联文件类型）和AIR应用程序外观（如图标）的属性。这些是可选的，并将在本书的应用程序中加以说明。
-
-你保存为`HelloWorld.mxml`的第二个代码片段是你的主应用程序文件。本书不涵盖Flex语言和MXML标记，但它确实描述了与AIR相关的应用程序编程接口（API）的补充和更改。一个很好的起点是`WindowedApplication`容器：
-
-```
-<mx:WindowedApplication
-    xmlns:mx="http://www.adobe.com/2006/mxml"
-    layout="vertical"
-    windowComplete="completeHandler();">
-```
-
-`WindowedApplication`标签定义了应用程序的容器。熟悉Flex语言的人习惯于将`Application`定义为他们的应用程序容器。实际上，`WindowedApplication`扩展了`Application`组件。它具有可在描述符文件中设置并可在此标签中覆盖的额外属性，以及`WindowedApplication`特有的指定事件和样式。`windowComplete`事件就是这样一个独特的事件，它在窗口的初始布局完成并变为可见时触发。`<mx:Script>`标签中的`completeHandler()`方法是此事件的处理程序。目前，此方法中未执行任何操作，但将在下一节讨论ADL工具时添加。
-
-为了给这杯魔法加点料，包含了一个`Label`组件，其`text`属性设置为"Hello World"：
-
-```
+```xml
 <mx:Label text="Hello World" />
 ```
 
-当`WindowedApplication`标签的`layout`属性设置为"vertical"时，此标签将显示在已启动应用程序容器的顶部居中位置。到目前为止，讨论集中在应用程序安装并运行后会发生什么。现在是时候启动它了。
+当 `WindowedApplication` 标签的 `layout` 属性设置为“vertical”时，此标签将显示在已启动应用程序容器的顶部居中位置。到目前为止，讨论集中在应用程序安装并运行后会发生什么。现在是时候启动它了。
 
-## 编译、调试和打包
+# 编译、调试和打包
 
-在上一节中，你创建了编译和预览应用程序所需的文件。在本节中，你将使用Flex 3 SDK中提供的命令行工具来编译、预览和打包你的第一个AIR应用程序。
+在上一节中，你创建了编译和预览应用程序所需的文件。在本节中，你将使用 Flex 3 SDK 中提供的命令行工具来编译、预览和打包你的第一个 AIR 应用程序。
 
-### 编译
+## 编译
 
-要编译AIR应用程序，请使用`amxmlc`编译器，该编译器位于你安装Flex 3 SDK的`/bin`文件夹中——在本例中，在Windows上是`C:\flex_sdk_3\bin`，在Mac OS X上是`/Applications/flex_sdk_3/bin`。`amxmlc`编译器调用`mxmlc`编译器，并附带一个指向安装目录`/frameworks`文件夹中`air-config.xml`文件的额外参数。使用`mxmlc`工具编译Flex应用程序将加载`flex-config.xml`配置文件。两个配置文件的区别在于添加了与AIR相关的SWC文件，包括`airframework.swc`和`airoglobal.swc`。查看SDK安装目录`/frameworks`文件夹中的`air_config.xml`文件。`amxmlc`编译器工具默认使用`air-config.xml`，但你也可以使用`-load-config`编译器选项指定自己的配置文件。
 
-要生成应用程序SWF文件，首先打开命令提示符。将目录更改为`HelloWorld`项目目录——在本例中，此位置在Windows上是`C:\Development\AIR\HelloWorld`，在Mac上是`/Development/AIR/HelloWorld`。输入以下内容。
 
-在Windows上：
+要编译 AIR 应用程序，请使用 `amxmlc` 编译器，该编译器位于你安装 Flex 3 SDK 的 `/bin` 文件夹中——在本例中，在 Windows 上是 `C:\flex_sdk_3\bin`，在 Mac OS X 上是 `/Applications/flex_sdk_3/bin`。
+
+`amxmlc` 编译器调用 `mxmlc` 编译器，并附带一个指向安装目录 `/frameworks` 文件夹中 `air-config.xml` 文件的额外参数。使用 `mxmlc` 工具编译 Flex 应用程序将加载 `flex-config.xml` 配置文件。两个配置文件的区别在于添加了与 AIR 相关的 SWC 文件，包括 `airframework.swc` 和 `airoglobal.swc`。
+
+查看 SDK 安装目录 `/frameworks` 文件夹中的 `air_config.xml` 文件。`amxmlc` 编译器工具默认使用 `air-config.xml`，但你也可以使用 `-load-config` 编译器选项指定自己的配置文件。
+
+要生成应用程序 SWF 文件，首先打开命令提示符。将目录更改为 `HelloWorld` 项目目录——在本例中，此位置在 Windows 上是 `C:\Development\AIR\HelloWorld`，在 Mac 上是 `/Development/AIR/HelloWorld`。输入以下内容。
+
+在 Windows 上：
 
 ```
 > amxmlc -load-config "C:\flex_sdk_3\frameworks\air-config.xml" -output HelloWorld.swf HelloWorld.mxml
 ```
 
-在Mac上：
+在 Mac 上：
 
 ```
 > amxmlc -load-config "/Applications/flex_sdk_3/frameworks/air-config.xml" -output HelloWorld.swf HelloWorld.mxml
 ```
 
-`air-config.xml`选项指向你安装Flex 3 SDK的位置。使用`amxmlc`编译应用程序会生成一个SWF文件，但不会在你的系统上启动应用程序。如果你单击创建的SWF文件，除了默认的背景颜色外，你将看不到任何内容。这是因为它在Flash Player中运行，而不是在AIR运行时中。你将在本节后面使用ADL可执行文件启动应用程序，并使用ADT打包应用程序进行安装。但是，要执行这些操作，你首先需要使用`amxmlc`生成应用程序的SWF文件。
+`air-config.xml` 选项指向你安装 Flex 3 SDK 的位置。使用 `amxmlc` 编译应用程序会生成一个 SWF 文件，但不会在你的系统上启动应用程序。如果你单击创建的 SWF 文件，除了默认的背景颜色外，你将看不到任何内容。这是因为它在 Flash Player 中运行，而不是在 AIR 运行时中。
 
-输入的命令中故意包含了基本选项，实际上你可以输入`> amxmlc HelloWorld.mxml`并实现相同的结果。在本例中，包含了`-load-config`和`-output`选项，因为它们是你在编译应用程序时可能覆盖的常见设置。
+你将在本节后面使用 ADL 可执行文件启动应用程序，并使用 ADT 打包应用程序进行安装。但是，要执行这些操作，你首先需要使用 `amxmlc` 生成应用程序的 SWF 文件。
 
-> 可以添加`-benchmark`选项，以显示不仅在从amxmlc编译器生成SWF文件时发生的操作，还包括每个操作所花费的时间。
+输入的命令中故意包含了基本选项，实际上你可以输入 `> amxmlc HelloWorld.mxml` 并实现相同的结果。在本例中，包含了 `-load-config` 和 `-output` 选项，因为它们是你在编译应用程序时可能覆盖的常见设置。
 
-`-load-config`选项指向amxmlc编译器要读取的配置文件。这里包含它是为了表明你可以为项目指定不同的配置文件。你还有机会通过指定以下内容向`air-config.xml`文件添加自定义配置：
+> 可以添加 `-benchmark` 选项，以显示不仅在从 `amxmlc` 编译器生成 SWF 文件时发生的操作，还包括每个操作所花费的时间。
+
+`-load-config` 选项指向 `amxmlc` 编译器要读取的配置文件。这里包含它是为了表明你可以为项目指定不同的配置文件。你还有机会通过指定以下内容向 `air-config.xml` 文件添加自定义配置：
 
 ```
 -load-config+=myConfig.xml
 ```
 
-`-output`选项指定应用程序编译到的SWF文件。当省略此选项时，编译器默认将SWF文件命名为作为文件参数提供的主MXML或ActionScript文件的名称。在本例中，生成的SWF是`HelloWorld.swf`。请注意，生成的SWF文件的名称必须与应用程序描述符文件中`content`元素给出的值匹配。因此，如果你覆盖了默认输出，请确保名称与将在AIR运行时中运行的应用程序的SWF匹配。
+`-output` 选项指定应用程序编译到的 SWF 文件。当省略此选项时，编译器默认将 SWF 文件命名为作为文件参数提供的主 MXML 或 ActionScript 文件的名称。在本例中，生成的 SWF 是 `HelloWorld.swf`。
 
-此外还有一些其他可用选项，主要涉及将SWC文件添加到库路径和包含运行时共享库（RSL）文件。这些将在本书后面的项目中讨论，但已在此简单示例中省略。
+请注意，生成的 SWF 文件的名称必须与应用程序描述符文件中 `content` 元素给出的值匹配。因此，如果你覆盖了默认输出，请确保名称与将在 AIR 运行时中运行的应用程序的 SWF 匹配。
+
+此外还有一些其他可用选项，主要涉及将 SWC 文件添加到库路径和包含运行时共享库（RSL）文件。这些将在本书后面的项目中讨论，但已在此简单示例中省略。
 
 ### 预览和调试
 
-SWF文件是使用amxml编译器生成的，但你已经看到应用程序在该命令完成后不会启动，并且在Flash Player中打开SWF文件除了电影的背景颜色外不会显示任何内容。要启动和预览应用程序，请运行位于安装目录`/bin`文件夹中的AIR调试启动器（ADL）工具。运行ADL只需要应用程序描述符文件的一个参数。如果你查看描述符文件（`HelloWorld-app.xml`），你会注意到`initialWindow`元素的`content`值设置为你之前编译的SWF。
+SWF 文件是使用 `amxmlc` 编译器生成的，但你已经看到应用程序在该命令完成后不会启动，并且在 Flash Player 中打开 SWF 文件除了电影的背景颜色外不会显示任何内容。
 
-打开命令提示符，将目录更改为项目开发目录，输入以下命令，然后按Enter：
+要启动和预览应用程序，请运行位于安装目录 `/bin` 文件夹中的 AIR 调试启动器（ADL）工具。运行 ADL 只需要应用程序描述符文件的一个参数。如果你查看描述符文件（`HelloWorld-app.xml`），你会注意到 `initialWindow` 元素的 `content` 值设置为你之前编译的 SWF。
+
+打开命令提示符，将目录更改为项目开发目录，输入以下命令，然后按 Enter：
 
 ```
 > adl HelloWorld-app.xml
 ```
 
-你启动的应用程序现在在AIR运行时中运行。一切看起来都很完美，你可以看到标签中渲染的"Hello World"文本。你可以单独运行ADL来预览你的应用程序，但在开发更复杂的应用程序时，你需要一些调试支持。ADL尚未充分发挥其缩写所代表的潜力——AIR调试启动器。为此，首先在`HelloWorld.mxml`主文件中添加一条跟踪语句，并使用为amxmlc设置的`-debug`选项重新编译。
+你启动的应用程序现在在 AIR 运行时中运行。一切看起来都很完美，你可以看到标签中渲染的“Hello World”文本。
 
-1. 在文本编辑器中打开`HelloWorld.mxml`并添加以下阴影行：
+你可以单独运行 ADL 来预览你的应用程序，但在开发更复杂的应用程序时，你需要一些调试支持。ADL 尚未充分发挥其缩写所代表的潜力——AIR 调试启动器。为此，首先在 `HelloWorld.mxml` 主文件中添加一条跟踪语句，并使用为 `amxmlc` 设置的 `-debug` 选项重新编译。
+
+1. 在文本编辑器中打开 `HelloWorld.mxml` 并添加以下阴影行：
 
 ```
 <?xml version="1.0" encoding="utf-8"?>
 <mx:WindowedApplication
 ```
-
-
 
 ## 第一章：开发环境
 
@@ -502,25 +519,29 @@ windowComplete="completeHandler();">
 </mx:WindowedApplication>
 ```
 
-2.  将文件保存为 HelloWorld.mxml。打开命令提示符，并将目录更改到项目开发目录——对于本示例，在 Windows 上是 C:\Development\AIR\HelloWorld，在 Mac 上是 /Development/AIR/HelloWorld。输入以下内容并按回车键：
+2. 将文件保存为 `HelloWorld.mxml`。打开命令提示符，并将目录更改到项目开发目录——对于本示例，在 Windows 上是 `C:\Development\AIR\HelloWorld`，在 Mac 上是 `/Development/AIR/HelloWorld`。输入以下内容并按回车键：
 
 ```bash
 > amxmlc -debug HelloWorld.mxml
 ```
 
-与之前的 amxmlc 命令相比，省略了 `-load-config` 和 `-output` 选项，但生成的结果相同。此外还添加了 `-debug` 选项，以生成一个启用了调试功能的 SWF 文件。启用调试功能的 SWF 文件允许应用程序与 Flash Debugger 工具进行通信。
+与之前的 `amxmlc` 命令相比，省略了 `-load-config` 和 `-output` 选项，但生成的结果相同。此外还添加了 `-debug` 选项，以生成一个启用了调试功能的 SWF 文件。启用调试功能的 SWF 文件允许应用程序与 Flash Debugger 工具进行通信。
 
-3.  在再次运行 ADL 之前，你需要运行 Flash Debugger (FDB)，以便查看你添加到主文件 (HelloWorld.mxml) 中的 trace 语句。FDB 命令行工具可以在你安装的 Flex 3 SDK 的 `/bin` 目录中找到。由于你在本章前面已将 `/bin` 文件夹的路径添加到了系统变量中，因此你只需在命令提示符中输入 `> fdb` 即可启动调试器。
+3. 在再次运行 ADL 之前，你需要运行 Flash Debugger（FDB），以便查看你添加到主文件（`HelloWorld.mxml`）中的 `trace` 语句。FDB 命令行工具可以在你安装的 Flex 3 SDK 的 `/bin` 目录中找到。
 
-4.  打开另一个命令提示符，并通过输入以下内容并按回车键来启动 Flash Debugger：
+由于你在本章前面已将 `/bin` 文件夹的路径添加到了系统变量中，因此你只需在命令提示符中输入 `> fdb` 即可启动调试器。
+
+4. 打开另一个命令提示符，并通过输入以下内容并按回车键来启动 Flash Debugger：
 
 ```bash
 > fdb
 ```
 
-输出将以 FDB 显示提示符 `<fdb>` 结尾，这意味着你已启动 Flash Debugger，并且它已准备好运行并与启动的调试 SWF 文件连接。运行调试器使你能够在控制台中看到 ActionScript 代码中的任何 trace 语句输出。FDB 还可以执行许多其他命令，包括设置断点和处理故障；在命令提示符后的控制台中输入 `help` 可以查看这些选项。
+输出将以 FDB 显示提示符 `<fdb>` 结尾，这意味着你已启动 Flash Debugger，并且它已准备好运行并与启动的调试 SWF 文件连接。
 
-> 如果前面的操作导致控制台输出以下内容
+运行调试器使你能够在控制台中看到 ActionScript 代码中的任何 `trace` 语句输出。FDB 还可以执行许多其他命令，包括设置断点和处理故障；在命令提示符后的控制台中输入 `help` 可以查看这些选项。
+
+> 如果前面的操作导致控制台输出以下内容：
 
 ```
 Error: could not find a JVM
@@ -530,21 +551,21 @@ Error: could not find a JVM
 
 Windows 用户必须使用正斜杠或双反斜杠来指定位置。否则，当你尝试启动 FDB 时，错误会再次出现。
 
-5.  要运行调试器，请在控制台中输入命令 **run** 并按回车键：
+5. 要运行调试器，请在控制台中输入命令 `run` 并按回车键：
 
 ```bash
 <fdb> run
 ```
 
-如果出现安全警报提示，请求关于运行 FDB 的协助，请从选项中选择 "Unblock"。控制台将显示 "Waiting for Player to Connect。"
+如果出现安全警报提示，请求关于运行 FDB 的协助，请从选项中选择“Unblock”。控制台将显示“Waiting for Player to Connect”。
 
-6.  打开另一个命令提示符，并将目录更改到项目开发环境。对于本示例，在 Windows 上是 C:\Development\AIR\HelloWorld，在 Mac 上是 /Development/AIR/HelloWorld。输入以下命令并按回车键：
+6. 打开另一个命令提示符，并将目录更改到项目开发环境。对于本示例，在 Windows 上是 `C:\Development\AIR\HelloWorld`，在 Mac 上是 `/Development/AIR/HelloWorld`。输入以下命令并按回车键：
 
 ```bash
 > adl HelloWorld-app.xml
 ```
 
-7.  切换到启动 Flash Debugger 的控制台。你会看到 Flash Player 已连接，调试器正在等待执行更多命令。输入以下内容并按回车键：
+7. 切换到启动 Flash Debugger 的控制台。你会看到 Flash Player 已连接，调试器正在等待执行更多命令。输入以下内容并按回车键：
 
 ```bash
 <fdb> continue
@@ -556,29 +577,35 @@ Windows 用户必须使用正斜杠或双反斜杠来指定位置。否则，当
 Additional ActionScript code has been loaded from a SWF or a frame. Set additional breakpoints as desired, and then type 'continue'.
 ```
 
-8.  再次输入 **continue** 命令并按回车键。控制台将打印出你添加到 HelloWorld.mxml 中的 trace 语句：
+8. 再次输入 `continue` 命令并按回车键。控制台将打印出你添加到 `HelloWorld.mxml` 中的 `trace` 语句：
 
 ```
 [trace] Hello World!
 ```
 
-通过使用 ADL 启动调试版本的应用程序，你可以使用 trace 语句进行简单的调试，并且如果需要，可以通过设置断点和故障处理来获得更强大的调试平台。要停止 Flash Debugger，请选择其运行的命令提示符，然后在 Windows 上按 Ctrl+C，在 Mac 上按 Q。
+通过使用 ADL 启动调试版本的应用程序，你可以使用 `trace` 语句进行简单的调试，并且如果需要，可以通过设置断点和故障处理来获得更强大的调试平台。要停止 Flash Debugger，请选择其运行的命令提示符，然后在 Windows 上按 Ctrl+C，在 Mac 上按 Q。
 
 ## 打包
 
-此时，你的 AIR 应用程序的 SWF 文件已编译完成，你也有了描述符文件。你还通过 FDB 运行了一个调试版本以确保一切正常工作。在继续打包你的应用程序之前，如果你创建了一个调试版的 SWF，你可能需要在不使用调试选项的情况下再次运行 amxmlc 编译器，以生成将包含在安装程序文件中的 SWF 文件。
+此时，你的 AIR 应用程序的 SWF 文件已编译完成，你也有了描述符文件。你还通过 FDB 运行了一个调试版本以确保一切正常工作。
 
-现在剩下的是使用 AIR Developer Tool (ADT) 将应用程序打包成一个用于安装的 AIR 文件。ADT 批处理文件可以在 AIR 安装目录的 `/bin` 文件夹中找到，它包含用于创建和签署证书以及创建 AIR 应用程序安装程序文件的命令。
+在继续打包你的应用程序之前，如果你创建了一个调试版的 SWF，你可能需要在不使用调试选项的情况下再次运行 `amxmlc` 编译器，以生成将包含在安装程序文件中的 SWF 文件。
 
-准备一个 AIR 安装程序文件是一个多步骤的过程，因为每个应用程序都必须使用数字证书进行签名。如前所述，你可以通过链接来自证书颁发机构（如 VeriSign 或 Thawte）的证书来签署你的 AIR 应用程序，或者你可以使用 ADT 创建一个自签名证书。使用来自受认可提供商的证书可以向用户保证他们安装的不是你的 AIR 应用程序的欺诈副本。使用自签名证书不提供验证签署者身份的信息，但出于本书中使用的示例目的，你构建的应用程序将使用自签名证书。
+现在剩下的是使用 AIR Developer Tool（ADT）将应用程序打包成一个用于安装的 AIR 文件。ADT 批处理文件可以在 AIR 安装目录的 `/bin` 文件夹中找到，它包含用于创建和签署证书以及创建 AIR 应用程序安装程序文件的命令。
+
+准备一个 AIR 安装程序文件是一个多步骤的过程，因为每个应用程序都必须使用数字证书进行签名。如前所述，你可以通过链接来自证书颁发机构（如 VeriSign 或 Thawte）的证书来签署你的 AIR 应用程序，或者你可以使用 ADT 创建一个自签名证书。
+
+使用来自受认可提供商的证书可以向用户保证他们安装的不是你的 AIR 应用程序的欺诈副本。使用自签名证书不提供验证签署者身份的信息，但出于本书中使用的示例目的，你构建的应用程序将使用自签名证书。
 
 要在将应用程序打包成 AIR 安装程序文件时创建证书，请打开命令提示符并将目录更改到 Hello World 项目的开发文件夹。输入以下命令并按回车键：
 
 ```bash
->adt -certificate -cn HelloWorld 1024-RSA certificate.pfx password
+> adt -certificate -cn HelloWorld 1024-RSA certificate.pfx password
 ```
 
-此生成证书和关联私钥的命令中包含通用名称、用于证书的密钥类型（1024-RSA 或 2048-RSA）、生成的证书文件路径（使用 `.pfx` 或 `.p12` 扩展名）以及在签署 AIR 文件时使用的密码。要了解在使用 ADT `-certificate` 命令时可以添加的其他操作参数（例如你的组织名称），请参阅 AIR 文档或在命令提示符处输入 `> adt -help`。
+此生成证书和关联私钥的命令中包含通用名称、用于证书的密钥类型（1024-RSA 或 2048-RSA）、生成的证书文件路径（使用 `.pfx` 或 `.p12` 扩展名）以及在签署 AIR 文件时使用的密码。
+
+要了解在使用 ADT `-certificate` 命令时可以添加的其他操作参数（例如你的组织名称），请参阅 AIR 文档或在命令提示符处输入 `> adt -help`。
 
 证书和私钥存储在 PKCS12 类型的密钥库文件中，该文件用于使用 ADT 工具的 `-package` 命令签署和打包 AIR 文件。
 
@@ -588,46 +615,56 @@ Additional ActionScript code has been loaded from a SWF or a frame. Set addition
 > adt -package -storetype pkcs12 -keystore certificate.pfx HelloWorld.air HelloWorld-app.xml HelloWorld.swf
 ```
 
-`-storetype` 参数值是用于存储私钥和证书的 PKCS（公钥加密标准）标准版本。容器或密钥库（在上一个 `-certificate` 命令中创建，并在此处作为 `-keystore` 参数的 `certificate.pfx` 提供）使用密码加密。当你运行 `-package` 命令时，系统将提示你输入创建证书时提供的密码。
+`-storetype` 参数值是用于存储私钥和证书的 PKCS（公钥加密标准）标准版本。容器或密钥库（在上一个 `-certificate` 命令中创建，并在此处作为 `-keystore` 参数的 `certificate.pfx` 提供）使用密码加密。
 
-在 `-package` 命令的签名选项之后，是生成的 AIR 文件名称、应用程序描述符文件以及应用程序 SWF 文件。除了应用程序 SWF 文件之外，你还可以指定要添加到构建中的其他以空格分隔的文件和目录。其他值（以空格分隔）可以包括任何需要与你的应用程序一起打包的图标文件或嵌入式媒体。但是，这些文件和目录需要位于当前目录或运行 ADT 的任何子目录中。因此，你可以使用 `-C` 选项来更改包含文件的目录。
+当你运行 `-package` 命令时，系统将提示你输入创建证书时提供的密码。
+
+在 `-package` 命令的签名选项之后，是生成的 AIR 文件名称、应用程序描述符文件以及应用程序 SWF 文件。除了应用程序 SWF 文件之外，你还可以指定要添加到构建中的其他以空格分隔的文件和目录。
+
+其他值（以空格分隔）可以包括任何需要与你的应用程序一起打包的图标文件或嵌入式媒体。但是，这些文件和目录需要位于当前目录或运行 ADT 的任何子目录中。因此，你可以使用 `-C` 选项来更改包含文件的目录。
 
 例如，你可能在 HelloWorld 项目中有以下文件夹结构：
 
-
-
 ## 第一章：开发环境
 
+```text
 /assets
+
 /images
+
 HelloWorld.png
+
 /bin
+
 HelloWorld.swf
-
-通过使用 `-C` 选项运行以下命令，您可以将这些文件包含在构建中：
-
 ```
->adt - package -storetype pkcs12 -keystore certificate.pfx HelloWorld.air
+
+通过使用 `-C` 选项运行以下命令，你可以将这些文件包含在构建中：
+
+```bash
+> adt -package -storetype pkcs12 -keystore certificate.pfx HelloWorld.air
 HelloWorld-app.xml -C ./bin HelloWorld.swf -C ./assets/images HelloWorld.png
 ```
 
-使用 `-C` 选项时，当前目录与目录路径中指定文件之间的相对路径将在安装文件夹内保持其结构。例如，指定 `-C modules/module.swf` 将把 `module.swf` 文件放置在应用目录中一个名为 `modules` 的子目录下。所有未使用相对路径指定的文件将包含在包目录的根目录中。如果您希望在应用目录内拥有特定的目录结构，则可以使用 `-e` 命令行选项，该选项允许您将文件放置在指定的目录中。
+使用 `-C` 选项时，当前目录与目录路径中指定文件之间的相对路径将在安装文件夹内保持其结构。例如，指定 `-C modules/module.swf` 将把 `module.swf` 文件放置在应用目录中一个名为 `modules` 的子目录下。
 
-无论您是否选择使用 `-C` 选项来指定包文件，如果一切顺利，在运行此命令并输入密码后，项目目录中将生成一个名为 `HelloWorld.air` 的 AIR 安装文件。
+所有未使用相对路径指定的文件将包含在包目录的根目录中。如果你希望在应用目录内拥有特定的目录结构，则可以使用 `-e` 命令行选项，该选项允许你将文件放置在指定的目录中。
+
+无论你是否选择使用 `-C` 选项来指定包文件，如果一切顺利，在运行此命令并输入密码后，项目目录中将生成一个名为 `HelloWorld.air` 的 AIR 安装文件。
 
 ## 安装与卸载
 
-安装 AIR 应用程序就像双击 AIR 安装文件一样简单。本节将向您展示如何安装 Hello World 应用程序，并解释应用程序安装时系统层面发生了什么。您还将了解如何卸载 AIR 应用程序以及卸载的结果。
+安装 AIR 应用程序就像双击 AIR 安装文件一样简单。本节将向你展示如何安装 Hello World 应用程序，并解释应用程序安装时系统层面发生了什么。你还将了解如何卸载 AIR 应用程序以及卸载的结果。
 
 ### 安装 Hello World 应用程序
 
-双击您之前生成的 `HelloWorld.air` 文件，它通常位于其默认位置。双击 AIR 文件后，将显示如图 1-1 所示的对话框。
+双击你之前生成的 `HelloWorld.air` 文件，它通常位于其默认位置。双击 AIR 文件后，将显示如图 1-1 所示的对话框。
 
-在图 1-1 所示的安装程序窗口中，您将看到在 `HelloWorld-app.xml` 描述符文件的 `filename` 元素中指定的应用程序名称。您还可以看到安装或取消的选项。单击安装按钮后，将显示如图 1-2 所示的对话框。
+在图 1-1 所示的安装程序窗口中，你将看到在 `HelloWorld-app.xml` 描述符文件的 `filename` 元素中指定的应用程序名称。你还可以看到安装或取消的选项。单击安装按钮后，将显示如图 1-2 所示的对话框。
 
 图 1-2 中显示的标题和描述分别是应用程序描述符文件中为 `name` 元素和 `description` 元素指定的值。
 
-您再次被提供取消安装的选项，但请大胆继续，点击继续。窗口将短暂显示一个进度条，指示安装过程。如果您选择了在安装后启动应用程序，那么安装完成后您将看到图 1-3 所示的屏幕。
+你再次被提供取消安装的选项，但请大胆继续，点击继续。窗口将短暂显示一个进度条，指示安装过程。如果你选择了在安装后启动应用程序，那么安装完成后你将看到图 1-3 所示的屏幕。
 
 很棒，对吧？
 
@@ -639,13 +676,17 @@ HelloWorld-app.xml -C ./bin HelloWorld.swf -C ./assets/images HelloWorld.png
 
 **图 1-2**
 
-在等待大把钞票滚滚而来的同时，请浏览接下来的几节，这些节介绍了 AIR 应用程序在您的计算机上安装时发生的情况。
+在等待大把钞票滚滚而来的同时，请浏览接下来的几节，这些节介绍了 AIR 应用程序在你的计算机上安装时发生的情况。
 
 在 Windows 和 Mac OS 上：
 
-- 将应用程序安装到操作系统的程序目录中。使用为 `installFolder` 指定的路径创建一个目录，应用程序文件夹以应用程序描述符中指定的 `name` 值命名。这被称为*应用程序目录*，您可以使用 AIR API 中的 `File` 类来访问它，正如您将在本书的示例中看到的那样。对于本章中的示例，您将在 Windows 上的 `C:\Program Files\AIRCMR\HelloWorld\Hello World` 和 Mac OS X 上的 `HD/Applications/AIRCMR/HelloWorld` 找到应用程序安装位置。
-- 创建一个以应用程序描述符文件中 `id` 元素的值命名的应用程序存储目录。在此目录内创建一个名为 `Local Store` 的文件夹。这被称为*应用程序存储目录*，您可以使用 AIR API 中的 `File` 类来访问它。对于本章中的示例，您将在 Windows 上的 `C:\Documents and Settings\<user>\Application Data\com.aircmr.HelloWorld` 和 Mac OS 上的 `Users/<user>/Library/Preferences/com.aircmr.HelloWorld` 找到存储目录。
-- 如果您在安装窗口中选择创建快捷方式，则在桌面上添加一个以描述符文件中的 `filename` 元素命名的快捷方式。
+- 将应用程序安装到操作系统的程序目录中。使用为 `installFolder` 指定的路径创建一个目录，应用程序文件夹以应用程序描述符中指定的 `name` 值命名。这被称为*应用程序目录*，你可以使用 AIR API 中的 `File` 类来访问它，正如你将在本书的示例中看到的那样。对于本章中的示例，你将在 Windows 上的 `C:\Program Files\AIRCMR\HelloWorld\Hello World` 和 Mac OS X 上的 `HD/Applications/AIRCMR/HelloWorld` 找到应用程序安装位置。
+
+- 创建一个以应用程序描述符文件中 `id` 元素的值命名的应用程序存储目录。在此目录内创建一个名为 `Local Store` 的文件夹。这被称为*应用程序存储目录*，你可以使用 AIR API 中的 `File` 类来访问它。对于本章中的示例，你将在 Windows 上的 `C:\Documents and Settings\<user>\Application Data\com.aircmr.HelloWorld` 和 Mac OS 上的 `Users/<user>/Library/Preferences/com.aircmr.HelloWorld` 找到存储目录。
+
+
+
+- 如果您在安装窗口中选择创建快捷方式，则会在桌面上添加一个以描述符文件中`filename`元素命名的快捷方式。
 
 ![](img/dea8bb18fb213671e2a7e04d8fb0d89f_36_0.png)
 
@@ -653,12 +694,12 @@ HelloWorld-app.xml -C ./bin HelloWorld.swf -C ./assets/images HelloWorld.png
 
 **仅限 Windows：**
 
-- 将应用程序添加到开始菜单中的 `AIRCMR/HelloWorld` 下——分别是为 `programMenuFolder` 和 `filename` 提供的值。
-- 将名为 Hello World 的应用程序（即描述符文件中作为 `name` 提供的值）添加到控制面板中可用的“添加或删除程序”列表中。
+- 将应用程序添加到开始菜单中的`AIRCMR/HelloWorld`下——分别是为`programMenuFolder`和`filename`提供的值。
+- 将名为 Hello World 的应用程序（即描述符文件中作为`name`提供的值）添加到控制面板中可用的“添加或删除程序”列表中。
 
-导航到安装文件夹。在 Mac 上，按住 Ctrl 键并单击 Hello World 应用程序，然后从菜单中选择“显示包内容”。此目录的根目录中包含您打包 AIR 文件时在 ADT 参数中指定的文件。此目录中还包含应用程序的可执行文件和应用程序描述符文件，后者已重命名为 `application.xml` 并放置在 `META-INF/AIR` 子目录中。
+导航到安装文件夹。在 Mac 上，按住 Ctrl 键并单击 Hello World 应用程序，然后从菜单中选择“显示包内容”。此目录的根目录中包含您打包 AIR 文件时在 ADT 参数中指定的文件。此目录中还包含应用程序的可执行文件和应用程序描述符文件，后者已重命名为`application.xml`并放置在`META-INF/AIR`子目录中。
 
-*应用程序目录*和*应用程序存储目录*可以使用 AIR API 的 `File` 类来引用。这些目录在运行时为您的应用程序创建和访问资源各有其用途，本书稍后将讨论此主题。
+*应用程序目录*和*应用程序存储目录*可以使用 AIR API 的`File`类来引用。这些目录在运行时为您的应用程序创建和访问资源各有其用途，本书稍后将讨论此主题。
 
 ### 卸载 Hello World 应用程序
 
@@ -682,42 +723,51 @@ HelloWorld-app.xml -C ./bin HelloWorld.swf -C ./assets/images HelloWorld.png
 
 有些开发人员太忙了，无法在命令行中输入多个选项。为了自动化本章前面讨论的部署、调试和打包过程，可以考虑使用 Apache ANT，这是一个为此目的而流行的工具，并且非常适合您的构建过程，因为它是跨平台的，并且需要 Java，而 Java 已经在您的机器上。如果您更习惯使用其他工具来自动化构建过程，我们鼓励您这样做。但是，如果您有兴趣通过 ANT 设置构建过程，以下部分将引导您完成该过程。
 
-您可能还会发现，每次启动应用程序以调试代码时都运行 Flash 调试器，可能会在您的开发过程中造成耗时的障碍。因此，本节讨论了一个简单的调试面板的概念，该面板使用 API 的 `LocalConnection` 类与 AIR 应用程序通信。简单调试面板的代码和 ANT 构建文件可在本章在随附网站上的代码示例中找到。
+您可能还会发现，每次启动应用程序以调试代码时都运行 Flash 调试器，可能会在您的开发过程中造成耗时的障碍。因此，本节讨论了一个简单的调试面板的概念，该面板使用 API 的`LocalConnection`类与 AIR 应用程序通信。简单调试面板的代码和 ANT 构建文件可在本章在随附网站上的代码示例中找到。
 
 ### ANT 构建
 
 仅 ANT 就可以轻松地用几个章节来讲解，但为了专注于 AIR 应用程序开发，本节提供了 ANT 构建标记的简要概述，而不一定是该工具复杂的内部工作原理。虽然向您展示此解决方案是为了方便开发，但这可能并非您所好。因此，本书中的所有示例均使用本章前面描述的命令行工具运行。
 
-
-
 ## 第一章：开发环境
 
-Apache ANT（从这里开始简称为 ANT）是一个使用 XML 标记来描述自动化软件构建过程中任务和依赖关系的 Java 工具。如果你的电脑上目前没有安装 ANT，那么你需要安装它。请从 http://ant.apache.org/bindownload.cgi 下载最新发行版。
+Apache ANT（从这里开始简称为 ANT）是一个使用 XML 标记来描述自动化软件构建过程中任务和依赖关系的 Java 工具。如果你的电脑上目前没有安装 ANT，那么你需要安装它。请从`http://ant.apache.org/bindownload.cgi`下载最新发行版。
 
-将 ANT 安装在一个符合你工作流程的目录中——例如，在 Windows 上是 C:/ant。你还需要在环境变量中添加 ANT 安装路径。
+将 ANT 安装在一个符合你工作流程的目录中——例如，在 Windows 上是`C:/ant`。你还需要在环境变量中添加 ANT 安装路径。
 
-如果你使用 Mac，那么 ANT 可能已经安装。打开终端并输入 > ant -version。如果显示 "command not found" 消息，那么要么你没有在机器上安装 ANT，要么你没有设置安装 /bin 目录的路径。如果是这种情况，请将 ANT 安装在 /usr/local 目录并执行以下步骤。
+如果你使用 Mac，那么 ANT 可能已经安装。打开终端并输入：
+
+```bash
+ant -version
+```
+
+如果显示“command not found”消息，那么要么你没有在机器上安装 ANT，要么你没有设置安装`/bin`目录的路径。如果是这种情况，请将 ANT 安装在`/usr/local`目录并执行以下步骤。
 
 要在 Windows 上添加 ANT 安装路径，请按照以下步骤操作：
 
--   1. 点击开始 ⇒ 控制面板 ⇒ 系统。
-    2. 从菜单中选择高级选项卡。
-    3. 点击环境变量。
-    4. 在系统变量网格中，导航并双击 Path。
-    5. 在变量值字段中，添加一个分号 (;) 然后是你 ANT 安装目录中 /bin 文件夹的路径。本例中为 ;C:\ant\bin。
+1. 点击开始 ⇒ 控制面板 ⇒ 系统。
+2. 从菜单中选择高级选项卡。
+3. 点击环境变量。
+4. 在系统变量网格中，导航并双击`Path`。
+5. 在变量值字段中，添加一个分号（`;`），然后是你 ANT 安装目录中`/bin`文件夹的路径。本例中为`;C:\ant\bin`。
 
 要在 Mac 上添加 ANT 安装路径，请按照以下步骤操作：
 
--   1. 打开终端并输入 **open -e .profile**。
-    2. 添加一个冒号 (:) 然后是你 ANT 安装目录中 /bin 文件夹的路径。本例中为 /usr/local/ant/bin。
+1. 打开终端并输入：
 
-从命令行运行 ANT 需要一个构建文件存在于调用它的目录中。ANT 构建文件是一个 XML 标记文件，描述构建过程的任务和依赖关系。属性值也可以在构建文件中设置，使你能够在任务中使用 ${propertyname} 结构引用属性值。还可以在构建文件中设置属性文件，以将属性-值对与构建标记分开。
+   ```bash
+   open -e .profile
+   ```
+
+2. 添加一个冒号（`:`），然后是你 ANT 安装目录中`/bin`文件夹的路径。本例中为`/usr/local/ant/bin`。
+
+从命令行运行 ANT 需要一个构建文件存在于调用它的目录中。ANT 构建文件是一个 XML 标记文件，描述构建过程的任务和依赖关系。属性值也可以在构建文件中设置，使你能够在任务中使用`${propertyname}`结构引用属性值。还可以在构建文件中设置属性文件，以将属性-值对与构建标记分开。
 
 首先创建与你之前在本章中构建的 Hello World 应用相关的构建文件：
 
--   1. 在任何文本编辑器中输入以下标记：
+1. 在任何文本编辑器中输入以下标记：
 
-```
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <!-- ================================================================= -->
 <!-- AIR Application Build File (Ant)                                  -->
@@ -814,19 +864,19 @@ Apache ANT（从这里开始简称为 ANT）是一个使用 XML 标记来描述�
 </project>
 ```
 
--   2. 将文件保存为 build.xml，放在 Hello World 项目的开发目录中。
+2. 将文件保存为`build.xml`，放在 Hello World 项目的开发目录中。
 
-ANT 构建文件关联三个主要执行任务：compile、launch 和 package。运行的任务类型取决于 taskInput 任务的用户输入。compile 任务总是会被调用，因为 launch 和 package 任务的成功依赖于生成的 SWF 文件是否存在。
+ANT 构建文件关联三个主要执行任务：`compile`、`launch`和`package`。运行的任务类型取决于`taskInput`任务的用户输入。`compile`任务总是会被调用，因为`launch`和`package`任务的成功依赖于生成的 SWF 文件是否存在。
 
-除了这三个可以根据输入运行的主要任务外，还有一个在打包前创建自签名证书的任务，以及一个根据操作系统设置属性值的任务。init 任务的运行是为了设置运行 Flex 3 SDK 命令行工具所需的特定于操作系统的属性。要在 Windows 的 exec ANT 任务中运行 .bat 文件，需要包含扩展名。在 Mac OS X 上，只需文件名即可。为了使用 java 指令运行 ADT，需要 .jar 文件的路径。因此，会运行一个条件任务来根据你的操作系统评估正确的路径。
+除了这三个可以根据输入运行的主要任务外，还有一个在打包前创建自签名证书的任务，以及一个根据操作系统设置属性值的任务。`init`任务的运行是为了设置运行 Flex 3 SDK 命令行工具所需的特定于操作系统的属性。要在 Windows 的`exec` ANT 任务中运行`.bat`文件，需要包含扩展名。在 Mac OS X 上，只需文件名即可。为了使用`java`指令运行 ADT，需要`.jar`文件的路径。因此，会运行一个条件任务来根据你的操作系统评估正确的路径。
 
 要运行此构建，请打开命令提示符，导航到开发目录，然后输入以下命令：
 
-```
->ant
+```bash
+ant
 ```
 
-运行此命令后，系统将提示你输入要执行的任务——compile、launch 或 package。每个任务都会生成一个 SWF 文件。如果你选择 launch 任务，AIR 应用将使用 AIR 调试启动器 (ADL) 运行。如果你选择打包 AIR 应用，那么在 package 任务完成后，你会在开发目录中找到一个 certificate.pfx 文件和一个 HelloWorld.air 文件。
+运行此命令后，系统将提示你输入要执行的任务——`compile`、`launch`或`package`。每个任务都会生成一个 SWF 文件。如果你选择`launch`任务，AIR 应用将使用 AIR 调试启动器（ADL）运行。如果你选择打包 AIR 应用，那么在`package`任务完成后，你会在开发目录中找到一个`certificate.pfx`文件和一个`HelloWorld.air`文件。
 
 此构建文件中的属性设置相当基础，可能不适用于较大的项目。根据每个项目的需要，尝试你自己的构建文件。这些文件可以从一个开发目录移动到另一个开发目录，而不会影响自动化过程，但建议你更改任何特定于应用程序的属性值。
 
@@ -834,19 +884,19 @@ ANT 构建文件关联三个主要执行任务：compile、launch 和 package。
 
 如果你的调试任务只是日志记录或跟踪相关的，并且不依赖于单步执行断点或处理故障，那么你可能会觉得很难抽出时间打开一个单独的命令提示符来启动 Flash 调试器。创建一个简单的调试面板来处理所有跟踪语句，将是一个 AIR 应用的绝佳示例，它创建快速，并且在调试任何其他 AIR 应用时非常方便。
 
-运用你在本章学到的知识，制作你自己的简单调试面板——事实上，本章的代码示例在随附网站上就有一个可用的。源代码已包含在内，你可以根据需要修改代码。如果你有冒险精神，一个可能的附加功能是写入日志功能。SimpleDebugPanel 应用未采用特定于 AIR API 的任何内容，并使用 LocalConnection 将日志语句从你的应用传递到在 AIR 运行时下运行的调试面板。目录中包含的 README 文件概述了在应用程序中的正确用法，因为你需要将一些类文件添加到项目中，以便调试面板接收日志语句。
+运用你在本章学到的知识，制作你自己的简单调试面板——事实上，本章的代码示例在随附网站上就有一个可用的。源代码已包含在内，你可以根据需要修改代码。如果你有冒险精神，一个可能的附加功能是写入日志功能。SimpleDebugPanel 应用未采用特定于 AIR API 的任何内容，并使用`LocalConnection`将日志语句从你的应用传递到在 AIR 运行时下运行的调试面板。目录中包含的 README 文件概述了在应用程序中的正确用法，因为你需要将一些类文件添加到项目中，以便调试面板接收日志语句。
 
 ## 总结
 
 在本章中，你构建了你的第一个 AIR 项目——一个简单的 Hello World 应用，并了解了 AIR SDK 安装中提供的命令行工具。本章还包括一些用于构建和调试应用的省时解决方案。在接下来的章节中，你将构建在实际场景中实用的应用——并且，希望在此过程中能获得一些乐趣。
 
-
-
 ## 简易文本编辑器
 
 对于任何带有文件系统 API 的新技术，你可能都想知道如何向硬盘读写文件。学习这一点的最佳方式莫过于编写一个史上最通用的程序：全能文本编辑器。诚然，每个人都有自己多年来钟爱的文本编辑程序，尤其是对于开发者而言。你将在本章开发的这个文本编辑器，绝非意在取代你现有的文本编辑器，但或许它会成为你未来打造定制文本编辑器的起点，届时你可以用当前文本编辑器所缺少的所有精彩功能来扩展它！
 
-这个程序阐释了 AIR 文件系统 API 的几个要点。首先，你将使用 `File` 对象来指向硬盘上的文件。然后，本章将介绍如何使用 `FileStream` 和 `FileMode` 类来读取和写入文件（在本例中是文本文件）。最后，你将学习如何使用 `FileFilter` 类来限制用户允许打开的文件类型。
+这个程序阐释了 AIR 文件系统 API 的几个要点。首先，你将使用`File`对象来指向硬盘上的文件。然后，本章将介绍如何使用`FileStream`和`FileMode`类来读取和写入文件（在本例中是文本文件）。最后，你将学习如何使用`FileFilter`类来限制用户允许打开的文件类型。
+
+
 
 ### 文本编辑器
 
@@ -858,7 +908,7 @@ ANT 构建文件关联三个主要执行任务：compile、launch 和 package。
 
 在你的开发目录中，创建一个名为“Simple Text Editor”的文件夹。这将是该程序的工作目录。因为这个应用程序非常简单，我们从视图开始，以便快速完成这部分工作：
 
-1.  打开你的编辑器，创建一个新文档，并输入以下内容：
+1. 打开你的编辑器，创建一个新文档，并输入以下内容：
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -874,7 +924,7 @@ ANT 构建文件关联三个主要执行任务：compile、launch 和 package。
 </application>
 ```
 
-2.  将文件保存为工作目录下的 SimpleTextEditor-app.xml。再创建一个新文档，并输入以下内容：
+2. 将文件保存为工作目录下的`SimpleTextEditor-app.xml`。再创建一个新文档，并输入以下内容：
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -908,13 +958,13 @@ ANT 构建文件关联三个主要执行任务：compile、launch 和 package。
     </mx:MenuBar>
 ```
 
-3.  将文件保存为工作目录下的 SimpleTextEditor.mxml。
+3. 将文件保存为工作目录下的`SimpleTextEditor.mxml`。
 
-在第一步中，你创建了 SimpleTextEditor-app.xml，即你的应用程序描述符文件。你应该熟悉这个文件的用途。如果不熟悉，可以参考第 1 章的“Hello World”示例。
+在第一步中，你创建了`SimpleTextEditor-app.xml`，即你的应用程序描述符文件。你应该熟悉这个文件的用途。如果不熟悉，可以参考第 1 章的“Hello World”示例。
 
-你还创建了主应用程序文件的初始内容。这当然是保存为 SimpleTextEditor.mxml 的文件。与“Hello World”示例类似，你从 Apollo-Application 组件开始。这里的唯一区别是你设置了 `width` 和 `height` 属性，以便应用程序窗口初始化时会大一些。
+你还创建了主应用程序文件的初始内容。这当然是保存为`SimpleTextEditor.mxml`的文件。与“Hello World”示例类似，你从`Apollo-Application`组件开始。这里的唯一区别是你设置了`width`和`height`属性，以便应用程序窗口初始化时会大一些。
 
-你还通过使用两个 Flex 组件设置了应用程序的可视部分：MenuBar 和 TextArea。具体来说，你设置了一个位于顶部的 MenuBar，它横跨应用程序窗口的宽度，类似于 Windows 应用程序的菜单栏。MenuBar 中还填充了一个菜单集，其中包含文本编辑器所需基本命令的文本表示。除了菜单，你还添加了一个 TextArea 组件，它位于菜单下方，横跨应用程序窗口的宽度和剩余高度。此组件允许你填充文本并输入文本，以便编辑文本文件。
+你还通过使用两个 Flex 组件设置了应用程序的可视部分：`MenuBar`和`TextArea`。具体来说，你设置了一个位于顶部的`MenuBar`，它横跨应用程序窗口的宽度，类似于 Windows 应用程序的菜单栏。`MenuBar`中还填充了一个菜单集，其中包含文本编辑器所需基本命令的文本表示。除了菜单，你还添加了一个`TextArea`组件，它位于菜单下方，横跨应用程序窗口的宽度和剩余高度。此组件允许你填充文本并输入文本，以便编辑文本文件。
 
 此时你可以编译代码，看看组件的样子以及它们的行为。为此，打开命令提示符，切换到应用程序的工作目录。输入以下命令并按回车键：
 
@@ -922,7 +972,7 @@ ANT 构建文件关联三个主要执行任务：compile、launch 和 package。
 > amxmlc SimpleTextEditor.mxml
 ```
 
-应用程序现在已编译为 .swf 文件。要运行它，请输入以下命令并按回车键：
+应用程序现在已编译为`.swf`文件。要运行它，请输入以下命令并按回车键：
 
 ```bash
 > adl SimpleTextEditor-app.xml
@@ -932,15 +982,15 @@ ANT 构建文件关联三个主要执行任务：compile、launch 和 package。
 
 ![](img/dea8bb18fb213671e2a7e04d8fb0d89f_44_0.png)
 
-组件的一些属性已被设置，以使应用程序的行为不像 Web 应用程序，而更像桌面应用程序。你会注意到每个组件的 `tabEnabled` 属性都设置为 `false`。这样做是为了防止用户通过按 Tab 键来获得任一组件的焦点。这会产生不利影响，特别是如果有人想在他们的文本文件中插入一个 Tab 字符。还需注意，`TextArea` 组件的 `focusThickness` 已设置为 0。默认情况下，`TextArea` 组件会以轻微的外部发光效果高亮显示。在这种情况下，显示此效果没有意义，而且当组件拉伸到窗口边缘时，你甚至看不到完整的光晕。
+组件的一些属性已被设置，以使应用程序的行为不像 Web 应用程序，而更像桌面应用程序。你会注意到每个组件的`tabEnabled`属性都设置为`false`。这样做是为了防止用户通过按 Tab 键来获得任一组件的焦点。这会产生不利影响，特别是如果有人想在他们的文本文件中插入一个 Tab 字符。还需注意，`TextArea`组件的`focusThickness`已设置为 0。默认情况下，`TextArea`组件会以轻微的外部发光效果高亮显示。在这种情况下，显示此效果没有意义，而且当组件拉伸到窗口边缘时，你甚至看不到完整的光晕。
 
 ### 逻辑
 
-如前所述，该程序应执行两个基本任务：保存和读取文本文件。你最初可能假设需要一种方法来浏览硬盘以找到要打开的文件，并浏览硬盘以找到保存文件的位置。幸运的是，AIR 提供了一个非常简单的方法来与用户的操作系统集成以执行此类任务。因此，你无需创建任何特殊组件；所有操作都可以在一个 `.mxml` 文件中处理。
+如前所述，该程序应执行两个基本任务：保存和读取文本文件。你最初可能假设需要一种方法来浏览硬盘以找到要打开的文件，并浏览硬盘以找到保存文件的位置。幸运的是，AIR 提供了一个非常简单的方法来与用户的操作系统集成以执行此类任务。因此，你无需创建任何特殊组件；所有操作都可以在一个`.mxml`文件中处理。
 
 ### 基础
 
-如果 `SimpleTextEditor.mxml` 尚未打开，请在编辑器中打开它。对标记进行以下更改和添加：
+如果`SimpleTextEditor.mxml`尚未打开，请在编辑器中打开它。对标记进行以下更改和添加：
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -1011,7 +1061,7 @@ private function onItemClick( event:MenuEvent ):void
 </mx:WindowedApplication>
 ```
 
-此步骤对应用程序进行了一些处理。首先，它导入了你将需要的所有类，最重要的是 AIR 文件系统包中的 File、FileMode 和 FileStream 类。更重要的是，紧接着这些导入语句之后，设置了应用程序的几个变量：
+此步骤对应用程序进行了一些处理。首先，它导入了你将需要的所有类，最重要的是 AIR 文件系统包中的`File`、`FileMode`和`FileStream`类。更重要的是，紧接着这些导入语句之后，设置了应用程序的几个变量：
 
 ```actionscript
 import flash.events.KeyboardEvent;
@@ -1021,8 +1071,6 @@ import flash.filesystem.FileStream;
 import mx.controls.Alert;
 import mx.events.CloseEvent;
 ```
-
-
 
 ## 第2章：简单文本编辑器
 
@@ -1050,21 +1098,23 @@ public function onAppInit():void
 }
 ```
 
-这段代码做了一些有趣的事情，至少对于第一次使用AIR来说是这样。`defaultFile`被设置为用户文档目录中名为`untitled.txt`的文件的引用。`File`类有一些在开发AIR应用程序时非常有用的静态变量。在这里，你使用的静态变量名为`documentsDirectory`。该变量的类型是`File`，它持有用户文档目录的引用。在Windows机器上，它很可能指向`C:\Documents and Settings\User_Name\My Documents`文件夹，而在OS X机器上，它将指向`/Users/User_Name/Documents`文件夹。你还利用了`File`对象的`resolvePath`方法——具体来说，是`documentsDirectory.`。`resolvePath`方法创建了一个具有相对路径的新`File`对象。这多么方便（因此也多么有趣）啊？
+这段代码做了一些有趣的事情，至少对于第一次使用 AIR 来说是这样。`defaultFile`被设置为用户文档目录中名为`untitled.txt`的文件的引用。`File`类有一些在开发 AIR 应用程序时非常有用的静态变量。在这里，你使用的静态变量名为`documentsDirectory`。该变量的类型是`File`，它持有用户文档目录的引用。在 Windows 机器上，它很可能指向`C:\Documents and Settings\User_Name\My Documents`文件夹，而在 OS X 机器上，它将指向`/Users/User_Name/Documents`文件夹。你还利用了`File`对象的`resolvePath`方法——具体来说，是`documentsDirectory.resolvePath`。`resolvePath`方法创建了一个具有相对路径的新`File`对象。这多么方便（因此也多么有趣）啊？
 
-接下来的几行代码非常简单。首先，`textChanged`被设置为`false`，因为还没有更改任何文本。其次，添加了一个事件监听器来处理键盘输入。如前所述，Flex组件的`tabEnabled`属性被设置为`false`，以防止用户使用Tab键跳转出文本区域。这是一个不幸的需要绕过的情况，但文本编辑器的行为应该像一个文本编辑器，而不是一个Web应用程序。因此，在`onKeyUp()`事件处理程序中，有一些代码可以在用户每次按下Tab键时手动将制表符插入到文本区域中。
+接下来的几行代码非常简单。首先，`textChanged`被设置为`false`，因为还没有更改任何文本。其次，添加了一个事件监听器来处理键盘输入。如前所述，Flex 组件的`tabEnabled`属性被设置为`false`，以防止用户使用 Tab 键跳转出文本区域。这是一个不幸的需要绕过的情况，但文本编辑器的行为应该像一个文本编辑器，而不是一个 Web 应用程序。因此，在`onKeyUp()`事件处理程序中，有一些代码可以在用户每次按下 Tab 键时手动将制表符插入到文本区域中。
 
-最后对Flex组件进行了一些补充。为`MenuBar`组件添加了一个事件监听器来处理其`itemClick`事件，并且当`TextArea`组件的文本发生更改时，将`textChanged`变量设置为`false`。你现在可以编译代码了，但接下来的部分将介绍更精彩的内容。
+最后对 Flex 组件进行了一些补充。为`MenuBar`组件添加了一个事件监听器来处理其`itemClick`事件，并且当`TextArea`组件的文本发生更改时，将`textChanged`变量设置为`false`。你现在可以编译代码了，但接下来的部分将介绍更精彩的内容。
 
 ## 读写文件
 
-在你的编辑器中，对SimpleTextEditor.mxml进行以下补充：
+在你的编辑器中，对`SimpleTextEditor.mxml`进行以下补充：
+
+
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <mx:WindowedApplication xmlns:mx="http://www.adobe.com/2006/mxml"
     layout="absolute" width="800" height="600" title="Text Editor"
-    applicationComplete="onAppInit();" >
+    applicationComplete="onAppInit();">
 
     <mx:Script><![CDATA[
 
@@ -1088,49 +1138,50 @@ public function onAppInit():void
     public function onAppInit():void
     {
         title = "Text Editor - Untitled.txt";
-        defaultFile = File.documentsDirectory.resolvePath( "untitled.txt" );
+        defaultFile = File.documentsDirectory.resolvePath("untitled.txt");
         textChanged = false;
-        application.addEventListener( KeyboardEvent.KEY_UP, onKeyUp );
+        application.addEventListener(KeyboardEvent.KEY_UP, onKeyUp);
     }
 
-    private function onKeyUp( event:KeyboardEvent ):void
+    private function onKeyUp(event:KeyboardEvent):void
     {
-        if( event.keyCode == Keyboard.TAB && !event.altKey && !event.shiftKey &&
-            !event.ctrlKey )
+        if (event.keyCode == Keyboard.TAB && !event.altKey && !event.shiftKey &&
+            !event.ctrlKey)
         {
             var sb:Number = fileTextArea.selectionBeginIndex;
             var se:Number = fileTextArea.selectionEndIndex;
 
             var firstPart:String = fileTextArea.text.slice(0, sb);
-            var secondPart:String = fileTextArea.text.slice( se );
+            var secondPart:String = fileTextArea.text.slice(se);
 
             fileTextArea.text = firstPart + "\t" + secondPart;
         }
     }
-    private function onItemClick( event:MenuEvent ):void
+
+    private function onItemClick(event:MenuEvent):void
     {
     }
     ]]></mx:Script>
 ```
 
 ```actionscript
-    private function onOpenComplete( event:Event ):void
+private function onOpenComplete(event:Event):void
 {
-    var theText:String = fileStream.readUTFBytes( fileStream.bytesAvailable );
-    var lineEndPattern:RegExp = new RegExp( File.lineEnding, "g" );
+    var theText:String = fileStream.readUTFBytes(fileStream.bytesAvailable);
+    var lineEndPattern:RegExp = new RegExp(File.lineEnding, "g");
 
-    fileTextArea.text = theText.replace( lineEndPattern, "\n" );
+    fileTextArea.text = theText.replace(lineEndPattern, "\n");
     textChanged = false;
     title = "Text Editor - " + currentFile.name;
     fileStream.close();
 }
 
-private function onReadIOError( event:IOErrorEvent ):void
+private function onReadIOError(event:IOErrorEvent):void
 {
     Alert.show("无法打开指定的文件。", "错误", Alert.OK, this);
 }
 
-private function onWriteIOError( event:IOErrorEvent ):void
+private function onWriteIOError(event:IOErrorEvent):void
 {
     Alert.show("无法保存指定的文件。", "错误", Alert.OK, this);
 }
@@ -1139,36 +1190,36 @@ private function onWriteIOError( event:IOErrorEvent ):void
 ```actionscript
 private function openFile():void
 {
-    if( fileStream != null )
+    if (fileStream != null)
     {
         fileStream.close();
     }
 
     fileStream = new FileStream();
-    fileStream.addEventListener( Event.COMPLETE, onOpenComplete );
-    fileStream.addEventListener( IOErrorEvent.IO_ERROR, onReadIOError );
-    fileStream.openAsync( currentFile, FileMode.READ );
+    fileStream.addEventListener(Event.COMPLETE, onOpenComplete);
+    fileStream.addEventListener(IOErrorEvent.IO_ERROR, onReadIOError);
+    fileStream.openAsync(currentFile, FileMode.READ);
 }
 ```
 
 ```actionscript
 private function saveFile():void
 {
-    if( currentFile )
+    if (currentFile)
     {
-        if( fileStream != null )
+        if (fileStream != null)
         {
             fileStream.close();
         }
 
         var theText:String = fileTextArea.text;
-        theText = theText.replace( /\r/g, "\n" );
-        theText = theText.replace( /\n/g, File.lineEnding );
+        theText = theText.replace(/\r/g, "\n");
+        theText = theText.replace(/\n/g, File.lineEnding);
 
         fileStream = new FileStream();
-        fileStream.openAsync( currentFile, FileMode.WRITE );
-        fileStream.addEventListener( IOErrorEvent.IO_ERROR, onWriteIOError );
-        fileStream.writeUTFBytes( theText );
+        fileStream.openAsync(currentFile, FileMode.WRITE);
+        fileStream.addEventListener(IOErrorEvent.IO_ERROR, onWriteIOError);
+        fileStream.writeUTFBytes(theText);
         fileStream.close();
         textChanged = false;
     }
@@ -1180,9 +1231,9 @@ private function saveFile():void
 </mx:Script>
     <mx:MenuBar id="myMenuBar" labelField="@label"
                 left="0" top="0" right="0" tabEnabled="false"
-                itemClick="onItemClick(event);" >
+                itemClick="onItemClick(event);">
         <mx:XMLList>
-            <menuitem label="文件" >
+            <menuitem label="文件">
                 <menuitem label="新建"/>
                 <menuitem label="打开"/>
                 <menuitem label="保存"/>
@@ -1194,45 +1245,44 @@ private function saveFile():void
         top="21" left="0" right="0" bottom="0"
         focusThickness="0" fontFamily="Arial"
         fontSize="14" tabEnabled="false"
-        change="textChanged=true;" />\</mx:WindowedApplication>
+        change="textChanged=true;"/>
+</mx:WindowedApplication>
 ```
-
-
 
 ## 第二章：简单文本编辑器
 
-真正的乐趣从这里开始！查看你刚才添加的内容，注意应用程序中包含了五个新函数。这些函数是应用程序的核心，因为它们执行所有繁重的工作（实际上，这并不太难）。检查第一个函数 `openFile()`：
+真正的乐趣从这里开始！查看你刚才添加的内容，注意应用程序中包含了五个新函数。这些函数是应用程序的核心，因为它们执行所有繁重的工作（实际上，这并不太难）。检查第一个函数`openFile()`：
 
-```
+```actionscript
 private function openFile():void
 {
-    if( fileStream != null )
+    if (fileStream != null)
     {
         fileStream.close();
     }
 
     fileStream = new FileStream();
-    fileStream.addEventListener( Event.COMPLETE, onOpenComplete );
-    fileStream.addEventListener( IOErrorEvent.IO_ERROR, onReadIOError );
-    fileStream.openAsync( currentFile, FileMode.READ );
+    fileStream.addEventListener(Event.COMPLETE, onOpenComplete);
+    fileStream.addEventListener(IOErrorEvent.IO_ERROR, onReadIOError);
+    fileStream.openAsync(currentFile, FileMode.READ);
 }
 ```
 
-`openFile()` 函数用于打开 `currentFile`。在进一步操作之前，第一个条件语句检查 `fileStream` 对象是否已定义。如果已定义，则调用 `fileStream` 对象的 `close()` 方法来关闭与当前文件的连接。这只是一个安全措施。
+`openFile()`函数用于打开`currentFile`。在进一步操作之前，第一个条件语句检查`fileStream`对象是否已定义。如果已定义，则调用`fileStream`对象的`close()`方法来关闭与当前文件的连接。这只是一个安全措施。
 
-通过此条件后，`fileStream` 对象将被重新创建。新实例配置了两个事件监听器。第一个事件监听器监听 `Event` 类型的 `COMPLETE` 事件。该事件简单地表示文件的所有数据都已读入输入缓冲区。当此事件触发时，将调用 `onOpenComplete()` 函数。我们很快会详细检查此函数。第二个事件监听器监听 `IOErrorEvent` 类型的 `IO_ERROR` 事件。每当错误导致读取或写入操作失败时，`fileStream` 对象就会触发 `IOErrorEvent`。如果此事件触发，将调用 `onReadIOError()` 函数。`onReadIOError()` 函数只是向用户提示一条消息，表明在读取文件时出了问题。
+通过此条件后，`fileStream`对象将被重新创建。新实例配置了两个事件监听器。第一个事件监听器监听`Event`类型的`COMPLETE`事件。该事件简单地表示文件的所有数据都已读入输入缓冲区。当此事件触发时，将调用`onOpenComplete()`函数。我们很快会详细检查此函数。第二个事件监听器监听`IOErrorEvent`类型的`IO_ERROR`事件。每当错误导致读取或写入操作失败时，`fileStream`对象就会触发`IOErrorEvent`。如果此事件触发，将调用`onReadIOError()`函数。`onReadIOError()`函数只是向用户提示一条消息，表明在读取文件时出了问题。
 
-事件监听器全部设置完毕后，就可以调用 `fileStream` 对象的 `openAsync()` 方法了。`openAsync()` 方法需要两个参数：一个 `File` 对象和一个字符串，该字符串指定你希望 `fileStream` 对象运行的模式——在此例中，传递 `currentFile` 变量并使用 `FileMode` 类的公共静态变量 `READ` 来指定模式。`openAsync()` 方法异步打开指定文件，这意味着文件的数据会立即被读入输入缓冲区，而后续的代码将继续执行。
+事件监听器全部设置完毕后，就可以调用`fileStream`对象的`openAsync()`方法了。`openAsync()`方法需要两个参数：一个`File`对象和一个字符串，该字符串指定你希望`fileStream`对象运行的模式——在此例中，传递`currentFile`变量并使用`FileMode`类的公共静态变量`READ`来指定模式。`openAsync()`方法异步打开指定文件，这意味着文件的数据会立即被读入输入缓冲区，而后续的代码将继续执行。
 
-`openFile()` 函数现已完成，现在是时候处理你真正想要的内容：文本。查看在输入缓冲区接收完所有文件数据后调用的 `onOpenComplete()` 函数：
+`openFile()`函数现已完成，现在是时候处理你真正想要的内容：文本。查看在输入缓冲区接收完所有文件数据后调用的`onOpenComplete()`函数：
 
-```
-private function onOpenComplete( event:Event ):void
+```actionscript
+private function onOpenComplete(event:Event):void
 {
-    var theText:String = fileStream.readUTFBytes( fileStream.bytesAvailable );
-    var lineEndPattern:RegExp = new RegExp( File.lineEnding, "g" );
+    var theText:String = fileStream.readUTFBytes(fileStream.bytesAvailable);
+    var lineEndPattern:RegExp = new RegExp(File.lineEnding, "g");
 
-    fileTextArea.text = theText.replace( lineEndPattern, "\n" );
+    fileTextArea.text = theText.replace(lineEndPattern, "\n");
 
     textChanged = false;
     title = "Text Editor - " + currentFile.name;
@@ -1241,28 +1291,28 @@ private function onOpenComplete( event:Event ):void
 }
 ```
 
-`onOpenComplete()` 函数非常简单。首先，调用 `fileStream` 对象的 `readUTFBytes()` 方法。此方法将读取文件的字节数组并返回一个符合 UTF-8（8位 UCS/Unicode 转换格式）的字符字符串。该方法只需要一个参数来指定应读取多少字节；由于你知道整个文件已被缓冲，你可以使用 `fileStream` 对象的 `bytesAvailable` 属性。现在名为 `theText` 的临时变量充满了各种字符。
+`onOpenComplete()`函数非常简单。首先，调用`fileStream`对象的`readUTFBytes()`方法。此方法将读取文件的字节数组并返回一个符合 UTF-8（8位 UCS/Unicode 转换格式）的字符字符串。该方法只需要一个参数来指定应读取多少字节；由于你知道整个文件已被缓冲，你可以使用`fileStream`对象的`bytesAvailable`属性。现在名为`theText`的临时变量充满了各种字符。
 
-现在是时候将文件的换行符转换为能在 `TextArea` 组件中正确显示新行的字符了。你可能已经知道，换行符因应用程序运行的操作系统而异。简单的正则表达式是解决此问题的最佳方法。在创建新的 `RegExp` 对象时，将 `File` 类的公共静态变量 `lineEnding` 作为构造函数的第一个参数提供。此属性将告诉你应用程序运行操作系统的换行符序列。真是个救星！既然有了模式，你就可以在 `theText` 上调用 `replace` 方法，随后将该文本存入 `TextArea` 组件的 `text` 属性中。
+现在是时候将文件的换行符转换为能在`TextArea`组件中正确显示新行的字符了。你可能已经知道，换行符因应用程序运行的操作系统而异。简单的正则表达式是解决此问题的最佳方法。在创建新的`RegExp`对象时，将`File`类的公共静态变量`lineEnding`作为构造函数的第一个参数提供。此属性将告诉你应用程序运行操作系统的换行符序列。真是个救星！既然有了模式，你就可以在`theText`上调用`replace`方法，随后将该文本存入`TextArea`组件的`text`属性中。
 
-现在，你已将文件中的文本显示给用户，剩下的只是一些简单的整理工作。首先，将 `textChanged` 设置为 `false`。其次，用用户打开的文件名更新应用程序的 `title` 属性。第三，关闭 `fileStream` 对象。应用程序现已准备好打开文本文件，因此你可以继续处理应用程序所需的另一个重要功能：保存文件的能力。`saveFile()` 函数如下所示：
+现在，你已将文件中的文本显示给用户，剩下的只是一些简单的整理工作。首先，将`textChanged`设置为`false`。其次，用用户打开的文件名更新应用程序的`title`属性。第三，关闭`fileStream`对象。应用程序现已准备好打开文本文件，因此你可以继续处理应用程序所需的另一个重要功能：保存文件的能力。`saveFile()`函数如下所示：
 
-```
+```actionscript
 private function saveFile():void
 {
-    if( currentFile )
+    if (currentFile)
     {
-        if( fileStream != null )
+        if (fileStream != null)
         {
             fileStream.close();
         }
 
         fileStream = new FileStream();
-        fileStream.openAsync( currentFile, FileMode.WRITE );
-        fileStream.addEventListener( IOErrorEvent.IO_ERROR, onWriteIOError );
+        fileStream.openAsync(currentFile, FileMode.WRITE);
+        fileStream.addEventListener(IOErrorEvent.IO_ERROR, onWriteIOError);
         var str:String = fileTextArea.text;
-        str = str.replace( /\r/g, "\n" );
-        str = str.replace( /\n/g, File.lineEnding );
+        str = str.replace(/\r/g, "\n");
+        str = str.replace(/\n/g, File.lineEnding);
         fileStream.writeUTFBytes(str);
         textChanged = false;
     }
@@ -1273,19 +1323,21 @@ private function saveFile():void
 }
 ```
 
-`saveFile()` 函数将从 `TextArea` 组件中获取文本并将其写入用户硬盘上的文本文件。此函数中的首要任务是一个条件判断，处理用户是否已经打开了文件。这通过检查 `currentFile` 变量是否已定义来确定。如果变量既不为 `null` 也不为 `undefined`，则文件将被保存（从而替换或覆盖旧文件）；如果变量为 `null`，则调用 `promptUserToSaveFile()` 函数（稍后将添加此函数）以提示用户将文件保存到其硬盘上的某个位置。
+`saveFile()`函数将从`TextArea`组件中获取文本并将其写入用户硬盘上的文本文件。此函数中的首要任务是一个条件判断，处理用户是否已经打开了文件。这通过检查`currentFile`变量是否已定义来确定。如果变量既不为`null`也不为`undefined`，则文件将被保存（从而替换或覆盖旧文件）；如果变量为`null`，则调用`promptUserToSaveFile()`函数（稍后将添加此函数）以提示用户将文件保存到其硬盘上的某个位置。
 
-例如，假设用户已打开一个文件并做了一些更改，想要保存该文件。首先，与 `openFile()` 函数一样，你需要检查 `fileStream` 变量是否已定义。如果已定义，则调用 `FileStream` 对象的 `close()` 方法（再次说明，这只是为了安全起见）。通过此条件后，你将创建一个新的 `FileStream` 对象；并且，就像在 `openFile()` 函数中一样，调用 `openAsync()` 方法，向其提供 `currentFile` 和你希望 `FileStream` 运行的模式。在此例中，使用 `FileMode` 类的静态属性 `WRITE` 来指定你将向文件写入数据。`openAsync()` 方法异步打开 `FileStream` 对象。
+例如，假设用户已打开一个文件并做了一些更改，想要保存该文件。首先，与`openFile()`函数一样，你需要检查`fileStream`变量是否已定义。如果已定义，则调用`FileStream`对象的`close()`方法（再次说明，这只是为了安全起见）。通过此条件后，你将创建一个新的`FileStream`对象；并且，就像在`openFile()`函数中一样，调用`openAsync()`方法，向其提供`currentFile`和你希望`FileStream`运行的模式。在此例中，使用`FileMode`类的静态属性`WRITE`来指定你将向文件写入数据。`openAsync()`方法异步打开`FileStream`对象。
 
-接下来，向 `fileStream` 添加一个事件监听器，以检查文件写入过程中的 I/O 错误。只需在 `IO_ERROR` 事件触发时调用 `onWriteIOError()` 函数。希望这永远不会发生，但你永远无法确定用户是否有损坏的磁盘扇区！此函数会向用户提示一条消息，说明出了问题。
+接下来，向`fileStream`添加一个事件监听器，以检查文件写入过程中的 I/O 错误。只需在`IO_ERROR`事件触发时调用`onWriteIOError()`函数。希望这永远不会发生，但你永远无法确定用户是否有损坏的磁盘扇区！此函数会向用户提示一条消息，说明出了问题。
 
-请注意，在进行更多更改之前，此文件将无法编译。然而，现在唯一要做的就是从 `TextArea` 组件中取出文本并将其存入文件。这就像调用 `FileStream` 对象的 `writeUTFBytes()` 方法并向其传递文本字符串一样简单。`writeUTFBytes()` 方法将代表字符串字符的字节写入文件。真的没有比这更简单的了！
+请注意，在进行更多更改之前，此文件将无法编译。然而，现在唯一要做的就是从`TextArea`组件中取出文本并将其存入文件。这就像调用`FileStream`对象的`writeUTFBytes()`方法并向其传递文本字符串一样简单。`writeUTFBytes()`方法将代表字符串字符的字节写入文件。真的没有比这更简单的了！
 
 ## 用户提示
 
-既然核心功能已经就位，现在是时候设置一些提示，为用户提供愉快的文本编辑体验了。具体来说，你需要让用户能够浏览硬盘以查找要打开的文件，并浏览以选择保存文件的位置。除此之外，如果用户能够创建新文档，那将是很好的。将以下标记添加到 `SimpleTextEditor.mxml` 中：
+既然核心功能已经就位，现在是时候设置一些提示，为用户提供愉快的文本编辑体验了。具体来说，你需要让用户能够浏览硬盘以查找要打开的文件，并浏览以选择保存文件的位置。除此之外，如果用户能够创建新文档，那将是很好的。将以下标记添加到`SimpleTextEditor.mxml`中：
 
-```
+
+
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <mx:WindowedApplication xmlns:mx="http://www.adobe.com/2006/mxml"
     layout="absolute" width="800" height="600" title="Text Editor"
@@ -1306,9 +1358,7 @@ private var browseHolder:File;
 private var currentFile:File;
 ```
 
-
-
-## 第2章：简单文本编辑器
+## 第 2 章：简单文本编辑器
 
 ```actionscript
 private var defaultFile:File;
@@ -1555,6 +1605,8 @@ private function onFileOpenPanelSelect( event:Event ):void
 
 接下来，看看 `promptUserToSaveFile()`：
 
+
+
 ```actionscript
 private function promptUserToSaveFile():void
 {
@@ -1576,17 +1628,19 @@ private function promptUserToSaveFile():void
 }
 ```
 
+## 第 2 章：简易文本编辑器
 
+在此功能中，系统会提示用户选择一个对话框，以便选择保存他们正在处理的文件的位置（参见图 2-3）。此功能与`promptUserToOpen()`函数类似，但有两点细微差别。
 
-## 第2章：简易文本编辑器
+第一个差别是使用了`fileToSave`对象以及确定其值的条件判断。如果用户当前正在处理文件，则将其设置为等于`currentFile`对象；否则，将其设置为等于`defaultFile`对象。
 
-在此功能中，系统会提示用户选择一个对话框，以便选择保存他们正在处理的文件的位置（参见图2-3）。此功能与 `promptUserToOpen()` 函数类似，但有两点细微差别。第一个差别是使用了 `fileToSave` 对象以及确定其值的条件判断。如果用户当前正在处理文件，则将其设置为等于 `currentFile` 对象；否则，将其设置为等于 `defaultFile` 对象。第二个差别是使用了 `browseForSave()` 方法。与 `browseForOpen()` 方法类似，此方法向用户显示一个对话框，但它是用于保存文件的。
+第二个差别是使用了`browseForSave()`方法。与`browseForOpen()`方法类似，此方法向用户显示一个对话框，但它是用于保存文件的。
 
 ![](img/dea8bb18fb213671e2a7e04d8fb0d89f_60_0.png)
 
-与“打开”对话框一样，您需要监听正在使用的 `File` 对象的 `SELECT` 事件。当此事件被触发时，将调用 `onFileSavePanelSelect()` 函数：
+与“打开”对话框一样，您需要监听正在使用的`File`对象的`SELECT`事件。当此事件被触发时，将调用`onFileSavePanelSelect()`函数：
 
-```
+```actionscript
 private function onFileSavePanelSelect( event:Event ):void
 {
     currentFile = event.file as File;
@@ -1596,9 +1650,11 @@ private function onFileSavePanelSelect( event:Event ):void
 }
 ```
 
-同样，这里没有太多操作，这是因为大部分工作已经完成。首先，您将 `currentFile` 设置为等于事件对象的 `file` 属性（用户在对话框中选择的文件）。接下来是一些清理工作。`textChanged` 标志被重置为 `false`，并且应用程序的 `title` 属性被更新以反映用户正在处理的文件。最后，调用 `saveFile()` 函数来保存文件。您快完成了。接下来是 `newDocument()` 函数：
+同样，这里没有太多操作，这是因为大部分工作已经完成。首先，您将`currentFile`设置为等于事件对象的`file`属性（用户在对话框中选择的文件）。
 
-```
+接下来是一些清理工作。`textChanged`标志被重置为`false`，并且应用程序的`title`属性被更新以反映用户正在处理的文件。最后，调用`saveFile()`函数来保存文件。您快完成了。接下来是`newDocument()`函数：
+
+```actionscript
 private function newDocument():void
 {
     if( textChanged )
@@ -1614,9 +1670,13 @@ private function newDocument():void
 }
 ```
 
-此函数为用户提供创建新文档的选项——这是每个文本编辑器都应具备的功能，对吧？首先，检查 `textChanged` 标志以确定用户是否对当前文件进行了任何更改。如果文本已更改，则提示用户选择是继续还是保存他们正在处理的文件。这里，使用一个 `Alert` 组件来处理此操作，并在用户做出选择时调用 `onAlertClose()` 函数。相反，如果文本没有更改，则可以假定用户不需要保存文件，并且可以重置变量并清除 `TextArea` 组件中的文本。以下是 `onAlertClose()` 函数：
+此函数为用户提供创建新文档的选项——这是每个文本编辑器都应具备的功能，对吧？
 
-```
+首先，检查`textChanged`标志以确定用户是否对当前文件进行了任何更改。如果文本已更改，则提示用户选择是继续还是保存他们正在处理的文件。这里，使用一个`Alert`组件来处理此操作，并在用户做出选择时调用`onAlertClose()`函数。
+
+相反，如果文本没有更改，则可以假定用户不需要保存文件，并且可以重置变量并清除`TextArea`组件中的文本。以下是`onAlertClose()`函数：
+
+```actionscript
 private function onAlertClose( event:CloseEvent ):void
 {
     switch( event.detail )
@@ -1632,13 +1692,13 @@ private function onAlertClose( event:CloseEvent ):void
 }
 ```
 
-此事件处理程序仅检查用户在前面警报中所做的选择。如果用户选择了“是”，则通过调用 `saveFile()` 函数保存文件。如果用户选择了“否”，则将 `textChanged` 标志设置为 `false`。当随后调用 `newDocument()` 时，将不会再次提示用户。
+此事件处理程序仅检查用户在前面警报中所做的选择。如果用户选择了“是”，则通过调用`saveFile()`函数保存文件。如果用户选择了“否”，则将`textChanged`标志设置为`false`。当随后调用`newDocument()`时，将不会再次提示用户。
 
 ## 界面激活
 
-最后但同样重要的是，您需要激活界面。由于所有功能都已完成，这将非常简单。在 `SimpleTextEditor.mxml` 中的 `onItemClick()` 函数中添加以下标记：
+最后但同样重要的是，您需要激活界面。由于所有功能都已完成，这将非常简单。在`SimpleTextEditor.mxml`中的`onItemClick()`函数中添加以下标记：
 
-```
+```actionscript
 private function onItemClick( event:MenuEvent ):void
 {
     switch( event.label )
@@ -1660,11 +1720,11 @@ private function onItemClick( event:MenuEvent ):void
 }
 ```
 
-此事件处理程序检查用户从 MenuBar 组件中选择了哪个项目。由于所有工作都已完成，现在只需调用相应的函数即可。您猜怎么着？您的简易文本编辑器现在完成了。
+此事件处理程序检查用户从`MenuBar`组件中选择了哪个项目。由于所有工作都已完成，现在只需调用相应的函数即可。您猜怎么着？您的简易文本编辑器现在完成了。
 
-SimpleTextEditor.mxml 的整个标记应如下所示：
+`SimpleTextEditor.mxml`的整个标记应如下所示：
 
-```
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <mx:WindowedApplication xmlns:mx="http://www.adobe.com/2006/mxml"
     layout="absolute" width="800" height="600" title="Text Editor"
@@ -1817,63 +1877,90 @@ SimpleTextEditor.mxml 的整个标记应如下所示：
 
 41
 
+## 第 2 章：简单文本编辑器
 
-
-# 第2章：简单文本编辑器
-
+```actionscript
 var theText:String = fileTextArea.text;
+
 theText = theText.replace( /\r/g, "\n" );
+
 theText = theText.replace( /\n/g, File.lineEnding );
 
 fileStream = new FileStream();
+
 fileStream.openAsync( currentFile, FileMode.WRITE );
+
 fileStream.addEventListener( IOErrorEvent.IO_ERROR, onWriteIOError );
+
 fileStream.writeUTFBytes( theText );
+
 fileStream.close();
 
 textChanged = false;
+
 }
+
 else
+
 {
+
     promptUserToSaveFile();
+
 }
+
 }
 
 private function promptUserToOpenFile():void
+
 {
+
     fileToOpen = ( currentFile != null ) ? currentFile.parent :
+
         File.documentsDirectory;
+
     fileToOpen.removeEventListener( Event.SELECT, onFileSaveSelect );
 
     var textFilter:FileFilter = new FileFilter( "Text",
+
         "*.as;*.css;*.html;*.txt;*.xml" );
+
     var allFilter:FileFilter = new FileFilter( "All Files", "*." );
 
     try
+
     {
-        fileToOpen.browseForOpen( "Open", [textFilter, allFilter] );
-        fileToOpen.addEventListener( Event.SELECT, onFileOpenSelect );
-    }
-    catch( error:Error )
-    {
-        trace("Failed:", error.message);
-    }
+```
+
+
+
+```actionscript
+fileToOpen.browseForOpen("Open", [textFilter, allFilter]);
+
+fileToOpen.addEventListener(Event.SELECT, onFileOpenSelect);
+}
+catch (error:Error)
+{
+    trace("Failed:", error.message);
+}
 }
 
 private function promptUserToSaveFile():void
 {
-    fileToSave = ( currentFile ) ? currentFile : defaultFile;
-    fileToSave.removeEventListener( Event.SELECT, onFileOpenSelect );
+    fileToSave = (currentFile) ? currentFile : defaultFile;
 
-    var typeFilter:FileFilter = new FileFilter( "Text",
-        "*.as;*.css;*.html;*.txt;*.xml" );
+    fileToSave.removeEventListener(Event.SELECT, onFileOpenSelect);
+
+    var typeFilter:FileFilter = new FileFilter(
+        "Text",
+        "*.as;*.css;*.html;*.txt;*.xml"
+    );
 
     try
     {
         fileToSave.browseForSave("Save");
-        fileToSave.addEventListener( Event.SELECT, onFileSaveSelect );
+        fileToSave.addEventListener(Event.SELECT, onFileSaveSelect);
     }
-    catch( error:Error )
+    catch (error:Error)
     {
         trace("Failed:", error.message);
     }
@@ -1881,9 +1968,15 @@ private function promptUserToSaveFile():void
 
 private function newDocument():void
 {
-    if( textChanged )
+    if (textChanged)
     {
-        Alert.show("The text in your current document has changed.\nDo you want to save your changes?", "Alert", (Alert.YES | Alert.NO | Alert.CANCEL), this, onAlertClose);
+        Alert.show(
+            "The text in your current document has changed.\nDo you want to save your changes?",
+            "Alert",
+            (Alert.YES | Alert.NO | Alert.CANCEL),
+            this,
+            onAlertClose
+        );
     }
     else
     {
@@ -1892,12 +1985,22 @@ private function newDocument():void
         fileTextArea.text = "";
     }
 }
-]]></mx:Script>
-<mx:MenuBar id="myMenuBar" labelField="@label"
-        left="0" top="0" right="0" tabEnabled="false"
-        itemClick="onItemClick(event);" >
+```
+
+```xml
+</mx:Script>
+
+<mx:MenuBar
+    id="myMenuBar"
+    labelField="@label"
+    left="0"
+    top="0"
+    right="0"
+    tabEnabled="false"
+    itemClick="onItemClick(event);"
+>
     <mx:XMLList>
-        <menuitem label="File" >
+        <menuitem label="File">
             <menuitem label="New"/>
             <menuitem label="Open"/>
             <menuitem label="Save"/>
@@ -1905,12 +2008,22 @@ private function newDocument():void
         </menuitem>
     </mx:XMLList>
 </mx:MenuBar>
-<mx:TextArea id="fileTextArea"
-    top="21" left="0" right="0" bottom="0"
-    focusThickness="0" fontFamily="Arial"
-    fontSize="14" tabEnabled="false"
-    change="textChanged=true;" />
+
+<mx:TextArea
+    id="fileTextArea"
+    top="21"
+    left="0"
+    right="0"
+    bottom="0"
+    focusThickness="0"
+    fontFamily="Arial"
+    fontSize="14"
+    tabEnabled="false"
+    change="textChanged=true;"
+/>
+
 </mx:WindowedApplication>
+```
 
 现在代码已经完成，你可以随意编译、部署和自定义这个应用程序了。用你喜欢的图标或配色方案来美化它，或者将其转化为更大应用程序的一个组件。现在没有什么能阻止你了！
 
@@ -1926,15 +2039,15 @@ private function newDocument():void
 
 # 第3章：简单RSS阅读器
 
-每个人都试图掌握最新消息。正如报纸是印刷文章的集合，一个“真正简单聚合”阅读器则以数字格式为你提供信息。RSS格式是一种XML标记语言，通过元数据元素详细传递关于*信息源*（feed），即已发布文章集合的信息。在线聚合器会从多个RSS源获取更新通知，帮助你从各种来源了解你感兴趣的内容，保持信息更新。
+每个人都试图掌握最新消息。正如报纸是印刷文章的集合，一个“真正简单聚合”阅读器则以数字格式为你提供信息。RSS格式是一种XML标记语言，通过元数据元素详细传递关于信息源（feed），即已发布文章集合的信息。在线聚合器会从多个RSS源获取更新通知，帮助你从各种来源了解你感兴趣的内容，保持信息更新。
 
 在本章中，你将构建一个简单的RSS阅读器，显示来自Adobe XML新闻聚合器的文章，该聚合器汇集了各种主题，包括Flash平台最新信息的详细报道。在此过程中，你将发掘AIR API中关于网络连接、系统托盘和窗口方面的更多宝藏。
 
 在开始构建应用程序之前，首先考虑一下桌面RSS阅读器应具备哪些功能。一般来说，RSS阅读器应具有以下特点：
 
--  感知网络资源和用户状态，并相应地处理RSS源的轮询。
--  在接收到RSS源的文章时，以不干扰用户的方式进行显示。
--  通过系统托盘提供与应用程序和RSS源相关的附加选项。
+- 感知网络资源和用户状态，并相应地处理RSS源的轮询。
+- 在接收到RSS源的文章时，以不干扰用户的方式进行显示。
+- 通过系统托盘提供与应用程序和RSS源相关的附加选项。
 
 下一节将讨论如何实现这些目标。
 
@@ -1942,11 +2055,9 @@ private function newDocument():void
 
 在上一节中，我们为RSS阅读器确定了一些主要目标。使用Flex框架来消费RSS源并显示文章列表非常直观，你可能已经自己构建过在线的源阅读器。然而，本章将要构建的RSS阅读器将整合AIR API的功能，使你能够将这种体验带到桌面。以下列表扩展了为该应用考虑的目标：
 
--  **感知网络资源和用户状态** —— RSS阅读器应用的主要焦点是向用户呈现源的最新文章。该应用将不断轮询一个RSS源，以检索并展示所有新文章。当用户失去互联网连接时，应用必须知道在连接恢复前停止所有请求。同样的理解也适用于应用运行时用户的闲置状态。通过使用网络监控类和处理AIR API的事件，你可以确保提供愉快的阅读体验。
-
--  **在接收到RSS源文章时不干扰地进行显示** —— RSS阅读器将以“弹出窗口”的形式呈现文章。弹出窗口的呈现方式在不同操作系统间有所差异，但通常指一种显示在其他原生窗口之上的显示区域，用于展示与应用程序相关的数据。在使用AIR的窗口API时，RSS阅读器将采用相同的方式，以不干扰用户的方式呈现文章，并提供控件来浏览RSS摘要或完全关闭窗口。
-
--  **通过系统托盘提供附加选项** —— 与大多数桌面应用程序（其主窗口始终显示在屏幕原生窗口的Z序中）不同，RSS阅读器运行在操作系统的系统托盘中，并在接收到服务的新文章时将其呈现出来。因此，通过使用AIR的本地菜单API，该应用将提供系统托盘选项，使你可以强制发起请求、在互联网浏览器中导航到该源，或退出应用程序。
+- **感知网络资源和用户状态** —— RSS阅读器应用的主要焦点是向用户呈现源的最新文章。该应用将不断轮询一个RSS源，以检索并展示所有新文章。当用户失去互联网连接时，应用必须知道在连接恢复前停止所有请求。同样的理解也适用于应用运行时用户的闲置状态。通过使用网络监控类和处理AIR API的事件，你可以确保提供愉快的阅读体验。
+- **在接收到RSS源文章时不干扰地进行显示** —— RSS阅读器将以“弹出窗口”的形式呈现文章。弹出窗口的呈现方式在不同操作系统间有所差异，但通常指一种显示在其他原生窗口之上的显示区域，用于展示与应用程序相关的数据。在使用AIR的窗口API时，RSS阅读器将采用相同的方式，以不干扰用户的方式呈现文章，并提供控件来浏览RSS摘要或完全关闭窗口。
+- **通过系统托盘提供附加选项** —— 与大多数桌面应用程序（其主窗口始终显示在屏幕原生窗口的Z序中）不同，RSS阅读器运行在操作系统的系统托盘中，并在接收到服务的新文章时将其呈现出来。因此，通过使用AIR的本地菜单API，该应用将提供系统托盘选项，使你可以强制发起请求、在互联网浏览器中导航到该源，或退出应用程序。
 
 牢记这些要点，你可以开始构建满足这些需求的工具，并创建一个桌面应用程序，让你随时了解Flash平台世界的动态。
 
@@ -1956,11 +2067,11 @@ private function newDocument():void
 
 当应用程序接收到RSS源的结果时，数据会被解析成一个对象列表，供RSS阅读器显示。每篇文章的显示取决于你在本节将创建的值对象的属性赋值。
 
-在你的开发目录中，创建一个名为RSSReader的文件夹。这将是你的应用程序的工作目录。设置好这个后，你就可以开始工作了。
+在你的开发目录中，创建一个名为`RSSReader`的文件夹。这将是你的应用程序的工作目录。设置好这个后，你就可以开始工作了。
 
 创建一个新文档并输入以下ActionScript：
 
-```
+```actionscript
 package com.aircmr.rssreader.data
 {
     [Bindable]
@@ -1972,15 +2083,32 @@ package com.aircmr.rssreader.data
         public var link:String;
         public var date:String;
         public var id:String;
+
+        public function PostVO(
+            author:String,
+            title:String,
+            description:String,
+            link:String,
+            date:String,
+            id:String
+        )
+        {
+            this.author = author;
+            this.title = title;
+            this.description = description;
+            this.link = link;
+            this.date = date;
+            this.id = id;
+        }
+    }
+}
 ```
-
-
 
 ### 解析RSS订阅源
 
-当用户在线且网络资源可用时，RSS阅读器会持续轮询已订阅的订阅源服务以获取XML数据。随着数据的接收，你在本节创建的服务类会将XML解析成用于显示每篇文章的PostVO值对象。
+当用户在线且网络资源可用时，RSS阅读器会持续轮询已订阅的订阅源服务以获取XML数据。随着数据的接收，你在本节创建的服务类会将XML解析成用于显示每篇文章的`PostVO`值对象。
 
-```
+```actionscript
 package com.aircmr.rssreader.services
 {
     import com.aircmr.rssreader.data.PostVO;
@@ -1996,133 +2124,133 @@ package com.aircmr.rssreader.services
     {
         protected var _title:String;
         protected var _loader:URLLoader;
+
         [ArrayElementType("com.aircmr.rssreader.data.PostVO")]
         protected var _postItems:Array;
+
         protected var _lastReadId:String;
 
-        public function PostVO( author:String, title:String,
-                                description:String, link:String,
-                                date:String, id:String )
+        public function AbstractFeedService()
         {
-            this.author = author;
-            this.title = title;
-            this.description = description;
-            this.link = link;
-            this.date = date;
-            this.id = id;
+            _loader = new URLLoader();
+            _loader.addEventListener(Event.COMPLETE, onFeedLoad);
+            _loader.addEventListener(
+                HTTPStatusEvent.HTTP_STATUS,
+                onHTTPStatus
+            );
+            _loader.addEventListener(
+                IOErrorEvent.IO_ERROR,
+                onFeedLoadError
+            );
+        }
+
+        protected function onHTTPStatus(evt:Event):void
+        {
+            // 重写
+        }
+
+        protected function onFeedLoad(evt:Event):void
+        {
+            // 重写 ...
+        }
+
+        protected function onFeedLoadError(evt:IOErrorEvent):void
+        {
+            dispatchEvent(evt.clone());
+        }
+
+        protected function updateLastRead():void
+        {
+            _lastReadId = PostVO(_postItems[0]).id;
+        }
+
+        protected function getItemsSince(id:String):Array
+        {
+            for (var i:int = 0; i < _postItems.length; i++)
+            {
+                if (PostVO(_postItems[i]).id == id)
+                {
+                    break;
+                }
+            }
+
+            updateLastRead();
+            return getItemsByAmount(i);
+        }
+
+        public function load(url:String):void
+        {
+            _postItems = new Array();
+            _loader.load(new URLRequest(url));
+        }
+
+        public function getAllItems():Array
+        {
+            updateLastRead();
+            return _postItems;
+        }
+
+        public function getItemsByAmount(amt:int):Array
+        {
+            updateLastRead();
+            return _postItems.slice(
+                0,
+                Math.min(_postItems.length, amt)
+            );
+        }
+
+        public function getUnreadItems():Array
+        {
+            return getItemsSince(_lastReadId);
+        }
+
+        [Bindable]
+        public function get title():String
+        {
+            return _title;
+        }
+
+        public function set title(str:String):void
+        {
+            _title = str;
         }
     }
 }
 ```
 
-将文件保存为PostVO.as，位于你的工作目录中的com/aircmr/rssreader/data目录下。
+将文件保存为`PostVO.as`，位于你的工作目录中的`com/aircmr/rssreader/data`目录下。
 
-PostVO值对象包含与从订阅源服务接收的文章相关的公共属性。服务的结果是一个XML格式的项目列表。该值对象的属性用于在文章显示中渲染文本字段，除了link和id，它们分别用于导航到原始博客文章和保留最后阅读的项目。
+`PostVO`值对象包含与从订阅源服务接收的文章相关的公共属性。服务的结果是一个XML格式的项目列表。该值对象的属性用于在文章显示中渲染文本字段，除了`link`和`id`，它们分别用于导航到原始博客文章和保留最后阅读的项目。
 
 为了更好地理解这些对象是如何被应用程序定义和处理的，下一节将介绍从订阅源加载和解析数据的类。
 
-# 第3章：简易RSS阅读器
+1. 将文件保存为`AbstractFeedService.as`，位于你工作目录中的`com/aircmr/rssreader/services`目录下。
 
-```
-public function AbstractFeedService()
-{
-    _loader = new URLLoader();
-    _loader.addEventListener( Event.COMPLETE, onFeedLoad );
-    _loader.addEventListener( HTTPStatusEvent.HTTP_STATUS, onHTTPStatus );
-    _loader.addEventListener( IOErrorEvent.IO_ERROR, onFeedLoadError );
-}
+2. 新建一个文档并输入以下ActionScript：
 
-protected function onHTTPStatus( evt:Event ):void
-{
-    // 重写
-}
 
-protected function onFeedLoad( evt:Event ):void
-{
-    // 重写 ...
-}
 
-protected function onFeedLoadError( evt:IOErrorEvent ):void
-{
-    dispatchEvent( evt.clone() );
-}
-
-protected function updateLastRead():void
-{
-    _lastReadId = PostVO( _postItems[0] ).id;
-}
-
-protected function getItemsSince( id:String ):Array
-{
-    for( var i:int = 0; i < _postItems.length; i++ )
-    {
-        if( PostVO( _postItems[i] ).id == id ) break;
-    }
-    updateLastRead();
-    return getItemsByAmount( i );
-}
-
-public function load( url:String ):void
-{
-    _postItems = new Array();
-    _loader.load( new URLRequest( url ) );
-}
-
-public function getAllItems():Array
-{
-    updateLastRead();
-    return _postItems;
-}
-
-public function getItemsByAmount( amt:int ):Array
-{
-    updateLastRead();
-    return _postItems.slice( 0, Math.min( _postItems.length, amt ) );
-}
-```
-
-# 第3章：简易RSS阅读器
-
-```
-public function getUnreadItems():Array
-{
-    return getItemsSince( _lastReadId );
-}
-[Bindable]
-public function get title():String
-{
-    return _title;
-}
-public function set title( str:String ):void
-{
-    _title = str;
-}
-```
-
-2.  将文件保存为AbstractFeedService.as，位于你工作目录中的com/aircmr/rssreader/services目录下。
-3.  新建一个文档并输入以下ActionScript：
-
-```
+```actionscript
 package com.aircmr.rssreader.services
 {
     import com.aircmr.rssreader.data.PostVO;
-    
+
     import flash.events.Event;
-    
+
     [Event(name="complete", event="flash.events.Event")]
     public class AXNAFeedService extends AbstractFeedService
     {
         private var _xml:XML;
-        
+
         public static const LOAD_COMPLETE:String = "complete";
         private static const DC_NS:String = "http://purl.org/dc/elements/1.1/";
         private static const RSS_NS:String = "http://purl.org/rss/1.0/";
-        
+
         private function parseData():void
         {
             var chan:XMLList = getElement( _xml, RSS_NS, "channel" );
             title = getElement( XML( chan ), RSS_NS, "title" )[0];
-            
+
             var children:XMLList = getElement( _xml, RSS_NS, "item" );
             for( var i:Number = 0; i < children.length(); i++ )
             {
@@ -2137,7 +2265,7 @@ package com.aircmr.rssreader.services
 
 # 第3章：简易RSS阅读器
 
-```
+```actionscript
 _postItems.push( new PostVO( author, title, description, link, date, id ) );
 }
 }
@@ -2158,17 +2286,17 @@ override protected function onFeedLoad( evt:Event ):void
 }
 ```
 
-4.  将文件保存为`AXNAFeedService.as`，位于你工作目录中的`com/aircmr/rssreader/services`目录下。
+将文件保存为`AXNAFeedService.as`，位于你工作目录中的`com/aircmr/rssreader/services`目录下。
 
 第一个代码片段被保存为`AbstractFeedService`，它作为你可能实现的任何具体订阅源服务（例如`AXNAFeedService`）的基类。`AbstractFeedService`处理从订阅源服务请求数据，并公开方法供客户端访问解析成`PostVO`对象的数据。除了返回全部或部分文章数组的方法外，`AbstractFeedService`类还使用`PostVO`的`id`属性保留对最后请求的文章的引用。在首次加载返回的数据后，RSS阅读器应用程序会持续轮询订阅源服务，并显示用户尚未看到的任何项目。用户尚未看到的项目可以通过`getUnreadItems()`方法访问。
 
 `AbstractFeedService`定义了访问文章数据的逻辑，作为一个子类的基类，该子类重写`Loader`实例的事件处理程序并逻辑地解析返回的数据。`AXNAFeedService`重写了`onFeedLoad()`事件处理程序，并在私有的`parseData()`方法中解析返回的数据。RSS阅读器应用程序将解析来自Adobe XML新闻聚合器（AXNA）的RSS订阅源。该订阅源是资源描述框架（RDF）的XML序列化，并遵循RDF站点摘要（RSS）1.0规范。`AXNAFeedService`类中的解析逻辑知道如何处理此语法，但你可能更愿意读取其他聚合格式（如Atom）的订阅源。请随意创建`AbstractFeedService`的另一个子类，该子类知道如何解析你可能感兴趣的其他订阅源。
 
-> Adobe公开发布了可以处理解析各种聚合格式的代码。它可以从 http://code.google.com/p/as3corelib/ 下载，并可在xml.syndication包中找到。
+> Adobe公开发布了可以处理解析各种聚合格式的代码。它可以从`http://code.google.com/p/as3corelib/`下载，并可在`xml.syndication`包中找到。
 
 在`AXNAFeedService`的`parseData()`方法中，每个文章项目根据其子元素的命名空间URI进行解析，新的`PostVO`值对象被添加到数组中：
 
-```
+```actionscript
 private function parseData():void
 {
     var chan:XMLList = getElement( _xml, RSS_NS, "channel" );
@@ -2177,7 +2305,7 @@ private function parseData():void
 
 # 第3章：简易RSS阅读器
 
-```
+```actionscript
 var children:XMLList = getElement( _xml, RSS_NS, "item" );
 for( var i:Number = 0; i < children.length(); i++ )
 {
@@ -2194,9 +2322,9 @@ for( var i:Number = 0; i < children.length(); i++ )
 }
 ```
 
-PostVO对象的数组是通过使用ActionScript 3.0的QName类限定XML元素，从`getElement()`方法接收的属性组装而成的：
+`PostVO`对象的数组是通过使用ActionScript 3.0的`QName`类限定XML元素，从`getElement()`方法接收的属性组装而成的：
 
-```
+```actionscript
 private function getElement( child:XML, ns:String, type:String ):XMLList
 {
     return child.descendants( new QName( ns, type ) );
@@ -2205,7 +2333,7 @@ private function getElement( child:XML, ns:String, type:String ):XMLList
 
 `getElement()`方法的参数对应于文章项目的父节点、元素所在的命名空间以及元素的名称。ActionScript 3.0的XML对象的`descendants()`方法返回XML节点所有后代的XMLList。在此示例中，该返回值将作为子参数提供的限定元素的节点值。
 
-PostVO类的实例代表从已订阅的RSS订阅源返回的文章列表中的单篇文章。随着解析XML数据并组装代表单篇文章的数据对象的服务类创建完成，现在是时候开始讨论应用程序如何将文章数据呈现给用户了。在下一节中，你将为从Adobe XML新闻聚合器接收的文章创建视图类。
+`PostVO`类的实例代表从已订阅的RSS订阅源返回的文章列表中的单篇文章。随着解析XML数据并组装代表单篇文章的数据对象的服务类创建完成，现在是时候开始讨论应用程序如何将文章数据呈现给用户了。在下一节中，你将为从Adobe XML新闻聚合器接收的文章创建视图类。
 
 ## 构建用户界面
 
@@ -2221,7 +2349,7 @@ PostVO类的实例代表从已订阅的RSS订阅源返回的文章列表中的�
 
 本节创建的类将构成“吐司”提示窗口，当从 RSS 订阅服务接收数据时，该窗口会显示在用户屏幕的象限区域。
 
-1.  创建一个新文档并输入以下标记：
+1. 创建一个新文档并输入以下标记：
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -2290,9 +2418,11 @@ PostVO类的实例代表从已订阅的RSS订阅源返回的文章列表中的�
 </mx:VBox>
 ```
 
-2.  将文件保存为 Post.mxml，放在工作目录中名为 com/aircmr/rssreader/ui 的目录下。
+2. 将文件保存为`Post.mxml`，放在工作目录中名为`com/aircmr/rssreader/ui`的目录下。
 
-3.  创建一个新文档并输入以下标记：
+3. 创建一个新文档并输入以下标记：
+
+
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -2422,15 +2552,15 @@ public function set posts( arr:Array ):void
 </mx:Window>
 ```
 
-4.  将文件保存为 DigestToaster.mxml，放在工作目录中名为 com/aircmr/rssreader/windows 的目录下。
+将文件保存为`DigestToaster.mxml`，放在工作目录中名为`com/aircmr/rssreader/windows`的目录下。
 
-第一个代码片段保存为 Post.mxml，是一个简单的组件，其字段用于显示 PostVO 对象的数据。PostVO 对象的实例通过继承的 data 属性提供给 Post 类。使用 Flex 数据绑定系统，当数据更新时，子字段的文本属性也会随之更新。
+第一个代码片段保存为`Post.mxml`，是一个简单的组件，其字段用于显示`PostVO`对象的数据。`PostVO`对象的实例通过继承的`data`属性提供给`Post`类。使用 Flex 数据绑定系统，当数据更新时，子字段的文本属性也会随之更新。
 
-Post 类的布局非常直观，它被用作第二个代码片段——DigestToaster.mxml 的显示区域。DigestToaster 类扩展了 AIR 窗口 API 的 mx.core.Window 类，是从 RSS 订阅获取新文章时显示的吐司风格提示窗口。Window 类充当操作系统上应用程序原生窗口的容器——具体来说，是 flash.display.NativeWindow 的一个实例。虽然 NativeWindow 类是原生窗口的接口，但不能直接将组件添加到 NativeWindow 的显示列表中。
+`Post`类的布局非常直观，它被用作第二个代码片段——`DigestToaster.mxml`的显示区域。`DigestToaster`类扩展了 AIR 窗口 API 的`mx.core.Window`类，是从 RSS 订阅获取新文章时显示的吐司风格提示窗口。`Window`类充当操作系统上应用程序原生窗口的容器——具体来说，是`flash.display.NativeWindow`的一个实例。虽然`NativeWindow`类是原生窗口的接口，但不能直接将组件添加到`NativeWindow`的显示列表中。
 
-通过使用 `Window` 类，你可以添加组件并通过 `nativeWindow` 属性控制原生窗口的其他属性。
+通过使用`Window`类，你可以添加组件并通过`nativeWindow`属性控制原生窗口的其他属性。
 
-在 `Window` 对象的 `NativeWindow` 实例初始化后，某些属性将变为只读。因此，与系统外观和窗口类型相关的属性在 `<mx:Window>` 标签中声明：
+在`Window`对象的`NativeWindow`实例初始化后，某些属性将变为只读。因此，与系统外观和窗口类型相关的属性在`<mx:Window>`标签中声明：
 
 ```xml
 <mx:Window
@@ -2445,11 +2575,11 @@ Post 类的布局非常直观，它被用作第二个代码片段——DigestToa
     creationComplete="onCreationComplete();">
 ```
 
-就像你可以在 AIR 应用程序的声明标签或描述符文件中为 `<mx:WindowedApplication>` 标签分配属性一样，你也可以在 `<mx:Window>` 标签中为原生窗口分配属性。为了将 `DigestToaster` 呈现为吐司窗口，设置了 `systemChrome`、`showFlexChrome` 和 `transparent` 属性，以赋予窗口其外观和风格。
+就像你可以在 AIR 应用程序的声明标签或描述符文件中为`<mx:WindowedApplication>`标签分配属性一样，你也可以在`<mx:Window>`标签中为原生窗口分配属性。为了将`DigestToaster`呈现为吐司窗口，设置了`systemChrome`、`showFlexChrome`和`transparent`属性，以赋予窗口其外观和风格。
 
-除了窗口的外观，`alwaysInFront` 被设置为 `true`，使窗口始终出现在用户屏幕 z-order 的顶层，窗口 `type` 被设置为 `lightweight`。你可以为 `Window` 的 `type` 属性提供三个主要值：`normal`、`utility` 和 `lightweight`。`DigestToaster` 是一个 `lightweight` 窗口，这意味着它不会出现在 Windows 任务栏或 Mac OS X 菜单中，也不会在 Windows 上通过 Alt+Tab 键命令访问的系统菜单中显示。由于 RSS 阅读器应用程序被设计为不引人注目，它将在系统托盘内运行，并在文章可用时显示这个带有文章的 `lightweight` 窗口。
+除了窗口的外观，`alwaysInFront`被设置为`true`，使窗口始终出现在用户屏幕 z-order 的顶层，窗口`type`被设置为`lightweight`。你可以为`Window`的`type`属性提供三个主要值：`normal`、`utility`和`lightweight`。`DigestToaster`是一个`lightweight`窗口，这意味着它不会出现在 Windows 任务栏或 Mac OS X 菜单中，也不会在 Windows 上通过 Alt+Tab 键命令访问的系统菜单中显示。由于 RSS 阅读器应用程序被设计为不引人注目，它将在系统托盘内运行，并在文章可用时显示这个带有文章的`lightweight`窗口。
 
-文章通过 `posts` 属性传递给 `DigestWindow`。当收到文章时，`Post` 显示会根据 `currentIndex` 属性进行更新，并启动一个 `Timer` 实例：
+文章通过`posts`属性传递给`DigestWindow`。当收到文章时，`Post`显示会根据`currentIndex`属性进行更新，并启动一个`Timer`实例：
 
 ```actionscript
 private function updatePost():void
@@ -2461,21 +2591,21 @@ private function updatePost():void
 }
 ```
 
-用户可以手动浏览文章，或者允许 `DigestToaster` 使用计时器在 `PostVO` 对象数组中循环显示。当所有文章都已显示完毕或用户明确决定关闭窗口时，窗口将从屏幕上消失。请注意，此时窗口并未完全移除，也未从应用程序的显示列表中移除。`DigestToaster` 的可见性由其 `visible` 属性控制。
+用户可以手动浏览文章，或者允许`DigestToaster`使用计时器在`PostVO`对象数组中循环显示。当所有文章都已显示完毕或用户明确决定关闭窗口时，窗口将从屏幕上消失。请注意，此时窗口并未完全移除，也未从应用程序的显示列表中移除。`DigestToaster`的可见性由其`visible`属性控制。
 
-至此，你已经创建了文章的显示组件，以及一个从 Adobe XML 新闻聚合器接收数据时显示的、不引人注目的吐司风格窗口。在下一节中，你将创建...
+至此，你已经创建了文章的显示组件，以及一个从 Adobe XML 新闻聚合器接收数据时显示的、不引人注目的吐司风格窗口。在下一节中，你将创建……
 
-
-
-# 第3章：简易RSS阅读器
+# 第3章：简易 RSS 阅读器
 
 ## 整合一切
 
-主应用文件不仅将管理DigestWindow，还将解决前面讨论过的RSS阅读器其他易用性目标。
+主应用文件不仅将管理`DigestWindow`，还将解决前面讨论过的 RSS 阅读器其他易用性目标。
 
-RSS阅读器应用将在后台运行，并在接收到文章数据时呈现一个弹出窗口。因此，应用的主窗口是DigestToaster，它并非始终存在。为了使用户能够退出和执行与应用相关的其他操作，需要从Windows系统托盘或Mac OS X程序坞访问一个菜单。虽然主应用将处理此问题，但它还需要了解网络资源和用户状态，以便有效地轮询RSS源并向用户呈现要阅读的文章。
+RSS 阅读器应用将在后台运行，并在接收到文章数据时呈现一个弹出窗口。因此，应用的主窗口是`DigestToaster`，它并非始终存在。为了使用户能够退出和执行与应用相关的其他操作，需要从 Windows 系统托盘或 Mac OS X 程序坞访问一个菜单。虽然主应用将处理此问题，但它还需要了解网络资源和用户状态，以便有效地轮询 RSS 源并向用户呈现要阅读的文章。
 
 创建一个新文档并输入以下标记：
+
+
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -2689,9 +2819,9 @@ RSS阅读器应用将在后台运行，并在接收到文章数据时呈现一�
 </mx:WindowedApplication>
 ```
 
-将文件保存为 `RSSReader.mxml`，放在RSS阅读器应用的工作目录根目录下。
+将文件保存为`RSSReader.mxml`，放在 RSS 阅读器应用的工作目录根目录下。
 
-`RSSReader` 类中有很多内容，它利用了AIR API中一些尚未在前面章节介绍过的有趣部分。首先，看看应用如何在 `<mx:WindowedApplication>` 的 `applicationComplete` 事件处理程序中监控用户状态：
+`RSSReader`类中有很多内容，它利用了 AIR API 中一些尚未在前面章节介绍过的有趣部分。首先，看看应用如何在`<mx:WindowedApplication>`的`applicationComplete`事件处理程序中监控用户状态：
 
 ```xml
 NativeApplication.nativeApplication.idleThreshold = IDLE_THRESHOLD;
@@ -2701,7 +2831,9 @@ NativeApplication.nativeApplication.addEventListener(
     Event.USER_PRESENT, onUserPresent );
 ```
 
-`applicationComplete` 事件在应用初始化并添加到显示列表后派发。在 `onAppComplete` 事件处理程序中，设置了由 `flash.desktop.NativeApplication` 单例派发的与用户状态相关事件的处理程序。`NativeApplication` 实例代表AIR应用，并在启动时创建。在 `NativeApplication` 的 `idleThreshold` 属性中，你可以设置允许经过多长时间（以秒为单位）没有用户输入。经过这段时间后，应用将派发一个 `idle` 事件，其处理程序在此处设置为 `onUserIdle()` 方法。当应用再次检测到用户存在时，会调用 `onUserPresent` 事件处理程序。这些方法简单地控制用于轮询订阅源服务的 `Timer` 对象。如果用户不在，请求就会停止；当应用检测到用户存在时，请求会恢复。
+
+
+`applicationComplete` 事件在应用初始化并添加到显示列表后派发。在 `onAppComplete` 事件处理程序中，设置了由 `flash.desktop.NativeApplication` 单例派发的与用户状态相关事件的处理程序。`NativeApplication` 实例代表 AIR 应用，并在启动时创建。在 `NativeApplication` 的 `idleThreshold` 属性中，你可以设置允许经过多长时间（以秒为单位）没有用户输入。经过这段时间后，应用将派发一个 `idle` 事件，其处理程序在此处设置为 `onUserIdle()` 方法。当应用再次检测到用户存在时，会调用 `onUserPresent` 事件处理程序。这些方法简单地控制用于轮询订阅源服务的 `Timer` 对象。如果用户不在，请求就会停止；当应用检测到用户存在时，请求会恢复。
 
 在 `onAppComplete()` 方法中，应用还建立了一个 `air.net.URLMonitor` 实例来处理与网络资源可用性相关的状态事件：
 
@@ -2711,20 +2843,18 @@ _feedMonitor.addEventListener( StatusEvent.STATUS, onStatus );
 _feedMonitor.start();
 ```
 
-`URLMonitor` 监控服务的可用性。`URLMonitor` 构造函数的第一个参数是你希望监控的URL。RSS阅读器从AXNA请求数据，连接是否可用基于返回的HTTP状态码——这是构造函数中的第二个参数。`URLMonitor` 的 `available` 属性（在 `onStatus()` 处理程序中检查）更改了 `RSSReader` 类的 `isAvailable` 属性的值。通过绑定，当 `isAvailable` 属性发生更改时，会调用 `invalidateAvailability()` 方法。`URLMonitor` 被指示在 `onAppComplete()` 方法中开始监控服务，也在 `<mx:WindowedApplication>` 的 `networkChange` 事件处理程序中进行。
+`URLMonitor` 监控服务的可用性。`URLMonitor` 构造函数的第一个参数是你希望监控的 URL。RSS 阅读器从 AXNA 请求数据，连接是否可用基于返回的 HTTP 状态码——这是构造函数中的第二个参数。`URLMonitor` 的 `available` 属性（在 `onStatus()` 处理程序中检查）更改了 `RSSReader` 类的 `isAvailable` 属性的值。通过绑定，当 `isAvailable` 属性发生更改时，会调用 `invalidateAvailability()` 方法。`URLMonitor` 被指示在 `onAppComplete()` 方法中开始监控服务，也在 `<mx:WindowedApplication>` 的 `networkChange` 事件处理程序中进行。
 
-根据 `isAvailable` 属性的值，应用被指示开始或恢复轮询RSS源，并调用两个方法之一来构建在Windows系统托盘或Mac OSX程序坞中显示的本机菜单：
+根据 `isAvailable` 属性的值，应用被指示开始或恢复轮询 RSS 源，并调用两个方法之一来构建在 Windows 系统托盘或 Mac OS X 程序坞中显示的本机菜单：
 
-```xml
+```actionscript
 private function setAvailableMenu():void
 {
 ```
 
 62
 
-
-
-## 第三章：简易 RSS 阅读器
+# 第三章：简易 RSS 阅读器
 
 ```actionscript
 var tip:String = "MXNA Reader - available";
@@ -2746,7 +2876,7 @@ private function setUnavailableMenu():void
 }
 ```
 
-`flash.display.NativeMenu` 类使你能够构建一个菜单项列表，这些菜单项与应用程序在选择事件处理程序中运行的任何命令相关。当网络资源可用时，RSS 阅读器提供以下选项：导航到 Adobe XML 新闻聚合器站点、指示 DigestWindow 打开并显示最后接收的文章，或完全退出应用程序——这是在网络资源不可用时创建的 NativeMenu 唯一的选项。虽然 NativeMenu 对象的构造与操作系统无关，但将菜单应用于系统托盘或程序坞图标在 Windows 和 Mac OS X 之间存在差异：
+`flash.display.NativeMenu` 类使你能够构建一个菜单项列表，这些菜单项与应用程序在选择事件处理程序中运行的任何命令相关。当网络资源可用时，RSS 阅读器提供以下选项：导航到 Adobe XML 新闻聚合器站点、指示 `DigestWindow` 打开并显示最后接收的文章，或完全退出应用程序——这是在网络资源不可用时创建的 `NativeMenu` 唯一的选项。虽然 `NativeMenu` 对象的构造与操作系统无关，但将菜单应用于系统托盘或程序坞图标在 Windows 和 Mac OS X 之间存在差异：
 
 ```actionscript
 private function setMenu( menu:NativeMenu, tip:String ):void
@@ -2768,7 +2898,7 @@ private function setMenu( menu:NativeMenu, tip:String ):void
 
 `NativeApplication` 单例对象的 `icon` 属性代表出现在 Windows 系统托盘和 Mac OS X 程序坞中的应用程序图标。根据 AIR 运行时所在的操作系统，图标的类型也不同——在 Windows 上，`icon` 属性的类型是 `flash.desktop.SystemTrayIcon`，而在 Mac OS X 上则是 `flash.desktop.DockIcon`。要确定应用程序运行的操作系统，你可以检查 `NativeApplication` 的 `supportsDockIcon` 属性。如果 AIR 应用程序支持程序坞图标，那么操作系统就是 Mac OS X。除了不同的图标类型，各系统间也存在属性差异。如果 RSS 阅读器运行在 Windows 上，当鼠标悬停在系统托盘图标上时，会显示一个工具提示。
 
-图像数据本身并不自动应用于图标。在 Mac OS X 上，程序坞中的图标会提供默认图形；而在 Windows 上，除非使用 `InteractiveIcon` 实例的 `bitmaps` 属性明确设置，否则系统托盘中不会显示任何图标。本示例使用了本书附带 CD-ROM 中本章代码的 /assets 文件夹内找到的嵌入式图形，但你可以自由使用任何你希望的图形或图形数组。
+图像数据本身并不自动应用于图标。在 Mac OS X 上，程序坞中的图标会提供默认图形；而在 Windows 上，除非使用 `InteractiveIcon` 实例的 `bitmaps` 属性明确设置，否则系统托盘中不会显示任何图标。本示例使用了本书附带 CD-ROM 中本章代码的 `/assets` 文件夹内找到的嵌入式图形，但你可以自由使用任何你希望的图形或图形数组。
 
 当用户从系统菜单中选择退出应用程序时，`onShellMenuSelect()` 方法被调用，应用程序会执行一些清理工作以确保所有进程正确停止且所有窗口关闭：
 
@@ -2779,7 +2909,7 @@ _toaster.close();
 close();
 ```
 
-用于持续轮询服务的 `Timer` 实例被停止；`URLMonitor` 实例被指示停止轮询成功状态；DigestWindow 被关闭；应用程序被显式关闭。由于主应用程序窗口在运行时不会有显示，关闭应用程序的命令是从系统托盘图标发出的，而不是典型的 chrome 窗口按钮。RSSReader 的关闭事件处理程序随后调用 `NativeApplication` 实例的 `exit()` 方法，该方法会终止应用程序。
+用于持续轮询服务的 `Timer` 实例被停止；`URLMonitor` 实例被指示停止轮询成功状态；`DigestWindow` 被关闭；应用程序被显式关闭。由于主应用程序窗口在运行时不会有显示，关闭应用程序的命令是从系统托盘图标发出的，而不是典型的 chrome 窗口按钮。`RSSReader` 的关闭事件处理程序随后调用 `NativeApplication` 实例的 `exit()` 方法，该方法会终止应用程序。
 
 由于应用程序的界面是呈现文章的 toaster 风格警报，因此需要设置主 `WindowedApplication` 的属性，使其不出现在系统菜单中，并使其能够执行你在本节中定义的任务。在下一节中，你将创建应用程序描述符文件并为 RSS 阅读器定义相关的系统 chrome 属性。
 
@@ -2812,11 +2942,11 @@ close();
 </application>
 ```
 
-将文件保存为 RSSReader-app.xml，与 RSSReader.mxml 文件一起放在工作目录的根目录下。
+将文件保存为 `RSSReader-app.xml`，与 `RSSReader.mxml` 文件一起放在工作目录的根目录下。
 
-此文件将用作应用程序描述符文件。在 `<initialWindow>` 标签内声明的元素值对于隐藏主应用程序窗口以及允许系统和程序坞图标作为 RSS 阅读器的访问点非常重要。系统 chrome 将不会被绘制并设置为透明，RSSReader 窗口将在显示列表中设置为不可见。
+此文件将用作应用程序描述符文件。在 `<initialWindow>` 标签内声明的元素值对于隐藏主应用程序窗口以及允许系统和程序坞图标作为 RSS 阅读器的访问点非常重要。系统 chrome 将不会被绘制并设置为透明，`RSSReader` 窗口将在显示列表中设置为不可见。
 
-除了为 RSS 阅读器的 chrome 设置的属性外，当应用程序安装时，它将被命名为 RSSReader，并在操作系统的应用程序目录的 AIRCMR 文件夹中可用。
+除了为 RSS 阅读器的 chrome 设置的属性外，当应用程序安装时，它将被命名为 `RSSReader`，并在操作系统的应用程序目录的 `AIRCMR` 文件夹中可用。
 
 有了描述符文件，你就可以编译和打包 RSS 阅读器 AIR 可执行文件了。
 
@@ -2824,27 +2954,27 @@ close();
 
 打包 AIR 应用程序需要两个文件：主 SWF 文件和 XML 应用程序描述符文件。在本节中，你将使用命令行工具生成 SWF 文件并打包 AIR 应用程序。
 
-> 示例中用于程序坞和系统托盘图标的图形资源可以在 CD-ROM 中找到，或者你可以创建自己的图形资源。如果你正在按照本章中的示例操作，这些图形资源位于工作目录中名为 assets 的文件夹中。
+> 示例中用于程序坞和系统托盘图标的图形资源可以在 CD-ROM 中找到，或者你可以创建自己的图形资源。如果你正在按照本章中的示例操作，这些图形资源位于工作目录中名为 `assets` 的文件夹中。
 
 打开命令提示符，导航到 RSS 阅读器的工作目录，输入以下命令，然后按 Enter：
 
-```
+```bash
 amxmlc RSSReader.mxml
 ```
 
 如果你已经从证书颁发机构（如 VeriSign 或 Thawte）购买了证书，那么你可以使用该证书，而不是创建自签名证书，并跳过以下操作。要在工作目录中创建自签名证书，请输入以下命令：
 
-```
+```bash
 adt -certificate -cn RSSReader 1024-RSA certificate.pfx password
 ```
 
 在命令提示符仍指向工作目录的情况下，输入以下命令来打包 RSS 阅读器应用程序：
 
-```
+```bash
 adt -package -storetype pkcs12 -keystore certificate.pfx RSSReader.air RSSReader-app.xml RSSReader.swf
 ```
 
-系统将提示你输入证书密码。如果你是根据第二个命令创建了自签名证书，请输入 **password**。运行这些命令后，你的工作目录中将生成一个 RSSReader.swf 文件、一个 certificate.pfx 文件和一个 RSSReader.air 安装程序文件。
+系统将提示你输入证书密码。如果你是根据第二个命令创建了自签名证书，请输入 `password`。运行这些命令后，你的工作目录中将生成一个 `RSSReader.swf` 文件、一个 `certificate.pfx` 文件和一个 `RSSReader.air` 安装程序文件。
 
 成功运行最后一个命令创建安装程序后，导航到你的工作目录并双击 AIR 安装程序以安装并运行 RSS 阅读器。如果一切顺利，将出现一个 toaster 窗口，并向你展示来自 Adobe XML 新闻聚合器订阅源的最新文章。当那个 toaster 窗口打开时，应用程序的状态将如图 3-1 所示。
 
@@ -2860,29 +2990,27 @@ adt -package -storetype pkcs12 -keystore certificate.pfx RSSReader.air RSSReader
 
 你可以利用从构建 RSS 阅读器中学到的知识，针对另一个订阅源甚至多个订阅源。本章介绍的概念也适用于任何其他旨在在后台运行并向用户呈现特定于应用程序窗口的应用程序。
 
-
-
-## 4 音乐播放器
+# 第四章：音乐播放器
 
 让我们面对现实：市场上有很多音乐播放器。像 Apple iTunes 和 Windows Media Player 这样的程序占据了该市场的很大份额。尽管如此，这并不意味着没有其他产品的空间。每个现有的播放器都有使其在其他产品中脱颖而出的特点，但你可能想要一个目前任何单一播放器都无法提供的功能组合。这是你创建下一个杀手级音乐应用的机会。
 
-在本章中，你将创建一个名为 airAMP 的音乐播放器，其名称源于最早广泛使用的 MP3 程序之一。本练习的目的是创建一个具有基本播放功能的播放器，你可以用它来构建一个更强大、功能更齐全的音乐播放器。airAMP 将利用 AIR API 在所选目录中搜索 MP3 文件，以填充播放列表。它会将播放列表作为 XML 文件写回用户的硬盘驱动器。此外，它还将利用 AIR API 的能力，创建一个具有适度样式且无边框（chromeless）的应用程序。
+在本章中，你将创建一个名为 `airAMP` 的音乐播放器，其名称源于最早广泛使用的 MP3 程序之一。本练习的目的是创建一个具有基本播放功能的播放器，你可以用它来构建一个更强大、功能更齐全的音乐播放器。`airAMP` 将利用 AIR API 在所选目录中搜索 MP3 文件，以填充播放列表。它会将播放列表作为 XML 文件写回用户的硬盘驱动器。此外，它还将利用 AIR API 的能力，创建一个具有适度样式且无边框（chromeless）的应用程序。
 
 通过构建此应用程序，你将学习如何使用 Flex 和 AIR API 中的多个功能，包括以下内容：
 
-- 利用 `File` 类选择目录
-- 递归搜索目录及其子目录中的文件类型（MP3）
-- 利用 `FileStream` 类读取和写入 XML 文件
-- 创建不依赖 AIR 边框窗口控件的应用程序
-- 使用 ActionScript 加载、播放和读取 MP3 的 ID3 标签
+- 利用 `File` 类选择目录。
+- 递归搜索目录及其子目录中的文件类型（MP3）。
+- 利用 `FileStream` 类读取和写入 XML 文件。
+- 创建不依赖 AIR 边框窗口控件的应用程序。
+- 使用 ActionScript 加载、播放和读取 MP3 的 ID3 标签。
 
-下一节将讨论开发 airAMP 背后的设计概念。
+下一节将讨论开发 `airAMP` 背后的设计概念。
 
 ## 设计
 
-你可以构建到音乐播放器中的功能似乎是无穷无尽的。虽然你可以开始写下你认为理想音乐播放器中应该包含的所有内容，但最好从基础开始，添加一些次要亮点，然后逐步推进。然而，不要放弃你所有的好想法——把它们写下来，等应用程序能播放一些音乐后再回来完善。在此之前，先开始考虑 airAMP 音乐播放器将如何工作。
+你可以构建到音乐播放器中的功能似乎是无穷无尽的。虽然你可以开始写下你认为理想音乐播放器中应该包含的所有内容，但最好从基础开始，添加一些次要亮点，然后逐步推进。然而，不要放弃你所有的好想法——把它们写下来，等应用程序能播放一些音乐后再回来完善。在此之前，先开始考虑 `airAMP` 音乐播放器将如何工作。
 
-首先需要考虑的是音乐来源。传统的 Flex 网络音乐播放器能够读取 XML 文件或通过动态源接收包含 MP3 文件 URL 的数据。但是，AIR API 使你能够播放硬盘驱动器上的文件。此外，AIR 允许你递归搜索目录。此功能将是快速为 airAMP 填充音乐的理想方式。为此，应用程序将使用 `File` 类中的 `getDirectoryListingAsync()` 方法。结果将是一个代表 MP3 的 `File` 对象列表。
+首先需要考虑的是音乐来源。传统的 Flex 网络音乐播放器能够读取 XML 文件或通过动态源接收包含 MP3 文件 URL 的数据。但是，AIR API 使你能够播放硬盘驱动器上的文件。此外，AIR 允许你递归搜索目录。此功能将是快速为 `airAMP` 填充音乐的理想方式。为此，应用程序将使用 `File` 类中的 `getDirectoryListingAsync()` 方法。结果将是一个代表 MP3 的 `File` 对象列表。
 
 当搜索完成并收到结果列表时，准备数据以供播放的一种方式是为每个返回的条目创建一个 `Sound` 对象，并通过传递 `File` 的 `nativePath` 属性来使用 `Sound` 对象的 `load()` 方法。然而，一次加载多个 MP3 文件会减慢系统速度，甚至可能导致音乐播放器崩溃。
 
@@ -2890,21 +3018,28 @@ adt -package -storetype pkcs12 -keystore certificate.pfx RSSReader.air RSSReader
 
 数据填充后，将使用声音管理器类访问数据模型中的任何 MP3。声音管理器将管理所有播放功能，如播放、暂停、停止、下一曲、上一曲、音量和时间线位置。当用户从列表中选择一首曲目时，声音管理器将加载相应的 MP3 并开始播放，同时分发影响应用程序视图的事件。
 
-airAMP 音乐播放器的视图将具有以下功能：
+`airAMP` 音乐播放器的视图将具有以下功能：
 
 - **播放控件：** 所有播放控件将被分组到一个组件中。此组件将包含上一曲、播放、暂停、停止和下一曲按钮。它还将具有显示艺术家名称和歌曲标题的区域。最后，它将包含一个由 `HSlider` 组件创建的时间线滑块。`HSlider` 组件的标签将被重新用于显示声音文件的运行时间。
+
+
+
 - **播放列表视图：** 代表每个 MP3 的所有值对象将在一个修改过的 `DataGrid` 组件中被引用。当用户选择一个条目时，`DataGrid` 将向 `SoundManager` 类分发一个事件，该类将准备好播放所选内容。
+
 - **设置面板：** 设置面板为用户提供了一种在其硬盘驱动器上选择音乐目录的方法。除此之外，音乐播放器将为用户提供选项，可以选择每次打开应用程序时使用相同的音乐数据库，或者通过重新查询音乐目录来刷新数据库。
+
 - **自定义外观：** 音乐播放器的外观将比大多数开箱即用的 Flex 应用程序更好。为此，它将拥有自己的样式表和自定义按钮皮肤，并且不会使用原生系统窗口边框。尽管所有这些对于应用程序的功能来说都不是必需的，但自定义外观总是能提升用户体验。
 
 既然基本设计和功能已经定义，你就可以开始构建 airAMP 音乐播放器了。在下一节中，你将学习如何设置目录结构并收集附带文件。
 
 ## 构建目录结构
 
-在讨论音乐播放器 *如何* 构建之前，必须正确设置本章的目录结构：
+在讨论音乐播放器如何构建之前，必须正确设置本章的目录结构：
 
-1. 首先，在本地开发目录中创建一个名为 "MusicPlayer" 的新目录。此目录将是你的应用程序的工作目录。
+1. 首先，在本地开发目录中创建一个名为 `MusicPlayer` 的新目录。此目录将是你的应用程序的工作目录。
+
 2. 通过在工作目录中创建新目录 `com`、`aircmr` 和 `musicplayer` 来创建此应用程序的包结构。音乐播放器的包结构应如下所示：`working directory/com/aircmr/musicplayer`。
+
 3. 从配套网站的 `MusicPlayer` 部分下载相应的 `assets` 目录，并将其放在工作目录的根目录中。这些文件将在音乐播放器的整个开发过程中使用。
 
 现在目录结构已设置好，你可以开始构建 airAMP 了。下一节将从讨论应用程序的数据来源以及应用程序如何利用这些数据来开始开发过程。
@@ -2932,8 +3067,6 @@ airAMP 音乐播放器的视图将具有以下功能：
 
 将文件保存为 `settings.xml`，放在你的工作目录根目录中。
 
-
-
 ## 第四章：音乐播放器
 
 设置文件简洁明了。`<defaultMusicDirectory>` 节点将是用户所选音乐目录的位置。一旦用户选择了目录，该节点就会被赋值。`<refreshOnStartup>` 节点将是一个开关，用于告知应用程序是在启动时查询 `defaultMusicDirectory` 中的 MP3 文件，还是仅使用 `musicdatabase.xml` 文件中提供的数据。`<musicDataBaseLocation>` 节点指定了音乐数据库的位置和名称。该 XML 文件将在下一节中讨论。
@@ -2942,7 +3075,7 @@ airAMP 音乐播放器的视图将具有以下功能：
 
 音乐数据库并非手动创建，这意味着你无需在文本编辑器中创建名为 `musicdatabase.xml` 的新 XML 文档。当音乐播放器首次将文件搜索 XML 写入磁盘时，将创建此 XML 文件。不过，提前查看要读取和写入的数据会有所帮助：
 
-```
+```xml
 <database>
     <fileItem>
         <name></name>
@@ -2964,14 +3097,17 @@ airAMP 音乐播放器的视图将具有以下功能：
 
 `SettingsVO` 对象是一个基本的值对象，包含四个属性的 getter 和 setter，这些属性你将在音乐播放器中频繁使用：
 
-- `settingFileLocation`（字符串）：设置文件的位置（很可能是 `xml/settings.xml`）
+- `settingFileLocation`（字符串）：设置文件的位置（很可能是 `xml/settings.xml`）。
+
 - `musicDatabaseLocation`（字符串）：你希望保存数据库的文件名。这是相对于默认的 AIR 用户资源目录的。
+
 - `defaultMusicDirectory`（字符串）：用户在设置面板中指定的默认音乐目录的位置。
-- `refreshOnStartup`（布尔值）：用户在设置面板下指定的一个 true/false 变量，用于切换音乐播放器在应用程序启动时搜索 MP3 的能力。
+
+- `refreshOnStartup`（布尔值）：用户在设置面板下指定的 true/false 变量，用于切换音乐播放器在应用程序启动时搜索 MP3 的能力。
 
 通过打开一个文档并插入以下代码来创建 `SettingVO` 类：
 
-```
+```actionscript
 package com.aircmr.musicplayer.data
 {
     public class SettingsVO
@@ -3017,136 +3153,136 @@ package com.aircmr.musicplayer.data
 }
 ```
 
-将文件保存为 SettingsVO.as，放在工作目录下的 com/aircmr/musicplayer/data/ 目录中。
+将文件保存为 `SettingsVO.as`，放在工作目录下的 `com/aircmr/musicplayer/data/` 目录中。
 
 ### TrackVO
 
-TrackVO 对象稍微复杂一些，主要是因为每个 TrackVO 对象都代表用户硬盘上的一个 MP3 文件。因此，每个 TrackVO 对象必须包含一个 Sound 对象，该对象将代表可播放的数据。
+`TrackVO` 对象稍微复杂一些，主要是因为每个 `TrackVO` 对象都代表用户硬盘上的一个 MP3 文件。因此，每个 `TrackVO` 对象必须包含一个 `Sound` 对象，该对象将代表可播放的数据。
 
 创建一个新文档并插入以下代码：
 
-```
+```actionscript
 package com.aircmr.musicplayer.data
 {
-	import flash.events.Event;
-	import flash.events.EventDispatcher;
-	import flash.events.IOErrorEvent;
-	import flash.filesystem.File;
-	import flash.media.Sound;
-	import flash.net.URLRequest;
+    import flash.events.Event;
+    import flash.events.EventDispatcher;
+    import flash.events.IOErrorEvent;
+    import flash.filesystem.File;
+    import flash.media.Sound;
+    import flash.net.URLRequest;
 
-	public class TrackVO extends EventDispatcher
-	{
-		public static const SONG_LOADED:String = "songLoaded";
+    public class TrackVO extends EventDispatcher
+    {
+        public static const SONG_LOADED:String = "songLoaded";
 
-		private var _file:File;
-		private var _trackURL:String;
-		private var _sound:Sound;
-		private var _album:String;
-		private var _trackTitle:String;
-		private var _artist:String;
-		private var _track:String;
-		private var _loaded:Boolean = false;
+        private var _file:File;
+        private var _trackURL:String;
+        private var _sound:Sound;
+        private var _album:String;
+        private var _trackTitle:String;
+        private var _artist:String;
+        private var _track:String;
+        private var _loaded:Boolean = false;
 
-		public function TrackVO( file:File=null , arg_trackURL:String = "" ,
-			arg_album:String = "" , arg_artist:String = "" ,
-			arg_trackTitle:String = "" , arg_track:String = "" ):void
-		{
-			_trackURL = arg_trackURL;
-			_album = arg_album;
-			_artist = arg_artist;
-			_trackTitle = arg_trackTitle;
-			_track = arg_track;
+        public function TrackVO( file:File=null , arg_trackURL:String = "" ,
+            arg_album:String = "" , arg_artist:String = "" ,
+            arg_trackTitle:String = "" , arg_track:String = "" ):void
+        {
+            _trackURL = arg_trackURL;
+            _album = arg_album;
+            _artist = arg_artist;
+            _trackTitle = arg_trackTitle;
+            _track = arg_track;
 
-			_sound = new Sound();
-			_sound.addEventListener( Event.COMPLETE, soundLoadCompleteHandler );
-			_sound.addEventListener( Event.ID3, id3AvailableHandler );
-			_sound.addEventListener( IOErrorEvent.IO_ERROR, songFileErrorHandler );
-			if( file ) loadSong( file.nativePath );
-		}
+            _sound = new Sound();
+            _sound.addEventListener( Event.COMPLETE, soundLoadCompleteHandler );
+            _sound.addEventListener( Event.ID3, id3AvailableHandler );
+            _sound.addEventListener( IOErrorEvent.IO_ERROR, songFileErrorHandler );
+            if( file ) loadSong( file.nativePath );
+        }
 
-		public function loadSong( url:String = null ):void
-		{
-			if( !url ) url = _trackURL;
+        public function loadSong( url:String = null ):void
+        {
+            if( !url ) url = _trackURL;
 
-			var urlRequest:URLRequest = new URLRequest( url );
-			_sound.load( urlRequest );
-		}
+            var urlRequest:URLRequest = new URLRequest( url );
+            _sound.load( urlRequest );
+        }
 
-		private function id3AvailableHandler( event:Event ):void
-		{
-			_album = _sound.id3.album;
-			_artist = _sound.id3.artist;
-			_trackTitle = _sound.id3.songName;
-			_track = _sound.id3.track;
-		}
+        private function id3AvailableHandler( event:Event ):void
+        {
+            _album = _sound.id3.album;
+            _artist = _sound.id3.artist;
+            _trackTitle = _sound.id3.songName;
+            _track = _sound.id3.track;
+        }
 
-		private function soundLoadCompleteHandler( event:Event ):void
-		{
-			dispatchEvent( new Event(TrackVO.SONG_LOADED) );
-			_loaded = true;
-		}
+        private function soundLoadCompleteHandler( event:Event ):void
+        {
+            dispatchEvent( new Event(TrackVO.SONG_LOADED) );
+            _loaded = true;
+        }
 
-		private function songFileErrorHandler( event:IOErrorEvent ):void
-		{
-			trace( "error:"+event.errorID +" : file not found" );
-		}
+        private function songFileErrorHandler( event:IOErrorEvent ):void
+        {
+            trace( "error:"+event.errorID +" : file not found" );
+        }
 
-		public function get album():String
-		{
-			return _album;
-		}
+        public function get album():String
+        {
+            return _album;
+        }
 
-		public function set album(val:String):void
-		{
-			_album = val;
-		}
+        public function set album(val:String):void
+        {
+            _album = val;
+        }
 
-		public function get artist():String
-		{
-			return _artist;
-		}
+        public function get artist():String
+        {
+            return _artist;
+        }
 
-		public function set artist(val:String):void
-		{
-			_artist = val;
-		}
+        public function set artist(val:String):void
+        {
+            _artist = val;
+        }
 
-		public function get trackTitle():String
-		{
-			return _trackTitle;
-		}
+        public function get trackTitle():String
+        {
+            return _trackTitle;
+        }
 
-		public function set trackTitle(val:String):void
-		{
-			_trackTitle = val;
-		}
+        public function set trackTitle(val:String):void
+        {
+            _trackTitle = val;
+        }
 
-		public function get track():String
-		{
-			return _track;
-		}
+        public function get track():String
+        {
+            return _track;
+        }
 
-		public function set trackURL( val:String ):void
-		{
-			_trackURL = val;
-		}
+        public function set trackURL( val:String ):void
+        {
+            _trackURL = val;
+        }
 
-		public function get trackURL() : String
-		{
-			return _trackURL;
-		}
+        public function get trackURL() : String
+        {
+            return _trackURL;
+        }
 
-		public function get sound() : Sound
-		{
-			return _sound;
-		}
+        public function get sound() : Sound
+        {
+            return _sound;
+        }
 
-		public function get loaded() : Boolean
-		{
-			return _loaded;
-		}
-	}
+        public function get loaded() : Boolean
+        {
+            return _loaded;
+        }
+    }
 }
 ```
 
@@ -3160,19 +3296,25 @@ package com.aircmr.musicplayer.data
 
 以下列表描述了 `TrackVO` 对象的可用属性：
 
-- `album`（字符串）：MP3 的 ID3 信息中定义的专辑标题
-- `artist`（字符串）：MP3 的 ID3 信息中定义的艺术家名称
-- `trackTitle`（字符串）：MP3 的 ID3 信息中定义的歌曲名称
-- `track`（数字）：MP3 的 ID3 信息中定义的音轨编号
-- `trackURL`（字符串）：MP3 文件的 URL
-- `sound`（Sound）：与 TrackVO 对象相关的 Sound 对象的引用
-- `loaded`（布尔值）：一个布尔值，指示 Sound 对象是否已加载 MP3
+- `album`（字符串）：MP3 的 ID3 信息中定义的专辑标题。
 
+- `artist`（字符串）：MP3 的 ID3 信息中定义的艺术家名称。
 
+- `trackTitle`（字符串）：MP3 的 ID3 信息中定义的歌曲名称。
+
+- `track`（数字）：MP3 的 ID3 信息中定义的音轨编号。
+
+- `trackURL`（字符串）：MP3 文件的 URL。
+
+- `sound`（Sound）：与 `TrackVO` 对象相关的 `Sound` 对象的引用。
+
+- `loaded`（布尔值）：一个布尔值，指示 `Sound` 对象是否已加载 MP3。
 
 既然你已经了解了加载什么内容以及加载到何处，现在来看看如何加载它。下一节将讨论 `ApplicationDataModel` 类。
 
 ### ApplicationDataModel
+
+
 
 `ApplicationDataModel` 类作为一种方式，用于控制所有加载到应用程序中的数据，并确保永远不会出现重复数据。它是一个单例，这意味着它只能被实例化一次。如果你尝试调用 `new ApplicationDataModel()`，调试器会抛出一个错误。因此，你需要通过调用其 `getInstance()` 方法来引用 `ApplicationDataModel`。当你调用 `ApplicationDataModel.getInstance()` 时，它会返回对该类的一个引用。如果这是该方法第一次被调用，则会创建并返回该类的一个新实例，但这是唯一一次创建实例。
 
@@ -3250,16 +3392,16 @@ package com.aircmr.musicplayer.data
 }
 ```
 
-将文件保存为 ApplicationDataModel.as，放在你的工作目录下的 com/aircmr/musicplayer/data 目录中。
+将文件保存为 `ApplicationDataModel.as`，放在你的工作目录下的 `com/aircmr/musicplayer/data` 目录中。
 
-ApplicationDataModel 存储三个变量：settings、trackCollection 和 settingsLocation。settingsLocation 字符串是硬编码在主应用类中的。settings 和 trackCollection 是在相应的 XML 被解析后赋值的。以下是一个示例：
+`ApplicationDataModel` 存储三个变量：`settings`、`trackCollection` 和 `settingsLocation`。`settingsLocation` 字符串是硬编码在主应用类中的。`settings` 和 `trackCollection` 是在相应的 XML 被解析后赋值的。以下是一个示例：
 
 ```java
 ApplicationDataModel.getInstance().settings =
     XMLParserUtil.parseSettingsXML( event.xml );
 ```
 
-一旦 XMLFileService 读取了 settings.xml 文件，XMLParserUtil 就会解析 XML 对象并将其赋值给 ApplicationDataModel 上的 settings 属性。XMLFileService 和 XMLParserUtil 都将在下一节中讨论。
+一旦 `XMLFileService` 读取了 `settings.xml` 文件，`XMLParserUtil` 就会解析 XML 对象并将其赋值给 `ApplicationDataModel` 上的 `settings` 属性。`XMLFileService` 和 `XMLParserUtil` 都将在下一节中讨论。
 
 ## 配套的服务与工具类
 
@@ -3397,9 +3539,9 @@ package com.aircmr.musicplayer.services
 }
 ```
 
-将文档保存为 XMLFileService.as，放在应用程序的 services 包中（*工作目录*/com/aircmr/musicplayer/services）。
+将文档保存为 `XMLFileService.as`，放在应用程序的 services 包中（`*工作目录*/com/aircmr/musicplayer/services`）。
 
-XMLFileService 类不过是一个 File 实例和一个 FileStream 实例，外加一些事件监听器，用于告知应用程序打开或保存操作是否成功。以下代码片段演示了应用程序如何首先实例化 XMLFileService 并传递一个表示本地 URL 的字符串：
+`XMLFileService` 类不过是一个 `File` 实例和一个 `FileStream` 实例，外加一些事件监听器，用于告知应用程序打开或保存操作是否成功。以下代码片段演示了应用程序如何首先实例化 `XMLFileService` 并传递一个表示本地 URL 的字符串：
 
 ```java
 var settingsXMLLoader:XMLFileService = new XMLFileService();
@@ -3411,9 +3553,9 @@ settingsXMLLoader.loadXMLFileFromStorage(
     ApplicationDataModel.getInstance().settingFileLocation );
 ```
 
-在这个例子中，XMLFileService 被实例化并立即被分配了事件监听器。XML 文件加载后，将调用 settingsLoadedHandler() 方法。settingsLoadedHandler() 方法接收一个包含未解析的 settings.xml XML 对象的 XMLServiceEvent 对象。它通过使用 XMLParserUtil 工具将 XML 解析为 SettingsVO 对象来填充数据模型中的 settings 属性。XMLServiceEvent 和 XMLParserUtil 类都将稍后讨论。
 
 
+在这个例子中，`XMLFileService` 被实例化并立即被分配了事件监听器。XML 文件加载后，将调用 `settingsLoadedHandler()` 方法。`settingsLoadedHandler()` 方法接收一个包含未解析的 `settings.xml` XML 对象的 `XMLServiceEvent` 对象。它通过使用 `XMLParserUtil` 工具将 XML 解析为 `SettingsVO` 对象来填充数据模型中的 `settings` 属性。`XMLServiceEvent` 和 `XMLParserUtil` 类都将稍后讨论。
 
 ## 第四章：音乐播放器
 
@@ -3421,7 +3563,7 @@ settingsXMLLoader.loadXMLFileFromStorage(
 
 首先，重要的是要确认文件是否存在以及何时存在。在 `XMLFileService` 类中，你通过使用 `resolvePath()` 和 `File` 类的 `exists` 布尔属性，来检查 `settings.xml` 文件是否位于 `applicationStorageDirectory` 中：
 
-```
+```actionscript
 var sourceFile:File = File.applicationStorageDirectory.resolvePath( fileName );
 if( !sourceFile.exists )
 {
@@ -3436,7 +3578,7 @@ if( !sourceFile.exists )
 
 由于 AIR 内部的安全特性，你将无法写回应用程序目录。此目录仅用于存储你希望只读访问的数据和资源。写入限制是一个相当大的问题，因为应用程序需要将用户的偏好设置写回 `settings.xml`。`XMLFileService` 不应尝试写回应用程序目录，而应在存储目录中找不到该文件时，将其从该目录复制到存储目录。下次应用程序实例化时，就会找到 `settings.xml` 文件。这是通过 `copyXMLFromApplicationDirectoryToStorage()` 方法，使用 `File` 类的 `copyToAsync()` 方法完成的：
 
-```
+```actionscript
 sourceFile.copyToAsync( resultsFile , true );
 ```
 
@@ -3446,13 +3588,13 @@ sourceFile.copyToAsync( resultsFile , true );
 
 音乐播放器应用程序将 `settings.xml` 和 `musicdatabase.xml` 文件存储在存储目录中。如果用户接受了新的设置，或者查询了新的文件夹用于音乐，这些文件将被重写。就 `musicdatabase.xml` 文件而言，如果不存在，AIR 将创建一个。无论哪种情况，首先需要做的是声明编码头：
 
-```
+```actionscript
 var xml_encoding:String = "<?xml version='1.0' encoding='utf-8'?>\n";
 ```
 
 此字符串确保 XML 格式良好。但是，如果文件实际上不是以 UTF 编码的文档写入的，那么写入 `encoding = 'utf-8'` 并没有任何意义。要写入 UTF 编码的文档，请异步打开一个新的 `FileStream` 并使用 `writeUTFBytes()` 方法：
 
-```
+```actionscript
 _fileStream.openAsync( _file, FileMode.WRITE );
 _fileStream.writeUTFBytes( xml_toWrite );
 _fileStream.close();
@@ -3466,7 +3608,7 @@ _fileStream.close();
 
 创建一个新文档并插入以下代码：
 
-```
+```actionscript
 package com.aircmr.musicplayer.events
 {
     import flash.events.Event;
@@ -3521,7 +3663,7 @@ XML 加载并派发 `XMLFileServiceEvent.XML_LOADED` 事件后，需要对其进
 
 创建一个新文档并插入以下代码：
 
-```
+```actionscript
 package com.aircmr.musicplayer.utils
 {
     import com.aircmr.musicplayer.data.SettingsVO;
@@ -3573,7 +3715,7 @@ package com.aircmr.musicplayer.utils
 
 创建一个新文档并插入以下代码：
 
-```
+```actionscript
 package com.aircmr.musicplayer.services
 {
     import com.aircmr.musicplayer.events.FileSearchEvent;
@@ -3598,10 +3740,6 @@ package com.aircmr.musicplayer.services
         {
 ```
 
-
-
-## 第四章：音乐播放器
-
 ```actionscript
 _subDirectoryQueryList = new Array();
 
@@ -3616,6 +3754,8 @@ _file.addEventListener( FileListEvent.DIRECTORY_LISTING,
 _file.getDirectoryListingAsync();
 }
 ```
+
+
 
 ```actionscript
 private function queryDirectoryResults( event:FileListEvent ):void
@@ -3697,11 +3837,11 @@ protected function xmlNodeStructure( file:File ) :XML
 }
 ```
 
-将文件保存为 `FileSearch.as`，置于你的工作目录下的 `com/aircmr/musicplayer/services` 子目录中。
+将文件保存为`FileSearch.as`，置于你的工作目录下的`com/aircmr/musicplayer/services`子目录中。
 
-`FileSearch` 类的意图是创建一个可扩展的抽象类，因为你可能希望检索到的数据以不同的数据类型返回。音乐播放器应用程序实现了 `MP3FileSearch` 类，它继承自 `FileSearch`，并确保返回的数据被解析为一个 XML 对象，该对象随后会被写入 `musicdatabase.xml` 文件。`MP3FileSearch` 类将在稍后讨论。
+`FileSearch`类的意图是创建一个可扩展的抽象类，因为你可能希望检索到的数据以不同的数据类型返回。音乐播放器应用程序实现了`MP3FileSearch`类，它继承自`FileSearch`，并确保返回的数据被解析为一个 XML 对象，该对象随后会被写入`musicdatabase.xml`文件。`MP3FileSearch`类将在稍后讨论。
 
-`FileSearch` 服务有一个公共方法：`queryDirectoryListToXML()`。该方法接受三个参数：要搜索的目录、一个布尔值表示是否希望搜索子目录、以及一个包含你正在搜索的文件类型的扩展名的数组。请查看以下示例：
+`FileSearch`服务有一个公共方法：`queryDirectoryListToXML()`。该方法接受三个参数：要搜索的目录、一个布尔值表示是否希望搜索子目录、以及一个包含你正在搜索的文件类型的扩展名的数组。请查看以下示例：
 
 ```actionscript
 var fileSearch:FileSearch = new FileSearch();
@@ -3710,13 +3850,13 @@ fileSearch.addEventListener(FileSearchEvent.SEARCH_FINISHED,
 fileSearch.queryDirectoryListToXML( pathToDirectory , true, ["mp3"] );
 ```
 
-实例化一个新的 `FileSearch` 后，会添加一个 `FileSearchEvent.SEARCH_FINISHED` 事件监听器以监听搜索结果。`FileSearchEvent` 将在下一节讨论。一旦添加了监听器，就会调用 `queryDirectoryListToXML()` 并传递参数。
+实例化一个新的`FileSearch`后，会添加一个`FileSearchEvent.SEARCH_FINISHED`事件监听器以监听搜索结果。`FileSearchEvent`将在下一节讨论。一旦添加了监听器，就会调用`queryDirectoryListToXML()`并传递参数。
 
-关于音乐播放器，一旦搜索完成，就会调用 `fileSearchResultHandler()`，结果（XML格式）由 `XMLParserUtil` 解析，然后输入到 `ApplicationDataModel` 中。
+关于音乐播放器，一旦搜索完成，就会调用`fileSearchResultHandler()`，结果（XML格式）由`XMLParserUtil`解析，然后输入到`ApplicationDataModel`中。
 
 ## 搜索是如何执行的
 
-当实例化 `FileSearch` 的类调用 `queryDirectoryListToXML()` 时，会创建一个新的 `File` 对象，其 `path` 属性定义为要搜索的目录。添加一个监听器来监听 `FileListEvent.DIRECTORY_LISTING` 事件。一旦分配了监听器，就会调用 `getDirectoryListingAsync()` 方法：
+当实例化`FileSearch`的类调用`queryDirectoryListToXML()`时，会创建一个新的`File`对象，其`path`属性定义为要搜索的目录。添加一个监听器来监听`FileListEvent.DIRECTORY_LISTING`事件。一旦分配了监听器，就会调用`getDirectoryListingAsync()`方法：
 
 ```actionscript
 _file = new File( directoryName );
@@ -3724,15 +3864,15 @@ _file.addEventListener( FileListEvent.DIRECTORY_LISTING, queryDirectoryResults )
 _file.getDirectoryListingAsync();
 ```
 
-`getDirectoryListingAsync()` 返回一个表示目录内容的 `File` 对象数组。搜索执行后，`FileListEvent` 对象被传递给 `queryDirectoryResults()` 方法。`FileListEvent` 包含 `File` 对象的结果数组，可以通过事件的 `files` 属性访问。
+`getDirectoryListingAsync()`返回一个表示目录内容的`File`对象数组。搜索执行后，`FileListEvent`对象被传递给`queryDirectoryResults()`方法。`FileListEvent`包含`File`对象的结果数组，可以通过事件的`files`属性访问。
 
-`queryDirectoryResults()` 方法遍历结果数组，检查 `File` 对象是否代表一个目录。如果是，并且你允许搜索子目录，则该 `File` 对象被添加到 `_subDirectoryQueryList` 数组中。如果不是，该方法会检查 `File` 对象的 `extension` 属性以确定是否匹配所需的查询。如果搜索成功，则文件路径被添加到一个 XML 对象中。
+`queryDirectoryResults()`方法遍历结果数组，检查`File`对象是否代表一个目录。如果是，并且你允许搜索子目录，则该`File`对象被添加到`_subDirectoryQueryList`数组中。如果不是，该方法会检查`File`对象的`extension`属性以确定是否匹配所需的查询。如果搜索成功，则文件路径被添加到一个 XML 对象中。
 
-文件检查完毕后，`queryDirectoryResults()` 方法检查 `_subDirectoryQueryList` 是否包含子目录。如果是，则对子目录 `File` 对象执行 `getDirectoryListingAsync()`，从而递归地搜索每个子目录。如果 `_subDirectoryQueryList` 没有任何子目录，则会分派一个 `FileSearchEvent` 事件，类型为 `FileSearchEvent.SEARCH_FINISHED`。所有搜索结果都存储在分派的 `FileSearchEvent` 对象的 `searchResults` 属性中。下一节将讨论这个对象。
+文件检查完毕后，`queryDirectoryResults()`方法检查`_subDirectoryQueryList`是否包含子目录。如果是，则对子目录`File`对象执行`getDirectoryListingAsync()`，从而递归地搜索每个子目录。如果`_subDirectoryQueryList`没有任何子目录，则会分派一个`FileSearchEvent`事件，类型为`FileSearchEvent.SEARCH_FINISHED`。所有搜索结果都存储在分派的`FileSearchEvent`对象的`searchResults`属性中。下一节将讨论这个对象。
 
-### FileSearchEvent
+### `FileSearchEvent`
 
-`FileSearchEvent` 仅由 `FileSearch` 服务分派。它扩展了 `Event` 类，由事件类型字符串和搜索结果组成。搜索结果被赋给 `searchResults` 属性，可以是任何类类型，如星号 (*) 通配符所示。
+`FileSearchEvent`仅由`FileSearch`服务分派。它扩展了`Event`类，由事件类型字符串和搜索结果组成。搜索结果被赋给`searchResults`属性，可以是任何类类型，如星号（`*`）通配符所示。
 
 创建一个新文档并插入以下代码：
 
@@ -3767,15 +3907,15 @@ package com.aircmr.musicplayer.events
 }
 ```
 
-将文件保存为 `FileSearchEvent.as`，置于你的工作目录下的 `com/aircmr/musicplayer/events` 子目录中。
+将文件保存为`FileSearchEvent.as`，置于你的工作目录下的`com/aircmr/musicplayer/events`子目录中。
 
-关于音乐播放器，`FileSearchEvent` 对象被传递给应用程序控制器的 `fileSearchResultHandler()` 方法，该方法随后将返回的 XML（包含在 `FileSearchEvent.searchResults` 中）传递给 `XMLParserUtil` 工具，后者将结果解析为 `TrackVO` 对象。此外，结果会以 `musicdatabase.xml` 的形式保存到存储目录。
+关于音乐播放器，`FileSearchEvent`对象被传递给应用程序控制器的`fileSearchResultHandler()`方法，该方法随后将返回的 XML（包含在`FileSearchEvent.searchResults`中）传递给`XMLParserUtil`工具，后者将结果解析为`TrackVO`对象。此外，结果会以`musicdatabase.xml`的形式保存到存储目录。
 
-下一节将讨论对音乐播放器中 `FileSearch` 类实现的进一步自定义。
+下一节将讨论对音乐播放器中`FileSearch`类实现的进一步自定义。
 
-### MP3FileSearch
+### `MP3FileSearch`
 
-如前所述，`FileSearch` 类旨在被扩展。其目的是自定义你希望结果 XML 的结构方式。
+如前所述，`FileSearch`类旨在被扩展。其目的是自定义你希望结果 XML 的结构方式。
 
 创建一个新文档并插入以下代码：
 
@@ -3812,25 +3952,25 @@ package com.aircmr.musicplayer.services
 }
 ```
 
-将文件保存为 `MP3FileSearch.as`，置于你的工作目录下的 `com/aircmr/musicplayer/services` 子目录中。
+将文件保存为`MP3FileSearch.as`，置于你的工作目录下的`com/aircmr/musicplayer/services`子目录中。
 
-唯一需要自定义的方法是 `xmlNodeStructure()`。回顾 `FileSearch` 类的 `xmlNodeStructure()` 方法，它只创建一个 `<fileItem>` 节点，包含文件名和路径。如果 airAMP 能够检索到额外的文件数据，如曲目名称、艺术家和专辑标题，以便在加载 MP3 之前显示这些信息，那将是很好的。毕竟，在播放 MP3 之前，你只是引用了硬盘上的 MP3 文件，而不是实际加载它。这是使用 `ID3Parser` 工具完成的。下一节将更详细地讨论这个类。
+唯一需要自定义的方法是`xmlNodeStructure()`。回顾`FileSearch`类的`xmlNodeStructure()`方法，它只创建一个`<fileItem>`节点，包含文件名和路径。如果 airAMP 能够检索到额外的文件数据，如曲目名称、艺术家和专辑标题，以便在加载 MP3 之前显示这些信息，那将是很好的。毕竟，在播放 MP3 之前，你只是引用了硬盘上的 MP3 文件，而不是实际加载它。这是使用`ID3Parser`工具完成的。下一节将更详细地讨论这个类。
 
-XML 节点按照你想要的方式构建后，它被返回给 `FileSearch` 类的 `queryDirectoryResults()` 方法，并被追加到结果 XML 对象 (`_xml`) 中。
+XML 节点按照你想要的方式构建后，它被返回给`FileSearch`类的`queryDirectoryResults()`方法，并被追加到结果 XML 对象（`_xml`）中。
 
-目前，`FileSearch` 类及其相关类被设置为搜索返回的 MP3 文件。但是，请随意调整该类，使其按文件名而不是按扩展名搜索，并以不同的配置返回结果。无论 airAMP 中如何使用这个类，它都是你代码库中一个极好的类。
+目前，`FileSearch`类及其相关类被设置为搜索返回的 MP3 文件。但是，请随意调整该类，使其按文件名而不是按扩展名搜索，并以不同的配置返回结果。无论 airAMP 中如何使用这个类，它都是你代码库中一个极好的类。
 
-### ID3Parser
+### `ID3Parser`
 
-`ID3Parser` 工具是一个小型类，包含一个静态函数：`returnID3Information()`。它用于在文件被定位并引用在硬盘上时，检索 MP3 ID3v1（版本 1）的曲目信息。或者，你可以在 MP3 文件加载后读取 `Sound` 对象的 ID3 信息。然而，对于 airAMP 来说，拥有完整的 MP3 歌曲、艺术家和专辑标题列表会更好。如果你为了获取这些信息而将每个 MP3 文件都加载到一个 `Sound` 对象中，应用程序可能会慢得像爬行一样，甚至崩溃。使用这个解析工具将防止这种情况发生，同时返回曲目信息。
+`ID3Parser`工具是一个小型类，包含一个静态函数：`returnID3Information()`。它用于在文件被定位并引用在硬盘上时，检索 MP3 ID3v1（版本 1）的曲目信息。或者，你可以在 MP3 文件加载后读取`Sound`对象的 ID3 信息。然而，对于 airAMP 来说，拥有完整的 MP3 歌曲、艺术家和专辑标题列表会更好。如果你为了获取这些信息而将每个 MP3 文件都加载到一个`Sound`对象中，应用程序可能会慢得像爬行一样，甚至崩溃。使用这个解析工具将防止这种情况发生，同时返回曲目信息。
 
-> 本节不详细讨论 ID3 信息，也不详细解释如何处理二进制数据。要了解这两个主题的更多信息，请参阅 Adobe Labs 网站上的 Ben Stucki 的“Working with Binary Data”（http://labs.adobe.com/wiki/index.php/AIR:Articles:Working_with_Binary_Data）。
-
-
+> 本节不详细讨论 ID3 信息，也不详细解释如何处理二进制数据。要了解这两个主题的更多信息，请参阅 Adobe Labs 网站上的 Ben Stucki 的“Working with Binary Data”（`http://labs.adobe.com/wiki/index.php/AIR:Articles:Working_with_Binary_Data`）。
 
 ## 第四章：音乐播放器
 
 创建一个新文档并插入以下代码：
+
+
 
 ```actionscript
 package com.aircmr.musicplayer.utils
@@ -3878,21 +4018,23 @@ package com.aircmr.musicplayer.utils
 }
 ```
 
-将文件保存为 `ID3Parser.as`，放在您的工作目录下的 `com/aircmr/musicplayer/utils` 目录中。
+将文件保存为`ID3Parser.as`，放在您的工作目录下的`com/aircmr/musicplayer/utils`目录中。
 
-当调用 `returnID3Information()` 时，会创建一个新的 `FileStream` 实例，并打开作为参数传入的引用的 `File` 对象。文件内的读取位置会立即设置为文件末尾之前128字节处。此位置将流设置为读取 ID3v1 信息。
+当调用`returnID3Information()`时，会创建一个新的`FileStream`实例，并打开作为参数传入的引用的`File`对象。文件内的读取位置会立即设置为文件末尾之前128字节处。此位置将流设置为读取 ID3v1 信息。
 
-文件使用 `FileStream` 类的 `readMultiByte()` 方法进行读取。首先检查前三个字节以确定它们是否为单词 "tag"。如果这些字节确实是单词 "tag"，则文件包含 ID3v1 信息，并且位置继续在文件中移动。从那里开始，以30字节为增量读取字节。前30字节表示歌曲名称，因此设置 `id3Info` 对象的 `songName` 属性。接下来的30字节表示艺术家名称。最后30字节表示专辑名称。如果您一直在计算，文件中还剩下5个字节。这些是可选信息，例如年份、评论和流派。但是，对于此应用程序，您只需要必要的信息。读取 ID3v1 信息后，`FileStream` 被关闭，`id3Info` 对象被返回给调用方，在本例中是 `MP3FileSearch` 类。
+文件使用`FileStream`类的`readMultiByte()`方法进行读取。首先检查前三个字节以确定它们是否为单词“tag”。如果这些字节确实是单词“tag”，则文件包含 ID3v1 信息，并且位置继续在文件中移动。从那里开始，以30字节为增量读取字节。前30字节表示歌曲名称，因此设置`id3Info`对象的`songName`属性。接下来的30字节表示艺术家名称。最后30字节表示专辑名称。如果您一直在计算，文件中还剩下5个字节。这些是可选信息，例如年份、评论和流派。但是，对于此应用程序，您只需要必要的信息。读取 ID3v1 信息后，`FileStream`被关闭，`id3Info`对象被返回给调用方，在本例中是`MP3FileSearch`类。
 
-读取 ID3 信息的方法不止一种，因为 ID3 信息存在多个版本。例如，ID3v2 包含更多信息，但解析起来更困难。此外，ID3v1 信息不一定被定义——在这种情况下，`ID3Parser` 将文件名指定为歌曲名称，并将艺术家名称和专辑标题留空。要了解有关 ID3 信息的更多信息，请查看 www.id3.org。
+读取 ID3 信息的方法不止一种，因为 ID3 信息存在多个版本。例如，ID3v2 包含更多信息，但解析起来更困难。此外，ID3v1 信息不一定被定义——在这种情况下，`ID3Parser`将文件名指定为歌曲名称，并将艺术家名称和专辑标题留空。要了解有关 ID3 信息的更多信息，请查看`www.id3.org`。
 
 现在数据已定义并且 MP3 的文件位置已知，下一步是构建一种管理音频文件的方法。在下一节中，您将构建一个类来完成此任务。
 
 ## 声音管理器
 
-`ApplicationDataModel` 已填充，UI 即将构建。确保数据被正确处理的最后一步是构建一个 `SoundManager` 类，该类控制选定的 `Sound` 对象，并确保播放器一次只播放一个 MP3 文件。它将包含与 MP3 交互的所有功能，例如播放、暂停、停止、音量和播放头定位。UI 将直接通过公共方法与 `SoundManager` 通信，管理器将使用自定义事件进行响应。开始构建该类。
+`ApplicationDataModel`已填充，UI 即将构建。确保数据被正确处理的最后一步是构建一个`SoundManager`类，该类控制选定的`Sound`对象，并确保播放器一次只播放一个 MP3 文件。它将包含与 MP3 交互的所有功能，例如播放、暂停、停止、音量和播放头定位。UI 将直接通过公共方法与`SoundManager`通信，管理器将使用自定义事件进行响应。开始构建该类。
 
 创建一个新文档并插入以下代码：
+
+
 
 ```actionscript
 package com.aircmr.musicplayer.managers
@@ -4136,13 +4278,11 @@ package com.aircmr.musicplayer.managers
 }
 ```
 
+# 第4章：音乐播放器
 
+将文件保存为`SoundManager.as`，存放于工作目录下的`com/aircmr/musicplayer/managers`目录中。
 
-## 第4章：音乐播放器
-
-将文件保存为SoundManager.as，存放于工作目录下的com/aircmr/musicplayer/managers目录中。
-
-SoundManager首先由音乐播放器的应用控制器类MusicPlayer.mxml实例化。UI组件通过控制器类访问它，以保持各类之间尽可能松耦合。以下是MusicPlayer.mxml文件中的一个小片段，你将在本章后续部分创建该文件：
+`SoundManager`首先由音乐播放器的应用控制器类`MusicPlayer.mxml`实例化。UI组件通过控制器类访问它，以保持各类之间尽可能松耦合。以下是`MusicPlayer.mxml`文件中的一个小片段，你将在本章后续部分创建该文件：
 
 ```xml
 <ui:BottomControls id="bottomControls"
@@ -4150,11 +4290,11 @@ SoundManager首先由音乐播放器的应用控制器类MusicPlayer.mxml实例�
     volume="{_soundManager.volume}" />
 ```
 
-在此示例中，BottomControls组件有一个公共属性volume，它与SoundManager的volume属性绑定。此外，该特定组件有一个事件volumeChange，每当音量通过该组件的界面控件特别改变时就会触发。每当volumeChange被触发，就会访问内联代码。在此过程中，SoundManager的volume属性被设置为BottomControl的volume属性。
+在此示例中，`BottomControls`组件有一个公共属性`volume`，它与`SoundManager`的`volume`属性绑定。此外，该特定组件有一个事件`volumeChange`，每当音量通过该组件的界面控件特别改变时就会触发。每当`volumeChange`被触发，就会访问内联代码。在此过程中，`SoundManager`的`volume`属性被设置为`BottomControl`的`volume`属性。
 
-### 加载歌曲
+## 加载歌曲
 
-当SoundManager被请求播放一首歌曲时，会传入一个TrackVO对象。因为Sound对象存在于TrackVO对象中，SoundManager只需调用TrackVO的loadSong()方法并监听SONG_LOADED事件触发：
+当`SoundManager`被请求播放一首歌曲时，会传入一个`TrackVO`对象。因为`Sound`对象存在于`TrackVO`对象中，`SoundManager`只需调用`TrackVO`的`loadSong()`方法并监听`SONG_LOADED`事件触发：
 
 ```actionscript
 _selectedTrack = song as TrackVO;
@@ -4169,13 +4309,13 @@ else
 }
 ```
 
-一旦Sound对象加载完成，TrackVO引用被赋值给_currentTrack，继而被赋值给_channel SoundChannel对象。
+一旦`Sound`对象加载完成，`TrackVO`引用被赋值给`_currentTrack`，继而被赋值给`_channel SoundChannel`对象。
 
-### 监控播放头时间
+## 监控播放头时间
 
-与VideoDisplay组件不同，SoundChannel没有用于监控MP3中播放头位置的事件。然而，该应用向用户显示时间非常重要。要监控时间，最佳解决方案是使用Timer类。
+与`VideoDisplay`组件不同，`SoundChannel`没有用于监控MP3中播放头位置的事件。然而，该应用向用户显示时间非常重要。要监控时间，最佳解决方案是使用`Timer`类。
 
-在SoundManager类的构造方法中，实例化了一个新的Timer，并将durationHandler()方法分配给TimerEvent.TIMER事件。durationHandler()方法更新trackPosition属性。当playing属性改变时，Timer类启动和停止：
+在`SoundManager`类的构造方法中，实例化了一个新的`Timer`，并将`durationHandler()`方法分配给`TimerEvent.TIMER`事件。`durationHandler()`方法更新`trackPosition`属性。当`playing`属性改变时，`Timer`类启动和停止：
 
 ```actionscript
 public function set playing( value:Boolean ):void
@@ -4185,17 +4325,19 @@ public function set playing( value:Boolean ):void
 }
 ```
 
-这确保了trackPosition仅在歌曲播放时更新。PlaybackControls组件使用trackPosition属性来更新其显示。这将在下一节进一步讨论。
+这确保了`trackPosition`仅在歌曲播放时更新。`PlaybackControls`组件使用`trackPosition`属性来更新其显示。这将在下一节进一步讨论。
 
-## 构建用户界面
+# 构建用户界面
 
 既然airAMP音乐播放器的数据已就位，支持类也已设置好，下一步就是构建视图。音乐播放器的所有界面元素被划分为四个MXML组件。它们包括设置面板、播放控制、播放列表视图和底部控件。本节讨论如何构建每个元素。
 
-### SettingsPanel
+## SettingsPanel
 
-因为它是用户查看的第一个图形元素，SettingsPanel组件是一个绝佳的起点。此组件使用户能够选择其音乐目录并设置音乐播放器首选项。
 
-打开一个新文档并插入以下ActionScript和MXML标记：
+
+因为它是用户查看的第一个图形元素，`SettingsPanel` 组件是一个绝佳的起点。此组件使用户能够选择其音乐目录并设置音乐播放器首选项。
+
+打开一个新文档并插入以下 ActionScript 和 MXML 标记：
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -4367,55 +4509,55 @@ public function set playing( value:Boolean ):void
 </mx:TitleWindow>
 ```
 
-将文件保存为SettingsPanel.mxml，存放于工作目录下的com/aircmr/musicplayer/ui目录中。
+将文件保存为 `SettingsPanel.mxml`，存放于工作目录下的 `com/aircmr/musicplayer/ui` 目录中。
 
-### 显示SettingsPanel
+## 显示 SettingsPanel
 
-如果你回顾MusicPlayer应用类的openSettingsPopUp方法，你会看到SettingsPanel组件被实例化并调用了show()方法。show方法是将此`<mx:TitleWindow>`组件添加到DisplayList的方式。调用此方法时，它又会调用PopUpManager类的createPopUp()方法，该方法被包装在SettingsPanel对象中，以便引用SettingsPanel中的方法，例如init方法。
+如果你回顾 `MusicPlayer` 应用类的 `openSettingsPopUp` 方法，你会看到 `SettingsPanel` 组件被实例化并调用了 `show()` 方法。`show()` 方法是将此 `<mx:TitleWindow>` 组件添加到 `DisplayList` 的方式。调用此方法时，它又会调用 `PopUpManager` 类的 `createPopUp()` 方法，该方法被包装在 `SettingsPanel` 对象中，以便引用 `SettingsPanel` 中的方法，例如 `init` 方法。
 
-PopUpManager类的createPopUp方法接受三个参数。第一个是弹出窗口显示的位置；在此情况下，你传递给它父应用程序的引用。第二个是要显示的对象；这恰好是SettingsPanel。最后一个参数是布尔值，表示该实例是否为模态，这意味着它在关闭前会接收所有鼠标焦点；将其设置为true，因为这无疑是期望的操作，因为你希望确保用户在设置窗口中时无法点击其他任何内容。
+`PopUpManager` 类的 `createPopUp` 方法接受三个参数。第一个是弹出窗口显示的位置；在此情况下，你传递给它父应用程序的引用。第二个是要显示的对象；这恰好是 `SettingsPanel`。最后一个参数是布尔值，表示该实例是否为模态，这意味着它在关闭前会接收所有鼠标焦点；将其设置为 `true`，因为这无疑是期望的操作，因为你希望确保用户在设置窗口中时无法点击其他任何内容。
+
+# 第 4 章：音乐播放器
+
+`PopUpManager` 创建 `SettingsPanel` 实例后，使用 `PopUpManager` 的 `centerPopUp` 方法将面板移至应用程序的中心。最后，运行 `SettingsPanel` 的 `init` 方法以设置所有默认数据，并返回弹出 `SettingsPanel` 实例的引用。
+
+## 关闭设置面板
+
+此方法会派发一个 `Event.CANCEL` 事件，并使用 `removePopUp()` 方法从 `PopUpManager` 中移除 `SettingsPanel` 实例。
+
+## 浏览目录
+
+当用户点击“浏览”按钮时，会调用此方法。它会在 `init()` 方法中实例化的 `File` 对象上添加一个事件监听器，监听 `Event.SELECT` 事件，该事件将调用 `onDirectorySelect`。一旦在 `File` 对象上添加了监听器，你就可以调用 `File` 类的 `browseForDirectory` 方法。`browseForDirectory` 方法会打开一个系统目录选择窗口。当用户选择一个目录并点击确定时，会派发一个 `Event.SELECT` 事件，其中包含对该方法被调用来源的 `File` 对象的引用。
+
+## onDirectorySelect()
+
+`onDirectorySelect()` 方法接受一个 `Event` 对象作为参数。它立即将事件的目标赋值给变量 `results`。一旦声明了 `results`，你就可以将其 `nativePath` 属性赋值给 `_directoryPath`。在此实例中，`nativePath` 表示用户选择的目录的目录路径。`_directoryPath` 是将被写入数据模型中设置对象的值。最后，从 `File` 对象中移除监听器，因为浏览目录的操作已经完成。
+
+## applyHandler
+
+当用户点击“应用设置”按钮时，会调用 `applyHandler()`。此方法运行一个 `try/catch` 块，并测试 `File` 对象 `_dirTest` 是否会接受 `_directoryPath` 作为其 `nativePath`。不幸的是，在此方法之外无法检查格式错误的目录路径。如果成功通过，`nativePath` 将被赋值为 `_directoryPath`；否则，将显示错误警报并中止 `applyHandler`。
+
+如果 `nativePath` 被赋值，然后你尝试确定该目录在系统中是否存在。如果数据来自 `browseForDirectory()` 方法，那么你应该能顺利通过此测试。如果失败，你将再次提醒用户。
+
+如果成功，则将数据模型中 `Settings` 对象的 `defaultMusicDirectory` 和 `refreshOnStartup` 属性进行赋值。然后你创建一个新的 `FileService` 实例，该实例有一个事件监听器监听 `FileService.FILE_WRITTEN` 事件，该事件将访问 `fileWrittenHandler` 方法。在事件监听器设置好之后，调用 `FileService` 类的 `saveXMLFileToResource` 方法，并传入设置文件的位置和由 `buildSettingsData` 生成的 XML 对象。
+
+## 保存设置
+
+`buildSettingsData` 方法返回一个 XML 对象，其中包含数据模型中 `Settings` 对象的属性值。这将被传递给 `FileService`，以便将其写入用户资源目录中的 `settings.xml` 文件。
+
+## fileWrittenHandler
+
+在文件成功写入资源目录后，`fileWrittenHandler` 会派发一个 `SettingsPanel.SETTINGS_UPDATED` 事件并关闭弹出窗口。
 
 
 
-# 第4章：音乐播放器
-
-PopUpManager 创建 SettingsPanel 实例后，使用 PopUpManager 的 centerPopUp 方法将面板移至应用程序的中心。最后，运行 SettingsPanel 的 init 方法以设置所有默认数据，并返回弹出 SettingsPanel 实例的引用。
-
-### 关闭设置面板
-
-此方法会派发一个 Event.CANCEL 事件，并使用 removePopUp() 方法从 PopUpManager 中移除 SettingsPanel 实例。
-
-### 浏览目录
-
-当用户点击“浏览”按钮时，会调用此方法。它会在 init() 方法中实例化的 File 对象上添加一个事件监听器，监听 Event.SELECT 事件，该事件将调用 onDirectorySelect。一旦在 File 对象上添加了监听器，你就可以调用 File 类的 browseForDirectory 方法。browseForDirectory 方法会打开一个系统目录选择窗口。当用户选择一个目录并点击确定时，会派发一个 Event.SELECT 事件，其中包含对该方法被调用来源的 File 对象的引用。
-
-### onDirectorySelect()
-
-onDirectorySelect() 方法接受一个 Event 对象作为参数。它立即将事件的目标赋值给变量 results。一旦声明了 results，你就可以将其 nativePath 属性赋值给 _directoryPath。在此实例中，nativePath 表示用户选择的目录的目录路径。_directoryPath 是将被写入数据模型中设置对象的值。最后，从 File 对象中移除监听器，因为浏览目录的操作已经完成。
-
-### applyHandler
-
-当用户点击“应用设置”按钮时，会调用 applyHandler()。此方法运行一个 try/catch 块，并测试 File 对象 _dirTest 是否会接受 _directoryPath 作为其 nativePath。不幸的是，在此方法之外无法检查格式错误的目录路径。如果成功通过，nativePath 将被赋值为 _directoryPath；否则，将显示错误警报并中止 applyHandler。
-
-如果 nativePath 被赋值，然后你尝试确定该目录在系统中是否存在。如果数据来自 browseForDirectory() 方法，那么你应该能顺利通过此测试。如果失败，你将再次提醒用户。
-
-如果成功，则将数据模型中 Settings 对象的 defaultMusicDirectory 和 refreshOnStartup 属性进行赋值。然后你创建一个新的 FileService 实例，该实例有一个事件监听器监听 FileService.FILE_WRITTEN 事件，该事件将访问 fileWrittenHandler 方法。在事件监听器设置好之后，调用 FileService 类的 saveXMLFileToResource 方法，并传入设置文件的位置和由 buildSettingsData 生成的 XML 对象。
-
-### 保存设置
-
-buildSettingsData 方法返回一个 XML 对象，其中包含数据模型中 Settings 对象的属性值。这将被传递给 FileService，以便将其写入用户资源目录中的 settings.xml 文件。
-
-### fileWrittenHandler
-
-在文件成功写入资源目录后，fileWrittenHandler 会派发一个 SettingsPanel.SETTINGS_UPDATED 事件并关闭弹出窗口。
-
-由于此应用程序中的一切都依赖其他组件获取事件和数据，因此很难看到 SettingsPanel 的实际运行效果。然而，图 4-1 展示了最终成品的样子。
+由于此应用程序中的一切都依赖其他组件获取事件和数据，因此很难看到`SettingsPanel`的实际运行效果。然而，图 4-1 展示了最终成品的样子。
 
 ![SettingsPanel 最终成品](img/dea8bb18fb213671e2a7e04d8fb0d89f_124_0.png)
 
 ## PlaybackControls
 
-PlaybackControls 组件将代表播放、暂停、停止和前进曲目整个用户界面。为了保持布局，它扩展了 HBox 组件。除了播放按钮外，它还具有一个可调节的滑块，代表歌曲的播放进度，以及显示播放时间、歌曲标题和艺术家名称的标签。
+`PlaybackControls`组件将代表播放、暂停、停止和前进曲目整个用户界面。为了保持布局，它扩展了`HBox`组件。除了播放按钮外，它还具有一个可调节的滑块，代表歌曲的播放进度，以及显示播放时间、歌曲标题和艺术家名称的标签。
 
 打开一个新文档并插入以下 ActionScript 和 MXML：
 
@@ -4585,51 +4727,51 @@ PlaybackControls 组件将代表播放、暂停、停止和前进曲目整个用
 </mx:HBox>
 ```
 
-将文件保存为 PlaybackControls.mxml，位于你工作目录下的 com/aircmr/musicplayer/ui 目录中。
+将文件保存为`PlaybackControls.mxml`，位于你工作目录下的`com/aircmr/musicplayer/ui`目录中。
 
-在讨论 PlaybackControls 组件的功能之前，请花点时间看看完成后的组件是什么样子。图 4-2 展示了显示的组件。
+在讨论`PlaybackControls`组件的功能之前，请花点时间看看完成后的组件是什么样子。图 4-2 展示了显示的组件。
 
+## 第 4 章：音乐播放器
 
-
-## 第4章：音乐播放器
-
-本应用程序使用了位于 `assets` 文件夹中的样式表，以及一些自定义按钮皮肤。如果您决定不使用这些，可以注释掉每个按钮的 `styleName` 属性。
+本应用程序使用了位于`assets`文件夹中的样式表，以及一些自定义按钮皮肤。如果您决定不使用这些，可以注释掉每个按钮的`styleName`属性。
 
 ### 按钮控件
 
-播放、暂停、停止、快进和下一曲等功能的按钮控件操作方式均相同。当用户点击其中一个按钮时，会触发一个事件，该事件由应用程序控制器中的 `SoundManager` 监听。例如，按下播放按钮会触发 `PLAY_CLICK` 事件，该事件告诉 `SoundManager` 需要播放一首歌曲。处理该事件的责任则由 `SoundManager` 类承担。
+播放、暂停、停止、快进和下一曲等功能的按钮控件操作方式均相同。当用户点击其中一个按钮时，会触发一个事件，该事件由应用程序控制器中的`SoundManager`监听。例如，按下播放按钮会触发`PLAY_CLICK`事件，该事件告诉`SoundManager`需要播放一首歌曲。处理该事件的责任则由`SoundManager`类承担。
 
 ### trackInfoDisplay
 
-其中一个嵌套组件显示器是 `trackInfoDisplay`。这组组件显示诸如播放头位置、歌曲时长、艺术家姓名和歌曲标题等信息。
+其中一个嵌套组件显示器是`trackInfoDisplay`。这组组件显示诸如播放头位置、歌曲时长、艺术家姓名和歌曲标题等信息。
 
 ### 播放头进度与实时拖动
 
-许多音乐播放器都具有一个进度条功能，用户可以拖动（scrub）该进度条来改变歌曲中播放头的位置。在 airAMP 中，这由一个 `HSlider` 组件表示。
+许多音乐播放器都具有一个进度条功能，用户可以拖动（scrub）该进度条来改变歌曲中播放头的位置。在 airAMP 中，这由一个`HSlider`组件表示。
 
-第一个挑战是显示进度。这通过将 `HSlider` 组件的 `value` 属性绑定到 `PlaybackControls` 的 `trackPosition` 属性来实现。`trackPosition` 属性由 `SoundManager` 类更新。然而，仅更新 `value` 属性并不会使 `HSlider` 移动，除非它知道歌曲的总时长。这通过将 `HSlider` 的 `maximum` 属性绑定到 `PlaybackControls` 的 `trackLength` 属性来设置。当加载新歌曲时，`SoundManager` 会通过应用程序控制器更新 `trackLength` 属性。现在 `HSlider` 的滑块轨道代表了歌曲的长度，当 `HSlider` 的 `value` 更新时，其滑块（图4-2中的黑色三角形按钮）就会沿着该轨道移动。
+第一个挑战是显示进度。这通过将`HSlider`组件的`value`属性绑定到`PlaybackControls`的`trackPosition`属性来实现。`trackPosition`属性由`SoundManager`类更新。然而，仅更新`value`属性并不会使`HSlider`移动，除非它知道歌曲的总时长。这通过将`HSlider`的`maximum`属性绑定到`PlaybackControls`的`trackLength`属性来设置。当加载新歌曲时，`SoundManager`会通过应用程序控制器更新`trackLength`属性。现在`HSlider`的滑块轨道代表了歌曲的长度，当`HSlider`的`value`更新时，其滑块（图4-2中的黑色三角形按钮）就会沿着该轨道移动。
 
-下一个挑战是启用 `live scrubbing`（实时拖动）。实时拖动允许用户沿着轨道拖动滑块时更新歌曲中的位置。由于滑块代表歌曲中的位置，当用户移动它时，组件只需将新时间报告给 `SoundManager`。这通过利用 `HSlider` 的 `CHANGE` 事件来实现。当 `CHANGE` 事件被触发时，`PlaybackControl` 的 `newTrackPosition` 被设置为滑块的位置。设置完 `newTrackPosition` 后，`PlaybackControls` 组件会触发 `TRACK_POSITION_UPDATE` 事件，该事件被应用程序控制器接收。应用程序控制器类继而通过调用 `setPlayheadPosition()` 方法并传入来自 `PlaybackControls` 的新播放值来更新 `SoundManager` 中的播放头位置。最后，`HSlider` 的 `liveDragging` 属性必须设置为 `true`，才能启用点击和拖动滑块的功能。
+下一个挑战是启用`live scrubbing`（实时拖动）。实时拖动允许用户沿着轨道拖动滑块时更新歌曲中的位置。由于滑块代表歌曲中的位置，当用户移动它时，组件只需将新时间报告给`SoundManager`。这通过利用`HSlider`的`CHANGE`事件来实现。当`CHANGE`事件被触发时，`PlaybackControl`的`newTrackPosition`被设置为滑块的位置。设置完`newTrackPosition`后，`PlaybackControls`组件会触发`TRACK_POSITION_UPDATE`事件，该事件被应用程序控制器接收。应用程序控制器类继而通过调用`setPlayheadPosition()`方法并传入来自`PlaybackControls`的新播放值来更新`SoundManager`中的播放头位置。最后，`HSlider`的`liveDragging`属性必须设置为`true`，才能启用点击和拖动滑块的功能。
 
 ### 处理时间戳
 
-另一个方便的功能是能够以已用时间相对于总时间的形式显示 `trackPosition`。`trackPosition` 的值以秒为单位表示。不幸的是，大多数视频时间戳表示为 01:30，意味着一分三十秒。为了以这种方式格式化时间，请使用 Flex 的 `DateFormatter`：
+另一个方便的功能是能够以已用时间相对于总时间的形式显示`trackPosition`。`trackPosition`的值以秒为单位表示。不幸的是，大多数视频时间戳表示为 01:30，意味着一分三十秒。为了以这种方式格式化时间，请使用 Flex 的`DateFormatter`：
 
-```
+```xml
 <mx:DateFormatter id="timeFormatter" formatString="NN:SS" />
 ```
 
-此 `DateFormatter` 将 `trackPosition` 格式化为 "NN:SS"，即"分分:秒秒"。您可以通过调用以下代码访问此格式化器：
+此`DateFormatter`将`trackPosition`格式化为"NN:SS"，即"分分:秒秒"。您可以通过调用以下代码访问此格式化器：
 
-```
+```actionscript
 timeFormatter.format( new Date( trackPosition ) )
 ```
 
-`DateFormatter` 类期望接收一个 `Date` 对象传递给 format 方法。通过将带有 `trackPosition` 值的新 `Date` 对象传递给 `DateFormatter`，结果是一个类似 01:30 的 `String`。
+`DateFormatter`类期望接收一个`Date`对象传递给`format`方法。通过将带有`trackPosition`值的新`Date`对象传递给`DateFormatter`，结果是一个类似 01:30 的`String`。
 
-`HSlider` 的标签通过将 `labels` 属性设置为 `[Bindable] _labelArray` 来更新。当应用程序控制器更新 `trackPosition` 属性时，`_labelArray` 会用两个字符串重写：`timeLeft` 和 `timeElapsed`。两个值都使用 `DateFormatter` 解析为 NN:SS 格式。效果类似于 Apple iTunes 的进度显示。
+`HSlider`的标签通过将`labels`属性设置为`[Bindable] _labelArray`来更新。当应用程序控制器更新`trackPosition`属性时，`_labelArray`会用两个字符串重写：`timeLeft`和`timeElapsed`。两个值都使用`DateFormatter`解析为 NN:SS 格式。效果类似于 Apple iTunes 的进度显示。
 
 ## PlaylistView
+
+
 
 `PlaylistView` 用于显示曲目列表。它是一个扩展了 `DataGrid` 组件的自定义组件。
 
@@ -4735,8 +4877,6 @@ timeFormatter.format( new Date( trackPosition ) )
 
 airAMP 音乐播放器的最后一组组件是 `BottomControls` 组件。此组件扩展了 `BottomBar` 组件，设计用于与 `Panel` 组件一起使用。它由三个组件组成：设置按钮、音量控制器 `HSlider` 以及用于分隔两者的 `Spacer`。您可以在图4-3的底部查看此组件。
 
-
-
 ## 第四章：音乐播放器
 
 ![](img/dea8bb18fb213671e2a7e04d8fb0d89f_132_0.png)
@@ -4830,6 +4970,10 @@ airAMP 音乐播放器的最后一组组件是 `BottomControls` 组件。此组�
 所有的组件、数据和辅助类都已构建完成。airAMP 音乐播放器即将完成。开发应用程序的最后一步是设置最终的 MXML 文件并将其整合起来。
 
 打开一个新文档，并插入以下 ActionScript 和 MXML：
+
+
+
+# 第4章：音乐播放器
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -4969,8 +5113,6 @@ airAMP 音乐播放器的最后一组组件是 `BottomControls` 组件。此组�
 
 
 
-## 第4章：音乐播放器
-
 ```actionscript
 private function fileSearchResultHandler( event:FileSearchEvent ):void
 {
@@ -5061,15 +5203,15 @@ private function handleTrackPlayComplete( event:Event ):void
 </mx:Application>
 ```
 
-将文件保存为工作目录中的 MusicPlayer.mxml。
+将文件保存为工作目录中的 `MusicPlayer.mxml`。
 
-MusicPlayer.mxml 是 airAMP 音乐播放器的基础。它同时充当此应用程序的视图和控制器。本章中已经解释了大部分功能，至少就伴随类如何相互协作而言。音乐播放器的最终功能部分是一个定制的、无系统外观的应用程序。您将在下一节中学习如何创建它。
+`MusicPlayer.mxml` 是 airAMP 音乐播放器的基础。它同时充当此应用程序的视图和控制器。本章中已经解释了大部分功能，至少就伴随类如何相互协作而言。音乐播放器的最终功能部分是一个定制的、无系统外观的应用程序。您将在下一节中学习如何创建它。
 
-### Application 和 WindowedApplication 的区别
+### `Application` 和 `WindowedApplication` 的区别
 
 通常，在 AIR 应用程序中，主应用程序 MXML 文件扩展了 `<mx:WindowedApplication>` 容器。但是，本应用程序演示了如何在不使用此容器的情况下创建 AIR 应用程序，而是坚持使用相当典型的默认 Flex `<mx:Application>`。
 
-关于使用 AIR API 构建的应用程序，在两者之间进行选择时的主要考虑因素是，`<mx:WindowedApplication>` 允许您访问默认窗口的控件，例如“关闭”、“最小化”和“还原”。访问这些控件也意味着您可以为 Mac 和 PC 设置系统外观的样式。它使您能够单击并拖动窗口，并监听其移动事件；并且您能够监听窗口界面抛出的事件，并快速地为这些事件添加效果，例如最小化和关闭。最后，由于 WindowedApplication 扩展了 Application 容器，因此您可以访问为构建 Web 上的 Flex 应用程序时提供的所有事件、样式和方法。
+关于使用 AIR API 构建的应用程序，在两者之间进行选择时的主要考虑因素是，`<mx:WindowedApplication>` 允许您访问默认窗口的控件，例如“关闭”、“最小化”和“还原”。访问这些控件也意味着您可以为 Mac 和 PC 设置系统外观的样式。它使您能够单击并拖动窗口，并监听其移动事件；并且您能够监听窗口界面抛出的事件，并快速地为这些事件添加效果，例如最小化和关闭。最后，由于 `WindowedApplication` 扩展了 `Application` 容器，因此您可以访问为构建 Web 上的 Flex 应用程序时提供的所有事件、样式和方法。
 
 这听起来相当理想，除了它也意味着您被限制在大多数应用程序都相当标准的外观和感觉中。这没什么大不了的，但音乐播放器通常看起来与众不同。
 
@@ -5124,8 +5266,6 @@ private function onMouseDownHandler( event:MouseEvent ):void
 
 此时，如果您编译该应用程序，您应该能够浏览硬盘并播放一些音乐。图 4-4 和图 4-5 展示了最终的 airAMP 音乐播放器。
 
-
-
 ## 第四章：音乐播放器
 
 ![](img/dea8bb18fb213671e2a7e04d8fb0d89f_141_0.png)
@@ -5169,51 +5309,53 @@ airAMP 音乐播放器已接近完成。最后一步是创建一个描述符文�
 </application>
 ```
 
-将文件保存为 MusicPlayer-app.xml，放在你的工作目录根目录下，与 MusicPlayer.mxml 和 settings.xml 文件放在一起。
+将文件保存为 `MusicPlayer-app.xml`，放在你的工作目录根目录下，与 `MusicPlayer.mxml` 和 `settings.xml` 文件放在一起。
 
-这个文件将成为音乐播放器的描述符文件。因为应用程序将有自己的窗口设计和界面，所以 `<systemChrome>` 属性被设置为 none，`<transparent>` 被设置为 true。
+这个文件将成为音乐播放器的描述符文件。因为应用程序将有自己的窗口设计和界面，所以 `<systemChrome>` 属性被设置为 `none`，`<transparent>` 被设置为 `true`。
 
 描述符创建完成后，就可以继续编译和打包应用程序了。
 
 ### 编译和打包
 
-创建 airAMP 音乐播放器的最后一步是编译和打包它。一旦你的工作目录中有了 MusicPlayer.mxml、MusicPlayer-app.xml、settings.xml 和 assets 目录，就可以开始打包应用程序，首先将 MusicPlayer.mxml 编译成 SWF。
+创建 airAMP 音乐播放器的最后一步是编译和打包它。一旦你的工作目录中有了 `MusicPlayer.mxml`、`MusicPlayer-app.xml`、`settings.xml` 和 `assets` 目录，就可以开始打包应用程序，首先将 `MusicPlayer.mxml` 编译成 SWF。
 
 打开命令提示符，导航到音乐播放器的工作目录，输入以下命令，然后按回车：
 
-```
+```bash
 amxmlc MusicPlayer.mxml
 ```
 
 命令提示符仍然指向工作目录，输入以下命令并按回车，将小部件打包为 AIR 安装程序：
 
-```
+```bash
 adt -package MusicPlayer MusicPlayer-app.xml MusicPlayer.swf settings.xml
 ```
 
-现在包已经创建好了，导航到你的工作目录。如果小部件打包正确，你应该会有一个 MusicPlayer.air 文件。执行 MusicPlayer.air 包以将应用程序安装到你的硬盘驱动器上。安装后，打开它，选择你的 MP3 目录，点击播放，享受吧！
+现在包已经创建好了，导航到你的工作目录。如果小部件打包正确，你应该会有一个 `MusicPlayer.air` 文件。执行 `MusicPlayer.air` 包以将应用程序安装到你的硬盘驱动器上。安装后，打开它，选择你的 MP3 目录，点击播放，享受吧！
 
 ## 总结
 
 现在你已经创建了自己的音乐播放器，你再也不会回到 iTunes 了。无论这个应用程序是否值得互联网上的音响发烧友使用，它都是一个绝佳的方式，让你深入了解一些出色的 Flex 和 AIR 概念。
 
-本章介绍了如何使用 `<mx:Application>` 而不是 `<mx:WindowedApplication>`。你学习了如何使用 File 对象搜索目录，以及如何使用 `FileStream.readMultiByte` 读取数据。你练习了使用 `FileStream.writeUTFBytes` 从硬盘读取数据和写入数据，并简要了解了如何在 ActionScript 3 和 MXML 中操作和创建自定义组件。
+
+
+本章介绍了如何使用`<mx:Application>`而不是`<mx:WindowedApplication>`。你学习了如何使用`File`对象搜索目录，以及如何使用`FileStream.readMultiByte`读取数据。你练习了使用`FileStream.writeUTFBytes`从硬盘读取数据和写入数据，并简要了解了如何在 ActionScript 3 和 MXML 中操作和创建自定义组件。
 
 希望此时，你正坐在电脑前，随着你最喜欢的曲调摇摆。当然，由于篇幅限制，音乐播放器中常见的许多功能没有添加。然而，鼓励你将此应用程序作为起点，并添加一些额外功能。以下是一些后续建议：
 
--   添加在播放器中搜索任何歌曲的能力。
--   使用 `SoundMixer.computeSpectrum` 方法添加音频可视化，以增强显示效果。
--   添加下载当前播放歌曲专辑封面的能力。
--   添加仅打开一个文件的能力。
--   添加将文件拖放到播放器并自动将其写入 XML 数据库的能力。
--   添加创建播放器内播放列表的能力。
--   添加读取和解析 iTunes 音乐数据库 XML 文件的能力。
+- 添加在播放器中搜索任何歌曲的能力。
+- 使用`SoundMixer.computeSpectrum`方法添加音频可视化，以增强显示效果。
+- 添加下载当前播放歌曲专辑封面的能力。
+- 添加仅打开一个文件的能力。
+- 添加将文件拖放到播放器并自动将其写入 XML 数据库的能力。
+- 添加创建播放器内播放列表的能力。
+- 添加读取和解析 iTunes 音乐数据库 XML 文件的能力。
 
 正如你所看到的，有无尽的想法来增强和扩展你在本章创建的基本音乐播放器。最重要的是，慢慢来，享受将这个播放器打造成你自己的 AIR 音乐播放器的过程。
 
 ## 迷你 CMS
 
-在 AIR 中创建一个内容管理系统 (CMS) 是个绝妙的主意。还有什么比一个跨平台的桌面应用程序更能让你管理远程内容呢？好吧，很多事情都更好，但在 AIR 的背景下，CMS 是一个相当时髦的可能性。你将在本章中创建的应用程序应该能为你创建一个简单的 CMS 应用程序提供一个良好的开端。你可以用许多不同的方式来创建 CMS，但在这种情况下，应用程序将保持相当简单，希望它能作为一块垫脚石，帮助你创建一个满足特定需求的 CMS。
+在 AIR 中创建一个内容管理系统（CMS）是个绝妙的主意。还有什么比一个跨平台的桌面应用程序更能让你管理远程内容呢？好吧，很多事情都更好，但在 AIR 的背景下，CMS 是一个相当时髦的可能性。你将在本章中创建的应用程序应该能为你创建一个简单的 CMS 应用程序提供一个良好的开端。你可以用许多不同的方式来创建 CMS，但在这种情况下，应用程序将保持相当简单，希望它能作为一块垫脚石，帮助你创建一个满足特定需求的 CMS。
 
 在本章中，该应用程序将使你能够管理一个远程 XML 数据集及其相关资源。应用程序管理的数据集是一个假设的项目列表，类似于一个简单的文章或期刊条目列表。列表中的每个项目还包含一个关联的图像文件。该应用程序将使你能够编辑、添加和删除列表中的项目。编辑完内容后，应用程序会将新数据集和你从本地硬盘选择的任何图像上传到远程存储区域。
 
@@ -5223,17 +5365,17 @@ adt -package MusicPlayer MusicPlayer-app.xml MusicPlayer.swf settings.xml
 
 一如既往，最好列出你的应用程序应该实现的目标列表。迷你 CMS 应用程序应使用户能够执行以下操作：
 
--   配置远程网关 URL。
--   验证远程网关 URL。
--   下载远程 XML 数据集并将其保存在他们的硬盘驱动器上。
--   显示数据集中所有项目的可选择列表。
--   在可编辑表单中显示所选项目的字段。
--   添加、编辑和删除列表中的项目。
--   编辑所选项目的字段。
--   浏览他们的硬盘驱动器以查找资源文件（图像）。
--   保存单个项目的更改。
--   恢复到原始数据。
--   将编辑后的 XML 数据集和任何本地资源上传到远程存储区域。
+- 配置远程网关 URL。
+- 验证远程网关 URL。
+- 下载远程 XML 数据集并将其保存在他们的硬盘驱动器上。
+- 显示数据集中所有项目的可选择列表。
+- 在可编辑表单中显示所选项目的字段。
+- 添加、编辑和删除列表中的项目。
+- 编辑所选项目的字段。
+- 浏览他们的硬盘驱动器以查找资源文件（图像）。
+- 保存单个项目的更改。
+- 恢复到原始数据。
+- 将编辑后的 XML 数据集和任何本地资源上传到远程存储区域。
 
 前面的列表应该能让你对应用程序在类和用户界面方面需要什么有一个相当清晰的概念。列表中的第一项，关于网关 URL，你现在可能觉得有点模糊，但下一节将解释这个组件。
 
@@ -5241,9 +5383,9 @@ adt -package MusicPlayer MusicPlayer-app.xml MusicPlayer.swf settings.xml
 
 远程网关是应用程序的重要组成部分。它是一个服务器端脚本，处理应用程序和服务器之间的通信。该脚本还存储数据文件和资源文件夹的 URL。该脚本可以用多种脚本语言编写，包括 ASP、JSP、PHP 和 Ruby 等。在本章中，网关脚本是用 PHP 编写的，因为它广泛可用，并且经常与 Flash 和 Flex 项目结合使用。更重要的是，网关必须处理三个操作：
 
--   URL 验证
--   数据文件上传
--   资源文件上传
+- URL 验证
+- 数据文件上传
+- 资源文件上传
 
 当用户配置他们的应用程序，特别是配置远程项目的位置时，确保他们输入了正确的 URL 是一个好主意。允许用户验证他们输入的内容也使应用程序有机会获取数据集和资源文件夹的路径。没有这些变量，应用程序就无法正常工作。用户验证了网关 URL 后，应用程序就应该准备好下载数据，让用户随心所欲地编辑。请记住，此脚本文件不会与应用程序一起打包。你需要负责将脚本以及初始资源和数据文件上传到远程服务器，以便应用程序正常运行。
 
@@ -5251,19 +5393,17 @@ adt -package MusicPlayer MusicPlayer-app.xml MusicPlayer.swf settings.xml
 
 用户验证了网关 URL 并收到远程设置后，最好存储这些信息以备后用。不仅设置应在应用程序的其他部分中可用，而且还应保存在用户的计算机上，以便用户下次启动时不必重新配置应用程序。
 
-为了使设置信息在整个应用程序中可用，你将使用强大的单例类模式创建一个数据模型。这个类将被命名为 SettingsModel。单例模式确保在整个应用程序中只能创建一个 Settings 对象实例，确保应用程序中的所有组件和对象都从这唯一的设置信息源进行读取。
+为了使设置信息在整个应用程序中可用，你将使用强大的单例类模式创建一个数据模型。这个类将被命名为`SettingsModel`。单例模式确保在整个应用程序中只能创建一个`Settings`对象实例，确保应用程序中的所有组件和对象都从这唯一的设置信息源进行读取。
 
+## 第五章：迷你 CMS
 
-
-## 第五章：迷你CMS
-
-为了保存设置信息，使其在用户下次使用应用程序时仍可用，您将创建一个服务类，该类在应用程序的存储目录中加载和保存一个简单的XML文件。这个类将被命名为`SettingsService`。
+为了保存设置信息，使其在用户下次使用应用程序时仍可用，您将创建一个服务类，该类在应用程序的存储目录中加载和保存一个简单的 XML 文件。这个类将被命名为`SettingsService`。
 
 ### 数据管理
 
-除了管理设置数据外，您还需要管理主数据集。主数据集是一个XML文件，一旦设置经过验证，就必须从远程位置下载，然后保存到应用程序的存储目录中。为了使这个过程更友好，您将创建一个名为`XMLDataService`的服务类。当XML完全加载完毕时，将分派一个`Complete`事件；如果加载数据时出现问题，也将分派一个`Error`事件。
+除了管理设置数据外，您还需要管理主数据集。主数据集是一个 XML 文件，一旦设置经过验证，就必须从远程位置下载，然后保存到应用程序的存储目录中。为了使这个过程更友好，您将创建一个名为`XMLDataService`的服务类。当 XML 完全加载完毕时，将分派一个`Complete`事件；如果加载数据时出现问题，也将分派一个`Error`事件。
 
-当应用程序获得数据时，需要将其解析成对显示组件友好的对象。编辑过的数据还需要被序列化回XML，以便在上传之前保存到本地文件。将创建两个类来处理这个需求。第一个类是另一个服务类，这次命名为`ListDataService`，它将处理数据的转换。第二个类名为`ItemData`，是一个泛型对象，将描述数据集中的每个项目。
+当应用程序获得数据时，需要将其解析成对显示组件友好的对象。编辑过的数据还需要被序列化回 XML，以便在上传之前保存到本地文件。将创建两个类来处理这个需求。第一个类是另一个服务类，这次命名为`ListDataService`，它将处理数据的转换。第二个类名为`ItemData`，是一个泛型对象，将描述数据集中的每个项目。
 
 ### 上传文件
 
@@ -5271,15 +5411,15 @@ adt -package MusicPlayer MusicPlayer-app.xml MusicPlayer.swf settings.xml
 
 ## 用户界面
 
-对于这个应用程序来说，用户界面相对简单。首先，您将创建一个组件，使用户能够编辑和验证网关URL。这个组件将被命名为`SettingsPanel`，其行为将类似于一个弹出窗口。在`SettingsPanel`组件之后，您将创建一个组件，使用户能够编辑数据集中某个项目的数据。这个组件将包含与数据集中某个项目的每个属性相对应的表单字段。这个组件被命名为`ItemEditor`。最后，您将使用一个`List`组件来展示数据集中的每个项目。除了一些零散的按钮外，这些就是应用程序的主要界面组件。
+对于这个应用程序来说，用户界面相对简单。首先，您将创建一个组件，使用户能够编辑和验证网关 URL。这个组件将被命名为`SettingsPanel`，其行为将类似于一个弹出窗口。在`SettingsPanel`组件之后，您将创建一个组件，使用户能够编辑数据集中某个项目的数据。这个组件将包含与数据集中某个项目的每个属性相对应的表单字段。这个组件被命名为`ItemEditor`。最后，您将使用一个`List`组件来展示数据集中的每个项目。除了一些零散的按钮外，这些就是应用程序的主要界面组件。
 
 ## 代码与代码解释
 
-本节将深入探讨定义应用程序每个类和组件功能的代码。在接下来的部分中，您将创建应用程序所需的每个类和组件。最后，您将通过创建主应用程序文件将所有内容整合在一起。然而，首先，在您的开发目录中创建一个名为Mini CMS的文件夹。这将是您用于此应用程序的工作目录。
+本节将深入探讨定义应用程序每个类和组件功能的代码。在接下来的部分中，您将创建应用程序所需的每个类和组件。最后，您将通过创建主应用程序文件将所有内容整合在一起。然而，首先，在您的开发目录中创建一个名为`Mini CMS`的文件夹。这将是您用于此应用程序的工作目录。
 
 ### 远程网关
 
-远程网关脚本是本应用程序的基石。幸运的是，该脚本极其简单，即使您不理解PHP，也可能在浏览后就能了解其大致功能。
+远程网关脚本是本应用程序的基石。幸运的是，该脚本极其简单，即使您不理解 PHP，也可能在浏览后就能了解其大致功能。
 
 打开您的编辑器并创建一个新文档。输入以下标记：
 
@@ -5333,7 +5473,7 @@ function handleUploadAsset()
 ?>
 ```
 
-将文件保存为工作目录中的gateway.php。
+将文件保存为工作目录中的`gateway.php`。
 
 为了使应用程序在您自己的服务器上下文中正常工作，请修改脚本开头的配置变量：
 
@@ -5345,9 +5485,9 @@ $GLOBALS['assetsFolderURL'] = 'http://yourdomain.com/minicms/assets/';
 $GLOBALS['assetsFolderPath'] = '/serverpath/minicms/assets/';
 ```
 
-上面的代码片段包含了网关脚本所需的配置变量。当然，您必须更改这些变量以适应您服务器的上下文。URL应配置为与您自己的域名和内部文件夹结构相匹配。路径应使用XML数据文件和资源文件夹的物理路径进行配置。如果您不确定磁盘路径，可以在您计划上传网关脚本的文件夹内创建一个测试脚本。然后在此脚本中使用PHP函数`getcwd()`。该函数输出当前工作目录的物理路径——换句话说，就是脚本所在目录的路径。请记住，当您将此文件上传到服务器时，服务器必须已安装并运行PHP。此外，服务器必须拥有向其硬盘驱动器写入文件的权限。
+上面的代码片段包含了网关脚本所需的配置变量。当然，您必须更改这些变量以适应您服务器的上下文。URL 应配置为与您自己的域名和内部文件夹结构相匹配。路径应使用 XML 数据文件和资源文件夹的物理路径进行配置。如果您不确定磁盘路径，可以在您计划上传网关脚本的文件夹内创建一个测试脚本。然后在此脚本中使用 PHP 函数`getcwd()`。该函数输出当前工作目录的物理路径——换句话说，就是脚本所在目录的路径。请记住，当您将此文件上传到服务器时，服务器必须已安装并运行 PHP。此外，服务器必须拥有向其硬盘驱动器写入文件的权限。
 
-远程网关脚本被编程为处理三种操作：验证、数据上传和资源上传。应用程序通过设置一个名为`action`的查询字符串变量来指定执行哪个操作。例如，当用户尝试验证网关URL时，应用程序将获取用户的输入并附加验证查询字符串。应用程序将尝试加载的URL如下所示：`http://www.yourdomain.com/minicms/gateway.php?action=validate`。
+远程网关脚本被编程为处理三种操作：验证、数据上传和资源上传。应用程序通过设置一个名为`action`的查询字符串变量来指定执行哪个操作。例如，当用户尝试验证网关 URL 时，应用程序将获取用户的输入并附加验证查询字符串。应用程序将尝试加载的 URL 如下所示：`http://www.yourdomain.com/minicms/gateway.php?action=validate`。
 
 关于验证过程，请注意应用程序依赖网关脚本提供两个设置变量：
 
@@ -5358,79 +5498,78 @@ function handleValidate()
 }
 ```
 
-这里，`handleValidate`函数简单地输出一条消息，如果用户为网关脚本输入了有效的URL，应用程序将能够读取该消息。该消息将被应用程序解析，以提取XML数据文件的URL和资源文件夹的URL。
+这里，`handleValidate`函数简单地输出一条消息，如果用户为网关脚本输入了有效的 URL，应用程序将能够读取该消息。该消息将被应用程序解析，以提取 XML 数据文件的 URL 和资源文件夹的 URL。
 
 在下一节中，您将学习如何创建必要的文件来管理设置数据。
 
 ### 设置模型
 
-为了使应用程序的所有组件正常工作，必须在所有类和组件中提供关键信息。您将创建两个类来实现这一点。首先，`SettingsModel`类将利用单例模式作为重要设置变量的存储库。其次，`SettingsService`类将帮助将设置数据加载到应用程序中以及保存到用户硬盘以供后续使用。设置将保存在一个简单的XML文件中。
+为了使应用程序的所有组件正常工作，必须在所有类和组件中提供关键信息。您将创建两个类来实现这一点。首先，`SettingsModel`类将利用单例模式作为重要设置变量的存储库。其次，`SettingsService`类将帮助将设置数据加载到应用程序中以及保存到用户硬盘以供后续使用。设置将保存在一个简单的 XML 文件中。
 
-在您的开发目录中，创建一个名为Mini CMS的文件夹。这将是您用于此程序的工作目录。
+在您的开发目录中，创建一个名为`Mini CMS`的文件夹。这将是您用于此程序的工作目录。
 
 1. 打开您的编辑器并创建一个新文档。输入以下标记：
 
-```
-<?xml version='1.0' encoding='utf-8'?>
-<settings>
-    <gatewayurl></gatewayurl>
-    <xmldataurl></xmldataurl>
-    <assetsfolderurl></assetsfolderurl>
-</settings>
-```
+   ```
+   <?xml version='1.0' encoding='utf-8'?>
+   <settings>
+       <gatewayurl></gatewayurl>
+       <xmldataurl></xmldataurl>
+       <assetsfolderurl></assetsfolderurl>
+   </settings>
+   ```
 
-2. 将文件保存为工作目录中的settings.xml。
+2. 将文件保存为工作目录中的`settings.xml`。
 
 3. 创建一个新文档并输入以下标记：
 
-```
-package com.aircmr.minicms.data
-{
-    import flash.errors.IllegalOperationError;
-    import flash.events.Event;
-    import flash.events.EventDispatcher;
-    import flash.filesystem.File;
+   ```
+   package com.aircmr.minicms.data
+   {
+       import flash.errors.IllegalOperationError;
+       import flash.events.Event;
+       import flash.events.EventDispatcher;
+       import flash.filesystem.File;
 
-    final public class SettingsModel extends EventDispatcher
-    {
-        /* Static Variables */
-        private static var _instance:SettingsModel = new SettingsModel();
+       final public class SettingsModel extends EventDispatcher
+       {
+           /* Static Variables */
+           private static var _instance:SettingsModel = new SettingsModel();
 
-        /* Static Methods */
-        public static function getInstance():SettingsModel
-        {
-            return _instance;
-        }
+           /* Static Methods */
+           public static function getInstance():SettingsModel
+           {
+               return _instance;
+           }
 
-        /* Private Variables */
-        private var _assetsFolderURL:String;
-        private var _data:XML;
-        private var _localDataFile:File;
-        private var _xmlDataURL:String;
-        private var _gatewayURL:String;
-        private var _uploadURL:String;
-        private var _validateURL:String;
+           /* Private Variables */
+           private var _assetsFolderURL:String;
+           private var _data:XML;
+           private var _localDataFile:File;
+           private var _xmlDataURL:String;
+           private var _gatewayURL:String;
+           private var _uploadURL:String;
+           private var _validateURL:String;
 
-        /* Constructor & Init */
-        public function SettingsModel()
-        {
-            if( _instance != null )
-            {
-                throw new IllegalOperationError( "Error at :: SettingsModel.
-                    SettingsModel is a Singleton with access through
-                    SettingsModel.getInstance()." );
-            }
-        }
+           /* Constructor & Init */
+           public function SettingsModel()
+           {
+               if( _instance != null )
+               {
+                   throw new IllegalOperationError( "Error at :: SettingsModel.
+                       SettingsModel is a Singleton with access through
+                       SettingsModel.getInstance()." );
+               }
+           }
 
-        /* Private Methods */
-        private function deserialize():void
-        {
+           /* Private Methods */
+           private function deserialize():void
+           {
+   ```
 
-```
+## 第 5 章：迷你 CMS
 
 
-
-## 第5章：迷你CMS
 
 ```actionscript
 this.gatewayURL = ( String( _data.gatewayurl ).length > 0 ) ?
@@ -5504,9 +5643,9 @@ public function get localDataFile():File
 }
 ```
 
-4.  将文件保存为 SettingsModel.as，位于你的工作目录中的 `com/aircmr/minicms/data/` 目录下。
+4. 将文件保存为`SettingsModel.as`，位于你的工作目录中的`com/aircmr/minicms/data/`目录下。
 
-5.  创建一个新文档，并输入以下标记：
+5. 创建一个新文档，并输入以下标记：
 
 ```actionscript
 package com.aircmr.minicms.services
@@ -5581,17 +5720,17 @@ package com.aircmr.minicms.services
 }
 ```
 
-6.  将文件保存为 SettingsService.as，位于你的工作目录中的 `com/aircmr/minicms/services/` 目录下。
+6. 将文件保存为`SettingsService.as`，位于你的工作目录中的`com/aircmr/minicms/services/`目录下。
 
-在前面的六个步骤中，你创建了管理应用程序设置所需的文件和类，包括 `settings.xml`、`SettingsModel.as` 和 `SettingsService.as`。
+在前面的六个步骤中，你创建了管理应用程序设置所需的文件和类，包括`settings.xml`、`SettingsModel.as`和`SettingsService.as`。
 
-步骤1和2涵盖了 `settings.xml` 文件——这个文件将存储在应用程序的存储文件夹中，以保留用户的设置。此文件中存储了三个设置值。第一个也是最重要的是网关URL。这是唯一由用户设置的设置。XML数据URL和资源文件夹URL的值将在用户验证网关URL时检索。
+步骤1和2涵盖了`settings.xml`文件——这个文件将存储在应用程序的存储文件夹中，以保留用户的设置。此文件中存储了三个设置值。第一个也是最重要的是网关URL。这是唯一由用户设置的设置。XML数据URL和资源文件夹URL的值将在用户验证网关URL时检索。
 
-在步骤3和4中，你创建了 `SettingsModel` 类。此类使用单例模式，以确保在整个应用程序中只存在该类的一个实例。单例模式在你想为一组数据或函数创建单一存放位置时非常有用。对于这个应用程序，它是存储XML设置值的完美方法。
+在步骤3和4中，你创建了`SettingsModel`类。此类使用单例模式，以确保在整个应用程序中只存在该类的一个实例。单例模式在你想为一组数据或函数创建单一存放位置时非常有用。对于这个应用程序，它是存储XML设置值的完美方法。
 
-除了某些XML解析方法外，请注意此类创建了一个名为 `_localDataFile` 的额外设置值。此变量是AIR `File` 类的一个实例，它存储了XML数据文件下载到用户硬盘后保存位置的引用。
+除了某些XML解析方法外，请注意此类创建了一个名为`_localDataFile`的额外设置值。此变量是AIR`File`类的一个实例，它存储了XML数据文件下载到用户硬盘后保存位置的引用。
 
-以下代码片段包含 `SettingsModel` `_xmlDataURL` 属性的setter函数：
+以下代码片段包含`SettingsModel`的`_xmlDataURL`属性的setter函数：
 
 ```actionscript
 public function set xmlDataURL( value:String ):void
@@ -5607,9 +5746,9 @@ public function set xmlDataURL( value:String ):void
 }
 ```
 
-`_localDataFile` 属性也是在此函数中设置的。数据文件将始终存储在应用程序的存储目录中，因此通过解析XML数据URL获取文件名，你可以通过访问 `File` 类的名为 `applicationStorageDirectory` 的公共静态变量，并将文件名传递给其 `resolve` 方法来创建一个新的 `File` 对象实例。此方法将返回一个引用应用程序存储目录内数据文件的新 `File` 对象。
+`_localDataFile`属性也是在此函数中设置的。数据文件将始终存储在应用程序的存储目录中，因此通过解析XML数据URL获取文件名，你可以通过访问`File`类的名为`applicationStorageDirectory`的公共静态变量，并将文件名传递给其`resolve`方法来创建一个新的`File`对象实例。此方法将返回一个引用应用程序存储目录内数据文件的新`File`对象。
 
-在步骤5和6中，你创建了 `SettingsService` 类。创建此类是为了处理将设置加载到用户硬盘并从硬盘保存设置：
+在步骤5和6中，你创建了`SettingsService`类。创建此类是为了处理将设置加载到用户硬盘并从硬盘保存设置：
 
 ```actionscript
 public function load():void
@@ -5635,9 +5774,9 @@ public function save( xml:XML ):void
 }
 ```
 
-上面的代码片段包含了 `SettingsService` 类的 `load` 和 `save` 方法。当 `load` 方法首次被调用时，类的 `_file` 属性被设置——同样，通过使用 `File` 类的静态属性 `applicationStorageDirectory` 的 `resolve` 方法，并传递设置文件的文件名。
+上面的代码片段包含了`SettingsService`类的`load`和`save`方法。当`load`方法首次被调用时，类的`_file`属性被设置——同样，通过使用`File`类的静态属性`applicationStorageDirectory`的`resolve`方法，并传递设置文件的文件名。
 
-然后，通过创建新的 `FileStream` 对象实例、配置相应的监听器并利用其 `openAsync` 方法来打开文件。当文件读取完成时，调用 `onFileReadComplete` 方法，并将 `settings.xml` 文件中的数据转换为方便的XML对象并存储在 `_data` 属性中。然后类派发一个 `COMPLETE` 事件，通知任何监听者 `settings.xml` 文件已加载完毕并且数据可以被访问。`save` 方法本质上是相同的过程但相反，不同之处在于使用了 `FileStream` 对象的 `writeUTFBytes` 方法将XML数据写入 `settings.xml` 文件。
+然后，通过创建新的`FileStream`对象实例、配置相应的监听器并利用其`openAsync`方法来打开文件。当文件读取完成时，调用`onFileReadComplete`方法，并将`settings.xml`文件中的数据转换为方便的XML对象并存储在`_data`属性中。然后类派发一个`COMPLETE`事件，通知任何监听者`settings.xml`文件已加载完毕并且数据可以被访问。`save`方法本质上是相同的过程但相反，不同之处在于使用了`FileStream`对象的`writeUTFBytes`方法将XML数据写入`settings.xml`文件。
 
 在下一节中，你将创建管理XML数据所需的类。
 
@@ -5647,7 +5786,7 @@ public function save( xml:XML ):void
 
 这个应用程序的数据有一个特定的模式。这个模式看起来像一个简单的日志或博客条目列表。列表中的每个项目有五个属性：日期、标题、副标题、正文文本和一个关联的图像。为了在应用程序中表示和管理这些数据，你将创建三个类文件和一个XML文件。
 
-1.  打开你的编辑器并创建一个新文档。输入以下标记：
+1. 打开你的编辑器并创建一个新文档。输入以下标记：
 
 ```xml
 <?xml version='1.0' encoding='utf-8'?>
@@ -5669,9 +5808,9 @@ public function save( xml:XML ):void
 </data>
 ```
 
-2.  将文件保存为 `dataset.xml`，位于你的工作目录中。
+2. 将文件保存为`dataset.xml`，位于你的工作目录中。
 
-3.  创建一个新文档，并输入以下标记：
+3. 创建一个新文档，并输入以下标记：
 
 ```actionscript
 package com.aircmr.minicms.data
@@ -5679,9 +5818,9 @@ package com.aircmr.minicms.data
     import mx.utils.StringUtil;
 ```
 
-
-
 ## 第五章：迷你内容管理系统
+
+
 
 ```actionscript
 import flash.filesystem.File;
@@ -5798,7 +5937,7 @@ public class ItemData
 }
 ```
 
-**4.** 将文件保存为 ItemData.as，放置在您工作目录的 com/aircmr/minicms/data/ 目录下。
+**4.** 将文件保存为`ItemData.as`，放置在您工作目录的`com/aircmr/minicms/data/`目录下。
 
 **5.** 创建一个新文档，并输入以下标记：
 
@@ -5883,7 +6022,7 @@ package com.aircmr.minicms.services
 }
 ```
 
-**6.** 将文件保存为 ListDataService.as，放置在您工作目录的 com/aircmr/minicms/services/ 目录下。
+**6.** 将文件保存为`ListDataService.as`，放置在您工作目录的`com/aircmr/minicms/services/`目录下。
 
 **7.** 创建一个新文档，并输入以下标记：
 
@@ -5974,19 +6113,19 @@ package com.aircmr.minicms.services
 }
 ```
 
-**8.** 将文件保存为 XMLDataService.as，放置在您工作目录的 com/aircmr/minicms/services/ 目录下。
+**8.** 将文件保存为`XMLDataService.as`，放置在您工作目录的`com/aircmr/minicms/services/`目录下。
 
-在之前的八个步骤中，您已经创建了管理内容数据所需的所有文件：dataset.xml、ItemData.as、ListDataService.as 和 XMLDataService.as。
+
+
+在之前的八个步骤中，您已经创建了管理内容数据所需的所有文件：`dataset.xml`、`ItemData.as`、`ListDataService.as` 和 `XMLDataService.as`。
 
 在步骤 1 和 2 中，您创建了数据集文件。该文件将保存应用程序管理的所有内容。当您部署应用程序时，该文件不会被打包。相反，它会被上传到远程服务器。当应用程序配置了有效的网关 URL 后，它会将当前数据集下载到用户的硬盘驱动器。
 
-在步骤 3 和 4 中，您创建了 ItemData 类。该类的实例用于表示 XML 数据中的一项。正如您可能预期的那样，每个项目的日期、标题、副标题等都有对应的属性。还有一些您可能意想不到的属性。首先，`_originalData` 属性用于存储对项目原始数据的引用。当用户希望取消所做的更改并恢复到原始数据时，会使用此属性。其次，`_edited` 属性简单地存储一个布尔值，指示项目的数据是否已被编辑。最后，当用户浏览以选择与项目关联的新图像时，`_localImage` 属性用于存储对用户硬盘驱动器上文件的引用。
+在步骤 3 和 4 中，您创建了 `ItemData` 类。该类的实例用于表示 XML 数据中的一项。正如您可能预期的那样，每个项目的日期、标题、副标题等都有对应的属性。还有一些您可能意想不到的属性。首先，`_originalData` 属性用于存储对项目原始数据的引用。当用户希望取消所做的更改并恢复到原始数据时，会使用此属性。其次，`_edited` 属性简单地存储一个布尔值，指示项目的数据是否已被编辑。最后，当用户浏览以选择与项目关联的新图像时，`_localImage` 属性用于存储对用户硬盘驱动器上文件的引用。
 
-步骤 5 和 6 介绍了 ListDataService 类。该类用于序列化和反序列化 XML 数据。换句话说，该类会将 XML 数据从 XML 对象转换为 ItemData 对象的数组；它也会将 ItemData 对象的数组转换为 XML 对象：
+步骤 5 和 6 介绍了 `ListDataService` 类。该类用于序列化和反序列化 XML 数据。换句话说，该类会将 XML 数据从 XML 对象转换为 `ItemData` 对象的数组；它也会将 `ItemData` 对象的数组转换为 XML 对象。
 
-
-
-## 第五章：迷你CMS
+## 第五章：迷你 CMS
 
 ```actionscript
 public function deserialize( xml:XML ):Array
@@ -6006,9 +6145,9 @@ public function deserialize( xml:XML ):Array
 }
 ```
 
-前面的代码片段包含了`ListDataService`类的反序列化方法。该方法简单地解析XML并创建上述的`ItemData`对象数组。生成的数组将在后续填充Flex列表组件时使用。
+前面的代码片段包含了 `ListDataService` 类的反序列化方法。该方法简单地解析 XML 并创建上述的 `ItemData` 对象数组。生成的数组将在后续填充 Flex 列表组件时使用。
 
-以下代码片段包含`ListDataService`类的`getLocalFiles`方法：
+以下代码片段包含 `ListDataService` 类的 `getLocalFiles` 方法：
 
 ```actionscript
 public function getLocalFiles( listData:Array ):Array
@@ -6029,9 +6168,9 @@ public function getLocalFiles( listData:Array ):Array
 }
 ```
 
-正如你即将看到的，用户可以随意将列表中某个项目的图片更改为他们在硬盘上浏览选择的文件。此方法并不在文件被选择时就将其编译成数组，而是简单地遍历`ItemData`对象数组，并检查`localImage`属性是否已定义。随后，生成的`File`对象数组将由即将创建的`UploadService`类使用。
+正如你即将看到的，用户可以随意将列表中某个项目的图片更改为他们在硬盘上浏览选择的文件。此方法并不在文件被选择时就将其编译成数组，而是简单地遍历 `ItemData` 对象数组，并检查 `localImage` 属性是否已定义。随后，生成的 `File` 对象数组将由即将创建的 `UploadService` 类使用。
 
-在步骤7和8中，你创建了`XMLDataService`类。这个类与`SettingsService`类类似，负责内容数据的加载和保存。与从用户硬盘加载的设置XML文件不同，内容数据XML是从远程服务器下载的：
+在步骤 7 和 8 中，你创建了 `XMLDataService` 类。这个类与 `SettingsService` 类类似，负责内容数据的加载和保存。与从用户硬盘加载的设置 XML 文件不同，内容数据 XML 是从远程服务器下载的：
 
 ```actionscript
 public function load( url:String ):void
@@ -6043,7 +6182,7 @@ public function load( url:String ):void
 }
 ```
 
-上面的代码片段包含了`XMLDataService`类的`load`方法。使用提供的`url`参数，XML文件通过`URLLoader`对象从远程服务器下载。当加载过程完成时，会调用`onDataLoadComplete`函数，该函数继而通过`_xmlData`属性使XML数据可用，并调用`XMLDataService`类的`save`方法：
+上面的代码片段包含了 `XMLDataService` 类的 `load` 方法。使用提供的 `url` 参数，XML 文件通过 `URLLoader` 对象从远程服务器下载。当加载过程完成时，会调用 `onDataLoadComplete` 函数，该函数继而通过 `_xmlData` 属性使 XML 数据可用，并调用 `XMLDataService` 类的 `save` 方法：
 
 ```actionscript
 private function save():void
@@ -6060,13 +6199,13 @@ private function save():void
 }
 ```
 
-此方法简单地将XML数据保存到用户的硬盘。注意这里首次使用了`SettingsModel`类。在这种情况下，该方法引用`localDataFile`属性，以将XML数据保存到正确的位置/文件。文件写入用户硬盘后，会调用`onFileWriteComplete`方法，该方法随后分发一个`COMPLETE`事件，通知所有监听器服务已完成。
+此方法简单地将 XML 数据保存到用户的硬盘。注意这里首次使用了 `SettingsModel` 类。在这种情况下，该方法引用 `localDataFile` 属性，以将 XML 数据保存到正确的位置/文件。文件写入用户硬盘后，会调用 `onFileWriteComplete` 方法，该方法随后分发一个 `COMPLETE` 事件，通知所有监听器服务已完成。
 
-在下一节中，你将创建`UploadService`类，该类实际上会将相应的文件上传到远程服务器。
+在下一节中，你将创建 `UploadService` 类，该类实际上会将相应的文件上传到远程服务器。
 
 ### 上传文件
 
-此应用的一个关键方面是需要将文件上传到远程位置。至少，该应用需要向远程服务器上传一个XML文件（更新后的数据）。除此之外，用户可能从其硬盘选择了一些图片，这些图片也需要上传。此外，请注意，任何不是XML数据的文件都被视为资源，应上传到资源文件夹。为了管理这些需求，你将创建另一个服务类。
+此应用的一个关键方面是需要将文件上传到远程位置。至少，该应用需要向远程服务器上传一个 XML 文件（更新后的数据）。除此之外，用户可能从其硬盘选择了一些图片，这些图片也需要上传。此外，请注意，任何不是 XML 数据的文件都被视为资源，应上传到资源文件夹。为了管理这些需求，你将创建另一个服务类。
 
 打开你的编辑器并创建一个新文档。输入以下代码：
 
@@ -6166,9 +6305,9 @@ package com.aircmr.minicms.services
 }
 ```
 
-将文件保存为`UploadService.as`，位于你的工作目录内的 `com/aircmr/minicms/services/` 目录中。
+将文件保存为 `UploadService.as`，位于你的工作目录内的 `com/aircmr/minicms/services/` 目录中。
 
-你刚刚创建了`UploadService`类。这个类将处理所有上传功能。此类的一个实例使应用能够创建一个需要上传的文件队列。通过调用`addFile`或`addFiles`方法，应用将能够将文件添加到队列中。所有需要上传的文件都存储在名为`_filesToUpload`的类属性数组中。当需要上传文件时，将调用`startUpload`方法，该方法本质上首先调用`nextFile`方法：
+你刚刚创建了 `UploadService` 类。这个类将处理所有上传功能。此类的一个实例使应用能够创建一个需要上传的文件队列。通过调用 `addFile` 或 `addFiles` 方法，应用将能够将文件添加到队列中。所有需要上传的文件都存储在名为 `_filesToUpload` 的类属性数组中。当需要上传文件时，将调用 `startUpload` 方法，该方法本质上首先调用 `nextFile` 方法：
 
 ```actionscript
 private function nextFile():void
@@ -6205,7 +6344,7 @@ private function nextFile():void
 }
 ```
 
-前面的代码片段包含了`UploadService`类的`nextFile`方法。正是在这个方法中，每个文件被上传到远程服务器。这是通过使用`File`对象的`upload`方法实现的。此方法只需要一个类型为`URLRequest`的参数。当然，`URLRequest`必须正确配置才能使上传成功。在这种情况下，`method`属性必须设置为`POST`，`url`属性必须设置为网关URL及其适当的操作查询字符串。考虑到这一点，假设文件上传列表中的第一个项目将是数据文件，随后的文件被视为资源。然后从`SettingsModel`类检索网关URL，并将适当的查询字符串附加到URL。
+前面的代码片段包含了 `UploadService` 类的 `nextFile` 方法。正是在这个方法中，每个文件被上传到远程服务器。这是通过使用 `File` 对象的 `upload` 方法实现的。此方法只需要一个类型为 `URLRequest` 的参数。当然，`URLRequest` 必须正确配置才能使上传成功。在这种情况下，`method` 属性必须设置为 `POST`，`url` 属性必须设置为网关 URL 及其适当的操作查询字符串。考虑到这一点，假设文件上传列表中的第一个项目将是数据文件，随后的文件被视为资源。然后从 `SettingsModel` 类检索网关 URL，并将适当的查询字符串附加到 URL。
 
 ## 创建用户界面
 
@@ -6379,6 +6518,8 @@ public function close():void
 
 接下来，创建 `ItemEditor` 界面组件。打开你的编辑器并创建一个新文档。输入以下标记：
 
+
+
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <mx:VBox xmlns:mx="http://www.adobe.com/2006/mxml"
@@ -6548,7 +6689,7 @@ public function get itemData():ItemData
 
 # 第5章：迷你CMS
 
-```
+```actionscript
 {
     return _itemData;
 }
@@ -6579,13 +6720,15 @@ public function get itemData():ItemData
 </mx:VBox>
 ```
 
-将文件保存为 `ItemEditor.mxml`，置于你的工作目录下的 `com/aircmr/minicms/ui/` 文件夹中。
+将文件保存为`ItemEditor.mxml`，置于你的工作目录下的`com/aircmr/minicms/ui/`文件夹中。
 
-`ItemEditor` 界面组件将用于编辑当前选中的列表项。这个组件在很大程度上应该是不言自明的。它本质上是一个用于编辑 `ItemData` 对象属性的表单。
+`ItemEditor`界面组件将用于编辑当前选中的列表项。这个组件在很大程度上应该是不言自明的。它本质上是一个用于编辑`ItemData`对象属性的表单。
 
 接下来，创建主应用文件。打开你的编辑器并创建一个新文档。输入以下标记：
 
-```
+
+
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <mx:WindowedApplication xmlns:mx="http://www.adobe.com/2006/mxml"
     xmlns:ui="com.aircmr.minicms.ui.*"
@@ -6856,9 +6999,9 @@ public function get itemData():ItemData
             CursorManager.setBusyCursor();
 ```
 
-
-
 ## 第五章：迷你 CMS
+
+
 
 ```xml
 _xmlDataService.updateXMLData( _listDataService.serialize( _listData ) );
@@ -6927,13 +7070,13 @@ _xmlDataService.updateXMLData( _listDataService.serialize( _listData ) );
 
 打开命令提示符，导航到此应用程序的工作目录，输入以下命令，然后按回车键：
 
-```
+```bash
 > amxmlc MiniCMS.mxml
 ```
 
 如果你从证书颁发机构（如 VeriSign 或 Thawte）购买了证书，你可以使用该证书，而不是创建自签名证书，并跳过以下操作。要在工作目录中创建自签名证书，请输入以下命令：
 
-```
+```bash
 > adt -certificate -cn MiniCMS 1024-RSA certificate.pfx password
 ```
 
@@ -6941,7 +7084,7 @@ _xmlDataService.updateXMLData( _listDataService.serialize( _listData ) );
 
 158
 
-```
+```bash
 > adt -package -storetype pkcs12 -keystore certificate.pfx MiniCMS.air MiniCMS-app.xml MiniCMS.swf settings.xml
 ```
 
@@ -6967,29 +7110,27 @@ _xmlDataService.updateXMLData( _listDataService.serialize( _listData ) );
 
 除了显示单个图像，该应用程序还可以显示一组导入的图像文件，使用户能够浏览多个图像并仅选择所需的内容。考虑到这种能力，图像查看器和编辑器将处理多种添加到此预览库的方式，包括：
 
--   导入所选目录中找到的所有图像文件
--   从单个目录导入多个图像文件
--   导入已拖放到应用程序上的图像文件
+- 导入所选目录中找到的所有图像文件
+- 从单个目录导入多个图像文件
+- 导入已拖放到应用程序上的图像文件
 
 保存编辑后的图像文件的能力也是该应用程序的关键部分，包括：
 
--   覆盖已导入的图像文件
--   将图像保存到所选目录
--   通过将图像从查看器拖出到目录来保存图像
+- 覆盖已导入的图像文件
+- 将图像保存到所选目录
+- 通过将图像从查看器拖出到目录来保存图像
 
 下一节将讨论实现这些目标的计划。
-
-
 
 ## 第6章：图像查看器与编辑器
 
 ## 设计
 
-在前面的章节中，你已经见识了AIR文件系统API为桌面Flash应用程序带来的强大功能。使用`FileStream`类读写文件相当简单，使用`File`对象浏览文件以缓冲到流中也是如此。根据本书之前的示例，你已经为各种目的打开和保存了不同类型的文本文件格式。`File`类还提供了同时打开多个文件的机会——无论是来自整个目录还是从弹出的文件浏览器中选择的多个文件。
+在前面的章节中，你已经见识了 `AIR` 文件系统 `API` 为桌面 `Flash` 应用程序带来的强大功能。使用 `FileStream` 类读写文件相当简单，使用 `File` 对象浏览文件以缓冲到流中也是如此。根据本书之前的示例，你已经为各种目的打开和保存了不同类型的文本文件格式。`File` 类还提供了同时打开多个文件的机会——无论是来自整个目录还是从弹出的文件浏览器中选择的多个文件。
 
-AIR API还提供了另一种方式，让你能够将文件引入应用程序以及将文件从应用程序保存。当然，这指的是AIR API的最佳特性之一：拖放。`flash.desktop`包中的类使用户能够通过鼠标的移动，将数据从目录传输到你的应用程序，反之亦然。
+`AIR` `API` 还提供了另一种方式，让你能够将文件引入应用程序以及将文件从应用程序保存。当然，这指的是 `AIR` API 的最佳特性之一：拖放。`flash.desktop` 包中的类使用户能够通过鼠标的移动，将数据从目录传输到你的应用程序，反之亦然。
 
-保存图像文件与保存文本文件的方法相对相似。具体来说，写入文件流的是一个`ByteArray`对象，而不是`String`。`FileStream`方法`writeBytes`接受一个`ByteArray`以及偏移索引和长度整数。`mx.graphics.core`包中的类（`PNGEncoder`和`JPEGEncoder`）将`BitmapData`对象编码为不同图像文件格式的`ByteArray`对象。在底层架构中，图像查看器和编辑器将加载图像文件，存储其位图数据，并在需要时将该编码数据缓冲到流中，以保存图像文件。
+保存图像文件与保存文本文件的方法相对相似。具体来说，写入文件流的是一个 `ByteArray` 对象，而不是 `String`。`FileStream` 方法 `writeBytes` 接受一个 `ByteArray` 以及偏移索引和长度整数。`mx.graphics.core` 包中的类（`PNGEncoder` 和 `JPEGEncoder`）将 `BitmapData` 对象编码为不同图像文件格式的 `ByteArray` 对象。在底层架构中，图像查看器和编辑器将加载图像文件，存储其位图数据，并在需要时将该编码数据缓冲到流中，以保存图像文件。
 
 这一切都非常令人兴奋。下一节“处理数据”将描述在打开、操作和最终保存文件的过程中，如何跟踪图像及其数据。
 
@@ -7003,9 +7144,9 @@ AIR API还提供了另一种方式，让你能够将文件引入应用程序以�
 
 图像查看器与编辑器的核心能力是查看图像。在本节中，你将创建一个类，作为图形资产的表示。应用程序将拥有多个视图，这些视图与保存在此数据对象上的属性（无论是文本形式还是图形形式）进行交互，并且此对象将公开与原始文件相关的属性，并允许访问图形数据。
 
-在你的开发目录中，创建一个名为`ImageViewer`的文件夹。这将是你应用程序的工作目录。设置完成后，你就可以开始工作了。
+在你的开发目录中，创建一个名为 `ImageViewer` 的文件夹。这将是你应用程序的工作目录。设置完成后，你就可以开始工作了。
 
-创建一个新文档并输入以下ActionScript：
+创建一个新文档并输入以下 ActionScript：
 
 ```actionscript
 package com.aircmr.imageviewer.data
@@ -7089,19 +7230,21 @@ package com.aircmr.imageviewer.data
 }
 ```
 
-将文件保存为`ImageData.as`，位于你工作目录中的`com/aircmr/imageviewer/data`目录下。
+将文件保存为 `ImageData.as`，位于你工作目录中的 `com/aircmr/imageviewer/data` 目录下。
 
-`ImageData`对象具有与图形文件相关的属性。`name`和`url`属性——在构造函数中提供，并通过getter/setter方法访问——与应用程序加载的原始`File`对象上保存的属性相关。
+`ImageData` 对象具有与图形文件相关的属性。`name` 和 `url` 属性——在构造函数中提供，并通过 getter/setter 方法访问——与应用程序加载的原始 `File` 对象上保存的属性相关。
 
-`bitmapData`和`thumbnail`属性分别允许访问在加载图像文件时缓冲的图形信息。*缩略图*，即较大图像的较小图形表示，并非在加载图像文件时接收，也不是由`File`类创建的。应用程序在将图像加载到缩略图库时创建并设置这些缩略图。这样做的原因有两个：首先，在滚动浏览这些图像时，将图像从较大尺寸重新渲染为较小尺寸可能会带来不佳的用户体验。其次，当启用将图像拖出保存时，图像文件的缩略图表示非常方便。
+`bitmapData` 和 `thumbnail` 属性分别允许访问在加载图像文件时缓冲的图形信息。*缩略图*，即较大图像的较小图形表示，并非在加载图像文件时接收，也不是由 `File` 类创建的。应用程序在将图像加载到缩略图库时创建并设置这些缩略图。这样做的原因有两个：首先，在滚动浏览这些图像时，将图像从较大尺寸重新渲染为较小尺寸可能会带来不佳的用户体验。其次，当启用将图像拖出保存时，图像文件的缩略图表示非常方便。
 
-`ImageData`对象的单个实例代表一个图像文件及其图形信息。然而，图像查看器和编辑器允许多个图像的查看、编辑和保存。在下一节中，你将创建一个管理器，用于管理应用程序内多个客户端使用的多个`ImageData`对象。
+`ImageData` 对象的单个实例代表一个图像文件及其图形信息。然而，图像查看器和编辑器允许多个图像的查看、编辑和保存。在下一节中，你将创建一个管理器，用于管理应用程序内多个客户端使用的多个 `ImageData` 对象。
 
 ### 管理数据对象
 
-上一节创建的`ImageData`类是图形文件的表示。当图像被图像查看器和编辑器加载时，它会呈现以供编辑，并被添加到缩略图库中，使用户能够查看任何先前导入的项目。在本节中，你将创建一个管理器来跟踪所有这些数据对象，并为任何监听客户端分发事件，这些事件不仅涉及可用图像，还涉及当前选定要查看的图像。
+上一节创建的 `ImageData` 类是图形文件的表示。当图像被图像查看器和编辑器加载时，它会呈现以供编辑，并被添加到缩略图库中，使用户能够查看任何先前导入的项目。在本节中，你将创建一个管理器来跟踪所有这些数据对象，并为任何监听客户端分发事件，这些事件不仅涉及可用图像，还涉及当前选定要查看的图像。
 
-创建一个新文档并输入以下ActionScript：
+创建一个新文档并输入以下 ActionScript：
+
+
 
 ```actionscript
 package com.aircmr.imageviewer.data
@@ -7192,13 +7335,11 @@ package com.aircmr.imageviewer.data
 
 除了应用程序内可用的图像列表外，该列表中的索引也由`GalleryDataManager`管理。对`currentIndex`属性的更改将分发一个`indexChange`事件。
 
-
-
 ## 第六章：图像查看器与编辑器
 
 通过管理列表中的当前索引，可以确保应用程序内的多个客户端操作的是同一组数据。
 
-在开始构建图像查看器与编辑器的界面时，视图将订阅 `GalleryDataManager` 的属性变更并相应地更新。然而，在开始构建本节讨论的数据展示界面之前，了解一下图像文件的加载方式以及 `ImageData` 对象的创建过程会很有帮助。
+在开始构建图像查看器与编辑器的界面时，视图将订阅`GalleryDataManager`的属性变更并相应地更新。然而，在开始构建本节讨论的数据展示界面之前，了解一下图像文件的加载方式以及`ImageData`对象的创建过程会很有帮助。
 
 ## 图像文件队列加载
 
@@ -7321,7 +7462,7 @@ package com.aircmr.imageviewer.loaders
 }
 ```
 
-2. 将文件保存为 `ImageLoadQueue.as`，放在工作目录下的 `com/aircmr/imageviewer/loaders` 目录中。
+2. 将文件保存为`ImageLoadQueue.as`，放在工作目录下的`com/aircmr/imageviewer/loaders`目录中。
 
 3. 创建一个新文档，输入以下 ActionScript 代码：
 
@@ -7351,15 +7492,15 @@ package com.aircmr.imageviewer.events
 }
 ```
 
-4. 将文件保存为 `ImageLoadEvent.as`，放在工作目录下的 `com/aircmr/imageviewer/events` 目录中。
+4. 将文件保存为`ImageLoadEvent.as`，放在工作目录下的`com/aircmr/imageviewer/events`目录中。
 
-第一段代码片段（保存为 `ImageLoadQueue`）负责按顺序加载文件。客户端可以将多个 `File` 对象添加到队列中进行加载，并调用 `loadAll()` 方法开始加载过程。或者，在加载过程中，也可以根据需要添加更多文件。尽管队列持有一个 `File` 对象的数组，但文件本身并未缓冲到 `FileStream` 中进行数据处理。相反，文件是通过 `Loader` 实例加载的，该实例基于 `File` 实例的 `url` 属性发起请求：
+第一段代码片段（保存为`ImageLoadQueue`）负责按顺序加载文件。客户端可以将多个`File`对象添加到队列中进行加载，并调用`loadAll()`方法开始加载过程。或者，在加载过程中，也可以根据需要添加更多文件。尽管队列持有一个`File`对象的数组，但文件本身并未缓冲到`FileStream`中进行数据处理。相反，文件是通过`Loader`实例加载的，该实例基于`File`实例的`url`属性发起请求：
 
 ```actionscript
 _loader.load( new URLRequest( _file.url ) );
 ```
 
-`Loader` 实例的 `complete` 事件处理器会创建一个新的 `ImageData` 对象，并分发一个携带该数据的 `ImageLoadEvent` 类实例：
+`Loader`实例的`complete`事件处理器会创建一个新的`ImageData`对象，并分发一个携带该数据的`ImageLoadEvent`类实例：
 
 ```actionscript
 var data:ImageData = new ImageData( _file.name, _file.url,
@@ -7367,15 +7508,15 @@ var data:ImageData = new ImageData( _file.name, _file.url,
 dispatchEvent( new ImageLoadEvent( ImageLoadEvent.LOAD, data ) );
 ```
 
-随着队列中每个文件的加载完成并触发 `load` 事件，系统会判断是否还有更多文件需要加载，或者队列是否已为空。如果队列中没有剩余文件需要加载，那么 `ImageLoadQueue` 会分发一个 "complete" 事件，以通知正在监听的客户端加载过程已完成。
+随着队列中每个文件的加载完成并触发`load`事件，系统会判断是否还有更多文件需要加载，或者队列是否已为空。如果队列中没有剩余文件需要加载，那么`ImageLoadQueue`会分发一个 "complete" 事件，以通知正在监听的客户端加载过程已完成。
 
-你可能注意到，在此队列加载过程中进行了一些文件类型的验证。因为在查看图像时（至少在本应用的上下文中），文本文件会显得格格不入，所以 `ImageLoadQueue` 会对其被请求加载的文件扩展名进行检查。为此，使用了一个正则表达式来确保文件是 JPG、JPEG 或 PNG 格式的图像文件：
+你可能注意到，在此队列加载过程中进行了一些文件类型的验证。因为在查看图像时（至少在本应用的上下文中），文本文件会显得格格不入，所以`ImageLoadQueue`会对其被请求加载的文件扩展名进行检查。为此，使用了一个正则表达式来确保文件是 JPG、JPEG 或 PNG 格式的图像文件：
 
 ```actionscript
 private var _filter:RegExp = /^\S+\.(jpg|jpeg|png)$/i;
 ```
 
-讨论正则表达式本身就需要一本书，但对于本示例而言，理解这段代码的作用就足够了：它匹配任何文件名后跟一个点号以及三个图像文件扩展名之一（不区分大小写）。如果 `File` 的 `url` 属性不符合此要求，则会分发一个 `invalid` 事件，队列将继续加载下一个文件。
+讨论正则表达式本身就需要一本书，但对于本示例而言，理解这段代码的作用就足够了：它匹配任何文件名后跟一个点号以及三个图像文件扩展名之一（不区分大小写）。如果`File`的`url`属性不符合此要求，则会分发一个`invalid`事件，队列将继续加载下一个文件。
 
 至此，你已经拥有加载图像文件的机制、代表文件及其图形数据的数据对象，以及管理所有可供查看和编辑的图像的管理器。现在是时候开始展示这些数据，并深入探讨 AIR API 的更多方面了。
 
@@ -7394,6 +7535,8 @@ private var _filter:RegExp = /^\S+\.(jpg|jpeg|png)$/i;
 除了显示可供选择查看的图像列表外，缩略图图像浏览器还负责管理加载队列（`ImageLoadQueue`），包括添加文件、指示其加载以及监听每个加载完成事件。因此，浏览器还将包含一个控件，用于导入目标目录中找到的所有图像文件：
 
 1. 打开你常用的编辑器，创建一个新文档，输入以下标记：
+
+
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -7438,11 +7581,9 @@ private var _filter:RegExp = /^\S+\.(jpg|jpeg|png)$/i;
                 _queue.addEventListener( ImageLoadEvent.LOAD, onImageFileLoad );
 ```
 
+# 第 6 章：图像查看器和编辑器
 
-
-# 第6章：图像查看器和编辑器
-
-```
+```actionscript
 _queue.addEventListener( ImageLoadQueue.COMPLETE,
                               onFileQueueComplete );
 
@@ -7629,11 +7770,13 @@ public function get selectedImage():ImageData
 </mx:Canvas>
 ```
 
-2.  将文件保存为 `ImageBrowser.mxml`，位于工作目录中的 `com/aircmr/imageviewer/ui` 目录下。
+将文件保存为`ImageBrowser.mxml`，位于工作目录中的`com/aircmr/imageviewer/ui`目录下。
 
-3.  创建一个新文档并输入以下 ActionScript：
+创建一个新文档并输入以下 ActionScript：
 
-```
+
+
+```actionscript
 package com.aircmr.imageviewer.ui
 {
     import com.aircmr.imageviewer.data.ImageData;
@@ -7717,12 +7860,15 @@ package com.aircmr.imageviewer.ui
 }
 ```
 
-
-
 ## 第六章：图像查看器与编辑器
 
-4.  将文件保存为 Thumbnail.as，存放于工作目录中的 com/aircmr/imageviewer/ui 目录下。
-5.  新建一个文档，并输入以下 ActionScript 代码：
+### 4. 保存 `Thumbnail.as`
+
+将文件保存为 `Thumbnail.as`，存放于工作目录中的 `com/aircmr/imageviewer/ui` 目录下。
+
+### 5. 创建 `BitmapUtil.as`
+
+新建一个文档，并输入以下 ActionScript 代码：
 
 ```actionscript
 package com.aircmr.imageviewer.utils
@@ -7764,7 +7910,7 @@ package com.aircmr.imageviewer.utils
 }
 ```
 
-**6.** 将文件保存为 `BitmapUtil.as`，存放于工作目录中的 `com/aircmr/imageviewer/utils` 目录下。
+将文件保存为 `BitmapUtil.as`，存放于工作目录中的 `com/aircmr/imageviewer/utils` 目录下。
 
 第一个代码片段保存为 `ImageBrowser.mxml`，它是一个 MXML 组件，包含了用于浏览图像的缩略图列表控件。除了用于滚动缩略图列表的控件外，还有一个按钮分配了 `click` 事件处理函数，用于访问文件浏览器，从目录中导入图像文件：
 
@@ -7791,7 +7937,7 @@ private function onDirectorySelect( evt:Event ):void
 }
 ```
 
-图像文件加载完成后，GalleryDataManager 的列表属性通过公共的 addImage() 方法进行更新，其参数是 ImageLoadEvent 实例上保存的 ImageData 对象：
+图像文件加载完成后，`GalleryDataManager` 的列表属性通过公共的 `addImage()` 方法进行更新，其参数是 `ImageLoadEvent` 实例上保存的 `ImageData` 对象：
 
 ```actionscript
 private function onImageFileLoad( evt:ImageLoadEvent ):void
@@ -7800,7 +7946,7 @@ private function onImageFileLoad( evt:ImageLoadEvent ):void
 }
 ```
 
-可视化的缩略图列表本身是 mxml 组件 HorizontalList。通过将 HorizontalList 实例的 dataProvider 属性绑定到 GalleryDataManager 的 list 属性，任何对 ImageData 对象列表的更改都会在显示中更新：
+可视化的缩略图列表本身是 MXML 组件 `HorizontalList`。通过将 `HorizontalList` 实例的 `dataProvider` 属性绑定到 `GalleryDataManager` 的 `list` 属性，任何对 `ImageData` 对象列表的更改都会在显示中更新：
 
 ```actionscript
 <mx:HorizontalList id="thumbGallery"
@@ -7814,11 +7960,11 @@ private function onImageFileLoad( evt:ImageLoadEvent ):void
 />
 ```
 
-同样，从显示列表中做出的任何选择（派发 change 事件）都会更新 GalleryDataManager 的可绑定 currentIndex 属性。如你所见，currentIndex 的更改会被多个视图监听，但对于 ImageBrowser，currentIndexChange 的处理程序会更新缩略图显示列表的滚动位置。
+同样，从显示列表中做出的任何选择（派发 `change` 事件）都会更新 `GalleryDataManager` 的可绑定 `currentIndex` 属性。如你所见，`currentIndex` 的更改会被多个视图监听，但对于 `ImageBrowser`，`currentIndexChange` 的处理程序会更新缩略图显示列表的滚动位置。
 
-> ImageBrowser.mxml 中的“返回”和“上一个”按钮使用了一些图形资源。你可以自由使用自己的资源，但这些图像文件可以在本书配套网站的本章代码示例的 /assets 文件夹中找到。
+> `ImageBrowser.mxml` 中的“返回”和“上一个”按钮使用了一些图形资源。你可以自由使用自己的资源，但这些图像文件可以在本书配套网站的本章代码示例的 `/assets` 文件夹中找到。
 
-第二个代码片段保存为 Thumbnail.as，它是 HorizontalList 实例的项目渲染器。当列表的数据提供者发生更改时，列表会重绘自身，为其显示列表中数据提供者的每个元素添加一个新的项目渲染器实例。当 HorizontalList 遍历其数据提供者中的元素时，每个 Thumbnail 实例通过 data 属性接收数据：
+第二个代码片段保存为 `Thumbnail.as`，它是 `HorizontalList` 实例的项目渲染器。当列表的数据提供者发生更改时，列表会重绘自身，为其显示列表中数据提供者的每个元素添加一个新的项目渲染器实例。当 `HorizontalList` 遍历其数据提供者中的元素时，每个 `Thumbnail` 实例通过 `data` 属性接收数据：
 
 ```actionscript
 public function set data( value:Object ):void
@@ -7829,9 +7975,9 @@ public function set data( value:Object ):void
 }
 ```
 
-提供数据后，value 参数被重新转型为 ImageData 对象，并调用 invalidateProperties()。关于 Flex 框架中 UIComponent 的内部工作原理，这里不做深入探讨，invalidateProperties() 会导致调用 commitProperties() 和 updateDisplayList() 方法——这两个方法在 Thumbnail 类中都被重写了。
+提供数据后，`value` 参数被重新转型为 `ImageData` 对象，并调用 `invalidateProperties()`。关于 Flex 框架中 `UIComponent` 的内部工作原理，这里不做深入探讨，`invalidateProperties()` 会导致调用 `commitProperties()` 和 `updateDisplayList()` 方法——这两个方法在 `Thumbnail` 类中都被重写了。
 
-Thumbnail 实例在边框内显示一个位图。commitProperties() 重写将位图数据分配给位图，而 updateDisplayList() 重写则调用了 doLayout() 方法：
+`Thumbnail` 实例在边框内显示一个位图。`commitProperties()` 重写将位图数据分配给位图，而 `updateDisplayList()` 重写则调用了 `doLayout()` 方法：
 
 ```actionscript
 protected function doLayout():void
@@ -7862,9 +8008,9 @@ protected function doLayout():void
 }
 ```
 
-在 doLayout() 方法中，边框显示会根据 Thumbnail 实例的大小重绘，位图位置也会更新。此方法还会检查 ImageData 实例上的缩略图数据是否可用。如果缩略图数据不可用，则使用第三个代码片段（保存为 BitmapUtil.as）创建缩略图，并将缩放后的 BitmapData 实例分配给该属性。
+在 `doLayout()` 方法中，边框显示会根据 `Thumbnail` 实例的大小重绘，位图位置也会更新。此方法还会检查 `ImageData` 实例上的缩略图数据是否可用。如果缩略图数据不可用，则使用第三个代码片段（保存为 `BitmapUtil.as`）创建缩略图，并将缩放后的 `BitmapData` 实例分配给该属性。
 
-为了减少随着缩略图列表增长而持续加载、缩放和渲染任何可能的大位图所需的处理，BitmapUtil 的 generateThumbnail() 方法将根据提供的尺寸参数返回一个缩放后的 BitmapData 实例：
+为了减少随着缩略图列表增长而持续加载、缩放和渲染任何可能的大位图所需的处理，`BitmapUtil` 的 `generateThumbnail()` 方法将根据提供的尺寸参数返回一个缩放后的 `BitmapData` 实例：
 
 ```actionscript
 var scale:Number = 1.0;
@@ -7876,7 +8022,9 @@ var m:Matrix = new Matrix();
 m.scale( scale, scale );
 ```
 
-查看 generateThumbnail() 方法，应用于位图的缩放比例是根据其当前尺寸确定的。然后将该缩放值应用于 Matrix 对象，该对象用于变换所提供的 BitmapData 实例的绘制副本：
+
+
+查看`generateThumbnail()`方法，应用于位图的缩放比例是根据其当前尺寸确定的。然后将该缩放值应用于`Matrix`对象，该对象用于变换所提供的`BitmapData`实例的绘制副本：
 
 ```actionscript
 var bmd:BitmapData = new BitmapData( w, h, true );
@@ -7885,13 +8033,13 @@ bmd.draw( bmp, m );
 
 # 第六章：图像查看器与编辑器
 
-通过返回的缩小版原始位图数据，你可以节省一些重绘时间，并获得一个与 `ImageData` 实例关联的缩略图。这个缩略图将在应用程序的另一个方面发挥作用，正如你将在后续章节中看到的那样。
+通过返回的缩小版原始位图数据，你可以节省一些重绘时间，并获得一个与`ImageData`实例关联的缩略图。这个缩略图将在应用程序的另一个方面发挥作用，正如你将在后续章节中看到的那样。
 
 ## 查看图像
 
 你现在可以浏览缩略图大小的图像了，但如果无法近距离查看任何内容，浏览又有什么乐趣呢？在本节中，你将创建用于查看全尺寸图像的显示区域，其中包含用于将图像放大、缩小或侧向查看的控件。
 
-1.  创建一个新文档，并输入以下标记：
+1. 创建一个新文档，并输入以下标记：
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -8035,9 +8183,11 @@ bmd.draw( bmp, m );
 </mx:Canvas>
 ```
 
-2.  将文件保存为 `ImageCanvas.mxml`，放置在你的工作目录下的 `com/aircmr/imageviewer/ui` 目录中。
+2. 将文件保存为`ImageCanvas.mxml`，放置在你的工作目录下的`com/aircmr/imageviewer/ui`目录中。
 
-3.  创建一个新文档，并输入以下 ActionScript：
+3. 创建一个新文档，并输入以下 ActionScript：
+
+
 
 ```actionscript
 package com.aircmr.imageviewer.ui
@@ -8146,8 +8296,6 @@ package com.aircmr.imageviewer.ui
         {
 ```
 
-
-
 ## 第六章：图像查看器与编辑器
 
 ```actionscript
@@ -8185,19 +8333,19 @@ override public function set rotation( value:Number ):void
 }
 ```
 
-4. 将文件保存为 `ImageDisplay.as`，置于工作目录下的 `com/aircmr/imageviewer/ui` 目录中。
+将文件保存为`ImageDisplay.as`，置于工作目录下的`com/aircmr/imageviewer/ui`目录中。
 
-第一个代码片段保存为 `ImageCanvas.mxml`，是将被添加到应用程序显示列表中的主显示区域。它包含了用于调整大小、旋转以及通过缩略图浏览器进行选择导航的控件。它还将第二个代码片段（保存为 `ImageDisplay.as`）添加到显示列表中，该片段仅用于显示所选图像的全尺寸视图。在处理 `ImageDisplay` 之前，需要解释一下 `ImageCanvas` 的部分控件和属性。
+第一个代码片段保存为`ImageCanvas.mxml`，是将被添加到应用程序显示列表中的主显示区域。它包含了用于调整大小、旋转以及通过缩略图浏览器进行选择导航的控件。它还将第二个代码片段（保存为`ImageDisplay.as`）添加到显示列表中，该片段仅用于显示所选图像的全尺寸视图。在处理`ImageDisplay`之前，需要解释一下`ImageCanvas`的部分控件和属性。
 
-> `ImageCanvas.mxml` 中用于导航和旋转按钮的一些图形资源。你可以随意使用自己的资源，但这些图像文件可以在本书代码示例的随附网站 `/assets` 文件夹中找到。
+> `ImageCanvas.mxml`中用于导航和旋转按钮的一些图形资源。你可以随意使用自己的资源，但这些图像文件可以在本书代码示例的随附网站`/assets`文件夹中找到。
 
-`ImageCanvas` 组件的 `imageData` 属性被设置为可绑定属性，控件和 `ImageDisplay` 实例会响应其更新。位于 `ImageDisplay` 组件上方的 `HBox` 容器显示了当前查看的图像文件名以及大小和旋转控件。以下是第一个 `HBox` 的声明：
+`ImageCanvas`组件的`imageData`属性被设置为可绑定属性，控件和`ImageDisplay`实例会响应其更新。位于`ImageDisplay`组件上方的`HBox`容器显示了当前查看的图像文件名以及大小和旋转控件。以下是第一个`HBox`的声明：
 
 ```actionscript
 enabled="{_imageData != null}"
 ```
 
-绑定到提供的 `ImageData` 对象的可用性，可以启用或禁用其中包含的控件，并更新标签的 `text` 属性以对应 `ImageData` 实例的 `name` 属性：
+绑定到提供的`ImageData`对象的可用性，可以启用或禁用其中包含的控件，并更新标签的`text`属性以对应`ImageData`实例的`name`属性：
 
 ```xml
 <mx:Label id="imageName"
@@ -8207,7 +8355,7 @@ enabled="{_imageData != null}"
     />
 ```
 
-名为 `rotateLeft` 和 `rotateRight` 的旋转控件具有 `click` 事件处理程序，可将图像显示按九十度增量向任一方向旋转。与旋转控件一起的是一个启用输入的 `ComboBox` 控件，它具有固定尺寸，用于调整视图中图像显示的大小：
+名为`rotateLeft`和`rotateRight`的旋转控件具有`click`事件处理程序，可将图像显示按九十度增量向任一方向旋转。与旋转控件一起的是一个启用输入的`ComboBox`控件，它具有固定尺寸，用于调整视图中图像显示的大小：
 
 ```xml
 <mx:ComboBox id="sizeCombo"
@@ -8231,11 +8379,11 @@ enabled="{_imageData != null}"
 </mx:ComboBox>
 ```
 
-预设的尺寸值从 25% 递增到 1000%，默认选择为 100%；并且由于 `editable` 属性设置为 `true`，用户可以在该范围内输入任何他们选择的大小。
+预设的尺寸值从 25% 递增到 1000%，默认选择为 100%；并且由于`editable`属性设置为`true`，用户可以在该范围内输入任何他们选择的大小。
 
-在 `ImageCanvas` 中，`ImageDisplay` 组件下方声明的 `HBox` 容器包含了用于在上一节创建的缩略图浏览器中导航的控件。每个控件，分别命名为 `previousButton` 和 `nextButton`，都调用 `GalleryDataManager` 实例的 `currentIndex` 属性的更新。由于 `ImageBrowser` 中监听了该属性的更改，这些控件允许你浏览缩略图并选择图像进行查看，而无需专门点击某个缩略图。
+在`ImageCanvas`中，`ImageDisplay`组件下方声明的`HBox`容器包含了用于在上一节创建的缩略图浏览器中导航的控件。每个控件，分别命名为`previousButton`和`nextButton`，都调用`GalleryDataManager`实例的`currentIndex`属性的更新。由于`ImageBrowser`中监听了该属性的更改，这些控件允许你浏览缩略图并选择图像进行查看，而无需专门点击某个缩略图。
 
-夹在这两个控件框之间的是 `ImageDisplay` 组件，即第二个保存为 `ImageDisplay.as` 的代码片段：
+夹在这两个控件框之间的是`ImageDisplay`组件，即第二个保存为`ImageDisplay.as`的代码片段：
 
 ```xml
 <mx:HBox width="100%" height="100%"
@@ -8246,7 +8394,7 @@ enabled="{_imageData != null}"
 </mx:HBox>
 ```
 
-`ImageDisplay` 实例的源会通过提供的 `ImageData` 对象的更改而更新，这发生在选择新图像进行查看时。让我们更深入地了解 `ImageDisplay`，看看这些数据是如何渲染的：
+`ImageDisplay`实例的源会通过提供的`ImageData`对象的更改而更新，这发生在选择新图像进行查看时。让我们更深入地了解`ImageDisplay`，看看这些数据是如何渲染的：
 
 ```actionscript
 public function set source( bmp:BitmapData ) :void
@@ -8258,7 +8406,7 @@ public function set source( bmp:BitmapData ) :void
 }
 ```
 
-更新 `source` 属性会重置内部旋转和其 `Image` 子项的 `bitmapData` 属性，并调用 `doLayout()` 方法。`doLayout()` 方法负责根据本节前面讨论的由 `ImageCanvas` 控制的缩放和旋转属性来渲染位图数据。实际上，这些属性 `scale` 和 `rotation` 的设置方法也会调用 `doLayout()`：
+更新`source`属性会重置内部旋转和其`Image`子项的`bitmapData`属性，并调用`doLayout()`方法。`doLayout()`方法负责根据本节前面讨论的由`ImageCanvas`控制的缩放和旋转属性来渲染位图数据。实际上，这些属性`scale`和`rotation`的设置方法也会调用`doLayout()`：
 
 ```actionscript
 private function doLayout( evt:Event = null ) :void
@@ -8281,19 +8429,21 @@ private function doLayout( evt:Event = null ) :void
 }
 ```
 
-`doLayout()` 方法主要处理缩放和旋转后的图像在显示区域内的定位。图像及其父容器（私有成员 `_holder`）的定位基于 `getImageBounds()` 方法返回的 `Rectangle` 对象。该 `Rectangle` 对象的属性本身基于旋转和缩放值。你可能会在 `getImageBounds()` 方法中注意到，对于旋转 90 度和 270 度的图像，其宽度和高度值是使用按位异或（XOR）操作确定的。这种操作是一种无需创建第三个变量即可轻松交换两个变量整数值的方法。
+`doLayout()`方法主要处理缩放和旋转后的图像在显示区域内的定位。图像及其父容器（私有成员`_holder`）的定位基于`getImageBounds()`方法返回的`Rectangle`对象。该`Rectangle`对象的属性本身基于旋转和缩放值。你可能会在`getImageBounds()`方法中注意到，对于旋转 90 度和 270 度的图像，其宽度和高度值是使用按位异或（XOR）操作确定的。这种操作是一种无需创建第三个变量即可轻松交换两个变量整数值的方法。
 
-除了根据旋转和缩放设定的边界显示图像外，`ImageDisplay` 还会触发一个 `dragCopy` 事件。`dragCopy` 事件从图像容器上的 `mouseDown` 事件处理程序触发。主应用程序会捕获此事件，并触发允许用户将图像拖动并保存到目录中的操作。
+除了根据旋转和缩放设定的边界显示图像外，`ImageDisplay`还会触发一个`dragCopy`事件。`dragCopy`事件从图像容器上的`mouseDown`事件处理程序触发。主应用程序会捕获此事件，并触发允许用户将图像拖动并保存到目录中的操作。
 
 使用图像查看器和编辑器将一个目录中保存的图像拖动到另一个目录固然很好，但这只是导致相同的图像文件存在于两个位置。下一节将深入探讨如何处理该图像，以便让硬盘驱动器上的丢失空间变得值得。
 
 ## 编辑图像
 
-当图像在应用程序中加载和查看时，编辑面板将变得可用，以对该图像应用变换。使用 `ImageData` 对象中的位图数据以及 ActionScript API 的位图滤镜，你可以构建任何类型的图像编辑工具。
+当图像在应用程序中加载和查看时，编辑面板将变得可用，以对该图像应用变换。使用`ImageData`对象中的位图数据以及 ActionScript API 的位图滤镜，你可以构建任何类型的图像编辑工具。
 
 图像处理这个主题本身就需要一本书，甚至一个图书馆的篇幅。你可以构建能够去除红眼、压缩人脸以及添加有趣标题的编辑器。尽管很想为最后一个建议包含一个编辑器，但本节中你将为图像查看器和编辑器构建的编辑器工具处理的是颜色变换：
 
 1. 创建一个新文档并输入以下标记：
+
+
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -8327,79 +8477,76 @@ private function doLayout( evt:Event = null ) :void
 
             private function applyFilter():void
             {
-                var mat:Array = 
+                var mat:Array =
                 [
                     redChannel.value, 0, 0, 0, 255*brightnessChannel.value,
                     0, greenChannel.value, 0, 0, 255*brightnessChannel.value,
                     0, 0, blueChannel.value, 0, 255*brightnessChannel.value,
                     0, 0, 0, 1, 0
                 ];
-                var transform:ColorMatrixFilter = 
+                var transform:ColorMatrixFilter =
                     new ColorMatrixFilter( mat );
 ```
 
-
-
 ## 第六章：图像查看器与编辑器
 
-```
-_src.bitmapData.applyFilter( _clone, _src.bitmapData.rect,
-    new Point( 0, 0 ), transform );
-}
+```xml
+                _src.bitmapData.applyFilter( _clone, _src.bitmapData.rect,
+                    new Point( 0, 0 ), transform );
+            }
 
-public function clean():void
-{
-    if( !enabled ) return;
-    _clone.dispose();
-}
+            public function clean():void
+            {
+                if( !enabled ) return;
+                _clone.dispose();
+            }
 
-public function set imageData( src:ImageData ):void
-{
-    _src = src;
-    update();
-}
-]]>
-</mx:Script>
+            public function set imageData( src:ImageData ):void
+            {
+                _src = src;
+                update();
+            }
+        ]]>
+    </mx:Script>
 
-<mx:VBox width="100%" verticalGap="-5">
-    <mx:Label text="红色" />
-    <mx:HSlider id="redChannel"
-        width="100%"
-        minimum="0" maximum="1"
-        change="applyFilter();"/>
-</mx:VBox>
-<mx:VBox width="100%" verticalGap="-5">
-    <mx:Label text="绿色" />
-    <mx:HSlider id="greenChannel"
-        width="100%"
-        minimum="0" maximum="1"
-        change="applyFilter();"/>
-</mx:VBox>
-<mx:VBox width="100%" verticalGap="-5">
-    <mx:Label text="蓝色" />
-    <mx:HSlider id="blueChannel"
-        width="100%"
-        minimum="0" maximum="1"
-        change="applyFilter();"/>
-</mx:VBox>
-<mx:VBox width="100%" verticalGap="-5">
-    <mx:Label text="亮度" />
-    <mx:HSlider id="brightnessChannel"
-        width="100%"
-        minimum="-1" maximum="1"
-        change="applyFilter();"/>
-</mx:VBox>
-
+    <mx:VBox width="100%" verticalGap="-5">
+        <mx:Label text="红色" />
+        <mx:HSlider id="redChannel"
+            width="100%"
+            minimum="0" maximum="1"
+            change="applyFilter();"/>
+    </mx:VBox>
+    <mx:VBox width="100%" verticalGap="-5">
+        <mx:Label text="绿色" />
+        <mx:HSlider id="greenChannel"
+            width="100%"
+            minimum="0" maximum="1"
+            change="applyFilter();"/>
+    </mx:VBox>
+    <mx:VBox width="100%" verticalGap="-5">
+        <mx:Label text="蓝色" />
+        <mx:HSlider id="blueChannel"
+            width="100%"
+            minimum="0" maximum="1"
+            change="applyFilter();"/>
+    </mx:VBox>
+    <mx:VBox width="100%" verticalGap="-5">
+        <mx:Label text="亮度" />
+        <mx:HSlider id="brightnessChannel"
+            width="100%"
+            minimum="-1" maximum="1"
+            change="applyFilter();"/>
+    </mx:VBox>
 </mx:Panel>
 ```
 
-**2.** 将文件保存为 `ColorTransformPanel.mxml`，放置在工作目录下的 `com/aircmr/imageviewer/ui/tools` 目录中。
+**2.** 将文件保存为`ColorTransformPanel.mxml`，放置在工作目录下的`com/aircmr/imageviewer/ui/tools`目录中。
 
-`ColorTransformPanel` 包含滑块控件，用于更改相对于显示图像的红、绿、蓝颜色通道的值。第四个被声明并添加到显示列表的滑块控件则关联到显示图像的亮度。每当 `imageData` 属性更新以显示未经操作的原始图像时，滑块控件都会被重置。
+`ColorTransformPanel`包含滑块控件，用于更改相对于显示图像的红、绿、蓝颜色通道的值。第四个被声明并添加到显示列表的滑块控件则关联到显示图像的亮度。每当`imageData`属性更新以显示未经操作的原始图像时，滑块控件都会被重置。
 
-所有四个滑块控件的更改事件处理程序都是 `applyFilter()` 方法：
+所有四个滑块控件的更改事件处理程序都是`applyFilter()`方法：
 
-```
+```actionscript
 private function applyFilter():void
 {
     var mat:Array =
@@ -8414,7 +8561,7 @@ private function applyFilter():void
 }
 ```
 
-在 `applyFilter()` 方法中，一个 `ColorMatrixFilter` 被应用到提供的 `ImageData` 对象的 `bitmapData` 属性。通过使用原始位图数据的克隆作为源图像来生成滤镜后的图像，通道值会在控件的每次 `change` 事件发生时应用到原始位图数据，而不是对数值进行累加更新。
+在`applyFilter()`方法中，一个`ColorMatrixFilter`被应用到提供的`ImageData`对象的`bitmapData`属性。通过使用原始位图数据的克隆作为源图像来生成滤镜后的图像，通道值会在控件的每次`change`事件发生时应用到原始位图数据，而不是对数值进行累加更新。
 
 至此，用于显示和操作图像文件的视图已经设置完毕，下一节将解释如何将所有这些功能和数据整合起来，以完成图像查看器与编辑器的构建。
 
@@ -8422,9 +8569,11 @@ private function applyFilter():void
 
 你将在本节构建的主应用程序文件将展示之前创建的显示视图，并处理图像文件的加载和保存，包括令人兴奋的拖放操作。除了拖放 API，本节还将揭示更多与文件系统相关的特性，并介绍在保存图像文件中发挥作用的图形编解码器。话不多说，让我们整合所有内容：
 
-+   1. 创建一个新文档并输入以下标记代码：
+1. 创建一个新文档并输入以下标记代码：
 
-```
+
+
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <mx:WindowedApplication
     xmlns:mx="http://www.adobe.com/2006/mxml"
@@ -8607,9 +8756,9 @@ private function applyFilter():void
         NativeDragManager.dropAction = "copy";
 ```
 
-
-
 ## 第六章：图像查看器与编辑器
+
+
 
 ```actionscript
 NativeDragManager.doDrag( this, transfer, thumb,
@@ -8689,13 +8838,13 @@ private function onAppClosing():void
 </mx:WindowedApplication>
 ```
 
-2. 将文件保存为 `ImageViewer.mxml`，放在图像查看器和编辑器工作目录的根目录中。
+2. 将文件保存为`ImageViewer.mxml`，放在图像查看器和编辑器工作目录的根目录中。
 
 主应用程序文件内容很多，因此解释从视图声明开始，并向你展示界面的布局方式以及它们的事件处理方式。
 
-### 通过拖放 API 打开和保存
+## 通过拖放 API 打开和保存
 
-布局中父级垂直框内的嵌套 VBox 容器，由前面几节创建的 ImageBrowser、ImageCanvas 和 ColorTransformPanel 视图组成。图像浏览器在选中缩略图以进行查看时，会派发一个 select 事件：
+布局中父级垂直框内的嵌套 VBox 容器，由前面几节创建的 ImageBrowser、ImageCanvas 和 ColorTransformPanel 视图组成。图像浏览器在选中缩略图以进行查看时，会派发一个`select`事件：
 
 ```xml
 <ui:ImageBrowser id="browser"
@@ -8704,7 +8853,7 @@ private function onAppClosing():void
     />
 ```
 
-ImageBrowser 派发的 select 事件的处理程序是 `onThumbnailSelect()` 方法，该方法通过克隆当前选中的图像来更新本地的 ImageData 实例。然后，该克隆通过各自的 `imageData` 属性传递给 ImageCanvas 和 ColorTransformPanel 实例：
+ImageBrowser 派发的`select`事件的处理程序是`onThumbnailSelect()`方法，该方法通过克隆当前选中的图像来更新本地的 ImageData 实例。然后，该克隆通过各自的`imageData`属性传递给 ImageCanvas 和 ColorTransformPanel 实例：
 
 ```actionscript
 private function onThumbnailSelect( evt:Event ):void
@@ -8715,7 +8864,7 @@ private function onThumbnailSelect( evt:Event ):void
 }
 ```
 
-ImageCanvas 视图的 `ImageDisplay` 组件在鼠标点击时会派发一个 `dragCopy` 事件。该事件会冒泡，并由 ImageViewer 使用 `onImageDragCanvas()` 事件处理程序捕获。此方法负责将数据添加到 `Clipboard` 对象并启动原生拖放手势：
+ImageCanvas 视图的`ImageDisplay`组件在鼠标点击时会派发一个`dragCopy`事件。该事件会冒泡，并由 ImageViewer 使用`onImageDragCanvas()`事件处理程序捕获。此方法负责将数据添加到`Clipboard`对象并启动原生拖放手势：
 
 ```actionscript
 private function onImageCanvasDragCopy( evt:Event ):void
@@ -8735,11 +8884,11 @@ private function onImageCanvasDragCopy( evt:Event ):void
 }
 ```
 
-与用于在单个 Flex 应用程序内拖动数据的 `mx.managers.DragManager` 类似，`flash.desktop.NativeDragManager` 使你能在 AIR 应用程序和原生操作系统之间拖动数据。在手势初始化期间创建的可传输数据是一个 `flash.desktop.Clipboard` 对象。`Clipboard` 实例充当特定格式数据的容器。启动原生拖放操作时，剪贴板数据会传递给 `NativeDragManager` 的静态 `doDrag()` 方法。
+与用于在单个 Flex 应用程序内拖动数据的`mx.managers.DragManager`类类似，`flash.desktop.NativeDragManager`使你能在 AIR 应用程序和原生操作系统之间拖动数据。在手势初始化期间创建的可传输数据是一个`flash.desktop.Clipboard`对象。`Clipboard`实例充当特定格式数据的容器。启动原生拖放操作时，剪贴板数据会传递给`NativeDragManager`的静态`doDrag()`方法。
 
-设置在 `Clipboard` 实例上的数据代表了拖放操作完成时传输的内容。将数据应用到 `Clipboard` 对象时，你需要指定数据格式、数据本身以及一个指示数据是否应被序列化的布尔标志。图像查看器和编辑器允许你将编辑后的图像拖出应用程序并保存为图像文件。因此，传输格式是文件数组，尽管你一次只能拖动一个图像。数据序列化不会发生，并且数据将无法被拖放到另一个 AIR 应用程序上。
+设置在`Clipboard`实例上的数据代表了拖放操作完成时传输的内容。将数据应用到`Clipboard`对象时，你需要指定数据格式、数据本身以及一个指示数据是否应被序列化的布尔标志。图像查看器和编辑器允许你将编辑后的图像拖出应用程序并保存为图像文件。因此，传输格式是文件数组，尽管你一次只能拖动一个图像。数据序列化不会发生，并且数据将无法被拖放到另一个 AIR 应用程序上。
 
-本质上，当进行拖放手势时，图像查看器和编辑器会创建一个临时图像文件并将其添加到剪贴板，使用户能够将该图像作为其计算机上的文件进行传输。查看将数据放到 `Clipboard` 对象上时调用的 `getBitmapFile()` 方法，`ImageViewer` 正在将当前选中 `ImageData` 对象的位图数据写入到应用程序初始化时创建的临时目录中的一个文件：
+本质上，当进行拖放手势时，图像查看器和编辑器会创建一个临时图像文件并将其添加到剪贴板，使用户能够将该图像作为其计算机上的文件进行传输。查看将数据放到`Clipboard`对象上时调用的`getBitmapFile()`方法，`ImageViewer`正在将当前选中`ImageData`对象的位图数据写入到应用程序初始化时创建的临时目录中的一个文件：
 
 ```actionscript
 private function getBitmapFile():File
@@ -8754,7 +8903,7 @@ private function getBitmapFile():File
 }
 ```
 
-提供给文件流缓冲区的数据是一个 `ByteArray`，它使用 Flex 3 SDK 中可用的 `JPEGEncoder` 和 `PNGEncoder` 编解码器创建。`getEncodedBitmap()` 方法根据当前查看的 `ImageData` 对象的 `fileExtension` 属性返回相应的编码数据。该临时图像文件将保存到用户将其拖放到的目录中，并在完成拖放手势后从临时目录中移除。当数据从 AIR 应用程序拖动到目录完成后，会触发 `dragComplete` 事件：
+提供给文件流缓冲区的数据是一个`ByteArray`，它使用 Flex 3 SDK 中可用的`JPEGEncoder`和`PNGEncoder`编解码器创建。`getEncodedBitmap()`方法根据当前查看的`ImageData`对象的`fileExtension`属性返回相应的编码数据。该临时图像文件将保存到用户将其拖放到的目录中，并在完成拖放手势后从临时目录中移除。当数据从 AIR 应用程序拖动到目录完成后，会触发`dragComplete`事件：
 
 ```actionscript
 private function onDragComplete( evt:NativeDragEvent ):void
@@ -8766,7 +8915,7 @@ private function onDragComplete( evt:NativeDragEvent ):void
 }
 ```
 
-`onDragComplete()` 事件处理程序将 `_dragCopy` 标志重置为 `false`，并在通过 `exists` 属性确认文件存在后，指示使用 `File` 类的 `deleteFile()` 方法移除临时文件。除了能够拖出并保存图像文件外，图像查看器和编辑器还能够打开拖动到应用程序上的图像文件。打开应用程序时，会为来自 `flash.desktop.NativeDragManager` 的事件创建监听器，以响应拖放手势。`dragEnter` 事件处理程序将应用程序指定为拖放目标，以接收拖动事件中持有的任何可传输数据：
+`onDragComplete()`事件处理程序将`_dragCopy`标志重置为`false`，并在通过`exists`属性确认文件存在后，指示使用`File`类的`deleteFile()`方法移除临时文件。除了能够拖出并保存图像文件外，图像查看器和编辑器还能够打开拖动到应用程序上的图像文件。打开应用程序时，会为来自`flash.desktop.NativeDragManager`的事件创建监听器，以响应拖放手势。`dragEnter`事件处理程序将应用程序指定为拖放目标，以接收拖动事件中持有的任何可传输数据：
 
 ```actionscript
 private function onDragEnter( evt:NativeDragEvent ):void
@@ -8775,7 +8924,7 @@ private function onDragEnter( evt:NativeDragEvent ):void
 }
 ```
 
-`dragDrop` 事件处理程序接收 `flash.events.NativeDragEvent` 实例上持有的可传输数据，并将该数据提供给 ImageBrowser：
+`dragDrop`事件处理程序接收`flash.events.NativeDragEvent`实例上持有的可传输数据，并将该数据提供给 ImageBrowser：
 
 ```actionscript
 private function onDragDrop( evt:NativeDragEvent ):void
@@ -8788,19 +8937,17 @@ private function onDragDrop( evt:NativeDragEvent ):void
 }
 ```
 
-当文件拖动到图像查看器和编辑器上时，来自 NativeDragEvent 的可传输数据是 `File` 对象的列表。会调用 ImageBrowser 的 `addFiles()` 方法，提供该 `File` 对象列表以及一个标志，该标志指示文件是拖放到 ImageCanvas 上还是应用程序的其他位置。拖放到图像画布上，将在所有文件加载完成后，启动列表中最后一个文件的选择。
+当文件拖动到图像查看器和编辑器上时，来自 NativeDragEvent 的可传输数据是`File`对象的列表。会调用 ImageBrowser 的`addFiles()`方法，提供该`File`对象列表以及一个标志，该标志指示文件是拖放到 ImageCanvas 上还是应用程序的其他位置。拖放到图像画布上，将在所有文件加载完成后，启动列表中最后一个文件的选择。
 
 本节介绍了图像查看器和编辑器如何使用拖放 API，但如果用户不想拖入拖出文件呢？也可以通过从“文件”菜单中选择来执行打开和保存操作。
 
-
-
 # 第6章：图像查看器与编辑器
 
-### 通过文件 API 打开与保存文件
+## 通过文件 API 打开与保存文件
 
 初始 VBox 容器中的第一个项目是一个 MenuBar 组件，其菜单项用于打开和保存文件：
 
-```
+```xml
 <mx:MenuBar id="menuBar"
     width="100%"
     labelField="@label"
@@ -8815,17 +8962,17 @@ private function onDragDrop( evt:NativeDragEvent ):void
 </mx:MenuBar>
 ```
 
-当从"File"菜单下拉列表中选择一个项目时，会在 itemClick 事件处理函数 `onMenuItemClick()` 中执行相应的操作。在 ImageViewer 的 `applicationComplete` 事件处理函数中实例化了两个 File 实例。`_importFile` 实例处理导入操作，而 `_exportFile` 实例处理保存操作。选择"打开"选项时，`_importFile` 会通过调用 `browseForOpenMultiple()` 方法打开一个文件浏览器，并启用多选功能：
+当从“File”菜单下拉列表中选择一个项目时，会在 itemClick 事件处理函数`onMenuItemClick()`中执行相应的操作。在 ImageViewer 的`applicationComplete`事件处理函数中实例化了两个 File 实例。`_importFile`实例处理导入操作，而`_exportFile`实例处理保存操作。选择“打开”选项时，`_importFile`会通过调用`browseForOpenMultiple()`方法打开一个文件浏览器，并启用多选功能：
 
-```
+```actionscript
 _importFile.browseForOpenMultiple( "Select Files", [IMG_FILTER] );
 ```
 
-`browseForOpenMultiple()` 的第一个参数是文件浏览器中显示的标题。第二个参数是一个 FileFilter 对象数组，用于指示在文件浏览器对话框中显示的文件类型。由于图像查看器和编辑器仅处理图像格式，因此只允许选择并显示扩展名为 .jpg、.jpeg 或 .png 的文件。
+`browseForOpenMultiple()`的第一个参数是文件浏览器中显示的标题。第二个参数是一个 FileFilter 对象数组，用于指示在文件浏览器对话框中显示的文件类型。由于图像查看器和编辑器仅处理图像格式，因此只允许选择并显示扩展名为`.jpg`、`.jpeg`或`.png`的文件。
 
-除了"打开"选项外，"File"菜单中还有两个用于保存图像的选项。第一个选项将图像数据保存回最初打开的文件，第二个选项则打开文件浏览器，允许用户将图像文件保存到所需目录并使用不同的名称：
+除了“打开”选项外，“File”菜单中还有两个用于保存图像的选项。第一个选项将图像数据保存回最初打开的文件，第二个选项则打开文件浏览器，允许用户将图像文件保存到所需目录并使用不同的名称：
 
-```
+```actionscript
 private function saveItemAs():void
 {
     if( _currentImage == null ) return;
@@ -8834,11 +8981,11 @@ private function saveItemAs():void
 }
 ```
 
-在调用 `browseForSave()` 之前，会将 `_exportFile` 的 url 属性设置为当前显示图像的 url 属性。此操作会打开文件浏览器对话框到该目录，并允许用户选择其他目录和/或重命名图像文件。File 类上 `browseForSave()` 的参数与 `browseForOpenMultiple()` 的第一个参数相同，均用于设置文件浏览器对话框中显示的标题。
+在调用`browseForSave()`之前，会将`_exportFile`的`url`属性设置为当前显示图像的`url`属性。此操作会打开文件浏览器对话框到该目录，并允许用户选择其他目录和/或重命名图像文件。File 类上`browseForSave()`的参数与`browseForOpenMultiple()`的第一个参数相同，均用于设置文件浏览器对话框中显示的标题。
 
-当应用程序收到使用"File"菜单选项保存图像的指令时，会调用 `saveItem()` 方法，并将数据写入 `FileStream` 的缓冲区：
+当应用程序收到使用“File”菜单选项保存图像的指令时，会调用`saveItem()`方法，并将数据写入`FileStream`的缓冲区：
 
-```
+```actionscript
 private function saveItem( loc:String = null ) :void
 {
     if( _currentImage == null ) return;
@@ -8851,6 +8998,8 @@ private function saveItem( loc:String = null ) :void
 }
 ```
 
+
+
 您可能还记得，当拖出图像时，图像编解码器用于将数据缓冲到临时文件中。`saveItem()` 方法中的操作并无不同，它们被写入分配给保存图像文件的 `File` 实例中。
 
 现在，图像查看器和编辑器已准备好打开、显示和保存图像文件，是时候部署应用程序并开始操作图像了。
@@ -8861,9 +9010,9 @@ private function saveItem( loc:String = null ) :void
 
 ### 描述符文件
 
-1.  打开您喜欢的文本编辑器，并输入以下标记：
+1. 打开您喜欢的文本编辑器，并输入以下标记：
 
-```
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <application xmlns="http://ns.adobe.com/air/application/1.0">
     
@@ -8888,9 +9037,9 @@ private function saveItem( loc:String = null ) :void
 </application>
 ```
 
-2.  将此文件与 ImageViewer.mxml 文件一起保存到您工作目录的根目录下，命名为 ImageViewer-app.xml。
+2. 将此文件与`ImageViewer.mxml`文件一起保存到您工作目录的根目录下，命名为`ImageViewer-app.xml`。
 
-此文件将用作应用程序描述符文件。此代码片段中的元素值有些通用，您可以根据需要进行更改。当应用程序安装时，它将被命名为 ImageViewer，并在您的操作系统应用程序目录的 AIRCMR 文件夹中可用。
+此文件将用作应用程序描述符文件。此代码片段中的元素值有些通用，您可以根据需要进行更改。当应用程序安装时，它将被命名为`ImageViewer`，并在您的操作系统应用程序目录的`AIRCMR`文件夹中可用。
 
 描述符文件就位后，您就可以编译和打包图像查看器和编辑器 AIR 可执行文件了。
 
@@ -8898,27 +9047,33 @@ private function saveItem( loc:String = null ) :void
 
 打包 AIR 应用程序需要两个文件：主 SWF 文件和 XML 应用程序描述符文件。在本节中，您将使用命令行工具生成 SWF 文件并打包 AIR 应用程序。
 
-*如果您不想自己创建，示例中使用的图形资源可以在本书配套网站本章代码示例的 /assets 文件夹中找到。*
+如果您不想自己创建，示例中使用的图形资源可以在本书配套网站本章代码示例的`/assets`文件夹中找到。
 
-1.  打开命令提示符，导航到图像查看器和编辑器的*工作目录*，输入以下命令，然后按 Enter 键：
+1. 打开命令提示符，导航到图像查看器和编辑器的工作目录，输入以下命令，然后按 Enter 键：
 
-    > amxmlc ImageViewer.mxml
+   ```bash
+   amxmlc ImageViewer.mxml
+   ```
 
-    如果您已从证书颁发机构（如 VeriSign 或 Thawte）购买了证书，则可以使用该证书并跳过以下操作，而不是创建自签名证书。要在工作目录内创建自签名证书，请输入以下命令：
+   如果您已从证书颁发机构（如 VeriSign 或 Thawte）购买了证书，则可以使用该证书并跳过以下操作，而不是创建自签名证书。要在工作目录内创建自签名证书，请输入以下命令：
 
-    > adt -certificate -cn ImageViewer 1024-RSA certificate.pfx password
+   ```bash
+   adt -certificate -cn ImageViewer 1024-RSA certificate.pfx password
+   ```
 
-2.  命令提示符仍指向工作目录时，输入以下命令以打包图像查看器和编辑器应用程序：
+2. 命令提示符仍指向工作目录时，输入以下命令以打包图像查看器和编辑器应用程序：
 
-    > adt -package -storetype pkcs12 -keystore certificate.pfx ImageViewer.air ImageViewer-app.xml ImageViewer.swf
+   ```bash
+   adt -package -storetype pkcs12 -keystore certificate.pfx ImageViewer.air ImageViewer-app.xml ImageViewer.swf
+   ```
 
-    系统将提示您输入证书密码。如果您使用第二条命令创建了自签名证书，则请输入 "password"。运行这些命令后，您的工作目录中将生成一个 ImageViewer.swf 文件、一个 certificate.pfx 文件和一个 ImageViewer.air 安装程序文件。
+   系统将提示您输入证书密码。如果您使用第二条命令创建了自签名证书，则请输入`"password"`。运行这些命令后，您的工作目录中将生成一个`ImageViewer.swf`文件、一个`certificate.pfx`文件和一个`ImageViewer.air`安装程序文件。
 
-3.  一旦通过运行最后一条命令成功创建了安装程序，请导航到您的工作目录并双击 AIR 安装程序以安装并运行图像查看器和编辑器。如果一切顺利，应用程序将启动并准备好接受拖放的图像文件——以及可能从"File"菜单导入的图像文件。导入图像文件后，应用程序应类似于图 6-1。
+3. 一旦通过运行最后一条命令成功创建了安装程序，请导航到您的工作目录并双击 AIR 安装程序以安装并运行图像查看器和编辑器。如果一切顺利，应用程序将启动并准备好接受拖放的图像文件——以及可能从`"File"`菜单导入的图像文件。导入图像文件后，应用程序应类似于图 6-1。
 
-    ![](img/dea8bb18fb213671e2a7e04d8fb0d89f_223_0.png)
+   ![](img/dea8bb18fb213671e2a7e04d8fb0d89f_223_0.png)
 
-    图 6-1
+   图 6-1
 
 玩转颜色变换，创建您自己的图像处理工具，并尽情享受吧！
 
@@ -8926,23 +9081,21 @@ private function saveItem( loc:String = null ) :void
 
 本章介绍了如何使用文件系统 API 和拖放 API，从用户的硬盘驱动器打开和保存文件，同时创建了一个用于查看和操作图像的应用程序。您在前几章中对文件系统 API 的学习，有助于理解如何生成文件浏览器对话框来选择和打开多个文件，以及如何根据文件类型保存文件。
 
-在研究了 `NativeDataManager` 类之后，您学习了如何使用静态方法和属性执行拖放操作，以及如何处理从目标显示对象分派的 `NativeDragEvent` 对象。在关于保存图像的讨论中，您了解了 Flex 3.0 SDK 中可用的编解码器，并学习了如何使用 `File.writeBytes()` 方法将 `ByteArray` 数据添加到文件流缓冲区中。
+在研究了`NativeDataManager`类之后，您学习了如何使用静态方法和属性执行拖放操作，以及如何处理从目标显示对象分派的`NativeDragEvent`对象。在关于保存图像的讨论中，您了解了 Flex 3.0 SDK 中可用的编解码器，并学习了如何使用`File.writeBytes()`方法将`ByteArray`数据添加到文件流缓冲区中。
 
 在下一章中，您将继续通过创建一个简单日历和跟踪器来学习本地数据库，从而增进对 AIR 的理解。
-
-
 
 ## HTML 和 CSS 编辑器
 
 既然你已经对 HTML 组件有了基本的理解，那么现在是时候围绕它来构建一个应用程序了，而一个完美的程序就是 HTML 和 CSS 编辑器。就像第 2 章的文本编辑器一样，可以稳妥地假设每个人都有自己最喜欢的 HTML 和 CSS 编辑器。为了使这个程序与众不同，你将在本章中创建的应用程序将允许用户编辑任何页面（在线或离线）的 HTML 和 CSS。本质上，它将是一个非常基础的网页浏览器，具备编辑当前页面 HTML 和 CSS 源码的功能。想象一下，你可以在不将所有资源保存到电脑上的情况下，编辑你喜欢网页的源码。
 
-该程序的主要目标是说明操作加载到 AIR HTML 组件中的任何 HTML 页面的 JavaScript 文档对象模型 (DOM) 是多么容易。如果你的 JavaScript 技能不够熟练，也不用担心，因为所有代码都会看起来非常熟悉。请记住，ActionScript 和 JavaScript 都基于 ECMAScript。该程序将使用第 2 章的相同技术，使用户能够将编辑后的 HTML 和 CSS（它们只是纯文本文件）导出到他们的硬盘驱动器。
+该程序的主要目标是说明操作加载到 AIR HTML 组件中的任何 HTML 页面的 JavaScript 文档对象模型（DOM）是多么容易。如果你的 JavaScript 技能不够熟练，也不用担心，因为所有代码都会看起来非常熟悉。请记住，ActionScript 和 JavaScript 都基于 ECMAScript。该程序将使用第 2 章的相同技术，使用户能够将编辑后的 HTML 和 CSS（它们只是纯文本文件）导出到他们的硬盘驱动器。
 
 具体来说，该应用程序需要执行以下任务：
 
 - 从 URL 加载并显示 HTML 页面。
 - 从用户的硬盘驱动器加载并显示 HTML 页面。
-- 显示已加载页面 `<BODY>` 标签内的 HTML 源码。
+- 显示已加载页面`<BODY>`标签内的 HTML 源码。
 - 显示已加载页面所有 CSS 样式的可选择列表。
 - 显示特定样式所有属性的可选择列表。
 - 允许用户编辑当前页面的 HTML 源码。
@@ -8957,7 +9110,7 @@ private function saveItem( loc:String = null ) :void
 
 ## 设计
 
-在前面的章节中，你已经学到了一些东西，这应该会使本章的学习相对容易一些。具体来说，你已经学习了如何使用 File 和 FileStream 类将文本文件保存到用户的硬盘驱动器。你还学习了如何使用 AIR HTML 组件显示 HTML 格式的内容。除了这些之外，你现在将学习如何使用 HTML 组件的 domWindow 属性。这个属性将作为你通往 JavaScript 世界的门户，这反过来又将使你能够自由地使用它包含的所有方法和属性。最终，这个应用程序不仅会显示内容并允许用户将其保存在本地，它还将允许用户通过直接在 ActionScript 中内联访问相应的 JavaScript 方法和属性来动态编辑内容和更新显示。
+在前面的章节中，你已经学到了一些东西，这应该会使本章的学习相对容易一些。具体来说，你已经学习了如何使用`File`和`FileStream`类将文本文件保存到用户的硬盘驱动器。你还学习了如何使用 AIR HTML 组件显示 HTML 格式的内容。除了这些之外，你现在将学习如何使用 HTML 组件的`domWindow`属性。这个属性将作为你通往 JavaScript 世界的门户，这反过来又将使你能够自由地使用它包含的所有方法和属性。最终，这个应用程序不仅会显示内容并允许用户将其保存在本地，它还将允许用户通过直接在 ActionScript 中内联访问相应的 JavaScript 方法和属性来动态编辑内容和更新显示。
 
 基于前面列出的功能要求，该应用程序将需要以下组件：
 
@@ -8969,15 +9122,15 @@ private function saveItem( loc:String = null ) :void
 
 在抽象层面，应用程序外壳将管理在所有其他组件中所做的更改，并相应地更新 HTML 预览。它还将通过使用标签导航系统来管理显示，以便用户可以在预览、HTML 编辑器和 CSS 编辑器之间轻松切换。
 
-在开始任何操作之前，请在你的开发目录中创建一个名为 "HTML+CSS Editor" 的文件夹。与前面的章节一样，这将是你的应用程序的工作目录。
+在开始任何操作之前，请在你的开发目录中创建一个名为`HTML+CSS Editor`的文件夹。与前面的章节一样，这将是你的应用程序的工作目录。
 
 ### 地址栏
 
-地址栏可能是应用程序中最简单的组件，因此是一个很好的起点。该组件将允许用户输入网站 URL 或浏览他们计算机的硬盘驱动器以查找 HTML 文档。然后，AIR 的 HTML 组件的实例将使用该路径或 URL 来更新其 location 属性。
+地址栏可能是应用程序中最简单的组件，因此是一个很好的起点。该组件将允许用户输入网站 URL 或浏览他们计算机的硬盘驱动器以查找 HTML 文档。然后，AIR 的 HTML 组件的实例将使用该路径或 URL 来更新其`location`属性。
 
 打开你的编辑器并创建一个新文档。输入以下标记：
 
-```
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <mx:Canvas xmlns:mx="http://www.adobe.com/2006/mxml"
     width="800" height="42">
@@ -9053,11 +9206,11 @@ public function set location( v:String ):void
 </mx:Canvas>
 ```
 
-将文件保存为 AddressBar.mxml，位于你工作目录内的 `com/aircmr/htmlcseditor/ui/` 目录中。
+将文件保存为`AddressBar.mxml`，位于你工作目录内的`com/aircmr/htmlcseditor/ui/`目录中。
 
-地址栏的界面非常简单。它只使用了一个 TextInput 组件和两个 Button 组件。其中一个标记为 Browse 的按钮使用户能够浏览他们的硬盘驱动器以查找 HTML 文档：
+地址栏的界面非常简单。它只使用了一个`TextInput`组件和两个`Button`组件。其中一个标记为 Browse 的按钮使用户能够浏览他们的硬盘驱动器以查找 HTML 文档：
 
-```
+```actionscript
 private function onBrowseBtnClick( event:MouseEvent ):void
 {
     _fileToOpen = ( _currentFile ) ? _currentFile : File.documentsDirectory;
@@ -9076,11 +9229,11 @@ private function onBrowseBtnClick( event:MouseEvent ):void
 }
 ```
 
-前面的代码片段包含了 Browse 按钮的 CLICK 事件的事件处理程序。如果你读过前面的一些章节，这段代码应该看起来很熟悉。总结一下，用户会看到一个打开对话框，使他们能够浏览并选择一个 HTML 文件。选择文件后，将调用 onFileOpenSelect 事件处理函数。在这里，TextInput 组件将更新为所选文件的本地路径。请注意，本地路径的反斜杠被转换为正斜杠，并且路径前缀为 `file:///`，以便路径与 AIR 的 HTML 组件兼容。
+前面的代码片段包含了 Browse 按钮的`CLICK`事件的事件处理程序。如果你读过前面的一些章节，这段代码应该看起来很熟悉。总结一下，用户会看到一个打开对话框，使他们能够浏览并选择一个 HTML 文件。选择文件后，将调用`onFileOpenSelect`事件处理函数。在这里，`TextInput`组件将更新为所选文件的本地路径。请注意，本地路径的反斜杠被转换为正斜杠，并且路径前缀为`file:///`，以便路径与 AIR 的 HTML 组件兼容。
 
-以下代码片段包含 onNewLocation 函数：
+以下代码片段包含`onNewLocation`函数：
 
-```
+```actionscript
 private function onNewLocation( $event:Event ):void
 {
     if( StringUtil.trim( locationInput.text ).length == 0 )
@@ -9096,13 +9249,13 @@ private function onNewLocation( $event:Event ):void
 }
 ```
 
-每当用户指定了新的 URL 或文件路径时，就会调用此函数。用户可以通过三种方式指定新的 URL 或文件路径：单击 Go 按钮、在 TextInput 组件获得焦点时按 Enter 键，或者从硬盘驱动器中选择文件。经过一些快速简单的错误检查后，该组件会派发一个 CHANGE 事件。此事件通知应用程序外壳，用户想要加载新的 URL 或文件。
+每当用户指定了新的 URL 或文件路径时，就会调用此函数。用户可以通过三种方式指定新的 URL 或文件路径：单击 Go 按钮、在`TextInput`组件获得焦点时按 Enter 键，或者从硬盘驱动器中选择文件。经过一些快速简单的错误检查后，该组件会派发一个`CHANGE`事件。此事件通知应用程序外壳，用户想要加载新的 URL 或文件。
 
 这基本上涵盖了地址栏的重要功能。这个组件非常简单，可以很容易地在其他使用 HTML 组件的应用程序中重用或重新定位。在下一节中，你将学习如何创建 HTML 编辑器，这是该应用程序中另一个相对简单的组件。
 
 ### HTML 编辑器
 
-在两个编辑器中，HTML 编辑器是迄今为止最不复杂的。从概念上讲，它是一个精简的文本编辑器，但你将为在本应用程序的上下文中使用而对其进行一些定制。首先，请注意 HTML 编辑器只允许用户编辑 `<BODY>` 标签内的 HTML 源码，以防止用户编辑页面 `<HEAD>` 中的任何内置样式表代码。所有样式表编辑都将在 CSS 编辑器组件中处理。
+在两个编辑器中，HTML 编辑器是迄今为止最不复杂的。从概念上讲，它是一个精简的文本编辑器，但你将为在本应用程序的上下文中使用而对其进行一些定制。首先，请注意 HTML 编辑器只允许用户编辑`<BODY>`标签内的 HTML 源码，以防止用户编辑页面`<HEAD>`中的任何内置样式表代码。所有样式表编辑都将在 CSS 编辑器组件中处理。
 
 编辑器不仅应该做显而易见的事情——允许用户编辑 HTML 源码——它还应该做以下事情：
 
@@ -9115,16 +9268,14 @@ private function onNewLocation( $event:Event ):void
 
 打开你的编辑器并创建一个新文档。输入以下标记：
 
-```
+
+
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <mx:Canvas xmlns:mx="http://www.adobe.com/2006/mxml">
-
-<mx:Script><![CDATA[
 ```
 
-
-
-## 第七章：HTML与CSS编辑器
+## 第七章：HTML 与 CSS 编辑器
 
 ```actionscript
 import flash.filesystem.File;
@@ -9248,7 +9399,7 @@ public function get sourceCode():String
 </mx:Canvas>
 ```
 
-将文件保存为HTMLEditor.mxml，放置于工作目录下的com/aircmr/htmlcsseditor/ui/文件夹中。
+将文件保存为`HTMLEditor.mxml`，放置于工作目录下的`com/aircmr/htmlcsseditor/ui/`文件夹中。
 
 显而易见，前两个步骤已经完整地搭建了HTML编辑器组件。请注意此组件中一些特定于Adobe AIR的重要功能——首先是组件的`update`函数：
 
@@ -9267,7 +9418,7 @@ public function update( jsDoc:Object, url:String ):void
 }
 ```
 
-此函数提取了`<BODY>`标签之间的HTML源代码并将其放入可编辑的文本字段中，同时从原始URL获取完整的源代码。该函数需要两个参数：第一个是HTML页面JavaScript文档对象的引用；第二个是页面的URL。通过JavaScript文档对象，函数获取DOM的`body.innerHTML`属性。此属性是一个字符串，包含当前页面`<BODY>`标签内的所有HTML代码，用作在TextArea组件中显示的源代码。最后，由于无法通过JavaScript访问页面的完整HTML源代码，因此将当前页面的URL作为第二个参数传递，并使用URLLoader来获取完整源代码。
+此函数提取了`<BODY>`标签之间的HTML源代码并将其放入可编辑的文本字段中，同时从原始URL获取完整的源代码。该函数需要两个参数：第一个是HTML页面JavaScript文档对象的引用；第二个是页面的URL。通过JavaScript文档对象，函数获取DOM的`body.innerHTML`属性。此属性是一个字符串，包含当前页面`<BODY>`标签内的所有HTML代码，用作在`TextArea`组件中显示的源代码。最后，由于无法通过JavaScript访问页面的完整HTML源代码，因此将当前页面的URL作为第二个参数传递，并使用`URLLoader`来获取完整源代码。
 
 此组件内还有一些代码，使用户能够将完整源代码保存为其硬盘上的HTML文件。如果你在第2章中构建过简单的文本编辑器程序，这部分代码应该看起来非常熟悉。唯一的区别是，文本在保存到文件之前，会通过将编辑后的源代码替换原始源代码来进行准备。
 
@@ -9277,11 +9428,11 @@ public function update( jsDoc:Object, url:String ):void
 
 如前所述，CSS编辑器比HTML编辑器更复杂一些，但这纯粹是出于设计选择。当然，CSS编辑器也可以像HTML编辑器一样只是一个普通的可编辑文本区域，但那多没意思？更不用说，按样式、按属性地更新CSS会容易得多。换句话说，编辑器不会一次性使用长字符串更新所有CSS，而是会在某个样式或样式属性被编辑后通知应用程序外壳。最终，CSS编辑器应执行以下任务：
 
--   使用户能够查看和编辑当前页面的所有样式。
--   使用户能够查看、编辑和删除任何给定样式的属性。
--   使用户能够将CSS源代码保存到其硬盘。
--   当用户修改了某个样式或样式属性时，通知应用程序外壳。
--   当用户想要还原回原始源代码时，通知应用程序外壳。
+- 使用户能够查看和编辑当前页面的所有样式。
+- 使用户能够查看、编辑和删除任何给定样式的属性。
+- 使用户能够将CSS源代码保存到其硬盘。
+- 当用户修改了某个样式或样式属性时，通知应用程序外壳。
+- 当用户想要还原回原始源代码时，通知应用程序外壳。
 
 这实际上与HTML编辑器非常相似，但CSS数据的管理方式会有所不同。具体来说，编辑器将使用Flex List组件（而非纯文本区域）来显示和管理CSS样式，并使用Flex DataGrid组件来显示和管理所选样式的属性。
 
@@ -9289,7 +9440,7 @@ public function update( jsDoc:Object, url:String ):void
 
 由于此组件采用更直观的方式，因此有必要将CSS数据抽象成在ActionScript中易于管理的形式。在接下来的步骤中，你将创建两个数据类来帮助组织CSS信息：
 
-1.  打开你的编辑器并创建一个新文档。输入以下代码：
+1. 打开你的编辑器并创建一个新文档。输入以下代码：
 
 ```actionscript
 package com.aircmr.htmlcsseditor.data
@@ -9316,8 +9467,6 @@ package com.aircmr.htmlcsseditor.data
     }
 }
 ```
-
-
 
 ## 第7章：HTML与CSS编辑器
 
@@ -9373,9 +9522,9 @@ public function get properties():Array { return _properties; }
 }
 ```
 
-2.  将文件保存为 `CSSStyle.as`，置于你工作目录的 `com/aircmr/htmlcsseditor/data/` 路径下。
+2. 将文件保存为`CSSStyle.as`，置于你工作目录的`com/aircmr/htmlcsseditor/data/`路径下。
 
-3.  打开你的编辑器并创建一个新文档。输入以下代码：
+3. 打开你的编辑器并创建一个新文档。输入以下代码：
 
 ```actionscript
 package com.aircmr.htmlcsseditor.data
@@ -9399,11 +9548,13 @@ package com.aircmr.htmlcsseditor.data
 }
 ```
 
-4.  将文件保存为 `CSSStyleProperty.as`，置于你工作目录的 `com/aircmr/htmlcsseditor/data/` 路径下。
+4. 将文件保存为`CSSStyleProperty.as`，置于你工作目录的`com/aircmr/htmlcsseditor/data/`路径下。
 
-在步骤1和2中，你创建了 `CSSStyle` 类。该类的目的是将CSS样式的相关数据抽象出来，以便在应用程序中通过 ActionScript 进行管理。如果你不熟悉JavaScript或如何通过DOM访问CSS信息，可能会想知道这个类中的属性是做什么的。简而言之，`styleSheetIndex` 和 `cssRuleIndex` 是对DOM中各自数组索引的引用。保存这些信息在用户以任何方式修改或添加样式或其属性时会特别方便。该类还包含一些有用的方法，用于添加和删除样式的属性，以及仅获取样式的原始文本。
 
-在步骤3和4中，你创建了 `CSSStyleProperty` 类。这个类简单地代表了CSS样式的一个属性。因此，一个 `CSSStyle` 对象也包含一个 `CSSStyleProperty` 对象的数组。这个数组最终将成为前述 DataGrid 组件的数据源。
+
+在步骤1和2中，你创建了`CSSStyle`类。该类的目的是将CSS样式的相关数据抽象出来，以便在应用程序中通过`ActionScript`进行管理。如果你不熟悉`JavaScript`或如何通过`DOM`访问CSS信息，可能会想知道这个类中的属性是做什么的。简而言之，`styleSheetIndex`和`cssRuleIndex`是对DOM中各自数组索引的引用。保存这些信息在用户以任何方式修改或添加样式或其属性时会特别方便。该类还包含一些有用的方法，用于添加和删除样式的属性，以及仅获取样式的原始文本。
+
+在步骤3和4中，你创建了`CSSStyleProperty`类。这个类简单地代表了CSS样式的一个属性。因此，一个`CSSStyle`对象也包含一个`CSSStyleProperty`对象的数组。这个数组最终将成为前述`DataGrid`组件的数据源。
 
 现在，由于编辑器需要在用户修改或添加样式或属性时通知应用程序外壳，因此需要一个自定义事件对象。这个事件对象必须包含有关被修改的样式或属性的信息。打开你的编辑器并创建一个新文档。输入以下代码：
 
@@ -9435,19 +9586,19 @@ package com.aircmr.htmlcsseditor.events
 }
 ```
 
-将文件保存为 `CSSEditorEvent.as`，置于你工作目录的 `com/aircmr/htmlcsseditor/events/` 路径下。
+将文件保存为`CSSEditorEvent.as`，置于你工作目录的`com/aircmr/htmlcsseditor/events/`路径下。
 
-`CSSEditorEvent` 类将被 MXML 组件（你很快就会构建它）使用，每当用户修改或添加样式或属性时。该类的静态属性描述了CSS编辑器将触发的事件类型。每种事件类型都需要应用程序外壳执行略有不同的操作，但所有类型的事件都只需要一个对被修改的样式和/或属性的引用，这可以通过事件对象的 `affectedStyle` 和 `affectedProperty` 属性访问。
+`CSSEditorEvent`类将被MXML组件（你很快就会构建它）使用，每当用户修改或添加样式或属性时。该类的静态属性描述了CSS编辑器将触发的事件类型。每种事件类型都需要应用程序外壳执行略有不同的操作，但所有类型的事件都只需要一个对被修改的样式和/或属性的引用，这可以通过事件对象的`affectedStyle`和`affectedProperty`属性访问。
 
-数据类和自定义事件类完成后，现在是时候转到 MXML 组件，并充分利用所有这些功能了。
+数据类和自定义事件类完成后，现在是时候转到MXML组件，并充分利用所有这些功能了。
 
 ### 用户界面与逻辑
 
-再次，与HTML编辑器相比，CSS编辑器在逻辑和用户界面（UI）方面都稍微复杂一些。就UI而言，其核心组件如前所述，是一个用于样式列表的 `List` 组件和一个用于所选样式属性列表的 `DataGrid` 组件。这些都配有一组按钮，使用户能够修改相应的数据。其中一些按钮会触发提示，特别是在用户想要添加样式或属性，或查看完整CSS源代码时。
+再次，与HTML编辑器相比，CSS编辑器在逻辑和用户界面（UI）方面都稍微复杂一些。就UI而言，其核心组件如前所述，是一个用于样式列表的`List`组件和一个用于所选样式属性列表的`DataGrid`组件。这些都配有一组按钮，使用户能够修改相应的数据。其中一些按钮会触发提示，特别是在用户想要添加样式或属性，或查看完整CSS源代码时。
 
-除了增强的UI，逻辑部分也稍长一些。这是因为组件必须解析样式表数据并将其转换为你创建的友好数据对象，而不仅仅是读取DOM中的某个属性。正如你将看到的，这个组件是展示如何将JavaScript与ActionScript集成的一个绝佳范例。
+除了增强的UI，逻辑部分也稍长一些。这是因为组件必须解析样式表数据并将其转换为你创建的友好数据对象，而不仅仅是读取DOM中的某个属性。正如你将看到的，这个组件是展示如何将`JavaScript`与`ActionScript`集成的一个绝佳范例。
 
-1.  打开你的编辑器并创建一个新文档。输入以下代码：
+1. 打开你的编辑器并创建一个新文档。输入以下代码：
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -9514,11 +9665,9 @@ package com.aircmr.htmlcsseditor.events
                        click="onAddBtnClick(event)" />
 ```
 
-
-
 ## 第7章：HTML与CSS编辑器
 
-```
+```xml
 <mx:Button id="cancelBtn" label="Cancel"
     click="onCancelBtnClick(event)" />
 </mx:HBox>
@@ -9526,9 +9675,9 @@ package com.aircmr.htmlcsseditor.events
 </mx:Panel>
 ```
 
-2.  将该文件以 `AddStylePrompt.mxml` 为名保存到您工作目录下的 `com/aircmr/htmlcseditor/prompts/` 目录中。
+2. 将该文件以`AddStylePrompt.mxml`为名保存到您工作目录下的`com/aircmr/htmlcseditor/prompts/`目录中。
 
-3.  创建另一个新文档并输入以下标记代码：
+3. 创建另一个新文档并输入以下标记代码：
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -9596,9 +9745,11 @@ package com.aircmr.htmlcsseditor.events
 </mx:Panel>
 ```
 
-4.  将该文件以 `AddPropertyPrompt.mxml` 为名保存到您工作目录下的 `com/aircmr/htmlcseditor/prompts/` 目录中。
+4. 将该文件以`AddPropertyPrompt.mxml`为名保存到您工作目录下的`com/aircmr/htmlcseditor/prompts/`目录中。
 
-5.  创建另一个新文档并输入以下标记代码：
+5. 创建另一个新文档并输入以下标记代码：
+
+
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -9624,61 +9775,67 @@ package com.aircmr.htmlcsseditor.events
         public static function show():CSSSourceWindow
         {
             var prompt:CSSSourceWindow =
-                CSSSourceWindow( PopUpManager.createPopUp(
-                    DisplayObject( mx.core.Application.application ),
-                    CSSSourceWindow, true ) );
+                CSSSourceWindow(PopUpManager.createPopUp(
+                    DisplayObject(mx.core.Application.application),
+                    CSSSourceWindow, true));
 
-            PopUpManager.centerPopUp( prompt );
+            PopUpManager.centerPopUp(prompt);
             return prompt;
         }
 
-        private function onClose( event:Event ):void
+        private function onClose(event:Event):void
         {
             PopUpManager.removePopUp(this);
         }
 
-        private function onFileSaveSelect( event:Event ):void
+        private function onFileSaveSelect(event:Event):void
         {
             var theText:String = cssSource.text;
-            theText = theText.replace( /\r/g, "\n" );
-            theText = theText.replace( /\n/g, File.lineEnding );
+            theText = theText.replace(/\r/g, "\n");
+            theText = theText.replace(/\n/g, File.lineEnding);
 
-            _fileToSave = File( event.target );
+            _fileToSave = File(event.target);
 
             _fileStream = new FileStream();
-            _fileStream.openAsync( _fileToSave, FileMode.WRITE );
-            _fileStream.addEventListener( IOErrorEvent.IO_ERROR, onWriteIOError );
-            _fileStream.writeUTFBytes( theText );
+            _fileStream.openAsync(_fileToSave, FileMode.WRITE);
+            _fileStream.addEventListener(IOErrorEvent.IO_ERROR, onWriteIOError);
+            _fileStream.writeUTFBytes(theText);
             _fileStream.close();
         }
 
-        private function onSaveBtnClick( event:MouseEvent ):void
+        private function onSaveBtnClick(event:MouseEvent):void
         {
-            _fileToSave = new File( File.documentsDirectory.nativePath + File.separator
-                + "ExportedCSS.css" );
+            _fileToSave = new File(
+                File.documentsDirectory.nativePath + File.separator
+                + "ExportedCSS.css");
 
             try
             {
                 _fileToSave.browseForSave("Save As...");
-                _fileToSave.addEventListener( Event.SELECT, onFileSaveSelect );
+                _fileToSave.addEventListener(Event.SELECT, onFileSaveSelect);
             }
-            catch( error:Error )
+            catch(error:Error)
             {
                 trace("Failed:", error.message);
             }
         }
 
-        private function onWriteIOError( event:IOErrorEvent ):void
+        private function onWriteIOError(event:IOErrorEvent):void
         {
-            Alert.show("The specified file cannot be saved.", "Error", Alert.OK, this);
+            Alert.show(
+                "The specified file cannot be saved.",
+                "Error",
+                Alert.OK,
+                this);
         }
 
-        public function set source( v:String ):void
+        public function set source(v:String):void
         {
             cssSource.text = v;
         }
 
     ]]></mx:Script>
+
     <mx:VBox width="100%" height="100%" paddingTop="5" horizontalAlign="left">
         <mx:Button id="saveBtn" label="Save As..."
             click="onSaveBtnClick(event)" />
@@ -9689,113 +9846,121 @@ package com.aircmr.htmlcsseditor.events
 </mx:TitleWindow>
 ```
 
-6.  将该文件以 `CSSSourceWindow.mxml` 为名保存到您工作目录下的 `com/aircmr/htmlcsseditor/prompts/` 目录中。
+将该文件以`CSSSourceWindow.mxml`为名保存到您工作目录下的`com/aircmr/htmlcsseditor/prompts/`目录中。
 
-7.  创建另一个新文档并输入以下标记代码：
+创建另一个新文档并输入以下标记代码：
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <mx:Canvas xmlns:mx="http://www.adobe.com/2006/mxml"
     width="400" height="600" creationComplete="init();">
 
-<mx:Script><![CDATA[
+    <mx:Script><![CDATA[
 
-import com.aircmr.htmlcsseditor.data.CSSStyle;
-import com.aircmr.htmlcsseditor.data.CSSStyleProperty;
-import com.aircmr.htmlcsseditor.events.CSSEditorEvent;
-import com.aircmr.htmlcsseditor.prompts.AddStylePrompt;
-import com.aircmr.htmlcsseditor.prompts.AddPropertyPrompt;
-import com.aircmr.htmlcsseditor.prompts.CSSSourceWindow;
-import mx.controls.TextInput;
-import mx.events.DataGridEvent;
-import mx.managers.PopUpManager;
-import mx.utils.StringUtil;
+        import com.aircmr.htmlcsseditor.data.CSSStyle;
+        import com.aircmr.htmlcsseditor.data.CSSStyleProperty;
+        import com.aircmr.htmlcsseditor.events.CSSEditorEvent;
+        import com.aircmr.htmlcsseditor.prompts.AddStylePrompt;
+        import com.aircmr.htmlcsseditor.prompts.AddPropertyPrompt;
+        import com.aircmr.htmlcsseditor.prompts.CSSSourceWindow;
+        import mx.controls.TextInput;
+        import mx.events.DataGridEvent;
+        import mx.managers.PopUpManager;
+        import mx.utils.StringUtil;
 
-private var _addStylePrompt:AddStylePrompt;
-private var _addPropertyPrompt:AddPropertyPrompt;
-private var _selectedStyle:CSSStyle;
-private var _selectedProperty:CSSStyleProperty;
-private var _nextCSSRuleIndex:Number;
+        private var _addStylePrompt:AddStylePrompt;
+        private var _addPropertyPrompt:AddPropertyPrompt;
+        private var _selectedStyle:CSSStyle;
+        private var _selectedProperty:CSSStyleProperty;
+        private var _nextCSSRuleIndex:Number;
 
-[Bindable]
-private var _listData:Array;
+        [Bindable]
+        private var _listData:Array;
 
-[Bindable]
-private var _gridData:Array;
+        [Bindable]
+        private var _gridData:Array;
 
-private function init():void
-{
-    clear();
+        private function init():void
+        {
+            clear();
 
-    viewSourceBtn.addEventListener( MouseEvent.CLICK, onViewSourceBtnClick );
-    addStyleBtn.addEventListener( MouseEvent.CLICK, onAddStyleBtnClick );
-    revertBtn.addEventListener( MouseEvent.CLICK, onRevertBtnClick );
-    addPropBtn.addEventListener( MouseEvent.CLICK, onAddPropBtnClick );
-    delPropBtn.addEventListener( MouseEvent.CLICK, onDelPropBtnClick );
-    styleList.addEventListener( Event.CHANGE, onListChange );
-    propertyGrid.addEventListener( DataGridEvent.ITEM_EDIT_END, onItemEditEnd );
-    propertyGrid.addEventListener( Event.CHANGE, onGridChange );
-}
+            viewSourceBtn.addEventListener(MouseEvent.CLICK, onViewSourceBtnClick);
+            addStyleBtn.addEventListener(MouseEvent.CLICK, onAddStyleBtnClick);
+            revertBtn.addEventListener(MouseEvent.CLICK, onRevertBtnClick);
+            addPropBtn.addEventListener(MouseEvent.CLICK, onAddPropBtnClick);
+            delPropBtn.addEventListener(MouseEvent.CLICK, onDelPropBtnClick);
+            styleList.addEventListener(Event.CHANGE, onListChange);
+            propertyGrid.addEventListener(
+                DataGridEvent.ITEM_EDIT_END,
+                onItemEditEnd);
+            propertyGrid.addEventListener(Event.CHANGE, onGridChange);
+        }
 
-private function onAddStyleBtnClick( event:MouseEvent ):void
-{
-    _addStylePrompt = AddStylePrompt.show();
-    _addStylePrompt.init( 0, this._nextCSSRuleIndex );
-    _addStylePrompt.addEventListener( Event.SELECT, onAddStylePromptSelect );
-}
+        private function onAddStyleBtnClick(event:MouseEvent):void
+        {
+            _addStylePrompt = AddStylePrompt.show();
+            _addStylePrompt.init(0, this._nextCSSRuleIndex);
+            _addStylePrompt.addEventListener(
+                Event.SELECT,
+                onAddStylePromptSelect);
+        }
 
-private function onAddPropBtnClick( event:MouseEvent ):void
-{
-    _addPropertyPrompt = AddPropertyPrompt.show();
-    _addPropertyPrompt.addEventListener( Event.SELECT, onAddPropPromptSelect );
-}
+        private function onAddPropBtnClick(event:MouseEvent):void
+        {
+            _addPropertyPrompt = AddPropertyPrompt.show();
+            _addPropertyPrompt.addEventListener(
+                Event.SELECT,
+                onAddPropPromptSelect);
+        }
 
-private function onDelPropBtnClick( event:MouseEvent ):void
-{
-    var selectedIndex:Number = propertyGrid.selectedIndex;
-    var deletedProperty:CSSStyleProperty = CSSStyleProperty(
-        propertyGrid.selectedItem );
-    deletedProperty.value = "";
+        private function onDelPropBtnClick(event:MouseEvent):void
+        {
+            var selectedIndex:Number = propertyGrid.selectedIndex;
+            var deletedProperty:CSSStyleProperty = CSSStyleProperty(
+                propertyGrid.selectedItem);
+            deletedProperty.value = "";
 
-    var tempList:Array = _gridData;
-    tempList.splice( selectedIndex, 1 );
+            var tempList:Array = _gridData;
+            tempList.splice(selectedIndex, 1);
 
-    clearPropertyGrid();
-    _gridData = tempList;
+            clearPropertyGrid();
+            _gridData = tempList;
 
-    dispatchEvent( new CSSEditorEvent( CSSEditorEvent.CHANGE_PROPERTY,
-        _selectedStyle, deletedProperty ) );
-}
+            dispatchEvent(new CSSEditorEvent(
+                CSSEditorEvent.CHANGE_PROPERTY,
+                _selectedStyle,
+                deletedProperty));
+        }
 
-private function onViewSourceBtnClick( event:MouseEvent ):void
-{
-    var buffer:String = "";
+        private function onViewSourceBtnClick(event:MouseEvent):void
+        {
+            var buffer:String = "";
 
-    for( var i:Number = 0; i < _listData.length; i++ )
-    {
-        buffer +=  CSSStyle( _listData[i].data ).getStyleText( true, true )
-            + "\n\n";
-    }
+            for(var i:Number = 0; i < _listData.length; i++)
+            {
+                buffer += CSSStyle(_listData[i].data).getStyleText(true, true)
+                    + "\n\n";
+            }
 
-    var prompt:CSSSourceWindow = CSSSourceWindow.show();
-    prompt.source = buffer;
-}
+            var prompt:CSSSourceWindow = CSSSourceWindow.show();
+            prompt.source = buffer;
+        }
 
-private function onRevertBtnClick( event:MouseEvent ):void
-{
-    dispatchEvent( new Event( Event.CANCEL ) );
-}
+        private function onRevertBtnClick(event:MouseEvent):void
+        {
+            dispatchEvent(new Event(Event.CANCEL));
+        }
 
-private function onAddStylePromptSelect( event:Event ):void
-{
-    var newStyle:CSSStyle = _addStylePrompt.value;
-    var newListItem:Object = new Object();
-    var toAdd:Array = [newListItem];
+        private function onAddStylePromptSelect(event:Event):void
+        {
+            var newStyle:CSSStyle = _addStylePrompt.value;
+            var newListItem:Object = new Object();
+            var toAdd:Array = [newListItem];
 ```
 
-
-
 ## 第7章：HTML与CSS编辑器
+
+
 
 ```actionscript
 newListItem.label = newStyle.selector;
@@ -9979,9 +10144,11 @@ public function get selectedStyle():CSSStyle
 </mx:Canvas>
 ```
 
-8.  将文件保存为CSSEditor.mxml，放在你工作目录下的 `com/aircmr/htmlcseditor/ui/` 目录中。
+将文件保存为`CSSEditor.mxml`，放在你工作目录下的`com/aircmr/htmlcseditor/ui/`目录中。
 
-这是一大段代码。你会很高兴地知道，同时也希望你已经意识到，在之前的八个步骤中，你创建了整个CSS编辑器及其支持组件。这包括了所有必要的逻辑和用户界面元素。在步骤1到4中，你创建了两个重要的提示框，使用户既能添加新样式，也能为选定的样式添加属性。这两个提示框使用一种特殊的弹出方法向用户显示：
+这是一大段代码。你会很高兴地知道，同时也希望你已经意识到，在之前的八个步骤中，你创建了整个 CSS 编辑器及其支持组件。这包括了所有必要的逻辑和用户界面元素。
+
+在步骤 1 到 4 中，你创建了两个重要的提示框，使用户既能添加新样式，也能为选定的样式添加属性。这两个提示框使用一种特殊的弹出方法向用户显示：
 
 ```actionscript
 public static function show():AddStylePrompt
@@ -9997,9 +10164,13 @@ public static function show():AddStylePrompt
 }
 ```
 
-前面的代码片段来自AddStylePrompt.mxml的静态show函数。在应用程序的上下文中，提示框会在需要时出现，以便用户输入新的样式信息。此外，当提示框显示时，其下方的任何内容都会被禁用并略微模糊，以便用户的全部注意力都集中在（非常简单的）当前任务上。这是通过使用Flex的PopUpManager类实现的。这是一个非常方便的类，使得创建弹出窗口、警报等变得极其容易。在浏览其他两个提示框的代码时，请注意它们都使用了相同的显示技术。同时也要注意前两个提示框使用了你的CSS数据类：CSSStyle和CSSStyleProperty。
+前面的代码片段来自`AddStylePrompt.mxml`的静态`show()`函数。在应用程序的上下文中，提示框会在需要时出现，以便用户输入新的样式信息。
 
-以下代码片段再次来自AddStylePrompt.mxml：
+此外，当提示框显示时，其下方的任何内容都会被禁用并略微模糊，以便用户的全部注意力都集中在（非常简单的）当前任务上。这是通过使用 Flex 的`PopUpManager`类实现的。这是一个非常方便的类，使得创建弹出窗口、警报等变得极其容易。
+
+在浏览其他两个提示框的代码时，请注意它们都使用了相同的显示技术。同时也要注意前两个提示框使用了你的 CSS 数据类：`CSSStyle`和`CSSStyleProperty`。
+
+以下代码片段再次来自`AddStylePrompt.mxml`：
 
 ```actionscript
 public function init( styleSheetIndex:Number, cssRuleIndex:Number ):void
@@ -10018,9 +10189,17 @@ private function onAddBtnClick( event:MouseEvent ):void
 }
 ```
 
-这里你可以看到一个init函数。这个函数是必需的，以便在onAddBtnClick事件处理函数中创建潜在的新CSSStyle对象之前指定一些数据。在这种情况下，指定样式应添加到哪个样式表的索引，以及CSS规则的索引，这一点很重要，因为用户创建的任何新样式还不是DOM的一部分。恰好在这个应用程序中，任何新样式都添加到DOM上的第一个样式表。但是，需要管理规则索引，即每次添加样式时递增它。这发生在CSSEditor.mxml中。稍后会详细说明。
+这里你可以看到一个`init()`函数。这个函数是必需的，以便在`onAddBtnClick`事件处理函数中创建潜在的新`CSSStyle`对象之前指定一些数据。
 
-CSSSourceWindow提示框，虽然看起来可能不像你常见的提示框，但它是在步骤5和6中创建的。这个提示框，或者也许我们应该说弹出窗口，使用户能够查看所有CSS源代码，并且如果他们愿意，可以将其保存到计算机。像以前一样，你应该能识别出简单的文件保存功能。现在提示框部分已经结束，你可以专注于AIR特定的功能：
+在这种情况下，指定样式应添加到哪个样式表的索引，以及 CSS 规则的索引，这一点很重要，因为用户创建的任何新样式还不是 DOM 的一部分。恰好在这个应用程序中，任何新样式都添加到 DOM 上的第一个样式表。
+
+但是，需要管理规则索引，即每次添加样式时递增它。这发生在`CSSEditor.mxml`中。稍后会详细说明。
+
+`CSSSourceWindow`提示框，虽然看起来可能不像你常见的提示框，但它是在步骤 5 和 6 中创建的。这个提示框，或者也许我们应该说弹出窗口，使用户能够查看所有 CSS 源代码，并且如果他们愿意，可以将其保存到计算机。
+
+像以前一样，你应该能识别出简单的文件保存功能。现在提示框部分已经结束，你可以专注于 AIR 特定的功能：
+
+
 
 ```actionscript
 public function update( jsDoc:Object ):void
@@ -10081,11 +10260,9 @@ public function update( jsDoc:Object ):void
 }
 ```
 
-
-
 ## 第7章：HTML与CSS编辑器
 
-```
+```actionscript
 for ( var k:int = 0; k < styleItems.length; ++k)
 {
     var prop:Array = String( styleItems[k] ).split( ":" );
@@ -10113,35 +10290,35 @@ _listData.push( newListItem );
 }
 ```
 
-上面的代码片段来自 `CSSEditor.mxml`，这是你在步骤7和8中创建的。与HTML编辑器类似，CSS编辑器也包含一个更新函数。该函数通过解析提供的DOM中的所有CSS数据，为编辑器设置所有数据。这个函数比较复杂，因此接下来的段落将进一步分解说明。
+上面的代码片段来自`CSSEditor.mxml`，这是你在步骤7和8中创建的。与HTML编辑器类似，CSS编辑器也包含一个更新函数。该函数通过解析提供的DOM中的所有CSS数据，为编辑器设置所有数据。这个函数比较复杂，因此接下来的段落将进一步分解说明。
 
-回顾一下，`AddStylePrompt` 组件需要用一些参数进行初始化，其中一个参数用于指定样式的CSS规则索引。因此，在开始任何解析之前，起始索引由第一个样式表中的CSS规则数量确定，并存储在组件的 `_nextCSSRuleIndex` 变量中：
+回顾一下，`AddStylePrompt`组件需要用一些参数进行初始化，其中一个参数用于指定样式的CSS规则索引。因此，在开始任何解析之前，起始索引由第一个样式表中的CSS规则数量确定，并存储在组件的`_nextCSSRuleIndex`变量中：
 
-```
+```actionscript
 _nextCSSRuleIndex = jsDoc.styleSheets[0].cssRules.length;
 ```
 
-最初的 `for` 循环遍历DOM的 `styleSheets` 数组属性。该数组中的每个项引用一个不同的JavaScript样式表对象。接下来的循环遍历每个样式表对象的 `cssRules` 数组属性（记住，你在这里处理的是JavaScript）。JavaScript中的 `cssRule` 对象包含两个属性，你将使用它们来获取样式数据和属性数据。首先，`selectorText` 属性与你的 `CSSStyle` 对象的 `selector` 属性直接相关：
+最初的`for`循环遍历DOM的`styleSheets`数组属性。该数组中的每个项引用一个不同的JavaScript样式表对象。接下来的循环遍历每个样式表对象的`cssRules`数组属性（记住，你在这里处理的是JavaScript）。JavaScript中的`cssRule`对象包含两个属性，你将使用它们来获取样式数据和属性数据。首先，`selectorText`属性与你的`CSSStyle`对象的`selector`属性直接相关：
 
-```
+```actionscript
 var selector:String = jsDoc.styleSheets[i].cssRules[j].selectorText;
 ```
 
-其次，由于没有一个容易访问的数组包含样式的所有属性，你必须更深入地挖掘，使用CSS规则的 `style` 属性的 `cssText` 属性：
+其次，由于没有一个容易访问的数组包含样式的所有属性，你必须更深入地挖掘，使用CSS规则的`style`属性的`cssText`属性：
 
-```
+```actionscript
 var styleText:String = jsDoc.styleSheets[i].cssRules[j].style.cssText;
 ```
 
-知道这个字符串包含以分号分隔的样式属性（并假设该字符串没有任何语法错误），可以使用数组的 `split` 方法将其转换为数组：
+知道这个字符串包含以分号分隔的样式属性（并假设该字符串没有任何语法错误），可以使用数组的`split`方法将其转换为数组：
 
-```
+```actionscript
 var styleItems:Array = styleText.split( ";" );
 ```
 
-然后遍历这个数组，并通过再次使用数组的 `split` 方法，将数组中的每个字符串转换为一个更小的数组，属性名称和值以冒号分隔：
+然后遍历这个数组，并通过再次使用数组的`split`方法，将数组中的每个字符串转换为一个更小的数组，属性名称和值以冒号分隔：
 
-```
+```actionscript
 var propName:String = StringUtil.trim( prop[0] );
 var propValue:String = StringUtil.trim( prop[1] );
 
@@ -10150,15 +10327,15 @@ var newCSSStyleProperty:CSSStyleProperty =
 styleProperties.push( newCSSStyleProperty );
 ```
 
-生成的数组用于创建一个新的 `CSSStyleProperty` 对象，并将其推入一个临时数组。这个包含所有属性的数组在创建 `CSSStyle` 对象时使用：
+生成的数组用于创建一个新的`CSSStyleProperty`对象，并将其推入一个临时数组。这个包含所有属性的数组在创建`CSSStyle`对象时使用：
 
-```
+```actionscript
 var newCSSStyle:CSSStyle = new CSSStyle( i, j, selector, styleProperties );
 ```
 
 最后但同样重要的是，该函数创建了一个泛型对象数组，用作List组件的数据提供程序：
 
-```
+```actionscript
 var newListItem:Object = new Object();
 newListItem.label = selector;
 newListItem.data = newCSSStyle;
@@ -10166,9 +10343,9 @@ newListItem.data = newCSSStyle;
 _listData.push( newListItem );
 ```
 
-`update` 函数是CSS编辑器中的一个重要函数，但事件处理程序也同样重要。事件处理程序解释用户与界面之间的交互，并在用户添加、修改或删除CSS样式和属性时分派事件。例如，当用户单击添加样式按钮（其名称恰当地命名为 `addStyleBtn`）时，用户会看到 `AddStylePrompt` 弹出窗口，输入新的样式信息，并在单击确定按钮后，新样式被添加到显示列表中，并且组件分派一个事件，通知任何其他组件已添加了一个样式：
+`update`函数是CSS编辑器中的一个重要函数，但事件处理程序也同样重要。事件处理程序解释用户与界面之间的交互，并在用户添加、修改或删除CSS样式和属性时分派事件。例如，当用户单击添加样式按钮（其名称恰当地命名为`addStyleBtn`）时，用户会看到`AddStylePrompt`弹出窗口，输入新的样式信息，并在单击确定按钮后，新样式被添加到显示列表中，并且组件分派一个事件，通知任何其他组件已添加了一个样式：
 
-```
+```actionscript
 private function onAddStyleBtnClick( event:MouseEvent ):void
 {
     _addStylePrompt = AddStylePrompt.show();
@@ -10177,11 +10354,11 @@ private function onAddStyleBtnClick( event:MouseEvent ):void
 }
 ```
 
-上面的代码片段来自 `CSSEditor.mxml`，包含了 `addStyleBtn` 的 `click` 事件的事件处理程序。请记住，这个以及几乎所有其他事件处理程序都是在组件的 `init` 函数中设置的。在事件处理程序中，你可以看到使用了 `AddStylePrompt` 的静态 `show` 方法。
+上面的代码片段来自`CSSEditor.mxml`，包含了`addStyleBtn`的`click`事件的事件处理程序。请记住，这个以及几乎所有其他事件处理程序都是在组件的`init`函数中设置的。在事件处理程序中，你可以看到使用了`AddStylePrompt`的静态`show`方法。
 
-对弹出窗口的引用保存在 `_addStylePrompt` 变量中，以便可以调用它自己的一些方法。这里，调用 `init` 函数来指定一些初始样式数据，并为用户单击确定按钮设置了一个事件处理程序：
+对弹出窗口的引用保存在`_addStylePrompt`变量中，以便可以调用它自己的一些方法。这里，调用`init`函数来指定一些初始样式数据，并为用户单击确定按钮设置了一个事件处理程序：
 
-```
+```actionscript
 private function onAddStylePromptSelect( event:Event ):void
 {
     var newStyle:CSSStyle = _addStylePrompt.value;
@@ -10201,11 +10378,11 @@ private function onAddStylePromptSelect( event:Event ):void
 }
 ```
 
-上面的代码片段包含了前面提到的事件处理程序。新的 `CSSStyle` 对象在弹出窗口从显示列表中移除之前被检索。之后，它被放入一个新的泛型对象中，并添加到显示列表数据提供程序的开头。随后，CSS规则索引递增一，以便下次添加样式时，不会覆盖任何内容。
+上面的代码片段包含了前面提到的事件处理程序。新的`CSSStyle`对象在弹出窗口从显示列表中移除之前被检索。之后，它被放入一个新的泛型对象中，并添加到显示列表数据提供程序的开头。随后，CSS规则索引递增一，以便下次添加样式时，不会覆盖任何内容。
 
-你终于使用了之前创建的那个自定义事件类。出于显而易见的原因，使用了 `ADD_STYLE` 事件。因此，你需要将最近受影响的样式指定为其第三个参数。最终，此事件将在应用程序外壳应将样式添加到DOM时通知它。说到事件，还有另外两个地方使用了 `CSSEditorEvent` 类：
+你终于使用了之前创建的那个自定义事件类。出于显而易见的原因，使用了`ADD_STYLE`事件。因此，你需要将最近受影响的样式指定为其第三个参数。最终，此事件将在应用程序外壳应将样式添加到DOM时通知它。说到事件，还有另外两个地方使用了`CSSEditorEvent`类：
 
-```
+```actionscript
 private function onAddPropPromptSelect( event:Event ):void
 {
     var newProp:CSSStyleProperty = _addPropertyPrompt.value;
@@ -10220,9 +10397,9 @@ private function onAddPropPromptSelect( event:Event ):void
 }
 ```
 
-上面的代码片段包含了当用户通过 `AddPropertyPrompt` 组件添加新属性时调用的事件处理程序。新创建的 `CSSStyleProperty` 对象在弹出窗口从显示列表中移除之前被检索，然后通过其自身的 `addProperty` 方法被添加到当前选中的 `CSSStyle` 的属性列表中。然后，`DataGrid` 组件的数据提供程序使用新的属性对象进行更新，并分派 `CHANGE_PROPERTY` 事件，通知所有监听器属性已更改。
+上面的代码片段包含了当用户通过`AddPropertyPrompt`组件添加新属性时调用的事件处理程序。新创建的`CSSStyleProperty`对象在弹出窗口从显示列表中移除之前被检索，然后通过其自身的`addProperty`方法被添加到当前选中的`CSSStyle`的属性列表中。然后，`DataGrid`组件的数据提供程序使用新的属性对象进行更新，并分派`CHANGE_PROPERTY`事件，通知所有监听器属性已更改。
 
-如果你浏览 `CSSEditor.mxml` 的其余部分，你应该会注意到在另外两个事件处理程序 `onItemEditEnd` 和 `onDelPropBtnClick` 中使用了 `CHANGE_PROPERTY` 事件。你可能想知道为什么事件没有更具描述性或特定于用户正在执行的操作，但请放心，这没有问题。对于此应用程序，只需在修改样式属性时使用一种类型的事件，因为一段简单的代码可以处理两种情况（添加和编辑）。当你构建应用程序外壳时，这一点将变得更加明显。
+如果你浏览`CSSEditor.mxml`的其余部分，你应该会注意到在另外两个事件处理程序`onItemEditEnd`和`onDelPropBtnClick`中使用了`CHANGE_PROPERTY`事件。你可能想知道为什么事件没有更具描述性或特定于用户正在执行的操作，但请放心，这没有问题。对于此应用程序，只需在修改样式属性时使用一种类型的事件，因为一段简单的代码可以处理两种情况（添加和编辑）。当你构建应用程序外壳时，这一点将变得更加明显。
 
 以上涵盖了CSS编辑器最重要的功能。在下一节中，你将学习如何将两个编辑器连接在一起并创建应用程序外壳。
 
@@ -10232,7 +10409,9 @@ private function onAddPropPromptSelect( event:Event ):void
 
 打开你的编辑器并创建一个新文档。输入以下标记：
 
-```
+
+
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <mx:WindowedApplication xmlns:mx="http://www.adobe.com/2006/mxml"
     xmlns:ui="com.aircmr.htmlcssexecutor.ui.*"
@@ -10271,11 +10450,9 @@ private function onAppInit():void
     cssEditor.addEventListener( Event.CANCEL, onAddressBarChange );
 ```
 
-
-
 ## 第七章：HTML 和 CSS 编辑器
 
-```
+```actionscript
 html.addEventListener( Event.COMPLETE, onHTMLLoadComplete );
 html.addEventListener( Event.LOCATION_CHANGE, onHTMLLocationChange );
 }
@@ -10331,7 +10508,7 @@ private function onHTMLLocationChange( event:Event ):void
 ]]></mx:Script>
 ```
 
-```
+```xml
 <mx:VBox width="100%" height="100%">
     <ui:AddressBar id="addressBar" width="100%" />
     <mx:TabNavigator id="tabNav" width="100%" height="100%"
@@ -10352,13 +10529,13 @@ private function onHTMLLocationChange( event:Event ):void
 </mx:WindowedApplication>
 ```
 
-将该文件保存为工作目录中的 `HTMLCSSEditor.mxml`。以下部分将解释你刚刚创建的内容。
+将该文件保存为工作目录中的`HTMLCSSEditor.mxml`。以下部分将解释你刚刚创建的内容。
 
 ## 创建用户界面
 
-首先，你需要一种方式以有意义的方式向用户展示组件。幸运的是，Flex 有一个非常棒的组件——TabNavigator，它允许用户随时选择他们想要使用的组件。基本上，三个主要组件（HTMLEditor、CSSEditor 和 HTML）将各使用一个选项卡，而地址栏将保持在它们上方：
+首先，你需要一种方式以有意义的方式向用户展示组件。幸运的是，Flex 有一个非常棒的组件——`TabNavigator`，它允许用户随时选择他们想要使用的组件。基本上，三个主要组件（`HTMLEditor`、`CSSEditor` 和 `HTML`）将各使用一个选项卡，而地址栏将保持在它们上方：
 
-```
+```xml
 <mx:VBox width="100%" height="100%">
     <ui:AddressBar id="addressBar" width="100%" />
     <mx:TabNavigator id="tabNav" width="100%" height="100%"
@@ -10378,13 +10555,13 @@ private function onHTMLLocationChange( event:Event ):void
 </mx:VBox>
 ```
 
-如你所见，HTMLEditor、CSSEditor 和 AIR 的 HTML 组件的实例被放置在一个 Flex Canvas 组件的实例中。每个 Canvas 组件代表一个选项卡，该选项卡将在应用程序最终编译时显示。该组件为你处理所有的鼠标交互，并管理每个选项卡及其内容的显示。事情就是这么简单。接下来，你将学习如何管理所有组件的所有事件。
+如你所见，`HTMLEditor`、`CSSEditor` 和 AIR 的 `HTML` 组件的实例被放置在一个 Flex `Canvas` 组件的实例中。每个 `Canvas` 组件代表一个选项卡，该选项卡将在应用程序最终编译时显示。该组件为你处理所有的鼠标交互，并管理每个选项卡及其内容的显示。事情就是这么简单。接下来，你将学习如何管理所有组件的所有事件。
 
 ## 添加事件处理程序
 
 本质上，应用程序外壳只需响应所有组件的事件。后续的事件处理程序不仅会使组件协同工作，而且最重要的是，其中一些会修改 DOM，以便用户可以查看他们对 HTML 和 CSS 所做的更改。让我们来看看外壳所关注的所有事件：
 
-```
+```actionscript
 private function onAppInit():void
 {
     this.systemManager.stage.window.width = 1024;
@@ -10408,16 +10585,16 @@ private function onAppInit():void
 
 `onAppInit` 函数处理应用程序的 `APPLICATION_COMPLETE` 事件。换句话说，当应用程序被运行时完全创建后，它会被调用。除了设置应用程序窗口的宽度和高度外，所有组件的事件处理程序也被配置好了。你应该首先注意到使用了你在本章前面创建的 `CSSEditorEvent` 类。此外，注意为 `HTML` 组件配置的事件处理程序。`HTML` 组件的 `LOCATION_CHANGE` 事件会在 `HTML` 组件的 `location` 属性更改时通知应用程序，这实际上是在告知它重置编辑器，为新的 DOM 做准备。另外，`HTML` 组件的 `COMPLETE` 事件会在因设置 `location` 属性而触发的最后一次加载操作完成时通知应用程序。这个事件很重要，因为它提醒应用程序新的 DOM 已存在并可供编辑器访问。现在你已经了解了所有事件的概况，是时候逐一查看每个事件处理程序了：
 
-```
+```actionscript
 private function onAddressBarChange( event:Event ):void
 {
     html.location = addressBar.location;
 }
 ```
 
-前面的代码片段包含 `onAddressBarChange` 函数，它处理 `AddressBar` 组件的 `CHANGE` 事件。这里唯一需要做的操作就是更新 `HTML` 组件的 `location` 属性：
+前面的代码片段包含`onAddressBarChange`函数，它处理`AddressBar`组件的`CHANGE`事件。这里唯一需要做的操作就是更新`HTML`组件的`location`属性：
 
-```
+```actionscript
 private function onHTMLLocationChange( event:Event ):void
 {
     addressBar.location = html.location;
@@ -10426,11 +10603,11 @@ private function onHTMLLocationChange( event:Event ):void
 }
 ```
 
-前面的代码片段包含 `onHTMLLocationChange` 函数，它处理 HTML 组件的 `LOCATION_CHANGE` 事件。很简单，就是用新位置更新地址栏，并清除 HTML 和 CSS 编辑器中的数据。
+前面的代码片段包含`onHTMLLocationChange`函数，它处理`HTML`组件的`LOCATION_CHANGE`事件。很简单，就是用新位置更新地址栏，并清除 HTML 和 CSS 编辑器中的数据。
 
-以下代码片段包含 `onHTMLLoadComplete` 函数，它处理 HTML 组件的 `COMPLETE` 事件：
+以下代码片段包含`onHTMLLoadComplete`函数，它处理`HTML`组件的`COMPLETE`事件：
 
-```
+```actionscript
 private function onHTMLLoadComplete( event:Event ):void
 {
     _currentJSDoc = html.domWindow.document;
@@ -10439,18 +10616,18 @@ private function onHTMLLoadComplete( event:Event ):void
 }
 ```
 
-同样很简单，通过直接引用组件的 `domWindow.document` 属性，将对 HTML 组件的 JavaScript DOM 的引用存储在 `_currentJSDoc` 变量中。同时，通过调用各自的 `update` 方法更新每个编辑器，两者都需要将当前 DOM 作为参数传递。`onHTMLEditorChange` 函数处理 HTMLEditor 组件的 `CHANGE` 事件：
+同样很简单，通过直接引用组件的`domWindow.document`属性，将对 HTML 组件的 JavaScript DOM 的引用存储在`_currentJSDoc`变量中。同时，通过调用各自的`update`方法更新每个编辑器，两者都需要将当前 DOM 作为参数传递。`onHTMLEditorChange`函数处理`HTMLEditor`组件的`CHANGE`事件：
 
-```
+```actionscript
 private function onHTMLEditorChange( event:Event ):void
 {
     _currentJSDoc.body.innerHTML = htmlEditor.sourceCode;
 }
 ```
 
-当用户想要用他们所做的更改更新当前 HTML 内容的 HTML 源码时，此事件会通知外壳。为此，需要使用一些 JavaScript 来动态更新 HTML 源码。这是通过将 DOM 的 `body` 属性的 `innerHTML` 属性重新赋值为 HTML 编辑器的 `sourceCode` 属性来完成的。接下来，`onCSSEditorAddStyle` 函数处理 CSSEditor 组件的 `ADD_STYLE` 事件：
+当用户想要用他们所做的更改更新当前 HTML 内容的 HTML 源码时，此事件会通知外壳。为此，需要使用一些 JavaScript 来动态更新 HTML 源码。这是通过将 DOM 的 `body` 属性的 `innerHTML` 属性重新赋值为 HTML 编辑器的 `sourceCode` 属性来完成的。接下来，`onCSSEditorAddStyle` 函数处理 `CSSEditor` 组件的 `ADD_STYLE` 事件：
 
-```
+```actionscript
 private function onCSSEditorAddStyle( event:CSSEditorEvent ):void
 {
     var newStyle:CSSStyle = event.affectedStyle;
@@ -10467,9 +10644,9 @@ private function onCSSEditorAddStyle( event:CSSEditorEvent ):void
 }
 ```
 
-当用户在 CSS 编辑器中添加了样式时，此事件会通知外壳。首先，从事件对象的 `affectedStyle` 属性中检索新样式信息。此属性是 `CSSStyle` 类型，你在本章前面已经定义过。`CSSStyle` 对象保存在一个名为 `newStyle` 的临时变量中。接下来，应用程序检查是否有可用的样式表来添加新样式。如果没有，则使用一些 JavaScript 动态创建一个。然后，通过调用其 `insertRule` 方法，将新样式信息添加到当前 DOM 的第一个样式表中。
 
 
+当用户在 CSS 编辑器中添加了样式时，此事件会通知外壳。首先，从事件对象的`affectedStyle`属性中检索新样式信息。此属性是`CSSStyle`类型，你在本章前面已经定义过。`CSSStyle`对象保存在一个名为`newStyle`的临时变量中。接下来，应用程序检查是否有可用的样式表来添加新样式。如果没有，则使用一些 JavaScript 动态创建一个。然后，通过调用其`insertRule`方法，将新样式信息添加到当前 DOM 的第一个样式表中。
 
 ## 第7章：HTML与CSS编辑器
 
@@ -10533,13 +10710,13 @@ private function onCSSEditorChangeProperty( event:CSSEditorEvent ):void
 > adt -package -storetype pkcs12 -keystore certificate.pfx HTMLCSSEditor.air HTMLCSSEditor-app.xml HTMLCSSEditor.swf
 ```
 
-运行最后一个命令成功创建安装程序后，导航到您的工作目录并双击HTMLCSSEditor.air文件以安装和运行应用程序。如果一切顺利，该应用程序将启动，并呈现如图7-1所示的界面。
+运行最后一个命令成功创建安装程序后，导航到您的工作目录并双击`HTMLCSSEditor.air`文件以安装和运行应用程序。如果一切顺利，该应用程序将启动，并呈现如图7-1所示的界面。
 
 ![图7-1](img/dea8bb18fb213671e2a7e04d8fb0d89f_258_0.png)
 
 ## 总结
 
-在本章中，您学习了如何创建一个主要围绕AIR的HTML组件构建的应用程序。您了解了该组件的原生事件、其部分属性，以及最重要的，它的domWindow属性。通过此属性，您学习了如何访问加载HTML内容的JavaScript DOM，从而将JavaScript与ActionScript集成起来。这种集成使您的应用程序能够执行其最重要的功能：动态修改HTML和CSS内容。最后，您运用了在前面章节中学到的一些技术，将简单的文本文件保存到用户的硬盘驱动器。
+在本章中，您学习了如何创建一个主要围绕AIR的HTML组件构建的应用程序。您了解了该组件的原生事件、其部分属性，以及最重要的，它的`domWindow`属性。通过此属性，您学习了如何访问加载HTML内容的JavaScript DOM，从而将JavaScript与ActionScript集成起来。这种集成使您的应用程序能够执行其最重要的功能：动态修改HTML和CSS内容。最后，您运用了在前面章节中学到的一些技术，将简单的文本文件保存到用户的硬盘驱动器。
 
 在下一章中，您将再次扩展对AIR的了解，并学习如何构建一个天气小部件。
 
@@ -10552,7 +10729,9 @@ private function onCSSEditorChangeProperty( event:CSSEditorEvent ):void
 本章深入探讨了创建一个获取特定地点天气的小部件。虽然这是一种相当常见的小部件类型，但它为您将来在AIR中开发小部件奠定了基础。本章讨论了构建小部件的以下Flex/AIR概念：
 
 -   创建一个始终位于其他应用程序前面的“无边框”应用程序
+
 -   利用`minimize()`和`restore()`命令隐藏和显示应用程序
+
 -   为Microsoft Windows的系统托盘和Mac OS X的Dock创建动态图标和菜单
 
 ## 设计
@@ -10562,20 +10741,22 @@ private function onCSSEditorChangeProperty( event:CSSEditorEvent ):void
 天气小部件就是一个小但相当复杂的应用程序的例子。因为它应该作为最终用户桌面上的功能性装饰，所以可视大小必须小。但是，它仍然需要能够存储用户的信息；至少，它必须显示当天的天气。总体而言，天气小部件应用程序将具有以下功能：
 
 -   **多视图：** 除了当前和四天预报视图外，小部件在数据加载时还将显示一个加载屏幕。还将有一个设置屏幕，包含邮政编码输入、刷新间隔、摄氏/华氏切换以及“始终在前”切换等选项。
+
 -   **原生菜单系统：** 为了保持小部件视图小而紧凑，菜单系统将被隐藏，并可通过上下文菜单（在小部件上右键单击）或系统托盘（Dock）菜单访问。它将包含退出应用程序、在单日和四日预报之间切换、打开设置视图状态以及在最小化和还原窗口视图之间切换的选项。
+
 -   **动态系统托盘（Dock）图标：** 用户将能够在系统托盘（Windows）或Dock（OS X）中将当前温度作为图标查看。如前一点所述，当用户单击动态图标时，他们将看到小部件的菜单。如果用户在Microsoft Windows中最小化应用程序，小部件将完全隐藏，系统托盘图标除外，这意味着应用程序实例不会在任务栏中显示，但可以通过系统托盘图标访问。
 
 最后，需要从外部天气系统获取数据。天气服务有几个不同的选择。此应用程序将使用Google公开可用的天气feed，选择它是因为其易于解释的XML结构、多日预报集和图标图像。虽然此小部件最初将设置为使用Google，但是否继续使用它取决于您。以下是一些替代方案：
 
 -   美国国家气象局XML Web服务（www.weather.gov/xml）
+
 -   Yahoo! Weather（http://developer.yahoo.com/weather）
+
 -   AccuWeather.com RSS Feed（www.accuweather.com/rss-center.asp）
 
 ## 构建目录结构
 
 在讨论天气小部件的*如何*构建之前，确保本章的目录结构正确设置非常重要。
-
-
 
 ## 第8章：天气小组件
 
@@ -10605,7 +10786,7 @@ private function onCSSEditorChangeProperty( event:CSSEditorEvent ):void
 
 ### 设置XML
 
-既然天气小组件已经有了天气数据，它需要一种方式来存储诸如邮政编码以及温度应显示为华氏度还是摄氏度等信息。settings.xml文件将存储此类数据。创建一个包含以下标记的新文档：
+既然天气小组件已经有了天气数据，它需要一种方式来存储诸如邮政编码以及温度应显示为华氏度还是摄氏度等信息。`settings.xml`文件将存储此类数据。创建一个包含以下标记的新文档：
 
 ```xml
 <?xml version='1.0' encoding='utf-8'?>
@@ -10617,19 +10798,21 @@ private function onCSSEditorChangeProperty( event:CSSEditorEvent ):void
 </settings>
 ```
 
-将此文档保存在你工作目录的根目录下，命名为settings.xml。
+将此文档保存在你工作目录的根目录下，命名为`settings.xml`。
 
 设置文件简短而直接。`<zipCode>`节点将在用户输入后存储他们的邮政编码。`<refreshInterval>`将存储应用程序向Google服务器请求天气数据并更新小组件的时间间隔。`<useCelsius>`将存储一个布尔值，表示用户希望数据如何显示（华氏度或摄氏度）。最后，`<alwaysInFront>`将指示用户是否希望小组件始终保持在所有已打开窗口的前面。
 
 ### 数据对象
 
-既然数据的格式和结构已知，天气小组件应用程序需要一种方式在内部存储这些数据。如前所述，XML将通过HTTP请求或FileStream类加载。数据加载后，会被解析为特定的对象并存储在WidgetDataModel类中。首先通过创建WeatherVO值对象类来开始构建数据模型。
+既然数据的格式和结构已知，天气小组件应用程序需要一种方式在内部存储这些数据。如前所述，XML将通过HTTP请求或`FileStream`类加载。数据加载后，会被解析为特定的对象并存储在`WidgetDataModel`类中。首先通过创建`WeatherVO`值对象类来开始构建数据模型。
 
 ### WeatherVO
 
-WeatherVO类将存储从Google HTTP请求响应中解析出的所有天气数据。它需要存储星期几的名称、当前温度、最低温度、最高温度、图标URL、天气状况、风向和湿度数据。
+`WeatherVO`类将存储从Google HTTP请求响应中解析出的所有天气数据。它需要存储星期几的名称、当前温度、最低温度、最高温度、图标URL、天气状况、风向和湿度数据。
 
 创建一个新文档并插入以下代码：
+
+
 
 ```actionscript
 package com.aircmr.weatherwidget.data
@@ -10756,7 +10939,7 @@ package com.aircmr.weatherwidget.data
 
 ### SettingsVO
 
-接下来，创建SettingsVO对象。此对象将在会话期间存储用户的所有偏好设置。如果用户在任何时间点在设置窗口中更改了偏好设置，新数据将被存储到此对象中，并同时写入settings.xml文件。settings.xml文件存储在SettingsVO对象的`_settingsXMLLocation`中。此对象中存储的其余数据与settings.xml文件中的数据直接对应。你可能还会注意到有一个对TemperatureUtil类的引用。此类存储温度标签（如华氏度和摄氏度）的常量，并将在“TemperatureUtil”部分进一步讨论。在此之前，首先创建SettingsVO类：
+接下来，创建`SettingsVO`对象。此对象将在会话期间存储用户的所有偏好设置。如果用户在任何时间点在设置窗口中更改了偏好设置，新数据将被存储到此对象中，并同时写入`settings.xml`文件。`settings.xml`文件存储在`SettingsVO`对象的`_settingsXMLLocation`中。此对象中存储的其余数据与`settings.xml`文件中的数据直接对应。你可能还会注意到有一个对`TemperatureUtil`类的引用。此类存储温度标签（如华氏度和摄氏度）的常量，并将在“TemperatureUtil”部分进一步讨论。在此之前，首先创建`SettingsVO`类：
 
 ```actionscript
 package com.aircmr.weatherwidget.data
@@ -10800,11 +10983,9 @@ package com.aircmr.weatherwidget.data
 }
 ```
 
-
-
 ## 第8章：天气小组件
 
-```
+```actionscript
 [Bindable]
 public function get refreshInterval():Number
 {
@@ -10851,15 +11032,15 @@ public function set alwaysInFront( val:Boolean ):void
 }
 ```
 
-将文档保存为 SettingsVO.as，位于工作目录 `com/aircmr/weatherwidget/data/` 中。
+将文档保存为`SettingsVO.as`，位于工作目录`com/aircmr/weatherwidget/data/`中。
 
-这两个数据对象的结构本质上很简单。有存储数据的私有变量，以及控制对这些变量访问的 getter 和 setter。每个变量都标记了 `[Bindable]`，以便通过 Flex 数据绑定进行访问。在下一节中，你将构建一个存储这些对象的单例。
+这两个数据对象的结构本质上很简单。有存储数据的私有变量，以及控制对这些变量访问的 getter 和 setter。每个变量都标记了`[Bindable]`，以便通过 Flex 数据绑定进行访问。在下一节中，你将构建一个存储这些对象的单例。
 
 ### 数据模型
 
-应用程序的数据模型类 `WidgetDataModel` 将作为所有数据的中央访问点。它将存储对设置和天气数据的引用。它是一个单例，意味着每个会话中只能实例化此类的一个实例。天气小组件中的所有其他类都可以通过调用公共静态函数 `getInstance()` 来引用数据模型中的数据：
+应用程序的数据模型类`WidgetDataModel`将作为所有数据的中央访问点。它将存储对设置和天气数据的引用。它是一个单例，意味着每个会话中只能实例化此类的一个实例。天气小组件中的所有其他类都可以通过调用公共静态函数`getInstance()`来引用数据模型中的数据：
 
-```
+```actionscript
 WidgetDataModel.getInstance().settings
 ```
 
@@ -10867,7 +11048,7 @@ WidgetDataModel.getInstance().settings
 
 创建一个新文档并输入以下代码：
 
-```
+```actionscript
 package com.aircmr.weatherwidget.data
 {
     import flash.events.Event;
@@ -10965,23 +11146,25 @@ package com.aircmr.weatherwidget.data
 }
 ```
 
-将文档保存为 WidgetDataModel.as，位于工作目录 `com/aircmr/weatherwidget/data/` 中。
 
-WidgetDataModel 将允许访问四个主要变量：`settings`、`currentWeather`、`cityLocation` 和 `weatherCollection`。一旦数据被解析完成，这些变量就会被赋值。如果数据模型中的数据发生任何更改，会触发相应的事件以通知应用程序该更改。所有四个变量都标记了 `[Bindable]`，以便通过 Flex 组件数据绑定进行访问。在下一节中，将详细讨论如何解析数据以及每个属性是如何被赋值的。
+
+将文档保存为 `WidgetDataModel.as`，位于工作目录 `com/aircmr/weatherwidget/data/` 中。
+
+`WidgetDataModel` 将允许访问四个主要变量：`settings`、`currentWeather`、`cityLocation` 和 `weatherCollection`。一旦数据被解析完成，这些变量就会被赋值。如果数据模型中的数据发生任何更改，会触发相应的事件以通知应用程序该更改。所有四个变量都标记了 `[Bindable]`，以便通过 Flex 组件数据绑定进行访问。在下一节中，将详细讨论如何解析数据以及每个属性是如何被赋值的。
 
 ## 配套服务与工具
 
-上一节涵盖了正在加载的数据来源（来自 Google 和本地系统的 XML）以及加载到何处（数据模型）。现在是时候考虑如何将数据加载并解析为正确的数据对象格式了。从 XMLFileService 开始，本节讨论另外四个有助于天气小组件数据流的类。
+上一节涵盖了正在加载的数据来源（来自 Google 和本地系统的 XML）以及加载到何处（数据模型）。现在是时候考虑如何将数据加载并解析为正确的数据对象格式了。从 `XMLFileService` 开始，本节讨论另外四个有助于天气小组件数据流的类。
 
 ### XMLFileService
 
-天气数据的 XML 使用 URLLoader 类加载，这是 ActionScript 3 框架的一部分。天气小组件为 URLLoader 分配监听器，并向其传递一个 URLRequest，该请求从 Google 加载 XML。一旦接收到数据，就会派发一个 `COMPLETE` 事件，然后数据被解析。这是一个大部分自动化的流程；然而，设置数据的情况则不尽相同。
+天气数据的 XML 使用 `URLLoader` 类加载，这是 ActionScript 3 框架的一部分。天气小组件为 `URLLoader` 分配监听器，并向其传递一个 `URLRequest`，该请求从 Google 加载 XML。一旦接收到数据，就会派发一个 `COMPLETE` 事件，然后数据被解析。这是一个大部分自动化的流程；然而，设置数据的情况则不尽相同。
 
-你可以在应用程序的主 MXML 类中创建一个新的 FileStream 实例，并向其传递一个包含 settings.xml 文件本地地址的 File 对象，但这个过程会变得复杂，尤其是因为为了读写 settings.xml 文件，需要执行一些关键步骤。如果有一个服务类能帮助处理所有与 XML 相关的事情，至少在本地处理 XML 时，将会很有帮助。
+你可以在应用程序的主 MXML 类中创建一个新的 `FileStream` 实例，并向其传递一个包含 `settings.xml` 文件本地地址的 `File` 对象，但这个过程会变得复杂，尤其是因为为了读写 `settings.xml` 文件，需要执行一些关键步骤。如果有一个服务类能帮助处理所有与 XML 相关的事情，至少在本地处理 XML 时，将会很有帮助。
 
 创建一个新文档并插入以下代码：
 
-```
+```actionscript
 package com.aircmr.weatherwidget.services
 {
     import com.aircmr.weatherwidget.events.XMLServiceEvent;
@@ -11054,154 +11237,220 @@ package com.aircmr.weatherwidget.services
 }
 ```
 
-
-
 ## 第八章：天气小组件
 
+```actionscript
 sourceFile.addEventListener( IOErrorEvent.IO_ERROR , errorHandler );
+
 sourceFile.addEventListener( Event.COMPLETE , onFileCopyComplete );
+
 sourceFile.copyToAsync( resultsFile , true );
+
 }
 
 private function resultHandler( event:Event ):void
+
 {
+
     _xml = XML( _fileStream.readUTFBytes( _fileStream.bytesAvailable ) );
+
     _fileStream.removeEventListener( Event.COMPLETE, resultHandler );
+
     _fileStream.removeEventListener( IOErrorEvent.IO_ERROR, errorHandler );
+
     _fileStream.close();
 
     var xmlEvent:XMLServiceEvent =
+
         new XMLServiceEvent( XMLServiceEvent.XML_LOADED );
+
     xmlEvent.xml = _xml;
+
     dispatchEvent( xmlEvent );
+
 }
 
 private function errorHandler( event:IOErrorEvent ):void
+
 {
+
     var errorMessage:String = "加载文件时出错 "+event.text+" 文件错误";
 
     var xmlEvent:XMLServiceEvent =
+
         new XMLServiceEvent( XMLServiceEvent.XML_ERROR );
+
     xmlEvent.message = errorMessage;
+
     dispatchEvent( xmlEvent );
 
     Alert.show( errorMessage );
+
 }
 
 private function onFileWriteComplete( event:Event ):void
+
 {
+
     dispatchEvent( new Event(XMLFileService.FILE_WRITTEN) );
+
 }
 
 private function onFileCopyComplete( event:Event ):void
+
 {
+
     dispatchEvent( new Event(XMLFileService.FILE_COPIED) );
+
 }
 
 public function get xml():XML
+
 {
+
     return _xml;
-}
-}
-}
-```
 
-将文档保存为 working directory/com/aircmr/weatherwidget/services/ 目录下的 XMLFileService.as。
+}
 
-XMLFileService 类本质上就是一个 File 实例和一个 FileStream 实例，外加一些事件监听器，让应用程序知道打开或保存操作是否成功。以下代码片段展示了应用程序如何首先实例化 XMLFileService 并传递一个代表本地 URL 的字符串：
+}
+
+}
 
 ```
+
+将文档保存为 `working directory/com/aircmr/weatherwidget/services/` 目录下的 `XMLFileService.as`。
+
+`XMLFileService` 类本质上就是一个 `File` 实例和一个 `FileStream` 实例，外加一些事件监听器，让应用程序知道打开或保存操作是否成功。以下代码片段展示了应用程序如何首先实例化 `XMLFileService` 并传递一个代表本地 URL 的字符串：
+
+```actionscript
 var _xmlService:XMLFileService = new XMLFileService();
+
 _xmlService.addEventListener( XMLFileService.FILE_NOT_FOUND , onSettingsNotFound );
+
 _xmlService.addEventListener( XMLServiceEvent.XML_LOADED, onSettingsXMLLoaded );
+
 _xmlService.loadXMLFromStorageDirectory(
+
     WidgetDataModel.getInstance().settings.settingsXMLLocation );
+
 ```
 
-在这个例子中，XMLFileService 实例被实例化并立即分配了事件监听器。一旦 XML 文件加载完成，onSettingsXMLLoaded 方法就会被调用。onSettingsXMLLoaded 方法接收一个包含 settings.xml XML 对象的 XMLServiceEvent 对象。它使用 XMLParserUtil 工具类将 XML 解析为一个 SettingVO 对象，从而填充数据模型中的 settings 属性。XMLServiceEvent 和 XMLParserUtil 这两个类稍后会进行讨论。
+在这个例子中，`XMLFileService` 实例被实例化并立即分配了事件监听器。一旦 XML 文件加载完成，`onSettingsXMLLoaded` 方法就会被调用。`onSettingsXMLLoaded` 方法接收一个包含 `settings.xml` XML 对象的 `XMLServiceEvent` 对象。它使用 `XMLParserUtil` 工具类将 XML 解析为一个 `SettingVO` 对象，从而填充数据模型中的 `settings` 属性。`XMLServiceEvent` 和 `XMLParserUtil` 这两个类稍后会进行讨论。
 
 ### 复制本地文件
 
-首先，重要的是要指出文件是否存在。在 XMLFileService 类中，你使用 resolvePath 方法和 File 的 exists 方法检查 settings.xml 文件是否存在于 applicationStorageDirectory 中：
+首先，重要的是要指出文件是否存在。在 `XMLFileService` 类中，你使用 `resolvePath` 方法和 `File` 的 `exists` 方法检查 `settings.xml` 文件是否存在于 `applicationStorageDirectory` 中：
 
-```
+```actionscript
 _file = File.applicationStorageDirectory.resolvePath( fileName );
+
 if( !_file.exists )
+
 {
+
     dispatchEvent( new Event( XMLFileService.FILE_NOT_FOUND ));
+
     return;
+
 }
-```
-
-当用户首次运行天气小组件时，settings.xml 文件将不存在于他们的应用存储目录中。该类实例将发出一个 FILE_NOT_FOUND 事件，接下来的操作则由控制器 WeatherWidget.MXML 决定。如果文件不存在，则需要创建它。（不过幸运的是，你在本章开始时已经创建了 settings.xml。）
-
-无论如何，总有一个包含一些基本数据的 settings.xml 文件。但是，这个文件位于应用程序目录中。你可以通过引用 File 类的 applicationDirectory（而非 applicationStorageDirectory）来从应用程序目录读取文件。由于 AIR 的安全特性，你将无法写回到应用程序目录。此目录仅用于存储你希望只读访问的数据和资源。写入限制是个大问题，因为应用程序需要将用户的偏好设置写回 settings.xml。XMLFileService 不应尝试写回到应用程序目录，而应在存储目录中找不到该文件时，将文件从应用程序目录复制到存储目录。下一次应用程序实例化时，就会找到 settings.xml 文件。这是通过 copyXMLFromApplicationDirectoryToStorage 方法使用 File 类的 copyToAsync 方法实现的：
 
 ```
+
+当用户首次运行天气小组件时，`settings.xml` 文件将不存在于他们的应用存储目录中。该类实例将发出一个 `FILE_NOT_FOUND` 事件，接下来的操作则由控制器 `WeatherWidget.MXML` 决定。如果文件不存在，则需要创建它。（不过幸运的是，你在本章开始时已经创建了 `settings.xml`。）
+
+无论如何，总有一个包含一些基本数据的 `settings.xml` 文件。但是，这个文件位于应用程序目录中。你可以通过引用 `File` 类的 `applicationDirectory`（而非 `applicationStorageDirectory`）来从应用程序目录读取文件。由于 AIR 的安全特性，你将无法写回到应用程序目录。此目录仅用于存储你希望只读访问的数据和资源。写入限制是个大问题，因为应用程序需要将用户的偏好设置写回 `settings.xml`。`XMLFileService` 不应尝试写回到应用程序目录，而应在存储目录中找不到该文件时，将文件从应用程序目录复制到存储目录。下一次应用程序实例化时，就会找到 `settings.xml` 文件。这是通过 `copyXMLFromApplicationDirectoryToStorage` 方法使用 `File` 类的 `copyToAsync` 方法实现的：
+
+```actionscript
 fileToCopy.copyToAsync( resultFileFromCopy , true );
 ```
 
-因为此方法是异步的，监听器会监控复制是否成功或是否发生错误。如果复制成功，XMLFileService 随后将尝试从存储目录加载 XML。XML 加载完成后，将触发一个 XMLServiceEvent 实例。
+因为此方法是异步的，监听器会监控复制是否成功或是否发生错误。如果复制成功，`XMLFileService` 随后将尝试从存储目录加载 XML。XML 加载完成后，将触发一个 `XMLServiceEvent` 实例。
 
 ### XMLServiceEvent
 
 `XMLServiceEvent` 类用于将加载的 XML 数据从 `XMLFileService` 实例传递给通过应用程序类访问的解析器。新建一个文档并插入以下代码：
 
-```
+```actionscript
 package com.aircmr.weatherwidget.events
+
 {
+
     import flash.events.Event;
 
     public class XMLServiceEvent extends Event
+
     {
+
         static public const XML_LOADED:String = "xmlLoaded";
+
         static public const XML_ERROR:String = "xmlError";
 
         private var _xmlResults:XML;
+
         private var _message:String;
 
         public function XMLServiceEvent( type:String,
+
             bubbles:Boolean=false, cancelable:Boolean=false )
+
         {
+
             super( type, bubbles, cancelable );
+
         }
 
         public function get xml():XML
+
         {
+
             return _xmlResults;
+
         }
 
         public function set xml( val:XML ):void
+
         {
+
             _xmlResults = val;
+
         }
 
         public function get message():String
+
         {
+
             return _message;
+
         }
 
         public function set message( val:String ):void
+
         {
+
             _message = val;
+
         }
+
     }
+
 }
 ```
 
-将文档保存为 `XMLServiceEvent.as`，放置在应用程序的 events 包中（工作目录 `/com/aircmr/weatherwidget/events`）。
+
+
+将文档保存为 `XMLServiceEvent.as`，放置在应用程序的 `events` 包中（工作目录 `/com/aircmr/weatherwidget/events`）。
 
 一旦应用程序类接收到 `XMLServiceEvent` 对象，它就会将其公共的 `xml` 属性传递给 `XMLParserUtil` 工具类进行数据解析。下一节将讨论这是如何实现的。
 
 253
 
-### XMLParserUtil
+## XMLParserUtil
 
-从 URLLoader 或 XMLFileService 实例接收到天气和设置数据后，需要将其解析为 WeatherVO 和 SettingsVO 对象并添加到 WidgetData Model 中。XMLParserUtil 类有助于完成此过程。
+从 `URLLoader` 或 `XMLFileService` 实例接收到天气和设置数据后，需要将其解析为 `WeatherVO` 和 `SettingsVO` 对象并添加到 `WidgetDataModel` 中。`XMLParserUtil` 类有助于完成此过程。
 
 新建一个文档并插入以下代码：
 
-```
+```actionscript
 package com.aircmr.weatherwidget.utils
 {
     import com.aircmr.weatherwidget.data.*;
@@ -11210,11 +11459,11 @@ package com.aircmr.weatherwidget.utils
     public class XMLParserUtil
     {
         public static function parseWeatherXMLFeedCurrentDay(
-            weatherFeed:XML ) :WeatherVO
+            weatherFeed:XML):WeatherVO
         {
             var currCondition:XMLList = weatherFeed.weather.current_conditions;
-
             var currentWeather:WeatherVO = new WeatherVO();
+
             currentWeather.dayOfWeek = WidgetDataModel.RIGHT_NOW_STRING;
             currentWeather.condition = currCondition.condition.@data;
             currentWeather.currentTemp = currCondition.temp_f.@data;
@@ -11222,7 +11471,8 @@ package com.aircmr.weatherwidget.utils
             currentWeather.iconURL = "http://www.google.com" +
                 currCondition.icon.@data;
             currentWeather.wind = currCondition.wind_condition.@data;
-            currentWeather.lowTemp = weatherFeed..forecast_conditions[0].low.@data;
+            currentWeather.lowTemp =
+                weatherFeed..forecast_conditions[0].low.@data;
             currentWeather.highTemp =
                 weatherFeed..forecast_conditions[0].high.@data;
             currentWeather.date = new Date();
@@ -11235,59 +11485,60 @@ package com.aircmr.weatherwidget.utils
         {
             var weatherCollection:ArrayCollection = new ArrayCollection();
 
-            for( var i:String in weatherFeed..forecast_conditions )
+            for (var i:String in weatherFeed..forecast_conditions)
             {
                 var weatherObj:WeatherVO = new WeatherVO();
+
                 weatherObj.dayOfWeek =
                     weatherFeed..forecast_conditions[i].day_of_week.@data;
-                weatherObj.lowTemp = weatherFeed..forecast_conditions[i].low.@data;
+                weatherObj.lowTemp =
+                    weatherFeed..forecast_conditions[i].low.@data;
                 weatherObj.highTemp =
                     weatherFeed..forecast_conditions[i].high.@data;
                 weatherObj.iconURL = "http://www.google.com" +
                     weatherFeed..forecast_conditions[i].icon.@data;
                 weatherObj.condition =
                     weatherFeed..forecast_conditions[i].condition.@data;
+
+                if (weatherObj.dayOfWeek.toLocaleLowerCase() == "today")
+                    weatherObj.currentTemp =
+                        weatherFeed.weather.current_conditions.temp_f.@data;
+
+                weatherCollection.addItem(weatherObj);
+            }
+
+            return weatherCollection;
+        }
+
+        public static function parseWeatherXMLFeedLocation(
+            weatherFeed:XML):String
+        {
+            return weatherFeed.weather.forecast_information.city.@data;
+        }
+
+        public static function parseSettingsXML(
+            settingsXML:XML,
+            currentSettings:SettingsVO = null):SettingsVO
+        {
+            var settings:SettingsVO =
+                currentSettings ? currentSettings : new SettingsVO();
+
+            settings.refreshInterval = settingsXML..refreshInterval;
+            settings.zipCode = settingsXML..zipCode;
+            settings.useCelsius =
+                (settingsXML..useCelsius != "") ? true : false;
+            settings.alwaysInFront =
+                (settingsXML..alwaysOnTop != "") ? true : false;
+
+            return settings;
+        }
+    }
+}
 ```
-
-
 
 # 第八章：天气小组件
 
-```actionscript
-if ( weatherObj.dayOfWeek.toLocaleLowerCase() == "today" )
-    weatherObj.currentTemp =
-        weatherFeed.weather.current_conditions.temp_f.@data;
-
-weatherCollection.addItem( weatherObj );
-}
-
-return weatherCollection;
-}
-
-public static function parseWeatherXMLFeedLocation(
-    weatherFeed:XML ):String
-{
-    return weatherFeed.weather.forecast_information.city.@data;
-}
-
-public static function parseSettingsXML( settingsXML:XML,
-    currentSettings:SettingsVO = null ):SettingsVO
-{
-    var settings:SettingsVO =
-        currentSettings ? currentSettings : new SettingsVO();
-    settings.refreshInterval = settingsXML..refreshInterval;
-    settings.zipCode = settingsXML..zipCode;
-    settings.useCelsius = (settingsXML..useCelsius != "") ? true : false;
-    settings.alwaysInFront =
-        (settingsXML..alwaysOnTop != "") ? true : false;
-
-    return settings;
-}
-}
-}
-```
-
-请将此文档保存为 XMLParserUtil.as，存放于工作目录下的 `com/aircmr/weatherwidget/utils/` 路径中。
+请将此文档保存为 `XMLParserUtil.as`，存放于工作目录下的 `com/aircmr/weatherwidget/utils/` 路径中。
 
 此类中包含四个静态方法：`parseWeatherXMLFeedCurrentDay`、`parseWeatherXMLFeedFourDay`、`parseWeatherXMLFeedLocation` 和 `parseSettingsXML`。每个方法都接收一个包含待解析 XML 对象的参数。
 
@@ -11298,8 +11549,11 @@ public static function parseSettingsXML( settingsXML:XML,
 `<current_conditions>` 数据比四日预报更详细，但它缺少当天的最高和最低温度。因此，您可以从第一个 `<forecast_conditions>` 节点解析出最高和最低温度，因为该节点对应的是当天数据：
 
 ```actionscript
-currentWeather.lowTemp = weatherFeed..forecast_conditions[0].low.@data;
-currentWeather.highTemp = weatherFeed..forecast_conditions[0].high.@data
+currentWeather.lowTemp =
+    weatherFeed..forecast_conditions[0].low.@data;
+
+currentWeather.highTemp =
+    weatherFeed..forecast_conditions[0].high.@data;
 ```
 
 XML 解析完成后，`currentWeather` `WeatherVO` 对象将被返回给调用 `XMLParserUtil` 类的方法。
@@ -11336,30 +11590,40 @@ package com.aircmr.weatherwidget.utils
         public static const FAHRENHEIT:String = "°F";
         public static const CELSIUS:String = "°C";
 
-        public static function convertFahrenheitToCelsius( temp:Number ) :Number
+        public static function convertFahrenheitToCelsius(
+            temp:Number):Number
         {
-            return ( temp - 32 ) / 1.8;
+            return (temp - 32) / 1.8;
         }
 
-        public static function convertCelsiusToFahrenheit( temp:Number ) :Number
+        public static function convertCelsiusToFahrenheit(
+            temp:Number):Number
         {
-            return ( temp + 32 ) * 1.8;
+            return (temp + 32) * 1.8;
         }
 
-        public static function returnTempAsFormedString( temp:Number,
+        public static function returnTempAsFormedString(
+            temp:Number,
             useCelsius:Boolean = false,
-            isInFahrenheit:Boolean = true ) :String
+            isInFahrenheit:Boolean = true):String
         {
             var tempInC:String = String(
-                Math.round( ( isInFahrenheit ) ?
-                convertFahrenheitToCelsius( temp ) :
-                temp) + TemperatureUtil.CELSIUS );
-            var tempInF:String = String(
-                Math.round( ( isInFahrenheit ) ? temp :
-                convertCelsiusToFahrenheit( temp ) ) +
-                TemperatureUtil.FAHRENHEIT );
+                Math.round(
+                    (isInFahrenheit)
+                        ? convertFahrenheitToCelsius(temp)
+                        : temp
+                ) + TemperatureUtil.CELSIUS
+            );
 
-            return String( ( useCelsius ) ? tempInC : tempInF );
+            var tempInF:String = String(
+                Math.round(
+                    (isInFahrenheit)
+                        ? temp
+                        : convertCelsiusToFahrenheit(temp)
+                ) + TemperatureUtil.FAHRENHEIT
+            );
+
+            return String((useCelsius) ? tempInC : tempInF);
         }
     }
 }
@@ -11371,7 +11635,7 @@ package com.aircmr.weatherwidget.utils
 
 ## 构建用户界面
 
-到目前为止，您已经了解了数据如何被解析以及天气应用程序如何填充其数据模型。由于小组件的目标之一是为用户的桌面创建可视化内容，您可能对本应用程序的用户界面 (UI) 设置方式更感兴趣。本节将介绍每个 UI 元素，并讨论数据模型如何影响每个部分。到本节结束时，您的天气小组件应该开始初具雏形。
+到目前为止，您已经了解了数据如何被解析以及天气应用程序如何填充其数据模型。由于小组件的目标之一是为用户的桌面创建可视化内容，您可能对本应用程序的用户界面（UI）设置方式更感兴趣。本节将介绍每个 UI 元素，并讨论数据模型如何影响每个部分。到本节结束时，您的天气小组件应该开始初具雏形。
 
 ### 视图状态
 
@@ -11383,15 +11647,19 @@ package com.aircmr.weatherwidget.utils
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
+
 <mx:Canvas xmlns:mx="http://www.adobe.com/2006/mxml"
     show="refreshWindow();"
-    clipContent="false" width="320" height="210" >
+    clipContent="false"
+    width="320"
+    height="210">
     <mx:Metadata>
         [Event(name="comboOpen", type="flash.events.Event")]
         [Event(name="comboClose", type="flash.events.Event")]
         [Event(name="save", type="flash.events.Event")]
         [Event(name="cancel", type="flash.events.Event")]
     </mx:Metadata>
+
     <mx:Script>
         <![CDATA[
             import com.aircmr.weatherwidget.services.XMLFileService;
@@ -11400,45 +11668,56 @@ package com.aircmr.weatherwidget.utils
             import mx.controls.Alert;
 
             [Bindable]
-            private var _intervalArray:Array = 
-                [{data: 300 , label: '5 Mins' },
-                {data: 900 , label: '15 Mins' },
-                {data: 1800 , label: '30 Mins' },
-                {data: 2700 , label: '45 Mins' }];
-            public static const SAVE:String = "save";
-            public static const COMBO_OPEN:String = "comboOpen";
-            public static const COMBO_CLOSE:String = "comboClose";
-
-            private function refreshWindow():void
-            {
-                intervalSelector.selectedIndex = getSelectedIndex();
-                inFront.selected = 
-                    WidgetDataModel.getInstance().settings.alwaysInFront;
-                toggleDegrees(
-                    WidgetDataModel.getInstance().settings.useCelsius );
-            }
-
-            private function getSelectedIndex():int
-            {
-                var interval:Number = 
-                    WidgetDataModel.getInstance().settings.refreshInterval;
-                for( var i:int = 0 ; i < _intervalArray.length ; i++ )
-                {
-                    if( interval == _intervalArray[i].data ) return i;
-                }
 ```
 
 
 
-# 第8章：天气小部件
-
 ```actionscript
-return 0;
+private var _intervalArray:Array =
+[
+    {data: 300, label: '5 Mins'},
+    {data: 900, label: '15 Mins'},
+    {data: 1800, label: '30 Mins'},
+    {data: 2700, label: '45 Mins'}
+];
+
+public static const SAVE:String = "save";
+
+public static const COMBO_OPEN:String = "comboOpen";
+
+public static const COMBO_CLOSE:String = "comboClose";
+
+private function refreshWindow():void
+{
+    intervalSelector.selectedIndex = getSelectedIndex();
+
+    inFront.selected =
+        WidgetDataModel.getInstance().settings.alwaysInFront;
+
+    toggleDegrees(
+        WidgetDataModel.getInstance().settings.useCelsius
+    );
 }
 
-private function toggleDegrees( inCelsius:Boolean ):void
+private function getSelectedIndex():int
 {
-    if( inCelsius )
+    var interval:Number =
+        WidgetDataModel.getInstance().settings.refreshInterval;
+
+    for (var i:int = 0; i < _intervalArray.length; i++)
+    {
+        if (interval == _intervalArray[i].data)
+        {
+            return i;
+        }
+    }
+
+    return 0;
+}
+
+private function toggleDegrees(inCelsius:Boolean):void
+{
+    if (inCelsius)
     {
         celsius.selected = true;
         fahrenheit.selected = false;
@@ -11454,113 +11733,173 @@ private function saveSettingsLocally():void
 {
     WidgetDataModel.getInstance().settings.zipCode =
         zipCodeInput.text;
+
     WidgetDataModel.getInstance().settings.refreshInterval =
         intervalSelector.selectedItem.data;
+
     WidgetDataModel.getInstance().settings.useCelsius =
         celsius.selected;
+
     WidgetDataModel.getInstance().settings.alwaysInFront =
         inFront.selected;
 
-    var xmlFileService:XMLFileService = new
-        XMLFileService();
+    var xmlFileService:XMLFileService = new XMLFileService();
+
     xmlFileService.addEventListener(
-        XMLFileService.FILE_WRITTEN , onSettingsSaved );
+        XMLFileService.FILE_WRITTEN,
+        onSettingsSaved
+    );
+
     xmlFileService.saveXMLToStorage(
         WidgetDataModel.getInstance()
-            .settings.settingsXMLLocation ,
-        buildSettingsData() );
+            .settings.settingsXMLLocation,
+        buildSettingsData()
+    );
 }
 
-private function onSettingsSaved( event:Event ):void
+private function onSettingsSaved(event:Event):void
 {
-    dispatchEvent( new Event( SettingsWindow.SAVE ));
+    dispatchEvent(new Event(SettingsWindow.SAVE));
 }
 
 private function buildSettingsData():XML
 {
     var xml:XML = new XML("<settings></settings>");
+
     xml.zipCode =
         WidgetDataModel.getInstance().settings.zipCode;
+
     xml.refreshInterval =
         WidgetDataModel.getInstance()
             .settings.refreshInterval;
-    xml.useCelsius = ( celsius.selected ) ? true : "";
-    xml.alwaysInFront = ( inFront.selected ) ? true : "";
+
+    xml.useCelsius = (celsius.selected) ? true : "";
+
+    xml.alwaysInFront = (inFront.selected) ? true : "";
 
     return xml;
 }
 
 private function onComboOpen(event:Event):void
 {
-    dispatchEvent( new Event( SettingsWindow.COMBO_OPEN ) );
+    dispatchEvent(new Event(SettingsWindow.COMBO_OPEN));
 }
 
 private function onComboClose(event:Event):void
 {
-    dispatchEvent( new Event(SettingsWindow.COMBO_CLOSE) );
+    dispatchEvent(new Event(SettingsWindow.COMBO_CLOSE));
 }
-
 ]]>
-</mx:Script>
-<mx:ZipCodeValidator source="{zipCodeInput}" property="text"
-    trigger="{saveBtn}" triggerEvent="click"
-    valid="saveSettingsLocally()"/>
 
-<mx:Label text="AIR 天气小部件设置"
-    color="0xFFFFFF" fontSize="18" y="-35" />
+</mx:Script>
+
+<mx:ZipCodeValidator
+    source="{zipCodeInput}"
+    property="text"
+    trigger="{saveBtn}"
+    triggerEvent="click"
+    valid="saveSettingsLocally()"
+/>
+
+<mx:Label
+    text="AIR 天气小部件设置"
+    color="0xFFFFFF"
+    fontSize="18"
+    y="-35"
+/>
 
 <mx:VBox width="100%" height="100%">
     <mx:HBox>
-        <mx:Label text="邮政编码:" color="0xFFFFFF" fontSize="14" />
-        <mx:TextInput id="zipCodeInput"
-            width="65" fontSize="12" maxChars="5"
+        <mx:Label
+            text="邮政编码:"
+            color="0xFFFFFF"
+            fontSize="14"
+        />
+
+        <mx:TextInput
+            id="zipCodeInput"
+            width="65"
+            fontSize="12"
+            maxChars="5"
             text="{WidgetDataModel.getInstance().settings.zipCode}"
-            restrict="0-9" />
+            restrict="0-9"
+        />
     </mx:HBox>
+
     <mx:HBox>
-        <mx:Label text="刷新间隔:"
-            color="0xFFFFFF" fontSize="14" />
-        <mx:ComboBox id="intervalSelector" rowCount="4"
+        <mx:Label
+            text="刷新间隔:"
+            color="0xFFFFFF"
+            fontSize="14"
+        />
+
+        <mx:ComboBox
+            id="intervalSelector"
+            rowCount="4"
             dataProvider="{_intervalArray}"
             selectedIndex="{getSelectedIndex()}"
             open="onComboOpen(event)"
-            close="onComboClose(event)" />
+            close="onComboClose(event)"
+        />
     </mx:HBox>
+
     <mx:HBox>
-        <mx:Label text="温度单位:"
-            color="0xFFFFFF" fontSize="14" />
-        <mx:CheckBox id="fahrenheit"
+        <mx:Label
+            text="温度单位:"
+            color="0xFFFFFF"
+            fontSize="14"
+        />
+
+        <mx:CheckBox
+            id="fahrenheit"
             click="toggleDegrees(false)"
             label="{TemperatureUtil.FAHRENHEIT}"
             color="0xFFFFFF"
             textRollOverColor="0xFFFFFF"
-            textSelectedColor="0xFFFFFF" />
-        <mx:CheckBox id="celsius"
+            textSelectedColor="0xFFFFFF"
+        />
+
+        <mx:CheckBox
+            id="celsius"
             click="toggleDegrees(true)"
             label="{TemperatureUtil.CELSIUS}"
             color="0xFFFFFF"
             textRollOverColor="0xFFFFFF"
-            textSelectedColor="0xFFFFFF" />
+            textSelectedColor="0xFFFFFF"
+        />
     </mx:HBox>
+
     <mx:HBox>
-        <mx:Label text="始终置于前台:"
-            color="0xFFFFFF" fontSize="14" />
-        <mx:CheckBox id="inFront"
+        <mx:Label
+            text="始终置于前台:"
+            color="0xFFFFFF"
+            fontSize="14"
+        />
+
+        <mx:CheckBox
+            id="inFront"
             color="0xFFFFFF"
             textRollOverColor="0xFFFFFF"
-            textSelectedColor="0xFFFFFF" />
+            textSelectedColor="0xFFFFFF"
+        />
     </mx:HBox>
+
     <mx:Spacer height="10" />
+
     <mx:HBox width="95%" horizontalAlign="right">
         <mx:Button label="保存" id="saveBtn" />
-        <mx:Button label="取消"
-            click="dispatchEvent(new Event(Event.CANCEL))" />
+
+        <mx:Button
+            label="取消"
+            click="dispatchEvent(new Event(Event.CANCEL))"
+        />
     </mx:HBox>
 </mx:VBox>
+
 </mx:Canvas>
 ```
 
-将此文档保存为 `SettingsWindow.mxml`，位于您的工作目录 `/com/aircmr/weatherwidget/ui/` 下。
+将此文档保存为`SettingsWindow.mxml`，位于您的工作目录`/com/aircmr/weatherwidget/ui/`下。
 
 既然您已经创建了 MXML 文档，我们来快速回顾一下您刚才编写的代码。图 8-1 展示了设置窗口的外观。
 
@@ -11600,80 +11939,115 @@ private function onComboClose(event:Event):void
 
 一旦为天气小部件配置好设置，您就可以从 Google 加载天气数据，并在解析后显示信息。在展示 `CurrentWeatherItem` 视图之前，下一节将快速浏览天气加载器视图。
 
-
-
-## 第8章：天气小组件
+# 第 8 章：天气小组件
 
 ## 加载视图
 
-加载视图本身并非一个组件。它是一个外部嵌入的SWF文件，包含在光盘中。它由`WeatherWidget.mxml`类文件中的一个`SWFLoader`类实例加载。尽管加载视图不是一个组件，但它是接下来呈现给用户的视图。它在设置更新完毕、天气数据正在加载后显示。图8-2展示了加载视图。
+加载视图本身并非一个组件。它是一个外部嵌入的 SWF 文件，包含在光盘中。它由`WeatherWidget.mxml`类文件中的一个`SWFLoader`类实例加载。尽管加载视图不是一个组件，但它是接下来呈现给用户的视图。它在设置更新完毕、天气数据正在加载后显示。图 8-2 展示了加载视图。
 
 ![](img/dea8bb18fb213671e2a7e04d8fb0d89f_284_0.png)
 
-### CurrentWeatherView
+### `CurrentWeatherView`
 
-设置配置完成并且天气数据加载解析完毕后，`CurrentWeatherView`视图会得到更新。`CurrentWeatherView`是一个MXML组件，它包含一个`Canvas`，其中嵌套了一个`<mx:HBox>`，用于显示当天的天气数据。
+设置配置完成并且天气数据加载解析完毕后，`CurrentWeatherView`视图会得到更新。`CurrentWeatherView`是一个 MXML 组件，它包含一个`Canvas`，其中嵌套了一个`<mx:HBox>`，用于显示当天的天气数据。
 
 开始创建视图，请打开一个新文档并插入以下标记和代码：
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
-<mx:Canvas xmlns:mx="http://www.adobe.com/2006/mxml"
-    height="130" width="215"
+
+<mx:Canvas
+    xmlns:mx="http://www.adobe.com/2006/mxml"
+    height="130"
+    width="215"
     verticalScrollPolicy="off"
-    horizontalScrollPolicy="off">
+    horizontalScrollPolicy="off"
+>
     <mx:Script>
     <![CDATA[
         import com.aircmr.weatherwidget.utils.TemperatureUtil;
+
         import com.aircmr.weatherwidget.data.*;
 
-        private function drawBox( event:Event ):void
+        private function drawBox(event:Event):void
         {
-            var box:Sprite = new Sprite();
-            box.graphics.lineStyle( 1, 0xFFFFFF , .5 );
-            box.graphics.drawRect( -2 , -2 ,
-                weatherIcon.content.width + 3, weatherIcon.content.height + 3);
-            weatherIcon.addChild( box );
-        }
+```
 
-        [Bindable]
-        private var _dataProvider:WeatherVO;
 
-        public function get dataProvider():WeatherVO
-        {
-            return _dataProvider;
-        }
 
-        public function set dataProvider( val:WeatherVO ):void
-        {
-            _dataProvider = val;
-        }
-    ]]>
+```actionscript
+var box:Sprite = new Sprite();
+
+box.graphics.lineStyle( 1, 0xFFFFFF , .5 );
+
+box.graphics.drawRect( -2 , -2 ,
+    weatherIcon.content.width + 3, weatherIcon.content.height + 3);
+
+weatherIcon.addChild( box );
+
+}
+
+[Bindable]
+
+private var _dataProvider:WeatherVO;
+
+public function get dataProvider():WeatherVO
+
+{
+
+    return _dataProvider;
+
+}
+
+public function set dataProvider( val:WeatherVO ):void
+
+{
+
+    _dataProvider = val;
+
+}
+
+]]>
+
 </mx:Script>
+
 <mx:HBox paddingLeft="10">
+
     <mx:VBox verticalGap="0">
+
         <mx:Image id="weatherIcon" source="{_dataProvider.iconURL}"
             complete="drawBox( event )" />
+
         <mx:Label text="{ TemperatureUtil.returnTempAsFormedString(
             _dataProvider.currentTemp ,
             WidgetDataModel.getInstance().settings.useCelsius ) }"
             color="#FFFFFF" fontWeight="bold" fontSize="16" />
+
     </mx:VBox>
+
     <mx:VBox verticalGap="-5">
+
         <mx:Label text="{_dataProvider.condition}" color="#FFFFFF"
             fontSize="14" fontWeight="bold" />
+
         <mx:Label text="{_dataProvider.humidity}" color="#FFFFFF" />
+
         <mx:Label text="{_dataProvider.wind}" color="#FFFFFF" />
+
         <mx:Label text="{'High: ' + TemperatureUtil.returnTempAsFormedString(
             _dataProvider.highTemp,
             WidgetDataModel.getInstance().settings.useCelsius )}"
             color="#FFFFFF" />
+
         <mx:Label text="{'Low: ' + TemperatureUtil.returnTempAsFormedString(
             _dataProvider.lowTemp,
             WidgetDataModel.getInstance().settings.useCelsius )}"
             color="#FFFFFF" />
+
     </mx:VBox>
+
 </mx:HBox>
+
 </mx:Canvas>
 ```
 
@@ -11707,63 +12081,95 @@ private function onComboClose(event:Event):void
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
+
 <mx:VBox xmlns:mx="http://www.adobe.com/2006/mxml"
     horizontalAlign="center"
     verticalGap="0">
+
     <mx:Script>
+
         <![CDATA[
+
             import com.aircmr.weatherwidget.utils.TemperatureUtil;
+
             import com.aircmr.weatherwidget.data.*;
 
             private function drawBox( event:Event ):void
+
             {
+
                 var box:Sprite = new Sprite();
+
                 box.graphics.lineStyle( 1, 0xFFFFFF , .5);
+
                 box.graphics.drawRect( -2 , -2 , weatherIcon.content.width + 3,
                     weatherIcon.content.height + 3);
+
                 weatherIcon.addChild( box );
+
             }
 
             [Bindable]
+
             private var _dataProvider:WeatherVO;
 
             public function get dataProvider():WeatherVO
+
             {
+
                 return _dataProvider;
+
             }
 
             public function set dataProvider( val:WeatherVO ):void
+
             {
+
                 _dataProvider = val;
+
                 checkForCurrentWeather();
+
             }
 
             private function checkForCurrentWeather():void
+
             {
+
                 if( !_dataProvider.currentTemp ) return;
+
                 currentTemp.text = "Now: " +
                     TemperatureUtil.returnTempAsFormedString(
                         _dataProvider.currentTemp ,
                         WidgetDataModel.getInstance().settings.useCelsius )
+
                 currentTemp.visible = true;
+
             }
+
         ]]>
+
     </mx:Script>
 
     <mx:Label text="{_dataProvider.dayOfWeek}" color="#FFFFFF" fontSize="14" />
+
     <mx:Image id="weatherIcon" source="{_dataProvider.iconURL}" width="40"
         height="40" complete="drawBox( event );" />
+
     <mx:Text text="{_dataProvider.condition}" color="#FFFFFF" selectable="false"
         width="70" textAlign="center"/>
+
     <mx:Label text="{'High: ' + TemperatureUtil.returnTempAsFormedString(
         _dataProvider.highTemp ,
         WidgetDataModel.getInstance().settings.useCelsius )}"
         color="#FFFFFF" />
+
     <mx:Label text="{'Low: ' + TemperatureUtil.returnTempAsFormedString(
         _dataProvider.lowTemp ,
         WidgetDataModel.getInstance().settings.useCelsius )}"
         color="#FFFFFF" />
+
     <mx:Label id="currentTemp" color="#FFFFFF" visible="false"/>
+
 </mx:VBox>
 ```
 
@@ -11775,32 +12181,48 @@ private function onComboClose(event:Event):void
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
+
 <mx:HBox xmlns:mx="http://www.adobe.com/2006/mxml"
     verticalScrollPolicy="off" horizontalGap="15"
     horizontalScrollPolicy="off" height="200"
     xmlns:ui="com.aircmr.weatherwidget.ui.*">
+
     <mx:Script>
+
     <![CDATA[
+
         import mx.collections.ArrayCollection;
 
         [Bindable]
+
         private var _dataProvider:ArrayCollection;
 
         public function get dataProvider():ArrayCollection
+
         {
+
             return _dataProvider;
+
         }
 
         public function set dataProvider( val:ArrayCollection ):void
+
         {
+
             _dataProvider = val;
+
         }
 
     ]]>
+
     </mx:Script>
+
     <mx:Repeater dataProvider="{_dataProvider}" id="fourDayRepeater">
+
         <ui:WeatherItem dataProvider="{fourDayRepeater.currentItem}" />
+
     </mx:Repeater>
+
 </mx:HBox>
 ```
 
@@ -11810,155 +12232,176 @@ private function onComboClose(event:Event):void
 
 ```xml
 <mx:Repeater dataProvider="{_dataProvider}" id="fourDayRepeater">
+
     <ui:WeatherItem dataProvider="{fourDayRepeater.currentItem}" />
+
 </mx:Repeater>
 ```
 
 四天的`WeatherItem`之所以排成一行显示，是因为它们被嵌套在一个`<mx:HBox>`容器中。
 
-
-
 ## 第8章：天气小部件
 
-## 综合整合
+### 综合整合
 
-天气小部件应用程序已接近完成。你目前掌握的部分包括应用程序的数据和不同的视图状态。最后一个主要步骤是创建 `WeatherWidget.mxml` 文件。然而，在创建主应用程序标记和代码之前，还有一个最后的支撑性UI组件需要讨论。
+天气小部件应用程序已接近完成。你目前掌握的部分包括应用程序的数据和不同的视图状态。最后一个主要步骤是创建`WeatherWidget.mxml`文件。然而，在创建主应用程序标记和代码之前，还有一个最后的支撑性UI组件需要讨论。
 
 ### TrayIcon
 
-`TrayIcon` 类是一个UI元素，对于天气小部件的成功完全必要。它代表位于Windows平台系统托盘或OS X平台程序坞中的图标。你可以使用以下代码为托盘图标分配任何位图：
+`TrayIcon`类是一个UI元素，对于天气小部件的成功完全必要。它代表位于Windows平台系统托盘或OS X平台程序坞中的图标。你可以使用以下代码为托盘图标分配任何位图：
 
-```
+```actionscript
 NativeApplication.nativeApplication.icon.bitmaps =
     [ my16x16icon.bitmapData , my128x128icon.bitmapData ];
 ```
 
-尽管示例中展示了两个图标，分别是16像素和128像素的方形图标，但实际上只需要一个。在此应用程序中，`TrayIcon` 类将确定所需的大小，因为 16x16 用于 Microsoft Windows，而 128x128 用于 Mac OS X。`NativeApplication` 类是一个单例，代表操作系统本身。你可以通过调用 `NativeApplication` 单例的 `nativeApplication` 实例来引用该应用程序。
+尽管示例中展示了两个图标，分别是16像素和128像素的方形图标，但实际上只需要一个。在此应用程序中，`TrayIcon`类将确定所需的大小，因为16x16用于Microsoft Windows，而128x128用于Mac OS X。`NativeApplication`类是一个单例，代表操作系统本身。你可以通过调用`NativeApplication`单例的`nativeApplication`实例来引用该应用程序。
 
-在深入代码之前，先看看系统托盘图标在每个操作系统上的样子。图8-5展示了天气小部件的当前温度图标在 Microsoft Windows XP 系统托盘中的样子。图8-8展示了天气小部件的当前温度图标在 Mac OS X 程序坞中的样子。
+在深入代码之前，先看看系统托盘图标在每个操作系统上的样子。图8-5展示了天气小部件的当前温度图标在Microsoft Windows XP系统托盘中的样子。图8-8展示了天气小部件的当前温度图标在Mac OS X程序坞中的样子。
 
 ![图8-5和图8-8插图](img/dea8bb18fb213671e2a7e04d8fb0d89f_289_0.png)
 
 新建一个文档并插入以下代码：
 
-```
+```actionscript
 package com.aircmr.weatherwidget.ui
+
 {
+
     import com.aircmr.weatherwidget.utils.TemperatureUtil;
+
     import com.aircmr.weatherwidget.data.WidgetDataModel;
+
     import flash.display.BitmapData;
+
     import flash.display.DisplayObject;
+
     import flash.display.MovieClip;
+
     import flash.display.Sprite;
+
     import flash.text.AntiAliasType;
+
     import flash.text.TextField;
+
     import flash.text.TextFormat;
+```
 
-    public class TrayIcon extends Sprite
+
+
+```actionscript
+public class TrayIcon extends Sprite
+{
+    private var _sprite:Sprite;
+    private var _currentTemperature:String;
+    private var _height:Number = 16;
+    private var _width:Number = 16;
+
+    public function TrayIcon(supportsDockIcon:Boolean = false)
     {
-        private var _sprite:Sprite;
-        private var _currentTemperature:String;
-        private var _height:Number = 16;
-        private var _width:Number = 16;
+        _currentTemperature =
+        (
+            !isNaN(WidgetDataModel.getInstance().currentWeather.currentTemp)
+            || !WidgetDataModel.getInstance().currentWeather
+        )
+        ?
+        TemperatureUtil().returnTempAsFormedString(
+            WidgetDataModel.getInstance().currentWeather.currentTemp,
+            WidgetDataModel.getInstance().settings.useCelsius
+        )
+        : "--";
 
-        public function TrayIcon( supportsDockIcon:Boolean = false )
-        {
-            _currentTemperature = 
-            (
-            !isNaN(WidgetDataModel.getInstance().currentWeather.currentTemp ) 
-            || !WidgetDataModel.getInstance().currentWeather ) ? 
-            TemperatureUtil().returnTempAsFormedString( 
-                WidgetDataModel.getInstance().currentWeather.currentTemp , 
-                WidgetDataModel.getInstance().settings.useCelsius ) : "--";
+        addChild((supportsDockIcon) ? OSXTrayIcon() : pcTrayIcon());
+    }
 
-            addChild((supportsDockIcon)? OSXTrayIcon() : pcTrayIcon() );
-        }
+    public function getSpriteAsBitmapData():BitmapData
+    {
+        var bitmapData:BitmapData =
+            new BitmapData(_width, _height, true, 0x00FFFFFF);
 
-        public function getSpriteAsBitmapData():BitmapData
-        {
-            var bitmapData:BitmapData = 
-                new BitmapData( _width, _height, true, 0x00FFFFFF );
-            bitmapData.draw( this );
-            return bitmapData;
-        }
+        bitmapData.draw(this);
 
-        private function pcTrayIcon():Sprite
-        {
-            var pcIcon:Sprite = new Sprite();
+        return bitmapData;
+    }
 
-            var textFormat:TextFormat = new TextFormat();
-            textFormat.font = "Tahoma"
-            textFormat.size = 11;
-            textFormat.color = 0x333333;
+    private function pcTrayIcon():Sprite
+    {
+        var pcIcon:Sprite = new Sprite();
+        var textFormat:TextFormat = new TextFormat();
 
-            var textField:TextField = new TextField();
+        textFormat.font = "Tahoma";
+        textFormat.size = 11;
+        textFormat.color = 0x333333;
 
-            textField.defaultTextFormat = textFormat;
-            textField.antiAliasType = AntiAliasType.ADVANCED;
-            textField.text = _currentTemperature;
+        var textField:TextField = new TextField();
 
-            pcIcon.addChild( textField );
+        textField.defaultTextFormat = textFormat;
+        textField.antiAliasType = AntiAliasType.ADVANCED;
+        textField.text = _currentTemperature;
 
-            return pcIcon;
-        }
+        pcIcon.addChild(textField);
 
-        private function OSXTrayIcon():Sprite
-        {
-            _height = 128;
-            _width = 128;
+        return pcIcon;
+    }
 
-            var OSXTrayIcon:Sprite = new Sprite();
-            OSXTrayIcon.graphics.beginFill( 0x000000 , .9 );
-            OSXTrayIcon.graphics
-            .drawRoundRect(0, 0, _width, _height , 50 );
+    private function OSXTrayIcon():Sprite
+    {
+        _height = 128;
+        _width = 128;
 
-            var textFormat:TextFormat = new TextFormat();
-            textFormat.font = "Tahoma"
-            textFormat.size = 50;
-            textFormat.color = 0xFFFFFF;
+        var OSXTrayIcon:Sprite = new Sprite();
 
-            var textField:TextField = new TextField();
+        OSXTrayIcon.graphics.beginFill(0x000000, .9);
+        OSXTrayIcon.graphics.drawRoundRect(0, 0, _width, _height, 50);
 
-            textField.defaultTextFormat = textFormat;
-            textField.antiAliasType = AntiAliasType.ADVANCED;
-            textField.text = _currentTemperature;
-            textField.width = 128;
-            textField.x = 10;
-            textField.y = 30;
+        var textFormat:TextFormat = new TextFormat();
 
-            OSXTrayIcon.addChild( textField );
+        textFormat.font = "Tahoma";
+        textFormat.size = 50;
+        textFormat.color = 0xFFFFFF;
 
-            return OSXTrayIcon;
-        }
+        var textField:TextField = new TextField();
+
+        textField.defaultTextFormat = textFormat;
+        textField.antiAliasType = AntiAliasType.ADVANCED;
+        textField.text = _currentTemperature;
+        textField.width = 128;
+        textField.x = 10;
+        textField.y = 30;
+
+        OSXTrayIcon.addChild(textField);
+
+        return OSXTrayIcon;
     }
 }
 ```
 
-将文档保存为 `TrayIcon.as`，放在工作目录的 `com/aircmr/weatherwidget/ui` 下。
+将文档保存为`TrayIcon.as`，放在工作目录的`com/aircmr/weatherwidget/ui`下。
 
-`TrayIcon` 类由主应用程序类使用，并且在每次查询天气数据时都会重新分配。以下展示了在此应用程序中如何使用 `TrayIcon` 类：
+`TrayIcon`类由主应用程序类使用，并且在每次查询天气数据时都会重新分配。以下展示了在此应用程序中如何使用`TrayIcon`类：
 
-```
+```actionscript
 NativeApplication.nativeApplication.icon.bitmaps =
-    [ new TrayIcon( NativeApplication.supportsDockIcon ).getSpriteAsBitmapData() ];
+    [new TrayIcon(NativeApplication.supportsDockIcon).getSpriteAsBitmapData()];
 ```
 
-在实例化时，应用程序传递 `NativeApplication` 类的 `supportsDockIcon` 属性值。`supportsDockIcon` 的值仅在应用程序运行于 OS X 时为 true。一旦 `TrayIcon` 类知道图标是用于 Windows 还是 OS X，它就可以调用 `pcTrayIcon` 或 `OSXTrayIcon` 方法，返回格式正确的 `Sprite`。
+在实例化时，应用程序传递`NativeApplication`类的`supportsDockIcon`属性值。`supportsDockIcon`的值仅在应用程序运行于 OS X 时为 true。一旦`TrayIcon`类知道图标是用于 Windows 还是 OS X，它就可以调用`pcTrayIcon`或`OSXTrayIcon`方法，返回格式正确的`Sprite`。
 
-新的 `TrayIcon` 实例实例化的第二部分调用 `getSpriteAsBitmapData` 方法。此方法创建一个新的 `BitmapData` 实例，调用 `BitmapData.draw`（该方法将 `Sprite` 数据绘制到该实例中），并将 `BitmapData` 实例返回给分配给 `NativeApplication.nativeApplication.icon.bitmaps` 的数组。
+新的`TrayIcon`实例实例化的第二部分调用`getSpriteAsBitmapData`方法。此方法创建一个新的`BitmapData`实例，调用`BitmapData.draw`（该方法将`Sprite`数据绘制到该实例中），并将`BitmapData`实例返回给分配给`NativeApplication.nativeApplication.icon.bitmaps`的数组。
 
-最后，在实例化时，`TrayIcon` 会检查当前温度是否已分配。如果已分配，则将其赋给私有变量 `_currentTemperature`；如果未分配，则将两个破折号 (--) 赋给 `_currentTemperature`。
+最后，在实例化时，`TrayIcon`会检查当前温度是否已分配。如果已分配，则将其赋给私有变量`_currentTemperature`；如果未分配，则将两个破折号（--）赋给`_currentTemperature`。
 
-既然有了系统托盘（或程序坞）图标可供使用，就可以构建主应用程序类了。使用此图标，天气小部件将能够提供从托盘图标操作应用程序的菜单。下一节将讨论菜单系统和 `WeatherWidget.mxml` 文件的创建。
+既然有了系统托盘（或程序坞）图标可供使用，就可以构建主应用程序类了。使用此图标，天气小部件将能够提供从托盘图标操作应用程序的菜单。下一节将讨论菜单系统和`WeatherWidget.mxml`文件的创建。
 
 ### WeatherWidget.mxml 应用程序类
 
-`TrayIcon` 类已经介绍完毕，拼图的所有部分都已摆放好，随时可以组装。数据已准备好填充 `WidgetDataModel`，状态已准备好被实例化，托盘图标也已准备好添加到系统托盘或程序坞。
+`TrayIcon`类已经介绍完毕，拼图的所有部分都已摆放好，随时可以组装。数据已准备好填充`WidgetDataModel`，状态已准备好被实例化，托盘图标也已准备好添加到系统托盘或程序坞。
 
 新建一个文档并插入以下标记和代码：
 
-```
+```xml
 <?xml version="1.0" encoding="utf-8"?>
+
 <mx:Application xmlns:mx="http://www.adobe.com/2006/mxml"
     layout="absolute"
     creationComplete="onCreationComplete(event)"
@@ -11966,8 +12409,10 @@ NativeApplication.nativeApplication.icon.bitmaps =
     verticalScrollPolicy="off"
     backgroundAlpha="0"
     xmlns:ui="com.aircmr.weatherwidget.ui.*">
+
     <mx:Script>
         <![CDATA[
+
             import com.aircmr.weatherwidget.services.*;
             import com.aircmr.weatherwidget.ui.*;
             import com.aircmr.weatherwidget.data.*;
@@ -11989,83 +12434,112 @@ NativeApplication.nativeApplication.icon.bitmaps =
             private var _xmlService:XMLFileService;
             private var _allowWindowMove:Boolean = true;
 
-            private function onCreationComplete( event:Event ):void
+            private function onCreationComplete(event:Event):void
             {
                 WidgetDataModel.getInstance().settings.settingsXMLLocation =
                     "settings.xml";
+
                 WidgetDataModel.getInstance().addEventListener(
-                    WidgetDataModel.SETTINGS_CHANGE , onSettingsChange );
+                    WidgetDataModel.SETTINGS_CHANGE,
+                    onSettingsChange
+                );
+
                 WidgetDataModel.getInstance().addEventListener(
-                    WidgetDataModel.CURRENT_FORECAST_CHANGE , onWeatherFeedLoad );
+                    WidgetDataModel.CURRENT_FORECAST_CHANGE,
+                    onWeatherFeedLoad
+                );
 
                 _xmlService = new XMLFileService();
-                _xmlService.addEventListener( XMLFileService.FILE_NOT_FOUND ,
-                    onSettingsNotFound );
+
+                _xmlService.addEventListener(
+                    XMLFileService.FILE_NOT_FOUND,
+                    onSettingsNotFound
+                );
 ```
 
-## 第8章：天气小部件
+## 第 8 章：天气小部件
 
 ```actionscript
-_xmlService.addEventListener( XMLServiceEvent.XML_LOADED,
-    onSettingsXMLLoaded );
-_xmlService.loadXMLFromStorageDirectory(
-    WidgetDataModel.getInstance().settings.settingsXMLLocation );
+_xmlService.addEventListener(
+    XMLServiceEvent.XML_LOADED,
+    onSettingsXMLLoaded
+);
 
-_timer = new Timer( 1000 ),
-_timer.addEventListener( TimerEvent.TIMER , timeHandler );
+_xmlService.loadXMLFromStorageDirectory(
+    WidgetDataModel.getInstance().settings.settingsXMLLocation
+);
+
+_timer = new Timer(1000);
+_timer.addEventListener(TimerEvent.TIMER, timeHandler);
 
 _nativeWindow =
-    SystemManager.getSWFRoot( this ).stage.nativeWindow;
+    SystemManager.getSWFRoot(this).stage.nativeWindow;
+
 _nativeWindow.addEventListener(
     NativeWindowDisplayStateEvent.DISPLAY_STATE_CHANGE,
-    buildNativeMenu );
+    buildNativeMenu
+);
+
 _nativeWindow.alwaysInFront =
     WidgetDataModel.getInstance().settings.alwaysInFront;
+
 _nativeWindow.title = "AIR Weather Widget";
 
 buildNativeMenu();
 
 NativeApplication.nativeApplication.icon.bitmaps =
-    [ new TrayIcon(
-        NativeApplication.supportsDockIcon
-    ).getSpriteAsBitmapData() ];
+    [
+        new TrayIcon(
+            NativeApplication.supportsDockIcon
+        ).getSpriteAsBitmapData()
+    ];
 }
 
-private function onSettingsXMLLoaded( event:XMLServiceEvent ):void
+private function onSettingsXMLLoaded(event:XMLServiceEvent):void
 {
     WidgetDataModel.getInstance().settings =
-        XMLParserUtil.parseSettingsXML( event.xml,
-        WidgetDataModel.getInstance().settings );
+        XMLParserUtil.parseSettingsXML(
+            event.xml,
+            WidgetDataModel.getInstance().settings
+        );
 }
 
-private function onSettingsNotFound( event:Event ):void
+private function onSettingsNotFound(event:Event):void
 {
     var xmlFileService:XMLFileService = new XMLFileService();
+
     xmlFileService.addEventListener(
-        XMLFileService.FILE_COPIED , onSettingsFileCopiedSuccess );
+        XMLFileService.FILE_COPIED,
+        onSettingsFileCopiedSuccess
+    );
+
     xmlFileService.copyXMLFromApplicationDirectoryToStorage(
-        WidgetDataModel.getInstance().settings.settingsXMLLocation );
+        WidgetDataModel.getInstance().settings.settingsXMLLocation
+    );
 }
 
-private function onSettingsFileCopiedSuccess( event:Event ):void
+private function onSettingsFileCopiedSuccess(event:Event):void
 {
     _xmlService.loadXMLFromStorageDirectory(
-        WidgetDataModel.getInstance().settings.settingsXMLLocation );
+        WidgetDataModel.getInstance().settings.settingsXMLLocation
+    );
 }
 
-private function timeHandler( event:TimerEvent ):void
+private function timeHandler(event:TimerEvent):void
 {
-    if( _timer.currentCount ==
-        WidgetDataModel.getInstance().settings.refreshInterval )
+    if (
+        _timer.currentCount ==
+        WidgetDataModel.getInstance().settings.refreshInterval
+    )
     {
         loadWeatherFeed();
         _timer.reset();
     }
 }
 
-private function onSettingsChange( event:Event ):void
+private function onSettingsChange(event:Event):void
 {
-    if( WidgetDataModel.getInstance().settings.zipCode == "" )
+    if (WidgetDataModel.getInstance().settings.zipCode == "")
     {
         currentState = WeatherWidget.SETTINGS;
     }
@@ -12073,90 +12547,105 @@ private function onSettingsChange( event:Event ):void
     {
         _nativeWindow.alwaysInFront =
             WidgetDataModel.getInstance().settings.alwaysInFront;
+
         loadWeatherFeed();
     }
 }
 
 private function onSettingsCancel():void
 {
-    currentState = ( _lastSection ) ?  _lastSection :
-        WeatherWidget.LOADER;
+    currentState = (_lastSection)
+        ? _lastSection
+        : WeatherWidget.LOADER;
 }
+```
 
+
+
+```actionscript
 private function loadWeatherFeed():void
 {
-    currentState =  WeatherWidget.LOADER;
+    currentState = WeatherWidget.LOADER;
 
     var xmlLoader:URLLoader = new URLLoader();
-    xmlLoader.addEventListener( Event.COMPLETE ,
-        onWeatherFeedXMLLoaded );
+
+    xmlLoader.addEventListener(Event.COMPLETE, onWeatherFeedXMLLoaded);
 
     var xmlURLReq:URLRequest = new URLRequest(
         "http://www.google.com/ig/api?weather=" +
-        WidgetDataModel.getInstance().settings.zipCode );
-    xmlLoader.load( xmlURLReq );
+        WidgetDataModel.getInstance().settings.zipCode
+    );
+
+    xmlLoader.load(xmlURLReq);
 }
 
-private function onWeatherFeedXMLLoaded( event:Event ):void
+private function onWeatherFeedXMLLoaded(event:Event):void
 {
-    var loadedXML:XML = XML( event.target.data );
+    var loadedXML:XML = XML(event.target.data);
+
     WidgetDataModel.getInstance().cityLocation =
-        XMLParserUtil.parseWeatherXMLFeedLocation( loadedXML );
+        XMLParserUtil.parseWeatherXMLFeedLocation(loadedXML);
+
     WidgetDataModel.getInstance().weatherCollection =
-        XMLParserUtil.parseWeatherXMLFeedFourDay( loadedXML );
+        XMLParserUtil.parseWeatherXMLFeedFourDay(loadedXML);
+
     WidgetDataModel.getInstance().currentWeather =
-        XMLParserUtil.parseWeatherXMLFeedCurrentDay( loadedXML );
+        XMLParserUtil.parseWeatherXMLFeedCurrentDay(loadedXML);
 }
 
-private function onWeatherFeedLoad( event:Event ):void
+private function onWeatherFeedLoad(event:Event):void
 {
     _timer.start();
 
-    currentState = ( _lastSection == WeatherWidget.LOADER ||
-        !_lastSection )? WeatherWidget.CURRENT_FORECAST : _lastSection;
+    currentState = (
+        _lastSection == WeatherWidget.LOADER || !_lastSection
+    ) ? WeatherWidget.CURRENT_FORECAST : _lastSection;
 
-NativeApplication.nativeApplication.icon.bitmaps = [ new TrayIcon(
-    NativeApplication.supportsDockIcon ).getSpriteAsBitmapData() ];
+    NativeApplication.nativeApplication.icon.bitmaps = [
+        new TrayIcon(
+            NativeApplication.supportsDockIcon
+        ).getSpriteAsBitmapData()
+    ];
 
-var dateFormat:DateFormatter = new DateFormatter();
-dateFormat.formatString = "L:NN:A";
+    var dateFormat:DateFormatter = new DateFormatter();
+    dateFormat.formatString = "L:NN:A";
 
-_lastUpdated = dateFormat.format( new Date() );
+    _lastUpdated = dateFormat.format(new Date());
 
-buildNativeMenu();
+    buildNativeMenu();
 }
 
-private function onFourDayButtonClick( event:Event ):void
+private function onFourDayButtonClick(event:Event):void
 {
     currentState = WeatherWidget.FOURDAY_FORECAST;
     buildNativeMenu();
 }
 
-private function onCurrentDayButtonClick( event:Event ):void
+private function onCurrentDayButtonClick(event:Event):void
 {
     currentState = WeatherWidget.CURRENT_FORECAST;
     buildNativeMenu();
 }
 
-private function onSettingsClick( event:Event ):void
+private function onSettingsClick(event:Event):void
 {
     _lastSection = currentState;
     currentState = "settings";
     buildNativeMenu();
 }
 
-private function handleCloseButton( event:Event ):void
+private function handleCloseButton(event:Event):void
 {
     _nativeWindow.close();
 }
 
-private function handleMinimizeButton( event:Event ):void
+private function handleMinimizeButton(event:Event):void
 {
     _nativeWindow.minimize();
     _nativeWindow.visible = false;
 }
 
-private function handleRestoreButton( event:Event ):void
+private function handleRestoreButton(event:Event):void
 {
     _nativeWindow.visible = true;
     _nativeWindow.restore();
@@ -12164,82 +12653,118 @@ private function handleRestoreButton( event:Event ):void
 
 private function checkWidgetLocation():void
 {
-    if( _nativeWindow.x + backgroundContainer.width >=
-        Screen.mainScreen.bounds.width )
+    if (_nativeWindow.x + backgroundContainer.width >=
+        Screen.mainScreen.bounds.width)
     {
         _nativeWindow.x =
             Screen.mainScreen.bounds.width - backgroundContainer.width;
     }
 
-    if( _nativeWindow.y + backgroundContainer.height >=
-        Screen.mainScreen.bounds.height )
+    if (_nativeWindow.y + backgroundContainer.height >=
+        Screen.mainScreen.bounds.height)
     {
         _nativeWindow.y =
-            Screen.mainScreen.bounds.height-backgroundContainer.height;
+            Screen.mainScreen.bounds.height - backgroundContainer.height;
     }
 
-    if( _nativeWindow.y <= 0 ) _nativeWindow.y = 0;
-    if( _nativeWindow.x <= 0 ) _nativeWindow.x = 0;
+    if (_nativeWindow.y <= 0)
+    {
+        _nativeWindow.y = 0;
+    }
+
+    if (_nativeWindow.x <= 0)
+    {
+        _nativeWindow.x = 0;
+    }
 }
 
-private function buildNativeMenu( event:Event = null ):void
+private function buildNativeMenu(event:Event = null):void
 {
     var nativeMenu:NativeMenu = new NativeMenu();
 
     var title:NativeMenuItem = nativeMenu.addItem(
-        new NativeMenuItem("AIR Weather Widget" ));
-    var lastUpdated:NativeMenuItem = nativeMenu.addItem(
-        new NativeMenuItem("Last Updated: "+ _lastUpdated ));
-    nativeMenu.addItem( new NativeMenuItem("Seperator1", true ) );
+        new NativeMenuItem("AIR Weather Widget")
+    );
 
-    if( currentState == WeatherWidget.CURRENT_FORECAST ||
-        currentState == null )
+    var lastUpdated:NativeMenuItem = nativeMenu.addItem(
+        new NativeMenuItem("Last Updated: " + _lastUpdated)
+    );
+
+    nativeMenu.addItem(new NativeMenuItem("Seperator1", true));
+
+    if (currentState == WeatherWidget.CURRENT_FORECAST ||
+        currentState == null)
     {
         var fourDay:NativeMenuItem = nativeMenu.addItem(
-            new NativeMenuItem("Show Four Day Forecast") );
-        fourDay.addEventListener( Event.SELECT ,
-            onFourDayButtonClick );
+            new NativeMenuItem("Show Four Day Forecast")
+        );
+
+        fourDay.addEventListener(
+            Event.SELECT,
+            onFourDayButtonClick
+        );
     }
     else
     {
         var currentDay:NativeMenuItem = nativeMenu.addItem(
-            new NativeMenuItem("Show Todays Forecast") );
-        currentDay.addEventListener( Event.SELECT ,
-            onCurrentDayButtonClick );
+            new NativeMenuItem("Show Todays Forecast")
+        );
+
+        currentDay.addEventListener(
+            Event.SELECT,
+            onCurrentDayButtonClick
+        );
     }
 
-    nativeMenu.addItem( new NativeMenuItem("Seperator2", true ) );
-    var settingsBtn:NativeMenuItem = nativeMenu.addItem(
-        new NativeMenuItem("Settings") );
-    settingsBtn.addEventListener( Event.SELECT , onSettingsClick );
+    nativeMenu.addItem(new NativeMenuItem("Seperator2", true));
 
-    if( _nativeWindow.displayState ==
-        NativeWindowDisplayState.MINIMIZED )
+    var settingsBtn:NativeMenuItem = nativeMenu.addItem(
+        new NativeMenuItem("Settings")
+    );
+
+    settingsBtn.addEventListener(Event.SELECT, onSettingsClick);
+
+    if (_nativeWindow.displayState ==
+        NativeWindowDisplayState.MINIMIZED)
     {
         var restoreBtn:NativeMenuItem = nativeMenu.addItem(
-            new NativeMenuItem("Show Widget") );
-        restoreBtn.addEventListener(Event.SELECT, handleRestoreButton);
+            new NativeMenuItem("Show Widget")
+        );
+
+        restoreBtn.addEventListener(
+            Event.SELECT,
+            handleRestoreButton
+        );
     }
     else
     {
         var hideBtn:NativeMenuItem = nativeMenu.addItem(
-            new NativeMenuItem("Hide Widget to Tray" ));
-        hideBtn.addEventListener(Event.SELECT, handleMinimizeButton);
+            new NativeMenuItem("Hide Widget to Tray")
+        );
+
+        hideBtn.addEventListener(
+            Event.SELECT,
+            handleMinimizeButton
+        );
     }
 
     var closeBtn:NativeMenuItem = nativeMenu.addItem(
-        new NativeMenuItem("Exit") );
-    closeBtn.addEventListener(Event.SELECT, handleCloseButton );
+        new NativeMenuItem("Exit")
+    );
 
-    if( NativeApplication.supportsSystemTrayIcon )
+    closeBtn.addEventListener(Event.SELECT, handleCloseButton);
+
+    if (NativeApplication.supportsSystemTrayIcon)
     {
         SystemTrayIcon(
-            NativeApplication.nativeApplication.icon).menu= nativeMenu;
+            NativeApplication.nativeApplication.icon
+        ).menu = nativeMenu;
     }
     else
     {
         DockIcon(
-            NativeApplication.nativeApplication.icon).menu= nativeMenu;
+            NativeApplication.nativeApplication.icon
+        ).menu = nativeMenu;
     }
 
     backgroundContainer.contextMenu = nativeMenu;
@@ -12248,204 +12773,263 @@ private function buildNativeMenu( event:Event = null ):void
 
 ```mxml
 <mx:Box id="backgroundContainer"
-    horizontalScrollPolicy="off" verticalScrollPolicy="off"
-    backgroundColor="0x000000" backgroundAlpha=".9"
-    borderStyle="solid" cornerRadius="6"
-    paddingBottom="5" paddingLeft="5" paddingRight="5" paddingTop="5"
-    height="100" width="150" mouseDown="_nativeWindow.startMove();"
-    mouseUp="checkWidgetLocation();" >
-    <mx:Canvas id="holder" width="100%" height="100%"
-        horizontalScrollPolicy="off" verticalScrollPolicy="off" >
+    horizontalScrollPolicy="off"
+    verticalScrollPolicy="off"
+    backgroundColor="0x000000"
+    backgroundAlpha=".9"
+    borderStyle="solid"
+    cornerRadius="6"
+    paddingBottom="5"
+    paddingLeft="5"
+    paddingRight="5"
+    paddingTop="5"
+    height="100"
+    width="150"
+    mouseDown="_nativeWindow.startMove();"
+    mouseUp="checkWidgetLocation();">
+
+    <mx:Canvas id="holder"
+        width="100%"
+        height="100%"
+        horizontalScrollPolicy="off"
+        verticalScrollPolicy="off">
+
         <mx:SWFLoader id="loader"
             source="@Embed(source='assets/weatherLoader.swf')"
-            x="{holder.width / 2 - loader.width /2 - 10}" />
+            x="{holder.width / 2 - loader.width / 2 - 10}" />
+
         <mx:VBox>
             <mx:Label text="{WidgetDataModel.getInstance().cityLocation}"
                 color="0xFFFFFF"
                 fontSize="18"
                 visible="false"
                 id="cityLabel" />
+
             <mx:Canvas>
                 <ui:CurrentWeatherView
-                    id="currentWeatherReport" visible="false"
-                    dataProvider="{WidgetDataModel.getInstance().currentWeather}"/>
-                <ui:FourDayForecastView id="fullWeatherReport" visible="false"
-                    dataProvider="
-                        {WidgetDataModel.getInstance().weatherCollection}"/>
-                <ui:SettingsWindow id="settingsWindow" visible="false"
+                    id="currentWeatherReport"
+                    visible="false"
+                    dataProvider="{WidgetDataModel.getInstance().currentWeather}" />
+
+                <ui:FourDayForecastView
+                    id="fullWeatherReport"
+                    visible="false"
+                    dataProvider="{WidgetDataModel.getInstance().weatherCollection}" />
+
+                <ui:SettingsWindow
+                    id="settingsWindow"
+                    visible="false"
                     save="onSettingsChange(event);"
                     cancel="onSettingsCancel();"
-                    comboOpen="{ backgroundContainer.mouseEnabled = false }"
-                    comboClose="{ backgroundContainer.mouseEnabled = true }" />
+                    comboOpen="{backgroundContainer.mouseEnabled = false}"
+                    comboClose="{backgroundContainer.mouseEnabled = true}" />
 ```
 
-
-
-# 第8章：天气小部件
+# 第 8 章：天气小部件
 
 ```xml
 </mx:Canvas>
 </mx:VBox>
 </mx:Canvas>
 </mx:Box>
+
 <mx:states>
     <mx:State name="{WeatherWidget.FOURDAY_FORECAST}">
-        <mx:SetProperty target="{loader}" name="visible" value="false" />
-        <mx:SetProperty target="{cityLabel}" name="visible" value="true" />
-        <mx:SetProperty target="{currentWeatherReport}"
-            name="visible" value="false" />
-        <mx:SetProperty target="{fullWeatherReport}"
-            name="visible" value="true" />
-        <mx:SetProperty target="{settingsWindow}"
-            name="visible" value="false" />
-        <mx:SetProperty target="{backgroundContainer}" name="width"
+        <mx:SetProperty
+            target="{loader}"
+            name="visible"
+            value="false" />
+
+        <mx:SetProperty
+            target="{cityLabel}"
+            name="visible"
+            value="true" />
+
+        <mx:SetProperty
+            target="{currentWeatherReport}"
+            name="visible"
+            value="false" />
+
+        <mx:SetProperty
+            target="{fullWeatherReport}"
+            name="visible"
+            value="true" />
+
+        <mx:SetProperty
+            target="{settingsWindow}"
+            name="visible"
+            value="false" />
+
+        <mx:SetProperty
+            target="{backgroundContainer}"
+            name="width"
             value="{fullWeatherReport.width + 15}" />
-        <mx:SetProperty target="{backgroundContainer}" name="height"
+
+        <mx:SetProperty
+            target="{backgroundContainer}"
+            name="height"
             value="{fullWeatherReport.height}" />
     </mx:State>
+
     <mx:State name="{WeatherWidget.LOADER}">
-        <mx:SetProperty target="{cityLabel}" name="visible" value="false" />
-        <mx:SetProperty target="{fullWeatherReport}"
-            name="visible" value="false" />
-        <mx:SetProperty target="{currentWeatherReport}"
-            name="visible" value="false" />
-        <mx:SetProperty target="{settingsWindow}"
-            name="visible" value="false" />
-        <mx:SetProperty target="{loader}" name="visible" value="true" />
+        <mx:SetProperty
+            target="{cityLabel}"
+            name="visible"
+            value="false" />
+
+        <mx:SetProperty
+            target="{fullWeatherReport}"
+            name="visible"
+            value="false" />
+
+        <mx:SetProperty
+            target="{currentWeatherReport}"
+            name="visible"
+            value="false" />
+
+        <mx:SetProperty
+            target="{settingsWindow}"
+            name="visible"
+            value="false" />
+
+        <mx:SetProperty
+            target="{loader}"
+            name="visible"
+            value="true" />
     </mx:State>
-    <mx:State name="{WeatherWidget.CURRENT_FORECAST}">
-        <mx:SetProperty target="{loader}" name="visible" value="false" />
-        <mx:SetProperty target="{cityLabel}" name="visible" value="true" />
-        <mx:SetProperty target="{currentWeatherReport}"
-            name="visible" value="true" />
-        <mx:SetProperty target="{fullWeatherReport}"
-            name="visible" value="false" />
-        <mx:SetProperty target="{settingsWindow}"
-            name="visible" value="false" />
-        <mx:SetProperty target="{backgroundContainer}"
-            name="width" value="{currentWeatherReport.width}" />
-        <mx:SetProperty target="{backgroundContainer}"
-            name="height" value="{currentWeatherReport.height}" />
-    </mx:State>
-    <mx:State name="{WeatherWidget.SETTINGS}">
-        <mx:SetProperty target="{loader}" name="visible" value="false" />
-        <mx:SetProperty target="{cityLabel}" name="visible" value="false" />
-        <mx:SetProperty target="{currentWeatherReport}"
-            name="visible" value="false" />
-        <mx:SetProperty target="{fullWeatherReport}"
-            name="visible" value="false" />
-        <mx:SetProperty target="{settingsWindow}"
-            name="visible" value="true" />
-        <mx:SetProperty target="{backgroundContainer}"
-            name="width" value="{settingsWindow.width}" />
-        <mx:SetProperty target="{backgroundContainer}" name="height" value="{settingsWindow.height}" />
-    </mx:State>
+
+
+
+```xml
+<mx:State name="{WeatherWidget.CURRENT_FORECAST}">
+    <mx:SetProperty target="{loader}" name="visible" value="false" />
+    <mx:SetProperty target="{cityLabel}" name="visible" value="true" />
+    <mx:SetProperty target="{currentWeatherReport}" name="visible" value="true" />
+    <mx:SetProperty target="{fullWeatherReport}" name="visible" value="false" />
+    <mx:SetProperty target="{settingsWindow}" name="visible" value="false" />
+    <mx:SetProperty target="{backgroundContainer}" name="width" value="{currentWeatherReport.width}" />
+    <mx:SetProperty target="{backgroundContainer}" name="height" value="{currentWeatherReport.height}" />
+</mx:State>
+
+<mx:State name="{WeatherWidget.SETTINGS}">
+    <mx:SetProperty target="{loader}" name="visible" value="false" />
+    <mx:SetProperty target="{cityLabel}" name="visible" value="false" />
+    <mx:SetProperty target="{currentWeatherReport}" name="visible" value="false" />
+    <mx:SetProperty target="{fullWeatherReport}" name="visible" value="false" />
+    <mx:SetProperty target="{settingsWindow}" name="visible" value="true" />
+    <mx:SetProperty target="{backgroundContainer}" name="width" value="{settingsWindow.width}" />
+    <mx:SetProperty target="{backgroundContainer}" name="height" value="{settingsWindow.height}" />
+</mx:State>
+
 </mx:states>
 
 <mx:transitions>
     <mx:Transition fromState="*" toState="*">
-        <mx:Resize target="{backgroundContainer}" duration="350"
+        <mx:Resize
+            target="{backgroundContainer}"
+            duration="350"
             easingFunction="{Quartic.easeOut}"
-            effectEnd="checkWidgetLocation();" />
+            effectEnd="checkWidgetLocation();"
+        />
     </mx:Transition>
 </mx:transitions>
 
 </mx:Application>
 ```
 
-将此文档保存为 `WeatherWidget.mxml`，放在你的工作目录中。
+将此文档保存为`WeatherWidget.mxml`，放在你的工作目录中。
 
-WeatherWidget 是一个 `<mx:Application>` 容器，它既充当小部件的控制器，又充当视图管理器。它包含一个名为 `backgroundContainer` 的 `<mx:Box>` 组件，该组件封装了UI元素；一个包含 ActionScript 的 `<mx:Script>` 标签；一个包含不同视图状态的 `<mx:states>` 数组；以及一个包含小部件过渡定义的 `<mx:transitions>` 数组。
+`WeatherWidget`是一个`<mx:Application>`容器，它既充当小部件的控制器，又充当视图管理器。它包含一个名为`backgroundContainer`的`<mx:Box>`组件，该组件封装了UI元素；一个包含 ActionScript 的`<mx:Script>`标签；一个包含不同视图状态的`<mx:states>`数组；以及一个包含小部件过渡定义的`<mx:transitions>`数组。
 
 ### 无边框化
 
-默认情况下，AIR 应用程序嵌套在 `<mx:WindowedApplication>` 容器中。`<mx:WindowedApplication>` 类是 `<mx:Application>` 类的子类，其中包含与创建匹配操作系统外观的应用程序相关的方法、属性、事件和样式。在 AIR 应用程序中使用 `<mx:WindowedApplication>` 和 `<mx:Application>` 的关键区别在于，使用 `<mx:Application>` 时，需要由开发人员添加和定义监听器来启用系统命令（如关闭、最小化或最大化），或者启用窗口拖动。这些事件在 `<mx:WindowedApplication>` 中已预定义并具有默认值。鉴于天气小部件将拥有自己的外观和感觉，因此使用 `<mx:Application>` 类。为了获得一个完全无边框的应用程序，需要在应用程序的描述符文件中设置一些额外的属性。
+默认情况下，AIR 应用程序嵌套在`<mx:WindowedApplication>`容器中。`<mx:WindowedApplication>`类是`<mx:Application>`类的子类，其中包含与创建匹配操作系统外观的应用程序相关的方法、属性、事件和样式。在 AIR 应用程序中使用`<mx:WindowedApplication>`和`<mx:Application>`的关键区别在于，使用`<mx:Application>`时，需要由开发人员添加和定义监听器来启用系统命令（如关闭、最小化或最大化），或者启用窗口拖动。这些事件在`<mx:WindowedApplication>`中已预定义并具有默认值。鉴于天气小部件将拥有自己的外观和感觉，因此使用`<mx:Application>`类。为了获得一个完全无边框的应用程序，需要在应用程序的描述符文件中设置一些额外的属性。
 
-`backgroundContainer` `<mx:Box>` 作为天气小部件的窗口UI。它具有黑色半透明背景、圆角和白色1像素边框。它包含一个嵌套的 `<mx:Canvas>` 容器，该容器封装了加载器、`<ui:CurrentWeatherView>`、`<ui:FourDayForecastView>` 和 `<ui:SettingsWindow>` 等UI元素。所有用户交互事件都添加到 `backgroundContainer`。例如，需要定义 `mouseUp` 和 `mouseDown` 事件，以便用户能够在桌面上拖动小部件。因此，添加事件如下：
+`backgroundContainer` `<mx:Box>`作为天气小部件的窗口UI。它具有黑色半透明背景、圆角和白色1像素边框。它包含一个嵌套的`<mx:Canvas>`容器，该容器封装了加载器、`<ui:CurrentWeatherView>`、`<ui:FourDayForecastView>`和`<ui:SettingsWindow>`等UI元素。所有用户交互事件都添加到`backgroundContainer`。例如，需要定义`mouseUp`和`mouseDown`事件，以便用户能够在桌面上拖动小部件。因此，添加事件如下：
 
 ```xml
-<mx:Box id="backgroundContainer"
+<mx:Box
+    id="backgroundContainer"
     mouseDown="_nativeWindow.startMove();"
-    mouseUp="checkWidgetLocation();" >
+    mouseUp="checkWidgetLocation();"
+>
 ```
 
-请注意，此示例中省略了 `<mx:Box>` 实例的其余属性。当 `mouseDown` 时，`startMove` 为 `NativeWindow` 实例实例化鼠标移动句柄。在这种情况下，`_nativeWindow` 在 `onCreationCompleteHandler` 中定义为 `SystemManager.getSWFRoot(this).stage.nativeWindow`。当用户在窗口移动后释放鼠标时，`checkWidgetLocation` 方法会验证天气小部件是否仍在桌面上，如果不在，则将其移回桌面。
+请注意，此示例中省略了`<mx:Box>`实例的其余属性。当`mouseDown`时，`startMove`为`NativeWindow`实例实例化鼠标移动句柄。在这种情况下，`_nativeWindow`在`onCreationCompleteHandler`中定义为`SystemManager.getSWFRoot(this).stage.nativeWindow`。当用户在窗口移动后释放鼠标时，`checkWidgetLocation`方法会验证天气小部件是否仍在桌面上，如果不在，则将其移回桌面。
 
 现在，用户可以在没有系统边框的情况下在桌面上移动小部件。但是，他们仍然无法退出或最小化小部件。如果保持这种状态，用户最终会沮丧地关闭计算机（尽管还有其他关闭应用程序的方式）。无论哪种方式，都应该有一个菜单系统使用户能够关闭小部件。下一节讨论如何向天气小部件添加菜单。
 
 ### 添加菜单和更多窗口交互
 
-如果没有某种方式让用户最小化、恢复甚至退出应用程序，这个小部件将非常无用。你可以向小部件添加按钮来访问上述功能，但在小部件的界面上添加一个显眼的按钮会破坏简约显示的优雅性。早期版本的天气小部件有一个包含按钮的滑动托盘，但后来认为即使是一个托盘也感觉笨重。菜单问题的解决方案是创建一个 `NativeMenu` 实例，并将其应用于小部件的 `contextMenu` 属性和系统托盘图标（在 OS X 上为停靠栏图标）。图 8-6、8-7 和 8-8 显示了应用于小部件的 `NativeMenu`。
+如果没有某种方式让用户最小化、恢复甚至退出应用程序，这个小部件将非常无用。你可以向小部件添加按钮来访问上述功能，但在小部件的界面上添加一个显眼的按钮会破坏简约显示的优雅性。早期版本的天气小部件有一个包含按钮的滑动托盘，但后来认为即使是一个托盘也感觉笨重。菜单问题的解决方案是创建一个`NativeMenu`实例，并将其应用于小部件的`contextMenu`属性和系统托盘图标（在 OS X 上为停靠栏图标）。图 8-6、8-7 和 8-8 显示了应用于小部件的`NativeMenu`。
 
 ![](img/dea8bb18fb213671e2a7e04d8fb0d89f_300_0.png)
 
 ![](img/dea8bb18fb213671e2a7e04d8fb0d89f_300_1.png)
 
-查看图 8-6、8-7 和 8-8，所有三个菜单几乎完全相同。这是因为只创建了一个 `NativeMenu` 类的实例并将其应用于小部件。应用程序创建完成后，会访问 `onCreationComplete`。`onCreationComplete` 随后激活 `buildNativeMenus` 方法。每当加载新的天气数据或小部件的当前状态发生变化时，也会调用此方法。
+查看图 8-6、8-7 和 8-8，所有三个菜单几乎完全相同。这是因为只创建了一个`NativeMenu`类的实例并将其应用于小部件。应用程序创建完成后，会访问`onCreationComplete`。`onCreationComplete`随后激活`buildNativeMenus`方法。每当加载新的天气数据或小部件的当前状态发生变化时，也会调用此方法。
 
 ![](img/dea8bb18fb213671e2a7e04d8fb0d89f_301_0.png)
 
-`buildNativeMenu` 方法首先创建 `NativeMenu` 的一个新实例。然后添加一个标签为 "AIR Weather Widget" 的新 `NativeMenuItem`。这纯粹是为了美观。它向 `NativeMenu` 添加另一个 `NativeMenuItem` 实例，显示天气源最后一次更新的时间代码。接下来，它运行一些条件语句来检测显示状态：
+`buildNativeMenu`方法首先创建`NativeMenu`的一个新实例。然后添加一个标签为 "AIR Weather Widget" 的新`NativeMenuItem`。这纯粹是为了美观。它向`NativeMenu`添加另一个`NativeMenuItem`实例，显示天气源最后一次更新的时间代码。接下来，它运行一些条件语句来检测显示状态：
 
 ```actionscript
-if( currentState == WeatherWidget.CURRENT_FORECAST
-    || currentState == null )
-{
-    var fourDay:NativeMenuItem = nativeMenu.addItem( new
-        NativeMenuItem("Show Four Day Forecast") );
-    fourDay.addEventListener( Event.SELECT , onFourDayButtonClick );
-}
-else
-{
-    var currentDay:NativeMenuItem = nativeMenu.addItem( new
-        NativeMenuItem("Show Todays Forecast") );
-    currentDay.addEventListener(Event.SELECT , onCurrentDayButtonClick);
+if (
+    currentState == WeatherWidget.CURRENT_FORECAST
+    || currentState == null
+) {
+    var fourDay:NativeMenuItem = nativeMenu.addItem(
+        new NativeMenuItem("Show Four Day Forecast")
+    );
+    fourDay.addEventListener(Event.SELECT, onFourDayButtonClick);
+} else {
+    var currentDay:NativeMenuItem = nativeMenu.addItem(
+        new NativeMenuItem("Show Todays Forecast")
+    );
+    currentDay.addEventListener(Event.SELECT, onCurrentDayButtonClick);
 }
 ```
 
-此示例查看 `<mx:Application>` 的 `currentState` 属性。如果 `currentState` 是当前预报视图（而不是四天预报视图），则创建一个名为 `fourDay` 的新 `NativeMenuItem`，并为 `Event.SELECT` 添加事件监听器。当用户在菜单中单击 "Show Four Day Forecast" 时，将访问 `onFourDayButtonClick`，该方法将视图状态更改为 `WeatherWidget.FOURDAY_FORECAST`。同样，如果 `currentState` 等于 `WeatherWidget.FOURDAY_FORECAST`，菜单应显示另一个名为 "Show Today's Forecast" 的 `NativeMenuItem`，并分配一个访问 `onCurrentDayButtonClick` 方法的事件监听器。
+此示例查看`<mx:Application>`的`currentState`属性。如果`currentState`是当前预报视图（而不是四天预报视图），则创建一个名为`fourDay`的新`NativeMenuItem`，并为`Event.SELECT`添加事件监听器。当用户在菜单中单击 "Show Four Day Forecast" 时，将访问`onFourDayButtonClick`，该方法将视图状态更改为`WeatherWidget.FOURDAY_FORECAST`。同样，如果`currentState`等于`WeatherWidget.FOURDAY_FORECAST`，菜单应显示另一个名为 "Show Today's Forecast" 的`NativeMenuItem`，并分配一个访问`onCurrentDayButtonClick`方法的事件监听器。
 
-`buildNativeMenu` 方法随后检查 `NativeWindow` 实例的 `displayState`：
+`buildNativeMenu`方法随后检查`NativeWindow`实例的`displayState`：
 
 ```actionscript
-if( _nativeWindow.displayState == NativeWindowDisplayState.MINIMIZED )
-{
-    var restoreBtn:NativeMenuItem = nativeMenu.addItem( new
-        NativeMenuItem("Show Widget") );
-    restoreBtn.addEventListener( Event.SELECT , handleRestoreButton );
-}
-else
-{
+if (_nativeWindow.displayState == NativeWindowDisplayState.MINIMIZED) {
+    var restoreBtn:NativeMenuItem = nativeMenu.addItem(
+        new NativeMenuItem("Show Widget")
+    );
+    restoreBtn.addEventListener(Event.SELECT, handleRestoreButton);
+} else {
 ```
-
-
 
 ## 第8章：天气小组件
 
 ```javascript
-var hideBtn:NativeMenuItem = nativeMenu.addItem( new
-    NativeMenuItem("Hide Widget to Tray") );
-hideBtn.addEventListener( Event.SELECT , handleMinimizeButton );
+var hideBtn:NativeMenuItem = nativeMenu.addItem(
+    new NativeMenuItem("Hide Widget to Tray")
+);
+hideBtn.addEventListener(Event.SELECT, handleMinimizeButton);
 }
 ```
 
-`_nativeWindow` 在 `<mx:Application>` 的 `onCreationCompleteHandler` 方法中定义。如果 `_nativeWindow.displayState` 等于 `MINIMIZED` 常量，则创建一个标签为 "Show Widget" 的新 `NativeMenuItem`，该菜单项将调用 `handleRestoreButton` 方法。如果 `displayState` 属性为 `MAXIMIZED` 或 `NORMAL`，则创建一个标签为 "Hide Widget to Tray" 的 `NativeMenuItem` 实例，该菜单项将调用 `handleMinimizeButton` 方法。窗口的最小化和恢复将在下一节中讨论。
+`_nativeWindow`在`<mx:Application>`的`onCreationCompleteHandler`方法中定义。如果`_nativeWindow.displayState`等于`MINIMIZED`常量，则创建一个标签为 "Show Widget" 的新`NativeMenuItem`，该菜单项将调用`handleRestoreButton`方法。如果`displayState`属性为`MAXIMIZED`或`NORMAL`，则创建一个标签为 "Hide Widget to Tray" 的`NativeMenuItem`实例，该菜单项将调用`handleMinimizeButton`方法。窗口的最小化和恢复将在下一节中讨论。
 
-最后一个 `NativeMenuItem` 实例的标签为 "Exit"，并调用 `handleCloseButton` 方法。当被调用时，`handleCloseButton` 方法会访问 `_nativeWindow` 实例上的 `close()` 方法，从而退出应用程序。
+最后一个`NativeMenuItem`实例的标签为 "Exit"，并调用`handleCloseButton`方法。当被调用时，`handleCloseButton`方法会访问`_nativeWindow`实例上的`close()`方法，从而退出应用程序。
 
-最后，`buildNativeMenu` 方法会检查 `NativeApplication.supportsSystemTrayIcon`。如果天气小组件在 Microsoft Windows 中运行，此值将为 `true`。如果为 `true`，则将 `NativeMenu` 实例分配给 `SystemTrayIcon` 的菜单。如果为 `false`，则将 `NativeMenu` 分配给 `DockIcon` 菜单。一旦 `NativeMenu` 被分配到程序坞或系统托盘，就将其分配给 `backgroundContainer` 实例的 `contextMenu`。`contextMenu` 是用户右键点击小组件时访问的菜单。
+最后，`buildNativeMenu`方法会检查`NativeApplication.supportsSystemTrayIcon`。如果天气小组件在 Microsoft Windows 中运行，此值将为`true`。如果为`true`，则将`NativeMenu`实例分配给`SystemTrayIcon`的菜单。如果为`false`，则将`NativeMenu`分配给`DockIcon`菜单。一旦`NativeMenu`被分配到程序坞或系统托盘，就将其分配给`backgroundContainer`实例的`contextMenu`。`contextMenu`是用户右键点击小组件时访问的菜单。
 
 ### 最小化、恢复和设置始终在最前
 
-最小化和恢复窗口就像调用 `NativeWindow` 实例的 `minimize` 和 `restore` 方法一样简单。然而，在 Microsoft Windows 中，这只会将应用程序最小化到系统的任务栏。如果能让应用程序完全消失，只留下系统托盘图标，将会很有帮助。你可以通过将 `NativeWindow` 的 `visible` 属性设置为 `false` 来使系统任务栏实例消失。请务必在小组件恢复时将其设置为 `true`；否则，用户将无法看到小组件。
+最小化和恢复窗口就像调用`NativeWindow`实例的`minimize`和`restore`方法一样简单。然而，在 Microsoft Windows 中，这只会将应用程序最小化到系统的任务栏。如果能让应用程序完全消失，只留下系统托盘图标，将会很有帮助。你可以通过将`NativeWindow`的`visible`属性设置为`false`来使系统任务栏实例消失。请务必在小组件恢复时将其设置为`true`；否则，用户将无法看到小组件。
 
-`NativeWindow` 实例还有一个接受 `Boolean` 值的 `alwaysInFront` 属性。此属性会在设置发生任何更改时被赋值。其值来自 `WidgetDataModel.getInstance().settings.alwaysInFront`。此属性控制小组件是否位于所有打开窗口的最前面。
+`NativeWindow`实例还有一个接受`Boolean`值的`alwaysInFront`属性。此属性会在设置发生任何更改时被赋值。其值来自`WidgetDataModel.getInstance().settings.alwaysInFront`。此属性控制小组件是否位于所有打开窗口的最前面。
 
 现在，小组件拥有了菜单系统以及最小化、恢复和更改视图状态的能力。下一节将讨论在更改视图状态时添加动画。
 
 ### 视图动画
 
-除了加载器视图实例外，当视图状态被添加到舞台时，其 `visible` 属性被设置为 `false`。每个视图状态都在 `<mx:states>` 视图数组中定义。当 `<mx:Application>` 类的 `currentState` 属性被更改时，指定的 `<mx:SetProperty>` 标签会被访问，从而更改视图状态的可见性以及 `backgroundContainer` 的高度和宽度。例如，将 `currentState` 设置为 `WeatherWidget.FOURDAY_FORECAST` 将执行以下 `<mx:SetProperty>` 实例集：
+除了加载器视图实例外，当视图状态被添加到舞台时，其`visible`属性被设置为`false`。每个视图状态都在`<mx:states>`视图数组中定义。当`<mx:Application>`类的`currentState`属性被更改时，指定的`<mx:SetProperty>`标签会被访问，从而更改视图状态的可见性以及`backgroundContainer`的高度和宽度。例如，将`currentState`设置为`WeatherWidget.FOURDAY_FORECAST`将执行以下`<mx:SetProperty>`实例集：
 
 ```xml
 <mx:State name="{WeatherWidget.FOURDAY_FORECAST}">
@@ -12454,43 +13038,58 @@ hideBtn.addEventListener( Event.SELECT , handleMinimizeButton );
     <mx:SetProperty target="{currentWeatherReport}" name="visible" value="false" />
     <mx:SetProperty target="{fullWeatherReport}" name="visible" value="true" />
     <mx:SetProperty target="{settingsWindow}" name="visible" value="false" />
-    <mx:SetProperty target="{backgroundContainer}" name="width" value="{fullWeatherReport.width + 15}" />
-    <mx:SetProperty target="{backgroundContainer}" name="height" value="{fullWeatherReport.height}" />
+    <mx:SetProperty
+        target="{backgroundContainer}"
+        name="width"
+        value="{fullWeatherReport.width + 15}"
+    />
+    <mx:SetProperty
+        target="{backgroundContainer}"
+        name="height"
+        value="{fullWeatherReport.height}"
+    />
 </mx:State>
 ```
 
-如果你*仅*运行具有状态更改的应用程序，窗口将立即调整大小并显示四日预报。如果能给它添加一点动画效果就更好了。创建一个 `<mx:Transition>` 实例就能实现这一点。
 
-`<mx:Transition>` 被分配了 `fromState` 和 `toState` 值。在这种情况下，如果小组件更改了状态，应该为其添加动画。嵌套的 `<mx:Resize>` 实例设置了在过渡期间将执行的操作。它以 `backgroundContainer` 为目标，`duration` 为 350 毫秒，`easingFunction` 为 `Quartic.easeOut`。一旦过渡开始运行，`backgroundContainer` 将按照被调用的 `<mx:State>` 中的 `<mx:SetProperty>` 实例指定的大小进行动画调整。过渡结束后，它会访问 `effectEnd` 方法，该方法又会调用 `checkWidgetLocation` 方法，以确保天气小组件位于桌面上。最终结果是一个美妙的动画状态切换。
+
+如果你*仅*运行具有状态更改的应用程序，窗口将立即调整大小并显示四日预报。如果能给它添加一点动画效果就更好了。创建一个`<mx:Transition>`实例就能实现这一点。
+
+`<mx:Transition>`被分配了`fromState`和`toState`值。在这种情况下，如果小组件更改了状态，应该为其添加动画。嵌套的`<mx:Resize>`实例设置了在过渡期间将执行的操作。它以`backgroundContainer`为目标，`duration`为350毫秒，`easingFunction`为`Quartic.easeOut`。一旦过渡开始运行，`backgroundContainer`将按照被调用的`<mx:State>`中指定的`<mx:SetProperty>`实例的大小进行动画调整。过渡结束后，它会访问`effectEnd`方法，该方法又会调用`checkWidgetLocation`方法，以确保天气小组件位于桌面上。最终结果是一个美妙的动画状态切换。
 
 ### 访问数据
 
-天气小组件现在已经完成了所有四种状态的设置，包括动画和菜单。最后的开发步骤是加载数据。数据模型类已经设置好并准备就绪，你只需访问它们。理想的位置是在 `<mx:Application>` 完成实例化后被调用的 `onCreationCompleteHandler` 方法中。
+天气小组件现在已经完成了所有四种状态的设置，包括动画和菜单。最后的开发步骤是加载数据。数据模型类已经设置好并准备就绪，你只需访问它们。理想的位置是在`<mx:Application>`完成实例化后被调用的`onCreationCompleteHandler`方法中。
 
-首先，创建对 `WidgetDataModel` 实例的引用，并为数据更改事件分配事件监听器：
+首先，创建对`WidgetDataModel`实例的引用，并为数据更改事件分配事件监听器：
 
 ```actionscript
 _dataModelInstance = WidgetDataModel.getInstance();
+
 _dataModelInstance.settings.settingsXMLLocation = "settings.xml";
+
 _dataModelInstance.addEventListener(
-    WidgetDataModel.SETTINGS_CHANGE , onSettingsChange );
+    WidgetDataModel.SETTINGS_CHANGE, onSettingsChange
+);
+
 _dataModelInstance.addEventListener(
-    WidgetDataModel.CURRENT_FORECAST_CHANGE , onWeatherFeedLoad );
+    WidgetDataModel.CURRENT_FORECAST_CHANGE, onWeatherFeedLoad
+);
 ```
 
-`onSettingsChange` 方法检查是否指定了邮政编码。如果没有，它会将视图状态更改为 `WeatherWidget.SETTINGS`。如果指定了邮政编码，则 `onSettingsChange` 会调用 `loadWeatherFeed()` 方法。设置方法在本章前面有更详细的讨论。
+`onSettingsChange`方法检查是否指定了邮政编码。如果没有，它会将视图状态更改为`WeatherWidget.SETTINGS`。如果指定了邮政编码，则`onSettingsChange`会调用`loadWeatherFeed()`方法。设置方法在本章前面有更详细的讨论。
 
-`onWeatherFeedLoad` 方法启动间隔计时器，将 `currentState` 设置为上一个状态或默认的 `WeatherWidget.CURRENT_FORECAST` 状态。它还会使用最新的当前温度设置 `TrayIcon`，并将私有的 `_lastUpdated` 字符串设置为当前时间戳。最后，它调用 `buildNativeMenu`，该方法会更改 `NativeMenu` 以反映最新的状态和时间戳更改。
+`onWeatherFeedLoad`方法启动间隔计时器，将`currentState`设置为上一个状态或默认的`WeatherWidget.CURRENT_FORECAST`状态。它还会使用最新的当前温度设置`TrayIcon`，并将私有的`_lastUpdated`字符串设置为当前时间戳。最后，它调用`buildNativeMenu`，该方法会更改`NativeMenu`以反映最新的状态和时间戳更改。
 
-最后一步是通过创建一个新的 `XMLFileService` 实例来实例化数据加载过程，该实例将加载 `settings.xml` 文件。这在本章前面介绍 `XMLFileService` 时已经讨论过。
+最后一步是通过创建一个新的`XMLFileService`实例来实例化数据加载过程，该实例将加载`settings.xml`文件。这在本章前面介绍`XMLFileService`时已经讨论过。
 
 ## 部署应用程序
 
-如果此时测试应用程序，它应该能够执行、加载数据并动画切换到当天的天气视图。菜单应该已经被分配，托盘图标也应该显示出来。你的天气小组件即将完成。最后一步是打包应用程序以便进行部署。下一节将讨论创建描述符文件以及为分发打包 AIR 应用程序。
+如果此时测试应用程序，它应该能够执行、加载数据并动画切换到当天的天气视图。菜单应该已经被分配，托盘图标也应该显示出来。你的天气小组件即将完成。最后一步是打包应用程序以便进行部署。下一节将讨论创建描述符文件以及为分发打包AIR应用程序。
 
 ### 描述符文件
 
-创建天气小组件所需的最后一个文件是应用程序描述符文件。这个 XML 文件包含应用程序的属性，例如初始窗口设置、版权、标题和图标 URL。它会与最终可部署文件一起打包和分发。
+创建天气小组件所需的最后一个文件是应用程序描述符文件。这个XML文件包含应用程序的属性，例如初始窗口设置、版权、标题和图标URL。它会与最终可部署文件一起打包和分发。
 
 创建一个新文档并输入以下标记：
 
@@ -12502,7 +13101,6 @@ _dataModelInstance.addEventListener(
     <name>AIR WeatherWidget</name>
     <description></description>
     <copyright>2008</copyright>
-
     <initialWindow>
         <title/>
         <content>WeatherWidget.swf</content>
@@ -12510,24 +13108,20 @@ _dataModelInstance.addEventListener(
         <transparent>true</transparent>
         <visible>true</visible>
     </initialWindow>
-
     <icon>
         <image16x16>icons/16x16.png</image16x16>
         <image32x32>icons/32x32.png</image32x32>
         <image48x48>icons/48x48.png</image48x48>
         <image128x128>icons/128x128.png</image128x128>
     </icon>
-
     <installFolder>AIRCMR/WeatherWidget</installFolder>
     <programMenuFolder>AIRCMR</programMenuFolder>
 </application>
 ```
 
-将文件保存为 `WeatherWidget-app.xml`，与 `WeatherWidget.mxml` 和 `settings.xml` 文件一起放在你的工作目录根目录下。
+将文件保存为`WeatherWidget-app.xml`，与`WeatherWidget.mxml`和`settings.xml`文件一起放在你的工作目录根目录下。
 
-这个文件将是天气小组件的描述符文件。因为小组件将拥有自己的窗口设计和界面，所以 `<systemChrome>` 属性设置为 `none`，而 `<transparent>` 设置为 `true`。
-
-
+这个文件将是天气小组件的描述符文件。因为小组件将拥有自己的窗口设计和界面，所以`<systemChrome>`属性设置为`none`，而`<transparent>`设置为`true`。
 
 ## 第八章：天气小部件
 
@@ -12539,13 +13133,13 @@ _dataModelInstance.addEventListener(
 
 打开命令提示符，导航到天气小部件的工作目录，输入以下命令，然后按Enter键：
 
-```
+```shell
 > amxmlc WeatherWidget.mxml
 ```
 
 保持命令提示符仍指向工作目录，通过输入以下命令并按Enter键，将小部件打包为AIR安装程序：
 
-```
+```shell
 > adt -package WeatherWidget WeatherWidget-app.xml WeatherWidget.swf settings.xml /icons/
 ```
 
@@ -12591,15 +13185,13 @@ _dataModelInstance.addEventListener(
 
 地图应用程序将显示两种特定类型的数据：位置和目的地。如前所述，这些数据将来自不同的源。应用程序能够抽象处理这些数据非常重要，这样用户在查看基于目的地的位置时，可以找到“那个地方”，而无需具体知道其在地图上的坐标。与大多数在线地图应用程序一样，使用可视标记来表示指定位置上的目的地。因此，AIR应用程序在在线服务和数据库之间处理两种主要类型的数据：位置和目的地标记。
 
-
-
 ## 第9章：地图应用
 
 在你的开发目录下，创建一个名为“Locator”的文件夹。这将是应用程序的*工作目录*。设置好之后，创建以下类：
 
--   1. 打开你最喜欢的文本编辑器，新建一个文档，输入以下ActionScript代码：
+1. 打开你最喜欢的文本编辑器，新建一个文档，输入以下ActionScript代码：
 
-```
+```actionscript
 package com.aircmr.locator.data
 {
     public interface IDBEntry
@@ -12610,12 +13202,13 @@ package com.aircmr.locator.data
 }
 ```
 
--   2. 将文件保存为IDBEntry.as，放在工作目录下的com/aircmr/locator/data目录中。
-    你会看到，接下来的两个值对象将分别实现`serialize()`和`deserialize()`方法，它们的作用是对字符串属性进行转义和反转义。为了正确地向数据库提交一条语句，重要的一点是提供不包含特殊字符（如空格或引号）的信息。序列化数据就是为将其属性值正确输入数据库做准备。反序列化来自数据库的数据，则是将值对象呈现为用户最初输入的状态。考虑到这一点，应用程序中任何将要输入数据库的数据，都将实现IDBEntry接口。
+2. 将文件保存为`IDBEntry.as`，放在工作目录下的`com/aircmr/locator/data`目录中。
 
--   3. 新建一个文档，输入以下ActionScript代码：
+你会看到，接下来的两个值对象将分别实现`serialize()`和`deserialize()`方法，它们的作用是对字符串属性进行转义和反转义。为了正确地向数据库提交一条语句，重要的一点是提供不包含特殊字符（如空格或引号）的信息。序列化数据就是为将其属性值正确输入数据库做准备。反序列化来自数据库的数据，则是将值对象呈现为用户最初输入的状态。考虑到这一点，应用程序中任何将要输入数据库的数据，都将实现`IDBEntry`接口。
 
-```
+3. 新建一个文档，输入以下ActionScript代码：
+
+```actionscript
 package com.aircmr.locator.data
 {
     import flash.events.EventDispatcher;
@@ -12628,9 +13221,11 @@ package com.aircmr.locator.data
         public var name:String;
         public var content:String;
 
-        public function LocationVO( id:int = -1,
-                                    name:String = "",
-                                    content:String = "" )
+        public function LocationVO(
+            id:int = -1,
+            name:String = "",
+            content:String = ""
+        )
         {
             this.id = id;
             this.name = name;
@@ -12639,24 +13234,24 @@ package com.aircmr.locator.data
 
         public function serialize():void
         {
-            name = escape( name );
-            content = escape( content );
+            name = escape(name);
+            content = escape(content);
         }
 
         public function deserialize():void
         {
-            name = unescape( name );
-            content = unescape( content );
+            name = unescape(name);
+            content = unescape(content);
         }
     }
 }
 ```
 
--   4. 将文件保存为LocationVO.as，与IDBEntry.as放在同一目录com/aircmr/locator/data下。
+4. 将文件保存为`LocationVO.as`，与`IDBEntry.as`放在同一目录`com/aircmr/locator/data`下。
 
--   5. 新建一个文档，输入以下ActionScript代码：
+5. 新建一个文档，输入以下ActionScript代码：
 
-```
+```actionscript
 package com.aircmr.locator.data
 {
     public class MarkerVO implements IDBEntry
@@ -12668,11 +13263,14 @@ package com.aircmr.locator.data
         public var x:Number;
         public var y:Number;
 
-        public function MarkerVO( id:int = -1,
-                                  locationId:int = -1,
-                                  jsId:String = "",
-                                  caption:String = "",
-                                  xpos:Number = 0, ypos:Number = 0 )
+        public function MarkerVO(
+            id:int = -1,
+            locationId:int = -1,
+            jsId:String = "",
+            caption:String = "",
+            xpos:Number = 0,
+            ypos:Number = 0
+        )
         {
             this.id = id;
             this.locationId = locationId;
@@ -12684,20 +13282,23 @@ package com.aircmr.locator.data
 
         public function serialize():void
         {
-            caption = escape( caption );
+            caption = escape(caption);
         }
 
         public function deserialize():void
-        {
-            caption = unescape( caption );
-        }
-    }
+```
+
+
+
+```actionscript
+{
+    caption = unescape( caption );
 }
 ```
 
--   6. 将文件保存为MarkerVO.as，放在工作目录下的com/aircmr/locator/data目录中。
+- 6. 将文件保存为`MarkerVO.as`，放在工作目录下的`com/aircmr/locator/data`目录中。
 
-你刚刚创建的LocationVO和MarkerVO类将作为值对象，在地图应用程序与Yahoo! Maps AJAX API以及本地数据库进行交互时被解释使用。
+你刚刚创建的`LocationVO`和`MarkerVO`类将作为值对象，在地图应用程序与Yahoo! Maps AJAX API以及本地数据库进行交互时被解释使用。
 
 每个对象都实现了`IDBEntry`接口，以便将其字符串属性在URL编码格式与原始格式之间进行编码和解码。
 
@@ -12717,17 +13318,18 @@ package com.aircmr.locator.data
 
 新建一个文档，输入以下ActionScript代码：
 
-```
+```actionscript
 package com.aircmr.locator.data
+
 {
     import flash.events.EventDispatcher;
-    
     import mx.collections.ArrayCollection;
-    
+
     [Bindable]
     public class LocatorDataManager extends EventDispatcher
     {
         private static var _instance:LocatorDataManager = new LocatorDataManager();
+
         public var currentAddress:String;
         public var location:LocationVO;
         public var markers:ArrayCollection;  // MarkerVO[]
@@ -12760,9 +13362,9 @@ package com.aircmr.locator.data
 }
 ```
 
-将文件保存为LocatorDataManager.as，放在工作目录下的com/aircmr/locator/data目录中，与之前创建的值对象放在一处。
+将文件保存为`LocatorDataManager.as`，放在工作目录下的`com/aircmr/locator/data`目录中，与之前创建的值对象放在一处。
 
-LocationVO和MarkerVO对象反映了表条目，它们的属性对应数据库表中的指定字段。LocatorDataManager充当这些数据的管理器，同时采用单例模式以确保所有客户端在任何给定时间都使用相同的数据。与当前位置和目的地数据相关的还有实际地址——这意味着，像“我家”这样的位置名称，与用于地理编码的实际地址是不同的。`currentAddress`属性将根据用户输入进行更新，并用于从在线服务或数据库中定位地图。
+`LocationVO`和`MarkerVO`对象反映了表条目，它们的属性对应数据库表中的指定字段。`LocatorDataManager`充当这些数据的管理器，同时采用单例模式以确保所有客户端在任何给定时间都使用相同的数据。与当前位置和目的地数据相关的还有实际地址——这意味着，像“我家”这样的位置名称，与用于地理编码的实际地址是不同的。`currentAddress`属性将根据用户输入进行更新，并用于从在线服务或数据库中定位地图。
 
 值对象已经创建并管理好了，现在是时候构建这些数据在数据库之间来回传递的逻辑了。在下一节中，你将创建从本地数据库发送和检索位置和目的地数据的类。
 
@@ -12770,20 +13372,18 @@ LocationVO和MarkerVO对象反映了表条目，它们的属性对应数据库�
 
 Adobe AIR内置的SQL关系数据库引擎使你能够将数据本地存储在数据库文件中。你在本节中创建的服务将创建该数据库文件和必要的表，以及运行查询来存储和检索位置和目的地信息。
 
-
-
 ## 第9章：地图应用
 
-1. 新建一个文档，并输入以下 ActionScript 代码：
+1. 新建一个文档，并输入以下ActionScript代码：
 
 ```actionscript
 package com.aircmr.locator.services
+
 {
     import com.aircmr.locator.data.LocationVO;
     import com.aircmr.locator.data.MarkerVO;
     import com.aircmr.locator.data.QueryVO;
     import com.aircmr.locator.events.DBResultEvent;
-
     import flash.data.SQLConnection;
     import flash.data.SQLResult;
     import flash.data.SQLStatement;
@@ -12800,7 +13400,6 @@ package com.aircmr.locator.services
         private var _connection:SQLConnection;
         private var _statement:SQLStatement;
         private var _dbFile:File;
-
         private var _isOpen:Boolean;
         private var _queryQueue:Array;
         private var _currentQuery:QueryVO;
@@ -12809,10 +13408,8 @@ package com.aircmr.locator.services
         private static const FALL_THROUGH:String = "";
         private static const CREATE_TABLE_LOC:String = "createLocations";
         private static const CREATE_TABLE_MARK:String = "createMarkers";
-
         public static const CREATION_COMPLETE:String = "creationComplete";
         public static const CREATION_ERROR:String = "creationError";
-
         private static const DB:String = "Locator.db";
 
         public function DBService()
@@ -12824,6 +13421,7 @@ package com.aircmr.locator.services
 
             _queryQueue = new Array();
             _dbFile = File.applicationStorageDirectory.resolvePath( DB );
+
             invalidate();
         }
 
@@ -12854,6 +13452,7 @@ package com.aircmr.locator.services
         private function open():void
         {
             if( _isOpen ) return;
+
             _connection.open( _dbFile );
         }
 
@@ -12865,6 +13464,7 @@ package com.aircmr.locator.services
                 if( _queryQueue.length > 0 )
                 {
                     if( !_isRunningQuery ) _isRunningQuery = true;
+
                     _currentQuery = _queryQueue.shift();
                     _statement.text = _currentQuery.query;
                     _statement.itemClass = _currentQuery.itemClass;
@@ -12882,12 +13482,14 @@ package com.aircmr.locator.services
         private function onConnectionOpen( evt:SQLEvent ):void
         {
             _isOpen = true;
+
             if( _queryQueue.length > 0 ) executeNextQuery();
         }
 
         private function onConnectionClose( evt:SQLEvent ):void
         {
             _isOpen = false;
+
             if( _queryQueue.length > 0 )
             {
                 _queryQueue.splice( 0, 0, _currentQuery );
@@ -12913,159 +13515,193 @@ package com.aircmr.locator.services
                 _statement.sqlConnection = _connection;
                 _statement.addEventListener( SQLEvent.RESULT, onQueryResult );
                 _statement.addEventListener( SQLErrorEvent.ERROR, onQueryError );
+
                 dispatchEvent( new Event( CREATION_COMPLETE ) );
                 _isRunningQuery = false;
             }
         }
 
         private function onCreationQueryError( evt:SQLErrorEvent ):void
-        {
-            dispatchEvent( new Event( CREATION_ERROR ) );
-            _isRunningQuery = false;
-        }
-
-        private function onQueryResult( evt:SQLEvent ):void
-        {
-            var result:SQLResult = _statement.getResult();
-            if( _currentQuery.type != FALL_THROUGH )
-                dispatchEvent( new DBResultEvent( _currentQuery.type, result ) );
-
-            executeNextQuery();
-        }
-
-        private function onQueryError( evt:SQLErrorEvent ):void
-        {
-            dispatchEvent( evt );
-            _isRunningQuery = false;
-        }
-
-        public function saveLocation( location:LocationVO ):void
-        {
-            location.serialize();
-            var sqlSave:String;
-            var sqlSelect:String;
-            if( location.id == -1 )
-            {
-                // add new location...
-                sqlSave = "INSERT INTO locations VALUES (" + 
-                                    "null," + 
-                                    "'" + location.name + "'," + 
-                                    "'" + location.content + "');";
-                sqlSelect = "SELECT * FROM locations ORDER BY id DESC LIMIT 1;";
-            }
-            else
-            {
-                // update saved location...
-                sqlSave = "UPDATE locations SET " + 
-                                    "name='" + location.name + "'," + 
-                                    "content='" + location.content + "' " + 
-                                    "WHERE id='" + location.id + "';";
-                sqlSelect = "SELECT * FROM locations WHERE id='" + 
-                                    location.id + "';";
-            }
-            addQuery( new QueryVO( FALL_THROUGH, sqlSave ), false );
-            addQuery( new QueryVO(DBResultEvent.LOCATION_SAVED, sqlSelect), true );
-            location.deserialize();
-        }
-
-        public function saveMarker( marker:MarkerVO ):void
-        {
-            marker.serialize();
-            var sqlSave:String;
-            var sqlSelect:String;
-            if( marker.id == -1 )
-            {
-                // add new marker...
-                sqlSave = "INSERT INTO markers VALUES (" + 
-                                    "null," + 
-                                    "'" + marker.jsId + "'," + 
-                                    "'" + marker.locationId + "'," + 
-                                    "'" + marker.caption + "'," + 
-                                    "'" + marker.x + "'," + 
-                                    "'" + marker.y + "');";
-                sqlSelect = "SELECT * FROM markers ORDER BY id DESC LIMIT 1;";
-            }
-            else
-            {
-                // update saved marker...
-                sqlSave = "UPDATE markers SET " + 
-                                    "locationId='" + marker.locationId + "'," + 
-                                    "caption='" + marker.caption + "'," + 
-                                    "x='" + marker.x + "'," +
-                                    "y='" + marker.y + "' " +
-                                    "WHERE id='" + marker.id + "';";
-                sqlSelect = "SELECT * FROM markers WHERE id='" + marker.id + "';";
-            }
-            addQuery( new QueryVO( FALL_THROUGH, sqlSave ) , false );
-            addQuery( new QueryVO( DBResultEvent.MARKER_SAVED, sqlSelect ) ,true );
-            marker.deserialize();
-        }
-
-        public function retrieveLocation( location:String ):void
-        {
-            var sqlSelect:String = "SELECT * FROM locations WHERE " +
-                                   "name='" + escape( location ) + "' " +
-                                   "LIMIT 1;";
-            addQuery( new QueryVO( DBResultEvent.LOCATION_RETRIEVED, sqlSelect,
-                                   LocationVO ) );
-        }
-
-        public function retrieveAllLocations():void
-        {
-            var sqlSelect:String = "SELECT DISTINCT name FROM locations;";
-            addQuery( new QueryVO(DBResultEvent.LOCATION_RETRIEVED_ALL,
-                      sqlSelect, LocationVO ) );
-        }
-
-        public function retrieveMarkersFromLocation( id:int ):void
-        {
-            var sqlSelect:String = "SELECT * FROM markers WHERE " +
-                                   "locationId='" + id + "';";
-            addQuery( new QueryVO( DBResultEvent.MARKER_RETRIEVED_ALL, sqlSelect,
-                                   MarkerVO ) );
-        }
-
-        public function addQuery( query:QueryVO, run:Boolean = true ):void
-        {
-            _queryQueue.push( query );
-            if( !_isRunningQuery && run ) runQuery();
-        }
-
-        public function runQuery():void
-        {
-            if( _queryQueue.length > 0 ) executeNextQuery();
-        }
-
-        public function shutDown():void
-        {
-            if( _isRunningQuery )
-            {
-                _statement.removeEventListener(SQLEvent.RESULT, onQueryResult);
-                _statement.removeEventListener(SQLErrorEvent.ERROR, onQueryError);
-            }
-            close();
-        }
-    }
-}
 ```
 
 
+
+```actionscript
+{
+    dispatchEvent(new Event(CREATION_ERROR));
+    _isRunningQuery = false;
+}
+
+private function onQueryResult(evt:SQLEvent):void
+{
+    var result:SQLResult = _statement.getResult();
+
+    if (_currentQuery.type != FALL_THROUGH)
+        dispatchEvent(new DBResultEvent(_currentQuery.type, result));
+
+    executeNextQuery();
+}
+
+private function onQueryError(evt:SQLErrorEvent):void
+{
+    dispatchEvent(evt);
+    _isRunningQuery = false;
+}
+
+public function saveLocation(location:LocationVO):void
+{
+    location.serialize();
+
+    var sqlSave:String;
+    var sqlSelect:String;
+
+    if (location.id == -1)
+    {
+        // add new location...
+        sqlSave = "INSERT INTO locations VALUES (" +
+            "null," +
+            "'" + location.name + "'," +
+            "'" + location.content + "');";
+
+        sqlSelect = "SELECT * FROM locations ORDER BY id DESC LIMIT 1;";
+    }
+    else
+    {
+        // update saved location...
+        sqlSave = "UPDATE locations SET " +
+            "name='" + location.name + "'," +
+            "content='" + location.content + "' " +
+            "WHERE id='" + location.id + "';";
+
+        sqlSelect = "SELECT * FROM locations WHERE id='" +
+            location.id + "';";
+    }
+
+    addQuery(new QueryVO(FALL_THROUGH, sqlSave), false);
+    addQuery(new QueryVO(DBResultEvent.LOCATION_SAVED, sqlSelect), true);
+
+    location.deserialize();
+}
+
+public function saveMarker(marker:MarkerVO):void
+{
+    marker.serialize();
+
+    var sqlSave:String;
+    var sqlSelect:String;
+
+    if (marker.id == -1)
+    {
+        // add new marker...
+        sqlSave = "INSERT INTO markers VALUES (" +
+            "null," +
+            "'" + marker.jsId + "'," +
+            "'" + marker.locationId + "'," +
+            "'" + marker.caption + "'," +
+            "'" + marker.x + "'," +
+            "'" + marker.y + "');";
+
+        sqlSelect = "SELECT * FROM markers ORDER BY id DESC LIMIT 1;";
+    }
+    else
+    {
+        // update saved marker...
+        sqlSave = "UPDATE markers SET " +
+            "locationId='" + marker.locationId + "'," +
+            "caption='" + marker.caption + "'," +
+            "x='" + marker.x + "'," +
+            "y='" + marker.y + "' " +
+            "WHERE id='" + marker.id + "';";
+
+        sqlSelect = "SELECT * FROM markers WHERE id='" + marker.id + "';";
+    }
+
+    addQuery(new QueryVO(FALL_THROUGH, sqlSave), false);
+    addQuery(new QueryVO(DBResultEvent.MARKER_SAVED, sqlSelect), true);
+
+    marker.deserialize();
+}
+
+public function retrieveLocation(location:String):void
+{
+    var sqlSelect:String = "SELECT * FROM locations WHERE " +
+        "name='" + escape(location) + "' " +
+        "LIMIT 1;";
+
+    addQuery(new QueryVO(
+        DBResultEvent.LOCATION_RETRIEVED,
+        sqlSelect,
+        LocationVO
+    ));
+}
+
+public function retrieveAllLocations():void
+{
+    var sqlSelect:String = "SELECT DISTINCT name FROM locations;";
+
+    addQuery(new QueryVO(
+        DBResultEvent.LOCATION_RETRIEVED_ALL,
+        sqlSelect,
+        LocationVO
+    ));
+}
+
+public function retrieveMarkersFromLocation(id:int):void
+{
+    var sqlSelect:String = "SELECT * FROM markers WHERE " +
+        "locationId='" + id + "';";
+
+    addQuery(new QueryVO(
+        DBResultEvent.MARKER_RETRIEVED_ALL,
+        sqlSelect,
+        MarkerVO
+    ));
+}
+
+public function addQuery(query:QueryVO, run:Boolean = true):void
+{
+    _queryQueue.push(query);
+
+    if (!_isRunningQuery && run)
+        runQuery();
+}
+
+public function runQuery():void
+{
+    if (_queryQueue.length > 0)
+        executeNextQuery();
+}
+
+public function shutDown():void
+{
+    if (_isRunningQuery)
+    {
+        _statement.removeEventListener(SQLEvent.RESULT, onQueryResult);
+        _statement.removeEventListener(SQLErrorEvent.ERROR, onQueryError);
+    }
+
+    close();
+}
+}
+}
+```
 
 ## 第9章：地图应用
 
-```
+```actionscript
 public function close():void
 {
-    if( _isOpen ) _connection.close();
+    if (_isOpen)
+        _connection.close();
 }
 }
 ```
 
-2. 将文件保存为 `DBService.as`，置于工作目录下的 `com/aircmr/locator/services` 目录中。
+将文件保存为 `DBService.as`，置于工作目录下的 `com/aircmr/locator/services` 目录中。
 
-3. 创建一个新文档，并输入以下 ActionScript 代码：
+创建一个新文档，并输入以下 ActionScript 代码：
 
-```
+```actionscript
 package com.aircmr.locator.events
 {
     import flash.data.SQLResult;
@@ -13082,9 +13718,9 @@ package com.aircmr.locator.events
         public static const MARKER_RETRIEVED:String = "markerRetrieved";
         public static const MARKER_RETRIEVED_ALL:String = "markerRetrievedAll";
 
-        public function DBResultEvent( type:String, sqlResult:SQLResult )
+        public function DBResultEvent(type:String, sqlResult:SQLResult)
         {
-            super( type );
+            super(type);
             _result = sqlResult;
         }
 
@@ -13096,11 +13732,11 @@ package com.aircmr.locator.events
 }
 ```
 
-4. 将文件保存为 `DBResultEvent.as`，置于工作目录下的 `com/aircmr/locator/events` 目录中。
+将文件保存为 `DBResultEvent.as`，置于工作目录下的 `com/aircmr/locator/events` 目录中。
 
-5. 创建一个新文档，并输入以下 ActionScript 代码：
+创建一个新文档，并输入以下 ActionScript 代码：
 
-```
+```actionscript
 package com.aircmr.locator.data
 {
     public class QueryVO
@@ -13109,8 +13745,11 @@ package com.aircmr.locator.data
         public var query:String;
         public var itemClass:Class;
 
-        public function QueryVO( type:String, query:String,
-                                itemClass:Class = null )
+        public function QueryVO(
+            type:String,
+            query:String,
+            itemClass:Class = null
+        )
         {
             this.type = type;
             this.query = query;
@@ -13120,23 +13759,38 @@ package com.aircmr.locator.data
 }
 ```
 
-6. 将文件保存为 `QueryVO.as`，置于工作目录下的 `com/aircmr/locator/data` 目录中。
+将文件保存为 `QueryVO.as`，置于工作目录下的 `com/aircmr/locator/data` 目录中。
 
 第一个代码片段，保存为 `DBService.as`，是一个服务类，它将通过执行 SQL 查询语句与数据库交互。该服务将从主应用类中实例化，该主应用类充当视图从数据库请求指定数据的访问点。在创建 `DBService` 实例时，会创建一个 `flash.data.SQLConnection` 实例。`SQLConnection` 实例管理与本地数据库文件的连接，并作为 `flash.data.SQLStatement` 对象的 `sqlConnection` 属性提供：
 
-```
+```actionscript
 public function DBService()
 {
     _connection = new SQLConnection();
-    _connection.addEventListener( SQLEvent.OPEN, onConnectionOpen );
-    _connection.addEventListener( SQLEvent.CLOSE, onConnectionClose );
-    _connection.addEventListener( SQLErrorEvent.ERROR, onConnectionError );
+
+    _connection.addEventListener(
+        SQLEvent.OPEN,
+        onConnectionOpen
+    );
+
+    _connection.addEventListener(
+        SQLEvent.CLOSE,
+        onConnectionClose
+    );
+
+    _connection.addEventListener(
+        SQLErrorEvent.ERROR,
+        onConnectionError
+    );
 
     _queryQueue = new Array();
-    _dbFile = File.applicationStorageDirectory.resolvePath( DB );
+    _dbFile = File.applicationStorageDirectory.resolvePath(DB);
+
     invalidate();
 }
 ```
+
+
 
 除了创建 `SQLConnection` 外，如果尚未存在，名为 `Locator.db` 的数据库文件将在应用程序存储目录中创建。与仅允许应用程序读取访问的应用程序目录不同，你可以对应用程序存储目录进行读写操作，该目录通过 `flash.filesystem.File` 类的静态 `applicationStorageDirectory` 属性访问。
 
@@ -13144,10 +13798,11 @@ public function DBService()
 
 建立了与数据库的连接后，可以使用 `flash.data.SQLStatement` 对象运行 SQL 查询。`DBService` 类通过队列管理查询，可以使用公共 `addQuery()` 方法添加查询：
 
-```
+```actionscript
 public function addQuery( query:QueryVO, run:Boolean = true ):void
 {
     _queryQueue.push( query );
+
     if( !_isRunningQuery && run ) runQuery();
 }
 
@@ -13157,13 +13812,15 @@ public function runQuery():void
 }
 ```
 
-第三个代码片段，保存为 `QueryVO` 并作为 `addQuery()` 方法的第一个参数提供，代表添加到这个受管队列的查询对象。`QueryVO` 的三个属性 `type`、`query` 和 `itemClass` 分别对应于查询类型、要执行的查询语句字符串以及用于映射结果数据的类。`SQLStatement` 类能够将数据库查询的结果数据映射到指定的类，使你可以无缝地处理从数据库检索的数据，而无需手动解析和替换属性数据。要将数据映射到指定的类，你需要使用 `SQLStatement` 类的 `itemClass` 属性。对该类的引用被传递到 `QueryVO` 对象中，该对象用于每个新查询。
+第三个代码片段，保存为 `QueryVO` 并作为 `addQuery()` 方法的第一个参数提供，代表添加到这个受管队列的查询对象。`QueryVO` 的三个属性 `type`、`query` 和 `itemClass` 分别对应于查询类型、要执行的查询语句字符串以及用于映射结果数据的类。
+
+`SQLStatement` 类能够将数据库查询的结果数据映射到指定的类，使你可以无缝地处理从数据库检索的数据，而无需手动解析和替换属性数据。要将数据映射到指定的类，你需要使用 `SQLStatement` 类的 `itemClass` 属性。对该类的引用被传递到 `QueryVO` 对象中，该对象用于每个新查询。
 
 所有与基于目的地的位置相关的、要运行和广播的查询类型都列在 `DBResultEvent` 类中——即保存为第二个代码片段的类。当 SQL 语句完成时，`DBService` 会派发 `DBResultEvent` 实例，其事件类型与 `QueryVO` 实例的 `type` 属性匹配。`DBResultEvent` 的 `result` 属性是从 SQL 查询返回的数据。
 
 看一个添加查询到队列以运行的公共方法示例：
 
-```
+```actionscript
 public function retrieveAllLocations():void
 {
     var sqlSelect:String = "SELECT DISTINCT name FROM locations;";
@@ -13171,21 +13828,27 @@ public function retrieveAllLocations():void
 }
 ```
 
-`retrieveAllLocations()` 方法调用以添加一个新的 `QueryVO` 对象到队列中，其类型值设置为 `DBResultEvent` 上的 `LOCATION_RETRIEVED_ALL` 常量，查询值设置为一条 SQL 语句，该语句将从本地数据库 `Locator.db` 中标题为 `locations` 的表中的所有记录中选择每个唯一的名称（`Locator.db` 在 `DBService` 初始化时创建）。在接收到执行的 SQL 语句的结果后，会派发一个新的 `DBResultEvent`，其类型为赋予 `QueryVO` 的类型，结果为查询结果：
+`retrieveAllLocations()` 方法调用以添加一个新的 `QueryVO` 对象到队列中，其类型值设置为 `DBResultEvent` 上的 `LOCATION_RETRIEVED_ALL` 常量，查询值设置为一条 SQL 语句，该语句将从本地数据库 `Locator.db` 中标题为 `locations` 的表中的所有记录中选择每个唯一的名称（`Locator.db` 在 `DBService` 初始化时创建）。
 
-```
+在接收到执行的 SQL 语句的结果后，会派发一个新的 `DBResultEvent`，其类型为赋予 `QueryVO` 的类型，结果为查询结果：
+
+```actionscript
 private function onQueryResult( evt:SQLEvent ):void
 {
     var result:SQLResult = _statement.getResult();
+
     if( _currentQuery.type != FALL_THROUGH )
         dispatchEvent( new DBResultEvent( _currentQuery.type, result ) );
+
     executeNextQuery();
 }
 ```
 
 遗憾的是，Adobe AIR 包含的 SQL 引擎 SQLite 中所有可能的语句、列类型和约束，在本章中无法全部涵盖，建议你阅读 Adobe 提供的文档。然而，除了涵盖 `DBService` 中与存储和检索位置及目的地数据相关的所有语句外，`invalidate()` 方法值得注意。
 
-在构造函数中调用的 `invalidate()` 方法内，如果之前不存在，将在本地数据库中使用 `CREATE IF NOT EXISTS` 子句创建两个表。这些表——标题为 `locations` 和 `markers`——将存储应用程序可用的位置和目的地数据，并用于执行对数据库的任何后续查询。对数据库的更新在公共 `saveLocation()` 和 `saveMarker()` 方法中执行，分别使用 `LocationVO` 和 `MarkerVO` 对象的 `id` 属性来插入新条目或更新现有条目。
+在构造函数中调用的 `invalidate()` 方法内，如果之前不存在，将在本地数据库中使用 `CREATE IF NOT EXISTS` 子句创建两个表。这些表——标题为 `locations` 和 `markers`——将存储应用程序可用的位置和目的地数据，并用于执行对数据库的任何后续查询。
+
+对数据库的更新在公共 `saveLocation()` 和 `saveMarker()` 方法中执行，分别使用 `LocationVO` 和 `MarkerVO` 对象的 `id` 属性来插入新条目或更新现有条目。
 
 298
 
@@ -13203,11 +13866,13 @@ private function onQueryResult( evt:SQLEvent ):void
 
 ### 处理视图模式
 
-地图应用使用户能够导航位置和放置标记。如果互联网连接可用，可以通过在线服务或从已保存的数据访问位置。如果不存在互联网连接，则只能使用存储的数据。你将在本章稍后创建的主应用类能够识别连接到在线服务的选项，因此你将在本节创建的类反映了这一点，并提供了处理存储（离线）数据或在线数据的选项：
+地图应用使用户能够导航位置和放置标记。如果互联网连接可用，可以通过在线服务或从已保存的数据访问位置。如果不存在互联网连接，则只能使用存储的数据。
+
+你将在本章稍后创建的主应用类能够识别连接到在线服务的选项，因此你将在本节创建的类反映了这一点，并提供了处理存储（离线）数据或在线数据的选项：
 
 1. 打开你喜欢的编辑器，创建一个新文档，并输入以下 ActionScript 代码：
 
-```
+```actionscript
 package com.aircmr.locator.ui
 {
     public class ModeType
@@ -13220,14 +13885,13 @@ package com.aircmr.locator.ui
 
 2. 将文件保存为 `ModeType.as`，置于工作目录下的 `com/aircmr/locator/ui` 目录中。
 
-
-
 ## 第9章：地图应用
 
-**3.** 创建一个新文档并输入以下标记代码：
+3. 创建一个新文档并输入以下标记代码：
 
-```
+```xml
 <?xml version="1.0" encoding="utf-8"?>
+
 <mx:HBox xmlns:mx="http://www.adobe.com/2006/mxml"
          width="100%" height="100%"
          verticalAlign="middle"
@@ -13282,6 +13946,7 @@ package com.aircmr.locator.ui
             {
                 return _isAvailable;
             }
+
             public function set isAvailable( bool:Boolean ):void
             {
                 _isAvailable = bool;
@@ -13292,27 +13957,32 @@ package com.aircmr.locator.ui
             {
                 return _mode;
             }
+
             public function set mode( str:String ):void
             {
                 _mode = str;
                 dispatchEvent( new Event( ModeControls.MODE_CHANGE ) );
             }
-
         ]]>
     </mx:Script>
 
     <mx:Label id="availableField" text="{getModeLabel(isAvailable)}" />
+
     <mx:VRule height="100%" />
+
     <mx:Label text="Search Mode:" />
+
     <mx:RadioButtonGroup id="modeGroup"
         change="onModeSelection();"
         selectedValue="{isAvailable ? ModeType.ONLINE : ModeType.OFFLINE}"
         />
+
     <mx:RadioButton id="onlineRB"
         groupName="modeGroup"
         value="{ModeType.ONLINE}"
         label="{ModeType.ONLINE}"
         />
+
     <mx:RadioButton id="offlineRB"
         groupName="modeGroup"
         value="{ModeType.OFFLINE}"
@@ -13322,13 +13992,17 @@ package com.aircmr.locator.ui
 </mx:HBox>
 ```
 
-**4.** 将文件保存为 `ModeControls.mxml`，放在你的工作目录下的 `com/aircmr/locator/ui` 目录中，与之前创建的 `ModeTypes.as` 类放在一起。
+4. 将文件保存为 `ModeControls.mxml`，放在你的工作目录下的 `com/aircmr/locator/ui` 目录中，与之前创建的 `ModeTypes.as` 类放在一起。
 
-第一个代码片段保存为 `ModeTypes.as`，它包含了地图应用可能的模式列表。由于该应用只关心用户是想使用存储的数据还是与在线服务通信，因此可用的类型是 `offline` 和 `online`。但这不应被误解为网络资源的可用性，因为用户可以在连接互联网时选择使用保存的（离线）数据。`ModeTypes` 类中列出的类型将用于确定当前的 `mode` 属性，该属性由第二个代码片段（保存为 `ModeControls.mxml`）更新和控制。
+第一个代码片段保存为 `ModeTypes.as`，它包含了地图应用可能的模式列表。由于该应用只关心用户是想使用存储的数据还是与在线服务通信，因此可用的类型是 `offline` 和 `online`。但这不应被误解为网络资源的可用性，因为用户可以在连接互联网时选择使用保存的（离线）数据。
 
-`ModeControls` 组件显示 `RadioButton` 控件，用于选择地图应用的工作模式。当 `mode` 属性更新时，会为任何需要知道变化的客户端分派一个事件。在连接到互联网时，用户可以选择模式，这取决于 `isAvailable` 属性值是否为 true。在 `creationComplete` 事件处理函数中，`invalidateAvailability()` 函数被绑定到 `isAvailable` 属性。一旦 `isAvailable` 属性更新，`invalidateAvailability()` 方法将被调用，该方法根据网络资源可用性和当前模式来确定模式：
+`ModeTypes` 类中列出的类型将用于确定当前的 `mode` 属性，该属性由第二个代码片段（保存为 `ModeControls.mxml`）更新和控制。
 
-```
+`ModeControls` 组件显示 `RadioButton` 控件，用于选择地图应用的工作模式。当 `mode` 属性更新时，会为任何需要知道变化的客户端分派一个事件。在连接到互联网时，用户可以选择模式，这取决于 `isAvailable` 属性值是否为 `true`。
+
+在 `creationComplete` 事件处理函数中，`invalidateAvailability()` 函数被绑定到 `isAvailable` 属性。一旦 `isAvailable` 属性更新，`invalidateAvailability()` 方法将被调用，该方法根据网络资源可用性和当前模式来确定模式：
+
+```actionscript
 private function invalidateAvailability( args:* ):void
 {
     if( !_isAvailable && _mode == ModeType.ONLINE )
@@ -13342,18 +14016,23 @@ private function invalidateAvailability( args:* ):void
 }
 ```
 
-与在线服务的连接状态由另一个客户端监控，该客户端会将任何变化通知 `ModeControls` 组件。组件的启用状态由 `isAvailable` 属性的值以及基于当前状态的视图决定。`invalidateAvailability()` 方法确保，如果用户之前正在离线工作，并且网络资源发生了任何变化，那么监听客户端不会收到 `mode` 属性更新的通知。
+与在线服务的连接状态由另一个客户端监控，该客户端会将任何变化通知 `ModeControls` 组件。组件的启用状态由 `isAvailable` 属性的值以及基于当前状态的视图决定。
+
+`invalidateAvailability()` 方法确保，如果用户之前正在离线工作，并且网络资源发生了任何变化，那么监听客户端不会收到 `mode` 属性更新的通知。
 
 利用 `ModeControls` 组件为用户模式选择提供的控制，你可以开始处理响应所选模式类型的视图控件。
 
 ## 显示位置
 
-与查看地理点列表不同，地图应用以图形方式呈现位置，并允许用户标记目的地。根据用户交互和网络资源确定的模式，有两种不同的地图显示方式。在线工作时，可以使用 HTML 控件与在线地图 API 通信，并渲染通过 HTTP 传输的图形。离线工作时，`Image` 组件显示从保存数据加载的图形。
+与查看地理点列表不同，地图应用以图形方式呈现位置，并允许用户标记目的地。根据用户交互和网络资源确定的模式，有两种不同的地图显示方式。
 
-**1.** 创建一个新文档并输入以下标记代码：
+在线工作时，可以使用 HTML 控件与在线地图 API 通信，并渲染通过 HTTP 传输的图形。离线工作时，`Image` 组件显示从保存数据加载的图形。
 
-```
+1. 创建一个新文档并输入以下标记代码：
+
+```xml
 <?xml version="1.0" encoding="utf-8"?>
+
 <mx:Box xmlns:mx="http://www.adobe.com/2006/mxml"
     width="100%" height="100%"
     verticalAlign="middle" horizontalAlign="center"
@@ -13361,82 +14040,104 @@ private function invalidateAvailability( args:* ):void
     creationComplete="onCreationComplete();">
 
     <mx:Metadata>
-        [Event(name="change", type="flash.events.Event")]
-        [Event(name="complete", type="flash.events.Event")]
-        [Event(name="prepared", type="flash.events.Event")]
-        [Event(name="requestLocation", type="flash.events.Event")]
-    </mx:Metadata>
-
-    <mx:Script>
-        <![CDATA[
-            import com.aircmr.locator.data.LocatorDataManager;
-            import com.aircmr.locator.data.MarkerVO;
-            import com.aircmr.locator.util.ImageFileBuffer;
-            import mx.binding.utils.BindingUtils;
-            import mx.collections.ArrayCollection;
-            import mx.events.DragEvent;
-            import mx.managers.DragManager;
-            import mx.managers.PopUpManager;
-
-            [Bindable]
-            private var _data:LocatorDataManager;
-            private var _mode:String;
-            private var _htmlLocation:String;
-            private var _isMapAvailable:Boolean;
-
-            private var _tempMarker:MarkerVO;
-            private var _markerForm:MarkerForm;
-
-            public static const MAP_HEIGHT:int = 424;
-            public static const MAP_WIDTH:int = 424;
-            public static const CHANGE:String = "change";
-            public static const COMPLETE:String = "complete";
-            public static const PREPARED:String = "prepared";
-            public static const REQUEST_LOCATION:String = "requestLocation";
-
-            private function onCreationComplete():void
-            {
-                _data = LocatorDataManager.getInstance();
-                BindingUtils.bindSetter(invalidateAddress,_data,"currentAddress");
-                BindingUtils.bindSetter(invalidateMode,this,"mode");
-            }
-
-            private function invalidateMode( arg:* ):void
-            {
-                switch( _mode )
-                {
-                    case ModeType.ONLINE:
-                        if( _isMapAvailable )
-                            map.domWindow.showDefault();
-                        displayCtrl.selectedChild = onlineCtrl;
-                        break;
-                    case ModeType.OFFLINE:
-                        displayCtrl.selectedChild = offlineCtrl;
-                        if( image == null ) return;
-                        image.source = null;
-                        markerLayer.removeAllChildren();
-                        break;
-                }
-            }
-        ]]>
-    </mx:Script>
-```
 
 
-
-## 第9章：地图应用
 
 ```actionscript
-private function invalidateAddress( arg:* ) :void
+[Event(name="change", type="flash.events.Event")]
+
+[Event(name="complete", type="flash.events.Event")]
+
+[Event(name="prepared", type="flash.events.Event")]
+
+[Event(name="requestLocation", type="flash.events.Event")]
+
+</mx:Metadata>
+
+<mx:Script>
+
+<![CDATA[
+
+import com.aircmr.locator.data.LocatorDataManager;
+import com.aircmr.locator.data.MarkerVO;
+import com.aircmr.locator.util.ImageFileBuffer;
+import mx.binding.utils.BindingUtils;
+import mx.collections.ArrayCollection;
+import mx.events.DragEvent;
+import mx.managers.DragManager;
+import mx.managers.PopUpManager;
+
+[Bindable]
+private var _data:LocatorDataManager;
+
+private var _mode:String;
+private var _htmlLocation:String;
+private var _isMapAvailable:Boolean;
+private var _tempMarker:MarkerVO;
+private var _markerForm:MarkerForm;
+
+public static const MAP_HEIGHT:int = 424;
+public static const MAP_WIDTH:int = 424;
+public static const CHANGE:String = "change";
+public static const COMPLETE:String = "complete";
+public static const PREPARED:String = "prepared";
+public static const REQUEST_LOCATION:String = "requestLocation";
+
+private function onCreationComplete():void
 {
-    switch( _mode )
+    _data = LocatorDataManager.getInstance();
+
+    BindingUtils.bindSetter(invalidateAddress, _data, "currentAddress");
+    BindingUtils.bindSetter(invalidateMode, this, "mode");
+}
+
+private function invalidateMode(arg:*):void
+{
+    switch (_mode)
     {
         case ModeType.ONLINE:
-            map.domWindow.locateAddress( unescape(
-                                            _data.currentAddress ) );
+            if (_isMapAvailable)
+            {
+                map.domWindow.showDefault();
+            }
+
+            displayCtrl.selectedChild = onlineCtrl;
+            break;
+
+        case ModeType.OFFLINE:
+            displayCtrl.selectedChild = offlineCtrl;
+
+            if (image == null)
+            {
+                return;
+            }
+
+            image.source = null;
+            markerLayer.removeAllChildren();
+            break;
+    }
+}
+
+]]>
+</mx:Script>
+```
+
+# 第9章：地图应用
+
+```actionscript
+private function invalidateAddress(arg:*):void
+{
+    switch (_mode)
+    {
+        case ModeType.ONLINE:
+            map.domWindow.locateAddress(
+                unescape(_data.currentAddress)
+            );
+
             map.domWindow.returnMarkers = onHTMLMarkers;
             map.domWindow.returnClean = onMapPrepared;
             break;
+
         case ModeType.OFFLINE:
             markerLayer.removeAllChildren();
             dispatchEvent(new Event(LocationDisplay.REQUEST_LOCATION));
@@ -13447,28 +14148,35 @@ private function invalidateAddress( arg:* ) :void
 private function onMapLoadComplete():void
 {
     _isMapAvailable = true;
-    dispatchEvent( new Event( LocationDisplay.COMPLETE ) );
+    dispatchEvent(new Event(LocationDisplay.COMPLETE));
 }
 
 private function onMapLocationChange():void
 {
-    dispatchEvent( new Event( LocationDisplay.CHANGE ) );
+    dispatchEvent(new Event(LocationDisplay.CHANGE));
 }
 
-private function onHTMLMarkers( value:Object, ...args ):void
+private function onHTMLMarkers(value:Object, ...args):void
 {
-    if( value == null ) return;
+    if (value == null)
+    {
+        return;
+    }
+
     var jsMarkers:* = value;
     var markers:ArrayCollection = _data.markers;
-    for( var i:int = 0; i < jsMarkers.length; i++ )
+
+    for (var i:int = 0; i < jsMarkers.length; i++)
     {
         var jsMarker:Object = jsMarkers[i];
         var marker:MarkerVO;
         var xyPt:Object = jsMarker._xy;
-        for( var j:int = 0; j < markers.length; j++ )
+
+        for (var j:int = 0; j < markers.length; j++)
         {
             marker = markers.getItemAt(j) as MarkerVO;
-            if( marker.jsId == jsMarker.id )
+
+            if (marker.jsId == jsMarker.id)
             {
                 marker.locationId = _data.location.id;
                 marker.x = xyPt.x;
@@ -13476,126 +14184,163 @@ private function onHTMLMarkers( value:Object, ...args ):void
             }
         }
     }
+
     map.domWindow.clean();
 }
 
 private function onMapPrepared():void
 {
-    if( _data.location.content != "" )
+    if (_data.location.content != "")
     {
         // 覆盖图像文件...
-        ImageFileBuffer.bufferImage( map,
-                                    _data.location.content.replace( /.png/, '' ) );
+        ImageFileBuffer.bufferImage(
+            map,
+            _data.location.content.replace(/.png/, '')
+        );
     }
     else
     {
         // 创建新的图像文件...
-        _data.location.content = ImageFileBuffer.bufferImage( map,
-                                        ( new Date() ).getTime().toString() );
+        _data.location.content = ImageFileBuffer.bufferImage(
+            map,
+            (new Date()).getTime().toString()
+        );
     }
+
     map.domWindow.reset();
-    dispatchEvent( new Event( LocationDisplay.PREPARED ) );
+    dispatchEvent(new Event(LocationDisplay.PREPARED));
 }
 
-private function onDragEnter( evt:DragEvent ):void
+private function onDragEnter(evt:DragEvent):void
 {
     dropCanvas.mouseEnabled = true;
-    if( mode == ModeType.ONLINE )
+
+    if (mode == ModeType.ONLINE)
     {
         map.domWindow.disableDrag();
     }
-    DragManager.acceptDragDrop( dropCanvas );
+
+    DragManager.acceptDragDrop(dropCanvas);
 }
 
-private function onDragExit( evt:DragEvent ):void
+private function onDragExit(evt:DragEvent):void
 {
     dropCanvas.mouseEnabled = false;
-    if( mode == ModeType.ONLINE )
+
+    if (mode == ModeType.ONLINE)
     {
         map.domWindow.enableDrag();
     }
 }
 
-private function onDragDrop( evt:DragEvent ):void
+private function onDragDrop(evt:DragEvent):void
 {
     dropCanvas.mouseEnabled = false;
-    switch( mode )
+
+    switch (mode)
     {
         case ModeType.ONLINE:
             var jsMarker:Object =
-                map.domWindow.addTempMarkerAt( evt.localX, evt.localY );
-            _tempMarker = new MarkerVO( -1, -1, jsMarker.id );
+                map.domWindow.addTempMarkerAt(evt.localX, evt.localY);
+
+            _tempMarker = new MarkerVO(-1, -1, jsMarker.id);
             map.domWindow.enableDrag();
             break;
+
         case ModeType.OFFLINE:
-            _tempMarker = evt.dragSource.dataForFormat("marker")
-                                                  as MarkerVO;
+            _tempMarker =
+                evt.dragSource.dataForFormat("marker") as MarkerVO;
+
             _tempMarker.x = evt.localX;
             _tempMarker.y = evt.localY;
-            addMarker( _tempMarker, true );
+
+            addMarker(_tempMarker, true);
             break;
     }
+
     openMarkerForm();
 }
 
 private function openMarkerForm():void
 {
-    _markerForm = ( PopUpManager.createPopUp( this, MarkerForm, true ) as MarkerForm );
-    _markerForm.x = x + ( width - _markerForm.width ) / 2;
-    _markerForm.y = y + ( height - _markerForm.height ) / 2;
+    _markerForm =
+        PopUpManager.createPopUp(this, MarkerForm, true) as MarkerForm;
+
+    _markerForm.x = x + (width - _markerForm.width) / 2;
+    _markerForm.y = y + (height - _markerForm.height) / 2;
     _markerForm.data = _tempMarker;
-    _markerForm.addEventListener( MarkerForm.CANCEL, onMarkerCancel );
-    _markerForm.addEventListener( MarkerForm.SAVE, onMarkerSave );
+
+    _markerForm.addEventListener(MarkerForm.CANCEL, onMarkerCancel);
+    _markerForm.addEventListener(MarkerForm.SAVE, onMarkerSave);
 }
 
 private function closeMarkerForm():void
 {
     _tempMarker = null;
-    PopUpManager.removePopUp( _markerForm );
+    PopUpManager.removePopUp(_markerForm);
 }
 
-private function onMarkerCancel( evt:Event ):void
+private function onMarkerCancel(evt:Event):void
 {
-    if( mode == ModeType.ONLINE )
+    if (mode == ModeType.ONLINE)
     {
-        map.domWindow.removeMarker( _tempMarker.jsId );
+        map.domWindow.removeMarker(_tempMarker.jsId);
     }
     else
     {
-        markerLayer.removeChildAt( markerLayer.numChildren - 1 );
+        markerLayer.removeChildAt(markerLayer.numChildren - 1);
     }
+
     closeMarkerForm();
 }
 
-private function onMarkerSave( evt:Event ):void
+private function onMarkerSave(evt:Event):void
 {
     _tempMarker.caption = unescape(
-        escape(_tempMarker.caption).split( "%0D" ).join( "<br/>" ) );
-    _data.addMarker( _tempMarker );
-    if( mode == ModeType.ONLINE )
+        escape(_tempMarker.caption)
+            .split("%0D")
+            .join("<br/>")
+    );
+
+    _data.addMarker(_tempMarker);
+
+    if (mode == ModeType.ONLINE)
     {
-        map.domWindow.saveMessageToMarker( _tempMarker.caption );
+        map.domWindow.saveMessageToMarker(_tempMarker.caption);
     }
+
     closeMarkerForm();
 }
 
-public function addMarker(value:MarkerVO, isTemp:Boolean = false):void
+public function addMarker(
+    value:MarkerVO,
+    isTemp:Boolean = false
+):void
 {
     var marker:Marker = new Marker();
+
     marker.data = value;
     marker.x = value.x;
     marker.y = value.y - marker.height;
-    markerLayer.addChild( marker );
-    if( !isTemp ) _data.addMarker( value );
+
+    markerLayer.addChild(marker);
+
+    if (!isTemp)
+    {
+        _data.addMarker(value);
+    }
 }
 
 public function prepareForSave():void
 {
-    if( mode == ModeType.ONLINE )
+    if (mode == ModeType.ONLINE)
     {
         map.domWindow.getAllVisibleMarkers();
     }
-    else dispatchEvent( new Event( LocationDisplay.PREPARED ) );
+    else
+    {
+        dispatchEvent(new Event(LocationDisplay.PREPARED));
+    }
 }
 
 [Bindable]
@@ -13603,7 +14348,8 @@ public function get mode():String
 {
     return _mode;
 }
-public function set mode( str:String ):void
+
+public function set mode(str:String):void
 {
     _mode = str;
 }
@@ -13613,50 +14359,77 @@ public function get htmlLocation():String
 {
     return _htmlLocation;
 }
-public function set htmlLocation( str:String ):void
+
+public function set htmlLocation(str:String):void
 {
     _htmlLocation = str;
     map.location = _htmlLocation;
 }
-]]></mx:Script>
+
+]]>
+</mx:Script>
+
 <mx:Canvas width="{MAP_WIDTH}" height="{MAP_HEIGHT}">
-    <mx:ViewStack id="displayCtrl"
-        width="100%" height="100%">
-        <mx:Canvas id="onlineCtrl"
-            width="100%" height="100%">
-            <mx:HTML id="map"
-                width="{MAP_WIDTH}" height="{MAP_HEIGHT}"
-                complete="onMapLoadComplete();"
-                locationChange="onMapLocationChange();"
-                />
-        </mx:Canvas>
-        <mx:Canvas id="offlineCtrl"
-            width="100%" height="100%"
-            borderStyle="solid" borderColor="0x999999">
-            <mx:Image id="image"
-                width="100%" height="100%"
-                source="{_data.location.content}"
-                />
-            <mx:Canvas id="markerLayer"
-                width="100%" height="100%"
-                />
-        </mx:Canvas>
-    </mx:ViewStack>
-    <mx:Canvas id="dropCanvas"
-        width="100%" height="100%"
-        alpha="0" backgroundColor="0x000000"
-        dragEnter="onDragEnter(event);"
-        dragDrop="onDragDrop(event);"
-        dragExit="onDragExit(event);"
-        mouseEnabled="false"
-        />
+
+    <mx:ViewStack
+        id="displayCtrl"
+        width="100%"
+        height="100%">
+
+        <mx:Canvas
+            id="onlineCtrl"
+            width="100%"
+            height="100%">
+
+            <mx:HTML
+                id="map"
+                width="{MAP_WIDTH}"
+                height="{MAP_HEIGHT}"
+```
+
+
+
+```xml
+complete="onMapLoadComplete();"
+locationChange="onMapLocationChange();"
+/>
+
 </mx:Canvas>
+
+<mx:Canvas id="offlineCtrl"
+    width="100%" height="100%"
+    borderStyle="solid" borderColor="0x999999">
+
+    <mx:Image id="image"
+        width="100%" height="100%"
+        source="{_data.location.content}"
+    />
+
+    <mx:Canvas id="markerLayer"
+        width="100%" height="100%"
+    />
+
+</mx:Canvas>
+
+</mx:ViewStack>
+
+<mx:Canvas id="dropCanvas"
+    width="100%" height="100%"
+    alpha="0" backgroundColor="0x000000"
+    dragEnter="onDragEnter(event);"
+    dragDrop="onDragDrop(event);"
+    dragExit="onDragExit(event);"
+    mouseEnabled="false"
+/>
+
+</mx:Canvas>
+
 </mx:Box>
 ```
 
-2.  将文件保存为 `LocationDisplay.mxml`，置于您工作目录下的 `com/aircmr/locator/ui` 目录中。
+2. 将文件保存为`LocationDisplay.mxml`，置于您工作目录下的`com/aircmr/locator/ui`目录中。
 
-3.  创建一个新文档并输入以下 ActionScript：
+3. 创建一个新文档并输入以下 ActionScript：
 
 ```actionscript
 package com.aircmr.locator.util
@@ -13667,7 +14440,6 @@ package com.aircmr.locator.util
     import flash.filesystem.FileMode;
     import flash.filesystem.FileStream;
     import flash.utils.ByteArray;
-
     import mx.graphics.codec.PNGEncoder;
 
     public class ImageFileBuffer
@@ -13675,20 +14447,28 @@ package com.aircmr.locator.util
         private static const STORAGE_DIR:String = "app-storage:/";
         public static const FILE_EXTENSION:String = ".png";
 
-        public static function bufferImage( target:DisplayObject, name:String,
-                                            w:Number = 0, h:Number = 0 ):String
+        public static function bufferImage(
+            target:DisplayObject,
+            name:String,
+            w:Number = 0,
+            h:Number = 0
+        ):String
         {
-            var width:Number = ( w == 0 ) ? target.width : w;
-            var height:Number = ( h == 0 ) ? target.height : h;
+            var width:Number = (w == 0) ? target.width : w;
+            var height:Number = (h == 0) ? target.height : h;
+
             var file:File = new File();
             file.url = STORAGE_DIR;
-            file = file.resolvePath( name + FILE_EXTENSION );
-            var bmp:BitmapData = new BitmapData( width, height );
-            bmp.draw( target );
-            var bytes:ByteArray = new PNGEncoder().encode( bmp );
+            file = file.resolvePath(name + FILE_EXTENSION);
+
+            var bmp:BitmapData = new BitmapData(width, height);
+            bmp.draw(target);
+
+            var bytes:ByteArray = new PNGEncoder().encode(bmp);
             var stream:FileStream = new FileStream();
-            stream.open( file, FileMode.WRITE );
-            stream.writeBytes( bytes );
+
+            stream.open(file, FileMode.WRITE);
+            stream.writeBytes(bytes);
             stream.close();
 
             return STORAGE_DIR + file.name;
@@ -13697,35 +14477,35 @@ package com.aircmr.locator.util
 }
 ```
 
-4.  将文件保存为 `ImageFileBuffer.as`，置于您工作目录下的 `com/aircmr/locator/util` 目录中。
-
-
+4. 将文件保存为`ImageFileBuffer.as`，置于您工作目录下的`com/aircmr/locator/util`目录中。
 
 ## 第九章：地图应用
 
-第一个代码片段，保存为 LocationDisplay.mxml，是显示图形化位置并与 HTML 控件的 DOM 对象和方法进行交互的主视图类。根据绑定到 invalidateMode() 方法的 mode 属性，决定是在 ViewStack 容器中显示 HTML 控件还是 Image 控件。
+第一个代码片段保存为`LocationDisplay.mxml`，是显示图形化位置并与 HTML 控件的 DOM 对象和方法进行交互的主视图类。根据绑定到`invalidateMode()`方法的`mode`属性，决定是在`ViewStack`容器中显示 HTML 控件还是 Image 控件。
 
-当用户选择保存当前位置时，会对 HTML 控件中渲染的当前地图图形进行快照，并使用 ImageFileBuffer 类的静态 bufferImage() 方法保存到应用存储目录。返回的路径作为位置的 content 值存储在 LocationVO 对象上，该对象绑定到 Image 控件的 source 属性。
+当用户选择保存当前位置时，会对 HTML 控件中渲染的当前地图图形进行快照，并使用`ImageFileBuffer`类的静态`bufferImage()`方法保存到应用存储目录。返回的路径作为位置的`content`值存储在`LocationVO`对象上，该对象绑定到 Image 控件的`source`属性。
 
-为了在位置上设置目标标记，dropCanvas 容器使用了 Flex 框架的拖放 API 来识别并响应图形显示上发生的鼠标手势。LocationDisplay 组件负责将这些标记添加到显示中，并将它们的数据添加到 LocatorDataManager 单例中。
+为了在位置上设置目标标记，`dropCanvas`容器使用了 Flex 框架的拖放 API 来识别并响应图形显示上发生的鼠标手势。`LocationDisplay`组件负责将这些标记添加到显示中，并将它们的数据添加到`LocatorDataManager`单例中。
 
-在 htmlLocation 属性设置器中，更新了 HTML 控件的 location 属性。当在离线模式下工作时，所选视图会显示与某个位置相关的所有已保存图形。当在线工作时，地图图形是从 Yahoo! Maps AJAX API 返回的。与该 API 的通信是通过 HTML 控件加载的 HTML 文档中的 JavaScript 方法进行的。通过 domWindow 属性，使用点语法访问 HTML 控件上可用的 JavaScript 属性和方法。当 LocatorDataManager 的 currentAddress 属性更新时，会调用 LocationDisplay 实例的 invalidateAddress() 方法，并根据所选模式，与 HTML 文档对象模型 (DOM) 进行通信。
+在`htmlLocation`属性设置器中，更新了 HTML 控件的`location`属性。当在离线模式下工作时，所选视图会显示与某个位置相关的所有已保存图形。当在线工作时，地图图形是从 Yahoo! Maps AJAX API 返回的。与该 API 的通信是通过 HTML 控件加载的 HTML 文档中的 JavaScript 方法进行的。通过`domWindow`属性，使用点语法访问 HTML 控件上可用的 JavaScript 属性和方法。当`LocatorDataManager`的`currentAddress`属性更新时，会调用`LocationDisplay`实例的`invalidateAddress()`方法，并根据所选模式，与 HTML 文档对象模型（DOM）进行通信。
 
-```
-map.domWindow.locateAddress( unescape( _data.currentAddress ) );
+```actionscript
+map.domWindow.locateAddress(unescape(_data.currentAddress));
+
 map.domWindow.returnMarkers = onHTMLMarkers;
+
 map.domWindow.returnClean = onMapPrepared;
 ```
 
-能够在 ActionScript 和 JavaScript 之间桥接通信是 AIR API 的一项非凡能力，这个片段展示了你可以直接调用 JavaScript 方法，甚至可以将 ActionScript 方法分配给 JavaScript 的方法调用。通过这种类型的交互，你可以执行直接在 Flash Player 中渲染的 AJAX 操作！为了全面掌握地图应用如何使用 Yahoo! Maps AJAX API 来显示图形和标记，请创建将加载到 LocationDisplay 组件中的 HTML 文档。
+能够在 ActionScript 和 JavaScript 之间桥接通信是 AIR API 的一项非凡能力，这个片段展示了你可以直接调用 JavaScript 方法，甚至可以将 ActionScript 方法分配给 JavaScript 的方法调用。通过这种类型的交互，你可以执行直接在 Flash Player 中渲染的 AJAX 操作！为了全面掌握地图应用如何使用 Yahoo! Maps AJAX API 来显示图形和标记，请创建将加载到`LocationDisplay`组件中的 HTML 文档。
 
 ### HTML 文档
 
-mx.controls.HTML 控件在 AIR 应用程序中渲染 HTML 内容。location 属性可以是服务器上可用的 HTML 文档的 URL，也可以是文件系统上的路径。地图应用将与 HTML 文档一起打包，该文档将被复制并从应用存储目录加载，用于与 Yahoo! Maps AJAX API 进行通信。
+`mx.controls.HTML`控件在 AIR 应用程序中渲染 HTML 内容。`location`属性可以是服务器上可用的 HTML 文档的 URL，也可以是文件系统上的路径。地图应用将与 HTML 文档一起打包，该文档将被复制并从应用存储目录加载，用于与 Yahoo! Maps AJAX API 进行通信。
 
 创建一个新文档并输入以下标记：
 
-```
+```html
 <html>
     <head>
         <style type="text/css">
@@ -13734,193 +14514,252 @@ mx.controls.HTML 控件在 AIR 应用程序中渲染 HTML 内容。location 属�
                 width: 424px;
             }
         </style>
-<script type="text/javascript"
-src="http://api.maps.yahoo.com/ajaxmap?v=3.7&appid=YOUR_ID_HERE"></script>
-</head>
-<body>
-<div id="mapContainer" />
-<script type="text/javascript">
 
-var tempMarker;
-var markers = new Array();
-var map = new YMap( document.getElementById( 'mapContainer' ),
-                                 YAHOO_MAP_REG );
+        <script
+            type="text/javascript"
+            src="http://api.maps.yahoo.com/ajaxmap?v=3.7&appid=YOUR_ID_HERE">
+        </script>
+    </head>
 
-map.addZoomLong();
-YEvent.Capture( map, EventsList.onEndGeoCode, onGeoCodeResult );
-showDefault();
+    <body>
+        <div id="mapContainer" />
 
-function showDefault()
-{
-    map.removeMarkersAll();
-    map.drawZoomAndCenter(new YGeoPoint( 42.358028, -71.060417 ), 16);
-}
+        <script type="text/javascript">
+            var tempMarker;
+            var markers = new Array();
 
-function locateAddress( address )
-{
-    map.geoCodeAddress( address );
-}
+            var map = new YMap(
+                document.getElementById('mapContainer'),
+                YAHOO_MAP_REG
+            );
 
-function onGeoCodeResult( result )
-{
-    map.drawZoomAndCenter( result.GeoPoint, 5 );
-}
+            map.addZoomLong();
 
-// update xy position of visible marker in latlon - called from
-// getAllVisibleMarkers
-function updateMarker( marker )
-{
-    marker._xy = map.convertLatLonXY( new YGeoPoint(
-                                        marker.YGeoPoint.Lat,
-                                        marker.YGeoPoint.Lon ) );
+            YEvent.Capture(
+                map,
+                EventsList.onEndGeoCode,
+                onGeoCodeResult
+            );
 
-}
+            showDefault();
 
-function clean()
-{
-    map.removeZoomControl();
-    hideMarkers();
-    setTimeout("returnClean()", 1000 );
-}
+            function showDefault()
+            {
+                map.removeMarkersAll();
+                map.drawZoomAndCenter(
+                    new YGeoPoint(42.358028, -71.060417),
+                    16
+                );
+            }
 
-function reset()
-{
-    map.addZoomLong();
-    showMarkers();
-}
+            function locateAddress(address)
+            {
+                map.geoCodeAddress(address);
+            }
 
-function disableDrag()
-{
-    map.disableDragMap();
-}
-function enableDrag()
-{
-    map.enableDragMap();
-}
+            function onGeoCodeResult(result)
+            {
+                map.drawZoomAndCenter(result.GeoPoint, 5);
+            }
 
-function hideMarkers()
-{
-    for( var i = 0; i < markers.length; i++ )
-    {
-        removeMarker( markers[i].id );
-    }
-}
+            // update xy position of visible marker in latlon - called from
+            // getAllVisibleMarkers
+            function updateMarker(marker)
+            {
+                marker._xy = map.convertLatLonXY(
+                    new YGeoPoint(
+                        marker.YGeoPoint.Lat,
+                        marker.YGeoPoint.Lon
+                    )
+                );
+            }
 
-function showMarkers()
-{
-    var marker;
-    for( var i = 0; i < markers.length; i++ )
-    {
-        marker = markers.shift();
-        updateMarker( marker );
-        addTempMarkerAt( marker._xy.x, marker._xy.y, marker.id );
-        saveMessageToMarker( marker.message );
-    }
-}
+            function clean()
+            {
+                map.removeZoomControl();
+                hideMarkers();
+                setTimeout("returnClean()", 1000);
+            }
 
-function convertLatLonXY( pt )
-{
-    return map.convertLatLonXT( pt );
-}
+            function reset()
+            {
+                map.addZoomLong();
+                showMarkers();
+            }
 
-function inBounds( marker, bounds )
-{
-    var pt = marker.YGeoPoint;
-    return ( pt.Lat > bounds.LatMin &&
-             pt.Lat < bounds.LatMax &&
-             pt.Lon > bounds.LonMin &&
-             pt.Lon < bounds.LonMax );
-}
+            function disableDrag()
+            {
+                map.disableDragMap();
+            }
 
-function getAllVisibleMarkers()
-{
-    var bounds = map.getBoundsLatLon();
-    var arr = new Array();
-    for( i = 0; i < markers.length; i++ )
-    {
-        updateMarker( markers[i] );
-        if( inBounds( markers[i], bounds ) ) arr.push( markers[i] );
-    }
-    returnMarkers( arr );
-}
-// arr = MarkerVO[] array from AS
-function addMarkers( arr )
-{
-    for( var i = 0; i < arr.length; i++ )
-    {
-        map.addOverlay( new YMarker( new YGeoPoint( arr[i].latitude,
-                                                   arr[i].longitude ),
-                                     arr[i].jsId ) );
-    }
-}
+            function enableDrag()
+            {
+                map.enableDragMap();
+            }
 
-function addTempMarkerAt( x, y, id )
-{
-    var pt = map.convertXYLatLon( new YCoordPoint( x, y ) );
-    tempMarker = new YMarker( pt, id );
-    map.addOverlay( tempMarker );
-    return tempMarker;
-}
+            function hideMarkers()
+            {
+                for (var i = 0; i < markers.length; i++)
+                {
+                    removeMarker(markers[i].id);
+                }
+            }
 
-function saveMessageToMarker( msg )
-{
-    tempMarker.message = msg;
-    markers.push( tempMarker );
-    var addMarker = markers[markers.length -1];
-    YEvent.Capture( addMarker, EventsList.MouseClick,
-                    function() { addMarker.openSmartWindow( msg ) } );
-    tempMarker = null;
-}
+            function showMarkers()
+            {
+                var marker;
 
-function removeMarker( id )
-{
-    map.removeMarker( id );
-}
-</script>
-</body>
+                for (var i = 0; i < markers.length; i++)
+                {
+                    marker = markers.shift();
+                    updateMarker(marker);
+                    addTempMarkerAt(marker._xy.x, marker._xy.y, marker.id);
+                    saveMessageToMarker(marker.message);
+                }
+            }
+
+            function convertLatLonXY(pt)
+            {
+                return map.convertLatLonXT(pt);
+            }
+
+            function inBounds(marker, bounds)
+            {
+                var pt = marker.YGeoPoint;
+
+                return (
+                    pt.Lat > bounds.LatMin &&
+                    pt.Lat < bounds.LatMax &&
+                    pt.Lon > bounds.LonMin &&
+                    pt.Lon < bounds.LonMax
+                );
+            }
+
+            function getAllVisibleMarkers()
+            {
+                var bounds = map.getBoundsLatLon();
+                var arr = new Array();
+
+                for (i = 0; i < markers.length; i++)
+                {
+                    updateMarker(markers[i]);
+
+                    if (inBounds(markers[i], bounds))
+                    {
+                        arr.push(markers[i]);
+                    }
+                }
+
+                returnMarkers(arr);
+            }
+
+            // arr = MarkerVO[] array from AS
+            function addMarkers(arr)
+            {
+                for (var i = 0; i < arr.length; i++)
+                {
+                    map.addOverlay(
+                        new YMarker(
+                            new YGeoPoint(
+                                arr[i].latitude,
+                                arr[i].longitude
+                            ),
+                            arr[i].jsId
+                        )
+                    );
+                }
+            }
+
+            function addTempMarkerAt(x, y, id)
+            {
+                var pt = map.convertXYLatLon(new YCoordPoint(x, y));
+                tempMarker = new YMarker(pt, id);
+
+                map.addOverlay(tempMarker);
+
+                return tempMarker;
+            }
+
+            function saveMessageToMarker(msg)
+            {
+                tempMarker.message = msg;
+                markers.push(tempMarker);
+
+                var addMarker = markers[markers.length - 1];
+
+                YEvent.Capture(
+                    addMarker,
+                    EventsList.MouseClick,
+                    function()
+                    {
+                        addMarker.openSmartWindow(msg);
+                    }
+                );
+
+                tempMarker = null;
+            }
+
+            function removeMarker(id)
+            {
+                map.removeMarker(id);
+            }
+        </script>
+    </body>
 </html>
 ```
 
-将文件保存为 `ymap.html`，放在你的工作目录根目录下。
+将文件保存为`ymap.html`，放在你的工作目录根目录下。
 
-> 你需要注册一个应用程序 ID 才能使用 Yahoo! Maps AJAX API。为此，请访问 https://developer.yahoo.com/wsregapp/index.php。获得应用程序 ID 后，用你获得的 ID 替换 ymap.html 中 <script> 标签里的 "YOUR_ID_HERE" 占位符。
+> 你需要注册一个应用程序 ID 才能使用 Yahoo! Maps AJAX API。为此，请访问`https://developer.yahoo.com/wsregapp/index.php`。获得应用程序 ID 后，用你获得的 ID 替换`ymap.html`中`<script>`标签里的`"YOUR_ID_HERE"`占位符。
 
-当此文件加载到 LocationDisplay 组件的 HTML 控件中时，会从 Yahoo! Maps AJAX API 创建一个新的 YMap 对象，并设置一个完全缩放出来的默认位置。地图应用将在在线工作时与这个 YMap 控件进行交互，以显示位置和目标标记。
+当此文件加载到`LocationDisplay`组件的 HTML 控件中时，会从 Yahoo! Maps AJAX API 创建一个新的`YMap`对象，并设置一个完全缩放出来的默认位置。地图应用将在在线工作时与这个`YMap`控件进行交互，以显示位置和目标标记。
 
-ymap.html 文件上可用的 JavaScript 方法提供了许多与 Yahoo! Maps AJAX API 通信的入口点。为了你正在构建的地图应用的目的，可以拖动和下载地图图形，以及添加和移除标记的功能都是可用的。所有这些方法和属性都可以通过 HTML 控件的 domWindow 属性访问。如前所述，你可以将 ActionScript 方法分配为 JavaScript 方法调用的处理程序，如当应用程序请求所有可见标记时所示：
+`ymap.html`文件上可用的 JavaScript 方法提供了许多与 Yahoo! Maps AJAX API 通信的入口点。为了你正在构建的地图应用的目的，可以拖动和下载地图图形，以及添加和移除标记的功能都是可用的。所有这些方法和属性都可以通过 HTML 控件的`domWindow`属性访问。如前所述，你可以将 ActionScript 方法分配为 JavaScript 方法调用的处理程序，如当应用程序请求所有可见标记时所示：
 
-```
+```javascript
 function getAllVisibleMarkers()
 {
     var bounds = map.getBoundsLatLon();
     var arr = new Array();
-    for( i = 0; i < markers.length; i++ )
-    {
-        updateMarker( markers[i] );
-        if( inBounds( markers[i], bounds ) ) arr.push( markers[i] );
-    }
-    returnMarkers( arr );
+```
+
+
+
+```actionscript
+for ( i = 0; i < markers.length; i++ )
+{
+    updateMarker( markers[i] );
+
+    if ( inBounds( markers[i], bounds ) )
+        arr.push( markers[i] );
 }
+
+returnMarkers( arr );
 ```
 
 `returnMarkers()` 方法在 JavaScript 中被调用，并由 `LocationDisplay` 组件的 `onHTMLMarkers()` 方法处理：
 
-```
+```actionscript
 private function onHTMLMarkers( value:Object, ...args ):void
 {
-    if( value == null ) return;
+    if ( value == null )
+        return;
+
     var jsMarkers:* = value;
     var markers:ArrayCollection = _data.markers;
-    for( var i:int = 0; i < jsMarkers.length; i++ )
+
+    for ( var i:int = 0; i < jsMarkers.length; i++ )
     {
         var jsMarker:Object = jsMarkers[i];
         var marker:MarkerVO;
         var xyPt:Object = jsMarker._xy;
         var coord:* = jsMarker.getCoordPoint();
-        for( var j:int = 0; j < markers.length; j++ )
+
+        for ( var j:int = 0; j < markers.length; j++ )
         {
             marker = markers.getItemAt(j) as MarkerVO;
-            if( marker.jsId == jsMarker.id )
+
+            if ( marker.jsId == jsMarker.id )
             {
                 marker.locationId = _data.location.id;
                 marker.x = xyPt.x;
@@ -13928,36 +14767,35 @@ private function onHTMLMarkers( value:Object, ...args ):void
             }
         }
     }
+
     map.domWindow.clean();
 }
 ```
 
 JavaScript `Array` 对象作为值参数传递给 `onHTMLMarkers()` 方法。在此方法中，`LocatorDataManager` 实例上持有的任何 `MarkerVO` 对象都会用所提供数组的 JavaScript 对象上的属性进行更新。
 
-Yahoo! Maps AJAX API 提供了丰富的内容，远非本章所能涵盖。如果你有兴趣了解更多，请访问 Yahoo! Maps AJAX API 版本 3.7 的在线文档：http://developer.yahoo.com/maps/ajax/V3.7/reference.html。
+Yahoo! Maps AJAX API 提供了丰富的内容，远非本章所能涵盖。如果你有兴趣了解更多，请访问 Yahoo! Maps AJAX API 版本 3.7 的在线文档：<http://developer.yahoo.com/maps/ajax/V3.7/reference.html>。
 
 通过使用在 Yahoo! Maps 的位置上添加标记以表示目标的概念，地图应用在离线模式下也提供了为位置添加标记的功能。
 
-
-
-## 第9章：地图应用
+## 第 9 章：地图应用
 
 ### 显示目的地
 
 你之前创建的 `MarkerVO` 类包含的是与屏幕上位置相关的属性，而非地理坐标。尽管你可以选择在值对象中存储这些点，但它们是你可以添加注释的目的地的图形表示，并且在检索保存的位置数据时可以显示。在本节中，你将创建标记显示以及从 `LocationDisplay` 对象启动的、用于添加相应标题的表单。
 
-1.  创建一个新文档并输入以下标记：
+1. 创建一个新文档并输入以下标记：
 
-```
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <mx:Canvas
     xmlns:mx="http://www.adobe.com/2006/mxml"
-    width="27" height="28">
+    width="27"
+    height="28">
 
     <mx:Script>
         <![CDATA[
             import com.aircmr.locator.data.MarkerVO;
-
             import mx.core.IToolTip;
             import mx.managers.ToolTipManager;
 
@@ -13966,24 +14804,42 @@ Yahoo! Maps AJAX API 提供了丰富的内容，远非本章所能涵盖。如�
 
             private function showCaption( evt:MouseEvent ):void
             {
-                if( _data == null ) return;
+                if ( _data == null )
+                    return;
+
                 marker.addEventListener( MouseEvent.MOUSE_MOVE, updateTooltip );
-                var pt:Point = localToGlobal(new Point( evt.localX, evt.localY ));
+
+                var pt:Point = localToGlobal(
+                    new Point( evt.localX, evt.localY )
+                );
+
                 _tooltip = ToolTipManager.createToolTip(
-                                _data.caption.split("<br/>").join("\r"), pt.x, pt.y );
+                    _data.caption.split("<br/>").join("\r"),
+                    pt.x,
+                    pt.y
+                );
+
                 _tooltip.y -= _tooltip.height;
             }
 
             private function hideCaption( evt:MouseEvent ):void
             {
-                if( _tooltip == null ) return;
+                if ( _tooltip == null )
+                    return;
+
                 ToolTipManager.destroyToolTip( _tooltip );
-                marker.removeEventListener( MouseEvent.MOUSE_MOVE, updateTooltip );
+                marker.removeEventListener(
+                    MouseEvent.MOUSE_MOVE,
+                    updateTooltip
+                );
             }
 
             private function updateTooltip( evt:MouseEvent ):void
             {
-                var pt:Point = localToGlobal(new Point( evt.localX, evt.localY ));
+                var pt:Point = localToGlobal(
+                    new Point( evt.localX, evt.localY )
+                );
+
                 _tooltip.x = pt.x;
                 _tooltip.y = pt.y - _tooltip.height;
             }
@@ -13992,6 +14848,7 @@ Yahoo! Maps AJAX API 提供了丰富的内容，远非本章所能涵盖。如�
             {
                 return _data;
             }
+
             override public function set data( value:Object ):void
             {
                 _data = ( value as MarkerVO );
@@ -14000,23 +14857,25 @@ Yahoo! Maps AJAX API 提供了丰富的内容，远非本章所能涵盖。如�
         ]]>
     </mx:Script>
 
-    <mx:Image id="marker"
+    <mx:Image
+        id="marker"
         source="@Embed(source='/assets/marker_red.png')"
         mouseOver="showCaption(event);"
         mouseOut="hideCaption(event);"
-        />
+    />
 </mx:Canvas>
 ```
 
-2.  将文件保存为 `Marker.mxml`，放在工作目录内的 `com/aircmr/locator/ui` 目录中，与之前创建的 `LocationDisplay.mxml` 文件在一起。
+2. 将文件保存为 `Marker.mxml`，放在工作目录内的 `com/aircmr/locator/ui` 目录中，与之前创建的 `LocationDisplay.mxml` 文件在一起。
 
-3.  创建一个新文档并输入以下标记：
+3. 创建一个新文档并输入以下标记：
 
-```
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <mx:Panel
     xmlns:mx="http://www.adobe.com/2006/mxml"
-    width="300" height="300"
+    width="300"
+    height="300"
     title="Marker"
     creationComplete="onCreationComplete();">
 
@@ -14044,7 +14903,8 @@ Yahoo! Maps AJAX API 提供了丰富的内容，远非本章所能涵盖。如�
             {
                 return _markerData;
             }
-            override public function set data(value:Object):void
+
+            override public function set data( value:Object ):void
             {
                 _markerData = ( value as MarkerVO );
                 super.data = value;
@@ -14052,26 +14912,45 @@ Yahoo! Maps AJAX API 提供了丰富的内容，远非本章所能涵盖。如�
         ]]>
     </mx:Script>
 
-    <mx:VBox width="100%" height="100%"
-             paddingLeft="5" paddingRight="5" paddingTop="5" paddingBottom="5">
+    <mx:VBox
+        width="100%"
+        height="100%"
+        paddingLeft="5"
+        paddingRight="5"
+        paddingTop="5"
+        paddingBottom="5">
+
         <mx:Label text="Add Caption: " />
-        <mx:TextArea id="captionField"
-            width="100%" height="100%"
+
+        <mx:TextArea
+            id="captionField"
+            width="100%"
+            height="100%"
             change="{_markerData.caption = captionField.text}"
         />
-        <mx:HBox width="100%" height="30" horizontalAlign="center">
-            <mx:Button id="saveButton"
-                label="save" click="dispatchEvent( new Event( SAVE ) );"
+
+        <mx:HBox
+            width="100%"
+            height="30"
+            horizontalAlign="center">
+
+            <mx:Button
+                id="saveButton"
+                label="save"
+                click="dispatchEvent( new Event( SAVE ) );"
             />
-            <mx:Button id="cancelButton"
-                label="cancel" click="dispatchEvent( new Event( CANCEL ) );"
+
+            <mx:Button
+                id="cancelButton"
+                label="cancel"
+                click="dispatchEvent( new Event( CANCEL ) );"
             />
         </mx:HBox>
     </mx:VBox>
 </mx:Panel>
 ```
 
-4.  将文件保存为 `MarkerForm.mxml`，放在工作目录内的 `com/aircmr/locator/ui` 目录中。
+4. 将文件保存为 `MarkerForm.mxml`，放在工作目录内的 `com/aircmr/locator/ui` 目录中。
 
 `Marker.mxml` 是目的地的标记显示。你可能注意到它嵌入了工作目录中 `assets` 文件夹下的图形文件 `marker_red.png`。你可以随意创建自己的图形，或者从随附网站上本章代码示例的 `/assets` 文件夹中获取该文件。
 
@@ -14083,11 +14962,12 @@ Yahoo! Maps AJAX API 提供了丰富的内容，远非本章所能涵盖。如�
 
 在前面的章节中，你已经创建了用于显示基于位置的目的地的模型和视图类。目前地图应用缺少的是用于导航和保存这些位置与目的地的用户控件。请记住，可用控件也基于应用程序的当前模式——在线或离线——现在开始编写那些将帮助你找到目的地的类。
 
-1.  创建一个新文档并输入以下标记：
+1. 创建一个新文档并输入以下标记：
 
-```
+```xml
 <?xml version="1.0" encoding="utf-8"?>
-<mx:VBox xmlns:mx="http://www.adobe.com/2006/mxml"
+<mx:VBox
+    xmlns:mx="http://www.adobe.com/2006/mxml"
     xmlns:ui="com.aircmr.locator.ui.*"
     width="100%"
     verticalAlign="middle"
@@ -14106,7 +14986,9 @@ Yahoo! Maps AJAX API 提供了丰富的内容，远非本章所能涵盖。如�
             import mx.binding.utils.BindingUtils;
             import mx.collections.ArrayCollection;
 
-            [Bindable] private var _data:LocatorDataManager;
+            [Bindable]
+            private var _data:LocatorDataManager;
+
             private var _mode:String;
             private var _locations:ArrayCollection;
 
@@ -14122,43 +15004,51 @@ Yahoo! Maps AJAX API 提供了丰富的内容，远非本章所能涵盖。如�
 
             private function invalidateMode( arg:* ):void
             {
-                locationCtrl.selectedChild = ( mode == ModeType.ONLINE )
-                                            ? onlineCtrl : offlineCtrl;
+                locationCtrl.selectedChild =
+                    ( mode == ModeType.ONLINE )
+                    ? onlineCtrl
+                    : offlineCtrl;
+
                 saveField.text = "";
             }
 
             private function validateAddress( str:String ):Boolean
             {
-                return ( str != "" && str != null && str != "Select..." );
+                return (
+                    str != ""
+                    && str != null
+                    && str != "Select..."
+                );
             }
 
             private function requestLocations():void
             {
-                dispatchEvent( new Event( LocationControls.REQUEST_LOCATIONS ) );
-            }
-        ]]>
-    </mx:Script>
 ```
 
 
+
+```actionscript
+dispatchEvent(new Event(LocationControls.REQUEST_LOCATIONS));
+```
 
 ## 第9章：地图应用
 
 ```actionscript
 private function onLocationSearch():void
 {
-    dispatchEvent( new Event( LocationControls.REQUEST_ADDRESS ) );
+    dispatchEvent(new Event(LocationControls.REQUEST_ADDRESS));
 }
 
 private function onLocationSave():void
 {
     // 如果我们更改了名称，则标记为新条目...
-    if( saveField.text != _data.location.name )
+    if (saveField.text != _data.location.name)
     {
         _data.location.id = -1;
         _data.location.name = saveField.text;
     }
-    dispatchEvent( new Event( LocationControls.SAVE ) );
+
+    dispatchEvent(new Event(LocationControls.SAVE));
 }
 
 private function onInputChange():void
@@ -14176,7 +15066,8 @@ public function get mode():String
 {
     return _mode;
 }
-public function set mode( str:String ):void
+
+public function set mode(str:String):void
 {
     _mode = str;
 }
@@ -14186,140 +15077,167 @@ public function get locations():ArrayCollection
 {
     return _locations;
 }
-public function set locations( arr:ArrayCollection ):void
+
+public function set locations(arr:ArrayCollection):void
 {
     _locations = arr;
-    _locations.addItemAt( "Select...", 0 );
+    _locations.addItemAt("Select...", 0);
 }
 
 public function get currentAddress():String
 {
-    return ( _mode == ModeType.ONLINE ) ?
-               addressField.text :
-               locationCB.selectedLabel;
+    return (_mode == ModeType.ONLINE)
+        ? addressField.text
+        : locationCB.selectedLabel;
 }
-
-]]>
 ```
 
 ```xml
 </mx:Script>
 
 <mx:Label text="定位：" />
+
 <mx:HBox width="100%" height="30">
-    <mx:ViewStack id="locationCtrl"
-        width="100%" height="100%">
-        <mx:HBox id="onlineCtrl"
-            width="100%" height="100%"
+    <mx:ViewStack id="locationCtrl" width="100%" height="100%">
+        <mx:HBox
+            id="onlineCtrl"
+            width="100%"
+            height="100%"
             hide="{addressField.text = ''}">
-            <mx:TextInput id="addressField"
+
+            <mx:TextInput
+                id="addressField"
                 width="100%"
-                change="onInputChange();"
-            />
-            <mx:Button id="searchButton"
+                change="onInputChange();" />
+
+            <mx:Button
+                id="searchButton"
                 label="go"
-                click="onLocationSearch();"
-            />
+                click="onLocationSearch();" />
         </mx:HBox>
-        <mx:Canvas id="offlineCtrl"
-            width="100%" height="100%"
+
+        <mx:Canvas
+            id="offlineCtrl"
+            width="100%"
+            height="100%"
             show="requestLocations();"
             hide="{locationCB.selectedIndex = 0}">
-            <mx:ComboBox id="locationCB"
+
+            <mx:ComboBox
+                id="locationCB"
                 width="100%"
                 dataProvider="{locations}"
-                change="onComboChange();"
-            />
+                change="onComboChange();" />
         </mx:Canvas>
     </mx:ViewStack>
 </mx:HBox>
 
 <mx:HRule width="100%" />
-<ui:MarkerBank id="bank"
-    enabled="{validateAddress(_data.currentAddress)}"
-/>
+
+<ui:MarkerBank
+    id="bank"
+    enabled="{validateAddress(_data.currentAddress)}" />
+
 <mx:HRule width="100%" />
 
 <mx:HBox width="100%" height="30">
     <mx:Label text="保存为：" />
-    <mx:TextInput id="saveField"
+
+    <mx:TextInput
+        id="saveField"
         width="100%"
         enabled="{validateAddress(_data.currentAddress)}"
-        text="{_data.location.name}"
-    />
-    <mx:Button label="save"
+        text="{_data.location.name}" />
+
+    <mx:Button
+        label="save"
         enabled="{saveField.text != ''}"
-        click="onLocationSave();"
-    />
+        click="onLocationSave();" />
 </mx:HBox>
 
 </mx:VBox>
 ```
 
-2. 将文件保存为 LocationControls.mxml，位于你的工作目录中的 `com/aircmr/locator/ui` 目录下。
+将文件保存为`LocationControls.mxml`，位于你的工作目录中的`com/aircmr/locator/ui`目录下。
 
-3. 创建一个新文档，并输入以下标记：
+创建一个新文档，并输入以下标记：
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
+
 <mx:HBox
     xmlns:mx="http://www.adobe.com/2006/mxml"
     xmlns:ui="com.aircmr.locator.ui.*"
-    width="100%" height="30"
+    width="100%"
+    height="30"
     verticalAlign="middle">
 
     <mx:Script>
         <![CDATA[
             import com.aircmr.locator.data.MarkerVO;
-
             import mx.containers.Canvas;
             import mx.core.DragSource;
             import mx.managers.DragManager;
 
-            private function onMarkerStart( evt:MouseEvent ):void
+            private function onMarkerStart(evt:MouseEvent):void
             {
-                var pt:Point = marker.localToGlobal( new Point( evt.localX,
-                                                               evt.localY ) );
+                var pt:Point = marker.localToGlobal(
+                    new Point(evt.localX, evt.localY)
+                );
 
                 var source:DragSource = new DragSource();
-                source.addData( new MarkerVO(), "marker" );
-                var bmp:BitmapData = new BitmapData( marker.width, marker.height );
-                bmp.draw( marker );
-                DragManager.doDrag( this, source, evt, marker,
-                                   pt.x - 5, evt.localY - marker.height );
+                source.addData(new MarkerVO(), "marker");
+
+                var bmp:BitmapData = new BitmapData(
+                    marker.width,
+                    marker.height
+                );
+
+                bmp.draw(marker);
+
+                DragManager.doDrag(
+                    this,
+                    source,
+                    evt,
+                    marker,
+                    pt.x - 5,
+                    evt.localY - marker.height
+                );
             }
         ]]>
     </mx:Script>
 
     <mx:Label text="点击并拖动标记到地图上：" />
+
     <ui:Marker id="marker" mouseDown="onMarkerStart(event);" />
 </mx:HBox>
 ```
 
-4. 将文件保存为 MarkerBank.mxml，位于你的工作目录中的 `com/aircmr/locator/ui` 目录下。
+将文件保存为`MarkerBank.mxml`，位于你的工作目录中的`com/aircmr/locator/ui`目录下。
 
-LocationsControls 类包含用于导航到位置和添加目标标记的控件。根据应用程序运行的模式类型，你可以输入或选择一个地址，将请求转发给 Yahoo! Maps AJAX API 或本地数据库。在在线模式下工作时，会显示一个输入框和提交按钮；而在离线模式下，会显示一个 ComboBox，其中包含本地数据库中保存的位置列表。
+`LocationsControls`类包含用于导航到位置和添加目标标记的控件。根据应用程序运行的模式类型，你可以输入或选择一个地址，将请求转发给 Yahoo! Maps AJAX API 或本地数据库。在在线模式下工作时，会显示一个输入框和提交按钮；而在离线模式下，会显示一个`ComboBox`，其中包含本地数据库中保存的位置列表。
 
-LocationControls 组件的主要目的是在用户交互时调度事件，以通知客户端处理请求。LocationControls 组件根据 addressField 的 text 属性或 locationCB 实例的 selectedLabel 属性来调度地址请求。进入离线模式时，LocationControls 还会调度一个事件，请求本地数据库中保存的所有位置。
+`LocationControls`组件的主要目的是在用户交互时调度事件，以通知客户端处理请求。`LocationControls`组件根据`addressField`的`text`属性或`locationCB`实例的`selectedLabel`属性来调度地址请求。进入离线模式时，`LocationControls`还会调度一个事件，请求本地数据库中保存的所有位置。
 
-在保存按钮的 click 事件处理程序中，LocationsControl 类也会调度一个保存事件，表明用户已选择保存当前位置和目标：
+在保存按钮的`click`事件处理程序中，`LocationsControl`类也会调度一个保存事件，表明用户已选择保存当前位置和目标：
 
 ```actionscript
 private function onLocationSave():void
 {
     // 如果我们更改了名称，则标记为新条目...
-    if( saveField.text != _data.location.name )
+    if (saveField.text != _data.location.name)
     {
         _data.location.id = -1;
         _data.location.name = saveField.text;
     }
-    dispatchEvent( new Event( LocationControls.SAVE ) );
+
+    dispatchEvent(new Event(LocationControls.SAVE));
 }
 ```
 
-因为输入到数据库中的位置都有一个由与该位置关联的正整数组成的唯一ID，所以将当前 LocationVO 对象的 id 属性设置为 -1 值会将数据标记为之前未在本地保存过。onLocationSave() 处理程序中的 if 语句检查用户是否一直在处理从数据库接收的数据，并且是否为该数据选择了一个新的关联名称——这将提示处理与数据库通信的客户端添加一个新条目，而不是覆盖任何现有数据。
+因为输入到数据库中的位置都有一个由与该位置关联的正整数组成的唯一 ID，所以将当前`LocationVO`对象的`id`属性设置为`-1`值会将数据标记为之前未在本地保存过。`onLocationSave()`处理程序中的`if`语句检查用户是否一直在处理从数据库接收的数据，并且是否为该数据选择了一个新的关联名称——这将提示处理与数据库通信的客户端添加一个新条目，而不是覆盖任何现有数据。
 
-MarkerBank 组件显示一个 Marker 实例，该实例可以被拖放到任何启用了拖放功能的显示对象上——在本例中，就是 LocationDisplay 组件的显示区域。虽然本示例中的 MarkerBank 组件当前只显示一个带有通用图形的标记，但它可以更新以处理可能具有基于目标类型的特定图形的其他标记——例如吃饭的地方或住宿的地方。
+`MarkerBank`组件显示一个`Marker`实例，该实例可以被拖放到任何启用了拖放功能的显示对象上——在本例中，就是`LocationDisplay`组件的显示区域。虽然本示例中的`MarkerBank`组件当前只显示一个带有通用图形的标记，但它可以更新以处理可能具有基于目标类型的特定图形的其他标记——例如吃饭的地方或住宿的地方。
 
 有了适当的值对象和为与基于目标的位置交互而设置的视图类，在下一节中，你将创建主文件，该文件与本地数据库通信，处理来自这些控件视图的事件，并与数据库服务类进行交互。
 
@@ -14331,6 +15249,7 @@ MarkerBank 组件显示一个 Marker 实例，该实例可以被拖放到任何�
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
+
 <mx:WindowedApplication
     xmlns:mx="http://www.adobe.com/2006/mxml"
     xmlns:ui="com.aircmr.locator.ui.*"
@@ -14372,20 +15291,26 @@ MarkerBank 组件显示一个 Marker 实例，该实例可以被拖放到任何�
         private var _markerIndex:int;
 
         private static const MAP_HTML:String = "ymap.html";
-        private static const CONN_URL:String = 
+
+        private static const CONN_URL:String =
             "http://www.wiley.com/WileyCDA/WileyTitle/productCd-0470182075.html";
 
         private function onAppComplete():void
         {
             _service = new DBService();
-            BindingUtils.bindSetter( invalidateResource, this, "isAvailable" );
+
+            BindingUtils.bindSetter(
+                invalidateResource,
+                this,
+                "isAvailable"
+            );
 
             checkHTMLFile();
             checkConnection();
             createProgress();
         }
 
-        private function invalidateResource( bool:Boolean ):void
+        private function invalidateResource(bool:Boolean):void
         {
             modeControl.isAvailable = bool;
         }
@@ -14394,14 +15319,16 @@ MarkerBank 组件显示一个 Marker 实例，该实例可以被拖放到任何�
         {
 ```
 
-
-
 ## 第9章：地图应用
 
 ```actionscript
-var tFile:File = File.applicationDirectory.resolvePath( MAP_HTML );
+var tFile:File = File.applicationDirectory.resolvePath(MAP_HTML);
+
 tFile.copyTo(
-    File.applicationStorageDirectory.resolvePath( MAP_HTML ), true );
+    File.applicationStorageDirectory.resolvePath(MAP_HTML),
+    true
+);
+
 // 应用HTML地图...
 locationDisplay.htmlLocation = "app-storage:/" + MAP_HTML;
 }
@@ -14411,17 +15338,28 @@ locationDisplay.htmlLocation = "app-storage:/" + MAP_HTML;
 private function checkConnection():void
 {
     modeControl.mode = ModeType.OFFLINE;
+
     var request:URLRequest = new URLRequest();
     request.method = URLRequestMethod.HEAD;
     request.url = CONN_URL;
-    var loader:URLLoader = new URLLoader();
-    loader.addEventListener( HTTPStatusEvent.HTTP_STATUS,
-                             onHttpStatus );
-    loader.addEventListener( IOErrorEvent.IO_ERROR, onStatusError );
-    loader.addEventListener( SecurityErrorEvent.SECURITY_ERROR,
-                             onStatusError );
 
-    loader.load( request );
+    var loader:URLLoader = new URLLoader();
+
+    loader.addEventListener(
+        HTTPStatusEvent.HTTP_STATUS,
+        onHttpStatus
+    );
+```
+
+
+
+```actionscript
+loader.addEventListener( IOErrorEvent.IO_ERROR, onStatusError );
+
+loader.addEventListener( SecurityErrorEvent.SECURITY_ERROR, onStatusError );
+
+loader.load( request );
+
 }
 ```
 
@@ -14432,12 +15370,14 @@ private function createProgress():void
     _progressBar.indeterminate = true;
     _progressBar.labelPlacement = "top";
 }
+
 private function showProgress( msg:String ):void
 {
     _progressBar.label = msg;
     PopUpManager.addPopUp( _progressBar, this, true );
     PopUpManager.centerPopUp( _progressBar );
 }
+
 private function hideProgress():void
 {
     PopUpManager.removePopUp( _progressBar );
@@ -14449,6 +15389,7 @@ private function onHttpStatus( evt:HTTPStatusEvent ):void
 {
     isAvailable = evt.status < 400;
 }
+
 private function onStatusError( evt:IOErrorEvent ):void
 {
     isAvailable = false;
@@ -14499,9 +15440,11 @@ private function onLocationResult( evt:DBResultEvent ):void
     _service.removeEventListener( DBResultEvent.LOCATION_RETRIEVED,
         onLocationResult );
     if( evt.result.data == null ) return;
+
     var result:LocationVO = evt.result.data[0] as LocationVO;
     result.deserialize();
     LocatorDataManager.getInstance().location = result;
+
     _service.addEventListener( DBResultEvent.MARKER_RETRIEVED_ALL,
         onMarkersResult );
     _service.retrieveMarkersFromLocation( result.id );
@@ -14518,8 +15461,10 @@ private function onLocationsResult( evt:DBResultEvent ):void
 {
     _service.removeEventListener( DBResultEvent.LOCATION_RETRIEVED_ALL,
         onLocationsResult );
+
     var result:Array = evt.result.data;
     var dp:ArrayCollection = new ArrayCollection();
+
     if( result != null )
     {
         for( var i:int = 0; i < result.length; i++ )
@@ -14527,21 +15472,26 @@ private function onLocationsResult( evt:DBResultEvent ):void
             dp.addItem( {label:unescape( result[i].name )} );
         }
     }
+
     locationControl.locations = dp;
 }
 
 private function onMarkersResult( evt:DBResultEvent ):void
 {
     _service.removeEventListener( DBResultEvent.MARKER_RETRIEVED_ALL,
-                                onMarkersResult );
+        onMarkersResult );
+
     var result:Array = evt.result.data;
+
     if( result != null )
     {
         var marker:MarkerVO;
+
         for( var i:int = 0; i < result.length; i++ )
         {
             marker = result[i] as MarkerVO;
             if( marker == null ) continue;
+
             marker.deserialize();
             locationDisplay.addMarker( marker );
         }
@@ -14552,6 +15502,7 @@ private function saveNextMarker( evt:DBResultEvent = null ):void
 {
     var markers:ArrayCollection =
         LocatorDataManager.getInstance().markers;
+
     if( evt != null )
     {
         markers.getItemAt( _markerIndex ).id = evt.result.data[0].id;
@@ -14562,13 +15513,14 @@ private function saveNextMarker( evt:DBResultEvent = null ):void
     {
         markers.getItemAt( _markerIndex ).locationId =
             LocatorDataManager.getInstance().location.id;
-        _service.saveMarker( markers.getItemAt( _markerIndex )
-                            as MarkerVO );
+
+        _service.saveMarker(
+            markers.getItemAt( _markerIndex ) as MarkerVO );
     }
     else
     {
         _service.removeEventListener( DBResultEvent.MARKER_SAVED,
-                                     saveNextMarker );
+            saveNextMarker );
         hideProgress();
     }
 }
@@ -14578,12 +15530,15 @@ private function onSaveLocation():void
     showProgress( "正在保存位置..." );
     locationDisplay.prepareForSave();
 }
+
 private function onLocationSaved( evt:DBResultEvent ):void
 {
     LocatorDataManager.getInstance().location.id =
-                                evt.result.data[0].id;
+        evt.result.data[0].id;
+
     _service.addEventListener( DBResultEvent.MARKER_SAVED,
-                                saveNextMarker );
+        saveNextMarker );
+
     _markerIndex = 0;
     saveNextMarker();
 }
@@ -14591,8 +15546,10 @@ private function onLocationSaved( evt:DBResultEvent ):void
 public function saveLocation():void
 {
     _service.addEventListener( DBResultEvent.LOCATION_SAVED,
-                                onLocationSaved );
-    _service.saveLocation( LocatorDataManager.getInstance().location );
+        onLocationSaved );
+
+    _service.saveLocation(
+        LocatorDataManager.getInstance().location );
 }
 
 [Bindable]
@@ -14600,11 +15557,14 @@ public function get isAvailable():Boolean
 {
     return _isAvailable;
 }
+
 public function set isAvailable( bool:Boolean ):void
 {
     _isAvailable = bool;
 }
+
 ]]>
+
 </mx:Script>
 
 <mx:VBox width="100%" height="100%">
@@ -14616,6 +15576,7 @@ public function set isAvailable( bool:Boolean ):void
             requestLocations="onLocationsRequest();"
             save="onSaveLocation();"
             />
+
         <ui:LocationDisplay id="locationDisplay"
             width="100%" height="100%"
             change="onDisplayChange();"
@@ -14625,51 +15586,76 @@ public function set isAvailable( bool:Boolean ):void
             styleName="displayHolder"
             />
     </mx:HBox>
+
     <ui:ModeControls id="modeControl"
         width="100%" height="34"
         styleName="displayHolder"
         modeChanged="onModeChanged();"
         />
 </mx:VBox>
+
 </mx:WindowedApplication>
 ```
 
-将文件保存为 `Locator.mxml`，放在您的工作目录根目录中，与先前创建的文件 `ymap.html` 并列。
+将文件保存为`Locator.mxml`，放在您的工作目录根目录中，与先前创建的文件`ymap.html`并列。
 
-主应用程序文件的布局将 `LocationControls` 和 `LocationDisplay` 视图水平并排显示，而 `ModeControls` 组件则垂直添加到显示列表的下方。请注意，所有从这些组件触发的事件都在 `Locator` 中处理，以更新数据模型并请求您在“查询数据库”部分中创建的数据库服务。
+主应用程序文件的布局将`LocationControls`和`LocationDisplay`视图水平并排显示，而`ModeControls`组件则垂直添加到显示列表的下方。请注意，所有从这些组件触发的事件都在`Locator`中处理，以更新数据模型并请求您在“查询数据库”部分中创建的数据库服务。
 
-在应用程序初始化并添加到显示列表后，`onAppComplete()` 事件处理程序会创建一个 `DBService` 实例，如果本地数据库尚不存在，该实例会进而在应用程序存储目录中创建一个。同样被复制到应用程序存储目录的还有在应用程序资源目录中找到的 `ymap.html` 文件：
+在应用程序初始化并添加到显示列表后，`onAppComplete()`事件处理程序会创建一个`DBService`实例，如果本地数据库尚不存在，该实例会进而在应用程序存储目录中创建一个。同样被复制到应用程序存储目录的还有在应用程序资源目录中找到的`ymap.html`文件：
 
 ```actionscript
 private function checkHTMLFile():void
 {
-    var tFile:File = File.applicationDirectory.resolvePath( MAP_HTML );
-    tFile.copyTo( File.applicationStorageDirectory.resolvePath( MAP_HTML ), true );
+    var tFile:File =
+        File.applicationDirectory.resolvePath( MAP_HTML );
+
+    tFile.copyTo(
+        File.applicationStorageDirectory.resolvePath( MAP_HTML ),
+        true
+    );
+
     // 应用HTML地图...
     locationDisplay.htmlLocation = "app-storage:/" + MAP_HTML;
 }
 ```
 
-除了这些操作外，`Locator` 还建立了一个到 `isAvailable` 属性的绑定，该属性连接到一个更新 `ModeControls` 实例上属性的函数。`ModeControls` 类允许用户在可用互联网连接时使用离线或在线模式。如果没有连接，用户只能访问离线可用的数据。此限制是由于更新了 `ModeControls` 实例的 `isAvailable` 属性，其值由为 `<mx:WindowedApplication>` 应用程序根标签中声明的 `networkChange` 事件运行的 `checkConnection()` 事件处理程序操作所决定：
+除了这些操作外，`Locator`还建立了一个到`isAvailable`属性的绑定，该属性连接到一个更新`ModeControls`实例上属性的函数。`ModeControls`类允许用户在可用互联网连接时使用离线或在线模式。如果没有连接，用户只能访问离线可用的数据。
+
+此限制是由于更新`ModeControls`实例的`isAvailable`属性，其值由为`<mx:WindowedApplication>`应用程序根标签中声明的`networkChange`事件运行的`checkConnection()`事件处理程序操作所决定：
 
 ```actionscript
 private function checkConnection():void
 {
     modeControl.mode = ModeType.OFFLINE;
+
     var request:URLRequest = new URLRequest();
     request.method = RequestMethod.HEAD;
     request.url = CONN_URL;
+
     var loader:URLLoader = new URLLoader();
-    loader.addEventListener( HTTPStatusEvent.HTTP_STATUS, onHttpStatus );
-    loader.addEventListener( IOErrorEvent.IO_ERROR, onStatusError );
-    loader.addEventListener( SecurityErrorEvent.SECURITY_ERROR, onStatusError );
+
+    loader.addEventListener(
+        HTTPStatusEvent.HTTP_STATUS,
+        onHttpStatus
+    );
+
+    loader.addEventListener(
+        IOErrorEvent.IO_ERROR,
+        onStatusError
+    );
+
+    loader.addEventListener(
+        SecurityErrorEvent.SECURITY_ERROR,
+        onStatusError
+    );
+
     loader.load( request );
 }
 ```
 
+
+
 会发出一个 HTTP `HEAD` 请求以确认应用程序有可用的互联网连接，前提是状态码低于 400。状态码在 `onHttpStatus()` 事件处理程序中进行检查。
-
-
 
 ## 第九章：地图应用
 
@@ -14677,27 +15663,31 @@ private function checkConnection():void
 
 除了响应网络变化外，`Locator` 在处理来自 `LocationControls` 和 `LocationDisplay` 组件的事件方面也起着重要作用，这些组件需要与数据库服务类通信。虽然大多数对数据库服务的调用是带有相应 `DBService` 结果处理器的简单请求，但地点和标记的保存方式值得仔细研究。当 `LocationControls` 组件触发 `save` 事件时，应用程序会指示 `LocationDisplay` 组件运行适合保存的操作。准备就绪后，将调用 `saveLocation()` 方法：
 
-```
+```actionscript
 public function saveLocation():void
 {
     _service.addEventListener( DBResultEvent.LOCATION_SAVED, onLocationSaved );
     _service.saveLocation( LocatorDataManager.getInstance().location );
 }
+
 private function onLocationSaved( evt:DBResultEvent ):void
 {
     LocatorDataManager.getInstance().location.id = evt.result.data[0].id;
+
     _service.addEventListener( DBResultEvent.MARKER_SAVED, saveNextMarker );
     _markerIndex = 0;
+
     saveNextMarker();
 }
 ```
 
 `LocatorDataManager` 上保存的当前 `LocationVO` 对象被传递给 `DBService` 实例，以向数据库中添加或更新一条记录。成功后，将调用 `onLocationSaved()` 方法，该方法继而根据返回的数据更新 `LocationVO` 对象的 `id` 属性。由于数据库被设置为每个地点记录分配一个唯一 ID，因此该 ID 在 `SQLResult` 对象上可用，并更新地点上的当前属性。同样在 `onLocationSaved()` 方法中，会调用 `saveNextMarker()` 方法开始将 `LocatorDataManager` 实例上保存的每个 `MarkerVO` 对象发送到数据库服务：
 
-```
+```actionscript
 private function saveNextMarker( evt:DBResultEvent = null ):void
 {
     var markers:ArrayCollection = LocatorDataManager.getInstance().markers;
+
     if( evt != null )
     {
         markers.getItemAt( _markerIndex ).id = evt.result.data[0].id;
@@ -14708,6 +15698,7 @@ private function saveNextMarker( evt:DBResultEvent = null ):void
     {
         markers.getItemAt( _markerIndex ).locationId =
                                         LocatorDataManager.getInstance().location.id;
+
         _service.saveMarker( markers.getItemAt( _markerIndex ) as MarkerVO );
     }
     else
@@ -14730,8 +15721,9 @@ private function saveNextMarker( evt:DBResultEvent = null ):void
 
 打开你最喜欢的文本编辑器，创建一个新文档并输入以下标记：
 
-```
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
+
 <application xmlns="http://ns.adobe.com/air/application/1.0">
     <id>com.aircmr.Locator</id>
     <filename>Locator</filename>
@@ -14739,6 +15731,7 @@ private function saveNextMarker( evt:DBResultEvent = null ):void
     <name>Locator</name>
     <description>A destinations-based map application</description>
     <copyright>2007</copyright>
+
     <initialWindow>
         <title>Locator</title>
         <content>Locator.swf</content>
@@ -14748,6 +15741,7 @@ private function saveNextMarker( evt:DBResultEvent = null ):void
         <width>760</width>
         <height>540</height>
     </initialWindow>
+
     <installFolder>AIRCMR/Locator</installFolder>
     <programMenuFolder>AIRCMR</programMenuFolder>
 </application>
@@ -14763,31 +15757,31 @@ private function saveNextMarker( evt:DBResultEvent = null ):void
 
 回顾一下，打包一个 AIR 应用程序需要两个文件——主 SWF 文件和 XML 应用程序描述文件。在本节中，你将使用命令行工具生成 SWF 文件并打包 AIR 应用程序。
 
-> 图形资源 marker_red.png 是 Marker 类中的嵌入式图形，可以在本章源代码（位于随附网站）的 /assets 文件夹中找到，你也可以创建自己的图形。如果你按照本章中的示例操作，图形资源需要位于名为 assets 的文件夹中才能编译源代码。
+> 图形资源 `marker_red.png` 是 `Marker` 类中的嵌入式图形，可以在本章源代码（位于随附网站）的 `/assets` 文件夹中找到，你也可以创建自己的图形。如果你按照本章中的示例操作，图形资源需要位于名为 `assets` 的文件夹中才能编译源代码。
 
 打开命令提示符，导航到 Locator 地图应用程序的工作目录，输入以下命令，然后按 Enter：
 
-```
+```bash
 > amxmlc Locator.mxml
 ```
 
 如果你从证书颁发机构（如 VeriSign 或 Thawte）购买了证书，那么你可以使用该证书，而无需创建自签名证书，并且可以跳过以下操作。要在工作目录中创建自签名证书，请输入以下命令：
 
-```
+```bash
 > adt -certificate -cn Locator 1024-RSA certificate.pfx password
 ```
 
 在命令提示符仍指向工作目录的情况下，输入以下命令以打包 Locator 应用程序：
 
-```
+```bash
 > adt -package -storetype pkcs12 -keystore certificate.pfx Locator.air Locator-app.xml Locator.swf ymap.html
 ```
 
-系统将提示你输入证书密码。如果你是通过第二个命令创建的自签名证书，请输入 `password`。运行这些命令后，你的工作目录中将生成一个 `Locator.swf` 文件、一个 `certificate.pfx` 文件和一个 `Locator.air` 安装程序文件。
+
+
+系统将提示你输入证书密码。如果你是通过第二个命令创建的自签名证书，请输入`password`。运行这些命令后，你的工作目录中将生成一个`Locator.swf`文件、一个`certificate.pfx`文件和一个`Locator.air`安装程序文件。
 
 安装程序创建后，导航到你的工作目录并双击 AIR 安装程序以安装和运行 Locator。如果一切顺利，应用程序将启动并准备好导航到地点并开始添加目的地标记。图 9-1 显示了应用程序在在线模式下的外观。
-
-
 
 ## 第九章：地图应用
 
@@ -14801,7 +15795,7 @@ private function saveNextMarker( evt:DBResultEvent = null ):void
 
 图 9-2
 
-如果你看到的界面与这两个显示类似，那么说明在你的应用存储目录中已经创建了一个包含相应表的本地数据库。在 Windows 系统中，要定位存储目录，请导航至 `C:\Documents and Settings\<username>\Application Data\com.apolloir.Locator\Local Store`。在 Mac 系统中，请导航至 `/Users/<username>/Library/Preferences/com.apolloir.Locator/Local Store`。
+如果你看到的界面与这两个显示类似，那么说明在你的应用存储目录中已经创建了一个包含相应表的本地数据库。在 Windows 系统中，要定位存储目录，请导航至`C:\Documents and Settings\<username>\Application Data\com.apolloir.Locator\Local Store`。在 Mac 系统中，请导航至`/Users/<username>/Library/Preferences/com.apolloir.Locator/Local Store`。
 
 如果你已经保存了一个位置，你会在该目录中看到一个图像文件，文件名是文件创建时的时间戳字符串。
 
@@ -14817,15 +15811,13 @@ private function saveNextMarker( evt:DBResultEvent = null ):void
 
 如果你曾经想在计算机未连接互联网时撰写博客文章，你绝非个例。为了解决这种情况，你可能已经写好了文章并将其保存到某种文本文件中以便稍后发布。当你的计算机再次连接到互联网时，你可能登录了你的博客服务，导航到撰写文章的页面，打开文本文件，然后最后将文本复制并粘贴到表单中。这当然感觉不太高效。肯定有更好的方法。
 
-幸运的是，大多数博客服务和博客软件都提供某种 Web 服务，使第三方软件和应用程序能够与它们进行通信。本章将利用 Google 的 Blogger 服务 (www.blogger.com)。Blogger 是一个简单的博客服务，它有一个非常有用的数据 API，使第三方应用程序能够通过简单的 GET 和 POST 请求检索和发送各种数据。你将在本章中构建的应用程序利用此服务以及 Adobe AIR 中可用的功能，来避免上一段描述的低效率过程。如果你还没有 Blogger 账户，最好在开始本章之前创建一个。
+幸运的是，大多数博客服务和博客软件都提供某种 Web 服务，使第三方软件和应用程序能够与它们进行通信。本章将利用 Google 的 Blogger 服务（`www.blogger.com`）。Blogger 是一个简单的博客服务，它有一个非常有用的数据 API，使第三方应用程序能够通过简单的 GET 和 POST 请求检索和发送各种数据。你将在本章中构建的应用程序利用此服务以及 Adobe AIR 中可用的功能，来避免上一段描述的低效率过程。如果你还没有 Blogger 账户，最好在开始本章之前创建一个。
 
 以下部分讨论了应用程序的设计。这包括管理数据的后勤工作以及用户界面所必需的组件。设计完成后，你将进入代码部分，学习将所有内容连接在一起的重要类和函数。
 
 ## 设计
 
-如果你曾处理过基于浏览器的 Flash 内容，这些内容试图与运行它的服务器以外的服务器进行通信，那么你无疑会遇到一些安全问题。通常，为了使 Web 服务允许基于浏览器/插件的 Flash 内容访问它，必须在应用程序的域的根级别存在一个跨域文件 (crossdomain.xml)。在开发像本章这样的应用程序时，这将是一个问题。
-
-## 第十章：博客代理
+如果你曾处理过基于浏览器的 Flash 内容，这些内容试图与运行它的服务器以外的服务器进行通信，那么你无疑会遇到一些安全问题。通常，为了使 Web 服务允许基于浏览器/插件的 Flash 内容访问它，必须在应用程序的域的根级别存在一个跨域文件（`crossdomain.xml`）。在开发像本章这样的应用程序时，这将是一个问题。
 
 然而，与基于浏览器的 Flash 内容相比，Adobe AIR 内容不需要跨域文件存在即可访问它。换句话说，你不必担心任何安全问题，而本应用程序将利用这一事实。
 
@@ -14843,49 +15835,49 @@ private function saveNextMarker( evt:DBResultEvent = null ):void
 
 这些是 Blogger Agent 应用程序的主要特性。该应用程序相对简单，并将利用 Adobe AIR 中一些出色的功能。在接下来的部分中，你将学习如何着手处理该应用程序以及将使用哪些特定的 Adobe AIR 功能来创建上述概述的功能。
 
+## 第十章：博客代理
+
 ## 管理账户
 
 该应用程序将使用户能够管理与其任何 Blogger 账户相关的所有博客。为了实现这一点，将利用 Blogger Data API，使用户能够检索与其 Blogger 用户名和密码相关的博客列表。用户然后可以从返回的列表中选择一个博客，并将博客信息保存到本地数据库。
 
-你首先将创建一个名为 `BloggerService` 的服务类，以管理与 Blogger Data API 的通信。此类执行用户身份验证并检索该用户凭据的博客列表。其次，为了将博客信息保存到用户的硬盘驱动器以供将来使用，你将创建另一个名为 `DBService` 的服务类。此类利用 Adobe AIR 的原生 SQLite 支持来创建和管理一个小数据库。这两个类的使用如图 10-1 所示。
+你首先将创建一个名为`BloggerService`的服务类，以管理与 Blogger Data API 的通信。此类执行用户身份验证并检索该用户凭据的博客列表。其次，为了将博客信息保存到用户的硬盘驱动器以供将来使用，你将创建另一个名为`DBService`的服务类。此类利用 Adobe AIR 的原生 SQLite 支持来创建和管理一个小数据库。这两个类的使用如图 10-1 所示。
 
 ![](img/dea8bb18fb213671e2a7e04d8fb0d89f_355_0.png)
 
-在数据库中，一个名为 `blogs` 的表保存了博客和用户账户的必要信息。此外，此类利用名为 `LocalEncryptedStore` 的原生 Adobe AIR 类，以加密状态存储用户的密码。`DBService` 类需要一个名为 `DBServiceEvent` 的自定义事件类。最后，你将创建一个名为 `Blog` 的简单对象类。此类用作存储在 SQLite 数据库中的信息的 ActionScript 表示。
+在数据库中，一个名为`blogs`的表保存了博客和用户账户的必要信息。此外，此类利用名为`LocalEncryptedStore`的原生 Adobe AIR 类，以加密状态存储用户的密码。`DBService`类需要一个名为`DBServiceEvent`的自定义事件类。最后，你将创建一个名为`Blog`的简单对象类。此类用作存储在 SQLite 数据库中的信息的 ActionScript 表示。
 
 ## 管理博客文章
 
-除了管理账户外，用户还将能够管理博客文章。由标题和正文组成的博客文章，如果用户连接到互联网，可以立即发布，或者它们将被保存在队列中，待用户重新连接后发布。发布博客文章将由前面提到的 `BloggerService` 类管理。此外，同样前面提到的 `DBService` 类将负责管理保存的博客文章。为了表示一篇博客文章，你将创建一个名为 `BlogEntry` 的简单对象类。此类用作存储在数据库中的信息的 ActionScript 表示。
+除了管理账户外，用户还将能够管理博客文章。由标题和正文组成的博客文章，如果用户连接到互联网，可以立即发布，或者它们将被保存在队列中，待用户重新连接后发布。发布博客文章将由前面提到的`BloggerService`类管理。此外，同样前面提到的`DBService`类将负责管理保存的博客文章。为了表示一篇博客文章，你将创建一个名为`BlogEntry`的简单对象类。此类用作存储在数据库中的信息的 ActionScript 表示。
 
-最后，为了以队列方式发布保存的博客文章，你将创建两个类。`PublishQueueItem` 类持有对 `BlogEntry` 对象和该条目对应的 `Blog` 对象的引用。你将编写的另一个类是一个名为 `QueueService` 的服务类。此类管理保存在数据库中的所有博客文章的后续发布。
+最后，为了以队列方式发布保存的博客文章，你将创建两个类。`PublishQueueItem`类持有对`BlogEntry`对象和该条目对应的`Blog`对象的引用。你将编写的另一个类是一个名为`QueueService`的服务类。此类管理保存在数据库中的所有博客文章的后续发布。
 
 ### 工具类
 
-该应用程序将使用两个工具类，第一个是 `NetworkConnection` 类。此类将利用 Adobe AIR 的 `NativeApplication` 类来检测用户的连接状态何时发生变化。这对于激活或停用特定功能非常有用。例如，如果用户的计算机未连接到互联网，他们就不应该能够发布博客文章或启动发布队列。第二个工具类将帮助为 `BloggerService` 类格式化 XML 文档。Blogger Data API 提供并期望使用标准化的 Atom 1.0 XML 模式的 XML 文档。因此，你将创建一个名为 `AtomUtil` 的类，以帮助解析和格式化用于 Blogger Data API 的 XML。
+该应用程序将使用两个工具类，第一个是`NetworkConnection`类。此类将利用 Adobe AIR 的`NativeApplication`类来检测用户的连接状态何时发生变化。这对于激活或停用特定功能非常有用。例如，如果用户的计算机未连接到互联网，他们就不应该能够发布博客文章或启动发布队列。第二个工具类将帮助为`BloggerService`类格式化 XML 文档。Blogger Data API 提供并期望使用标准化的 Atom 1.0 XML 模式的 XML 文档。因此，你将创建一个名为`AtomUtil`的类，以帮助解析和格式化用于 Blogger Data API 的 XML。
 
 ## 用户界面
 
-该应用程序的用户界面相对简单，由五个组件组成，包括主应用程序组件。用户可以选择三个屏幕中的一个。每个屏幕使用户能够执行不同的操作。用户看到的第一个屏幕是 `BlogManager` 组件。此面板显示所有当前保存的博客列表，如图 10-2 所示。从此屏幕，用户可以添加博客，这会调出 `AddBlogPrompt` 组件。在此提示中，用户输入其用户名和密码以检索博客列表。
+该应用程序的用户界面相对简单，由五个组件组成，包括主应用程序组件。用户可以选择三个屏幕中的一个。每个屏幕使用户能够执行不同的操作。用户看到的第一个屏幕是`BlogManager`组件。此面板显示所有当前保存的博客列表，如图 10-2 所示。从此屏幕，用户可以添加博客，这会调出`AddBlogPrompt`组件。在此提示中，用户输入其用户名和密码以检索博客列表。
 
-用户可以打开的第二个屏幕是 `ComposeEntryPanel` 组件。此屏幕包括一个可供发布的博客下拉列表和一个用于输入博客文章的表单。从此屏幕，用户还可以发布该文章或将其添加到队列，如图 10-3 所示。
-
-
+用户可以打开的第二个屏幕是`ComposeEntryPanel`组件。此屏幕包括一个可供发布的博客下拉列表和一个用于输入博客文章的表单。从此屏幕，用户还可以发布该文章或将其添加到队列，如图 10-3 所示。
 
 ## 第10章：博客代理
 
-用户可能打开的第三个屏幕是`PublishQueuePanel`组件。此屏幕显示当前队列中所有博客条目的列表，如图10-4所示。从这里，只要用户连接到互联网，就可以启动队列。
+用户可能打开的第三个屏幕是`PublishQueuePanel`组件。此屏幕显示当前队列中所有博客条目的列表，如图 10-4 所示。从这里，只要用户连接到互联网，就可以启动队列。
 
 这完成了应用程序设计的概述。下一节将介绍每个类和组件的具体功能。
 
 ## 代码与代码解析
 
-本节将深入探讨应用程序中每个类和组件的代码。在接下来的几节中，你将创建应用程序所需的每个类和组件，并将简要介绍每个组件的重要功能，重点关注Adobe AIR功能以及与应用程序相关的类。在本章末尾，你将通过创建主应用程序文件将所有部分整合在一起。如果尚未完成，请为本应用程序创建一个新的工作目录。
+本节将深入探讨应用程序中每个类和组件的代码。在接下来的几节中，你将创建应用程序所需的每个类和组件，并将简要介绍每个组件的重要功能，重点关注 Adobe AIR 功能以及与应用程序相关的类。在本章末尾，你将通过创建主应用程序文件将所有部分整合在一起。如果尚未完成，请为本应用程序创建一个新的工作目录。
 
 ### 数据对象
 
 本应用程序的数据对象是最简单的部分，所以何不先将它们处理掉。如上一节所述，本应用程序需要三个基本的数据对象类。
 
-- 1. 创建一个新文档并输入以下标记：
+1. 创建一个新文档并输入以下标记：
 
 ```actionscript
 package com.aircmr.bloggeragent.data
@@ -14901,15 +15893,14 @@ package com.aircmr.bloggeragent.data
 
         public function Blog()
         {
-
         }
     }
 }
 ```
 
-- 2. 将文件保存为`Blog.as`，放在你的工作目录内的`com/aircmr/bloggeragent/data/`目录下。
+2. 将文件保存为`Blog.as`，放在你的工作目录内的`com/aircmr/bloggeragent/data/`目录下。
 
-- 3. 创建一个新文档并输入以下标记：
+3. 创建一个新文档并输入以下标记：
 
 ```actionscript
 package com.aircmr.bloggeragent.data
@@ -14923,15 +15914,14 @@ package com.aircmr.bloggeragent.data
 
         public function BlogEntry()
         {
-
         }
     }
 }
 ```
 
-- 4. 将文件保存为`BlogEntry.as`，放在你的工作目录内的`com/aircmr/bloggeragent/data/`目录下。
+4. 将文件保存为`BlogEntry.as`，放在你的工作目录内的`com/aircmr/bloggeragent/data/`目录下。
 
-- 5. 创建一个新文档并输入以下标记：
+5. 创建一个新文档并输入以下标记：
 
 ```actionscript
 package com.aircmr.bloggeragent.data
@@ -14946,19 +15936,18 @@ package com.aircmr.bloggeragent.data
 
         public function PublishQueueItem()
         {
-
         }
     }
 }
 ```
 
-- 6. 将文件保存为`PublishQueueItem.as`，放在你的工作目录内的`com/aircmr/bloggeragent/data/`目录下。
+6. 将文件保存为`PublishQueueItem.as`，放在你的工作目录内的`com/aircmr/bloggeragent/data/`目录下。
 
-在上述六个步骤中，你创建了必要的数据对象类。这些类将作为存储在数据库中的信息的ActionScript表示。`Blog`和`BlogEntry`类包含需要在应用程序中传输的必要属性。属性名称应不言自明。`PublishQueueItem`类将用于在管理发布队列时将`Blog`和`BlogEntry`配对在一起。
+在上述六个步骤中，你创建了必要的数据对象类。这些类将作为存储在数据库中的信息的 ActionScript 表示。`Blog`和`BlogEntry`类包含需要在应用程序中传输的必要属性。属性名称应不言自明。`PublishQueueItem`类将用于在管理发布队列时将`Blog`和`BlogEntry`配对在一起。
 
 ### 事件对象
 
-本应用程序将使用一个自定义事件类。具体来说，它将被`DBService`类用来通知任何监听对象一些关键事件。需要这个自定义事件类，因为对本地SQLite数据库执行的任何操作都是异步发生的。该事件类使应用程序能够在操作完成时向任何监听对象发送结果数据。
+本应用程序将使用一个自定义事件类。具体来说，它将被`DBService`类用来通知任何监听对象一些关键事件。需要这个自定义事件类，因为对本地 SQLite 数据库执行的任何操作都是异步发生的。该事件类使应用程序能够在操作完成时向任何监听对象发送结果数据。
 
 创建一个新文档并输入以下标记：
 
@@ -14978,9 +15967,9 @@ package com.aircmr.bloggeragent.events
 
         private var _data:Object;
 
-        public function DBServiceEvent( type:String, data:Object = null )
+        public function DBServiceEvent(type:String, data:Object = null)
         {
-            super( type );
+            super(type);
             _data = data;
         }
 
@@ -14998,9 +15987,9 @@ package com.aircmr.bloggeragent.events
 
 ### 工具类
 
-本应用程序需要两个工具类。一个将检测用户的计算机是否连接到互联网，另一个将协助创建和解析用于Blogger Data API的Atom 1.0 XML提要。
+本应用程序需要两个工具类。一个将检测用户的计算机是否连接到互联网，另一个将协助创建和解析用于 Blogger Data API 的 Atom 1.0 XML 提要。
 
-- 1. 打开你的编辑器并创建一个新文档。输入以下标记：
+1. 打开你的编辑器并创建一个新文档。输入以下标记：
 
 ```actionscript
 package com.aircmr.net
@@ -15018,7 +16007,6 @@ package com.aircmr.net
     final public class NetworkDetection extends EventDispatcher
     {
         private static var _instance:NetworkDetection = new NetworkDetection();
-
         private var _loader:URLLoader;
         private var _request:URLRequest;
         private var _autoPingOnChange:Boolean = true;
@@ -15027,92 +16015,101 @@ package com.aircmr.net
 
         private static const HTTP_SUCCESS:int = 200;
         private static const REQ_URL:String = "http://www.wrox.com";
+
         public static const SUCCESS:String = "success";
         public static const FAILURE:String = "failure";
-        public static const PROGRESS:String = "progress";
-        public static const PAGE_FAILURE:String = "pageFailure";
-        public static const CONNECTION_CHANGE:String = "connectionChange";
-
-        public static function getInstance():NetworkDetection
-        {
-            return _instance;
-        }
-
-        public function NetworkDetection()
-        {
-            if( _instance == null )
-                init();
-            else
-            {
-                throw new IllegalOperationError( "Error at NetworkDetection. " +
-                    "NetworkDetection is a Singletion and should be " +
-                    "accessed through NetworkDetection:getInstance." );
-            }
-        }
-
-        private function init():void
-        {
-            _request = new URLRequest();
-            _request.method = "HEAD";
-            _loader = new URLLoader();
-            _loader.addEventListener( HTTPStatusEvent.HTTP_STATUS, onHttpStatus );
-            _loader.addEventListener( Event.COMPLETE, onComplete );
-            _loader.addEventListener( IOErrorEvent.IO_ERROR, onError );
-            _loader.addEventListener( SecurityErrorEvent.SECURITY_ERROR, onError );
-            NativeApplication.nativeApplication.addEventListener(
-                Event.NETWORK_CHANGE, onNetworkChange );
-        }
-
-        private function onNetworkChange( evt:Event ):void
-        {
-            dispatchEvent( new Event( Event.NETWORK_CHANGE ) );
-            if( _autoPingOnChange ) checkConnection();
-        }
-
-        private function onHttpStatus( evt:HTTPStatusEvent ):void
-        {
-            _httpSuccessful = ( evt.status == HTTP_SUCCESS );
-        }
-
-        private function onComplete( evt:Event ):void
-        {
-            connected = _httpSuccessful;
-            dispatchEvent( new Event( ( _connected ) ? SUCCESS : PAGE_FAILURE ) );
-        }
-
-        private function onError( evt:IOErrorEvent ):void
-        {
-            connected = false;
-            dispatchEvent( new Event( FAILURE ) );
-        }
-
-        public function checkConnection():void
-        {
-            checkConnectionTo( ( _request.url != null ) ? _request.url : REQ_URL );
-        }
-
-        public function checkConnectionTo( url:String ):void
-        {
-            dispatchEvent( new Event( PROGRESS ) );
-            _request.url = url;
-            _loader.load( _request );
-        }
-
-        public function get autoPingOnChange():Boolean
-        {
-            return _autoPingOnChange;
-        }
-
-        public function set autoPingOnChange( bool:Boolean ):void
-        {
 ```
 
 
 
-## 第10章：博客代理
-
 ```actionscript
-_autoPingOnChange = bool;
+public static const PROGRESS:String = "progress";
+
+public static const PAGE_FAILURE:String = "pageFailure";
+
+public static const CONNECTION_CHANGE:String = "connectionChange";
+
+public static function getInstance():NetworkDetection
+{
+    return _instance;
+}
+
+public function NetworkDetection()
+{
+    if (_instance == null)
+        init();
+    else
+    {
+        throw new IllegalOperationError("Error at NetworkDetection. " +
+            "NetworkDetection is a Singletion and should be " +
+            "accessed through NetworkDetection:getInstance.");
+    }
+}
+
+private function init():void
+{
+    _request = new URLRequest();
+    _request.method = "HEAD";
+
+    _loader = new URLLoader();
+
+    _loader.addEventListener(HTTPStatusEvent.HTTP_STATUS, onHttpStatus);
+    _loader.addEventListener(Event.COMPLETE, onComplete);
+    _loader.addEventListener(IOErrorEvent.IO_ERROR, onError);
+    _loader.addEventListener(SecurityErrorEvent.SECURITY_ERROR, onError);
+
+    NativeApplication.nativeApplication.addEventListener(
+        Event.NETWORK_CHANGE, onNetworkChange);
+}
+
+private function onNetworkChange(evt:Event):void
+{
+    dispatchEvent(new Event(Event.NETWORK_CHANGE));
+
+    if (_autoPingOnChange)
+        checkConnection();
+}
+
+private function onHttpStatus(evt:HTTPStatusEvent):void
+{
+    _httpSuccessful = (evt.status == HTTP_SUCCESS);
+}
+
+private function onComplete(evt:Event):void
+{
+    connected = _httpSuccessful;
+
+    dispatchEvent(new Event((_connected) ? SUCCESS : PAGE_FAILURE));
+}
+
+private function onError(evt:IOErrorEvent):void
+{
+    connected = false;
+
+    dispatchEvent(new Event(FAILURE));
+}
+
+public function checkConnection():void
+{
+    checkConnectionTo((_request.url != null) ? _request.url : REQ_URL);
+}
+
+public function checkConnectionTo(url:String):void
+{
+    dispatchEvent(new Event(PROGRESS));
+
+    _request.url = url;
+    _loader.load(_request);
+}
+
+public function get autoPingOnChange():Boolean
+{
+    return _autoPingOnChange;
+}
+
+public function set autoPingOnChange(bool:Boolean):void
+{
+    _autoPingOnChange = bool;
 }
 
 [Bindable]
@@ -15120,18 +16117,20 @@ public function get connected():Boolean
 {
     return _connected;
 }
-private function set connected( bool:Boolean ):void
+
+private function set connected(bool:Boolean):void
 {
     _connected = bool;
-    dispatchEvent( new Event( CONNECTION_CHANGE ) );
-}
-}
+
+    dispatchEvent(new Event(CONNECTION_CHANGE));
 }
 ```
 
-2. 将文件保存为 `NetworkDetection.as`，置于你工作目录下的 `com/aircmr/net/` 文件夹中。
+## 第10章：博客代理
 
-3. 创建一个新文档，并输入以下标记代码：
+将文件保存为`NetworkDetection.as`，置于你工作目录下的`com/aircmr/net/`文件夹中。
+
+创建一个新文档，并输入以下标记代码：
 
 ```actionscript
 package com.aircmr.bloggeragent.utils
@@ -15141,37 +16140,47 @@ package com.aircmr.bloggeragent.utils
 
     public class AtomUtil
     {
-        namespace atom = "http://www.w3.org/2005/Atom"
+        namespace atom = "http://www.w3.org/2005/Atom";
 
         public static const CONTENT_TYPE:String = "application/atom+xml";
 
-        public static function serializeBlogEntry( entry:BlogEntry ):XML
+        public static function serializeBlogEntry(entry:BlogEntry):XML
         {
             var result:String = new String();
+
             result += '<entry xmlns="http://www.w3.org/2005/Atom">';
             result += '<title type="text">' + entry.title + '</title>';
             result += '<content type="html">' + entry.content + '</content>';
             result += '</entry>';
-            return new XML( result );
+
+            return new XML(result);
         }
 
-        public static function parseBlogList( feed:XML,
-                                             username:String, password:String ):Array
+        public static function parseBlogList(
+            feed:XML,
+            username:String,
+            password:String
+        ):Array
         {
             use namespace atom;
+
             var entries:XMLList = feed.entry;
             var result:Array = new Array();
 
-            for each( var entryItem:XML in entries )
+            for each (var entryItem:XML in entries)
             {
                 var blog:Blog = new Blog();
+
                 blog.title = entryItem.title.toString();
                 blog.description = entryItem.summary.toString();
                 blog.publishURL = entryItem.link.(
-                    @rel.indexOf("#post") > -1 ).@href;
+                    @rel.indexOf("#post") > -1
+                ).@href;
+
                 blog.username = username;
                 blog.password = password;
-                result.push( blog );
+
+                result.push(blog);
             }
 
             return result;
@@ -15180,28 +16189,35 @@ package com.aircmr.bloggeragent.utils
 }
 ```
 
-4. 将文件保存为 `AtomUtil.as`，置于你工作目录下的 `com/aircmr/bloggeragent/utils/` 文件夹中。
+将文件保存为`AtomUtil.as`，置于你工作目录下的`com/aircmr/bloggeragent/utils/`文件夹中。
 
-在步骤1和2中，你创建了 `NetworkDetection` 类。这个类使得应用程序的各个部分能够确定用户是否已连接到互联网，以及他们的连接状态是否发生了变化。下面的代码片段展示了 `NetworkDetection` 类中的 `init` 函数：
+在步骤1和2中，你创建了`NetworkDetection`类。这个类使得应用程序的各个部分能够确定用户是否已连接到互联网，以及他们的连接状态是否发生了变化。下面的代码片段展示了`NetworkDetection`类中的`init`函数：
 
 ```actionscript
 private function init():void
 {
     _request = new URLRequest();
     _request.method = "HEAD";
+
     _loader = new URLLoader();
-    _loader.addEventListener( HTTPStatusEvent.HTTP_STATUS, onHttpStatus );
-    _loader.addEventListener( Event.COMPLETE, onComplete );
-    _loader.addEventListener( IOErrorEvent.IO_ERROR, onError );
-    _loader.addEventListener( SecurityErrorEvent.SECURITY_ERROR, onError );
-    NativeApplication.nativeApplication.addEventListener( Event.NETWORK_CHANGE,
-        onNetworkChange );
+
+    _loader.addEventListener(HTTPStatusEvent.HTTP_STATUS, onHttpStatus);
+    _loader.addEventListener(Event.COMPLETE, onComplete);
+    _loader.addEventListener(IOErrorEvent.IO_ERROR, onError);
+    _loader.addEventListener(SecurityErrorEvent.SECURITY_ERROR, onError);
+
+    NativeApplication.nativeApplication.addEventListener(
+        Event.NETWORK_CHANGE,
+        onNetworkChange
+    );
 }
 ```
 
-请注意 `NativeApplication` 类的使用。这个原生的 Adobe AIR 类提供了应用程序信息、应用程序范围的函数，并派发应用程序级别的事件。它派发的其中一个事件是 `NETWORK_CHANGE` 事件。当用户计算机上的网络资源变为可用或现有连接丢失时，该类的静态 `nativeApplication` 属性会派发此事件。当事件被派发时，这个工具类会检查远程资源（在本例中是 Wrox 网站）是否可用。如果网站被成功加载，`_connection` 属性将被设置，并重新派发一个 `CONNECTION_CHANGE` 事件。正是这个事件，应用程序的组件将监听它，以确定连接是否已从 `true` 变为 `false`，反之亦然。
+请注意`NativeApplication`类的使用。这个原生的 Adobe AIR 类提供了应用程序信息、应用程序范围的函数，并派发应用程序级别的事件。它派发的其中一个事件是`NETWORK_CHANGE`事件。当用户计算机上的网络资源变为可用或现有连接丢失时，该类的静态`nativeApplication`属性会派发此事件。
 
-在步骤3和4中，你创建了 `AtomUtil` 类。`BloggerService` 类将使用这个类来帮助解析和创建 Atom 1.0 订阅源。
+当事件被派发时，这个工具类会检查远程资源（在本例中是 Wrox 网站）是否可用。如果网站被成功加载，`_connection`属性将被设置，并重新派发一个`CONNECTION_CHANGE`事件。正是这个事件，应用程序的组件将监听它，以确定连接是否已从`true`变为`false`，反之亦然。
+
+在步骤3和4中，你创建了`AtomUtil`类。`BloggerService`类将使用这个类来帮助解析和创建 Atom 1.0 订阅源。
 
 ## 博客服务类
 
@@ -15215,6 +16231,7 @@ package com.aircmr.bloggeragent.services
     import com.aircmr.bloggeragent.data.Blog;
     import com.aircmr.bloggeragent.data.BlogEntry;
     import com.aircmr.bloggeragent.utils.AtomUtil;
+
     import flash.errors.IllegalOperationError;
     import flash.events.ErrorEvent;
     import flash.events.Event;
@@ -15226,6 +16243,7 @@ package com.aircmr.bloggeragent.services
     import flash.net.URLRequestHeader;
     import flash.net.URLRequestMethod;
     import flash.net.URLVariables;
+
     import mx.utils.StringUtil;
 
     public class BloggerService extends EventDispatcher
@@ -15234,10 +16252,16 @@ package com.aircmr.bloggeragent.services
 
         public static const BLOG_LIST_RETURNED:String = "blogListReturned";
         public static const BLOG_ENTRY_PUBLISHED:String = "blogEntryPublished";
+
         public static const HTTP_SUCCESS:int = 200;
         public static const HTTP_CREATED:int = 201;
-        public static const AUTH_END_POINT:String = "https://www.google.com/accounts/ClientLogin";
-        public static const BLOG_LIST_END_POINT:String = "http://www.blogger.com/feeds/default/blogs";
+
+        public static const AUTH_END_POINT:String =
+            "https://www.google.com/accounts/ClientLogin";
+
+        public static const BLOG_LIST_END_POINT:String =
+            "http://www.blogger.com/feeds/default/blogs";
+
         public static const SERVICE_NAME:String = "blogger";
 
         private var _appID:String;
@@ -15257,251 +16281,417 @@ package com.aircmr.bloggeragent.services
 
         public function BloggerService()
         {
-            if( _instance != null )
+            if (_instance != null)
             {
-                throw new IllegalOperationError( "Error at :: BloggerService. " +
+                throw new IllegalOperationError("Error at :: BloggerService. " +
                     "BloggerService is a Singleton and should be accessed " +
-                    "through BloggerService.getInstance()." );
-            }
-        }
-
-        private function onLoaderHTTPStatus( event:HTTPStatusEvent ):void
-        {
-            if( event.status != HTTP_SUCCESS && event.status != HTTP_CREATED )
-            {
-                dispatchEvent( new ErrorEvent( ErrorEvent.ERROR, false, false,
-                    "HTTP Error: " + event.status.toString() ) );
-            }
-            _httpStatus = event.status;
-        }
-
-        private function onLoaderIOError( event:IOErrorEvent ):void
-        {
-            dispatchEvent( new ErrorEvent(
-                ErrorEvent.ERROR, false, false, event.text ) );
-        }
-
-        private function onAuthResponse( event:Event ):void
-        {
-            if( _httpStatus == BloggerService.HTTP_SUCCESS )
-            {
-                var response:String = String( event.target.data );
-                var authIndex:Number = response.indexOf("Auth");
-                _authToken = response.substr( authIndex ).split("=")[1];
-                _authToken = StringUtil.trim( _authToken );
-                _authHeader = new URLRequestHeader( "Authorization",
-                    "GoogleLogin auth=" + _authToken );
-
-                if( _authCallback != null )
-                {
-                    if( _authCallbackArgs )
-                        _authCallback.apply( null, _authCallbackArgs );
-                    else
-                        _authCallback();
-                }
-            }
-        }
-
-        private function onBlogFeedResponse( event:Event ):void
-        {
-            if( event.target.data != null )
-            {
-                var xmlData:XML = new XML( String( event.target.data ) );
-                _blogList = AtomUtil.parseBlogList(
-                    xmlData, _username, _password );
-                dispatchEvent( new Event( BLOG_LIST_RETURNED ) );
-            }
-        }
-
-        private function onPublishComplete( event:Event ):void
-        {
-            if( _httpStatus == BloggerService.HTTP_CREATED )
-            {
-                dispatchEvent( new Event( BLOG_ENTRY_PUBLISHED ) );
-            }
-        }
-
-        private function createNewRequest( url:String, method:String,
-            contentType:String = null ):URLRequest
-        {
-            var request:URLRequest = new URLRequest( url );
-            request.requestHeaders.push( _authHeader );
-            request.method = method;
-            if( contentType != null ) request.contentType = contentType;
-            return request;
-        }
-
-        private function authenticate( callback:Function,
-            callbackArgs:Array = null ):void
-        {
-            _authCallback = callback;
-            _authCallbackArgs = callbackArgs;
-
-            var vars:URLVariables = new URLVariables();
-            vars.Email = _username;
-            vars.Passwd = _password;
-            vars.source = _appID;
-            vars.service = SERVICE_NAME;
-
-            var request:URLRequest = new URLRequest();
-            request.method = URLRequestMethod.POST;
-            request.url = AUTH_END_POINT;
-            request.data = vars;
-
-            makeRequest( request, onAuthResponse );
-        }
-
-        private function makeRequest( request:URLRequest, callback:Function ):void
-        {
-            var loader:URLLoader = new URLLoader();
-            loader.addEventListener(
-                HTTPStatusEvent.HTTP_STATUS, onLoaderHttpStatus );
-            loader.addEventListener( IOErrorEvent.IO_ERROR, onLoaderIOError );
-            loader.addEventListener( Event.COMPLETE, callback );
-            loader.load( request );
-        }
-
-        public function getBlogs():void
-        {
-            if( _authToken )
-            {
 ```
 
 
+
+```as
+"through BloggerService.getInstance()." );
+
+}
+
+}
+
+private function onLoaderHTTPStatus( event:HTTPStatusEvent ):void
+
+{
+
+    if( event.status != HTTP_SUCCESS && event.status != HTTP_CREATED )
+
+    {
+
+        dispatchEvent( new ErrorEvent( ErrorEvent.ERROR, false, false,
+
+            "HTTP Error: " + event.status.toString() ) );
+
+    }
+
+    _httpStatus = event.status;
+
+}
+
+private function onLoaderIOError( event:IOErrorEvent ):void
+
+{
+
+    dispatchEvent( new ErrorEvent(
+
+        ErrorEvent.ERROR, false, false, event.text ) );
+
+}
+
+private function onAuthResponse( event:Event ):void
+
+{
+
+    if( _httpStatus == BloggerService.HTTP_SUCCESS )
+
+    {
+
+        var response:String = String( event.target.data );
+
+        var authIndex:Number = response.indexOf("Auth");
+
+        _authToken = response.substr( authIndex ).split("=")[1];
+
+        _authToken = StringUtil.trim( _authToken );
+
+        _authHeader = new URLRequestHeader( "Authorization",
+
+            "GoogleLogin auth=" + _authToken );
+
+        if( _authCallback != null )
+
+        {
+
+            if( _authCallbackArgs )
+
+                _authCallback.apply( null, _authCallbackArgs );
+
+            else
+
+                _authCallback();
+
+        }
+
+    }
+
+}
+
+private function onBlogFeedResponse( event:Event ):void
+
+{
+
+    if( event.target.data != null )
+
+    {
+
+        var xmlData:XML = new XML( String( event.target.data ) );
+
+        _blogList = AtomUtil.parseBlogList(
+
+            xmlData, _username, _password );
+
+        dispatchEvent( new Event( BLOG_LIST_RETURNED ) );
+
+    }
+
+}
+
+private function onPublishComplete( event:Event ):void
+
+{
+
+    if( _httpStatus == BloggerService.HTTP_CREATED )
+
+    {
+
+        dispatchEvent( new Event( BLOG_ENTRY_PUBLISHED ) );
+
+    }
+
+}
+
+private function createNewRequest( url:String, method:String,
+
+    contentType:String = null ):URLRequest
+
+{
+
+    var request:URLRequest = new URLRequest( url );
+
+    request.requestHeaders.push( _authHeader );
+
+    request.method = method;
+
+    if( contentType != null ) request.contentType = contentType;
+
+    return request;
+
+}
+
+private function authenticate( callback:Function,
+
+    callbackArgs:Array = null ):void
+
+{
+
+    _authCallback = callback;
+
+    _authCallbackArgs = callbackArgs;
+
+    var vars:URLVariables = new URLVariables();
+
+    vars.Email = _username;
+
+    vars.Passwd = _password;
+
+    vars.source = _appID;
+
+    vars.service = SERVICE_NAME;
+
+    var request:URLRequest = new URLRequest();
+
+    request.method = URLRequestMethod.POST;
+
+    request.url = AUTH_END_POINT;
+
+    request.data = vars;
+
+    makeRequest( request, onAuthResponse );
+
+}
+
+private function makeRequest( request:URLRequest, callback:Function ):void
+
+{
+
+    var loader:URLLoader = new URLLoader();
+
+    loader.addEventListener(
+
+        HTTPStatusEvent.HTTP_STATUS, onLoaderHttpStatus );
+
+    loader.addEventListener( IOErrorEvent.IO_ERROR, onLoaderIOError );
+
+    loader.addEventListener( Event.COMPLETE, callback );
+
+    loader.load( request );
+
+}
+
+public function getBlogs():void
+
+{
+
+    if( _authToken )
+
+    {
+
+```
 
 ## 第十章：博客代理
 
-```
+```as
 _blogList = new Array();
+
 var request:URLRequest = createNewRequest( BLOG_LIST_END_POINT,
+
     URLRequestMethod.GET );
+
 makeRequest( request, onBlogFeedResponse );
+
 }
+
 else authenticate( getBlogs, null );
+
 }
 
 public function publishBlogEntry( blog:Blog, blogEntry:BlogEntry ):void
+
 {
+
     if( _authToken )
+
     {
+
         var request:URLRequest = createNewRequest( blog.publishURL,
+
             URLRequestMethod.POST, AtomUtil.CONTENT_TYPE );
+
         request.data = AtomUtil.serializeBlogEntry(
+
             blogEntry ).toXMLString();
+
         makeRequest( request, onPublishComplete );
+
     }
+
     else authenticate( publishBlogEntry, [blog, blogEntry] );
+
 }
 
 public function setCredentials( username:String,
+
     password:String, appID:String ):void
+
 {
+
     _username = username;
+
     _password = password;
+
     _appID = appID;
+
     _authToken = null;
+
 }
 
 public function get blogList():Array { return _blogList; }
+
 }
+
 }
+
 ```
 
-将文件保存为 `BloggerService.as`，位于您工作目录下的 `com/aircmr/bloggeragent/services/` 目录中。
+将文件保存为`BloggerService.as`，位于您工作目录下的`com/aircmr/bloggeragent/services/`目录中。
 
-`BloggerService` 类用于获取博客列表和发布博客条目。此类中只有三个公共方法，其中两个对应于对 Blogger Data API 的方法调用。在调用这两个方法中的任何一个之前，必须先调用另一个公共方法 `setCredentials`。此方法需要三个参数，前两个是用户 Blogger 账户的用户名和密码。第三个参数 `appID` 在应用程序与 Blogger Data API 通信时是必需的。调用时，此参数只是一个代表您应用程序的字符串，Blogger Data API 在验证用户身份时使用它。
+`BloggerService`类用于获取博客列表和发布博客条目。此类中只有三个公共方法，其中两个对应于对 Blogger Data API 的方法调用。在调用这两个方法中的任何一个之前，必须先调用另一个公共方法`setCredentials`。此方法需要三个参数，前两个是用户 Blogger 账户的用户名和密码。第三个参数`appID`在应用程序与 Blogger Data API 通信时是必需的。调用时，此参数只是一个代表您应用程序的字符串，Blogger Data API 在验证用户身份时使用它。
 
-请注意，此方法不会立即验证用户身份，而是存储身份验证信息以供后续使用。身份验证仅在首次进行方法调用时才发生。每个方法都会检查用户是否已通过身份验证，如果没有，则尝试通过调用 `authenticate` 方法来验证用户身份。一旦用户通过身份验证，就会执行之前尝试的方法调用。此过程旨在简化从 Blogger Data API 获取信息的过程。
+请注意，此方法不会立即验证用户身份，而是存储身份验证信息以供后续使用。身份验证仅在首次进行方法调用时才发生。每个方法都会检查用户是否已通过身份验证，如果没有，则尝试通过调用`authenticate`方法来验证用户身份。一旦用户通过身份验证，就会执行之前尝试的方法调用。此过程旨在简化从 Blogger Data API 获取信息的过程。
 
-> 此类基于本书出版时的最新 Blogger Data API。有关 Blogger Data API 的更多信息，请访问 http://code.google.com/apis/blogger/overview.html。此类对可用方法的表示非常有限。如果您有相关项目，并且需要一个更全面的代码库来与 Blogger Data API 通信，请访问 http://as3bloggerlib.googlecode.com。
+> 此类基于本书出版时的最新 Blogger Data API。有关 Blogger Data API 的更多信息，请访问`http://code.google.com/apis/blogger/overview.html`。此类对可用方法的表示非常有限。如果您有相关项目，并且需要一个更全面的代码库来与 Blogger Data API 通信，请访问`http://as3bloggerlib.googlecode.com`。
 
-此类中的另外两个主要方法是 `getBlogs` 和 `publishBlogEntry`。这些方法名不言自明，其功能如您所料。每个方法随后会使类分发相应的事件，通知所有监听器方法调用何时完成，以及是否已返回数据或博客条目已成功发布。最后但同样重要的是，请注意此类使用了之前构建的数据对象 `Blog` 和 `BlogEntry`，以及 `AtomUtil` 工具类。
+此类中的另外两个主要方法是`getBlogs`和`publishBlogEntry`。这些方法名不言自明，其功能如您所料。每个方法随后会使类分发相应的事件，通知所有监听器方法调用何时完成，以及是否已返回数据或博客条目已成功发布。最后但同样重要的是，请注意此类使用了之前构建的数据对象`Blog`和`BlogEntry`，以及`AtomUtil`工具类。
 
 ### 数据库服务类
 
-在本节中，您将创建 `DBService` 类。`DBService` 类管理应用程序的本地 SQLite 数据库。这是应用程序的另一个非常重要的部分，在这里利用了 Adobe AIR 的一些强大功能。
+在本节中，您将创建`DBService`类。`DBService`类管理应用程序的本地 SQLite 数据库。这是应用程序的另一个非常重要的部分，在这里利用了 Adobe AIR 的一些强大功能。
 
 打开您的编辑器并创建一个新文档。输入以下代码：
 
-```
+```as
 package com.aircmr.bloggeragent.services
+
 {
+
     import com.aircmr.bloggeragent.data.Blog;
+
     import com.aircmr.bloggeragent.data.BlogEntry;
+
     import com.aircmr.bloggeragent.data.PublishQueueItem;
+
     import com.aircmr.bloggeragent.events.DBServiceEvent;
+
     import flash.data.EncryptedLocalStore;
+
     import flash.data.SQLConnection;
+
     import flash.data.SQLResult;
+
     import flash.data.SQLStatement;
+
     import flash.errors.IllegalOperationError;
+
     import flash.events.EventDispatcher;
+
     import flash.events.SQLErrorEvent;
+
     import flash.events.SQLEvent;
+
     import flash.filesystem.File;
+
     import flash.utils.ByteArray;
 
     public class DBService extends EventDispatcher
+
     {
+
         private static var _instance:DBService = new DBService();
-        
+
         private static const DB:String = "BloggerAgent.db";
-        
+
         private var _dbFile:File;
+
         private var _connection:SQLConnection;
+
         private var _initCallback:Function;
+
         private var _initCallbackArgs:Array;
+
         private var _passwordToEncrypt:String;
 
 public static function getInstance():DBService
+
 {
+
     return _instance;
+
 }
 
 public function DBService()
+
 {
+
     if( _instance != null )
+
     {
+
         throw new IllegalOperationError( "Error at :: DBService. " +
+
                                         "DBService is a Singleton and should be accessed " +
+
                                         "through DBService:getInstance." );
+
     }
+
 }
 
 private function init( callback:Function = null, callbackArgs:Array = null ):void
+
 {
+
 }
 
 private function onConnectionError( event:SQLErrorEvent ):void
+
 {
+
     trace( "Database connection error:" + event.text );
+
 }
 
 private function onConnectionOpen( evt:SQLEvent ):void
+
 {
+
     createBlogsTable();
+
 }
 
 private function onBlogsTableCreation( event:SQLEvent ):void
+
 {
+
     createPublishQueueTable();
+
 }
 
 private function onPublishQueueTableCreation( event:SQLEvent ):void
+
 {
+
     if( _initCallback != null )
+
     {
+
         if( _initCallbackArgs )
+
             _initCallback.call( null, _initCallbackArgs );
+
         else
+
             _initCallback();
+
     }
+
 }
 
 private function onGetBlogs( event:SQLEvent ):void
-{
-}
 
+{
+
+}
+```
+
+
+
+```actionscript
 private function onGetPublishQueue():void
 {
 }
@@ -15523,7 +16713,8 @@ private function onBlogDeleted( event:SQLEvent ):void
 private function onBlogEntryDeleted( event:SQLEvent ):void
 {
     dispatchEvent(
-        new DBServiceEvent( DBServiceEvent.BLOG_ENTRY_DELETED ) );
+        new DBServiceEvent( DBServiceEvent.BLOG_ENTRY_DELETED )
+    );
 }
 
 private function onQueryError( event:SQLErrorEvent ):void
@@ -15543,6 +16734,7 @@ private function createBlogsTable():void
                     "description    TEXT    NOT NULL," +
                     "publishURL TEXT    NOT NULL," +
                     "username    TEXT    NOT NULL);";
+
     executeStatement( q, [], [], onBlogsTableCreation );
 }
 
@@ -15553,6 +16745,7 @@ private function createPublishQueueTable():void
                     "blog_id  TEXT  NOT NULL," +
                     "title  TEXT  NOT NULL," +
                     "content  TEXT  NOT NULL);";
+
     executeStatement( q, [], [], onPublishQueueTableCreation );
 }
 
@@ -15574,10 +16767,13 @@ public function addBlogEntry( blogEntry:BlogEntry ):void
     {
         var q:String = "INSERT INTO publish_queue VALUES (null," +
             ":blogID, :title, :content);";
+
         var paramNames:Array =
             [":blogID", ":title", ":content"];
+
         var paramValues:Array =
             [blogEntry.blogID, blogEntry.title, blogEntry.content];
+
         executeStatement( q, paramNames, paramValues, onAddBlogEntry );
     }
     else init( addBlogEntry, [blogEntry] );
@@ -15616,65 +16812,71 @@ public function getPublishQueue():void
             "blogs.id=publish_queue.blog_id;";
 ```
 
-## 第十章：Blogger代理
+## 第十章：Blogger 代理
 
 ```actionscript
-            executeStatement( q, [], [], onGetPublishQueue );
-        }
-        else init( getPublishQueue );
+        executeStatement( q, [], [], onGetPublishQueue );
     }
+    else init( getPublishQueue );
+}
 
-    public function deleteBlogEntry( id:int ):void
+public function deleteBlogEntry( id:int ):void
+{
+    if( _connection )
     {
-        if( _connection )
-        {
-            var q:String = "DELETE FROM publish_queue WHERE id='" + id + "';";
-            executeStatement( q, [], [], onBlogEntryDeleted );
-        }
-        else init( deleteBlogEntry, [id] );
+        var q:String = "DELETE FROM publish_queue WHERE id='" + id + "';";
+        executeStatement( q, [], [], onBlogEntryDeleted );
     }
+    else init( deleteBlogEntry, [id] );
+}
 
-    public function close():void
-    {
-        if( _connection )
-            _connection.close();
-    }
+public function close():void
+{
+    if( _connection )
+        _connection.close();
 }
 ```
 
-将文件保存为 `DBService.as`，存放于工作目录下的 `com/aircmr/bloggeragent/services/` 目录中。
+将文件保存为`DBService.as`，存放于工作目录下的`com/aircmr/bloggeragent/services/`目录中。
 
-至此，你已开始创建 `DBService` 类。该类将为应用程序创建并管理本地 SQLite 数据库。此数据库将存储用户的博客信息——具体而言，包括博客标题、描述、发布 URL 以及拥有该博客的用户名。数据库还将存储所有已排队的博客条目。请记住，该类尚未完成。在接下来的步骤中，你将添加一些利用部分原生 AIR API 的关键功能。
+至此，你已开始创建`DBService`类。该类将为应用程序创建并管理本地 SQLite 数据库。此数据库将存储用户的博客信息——具体而言，包括博客标题、描述、发布 URL 以及拥有该博客的用户名。数据库还将存储所有已排队的博客条目。请记住，该类尚未完成。在接下来的步骤中，你将添加一些利用部分原生 AIR API 的关键功能。
 
-对 `DBService` 类的 `init` 函数的标记进行如下更改和补充：
+对`DBService`类的`init`函数的标记进行如下更改和补充：
 
 ```actionscript
 private function init( callback:Function = null, callbackArgs:Array = null ):void
 {
     _initCallback = callback;
     _initCallbackArgs = callbackArgs;
+
     _dbFile = File.applicationStorageDirectory.resolvePath( DB );
+
     _connection = new SQLConnection();
+
     _connection.addEventListener( SQLEvent.OPEN, onConnectionOpen );
     _connection.addEventListener( SQLErrorEvent.ERROR, onConnectionError );
+
     _connection.open( _dbFile );
 }
 ```
 
-`init` 函数被设置为 `private`，因为在此处它本质上等同于 `BloggerService` 类中的 `authenticate` 方法。在 `BloggerService` 类中，用户必须先通过身份验证才能进行任何方法调用。同样，`DBService` 类也必须先初始化，然后才能调用任何方法。初始化确保数据库被创建并打开连接。
+`init`函数被设置为`private`，因为在此处它本质上等同于`BloggerService`类中的`authenticate`方法。在`BloggerService`类中，用户必须先通过身份验证才能进行任何方法调用。同样，`DBService`类也必须先初始化，然后才能调用任何方法。初始化确保数据库被创建并打开连接。
 
-注意 `SQLConnection` 类的使用。这是一个原生的 Adobe AIR 类，用于管理与本地 SQLite 数据库的连接。SQLite 数据库是位于用户硬盘上的一个平面文件。此文件可能已经存在，也可能在调用 `open` 方法时自动创建。`open` 方法需要一个指向数据库位置的 `File` 对象。在此例中，数据库存储在应用程序的存储目录中。这通过使用 Adobe AIR 的 `File` 对象的 `applicationStorageDirectory` 属性来确保。该属性同样属于 `File` 类型，并且是——你猜对了——应用程序存储目录的引用。通过利用该属性的 `resolvePath` 方法，应用程序指定了一个名为 BloggerAgent.db 的文件，该文件名在 `DBService` 类中被硬编码为一个私有静态变量。数据库连接打开后，必须创建两个数据库表。两个方法分别创建这些表：`createBlogsTable` 和 `createPublishQueueTable`。一旦 `SQLConnection` 实例派发 `OPEN` 事件，这些方法就会在一个简短的事件链序列中被调用。注意特定 `SQLEvent` 和 `SQLErrorEvent` 类的使用。这些事件将帮助你管理连接。`OPEN` 事件派发后，`onConnectionOpen` 事件处理函数将被调用。
+注意`SQLConnection`类的使用。这是一个原生的 Adobe AIR 类，用于管理与本地 SQLite 数据库的连接。SQLite 数据库是位于用户硬盘上的一个平面文件。此文件可能已经存在，也可能在调用`open`方法时自动创建。`open`方法需要一个指向数据库位置的`File`对象。在此例中，数据库存储在应用程序的存储目录中。这通过使用 Adobe AIR 的`File`对象的`applicationStorageDirectory`属性来确保。该属性同样属于`File`类型，并且是——你猜对了——应用程序存储目录的引用。通过利用该属性的`resolvePath`方法，应用程序指定了一个名为 BloggerAgent.db 的文件，该文件名在`DBService`类中被硬编码为一个私有静态变量。数据库连接打开后，必须创建两个数据库表。两个方法分别创建这些表：`createBlogsTable`和`createPublishQueueTable`。一旦`SQLConnection`实例派发`OPEN`事件，这些方法就会在一个简短的事件链序列中被调用。注意特定`SQLEvent`和`SQLErrorEvent`类的使用。这些事件将帮助你管理连接。`OPEN`事件派发后，`onConnectionOpen`事件处理函数将被调用。
 
-对 `DBService` 类的 `executeStatement` 函数的标记进行如下更改和补充：
+对`DBService`类的`executeStatement`函数的标记进行如下更改和补充：
 
 ```actionscript
 private function executeStatement( query:String, paramNames:Array,
     paramValues:Array, resultHandler:Function ):void
 {
     var newStatement:SQLStatement = new SQLStatement();
+
     newStatement.sqlConnection = _connection;
+
     newStatement.addEventListener( SQLEvent.RESULT, resultHandler );
     newStatement.addEventListener( SQLErrorEvent.ERROR, onQueryError );
+
     newStatement.text = query;
 
     for( var i:int = 0; i < paramNames.length; i++ )
@@ -15684,11 +16886,11 @@ private function executeStatement( query:String, paramNames:Array,
 }
 ```
 
-此方法在整个类中用于在本地 SQLite 数据库上执行语句。该函数的四个参数用于构造一个 `SQLStatement` 对象。`SQLStatement` 实例用于对通过 `SQLConnection` 实例打开的本地 SQLite 数据库执行 SQLite 语句。在此例中，`connection` 属性被设置为本地类变量 `_connection`，该变量在 `init` 函数中创建。然后，语句的结果处理函数由 `resultHandler` 参数设置，而 `text` 属性由 `query` 参数设置。
+此方法在整个类中用于在本地 SQLite 数据库上执行语句。该函数的四个参数用于构造一个`SQLStatement`对象。`SQLStatement`实例用于对通过`SQLConnection`实例打开的本地 SQLite 数据库执行 SQLite 语句。在此例中，`connection`属性被设置为本地类变量`_connection`，该变量在`init`函数中创建。然后，语句的结果处理函数由`resultHandler`参数设置，而`text`属性由`query`参数设置。
 
-该语句已准备好执行；然而，还需要一个步骤。作为一种预防措施，语句的参数通过修改语句的 `parameters` 属性来定义。此属性充当一个关联数组，你向其中添加在语句 `text` 属性中指定的参数值。数组的键是参数的名称。以这种方式设置语句的参数是一种防御性措施，旨在防止一种称为 SQL 注入的恶意技术。在 SQL 注入攻击中，用户试图通过用户可访问的位置插入其自己的 SQL 语句。最后，调用 `execute` 方法来执行该语句。
+该语句已准备好执行；然而，还需要一个步骤。作为一种预防措施，语句的参数通过修改语句的`parameters`属性来定义。此属性充当一个关联数组，你向其中添加在语句`text`属性中指定的参数值。数组的键是参数的名称。以这种方式设置语句的参数是一种防御性措施，旨在防止一种称为 SQL 注入的恶意技术。在 SQL 注入攻击中，用户试图通过用户可访问的位置插入其自己的 SQL 语句。最后，调用`execute`方法来执行该语句。
 
-对 `DBService` 类的 `addBlog` 函数的标记进行如下更改和补充：
+对`DBService`类的`addBlog`函数的标记进行如下更改和补充：
 
 ```actionscript
 public function addBlog( blog:Blog ):void
@@ -15696,21 +16898,25 @@ public function addBlog( blog:Blog ):void
     if( _connection )
     {
         _passwordToEncrypt = blog.password;
+
         var q:String = "INSERT INTO blogs VALUES (null, " +
             ":title, :description, :publishURL, :username);";
+
         var paramNames:Array =
             [":title",":description",":publishURL",":username"];
+
         var paramValues:Array =
             [blog.title, blog.description, blog.publishURL, blog.username];
+
         executeStatement( q, paramNames, paramValues, onAddBlog );
     }
     else init( addBlog, [blog] );
 }
 ```
 
-此方法作为一个示例，说明该类如何利用 `executeStatement` 函数在本地 SQLite 数据库上执行语句。此函数接受一个参数：一个 `Blog` 类型的对象。此 `Blog` 对象将在该类外部创建，但当提供时，将提供将博客添加到数据库所需的所有相关信息。如果连接已设置，该函数会将博客的密码存储到 `_passwordToEncrypt` 类变量中。这将在其他博客数据成功存储到数据库后使用。之后，创建一个 SQLite 语句字符串。此特定 `INSERT` 语句的值未在字符串中具体设置，而是使用参数键表示。这些键都以冒号开头，最终将在 `executeStatement` 函数中被有效值替换。为实现此目的，创建了两个数组。第一个数组包含键的名称。第二个数组包含每个键的值。完成此操作后，语句字符串、数组和相应的事件处理函数将被发送到 `executeStatement` 函数进行处理。
+此方法作为一个示例，说明该类如何利用`executeStatement`函数在本地 SQLite 数据库上执行语句。此函数接受一个参数：一个`Blog`类型的对象。此`Blog`对象将在该类外部创建，但当提供时，将提供将博客添加到数据库所需的所有相关信息。如果连接已设置，该函数会将博客的密码存储到`_passwordToEncrypt`类变量中。这将在其他博客数据成功存储到数据库后使用。之后，创建一个 SQLite 语句字符串。此特定`INSERT`语句的值未在字符串中具体设置，而是使用参数键表示。这些键都以冒号开头，最终将在`executeStatement`函数中被有效值替换。为实现此目的，创建了两个数组。第一个数组包含键的名称。第二个数组包含每个键的值。完成此操作后，语句字符串、数组和相应的事件处理函数将被发送到`executeStatement`函数进行处理。
 
-对 `DBService` 类的 `onGetBlogs`、`onGetPublishQueue` 和 `onAddBlog` 事件处理函数的标记进行如下更改和补充：
+对`DBService`类的`onGetBlogs`、`onGetPublishQueue`和`onAddBlog`事件处理函数的标记进行如下更改和补充：
 
 ```actionscript
 private function onGetBlogs( event:SQLEvent ):void
@@ -15722,109 +16928,126 @@ private function onGetBlogs( event:SQLEvent ):void
     if( result.data != null )
     {
         var data:Array = result.data;
+
         for( var i:int = 0; i < data.length; i++ )
         {
             var blog:Blog = new Blog();
+
             blog.id = data[i].id;
             blog.title = data[i].title;
             blog.description = data[i].description;
-            blog.publishURL = data[i].publishURL;
-            blog.username = data[i].username;
-            blog.password = unencryptPassword( blog.id );
-            typedData.push( blog );
-        }
-    }
-
-    dispatchEvent( new DBServiceEvent( DBServiceEvent.GET_BLOGS, typedData ) );
-}
-private function onGetPublishQueue( event:SQLEvent ):void
-{
-    var statement:SQLStatement = event.target as SQLStatement;
-}
 ```
 
 
+
+```actionscript
+blog.publishURL = data[i].publishURL;
+
+blog.username = data[i].username;
+
+blog.password = unencryptPassword(blog.id);
+
+typedData.push(blog);
+```
 
 ## 第十章：博客代理
 
 ```actionscript
 var result:SQLResult = statement.getResult();
+
 var typedData:Array = new Array();
 
-if( result.data != null )
+if (result.data != null)
 {
     var data:Array = result.data;
-    for( var i:int = 0; i < data.length; i++ )
+
+    for (var i:int = 0; i < data.length; i++)
     {
         var blog:Blog = new Blog();
+
         blog.id = data[i].blogid;
         blog.title = data[i].blogtitle;
         blog.description = data[i].description;
         blog.publishURL = data[i].publishURL;
         blog.username = data[i].username;
-        blog.password = unencryptPassword( blog.id );
+        blog.password = unencryptPassword(blog.id);
 
         var blogEntry:BlogEntry = new BlogEntry();
+
         blogEntry.id = data[i].id;
         blogEntry.blogID = data[i].blogID;
         blogEntry.title = data[i].title;
         blogEntry.content = data[i].content;
 
         var publishQueueItem:PublishQueueItem = new PublishQueueItem();
+
         publishQueueItem.blogTitle = blog.title;
         publishQueueItem.blogEntryTitle = blogEntry.title;
-        if( blogEntry.content.length > 30 )
+
+        if (blogEntry.content.length > 30)
         {
-            publishQueueItem.blogEntryContent = blogEntry.content.substr( 0, 30 ) + "..."
+            publishQueueItem.blogEntryContent =
+                blogEntry.content.substr(0, 30) + "...";
         }
-        else publishQueueItem.blogEntryContent = blogEntry.content;
+        else
+        {
+            publishQueueItem.blogEntryContent = blogEntry.content;
+        }
+
         publishQueueItem.blog = blog;
         publishQueueItem.blogEntry = blogEntry;
 
-        typedData.push( publishQueueItem );
+        typedData.push(publishQueueItem);
     }
 }
 
 dispatchEvent(
-    new DBServiceEvent( DBServiceEvent.GET_BLOG_ENTRIES, typedData ) );
+    new DBServiceEvent(DBServiceEvent.GET_BLOG_ENTRIES, typedData)
+);
 }
-private function onAddBlog( event:SQLEvent ):void
+
+private function onAddBlog(event:SQLEvent):void
 {
-    encryptPassword( _connection.lastInsertRowID, _passwordToEncrypt );
-    dispatchEvent( new DBServiceEvent( DBServiceEvent.BLOG_ADDED ) );
+    encryptPassword(_connection.lastInsertRowID, _passwordToEncrypt);
+
+    dispatchEvent(new DBServiceEvent(DBServiceEvent.BLOG_ADDED));
 }
 ```
 
-这些函数处理从执行 `SQLStatement` 对象时派发的事件。对于 `onGetBlogs` 和 `onGetPublishQueue` 函数，`SELECT` 查询的信息被解析并转换为应用程序特定的数据对象。然而，对于 `onAddBlog` 函数，除了加密与该博客关联的密码外，没有太多其他工作要做。为此，调用了 `encryptPassword` 方法，并传入最后插入的博客记录的 ID 和该博客的密码。最后插入的博客的 ID 是通过访问名为 `_connection` 的 `SQLConnection` 实例的 `lastInsertRowID` 属性来获取的。
+这些函数处理从执行`SQLStatement`对象时派发的事件。对于`onGetBlogs`和`onGetPublishQueue`函数，`SELECT`查询的信息被解析并转换为应用程序特定的数据对象。然而，对于`onAddBlog`函数，除了加密与该博客关联的密码外，没有太多其他工作要做。为此，调用了`encryptPassword`方法，并传入最后插入的博客记录的 ID 和该博客的密码。最后插入的博客的 ID 是通过访问名为`_connection`的`SQLConnection`实例的`lastInsertRowID`属性来获取的。
 
-对 `DBService` 类的 `encryptPassword` 方法和 `unencryptPassword` 方法的标记进行以下修改和补充：
+对`DBService`类的`encryptPassword`方法和`unencryptPassword`方法的标记进行以下修改和补充：
 
 ```actionscript
-private function encryptPassword( blogID:int, password:String ) :void
+private function encryptPassword(blogID:int, password:String):void
 {
     var data:ByteArray = new ByteArray();
-    data.writeUTFBytes( password );
-    EncryptedLocalStore.setItem( "blog-" + blogID, data );
+
+    data.writeUTFBytes(password);
+
+    EncryptedLocalStore.setItem("blog-" + blogID, data);
 }
 ```
 
 ```actionscript
-private function unencryptPassword( blogID:int ) :String
+private function unencryptPassword(blogID:int):String
 {
-    var passwordData:ByteArray = EncryptedLocalStore.getItem( "blog-" + blogID );
-    return passwordData.readUTFBytes( passwordData.bytesAvailable );
+    var passwordData:ByteArray =
+        EncryptedLocalStore.getItem("blog-" + blogID);
+
+    return passwordData.readUTFBytes(passwordData.bytesAvailable);
 }
 ```
 
-这些方法如你所料地执行。具体来说，在此应用程序中，两个函数都利用 Adobe AIR 的 `EncryptedLocalStore` 类来加密和解密密码。`EncryptedLocalStore` 类提供了用于在 AIR 应用程序的加密本地数据存储中设置和获取对象的方法。加密本地数据存储中的项由字符串标识，并且所有项都以字节数组数据的形式存储。以此方式存储的任何内容仅对 Adobe AIR 应用程序内容可用。它是存储用户 Blogger 密码等敏感信息的理想位置。
+这些方法如你所料地执行。具体来说，在此应用程序中，两个函数都利用 Adobe AIR 的`EncryptedLocalStore`类来加密和解密密码。`EncryptedLocalStore`类提供了用于在 AIR 应用程序的加密本地数据存储中设置和获取对象的方法。加密本地数据存储中的项由字符串标识，并且所有项都以字节数组数据的形式存储。以此方式存储的任何内容仅对 Adobe AIR 应用程序内容可用。它是存储用户 Blogger 密码等敏感信息的理想位置。
 
-在这里，每个函数中的 `blogID` 参数与数据库博客表中记录的 `id` 列相关联。此 ID 用于创建一个字符串，该字符串指定了要存储或从加密本地存储中检索的项的名称。要检索一个项，使用静态的 `getItem` 方法。此方法需要一个指定要检索项的字符串。该方法将返回一个 `ByteArray` 对象。使用字节数组的 `readUTFBytes` 方法，密码从字节信息中提取出来并作为有用的 `String` 返回。要保存一个项，调用静态的 `setItem` 方法。需要两个参数，一个 `String` 和一个 `ByteArray`，才能将数据保存到加密本地存储。
+在这里，每个函数中的`blogID`参数与数据库博客表中记录的`id`列相关联。此 ID 用于创建一个字符串，该字符串指定了要存储或从加密本地存储中检索的项的名称。要检索一个项，使用静态的`getItem`方法。此方法需要一个指定要检索项的字符串。该方法将返回一个`ByteArray`对象。使用字节数组的`readUTFBytes`方法，密码从字节信息中提取出来并作为有用的`String`返回。要保存一个项，调用静态的`setItem`方法。需要两个参数，一个`String`和一个`ByteArray`，才能将数据保存到加密本地存储。
 
-这就涵盖了 `DBService` 类的主要功能。在下一节中，你将创建一个类来管理发布队列中博客条目的发布。
+这就涵盖了`DBService`类的主要功能。在下一节中，你将创建一个类来管理发布队列中博客条目的发布。
 
 ### 队列服务类
 
-在本节中，你将创建 `QueueService` 类。这是一个相对简单的类，管理存储在发布队列中的博客条目的后续发布。
+在本节中，你将创建`QueueService`类。这是一个相对简单的类，管理存储在发布队列中的博客条目的后续发布。
 
 创建一个新文档并输入以下代码：
 
@@ -15834,34 +17057,41 @@ package com.aircmr.bloggeragent.services
     import com.aircmr.bloggeragent.data.Blog;
     import com.aircmr.bloggeragent.data.BlogEntry;
     import com.aircmr.bloggeragent.data.PublishQueueItem;
+
     import flash.events.Event;
     import flash.events.EventDispatcher;
 
     public class QueueService extends EventDispatcher
     {
-
         private var _items:Array;
         private var _currentItem:PublishQueueItem;
         private var _dbService:DBService;
         private var _bloggerService:BloggerService;
 
-        public function QueueService( items:Array )
+        public function QueueService(items:Array)
         {
             _items = items;
             _dbService = DBService.getInstance();
             _bloggerService = BloggerService.getInstance();
         }
 
-        private function onBlogEntryPublished( event:Event ):void
+        private function onBlogEntryPublished(event:Event):void
         {
-            _dbService.deleteBlogEntry( _currentItem.blogEntry.id );
-            _bloggerService.removeEventListener(
-                BloggerService.BLOG_ENTRY_PUBLISHED, onBlogEntryPublished );
+            _dbService.deleteBlogEntry(_currentItem.blogEntry.id);
 
-            if( _items.length > 0 )
+            _bloggerService.removeEventListener(
+                BloggerService.BLOG_ENTRY_PUBLISHED,
+                onBlogEntryPublished
+            );
+
+            if (_items.length > 0)
+            {
                 nextItem();
+            }
             else
-                dispatchEvent( new Event( Event.COMPLETE ) );
+            {
+                dispatchEvent(new Event(Event.COMPLETE));
+            }
         }
 
         private function nextItem():void
@@ -15872,56 +17102,67 @@ package com.aircmr.bloggeragent.services
             var blogEntry:BlogEntry = _currentItem.blogEntry;
 
             _bloggerService.addEventListener(
-                BloggerService.BLOG_ENTRY_PUBLISHED, onBlogEntryPublished );
-            _bloggerService.setCredentials( blog.username, blog.password,
-                BloggerAgent.APPLICATION_ID );
-            _bloggerService.publishBlogEntry( blog, blogEntry );
+                BloggerService.BLOG_ENTRY_PUBLISHED,
+                onBlogEntryPublished
+            );
+
+            _bloggerService.setCredentials(
+                blog.username,
+                blog.password,
+                BloggerAgent.APPLICATION_ID
+            );
+
+            _bloggerService.publishBlogEntry(blog, blogEntry);
         }
 
         public function startQueue():void
         {
             nextItem();
         }
-
     }
 }
 ```
 
-将该文件保存为 `QueueService.as`，位于你工作目录中的 `com/aircmr/bloggeragent/services/` 目录下。
+将该文件保存为`QueueService.as`，位于你工作目录中的`com/aircmr/bloggeragent/services/`目录下。
 
-你刚刚创建了 `QueueService` 类。如前所述，此类管理存储在发布队列中的博客条目的后续发布。此类旨在接收一个 `PublishQueueItem` 对象数组，并将每个条目的博客文章发布到相应的博客。如你所见，此类的构造函数接受一个参数：一个 `Array`。此 `Array` 应由一个或多个 `PublishQueueItem` 对象组成。`QueueService` 对象构建完成后，将使用 `startQueue` 函数来启动发布。
+你刚刚创建了`QueueService`类。如前所述，此类管理存储在发布队列中的博客条目的后续发布。此类旨在接收一个`PublishQueueItem`对象数组，并将每个条目的博客文章发布到相应的博客。如你所见，此类的构造函数接受一个参数：一个`Array`。此`Array`应由一个或多个`PublishQueueItem`对象组成。`QueueService`对象构建完成后，将使用`startQueue`函数来启动发布。
 
-以下代码片段来自 `nextItem` 函数：
+以下代码片段来自`nextItem`函数：
 
 ```actionscript
 private function nextItem():void
 {
     _currentItem = _items.shift() as PublishQueueItem;
-    
+
     var blog:Blog = _currentItem.blog;
     var blogEntry:BlogEntry = _currentItem.blogEntry;
-    
-    _bloggerService.addEventListener( BloggerService.BLOG_ENTRY_PUBLISHED,
-    onBlogEntryPublished );
-    _bloggerService.setCredentials( blog.username, blog.password,
-    BloggerAgent.APPLICATION_ID );
-    _bloggerService.publishBlogEntry( blog, blogEntry );
+
+    _bloggerService.addEventListener(
+        BloggerService.BLOG_ENTRY_PUBLISHED,
+        onBlogEntryPublished
+    );
+
+    _bloggerService.setCredentials(
+        blog.username,
+        blog.password,
+        BloggerAgent.APPLICATION_ID
+    );
+
+    _bloggerService.publishBlogEntry(blog, blogEntry);
 }
 ```
 
-在这里，你可以看到 `BloggerService` 类的使用。在该类中，`BloggerService` 类被用于将博客条目发布到特定博客。`Blog` 和 `BlogEntry` 对象通过访问 `PublishQueueItem` 对象的 `blog` 和 `blogEntry` 属性从 `currentItem` 变量中提取出来。完成后，为 `BLOG_ENTRY_PUBLISHED` 事件配置了 `onBlogEntryPublished` 事件处理程序。此事件使类能够确定何时转到下一个 `PublishQueueItem`。
+在这里，你可以看到`BloggerService`类的使用。在该类中，`BloggerService`类被用于将博客条目发布到特定博客。`Blog`和`BlogEntry`对象通过访问`PublishQueueItem`对象的`blog`和`blogEntry`属性从`currentItem`变量中提取出来。完成后，为`BLOG_ENTRY_PUBLISHED`事件配置了`onBlogEntryPublished`事件处理程序。此事件使类能够确定何时转到下一个`PublishQueueItem`。
 
-最后，博客条目通过首先调用 `BloggerService` 类的 `setCredentials` 函数，然后调用 `publishBlogEntry` 函数来发布。`setCredentials` 函数接受三个参数，前两个是博客账户的用户名和密码。在本例中，它们来自当前的 `Blog` 对象。第三个是表示访问 Blogger Data API 的应用程序的字符串。此参数来自主应用程序文件的静态属性（你将在下一节中创建该文件）。
+最后，博客条目通过首先调用`BloggerService`类的`setCredentials`函数，然后调用`publishBlogEntry`函数来发布。`setCredentials`函数接受三个参数，前两个是博客账户的用户名和密码。在本例中，它们来自当前的`Blog`对象。第三个是表示访问 Blogger Data API 的应用程序的字符串。此参数来自主应用程序文件的静态属性（你将在下一节中创建该文件）。
 
-设置好凭据后，调用 `publishBlogEntry` 函数是安全的，将当前的 `Blog` 和 `BlogEntry` 对象作为两个参数传递给它。当博客条目发布后，将调用 `onBlogEntryPublished` 函数，并通过调用 `DBService` 类的 `deleteBlogEntry` 函数并传递要删除的博客条目的 ID 号来从队列中删除该条目。
+设置好凭据后，调用`publishBlogEntry`函数是安全的，将当前的`Blog`和`BlogEntry`对象作为两个参数传递给它。当博客条目发布后，将调用`onBlogEntryPublished`函数，并通过调用`DBService`类的`deleteBlogEntry`函数并传递要删除的博客条目的 ID 号来从队列中删除该条目。
 
 此时，你已经创建了此应用程序所需的所有 ActionScript 类。现在是时候转向用户界面了。
 
 ## 创建用户界面
 
-在本节中，你将为应用程序创建用户界面元素。用户界面由五个组件组成。其中三个组件将用作主视图。其余两个将用作主视图的提示。通过以下代码，你将创建用户界面组件，从 `AddBlogPanel` 组件开始。
-
-
+在本节中，你将为应用程序创建用户界面元素。用户界面由五个组件组成。其中三个组件将用作主视图。其余两个将用作主视图的提示。通过以下代码，你将创建用户界面组件，从`AddBlogPanel`组件开始。
 
 ## 第十章：Blogger 代理
 
@@ -15929,19 +17170,24 @@ private function nextItem():void
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
-<mx:Panel xmlns:mx="http://www.adobe.com/2006/mxml"
-    width="412" height="258" title="Add Account"
-    creationComplete="init();">
-    <mx:Script><![CDATA[
 
+<mx:Panel xmlns:mx="http://www.adobe.com/2006/mxml"
+    width="412"
+    height="258"
+    title="Add Account"
+    creationComplete="init();">
+
+    <mx:Script><![CDATA[
         import com.aircmr.bloggeragent.data.Blog;
         import com.aircmr.bloggeragent.services.BloggerService;
         import com.aircmr.net.NetworkDetection;
+
         import mx.controls.Alert;
         import mx.managers.CursorManager;
         import mx.managers.PopUpManager;
 
-        private static var NO_BLOGS:Array = [{title:"No blogs available for this user"}];
+        private static var NO_BLOGS:Array =
+            [{title:"No blogs available for this user"}];
 
         private var _bloggerService:BloggerService;
         private var _netDetect:NetworkDetection;
@@ -15949,150 +17195,237 @@ private function nextItem():void
         public static function show():AddBlogPanel
         {
             var prompt:AddBlogPanel =
-                AddBlogPanel( PopUpManager.createPopUp(
-                    DisplayObject( mx.core.Application.application ),
-                    AddBlogPanel, true ) );
+                AddBlogPanel(
+                    PopUpManager.createPopUp(
+```
 
-            PopUpManager.centerPopUp( prompt );
-            return prompt;
-        }
 
-        private function init():void
-        {
-            _bloggerService = BloggerService.getInstance();
-            _netDetect = NetworkDetection.getInstance();
 
-            _bloggerService.addEventListener( BloggerService.BLOG_LIST_RETURNED,
-                onBlogListReturned );
-            _bloggerService.addEventListener( ErrorEvent.ERROR,
-                onBloggerError );
-            _netDetect.addEventListener( NetworkDetection.CONNECTION_CHANGE,
-                onConnectionChange );
+```actionscript
+DisplayObject(mx.core.Application.application),
 
-            onConnectionChange( null );
-        }
+AddBlogPanel, true));
 
-        private function onConnectionChange( event:Event ):void
-        {
-            listBlogsBtn.enabled = _netDetect.connected;
-        }
+PopUpManager.centerPopUp(prompt);
 
-        private function onBlogListReturned( event:Event ):void
-        {
-            var blogList:Array = _bloggerService.blogList;
+return prompt;
+}
 
-            if( blogList.length > 0 )
-            {
-                blogListComboBox.dataProvider = blogList;
-                addBlogBtn.enabled = true;
-            }
-            else
-            {
-                blogListComboBox.dataProvider = NO_BLOGS;
-                addBlogBtn.enabled = false;
-            }
-            enable();
-        }
+private function init():void
+{
+    _bloggerService = BloggerService.getInstance();
 
-        private function onBloggerError( event:ErrorEvent ):void
-        {
-            blogListComboBox.dataProvider = null;
-            addBlogBtn.enabled = false;
-            Alert.show( "Login failed. Try again.", "Error", (Alert.OK), this );
-            enable();
-        }
+    _netDetect = NetworkDetection.getInstance();
 
-        private function getBlogs( event:Event ):void
-        {
-            disable();
-            _bloggerService.setCredentials( usernameInput.text, passwordInput.text,
-                BloggerAgent.APPLICATION_ID );
-            _bloggerService.getBlogs();
-        }
+    _bloggerService.addEventListener(BloggerService.BLOG_LIST_RETURNED,
+        onBlogListReturned);
 
-        private function addBlog( event:MouseEvent ):void
-        {
-            dispatchEvent( new Event( Event.SELECT ) );
-        }
+    _bloggerService.addEventListener(ErrorEvent.ERROR,
+        onBloggerError);
 
-        public function enable():void
-        {
-            this.enabled = true;
-            CursorManager.removeBusyCursor();
-        }
+    _netDetect.addEventListener(NetworkDetection.CONNECTION_CHANGE,
+        onConnectionChange);
 
-        public function disable():void
-        {
-            this.enabled = false;
-            CursorManager.setBusyCursor();
-        }
+    onConnectionChange(null);
+}
 
-        public function close():void { PopUpManager.removePopUp( this ); }
+private function onConnectionChange(event:Event):void
+{
+    listBlogsBtn.enabled = _netDetect.connected;
+}
 
-        public function get selectedItem():Blog
-        {
-            return blogListComboBox.selectedItem as Blog;
-        }
+private function onBlogListReturned(event:Event):void
+{
+    var blogList:Array = _bloggerService.blogList;
 
-        public function get username():String { return usernameInput.text; }
-        public function get password():String { return passwordInput.text; }
+    if (blogList.length > 0)
+    {
+        blogListComboBox.dataProvider = blogList;
+        addBlogBtn.enabled = true;
+    }
+    else
+    {
+        blogListComboBox.dataProvider = NO_BLOGS;
+        addBlogBtn.enabled = false;
+    }
 
-    ]]></mx:Script>
-    <mx:Canvas width="100%" height="100%">
-        <mx:Text text="Username:" x="10" y="24" width="86"
-            fontWeight="bold" textAlign="right"/>
-        <mx:TextInput id="usernameInput" x="113" y="22" enter="getBlogs(event)"/>
-        <mx:Text text="Password:" x="10" y="58" width="86"
-            fontWeight="bold" textAlign="right"/>
-        <mx:TextInput id="passwordInput" x="113" y="54"
-            displayAsPassword="true" enter="getBlogs(event)"/>
-        <mx:Button id="listBlogsBtn" x="281" y="54"
-            label="List Blogs" click="getBlogs(event)"/>
-        <mx:Text text="Blog Title:" x="10" y="117" width="86"
-            fontWeight="bold" textAlign="right"/>
-        <mx:ComboBox id="blogListComboBox" x="113" y="115"
-            width="248" labelField="title"/>
-        <mx:Button id="cancelBtn" x="207" y="174"
-            label="Cancel" click="close()"/>
-        <mx:Button id="addBlogBtn" x="284" y="174" label="Add Blog"
-            enabled="false" click="addBlog(event)"/>
-    </mx:Canvas>
+    enable();
+}
+
+private function onBloggerError(event:ErrorEvent):void
+{
+    blogListComboBox.dataProvider = null;
+    addBlogBtn.enabled = false;
+
+    Alert.show("Login failed. Try again.", "Error", Alert.OK, this);
+
+    enable();
+}
+
+private function getBlogs(event:Event):void
+{
+    disable();
+
+    _bloggerService.setCredentials(
+        usernameInput.text,
+        passwordInput.text,
+        BloggerAgent.APPLICATION_ID
+    );
+
+    _bloggerService.getBlogs();
+}
+
+private function addBlog(event:MouseEvent):void
+{
+    dispatchEvent(new Event(Event.SELECT));
+}
+
+public function enable():void
+{
+    this.enabled = true;
+    CursorManager.removeBusyCursor();
+}
+
+public function disable():void
+{
+    this.enabled = false;
+    CursorManager.setBusyCursor();
+}
+
+public function close():void
+{
+    PopUpManager.removePopUp(this);
+}
+
+public function get selectedItem():Blog
+{
+    return blogListComboBox.selectedItem as Blog;
+}
+
+public function get username():String
+{
+    return usernameInput.text;
+}
+
+public function get password():String
+{
+    return passwordInput.text;
+}
+]]></mx:Script>
+
+<mx:Canvas width="100%" height="100%">
+    <mx:Text
+        text="Username:"
+        x="10"
+        y="24"
+        width="86"
+        fontWeight="bold"
+        textAlign="right"/>
+
+    <mx:TextInput
+        id="usernameInput"
+        x="113"
+        y="22"
+        enter="getBlogs(event)"/>
+
+    <mx:Text
+        text="Password:"
+        x="10"
+        y="58"
+        width="86"
+        fontWeight="bold"
+        textAlign="right"/>
+
+    <mx:TextInput
+        id="passwordInput"
+        x="113"
+        y="54"
+        displayAsPassword="true"
+        enter="getBlogs(event)"/>
+
+    <mx:Button
+        id="listBlogsBtn"
+        x="281"
+        y="54"
+        label="List Blogs"
+        click="getBlogs(event)"/>
+
+    <mx:Text
+        text="Blog Title:"
+        x="10"
+        y="117"
+        width="86"
+        fontWeight="bold"
+        textAlign="right"/>
+
+    <mx:ComboBox
+        id="blogListComboBox"
+        x="113"
+        y="115"
+        width="248"
+        labelField="title"/>
+
+    <mx:Button
+        id="cancelBtn"
+        x="207"
+        y="174"
+        label="Cancel"
+        click="close()"/>
+
+    <mx:Button
+        id="addBlogBtn"
+        x="284"
+        y="174"
+        label="Add Blog"
+        enabled="false"
+        click="addBlog(event)"/>
+</mx:Canvas>
+
 </mx:Panel>
 ```
 
-将文件保存为 `AddBlogPanel.mxml`，存放在您工作目录下的 `com/aircmr/bloggeragent/ui/` 目录中。
+将文件保存为`AddBlogPanel.mxml`，存放在您工作目录下的`com/aircmr/bloggeragent/ui/`目录中。
 
-`AddBlogPanel` 组件充当一个提示框。当显示时，它允许用户输入其 Blogger 登录信息、检索该账户的博客列表，然后选择一个博客添加到应用程序中。以下代码片段摘自 `AddBlogPanel` 组件的 `init` 函数：
+`AddBlogPanel`组件充当一个提示框。当显示时，它允许用户输入其 Blogger 登录信息、检索该账户的博客列表，然后选择一个博客添加到应用程序中。以下代码片段摘自`AddBlogPanel`组件的`init`函数：
 
 ```actionscript
 private function init():void
 {
     _bloggerService = BloggerService.getInstance();
+
     _netDetect = NetworkDetection.getInstance();
 
-    _bloggerService.addEventListener( BloggerService.BLOG_LIST_RETURNED,
-        onBlogListReturned );
-    _bloggerService.addEventListener( ErrorEvent.ERROR, onBloggerError );
+    _bloggerService.addEventListener(BloggerService.BLOG_LIST_RETURNED,
+        onBlogListReturned);
 
-    _netDetect.addEventListener( NetworkDetection.CONNECTION_CHANGE,
-        onConnectionChange );
+    _bloggerService.addEventListener(ErrorEvent.ERROR, onBloggerError);
 
-    onConnectionChange( null );
+    _netDetect.addEventListener(NetworkDetection.CONNECTION_CHANGE,
+        onConnectionChange);
+
+    onConnectionChange(null);
 }
 ```
 
-在此处您可以看到 `BloggerService` 类和 `NetworkDetection` 类的使用。在此组件中，`BloggerService` 类将用于检索博客列表；因此，`BLOG_LIST_RETURNED` 事件被配置为由 `onBlogListReturned` 函数处理。此函数从服务类获取博客列表，用作组合框的数据提供程序。此外，`NetworkDetection` 类的 `CONNECTION_CHANGE` 事件被配置为由 `onConnectionChange` 函数处理。此函数根据用户是否连接到互联网来激活或停用特定的界面元素。
+在此处您可以看到`BloggerService`类和`NetworkDetection`类的使用。在此组件中，`BloggerService`类将用于检索博客列表；因此，`BLOG_LIST_RETURNED`事件被配置为由`onBlogListReturned`函数处理。此函数从服务类获取博客列表，用作组合框的数据提供程序。此外，`NetworkDetection`类的`CONNECTION_CHANGE`事件被配置为由`onConnectionChange`函数处理。此函数根据用户是否连接到互联网来激活或停用特定的界面元素。
 
-此组件将用于接下来创建的 `BlogManagerPanel` 组件中：
+此组件将用于接下来创建的`BlogManagerPanel`组件中：
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
-<mx:Panel xmlns:mx="http://www.adobe.com/2006/mxml"
-    width="800" height="600" top="40" right="10"
-    bottom="10" left="10" title="Manage Blogs"
-    creationComplete="init();">
-    <mx:Script><![CDATA[
 
+<mx:Panel
+    xmlns:mx="http://www.adobe.com/2006/mxml"
+    width="800"
+    height="600"
+    top="40"
+    right="10"
+    bottom="10"
+    left="10"
+    title="Manage Blogs"
+    creationComplete="init();">
+
+    <mx:Script><![CDATA[
         import com.aircmr.bloggeragent.ui.AddBlogPanel;
         import com.aircmr.bloggeragent.services.DBService;
         import com.aircmr.bloggeragent.events.DBServiceEvent;
@@ -16110,44 +17443,49 @@ private function init():void
         {
             _dbService = DBService.getInstance();
             _netDetect = NetworkDetection.getInstance();
-            _dbService.addEventListener( DBServiceEvent.GET_BLOGS, onGetBlogs );
-            _dbService.addEventListener( DBServiceEvent.BLOG_ADDED, onBlogsModified );
-            _dbService.addEventListener( DBServiceEvent.BLOG_DELETED, onBlogsModified );
-            _netDetect.addEventListener( NetworkDetection.CONNECTION_CHANGE,
-                onConnectionChange );
-            onConnectionChange( null );
+
+            _dbService.addEventListener(DBServiceEvent.GET_BLOGS, onGetBlogs);
+            _dbService.addEventListener(DBServiceEvent.BLOG_ADDED, onBlogsModified);
+            _dbService.addEventListener(DBServiceEvent.BLOG_DELETED, onBlogsModified);
+
+            _netDetect.addEventListener(
+                NetworkDetection.CONNECTION_CHANGE,
+                onConnectionChange
+            );
+
+            onConnectionChange(null);
         }
 
-        private function onConnectionChange( event:Event ):void
+        private function onConnectionChange(event:Event):void
         {
             addBlogBtn.enabled = _netDetect.connected;
         }
 
-        private function onBlogsModified( event:DBServiceEvent ):void
+        private function onBlogsModified(event:DBServiceEvent):void
         {
             _dbService.getBlogs();
         }
 
-        private function onGetBlogs( event:DBServiceEvent ):void
+        private function onGetBlogs(event:DBServiceEvent):void
         {
             _blogs = event.data as Array;
         }
 
-        private function onAddBlogSelect( event:Event ):void
+        private function onAddBlogSelect(event:Event):void
         {
-            _dbService.addBlog( _addBlogPanel.selectedItem );
+            _dbService.addBlog(_addBlogPanel.selectedItem);
             _addBlogPanel.close();
         }
 
-        private function openAddBlogPanel( event:MouseEvent ):void
+        private function openAddBlogPanel(event:MouseEvent):void
         {
             _addBlogPanel = AddBlogPanel.show();
-            _addBlogPanel.addEventListener( Event.SELECT, onAddBlogSelect );
+            _addBlogPanel.addEventListener(Event.SELECT, onAddBlogSelect);
         }
 
-        private function deleteBlog( event:MouseEvent ):void
+        private function deleteBlog(event:MouseEvent):void
         {
-            _dbService.deleteBlog( blogDataGrid.selectedItem.id );
+            _dbService.deleteBlog(blogDataGrid.selectedItem.id);
         }
 
         public function update():void
@@ -16155,53 +17493,77 @@ private function init():void
             _dbService.getBlogs();
         }
     ]]></mx:Script>
+
     <mx:Canvas width="100%" height="100%">
-        <mx:DataGrid id="blogDataGrid" dataProvider="{_blogs}"
-            top="0" bottom="40" left="0" right="0">
+        <mx:DataGrid
+            id="blogDataGrid"
+            dataProvider="{_blogs}"
+            top="0"
+            bottom="40"
+            left="0"
+            right="0">
+
             <mx:columns>
-                <mx:DataGridColumn headerText="Title" dataField="title"/>
-                <mx:DataGridColumn headerText="User" dataField="username"/>
-                <mx:DataGridColumn headerText="Description" dataField="description"/>
+                <mx:DataGridColumn
+                    headerText="Title"
+                    dataField="title"/>
+
+                <mx:DataGridColumn
+                    headerText="User"
+                    dataField="username"/>
+
+                <mx:DataGridColumn
+                    headerText="Description"
+                    dataField="description"/>
             </mx:columns>
         </mx:DataGrid>
-        <mx:Button id="addBlogBtn" label="Add Blog"
-            right="110" bottom="10" click="openAddBlogPanel(event)"/>
-        <mx:Button label="Delete Blog" right="10" bottom="10"
+
+        <mx:Button
+            id="addBlogBtn"
+            label="Add Blog"
+            right="110"
+            bottom="10"
+            click="openAddBlogPanel(event)"/>
+
+        <mx:Button
+            label="Delete Blog"
+            right="10"
+            bottom="10"
             enabled="{(blogDataGrid.selectedItem != null)}"
             click="deleteBlog(event)"/>
     </mx:Canvas>
 </mx:Panel>
 ```
 
-将文件保存为 `BlogManagerPanel.mxml`，存放在您工作目录下的 `com/aircmr/bloggeragent/ui/` 目录中。
 
-`BlogManagerPanel` 组件显示用户已添加到应用程序中的账户（或博客）。它还允许用户添加新博客（使用先前创建的 `AddBlogPrompt` 组件）或删除现有博客。在添加或删除博客时，该组件利用 `DBService` 类在本地数据库中存储或修改账户信息。
 
-以下代码片段摘自 `BlogManagerPanel` 组件的 `init` 函数。在此处您可以看到 `DBService` 类的使用，以及与 `AddBlogPrompt` 组件类似，`NetworkDetection` 类的使用：
+将文件保存为`BlogManagerPanel.mxml`，存放在您工作目录下的`com/aircmr/bloggeragent/ui/`目录中。
+
+`BlogManagerPanel`组件显示用户已添加到应用程序中的账户（或博客）。它还允许用户添加新博客（使用先前创建的`AddBlogPrompt`组件）或删除现有博客。在添加或删除博客时，该组件利用`DBService`类在本地数据库中存储或修改账户信息。
+
+以下代码片段摘自`BlogManagerPanel`组件的`init`函数。在此处您可以看到`DBService`类的使用，以及与`AddBlogPrompt`组件类似，`NetworkDetection`类的使用：
 
 ```actionscript
 private function init():void
 {
-```
+    _dbService = DBService.getInstance();
 
+    _netDetect = NetworkDetection.getInstance();
 
+    _dbService.addEventListener( DBServiceEvent.GET_BLOGS, onGetBlogs );
 
-## 第10章：博客代理
+    _dbService.addEventListener( DBServiceEvent.BLOG_ADDED, onBlogsModified );
 
-```
-_dbService = DBService.getInstance();
-_netDetect = NetworkDetection.getInstance();
+    _dbService.addEventListener( DBServiceEvent.BLOG_DELETED, onBlogsModified );
 
-_dbService.addEventListener( DBServiceEvent.GET_BLOGS, onGetBlogs );
-_dbService.addEventListener( DBServiceEvent.BLOG_ADDED, onBlogsModified );
-_dbService.addEventListener( DBServiceEvent.BLOG_DELETED, onBlogsModified );
+    _netDetect.addEventListener( NetworkDetection.CONNECTION_CHANGE,
+        onConnectionChange );
 
-_netDetect.addEventListener( NetworkDetection.CONNECTION_CHANGE,
-    onConnectionChange );
-
-onConnectionChange( null );
+    onConnectionChange( null );
 }
 ```
+
+## 第10章：博客代理
 
 在此组件中，`DBService`类用于从本地数据库中检索博客列表、添加博客和删除博客。每个方法在操作完成后都会触发相应的事件。这些事件都配置了适当的处理函数。请注意，每当添加或删除博客时，都会再次通过调用`getBlogs`函数从`DBService`类中检索博客列表。这确保了数据库中的数据与用户界面保持同步。
 
@@ -16209,13 +17571,14 @@ onConnectionChange( null );
 
 创建一个新文档并输入以下标记：
 
-```
+```xml
 <?xml version="1.0" encoding="utf-8"?>
+
 <mx:Panel xmlns:mx="http://www.adobe.com/2006/mxml"
     width="800" height="600" top="40" right="10" bottom="10" left="10"
     title="Compose Blog Entry" creationComplete="init();">
-    <mx:Script><![CDATA[
 
+    <mx:Script><![CDATA[
     import com.aircmr.bloggeragent.data.Blog;
     import com.aircmr.bloggeragent.data.BlogEntry;
     import com.aircmr.bloggeragent.events.DBServiceEvent;
@@ -16238,10 +17601,14 @@ onConnectionChange( null );
     {
         _bloggerService = BloggerService.getInstance();
         _dbService = DBService.getInstance();
+
         _dbService.addEventListener( DBServiceEvent.GET_BLOGS, onGetBlogs );
+
         _netDetect = NetworkDetection.getInstance();
+
         _netDetect.addEventListener(
             NetworkDetection.CONNECTION_CHANGE, onConnectionChange );
+
         blogSelector.dataProvider = NO_BLOGS;
         updateButtons();
     }
@@ -16261,8 +17628,11 @@ onConnectionChange( null );
     {
         _bloggerService.removeEventListener( BloggerService.BLOG_ENTRY_PUBLISHED,
             onBlogEntryPublished );
+
         _bloggerService.removeEventListener( ErrorEvent.ERROR, onBloggerError );
+
         titleInput.text = contentInput.htmlText = "";
+
         Alert.show( "Entry published successfully", "Success!", (Alert.OK), this );
         enable();
     }
@@ -16297,13 +17667,18 @@ onConnectionChange( null );
     {
         var blog:Blog = blogSelector.selectedItem as Blog;
         var blogEntry:BlogEntry = new BlogEntry();
+
         blogEntry.title = titleInput.text;
         blogEntry.content = contentInput.text;
+
         _bloggerService.addEventListener( BloggerService.BLOG_ENTRY_PUBLISHED,
             onBlogEntryPublished );
+
         _bloggerService.addEventListener( ErrorEvent.ERROR, onBloggerError );
+
         _bloggerService.setCredentials(
             blog.username, blog.password, BloggerAgent.APPLICATION_ID );
+
         _bloggerService.publishBlogEntry( blog, blogEntry );
         disable();
     }
@@ -16311,10 +17686,13 @@ onConnectionChange( null );
     private function addToQueue( event:MouseEvent ) :void
     {
         var blogEntry:BlogEntry = new BlogEntry();
+
         blogEntry.blogID = blogSelector.selectedItem.id;
         blogEntry.title = titleInput.text;
         blogEntry.content = contentInput.text;
+
         _dbService.addBlogEntry( blogEntry );
+
         titleInput.text = contentInput.text = "";
     }
 
@@ -16334,23 +17712,30 @@ onConnectionChange( null );
     {
         _dbService.getBlogs();
     }
-
     ]]></mx:Script>
+
     <mx:Canvas width="100%" height="100%">
         <mx:Text text="Publish to:" x="10" y="10"/>
+
         <mx:ComboBox id="blogSelector" x="10" y="30" width="327"
             labelField="title" dataProvider="{_blogs}"/>
+
         <mx:Text text="Title" x="10" y="61"/>
+
         <mx:TextInput id="titleInput" x="10" y="78" width="580"
             change="onTextFieldChange(event)"/>
+
         <mx:Text text="Content" x="10" y="110"/>
+
         <mx:TextInput id="contentInput"
             left="10" right="10" top="129" bottom="50"
             change="onTextFieldChange(event)"/>
+
         <mx:Button id="publishBtn" label="Publish Now"
-                   left="10" bottom="10" click="publishNow(event)"/>
+            left="10" bottom="10" click="publishNow(event)"/>
+
         <mx:Button id="addToQueueBtn" label="Add to Publish Queue"
-                   right="10" bottom="10" click="addToQueue(event)" />
+            right="10" bottom="10" click="addToQueue(event)" />
     </mx:Canvas>
 </mx:Panel>
 ```
@@ -16361,18 +17746,23 @@ onConnectionChange( null );
 
 以下代码片段来自`ComposeEntryPanel`组件的`publishNow`函数。这里您可以看到如何使用`BloggerService`类来发布博客条目：
 
-```
+```actionscript
 private function publishNow( event:MouseEvent ):void
 {
     var blog:Blog = blogSelector.selectedItem as Blog;
     var blogEntry:BlogEntry = new BlogEntry();
+
     blogEntry.title = titleInput.text;
     blogEntry.content = contentInput.text;
+
     _bloggerService.addEventListener( BloggerService.BLOG_ENTRY_PUBLISHED,
                                       onBlogEntryPublished );
+
     _bloggerService.addEventListener( ErrorEvent.ERROR, onBloggerError );
+
     _bloggerService.setCredentials( blog.username, blog.password,
-                                     BloggerAgent.APPLICATION_ID );
+                                    BloggerAgent.APPLICATION_ID );
+
     _bloggerService.publishBlogEntry( blog, blogEntry );
     disable();
 }
@@ -16384,29 +17774,42 @@ private function publishNow( event:MouseEvent ):void
 
 以下代码片段来自`addToQueue`函数。这里您可以看到如何使用`DBService`类将博客条目添加到发布队列：
 
-```
+```actionscript
 private function addToQueue( event:MouseEvent ):void
 {
     var blogEntry:BlogEntry = new BlogEntry();
+
     blogEntry.blogID = blogSelector.selectedItem.id;
     blogEntry.title = titleInput.text;
     blogEntry.content = contentInput.text;
-    _dbService.addBlogEntry( blogEntry );
-    titleInput.text = contentInput.text = "";
 }
 ```
 
 
 
+```actionscript
+_dbService.addBlogEntry(blogEntry);
+
+titleInput.text = contentInput.text = "";
+
+}
+```
+
 ## 第10章：博客代理
 
 ```actionscript
 var blogEntry:BlogEntry = new BlogEntry();
+
 blogEntry.blogID = blogSelector.selectedItem.id;
+
 blogEntry.title = titleInput.text;
+
 blogEntry.content = contentInput.text;
-_dbService.addBlogEntry( blogEntry );
+
+_dbService.addBlogEntry(blogEntry);
+
 titleInput.text = contentInput.text = "";
+
 }
 ```
 
@@ -16418,100 +17821,158 @@ titleInput.text = contentInput.text = "";
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
+
 <mx:Panel xmlns:mx="http://www.adobe.com/2006/mxml"
     width="800" height="600" top="40" right="10" bottom="10" left="10"
     title="Publish Queue" creationComplete="init();">
+
     <mx:Script><![CDATA[
+
         import flash.net.navigateToURL;
 
         import com.aircmr.bloggeragent.services.QueueService;
+
         import com.aircmr.bloggeragent.events.DBServiceEvent;
+
         import com.aircmr.bloggeragent.services.DBService;
+
         import com.aircmr.net.NetworkDetection;
+
         import mx.controls.Alert;
+
         import mx.managers.CursorManager;
 
         [Bindable]
+
         private var _publishQueueItems:Array;
 
         private var _dbService:DBService;
+
         private var _netDetect:NetworkDetection;
+
         private var _queueService:QueueService;
 
         private function init():void
+
         {
+
             _dbService = DBService.getInstance();
+
             _netDetect = NetworkDetection.getInstance();
-            _dbService.addEventListener( DBServiceEvent.GET_BLOG_ENTRIES,
-                onGetBlogEntries );
-            _dbService.addEventListener( DBServiceEvent.BLOG_ENTRY_DELETED,
-                onBlogEntryDeleted );
-            _netDetect.addEventListener( NetworkDetection.CONNECTION_CHANGE,
-                onConnectionChange );
-            onConnectionChange( null );
+
+            _dbService.addEventListener(DBServiceEvent.GET_BLOG_ENTRIES,
+                onGetBlogEntries);
+
+            _dbService.addEventListener(DBServiceEvent.BLOG_ENTRY_DELETED,
+                onBlogEntryDeleted);
+
+            _netDetect.addEventListener(NetworkDetection.CONNECTION_CHANGE,
+                onConnectionChange);
+
+            onConnectionChange(null);
+
         }
 
-        private function onConnectionChange( event:Event ):void
+        private function onConnectionChange(event:Event):void
+
         {
+
             startQueueBtn.enabled = _netDetect.connected;
+
         }
 
-        private function onGetBlogEntries( event:DBServiceEvent ):void
+        private function onGetBlogEntries(event:DBServiceEvent):void
+
         {
+
             _publishQueueItems = event.data as Array;
+
         }
 
-        private function onBlogEntryDeleted( event:DBServiceEvent ):void
+        private function onBlogEntryDeleted(event:DBServiceEvent):void
+
         {
+
             _dbService.getPublishQueue();
+
         }
 
-        private function onQueueServiceComplete( event:Event ):void
+        private function onQueueServiceComplete(event:Event):void
+
         {
+
             this.enabled = true;
+
             CursorManager.removeBusyCursor();
-            Alert.show( "Publish queue complete!", "Success!", (Alert.OK), this );
+
+            Alert.show("Publish queue complete!", "Success!", (Alert.OK), this);
+
         }
 
-        private function startQueue( event:MouseEvent ):void
+        private function startQueue(event:MouseEvent):void
+
         {
-            _queueService = new QueueService( _publishQueueItems );
-            _queueService.addEventListener( Event.COMPLETE, onQueueServiceComplete );
+
+            _queueService = new QueueService(_publishQueueItems);
+
+            _queueService.addEventListener(Event.COMPLETE, onQueueServiceComplete);
+
             _queueService.startQueue();
 
             this.enabled = false;
+
             CursorManager.setBusyCursor();
+
         }
 
-        private function deleteEntry( event:MouseEvent ):void
+        private function deleteEntry(event:MouseEvent):void
+
         {
+
             var blogEntryID:int = publishQueueGrid.selectedItem.blogEntry.id;
-            _dbService.deleteBlogEntry( blogEntryID );
+
+            _dbService.deleteBlogEntry(blogEntryID);
+
         }
 
         public function update():void
+
         {
+
             _dbService.getPublishQueue();
+
         }
 
     ]]></mx:Script>
+
     <mx:Canvas width="100%" height="100%">
+
         <mx:DataGrid id="publishQueueGrid" dataProvider="{_publishQueueItems}"
             top="0" right="0" left="0" bottom="40">
+
             <mx:columns>
+
                 <mx:DataGridColumn headerText="Blog" dataField="blogTitle"/>
+
                 <mx:DataGridColumn headerText="Title" dataField="blogEntryTitle"/>
+
                 <mx:DataGridColumn headerText="Content"
                     dataField="blogEntryContent"/>
+
             </mx:columns>
+
         </mx:DataGrid>
+
         <mx:Button id="startQueueBtn" click="startQueue(event)"
             label="Start Queue" left="10" bottom="10"
             enabled="{_publishQueueItems.length > 0}"/>
+
         <mx:Button id="deleteBtn" click="deleteEntry(event)"
             label="Delete Entry" right="10" bottom="10"
             enabled="{publishQueueGrid.selectedItem != null}"/>
+
     </mx:Canvas>
+
 </mx:Panel>
 ```
 
@@ -16522,14 +17983,20 @@ titleInput.text = contentInput.text = "";
 以下代码片段来自 `PublishQueuePanel` 组件中的 `startQueue` 函数。当用户点击“Start Queue”按钮时调用此函数。这里，创建了一个 `QueueService` 对象，并将 `publishQueueItems` 属性作为唯一参数传递给构造函数。很简单，`QueueService` 对象配置了一个处理 `COMPLETE` 事件的事件处理器，并通过调用对象的 `startQueue` 方法启动队列：
 
 ```actionscript
-private function startQueue( event:MouseEvent ) :void
+private function startQueue(event:MouseEvent):void
+
 {
-    _queueService = new QueueService( _publishQueueItems );
-    _queueService.addEventListener( Event.COMPLETE, onQueueServiceComplete );
+
+    _queueService = new QueueService(_publishQueueItems);
+
+    _queueService.addEventListener(Event.COMPLETE, onQueueServiceComplete);
+
     _queueService.startQueue();
 
     this.enabled = false;
+
     CursorManager.setBusyCursor();
+
 }
 ```
 
@@ -16543,77 +18010,126 @@ private function startQueue( event:MouseEvent ) :void
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
+
 <mx:WindowedApplication xmlns:mx="http://www.adobe.com/2006/mxml"
     layout="absolute" width="800" height="600"
     applicationComplete="onAppInit()" closing="onAppClosing()"
     xmlns:ui="com.aircmr.bloggeragent.ui.*">
 
 <mx:Script><![CDATA[
+
     import com.aircmr.bloggeragent.services.DBService;
+
     import com.aircmr.net.NetworkDetection;
+
     import mx.managers.CursorManager;
 
     public static const APPLICATION_ID:String = "com.aircmr.bloggeragent";
 
     private var _currentPanel:Object;
+
     private var _currentButton:Button;
+
     private var _dbService:DBService;
+
     private var _netDetect:NetworkDetection;
 
     private function onAppInit():void
+
     {
+
         this.systemManager.stage.nativeWindow.width = 800;
+
         this.systemManager.stage.nativeWindow.height = 600;
+
         _currentButton = accountManagerBtn;
+
         _currentPanel = accountManagerPanel;
+
         _dbService = DBService.getInstance();
+
         _netDetect = NetworkDetection.getInstance();
-        _netDetect.addEventListener( NetworkDetection.CONNECTION_CHANGE,
-            onConnectionChange );
+
+        _netDetect.addEventListener(NetworkDetection.CONNECTION_CHANGE,
+            onConnectionChange);
+
         _netDetect.checkConnection();
-        onConnectionChange( null );
-        setSelection( accountManagerBtn, accountManagerPanel );
+
+        onConnectionChange(null);
+
+        setSelection(accountManagerBtn, accountManagerPanel);
+
     }
 
     private function onAppClosing():void
+
     {
+
         _dbService.close();
+
     }
 
-    private function onButtonClick( event:MouseEvent, panel:Object ):void
+    private function onButtonClick(event:MouseEvent, panel:Object):void
+
     {
-        if( CursorManager.currentCursorID == 0 )
-            setSelection( event.target as Button, panel );
+
+        if (CursorManager.currentCursorID == 0)
+
+            setSelection(event.target as Button, panel);
+
     }
 
-    private function onConnectionChange( event:Event ):void
+    private function onConnectionChange(event:Event):void
+
     {
+
         var msg:String = "Network status: ";
-        this.status = ( _netDetect.connected ) ? msg + "Online" : msg + "Offline";
+
+        this.status = (_netDetect.connected) ? msg + "Online" : msg + "Offline";
+
     }
 
-    private function setSelection( button:Button, panel:Object ):void
+    private function setSelection(button:Button, panel:Object):void
+
     {
+
         _currentButton.enabled = true;
+
         _currentButton = button;
+
         _currentButton.enabled = false;
+
         _currentPanel.visible = false;
+
         _currentPanel = panel;
+
         _currentPanel.visible = true;
+
         _currentPanel.update();
+
     }
+
 ]]></mx:Script>
+
     <mx:Button id="accountManagerBtn" x="10" y="10" label="Manage Blogs"
         click="onButtonClick(event, accountManagerPanel)"/>
+
     <mx:Button id="composeEntryBtn" x="122" y="10" label="Compose Entry"
         click="onButtonClick(event, composeEntryPanel)"/>
+
     <mx:Button id="publishQueueBtn" x="242" y="10" label="Publish Queue"
         click="onButtonClick(event, publishQueuePanel)"/>
+
     <ui:BlogManagerPanel id="accountManagerPanel" visible="true"/>
+
     <ui:ComposeEntryPanel id="composeEntryPanel" visible="false"/>
+
     <ui:PublishQueuePanel id="publishQueuePanel" visible="false"/>
-</mx:WindowedApplication>
 ```
+
+
+
+</mx:WindowedApplication>
 
 将文件保存为 `BloggerAgent.mxml`，位于你的工作目录中。
 
@@ -16639,11 +18155,9 @@ private function onConnectionChange( event:Event ):void
 
 打开你的编辑器并创建一个新文档。输入以下标记：
 
-
-
 ## 第十章：博主代理
 
-```
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <application xmlns="http://ns.adobe.com/air/application/1.0">
     <id>com.aircmr.bloggeragent</id>
@@ -16667,20 +18181,20 @@ private function onConnectionChange( event:Event ):void
 
 打开命令提示符，导航到此应用程序的工作目录，输入以下内容并按 Enter 键：
 
-```
-> amxmlc BloggerAgent.mxml
+```bash
+amxmlc BloggerAgent.mxml
 ```
 
 如果你已从证书颁发机构（如 VeriSign 或 Thawte）购买了证书，你可以使用该证书，而不是创建自签名证书，并跳过以下操作。要在工作目录内创建自签名证书，请输入以下命令：
 
-```
-> adt -certificate -cn BloggerAgent 1024-RSA certificate.pfx password
+```bash
+adt -certificate -cn BloggerAgent 1024-RSA certificate.pfx password
 ```
 
 在命令提示符仍指向工作目录的情况下，输入以下命令并按 Enter 键：
 
-```
-> adt -package -storetype pkcs12 -keystore certificate.pfx BloggerAgent.air BloggerAgent-app.xml BloggerAgent.swf
+```bash
+adt -package -storetype pkcs12 -keystore certificate.pfx BloggerAgent.air BloggerAgent-app.xml BloggerAgent.swf
 ```
 
 安装程序创建后，导航到你的工作目录并双击 `BloggerAgent.air` 以安装并运行应用程序。如果一切顺利，应用程序将启动，并且看起来与图 10-2 所示的非常相似。唯一的区别将是缺少一个账户，但请继续并添加你自己的账户！
@@ -16733,13 +18247,11 @@ private function onConnectionChange( event:Event ):void
 
 在你的开发目录中，创建一个名为 `SlideshowMaker` 的文件夹。这将是你的应用程序的工作目录。设置好后，你就可以开始工作了：
 
-
-
 ## 第11章：幻灯片制作器
 
 **1.** 打开你喜欢的文本编辑器，并输入以下 ActionScript：
 
-```
+```actionscript
 package com.aircmr.slideshow.data
 {
     import flash.events.Event;
@@ -16757,11 +18269,13 @@ package com.aircmr.slideshow.data
 
         public static const IMAGE_CHANGE:String = "imageChange";
 
-        public function Slide( title:String = "Enter Title",
-                               caption:String = "Enter Caption",
-                               image:SlideImage = null,
-                               backgroundColor:uint = 0xFFFFFF,
-                               textColor:uint = 0x000000 )
+        public function Slide(
+            title:String = "Enter Title",
+            caption:String = "Enter Caption",
+            image:SlideImage = null,
+            backgroundColor:uint = 0xFFFFFF,
+            textColor:uint = 0x000000
+        )
         {
             this.title = title;
             this.caption = caption;
@@ -16772,17 +18286,17 @@ package com.aircmr.slideshow.data
 
         public function clean():void
         {
-            if( _image != null ) _image.clean();
+            if (_image != null) _image.clean();
         }
 
         public function serialize():void
         {
-            if( this.image != null ) image.serialize();
+            if (this.image != null) image.serialize();
         }
 
         public function deserialize():void
         {
-            if( this.image != null ) image.deserialize();
+            if (this.image != null) image.deserialize();
         }
 
         [Bindable("imageChange")]
@@ -16791,11 +18305,12 @@ package com.aircmr.slideshow.data
             return _image;
         }
 
-        public function set image( vo:SlideImage ):void
+        public function set image(vo:SlideImage):void
         {
-            if( _image != null ) _image.clean();
+            if (_image != null) _image.clean();
+
             _image = vo;
-            dispatchEvent( new Event( Slide.IMAGE_CHANGE ) );
+            dispatchEvent(new Event(Slide.IMAGE_CHANGE));
         }
     }
 }
@@ -16805,7 +18320,7 @@ package com.aircmr.slideshow.data
 
 **3.** 创建一个新文档，并输入以下 ActionScript：
 
-```
+```actionscript
 package com.aircmr.slideshow.data
 {
     import flash.display.Bitmap;
@@ -16818,7 +18333,6 @@ package com.aircmr.slideshow.data
     import flash.filesystem.FileStream;
     import flash.net.URLRequest;
     import flash.utils.ByteArray;
-
     import mx.graphics.codec.PNGEncoder;
 
     [RemoteClass]
@@ -16826,170 +18340,201 @@ package com.aircmr.slideshow.data
     {
         [Bindable] public var _width:Number;
         [Bindable] public var _height:Number;
-
         private var _data:ByteArray;
         private var _filepath:String;
         private var _bitmapData:BitmapData;
-
         private var _tempFile:File;
         private var _loader:Loader;
 
         public static const DATA_CHANGE:String = "dataChange";
         public static const FILEPATH_CHANGE:String = "filepathChange";
 
-        public function SlideImage( bmp:BitmapData = null,
-                                    filepath:String = "" ):void
+        public function SlideImage(
+            bmp:BitmapData = null,
+            filepath:String = ""
+        ):void
         {
-            if( bmp != null ) this.bitmapData = bmp;
+            if (bmp != null) this.bitmapData = bmp;
             this.filepath = filepath;
         }
 
-        private function writeTempFile( byteArray:ByteArray ):void
+        private function writeTempFile(byteArray:ByteArray):void
         {
             _tempFile = File.createTempFile();
             filepath = _tempFile.url;
+
             var stream:FileStream = new FileStream();
-            stream.open( _tempFile, FileMode.WRITE );
-            stream.writeBytes( byteArray );
+            stream.open(_tempFile, FileMode.WRITE);
+            stream.writeBytes(byteArray);
             stream.close();
         }
 
         public function clean():void
         {
-            if( _tempFile != null ) _tempFile.deleteFile();
-            if( bitmapData != null ) bitmapData.dispose();
+            if (_tempFile != null) _tempFile.deleteFile();
+            if (bitmapData != null) bitmapData.dispose();
         }
 
         public function serialize():void
         {
             _data = new ByteArray();
-            if( _filepath.indexOf( "http://" ) != -1 )
-                writeTempFile( new PNGEncoder().encode( bitmapData ) );
 
-            var stream:FileStream = new FileStream();
-            stream.open( new File( _filepath ), FileMode.READ );
-            stream.readBytes( _data );
-            _data.compress();
-        }
+            if (_filepath.indexOf("http://") != -1)
+                writeTempFile(new PNGEncoder().encode(bitmapData));
+```
 
-        public function deserialize():void
-        {
-            _data.uncompress();
-            _data.position = 0;
-            writeTempFile( _data );
 
-            _loader = new Loader();
-            _loader.contentLoaderInfo.addEventListener( Event.COMPLETE,
-                                                        onOpenComplete );
-            _loader.load( new URLRequest( _tempFile.url ) );
-        }
 
-        private function onOpenComplete( evt:Event ):void
-        {
-            var bitmap:Bitmap = _loader.content as Bitmap;
-            bitmapData = bitmap.bitmapData;
-        }
+```actionscript
+var stream:FileStream = new FileStream();
 
-        [Bindable]
-        public function get data():ByteArray
-        {
-            return _data;
-        }
-        public function set data( barr:ByteArray ):void
-        {
-            _data = barr;
-        }
+stream.open(new File(_filepath), FileMode.READ);
 
-        [Bindable("filepathChange")]
-        [Transient]
-        public function get filepath():String
-        {
-            return _filepath;
-        }
-        public function set filepath( str:String ):void
-        {
-            _filepath = str;
-            dispatchEvent( new Event( SlideImage.FILEPATH_CHANGE ) );
-        }
+stream.readBytes(_data);
 
-        [Bindable("dataChange")]
-        [Transient]
-        public function get bitmapData():BitmapData
-        {
-            return _bitmapData;
-        }
-        public function set bitmapData( bmd:BitmapData ):void
-        {
-            _bitmapData = bmd;
-            _width = _bitmapData.width;
-            _height = _bitmapData.height;
-            dispatchEvent( new Event( SlideImage.DATA_CHANGE ) );
-        }
-    }
+_data.compress();
+}
+
+public function deserialize():void
+{
+    _data.uncompress();
+
+    _data.position = 0;
+
+    writeTempFile(_data);
+
+    _loader = new Loader();
+
+    _loader.contentLoaderInfo.addEventListener(
+        Event.COMPLETE,
+        onOpenComplete
+    );
+
+    _loader.load(new URLRequest(_tempFile.url));
+}
+
+private function onOpenComplete(evt:Event):void
+{
+    var bitmap:Bitmap = _loader.content as Bitmap;
+
+    bitmapData = bitmap.bitmapData;
+}
+
+[Bindable]
+public function get data():ByteArray
+{
+    return _data;
+}
+
+public function set data(barr:ByteArray):void
+{
+    _data = barr;
+}
+
+[Bindable("filepathChange")]
+[Transient]
+public function get filepath():String
+{
+    return _filepath;
+}
+
+public function set filepath(str:String):void
+{
+    _filepath = str;
+
+    dispatchEvent(new Event(SlideImage.FILEPATH_CHANGE));
+}
+
+[Bindable("dataChange")]
+[Transient]
+public function get bitmapData():BitmapData
+{
+    return _bitmapData;
+}
+
+public function set bitmapData(bmd:BitmapData):void
+{
+    _bitmapData = bmd;
+
+    _width = _bitmapData.width;
+
+    _height = _bitmapData.height;
+
+    dispatchEvent(new Event(SlideImage.DATA_CHANGE));
 }
 ```
 
-**4.** 将文件保存为 `SlideImage.as`，存放于工作目录下的 `com/aircmr/slideshow/data` 目录中。
+**4.** 将文件保存为`SlideImage.as`，存放于工作目录下的`com/aircmr/slideshow/data`目录中。
 
-第一段代码片段，保存为 `Slide.as`，代表了与单张幻灯片关联的数据。类定义上方的 `RemoteClass` 元数据标签注册了一个与完全限定类名对应的别名。通过为类注册类别名，当编码为 AMF 时，自定义类型得以保留，并且能被 Flash Player 的序列化器/反序列化器识别。这使你能够在应用程序中打开该对象，并将其反序列化为一个 `Slide` 实例。
+第一段代码片段，保存为`Slide.as`，代表了与单张幻灯片关联的数据。类定义上方的`RemoteClass`元数据标签注册了一个与完全限定类名对应的别名。通过为类注册类别名，当编码为 AMF 时，自定义类型得以保留，并且能被 Flash Player 的序列化器/反序列化器识别。这使你能够在应用程序中打开该对象，并将其反序列化为一个`Slide`实例。
 
-`Slide` 对象的各种属性相当基础，它们与显示相关，例如背景颜色、标题字符串等属性。一个值得注意的属性是 `image` 属性。`image` 属性的类型是 `SlideImage`——即本节中创建的第二段代码片段。`SlideImage` 也注册了类别名，以便在序列化时保留其类型。
+`Slide`对象的各种属性相当基础，它们与显示相关，例如背景颜色、标题字符串等属性。一个值得注意的属性是`image`属性。`image`属性的类型是`SlideImage`——即本节中创建的第二段代码片段。`SlideImage`也注册了类别名，以便在序列化时保留其类型。
 
-`SlideImage` 类上有两个值得注意的属性：`filepath` 和 `bitmapData`，它们被标记了 `Transient` 元数据标签。标记为 `[Transient]` 的属性不包含在该实例的序列化过程中。这些属性的值只与应用程序打开时的 `SlideImage` 实例相关。这可能看起来有些奇怪。如果 `SlideImage` 实例的属性与幻灯片上图像的图形数据相关联，为什么你不想编码这些数据呢？
+`SlideImage`类上有两个值得注意的属性：`filepath`和`bitmapData`，它们被标记了`Transient`元数据标签。标记为`[Transient]`的属性不包含在该实例的序列化过程中。这些属性的值只与应用程序打开时的`SlideImage`实例相关。这可能看起来有些奇怪。如果`SlideImage`实例的属性与幻灯片上图像的图形数据相关联，为什么你不想编码这些数据呢？
 
-原因是幻灯片制作器中创建的幻灯片会保存为文件，这些文件可以在计算机之间移动，并在日后打开。`SlideImage` 不持有任何单台计算机上图像文件路径的引用。一个选择是存储该图像文件的 `bitmapData`，但该属性也被标记为 `[Transient]`。虽然可以从 `BitmapData` 实例生成像素数据的 `ByteArray`，但将该 `ByteArray` 与对象一起存储会在将对象保存到硬盘时显著增加文件大小。为了避免使用 `ByteArray` 对象保存包含大量图形数据的大文件，应用程序实际上会将图像文件本身序列化，以便在重新打开幻灯片文件时解包。这就是 `SlideImage` 的 `serialize()` 和 `deserialize()` 方法发挥作用的地方。
+原因是幻灯片制作器中创建的幻灯片会保存为文件，这些文件可以在计算机之间移动，并在日后打开。`SlideImage`不持有任何单台计算机上图像文件路径的引用。一个选择是存储该图像文件的`bitmapData`，但该属性也被标记为`[Transient]`。虽然可以从`BitmapData`实例生成像素数据的`ByteArray`，但将该`ByteArray`与对象一起存储会在将对象保存到硬盘时显著增加文件大小。为了避免使用`ByteArray`对象保存包含大量图形数据的大文件，应用程序实际上会将图像文件本身序列化，以便在重新打开幻灯片文件时解包。这就是`SlideImage`的`serialize()`和`deserialize()`方法发挥作用的地方。
 
-在编码 `Slide` 对象之前，会调用该 `Slide` 实例所持有的 `SlideImage` 实例的 `serialize()` 方法：
+在编码`Slide`对象之前，会调用该`Slide`实例所持有的`SlideImage`实例的`serialize()`方法：
 
-```
+```actionscript
 public function serialize():void
 {
     _data = new ByteArray();
-    if( _filepath.indexOf( "http://" ) != -1 )
-        writeTempFile( new PNGEncoder().encode( bitmapData ) );
+
+    if (_filepath.indexOf("http://") != -1)
+    {
+        writeTempFile(new PNGEncoder().encode(bitmapData));
+    }
 
     var stream:FileStream = new FileStream();
-    stream.open( new File( _filepath ), FileMode.READ );
-    stream.readBytes( _data );
+
+    stream.open(new File(_filepath), FileMode.READ);
+
+    stream.readBytes(_data);
+
     _data.compress();
 }
 ```
 
-`serialize()` 方法对当前持有的 `SlideImage` 实例的 `bitmapData` 进行编码，并将该数据写入临时文件。然后，该图像文件被写入函数局部的 `FileStream` 实例的缓冲区，图像文件本身作为 `ByteArray` 存储在 `SlideImage` 实例上。
+`serialize()`方法对当前持有的`SlideImage`实例的`bitmapData`进行编码，并将该数据写入临时文件。然后，该图像文件被写入函数局部的`FileStream`实例的缓冲区，图像文件本身作为`ByteArray`存储在`SlideImage`实例上。
 
-打开已保存的文件时，会调用 `deserialize()` 方法，将存储的文件数据写回临时文件并加载它：
+打开已保存的文件时，会调用`deserialize()`方法，将存储的文件数据写回临时文件并加载它：
 
-```
+```actionscript
 public function deserialize():void
 {
     _data.uncompress();
+
     _data.position = 0;
-    writeTempFile( _data );
+
+    writeTempFile(_data);
 
     _loader = new Loader();
-    _loader.contentLoaderInfo.addEventListener( Event.COMPLETE,
-                                                onOpenComplete );
-    _loader.load( new URLRequest( _tempFile.url ) );
+
+    _loader.contentLoaderInfo.addEventListener(
+        Event.COMPLETE,
+        onOpenComplete
+    );
+
+    _loader.load(new URLRequest(_tempFile.url));
 }
 ```
 
-从 `Loader` 实例的 `contentLoaderInfo` 分发的 `complete` 事件的处理函数会赋值给 `bitmapData` 属性，进而为任何监听客户端分发 `dataChange` 事件。
+从`Loader`实例的`contentLoaderInfo`分发的`complete`事件的处理函数会赋值给`bitmapData`属性，进而为任何监听客户端分发`dataChange`事件。
 
-`SlideImage` 数据对象不仅持有属性值，还在保持幻灯片制作器相关文件相对较小方面扮演着重要角色。在下一节中，你将创建管理幻灯片序列的客户端。
+`SlideImage`数据对象不仅持有属性值，还在保持幻灯片制作器相关文件相对较小方面扮演着重要角色。在下一节中，你将创建管理幻灯片序列的客户端。
 
 ## 管理幻灯片
 
 你将在本节创建的类有两个不同的角色。它管理应用程序打开时幻灯片的组织结构，并将这组幻灯片存储起来，以便序列化为代表幻灯片的文件。
 
-
-
 # 第十一章：幻灯片制作器
 
 与本章先前创建的数据对象一样，代表幻灯片本身对象也拥有一个已注册的类别名。
 
-创建一个新文档并输入以下ActionScript：
+创建一个新文档并输入以下 ActionScript：
 
-```
+```actionscript
 package com.aircmr.slideshow.data
 {
     import flash.events.Event;
@@ -17002,6 +18547,7 @@ package com.aircmr.slideshow.data
     {
         [ArrayElementType("com.aircmr.slideshow.data.Slide")]
         private var _slides:Array = [];
+
         private var _currentIndex:int;
 
         public static const INDEX_CHANGE:String = "indexChange";
@@ -17011,93 +18557,111 @@ package com.aircmr.slideshow.data
 
         public function clean():void
         {
-            while( _slides.length > 0 )
+            while (_slides.length > 0)
             {
-                Slide( _slides.shift() ).clean();
+                Slide(_slides.shift()).clean();
             }
         }
 
         public function serialize():void
         {
             var i:int = _slides.length;
-            while( --i > -1 )
+
+            while (--i > -1)
             {
-                Slide( _slides[i] ).serialize();
+                Slide(_slides[i]).serialize();
             }
         }
 
         public function deserialize():void
         {
             var i:int = _slides.length;
-            while( --i > -1 )
+
+            while (--i > -1)
             {
-                Slide( _slides[i] ).deserialize();
+                Slide(_slides[i]).deserialize();
             }
         }
 
-        public function addSlide( slide:Slide, fromBeginning:Boolean = false ):void
+        public function addSlide(
+            slide:Slide,
+            fromBeginning:Boolean = false
+        ):void
         {
-            slides = _slides.concat( slide );
+            slides = _slides.concat(slide);
+
             currentIndex = fromBeginning ? 0 : _slides.length - 1;
         }
 
-        public function removeSlide( slide:Slide ) :void
+        public function removeSlide(slide:Slide):void
         {
             var arr:Array = _slides.concat();
-            for( var i:int = 0; i < arr.length; i++ )
+
+            for (var i:int = 0; i < arr.length; i++)
             {
-                if( Slide( _slides[i] ) == slide )
+                if (Slide(_slides[i]) == slide)
                 {
-                    arr.splice( i, 1 );
+                    arr.splice(i, 1);
                     break;
                 }
             }
-            if( arr.length == 0 ) arr.push( new Slide() );
+
+            if (arr.length == 0)
+            {
+                arr.push(new Slide());
+            }
+
             slides = arr;
-            currentIndex = ( _currentIndex > arr.length - 1 ) ? 0 : _currentIndex;
+
+            currentIndex =
+                (_currentIndex > arr.length - 1) ? 0 : _currentIndex;
         }
 
-        public function get length() :int
+        public function get length():int
         {
             return _slides.length;
         }
 
-        public function get currentSlide() :Slide
+        public function get currentSlide():Slide
         {
             return _slides[_currentIndex];
         }
 
         [Bindable("indexChange")]
         [Transient]
-        public function get currentIndex() :int
+        public function get currentIndex():int
         {
             return _currentIndex;
         }
-        public function set currentIndex( n:int ) :void
+
+        public function set currentIndex(n:int):void
         {
             _currentIndex = n;
-            dispatchEvent( new Event( SlideGallery.INDEX_CHANGE ) );
+
+            dispatchEvent(new Event(SlideGallery.INDEX_CHANGE));
         }
 
         [Bindable("slidesChange")]
-        public function get slides() :Array
+        public function get slides():Array
         {
             return _slides;
         }
-        public function set slides( arr:Array ) :void
+
+        public function set slides(arr:Array):void
         {
             _slides = arr;
-            dispatchEvent( new Event( SlideGallery.SLIDES_CHANGE ) );
+
+            dispatchEvent(new Event(SlideGallery.SLIDES_CHANGE));
         }
     }
 }
 ```
 
-将文件保存为SlideGallery.as，存放于com/aircmr/slideshow/data目录中，与本节之前创建的其他模型类放在同一位置。
+将文件保存为`SlideGallery.as`，存放于`com/aircmr/slideshow/data`目录中，与本节之前创建的其他模型类放在同一位置。
 
 `SlideGallery`负责管理一组幻灯片的顺序。可以添加和删除`Slide`实例，并且可以设置和获取幻灯片制作器中当前正在查看的幻灯片的索引。
 
-你会注意到`currentIndex`属性被标记为`[Transient]`。就像`SlideImage`的`filepath`和`bitmapData`属性一样，`currentIndex`的值不会随AMF编码的`SlideGallery`对象一起存储。`currentIndex`的值仅与应用程序打开时从`slides`数组中正在查看的幻灯片的当前元素索引有关，并且可以从工作区和演示显示中访问。在本章示例中，保存幻灯片之前的当前索引没有意义，但如果你打算使用它——例如，在打开幻灯片时将用户返回到最后查看的幻灯片——你可以自由地取消该属性的瞬态标记。
+你会注意到`currentIndex`属性被标记为`[Transient]`。就像`SlideImage`的`filepath`和`bitmapData`属性一样，`currentIndex`的值不会随 AMF 编码的`SlideGallery`对象一起存储。`currentIndex`的值仅与应用程序打开时从`slides`数组中正在查看的幻灯片的当前元素索引有关，并且可以从工作区和演示显示中访问。在本章示例中，保存幻灯片之前的当前索引没有意义，但如果你打算使用它——例如，在打开幻灯片时将用户返回到最后查看的幻灯片——你可以自由地取消该属性的瞬态标记。
 
 在下一节中，你将构建可视化组件，以便预览和修改幻灯片。
 
@@ -17117,250 +18681,429 @@ package com.aircmr.slideshow.data
 
 1. 在你最喜欢的文本编辑器中创建一个新文档并输入以下标记：
 
-```
+```xml
 <?xml version="1.0" encoding="utf-8"?>
+
 <mx:Box xmlns:mx="http://www.adobe.com/2006/mxml"
-    xmlns:ui="com.aircmr.slideshow.ui.*"
-    width="100%" height="100%"
-    verticalAlign="middle" horizontalAlign="center"
-    verticalScrollPolicy="off" horizontalScrollPolicy="off"
-    resize="onResize();">
-    <mx:Style>
-        .caption {
-            font-size: 20px;
+```
+
+
+
+```xml
+xmlns:ui="com.aircmr.slideshow.ui.*"
+
+width="100%" height="100%"
+
+verticalAlign="middle" horizontalAlign="center"
+
+verticalScrollPolicy="off" horizontalScrollPolicy="off"
+
+resize="onResize();">
+
+<mx:Style>
+
+    .caption {
+
+        font-size: 20px;
+
+    }
+
+</mx:Style>
+
+<mx:Script>
+
+    <![CDATA[
+
+        import com.aircmr.slideshow.data.Slide;
+
+        import com.aircmr.slideshow.data.SlideImage;
+
+        import com.aircmr.slideshow.util.Settings;
+
+        import mx.binding.utils.ChangeWatcher;
+
+        import mx.binding.utils.BindingUtils;
+
+        private var _canvasScale:Number = 1.0;
+
+        private var _includeView:Boolean = true;
+
+        private var _scaleWatcher:ChangeWatcher;
+
+        [Bindable] private var _slide:Slide;
+
+        private static const PADDING:int = 20;
+
+        private function onViewCreate():void
+
+        {
+
+            var bounds:Rectangle = Settings.getScreenSize();
+
+            view.width = bounds.width;
+
+            view.height = bounds.height;
+
+            _scaleWatcher = BindingUtils.bindSetter( invalidateViewScale, this,
+
+                                                     'canvasScale', true );
+
         }
-    </mx:Style>
-    <mx:Script>
-        <![CDATA[
-            import com.aircmr.slideshow.data.Slide;
-            import com.aircmr.slideshow.data.SlideImage;
-            import com.aircmr.slideshow.util.Settings;
-            import mx.binding.utils.ChangeWatcher;
-            import mx.binding.utils.BindingUtils;
 
-            private var _canvasScale:Number = 1.0;
-            private var _includeView:Boolean = true;
-            private var _scaleWatcher:ChangeWatcher;
-            [Bindable] private var _slide:Slide;
+        private function onResize():void
 
-            private static const PADDING:int = 20;
+        {
 
-            private function onViewCreate():void
-            {
-                var bounds:Rectangle = Settings.getScreenSize();
-                view.width = bounds.width;
-                view.height = bounds.height;
-                _scaleWatcher = BindingUtils.bindSetter( invalidateViewScale, this,
-                                                         'canvasScale', true );
-            }
+            var bounds:Rectangle = Settings.getScreenSize();
 
-            private function onResize():void
-            {
-                var bounds:Rectangle = Settings.getScreenSize();
-                var scale:Number = Math.min( ( width - PADDING ) / bounds.width,
-                                             ( height - PADDING ) / bounds.height );
-                canvasScale = scale;
-            }
+            var scale:Number = Math.min( ( width - PADDING ) / bounds.width,
 
-            private function invalidateViewScale( arg:* = null ):void
-            {
-                view.scaleX = view.scaleY = _canvasScale;
-                view.x = ( width - view.width * _canvasScale ) / 2;
-                view.y = ( height - view.height * _canvasScale ) / 2;
-            }
+                                         ( height - PADDING ) / bounds.height );
 
-            public function clean():void
-            {
-                _scaleWatcher.unwatch();
-            }
+            canvasScale = scale;
 
-            [Bindable]
-            public function get slideData():Slide
-            {
-                return _slide;
-            }
-            public function set slideData( slide:Slide ):void
-            {
-                _slide = slide;
-            }
+        }
 
-            [Bindable]
-            public function get canvasScale():Number
-            {
-                return _canvasScale;
-            }
-            public function set canvasScale( n:Number ):void
-            {
-                _canvasScale = n;
-            }
+        private function invalidateViewScale( arg:* = null ):void
 
-            [Bindable]
-            public function get includeViewInLayout():Boolean
-            {
-                return _includeView;
-            }
-            public function set includeViewInLayout( bool:Boolean ):void
-            {
-                _includeView = bool;
-            }
-        ]]>
-    </mx:Script>
-    <mx:Binding source="{_slide.image.bitmapData}" destination="image.source" />
-    <mx:VBox id="view"
-        backgroundColor="{_slide.backgroundColor}"
-        creationComplete="onViewCreate();"
-        includeInLayout="{includeViewInLayout}"
-        paddingLeft="10" paddingRight="10"
-        paddingTop="10" paddingBottom="10"
-        filters="{[new DropShadowFilter()]}">
-        <ui:SlideGraphic id="image"
-            width="100%" height="100%"
-        />
-        <mx:Text id="captionField"
-            width="100%" height="30"
-            styleName="caption"
-            text="{_slide.caption}"
-            color="{_slide.textColor}"
-            textAlign="center"
-        />
-    </mx:VBox>
+        {
+
+            view.scaleX = view.scaleY = _canvasScale;
+
+            view.x = ( width - view.width * _canvasScale ) / 2;
+
+            view.y = ( height - view.height * _canvasScale ) / 2;
+
+        }
+
+        public function clean():void
+
+        {
+
+            _scaleWatcher.unwatch();
+
+        }
+
+        [Bindable]
+
+        public function get slideData():Slide
+
+        {
+
+            return _slide;
+
+        }
+
+        public function set slideData( slide:Slide ):void
+
+        {
+
+            _slide = slide;
+
+        }
+
+        [Bindable]
+
+        public function get canvasScale():Number
+
+        {
+
+            return _canvasScale;
+
+        }
+
+        public function set canvasScale( n:Number ):void
+
+        {
+
+            _canvasScale = n;
+
+        }
+
+        [Bindable]
+
+        public function get includeViewInLayout():Boolean
+
+        {
+
+            return _includeView;
+
+        }
+
+        public function set includeViewInLayout( bool:Boolean ):void
+
+        {
+
+            _includeView = bool;
+
+        }
+
+    ]]>
+
+</mx:Script>
+
+<mx:Binding source="{_slide.image.bitmapData}" destination="image.source" />
+
+<mx:VBox id="view"
+
+    backgroundColor="{_slide.backgroundColor}"
+
+    creationComplete="onViewCreate();"
+
+    includeInLayout="{includeViewInLayout}"
+
+    paddingLeft="10" paddingRight="10"
+
+    paddingTop="10" paddingBottom="10"
+
+    filters="{[new DropShadowFilter()]}">
+
+    <ui:SlideGraphic id="image"
+
+        width="100%" height="100%"
+
+    />
+
+    <mx:Text id="captionField"
+
+        width="100%" height="30"
+
+        styleName="caption"
+
+        text="{_slide.caption}"
+
+        color="{_slide.textColor}"
+
+        textAlign="center"
+
+    />
+
+</mx:VBox>
+
 </mx:Box>
 ```
 
-2. 将文件保存为SlideCanvas.mxml，存放于工作目录中的com/aircmr/slideshow/ui目录。
+将文件保存为`SlideCanvas.mxml`，存放于工作目录中的`com/aircmr/slideshow/ui`目录。
 
-3. 创建一个新文档并输入以下ActionScript：
+创建一个新文档并输入以下 ActionScript：
 
-```
+```actionscript
 package com.aircmr.slideshow.ui
+
 {
+
     import flash.display.Bitmap;
+
     import flash.display.BitmapData;
+
 ```
 
-
-
-# 第11章：幻灯片制作工具
+# 第 11 章：幻灯片制作工具
 
 ```actionscript
 import flash.events.Event;
+
 import flash.geom.Matrix;
 
 import mx.core.UIComponent;
 
 public class SlideGraphic extends UIComponent
+
 {
+
     private var _source:BitmapData;
+
     private var _image:Bitmap;
 
     public function SlideGraphic() {}
 
     override protected function createChildren():void
+
     {
+
         super.createChildren();
+
         _image = new Bitmap();
+
         addChild( _image );
+
     }
 
     override protected function updateDisplayList(unscaledWidth:Number,
+
                                                  unscaledHeight:Number):void
+
     {
+
         super.updateDisplayList( unscaledWidth, unscaledHeight );
+
         invalidateImage();
+
     }
 
     private function invalidateImage():void
+
     {
+
         if( _source == null ) return;
+
         if( unscaledWidth == 0 || unscaledHeight == 0 ) return;
+
         var scale:Number = 1.0;
+
         var matrix:Matrix = new Matrix();
+
         if( _source.width > unscaledWidth || _source.height > unscaledHeight )
+
         {
+
             scale = Math.min( unscaledWidth / _source.width,
+
                               unscaledHeight / _source.height );
+
         }
+
         matrix.scale( scale, scale );
+
         _image.bitmapData = new BitmapData( _source.width * scale,
+
                                             _source.height * scale );
+
         _image.bitmapData.draw( _source, matrix );
+
         _image.x = ( unscaledWidth - _image.width ) / 2;
+
         _image.y = ( unscaledHeight - _image.height ) / 2;
+
     }
 
     public function get source():BitmapData
+
     {
+
         return _source;
+
     }
+
     public function set source( bmp:BitmapData ):void
+
     {
+
         _source = bmp;
+
         if( _source == null ) _image.bitmapData = null;
+
         else invalidateImage();
+
     }
+
 }
+
 }
+
 }
+
 ```
 
-4\. 将文件保存为 `SlideGraphic.as`，放在工作目录的 `com/aircmr/slideshow/ui` 目录下。
+将文件保存为`SlideGraphic.as`，放在工作目录的`com/aircmr/slideshow/ui`目录下。
 
-第一个代码片段，保存为 `SlideCanvas.mxml`，用于显示构成幻灯片的视觉元素。`SlideCanvas` 实例上的 `VBox` 容器包含了幻灯片的图形表示，其属性绑定到提供的 `Slide` 实例。容器的缩放比例会根据屏幕的当前边界以及 `SlideCanvas` 的调整大小事件进行更新。视图容器的 `creationComplete` 事件处理函数是 `onViewCreate()` 方法：
+第一个代码片段保存为`SlideCanvas.mxml`，用于显示构成幻灯片的视觉元素。`SlideCanvas`实例上的`VBox`容器包含了幻灯片的图形表示，其属性绑定到提供的`Slide`实例。容器的缩放比例会根据屏幕的当前边界以及`SlideCanvas`的调整大小事件进行更新。视图容器的`creationComplete`事件处理函数是`onViewCreate()`方法：
 
 ```actionscript
 private function onViewCreate():void
+
 {
+
     var bounds:Rectangle = Settings.getScreenSize();
+
     view.width = bounds.width;
+
     view.height = bounds.height;
+
     _scaleWatcher = BindingUtils.bindSetter( invalidateViewScale, this,
+
                                              'canvasScale', true );
+
 }
 
 private function onResize():void
+
 {
+
     var bounds:Rectangle = Settings.getScreenSize();
+
     var scale:Number = Math.min( ( width - PADDING ) / bounds.width,
+
                                  ( height - PADDING ) / bounds.height );
+
     canvasScale = scale;
+
 }
+
 ```
 
-在 `onViewCreate()` 方法中，视图容器被设置为当前屏幕边界的大小，因为这就是幻灯片放映期间查看幻灯片时的尺寸。`onResize()` 方法是处理 `SlideCanvas` 分发的调整大小事件的事件处理函数。`onResize()` 方法根据当前尺寸和屏幕尺寸计算设置视图容器的缩放比例。
+在`onViewCreate()`方法中，视图容器被设置为当前屏幕边界的大小，因为这就是幻灯片放映期间查看幻灯片时的尺寸。`onResize()`方法是处理`SlideCanvas`分发的调整大小事件的事件处理函数。`onResize()`方法根据当前尺寸和屏幕尺寸计算设置视图容器的缩放比例。
 
-`invalidateViewScale()` 方法绑定到 `canvasScale` 属性，并在缩放值更改后以及视图容器创建之后被调用。这确保了在视图容器创建之前可能发生在 `SlideCanvas` 上的任何调整大小操作都得到应用，并且其缩放和位置通过 `ChangeWatcher` 实例 `_scaleWatcher` 的实例化进行更新。
+`invalidateViewScale()`方法绑定到`canvasScale`属性，并在缩放值更改后以及视图容器创建之后被调用。这确保了在视图容器创建之前可能发生在`SlideCanvas`上的任何调整大小操作都得到应用，并且其缩放和位置通过`ChangeWatcher`实例`_scaleWatcher`的实例化进行更新。
 
 ```actionscript
 private function invalidateViewScale( arg:* = null ):void
+
 {
+
     view.scaleX = view.scaleY = _canvasScale;
+
     view.x = ( width - view.width * _canvasScale ) / 2;
+
     view.y = ( height - view.height * _canvasScale ) / 2;
+
 }
+
 ```
 
 由于视图容器的缩放基于屏幕分辨率，您可以确保准确呈现幻灯片在实际放映时的外观。
 
-视图容器包含一个 `SlideGraphic` 实例——即保存为 `SlideGraphic.as` 的代码片段。`SlideGraphic` 呈现与 `Slide` 实例的图像关联的图形数据。`SlideGraphic` 上的 `Bitmap` 实例的位图数据根据 `source` 属性进行更新。当 `source` 属性的值从非空值（空值表示没有图像的 `Slide`）发生更改时，`invalidateImage()` 方法被调用：
+视图容器包含一个`SlideGraphic`实例——即保存为`SlideGraphic.as`的代码片段。`SlideGraphic`呈现与`Slide`实例的图像关联的图形数据。`SlideGraphic`上的`Bitmap`实例的位图数据根据`source`属性进行更新。当`source`属性的值从非空值（空值表示没有图像的`Slide`）发生更改时，`invalidateImage()`方法被调用：
 
 ```actionscript
 private function invalidateImage():void
+
 {
+
     if( _source == null ) return;
+
     if( unscaledWidth == 0 || unscaledHeight == 0 ) return;
+
     var scale:Number = 1.0;
+
     var matrix:Matrix = new Matrix();
+
     if( _source.width > unscaledWidth || _source.height > unscaledHeight )
+
     {
+
         scale = Math.min( unscaledWidth / _source.width,
+
                           unscaledHeight / _source.height );
+
     }
+
     matrix.scale( scale, scale );
+
     _image.bitmapData = new BitmapData( _source.width * scale,
+
                                        _source.height * scale );
-    _image.bitmapData.draw( _source, matrix );
-    _image.x = ( unscaledWidth - _image.width ) / 2;
-    _image.y = ( unscaledHeight - _image.height ) / 2;
+```
+
+
+
+```actionscript
+_image.bitmapData.draw( _source, matrix );
+
+_image.x = ( unscaledWidth - _image.width ) / 2;
+
+_image.y = ( unscaledHeight - _image.height ) / 2;
+
 }
 ```
 
@@ -17376,144 +19119,245 @@ private function invalidateImage():void
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
+
 <mx:VBox xmlns:mx="http://www.adobe.com/2006/mxml"
+
          width="100%" height="100%"
+
          creationComplete="onCreationComplete();">
+
     <mx:Script>
+
         <![CDATA[
 
 import com.aircmr.slideshow.data.Slide;
+
 import com.aircmr.slideshow.data.SlideImage;
 
 private var _loader:Loader;
+
 private var _importFile:File;
+
 private var _url:String;
+
 private var _hasChanged:Boolean = false;
+
 [Bindable] private var _slide:Slide;
 
 private function onCreationComplete():void
+
 {
+
     _loader = new Loader();
+
     _loader.contentLoaderInfo.addEventListener( Event.COMPLETE,
+
                                             onImageLoad );
+
 }
 
 private function onBrowseForFile():void
+
 {
+
     _importFile = new File();
+
     _importFile.addEventListener( Event.SELECT, onImageSelect );
+
     _importFile.browseForOpen( "Choose Image",
+
             [new FileFilter( "Image File", "*.jpg;*.png;*.jpeg;" )] );
+
 }
 
 private function onImageSelect( evt:Event ):void
+
 {
+
     loadImage( _importFile.url );
+
 }
 
 private function onImageLoad( evt:Event ):void
+
 {
+
     _slide.image = new SlideImage(
+
                         ( _loader.content as Bitmap ).bitmapData, _url );
+
     hasChanged = true;
+
 }
 
 private function onSlideColorChange():void
+
 {
+
     _slide.backgroundColor = backgroundPicker.selectedColor;
+
     hasChanged = true;
+
 }
+
 private function onSlideTitleChange():void
+
 {
+
     _slide.title = titleInput.text;
+
     hasChanged = true;
+
 }
+
 private function onSlideCaptionChange():void
+
 {
+
     _slide.caption = captionInput.text;
+
     hasChanged = true;
+
 }
+
 private function onSlideCaptionColorChange():void
+
 {
+
     _slide.textColor = captionPicker.selectedColor;
+
     hasChanged = true;
+
 }
 
 private function loadImage( url:String ):void
+
 {
+
     _url = url;
+
     _loader.load( new URLRequest( url ) );
+
 }
 
 public function get slideData():Slide
+
 {
+
     return _slide;
+
 }
+
 public function set slideData( slide:Slide ):void
+
 {
+
     _slide = slide;
+
 }
 
 [Bindable]
+
 public function get hasChanged():Boolean
+
 {
+
     return _hasChanged;
+
 }
+
 public function set hasChanged( bool:Boolean ):void
+
 {
+
     _hasChanged = bool;
+
 }
 
 ]]>
+
 </mx:Script>
 
 <mx:Binding source="{_slide.image.filepath}" destination="imageInput.text" />
+
 <mx:Form paddingTop="0" paddingBottom="0">
+
     <mx:FormItem label="背景颜色:">
+
         <mx:ColorPicker id="backgroundPicker"
+
             selectedColor="{_slide.backgroundColor}"
+
             change="onSlideColorChange();"
+
             />
+
     </mx:FormItem>
+
     <mx:FormItem label="标题:">
+
         <mx:TextInput id="titleInput" width="300"
+
             text="{_slide.title}" maxChars="25"
+
             change="onSlideTitleChange();"
+
             />
+
     </mx:FormItem>
+
     <mx:FormItem label="说明文字:">
+
         <mx:HBox>
+
             <mx:TextInput id="captionInput" width="300"
+
                 text="{_slide.caption}" maxChars="70"
+
                 change="onSlideCaptionChange();"
+
                 />
+
             <mx:ColorPicker id="captionPicker"
+
                 selectedColor="{_slide.textColor}"
 ```
-
-
 
 ## 第11章：幻灯片制作器
 
 ```actionscript
 change="onSlideCaptionColorChange();"
+
 />
+
 </mx:HBox>
+
 </mx:FormItem>
+
 <mx:FormItem label="Image:">
+
     <mx:HBox>
+
         <mx:TextInput id="imageInput" width="300"
+
             enter="{loadImage( imageInput.text )}"
+
         />
+
         <mx:Button label="Browse"
+
             click="onBrowseForFile();"/>
+
     </mx:HBox>
+
 </mx:FormItem>
+
 </mx:Form>
+
 </mx:VBox>
 ```
 
-将文件保存为 `PropertiesPanel.mxml`，放在你工作目录的 `com/aircmr/slideshow/ui` 目录中。
+将文件保存为`PropertiesPanel.mxml`，放在你工作目录的`com/aircmr/slideshow/ui`目录中。
 
 `PropertiesPanel` 对象以列和行约束的方式布局控件，这些约束与所提供 `Slide` 实例上持有的属性值相关联。它还通过更新 `hasChanged` 属性来跟踪对任何幻灯片所做的任何更改。了解幻灯片是否已更改，在用户关闭前被提示保存更改时会非常有用，这将在“整合所有内容”部分进行说明。
 
@@ -17521,10 +19365,15 @@ change="onSlideCaptionColorChange();"
 
 ```actionscript
 private function onImageLoad( evt:Event ):void
+
 {
+
     _slide.image = new SlideImage(
+
             ( _loader.content as Bitmap ).bitmapData, _url );
+
     hasChanged = true;
+
 }
 ```
 
@@ -17540,121 +19389,213 @@ private function onImageLoad( evt:Event ):void
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
+
 <mx:VBox xmlns:mx="http://www.adobe.com/2006/mxml"
+
     xmlns:ui="com.aircmr.slideshow.ui.*"
+
     verticalGap="0" height="130"
+
     horizontalScrollPolicy="off"
+
     creationComplete="onCreationComplete();">
+
     <mx:Metadata>
+
         [Event(name="deleteSlide", type="flash.events.Event")]
+
     </mx:Metadata>
+
     <mx:Style>
+
         .deleteButton {
+
             font-size: 8px;
+
         }
+
     </mx:Style>
+
     <mx:Script>
+
         <![CDATA[
+
             import com.aircmr.slideshow.data.Slide;
 
             [Bindable] private var _data:Slide;
+
             public static const DELETE:String = "deleteSlide";
 
             private function onCreationComplete():void
+
             {
+
                 slide.invalidateProperties();
+
                 slide.invalidateSize();
+
             }
 
             private function onDeleteSlide():void
+
             {
+
                 dispatchEvent( new Event( CarouselItem.DELETE, true ) );
+
             }
 
             override public function set data(value:Object):void
+
             {
+
                 _data = value as Slide;
+
                 super.data = value;
+
             }
+
             override public function get data():Object
+
             {
+
                 return _data;
+
             }
+
         ]]>
+
     </mx:Script>
+
     <mx:Binding source="{_data}" destination="slide.slideData" />
+
     <mx:HBox width="100%">
+
         <mx:Spacer width="100%" />
+
         <mx:Text text="delete X" mouseChildren="false"
+
             buttonMode="true" useHandCursor="true"
+
             styleName="deleteButton" toolTip="Delete Slide?"
+
             click="onDeleteSlide();"
+
             />
+
     </mx:HBox>
+
     <ui:SlideCanvas id="slide"
+
         width="100%" height="100%"
+
         backgroundColor="0x333333"
+
         slideData="{_data}" />
+
     <mx:Text id="titleField"
+
         width="100%" textAlign="center"
+
         selectable="false"
+
         text="{_data.title}"
+
         />
+
 </mx:VBox>
 ```
 
-2. 将文件保存为 `CarouselItem.mxml`，放在 `com/aircmr/slideshow/ui` 目录中，与之前创建的幻灯片视图类一起。
+2. 将文件保存为`CarouselItem.mxml`，放在`com/aircmr/slideshow/ui`目录中，与之前创建的幻灯片视图类一起。
 
 3. 创建一个新文档并输入以下标记：
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
+
 <mx:VBox xmlns:mx="http://www.adobe.com/2006/mxml"
+
     width="135" height="100%">
+
     <!-- bubbled -->
+
     <mx:Metadata>
+
         [Event(name="deleteSlide", type="flash.events.Event")]
+
     </mx:Metadata>
+
     <mx:Script>
+
         <![CDATA[
+
             import com.aircmr.slideshow.data.SlideGallery;
 
             [Bindable] private var _gallery:SlideGallery;
 
             private function onSlideSelect():void
+
             {
+
                 _gallery.currentIndex = slideList.selectedIndex;
+
             }
 
             public function get gallery():SlideGallery
+
             {
+
                 return _gallery;
+
             }
+
             public function set gallery( glry:SlideGallery ):void
+
             {
+
                 _gallery = glry;
+
             }
+
         ]]>
+
     </mx:Script>
+
     <mx:List
+
         id="slideList"
-        width="100%" height="100%"
-        paddingRight="2"
-        dataProvider="{_gallery.slides}"
-        dragEnabled="true" dropEnabled="true"
-        dragMoveEnabled="true"
-        selectedIndex="{_gallery.currentIndex}"
-        itemRenderer="com.aircmr.slideshow.ui.CarouselItem"
-        change="onSlideSelect();"
-        />
+```
+
+
+
+```xml
+width="100%" height="100%"
+
+paddingRight="2"
+
+dataProvider="{_gallery.slides}"
+
+dragEnabled="true" dropEnabled="true"
+
+dragMoveEnabled="true"
+
+selectedIndex="{_gallery.currentIndex}"
+
+itemRenderer="com.aircmr.slideshow.ui.CarouselItem"
+
+change="onSlideSelect();"
+
+/>
+```
+
+```xml
 </mx:VBox>
 ```
 
-4. 将文件保存为 `Carousel.mxml`，放在你工作目录的 `com/aircmr/slideshow/ui` 目录中。
+将文件保存为`Carousel.mxml`，放在你工作目录的`com/aircmr/slideshow/ui`目录中。
 
-第一个代码片段保存为 `CarouselItem.mxml`，是幻灯片的缩略图预览，也是第二个代码片段实例的项渲染器（保存为 `Carousel.mxml`）。`CarouselItem` 包含一个删除实例的控件，并显示一个 `SlideCanvas` 和一个用于幻灯片标题的 `Text` 控件。当 `SlideCanvas` 实例的 `slideData` 属性绑定到所提供的 `Slide` 实例时，对该 `Slide` 实例属性的更新会反映在 `CarouselItem` 的显示中。
+第一个代码片段保存为`CarouselItem.mxml`，是幻灯片的缩略图预览，也是第二个代码片段实例的项渲染器（保存为`Carousel.mxml`）。`CarouselItem`包含一个删除实例的控件，并显示一个`SlideCanvas`和一个用于幻灯片标题的`Text`控件。当`SlideCanvas`实例的`slideData`属性绑定到所提供的`Slide`实例时，对该`Slide`实例属性的更新会反映在`CarouselItem`的显示中。
 
-`Carousel` 显示一个 `CarouselItem` 列表，这些项是基于提供的幻灯片库数据渲染的。`List` 控件的两个属性绑定到所提供的 `SlideGallery` 实例的属性：
+`Carousel`显示一个`CarouselItem`列表，这些项是基于提供的幻灯片库数据渲染的。`List`控件的两个属性绑定到所提供的`SlideGallery`实例的属性：
 
 ```xml
 <mx:List
@@ -17667,10 +19608,10 @@ private function onImageLoad( evt:Event ):void
     selectedIndex="{_gallery.currentIndex}"
     itemRenderer="com.aircmr.slideshow.ui.CarouselItem"
     change="onSlideSelect();"
-    />
+/>
 ```
 
-当所提供的 `SlideGallery` 实例上持有的幻灯片集合发生变化时，`slideList` 的 `dataProvider` 也会随之改变。`selectedIndex` 属性也会响应 `SlideGallery` 的 `currentIndex` 变化而更新。然而，`Carousel` 容器充当控制器，通过处理从 `slideList` 分发的 `change` 事件来设置幻灯片库的 `currentIndex`。当发生变化时，`onSlideSelect()` 方法基于列表的选中索引更新 `currentIndex` 值：
+当所提供的`SlideGallery`实例上持有的幻灯片集合发生变化时，`slideList`的`dataProvider`也会随之改变。`selectedIndex`属性也会响应`SlideGallery`的`currentIndex`变化而更新。然而，`Carousel`容器充当控制器，通过处理从`slideList`分发的`change`事件来设置幻灯片库的`currentIndex`。当发生变化时，`onSlideSelect()`方法基于列表的选中索引更新`currentIndex`值：
 
 ```actionscript
 private function onSlideSelect():void
@@ -17679,15 +19620,11 @@ private function onSlideSelect():void
 }
 ```
 
-这并非特别有趣，但通过允许 `Carousel` 控制对 `SlideGallery` 的 `currentIndex` 的更新，而不是在 `slideList` 的内联 `change` 处理器中显式设置该值，
+这并非特别有趣，但通过允许`Carousel`控制对`SlideGallery`的`currentIndex`的更新，而不是在`slideList`的内联`change`处理器中显式设置该值，轮播组件随后可以检查幻灯片的变化，并在用户未先保存的情况下阻止其选择其他幻灯片。
 
+# 第11章：幻灯片放映制作器
 
-
-## 第11章：幻灯片放映制作器
-
-例如，轮播组件随后可以检查幻灯片的变化，并在用户未先保存的情况下阻止其选择其他幻灯片。
-
-之前已提及 SlideCanvas 的多功能性，而 CarouselItem 是本章示例中首次将其添加到显示的地方。随着本章的继续，SlideCanvas 将被添加到更多视图中，其多功能性将在幻灯片显示根据主屏幕的边界进行缩放时显现——特别是在下一节中，你将构建用于播放幻灯片放映的视图屏幕。
+之前已提及`SlideCanvas`的多功能性，而`CarouselItem`是本章示例中首次将其添加到显示的地方。随着本章的继续，`SlideCanvas`将被添加到更多视图中，其多功能性将在幻灯片显示根据主屏幕的边界进行缩放时显现——特别是在下一节中，你将构建用于播放幻灯片放映的视图屏幕。
 
 ## 展示幻灯片
 
@@ -17708,114 +19645,138 @@ private function onSlideSelect():void
     showStatusBar="false"
     showTitleBar="false"
     creationComplete="onInit();">
+    <mx:Script>
+        <![CDATA[
+            import mx.binding.utils.ChangeWatcher;
+            import mx.binding.utils.BindingUtils;
+            import com.aircmr.slideshow.data.Slide;
 
-<mx:Script>
-    <![CDATA[
-        import mx.binding.utils.ChangeWatcher;
-        import mx.binding.utils.BindingUtils;
-        import com.aircmr.slideshow.data.Slide;
+            [ArrayElementType("com.aircmr.slideshow.data.Slide")]
+            private var _slides:Array;
 
-        [ArrayElementType("com.aircmr.slideshow.data.Slide")]
-        private var _slides:Array;
-        private var _index:int;
-        private var _slideWatcher:ChangeWatcher;
-        private var _indexWatcher:ChangeWatcher;
+            private var _index:int;
+            private var _slideWatcher:ChangeWatcher;
+            private var _indexWatcher:ChangeWatcher;
 
-        private function onInit():void
-        {
-            setFocus();
-            nativeWindow.stage.addEventListener( KeyboardEvent.KEY_UP,
-                                                onKeyUp );
-
-            contextMenu = getContextMenu();
-            _slideWatcher = BindingUtils.bindSetter( initiateShow, this,
-                                                    "slides", true );
-            _indexWatcher = BindingUtils.bindSetter( initiateSlide, this,
-                                    "index", true );
-        }
-
-        private function initiateShow( arg:* = null ):void
-        {
-            index = 0;
-        }
-
-        private function initiateSlide( arg:* = null ):void
-        {
-            slide.slideData = _slides[_index] as Slide;
-        }
-
-        private function getContextMenu():NativeMenu
-        {
-            var menu:NativeMenu = new NativeMenu();
-            menu.addItem( new NativeMenuItem( "Close" ) );
-            menu.addEventListener( Event.SELECT, onMenuItemSelect );
-            return menu;
-        }
-
-        private function onMenuItemSelect( evt:Event ):void
-        {
-            exit();
-        }
-
-        private function onKeyUp( evt:KeyboardEvent ):void
-        {
-            switch( evt.keyCode )
+            private function onInit():void
             {
-                case Keyboard.LEFT:
-                    index = ( ( _index - 1 ) < 0 ) ?
-                            _slides.length - 1 : _index - 1;
-                    break;
-                case Keyboard.RIGHT:
-                    index = ( ( _index + 1 ) > _slides.length - 1 ) ?
-                            0 : _index + 1;
-                    break;
-                case Keyboard.ESCAPE:
-                    exit();
-                    break;
+                setFocus();
+
+                nativeWindow.stage.addEventListener(
+                    KeyboardEvent.KEY_UP,
+                    onKeyUp
+                );
+
+                contextMenu = getContextMenu();
+
+                _slideWatcher = BindingUtils.bindSetter(
+                    initiateShow,
+                    this,
+                    "slides",
+                    true
+                );
+
+                _indexWatcher = BindingUtils.bindSetter(
+                    initiateSlide,
+                    this,
+                    "index",
+                    true
+                );
             }
-        }
 
-        public function exit():void
-        {
-            _slideWatcher.unwatch();
-            _indexWatcher.unwatch();
-            _slides = null;
-            nativeWindow.stage.removeEventListener( KeyboardEvent.KEY_UP,
-                                                onKeyUp );
+            private function initiateShow(arg:* = null):void
+            {
+                index = 0;
+            }
 
-            close();
-        }
+            private function initiateSlide(arg:* = null):void
+            {
+                slide.slideData = _slides[_index] as Slide;
+            }
 
-        [Bindable]
-        public function get index():int
-        {
-            return _index;
-        }
+            private function getContextMenu():NativeMenu
+            {
+                var menu:NativeMenu = new NativeMenu();
 
-        public function set index( n:int ):void
-        {
-            _index = n;
-        }
+                menu.addItem(new NativeMenuItem("Close"));
+                menu.addEventListener(Event.SELECT, onMenuItemSelect);
 
-        [Bindable]
-        public function get slides():Array
-        {
-            return _slides;
-        }
+                return menu;
+            }
 
-        public function set slides( arr:Array ):void
-        {
-            _slides = arr;
-        }
-    ]]>
-</mx:Script>
-<ui:SlideCanvas id="slide" width="100%" height="100%" />
+            private function onMenuItemSelect(evt:Event):void
+            {
+                exit();
+            }
+
+            private function onKeyUp(evt:KeyboardEvent):void
+            {
+                switch (evt.keyCode)
+                {
+                    case Keyboard.LEFT:
+                        index = ((_index - 1) < 0)
+                            ? _slides.length - 1
+                            : _index - 1;
+                        break;
+
+                    case Keyboard.RIGHT:
+                        index = ((_index + 1) > _slides.length - 1)
+                            ? 0
+                            : _index + 1;
+                        break;
+
+                    case Keyboard.ESCAPE:
+                        exit();
+                        break;
+                }
+            }
+
+            public function exit():void
+            {
+                _slideWatcher.unwatch();
+                _indexWatcher.unwatch();
+
+                _slides = null;
+
+                nativeWindow.stage.removeEventListener(
+                    KeyboardEvent.KEY_UP,
+                    onKeyUp
+                );
+
+                close();
+            }
+
+            [Bindable]
+            public function get index():int
+            {
+                return _index;
+            }
+
+            public function set index(n:int):void
+            {
+                _index = n;
+            }
+
+            [Bindable]
+            public function get slides():Array
+            {
+                return _slides;
+            }
+
+            public function set slides(arr:Array):void
+            {
+                _slides = arr;
+            }
+        ]]>
+    </mx:Script>
+
+    <ui:SlideCanvas id="slide" width="100%" height="100%" />
 </mx:Window>
 ```
 
-将文件保存为 SlideshowWindow.mxml，放在你工作目录的 com/aircmr/slideshow/windows 目录中。
+将文件保存为`SlideshowWindow.mxml`，放在你工作目录的`com/aircmr/slideshow/windows`目录中。
 
-SlideshowWindow 显示界面扩展了 AIR 窗口 API 的 Window 容器。Window 组件充当一个容器，你可以直接将组件添加到其显示列表中，并且它拥有与窗口特性（例如边框）相关的属性，这些属性只能在创建时设置，正如 SlideshowWindow 中的 `<mx:Window>` 标签所做：
+`SlideshowWindow`显示界面扩展了 AIR 窗口 API 的`Window`容器。`Window`组件充当一个容器，你可以直接将组件添加到其显示列表中，并且它拥有与窗口特性（例如边框）相关的属性，这些属性只能在创建时设置，正如`SlideshowWindow`中的`<mx:Window>`标签所做：
 
 ```xml
 <mx:Window xmlns:mx="http://www.adobe.com/2006/mxml"
@@ -17831,39 +19792,55 @@ SlideshowWindow 显示界面扩展了 AIR 窗口 API 的 Window 容器。Window 
     show="onShow();">
 ```
 
-SlideshowWindow 的 type 值为 "lightweight"，systemChrome 设置为 "none"，其他窗口特性的显示操作设置为 "false"。本质上，当 SlideshowWindow 被调用打开以进行演示时，其显示列表上的 SlideCanvas 将是唯一可见的元素，并根据打开它的客户端设置的尺寸进行缩放。
+`SlideshowWindow`的`type`值为`"lightweight"`，`systemChrome`设置为`"none"`，其他窗口特性的显示操作设置为`"false"`。本质上，当`SlideshowWindow`被调用打开以进行演示时，其显示列表上的`SlideCanvas`将是唯一可见的元素，并根据打开它的客户端设置的尺寸进行缩放。
 
-值得注意的是 "show" 事件处理程序，因为一旦此窗口被调用打开并出现，就会设置一个键盘事件处理程序并添加一个原生菜单：
+值得注意的是`"show"`事件处理程序，因为一旦此窗口被调用打开并出现，就会设置一个键盘事件处理程序并添加一个原生菜单：
 
 ```actionscript
 private function onShow():void
 {
     setFocus();
-    nativeWindow.stage.addEventListener( KeyboardEvent.KEY_UP,
-                                         onKeyUp );
+
+    nativeWindow.stage.addEventListener(
+        KeyboardEvent.KEY_UP,
+        onKeyUp
+    );
+
     contextMenu = getContextMenu();
-    _slideWatcher = BindingUtils.bindSetter( initiateShow, this,
-                                             "slides", true );
-    _indexWatcher = BindingUtils.bindSetter( initiateSlide, this,
-                                              "index", true );
+
+    _slideWatcher = BindingUtils.bindSetter(
+        initiateShow,
+        this,
+        "slides",
+        true
+    );
+
+    _indexWatcher = BindingUtils.bindSetter(
+        initiateSlide,
+        this,
+        "index",
+        true
+    );
 }
 ```
 
-为从 `SlideshowWindow` 的 `NativeWindow` 实例的舞台派发的 `keyUp` 事件设置了事件监听器，用于在幻灯片放映中向前和向后移动以及关闭幻灯片放映。创建了两个 `ChangeWatcher` 实例，用于根据 `SlideshowWindow` 的 `slides` 和 `index` 属性的变化来绑定方法。`slides` 属性在展示新的幻灯片放映时更新，这反过来又更新了开始显示幻灯片的 `index`。除了在幻灯片放映变更时更新外，`index` 值也会响应方向键而改变。
+为从`SlideshowWindow`的`NativeWindow`实例的舞台派发的`keyUp`事件设置了事件监听器，用于在幻灯片放映中向前和向后移动以及关闭幻灯片放映。创建了两个`ChangeWatcher`实例，用于根据`SlideshowWindow`的`slides`和`index`属性的变化来绑定方法。`slides`属性在展示新的幻灯片放映时更新，这反过来又更新了开始显示幻灯片的`index`。除了在幻灯片放映变更时更新外，`index`值也会响应方向键而改变。
 
-在 `onShow()` 方法中也为 `SlideshowWindow` 设置了原生上下文菜单。创建并分配给窗口 `contextMenu` 属性的 `NativeMenu` 包含一个操作项：
+在`onShow()`方法中也为`SlideshowWindow`设置了原生上下文菜单。创建并分配给窗口`contextMenu`属性的`NativeMenu`包含一个操作项：
 
 ```actionscript
 private function getContextMenu():NativeMenu
 {
     var menu:NativeMenu = new NativeMenu();
-    menu.addItem( new NativeMenuItem( "Close" ) );
-    menu.addEventListener( Event.SELECT, onMenuItemSelect );
+
+    menu.addItem(new NativeMenuItem("Close"));
+    menu.addEventListener(Event.SELECT, onMenuItemSelect);
+
     return menu;
 }
 ```
 
-虽然 Esc 键已被设置在 `keyUp` 事件处理程序中用于退出幻灯片放映，但当访问 `SlideshowWindow` 的上下文菜单时，也会提供退出选项。从 `getContextMenu()` 创建并返回的 `NativeMenu` 可以包含任意数量的命令项，但本示例的目的是提供一种退出幻灯片放映的简单方法。
+虽然 Esc 键已被设置在`keyUp`事件处理程序中用于退出幻灯片放映，但当访问`SlideshowWindow`的上下文菜单时，也会提供退出选项。从`getContextMenu()`创建并返回的`NativeMenu`可以包含任意数量的命令项，但本示例的目的是提供一种退出幻灯片放映的简单方法。
 
 你已经创建了用于显示、修改和展示幻灯片的视图。在下一节中，你将创建工作区，从中可以访问这些视图来创建和展示幻灯片放映。
 
@@ -17883,126 +19860,215 @@ private function getContextMenu():NativeMenu
     title="Save Slideshow?"
     showStatusBar="false"
     resizable="false"
-    maximizable="false" minimizable="false"
-    layout="vertical"
-    verticalAlign="middle" horizontalAlign="center"
-    width="270" height="100"
-    creationComplete="addActivationListeners();">
-    <mx:Metadata>
-        [Event(name="submit", type="flash.events.Event")]
-        [Event(name="cancel", type="flash.events.Event")]
-        [Event(name="close", type="flash.events.Event")]
-    </mx:Metadata>
-    <mx:Script>
-        <![CDATA[
-            private var _message:String;
-            public static const SUBMIT:String = "submit";
-            public static const CANCEL:String = "cancel";
-            public static const CLOSE:String = "close";
-
-            private function addActivationListeners():void
-            {
-                addEventListener( Event.CLOSING, removeActivationListeners );
-                nativeWindow.addEventListener( Event.DEACTIVATE,
-                                             onDeactivate );
-            }
-
-            private function removeActivationListeners( evt:Event ):void
-            {
-                removeEventListener( Event.CLOSING, removeActivationListeners );
-                nativeWindow.removeEventListener( Event.DEACTIVATE,
-                                             onDeactivate );
-            }
-
-            private function onDeactivate( evt:Event ):void
-            {
-                this.activate();
-                if( NativeApplication.supportsDockIcon )
-                {
-                    DockIcon( NativeApplication.nativeApplication.icon ).bounce(
-                                                NotificationType.INFORMATIONAL );
-                    this.close();
-                }
-                else
-                {
-                    nativeWindow.notifyUser( NotificationType.INFORMATIONAL );
-                    nativeWindow.activate();
-                }
-            }
-        ]]>
-    </mx:Script>
-</mx:Window>
+    maximizable="false"
+    minimizable="false"
+    layout="vertical">
 ```
 
 
+
+
+```xml
+verticalAlign="middle" horizontalAlign="center"
+
+width="270" height="100"
+
+creationComplete="addActivationListeners();">
+
+<mx:Metadata>
+
+    [Event(name="submit", type="flash.events.Event")]
+
+    [Event(name="cancel", type="flash.events.Event")]
+
+    [Event(name="close", type="flash.events.Event")]
+
+</mx:Metadata>
+
+<mx:Script>
+
+    <![CDATA[
+
+        private var _message:String;
+
+        public static const SUBMIT:String = "submit";
+
+        public static const CANCEL:String = "cancel";
+
+        public static const CLOSE:String = "close";
+
+        private function addActivationListeners():void
+
+        {
+
+            addEventListener( Event.CLOSING, removeActivationListeners );
+
+            nativeWindow.addEventListener( Event.DEACTIVATE,
+
+                                         onDeactivate );
+
+        }
+
+        private function removeActivationListeners( evt:Event ):void
+
+        {
+
+            removeEventListener( Event.CLOSING, removeActivationListeners );
+
+            nativeWindow.removeEventListener( Event.DEACTIVATE,
+
+                                         onDeactivate );
+
+        }
+
+        private function onDeactivate( evt:Event ):void
+
+        {
+
+            this.activate();
+
+            if( NativeApplication.supportsDockIcon )
+
+            {
+
+                DockIcon( NativeApplication.nativeApplication.icon ).bounce(
+
+                                            NotificationType.INFORMATIONAL );
+
+                this.close();
+
+            }
+
+            else
+
+            {
+
+                nativeWindow.notifyUser( NotificationType.INFORMATIONAL );
+
+                nativeWindow.activate();
+
+            }
+
+        }
+
+    ]]>
+
+</mx:Script>
+
+</mx:Window>
+```
 
 ## 第11章：幻灯片放映制作器
 
 ```actionscript
 private function onSubmit():void
+
 {
+
     dispatchEvent( new Event( SaveWindow.SUBMIT ) );
+
 }
+
 private function onCancel():void
+
 {
+
     dispatchEvent( new Event( SaveWindow.CANCEL ) );
+
 }
+
 private function onClose():void
+
 {
+
     dispatchEvent( new Event( SaveWindow.CLOSE ) );
+
 }
 
 [Bindable]
+
 public function get message():String
+
 {
+
     return _message;
+
 }
+
 public function set message( str:String ):void
+
 {
+
     _message = str;
+
 }
+
 ]]>
+
 </mx:Script>
+
 <mx:Text text="{message}" textAlign="center" />
+
 <mx:HBox width="100%" horizontalAlign="center"
+
          paddingLeft="10" paddingRight="10"
+
          paddingTop="10" paddingBottom="10">
+
     <mx:Button label="yes" width="100%" click="onSubmit();" />
+
     <mx:Button label="no" width="100%" click="onCancel();" />
+
     <mx:Button label="cancel" width="100%" click="onClose();" />
+
 </mx:HBox>
+
 </mx:Window>
 ```
 
-将文件保存为SaveWindow.mxml，存放在工作目录的com/aircmr/slideshow/windows目录中，与先前创建的SlideshowWindow.mxml文件并列。
+将文件保存为`SaveWindow.mxml`，存放在工作目录的`com/aircmr/slideshow/windows`目录中，与先前创建的`SlideshowWindow.mxml`文件并列。
 
-SaveWindow将作为警报，提示用户在关闭应用程序之前对幻灯片放映进行了修改。正如SlideshowWindow为了自定义而扩展了mx.core.Window类一样，SaveWindow也是如此。SaveWindow和SlideshowWindow不仅在应用程序中扮演的角色不同，在窗口属性上也有差异。SlideshowWindow隐藏所有界面装饰并填充整个屏幕，而SaveWindow则更像一个模态警报。它通过操作系统特定的通知方式向用户提示信息：
+`SaveWindow`将作为警报，提示用户在关闭应用程序之前对幻灯片放映进行了修改。正如`SlideshowWindow`为了自定义而扩展了`mx.core.Window`类一样，`SaveWindow`也是如此。`SaveWindow`和`SlideshowWindow`不仅在应用程序中扮演的角色不同，在窗口属性上也有差异。`SlideshowWindow`隐藏所有界面装饰并填充整个屏幕，而`SaveWindow`则更像一个模态警报。它通过操作系统特定的通知方式向用户提示信息：
 
 ```actionscript
 private function onDeactivate( evt:Event ):void
+
 {
+
     this.activate();
+
     if( NativeApplication.supportsDockIcon )
+
     {
+
         DockIcon(NativeApplication.nativeApplication.icon ).bounce(
+
             NotificationType.INFORMATIONAL );
+
         this.close();
+
     }
+
     else
+
     {
+
         nativeWindow.notifyUser( NotificationType.INFORMATIONAL );
+
         nativeWindow.activate();
+
     }
+
 }
 ```
 
-onDeactivate()方法是处理窗口nativeWindow实例分发的“deactivate”事件的事件处理器。当用户在SaveWindow打开并显示时，将焦点从幻灯片放映制作器应用程序上移开，就会分发此事件。Mac OS X操作系统的通知动作是在程序坞中弹跳应用程序图标。Windows操作系统的通知动作是在应用程序托盘中闪烁应用程序图标。为了确定AIR应用程序运行在哪个系统下；SaveWindow会检查应用程序启动时创建的NativeApplication实例的supportsDockIcon属性。
+`onDeactivate()`方法是处理窗口`nativeWindow`实例分发的“deactivate”事件的事件处理器。当用户在`SaveWindow`打开并显示时，将焦点从幻灯片放映制作器应用程序上移开，就会分发此事件。Mac OS X操作系统的通知动作是在程序坞中弹跳应用程序图标。Windows操作系统的通知动作是在应用程序托盘中闪烁应用程序图标。为了确定AIR应用程序运行在哪个系统下；`SaveWindow`会检查应用程序启动时创建的`NativeApplication`实例的`supportsDockIcon`属性。
 
-当SaveWindow实例收到通知，表明应用程序的原生窗口不再是系统上的活动窗口时，就会向用户展示相应的通知动作。当窗口被指示关闭时，removeActivateListeners()方法中会移除停用事件处理器。
+当`SaveWindow`实例收到通知，表明应用程序的原生窗口不再是系统上的活动窗口时，就会向用户展示相应的通知动作。当窗口被指示关闭时，`removeActivateListeners()`方法中会移除停用事件处理器。
 
-幻灯片放映制作器应用程序中的未保存数据通知仅在用户未处理如何对待未保存数据时才会发生。当用户选择一个选项指示如何处理未保存数据时，SaveWindow会根据用户的选择分发事件。这些事件由打开SaveWindow实例的客户端处理。
+幻灯片放映制作器应用程序中的未保存数据通知仅在用户未处理如何对待未保存数据时才会发生。当用户选择一个选项指示如何处理未保存数据时，`SaveWindow`会根据用户的选择分发事件。这些事件由打开`SaveWindow`实例的客户端处理。
 
-在下一节中，你将创建呈现SaveWindow的客户端，并完成幻灯片放映制作器应用程序。
+在下一节中，你将创建呈现`SaveWindow`的客户端，并完成幻灯片放映制作器应用程序。
 
 ### 主文件
 
@@ -18010,483 +20076,727 @@ onDeactivate()方法是处理窗口nativeWindow实例分发的“deactivate”�
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
+
 <mx:WindowedApplication
+
     xmlns:mx="http://www.adobe.com/2006/mxml"
+
     xmlns:ui="com.aircmr.slideshow.ui.*"
+
     layout="absolute"
+
     showStatusBar="false"
+
     initialize="onAppInit();"
+
     invoke="onAppInvoke(event);"
+
     applicationComplete="onAppComplete();"
+
     closing="onAppClosing(event);">
 
     <mx:Script>
+
         <![CDATA[
+
             import com.aircmr.slideshow.windows.SaveWindow;
+
             import com.aircmr.slideshow.windows.SlideshowWindow;
+
             import com.aircmr.slideshow.util.Settings;
+
             import com.aircmr.slideshow.data.SlideGallery;
+
             import com.aircmr.slideshow.data.Slide;
 
             private var _importFile:File;
+
             private var _exportFile:File;
+
             private var _saveWindow:SaveWindow;
+
             private var _slideshowWindow:SlideshowWindow;
+
             private var _invokedGallery:SlideGallery;
+
             private var _isInitialized:Boolean = false;
+
             private var _exportAsSlide:Boolean = false;
+
             [Bindable] private var _gallery:SlideGallery;
+
             [Bindable] private var _currentSlide:Slide;
 
             private function onAppInit():void
+
             {
+
                 setGallery( new SlideGallery() );
+
             }
 
             private function onAppInvoke( evt:InvokeEvent ):void
+
             {
+
                 if( evt.arguments.length <= 0 ) return;
+
                 var file:File = new File( evt.arguments[0] );
+
                 var ext:String = file.extension;
+
                 if( ext == Settings.getSlideExtension()
+
                     || ext == Settings.getShowExtension() )
+
                 {
+
                     openItem( file );
+
                 }
+
             }
 
             private function onAppComplete():void
+
             {
+
                 initializeView();
+
                 if( _invokedGallery != null )
+
                 {
+
                     setGallery( _invokedGallery );
+
                     _gallery.currentIndex = 0;
+
                     _invokedGallery = null;
+
                 }
+
                 if( _gallery.length == 0 )    addNewSlide();
+
                 addMenu();
+
             }
 
             private function initializeView():void
+
             {
+
                 visible = true;
+
                 view.createComponentsFromDescriptors();
+
                 _isInitialized = true;
+
             }
 
             private function addMenu():void
+
             {
+
                 var fItem:NativeMenuItem = new NativeMenuItem( "File" );
+
                 var vItem:NativeMenuItem = new NativeMenuItem( "View" );
+
                 var fileMenu:NativeMenuItem;
+
                 var viewMenu:NativeMenuItem;
+
                 if( NativeWindow.supportsMenu )
+
                 {
+
                     stage.nativeWindow.menu = new NativeMenu();
+
                     fileMenu = stage.nativeWindow.menu.addItem( fItem );
+
                     viewMenu = stage.nativeWindow.menu.addItem( vItem );
+
                 }
+
                 else if( NativeApplication.supportsMenu )
+
                 {
+
                     NativeApplication.nativeApplication.menu = new NativeMenu();
 
                     var appMenu:NativeMenuItem = new NativeMenuItem(
+
                                                 "Slideshow Maker" );
+
                     appMenu.submenu = createAppMenu();
 
                     appMenu = NativeApplication.nativeApplication.menu.addItem(
+
                                                 appMenu );
 
                     fileMenu = NativeApplication.nativeApplication.menu.addItem(
+
                                                 fItem );
+
                     viewMenu = NativeApplication.nativeApplication.menu.addItem(
+
                                                 vItem );
+
                 }
+
                 fileMenu.submenu = createFileMenu();
-                viewMenu.submenu = createViewMenu();
-            }
-
-            public function createFileMenu():NativeMenu
-            {
-                var menu:NativeMenu = new NativeMenu();
-                var openSlideshowCmd:NativeMenuItem =
-                    menu.addItem( new NativeMenuItem( "Open Slideshow" ) );
-                openSlideshowCmd.addEventListener( Event.SELECT,
-                                                    browseForSlideshow );
-
-                var saveSlideshowCmd:NativeMenuItem =
-                    menu.addItem( new NativeMenuItem( "Save Slideshow" ) );
-                saveSlideshowCmd.addEventListener( Event.SELECT, saveSlideshow );
-                var importSlideCmd:NativeMenuItem =
-                    menu.addItem( new NativeMenuItem( "Import Slide" ) );
-                importSlideCmd.addEventListener( Event.SELECT, browseForSlide );
-                var exportSlideCmd:NativeMenuItem =
-                    menu.addItem( new NativeMenuItem( "Export Slide" ) );
-                exportSlideCmd.addEventListener( Event.SELECT, saveSlide );
-                var newSlideCmd:NativeMenuItem =
-                    menu.addItem( new NativeMenuItem( "New Slide" ) );
-                newSlideCmd.addEventListener( Event.SELECT, addNewSlide );
-
-                return menu;
-            }
-
-            private function createViewMenu():NativeMenu
-            {
-                var menu:NativeMenu = new NativeMenu();
-                var viewSlideshowCmd:NativeMenuItem =
-                    menu.addItem( new NativeMenuItem( "View Slideshow" ) );
-                viewSlideshowCmd.addEventListener( Event.SELECT, viewSlideshow );
-                var viewSlideCmd:NativeMenuItem =
-                    menu.addItem( new NativeMenuItem( "View Slide" ) );
-                viewSlideCmd.addEventListener( Event.SELECT, viewSlide );
-                return menu;
-            }
-
-            private function createAppMenu():NativeMenu
-            {
-                var menu:NativeMenu = new NativeMenu();
-                var quitCmd:NativeMenuItem =
-                    menu.addItem( new NativeMenuItem( "Quit Slideshow Maker" ) );
-                quitCmd.addEventListener( Event.SELECT, onAppClosing );
-                return menu;
-            }
-
-            private function openItem( file:File ):void
-            {
-                var stream:FileStream = new FileStream();
-                stream.open( file, FileMode.READ );
-                switch( file.extension )
-                {
-                    case Settings.getSlideExtension():
-                        openSlide( stream.readObject() as Slide );
-                        break;
-                    case Settings.getShowExtension():
-                        openSlideshow( stream.readObject() as SlideGallery );
-                        break;
-                }
-                stream.close();
-            }
-
-            private function openSlide( slide:Slide ):void
-            {
-                slide.deserialize();
-                _gallery.addSlide( slide );
-            }
-
-            private function openSlideshow( gallery:SlideGallery ):void
-            {
-                gallery.deserialize();
-                if( !_isInitialized )
-                {
-                    _invokedGallery = gallery;
-                }
-                else
-                {
-                    setGallery( gallery );
-                    _gallery.currentIndex = 0;
-                }
-            }
-
-            private function setGallery( gallery:SlideGallery ):void
-            {
 ```
 
 
+
+
+```actionscript
+viewMenu.submenu = createViewMenu();
+}
+
+public function createFileMenu():NativeMenu
+{
+    var menu:NativeMenu = new NativeMenu();
+
+    var openSlideshowCmd:NativeMenuItem =
+        menu.addItem(new NativeMenuItem("Open Slideshow"));
+    openSlideshowCmd.addEventListener(Event.SELECT, browseForSlideshow);
+
+    var saveSlideshowCmd:NativeMenuItem =
+        menu.addItem(new NativeMenuItem("Save Slideshow"));
+    saveSlideshowCmd.addEventListener(Event.SELECT, saveSlideshow);
+
+    var importSlideCmd:NativeMenuItem =
+        menu.addItem(new NativeMenuItem("Import Slide"));
+    importSlideCmd.addEventListener(Event.SELECT, browseForSlide);
+
+    var exportSlideCmd:NativeMenuItem =
+        menu.addItem(new NativeMenuItem("Export Slide"));
+    exportSlideCmd.addEventListener(Event.SELECT, saveSlide);
+
+    var newSlideCmd:NativeMenuItem =
+        menu.addItem(new NativeMenuItem("New Slide"));
+    newSlideCmd.addEventListener(Event.SELECT, addNewSlide);
+
+    return menu;
+}
+
+private function createViewMenu():NativeMenu
+{
+    var menu:NativeMenu = new NativeMenu();
+
+    var viewSlideshowCmd:NativeMenuItem =
+        menu.addItem(new NativeMenuItem("View Slideshow"));
+    viewSlideshowCmd.addEventListener(Event.SELECT, viewSlideshow);
+
+    var viewSlideCmd:NativeMenuItem =
+        menu.addItem(new NativeMenuItem("View Slide"));
+    viewSlideCmd.addEventListener(Event.SELECT, viewSlide);
+
+    return menu;
+}
+
+private function createAppMenu():NativeMenu
+{
+    var menu:NativeMenu = new NativeMenu();
+
+    var quitCmd:NativeMenuItem =
+        menu.addItem(new NativeMenuItem("Quit Slideshow Maker"));
+    quitCmd.addEventListener(Event.SELECT, onAppClosing);
+
+    return menu;
+}
+
+private function openItem(file:File):void
+{
+    var stream:FileStream = new FileStream();
+    stream.open(file, FileMode.READ);
+
+    switch (file.extension)
+    {
+        case Settings.getSlideExtension():
+            openSlide(stream.readObject() as Slide);
+            break;
+
+        case Settings.getShowExtension():
+            openSlideshow(stream.readObject() as SlideGallery);
+            break;
+    }
+
+    stream.close();
+}
+
+private function openSlide(slide:Slide):void
+{
+    slide.deserialize();
+    _gallery.addSlide(slide);
+}
+
+private function openSlideshow(gallery:SlideGallery):void
+{
+    gallery.deserialize();
+
+    if (!_isInitialized)
+    {
+        _invokedGallery = gallery;
+    }
+    else
+    {
+        setGallery(gallery);
+        _gallery.currentIndex = 0;
+    }
+}
+
+private function setGallery(gallery:SlideGallery):void
+{
+```
 
 ## 第11章：幻灯片制作工具
 
 ```actionscript
 _gallery = gallery;
-_gallery.addEventListener( SlideGallery.INDEX_CHANGE,
-                         onGalleryIndexChange );
+
+_gallery.addEventListener(
+    SlideGallery.INDEX_CHANGE,
+    onGalleryIndexChange
+);
+
 }
 
-private function browseForSlideshow( evt:Event = null ):void
+private function browseForSlideshow(evt:Event = null):void
 {
     var ext:String = Settings.getShowExtension();
+
     _importFile = new File();
-    _importFile.addEventListener( Event.SELECT, onImportSelect );
-    _importFile.browseForOpen( "Open Slideshow", [new FileFilter(
-        "Slideshow (*." + ext + ")", "*." + ext )] );
+    _importFile.addEventListener(Event.SELECT, onImportSelect);
+    _importFile.browseForOpen(
+        "Open Slideshow",
+        [new FileFilter(
+            "Slideshow (*." + ext + ")",
+            "*." + ext
+        )]
+    );
 }
 
-private function browseForSlide( evt:Event = null ):void
+private function browseForSlide(evt:Event = null):void
 {
     var ext:String = Settings.getSlideExtension();
+
     _importFile = new File();
-    _importFile.addEventListener( Event.SELECT, onImportSelect );
-    _importFile.browseForOpen( "Open Slide", [new FileFilter(
-        "Slideshow Slide (*." + ext + ")" , "*." + ext )] );
+    _importFile.addEventListener(Event.SELECT, onImportSelect);
+    _importFile.browseForOpen(
+        "Open Slide",
+        [new FileFilter(
+            "Slideshow Slide (*." + ext + ")",
+            "*." + ext
+        )]
+    );
 }
 
-private function saveSlideshow( evt:Event = null ):void
+private function saveSlideshow(evt:Event = null):void
 {
     _exportFile = new File();
-    _exportFile.addEventListener( Event.SELECT, onExportSelect );
-    _exportFile.browseForSave( "Save Slideshow" );
+    _exportFile.addEventListener(Event.SELECT, onExportSelect);
+    _exportFile.browseForSave("Save Slideshow");
 }
 
-private function saveSlide( evt:Event = null ):void
+private function saveSlide(evt:Event = null):void
 {
     _exportAsSlide = true;
     _exportFile = new File();
-    _exportFile.addEventListener( Event.SELECT, onExportSelect );
-    _exportFile.browseForSave( "Save Slide" );
+    _exportFile.addEventListener(Event.SELECT, onExportSelect);
+    _exportFile.browseForSave("Save Slide");
 }
 
-private function addNewSlide( evt:Event = null ):void
+private function addNewSlide(evt:Event = null):void
 {
-    _gallery.addSlide( new Slide() );
+    _gallery.addSlide(new Slide());
 }
 
-private function viewSlideshow( evt:Event = null ):void
+private function viewSlideshow(evt:Event = null):void
 {
-    showSlideshowWindow( _gallery.slides );
+    showSlideshowWindow(_gallery.slides);
 }
 
-private function viewSlide( evt:Event = null ):void
+private function viewSlide(evt:Event = null):void
 {
-    showSlideshowWindow( [_currentSlide] );
+    showSlideshowWindow([_currentSlide]);
 }
 
-private function showSlideshowWindow( slides:Array ):void
+private function showSlideshowWindow(slides:Array):void
 {
     _slideshowWindow = new SlideshowWindow();
     _slideshowWindow.width = Settings.getScreenSize().width;
     _slideshowWindow.height = Settings.getScreenSize().height;
     _slideshowWindow.alwaysInFront = true;
-    _slideshowWindow.addEventListener( Event.CLOSING,
-                                       onSlideshowWindowClosing );
+    _slideshowWindow.addEventListener(
+        Event.CLOSING,
+        onSlideshowWindowClosing
+    );
     _slideshowWindow.open();
-    _slideshowWindow.move( 0, 0 );
+    _slideshowWindow.move(0, 0);
     _slideshowWindow.slides = slides;
 }
 
 private function showSaveWindow():void
 {
-    if( _saveWindow != null ) _saveWindow.close();
+    if (_saveWindow != null)
+    {
+        _saveWindow.close();
+    }
+
     _saveWindow = new SaveWindow();
-    _saveWindow.addEventListener( SaveWindow.SUBMIT, closeSaveWindow );
-    _saveWindow.addEventListener( SaveWindow.CLOSE, closeSaveWindow );
-    _saveWindow.addEventListener( SaveWindow.CANCEL, onSaveCancel );
-    _saveWindow.message = "You have unsaved changes.\n" +
-                          "Would you like to save your work?";
+    _saveWindow.addEventListener(SaveWindow.SUBMIT, closeSaveWindow);
+    _saveWindow.addEventListener(SaveWindow.CLOSE, closeSaveWindow);
+    _saveWindow.addEventListener(SaveWindow.CANCEL, onSaveCancel);
+    _saveWindow.message =
+        "You have unsaved changes.\n" +
+        "Would you like to save your work?";
     _saveWindow.open();
-    var cx:Number = ( nativeWindow.width - _saveWindow.width ) / 2;
-    var cy:Number = ( nativeWindow.height - _saveWindow.height ) / 2;
-    _saveWindow.move( nativeWindow.x + cx, nativeWindow.y + cy );
+
+    var cx:Number =
+        (nativeWindow.width - _saveWindow.width) / 2;
+    var cy:Number =
+        (nativeWindow.height - _saveWindow.height) / 2;
+
+    _saveWindow.move(
+        nativeWindow.x + cx,
+        nativeWindow.y + cy
+    );
     _saveWindow.nativeWindow.orderToFront();
 }
 
-private function closeSaveWindow( evt:Event = null ):void
+private function closeSaveWindow(evt:Event = null):void
 {
     _saveWindow.close();
-    _saveWindow.removeEventListener( SaveWindow.SUBMIT,
-                                     closeSaveWindow );
-    _saveWindow.removeEventListener( SaveWindow.CLOSE,
-                                     closeSaveWindow );
-    _saveWindow.removeEventListener( SaveWindow.CANCEL, onSaveCancel );
+    _saveWindow.removeEventListener(
+        SaveWindow.SUBMIT,
+        closeSaveWindow
+    );
+    _saveWindow.removeEventListener(
+        SaveWindow.CLOSE,
+        closeSaveWindow
+    );
+    _saveWindow.removeEventListener(
+        SaveWindow.CANCEL,
+        onSaveCancel
+    );
     _saveWindow = null;
 }
 
-private function onImportSelect( evt:Event ):void
+private function onImportSelect(evt:Event):void
 {
-    openItem( _importFile );
+    openItem(_importFile);
 }
 
-private function onExportSelect( evt:Event ):void
+private function onExportSelect(evt:Event):void
 {
-    Settings.checkExtension( _exportFile, _exportAsSlide );
+    Settings.checkExtension(_exportFile, _exportAsSlide);
+
     var stream:FileStream = new FileStream();
-    stream.open( _exportFile, FileMode.WRITE );
-    switch( _exportFile.extension )
+    stream.open(_exportFile, FileMode.WRITE);
+
+    switch (_exportFile.extension)
     {
         case Settings.getShowExtension():
             _gallery.serialize();
-            stream.writeObject( _gallery );
+            stream.writeObject(_gallery);
             properties.hasChanged = false;
             break;
+
         case Settings.getSlideExtension():
             _currentSlide.serialize();
-            stream.writeObject( _currentSlide );
+            stream.writeObject(_currentSlide);
             break;
     }
+
     stream.close();
     _exportAsSlide = false;
 }
 
 private function onSlideDelete():void
 {
-    _gallery.removeSlide( _currentSlide );
+    _gallery.removeSlide(_currentSlide);
 }
 
-private function onGalleryIndexChange( evt:Event ):void
+private function onGalleryIndexChange(evt:Event):void
 {
     _currentSlide = _gallery.currentSlide;
 }
 
-private function onSlideshowWindowClosing( evt:Event ):void
+private function onSlideshowWindowClosing(evt:Event):void
 {
-    _slideshowWindow.removeEventListener( Event.CLOSING,
-                                         onSlideshowWindowClosing );
+    _slideshowWindow.removeEventListener(
+        Event.CLOSING,
+```
+
+
+
+```actionscript
+private function onSlideshowWindowClosing( evt:Event ):void
+
+{
+
     _slideshowWindow = null;
+
 }
 
 private function onSaveCancel( evt:Event ):void
+
 {
+
     closeSaveWindow();
+
     shutDown();
+
 }
 
 private function onAppClosing( evt:Event ):void
+
 {
+
     evt.preventDefault();
+
     if( properties.hasChanged ) showSaveWindow();
+
     else shutDown();
+
 }
 
 private function shutDown():void
+
 {
+
     _gallery.clean();
+
     NativeApplication.nativeApplication.exit();
+
 }
+
 ```
 
 ```xml
 <mx:Canvas id="view"
+
     width="100%" height="100%"
+
     creationPolicy="none">
+
     <mx:HBox width="100%" height="100%"
+
         paddingTop="10" paddingBottom="10"
+
         paddingLeft="10" paddingRight="10">
+
         <mx:VBox width="100%" height="100%">
+
             <ui:SlideCanvas id="canvas"
+
                 width="100%" height="100%"
+
                 includeViewInLayout="false"
+
                 slideData="{_currentSlide}"
+
                 backgroundColor="0xCDCDCD"
+
                 borderColor="0x999999" borderStyle="solid"
+
             />
+
             <ui:PropertiesPanel id="properties"
+
                 height="130"
+
                 paddingLeft="10" paddingRight="10"
+
                 paddingTop="10" paddingBottom="10"
+
                 backgroundColor="0xDEDEDE"
+
                 borderColor="0x999999" borderStyle="solid"
+
                 slideData="{_currentSlide}"
+
             />
+
         </mx:VBox>
+
         <ui:Carousel id="carousel"
+
             borderColor="0x999999" borderStyle="solid"
+
             gallery="{_gallery}" deleteSlide="onSlideDelete();"
+
         />
+
     </mx:HBox>
+
 </mx:Canvas>
 ```
 
-将文件保存为工作目录下的 `SlideshowMaker.mxml`。
+将文件保存为工作目录下的`SlideshowMaker.mxml`。
 
-`SlideshowMaker` 是主应用程序类。它处理单个幻灯片和整个幻灯片的导入导出，为显示视图提供当前数据，并响应应用程序的调用事件。除了处理这些操作外，`SlideshowMaker` 还作为工作区显示，并提供对演示显示的访问。主应用程序类承担了很多职责，让我们直接深入查看“调用”事件处理程序：
+`SlideshowMaker`是主应用程序类。它处理单个幻灯片和整个幻灯片的导入导出，为显示视图提供当前数据，并响应应用程序的调用事件。除了处理这些操作外，`SlideshowMaker`还作为工作区显示，并提供对演示显示的访问。主应用程序类承担了很多职责，让我们直接深入查看“调用”事件处理程序：
 
 ```actionscript
 private function onAppInvoke( evt:InvokeEvent ):void
+
 {
+
     if( evt.arguments.length <= 0 ) return;
+
     var file:File = new File( evt.arguments[0] );
+
     var ext:String = file.extension;
+
     if( ext == Settings.getSlideExtension()
+
         || ext == Settings.getShowExtension() )
+
     {
+
         openItem( file );
+
     }
+
 }
 ```
 
-`<mx:WindowedApplication>` 应用程序容器的 `invoke` 事件在应用程序被调用时触发。当你直接打开应用程序，或者无论应用程序是否打开，只要请求它打开一个文件时，该事件就会被触发。`InvokeEvent` 的 `arguments` 属性是一个字符串值数组。当调用幻灯片制作工具来打开文件时，通过调用提供的该数组将是一组文件路径。
+`<mx:WindowedApplication>`应用程序容器的`invoke`事件在应用程序被调用时触发。当你直接打开应用程序，或者无论应用程序是否打开，只要请求它打开一个文件时，该事件就会被触发。`InvokeEvent`的`arguments`属性是一个字符串值数组。当调用幻灯片制作工具来打开文件时，通过调用提供的该数组将是一组文件路径。
 
-`onAppInvoke()` 方法中的第一个评估检查在应用程序调用期间是否传递了任何参数。如果调用时有参数可用，则应用程序请求打开列表中的第一个文件，因为幻灯片制作工具在调用时一次只会打开一个文件。如果文件扩展名对该应用程序有效，则会通过调用 `openItem()` 方法指示其打开该文件：
+`onAppInvoke()`方法中的第一个评估检查在应用程序调用期间是否传递了任何参数。如果调用时有参数可用，则应用程序请求打开列表中的第一个文件，因为幻灯片制作工具在调用时一次只会打开一个文件。如果文件扩展名对该应用程序有效，则会通过调用`openItem()`方法指示其打开该文件：
 
 ```actionscript
 private function openItem( file:File ):void
+
 {
+
     var stream:FileStream = new FileStream();
+
     stream.open( file, FileMode.READ );
+
     switch( file.extension )
+
     {
+
         case Settings.getSlideExtension():
+
             openSlide( stream.readObject() as Slide );
+
             break;
+
         case Settings.getShowExtension():
+
             openSlideshow( stream.readObject() as SlideGallery );
+
             break;
+
     }
+
     stream.close();
+
 }
 ```
 
-在 `openItem()` 方法中，提供的文件被读入缓冲区，并被类型转换为相应的数据对象。在上一节“处理数据”中，你创建了幻灯片制作工具中使用的数据对象，以在序列化时保留其自定义类型。在此代码片段中，当调用 `FileStream` 实例的 `readObject()` 方法时，这些数据对象被反序列化，然后根据被读取文件的扩展名被类型化为它们关联的类。
+在`openItem()`方法中，提供的文件被读入缓冲区，并被类型转换为相应的数据对象。在上一节“处理数据”中，你创建了幻灯片制作工具中使用的数据对象，以在序列化时保留其自定义类型。在此代码片段中，当调用`FileStream`实例的`readObject()`方法时，这些数据对象被反序列化，然后根据被读取文件的扩展名被类型化为它们关联的类。
 
-这些数据对象如何序列化到文件中，体现在 `onExportSelect()` 方法中：
+这些数据对象如何序列化到文件中，体现在`onExportSelect()`方法中：
 
 ```actionscript
 private function onExportSelect( evt:Event ):void
+
 {
+
     Settings.checkExtension( _exportFile, _exportAsSlide );
+
     var stream:FileStream = new FileStream();
+
     stream.open( _exportFile, FileMode.WRITE );
+
     switch( _exportFile.extension )
+
     {
+
         case Settings.getShowExtension():
+
             _gallery.serialize();
+
             stream.writeObject( _gallery );
+
             properties.hasChanged = false;
+
             break;
+
         case Settings.getSlideExtension():
+
             _currentSlide.serialize();
+
             stream.writeObject( _currentSlide );
+
             break;
+
     }
+
     stream.close();
+
     _exportAsSlide = false;
+
 }
 ```
 
-`onExportSelect()` 方法在用户选择导出单张幻灯片或整个幻灯片时，由文件浏览器的 `select` 事件调用。在此方法中，检查扩展名并打开一个 `FileStream` 实例，将相应的数据对象（当前正在处理的 `SlideGallery` 或 `Slide`）写入文件。在写入文件流之前，会调用
-
-
+`onExportSelect()`方法在用户选择导出单张幻灯片或整个幻灯片时，由文件浏览器的`select`事件调用。在此方法中，检查扩展名并打开一个`FileStream`实例，将相应的数据对象（当前正在处理的`SlideGallery`或`Slide`）写入文件。在写入文件流之前，会调用数据对象。这将导致创建一个临时文件，用于保存`Slide`对象序列化后的`SlideImage`实例，如“处理数据”一节所述。`writeObject()`方法以AMF序列化格式写入提供的对象，并在此示例中将该对象保存到`_exportFile`上指定的路径。
 
 ## 第十一章：幻灯片制作器
 
-数据对象。这将导致创建一个临时文件，用于保存`Slide`对象序列化后的`SlideImage`实例，如“处理数据”一节所述。`writeObject()`方法以AMF序列化格式写入提供的对象，并在此示例中将该对象保存到`_exportFile`上指定的路径。
-
 虽然可以通过处理`SlideshowMaker`的“invoke”事件来导入文件，但该操作也作为主应用程序`NativeMenu`上的一个命令项可用：
 
-```
+```actionscript
 private function addMenu():void
+
 {
+
     var fItem:NativeMenuItem = new NativeMenuItem( "File" );
+
     var vItem:NativeMenuItem = new NativeMenuItem( "View" );
+
     var fileMenu:NativeMenuItem;
+
     var viewMenu:NativeMenuItem;
+
     if( NativeWindow.supportsMenu )
+
     {
+
         stage.nativeWindow.menu = new NativeMenu();
+
         fileMenu = stage.nativeWindow.menu.addItem( fItem );
+
         viewMenu = stage.nativeWindow.menu.addItem( vItem );
+
     }
+
     else if( NativeApplication.supportsMenu )
+
     {
+
         NativeApplication.nativeApplication.menu = new NativeMenu();
+
         var appMenu:NativeMenuItem = new NativeMenuItem( "Slideshow Maker" );
+
         appMenu.submenu = createAppMenu();
 
         appMenu = NativeApplication.nativeApplication.menu.addItem( appMenu );
+
         fileMenu = NativeApplication.nativeApplication.menu.addItem( fItem );
+
         viewMenu = NativeApplication.nativeApplication.menu.addItem( vItem );
+
     }
+
     fileMenu.submenu = createFileMenu();
+
     viewMenu.submenu = createViewMenu();
+
 }
 ```
 
@@ -18494,19 +20804,29 @@ private function addMenu():void
 
 添加到“文件”菜单的命令项与打开和保存单个幻灯片及幻灯片放映的操作相关。AMF序列化数据对象的导入和导出将通过从此子菜单调用的命令进行。添加到“视图”菜单的命令项与预览幻灯片或全屏放映幻灯片相关。每个选项都将使用相应的幻灯片数据打开一个幻灯片放映演示：
 
-```
+```actionscript
 private function showSlideshowWindow( slides:Array ):void
+
 {
+
     _slideshowWindow = new SlideshowWindow();
+
     _slideshowWindow.width = Settings.getScreenSize().width;
+
     _slideshowWindow.height = Settings.getScreenSize().height;
+
     _slideshowWindow.alwaysInFront = true;
+
     _slideshowWindow.addEventListener( Event.CLOSING,
+
                                       onSlideshowWindowClosing );
 
     _slideshowWindow.open();
+
     _slideshowWindow.move( 0, 0 );
+
     _slideshowWindow.slides = slides;
+
 }
 ```
 
@@ -18522,65 +20842,84 @@ private function showSlideshowWindow( slides:Array ):void
 
 创建一个新文档并输入以下ActionScript：
 
-```
+```actionscript
 package com.aircmr.slideshow.util
+
 {
+
     import flash.desktop.NativeApplication;
+
     import flash.display.Screen;
+
     import flash.filesystem.File;
+
     import flash.geom.Rectangle;
 
     public class Settings
+
     {
+
         private static var ns:Namespace;
+
         private static const SLIDE_NAME:String = "com.aircmr.slideshow.Slide";
+
         private static const SHOW_NAME:String = "com.aircmr.slideshow.Slideshow";
 
         public static function getScreenSize():Rectangle
+
         {
+
             return Screen.mainScreen.bounds;
+
         }
 
         public static function getExtensionType( typeName:String ):String
+
         {
+
             var descriptor:XML =
-                NativeApplication.nativeApplication.applicationDescriptor;
-            ns = new Namespace( String ( descriptor.namespace() ) );
-            default xml namespace = ns;
-            return descriptor..fileType.(name == typeName).extension.toString();
-        }
+```
 
-        public static function getSlideExtension():String
-        {
-            return Settings.getExtensionType( SLIDE_NAME );
-        }
 
-        public static function getShowExtension():String
-        {
-            return Settings.getExtensionType( Settings.SHOW_NAME );
-        }
 
-        public static function checkExtension( file:File,
-                                               isSlide:Boolean = false ):void
-        {
-            if( isSlide )
-            {
-                if( file.extension != Settings.getSlideExtension() )
-                    file.nativePath += "." + Settings.getSlideExtension();
-            }
-            else
-            {
-                if( file.extension != Settings.getShowExtension() )
-                    file.nativePath += "." + Settings.getShowExtension();
-            }
-        }
+`NativeApplication.nativeApplication.applicationDescriptor;`
+
+`ns = new Namespace( String ( descriptor.namespace() ) );`
+
+`default xml namespace = ns;`
+
+`return descriptor..fileType.(name == typeName).extension.toString();`
+
+```
+public static function getSlideExtension():String
+{
+    return Settings.getExtensionType( SLIDE_NAME );
+}
+
+public static function getShowExtension():String
+{
+    return Settings.getExtensionType( Settings.SHOW_NAME );
+}
+
+public static function checkExtension( file:File,
+                                       isSlide:Boolean = false ):void
+{
+    if( isSlide )
+    {
+        if( file.extension != Settings.getSlideExtension() )
+            file.nativePath += "." + Settings.getSlideExtension();
+    }
+    else
+    {
+        if( file.extension != Settings.getShowExtension() )
+            file.nativePath += "." + Settings.getShowExtension();
     }
 }
 ```
 
-将文件保存为Settings.as，路径为工作目录中的com/aircmr/slideshow/util目录。
+将文件保存为`Settings.as`，路径为工作目录中的`com/aircmr/slideshow/util`目录。
 
-获取当前屏幕尺寸相对简单，但已集中到Settings文件中，以便所有相对于屏幕边界显示容器的客户端都使用单一来源的数据。
+获取当前屏幕尺寸相对简单，但已集中到`Settings`文件中，以便所有相对于屏幕边界显示容器的客户端都使用单一来源的数据。
 
 ```
 public static function getScreenSize():Rectangle
@@ -18589,9 +20928,9 @@ public static function getScreenSize():Rectangle
 }
 ```
 
-AIR API的*Screen*类提供对系统屏幕信息的访问。在此示例中，*Settings*实用工具类的静态方法*getScreenSize()*返回主显示屏的边界。遵循本章的示例，*getScreenSize()*的值用于缩放*SlideCanvas*实例的视图以及幻灯片放映演示的尺寸显示。
+AIR API的`Screen`类提供对系统屏幕信息的访问。在此示例中，`Settings`实用工具类的静态方法`getScreenSize()`返回主显示屏的边界。遵循本章的示例，`getScreenSize()`的值用于缩放`SlideCanvas`实例的视图以及幻灯片放映演示的尺寸显示。
 
-访问幻灯片和幻灯片放映文件关联的文件扩展名通过静态方法*getSlideExtension()*和*getShowExtension()*实现。这两个方法都使用相对文件类型名称调用*getExtensionType()*方法：
+访问幻灯片和幻灯片放映文件关联的文件扩展名通过静态方法`getSlideExtension()`和`getShowExtension()`实现。这两个方法都使用相对文件类型名称调用`getExtensionType()`方法：
 
 ```
 public static function getExtensionType( typeName:String ):String
@@ -18603,9 +20942,9 @@ public static function getExtensionType( typeName:String ):String
 }
 ```
 
-应用程序描述符文件的内容——它是XML格式，并在下一节“部署应用程序”中创建——从*NativeApplication*单例的*applicationDescriptor*属性获取。*NativeApplication*实例在应用程序启动时创建，并使应用程序能够与操作系统GUI shell（Windows中的资源管理器，Mac OS X中的Finder）交互。在*Settings*类的*getExtensionType()*方法中，*default xml namespace*指令将用于解析描述符文件的默认命名空间设置为描述符XML上保存的命名空间URI。返回值是与*fileType*元素相对应的扩展字符串，其子节点*name*值与提供的参数匹配。
+应用程序描述符文件的内容——它是XML格式，并在下一节“部署应用程序”中创建——从`NativeApplication`单例的`applicationDescriptor`属性获取。`NativeApplication`实例在应用程序启动时创建，并使应用程序能够与操作系统GUI shell（Windows中的资源管理器，Mac OS X中的Finder）交互。在`Settings`类的`getExtensionType()`方法中，`default xml namespace`指令将用于解析描述符文件的默认命名空间设置为描述符XML上保存的命名空间URI。返回值是与`fileType`元素相对应的扩展字符串，其子节点`name`值与提供的参数匹配。
 
-随着*Settings*实用工具类作为处理屏幕边界和文件类型的多个客户端的主要访问点的完成，您可以开始创建将文件类型与幻灯片制作器关联的应用程序描述符文件。
+随着`Settings`实用工具类作为处理屏幕边界和文件类型的多个客户端的主要访问点的完成，您可以开始创建将文件类型与幻灯片制作器关联的应用程序描述符文件。
 
 ## 部署应用程序
 
@@ -18621,17 +20960,14 @@ public static function getExtensionType( typeName:String ):String
     <id>com.aircmr.SlideshowMaker</id>
 ```
 
-
-
 ## 第11章：幻灯片制作工具
 
-```xml
+```
 <filename>SlideshowMaker</filename>
 <version>0.1</version>
 <name>Slideshow Maker</name>
 <description>A way to make slideshows</description>
 <copyright>2007</copyright>
-
 <initialWindow>
     <title>SlideshowMaker</title>
     <content>SlideshowMaker.swf</content>
@@ -18641,10 +20977,8 @@ public static function getExtensionType( typeName:String ):String
     <width>720</width>
     <height>540</height>
 </initialWindow>
-
 <installFolder>AIRCMR/SlideshowMaker</installFolder>
 <programMenuFolder>AIRCMR</programMenuFolder>
-
 <fileTypes>
     <fileType>
         <name>com.aircmr.slideshow.Slide</name>
@@ -18659,17 +20993,16 @@ public static function getExtensionType( typeName:String ):String
         <contentType>application/x-amf</contentType>
     </fileType>
 </fileTypes>
-
 </application>
 ```
 
-将此文件保存为SlideshowMaker-app.xml，与之前创建的SlideshowMaker.mxml文件一起放在你的工作目录中。
+将此文件保存为`SlideshowMaker-app.xml`，与之前创建的`SlideshowMaker.mxml`文件一起放在你的工作目录中。
 
-虽然在这个应用程序描述文件中，应用程序和初始窗口的属性值与你在本书中创建应用程序时所熟悉的通用值相同，但SlideshowMaker-app.xml文件包含了一些尚未涉及的内容。本章中多次提到*关联文件类型*一词，但并未真正解释其含义。
+虽然在这个应用程序描述文件中，应用程序和初始窗口的属性值与你在本书中创建应用程序时所熟悉的通用值相同，但`SlideshowMaker-app.xml`文件包含了一些尚未涉及的内容。本章中多次提到*关联文件类型*一词，但并未真正解释其含义。
 
 在应用程序描述文件的`<fileTypes>`元素中，你可以列出任意数量的`<fileType>`元素来与你的应用程序关联。在本章的示例中，你添加了两个文件类型——一个与单个幻灯片相关，一个与幻灯片集（或一组幻灯片）相关：
 
-```xml
+```
 <fileType>
     <name>com.aircmr.slideshow.Slide</name>
     <extension>slide</extension>
@@ -18684,9 +21017,9 @@ public static function getExtensionType( typeName:String ):String
 - `<name>`元素的值表示在操作系统上标识该扩展名的文件类型名称。本例中的格式是一个点分隔的反向DNS字符串，文件类型位于末尾。
 - `<extension>`元素的值是文件的扩展名，不包含前面的句点字符。当应用程序安装时，具有此扩展名的文件将与应用程序关联。
 - `<description>`元素的值是文件类型的描述。这将出现在所选文件的属性视图中。
-- `<contentType>`元素的值指定了文件的MIME类型。由于幻灯片制作工具使用AMF将对象序列化到文件，因此将application/x-amf指定为文件的已知内容类型。
+- `<contentType>`元素的值指定了文件的MIME类型。由于幻灯片制作工具使用AMF将对象序列化到文件，因此将`application/x-amf`指定为文件的已知内容类型。
 
-当应用程序安装时，具有.slide和.show扩展名的文件将把幻灯片制作工具注册为处理这些文件的默认系统应用程序。这使你可以从工作区导出幻灯片和幻灯片集，并通过选择“文件”⇨“打开方式”或直接双击文件本身（无论应用程序当前是否打开）来使用幻灯片制作工具打开它们——主应用程序的invoke事件处理器会为你处理这一点。
+当应用程序安装时，具有`.slide`和`.show`扩展名的文件将把幻灯片制作工具注册为处理这些文件的默认系统应用程序。这使你可以从工作区导出幻灯片和幻灯片集，并通过选择“文件”⇨“打开方式”或直接双击文件本身（无论应用程序当前是否打开）来使用幻灯片制作工具打开它们——主应用程序的`invoke`事件处理器会为你处理这一点。
 
 在下一节中，你将打开命令提示符并部署幻灯片制作工具应用程序以供安装。
 
@@ -18706,13 +21039,15 @@ public static function getExtensionType( typeName:String ):String
 > adt -certificate -cn SlideshowMaker 1024-RSA certificate.pfx password
 ```
 
-在命令提示符仍指向工作目录时，输入以下命令来打包SlideshowMaker应用程序：
+在命令提示符仍指向工作目录时，输入以下命令来打包`SlideshowMaker`应用程序：
 
 ```
 > adt -package -storetype pkcs12 -keystore certificate.pfx SlideshowMaker.air SlideshowMaker-app.xml SlideshowMaker.swf
 ```
 
-系统将提示你输入证书密码。如果你使用第二个命令创建了自签名证书，请输入“**password**”。运行这些命令后，SlideshowMaker.swf文件、certificate.pfx文件和SlideshowMaker.air安装程序文件将生成在你的工作目录中。
+
+
+系统将提示你输入证书密码。如果你使用第二个命令创建了自签名证书，请输入“`password`”。运行这些命令后，`SlideshowMaker.swf`文件、`certificate.pfx`文件和`SlideshowMaker.air`安装程序文件将生成在你的工作目录中。
 
 创建安装程序后，导航到你的工作目录并启动幻灯片制作工具应用程序。如果一切顺利，你将看到工作区，可以开始创建幻灯片集。创建了几个幻灯片后，应用程序应类似于图11-1。
 
@@ -18728,7 +21063,7 @@ public static function getExtensionType( typeName:String ):String
 
 ## 小结
 
-在本章中，你创建了一个可工作的幻灯片制作工具，同时深入了解了AIR文件系统API，特别是关于将自定义对象序列化到文件的部分。你还学习了如何从应用程序描述文件将文件类型与应用程序关联，以及创建用于全屏演示和通知警报的Window对象。
+在本章中，你创建了一个可工作的幻灯片制作工具，同时深入了解了AIR文件系统API，特别是关于将自定义对象序列化到文件的部分。你还学习了如何从应用程序描述文件将文件类型与应用程序关联，以及创建用于全屏演示和通知警报的`Window`对象。
 
 从这里开始，你可以设置与保存和查看幻灯片集菜单命令相对应的按键命令，并根据需要添加更多命令。你还可以向属性面板添加更多属性和额外的控件，以制作更具吸引力的幻灯片。
 
@@ -18738,9 +21073,9 @@ public static function getExtensionType( typeName:String ):String
 
 # 第12章 AIR视频播放器
 
-过去十年间，人们多次尝试将视频引入互联网。基于网页和基于桌面的应用程序随着使用趋势的起伏而兴衰，而少数竞争者则站稳了脚跟。然而，每出现一个新的播放器，就会有一种新的数据格式和另一群只支持该技术的人。结果就是，市场上出现了太多功能重复的应用程序。Flash Player最新版本对H.264编解码器的支持，结合Flex 3和AIR，有望推动互联网行业统一使用一种视频格式。
+过去十年间，人们多次尝试将视频引入互联网。基于网页和基于桌面的应用程序随着使用趋势的起伏而兴衰，而少数竞争者则站稳了脚跟。然而，每出现一个新的播放器，就会有一种新的数据格式和另一群只支持该技术的人。结果就是，市场上出现了太多功能重复的应用程序。Flash Player最新版本对`H.264`编解码器的支持，结合Flex 3和AIR，有望推动互联网行业统一使用一种视频格式。
 
-在本章中，你将构建一个桌面视频播放器，支持FLV和H.264视频格式。它将具备桌面视频播放器的所有基本功能，如播放、暂停、倒带、全屏支持、音量和时间轴拖动控制。本章的目的不一定是要创建一个功能繁多的视频播放器，而是让你熟悉AIR API的一些主要功能。希望这能给你一些灵感，为这个应用程序添加你自己的特色。
+在本章中，你将构建一个桌面视频播放器，支持FLV和`H.264`视频格式。它将具备桌面视频播放器的所有基本功能，如播放、暂停、倒带、全屏支持、音量和时间轴拖动控制。本章的目的不一定是要创建一个功能繁多的视频播放器，而是让你熟悉AIR API的一些主要功能。希望这能给你一些灵感，为这个应用程序添加你自己的特色。
 
 在构建视频播放器的过程中，将讨论以下AIR和Flex API中的功能：
 
@@ -18755,13 +21090,11 @@ public static function getExtensionType( typeName:String ):String
 
 视频播放器的设计可能看起来相当直观，而且在很大程度上确实如此。毕竟，随着YouTube等网站的成功，每当朋友或同事给你发送另一个幽默或荒诞的视频时，你最终都会看到一个视频播放器。此时，你可能已经有了一个想法。
 
-
-
 ## 第12章：AIR视频播放器
 
 核心功能，如播放控件，你可以直接开始构建播放器。然而，在不使应用程序变得混乱的同时融入AIR功能可能需要更多的规划。
 
-你可以创建一个包含所有内容的巨型类文件：视频显示、视频控件以及与AIR的集成。然而，你可能希望在某些时候重用播放器本身的部分功能。因此，最好有一个独立的视频播放器，可以在Web上和Web外使用，一个可以在Flex `<mx:Application>` 容器或AIR `<mx:WindowedApplication>` 容器中实例化的播放器。
+你可以创建一个包含所有内容的巨型类文件：视频显示、视频控件以及与AIR的集成。然而，你可能希望在某些时候重用播放器本身的部分功能。因此，最好有一个独立的视频播放器，可以在Web上和Web外使用，一个可以在Flex `<mx:Application>`容器或AIR `<mx:WindowedApplication>`容器中实例化的播放器。
 
 独立的视频播放器将包含AIR视频播放器的所有核心播放功能。此功能将被分为两个独立的类，一个用于视频显示，另一个用于视频控件。它将包含如下功能：
 
@@ -18769,9 +21102,9 @@ public static function getExtensionType( typeName:String ):String
 - **流式布局：** AIR视频播放器的一个关键功能是能够全屏显示视频。为了适应这一点，你需要创建一个随视频大小调整的布局。例如，如果视频显示从300x250扩展到640x480或全屏，播放控件需要随扩展的显示相应地调整大小。
 - **网络摄像头捕获：** 这不一定需要，但这是添加到视频播放器的一个简单而有趣的功能。当然，如果你没有网络摄像头，可以随意省略此项。
 
-视频播放器组件创建完成后，你将在主 `<mx:WindowedApplication>` 容器中实例化它。主应用程序容器将具有所有AIR功能，包括以下内容：
+视频播放器组件创建完成后，你将在主`<mx:WindowedApplication>`容器中实例化它。主应用程序容器将具有所有AIR功能，包括以下内容：
 
-- **拖放：** 你将允许用户将FLV或H.264编码的文件拖放到AIR视频播放器上。文件被接受后，你将把本地路径作为源传递给视频播放器组件。
+- **拖放：** 你将允许用户将FLV或`H.264`编码的文件拖放到AIR视频播放器上。文件被接受后，你将把本地路径作为源传递给视频播放器组件。
 - **全屏支持：** Flash Player支持全屏显示状态。这对于像AIR视频播放器这样的应用程序特别有用，而且很容易实现。启用此功能将把用户的计算机变成一个虚拟电影院。
 - **上下文和窗口菜单：** 除了拖放支持外，打开视频文件的另一种方式是通过窗口菜单。此外，设置一个基本的上下文菜单会很有帮助，该菜单提供播放控件，如播放和暂停，以及全屏切换。
 
@@ -18779,32 +21112,35 @@ public static function getExtensionType( typeName:String ):String
 
 ## 构建目录结构
 
-在讨论视频播放器*如何*构建之前，重要的是正确设置本章的目录结构。首先在你的本地开发目录中创建一个名为 `VideoPlayer` 的新目录。此目录将是该应用程序的工作目录。
+在讨论视频播放器*如何*构建之前，重要的是正确设置本章的目录结构。首先在你的本地开发目录中创建一个名为`VideoPlayer`的新目录。此目录将是该应用程序的工作目录。
 
-接下来，通过在工作目录中创建三个新目录 `com`、`aircmr` 和 `videoplayer` 来创建此应用程序的包结构。视频播放器包结构应如下所示：working directory/com/aircmr/videoplayer。
+接下来，通过在工作目录中创建三个新目录`com`、`aircmr`和`videoplayer`来创建此应用程序的包结构。视频播放器包结构应如下所示：`working directory/com/aircmr/videoplayer`。
 
 最后，从随附网站下载相应的资源，并将它们放在工作目录的根目录中。这些文件将在视频播放器的整个开发过程中使用。它们包括按钮的图形外观和两个示例视频。
 
-> 资源目录中包含的两个视频将有助于测试AIR视频播放器。一个是使用H.264编解码器编码的Apple QuickTime电影，另一个是标准的Flash FLV。
+> 资源目录中包含的两个视频将有助于测试AIR视频播放器。一个是使用`H.264`编解码器编码的Apple QuickTime电影，另一个是标准的Flash FLV。
 
 目录结构设置完成后，你可以直接开始构建AIR视频播放器。下一节将直接进入AIR视频播放器中第一个组件的开发。
 
 ## 构建UIVideoPlayer组件
 
-如设计部分所述，UIVideoPlayer组件将包含所有视频播放功能。此功能分散在两个独立的Flex组件文件中：`UIVideoPlayer.mxml` 和 `UIVideoControls.mxml`。为了利用UIVideoPlayer的功能，首先你需要设置这两个组件类：
+如设计部分所述，`UIVideoPlayer`组件将包含所有视频播放功能。此功能分散在两个独立的Flex组件文件中：`UIVideoPlayer.mxml`和`UIVideoControls.mxml`。为了利用`UIVideoPlayer`的功能，首先你需要设置这两个组件类：
 
 1. 打开一个新的编辑器窗口并插入以下标记：
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
+
 <mx:VBox xmlns:mx="http://www.adobe.com/2006/mxml"
     width="300" height="290" verticalGap="0"
     xmlns:ui="com.aircmr.videoplayer.ui.*">
+
     <mx:Metadata>
         [Event(name="videoResize", type="flash.events.Event")]
         [Event(name="metadataReceived", type="mx.events.MetadataEvent")]
         [Event(name="stateChange", type="mx.events.VideoEvent")]
     </mx:Metadata>
+
     <mx:Script>
         <![CDATA[
             import mx.events.VideoEvent;
@@ -18937,9 +21273,7 @@ public static function getExtensionType( typeName:String ):String
     </mx:Script>
 ```
 
-
-
-# 第12章：AIR视频播放器
+## 第12章：AIR视频播放器
 
 ```mxml
 if( bool )
@@ -18964,251 +21298,428 @@ public function set playing( bool:Boolean ):void
 }
 
 ]]></mx:Script>
+
 <mx:VideoDisplay id="videoDisplay"
     width="100%" height="100%"
     backgroundAlpha="0"
     source="{ source }"
-    autoRewind="{autoRewind}"
-    autoPlay="{autoPlay}"
-    maintainAspectRatio="{maintainAspectRatio}"
-    stateChange="handleVideoDisplayStateChange( event );"
-    metadataReceived="handleMetaData( event );"
+```
+
+
+
+```mxml
+autoRewind="{autoRewind}"
+
+autoPlay="{autoPlay}"
+
+maintainAspectRatio="{maintainAspectRatio}"
+
+stateChange="handleVideoDisplayStateChange( event );"
+
+metadataReceived="handleMetaData( event );"
+
 />
 
 <ui:UIVideoControls id="videoControls"
+
     playheadTime="{videoDisplay.playheadTime}"
+
     playheadTimeTotal="{videoDisplay.totalTime}"
+
     playing="{videoDisplay.playing}"
+
     playheadTimeChange="{videoDisplay.playheadTime = videoControls.newPlayheadTime}"
+
     volumeChange="{videoDisplay.volume = videoControls.volume}"
+
     playVideo="{videoDisplay.play();}"
+
     pauseVideo="{videoDisplay.pause();}" />
+
 </mx:VBox>
 ```
 
-2.  将此类保存为 `UIVideoPlayer.mxml`，放在工作目录下的 `/com/aircmr/videoplayer/ui/` 目录中。
+## 2. 保存类文件
 
-3.  打开一个新的编辑器窗口，并插入以下标记：
+将此类保存为`UIVideoPlayer.mxml`，放在工作目录下的`/com/aircmr/videoplayer/ui/`目录中。
+
+## 3. 创建视频播放器控件
+
+打开一个新的编辑器窗口，并插入以下标记：
 
 ```mxml
 <?xml version="1.0" encoding="utf-8"?>
+
 <mx:Canvas xmlns:mx="http://www.adobe.com/2006/mxml"
+
     width="100%" height="50" backgroundColor="0xFFFFFF"
+
     resize="onResizeHandler( event );"
+
     borderColor="0x000000"
+
     borderStyle="inset"
+
     borderThickness="1"
+
     xmlns:ui="com.aircmr.videoplayer.ui.*" >
 
     <mx:Metadata>
+
         [Event(name="volumeChange", type="flash.events.Event")]
+
         [Event(name="playheadTimeChange", type="flash.events.Event")]
+
         [Event(name="pauseVideo", type="flash.events.Event")]
+
         [Event(name="playVideo", type="flash.events.Event")]
+
     </mx:Metadata>
 
     <mx:Script>
+
         <![CDATA[
+
             import mx.events.SliderEvent;
+
             import mx.events.VideoEvent;
 
             public static const VOLUME_CHANGE:String = "volumeChange";
+
             public static const PLAYHEADTIME_CHANGE:String = "playheadTimeChange";
+
             public static const PAUSE_VIDEO:String = "pauseVideo";
+
             public static const PLAY_VIDEO:String = "playVideo";
 
             private var _newPlayheadTime:Number = 0;
+
             private var _playheadTimeTotal:Number = 0;
+
             private var _playheadTime:Number = 0;
+
             private var _volume:Number = 1;
+
             private var _playing:Boolean = false;
+
             private var _wasPlaying:Boolean = false;
+
             private var _updateTime:Boolean = false;
 
             private function onResizeHandler( event:Event ):void
+
             {
+
                 scrubber.width = this.width - 90;
+
             }
 
             private function handleRewind( event:MouseEvent ):void
+
             {
+
                 newPlayheadTime = 0;
+
             }
 
             private function handlePlay( event:MouseEvent ):void
+
             {
+
                 dispatchEvent( new Event( playing ?
+
                     UIVideoControls.PAUSE_VIDEO : UIVideoControls.PLAY_VIDEO ));
+
             }
 
             private function handleVolumeChange( event:SliderEvent ):void
+
             {
+
                 volume = event.value;
+
             }
 
             private function handleVideoPlayheadUpdate():void
+
             {
+
                 if( !_updateTime ) scrubber.value = _playheadTime;
 
                 timelabel.text = String( timeFormatter.format(
+
                     new Date( _playheadTime * 1000) ))
+
                     + "/" + String( timeFormatter.format(
+
                     new Date( _playheadTimeTotal * 1000) ));
 
                 if( timelabel.text == "/" ) timelabel.text = "00:00/00:00";
+
             }
 
             private function handleSliderThumbEvent( event:SliderEvent ):void
+
             {
+
                 switch( event.type )
+
                 {
+
                     case SliderEvent.THUMB_PRESS : _wasPlaying = playing;
+
                         dispatchEvent( new Event( UIVideoControls.PAUSE_VIDEO ));
+
                         _updateTime = true;
+
                         break;
 
                     case SliderEvent.THUMB_RELEASE : if( _wasPlaying )
+
                         dispatchEvent(new Event( UIVideoControls.PLAY_VIDEO ));
+
                         newPlayheadTime = event.value;
+
                         _updateTime = false;
+
                         break;
+
                 }
+
             }
 
             private function formatTimelineValue( num:Number ):String
+
             {
+
                 return String( timeFormatter.format( new Date( num * 1000) ));
+
             }
 
             private function formatVolume( num:Number ):String
+
             {
+
                 return String( Math.round( num * 100 ));
+
             }
 
             [Bindable]
+
             public function get playheadTimeTotal():Number
+
             {
+
                 return _playheadTimeTotal;
+
             }
 
             public function set playheadTimeTotal( val:Number ):void
+
             {
+
                 _playheadTimeTotal = val;
+
             }
 
             [Bindable]
+
             public function get playheadTime():Number
+
             {
+
                 return _playheadTime;
+
             }
 
             public function set playheadTime( val:Number ):void
+
             {
+
                 _playheadTime = val;
+
                 handleVideoPlayheadUpdate();
+
             }
 
             [Bindable("playheadTimeChange")]
+
             public function get newPlayheadTime():Number
+
             {
+
                 return _newPlayheadTime;
+
             }
 
             public function set newPlayheadTime( val:Number ):void
+
             {
+
                 _newPlayheadTime = val;
+
                 dispatchEvent( new Event("playheadTimeChange") );
+
             }
 
             [Bindable("volumeChange")]
+
             public function get volume():Number
+
             {
+
                 return _volume;
+
             }
 
             public function set volume( val:Number ):void
+
             {
+
                 _volume = val;
+
                 dispatchEvent( new Event( "volumeChange" ) );
+
             }
 
             [Bindable]
+
             public function get playing():Boolean
+
             {
+
                 return _playing;
+
             }
 
             public function set playing( bool:Boolean ):void
+
             {
+
                 _playing = bool;
+
                 play.styleName = bool ? "pauseBtn" : "playBtn";
+
             }
+
         ]]>
+
     </mx:Script>
 
     <mx:DateFormatter id="timeFormatter" formatString="NN:SS" />
 
     <mx:VBox width="100%" verticalGap="0">
+
         <mx:Canvas width="100%" height="15" id="timeTracker" >
+
             <mx:HSlider id="scrubber"
+
                 width="100%" height="4"
+
                 x="5" y="5"
+
                 dataTipFormatFunction="formatTimelineValue"
+
                 allowTrackClick="false"
+
                 liveDragging="false"
+
                 tickInterval="0"
+
                 minimum="0"
+
                 maximum="{ playheadTimeTotal }"
+
                 thumbPress="handleSliderThumbEvent( event );"
+
                 thumbRelease="handleSliderThumbEvent( event );"
+
             />
+
             <mx:Label id="timelabel" x="{timeTracker.width - timelabel.width}"
+
                 styleName="timeText" text="00:00/00:00" />
+
         </mx:Canvas>
+
     </mx:VBox>
 
     <mx:Canvas width="100%" height="100%" id="toggle">
+
         <mx:HBox horizontalGap="0" x="2">
+
             <mx:Button styleName="toStartBtn" id="rewind"
+
                 click="handleRewind( event );" />
+
             <mx:Button styleName="playBtn" id="play"
+
                 click="handlePlay( event );"/>
+
         </mx:HBox>
 
         <mx:HBox horizontalGap="0" x="{toggle.width - 90}" y="10">
+
             <mx:Image source="@Embed('/assets/images/volumeLow.png')" />
+
             <mx:HSlider id="volumeController"
+
                 width="70" height="4"
+
                 allowTrackClick="true"
+
                 invertThumbDirection="true"
+
                 dataTipFormatFunction="formatVolume"
+
                 liveDragging="true"
+
                 change="handleVolumeChange( event );"
+
                 maximum="1"
+
                 minimum="0"
+
                 tickInterval="0"
+
                 value="{volume}"
+
             />
+
             <mx:Image source="@Embed('/assets/images/volumeHigh.png')" />
+
         </mx:HBox>
+
     </mx:Canvas>
+
 </mx:VBox>
+
 </mx:Canvas>
 ```
 
-4.  将此类保存为 `UIVideoControls.mxml`，放在工作目录下的 `/com/aircmr/videoplayer/ui/` 目录中。
 
-要正确测试此组件，您可能需要创建主应用程序文件并实例化 UIVideoPlayer 组件。为此，请打开一个新的编辑器窗口，并插入以下简化后的标记：
+
+第12章：AIR 视频播放器
+
+## 保存并测试视频播放器
+
+将此类保存为 `UIVideoControls.mxml`，放在工作目录下的 `/com/aircmr/videoplayer/ui/` 目录中。
+
+要正确测试此组件，您可能需要创建主应用程序文件并实例化 `UIVideoPlayer` 组件。为此，请打开一个新的编辑器窗口，并插入以下简化后的标记：
 
 ```mxml
 <?xml version="1.0" encoding="utf-8"?>
+
 <mx:WindowedApplication width="300" height="290"
     xmlns:mx="http://www.adobe.com/2006/mxml"
     layout="absolute" verticalScrollPolicy="off"
     xmlns:ui="com.aircmr.videoplayer.ui.*">
+
     <mx:Style source="assets/style/app.css" />
+
     <ui:UIVideoPlayer width="100%" height="100%"
         source="assets/Redline_Renegades.mov" />
+
 </mx:WindowedApplication>
 ```
 
@@ -19216,128 +21727,118 @@ public function set playing( bool:Boolean ):void
 
 > `AIRVideoPlayer.mxml` 和 `UIVideoControls.mxml` 都引用了 `/assets` 目录中的资源。您可以在附带的 CD 上找到这些资源。如果您选择不使用它们，请务必注释掉这些引用。
 
-此时，如果您编译并运行此应用程序，您将获得一个基本的视频播放器，其中播放着附带的视频，如图12-1所示。
+此时，如果您编译并运行此应用程序，您将获得一个基本的视频播放器，其中播放着附带的视频，如图 12-1 所示。
 
 ![img](img/dea8bb18fb213671e2a7e04d8fb0d89f_450_0.png)
 
 开始审阅代码，打开 `UIVideoControls` 组件类。
 
-### UIVideoControls 详解
+## `UIVideoControls` 详解
 
 `UIVideoControls` 类是视频播放器的界面。它具有播放按钮、倒带按钮、音量控制、时间轴拖动器和时间戳标签。组件功能嵌套在一个具有固定高度和可变宽度的 `<mx:Canvas>` 容器内。宽度是可变的，以便控件可以随着视频播放器大小的收缩和扩展而相应调整。
 
-
-
-## 第12章：AIR视频播放器
-
 ### 公共变量
 
-在深入探讨界面创建方式之前，我们先来回顾一下控制UIVideoControls组件的公共变量：
+在深入探讨界面创建方式之前，我们先来回顾一下控制 `UIVideoControls` 组件的公共变量：
 
--   playheadTime：视频开始播放后，UIVideoPlayer组件会在播放头每次发生变化时更新此属性。当该变量被设置时，`handleVideoPlayheadUpdate`方法会被调用。该方法会更改时间戳并调整视频滑动条上的标记位置。
--   playheadTimeTotal：视频加载后，此值会被设置。你使用此值来显示视频的总时长与当前播放头时间（playheadTime）的对比。它也充当时间线滑动条的最大值。
--   newPlayheadTime：每当用户在视频滑动条上移动标记或按下倒回键时，你都需要更新此值。通过这样做，会触发一个`playheadTimeChange`事件，通知UIVideoPlayer组件必须更新视频的`playheadTime`。
--   volume：此值由音量控制器更新，并触发`volumeChange`事件。一旦事件被触发，UIVideoPlayer中的音量就会更新。
--   playing：此布尔值与UIVideoPlayer实例化的VideoDisplay组件绑定。当值从true变为false时，你会更新`styleName`以匹配播放图标或暂停图标。
+- `playheadTime`：视频开始播放后，`UIVideoPlayer` 组件会在播放头每次发生变化时更新此属性。当该变量被设置时，`handleVideoPlayheadUpdate` 方法会被调用。该方法会更改时间戳并调整视频滑动条上的标记位置。
+- `playheadTimeTotal`：视频加载后，此值会被设置。你使用此值来显示视频的总时长与当前播放头时间（`playheadTime`）的对比。它也充当时间线滑动条的最大值。
+- `newPlayheadTime`：每当用户在视频滑动条上移动标记或按下倒回键时，你都需要更新此值。通过这样做，会触发一个 `playheadTimeChange` 事件，通知 `UIVideoPlayer` 组件必须更新视频的 `playheadTime`。
+- `volume`：此值由音量控制器更新，并触发 `volumeChange` 事件。一旦事件被触发，`UIVideoPlayer` 中的音量就会更新。
+- `playing`：此布尔值与 `UIVideoPlayer` 实例化的 `VideoDisplay` 组件绑定。当值从 `true` 变为 `false` 时，你会更新 `styleName` 以匹配播放图标或暂停图标。
 
 ### 处理时间戳
 
-`playheadTime`值以秒为单位表示。不幸的是，大多数视频时间戳以分钟表示，例如01:30而不是90秒。为了以这种格式化时间，你将使用Flex的DateFormatter：
+`playheadTime` 值以秒为单位表示。不幸的是，大多数视频时间戳以分钟表示，例如 01:30 而不是 90 秒。为了以这种格式化时间，你将使用 Flex 的 `DateFormatter`：
 
-```
+```xml
 <mx:DateFormatter id="timeFormatter" formatString="NN:SS" />
 ```
 
-此DateFormatter会将`playheadTime`格式化为NN:SS，其中NN代表分钟，SS代表秒。你可以通过调用以下代码来使用此格式化器：
+此 `DateFormatter` 会将 `playheadTime` 格式化为 NN:SS，其中 NN 代表分钟，SS 代表秒。你可以通过调用以下代码来使用此格式化器：
 
-```
+```actionscript
 timeFormatter.format( new Date( playheadTime * 1000 ) )
 ```
 
-DateFormatter类需要通过`format`方法传入一个Date对象。首先，它将`playheadTime`乘以1000转换为毫秒，然后将毫秒值的`playheadTime`传递给一个新的Date对象。结果是一个类似01:30的字符串。
+`DateFormatter` 类需要通过 `format` 方法传入一个 `Date` 对象。首先，它将 `playheadTime` 乘以 1000 转换为毫秒，然后将毫秒值的 `playheadTime` 传递给一个新的 `Date` 对象。结果是一个类似 01:30 的字符串。
 
 ### 视频滑动条控制器
 
-大多数视频播放器都有某种时间线滑动控制。随着视频时间的推进，会有一些图形表示，也可以用作在视频中搜索（滑动）位置的方式。Flex的HSlider组件适用于视频滑动条。滑动条在`<mx:HSlider>`标记中被调用，其ID为`scrubber`。
+大多数视频播放器都有某种时间线滑动控制。随着视频时间的推进，会有一些图形表示，也可以用作在视频中搜索（滑动）位置的方式。Flex 的 `HSlider` 组件适用于视频滑动条。滑动条在 `<mx:HSlider>` 标记中被调用，其 ID 为 `scrubber`。
 
-随着`playheadTime`的更新，HSlider的`value`属性的位置也会更新，使滑块拇指沿着滑块轨道移动。这是在`handleVideoPlayheadUpdate`方法中完成的。HSlider的`maximum`属性与`playheadTimeTotal`属性绑定；因此，滑块上拇指标记的位置将表示`playheadTime`相对于`playheadTimeTotal`的位置。这为用户提供了视频进度的准确视图。
+随着 `playheadTime` 的更新，`HSlider` 的 `value` 属性的位置也会更新，使滑块拇指沿着滑块轨道移动。这是在 `handleVideoPlayheadUpdate` 方法中完成的。`HSlider` 的 `maximum` 属性与 `playheadTimeTotal` 属性绑定；因此，滑块上拇指标记的位置将表示 `playheadTime` 相对于 `playheadTimeTotal` 的位置。这为用户提供了视频进度的准确视图。
 
-最后，用户应该能够通过移动滑块上的拇指来浏览视频。这是通过`handleSliderThumbEvent`方法实现的，该方法由`thumbPress`和`thumbRelease`事件调用。按下时，`handleSliderThumbEvent`会记录视频在拇指按下之前是否正在播放。释放时，`newPlayheadTime`属性被设置为拇指标记的值，并触发一个事件到`UIVideoPlayer`组件，该组件更新`VideoDisplay`组件。如果视频在拇指按下之前正在播放，则视频会恢复播放。
+最后，用户应该能够通过移动滑块上的拇指来浏览视频。这是通过 `handleSliderThumbEvent` 方法实现的，该方法由 `thumbPress` 和 `thumbRelease` 事件调用。按下时，`handleSliderThumbEvent` 会记录视频在拇指按下之前是否正在播放。释放时，`newPlayheadTime` 属性被设置为拇指标记的值，并触发一个事件到 `UIVideoPlayer` 组件，该组件更新 `VideoDisplay` 组件。如果视频在拇指按下之前正在播放，则视频会恢复播放。
 
 ### 关于实时滑动更新
 
-`newPlayheadTime`属性仅在释放时更新，这与视频播放器没有快进或倒回功能的原因相同。Flex `VideoDisplay`组件的`playheadTime`属性可以持续接收新值。然而，如果正在更新`VideoDisplay`中`NetStream`对象的位置，新值将排队并按顺序执行。因此，如果用户拖动拇指时`newPlayheadTime`值被更新，视频显示会在视觉上跳动，直到它到达队列中的下一个`playheadTime`值。
+`newPlayheadTime` 属性仅在释放时更新，这与视频播放器没有快进或倒回功能的原因相同。Flex `VideoDisplay` 组件的 `playheadTime` 属性可以持续接收新值。然而，如果正在更新 `VideoDisplay` 中 `NetStream` 对象的位置，新值将排队并按顺序执行。因此，如果用户拖动拇指时 `newPlayheadTime` 值被更新，视频显示会在视觉上跳动，直到它到达队列中的下一个 `playheadTime` 值。
 
 ### 播放、暂停和倒回
 
-播放按钮根据视频是否正在播放而同时充当播放和暂停按钮。按下时，它会调用`handlePlay`方法，该方法检查`playing`属性并触发播放或暂停事件：
+播放按钮根据视频是否正在播放而同时充当播放和暂停按钮。按下时，它会调用 `handlePlay` 方法，该方法检查 `playing` 属性并触发播放或暂停事件：
 
-```
-    dispatchEvent( new Event( playing ? UIVideoControls.PAUSE_VIDEO :
-        UIVideoControls.PLAY_VIDEO ));
-```
-
-倒回按钮调用`handleRewind`方法，该方法将`newPlayheadTime`属性设置为零。
-
-## UIVideoPlayer详解
-
-既然有了`UIVideoControls`组件，它可以与Flex `VideoDisplay`组件一起被`UIVideoPlayer`组件实例化。`UIVideoPlayer`由这两个组件组成，嵌套在`VBox`容器中。
-
-`videoDisplay`和`videoControls`组件通过公共属性和事件直接相互交互。例如，`videoControls`的`playing`属性与`videoDisplay`的`playing`属性绑定。同样，当触发`volumeChange`事件时，设置`videoDisplay`的`volume`属性的内联代码就会执行：
-
-```
-    <ui:UIVideoControls id="videoControls"
-        playheadTime="{videoDisplay.playheadTime}"
-        playheadTimeTotal="{videoDisplay.totalTime}"
-        playing="{videoDisplay.playing}"
-        playheadTimeChange="{videoDisplay.playheadTime = videoControls.newPlayheadTime}"
-        volume="{videoDisplay.volume}"
-
-        volumeChange="{videoDisplay.volume = videoControls.volume}"
-
-        playVideo="{videoDisplay.play();}"
-        pauseVideo="{videoDisplay.pause();}" />
+```actionscript
+dispatchEvent( new Event( playing ? UIVideoControls.PAUSE_VIDEO :
+    UIVideoControls.PLAY_VIDEO ));
 ```
 
-同样适用于`videoControls`触发的`playheadTimeChange`事件。
+倒回按钮调用 `handleRewind` 方法，该方法将 `newPlayheadTime` 属性设置为零。
+
+## `UIVideoPlayer` 详解
+
+既然有了 `UIVideoControls` 组件，它可以与 Flex `VideoDisplay` 组件一起被 `UIVideoPlayer` 组件实例化。`UIVideoPlayer` 由这两个组件组成，嵌套在 `VBox` 容器中。
+
+`videoDisplay` 和 `videoControls` 组件通过公共属性和事件直接相互交互。例如，`videoControls` 的 `playing` 属性与 `videoDisplay` 的 `playing` 属性绑定。同样，当触发 `volumeChange` 事件时，设置 `videoDisplay` 的 `volume` 属性的内联代码就会执行：
+
+```xml
+<ui:UIVideoControls id="videoControls"
+    playheadTime="{videoDisplay.playheadTime}"
+    playheadTimeTotal="{videoDisplay.totalTime}"
+    playing="{videoDisplay.playing}"
+    playheadTimeChange="{videoDisplay.playheadTime = videoControls.newPlayheadTime}"
+    volume="{videoDisplay.volume}"
+    volumeChange="{videoDisplay.volume = videoControls.volume}"
+    playVideo="{videoDisplay.play();}"
+    pauseVideo="{videoDisplay.pause();}" />
+```
+
+同样适用于 `videoControls` 触发的 `playheadTimeChange` 事件。
 
 ### 公共变量
 
-UIVideoPlayer具有一些公共变量，这些变量要么直接影响VideoDisplay，要么影响UIVideoPlayer组件的功能。这些变量包括：
+`UIVideoPlayer` 具有一些公共变量，这些变量要么直接影响 `VideoDisplay`，要么影响 `UIVideoPlayer` 组件的功能。这些变量包括：
 
--   **source：** 此属性由实例化UIVideoPlayer组件的父类设置。一旦设置，URL将传递给VideoDisplay组件的source属性。
--   **autoPlay：** 与source类似，此属性直接传递给VideoDisplay组件，并影响视频加载后是否自动播放。
--   **autoRewind：** 与source类似，此属性直接传递给VideoDisplay组件，并影响视频播放头到达末尾后是否自动倒回。
--   **maintainAspectRatio：** 与source类似，此属性直接传递给VideoDisplay组件，并影响视频调整大小时的纵横比。
--   **resizeToVideo：** 如果设置为true，当视频加载后，UIVideoPlayer将调整大小以适应源的高和宽。否则，视频将被调整大小以适应UIVideoPlayer内部。
--   **showVideoControls：** 可以通过设置此布尔属性将videoControls组件添加到UIVideoPlayer或从中移除。当播放器设置为全屏时，用于关闭控件。
--   **playing：** 此属性由VideoDisplay组件设置，可用于监控视频是否正在播放。
+- `source`：此属性由实例化 `UIVideoPlayer` 组件的父类设置。一旦设置，URL 将传递给 `VideoDisplay` 组件的 `source` 属性。
+- `autoPlay`：与 `source` 类似，此属性直接传递给 `VideoDisplay` 组件，并影响视频加载后是否自动播放。
+- `autoRewind`：与 `source` 类似，此属性直接传递给 `VideoDisplay` 组件，并影响视频播放头到达末尾后是否自动倒回。
+- `maintainAspectRatio`：与 `source` 类似，此属性直接传递给 `VideoDisplay` 组件，并影响视频调整大小时的纵横比。
+- `resizeToVideo`：如果设置为 `true`，当视频加载后，`UIVideoPlayer` 将调整大小以适应源的高和宽。否则，视频将被调整大小以适应 `UIVideoPlayer` 内部。
+- `showVideoControls`：可以通过设置此布尔属性将 `videoControls` 组件添加到 `UIVideoPlayer` 或从中移除。当播放器设置为全屏时，用于关闭控件。
+- `playing`：此属性由 `VideoDisplay` 组件设置，可用于监控视频是否正在播放。
 
 ### 处理调整大小
 
-UIVideoPlayer的一个关键特性是它能够根据内容或公共方法`setDoubleSize`和`setNormalSize`进行调整大小。例如，一旦设置了source并且VideoDisplay接收到了包含视频高度和宽度的元数据，就会调用`handleMetaData`方法：
+`UIVideoPlayer` 的一个关键特性是它能够根据内容或公共方法 `setDoubleSize` 和 `setNormalSize` 进行调整大小。例如，一旦设置了 `source` 并且 `VideoDisplay` 接收到了包含视频高度和宽度的元数据，就会调用 `handleMetaData` 方法：
 
-```
+```actionscript
 private function handleMetaData( event:MetadataEvent ):void
 {
     if( _resizeToVideo )
     {
         width = event.info.width;
         height = event.info.height + videoControls.height;
-
         dispatchEvent( new Event( "videoResize" ) );
     }
+
     dispatchEvent( event );
 }
 ```
 
-在前面的代码片段中，如果`_resizeToVideo`设置为true，则UIVideoPlayer的宽度和高度将被设置为视频的宽度和高度，并将videoControls的高度计算在内。设置完成后，会触发`videoResize`事件。否则，MetadataEvent会被触发，并可被父类接收。
+在前面的代码片段中，如果 `_resizeToVideo` 设置为 `true`，则 `UIVideoPlayer` 的宽度和高度将被设置为视频的宽度和高度，并将 `videoControls` 的高度计算在内。设置完成后，会触发 `videoResize` 事件。否则，`MetadataEvent` 会被触发，并可被父类接收。
 
-由于UIVideoPlayer继承自VBox容器类，任何调整大小都会保持videoControls在VideoDisplay组件下方。随着VBox调整大小，videoControls也会相应地调整。
-
-
-
-# 第12章：AIR 视频播放器
+由于 `UIVideoPlayer` 继承自 `VBox` 容器类，任何调整大小都会保持 `videoControls` 在 `VideoDisplay` 组件下方。随着 `VBox` 调整大小，`videoControls` 也会相应地调整。
 
 ### 捕获摄像头输入
 
@@ -19365,6 +21866,7 @@ public function enableCamera( event:Event = null ) :void
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
+
 <mx:WindowedApplication
     xmlns:mx="http://www.adobe.com/2006/mxml"
     layout="absolute" width="320" height="290"
@@ -19389,6 +21891,7 @@ public function enableCamera( event:Event = null ) :void
             {
                 this.addEventListener( NativeDragEvent.NATIVE_DRAG_ENTER,
                     onDragEnterHandler );
+
                 this.addEventListener( NativeDragEvent.NATIVE_DRAG_DROP,
                     onDragDropHandler );
 
@@ -19399,6 +21902,7 @@ public function enableCamera( event:Event = null ) :void
 
                 if( NativeApplication.supportsMenu )
                     NativeApplication.nativeApplication.menu = buildAppMenu();
+
                 if( NativeWindow.supportsMenu )
                     stage.nativeWindow.menu = buildAppMenu();
             }
@@ -19409,224 +21913,248 @@ public function enableCamera( event:Event = null ) :void
 
                 var fileMenu:NativeMenuItem =
                     menu.addItem( new NativeMenuItem( "File" ) );
+
                 fileMenu.submenu = buildFileMenu();
-
-                menu.addItem( new NativeMenuItem( "separator" , true ));
-
-                if( isNormal )
-                {
-                    var fullScreen:NativeMenuItem = menu.addItem(
-                        new NativeMenuItem("ENTER FULLSCREEN") );
-                    fullScreen.addEventListener( Event.SELECT,
-                        handleFullScreen );
-                }
-                else
-                {
-                    var exitFullScreen:NativeMenuItem =
-                        menu.addItem( new NativeMenuItem("EXIT FULLSCREEN") );
-                    exitFullScreen.addEventListener( Event.SELECT,
-                        handleExitFullScreen );
-                }
-
-                var playVideoMenuItem:NativeMenuItem =
-                    menu.addItem( new NativeMenuItem( "PLAY" ) );
-                playVideoMenuItem.addEventListener( Event.SELECT,
-                    videoPlayer.play );
-
-                var pauseVideoMenuItem:NativeMenuItem = menu.addItem(
-                    new NativeMenuItem( "PAUSE" ) );
-                pauseVideoMenuItem.addEventListener( Event.SELECT,
-                    videoPlayer.pause );
-
-                return menu;
-            }
-
-            private function buildAppMenu():NativeMenu
-            {
-                var appMenu:NativeMenu = new NativeMenu();
-                var fileMenu:NativeMenuItem = appMenu.addItem(
-                    new NativeMenuItem( "File" ) );
-                fileMenu.submenu = buildFileMenu();
-
-                var viewMenu:NativeMenuItem = appMenu.addItem(
-                    new NativeMenuItem( "View" ) );
-                viewMenu.submenu = buildViewMenu();
-
-                return appMenu;
-            }
-
-            private function buildFileMenu():NativeMenu
-            {
-                var fileSubMenu:NativeMenu = new NativeMenu();
-                var openVideo:NativeMenuItem = fileSubMenu.addItem(
-                    new NativeMenuItem( "Open Video" ));
-                openVideo.addEventListener( Event.SELECT , handleOpenVideo );
-
-                var closePlayer:NativeMenuItem = fileSubMenu.addItem(
-                    new NativeMenuItem( "Close Player" ));
-                closePlayer.addEventListener( Event.SELECT , handleClosePlayer );
-
-                return fileSubMenu;
-            }
-
-            private function buildViewMenu():NativeMenu
-            {
-                var viewSubMenu:NativeMenu = new NativeMenu();
-                var fullScreen:NativeMenuItem = viewSubMenu.addItem(
-                    new NativeMenuItem("Enter FullScreen") );
-                fullScreen.addEventListener( Event.SELECT , handleFullScreen );
-
-                var doubleSize:NativeMenuItem = viewSubMenu.addItem(
-                    new NativeMenuItem("Double Size") );
-                doubleSize.addEventListener( Event.SELECT,
-                    videoPlayer.setDoubleSize );
-
-                var normalSize:NativeMenuItem = viewSubMenu.addItem(
-                    new NativeMenuItem("Normal Size") );
-                normalSize.addEventListener( Event.SELECT,
-                    videoPlayer.setNormalSize );
-
-                var separator:NativeMenuItem = viewSubMenu.addItem(
-                    new NativeMenuItem("SEPARATOR" , true ));
-
-                var viewCamera:NativeMenuItem = viewSubMenu.addItem(
-                    new NativeMenuItem("View Camera") );
-                viewCamera.addEventListener( Event.SELECT,
-                    videoPlayer.enableCamera );
-
-                return viewSubMenu;
-            }
-
-            private function handleOpenVideo( event:Event ):void
-            {
-                var videoFilter:FileFilter = new FileFilter("Video",
-                    "*.flv;*.mp4;*.mov;*.mpg;*.m4a;*.mp4v;*.3gp;*.3g2");
-                var file:File = new File();
-                file.addEventListener( Event.SELECT , handleVideoSelection );
-                file.browseForOpen("Video" , [videoFilter] );
-            }
-
-            private function handleClosePlayer( event:Event ):void
-            {
-                stage.nativeWindow.close();
-            }
-
-            private function handleVideoSelection( event:Event ):void
-            {
-                var prefix:String =
-                    ( Capabilities.os.search("Mac") >= 0 ) ? "file://" : "";
-                videoPlayer.source = prefix + event.target.nativePath;
-
-                openLabel.visible = false;
-            }
-
-            private function onDragEnterHandler( event:NativeDragEvent ):void
-            {
-                NativeDragManager.dropAction = NativeDragActions.LINK;
-                NativeDragManager.acceptDragDrop( this );
-            }
-
-            private function onDragDropHandler( event:NativeDragEvent ):void
-            {
-                if( event.clipboard.hasFormat(ClipboardFormats.FILE_LIST_FORMAT) )
-                {
-                    var fileArray:Array = event.clipboard.getData(
-                        ClipboardFormats.FILE_LIST_FORMAT ) as Array;
-                    for each( var file:File in fileArray )
-                    {
-                        var prefix:String =
-                            (Capabilities.os.search("Mac") >= 0) ? "file://" : "";
-
-                        switch( file.extension )
-                        {
-                            case "flv" : videoPlayer.source =
-                                prefix + file.nativePath;
-                                break;
-                            case "mp4" : videoPlayer.source =
-                                prefix + file.nativePath;
-                                break;
-                            case "mov" : videoPlayer.source =
-                                prefix + file.nativePath;
-                                break;
-                            case "mpg" : videoPlayer.source =
-                                prefix + file.nativePath;
-                                break;
-                            case "m4a" : videoPlayer.source =
-                                prefix + file.nativePath;
-                                break;
-                            case "mp4v" : videoPlayer.source =
-                                prefix + file.nativePath;
-                                break;
-                            case "3gp" : videoPlayer.source =
-                                prefix + file.nativePath;
-                                break;
-                            case "3g2" : videoPlayer.source =
-                                prefix + file.nativePath;
-                                break;
-                        }
-                    }
-
-                    openLabel.visible = false;
-                }
-            }
-
-            private function handleVideoPlayerResize( event:Event ):void
-            {
-                this.width = videoPlayer.width;
-                this.height = videoPlayer.height + 18;
-            }
-
-            private function handleMetaData( event:MetadataEvent ):void
-            {
-                this.title = videoPlayer.source.split('/').pop();
-            }
-
-            private function handleResizingMainApp(
-                event:NativeWindowBoundsEvent = null ):void
-            {
-                videoPlayer.width = this.width;
-                videoPlayer.height = this.height - 18;
-            }
-
-            private function handleResizeFullScreen( event:FullScreenEvent ):void
-            {
-                if(stage.displayState == StageDisplayState.FULL_SCREEN_INTERACTIVE)
-                {
-                    videoPlayer.showVideoControls = false;
-                    videoPlayer.width = this.width;
-                    videoPlayer.height = this.height;
-
-                    this.contextMenu = buildContextMenu( false );
-                }
-            }
-        ]]>
-    </mx:Script>
-</mx:WindowedApplication>
 ```
 
 
 
+```actionscript
+menu.addItem(new NativeMenuItem("separator", true));
+
+if (isNormal)
+{
+    var fullScreen:NativeMenuItem = menu.addItem(
+        new NativeMenuItem("ENTER FULLSCREEN")
+    );
+    fullScreen.addEventListener(Event.SELECT, handleFullScreen);
+}
+else
+{
+    var exitFullScreen:NativeMenuItem = menu.addItem(
+        new NativeMenuItem("EXIT FULLSCREEN")
+    );
+    exitFullScreen.addEventListener(Event.SELECT, handleExitFullScreen);
+}
+
+var playVideoMenuItem:NativeMenuItem = menu.addItem(
+    new NativeMenuItem("PLAY")
+);
+playVideoMenuItem.addEventListener(Event.SELECT, videoPlayer.play);
+
+var pauseVideoMenuItem:NativeMenuItem = menu.addItem(
+    new NativeMenuItem("PAUSE")
+);
+pauseVideoMenuItem.addEventListener(Event.SELECT, videoPlayer.pause);
+
+return menu;
+}
+
+private function buildAppMenu():NativeMenu
+{
+    var appMenu:NativeMenu = new NativeMenu();
+
+    var fileMenu:NativeMenuItem = appMenu.addItem(
+        new NativeMenuItem("File")
+    );
+    fileMenu.submenu = buildFileMenu();
+
+    var viewMenu:NativeMenuItem = appMenu.addItem(
+        new NativeMenuItem("View")
+    );
+    viewMenu.submenu = buildViewMenu();
+
+    return appMenu;
+}
+
+private function buildFileMenu():NativeMenu
+{
+    var fileSubMenu:NativeMenu = new NativeMenu();
+
+    var openVideo:NativeMenuItem = fileSubMenu.addItem(
+        new NativeMenuItem("Open Video")
+    );
+    openVideo.addEventListener(Event.SELECT, handleOpenVideo);
+
+    var closePlayer:NativeMenuItem = fileSubMenu.addItem(
+        new NativeMenuItem("Close Player")
+    );
+    closePlayer.addEventListener(Event.SELECT, handleClosePlayer);
+
+    return fileSubMenu;
+}
+
+private function buildViewMenu():NativeMenu
+{
+    var viewSubMenu:NativeMenu = new NativeMenu();
+
+    var fullScreen:NativeMenuItem = viewSubMenu.addItem(
+        new NativeMenuItem("Enter FullScreen")
+    );
+    fullScreen.addEventListener(Event.SELECT, handleFullScreen);
+
+    var doubleSize:NativeMenuItem = viewSubMenu.addItem(
+        new NativeMenuItem("Double Size")
+    );
+    doubleSize.addEventListener(Event.SELECT, videoPlayer.setDoubleSize);
+
+    var normalSize:NativeMenuItem = viewSubMenu.addItem(
+        new NativeMenuItem("Normal Size")
+    );
+    normalSize.addEventListener(Event.SELECT, videoPlayer.setNormalSize);
+
+    var separator:NativeMenuItem = viewSubMenu.addItem(
+        new NativeMenuItem("SEPARATOR", true)
+    );
+
+    var viewCamera:NativeMenuItem = viewSubMenu.addItem(
+        new NativeMenuItem("View Camera")
+    );
+    viewCamera.addEventListener(Event.SELECT, videoPlayer.enableCamera);
+
+    return viewSubMenu;
+}
+
+private function handleOpenVideo(event:Event):void
+{
+    var videoFilter:FileFilter = new FileFilter(
+        "Video",
+        "*.flv;*.mp4;*.mov;*.mpg;*.m4a;*.mp4v;*.3gp;*.3g2"
+    );
+
+    var file:File = new File();
+    file.addEventListener(Event.SELECT, handleVideoSelection);
+    file.browseForOpen("Video", [videoFilter]);
+}
+
+private function handleClosePlayer(event:Event):void
+{
+    stage.nativeWindow.close();
+}
+
+private function handleVideoSelection(event:Event):void
+{
+    var prefix:String =
+        (Capabilities.os.search("Mac") >= 0) ? "file://" : "";
+
+    videoPlayer.source = prefix + event.target.nativePath;
+    openLabel.visible = false;
+}
+
+private function onDragEnterHandler(event:NativeDragEvent):void
+{
+    NativeDragManager.dropAction = NativeDragActions.LINK;
+    NativeDragManager.acceptDragDrop(this);
+}
+
+private function onDragDropHandler(event:NativeDragEvent):void
+{
+    if (event.clipboard.hasFormat(ClipboardFormats.FILE_LIST_FORMAT))
+    {
+        var fileArray:Array = event.clipboard.getData(
+            ClipboardFormats.FILE_LIST_FORMAT
+        ) as Array;
+
+        for each (var file:File in fileArray)
+        {
+            var prefix:String =
+                (Capabilities.os.search("Mac") >= 0) ? "file://" : "";
+
+            switch (file.extension)
+            {
+                case "flv":
+                    videoPlayer.source = prefix + file.nativePath;
+                    break;
+                case "mp4":
+                    videoPlayer.source = prefix + file.nativePath;
+                    break;
+                case "mov":
+                    videoPlayer.source = prefix + file.nativePath;
+                    break;
+                case "mpg":
+                    videoPlayer.source = prefix + file.nativePath;
+                    break;
+                case "m4a":
+                    videoPlayer.source = prefix + file.nativePath;
+                    break;
+                case "mp4v":
+                    videoPlayer.source = prefix + file.nativePath;
+                    break;
+                case "3gp":
+                    videoPlayer.source = prefix + file.nativePath;
+                    break;
+                case "3g2":
+                    videoPlayer.source = prefix + file.nativePath;
+                    break;
+            }
+        }
+
+        openLabel.visible = false;
+    }
+}
+
+private function handleVideoPlayerResize(event:Event):void
+{
+    this.width = videoPlayer.width;
+    this.height = videoPlayer.height + 18;
+}
+
+private function handleMetaData(event:MetadataEvent):void
+{
+    this.title = videoPlayer.source.split("/").pop();
+}
+
+private function handleResizingMainApp(
+    event:NativeWindowBoundsEvent = null
+):void
+{
+    videoPlayer.width = this.width;
+    videoPlayer.height = this.height - 18;
+}
+
+private function handleResizeFullScreen(event:FullScreenEvent):void
+{
+    if (stage.displayState == StageDisplayState.FULL_SCREEN_INTERACTIVE)
+    {
+        videoPlayer.showVideoControls = false;
+        videoPlayer.width = this.width;
+        videoPlayer.height = this.height;
+        this.contextMenu = buildContextMenu(false);
+    }
+}
+]]>
+
+</mx:Script>
+
+</mx:WindowedApplication>
+```
+
 ## 第12章：AIR 视频播放器
 
 ```actionscript
-if( stage.displayState == StageDisplayState.NORMAL )
+
+
+
+```actionscript
+if (stage.displayState == StageDisplayState.NORMAL)
 {
     videoPlayer.showVideoControls = true;
     handleResizingMainApp();
-
     this.contextMenu = buildContextMenu();
 }
 
-private function handleFullScreen( event:Event ):void
+private function handleFullScreen(event:Event):void
 {
     stage.displayState = StageDisplayState.FULL_SCREEN_INTERACTIVE;
 }
 
-private function handleExitFullScreen( event:Event ):void
+private function handleExitFullScreen(event:Event):void
 {
     stage.displayState = StageDisplayState.NORMAL;
 }
-]]>
+```
+
+```xml
 </mx:Script>
 
 <mx:Label id="openLabel" color="0xFFFFFF"
@@ -19637,13 +22165,14 @@ private function handleExitFullScreen( event:Event ):void
     id="videoPlayer"
     width="100%" height="100%"
     resizeToVideo="true"
-    metadataReceived="handleMetaData( event );"
-    videoResize="handleVideoPlayerResize( event );"
-    />
+    metadataReceived="handleMetaData(event);"
+    videoResize="handleVideoPlayerResize(event);"
+/>
+
 </mx:WindowedApplication>
 ```
 
-将此类保存为 AIRVideoPlayer.mxml，放在你的工作目录根目录下。
+将此类保存为`AIRVideoPlayer.mxml`，放在你的工作目录根目录下。
 
 此时，AIR 视频播放器即可进行编译和测试。结果如图 12-2 所示。
 
@@ -19651,144 +22180,149 @@ private function handleExitFullScreen( event:Event ):void
 
 ### AIRVideoPlayer.mxml 详解
 
-`AIRVideoPlayer` 实例化了 `UIVideoPlayer` 组件，并充当该组件与 AIR 功能之间的控制器。它继承自 `<mx:WindowedApplication>` 容器，并控制初始显示的高度、宽度和 `backgroundColor`。
+`AIRVideoPlayer`实例化了`UIVideoPlayer`组件，并充当该组件与 AIR 功能之间的控制器。它继承自`<mx:WindowedApplication>`容器，并控制初始显示的高度、宽度和`backgroundColor`。
 
 ### 实现 UIVideoPlayer 组件
 
-`AIRVideoPlayer` 实例化 `UIVideoPlayer` 组件，并为该组件的属性和事件赋值和分配方法：
+`AIRVideoPlayer`实例化`UIVideoPlayer`组件，并为该组件的属性和事件赋值和分配方法：
 
 ```xml
 <ui:UIVideoPlayer
     id="videoPlayer"
     width="100%" height="100%"
     resizeToVideo="true"
-    metadataReceived="handleMetaData( event );"
-    videoResize="handleVideoPlayerResize( event );"
+    metadataReceived="handleMetaData(event);"
+    videoResize="handleVideoPlayerResize(event);"
 />
 ```
 
-查看这些属性，`width` 和 `height` 被设置为 100%，以便播放器占据所有可用的窗口空间。同样，`height` 和 `width` 会影响 `videoResize` 事件触发时 `AIRVideoPlayer` 的大小。这一点将在本节稍后详细讨论。
+查看这些属性，`width`和`height`被设置为 100%，以便播放器占据所有可用的窗口空间。同样，`height`和`width`会影响`videoResize`事件触发时`AIRVideoPlayer`的大小。这一点将在本节稍后详细讨论。
 
-公共属性 `resizeToVideo` 被设置为 `true`，以便 `UIVideoPlayer` 能够根据加载的视频内容自动扩展和收缩。
+公共属性`resizeToVideo`被设置为`true`，以便`UIVideoPlayer`能够根据加载的视频内容自动扩展和收缩。
 
-一旦 `metadataReceived` 事件被触发，就会调用 `handleMetaData` 方法。在此方法中，可以设置任何与视频文件元数据相关的应用程序级属性。例如，窗口标题被设置为加载后的文件名：
+一旦`metadataReceived`事件被触发，就会调用`handleMetaData`方法。在此方法中，可以设置任何与视频文件元数据相关的应用程序级属性。例如，窗口标题被设置为加载后的文件名：
 
 ```actionscript
 this.title = videoPlayer.source.split('/').pop();
 ```
 
-尽管这可以在创建 `File` 对象时进行赋值，但最好在视频初始化之后再进行赋值。
+尽管这可以在创建`File`对象时进行赋值，但最好在视频初始化之后再进行赋值。
 
 ### 添加拖放功能
 
-AIR 的一个优秀特性是它提供了将内容从桌面拖放到 AIR 应用程序的能力。在这种情况下，FLV 和 H.264 编码的文件可以被拖放到 AIR 视频播放器中并自动播放。这是通过在 `handleAppCreationComplete` 方法中添加 `NativeDragEvent.NATIVE_DRAG_ENTER` 和 `NativeDragEvent.NATIVE_DRAG_DROP` 监听器来实现的。此方法在应用程序完成实例化后被调用。
+AIR 的一个优秀特性是它提供了将内容从桌面拖放到 AIR 应用程序的能力。在这种情况下，FLV 和 H.264 编码的文件可以被拖放到 AIR 视频播放器中并自动播放。这是通过在`handleAppCreationComplete`方法中添加`NativeDragEvent.NATIVE_DRAG_ENTER`和`NativeDragEvent.NATIVE_DRAG_DROP`监听器来实现的。此方法在应用程序完成实例化后被调用。
 
 ### 拖动
 
 当用户将视频拖到 AIR 视频播放器上时，将调用以下方法：
 
 ```actionscript
-private function onDragEnterHandler( event:NativeDragEvent ):void
+private function onDragEnterHandler(event:NativeDragEvent):void
 {
     NativeDragManager.dropAction = NativeDragActions.LINK;
-    NativeDragManager.acceptDragDrop( this );
+    NativeDragManager.acceptDragDrop(this);
 }
 ```
 
-此方法引用 `NativeDragManager` 并将 `dropAction` 属性赋值为 `link`，这意味着只会创建文件的引用，而不是将文件复制或移动到另一个目录位置。此外，`AIRVideoPlayer` 通过将自身的引用传递给 `NativeDragManager` 的 `acceptDragDrop` 方法，告知 `NativeDragManager` 可以允许拖放操作。
+此方法引用`NativeDragManager`并将`dropAction`属性赋值为`link`，这意味着只会创建文件的引用，而不是将文件复制或移动到另一个目录位置。此外，`AIRVideoPlayer`通过将自身的引用传递给`NativeDragManager`的`acceptDragDrop`方法，告知`NativeDragManager`可以允许拖放操作。
 
 ### 放置
 
-当用户将文件放置到 `AIRVideoPlayer` 上时，将调用 `onDragDropHandler` 方法。此方法接收一个 `NativeDragEvent`，其中包含已放置文件的引用信息。引用信息位于 `event.clipboard` 容器中。
+当用户将文件放置到`AIRVideoPlayer`上时，将调用`onDragDropHandler`方法。此方法接收一个`NativeDragEvent`，其中包含已放置文件的引用信息。引用信息位于`event.clipboard`容器中。
 
-该方法首先通过在剪贴板容器上调用 `hasFormat` 方法来确保剪贴板具有文件信息。`hasFormat` 方法接受一个格式 `String`。在这种情况下，由于此方法检查的是文件格式，因此传递的是字符串 `ClipboardFormats.FILE_LIST_FORMAT`。
+该方法首先通过在剪贴板容器上调用`hasFormat`方法来确保剪贴板具有文件信息。`hasFormat`方法接受一个格式`String`。在这种情况下，由于此方法检查的是文件格式，因此传递的是字符串`ClipboardFormats.FILE_LIST_FORMAT`。
 
-一旦确定剪贴板信息是文件数据，`onDragDropHandler` 方法就会创建一个新数组，并使用 `clipboard.getData` 方法从剪贴板分配数据：
+一旦确定剪贴板信息是文件数据，`onDragDropHandler`方法就会创建一个新数组，并使用`clipboard.getData`方法从剪贴板分配数据：
 
 ```actionscript
 var fileArray:Array =
     event.clipboard.getData(ClipboardFormats.FILE_LIST_FORMAT) as Array;
 ```
 
-然后，它遍历 `Array` 中的每个 `File` 对象，并确定文件扩展名是否为 FLV 或其他可接受的 H.264 编码格式（如 .MOV）。如果文件是可接受的格式，则将其 `NativePath` 分配给 `UIVideoPlayer` 的 `source` 属性并加载视频。如果用户运行的是 Mac OS X，则需要添加前缀 `file://`：
+然后，它遍历`Array`中的每个`File`对象，并确定文件扩展名是否为 FLV 或其他可接受的 H.264 编码格式（如`.MOV`）。如果文件是可接受的格式，则将其`NativePath`分配给`UIVideoPlayer`的`source`属性并加载视频。如果用户运行的是 Mac OS X，则需要添加前缀`file://`：
 
 ```actionscript
-var prefix:String = (Capabilities.os.search("Mac")>=0) ? "file://" : "";
+var prefix:String = (Capabilities.os.search("Mac") >= 0) ? "file://" : "";
 ```
 
 ### 添加上下文菜单和窗口菜单
 
-尽管通过拖放访问文件是一种可接受的打开视频文件的方式，但 `AIRVideoPlayer` 需要一种更直观的打开文件方式。为此，将为应用程序分配一个 `NativeMenu` 对象。
+尽管通过拖放访问文件是一种可接受的打开视频文件的方式，但`AIRVideoPlayer`需要一种更直观的打开文件方式。为此，将为应用程序分配一个`NativeMenu`对象。
 
 #### 窗口和应用程序菜单
 
-实际上有两种不同类型的窗口菜单，它们由用户使用的操作系统决定。例如，OS X 在屏幕顶部有一个固定的菜单栏，与应用程序窗口分离，而 Windows 则有一个位于应用程序窗口内的菜单。对于 `AIRVideoPlayer`，这在 `handleAppCreationComplete` 方法中决定：
+实际上有两种不同类型的窗口菜单，它们由用户使用的操作系统决定。例如，OS X 在屏幕顶部有一个固定的菜单栏，与应用程序窗口分离，而 Windows 则有一个位于应用程序窗口内的菜单。对于`AIRVideoPlayer`，这在`handleAppCreationComplete`方法中决定：
 
 ```actionscript
-if( NativeApplication.supportsMenu )
+if (NativeApplication.supportsMenu)
     NativeApplication.nativeApplication.menu = buildAppMenu();
-if( NativeWindow.supportsMenu )
-    stage.nativeWindow.menu= buildAppMenu();
+
+if (NativeWindow.supportsMenu)
+    stage.nativeWindow.menu = buildAppMenu();
 ```
 
-如果此应用程序在 OS X 中运行，则 `NativeApplication.supportsMenu` 将为 true，而在 Windows 中，`NativeWindow.supportsMenu` 将为 true。无论哪种情况，相同的菜单集都被分配给 `nativeApplication`（OS X）或 `nativeWindow`（Windows）。
+如果此应用程序在 OS X 中运行，则`NativeApplication.supportsMenu`将为`true`，而在 Windows 中，`NativeWindow.supportsMenu`将为`true`。无论哪种情况，相同的菜单集都被分配给`nativeApplication`（OS X）或`nativeWindow`（Windows）。
 
-`buildAppMenu` 方法创建菜单集并返回一个 `NativeMenu` 对象：
+`buildAppMenu`方法创建菜单集并返回一个`NativeMenu`对象：
 
 ```actionscript
 var menu:NativeMenu = new NativeMenu();
-var fileMenu:NativeMenuItem = menu.addItem(new NativeMenuItem("File"));
+
+var fileMenu:NativeMenuItem =
+    menu.addItem(new NativeMenuItem("File"));
+
 fileMenu.submenu = buildFileMenu();
 ```
 
-前面的代码片段取自 `buildAppMenu`。在此示例中，创建了一个新的 `NativeMenu` 对象，并向其添加了一个名为 `fileMenu` 的新 `NativeMenuItem`。一旦添加了 `fileMenu`，`fileMenu` 的子菜单就通过 `buildFileMenu` 进行分配，该方法返回一个 `NativeMenu`。结果是一个标题为“文件”的菜单，其中包含一个下拉菜单，提供“打开视频”和“关闭播放器”选项。“视图”菜单的处理方式相同。图 12-3 展示了在 Windows 中运行的窗口菜单。
+前面的代码片段取自`buildAppMenu`。在此示例中，创建了一个新的`NativeMenu`对象，并向其添加了一个名为`fileMenu`的新`NativeMenuItem`。一旦添加了`fileMenu`，`fileMenu`的子菜单就通过`buildFileMenu`进行分配，该方法返回一个`NativeMenu`。结果是一个标题为“文件”的菜单，其中包含一个下拉菜单，提供“打开视频”和“关闭播放器”选项。“视图”菜单的处理方式相同。图 12-3 展示了在 Windows 中运行的窗口菜单。
 
 ![图12-3](img/dea8bb18fb213671e2a7e04d8fb0d89f_462_0.png)
 
 ### 上下文菜单
 
-将添加上下文菜单，使用户能够在全屏和正常窗口视图之间切换。将添加基本的播放和暂停功能，以及上一节中添加的 `fileMenu`。上下文菜单在 `handleAppCreationComplete` 方法中添加到应用程序：
+将添加上下文菜单，使用户能够在全屏和正常窗口视图之间切换。将添加基本的播放和暂停功能，以及上一节中添加的`fileMenu`。上下文菜单在`handleAppCreationComplete`方法中添加到应用程序：
 
 ```actionscript
 this.contextMenu = buildContextMenu();
 ```
 
-`buildContextMenu` 的设置与 `buildAppMenu` 方法类似，也返回一个 `NativeMenu` 对象。创建一个名为 `menu` 的新 `NativeMenu` 对象，并将 `NativeMenuItems` 分配给它。唯一的例外是当应用程序检查是否处于全屏模式时：
+`buildContextMenu`的设置与`buildAppMenu`方法类似，也返回一个`NativeMenu`对象。创建一个名为`menu`的新`NativeMenu`对象，并将`NativeMenuItems`分配给它。唯一的例外是当应用程序检查是否处于全屏模式时：
 
 ```actionscript
-if( isNormal )
+if (isNormal)
 {
-    var fullScreen:NativeMenuItem = menu.addItem( new
-        NativeMenuItem("ENTER FULLSCREEN") );
-    fullScreen.addEventListener( Event.SELECT , handleFullScreen );
+    var fullScreen:NativeMenuItem =
+        menu.addItem(new NativeMenuItem("ENTER FULLSCREEN"));
+
+    fullScreen.addEventListener(Event.SELECT, handleFullScreen);
+}
 ```
-
-
 
 ## 第12章：AIR视频播放器
 
 ```actionscript
 else
 {
-    var exitFullScreen:NativeMenuItem = menu.addItem( new
-        NativeMenuItem("EXIT FULLSCREEN") );
-    exitFullScreen.addEventListener( Event.SELECT , handleExitFullScreen );
+    var exitFullScreen:NativeMenuItem =
+        menu.addItem(new NativeMenuItem("EXIT FULLSCREEN"));
+
+    exitFullScreen.addEventListener(Event.SELECT, handleExitFullScreen);
 }
 ```
 
-如果应用程序处于全屏模式，则 `isNormal` 将为 `false`。一旦确定此状态，将相应地添加“进入全屏”或“退出全屏”选项。上下文菜单的效果如图12-4所示，也可以在下一节的图12-6中查看。
+如果应用程序处于全屏模式，则`isNormal`将为`false`。一旦确定此状态，将相应地添加“进入全屏”或“退出全屏”选项。上下文菜单的效果如图12-4所示，也可以在下一节的图12-6中查看。
 
 ![](img/dea8bb18fb213671e2a7e04d8fb0d89f_463_0.png)
 
 ## 支持全屏和调整大小
 
-全屏观看视频几乎是全功能视频播放器的必备功能，同样，调整播放器大小以适应加载视频的设定尺寸或用户指定的尺寸的能力也至关重要。幸运的是，构成AIR视频播放器的所有三个组件文件的代码都已设计为可适应调整大小。
+全屏观看视频几乎是全功能视频播放器的必备功能，同样，调整播放器大小以适应加载视频的设定尺寸或用户指定的尺寸的能力也至关重要。幸运的是，构成 AIR 视频播放器的所有三个组件文件的代码都已设计为可适应调整大小。
 
 ### 调整大小
 
-调整大小（不包括全屏）在两个地方进行。第一个是在 `WindowedApplication` 派发的 `resizing` 事件中声明。当 `resizing` 事件被派发时，会调用 `handleResizingApp` 方法。该方法会根据用户拖动窗口大小以获得更大的高度和宽度，调整 `UIVideoPlayer` 的 `height` 和 `width`，同时保留视频的纵横比，除非将 `UIVideoPlayer.maintainAspectRatio` 设置为 `false`。
+调整大小（不包括全屏）在两个地方进行。第一个是在`WindowedApplication`派发的`resizing`事件中声明。当`resizing`事件被派发时，会调用`handleResizingApp`方法。该方法会根据用户拖动窗口大小以获得更大的高度和宽度，调整`UIVideoPlayer`的`height`和`width`，同时保留视频的纵横比，除非将`UIVideoPlayer.maintainAspectRatio`设置为`false`。
 
-第二个地方在 `UIVideoPlayer` 组件实例化标记中声明。`videoResize` 事件被赋予 `handleVideoPlayerResize` 方法。一旦收到视频的元数据，就会派发此事件。然后，`handleVideoPlayerResize` 会重新调整应用程序的 `height` 和 `width`，使其与 `UIVideoPlayer` 的 `height` 和 `width` 匹配。这在图12-5中有所说明。
+第二个地方在`UIVideoPlayer`组件实例化标记中声明。`videoResize`事件被赋予`handleVideoPlayerResize`方法。一旦收到视频的元数据，就会派发此事件。然后，`handleVideoPlayerResize`会重新调整应用程序的`height`和`width`，使其与`UIVideoPlayer`的`height`和`width`匹配。这在图12-5中有所说明。
 
 ![](img/dea8bb18fb213671e2a7e04d8fb0d89f_464_0.png)
 
@@ -19796,108 +22330,117 @@ else
 
 全屏切换在“添加上下文和窗口菜单”一节中已设置好。用户可以从“视图”菜单进入全屏，或者右键单击播放器并选择“进入全屏”。
 
-要进入全屏模式，会调用 `handleFullScreen` 方法，该方法将 `stage.displayState` 设置为 `StageDisplayState.FULL_SCREEN_INTERACTIVE`。这有效地将应用程序设置为全屏。
+要进入全屏模式，会调用`handleFullScreen`方法，该方法将`stage.displayState`设置为`StageDisplayState.FULL_SCREEN_INTERACTIVE`。这有效地将应用程序设置为全屏。
 
-要退出全屏模式，会调用 `handleExitFullScreen` 方法，该方法将 `stage.displayState` 设置为 `StageDisplayState.NORMAL`。这有效地将应用程序恢复到进入全屏前的高度和宽度。
+要退出全屏模式，会调用`handleExitFullScreen`方法，该方法将`stage.displayState`设置为`StageDisplayState.NORMAL`。这有效地将应用程序恢复到进入全屏前的高度和宽度。
 
-应用程序通过在 `handleAppCreationComplete` 中向 `stage` 添加监听器来监听显示状态更改，该监听器监听 `FullScreenEvent.FULL_SCREEN`。一旦派发此事件，就会调用 `handleResizeFullScreen` 方法：
+应用程序通过在`handleAppCreationComplete`中向`stage`添加监听器来监听显示状态更改，该监听器监听`FullScreenEvent.FULL_SCREEN`。一旦派发此事件，就会调用`handleResizeFullScreen`方法：
 
 ```actionscript
-private function handleResizeFullScreen( event:FullScreenEvent ):void
+private function handleResizeFullScreen(event:FullScreenEvent):void
 {
-    if(stage.displayState == StageDisplayState.FULL_SCREEN_INTERACTIVE)
+    if (stage.displayState == StageDisplayState.FULL_SCREEN_INTERACTIVE)
     {
         videoPlayer.showVideoControls = false;
         videoPlayer.width = this.width;
         videoPlayer.height = this.height;
-
-        this.contextMenu = buildContextMenu( false );
+        this.contextMenu = buildContextMenu(false);
     }
 
-    if(stage.displayState == StageDisplayState.NORMAL)
+    if (stage.displayState == StageDisplayState.NORMAL)
     {
         videoPlayer.showVideoControls = true;
         handleResizingMainApp();
-
         this.contextMenu = buildContextMenu();
     }
 }
 ```
 
-此方法在进入或退出全屏模式时都会被调用。可以通过将 `stage.displayState` 的值与 `StageDisplayState` 类中包含的任何公共常量进行比较来检测显示状态。
+此方法在进入或退出全屏模式时都会被调用。可以通过将`stage.displayState`的值与`StageDisplayState`类中包含的任何公共常量进行比较来检测显示状态。
 
-如果 `stage.displayState` 等于 `StageDisplayState.FULL_SCREEN_INTERACTIVE`，则会调整 `UIVideoPlayer` 的高度和宽度属性以适应全屏。此外，上下文菜单会更改为允许用户退出全屏，并且 `UIVideoPlayer` 中的控件会被移除，如图12-6所示。同样，如果 `stage.displayState` 等于 `StageDisplayState.NORMAL`，则会恢复 `UIVideoPlayer` 的界面和大小。
+如果`stage.displayState`等于`StageDisplayState.FULL_SCREEN_INTERACTIVE`，则会调整`UIVideoPlayer`的高度和宽度属性以适应全屏。此外，上下文菜单会更改为允许用户退出全屏，并且`UIVideoPlayer`中的控件会被移除，如图12-6所示。同样，如果`stage.displayState`等于`StageDisplayState.NORMAL`，则会恢复`UIVideoPlayer`的界面和大小。
 
 ![](img/dea8bb18fb213671e2a7e04d8fb0d89f_465_0.png)
 
-现在 `AIRVideoPlayer` 应用程序类已经完成，是时候整理任何遗留问题并部署应用程序了。请继续下一节以完成此应用程序。
+现在`AIRVideoPlayer`应用程序类已经完成，是时候整理任何遗留问题并部署应用程序了。请继续下一节以完成此应用程序。
 
 ## 部署应用程序
 
-AIR视频播放器已接近完成。最后一步是创建一个描述符文件，并将所有内容打包为一个可部署的AIR文件。
+AIR 视频播放器已接近完成。最后一步是创建一个描述符文件，并将所有内容打包为一个可部署的 AIR 文件。
 
 ### 描述符文件
 
-创建AIR视频播放器所需的最终文件是应用程序描述符文件。这个XML文件包含应用程序的属性，例如初始窗口设置、版权和标题。它会与最终的可部署文件一起打包和分发。
+创建 AIR 视频播放器所需的最终文件是应用程序描述符文件。这个 XML 文件包含应用程序的属性，例如初始窗口设置、版权和标题。它会与最终的可部署文件一起打包和分发。
 
 创建一个新文档并输入以下标记：
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
+
 <application xmlns="http://ns.adobe.com/air/application/1.0">
+
     <id>com.aircmr.VideoPlayer</id>
+
     <filename>VideoPlayer</filename>
+
     <version>0.1</version>
-    <name>AIR VideoPlayer</name>
-    <description></description>
-    <copyright>2008</copyright>
+```
 
-    <initialWindow>
-        <title/>
-        <content>AIRVideoPlayer.swf</content>
-        <systemChrome>standard</systemChrome>
-        <transparent>false</transparent>
-        <visible>true</visible>
-    </initialWindow>
 
-    <installFolder>AIRCMR/AIRVideoPlayer</installFolder>
-    <programMenuFolder>AIRCMR</programMenuFolder>
+
+```xml
+<name>AIR VideoPlayer</name>
+
+<description></description>
+
+<copyright>2008</copyright>
+
+<initialWindow>
+    <title/>
+    <content>AIRVideoPlayer.swf</content>
+    <systemChrome>standard</systemChrome>
+    <transparent>false</transparent>
+    <visible>true</visible>
+</initialWindow>
+
+<installFolder>AIRCMR/AIRVideoPlayer</installFolder>
+
+<programMenuFolder>AIRCMR</programMenuFolder>
+
 </application>
 ```
 
-将文件保存为 `AIRVideoPlayer-app.xml`，放在工作目录的根目录下，与 `AIRVideoPlayer.mxml` 文件一起。
+将文件保存为`AIRVideoPlayer-app.xml`，放在工作目录的根目录下，与`AIRVideoPlayer.mxml`文件一起。
 
 描述符创建完成后，继续编译和打包应用程序。
 
 ### 编译和打包
 
-创建AIR视频播放器的最后一步是编译和打包它。首先通过将 `AIRVideoPlayer.mxml` 文件编译成SWF来开始打包您的应用程序。
+创建 AIR 视频播放器的最后一步是编译和打包它。首先通过将`AIRVideoPlayer.mxml`文件编译成 SWF 来开始打包您的应用程序。
 
-打开命令提示符，导航到AIR视频播放器的工作目录，输入以下内容并按Enter键：
+打开命令提示符，导航到 AIR 视频播放器的工作目录，输入以下内容并按 Enter 键：
 
-```
+```bash
 > amxmlc AIRVideoPlayer.mxml
 ```
 
-在命令提示符仍指向工作目录的情况下，通过输入以下内容并按Enter键，将小部件打包为AIR安装程序：
+在命令提示符仍指向工作目录的情况下，通过输入以下内容并按 Enter 键，将小部件打包为 AIR 安装程序：
 
-```
+```bash
 > adt -package AIRVideoPlayer AIRVideoPlayer-app.xml AIRVideoPlayer.swf
 ```
 
-包创建完成后，导航到您的工作目录。如果视频播放器打包正确，您应该有一个 `AIRVideoPlayer.air` 文件。执行 `AIRVideoPlayer.air` 包以将应用程序安装到您的硬盘驱动器上。安装后，打开它，将附带的视频拖放到您的新视频播放器中，即可享受观看。
+
+
+包创建完成后，导航到您的工作目录。如果视频播放器打包正确，您应该有一个`AIRVideoPlayer.air`文件。执行`AIRVideoPlayer.air`包以将应用程序安装到您的硬盘驱动器上。安装后，打开它，将附带的视频拖放到您的新视频播放器中，即可享受观看。
 
 ## 总结
 
-本章介绍了如何利用Flex API中包含的 `VideoDisplay` 组件，结合其他组件和类（如 `HSlider` 和 `DataFormatter`），创建一个功能齐全的视频播放器组件，能够播放FLV或H.264编码的视频。它介绍了创建一个可以调整大小以适应任何视频内容宽度和高度的流体组件布局的理念。在构建视频播放器组件的过程中，本章讨论了如何创建一个可以在有或没有AIR SDK的情况下使用的播放器。
+本章介绍了如何利用Flex API中包含的`VideoDisplay`组件，结合其他组件和类（如`HSlider`和`DataFormatter`），创建一个功能齐全的视频播放器组件，能够播放FLV或H.264编码的视频。它介绍了创建一个可以调整大小以适应任何视频内容宽度和高度的流体组件布局的理念。在构建视频播放器组件的过程中，本章讨论了如何创建一个可以在有或没有AIR SDK的情况下使用的播放器。
 
-视频播放器创建完成后，您学习了如何在AIR应用程序中实现该组件。AIR视频播放器使用 `NativeDragManager` 和 `NativeMenu` 为用户提供访问播放视频的功能。最后，您学习了如何通过设置 `stage.displayState` 启用全屏视频支持，以及如何相应地调整应用程序的布局。得益于所有这些功能，AIR视频播放器能够播放多种格式，并且可以跨平台进行自定义和分发。
+视频播放器创建完成后，您学习了如何在AIR应用程序中实现该组件。AIR视频播放器使用`NativeDragManager`和`NativeMenu`为用户提供访问播放视频的功能。最后，您学习了如何通过设置`stage.displayState`启用全屏视频支持，以及如何相应地调整应用程序的布局。得益于所有这些功能，AIR视频播放器能够播放多种格式，并且可以跨平台进行自定义和分发。
 
-正如本章前面所述，这个播放器的目的不一定是创建一个功能繁杂的视频播放器，而是为您创建一个可以改进的良好基础。您可以以此应用程序为基础，添加诸如播放列表支持、自定义皮肤、自定义滑块（替代 `HSlider`）、多窗口支持、控制器效果（如全屏时淡入淡出）或任何您能想到的功能。这个视频播放器可供您在Flex或AIR中使用；它留给您或许能创造出下一个QuickTime杀手级应用程序。
-
-446
-
-
+正如本章前面所述，这个播放器的目的不一定是创建一个功能繁杂的视频播放器，而是为您创建一个可以改进的良好基础。您可以以此应用程序为基础，添加诸如播放列表支持、自定义皮肤、自定义滑块（替代`HSlider`）、多窗口支持、控制器效果（如全屏时淡入淡出）或任何您能想到的功能。这个视频播放器可供您在Flex或AIR中使用；它留给您或许能创造出下一个QuickTime杀手级应用程序。
 
 # 索引
 
@@ -20224,8 +22767,6 @@ AIR视频播放器已接近完成。最后一步是创建一个描述符文件�
 - **getElement()方法**，53
 - **getEncodedBitmap()方法**，198
 
-
-
 ## L
 
 **位置（地图应用）**
@@ -20515,8 +23056,6 @@ AIR视频播放器已接近完成。最后一步是创建一个描述符文件�
 -   屏幕
     -   Blogger Agent界面，335–336
     -   Screen类（AIR API），414
-
-
 
 ## SlideImage 类，380–381
 
@@ -21012,8 +23551,6 @@ Yahoo! Maps AJAX API，286，312–313
 ## 提升您的职业生涯
 
 提升您的技能
-
-
 
 Adobe Integrated Runtime (AIR) 革新了富互联网应用（RIAs）的部署方式。AIR 支持两种主要技术——Flash 和 HTML/Ajax，旨在让每位 Web 开发者都能轻松参与桌面应用开发。本书将指导你搭建实用的开发环境，并通过十一个完整的 AIR 应用实例，附带源代码，为你展示如何从零构建或自定义这些应用。
 

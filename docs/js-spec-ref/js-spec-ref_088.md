@@ -1,15 +1,7 @@
+
 # 11.4 D3.js
 
 D3.js 是一个用于网页作图、生成互动图形的 JavaScript 函数库。它提供一个 d3 对象，所有方法都通过这个对象调用。
-
-*   操作网页元素
-*   生成 svg 元素
-*   生成图形
-    *   选中对象集
-    *   绑定数据
-    *   操作 SVG 图形
-    *   加载 XML 文件
-    *   参考链接
 
 ## 操作网页元素
 
@@ -48,7 +40,7 @@ d3.selectAll("section")
 
 ## 生成 svg 元素
 
-`D3 作图需要 svg 元素，可以用 JavaScript 代码动态生成。
+D3 作图需要 svg 元素，可以用 JavaScript 代码动态生成。
 
 ```js
 var v = d3.select("#graph")
@@ -152,4 +144,5 @@ d3.xml('example', 'image/svg+xml', function (error, data) {
 ## 参考链接
 
 *   Mike Bostock, [Let’s Make a Bar Chart](http://bost.ocks.org/mike/bar/)
+
 *   Dana Silver, [The d3.js Bar Chart Tutorials with Github Data](http://danasilver.org/2013/12/31/d3-github-language-stats/)

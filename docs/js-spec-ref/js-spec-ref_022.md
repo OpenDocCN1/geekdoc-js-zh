@@ -1,26 +1,5 @@
-# 3.7 Date 对象
 
-*   概述
-    *   Date()
-    *   new Date()
-    *   new Date(milliseconds)
-    *   new Date(datestring)
-    *   [new Date(year, month [, day, hours, minutes, seconds, ms])](#new+date%28year%2C+month+%5B%2C+day%2C+hours%2C+minutes%2C+seconds%2C+ms%5D%29)
-    *   日期的运算
-    *   Date 对象的方法
-        *   Date.now()
-        *   Date.parse()
-        *   Date.UTC()
-    *   Date 实例对象的方法
-        *   Date.prototype.toString()
-        *   Date.prototype.toUTCString()，Date.prototype.toISOString()
-        *   Date.prototype.toDateString()，Date.prototype.toTimeString()
-        *   Date.prototype.toLocalDateString()，Date.prototype.toLocalTimeString()
-        *   Date.prototype.valueOf()
-        *   Date.prototype.get 系列方法
-        *   Date.prototype.set 系列方法
-        *   Date.prototype.toJSON()
-    *   参考链接
+# 3.7 Date 对象
 
 ## 概述
 
@@ -170,10 +149,15 @@ window.performance.now()
 parse 方法用来解析日期字符串，返回距离 1970 年 1 月 1 日 00:00:00 的毫秒数。日期字符串的格式应该完全或者部分符合 RFC 2822 和 ISO 8061，即 YYYY-MM-DDTHH:mm:ss.sssZ 格式，其中最后的 Z 表示时区，是可选的。
 
 *   YYYY
+
 *   YYYY-MM
+
 *   YYYY-MM-DD
+
 *   THH:mm（比如“T12:00”）
+
 *   THH:mm:ss
+
 *   THH:mm:ss.sss
 
 请看例子。
@@ -269,7 +253,7 @@ today.toLocaleDateString()
 // "2013 年 3 月 9 日"
 
 today.toLocaleTimeString()
-"上午 8:46:54"
+// "上午 8:46:54"
 ```
 
 ### Date.prototype.valueOf()
@@ -301,14 +285,23 @@ var elapsed = end.getTime() - start.getTime();
 Date 对象提供了一系列 get 方法，用来获取实例对象某个方面的值。
 
 *   Date.prototype.getTime()：返回实例对象距离 1970 年 1 月 1 日 00:00:00 对应的毫秒数，等同于 valueOf 方法。
+
 *   Date.prototype.getDate()：返回实例对象对应每个月的几号（从 1 开始）。
+
 *   Date.prototype.getDay()：返回星期，星期日为 0，星期一为 1，以此类推。
+
 *   Date.prototype.getFullYear()：返回四位的年份。
+
 *   Date.prototype.getMonth()：返回月份（0 表示 1 月，11 表示 12 月）。
+
 *   Date.prototype.getHours()：返回小时（0-23）。
+
 *   Date.prototype.getMilliseconds()：返回毫秒（0-999）。
+
 *   Date.prototype.getMinutes()：返回分钟（0-59）。
+
 *   Date.prototype.getSeconds()：返回秒（0-59）。
+
 *   Date.prototype.getTimezoneOffset()：返回当前时间与 UTC 的时区差异，以分钟表示，返回结果考虑到了夏令时因素。
 
 ```js
@@ -327,12 +320,19 @@ d.getTimezoneOffset() // -480
 Date 对象提供了一系列 set 方法，用来设置实例对象的各个方面。
 
 *   Date.prototype.setDate(date)：设置实例对象对应的每个月的几号（1-31），返回改变后毫秒时间戳。
+
 *   Date.prototype.setFullYear(year [, month, date])：设置四位年份。
+
 *   Date.prototype.setHours(hour [, min, sec, ms])：设置小时（0-23）。
+
 *   Date.prototype.setMilliseconds()：设置毫秒（0-999）。
+
 *   Date.prototype.setMinutes(min [, sec, ms])：设置分钟（0-59）。
+
 *   Date.prototype.setMonth(month [, date])：设置月份（0-11）。
+
 *   Date.prototype.setSeconds(sec [, ms])：设置秒（0-59）。
+
 *   Date.prototype.setTime(milliseconds)：设置毫秒时间戳。
 
 ```js
@@ -392,4 +392,5 @@ var backToDate = new Date(jsonDate);
 ## 参考链接
 
 *   Rakhitha Nimesh，[Getting Started with the Date Object](http://jspro.com/raw-javascript/beginners-guide-to-javascript-date-and-time/)
+
 *   Ilya Kantor, [Date/Time functions](http://javascript.info/tutorial/datetime-functions)

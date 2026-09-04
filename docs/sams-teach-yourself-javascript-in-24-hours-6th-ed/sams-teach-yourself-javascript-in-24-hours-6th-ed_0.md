@@ -1,6 +1,5 @@
-# 24 小时自学 JavaScript [6版]
 
-
+# 24 小时自学 JavaScript（第 6 版）
 
 ![](img/cover01010.jpeg)
 
@@ -10,41 +9,29 @@ ePUB 是一种开放的行业标准电子书格式。然而，不同的阅读设
 
 许多书籍包含编程代码或配置示例。为了优化这些元素的显示效果，请以单栏横屏模式查看电子书，并将字体大小调整为最小设置。除了以流式文本格式呈现代码和配置外，我们还包含了代码图像，以模仿印刷本中的呈现；因此，当流式格式可能会影响代码列表的显示时，您将看到“点击此处查看代码图像”链接。点击链接即可查看高保真代码图像。要返回上一页，请点击设备或应用上的“返回”按钮。
 
+![Image](img/image00364.jpeg)
 
-
-
-![Image](img/image00364.jpeg) 800 East 96th Street, Indianapolis, Indiana, 46240 USA
+800 East 96th Street, Indianapolis, Indiana, 46240 USA
 
 **Sams Teach Yourself JavaScript in 24 Hours, Sixth Edition**
 
-
-
-
-
-
-
-
-
-
-
-
-
+```javascript
 alert(answer * 1); // 将显示 0 或 1
 ```
 
-反之亦然。JavaScript 将任何非零值解释为 `true`，将零解释为 `false`。JavaScript 将以下所有值解释为 false：
+反之亦然。JavaScript 将任何非零值解释为 `true`，将零解释为 `false`。JavaScript 将以下所有值解释为 `false`：
 
-![Image](img/image00365.jpeg) 布尔 false（你难道不是吗？）
+![Image](img/image00365.jpeg) 布尔 `false`（你难道不是吗？）
 
 ![Image](img/image00365.jpeg) `undefined`
 
 ![Image](img/image00365.jpeg) `null`
 
-![Image](img/image00365.jpeg) 0 (零)
+![Image](img/image00365.jpeg) `0`（零）
 
 ![Image](img/image00365.jpeg) `NaN`
 
-![Image](img/image00365.jpeg) “” (空字符串)
+![Image](img/image00365.jpeg) `""`（空字符串）
 
 ### 提示
 
@@ -56,7 +43,6 @@ alert(answer * 1); // 将显示 0 或 1
 
 ```javascript
 function detectSpam(input) {
-
 }
 ```
 
@@ -79,6 +65,7 @@ function detectSpam(input) {
 ```javascript
 function detectSpam(input) {
     input = input.toLowerCase();
+
     return input.indexOf("fake");
 }
 ```
@@ -101,7 +88,9 @@ function detectSpam(input) {
         input = input.toLowerCase();
         return input.indexOf("fake");
     }
+
     var mystring = prompt("Enter a string");
+
     alert(detectSpam(mystring));
 </script>
 </body>
@@ -110,20 +99,21 @@ function detectSpam(input) {
 
 在浏览器中打开该页面，如[part0049.xhtml_p075pro01a 所示]。
 
-### 非运算符 (!)
+### 非运算符（`!`）
 
 JavaScript 将放在布尔变量之前的 `!` 字符解释为“非”，即相反。看这里：
 
 ```javascript
 var success = false;
-alert(!success); //  'true'
+
+alert(!success); // 'true'
 ```
 
 ### 注意
 
-JavaScript 还有两个关键字——`null` 和 `undefined`。通常当你想要某个值有一个有效但不存在的值时，对其赋值 `null`。对于数值，`null` 等于零；对于字符串，它是空字符串("");对于布尔值，它意味着 false。
+JavaScript 还有两个关键字——`null` 和 `undefined`。通常当你想要某个值有一个有效但不存在的值时，对其赋值 `null`。对于数值，`null` 等于零；对于字符串，它是空字符串（`""`）；对于布尔值，它意味着 `false`。
 
-与 `null` 不同，`undefined` 不是关键字。它是一个预定义的全局变量，用于存储已声明但未赋值变量的值。这意味着它是 false。
+与 `null` 不同，`undefined` 不是关键字。它是一个预定义的全局变量，用于存储已声明但未赋值变量的值。这意味着它是 `false`。
 
 ### 总结
 
@@ -131,13 +121,13 @@ JavaScript 还有两个关键字——`null` 和 `undefined`。通常当你想�
 
 ### 问答
 
-问：JavaScript 字符串的最大长度是多少？
+**问：** JavaScript 字符串的最大长度是多少？
 
-答：JavaScript 规范没有规定最大长度；相反取决于浏览器和操作系统。对于某些实现，它取决于可用内存。
+**答：** JavaScript 规范没有规定最大长度；相反取决于浏览器和操作系统。对于某些实现，它取决于可用内存。
 
-问：JavaScript 是否有表示单个字符的数据类型？
+**问：** JavaScript 是否有表示单个字符的数据类型？
 
-答：不，与其他语言不同，JavaScript 没有表示单个字符的特定数据类型。在 JavaScript 中，你创建一个只包含一个字符的字符串。
+**答：** 不，与其他语言不同，JavaScript 没有表示单个字符的特定数据类型。在 JavaScript 中，你创建一个只包含一个字符的字符串。
 
 #### 练习
 
@@ -145,36 +135,37 @@ JavaScript 还有两个关键字——`null` 和 `undefined`。通常当你想�
 
 #### 测验
 
-1。哪条语句将返回通过将字符串 `string2` 接到另一个字符串 `string1` 创建的新字符串？
+1. 哪条语句将返回通过将字符串 `string2` 接到另一个字符串 `string1` 创建的新字符串？
 
-a. `concat(string1) + concat(string2);`
-b. `string1.concat(string2);`
-c. `join(string1, string2);`
+   a. `concat(string1) + concat(string2);`
 
-2。哪条语句将变量 `paid` 赋值为布尔真？
+   b. `string1.concat(string2);`
 
-a. `var paid = true;`
-b. `var paid = "true";`
-c. `var paid.true();`
+   c. `join(string1, string2);`
 
-3。对于包含值“stupid is as stupid does”的字符串 `myString`，下列哪项将返回 -1？
+2. 哪条语句将变量 `paid` 赋值为布尔真？
 
+   a. `var paid = true;`
 
+   b. `var paid = "true";`
 
+   c. `var paid.true();`
 
-a. `myString.indexOf("stupid");`
+3. 对于包含值“stupid is as stupid does”的字符串 `myString`，下列哪项将返回 `-1`？
 
-b. `myString.lastIndexOf("stupid");`
+   a. `myString.indexOf("stupid");`
 
-c. `myString.indexOf("is stupid");`
+   b. `myString.lastIndexOf("stupid");`
+
+   c. `myString.indexOf("is stupid");`
 
 #### 答案
 
-1.** b. `string1.concat(string2);` 返回一个通过将 `string2` 连接到 `string1` 结尾创建的新字符串。
+1. **b.** `string1.concat(string2);` 返回一个通过将 `string2` 连接到 `string1` 结尾创建的新字符串。
 
-2.** a. 布尔值不应包含在引号中。
+2. **a.** 布尔值不应包含在引号中。
 
-3.** c. 子字符串 “is stupid”未出现在 `myString` 中。
+3. **c.** 子字符串“is stupid”未出现在 `myString` 中。
 
 #### 练习
 
@@ -184,8 +175,6 @@ c. `myString.indexOf("is stupid");`
 
 ## 第 6 小时：数组
 
-* * *
-
 本小时你将学习：
 
 ![Image](img/image00365.jpeg) 我们所说的 `array` 数据类型
@@ -194,17 +183,15 @@ c. `myString.indexOf("is stupid");`
 
 ![Image](img/image00365.jpeg) 如何管理数组内容
 
-* * *
-
 有时在单个变量名下存储多个变量值是有意义的。JavaScript 提供了 `array` 数据类型来帮助你做到。
 
 在本小时，你将看到 JavaScript 数组是如何创建的，以及如何在代码中操作存储在这些数组中的数据。
 
-#### 数组
+### 数组
 
 数组用于在单个变量中存储多个值的对象类型。每个值都有一个数字索引，可以包含任何类型的数据——布尔值、数字、字符串、函数、对象甚至是数组。
 
-#### 创建新数组
+### 创建新数组
 
 创建数组使用的语法你已经熟悉了；毕竟，数组仅仅是另一个对象：
 
@@ -212,17 +199,17 @@ c. `myString.indexOf("is stupid");`
 var myArray = new Array();
 ```
 
-然而，对于数组有一个简写版本——只需像这样使用方括号 (`[]`）：
+然而，对于数组有一个简写版本——只需像这样使用方括号（`[]`）：
 
 ```javascript
 var myArray = [];
 ```
 
-#### 初始化数组
+### 初始化数组
 
 你可以在创建数组时可选地向数组中预加载数据：
 
-点击此处查看代码图像
+点击此处查看代码图片
 
 ```javascript
 var myArray = ['Monday', 'Tuesday', 'Wednesday'];
@@ -232,26 +219,25 @@ var myArray = ['Monday', 'Tuesday', 'Wednesday'];
 
 ```javascript
 var myArray = [];
+
 myArray[0] = 'Monday';
 myArray[1] = 'Tuesday';
 myArray[2] = 'Wednesday';
 ```
 
-##### array.length
+#### `array.length`
 
 所有数组都有一个 `length` 属性，告诉该数组包含多少项。当你向数组中添加项或删除项时，`length` 属性会自动更新。以下代码返回前一个数组的长度：
 
 ```javascript
-myArray.length  // 返回 3
+myArray.length // 返回 3
 ```
-
-* * *
 
 ### 注意事项
 
 长度始终比最高索引大 1，即使数组中的项实际上更少。假设我们向前面的数组添加了一个新项：
 
-点击此处查看代码图像
+点击此处查看代码图片
 
 ```javascript
 myArray[50] = 'Ice cream day';
@@ -259,17 +245,11 @@ myArray[50] = 'Ice cream day';
 
 `myArray.length` 现在返回 51，尽管数组只有四个条目。
 
-* * *
-
-#### 数组方法
-
-* * *
+### 数组方法
 
 ### 注意事项
 
 某些数组方法与同名的字符串方法同名且功能几乎相同。请注意你正在处理的数据类型，否则你的脚本可能无法按照你期望的方式运行。
-
-* * *
 
 表 6.1 包含了数组对象的一些常用方法。
 
@@ -277,23 +257,25 @@ myArray[50] = 'Ice cream day';
 
 **表 6.1 一些实用的数组方法**
 
-##### concat()
+#### `concat()`
 
 你已经有了字符串拼接的经验，而 JavaScript 数组也有一个 `concat()` 方法：
 
-点击此处查看代码图像
+点击此处查看代码图片
 
 ```javascript
-var myOtherArray = ['Thursday','Friday'];
+var myOtherArray = ['Thursday', 'Friday'];
+
 var myWeek = myArray.concat(myOtherArray);
+
 // myWeek 将包含 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'
 ```
 
-##### join()
+#### `join()`
 
 为了将数组的所有元素合并成单个字符串，我们可以使用 `join()` 方法：
 
-点击此处查看代码图像
+点击此处查看代码图片
 
 ```javascript
 var longDay = myArray.join(); // 返回 MondayTuesdayWednesday
@@ -301,27 +283,25 @@ var longDay = myArray.join(); // 返回 MondayTuesdayWednesday
 
 可选地，我们可以向此方法传递一个字符串参数；传递的字符串将作为分隔符插入到返回的字符串中：
 
-点击此处查看代码图像
+点击此处查看代码图片
 
 ```javascript
 var longDay = myArray.join("-"); // 返回 Monday-Tuesday-Wednesday
 ```
 
-##### toString()
+#### `toString()`
 
 `toString()` 是 `join()` 的特殊情况——它将数组作为字符串返回，元素用逗号分隔：
 
-点击此处查看代码图像
+点击此处查看代码图片
 
 ```javascript
 var longDay = myArray.toString(); // 返回 Monday,Tuesday,Wednesday
 ```
 
-##### indexOf()
+#### `indexOf()`
 
-我们可以使用 `indexOf()` 找到特定元素在数组中首次出现的位置。该方法返回查找项的索引，如果未找到则返回 -1。
-
-
+我们可以使用 `indexOf()` 找到特定元素在数组中首次出现的位置。该方法返回查找项的索引，如果未找到则返回 `-1`。
 
 在我们处理此列表时，你可能希望参考在本节之前给出的单个字符串和数组方法的定义，以及第 4 节中对 `getElementById()` 和 `innerHTML` 的讨论，即“DOM 对象与内置对象”。
 
@@ -340,7 +320,7 @@ var sentence = "JavaScript is a really cool language";
 点击此处查看代码图片
 
 ```javascript
-var message = words.splice(3,2,"powerful");
+var message = words.splice(3, 2, "powerful");
 
 alert('Removed words: ' + message);
 ```
@@ -361,28 +341,26 @@ alert('Removed words: ' + message);
 
 **图 6.1** 数组操作脚本的输出
 
-* * *
-
 ### 总结
 
 数组是在单个变量中存储多个值的方便手段。在本节中，你学习了用于创建和操作 JavaScript 数组对象的一些方法。
 
 ### 问答
 
-**Q. JavaScript 允许关联数组吗？**
+**问：** JavaScript 允许关联数组吗？
 
-**A.** JavaScript 不直接支持关联数组（带有命名索引的数组）。但是，有方法可以使用对象来模拟它们的行为。你将在书的后面看到这些示例。
+**答：** JavaScript 不直接支持关联数组（带有命名索引的数组）。但是，有方法可以使用对象来模拟它们的行为。你将在书的后面看到这些示例。
 
-**Q. 我可以在 JavaScript 中创建多维数组吗？**
+**问：** 我可以在 JavaScript 中创建多维数组吗？
 
-**A.** 你可以创建一个数组的数组，这等同于：
+**答：** 你可以创建一个数组的数组，这等同于：
 
 点击此处查看代码图片
 
 ```javascript
-var myArray = [[1,2], [3,4], [5,6]];
+var myArray = [[1, 2], [3, 4], [5, 6]];
 
-alert(myArray[1][0]);     // 提示 '3'
+alert(myArray[1][0]); // 提示 '3'
 ```
 
 ### 工作坊
@@ -391,27 +369,25 @@ alert(myArray[1][0]);     // 提示 '3'
 
 #### 测验
 
-**1.** 如果数组 `Foo` 中索引最高的元素是 `Foo[8]`，那么 `Foo.length` 将返回什么值？
+1. 如果数组 `Foo` 中索引最高的元素是 `Foo[8]`，那么 `Foo.length` 将返回什么值？
 
-**2.** 你有一个名为 `monthNames` 的数组，包含一年中所有月份名称。你如何使用 `join()` 创建包含所有这些月份名称的字符串，且名称之间用单个空格分隔？
+2. 你有一个名为 `monthNames` 的数组，包含一年中所有月份名称。你如何使用 `join()` 创建包含所有这些月份名称的字符串，且名称之间用单个空格分隔？
 
-**3.** 如果向 `indexOf()` 传递一个未出现在其所作用数组中的值，它将返回什么值？
+3. 如果向 `indexOf()` 传递一个未出现在其所作用数组中的值，它将返回什么值？
 
 #### 答案
 
-**1.** `Foo.length` 将返回 9。
+1. `Foo.length` 将返回 9。
 
-**2.** `var names = monthNames.join(" ");`
+2. `var names = monthNames.join(" ");`
 
-**3.** 它将返回 -1。
+3. 它将返回 `-1`。
 
 #### 练习
 
 ![Image](img/image00365.jpeg) 复习具有相同方法名的数组方法和字符串方法。熟悉根据这些方法是应用于字符串还是数组，语法和操作是如何变化的。
 
-## 第 7 节。程序控制
-
-* * *
+## 第 7 节：程序控制
 
 在本节中你将学习：
 
@@ -425,8 +401,6 @@ alert(myArray[1][0]);     // 提示 '3'
 
 ![Image](img/image00365.jpeg) 在 JavaScript 中设置定时器
 
-* * *
-
 在第 5 节“数字与字符串”和第 6 节“数组”中，你快速浏览了 JavaScript 变量可以包含的数据类型。
 
 在本节中，我们将学习如何。
@@ -435,14 +409,14 @@ alert(myArray[1][0]);     // 提示 '3'
 
 正如名称所暗示，条件语句用于根据特定条件做出决策。在本节中，我们将检查值以让程序执行。
 
-#### if 语句
+#### `if` 语句
 
 在上一节中，我们讨论了布尔值，它们只能取 `true` 或 `false`。`if` 语句有多种形式，最简单的一种如下所示：
 
 点击此处查看代码图片
 
 ```javascript
-if(condition is true) then do
+if (condition is true) then do
 ```
 
 让我们来看一个简单的例子：
@@ -454,42 +428,33 @@ var message = "";
 
 var bool = true;
 
-if(bool) message = true;
+if (bool) message = true;
 ```
 
-首先我们声明一个变量 `message` 并给它赋值空字符串。然后我们声明一个新变量 `bool`，将其设置为 `true`。第三条语句测试 `bool` 的值；如果是（正如在本例所示），则为 `message` 设置新值。如果我们为 `bool` 赋值 `false` 值，对 `message` 的赋值指令将被忽略，变量 `message` 将保持为空字符串。
 
-我们可以通过否定字符 `!` 来测试布尔值 `false`：
 
-点击此处查看代码图片
+首先我们声明一个变量`message`并给它赋值空字符串。然后我们声明一个新变量`bool`，将其设置为`true`。第三条语句测试`bool`的值；如果是（正如在本例所示），则为`message`设置新值。如果我们为`bool`赋值`false`值，对`message`的赋值指令将被忽略，变量`message`将保持为空字符串。
 
-```javascript
+我们可以通过否定字符`!`来测试布尔值`false`：
+
+```
 if(!bool) message = true;
 ```
 
-显然，为了让 `!bool` 求值为 `true`，`bool` 必须为 `false`。
+显然，为了让`!bool`求值为`true`，`bool`必须为`false`。
 
-#### 比较运算符
+## 比较运算符
 
-`if()` 语句不仅限于测试布尔变量的值；相反，我们可以以表达式的形式输入到我们的 `if` 语句的括号中，JavaScript 将评估该表达式以确定其真还是假：
-
-点击此处查看代码图片
+`if()`语句不仅限于测试布尔变量的值；相反，我们可以以表达式的形式输入到我们的`if`语句的括号中，JavaScript将评估该表达式以确定其真还是假：
 
 ```javascript
 var message = "";
-
 var temperature = 60;
 
 if(temperature < 64) message = "Turn on the heating!";
 ```
 
-小于运算符 (`<`) 是 JavaScript 可用的一系列比较运算符之一。一些比较运算符列在表 7.1 中。
-
-
-
-
-
-点击此处查看代码图片
+小于运算符（`<`）是JavaScript可用的一系列比较运算符之一。一些比较运算符列在表7.1中。
 
 ```javascript
 function detectSpam(input) {
@@ -500,27 +465,20 @@ function detectSpam(input) {
 
 你可能记得，该函数目前返回一个数字，该数字对应输入字符串中单词“fake”所出现的位置。
 
-让我们修改该函数，使其根据目标单词是否找到来返回 `true` 或 `false`：
-
-点击此处查看代码图片
+让我们修改该函数，使其根据目标单词是否找到来返回`true`或`false`：
 
 ```javascript
 if(input.indexOf("fake") < 0) {
     return false;
 }
-
 return true;
 ```
 
-现在我们可以看到，如果满足条件 `input.indexOf("fake") < 0`，函数将终止并返回 `false`；否则，执行将继续到 `if()` 块之后的下一行，函数将终止并返回 `true`。
+现在我们可以看到，如果满足条件`input.indexOf("fake") < 0`，函数将终止并返回`false`；否则，执行将继续到`if()`块之后的下一行，函数将终止并返回`true`。
 
-列表 7.1 显示了完整 HTML 文件中修改后的代码。请在编辑器中创建此文件。
+列表7.1显示了完整HTML文件中修改后的代码。请在编辑器中创建此文件。
 
-### 列表 7.1 垃圾邮件检测函数
-
-点击此处查看代码图片
-
-***
+### 列表7.1 垃圾邮件检测函数
 
 ```html
 <!DOCTYPE html>
@@ -544,75 +502,57 @@ return true;
 </html>
 ```
 
-***
-
-现在让我们看看当程序给定我们在 第 5 小节 中使用的相同字符串时的表现，如图图 7.1 所示。
+现在让我们看看当程序给定我们在第5小节中使用的相同字符串时的表现，如图7.1所示。
 
 ![Image](img/image00395.jpeg)
 
-**图 7.1** 输入字符串
+**图7.1** 输入字符串
 
-如你从图 7.2 中所示，警告对话框现在仅报告 `true`，而不是显示字符串中找到目标单词的位置。在浏览器中重新加载文件并再次尝试一个不包含“fake”单词的字符串，以确认检测器返回 `false`。
+如你从图7.2中所示，警告对话框现在仅报告`true`，而不是显示字符串中找到目标单词的位置。在浏览器中重新加载文件并再次尝试一个不包含“fake”单词的字符串，以确认检测器返回`false`。
 
 ![Image](img/image00396.jpeg)
 
-**图 7.2** 垃圾邮件检测器报告 `true`
+**图7.2** 垃圾邮件检测器报告`true`
 
-***
+## 等值性测试
 
-### 等值性测试
-
-在上一个示例中，我们如何测试温度是否恰好等于 64 度呢？记住，我们使用等号 (`=`) 来为变量赋值，因此这段代码的作用可能不像预期的那样工作：
+在上一个示例中，我们如何测试温度是否恰好等于64度呢？记住，我们使用等号（`=`）来为变量赋值，因此这段代码的作用可能不像预期的那样工作：
 
 ```javascript
 if(temperature = 64) ....
 ```
 
-如果我们使用这条语句，括号内的表达式将由 JavaScript 进行求值，我们的变量 `temperature` 将被赋值为 64。如果这次赋值成功结束——而且为什么不应该成功呢？——那么赋值操作将向 `if()` 语句返回 `true` 值，因此语句的其余部分将执行。这完全不是我们想要的行为。
+如果我们使用这条语句，括号内的表达式将由JavaScript进行求值，我们的变量`temperature`将被赋值为64。如果这次赋值成功结束——而且为什么不应该成功呢？——那么赋值操作将向`if()`语句返回`true`值，因此语句的其余部分将执行。这完全不是我们想要的行为。
 
-相反，为了测试等值性，我们必须使用双等号 (`==`)：
-
-点击此处查看代码图片
+相反，为了测试等值性，我们必须使用双等号（`==`）：
 
 ```javascript
 if(temperature == 64) message = "64 degrees and holding!";
 ```
 
-***
-
 ### 注意事项
 
-如果你需要测试两个项目在值和类型上是否相等，JavaScript 有一个运算符 `===` 来执行此测试。例如：
-
-点击此处查看代码图片
+如果你需要测试两个项目在值和类型上是否相等，JavaScript有一个运算符`===`来执行此测试。例如：
 
 ```javascript
 var x = 2; // 分配一个数值
-
 if(x == "2") ... // true, 因为字符串 "2" 被解释为数字
 if(x === "2") ...// false, 字符串不是数值
 ```
 
-这在测试返回值是否真的为 `false`，或者只是一个“虚假”（falsy，可以被解释为 `false`）的值时非常有用：
-
-点击此处查看代码图片
+这在测试返回值是否真的为`false`，或者只是一个“虚假”（falsy，可以被解释为`false`）的值时非常有用：
 
 ```javascript
 var x = 0; // 分配值为零
-
 if(!x) ... // 求值为为 true
 if(x === false)..// 求值为 false
 ```
 
-***
-
-### 关于 if() 的更多信息
+## 关于if()的更多信息
 
 之前的示例在满足测试条件时仅执行单条语句。如果我们想做更多操作呢；例如，执行多条语句？
 
-为了实现这一点，我们只需用大括号 (`{}`) 将我们所有希望在条件满足时执行的代码语句括起来即可：
-
-点击此处查看代码图片
+为了实现这一点，我们只需用大括号（`{}`）将我们所有希望在条件满足时执行的代码语句括起来即可：
 
 ```javascript
 if(temperature < 64) {
@@ -621,9 +561,7 @@ if(temperature < 64) {
 }
 ```
 
-我们还可以为 `if` 语句添加一个子句，其中包含在条件不满足条件时我们想要执行的代码。为了实现这一点，我们使用 `else` 结构：
-
-点击此处查看代码图片
+我们还可以为`if`语句添加一个子句，其中包含在条件不满足条件时我们想要执行的代码。为了实现这一点，我们使用`else`结构：
 
 ```javascript
 if(temperature < 64) {
@@ -635,33 +573,23 @@ if(temperature < 64) {
 }
 ```
 
-***
-
 ### 提示
 
-`if()` 语句存在简写形式：
-
-点击此处查看代码图片
+`if()`语句存在简写形式：
 
 `(condition is true)? [do if true] : [do if false];`
 
 这里有一个例子：
 
-点击此处查看代码图片
-
 ```javascript
 errorMessage = count + ((count == 1)? " error ":" + "found.";
 ```
 
-在这个示例中，如果 `count` 中的错误数量恰好为 1，则 `message` 变量将包含 "1 error"。如果 `count` 的值为 0 或大于 1 的数字，`message` 变量将包含 "3 found"。
+在这个示例中，如果`count`中的错误数量恰好为1，则`message`变量将包含"1 error"。如果`count`的值为0或大于1的数字，`message`变量将包含"3 found"。
 
-***
+## 多条件测试
 
-### 多条件测试
-
-你可以使用“嵌套”的 `if` 和 `else` 组合来测试多个条件，在决定如何操作之前。让我们回到加热系统示例，如果温度过高则让我们开启风扇：
-
-点击此处查看代码图片
+你可以使用“嵌套”的`if`和`else`组合来测试多个条件，在决定如何操作之前。让我们回到加热系统示例，如果温度过高则让我们开启风扇：
 
 ```javascript
 if(temperature < 64) {
@@ -674,12 +602,11 @@ if(temperature < 64) {
     message = "Temperature is OK";
     heatingStatus = "off";
 }
+```
 
-### switch 语句
+### switch语句
 
-当我们测试同一个条件语句的不同范围结果时，可以使用的一种更简洁的语法是 JavaScript 的 `switch` 语句：
-
-点击此处查看代码图片
+当我们测试同一个条件语句的不同范围结果时，可以使用的一种更简洁的语法是JavaScript的`switch`语句：
 
 ```javascript
 switch(color) {
@@ -697,19 +624,15 @@ switch(color) {
 }
 ```
 
-`switch` 关键字在括号内包含测试的变量名称。测试本身列在大括号 `{` 和 `}` 之间。每个 `case` 语句（带有其值）后面跟着一个冒号，然后是该情况被匹配时要执行的操作列表。每个部分可以有任意数量的代码语句。
+`switch`关键字在括号内包含测试的变量名称。测试本身列在大括号`{`和`}`之间。每个`case`语句（带有其值）后面跟着一个冒号，然后是该情况被匹配时要执行的操作列表。每个部分可以有任意数量的代码语句。
 
-注意每个 case 后的 `break` 语句。它在执行完匹配情况的代码后跳转到 `switch`
+注意每个case后的`break`语句。它在执行完匹配情况的代码后跳转到`switch`语句的结束。如果省略了`break`，可能会有多个case执行其代码。可选的`default`情况在没有指定的case被匹配时执行其代码。
 
-语句的结束。如果省略了 `break`，可能会有多个 case 执行其代码。可选的 `default` 情况在没有指定的 case 被匹配时执行其代码。
+## 逻辑运算符
 
-### 逻辑运算符
+有时我们希望测试组合标准来判断是否满足了测试条件，而使用`if ... else`或`switch`语句这样做会变得复杂。
 
-有时我们希望测试组合标准来判断是否满足了测试条件，而使用 `if ... else` 或 `switch` 语句这样做会变得复杂。
-
-让我们再次回到温度控制程序。JavaScript 允许我们使用逻辑与 (`&&`) 和逻辑或 (`||`) 来组合条件。这里有一种方法：
-
-点击此处查看代码图片
+让我们再次回到温度控制程序。JavaScript允许我们使用逻辑与（`&&`）和逻辑或（`||`）来组合条件。这里有一种方法：
 
 ```javascript
 if(temperature >= 64 && temperature <= 72) {
@@ -719,14 +642,9 @@ if(temperature >= 64 && temperature <= 72) {
 }
 ```
 
-我们可以将前面的条件读为“如果温度大于或等于 64 且温度小于或等于 72”。
+我们可以将前面的条件读为“如果温度大于或等于64且温度小于或等于72”。
 
-
-
-
-我们可以使用 `OR` 代替 `AND` 来完全相同的功能：
-
-点击此处查看代码图片
+我们可以使用`OR`代替`AND`来完全相同的功能：
 
 ```javascript
 if(temperature < 64 || temperature > 72) {
@@ -736,21 +654,19 @@ if(temperature < 64 || temperature > 72) {
 }
 ```
 
-在这里我们反转了执行测试的方式；当温度在范围`之外`时，我们的条件语句就会被满足，并且可以读作“如果温度小于 64 或大于 72”。
+在这里我们反转了执行测试的方式；当温度在范围`之外`时，我们的条件语句就会被满足，并且可以读作“如果温度小于64或大于72”。
 
-### 循环与控制结构
+## 循环与控制结构
 
-`if` 语句可以被视为程序执行中的一个 `junction`（分支点）。根据对数据进行测试的结果，程序在执行语句时可能会走某一条或另一条路径。
+`if`语句可以被视为程序执行中的一个`junction`（分支点）。根据对数据进行测试的结果，程序在执行语句时可能会走某一条或另一条路径。
 
-然而，在许多情况下，我们可能希望在继续程序的其余部分之前执行某些操作。如果重复次数是固定的，我们或许可以通过多个 `if` 语句和递增计数器变量来实现，尽管代码会变得杂乱且难以阅读。但如果我们不知道需要重复这段代码多少次呢？因为重复次数取决于（例如）变量值的变化。
+然而，在许多情况下，我们可能希望在继续程序的其余部分之前执行某些操作。如果重复次数是固定的，我们或许可以通过多个`if`语句和递增计数器变量来实现，尽管代码会变得杂乱且难以阅读。但如果我们不知道需要重复这段代码多少次呢？因为重复次数取决于（例如）变量值的变化。
 
-JavaScript 拥有各种内置循环结构，允许我们实现此类目标。
+JavaScript拥有各种内置循环结构，允许我们实现此类目标。
 
-#### while
+### while
 
-`while` 语句的语法与 `if` 语句的语法非常相似：
-
-点击此处查看代码图片
+`while`语句的语法与`if`语句的语法非常相似：
 
 ```javascript
 while(this condition is true) {
@@ -758,7 +674,7 @@ while(this condition is true) {
 }
 ```
 
-`while` 语句的工作方式`也和 `if` 一样。唯一的区别是，在完成条件语句后，`while` 会返回并再次测试条件。只要条件一直为 `true`，`while` 就会一直执行条件代码。这里有一个示例：
+`while`语句的工作方式`也和`if`一样。唯一的区别是，在完成条件语句后，`while`会返回并再次测试条件。只要条件一直为`true`，`while`就会一直执行条件代码。这里有一个示例：
 
 ```javascript
 var count = 10;
@@ -771,19 +687,15 @@ while(count > 0) {
 alert(sum);
 ```
 
-每当 `while` 将条件求值为 `true` 时，大括号中的语句就会反复执行，在循环的每次轮次中，都将 `count` 的当前值加到变量 `sum` 上。
+每当`while`将条件求值为`true`时，大括号中的语句就会反复执行，在循环的每次轮次中，都将`count`的当前值加到变量`sum`上。
 
-当 `count` 递减到零时，条件不再成立，循环停止；程序操作随后从闭大括号之后继续执行。到此时，变量 `sum` 的值为：
-
-点击此处查看代码图片
+当`count`递减到零时，条件不再成立，循环停止；程序操作随后从闭大括号之后继续执行。到此时，变量`sum`的值为：
 
 10 + 9 + 8 + 7 + 6 + 5 + 4 + 3 + 2 + 1 = 55
 
-#### do ... while
+### do ... while
 
-`do ... while` 结构在操作上与 `while` 相似，但有一个重要的区别。其语法如下：
-
-点击此处查看代码图片
+`do ... while`结构在操作上与`while`相似，但有一个重要的区别。其语法如下：
 
 ```javascript
 do {
@@ -791,13 +703,11 @@ do {
 } while(this condition is true)
 ```
 
-这里真正的区别在于，由于 `while` 子句出现在大括号`之后`，因此条件语句列表在评估 `while` 子句`之前`会先执行一次。因此，`do ... while` 子句中的语句将至少执行一次。
+这里真正的区别在于，由于`while`子句出现在大括号`之后`，因此条件语句列表在评估`while`子句`之前`会先执行一次。因此，`do ... while`子句中的语句将至少执行一次。
 
-#### for
+### for
 
-`for` 循环是另一种操作上与 `while` 相似的循环，但语法更全面。通过 `for` 循环，我们可以在一条语句中指定初始条件、测试条件（用于结束循环）以及每次通过循环时更改计数器变量的方法。看下语法：
-
-点击此处查看代码图片
+`for`循环是另一种操作上与`while`相似的循环，但语法更全面。通过`for`循环，我们可以在一条语句中指定初始条件、测试条件（用于结束循环）以及每次通过循环时更改计数器变量的方法。看下语法：
 
 ```javascript
 for(x=0; x<10; x++) {
@@ -807,11 +717,9 @@ for(x=0; x<10; x++) {
 
 我们将其解释为：
 
-“对于初始设为 0 的 x，只要 x 小于 10，并且在每次通过循环时将 x 增加 1，就执行条件语句。”
+“对于初始设为0的x，只要x小于10，并且在每次通过循环时将x增加1，就执行条件语句。”
 
-让我们重写一下在看 `while` 循环时给出的示例，但这次使用 `for` 循环：
-
-点击此处查看代码图片
+让我们重写一下在看`while`循环时给出的示例，但这次使用`for`循环：
 
 ```javascript
 var count;
@@ -822,9 +730,7 @@ for(count = 10; count > 0; count--) {
 }
 ```
 
-如果计数器变量之前没有声明过，那么在 `for` 语句内部使用 `var` 关键字声明它通常比在外部声明更方便：
-
-点击此处查看代码图片
+如果计数器变量之前没有声明过，那么在`for`语句内部使用`var`关键字声明它通常比在外部声明更方便：
 
 ```javascript
 var sum = 0;
@@ -834,15 +740,13 @@ for(var count = 10; count > 0; count--) {
 alert(sum);
 ```
 
-与上一个示例一样，循环结束后，变量 `sum` 的值为：
-
-点击此处查看代码图片
+与上一个示例一样，循环结束后，变量`sum`的值为：
 
 10 + 9 + 8 + 7 + 6 + 5 + 4 + 3 + 2 + 1 = 55
 
-#### 使用 break 退出循环
+### 使用break退出循环
 
-`break` 命令在循环中的工作方式与在 `switch` 语句中几乎相同——它在我们踢出循环并返回到闭大括号之后的下一行。这里有一个示例：
+`break`命令在循环中的工作方式与在`switch`语句中几乎相同——它在我们踢出循环并返回到闭大括号之后的下一行。这里有一个示例：
 
 ```javascript
 var count = 10;
@@ -856,13 +760,11 @@ while(count > 0) {
 alert(sum);
 ```
 
-我们之前看到，如果没有 `break`，`sum` 的值将达到
+我们之前看到，如果没有`break`，`sum`的值将达到：
 
 10 + 9 + 8 + 7 + 6 + 5 + 4 + 3 + 2 + 1 = 55
 
-注意
-
-小心无意中创建无限循环。这里有一个我们使用过的循环：
+注意：小心无意中创建无限循环。这里有一个我们使用过的循环：
 
 ```javascript
 while(count > 0) {
@@ -871,13 +773,13 @@ while(count > 0) {
 }
 ```
 
-想象一下，如果我们省略了 `count--;`，可能会导致浏览器无响应、产生 JavaScript 错误或崩溃。
+想象一下，如果我们省略了`count--;`，可能会导致浏览器无响应、产生JavaScript错误或崩溃。
 
-#### 使用 for in 遍历对象
+### 使用for in遍历对象
 
-`for...in` 循环是一种特殊的循环，用于遍历对象的属性。让我们在列表 7.2 中看看它的效果。
+`for...in`循环是一种特殊的循环，用于遍历对象的属性。让我们在列表7.2中看看它的效果。
 
-**列表 7.2 for in**
+**列表7.2 for in**
 
 ```html
 <!DOCTYPE html>
@@ -900,39 +802,35 @@ while(count > 0) {
 
 在这种循环中，我们不需要担心维护循环计数器或设计判断循环何时结束的测试。循环将为提供的对象的每个属性（在我们的示例中为每个数组项）执行一次，然后终止。
 
-运行此示例的结果所示图 7.3。
+运行此示例的结果所示图7.3。
 
 ![Image](img/image0397.jpeg)
 
-**图 7.3** 运行我们的 for in 循环的结果
+**图7.3** 运行我们的for in循环的结果
 
-### 设置和使用计时器
+## 设置和使用计时器
+
+
 
 在某些情况下，你希望为 JavaScript 代码的执行设置特定的延迟。这在编写用户界面程序时特别常见；例如，你可能希望在移除消息之前显示一段时间。
 
-为了帮助你，JavaScript 两个非常有用的方法：`setTimeout()` 和 `setInterval()`。
+为了帮助你，JavaScript 提供了两个非常有用的方法：`setTimeout()` 和 `setInterval()`。
 
-* *
+> **注意**
+> 
+> `setTimeout()` 和 `clearTimeout()` 都是 HTML DOM `window` 对象的方法。
 
-注意
-
-`setTimeout()` 和 `clearTimeout()` 都是 HTML DOM `window` 对象的方法。
-
-* *
-
-#### setTimeout()
+### `setTimeout()`
 
 `setTimeout(action, delay)` 方法会在第二个参数指定的毫秒数后，调用第一个参数传递的函数（或求值表达式）。你可以使用它，例如在固定的时间内显示给定配置的元素：
 
-
-
-
-
 点击此处查看代码图片
 
-<div id="id1">我快消失了！</div>>
+```html
+<div id="id1">我快消失了！</div>
+```
 
-假设你的页面包含了上述 `<div>` 元素。如果你将以下代码放入页面 `<head>` 部分的 `<script>` 元素中，函数 `hide()` 将在页面加载完成后 3 秒后执行，使 `<div>` 元素变得不可：
+假设你的页面包含了上述 `<div>` 元素。如果你将以下代码放入页面 `<head>` 部分的 `<script>` 元素中，函数 `hide()` 将在页面加载完成后 3 秒后执行，使 `<div>` 元素变得不可见：
 
 点击此处查看代码图片
 
@@ -946,7 +844,7 @@ window.onload = function() {
 }
 ```
 
-`setTimeout()` 方法会返回一个值。如果你以后想取消该定时器函数，可以通过该返回的值传递给 `clearTimeout()` 方法来引用它：
+`setTimeout()` 方法会返回一个值。如果你以后想取消该定时器函数，可以通过将该返回值传递给 `clearTimeout()` 方法来引用它：
 
 点击此处查看代码图片
 
@@ -955,7 +853,7 @@ var timer1 = setTimeout("hide('id1')", 3000);
 clearTimeout(timer1);
 ```
 
-### setInterval()
+### `setInterval()`
 
 `setInterval(action, delay)` 方法的工作原理与 `setTimeout()` 类似，但它不是在执行作为第一个参数的语句之前设置单次延迟，而是重复执行该语句，每次执行之间的延迟对应第二个参数中指定的毫秒数。
 
@@ -1024,219 +922,27 @@ clearInterval(timer1);
 
 #### 练习
 
-![Image](img/image00365) 在第 4 小节](#part0013.xhtml_ch04) DOM 对象和内置对象，你学习了如何获取当前的星期几。编写一个程序，使用 `switch` 语句根据日期输出不同的消息。
+![Image](img/image00365) 在第 4 小节（DOM 对象和内置对象）中，你学习了如何获取当前的星期几。编写一个程序，使用 `switch` 语句根据日期输出不同的消息。
 
-![Image](img/image00365) 修改第 7.2 小节](#part0017.xhtml_ch07lis02) 以列出月份而不是星期。如何修改代码列出从 1 月开始的月份而不是 0？
+![Image](img/image00365) 修改第 7.2 小节（`part0017.xhtml_ch07lis02`）的代码以列出月份而不是星期。如何修改代码以列出从 1 月开始的月份而不是 0？
 
 # 第三部分：对象
 
 ## 第 8 小节：面向对象编程
 
-* 你将学习：
+你将学习：
 
 ![Image](img/image00365) 什么是面向对象编程
 
 ![Image](img/image00365) 创建对象的两种方法
 
-![Image](img/image00365) 三种创建对象的方法
-
-![Image](img/image00365) 四种创建对象的方法
-
-![Image](img/image00365) 五种创建对象的方法
-
-![Image](img/image00365) 六种创建对象的方法
-
-![Image](img/image00365) 七种创建对象的方法
-
-![Image](img/image00365) 八种创建对象的方法
-
-![Image](img/image00365) 九种创建对象的方法
-
-![Image](img/image00365) 十种创建对象的方法
-
-![Image](img/image00365) 十一种创建对象的方法
-
-![Image](img/image00365) 十二种创建对象的方法
-
-![Image](img/image00365) 十三种创建对象的方法
-
-![Image](img/image00365) 十四种创建对象的方法
-
-![Image](img/image00365) 十五种创建对象的方法
-
-![Image](img/image00365) 十六种创建对象的方法
-
-![Image](img/image00365) 十七种创建对象的方法
-
-![Image](img/image00365) 十八种创建对象的方法
-
-![Image](img/image00365) 十九种创建对象的方法
-
-![Image](img/image00365) 二十种创建对象的方法
-
-![Image](img/image00365) 二十一种创建对象的方法
-
-![Image](img/image00365) 二十二种创建对象的方法
-
-![Image](img/image00365) 二十三种创建对象的方法
-
-![Image](img/image00365) 二十四种创建对象的方法
-
-![Image](img/image00365) 二十五种创建对象的方法
-
-![Image](img/image00365) 二六种创建对象的方法
-
-![Image](img/image00365) 二十七种创建对象的方法
-
-![Image](img/image00365) 二十八种创建对象的方法
-
-![Image](img/image00365) 二十九种创建对象的方法
-
-![Image](img/image00365) 三十种创建对象的方法
-
-![Image](img/image00365) 三十一种创建对象的方法
-
-![Image](img/image00365) 三十二种创建对象的方法
-
-![Image](img/image00365) 三十三种创建对象的方法
-
-![Image](img/image00365) 三十四种创建对象的方法
-
-![Image](img/image00365) 三十五种创建对象的方法
-
-![Image](img/image00365) 三六种创建对象的方法
-
-![Image](img/image00365) 三十七种创建对象的方法
-
-![Image](img/image00365) 三十八种创建对象的方法
-
-![Image](img/image00365) 三十九种创建对象的方法
-
-![Image](img/image00365) 四十种创建对象的方法
-
-![Image](img/image00365) 四十一种创建对象的方法
-
-![Image](img/image00365) 四十二种创建对象的方法
-
-![Image](img/image00365) 四十三种创建对象的方法
-
-![Image](img/image00365) 四十四种创建对象的方法
-
-![Image](img/image00365) 四十五种创建对象的方法
-
-![Image](img/image00365) 四六种创建对象的方法
-
-![Image](img/image00365) 四十七种创建对象的方法
-
-![Image](img/image00365) 四十八种创建对象的方法
-
-![Image](img/image00365) 四十九种创建对象的方法
-
-![Image](img/image00365) 五十种创建对象的方法
-
-![Image](img/image00365) 五十一种创建对象的方法
-
-![Image](img/image00365) 五十二种创建对象的方法
-
-![Image](img/image00365) 五十三种创建对象的方法
-
-![Image](img/image00365) 五十四种创建对象的方法
-
-![Image](img/image00365) 五十五种创建对象的方法
-
-![Image](img/image00365) 五六种创建对象的方法
-
-![Image](img/image00365) 五十七种创建对象的方法
-
-![Image](img/image00365) 五十八种创建对象的方法
-
-![Image](img/image00365) 五十九种创建对象的方法
-
-![Image](img/image00365) 六十种创建对象的方法
-
-![Image](img/image00365) 六十一种创建对象的方法
-
-![Image](img/image00365) 六十二种创建对象的方法
-
-![Image](img/image00365) 六十三种创建对象的方法
-
-![Image](img/image00365) 六十四种创建对象的方法
-
-![Image](img/image00365) 六十五种创建对象的方法
-
-![Image](img/image00365) 六六种创建对象的方法
-
-![Image](img/image00365) 六十七种创建对象的方法
-
-![Image](img/image00365) 六十八种创建对象的方法
-
-![Image](img/image00365) 六十九种创建对象的方法
-
-![Image](img/image00365) 七十种创建对象的方法
-
-![Image](img/image00365) 七十一种创建对象的方法
-
-![Image](img/image00365) 七十二种创建对象的方法
-
-![Image](img/image00365) 七十三种创建对象的方法
-
-![Image](img/image00365) 七十四种创建对象的方法
-
-![Image](img/image00365) 七十五种创建对象的方法
-
-![Image](img/image00365) 七六种创建对象的方法
-
-![Image](img/image00365) 七十七种创建对象的方法
-
-![Image](img/image00365) 七十八种创建对象的方法
-
-![Image](img/image00365) 七十九种创建对象的方法
-
-![Image](img/image00365) 八十种创建对象的方法
-
-![Image](img/image00365) 八十一种创建对象的方法
-
-![Image](img/image00365) 八十二种创建对象的方法
-
-![Image](img/image00365) 八十三种创建对象的方法
-
-![Image](img/image00365) 八十四种创建对象的方法
-
-![Image](img/image00365) 八十五种创建对象的方法
-
-![Image](img/image00365) 八六种创建对象的方法
-
-![Image](img/image00365) 八十七种创建对象的方法
-
-![Image](img/image00365) 八十八种创建对象的方法
-
-![Image](img/image00365) 八十九种创建对象的方法
-
-![Image](img/image00365) 九十种创建对象的方法
-
-![Image](img/image00365) 九十一种创建对象的方法
-
-![Image](img/image00365) 九十二种创建对象的方法
-
-![Image](img/image00365) 九十三种创建对象的方法
-
-![Image](img/image00365) 九十四种创建对象的方法
-
-![Image](img/image00365) 九十五种创建对象的方法
-
-![Image](img/image00365) 九六种创建对象的方法
-
-![Image](img/image00365) 九十七种创建对象的方法
-
-![Image](img/image00365) 九十八种创建对象的方法
-
-![Image](img/image00365) 九十九种创建对象的方法
+![Image](img/image00365) 多种创建对象的方法（详见后文）
 
 随着你的程序变得越来越复杂，你需要使用有助于你进行维护的技术。在这一小时中，你将学习面向对象编程（OOP）的基础知识，这是编写清晰可靠代码的重要技术。
 
 ### 什么是面向对象编程？
 
-到目前为止，代码示例都是所谓的*过程化*编程。过程化程序的特点是将数据存储在变量中，并通过指令进行操作。每条指令（或指令列表，如函数）都可以创建、销毁或修改数据，但数据仍然保持不变。
+到目前为止，代码示例都是所谓的*过程化*编程。过程化程序的特点是将数据存储在变量中，并通过指令进行操作。每条指令（或指令列表，如函数）都可以创建、销毁或修改数据，但数据本身仍然保持为被动的实体。
 
 在面向对象编程（OOP）中，指令和它们操作的数据更加交织。OOP 是一种将程序数据概念化为离散的“事物”的方法，这些事物被称为*对象*——每个对象都有属性（数据）和方法（指令）。
 
@@ -1244,32 +950,21 @@ clearInterval(timer1);
 
 对于车队的每辆车，你都会创建一个 `Car` 对象的*实例*。
 
-* * *
-
-注意
-
-对象的实例是对象模板的一种特定应用。例如，通用对象模板 `Car` 可能有一个特定的实例，其中创建的 `Car` 对象通过特定数据识别为“蓝色 1998 福特”，另一个实例描述为“黄色 2004 尼日产”。在大多数关于面向对象编程的讨论中，这种对象模板被称为*类*。我克制了使用该术语的冲动，因为 JavaScript 并没有真正使用类，但 JavaScript 的概念*构造函数*与此相似。你将在这一小时中学习构造函数。
-
-* * *
+> **注意**
+> 
+> 对象的实例是对象模板的一种特定应用。例如，通用对象模板 `Car` 可能有一个特定的实例，其中创建的 `Car` 对象通过特定数据识别为“蓝色 1998 福特”，另一个实例描述为“黄色 2004 尼桑”。在大多数关于面向对象编程的讨论中，这种对象模板被称为*类*。我克制了使用该术语的冲动，因为 JavaScript 并没有真正使用类，但 JavaScript 的概念*构造函数*与此相似。你将在这一小时中学习构造函数。
 
 编写 OOP 代码相比过程化方法有几个优势：
 
-![Image](img/image00365) **代码重用**——首先，OOP 允许你在各种脚本中重用你的代码。你可以通过普通函数来实现这一点，但很快就会很难跟踪所有需要传递的变量、作用域和含义。相比之下，你只需要记录每个对象的属性和方法。只要它们遵循这些规则，其他程序——甚至其他程序员都可以轻松使用你的对象定义。
+- **代码重用**——首先，OOP 允许你在各种脚本中重用你的代码。你可以通过普通函数来实现这一点，但很快就会很难跟踪所有需要传递的变量、作用域和含义。相比之下，你只需要记录每个对象的属性和方法。只要它们遵循这些规则，其他程序——甚至其他程序员都可以轻松使用你的对象定义。
 
+- **继承**——在编写代码时，你往往需要一些与之前编写过的代码相似但并不完全相同的代码——甚至可能是已经在同一个应用程序中编写过的代码。通过`继承`，可以根据之前定义的对象的设计来创建新对象，并可选地对其方法和属性进行添加或修改；新对象会`继承`旧对象的属性和方法。
 
+在之前的几个小时中，你经常使用对象；要么是 JavaScript 内置的对象，要么是组成 DOM 的对象。然而，你也可以创建自己的对象，拥有它们自己的属性和函数，并在程序中使用它们。
 
-
-![Image](img/image00365.jpeg) **继承**——在编写代码时，你往往需要一些与之前编写过的代码相似但并不完全相同的代码——甚至可能是已经在同一个应用程序中编写过的代码。通过`继承`，可以根据之前定义的对象的设计来创建新对象，并可选地对其方法和属性进行添加或修改；新对象会`继承`旧对象的属性和方法。
-
-在之前的几个小时中，你经常使用对象；要么是 JavaScript 内置的对象，要么组成 DOM 的对象。然而，你也可以创建自己的对象，拥有它们自己的属性和函数，并在程序中使用它们。
-
-* * *
-
-## Note
-
-像 `C++` 和 `Smalltalk` 某些编程语言高度倾向于 OOP（面向对象编程），通常被称为面向对象语言。JavaScript 并不是其中之一，但它支持足够的核心要素，让你能够编写出实用的 OOP 代码。我们可以很容易用 OOP 的理论和实践填满整本书，但我们在这里只看基础知识。
-
-* * *
+> **注意**
+> 
+> 像 `C++` 和 `Smalltalk` 某些编程语言高度倾向于 OOP（面向对象编程），通常被称为面向对象语言。JavaScript 并不是其中之一，但它支持足够的核心要素，让你能够编写出实用的 OOP 代码。我们可以很容易用 OOP 的理论和实践填满整本书，但我们在这里只看基础知识。
 
 ### 对象创建
 
@@ -1283,7 +978,7 @@ JavaScript 有一个简单名为 `Object` 的内置对象，你可以将其作�
 myNewObject = new Object();
 ```
 
-好了，你现在有了一个全新的对象 `myNewObject`。目前，它实际上并没有做任何事情，因为它没有任何任何属性或方法。你可以通过添加一个属性来开始纠正这一点：
+好了，你现在有了一个全新的对象 `myNewObject`。目前，它实际上并没有做任何事情，因为它没有任何属性或方法。你可以通过添加一个属性来开始纠正这一点：
 
 点击此处查看代码图片
 
@@ -1303,21 +998,21 @@ function myFunc() {
 myNewObject.showInfo = myFunc;
 ```
 
-* * *
+> **警告**
+> 
+> 注意，你在这里只使用了函数名而没有带括号。你这样做是因为你正尝试给方法 `myNewObject.showInfo` 分配函数 `myFunc()` 的`定义`。
+> 
+> 如果你使用了代码：
+> 
+> 点击此处查看代码图片
 
-### Caution
 
-注意，你在这里只使用了函数名而没有带括号。你这样做是因为你正尝试给方法 `newObject.showInfo` 分配函数 `myFunc()` 的`定义`。
-
-如果你使用了代码：
-
-点击此处查看代码图片
 
 ```javascript
 myNewObject.showInfo = myFunc();
 ```
 
-你将是在要求 JavaScript `执行` `myFunc()` 并将其`返回值`赋值给 `newObject.showInfo`。
+你将是在要求 JavaScript 执行`myFunc()`并将其`返回值`赋值给`newObject.showInfo`。
 
 * * *
 
@@ -1327,9 +1022,9 @@ myNewObject.showInfo = myFunc();
 myNewObject.showInfo();
 ```
 
-#### 使用 this 关键字
+## 使用 `this` 关键字
 
-注意在之前的函数定义中 `this` 关键字的使用。你可能记得在第 2 小节“编写简单脚本”和第 3 小节“使用函数”中使用过这样的关键字。在之前的示例中，你在内联事件处理程序使用了 `this`：
+注意在之前的函数定义中`this`关键字的使用。你可能记得在第 2 小节"编写简单脚本"和第 3 小节"使用函数"中使用过这样的关键字。在之前的示例中，你在内联事件处理程序使用了`this`：
 
 点击此处查看代码图片
 
@@ -1337,11 +1032,11 @@ myNewObject.showInfo();
 <img src="tick.gif" alt="tick" onmouseover="this.src='tick2.gif';" />
 ```
 
-当像那样使用时，`this` 指的是 HTML 元素本身——在前面的例子中是 <img> 元素。当你在函数（或方法）内部使用 `this` 时，关键字 `this` 指的是函数的父级对象。
+当像那样使用时，`this`指的是 HTML 元素本身——在前面的例子中是`<img>`元素。当你在函数（或方法）内部使用`this`时，关键字`this`指的是函数的父级对象。
 
-在第一次声明函数 `myFunc()` 时，它的父级是全局对象；即 `window` 对象。`window` 对象没有名为 `info` 的属性，因此如果你直接调用 `myFunc()` 函数将会将会错误。
+在第一次声明函数`myFunc()`时，它的父级是全局对象；即`window`对象。`window`对象没有名为`info`的属性，因此如果你直接调用`myFunc()`函数将会将会错误。
 
-然而，你继续为 `myNewObject` 创建一个名为 `showInfo` 的方法，并将 `myFunc()` 赋值给该方法：
+然而，你继续为`myNewObject`创建一个名为`showInfo`的方法，并将`myFunc()`赋值给该方法：
 
 点击此处查看代码图片
 
@@ -1349,7 +1044,7 @@ myNewObject.showInfo();
 myNewObject.showInfo = myFunc;
 ```
 
-在 `showInfo()` 方法的上下文中，`myNewObject` 是父对象，因此 `this.info` 指的是属性 `myNewObject.info`。
+在`showInfo()`方法的上下文中，`myNewObject`是父对象，因此`this.info`指的是属性`myNewObject.info`。
 
 让我们看看通过列表 8.1 中的代码来稍微澄清这一点。
 
@@ -1375,9 +1070,9 @@ myNewObject.showInfo = myFunc;
 </head>
 <body>
     <img src="tick.gif" alt="tick" onmouseover="this.src='tick2.gif';" />
-    <input type="button" value="Method Call" onclick="myNewObject.showInfo(); />
-    <input type="button" value="Direct Call" onclick="myFunc(); />
-    <input type="button" value="Error Call" onclick="showInfo(); />
+    <input type="button" value="Method Call" onclick="myNewObject.showInfo();" />
+    <input type="button" value="Direct Call" onclick="myFunc();" />
+    <input type="button" value="Error Call" onclick="showInfo();" />
 </body>
 </html>
 ```
@@ -1386,37 +1081,35 @@ myNewObject.showInfo = myFunc;
 
 （注：原文文本中提供的 HTML 块是破碎的。我将根据提供的文本结构重新组织逻辑，同时遵循规则。）
 
-将此页面加载到浏览器中，你将面对三个按钮。点击第一个按钮调用新创建的 `showInfo` 方法：
+将此页面加载到浏览器中，你将面对三个按钮。点击第一个按钮调用新创建的`showInfo`方法：
 
 ```javascript
 myNewObject.showInfo();
 ```
 
-第二个按钮直接调用 `myFunc()`：
+第二个按钮直接调用`myFunc()`：
 
 ```javascript
 myFunc();
 ```
 
-第三个按钮尝试在不引用父对象的情况下调用 `showInfo`：
+第三个按钮尝试在不引用父对象的情况下调用`showInfo`：
 
 ```javascript
 showInfo();
 ```
 
-因为 `showInfo` 在对象外部不存在，JavaScript 会报告错误，如图 8.3 所示。
-
-
-
+因为`showInfo`在对象外部不存在，JavaScript 会报告错误，如图 8.3 所示。
 
 如果你认为你只需要该类型的一个对象，那么直接创建一个对象的实例是可以的。遗憾的是，如果你需要为同种类型的对象创建另一个实例，你将必须再次经历相同的过程——创建对象、添加属性、定义方法等等。
 
 ### 提示
-只有一个全局实例的对象有时被称为单例对象（singleton object）。这些对象在某些情况下很有用；例如，你程序的用户可能只有一个关联的 `userProfile` 对象，该对象可能包含他或她的用户名、最后访问页面的 URL 以及类似的属性。
 
-### 创建将具有多个实例对象的更好方法是使用**对象构造函数**（object constructor function）。对象构造函数可以创建一个“模板”，从该模板中可以实例化更多的对象。
+只有一个全局实例的对象有时被称为单例对象（singleton object）。这些对象在某些情况下很有用；例如，你程序的用户可能只有一个关联的`userProfile`对象，该对象可能包含他或她的用户名、最后访问页面的 URL 以及类似的属性。
 
-看下面的代码。与其使用 `new Object()`，你首先声明一个函数 `myObjectType()`，并在它的定义中，你可以使用 `this` 关键字添加属性和方法。
+### 创建将具有多个实例对象的更好方法是使用**对象构造函数**（object constructor function）。对象构造函数可以创建一个"模板"，从该模板中可以实例化更多的对象。
+
+看下面的代码。与其使用`new Object()`，你首先声明一个函数`myObjectType()`，并在它的定义中，你可以使用`this`关键字添加属性和方法。
 
 点击此处查看代码图像
 
@@ -1432,10 +1125,11 @@ function myObjectType(){
 }
 ```
 
-在前面的代码中，你添加了一个单一属性 `info` 和两个方法：`showInfo`（用于显示当前存储在 `info` 属性中的值）和 `setInfo`。`setInfo` 方法接收一个参数 `newInfo`，并使用它的值来覆盖 `info` 属性的值。
+在前面的代码中，你添加了一个单一属性`info`和两个方法：`showInfo`（用于显示当前存储在`info`属性中的值）和`setInfo`。`setInfo`方法接收一个参数`newInfo`，并使用它的值来覆盖`info`属性的值。
 
-#### 实例化对象
-现在，你可以根据需要为该对象类型创建**任意数量**的实例。所有实例都将拥有在 `myObjectType()` 函数中定义的属性和方法。创建一个对象实例被称为**实例化**（instantiating）。
+### 实例化对象
+
+现在，你可以根据需要为该对象类型创建**任意数量**的实例。所有实例都将拥有在`myObjectType()`函数中定义的属性和方法。创建一个对象实例被称为**实例化**（instantiating）。
 
 定义好构造函数后，你可以简单地通过使用构造函数来创建对象的实例：
 
@@ -1446,7 +1140,8 @@ var myNewObject = new myObjectType();
 ```
 
 ### 注意
-请注意，这种语法与使用 `new Object()` 完全相同，不同在于你使用了专门设计的对象类型来代替 JavaScript 的通用 `Object()`。通过这样做，你实例化了一个包含构造函数中定义的全部属性和方法的完整对象。
+
+请注意，这种语法与使用`new Object()`完全相同，不同在于你使用了专门设计的对象类型来代替 JavaScript 的通用`Object()`。通过这样做，你实例化了一个包含构造函数中定义的全部属性和方法的完整对象。
 
 现在，你可以调用它的方法并检查它的属性：
 
@@ -1459,6 +1154,7 @@ myNewObject.setInfo("Here is some new information");  // 覆盖了 info
 ```
 
 #### 属性
+
 创建多个实例非常简单，只需根据需要多次调用构造函数即可：
 
 点击此处查看代码图像
@@ -1470,9 +1166,9 @@ var myNewObject2 = new myObjectType();
 
 让我们来看它的实际运行效果。列表 8.2 中的代码定义了一个与之前描述相同的对象构造函数。
 
-实例化了两个对象的实例；显然，这两个对象最初是完全相同的。你可以通过点击标记为 Show Info 1 或 Show Info 2 的按钮之一，来检查每个对象 `info` 属性中存储的值。
+实例化了两个对象的实例；显然，这两个对象最初是完全相同的。你可以通过点击标记为 Show Info 1 或 Show Info 2 的按钮之一，来检查每个对象`info`属性中存储的值。
 
-第三个按钮调用了对象 `myNewObject2` 的 `setInfo` 方法，并将一个新的字符串字面量作为参数传递给该方法。这覆盖了对象 `myNewObject2` 中 `info` 属性中存储的值，但当然不会改变 `myNewObject`。可以通过再次使用 Show Info 1 和 Show Info 2 来检查修改后的值。
+第三个按钮调用了对象`myNewObject2`的`setInfo`方法，并将一个新的字符串字面量作为参数传递给该方法。这覆盖了对象`myNewObject2`中`info`属性中存储的值，但当然不会改变`myNewObject`。可以通过再次使用 Show Info 1 和 Show Info 2 来检查修改后的值。
 
 **列表 8.2 使用构造函数创建对象**
 
@@ -1506,7 +1202,8 @@ var myNewObject2 = new myObjectType();
 ```
 
 #### 使用构造函数
-没有什么可以阻止你在实例化时自定义你的对象，即通过向构造函数传递一个或多个参数。在接下来的代码中，构造函数的定义包含一个参数 `personName`，它被构造函数赋值给 `name` 属性。正如你在实例化对象时向构造函数传递一个或多个参数的那样：
+
+没有什么可以阻止你在实例化时自定义你的对象，即通过向构造函数传递一个或多个参数。在接下来的代码中，构造函数的定义包含一个参数`personName`，它被构造函数赋值给`name`属性。正如你在实例化对象时向构造函数传递一个或多个参数的那样：
 
 点击此处查看代码图像
 
@@ -1523,6 +1220,7 @@ var person2 = new Person('Eve');
 ```
 
 ### 提示
+
 你可以定义构造函数以接受你需要的任意数量的参数：
 
 点击此处查看代码图像
@@ -1544,10 +1242,12 @@ var car2 = new Car("yellow", "2004", "Nissan", 56350);
 使用对象的一个主要优势是可以在新语文中重用已写的代码。JavaScript 提供了一种修改对象以包含新方法或属性的方法，甚至基于现有对象创建全新的对象。这些技术分别被称为**扩展**（extending）和**继承**（inheriting）对象。
 
 #### 扩展对象
-如果你想在对象实例化后扩展你的对象的新方法和属性怎么办？你可以使用 `prototype` 关键字来实现。原型对象允许你快速添加一个属性或方法，该方法对所有实例可用。
+
+如果你想在对象实例化后扩展你的对象的新方法和属性怎么办？你可以使用`prototype`关键字来实现。原型对象允许你快速添加一个属性或方法，该方法对所有实例可用。
 
 ##### 自己尝试：使用原型扩展对象
-让我们为上一个示例中的 `Person` 对象扩展一个新方法 `sayHello`：
+
+让我们为上一个示例中的`Person`对象扩展一个新方法`sayHello`：
 
 点击此处查看代码图像
 
@@ -1586,36 +1286,33 @@ Person.prototype.sayHello = function() {
 </html>
 ```
 
-
-
-
 ```html
 <input type="button" value="Show Info on Eve" onclick="person2.showInfo()" />
 <input type="button" value="Say Hello Adam" onclick="person1.sayHello()" />
 <input type="button" value="Say Hello Eve" onclick="person2.sayHello()" />
-</</body>>
+</body>
 </html>
 ```
 
-* *
+* * *
 
 让我们来看一下代码，看看发生了什么。
 
-首先，你定义了一个构造函数，它接收一个单一参数 `personName`。在构造函数内部，定义了两个属性 `name` 和 `info` 以及一个方法 `showInfo`。
+首先，你定义了一个构造函数，它接收一个单一参数`personName`。在构造函数内部，定义了两个属性`name`和`info`以及一个方法`showInfo`。
 
-你创建了两个对象，并在实例化每个对象时使用了不同的 `name` 属性。在创建了这两个人物对象后，你决定向 `person` 对象定义中再添加一个方法 `sayHello`。你使用 `prototype` 关键字来实现这一操作。
+你创建了两个对象，并在实例化每个对象时使用了不同的`name`属性。在创建了这两个人物对象后，你决定向`person`对象定义中再添加一个方法`sayHello`。你使用`prototype`关键字来实现这一操作。
 
-将 HTML 文件加载到浏览器中。点击页面上显示的四个按钮，你会发现最初定义的 `showInfo` 方法完好无损，但新定义的 `sayHello` 方法也可以正常运行，并且该对象类型的所有现有实例可用。
+将 HTML 文件加载到浏览器中。点击页面上显示的四个按钮，你会发现最初定义的`showInfo`方法完好无损，但新定义的`sayHello`方法也可以正常运行，并且该对象类型的所有现有实例可用。
 
-* *
+* * *
 
 ### 继承
 
-`Inheritance`（继承）是从一个对象类型创建另一个对象类型的能力；新的对象类型继承旧对象的属性和方法，并可以选择拥有自己的进一步属性和方法。这可以为你节省大量工作，因为你可以先设计“通用型”的对象类，然后通过继承将它们完善为更具体的类。
+`Inheritance`（继承）是从一个对象类型创建另一个对象类型的能力；新的对象类型继承旧对象的属性和方法，并可以选择拥有自己的进一步属性和方法。这可以为你节省大量工作，因为你可以先设计"通用型"的对象类，然后通过继承将它们完善为更具体的类。
 
-JavaScript 同样使用 `prototype` 关键字来模拟继承。
+JavaScript 同样使用`prototype`关键字来模拟继承。
 
-由于 `object.prototype` 被用于添加新的方法和属性，你可以利用它将现有构造函数的**所有**方法和属性添加到到你的新对象中。
+由于`object.prototype`被用于添加新的方法和属性，你可以利用它将现有构造函数的**所有**方法和属性添加到到你的新对象中。
 
 让我们定义另一个简单的对象：
 
@@ -1634,7 +1331,7 @@ function Pet() {
 }
 ```
 
-`Pet` 对象拥有包含动物类型和宠物名称的属性，以及设置这些值的方法：
+`Pet`对象拥有包含动物类型和宠物名称的属性，以及设置这些值的方法：
 
 ```javascript
 var myCat = new Pet();
@@ -1642,9 +1339,9 @@ myCat.setAnimal = "cat";
 myCat.setName = "Sylvester";
 ```
 
-现在假设你想专门为狗创建一个对象。与其从零开始，你不如说从 `Pet` 继承一个 `Dog` 对象，但添加一个额外的属性 `breed` 和一个额外的方法 `setBreed`。
+现在假设你想专门为狗创建一个对象。与其从零开始，你不如说从`Pet`继承一个`Dog`对象，但添加一个额外的属性`breed`和一个额外的方法`setBreed`。
 
-首先，让我们创建 `Dog` 构造函数，并在其中定义新的属性和方法：
+首先，让我们创建`Dog`构造函数，并在其中定义新的属性和方法：
 
 点击此处查看代码图像
 
@@ -1657,11 +1354,13 @@ function Dog() {
 }
 ```
 
-在添加了新属性 `breed` 和新方法 `setBreed` 后，你现在可以额外继承 `Pet` 的所有属性和方法。你使用 `prototype` 关键字来实现：
+在添加了新属性`breed`和新方法`setBreed`后，你现在可以额外继承`Pet`的所有属性和方法。你使用`prototype`关键字来实现：
 
 ```javascript
 Dog.prototype = new Pet();
 ```
+
+
 
 现在你不仅可以访问 `Dog` 的属性和方法，还可以访问 `Pet` 的属性和方法：
 
@@ -1674,17 +1373,13 @@ myDog.setBreed("Greyhound");
 alert(myDog.name + " is a " + myDog.breed);
 ```
 
-* *
-
 ### 动手尝试：扩展 JavaScript 原生对象
 
-`Prototype` 也可以用于扩展 JavaScript 的内置对象。例如，你可以实现 `String.prototype.backwards` 方法，它将返回你提供的任何字符串的反转版本，如 Listing 8.4 所示。
+`Prototype` 也可以用于扩展 JavaScript 的内置对象。例如，你可以实现 `String.prototype.backwards` 方法，它将返回你提供的任何字符串的反转版本，如列表 8.4 所示。
 
-**列表 8.4 扩展 String 对象**
+#### 列表 8.4 扩展 String 对象
 
 点击此处查看代码图像
-
-* *
 
 ```html
 <!DOCTYPE html>
@@ -1710,8 +1405,6 @@ alert(myDog.name + " is a " + myDog.breed);
 </html>
 ```
 
-
-
 幸运的是，现在已经出现了一种更出色的跨浏览器代码编写方法，它是基于对象的。与其尝试检测浏览器，不如让 JavaScript 检查你需要的特定功能是否被支持，这是一个明智的主意。你可以通过测试特定对象、方法或属性的可用性来实现这一点。在许多情况下，尝试使用相关的对象、方法或属性，并检测 JavaScript 返回的值就足够了。
 
 这里有一个测试浏览器对 `document.getElementById()` 方法支持的示例，你已经遇到过它。虽然 `getElementById()` 已经被所有新浏览器支持了一段时间，但非常早期的浏览器不支持该方法。你可以使用 `if()` 来测试 `getElementById()` 方法（或任何类似的方法或属性）的可用性：
@@ -1736,11 +1429,11 @@ if(typeof document.getElementById == 'function') {
 }
 ```
 
-`typeof` 可以返回多个可能的值，如 表 8.1 所示。
+`typeof` 可以返回多个可能的值，如表 8.1 所示。
 
 ![Image](img/image0040.jpeg)
 
-**表 8.1 typeof 返回的值**
+#### 表 8.1 typeof 返回的值
 
 你可以使用这种技术来检查 DOM 以及内置对象、方法和属性的存在，还可以检查在脚本中创建的那些。
 
@@ -1766,23 +1459,32 @@ if(typeof document.getElementById == 'function') {
 
 ### 工作坊
 
-在阅读 答案 部分之前，尝试回答所有问题。
+在阅读答案部分之前，尝试回答所有问题。
 
 #### 测验
 
 **1](#part0019.xhtml_ch08ans01)。** 从构造函数创建的新对象被称为：
+
 a. 对象的实例
+
 b. 对象的方法
+
 c. 原型
 
 **2](#part0019.xhtml_ch08ans02)。** 通过使用现有对象派生对象被称为：
+
 a. 封装
+
 b. 继承
+
 c. 实例化
 
 **3](#part0019.xhtml_ch08ans03)。** 下列哪项是创建对象的有效方式？
+
 a. `create()`
+
 b. `myObject = new`
+
 c. `getElementsByTagName()`
 
 #### 答案
@@ -1816,67 +1518,51 @@ var deck = [];
 var randomCard = deck[Math.floor(Math.random() * deck.length)];
 ```
 
-
-
 当页面加载完成后，浏览器就会生成该页面的完整、分层的 DOM 表示，供我们检查。图 9.2 显示了该表示部分可能内容的简化版本。
 
 ![Image](img/image00404.jpeg)
 
-**图 9.2** 我们页面的 DOM 树形模型
-
-* * *
+#### 图 9.2 我们页面的 DOM 树形模型
 
 ### 注意
 
 记住，在页面加载完成之前，DOM 是不可用的。在此之前，不要尝试执行任何使用 DOM 的语句，否则你的脚本可能会产生错误。
 
-* * *
-
 看图 9.2 中的树形图与列表 9.1 中的代码之间的关系。
 
-`<html` 元素包含了页面的所有其他标记。它是两个直接`child`元素——`<head>` 和 `<body>` 元素的`parent`父元素。这两个元素是`siblings`兄弟节点，因为它们共享同一个父元素。它们本身也是父元素；`<head>` 元素有一个子元素 `<title>`，而 `<body>` 元素有三个子元素：`<h1>`标题、有序列表 `<ol>` 和一个段落 `<p>`。在这三个兄弟节点中，只有 `<ol>` 有子元素，即三个 `<li>` 行项目元素。树中的这些各种元素中包含文本，在图 9.2 的灰色框中表示。
+`<html>` 元素包含了页面的所有其他标记。它是两个直接 `child` 元素——`<head>` 和 `<body>` 元素的 `parent` 父元素。这两个元素是 `siblings` 兄弟节点，因为它们共享同一个父元素。它们本身也是父元素；`<head>` 元素有一个子元素 `<title>`，而 `<body>` 元素有三个子元素：`<h1>` 标题、有序列表 `<ol>` 和一个段落 `<p>`。在这三个兄弟节点中，只有 `<ol>` 有子元素，即三个 `<li>` 行项目元素。树中的这些各种元素中包含文本，在图 9.2 的灰色框中表示。
 
-DOM 是作为这种关系的层级结构被构建的。构成树形图连接点和终点的方框被称为`nodes`节点。
+DOM 是作为这种关系的层级结构被构建的。构成树形图连接点和终点的方框被称为 `nodes` 节点。
 
 ### 节点类型
 
-图 9.2 显示了各种`element nodes`元素节点，每个节点代表一个 HTML 元素（如段落元素 `<p>`），以及一些`text nodes`文本节点，它们代表此类页面元素的文本内容。
-
-* * *
+图 9.2 显示了各种 `element nodes` 元素节点，每个节点代表一个 HTML 元素（如段落元素 `<p>`），以及一些 `text nodes` 文本节点，它们代表此类页面元素的文本内容。
 
 ### 提示
 
 在存在的情况下，文本节点总是包含在元素节点内部的。然而，并不是每个元素节点都包含文本节点。
 
-* * *
-
 还有许多其他节点类型，代表每个元素的属性、HTML 注释以及与页面相关的其他信息。当然，许多节点类型可以包含其他节点作为子节点。
 
-每种不同类型的节点都有一个关联的数字，称为`nodeType`属性。各种类型节点的`nodeType`属性列在表 9.1 中。
+每种不同类型的节点都有一个关联的数字，称为 `nodeType` 属性。各种类型节点的 `nodeType` 属性列在表 9.1 中。
 
 ![Image](img/image00405.jpeg)
 
-**表 9.1 nodeType 值**
-
-* * *
+#### 表 9.1 nodeType 值
 
 ### 提示
 
 你可能会使用节点类型 1、2 和 3 完成大部分工作，因为你正在操作页面元素、它们的属性以及这些元素所包含的文本。
 
-* * *
-
-### The childNodes 属性
+### The `childNodes` 属性
 
 每个节点的一个实用用 DOM 属性是其直接子元素的集合。这个类数组列表被称为 `childNodes`，它允许你访问任何 DOM 节点的子节点信息。
 
-`childNodes` 集合是一个所谓的 `NodeList`，其中的项通过数字索引。集合在外观和（在大多数情况下）行为上都像一个数组——你可以像引用数组一样引用它的成员，并可以像遍历数组一样遍历它们。但是，有几个数组方法无法使用，例如 `push()` 和 `pop()`。对于此处的的所有示例，你可以像对待普通数组一样对待该集合。
+`childNodes` 集合是一个所谓的 `NodeList`，其中的项通过数字索引。集合在外观和（在大多数情况下）行为上都像一个数组——你可以像引用数组一样引用它的成员，并可以像遍历数组一样遍历它们。但是，有几个数组方法无法使用，例如 `push()` 和 `pop()`。对于此处的所有示例，你可以像对待普通数组一样对待该集合。
 
 节点列表动态集合（live collection），这意味着它所引用的集合的任何更改都会立即反映在列表中；发生变化时你不需要重新获取。
 
-* * *
-
-### 尝试一下：使用 childNodes 属性
+### 尝试一下：使用 `childNodes` 属性
 
 你可以使用 `childNodes` 属性返回的集合来检查列表 9.1 中出现的有序列表元素 `<ol>`。你将编写一个小型函数来读取 `<ol>` 元素的子节点，并返回列表中存在的总数。
 
@@ -1906,13 +1592,9 @@ for (var i=0; i < olElement.childNodes.length; i++) {
 }
 ```
 
-* * *
-
 ### 注意
 
 HTML 代码中的空白（如空格和制表符字符）在浏览器渲染页面时通常会被忽略。然而，页面元素内部空白的存在——例如在元素内部——在许多浏览器中会创建一个类型为文本的节点（在元素内部的空白）。这使得使用 `childNodes` 变得棘手。
-
-* * *
 
 让我们编写一个小函数来执行此任务，并在 alert 框中输出结果：点击此处查看代码图像
 
@@ -1933,11 +1615,9 @@ window.onload = countItems;
 
 ![Image](img/image00406.jpeg)
 
-**图 9.3** 使用 childNodes 数组
+#### 图 9.3 使用 `childNodes` 数组
 
-* * *
-
-### firstChild 和 lastChild
+### `firstChild` 和 `lastChild`
 
 对于选择 `childNodes` 数组中的第一个和最后一个元素，有一种方便的快捷方式。
 
@@ -1957,9 +1637,9 @@ var lastChildNode = myElement.childNodes[myElement.childNodes.length - 1];
 var lastChildNode = myElement.lastChild;
 ```
 
-### The parentNode 属性
+### The `parentNode` 属性
 
-`parentNode` 属性如其名所示，返回所应用的的父父节点。在上一个示例中，你
+`parentNode` 属性如其名所示，返回所应用的父节点。在上一个示例中，你
 
 ```javascript
 var parentElement = lastChildNode.parentNode;
@@ -1967,7 +1647,7 @@ var parentElement = lastChildNode.parentNode;
 
 将返回 `lastChildNode` 的父元素，它当然是 `myElement` 对象。
 
-### nextSibling 和 previousSibling
+### `nextSibling` 和 `previousSibling`
 
 兄弟节点是共享同一个父节点的节点。当应用于指定的父节点时，这些只读属性分别返回下一个和上一个兄弟节点，如果不存在此类节点则返回 `null`。
 
@@ -1979,18 +1659,11 @@ var firstOne = olElement.firstChild;
 var nextOne = firstOne.nextSibling;
 ```
 
-* * *
-
 ### 注意
 
 记住，取决于你使用的浏览器，HTML 代码中的空白可能会在 DOM 中创建文本节点。你正在处理的节点的兄弟可能比你想象的得多！
 
-* * *
-
 #### Node Value
-
-
-
 
 除了 `nodeType` 之外，DOM 还提供了 `nodeValue` 属性来返回节点存储的值。你通常想使用它来返回文本节点中存储的文本。
 
@@ -2012,13 +1685,13 @@ for (var i=0; i < pElement.childNodes.length; i++) {
 alert("The paragraph says:\n\n" + text );
 ```
 
-#### 1. 节点名称 (Node Name)
+#### 1. 节点名称（Node Name）
 
 `nodeName` 属性以字符串值返回指定节点的名称。`nodeName` 返回的值汇总在表 9.2 中。`nodeName` 属性是只读的——无法更改它的值。
 
 ![Image](img/image00407.jpeg)
 
-**表 9.2 nodeName 属性返回的值**
+#### 表 9.2 nodeName 属性返回的值
 
 当 `nodeName` 返回元素名称时，它不会包含你在 HTML 源代码中使用的周围符号 `<` 和 `>`：
 
@@ -2030,13 +1703,16 @@ var pElement = document.getElementById("toDoNotes");
 alert( pElement.nodeName);  // 弹出 'P'
 ```
 
-#### 2. 使用 getElementsByTagName() 选择元素
+#### 2. 使用 `getElementsByTagName()` 选择元素
 
 你已经知道如何使用 `document` 对象的 `getElementById()` 方法访问单个页面元素。`document` 对象的另一个方法 `getElementsByTagName()` 允许你构建一个填充了所有特定标签出现位置数组。
 
 与 `getElementById()` 类似，`getElementsByTagName()` 方法接受单个参数。然而，在这种情况下，传递给方法的参数不是元素 ID，而是所需的标签名。
 
 > **注意**
+
+
+
 > 请留心拼写。`Elements`（复数）在 `getElementsByTagName()` 中使用，而 `Element`（单数）在 `getElementById()` 中使用。
 
 例如，假设你想处理特定文档中的所有 `<div>` 元素。你可以使用以下方法通过一个名为 `myDivs` 的类数组集合填充变量：
@@ -2048,13 +1724,14 @@ var myDivs = document.getElementsByTagName("div");
 ```
 
 > **提示**
+>
 > 即使只有一个具有指定标签名的元素，`getElementsByTagName()` 仍然会返回一个集合，尽管它只包含一个项目。
 
 你并不非对整个文档使用 `getElementsByTagName()`。它可以应用于任何单个对象，并返回该对象内部包含的给定标签名的元素集合。
 
-##### 试一试：使用 getElementsByTagName()
+### 试一试：使用 `getElementsByTagName()`
 
-早些你写了一个函数来计算有序列表 (`<ol>`) 元素内部的列表项 (`<li>`) 数：
+早些你写了一个函数来计算有序列表（`<ol>`）元素内部的列表项（`<li>`）数：
 
 点击此处查看代码图片
 
@@ -2081,7 +1758,7 @@ alert("The ordered list contains " + count + " items");
 var olElement = document.getElementById("toDoList");
 ```
 
-现在，你可以创建一个名为 `listItems` 的数组，并用你的 `<ol>` 对象 `olElement` 中包含的所有 <li>` 元素填充它：
+现在，你可以创建一个名为 `listItems` 的数组，并用你的 `<ol>` 对象 `olElement` 中包含的所有 `<li>` 元素填充它：
 
 点击此处查看代码图片
 
@@ -2099,7 +1776,7 @@ alert("The ordered list contains " + listItems.length + " items");
 
 列表 9.2 包含了页面的完整代码，包括修订后的函数 `countListItems()`。
 
-**列表 9.2 使用 getElementsByTagName()**
+**列表 9.2 使用 `getElementsByTagName()`**
 
 点击此处查看代码图片
 
@@ -2129,7 +1806,7 @@ alert("The ordered list contains " + listItems.length + " items");
 </html>
 ```
 
-#### 3. 读取元素的属性
+## 3. 读取元素的属性
 
 HTML 元素通常包含许多属性：
 
@@ -2164,19 +1841,17 @@ if(myNode.getAttribute("title")) {
 }
 ```
 
-只有当 `getAttribute()` 返回非空值时，`if()` 条件才会满足，因为 `null` 在 JavaScript 中被解释为“假”值（不是布尔值 false，但被视为如此）。
+只有当 `getAttribute()` 返回非空值时，`if()` 条件才会满足，因为 `null` 在 JavaScript 中被解释为“假”值（不是布尔值 `false`，但被视为如此）。
 
 > **注意**
+>
 > 还存在一个简单称为 `attributes` 的属性，包含了节点的所有属性数组。理论上，你可以使用数字键按照它们在 HTML 代码中出现的顺序以 `name=value` 对的形式访问属性；因此 `attributes[0].name` 将是 `id`，而 `attributes[1].value` 将是 `'report'`。然而，在 Internet Explorer 和某些版本的 Firefox 中的实现存在 Bug。使用 `getAttribute()` 替代它更安全。
 
 > **提示**
+>
 > 获取元素集合的另一个有用方法是 `getElementsByClassName()`。然而，该方法直到 IE9 之前才被支持。
 
-
-
-
-
-查看节点信息的最简单方法之一是使用 Mozilla Firefox 提供的 DOM 检查器（DOM Inspector）。如果你使用 Firefox，可能会发现已经安装了 DOM 检查器，尽管从 Firefox 3 之后，它已作为一个独立的插件提供。你可以在 [https://addons.mozilla.org/en-US/firefox/addon/dom-inspector-6622/] 下载它。
+查看节点信息的最简单方法之一是使用 Mozilla Firefox 提供的 DOM 检查器（DOM Inspector）。如果你使用 Firefox，可能会发现已经安装了 DOM 检查器，尽管从 Firefox 3 之后，它已作为一个独立的插件提供。你可以在 [https://addons.mozilla.org/en-US/firefox/addon/dom-inspector-6622/](https://addons.mozilla.org/en-US/firefox/addon/dom-inspector-6622/) 下载它。
 
 安装后，你可以通过 `Ctrl+Shft+I` 为浏览器中加载的任何页面打开 DOM 检查器。打开的窗口如图 9.5 所示，显示了列表 9.1 中网页的 DOM 表示。
 
@@ -2188,49 +1863,48 @@ if(myNode.getAttribute("title")) {
 
 该界面初看起来可能有些令人生畏，但探索该程序的功能是非常值得的。
 
-*** 提示
+> **提示**
+>
+> 当你使用在本节中描述的方法修改 DOM 时，你改变的是页面在浏览器中的显示方式。但请记住，你并没有更改文档本身。如果你要求浏览器显示页面的源代码，你不会在那里看到任何变化。
+>
+> 这是因为浏览器实际上显示的是文档的当前 DOM 表示。改变它，就改变了屏幕上显示的内容。
 
-当你使用在本节中描述的方法修改 DOM 时，你改变的是页面在浏览器中的显示方式。但请记住，你并没有更改文档本身。如果你要求浏览器显示页面的源代码，你不会在那里看到任何变化。
-
-这是因为浏览器实际上显示的是文档的当前 DOM 表示。改变它，就改变了屏幕上显示的内容。
-
-*** 创建新节点
+## 创建新节点
 
 向 DOM 树中添加新节点是一个两个阶段的过程：
 
 1. 首先，你创建一个新节点。一旦创建，该节点最初处于一种“悬空”状态；它确实存在，但实际上并未位于 DOM 树的任何位置，因此不会显示在浏览器窗口的可见页面上。
-
-2. 接下来，你将新节点添加到树中所需的位置。此时此，它就变成了可见页面的一部分。
+2. 接下来，你将新节点添加到树中所需的位置。此时，它就变成了可见页面的一部分。
 
 让我们看看 `document` 对象中提供的用于创建节点的一些方法。
 
-### createElement()
+### `createElement()`
 
-你可以调用 `createElement()` 方法创建新的 HTML 元素，这些元素可以是任何标准的 HTML 元素类型——段落、span、表格、列表等。
+你可以调用 `createElement()` 方法创建新的 HTML 元素，这些元素可以是任何标准的 HTML 元素类型——段落、`span`、表格、列表等。
 
-假设你已经决定为文档创建一个新的 `<div>` 元素。要做到这一点，你只需要向 `createElement` 方法传递相关的 `nodeName` 值——在此例中为 `"div"`：
+假设你已经决定为文档创建一个新的 `<div>` 元素。要做到这一点，你只需要向 `createElement()` 方法传递相关的 `nodeName` 值——在此例中为 `"div"`：
 
 点击此处查看代码图片
 
-```
+```javascript
 var newDiv = document.createElement("div");
 ```
 
 新的 `<div>` 元素现在存在，但目前没有内容、没有属性，在 DOM 树中也没有位置。你很快就会看到如何解决这些问题。
 
-### createTextNode()
+### `createTextNode()`
 
 你页面中的许多 HTML 元素都需要文本形式的内容。`createTextNode()` 方法负责处理这个问题。它的工作原理与 `createElement()` 非常相似，但它接受的参数不是 `nodeName` 值，而是一个包含元素所需文本内容的字符串：
 
 点击此处查看代码图片
 
-```
+```javascript
 var newTextNode = document.createTextNode("Here is some text.");
 ```
 
 与 `createElement()` 一样，新创建的节点尚未位于 DOM 树中；JavaScript 将其存储在 `newTextNode` 变量中，等待你将其放置在相应的位置。
 
-### cloneNode()
+### `cloneNode()`
 
 没必要重造轮子。如果你文档中已经有一个与你想要创建的新节点相同的节点，你可以使用 `cloneNode()` 来实现。与 `createElement()` 和 `createTextNode()` 不同，`cloneNode()` 接受一个参数——一个布尔值，`true` 或 `false`。
 
@@ -2238,7 +1912,7 @@ var newTextNode = document.createTextNode("Here is some text.");
 
 点击此处查看代码图片
 
-```
+```javascript
 var myDiv = document.getElementById("id1");
 var newDiv = myDiv.cloneNode(true);
 ```
@@ -2249,27 +1923,29 @@ var newDiv = myDiv.cloneNode(true);
 
 点击此处查看代码图片
 
-```
+```javascript
 var newDiv = myDiv.cloneNode(false);
 ```
 
 那么新的 `<div>` 元素将与原始元素相同，只是它没有子节点。例如，它将拥有属于原始元素的任何属性（前提是原始节点是一个元素）。
 
-*** 注意
+> **注意**
+>
+> 记住元素的 `id` 是其属性之一。当你克隆一个节点时，记住要更改你新元素的 `id`，因为 `id` 值在文档中应该是唯一的。
 
-记住元素的 `id` 是其属性之一。当你克隆一个节点时，记住要更改你新元素的 `id`，因为 `id` 值在文档中应该是唯一的。
+与通过 `createElement()` 和 `createTextNode()` 创建的新节点一样，通过 `cloneNode()` 创建的新节点最初是悬浮在空间中的；它在 DOM 树中还没有位置。你将看到如何实现这一点。
 
-*** 与通过 `createElement()` 和 `createTextNode()` 创建的新节点一样，通过 `cloneNode()` 创建的新节点最初是悬浮在空间中的；它在 DOM 树中还没有位置。你将看到如何实现这一点.. 操纵子节点
+## 操纵子节点
 
 你创建的新节点没有任何实际价值，因为它们没有显示在 DOM 的任何地方。`document` 对象的几个方法专门设计用于将节点放入 DOM 树中，它们将在后续章节中进行描述。
 
-### appendChild()
+### `appendChild()`
 
 或许将新节点附加到 DOM 最简单的方法是将其作为子节点添加到文档中已存在的节点之后。这样做只需要找到所需的父节点并调用 `appendChild()` 方法：
 
 点击此处查看代码图片
 
-```
+```javascript
 var newText = document.createTextNode("Here is text content.");
 var myDiv = document.getElementById("id1");
 myDiv.appendChild(newText);
@@ -2277,23 +1953,21 @@ myDiv.appendChild(newText);
 
 在前面的代码段中，创建了一个新的文本节点并将其作为子节点添加到当前存在的 `id` 为 `id1` 的 `<div>` 元素中。
 
-*** 提示
+> **提示**
+>
+> 记住 `appendChild()` 总是将最后一个子节点之后添加子节点，因此新添加的节点将成为父节点的新的 `lastChild`。
 
-记住 `appendChild()` 总是将最后一个子节点之后添加子节点，因此新添加的节点将成为父节点的新的 `lastChild`。
-
-*** 当然，`appendChild()` 对所有类型的节点都同样有效，而不仅仅是文本节点。假设你需要在父级 `<div>` 元素内部再添加另一个 `<div>` 元素：
+当然，`appendChild()` 对所有类型的节点都同样有效，而不仅仅是文本节点。假设你需要在父级 `<div>` 元素内部再添加另一个 `<div>` 元素：
 
 点击此处查看代码图片
 
-```
+```javascript
 var newDiv = document.createElement("div");
 var myDiv = document.getElementById("id1");
 myDiv.appendChild(newDiv);
 ```
 
 你原本存在的 `<div>` 元素现在包含了另一个 `<div>` 元素作为其最后一个子节点；如果父级 `<div>` 元素已经包含了一些子节点形式的文本内容，那么父级 `<div>`（在新修改的 DOM 中表示，而不是在源代码中）现在将具有如下形式：
-
-点击此处查看代码图片
 
 ```html
 <div id="id1">
@@ -2302,7 +1976,7 @@ myDiv.appendChild(newDiv);
 </div>
 ```
 
-### insertBefore()
+### `insertBefore()`
 
 与其说 `appendChild()` 总是将子元素添加到子节点列表的末尾，而使用 `insertBefore()`，你可以指定一个子元素并将新节点插入其之前。
 
@@ -2321,7 +1995,7 @@ myDiv.appendChild(newDiv);
 
 点击此处查看代码图片
 
-```
+```javascript
 var newPara = document.createElement("p");
 ```
 
@@ -2329,17 +2003,12 @@ var newPara = document.createElement("p");
 
 点击此处查看代码图片
 
-
-
-
-
 ```javascript
 var myDiv = document.getElementById("id1");
-
 var para2 = document.getElementById("para2");
 ```
 
-然后将这两个两个作为参数传递给 `insertBefore()`：
+然后将这两个作为参数传递给 `insertBefore()`：
 
 点击此处查看代码图片
 
@@ -2347,15 +2016,13 @@ var para2 = document.getElementById("para2");
 myDiv.insertBefore(newPara, para2);
 ```
 
-### replaceChild()
+### `replaceChild()`
 
 当你想要用特定父元素的当前子节点替换为另一个节点时，可以使用 `replaceChild()`。该方法接受两个参数——指向新子元素的引用，紧接着是指向旧元素的引用。
 
-***
+#### 动手一试：替换子元素
 
-动手一试：替换子元素
-
-查看 列表 9.3 中的代码。
+查看列表 9.3 中的代码。
 
 **列表 9.3 替换子元素**
 
@@ -2376,8 +2043,6 @@ myDiv.insertBefore(newPara, para2);
 </body>
 </html>
 ```
-
-***
 
 假设你想要使用 DOM 移除 `<div>` 中的第一个段落，并用一个 `<h2>` 标题来替换它，如下所示：
 
@@ -2415,6 +2080,8 @@ myDiv.replaceChild(newH2, oldP);
 最后，你需要为按钮元素添加一个 `onclick` 事件处理程序，这样当点击按钮时，就会执行你的元素替换函数。我们通过一个赋值给 `window.onload` 方法的匿名函数来实现：
 
 点击此处查看代码图片
+
+
 
 ```javascript
 window.onload = function() {
@@ -2459,7 +2126,7 @@ window.onload = function() {
 
 ***
 
-使用你的编辑器创建一个新的 HTML 文件，并插入 列表 9.4 中列出的代码。在浏览器中加载页面时，你应该能看到两个单行文本段落以及下方的按钮。如果一切按计划进行，点击按钮应该会将第一个 `<p>` 元素交换为你的 `<h2>` 标题，如图图 9.6](#part0020.xhtml_ch09fig6) 所示。
+使用你的编辑器创建一个新的 HTML 文件，并插入列表 9.4 中列出的代码。在浏览器中加载页面时，你应该能看到两个单行文本段落以及下方的按钮。如果一切按计划进行，点击按钮应该会将第一个`<p>`元素交换为你的`<h2>`标题，如图 9.6 所示。
 
 ![图 9.6](img/image0041.jpeg) 元素替换脚本
 
@@ -2467,7 +2134,7 @@ window.onload = function() {
 
 ### removeChild()
 
-DOM 专门提供了一个方法用于从树中移除子节点。再次参考 列表 9.3，如果你想移除 `id="para2"` 的 `<p>` 元素，只需要使用：
+DOM 专门提供了一个方法用于从树中移除子节点。再次参考列表 9.3，如果你想移除`id="para2"`的`<p>`元素，只需要使用：
 
 点击此处查看代码图片
 
@@ -2481,7 +2148,7 @@ myDiv.removeChild(para2);
 
 提示
 
-如果你没有父元素的方便引用，可以使用 `parentNode` 属性来获取它：
+如果你没有父元素的方便引用，可以使用`parentNode`属性来获取它：
 
 点击此处查看代码图片
 
@@ -2494,7 +2161,7 @@ parent.removeChild(para2);
 
 ***
 
-`removeChild()` 方法的返回值包含被移除节点的引用。如果你需要，可以使用它来处理刚刚移除的节点：
+`removeChild()`方法的返回值包含被移除节点的引用。如果你需要，可以使用它来处理刚刚移除的节点：
 
 点击此处查看代码图片
 
@@ -2507,9 +2174,9 @@ alert('Item with id ' + removedNode.id + ' has been removed.');
 
 ### 设置属性
 
-在之前我们学习了如何使用 `getAttribute()` 方法读取元素属性。有一个对应的方法名为 `setAttribute()`，允许你为节点创建属性并赋值。该方法接受两个参数；无疑，这些要添加的属性以及它应该具有的值。
+在之前我们学习了如何使用`getAttribute()`方法读取元素属性。有一个对应的方法名为`setAttribute()`，允许你为节点创建属性并赋值。该方法接受两个参数；无疑，这些要添加的属性以及它应该具有的值。
 
-在下面的示例中，为 `<p>` 元素添加了 title 属性：
+在下面的示例中，为`<p>`元素添加了`title`属性：
 
 点击此处查看代码图片
 
@@ -2530,7 +2197,7 @@ myPara.setAttribute("title", "New title"); // 覆盖 title 属性
 
 ### 动态加载 JavaScript 文件
 
-有时你需要在已加载的页面动态加载 JavaScript 代码。你可以使用 `createElement()` 创建包含所需代码的 `<script>` 元素，然后将此元素添加到页面中：
+有时你需要在已加载的页面动态加载 JavaScript 代码。你可以使用`createElement()`创建包含所需代码的`<script>`元素，然后将此元素添加到页面中：
 
 点击此处查看代码图片
 
@@ -2540,11 +2207,11 @@ scr.setAttribute("src", "newScript.js");
 document.head.appendChild(scr);
 ```
 
-记住，`appendChild()` 方法将新子节点放在当前最后一个节点之后，因此新的 `<script>` 元素将位于页面 `<head>` 部分的末尾。
+记住，`appendChild()`方法将新子节点放在当前最后一个节点之后，因此新的`<script>`元素将位于页面`<head>`部分的末尾。
 
 但注意，如果你使用此方法动态加载 JavaScript 源文件，那么这些文件中包含的 JavaScript 代码在外部文件加载完成之前对你的页面是不可用的。建议你在尝试使用这些代码之前，先让你的程序检查这一点。
 
-几乎所有现代浏览器在脚本下载完成后都会实现一个 `onload` 事件。这和你已经见过的 `window.onload` 事件相似，但它不是在主页面加载完成时触发，而是在外部资源（在本例中为 JavaScript 源文件）完全下载并可供使用时触发：
+几乎所有现代浏览器在脚本下载完成后都会实现一个`onload`事件。这和你已经见过的`window.onload`事件相似，但它不是在主页面加载完成时触发，而是在外部资源（在本例中为 JavaScript 源文件）完全下载并可供使用时触发：
 
 点击此处查看代码图片
 
@@ -2558,7 +2225,7 @@ scr.onload = function() {
 
 警告
 
-这在旧版本的 Internet Explorer 中不起作用，但从 IE8 开始，脚本 元素已经支持 `onload`。为了万无一失，你可能更倾向于对新加载文件中包含的资源进行对象检测。
+这在旧版本的 Internet Explorer 中不起作用，但从 IE8 开始，脚本元素已经支持`onload`。为了万无一失，你可能更倾向于对新加载文件中包含的资源进行对象检测。
 
 ***
 
@@ -2566,15 +2233,11 @@ scr.onload = function() {
 
 动手一试：动态创建的菜单
 
-
-
-
-
 在本练习中，你将使用在本节和上一节中学习的技巧来动态创建页面菜单。
 
-我们的示例 HTML 页面有一个顶级的 `<h1>` 标题，随后是几篇短文章，每篇文章由一个 `<h2>` 标题和若干段文本组成。这种格式与你会在博客、新闻页面或 RSS 阅读器输出等情况下看到的格式相似。
+我们的示例 HTML 页面有一个顶级的`<h1>`标题，随后是几篇短文章，每篇文章由一个`<h2>`标题和若干段文本组成。这种格式与你会在博客、新闻页面或 RSS 阅读器输出等情况下看到的格式相似。
 
-你要做的是使用 DOM 方法在页面头部自动生成一个菜单，其中的链接允许用户跳转到页面上的任何文章。HTML 文件如 列表 9.5 所示。请根据此脚本创建你自己的 HTML 文件。可以随意地使用你自己的标题和文本内容，只要章节标题包含在 `<h2>` 元素中即可。
+你要做的是使用 DOM 方法在页面头部自动生成一个菜单，其中的链接允许用户跳转到页面上的任何文章。HTML 文件如列表 9.5 所示。请根据此脚本创建你自己的 HTML 文件。可以随意地使用你自己的标题和文本内容，只要章节标题包含在`<h2>`元素中即可。
 
 ### 列表 9.5 用于创建动态菜单的 HTML 文件
 
@@ -2594,28 +2257,28 @@ scr.onload = function() {
     <h2>该地区的地理状况</h2>
     <p>埃斯特雷马杜拉自治社区位于西班牙西部，邻葡萄牙边界。它邻接西班牙的卡斯蒂利亚和莱昂、卡斯蒂利亚-拉曼恰和安达卢西亚等地区，以及葡萄牙（位于西部）。其面积超过 40,000 平方米，有两个省份：北部的卡塞雷斯和南部的巴达霍斯。</p>
     <h2>住宿选择</h2>
-    <p>埃斯特雷马杜拉全境有各种住宿选择，包括小型旅馆和客栈（“Hostals”），如果你是团体旅行，也可以考虑租用“casa rural”（乡村小屋）。</p>
+    <p>埃斯特雷马杜拉全境有各种住宿选择，包括小型旅馆和客栈（"Hostals"），如果你是团体旅行，也可以考虑租用"casa rural"（乡村小屋）。</p>
     <h2>气候</h2>
     <p>通常为地中海气候，北部除外，属于大陆性气候。通常以极端天气闻名，包括非常炎热干燥且经常干旱的夏季，以及漫长而温和的冬季。</p>
     <h2>看什么</h2>
     <p>埃斯特雷马杜拉全年举办各类活动，包括戏剧、音乐、电影、文学和民俗。壮丽的场所包括城堡、中世纪城镇广场和历史中心。在梅里达、卡塞雷斯、阿尔坎塔拉和阿尔布尔克尔克还设有特别的夏季戏剧节。</p>
     <h2>美食</h2>
-    <p>埃斯特雷马杜拉美食的品质源于当地食材的优质。除了散养的羊肉和牛肉、极佳的奶酪、红葡萄酒、橄榄油、蜂蜜和红椒外，埃斯特雷马杜拉还以伊比利亚火腿闻名。“黑脚猪”（pata negra）在软橡树林中以橡果长大，这是生产世界上顶级火腿和腌制肠的关键。</p>
+    <p>埃斯特雷马杜拉美食的品质源于当地食材的优质。除了散养的羊肉和牛肉、极佳的奶酪、红葡萄酒、橄榄油、蜂蜜和红椒外，埃斯特雷马杜拉还以伊比利亚火腿闻名。"黑脚猪"（pata negra）在软橡树林中以橡果长大，这是生产世界上顶级火腿和腌制肠的关键。</p>
 </body>
 </html>
 ```
 
-页面如 图 9.7 所示。
+页面如图 9.7 所示。
 
 ![图像](img/image00411.jpeg)
 
 **图 9.7** 具有动态创建菜单的页面
 
-第一步是获取页面上所有 `<h2>` 元素的集合。这些元素将构成菜单中的项。对于这些标题中的每一个，创建一个指向锚点元素的链接，并将该元素放在相应的 `<h2>` 元素旁边。
+第一步是获取页面上所有`<h2>`元素的集合。这些元素将构成菜单中的项。对于这些标题中的每一个，创建一个指向锚点元素的链接，并将该元素放在相应的`<h2>`元素旁边。
 
-菜单链接将以无序列表（`<ul>`）元素中链接的形式排列。此列表将放置在一个插入到页面头部的 `<div>` 容器中。
+菜单链接将以无序列表（`<ul>`）元素中链接的形式排列。此列表将放置在一个插入到页面头部的`<div>`容器中。
 
-首先，获取 `<h2>` 元素的集合：
+首先，获取`<h2>`元素的集合：
 
 点击此处查看代码图像
 
@@ -2623,7 +2286,7 @@ scr.onload = function() {
 var h2s = document.getElementsByTagName("h2");
 ```
 
-你需要创建一个 `<div>` 容器来存放你的菜单；在该 `<div>` 内部，有一个 `<ul>` 列表元素来包含菜单项：
+你需要创建一个`<div>`容器来存放你的菜单；在该`<div>`内部，有一个`<ul>`列表元素来包含菜单项：
 
 点击此处查看代码图像
 
@@ -2633,7 +2296,7 @@ var menuUl = document.createElement("ul");
 menu.appendChild(menuUl);
 ```
 
-现在，你可以遍历 `<h2>` 标题集合了：
+现在，你可以遍历`<h2>`标题集合了：
 
 点击此处查看代码图像
 
@@ -2646,44 +2309,55 @@ for(var i = 0; i < h2s.length; i++) {
 对于文档中找到的每个标题，你都需要执行若干任务：
 
 1. 获取标题子节点的内容，这构成了标题的文本：
+
    ```javascript
    var itemText = h2s[i].childNodes[0].nodeValue;
    ```
+
 2. 为菜单创建一个新的列表项（`<li>`）：
+
    ```javascript
    var menuLi = document.createElement("li");
    ```
-3. 将该 `<li>` 元素添加到菜单中：
+
+3. 将该`<li>`元素添加到菜单中：
+
    ```javascript
    menuUl.appendChild(menuLi);
    ```
+
 4. 每个列表项必须包含一个指向标题旁边锚点的链接，该菜单项指向该锚点：
+
    ```javascript
    var menuLiA = document.createElement("a");
    menuLiA = menuLi.appendChild(menuLiA);
    ```
-5. 为链接设置合适的 `href` 属性（记住变量 `i` 在计数标题时会递增）。这些链接的格式为 `<a href="#itemX">[标题文本]`，其中 X 是菜单项的索引数字：
+
+5. 为链接设置合适的`href`属性（记住变量`i`在计数标题时会递增）。这些链接的格式为`<a href="#itemX">[标题文本]`，其中 X 是菜单项的索引数字：
+
    ```javascript
    menuLiA.setAttribute("href", "#item" + i);
    ```
-6. 在每个 `<h2>` 标题之前创建一个匹配的锚点元素。锚点元素的格式为 `<a name="itemX">`，你需要添加 `name` 属性，并定位到关联标题之前的链接：
+
+6. 在每个`<h2>`标题之前创建一个匹配的锚点元素。锚点元素的格式为`<a name="itemX">`，你需要添加`name`属性，并定位到关联标题之前的链接：
+
    ```javascript
    var anc = document.createElement("a");
    anc.setAttribute("name", "item" + i);
    document.body.insertBefore(anc, h2s[i]);
    ```
 
-当每个 `<h2>` 标题都完成完成后，你可以将新菜单添加到页面中：
+当每个`<h2>`标题都完成完成后，你可以将新菜单添加到页面中：
 
 ```javascript
 document.body.insertBefore(menu, document.body.firstChild);
 ```
 
-JavaScript 源文件 `menu.js` 的内容如 列表 9.6part0020.xhtml_ch09lis06 所示。代码已整合到一个名为 `makeMenu()` 的函数中，该函数由 `window.onload` 事件调用，在页面加载后 DOM 可用时构建你的菜单。
+JavaScript 源文件`menu.js`的内容如列表 9.6 所示。代码已整合到一个名为`makeMenu()`的函数中，该函数由`window.onload`事件调用，在页面加载后 DOM 可用时构建你的菜单。
 
 ### 列表 9.6 menu.js 的 JavaScript 代码
 
-[点击此处查看代码图像
+点击此处查看代码图像
 
 ```javascript
 function makeMenu() {
@@ -2723,9 +2397,6 @@ function makeMenu() {
 
 图 9.8 显示了脚本的运行效果。
 
-
-
-
 通过使用浏览器工具检查修改后的 DOM，你可以看到为了形成菜单和锚点而添加到页面上的额外 DOM 元素。图 9.9 显示了这在 Google Chromium 开发者工具中是如何显示的，并高亮了额外的元素。
 
 ![Image](img/image00413.jpeg)
@@ -2748,13 +2419,15 @@ function makeMenu() {
 
 **Q. 有没有快速的方法可以判断节点是否有任何子节点？**
 
-**A.** 是的，你可以使用 `hasChildNodes()` 方法。如果节点有一个或多个子节点，该方法返回布尔值 `true`，否则返回 `false`。记住，属性节点和文本节点不能有子节点，因此如果将其应用于这些类型的节点，该方法将始终返回 false。
+**A.** 是的，你可以使用`hasChildNodes()`方法。如果节点有一个或多个子节点，该方法返回布尔值`true`，否则返回`false`。记住，属性节点和文本节点不能有子节点，因此如果将其应用于这些类型的节点，该方法将始终返回 false。
 
 **Q. Mozilla 的 DOM 检查器是同类型的唯一工具吗？**
 
+
+
 **A.** 完全不是。几乎每个浏览器的开发者工具中都内置了一些 DOM 检查工具。然而，Mozilla 的 DOM 检查器提供了关于 DOM 层次结构和单个节点参数的格外清晰视图；这就是我在这里介绍它的原因。
 
-**Q. 使用 DOM 插入和获取 HTML 还是使用 innerHTML 更好？**
+**Q. 使用 DOM 插入和获取 HTML 还是使用 `innerHTML` 更好？**
 
 **A.** 两者各有优劣。要向文档中插入一段 HTML 代码，使用 `innerHTML` 是快速且方便的。但是，它不会返回你所插入代码的引用，因此你无法很容易对该内容执行操作。DOM 方法为操纵页面元素提供了更细粒度的控制。
 
@@ -2886,14 +2559,13 @@ JSON（读作“Jason”）是 JavaScript 对象的一种简单且紧凑的表�
 
 然而，JSON 的真正美之处在于，用 JSON 表示的对象实际上是用普通的 JavaScript 代码表示的。因此，你利用了 JavaScript 的“自动”解析；你只需要让 JavaScript 将 JSON 字符串的内容解释为代码，而无需额外的解析器或转换器。
 
-
-
-
 JSON 数据被表示为参数和值对的序列，每对数据都使用冒号字符来分隔参数和值。这些 `"parameter":"value"` 对之间用逗号分隔：
 
 点击此处查看代码图像
 
+```
 "param1":"value1", "param2":"value2", "param3":"value3"
+```
 
 最后，整个序列括在大括号之间以形成一个 JSON 对象：
 
@@ -2996,9 +2668,13 @@ alert(myObject.username);
 原生支持 JSON 的浏览器包括：
 
 ![Images/image00365.jpeg) Firefox 3.5+
+
 ![Images/image00365.jpeg) Internet Explorer 8+
+
 ![Images/image00365.jpeg) Google Chrome
+
 ![Images/image00365.jpeg) Opera 10+
+
 ![Images/image00365.jpeg) Safari 4+
 
 ***
@@ -3063,9 +2739,6 @@ alert( JSON.stringify(Dan) );
 点击此处查看代码图像
 
 ***
-
-
-
 
 点击此处查看代码图片
 
@@ -3201,19 +2874,17 @@ alert(conference["startDay"]);  // "Monday"
 
 点击此处查看代码图片
 
+
+
 ```javascript
 var categories = ["news", "sport", "films", "music", "comedy"];
 ```
 
 JSON 为我们定义 JavaScript 对象提供了一种相当类似的简写方式。
 
-* *
-
 ### 提示
 
 尽管 JSON 是为了描述 JavaScript 对象而开发的，但它独立于任何语言或平台。许多编程语言（包括 Java、PHP、C 等）都有 JSON 库和工具。
-
-* *
 
 #### 属性
 
@@ -3226,8 +2897,6 @@ var user = {
     "height" : 1.80
 }
 ```
-
-* *
 
 ### 提示
 
@@ -3243,11 +2912,7 @@ var myObject = new Object();
 var myObject = {};
 ```
 
-* *
-
 对象属性可以按照通常的方式立即可用：
-
-点击此处查看代码图片
 
 ```javascript
 var name = user.username;
@@ -3256,8 +2921,6 @@ var name = user.username;
 #### 方法
 
 你可以这种方式添加方法，即在对象内部使用函数：
-
-点击此处查看代码图片
 
 ```javascript
 var user = {
@@ -3270,7 +2933,7 @@ var user = {
 }
 ```
 
-然后你可以通常的方式调用 `setName` 方法：
+然后你可以通常的方式调用`setName`方法：
 
 ```javascript
 setName(prompt("Enter username"));
@@ -3279,8 +2942,6 @@ setName(prompt("Enter username"));
 ### 注意
 
 虽然这种方法在 JavaScript 上文中有效，但在将 JSON 作为通用数据格式时是不允许的。请参见关于 JSON 安全的后续。
-
-* *
 
 #### 数组
 
@@ -3292,7 +2953,7 @@ var listObject = {
 };
 ```
 
-在前面的示例中，该对象有一个名为 `booklist` 的属性，其值是一个数组。
+在前面的示例中，该对象有一个名为`booklist`的属性，其值是一个数组。
 
 ```javascript
 var book = listObject.booklist[2];
@@ -3304,7 +2965,7 @@ var book = listObject.booklist[2];
 
 JSON 对象甚至可以包含对象。通过使数组元素变为 JSON 对象，你可以使用点记法访问它们。
 
-在下面的示例中，与属性 `booklist` 关联的值是 JSON 对象数组。
+在下面的示例中，与属性`booklist`关联的值是 JSON 对象数组。
 
 ```javascript
 var bookListObject = {
@@ -3318,18 +2979,13 @@ var bookListObject = {
 };
 ```
 
-在获取书籍数组后，如前面的示例所示，可以很容易访问 `title` 和 `author` 属性：
+在获取书籍数组后，如前面的示例所示，可以很容易访问`title`和`author`属性：
 
 ```javascript
 alert(bookListObject.booklist[2].author); // 显示 "Greg Bear"
 ```
 
-
-
-
 ## 列表 10.2 处理多级 JSON 对象
-
-点击此处查看代码图像
 
 ```html
 <!DOCTYPE html>
@@ -3364,17 +3020,14 @@ alert(bookListObject.booklist[2].author); // 显示 "Greg Bear"
 ```
 
 在设计好 JSON 对象后，你声明了一个变量并赋值一个空字符串。这个变量将在你构建输出消息时存储它：
+
 `var out = "";`
 
-现在，你提取书籍数组，并将该数组赋值给新变量 `books`，以避免后续进行大量的冗长输入：
-
-点击此处查看代码图像
+现在，你提取书籍数组，并将该数组赋值给新变量`books`，以避免后续进行大量的冗长输入：
 
 `var books = booklistString.booklist;`
 
-之后，你只需要遍历书籍数组，读取每个书籍对象的 `title` 和 `author` 属性，并构造一个字符串将其追加到你的输出消息中：
-
-点击此处查看代码图像
+之后，你只需要遍历书籍数组，读取每个书籍对象的`title`和`author`属性，并构造一个字符串将其追加到你的输出消息中：
 
 ```javascript
 for(var i =0; i<books.length;i++) {
@@ -3387,6 +3040,7 @@ for(var i =0; i<books.length;i++) {
 ```
 
 最后，将消息显示给用户：
+
 `alert(out);`
 
 运行此脚本的结果所示图 10.5。
@@ -3397,9 +3051,9 @@ for(var i =0; i<books.length;i++) {
 
 ### JSON 安全
 
-使用 JavaScript 的 `eval()` 函数可以执行任何 JavaScript 命令。这可能代表一个潜在的安全问题，特别是在处理来自不可信源的 JSON 数据时。
+使用 JavaScript 的`eval()`函数可以执行任何 JavaScript 命令。这可能代表一个潜在的安全问题，特别是在处理来自不可信源的 JSON 数据时。
 
-使用带有原生 JSON 解析器的浏览器将 JSON 字符串转换为 JavaScript 对象会更安全。JSON 解析器只会识别 JSON 文本而不会执行脚本命令。通常，原生 JSON 解析器也比使用 `eval()` 快。
+使用带有原生 JSON 解析器的浏览器将 JSON 字符串转换为 JavaScript 对象会更安全。JSON 解析器只会识别 JSON 文本而不会执行脚本命令。通常，原生 JSON 解析器也比使用`eval()`快。
 
 原生 JSON 支持在较新的浏览器和最新的 ECMAScript (JavaScript) 标准中实现。
 
@@ -3412,10 +3066,12 @@ for(var i =0; i<books.length;i++) {
 ### 问答
 
 **问. 我可以在哪里阅读官方文档？**
-**答.** JSON 语法在 RFC 4627 中有正式描述。你可以在 `http://www.ietf.org/rfc/4627` 阅读它。在 JSON 的官方首页 `http://json.org/` 也有大量信息。
+
+**答.** JSON 语法在 RFC 4627 中有正式描述。你可以在`http://www.ietf.org/rfc/4627`阅读它。在 JSON 的官方首页`http://json.org/`也有大量信息。
 
 **问. 我如何知道我的浏览器是否支持 JSON？**
-**答.** 你可以像第 8 小节 中的那样，使用 `typeof` 运算符检查 JSON 对象是否存在。点击此处查看代码图像
+
+**答.** 你可以像第 8 小节中的那样，使用`typeof`运算符检查 JSON 对象是否存在。
 
 ```javascript
 if(typeof JSON == 'object') {
@@ -3429,36 +3085,47 @@ if(typeof JSON == 'object') {
 
 ### 工作坊
 
-尝试在阅读答案 章节之前回答所有问题。
+尝试在阅读答案章节之前回答所有问题。
 
 #### 测验
 
 **1.** JSON 是缩写，代表
+
 a. JavaScript Object Notation
+
 b. Java Object Notation
+
 c. JavaScript Object Notation
 
 **2.** 哪些操作是你可以通过 JSON 完成的？
+
 a. 创建一个构造函数。
+
 b. 解析 XML 数据。
+
 c. 直接实例化对象。
 
 **3.** 通常使用什么字符来包围 JSON 对象中的系列参数:值对？
-a. 大括号 `{}`
-b. 中括号 `[]`
-c. 圆括号 `()`
+
+a. 大括号`{}`
+
+b. 中括号`[]`
+
+c. 圆括号`()`
 
 #### 答案
 
 **1.** a. JavaScript Object Notation
+
 **2.** c. 直接实例化对象
-**3.** a. 大括号 `{}`
+
+**3.** a. 大括号`{}`
 
 #### 练习题
 
-![Image](img/image0036.jpeg) 加载你的文件。将你的列表 10.1 加载到浏览器。尝试使用数组作为属性值：`{"days":["Mon","Tue","Wed"]}` 行为符合预期吗？
+![Image](img/image0036.jpeg) 加载你的文件。将你的列表 10.1 加载到浏览器。尝试使用数组作为属性值：`{"days":["Mon","Tue","Wed"]}`行为符合预期吗？
 
-![Image](img/image0036.jpeg) 使用 `new Object()` 语法实例化对象。
+![Image](img/image0036.jpeg) 使用`new Object()`语法实例化对象。
 
 # 第四部分：HTML 和 CSS
 
@@ -3467,13 +3134,18 @@ c. 圆括号 `()`
 在本节将学到：
 
 ![Image](img/image0036.jpeg) 关于新的 HTML5 标签
+
 ![Image](img/image0036.jpeg) 如何处理视频和音频
-![Image](img/image0036.jpeg) 使用 `<canvas>` 元素
+
+![Image](img/image0036.jpeg) 使用`<canvas>`元素
+
 ![Image](img/image0036.jpeg) HTML5 中的拖放
+
 ![Image](img/image0036.jpeg) 使用本地存储
+
 ![Image](img/image0036.jpeg) 如何与本地文件交互
 
-HTML 的旧版本 HTML 4.01 自 1999 年以来一直存在。基于 XML 的 HTML 版本 一直一直是各种努力的主题，最新的是转向 XHTML2。2009 年，W3C 宣布放弃 XHTML2，并将资源转向 HTML 的新版本即 HTML5。
+HTML 的旧版本 HTML 4.01 自 1999 年以来一直存在。基于 XML 的 HTML 版本一直一直是各种努力的主题，最新的是转向 XHTML2。2009 年，W3C 宣布放弃 XHTML2，并将资源转向 HTML 的新版本即 HTML5。
 
 **提示：** 注意它的写法：HTML5。在 L 和 5 之间没有空格。
 
@@ -3497,25 +3169,19 @@ HTML5 添加了新元素，以便更容易识别这些以及更多类型的内�
 
 虽然 HTML5 引入了许多有趣的新功能，但本节重点关注有助于解决某些长期困扰的新标签。
 
-#### 使用 <video> 视频播放
-
-
-
-
+#### 使用 `<video>` 视频播放
 
 网页视频非常流行。然而，实现视频的方法通常是私有的，通过 Flash、Windows Media 和 Apple QuickTime 等插件进行播放。在某个浏览器中可用于嵌入这些元素的标记，并不总能在其他浏览器中生效。
 
-HTML5 包含一个新的 `<video>` 元素，其目标是允许嵌入任何和所有的视频格式。
+HTML5 包含一个新的`<video>`元素，其目标是允许嵌入任何和所有的视频格式。
 
-使用新的 `<video>` 标签，你可以这样实现你喜爱的 QuickTime 电影：
+使用新的`<video>`标签，你可以这样实现你喜爱的 QuickTime 电影：
 
 ```html
 <video src="video.mov" />
 ```
 
 到目前为止，关于视频元素应该支持支持哪些视频格式（编码器）一直存在很大争论；在编写本文时，仍在寻找一种不需要特殊许可条款的编码器，尽管 WebM ([`www.webmproject.org/`](http://www.webmproject.org/)) 目前看起来是首选。目前，通过引用多个源可以解决这个问题，并避免了对浏览器嗅探的需求；目前有三种广泛支持的视频格式——MP4、WebM 和 Ogg。
-
-点击此处查看代码图像
 
 ```html
 <video id="vid1" width="400" height="300" controls="controls">
@@ -3526,17 +3192,17 @@ HTML5 包含一个新的 `<video>` 元素，其目标是允许嵌入任何和所
 </video>
 ```
 
-为 `<video>` 元素包含 width 和 height 属性也是一个良好的做法。如果未设置 height 和 width，浏览器将不知道预留多少屏幕空间，导致页面布局在视频加载时发生变化。
+为`<video>`元素包含 width 和 height 属性也是一个良好的做法。如果未设置 height 和 width，浏览器将不知道预留多少屏幕空间，导致页面布局在视频加载时发生变化。
 
-还建议在 `<video>` 和 `</video>` 标签之间放置一些合适的文本，以便在不支持 `<video>` 标签的浏览器中显示。
+还建议在`<video>`和`</video>`标签之间放置一些合适的文本，以便在不支持`<video>`标签的浏览器中显示。
 
-`<video>` 标签的一些属性列在 表 11.2 中。
+`<video>`标签的一些属性列在表 11.2 中。
 
 ![图像](img/image00421.jpeg)
 
-**表 11.2 <video> 元素的一些属性**
+**表 11.2 `<video>`元素的一些属性**
 
-注意，使用 `controls` 属性添加的控件外观将取决于所使用的浏览器，如 图 11.1 所示。
+注意，使用`controls`属性添加的控件外观将取决于所使用的浏览器，如图 11.1 所示。
 
 ![图像](img/image00422.jpeg)
 
@@ -3544,15 +3210,11 @@ HTML5 包含一个新的 `<video>` 元素，其目标是允许嵌入任何和所
 
 你可以像访问任何其他 JavaScript 或 DOM 对象一样访问这些属性。对于之前的视频定义，你可以使用：
 
-点击此处查看代码图像
-
 ```javascript
 var myVideo = document.getElementById("vid1").volume += 0.1;
 ```
 
 来略微增加量，或者使用
-
-点击此处查看代码图像
 
 ```javascript
 if(document.getElementById("vid1").paused) {
@@ -3570,43 +3232,45 @@ if(document.getElementById("vid1").paused) {
 media.canPlayType(type)
 ```
 
-在前面的示例中，`type` 是一个包含媒体类型的字符串，例如“video/webm”。如果浏览器知道自己无法播放该内容，该方法必须返回一个空字符串。如果浏览器确定自己可以支持该格式，该方法可能会返回“probably”，否则返回“maybe”。
+在前面的示例中，`type`是一个包含媒体类型的字符串，例如“video/webm”。如果浏览器知道自己无法播放该内容，该方法必须返回一个空字符串。如果浏览器确定自己可以支持该格式，该方法可能会返回“probably”，否则返回“maybe”。
 
 ### 控制播放
 
-也可以使用 `pause()` 和 `play()` 命令通过编程方式控制播放，如下代码段所示：
-
-点击此处查看代码图像
+也可以使用`pause()`和`play()`命令通过编程方式控制播放，如下代码段所示：
 
 ```javascript
 var myVideo = document.getElementById("vid1").play();
 var myVideo = document.getElementById("vid1").pause();
 ```
 
-### 使用 <audio> 标签播放声音
+### 使用 `<audio>` 标签播放声音
 
-之前关于 `<video>` 标签的所有内容几乎同样适用于 `<audio>` 标签。使用 `<audio>` 标签的简单方法如下：
-
-点击此处查看代码图像
+之前关于`<video>`标签的所有内容几乎同样适用于`<audio>`标签。使用`<audio>`标签的简单方法如下：
 
 ```html
 <audio src="song.mp3"></audio>
 ```
 
-你可以添加更多属性来实现对播放的更多控制，例如 `loop` 和 `autoplay`：
-
-点击此处查看代码图像
+你可以添加更多属性来实现对播放的更多控制，例如`loop`和`autoplay`：
 
 ```html
 <audio src="song.mp3" autoplay loop></audio>
 ```
 
 > **提示**
-> 不要滥用 `loop` 和 `autoplay`，否则你可能会发现你的许多网站访问者不再回访！
+
+> 不要滥用`loop`和`autoplay`，否则你可能会发现你的许多网站访问者不再回访！
 
 与之前的视频文件示例一样，你可以包含备用格式以确保用户的浏览器能找到一种它可以播放的格式，如下代码所示：
 
-点击此处查看代码图像
+```html
+<audio src="song.mp3" autoplay loop>
+    <source src="song.ogg" type="audio/ogg" />
+    <source src="song.mp3" type="audio/mpeg" />
+</audio>
+```
+
+
 
 ```html
 <audio controls="controls">
@@ -3616,7 +3280,7 @@ var myVideo = document.getElementById("vid1").pause();
 </audio>
 ```
 
-MP3、WAV 和 Ogg 是支持的格式。通过 `src` 属性或 `<source>` 元素可以加载音频。`<audio>` 和 `<video>` 标签有许多可以像其他 DOM 对象一样访问的属性：
+`MP3`、`WAV` 和 `Ogg` 是支持的格式。通过 `src` 属性或 `<source>` 元素可以加载音频。`<audio>` 和 `<video>` 标签有许多可以像其他 DOM 对象一样访问的属性：
 
 ```javascript
 var soundElement = document.createElement('audio');
@@ -3624,45 +3288,41 @@ soundElement.setAttribute('src', 'song.ogg');
 soundElement.
 ```
 
-例如，跳转到歌曲第 45 秒处你可能使用
+例如，跳转到歌曲第 45 秒处你可能使用：
 
 ```javascript
 soundElement.currentTime = 45;
 ```
 
 > **提示**
+> 
 > 你可以在 [`www.whatwg.org/ipage/web-apps/video-element.html`](http://www.whatwg.org/ipage/web-apps/video-element.html) 找到这些标签的完整参考。
 
-### 在页面上使用 canvas 绘制
+## 在页面上使用 canvas 绘制
 
-新的 `<canvas>` 标签为你提供了一个矩形空间，你可以在这里绘制形状，也可以加载并显示图像。使用 `<canvas>` 标签只需通过设置 `width` 和 `height` 参数来定义区域；其他图形内容均通过 JavaScript 完成。有一套被称为 Canvas 2D 方法。
+新的 `<canvas>` 标签为你提供了一个矩形空间，你可以在这里绘制形状，也可以加载并显示图像。使用 `<canvas>` 标签只需通过设置 `width` 和 `height` 参数来定义区域；其他图形内容均通过 `JavaScript` 完成。有一套被称为 `Canvas 2D` 方法。
 
-### 自己尝试：使用 canvas 移动球
+## 自己尝试：使用 canvas 移动球
 
-你将在 `<canvas>` 元素中创建一个动画——一个移动的红圆。页面中所需的 HTML 只有 `<canvas>` 元素本身：
-
-点击此处查看代码图像
+你将在 `<canvas>` 元素中创建一个动画——一个移动的红圆。页面中所需的 `HTML` 只有 `<canvas>` 元素本身：
 
 ```html
 <canvas id="canvas1" width="400" height="300"></canvas>
 ```
 
-所有的绘制和动画将通过 JavaScript 完成。
+所有的绘制和动画将通过 `JavaScript` 完成。
 
 > **提示**
+> 
 > 如果你没有设置 `width` 和 `height` 参数，画布默认宽 300 像素，高 150 像素。
 
-你首先需要指定渲染上下文。在编写时，2D 是唯一广泛支持的上下文，尽管 3D 上下正在开发中。
-
-点击此处查看代码图像
+你首先需要指定渲染上下文。在编写时，`2D` 是唯一广泛支持的上下文，尽管 `3D` 上下正在开发中。
 
 ```javascript
 context = canvas1.getContext('2d');
 ```
 
 `<canvas>` 支持的所有原始形状只有矩形：
-
-点击此处查看代码图像
 
 ```javascript
 fillRect(x,y,width,height); // 绘制填充矩形
@@ -3686,22 +3346,15 @@ moveTo(x, y)
 lineTo(x, y)
 ```
 
-绘制一个半径为 r、圆心为 x, y、从 `startAngle` 到 `endAngle` 的圆弧。
+绘制一个半径为 `r`、圆心为 x, y、从 `startAngle` 到 `endAngle` 的圆弧：
 
-
-
-
-
-点击此处查看代码图片
-
-```arc(x, y, r, startAngle, endAngle, anti)
+```javascript
+arc(x, y, r, startAngle, endAngle, anti)
 ```
 
 将最后一个参数设置为布尔值 `true` 会使圆弧按逆时针方向绘制，而不是默认的顺时针方向。
 
 要使用这些基本命令创建形状，你需要一些额外的方法：
-
-点击此处查看代码图片
 
 ```javascript
 object.beginPath();
@@ -3720,8 +3373,6 @@ object.fill();            // 绘制填充形状
 
 我们要生成的球将是一个实心圆。让我们让它变成红色，半径为 15，并中心位于画布坐标 50, 50 处：
 
-点击此处查看代码图片
-
 ```javascript
 context.beginPath();
 context.fillStyle="#ff0000";
@@ -3730,8 +3381,6 @@ context.closePath();
 ```
 
 为了让球动起来，你需要使用定时器改变球心的 x 和 y 坐标。查看 `animate()` 函数：
-
-点击此处查看代码图片
 
 ```javascript
 function animate() {
@@ -3745,17 +3394,13 @@ function animate() {
 
 该函数通过 `setInterval()` 方法被重复调用。每次调用时，都会使用 `clearRect()` 方法根据整个画布元素的大小来清空画布。在每次循环中，变量 `counter` 都会递增，然后使用其新值来重新定义圆心的位置。
 
-完整代码列在 列表 11.1 中。
+完整代码列在列表 11.1 中。
 
-**列表 11.1 使用 <canvas> 移动球**
-
-点击此处查看代码图片
-
-***
+**列表 11.1 使用 `<canvas>` 移动球**
 
 ```html
 <!DOCTYPE HTML>
-<html
+<html>
 <head>
     <title>HTML5 canvas</title>
 <script>
@@ -3795,9 +3440,9 @@ function animate() {
 
 ![Image](img/image0423.jpeg) 图 1.2 使用 `<canvas>`
 
-### 拖放
+## 拖放
 
-拖放是 HTML5 标准的一部分。几乎任何元素都可以被变为可拖拽的。要使一个元素变为可拖拽，只需要将其 `draggable` 属性设置为 true 即可：
+拖放是 `HTML5` 标准的一部分。几乎任何元素都可以被变为可拖拽的。要使一个元素变为可拖拽，只需要将其 `draggable` 属性设置为 `true` 即可：
 
 ```html
 <img draggable="true" />
@@ -3807,13 +3452,13 @@ function animate() {
 
 要定义对象可以被放置的位置并控制拖放过程，你需要编写事件监听器来检测并控制拖放过程的各个部分。有几个不同的事件可以用于控制你的拖放：
 
-![Image](img/image0365.jpeg) `dragstart`
-![Image](img/image0365.jpeg) `drag`
-![Image](img/image0365.jpeg) `dragenter`
-![Image](img/image0365.jpeg) `dragleave`
-![Image](img/image0365.jpeg) `dragover`
-![Image](img/image0365.jpeg) `drop`
-![Image](img/image0365.jpeg) `dragend`
+- `dragstart`
+- `drag`
+- `dragenter`
+- `dragleave`
+- `dragover`
+- `drop`
+- `dragend`
 
 为了控制你的拖放，你需要定义一个源元素（拖开始的地方）、数据负载（你正在拖动的内容）以及一个放置目标（接收放置物品的区域）。
 
@@ -3831,11 +3476,9 @@ function animate() {
 
 **动手尝试：在 HTML5 中进行拖放**
 
-你将为 HTML5 拖放接口构建一个演示程序。打开你的编辑器并创建一个包含列表 11.2 中列出的代码的文件。
+你将为 `HTML5` 拖放接口构建一个演示程序。打开你的编辑器并创建一个包含列表 11.2 中列出的代码的文件。
 
 **列表 11.2 HTML5 拖放**
-
-点击此处查看代码图片
 
 ```html
 <!DOCTYPE HTML>
@@ -3875,9 +3518,6 @@ function animate() {
 </html>
 ```
 
-
-
-
 加载的页面应该类似于图 11.3 所示；拖动小图像并将其释放到白色投放区域上方，你应该看到它“吸附”到 `<div>` 元素中，如图。
 
 ![Image](img/image00424.jpeg)
@@ -3886,19 +3526,16 @@ function animate() {
 
 * * *
 
-### 本地存储 (Local Storage)
+## 本地存储 (Local Storage)
 
-HTML5 页面可以在用户的浏览器中存储大量数据，而对网站性能产生任何负面影响。与通过 cookie 实现此操作相比，Web 更安全、更快。就像使用 cookie 一样，数据以键值对的形式存储，且网页只能访问其自身存储的数据。
+`HTML5` 页面可以在用户的浏览器中存储大量数据，而对网站性能产生任何负面影响。与通过 `cookie` 实现此操作相比，`Web` 存储更安全、更快。就像使用 `cookie` 一样，数据以键值对的形式存储，且网页只能访问其自身存储的数据。
 
 在浏览器中本地存储存储的两个新对象是：
 
-![Image](img/image00365.jpeg) `localStorage`——存储无到期日的数据
-
-![Image](img/image00365.jpeg) `sessionStorage`——仅为当前会话存储数据
+- `localStorage`——存储无到期日的数据
+- `sessionStorage`——仅为当前会话存储数据
 
 如果你不确定浏览器对本地存储的支持情况，可以再次使用特性检测：
-
-点击此处查看代码图像
 
 ```javascript
 if(typeof(Storage)!=="undefined") {
@@ -3908,49 +3545,39 @@ if(typeof(Storage)!=="undefined") {
 
 要存储一个值，你可以调用 `setItem` 方法并向其传递一个键和一个值：
 
-点击此处查看代码图像
-
 ```javascript
 localStorage.setItem("key", "value");
 ```
 
 或者，你可以像使用关联数组一样使用 `localStorage` 对象：
 
-点击此处查看代码图像
-
 ```javascript
 localStorage["key"] = "value";
 ```
 
-获取值也可以使用上述方法方法：
-
-点击此处查看代码图像
+获取值也可以使用上述方法：
 
 ```javascript
 alert(localStorage.getItem("key"));
 ```
 
-或者
+或者：
 
 ```javascript
 alert(localStorage["key"]);
 ```
 
-### 处理本地文件 (Working with Local Files)
+## 处理本地文件 (Working with Local Files)
 
-最后，HTML 提供了一种与用户本地文件交互的标准方法，使用了 HTML5 的 File API 规范。访问外部文件有几种方式：
+最后，`HTML` 提供了一种与用户本地文件交互的标准方法，使用了 `HTML5` 的 `File API` 规范。访问外部文件有几种方式：
 
-![Image](img/image00365.jpeg) `File` 提供了包括名称、大小和 MIME 类型在内的信息，并提供了文件句柄。
+- `File` 提供了包括名称、大小和 MIME 类型在内的信息，并提供了文件句柄。
+- `FileList` 是 `File` 对象的类数组序列。
+- `FileReader` 接口使用 `File` 和 `FileList` 异步读取文件。你可以检查读取进度、捕获任何错误，并发现文件何时完全加载。
 
-![Image](img/image00365.jpeg) `FileList` 是 `File` 对象的类数组序列。
+### 检查浏览器支持
 
-![Image](img/image00365.jpeg) `FileReader` 接口使用 `File` 和 `FileList` 异步读取文件。你可以检查读取进度、捕获任何错误，并发现文件何时完全加载。
-
-#### 检查浏览器支持
-
-再次，你可以通过常用的特性检测方法检查浏览器是否支持 File API：
-
-点击此处查看代码图像
+再次，你可以通过常用的特性检测方法检查浏览器是否支持 `File API`：
 
 ```javascript
 if (window.File && window.FileReader && window.FileList) {
@@ -3965,8 +3592,6 @@ if (window.File && window.FileReader && window.FileList) {
 在这个示例中，你将修改之前的拖放示例，允许将文件列表从本地文件系统拖入网页中。为此，你将使用 `FileList` 数据结构。
 
 查看修改后的 `drop(ev)` 函数：
-
-点击此处查看代码图像
 
 ```javascript
 function drop(ev) {
@@ -3984,15 +3609,11 @@ function drop(ev) {
 
 在这里，从 `dataTransfer` 对象中提取出包含拖拽文件信息的类数组 `FileList`：
 
-点击此处查看代码图像
-
 ```javascript
 var files = ev.dataTransfer.files;
 ```
 
 然后，通过逐一迭代文件来依次处理每个文件：
-
-点击此处查看代码图像
 
 ```javascript
 for (var i = 0; i < files.length; i++) {
@@ -4005,9 +3626,9 @@ for (var i = 0; i < files.length; i++) {
 
 **列表 11.3 与本地文件系统交互**
 
-点击此处查看代码图像
-
 * * *
+
+
 
 ```html
 <!DOCTYPE HTML>
@@ -4052,87 +3673,83 @@ for (var i = 0; i < files.length; i++) {
 </html>
 ```
 
-* * *
-
-在编辑器中创建此文件并将其加载到浏览器后，你应该能够将文件从本地系统拖入投放区域，并看到它们“吸附”到 `<div>` 元素中，如图所示。
+在编辑器中创建此文件并将其加载到浏览器后，你应该能够将文件从本地系统拖入投放区域，并看到它们“吸附”到`<div>`元素中，如图所示。
 
 ![Image](img/image0045.jpeg)
 
 图 11.4 HTML5 拖放
 
-* * *
-
 ### 总结
 
 HTML5 为 HTML 提供了一系列新功能，使得标记语言可以作为 Web 应用更更好的基础。在本节中，你对这些新功能进行了快速浏览，并获得了使用这些新 API 的实践经验。
 
-### 问答 (Q&A)
+### 问答（Q&A）
 
 **Q：学习 HTML5 的最好方法是什么？**
 
-答：通过使用来学习。开始构建使用语义标签的页面；尝试视频播放；玩拖放和文件 API；以及使用 `<canvas>` 构建动画。如果你有疑问，互联网上有许多教程、博客和代码示例。
+答：通过使用来学习。开始构建使用语义标签的页面；尝试视频播放；玩拖放和文件 API；以及使用`<canvas>`构建动画。如果你有疑问，互联网上有许多教程、博客和代码示例。
 
 **Q：已经有使用 HTML5 的真实网站了吗？**
 
-答：当然，有很多。访问 http://html5gallery.com/ 查看示例。
+答：当然，有很多。访问`http://html5gallery.com/`查看示例。
 
-### 练习 (Workshop)
+### 练习（Workshop）
 
 在阅读后续“答案”章节之前，尝试回答所有问题。
 
-#### 测验 (Quiz)
+#### 测验（Quiz）
 
-1 下面哪一个不是有效的 HTML5 语义元素？
+1. 下面哪一个不是有效的 HTML5 语义元素？
 
-a. `<header>`
-b. `<sidebar>`
-c. `<nav>`
+   a. `<header>`
 
-2 下面哪一个不是 `<audio>` 和 `<video>` 元素的有效方法？
+   b. `<sidebar>`
 
-a. `play()`
-b. `pause()`
-c. `stop()`
+   c. `<nav>`
 
-3 下面哪一个不是标准的拖放事件？
+2. 下面哪一个不是`<audio>`和`<video>`元素的有效方法？
 
-a. `drag`
-b. `dragover`
-c. `dragout`
+   a. `play()`
 
-#### 答案 (Answers)
+   b. `pause()`
 
-1 b. `<sidebar>` 不是有效的 HTML5 元素。
+   c. `stop()`
 
-2 c. 没有 `stop()` 方法。
+3. 下面哪一个不是标准的拖放事件？
 
-3 c. 没有 `dragout` 事件；请使用 `dragleave`。
+   a. `drag`
 
-### 习 (Exercises)
+   b. `dragover`
+
+   c. `dragout`
+
+#### 答案（Answers）
+
+1. b. `<sidebar>`不是有效的 HTML5 元素。
+
+2. c. 没有`stop()`方法。
+
+3. c. 没有`dragout`事件；请使用`dragleave`。
+
+### 练习（Exercises）
 
 回顾之前章节的某些示例，并尝试使用一些新的 HTML5 接口来重写它们。
 
-
-
-
-
 ![Image](img/image00365.jpeg) 分离样式与内容
 
-![Image](img/image00365.jpeg) DOM style 属性
+![Image](img/image00365.jpeg) DOM `style`属性
 
 ![Image](img/image00365.jpeg) 获取样式
 
 ![Image](img/image00365.jpeg) 设置样式
 
-![Image](img/image00365.jpeg) 使用 `className` 访问类
+![Image](img/image00365.jpeg) 使用`className`访问类
 
-![Image](img/image00365.jpeg) DOM `styleSheet` 对象
+![Image](img/image00365.jpeg) DOM `styleSheet`对象
 
 ![Image](img/image00365.jpeg) 在 JavaScript 中启用、禁用和切换样式表
 
 ![Image](img/image00365.jpeg) 更改鼠标光标
-
-* * *
 
 在万维网早期，页面完全取决于其文本内容。早期的浏览器对图形效果的支持非常原始——某些浏览器甚至不支持图像。为网页设置样式在很大程度上是使用早期 HTML 版本允许的少数与样式相关的属性和标签。
 
@@ -4140,11 +3757,11 @@ c. `dragout`
 
 在本书前面的部分，你学习了如何使用 JavaScript 的 DOM 方法编辑页面的结构。然而，JavaScript 也可以用于访问和修改当前页面的 CSS 样式。在本节中你将学习如何做到这一点。
 
-### 十分钟 CSS 入门
+## 十分钟 CSS 入门
 
 如果你已经决定学习 JavaScript，那么很有可能已经熟悉 CSS 样式设置了。以万一你错过了它，让我们回顾一下基础知识。
 
-#### 分离样式与内容
+### 分离样式与内容
 
 在 CSS 出现之前，HTML 页面中的大部分样式都是使用 HTML 标签和/或其属性实现的。例如，要更改文本的字体颜色，你会使用类似下面的代码：
 
@@ -4156,29 +3773,23 @@ c. `dragout`
 
 出于许多原因，这非常糟糕：
 
-![Image](img/image00365.jpeg) 页面中每一段想要显示为红色的文本都必须用这些额外标签进行标记。
+- 页面中每一段想要显示为红色的文本都必须用这些额外标签进行标记。
+- 创建的样式无法传递到其他页面；它们也必须单独使用额外的 HTML 进行标记。
+- 以后要更改页面的样式，你必须编辑每一个页面并筛选 HTML，逐个更改每个样式相关的标签和属性。
+- 有了所有这些额外标记，HTML 变得非常难以阅读和维护。
 
-![Image](img/image00365.jpeg) 创建的样式无法传递到其他页面；它们也必须单独使用额外的 HTML 进行标记。
-
-![Image](img/image00365.jpeg) 以后要更改页面的样式，你必须编辑每一个页面并筛选 HTML，逐个更改每个样式相关的标签和属性。
-
-![Image](img/image00365.jpeg) 有了所有这些额外标记，HTML 变得非常难以阅读和维护。
-
-CSS 尝试将 HTML 元素的样式设置与该元素的标记功能分离。这是通过定义单独的*样式声明*然后将这些应用于 HTML 元素或元素集合来实现的。
+CSS 尝试将 HTML 元素的样式设置与该元素的标记功能分离。这是通过定义单独的样式声明，然后将这些应用于 HTML 元素或元素集合来实现的。
 
 你可以使用 CSS 为页面元素的视觉属性设置样式，例如颜色、字体和大小，以及与格式相关的属性如定位、外边距、内边距和对齐。
 
 这种分离样式与内容带来了许多好处：
 
-![Image](img/image00365.jpeg) 样式声明可以应用于多个元素，甚至（当使用外部样式表时）应用于多个页面。
+- 样式声明可以应用于多个元素，甚至（当使用外部样式表时）应用于多个页面。
+- 样式声明的更改会影响所有相关的 HTML 元素，使得更新网站的样式更加准确、快速和高效。
+- 共享样式鼓励整个网站具有更一致的样式。
+- HTML 标记更易于阅读和维护。
 
-![Image](img/image00365.jpeg) 样式声明的更改会影响所有相关的 HTML 元素，使得更新网站的样式更加准确、快速和高效。
-
-![Image](img/image00365.jpeg) 共享样式鼓励整个网站具有更一致的样式。
-
-![Image](img/image00365.jpeg) HTML 标记更易于阅读和维护。
-
-#### CSS 样式声明
+### CSS 样式声明
 
 CSS 样式声明的语法与 JavaScript 函数并不相似。假设你想为页面中的所有段落元素声明样式，使段落内部的字体颜色变为红色：
 
@@ -4197,7 +3808,7 @@ p {
 }
 ```
 
-由于你使用了选择器 `p`，之前的样式声明会影响页面上的每一个段落元素。要只选择一个特定的页面元素，你可以使用其 ID 这样做。这样做时，用于 CSS 样式声明的选择器不是 HTML 元素的名称，而是以井字符为前缀的 ID 值。例如，HTML 元素
+由于你使用了选择器`p`，之前的样式声明会影响页面上的每一个段落元素。要只选择一个特定的页面元素，你可以使用其 ID 这样做。这样做时，用于 CSS 样式声明的选择器不是 HTML 元素的名称，而是以井字符为前缀的 ID 值。例如，HTML 元素：
 
 点击此处查看代码图片
 
@@ -4215,7 +3826,7 @@ p {
 }
 ```
 
-使用相同的样式声明为多个页面元素设置样式，只需用逗号分隔选择器。下面的样式声明影响页面上所有的 `<div>` 元素，以及 ID 值为 `para1` 的任何元素：
+使用相同的样式声明为多个页面元素设置样式，只需用逗号分隔选择器。下面的样式声明影响页面上所有的`<div>`元素，以及 ID 值为`para1`的任何元素：
 
 ```css
 div, #para1 {
@@ -4224,7 +3835,7 @@ div, #para1 {
 }
 ```
 
-或者，你可以通过为类名前加上点来选择所有共享特定 `class` 的元素：点击此处查看代码图片
+或者，你可以通过为类名前加上点来选择所有共享特定`class`的元素：点击此处查看代码图片
 
 ```html
 <p class="info">欢迎来到我的网站。</p>
@@ -4238,7 +3849,7 @@ div, #para1 {
 }
 ```
 
-#### 样式声明的位置
+### 样式声明的位置
 
 与 JavaScript 语句类似，CSS 声明可以出现在页面内，也可以保存在外部文件中。要引用外部样式表，通常做法是使用：点击此处查看代码图片
 
@@ -4246,7 +3857,7 @@ div, #para1 {
 <link rel="stylesheet" type="css" href="style.css" />
 ```
 
-或者，你可以将样式声明直接放在页面的 `<head>` 中 `<style>` 和 `</style>` 标签之间：
+或者，你可以将样式声明直接放在页面的`<head>`中`<style>`和`</style>`标签之间：
 
 ```html
 <style>
@@ -4261,27 +3872,23 @@ div, #para1 {
 </style>
 ```
 
-最后，你可以使用 `style` 属性直接向 HTML 元素添加样式：点击此处查看代码图片
+最后，你可以使用`style`属性直接向 HTML 元素添加样式：点击此处查看代码图片
 
 ```html
 <p style="color:red; font-size:12px;">请查看我们的服务条款。</p>
 ```
 
-* * *
+> **提示**
+>
+> 外部样式表中定义的样式可以多个页面，而页面内定义的则不能。
 
-提示
-
-外部样式表中定义的样式可以多个页面，而页面内定义的则不能。
-
-* * *
-
-### DOM style 属性
+## DOM `style`属性
 
 你在之前的章节中见过 HTML 页面是如何被浏览器表示为 DOM 树的。DOM 节点——组成 DOM 树的单个叶子和分支——对象，每个对象都有自己的属性和方法。
 
-你见过各种可以选择单个 DOM 节点或节点集合的方法，例如 `getElementById()`。
+你见过各种可以选择单个 DOM 节点或节点集合的方法，例如`getElementById()`。
 
-每个 DOM 节点都有一个名为 `style` 的属性，它本身是一个包含父节点 CSS 样式信息的对象。让我们来看一个示例：点击此处查看代码图片
+每个 DOM 节点都有一个名为`style`的属性，它本身是一个包含父节点 CSS 样式信息的对象。让我们来看一个示例：点击此处查看代码图片
 
 ```html
 <div id="id1" style="width:200px;">欢迎回到我的网站。</div>
@@ -4292,38 +3899,30 @@ var myNode = document.getElementById("id1");
 alert(myNode.style.width);
 ```
 
-在这种情况下，alert 将显示消息“200px.”
+在这种情况下，`alert`将显示消息“200px.”
 
-* * *
+> **注意**
+>
+> 除了`myNode.style.width`语法外，你还可以使用等效的`myNode.style["width"]`。在通过变量传递属性名时，这有时是必要的：点击此处查看代码图片
+>
+> ```javascript
+> var myProperty = "width";
+> myNode.style[myProperty] = "200px";
+> ```
 
-注意
-
-除了 `myNode.style.width` 语法外，你还可以使用等效的 `myNode.style["width"]`。在通过变量传递属性名时，这有时是必要的：点击此处查看代码图片
-
-```javascript
-var myProperty = "width";
-myNode.style[myProperty] = "200px";
-```
-
-* * *
-
-遗憾的是，虽然这种方法对于*内联*样式运行良好，但如果你通过页面头部的 `<style>` 元素或在外部样式表中为页面元素应用样式，DOM 的 style 对象将无法访问它。
-
-
-
-
+遗憾的是，虽然这种方法对于*内联*样式运行良好，但如果你通过页面头部的`<style>`元素或在外部样式表中为页面元素应用样式，DOM 的`style`对象将无法访问它。
 
 在第 13 小节“介绍 CSS3”中，你将学习另一种在 JavaScript 中访问样式属性的方法，这种方法避免了仅适用于内联样式的限制。
 
-然而，DOM `style` 对象并不是只读的；你可以使用 `style` 对象设置样式属性的值，并且通过这种方式设置的属性*将*会被 DOM `style` 对象返回。
+然而，DOM `style`对象并不是只读的；你可以使用`style`对象设置样式属性的值，并且通过这种方式设置的属性*将*会被 DOM `style`对象返回。
 
-### 注意事项
+## 注意事项
 
-CSS 包含许多带有连字符名称的属性，例如 `background-color`、`font-size`、`text-align` 等。由于 JavaScript 属性和方法名不允许包含连字符，我们需要修改这些属性的写方式。在 JavaScript 中访问此类属性时，请删除属性名中的连字符，并将随后的字母大写，因此 `font-size` 变为 `fontSize`，`text-align` 变为 `textAlign`，以此此类推。
+CSS 包含许多带有连字符名称的属性，例如`background-color`、`font-size`、`text-align`等。由于 JavaScript 属性和方法名不允许包含连字符，我们需要修改这些属性的写法。在 JavaScript 中访问此类属性时，请删除属性名中的连字符，并将随后的字母大写，因此`font-size`变为`fontSize`，`text-align`变为`textAlign`，以此类推。
 
-### 尝试一下：设置样式属性
+## 尝试一下：设置样式属性
 
-让我们写一个函数，使用 DOM `style` 对象在页面元素的背景颜色和字体颜色两个值之间进行切换：
+让我们写一个函数，使用 DOM `style`对象在页面元素的背景颜色和字体颜色两个值之间进行切换：
 
 点击此处查看代码图像
 
@@ -4340,15 +3939,15 @@ function toggle() {
 }
 ```
 
-`toggle()` 函数首先找到页面元素的当前 `background-color` CSS 属性，然后将该颜色与 `red` 进行比较。
+`toggle()`函数首先找到页面元素的当前`background-color` CSS 属性，然后将该颜色与`red`进行比较。
 
-如果 `background-color` 属性当前值为 `red`，它将该元素的样式属性设置为在黄色背景上显示黑色文本；否则，它将样式样式值设为在红色背景上显示白色文本。
+如果`background-color`属性当前值为`red`，它将该元素的样式属性设置为在黄色背景上显示黑色文本；否则，它将样式样式值设为在红色背景上显示白色文本。
 
-我们使用此函数来切换 HTML 文档中 `<span>` 元素的颜色。
+我们使用此函数来切换 HTML 文档中`<span>`元素的颜色。
 
 完整的代码列表如列表 12.1 所示。
 
-**列表 12.1 使用 DOM style 对象进行样式设置**
+**列表 12.1 使用 DOM `style`对象进行样式设置**
 
 点击此处查看代码图像
 
@@ -4386,27 +3985,28 @@ function toggle() {
 </body>
 </html>
 ```
-```
+
+
 
 在你的编辑器中创建该 HTML 文件并尝试一下。你会发现，当页面加载时，文本是默认的黑色且没有背景颜色。这是因为这些样式属性最初没有在页面的 `<style>` 指令、内联样式或通过 DOM 进行设置。
 
-当点击按钮时执行的 `toggle()` 函数会检查 `<span>` 元素的当前背景颜色。发现其值不是 `red` 时，`toggle()` 将背景颜色设置为红色并将文本颜色设为白色。下次点击按钮时，测试条件点击此处查看代码图像 `myElement.style.backgroundColor == 'red'` 返回值为 `true`，导致颜色改为黄色背景上的黑色。图 2.1 显示了程序的运行情况。![Image](img/image0426.jpeg)
+当点击按钮时执行的`toggle()`函数会检查`<span>`元素的当前背景颜色。发现其值不是`red`时，`toggle()`将背景颜色设置为红色并将文本颜色设为白色。下次点击按钮时，测试条件`myElement.style.backgroundColor == 'red'`返回值为`true`，导致颜色改为黄色背景上的黑色。图 2.1 显示了程序的运行情况。
+
+![Image](img/image0426.jpeg)
 
 **图 2.1 在 JavaScript 中设置样式属性**
 
-#### 使用 className
+## 使用 className
 
-在本节较早些时候，我们讨论了将样式与内容分离以及这带来的益处。使用 JavaScript 编辑 `style` 对象的属性（如上一个练习所示）效果良好——但它确实带有降低这种样式与内容分离的风险。如果你的 JavaScript 更改了元素的声明，那么页面样式的责任就不再由 CSS 承担。如果你以后决定更改样式，将必须回去编辑你所有的 JavaScript 函数。
+在本节较早些时候，我们讨论了将样式与内容分离以及这带来的益处。使用 JavaScript 编辑`style`对象的属性（如上一个练习所示）效果良好——但它确实带有降低这种样式与内容分离的风险。如果你的 JavaScript 更改了元素的声明，那么页面样式的责任就不再由 CSS 承担。如果你以后决定更改样式，将必须回去编辑你所有的 JavaScript 函数。
 
-幸运的是，我们有一种机制，可以让 JavaScript 重新设置页面样式而不覆盖单个样式声明。通过使用元素的 `className` 属性，我们可以切换 `class` 属性的值以及相关的样式声明。查看列表 2.2。
+幸运的是，我们有一种机制，可以让 JavaScript 重新设置页面样式而不覆盖单个样式声明。通过使用元素的`className`属性，我们可以切换`class`属性的值以及相关的样式声明。查看列表 2.2。
 
 **列表 12.2 修改 className**
 
-点击此处查看代码图像
-
-```html
+```
 <!DOCTYPE html>
-<html
+<html>
 <head>
     <title>Switching classes with JavaScript</title>
     <style>
@@ -4448,17 +4048,11 @@ function toggle() {
 </html>
 ```
 
-
-
-
-
 `document.styleSheets.length`
 
 ## 启用、禁用和切换样式表
 
-数组中的每个样式表都有一个名为 `disabled` 的属性，其值为布值 `true` 或 `false`。这是一个可读/写的属性，因此我们能够在 JavaScript 中有效地切换单个样式表的开启和关闭：
-
-点击此处查看代码图片
+数组中的每个样式表都有一个名为`disabled`的属性，其值为布值`true`或`false`。这是一个可读/写的属性，因此我们能够在 JavaScript 中有效地切换单个样式表的开启和关闭：
 
 ```javascript
 document.styleSheets[0].disabled = true;
@@ -4467,7 +4061,7 @@ document.styleSheets[1].disabled = false;
 
 上述代码段“开启”了页面中的第二个样式表（索引为 1），同时“关闭”了第一个样式表（索引为 0）。
 
-列表 12.3 包含一个工作示例。该页面上的脚本首先声明了变量 `whichSheet`，并将其初始化为零：
+列表 12.3 包含一个工作示例。该页面上的脚本首先声明了变量`whichSheet`，并将其初始化为零：
 
 ```javascript
 var whichSheet = 0;
@@ -4475,34 +4069,23 @@ var whichSheet = 0;
 
 该变量用于跟踪两个样式表中的哪一个处于激活状态。第二行代码最初禁用了页面上两个样式表中的第二个：
 
-点击此处查看代码图片
-
 ```javascript
 document.styleSheets[1].disabled = true;
 ```
 
-函数 `sheet()` 在页面加载时附加到页面按钮的 `onClick` 事件处理程序，当点击按钮时，它会执行三个任务：
+函数`sheet()`在页面加载时附加到页面按钮的`onClick`事件处理程序，当点击按钮时，它会执行三个任务：
 
-![Image](img/image00365.jpeg) 禁用存储在变量 `whichSheet` 中的样式表：
-
-点击此处查看代码图片
-
+1. 禁用存储在变量`whichSheet`中的样式表：
 ```javascript
 document.styleSheets[whichSheet].disabled = true;
 ```
 
-![Image](img/image00365.jpeg) 在一和 零之间切换变量 `whichSheet` 的值：
-
-点击此处查看代码图片
-
+2. 在一和零之间切换变量`whichSheet`的值：
 ```javascript
 whichSheet = (whichSheet == 1) ? 0 : 1;
 ```
 
-![Image](img/image00365.jpeg) 启用与 `whichSheet` 新值对应的样式表：
-
-点击此处查看代码图片
-
+3. 启用与`whichSheet`新值对应的样式表：
 ```javascript
 document.styleSheets[whichSheet].disabled = false;
 ```
@@ -4511,13 +4094,9 @@ document.styleSheets[whichSheet].disabled = false;
 
 ![Image](img/image00428.jpeg)
 
-**图 12.3** 使用 `styleSheets` 属性切换样式表
+**图 12.3 使用`styleSheets`属性切换样式表**
 
 **列表 12.3 使用 styleSheets 属性在样式表之间切换**
-
-点击此处查看代码图片
-
-* * *
 
 ```html
 <!DOCTYPE html>
@@ -4528,7 +4107,7 @@ document.styleSheets[whichSheet].disabled = false;
         body {
             background-color: white;
             color: red;
-            font:  normal 24px arial, helvetica, sans-serif;
+            font: normal 24px arial, helvetica, sans-serif;
             padding: 20px;
         }
     </style>
@@ -4554,13 +4133,11 @@ document.styleSheets[whichSheet].disabled = false;
     </script>
 </head>
 <body>
-    使用下方的按钮切换样式表！br />
+    使用下方的按钮切换样式表！
     <input type="button" id="btn1" value="Toggle" />
 </body>
 </html>
 ```
-
-* * *
 
 ### 尝试一下：选择特定的样式表
 
@@ -4573,11 +4150,9 @@ var change = false;
 var oldSheet = 0;
 ```
 
-布尔变量 `change` 用于跟踪你是否找到了具有请求名称的样式表；一旦找到，你就会将其值更改为 `true`，表示你打算更改样式表。整数 `oldSheet` 最初设置为零，最终将分配激活样式表的编号；如果你没有找到与请求标题匹配的新样式表，你可以在返回函数之前将其重新设为激活状态。
+布尔变量`change`用于跟踪你是否找到了具有请求名称的样式表；一旦找到，你就会将其值更改为`true`，表示你打算更改样式表。整数`oldSheet`最初设置为零，最终将分配激活样式表的编号；如果你没有找到与请求标题匹配的新样式表，你可以在返回函数之前将其重新设为激活状态。
 
-现在，你需要遍历 `styleSheets` 数组：
-
-点击此处查看代码图片
+现在，你需要遍历`styleSheets`数组：
 
 ```javascript
 for (var i = 0; i < styleSheets.length; i++) {
@@ -4586,28 +4161,19 @@ for (var i = 0; i < styleSheets.length; i++) {
 
 对于每个样式表：
 
-![Image](img/image00365.jpeg) 如果发现某个样式表是激活的，则将其索引存储在变量 `oldSheet` 中：
-
-点击此处查看代码图片
-
+1. 如果发现某个样式表是激活的，则将其索引存储在变量`oldSheet`中：
 ```javascript
     if(styleSheets[i].disabled == false) {
         oldSheet = i;
     }
 ```
 
-![Image](img/image00365.jpeg) 在循环时，确保所有样式表都已禁用：
-
-点击此处查看代码图片
-
+2. 在循环时，确保所有样式表都已禁用：
 ```javascript
     document.styleSheets[i].disabled = true;
 ```
 
-![Image](img/image00365.jpeg) 如果当前样式表具有请求样式表的标题，通过将其设置为 `false` 来启用它，并立即将变量 `change` 设置为 `true`：
-
-点击此处查看代码图片
-
+3. 如果当前样式表具有请求样式表的标题，通过将其设置为`false`来启用它，并立即将变量`change`设置为`true`：
 ```javascript
     if(styleSheets[i].title == mySheet) {
         document.styleSheets[i].disabled = false;
@@ -4616,30 +4182,23 @@ for (var i = 0; i < styleSheets.length; i++) {
 }
 ```
 
-当你遍历完所有样式表后，根据变量 `change` 和 `oldSheet` 的状态确定你是否更改了样式表。如果没有，则将先前的样式表重新启用：
+当你遍历完所有样式表后，根据变量`change`和`oldSheet`的状态确定你是否更改了样式表。如果没有，则将先前的样式表重新启用：
 
 ```javascript
 if(!change) document.styleSheets[oldSheet].disabled = false;
 ```
 
-最后，函数返回变量 `change` 的值——如果已更改则返回 `true`，如果没有则返回 `false`。代码列在列表 12.4。将此代码保存为 HTML 文件并加载到浏览器中。
+最后，函数返回变量`change`的值——如果已更改则返回`true`，如果没有则返回`false`。代码列在列表 12.4。将此代码保存为 HTML 文件并加载到浏览器中。
 
-
-
-
-当页面加载时，一个小函数 `sheet()` 会被添加到按钮的 `onClick` 事件处理程序中。每当点击按钮时，`sheet()` 都会提示用户输入样式表的名称：
-
-点击此处查看代码图像
+当页面加载时，一个小函数`sheet()`会被添加到按钮的`onClick`事件处理程序中。每当点击按钮时，`sheet()`都会提示用户输入样式表的名称：
 
 ```javascript
 var sheetName = prompt("Stylesheet Name?");
 ```
 
-然后它会调用 `ssEnable()` 函数，并将请求的名称作为参数传递。。
+然后它会调用`ssEnable()`函数，并将请求的名称作为参数传递。
 
-如果函数返回 `false`，表示没有发生样式表的更改，你将向用户弹出一条消息：
-
-点击此处查看代码图像
+如果函数返回`false`，表示没有发生样式表的更改，你将向用户弹出一条消息：
 
 ```javascript
 if(!ssEnable(sheetName)) alert("Not found - original stylesheet retained.");
@@ -4649,31 +4208,26 @@ if(!ssEnable(sheetName)) alert("Not found - original stylesheet retained.");
 
 ![Image](img/image00429.jpeg)
 
-**图 12.4** 通过名称选择新的样式表
-
-* * *
+**图 12.4 通过名称选择新的样式表**
 
 ### 总结
 
-在这一小时中，你学习了 JavaScript 应用于页面 CSS 样式的多种方法。你学习了如何使用页面元素的 `style` 属性，如何处理 CSS 类，以及如何操作整个样式表。
+在这一小时中，你学习了 JavaScript 应用于页面 CSS 样式的多种方法。你学习了如何使用页面元素的`style`属性，如何处理 CSS 类，以及如何操作整个样式表。
 
 ### 问与答
 
 **Q. JavaScript 是否可以处理单独的 CSS 样式规则？**
 
-**A.** 可以的，但在编写本文时，这种方法的跨浏览器兼容性并不好。Mozilla 浏览器支持 `cssRules` 数组，而 Internet Explorer 将等效数组称为 `Rules`。此外，不同浏览器在对“规则”概念的解释上也存在显著差异。希望未来的浏览器版本能解决这些差异。
+**A.** 可以的，但在编写本文时，这种方法的跨浏览器兼容性并不好。Mozilla 浏览器支持`cssRules`数组，而 Internet Explorer 将等效数组称为`Rules`。此外，不同浏览器在对“规则”概念的解释上也存在显著差异。希望未来的浏览器版本能解决这些差异。
 
 **Q. 是否可以在 JavaScript 中更改鼠标光标？**
 
-**A.** 是可以的。`style` 对象有一个名为 `cursor` 的属性，它可以接受多种值。常用的光标包括：
+**A.** 是可以的。`style`对象有一个名为`cursor`的属性，它可以接受多种值。常用的光标包括：
 
-![Image](img/image00365.jpeg) **Crosshair（交叉准星）**——渲染为一对像枪准星一样的交叉线。
-
-![Image](img/image00365.jpeg) **Pointer（指针）**——通常是一个指向的手指。
-
-![Image](img/image00365.jpeg) **Text（文本）**——文本输入光标。
-
-![Image](img/image00365.jpeg) **Wait（等待）**——程序正在忙碌。
+- **Crosshair（交叉准星）**——渲染为一对像枪准星一样的交叉线。
+- **Pointer（指针）**——通常是一个指向的手指。
+- **Text（文本）**——文本输入光标。
+- **Wait（等待）**——程序正在忙碌。
 
 ### 工作坊
 
@@ -4681,59 +4235,47 @@ if(!ssEnable(sheetName)) alert("Not found - original stylesheet retained.");
 
 #### 测验
 
-**1.** 要将元素 `myElement` 的 `font-family` 属性设置为 Verdana，你应该使用：
+**1.** 要将元素`myElement`的`font-family`属性设置为 Verdana，你应该使用：
 
 **a.** `myElement.style.font-family = "verdana";`
-
 **b.** `myElement.style.fontFamily = "verdana";`
-
 **c.** `myElement.style.font-family("verdana");`
 
-**2.** 属性 `className` 可用于：
+**2.** 属性`className`可用于：
 
-**a.** 访问元素的 `class` 属性的值
+**a.** 访问元素的`class`属性的值
+**b.** 访问元素的`name`属性的值
+**c.** 为元素添加`classname`属性
 
-**b.** 访问元素的 `name` 属性的值
-
-**c.** 为元素添加 `classname` 属性
-
-**3.** 如何启用 `styleSheets` 数组中索引为 `n` 的样式表？
+**3.** 如何启用`styleSheets`数组中索引为`n`的样式表？
 
 **a.** `document.styleSheets[n].active = true;`
-
 **b.** `document.styleSheets[n].enabled = true;`
-
 **c.** `document.styleSheets[n].disabled = false;`
 
 #### 答案
 
 **1.** b. `myElement.style.fontFamily = "verdana";`
-
-**2.** a. 访问元素的 `class` 属性的值。
-
+**2.** a. 访问元素的`class`属性的值。
 **3.** c. `document.styleSheets[n].disabled = false;`
 
 #### 练习
 
-![Image](img/image00365.jpeg) 修改代码列表 12.1 中的程序，以更改其他样式属性，如字体、装饰、元素边框、内边距和外边距。
-
-![Image](img/image00365.jpeg) 修改代码列表 12.4 的程序，使某些样式表外部链接，而不是位于页面 `<head>` 中 `<style>` 和 `</style>` 标签之间。所有功能运行都正常吗？
+- 修改代码列表 12.1 中的程序，以更改其他样式属性，如字体、装饰、元素边框、内边距和外边距。
+- 修改代码列表 12.4 的程序，使某些样式表外部链接，而不是位于页面`<head>`中`<style>`和`</style>`标签之间。所有功能运行都正常吗？
 
 ## 第 13 小节 引入 CSS3
 
-* * *
+---
 
 本节你将学习：
 
-![Image](img/image00365.jpeg) CSS3 为 CSS 带来的一些新功能
+- CSS3 为 CSS 带来的一些新功能
+- 使用特定厂商的前缀和扩展
+- CSS3 属性的跨浏览器设置
+- 在 JavaScript 中高效地设置 CSS3 属性
 
-![Image](img/image00365.jpeg) 使用特定厂商的前缀和扩展
-
-![Image](img/image00365.jpeg) CSS3 属性的跨浏览器设置
-
-![Image](img/image00365.jpeg) 在 JavaScript 中高效地设置 CSS3 属性
-
-* * *
+---
 
 使用 CSS3，你可以轻松地实现许多酷炫的新效果，而无需使用大量的 JavaScript 代码和/或外部图形应用程序。
 
@@ -4741,64 +4283,66 @@ if(!ssEnable(sheetName)) alert("Not found - original stylesheet retained.");
 
 厂商前缀是浏览器公司在这些功能成为 CSS3 规范之前添加支持的一种方式。在大多数情况下，如果需要前缀，请参考表 13.1 所示浏览器。例如，在本节晚些时候你将学习 CSS3 过渡。在那里你会看到，如果你想为页面添加 CSS3 过渡，你需要使用带有前缀的过渡属性：
 
-点击此处查看代码图像
-
 ```css
 -webkit-transition: 0.5s ease;
+```
+
+
+
+```css
 -moz-transition: 0.5s ease;
+
 -o-transition: 0.5s ease;
+
 transition: 0.5s ease;
 ```
 
 用户的浏览器将响应它理解的过渡版本，忽略其他的。幸运的是，浏览器制造商正在努力实现所有的功能，对于大多数现代浏览器，需要前缀的属性数量正在迅速减少。
 
-* * *
+---
 
-提示
+### 提示
 
 编写时，有一个关于哪些功能/浏览器组合需要前缀的实用汇总 [`shouldiprefix.com/`](http://shouldiprefix.com/)。
 
 有关特定浏览器和版本支持的功能频繁更新列表，请访问 [`www.w3schools.com/cssref/css3_browsupport.asp`](http://www.w3schools.com/cssref/css3_browsupport.asp)。
 
-* * *
+---
 
-注意
+### 注意
 
 属性的前缀版本可能与 CSS3 规范中描述的属性并不完全相同。即使厂商特定的扩展通常可以避免冲突（因为每个厂商都有独特的前缀），但请记住，此类扩展可能会根据厂商进行更改，因为它们并不是 CSS3 规范的一部分，尽管它们尝试得像即将推出的 CSS3 属性。
 
 同样记住，厂商特定的扩展几乎无法通过 CSS 验证。
 
-* * *
+---
 
-### CSS3 边框
+## CSS3 边框
 
 CSS3 让可以在边框上实现一些非常酷的功能，这以前只能通过大量丑陋且难以维护的代码黑科技来实现。
 
 在本节中，我们将查看两个示例：盒投影和圆角。
 
-#### 创建盒投影
-
-
-
+### 创建盒投影
 
 `box-shadow` 属性允许你为页面的框元素添加投影。如表 13.2 所示，你可以分别指定颜色、大小、模糊和偏移的值：
 
 ![Image](img/image00431.jpeg)
 
-**表格 13.2 box-shadow 属性的参数**
+**表格 13.2 `box-shadow` 属性的参数**
 
 这是一个示例，使用了一个 10px 宽、向右下方偏移的投影，在整个宽度上进行了模糊处理，颜色为中灰色：
 
 点击此处查看代码图像
 
-```
+```css
 #div1 {
-background-color: #8080ff;
-width: 400px;
-height: 250px;
-box-shadow: 10px 10px 10px #808080;
--webkit-box-shadow: 10px 10px 10px #808080;
--moz-box-shadow: 10px 10px 10px #808080;
+    background-color: #8080ff;
+    width: 400px;
+    height: 250px;
+    box-shadow: 10px 10px 10px #808080;
+    -webkit-box-shadow: 10px 10px 10px #808080;
+    -moz-box-shadow: 10px 10px 10px #808080;
 }
 ```
 
@@ -4808,16 +4352,16 @@ box-shadow: 10px 10px 10px #808080;
 
 **图 13.1** CSS3 阴投影
 
-## 使用 border-radius 属性实现圆角
+## 使用 `border-radius` 属性实现圆角
 
 `border-radius` 属性允许为页面元素添加圆角，而无需专门创建圆角图像，这可能是 CSS3 新引入的最受欢迎的功能之一。
 
 `border-radius` 属性已经得到了广泛的浏览器支持，尽管 Mozilla Firefox 比某些竞争对手多了一段时间需要 `-moz-` 前缀；因此，如果你需要支持之前的几个版本的 Firefox，应该考虑包含带前缀的版本：
 
-```
+```css
 #div1 {
--moz-border-radius: 25px;
-border-radius: 25px;
+    -moz-border-radius: 25px;
+    border-radius: 25px;
 }
 ```
 
@@ -4829,13 +4373,13 @@ border-radius: 25px;
 
 可以使用单独的属性 `border-bottom-left-radius`、`border-top-left-radius`、`border-bottom-right-radius` 和 `border-top-right-radius` 独立指定圆角，也可以像我们在这里所做的，使用 `border-radius` 属性在一个语句中指定四个角。
 
-### CSS3 背景
+## CSS3 背景
 
 CSS3 包含了几个新的背景属性，允许对背景元素进行更具体的控制。
 
 在本节中，你将学习 `background-size` 和 `background-origin` 属性，以及如何使用多个背景图像。
 
-#### background-size 属性
+### `background-size` 属性
 
 `background-size` 属性为 CSS 增加了一个新功能，允许你使用长度、百分比或两个关键字 `contain` 或 `cover` 来设置背景图像的大小。
 
@@ -4845,21 +4389,21 @@ CSS3 包含了几个新的背景属性，允许对背景元素进行更具体的
 
 点击此处查看代码图像
 
-```
+```css
 #div1 {
-background-size: 400px;
-background-image: url(lake.png);
-width: 400px;
-height: 250px;
-border-radius: 25px;
+    background-size: 400px;
+    background-image: url(lake.png);
+    width: 400px;
+    height: 250px;
+    border-radius: 25px;
 }
 ```
 
-在这里，我将背景宽度设置为与 `<div>` 元素相同（为了保险，我还额外设置了圆角）。结果如图 13.3
+在这里，我将背景宽度设置为与 `<div>` 元素相同（为了保险，我还额外设置了圆角）。结果如图 13.3。
 
 **图 13.3** 在 CSS3 中设置背景大小
 
-#### background-origin 属性
+### `background-origin` 属性
 
 `background-origin` 属性用于设置框内背景位置的计算方式。
 
@@ -4869,59 +4413,56 @@ border-radius: 25px;
 
 ### 多背景图像
 
-CSS3 允许通过使用逗号分隔的列表为框元素使用多个背景图像。列表的顺序非常重要，提供的第一个值代表离用户最近的层，列表中的后续项目将依次渲染在在其更远处的层。这是一个示例：
+CSS3 允许通过使用逗号分隔的列表为框元素使用多个背景图像。列表的顺序非常重要，提供的第一个值代表离用户最近的层，列表中的后续项目将依次渲染在其更远处的层。这是一个示例：
 
 点击此处查看代码图像
 
-```
+```css
 #div1 {
-width: 600px;
-height: 600px;
-background-image: url(lake.png), url(boat.png);
-background-position: center;
-background-repeat: no-repeat;
+    width: 600px;
+    height: 600px;
+    background-image: url(lake.png), url(boat.png);
+    background-position: center;
+    background-repeat: no-repeat;
 }
 ```
 
-
-
-
 # 图 13.7 移动径向渐变的中心
 
-* * *
+---
 
 > 提示：CSS3 渐变的功能远比我这里能描述的多得多，包括使用两种以上的颜色、透明度以及对渐变形状和大小的修改。你甚至可以在同一个元素上添加多个渐变。详情请见 W3C 文档：[`www.w3.org/TR/2011/WD-css3-images-20110217/`](http://www.w3.org/TR/2011/WD-css3-images-20110217/)
 
-* * *
+---
 
-### CSS3 文字效果
+## CSS3 文字效果
 
 CSS3 包含了一些新功能，可以帮助你操作文本。
 
-### 文字阴影 (Text Shadow)
+### 文字阴影（Text Shadow）
 
 在 CSS3 中，`text-shadow` 属性将阴应用于应用于的方式与块级元素的 `box-shadow` 属性几乎相同。你可以指定水平和垂直阴影距离，以及可选的模糊距离阴影颜色：
 
 点击此处查看代码图片
 
-```
+```css
 h3 {
-  text-shadow: 10px 10px 3px #333;
-  font-size: 26px;
+    text-shadow: 10px 10px 3px #333;
+    font-size: 26px;
 }
 ```
 
-你可以在 图 13.8 中看到示例。
+你可以在图 13.8 中看到示例。
 
 ![Image](img/image00439.jpeg)
 
 图 13.8 CSS3 文字阴影
 
-### 自动换行 (Word Wrap)
+### 自动换行（Word Wrap）
 
 如果一个单词太长，无法放入包含它的块元素中，它就会溢出容器。在 CSS3 中，你可以使用 `word-wrap` 属性强制文本换行，即使它必须在单词中间换行：
 
-```
+```css
 p {
     word-wrap: break-word;
 }
@@ -4939,15 +4480,15 @@ p {
 
 点击此处查看代码图片
 
-```
-<a href="somepage.html" class="trans" id="link1">Show Me</a
+```html
+<a href="somepage.html" class="trans" id="link1">Show Me</a>
 ```
 
 以下是 CSS 声明，显示了原始背景颜色和悬停背景颜色，以及在各种不同浏览器中执行过渡效果的声明。请注意所需的不同前缀范围，正如在本小时早些时候讨论的那样。最后一个没有前缀的声明将在该技术从实验阶段变为完成状态后成为所需的声明。
 
 点击此处查看代码图片
 
-```
+```css
 a.trans {
     background: #669999;
     -webkit-transition: background 0.5s ease;
@@ -4955,16 +4496,17 @@ a.trans {
     -o-transition: background 0.5s ease;
     transition: background 0.5s ease;
 }
+
 a.trans:hover {
     background: #999966;
 }
 ```
 
-* * *
+---
 
 > 注意：你可以在 [`css3.bradshawenterprises.com/all/`](http://css3.bradshawenterprises.com/all/) 找到关于 CSS3 过渡、变换和动画的全面信息。
 
-* * *
+---
 
 ## 在 JavaScript 中引用 CSS3 属性
 
@@ -4972,38 +4514,36 @@ CSS3 和 JavaScript 的结合带来了具有流畅性能、高可靠性和最小
 
 ### 将 CSS 属性名转换为 JavaScript
 
-正如我在第 12 小 中提到的，“JavaScript 和 CSS](#part0024.xhtml_ch12)”，为了使 CSS 属性名称与 JavaScript 命名规范兼容，CSS 属性名需要从它们样式表中的格式进行细小的转换。
+正如我在第 12 小中提到的，“JavaScript 和 CSS](#part0024.xhtml_ch12)”，为了使 CSS 属性名称与 JavaScript 命名规范兼容，CSS 属性名需要从它们样式表中的格式进行细小的转换。
 
 JavaScript 版本不再像 CSS 那样使用小写名称和连字符，而是去除了连字符并将后续字符大写化。因此，`border-radius` 变为 `borderRadius`。没有连字符的属性名（如 `width`）保持不变。
 
-你已经在第 12 小 中看到如何使用这种命名规范结合 DOM `style` 属性访问元素样式属性：
+你已经在第 12 小中看到如何使用这种命名规范结合 DOM `style` 属性访问元素样式属性：
 
 点击此处查看代码图片
 
-```
+```javascript
 var bRad = document.getElementById("div1").style.borderRadius;
 ```
 
 正如我当时提到的，虽然这很有用，但它限于具有内联样式的元素；对于在页面头 `<style>` 元素中或在外部文件中分组了 CSS 声明的元素，它将不起作用。幸运的是，有一种更好的方法，我现在将讨论。
 
-### DOM getComputedStyle() 方法
+### DOM `getComputedStyle()` 方法
 
 现在几乎所有浏览器都支持 DOM `getComputedStyle()` 方法，该方法可以访问元素的最终（即计算出的）样式。`getComputedStyle()` 方法返回一个包含各种方法的对象，包括 `getPropertyValue(property)`，它返回给定的 CSS 属性当前值：
 
+```javascript
 var myDiv = document.getElementById("div1");
 var bRad = getComputedStyle(myDiv).getPropertyValue("borderRadius");
+```
 
-* * *
+---
 
 ### 尝试一下：控制光效果
 
 让我们创建一个应用程序，使用 `box-shadow` 和 `radial-gradient`（均由 JavaScript 控制），在 HTML 页面中控制光影效果。代码在列表 13.1 中显示。
 
 **列表 13.1 控制光效果** 点击此处查看代码图片
-
-
-
-
 
 你可以在图 13.9 中看到页面的实际效果。
 
@@ -5013,11 +4553,11 @@ var bRad = getComputedStyle(myDiv).getPropertyValue("borderRadius");
 
 注意，这些效果的创建没有使用任何图像——这在 CSS3 出现之前是不可能的。
 
-* *
+---
 
 ### 使用厂商前缀设置 CSS3 属性
 
-你已经了解了如何获取 CSS 属性，但当不同的浏览器支持该属性的不同变体时（即具有不同的前缀），你该如何使用 JavaScript 来*设置*一个 CSS3 属性呢？
+你已经了解了如何获取 CSS 属性，但当不同的浏览器支持该属性的不同变体时（即具有不同的前缀），你该如何使用 JavaScript 来设置一个 CSS3 属性呢？
 
 当浏览器支持某个特定的 CSS 属性时，当你从页面元素请求该属性时，它会返回一个字符串值。（如果该属性尚未设置，则将返回空字符串。）如果你的浏览器不支持该属性，则返回 `undefined`。因此，你可以在设置 CSS3 属性之前轻松地进行测试，以确定支持该属性的种变体。
 
@@ -5026,10 +4566,9 @@ var bRad = getComputedStyle(myDiv).getPropertyValue("borderRadius");
 点击此处查看代码图像
 
 ```javascript
-function getCss3Property(properties){
-
+function getCss3Property(properties) {
     // 遍历所有可能的属性名
-    for (var i=0; i<properties.length; i++) {
+    for (var i = 0; i < properties.length; i++) {
         // 如果该元素存在此属性
         if (properties[i] in document.documentElement.style) {
             // 返回关联的字符串
@@ -5047,11 +4586,19 @@ function getCss3Property(properties){
 
 ```javascript
 // 获取正确的 CSS3 过渡属性
-var myTrans = getCss3Property(['transition', 'MozTransition', 'WebkitTransition',
-'msTransition', 'OTransition'])
+var myTrans = getCss3Property([
+    'transition',
+    'MozTransition',
+    'WebkitTransition',
+    'msTransition',
+    'OTransition'
+]);
+
 // 为 "link1" 设置 CSS 过渡
-document.getElementById("link1").style[myTrans] = "background 0.5s ease" ;
+document.getElementById("link1").style[myTrans] = "background 0.5s ease";
 ```
+
+
 
 假设我正在使用的 Firefox 版本不支持 CSS3 `transition` 属性，但支持 Mozilla 自己的版本 `MozTransition`（对应 `-moz-transition`）。
 
@@ -5067,9 +4614,9 @@ document.getElementById("link1").style[myTrans] = "background 0.5s ease" ;
 
 **A.** 在编写时，2D 变换在所有流行的浏览器中均可用，而 3D 变换在 Safari、Chrome/Chromium 和 Firefox 中支持。过渡和 3D 变换是在 IE10 中添加的。这些效果都有合理的降级处理，因此使用不支持浏览器的用户仍然可以使用，但看不到带动画的页面元素。
 
-**Q. 为什么多个不同的浏览器厂商都使用 -webkit- 前缀？**
+**Q. 为什么多个不同的浏览器厂商都使用 `-webkit-` 前缀？**
 
-**A.** WebKit 是用于在 浏览器中渲染网页的布局引擎。WebKit 引擎是许多流行浏览器的基础，包括 Safari、Chrome/Chromium 以及适用于桌面和移动平台的各种其他浏览器。
+**A.** WebKit 是用于在浏览器中渲染网页的布局引擎。WebKit 引擎是许多流行浏览器的基础，包括 Safari、Chrome/Chromium 以及适用于桌面和移动平台的各种其他浏览器。
 
 ### 工作坊
 
@@ -5079,11 +4626,11 @@ document.getElementById("link1").style[myTrans] = "background 0.5s ease" ;
 
 **1.** 下面哪项将正确指定从左下角到右上角的线性渐变（linear gradient）？
 
-**a.** `linear-gradient(upper right, #112244 , #6699cc);`
+**a.** `linear-gradient(upper right, #112244, #6699cc);`
 
-**b.** `linear-gradient(top right, #112244 , #6699cc);`
+**b.** `linear-gradient(top right, #112244, #6699cc);`
 
-**c.** `linear-gradient(to top right, #112244 , #6699cc);`
+**c.** `linear-gradient(to top right, #112244, #6699cc);`
 
 **2.** 你如何在 JavaScript 中引用 `text-shadow` 属性？
 
@@ -5103,19 +4650,19 @@ document.getElementById("link1").style[myTrans] = "background 0.5s ease" ;
 
 #### 答案
 
-**1.** c. `linear-gradient(to top right, #112244 , #6699cc);`
+**1.** c. `linear-gradient(to top right, #112244, #6699cc);`
 
 **2.** a. `textShadow`
 
 **3.** b. `background-image: url(cactus.png), url(desert.jpg);`
 
+![Image](img/image00365.jpeg)
 
+使用编写良好的库确实可以消除编写跨浏览器 JavaScript 的某些烦恼。你无法让每个浏览器始终处于可用状态，但库的编写者以及他们的用户社区会在每种主流浏览器上进行测试。
 
+![Image](img/image00365.jpeg)
 
-
-![Image](img/image00365.jpeg) 使用编写良好的库确实可以消除编写跨浏览器 JavaScript 的某些烦恼。你无法让每个浏览器始终处于可用状态，但库的编写者以及他们的用户社区会在每种主流浏览器上进行测试。
-
-![Image](img/image00365.jpeg) 大多数库的下载大小并不惊人。在需要极短下载时间的少数情况下，对于大多数你可以用于“生产环境”网站的流行库都提供了压缩版本。此外，你还可以检查库代码并只提取你需要的部分。
+大多数库的下载大小并不惊人。在需要极短下载时间的少数情况下，对于大多数你可以用于“生产环境”网站的流行库都提供了压缩版本。此外，你还可以检查库代码并只提取你需要的部分。
 
 ## 库能做什么？
 
@@ -5135,59 +4682,59 @@ document.getElementById("link1").style[myTrans] = "background 0.5s ease" ;
 
 #### Prototype Framework
 
-Prototype Framework ([`www.prototypejs.org`](http://www.prototypejs.org)) 已经存在几年了，目前版本为 1.7。Prototype 的主要优势在于它的 DOM 扩展和 Ajax 处理，尽管它还有许多其他压底技巧，包括 JSON 支持以及帮助创建和继承类的方法。
+Prototype Framework（[`www.prototypejs.org`](http://www.prototypejs.org)）已经存在几年了，目前版本为 1.7。Prototype 的主要优势在于它的 DOM 扩展和 Ajax 处理，尽管它还有许多其他压底技巧，包括 JSON 支持以及帮助创建和继承类的方法。
 
-Prototype 作为一个独立库分发，也可以作为大型项目的一部分，例如 Ruby on Rails 和 script.aculo.us JavaScript 库。
+Prototype 作为一个独立库分发，也可以作为大型项目的一部分，例如 Ruby on Rails 和 `script.aculo.us` JavaScript 库。
 
 > 注意：你将在本节稍后的部分中更详细地查看 Prototype Framework，包括一些实操代码编写。
 
 #### Dojo
 
-Dojo ([`www.dojotoolkit.org/`](http://www.dojotoolkit.org/)) 是一个开源工具包，它增强了 JavaScript 的功能以简化应用程序和用户界面的构建。它具有从额外的字符串和数学函数到动画和 AJAX 的各种功能。最新版本不仅支持所有主流桌面浏览器，还支持移动环境，包括 Apple iOS、Android 和带有“Dojo Mobile”HTML5 移动 JavaScript 框架的 Blackberry。
+Dojo（[`www.dojotoolkit.org/`](http://www.dojotoolkit.org/)）是一个开源工具包，它增强了 JavaScript 的功能以简化应用程序和用户界面的构建。它具有从额外的字符串和数学函数到动画和 AJAX 的各种功能。最新版本不仅支持所有主流桌面浏览器，还支持移动环境，包括 Apple iOS、Android 和带有“Dojo Mobile”HTML5 移动 JavaScript 框架的 Blackberry。
 
 在编写本文时，Dojo 处于 1.7 版本。
 
 ### Yahoo! UI 库
 
-Yahoo! UI Library ([`developer.yahoo.com/yui/`](http://developer.yahoo.com/yui/)) 由 Yahoo! 开发，并以开源许可向所有人提供。它包含了动画、DOM 特性、事件管理以及日历和滑块等易于使用的用户界面元素。
+Yahoo! UI Library（[`developer.yahoo.com/yui/`](http://developer.yahoo.com/yui/)）由 Yahoo! 开发，并以开源许可向所有人提供。它包含了动画、DOM 特性、事件管理以及日历和滑块等易于使用的用户界面元素。
 
 #### MooTools
 
-MooTools ([`mootools.net/`](http://mootools.net/)) 是一个紧凑、模块化的 JavaScript 框架，允许你使用简单易懂、文档良好的 API（应用程序编程接口）来构建强大、灵活且跨浏览器的代码。
+MooTools（[`mootools.net/`](http://mootools.net/)）是一个紧凑、模块化的 JavaScript 框架，允许你使用简单易懂、文档良好的 API（应用程序编程接口）来构建强大、灵活且跨浏览器的代码。
 
 ### jQuery
 
-jQuery ([`jquery.com/`](http://jquery.com/)) 是一个快速且紧凑的 JavaScript 库，它简化了各种开发任务，包括 HTML 文档遍历、事件处理、动画以及用于快速开发交互式网站的 Ajax 调用。
+jQuery（[`jquery.com/`](http://jquery.com/)）是一个快速且紧凑的 JavaScript 库，它简化了各种开发任务，包括 HTML 文档遍历、事件处理、动画以及用于快速开发交互式网站的 Ajax 调用。
 
 > 提示：你将在接下来的两个小时内了解到许多关于 jQuery 库及其相关用户界面库 jQueryUI 的信息。
 
-## 介绍 prototype.js
+## 介绍 `prototype.js`
 
-Sam Stephenson 的 prototype.js 是一个流行的 JavaScript 库，包含一系列对开发跨浏览器 JavaScript 应用非常有用的函数，包括对 Ajax 的特定支持。很快你就会看到如何通过该库对 DOM 操作、HTML 表单和 `XMLHttpRequest` 对象的强大支持来简化你的 JavaScript 代码。
+Sam Stephenson 的 `prototype.js` 是一个流行的 JavaScript 库，包含一系列对开发跨浏览器 JavaScript 应用非常有用的函数，包括对 Ajax 的特定支持。很快你就会看到如何通过该库对 DOM 操作、HTML 表单和 `XMLHttpRequest` 对象的强大支持来简化你的 JavaScript 代码。
 
-最新版本的 prototype.js 库可以从 [`prototypejs.org/`](http://prototypejs.org/) 下载。
+最新版本的 `prototype.js` 库可以从 [`prototypejs.org/`](http://prototypejs.org/) 下载。
 
 在你的 Web 应用中包含该库很简单；只需在 HTML 文档的 `<head>` 部分包含以下行即可：
 
 点击此处查看代码图片
 
-```
+```html
 <script src="prototype.js"></script>
 ```
 
-prototype.js 库包含广泛的函数，可以使编写 JavaScript 代码更快，并生成的脚本更整洁、更容易维护。
+`prototype.js` 库包含广泛的函数，可以使编写 JavaScript 代码更快，并生成的脚本更整洁、更容易维护。
 
 该库包含了提供常规编程任务快捷方式的通用函数、HTML 表单的封装器、一个封装 `XMLHttpRequest` 对象的对象等。
 
-> 警告：在编写本文时，prototype.js 处于 1.7 版本。
+> 警告：在编写本文时，`prototype.js` 处于 1.7 版本。
 
-### $() 函数
+### `$()` 函数
 
 `$()` 实际上是 `getElementById()` 方法的快捷方式。通常，为了返回某个元素的值，你会使用如下表达式：
 
 点击此处查看代码图片
 
-```
+```javascript
 var mydata = document.getElementById('someElement');
 ```
 
@@ -5197,8 +4744,8 @@ var mydata = document.getElementById('someElement');
 
 点击此处查看代码图片
 
-```
-mydataArray = $('id1','id2','id3');
+```javascript
+mydataArray = $('id1', 'id2', 'id3');
 ```
 
 在此示例中：
@@ -5209,9 +4756,9 @@ mydataArray = $('id1','id2','id3');
 
 ![Image](img/image00365.jpeg) `mydataArray[2]` 包含元素 `id3` 值。
 
-### $F() 函数
+### `$F()` 函数
 
-当将输入元素或其 ID 作为参数传递时，$F()` 函数返回表单输入字段的值。查看以下 HTML 代码段：
+当将输入元素或其 ID 作为参数传递时，`$F()` 函数返回表单输入字段的值。查看以下 HTML 代码段：
 
 点击此处查看代码图片
 
@@ -5227,20 +4774,17 @@ mydataArray = $('id1','id2','id3');
 
 在这里我们可以使用
 
-$F('input1') 返回文本框中的值，并使用 $F('input2') 返回选择框当前选中选项的值。`$F()` 函数在复选框和文本区域输入元素上同样有效，使得无论输入元素类型如何都能轻松返回元素值。
+`$F('input1')` 返回文本框中的值，并使用 `$F('input2')` 返回选择框当前选中选项的值。`$F()` 函数在复选框和文本区域输入元素上同样有效，使得无论输入元素类型如何都能轻松返回元素值。
 
-### Form 对象
+### `Form` 对象
 
-prototype.js 定义了一个 `Form` 对象，具有许多实用的方法来简化 HTML 表单操作。
-
-
-
+`prototype.js` 定义了一个 `Form` 对象，具有许多实用的方法来简化 HTML 表单操作。
 
 你可以通过调用 `getElements()` 方法返回一个表单输入字段的数组：
 
 点击此处查看代码图片
 
-```
+```javascript
 inputs = Form.getElements('thisform');
 ```
 
@@ -5248,7 +4792,7 @@ inputs = Form.getElements('thisform');
 
 点击此处查看代码图片
 
-```
+```javascript
 inputlist = Form.serialize('thisform');
 ```
 
@@ -5256,7 +4800,7 @@ inputlist = Form.serialize('thisform');
 
 点击此处查看代码图片
 
-```
+```text
 field1=value1&field2=value2&field3=value3...
 ```
 
@@ -5264,7 +4808,7 @@ field1=value1&field2=value2&field3=value3...
 
 ***
 
-## 动手尝试：使用 getElements() 方法
+## 动手尝试：使用 `getElements()` 方法
 
 让我们使用 `getElements()` 方法收集一些关于 HTML 表单的信息。正如我之前提到的，该方法返回一个包含特定表单元素的数组。
 
@@ -5289,34 +4833,32 @@ field1=value1&field2=value2&field3=value3...
 </html>
 ```
 
-对于这个示例，我们只有三个文本字段，如 图 14.1 所示。
+对于这个示例，我们只有三个文本字段，如图 14.1 所示。
 
 ![Image](img/image00441.jpeg)
 
 **图 14.1** 简单的 HTML 表单
 
-在 HTML 的 head 部分引入 prototype.js 之后，我们需要编写一个函数在点击表单按钮时执行。该函数将使用 `getElements()` 方法构建一个表单元素数组。然后，它将通过 JavaScript alert 从表单中读取名称和输入的值。
+在 HTML 的 head 部分引入 `prototype.js` 之后，我们需要编写一个函数在点击表单按钮时执行。该函数将使用 `getElements()` 方法构建一个表单元素数组。然后，它将通过 JavaScript alert 从表单中读取名称和输入的值。
 
-代码显示在 列表 14.1 中。
+代码显示在列表 14.1 中。
 
 **列表 14.1 Prototype.js 示例表单**
 
 点击此处查看代码图片
 
-***
-
 ```html
 <!DOCTYPE html>
 <html>
 <head>
-<title>Prototype.js example</title>
+    <title>Prototype.js example</title>
     <script src="prototype.js"></script>
     <script>
     function showFormFields() {
         var form = $('exampleForm');
         var message = '';
         var fields = form.getElements();
-        for(var x=0; x<fields.length;x++)  {
+        for (var x = 0; x < fields.length; x++) {
             message += "Field Name : " + fields[x].name + " Value : " + fields[x].value + "\n";
         }
         alert(message);
@@ -5324,23 +4866,26 @@ field1=value1&field2=value2&field3=value3...
     </script>
 </head>
 <body>
-  <form id="exampleForm" action="#" onsubmit="return false">
+    <form id="exampleForm" action="#" onsubmit="return false">
         Username: <input type="text" name="username" /><br/>
         Telephone: <input type="text" name="telephone" /><br/>
         Message: <input type="text" name="message" /><br/>
     </form>
-  <input type="button" value="Result" onclick="showFormFields();"/>
+    <input type="button" value="Result" onclick="showFormFields();"/>
 </body>
 </html>
 ```
 
-在 图 14.2 中你可以看到运行示例并输入一些样本数据的结果。
+
+
+
+在图 14.2 中你可以看到运行示例并输入一些样本数据的结果。
 
 ![Image](img/image00442.jpeg)
 
 **图 14.2** 使用 `getElements()` 获取表单信息
 
-***
+---
 
 ### 总结
 
@@ -5351,63 +4896,64 @@ field1=value1&field2=value2&field3=value3...
 在许多情况下，使用库可以让编写 JavaScript 变得容易得多。这些库将许多常用的对象和方法封装成更符合用户习惯的形式；你不再需要记忆它们。
 
 **Q. 我如何将第三方库引入我的页面中？**
+
 **A.** 过程根据库而略有不同。通常只需包含一个即可。
 
 **Q. 我可以使用超过一个第三方库吗？**
+
 **A.** 是的，理论上可以。
 
 #### 测验
 
 **1. 以下哪项不是？**
-**a.** Prototype
-**b.** Dojo
+
+**a.** Prototype  
+**b.** Dojo  
 **c.** jQuery
 
 **2. 你可以如何扩展 jQuery？**
-**a.** 通过编写脚本
-**b.** 通过使用脚本
+
+**a.** 通过编写脚本  
+**b.** 通过使用脚本  
 **c.** 通过编写脚本
 
 **3. 其他哪一个第三方库是？**
-**a.** Prototype
-**b.** Ajax
+
+**a.** Prototype  
+**b.** Ajax  
 **c.** jQuery
 
 #### 答案
 
-**1.** c.
-**2.** b.
+**1.** c.  
+**2.** b.  
 **3.** a.
 
 #### 练习
 
 ![Image](img/image00441.jpeg) 访问 [`prototype.org`](http://prototype.org)。
 
-***
+---
 
 ## 第 15 小时：深入了解 jQuery
 
-***
-
 本节你将学习：
 
-* 在页面中引入 jQuery
-* `$(document).ready` 
-* 选择页面元素
-* 处理 HTML 内容
-* 显示和隐藏元素
-* 元素动画
-* 链式调用
-* 处理事件
-* 使用 jQuery 进行 Ajax
-
-***
+- 在页面中引入 jQuery
+- `$(document).ready`
+- 选择页面元素
+- 处理 HTML 内容
+- 显示和隐藏元素
+- 元素动画
+- 链式调用
+- 处理事件
+- 使用 jQuery 进行 Ajax
 
 有很多 JavaScript 库可用，但 jQuery 可能是最受欢迎且最可扩展的。大量的开发者为 jQuery 贡献开源插件，你可以为你的任何应用程序找到合适的插件。广泛的插件和简单的语法使得 jQuery 成为一个极佳的库。在本小时，你将学习 jQuery 的基础知识并体验它的威力。
 
 ### 在页面中引入 jQuery
 
-在在使用 jQuery 之前，你需要将其引入页面中。有两种主要方法，将在下节详细介绍。
+在使用 jQuery 之前，你需要将其引入页面中。有两种主要方法，将在下节详细介绍。
 
 #### 下载 jQuery
 
@@ -5418,8 +4964,6 @@ field1=value1&field2=value2&field3=value3...
 ```html
 <script src="jquery-1.11.2.js"></script>
 ```
-
-
 
 当然，如果你将 jQuery 放在另一个目录中，你必须更改 `src` 属性值中所提供的（相对或绝对）路径，以反映文件的实际位置。
 
@@ -5444,7 +4988,7 @@ jQuery 官方网站目前列出了以下 CDN：
 点击此处查看代码图片
 
 ```html
-<script  src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 ```
 
 除非你有特殊理由自己托管 jQuery，否则这通常是最好的方法。
@@ -5453,7 +4997,7 @@ jQuery 官方网站目前列出了以下 CDN：
 
 如果你想确保你的代码始终使用最新版本的 jQuery，只需链接到 [`code.jquery.com/jquery-latest.min.js`](http://code.jquery.com/jquery-latest.min.js) 即可。
 
-## jQuery 的 $(document).ready 处理器
+## jQuery 的 `$(document).ready` 处理器
 
 在本书的各个地方，你都使用了 `window.onload` 处理器。jQuery 有它自己的等效方法：
 
@@ -5461,7 +5005,9 @@ jQuery 官方网站目前列出了以下 CDN：
 
 ```javascript
 $(document).ready(function() {
+
     // jQuery 代码写在这里
+
 });
 ```
 
@@ -5487,13 +5033,21 @@ jQuery 允许你通过将元素封装在 jQuery 包装器 `$` 中来选择 HTML 
 
 ```javascript
 $("span"); // 所有的 HTML span 元素
+
 $("#elem"); // id 为 "elem" 的 HTML 元素
+
 $(".classname"); // 类名为 "classname" 的 HTML 元素
+
 $("div#elem"); // ID 为 "elem" 的 <div> 元素
+
 $("ul li.menu"); // 嵌套在列表项中类名为 "menu" 的锚点
+
 $("p > span"); // 段落的直接子元素 span
+
 $("input[type=password]"); // 指定类型的输入框
+
 $("p:first"); // 页面上的第一个段落
+
 $("p:even"); // 所有偶数编号的段落
 ```
 
@@ -5501,9 +5055,13 @@ DOM 和 CSS 选择器就介绍到这里。但 jQuery 还有它自己的自定义
 
 ```javascript
 (":header"); // 标题元素 (h1 到 h6)
+
 (":button"); // 任何按钮元素（inputs 或 buttons）
+
 (":radio"); // 单选框
+
 (":checkbox"); // 复选框
+
 (":checked"); // 被选中的复选框或单选框
 ```
 
@@ -5513,7 +5071,7 @@ DOM 和 CSS 选择器就介绍到这里。但 jQuery 还有它自己的自定义
 
 jQuery 最实用的节省时间技巧之一是操作页面元素的内容。`html()` 和 `text()` 方法允许你获取和设置使用前面语句选择的任何元素的内容，而 `attr()` 则允许你获取和设置属性。
 
-#### html()
+### `html()`
 
 `html()` 方法获取任何元素或集合的 HTML。它的工作方式非常像 JavaScript 的 `innerHTML`：
 
@@ -5521,6 +5079,7 @@ jQuery 最实用的节省时间技巧之一是操作页面元素的内容。`htm
 
 ```javascript
 var htmlContent = $("#elem").html();
+
 /* htmlContent 包含 id 为 "elem" 的元素的所有 HTML */
 ```
 
@@ -5530,6 +5089,7 @@ var htmlContent = $("#elem").html();
 
 ```javascript
 $("#elem").html("<p>这是一些新内容</p>");
+
 /* id 为 "elem" 的元素的 HTML 被替换 */
 ```
 
@@ -5539,6 +5099,7 @@ $("#elem").html("<p>这是一些新内容</p>");
 
 ```javascript
 var textContent = $("#elem").text();
+
 /* textContent 包含 id 为 "elem" 的元素的所有文本（但不包括 HTML） */
 ```
 
@@ -5548,6 +5109,7 @@ var textContent = $("#elem").text();
 
 ```javascript
 $("#elem").text("这是一些新内容。");
+
 /* id 为 "elem" 的元素的内容被替换 */
 ```
 
@@ -5557,6 +5119,7 @@ $("#elem").text("这是一些新内容。");
 
 ```javascript
 $("#elem").append("<p>这是一些新内容</p>");
+
 /* 保留当前内容，但将新内容添加到末尾 */
 ```
 
@@ -5566,10 +5129,11 @@ $("#elem").append("<p>这是一些新内容</p>");
 
 ```javascript
 $("div").append("<p>这是一些新内容</p>");
+
 /* 为页面上所有的 <div> 元素添加相同的内容 */
 ```
 
-#### attr()
+### `attr()`
 
 当传递单个参数时，`attr()` 方法获取指定属性的值：
 
@@ -5597,11 +5161,9 @@ $("#elem").attr("title", "这是新标题");
 document.getElementById("elem").style.visibility = 'visible';
 ```
 
-
-
 你可以使用 jQuery 的 `show()` 和 `hide()` 方法用较少的代码来完成这些任务。正如你在接下来的代码示例所示，jQuery 方法还提供了一些实用的额外功能。
 
-#### show()
+#### `show()`
 
 让一个元素或一组元素可见的简单方法是调用 `show()` 方法：
 
@@ -5623,13 +5185,15 @@ $("div").show(); // 让所有 <div> 元素可见
 
 ```javascript
 $("#elem").show("fast", function() {
+
     // 元素显示后执行某些操作
+
 });
 ```
 
 在这里我们使用了匿名函数，但使用具名函数也完全可以。
 
-#### hide()
+#### `hide()`
 
 `hide()` 方法当然是 `show()` 的完全相反操作，允许你使用你在 `hide()` 中看到的相同可选参数来让页面元素不可见：
 
@@ -5637,11 +5201,13 @@ $("#elem").show("fast", function() {
 
 ```javascript
 $("#elem").hide("slow", function() {
+
     // 元素隐藏后执行某些操作
+
 });
 ```
 
-#### toggle()
+#### `toggle()`
 
 `toggle()` 方法更改元素或元素集合的当前状态；它会让集合中任何当前隐藏的元素变为可见，并隐藏任何正在显示的元素。`toggle()` 同样可以使用相同的可选持续时间和回调函数参数。
 
@@ -5649,11 +5215,13 @@ $("#elem").hide("slow", function() {
 
 ```javascript
 $("#elem").toggle(1000, function() {
+
     // 元素显示/隐藏后执行某些操作
+
 });
 ```
 
-> **提示**：记住 `show()`、`hide()` 和 `toggle()` 方法可以应用于元素集合，因此该集合中的元素将同时出现或消失。
+> **提示**：记住，`show()`、`hide()` 和 `toggle()` 方法可以应用于元素集合，因此该集合中的元素将同时出现或消失。
 
 ### 元素动画
 
@@ -5669,7 +5237,9 @@ jQuery 提供的某些标准效果是非常强大的。页面元素的动画曾�
 
 ```javascript
 $("#elem").fadeOut("slow", function() {
+
     // 在 fadeOut 执行完毕后执行某些操作
+
 });
 ```
 
@@ -5679,7 +5249,9 @@ $("#elem").fadeOut("slow", function() {
 
 ```javascript
 $("#elem").fadeIn(500, function() {
+
     // 在 fadeIn 执行完毕后执行某些操作
+
 });
 ```
 
@@ -5689,7 +5261,9 @@ $("#elem").fadeIn(500, function() {
 
 ```javascript
 $("#elem").fadeTo(3000, 0.5, function() {
+
     // 在 fade 执行完毕后执行某些操作
+
 });
 ```
 
@@ -5703,7 +5277,9 @@ $("#elem").fadeTo(3000, 0.5, function() {
 
 ```javascript
 $("#elem").slideDown(150, function() {
+
     // 当 slideDown 执行完毕时执行某些操作
+
 });
 ```
 
@@ -5713,7 +5289,9 @@ $("#elem").slideDown(150, function() {
 
 ```javascript
 $("#elem").slideUp("slow", function() {
+
     // 当 slideUp 执行完毕时执行某些操作
+
 });
 ```
 
@@ -5723,7 +5301,9 @@ $("#elem").slideUp("slow", function() {
 
 ```javascript
 $("#elem").slideToggle(1000, function() {
+
     // 当向上/向下滑动执行完毕时执行某些操作
+
 });
 ```
 
@@ -5735,10 +5315,15 @@ $("#elem").slideToggle(1000, function() {
 
 ```javascript
 $("#elem").animate({
+
     width: "400px",
+
     height: "500px"
+
 }, 1500, function() {
+
     // 动画完成后后执行某些操作
+
 });
 ```
 
@@ -5756,11 +5341,17 @@ $("#elem").fadeOut().fadeIn();
 
 ```html
 <!DOCTYPE html>
+```
+
+
+
+
+```html
 <html>
 <head>
     <style>
         #animateMe {
-            position:absolute;
+            position: absolute;
             width: 100px;
             height: 400px;
             top: 100px;
@@ -5783,7 +5374,7 @@ $("#elem").fadeOut().fadeIn();
 <script src="http://code.jquery.com/jquery-latest.min.js"></script>
 ```
 
-首先要做的是使用 jQuery 的 `text()` 方法为 <div> 元素添加一些文本：
+首先要做的是使用 jQuery 的 `text()` 方法为 `<div>` 元素添加一些文本：
 
 ```javascript
 $("#animateMe").text("Changing shape...")
@@ -5800,9 +5391,6 @@ $("#animateMe").animate({
 });
 ```
 
-
-
-
 当动画完成后，让我们更改元素中的文本，然后让该元素缓慢消失。我们将这两个命令进行链式调用，并使用上一次对 `animate()` 方法调用的回调函数，在动画完成后执行这些额外的命令：
 
 点击此处此处查看代码图片
@@ -5818,13 +5406,14 @@ $("#animateMe").text("Changing shape...").animate(
 );
 ```
 
-注意 `this` 的使用。因为你当前正在对 `$("#animateMe)`` 父元素执行方法，因此代码块内部的 `this` 指的是该父元素。
+注意 `this` 的使用。因为你当前正在对 `$("#animateMe")` 父元素执行方法，因此代码块内部的 `this` 指的是该父元素。
 
 最后，你需要在 DOM 准备绪后执行所有这些活动，将代码封装在 jQuery 的 `$(document).ready` 处理器中。
 
 完整的代码列表如列表 15.1 所示。使用你的文本编辑器创建此页面，并将其加载到浏览器中。
 
 ### 注意
+
 要使用存储在 CDN 上的 jQuery 版本，你的电脑需要连接到。如果你没有 Internet 连接，则需要使用本地 jQuery 副本来尝试这些示例。
 
 ### 列表 15.1 一个简单的 jQuery 动画
@@ -5837,7 +5426,7 @@ $("#animateMe").text("Changing shape...").animate(
 <head>
     <style>
         #animateMe {
-            position:absolute;
+            position: absolute;
             width: 100px;
             height: 400px;
             top: 100px;
@@ -5847,6 +5436,7 @@ $("#animateMe").text("Changing shape...").animate(
             padding: 20px;
         }
     </style>
+
     <script src="http://code.jquery.com/jquery-latest.min.js"></script>
     <script>
         $(document).ready(function() {
@@ -5862,7 +5452,7 @@ $("#animateMe").text("Changing shape...").animate(
     </script>
 </head>
 <body>
-    <div id="animateMe"></</div>>
+    <div id="animateMe"></div>
 </body>
 </html>
 ```
@@ -5870,9 +5460,11 @@ $("#animateMe").text("Changing shape...").animate(
 当页面加载后，你应该看到一个带有黑色边框的红色 `<div>` 元素，其中包含“Changing shape....”字。一旦动画到新的宽度和高度，文字将变为“Fading away...”，元素将淡出消失。图 15.1 显示了动画的发生。
 
 ![Image](img/image0043.jpeg)
+
 图 15.1 一个简单的动画
 
 ### 处理事件
+
 在 jQuery 中，你可以通过多种方式向元素或元素集合附加事件处理器。首先，你可以像这样添加事件处理器：
 
 ```javascript
@@ -5887,13 +5479,14 @@ $("a").click(function() {
 function hello() {
     alert("Hello from jQuery");
 }
+
 $("a").click(hello);
 ```
 
 在这两个示例中，当锚点被点击时将执行该函数。你在 jQuery 中使用的其他常见事件包括 `blur`、`focus`、`hover`、`keypress`、`change`、`mousemove`、`resize`、`scroll`、`submit` 和 `select`。为了帮助你添加多个事件处理器，jQuery 以跨浏览器的方式封装了 JavaScript 方法 `attachEvent` 和 `addEventListener`：
 
 ```javascript
-$("a").on('click', hello);
+$("a").on("click", hello);
 ```
 
 `on()` 方法可以将处理器附加到原始页面中的元素以及动态添加到 DOM 中的元素上。
@@ -5901,59 +5494,65 @@ $("a").on('click', hello);
 注意 `on()` 方法是在 jQuery 1.7 中引入的，它是几个事件处理方法的推荐替代方案，包括 `bind()`、`delegate()` 和 `live()`。请参阅 jQuery 文档获取完整详情。
 
 ### 总结
+
 jQuery 是一个功能丰富且非常流行的 JavaScript 库，具有易于使用的 API，可以在大多数浏览器中运行。在这一小时中，你深入了解了 jQuery 的基础知识，并学习了它如何帮助你编写简洁的跨浏览器应用程序。
 
 ### 问答
+
 **Q. jQuery 来自于哪里？**
-**A.** jQuery 由 John Resig 编写并于 2006 年发布。目前有几个 jQuery 项目，包括 jQuery Core（本节使用）和 jQuery UI（你将在第 16 小 中学习）。项目由 John 及其志愿者团队正在积极开发。你可以在 jquery.org 读取有关该团队和项目的信息。
+
+**A.** jQuery 由 John Resig 编写并于 2006 年发布。目前有几个 jQuery 项目，包括 jQuery Core（本节使用）和 jQuery UI（你将在第 16 小 中学习）。项目由 John 及其志愿者团队正在积极开发。你可以在 `jquery.org` 读取有关该团队和项目的信息。
 
 **Q. 是否可以与其他库一起使用 jQuery？会有冲突吗？**
+
 **A.** 是的，jQuery 可以与其他库一起使用。jQuery 提供了 `jQuery.noConflict()` 方法来防止冲突。你可以在 [`docs.jquery.com/Using_jQuery_with_Other_Libraries`](http://docs.jquery.com/Using_jQuery_with_Other_Libraries) 阅读相关内容。
 
 ### 工作坊
-在阅读答案 章节之前，尝试回答所有问题。
+
+在阅读答案章节之前，尝试回答所有问题。
 
 #### 测验
-1](#part0028.xhtml_ch15ans01). 你如何选择所有 `class = "sidebar"` 的页面元素？
-a. `$(".sidebar")`
-b. `$("class:sidebar")`
-c. `$(sidebar)`
 
-2](#part0028.xhtml_ch15ans02). 表达式 `$("p:first").show()` 什么？
-a. 在显示任何其他元素之前显示段元素
-b. 让页面上的第一个段元素可见
-c. 让所有段元素的第一行可见
+1. [你如何选择所有 `class = "sidebar"` 的页面元素？](#part0028.xhtml_ch15ans01)  
+   a. `$(".sidebar")`  
+   b. `$("class:sidebar")`  
+   c. `$(sidebar)`
 
-3](#part0028.xhtml_ch15ans03). 当应用于淡入、滑入和动画时，值“fast”等同于
-a. 1 秒
-b. 600 毫秒
-c. 200 毫秒
+2. [表达式 `$("p:first").show()` 什么？](#part0028.xhtml_ch15ans02)  
+   a. 在显示任何其他元素之前显示段元素  
+   b. 让页面上的第一个段元素可见  
+   c. 让所有段元素的第一行可见
+
+3. [当应用于淡入、滑入和动画时，值“fast”等同于](#part0028.xhtml_ch15ans03)  
+   a. 1 秒  
+   b. 600 毫秒  
+   c. 200 毫秒
 
 #### 答案
-1](#part0028.xhtml_ch15ans01). a. `$(".sidebar")`
-2](#part0028.xhtml_ch15ans02). b. 让页面上的第一个段元素可见
-3](#part0028.xhtml_ch15ans03). c. 200 毫秒
+
+1. [a. `$(".sidebar")`](#part0028.xhtml_ch15ans01)
+2. [b. 让页面上的第一个段元素可见](#part0028.xhtml_ch15ans02)
+3. [c. 200 毫秒](#part0028.xhtml_ch15ans03)
 
 #### 练习
+
 ![Image](img/image0043.jpeg) 复习书中之前的示例程序。尝试使用 jQuery 重写它们。
 
-![Image](img/image0043.jpeg) 访问 jquery.com 站点并查看文档和示例，特别是我们这里没有讨论的许多 jQuery 方法。
+![Image](img/image0043.jpeg) 访问 `jquery.com` 站点并查看文档和示例，特别是我们这里没有讨论的许多 jQuery 方法。
 
-## 第 16 小节。jQuery UI 用户界面库
+## 第 16 小节：jQuery UI 用户界面库
 
 你将在本节学习：
-![Image](img/image0043.jpeg) jQuery UI 是什么
-![Image](img/image0043.jpeg) 使用 ThemeRoller
-![Image](img/image0043.jpeg) 如何在页面中包含 jQuery UI
-![Image](img/image0043.jpeg) 交互：拖拽、释放、调整大小和排序
-![Image](img/image0043.jpeg) 使用部件：折叠面板、日期选择器和标签
+
+- ![Image](img/image0043.jpeg) jQuery UI 是什么
+- ![Image](img/image0043.jpeg) 使用 ThemeRoller
+- ![Image](img/image0043.jpeg) 如何在页面中包含 jQuery UI
+- ![Image](img/image0043.jpeg) 交互：拖拽、释放、调整大小和排序
+- ![Image](img/image0043.jpeg) 使用部件：折叠面板、日期选择器和标签
 
 在上一节中你学习了 jQuery 开源 JavaScript 库。在本节中你将看到如何使用它的辅助库 jQuery UI。
 
 jQuery UI 提供了高级效果和可主题的小部件，帮助你构建交互式 Web 应用程序。
-
-
-
 
 ![Image](img/image00365.jpeg) **主题构建**——让你的网站在所有用户界面组件中具有一致的外观和感受。你可以在 [`jqueryui.com/themeroller/`](http://jqueryui.com/themeroller/) 使用 `ThemeRoller` 工具。`ThemeRoller` 在线工具允许你从预写设计的库中选择一个主题，或者以一个现有主题为起点创建一个自定义主题。
 
@@ -5971,11 +5570,9 @@ jQuery UI CSS 框架是一组涵盖了广泛用户界面需求的类。使用 `T
 
 解压下载的内容后，你拥有以下目录：
 
-`/css/`
-
-`/development-bundle/`
-
-`/js/`
+- `/css/`
+- `/development-bundle/`
+- `/js/`
 
 `development-bundle` 目录包含 jQuery UI 源码、演示和文档。如果你不打算更改任何 jQuery UI 代码，可以安全地删除它。
 
@@ -6017,8 +5614,6 @@ $("#draggable").draggable();
 
 点击此处查看代码图像
 
-* * *
-
 ```html
 <!DOCTYPE html>
 <html>
@@ -6043,13 +5638,11 @@ $("#draggable").draggable();
     </script>
 </head>
 <body>
-    <div id="dragdiv"> Drag this element around the page!</div>
+    <div id="dragdiv">Drag this element around the page!</div>
 </body>
 </html>
 ```
 
-* * *
-
 当页面加载后，元素 `<div id="dragdiv">` 变为可拖拽的：
 
 点击此处查看代码图像
@@ -6060,23 +5653,7 @@ $(function() {
 });
 ```
 
-然后你可以通过点击元素任何部分的鼠标来在页面上拖动项目，如 图 16.1 所示。
-
-![Image](img/image00444.jpeg)
-
-**图 16.1** 拖放的主**
-
-当页面加载后，元素 `<div id="dragdiv">` 变为可拖拽的：
-
-点击此处查看代码图像
-
-```javascript
-$(function() {
-    $("#dragdiv").draggable();
-});
-```
-
-然后你可以通过点击元素任何部分的鼠标来在页面上拖动项目，如 图 16.1 所示。
+然后你可以通过点击元素任何部分的鼠标来在页面上拖动项目，如图 16.1 所示。
 
 ![Image](img/image00444.jpeg)
 
@@ -6092,7 +5669,7 @@ $(function() {
 });
 ```
 
-然后你可以通过点击元素任何部分的鼠标来在页面上拖动项目，如 图 16.1 所示。
+然后你可以通过点击元素任何部分的鼠标来在页面上拖动项目，如图 16.1 所示。
 
 ![Image](img/image00444.jpeg)
 
@@ -6108,22 +5685,22 @@ $(function() {
 });
 ```
 
-*(注：我发现原文文本中存在大量重复段落，根据“不要重复输出原文”的原则，我在译文中仅保留了逻辑内容。以下是完整的整合译文：)*
 
-[content]
-![Image](img/image00365.jpeg) **主题构建**——让你的网站在所有用户界面组件中具有一致的外观和感受。你可以在 [`jqueryui.com/themeroller/`](http://jqueryui.com/themeroller/) 使用 `ThemeRoller` 工具。`ThemeRoller` 在线工具允许你从预写设计的库中选择一个主题，或者以一个现有主题为起点创建一个自定义主题。
 
-在这一小时中，你将看到如何使用一些更流行的插件。得益于 jQuery UI 一致的用户界面，你将可以通过 jQuery 文档轻松探索许多可用插件。
 
-### 如何在你的页面中引入 jQuery UI
+![Image](img/image00365.jpeg) **主题构建**——让你的网站在所有用户界面组件中具有一致的外观和感受。你可以在[`jqueryui.com/themeroller/`](http://jqueryui.com/themeroller/)使用`ThemeRoller`工具。`ThemeRoller`在线工具允许你从预写设计的库中选择一个主题，或者以一个现有主题为起点创建一个自定义主题。
 
-第一步是访问 [`jqueryui.com/themeroller/`](http://jqueryui.com/themeroller/) 上的 jQuery ThemeRoller 在线应用程序。
+在这一小时中，你将看到如何使用一些更流行的插件。得益于`jQuery UI`一致的用户界面，你将可以通过`jQuery`文档轻松探索许多可用插件。
 
-#### 使用 ThemeRoller
+### 如何在你的页面中引入`jQuery UI`
 
-jQuery UI CSS 框架是一组涵盖了广泛用户界面需求的类。使用 `ThemeRoller` 工具，你可以构建你自己的界面样式，既可以从零开始，也可以基于 [`jqueryui.com/themeroller/`](http://jqueryui.com/themeroller/) 库中提供的任何大量示例。
+第一步是访问[`jqueryui.com/themeroller/`](http://jqueryui.com/themeroller/)上的`jQuery ThemeRoller`在线应用程序。
 
-一旦你决定了某种样式，jQuery UI 提供了一个下载生成器，只打包你需要的组件。它还会处理你所选项目的任何依赖项，因此你不会下载一个缺少所有所需辅助文件的部件或交互。你只需要下载并解压 zip 文件即可。
+#### 使用`ThemeRoller`
+
+`jQuery UI CSS`框架是一组涵盖了广泛用户界面需求的类。使用`ThemeRoller`工具，你可以构建你自己的界面样式，既可以从零开始，也可以基于[`jqueryui.com/themeroller/`](http://jqueryui.com/themeroller/)库中提供的任何大量示例。
+
+一旦你决定了某种样式，`jQuery UI`提供了一个下载生成器，只打包你需要的组件。它还会处理你所选项目的任何依赖项，因此你不会下载一个缺少所有所需辅助文件的部件或交互。你只需要下载并解压`zip`文件即可。
 
 解压下载的内容后，你拥有以下目录：
 
@@ -6133,47 +5710,43 @@ jQuery UI CSS 框架是一组涵盖了广泛用户界面需求的类。使用 `T
 
 `/js/`
 
-`development-bundle` 目录包含 jQuery UI 源码、演示和文档。如果你不打算更改任何 jQuery UI 代码，可以安全地删除它。
+`development-bundle`目录包含`jQuery UI`源码、演示和文档。如果你不打算更改任何`jQuery UI`代码，可以安全地删除它。
 
-通常，在任何要使用 jQuery UI 部件和交互的页面上，你都需要从剩余文件中引入你的主题、jQuery 和 jQuery UI：
-
-点击此处查看代码图像
+通常，在任何要使用`jQuery UI`部件和交互的页面上，你都需要从剩余文件中引入你的主题、`jQuery`和`jQuery UI`：
 
 ```html
 <link rel="stylesheet" type="text/css" href="jquery-ui.min.css"/>
+
 <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+
 <script src="http://codeorigin.jquery.com/ui/1.10.3/jquery-ui.min.js"></script>
 ```
 
-如果你使用标准库主题之一，你也可以链接到内容分发网络（CDN）上你需要的所有文件：
-
-点击此处查看代码图像
+如果你使用标准库主题之一，你也可以链接到内容分发网络（`CDN`）上你需要的所有文件：
 
 ```html
 <link rel="stylesheet" type="text/css" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/themes/smoothness/jquery-ui.css"/>
+
 <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+
 <script src="http://codeorigin.jquery.com/ui/1.10.3/jquery-ui.min.js"></script>
 ```
 
 ### 交互
 
-让我们看看可以使用可以使用 UI 做的一些事情，以改进页面元素与用户交互的方式。
+让我们看看可以使用`UI`做的一些事情，以改进页面元素与用户交互的方式。
 
 ### 拖放
 
-使用 jQuery UI 让一个元素变得可拖拽再简单不过了：
+使用`jQuery UI`让一个元素变得可拖拽再简单不过了：
 
 ```javascript
 $("#draggable").draggable();
 ```
 
-列表 16.1 显示了你如何在 HTML 页面中实现这一点。
+列表16.1显示了你如何在`HTML`页面中实现这一点。
 
-**列表 16.1 让页面元素变为可拖拽**
-
-点击此处查看代码图像
-
-* * *
+**列表16.1 让页面元素变为可拖拽**
 
 ```html
 <!DOCTYPE html>
@@ -6204,11 +5777,7 @@ $("#draggable").draggable();
 </html>
 ```
 
-* * *
-
-当页面加载后，元素 `<div id="dragdiv">` 变为可拖拽的：
-
-点击此处查看代码图像
+当页面加载后，元素`<div id="dragdiv">`变为可拖拽的：
 
 ```javascript
 $(function() {
@@ -6216,43 +5785,38 @@ $(function() {
 });
 ```
 
-然后你可以通过点击元素任何部分的鼠标来在页面上拖动项目，如 图 16.1 所示。
+然后你可以通过点击元素任何部分的鼠标来在页面上拖动项目，如图16.1所示。
 
 ![Image](img/image00444.jpeg)
 
-**图 16.1** 拖放的主
-
-
-
-
-
-点击此处查看代码图像
+**图16.1** 拖放的主
 
 ```javascript
 $(function() {
     $("#dragdiv").draggable();
+
     $("#dropdiv").droppable({
-        drop: function() { $("#dragdiv").text("Dropped!"); },
-        out: function() { $("#dragdiv").text("Off and running again ..."); }
+        drop: function() {
+            $("#dragdiv").text("Dropped!");
+        },
+        out: function() {
+            $("#dragdiv").text("Off and running again ...");
+        }
     }).resizable();
 });
 ```
 
 ### 排序
 
-拖放功能的进一步封装方法是 `sortable()` 方法，你可以将将其添加到列表项中以使列表变得可排序：
+拖放功能的进一步封装方法是`sortable()`方法，你可以将其添加到列表项中以使列表变得可排序：
 
 ```javascript
 $("#sortMe").sortable();
 ```
 
-Listing 16.3 演示了你如何将此方法应用于无序列表元素。
+Listing 16.3演示了你如何将此方法应用于无序列表元素。
 
-**列表 16.3 使元素变为可排序**
-
-点击此处查看代码图像
-
-***
+**列表16.3 使元素变为可排序**
 
 ```html
 <!DOCTYPE html>
@@ -6280,13 +5844,11 @@ Listing 16.3 演示了你如何将此方法应用于无序列表元素。
 </html>
 ```
 
-***
-
-将元素拖到列表中的新位置会导致列表排序，在完成投放时，列表会“吸附”到新的顺序，如图 16.4 所示。
+将元素拖到列表中的新位置会导致列表排序，在完成投放时，列表会“吸附”到新的顺序，如图16.4所示。
 
 ![Image](img/image00447.jpeg)
 
-**图 16.4** 排序列表
+**图16.4** 排序列表
 
 #### 使用组件（Widgets）
 
@@ -6294,24 +5856,21 @@ Listing 16.3 演示了你如何将此方法应用于无序列表元素。
 
 #### 手风琴（Accordion）
 
-手风琴组件允许用户一次只展开 `<<div>` 元素列表中的一个，其余元素收缩为仅保留一个标题栏。
+手风琴组件允许用户一次只展开`<<div>`元素列表中的一个，其余元素收缩为仅保留一个标题栏。
 
 首先，你需要在语义层中添加数据，使用标题和内容面板对：
-
-点击此处查看代码图像
 
 ```html
 <div id="accordion">
     <h3><a href="#">First header</a></h3>
     <div>First content</div>
+
     <h3><a href="#">Second header</a></h3>
     <div>Second content</div>
 </div>
 ```
 
-接下来，你可以通过在外部容器元素上调用 `accordion()` 方法来激活手风琴：
-
-点击此处查看代码图像
+接下来，你可以通过在外部容器元素上调用`accordion()`方法来激活手风琴：
 
 ```javascript
 $(function() {
@@ -6319,13 +5878,9 @@ $(function() {
 });
 ```
 
-Listing 16.4 显示了一个示例应用程序，这里将餐厅菜单的午餐选项分为手风琴的各个折叠部分。
+Listing 16.4显示了一个示例应用程序，这里将餐厅菜单的午餐选项分为手风琴的各个折叠部分。
 
-**列表 16.4 使用手风琴组件**
-
-点击此处查看代码图像
-
-***
+**列表16.4 使用手风琴组件**
 
 ```html
 <!DOCTYPE html>
@@ -6343,6 +5898,7 @@ Listing 16.4 显示了一个示例应用程序，这里将餐厅菜单的午餐�
 </head>
 <body>
     <h2>Choose from the following menu options:</h2>
+
     <div id="accordion">
         <h3><a href="#">Starters</a></h3>
         <div>
@@ -6353,6 +5909,7 @@ Listing 16.4 显示了一个示例应用程序，这里将餐厅菜单的午餐�
                 <li>Chicken Liver</li>
             </ul>
         </div>
+
         <h3><a href="#">Main Courses</a></h3>
         <div>
             <ul>
@@ -6362,6 +5919,7 @@ Listing 16.4 显示了一个示例应用程序，这里将餐厅菜单的午餐�
                 <li>Roast Chicken</li>
             </ul>
         </div>
+
         <h3><a href="#">Desserts</a></h3>
         <div>
             <ul>
@@ -6376,13 +5934,11 @@ Listing 16.4 显示了一个示例应用程序，这里将餐厅菜单的午餐�
 </html>
 ```
 
-***
-
-图 16.5 显示了手风琴组件的工作。它不允许同时打开多个面板；点击 Starters 会打开该部分，同时关闭 Main Courses。
+图16.5显示了手风琴组件的工作。它不允许同时打开多个面板；点击`Starters`会打开该部分，同时关闭`Main Courses`。
 
 ![Image](img/image00448.jpeg)
 
-**图 16.5** 手风琴组件
+**图16.5** 手风琴组件
 
 #### 日期选择器（Date Picker）
 
@@ -6390,27 +5946,19 @@ Listing 16.4 显示了一个示例应用程序，这里将餐厅菜单的午餐�
 
 假设你有一个接收日期的表单字段：
 
-点击此处查看代码图像
-
 ```html
 <input type="text" id="datepicker">
 ```
 
 你可以用一行代码为该字段实现日期选择器：
 
-点击此处查看代码图像
-
 ```javascript
 $("#datepicker").datepicker();
 ```
 
-Listing 16.5 有一个你可以尝试的完整示例。
+Listing 16.5有一个你可以尝试的完整示例。
 
-**列表 16.5** 使用日期选择器组件
-
-点击此处查看代码图像
-
-***
+**列表16.5** 使用日期选择器组件
 
 ```html
 <!DOCTYPE html>
@@ -6432,25 +5980,19 @@ Listing 16.5 有一个你可以尝试的完整示例。
 </html>
 ```
 
-***
-
-图 16.6 显示了日期选择器。
+图16.6显示了日期选择器。
 
 ![Image](img/image00449.jpeg)
 
-**图 16.6** 日期选择器
+**图16.6** 日期选择器
 
 #### 标签页（Tabs）
 
 在上一节中，你看到了如何使用手风琴组件通过显示选项列表中的一个面板来节省页面区域。
 
-另一种实现这种节省空间的常用方法是使用标签页。jQuery 再次让它变得简单。查看 Listing 16.6 中的代码。
+另一种实现这种节省空间的常用方法是使用标签页。`jQuery`再次让它变得简单。查看Listing 16.6中的代码。
 
-**列表 16.6** 标签页界面
-
-点击此处查看代码图像
-
-***
+**列表16.6** 标签页界面
 
 ```html
 <!DOCTYPE html>
@@ -6463,35 +6005,14 @@ Listing 16.5 有一个你可以尝试的完整示例。
     <script>
         $(function() {
             $("#tabs").tabs();
-        });
-    </script>
-</head>
-<body>
-    <div id="tabs">
-        <ul>
-            <li><a href="#tabs-1">Home</a></li>
-            <li><a href="#tabs-2">About Us</a></li>
-            <li><a href="#tabs-3">Products</a></li>
-        </ul>
-        <div id="tabs-1">
-            <p>Welcome to our online store...</p>
-        </div>
-        <div id="tabs-2">
-            <p>We've been selling widgets for 5 years...</p>
-        </div>
-        <div id="tabs-3">
-            <p>We sell all kinds of widgets...</p>
-        </div>
-    </div>
-</body>
-</html>
 ```
 
-***
+
+
+
+### 标签页（Tabs）组件
 
 标签页包含在无序列表中：
-
-点击此处查看代码图像
 
 ```html
 <ul>
@@ -6501,7 +6022,7 @@ Listing 16.5 有一个你可以尝试的完整示例。
 </ul>
 ```
 
-每个标签页的标题都封装在锚点元素内部，其 `href` 指向包含该面板内容的 `div` 的 ID：
+每个标签页的标题都封装在锚点元素内部，其`href`指向包含该面板内容的`div`的ID：
 
 ```html
 <div id="tabs-1">
@@ -6509,13 +6030,10 @@ Listing 16.5 有一个你可以尝试的完整示例。
 </div>
 ```
 
-
-
-
-上述所有内容封装在一个具有 `id="tabs"` 的 `div` 容器中，要激活标签页界面，你只需要对该容器元素调用 `tabs()` 方法：
+上述所有内容封装在一个具有`id="tabs"`的`div`容器中，要激活标签页界面，你只需要对该容器元素调用`tabs()`方法：
 
 ```javascript
-$("#("#tabs").tabs();
+$("#tabs").tabs();
 ```
 
 激活后，界面将如 图 16.7 所示。
@@ -6526,7 +6044,7 @@ $("#("#tabs").tabs();
 
 ### 总结
 
-在本节中，你学习了如何使用 `jQuery` 以及使用 `jQuery UI` 库构建流畅的用户界面。你了解了如何快速为页面添加交互和组件，以及如何使用 `ThemeRoller` 应用为你的界面元素设置整体样式。
+在本节中，你学习了如何使用`jQuery`以及使用`jQuery UI`库构建流畅的用户界面。你了解了如何快速为页面添加交互和组件，以及如何使用`ThemeRoller`应用为你的界面元素设置整体样式。
 
 ### 问答
 
@@ -6536,7 +6054,7 @@ $("#("#tabs").tabs();
 
 **问：如何让我页面上的其他元素具有与 jQuery UI 生成的相同的样式？**
 
-**答：** 当 `jQuery UI` 生成标记时，它会为新创建的标记项应用类。这些类对应于 `jQuery UI` CSS 框架中的 CSS 声明。每个组件的详细信息请参阅 `jQuery UI` 文档。
+**答：** 当`jQuery UI`生成标记时，它会为新创建的标记项应用类。这些类对应于`jQuery UI`CSS框架中的CSS声明。每个组件的详细信息请参阅`jQuery UI`文档。
 
 ### 工作坊
 
@@ -6544,15 +6062,15 @@ $("#("#tabs").tabs();
 
 #### 测验
 
-**1。** 要要在页面中使用 `jQuery UI`，每个页面必须包含：
+**1.** 要要在页面中使用`jQuery UI`，每个页面必须包含：
 
-**a.** `jQuery` 和 `jQuery UI` JavaScript 库以及指向 `jQuery UI` 主题 CSS 文件的链接
+**a.** `jQuery`和`jQuery UI`JavaScript库以及指向`jQuery UI`主题CSS文件的链接
 
-**b.** 仅包含 `jQuery` 和 `jQuery UI` 库
+**b.** 仅包含`jQuery`和`jQuery UI`库
 
-**c.** 仅包含 `jQuery UI` JavaScript 库以及指向 `jQuery UI` 主题 CSS 文件的链接
+**c.** 仅包含`jQuery UI`JavaScript库以及指向`jQuery UI`主题CSS文件的链接
 
-**2。** 如何让一个 `id = "parking"` 的 `<div>` 元素能够接收掉在其上的项？
+**2.** 如何让一个`id = "parking"`的`<div>`元素能够接收掉在其上的项？
 
 **a.** `$("#parking").drop()`
 
@@ -6560,7 +6078,7 @@ $("#("#tabs").tabs();
 
 **c.** `$("#parking").droppable()`
 
-**3。** 手风琴组件能够显示：
+**3.** 手风琴组件能够显示：
 
 **a.** 一次显示一个内容区域
 
@@ -6570,17 +6088,17 @@ $("#("#tabs").tabs();
 
 #### 答案
 
-**1。** a. `jQuery` 和 `jQuery UI` JavaScript 库以及指向 `jQuery UI` 主题 CSS 文件的链接
+**1.** a. `jQuery`和`jQuery UI`JavaScript库以及指向`jQuery UI`主题CSS文件的链接
 
-**2。** c. `$("#parking").droppable()`
+**2.** c. `$("#parking").droppable()`
 
-**3。** a. 手风琴一次显示一个内容区域。
+**3.** a. 手风琴一次显示一个内容区域。
 
 #### 练习
 
-![Image](img/image00365.jpeg) 使用 `ThemeRoller` 下载你喜的 `jQuery UI` 主题。使用它来复现本节的一些示例脚本，并将你的页面外观与图中所示的页面进行对比。
+![Image](img/image00365.jpeg) 使用`ThemeRoller`下载你喜的`jQuery UI`主题。使用它来复现本节的一些示例脚本，并将你的页面外观与图中所示的页面进行对比。
 
-![Image](img/image00365.jpeg) 访问 `jQuery UI` 文档 [`docs.jquery.com/UI/`](http://docs.jquery.com/UI/)，研究某些组件如何通过选项进一步自定义，并尝试以本节的列表为起点尝试一些示例。
+![Image](img/image00365.jpeg) 访问`jQuery UI`文档 [`docs.jquery.com/UI/`](http://docs.jquery.com/UI/)，研究某些组件如何通过选项进一步自定义，并尝试以本节的列表为起点尝试一些示例。
 
 ## 第 17 小节 jQuery 中的 Ajax
 
@@ -6588,17 +6106,15 @@ $("#("#tabs").tabs();
 
 本节你将学习：
 
-![Image](img/image00365.jpeg) 什么是 Ajax 以及它如何帮助用户体验
-
-![Image](img/image00365.jpeg) 如何在原生 JavaScript 中实现 Ajax
-
-![Image](img/image00365.jpeg) 如何使用 `jQuery` 流畅简单地实现 Ajax
+- 什么是 Ajax 以及它如何帮助用户体验
+- 如何在原生 JavaScript 中实现 Ajax
+- 如何使用`jQuery`流畅简单地实现 Ajax
 
 * * *
 
 JavaScript 是一种客户端脚本语言，你目前为止使用的所有示例都完全限于客户端编码。Ajax 允许你在后台与服务器通信，并在不刷新页面的情况下将结果显示在你的页面上。这让你能够创建与用户交互得更流畅的页面。
 
-在本节中，你将学习支撑 Ajax 的技术基础，以及如何使用 `jQuery` 让整个过程变得流畅而简单。
+在本节中，你将学习支撑 Ajax 的技术基础，以及如何使用`jQuery`让整个过程变得流畅而简单。
 
 ### Ajax 的剖析
 
@@ -6640,44 +6156,35 @@ Ajax 允许你为 Web 应用程序添加桌面应用程序中常见的的功能�
 
 当你点击超链接或提交 HTML 表单时，你向服务器发送 HTTP 请求，服务器通过向你提供新或修订页面来响应。然而，为了让 Web 应用程序异步工作，你需要一种方法在不关联显示新页的情况下向服务器发送 HTTP 请求。
 
-我们可以通过 `XMLHttpRequest` 对象来实现。这个 JavaScript 对象能够连接到服务器并发布 HTTP 请求，而不需要关联的页面加载。
+我们可以通过`XMLHttpRequest`对象来实现。这个 JavaScript 对象能够连接到服务器并发布 HTTP 请求，而不需要关联的页面加载。
 
 * * *
 
 提示
 
-作为安全措施的一部分，`XMLHttpRequest` 对象通常只能调用与调用页面相同域内的 URL，不能直接调用远程服务器。
+作为安全措施的一部分，`XMLHttpRequest`对象通常只能调用与调用页面相同域内的 URL，不能直接调用远程服务器。
 
 * * *
 
 #### 不同浏览器的不同规则
 
-
-
-
 由于你无法预知用户使用的是什么浏览器、版本或操作系统，你必须让你的代码动态调整其行为，以确保对象实例能够成功创建。
 
-对于大多数支持 `XMLHttpRequest` 作为原生对象的浏览器（Firefox、Opera 以及其他浏览器，以及 Internet Explorer 的后续版本），创建该对象的实例是非常直接的。以下代码创建了一个名为 `request` 的 `XMLHttpRequest` 对象：
-
-点击此处查看代码图片
+对于大多数支持`XMLHttpRequest`作为原生对象的浏览器（Firefox、Opera 以及其他浏览器，以及 Internet Explorer 的后续版本），创建该对象的实例是非常直接的。以下代码创建了一个名为`request`的`XMLHttpRequest`对象：
 
 ```javascript
 var request = new XMLHttpRequest();
 ```
 
-为了在较早版本的 Microsoft Internet Explorer 中实现相同的结果，你需要创建一个 `ActiveX` 对象。例如所示：
-
-点击此处查看代码图片
+为了在较早版本的 Microsoft Internet Explorer 中实现相同的结果，你需要创建一个`ActiveX`对象。例如所示：
 
 ```javascript
 var request = new ActiveXObject("Microsoft.XMLHTTP");
 ```
 
-再次，这为你的新对象分配了名称 `request`。
+再次，这为你的新对象分配了名称`request`。
 
 为了让情况变得稍微复杂一点，某些较早版本的 Internet Explorer 安装了不同版本的 Microsoft XML 解析器；在这些情况下，你需要使用以下指令：
-
-点击此处查看代码图片
 
 ```javascript
 var request = new ActiveXObject("Msxml2.XMLHTTP");
@@ -6685,7 +6192,7 @@ var request = new ActiveXObject("Msxml2.XMLHTTP");
 
 ### 方法与属性
 
-现在你已经创建了 `XMLHttpRequest` 对象的实例，让我们参考表 17.1 来看对象的一些属性和方法。
+现在你已经创建了`XMLHttpRequest`对象的实例，让我们参考表 17.1 来看对象的一些属性和方法。
 
 ![Image](img/image00453.jpeg)
 
@@ -6701,13 +6208,13 @@ var request = new ActiveXObject("Msxml2.XMLHTTP");
 
 然而，通过异步服务器请求，此类通信是在后台进行的，且请求的完成并不一定与屏幕刷新或新页面的加载同步。因此，你必须其他安排来发现服务器在处理你的请求时取得了什么进展。
 
-`XMLHttpRequest` 对象拥有一个方便的属性来报告服务器请求的进度。你可以使用 JavaScript 例程检查此属性，以确定服务器完成任务的时间，并供你使用结果。
+`XMLHttpRequest`对象拥有一个方便的属性来报告服务器请求的进度。你可以使用 JavaScript 例程检查此属性，以确定服务器完成任务的时间，并供你使用结果。
 
 因此，你的 Ajax 武器库必须包含一个例程来监控请求的状态并据此采取行动。我们将在本节的稍晚些时候详细讨论这一点。
 
 ### 服务器端发生了什么？
 
-对于服务器端脚本而言，来自你的 `XMLHttpRequest` 对象的通信只是另一个 HTTP 请求。Ajax 应用并不不在乎服务器上存在什么语言或运行环境；只要客户端 Ajax 层能够从服务器接收到及时且格式正确的 HTTP 响应，一切就能运行良好良好。
+对于服务器端脚本而言，来自你的`XMLHttpRequest`对象的通信只是另一个 HTTP 请求。Ajax 应用并不不在乎服务器上存在什么语言或运行环境；只要客户端 Ajax 层能够从服务器接收到及时且格式正确的 HTTP 响应，一切就能运行良好良好。
 
 ### 处理服务器响应
 
@@ -6727,9 +6234,7 @@ var request = new ActiveXObject("Msxml2.XMLHTTP");
 
 正如你可能意识到的那样，从零开始编写 Ajax 可能很繁琐。幸运的是，jQuery 为你解决了这个问题。
 
-当你想要从服务器获取数据时，可以使用 `get()` 方法：
-
-点击此处查看代码图片
+当你想要从服务器获取数据时，可以使用`get()`方法：
 
 ```javascript
 $.get("server.php", {
@@ -6742,9 +6247,7 @@ $.get("server.php", {
 
 #### post()
 
-`post()` 的语法基本上是相同的。
-
-点击此处查看代码图片
+`post()`的语法基本上是相同的。
 
 ```javascript
 $.post("server.php", {
@@ -6757,9 +6260,7 @@ $.post("server.php", {
 
 #### load()
 
-如果你只是想将数据获取到元素中，`load()` 可能足够。
-
-点击此处查看代码图片
+如果你只是想将数据获取到元素中，`load()`可能足够。
 
 ```javascript
 $("#element").load("server.php");
@@ -6767,13 +6268,11 @@ $("#element").load("server.php");
 
 #### Ajax()
 
-这两个方法相似，只是使用了不同的请求类型。在大多数情况下，你可能希望使用 `POST` 向服务器发送数据。此类数据将以编码字符串的形式发送。
+这两个方法相似，只是使用了不同的请求类型。在大多数情况下，你可能希望使用`POST`向服务器发送数据。此类数据将以编码字符串的形式发送。
 
 ### 提示
 
-如果你从表单中收集数据，jQuery 提供了方便的 `serialize()` 方法来汇总数据：
-
-点击此处查看代码图片
+如果你从表单中收集数据，jQuery 提供了方便的`serialize()`方法来汇总数据：
 
 ```javascript
 var formdata = $('#form1').serialize();
@@ -6783,7 +6282,7 @@ var formdata = $('#form1').serialize();
 
 如果你想对返回的数据进行某些操作，可以传递回调函数作为参数。
 
-为了获得最大的灵活性，`ajax()` 方法允许你设置 Ajax 用的每个方面以及处理响应的方式。有关 `ajax()` 的完整细节，请参见 [`api.jquery.com/jQuery.ajax/`](http://api.jquery.com/jQuery.ajax/)。
+为了获得最大的灵活性，`ajax()`方法允许你设置 Ajax 用的每个方面以及处理响应的方式。有关`ajax()`的完整细节，请参见 [`api.jquery.com/jQuery.ajax/`](http://api.jquery.com/jQuery.ajax/)。
 
 ### 自己尝试：使用 jQuery 的 Ajax
 
@@ -6791,29 +6290,21 @@ var formdata = $('#form1').serialize();
 
 我们将使用这个简单的 HTML 表单：
 
-点击此处查看代码图片
-
 ```html
 <form id="form1">
-    Name<input type="text" name="name" id="name"><br />
-    Email<input type="text" name="email" id="email"><br />
-    <input type="submit" name="submit" id="submit" value="Submit Form">
+    Name<input type="text" name="name" id="name"><br />
+    Email<input type="text" name="email" id="email"><br />
+    <input type="submit" name="submit" id="submit" value="Submit Form">
 </form>
 ```
 
 你将使用 jQuery 执行以下任务：
 
 - 检查两个输入字段是否都包含文本。
-- 使用 HTTP `POST` 通过 Ajax 提交表单。
-- 将服务器返回的数据打印到页面上的 `div` 元素。
+- 使用 HTTP `POST`通过 Ajax 提交表单。
+- 将服务器返回的数据打印到页面上的`div`元素。
 
 为了检查两个字段是否都已输入数据，你使用一个简单的函数：
-
-
-
-
-
-点击此处查看代码图像
 
 ```javascript
 function checkFields(){
@@ -6821,9 +6312,9 @@ function checkFields(){
 }
 ```
 
-为了让函数返回布尔值 `true`，两个表单字段的 `value` 属性必须包含某些文本数据；如果其中任一字段为空，则空白字段将被解释为“虚假（falsy）”，且逻辑与（`&&`）运算符将导致函数返回 `false`。
+为了让函数返回布尔值`true`，两个表单字段的`value`属性必须包含某些文本数据；如果其中任一字段为空，则空白字段将被解释为“虚假（falsy）”，且逻辑与（`&&`）运算符将导致函数返回`false`。
 
-接下来，应用 jQuery 的 `submit()` 事件处理程序来检测表单提交。如果你的函数 `checkFields()` 返回 `false`，则默认行为将被取消，表单将不会提交；否则，jQuery 将数据序列化并向服务器脚本发送 `post()` 请求。jQuery 的 `serialize()` 方法用于将表单信息收集到一个序列化字符串中，并作为数据通过 Ajax 调用发送。对于此示例，服务器脚本 `test.php` 仅仅格式化它所收到的信息并将其作为一小段 HTML 发回之外，什么都不做：
+接下来，应用 jQuery 的`submit()`事件处理程序来检测表单提交。如果你的函数`checkFields()`返回`false`，则默认行为将被取消，表单将不会提交；否则，jQuery 将数据序列化并向服务器脚本发送`post()`请求。jQuery 的`serialize()`方法用于将表单信息收集到一个序列化字符串中，并作为数据通过 Ajax 调用发送。对于此示例，服务器脚本`test.php`仅仅格式化它所收到的信息并将其作为一小段 HTML 发回之外，什么都不做：
 
 ```php
 <?php
@@ -6839,11 +6330,9 @@ function(data){
 }
 ```
 
-代码显示在列表 17.1](#part030.xhtml_ch17lis01)。
+代码显示在列表 17.1。
 
 ## 列表 17.1 Ajax 表单
-
-点击此处查看代码图像
 
 ```html
 <!DOCTYPE html>
@@ -6856,30 +6345,80 @@ function(data){
             function checkFields(){
                 return ($("#name").val() && $("#email").val());
             }
-            $("#form1").submit(function(){
-                if(checkFields()){
-                    $.post(
-                        'test.php', $("#form1").serialize(),
-                        function(data){
-                            $("#div1").html(data);
-                        }
-                    );
-                } else {
-                    alert("Please fill in name and email fields!");
-                }
-                return false;
-            });
         });
     </script>
 </head>
 <body>
-    <form id="form1">
-        Name<input type="text" name="name" id="name"><br />
-        Email<input type="text" name="email" id="email"><br />
-        <input type="submit" name="submit" id="submit" value="Submit Form">
-    </form>
-    <div id="div1"></div>
+    <div id="tabs">
+        <ul>
+            <li><a href="#tabs-1">Home</a></li>
+            <li><a href="#tabs-2">About Us</a></li>
+            <li><a href="#tabs-3">Products</a></li>
+        </ul>
+        <div id="tabs-1">
+            <p>Welcome to our online store...</p>
+        </div>
+        <div id="tabs-2">
+            <p>We've been selling widgets for 5 years...</p>
+        </div>
+        <div id="tabs-3">
+            <p>We sell all kinds of widgets...</p>
+        </div>
+    </div>
 </body>
+</html>
+```
+
+
+
+```javascript
+$("#form1").submit(function(){
+
+    if(checkFields()){
+
+        $.post(
+
+            'test.php', $("#form1").serialize(),
+
+            function(data){
+
+                $("#div1").html(data);
+
+            }
+
+        );
+
+    } else {
+
+        alert("Please fill in name and email fields!");
+
+    }
+
+    return false;
+
+});
+
+});
+</script>
+
+</head>
+
+<body>
+
+    <form id="form1">
+
+        Name<input type="text" name="name" id="name"><br />
+
+        Email<input type="text" name="email" id="email"><br />
+
+        <input type="submit" name="submit" id="submit" value="Submit Form">
+
+    </form>
+
+    <div id="div1"></div>
+
+</body>
+
 </html>
 ```
 
@@ -6894,40 +6433,56 @@ function(data){
 ### 图 17.3 使用 jQuery 的 Ajax 表单
 
 ### 总结
+
 在本小时中，你仔细学习了 Ajax 编程的基础知识，并学习了如何使用 jQuery 库让整个过程变得更加流畅和简单。
 
 ### 问答
-Q Ajax 是如何命名的？
-A. Ajax 是 Asynchronous JavaScript And XML（异步 JavaScript 和 XML）的缩写。但在实践中，Ajax 绝不仅限于返回 XML 数据。
 
-Q 其他库实现了 Ajax 吗？
-A. 有许多库和框架可以帮助你实现 Ajax，流行的包括 Dojo、MooTools 和 Prototype。
+**Q：** Ajax 是如何命名的？
 
-#### 练习
+**A：** Ajax 是 Asynchronous JavaScript And XML（异步 JavaScript 和 XML）的缩写。但在实践中，Ajax 绝不仅限于返回 XML 数据。
+
+**Q：** 其他库实现了 Ajax 吗？
+
+**A：** 有许多库和框架可以帮助你实现 Ajax，流行的包括 Dojo、MooTools 和 Prototype。
+
+### 练习
+
 在阅读后续章节之前，尝试回答所有问题。
 
 以下哪种操作将从 `examples.html` 获取 `id=source` 的元素并将其插入到 `id=target` 的页面中？
+
 a. `$("#target").load("examples.html")`
+
 b. `$("#source").load("examples.html")`
+
 c. `$(source).load("examples.html")`
 
 用于处理 Ajax 调用返回的数据的函数称为：
+
 a. 匿名函数
+
 b. 回调函数
+
 c. Ajax 请求
 
 `serialize()` 方法：
+
 a. 将一组表单元素编码为字符串以便提交。
+
 b. 将一组表单元素编码为 JSON 对象。
+
 c. 将一组表单元素编码为 JavaScript 数组。
 
-#### 答案
+### 答案
+
 1. a. `$("#target").load("examples.html")`
 2. b. 回调函数
 3. a. jQuery `serialize()` 方法将一组表单元素编码为字符串以便提交。
 
-#### 练习
-向你的服务器上传一个包含纯文本的 .txt 文件。创建一个 HTML 页面，使用 jQuery 的 `load()` 方法返回该文本并将其显示在页面上的一个 `<div>` 元素中。
+### 练习
+
+向你的服务器上传一个包含纯文本的 `.txt` 文件。创建一个 HTML 页面，使用 jQuery 的 `load()` 方法返回该文本并将其显示在页面上的一个 `<div>` 元素中。
 
 修改本小时练习的代码，使得如果任一输入字段为空或包含少于四个字符的数据，则不允许表单提交。
 
@@ -6936,6 +6491,7 @@ c. 将一组表单元素编码为 JavaScript 数组。
 ## 第 18 小节：读取和写入 Cookie
 
 在本小时中，你将学习：
+
 - 什么是 Cookie
 - 关于 Cookie 的属性
 - 如何设置和检索 Cookie
@@ -6950,6 +6506,7 @@ c. 将一组表单元素编码为 JavaScript 数组。
 在本小时中，你将学习如何使用 JavaScript 创建、检索和删除 Cookie。
 
 ### 什么是 Cookie？
+
 你用于加载网页到浏览器的 HTTP 协议是一种所谓的无状态协议。这意味着一旦服务器将请求的页面交付给浏览器，就会认为事务已完成并不保留任何记忆。这使得在浏览会话期间（或会话之间）维持某些连续性变得困难，例如跟踪访问者已阅读或下载了哪些信息，或者其私有区域的登录状态。
 
 Cookie 是解决这个问题的方法；例如，你可以使用 Cookie 记住用户的最后访问，保存该用户的偏好列表，或者在继续购物时跟踪购物车物品。正确使用时，Cookie 可以帮助改善用户在使用你的网站时的感知体验。
@@ -6957,12 +6514,9 @@ Cookie 是解决这个问题的方法；例如，你可以使用 Cookie 记住�
 Cookie 本身是小信息字符串，可以由用户访问的网页存储在用户的计算机上，稍后由相同域名和路径的任何其他网页读取。Cookie 被设置为在指定时间后过期。
 
 ### 注意
+
 请注意许多用户不允许网站在他们的计算机上留下 Cookie，因此请确保你的网站不要依赖于它们。
 
-
-
-
-[content]
 通常的原因是某些网站将 cookie 作为广告系统的一部分，利用它们跟踪用户的在线活动，以便选择合适的广告。最好说明你为什么要使用该 cookie 以及你将如何使用它。
 
 ### Cookie 的局限性
@@ -6986,32 +6540,34 @@ JavaScript 中的 cookie 通过使用 `document` 对象的 `cookie` 属性进行
 `username=sam;location=USA;status=fullmember;`
 
 ### 提示
-我将 `document.cookie` 称为一种*类字符串*属性，因为它并不是真正的字符串——当你尝试提取 cookie 信息时，它的行为就像字符串一样，正如你在这一小时中看到的那样。
 
-##数据的转义与反转义
+我将 `document.cookie` 称为一种类字符串属性，因为它并不是真正的字符串——当你尝试提取 cookie 信息时，它的行为就像字符串一样，正如你在这一小时中看到的那样。
+
+## 数据的转义与反转义
 
 cookie 值可能不包含某些字符。这些不允许的字符包括分号、逗号以及空格和制表符等空白字符。在将数据存储到 cookie 之前，你需要对数据进行编码，使其能够被正确存储。
 
 你可以使用 JavaScript 的 `escape()` 函数在存储之前对值进行编码，并在稍后使用相应的 `unescape()` 函数恢复原始 cookie 值。
 
-`escape()` 函数将字符串中的任何非 ASCII 字符转换为其等效的两位或四位十六进制格式——因此空格会被转换为 `%20`，安培符号 (&) 会转换为 `%26`。
+`escape()` 函数将字符串中的任何非 ASCII 字符转换为其等效的两位或四位十六进制格式——因此空格会被转换为 `%20`，安培符号（`&`）会转换为 `%26`。
 
 例如，下面的代码段将写出变量 `str` 中保存的原始字符串，随后是应用 `escape()` 函数后的值：
 
 点击此处查看代码图像
 
-```
+```javascript
 var str = 'Here is a (short) piece of text.';
 
 document.write(str + '<br />' + escape(str));
 ```
 
-屏幕输出将是
+屏幕输出将是：
 
 点击此处查看代码图像
 
-```
+```text
 Here is a (short) piece of text.
+
 Here%20is%20a%20%28short%29%20piece%20of%20text.
 ```
 
@@ -7028,33 +6584,40 @@ Here%20is%20a%20%28short%29%20piece%20of%20text.
 但实际上，每个 cookie 都关联有某些其他信息，下文章节进行了概述。
 
 ### 注意
+
 cookie 的最终规范于 2011 年作为 `RFC6265` 发布。你可以在 [`tools.ietf.org/html/rfc6265`](http://tools.ietf.org/html/rfc6265) 阅读它。
 
 #### `cookieName` 和 `cookieValue`
+
 这些是 cookie 字符串中每个 `name=value` 对中可见的名称和值。
 
-#### domain
+#### `domain`
+
 `domain` 属性告诉浏览器 cookie 属于哪个域名。此属性是可选的，当未指定时，其值默认为设置 cookie 的页面域名。
 
 `domain` 属性的作用是控制跨子名的 cookie 操作。如果域名设置为 `www.example.com`，那么像 `code.example.com` 等子域名上的页面无法读取该 cookie。然而，如果 `domain` 设置为 `example.com`，那么 `code.example.com` 中的页面将能够访问。
 
 你不能将 `domain` 属性设置为包含你页面的之外任何域名。
 
-#### path
-`path` 属性允许你指定 cookie 可用的目录。如果你希望 cookie 仅针对目录 `documents` 下的页面设置，请将 path 设置为 `/documents`。`path` 属性是可选的，默认路径为 `/`，在这种情况下 cookie 对整个域名有效。
+#### `path`
 
-#### secure
+`path` 属性允许你指定 cookie 可用的目录。如果你希望 cookie 仅针对目录 `documents` 下的页面设置，请将 `path` 设置为 `/documents`。`path` 属性是可选的，默认路径为 `/`，在这种情况下 cookie 对整个域名有效。
+
+#### `secure`
+
 可选且极少使用的 `secure` 标志表示浏览器在向服务器发送 cookie 时应使用 SSL 安全性。
 
-#### expires
+#### `expires`
+
 每个 cookie 都有一个 `expires` 日期，期后 cookie 将被自动删除。`expires` 日期应该是 UTC 时间（格林威治标准时间，或 GMT）。如果未为 `expires` 设置值，cookie 的有效期将与当前浏览器会话一样，并在浏览器关闭时自动删除。
 
 ### 写入 Cookie
+
 要写入新 cookie，你只需为 `document.cookie` 分配一个包含所需属性的值：
 
 点击此处查看代码图像
 
-```
+```javascript
 document.cookie = "username=sam;expires=Wed, 21 Oct 2025 07:28:00 GMT;path=/";
 ```
 
@@ -7064,12 +6627,14 @@ document.cookie = "username=sam;expires=Wed, 21 Oct 2025 07:28:00 GMT;path=/";
 
 ```javascript
 var cookieDate = new Date(2013, 5, 15);
+
 document.cookie = "username=sam;expires=" + cookieDate.toUTC();
 ```
 
 产生的结果与之前的示例相同。
 
 ### 提示
+
 注意使用 `cookieDate.toUTC()` 而不是 `cookieDate.toString()`，因为 cookie 日期需要 UTC 时间。
 
 在实践中，你应该使用 `escape()` 以确保不允许的字符进入 cookie 值：
@@ -7078,10 +6643,12 @@ document.cookie = "username=sam;expires=" + cookieDate.toUTC();
 
 ```javascript
 var user = "Sam Jones";
+
 document.cookie = "username=" + escape(user) + ";expires=" + cookieDate.toUTC();
 ```
 
 ### 写入 Cookie 的函数
+
 编写一个函数为你写入 cookie 非常简单，将转义和可选属性的处理留给函数。此类函数的代码出现在列表 18.1](#part0032.xhtml_ch18)。
 
 **列表 18.1 写入 Cookie 的函数**
@@ -7090,19 +6657,33 @@ document.cookie = "username=" + escape(user) + ";expires=" + cookieDate.toUTC();
 
 ```javascript
 function createCookie(name, value, days, domain, secure) {
+
   if (days) {
+
     var date = new Date();
+
     date.setTime(date.getTime() + (days*24*60*60*1000));
+
     var expires = date.toGMTString();
+
   } else {
+
     var expires = "";
+
   }
+
   var cookieString = name + "=" + escape(value);
+
   if (expires) cookieString += "; expires=" + expires;
+
   if (path) cookieString += "; path=" + escape(path);
+
   if (domain) cookieString += "; domain=" + escape(domain);
+
   if (secure) cookieString += "; secure";
+
   document.cookie = cookieString;
+
 }
 ```
 
@@ -7111,10 +6692,6 @@ function createCookie(name, value, days, domain, secure) {
 不是向函数传递日期字符串，而是要求传递过期前的天数。函数随后处理将其转换为适当的日期字符串。
 
 其余属性均为可选的，并且仅当它们作为参数存在时才会追加到字符串中。
-
-[/content]
-
-
 
 如果你尝试直接从本地机器将文件加载到浏览器，你的浏览器安全设置可能会阻止你在此小时内尝试这些示例。要看到这些示例运行，你可能需要将这些文件上传到 Internet 上的 Web 服务器或你本地局域网的其他地方。
 
@@ -7128,34 +6705,63 @@ function createCookie(name, value, days, domain, secure) {
 
 ```html
 <!DOCTYPE html>
+
 <html>
+
 <head>
+
 <title>Using Cookies</title>
+
 <script>
+
     function createCookie(name, value, days, path, domain, secure) {
+
         if (days) {
+
             var date = new Date();
+
             date.setTime(date.getTime() + (days*24*60*60*1000));
+
             var expires = date.toGMTString();
+
         }
+
         else var expires = "";
+
         cookieString = name + "=" + escape (value);
+
         if (expires) cookieString += "; expires=" + expires;
+
         if (path) cookieString += "; path=" + escape (path);
+
         if (domain) cookieString += "; domain=" + escape (domain);
+
         if (secure) cookieString += "; secure";
+
         document.cookie = cookieString;
+
     }
+
     createCookie("username","Sam Jones", 5);
+
     createCookie("location","USA", 5);
+
     createCookie("status","fullmember", 5);
+
 </script>
+
 </head>
+
 <body>
+
 Check the cookies for this domain using your browser tools.
+
 </body>
+
 </html>
 ```
+
+
 
 将此 HTML 文件上传到 Internet 主机或你本地局域网上的 Web 服务器（如果你有的话）。加载后的页面没有显示任何内容，只有一行文本：
 
@@ -7168,20 +6774,22 @@ Check the cookies for this domain using your browser tools.
 **图 18.1** 显示我们的 Cookie
 
 ### 提示
+
 注意，每次调用函数时，它都会为 `document.cookie` 设置新值，但这个值不会覆盖上一个值；而是将你的新 Cookie 添加到已存在的 Cookie 值中。正如我所说，`document.cookie` 有时看起来像是一个字符串，但它实际上并不是。
 
 ### 读取 Cookie
 
-读取 Cookie 值的函数严重依赖于 JavaScript 的 `split()` 字符串方法，这是你在第 5 小节“数字与字符串”中学习过的。你可能记得 `split()` 接收一个字符串并将其拆分为项目数组，使用指定的字符来确定字符串应该分割的位置：
+读取 Cookie 值的函数严重依赖于 JavaScript 的 `split()` 字符串方法，这是你在第 5 小节“数字与字符串”中学习过的。你可能记得，`split()` 接收一个字符串并将其拆分为项目数组，使用指定的字符来确定字符串应该分割的位置：
 
 点击此处查看代码图像
 
 ```javascript
 myString = "John#Paul#George#Ringo";
+
 var myArray = myString.split('#');
 ```
 
-前面的语句将字符串 `myString` 分割为系列独立的部分，在每个哈希 (#) 字符出现的地方切断字符串；`myArray[0]` 将包含“John”，`myArray[1]` 将包含“Paul”，以此此类推。
+前面的语句将字符串 `myString` 分割为系列独立的部分，在每个哈希（`#`）字符出现的地方切断字符串；`myArray[0]` 将包含“John”，`myArray[1]` 将包含“Paul”，以此类推。
 
 由于在 `document.cookie` 中各个 Cookie 是用分号字符分隔的，因此该字符最初用于拆分 `document.cookie` 返回的字符串：
 
@@ -7201,12 +6809,15 @@ var crumbs = document.cookie.split(';');
 function getCookie(name) {
     var nameEquals = name + "=";
     var crumbs = document.cookie.split(';');
+
     for (var i = 0; i < crumbs.length; i++) {
         var crumb = crumbs[i];
+
         if (crumb.indexOf(nameEquals) == 0) {
             return unescape(crumb.substring(nameEquals.length, crumb.length));
         }
     }
+
     return null;
 }
 ```
@@ -7217,15 +6828,13 @@ function getCookie(name) {
 
 ```javascript
 function deleteCookie(name) {
-    createCookie(name,"-1);
+    createCookie(name, "-1");
 }
 ```
 
 ### 注意
-某些版本的浏览器会保留 Cookie 直到你重启浏览器。如果你的程序依赖于删除操作，通过 `getCookie` 测试来确保它真的消失了。
 
-
-
+某些版本的浏览器会保留 Cookie，直到你重启浏览器。如果你的程序依赖于删除操作，通过 `getCookie` 测试来确保它真的消失了。
 
 `cookietest.html` 中唯一的可见页面内容是指向第二个页面 `cookietest2.html` 的链接。然而，`window.onload` 事件被页面上的代码捕获，并用于执行一个函数，在页面加载完成后立即启动 `prompt()` 对话框。该对话框要求输入一个要保存到 cookie 中的值，然后调用 `createCookie()` 设置一个名为 `myCookieData` 的 cookie，其值为你输入的内容。
 
@@ -7235,7 +6844,7 @@ function deleteCookie(name) {
 
 **图 18.2** 输入 cookie 值。
 
-设置 cookie 后，使用链接导航到 cookietest2.html。
+设置 cookie 后，使用链接导航到 `cookietest2.html`。
 
 当此页面加载时，`window.onload` 事件处理程序会执行一个函数，该函数使用 `getCookie()` 获取存储的 cookie 值并将其写入页面，如图图 18.3 所示。
 
@@ -7281,7 +6890,7 @@ var memNo = myUserArray[2];
 
 ### 注意事项
 
-这是序列化的另一个示例，你之前在第 10 小节的“**见见 JSON](#part0021.xhtml_ch10)”中学习过它。
+这是序列化的另一个示例，你之前在第 10 小节的“见见 JSON”中学习过它。
 
 ### 总结
 
@@ -7291,11 +6900,11 @@ var memNo = myUserArray[2];
 
 **问：在将多个值合并到单个 cookie 时，可以使用任何字符作为分隔符吗？**
 
-**答：你不能使用任何可能出现在你的转义数据中的字符（作为分隔符字符除外），也不能使用等号（`=`）或分号（`;`），因为这些字符用于在 `document.cookie` 中组合和拼接 `name=value` 对。此外，cookie 不得包含空格或逗号，因此它们自然不能用作分隔符。
+**答：**你不能使用任何可能出现在你的转义数据中的字符（作为分隔符字符除外），也不能使用等号（`=`）或分号（`;`），因为这些字符用于在 `document.cookie` 中组合和拼接 `name=value` 对。此外，cookie 不得包含空格或逗号，因此它们自然不能用作分隔符。
 
 **问：cookie 安全的吗？**
 
-**答：人们经常对 cookie 的安全性产生疑问，但这些担忧很大程度上是没有根据的。cookie*可以*帮助网站所有者和广告商跟踪你的浏览习惯，他们可以（并且确实）利用此类信息来在你访问的网页上显示广告和促销信息。然而，网站所有者和广告商无法仅仅通过使用 cookie 就获取你的个人信息或访问你硬盘上的其他项目。**
+**答：**人们经常对 cookie 的安全性产生疑问，但这些担忧很大程度上是没有根据的。cookie 可以帮助网站所有者和广告商跟踪你的浏览习惯，他们可以（并且确实）利用此类信息来在你访问的网页上显示广告和促销信息。然而，网站所有者和广告商无法仅仅通过使用 cookie 就获取你的个人信息或访问你硬盘上的其他项目。
 
 ### 工作坊
 
@@ -7303,22 +6912,22 @@ var memNo = myUserArray[2];
 
 #### 测验
 
-**1。** cookie 是存储在 ___ 的小文本信息
+**1。** cookie 是存储在 ___ 的小文本信息。
 
-**a.** 用户的硬盘上
-**b.** 在服务器上
+**a.** 用户的硬盘上  
+**b.** 在服务器上  
 **c.** 在用户的互联网服务提供商处
 
-**2。** 使用以下方法可以对字符串进行编码以安全地存储在 cookie 中
+**2。** 使用以下方法可以对字符串进行编码以安全地存储在 cookie 中。
 
-**a.** `escape()`
-**b.** `unescape()`
+**a.** `escape()`  
+**b.** `unescape()`  
 **c.** `split()`
 
-**3。** 用于分隔单个 cookie 中多个值的字符被称为
+**3。** 用于分隔单个 cookie 中多个值的字符被称为：
 
-**a.** 转义序列
-**b.** 分隔符
+**a.** 转义序列  
+**b.** 分隔符  
 **c.** 分号
 
 #### 答案
@@ -7333,18 +6942,14 @@ var memNo = myUserArray[2];
 
 ![Image](img/image00456.jpeg) 在阅读后续列表 18.4”之前，为你的 cookie 输入一个值。
 
-![Image](img/image00457.jpeg) 使用浏览器工具查看 cookietest.html 和 cookietest2.html 中设置的 cookie，并将它们分隔显示。
+![Image](img/image00457.jpeg) 使用浏览器工具查看 `cookietest.html` 和 `cookietest2.html` 中设置的 cookie，并将它们分隔显示。
 
-![Image](img/image00456.jpeg) 使用井号（`#`）作为分隔符，在 cookietest2.html 中删除 cookie。（提示：使用 `deleteCookie()`。）
-
-
-
-
+![Image](img/image00456.jpeg) 使用井号（`#`）作为分隔符，在 `cookietest2.html` 中删除 cookie。（提示：使用 `deleteCookie()`。）
 
 ```javascript
 this.make = Make;
-this.odometerReading = Miles;
 
+this.odometerReading = Miles;
 }
 
 setOdometer(newMiles) {
@@ -7366,7 +6971,7 @@ class Sportscar extends Car {
 }
 ```
 
-在这里，我在构造函数使用了 `super` 关键字，这允许我调用父类的构造函数并继承它的所有属性。事实上，这仅仅是一种语法糖；所有使用类的代码都可以用函数和原型来重写，就像你在第 8 小节中学习到的那样。然而，它与其他流行语言的兼容性更好，读起来也相对简单。
+在这里，我在构造函数中使用了 `super` 关键字，这允许我调用父类的构造函数并继承它的所有属性。事实上，这仅仅是一种语法糖；所有使用类的代码都可以用函数和原型来重写，就像你在第 8 小节中学习到的那样。然而，它与其他流行语言的兼容性更好，读起来也相对简单。
 
 ### 箭头函数
 
@@ -7410,36 +7015,34 @@ higher(7, 9); // 返回 9
 higher(12, 3); // 返回 12
 ```
 
-箭头函数不仅写起来更简单，它们还具有从宿主容器继承 `this` 值的特征。这在使用对象时非常有用。之前，我们需要将 `this` 赋值给变量以便将其传递给函数：
+箭头函数不仅写起来更简单，它们还具有从宿主容器继承 `this` 值的特征。这在使用对象时非常有用。之前，我们需要将 `this` 赋值给变量，以便将其传递给函数：
 
 点击此处查看代码图片
 
 ```javascript
 function myObject() {
-  this.height = 13;
-  var self = this;
-  setTimeout(function fiveSecondsLater() {
-    console.log(self.height);
-  }, 5000)
+    this.height = 13;
+    var self = this;
+
+    setTimeout(function fiveSecondsLater() {
+        console.log(self.height);
+    }, 5000)
 }
 
 var o = new myObject();
 ```
 
-在前面的示例中，我们不能简单地使用
-
-`console.log(this.height);`
-
-因为 `this` 将指向它的直接容器，在这里是 `fiveSecondsLater()` 函数。然而，通过使用箭头函数，可以避免使用 `self` 这样的变量：
+在前面的示例中，我们不能简单地使用 `console.log(this.height);`，因为 `this` 将指向它的直接容器，在这里是 `fiveSecondsLater()` 函数。然而，通过使用箭头函数，可以避免使用 `self` 这样的变量：
 
 点击此处查看代码图片
 
 ```javascript
 function myObject() {
-  this.height = 13;
-  setTimeout(() => {
-    console.log(this.height); // 这里的 'this' 指向 myObject
-  }, 5000)
+    this.height = 13;
+
+    setTimeout(() => {
+        console.log(this.height); // 这里的 'this' 指向 myObject
+    }, 5000)
 }
 
 var o = new myObject();
@@ -7451,52 +7054,49 @@ var o = new myObject();
 
 点击此处查看代码图片
 
-// 此代码出现在 file1.js 中
 ```javascript
+// 此代码出现在 file1.js 中
 export default function Car(Color, Year, Miles) {
-  this.color = Color;
-  this.year = Year;
-  this.make = Make;
-  this.odometerReading = Miles;
-  this.setOdometer(newMiles) {
-    this.odometerReading = newMiles;
-  }
+    this.color = Color;
+    this.year = Year;
+    this.make = Make;
+    this.odometerReading = Miles;
+
+    this.setOdometer(newMiles) {
+        this.odometerReading = newMiles;
+    }
 }
 ```
 
-// 此对象可以被其他文件导入。在接收文件中：
+此对象可以被其他文件导入。在接收文件中：
 
 点击此处查看代码图片
 
-// 此代码出现在 file2.js 中
 ```javascript
+// 此代码出现在 file2.js 中
 import Car from 'file1';
+
 var ferrari = new Car('red', 1986, 'Dino', 75000);
 ```
 
-### 使用 let 和 const
+### 使用 `let` 和 `const`
 
-在 ECMAScript 6 之前，JavaScript 只有两种类型的作用域——即`函数作用域`和`全局作用域`。（变量的作用域，正如你在第 8 小节中所学习的）。但在 ECMAScript 6 中，你可以使用 `export` 关键字来让它可用（注：此处原文文本似乎在描述处有断层或逻辑重复，我已根据你提供的文本内容进行完整翻译）。
+在 ECMAScript 6 之前，JavaScript 只有两种类型的作用域——即函数作用域和全局作用域。（变量的作用域，正如你在第 8 小节中所学习的。）但在 ECMAScript 6 中，你可以使用 `export` 关键字来让它可用。
 
-抱歉，我理解了。你提供的待翻译文本在 `Using let and const` 之后似乎缺少了部分关于 `let` 和 `const` 的具体描述内容，我将严格按照你提供的最后一段话进行翻译。
+抱歉，我理解了。你提供的待翻译文本在“使用 `let` 和 `const`”之后似乎缺少了部分关于 `let` 和 `const` 的具体描述内容，我将严格按照你提供的最后一段话进行翻译。
 
-（重新审视你提供的待翻译文本，最后一段是 `### Using let and const` 标题，后面没有正文了。我将翻译到该标题结束。）
+（重新审视你提供的待翻译文本，最后一段是“使用 `let` 和 `const`”标题，后面没有正文了。我将翻译到该标题结束。）
 
-*修正：我发现你提供的原始文本在 `### Using let and const` 之后确实没有内容了。我将基于你提供的文本完成最终翻译。*
+*修正：我发现你提供的原始文本在“使用 `let` 和 `const`”之后确实没有内容了。我将基于你提供的文本完成最终翻译。*
 
-[content]
-### Using let and const
-
-
-
-JavaScript 有多种处理数组的方法，正如你在第 6 节中读到的“数组”。除了 `while` 和 `for` 循环外，你还可以使用 `for-in`。遗憾的是，这个循环会访问数组的所有*命名属性*，而不仅仅是真正的数组*值*：
+JavaScript 有多种处理数组的方法，正如你在第 6 节中读到的“数组”。除了 `while` 和 `for` 循环外，你还可以使用 `for-in`。遗憾的是，这个循环会访问数组的所有命名属性，而不仅仅是真正的数组值：
 
 点击此处查看代码图片
 
 ```javascript
 "use strict";
 
-let arr1 = [ 6, 5, 7, 9 ];
+let arr1 = [6, 5, 7, 9];
 
 arr1.greeting = "hi";
 
@@ -7515,19 +7115,18 @@ for (var y of arr1) {
 }
 ```
 
-***
+
+
 
 ### 注意事项
 
-注意前面的代码段中使用了指令 `"use strict"`。该指令在 ECMAScript 5 中引入，表示 JavaScript 应该在严格模式下执行，这是一组更严格的解释器规则，目前使用某些 ECMAScript 6 特性时是必要的。
+注意前面的代码段中使用了指令`"use strict"`。该指令在 ECMAScript 5 中引入，表示 JavaScript 应该在严格模式下执行，这是一组更严格的解释器规则，目前使用某些 ECMAScript 6 特性时是必要的。
 
-### 
-
-本节目前为止展示的示例对于测试 ECMAScript 6 特性很好，但在编写时，它们尚未准备好用于生产代码。访问你网站的人中很少有人使用带有强 ECMAScript 6 支持的浏览器。不过，你*可以*开始为未来做准备。
+本节目前为止展示的示例对于测试 ECMAScript 6 特性很好，但在编写时，它们尚未准备好用于生产代码。访问你网站的人中很少有人使用带有强 ECMAScript 6 支持的浏览器。不过，你可以开始为未来做准备。
 
 Traceur 是 Google 的项目，旨在将 ECMAScript 6 代码处理为与大多数使用默认设置浏览器兼容的 ECMAScript 5 代码。它不支持所有的 ECMAScript 6 特性，但新特性正在不断添加。
 
-你可以在 [`code.google.com/p/traceur-compiler/wiki/GettingStarted`](https://code.google.com/p/traceur-compiler/wiki/GettingStarted) 了解该项目，也可以在 [`github.com/google/traceur-compiler`](https://github.com/google/traceur-compiler) 下载代码进行亲自尝试。
+你可以在[`code.google.com/p/traceur-compiler/wiki/GettingStarted`](https://code.google.com/p/traceur-compiler/wiki/GettingStarted)了解该项目，也可以在[`github.com/google/traceur-compiler`](https://github.com/google/traceur-compiler)下载代码进行亲自尝试。
 
 ### 总结
 
@@ -7539,13 +7138,13 @@ Traceur 是 Google 的项目，旨在将 ECMAScript 6 代码处理为与大多�
 
 ### 问答
 
-**问：我如何跟进 ECMAScript 6 规范的进展？**
+**问：** 我如何跟进 ECMAScript 6 规范的进展？
 
-**答：可能最好的在线资源是官方 ECMAScript wiki（[`wiki.ecmascript.org/`](http://wiki.ecmascript.org/)））。**
+**答：** 可能最好的在线资源是官方 ECMAScript wiki（[`wiki.ecmascript.org/`](http://wiki.ecmascript.org/)）。
 
-**问：Ecma 是谁或什么？**
+**问：** Ecma 是谁或什么？
 
-**答：Ecma 是一个国际性的、基于成员制的非营利标准组织，最初称为欧洲计算机厂商协会（ECMA）。该组织成立于 1961 年，旨在标准化整个欧洲的计算机系统。
+**答：** Ecma 是一个国际性的、基于成员制的非营利标准组织，最初称为欧洲计算机厂商协会（ECMA）。该组织成立于 1961 年，旨在标准化整个欧洲的计算机系统。
 
 ### 工作坊
 
@@ -7553,56 +7152,54 @@ Traceur 是 Google 的项目，旨在将 ECMAScript 6 代码处理为与大多�
 
 #### 测验
 
-**1。** 声明为 `const` 的值：
+**1.** 声明为`const`的值：
 
-**a.** 之后可以重新赋值，但不能重新声明
-**b.** 之后可以重新声明，但不能重新赋值
-**c.** 之后既不能重新声明，也不能重新赋值
+- **a.** 之后可以重新赋值，但不能重新声明
+- **b.** 之后可以重新声明，但不能重新赋值
+- **c.** 之后既不能重新声明，也不能重新赋值
 
-**2.** 你可以使用 `export` 关键字来
+**2.** 你可以使用`export`关键字来：
 
-**a.** 将你所有的程序数据保存到另一个文件中
-**b.** 让你在一个文件中声明的内容在该文件外部可用
-**c.** 让你在另一个文件中声明的内容在当前文件内部可用
+- **a.** 将你所有的程序数据保存到另一个文件中
+- **b.** 让你在一个文件中声明的内容在该文件外部可用
+- **c.** 让你在另一个文件中声明的内容在当前文件内部可用
 
 **3.** 下列哪一个是将摄氏度转换为华氏温度的正确箭头函数？
 
-**a.** `var fahr = cent => cent * 1.8 + 32;`
-**b.** `var fahr => cent = cent * 1.8 + 32;`
-**c.** `function fahr = cent => cent * 1.8 + 32;`
+- **a.** `var fahr = cent => cent * 1.8 + 32;`
+- **b.** `var fahr => cent = cent * 1.8 + 32;`
+- **c.** `function fahr = cent => cent * 1.8 + 32;`
 
 #### 答案
 
-**1.** c. `const` 之后既不能重新声明，也不能重新赋值。
-**2.** b. 让你在一个文件中声明的内容在该文件外部可用
-**3.** a. `var fahr = cent => cent * 1.8 + 32;`
+**1.** c.`const`之后既不能重新声明，也不能重新赋值。
+
+**2.** b.让你在一个文件中声明的内容在该文件外部可用。
+
+**3.** a.`var fahr = cent => cent * 1.8 + 32;`
 
 #### 练习
 
-![Image](img/image00365.jpeg) 使用上述的在线资源之一，检查你当前的浏览器支持多少 ECMAScript6 特性。查看官方 Ecma wiki 以获取本节未讨论的特性。
+![Image](img/image00365.jpeg) 使用上述的在线资源之一，检查你当前的浏览器支持多少 ECMAScript 6 特性。查看官方 Ecma wiki 以获取本节未讨论的特性。
 
 ## 20. 使用框架
 
-***
-
 ### 本节你将学到：
 
-![Image](img/image00365.jpeg) 什么是框架，以及它们为什么用
-![Image](img/image00365.jpeg) 关于模型-视图-控制器 (MVC) 架构
-![Image](img/image00365.jpeg) 如何开始使用 AngularJS
-![Image](img/image00365.jpeg) 其他框架的细节
+- ![Image](img/image00365.jpeg) 什么是框架，以及它们为什么用
+- ![Image](img/image00365.jpeg) 关于模型-视图-控制器（MVC）架构
+- ![Image](img/image00365.jpeg) 如何开始使用 AngularJS
+- ![Image](img/image00365.jpeg) 其他框架的细节
 
-***
-
-如果你已经编写过许多应用程序，可能你一直在反复解决相同的编码问题。减少这种重复的一种技巧之一是使用*框架*。在本节中，你将学习一种名为 MVC 的流行风格，并学习如何使用 AngularJS 实现这样的框架。
+如果你已经编写过许多应用程序，可能你一直在反复解决相同的编码问题。减少这种重复的一种技巧之一是使用框架。在本节中，你将学习一种名为 MVC 的流行风格，并学习如何使用 AngularJS 实现这样的框架。
 
 ### 框架
 
-框架的目的是提高你编写应用程序的效率，同时为你的应用程序增加一致性、质量健壮性。选择良好的合适的框架可以让你留出更多时间关注应用程序的需求，而不是花费大量时间在基础设施上。
+框架的目的是提高你编写应用程序的效率，同时为你的应用程序增加一致性、质量和健壮性。选择良好的合适的框架可以让你留出更多时间关注应用程序的需求，而不是花费大量时间在基础设施上。
 
 #### 为什么要使用框架？
 
-框架帮助你*复用已经构建并测试过的代码*，提高应用程序的可靠性并减少创建所需的编码和测试工作。框架实施的结构还可以鼓励良好的编程实践。最后，框架通常为你提供了扩展功能的手段，使其更符合你应用程序的需求。
+框架帮助你复用已经构建并测试过的代码，提高应用程序的可靠性并减少创建所需的编码和测试工作。框架实施的结构还可以鼓励良好的编程实践。最后，框架通常为你提供了扩展功能的手段，使其更符合你应用程序的需求。
 
 #### 框架不同于库
 
@@ -7610,9 +7207,9 @@ Traceur 是 Google 的项目，旨在将 ECMAScript 6 代码处理为与大多�
 
 当你使用框架时，是你来设计并编写应用程序使用的对象和方法。框架提供了一个你可以在此工作的一致结构。
 
-### 模型-视图-控制器 (MVC) 架构
+### 模型-视图-控制器（MVC）架构
 
-模型-视图-控制器 (MVC) 架构的概念相当简单：将我们的应用程序分成单元，每个单元符合以下部分之一。
+模型-视图-控制器（MVC）架构的概念相当简单：将我们的应用程序分成单元，每个单元符合以下部分之一。
 
 #### 模型
 
@@ -7622,44 +7219,35 @@ Traceur 是 Google 的项目，旨在将 ECMAScript 6 代码处理为与大多�
 
 视图是模型的表示形式，用于呈现信息。它通常只显示模型中包含的某些方面，而抑制其他方面。
 
-
-
-
 视图（View）通过查询模型（Model）来获取展示所需的数据。它也可以通过发送适当的命令改变模型中的数据。此类查询和命令都必须在模型定义的语义范围内。
 
-#### 控制器 (Controllers)
+#### 控制器（Controllers）
 
 控制器建立了用户与应用程序之间的链接，负责视图在屏幕上的显示，或通过提供菜单、输入字段、按钮或其他页面元素读取用户输入。控制器在将用户输入传递给一个或多个视图之前对其解释。
 
-MVC 框架中各个部分的操作如图图 20.1 所示。
+MVC 框架中各个部分的操作如图 20.1 所示。
 
 ![Image](img/image00463.jpeg)
 
 **图 20.1** 模型-视图-控制器框架交互
 
-* *
-
 ### 现实世界示例
 
 看电视可以类比 MVC 框架。
 
-广播机构提供各种频道，每个频道包含不同的数据；这些频道可以被视为 MVC 系统的 `models`。
+广播机构提供各种频道，每个频道包含不同的数据；这些频道可以被视为 MVC 系统的`models`。
 
-`view` 由电视屏幕提供。
+`view`由电视屏幕提供。
 
 你可以通过使用遥控器`controller`的功能与电视进行交互。
-
-* *
 
 ### 在 Web 应用中使用 MVC 框架
 
 MVC 架构非常适用于 Web 应用程序。
 
-![Image](img/image00365.jpeg) **Model**——页面内容存储在支撑应用程序的模型中。技术细节可能有所不同——文本和图像可能存储在数据库中、服务器文件或其他方式中——但内容以及它们如何组合在一起的规则被编码到框架的模型部分。
-
-![Image](img/image00365.jpeg) **View**——HTML 和 CSS 为内容添加了一个或多个视觉显示层——即我们为 Web 应用程序赋予特定外观和样式而施加的装饰。我们可以在完全不改变存储在（模型）中的原始内容的情况下，更改内容的显示方式。
-
-![Image](img/image00365.jpeg) **Controller**——控制器元素由与页面交互元素相关的程序代码组成，例如表单字段、按钮和链接。此类代码解释用户输入并与模型和视图进行通信。
+- ![Image](img/image00365.jpeg) **Model**——页面内容存储在支撑应用程序的模型中。技术细节可能有所不同——文本和图像可能存储在数据库中、服务器文件或其他方式中——但内容以及它们如何组合在一起的规则被编码到框架的模型部分。
+- ![Image](img/image00365.jpeg) **View**——HTML 和 CSS 为内容添加了一个或多个视觉显示层——即我们为 Web 应用程序赋予特定外观和样式而施加的装饰。我们可以在完全不改变存储在（模型）中的原始内容的情况下，更改内容的显示方式。
+- ![Image](img/image00365.jpeg) **Controller**——控制器元素由与页面交互元素相关的程序代码组成，例如表单字段、按钮和链接。此类代码解释用户输入并与模型和视图进行通信。
 
 ### AngularJS 框架
 
@@ -7667,7 +7255,7 @@ AngularJS 是由 Google 开发的 MVC 框架，允许你构建结构良好、易
 
 #### AngularJS 概述
 
-AngularJS 是一个 MVC 框架，它将你的 HTML 代码（对应于 MVC 范式中的 `views` 部分）与 JavaScript 对象（MVC 中的 `models` 部分）绑定。
+AngularJS 是一个 MVC 框架，它将你的 HTML 代码（对应于 MVC 范式中的`views`部分）与 JavaScript 对象（MVC 中的`models`部分）绑定。
 
 在一个方向上，对模型的任何更改都会自动更新页面。相反情况也是如此——例如，与文本字段关联的模型在字段内容发生更改时也会进行更新。同样，视图的任何更改（例如用户在字段中输入信息或点击按钮）都会对相应的模型（或多个模型）进行必要的更改。
 
@@ -7679,35 +7267,33 @@ AngularJS 是一个 MVC 框架，它将你的 HTML 代码（对应于 MVC 范式
 
 点击此处查看代码插图
 
-```
+```html
 <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
 ```
 
-#### 使用 ng- 指令扩展 HTML
+#### 使用 `ng-` 指令扩展 HTML
 
-AngularJS 使用了许多指令（directives），帮助你将页面的 HTML 元素与 MVC 架构中的模型关联起来。这些指令都以 `ng-` 开头，并可以添加到任何元素上。
+AngularJS 使用了许多指令（directives），帮助你将页面的 HTML 元素与 MVC 架构中的模型关联起来。这些指令都以`ng-`开头，并可以添加到任何元素上。
 
-任何页面中必须包含的关键属性是 `ng-app`，它定义了一个 AngularJS 。你需要将其应用到包含带有 `ng-` 指令的其余页面元素的元素。你可以将其应用于页面的 `<body>` 元素（使整个页面成为应用程序的一部分），或包含应用程序的 `<div>` 元素：
+任何页面中必须包含的关键属性是`ng-app`，它定义了一个 AngularJS 应用。你需要将其应用到包含带有`ng-`指令的其余页面元素的元素。你可以将其应用于页面的`<body>`元素（使整个页面成为应用程序的一部分），或包含应用程序的`<div>`元素：
 
 ```html
 <body ng-app>
 ```
 
-AngularJS 在页面加载时找到此元素，并处理它在其子元素上看到的所有 `ng-` 指令。
+AngularJS 在页面加载时找到此元素，并处理它在其子元素上看到的所有`ng-`指令。
 
-另外两个重要的 `ng-` 指令是 `ng-model` 和 `ng-bind`。
+另外两个重要的`ng-`指令是`ng-model`和`ng-bind`。
 
-`ng-model` 指令将 HTML 控制（如输入字段、选择框、文本区域等）的值与存储在模型中的应用程序数据连接。
+`ng-model`指令将 HTML 控制（如输入字段、选择框、文本区域等）的值与存储在模型中的应用程序数据连接。
 
-`ng-bind` 指令将 MVC 模型中的这些应用程序数据绑定到 HTML 视图中的元素上。
+`ng-bind`指令将 MVC 模型中的这些应用程序数据绑定到 HTML 视图中的元素上。
 
 一个简单的示例如代码段列表 20.1 所示。
 
 **列表 20.1 一个简单的 AngularJS 示例**
 
 点击此处查看代码插图
-
-* *
 
 ```html
 <!DOCTYPE html>
@@ -7729,39 +7315,37 @@ AngularJS 在页面加载时找到此元素，并处理它在其子元素上看�
 </html>
 ```
 
-* *
+AngularJS 在页面加载时找到此元素，并处理它在其子元素上看到的所有`ng-`指令。
 
-AngularJS 在页面加载时找到此元素，并处理它在其子元素上看到的所有 `ng-` 指令。
+另外两个重要的`ng-`指令是`ng-model`和`ng-bind`。
 
-另外两个重要的 `ng-` 指令是 `ng-model` 和 `ng-bind`。
+`ng-model`指令将 HTML 控制（如输入字段、选择框、文本区域等）的值与存储在模型中的应用程序数据连接。
 
-`ng-model` 指令将 HTML 控制（如输入字段、选择框、文本区域等）的值与存储在模型中的应用程序数据连接。
-
-`ng-bind` 指令将 MVC 模型中的这些应用程序数据绑定到 HTML 视图中的元素上。
+`ng-bind`指令将 MVC 模型中的这些应用程序数据绑定到 HTML 视图中的元素上。
 
 （等待，提供的文本下方重复了章节）
 
 该应用程序——尽管简单——已经因为 AngularJS 的设计而运行了。
 
-#### 作用域 (Scopes)
+#### 作用域（Scopes）
 
-作用域是将 DOM 元素（MVC 架构中的 `view` 部分）链接到器的的对象；在 MVC 术语中，此对象变为 `model`。
+作用域是将 DOM 元素（MVC 架构中的`view`部分）链接到对象；在 MVC 术语中，此对象变为`model`。
 
 控制器和视图都可以访问作用域，因此它可以用于它们之间的通信。此作用域对象将存放要使用的数据和方法。
 
-所有的 AngularJS 应用程序都有 `$rootScope`。`$rootScope` 是顶层作用域，属于包含 `ng-app` 指令的 DOM 元素。
+所有的 AngularJS 应用程序都有`$rootScope`。`$rootScope`是顶层作用域，属于包含`ng-app`指令的 DOM 元素。
 
 当应用程序没有显式作用域时，这就是 AngularJS 使用的作用域。
 
 为了更好地理解作用域的工作原理，让我们为特定的 DOM 元素附加一个控制器，为该元素创建一个作用域。
 
-#### 指令 (Directives)
+#### 指令（Directives）
 
-你在上一个示例中看到了几个指令。在 AngularJS 中，`directive` 是附加到 DOM 元素上的函数，具有运行方法、附加控制器和作用域对象以及操作 DOM 的能力。
+你在上一个示例中看到了几个指令。在 AngularJS 中，`directive`是附加到 DOM 元素上的函数，具有运行方法、附加控制器和作用域对象以及操作 DOM 的能力。
 
-当 AngularJS 应用程序启动且 Angular 开始遍历 DOM 时（从带有 `ng-app` 的元素开始），它将解析代码收集并运行这些指令。
+当 AngularJS 应用程序启动且 Angular 开始遍历 DOM 时（从带有`ng-app`的元素开始），它将解析代码、收集并运行这些指令。
 
-指令处理了使 AngularJS 应用程序动态化的所有工作。我们之前见过示例指令，包括 `ng-model` 和 `ng-bind`：
+指令处理了使 AngularJS 应用程序动态化的所有工作。我们之前见过示例指令，包括`ng-model`和`ng-bind`：
 
 ```html
 <body ng-app>
@@ -7772,15 +7356,11 @@ AngularJS 在页面加载时找到此元素，并处理它在其子元素上看�
 
 AngularJS 内置了许多默认指令，我们接下来将查看其中一些。
 
-##### 表达式 (Expressions)
+##### 表达式（Expressions）
 
 使用双大括号包围表达式指令：
 
 `{{ expression }}`
-
-
-
-
 
 AngularJS 表达式与 JavaScript 表达式非常相似，它们都可以包含字面量、操作符和变量。以下都是有效的 AngularJS 表达式：
 
@@ -7800,14 +7380,17 @@ AngularJS 表达式与 JavaScript 表达式非常相似，它们都可以包含�
 
 AngularJS 表达式在编写该表达式的精确位置被解释为数据。
 
-### ng-init
-`ng-init` 指令在启动时运行，在 AngularJS 运行任何应用代码之前。通过它，你可以在运行其他函数之前设置默认变量。
+### `ng-init`
 
-### ng-click
-`ng-click` 指令在 DOM 元素上附加一个监听器。当元素被点击时，AngularJS 会执行指令中定义的表达式。
+`ng-init`指令在启动时运行，在 AngularJS 运行任何应用代码之前。通过它，你可以在运行其他函数之前设置默认变量。
 
-### ng-repeat
-`ng-repeat` 指令会遍历集合并为每个项目加载模板。它复制的模板是具有 `ng-repeat` 属性的元素。
+### `ng-click`
+
+`ng-click`指令在 DOM 元素上附加一个监听器。当元素被点击时，AngularJS 会执行指令中定义的表达式。
+
+### `ng-repeat`
+
+`ng-repeat`指令会遍历集合并为每个项目加载模板。它复制的模板是具有`ng-repeat`属性的元素。
 
 ```javascript
 $scope.departments = [
@@ -7818,30 +7401,27 @@ $scope.departments = [
 ];
 ```
 
-你可以使用 `ng-repeat` 遍历它们：
+你可以使用`ng-repeat`遍历它们：
 
 点击此处查看代码图片
 
 ```html
-<<ul>
+<ul>
   <li ng-repeat="dept in departments">{{ dept.name }}</li>
 </ul>
 ```
 
-在这里，`<<li>` 元素将被复制四次，生成发送到视图的列表。
+在这里，`<li>`元素将被复制四次，生成发送到视图的列表。
 
-### 过滤器 (Filters)
+### 过滤器（Filters）
+
 过滤器的作用是从数组中选择项目的子集并将其作为新数组返回。以下是你可能对数组执行的一些操作：
 
-![Image](img/image00365.jpeg) 使用 `currency` 将数字格式化为货币格式。
-
-![Image](img/image00365.jpeg) 使用 `filter` 从数组中选择项目的子集。
-
-![Image](img/image00365.jpeg) 使用 `lowercase` 将字符串格式化为小写。
-
-![Image](img/image00365.jpeg) 使用 `orderBy` 根据表达式对数组进行排序。
-
-![Image](img/image00365.jpeg) 使用 `uppercase` 将字符串格式化为大写。
+- ![Image](img/image00365.jpeg) 使用`currency`将数字格式化为货币格式。
+- ![Image](img/image00365.jpeg) 使用`filter`从数组中选择项目的子集。
+- ![Image](img/image00365.jpeg) 使用`lowercase`将字符串格式化为小写。
+- ![Image](img/image00365.jpeg) 使用`orderBy`根据表达式对数组进行排序。
+- ![Image](img/image00365.jpeg) 使用`uppercase`将字符串格式化为大写。
 
 以下是 AngularJS 中过滤器的通用语法：
 
@@ -7863,10 +7443,11 @@ $scope.departments = [
 </div>
 ```
 
-在这个示例中，表达式 `{{ netTotal + tax }}` 将被求值，结果将被格式化为货币。
+在这个示例中，表达式`{{ netTotal + tax }}`将被求值，结果将被格式化为货币。
 
 ### 为指令添加过滤器
-还可以通过使用管道字符 (`|`) 后跟过滤器描述，将过滤器添加到任何 `ng-` 指令中：
+
+还可以通过使用管道字符（`|`）后跟过滤器描述，将过滤器添加到任何`ng-`指令中：
 
 点击此处查看代码图片
 
@@ -7876,64 +7457,76 @@ $scope.departments = [
 </ul>
 ```
 
-此示例将以大写形式显示所有列表项。
+
+
 
 ### 构建 AngularJS 应用
+
 你现在已经有了足够的知识来组合一个基础的 AngularJS 应用。
 
-***
-
 #### 尝试一下：一个基础 AngularJS 应用
+
 我们将从一个基础 HTML 页面开始，其中包含一个文本输入字段用于接收用户的搜索字符串，以及一个 `<div>` 元素用于包含包含字符串的结果列表。
 
 列表 20.2 显示了页面的基础 HTML，并已包含了 AngularJS 框架。
 
 **列表 20.2 AngularJS 应用的 HTML 代码**
 
-点击此处查看代码图片
-
-***
-
 ```html
 <!DOCTYPE html>
+
 <html>
+
 <head>
+
     <title>AngularJS Example</title>
+
     <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+
 </head>
+
 <body>
+
     <p>Search Departments: <input type="text"></p>
+
     <div id="list-container">
+
         <ul>
+
             <li></li>
+
         </ul>
+
     </div>
+
 </body>
+
 </html>
 ```
 
-***
-
 接下来，我们将对页面应用必要的 `ng-` 指令：
 
-![Image](img/image00412.jpeg) 在 `<body>` 元素上应用 `ng-app` 指令，将其定义为 AngularJS 应用的容器。
-
-![Image](img/image00412.jpeg) 给搜索字段应用 `ng-model` 指令，将其定义为我们 MVC 中的模型。
-
-![Image](img/image00412.jpeg) 在我们搜索结果列表中的 `<li>` 元素上应用 `ng-repeat` 指令。`<li>` 元素将为每个结果重复一次。
+- 在 `<body>` 元素上应用 `ng-app` 指令，将其定义为 AngularJS 应用的容器。
+- 给搜索字段应用 `ng-model` 指令，将其定义为我们 MVC 中的模型。
+- 在我们搜索结果列表中的 `<li>` 元素上应用 `ng-repeat` 指令。`<li>` 元素将为每个结果重复一次。
 
 我们还将使用 `ng-init` 指令来设置一些初始数据。在现实情况下，这些数据更有可能从外部源（如服务器端数据库）获取，但它将适用于我们的示例。
 
-点击此处查看代码图片
-
 ```javascript
 ng-init = "departments = [
+
   { name: 'Sales'},
+
   { name: 'Support'},
+
   { name: 'Production'},
+
   { name: 'Service'},
+
   { name: 'Administration'},
+
   { name: 'Accounting'},
+
   { name: 'Shipping'}]"
 ```
 
@@ -7943,29 +7536,37 @@ ng-init = "departments = [
 
 **列表 20.3 应用的修改后代码**
 
-点击此处查看代码图片
-
-***
-
 ```html
 <!DOCTYPE html>
+
 <html>
+
 <head>
+
     <title>AngularJS Example</title>
+
     <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+
 </head>
+
 <body>
+
     <p>Search Departments: <input type="text"></p>
+
     <div id="list-container">
+
         <ul>
+
             <li></li>
+
         </ul>
+
     </div>
+
 </body>
+
 </html>
 ```
-
-***
 
 将此代码保存为 `.html` 文件并在浏览器中打开。你应该能看到类似图 20.3
 
@@ -7975,39 +7576,43 @@ ng-init = "departments = [
 
 **列表 20.4 最终版 AngularJS 应用**
 
-
-
-
-
 ```javascript
 [
+
   { name: 'Support', contact: 'Dave Price'},
+
   { name: 'Production', contact: 'Grant Wales'},
+
   { name: 'Service', contact: 'Sherry Dell'},
+
   { name: 'Administration', contact: 'Sally Bennett'},
+
   { name: 'Accounting', contact: 'Kim Sutherland'},
+
   { name: 'Shipping', contact: 'Sandy Connell'}
+
 ]
+
 </div></div>
+
 <div id="list-container">
+
   <ul>
+
     <li ng-repeat="dept in departments | filter: searchString">{{ dept.name + " (" + dept.contact + ")" }}</li>
+
   </ul>
+
 </div>
 
 </body>
+
 </html>
 ```
 
-* * *
-
 到此，这就是我们需要做的全部工作了！AngularJS 处理了数据绑定，因此 `filter` 会在用户打字时实时生效（参见图 20.4）。
 
-![Image](img/image00466.jpeg)
-
 **图 20.4** 过滤器指令在打字时起作用
-
-* * *
 
 ### 总结
 
@@ -8029,7 +7634,7 @@ ng-init = "departments = [
 
 ### 工作坊
 
-在阅读随后的“[答案”章节之前，请尝试回答所有问题。
+在阅读随后的“答案”章节之前，请尝试回答所有问题。
 
 #### 测验
 
@@ -8067,23 +7672,17 @@ ng-init = "departments = [
 
 #### 练习
 
-![Image](img/image00365.jpeg) 修改“[自己尝试一下”示例的代码，仅在部门名称内进行搜索，但在显示的列表中仍报告部门名称和联系人名称。
-
-![Image](img/image00365.jpeg) 查看 [`docs.angularjs.org/api`](https://docs.angularjs.org/api) 中的 AngularJS API 文档，发现你使用 AngularJS 还能做更多。
+- 修改“自己尝试一下”示例的代码，仅在部门名称内进行搜索，但在显示的列表中仍报告部门名称和联系人名称。
+- 查看 [`docs.angularjs.org/api`](https://docs.angularjs.org/api) 中的 AngularJS API 文档，发现你使用 AngularJS 还能做更多。
 
 ## 第 21 小时：网页之外的 JavaScript
 
-* * *
-
 你在此小时将学到：
 
-![Image](img/image00365.jpeg) JavaScript 在简单 Web 页面之外的一些应用示例
+- JavaScript 在简单 Web 页面之外的一些应用示例
+- 如何为 Google Chrome 编写浏览器扩展
 
-![Image](img/image00365.jpeg) 如何为 Google Chrome 编写浏览器扩展
-
-* * *
-
-到为止，你已经学习了 JavaScript 在编写 Web 页面中的广泛用途。然而，JavaScript 也可以通过构建插件和扩展来扩展浏览器。此外，除了 浏览器之外，JavaScript 解释器还嵌入在许多工具中。此类应用程序通常提供它们自己的表示宿主环境的对象模型，尽管 JavaScript 语言核心在每个实例中可能本质上是相同的。
+到为止，你已经学习了 JavaScript 在编写 Web 页面中的广泛用途。然而，JavaScript 也可以通过构建插件和扩展来扩展浏览器。此外，除了浏览器之外，JavaScript 解释器还嵌入在许多工具中。此类应用程序通常提供它们自己的表示宿主环境的对象模型，尽管 JavaScript 语言核心在每个实例中可能本质上是相同的。
 
 在本小时中，你学习了编写简单 Web 内容之外的 JavaScript 用途。你还为 Google 的 Chrome 浏览器编写了自己的扩展。
 
@@ -8091,9 +7690,8 @@ ng-init = "departments = [
 
 除了 Web 页面，JavaScript 控制其他应用程序操作的应用许多：
 
-![Image](img/image00365.jpeg) Google Chrome、Opera 和 Apple Safari 5 浏览器的浏览器扩展，以及 Apple Dashboard、Microsoft、Yahoo! 和 Google Desktop 的小部件/工具集，都可以使用 JavaScript 编写。
-
-![Image](img/image00365.jpeg) JavaScript 支持在
+- Google Chrome、Opera 和 Apple Safari 5 浏览器的浏览器扩展，以及 Apple Dashboard、Microsoft、Yahoo! 和 Google Desktop 的小部件/工具集，都可以使用 JavaScript 编写。
+- JavaScript 支持在
 
 ### 编写 Google Chrome 扩展
 
@@ -8109,74 +7707,97 @@ ng-init = "departments = [
 
 ```json
 {
+
   "name": "My First Extension",
+
   "version": "1.0",
+
   "manifest_version": 2,
+
   "description": "Hello World extension.",
+
   "browser_action": {
+
     "default_icon": "icon.png",
+
     "default_popup": "popup.html"
+
   },
+
   "web_accessible_resources": [
+
     "icon.png",
+
     "popup.js"
+
   ]
+
 }
 ```
 
 在同一文件夹中放入名为 `icon.png` 的图标——我使用了一个小的星形图形图像，但你可以使用任何你。创建列表 21.1 列出的 `popup.html` 文件并将其放入文件夹中。
 
-
-
-
-
 ```html
 <style>
+
     body {
+
         width: 350px;
+
     }
+
     div {
+
         border: 1px solid black;
+
         padding: 20px;
+
         font: 20px normal helvetica, verdana, sans-serif;
+
     }
+
 </style>
+
 <script src="popup.js"></script>
+
 </head>
+
 <body>
+
 </body>
+
 </html>
 ```
-
-***
 
 以下是包含在 `popup.js` 中的 JavaScript 代码：
 
 ```javascript
 function sayHello() {
+
     var message = document.createTextNode("Hello World!");
+
     var out = document.createElement("div");
+
     out.appendChild(message);
+
     document.body.appendChild(out);
+
 }
+
 window.onload = sayHello;
 ```
 
 所有这些代码的作用是，在页面加载时，创建一个包含消息“Hello World!”的 `<div>` 元素，并将其添加到 DOM 的 `<body>` 元素中。
 
-现在，点击设置图标并选择 `更多工具 > 扩展程序` 来显示 Chrome 扩展页面。
+现在，点击设置图标并选择`更多工具 > 扩展程序`来显示 Chrome 扩展页面。
 
 点击“开发者模式”旁边的复选框以显示更多信息。
 
 然后点击“加载未解的扩展程序”按钮。导航到包含你的扩展程序的文件夹并选择它。你应该能看到图 21.1 所示。
 
-![图像](img/image00467.jpeg)
-
 **图 21.1** 在扩展程序页面显示的新扩展程序
 
 检查其旁边的复选框以确保扩展程序已启用。现在你可以点击工具栏上的图标来运行你的扩展程序，如图 21.2 所示。
-
-![图像](img/image00468.jpeg)
 
 **图 21.2** 作为 Google Chrome 扩展程序的 Hello World
 
@@ -8184,69 +7805,79 @@ window.onload = sayHello;
 
 右键点击启动扩展程序的图标，你会看到一个内容菜单，其中包含启用和禁用扩展程序的选项，以及一个名为`检查弹出窗口`的选项。点击它，Chrome 开发者工具就会打开，让你检查弹出窗口，如图 21.3 所示。
 
-![图像](img/image00469.jpeg)
-
 **图 21.3** 检查弹出窗口
-
-***
 
 ### 动手尝试一下：一个获取机场信息的 Chrome 扩展程序
 
 这次你将创建一个更有用的 Chrome 扩展程序。在 jQuery 库的帮助下，你的弹出窗口将检索有关美国机场的当前信息。
 
-***
-
-### 提示
-
-如果你需要复习 jQuery 库，请参考第 15 小，“深入了解 jQuery](#part0028.xhtml_ch15)”。
-
-***
+**提示：** 如果你需要复习 jQuery 库，请参考第 15 小时，“深入了解 jQuery”。
 
 为了实现这一点，你将让你的代码对 `http://services.faa.gov/` 的信息源进行 Ajax 调用。为了演示该服务的工作原理，请打开浏览器并导航到 `http://services.faa.gov/airport/status/SFO?format=application/json`。
 
-`SFO` 是旧金国际机场的三字母代码；你可以将上述 URL 中的该代码替换为另一个美国机场的代码；例如，你可以使用 LAX 代表洛杉矶国际机场，或使用 SEA 代表西雅图-塔科马国际机场。
+`SFO` 是旧金国际机场的三字母代码；你可以将上述 URL 中的该代码替换为另一个美国机场的代码；例如，你可以使用 `LAX` 代表洛杉矶国际机场，或使用 `SEA` 代表西雅图-塔科马国际机场。
 
-***
-
-### 提示
-
-你可以在 `http://www.fly.faa.gov/flyfaa/usmap.jsp` 读取机场代码并查看它们的位置。
-
-***
+**提示：** 你可以在 `http://www.fly.faa.gov/flyfaa/usmap.jsp` 读取机场代码并查看它们的位置。
 
 `format` 参数告诉服务你希望返回的信息格式为 JSON 字符串：
 
-点击此处查看代码图像
-
 ```json
 {
+
   "name":"San Francisco International",
+
   "ICAO":"KSFO",
+
   "state":"California",
+
   "status": {
+
     "avgDelay":"",
+
     "closureEnd":"",
+
     "closureBegin":"",
+
     "type":"",
+
     "minDelay":"",
+
     "trend":"",
+
     "reason":"No known delays for this airport.",
+
     "maxDelay":"",
+
     "endTime":""
+
   },
+
   "delay":"false",
+
   "IATA":"SFO",
+
   "city":"San Francisco",
+
   "weather": {
+
     "weather":"Partly Cloudy",
+
     "meta": {
+
       "credit":"NOAA's National Weather Service",
+
       "url":"http://weather.gov/",
+
       "updated":"1:56 AM Local"
+
     },
+
     "wind":"Southwest at 9.2mph",
+
     "temp":"44.0 F (6.7 C)",
+
     "visibility":"10.00"
+
 }
 ```
 
@@ -8264,41 +7895,53 @@ window.onload = sayHello;
 
 **列表 21.2 manifest.json 文件**
 
-点击此处查看代码图像
-
-***
-
 ```json
 {
+
   "name": "Airport Information",
+
   "version": "1.0",
+
   "manifest_version": 2,
-  "description": "Information on airports",
-  "browser_action": {
-    "default_icon": "plane.png",
-    "default_popup": "popup.html"
-  },
-  "web_resources": [
-    "plane.png",
-    "popup.js"
-  ],
-  "permissions": [
-    "http://services.faa.gov/"
-  ]
-}
 ```
+
+
+
+`"description": "Information on airports"`,
+
+`"browser_action"`: {
+
+    `"default_icon"`: `"plane.png"`,
+
+    `"default_popup"`: `"popup.html"`
+
+},
+
+`"web_resources"`: [
+
+    `"plane.png"`,
+
+    `"popup.js"`
+
+],
+
+`"permissions"`: [
+
+    `"http://services.faa.gov/"`
+
+]
+
+}
 
 ***
 
 #### HTML 文件
 
-主 HTML 文件将是 `popup.html`。只要你相应修改了 `manifest.json`，你可以将其命名为其他名称。
+主 HTML 文件将是`popup.html`。只要你相应修改了`manifest.json`，你可以将其命名为其他名称。
 
 简单的 HTML 如列表 21.3 所示。
 
 **列表 21.3 基础 HTML**
-
-点击此处查看代码图像
 
 ```html
 <!DOCTYPE html>
@@ -8325,13 +7968,11 @@ window.onload = sayHello;
 </html>
 ```
 
-***
-
-除了一些 CSS 样式外，页面只包含几个项目：一个接受机场代码的输入字段（值为 SFO），一个请求数据的按钮，以及一个存放结果的 `<div>`。
+除了一些 CSS 样式外，页面只包含几个项目：一个接受机场代码的输入字段（值为`SFO`），一个请求数据的按钮，以及一个存放结果的`<div>`。
 
 现在你需要向页面添加 JavaScript。
 
-你将使用 jQuery 来简化操作，因此首先你需要包含它。Google Chrome 安全策略不允许使用内容分网络，因此我们需要下载并包含 jQuery 库的副本：
+你将使用`jQuery`来简化操作，因此首先你需要包含它。Google Chrome 安全策略不允许使用内容分发网络，因此我们需要下载并包含`jQuery`库的副本：
 
 ```html
 <script src="jquery-1.11.2.min.js"></script>
@@ -8356,15 +7997,9 @@ $(document).ready(function(){
 });
 ```
 
-一旦页面加载，jQuery 会为按钮的 `onclick` 事件处理程序添加代码。
+一旦页面加载，`jQuery`会为按钮的`onclick`事件处理程序添加代码。
 
-
-
-
-
-首先，它使用 `jQuery` 的 `html()` 方法向输出 `<div>` 元素添加一条用户消息。当接收到“真实”信息时，该消息将被覆盖。
-
-点击此处查看代码图片
+首先，它使用`jQuery`的`html()`方法向输出`<div>`元素添加一条用户消息。当接收到“真实”信息时，该消息将被覆盖。
 
 ```javascript
 $("#info").html("Getting information ...");
@@ -8372,15 +8007,11 @@ $("#info").html("Getting information ...");
 
 接下来，从输入字段中获取所需的机场代码：
 
-点击此处查看代码图片
-
 ```javascript
 var code = $("#airportCode").val();
 ```
 
-然后组装 Ajax 调用，这里使用了 `GET` 方法：
-
-点击此处查看代码图片
+然后组装 Ajax 调用，这里使用了`GET`方法：
 
 ```javascript
 $.get("http://services.faa.gov/airport/status/" + code + "?format=application/json",
@@ -8391,9 +8022,7 @@ $.get("http://services.faa.gov/airport/status/" + code + "?format=application/js
 );
 ```
 
-为 Ajax 调用指定的回调函数是 `displayData()`，它将对返回的数据进行格式化并显示给用户。以下是 `popup.js` 的完整内容，包括回调函数：
-
-点击此处查看代码图片
+为 Ajax 调用指定的回调函数是`displayData()`，它将对返回的数据进行格式化并显示给用户。以下是`popup.js`的完整内容，包括回调函数：
 
 ```javascript
 function displayData(data) {
@@ -8423,7 +8052,7 @@ $(document).ready(function(){
 });
 ```
 
-回想第 10 小中的“介绍 JSON”，JSON 数据可以直接被解释为 JavaScript 对象的层次结构。`displayData(data)` 函数获取返回的 JSON 对象数据，并提取 `data.name`（字符串）、`data.status` 和 `data.weather`（本身也是对象）来构造消息。
+回想第 10 小节中的“介绍 JSON”，JSON 数据可以直接被解释为 JavaScript 对象的层次结构。`displayData(data)`函数获取返回的 JSON 对象数据，并提取`data.name`（字符串）、`data.status`和`data.weather`（本身也是对象）来构造消息。
 
 ***
 
@@ -8436,10 +8065,6 @@ $(document).ready(function(){
 包含代码的完整 HTML 页面位于列表 21.4。
 
 **列表 21.4 扩展程序完整的 popup.html**
-
-点击此处查看代码图片
-
-***
 
 ```html
 <!DOCTYPE html>
@@ -8478,10 +8103,6 @@ $(document).ready(function(){
 
 ![Image](img/image00470)
 
-
-
-
-
 在本书目前为止，我提到了编码中的某些优点和坏处。在这一小时中，我们将汇总所有这些内容，为良好的编码实践制定一些通用指南。
 
 ## 不要过度使用 JavaScript
@@ -8496,7 +8117,7 @@ $(document).ready(function(){
 
 ![Image](img/image00365.jpeg) 在某些情况下，你可能会损失一些搜索引擎页面排名，因为它们的爬虫并不总是能正确索引由 JavaScript 生成的内容，或需要它来进行导航的设计。
 
-如果使用得且经过深思熟虑，JavaScript 可以是一个非常强大的工具，但有时“物过犹及”。
+如果使用得且经过深思熟虑，JavaScript 可以是一个非常强大的工具，但有时“物极必反”。
 
 ### 编写易读且易于维护的代码
 
@@ -8512,8 +8133,6 @@ $(document).ready(function(){
 
 ![Image](img/image00365.jpeg) 任何包含超过几行简单代码的对象或函数的序言。
 
-点击此处查看代码图像
-
 ```javascript
 function calculateGroundAngle(x1, y1, z1, x2, y2, z2) {
     /**
@@ -8528,8 +8147,6 @@ function calculateGroundAngle(x1, y1, z1, x2, y2, z2) {
 
 ![Image](img/image00365.jpeg) 在代码否则会产生困惑或容易被误解的地方添加内联注释。
 
-点击此处查看代码图像
-
 ```javascript
 // 出于性能考虑需要使用我们的自定义排序方法
 var finalArray = rapidSort(allNodes, byAngle) {
@@ -8538,8 +8155,6 @@ var finalArray = rapidSort(allNodes, byAngle) {
 ```
 
 ![Image](img/image00365.jpeg) 在原作者可以传递读者可能不知道的专业知识的地方添加注释。
-
-点击此处查看代码图像
 
 ```javascript
 // 针对浏览器 X 版本 Y 中图像加载 bug 的变通方案
@@ -8550,16 +8165,14 @@ if(!loaded(image1)) {
 
 ![Image](img/image00365.jpeg) 常用代码修改的说明。
 
-点击此处查看代码图像
-
 ```javascript
-// 你可以根据喜更改以下维度：
+// 你可以根据喜好更改以下维度：
 var height = 400px;
 var width = 600px;
 ```
 
 **提示**
-各种方案使用代码注释来帮助你为软件生成文档。例如，参见 http://code.com/p/。
+各种方案使用代码注释来帮助你为软件生成文档。例如，参见 HTTP：`http://code.com/p/`。
 
 ### 选择有用的文件、属性和方法名
 
@@ -8582,17 +8195,13 @@ var lastProcessed = 16;
 
 建议实例化对象的构造函数首字母大写：
 
-点击此处查看代码图像
-
 ```javascript
 function Car(make, model, color) {
     .... statements
 }
 ```
 
-大写提醒了需要使用 `new` 关键字：
-
-点击此处查看代码图像
+大写提醒了需要使用`new`关键字：
 
 ```javascript
 var herbie = new Car('VW', 'Beetle', 'white');
@@ -8602,8 +8211,6 @@ var herbie = new Car('VW', 'Beetle', 'white');
 
 通常情况下，代码越模块化越好。看看这个函数：
 
-点击此处查看代码图像
-
 ```javascript
 function getElementArea() {
     var high = document.getElementById("id1").style.height;
@@ -8612,11 +8219,9 @@ function getElementArea() {
 }
 ```
 
-该函数尝试返回特定 HTML 元素的面积。遗憾的是，它只能对 `id="id1"` 的元素起，这实际上没有任何帮助。
+该函数尝试返回特定 HTML 元素的面积。遗憾的是，它只能对`id="id1"`的元素起作用，这实际上没有任何帮助。
 
 通过将要应用的元素 ID 作为参数传递，我们可以赋予函数更高层次的抽象，使其使用更通用：
-
-点击此处查看代码图像
 
 ```javascript
 function getElementArea(elementId) {
@@ -8629,8 +8234,6 @@ function getElementArea(elementId) {
 
 你现在可以为任何具有 ID 的元素调用你的函数：
 
-点击此处查看代码图像
-
 ```javascript
 var area1 = getElementArea("id1");
 var area2 = getElementArea("id2");
@@ -8638,15 +8241,9 @@ var area2 = getElementArea("id2");
 
 ### 不要假设
 
-当我们在向一个函数传递一个与页面上任何元素对应的 `elementId` 值时，会发生什么？函数会导致错误并停止代码执行。
+当我们在向一个函数传递一个与页面上任何元素对应的`elementId`值时，会发生什么？函数会导致错误并停止代码执行。
 
-
-
-
-
-错误在于假设传递的 `elementId` 是一个允许的值。让我们来修改 `getElementArea()` 函数，以检查页面元素是否确实存在，并且它具有数值面积：
-
-点击此处查看代码图片
+错误在于假设传递的`elementId`是一个允许的值。让我们来修改`getElementArea()`函数，以检查页面元素是否确实存在，并且它具有数值面积：
 
 ```javascript
 function getElementArea(elementId) {
@@ -8654,21 +8251,34 @@ function getElementArea(elementId) {
         var elem = document.getElementById(elementId);
         var high = elem.style.height;
         var wide = elem.style.width;
-        var area = parseInt(high) * parseInt(wide);
-        if(!isNaN(area)) {
-            return area;
-        } else {
-            return false;
-        }
+        return parseInt(high) * parseInt(wide);
     } else {
-        return false;
+        return 0;
     }
 }
 ```
 
-这是一个改进。现在，如果函数无法返回数值面积，它将返回 `false`，可能是因为找不到相关的页面元素，也因为该 ID 对应的元素没有可访问的 `width` 和 `height` 属性。
 
-### 优雅降级 (Graceful Degradation)
+
+```javascript
+var wide = elem.style.width;
+
+var area = parseInt(high) * parseInt(wide);
+
+if (!isNaN(area)) {
+    return area;
+} else {
+    return false;
+}
+} else {
+    return false;
+}
+}
+```
+
+这是一个改进。现在，如果函数无法返回数值面积，它将返回 `false`，可能是因为找不到相关的页面元素，也可能是因为该 ID 对应的元素没有可访问的 `width` 和 `height` 属性。
+
+### 优雅降级（Graceful Degradation）
 
 早期的网络浏览器中，有些甚至不支持在 HTML 中包含图像。当引入 `<img>` 元素时，需要一种方法让这些纯文本浏览器在遇到此类不支持的标签时，能够向用户展示一些有用的内容。
 
@@ -8680,7 +8290,7 @@ function getElementArea(elementId) {
 
 另一个重要的例子在于可访问性（accessibility）领域。无论浏览器程序多么强大，总有一些用户受到其他限制的痛苦，例如可能无法使用鼠标，或者必须使用屏幕阅读软件。如果你的网站不照顾这些用户，他们就不可能回来。
 
-### 渐进式增强 (Progressive Enhancement)
+### 渐进式增强（Progressive Enhancement）
 
 当我们谈论优雅降级时，很容易想象一个功能完备、带有各种华丽功能的网页，为浏览器能力较弱的用户提供慈善式的援助。
 
@@ -8692,11 +8302,11 @@ function getElementArea(elementId) {
 
 采用渐进式增强技术的网页的核心资源是内容。HTML 提供了标记设施，允许你以语义化的方式描述内容；标记本身将页面元素标识为标题、表格、段落等。我们可以将其称为语义层。
 
-这种语义层理想情况下*不应*包含任何关于页面应该如何显示的信息。你之后可以使用 CSS 技术添加这些额外信息，形成表现层。通过将外部 CSS 样式链接到文档中，你避免了任何外观相关的信息出现在 HTML 标记本身中。然而，即使是不理解 CSS 的浏览器，仍然可以访问并显示页的所有信息，尽管它看起来可能并不那么漂亮。
+这种语义层理想情况下不应包含任何关于页面应该如何显示的信息。你之后可以使用 CSS 技术添加这些额外信息，形成表现层。通过将外部 CSS 样式链接到文档中，你避免了任何外观相关的信息出现在 HTML 标记本身中。然而，即使是不理解 CSS 的浏览器，仍然可以访问并显示页的所有信息，尽管它看起来可能并不那么漂亮。
 
 当你现在把 JavaScript 加入进来时，你是将其作为另一个概念层引入的——你可能可以将其视为行为层。没有 JavaScript 的用户仍然可以通过语义标记访问页面内容；如果他们的浏览器理解 CSS，他们也将受益于表现层增强后的外观。如果行为层的 JavaScript 应用得当，它将为那些可以使用它的人提供更多功能，而不会损害任何人的体验。
 
-### 非侵入式 JavaScript (Unobtrusive JavaScript)
+### 非侵入式 JavaScript（Unobtrusive JavaScript）
 
 非侵入式 JavaScript 没有正式的定义，但构建其基础的概念都涉及维护行为层与内容及表现层之间的分离。
 
@@ -8745,6 +8355,7 @@ function getElementArea(elementId) {
 function doSomething() {
     // ....语句 ....
 }
+
 document.getElementById("btn1").onclick = doSomething;
 ```
 
@@ -8754,20 +8365,14 @@ document.getElementById("btn1").onclick = doSomething;
 
 根据渐进式增强的精神，你希望网页在禁用了 JavaScript 的情况下也能运行。JavaScript 为页面增加的任何改进都应被视为那些浏览器设置允许用户的额外奖励。
 
-
-
-
 让我们假设你想要写一些表单验证代码——这是 JavaScript 的常见用途。这是一个简单的 HTML 搜索表单：
 
 点击此处查看代码图片
 
 ```html
 <form action="process.php">
-
-<input id="searchTerm" name="term" type="text" /><br />
-
-<input type="button" id="btn1" value="Search" />
-
+    <input id="searchTerm" name="term" type="text" /><br />
+    <input type="button" id="btn1" value="Search" />
 </form>
 ```
 
@@ -8777,7 +8382,7 @@ document.getElementById("btn1").onclick = doSomething;
 
 ```javascript
 function checkform() {
-    if(document.forms[0].term.value == "") {
+    if (document.forms[0].term.value == "") {
         alert("Please enter a search term.");
         return false;
     } else {
@@ -8809,7 +8414,7 @@ window.onload = function() {
 
 ```javascript
 function checkform() {
-    if(document.forms[0].term.value == "") {
+    if (document.forms[0].term.value == "") {
         alert("Please enter a search term.");
         return false;
     } else {
@@ -8826,7 +8431,7 @@ window.onload = function() {
 
 ### 特性检测
 
-尽可能，尝试直接检测浏览器特性的存在或否，并让你的代码仅在特性可用时使用这些特性。
+尽可能，尝试直接检测浏览器特性的存在与否，并让你的代码仅在特性可用时使用这些特性。
 
 例如，让我们来看 `clipboardData` 对象，在编写此书时，它仅在 Internet Explorer 中支持。在代码中使用此对象之前，进行几次测试是一个好主意：
 
@@ -8839,8 +8444,8 @@ window.onload = function() {
 点击此处查看代码图片
 
 ```javascript
-function setClipboard(myText){
-    if((typeof clipboardData != 'undefined') && (clipboardData.setData)){
+function setClipboard(myText) {
+    if ((typeof clipboardData != 'undefined') && (clipboardData.setData)) {
         clipboardData.setData("text", myText);
     } else {
         document.getElementById("copytext").innerHTML = myText;
@@ -8854,7 +8459,7 @@ function setClipboard(myText){
 点击此处查看代码图片
 
 ```javascript
-if((typeof clipboardData != 'undefined') ....
+if ((typeof clipboardData != 'undefined') ....
 ```
 
 ***
@@ -8862,6 +8467,7 @@ if((typeof clipboardData != 'undefined') ....
 注意
 
 `typeof` 运算符返回以下值之一，取决于操作数的类型：
+
 `"undefined"`、`"object"`、`"function"`、`"boolean"`、`"string"` 或 `"number"`
 
 ***
@@ -8880,6 +8486,7 @@ if((typeof clipboardData != 'undefined') ....
 
 ```javascript
 document.getElementById("copytext").innerHTML = myText;
+
 alert("Please copy the text from the 'copytext' field to your clipboard");
 ```
 
@@ -8901,7 +8508,7 @@ alert("Please copy the text from the 'copytext' field to your clipboard");
 try {
     doSomething();
 }
-catch(err) {
+catch (err) {
     doSomethingElse();
 }
 ```
@@ -8913,7 +8520,7 @@ catch(err) {
 这里 `identifier` 是捕获错误时创建的对象。它包含了错误的信息；例如，如果你想向用户提示错误的性质，可以使用如下结构：
 
 ```javascript
-catch(err) {
+catch (err) {
     alert(err);
 }
 ```
@@ -8971,12 +8578,9 @@ catch(err) {
 
 ![Image](img/image00412.jpeg) 按钮具有内联事件程序句。
 
-
-
-
 ![Image](img/image00412.jpeg) 未启用 JavaScript 的用户只会看到一个带有无法运行按钮的页面。
 
-首先，我们将所有的 JavaScript 移动到一个单独的文件并移除内联事件处理程序。我们还为按钮分配了一个 `id` 值，这样我们就可以在 `JavaScript` 中识别它，并通过我们的代码添加所需的事件处理程序。
+首先，我们将所有的 JavaScript 移动到一个单独的文件并移除内联事件处理程序。我们还为按钮分配了一个 `id` 值，这样我们就可以在 JavaScript 中识别它，并通过我们的代码添加所需的事件处理程序。
 
 接下来，我们需要处理未启用 JavaScript 的用户的问题。我们使用 `<noscript>` 页面元素，使得未启用 JavaScript 的用户看到的不是按钮，而是一条短消息，并附带一个指向替代时间信息源的链接：
 
@@ -8989,82 +8593,101 @@ catch(err) {
 </noscript>
 ```
 
-* * *
+
 
 ### 提示
 
 `<noscript>` 元素为禁用了脚本或使用不支持客户端脚本浏览的用户提供了额外的页面内容。任何可以放入 HTML 页面 `<body>` 元素中的元素都可以放入 `<noscript>` 元素中，如果用户的浏览器无法运行脚本，这些元素将自动显示。
 
-* * *
-
-修改后的 HTML 文件列在 列表 22.2 中。
+修改后的 HTML 文件列在列表 22.2 中。
 
 **列表 22.2 修改后的 HTML 页面**
 
 点击此处查看代码图像
 
-* * *
-
 ```html
 <!DOCTYPE html>
+
 <html>
+
 <head>
+
     <title>当前日期和时间</title>
+
     <style>
+
         p {font: 14px normal arial, verdana, helvetica;}
+
     </style>
+
     <script src="datetime.js"></script>
+
 </head>
+
 <body>
+
     当前日期和时间为：<br/>
+
     <div id="div1"></div>>
+
     <input id="btn1" type="button" value="Refresh" />
+
     <noscript>
+
         <p>您的浏览器不支持 JavaScript。</p>
+
         <p>请咨询您的计算机操作系统以获取本地日期和时间信息，或点击 <a href="clock.php" target="_blank">这里</a>读取服务器时间。</p>
+
     </noscript>
+
 </body>
+
 </html>
 ```
 
-* * *
-
-在我们的 JavaScript 源文件 `telltime.js` 中，我们使用 `window.onload` 为按钮添加事件监听器。最后，我们调用 `telltime()` 来生成显示在页面上的日期和时间信息。JavaScript 代码如 列表 22.3 中。
+在我们的 JavaScript 源文件 `telltime.js` 中，我们使用 `window.onload` 为按钮添加事件监听器。最后，我们调用 `telltime()` 来生成显示在页面上的日期和时间信息。JavaScript 代码如列表 22.3 中。
 
 **列表 22.3 datetime.js**
 
 点击此处查看代码图像
 
-* * *
-
 ```javascript
 function telltime() {
+
     var out = "";
+
     var now = new Date();
+
     out += "<br />Date: " + now.getDate();
+
     out += "<br />Month: " + now.getMonth();
+
     out += "<br />Year: " + now.getFullYear();
+
     out += "<br />Hours: " + now.getHours();
+
     out += "<br />Minutes: " + now.getMinutes();
+
     out += "<br />Seconds: " + now.getSeconds();
+
     document.getElementById("div1").innerHTML = out;
+
 }
 
 window.onload = function() {
+
     document.getElementById("btn1").onclick= function() {location.reload();}
+
     telltime();
+
 }
 ```
 
-* * *
-
-启用 JavaScript 后，脚本的运行方式与 第 4 小节 中相同。然而，禁用了 JavaScript，用户现在看到的页面如 图 22.1 所示。
+启用 JavaScript 后，脚本的运行方式与第 4 小节中相同。然而，禁用了 JavaScript，用户现在看到的页面如图 22.1 所示。
 
 ![Image](img/image00471.jpeg)
 
 **图 22.1** 为无 JavaScript 用户提供的额外信息
-
-* * *
 
 ### 总结
 
@@ -9095,19 +8718,19 @@ window.onload = function() {
 #### 测验
 
 1. 将代码模块化为可重用的块被称为：
-a. 抽象
-b. 继承
-c. 非侵入
+   - a. 抽象
+   - b. 继承
+   - c. 非侵入
 
 2. 页面的 CSS 应该尽可能限制在：
-a. 语义层
-b. 表现层
-c. 行为层
+   - a. 语义层
+   - b. 表现层
+   - c. 行为层
 
 3. 非侵入代码应尽可能放在：
-a. 外部文件
-b. `<script>` 标签之间
-c. 内联
+   - a. 外部文件
+   - b. `<script>` 标签之间
+   - c. 内联
 
 #### 答案
 
@@ -9117,11 +8740,7 @@ c. 内联
 
 #### 练习
 
-- 你能如何修改 列表 22.2 和 列表 22.3 中的代码，以确保没有 JavaScript 的用户只看到 `<noscript>` 标签的内容，而不是额外的文本和按钮？（提示：使用 `innerHTML` 或 DOM 方法向页面写入这些项目。）
-
-
-
-
+- 你能如何修改列表 22.2 和列表 22.3 中的代码，以确保没有 JavaScript 的用户只看到 `<noscript>` 标签的内容，而不是额外的文本和按钮？（提示：使用 `innerHTML` 或 DOM 方法向页面写入这些项目。）
 
 ![Image](img/image00365.jpeg) **运行时错误**——当 JavaScript 解释器尝试执行它无法理解的操作时发生的错误。示例包括尝试将字符串视为数值，以及尝试将数字除以零。
 
@@ -9153,7 +8772,7 @@ c. 内联
 
 ![Image](img/image00365.jpeg) **代码补全或工具提示式语法帮助**——某些编辑器为命令函数和表达式提供弹出式工具提示的帮助。这可以节省你将视线离开编辑器窗口去查找外部参考的时间。
 
-### 使用 alert() 进行简单调试
+### 使用 `alert()` 进行简单调试
 
 有时，你想要一种非常简单快速的方法来读取变量的值，或者跟踪代码执行的顺序。
 
@@ -9161,14 +8780,18 @@ c. 内联
 
 ```javascript
 function myFunc(a, b) {
+
   alert("myFunc() called.\na: " + a + "\nb: " + b);
+
   // rest of function code ...
+
 }
 ```
 
 当函数被调用时，`alert()` 方法会执行，并产生一个如图 23.1 所示的对话框。
 
 ![Image](img/image00472.jpeg)
+
 **图 23.1** 使用 JavaScript `alert()`
 
 记住在显示的消息中放入比单纯变量值或单单词注释多一点的信息；在战斗激烈时，你可能会忘记 `alert()` 中的值指的是哪个变量或属性。
@@ -9189,11 +8812,11 @@ function myFunc(a, b) {
 
 幸运的是，大多数现代浏览器都提供了 JavaScript 控制台，你可以更有效地利用它记录消息。打开控制台的方法因浏览器而异：
 
-![Image](img/image00365.jpeg) 在 Internet Explorer 中，打开开发者工具的方法：F12
+![Image](img/image00365.jpeg) 在 Internet Explorer 中，打开开发者工具的方法：`F12`
 
-![Image](img/image00365.jpeg) 对于 Chrome 开发者工具和 Opera 调试器：Ctrl+Shift+I
+![Image](img/image00365.jpeg) 对于 Chrome 开发者工具和 Opera 调试器：`Ctrl+Shift+I`
 
-![Image](img/image00365.jpeg) 使用带有 Firebug 扩展的 Firefox：F12
+![Image](img/image00365.jpeg) 使用带有 Firebug 扩展的 Firefox：`F12`
 
 本节中的示例假设你正在使用其中一种调试器。如果不是，你可能需要咨询你的调试器文档以查看如何执行某些任务。你的浏览器向你展示此类错误的方式因浏览器而异。
 
@@ -9205,19 +8828,33 @@ function myFunc(a, b) {
 
 ```html
 <!DOCTYPE html>
+
 <html>
+
 <head>
+
   <title>Strings and Arrays</title>
+
 </head>
+
 <body>
+
   <script>
+
     function sayHi() {
+
       alert("Hello!");
+
     }
+
   </script>
+
   <input type="button" value="good" onclick="sayHi()" />
+
   <input type="button" value="bad" onclick="sayhi()" />
+
 </body>
+
 </html>
 ```
 
@@ -9225,9 +8862,10 @@ function myFunc(a, b) {
 
 其次，第二个按钮的 `onclick` 处理器调用了函数 `sayhi()`——记住函数名是大小写敏感的，因此实际上没有定义名为 `sayhi()` 的函数。
 
-将页面加载到 Firefox 中，我们可以看到预期的两个按钮，一个标记为“good”，另一个标记为“bad”。它们似乎都没有反应。我们可以通过按下 Ctrl+Shift+J 打开 Firefox 控制台，结果如图 23.2 所示。
+将页面加载到 Firefox 中，我们可以看到预期的两个按钮，一个标记为“good”，另一个标记为“bad”。它们似乎都没有反应。我们可以通过按下 `Ctrl+Shift+J` 打开 Firefox 控制台，结果如图 23.2 所示。
 
 ![Image](img/image00473.jpeg)
+
 **图 23.2** Firefox 控制台
 
 这是一个很好的开始。Firefox 告诉我们发现了一个未结束的字符串字面量，给出了行号，甚至向我们展示问题所在的代码行。
@@ -9239,6 +8877,7 @@ function myFunc(a, b) {
 但点击标记为“bad”的按钮似乎什么都没有做——所以我再次参考控制台，如图 23.3 所示。
 
 ![Image](img/image00474.jpeg)
+
 **图 23.3** 第二个错误
 
 Firefox 再次识别了问题：“sayhi 未定义”。现在我们正处于让代码完全调试并正确运行的路上。
@@ -9246,13 +8885,10 @@ Firefox 再次识别了问题：“sayhi 未定义”。现在我们正处于让
 每个浏览器都有自己处理错误的方式。图 23.4 显示了 Chromium 浏览器如何报告最初的未结束字符串字面量错误。
 
 ![Image](img/image00475.jpeg)
+
 **图 23.4** Google Chromium JavaScript 控制台
 
-
-
-
-
-# Google Chrome 和 Chromium
+## Google Chrome 和 Chromium
 
 Google Chrome 和 Chromium 几乎是相同的浏览器，主要区别在于它们的打包和分发方式。本质上，Google Chrome 是由 Google 打包并分发的 `Chromium` 开源浏览器。
 
@@ -9273,7 +8909,7 @@ Chromium 的错误信息略显晦涩：“Uncaught syntax error: Unexpected toke
 点击此处查看代码图片
 
 ```html
-<body onload="somefunction()" >
+<body onload="somefunction()">
 ```
 
 当页面完全加载完成后，`onLoad` 事件就会触发，事件处理程序指定的代码就会运行。我们使用这个事件处理程序在页面加载后立即运行横幅轮播器。
@@ -9290,7 +8926,7 @@ setInterval(myFunc, 5000);
 
 我们使用 `setInterval()` 定隔旋转横幅图片。
 
-创建一个名为 `banner.html` 的新文件，并输入 列表 23.2 中的代码。
+创建一个名为 `banner.html` 的新文件，并输入列表 23.2 中的代码。
 
 **列表 23.2 横幅轮播器**
 
@@ -9298,25 +8934,45 @@ setInterval(myFunc, 5000);
 
 ```html
 <!DOCTYPE html>
+
 <html>
+
 <head>
+
     <title>Banner Cycler</title>
+
     <script>
+
         var banners = ["banner1.jpg", "banner2.jpg", "banner3.jpg"];
+
         var counter = 0;
+
         function run() {
+
             setInterval(cycle, 2000);
+
         }
+
         function cycle() {
+
             counter++;
+
             if(counter == banners.length) counter = 0;
+
             document.getElementById("banner").src = banners[counter];
+
         }
+
     </script>
+
 </head>
+
 <body onload = "run();">
+
     <img id="banner" alt="banner" src="banner1.jpg" />
+
 </body>
+
 </html>
 ```
 
@@ -9334,7 +8990,11 @@ setInterval(myFunc, 5000);
 counter++;
 ```
 
-**2. 使用条件语句检查计数器是否达到了图像名称数组中的元素数量；如果是，则将计数器置为零。**
+
+
+## 使用条件语句检查计数器
+
+使用条件语句检查计数器是否达到了图像名称数组中的元素数量；如果是，则将计数器置为零。
 
 点击此处查看代码图片
 
@@ -9342,17 +9002,15 @@ counter++;
 if(counter == banners.length) counter = 0;
 ```
 
-**3. 将显示图像的 `src` 属性设置为从图像文件名数组选择的适当文件名。**
+## 设置图像源属性
+
+将显示图像的 `src` 属性设置为从图像文件名数组选择的适当文件名。
 
 点击此处查看代码图片
 
 ```javascript
 document.getElementById("banner").src = banners[counter];
 ```
-
-
-
-
 
 图 23.9 显示了 Firebug 控制台如何显示每个消息；在其他浏览器中显示可能会略有不同。
 
@@ -9368,23 +9026,39 @@ document.getElementById("banner").src = banners[counter];
 
 ```javascript
 function myFunc(a, b) {
+
     console.group("myFunc execution");
+
     console.log("Executing myFunc()");
+
     if(isNaN(a) || isNaN(b)) {
+
         console.warn("One or more arguments non-numeric");
+
     }
+
     console.groupEnd();
+
     myOtherFunc(a+b);
+
 }
 
 function myOtherFunc(c) {
+
     console.group("myOtherFunc execution");
+
     console.log("Executing myOtherFunc()");
+
     if(isNaN(c)) {
+
         console.info("Argument is not numeric");
+
     }
+
     console.groupEnd();
+
     // .. rest of function code here ...
+
 }
 ```
 
@@ -9434,10 +9108,15 @@ function myOtherFunc(c) {
 
 ```javascript
 function myFunc(a, b) {
+
     if(isNaN(a) || isNaN(b)) {
+
         debugger;
+
     }
+
     // .. rest of function code here ...
+
 }
 ```
 
@@ -9469,11 +9148,9 @@ function myFunc(a, b) {
 
 ## 工作
 
-在阅读答案 你如何修改横幅循环脚本以为横幅添加链接，使得显示的每个图像都链接到不同的外部页面？
+在阅读答案之前，请尝试思考以下问题：
 
-
-
-
+你如何修改横幅循环脚本以为横幅添加链接，使得显示的每个图像都链接到不同的外部页面？
 
 ![Image](img/image00365.jpeg) 利用你对使用 `Math` 对象生成随机数的知识，你是否可以重写横幅循环脚本，以便在每次切换时显示随机横幅，而不是按顺序循环？请使用浏览器的内置调试工具来帮助自己。
 
@@ -9493,7 +9170,7 @@ function myFunc(a, b) {
 
 当这样的应用程序（不可避免地）崩溃时，理清代码并找到问题可能是一场噩梦。
 
-正如你已经在第 22 小时中读到的，“良好的编码实践](#part0037.xhtml_ch22)”，良好的编码实践可以帮助让你的代码更容易理解和维护，但你还有其他可以做的事情。随着你的 JavaScript 应用程序规模、复杂性和精细程度的增加，编写易于测试的代码变得更加重要。
+正如你已经在第 22 小时中读到的，“良好的编码实践”，良好的编码实践可以帮助让你的代码更容易理解和维护，但你还有其他可以做的事情。随着你的 JavaScript 应用程序规模、复杂性和精细程度的增加，编写易于测试的代码变得更加重要。
 
 在本小时中，你将学习一些编写代码以使其适用于单元测试的方法，以及如何编写和执行此类测试。
 
@@ -9509,20 +9186,23 @@ function myFunc(a, b) {
 
 本质上，你为代码的每个基本元素编写一系列测试，以测试该单元在所有可能的输入类型下的性能。如果所有这些测试都通过了，你就可以确信每个测试元素都是称职的。
 
-## 亲自试一试：一个自制的的单元测试
+## 亲自试一试：一个自制的单元测试
 
 让我们直接开始，从头执行一个单元测试。
 
 在这个示例中，我们将编写一些测试，在一个示例单元上执行它们，并将结果摘要发送到浏览器控制台。
 
-让我们看看我们在第 3 小时中编写的一个函数，“使用函数](#part0012.xhtml_ch03)”，该函数用于按给定比例向净额添加税费并返回总额：
+让我们看看我们在第 3 小时中编写的一个函数，“使用函数”，该函数用于按给定比例向净额添加税费并返回总额：
 
 点击此处查看代码图像
 
 ```javascript
 function addTax(subtotal, taxRate) {
+
     var total = subtotal * (1 + (taxRate/100));
+
     return total;
+
 }
 ```
 
@@ -9536,33 +9216,61 @@ function addTax(subtotal, taxRate) {
 
 ```html
 <!DOCTYPE html>
+
 <html>
+
 <head>
+
   <title>Manual Unit Testing Examples</title>
+
   <script src="tax.js"></script>
+
   <script>
+
   function test(amount, rate, expected) {
+
     results.total++;
+
     var result = addTax(amount, rate);
+
     if (result !== expected) {
+
       results.failed++;
+
       console.log("Expected " + expected + ", but instead got " + result);
+
     }
+
   }
+
   var results = {
+
     total: 0,
+
     failed: 0
+
   };
+
   // Our unit tests
+
   test(1, 10, 1.1);
+
   test(5, 12, 5.6);
+
   test(100, 17.5, 117.5);
+
   // Output results to the console
+
   console.log(results.total + " tests carried out, " + results.failed + " failed, " +(results.total - results.failed) + " passed.");
+
   </script>
+
 </head>
+
 <body>
+
 </body>
+
 </html>
 ```
 
@@ -9570,15 +9278,15 @@ function addTax(subtotal, taxRate) {
 
 如果被测试函数返回了预期结果，`test()` 函数将增加成功计数器；如果不是，它将增加失败计数器，并在控制台中打印出哪个测试失败以及实际返回的值。
 
-要运行此测试，我只需将代码保存为 .html 文件并将页面加载到浏览器中。结果所示于图 24.1。
+要运行此测试，我只需将代码保存为 .html 文件并将页面加载到浏览器中。结果如图 24.1 所示。
 
 ![Image](img/image0485.jpeg)
 
-**图 24.1**单元测试的结果
+**图 24.1** 单元测试的结果
 
 你可以看到，我们的一个测试失败了；JavaScript 产生了一个小的误差。这个结果让我重新检查 `addTax()` 函数的代码——也许在返回之前对输出进行舍入。
 
-当然，你不必将结果记录到控制台；它们同样可以打印到页面上、保存到数据库等。稍我们将查看 `QUnit`，这是一个开源单元测试应用程序，它可以在测试的 HTML 中直接显示格式良好的测试结果。
+当然，你不必将结果记录到控制台；它们同样可以打印到页面上、保存到数据库等。稍后我们将查看 `QUnit`，这是一个开源单元测试应用程序，它可以在测试的 HTML 中直接显示格式良好的测试结果。
 
 ## 为单元测试编写 JavaScript
 
@@ -9598,14 +9306,15 @@ function addTax(subtotal, taxRate) {
 
 外部化脚本
 
-
-
-
 将收集到外部文件中稍后链接到应用程序中的 JavaScript 代码通常更容易测试。在理想情况下，包含在生产应用程序中的相同 JavaScript 文件可以简单地链接到你的测试构架（test harness）中，以便执行测试。
 
-## 保持函数和方法简单
+### 保持函数和方法简单
 
 你越在一个过程中尝试做更多的事情，你的测试就会变得越复杂、数量越多，而且在测试该函数时，将其从周围的代码中解耦出来可能变得越困难。
+
+### 避免依赖全局状态
+
+如果函数依赖于全局变量或全局状态，那么测试会变得更加困难。尽量将函数设计为通过参数接收所有必要的输入，并通过返回值或输出参数提供结果。这样可以让你独立于外部环境测试每个函数。
 
 ## QUnit 测试套件
 
@@ -9619,39 +9328,45 @@ function addTax(subtotal, taxRate) {
 
 ### 极简 QUnit 设置
 
-再次，我们的测试设置将是一个简单的 HTML 页面，如 列表 24.2 所示。这次，`QUnit` 从 CDN 引入。
+再次，我们的测试设置将是一个简单的 HTML 页面，如列表 24.2 所示。这次，`QUnit` 从 CDN 引入。
 
 **列表 24.2 用于 QUnit 测试套件的代码**
 
 点击此处查看代码图像
 
-***
-
-```
+```html
 <!DOCTYPE html>
+
 <html
+
 <head>
+
 <title>Hello QUnit Example</title>
+
 <link rel="stylesheet" href="http://code.jquery.com/qunit/qunit-1.16.0.css">
+
 </head>
+
 <body>
+
 <div id="qunit"></div>
+
 <div id="qunit-fixture"></div>
+
 <script src="http://code.jquery.com/qunit/qunit-1.16.0.js"></script>
+
 <script src="tests.js"></script>
+
 </body>
+
 </html>
 ```
 
-***
-
 注意此文件的布局，以及它与我们在上一节中使用的手动测试套件有多相似。然而，有几点不同：
 
-![图像](img/image00365.jpeg) `QUnit` 并不是向控制台记录信息，而是将格式化良好的结果输出到 ID 为 `#qunit` 的 `<div>` 中。
+![Image](img/image00365.jpeg) `QUnit` 并不是向控制台记录信息，而是将格式化良好的结果输出到 ID 为 `#qunit` 的 `<div>` 中。
 
-![图像](img/image00365.jpeg) 在需要设置测试期间使用的元素（通常是表单元素等）所需的 `mock DOM` 时，需要 `#qunit-fixture` 元素。mock DOM 在每个单元测试后都会重置。`QUnit`
-
-期望 mock DOM 位于 `#qunit-fixture` 元素中。
+![Image](img/image00365.jpeg) 在需要设置测试期间使用的元素（通常是表单元素等）所需的 `mock DOM` 时，需要 `#qunit-fixture` 元素。mock DOM 在每个单元测试后都会重置。`QUnit` 期望 mock DOM 位于 `#qunit-fixture` 元素中。
 
 我们在 `head` 中包含 CSS 文件，而 `body` 包含了 `QUnit` JavaScript 文件，以及名为 `tests.js` 的后续文件，它仅包含以下代码：
 
@@ -9659,7 +9374,9 @@ function addTax(subtotal, taxRate) {
 
 ```javascript
 QUnit.test( "Hello QUnit test", function( assert ) {
+
   assert.ok( 1 == "1", "Passed!" );
+
 });
 ```
 
@@ -9671,17 +9388,15 @@ QUnit.test( "Hello QUnit test", function( assert ) {
 assert.ok( 1 == "1", "Passed!" );
 ```
 
-在这个平凡的示例中，测试将始终通过。`ok` 方法是 `QUnit` 提供的几个 `assertions`（断言）之一，如果传递给它的第一个参数返回一个评估为真的值，则返回真值。
 
-***
+
+在这个平凡的示例中，测试将始终通过。`ok`方法是`QUnit`提供的几个`assertions`（断言）之一，如果传递给它的第一个参数返回一个评估为真的值，则返回真值。
 
 ## QUnit 断言
 
-`assertion`（断言）评估表达式为真或假。`QUnit` 的 `assert` 有许多你可以使用的额外方法来构建你的测试。示例包括 `equal()`，意所当然，它测试相等性；`notEqual()`，测试不相等性；以及 `strictEqual()`，它再次测试相等性，但这次是严格的类型和值比较。
+`assertion`（断言）评估表达式为真或假。`QUnit`的`assert`有许多你可以使用的额外方法来构建你的测试。示例包括`equal()`，意所当然，它测试相等性；`notEqual()`，测试不相等性；以及`strictEqual()`，它再次测试相等性，但这次是严格的类型和值比较。
 
-在 `QUnit` 的文档中查看所有断言：[`api.qunitjs.com/category/assert/`](http://api.qunitjs.com/category/assert/)。
-
-***
+在`QUnit`的文档中查看所有断言：[`api.qunitjs.com/category/assert/`](http://api.qunitjs.com/category/assert/)。
 
 结果如图 24.2 所示。
 
@@ -9691,7 +9406,7 @@ assert.ok( 1 == "1", "Passed!" );
 
 ### 重新测试我们的 addTax() 函数
 
-现在让我们修改前面的示例以重新测试我们的函数 `addTax()`，这次使用 `QUnit`。测试构架与之前相似，但它现在包含了 `tax.js` 文件：
+现在让我们修改前面的示例以重新测试我们的函数`addTax()`，这次使用`QUnit`。测试构架与之前相似，但它现在包含了`tax.js`文件：
 
 点击此处查看代码图像
 
@@ -9711,7 +9426,7 @@ assert.ok( 1 == "1", "Passed!" );
 </html>
 ```
 
-现在我们需要修改 `tests.js` 以包含以下内容：
+现在我们需要修改`tests.js`以包含以下内容：
 
 ```javascript
 QUnit.test( "Hello QUnit test", function( assert ) {
@@ -9721,24 +9436,13 @@ QUnit.test( "Hello QUnit test", function( assert ) {
 
 
 
-
-# 1. a. 应用中可测试的最小单元，例如单个函数或方法
-2. b. 评估表达式为真或假
-3. b. 重构你的代码
-
-#### 练习
-
-![Image](img/image00365.jpeg) 修改“自制”的单元测试代码，将格式整齐的报告显示在 HTML 页面上，而不是将其打印到控制台（如 QUnit 所示）。
-
-![Image](img/image00365.jpeg) 从书中各处选取其他函数，并使用 QUnit 对它们进行单元测试。它们的运行方式都符合你的预期吗？
-
 # 第 9 部分：附录
 
 ### 附录 A. JavaScript 开发工具
 
 JavaScript 开发除了文本编辑器和浏览器外，不需要任何特殊工具或软件。
 
-大多数操作系统都自带了各至少一种工具，在很多情况下，这些工具对于你编写代码来说已经绰有余了。
+大多数操作系统都自带了各至少一种工具，在很多情况下，这些工具对于你编写代码来说已经绰绰有余了。
 
 然而，还有许多可选和额外的工具可用，其中一些在这里被进行了介绍。
 
@@ -9751,7 +9455,7 @@ JavaScript 开发除了文本编辑器和浏览器外，不需要任何特殊工
 
 #### Notepad++
 
-如果你在 Windows 平台上进行开发，你可能已经在使用 Windows 通常自带的记事本编辑器。`Notepad++` ([`notepad-plus-plus.org/`](http://notepad-plus-plus.org/)) 是一款免费应用程序，旨在成为更强大的替代品，同时仍保持轻量和快速。
+如果你在 Windows 平台上进行开发，你可能已经在使用 Windows 通常自带的记事本编辑器。`Notepad++`（[notepad-plus-plus.org/](http://notepad-plus-plus.org/)）是一款免费应用程序，旨在成为更强大的替代品，同时仍保持轻量和快速。
 
 `Notepad++` 提供行号、语法和大括号高亮、宏、搜索和替换等大量功能。
 
@@ -9771,7 +9475,7 @@ Windows 和 Linux 用户可以通过 [www.scintilla.org/SciTE.html](http://www.s
 
 #### Geany
 
-`Geany` ([www.geany.org/](http://www.geany.org/)) 是一个功能强大的编辑器，也可以作为基础集成开发环境 (IDE 使用。它的开发是为了提供一个小型且快速的 IDE，可以安装在几乎任何支持 GTK 工具包的平台上，包括 Windows、Linux、Mac OS X 和 FreeBSD。
+`Geany`（[www.geany.org/](http://www.geany.org/)）是一个功能强大的编辑器，也可以作为基础集成开发环境（IDE）使用。它的开发是为了提供一个小型且快速的 IDE，可以安装在几乎任何支持 GTK 工具包的平台上，包括 Windows、Linux、Mac OS X 和 FreeBSD。
 
 `Geany` 可根据 GNU 公共许可条款免费下载和使用。
 
@@ -9781,7 +9485,7 @@ Windows 和 Linux 用户可以通过 [www.scintilla.org/SciTE.html](http://www.s
 
 #### W3C 验证服务
 
-`W3C` 在 [`validator.w3.org/`](http://validator.w3.org/) 提供了一个在线验证器，它可以检查 HTML、SMIL、MathML 和其他语言 Web 文档的标记。你可以输入要检查的页面 URL，或直接将代码粘贴到验证器中。`CSS` 也可以在 [`jigsaw.w3.org/css-validator/validator.en`](http://jigsaw.w3.org/css-validator/validator.en) 以类似的方式验证。
+`W3C` 在 [validator.w3.org/](http://validator.w3.org/) 提供了一个在线验证器，它可以检查 HTML、SMIL、MathML 和其他语言 Web 文档的标记。你可以输入要检查的页面 URL，或直接将代码粘贴到验证器中。`CSS` 也可以在 [jigsaw.w3.org/css-validator/validator.en](http://jigsaw.w3.org/css-validator/validator.en) 以类似的方式验证。
 
 #### Web Design Group (WDG)
 
@@ -9793,28 +9497,28 @@ Windows 和 Linux 用户可以通过 [www.scintilla.org/SciTE.html](http://www.s
 
 #### Firebug
 
-`Firebug` 与 Firefox 浏览器集成，提供优秀的调试、编辑和分析工具。访问 [`firebug.com/javascript`](http://firebug.com/javascript)。
+`Firebug` 与 Firefox 浏览器集成，提供优秀的调试、编辑和分析工具。访问 [firebug.com/javascript](http://firebug.com/javascript)。
 
 #### JSLint
 
-`JSLint` ([www.jslint.com/](http://www.jslint.com/)) 由 Douglas Crockford 编写，用于分析你的 JavaScript 源代码并报告潜在问题，包括风格规范和编码错误。
+`JSLint`（[www.jslint.com/](http://www.jslint.com/)）由 Douglas Crockford 编写，用于分析你的 JavaScript 源代码并报告潜在问题，包括风格规范和编码错误。
 
 ### 附录 B. JavaScript 快速参考
 
-表 B.1, 表 B.2, 表 B.3 以及 表 B.4 本附录包含了一些常用的 JavaScript 语法元素以及内置对象的属性和方法。![Image](img/image00048.jpeg)ImageImage
+表 B.1、表 B.2、表 B.3 以及表 B.4 本附录包含了一些常用的 JavaScript 语法元素以及内置对象的属性和方法。
 
-#### JavaScript 运算符![Image](img/image00051.jpeg)
+#### JavaScript 运算符
 
-#### JavaScript 字符串![Image](img/image00052.jpeg)
+#### JavaScript 字符串
 
-#### JavaScript 数学对象![Image](img/image00053.jpeg)
+#### JavaScript 数学对象
 
-#### JavaScript 日期对象![Image](img/image00054.jpeg)
+#### JavaScript 日期对象
 
 #### 符号
 
 `$` 包装器
-`$( ` 处理器
+`$(` 处理器
 `$(document).ready`
 `$()` 函数
 `&&` 逻辑与
@@ -9831,69 +9535,86 @@ Windows 和 Linux 用户可以通过 [www.scintilla.org/SciTE.html](http://www.s
 
 JSON
 面向对象
-**Ajax**
+`Ajax`
 异步请求
 客户端-服务器交互
 表单提交
 使用 jQuery 实现
 
-
-
-
-
 # AngularJS, 300-304
+
 - 构建应用, 305-308
 - 指令, 302-304
 - 过滤器, 304
-- ng- 指令, 300-302
-- 作用域 (scopes), 302-302
+- `ng-` 指令, 300-302
+- 作用域 (scopes), 302
 
-# animate() 函数, 173
+# `animate()` 函数, 173
+
 ### 动画
+
 - CSS3, 213-214
 - 渐入, 237
 - jQuery, 238-241
 - 滑动元素, 237-238
 
 # 匿名函数, 110-111, 289-290
+
 #### 参数
+
 - 用于构造函数, 113-114
 - 多个参数，传递给函数, 41
 - 传递给函数, 40-43
 
 # 算术运算符, 27-28
+
 - `+` 运算符, 29
 - 变量值的递增/减, 27-28
 - 取模除运算符, 27
 - 优先级, 28
 
 #### 数组
+
 - 模拟关联数组, 158-159
 - 创建, 81
 - 初始化, 81-82
-- 长度属性 (length), 82
+- 长度属性 (`length`), 82
 - 操作, 84-86
 - 方法, 82-86
 
 # 箭头函数, 289-290
-# <article> 标签 (HTML5), 168
-# <aside> 标签 (HTML5), 168
+
+# `<article>` 标签 (HTML5), 168
+
+# `<aside>` 标签 (HTML5), 168
+
 # 给变量赋值, 25-26
+
 # 模拟关联数组, 158-159
+
 # 异步请求 (Ajax), 265-266
+
 # 为元素绑定事件处理程序, 239-243
-# attr() 方法, 235
+
+# `attr()` 方法, 235
+
 # 属性 (HTML5)
-- <video> 标签的, 169
+
+- `<video>` 标签的, 169
 - 读取, 133-134
-# <audio> 标签 (HTML5), 171-172
-- background-origin 属性 (CSS3), 208
-- background-size 属性 (CSS3), 207
+
+# `<audio>` 标签 (HTML5), 171-172
+
+- `background-origin` 属性 (CSS3), 208
+- `background-size` 属性 (CSS3), 207
 - 背景, 207-209
 - 多背景图像, 208-209
 - 轮播幅脚本，编写, 347-351
-# beginPath() 方法, 173
+
+# `beginPath()` 方法, 173
+
 # JavaScript 编写最佳实践, 325-326
+
 - 注释, 326-327
 - 错误处理, 335-338
 - 功能检测, 333-334
@@ -9902,24 +9623,32 @@ JSON
 - 渐进式增强, 330-331
 - 代码重用, 328-329
 - 非侵入式编写, 331-333
+
 # 布尔值, 75-79
+
 - 否定运算符, 79
-# border-radius 属性 (CSS3), 206-207
-# box-shadow 属性 (CSS3), 205
-# break 命令, 99
+
+# `border-radius` 属性 (CSS3), 206-207
+
+# `box-shadow` 属性 (CSS3), 205
+
+# `break` 命令, 99
+
 # 断点 (breakpoints), 353
+
 # 浏览器
+
 - Ajax 支持, 264
 - Cookie (cookies), 273-274
 - 删除, 280-281
 - `document.cookie` 属性, 274
-- domain 属性, 276
+- `domain` 属性, 276
 - 数据转义与反转义, 275
--过期期, 276
+- 过期时间, 276
 - 局限性, 274
-- path 属性, 276
+- `path` 属性, 276
 - 读取, 280
-- 安全标记 (secure flag), 276
+- 安全标记 (`secure` flag), 276
 - 测试, 281-284
 - 值, 276
 - 写入, 276-279
@@ -9942,247 +9671,304 @@ JSON
 - 浏览器原生支持访问 JSON 数据, 154
 - `navigator` 对象, 57-59
 - 刷新当前页面, 57
+
 # 构建
+
 - AngularJS 应用, 305-308
 - 扩展, 312-314
 - 内置对象，扩展, 117-118
+
 ## C
+
 ## 使用 `Math` 对象简化计算, 62-66
+
 - 寻找最小最大值, 62-63
 - 舍入, 62
 - 调用函数, 38-40
 - CamelCase 命名法, 25
-- canPlayType() 方法, 170
-# <canvas> 标签 (HTML5), 172-175
+- `canPlayType()` 方法, 170
+
+# `<canvas>` 标签 (HTML5), 172-175
+
 # JavaScript 的能力, 7
+
 # CDN (内容分发网络), jQuery, 232
+
 # 摄氏度转换为华氏度, 29-30
+
 # 使用 `className` 更改类, 192
 
+# 字符串，赋值为变量值, 26
 
+# 子节点，操作, 136-141
 
+# `childNodes` 属性, 126-129
 
+# 类, 288
 
-# 字符串，赋值为变量值，26
+## 使用 `className` 属性访问, 192-193
 
-# 子节点，操作，136-141
+# `className` 属性，访问类, 192-193
 
-# `childNodes` 属性，126-129
+# `clearRect()` 方法, 174
 
-# 类，288
+# 客户端脚本, 6
 
-## 使用 `className` 属性访问，192-193
-
-# `className` 属性，访问类，192-193
-
-# `clearRect()` 方法，174
-
-# 客户端脚本，6
-
-# `closePath()` 方法，173
+# `closePath()` 方法, 173
 
 # 代码
-## 调试，341
 
-## `alert()` 方法，343
+## 调试, 341
 
-## 断点，353
+## `alert()` 方法, 343
 
-## 条件断点，354-355
+## 断点, 353
 
-## 编辑器，选择，342-343
+## 条件断点, 354-355
 
-## 错误类型，341-342
+## 编辑器，选择, 342-343
 
-## 监表达式，355
+## 错误类型, 341-342
+
+## 监视表达式, 355
 
 # 库
+
 - Dojo, 223
 - jQuery, 224, 231
 - MooTools, 223
 - Prototype Framework, 223
 - `prototype.js`, 224-228
 
-## 目的，222
+## 目的, 222
 
-## 使用用用，221-222
+## 使用原因, 221-222
 
-## 重构，363
+## 重构, 363
 
-## 编写，最佳实践，325-326, 329
+## 编写，最佳实践, 325-326, 329
 
-## 注释，326-327
+## 注释, 326-327
 
-## 错误处理，335-338
+## 错误处理, 335-338
 
-## 功能检测，333-334
+## 功能检测, 333-334
 
-## 渐进降级，329-330
+## 渐进降级, 329-330
 
-## 命名规范，327-328
+## 命名规范, 327-328
 
-## 渐进增强，330-331
+## 渐进增强, 330-331
 
-## 代码复用，328-329
+## 代码复用, 328-329
 
-## 无侵入性编写，331-333
+## 无侵入性编写, 331-333
 
 # 组合
-## 条件，96
 
-## JavaScript 语句，24
+## 条件, 96
 
-# 命令链，238-242
+## JavaScript 语句, 24
 
-# 注释，24-25
+# 命令链, 238-242
 
-## 最佳实践，326-327
+# 注释, 24-25
 
-## 比较运算符，90
+## 最佳实践, 326-327
 
-# `concat()` 方法，74, 83
+## 比较运算符, 90
 
-# 字符串拼接，29
+# `concat()` 方法, 74, 83
 
-# 条件断点，354-355
+# 字符串拼接, 29
+
+# 条件断点, 354-355
 
 ### 条件语句
-- 比较运算符，90
-- `if()` 语句，89-90, 94
+
+- 比较运算符, 90
+- `if()` 语句, 89-90, 94
 - 库，Yahoo! 223
-- 逻辑运算符，96
-- `switch` 语句，95-96
-- 等等性测试，91-94
-- 多条件测试，95
+- 逻辑运算符, 96
+- `switch` 语句, 95-96
+- 等同性测试, 91-94
+- 多条件测试, 95
 
-# `confirm()` 方法，52
+# `confirm()` 方法, 52
 
-# `const` 关键字，290-293
+# `const` 关键字, 290-293
 
-# 构造函数，111-114
+# 构造函数, 111-114
 
-# `for-of` 构造，294
+# `for-of` 构造, 294
 
-# 内容，使用 CSS 分离样式，186
+# 内容，使用 CSS 分离样式, 186
 
-# 控制器，298
+# 控制器, 298
 
-# 控制光效，214-217
+# 控制光效, 214-217
 
 # 转换
-## 摄氏度转华氏度，29-30
 
-## CSS 属性名转 JavaScript，214
+## 摄氏度转华氏度, 29-30
 
-## 数据序列化，155
+## CSS 属性名转 JavaScript, 214
 
-## 字符串转数字，71
+## 数据序列化, 155
 
-# `cookies，273-274
-## 删除，280-281
-## `document.cookie` 属性，274
-## `domain` 属性，276
-## 转义与反转义，275
-## `expires` 日期，276
-## 限制性，274
-## `path` 属性，276
-## 读取，280
-## `secure` 标记，276
-## 测试，281-284
-## `value`，276
-## 设置多个值，284
-## 写入，276-279
+## 字符串转数字, 71
+
+# `cookies`, 273-274
+
+## 删除, 280-281
+
+## `document.cookie` 属性, 274
+
+## `domain` 属性, 276
+
+## 转义与反转义, 275
+
+## `expires` 日期, 276
+
+## 限制性, 274
+
+## `path` 属性, 276
+
+## 读取, 280
+
+## `secure` 标记, 276
+
+## 测试, 281-284
+
+## `value`, 276
+
+## 设置多个值, 284
+
+## 写入, 276-279
 
 # 创建
-## 数组，81
+
+## 数组, 81
 
 #### 对象
-## 当前日期，60
-## 给定日期，60
+
+## 当前日期, 60
+
+## 给定日期, 60
 
 ## 渐变
-## 线性渐变，209-210
-## 径向渐变，210-212
-## 溢出，34-35
-## 节点，354-355
-## 匿名函数，110-113
-## 构造函数，111-114
-## JSON，155-163
+
+## 线性渐变, 209-210
+
+## 径向渐变, 210-212
+
+## 溢出, 34-35
+
+## 节点, 354-355
+
+## 匿名函数, 110-113
+
+## 构造函数, 111-114
+
+## JSON, 155-163
 
 # CSS (级联样式表)
-## 类，192-193
+
+## 类, 192-193
 
 # DOM 节点
-## `style` 属性，188-191
-## 样式表，194
-## 命名规范，191
-## 使用 CSS 分离，186
-## 放置位置，187
+
+## `style` 属性, 188-191
+
+## 样式表, 194
+
+## 命名规范, 191
+
+## 使用 CSS 分离, 186
+
+## 放置位置, 187
 
 # CSS3
-## `background-origin` 属性，208
-## `background-size` 属性，207
-## `backgrounds`，207-209
-## 多背景图像，208-209
-## `border-radius` 属性，206-207
-## `box-shadow` 属性，205
-## 渐变，209-212
+
+## `background-origin` 属性, 208
+
+## `background-size` 属性, 207
+
+## `backgrounds`, 207-209
+
+## 多背景图像, 208-209
+
+## `border-radius` 属性, 206-207
+
+## `box-shadow` 属性, 205
+
+## 渐变, 209-212
+
 ## 渐变，创建
-## 线性渐变，209-210
-## 径向渐变，210-212
-## 光效，控制，214-217
+
+## 线性渐变, 209-210
+
+## 径向渐变, 210-212
+
+## 光效，控制, 214-217
+
 #### 属性
-## 转为 JavaScript，214
-## 使用厂商前缀设置，215-218
+
+## 转为 JavaScript, 214
+
+## 使用厂商前缀设置, 215-218
+
 ## 文本效果
-## 文本阴影，212
-## 换行，213
-## 过渡，204, 213-214
 
+## 文本阴影, 212
 
+## 换行, 213
 
+## 过渡, 204, 213-214
 
-
-厂商前缀，203-205
+# 厂商前缀, 203-205
 
 ### D
 
 `数据序列化`, 155
 
 #### `数据类型`
-* 布尔值, 75-79
-* JSON, 157-158
-* 数字, 69-72
-* 浮点数, 70
-* 整数, 70
-* NaN, 71
-* 字符串, 72-75
-* 空字符串, 72
-* 转义序列, 72-73
 
-`dataTransfer 属性 (HTML5)`, 176
+- 布尔值, 75-79
+- JSON, 157-158
+- 数字, 69-72
+- 浮点数, 70
+- 整数, 70
+- NaN, 71
+- 字符串, 72-75
+- 空字符串, 72
+- 转义序列, 72-73
 
-#### `Date 对象`, 276
-* 使用当前日期和时间创建, 60
-* 使用给定的日期和时间创建, 60
-* 编辑日期和时间, 61
-* 方法, 377
+`dataTransfer` 属性 (HTML5), 176
+
+#### `Date` 对象, 276
+
+- 使用当前日期和时间创建, 60
+- 使用给定的日期和时间创建, 60
+- 编辑日期和时间, 61
+- 方法, 377
 
 `日期选择器组件`, 255-256
 
 #### `调试`
-* 浏览器调试工具, 344-347
-* 代码, 341
-* `alert()` 方法, 343
-* 断点, 353
-* 条件断点, 354-355
-* 编辑器，选择, 342-343
-* 分组消息, 352-353
-* 错误类型, 341-342
-* 观察表达式, 355
-* 扩展, 315
-* Firebug, 371
-* JSLint, 371
+
+- 浏览器调试工具, 344-347
+- 代码, 341
+- `alert()` 方法, 343
+- 断点, 353
+- 条件断点, 354-355
+- 编辑器，选择, 342-343
+- 分组消息, 352-353
+- 错误类型, 341-342
+- 观察表达式, 355
+- 扩展, 315
+- Firebug, 371
+- JSLint, 371
 
 `变量值的递减`, 27-28
 
@@ -10196,74 +9982,80 @@ JSON
 
 `禁用样式表 (DOM 对象)`, 194-195
 
-`do...while 语句`, 98
+`do...while` 语句, 98
 
-#### `document 对象 (DOM)`, 11
-* 读取其属性, 16-17
+#### `document` 对象 (DOM), 11
 
-`document.cookie 属性`, 274
+- 读取其属性, 16-17
+
+`document.cookie` 属性, 274
 
 `document.write()` 方法, 15-16
 
 `Dojo`, 223
 
 #### `DOM (文档对象模型)`, 10-13
-* 浏览器支持, 11
-* Date 对象, 60-61
-* 方法, 377
-* document 对象, 11
-* 读取属性, 16-17
-* `document.write()` 方法, 15-16
-* `getComputedStyle()` 方法, 214-217
-* history 对象, 55
-* location 对象, 56-57
-* `Math 对象`, 62-66
-* 寻找最小值和值, 62-63
-* 生成随机数, 63
-* 关键字, 64
-* 数学常量, 64
-* 属性, 376
-* 舍入法, 62
-* navigator 对象, 57-59
-* `nodeName 属性`, 130
-* 节点, 123-130
-* `childNodes 属性`, 126-129
-* 类型, 125-126
-* 值, 129-130
-* 对象表示法, 12-13
-* `parentNode 属性`, 129
-* 脚本, 123
-* window 对象, 11
-* `window.alert()` 方法, 13-14
 
-#### `DOM 检查器`, 134-147
-* 操作子节点, 136-141
-* 动态加载 JavaScript 文件, 141-147
-* 编辑元素属性, 141
-* 创建节点, 135-136
+- 浏览器支持, 11
+- Date 对象, 60-61
+- 方法, 377
+- document 对象, 11
+- 读取属性, 16-17
+- `document.write()` 方法, 15-16
+- `getComputedStyle()` 方法, 214-217
+- history 对象, 55
+- location 对象, 56-57
+- `Math` 对象, 62-66
+- 寻找最小值和最大值, 62-63
+- 生成随机数, 63
+- `with` 关键字, 64
+- 数学常量, 64
+- 属性, 376
+- 舍入法, 62
+- navigator 对象, 57-59
+- `nodeName` 属性, 130
+- 节点, 123-130
+- `childNodes` 属性, 126-129
+- 类型, 125-126
+- 值, 129-130
+- 对象表示法, 12-13
+- `parentNode` 属性, 129
+- 脚本, 123
+- window 对象, 11
+- `window.alert()` 方法, 13-14
+
+#### `DOM` 检查器, 134-147
+
+- 操作子节点, 136-141
+- 动态加载 JavaScript 文件, 141-147
+- 编辑元素属性, 141
+- 创建节点, 135-136
 
 #### `DOM Level 0`, 10
 
-#### `DOM 节点`
-* style 属性, 188-191
-* 样式表, 194
-* 启用，禁用，切换, 194-195
-* 选择, 195-199
+#### `DOM` 节点
+
+- style 属性, 188-191
+- 样式表, 194
+- 启用，禁用，切换, 194-195
+- 选择, 195-199
 
 `点表示法`, 12-13
 
 #### `下载`
-* jQuery, 231-232
+
+- jQuery, 231-232
 
 #### `拖放`
-* 在 HTML5 中, 175-178
-* 使用 jQuery UI, 247-250
 
-`draggable 属性 (HTML5)`, 175
+- 在 HTML5 中, 175-178
+- 使用 jQuery UI, 247-250
+
+`draggable` 属性 (HTML5), 175
 
 `使用 <canvas> 标签绘图 (HTML5)`, 172-175
 
-`创建动态菜单, 142-147
+`创建动态菜单`, 142-147
 
 ### E
 
@@ -10271,42 +10063,42 @@ JSON
 
 `ECMAScript 6`, 287
 
-`编辑器，选择, 369-370
+`编辑器，选择`, 369-370
 
 #### `元素`
-* 编辑, 141
-* 读取, 133-134
-* 使用 `getElementsByTagName`, 130-132
-* 通过 ID, 54-55
-* 空字符串, 72
-* 启用样式表 (DOM 对象), 194-195
-* 封装, 118-119
-* 错误处理, 335-338
-* `escape()` 函数, 275
-* 转义序列, 41, 72-73
-* `eval()` 函数, 153-154
+
+- 编辑, 141
+- 读取, 133-134
+- 使用 `getElementsByTagName`, 130-132
+- 通过 ID, 54-55
+- 空字符串, 72
+- 启用样式表 (DOM 对象), 194-195
+- 封装, 118-119
+- 错误处理, 335-338
+- `escape()` 函数, 275
+- 转义序列, 41, 72-73
+- `eval()` 函数, 153-154
 
 #### `事件处理器`, 31-35
-* jQuery, 239-232
-* `onClick 事件处理器`, 31-32
-* `onMouseOut`, 32-33
-* `onMouseOver`, 32-33
+
+- jQuery, 239-242
+- `onClick` 事件处理器, 31-32
+- `onMouseOut`, 32-33
+- `onMouseOver`, 32-33
 
 #### `事件`
-* 用于拖放, 175-178
-* 鼠标事件，创建图像悬停效果, 33-35
+
+- 用于拖放, 175-178
+- 鼠标事件，创建图像悬停效果, 33-35
 
 `过期日期 (cookie)`, 276
 
 `指数计数法`, 70
 
-
-
-
-
-具有原型的对象，114-115
+# 具有原型的对象，114-115
 
 ### 扩展
+
 - 调试，315
 - Google Chrome 扩展，编写，312-316
 - 启动，315
@@ -10317,22 +10109,23 @@ JSON
 ### 脚本外部化，363
 
 ### F
+
 - 元素渐隐，237
 - “虚假”值，76
 - 错误的程序逻辑，342
 - 功能检测，119-120, 333-334
-- <figcaption> 标签 (HTML5),168
-- <figure> 标签 (HTML5),168
+- `<figcaption>` 标签 (HTML5)，168
+- `<figure>` 标签 (HTML5)，168
 - HTML5 中的文件访问，179-182
-- File API (HTML5),179-182
+- File API (HTML5)，179-182
 - `fill()` 方法，173
-- 过滤器 (AngularJS),304
+- 过滤器 (AngularJS)，304
 - Firebug，371
 - ficker.com，153
 - 浮点数，70
-- <<footer> 标签 (HTML5),168
+- `<footer>` 标签 (HTML5)，168
 - for 循环，98
-- for...in 循环，99-100
+- `for...in` 循环，99-100
 - for-of 结构，294
 - 表单，Ajax，268-270
 - 框架，297-298。另参见 库
@@ -10375,6 +10168,7 @@ JSON
     - 包装函数 (jQuery)，233-234
 
 ### G
+
 - Geany，370
 - 生成随机数，63
 - `get()` 方法，267
@@ -10398,7 +10192,8 @@ JSON
     - 分组消息，352-353
 
 ### H
-- <header> 标签 (HTML5),168
+
+- `<header>` 标签 (HTML5)，168
 - “Hello World!” 示例，15-16
 - `hide()` 方法，236
 - 历史对象，55
@@ -10413,33 +10208,29 @@ JSON
 - 本地存储，178-179
 - src 属性，22-23
 - 标签
-    - <article>，168
-    - <aside>，168
-    - <audio>，171-172
-    - <canvas>，172-175
-    - <figcaption>，168
-    - <figure>，168
-    - <footer>，168
-    - <header>，168
-    - <nav>，168
+    - `<article>`，168
+    - `<aside>`，168
+    - `<audio>`，171-172
+    - `<canvas>`，172-175
+    - `<figcaption>`，168
+    - `<figure>`，168
+    - `<footer>`，168
+    - `<header>`，168
+    - `<nav>`，168
     - 新标签，168
-    - <script>，9-10, 21
-    - <section>，168
-    - <summary>，168
-    - <video>，168-170
+    - `<script>`，9-10, 21
+    - `<section>`，168
+    - `<summary>`，168
+    - `<video>`，168-170
 - HTML5 拖放列表，176
 
 ### I
+
 - `if()` 语句，89-90, 94-95
-- 图片滚停，创建，33-35
+- 图片悬停效果，创建，33-35
 - 使用 jQuery 实现 Ajax，266-270
 - `ajax()` 方法，268
 - `get()` 方法，267
-
-
-
-
-
 - `load()` 方法, 266-267
 - `post()` 方法, 267
 - `变量的递增值`, 27-28
@@ -10462,6 +10253,7 @@ JSON
 ## J
 
 ## JavaScript
+
 - 向 HTML 文档添加, 22-23
 - 应用, 311-312
 - 能力, 7
@@ -10470,6 +10262,7 @@ JSON
 - 历史, 8-9
 
 ### 新特性
+
 - 箭头函数, 289-290
 - 类, 288
 - `const` 关键字, 290-293
@@ -10480,6 +10273,7 @@ JSON
 - 编译, 294-295
 
 ### 语句及其他主题
+
 - `语句`, 24-25
     - 组合, 24
     - 注释, 24-25
@@ -10496,7 +10290,7 @@ JSON
     - `attr()` 方法, 235
     - 命令链式, 238-242
     - 下载, 231-232
-    - 事件事件处理器, 239-243
+    - 事件处理器, 239-243
     - `hide()` 方法, 236
     - `html()` 方法, 234
     - 页面元素选择, 233-234
@@ -10511,7 +10305,7 @@ JSON
     - 排序, 251-252
 - `ThemeRoller`, 246
 - `widgets`, 253-258
-    - 手琴琴, 253-254
+    - 折叠面板, 253-254
     - 日期选择器, 255-256
     - 标签页, 256-258
 - `JSLint`, 371
@@ -10535,6 +10329,7 @@ JSON
     - `JSON.stringify()` 方法, 155
 
 ## K
+
 - `const` 关键字, 290-293
     - `function`, 38
     - `let` 关键字, 290-293
@@ -10549,12 +10344,14 @@ JSON
     - `with`, 64
 
 ## L
+
 - `lastIndexOf()` 方法, 74, 83
 - 启动 Google Chrome 扩展, 315
 - `length` 属性, 82
 - `let` 关键字, 290-293
 
 ## 库
+
 - Dojo, 223
 - 对比框架, 298
 - `jQuery`, 224, 231
@@ -10574,10 +10371,6 @@ JSON
 - MooTools, 223
 - Prototype Framework, 223
 - prototype.js, 224-228
-
-
-
-
 
 # `$()` 函数, 225
 
@@ -10621,7 +10414,7 @@ JSON
 
 # HTML5 中的本地存储, 178-179
 
-# 地变量, 46
+# 局部变量, 46
 
 # location 对象 (DOM), 56-57
 
@@ -10629,7 +10422,7 @@ JSON
 
 # 循环
 
-# do...while 语句, 98
+# `do...while` 语句, 98
 
 # for 循环, 98
 
@@ -10637,7 +10430,7 @@ JSON
 
 # 终止, 99
 
-# while 语句, 97
+# `while` 语句, 97
 
 # 弱类型语言, 69
 
@@ -10661,7 +10454,7 @@ JSON
 
 # 生成随机数, 63
 
-# with 关键字, 64
+# `with` 关键字, 64
 
 # 数学常量, 64
 
@@ -10793,7 +10586,7 @@ JSON
 
 # 浏览器原生支持访问 JSON 数据, 154
 
-# <nav> 标签 (HTML5), 168
+# `<nav>` 标签 (HTML5), 168
 
 # 使用 location 对象导航, 56
 
@@ -10801,7 +10594,7 @@ JSON
 
 # 否定运算符, 79
 
-# ng- 指令, 300-302
+# `ng-` 指令, 300-302
 
 # nodeName 属性, 130
 
@@ -10809,23 +10602,19 @@ JSON
 
 # 子节点, 操作, 136-141
 
-childNodes 属性, 126-129
+# `childNodes` 属性, 126-129
 
+# 创建，135-136
 
+# `nodeName` 属性，130
 
+# `parentNode` 属性，129
 
+# 类型，125-126
 
-创建，135-136
+# 值，129-130
 
-`nodeName` 属性，130
-
-`parentNode` 属性，129
-
-类型，125-126
-
-值，129-130
-
-**Notepad++,** 369**
+**Notepad++**, 369
 
 `null` 关键字，79
 
@@ -11005,36 +10794,31 @@ border-radius (CSS)，206-207
 
 box-shadow 属性 (CSS)，205
 
-childNodes，126-129
+`childNodes`，126-129
 
-document.cookie，274
+`document.cookie`，274
 
-document.innerHTML，54
+`document.innerHTML`，54
 
-document.Math，376
+`document.Math`，376
 
-document.nodeName，130
+`document.nodeName`，130
 
-document.parentNode，129
+`document.parentNode`，129
 
-document-fixed 版本，15
+`document-fixed` 版本，15
 
-document-of，17
+`document-of`，17
 
-document-syntax，13
+`document-syntax`，13
 
-document-wrap，33
+`document-wrap`，33
 
-text-shadow，32-33
+`text-shadow`，32-33
 
-text-wrap,33
+`text-wrap`，33
 
-word-wrap,33
-
-
-
-
-
+`word-wrap`，33
 
 # 随机数，生成，63
 
@@ -11060,7 +10844,7 @@ jQuery 的版本, 232
 
 调整大小交互, 251
 
-return 关键字, 42
+`return` 关键字, 42
 
 从函数返回值, 42-45
 
@@ -11080,7 +10864,7 @@ SciTE, 370
 
 `<script>` 标签, 9-10, 21
 
-src 属性, 22-23
+`src` 属性, 22-23
 
 脚本, 6
 
@@ -11098,7 +10882,7 @@ DOM, 123
 
 `<section>` 标签 (HTML5), 168
 
-JSON 安全密性, 163
+JSON 安全性, 163
 
 # 选择
 
@@ -11162,27 +10946,27 @@ QUnit 测试套件, 364-365
 
 `split()` 方法, 74-75
 
-src 属性, 22-23
+`src` 属性, 22-23
 
 语句, 24-25
 
 合并, 24
 
-注释, [24-25
+注释, 24-25
 
 条件语句
 
 `if()` 语句, 89-90, 94-95
 
-switch 语句, 95-96
+`switch` 语句, 95-96
 
 测试相等性, 91-94
 
 测试多个条件, 95
 
-do...while 语句, 98
+`do...while` 语句, 98
 
-while 语句, 97
+`while` 语句, 97
 
 ## 存储
 
@@ -11228,44 +11012,42 @@ JSON 解析, 155-157
 
 HTML5 标签
 
-<article>, 168
+`<article>`, 168
 
-<aside>, 168
+`<aside>`, 168
 
-<audio>, 171-172
+`<audio>`, 171-172
 
-<canvas>, 172-175
+`<canvas>`, 172-175
 
-<figcaption>, 168
+`<figcaption>`, 168
 
-<figure>, 168
+`<figure>`, 168
 
-<footer>, 168
+`<footer>`, 168
 
-<header>, 168
+`<header>`, 168
 
-<nav>, 168
+`<nav>`, 168
 
 新标签, 168
 
-<summary>, 168
+`<summary>`, 168
 
-<video>, 168-170
-
-
-
-
+`<video>`, 168-170
 
 ## 模板字符串，293-294
 
 ## 终止循环，99
 
 ## 测试
+
 - cookies，281-284
 - 相等性判断，91-94
 - 多重条件，95
 
 ### 单元测试
+
 - 解释，359-360, 362
 - QUnit 测试套件，363-366
 - 重构代码，363
@@ -11273,16 +11055,18 @@ HTML5 标签
 - 视频格式支持，`canPlayType()` 方法，170
 
 ## 文字效果
+
 - 文字阴影，212
 - 换行，213
 
 ## `text()` 方法，234-235
 
-## text-shadow 属性 (CSS3),212
+## text-shadow 属性 (CSS3), 212
 
 ## ThemeRoller，246
 
-## 定器
+## 定时器
+
 - `setInterval()` 方法，101-102
 - `setTimeout()` 方法，101
 
@@ -11307,10 +11091,12 @@ HTML5 标签
 ## “真值” (truthy) 值，76
 
 ### U
+
 - `undefined` 关键字，79
 - 数据转义，275
 
 ### 单元测试
+
 - 解释，359-360, 362
 - QUnit 测试套件，363-366
 - `addTax()` 函数测试，365-366
@@ -11320,19 +11106,21 @@ HTML5 标签
 - 简单示例，360-362
 
 ### V
+
 - 验证 JavaScript，356
 - 验证器，370
 
-### values
+### 值
+
 - 赋值给变量，25-26
 - cookies 的值，276
 - 获取，283
 - 设置多个值，284
-- “假值” (falsy)，76
+- “假值” (`falsy`)，76
 - 在 JSON 对象中，157-158
 - 节点，129-130
 - 从函数返回，42-45
-- “真值” (truthy)，76
+- “真值” (`truthy`)，76
 - `var` 关键字，25
 - 变量，25-26
 - 关联数组模拟，158-159
@@ -11350,35 +11138,38 @@ HTML5 标签
 - 厂商前缀，设置 CSS3 属性，215-218
 - `<video>` 标签 (HTML5)，168-170
 
-### videos
+### 视频
+
 - 执行 `pause()` 和 `play()` 命令，170
 - `<video>` 标签 (HTML5)，168-170
 - 测试格式支持，`canPlayType()` 方法，170
 
-## views，298
+## 视图，298
 
 ### W
-- W3C (世界维网联盟)，8
+
+- W3C (万维网联盟)，8
 - 验证服务，370
 - 观察表达式，355
-- WDG (网页设计组),370
+- WDG (网页设计组), 370
 - Web 应用，MVC 架构，299-300
 - WebM 网站，169
 
-### websites
+### 网站
+
 - CDNs，232
 - Dojo，223
 - ficker.com，153
 - jQuery，224
 - JSON，151
-- ooTools，223
+- MooTools，223
 - Prototype Framework，223
 - prototype.js，224
 - ThemeRoller，246
 - Traceur，294-295
 - Yahoo! UI 库，223
 - `while` 语句，97
-- (jQuery UI)，253-258
+- 窗口小部件 (jQuery UI)，253-258
 - 折叠面板 (accordion widget)，253-254
 - 日期选择器，255-256
 - 标签 (tabs)，256-258
@@ -11386,13 +11177,14 @@ HTML5 标签
 - `window.alert()` 方法，13-14
 - `with` 关键字，64
 - 换行，213
-- word-wrap 属性 (CSS3)，213
-- 包装器，`()`，233-234
+- `word-wrap` 属性 (CSS3)，213
+- 包装器，`$()`，233-234
 
 ## 编写
-- 横幅轮循环脚本，347-351
+
+- 横幅轮播脚本，347-351
 - 代码最佳实践，311-312, 329
-- 注释，226-327
+- 注释，326-327
 - 错误处理，335-338
 - 功能检测，333-334
 - 优雅降级，329-330
@@ -11403,19 +11195,16 @@ HTML5 标签
 - cookies，276-279
 - Google Chrome 扩展，312-316
 - HTML 文件，317-320
-- manifest.json 文件，316-317
+- `manifest.json` 文件，316-317
 
+## 练习
 
+- 修改“自制”的单元测试代码，将格式整齐的报告显示在 HTML 页面上，而不是将其打印到控制台（如 QUnit 所示）。
+- 从书中各处选取其他函数，并使用 QUnit 对它们进行单元测试。它们的运行方式都符合你的预期吗？
 
+## 单元测试的简单示例
 
-
-![Image](img/image00497.jpeg)
-
-## 代码片段
-
-
-
-
-
-![Image](img/#part0010.xhtml_p009pro01)![Image](img/#part0010.xhtml_p009pro02)![Image](img/#part0010.xhtml_p013pro01)![Image](img/#part0010.xhtml_p014pro01)![Image](img/#part0010.xhtml_p015pro01)![Image](img/#part0010.xhtml_p01lis01)![Image](img/#part0011.xhtml_p021pro01)![Image](img/#part0011.xhtml_p022pro01)![Image](img/#part0011.xhtml_p022pro02)![Image](img/#part0011.xhtml_p022pro03)![Image](img/#part0011.xhtml_p02lis01)![Image](img/#part0011.xhtml_p023pro01)![Image](img/#part0011.xhtml_p024pro01)![Image](img/#part0011.xhtml_p026pro01)![Image](img/#part0011.xhtml_p027pro01)![Image](img/#part0011.xhtml_p027pro02)![Image](img/#part0011.xhtml_p027pro03)![Image](img/#part0011.xhtml_p027pro04)![Image](img/#part0011.xhtml_p028pro01)![Image](img/#part0011.xhtml_p029pro01)![Image](img/#part0011.xhtml_p029pro02)![Image](img/#part0011.xhtml_p02lis02)![Image](img/#part0011.xhtml_p031pro01)![Image](img/#part0011.xhtml_p02lis03)![Image](img/#part0011.xhtml_p032pro01)![Image](img/#part0011.xhtml_p02lis04)![Image](img/#part0011.xhtml_p02lis05)![Image](img/#part0012.xhtml_p038pro01)![Image](img/#part0012.xhtml_p038pro02)![Image](img/#part0012.xhtml_p03lis01)![Image](img/#part0012.xhtml_p042pro01)![Image](img/#part0012.xhtml_p042pro02)![Image](img/#part0012.xhtml_p042pro03)![Image](img/#part0012.xhtml_p03lis02)![Image](img/#part0012.xhtml_p045pro01)![Image](img/#part0012.xhtml_p046pro01)![Image](img/#part0012.xhtml_p03lis03)![Image](img/#part0013.xhtml_p052pro01)![Image](img/#part0013.xhtml_p053pro01)![Image](img/#part0013.xhtml_p053pro02)![Image](img/#part0013.xhtml_p054pro01)![Image](img/#part0013.xhtml_p054pro02)![Image](img/#part0013.xhtml_p054pro03)![Image](img/#part0013.xhtml_p054pro04)![Image](img/#part0013.xhtml_p055pro01)![Image](img/#part0013.xhtml_p055pro02)![Image](img/#part0013.xhtml_p055pro03)![Image](img/#part0013.xhtml_p055pro04)![Image](img/#part0013.xhtml_p056pro01)![Image](img/#part0013.xhtml_p056pro02)![Image](img/#part0013.xhtml_p06lis01)![Image](img/#part0013.xhtml_p060pro01)![Image](img/#part0013.xhtml_p060pro02)![Image](img/#part0013.xhtml_p060pro03)![Image](img/#part0013.xhtml_p060pro04)![Image](img/#part0013.xhtml_p061pro01)![Image](img/#part0013.xhtml_p061pro02)![Image](img/#part0013.xhtml_p061pro03)![Image](img/#part0013.xhtml_p061pro04)![Image](img/#part0013.xhtml_p062pro01)![Image](img/#part0013.xhtml_p062pro02)![Image](img/#part0013.xhtml_p063pro01)![Image](img/#part0013.xhtml_p063pro02)![Image](img/#part0013.xhtml_p064pro01)![Image](img/#part0013.xhtml_p064pro02)![Image](img/#part0013.xhtml_p04lis02)![Image](img/#part0013.xhtml_p066pro01)![Image](img/#part0013.xhtml_p066pro02)![Image](img/#part0015.xhtml_p071pro01)![Image](img/#part0015.xhtml_p071pro02)![Image](img/#part0015.xhtml_p071pro03)![Image](img/#part0015.xhtml_p072pro01)![Image](img/#part0015.xhtml_p072pro02)![Image](img/#part0015.xhtml_p072pro03)![Image](img/#part0015.xhtml_p074pro01)![Image](img/#part0015.xhtml_p074pro02)![Image](img/#part0015.xhtml_p074pro03)![Image](img/#part0015.xhtml_p074pro04)![Image](img/#part0015.xhtml_p075pro01)![Image](img/#part0015.xhtml_p075pro02)![Image](img/#part0015.xhtml_p075pro03)![Image](img/#part0015.xhtml_p075pro04)![Image](img/#part0015.xhtml_p076pro01)![Image](img/#part0015.xhtml_p077pro01)![Image](img/#part0015.xhtml_p077pro02)![Image](img/#part0015.xhtml_p07lispro01)![Image](img/#part0015.xhtml_p079pro01)![Image](img/#part0016.xhtml_p081pro01)![Image](img/#part0016.xhtml_p082pro01)![Image](img/#part0016.xhtml_p083pro01)![Image](img/#part0016.xhtml_p083pro02)![Image](img/#part0016.xhtml_p083pro03)![Image](img/#part0016.xhtml_p083pro04)![Image](img/#part0016.xhtml_p083pro05)![Image](img/#part0016.xhtml_p084pro01)![Image](img/#part0016.xhtml_p084pro02)![Image](img/#part0016.xhtml_p084pro03)![Image](img/#part0016.xhtml_p084pro05)![Image](img/#part0016.xhtml_p06lis01)![Image](img/#part0016.xhtml_p085pro01)![Image](img/#part0016.xhtml_p086pro01)![Image](img/#part0016.xhtml_p086pro02)![Image](img/#part0016.xhtml_p087pro01)![Image](img/#part0017.xhtml_p089pro01)![Image](img/#part0017.xhtml_p090pro01)![Image](img/#part0017.xhtml_p090pro02)![Image](img/#part0017.xhtml_p090pro03)![Image](img/#part0017.xhtml_p090pro04)![Image](img/#part0017.xhtml_p091pro01)![Image](img/#part0017.xhtml_p091pro02)![Image](img/#part0017.xhtml_p07lis01)![Image](img/#part0017.xhtml_p093pro01)![Image](img/#part0017.xhtml_p094pro01)![Image](img/#part0017.xhtml_p094pro02)![Image](img/#part0017.xhtml_p094pro03)![Image](img/#part0017.xhtml_p094pro04)![Image](img/#part0017.xhtml_p095pro01)![Image](img/#part0017.xhtml_p095pro02)![Image](img/#part0017.xhtml_p095pro03)![Image](img/#part0017.xhtml_p095pro04)![Image](img/#part0017.xhtml_p096pro01)![Image](img/#part0017.xhtml_p096pro02)![Image](img/#part0017.xhtml_p097pro01)![Image](img/#part0017.xhtml_p097pro02)![Image](img/#part0017.xhtml_p098pro01)![Image](img/#part0017.xhtml_p098pro02)![Image](img/#part0017.xhtml_p098pro03)![Image](img/#part0017.xhtml_p098pro04)![Image](img/#part0017.xhtml_p098pro05)![Image](img/#part0027.xhtml_p224pro01)![Image](img/#part0027.xhtml_p225pro01)![Image](img/#part0027.xhtml_p225pro02)![Image](img/#part0027.xhtml_p225pro03)![Image](img/#part0027.xhtml_p225pro04)![Image](img/#part0027.xhtml_p226pro01)![Image](img/#part0027.xhtml_p226pro02)![Image](img/#part0027.xhtml_p226pro03)![Image](img/#part0027.xhtml_p226pro04)![Image](img/#part0027.xhtml_p14lis01)![Image](img/#part0027.xhtml_p14lis01)![Image](img/#part0028.xhtml_p232pro01)![Image](img/#part0028.xhtml_p232pro02)![Image](img/#part0028.xhtml_p233pro01)![Image](img/#part0028.xhtml_p233pro02)![Image](img/#part0028.xhtml_p234pro01)![Image](img/#part0028.xhtml_p234pro02)![Image](img/#part0028.xhtml_p234pro03)![Image](img/#part0028.xhtml_p234pro04)![Image](img/#part0028.xhtml_p235pro01)![Image](img/#part0028.xhtml_p235pro02)![Image](img/#part0028.xhtml_p235pro03)![Image](img/#part0028.xhtml_p235pro04)![Image](img/#part0028.xhtml_p236pro01)![Image](img/#part0028.xhtml_p236pro02)![Image](img/#part0028.xhtml_p236pro03)![Image](img/#part0028.xhtml_p236pro04)![Image](img/#part0028.xhtml_p237pro01)![Image](img/#part0028.xhtml_p237pro02)![Image](img/#part0028.xhtml_p237pro03)![Image](img/#part0028.xhtml_p237pro04)![Image](img/#part0028.xhtml_p238pro01)![Image](img/#part0028.xhtml_p238pro02)![Image](img/#part0028.xhtml_p238pro03)![Image](img/#part0028.xhtml_p238pro04)![Image](img/#part0028.xhtml_p239pro01)![Image](img/#part0028.xhtml_p239pro02)![Image](img/#part0028.xhtml_p239pro03)![Image](img/#part0028.xhtml_p239pro04)![Image](img/#part0028.xhtml_p240pro01)![Image](img/#part0028.xhtml_p240pro02)![Image](img/#part0028.xhtml_p240pro03)![Image](img/#part0028.xhtml_p240pro04)![Image](img/#part0028.xhtml_p241pro01)![Image](img/#part0028.xhtml_p241pro02)![Image](img/#part0028.xhtml_p241pro03)![Image](img/#part0028.xhtml_p241pro04)![Image](img/#part0028.xhtml_p242pro01)![Image](img/#part0028.xhtml_p242pro02)![Image](img/#part0028.xhtml_p242pro03)![Image](img/#part0028.xhtml_p243pro01)![Image](img/#part0029.xhtml_p246pro01)![Image](img/#part0029.xhtml_p246pro02)![Image](img/#part0029.xhtml_p248pro01)![Image](img/#part0029.xhtml_p248pro02)![Image](img/#part0029.xhtml_p249pro01)![Image](img/#part0029.xhtml_p249pro02)![Image](img/#part0029.xhtml_p249pro03)![Image](img/#part0029.xhtml_p249pro04)![Image](img/#part0029.xhtml_p26lis01)![Image](img/#part0029.xhtml_p251pro01)![Image](img/#part0029.xhtml_p251pro02)![Image](img/#part0029.xhtml_p251pro03)![Image](img/#part0029.xhtml_p253pro01)![Image](img/#part0029.xhtml_p253pro02)![Image](img/#part0029.xhtml_p255pro01)![Image](img/#part0029.xhtml_p255pro02)![Image](img/#part0029.xhtml_p257pro01)![Image](img/#part0029.xhtml_p257pro02)![Image](img/#part0029.xhtml_p257pro03)
+1. 应用中可测试的最小单元，例如单个函数或方法。
+2. 评估表达式为真或假。
+3. 重构你的代码。
 

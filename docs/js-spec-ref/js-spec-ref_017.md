@@ -1,25 +1,5 @@
-# 3.2 Array 对象
 
-*   概述
-*   Array 对象的静态方法
-    *   isArray 方法
-    *   Array 实例的方法
-        *   valueOf 方法，toString 方法
-        *   push 方法，pop 方法
-        *   join 方法，concat 方法
-        *   shift 方法，unshift 方法
-        *   reverse 方法
-        *   slice 方法
-        *   splice()
-        *   sort()
-    *   ECMAScript 5 新加入的数组方法
-        *   map 方法，forEach 方法
-        *   filter 方法
-        *   some 方法，every 方法
-        *   reduce 方法，reduceRight 方法
-        *   indexOf 和 lastIndexOf
-        *   链式使用
-    *   参考链接
+# 3.2 Array 对象
 
 ## 概述
 
@@ -577,8 +557,11 @@ reduce 方法和 reduceRight 方法的作用，是依次处理数组的每个元
 reduce 方法的第一个参数是一个处理函数。该函数接受四个参数，分别是：
 
 1.  用来累计的变量（即当前状态），默认值为 0
+
 2.  数组的当前元素
+
 3.  当前元素在数组中的序号（从 0 开始）
+
 4.  原数组
 
 这四个参数之中，只有前两个是必须的，后两个则是可选的。

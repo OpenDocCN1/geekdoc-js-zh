@@ -1,18 +1,17 @@
-# 工具
 
 # 工具
 
-这一部分的想法是列出一些有助于编写 RxJS 代码的好工具
+这一部分的想法是列出一些有助于编写 RxJS 代码的好工具。
 
 ## RxJS 开发工具
 
-在 github 链接中找到 [`github.com/kwintenp/rx-devtools`](https://github.com/kwintenp/rx-devtools)。README 列出了如何安装 npm/yarn 模块以及 Chrome 插件。
+在 GitHub 链接中找到 [`github.com/kwintenp/rx-devtools`](https://github.com/kwintenp/rx-devtools)。README 列出了如何安装 `npm`/`yarn` 模块以及 Chrome 插件。
 
 一个非常好的工具，可以可视化您的代码执行过程以及将要发出的值。
 
 这里是如何在 Angular 项目中运行它的代码：
 
-```
+```js
 import { Observable } from 'rxjs/Observable';
 import 'rxjs/add/operator/filter';
 import 'rxjs/add/operator/map';
@@ -28,7 +27,7 @@ export class AppComponent {
       .map((val: number) => val * 2)
       .subscribe();
   }
-} 
+}
 ```
 
 ## RxFiddle

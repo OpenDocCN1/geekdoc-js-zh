@@ -1,5 +1,5 @@
-# 10岁及以上儿童的编程：使用HTML、CSS和JavaScript的儿童与初学者编程
 
+# 10岁及以上儿童的编程：使用HTML、CSS和JavaScript的儿童与初学者编程
 
 | ![image](img/chapter_title_corner_decoration_left.png) |  | ![image](img/chapter_title_corner_decoration_right.png) |
 
@@ -12,10 +12,6 @@
 罗布已经在电脑前坐了几个小时。他正在编写他的 JavaScript 游戏的下一个版本。在过去一个月取得很大进展后，他现在卡住了。他尝试了很多不同的方法，但就是无法让它工作。这是编程中常见的问题。学习编程的基础知识是一个好的开始。罗布几个月前读了我的第一本编程书，他非常兴奋。他不仅很好地掌握了基础知识，成功完成了所有练习，还实现了一些自己的程序和有趣的编程游戏。他热爱编程，并且上了瘾。
 
 然而，几个月后，罗布卡住了。他感到疲惫和无聊。他一遍又一遍地做着类似的程序。他在更高级的主题上挣扎。罗布的故事与美国乃至全世界成千上万的孩子相似。这些孩子有资源和金钱来继续前进。他们中的一些父母花了一个月的工资（有时甚至更多）给孩子买了一台笔记本电脑来编程。然而，父母和孩子们都意识到他们需要更多才能继续前进。缺少了一些东西。一些难以量化的东西。
-
-
-
-
 
 罗布和其他人的故事激励我写了下一本 JavaScript 书。虽然罗布看起来可能有些挣扎，但他的努力值得称赞。我们中有太多人一遇到困难就放弃。我们像玩毛线球的小猫一样，从一个活动跳到另一个活动。事实是，没有哪项活动能不经努力和痛苦就取得进步。罗布只是需要再多一点努力，而这正是本书所包含的内容。
 
@@ -33,29 +29,21 @@
 
 那么，软技能到底是什么？软技能更多地与人们如何工作相关。这与硬技术技能不同，后者关注的是人们做什么工作。软技能涉及人们如何处理心理、身体和人际问题。结合良好的技术知识，软技能可以将你的表现提升到一个更高的水平。以下是我所谈论的一些技能：
 
-*   **专注与集中：** 在一个被社交媒体和其他干扰主导的世界里，专注于手头单一任务的能力是一项难以掌握的技能。多任务处理可能看起来很酷，但从长远来看，它会损害工作质量和教育质量。
+- **专注与集中：** 在一个被社交媒体和其他干扰主导的世界里，专注于手头单一任务的能力是一项难以掌握的技能。多任务处理可能看起来很酷，但从长远来看，它会损害工作质量和教育质量。
+  - 一个帮助你集中注意力的新工具叫做等时音。这是一种特定的音乐，能让你的大脑进入正确的状态，帮助你集中注意力。你可以通过在 YouTube 或谷歌上搜索“isochronic tones”免费试听这些音调。
+  - 另一个工具是每日冥想。每天开始时冥想 5 分钟，可以帮助你逐渐建立专注力。
+  - 最后，将工作分解成 20-30 分钟的时间段可以带来很大的不同。在每个时间段之间散步 5-10 分钟，然后精神焕发地回来。
 
-    › 一个帮助你集中注意力的新工具叫做等时音。这是一种特定的音乐，能让你的大脑进入正确的状态，帮助你集中注意力。你可以通过在 YouTube 或谷歌上搜索“isochronic tones”免费试听这些音调。
+- **毅力：** 坚持不懈并从失败中学习的能力在编程中非常重要。程序员们通常会尝试破坏代码（或让代码失败），以便了解程序的弱点并加以改进。你也可以对你的程序和你的编程技能做同样的事情。
 
-    › 另一个工具是每日冥想。每天开始时冥想 5 分钟，可以帮助你逐渐建立专注力。
+- **团队合作：** 刚开始时独自编程是必要的，但从长远来看会限制你的发展。从别人的错误中学习比从自己的错误中学习要快得多。你可以加入你所在城市的本地编程俱乐部；聘请编程导师；加入相关的 Facebook 编程群组；在 Reddit 帖子上发帖；从 GitHub 代码中学习。积极参与这些群体并被认可为积极的贡献者非常重要。
 
-    › 最后，将工作分解成 20-30 分钟的时间段可以带来很大的不同。在每个时间段之间散步 5-10 分钟，然后精神焕发地回来。
-
-*   **毅力：** 坚持不懈并从失败中学习的能力在编程中非常重要。程序员们通常会尝试破坏代码（或让代码失败），以便了解程序的弱点并加以改进。你也可以对你的程序和你的编程技能做同样的事情。
-
-*   **团队合作：** 刚开始时独自编程是必要的，但从长远来看会限制你的发展。从别人的错误中学习比从自己的错误中学习要快得多。你可以加入你所在城市的本地编程俱乐部；聘请编程导师；加入相关的 Facebook 编程群组；在 Reddit 帖子上发帖；从 GitHub 代码中学习。积极参与这些群体并被认可为积极的贡献者非常重要。
-
-*   **身体健康：** 这是许多程序员非常低估和忽视的特质。但从长远来看，这确实会伤害行业中的从业者。背部问题、肥胖、腕管综合症是程序员在行业工作 5-10 年或更长时间后常见的健康问题。以下是一些更好地照顾健康的方法。
-
-    › 保持良好的坐姿：坐直。确保笔记本电脑与眼睛水平，这样你就不必低头。确保你的脚与膝盖对齐。
-
-    › 经常休息：我建议每 20-30 分钟休息一次。在休息期间散步。
-
-    › 饮食：保持健康的饮食，富含优质脂肪、蛋白质和复合碳水化合物。尽量减少简单碳水化合物和糖的摄入。
-
-    › 锻炼：保持规律的锻炼计划或进行一项运动。每周至少锻炼 3-4 次（可能更多）很重要。
-
-    › 睡眠：每晚至少睡 7-8 小时。如果你无法入睡，请咨询合格的医生如何改善睡眠。
+- **身体健康：** 这是许多程序员非常低估和忽视的特质。但从长远来看，这确实会伤害行业中的从业者。背部问题、肥胖、腕管综合症是程序员在行业工作 5-10 年或更长时间后常见的健康问题。以下是一些更好地照顾健康的方法。
+  - 保持良好的坐姿：坐直。确保笔记本电脑与眼睛水平，这样你就不必低头。确保你的脚与膝盖对齐。
+  - 经常休息：我建议每 20-30 分钟休息一次。在休息期间散步。
+  - 饮食：保持健康的饮食，富含优质脂肪、蛋白质和复合碳水化合物。尽量减少简单碳水化合物和糖的摄入。
+  - 锻炼：保持规律的锻炼计划或进行一项运动。每周至少锻炼 3-4 次（可能更多）很重要。
+  - 睡眠：每晚至少睡 7-8 小时。如果你无法入睡，请咨询合格的医生如何改善睡眠。
 
 以上每个主题都可以写成整本书，但这是一本编程书，所以我就不多说了。只需记住，上述软技能非常重要，你可以在编程的同时培养它们。
 
@@ -97,7 +85,7 @@
 
 ![image](img/chapter_title_below.png)
 
-从桌面或开始菜单打开 Notepad++
+从桌面或开始菜单打开 Notepad++。
 
 ![image](img/image082.png)
 
@@ -107,7 +95,9 @@
 
 ![image](img/image103.png)
 
-现在，选择`文件>另存为`，并选择`.html`作为文件类型![image](img/image030.png)
+现在，选择`文件>另存为`，并选择`.html`作为文件类型。
+
+![image](img/image030.png)
 
 ![image](img/image092.png)
 
@@ -139,7 +129,7 @@
 
 ![image](img/chapter_title_above.png)
 
-### 结果：
+### 结果
 
 ![image](img/chapter_title_below.png)
 
@@ -149,15 +139,12 @@
 
 附注：
 
-
-
-
 一些学生遇到的一个问题是，运行浏览器选项有时不起作用并报错。这是因为路径设置不正确。如果由于某种原因它无法工作，你仍然可以运行程序。
 
-* 只需将 Notepad++ 文件保存为 html 文档。
-* 关闭 Notepad++ 文件。
-* 转到 html 文档所在的文件夹。
-* 双击该 html 文件，它应该可以运行。
+- 只需将 Notepad++ 文件保存为 html 文档。
+- 关闭 Notepad++ 文件。
+- 转到 html 文档所在的文件夹。
+- 双击该 html 文件，它应该可以运行。
 
 | ![image](img/chapter_title_corner_decoration_left.png) |  | ![image](img/chapter_title_corner_decoration_right.png) |
 
@@ -173,7 +160,7 @@ html 代表超文本标记语言（Hyper Text Markup Language）。
 
 它足够简单，初学者程序员也能快速掌握。
 
-大多数 html 编程是通过称为标签（tags）的元素完成的。这些标签以 `<>` 开头，以 `</>` 结尾。例如，一个常见的标签是段落标签，它以 `<p>` 开头，以 `</p>` 结尾。
+大多数 html 编程是通过称为标签（tags）的元素完成的。这些标签以`<>`开头，以`</>`结尾。例如，一个常见的标签是段落标签，它以`<p>`开头，以`</p>`结尾。
 
 | ![image](img/chapter_title_corner_decoration_left.png) |  | ![image](img/chapter_title_corner_decoration_right.png) |
 
@@ -183,9 +170,9 @@ html 代表超文本标记语言（Hyper Text Markup Language）。
 
 ![image](img/chapter_title_below.png)
 
-`<html>` - 此标签用于每个网页的开头，表示 html 代码的开始
+`<html>` - 此标签用于每个网页的开头，表示 html 代码的开始。
 
-`<head>` - 这段 html 代码在程序其余部分之前执行
+`<head>` - 这段 html 代码在程序其余部分之前执行。
 
 `<title>` - 此标签用于为网页设置标题。它将文本写入网页顶部的标签栏。
 
@@ -195,11 +182,11 @@ html 代表超文本标记语言（Hyper Text Markup Language）。
 
 `<h2>`、`<h3>`、`<h4>`、`<h5>`、`<h6>` - 用于表示尺寸递减的子标题。
 
-`<p>` - 用于表示文本段落
+`<p>` - 用于表示文本段落。
 
 `<img>` - 在网页上显示图像。此图像可以链接到外部网页或内部文件。
 
-`<strong>` - 用于使文本加粗
+`<strong>` - 用于使文本加粗。
 
 `<ul>` - 用于无序列表。例如，以项目符号形式列出的项目列表。
 
@@ -233,53 +220,32 @@ html 代表超文本标记语言（Hyper Text Markup Language）。
 
 ![image](img/chapter_title_below.png)
 
-你可以将下面的代码复制粘贴到你的 html 浏览器中，看看它是否有效
+你可以将下面的代码复制粘贴到你的 html 浏览器中，看看它是否有效。
 
 ```html
 <html>
-
 <head>
-
 <title>My first html website......</title>
-
 </head>
-
 <body>
-
 <h1>Welcome to Programming in Javascript (this is a h1 tag)</h1>
-
 <h2>Let's get started (this is a h2 tag)</h2>
-
 <h3>This is the start of bigger things (this is a h3 tag)</h3>
-
 <p>We're going over a few basic html tags here but you can feel free to play around them and experiment.
 
 There are 1000's of html tags that you can learn in the long run. Here's a list of topics you can learn below (This is a paragraph tag)</p>
-
 <ul> Below is the example of an unordered bulleted list
-
 <li>Basics of html</li>
-
 <li>CSS</li>
-
 <li>JavaScript</li>
-
 <li>Loops</li>
-
 <li>Arrays</li>
-
 <li>Canvas</li>
-
 </ul>
-
 <a href="https://www.google.com">Example of hyperlink to Google</a><br>
-
 <a href="https://www.facebook.com">Example of hyperlink to Facebook</a><br>
-
 <a href="https://www.yahoo.com">Example of hyperlink to Yahoo</a><br>
-
 </body>
-
 </html>
 ```
 
@@ -295,23 +261,23 @@ There are 1000's of html tags that you can learn in the long run. Here's a list 
 
 现在，我们来分解不同的元素：
 
-下面是标题标签 `<title>`
+下面是标题标签`<title>`。
 
 ![image](img/image037.png)
 
-下面是标题标签 `<h1>`、`<h2>`、`<h3>`
+下面是标题标签`<h1>`、`<h2>`、`<h3>`。
 
 ![image](img/image174.png)
 
-下面是段落标签 `<p>`
+下面是段落标签`<p>`。
 
 ![image](img/image210.png)
 
-下面是一个无序项目符号列表 `<ul>` `<li>`
+下面是一个无序项目符号列表`<ul>`和`<li>`。
 
 ![image](img/image097.png)
 
-下面是三个指向三个流行网站的链接标签 `<a href>`
+下面是三个指向三个流行网站的链接标签`<a href>`。
 
 ![image](img/image203.png)
 
@@ -324,18 +290,21 @@ There are 1000's of html tags that you can learn in the long run. Here's a list 
 ![image](img/chapter_title_below.png)
 
 - 制作一个带有标题标签的网站，其中包含一个无序列表的杂货清单。使用段落标签说明对特定商品的任何特殊说明。在列表末尾，使用链接标签链接到最近的杂货店网站。
+
+
+
 - 创建一个网站，列出你足球队的所有球员。使用标题、标题和段落标签欢迎用户访问你的网站，并描述球队及其理念。使用有序列表列出球员。
 - 制作一个网站，以无序列表的形式列出你所在地区所有最喜欢的餐厅和咖啡店。使用标题、标题和段落标签介绍你自己和你所在地区的用餐体验。
 
-| ![image](img/chapter_title_corner_decoration_left.png) |  | ![image](img/chapter_title_corner_decoration_right.png) |
+![image](img/chapter_title_corner_decoration_left.png) ![image](img/chapter_title_corner_decoration_right.png)
 
 ![image](img/chapter_title_above.png)
 
-### 示例 html 程序
+### 示例 HTML 程序
 
 ![image](img/chapter_title_below.png)
 
-| ![image](img/chapter_title_corner_decoration_left.png) |  | ![image](img/chapter_title_corner_decoration_right.png) |
+![image](img/chapter_title_corner_decoration_left.png) ![image](img/chapter_title_corner_decoration_right.png)
 
 ![image](img/chapter_title_above.png)
 
@@ -343,11 +312,11 @@ There are 1000's of html tags that you can learn in the long run. Here's a list 
 
 ![image](img/chapter_title_below.png)
 
-这个 html 项目创建了两个按钮。这两个按钮可以在白天和黑夜的两张图片之间切换。这两个按钮分别标有“白天”和“黑夜”。
+这个 HTML 项目创建了两个按钮。这两个按钮可以在白天和黑夜的两张图片之间切换。这两个按钮分别标有“白天”和“黑夜”。
 
-这是一个简单的 html 项目，它创建了一个按钮，可以打开/关闭页面上的灯泡。我们将使用两个灯泡图片来实现这一点。按钮将在两张图片之间切换。
+这是一个简单的 HTML 项目，它创建了一个按钮，可以打开/关闭页面上的灯泡。我们将使用两个灯泡图片来实现这一点。按钮将在两张图片之间切换。
 
-| ![image](img/chapter_title_corner_decoration_left.png) |  | ![image](img/chapter_title_corner_decoration_right.png) |
+![image](img/chapter_title_corner_decoration_left.png) ![image](img/chapter_title_corner_decoration_right.png)
 
 ![image](img/chapter_title_above.png)
 
@@ -357,13 +326,13 @@ There are 1000's of html tags that you can learn in the long run. Here's a list 
 
 对于这个示例，我们需要理解按钮标签和图像标签。
 
-按钮标签
+**按钮标签**
 
-`<button onclick=Action >Button text</button>`
+`<button onclick=Action>Button text</button>`
 
 按钮元素有两个部分：动作（Action）和按钮文本（Button Text）。按钮文本是显示在按钮上的文字；动作是用户点击按钮时发生的事件。
 
-图像标签
+**图像标签**
 
 `<img id=ImageId src=ImageUrl style=ImageSize>`
 
@@ -371,11 +340,11 @@ There are 1000's of html tags that you can learn in the long run. Here's a list 
 
 `ImageId` 是你分配给图像的名称。此名称用于在代码中引用图像。
 
-`Imageurl` 是标签引用的图像的 URL。如果图像与 html 文件位于同一文件夹中，则可以使用文件名代替完整的 URL。
+`Imageurl` 是标签引用的图像的 URL。如果图像与 HTML 文件位于同一文件夹中，则可以使用文件名代替完整的 URL。
 
 `ImageSize` 设置图像的宽度和高度。宽度和高度以像素为单位。
 
-| ![image](img/chapter_title_corner_decoration_left.png) |  | ![image](img/chapter_title_corner_decoration_right.png) |
+![image](img/chapter_title_corner_decoration_left.png) ![image](img/chapter_title_corner_decoration_right.png)
 
 ![image](img/chapter_title_above.png)
 
@@ -383,16 +352,13 @@ There are 1000's of html tags that you can learn in the long run. Here's a list 
 
 ![image](img/chapter_title_below.png)
 
-
-
-
 以下是你在下一个项目中需要使用的两个文件。你可以下载它们，并保存在你将创建 HTML 文件的同一文件夹中。
 
 [白天图片](https://drive.google.com/file/d/1hYrhOnjTDfuF9q-uVoyG9u2ZVGrdVzyj/view?usp=sharing)
 
 [夜晚图片](https://drive.google.com/file/d/1c2ZpmYtbo3H0ZkWT-04vvsVXCUGT0p7j/view?usp=sharing)
 
-| ![image](img/chapter_title_corner_decoration_left.png) |  | ![image](img/chapter_title_corner_decoration_right.png) |
+![image](img/chapter_title_corner_decoration_left.png) ![image](img/chapter_title_corner_decoration_right.png)
 
 ![image](img/chapter_title_above.png)
 
@@ -402,7 +368,7 @@ There are 1000's of html tags that you can learn in the long run. Here's a list 
 
 ![image](img/image032.png)
 
-| ![image](img/chapter_title_corner_decoration_left.png) |  | ![image](img/chapter_title_corner_decoration_right.png) |
+![image](img/chapter_title_corner_decoration_left.png) ![image](img/chapter_title_corner_decoration_right.png)
 
 ![image](img/chapter_title_above.png)
 
@@ -422,7 +388,7 @@ There are 1000's of html tags that you can learn in the long run. Here's a list 
 
 ![image](img/image055.png)
 
-| ![image](img/chapter_title_corner_decoration_left.png) |  | ![image](img/chapter_title_corner_decoration_right.png) |
+![image](img/chapter_title_corner_decoration_left.png) ![image](img/chapter_title_corner_decoration_right.png)
 
 ![image](img/chapter_title_above.png)
 
@@ -430,7 +396,7 @@ There are 1000's of html tags that you can learn in the long run. Here's a list 
 
 ![image](img/chapter_title_below.png)
 
-```
+```html
 <img id="myImage" src="DayImage.jpg" style="width:200px">
 ```
 
@@ -440,7 +406,7 @@ There are 1000's of html tags that you can learn in the long run. Here's a list 
 
 `src` 是标签加载的图片源。图片“DayImage.jpg”与 HTML 文件位于同一文件夹中。
 
-```
+```html
 <button onclick="document.getElementById('myImage').src='DayImage.jpg'">Day</button>
 ```
 
@@ -450,7 +416,7 @@ There are 1000's of html tags that you can learn in the long run. Here's a list 
 
 “Day”是按钮上显示的文本。
 
-```
+```html
 <buttononclick="document.getElementById('myImage').src='NightImage.jpg'>Night</button>
 ```
 
@@ -458,7 +424,7 @@ There are 1000's of html tags that you can learn in the long run. Here's a list 
 
 “Night”是按钮上显示的文本。
 
-| ![image](img/chapter_title_corner_decoration_left.png) |  | ![image](img/chapter_title_corner_decoration_right.png) |
+![image](img/chapter_title_corner_decoration_left.png) ![image](img/chapter_title_corner_decoration_right.png)
 
 ![image](img/chapter_title_above.png)
 
@@ -469,7 +435,7 @@ There are 1000's of html tags that you can learn in the long run. Here's a list 
 - 找到三张人物跑步、行走和静止站立的图片。编写一个程序，包含三个按钮，分别对应跑步、行走或静止站立，根据你按下的按钮切换图片。
 - 找到三张红、绿、黄灯亮起的交通信号灯图片。编写一个程序，包含三个按钮，分别显示“STOP”、“GO”和“WATCH”。当按下“STOP”按钮时，交通灯切换为红色；按下“GO”按钮时切换为绿色；按下“WATCH”按钮时切换为黄色。
 
-| ![image](img/chapter_title_corner_decoration_left.png) |  | ![image](img/chapter_title_corner_decoration_right.png) |
+![image](img/chapter_title_corner_decoration_left.png) ![image](img/chapter_title_corner_decoration_right.png)
 
 ![image](img/chapter_title_above.png)
 
@@ -483,15 +449,15 @@ There are 1000's of html tags that you can learn in the long run. Here's a list 
 
 在开始制作表单之前，我们需要了解一些基本的表单元素：
 
-- 按钮 `<button>` - 允许用户点击时执行操作的元素。
-- 文本框 `<input>` - 允许用户在浏览器屏幕上的框中输入文本。用于收集简短文本信息，如姓名、城市等。
-- 文本域 `<textarea>` - 允许用户输入大量文本。它比文本框更大。用于较长的文本信息，如地址、评论等。
-- 选项选择 `<select>` - 允许用户在多个可用选项中进行选择。本质上是一个下拉框。
-- 日期输入 `<input type="date">` - 允许用户从日历下拉菜单中选择日期。
+- 按钮 `<button>`：允许用户点击时执行操作的元素。
+- 文本框 `<input>`：允许用户在浏览器屏幕上的框中输入文本。用于收集简短文本信息，如姓名、城市等。
+- 文本域 `<textarea>`：允许用户输入大量文本。它比文本框更大。用于较长的文本信息，如地址、评论等。
+- 选项选择 `<select>`：允许用户在多个可用选项中进行选择。本质上是一个下拉框。
+- 日期输入 `<input type="date">`：允许用户从日历下拉菜单中选择日期。
 
 现在，让我们通过下面的示例表单逐一了解这些元素。
 
-| ![image](img/chapter_title_corner_decoration_left.png) |  | ![image](img/chapter_title_corner_decoration_right.png) |
+![image](img/chapter_title_corner_decoration_left.png) ![image](img/chapter_title_corner_decoration_right.png)
 
 ![image](img/chapter_title_above.png)
 
@@ -529,11 +495,11 @@ There are 1000's of html tags that you can learn in the long run. Here's a list 
 
 现在，让我们看看运行程序时会发生什么。
 
-| ![image](img/chapter_title_corner_decoration_left.png) |  | ![image](img/chapter_title_corner_decoration_right.png) |
+![image](img/chapter_title_corner_decoration_left.png) ![image](img/chapter_title_corner_decoration_right.png)
 
 ![image](img/chapter_title_above.png)
 
-#### 输出：
+#### 输出
 
 ![image](img/chapter_title_below.png)
 
@@ -541,7 +507,7 @@ There are 1000's of html tags that you can learn in the long run. Here's a list 
 
 我希望你通过这个例子对 HTML 表单的基础知识有了一些了解。在接下来的几章中，我们将学习如何使用 JavaScript 处理我们输入的信息。事实上，我们将使用同样的例子，并通过 JavaScript 将其打印出来。
 
-| ![image](img/chapter_title_corner_decoration_left.png) |  | ![image](img/chapter_title_corner_decoration_right.png) |
+![image](img/chapter_title_corner_decoration_left.png) ![image](img/chapter_title_corner_decoration_right.png)
 
 ![image](img/chapter_title_above.png)
 
@@ -554,7 +520,7 @@ There are 1000's of html tags that you can learn in the long run. Here's a list 
 
 以上每个练习都将在接下来的章节中通过 JavaScript 进行扩展。
 
-| ![image](img/chapter_title_corner_decoration_left.png) |  | ![image](img/chapter_title_corner_decoration_right.png) |
+![image](img/chapter_title_corner_decoration_left.png) ![image](img/chapter_title_corner_decoration_right.png)
 
 ![image](img/chapter_title_above.png)
 
@@ -564,13 +530,9 @@ There are 1000's of html tags that you can learn in the long run. Here's a list 
 
 JavaScript 是一种高级编程语言，用于使网页更具交互性和动态性。它基于文本，且用户友好。
 
-
-
-
-
 虽然 HTML 用于创建网页结构，CSS 用于定义网页样式，但 JavaScript 则用于让网页与用户进行更多交互。它允许不同的 HTML 元素相互交互、执行计算、动画等。换句话说，它让网页编程变得有趣。
 
-| ![image](img/chapter_title_corner_decoration_left.png) |  | ![image](img/chapter_title_corner_decoration_right.png) |
+![image](img/chapter_title_corner_decoration_left.png) ![image](img/chapter_title_corner_decoration_right.png)
 
 ![image](img/chapter_title_above.png)
 
@@ -604,7 +566,7 @@ JavaScript 是一种高级编程语言，用于使网页更具交互性和动态
 </html>
 ```
 
-| ![image](img/chapter_title_corner_decoration_left.png) |  | ![image](img/chapter_title_corner_decoration_right.png) |
+![image](img/chapter_title_corner_decoration_left.png) ![image](img/chapter_title_corner_decoration_right.png)
 
 ![image](img/chapter_title_above.png)
 
@@ -614,7 +576,7 @@ JavaScript 是一种高级编程语言，用于使网页更具交互性和动态
 
 有了这些基础知识，让我们来看一些基本的 JavaScript 元素。
 
-函数
+**函数**
 
 JavaScript 中的函数是一组执行特定任务的代码行。
 
@@ -631,7 +593,7 @@ function afunc()
 
 当我们需要在同一个程序中多次执行相同任务时，使用函数非常有用。我们可以直接调用函数，而不必多次编写相同的代码行。
 
-变量
+**变量**
 
 JavaScript 中的变量是一个占位符，用于存储某个值。该值可以在程序运行过程中改变，并可在代码的其他部分使用。我们来看一个例子：
 
@@ -665,17 +627,21 @@ var e = (7<6);
 
 `document.write()`
 
-`document.write()` 用于在网页上打印元素。括号内的任何内容都会打印在网页上。例如：
 
-`document.write(“示例打印”);`
+
+`document.write()`用于在网页上打印元素。括号内的任何内容都会打印在网页上。例如：
+
+```javascript
+document.write("示例打印");
+```
 
 上面的代码会在屏幕上打印出“示例打印”这几个字。
 
 我们也可以打印变量。例如：
 
 ```javascript
-var a=7;
-document.write(a)
+var a = 7;
+document.write(a);
 ```
 
 上面的代码会在屏幕上打印出 7。
@@ -683,69 +649,65 @@ document.write(a)
 我们还可以使用“+”运算符组合不同的元素。例如：
 
 ```javascript
-var a=7;
-document.write(“打印的数字是 “+a);
+var a = 7;
+document.write("打印的数字是 " + a);
 ```
 
 上面的代码会打印出“打印的数字是 7”。
 
-`alert()`
+### `alert()`
 
-Alert 会在屏幕上弹出一个包含特定消息的对话框。例如：
+`alert()`会在屏幕上弹出一个包含特定消息的对话框。例如：
 
-`alert(“你好”)`
+```javascript
+alert("你好");
+```
 
 上面的代码会弹出一个显示“你好”的对话框。
 
 ![image](img/image205.png)
 
-`prompt()`
+### `prompt()`
 
-`prompt` 具有相同的弹出框，但带有一个允许用户输入的文本框。用户输入可以存储在一个变量中。例如：
+`prompt()`具有相同的弹出框，但带有一个允许用户输入的文本框。用户输入可以存储在一个变量中。例如：
 
-`var name = prompt(“你叫什么名字”);`
+```javascript
+var name = prompt("你叫什么名字");
+```
 
-它会显示一个弹出框。用户输入姓名并点击确定后，该值会存储在变量 `name` 中。
+它会显示一个弹出框。用户输入姓名并点击确定后，该值会存储在变量`name`中。
 
 ![image](img/image047.png)
 
-`document.getElementById().value`
+### `document.getElementById().value`
 
-`Document.getElementById().value` 用于将 HTML 元素的值获取到 JavaScript 变量中。因此，我们需要使用 HTML 元素的 id，并将其放在括号内。让我们看一个例子。
+`document.getElementById().value`用于将 HTML 元素的值获取到 JavaScript 变量中。因此，我们需要使用 HTML 元素的 id，并将其放在括号内。让我们看一个例子。
 
 请看下面的 HTML 元素：
 
-`输入数字： <input name=”x” type=”number” id=”test” size=”20”><br>`
+```html
+输入数字：<input name="x" type="number" id="test" size="20"><br>
+```
 
 JavaScript 代码：
 
-`var testv=document.getElementById(“test”).value;`
+```javascript
+var testv = document.getElementById("test").value;
+```
 
 该 HTML 元素是一个表单文本框，用于接收用户输入的数字。
 
-在 JavaScript 中，用户输入的数字被赋值给变量 `testv`。
-
-| ![image](img/chapter_title_corner_decoration_left.png) |  | ![image](img/chapter_title_corner_decoration_right.png) |
-
-![image](img/chapter_title_above.png)
+在 JavaScript 中，用户输入的数字被赋值给变量`testv`。
 
 ### 如何添加注释
 
-![image](img/chapter_title_below.png)
-
-注释是你添加到代码中用于记录或解释代码的内容。注释不会被执行，也不会影响程序。在 JavaScript 中，注释通过在注释内容前添加两个反斜杠（“//”）来添加。
+注释是你添加到代码中用于记录或解释代码的内容。注释不会被执行，也不会影响程序。在 JavaScript 中，注释通过在注释内容前添加两个反斜杠（`//`）来添加。
 
 ![image](img/image171.png)
 
 下面是一个注释示例。注释部分为绿色，并用红色圆圈标出。
 
-| ![image](img/chapter_title_corner_decoration_left.png) |  | ![image](img/chapter_title_corner_decoration_right.png) |
-
-![image](img/chapter_title_above.png)
-
 ### 示例 1
-
-![image](img/chapter_title_below.png)
 
 现在，让我们开始看一些示例。我们将从上一章的 HTML 表单开始。我们将把所有用户输入赋值给变量，并使用 JavaScript 在网页浏览器中打印出来。
 
@@ -755,13 +717,7 @@ JavaScript 代码：
 
 ![image](img/image161.png)
 
-| ![image](img/chapter_title_corner_decoration_left.png) |  | ![image](img/chapter_title_corner_decoration_right.png) |
-
-![image](img/chapter_title_above.png)
-
-#### 输出：
-
-![image](img/chapter_title_below.png)
+#### 输出
 
 ![image](img/image006.png)
 
@@ -769,39 +725,21 @@ JavaScript 代码：
 
 ![image](img/image113.png)
 
-| ![image](img/chapter_title_corner_decoration_left.png) |  | ![image](img/chapter_title_corner_decoration_right.png) |
-
-![image](img/chapter_title_above.png)
-
 #### 代码解释
 
-![image](img/chapter_title_below.png)
-
-我们添加的主要部分是函数 `printcountry()`。我们还将该函数添加到了按钮的 `onclick` 元素中（`onclick=”printcountry()”`）。
+我们添加的主要部分是函数`printcountry()`。我们还将该函数添加到了按钮的`onclick`元素中（`onclick="printcountry()"`）。
 
 ![image](img/image192.png)
 
-在这个函数中，我们声明了五个变量 `fname`、`lname`、`address`、`country`、`dob`。每个变量分别被赋值为表单中输入的名字、姓氏、地址、国家和出生日期。这是通过 JavaScript 元素 `document.getElementById().value` 实现的。
+在这个函数中，我们声明了五个变量`fname`、`lname`、`address`、`country`、`dob`。每个变量分别被赋值为表单中输入的名字、姓氏、地址、国家和出生日期。这是通过 JavaScript 元素`document.getElementById().value`实现的。
 
-最后，我们使用 `document.write()` 打印出表单中输入的名字和出生日期。
-
-| ![image](img/chapter_title_corner_decoration_left.png) |  | ![image](img/chapter_title_corner_decoration_right.png) |
-
-![image](img/chapter_title_above.png)
+最后，我们使用`document.write()`打印出表单中输入的名字和出生日期。
 
 ### 示例 2
 
-![image](img/chapter_title_below.png)
-
 在第二个示例中，我们创建一个简单的 JavaScript 函数，该函数接收 3 个数字并将它们相乘。
 
-| ![image](img/chapter_title_corner_decoration_left.png) |  | ![image](img/chapter_title_corner_decoration_right.png) |
-
-![image](img/chapter_title_above.png)
-
-#### 输出：
-
-![image](img/chapter_title_below.png)
+#### 输出
 
 ![image](img/image049.png)
 
@@ -809,67 +747,33 @@ JavaScript 代码：
 
 ![image](img/image080.png)
 
-| ![image](img/chapter_title_corner_decoration_left.png) |  | ![image](img/chapter_title_corner_decoration_right.png) |
+#### 代码解释
 
-![image](img/chapter_title_above.png)
+在上述代码中，我们从表单中获取三个数字，其 id 分别为`num1`、`num2`和`num3`。
 
-#### 代码解释：
+当按钮被点击时，会执行`multiplynum()`这个 JavaScript 函数。
 
-![image](img/chapter_title_below.png)
+在函数中，三个变量`n1`、`n2`、`n3`分别被赋值为表单中 id 为`num1`、`num2`和`num3`的三个数字。
 
-
-
-
-
-在上述代码中，我们从表单中获取三个数字，其 id 分别为 `num1`、`num2` 和 `num3`。
-
-当按钮被点击时，会执行 `multiplynum()` 这个 JavaScript 函数。
-
-在函数中，三个变量 `n1`、`n2`、`n3` 分别被赋值为表单中 id 为 `num1`、`num2` 和 `num3` 的三个数字。
-
-最后，我们在最后一行使用 `document.write()` 输出三个数字的乘积 `n1 * n2 * n3`。
-
-| ![image](img/chapter_title_corner_decoration_left.png) |  | ![image](img/chapter_title_corner_decoration_right.png) |
-
-![image](img/chapter_title_above.png)
+最后，我们在最后一行使用`document.write()`输出三个数字的乘积`n1 * n2 * n3`。
 
 ### 练习题
-
-![image](img/chapter_title_below.png)
 
 - 创建上一章练习题 1 中的表单。在网页上以一份像样的简历形式打印出表单中的所有信息。如果看起来足够好，可以随意打印出来交给雇主 😊。
 - 创建上一章练习题 2 中的表单。在 HTML 网页上打印出完整的购物清单。然后你可以把它打印在一张纸上，去购物。
 - 创建一个接收两个数字的表单。它有四个按钮，按钮文本分别为“加”、“减”、“乘”、“除”。这四个按钮分别执行四个不同的函数，对两个数字进行加、减、乘、除运算，并输出结果。
 
-| ![image](img/chapter_title_corner_decoration_left.png) |  | ![image](img/chapter_title_corner_decoration_right.png) |
-
-![image](img/chapter_title_above.png)
-
 ## CSS 简介
-
-![image](img/chapter_title_below.png)
-
-| ![image](img/chapter_title_corner_decoration_left.png) |  | ![image](img/chapter_title_corner_decoration_right.png) |
-
-![image](img/chapter_title_above.png)
 
 ### 什么是 CSS？
 
-![image](img/chapter_title_below.png)
-
 CSS 是层叠样式表（Cascading Style Sheets）的缩写。它允许用户设置和修改 HTML 网站的样式。“样式”一词指的是字体类型、字体颜色、背景颜色、阴影等。CSS 元素可以通过 HTML 和 JavaScript 访问。
-
-| ![image](img/chapter_title_corner_decoration_left.png) |  | ![image](img/chapter_title_corner_decoration_right.png) |
-
-![image](img/chapter_title_above.png)
 
 ### 创建 CSS 文件并链接到 HTML 文件
 
-![image](img/chapter_title_below.png)
-
 创建 CSS 文件并将其链接到 HTML 文档需要 5 个步骤。
 
-- 要创建 CSS 文件，请打开一个空白 HTML 文档，并将其保存为“CSS”文件类型。在本例中，我们将其命名为 `samplestyle`。
+- 要创建 CSS 文件，请打开一个空白 HTML 文档，并将其保存为“CSS”文件类型。在本例中，我们将其命名为`samplestyle`。
 
 ![image](img/image173.png)
 
@@ -879,10 +783,10 @@ CSS 是层叠样式表（Cascading Style Sheets）的缩写。它允许用户设
 
 ![image](img/image042.png)
 
-（可选）要使按钮在 CSS 中可编辑，请在 HTML 按钮行中添加文本 `class="btn"`，如下所示：
+（可选）要使按钮在 CSS 中可编辑，请在 HTML 按钮行中添加文本`class="btn"`，如下所示：
 
-```
-<button class = "btn submit" onclick="multiplynum()">Submit</button>
+```html
+<button class="btn submit" onclick="multiplynum()">Submit</button>
 ```
 
 现在，让我们将样式表插入上一章的示例中。
@@ -891,15 +795,9 @@ CSS 是层叠样式表（Cascading Style Sheets）的缩写。它允许用户设
 
 太好了。现在我们的 CSS 表已经链接到 HTML 文件了。
 
-| ![image](img/chapter_title_corner_decoration_left.png) |  | ![image](img/chapter_title_corner_decoration_right.png) |
-
-![image](img/chapter_title_above.png)
-
 ### CSS 术语
 
-![image](img/chapter_title_below.png)
-
-`html{}`, `body{}`：html 花括号内的代码定义了整个 HTML 文件的样式。body 花括号内的代码是 HTML 文件正文的样式。
+`html{}`、`body{}`：html 花括号内的代码定义了整个 HTML 文件的样式。body 花括号内的代码是 HTML 文件正文的样式。
 
 `text-decoration`：可以通过设置波浪线、点线、曲线等来修改文本设计。
 
@@ -907,11 +805,11 @@ CSS 是层叠样式表（Cascading Style Sheets）的缩写。它允许用户设
 
 `text-align`：可以将文本居左、居中或居右对齐。
 
-`margin`：边距是元素之间的空间。它以像素为单位表示。例如，`margin: 5px` 指定了 5 像素的边距。
+`margin`：边距是元素之间的空间。它以像素为单位表示。例如，`margin: 5px`指定了 5 像素的边距。
 
 `padding`：内边距是元素内部从外边界开始的空间。它同样以像素为单位指定。
 
-`display`：可用于完全关闭一个元素。（例如，`display: none` 会完全关闭该元素）
+`display`：可用于完全关闭一个元素。例如，`display: none`会完全关闭该元素。
 
 `hidden`：可用于隐藏一个元素，同时它仍然占据布局中的空间。
 
@@ -931,43 +829,25 @@ CSS 是层叠样式表（Cascading Style Sheets）的缩写。它允许用户设
 
 `line-height`：指定一行文本的高度。高度以像素为单位。
 
-| ![image](img/chapter_title_corner_decoration_left.png) |  | ![image](img/chapter_title_corner_decoration_right.png) |
-
-![image](img/chapter_title_above.png)
-
 ### CSS 按钮元素
 
-![image](img/chapter_title_below.png)
+`.btn{}`：这指定了 HTML 中定义的任何按钮的样式。要使按钮在 CSS 中可访问，我们必须在 HTML 定义中包含类名，就像我们在上一个示例中所做的那样。
 
-`.btn{}` – 这指定了 HTML 中定义的任何按钮的样式。要使按钮在 CSS 中可访问，我们必须在 HTML 定义中包含类名，就像我们在上一个示例中所做的那样。
-
-`.btn:hover{}` – 你知道吗，你可以指定鼠标悬停在按钮上时按钮的样式？很酷，不是吗？花括号内的所有内容都可以指定按钮和按钮内文本的样式。
+`.btn:hover{}`：你知道吗，你可以指定鼠标悬停在按钮上时按钮的样式？很酷，不是吗？花括号内的所有内容都可以指定按钮和按钮内文本的样式。
 
 要了解可用于设计网页的数千种 CSS 属性，请查看下面的链接：
 
 [`www.htmlhelp.com/reference/css/properties.html`](https://www.htmlhelp.com/reference/css/properties.html)
 
-| ![image](img/chapter_title_corner_decoration_left.png) |  | ![image](img/chapter_title_corner_decoration_right.png) |
-
-![image](img/chapter_title_above.png)
-
 ### CSS 示例
-
-![image](img/chapter_title_below.png)
 
 ![image](img/image076.png)
 
-| ![image](img/chapter_title_corner_decoration_left.png) |  | ![image](img/chapter_title_corner_decoration_right.png) |
-
-![image](img/chapter_title_above.png)
-
 #### 代码解释
 
-![image](img/chapter_title_below.png)
+我们首先定义代码的`html`和`body`。文本被转换为大写并居中。在蓝色背景上显示为白色。距离顶部边距 50 像素。字体为 25 像素、正常粗细、无衬线的 sans-serif 字体。
 
-我们首先定义代码的 html 和 body。文本被转换为大写并居中。在蓝色背景上显示为白色。距离顶部边距 50 像素。字体为 25 像素、正常粗细、无衬线的 sans-serif 字体。
-
-按钮样式通过 `.btn{}` 定义。按钮具有白色文本和黑色背景。文本字体为 16 像素，并居中对齐。当鼠标悬停在按钮上时，样式会发生变化。它变为黑色文本和深红色背景。
+按钮样式通过`.btn{}`定义。按钮具有白色文本和黑色背景。文本字体为 16 像素，并居中对齐。当鼠标悬停在按钮上时，样式会发生变化。它变为黑色文本和深红色背景。
 
 CSS 文件链接到上一章中的一个示例表单。我们展示了链接 CSS 文件前后的输出。我们可以看到 CSS 样式带来的巨大差异。就像一次改头换面 😊
 
@@ -983,29 +863,19 @@ CSS 文件链接到上一章中的一个示例表单。我们展示了链接 CSS
 
 ![image](img/image158.png)
 
-| ![image](img/chapter_title_corner_decoration_left.png) |  | ![image](img/chapter_title_corner_decoration_right.png) |
-
-![image](img/chapter_title_above.png)
-
 ### CSS 与 JavaScript
-
-![image](img/chapter_title_below.png)
 
 如果 HTML 表单链接了 CSS，而 JavaScript 开始在网页上打印文本，你会注意到它不再与 CSS 关联。
 
 你需要做的是在 JavaScript 代码中使用下面这行代码重新链接 CSS：
 
-```
+```javascript
 document.write('<link rel="stylesheet" type="text/css" href="samplestyle.css" />');
 ```
 
 在 JavaScript 中每个函数开始之前输入这行代码。这可以确保整个程序都显示 CSS。请参见下面文本中的示例：
 
 ![image](img/image018.png)
-
-
-
-
 
 输出（在 JavaScript 中添加 CSS 行之前）：
 
@@ -1016,6 +886,8 @@ document.write('<link rel="stylesheet" type="text/css" href="samplestyle.css" />
 ![image](img/image067.png)
 
 输出（在 JavaScript 中添加 CSS 行之后）：
+
+
 
 ![image](img/image088.png)
 
@@ -1032,6 +904,7 @@ document.write('<link rel="stylesheet" type="text/css" href="samplestyle.css" />
 ![image](img/chapter_title_below.png)
 
 - 创建一个 CSS 样式表，为所有表单元素和按钮指定样式。将其链接到之前所有的练习题中，并欣赏你的杰作。
+
 - 创建一个包含 2 个按钮的 HTML 表单。创建两个 CSS 样式表。这两个 HTML 按钮用于在两个样式表之间切换。
 
 | ![image](img/chapter_title_corner_decoration_left.png) |  | ![image](img/chapter_title_corner_decoration_right.png) |
@@ -1049,7 +922,9 @@ document.write('<link rel="stylesheet" type="text/css" href="samplestyle.css" />
 根据执行条件的不同，循环分为 3 种类型。它们是：
 
 - **IF 循环**：IF 循环包含一组指令，当满足特定条件时执行。如果条件不满足，则不执行循环。
+
 - **FOR 循环**：FOR 循环包含一组指令，按指定次数执行。例如，从 1 到 10 的 FOR 循环会执行循环内的代码 10 次。
+
 - **WHILE 循环**：WHILE 循环是一组指令，会一直执行直到满足特定条件。
 
 现在，我们通过每种循环来看看电梯的例子。
@@ -1216,9 +1091,6 @@ IF 循环也称为条件语句。条件语句是一段代码，用于检查某�
 首先，我们创建一个从 1 到`looplength`的 FOR 循环。变量`i`保存循环的计数值，每次增加 1。
 
 然后，我们在其中创建另一个 FOR 循环，从 1 到`i`。第二个 FOR 循环打印星号（“*”）`i`次。
-
-
-
 
 例如，当你第一次循环到第 5 次时，`i=5`。第二次循环会打印从 1 到 5 的*（即 5 次）。
 
@@ -1396,6 +1268,8 @@ document.write('<button onClick="afunction()">Restart</button>');
 
 ![image](img/chapter_title_below.png)
 
+
+
 这个程序稍微长一些，所以我把它分成了两张图片。它基本上打印出 5 道简单的数学题，并通过表单（这些表单的 id 分别为`num1`、`num2`、`num3`、`num4`、`num5`）获取这些题的答案。答案作为 JavaScript 变量（`answer1`、`answer2`、`answer3`、`answer4`、`answer5`）存储。这些答案通过 IF 函数与正确答案进行比较。每次用户答对一题，计数器加 1，最后打印出计数器，显示用户答对了多少题。
 
 ![image](img/image034.png)
@@ -1419,10 +1293,6 @@ document.write('<button onClick="afunction()">Restart</button>');
 ### 游戏 3 – 带随机数的数学测验
 
 ![image](img/chapter_title_below.png)
-
-
-
-
 
 在下面的程序中，通过 10 个随机数生成了 5 道数学题。这 10 个随机数分别是变量`number1`到`number10`。题目的答案经过计算后存储在变量`answer1`到`answer5`中。这 15 个变量被称为全局变量，因为它们位于任何函数之外。这意味着程序中的任何函数都可以在任何位置访问它们的值。
 
@@ -1472,7 +1342,9 @@ document.write('<button onClick="afunction()">Restart</button>');
 
 例如：
 
-`var x="awe3t5"`
+```javascript
+var x = "awe3t5";
+```
 
 `x`是一个字符串变量，存储了`"awe3t5"`的值。
 
@@ -1480,7 +1352,7 @@ document.write('<button onClick="afunction()">Restart</button>');
 
 字符串在处理文本信息（如姓名、地址等）时非常有用。
 
-以下是一些可用于处理字符串的实用函数列表。
+以下是一些可用于处理字符串的实用函数列表：
 
 - `length` – 返回字符串的长度。在上面的例子中，`x.length`返回 6。
 - `charAt(y)` – 返回字符串中位置`y`处的字符。例如，在字符串`x`中，如果我们想要第 5 个字符，可以执行`x.charAt(5)`，返回`t`。
@@ -1513,11 +1385,11 @@ document.write('<button onClick="afunction()">Restart</button>');
 
 ![image](img/image152.png)
 
-点击“名字长度”后
+点击“名字长度”后：
 
 ![image](img/image123.png)
 
-点击“名字反转”后
+点击“名字反转”后：
 
 ![image](img/image066.png)
 
@@ -1549,7 +1421,7 @@ document.write('<button onClick="afunction()">Restart</button>');
 
 ![image](img/image155.png)
 
-输出 #2
+输出 #2：
 
 ![image](img/image021.png)
 
@@ -1557,11 +1429,7 @@ document.write('<button onClick="afunction()">Restart</button>');
 
 ![image](img/image120.png)
 
-
-
-
-
-| ![image](img/chapter_title_corner_decoration_left.png) |  | ![image](img/chapter_title_corner_decoration_right.png) |
+| ![image](img/chapter_title_corner_decoration_left.png) |  |  | ![image](img/chapter_title_corner_decoration_right.png) |
 
 ![image](img/chapter_title_above.png)
 
@@ -1569,11 +1437,11 @@ document.write('<button onClick="afunction()">Restart</button>');
 
 ![image](img/chapter_title_below.png)
 
-在下面的代码中，我们通过 textarea 输入文本，并将所有脏话替换为五个星号 `*****`。出于审查目的，我们使用“Fudge”作为脏话示例。
+在下面的代码中，我们通过 textarea 输入文本，并将所有脏话替换为五个星号`*****`。出于审查目的，我们使用“Fudge”作为脏话示例。
 
-按钮运行 `filterc()` 函数。`filterc()` 函数通过表单中的 textarea id 获取文本。一个使用 `.includes` 和 `.toUpperCase()` 的 IF 函数检查是否找到单词“Fudge”。使用 `.toUpperCase()` 是因为我们不知道脏话是以小写还是大写输入的。
+按钮运行`filterc()`函数。`filterc()`函数通过表单中的 textarea id 获取文本。一个使用`.includes`和`.toUpperCase()`的 IF 函数检查是否找到单词“Fudge”。使用`.toUpperCase()`是因为我们不知道脏话是以小写还是大写输入的。
 
-如果是脏话，我们使用 `.replace` 将单词“Fudge”和“FUDGE”替换为 `"*****"`。最后，我们输出修改后的字符串。下面是代码及几种输出变体。
+如果是脏话，我们使用`.replace`将单词“Fudge”和“FUDGE”替换为`"*****"`。最后，我们输出修改后的字符串。下面是代码及几种输出变体。
 
 ![image](img/image098.png)
 
@@ -1581,7 +1449,7 @@ document.write('<button onClick="afunction()">Restart</button>');
 
 ![image](img/image033.png)
 
-点击过滤脏话后...
+点击过滤脏话后……
 
 ![image](img/image187.png)
 
@@ -1589,7 +1457,7 @@ document.write('<button onClick="afunction()">Restart</button>');
 
 ![image](img/image064.png)
 
-点击过滤脏话后...
+点击过滤脏话后……
 
 ![image](img/image063.png)
 
@@ -1601,13 +1469,11 @@ document.write('<button onClick="afunction()">Restart</button>');
 
 ![image](img/chapter_title_below.png)
 
-› 编写一个程序，输入一个字符串，并输出该字符串中的每第 2 个字符。例如，“wfwfwkfnfwbej”应输出“ffkbwj”。
+- › 编写一个程序，输入一个字符串，并输出该字符串中的每第 2 个字符。例如，“wfwfwkfnfwbej”应输出“ffkbwj”。
+- › 编写一个程序，输入一个长句子，并将所有出现的单词“red”替换为“yellow”。
+- › 编写一个程序，输入一个地址，并检查邮政编码是否包含 5 个字符。如果多于或少于 5 个字符，或者没有邮政编码，则输出“Invalid Address”。
 
-› 编写一个程序，输入一个长句子，并将所有出现的单词“red”替换为“yellow”。
-
-› 编写一个程序，输入一个地址，并检查邮政编码是否包含 5 个字符。如果多于或少于 5 个字符，或者没有邮政编码，则输出“Invalid Address”。
-
-| ![image](img/chapter_title_corner_decoration_left.png) |  | ![image](img/chapter_title_corner_decoration_right.png) |
+| ![image](img/chapter_title_corner_decoration_left.png) |  |  | ![image](img/chapter_title_corner_decoration_right.png) |
 
 ![image](img/chapter_title_above.png)
 
@@ -1617,31 +1483,31 @@ document.write('<button onClick="afunction()">Restart</button>');
 
 JavaScript 中的数组用于存储一组相似的变量。
 
-想想如何用变量存储人们的年龄。假设我们有三个人的年龄。我们可以将它们存储在变量 `age1`、`age2` 和 `age3` 中。
+想想如何用变量存储人们的年龄。假设我们有三个人的年龄。我们可以将它们存储在变量`age1`、`age2`和`age3`中。
 
-```
+```javascript
 age1 = 5;
 age2 = 25;
 age3 = 45;
 ```
 
-现在，假设我们有 10 个人。我们可以将它们存储在变量 `age1`、`age2`...`age10` 中。那么，如果我们要存储 100 个人的年龄呢？你明白了吧。需要跟踪的变量太多了。
+现在，假设我们有 10 个人。我们可以将它们存储在变量`age1`、`age2`……`age10`中。那么，如果我们要存储 100 个人的年龄呢？你明白了吧。需要跟踪的变量太多了。
 
 因此，我们使用数组。要存储 10 个年龄，我们只需使用：
 
-```
+```javascript
 age = [5, 25, 45, 60, 20, 23, 24, 43, 34, 78];
 ```
 
-要在 JavaScript 中访问这些值，我们使用数组的索引。第 1 个元素的索引是 0，第 2 个是 1，第 3 个是 2，以此类推。例如，
+要在 JavaScript 中访问这些值，我们使用数组的索引。第 1 个元素的索引是 0，第 2 个是 1，第 3 个是 2，以此类推。例如：
 
-```
+```javascript
 document.write(age[0]) 输出 5；
 document.write(age[1]) 输出 25；
 document.write(age[5]) 输出 23。
 ```
 
-| ![image](img/chapter_title_corner_decoration_left.png) |  | ![image](img/chapter_title_corner_decoration_right.png) |
+| ![image](img/chapter_title_corner_decoration_left.png) |  |  | ![image](img/chapter_title_corner_decoration_right.png) |
 
 ![image](img/chapter_title_above.png)
 
@@ -1649,7 +1515,7 @@ document.write(age[5]) 输出 23。
 
 ![image](img/chapter_title_below.png)
 
-现在，我们来看下面的示例。我们在 JavaScript 中创建了 3 个数组，分别存储 5 个人的姓名、年龄和所在州。我们使用数组索引将它们打印出来。然后，我们使用 `.push()` 功能添加第 6 个人。请查看下面的代码和输出。
+现在，我们来看下面的示例。我们在 JavaScript 中创建了 3 个数组，分别存储 5 个人的姓名、年龄和所在州。我们使用数组索引将它们打印出来。然后，我们使用`.push()`功能添加第 6 个人。请查看下面的代码和输出。
 
 ![image](img/image182.png)
 
@@ -1657,11 +1523,11 @@ document.write(age[5]) 输出 23。
 
 ![image](img/image166.png)
 
-点击打印数组后，我们得到...
+点击打印数组后，我们得到……
 
 ![image](img/image119.png)
 
-| ![image](img/chapter_title_corner_decoration_left.png) |  | ![image](img/chapter_title_corner_decoration_right.png) |
+| ![image](img/chapter_title_corner_decoration_left.png) |  |  | ![image](img/chapter_title_corner_decoration_right.png) |
 
 ![image](img/chapter_title_above.png)
 
@@ -1671,9 +1537,9 @@ document.write(age[5]) 输出 23。
 
 在此示例中，我们通过 HTML 表单输入姓名、年龄和所在州。在 JavaScript 中，我们将表单元素分配给变量。
 
-通过表单输入 3 个姓名、年龄和州位置，并使用 `document.getElementById` 将它们输入到 3 个数组中。
+通过表单输入 3 个姓名、年龄和州位置，并使用`document.getElementById`将它们输入到 3 个数组中。
 
-最后使用 `document.write()` 打印数组。
+最后使用`document.write()`打印数组。
 
 ![image](img/image095.png)
 
@@ -1685,7 +1551,7 @@ document.write(age[5]) 输出 23。
 
 ![image](img/image104.png)
 
-| ![image](img/chapter_title_corner_decoration_left.png) |  | ![image](img/chapter_title_corner_decoration_right.png) |
+| ![image](img/chapter_title_corner_decoration_left.png) |  |  | ![image](img/chapter_title_corner_decoration_right.png) |
 
 ![image](img/chapter_title_above.png)
 
@@ -1695,17 +1561,19 @@ document.write(age[5]) 输出 23。
 
 在这个程序中，我们编写了一个测验，询问用户世界上某个随机国家的首都，并检查答案是否正确。
 
-程序中，一个按钮运行 `worldquiz()` 函数。在该函数中，我们声明了两个数组。一个数组包含世界上所有国家；另一个包含所有首都。
+程序中，一个按钮运行`worldquiz()`函数。在该函数中，我们声明了两个数组。一个数组包含世界上所有国家；另一个包含所有首都。
 
 你可以从下面获取这些数组的值：
 
 [`drive.google.com/file/d/1Vbnrllk290oVmh3Vn8Jv2EgFBL1w8vSd/view?usp=sharing`](https://drive.google.com/file/d/1Vbnrllk290oVmh3Vn8Jv2EgFBL1w8vSd/view?usp=sharing)
 
-然后我们选择一个介于 0 和 x 之间的随机数，x 是数组的长度。这个随机数从数组中随机选取一个国家。我们使用 `Math.random()` 和 `Math.floor()` 来实现。
 
-我们使用 `prompt` 获取用户猜测的首都。我们将用户猜测与实际首都进行比较。然后，我们向用户发送一条消息，告知他们正确或错误（如果错误，则给出正确的首都）。
 
-然后，用户可以通过运行 `redirect()` 函数的主页按钮重新启动程序。`redirect` 函数运行 `'GuessWorldCapitals.html'`，即文件名。代码和输出如下所示。
+然后我们选择一个介于 0 和 `x` 之间的随机数，`x` 是数组的长度。这个随机数从数组中随机选取一个国家。我们使用`Math.random()`和`Math.floor()`来实现。
+
+我们使用`prompt`获取用户猜测的首都。我们将用户猜测与实际首都进行比较。然后，我们向用户发送一条消息，告知他们正确或错误（如果错误，则给出正确的首都）。
+
+然后，用户可以通过运行`redirect()`函数的主页按钮重新启动程序。`redirect`函数运行`'GuessWorldCapitals.html'`，即文件名。代码和输出如下所示。
 
 ![image](img/image124.png)
 
@@ -1733,17 +1601,17 @@ document.write(age[5]) 输出 23。
 
 ![image](img/chapter_title_below.png)
 
-这个程序从笑话列表中随机选取一个笑话并打印出来。一个按钮运行 `writejoke()` 函数。在该函数中，我们声明了一个包含所有笑话的数组。
+这个程序从笑话列表中随机选取一个笑话并打印出来。一个按钮运行`writejoke()`函数。在该函数中，我们声明了一个包含所有笑话的数组。
 
 你可以从下面获取数组的值：
 
 [`drive.google.com/file/d/1xDN9dt2Gvj-mdPmi5ATCnP1tvOZtZt25/view?usp=sharing`](https://drive.google.com/file/d/1xDN9dt2Gvj-mdPmi5ATCnP1tvOZtZt25/view?usp=sharing)
 
-然后我们选择一个介于 0 和 x 之间的随机数，x 是数组的长度。这个随机数随机选取一个国家。我们使用 `Math.random()` 和 `Math.floor()` 来实现。
+然后我们选择一个介于 0 和 `x` 之间的随机数，`x` 是数组的长度。这个随机数随机选取一个国家。我们使用`Math.random()`和`Math.floor()`来实现。
 
-然后我们使用 `document.write()` 函数打印笑话。
+然后我们使用`document.write()`函数打印笑话。
 
-然后，用户可以通过运行 `redirect()` 函数的主页按钮重新启动程序。
+然后，用户可以通过运行`redirect()`函数的主页按钮重新启动程序。
 
 ![image](img/image195.png)
 
@@ -1767,19 +1635,15 @@ document.write(age[5]) 输出 23。
 
 ![image](img/chapter_title_below.png)
 
-这个程序编写了一个有趣的动物猜词游戏。下面程序中的按钮启动 `animalhangman()` 函数。在该函数中，我们首先声明一个包含所有动物的数组。然后，我们使用 `Math.random()` 和 `Math.floor()` 随机选取一个动物。
+这个程序编写了一个有趣的动物猜词游戏。下面程序中的按钮启动`animalhangman()`函数。在该函数中，我们首先声明一个包含所有动物的数组。然后，我们使用`Math.random()`和`Math.floor()`随机选取一个动物。
 
 我们创建一个变量来存储答案（`answerArray`）。它存储用户的答案。它被初始化为与原始动物相同长度的下划线（`_`）。
 
+变量`remletters`是剩余待猜字母的数量。创建了一个`while`循环，只要`remletters > 0`，就接受用户的猜测。
 
+使用`prompt`，我们接受用户输入的单个字母。如果输入的字母超过一个，我们会设置一条错误消息，并要求用户只输入一个字母。一旦用户输入了一个字母，我们就进入一个循环，检查随机动物的每个字母是否与用户输入的字母匹配。每次匹配时，我们将`remletters`减 1，并用匹配的字母更新`answerArray`的相应部分。在`while`循环结束时，用户已经猜出了动物，我们会打印一条祝贺消息，并显示动物的名称。
 
-
-
-变量 `remletters` 是剩余待猜字母的数量。创建了一个 `while` 循环，只要 `remletters > 0`，就接受用户的猜测。
-
-使用 `prompt`，我们接受用户输入的单个字母。如果输入的字母超过一个，我们会设置一条错误消息，并要求用户只输入一个字母。一旦用户输入了一个字母，我们就进入一个循环，检查随机动物的每个字母是否与用户输入的字母匹配。每次匹配时，我们将 `remletters` 减 1，并用匹配的字母更新 `answerArray` 的相应部分。在 `while` 循环结束时，用户已经猜出了动物，我们会打印一条祝贺消息，并显示动物的名称。
-
-在 `while` 循环中的任何时刻，如果用户没有输入字母并试图继续，我们会退出程序循环并打印出动物名称。
+在`while`循环中的任何时刻，如果用户没有输入字母并试图继续，我们会退出程序循环并打印出动物名称。
 
 游戏结束时，用户可以选择使用“主页”按钮重新启动程序。以下是带有一些示例的代码。
 
@@ -1871,15 +1735,15 @@ document.write(age[5]) 输出 23。
 
 在下面的示例中，我们为汽车创建了一个对象。它有 4 个不同的属性：名称、型号、价格、车牌。这些属性通过表单的用户输入来接收。
 
-它们在 `entercar()` 函数中作为输入被接收，然后在 `printcars()` 函数中被赋值给一个对象。在 `printcars()` 函数中，用户通过表单输入的内容被赋值给 4 个独立的变量。
+它们在`entercar()`函数中作为输入被接收，然后在`printcars()`函数中被赋值给一个对象。在`printcars()`函数中，用户通过表单输入的内容被赋值给 4 个独立的变量。
 
-这些变量被赋值给对象 `car`，如下所示。属性和值之间用 `:` 分隔，不同的属性/值之间用逗号（`,`）分隔。
+这些变量被赋值给对象`car`，如下所示。属性和值之间用`:`分隔，不同的属性/值之间用逗号（`,`）分隔。
 
-在下面的示例中，`type`、`model`、`license` 和 `price` 是属性；而 `carname`、`carmodel`、`carnumber` 和 `carprice` 是相应属性的值。下面的 4 个值来自用户表单。
+在下面的示例中，`type`、`model`、`license`和`price`是属性；而`carname`、`carmodel`、`carnumber`和`carprice`是相应属性的值。下面的 4 个值来自用户表单。
 
 ![image](img/image167.png)
 
-要访问对象的值，我们使用点（`.`）运算符放在属性之前。例如，`car.type` 会返回对象 `car` 的属性 `type` 所赋的值。
+要访问对象的值，我们使用点（`.`）运算符放在属性之前。例如，`car.type`会返回对象`car`的属性`type`所赋的值。
 
 因此，我们通过访问对象属性值来打印出汽车类型和价格。
 
@@ -1905,13 +1769,13 @@ document.write(age[5]) 输出 23。
 
 在下面的示例中，我们模拟了 6 名玩家之间的掷骰子游戏。
 
-基本上，掷骰子游戏进行 10 次；根据骰子落在 1 到 6 之间的哪个数字，玩家获得相应的分数。例如，如果骰子落在 1 上，玩家 1 加一分；如果落在 2 上，玩家 2 加一分，以此类推。骰子的值通过 `Math.Random()` 函数在 1 到 6 之间模拟。
+基本上，掷骰子游戏进行 10 次；根据骰子落在 1 到 6 之间的哪个数字，玩家获得相应的分数。例如，如果骰子落在 1 上，玩家 1 加一分；如果落在 2 上，玩家 2 加一分，以此类推。骰子的值通过`Math.Random()`函数在 1 到 6 之间模拟。
 
-程序开始时，声明了一个对象 `gameplayer`。属性是玩家的名字，值是获得的分数。
+程序开始时，声明了一个对象`gameplayer`。属性是玩家的名字，值是获得的分数。
 
-在函数 `dicegame()` 中，有一个 `FOR` 循环，运行 `gamecalc()` 10 次。在 `gamecalc()` 中，随机选择一个 1 到 6 之间的数字，模拟掷骰子。根据骰子落在哪个数字上，对应玩家的属性值增加 10。
+在函数`dicegame()`中，有一个`FOR`循环，运行`gamecalc()` 10 次。在`gamecalc()`中，随机选择一个 1 到 6 之间的数字，模拟掷骰子。根据骰子落在哪个数字上，对应玩家的属性值增加 10。
 
-在 `FOR` 循环结束时，我们在下方打印出每位玩家获得的分数。
+在`FOR`循环结束时，我们在下方打印出每位玩家获得的分数。
 
 以下是带有示例输出的代码。
 
@@ -1948,10 +1812,6 @@ document.write(age[5]) 输出 23。
 ![image](img/chapter_title_below.png)
 
 | ![image](img/chapter_title_corner_decoration_left.png) |  | ![image](img/chapter_title_corner_decoration_right.png) |
-
-
-
-
 
 ![image](img/chapter_title_above.png)
 
@@ -1995,21 +1855,21 @@ document.write(age[5]) 输出 23。
 
 在 JavaScript 中，创建圆形需要 5 个步骤。下面的代码展示了这一过程。
 
-第一步是使用 `document.getElementByID` 将 HTML 元素转换为 JavaScript 变量。然后使用 `getContext("2d")` 将其转换为 2D 绘图元素变量。在下面的示例中，变量 `c2x` 就是绘图元素。
+第一步是使用`document.getElementByID`将 HTML 元素转换为 JavaScript 变量。然后使用`getContext("2d")`将其转换为 2D 绘图元素变量。在下面的示例中，变量`c2x`就是绘图元素。
 
-在 JavaScript 中，我们可以用 `beginPath()` 开始任何绘图，然后用 `clearRect` 清除画布。`clearRect` 的工作原理如下例所示：
+在 JavaScript 中，我们可以用`beginPath()`开始任何绘图，然后用`clearRect`清除画布。`clearRect`的工作原理如下例所示：
 
-`clearRect(a,b,c,d)` 表示矩形的左上角起始于 x 坐标 a 和 y 坐标 b；其宽度为 c，高度为 d。因此，我们从 (a,b) 开始，清除宽度为 c、高度为 d 的画布区域。在下面的示例中，我们从 (0,0) 开始，清除整个宽度为 500 像素、高度为 500 像素的画布。这使得整个画布变为空白，准备绘图。
+`clearRect(a,b,c,d)`表示矩形的左上角起始于 x 坐标 `a` 和 y 坐标 `b`；其宽度为 `c`，高度为 `d`。因此，我们从 `(a,b)` 开始，清除宽度为 `c`、高度为 `d` 的画布区域。在下面的示例中，我们从 `(0,0)` 开始，清除整个宽度为 500 像素、高度为 500 像素的画布。这使得整个画布变为空白，准备绘图。
 
 接下来，我们使用 arc 函数绘制圆形。那么，让我们看看它是如何工作的：
 
-`arc(a,b,c,d,e)` 是我们绘制圆形的方式。(a,b) 是圆心；a 为 x 坐标，b 为 y 坐标。c 是圆的半径。d 是圆弧的起始部分。e 是圆弧的结束部分。
+`arc(a,b,c,d,e)`是我们绘制圆形的方式。`(a,b)`是圆心；`a`为 x 坐标，`b`为 y 坐标。`c`是圆的半径。`d`是圆弧的起始部分。`e`是圆弧的结束部分。
 
-d 和 e 以弧度为单位。对于一个完整的圆，d 和 e 分别为 0 和 2π。对于一个半圆，d 和 e 在 0 到 π 之间。
+`d`和`e`以弧度为单位。对于一个完整的圆，`d`和`e`分别为 0 和 2π。对于一个半圆，`d`和`e`在 0 到 π 之间。
 
-在下面的示例中，圆 1 的圆心在 (50,50)，半径为 20 像素。圆 2 的圆心在 (250,250)，半径较大，为 70。圆 3 实际上是一个半圆，因为它从 0 弧度到 π 弧度。它靠近右下角，位于 (350,350)，半径为 50 像素。
+在下面的示例中，圆 1 的圆心在 `(50,50)`，半径为 20 像素。圆 2 的圆心在 `(250,250)`，半径较大，为 70。圆 3 实际上是一个半圆，因为它从 0 弧度到 π 弧度。它靠近右下角，位于 `(350,350)`，半径为 50 像素。
 
-最后一步，我们使用 `stroke()` 绘制圆形。如果要填充圆形，则使用 `fill()`。我们可以通过 `fillStyle()` 更改颜色。
+最后一步，我们使用`stroke()`绘制圆形。如果要填充圆形，则使用`fill()`。我们可以通过`fillStyle()`更改颜色。
 
 ![image](img/image185.png)
 
@@ -2031,7 +1891,9 @@ d 和 e 以弧度为单位。对于一个完整的圆，d 和 e 分别为 0 和 
 
 ![image](img/chapter_title_below.png)
 
-矩形的绘制与圆形开始的方式相同：使用画布和 2D 上下文变量。同样，我们使用 `beginPath()` 和 `clearRect()` 开始绘制过程。然后使用一个名为 `fillRect()` 的函数，如下所示：
+矩形的绘制与圆形开始的方式相同：使用画布和 2D 上下文变量。同样，我们使用`beginPath()`和`clearRect()`开始绘制过程。然后使用一个名为`fillRect()`的函数，如下所示：
+
+
 
 `fillRect(a,b,c,d)` 表示矩形的左上角起始于 x 坐标 a 和 y 坐标 b；其宽度为 c，高度为 d。因此，我们从 (a,b) 开始，创建一个宽度为 c、高度为 d 的矩形。在下面的示例中，我们从 (0,0) 开始，创建一个宽度为 50 像素、高度为 100 像素的矩形。它是一个红色矩形（因为 `fillRect` 是红色的）。
 
@@ -2079,11 +1941,9 @@ d 和 e 以弧度为单位。对于一个完整的圆，d 和 e 分别为 0 和 
 
 ![image](img/chapter_title_below.png)
 
-› 创建一个 700 像素 × 500 像素的画布。在画布的四个不同角落各绘制一个圆形。然后在画布的正中心绘制第 5 个圆形。所有圆形颜色各不相同。这是一个很好的练习，能让你熟悉在屏幕上定位形状。
-
-› 创建一个 600 像素 × 600 像素的画布。在屏幕上绘制不同的表情符号。在画布中心绘制一个笑脸。然后在其正上方绘制一个哭脸。接着，在中心右侧绘制一个害怕的表情（闭眼、嘴巴呈直线）。最后，在左侧绘制一个你选择的表情符号。
-
-› 创建一个 600 像素 × 600 像素的画布。在正中心绘制一个边长为 100 像素的正方形。然后绘制第二个边长为 80 像素的正方形。接着，绘制第三个边长为 60 像素的正方形……依此类推，直到无法再缩小。这是一个同心正方形的示例。（提示：正方形就是所有边相等的矩形。）
+- 创建一个 700 像素 × 500 像素的画布。在画布的四个不同角落各绘制一个圆形。然后在画布的正中心绘制第 5 个圆形。所有圆形颜色各不相同。这是一个很好的练习，能让你熟悉在屏幕上定位形状。
+- 创建一个 600 像素 × 600 像素的画布。在屏幕上绘制不同的表情符号。在画布中心绘制一个笑脸。然后在其正上方绘制一个哭脸。接着，在中心右侧绘制一个害怕的表情（闭眼、嘴巴呈直线）。最后，在左侧绘制一个你选择的表情符号。
+- 创建一个 600 像素 × 600 像素的画布。在正中心绘制一个边长为 100 像素的正方形。然后绘制第二个边长为 80 像素的正方形。接着，绘制第三个边长为 60 像素的正方形……依此类推，直到无法再缩小。这是一个同心正方形的示例。（提示：正方形就是所有边相等的矩形。）
 
 | ![image](img/chapter_title_corner_decoration_left.png) |  | ![image](img/chapter_title_corner_decoration_right.png) |
 
@@ -2108,10 +1968,6 @@ JavaScript 中的定时器用于对 JavaScript 代码进行计时。它允许用
 `setTimeOut(a, 1000)` 在 1000 毫秒（1 秒）后执行函数 a。
 
 `setTimeInterval(a, 1000)` 以 1000 毫秒（1 秒）的间隔重复执行函数 a。
-
-
-
-
 
 这些函数是运行 JavaScript 动画的关键。
 
@@ -2139,11 +1995,11 @@ JavaScript 中的定时器用于对 JavaScript 代码进行计时。它允许用
 
 ![image](img/image090.png)
 
-输出 #2
+输出 #2：
 
 ![image](img/image019.png)
 
-点击 Count 后
+点击 Count 后：
 
 ![image](img/image101.png)
 
@@ -2165,7 +2021,7 @@ JavaScript 中的定时器用于对 JavaScript 代码进行计时。它允许用
 
 ![image](img/image069.png)
 
-绘制（正方形增长）
+绘制（正方形增长）：
 
 ![image](img/image184.png)
 
@@ -2189,7 +2045,7 @@ JavaScript 中的定时器用于对 JavaScript 代码进行计时。它允许用
 
 ![image](img/image189.png)
 
-绘制（圆形）
+绘制（圆形）：
 
 ![image](img/image115.png)
 
@@ -2247,21 +2103,21 @@ JavaScript 中的定时器用于对 JavaScript 代码进行计时。它允许用
 
 输出 #1：向下移动
 
-位置 1
+位置 1：
 
 ![image](img/image110.png)
 
-位置 2
+位置 2：
 
 ![image](img/image121.png)
 
 输出 #2：向左移动
 
-位置 1
+位置 1：
 
 ![image](img/image099.png)
 
-位置 2
+位置 2：
 
 ![image](img/image199.png)
 
@@ -2301,20 +2157,17 @@ JavaScript 中的定时器用于对 JavaScript 代码进行计时。它允许用
 
 ![image](img/image133.png)
 
-输出
+输出：
 
 ![image](img/image026.png)
 
 ![image](img/image151.png)
 
-
-
-
-绘制（底部反弹墙壁）
+绘制（底部反弹墙壁）：
 
 ![image](img/image201.png)
 
-绘制（右侧反弹墙壁）
+绘制（右侧反弹墙壁）：
 
 ![image](img/image068.png)
 
@@ -2326,21 +2179,16 @@ JavaScript 中的定时器用于对 JavaScript 代码进行计时。它允许用
 
 ![image](img/chapter_title_below.png)
 
-› 编写一个程序，接受一个数字作为输入，并每隔 0.5 秒打印该数字的倍数。例如，如果输入 6，则应输出：
-
-* 6
-* 12
-* 18
-* 24...
-* 以此类推，每隔 0.5 秒。
-
-› 修改“增长的正方形”程序，使其从画布中心开始增长，而不是从一个角开始。
-
-* 提示：你需要为`fillRect`函数的前两个坐标添加变量，并每次减少 5，以将角向上和向左移动。
-
-› 创建一个“缩小的圆”问题，该圆从画布大小开始，缓慢缩小到半径为 5 像素。当它达到 5 像素时，重新从原始大小开始并再次缩小。因此，这与我们“增长的圆”示例相反。
-
-› 创建两个球，它们从画布上的随机位置开始，并向随机方向移动。它们会从墙壁反弹；如果它们相互接触，则改变方向。（提示：在“弹跳球”程序中创建第二个球，然后添加对两个球之间距离的检查。如果两个球之间的距离很小，则改变两个球的方向。）
+- 编写一个程序，接受一个数字作为输入，并每隔 0.5 秒打印该数字的倍数。例如，如果输入 6，则应输出：
+  - 6
+  - 12
+  - 18
+  - 24……
+  - 以此类推，每隔 0.5 秒。
+- 修改“增长的正方形”程序，使其从画布中心开始增长，而不是从一个角开始。
+  - 提示：你需要为 `fillRect` 函数的前两个坐标添加变量，并每次减少 5，以将角向上和向左移动。
+- 创建一个“缩小的圆”问题，该圆从画布大小开始，缓慢缩小到半径为 5 像素。当它达到 5 像素时，重新从原始大小开始并再次缩小。因此，这与我们“增长的圆”示例相反。
+- 创建两个球，它们从画布上的随机位置开始，并向随机方向移动。它们会从墙壁反弹；如果它们相互接触，则改变方向。（提示：在“弹跳球”程序中创建第二个球，然后添加对两个球之间距离的检查。如果两个球之间的距离很小，则改变两个球的方向。）
 
 | ![image](img/chapter_title_corner_decoration_left.png) |  | ![image](img/chapter_title_corner_decoration_right.png) |
 
@@ -2364,6 +2212,8 @@ JavaScript 中的定时器用于对 JavaScript 代码进行计时。它允许用
 
 | ![image](img/chapter_title_corner_decoration_left.png) |  | ![image](img/chapter_title_corner_decoration_right.png) |
 
+
+
 ![image](img/chapter_title_above.png)
 
 ### 按键示例 1
@@ -2374,15 +2224,15 @@ JavaScript 中的定时器用于对 JavaScript 代码进行计时。它允许用
 
 ![image](img/image125.png)
 
-在 JavaScript 中，我们创建一个名为 `keyc` 的变量，其中包含所有键码。键码是分配给我们在键盘上输入时发生的每个事件的数字。例如，32 是按下空格键事件的键码。要获取所有事件键码的列表，我们可以查看以下链接：
+在 JavaScript 中，我们创建一个名为`keyc`的变量，其中包含所有键码。键码是分配给我们在键盘上输入时发生的每个事件的数字。例如，32 是按下空格键事件的键码。要获取所有事件键码的列表，我们可以查看以下链接：
 
 [`keycode.info/`](https://keycode.info/)
 
-我们只包含程序中显示的 8 个键码；因为这只是一个测试程序。如果你愿意，可以添加更多。然后，我们有以下代码，当按下某个键时运行函数 `press(event)`。
+我们只包含程序中显示的 8 个键码；因为这只是一个测试程序。如果你愿意，可以添加更多。然后，我们有以下代码，当按下某个键时运行函数`press(event)`。
 
 `$(“body”).keydown(press)`
 
-在函数内部，我们使用 `keyc[event.keycode]` 来访问按下按钮时发生的事件。下面是一些输出示例。
+在函数内部，我们使用`keyc[event.keycode]`来访问按下按钮时发生的事件。下面是一些输出示例。
 
 ![image](img/image043.png)
 
@@ -2400,15 +2250,15 @@ JavaScript 中的定时器用于对 JavaScript 代码进行计时。它允许用
 
 ![image](img/chapter_title_below.png)
 
-在下面的程序中，我们创建了 5 个不同的函数，根据键盘上按下的键，将一个小球放置在画布的 5 个不同位置。如果用户按下“空格”，程序运行 `centerballposition()`，将球放置在画布中心。
+在下面的程序中，我们创建了 5 个不同的函数，根据键盘上按下的键，将一个小球放置在画布的 5 个不同位置。如果用户按下“空格”，程序运行`centerballposition()`，将球放置在画布中心。
 
-如果用户按下“右”，程序运行 `rightballposition()`，将球放置在画布右上角。
+如果用户按下“右”，程序运行`rightballposition()`，将球放置在画布右上角。
 
-如果用户按下“左”，程序运行 `leftballposition()`，将球放置在画布左上角。
+如果用户按下“左”，程序运行`leftballposition()`，将球放置在画布左上角。
 
-如果用户按下“下”，程序运行 `downballposition()`，将球放置在画布右下角。
+如果用户按下“下”，程序运行`downballposition()`，将球放置在画布右下角。
 
-如果用户按下“退出”，程序运行 `downleftballposition()`，将球放置在画布左下角。
+如果用户按下“退出”，程序运行`downleftballposition()`，将球放置在画布左下角。
 
 代码和输出如下。
 
@@ -2462,7 +2312,7 @@ JavaScript 中的定时器用于对 JavaScript 代码进行计时。它允许用
 
 `$(“#canvas”).click(mousec)`
 
-`canvas` 是 HTML 画布的名称，`mousec` 是点击鼠标时运行的函数名称。在函数内部，用户写入鼠标已被点击。
+`canvas`是 HTML 画布的名称，`mousec`是点击鼠标时运行的函数名称。在函数内部，用户写入鼠标已被点击。
 
 ![image](img/image190.png)
 
@@ -2488,9 +2338,9 @@ JavaScript 中的定时器用于对 JavaScript 代码进行计时。它允许用
 
 捉迷藏图片链接：[`drive.google.com/file/d/1gmPI4Z2Rm9iAA9vEBi7LWehe-uNE2UQ4/view?usp=sharing`](https://drive.google.com/file/d/1gmPI4Z2Rm9iAA9vEBi7LWehe-uNE2UQ4/view?usp=sharing)
 
-在下面的代码中，`timx` 和 `timy` 是介于 0 和 500 之间的两个随机数，用于确定 Tim 隐藏在该图片中的 x 和 y 坐标。
+在下面的代码中，`timx`和`timy`是介于 0 和 500 之间的两个随机数，用于确定 Tim 隐藏在该图片中的 x 和 y 坐标。
 
-`mousec(event)` 是鼠标点击时运行的函数。在函数内部，`event.offsetX` 给出点击的 x 坐标，`event.offsetY` 给出点击的 y 坐标。`ctr` 是一个计数器，用于计算点击次数，并在 `mousec` 函数内部每次增加 1。
+`mousec(event)`是鼠标点击时运行的函数。在函数内部，`event.offsetX`给出点击的 x 坐标，`event.offsetY`给出点击的 y 坐标。`ctr`是一个计数器，用于计算点击次数，并在`mousec`函数内部每次增加 1。
 
 然后，程序使用勾股定理计算 Tim 与鼠标点击之间的距离，并将距离作为警报打印出来。
 
@@ -2507,10 +2357,6 @@ JavaScript 中的定时器用于对 JavaScript 代码进行计时。它允许用
 手动计算（距离）：
 
 ![image](img/image153.png)
-
-
-
-
 
 | ![image](img/chapter_title_corner_decoration_left.png) |  | ![image](img/chapter_title_corner_decoration_right.png) |
 
@@ -2544,7 +2390,7 @@ JavaScript 中的定时器用于对 JavaScript 代码进行计时。它允许用
 
 此外，函数`press(event)`检测按键事件，并在按下上键和下键时分别激活`moveup()`和`movedown()`。
 
-最后，我们还有`frame()`函数。该函数检查球是否靠近顶部、底部和右侧墙壁。如果球的 x 坐标接近 500，则它靠近右侧墙壁。然后我们改变 x 方向的速度以产生反弹。如果 y 坐标为 0 或 500（到达顶部/底部墙壁），我们也做同样的处理，改变 y 方向的速度以实现反弹。
+最后，我们还有`frame()`函数。该函数检查球是否靠近顶部、底部和右侧墙壁。如果球的 x 坐标接近 500，则它靠近右侧墙壁。然后我们改变 x 方向的速度以产生反弹。如果 y 坐标为 0 或 500（到达顶部/底部墙壁），我们也同样处理，改变 y 方向的速度以实现反弹。
 
 最后，我们检查球是否碰到球拍。我们使用勾股定理计算球拍位置与球位置之间的距离`dist`。如果距离（`dist`）小于 75 像素，则改变 x 方向的速度。
 
@@ -2572,13 +2418,10 @@ JavaScript 中的定时器用于对 JavaScript 代码进行计时。它允许用
 
 ![image](img/chapter_title_below.png)
 
-*   编写一个程序，接收用户输入，并根据用户按下 p、m、a、t（孔雀、猴子、鳄鱼、老虎）来显示 4 种动物的图片。例如，如果用户按下 p，程序显示孔雀的图片。（提示：将 4 张图片保存在同一文件夹中。使用`keypress`元素检测按键，然后使用`<img>`标签显示图片。）
-
-*   编写一个程序，向用户显示一个简单的颜色图表。用户点击其中一种颜色，程序输出该颜色的名称。（提示：使用`mouseclick`检测点击的位置，然后检查它是否靠近某种特定颜色。）
-
-*   在画布上绘制一个圆，根据用户点击上、下、左、右方向，使圆向上、下、左、右移动。
-
-*   在问题 3 的基础上，在画布上随机放置一个宝藏，如果圆移动到距离宝藏 5 像素以内，则发送一条“恭喜”消息。
+- 编写一个程序，接收用户输入，并根据用户按下 p、m、a、t（孔雀、猴子、鳄鱼、老虎）来显示 4 种动物的图片。例如，如果用户按下 p，程序显示孔雀的图片。（提示：将 4 张图片保存在同一文件夹中。使用`keypress`元素检测按键，然后使用`<img>`标签显示图片。）
+- 编写一个程序，向用户显示一个简单的颜色图表。用户点击其中一种颜色，程序输出该颜色的名称。（提示：使用`mouseclick`检测点击的位置，然后检查它是否靠近某种特定颜色。）
+- 在画布上绘制一个圆，根据用户点击上、下、左、右方向，使圆向上、下、左、右移动。
+- 在问题 3 的基础上，在画布上随机放置一个宝藏，如果圆移动到距离宝藏 5 像素以内，则发送一条“恭喜”消息。
 
 | ![image](img/chapter_title_corner_decoration_left.png) |  | ![image](img/chapter_title_corner_decoration_right.png) |
 
@@ -2595,4 +2438,3 @@ JavaScript 中的定时器用于对 JavaScript 代码进行计时。它允许用
 如果你对主题有任何疑问，或者有任何建议，请发送电子邮件至：abiprod.pty.ltd@gmail.com
 
 如果你对个性化帮助感兴趣，我也提供在线一对一辅导。
-

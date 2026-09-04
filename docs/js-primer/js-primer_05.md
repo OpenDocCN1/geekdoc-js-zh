@@ -1,3 +1,4 @@
+
 # 发现文中错误时
 
 > 原文：[`jsprimer.net/intro/feedback/`](https://jsprimer.net/intro/feedback/)
@@ -34,22 +35,22 @@ GitHub Discussions（讨论区）的使用方法已总结在下面的帖子中�
 
 [`goo.gl/forms/lOx4ckFyb0fB9cBM2`](https://goo.gl/forms/lOx4ckFyb0fB9cBM2)
 
-## *修复问题*
+## 修复问题
 
-*这本书的所有文字和示例源代码都在 GitHub 上公开。
+这本书的所有文字和示例源代码都在 GitHub 上公开。
 
 +   [`github.com/asciidwango/js-primer`](https://github.com/asciidwango/js-primer)
 
 因此，不仅要报告问题，还可以通过提交[Pull Request](https://help.github.com/articles/about-pull-requests/)来修复问题。
 
-详细的 Pull Request 提交方法请参考[CONTRIBUTING.md](https://github.com/asciidwango/js-primer/blob/master/CONTRIBUTING.md)。
+详细的 Pull Request 提交方法请参考[`CONTRIBUTING.md`](https://github.com/asciidwango/js-primer/blob/master/CONTRIBUTING.md)。
 
 +   [`github.com/asciidwango/js-primer/blob/master/CONTRIBUTING.md`](https://github.com/asciidwango/js-primer/blob/master/CONTRIBUTING.md)
 
 从修复一个拼写错误到修复技术性错误，无论您做何种修正，我们都表示感谢。如果您发现了问题，请尝试修复它。
 
-## *参考*
+## 参考
 
-**[专业书籍也会有错误：柴田 芳樹 (Yoshiki Shibata)：So-net 博客](https://yshibata.blog.ss-blog.jp/2015-12-23)**
+[专业书籍也会有错误：柴田 芳樹 (Yoshiki Shibata)：So-net 博客](https://yshibata.blog.ss-blog.jp/2015-12-23)
 
-+   [发现技术书籍的错误：柴田 芳樹 (Yoshiki Shibata)：So-net 博客](https://yshibata.blog.ss-blog.jp/2018-06-09)**
++   [发现技术书籍的错误：柴田 芳樹 (Yoshiki Shibata)：So-net 博客](https://yshibata.blog.ss-blog.jp/2018-06-09)

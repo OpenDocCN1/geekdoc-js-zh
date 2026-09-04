@@ -1,63 +1,32 @@
+
 # JavaScript 高级指南
 
+**ragwald**
 
+## raganwald 的其他作品
 
+- 红隼、古怪的鸟类与绝望的自我中心主义
+- 我从失败中学会了什么
+- 作为程序员，如何做你热爱的事并赚取你的报酬
+- CoffeeScript Ristretto
 
+《JavaScript Spessore》是为那些读过《JavaScript Allongé》或具有相应 JavaScript 经验的读者编写，特别是涉及函数、闭包和原型方面。
 
-
-
-
-ragwald
-
-
-
-
-
-# raganwald 的其他作品
-
-红隼、古怪的鸟类与绝望的自我中心主义
-
-我从失败中学会了什么
-
-作为程序员，如何做你热爱的事并赚取你的报酬
-
-CoffeeScript Ristretto
-
-
-
-
-
-
-
-
-
-《JavaScript Spessore⁶》是为那些读过《JavaScript Allongé⁷》或具有相应 JavaScript 经验的读者编写，特别是涉及函数、闭包和原型方面。
-
-> “对于任何想要更好地了解 JavaScript 的开发者来说，这都是必读的……Reg 的解释方式能让我把各个点联系起来。这可能是我重读过十次或以上的编程书了。”–ethrinh
-
-> “我认为这是自读过 Sedgewick 的《C 语言算法》以来，我读过的技术书籍之一。”–Andrey Sidorov
-
-> “您在《JavaScript Allongé》中对闭包的解释是我读过的最好的。”–Ehmannkay
-
-> “这是一种处理 JavaScript 的不同方法，你会在其他地方看到，它揭示了 JavaScript 语言中一些更优雅的部分。”–@jerymoronrell
+> “对于任何想要更好地了解 JavaScript 的开发者来说，这都是必读的……Reg 的解释方式能让我把各个点联系起来。这可能是我重读过十次或以上的编程书了。”——ethrinh
+>
+> “我认为这是自读过 Sedgewick 的《C 语言算法》以来，我读过的技术书籍之一。”——Andrey Sidorov
+>
+> “您在《JavaScript Allongé》中对闭包的解释是我读过的最好的。”——Ehmannkay
+>
+> “这是一种处理 JavaScript 的不同方法，你会在其他地方看到，它揭示了 JavaScript 语言中一些更优雅的部分。”——@jerymoronrell
 
 如果你已经熟悉这些内容，你可能想阅读《JavaScript Allongé》来熟悉你对函数组合器（functional combinators）的方法。你可以在线免费阅读。
 
+[allong.es](http://allong.es) 是一个受《JavaScript Allongé》启发的 JavaScript 库。它包含了许多在《JavaScript Spessore》示例中使用的工具函数，如 `map`、`variadic` 和 `tap`。它是免费的，你甚至可以将书中的许多示例输入它的 [try allong.es](http://try.allong.es) 页面并查看运行效果。
 
-allong.es⁸ 是一个受《JavaScript Allongé》启发的 JavaScript 库。它包含了许多在《JavaScript Spessore》示例中使用的工具函数，如 `map`、`variadic` 和 `tap`。它是免费的，你甚至可以将书中的许多示例输入它的 try allong.es¹⁰ 页面并查看运行效果。
+## 核心思想
 
-
-
-
-
-
-## 核心思想 (The Big Idea)
-
-![](img/8b9a265792032f26cdf0efc975d22328_8_0.png)
-
-Mazzer Mini 咖啡豆磨机的细节。磨豆的重要性至少不亚于压力压，但大多数人在咖啡机上花费的时间和金钱比在磨豆机上多。
-
-
+![Mazzer Mini 咖啡豆磨机的细节。磨豆的重要性至少不亚于压力压，但大多数人在咖啡机上花费的时间和金钱比在磨豆机上多。](img/8b9a265792032f26cdf0efc975d22328_8_0.png)
 
 ### 本章内容
 
@@ -67,7 +36,7 @@ Mazzer Mini 咖啡豆磨机的细节。磨豆的重要性至少不亚于压力�
 
 ## JavaScript 是函数式的还是面向对象的？
 
-JavaScript 的定义特征之一是将函数视为一等公民值。就像数字、字符串和其他对象一样，函数的引用可以作为参数传递给函数、作为结果返回、绑定到变量，并通常像处理任何其他值一样处理它们
+JavaScript 的定义特征之一是将函数视为一等公民值。就像数字、字符串和其他对象一样，函数的引用可以作为参数传递给函数、作为结果返回、绑定到变量，并通常像处理任何其他值一样处理它们。
 
 这是一个传递函数引用的示例。这个简单的基于数组的栈有一个 `undo` 函数。它的工作原理是创建一个代表撤销上次更新操作的函数，然后将其推入撤销栈中：
 
@@ -104,9 +73,9 @@ stack.push('javascript');
 stack.undo();
 ```
 
-> ³JavaScript 实际上并没有在传递函数或任何类型的对象；它传递的是函数和其他对象的引用。但声明 `var i = function (a) { return a; }` 作为将函数引用绑定到变量 `i` 会很别扭，所以我们经常采取一种智力上的偷径，直接将函数绑定到变量 `i`。这与说某人把我加入了即将举行的会议日程异曲同工：他们确实把我的名字加进了列表，这实际上是对我的一种引用。
+> JavaScript 实际上并没有在传递函数或任何类型的对象；它传递的是函数和其他对象的引用。但声明 `var i = function (a) { return a; }` 作为将函数引用绑定到变量 `i` 会很别扭，所以我们经常采取一种智力上的偷径，直接将函数绑定到变量 `i`。这与说某人把我加入了即将举行的会议日程异曲同工：他们确实把我的名字加进了列表，这实际上是对我的一种引用。
 
-## 核心思想 (The Big Idea)
+## 核心思想
 
 ```javascript
 stack.undo();
@@ -117,21 +86,18 @@ stack.pop();
 “函数即值”是一个强大的思想。人们经常看到“函数即值”这个观点并想：“哦，JavaScript 是一门函数式编程语言。”不是。
 
 > 在计算机科学中，函数式编程是一种编程范式，一种构建计算机程序结构和元素的风格，它将计算视为数学函数的求值，并避免状态数据。
-—Wikipedia¹
+>
+> —Wikipedia
 
-在 20 世纪 60 年 Lisp 还年轻时，函数式编程可能指的是“函数是一等公民值”。但时间在流逝，我们必须与其并进。JavaScript 并不避免状态，JavaScript 拥抱可变数据，因此 JavaScript 并不追求“函数式编程”。
+在 20 世纪 60 年代 Lisp 还年轻时，函数式编程可能指的是“函数是一等公民值”。但时间在流逝，我们必须与其并进。JavaScript 并不避免状态，JavaScript 拥抱可变数据，因此 JavaScript 并不追求“函数式编程”。
 
-![](img/8b9a265792032f26cdf0efc975d22328_11_0.png)
+![图片](img/8b9a265792032f26cdf0efc975d22328_11_0.png)
 
 ### 对象
 
-JavaScript 的另一个特征是它对对象的支持。尽管与 Scala 等功能丰富的面向对象语言相比，JavaScript 的功能显得很匮乏，但其极极简主义意味着你实际上可以从基础组件构建几乎任何面向对象的范式。
+JavaScript 的另一个特征是它对对象的支持。尽管与 Scala 等功能丰富的面向对象语言相比，JavaScript 的功能显得很匮乏，但其极简主义意味着你实际上可以从基础组件构建几乎任何面向对象的范式。
 
-现在，人们经常听到“对象”这个词并想到“名词王国”¹⁴ 但对象并不一定是名词，至少对于现实世界中的模型、实体而言并非如此。例如状态机¹⁷我们可以实现康威生命游戏¹⁸中的一个细胞，使用 `if` 语句和一个布尔属性来判断细胞是存活还是死亡¹
-
-
-
-
+现在，人们经常听到“对象”这个词并想到“名王国”，但对象并不一定是名词，至少对于现实世界中的模型、实体而言并非如此。例如状态机，我们可以实现康威生命游戏中的一个细胞，使用 `if` 语句和一个布尔属性来判断细胞是存活还是死亡。
 
 行为被视为一种一类值，无论是一个单函数还是一个具有多个方法的对象。
 
@@ -141,7 +107,7 @@ JavaScript 的另一个特征是它对对象的支持。尽管与 Scala 等功�
 
 函数在面向对象的程序中还有另一个作用，一个处于领域之外的作用。函数构成了*值的代数*的基础。
 
-考虑这些函数：`begin1` 和 `begin`。它们对于编写函数建议²⁰非常方便，用于创建为了评估副作用而设计的函数序列，以及在组合时解决方法冲突：
+考虑这些函数：`begin1` 和 `begin`。它们对于编写函数建议非常方便，用于创建为了评估副作用而设计的函数序列，以及在组合时解决方法冲突：
 
 ```javascript
 var __slice = [].slice;
@@ -175,22 +141,21 @@ function begin () {
     }, this),
     concretes = values.filter(function (value) {
       return value !== void 0;
-      if (concretes.length > 0) {
-        return concretes[concretes.length - 1];
-      }
     });
-}
+    if (concretes.length > 0) {
+      return concretes[concretes.length - 1];
+    }
+  };
 }
 ```
-
 
 ### 核心思想
 
 `begin` 和 `begin1` 都通过组合两个或多个其他函数来创建一个函数。组合是构建程序的主要活动：用更小、更简单的行为构建出一个复杂的行为。
 
-在某种意义上，所有的编程都是组合。然而，当我们使用函数来组合函数时，我们故意限制了函数之间相互调用的方式。这更容易理解发生了什么，我们用于组合的类函数（如 `begin-and-have`）具有从现有函数构造新函数的非常简单且定义良好的方法。
+在某种意义上，所有的编程都是组合。然而，当我们使用函数来组合函数时，我们故意限制了函数之间相互调用的方式。这更容易理解发生了什么，我们用于组合的类函数（如 `begin`）具有从现有函数构造新函数的非常简单且定义良好的方法。
 
-函数的另一个有用之处是转换其他函数。Underscore²21 库包含了几个，allong.es²22 也是。这里是最简单的之一：
+函数的另一个有用之处是转换其他函数。Underscore 库包含了几个，allong.es 也是。这里是最简单的之一：
 
 ```javascript
 function not (fn) {
@@ -210,7 +175,6 @@ function not (fn) {
 
 显而易见，函数可以接受对象作为参数并返回对象。接收代表客户端的对象并返回代表账户余额对象的函数（或方法）是软件中必要且重要的部分。
 
-
 ### 核心思想
 
 但正如我们创建了函数的代数，我们可以创建一个对象的代数。这意味着，我们可以编写接收对象并返回代表其参数转换的其他对象的函数。
@@ -226,10 +190,9 @@ function proxy(baseObject, optionalPrototype) {
       (function (methodName) {
         proxyObject[methodName] = function () {
           var result = baseObject[methodName].apply(baseObject, arguments);
-          return result === baseObject
-            : result;
+          return result === baseObject ? proxyObject : result;
         };
-      })();
+      })(methodName);
     }
   }
   return proxyObject;
@@ -243,8 +206,7 @@ var stackWithPrivateState = proxy(stack);
 ```
 
 ```javascript
-stack.array =
-// [];
+stack.array = [];
 stackWithPrivateState.array
 // undefined
 ```
@@ -271,8 +233,7 @@ function meld () {
   providers = __slice.call(arguments, 0),
   key,
   i,
-  provider,
-  except;
+  provider;
 
   for (i = 0; i < providers.length; ++i) {
     provider = providers[i];
@@ -316,12 +277,7 @@ var HasCareer = {
 
 ```javascript
 var PersonWithCareer = meld(Person, HasCareer);
-//=/
-{ fullName: [Function],
-  rename: [Function],
-  career: [Function],
-  setCareer: [Function],
-  describe: [Function] }
+//=> { fullName: [Function], rename: [Function], career: [Function], setCareer: [Function], describe: [Function] }
 ```
 
 组合并将函数转换为其他函数的函数是非常强大的，但并不仅于此。
@@ -354,30 +310,28 @@ var PersonWithCareer = meld(Person, HasCareer);
 | 4. 浓缩计时器 | 提取期间的电子计数和每个组的显示 - 启用有限且独立的系统 |
 
 咖啡师
+
 每个组的稳定性稳定性：3 年研发确定 0.53L 锅炉是最佳水量，经过 1000 多次
+
 为组头提供稳定精确的温度稳定性 - 校准误差 ±0.5°C - 完美的咖啡提取后
-
-
-
-
 
 在本章中，我们将查看 JavaScript 中非常简单的对象是如何工作的。
 
 ### 数据结构
 
-数据结构是计算机中存储和组织数据的一种特定方式，使其能够高效地使用。不同类型的数据结构适用于不同类型的应用程序，并针对特定任务经过高度专门化。--Wikipedia²⁴
+数据结构是计算机中存储和组织数据的一种特定方式，使其能够高效地使用。不同类型的数据结构适用于不同类型的应用程序，并针对特定任务经过高度专门化。--Wikipedia
 
 JavaScript 中的数据结构是一个值，它引用零或多个表示数据的值。许多人将数据结构称为“容器”，暗示数据结构包含数据。从技术上讲，数据结构包含对数据的引用，但“容器”是一个合理的比喻。
 
-在 JavaScript 中，数字和字符串等原始类型不是数据结构。数组和“对象”（Objects）是内置的数据结构，你可以使用它们来构建其他数据结构，如 b 树。（JavaScript 可能会让人困惑：数组也是对象，而字符串不是对象，String 的实例却是一个对象。）
+在 JavaScript 中，数字和字符串等原始类型不是数据结构。数组和“对象”（Objects）是内置的数据结构，你可以使用它们来构建其他数据结构，如 B 树。（JavaScript 可能会让人困惑：数组也是对象，而字符串不是对象，String 的实例却是一个对象。）
 
 我们感兴趣的是 JavaScript 的对象。从技术上讲，JavaScript 所说的对象实际上是一个字典：
 
-关联数组、映射（map）、符号或字典是由一组（键， 值）对对组成的抽象数据类型，每个键值对中的每个可能的键在集合中最多出现一次。与此数据类型相关的操作允许：向集合中添加键值对；从集合中删除键值对；修改现有键值对的值；以及查找与特定键的值。--Wikipedia²⁵
+关联数组、映射（map）、符号或字典是由一组（键，值）对组成的抽象数据类型，每个键值对中的每个可能的键在集合中最多出现一次。与此数据类型相关的操作允许：向集合中添加键值对；从集合中删除键值对；修改现有键值对的值；以及查找与特定键的值。--Wikipedia
 
-许多语言中的数据结构是被动的：你编写单独的函数向它们添加数据或从中查询数据。例如，我们可以使用字典来制作一个老式的链表²⁶
+许多语言中的数据结构是被动的：你编写单独的函数向它们添加数据或从中查询数据。例如，我们可以使用字典来制作一个老式的链表。
 
-```
+```javascript
 var emptyValue = {};
 
 function empty () {
@@ -389,7 +343,7 @@ function cons (value, list) {
 }
 ```
 
-²⁶这些函数可以追溯到 Lisp 1.5。故事是它是为一种具有两个 CPU 寄存器（一个地址寄存器和一个递减寄存器）的硬件架构编写的。cons 类型是一个“cons 单元”，表示两个指针。一个存储在地址寄存器中，另一个存储在递减寄存器中。函数 car 意味着“地址寄存器的内容”，函数 cdr 意味着“递减寄存器的内容”。cons 意味着创建一个新的 cons 单元”。本应该是 mapcar，但我们仍然坚持使用更现代的术语。
+> 这些函数可以追溯到 Lisp 1.5。故事是它是为一种具有两个 CPU 寄存器（一个地址寄存器和一个递减寄存器）的硬件架构编写的。cons 类型是一个“cons 单元”，表示两个指针。一个存储在地址寄存器中，另一个存储在递减寄存器中。函数 car 意味着“地址寄存器的内容”，函数 cdr 意味着“递减寄存器的内容”。cons 意味着创建一个新的 cons 单元”。本应该是 mapcar，但我们仍然坚持使用更现代的术语。
 
 ```javascript
 function car (list) {
@@ -436,7 +390,7 @@ function cubed (n) {
 
 ```javascript
 pp(map(cubed, oneTwoThree))
-//=>'1 8 27'
+//=> '1 8 27'
 ```
 
 编程数据结构的“核心思想”是你拥有一个标准化的数据结构，并编写许多在这些数据结构上操作的函数。数据结构是通过约定组织的：每个函数都深入理解数据结构的实现，并仔细地保留其预期的结构。
@@ -445,14 +399,13 @@ pp(map(cubed, oneTwoThree))
 
 链表、向量和有序集合都需要某种迭代器函数。map 基于 cons 单元为链表完成这项工作。map 为向量和有序集合完成此工作，但在名称都是全局的时代，你无法拥有两个同名的函数。
 
-语言设计的一个分支关注管理命名空间。像 Modula-2⁷ 这样的语言提供了将向量等数据结构的所有函数封装到具有独立命名空间的单独编译单元中的方法。你可以对有序集合执行相同的操作，并且有特殊功能用于编写引用其中一个、两者或无冲突的代码。
+语言设计的一个分支关注管理命名空间。像 Modula-2 这样的语言提供了将向量等数据结构的所有函数封装到具有独立命名空间的单独编译单元中的方法。你可以对有序集合执行相同的操作，并且有特殊功能用于引用其中一个、两者或无冲突的代码。
 
-一旦解决了命名空间冲突，编程世界就拥有了处理数据结构所需的一切。我们可以轻松地在 JavaScript 中模拟这种开发风格：使用数组和字典，使用 [] 和 for 循环进行所有访问，并编写函数来实现我们需要的任何。
-
+一旦解决了命名空间冲突，编程世界就拥有了处理数据结构所需的一切。我们可以轻松地在 JavaScript 中模拟这种开发风格：使用数组和字典，使用 `[]` 和 `for` 循环进行所有访问，并编写函数来实现我们需要的任何。
 
 ### 纯 JavaScript 对象 (POJO)
 
-在 JavaScript 中，对象是提供从名称到值映射的数据结构。许多其他语言将这些称为“字典”或“关联数组”。有些人称它们为“哈希”（Hashes），HashMap 或 Hash Table（哈希表）的缩写。在大多数情况下，Dictionary²⁸ 一词描述了它的工作原理，而 HashMap 或 Hash Table²⁹ 等术语描述了针对快速查找的字典实现。
+在 JavaScript 中，对象是提供从名称到值映射的数据结构。许多其他语言将这些称为“字典”或“关联数组”。有些人称它们为“哈希”（Hashes），HashMap 或 Hash Table（哈希表）的缩写。在大多数情况下，Dictionary 一词描述了它的工作原理，而 HashMap 或 Hash Table 等术语描述了针对快速查找的字典实现。
 
 创建 JavaScript 对象最常用的语法称为“字面量对象表达式”：
 
@@ -467,14 +420,14 @@ pp(map(cubed, oneTwoThree))
 //=> false
 ```
 
-对象使用 [] 通过字符串按名称访问值：
+对象使用 `[]` 通过字符串按名称访问值：
 
 ```javascript
 { year: 2012, month: 6, day: 14 }['day']
 //=> 14
 ```
 
-字面量对象表达式中的名称不是字母数字字符串。对于其他任何情况，将标签括在：：
+字面量对象表达式中的名称不是字母数字字符串。对于其他任何情况，将标签括在引号中：
 
 ```javascript
 {'first name': 'reginald', 'last name': 'lewis'}['first name']
@@ -505,23 +458,20 @@ var Arithmetic = {
 }
 ```
 
+```javascript
 Arithmetic.abs(-5)
-//=>5
+//=> 5
+```
 
 ### 命名空间
 
-由于 JavaScript 对象是字典，这使得它们非常适合创建命名空间³⁰
+由于 JavaScript 对象是字典，这使得它们非常适合创建命名空间。
 
-> 通常而言，命名空间是一组标识符（也称为符号、名称）的容器。命名空间为特定的标识符提供了一个间接层，使得区分相同名称的标识符成为可能。例如，姓氏可以被视为命名空间，用于区分同名的人。在计算机编程中，命名空间通常用于围绕特定功能分组符号和标识符。--Wikipedia³¹
+> 通常而言，命名空间是一组标识符（也称为符号、名称）的容器。命名空间为特定的标识符提供了一个间接层，使得区分相同名称的标识符成为可能。例如，姓氏可以被视为命名空间，用于区分同名的人。在计算机编程中，命名空间通常用于围绕特定功能分组符号和标识符。--Wikipedia
 
 命名空间通常是无状态的：它们包含函数和其它常量，但不打算直接或间接地进行更新。命名空间通常也是“封闭扩展的”：函数不会动态地添加到命名空间中。
 
-命名空间的主要目的是为一组相关的命名常量和函数提供消义。Arithmetic 是命名空间的一个示例。它可能是：如果我们正在编写一个健身应用程序，我们可能想出于另一个用途使用变量 abs，我们不希望意外覆盖或覆盖我们确定数字绝对值的函数。
-
-
-
-
-
+命名空间的主要目的是为一组相关的命名常量和函数提供消义。`Arithmetic` 是命名空间的一个示例。它可能是：如果我们正在编写一个健身应用程序，我们可能想出于另一个用途使用变量 `abs`，我们不希望意外覆盖或覆盖我们确定数字绝对值的函数。
 
 ### JavaScript 对象
 
@@ -556,17 +506,17 @@ function cons(value, list) {
 
 我们正在使用字典作为一种实现技术，但我们实际上在编写操作具有名为 `_a` 和 `_d` 元素的元组的函数。JavaScript 中的许多“对象”都是具有命名元素的数据结构。它们恰好是用作为字典的对象实现的，但它们的意图并不是用作任意的键值存储器。
 
-> JavaScript 对象是字典。字典可以用于构建数据结构：区别在于其预期的使用方式。如果一个对象是任意键值对的容器，它就是字典。如果一个对象是特定命名命值的容器，它就是用字典实现的自定义结构。
+> JavaScript 对象是字典。字典可以用于构建数据结构：区别在于其预期的使用方式。如果一个对象是任意键值对的容器，它就是字典。如果一个对象是特定命名键值的容器，它就是用字典实现的自定义结构。
 
 ### 使用闭包封装状态
 
 OOP 意味着消息传递、局部保留以及状态过程的保护与隐藏，以及一切的极后期绑定。
 
-- Alan Kay²
+- Alan Kay
 
-正如我们讨论过的，构建我们自己的数据结构存在命名空间问题。坦地说，命名空间问题是可以解决的。还有另一个问题，封装³问题。操作数据结构的代码是考虑到其实现编写的，并因此产生紧密耦合。耦合是传递的，因此所有直接耦合到特定链表的代码，也间接地耦合到所有与该链表耦合的其他代码。
+正如我们讨论过的，构建我们自己的数据结构存在命名空间问题。坦白说，命名空间问题是可以解决的。还有另一个问题，封装问题。操作数据结构的代码是考虑到其实现编写的，并因此产生紧密耦合。耦合是传递的，因此所有直接耦合到特定链表的代码，也间接地耦合到所有与该链表耦合的其他代码。
 
-如果你对链表的工作方式进行更改，可能会破坏所有那些其他代码。这种耦合问题至少从 20 世纪 60 年代就已经存在，像 [Modula-2] 和 [Smalltalk] 这样的语言通过将数据结构的公共接口与“消费者”分离解决了这个问题。
+如果你对链表的工作方式进行更改，可能会破坏所有那些其他代码。这种耦合问题至少从 20 世纪 60 年代就已经存在，像 Modula-2 和 Smalltalk 这样的语言通过将数据结构的公共接口与“消费者”分离解决了这个问题。
 
 公共接口是一组供数据结构“消费者”使用的函数。私有实现将对视图不可见。由于消费者无法与实现交互，它们只能与精心选择的公共接口耦合，而不会与任何实现细节耦合。
 
@@ -576,13 +526,13 @@ OOP 意味着消息传递、局部保留以及状态过程的保护与隐藏，�
 
 换句话，信息隐藏是防止类或软件组件的某些方面被其客户端访问的能力，这可以使用编程语言特性（如私有变量）或显式的导出策略。
 
-- Wikipedia⁴
+- Wikipedia
 
-一种栈⁵数据结构。它有三个基本操作：向顶部推入一个值（push）、从顶部弹出一个值（pop）以及测试栈是否为空（isEmpty）。这三个操作就是稳定的接口。
+一种栈数据结构。它有三个基本操作：向顶部推入一个值（push）、从顶部弹出一个值（pop）以及测试栈是否为空（isEmpty）。这三个操作就是稳定的接口。
 
-⁶ 一种便于数据与操作该数据的方法（或其他函数）捆在一起的语言结构。-Wikipedia
+一种便于数据与操作该数据的方法（或其他函数）捆在一起的语言结构。-Wikipedia
 
-### JavaScript 对象 24
+### JavaScript 对象
 
 许多栈使用一个数组来存放栈的内容。这是相对稳定的。你可以用链表代替，但在 JavaScript 中，数组是非常高效的。你可能需要一个索引，也可能不需要。你可以扩大缩小数组，也可以分配固定的大小并使用索引来跟踪数组中已有多少内容。跟踪列表头部的设计选择通常是由性能考虑驱动的。
 
@@ -596,7 +546,7 @@ OOP 意味着消息传递、局部保留以及状态过程的保护与隐藏，�
 
 我们已经介绍了 JavaScript 的对象，很容易看出对象可以用来建模其他编程语言可以（以各种方式）建模的记录、结构体、帧或等等。鉴于它们的元素是可变的，它们显然可以对状态建模。
 
-给定一个持有我们状态的对象（一个数组和一个索引¹⁶），我们可以轻松地将我们的三个操作实现为函数。
+给定一个持有我们状态的对象（一个数组和一个索引），我们可以轻松地将我们的三个操作实现为函数。
 
 ```javascript
 var stack = (function () {
@@ -621,7 +571,7 @@ var stack = (function () {
 })();
 ```
 
-> ¹⁶ 是的，还有另一种跟踪数组大小的方法，但我们不需要它来演示封装和状态隐藏。
+> 是的，还有另一种跟踪数组大小的方法，但我们不需要它来演示封装和状态隐藏。
 
 ### 方法论
 
@@ -677,13 +627,6 @@ var stack = (function () {
 })();
 ```
 
-
-
-```javascript
-}
-)();
-```
-
 ```javascript
 stack.isEmpty()
 // true
@@ -708,25 +651,24 @@ var StackMaker = function () {
   return (function () {
     var array = [];
     index = -1;
-```
 
-```javascript
-return {
-  push: function (value) {
-    array[index += 1] = value
-  },
-  pop: function () {
-    var value = array[index];
-    if (index >= 0) {
-      index -= 1
-    }
-    return value
-  },
-  isEmpty: function () {
-    return index < 0
-  }
-};
-}})()
+    return {
+      push: function (value) {
+        array[index += 1] = value
+      },
+      pop: function () {
+        var value = array[index];
+        if (index >= 0) {
+          index -= 1
+        }
+        return value
+      },
+      isEmpty: function () {
+        return index < 0
+      }
+    };
+  })()
+}
 ```
 
 ### JavaScript 的对象
@@ -758,17 +700,17 @@ var StackMaker = function () {
 stack = StackMaker()
 ```
 
-现在我们可以自由地创建栈了，并且隐藏了它们的内部数据元素。我们拥有了方法和封装，并且通过 JavaScript的基本函数和对象构建了它们。再往后看，我们将查看 JavaScript 对面向类编程的支持，以及函数为这里带来的的一些惯用法。
+现在我们可以自由地创建栈了，并且隐藏了它们的内部数据元素。我们拥有了方法和封装，并且通过 JavaScript 的基本函数和对象构建了它们。再往后看，我们将查看 JavaScript 对面向类编程的支持，以及函数为这里带来的的一些惯用法。
 
 > ### 封装是“面向对象”的吗？
+>
 > 我们构建了具有隐藏内部状态和“方法”的东西，而完全不需要特殊的定义或私有关键字。请注意，我们没有包含各种支持继承、混入（mixins）以及其他用于在互联网上讨论“唯一真对象风格”本质的复杂机制。
-
-那么，经验丰富的程序员反复重复的一个关键教训——尽管这往往被置若耳闻——那就是组合优于继承*。所以也许我们并没有遗漏某些东西。
-
+>
+> 那么，经验丰富的程序员反复重复的一个关键教训——尽管这往往被置若耳闻——那就是组合优于继承。所以也许我们并没有遗漏某些东西。
 
 ## 组合与扩展
 
-一种非常基础的实践是由较小的组件构建组件。将一个组件拆分为更小组件的选择被称为分解（factoring），源于数论中的操作 37。
+一种非常基础的实践是由较小的组件构建组件。将一个组件拆分为更小组件的选择被称为分解（factoring），源于数论中的操作。
 
 在 JavaScript 中构建较小组件的最简单、容易的方法是显而易见的：每个组件都是一个值，这些组件可以组合成一个封装在闭包中的单个对象。
 
@@ -801,50 +743,45 @@ var ModelMaker = function (initialAttributes) {
         redoStack = StackMaker()
       }
       for (key in attrsToSet || {}) {
-```
-
-> <sup>37</sup>并且当你取一个已经分解的组件并重新排列结构，使其分解为一组不同的子组件集合而又不改变其行为时，你正在进行重构。
-
-JavaScript 的对象
-
-```javascript
-attributes[key] = attrsToSet[key]
+        attributes[key] = attrsToSet[key]
+      }
+      return obj
+    },
+    undo: function () {
+      if (!undoStack.isEmpty()) {
+        redoStack.push(shallowCopy(attributes))
+        attributes = undoStack.pop()
+      }
+      return obj
+    },
+    redo: function () {
+      if (!redoStack.isEmpty()) {
+        undoStack.push(shallowCopy(attributes))
+        attributes = redoStack.pop()
+      }
+      return obj
+    },
+    get: function (key) {
+      return attributes[key]
+    },
+    has: function (key) {
+      return attributes.hasOwnProperty(key)
+    },
+    attributes: function () {
+      return shallowCopy(attributes)
+    }
+  };
+  return obj
 }
-return obj
-,undo: function () {
-  if (!undoStack.isEmpty()) {
-    redoStack.push(shallowCopy(attributes))
-    attributes = undoStack.pop()
-  }
-  return obj
-},
-redo: function () {
-  if (!redoStack.isEmpty()) {
-    undoStack.push(shallowCopy(attributes))
-    attributes = redoStack.pop()
-  }
-  return obj
-},
-get: function (key) {
-  return attributes(key)
-},
-has: function (key) {
-  return attributes.hasOwnProperty(key)
-},
-attributes: function () {
-  shallowCopy(attributes)
-};
-return obj
 ```
 
-用于封装的技术与组合配合得很好。在这种情况下，我们有一个隐藏了其属性以及实现的“模型”，该模型由一个撤销栈和一个重做栈组成。
+> 并且当你取一个已经分解的组件并重新排列结构，使其分解为一组不同的子组件集合而又不改变其行为时，你正在进行重构。
 
 ### 扩展
 
 许多人认为基础的另一种实践是扩展实现。这意味着他们希望通过在现有数据结构上添加新的操作和语义来定义新的数据结构。
 
-考虑一个队列³⁵：
-
+考虑一个队列：
 
 ### JavaScript 的对象
 
@@ -894,8 +831,8 @@ var DequeMaker = function () {
     },
     pushHead: function (value) {
       var i;
-      if (deque.head === Ø) {
-        for (i = deque.tail; i <= deque.head; i++) deque.array[i + INCREMENT] = deque.array[i]
+      if (deque.head === 0) {
+        for (i = deque.tail; i >= deque.head; i--) deque.array[i + INCREMENT] = deque.array[i]
         deque.tail += INCREMENT
       }
       deque.head--;
@@ -937,10 +874,6 @@ var QueueMaker = function () {
 
 等一下。我们知道数组值是引用。所以它可能复制了原始数组的引用。让我们也对数组进行拷贝：
 
-
-
-
-
 ### JavaScript 的对象
 
 ```javascript
@@ -959,7 +892,7 @@ queue.pullHead()
 
 如果我们正确地复制了一切，那么当我们从拷贝中取出头部时，应该得到完全相同的结果：
 
-```
+```javascript
 copyOfQueue.pullHead()
 // 'JavaScript'
 ```
@@ -980,28 +913,28 @@ var AmnesicQueueMaker = function () {
       return self.array[self.tail += 1] = value
     },
     pullHead: function (self) {
-    var value;
-
-    if (myself.tail >= myself.head) {
-        value = myself.array[myself.head];
-        myself.array[myself.head] = void 0;
-        myself.head += 1;
+      var value;
+      if (self.tail >= self.head) {
+        value = self.array[self.head];
+        self.array[self.head] = void 0;
+        self.head += 1;
         return value
+      }
+    },
+    isEmpty: function (self) {
+      return self.tail < self.head
     }
-
-    isEmpty = function (myself) {
-        return myself.tail < myself.head
-    }
+  }
 }
 ```
 
 ```javascript
-queueWithAmnesia = AmnesicQueueMaker;
+queueWithAmnesia = AmnesicQueueMaker();
 queueWithAmnesia.pushTail(queueWithAmnesia, 'Hello');
 queueWithAmnesia.pushTail(queueWithAmnesia, 'JavaScript');
 ```
 
-`AmnesicQueueMaker` 创建了具有健忆症的队列：它们不知道自己是谁，所以每当我们调用它们的任何一个函数时，都必须告诉它们它们是谁。我们可以通过这个思想实验来推导出拷贝队列的影响：我们不需要担心环境，因为每个函数都操作于你传入的队列。
+`AmnesicQueueMaker` 创建了具有健忘症的队列：它们不知道自己是谁，所以每当我们调用它们的任何一个函数时，都必须告诉它们它们是谁。我们可以通过这个思想实验来推导出拷贝队列的影响：我们不需要担心环境，因为每个函数都操作于你传入的队列。
 
 当然，致命的缺点是，必须确保在每次调用函数时都始终传入了正确的队列。该怎么办呢？
 
@@ -1010,24 +943,23 @@ queueWithAmnesia.pushTail(queueWithAmnesia, 'JavaScript');
 每当我们必须反复重复地做某件事一遍又一遍时，工业化人类就会尝试建造一台机器来完成它。JavaScript 就是这样一台机器：
 
 ```javascript
-BanksQueueMaker = function () {
+var BanksQueueMaker = function () {
     return {
         array: [],
         head: 0,
         tail: -1,
         pushTail: function (value) {
             return this.array[this.tail += 1] = value
-        }
-    };
-    pullHead: function () {
-        var value;
-
-        if (this.tail >= this.head) {
-            value = this.array[this.head];
-            this.array[this.head] = void 0;
-            this.head += 1;
-            return value
-        }
+        },
+        pullHead: function () {
+            var value;
+            if (this.tail >= this.head) {
+                value = this.array[this.head];
+                this.array[this.head] = void 0;
+                this.head += 1;
+                return value
+            }
+        },
         isEmpty: function () {
           return this.tail < this.head
         }
@@ -1041,7 +973,7 @@ banksQueue.pushTail('Hello');
 banksQueue.pushTail('JavaScript');
 ```
 
-每当你调用一个作为对象的成员函数时，JavaScript 都会将对象绑定到函数环境中的名称上，就像它是一个参数一样。⁴¹ 现在我们可以轻松地创建拷贝了：
+每当你调用一个作为对象的成员函数时，JavaScript 都会将对象绑定到函数环境中的名称上，就像它是一个参数一样。现在我们可以轻松地创建拷贝了：
 
 ```javascript
 copyOfQueue = extend({}, banksQueue);
@@ -1061,13 +993,11 @@ copyOfQueue.pullHead()
 // 'Hello'
 ```
 
-变戏法！我们有了拷贝数组的方法。通过消除闭包并利用这一点，我们的函数在对象之间具有更强的移植性，代码也变得更加简单。
+变戏法！我们有了拷贝数组的方法。通过消除闭包并利用 `this`，我们的函数在对象之间具有更强的移植性，代码也变得更加简单。
 
 这里涉及的内容比我们在这里讨论的更多。我们稍后会在“调用函数时，什么上下文会生效？”中更详细地探讨这些。
 
-> 将函数与其创建它们的环境紧密耦合限制了它们的灵活性。使用这种方法可以缓解耦合。拷贝对象仅仅是需要这种灵活性的例子之一。
-
-⁴¹JavaScript 也会用此做其他事情，但这些目前我们只关心这部分。
+> 将函数与其创建它们的环境紧密耦合限制了它们的灵活性。使用 `this` 方法可以缓解耦合。拷贝对象仅仅是需要这种灵活性的例子之一。
 
 ### 调用函数时，什么上下文会生效？
 
@@ -1090,7 +1020,7 @@ someObject.returnMyThis() === someObject
 
 JavaScript 程序员谈论函数在调用时具有“上下文”。`this` 被绑定到上下文。要理解的关键点是，被调用函数的上下文是由调用函数的方式设置的，而不是函数本身。
 
-这是一个重要的区别。考虑闭包：正如我们在“闭包与作用域”中讨论过的样，函数的自由变量是通过在它们的闭包函数环境中查找来解析的。你总是可以通过检查 JavaScript 程序的源代码确定定义自由变量的函数，这就是为什么这种方案被称为词作用域（Lexical Scope）。
+这是一个重要的区别。考虑闭包：正如我们在“闭包与作用域”中讨论过的样，函数的自由变量是通过在它们的闭包函数环境中查找来解析的。你总是可以通过检查 JavaScript 程序的源代码确定定义自由变量的函数，这就是为什么这种方案被称为词法作用域（Lexical Scope）。
 
 函数的上下文无法通过检查 JavaScript 程序的源代码来确定。让我们看看例子：
 
@@ -1107,7 +1037,7 @@ someObject.someFunction() === someObject
 
 函数 `Object.name` 的上下文是什么？不要说 `someObject`！看这里：
 
-> *遗憾的是，语言将上下文绑定到名称 `this` 而不是名称 `context`！⁴https://en.wikipedia.org/wiki/Scope_(computer_science)#Lexical_scoping
+> 遗憾的是，语言将上下文绑定到名称 `this` 而不是名称 `context`！
 
 ## JavaScript 的函数
 
@@ -1125,11 +1055,11 @@ someFunction() === someObject
 // false
 ```
 
-变得变得更奇怪了：
+变得更奇怪了：
 
 ```javascript
 var anotherObject = {
-someFunction: someObject.someFunction
+  someFunction: someObject.someFunction
 }
 ```
 
@@ -1151,12 +1081,12 @@ anotherObject.someFunction() === someObject
 所以这意味着：完全相同的函数可以通过两种方式进行调用，而你得到两个不同的上下文。如果你使用 `someObject.someFunction()` 语法调用它，上下文被设置为接收者。如果你使用任何其他解析函数值的表达式（例如 `someFunction()`），你将得到别的东西。让我们来调查一下：
 
 ```javascript
-(someObject.someFunction()) == someObject
+(someObject.someFunction()) === someObject
 // true
 ```
 
 ```javascript
-someObject['someFunction'] === someObject
+someObject['someFunction']() === someObject
 // true
 ```
 
@@ -1185,7 +1115,7 @@ var baz;
 ```javascript
 var arr = [ someObject.someFunction ];
 
-arr[]() == arr
+arr[0]() === arr
 //=> true
 ```
 
@@ -1209,16 +1139,13 @@ returnThis() === this
 ```javascript
 aThirdObject.someFunction() === this
 //=> true
+```
 
 ### 设置你自己的上下文
 
 实际上还有两种设置函数上下文的方法。再次，两者都由调用者决定。在“到处都是对象？”的最后，我们将看到 JavaScript 中的一切行为都像对象一样，包括函数。我们将学到函数本身也拥有方法，其中之一就是 `call`。
 
 这里是 `call` 的实际用法：
-
-
-
-
 
 ### JavaScript 的对象
 
@@ -1237,14 +1164,14 @@ anotherObject.someFunction.call(someObject) === someObject
 //=> true
 ```
 
-当你使用 `call` 调用函数时，你通过将其作为第一个参数传递来设置上下文。其他参数则以正常方式传递给函数。这种花花式的操作可能会导致很多滑稽的结果：
+当你使用 `call` 调用函数时，你通过将其作为第一个参数传递来设置上下文。其他参数则以正常方式传递给函数。这种花式的操作可能会导致很多滑稽的结果：
 
 ```javascript
 var a = [1,2,3],
     b = [4,5,6];
 ```
 
-```
+```javascript
 a.concat([2,1])
 //=> [1,2,3,2,1]
 ```
@@ -1268,14 +1195,14 @@ var third = function () {
 }
 ```
 
-```
+```javascript
 third(77, 76, 75, 74, 73)
 //=> 75
 ```
 
 先等一下。JavaScript 还提供了第四种方法来为函数设置上下文。`apply` 是每个函数都实现的一个方法，它接收上下文作为第一个参数，并接收一个数组或类数组对象的参数列表作为第二个参数。这听起来很绕口，让我们来看一个例子：
 
-> *坦率地说，这已经足够令人沮丧了*
+> 坦率地说，这已经足够令人沮丧了
 
 ```javascript
 third.call(this, 1,2,3,4,5)
@@ -1294,7 +1221,7 @@ var a = [1,2,3],
     accrete = a.concat;
 ```
 
-```
+```javascript
 accrete([4,5])
 //=> 一堆乱码！
 ```
@@ -1315,11 +1242,11 @@ accrete([4,5])
 //=> [1, 2, 3, 4, 5 ]
 ```
 
-我们的 `contextualize` 返回一个带有固定上下文调用函数的新函数。它可以用于修复上面上面的一些意外结果。考虑一下：
+我们的 `contextualize` 返回一个带有固定上下文调用函数的新函数。它可以用于修复上面的一些意外结果。考虑一下：
 
 ```javascript
 var aFourthObject = {
-  returnThis: function () { return this; };
+  returnThis: function () { return this; }
 };
 ```
 
@@ -1367,7 +1294,7 @@ inventory.bananas = 54;
 inventory.pears = 24;
 ```
 
-将一个对象的属性浅拷贝⁴⁵到另一个对象中也很常见：
+将一个对象的属性浅拷贝到另一个对象中也很常见：
 
 ```javascript
 for (var fruit in shipment) {
@@ -1375,14 +1302,13 @@ for (var fruit in shipment) {
 }
 ```
 
-这两种需求都可以通过这个 `extend` 配方get满足：
+这两种需求都可以通过这个 `extend` 配方满足：
 
 ```javascript
 var extend = variadic( function (consumer, providers) {
   var key,
   i,
   provider;
-
   for (i = 0; i < providers.length; ++i) {
     provider = providers[i];
     for (key in provider) {
@@ -1397,12 +1323,10 @@ var extend = variadic( function (consumer, providers) {
 
 你可以通过扩展一个空对象来拷贝对象：
 
-> ⁴⁵https://en.wikipedia.org/wiki/Object_copy#Shallow_copy
-
 ### JavaScript 的对象
 
 ```javascript
-extend({
+extend({}, {
   apples: 12,
   oranges: 12
 }, { apples: 12, oranges: 12 });
@@ -1473,15 +1397,11 @@ var Queue = function () {
 }
 ```
 
-
-
-
 ### 对象配方
 
 ```javascript
 if (Value.prototype.isPrototypeOf(this)) {
   var immutableObject = this;
-
   Object.keys(template).forEach(function (key) {
     Object.defineProperty(immutableObject, key, {
       enumerable: true,
@@ -1501,7 +1421,6 @@ Value.prototype = new Struct({});
 ```javascript
 function copyAmount(to, from) {
   "use strict"
-
   to.dollars = from.dollars;
   to.cents = from.cents;
   return to;
@@ -1514,7 +1433,7 @@ var rentValue = Value({dollars: 1000, cents: 0});
 
 ```javascript
 copyAmount(rentValue, rentAmount);
-//= TypeError: Cannot assign to read only property 'dollars' of '#<Struct>
+//= TypeError: Cannot assign to read only property 'dollars' of '#<Struct>'
 ```
 
 Structs 和 Values 是防止意外错误的方便方法，并能显式地表明一个对象旨在作为结构体（struct）而非字典（dictionary）使用。
@@ -1527,9 +1446,9 @@ Structs 和 Values 是防止意外错误的方便方法，并能显式地表明�
 
 *JavaScript 还提供了一个单一方法，可以同时关闭对象的修改、扩展和配置功能：`Object.freeze({...});`*
 
-### 对象配方 53
+### 对象配方
 
-我们上面的 `Value` 类型消除了修改或扩展值的能力。这确实消除了犯下错的可能。但它是否让其他事情变得可能呢？
+我们上面的 `Value` 类型消除了修改或扩展值的能力。这确实消除了犯错的可能。但它是否让其他事情变得可能呢？
 
 是的。
 
@@ -1538,17 +1457,15 @@ Structs 和 Values 是防止意外错误的方便方法，并能显式地表明�
 ```javascript
 var juneRent = {dollars: 420, cents: 0};
 julyRent = {dollars: 420, cents: 0};
-
 juneRent === julyRent;
 //== false
 ```
 
-6 月和 7 月的租金并不 ===，因为 `===` 对非原始值执行的是对象标识性检查。juneRent 和 julyRent 在结构上是等价的，但它们不是同一个对象的引用，因此它们不相等。没问题，让我们快速写一个等价函数：
+6 月和 7 月的租金并不 `===`，因为 `===` 对非原始值执行的是对象标识性检查。juneRent 和 julyRent 在结构上是等价的，但它们不是同一个对象的引用，因此它们不相等。没问题，让我们快速写一个等价函数：
 
 ```javascript
 function eqv (a, b) {
   var akeys, bkeys;
-
   if (a === b) {
     return true;
   }
@@ -1564,7 +1481,6 @@ function eqv (a, b) {
   else {
     akeys = Object.keys(a);
     bkeys = Object.keys(b);
-
     if (akeys.length !== bkeys.length) {
       return false;
     }
@@ -1577,8 +1493,6 @@ function eqv (a, b) {
 
 ### 对象配方
 
-}
-
 ```javascript
 eqv(juneRent, juneRent);
 //=> true
@@ -1589,26 +1503,23 @@ eqv(juneRent, juneRent);
 ```javascript
 eqv(juneRent, juneRent);
 //=> true
-```
-
 juneRent.cents = 6;
+```
 
 我们的等价性测试会被破坏，它只测试了某一时刻为真的情况。因此，作为 `Values` 的对象行为并不像数字、布尔值或字符串。如果 `3 === 3`，它将永远成立，因为数字、布尔值和字符串是不可变的。我们可以通过函数和运算符创建新值，但旧值不会改变。
 
-如果我们想让对象等价具有任何意义，我们需要它只适用于不可变对象。这听起来很熟悉，这也是为什么我们把不可变的 `Struct` 称为 `Value`。让我们再来来一个：
+如果我们想让对象等价具有任何意义，我们需要它只适用于不可变对象。这听起来很熟悉，这也是为什么我们把不可变的 `Struct` 称为 `Value`。让我们再来一个：
 
 ```javascript
-function () {
+(function () {
   function eqv (a, b) {
     var akeys, bkeys;
-
     if (a === b) {
       return true;
     }
     else if (a instanceof Value && b instanceof Value){
       akeys = Object.keys(a);
       bkeys = Object.keys(b);
-
       if (akeys.length !== bkeys.length) {
         return false;
       }
@@ -1616,21 +1527,15 @@ function () {
         return eqv(a[key], b[key]);
       });
     }
+    else return false;
   }
-  else return false;
-```
 
-对象配方 55
-
-```javascript
-}
-
-Value.eqv = eqv;
-Value.prototype.eqv = function (that) {
-  return eqv(this, that);
-};
+  Value.eqv = eqv;
+  Value.prototype.eqv = function (that) {
+    return eqv(this, that);
+  };
   return Value;
-}();
+}());
 ```
 
 ```javascript
@@ -1644,7 +1549,7 @@ julyRentValue = new Value({dollars: 420, cents: 0});
 ```
 
 ```javascript
-Value.eqv(juneRentValue, julyRent);
+Value.eqv(juneRentValue, julyRentValue);
 //=> true
 ```
 
@@ -1660,18 +1565,15 @@ Value.eqv = eqv;
 Value.prototype.eqv = function (that) {
   return eqv(this, that);
 };
-  return Value;
+return Value;
 }();
 ```
 
 （注：由于原始文本存在大量重复和 OCR 错误，此处翻译已根据提供的逻辑流进行了整合和去重处理。）
 
+### 对象配方
 
-
-
-### 对象配谱
-
-```
+```javascript
 var noisyAmount = (function () {
   var _dollars = 0;
   var _cents = 0;
@@ -1702,7 +1604,9 @@ var noisyAmount = (function () {
   });
   return amount;
 })();
+```
 
+```javascript
 noisyAmount.dollars = 500
 // Error: You can't change that!
 ```
@@ -1728,7 +1632,7 @@ dictionary.encapsulate
 //> 'to place in or as if in a capsule'
 ```
 
-你也可以通过使用 [] 符号法和表达式的值间接访问属性：
+你也可以通过使用 `[]` 符号法和表达式的值间接访问属性：
 
 ```javascript
 dictionary[abstraction]
@@ -1746,16 +1650,15 @@ dictionary['abstraction']
 
 那么 JavaScript 提供了什么样的私有性呢？为了访问属性，你必须知道它的名称。如果你不知道对象的属性名称，可以通过几种方式获取这些名称。这里是一种：
 
-### 对象配谱
+### 对象配方
 
 ```javascript
 Object.keys(dictionary)
-//=>
-[
-  'abstraction',
-  'encapsulate',
-  'object'
-]
+//=> [
+//  'abstraction',
+//  'encapsulate',
+//  'object'
+// ]
 ```
 
 这被称为枚举对象的属性。它们不仅在“公共”的意义上（即你的代码知道可以访问的属性名称），而且从根本上你可以枚举它们。你可以通过可枚举属性来实现这一点，例如：
@@ -1766,11 +1669,9 @@ var descriptor = map(Object.keys(dictionary), function (key) {
 }).join('; ');
 ```
 
-descriptor
-
 ```javascript
-//=>
-'abstraction': "an abstract or general idea or term"; encapsulate: "to place or as if in a capsule"; object: "anything that is visible and tangible and relatively stable in form",
+descriptor
+//=> 'abstraction: "an abstract or general idea or term"; encapsulate: "to place or as if in a capsule"; object: "anything that is visible and tangible and relatively stable in form"'
 ```
 
 所以，我们的三个属性是可访问的也是可枚举的。是否存在某些属性是可以访问但不可枚举的？当然可以。你记得我们可以使用 `Object.defineProperty` 定义属性。其中一个选项恰如其名地被称为 `enumerable`（可枚举的）。
@@ -1793,13 +1694,15 @@ dictionary.length
 
 注意 `length` 显然没有包含在 `Object.keys` 中，否则我们的小 getter 将返回 4 而不是 3。它也不会影响我们的 descriptor 表达式，让我们再次评估它：
 
-### 对象配谱
+### 对象配方
 
 ```javascript
 map(Object.keys(dictionary), function (key) {
   return key + ': ' + dictionary[key] + ';';
-}).join(', '); //=
+}).join(', ');
 ```
+
+
 
 > > 'abstraction: 'an abstract or general idea or term'; encapsulate: 'to place or as if in a capsule'; object: 'anything that is visible or tangible and is relatively stable in form'
 
@@ -1888,13 +1791,12 @@ var noisyAmount = (function () {
 })();
 ```
 
-这是在 JavaScript 中实现私有性的常用方法。然而，还有其他方法可以相同的结果，例如使用 `Object.defineProperty`。
+这是在 JavaScript 中实现私有性的常用方法。然而，还有其他方法可以达到相同的结果，例如使用 `Object.defineProperty`。
 
 ```javascript
 var noisyAmount = {};
 var _dollars = 0;
 var _cents = 0;
-
 Object.defineProperties(noisyAmount, {
   dollars: {
     enumerable: true,
@@ -1925,13 +1827,9 @@ Object.defineProperties(noisyAmount, {
 
 在这个版本中，变量 `_dollars` 和 `_cents` 仍然是作用域私有的，但我们使用 `Object.defineProperties` 在 `noisyAmount` 对象上定义属性。这允许我们控制属性的行为，例如它们的可枚举性、可配置性和可写性。
 
-
-
-
-
 ### 对象配方
 
-Object.keys(rentAmount)
+`Object.keys(rentAmount)`
 
 ```javascript
 //=
@@ -1997,7 +1895,7 @@ raisedAmount.dollars()
 //=> 600
 ```
 
-这实现了什么？嗯，它通过使属性变为不可枚举（enumerable false）来“隐藏”原始属性，然后通过可以在多个对象间共享的函数提供对其他对象的访问（如果有）。
+这实现了什么？嗯，它通过使属性变为不可枚举（`enumerable: false`）来“隐藏”原始属性，然后通过可以在多个对象间共享的函数提供对其他对象的访问（如果有）。
 
 正如我们之前看到的，这允许我们选择是否暴露 setter（设置器）以及 getter（访问器），它允许我们对输入进行验证，甚至可以使用不可枚举属性由对象的函数来存储状态。
 
@@ -2009,7 +1907,7 @@ JavaScript 没有一种强制限制访问对象属性的方法：任何知道属
 
 可以使用闭包（closures）来伪造私有数据，但是以内存为代价的。
 
-javascript 允许属性是非枚举的。通过命名约定和/或 setter 和 getter，可以在完全私有的实例变量和完全开放的访问之间达成一个合理的折中。
+JavaScript 允许属性是非枚举的。通过命名约定和/或 setter 和 getter，可以在完全私有的实例变量和完全开放的访问之间达成一个合理的折中。
 
 ### 代理
 
@@ -2108,7 +2006,7 @@ stack.push('auto');
 
 在本章中，我们将查看 JavaScript 如何处理实例和原型。这是 JavaScript 对象模型的核心。JavaScript 的继承不是基于类，而是基于对象通过原型链（prototype chains）连接在一起。
 
-JavaScript 中的每个对象都有一个原型，它可以从原型中继承属性。当你访问对象上的某个属性时，JavaScript 首先查找对象本身。如果没找到，它会查找原型，以此此类推沿着链向上查找，直到找到该属性或到达 `null`。
+JavaScript 中的每个对象都有一个原型，它可以从原型中继承属性。当你访问对象上的某个属性时，JavaScript 首先查找对象本身。如果没找到，它会查找原型，以此类推沿着链向上查找，直到找到该属性或到达 `null`。
 
 让我们来看一个简单的例子：
 
@@ -2117,13 +2015,11 @@ function Animal() {}
 Animal.prototype.eat = function() {
   console.log('Eating...');
 };
-
 function Dog() {}
 Dog.prototype = Object.create(Animal.prototype);
 Dog.prototype.bark = function() {
   console.log('Barking...');
 };
-
 var myDog = new Dog();
 myDog.bark(); // Barking...
 myDog.eat(); // Eating...
@@ -2132,10 +2028,6 @@ myDog.eat(); // Eating...
 在这个示例中，`Dog.prototype` 继承自 `Animal.prototype`。当调用 `myDog.eat()` 时，JavaScript 在 `myDog` 上查找 `eat`，没有找到，在 `Dog.prototype` 上查找，没有找到，然后在 `Animal.prototype` 上查找，在那里找到了。
 
 这种机制是强大的，因为它允许对象共享方法和属性，而无需在每个实例中重复它们。这节省了内存，并允许对行为进行灵活的动态更新。
-
-
-
-
 
 ### 实例与原型
 
@@ -2195,15 +2087,14 @@ var ourPrototype = { bodyOfWater: 'ocean' };
 obj = Object.create(ourPrototype);
 ```
 
-ourPrototype.isPrototypeOf(obj)
+`ourPrototype.isPrototypeOf(obj)`
 // true
-```
 
 我们可以在不写构造函数或使用 `new` 的情况下创建一个带有原型的对象。
 
 ### 重新回顾队列的概念
 
-让我们重写 `Queue` 以使用 ` `.prototype`，并结合“组合与扩展”中的 `this` 和我们的 `extendsObject` 辅助函数：
+让我们重写 `Queue` 以使用 `Queue.prototype`，并结合“组合与扩展”中的 `this` 和我们的 `extendsObject` 辅助函数：
 
 ```javascript
 var Queue = function () {
@@ -2220,20 +2111,18 @@ extend(Queue.prototype, {
   pushTail: function (value) {
     return this.array[this.tail += 1] = value
   },
-```
-
-```javascript
-pullHead: function () {
-  if (!this.isEmpty()) {
-    value = this.array[this.head];
-    this.array[this.head] = void 0;
-    this.head += 1;
-    return value;
+  pullHead: function () {
+    if (!this.isEmpty()) {
+      value = this.array[this.head];
+      this.array[this.head] = void 0;
+      this.head += 1;
+      return value;
+    }
   },
   isEmpty: function () {
     return this.tail < this.head
   }
-}
+});
 ```
 
 你记得当我们第一次看这个时，只涵盖了函数属于某个对象并被调用的情况。现在我们看到了另一种情况：当函数被 `new` 操作符调用时，`this` 被设置为正在创建的新对象。因此，我们的 `Queue` 代码初始化了队列。
@@ -2251,13 +2140,11 @@ pullHead: function () {
 ```javascript
 3.14159265.toPrecision(5)
 // '3.1415'
-
 'FORTRAN, SNOBOL, LISP, BASIC'.split(', ')
 // [ 'FORTRAN',
 //   'SNOBOL',
 //   'LISP',
 //   'BASIC' ]
-
 ['FORTRAN',
 'SNOBOL',
 'LISP',
@@ -2332,7 +2219,7 @@ Boolean(false) ? 'truth' : 'falsy'
 
 我们对“真值”和“假值”的概念是：所有实例都是真的，即使字符串、数字和布尔实例对应 false。
 
-有一种治愈“JavaScript 伪装症”的可靠方法。正如 `new PrimitiveType(...)` 创建一个原始类型的伪装者一样，`new PrimitiveType(...)` 从原始类型创建一个原始的、规范化的类型。
+有一种治愈“JavaScript 伪装症”的可靠方法。正如 `new PrimitiveType(...)` 创建一个原始类型的伪装者一样，`PrimitiveType(...)` 从原始类型创建一个原始的、规范化的类型。
 
 例如：
 
@@ -2369,7 +2256,6 @@ var contextualize = function (fn, context) {
   },
 na = [1,2,3],
 accrete = contextualize(a.concat, a);
-
 accrete([4,5])
 //=> [1, 2, 3, 4, 5]
 ```
@@ -2403,10 +2289,6 @@ Model_.prototype.on = function (eventName, callback) { ... callback() };
 
 > ⁵http://backbonejs.org
 
-
-
-
-
 ### 绑定方法 (binding methods)
 
 在列举方法之前，让我们先描述一下我们想要做的。我们想要获取一个方法调用并将其视为函数。在 JavaScript 中，方法就是函数，但正如我们在观察上下文（contexts）时学到的，方法调用既涉及调用函数，还将函数调用的上下文设置为方法调用的接收者（receiver）。
@@ -2438,7 +2320,6 @@ someDomField.on('update', boundSetter);
 ```javascript
 someObject.setValue = (function () {
   var unboundMethod = someObject.setValue;
-
   return function (value) {
     return unboundMethod.call(someObject, value);
   }
@@ -2449,7 +2330,7 @@ someObject.setValue = (function () {
 
 ### 实例与原型 (Instances and Prototypes)
 
-someDomField.on('update', someObject.setValue);
+`someDomField.on('update', someObject.setValue);`
 
 这是一个非常流行的模式，因此许多框架都提供了辅助函数来让这变得简单。例如，Underscore^5 提供了 `_bind` 来返回函数的绑定副本，并提供了 `_bindAll` 来原地绑定方法：
 
@@ -2523,7 +2404,6 @@ QueueMaker = function () {
     },
     pullHead: function () {
       var value;
-
       if (!this.isEmpty()) {
         value = this.array[this.head];
         this.array[this.head] = 0;
@@ -2565,10 +2445,6 @@ var stack = function () {
 
 （注：由于 OCR 文本在中间非常混乱，此处已根据提供的片段清理了逻辑。我将提供这些片段所描述的逻辑版本。）
 
-
-
-
-
 ### 实例与原型
 
 ```javascript
@@ -2595,9 +2471,6 @@ extend(Deque.prototype, {
       return value;
     }
   },
-```
-
-```javascript
   pushHead: function (value) {
     var i;
     if (this.head === 0) {
@@ -2733,10 +2606,6 @@ var Dequeue = child(Queue, function () {
 
 作为一种抽象，对象封装了其内部状态并响应消息。在描述对象时，我们称对象是封装了其内部状态。理想情况是对象永远不会直接访问或操作彼此的状态。相反，对象仅通过方法进行相互交互。
 
-
-
-
-
 ### 法律的条文与精神
 
 对象之间只能通过方法进行相互作用的这一“法律”通常被接受为一种理想状态，尽管 JavaScript 和 Java 等语言并没有强制执行这一规定。尽管如此，关于对象及其方法的设计，目前（大致）有两种哲学：
@@ -2783,9 +2652,9 @@ value: function () {
 },
 setLastName: {
   enumerable: false,
-writable: true,
-value: function (str) {
-  return _lastName = str;
+  writable: true,
+  value: function (str) {
+    return _lastName = str;
   }
 });
 ```
@@ -2801,7 +2670,6 @@ value: function (str) {
 因此，字面主义的传统是将 getter 和 setter 定义为方法，即使立即不需要任何额外功能。通过上面的代码，可以很容易地引入验证和可观测性：59
 
 > 59 https://en.wikipedia.org/wiki/Observer_pattern
-
 > 59 稍后我们将看到如何使用方法组合器更优雅地实现这一点。
 
 ### 方法
@@ -2893,26 +2761,15 @@ lastName {
 - 3. 我们如何处理像 Gabriel José de la Concordia García Márquez⁷ 这样正式的西班牙语名字？
 
 > 6 对《量子力学》作者 Chongo 崇高的敬意。
-
 > 7 https://en.wikipedia.org/wiki/Gabriel_García_Márquez
 
 - 4. 我们如何处理原姓（maiden names）？
 
-如果 `firstName` 是一个由其他实体直接更新的属性，我们无法插入任何代码来处理更新。同样的论点也适用于验证姓名。虽然验证姓名在现实世界中是一团乱麻，但我们可能有简单的想法，例如：名至少包含一个字符或为 null，但永远不会为空字符串。如果其他实体直接更新属性，我们无法在对象内部强制执行这一规则。
-
-在昔的辉煌时代，程序员们需要遍历整个代码库，将 `person.firstName = 'Bilbo'` 改为 `person('Bilbo')`（甚至更糟，将所有的可观察代码和验证代码添加到其他实体中）。
-
-因此，字面主义的传统是将 getter 和 setter 定义为方法，即使立即不需要任何额外功能。通过上面的代码，可以很容易地引入验证和可观测性：59
-
-> 59 https://en.wikipedia.org/wiki/Observer_pattern
-
-> 59 稍后我们将看到如何使用方法组合器更优雅地实现这一点。
-
-- 62 https://en.wikipedia.org/wiki/Married_and_maiden_names
+> 62 https://en.wikipedia.org/wiki/Married_and_maiden_names
 
 110
 
-##复合方法
+## 复合方法
 
 编程的主要活动之一是对程序或算法进行重构（factor），将其拆分成可以重用或重新组合的部分。
 
@@ -2946,10 +2803,6 @@ var person = Object.create(null, {
 
 ⁶³ https://en.wikipedia.org/wiki/Single_responsibility_principle
 ⁴ Robert Martin 判断一个方法是否具有单一职责的准则是询问：以及它为什么会改变。如果只有一个导致你改变该方法的原因，它就具有单一职责。如果有多个可能导致它改变的原因，它应该被分解成每个具有单一职责的独立实体。
-
-
-
-
 
 ### 方法
 
@@ -3070,7 +2923,6 @@ var K = function (x) {
     return x;
   }
 }
-
 Object.defineProperty(K, 'longName', {
   enumerable: true,
   writable: false,
@@ -3078,13 +2930,11 @@ Object.defineProperty(K, 'longName', {
 });
 ```
 
-K.longName
+`K.longName`
 //=> 'The K Combinator'
 
-Object.keys(K)
+`Object.keys(K)`
 //=> ['longName']
-
-```
 
 我们可以利用函数作为其自身辅助函数的容器。这里有几种简单的模式。当然，你也可以手动写这一切：
 
@@ -3095,19 +2945,15 @@ function doSomethingComplicated () {
   doSomethingComplicated.breakdown.call(this);
   doSomethingComplicated.cleanup.call(this);
 }
-
 doSomethingComplicated.setUp = function () {
   // ...
 }
-
 doSomethingComplicated.doTheWork = function () {
   // ...
 }
-
 doSomethingComplicated.breakdown = function () {
   // ...
 }
-
 doSomethingComplicated.cleanup = function () {
   // ...
 }
@@ -3116,160 +2962,6 @@ doSomethingComplicated.cleanup = function () {
 ### 方法
 
 108
-
-```javascript
-var person = Object.create(null, {
-  // ...
-  setFirstName: {
-    enumerable: false,
-    writable: true,
-    value: function (str) {
-      if (this.isValidName(str)) {
-        return this._firstName = str;
-      }
-    }
-  },
-  setLastName: {
-    enumerable: false,
-    writable: true,
-    value: function (str) {
-      if (this.isValidName(str)) {
-        return this._lastName = str;
-      }
-    }
-  }
-});
-```
-
-现在 `setFirstName` 和 `setName` 方法都调用了辅助方法 `isValidName`。这种做法通常动机被称为 DRY65 或“不要重复自己”。DRY 原则述为：
-
-“系统中的每一条知识都必须有一个唯一的、无歧义的、权威表示。”
-
-在这种情况下，假设有一个观点，即“人名必须是非空字符串”，而将此实现的逻辑放在 `isValidString` 辅助方法中，可以确保该逻辑现在只有一个权威来源，而不是分散在每个名称设置器方法中。
-
-分解一个方法并不总是为了让逻辑实现 DRY。有时，一个方法在逻辑上可以被拆分为层级清晰的步骤。例如：
-
-```javascript
-var person = Object.create(null, {
-  // ...
-  doSomethingComplicated: {
-    enumerable: false,
-    writable: true,
-    value: function () {
-      this.setup();
-      this.doTheWork();
-      this.breakdown();
-      this.cleanup();
-    }
-  },
-  setup: // ...
-  doTheWork: // ...
-  breakdown: // ...
-  cleanup: // ...
-});
-```
-
-这对于方法和普通函数同样适用。然而，对象有一些额外的考虑因素。最明显的是对象本身就是一个命名空间。当你将一个方法分解为辅助方法时，你是在向命名空间中添加项，使得整个对象变得难以理解。哪些方法调用了 `setup`？`breakdown` 是否可以独立于 `cleanup` 调用？一切都被杂在一个对象中。
-
-### 使用闭包清理
-
-JavaScript 为我们提供了减少对象杂乱的工具。第一个是立即执行函数表达式 IIFE⁶。如果我们的四个辅助方法存在仅仅是为了分解 `doSomethingComplicated`，我们可以这样写：
-
-> ⁶https://en.wikipedia.org/wiki/Immediately-invoked_function_expression
-
-```javascript
-var person = Object.create(null, {
-  // ...
-  doSomethingComplicated: {
-    enumerable: false,
-    writable: true,
-    value: (function () {
-      return function () {
-        setUp.call(this);
-        doTheWork.call(this);
-        breakdown.call(this);
-        cleanUp.call(this);
-      };
-      function setUp () {
-        // ...
-      }
-      function doTheWork () {
-        // ...
-      }
-      function breakdown () {
-        // ...
-      }
-      function cleanUp () {
-        // ...
-      }
-    })()
-  }
-});
-```
-
-现在我们的四个辅助方法仅存在于 IIFE 创建的闭包中，因此其他方法无法调用它们。你甚至可以另一个函数创建一个类似名称的 `setUp` 辅助方法，而不会与此冲突。注意，我们没有通过 `this.` 来调用这些函数，因为它们不再是方法了。为了保留本地对象的上下文，我们使用 `.call(this)` 来调用它们。
-
-### 使用方法对象清理
-
-在 JavaScript 中，方法是由函数表示的。而在 JavaScript 中，函数也是对象。函数拥有属性，而这些属性的行为就像我们用 `{}` 或 `Object.create` 创建的对象一样：
-
-### 方法
-
-```javascript
-var K = function (x) {
-  return function (y) {
-    return x;
-  }
-}
-
-Object.defineProperty(K, 'longName', {
-  enumerable: true,
-  writable: false,
-  value: 'The K Combinator'
-});
-```
-
-K.longName
-//=> 'The K Combinator'
-
-Object.keys(K)
-//=> ['longName']
-
-```
-
-我们可以利用函数作为其自身辅助函数的容器。这里有几种简单的模式。当然，你也可以手动写这一切：
-
-```javascript
-function doSomethingComplicated () {
-  doSomethingComplicated.setUp.call(this);
-  doSomethingComplicated.doTheWork.call(this);
-  doSomethingComplicated.breakdown.call(this);
-  doSomethingComplicated.cleanup.call(this);
-}
-
-doSomethingComplicated.setUp = function () {
-  // ...
-}
-
-doSomethingComplicated.doTheWork = function () {
-  // ...
-}
-
-doSomethingComplicated.breakdown = function () {
-  // ...
-}
-
-doSomethingComplicated.cleanup = function () {
-  // ...
-}
-```
-
-
-
-
-### 方法
-
-112
 
 ```javascript
 Object.defineProperties(sequencer, {
@@ -3311,6 +3003,7 @@ sequencer(6)
 这是定的。
 
 这里是一个实现简化形式切面面向编程（Aspect-Oriented Programming）的示例***
+
 考虑一个 `businessObject` 和一个 `businessObjectCollection`。不用管它们是什么，这很重要。我们从这样一个想法开始：`businessObject` 可以是有效的或无效，并且有一个方法用于查询这一点：
 
 > ***[切面面向编程](https://en.wikipedia.org/wiki/Aspect-oriented_programming)
@@ -3507,6 +3200,8 @@ function dispatch(value, cases) {
 
 现在我们可以使用它来实现：
 
+
+
 ```javascript
 var factorial = (n) => dispatch(n, [
   { predicate: n => n <= 0, result: () => 1 },
@@ -3606,12 +3301,7 @@ matchObject(user)
 
 这太强大了！我们从零构建了一个简单的匹配系统，它展示了 JavaScript 中函数编程概念的力量。
 
-
-
-
 ### 方法
-
-120
 
 ```javascript
 return mappable === undefined
@@ -3847,9 +3537,6 @@ peck.setCareer('Director');
 
 这本身并不是完全具有启发性的：当对象之间产生交互时，它们之间会存在依赖关系，你必须管理这些依赖关系。
 
-
-
-
 任何两个混入到同一个对象中的 mixins 都具有相似的紧密耦合性，因为它们都对对象的所有私有属性具有完全的访问权限。
 
 混入 引用对象私有属性的技术术语是“开放递归”（open recursion）⁷。它是强大且灵活的，这与对象互相引用内部属性的强大与灵活是一样的。
@@ -3860,7 +3547,7 @@ peck.setCareer('Director');
 
 让我们回顾一下 `HasCareer` 混入：
 
-```
+```javascript
 var HasCareer = {
   career: function () {
     return this.chosenCareer;
@@ -3875,6 +3562,7 @@ var HasCareer = {
 HasCareer 将其私有状态存储在对象的 `chosenCareer` 属性中。正如我们看到的，如果有其他方法接触了 `chosenCareer`，就会引入耦合。我们想做的是让 `chosenCareer` 私有化。具体来说：
 
 1. 我们希望为每个使用 `HasCareer` 混入的对象存储 `chosenCareer` 的副本。马克·吐温是一位作家，萨姆·派肯伯是一位导演。
+
 2. `chosenCareer` 不能是每个 `Person` 对象的属性，因为我们不希望其他方法访问它并导致耦合。
 
 我们有几个选项。最简单且最“JavaScript原生”的方法是使用闭包。
@@ -3884,11 +3572,12 @@ HasCareer 将其私有状态存储在对象的 `chosenCareer` 属性中。正如
 让我们写出我们的函数混入⁷：
 
 > ⁷https://en.wikipedia.org/wiki/Open_recursion
+
 > ⁷https://javascriptweblog.wordpress.com/2011/05/31/a-fresh-look-at-javascript-mixins/
 
 ### 元对象
 
-```
+```javascript
 function HasPrivateCareer (obj) {
   var chosenCareer;
 
@@ -3908,13 +3597,14 @@ function HasPrivateCareer (obj) {
 HasPrivateCareer(peck);
 
 `chosenCareer` 是 `HasCareer` 范围内的一个变量，因此 `career` 和 `setCareer` 方法可以通过词法作用域访问它，但其他任何方法永远无法或不会访问它。
+
 这种方法适用于简单情况。它只对命名变量有效。例如，我们可以写一个函数来遍历此类函数型混入的所有私有属性，因为它们是属性，它们是变量。最终，我们实现了私有化，但我们通过完全不使用属性来实现。
 
 ### 通过对象实现私有化
 
 在混入中实现私有化的另一种方法是将它们写成操作的方法，并巧妙地让 `this` 指向不同的对象。让我们回顾一下 `extend` 函数：
 
-```
+```javascript
 function extendPrivately (receiver, mixin) {
   var methodName,
     privateProperty = Object.create(null);
@@ -3929,19 +3619,26 @@ function extendPrivately (receiver, mixin) {
 ```
 
 我们不需要在函数中嵌入变量和方法，它创建一个私有变量（`privateProperty`），然后使用 `.bind` 确保每个方法都绑定到该变量，而不是让接收对象被混入 扩展。
+
 现在我们可以“私有地”用任何混入 扩展任何对象：
 
 ### 元对象
 
+```javascript
 extendPrivately(twain, HasCareer);
+
 twain.setCareer('Author');
+
 twain.career()
 // 'Author'
+```
 
 修改了 twain 的属性吗？
 
+```javascript
 twain.chosenCareer
 // undefined
+```
 
 没有。twain 拥有 `.setCareer` 和 `.career` 方法，但 `.chosencareer` 是在 twain 被私有扩展时创建的对象的属性，它通过 `.bind` 绑定到每个方法上。
 
@@ -3951,7 +3648,7 @@ twain.chosenCareer
 
 在我们所所使用的方案中，我们使用 `.bind` 在将方法的引用混入我们的对象之前，创建了绑定到私有对象的方法。还有另一种实现方法：
 
-```
+```javascript
 function forward (receiver, metaobject, methods) {
   if (methods == null) {
     methods = Object.keys(metaobject).filter(function (Name) {
@@ -3962,7 +3659,7 @@ function forward (receiver, metaobject, methods) {
     receiver[name] = function () {
       var result = metaobject[name].apply(metaobject, arguments);
       return result === metaobject ? this : result;
-    });
+    };
   });
 }
 
@@ -3970,13 +3667,14 @@ return receiver;
 ```
 
 此函数将方法转发到另一个对象。任何其他对象，它可以是一个专门用于定义行为的元对象，也可以是一个具有其他职责的领域对象。
+
 舍弃许多混入 是一个非常简单的例子。我们从一个具有 `netWorth` 方法的某种投资组合对象开始：
 
 > https://developer.mozilla.org/en-US/docs/Web/Reference/Global_Objects/Function/bind
 
 ### 元对象
 
-```
+```javascript
 var portfolio = {
   _investments: [],
   addInvestment: function (investment) {
@@ -3995,7 +3693,7 @@ var portfolio = {
 
 然后我们创建了一个拥有这个投资组合的投资者：
 
-```
+```javascript
 var investor = {
   //...
 };
@@ -4003,7 +3701,9 @@ var investor = {
 
 如果我们想进行投资并知道投资者的净值呢？
 
+```javascript
 forward(investor, portfolio);
+```
 
 我们是在说：“将所有对 `addInvestment` 和 `netWorth` 的请求转发给 `portfolio` 对象。”
 
@@ -4012,11 +3712,12 @@ forward(investor, portfolio);
 转发是接收方法调用接收者的对象与提供者对象之间的关系。它们可以是提供者。提供者可能被消费者包含。或者提供者是一个元对象。
 
 在转发时，提供者对象有自己的状态。没有特殊的函数上下文绑定，相反，消费者对象有自己的方法将请求转发到提供者并返回结果。我们的 `forward` 函数处理了这一切，遍历提供者的属性并在消费者中创建转发方法。
+
 核心思想是，在转发时，提供者对象在自己的上下文中处理每个方法。这与我们上面使用 `.bind` 的解决方案的效果非常相似，但并不完全相同。
 
 ### 元对象
 
-```
+```javascript
 consumer[methodName] = function () {
   return metaobject[methodName].apply(metaobject, arguments);
 }
@@ -4024,7 +3725,7 @@ consumer[methodName] = function () {
 
 每个转发函数都会调用提供者中的方法。我们可以这样做：
 
-```
+```javascript
 portfolio.netWorth = function () {
   return "I'm actually bankrupt!";
 }
@@ -4046,13 +3747,11 @@ portfolio.netWorth = function () {
 
 所以我们有三件事：混入一个混入；混入一个带有方法私有状态的混入（私有混入）；以及转发到一个等对象。我们围绕两个问题进行了讨论：
 
-- 1. 混入的方法是早期绑定的还是晚期绑定？
+- 1. 混入的方法是早期绑定的还是晚期绑定的？
+
 - 2. 当在接收对象上调用方法时，它是在接收者的文中评估的，还是在元对象的状态文中评估的？
 
 如果我们做一个小表格，这三件事都有它们自己的位置：
-
-
-
 
 # 委托
 
@@ -4060,7 +3759,7 @@ portfolio.netWorth = function () {
 
 让我们来实现它。我们修改了 `forward` 函数，使其在接收者的上下文中求值方法调用：
 
-```
+```javascript
 function delegate(receiver, metaobject, methods) {
   if (methods == null) {
     methods = Object.keys(metaobject).filter(function (methodName) {
@@ -4079,7 +3778,7 @@ function delegate(receiver, metaobject, methods) {
 
 这个新的 `delegate` 函数的作用与 `forward` 函数完全相同，但委托的函数形式是这样的：
 
-```
+```javascript
 function () {
   return metaobject[methodName].apply(receiver, arguments);
 }
@@ -4098,6 +3797,7 @@ function () {
 委托和转发非常相似。一个可以帮助区分它们的比喻是：想象收到一封邮件，请求你向某家值得的慈善机构捐款。
 
 - 如果你将邮件*转发*给一个朋友，而朋友捐了钱，那么朋友捐的是他们自己的钱，并获得自己的税收据。
+
 - 如果你将回复邮件的任务*委托*给你的会计，会计会将*你的*钱捐给慈善机构，而你收到了税收据。
 
 在这两种情况下，当你收到邮件时，另一个实体都完成了工作。
@@ -4106,7 +3806,7 @@ function () {
 
 在比较混入和委托（以及比较私有混入和转发）时，我们注意到主要的区别在于：混入是早期绑定的，而委托是后期绑定的。具体来说，给定：
 
-```
+```javascript
 var counter = {};
 
 var Incrementor = {
@@ -4135,11 +3835,11 @@ counter.value(42);
 
 # 元对象 (Metaobjects)
 
-```
+```javascript
 var counter = {};
 ```
 
-```
+```javascript
 delegate(counter, Incrementor);
 ```
 
@@ -4147,7 +3847,7 @@ delegate(counter, Incrementor);
 // ...时间流逝...
 ```
 
-```
+```javascript
 counter.value(42);
 ```
 
@@ -4159,7 +3859,7 @@ counter.value(42);
 
 但我们可以比这更晚！虽然具体的函数是后期绑定的，但委托的目标对象 `Incrementor` 是早期的。我们也可以进行后期绑定！这里是 `delegate` 的一个变体：
 
-```
+```javascript
 function delegateToOwn(receiver, propertyName, methods) {
   var temporaryMetaObject;
 
@@ -4270,11 +3970,12 @@ var Dead = {
 delegateToOwn(Cell, '_state', 'alive', 'aliveNextGeneration);
 ```
 
-
 在实践中，状态通常是批量分配的，但这展示了最简单的状态机之一。在实际应用中，大多数业务对象都是状态机，有时具有多个松散耦合的状态。员工可以是：
 
 - 在办公室内或不在（办公室外）；
+
 - 处于试用期、合同工或正式工状态；
+
 - 兼职或全职。
 
 将状态委托给代表状态的属性可以利用晚绑定（late binding），将行为分解为职责清晰的较小组件。
@@ -4399,6 +4100,7 @@ var raganwald = extend(raganwald, Person, IsAuthor, HasChildren)
 在这个例子中看到了简单混入的两个弱点：
 
 1. 简单混入没有任何初始化的机制；你必须自己完成初始化，并且；
+
 2. 简单混入解决冲突的机制简单：最后一个混合的方法会覆盖之前的同名方法。
 
 # 元对象 (Metaobjects)
@@ -4441,10 +4143,6 @@ function extendAfter () {
   return consumer;
 }
 ```
-
-
-
-
 
 # 元对象 (Metaobjects)
 
@@ -4732,10 +4430,6 @@ sam.fullName()
 //=> 'Samuel Ballard'
 ```
 
-
-
-
-
 # 元对象 (Metaobjects)
 
 然而，它们似乎是 `sam` 的属性，我们可以按照通常的方式调用它们。此外，我们可以知道，当方法被调用时，当前上下文被设置为接收者 `sam`：这就是为什么 `rename` 设置了 `sam.firstName` 和 `sam.lastName` 的原因。
@@ -4762,6 +4456,7 @@ sam.fullName()
 委托是多对多的关系。一个对象可以直接委托到多个元对象，一个对象也可以直接委托到同一个元对象。而原型的情况并非如此：
 
 - 1. `Object.create` 仅允许为你正在创建的对象指定一个原型。
+
 - 2. 尽管没有规定可以更改已创建的对象的原型，但有一项提建议在 JavaScript 的下一个版本中包含 `Object.setPrototype`。然而，它仅仅会更改现有的原型，而不会添加另一个原型，因此每个对象仍然一次委托到一个原型。
 
 # 目前，原型的身份是静态的
@@ -4815,7 +4510,7 @@ function delegate(receiver, metaobject, methods) {
   methods.forEach(function (methodName) {
     receiver[methodName] = function () {
       return metaobject[methodName].apply(receiver, arguments);
-    });
+    };
   });
 
   return receiver;
@@ -4902,6 +4597,7 @@ lowry.hasOwnProperty('fullName')
 我们完全意识到原型可以用于创建类似“类”的层次结构。但让我们保持“初心”，从第一原理开始接触原型。
 
 > 初心（Shoshin）是禅宗中的一个概念，意为“入门”。它指的是在学习某个主题时（即使在高级水平）保持开放、积极和无偏见的态度，就像该主题的学者一样。
+
 - 百基百科上的初心⁸https://en.wikipedia.org/wiki/Shoshin
 
 我们讨论了原型如何在运行时以及我们编写的代码中分离行为与属性。当我们写下：
@@ -4917,10 +4613,6 @@ var foo = Object.create(Proto);
 ```
 
 即使 `foo` 响应 `.snafu` 消息，`foo` 并没有它自己的 `snafu` 属性：
-
-
-
-
 
 ## Metaobjects
 
@@ -5105,6 +4797,7 @@ var HasAlias = mixinPolicy({
 让我们从两个原则出发：
 
 - 1. 任何对象都可以拥有另一个对象作为其原型，且任何对象都可以作为原型。
+
 - 2. 对象的行为由它所有的自身行为加上原型所有的行为组成。
 
 当我们说“任何对象都可以拥有原型”时，是否包括“作为原型的对象”？是的，作为原型的对象拥有它们自己的行为。
@@ -5173,13 +4866,9 @@ switched
 // { firstName: 'Samantha', lastName: 'Stephens' }
 ```
 
-
-
-
-
 ## Metaobjects
 
-```
+```javascript
 var goldie = Object.create(PersonWithCareer);
 goldie.rename('Samuel', 'Goldwyn');
 goldie.setCareer('Producer');
@@ -5194,6 +4883,8 @@ function invokeMethod(receiver, methodName, listOfArguments) {
   return invokeMethodWithContext(receiver, receiver, methodName, listOfArguments);
 }
 ```
+
+
 
 ```javascript
 function invokeMethodWithContext(context, receiver, methodName, listOfArguments) {
@@ -5212,6 +4903,7 @@ function invokeMethodWithContext(context, receiver, methodName, listOfArguments)
 ```
 
 简单来说：如果对象实现了该方法，则使用 `.apply` 调用它。如果对象没有实现该方法但有一个原型，则请求原型在原始接收者的上下文中实现它。
+
 如果原型没有实现它，但它自己也有自己的原型呢？嗯，我们将递归地尝试该对象。从概念上说，当我们写以下代码时发生的就是：
 
 ```javascript
@@ -5320,9 +5012,6 @@ sam.career()
 ```
 
 *(注：由于提供的原文文本中存在大量重复的结构块，根据“一定不要重复输出原文”的原则，此处译文已合并重复部分并确保了逻辑完整性。)*
-
-
-
 
 # 元对象 (Metaobjects)
 
@@ -5449,8 +5138,11 @@ return {
 > *https://leanpub.com/javascript-allonge
 
 - 2. 它对扩展开放。你无法在别处定义另一个使用“私有”变量 `array` 或 `index` 的栈方法。
+
 - 3. 你无法在共享原型中直接使用 `this`。
+
 - 4. 由于私有状态被捕获在变量中，你无法利用遍历属性等属性访问功能。
+
 - 5. 你无法独立于方法来改变隐私。普通方法必须写一种代码，而带有私有状态的方法要写另一种。
 
 这些问题有通变方法，但我们必须注意它的局限性。
@@ -5524,9 +5216,6 @@ function proxy(baseObject, optionalPrototype) {
 
 特别地，当原生原型链形成类层次结构时，这种耦合会导致**脆弱基类问题 (fragile base class problem)**。
 
-
-
-
 # 封装与组合
 
 > 脆弱基类问题是面向对象编程系统中的一个基础架构问题，其中基类（超类）被认为是“脆弱的”，因为对基类进行的看似无害的修改由于派生类的继承了它，可能会导致派生类发生故障。程序员无法通过检查基类的方法来判断基类的更改是否安全——维基百科
@@ -5546,6 +5235,7 @@ function proxy(baseObject, optionalPrototype) {
 我们原始的代理封装了一个对象，向“外部世界”提供了一个接口：
 
 - [脆弱基类](https://en.wikipedia.org/wiki/Fragile_base_class)
+
 - [开放递归](https://en.wikipedia.org/wiki/Open_recursion#Open_recursion)
 
 ![](img/8b9a265792032f26cdf0efc975d22328_194_0.png)
@@ -5579,6 +5269,7 @@ function extendPrivately(receiver, mixin) {
 extendPrivately
 
 注意高亮显示的表达式。我们将混入的每个方法都绑定到同一个新的空对象中作为其上下文环境。这将它们与被混入对象的任何属性完全隔离开来。
+
 让我们从创建代理的代码开始：
 
 ```javascript
@@ -5652,6 +5343,7 @@ var samwise = {};
 # 封装与组合
 
 extendWithProxy(samwise, Person);
+
 extendWithProxy(samwise, HasCareer);
 
 samwise
@@ -5669,6 +5361,7 @@ samwise
 我们的新对象拥有 Person 和 HasCareer 的所有方法。让我们试一下：
 
 samwise.rename('Sam', 'Wise')
+
 samwise
 
 ```javascript
@@ -5682,7 +5375,9 @@ samwise
 ```
 
 samwise.setCareer('Companion');
+
 samwise.describe()
+
 //> 'Sam Wise is a Companion'
 
 我们的方法可以访问 HasCareer 的私有内部状态以及 samwise 的 fullName 方法。
@@ -5692,6 +5387,7 @@ samwise.describe()
 如果你在“在家玩”，你可能注意到了这一点：
 
 samwise.setCareer('Companion');
+
 //>
 
 ```javascript
@@ -5730,6 +5426,7 @@ function extendWithProxy (baseObject, behaviour) {
 var pepys = {};
 
 extendWithProxy(pepys, Person);
+
 extendWithProxy(pepys, HasCareer);
 
 pepys
@@ -5745,6 +5442,7 @@ pepys
 ```
 
 pepys.rename('Samuel', 'Pepys');
+
 pepys
 
 ```javascript
@@ -5758,7 +5456,9 @@ pepys
 ```
 
 pepys.setCareer('Diarist');
+
 pepys.describe()
+
 //> Samuel Pepys is a Diarist
 
 ## 代理与原型 (proxies and prototypes)
@@ -5775,19 +5475,24 @@ var michael = Object.create(prototype);
 ```
 
 michael.rename('Michael', 'Sam');
+
 michael.fullName()
+
 // 'Michael Sam'
 
 目前良好。让我们用两个：
+
 ```javascript
 var michael = Object.create(prototype);
 var switched = Object.create(prototype);
 ```
 
 michael.rename('Michael', 'Sam');
+
 switched.rename('Samantha', 'Stephens');
 
 michael.fullName()
+
 // 'Samantha Stephens'
 
 糟糕！这行不通，因为每个“封装”的混入都有自己的状态，但它们被混入共享原型中，因此私有状态也被共享了。
@@ -5827,9 +5532,6 @@ function extendProxy(baseObject, behaviour) {
   return baseObject;
 }
 ```
-
-
-
 
 ```javascript
 var HasName = {
@@ -5917,7 +5619,7 @@ function proxy (baseObject, optionalPrototype) {
       (function (methodName) = function () {
         var result = baseObject[methodName].apply(baseObject, arguments);
         return (result === baseObject)
-          ? proxy;
+          ? proxy
           : result;
       })(methodName);
     }
@@ -6046,9 +5748,6 @@ samwise
   { fullName: [Function], rename: [Function], career: [Function], setCareer: [Function], describe: [Function] }
 ```
 
-
-
-
 # 封装与组合
 
 发生了什么？嗯，让我们仔细看看 `belongsTo` 函数：
@@ -6062,6 +5761,7 @@ function (team) {
 答案显而易见：像所有封装的方法一样，我们将其绑定到 `andysContext` 上，这样 `this` 始终指向它的私有数据（`andysContext`），而不是对象（`hamsterdam`）。变量 `this` 始终绑定到当前上下文，而不是在我们调用 `team.includes(this)` 的时候绑定，我们是在询问团队是否包含该上下文，而不是骑手对象。
 
 嗡！
+
 问题在于，这在每个函数中都承担了两个角色：它既是上下文，默认情况下，它还是方法调用的接收者。JavaScript 并没有区分这两个概念：如果你绑定了方法的上下文，你就失去了引用该方法的能力。
 
 ## 将“上下文”与“自我性（selfhood）”分离
@@ -6140,14 +5840,19 @@ var laVieClaire = {
 ```
 
 var jeanFrancoisBernard = encapsulate({
+
   belongsTo: function (team) {
+
     return team.includes(this.self);
+
   }
+
 });
 
 laVieClaire.addRider(jeanFrancoisBernard);
 
 jeanFrancoisBernard.belongsTo(laVieClaire)
+
 // true
 
 > 在 JavaScript 中启用 `this.self` 的危险在于，封装的方法现在有了一个可以直接修改基对象的“后门”。当我们进入元对象（metaobjects）的组合构阶段时，我们会非常努力防止元对象以无结构的方式相互对方的方法。`this.self` 可能会被用来破坏这种方案。
@@ -6227,10 +5932,6 @@ var Account = encapsulate({
 });
 ```
 
-
-
-
-
 # 封装与组合
 
 ```javascript
@@ -6255,6 +5956,7 @@ Object.keys(behaviour).forEach(function (methodName) {
 });
 
 return encapsulatedObject;
+}
 ```
 
 注意，你的代理函数接收一个可选的 Prototype。现在我们可以使用它，只需稍微调整即可扫描方法名中的私有方法：
@@ -6387,11 +6089,8 @@ nilsson.__englishList(
 需要记住，特定的设计和实现并不是重点，它是思考软件系统中的访问控制、耦合、设计以及对象与元对象（metaobjects）之间交互的工具。
 
 “这就像指月的手指。不要盯着手指看，否则你会错过所有的光辉。”——李龙，引用自《楞华经》中的教义。
+
 https://en.wikipedia.org/wiki/Finger_pointing_to_the_moon
-
-
-
-
 
 # 封装与组合
 
@@ -6613,10 +6312,6 @@ var IsSelfDescribing = encapsulate({
 
 像 `IsSelfDescribing` 这样依赖于基础对象或其他行为实现方法的行为，被称为“堆叠在其他行为之上”。
 
-
-
-
-
 我们通过使依赖显式而非隐式来管理这些依赖。首先，我们将使用一种简单的约定来表示依赖：如果一个行为依赖于某个方法，我们必须将 `undefined` 绑定到该方法的名称。
 
 这是我们对 `IsSelfDescribing` 的表示方式：
@@ -6792,10 +6487,6 @@ var AB = compose(A, B);
 AB.m(); // 'A'
 ```
 
-
-
-
-
 # 封装与组合
 
 ```javascript
@@ -6829,6 +6520,10 @@ var SingsSongs = encapsulate({
 });
 ```
 
+
+
+# 封装与组合
+
 ```javascript
 var HasAwards = encapsulate({
   _awards: null,
@@ -6844,7 +6539,7 @@ var HasAwards = encapsulate({
   awards: function () {
     return this._awards;
   }
-));
+});
 ```
 
 ```javascript
@@ -6866,21 +6561,21 @@ tracy.songs()
 
 当我们需要有两个职责但它们并不是“对等”关系时，这种情况经常发生：其中一个是主要职责，而另一个是次要且较小的职责。
 
-例如，歌曲的职责是管理它的歌曲：
+例如，歌曲作者的职责是管理它的歌曲：
 
 ```javascript
 var Songwriter = encapsulate({
-constructor: function () {
-  this._songs = [];
-  return this.self;
-},
-addSong: function (name) {
-  this._songs.push(name);
-  return this.self;
-},
-songs: function () {
-  return this._songs;
-}
+  constructor: function () {
+    this._songs = [];
+    return this.self;
+  },
+  addSong: function (name) {
+    this._songs.push(name);
+    return this.self;
+  },
+  songs: function () {
+    return this._songs;
+  }
 });
 ```
 
@@ -6898,8 +6593,8 @@ var Subscribable = encapsulate({
     this._subscribers.push(callback);
   },
   unsubscribe: function (callback) {
-    this._subscribers = !this._subscribers.filter( function (subscriber) {
-      return subscriber == callback;
+    this._subscribers = this._subscribers.filter(function (subscriber) {
+      return subscriber !== callback;
     });
   },
   subscribers: function () {
@@ -6910,20 +6605,20 @@ var Subscribable = encapsulate({
     this._subscribers.forEach(function (subscriber) {
       subscriber.apply(receiver.self, arguments);
     });
-  });
+  }
 });
 ```
 
-一个 `SubscribableSongwriter` 显然是 `composeMetaObjects(Songwriter, Subscribable)`。但为了让订阅变得有用，我们希望在每次调用 `addSong()` 时调用 `notify()`。我们可以通过为 `addSong` 添加行为来实现这一点：
+一个 `SubscribableSongwriter` 显然是 `composeMetaobjects(Songwriter, Subscribable)`。但为了让订阅变得有用，我们希望在每次调用 `addSong()` 时调用 `notify()`。我们可以通过为 `addSong` 添加行为来实现这一点：
 
 ```javascript
-var SubscribableSongwriter = composeMetaObjects(
-Songwriter,
-Subscribable,
-encapsulate({
-  notify: undefined,
-  addSong: function () { this.notify(); }
-});
+var SubscribableSongwriter = composeMetaobjects(
+  Songwriter,
+  Subscribable,
+  encapsulate({
+    notify: undefined,
+    addSong: function () { this.notify(); }
+  })
 );
 ```
 
@@ -6931,7 +6626,7 @@ encapsulate({
 var sweetBabyJames = Object.create(SubscribableSongwriter).constructor();
 ```
 
-元对象 `encapsulate({notify: undefined, addSong: function () { this.notify(); } })` 为 `addSong` 添加了一个行为，在在添加歌曲时调用 `notify()`。我们可以通过这个原始的“视图”看到它是如何工作的：
+元对象 `encapsulate({notify: undefined, addSong: function () { this.notify(); } })` 为 `addSong` 添加了一个行为，在添加歌曲时调用 `notify()`。我们可以通过这个原始的“视图”看到它是如何工作的：
 
 ```javascript
 var SongwriterView = {
@@ -6941,7 +6636,7 @@ var SongwriterView = {
     this.model.subscribe(this.render.bind(this));
     return this;
   },
-  _english: function (list) {
+  _englishList: function (list) {
     var butLast = list.slice(0, list.length - 1);
     last = list[list.length - 1];
     return butLast
@@ -6949,7 +6644,7 @@ var SongwriterView = {
       : last;
   },
   render: function () {
-    var songlist = this.model.songs().length > 0
+    var songList = this.model.songs().length > 0
       ? " + has written " + this._englishList(this.model.songs()).map(
         (function (song) {
           return "" + song + ";";
@@ -6963,14 +6658,14 @@ var SongwriterView = {
 ```
 
 ```javascript
-var jamesView = Object.create(SongwriterView).constructor(sweetJames, 'James Taylor');
+var jamesView = Object.create(SongwriterView).constructor(sweetBabyJames, 'James Taylor');
 
 sweetBabyJames.addSong('Fire and Rain')
 //=> James Taylor has written 'Fire and Rain'
 undefined
 ```
 
-或者它真的生效了吗？让我们看看 `Songwriter.addsong`：
+或者它真的生效了吗？让我们看看 `Songwriter.addSong`：
 
 ```javascript
 function (name) {
@@ -7015,34 +6710,34 @@ function orderProtocol2 () {
   }
 }
 
-function composeMetaobjects {
+function composeMetaobjects () {
   var metaobjects = __slice.call(arguments, 0),
     arrays = propertiesToArrays(metaobjects),
     resolved = resolveUndefineds(arrays),
     composed = applyProtocol(resolved, orderProtocol2);
 
-return composed;
+  return composed;
 }
 ```
 
 ```javascript
 var CorrectSubscribableSongwriter = composeMetaobjects(
-Songwriter,
-Subscribable,
-encapsulate({
-  notify: undefined,
-  addSong: function () { this.notify(); }
-})
+  Songwriter,
+  Subscribable,
+  encapsulate({
+    notify: undefined,
+    addSong: function () { this.notify(); }
+  })
 );
 ```
 
 ```javascript
-var sweetBabyJames = Object.create(CorrectSubscribableSongwriter).constructor(sweetJames, 'James Taylor');
+var sweetBabyJames = Object.create(CorrectSubscribableSongwriter).constructor(sweetBabyJames, 'James Taylor');
 ```
 
 ```javascript
 sweetBabyJames.addSong('Fire and Rain') === sweetBabyJames
-=> James Taylor has written 'Fire and Rain'
+//=> James Taylor has written 'Fire and Rain'
 true
 ```
 
@@ -7060,13 +6755,13 @@ true
 
 ![](img/8b9a265792032f26cdf0efc975d22328_248_0.png)
 
-我们想让委托给 `Songwriter` 的 `SubscribableSongwriter` 运作。制作委托到原型的行为有一个技巧：我们将我们需要的行为与一个委托到目标原型的对象组合。实际上，我们是将委托与我们需要的行为进行组合。
+我们想让委托给 `Songwriter` 的 `SubscribableSongwriter` 运作。制作委托到原型的行为有一个技巧：我们将我们需要的行为与一个委托给目标原型的对象组合。实际上，我们是将委托与我们需要的行为进行组合。
 
 我们需要调整 `applyProtocol`，以便传入一个已正确设置原型的种子对象（seed）：
 
 ```javascript
 function applyProtocol(seed, resolved, protocol) {
-  return Object.keys(resolved).reduce( function (applied, key) {
+  return Object.keys(resolved).reduce(function (applied, key) {
     var value = resolved[key];
 
     if (isUndefined(value)) {
@@ -7076,19 +6771,7 @@ function applyProtocol(seed, resolved, protocol) {
       applied[key] = protocol.apply(null, value);
     }
     else throw "Don't know what to do with " + value;
-  });
-}
-```
-
-
-
-
-
-# 封装与组合
-
-```javascript
-return applied;
-}, seed);
+  }, seed);
 }
 ```
 
@@ -7103,7 +6786,7 @@ function canMergedInto(object1, object2) {
   if (prototype2 === null) return true;
   if (prototype1 === prototype2) return true;
 
-  return Object.prototype.isPrototypeOfOf.call(prototype2, object1);
+  return Object.prototype.isPrototypeOf.call(prototype2, object1);
 }
 ```
 
@@ -7116,7 +6799,7 @@ var callLeft2 = (function () {
   if (typeof callLeft == 'function') {
     return callLeft;
   } else if (typeof allong === 'object' && typeof allong.es === 'object' &&
-  allong.es.callLeft === 'function') {
+    allong.es.callLeft === 'function') {
     return allong.es.callLeft;
   } else {
     return function callLeft2(fn, arg2) {
@@ -7125,32 +6808,29 @@ var callLeft2 = (function () {
       };
     }
   }
-})()
+})();
 ```
 
 ```javascript
 function seedFor(objectList) {
-  var seed = objectList[] == null ? Object.create(null) : Object.create(Object.getPrototypeOf(objectList[0]));
+  var seed = objectList[0] == null ? Object.create(null) : Object.create(Object.getPrototypeOf(objectList[0]));
   isCompatibleWithSeed = callLeft2(canMergedInto, seed);
-```
 
-```javascript
-if (!objectList.every(isCompatibleWithSeed)) throw 'incompatible prototypes';
-return seed;
-```
-
-```javascript
-function composeMetaobjects() {
-  var metaobjects = _slice.call(arguments, 0),
-  arrays = propertiesToArrays(metaobjects),
-  resolved = resolveUndefineds(arrays),
-  seed = seedFor(metaobjects),
-  composed = applyProtocol(seed, resolved, orderProtocol);
+  if (!objectList.every(isCompatibleWithSeed)) throw 'incompatible prototypes';
+  return seed;
 }
 ```
 
 ```javascript
-return composed;
+function composeMetaobjects() {
+  var metaobjects = __slice.call(arguments, 0),
+    arrays = propertiesToArrays(metaobjects),
+    resolved = resolveUndefineds(arrays),
+    seed = seedFor(metaobjects),
+    composed = applyProtocol(seed, resolved, orderProtocol);
+
+  return composed;
+}
 ```
 
 我们需要构建自己的对象：
@@ -7167,7 +6847,8 @@ var Songwriter = encapsulate({
   },
   songs: function () {
     return this._songs;
-  });
+  }
+});
 ```
 
 ```javascript
@@ -7182,66 +6863,63 @@ var Subscribable = encapsulate({
   unsubscribe: function (callback) {
     this._subscribers = this._subscribers.filter(function (subscriber) {
       return subscriber !== callback;
-  });
-```
-
-```javascript
-));
-subscribers: function () {
-  return this._subscribers;
-},
-notify: function () {
-  receiver = this;
-  this._subscribers.forEach( function (subscriber) {
-    subscriber.apply(receiver.self, arguments);
-  });
-}
+    });
+  },
+  subscribers: function () {
+    return this._subscribers;
+  },
+  notify: function () {
+    receiver = this;
+    this._subscribers.forEach(function (subscriber) {
+      subscriber.apply(receiver.self, arguments);
+    });
+  }
 });
 ```
 
 ```javascript
 var SubscribableSongwriter = composeMetaobjects(
-Object.create(Songwriter),
-Subscribable,
-encapsulate({
-  notify: undefined,
-  addSong: function () { this.notify(); }
-}));
+  Object.create(Songwriter),
+  Subscribable,
+  encapsulate({
+    notify: undefined,
+    addSong: function () { this.notify(); }
+  })
+);
 ```
 
 ```javascript
-var Songwriter = {
+var SongwriterView = {
   constructor: function (model, name) {
-  this.model = model;
-  this.name = name;
-  this.model.subscribe(this.render.bind(this));
-  return this;
+    this.model = model;
+    this.name = name;
+    this.model.subscribe(this.render.bind(this));
+    return this;
   },
   _englishList: function (list) {
-  var butLast = list.slice(0, list.length - 1),
-  last = list[list.length - 1];
-  return butLast.length > 0
-    ? [butLast.join(', '), last].join(' and ')
-    : last;
+    var butLast = list.slice(0, list.length - 1),
+      last = list[list.length - 1];
+    return butLast.length > 0
+      ? [butLast.join(', '), last].join(' and ')
+      : last;
   },
   render: function () {
-  var songList = this.model.songs().length > 0
-    ? [ "has written " + this._englishList(this.model.songs()).map(
-(function (song) {
-    return "" + song + ""; })]]
-    : [];
-};
-```
+    var songList = this.model.songs().length > 0
+      ? ["has written " + this._englishList(this.model.songs()).map(
+        (function (song) {
+          return "" + song + "";
+        }))]
+      : [];
 
-```javascript
-console.log(this.name + songList);
-return this;
+    console.log(this.name + songList);
+    return this;
+  }
 };
 ```
 
 ```javascript
 var paulSimon = Object.create(SubscribableSongwriter).constructor(),
-paulView = Object.create(Songwriter).constructor(paulSimon, 'Paul Simon');
+  paulView = Object.create(SongwriterView).constructor(paulSimon, 'Paul Simon');
 ```
 
 ```javascript
@@ -7258,7 +6936,7 @@ paulSimon.songs()
 为什么我们要这样做？嗯，对于某些类型的编程，我们非常在乎对象原型链中的原型是什么。注意：
 
 ```javascript
-Songwriter.isPrototypeOf(sweetBaby.James)
+Songwriter.isPrototypeOf(sweetBabyJames)
 //> false
 ```
 
@@ -7283,85 +6961,64 @@ Songwriter.isPrototypeOf(paulSimon)
 
 ```javascript
 function selectize (selectors) {
-var fns = selectors.map(function (selector) {
-  var regex;
+  var fns = selectors.map(function (selector) {
+    var regex;
 
-  if (typeof selector === 'string' && selector[0] === '/') {
-    regex = new RegExp(selector.substring(i, selector.length-i));
-    return function (name) { return !!name.match(regex); }
-  }
-  else if (typeof selector === 'string') {
-    return function (name) { return name === selector; }
-}
-}
-}
-```
+    if (typeof selector === 'string' && selector[0] === '/') {
+      regex = new RegExp(selector.substring(1, selector.length - 1));
+      return function (name) { return !!name.match(regex); }
+    }
+    else if (typeof selector === 'string') {
+      return function (name) { return name === selector; }
+    }
+    else if (typeof selector === 'function') {
+      return selector;
+    }
+  });
 
-
-
-
-
-# 封装与组合
-
-```javascript
-}
-
-else if (typeof selector === 'function') {
-    return selector
-}
-));
-```
-
-```javascript
-return function select (name) {
-    return fns.some(function (test) { return test.call(this, name), this });
-}
+  return function select (name) {
+    return fns.some(function (test) { return test.call(this, name); }, this);
+  };
 }
 ```
 
 ```javascript
 function fluentByDefault (metaobject) {
-    var selectors = [].slice(arguments, 1);
-    selectorFn = selectize(selectors),
-    metaproto = Object.getPrototypeOf(metaobject),
-    fluentMetaobject = Object.create(metaproto),
-    key;
-}
-```
+  var selectors = [].slice.call(arguments, 1);
+  selectorFn = selectize(selectors);
+  metaproto = Object.getPrototypeOf(metaobject);
+  fluentMetaobject = Object.create(metaproto);
+  key;
 
-```javascript
-for (var key in metaobject) {
-    if (typeof metaobject[key] === 'function' && selector.call(metaobject, key)) {
-        !function (key) {
-            fluentMetaobject[key] = function () {
-                var returnValue = metaobject[key].apply(this, arguments);
+  for (var key in metaobject) {
+    if (typeof metaobject[key] === 'function' && selectorFn.call(metaobject, key)) {
+      !function (key) {
+        fluentMetaobject[key] = function () {
+          var returnValue = metaobject[key].apply(this, arguments);
 
-                return typeof returnValue === 'undefined'
-                ? this
-                : returnValue;
-            }
-        }(key);
+          return typeof returnValue === 'undefined'
+            ? this
+            : returnValue;
+        }
+      }(key);
     } else fluentMetaobject[key] = metaobject[key];
-}
-return fluentMetaobject;
+  }
+  return fluentMetaobject;
 }
 ```
 
 ```javascript
 var Songwriter = encapsulate({
-    constructor: function () {
-        this._songs = [];
-    },
-    addSong: function (name) {
-        this._songs.push(name);
-    });
-```
-
-```javascript
-},
-songs: function () {
-  return this._songs;
-}}
+  constructor: function () {
+    this._songs = [];
+  },
+  addSong: function (name) {
+    this._songs.push(name);
+  },
+  songs: function () {
+    return this._songs;
+  }
+});
 ```
 
 ```javascript
@@ -7370,20 +7027,20 @@ var FluentSongwriter = fluentByDefault(Songwriter, "initialize");
 
 ```javascript
 var hall = Object.create(Songwriter);
-ates = Object.create(FluentSongwriter);
+tates = Object.create(FluentSongwriter);
 ```
 
 ```javascript
 hall.constructor();
 // undefined
-ates.constructor();
+tates.constructor();
 // {}
 ```
 
 ```javascript
 hall.addSong("your kiss is on my list");
 // undefined
-ates.addSong("your kiss is on my list");
+tates.addSong("your kiss is on my list");
 // undefined
 ```
 
@@ -7392,8 +7049,8 @@ ates.addSong("your kiss is on my list");
 ```javascript
 function fluentByDefault (metaobject) {
   var selectors = [].slice.call(arguments, 1);
-  selectorFn = selectorize(selectors);
-  metaproto = Object.getPrototype(metaobject);
+  selectorFn = selectize(selectors);
+  metaproto = Object.getPrototypeOf(metaobject);
   decoratedMetaobject = Object.create(metaproto);
   decorator = function (methodBody) {
     var returnValue = methodBody.apply(this, arguments);
@@ -7401,23 +7058,16 @@ function fluentByDefault (metaobject) {
     return typeof returnValue === 'undefined'
       ? this
       : returnValue;
+  };
+  key;
+
+  for (key in metaobject) {
+    if (typeof metaobject[key] === 'function' && selectorFn.call(metaobject, key)) {
+      decoratedMetaobject[key] = decorator(metaobject[key]);
+    }
+    else decoratedMetaobject[key] = metaobject[key];
   }
-}
-key;
-```
-
-```javascript
-for (key in metaobject) {
-  if (typeof metaobject[key] === 'function' && selectorFn.call(metaobject, key)) {
-```
-
-```javascript
-decoratedMetaObject[key] = decorator(metaobject[key]);
-}
-else decoratedMetaObject[key] = metaobject[key];
-}
-return decoratedMetaObject;
-}
+  return decoratedMetaobject;
 }
 ```
 
@@ -7425,21 +7075,19 @@ return decoratedMetaObject;
 
 ```javascript
 function decorate (decorator, metaobject) {
-var selectors = [].slice.call(arguments, 2);
-selectorFn = selectorize(selectors);
-metapro = Object.getPrototypeOf(metaobject);
-decoratedMetaObject = Object.create(metapro);
-key;
-```
+  var selectors = [].slice.call(arguments, 2);
+  selectorFn = selectize(selectors);
+  metaproto = Object.getPrototypeOf(metaobject);
+  decoratedMetaobject = Object.create(metaproto);
+  key;
 
-```javascript
-for (key in metaobject) {
-if (typeof metaobject[key] === 'function' && selectorFn.call(metaobject, key)) {
-decoratedMetaObject[key] = decorator(metaobject[key]);
-}
-else decoratedMetaObject[key] = metaobject[key];
-return decoratedMetaObject;
-}
+  for (key in metaobject) {
+    if (typeof metaobject[key] === 'function' && selectorFn.call(metaobject, key)) {
+      decoratedMetaobject[key] = decorator(metaobject[key]);
+    }
+    else decoratedMetaobject[key] = metaobject[key];
+  }
+  return decoratedMetaobject;
 }
 ```
 
@@ -7447,17 +7095,16 @@ return decoratedMetaObject;
 
 ```javascript
 function after (decoration) {
-return function (methodBody) {
-return function () {
-var methodBodyResult = methodBody.apply(this, arguments);
-decorationResult = decoration.apply(this, arguments);
+  return function (methodBody) {
+    return function () {
+      var methodBodyResult = methodBody.apply(this, arguments);
+      decorationResult = decoration.apply(this, arguments);
 
-return typeof methodBodyResult === 'undefined'
-? decorationResult
-: methodBodyResult;
-};
-}
-}
+      return typeof methodBodyResult === 'undefined'
+        ? decorationResult
+        : methodBodyResult;
+    };
+  };
 }
 ```
 
@@ -7479,9 +7126,6 @@ taylor.constructor();
 
 ```javascript
 taylor.addSong("fire and rain");
-```
-
-```javascript
 //=> after!
 undefined
 ```
@@ -7498,8 +7142,8 @@ function before (decoration) {
       return typeof methodBodyResult === 'undefined'
         ? decorationResult
         : methodBodyResult;
-    }
-  }
+    };
+  };
 }
 ```
 
@@ -7508,8 +7152,8 @@ function around (decoration) {
   return function (methodBody) {
     return function () {
       return decoration.apply(this, [methodBody].concat([].slice.call(arguments, 0)));
-    }
-  }
+    };
+  };
 }
 ```
 
@@ -7517,9 +7161,9 @@ function around (decoration) {
 
 ### 解耦风格的元素
 
-这种编写元对象转换器的简单想法是编写函数式装饰器（functional decorator）的直接对应。我们正在创建一个语义上与旧对象相似的新元对象，但没有进行“猴补（monkey-patching）”或修改现有的元对象。
+这种编写元对象转换器的简单想法是编写函数式装饰器（functional decorator）的直接对应。我们正在创建一个语义上与旧对象相似的新元对象，但没有进行“猴补丁（monkey-patching）”或修改现有的元对象。
 
-猴补风格在许多小型项目中运行良好，但随着规模的扩大，我们会遇到问题。代码将依赖于原始元对象，因此新代码的更改可能会破坏旧代码。
+猴补丁风格在许多小型项目中运行良好，但随着规模的扩大，我们会遇到问题。代码将依赖于原始元对象，因此新代码的更改可能会破坏旧代码。
 
 ### 继承与装饰
 
@@ -7542,7 +7186,7 @@ var PlainSongwriterMetaobject = {
     return this._songs;
   }
 };
-var tracy = Object.create(PlainSongwriterMetaobject)
+var tracy = Object.create(PlainSongwriterMetaobject);
 tracy.constructor();
 ```
 
@@ -7561,7 +7205,7 @@ var SongwriterMetaobject = encapsulate({
     return this._songs;
   }
 });
-var tracy = Object.create(SongwriterMetaobject)
+var tracy = Object.create(SongwriterMetaobject);
 tracy.constructor();
 ```
 
@@ -7586,11 +7230,10 @@ var HasAwardsMetaobject = encapsulate({
 ```
 
 ```javascript
-var AwardWinningSongwriterMetaobject = composeMetaobjects(SongwriterMetaobject, HasAwardsMetaobject),
-  tracy = Object.create(AwardWinningSongwriterMetaobject);
-```
-
+var AwardWinningSongwriterMetaobject = composeMetaobjects(SongwriterMetaobject, HasAwardsMetaobject);
+tracy = Object.create(AwardWinningSongwriterMetaobject);
 tracy.constructor();
+```
 
 ### 元对象与构造函数
 
@@ -7609,7 +7252,7 @@ Songwriter.prototype = {
   songs: function () {
     return this._songs;
   }
-}
+};
 ```
 
 ```javascript
@@ -7618,8 +7261,8 @@ var tracy = new Songwriter();
 
 它的定义特征是：
 
-- 1. 你可以使用 `new` 关键字调用它
-- 2. 行为保留在其原型属性中
+1. 你可以使用 `new` 关键字调用它
+2. 行为保留在其原型属性中
 
 我们可以通过在元对象周围包装函数来手动创建一个“类”：
 
@@ -7627,9 +7270,7 @@ var tracy = new Songwriter();
 function AwardWinningSongwriter() {
   SongwriterMetaobject.constructor.apply(this, arguments);
 }
-```
 
-```javascript
 AwardWinningSongwriter.prototype = SongwriterMetaobject;
 ```
 
@@ -7646,7 +7287,7 @@ function Newable(optionalName, metaobject) {
       "var r = constructor.apply(this, arguments); " +
       "return r === undefined ? r ; " +
       "}";
-    clazz = eval(source);
+  clazz = eval(source);
 
   clazz.prototype = extend({}, metaobject);
   delete clazz.prototype.constructor;
@@ -7663,328 +7304,33 @@ var AwardWinningSongwriter = Newable(AwardWinningSongwriterMetaobject);
 var tracy = new AwardWinningSongwriter();
 ```
 
-
-
-
-
 # 封装与组合
 
-如果我们愿意，可以对这些类进行链式创建一个“类层次结构”。大部分工作都是关于链式构造函数的：
+如果我们愿意，可以对这些类进行链式操作创建一个“类层次结构”。大部分工作都是关于链式构造函数的：
 
 ```javascript
 function Newable(optionalName, metaobject, optionalSuper) {
   var name = typeof(optionalName) === 'string'
     ? optionalName
-    metaobject = typeof(optionalName) === 'string'
-    ? metaobject
-    superClazz = typeof(optionalName) === 'string'
-    ? optionalSuper
-    source = "(function " + name + " () { " +
-    "var r = constructor.apply(this, arguments); " +
-    "return r === undefined ? this : r; " +
-    ")}",
-  clazz = eval(source),
-  if (typeof(metaobject.constructor) === 'function' && typeof(optionalSuper) === 'function') {
-    constructor = function () {
-      optionalSuper.apply(this, arguments);
-      return metaobject.constructor.apply(this, arguments);
-    }
-  } else if (typeof(metaobject.constructor) === 'function') {
-    constructor = metaobject.constructor;
-  } else if (typeof(optionalSuper) === 'function') {
-    constructor = optionalSuper;
-  } else constructor = function () {}
-  clazz.prototype = extend(Object.create(optionalSuper.prototype), metaobject);
-  delete clazz.prototype.constructor;
-  return clazz;
-}
-```
-
-我们可以制定出一种不同的 `AwardWinningSongwriter`（获奖词作家），它连接了来自 `HasAwardsMetaobject` 的行为并“扩展”了构造函数 `Songwriter`：
-
-```javascript
-var Songwriter = Newable('Songwriter', SongwriterMetaobject);
-var AwardWinningSongwriter = Newable('AwardWinningSongwriter', HasAwardsMetaobject);
-
-var tracy = new AwardWinningSongwriter();
-tracy.addSong('Fast Car');
-tracy.addAward('Grammy');
-
-tracy.songs();
-//=> ['Fast Car ']
-tracy.awards();
-//=> ['Grammy' ]
-```
-
-当然，我们可以让 `Newable` 扩展它它喜欢的任何构造函数，包括用 ES6 的 `class` 关键字创建的类。其他的“类”也可以扩展由 `Newable` 创建的函数。
-
-因此，我们看到我们创建的元对象与我们在代码库中可能遇到的现有习惯用法完全兼容。
-
-# 继承、本体论与语义类型
-
-## 类层次结构
-
-在理论上，JavaScript 没有类。它有“原型”，在编程论坛里潜伏观察人们争论计算机科学中“类”（class）一词的确切定义，然后争论 JavaScript 是否拥有类，总是一件很有趣的事。在本书书中，我们谨慎地使用“元对象”（metaobject）一词，主要是因为“元对象”没有受到 `instanceof` 关键字或关于继承和实例创建的特定规则的束缚。
-
-在实践中，下面的代码片段被广泛认为是 JavaScript 中“类”的一个范例：
-
-```javascript
-function Account () {
-  this._currentBalance = 0;
-}
-```
-
-```javascript
-Account.prototype.balance = function () {
-  return this._currentBalance;
-}
-```
-
-```javascript
-Account.prototype.deposit = function (howMuch) {
-  this._currentBalance = this._currentBalance + howMuch;
-  return this;
-}
-```
-
-```javascript
-// ...
-```
-
-```javascript
-var account = new Account();
-```
-
-该模式可以扩展以提供子类的概念：
-
-```javascript
-function ChequingAccount () {
-  Account.call(this);
-}
-```
-
-```javascript
-ChequingAccount.prototype = Object.create(Account.prototype);
-```
-
-```javascript
-ChequingAccount.prototype.sufficientFunds = function (cheque) {
-  return this._currentBalance >= cheque.amount();
-}
-```
-
-```javascript
-ChequingAccount.prototype.process = function (cheque) {
-  this._currentBalance = this._currentBalance - cheque.amount();
-  return this;
-}
-```
-
-我们一直称这种模式为“原型委托”（Delegating to Prototypes），但让我们称之为类和子类吧，以便我们的研究与流行文献保持一致。这些“类和子类”提供了我们在 Smalltalk⁹ 等语言中发现的类类功能：
-
-- 类负责创建对象并用属性初始化它们（如当前余额）；
-- 类负责“拥有”方法，对象将方法处理委托给类（以及超类）；
-- 方法直接操作对象的属性。
-
-当然，Smalltalk 是发明于四十年前⁹⁹。在这四十年里，我们学习了很多关于面向对象编程中什么是有效的，什么是无效的。遗憾的是，这种模式歌颂了那些无效的，而闪烁或忽略了那些有效的。
-
-## 层次结构中的语义问题
-
-在语义层面上，类是本体论¹⁰⁰的构建模块。这通常在图表中被形式化：
-
-| AbstractBankAccount | |
-| :--- | :--- |
-| ChequingAccount | SavingsAccount |
-| DollarAccount | VisaDebitAccount HighBalanceAccount |
-
-*账户的本体论*
-
-基于类的面向对象编程背后的思想是将关于对象的知识分类（这个词）到一棵树中。顶端是关于所有对象的通用知识，随着我们在树上移动，我们获得关于特定对象类越来越具体的知识，例如，代表 Visa 借记账户。
-
-只是现实世界并不是这样运作的。真的不是这样。例如，在形态学¹⁰¹中，我们有企鹅，会游泳的鸟。还有蝙蝠，一种具有单孔目特征的哺乳动物。
-
-（注：此处原文似乎存在多处翻译后的乱码或重复的英文段落，已根据提供的英文文本尽可能还原逻辑，但原文后半部分存在大量重复且无意义的单词组合，译文已遵循原文结构处理。）
-
-[注：由于您提供的原文文本从 "## the semantic problem with hierarchies" 之后出现了大量逻辑混乱且高度重复的英文单词组合，此处译文严格按照原文提供的文本内容进行了翻译，以确保不漏译且不重复原文。]
-
-[更正：由于您提供的原文文本从 "## the semantic problem with hierarchies" 之后出现了大量逻辑混乱且高度重复的英文单词组合（如 "Only the real world doesn't work that way..." 重复多次），此处译文严格按照原文提供的文本内容进行了翻译，以确保不漏译且不重复原文。]
-
-（作为高级文档工程师，我识别出原文文本从某部分开始存在严重的文本错误或重复，译文已基于原文逐字对应进行翻译。）
-
-[由于原文文本中存在大量重复且无意义的单词组合，译文将严格遵循原文的逻辑结构。]
-
-（注：由于原文内容存在异常，我将提供基于该文本的忠实翻译。）
-
-[content] 
-
-原文：
-[content]
-# Encapsulation and Composition
-
-We can chain these classes to create a "class hierarchy" if we so desire. Most of the work is concerned with chaining constructor functions:
-
-```javascript
-function Newable(optionalName, metaobject, optionalSuper) {
-  var name = typeof(optionalName) === 'string'
-    ? optionalName
-    metaobject = typeof(optionalName) === 'string'
-    ? metaobject
-    superClazz = typeof(optionalName) === 'string'
-    ? optionalSuper
-    source = "(function " + name + " () { " +
-    "var r = constructor.apply(this, arguments); " +
-    "return r === undefined ? this : r; " +
-    ")}",
-  clazz = eval(source),
-  if (typeof(metaobject.constructor) === 'function' && typeof(optionalSuper) === 'function') {
-    constructor = function () {
-      optionalSuper.apply(this, arguments);
-      return metaobject.constructor.apply(this, arguments);
-    }
-  } else if (typeof(metaobject.constructor) === 'function') {
-    constructor = metaobject.constructor;
-  } else if (typeof(optionalSuper) === 'function') {
-    constructor = optionalSuper;
-  } else constructor = function () {}
-  clazz.prototype = extend(Object.create(optionalSuper.prototype), metaobject);
-  delete clazz.prototype.constructor;
-  return clazz;
-}
-```
-
-We can formulate a different kind of AwardWinningSongwriter, one that wires up the behaviour from HasAwardsMetaobject and "extends" the constructor Songwriter:
-
-```javascript
-var Songwriter = Newable('Songwriter', SongwriterMetaobject);
-var AwardWinningSongwriter = Newable('AwardWinningSongwriter', HasAwardsMetaobject);
-
-var tracy = new AwardWinningSongwriter();
-tracy.addSong('Fast Car');
-tracy.addAward('Grammy');
-
-tracy.songs();
-//=> ['Fast Car ']
-tracy.awards();
-//=> ['Grammy' ]
-```
-
-Of course, we can have Newable extend any constructor function it likes, including those created with ES6's class keyword. And other “classes” can extend the functions created by Newable.
-
-Thus, we see that the metaobjects we create are fully compatible with the existing idioms we may encounter in a code base.
-
-## Inheritance, Ontologies, and Semantic Types
-
-## Class Hierarchies
-
-In theory, JavaScript does not have classes. It has "prototypes", and it is always entertaining to lurk in a programming forum and watch people debate the exact definition of the word "class" in computer science, and then debate whether JavaScript has them. We've been careful to use the word "metaobject" in this book, mostly because "metaobject" isn't encumbered with baggage such as the instanceof keyword or specific rules about inheritance and creation of instances.
-
-In practice, the following snippet of code is widely considered to be an example of a "class" in JavaScript:
-
-```javascript
-function Account () {
-  this._currentBalance = 0;
-}
-```
-
-```javascript
-Account.prototype.balance = function () {
-  return this._currentBalance;
-}
-```
-
-```javascript
-Account.prototype.deposit = function (howMuch) {
-  this._currentBalance = this._currentBalance + howMuch;
-  return this;
-}
-```
-
-```javascript
-// ...
-```
-
-```javascript
-var account = new Account();
-```
-
-The pattern can be extended to provide the notion of subclassing:
-
-```javascript
-function ChequingAccount () {
-  Account.call(this);
-}
-```
-
-```javascript
-ChequingAccount.prototype = Object.create(Account.prototype);
-```
-
-```javascript
-ChequingAccount.prototype.sufficientFunds = function (cheque) {
-  return this._currentBalance >= cheque.amount();
-}
-```
-
-```javascript
-ChequingAccount.prototype.process = function (cheque) {
-  this._currentBalance = this._currentBalance - cheque.amount();
-  return this;
-}
-```
-
-We've been calling this pattern "Delegating to Prototypes," but let's call them classes and subclasses so that we can align our investigation with popular literature. These "classes and subclasses" provide most of the features of classes we find in languages like Smalltalk⁹
-
-- Classes are responsible for creating objects and initializing them with properties (like the current balance);
-- Classes are responsible for "own" methods, Objects delegate method handling to classes (and superclasses);
-- Methods directly manipulate an object's properties.
-
-Smalltalk was, of course, invented forty years ago⁹⁹ In those forty years, we've learned a lot about what works and what doesn't work in object-oriented programming. Unfortunately, this pattern celebrates that what doesn't work, and glimmers or omits that that works.
-
-## the semantic problem with hierarchies
-
-At a semantic level, classes are the building blocks of an ontology¹⁰⁰ This is often formalized in a diagram:
-
-| AbstractBankAccount | |
-| :--- | :--- |
-| ChequingAccount | SavingsAccount |
-| DollarAccount | VisaDebitAccount HighBalanceAccount |
-
-*An ontology of accounts*
-
-The idea behind class-based OO is to classify (the word) our knowledge about objects into a tree. At the top is the most general knowledge about all objects, and as we travel the tree, we get more and more specific knowledge about specific classes of objects, e.g. representing Visa Debit accounts.
-
-Only the real world doesn't work that way. It really doesn't work that way. In morphology¹⁰¹ for example, we have penguins, birds that swim. And the bat, a mammal that has monotremes.
-
-（此处之后原文出现大量重复且无意义的单词，译文将严格遵循原文内容进行翻译。）
-
-[content]
-# 封装与组合
-
-如果我们愿意，可以对这些类进行链式操作创建一个“类层次结构”。大部分工作都是关于链式构造函数：
-
-```javascript
-function Newable(optionalName, metaobject, optionalSuper) {
-  var name = typeof(optionalName) === 'string'
-    ? optionalName
-    metaobject = typeof(optionalName) === 'string'
-    ? metaobject
-    superClazz = typeof(optionalName) === 'string'
-    ? optionalSuper
-    source = "(function " + name + " () { " +
-    "var r = constructor.apply(this, arguments); " +
-    "return r === undefined ? this : r; " +
-    ")}",
-  clazz = eval(source),
-  if (typeof(metaobject.constructor) === 'function' && typeof(optionalSuper) === 'function') {
-    constructor = function () {
-      optionalSuper.apply(this, arguments);
-      return metaobject.constructor.apply(this, arguments);
-    }
-  } else if (typeof(metaobject.constructor) === 'function') {
-    constructor = metaobject.constructor;
-  } else if (typeof(optionalSuper) === 'function') {
-    constructor = optionalSuper;
-  } else constructor = function () {}
+    : metaobject = typeof(optionalName) === 'string'
+      ? metaobject
+      : superClazz = typeof(optionalName) === 'string'
+        ? optionalSuper
+        : source = "(function " + name + " () { " +
+          "var r = constructor.apply(this, arguments); " +
+          "return r === undefined ? this : r; " +
+          ")}",
+    clazz = eval(source),
+    if (typeof(metaobject.constructor) === 'function' && typeof(optionalSuper) === 'function') {
+      constructor = function () {
+        optionalSuper.apply(this, arguments);
+        return metaobject.constructor.apply(this, arguments);
+      }
+    } else if (typeof(metaobject.constructor) === 'function') {
+      constructor = metaobject.constructor;
+    } else if (typeof(optionalSuper) === 'function') {
+      constructor = optionalSuper;
+    } else constructor = function () {}
   clazz.prototype = extend(Object.create(optionalSuper.prototype), metaobject);
   delete clazz.prototype.constructor;
   return clazz;
@@ -8015,7 +7361,7 @@ tracy.awards();
 
 ## 类层次结构
 
-在理论上，JavaScript 没有类。它有“原型”，在编程论坛里潜伏观察人们争论计算机科学中“类”（class）一词的的确切定义，然后争论 JavaScript 是否拥有类。在本书书中，我们谨慎地使用“元对象”（metaobject）一词，主要是因为“元对象”没有受到 `instanceof` 关键字或关于继承和实例创建的特定规则的束缚。
+在理论上，JavaScript 没有类。它有“原型”，在编程论坛里潜伏观察人们争论计算机科学中“类”（class）一词的确切定义，然后争论 JavaScript 是否拥有类，总是一件很有趣的事。在本书中，我们谨慎地使用“元对象”（metaobject）一词，主要是因为“元对象”没有受到 `instanceof` 关键字或关于继承和实例创建的特定规则的束缚。
 
 在实践中，下面的代码片段被广泛认为是 JavaScript 中“类”的一个范例：
 
@@ -8071,7 +7417,7 @@ ChequingAccount.prototype.process = function (cheque) {
 }
 ```
 
-我们一直称这种模式为“原型委托”（Delegating to Prototypes），但让我们称之为类和子类吧，以便我们的研究与流行文献保持一致。这些“类和子类”提供了我们在 Smalltalk⁹ 等语言中发现的类类功能：
+我们一直称这种模式为“原型委托”（Delegating to Prototypes），但让我们称之为类和子类吧，以便我们的研究与流行文献保持一致。这些“类和子类”提供了我们在 Smalltalk⁹ 等语言中发现的类功能：
 
 - 类负责创建对象并用属性初始化它们（如当前余额）；
 - 类负责“拥有”方法，对象将方法处理委托给类（以及超类）；
@@ -8092,23 +7438,20 @@ Smalltalk 是当然，发明于四十年前⁹⁹。在这四十年里，我们�
 
 基于类的面向对象编程背后的思想是将关于对象的知识分类（这个词）到一棵树中。顶端是关于所有对象的通用知识，随着我们在树上移动，我们获得关于特定对象类越来越具体的知识，例如，代表 Visa 借记账户。
 
-只是现实世界并不是这样运作的。真的不是这样运作的。例如，在形态学¹⁰¹中，我们有企鹅，会游泳的鸟。还有蝙蝠，一种具有单孔目特征的哺乳动物。
+只是现实世界并不是这样运作的。真的不是这样。例如，在形态学¹⁰¹中，我们有企鹅，会游泳的鸟。还有蝙蝠，一种具有单孔目特征的哺乳动物。
 
 （注：由于原文文本从某部分开始出现大量重复且无意义的单词组合，译文将严格遵循原文内容进行翻译。）
-
-
-
 
 # 继承、本体论与语义类型
 
 - 外部销售人员
 - 电子组件外部销售人员
-- 计算机外外部销售人员
+- 计算机外部销售人员
 - 测试设备外部销售人员
 
 这是基于这样一个事实：内部销售人员的变体与外部销售人员的变体是不相交的。这意味着我们必须将原型组织成一个“类层次结构”吗？不一定。有两个影响我们选择的重大因素：
 
-首先，重组的案例与重组的可能性：即使有封装，类层次结构相比于组合元对象或委托给原型，仍然仍然是缺乏灵活性的。这可能是一件好事，因为它可以防止意外实现一个“大客户外部销售人员”，并且让我们能够从代码中发现我们对领域限制的理解。
+首先，重组的案例与重组的可能性：即使有封装，类层次结构相比于组合元对象或委托给原型，仍然是缺乏灵活性的。这可能是一件好事，因为它可以防止意外实现一个“大客户外部销售人员”，并且让我们能够从代码中发现我们对领域限制的理解。
 
 其次，类在实体生命周期内的不变性。销售人员会在内部和外部之间移动吗？会在从中小企业（SMB）到大客户之间移动吗？在 OOP 风格中，更改类是稀有的。当前 JavaScript 版本对更改对象的原型支持并不均匀，这令程序员感到意料之外，并且会产生巨大的性能开销。通常，创建一个具有新原型链的新实体（该链在其他方面是旧实体的副本）更容易，或者将我们预计会变化的东西建模为状态机。如果人们倾向于保持为内部或外部销售人员，但在大客户和小企业之间切换更频繁，我们可以将 `accountType` 建模为一个属性，并将其行为委托或转发给它。
 
@@ -8158,7 +7501,7 @@ moneyOrder = {
 deposit(currentAccount, moneyOrder);
 ```
 
-这里的通用思想是，只要我们传递给 `deposit` 的一个具有 `dollars` 和 `cents` 属性的实例，函数就能工作。我们可以认为 `hasDollarsAndCents` 是是一种“类型”，可以说在 JavaScript 这样的动态语言中编程，是在一个类型与实体之间存在多多关系的世界中编程。
+这里的通用思想是，只要我们传递给 `deposit` 的一个具有 `dollars` 和 `cents` 属性的实例，函数就能工作。我们可以认为 `hasDollarsAndCents` 是一种“类型”，可以说在 JavaScript 这样的动态语言中编程，是在一个类型与实体之间存在多对多关系的世界中编程。
 
 每一个拥有 `dollars` 和 `cents` 的实体都拥有想象中的类型 `hasDollarsAndCents`，而每一个需要 `hasDollarsAndCents` 属性参数的函数，都是一个需要 `hasDollarsAndCents` 类型参数的函数。
 
@@ -8204,8 +7547,8 @@ deposit(currentAccount, moneyOrder.amount);
 
 ```javascript
 var backTaxesOwed = {
-  dollars: 10,874,
-  cents: 06
+  dollars: 10874,
+  cents: 6
 }
 ```
 
@@ -8214,15 +7557,14 @@ var rentReceipt = {
   dollars: 420,
   cents: 0,
   unit: 504,
+  month: 6,
+  year: 1962
 }
 ```
 
-# 继承、本体论与语义类型
-
-month: 6,
-year: 1962
-
+```javascript
 deposit(backTaxesOwed, rentReceipt);
+```
 
 从结构上说，`deposit` 与任何两个拥有 `DollarsAndCents` 的东西兼容。但并不是所有拥有 `DollarsAndCents` 的东西在语义上都适合用于存款。这就是为什么一些 OO 语言社区在这里开发并使用结合了语义的系统。
 
@@ -8259,13 +7601,11 @@ function Struct (template) {
 function Struct () {
   var name = arguments[0];
   keys = [].slice.call(arguments, 1);
-  constructor = eval("function "+name+"(argument) { return initialize.call(this, argument));");
+  constructor = eval("function " + name + "(argument) { return initialize.call(this, argument); }");
 }
-```
 
-```javascript
 function initialize(argument) {
-  if (constructor.prototype.prototypeOf(this)) {
+  if (constructor.prototype.isPrototypeOf(this)) {
     var struct = this;
 
     keys.forEach(function (key) {
@@ -8307,6 +7647,8 @@ cheque instanceof RecordOfPayment;
 尽管 `Depositable` 和 `RecordOfPayment` 相同的结构类型，但它们是不同的语义类型，我们可以通过 `instanceof`（以及 `Object.isPrototypeOf`）检测出差异。
 
 # 继承、本体论与语义类型
+
+
 
 我们还可以将此测试构建到我们的构造函数中。代码使用了借自 *Effective JavaScript*[108] 的模式，以便你可以编写新的 `Depositable(...)` 或 `Depositable(...)` 并始终获得 `Depositable` 的新实例。这个版本放弃了那种做法，改为使 `Depositable` 原型链，并添加了一个显式的断言方法：
 
@@ -8350,10 +7692,6 @@ return constructor;
 
 [108]http://effectivejs.com
 
-
-
-
-
 # 继承、本体论与语义类型
 
 ```javascript
@@ -8365,23 +7703,25 @@ RecordOfPayment = Struct('RecordOfPayment', 'dollars', 'cents');
 var cheque = new Depositable({dollars: 420, cents: 0});
 ```
 
-Depositable(cheque);
+`Depositable(cheque)`;
+
 // true
 
-RecordOfPayment.assertIsPrototype(cheque);
+`RecordOfPayment.assertIsPrototype(cheque)`;
+
 // Type Error: [object Object] is not a RecordOfPayment
 
 我们可以通过向关键函数添加断言来使用这些“语义化”结构体：
 
 ```javascript
 function deposit(account, instrument) {
-Depositable.assertIsPrototypeOf(instrument);
+  Depositable.assertIsPrototypeOf(instrument);
 
-account.dollars += instrument.dollars;
-account.cents += instrument.cents;
-account.dollars += Math.floor(account.cents / 100);
-account.cents = account.cents % 100;
-return account;
+  account.dollars += instrument.dollars;
+  account.cents += instrument.cents;
+  account.dollars += Math.floor(account.cents / 100);
+  account.cents = account.cents % 100;
+  return account;
 }
 ```
 
@@ -8444,6 +7784,7 @@ a instanceof C
 沙地车不是甲虫。它看起来不像甲虫。它曾是一只甲虫，但现在是沙地车。“曾是”是一种描述一个对象使用另一个对象作为其实现的关系，但并没有隐含等价性。“曾是”是一种方便的关系。
 
 > *image (c) 2010 Christina Spicuza. Some rights reserved
+
 *Image (c) 2011. Some rights reserved
 
 ## 表达式问题
@@ -8475,7 +7816,8 @@ var Circle = encapsulate({
 或者使用结构体的函数：
 
 > <sup>109</sup>https://en.wikipedia.org/wiki/Expression_problem
-<sup>110</sup>http://c2.com/cgi/wiki?ExpressionProblem
+
+> <sup>110</sup>http://c2.com/cgi/wiki?ExpressionProblem
 
 # 继承、本体论与语义类型
 
@@ -8505,15 +7847,12 @@ function area(shape) {
 这两种操作使其中一个成为一等公民，而另一个成为二等公民。对象解决方案使操作是一等公民，而形状是二等公民。我们可以通过添加新功能看到这一点：
 
 - 1. 如果我们添加一个新的形状（例如三角形），使用对象解决方案是很容易的：关于三角形的所有知识都在一个地方。使用函数解决方案则很困难：我们必须小心地在每个函数中添加三角形三角形。
+
 - 2. 如果我们添加一个新的操作（例如返回包围形状的最小正方形），使用函数解决方案：我们添加一个新函数并确保它对每种形状都有处理。使用对象解决方案则很困难：我们必须确保为每个对象添加一个新方法。
 
 > 问题源于此：给定一组实体和一组对这些实体的操作，我们如何在不重新编译、不使用不安全操作（如类型转换）并维护类型安全的情况下添加新实体和新操作？问题的通用形式不涉及类型安全，但确实涉及设计的优雅性。
 
 在一个简单的（两个对象和两个方法）示例中，表达式问题似乎并不是什么大障碍。但想象一下我们正在大规模上运行，具有类层次体系的类
-
-
-
-
 
 # 继承、本体论与语义类型
 
@@ -8538,6 +7877,7 @@ function area(shape) {
 考虑战斗机撞击另一颗陨石。或者另一架战斗机。或者陨石撞击战斗机。如果我们写一个方法 `.crashInto(otherObject)`，立刻就有了一个反模式，有些事情本该是对称的，但我们却强迫它们产生不对称性。这不像因为我们没有一个而强迫类 A 继承 B
 
 ¹¹https://en.wikipedia.org/wiki/PL/SQL
+
 ¹²https://en.wikipedia.org/wiki/Polymorphism_
 
 # 继承、本体论与语义类型
@@ -8616,56 +7956,6 @@ someFighter.crashInto(someMeteor);
 
 在这种方案中，我们调用 `someFighter.crashInto(someMeteor)`，`FighterPrototype.crashInto` 调用了 `someMeteor.isStruckByAFighter`。
 
-在这种方案中，我们调用 `someFighter.crashInto(someMeteor)`，`FighterPrototype.crashInto` 调用了 `someMeteor.isStruckByAFighter`。
-
-在这种方案中，我们调用 `someFighter.crashInto(someMeteor)`，`FighterPrototype.crashInto` 调用了 `someMeteor.isStruckByAFighter`。
-
-在这种方案中，我们调用 `someFighter.crashInto(someMeteor)`，`FighterPrototype.crashInto` 调用了 `someMeteor.isStruckByAFighter`。
-
-在这种方案中，我们调用 `someFighter.crashInto(someMeteor)`，`FighterPrototype.crashInto` 调用了 `someMeteor.isStruckByAFighter`。
-
-在这种方案中，我们调用 `someFighter.crashInto(someMeteor)`，`FighterPrototype.crashInto` 调用了 `someMeteor.isStruckByAFighter`。
-
-在这种方案中，我们调用 `someFighter.crashInto(someMeteor)`，`FighterPrototype.crashInto` 调用了 `someMeteor.isStruckByAFighter`。
-
-在这种方案中，我们调用 `someFighter.crashInto(someMeteor)`，`FighterPrototype.crashInto` 调用了 `someMeteor.isStruckByAFighter`。
-
-在这种方案中，我们调用 `someFighter.crashInto(someMeteor)`，`FighterPrototype.crashInto` 调用了 `someMeteor.isStruckByAFighter`。
-
-在这种方案中，我们调用 `someFighter.crashInto(someMeteor)`，`FighterPrototype.crashInto` 调用了 `someMeteor.isStruckByAFighter`。
-
-在这种方案中，我们调用 `someFighter.crashInto(someMeteor)`，`FighterPrototype.crashInto` 调用了 `someMeteor.isStruckByAFighter`。
-
-在这种方案中，我们调用 `someFighter.crashInto(someMeteor)`，`FighterPrototype.crashInto` 调用了 `someMeteor.isStruckByAFighter`。
-
-在这种方案中，我们调用 `someFighter.crashInto(someMeteor)`，`FighterPrototype.crashInto` 调用了 `someMeteor.isStruckByAFighter`。
-
-在这种方案中，我们调用 `someFighter.crashInto(someMeteor)`，`FighterPrototype.crashInto` 调用了 `someMeteor.isStruckByAFighter`。
-
-在这种方案中，我们调用 `someFighter.crashInto(someMeteor)`，`FighterPrototype.crashInto` 调用了 `someMeteor.isStruckByAFighter`。
-
-在这种方案中，我们调用 `someFighter.crashInto(someMeteor)`，`FighterPrototype.crashInto` 调用了 `someMeteor.isStruckByAFighter`。
-
-在这种方案中，我们调用 `someFighter.crashInto(someMeteor)`，`FighterPrototype.crashInto` 调用了 `someMeteor.isStruckByAFighter`。
-
-在这种方案中，我们调用 `someFighter.crashInto(someMeteor)`，`FighterPrototype.crashInto` 调用了 `someMeteor.isStruckByAFighter`。
-
-在这种方案中，我们调用 `someFighter.crashInto(someMeteor)`，`FighterPrototype.crashInto` 调用了 `someMeteor.isStruckByAFighter`。
-
-在这种方案中，我们调用 `someFighter.crashInto(someMeteor)`，`FighterPrototype.crashInto` 调用了 `someMeteor.isStruckByAFighter`。
-
-在这种方案中，我们调用 `someFighter.crashInto(someMeteor)`，`FighterPrototype.crashInto` 调用了 `someMeteor.isStruckByAFighter`。
-
-在这种方案中，我们调用 `someFighter.crashInto(someMeteor)`，`FighterPrototype.crashInto` 调用了 `someMeteor.isStruckByAFighter`。
-
-在这种方案中，我们调用 `someFighter.crashInto(someMeteor)`，`FighterPrototype.crashInto` 调用了 `someMeteor.isStruckByAFighter`。
-
-（此处省略重复的文本内容）
-
-继承、本体论与语义类型
-
-279
-
 ## 多分派发
 
 在“表达式问题”中，我们看到 JavaScript 的单分派发系统很难建模在两个（或更多）语义类型上的交互。我们的示例是建模战斗机与陨石之间的碰撞，我们希望结果取决于战斗机还是陨石撞击了另一个战斗机还是陨石。
@@ -8710,10 +8000,6 @@ class Fighter implements Collidable {
 因为这是不可行的。尽管我们可以根据参数类型对 crashInto 进行特化，但 Java 编译器在编译时而不是运行时解析这种特化。它是早期绑定的。因此，如果我们写类似这样的伪 Java 代码：
 
 ¹¹https://en.wikipedia.org/wiki/Common_Lisp
-
-
-
-
 
 # 继承、本体论与语义类型
 
@@ -8989,14 +8275,12 @@ ArmoredFighterPrototype.crashInto = function (q) {
 
 一个更好的设计可能会在运行时引入反射和解构。
 
-
-
-
 ## 元对象协议 (Metaobject Protocols)
 
 ![](img/8b9a265792032f26cdf0efc975d22328_294_0.png)
 
 ^115ᵇhttps://www.flickr.com/photos/baristahoon/8664290273
+
 ^116Cime Espresso Machine Factory, Copyright 2012, Jong Hoon Lee 版所有
 
 ### 本章内容
@@ -9047,7 +8331,8 @@ QuadTree.defineMethod('population', function () {
 我们稍后会解释为什么。我们如何让它工作呢？让我们从这里开始：
 
 > ¹https://en.wikipedia.org/wiki/Metaobject#Metaobject_protocol
->²https://en.wikipedia.org/wiki/Quadtree
+
+> ²https://en.wikipedia.org/wiki/Quadtree
 
 ### 元对象协议
 
@@ -9209,10 +8494,8 @@ function Class (superclass) {
   };
 }
 ```
+
 （注：输入文本明显是交叉的。我将根据提供的内容提供一个去交叉后的清理版本。）
-
-
-
 
 ### 元对象协议
 
@@ -9384,6 +8667,7 @@ FluentClass.defineMethod('defineMethod', function (name, body) {
 ```
 
 普通方法的语义是，如果它没有显式返回一个值，它返回 `undefined`。FluentClass 的语义是，如果它没有显式返回一个值，它返回接收者。
+
 现在，我们可以写：
 
 ```
@@ -9437,10 +8721,6 @@ var tree = MutableQuadTree
 
 为了创建具有单例原型的对象，可以使用拥有自己的 `.create` 方法的类：
 
-
-
-
-
 ### 元对象协议
 
 ```javascript
@@ -9468,7 +8748,7 @@ var SingletonPrototypicalCell = SingletonPrototypicalClass.create();
 var SingletonPrototypicalQuadTree = SingletonPrototypicalClass.create();
 ```
 
-我们知道 `SingletonPrototypicalCell` 和 `SingletonProypicalQuadTree` 的每一个实例都将拥有它们自己的单例原型。
+我们知道 `SingletonPrototypicalCell` 和 `SingletonPrototypicalQuadTree` 的每一个实例都将拥有它们自己的单例原型。
 
 ## 混入（mixins）
 
@@ -9485,7 +8765,7 @@ var SingletonPrototypicalQuadTree = SingletonPrototypicalClass.create();
 ### 元对象协议
 
 ```javascript
-ownvar MutableQuadTree = Class.create();
+var MutableQuadTree = Class.create();
 
 extend(MutableQuadTree, {
   defineMethod: function (name, body) {
@@ -9594,11 +8874,15 @@ Counter
   .defineMethod('count', function () { return this._count; });
 
 var c = Counter.create();
+```
 
 ```javascript
 function log(message, callback) {
+
   console.log(message);
+
   return callback();
+
 }
 ```
 
@@ -9630,29 +8914,43 @@ log("有效", c.increment);
 
 ```javascript
 function SelfBindingize(klass) {
+
   klass.defineProperty = function(name, body) {
+
     Object.defineProperty(this.prototype, name, {
+
       get: function () {
+
         return body.bind(this);
+
       }
+
     });
+
     return this;
+
   }
+
 }
 ```
 
 ```javascript
 var SelfBindingCounter = Class.create();
+
 SelfBindingize(SelfBindingCounter);
 ```
 
 ```javascript
 SelfBindingCounter
+
   .defineMethod('initialize', function () { this._count = 0; });
+
   .defineMethod('increment', function () { return ++this._count; });
+
   .defineMethod('count', function () { return this.count; });
 
 var cc = SelfBindingCounter.create();
+```
 
 ```javascript
 function log(message, callback) {
@@ -9668,10 +8966,6 @@ log("无需思考即可有效", cc.increment());
 ### 组合（composition）
 
 正如我们预期的那样，`SelfBindingize` 与 `Singletonize` 兼容得很好，就像 `Fluentize` 一样。但提到 `Fluentize`，`Singletonize` 与 `Fluentize` 并不兼容。它们创建了 `defineMethod` 的新版本，如果你尝试使用两者，最后执行的一个将生效。
-
-
-
-
 
 ## 元对象协议 (Metaobject Protocols)
 
@@ -9696,8 +8990,11 @@ log("无需思考即可有效", cc.increment());
 根据问题领域的不同，程序员可能关注诸如下事项：
 
 > ¹²https://github.com/gititboards/RubyOnRails
+
 - 在执行方法之前检查权限
+
 - 记录方法的调用和/或结果
+
 - 在持久化到存储之前检查条目的有效性。
 
 每个关注点都可以写成某种类的 mixin。在 JavaScript Allong¹² 中，我们查看了使用组合器（combinators）对方法应用特殊语义的技术。例如，这里有一个用于“验证”方法参数的简单组合器：
@@ -9786,62 +9083,6 @@ function AccountList () {
   this.accounts = [];
 }
 ```
-
-```
-AccountList.prototype.add = fluent( validates( AccountList.prototype.add ) );
-
-// ...
-```
-
-```
-AccountList.prototype.add = function (account) {
-  this.accounts.push(account);
-}
-```
-
-你无法在赋值之前方法进行装饰！这里是同一个问题的变体：
-
-```
-function AccountList () {
-  this.accounts = [];
-}
-```
-
-```
-AccountList.prototype.add = fluent( validates( function (account) {
-  this.accounts.push(account);
-}));
-
-// ...
-```
-
-到目前为止还不错，但：
-
-```
-function IndexedAccountList () {
-  this.accounts = [];
-}
-```
-
-IndexedAccountList.prototype = Object.create(AccountList.prototype);
-
-```
-IndexedAccountList.prototype.add = function (account) {
-  this.accounts[account.id] = account;
-}
-```
-
-```
-IndexedAccountList.prototype.at = function (id) {
-  return this.accounts[id];
-}
-```
-
-我们的 IndexedAccountList.prototype.add 覆盖了 AccountList.prototype.add... 在此过程中，覆盖了 fluent 和 validates 所做的修改。如果你纯粹将原型继承作为共享行为的便利方法，那么这是完全合理的。但如果你实际上在尝试建模正式的类，那么你可能总是希望 .add 方法验证其参数并链式返回接收者。也许你只想覆盖方法在内部添加数据的方式，而不修改你向外部世界表达的“契约”？
-
-无论对覆盖已装饰方法的语义有何种具体的解释，更大的问题仍然存在：在类中使用函数来装饰方法时存在某些脆弱性。它们并不总是能够整齐、洁洁地组合。
-
-
 
 
 
@@ -10096,123 +9337,204 @@ function canBeMergedInto(object1, object2) {
 
 // shim if allong.es.callLeft not available
 
+```javascript
 var callLeft2 = (function () {
+
   if (typeof callLeft == 'function') {
+
     return callLeft;
+
   }
+
   else if (typeof allong === 'object') {
+
     // ... logic continues in original source
+
   }
+
   // Note: The OCR text was fragmented, but based on provided context:
+
 })();
 ```
-
-
-
-
 
 # 附录：源代码
 
 ```javascript
+
 function nameAndLength(name, length, body) {
+
     var abcs = [ 'q', 'w', 'e', 'r', 't', 'y', 'u', 'i', 'o', 'p',
+
                'a', 's', 'd', 'f', 'g', 'h', 'j', 'k', 'l',
+
                'z', 'x', 'c', 'v', 'b', 'n', 'm' ];
+
     pars = abcs.slice(0, length);
+
     src = "function " + name + "(" + pars.join(',') + ") { return body.apply(\nthis, arguments); }";
+
     return eval(src);
+
 }
+
 ```
 
 ```javascript
+
 function imitate(exemplar, body) {
+
     return nameAndLength(exemplar.name, exemplar.length);
+
 }
+
 ```
 
 ```javascript
+
 function when (guardFn, optionalFn) {
+
     function guarded (fn) {
+
         return imitate(fn, function () {
+
             if (guardFn.apply(this, arguments))
+
                 return fn.apply(this, arguments);
+
         });
+
     }
+
     return optionalFn == null
+
         ? guarded
+
         : guarded(optionalFn);
+
 }
+
 ```
 
 ```javascript
+
 function Match () {
+
     var fns = [].slice.call(arguments, 0);
+
     lengths = pluckWith('length', fns);
+
     length = Math.min.apply(null, lengths);
+
     names = pluckWith('name', fns).filter(function (name) { 
+
         return name !== '';
+
     });
+
     name = names.length === 0
+
         ? '?'
+
         : names[0];
+
 }
+
 ```
 
 ```javascript
+
 return nameAndLength(name, length, function () {
+
     var i,
+
     value;
 
     for (i in fns) {
+
         value = fns[i].apply(this, arguments);
 
         if (value !== undefined) return value;
+
     }
+
 });
+
 ```
 
 ```javascript
+
 function isType (type) {
+
     return function (arg) {
+
         return typeof(arg) === type;
+
     }
+
 }
+
 ```
 
 ```javascript
+
 function instanceOf (clazz) {
+
     return function (arg) {
+
         return arg instanceof clazz;
+
     }
+
 }
+
 ```
 
 ```javascript
+
 function isPrototypeOf (proto) {
+
     return Object.prototype.isPrototypeOf.bind(proto);
+
 }
+
 ```
 
 ```javascript
+
 function MatchTypes () {
+
     var matchers = [].slice.call(arguments, 0, arguments.length - 1);
+
     body = arguments[arguments.length - 1];
 
     function typeChecked () {
+
         var i,
+
         arg,
+
         value;
 
         if (arguments.length !== matchers.length) return;
+
         for (i in arguments) {
+
             arg = arguments[i];
+
             if (matchers[i].call(this, arg)) return;
+
         }
+
         value = body.apply(this, arguments);
+
         return value === undefined ? null : value;
+
     }
+
     return imitate(body, typeChecked);
+
 }
+
 ```
 
 # 实用函数
@@ -10220,153 +9542,229 @@ function MatchTypes () {
 在本书中，我们在代码段和示例中许多实用函数。以下是我们从其他来源借用的函数列表。大多数源于 underscore^127 或 allong.es^126。
 
 ```javascript
+
 var allong = require('allong.es');
+
 var _ = require('underscore');
+
 ```
 
 ## extend
 
-可以在 underscore^127 库中找到 extend。
+可以在 underscore^127 库中找到 `extend`。
 
 ```javascript
+
 var extend = _.extend;
+
 ```
 
 或者你可以使用这种写法：
 
 ```javascript
+
 var __slice = [].slice;
 
 function extend () {
+
   var consumer = arguments[0],
+
     providers = __slice.call(arguments, 1),
+
     key,
+
     i,
+
     provider;
 
   for (i = 0; i < providers.length; ++i) {
+
     provider = providers[i];
+
     for (key in provider) {
+
       if (provider.hasOwnProperty(key)) {
+
         consumer[key] = provider[key];
+
       }
+
     }
+
   }
+
   return consumer;
+
 }
+
 ```
 
 ## pipeline
 
-pipeline 按照函数调用的顺序组合函数：
+`pipeline` 按照函数调用的顺序组合函数：
 
 ^127 http://underscorejs.org
 ^126 http://allong.es
 ^127 http://underscorejs.org
 
 ```javascript
+
 var pipeline = allong.es.pipeline;
 
 function square (n) { return n * n; }
+
 function increment (n) { return n + 1; }
+
 ```
 
 ```javascript
+
 pipeline(square, increment)(6)
+
 //=> 37
+
 ```
 
 ## tap
 
-tap 将值传递给函数，丢弃结果并返回原始值：
+`tap` 将值传递给函数，丢弃结果并返回原始值：
 
 ```javascript
+
 var tap = allong.es.tap;
+
 ```
 
 ```javascript
+
 tap(6, function (n) {
+
   console.log("Hello there, " + n);
+
 });
+
 //=> Hello there, 6
+
 ```
 
 ## map
 
-map 将函数应用到数组上，返回一个结果数组：
+`map` 将函数应用到数组上，返回一个结果数组：
 
 ```javascript
+
 var map = allong.es.map;
+
 ```
 
 ```javascript
+
 map([1, 2, 3], function (n) {
+
   return n * n;
+
 });
+
 //=> [1, 4, 9]
+
 ```
 
 ## variadic
 
-variadic 接收一个函数并返回一个“变参函数”，该函数将参数收集到数组中并传递给最后一个参数：
+`variadic` 接收一个函数并返回一个“变参函数”，该函数将参数收集到数组中并传递给最后一个参数：
 
 ```javascript
+
 var variadic = allong.es.variadic;
 
 var a = variadic(function (args) {
+
   return { args: args };
+
 });
+
 ```
 
 ```javascript
+
 a(1, 2, 3, 4, 5)
+
 //=> args: [1, 2, 3, 4, 5]
+
 ```
 
 ```javascript
+
 var b = variadic(function (first, second, rest) {
+
   return { first: first, second: second, rest: rest };
+
 });
+
 ```
 
 ```javascript
+
 b(1, 2, 3, 4, 5)
+
 //=> first: 1, second: 2, rest: [3, 4, 5]
+
 ```
 
 ## unvariadic
 
-unvariadic 接收一个变参函数并将其转换为固定参数个数的函数：
+`unvariadic` 接收一个变参函数并将其转换为固定参数个数的函数：
 
 ```javascript
+
 var unvariadic = allong.es.unvariadic;
+
 ```
 
 ```javascript
+
 function ensuresArgumentsAreNumbers (fn) {
+
   return unvariadic(fn.length, function () {
+
     for (var i in arguments) {
+
       if (typeof(arguments[i]) !== 'number') {
+
         throw 'Ow! NaN!!';
+
       }
+
     }
+
     return fn.apply(this, arguments);
+
   });
+
 }
+
 ```
 
 ```javascript
+
 function myAdd (a, b) {
+
   return a + b;
+
 }
+
 ```
 
 ```javascript
+
 var myCheckedAdd = ensuresArgumentsAreNumbers(myAdd);
+
 ```
 
 ```javascript
-myCheckedAdd.length
-//=> 2
-```
 
+myCheckedAdd.length
+
+//=> 2
+
+```

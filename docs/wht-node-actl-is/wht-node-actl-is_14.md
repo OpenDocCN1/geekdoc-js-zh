@@ -1,3 +1,5 @@
+
+
 # 现代异步管道与错误处理
 
 > [原文链接](https://www.thenodebook.com/streams/modern-pipelines-error-handling)
@@ -10,7 +12,7 @@
 
 本章介绍了如何正确连接流——具有适当的错误传播、资源清理和跨所有阶段的背压处理。
 
-## pipe() 方法
+## `pipe()` 方法
 
 你已经从可读和可写章节中学习了`pipe()`的工作方式。作为一个快速回顾：`pipe()`将可读流连接到可写流，通过在`write()`返回`false`时调用`pause()`以及在可写流发出`drain`时调用`resume()`来自动处理背压。我们在可写流章节讨论背压时广泛介绍了这种模式。
 
@@ -27,78 +29,86 @@ readable.pipe(transform1).pipe(transform2).pipe(writable);
 ```js
 import { createReadStream, createWriteStream } from "fs";
 import { createGzip } from "zlib";
- createReadStream("app.log")
- .pipe(createGzip())
- .pipe(createWriteStream("app.log.gz"));
+
+createReadStream("app.log")
+  .pipe(createGzip())
+  .pipe(createWriteStream("app.log.gz"));
 ```
 
-三个流，两个 `pipe()` 调用。文件读取器产生数据块，gzip 转换器压缩它们，文件写入器保存压缩数据。内存使用保持有界，因为每个阶段都尊重背压信号。
+三个流，两个`pipe()`调用。文件读取器产生数据块，gzip 转换器压缩它们，文件写入器保存压缩数据。内存使用保持有界，因为每个阶段都尊重背压信号。
 
-但 `pipe()` 有一个问题：**错误处理**。
+但`pipe()`有一个问题：**错误处理**。
 
-下面是管道中发生错误时的情况。遇到错误的流会发出一个 `error` 事件。但这个错误**不会传播**到管道中的其他流。您已经从可读和可写章节中了解到，每个流都需要自己的错误处理器，否则错误会崩溃您的进程。但在管道中，这变得尤为痛苦。
+下面是管道中发生错误时的情况。遇到错误的流会发出一个`error`事件。但这个错误**不会传播**到管道中的其他流。您已经从可读和可写章节中了解到，每个流都需要自己的错误处理器，否则错误会崩溃您的进程。但在管道中，这变得尤为痛苦。
 
 ```js
 const reader = createReadStream("input.txt");
 const transform = createGzip();
 const writer = createWriteStream("output.gz");
- reader.pipe(transform).pipe(writer);
- reader.on("error", (err) => {
- console.error("Reader error:", err);
+
+reader.pipe(transform).pipe(writer);
+
+reader.on("error", (err) => {
+  console.error("Reader error:", err);
 });
- transform.on("error", (err) => {
- console.error("Transform error:", err);
+
+transform.on("error", (err) => {
+  console.error("Transform error:", err);
 });
- writer.on("error", (err) => {
- console.error("Writer error:", err);
+
+writer.on("error", (err) => {
+  console.error("Writer error:", err);
 });
 ```
 
 您需要三个单独的错误处理器。错过任何一个，您的进程就会崩溃。这很繁琐，容易出错，坦白说，对于应该简单直接的事情来说，这有点荒谬。
 
-但问题更加严重。当管道中间发生错误时，其他流**不会自动停止**。假设在处理数据块时转换器抛出错误。转换器发出 `error` 事件并停止处理。但读取器继续读取并尝试写入转换器，此时转换器处于错误状态。写入器正在等待永远不会到来的数据，并且可能永远不会发出 `finish` 事件，因为管道从未干净地完成。
+但问题更加严重。当管道中间发生错误时，其他流**不会自动停止**。假设在处理数据块时转换器抛出错误。转换器发出`error`事件并停止处理。但读取器继续读取并尝试写入转换器，此时转换器处于错误状态。写入器正在等待永远不会到来的数据，并且可能永远不会发出`finish`事件，因为管道从未干净地完成。
 
-您最终会得到**悬空资源**。未关闭的文件句柄。未清理的网络连接。未释放的内存缓冲区。管道处于部分失败状态，清理它需要手动对每个流调用 `destroy()`：
+您最终会得到**悬空资源**。未关闭的文件句柄。未清理的网络连接。未释放的内存缓冲区。管道处于部分失败状态，清理它需要手动对每个流调用`destroy()`：
 
 ```js
 reader.on("error", (err) => {
- reader.destroy();
- transform.destroy();
- writer.destroy();
- console.error("Pipeline failed:", err);
+  reader.destroy();
+  transform.destroy();
+  writer.destroy();
+  console.error("Pipeline failed:", err);
 });
- transform.on("error", (err) => {
- reader.destroy();
- transform.destroy();
- writer.destroy();
- console.error("Pipeline failed:", err);
+
+transform.on("error", (err) => {
+  reader.destroy();
+  transform.destroy();
+  writer.destroy();
+  console.error("Pipeline failed:", err);
 });
- writer.on("error", (err) => {
- reader.destroy();
- transform.destroy();
- writer.destroy();
- console.error("Pipeline failed:", err);
+
+writer.on("error", (err) => {
+  reader.destroy();
+  transform.destroy();
+  writer.destroy();
+  console.error("Pipeline failed:", err);
 });
 ```
 
 这很冗长，重复，且脆弱。如果您将新的流添加到管道中，您必须更新所有错误处理器以销毁新的流。
 
-`pipe()` 的另一个限制是：您无法轻松地知道整个管道何时完成。可读流在完成读取时发出 `end` 事件。可写流在完成写入时发出 `finish` 事件。但您应该听哪一个？如果您中间有多个转换器呢？每个转换器都会发出自己的 `end` 事件。最终目标发出 `finish` 事件。您必须跟踪**正确的流上的正确事件**，这取决于管道的结构。
+`pipe()`的另一个限制是：您无法轻松地知道整个管道何时完成。可读流在完成读取时发出`end`事件。可写流在完成写入时发出`finish`事件。但您应该听哪一个？如果您中间有多个转换器呢？每个转换器都会发出自己的`end`事件。最终目标发出`finish`事件。您必须跟踪**正确的流上的正确事件**，这取决于管道的结构。
 
-对于简单的双流场景，`pipe()` 方法可以很好地工作。但对于具有多个阶段和适当错误处理要求的实际生产级管道，`pipe()` 方法就不够用了。这就是为什么引入了 `stream.pipeline()` 的原因。
+对于简单的双流场景，`pipe()`方法可以很好地工作。但对于具有多个阶段和适当错误处理要求的实际生产级管道，`pipe()`方法就不够用了。这就是为什么引入了`stream.pipeline()`的原因。
 
 ## `unpipe()` 方法
 
-在介绍 `pipeline()` 之前，值得介绍一下 `unpipe()` - 虽然您很少会用到它。此方法断开一个管道流：
+在介绍`pipeline()`之前，值得介绍一下`unpipe()` - 虽然您很少会用到它。此方法断开一个管道流：
 
 ```js
 const writer = writable();
 readable.pipe(writer);
- // Later, disconnect
+
+// Later, disconnect
 readable.unpipe(writer);
 ```
 
-当您调用 `unpipe()` 时，可读流停止向指定的可写流发送数据。如果您不带参数调用 `unpipe()`，它将断开与所有目标流的关系：
+当您调用`unpipe()`时，可读流停止向指定的可写流发送数据。如果您不带参数调用`unpipe()`，它将断开与所有目标流的关系：
 
 ```js
 readable.unpipe();
@@ -108,10 +118,10 @@ readable.unpipe();
 
 ```js
 socket.on("data", (chunk) => {
- if (shouldRedirect(chunk)) {
- socket.unpipe(fileWriter);
- socket.pipe(differentWriter);
- }
+  if (shouldRedirect(chunk)) {
+    socket.unpipe(fileWriter);
+    socket.pipe(differentWriter);
+  }
 });
 ```
 
@@ -119,18 +129,19 @@ socket.on("data", (chunk) => {
 
 关于`unpipe()`的主要事情是要知道它存在，并且当你取消管道一个流时，目标不会自动结束。当`unpipe()`被调用时，它会从源流中移除目标流的监听器。源流的状态取决于是否有任何消费者保持连接 - 如果所有管道目标都被移除且没有`data`事件监听器，流会切换回暂停模式。如果有其他消费者存在（其他管道目标或数据监听器），源流会继续发出`data`事件。如果你想关闭目标，你需要手动调用它的`end()`。
 
-## stream.pipeline()
+## `stream.pipeline()`
 
 `stream.pipeline()`是组合流的现代方法。这个函数被添加到 Node.js 中，专门用来解决`pipe()`的错误处理和清理问题。以下是基本用法：
 
 ```js
 import { pipeline } from "stream";
- pipeline(readable, transform, writable, (err) => {
- if (err) {
- console.error("Pipeline failed:", err);
- } else {
- console.log("Pipeline succeeded");
- }
+
+pipeline(readable, transform, writable, (err) => {
+  if (err) {
+    console.error("Pipeline failed:", err);
+  } else {
+    console.log("Pipeline succeeded");
+  }
 });
 ```
 
@@ -142,11 +153,11 @@ pipeline(stream1, stream2, ..., streamN, callback)
 
 `pipeline()`做了`pipe()`没有做的三件事：
 
-1.  **自动错误传播**：如果管道中的任何流发出错误，`pipeline()`会停止管道并调用回调函数传递该错误。你不需要在每个流上单独的错误处理器。
+1. **自动错误传播**：如果管道中的任何流发出错误，`pipeline()`会停止管道并调用回调函数传递该错误。你不需要在每个流上单独的错误处理器。
 
-1.  **自动清理**：当发生错误（或当管道完成时），`pipeline()`会在管道中的所有流上调用`destroy()`。文件句柄被关闭，缓冲区被释放，连接被拆除。
+2. **自动清理**：当发生错误（或当管道完成时），`pipeline()`会在管道中的所有流上调用`destroy()`。文件句柄被关闭，缓冲区被释放，连接被拆除。
 
-1.  **单个完成回调**：一个回调处理所有事情。
+3. **单个完成回调**：一个回调处理所有事情。
 
 让我们看看这在实践中是什么样子：
 
@@ -154,17 +165,18 @@ pipeline(stream1, stream2, ..., streamN, callback)
 import { pipeline } from "stream";
 import { createReadStream, createWriteStream } from "fs";
 import { createGzip } from "zlib";
- pipeline(
- createReadStream("input.txt"),
- createGzip(),
- createWriteStream("output.gz"),
- (err) => {
- if (err) {
- console.error("Compression failed:", err);
- } else {
- console.log("Compression succeeded");
- }
- }
+
+pipeline(
+  createReadStream("input.txt"),
+  createGzip(),
+  createWriteStream("output.gz"),
+  (err) => {
+    if (err) {
+      console.error("Compression failed:", err);
+    } else {
+      console.log("Compression succeeded");
+    }
+  }
 );
 ```
 
@@ -178,15 +190,16 @@ import { createGzip } from "zlib";
 import { pipeline } from "stream/promises";
 import { createReadStream, createWriteStream } from "fs";
 import { createGzip } from "zlib";
- try {
- await pipeline(
- createReadStream("input.txt"),
- createGzip(),
- createWriteStream("output.gz")
- );
- console.log("Compression succeeded");
+
+try {
+  await pipeline(
+    createReadStream("input.txt"),
+    createGzip(),
+    createWriteStream("output.gz")
+  );
+  console.log("Compression succeeded");
 } catch (err) {
- console.error("Compression failed:", err);
+  console.error("Compression failed:", err);
 }
 ```
 
@@ -198,13 +211,13 @@ import { createGzip } from "zlib";
 
 理解内部机制有助于您推理行为并调试问题。当您调用`pipeline(s1, s2, s3, callback)`时，该函数本质上：
 
-1.  使用您在早期章节中学到的相同`pipe()`机制连接流——与我们在可写流章节中涵盖的相同自动背压处理。
+1. 使用您在早期章节中学到的相同`pipe()`机制连接流——与我们在可写流章节中涵盖的相同自动背压处理。
 
-1.  为所有流附加错误监听器以进行协调的错误处理
+2. 为所有流附加错误监听器以进行协调的错误处理
 
-1.  当发生任何错误或完成时，对所有流调用`destroy()`。
+3. 当发生任何错误或完成时，对所有流调用`destroy()`。
 
-1.  一次调用回调，传递错误或未定义。
+4. 一次调用回调，传递错误或未定义。
 
 与手动`pipe()`的主要区别是**错误协调和自动清理**。您获得相同的背压处理（我们在可写流章节中广泛讨论过），但带有生产级的错误管理。
 
@@ -212,30 +225,34 @@ import { createGzip } from "zlib";
 
 ```js
 function simplifiedPipeline(...args) {
- const callback = args.pop();
- const streams = args;
- // Connect streams with pipe()
- for (let i = 0; i < streams.length - 1; i++) {
- streams[i].pipe(streams[i + 1]);
- }
- // Track completion
- const lastStream = streams[streams.length - 1];
- lastStream.on("finish", () => {
- destroyAll(streams);
- callback();
- });
- // Handle errors
- for (const stream of streams) {
- stream.on("error", (err) => {
- destroyAll(streams);
- callback(err);
- });
- }
+  const callback = args.pop();
+  const streams = args;
+
+  // Connect streams with pipe()
+  for (let i = 0; i < streams.length - 1; i++) {
+    streams[i].pipe(streams[i + 1]);
+  }
+
+  // Track completion
+  const lastStream = streams[streams.length - 1];
+  lastStream.on("finish", () => {
+    destroyAll(streams);
+    callback();
+  });
+
+  // Handle errors
+  for (const stream of streams) {
+    stream.on("error", (err) => {
+      destroyAll(streams);
+      callback(err);
+    });
+  }
 }
- function destroyAll(streams) {
- for (const stream of streams) {
- stream.destroy();
- }
+
+function destroyAll(streams) {
+  for (const stream of streams) {
+    stream.destroy();
+  }
 }
 ```
 
@@ -250,14 +267,15 @@ function simplifiedPipeline(...args) {
 ```js
 import { pipeline } from "stream/promises";
 import { createReadStream, createWriteStream } from "fs";
- await pipeline(
- createReadStream("input.txt"),
- async function* (source) {
- for await (const chunk of source) {
- yield chunk.toString().toUpperCase();
- }
- },
- createWriteStream("output.txt")
+
+await pipeline(
+  createReadStream("input.txt"),
+  async function* (source) {
+    for await (const chunk of source) {
+      yield chunk.toString().toUpperCase();
+    }
+  },
+  createWriteStream("output.txt")
 );
 ```
 
@@ -269,14 +287,15 @@ import { createReadStream, createWriteStream } from "fs";
 
 ```js
 async function uppercase(source) {
- for await (const chunk of source) {
- yield chunk.toString().toUpperCase();
- }
+  for await (const chunk of source) {
+    yield chunk.toString().toUpperCase();
+  }
 }
- await pipeline(
- createReadStream("input.txt"),
- uppercase,
- createWriteStream("output.txt")
+
+await pipeline(
+  createReadStream("input.txt"),
+  uppercase,
+  createWriteStream("output.txt")
 );
 ```
 
@@ -284,29 +303,32 @@ async function uppercase(source) {
 
 您甚至可以链式多个生成器转换：
 
+
+
+
 ```js
 await pipeline(
- createReadStream("log.txt"),
- async function* (source) {
- let buffer = "";
- for await (const chunk of source) {
- buffer += chunk.toString();
- const lines = buffer.split("\n");
- buffer = lines.pop();
- for (const line of lines) {
- yield line + "\n";
- }
- }
- if (buffer) yield buffer;
- },
- async function* (source) {
- for await (const line of source) {
- if (!line.startsWith("#")) {
- yield line;
- }
- }
- },
- createWriteStream("filtered.txt")
+  createReadStream("log.txt"),
+  async function* (source) {
+    let buffer = "";
+    for await (const chunk of source) {
+      buffer += chunk.toString();
+      const lines = buffer.split("\n");
+      buffer = lines.pop();
+      for (const line of lines) {
+        yield line + "\n";
+      }
+    }
+    if (buffer) yield buffer;
+  },
+  async function* (source) {
+    for await (const line of source) {
+      if (!line.startsWith("#")) {
+        yield line;
+      }
+    }
+  },
+  createWriteStream("filtered.txt")
 );
 ```
 
@@ -316,7 +338,7 @@ await pipeline(
 
 **关于生成器函数的重要说明**：只有使用`yield`产生的值才会发送到输出流。如果生成器使用`return`来产生最终值，该值**不会**被发送到管道——它只能被直接消耗生成器的代码访问。在管道转换中，始终使用`yield`来输出数据块。
 
-快速旁白：如果您来自 Python，这就像 itertools，但实际上是内置在语言中的。结束旁白。
+快速旁白：如果您来自 Python，这就像`itertools`，但实际上是内置在语言中的。结束旁白。
 
 ## 流管道中的错误处理
 
@@ -324,11 +346,9 @@ await pipeline(
 
 在管道中，这些错误可能来自**多个来源同时**：
 
-+   **源流**可能无法读取（文件不存在、权限被拒绝、网络断开）
-
-+   **转换流**可能遇到无效数据（解析错误、验证失败）
-
-+   **目标流**可能无法写入（磁盘已满、管道损坏、远程端点关闭）
++ **源流**可能无法读取（文件不存在、权限被拒绝、网络断开）
++ **转换流**可能遇到无效数据（解析错误、验证失败）
++ **目标流**可能无法写入（磁盘已满、管道损坏、远程端点关闭）
 
 这些错误中的每一个都会在遇到它的流上表现为一个`error`事件。使用`pipe()`，您必须单独处理每个错误。使用`pipeline()`，所有错误都会被捕获并传递到您的回调或承诺拒绝。
 
@@ -340,14 +360,15 @@ await pipeline(
 
 ```js
 import { rename, unlink } from "fs/promises";
- const tempFile = "output.tmp";
+const tempFile = "output.tmp";
 const finalFile = "output.dat";
- try {
- await pipeline(source, transform, createWriteStream(tempFile));
- await rename(tempFile, finalFile);
+
+try {
+  await pipeline(source, transform, createWriteStream(tempFile));
+  await rename(tempFile, finalFile);
 } catch (err) {
- await unlink(tempFile); // Clean up partial file
- throw err;
+  await unlink(tempFile); // Clean up partial file
+  throw err;
 }
 ```
 
@@ -357,16 +378,17 @@ const finalFile = "output.dat";
 
 ```js
 const tx = await db.beginTransaction();
- try {
- await pipeline(
- source,
- transform,
- new DatabaseWriter(tx)
- );
- await tx.commit();
+
+try {
+  await pipeline(
+    source,
+    transform,
+    new DatabaseWriter(tx)
+  );
+  await tx.commit();
 } catch (err) {
- await tx.rollback();
- throw err;
+  await tx.rollback();
+  throw err;
 }
 ```
 
@@ -380,18 +402,19 @@ const tx = await db.beginTransaction();
 
 ```js
 class SourceStream extends Readable {
- _read() {
- const err = new Error("Read failed");
- err.code = "ERR_SOURCE_READ";
- this.destroy(err);
- }
+  _read() {
+    const err = new Error("Read failed");
+    err.code = "ERR_SOURCE_READ";
+    this.destroy(err);
+  }
 }
- pipeline(source, transform, destination, (err) => {
- if (err && err.code === "ERR_SOURCE_READ") {
- console.error("Source read error:", err);
- } else if (err) {
- console.error("Other error:", err);
- }
+
+pipeline(source, transform, destination, (err) => {
+  if (err && err.code === "ERR_SOURCE_READ") {
+    console.error("Source read error:", err);
+  } else if (err) {
+    console.error("Other error:", err);
+  }
 });
 ```
 
@@ -401,16 +424,18 @@ class SourceStream extends Readable {
 
 ```js
 import { pipeline, finished } from "stream";
- const transform = createSomeTransform();
- finished(transform, (err) => {
- if (err) {
- console.error("Transform specifically failed:", err);
- }
+
+const transform = createSomeTransform();
+finished(transform, (err) => {
+  if (err) {
+    console.error("Transform specifically failed:", err);
+  }
 });
- pipeline(source, transform, destination, (err) => {
- if (err) {
- console.error("Overall pipeline failed:", err);
- }
+
+pipeline(source, transform, destination, (err) => {
+  if (err) {
+    console.error("Overall pipeline failed:", err);
+  }
 });
 ```
 
@@ -424,12 +449,13 @@ import { pipeline, finished } from "stream";
 
 ```js
 import { finished } from "stream";
- finished(someStream, (err) => {
- if (err) {
- console.error("Stream errored:", err);
- } else {
- console.log("Stream finished successfully");
- }
+
+finished(someStream, (err) => {
+  if (err) {
+    console.error("Stream errored:", err);
+  } else {
+    console.log("Stream finished successfully");
+  }
 });
 ```
 
@@ -441,11 +467,12 @@ import { finished } from "stream";
 
 ```js
 import { finished } from "stream/promises";
- try {
- await finished(someStream);
- console.log("Stream finished");
+
+try {
+  await finished(someStream);
+  console.log("Stream finished");
 } catch (err) {
- console.error("Stream errored:", err);
+  console.error("Stream errored:", err);
 }
 ```
 
@@ -455,23 +482,27 @@ import { finished } from "stream/promises";
 
 ```js
 import { finished } from "stream/promises";
- await finished(someStream, { cleanup: true }); // Removes listeners after completion
+
+await finished(someStream, { cleanup: true }); // Removes listeners after completion
 ```
 
-为什么使用 `finished()` 而不是仅仅监听 `end` 或 `finish`？因为流可以通过多种方式结束。流可能会自然地发出 `end`，或者由于错误而被销毁，或者通过 `destroy()` 显式销毁。`finished()` 工具处理所有这些情况，并给你一个表示“这个流无论如何都完成了”的单个回调或承诺。
+为什么使用`finished()`而不是仅仅监听`end`或`finish`？因为流可以通过多种方式结束。流可能会自然地发出`end`，或者由于错误而被销毁，或者通过`destroy()`显式销毁。`finished()`工具处理所有这些情况，并给你一个表示“这个流无论如何都完成了”的单个回调或承诺。
 
-这在需要知道一个复杂管道中的特定流何时完成时很有用，即使整体管道仍在运行。例如，如果你将源流传输到多个目的地（如 tee 或广播模式），你可以使用 `finished()` 来知道每个目的地是否已消耗完所有数据：
+这在需要知道一个复杂管道中的特定流何时完成时很有用，即使整体管道仍在运行。例如，如果你将源流传输到多个目的地（如 tee 或广播模式），你可以使用`finished()`来知道每个目的地是否已消耗完所有数据：
 
 ```js
 const dest1 = createWriteStream("output1.txt");
 const dest2 = createWriteStream("output2.txt");
- source.pipe(dest1);
+
+source.pipe(dest1);
 source.pipe(dest2);
- await Promise.all([
- finished(dest1),
- finished(dest2),
+
+await Promise.all([
+  finished(dest1),
+  finished(dest2),
 ]);
- console.log("Both destinations finished");
+
+console.log("Both destinations finished");
 ```
 
 这在继续之前等待两个目标都完成写入。
@@ -480,7 +511,7 @@ source.pipe(dest2);
 
 并非所有错误都是致命的——一些值得重试。一些错误是**瞬态的**，可以重试。其他错误则表明存在根本问题，需要管道失败。
 
-例如，如果你从网络源读取数据并且连接断开，这可能是瞬时的。重试连接可能会成功。但是，如果你读取文件并得到 `EACCES`（权限被拒绝），重试是没有帮助的——文件的权限不会神奇地改变。
+例如，如果你从网络源读取数据并且连接断开，这可能是瞬时的。重试连接可能会成功。但是，如果你读取文件并得到`EACCES`（权限被拒绝），重试是没有帮助的——文件的权限不会神奇地改变。
 
 第一步是**分类错误**。这是操作错误（预期的失败条件）还是程序员错误（代码中的错误）？它是瞬态的还是永久的？
 
@@ -488,37 +519,38 @@ source.pipe(dest2);
 
 ```js
 async function pipelineWithRetry(maxRetries) {
- for (let attempt = 0; attempt <= maxRetries; attempt++) {
- try {
- await pipeline(source(), transform, destination);
- return; // Success
- } catch (err) {
- if (isTransientError(err) && attempt < maxRetries) {
- console.log(`Attempt ${attempt + 1} failed, retrying...`);
- await delay(1000 * Math.pow(2, attempt)); // Exponential backoff
- } else {
- throw err; // Give up
- }
- }
- }
+  for (let attempt = 0; attempt <= maxRetries; attempt++) {
+    try {
+      await pipeline(source(), transform, destination);
+      return; // Success
+    } catch (err) {
+      if (isTransientError(err) && attempt < maxRetries) {
+        console.log(`Attempt ${attempt + 1} failed, retrying...`);
+        await delay(1000 * Math.pow(2, attempt)); // Exponential backoff
+      } else {
+        throw err; // Give up
+      }
+    }
+  }
 }
- function isTransientError(err) {
- return err.code === "ECONNRESET" || err.code === "ETIMEDOUT"; // Network errors
+
+function isTransientError(err) {
+  return err.code === "ECONNRESET" || err.code === "ETIMEDOUT"; // Network errors
 }
 ```
 
-这个函数尝试管道最多 `maxRetries` 次。如果发生瞬态错误，它将等待（使用指数退避）并重试。如果发生非瞬态错误，或者所有重试都耗尽，它将抛出错误。
+这个函数尝试管道最多`maxRetries`次。如果发生瞬态错误，它将等待（使用指数退避）并重试。如果发生非瞬态错误，或者所有重试都耗尽，它将抛出错误。
 
-注意，`source()` 是一个创建新源流的函数。一旦流出错并被销毁，就不能再重用该流。每次重试都需要新的流实例。
+注意，`source()`是一个创建新源流的函数。一旦流出错并被销毁，就不能再重用该流。每次重试都需要新的流实例。
 
 另一种恢复模式是回退。如果一个数据源失败，尝试一个替代源：
 
 ```js
 try {
- await pipeline(primarySource, transform, destination);
+  await pipeline(primarySource, transform, destination);
 } catch (err) {
- console.warn("Primary source failed, trying fallback");
- await pipeline(fallbackSource, transform, destination);
+  console.warn("Primary source failed, trying fallback");
+  await pipeline(fallbackSource, transform, destination);
 }
 ```
 
@@ -528,14 +560,14 @@ try {
 
 ```js
 try {
- await pipeline(source, transform, primaryDest);
+  await pipeline(source, transform, primaryDest);
 } catch (err) {
- console.warn("Primary destination failed, trying backup");
- await pipeline(source(), transform, backupDest);
+  console.warn("Primary destination failed, trying backup");
+  await pipeline(source(), transform, backupDest);
 }
 ```
 
-再次注意，`source()` 是一个创建新源的函数。在第一个管道失败后，原始源被销毁，因此你需要一个新的源来进行重试。
+再次注意，`source()`是一个创建新源的函数。在第一个管道失败后，原始源被销毁，因此你需要一个新的源来进行重试。
 
 **关键原则**：事先决定哪些错误是可恢复的，并在管道级别实现你的重试或回退逻辑，而不是在单个流级别。流不知道你的应用程序的重试策略——你必须在外部协调它。
 
@@ -552,12 +584,13 @@ try {
 ```js
 const temp = "output.tmp";
 const final = "output.dat";
- try {
- await pipeline(source, transform, createWriteStream(temp));
- await rename(temp, final);
+
+try {
+  await pipeline(source, transform, createWriteStream(temp));
+  await rename(temp, final);
 } catch (err) {
- await unlink(temp).catch(() => {}); // Clean up, ignore errors
- throw err;
+  await unlink(temp).catch(() => {}); // Clean up, ignore errors
+  throw err;
 }
 ```
 
@@ -580,11 +613,11 @@ await pipeline(source, transform, createWriteStream("output.log", { flags: "a" }
 ```js
 const tx = await db.beginTransaction();
 try {
- await pipeline(source, transform, new DatabaseWriter(tx));
- await tx.commit();
+  await pipeline(source, transform, new DatabaseWriter(tx));
+  await tx.commit();
 } catch (err) {
- await tx.rollback();
- throw err;
+  await tx.rollback();
+  throw err;
 }
 ```
 
@@ -609,17 +642,19 @@ await writeFile("output.dat.complete", "");
 
 管道特有的特定之处在于，当你销毁`pipeline()`中的**任何**流时，管道函数会自动销毁所有其他流，并带错误调用回调：
 
+
+
 ```js
 const source = createReadStream("input.txt");
 const dest = createWriteStream("output.txt");
- pipeline(source, dest, (err) => {
- if (err) {
- console.error("Pipeline stopped:", err.message);
- }
+pipeline(source, dest, (err) => {
+  if (err) {
+    console.error("Pipeline stopped:", err.message);
+  }
 });
- // Later, cancel the pipeline (e.g., after user action)
+// Later, cancel the pipeline (e.g., after user action)
 setTimeout(() => {
- source.destroy(new Error("Cancelled by user"));
+  source.destroy(new Error("Cancelled by user"));
 }, 100);
 ```
 
@@ -637,137 +672,135 @@ source.destroy();
 
 在这种情况下，流被销毁了，但没有发出`error`事件。`pipeline()`回调仍然被调用，但`err`是`null`。这对于在不将其视为失败的情况下停止管道很有用。
 
-一个重要的细节是：`destroy()` 是幂等的。在同一个流上多次调用它，在第一次调用之后不会有任何作用。流只销毁一次，后续的销毁调用会被忽略。
+一个重要的细节是：`destroy()`是幂等的。在同一个流上多次调用它，在第一次调用之后不会有任何作用。流只销毁一次，后续的销毁调用会被忽略。
 
-另一件事——当你销毁一个流时，缓冲数据就消失了。如果一个 `Writable` 有尚未刷新的缓冲写入，它们就会丢失。如果一个 `Readable` 有尚未消费的缓冲数据，它也会丢失。销毁意味着 **“立即停止并丢弃任何状态，”** 而不是“优雅地完成挂起的操作。”
+另一件事——当你销毁一个流时，缓冲数据就消失了。如果一个`Writable`有尚未刷新的缓冲写入，它们就会丢失。如果一个`Readable`有尚未消费的缓冲数据，它也会丢失。销毁意味着**“立即停止并丢弃任何状态，”**而不是“优雅地完成挂起的操作。”
 
-如果你需要优雅地关闭（在关闭前完成缓冲数据的写入），请使用 `end()` 而不是 `destroy()`：
+如果你需要优雅地关闭（在关闭前完成缓冲数据的写入），请使用`end()`而不是`destroy()`：
 
 ```js
 writable.end(); // Finish writing buffered data, then close
 ```
 
-但 `end()` 只在可写流上有效。对于可读流，没有优雅的停止方式——你只能消耗所有数据或者销毁。
+但`end()`只在可写流上有效。对于可读流，没有优雅的停止方式——你只能消耗所有数据或者销毁。
 
 ## 异步迭代管道
 
-在可读流章节中，我们探讨了使用 `for await...of` 来消费具有自动背压处理的流。这种模式也是构建流处理逻辑的 `pipe()` 和 `pipeline()` 的替代方案。
+在可读流章节中，我们探讨了使用`for await...of`来消费具有自动背压处理的流。这种模式也是构建流处理逻辑的`pipe()`和`pipeline()`的替代方案。
 
-作为复习：当你使用 `for await...of` 迭代可读流时，迭代协议会自动实现背压。循环不会拉取下一个块，直到当前迭代完成。如果你的处理是异步的，流会等待：
+作为复习：当你使用`for await...of`迭代可读流时，迭代协议会自动实现背压。循环不会拉取下一个块，直到当前迭代完成。如果你的处理是异步的，流会等待：
 
 ```js
 for await (const chunk of readableStream) {
- await processAsync(chunk); // Stream waits for this
+  await processAsync(chunk); // Stream waits for this
 }
 ```
 
 我们在这里不会重复完整的背压机制——有关迭代协议如何管理流控制的完整解释，请参阅可读流章节中的“异步迭代中的背压”部分。
 
-本章相关的是特别使用这种模式进行 **管道构建** 而不是 `pipeline()`。你可以通过从源读取、转换每个块并写入目标来构建管道：
+本章相关的是特别使用这种模式进行**管道构建**而不是`pipeline()`。你可以通过从源读取、转换每个块并写入目标来构建管道：
 
 ```js
 const source = createReadStream("input.txt");
 const dest = createWriteStream("output.txt");
- for await (const chunk of source) {
- const transformed = chunk.toString().toUpperCase();
- const ok = dest.write(transformed);
- if (!ok) {
- await new Promise((resolve) => dest.once("drain", resolve));
- }
+for await (const chunk of source) {
+  const transformed = chunk.toString().toUpperCase();
+  const ok = dest.write(transformed);
+  if (!ok) {
+    await new Promise((resolve) => dest.once("drain", resolve));
+  }
 }
- dest.end();
+dest.end();
 ```
 
-这是一个手动管道。你从源拉取数据，进行转换，并写入目标，具有显式的背压处理（如果 `write()` 返回 false，则等待 `drain`）。这种模式让你对数据流有精细的控制，但需要你手动管理背压——忘记 `drain` 检查会导致内存无限制增长，正如我们在可写流章节中讨论的那样。
+这是一个手动管道。你从源拉取数据，进行转换，并写入目标，具有显式的背压处理（如果`write()`返回`false`，则等待`drain`）。这种模式让你对数据流有精细的控制，但需要你手动管理背压——忘记`drain`检查会导致内存无限制增长，正如我们在可写流章节中讨论的那样。
 
-一种更干净的模式是使用 `stream.Readable.from()` 与异步生成器：
+一种更干净的模式是使用`stream.Readable.from()`与异步生成器：
 
 ```js
 async function* transform(source) {
- for await (const chunk of source) {
- yield chunk.toString().toUpperCase();
- }
+  for await (const chunk of source) {
+    yield chunk.toString().toUpperCase();
+  }
 }
- const source = createReadStream("input.txt");
+const source = createReadStream("input.txt");
 const transformed = Readable.from(transform(source));
 const dest = createWriteStream("output.txt");
- await pipeline(transformed, dest);
+await pipeline(transformed, dest);
 ```
 
-异步生成器会自动包装在一个可读流中，`pipeline()` 处理管道连接。这结合了 `for await...of` 的清晰性和 `pipeline()` 的健壮性。
+异步生成器会自动包装在一个可读流中，`pipeline()`处理管道连接。这结合了`for await...of`的清晰性和`pipeline()`的健壮性。
 
 你可以链式调用多个生成器转换：
 
 ```js
 async function* toUppercase(source) {
- for await (const chunk of source) {
- yield chunk.toString().toUpperCase();
- }
+  for await (const chunk of source) {
+    yield chunk.toString().toUpperCase();
+  }
 }
- async function* filterEmpty(source) {
- for await (const line of source) {
- if (line.trim().length > 0) {
- yield line;
- }
- }
+async function* filterEmpty(source) {
+  for await (const line of source) {
+    if (line.trim().length > 0) {
+      yield line;
+    }
+  }
 }
- await pipeline(
- source,
- toUppercase,
- filterEmpty,
- dest
+await pipeline(
+  source,
+  toUppercase,
+  filterEmpty,
+  dest
 );
 ```
 
-每个生成器是一个管道阶段。这是可读的。每个阶段是一个简单的 `for await` 循环，产生转换后的块。组合由 `pipeline()` 处理。
+每个生成器是一个管道阶段。这是可读的。每个阶段是一个简单的`for await`循环，产生转换后的块。组合由`pipeline()`处理。
 
-这种模式对于 **`objectMode` 管道**特别有用，其中每个块都是一个结构化对象：
+这种模式对于**`objectMode`管道**特别有用，其中每个块都是一个结构化对象：
 
 ```js
 async function* parseJSON(source) {
- for await (const line of source) {
- yield JSON.parse(line);
- }
+  for await (const line of source) {
+    yield JSON.parse(line);
+  }
 }
- async function* extractField(source, field) {
- for await (const obj of source) {
- yield obj[field];
- }
+async function* extractField(source, field) {
+  for await (const obj of source) {
+    yield obj[field];
+  }
 }
- await pipeline(
- source,
- parseJSON,
- (source) => extractField(source, "name"),
- dest
+await pipeline(
+  source,
+  parseJSON,
+  (source) => extractField(source, "name"),
+  dest
 );
 ```
 
-每个阶段都是一个从源到异步可迭代对象的函数。`pipeline()` 函数将它们连接起来。这是函数式管道组合，通常比创建转换类更清晰。
+每个阶段都是一个从源到异步可迭代对象的函数。`pipeline()`函数将它们连接起来。这是函数式管道组合，通常比创建转换类更清晰。
 
 ## 管道中的异步迭代背压
 
-在可读流章节中，我们介绍了 `for await...of` 如何与背压一起工作。在管道中使用此模式时需要记住的关键点：
+在可读流章节中，我们介绍了`for await...of`如何与背压一起工作。在管道中使用此模式时需要记住的关键点：
 
-1.  **等待异步工作** - 迭代器一次拉取一个块；如果您等待异步操作，则从您的处理速度自动向源流动背压
+1. **等待异步工作** - 迭代器一次拉取一个块；如果您等待异步操作，则从您的处理速度自动向源流动背压
+2. **不要累积承诺** - 避免使用`promises.push(processAsync(chunk))`模式，该模式在处理之前将整个流读入内存，从而破坏背压
+3. **使用受控并发** - 对于具有有限并发的并行处理，请使用`p-limit`等库来限制正在进行的操作
 
-1.  **不要累积承诺** - 避免使用 `promises.push(processAsync(chunk))` 模式，该模式在处理之前将整个流读入内存，从而破坏背压
-
-1.  **使用受控并发** - 对于具有有限并发的并行处理，请使用 `p-limit` 等库来限制正在进行的操作
-
-从可读流章节：**您必须在循环内等待异步操作**。没有 `await`，您会失去背压：
+从可读流章节：**您必须在循环内等待异步操作**。没有`await`，您会失去背压：
 
 ```js
 // WRONG - loses backpressure
 for await (const chunk of source) {
- slowOperation(chunk); // No await! Loop continues immediately
+  slowOperation(chunk); // No await! Loop continues immediately
 }
- // CORRECT - maintains backpressure
+// CORRECT - maintains backpressure
 for await (const chunk of source) {
- await slowOperation(chunk); // Stream waits until this completes
+  await slowOperation(chunk); // Stream waits until this completes
 }
 ```
 
-与 `pipeline()` 相比，这种方法的优势在于对数据流的显式控制。缺点是您必须自己管理错误处理——没有 `pipeline()` 提供的自动清理。
+与`pipeline()`相比，这种方法的优势在于对数据流的显式控制。缺点是您必须自己管理错误处理——没有`pipeline()`提供的自动清理。
 
 关于异步迭代协议如何实现背压的完整机制，请参阅可读流章节中的“异步迭代中的背压：它是如何工作的”部分。
 
@@ -779,46 +812,46 @@ for await (const chunk of source) {
 
 ```js
 function createCSVParser() {
- return new Transform({
- objectMode: true,
- transform(chunk, encoding, callback) {
- const lines = chunk.toString().split("\n");
- for (const line of lines) {
- if (line.trim()) {
- this.push(line.split(","));
- }
- }
- callback();
- },
- });
+  return new Transform({
+    objectMode: true,
+    transform(chunk, encoding, callback) {
+      const lines = chunk.toString().split("\n");
+      for (const line of lines) {
+        if (line.trim()) {
+          this.push(line.split(","));
+        }
+      }
+      callback();
+    },
+  });
 }
- // Use in multiple pipelines
+// Use in multiple pipelines
 await pipeline(source1, createCSVParser(), dest1);
 await pipeline(source2, createCSVParser(), dest2);
 ```
 
-每次调用 `createCSVParser()` 都会返回一个新的转换实例。您不能在多个管道中重用流实例（一旦流结束或出错，它就完成了），但您可以重用工厂函数。
+每次调用`createCSVParser()`都会返回一个新的转换实例。您不能在多个管道中重用流实例（一旦流结束或出错，它就完成了），但您可以重用工厂函数。
 
 您可以使工厂可配置：
 
 ```js
 function createFieldExtractor(fields) {
- return new Transform({
- objectMode: true,
- transform(obj, encoding, callback) {
- const extracted = {};
- for (const field of fields) {
- extracted[field] = obj[field];
- }
- this.push(extracted);
- callback();
- },
- });
+  return new Transform({
+    objectMode: true,
+    transform(obj, encoding, callback) {
+      const extracted = {};
+      for (const field of fields) {
+        extracted[field] = obj[field];
+      }
+      this.push(extracted);
+      callback();
+    },
+  });
 }
- await pipeline(
- source,
- createFieldExtractor(["name", "email"]),
- dest
+await pipeline(
+  source,
+  createFieldExtractor(["name", "email"]),
+  dest
 );
 ```
 
@@ -828,19 +861,19 @@ function createFieldExtractor(fields) {
 
 ```js
 function createProcessingPipeline(source, dest) {
- return pipeline(
- source,
- createCSVParser(),
- createFieldExtractor(["name", "email"]),
- createValidator(),
- dest
- );
+  return pipeline(
+    source,
+    createCSVParser(),
+    createFieldExtractor(["name", "email"]),
+    createValidator(),
+    dest
+  );
 }
- await createProcessingPipeline(source1, dest1);
+await createProcessingPipeline(source1, dest1);
 await createProcessingPipeline(source2, dest2);
 ```
 
-`createProcessingPipeline()` 函数封装了整个转换序列。您传入源和目的地，然后它会连接所有中间转换。
+`createProcessingPipeline()`函数封装了整个转换序列。您传入源和目的地，然后它会连接所有中间转换。
 
 这是一个高阶函数模式：创建和组合流的函数。这对于构建模块化、可测试的流代码很有用。
 
@@ -848,34 +881,34 @@ await createProcessingPipeline(source2, dest2);
 
 ```js
 const parseCSV = async function* (source) {
- for await (const chunk of source) {
- const lines = chunk.toString().split("\n");
- for (const line of lines) {
- if (line.trim()) {
- yield line.split(",");
- }
- }
- }
+  for await (const chunk of source) {
+    const lines = chunk.toString().split("\n");
+    for (const line of lines) {
+      if (line.trim()) {
+        yield line.split(",");
+      }
+    }
+  }
 };
- const extractFields = (fields) =>
- async function* (source) {
- for await (const obj of source) {
- const extracted = {};
- for (const field of fields) {
- extracted[field] = obj[field];
- }
- yield extracted;
- }
- };
- await pipeline(
- source,
- parseCSV,
- extractFields(["name", "email"]),
- dest
+const extractFields = (fields) =>
+  async function* (source) {
+    for await (const obj of source) {
+      const extracted = {};
+      for (const field of fields) {
+        extracted[field] = obj[field];
+      }
+      yield extracted;
+    }
+  };
+await pipeline(
+  source,
+  parseCSV,
+  extractFields(["name", "email"]),
+  dest
 );
 ```
 
-每个生成器都是一个从异步可迭代到异步可迭代的功能。您通过将一个函数的输出作为另一个函数的输入来组合它们。`pipeline()` 函数处理管道连接。
+每个生成器都是一个从异步可迭代到异步可迭代的功能。您通过将一个函数的输出作为另一个函数的输入来组合它们。`pipeline()`函数处理管道连接。
 
 这种函数组合风格与 Node.js 的流模型自然契合。
 
@@ -887,20 +920,20 @@ const parseCSV = async function* (source) {
 
 ```js
 function createValidationSegment(schema, errorDest) {
- const valid = new PassThrough({ objectMode: true });
- const invalid = new PassThrough({ objectMode: true });
- invalid.pipe(errorDest);
- return new Transform({
- objectMode: true,
- transform(obj, encoding, callback) {
- if (schema.validate(obj)) {
- this.push(obj);
- } else {
- invalid.write(obj);
- }
- callback();
- },
- });
+  const valid = new PassThrough({ objectMode: true });
+  const invalid = new PassThrough({ objectMode: true });
+  invalid.pipe(errorDest);
+  return new Transform({
+    objectMode: true,
+    transform(obj, encoding, callback) {
+      if (schema.validate(obj)) {
+        this.push(obj);
+      } else {
+        invalid.write(obj);
+      }
+      callback();
+    },
+  });
 }
 ```
 
@@ -910,36 +943,36 @@ function createValidationSegment(schema, errorDest) {
 
 ```js
 const errorLog = createWriteStream("errors.log");
- await pipeline(
- source,
- createValidationSegment(mySchema, errorLog),
- dest
+await pipeline(
+  source,
+  createValidationSegment(mySchema, errorLog),
+  dest
 );
 ```
 
-有效的对象发送到 `dest`。无效的对象发送到 `errorLog`。即使遇到无效对象，管道也会继续运行——它们只是被路由到其他地方。
+有效的对象发送到`dest`。无效的对象发送到`errorLog`。即使遇到无效对象，管道也会继续运行——它们只是被路由到其他地方。
 
 另一个模式是条件段，根据运行时状态选择不同的转换：
 
 ```js
 function createConditionalSegment(condition, trueTransform, falseTransform) {
- return new Transform({
- objectMode: true,
- async transform(obj, encoding, callback) {
- try {
- const result = await condition(obj);
- const transform = result ? trueTransform : falseTransform;
- transform.write(obj);
- callback();
- } catch (err) {
- callback(err);
- }
- },
- });
+  return new Transform({
+    objectMode: true,
+    async transform(obj, encoding, callback) {
+      try {
+        const result = await condition(obj);
+        const transform = result ? trueTransform : falseTransform;
+        transform.write(obj);
+        callback();
+      } catch (err) {
+        callback(err);
+      }
+    },
+  });
 }
 ```
 
-根据条件函数，每个对象要么通过 `trueTransform`，要么通过 `falseTransform`。这是一个路由段。
+根据条件函数，每个对象要么通过`trueTransform`，要么通过`falseTransform`。这是一个路由段。
 
 这些模式——分支、路由、条件——是复杂数据流的构建块。你将它们组合成更大的管道，创建复杂的处理逻辑，同时保持每个段集中和可重用。
 
@@ -954,28 +987,30 @@ source.pipe(dest1);
 source.pipe(dest2);
 ```
 
-`dest1` 和 `dest2` 都从 `source` 接收相同的数据。源每次只发射每个数据块一次，两个管道将其分别转发到各自的目的地。
+`dest1`和`dest2`都从`source`接收相同的数据。源每次只发射每个数据块一次，两个管道将其分别转发到各自的目的地。
 
-但有一个问题：背压。如果 `dest1` 慢并且发出背压信号，则源暂停。但 `dest2` 可能很快，准备好接收更多数据。通过暂停源，你无必要地减慢了 `dest2` 的速度。
+但有一个问题：背压。如果`dest1`慢并且发出背压信号，则源暂停。但`dest2`可能很快，准备好接收更多数据。通过暂停源，你无必要地减慢了`dest2`的速度。
 
-源不能只为一个目的地暂停，而继续为另一个目的地服务。它是 **全有或全无** 的。所以当你使用 `pipe()` 将流 tee 时，**最慢的目的地控制所有目的地的节奏**。
+源不能只为一个目的地暂停，而继续为另一个目的地服务。它是**全有或全无**的。所以当你使用`pipe()`将流 tee 时，**最慢的目的地控制所有目的地的节奏**。
 
 如果这是可以接受的（所有目的地都需要相同的数据，并且你接受最慢的一个设置节奏），那么简单的管道就足够了。但如果你想要每个目的地都有独立的背压，你需要更复杂的方法。
 
-一种技术是使用 `PassThrough` 流作为中间代理：
+一种技术是使用`PassThrough`流作为中间代理：
+
+
 
 ```js
 const pass1 = new PassThrough();
 const pass2 = new PassThrough();
- source.on("data", (chunk) => {
- pass1.write(chunk);
- pass2.write(chunk);
+source.on("data", (chunk) => {
+  pass1.write(chunk);
+  pass2.write(chunk);
 });
- source.on("end", () => {
- pass1.end();
- pass2.end();
+source.on("end", () => {
+  pass1.end();
+  pass2.end();
 });
- pass1.pipe(dest1);
+pass1.pipe(dest1);
 pass2.pipe(dest2);
 ```
 
@@ -987,41 +1022,46 @@ pass2.pipe(dest2);
 
 ```js
 class FanOut extends Writable {
- constructor(destinations, options) {
- super(options);
- this.destinations = destinations;
- }
- _write(chunk, encoding, callback) {
- const allReady = [];
- // Write to all destinations and check for backpressure
- for (const dest of this.destinations) {
- const canContinue = dest.write(chunk, encoding);
- if (!canContinue) {
- // Destination buffer is full, wait for drain
- allReady.push(
- new Promise((resolve) => {
- dest.once('drain', resolve);
- })
- );
- }
- }
- // If any destination signaled backpressure, wait for all to drain
- if (allReady.length > 0) {
- Promise.all(allReady)
- .then(() => callback())
- .catch((err) => callback(err));
- } else {
- // All writes succeeded without backpressure
- callback();
- }
- }
- _final(callback) {
- // End all destinations when this stream ends
- for (const dest of this.destinations) {
- dest.end();
- }
- callback();
- }
+  constructor(destinations, options) {
+    super(options);
+    this.destinations = destinations;
+  }
+
+  _write(chunk, encoding, callback) {
+    const allReady = [];
+
+    // Write to all destinations and check for backpressure
+    for (const dest of this.destinations) {
+      const canContinue = dest.write(chunk, encoding);
+
+      if (!canContinue) {
+        // Destination buffer is full, wait for drain
+        allReady.push(
+          new Promise((resolve) => {
+            dest.once("drain", resolve);
+          })
+        );
+      }
+    }
+
+    // If any destination signaled backpressure, wait for all to drain
+    if (allReady.length > 0) {
+      Promise.all(allReady)
+        .then(() => callback())
+        .catch((err) => callback(err));
+    } else {
+      // All writes succeeded without backpressure
+      callback();
+    }
+  }
+
+  _final(callback) {
+    // End all destinations when this stream ends
+    for (const dest of this.destinations) {
+      dest.end();
+    }
+    callback();
+  }
 }
 ```
 
@@ -1031,11 +1071,11 @@ class FanOut extends Writable {
 
 ```js
 pipeline(source, new FanOut([dest1, dest2]), (err) => {
- // Pipeline done
+  // Pipeline done
 });
 ```
 
-这是一个更复杂的模式，在应用程序代码中并不常见。大多数时候，你或者接受最慢的目的地控制节奏，或者接受 PassThrough 中间件的未限定缓冲。真正的扇出，每个目的地都有独立的背压，是复杂的，通常只在像日志或监控系统这样的特定场景中需要。
+这是一个更复杂的模式，在应用程序代码中并不常见。大多数时候，你或者接受最慢的目的地控制节奏，或者接受 `PassThrough` 中间件的未限定缓冲。真正的扇出，每个目的地都有独立的背压，是复杂的，通常只在像日志或监控系统这样的特定场景中需要。
 
 ## 终止信号集成
 
@@ -1043,22 +1083,26 @@ Node.js 流支持 `AbortSignal` 用于取消。你可以将信号传递给基于
 
 ```js
 import { pipeline } from "stream/promises";
- const controller = new AbortController();
- try {
- await pipeline(source, transform, dest, { signal: controller.signal });
+
+const controller = new AbortController();
+
+try {
+  await pipeline(source, transform, dest, { signal: controller.signal });
 } catch (err) {
- if (err.name === "AbortError") {
- console.log("Pipeline cancelled");
- } else {
- throw err;
- }
+  if (err.name === "AbortError") {
+    console.log("Pipeline cancelled");
+  } else {
+    throw err;
+  }
 }
- // Note: You can also check err.code === 'ABORT_ERR' which is more robust
+
+// Note: You can also check err.code === 'ABORT_ERR' which is more robust
 // since the code property is harder to accidentally modify
- // To cancel: controller.abort();
+
+// To cancel: controller.abort();
 ```
 
-当你调用 `controller.abort()` 时，管道立即被销毁。所有流都被拆除，承诺因 **`AbortError`** 而拒绝，并且任何挂起的操作都被取消。
+当你调用 `controller.abort()` 时，管道立即被销毁。所有流都被拆除，承诺因 `AbortError` 而拒绝，并且任何挂起的操作都被取消。
 
 这对于用户发起的取消、超时或在长时间运行的操作中的资源清理很有用。
 
@@ -1066,15 +1110,16 @@ import { pipeline } from "stream/promises";
 
 ```js
 const signal = AbortSignal.timeout(5000); // 5 second timeout
- try {
- await pipeline(source, transform, dest, { signal });
- console.log("Pipeline completed");
+
+try {
+  await pipeline(source, transform, dest, { signal });
+  console.log("Pipeline completed");
 } catch (err) {
- if (err.name === "AbortError") {
- console.log("Pipeline timed out");
- } else {
- throw err;
- }
+  if (err.name === "AbortError") {
+    console.log("Pipeline timed out");
+  } else {
+    throw err;
+  }
 }
 ```
 
@@ -1085,15 +1130,16 @@ const signal = AbortSignal.timeout(5000); // 5 second timeout
 ```js
 const userCancel = new AbortController();
 const timeout = AbortSignal.timeout(10000);
- const signal = AbortSignal.any([userCancel.signal, timeout]);
- try {
- await pipeline(source, transform, dest, { signal });
+const signal = AbortSignal.any([userCancel.signal, timeout]);
+
+try {
+  await pipeline(source, transform, dest, { signal });
 } catch (err) {
- if (err.name === "AbortError") {
- console.log("Cancelled by either user or timeout");
- } else {
- throw err;
- }
+  if (err.name === "AbortError") {
+    console.log("Cancelled by either user or timeout");
+  } else {
+    throw err;
+  }
 }
 ```
 
@@ -1105,7 +1151,7 @@ const timeout = AbortSignal.timeout(10000);
 
 让我们实现几个完整的管道，以展示我们已覆盖的所有概念。
 
-**1) 日志文件处理**
+### 1. 日志文件处理
 
 读取大日志文件，将每一行解析为 JSON，按日志级别过滤，并写入单独的输出文件：
 
@@ -1113,52 +1159,61 @@ const timeout = AbortSignal.timeout(10000);
 import { pipeline } from "stream/promises";
 import { createReadStream, createWriteStream } from "fs";
 import { Transform } from "stream";
- async function* parseLines(source) {
- let buffer = "";
- for await (const chunk of source) {
- buffer += chunk.toString();
- const lines = buffer.split("\n");
- buffer = lines.pop();
- for (const line of lines) {
- if (line.trim()) {
- try {
- yield JSON.parse(line);
- } catch (err) {
- console.error("Parse error:", err);
- }
- }
- }
- }
- if (buffer.trim()) {
- try {
- yield JSON.parse(buffer);
- } catch (err) {
- console.error("Parse error:", err);
- }
- }
+
+async function* parseLines(source) {
+  let buffer = "";
+
+  for await (const chunk of source) {
+    buffer += chunk.toString();
+    const lines = buffer.split("\n");
+    buffer = lines.pop();
+
+    for (const line of lines) {
+      if (line.trim()) {
+        try {
+          yield JSON.parse(line);
+        } catch (err) {
+          console.error("Parse error:", err);
+        }
+      }
+    }
+  }
+
+  if (buffer.trim()) {
+    try {
+      yield JSON.parse(buffer);
+    } catch (err) {
+      console.error("Parse error:", err);
+    }
+  }
 }
- class LevelSplitter extends Transform {
- constructor(level, dest, options) {
- super({ ...options, objectMode: true });
- this.level = level;
- this.dest = dest;
- }
- _transform(log, encoding, callback) {
- if (log.level === this.level) {
- this.dest.write(JSON.stringify(log) + "\n");
- }
- this.push(log);
- callback();
- }
+
+class LevelSplitter extends Transform {
+  constructor(level, dest, options) {
+    super({ ...options, objectMode: true });
+    this.level = level;
+    this.dest = dest;
+  }
+
+  _transform(log, encoding, callback) {
+    if (log.level === this.level) {
+      this.dest.write(JSON.stringify(log) + "\n");
+    }
+
+    this.push(log);
+    callback();
+  }
 }
- const errorDest = createWriteStream("errors.log");
+
+const errorDest = createWriteStream("errors.log");
 const warnDest = createWriteStream("warnings.log");
- await pipeline(
- createReadStream("app.log"),
- parseLines,
- new LevelSplitter("ERROR", errorDest),
- new LevelSplitter("WARN", warnDest),
- createWriteStream("all.log")
+
+await pipeline(
+  createReadStream("app.log"),
+  parseLines,
+  new LevelSplitter("ERROR", errorDest),
+  new LevelSplitter("WARN", warnDest),
+  createWriteStream("all.log")
 );
 ```
 
@@ -1166,11 +1221,12 @@ const warnDest = createWriteStream("warnings.log");
 
 ```js
 let buffer = "";
+
 for await (const chunk of source) {
- buffer += chunk.toString();
- const lines = buffer.split("\n");
- buffer = lines.pop(); // Save incomplete line for next chunk
- // Process complete lines...
+  buffer += chunk.toString();
+  const lines = buffer.split("\n");
+  buffer = lines.pop(); // Save incomplete line for next chunk
+  // Process complete lines...
 }
 ```
 
@@ -1180,9 +1236,9 @@ for await (const chunk of source) {
 
 ```js
 try {
- yield JSON.parse(line);
+  yield JSON.parse(line);
 } catch (err) {
- console.error("Parse error:", err);
+  console.error("Parse error:", err);
 }
 ```
 
@@ -1192,17 +1248,18 @@ try {
 
 ```js
 _transform(log, encoding, callback) {
- if (log.level === this.level) {
- this.dest.write(JSON.stringify(log) + "\n"); // Side channel
- }
- this.push(log); // Pass through to next stage
- callback();
+  if (log.level === this.level) {
+    this.dest.write(JSON.stringify(log) + "\n"); // Side channel
+  }
+
+  this.push(log); // Pass through to next stage
+  callback();
 }
 ```
 
 每个日志条目都会沿着主管道继续向下传递，但 ERROR 级别的日志也会写入 `errors.log`。这创建了一个分支管道：
 
-```js
+```text
 Logs → parseLines → [All logs continue]
  ↓
  ERROR logs → errors.log
@@ -1218,80 +1275,92 @@ Logs → parseLines → [All logs continue]
 
 分割器按顺序链接：
 
-```js
+```text
 parseLines → LevelSplitter("ERROR") → LevelSplitter("WARN") → all.log
 ```
 
 每个分割器调用 `this.push(log)`，传递对象。最终目的地 `all.log` 也会接收对象，但由于可写流会自动在对象上调用 `toString()`，因此你可能想要添加一个最终转换，将其序列化为 JSON 以进行适当的格式化（为了清晰起见，我们简化了这一点，但在生产中你会在最终目的地之前添加 `async function* serializeJSON(source) { for await (const obj of source) yield JSON.stringify(obj) + "\n"; }`）。
 
-**2) 带验证的 CSV 导入**
+### 2. 带验证的 CSV 导入
 
 读取 CSV 文件，解析行，验证，并以批量方式插入到数据库中：
 
 ```js
 async function* parseCSV(source) {
- let buffer = "";
- let headers = null;
- for await (const chunk of source) {
- buffer += chunk.toString();
- const lines = buffer.split("\n");
- buffer = lines.pop();
- for (const line of lines) {
- if (!headers) {
- headers = line.split(",");
- } else {
- const values = line.split(",");
- const row = {};
- for (let i = 0; i < headers.length; i++) {
- row[headers[i]] = values[i];
- }
- yield row;
- }
- }
- }
+  let buffer = "";
+  let headers = null;
+
+  for await (const chunk of source) {
+    buffer += chunk.toString();
+    const lines = buffer.split("\n");
+    buffer = lines.pop();
+
+    for (const line of lines) {
+      if (!headers) {
+        headers = line.split(",");
+      } else {
+        const values = line.split(",");
+        const row = {};
+
+        for (let i = 0; i < headers.length; i++) {
+          row[headers[i]] = values[i];
+        }
+
+        yield row;
+      }
+    }
+  }
 }
- async function* validate(source, schema) {
- for await (const row of source) {
- if (schema.validate(row)) {
- yield row;
- } else {
- console.error("Invalid row:", row);
- }
- }
+
+async function* validate(source, schema) {
+  for await (const row of source) {
+    if (schema.validate(row)) {
+      yield row;
+    } else {
+      console.error("Invalid row:", row);
+    }
+  }
 }
- async function* batch(source, size) {
- let batch = [];
- for await (const item of source) {
- batch.push(item);
- if (batch.length >= size) {
- yield batch;
- batch = [];
- }
- }
- if (batch.length > 0) {
- yield batch;
- }
+
+async function* batch(source, size) {
+  let batch = [];
+
+  for await (const item of source) {
+    batch.push(item);
+
+    if (batch.length >= size) {
+      yield batch;
+      batch = [];
+    }
+  }
+
+  if (batch.length > 0) {
+    yield batch;
+  }
 }
- class DatabaseWriter extends Writable {
- constructor(db, options) {
- super({ ...options, objectMode: true });
- this.db = db;
- }
- async _write(batch, encoding, callback) {
- try {
- await this.db.insertMany(batch);
- callback();
- } catch (err) {
- callback(err);
- }
- }
+
+class DatabaseWriter extends Writable {
+  constructor(db, options) {
+    super({ ...options, objectMode: true });
+    this.db = db;
+  }
+
+  async _write(batch, encoding, callback) {
+    try {
+      await this.db.insertMany(batch);
+      callback();
+    } catch (err) {
+      callback(err);
+    }
+  }
 }
- await pipeline(
- createReadStream("data.csv"),
- parseCSV,
- (source) => validate(source, mySchema),
- (source) => batch(source, 100),
- new DatabaseWriter(db)
+
+await pipeline(
+  createReadStream("data.csv"),
+  parseCSV,
+  (source) => validate(source, mySchema),
+  (source) => batch(source, 100),
+  new DatabaseWriter(db)
 );
 ```
 
@@ -1299,26 +1368,28 @@ async function* parseCSV(source) {
 
 与 `parseLines` 不同，`parseCSV` 在块之间保持状态——它需要记住标题行：
 
+
+
 ```js
 let buffer = "";
 let headers = null; // Persists across all chunks
- for await (const chunk of source) {
- // ... process chunks
- if (!headers) {
- headers = line.split(","); // First line becomes headers
- } else {
- // Subsequent lines become data objects
- const values = line.split(",");
- const row = {};
- for (let i = 0; i < headers.length; i++) {
- row[headers[i]] = values[i];
- }
- yield row;
- }
+for await (const chunk of source) {
+  // ... process chunks
+  if (!headers) {
+    headers = line.split(","); // First line becomes headers
+  } else {
+    // Subsequent lines become data objects
+    const values = line.split(",");
+    const row = {};
+    for (let i = 0; i < headers.length; i++) {
+      row[headers[i]] = values[i];
+    }
+    yield row;
+  }
 }
 ```
 
-`headers` 变量在生成器的整个生命周期中持续存在，捕获第一行并使用它来结构化所有后续行。原始 CSV：
+`headers`变量在生成器的整个生命周期中持续存在，捕获第一行并使用它来结构化所有后续行。原始 CSV：
 
 ```js
 name,email,age
@@ -1335,17 +1406,17 @@ Bob,bob@example.com,25
 
 我们不会将整个 CSV 文件加载到内存中——每一行都在数据流通过时进行处理。
 
-`validate` 生成器在不对数据进行修改的情况下进行过滤：
+`validate`生成器在不对数据进行修改的情况下进行过滤：
 
 ```js
 async function* validate(source, schema) {
- for await (const row of source) {
- if (schema.validate(row)) {
- yield row; // Valid rows continue
- } else {
- console.error("Invalid row:", row); // Invalid rows logged, not yielded
- }
- }
+  for await (const row of source) {
+    if (schema.validate(row)) {
+      yield row; // Valid rows continue
+    } else {
+      console.error("Invalid row:", row); // Invalid rows logged, not yielded
+    }
+  }
 }
 ```
 
@@ -1353,21 +1424,21 @@ async function* validate(source, schema) {
 
 在无效数据上抛出错误会导致管道崩溃并丢失所有进度。现实世界的数据很混乱——在导入完成后，记录日志并继续可以让你检查错误。
 
-`batch` 生成器对于数据库操作至关重要：
+`batch`生成器对于数据库操作至关重要：
 
 ```js
 async function* batch(source, size) {
- let batch = [];
- for await (const item of source) {
- batch.push(item);
- if (batch.length >= size) {
- yield batch; // Emit full batch
- batch = []; // Reset for next batch
- }
- }
- if (batch.length > 0) {
- yield batch; // Don't forget partial final batch
- }
+  let batch = [];
+  for await (const item of source) {
+    batch.push(item);
+    if (batch.length >= size) {
+      yield batch; // Emit full batch
+      batch = []; // Reset for next batch
+    }
+  }
+  if (batch.length > 0) {
+    yield batch; // Don't forget partial final batch
+  }
 }
 ```
 
@@ -1386,12 +1457,12 @@ Output: [item1...item100], [item101...item200], ...
 
 ```js
 async _write(batch, encoding, callback) {
- try {
- await this.db.insertMany(batch);
- callback(); // Signal success
- } catch (err) {
- callback(err); // Signal error
- }
+  try {
+    await this.db.insertMany(batch);
+    callback(); // Signal success
+  } catch (err) {
+    callback(err); // Signal error
+  }
 }
 ```
 
@@ -1403,11 +1474,11 @@ async _write(batch, encoding, callback) {
 
 ```js
 await pipeline(
- createReadStream("data.csv"),
- parseCSV,
- (source) => validate(source, mySchema),
- (source) => batch(source, 100),
- new DatabaseWriter(db)
+  createReadStream("data.csv"),
+  parseCSV,
+  (source) => validate(source, mySchema),
+  (source) => batch(source, 100),
+  new DatabaseWriter(db)
 );
 ```
 

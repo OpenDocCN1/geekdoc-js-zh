@@ -1,32 +1,20 @@
+
 # PHP, MySQL, JavaScript 和 HTML5 傻瓜指南
-
-
-
-![](img/cover.jpg)
-![cover.eps](img/cover.jpg)
-![Title Page Image](img/titlepg.png)
-
-
-
-
-
-
-
-
-
 
 ## 关于作者
 
-**Steve Suehring** 是多本技术书籍的作者。Steve 曾为各种组织使用各种编程语言编写各种 Web 应用程序。Steve 的专长是为复杂问题寻找创造性的解决方案。
+**Steve Suehring** 是多本技术书籍的作者。Steve 曾为各种组织使用各种编程语言编写各种 Web 应用程序。Steve 的作者。Steve 的专长是为复杂问题寻找创造性的解决方案。
 
 **Janet Valade** 是 `PHP & MySQL For Dummies` 的作者，该书已出版第三版。她还写了 `PHP & MySQL Everyday Apps For Dummies: 您的创建动态、数据库驱动网站的视觉蓝图`。此外，Janet 还是 `Spring into Linux` 的作者，以及 `Mastering Dreamweaver CS3` 和 `Flash CS3 Professional` 的合著者。Janet 在计算领域拥有 20 年的经验。最近，她在一家工程公司担任 Web 设计师和程序员工作了四年。在此之前，Janet 在大学环境中工作了 13 年，担任系统分析师。在职期间，她监督了计算资源的安装和运行，设计并开发了数据存档。
 
 ## 献辞
 
 献给 Bob 和 Mary。
+
 – Steve Suehring
 
 本书给发现它有用的人。
+
 – Janet Valade
 
 ## 作者致谢
@@ -44,41 +32,56 @@
 帮助这本书面的人员包括：
 
 **收购、编辑和垂直网站**
+
 项目编辑：Heidi Unger（上版：Jean Nelson）
+
 收购编辑：Kyle Looper
+
 文字编辑：Debbye Butler
+
 技术编辑：Peter Veverka
+
 编辑经理：Kevin Kirschner
+
 垂直网站：Richard Graves
+
 编辑助理：Annie Sullivan
+
 高级编辑助理：Cherie Case
+
 封面照片：© pagadesign/iStockphoto
 
 **制作服务**
+
 项目协调员：Patrick Redmond
+
 排版和设计：Jennifer Creasey
+
 校对：Jessica Kramer, Sossity R. Smith
+
 索引：BIM Indexing & Proofreading Services
 
 **傻傻指南出版与编辑**
+
 Richard Swadley，副总裁兼执行集团出版
+
 Andy Cummings，总裁兼出版
 
-
-
-
-
 Mary Bednarek，执行收购总监
+
 Mary C. Corder，编辑总监
+
 《呆呆》系列出版
+
 Kathleen Nebenhaus，副总裁兼执行发行
+
 排版服务部
+
 Debbie Stailey，排版服务部总监
 
 # PHP, MySQL®, JavaScript® & HTML5 呆呆®
 
 访问 `[www.dummies.com/cheatsheet/phpmysqljavascripthtml5aio](http://www.dummies.com/cheatsheet/phpmysqljavascripthtml5aio)` 查看此书的快速查表。
-
 
 ![check](img/check.png) 它是安全的。你可以找到与 `Apache` 配合运行的免费软件将其变为 SSL（安全套接层）服务器。如果你将该网站用于电子商务，安全是一个至关重要的问题。
 
@@ -92,7 +95,7 @@ Debbie Stailey，排版服务部总监
 
 你可以在办公室或地下室设置一台电脑作为你网站的 Web 服务器（有时称为 Web 主机）。你需要相当的技术水平才能做到这一点。你访问万维网网的互联网连接可能无法提供足够的资源让用户访问你的电脑。你可能需要一种提供域名系统（`DNS`）服务的快速连接。你需要不同类型的互联网连接，可能成本会增加。这本书没有提供运行你自己的 Web 主机所需的信息。
 
-![tip.eps](img/tip_fmt.png) 如果你已经有了设置主机机器的技术知识，你可能可以根据书中的信息安装 Web 软件。然而，如果你对互联网连接和 `DNS` 的了解不足以连接到互联网，你需要在其他地方研究这些信息，例如系统管理书籍或针对你操作系统的网络书籍。
+![tip](img/tip_fmt.png) 如果你已经有了设置主机机器的技术知识，你可能可以根据书中的信息安装 Web 软件。然而，如果你对互联网连接和 `DNS` 的了解不足以连接到互联网，你需要在其他地方研究这些信息，例如系统管理书籍或针对你操作系统的网络书籍。
 
 大多数人不会在自己的电脑上托管网站。大多数人会将他们的网站上传到他人提供的 Web 主机上。然而，在开发期间，在自己的电脑上运行 Web 服务器 供自己使用是相当常见的。这样做的好处是将开发环境与生产环境（或公开可见的网站）隔离开。换句话说，如果你对电脑上的文件进行了更改，你可以在将其公开之前彻底测试这些更改，以防文件出现问题。
 
@@ -112,7 +115,7 @@ Debbie Stailey，排版服务部总监
 
 如果公司网站上没有 `PHP` 或 `MySQL` 或两者都不可用，IT 需要安装它们并让它们可用。`PHP` 和 `MySQL` 有许多选项，但 IT 可能并不了解最佳选项——并且设置的方式可能不适用于你的需求。如果你需要更改 `PHP` 或 `MySQL` 选项，你需要请求 IT 进行更改；你无法自己进行更改。例如，`PHP` 必须在启用 `MySQL` 支持的情况下安装，因此如果 `PHP` 无法与 `MySQL` 通信，IT 可能需要重新安装启用了 `MySQL` 支持的 `PHP`。
 
-![remember.eps](img/remember_fmt.png) 随着需要，你会经常与 IT 人员互动。例如，你可能需要更改选项，你可能需要帮助来解释错误信息，或者你可能需要报告网站软件的问题。因此，与 IT 人员建立良好关系会让你的生活容易得多。经常给他们带些好吃的饼干和甜甜圈。
+![remember](img/remember_fmt.png) 随着需要，你会经常与 IT 人员互动。例如，你可能需要更改选项，你可能需要帮助来解释错误信息，或者你可能需要报告网站软件的问题。因此，与 IT 人员建立良好关系会让你的生活容易得多。经常给他们带些好吃的饼干和甜甜圈。
 
 ### 选择 Web 托管公司
 
@@ -128,10 +131,6 @@ Web 托管公司提供你建立网站所需的一切，包括电脑空间和所�
 
 选择 Web 托管公司时的其他考虑因素是
 
-
-
-
-
 ![check](img/check.png) 可性：你需要一家可以信赖的网站托管公司——一家不会明天破产消失，且不会运行在那些用口香胶和铁丝缠绕在一起的旧电脑上的公司。如果一家公司的停机时间多于运行时间，为了省去麻烦，请去别处寻找。你可以查看 [`www.webhostingtalk.com`](http://www.webhostingtalk.com/) 上的 Web Hosting Talk 或 [`www.netcraft.net`](http://www.netcraft.net/) 上的 Netcraft 来获取有关可靠提供商的信息。
 
 ![check](img/check.png) 速度：下载缓慢的网页是一个问题，因为用户会失去耐心并转到他处。页面缓慢可能是由于某些网站托管公司在资金匮乏的情况下创业，缺乏良好设备，也可能是因为公司太成功，导致其设备被新客户所压垮。无论如何，交付网页速度过慢的网站托管公司都是不可接受的。Netcraft ([`www.netcraft.net`](http://www.netcraft.net/)) 定期发布最快托管提供商调查。
@@ -140,19 +139,23 @@ Web 托管公司提供你建立网站所需的一切，包括电脑空间和所�
 
 ![check](img/check.png) 备份：备份是你的网页文件和数据库的副本，存储起来以防你的数据库或文件丢失或损坏。你需要确保公司对你的应用程序进行定期、频繁的备份。你还想知道在出现问题后，需要多长时间通过备份将你的网站恢复正常运行。
 
-![warning_bomb.eps](img/warning_bomb_fmt.png) 此外，你应该始终确保对自己的数据进行定期备份。这是你的数据；你应该对它负责。这样，如果网站托管提供商意外关闭，你可以提取最新的备份并迁移到新的托管提供商。
+![warning_bomb](img/warning_bomb_fmt.png) 此外，你应该始终确保对自己的数据进行定期备份。这是你的数据；你应该对它负责。这样，如果网站托管提供商意外关闭，你可以提取最新的备份并迁移到新的托管提供商。
 
 ![check](img/check.png) 功能：根据你网站的用途选择功能。通常，托管公司会将功能组合成不同的方案——功能越多，成本越高。一些需要考虑的功能有如下：
 
 - 磁盘空间：你的网站需要多少 MB 或 GB 的磁盘空间？媒体文件（如图形或音乐文件）可能非常大。
+
 - 数据传输：某些托管公司会就向用户发送网页的行为收费。如果你预计你的网站会有大量流量，这项成本应该在考虑范围内。
+
 - 电子邮件地址：许多托管公司为你的网站提供多个电子邮件地址。例如，如果你的网站是 `example.com`，你可以允许用户向 `me@example.com` 向你发送电子邮件。
+
 - 软件：托管公司提供各种用于网络开发的软件。`PHP` 和 `MySQL` 是我们在本书中讨论的软件。某些托管公司可能提供其他数据库，某些可能提供其他开发工具，如 FrontPage 扩展、购物车软件和信用卡验证。
+
 - 统计：通常你可以获得有关网站流量的统计数据，例如用户数、访问时间、按网页的访问情况等。
 
 对于大多数网站托管公司，你对自己的网络环境没有控制权。网站托管公司提供对其自身最有利的环境——可能是为了便于维护、低成本和尽量减少客户流失而设置的环境。你的环境的大部分由公司设定，你无法更改它。你只能请求公司进行更改。公司将不于更改一个运行良好的设置，因为担心更改可能会给公司系统或其他客户带来问题。
 
-![tip.eps](img/tip_fmt.png) 从零开始研究网站托管公司是非常困难的——在 `Google.com` 上搜索“web hosting”会产生近 4 亿条结果。研究网站托管公司的最佳方法是向具有这些公司经验的人寻求建议。使用过托管公司的人可以提醒你服务是否缓慢或计算机是否经常宕机。当你从满意的客户那里收集了几个网站托管公司的名称后，你就可以缩小范围，找到最适合你的需求且性价比最高的一个。
+![tip](img/tip_fmt.png) 从零开始研究网站托管公司是非常困难的——在 `Google.com` 上搜索“web hosting”会产生近 4 亿条结果。研究网站托管公司的最佳方法是向具有这些公司经验的人寻求建议。使用过托管公司的人可以提醒你服务是否缓慢或计算机是否经常宕机。当你从满意的客户那里收集了几个网站托管公司的名称后，你就可以缩小范围，找到最适合你的需求且性价比最高的一个。
 
 ## 使用托管的网站
 
@@ -175,10 +178,6 @@ Web 托管公司提供你建立网站所需的一切，包括电脑空间和所�
 在接下来的章节中，我们将提供有关处理这些安装的基本信息，然后在随后的章节中，我们将详细说明如何完成这些任务。
 
 ### 安装 Web 服务器
-
-
-
-
 
 假设你已经有一台安装了操作系统（如 Windows、Mac OS X 或 Linux）的计算机，接下来你需要安装一个 Web 服务器。你的第一步是决定安装哪种 Web 服务器。答案几乎总是 Apache。根据你正在使用的操作系统，这里是一些需要考虑的事项：
 
@@ -216,15 +215,15 @@ Apache 网站（[`http://httpd.apache.org`](http://httpd.apache.org/)`）提供�
 
 ## 本章内容
 
-![arrow.png](img/arrow.png) 测试 Web 服务器
+![arrow](img/arrow.png) 测试 Web 服务器
 
-![arrow.png](img/arrow.png) 获取 Apache
+![arrow](img/arrow.png) 获取 Apache
 
-![arrow.png](img/arrow.png) 在 Windows、Linux 和 Mac 上安装 Apache
+![arrow](img/arrow.png) 在 Windows、Linux 和 Mac 上安装 Apache
 
-![arrow.png](img/arrow.png) 使用 Apache
+![arrow](img/arrow.png) 使用 Apache
 
-![arrow.png](img/arrow.png) 配置 Apache
+![arrow](img/arrow.png) 配置 Apache
 
 你可能认为这一章完全是关于 Apache Web 服务器的。没错，你是的。在本章中，你将下载并安装 Apache。如果你使用的是托管网站或公司网站，并将文件放置在他人的服务器上，那么你根本不需要安装 Web 服务器。
 
@@ -244,7 +243,7 @@ Web 服务器软件已成功安装。你
 现在可以向此目录添加内容并替换此页面。
 ```
 
-![warning_bomb.eps](img/warning_bomb_fmt.png) 你不能通过浏览器的“文件⇒打开”或“打开文件”来测试你的 Web 服务器。这种查看网页文件的方法不会通过 Web 服务器。你必须在浏览器地址栏中输入 URL 来测试服务器。
+![warning_bomb](img/warning_bomb_fmt.png) 你不能通过浏览器的“文件⇒打开”或“打开文件”来测试你的 Web 服务器。这种查看网页文件的方法不会通过 Web 服务器。你必须在浏览器地址栏中输入 URL 来测试服务器。
 
 如果你的机器上没有运行任何 Web 服务器，将会显示错误信息，例如以下内容之一：
 
@@ -281,23 +280,19 @@ Windows 提供二进制文件——即编译好的、即插用的文件，只需
 
 Windows 二进制文件带有一个安装程序，该程序可以帮你安装、配置并启动 Apache。在 Apache 网站下载页面，找到你需要的版本部分。点击 Win32 Binary (MSI Installer) 的链接下载安装文件。
 
-
-
-
-
-![warning_bomb.eps](img/warning_bomb_fmt.png) 虽然也可以以 Zip 文件格式下载 Win32 源码，但从源代码编译并安装 Apache 非常困难，只有高级用户才应该尝试。它需要高级的知识和特殊的软件。
+![warning_bomb](img/warning_bomb_fmt.png) 虽然也可以以 Zip 文件格式下载 Win32 源码，但从源代码编译并安装 Apache 非常困难，只有高级用户才应该尝试。它需要高级的知识和特殊的软件。
 
 ## 为 Linux 获取 Apache
 
 大多数最新版本的 Linux 均包含了 Apache。如果你需要安装 Apache 或升级到更新版本，大多数 Linux 发行版都会在其网站上提供供下载的软件，或者通过它们的包管理软件安装到特定的 Linux 系统上。此外，大多数 Linux 系统都提供专门用于下载和安装软件的实用程序。例如，Fedora 提供了 `yum` 工具，它可以从 Fedora 网站下载并安装软件。请查看你的 Linux 发行版文档，获取有关如何在你的 Linux 系统上下载和安装软件的信息。
 
-在某些情况下，你可能需要手动安装 Apache。网站提供的软件可能不是最新版本，或者配置不符合你的需求。要手动安装，你需要从 Apache 网站 `http://httpd.apache.org/` 下载源代码。
+在某些情况下，你可能需要手动安装 Apache。网站提供的软件可能不是最新版本，或者配置不符合你的需要。要手动安装，你需要从 Apache 网站 `http://httpd.apache.org/` 下载源代码。
 
 你可以轻松地从源代码编译并安装 Apache。这个过程听起来并没有那么技术化和令人生畏。本章稍后部分的 在 Linux 或 Mac 上从源代码安装 Apache 节提供了从源代码安装 Apache 的说明说明。
 
 ## 为 Mac 获取 Apache
 
-大多数最新版本的 Mac OS X 已经预装了 Apache。如果你在浏览器地址栏中输入 `http://localhost` 来测试 Apache，而它没有显示网页，那么它可能已经安装但尚未启动。要了解如何启动 Apache，请查看本章稍后的 在 Mac 上安装 Apache 节。
+大多数最新版本的 Mac OS X 已已经预装了 Apache。如果你在浏览器地址栏中输入 `http://localhost` 来测试 Apache，而它没有显示网页，那么它可能已经安装但尚未启动。要了解如何启动 Apache，请查看本章稍后的 在 Mac 上安装 Apache 节。
 
 如果你因为未安装或安装了旧版本而需要安装 Apache，请从 Apache 网站下载源文件并在 Mac 上进行编译安装。从源代码安装 Apache 的说明位于本章稍后部分的 在 Linux 和 Mac 上从源代码安装 Apache 节。
 
@@ -309,7 +304,7 @@ XAMPP 是一个流行的合一安装包，包含了 Apache、PHP 和 MySQL。XAM
 
 WAMPServer 是一个流行的 Windows 安装工具包，提供最新版本的 Apache、PHP 和 MySQL 。它还安装了 `phpMyAdmin`，一个用于管理你 MySQL 数据库的实用程序。WAMPServer 可以在 `www.wampserver.com/en` 获取。
 
-MAMP 是一个用于 Mac 的安装工具包，它为 Mac OS X 安装 Apache、PHP 和 MySQL。这个免费软件包会在你的 Mac 上安装本地服务器环境。你可以在 `www.mamp.info` 获取 MAMP。
+MAMP 是一个用于 Mac 的安装工具包，它为 Mac OS X 安装 Apache、PHP 和 MySQL。这个免费软件包会在你的 Mac 上安本地服务器环境。你可以在 `www.mamp.info` 获取 MAMP。
 
 ## 验证下载的文件
 
@@ -325,7 +320,7 @@ Apache 网站提供了在下载后验证软件的方法，作为一种安全措�
 
 你可以在几乎任何版本的 Windows 上安装 Apache。
 
-如果 Internet 局信息服务 (IIS) 已经在端口 `80` 上运行，则你无法按照以下说明安装 Apache。如果 IIS 正在运行，你可以在开始⇒控制面板⇒管理工具⇒Internet 服务管理器中找到 IIS 控制台。如果你没有找到此菜单项，说明没有安装 IIS。如果 IIS 已经在运行，你必须在安装 Apache 之前将其关闭，或者在不同的端口上安装 Apache。
+如果 Internet 局信息服务 (IIS) 已经在端口 `80` 上运行，则你无法按照以下说明安装 Apache。如果 IIS 正在运行，你可以在开始⇒控制面板⇒管理工具⇒Internet 服务管理器中找到 IIS 控制台。如果你没有找到此菜单项，说明没有安装 IIS。如果 IIS 已已经在运行，你必须在安装 Apache 之前将其关闭，或者在不同的端口上安装 Apache。
 
 在确认 IIS 没有运行后，按照以下步骤安装 Apache：
 
@@ -375,9 +370,6 @@ Apache 安装向导启动，并出现欢迎屏幕。
 
 9. 点击“完成”退出安装向导。
 
-
-
-
 Apache 根据您的操作系统安装在您的计算机上。如果您将其安装在较新版本的 Microsoft Windows 上，它将默认作为服务安装，并在计算机启动时自动启动。如果您将其安装在旧版本的 Windows 上（例如 Windows 95/98/Me），则您需要手动启动它，或者设置其在计算机启动时自动启动。更多信息请参见本章后半部分的启动和停止 Apache 章节。
 
 ## 在 Mac 上安装 Apache
@@ -397,11 +389,13 @@ Apache 根据您的操作系统安装在您的计算机上。如果您将其安�
 2. 使用类似下面的命令解压 tar 包：
 
 对于 Linux：
+
 ```
 gunzip -c httpd-2.2.22.tar.gz | tar -xf –
 ```
 
 对于 Mac：
+
 ```
 gnutar -xzf httpd-2.2.22.tar.gz 
 ```
@@ -415,21 +409,25 @@ gnutar -xzf httpd-2.2.22.tar.gz
 `configure` 命令由 `./configure` 以及所有必要的选项组成。要将 PHP 作为模块使用 Apache，请使用如下适当的 `configure` 命令：
 
 对于 Linux 或 Unix，使用：
+
 ```
 ./configure --enable-so
 ```
 
 对于 Mac，使用：
+
 ```
 ./configure --enable-module=most
 ```
 
 如果您需要，可以使用其他选项。您可能想要使用的重要安装选项之一是 `prefix`，它设置了您希望安装 Apache 的不同位置。默认情况下，Apache 安装在 `/usr/local/apache` 或 `/usr/local/apache2`。您可以使用以下行更改安装位置：
+
 ```
 ./configure --prefix=/software/apache
 ```
 
 您可以通过输入以下行查看所有可用选项列表：
+
 ```
 ./configure --help
 ```
@@ -443,10 +441,13 @@ gnutar -xzf httpd-2.2.22.tar.gz
 6. 输入以下命令安装 Apache：
 
 * 对于 Linux 或 Unix，输入：
+
 ```
 make install
 ```
+
 * 对于 Mac，输入：
+
 ```
 sudo make install
 ```
@@ -470,7 +471,9 @@ sudo make install
 当您安装 Apache 时，它会创建用于停止和启动它的菜单项。要找到此菜单，选择开始⇒程序⇒Apache HTTP Server⇒控制 Apache 服务器。菜单有以下项目：
 
 * ![check](img/check.png) `启动`：此选项在 Apache 未运行运行时启动它。如果您在 Apache 运行时点击此项，您将看到一条错误消息，说明 Apache 已经启动。
+
 * ![check](img/check.png) `停止`：在 Apache 运行时停止它。如果您在 Apache 未运行时点击此项，您将看到一条错误消息，说明 Apache 尚未运行。
+
 * ![check](img/check.png) `重启`：在 Apache 运行时重启它。如果您更改了 Apache 的配置，您需要在更改生效之前重启 Apache。
 
 ### 在 Linux、Unix 和 Mac 上启动 Apache
@@ -482,8 +485,6 @@ sudo make install
 `path/apachectl keyword`
 
 （注：原文中关于 `apachectl` 的描述存在大量重复，此处已根据核心逻辑进行翻译并整合）
-
-
 
 你可以通过以下命令检查计算机上运行的进程，来确认 Apache 是否已停止：
 
@@ -549,7 +550,7 @@ httpd -h
 
 当 Apache 启动时，它会从配置文件读取信息。如果 Apache 无法读取配置文件，它就无法启动。除非你告诉 Apache 使用不同的配置文件，否则它会在 Apache 安装目录中寻找 `conf/httpd.conf` 文件。请继续阅读以了解如何配置 Apache 以使其顺畅启动的详细信息。
 
-![remember.eps](img/remember_fmt.png) 在更改任何指令后，务必重启 Apache。
+![remember](img/remember_fmt.png) 在更改任何指令后，务必重启 Apache。
 
 ## 修改设置
 
@@ -561,13 +562,13 @@ Apache 的行为取决于配置文件（这是一个纯文本文件）中的命�
 
 ![check](img/check.png) 更改你的文档根（Document Root）：Apache 在特定目录及其子目录中查找网页文件，该目录被称为你的文档根。你可以更改文档根的位置。请阅读下一节以获取说明。
 
-![check](img/check.png) 更改 Apache 监听的端口：默认情况下，Apache 在端口 80 上上文件文件请求。你可以配置 Apache 监听不同的端口。请查看接下来的更改端口号章节获取有关如何操作的详细信息。
+![check](img/check.png) 更改 Apache 监听的端口：默认情况下，Apache 在端口 80 上上文件文件请请求。你可以配置 Apache 监听不同的端口。请查看接下来的更改端口号章节获取有关如何操作的详细信息。
 
 要更改任何设置，请使用文本编辑器编辑 `httpd.conf` 文件。在 Windows 上，你可以通过开始⇒程序⇒Apache HTTPD Server⇒配置 Apache 服务器⇒编辑 Apache httpd.conf 文件菜单访问此文件。当你点击此菜单项时，`httpd.conf` 文件将在记事本中打开。
 
 `httpd.conf` 文件带有注释（以 `#` 开头的行），描述了指令，但在更改任何内容之前，请确保你理解它们的功能。所有指令在 Apache 网站上都有文档。
 
-![remember.eps](img/remember_fmt.png) 在更改 Apache 设置时，需要考虑以下约定：
+![remember](img/remember_fmt.png) 在更改 Apache 设置时，需要考虑以下约定：
 
 ![check](img/check.png) 文件名和路径：在添加或更改文件名和路径时，请使用斜杠，即使目录在 Windows 上也是如此。Apache 可以识别。
 
@@ -581,7 +582,7 @@ Apache 的行为取决于配置文件（这是一个纯文本文件）中的命�
 "c:/temp/mydir"
 ```
 
-![warning_bomb.eps](img/warning_bomb_fmt.png) 设置在重启 Apache 后才会生效。有时，使用 `restart` 命令可能无法更改设置。如果新设置似乎未生效，尝试用 `stop` 停止服务器然后用 `start` 启动。
+![warning_bomb](img/warning_bomb_fmt.png) 设置在重启 Apache 后才会生效。有时，使用 `restart` 命令可能无法更改设置。如果新设置似乎未生效，尝试用 `stop` 停止服务器然后用 `start` 启动。
 
 ## 更改你的文档根的位置
 
@@ -605,7 +606,7 @@ DocumentRoot /usr/mysver/Apache2/webpages
 Listen 80
 ```
 
-![warning_bomb.eps](img/warning_bomb_fmt.png) 对于 Apache 2.0 和 2.2，`Listen` 指令是必须的。如果没有包含 `Listen` 指令，Apache 2 将无法启动。你可以如下更改端口：
+![warning_bomb](img/warning_bomb_fmt.png) 对于 Apache 2.0 和 2.2，`Listen` 指令是必须的。如果没有包含 `Listen` 指令，Apache 2 将无法启动。你可以如下更改端口：
 
 ```
 Listen 8080
@@ -615,12 +616,17 @@ Listen 8080
 
 ## 本章
 
-![arrow.png](img/arrow.png) 检查是否需要安装 PHP
-![arrow.png](img/arrow.png) 在 Windows、Mac OS 和 Linux 上安装 PHP
-![arrow.png](img/arrow.png) 为你的服务器配置 PHP
-![arrow.png](img/arrow.png) 配置 PHP
-![arrow.png](img/arrow.png) 测试 PHP
-![arrow.png](img/arrow.png) 排除 PHP 安装
+![arrow](img/arrow.png) 检查是否需要安装 PHP
+
+![arrow](img/arrow.png) 在 Windows、Mac OS 和 Linux 上安装 PHP
+
+![arrow](img/arrow.png) 为你的服务器配置 PHP
+
+![arrow](img/arrow.png) 配置 PHP
+
+![arrow](img/arrow.png) 测试 PHP
+
+![arrow](img/arrow.png) 排除 PHP 安装
 
 你可能需要安装 PHP，这取决于你使用的操作系统。Windows 操作系统没有提供 PHP。然而在许多情况下，PHP 已经安装了。
 
@@ -629,11 +635,17 @@ Listen 8080
 安装 PHP 包括以下步骤，本章将详细介绍：
 
 1. 检查是否需要安装 PHP。
+
 2. 获取 PHP 软件，通常从网站下载。
+
 3. 安装 PHP。
+
 4. 为你的服务器配置 PHP。
+
 5. 配置 PHP。
+
 6. 测试 PHP。
+
 7. 排除故障。
 
 ## 检查 PHP 安装
@@ -650,9 +662,6 @@ find / -name "php*"
 
 如果你没有找到任何 PHP 文件，说明没有安装 PHP。在下一节中我们将描述如何获取和安装 PHP。
 
-
-
-
 如果你在电脑上发现了 PHP 文件，PHP 可能已经准备就绪，也可能还没有准备。这些文件可能存在于你的硬盘上，但 PHP 可能还没有安装。或者，PHP 可能已经安装，但它可能不是最新版本。在这种情况下，你可能想要安装最新版本。
 
 你可以使用本章后面测试 PHP 节中描述的测试程序来测试 PHP 是否已准备就绪。该节中的测试将确定 PHP 是否已安装，并告诉你你安装的是哪个版本。
@@ -663,7 +672,7 @@ find / -name "php*"
 
 在本书编写时，有两个版本的 PHP 可用：PHP 4 和 PHP 5。当 PHP 6 发布后，在一段时间内可能有三个版本的 PHP 可用。如果你是第一次安装 PHP 并创建你的第一个网站，你应该下载 PHP 5；如果你在你阅读本书时已经有了 PHP 6，则下载 PHP 6。
 
-![tip.eps](img/tip_fmt.png) 只有当你需要维护或修改带有现有代码的网站时，才应该安装旧版本的 PHP。
+![tip](img/tip_fmt.png) 只有当你需要维护或修改带有现有代码的网站时，才应该安装旧版本的 PHP。
 
 为某一个 PHP 版本编写的代码可能需要修改才能在另一个 PHP 版本上运行。如果你有大量的代码，你可能想在一段时间内更新这些代码。
 
@@ -677,13 +686,14 @@ find / -name "php*"
 
 ### 获取 Windows 版本的 PHP
 
-你可以从 PHP 网站 `www.php.net` 下载二进制文件并轻松安装 PHP。你可以下载一个包含所有必要文件的 Zip 包，或者一个可以运行以安装所有 PHP 文件的安装程序。PHP 文档建议你从 Zip 文件安装 PHP，以便更好地理解安装过程，并在以后更容易添加扩展。本章中的说明提供了从 Zip 文件安装 PHP 的指导。
+你可以从 PHP 网站 `www.php.net` 下载二进文件并轻松安装 PHP。你可以下载一个包含所有必要文件的 Zip 包，或者一个可以运行以安装所有 PHP 文件的安装程序。PHP 文档建议你从 Zip 文件安装 PHP，以便更好地理解安装过程，并在以后更容易添加扩展。本章中的说明提供了从 Zip 文件安装 PHP 的指导。
 
-![warning_bomb.eps](img/warning_bomb_fmt.png) 尽管 Windows 用户可以从 PHP 网站提供的源代码编译并安装 PHP，但这很困难，应该只让高级用户尝试。它需要高级的知识和特殊软件。
+![warning_bomb](img/warning_bomb_fmt.png) 尽管 Windows 用户可以从 PHP 网站提供的源代码编译并安装 PHP，但这很困难，应该只让高级用户尝试。它需要高级的知识和特殊软件。
 
 要下载 Windows Zip 文件，请按照以下步骤操作：
 
 1. 访问 [`www.php.net/downloads.php`](http://www.php.net/downloads.php)。
+
 2. 下载最新版本 PHP 的 Zip 包。
 
 ### 获取 Linux 版本的 PHP
@@ -724,10 +734,6 @@ PHP 网站提供了下载后验证软件的方法，作为一种安全措施，�
 md5 filename
 ```
 
-
-
-
-
 使用你下载的文件名，例如 `md5 php-5.2.1-Win32.zip`。在 Windows 中，你可能需要将下载的文件复制到安装 MD5 软件（如 `md5.exe`）的目录，切换到该目录，然后输入前面的命令。
 
 屏幕会显示一个签名。这里的签名应当与 PHP 网站下载页面上文件名下方显示的签名相同。
@@ -740,13 +746,13 @@ HashCheck 是一个简单的开源（免费）Windows 程序，带有图形化�
 
 尽管 PHP 运行在许多平台上，但我们描述了在 Unix、Linux、Mac 和 Windows 上安装 PHP 的方法，这些代表了互联网上大多数网站使用的操作系统。PHP 可以与多个 Web 服务器一起运行，但这些说明主要关注 Apache 和 Internet 信息服务器 (IIS)，因为它们共同支持了互联网上几乎 90% 的网站。如果你需要其他操作系统或 Web 服务器的说明，请访问 PHP 网站：[`www.php.net`](http://www.php.net/)。
 
-![tip.eps](img/tip_fmt.png) 本章提供了 PHP 5 和 6 的安装说明。如果你正在安装之前的版本，会有一些细微差异，请阅读 PHP 分发包提供的 `install.txt` 文件。
+![tip](img/tip_fmt.png) 本章提供了 PHP 5 和 6 的安装说明。如果你正在安装之前的版本，会有一些细微差异，请阅读 PHP 分发包提供的 `install.txt` 文件。
 
 ### 在 Unix 和 Linux 上安装
 
 你可以将 PHP 作为 Apache 模块或作为独立的解释器安装。如果你在网页中使用 PHP 作为一种脚本语言来与数据库交互，请将 PHP 安装为 Apache 模块。作为模块，PHP 运行更快且更安全。我们书中在书中讨论作为独立解释器的 PHP。
 
-![tip.eps](img/tip_fmt.png) 我们在接下来的几节中提供了在 Unix 和 Linux 上编译和安装 PHP 的逐步说明。在开始安装程序之前，请完整阅读所有步骤。
+![tip](img/tip_fmt.png) 我们在接下来的几节中提供了在 Unix 和 Linux 上编译和安装 PHP 的逐步说明。在开始安装程序之前，请完整阅读所有步骤。
 
 ### 在 Unix 和 Linux 上准备安装工作
 
@@ -798,7 +804,7 @@ gunzip -c php-5.4.5.tar.gz | tar -xf –
 
 你可能想在 `configure` 命令中使用其他配置选项。可用的配置选项在本章稍后的 Unix、Linux 和 Mac 的安装选项 节中讨论。
 
-![remember.eps](img/remember_fmt.png) 对于本书，你现在需要激活 MySQL 支持，这是通过一个配置选项实现的。激活 MySQL 支持的讨论在本微型书的第 4 章中。
+![remember](img/remember_fmt.png) 对于本书，你现在需要激活 MySQL 支持，这是通过一个配置选项实现的。激活 MySQL 支持的讨论在本微型书的第 4 章中。
 
 当你输入 `configure` 命令时，你会看到很多行输出。请等待 `configure` 命令完成。这可能需要几分钟。如果 `configure` 命令失败，可能是缺少某些软件。如果 `apxs` 未找到，通常会有提示信息。在这种情况下，你需要检查 `apxs` 的位置。如果 `apxs` 未在预期位置，通过 `find / -name apxs` 查找路径，并将其在 `configure` 命令的 `with-apxs=` 选项中指定，例如 `--with-apxs=/usr/sbin/apxs` 或 `/usr/local/apache/bin/apxs`。
 
@@ -810,7 +816,7 @@ gunzip -c php-5.4.5.tar.gz | tar -xf –
 
 从 PHP 4.3 开始，在 Mac OS X 上安装 PHP 与 Unix 和 Linux 一样简单。你通过下载源码、编译源码和安装程序来安装 PHP。
 
-![tip.eps](img/tip_fmt.png) 我们在接下来的几节中提供了在 Unix 和 Linux 上编译和安装 PHP 的逐步说明。在开始安装程序之前，请完整阅读所有步骤。
+![tip](img/tip_fmt.png) 我们在接下来的几节中提供了在 Unix 和 Linux 上编译和安装 PHP 的逐步说明。在开始安装程序之前，请完整阅读所有步骤。
 
 ### 在 Mac OS X 上准备工作
 
@@ -832,17 +838,13 @@ httpd -v
 httpd -l
 ```
 
-你可能需要进入 `httpd` 所在的目录才能运行命令。输出通常会显示一长模块列表。对于 PHP 来说，你只需要关注 `mod_so`。如果 `mod_so` 未加载，必须重新安装 Apache。
+你可能需要进入 `httpd` 所在的目才能运行命令。输出通常会显示一长模块列表。对于 PHP 来说，你只需要关注 `mod_so`。如果 `mod_so` 未加载，必须重新安装 Apache。
 
 ![check](img/check.png) `apxs` 工具已安装。安装 Apache 时会安装 `apxs` 工具。要确定它是否安装在你的电脑上，寻找一个名为 `apxs2` 的文件。如果你能找到该文件，`apxs` 已经安装；如果，则没有安装。
 
 ### 在 Mac OS X 上安装
 
 要在 Mac OS X 上安装 PHP，请遵循以下步骤：
-
-
-
-
 
 ### 1. 进入你下载 PHP 的目录（例如，`cd-/usr/src`）。
 
@@ -871,11 +873,17 @@ cd php-5.4.5
 `configure` 命令由 `./configure` 以及所有必要的选项组成。最基本的选项集如下：
 
 * **位置选项**：由于 Mac 存储文件的位置与 PHP 默认位置不同，你需要告诉 PHP 文件所在的位置。请使用以下选项：
+
   `--prefix=/usr`
+
   `--sysconfdir=/etc`
+
   `--localstatedir=/var`
+
   `--mandir=/usr/share/man`
+
 * **zlib 选项**：`--with-zlib`。
+
 * **Apache 选项**：如果你是为了 Apache 安装 PHP，请使用以下选项：`--with-apxs` 或 `--with-apxs2`。
 
 最可能的配置命令是：
@@ -904,26 +912,38 @@ cd php-5.4.5
 
 ## Unix、Linux 和 Mac 的安装选项
 
-前面的部分为你提供了在 Unix、Linux 或 Mac 上快速安装 PHP 的步骤，并包含了本书书中应用程序所需的选项。然而，你可能想以不同的方式安装 PHP。例如，所有的 PHP 程序和文件都安装在它们的默认位置，但你可能需要将 PHP 安装在不同的位置。或者你可能计划使用额外的软件进行应用程序。如果你需要根据特定需求配置 PHP，可以使用额外的命令行选项。只需在 Unix 和 Mac 安装说明第 4 步所示的命令中添加这些选项即可。
+前面的部分为你提供了在 Unix、Linux 或 Mac 上快速安装 PHP 的步骤，并包含了本书书中应用程所需的选项。然而，你可能想以不同的方式安装 PHP。例如，所有的 PHP 程序和文件都安装在它们的默认位置，但你可能需要将 PHP 安装在不同的位置。或者你可能计划使用额外的软件进行应用程序。如果你需要根据特定需求配置 PHP，可以使用额外的命令行选项。只需在 Unix 和 Mac 安装说明第 4 步所示的命令中添加这些选项即可。
 
-![remember.eps](img/remember_fmt.png) 通常情况下，命令行中选项的顺序并不重要，但大小写很重要。Unix、Linux 和 Mac 命令通常对大小写敏感，因此如果你看到的命令是小写的（这很常见），在输入时你需要确保也使用小写字母。
+![remember](img/remember_fmt.png) 通常情况下，命令行中选项的顺序并不重要，但大小写很重要。Unix、Linux 和 Mac 命令通常对大小写敏感，因此如果你看到的命令是小写的（这很常见），在输入时你需要确保也使用小写字母。
 
 表 3-1 显示了 PHP 最常用的选项。要查看所有可能选项的列表，请输入 `./configure --help`。
 
 ### 表 3-1 PHP 配置选项
 
 | 选项 | 告诉 PHP |
+
 | :--- | :--- |
+
 | `prefix=PREFIX` | 将主 PHP 目录设置为 `PREFIX`。默认的 `PREFIX` 为 `/usr/local`。 |
+
 | `exec-prefix=EPREFIX` | 将架构相关的文件安装在 `EPREFIX`。默认的 `EPREFIX` 为 `PREFIX`。 |
+
 | `bindir=DIR` | 将用户执行文件安装在 `DIR`。默认为 `EPREFIX/bin`。 |
+
 | `infodir=DIR` | 将信息文档安装在 `DIR`。默认为 `PREFIX/info`。 |
+
 | `mandir=DIR` | 将 `man` 文件安装在 `DIR`。默认为 `PREFIX/man`。 |
+
 | `with-config-file-path=DIR` | 在 `DIR` 中查找配置文件 (`php.ini`)。如果不使用此选项，PHP 将在默认位置（通常是 `/usr/local/lib`）查找配置文件。 |
+
 | `disable-libxml` | 禁用默认包含的 XML 支持。 |
+
 | `enable-libxml` | |
+
 | `with-zlib` | |
+
 | `with-apxs` | |
+
 | `with-apxs2` | |
 
 ## 在 Windows 上安装
@@ -934,23 +954,19 @@ PHP 从 Windows 98 开始运行在 Microsoft Windows 上，但如果你仍在使
 
 以下步骤显示了如何使用 Zip 文件在 Windows 上安装 PHP：
 
-1. 将 `.zip` 文件提取到你想安装 PHP 的目录，例如 `c:\php`。
+1. 将 `.zip` 文件提取到你想安安装 PHP 的目录，例如 `c:\php`。
 
 Zip 文件名为 `php`，后面跟着版本号和 `win32.zip`，例如 `php5.4.5-Win32.zip`。如果你双击该文件，它应该打开。将文件复制到相应的目录，或者如果你的解压软件有提取选项。`C:\php` 是很好的很好的选择，因为许多配置文件假设 PHP 安装在那里。
 
-![tip.eps](img/tip_fmt.png) 不要将 PHP 安装在路径包含空格的目录中，例如 `Program Files\PHP`。
+![tip](img/tip_fmt.png) 不要将 PHP 安装在路径包含空格的目录中，例如 `Program Files\PHP`。
 
 现在你有了一个包含 Zip 文件所有文件的目录和若干子目录。你应该能够运行 PHP 程序。偶尔，PHP 需要它找不到的文件。当这种情况发生时，当你运行 PHP 程序时，PHP 会显示一条错误信息，说它找不到某个特定的 `.dll` 扩展文件。你通常可以在 `ext` 子目录中找到该 DLL 并将其复制到主 PHP 目录中。
-
-
-
-
 
 按照本章稍后部分配置 PHP 的说明进行操作。
 
 # 为 PHP 配置你的 Web 服务器
 
-你的 Web 服务器需要配置以识别 PHP 脚本并运行它们。在这里，我们将告诉你如何在 Windows 上配置 `Apache` 和 `IIS`，我们还将告诉你如何在 Linux 和 Mac 上配置 `Apache`。
+你的 Web 服务器需要配置以识别 PHP 脚本并运行它们。在这里，我们将告诉你如何在 Windows 上配置 `Apache` 和 `IIS`，我们还将告诉你如何在 Linux和 Mac 上配置 `Apache`。
 
 ## 在 Windows 上配置你的 Web 服务器
 
@@ -994,7 +1010,7 @@ AddType application/x-httpd-php .php
 
 在较新版本的 Windows 中，你可以通过选择开始⇒程序⇒Apache HTTPD Server⇒控制 Apache 服务器，然后选择“启动”或“重启”来启动它。在 Windows 98/Me 中，你可以通过选择开始⇒程序⇒Apache Web Server⇒管理来启动它。
 
-有时重启 Apache 是不够的；你必须先停止它再启动。此外，你的电脑无疑设置了当电脑启动时 Apache 随之启动。因此，你可以关闭并重新启动电脑来重启 Apache。
+有时重启 Apache 是不够的；你必须先停止它再启动。此外，你的电脑 undoubtedly设置了当电脑启动时 Apache 随之启动。因此，你可以关闭并重新启动电脑来重启 Apache。
 
 ### 配置 IIS
 
@@ -1067,6 +1083,7 @@ AddType application/x-httpd-php .php
 PHP 使用名为 `php.ini` 的文件来控制某些行为。PHP 在启动时查找并使用找到的设置。如果 PHP 找不到该文件，它将使用一组默认设置。`php.ini` 文件的默认位置如下（除非你在安装时更改了它）：
 
 - Windows：系统目录，取决于 Windows 版本：Windows 98/Me/XP/Vista/7/8 为 `windows`；Windows NT/2000 以及有时 XP 和 Vista 为 `winnt`
+
 - Unix、Linux 和 Mac：`/usr/local/lib`
 
 如果在安装时没有安装 `php.ini` 文件，你现在需要安装它。PHP 分发版包含一个带有默认设置的配置文件 `php.ini-dist`。将其复制到适当的位置，并重命名为 `php.ini`。
@@ -1091,19 +1108,19 @@ magic_quotes-gpc On
 
 4. 仅在 Windows 上使用 PHP 5 或 6 时，激活 `mysqli` 或 `mysql` 支持。
 
-
-
-
-
 # 第 4 章：设置 MySQL
 
 ## 本章内容
 
-- ![arrow.png](img/arrow.png) 检查是否需要安装 MySQL
-- ![arrow.png](img/arrow.png) 在 Windows、Mac 或 Linux 上安装 MySQL
-- ![arrow.png](img/arrow.png) 测试 MySQL
-- ![arrow.png](img/arrow.png) 激活 MySQL
-- ![arrow.png](img/arrow.png) 解决 MySQL 安装中的问题
+- ![arrow](img/arrow.png) 检查是否需要安装 MySQL
+
+- ![arrow](img/arrow.png) 在 Windows、Mac 或 Linux 上安装 MySQL
+
+- ![arrow](img/arrow.png) 测试 MySQL
+
+- ![arrow](img/arrow.png) 激活 MySQL
+
+- ![arrow](img/arrow.png) 解决 MySQL 安装中的问题
 
 MySQL 环境包含了 MySQL 数据库软件以及你可以用于管理 MySQL 数据库的支持性程序。MySQL 软件由 MySQL 数据库服务器、若干辅助管理 MySQL 数据库的实用程序，以及 MySQL 服务器所需的某些支持软件组成（你不需要了解这些）。MySQL 的核心是 MySQL 服务器，它负责管理数据库。当你与数据库交互时，你会向数据库服务器发送请求消息，服务器会通过遵循请求中的指令做出响应——例如存储数据、获取数据等。
 
@@ -1112,10 +1129,6 @@ MySQL 环境包含了 MySQL 数据库软件以及你可以用于管理 MySQL 数
 ## 检查 MySQL 安装情况
 
 你可能需要也可能不需要安装 MySQL。它可能已经运行在你的电脑上，或者可能已经安装但尚未运行。以下是检查 MySQL 当前是否运行的方法：
-
-
-
-
 
 ![check](img/check.png) **Windows**: 如果 MySQL 正在运行，它将以服务的形式运行。要检查这一点，选择 `开始⇒控制面板⇒管理工具⇒服务` 并在按字母顺序排列的服务列表中向下滚动。如果 MySQL 已安装为服务，它将出现在列表中。如果它当前正在运行，其状态将显示为 `已启动`。
 
@@ -1127,7 +1140,7 @@ MySQL 环境包含了 MySQL 数据库软件以及你可以用于管理 MySQL 数
 ps –ax
 ```
 
-![tip.eps](img/tip_fmt.png) 输出应该是一个程序列表。某些操作系统（通常是 Unix 的变体）对 `ps` 命令有不同的选项。如果前面的命令没有生成正在运行的程序列表，请输入 `man ps` 查看您需要使用哪些选项。
+![tip](img/tip_fmt.png) 输出应该是一个程序列表。某些操作系统（通常是 Unix 的变体）对 `ps` 命有不同的选项。如果前面的命令没有生成正在运行的程序列表，请输入 `man ps` 查看您需要使用哪些选项。
 
 在出现的程序列表中，寻找名为 `mysqld` 的程序。如果你找到了它，说明 MySQL 正在运行。
 
@@ -1150,13 +1163,22 @@ find / -name "mysql*"
 在 Windows 上启动 `MySQL`，请遵循以下步骤：
 
 1. 打开 `命令提示符` 窗口。
+
    在 Windows 7 中，选择`开始⇒所有程序⇒附件⇒命令提示符`。在 Windows 8 中，从开始屏幕输入 `command` 来找到`命令提示符`。
+
 2. 切换到 `MySQL` 安装的文件夹。
+
    例如，输入 `cd C:\Program Files\MySQL\MySQL Server 5.0`。你的光标现在位于 `MySQL` 文件夹中。
+
 3. 输入 `cd bin` 切换到 `bin` 子文件夹。
+
    你的光标现在位于 `bin` 子文件夹中。
+
+
+
 4. 输入 `mysqld --install` 启动 `MySQL Server`。
-   MySQL 服务器作为 Windows 服务启动。你可以通过之前描述的方法进入服务列表检查安装情况，并确保 `MySQL` 现在出现在服务列表中且其状态为 `已启动`。
+
+MySQL 服务器作为 Windows 服务启动。你可以通过之前描述的方法进入服务列表检查安装情况，并确保 `MySQL` 现在出现在服务列表中且其状态为 `已启动`。
 
 对于 Linux，该程序可能带有一个脚本来启动它。在某些 Linux 版本中，你可以通过输入以下命令启动它：
 
@@ -1234,10 +1256,6 @@ Mac OS X 10.2 及更高版本包含 MySQL。如果你需要在你的机器上安
 
 ## 验证下载的文件
 
-
-
-
-
 MySQL 网站提供了在下载软件后对其进行验证的方法，这是一种安全预防措施，以确保文件没有被坏人篡改。基本上，验证 PHP、MySQL 和 Apache 文件也使用相同的过程。你可以在这本微型书籍的第 3 章中关于验证已下载的文件的章节找到验证文件的说明。
 
 # 安装 MySQL
@@ -1272,7 +1290,7 @@ MySQL 网站提供了在下载软件后对其进行验证的方法，这是一�
 
 9. 在 Configuration Overview（配置概述）对话框中，点击 Next（下一步）安装示例。
 
-10. 示例安装完成后，点击 Next（下一步）。
+10. 示例安完成后，点击 Next（下一步）。
 
 11. 在 Installation Complete（安装完成）对话框中，点击 Finish（完成）。
 
@@ -1342,7 +1360,7 @@ sudo chown -R root /usr/local/mysql-5.037/bin
 
 ## 从源文件安装 MySQL
 
-在决定从源文件安装 MySQL 之前，检查是否有对应的 RPM 或二进制文件。MySQL RPM 和二进制文件是预编译的、开箱即用的包，既方便又可靠。
+在决定从源文件安装 MySQL 之前，检查是否有对应的 RPM 或二进数文件。MySQL RPM 和二进制文件是预编译的、开箱即用的包，既方便又可靠。
 
 你可以通过编译源文件并安装编译后的程序来安装 MySQL。这个过程听起来技术性强且令人困难，但事实如此。然而，在开始安装程序之前，请通读以下步骤。
 
@@ -1378,10 +1396,6 @@ gunzip -c mysql-5.0.35.tar.gz | tar -xvf –
 例如，你可能会输入 `cd mysql-5.0.35`。
 
 5. 输入以下内容：
-
-
-
-
 
 ```bash
 ./configure --prefix=/usr/local/mysql
@@ -1443,7 +1457,7 @@ bin/mysqld_safe --user=mysql &
 
 ## 配置 MySQL
 
-MySQL 在启动时会读取配置文件。如果你使用默认设置或安装程序，你可能不需要向配置文件中添加任何内容。然而，如果你在非标准位置安装 MySQL，或者想将数据库存储在默认位置以外的地方，你可能需要编辑配置文件。配置文件名为 `my.ini` 或 `my.cnf`。如果你使用 Windows，它位于系统目录（如 `Windows` 或 `Winnt`）；在 Linux、Unix 和 Mac 上，它位于 `/etc`。该文件包含几个部分和命令。`mysqld` 部分中的以下命令有时需要更改：
+MySQL 在启动时会读取配文件。如果你使用默认设置或安装程序，你可能不需要向配置文件中添加任何内容。然而，如果你在非标准位置安装 MySQL，或者想将数据库存储在默认位置以外的地方，你可能需要编辑配置文件。配置文件名为 `my.ini` 或 `my.cnf`。如果你使用 Windows，它位于系统目录（如 `Windows` 或 `Winnt`）；在 Linux、Unix 和 Mac 上，它位于 `/etc`。该文件包含几个部分和命令。`mysqld` 部分中的以下命令有时需要更改：
 
 ```ini
 [mysqld]
@@ -1468,14 +1482,16 @@ datadir="C:/Program Files/MySQL/MySQL Server 5.0/Data/"
 
 如果你使用 Windows，MySQL 会作为服务运行（在配置 MySQL 时，它会被安装为服务）。你可以像本章较早之前的 检查 MySQL 安装 节描述的那样，检查 MySQL 是否已安装为服务。启动和停止服务的说明将在后续节中描述。你也可以使用安装 MySQL 时设置的命令来手动启动和停止服务器。
 
-如果你使用 Windows 98/Me，你可以在命令提示符窗口中从命令行启动和停止服务器。在 Windows 上启动和停止服务器的描述将在后续节中。
+如果你使用 Windows 98/Me，你可以在命令提示符窗口中从命令行启停服务器。在 Windows 上启动和停止服务器的描述将在后续节中。
 
 #### 在 Windows 上启动或停止
 
 要停止或启动 MySQL 服务器，请执行以下操作：
 
 1. 选择 开始⇒控制面板⇒管理工具⇒服务。将出现所有当前服务的列表。
+
 2. 向下滚动字母列表，点击你想要停止或启动的 MySQL 服务。在服务名称左侧会出现`停止`和`启动`链接。
+
 3. 点击`停止`或`启动`。
 
 如果你在列表中没有找到 MySQL 服务器，你可以使用配置向导将其设置为服务，该向导在本章较早之前的 在 Windows 上运行 MySQL 安装向导 节中描述。
@@ -1485,7 +1501,9 @@ datadir="C:/Program Files/MySQL/MySQL Server 5.0/Data/"
 有时你可能发现关闭服务器有困难。你可以按照以下方法手动关闭服务器：
 
 1. 打开 开始⇒程序⇒辅助工具⇒命令提示符（可能是 DOS）。
+
 2. 进入 MySQL 的安装目录。例如，输入 `c:\Program Files\MySQL\MySQL Server 5.0`。
+
 3. 输入 `mysqladmin -u root -p shutdown`。
 
 `-p` 表示会提示密码。如果账户不需要密码，请省略它。
@@ -1528,7 +1546,9 @@ mysqladmin -u root -p shutdown
 你可以通过在命令行输入以下命令来测试 MySQL 是否运行：
 
 1. 进入 MySQL 安装目录。例如，输入 `cd c:\program files\mysql\mysql server 5.0`。注意：在 Windows 上，请打开命令提示符窗口。
+
 2. 进入 bin 子目录 (`cd bin`)。
+
 3. 输入 `mysqladmin version`。
 
 关于 MySQL 版本的信息将显示在屏幕上。
@@ -1541,11 +1561,8 @@ mysqladmin -u root -p shutdown
 
 如果你不需要账户名或密码，此命令将启动客户端。如果你需要输入账户名或密码或两者，请使用以下参数：
 
-
-
-
-
 - `-u` `user`: `user` 是你的 MySQL 账户名。
+
 - `-p`: 此参数会提示你输入 MySQL 账户的密码。
 
 例如，如果你处于 `mysql` 客户端所在的目录，命令可能像这样：`mysql -u root -p`。
@@ -1646,15 +1663,18 @@ PHP 提供了两个 MySQL 支持扩展：`mysql` 扩展和 `mysqli`（MySQL Impr
 要为 PHP 配置 MySQL，请执行以下步骤：
 
 1. 打开 `php.ini` 文件进行编辑。
+
 2. 找到扩展列表。
+
 3. 找到你想使用的 MySQL 扩展行（如之前讨论的 `mysql` 或 `mysqli`），例如 `;extension=php_mysqli.dll`。
+
 4. 删除该行开头的分号。
 
 如果不存在你所需扩展的行，请添加该行。
 
 ### 在 Linux 和 Mac 上激活 MySQL 支持
 
-在 Linux 和 Mac 上，在 PHP 安装期间通过安装选项激活 MySQL 支持。必须在安装的第 4 步中使用激活 MySQL 的安装选项（见本教程的第 3 章）。MySQL 支持无法在 PHP 编译后添加。
+在 Linux和 Mac 上，在 PHP 安装期间通过安装选项激活 MySQL 支持。必须在安装的第 4 步中使用激活 MySQL 的安装选项（见本教程的第 3 章）。MySQL 支持无法在 PHP 编译后添加。
 
 使用以下安装选项之一：
 
@@ -1691,10 +1711,6 @@ PHP 提供了两个 MySQL 支持扩展：`mysql` 扩展和 `mysqli`（MySQL Impr
 Fatal error: Call to undefined function mysqli_connect()
 ```
 
-
-
-
-
 这意味着 `mysqli` 函数未激活 MySQL 支持。这要么是你没有激活任何 MySQL 支持，要么是你激活了 `mysql` 扩展，而不是 `mysqli` 函数。
 
 ## Windows
@@ -1702,8 +1718,11 @@ Fatal error: Call to undefined function mysqli_connect()
 如果未激活 MySQL 支持，可能是 `php.ini` 中的扩展行未激活，或者 PHP 无法找到必要的文件。你可以尝试以下操作：
 
 -   ![check](img/check.png) 删除分号。检查 `php.ini` 中的扩展行，确保 `mysqli` 扩展行开头的分号已删除。
+
 -   ![check](img/check.png) 重启或停止并重新启动 Web 服务器。如果 `php.ini` 看起来是正确的，你可能在做出更改后忘记重启 Web 服务器了。你也可以尝试完全停止 Web 服务器然后重新启动它，而不是简单的重启。
+
 -   ![check](img/check.png) 检查 `php.ini` 文件的位置。你可能编辑了错误的 `php.ini` 文件。确保你正在编辑的 `php.ini` 文件位于 PHP 查找它的位置，如 `phpinfo()` 的输出所示。
+
 -   ![check](img/check.png) 检查你的路径。检查 `php_mysql.dll` 和 `libmysql.dll` 所在的目录是否在系统路径中。你可以通过 `phpinfo()` 的输出检查路径。输出末尾的 Environment（环境）部分了路径。但是，除非你在更改路径后重启了系统，否则显示的路径并不是当前生效的路径。当你更改路径时，会显示新路径，但在你重启系统之前，它不会真正生效。
 
 ## Linux 或 Mac
@@ -1715,8 +1734,11 @@ Fatal error: Call to undefined function mysqli_connect()
 当你查看 `phpinfo()` 的输出时，如果你的 MySQL 出现问题，你可能看不到 `mysql` 或 `mysqli` 扩展部分。然而，在你的 `php.ini` 文件中，一个或两个扩展都是激活的。可能的原因包括：
 
 -   ![check](img/check.png) 你在更改 `php.ini` 中的设置后没有重启服务器。
+
 -   ![check](img/check.png) 你正在编辑错误的 `php.ini` 文件。检查 `phpinfo()` 输出以获取 PHP 读取设置的文件位置。
+
 -   ![check](img/check.png) 必要的 `.dll` 文件不在你系统路径指定的目录中。
+
 -   ![check](img/check.png) PHP 读取的 MySQL `.dll` 文件适用于不同版本的 PHP。有时当你更新 PHP 时，你没有用新的 `.dll` 文件替换旧的 `.dll` 文件。
 
 例如，假设你正在运行 PHP 5.0，且 `php_mysqli.dll` 文件位于 `c:\windows\system32`。你升级到了 PHP 6.0。你将 `.dll` 文件从 `\ext` 复制到 PHP 主目录，并将 `c:\php` 添加到你的系统路径的末尾。然而，你忘记从当前位置删除旧的 `.dll` 文件。当 PHP 启动时，它首先遇到旧的 `.dll` 文件，因为 `system32` 目录位于系统路径的首位，且 PHP 会尝试使用旧文件。由于它无法使用旧文件，PHP 不会激活 `mysqli` 扩展。从痛苦的经验来说，这可能让人非常困惑。
@@ -1726,12 +1748,14 @@ Fatal error: Call to undefined function mysqli_connect()
 ## 本章内容
 
 -   ![arrow.png](img/arrow.png) 下载并安装 XAMPP
+
 -   ![arrow.png](img/arrow.png) 测试并配置你的开发环境
+
 -   ![arrow.png](img/arrow.png) 排除 XAMPP 安装中的故障
 
 XAMPP 是一个流行的合一组件，可以通过一个过程安装 Apache、MySQL 和 PHP。XAMPP 还安装了 `phpMyAdmin`，这是一个你可以它管理 MySQL 数据库的 Web 应用程序。
 
-XAMPP 可以极大地简化安装过程。XAMPP 的安装包含了本书书中讨论的应用程序所需的所有软件。
+XAMPP 可以极大地简化安装过程。XAMPP 的安装包含了本书书中讨论的应用程所需的所有软件。
 
 -   ![warning_bomb.eps](img/warning_bomb_fmt.png) 根据 XAMPP 网站，XAMPP 旨在作为本地计算机上的开发环境。作为一个开发环境，XAMPP 被配置得尽可能开放。XAMPP 并不用于生产环境——它作为生产环境是不够安全的。在使用 XAMPP 使网站向公众开放之前，你需要加固安全性。安全性将在第四本书中进行详细讨论。
 
@@ -1744,8 +1768,11 @@ XAMPP 提供了适用于 Windows、Mac 和多个版本的 Linux 的稳定版本�
 你可以从 [`www.apachefriends.org/en/xampp-windows.html`](http://www.apachefriends.org/en/xampp-windows.html) 下载 Windows 版的 XAMPP。截至本文写作，当前版本的 XAMPP 安装了以下内容：
 
 -   ![check](img/check.png) MySQL
+
 -   ![check](img/check.png) PHP
+
 -   ![check](img/check.png) Apache
+
 -   ![check](img/check.png) phpMyAdmin
 
 向下网页直到到达 Download（下载）部分。在 Windows 版 XAMPP 列表中，点击 Installer 链接进行下载。下载的文件名为 `xampp-`，后面跟着版本号和库号，最后是 `-exe`。将下载的文件保存在硬盘上容易找到的地方，例如桌面。
@@ -1755,17 +1782,22 @@ XAMPP 提供了适用于 Windows、Mac 和多个版本的 Linux 的稳定版本�
 下载 XAMPP 后，请按照以下步骤进行安装：
 
 1.  导航到保存下载文件的位置。文件名类似于 `xampp-win32-1.8.0-VC9-installer.exe`。
+
 2.  双击文件。启动向导启动。![warning_bomb.eps](img/warning_bomb_png) 如果你在 Windows Vista、7 或 8 上进行安装，由于保护问题，你无法在 Program Files 文件夹中安装。此外，如果 PHP 安装在路径包含空格的文件夹中，有时会出现运行问题。
+
 3.  阅读并点击后续屏幕，直到出现 Install Location（安装位置）界面，如图 5-1 所示。除非你有特殊理由选择其他位置，最好接受默认位置 (`c:\xampp`)。你可以点击 Browse 选择另一个文件夹。
+
 4.  当你选择了安装文件夹后，点击 Next。出现 XAMPP Options（选项）界面，如图 5-2 所示。
+
 5.  在 Service 部分，勾选 Install Apache as Service 和 Install MySQL as Service 复选框。这将工具作为 Windows 服务安装，使它们在计算机启动时自动运行。
+
 6.  点击 Install 按钮。安装过程需要几分钟完成。随着安装进行，你会看到各种文件和组件安装到你指定的系统中。状态栏显示安装进度。
+
 7.  安装完成后，出现 Installation Complete（安装完成）界面。
+
 8.  点击 Finish。弹出一个窗口，并显示更多消息。当这部分安装完成后，屏幕显示一条消息告知你安装已完成。
+
 9.  点击 OK。显示以下问题：现在启动 XAMPP 控制面板吗？
-
-
-
 
 屏幕显示一个“是”（Yes）和一个“否”（No）按钮。
 
@@ -1813,14 +1845,15 @@ XAMPP 控制面板可以持续运行，随时供你使用。当控制面板运�
 
 ### 打开 XAMPP 网页
 
-要测试 XAMPP 安装情况，请遵循以下步骤：
+要测试 XAMPP 安装情况，请遵徐以下步骤：
 
 1. 打开浏览器。
+
 2. 在浏览器地址栏中输入 `localhost`。
 
 ![tip.eps](img/tip_fmt.png) 在某些情况下，如果你的本地机器未设置为识别 `localhost`，你可能需要输入 `127.0.0.1`。
 
-会出一个 XAMPP 网页，提供语言选择。在某些情况下，XAMPP 已经设置了你的语言选择且不再询问。在这种情况下，你不需要执行第 3 步，因为你的浏览器已经在图 5-5 所示的页面。
+会出一个 XAMPP 网页，提供语言选择。在某些情况下，XAMPP 已已经设置了你的语言选择且不再询问。在这种情况下，你不需要执行第 3 步，因为你的浏览器已经在图 5-5 所示的页面。
 
 3. 点击你偏好的语言。
 
@@ -1845,6 +1878,7 @@ XAMPP 控制面板可以持续运行，随时供你使用。当控制面板运�
 要测试 `PHP` 是否安装，请遵循以下步骤：
 
 1. 找到需要保存脚本的目录。该目录及其子目录是 `Apache` 查找脚本的地方。该目录名为 `htdocs`，位于 `c:\xampp\htdocs`。
+
 2. 在你的网络空间创建一个名为 `test.php` 的文本文件。
 
 该文件应包含以下内容：
@@ -1872,9 +1906,6 @@ phpinfo();
 
 **图 5-6：** PHP 脚本的输出。
 
-
-
-
 ![remember.eps](img/remember_fmt.png) XAMPP 将所有软件安装到你在安装期间指定的目录中，例如 `c:\xampp`，这是默认目录。XAMPP 配置了软件在此目录下查找配置文件。如果你需要更改任何配置设置，你必须编辑此目录下的配置文件，而不是各个软件帮助文件或其他文档中提到的目录下的文件。
 
 ## 配置 PHP
@@ -1886,25 +1917,39 @@ XAMPP 将 `php.ini` 文件存储在主 XAMPP 文件夹内部的 `apache\bin` 目
 要配置 PHP，请按照以下步骤操作：
 
 1. 使用文本编辑器打开 `php.ini` 文件进行编辑。
+
 2. 编辑你想要更改的设置。
+
 3. 步骤 3 和 4 提到了一些在你在使用指定环境时应该始终更改的特定设置。
+
 4. 只有在你在使用 `PHP` 5 或更版本时，才关闭魔法引号（magic quotes）。
+
 查找以下行：
+
 ```
 magic-quotes-gpc On
 ```
+
 将 `On` 改为 `Off`。
+
 5. 只有在你在使用 `PHP` 5 或更高版本时，才设置你的本地时区。
+
 找到该行：
+
 ```
 ;date.timezone =
 ```
+
 删除行首的分号。在等号后添加你的本地时区代码。例如，该行可能是：
+
 ```
 date.timezone = America/Los_Angeles
 ```
+
 你可以在 [`www.php.net/manual/en/timezones.php`](http://www.php.net/manual/en/timezones.php) 找到时区代码列表。
+
 6. 保存 `php.ini` 文件。
+
 7. 重启 Apache 使新设置生效。
 
 通常情况下，剩余的默认设置允许 PHP 正常运行，但你可能由于特定原因需要编辑这些设置中的某些。当本书在讨论可能需要你更改设置的话题时，会讨论 `php.ini` 文件中的设置。
@@ -1928,13 +1973,21 @@ MySQL 在安装时会创建一个配置文件。大多数人不需要更改 MySQ
 如果你觉得你犯了错误并想重新安装 XAMPP，你需要在重新安装之前卸载它。要卸载并重新安装 XAMPP，请按照以下步骤操作：
 
 1. 在 XAMPP 控制面板中停止 Apache 和 MySQL。
+
 参见本章前面的 使用 XAMPP 控制面板 节。
+
 ![warning_bomb.eps](img/warning_bomb_fmt.png) 如果你在卸载 XAMPP 之前没有停止 Apache 和 MySQL，在重新安装 XAMPP 时可能会遇到困难。如果你将 Apache 和 MySQL 作为服务启动，尤其如此。
+
 2. 选择 Start⇒All Programs⇒Apache Friends⇒XAMPP⇒Uninstall 开始卸载。
+
 卸载过程的第一个界面将打开。
+
 3. 经过各个屏幕并回答问题。
+
 点击 Next 按钮移动屏幕；通过选择相应的选项来回答问题。你可以保存你创建的内容。卸载完成后会显示消息。
+
 4. 从头开始重新安装。
+
 参见此前的 故障排除 部分。
 
 ## 故障排除
@@ -1954,17 +2007,20 @@ MySQL 在安装时会创建一个配置文件。大多数人不需要更改 MySQ
 ### 内容摘要
 
 - 第 1 章：使用 HTML 创建基础页面
+
 - 理解 HTML 构建块
+
 - HTML 文档的各个
+
 - 创建良好的 HTML
+
 - 练习创建表格
+
 - 在网页上包含链接和图像
+
 - 编写有效的 HTML
+
 - 验证你的 HTML
-
-
-
-
 
 ## 第 2 章：使用 CSS 添加样式
 
@@ -1999,15 +2055,18 @@ MySQL 在安装时会创建一个配置文件。大多数人不需要更改 MySQ
 ## 本章内容
 
 * ![arrow.png](img/arrow.png) 获取 HTML 和网页的入门知识
+
 * ![arrow.png](img/arrow.png) 将 HTML 标签放入正确的区域
+
 * ![arrow.png](img/arrow.png) 将图像和链接集成到你的页面中
+
 * ![arrow.png](img/arrow.png) 确保你的 HTML 是有效的
 
 超文本标记标记语言（HTML）是 Web 的语言。当你使用网络浏览器（如 Internet Explorer、Firefox 或 Safari）访问一个网页时，浏览器会下载并显示 HTML。
 
 从本质上说，HTML 仅仅是一个文档，与你在文字处理软件中创建的文档非常相似。像 Microsoft Word 这样的程序用于查看文字文档，因为它知道如何读取和显示它们。同样，在涉及 Web 时，网络浏览器就是知道如何读取和显示用 HTML 创建的文档的程序。
 
-文字处理文档可以使用同一个程序创建和读取。相反，HTML 文档需要不同的程序来进行创建和读取；你不能用浏览器创建 HTML 文档。你使用名为编辑器的程序来创建 HTML 文档。这个编辑器可以像 Microsoft Windows 自带的记事本程序一样简单，也可以像 Eclipse 或 Microsoft Visual Studio 那样复杂。通常你可以用于创建 PHP 程序的程序来创建 HTML 文档。
+文字处理文档可以使用同一个程序创建和读取。相反，HTML 文档需要不同的程序来进行创建和读取；你不能用浏览器创建 HTML 文档。你使用名为编辑器的程来创建 HTML 文档。这个编辑器可以像 Microsoft Windows 自带的记事本程序一样简单，也可以像 Eclipse 或 Microsoft Visual Studio 那样复杂。通常你可以用于创建 PHP 程序的程序来创建 HTML 文档。
 
 本章描述了 HTML 文档，并展示了如何使用最新版本的 HTML5 构建可以通过网络浏览器查看的 HTML 页面。
 
@@ -2032,10 +2091,6 @@ HTML 文档按照特定的顺序设置，某些部分在其他部分之前。它
 ```
 <!doctype html>
 ```
-
-
-
-
 
 # 头部部分与标题元素
 
@@ -2096,18 +2151,31 @@ HTML 文档按照特定的顺序设置，某些部分在其他部分之前。它
 ### 表 1-1 常见 HTML 元素
 
 | 元素 | 描述 | 用途 |
+
 | :--- | :--- | :--- |
+
 | `<a>` | 锚点 | 创建指向另一个页面或同一文档内部分的链接。 |
+
 | `<br>` | 换行 | 输入换行符或回车符。 |
-| `<div>` | 页面区域 | 在页面上创建整体区域或逻辑划分，例如标题/菜单部分、内容区域或页脚。 |
+
+| `<div>` | 页面区域 | 在页面上创建整体区域或逻辑划分，例如标题/菜部分、内容区域或页脚。 |
+
 | `<form>` | Web 表单 | 创建 Web 表单以接受用户输入。在本教程的第 3 章中介绍。 |
+
 | `<h1>` 到 `<h6>` | 标题 | 为标题（如标题文本）创建一个容器。 |
+
 | `<hr>` | 水平线 | 创建水平线。 |
+
 | `<img>` | 图像 | 图像的容器。 |
+
 | `<input>` | 输入 | 接受用户输入的元素。在本教程的第 3 章中介绍。 |
+
 | `<link>` | 资源链接 | 链接页面的资源；不要与锚点元素混淆。 |
+
 | `<p>` | 页面中的段落 | 创建文本段落或其他文本的区域和容器。 |
+
 | `<script>` | 脚本标签 | 表示 Web 脚本或程序。也经常出现在头部部分。 |
+
 | `<span>` | 元素 | |
 
 ## 在页面上放置文本
@@ -2145,20 +2213,17 @@ HTML 文档按照特定的顺序设置，某些部分在其他部分之前。它
 
 请注意的是，你应该使用文本编辑器，而不是像 Microsoft Word 这样的文字处理器。Microsoft Word 或 Mac 上的 Pages 等类似程序会添加许多额外的格式信息，从而阻碍创建良好的 HTML，即使使用它们的“另存为 HTML”选项也是如此。
 
-
-
-
 因此，在 Windows 上请使用像 `Notepad` 这样的程序。即使是 Windows 程序 `Wordpad` 也会在其中包含额外的格式信息。对于 HTML 编辑器来说，越简单越好。
 
 Linux 自带的文本编辑器取决于你正在使用的 Linux 发行版。我们其中一位谦虚的作者（就是 Steve）的个人偏好是使用命令行编辑器 `Vi` 或 `Vim`；更具图形化的体验通常可以在名为 `gEdit` 的程序中找到——它是 Ubuntu 的默认文本编辑器。
 
-Mac 包含一个名为 `TextEdit` 的程序，可用于创建纯文本文档——但注意：`TextEdit` 程序默认会尝试以富文本格式 (RTF) 保存文件。当使用 `TextEdit` 创建或保存文件时，请从文件格式下拉菜单中选择`Plain Text”（纯文本）。
+Mac 包含一个名为 `TextEdit` 的程，可用于创建纯文本文档——但注意：`TextEdit` 程序默认会尝试以富文本格式 (RTF) 保存文件。当使用 `TextEdit` 创建或保存文件时，请从文件格式下拉菜单中选择`Plain Text”（纯文本）。
 
 ![remember.eps](img/remember_fmt.png) 本章重点关注基础知识。不要担心你的网页看起来并不时尚。下一章将解释如何使用层叠样式表（即 `CSS`）为你的页面设置样式。
 
 按照以下步骤创建你的页面：
 
-1. 打开你的文本编辑器。参考之前关于文本编辑器的讨论。你需要一个允许创建纯文本且无额外信息的文本编辑器。
+1. 打开你的文本编辑器。参考之前关于文本编辑器的讨论。你需要一个允�创建纯文本且无额外信息的文本编辑器。
 
 2. 在文本编辑器中输入以下 HTML。
 
@@ -2220,18 +2285,18 @@ Mac 包含一个名为 `TextEdit` 的程序，可用于创建纯文本文档—�
 
 同样的情况也发生在 HTML 的多余空格上。无论你在 Web 文档中按下键盘上的空格键多少次，你最多只能得到一个空格。（我们稍后会详细介绍如何在末尾添加空格。）
 
-无论你在 HTML 文档中按下多少次 `Enter`，文本在 浏览器中仍然显示在同一行。考虑列表 1-3 中的代码。它与列表 1-2 中的 HTML 相同，但插入了五个额外的回车符。
+无论你在 HTML 文档中按下多少次 `Enter`，文本在 浏览器中仍然显示在同一行。考虑列表 1-3 中的代码。它与列表 1-2 中的 HTML 相同，但插入了五个额的回车符。
 
 同样的情况也发生在 HTML 的多余空格上。无论你在 Web 文档中按下键盘上的空格键多少次，你最多只能得到一个空格。
-
-
-
 
 欢迎访问我的网页。在这里，你将找到关于我的各种信息。
 
 <!--
+
     添加关于我的书籍的信息
+
     日期：2012/10/1
+
 -->
 
 ## 我的书籍
@@ -2245,15 +2310,21 @@ Mac 包含一个名为 `TextEdit` 的程序，可用于创建纯文本文档—�
 列表和表格有助于表示某些类型的信息。例如，史夫院子里的树列表最好用像这样的列表来表示：
 
 * 松树
+
 * 橡树
+
 * 榆树
 
 但如果他想包含更多关于树的信息，表格是更好的格式：
 
 | 树的类型 | 描述 |
+
 | :--- | :--- |
+
 | 松树 | 我院子里的常见树。 |
+
 | 橡树 | 我院子里有几棵橡树。 |
+
 | 榆树 | 我院子里有一棵榆树，但它离房子太近了。 |
 
 HTML 有用于创建列表和表格的标签。表 1-2 描述了此类多种元素。
@@ -2261,13 +2332,21 @@ HTML 有用于创建列表和表格的标签。表 1-2 描述了此类多种元�
 ### 表 1-2 HTML 中常见的列表和表格元素
 
 | 元素 | 类型 | 描述 |
+
 | :--- | :--- | :--- |
+
 | `<li>` | 列表项目 | 与 `<ul>` 或 `<ol>` 配合使用创建信息列表。 |
+
 | `<ol>` | 有序列表 | 有顺序的信息列表，与 `<li>` 配合使用。 |
+
 | `<table>` | 表格 | 与 `<tr>`, `<td>` 等其他元素配合创建展示信息的表格。 |
-| `<td>` | 表格单元格 | 在表格行创建一个单元格。 |
+
+| `<td>` | 表格单元 | 在表格行创建一个单元格。 |
+
 | `<th>` | 表格头 | 作为标题的表格单元格。 |
+
 | `<tr>` | 表格行 | 创建表格的一行。 |
+
 | `<ul>` | 无序列表 | 与 `<ol>` 和 `<li>` 相关，创建信息列表。 |
 
 构建列表时，你有两种列表类型可以选择：有序列表或无序列表。有序列表用于制作大纲等内容，而无序列表几乎几乎所有其他类型的列表。
@@ -2323,7 +2402,9 @@ HTML 有用于创建列表和表格的标签。表 1-2 描述了此类多种元�
 是时候创建一个带有表格的页面了。按照以下步骤操作：
 
 1. 打开你的文本编辑器。参考前面的练习获取更多关于文本编辑器的信息。
+
 2. 在文本编辑器中，创建一个新的文本文档。大多数文本编辑器启动时都会打开一个空白文档。如果文档中有任何内容，请将其清除。
+
 3. 输入以下内容：
 
 ```html
@@ -2357,12 +2438,15 @@ HTML 有用于创建列表和表格的标签。表 1-2 描述了此类多种元�
 ```
 
 4. 将文件保存为 `table.html`。按照前面的练习，以 `.html` 扩展名保存文件。文件应该保存在你的根目录（root）。
+
 5. 在浏览器中查看该文件。打开你的浏览器并在地址栏输入 `http://localhost/table.html`。这样做会显示一个像 图 1-7 那样的页面。
 
 ![9781118213704-fg020107.eps](img/9781118213704-fg020107_fmt.png)
 
 **图 1-7：** 你创建的表格。注意表格周围没有任何框。如果你想添加框，请继续完成练习。
+
 6. 在文本编辑器中打开 `table.html`。如果你关闭了编辑器，请重新打开并加载 `table.html`。
+
 7. 将 `table.html` 中的代码更改为如下：
 
 ```html
@@ -2396,6 +2480,7 @@ HTML 有用于创建列表和表格的标签。表 1-2 描述了此类多种元�
 ```
 
 注意，唯一的变化是在 `<table>` 元素中添加了一个空格以及 `border="1"`。
+
 8. 在浏览器中重新加载 `table.html`。如果你关闭了浏览器，请重新打开并访问 `http://localhost/table.html`。如果浏览器仍然开启，请按 Ctrl+R 刷新页面（Mac 上为 Command+R）。你现在可以看到表格周围有了框，如 图 1-8 所示。
 
 ![9781118213704-fg020108.eps](img/9781118213704-fg020108_fmt.png)
@@ -2403,10 +2488,6 @@ HTML 有用于创建列表和表格的标签。表 1-2 描述了此类多种元�
 **图 1-8：** 每个单元格都有框的表格。
 
 这是为表格添加边框的一种相当原始的方法。完成此任务更好的方法是使用 CSS，你在第一本书中简要学习过它。
-
-
-
-
 
 当某个内容被链接时，浏览器通常会通过高亮和下划链接区域来提供视觉反馈，告知此处有链接。你很快就会看到一个例子。与其他 HTML 元素一样，`<a>` 元素有一个对应的闭合标签 `</a>`，用于告诉浏览器何时停止对链接进行高亮和下划。
 
@@ -2429,7 +2510,9 @@ HTML 有用于创建列表和表格的标签。表 1-2 描述了此类多种元�
 ## 这里有一个练习关于实现此链接的练习。
 
 1. 打开你的文本编辑器。你使用文本编辑器来创建一个新文件，因此文本编辑器中除了空白文档或文件外不应该什么都没有。
+
 2. 在文本编辑器中，放置以下 HTML：
+
 ```html
 <!doctype html>
 <html>
@@ -2441,7 +2524,9 @@ HTML 有用于创建列表和表格的标签。表 1-2 描述了此类多种元�
 </body>
 </html>
 ```
+
 3. 将文件保存为 `link.html`。该文件应保存到你的文档根目录下，命名为 `link.html`。
+
 4. 打开你的浏览器并查看页面。打开你的网络浏览器，通过在地址栏输入 URL `http://localhost/link.html` 来指向它。你将看到如图 1-9 所示的页面。
 
 ![9781118213704-fg020109.eps](img/9781118213704-fg020109_fmt.png)
@@ -2475,6 +2560,8 @@ HTML 有用于创建列表和表格的标签。表 1-2 描述了此类多种元�
 上一个示例中显示的链接被称为相对链接，因为它没有以以统一资源标识符 (URI) 方案（`http://`）或起始斜杠（`/`）开头。相对链接假设目标（示例中的 `table.html`）与链接它的页面位于同一个目录或文件夹中。在示例的情况下，相对链接之所以有效，是因为当前页面 `link.html` 和被链接的页面 `table.html` 都存在于文档根目录下。
 
 如果两个页面不在同一个目录中（换句话说，如果 `table.html` 在文档根目录下名为 `tables` 的文件夹中，而 `link.html` 文件在文档根目录下名为 `links` 的文件夹中），那么你就需要创建一个绝对链接。绝对链接告诉服务器确切的查找位置。例如，一个绝对链接可能像 `/tables/table.html`。此链接告诉服务器，它需要从其文档根目录开始查找名为 `tables` 的目录，然后在该目录下找到名为 `table.html` 的文件。
+
+
 
 当你需要为被链接的目标提供精确的绝对引用时，请使用绝对链接。当被链接的资源始终位于链接它的页面的相同位置时，使用相对链接。如果页面或目标的位置发生变化，相对链接将失效。
 
@@ -2525,10 +2612,6 @@ HTML 有用于创建列表和表格的标签。表 1-2 描述了此类多种元�
 <a href="http://www.braingia.org" target="_blank">Steve Suehring's site</a>
 ```
 
-
-
-
-
 你可以通过打开之前练习中的 `link.html` 文件并按所示添加 `target="_blank"` 来尝试此操作。注意 `blank` 单词前面有一个下划线。当你保存文件并重新加载该页面（`Ctrl+R` 或 `Command+R`）时，链接看起来没有任何变化。然而，点击链接将打开一个新标签页（或新窗口，取决于你的浏览器和配置）。
 
 ## 添加图像
@@ -2547,7 +2630,7 @@ HTML 有用于创建列表和表格的标签。表 1-2 描述了此类多种元�
 
 使用 `<img>` 元素添加图像。就像 `<a>` 元素一样，`<img>` 元素使用属性来告诉浏览器更多关于它的信息。`src` 属性用于告诉浏览器在哪里找到图像。在之前的图 1-10 中，你看到一个书籍封面的图像。将该图像引入页面的 HTML 代码如下：
 
-```
+```html
 <img src="images/books_mysqlbible.gif">
 ```
 
@@ -2566,9 +2649,6 @@ HTML 有用于创建列表和表格的标签。表 1-2 描述了此类多种元�
 ## 选择良好的图像
 
 在选择图像时，请考虑尺寸和质量。较大的图像会减慢你的页面加载速度。尽可能使用 JPG 或 `png` 等压缩格式。
-
-
-
 
 用于验证 HTML 的网站称为 W3C 标记验证服务（通常称为 W3C 验证器），由世界网联盟（W3C）运营。W3C 验证器位于 `http://validator.w3.org/`，并且免费使用。图 1-12 显示了 W3C 验证器。
 
@@ -2589,11 +2669,17 @@ HTML 有用于创建列表和表格的标签。表 1-2 描述了此类多种元�
 如果你遵循了本章的练习，那么你已经构建了一些 HTML。下一个练习使用 W3C 验证器来确保你编写的 HTML 符合 HTML5 规范。按照以下步骤操作：
 
 1. 使用文本编辑器打开 `firstpage.html`。该页面是你在本章中创建的第一个。但是，如果你跳过了该练习，请打开在本章中创建的任何一个 HTML 文件。
+
 2. 高亮/选择打开文件中的所有 HTML。使用鼠标或指针设备高亮所有 HTML，或在 Windows 上按下 `Ctrl+A` 或在 Mac 上按下 `Command+A`。
+
 3. 将 HTML 复制到剪贴板。选择复制（在大多数文本编辑器的“编辑”菜单中找到）或在 Windows 上按下 `Ctrl+C` 或在 Mac 上按下 `Command+C` 将高亮的 HTML 复制到剪贴板。
+
 4. 打开网页浏览器并导航到 W3C 验证器。在打开浏览器的情况下，在浏览器的地址或位置栏中输入 `http://validator.w3.org` 并按回车进入验证器。
+
 5. 选择“通过直接输入”。“通过直接输入”选项卡将用于粘贴剪贴板中的代码。
+
 6. 将 HTML 粘贴到验证器中。在 Windows 上按下 `Ctrl+V` 或在 Mac 上按下 `Command+V` 将剪贴板中的 HTML 粘贴到验证器页面“输入待验证的标记”框中。如果你使用的是来自 `firstpage.html` 的 HTML，你的屏幕看起来应该类似于图 1-13。
+
 7. 点击检查。点击验证器页面上的“检查”按钮运行你的 HTML 的验证。你应该会收到一个类似于图 1-14 的页面。
 
 ![9781118213704-fg020113.eps](img/9781118213704-fg020113_fmt.png)
@@ -2613,1080 +2699,3447 @@ HTML 有用于创建列表和表格的标签。表 1-2 描述了此类多种元�
 ## 本章内容
 
 * ![arrow.png](img/arrow.png) 了解页面样式含义
+
 * ![arrow.png](img/arrow.png) 探索使用 CSS 的不同方法
+
 * ![arrow.png](img/arrow.png) 选择特定元素进行样式
+
 * ![arrow.png](img/arrow.png) 更改字体并添加边框
-* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
 * ![arrow.png](img/arrow.png) 选择特定元素进行样式
+
 * ![arrow.png](img/arrow.png) 选择特定元素进行样式
+
+* ![arrow.png](img/arrow.png) 选择特特定元素进行样式
+
 * ![arrow.png](img/arrow.png) 选择特定元素进行样式
+
 * ![arrow.png](img/arrow.png) 选择特定元素进行样式
+
 * ![arrow.png](img/arrow.png) 更改字体并添加边框
+
 * ![arrow.png](img/arrow.png) 更改字体并添加边框
+
 * ![arrow.png](img/arrow.png) 更改字体并添加边框
+
 * ![arrow.png](img/arrow.png) 更改字体并添加边框
+
 * ![arrow.png](img/arrow.png) 更改字体并添加边框
+
 * ![arrow.png](img/arrow.png) 更改字体并添加边框
+
 * ![arrow.png](img/arrow.png) 更改字体并添加边框
+
 * ![arrow.png](img/arrow.png) 更改字体并添加边框
+
 * ![arrow.png](img/arrow.png) 更改字体并添加边框
+
 * ![arrow.png](img/arrow.png) 更改字体并添加边框
+
 * ![arrow.png](img/arrow.png) 更改字体并添加边框
+
 * ![arrow.png](img/arrow.png) 更改字体并添加边框
+
 * ![arrow.png](img/arrow.png) 更改字体并添加边框
+
 * ![arrow.png](img/arrow.png) 更改字体并添加边框
+
 * ![arrow.png](img/arrow.png) 更改字体并添加边框
+
 * ![arrow.png](img/arrow.png) 更改字体并添加边框
+
 * ![arrow.png](img/arrow.png) 更改字体并添加边框
+
 * ![arrow.png](img/arrow.png) 更改字体并添加边框
+
 * ![arrow.png](img/arrow.png) 更改字体并添加边框
+
 * ![arrow.png](img/arrow.png) 更改字体并添加边框
+
 * ![arrow.png](img/arrow.png) 更改字体并添加边框
+
 * ![arrow.png](img/arrow.png) 更改字体并添加边框
+
 * ![arrow.png](img/arrow.png) 更改字体并添加边框
+
 * ![arrow.png](img/arrow.png) 更改字体并添加边框
+
 * ![arrow.png](img/arrow.png) 更改字体并添加边框
+
 * ![arrow.png](img/arrow.png) 更改字体并添加边框
+
 * ![arrow.png](img/arrow.png) 更改字体并添加边框
+
 * ![arrow.png](img/arrow.png) 更改字体并添加边框
+
 * ![arrow.png](img/arrow.png) 更改字体并添加边框
+
 * ![arrow.png](img/arrow.png) 更改字体并添加边框
+
 * ![arrow.png](img/arrow.png) 更改字体并添加边框
+
 * ![arrow.png](img/arrow.png) 更改字体并添加边框
+
 * ![arrow.png](img/arrow.png) 更改字体并添加边框
+
 * ![arrow.png](img/arrow.png) 更改字体并添加边框
+
 * ![arrow.png](img/arrow.png) 更改字体并添加边框
+
 * ![arrow.png](img/arrow.png) 更改字体并添加边框
+
 * ![arrow.png](img/arrow.png) 更改字体并添加边框
+
 * ![arrow.png](img/arrow.png) 更改字体并添加边框
+
 * ![arrow.png](img/arrow.png) 更改字体并添加边框
+
 * ![arrow.png](img/arrow.png) 更改字体并添加边框
+
 * ![arrow.png](img/arrow.png) 更改字体并添加边框
+
 * ![arrow.png](img/arrow.png) 更改字体并添加边框
+
 * ![arrow.png](img/arrow.png) 更改字体并添加边框
+
 * ![arrow.png](img/arrow.png) 更改字体并添加边框
+
 * ![arrow.png](img/arrow.png) 更改字体并添加边框
+
 * ![arrow.png](img/arrow.png) 更改字体并添加边框
+
 * ![arrow.png](img/arrow.png) 更改字体并添加边框
+
 * ![arrow.png](img/arrow.png) 更改字体并添加边框
+
 * ![arrow.png](img/arrow.png) 更改字体并添加边框
+
 * ![arrow.png](img/arrow.png) 更改字体并添加边框
+
 * ![arrow.png](img/arrow.png) 更改字体并添加边框
+
 * ![arrow.png](img/arrow.png) 更改字体并添加边框
+
 * ![arrow.png](img/arrow.png) 更改字体并添加边框
+
 * ![arrow.png](img/arrow.png) 更改字体并添加边框
+
 * ![arrow.png](img/arrow.png) 更改字体并添加边框
+
 * ![arrow.png](img/arrow.png) 更改字体并添加边框
+
 * ![arrow.png](img/arrow.png) 更改字体并添加边框
+
 * ![arrow.png](img/arrow.png) 更改字体并添加边框
+
 * ![arrow.png](img/arrow.png) 更改字体并添加边框
+
 * ![arrow.png](img/arrow.png) 更改字体并添加边框
+
 * ![arrow.png](img/arrow.png) 更改字体并添加边框
+
 * ![arrow.png](img/arrow.png) 更改字体并添加边框
+
 * ![arrow.png](img/arrow.png) 更改字体并添加边框
+
 * ![arrow.png](img/arrow.png) 更改字体并添加边框
+
 * ![arrow.png](img/arrow.png) 更改字体并添加边框
+
 * ![arrow.png](img/arrow.png) 更改字体并添加边框
+
 * ![arrow.png](img/arrow.png) 更改字体并添加边框
+
 * ![arrow.png](img/arrow.png) 更改字体并添加边框
+
 * ![arrow.png](img/arrow.png) 更改字体并添加边框
+
 * ![arrow.png](img/arrow.png) 更改字体并添加边框
+
 * ![arrow.png](img/arrow.png) 更改字体并添加边框
+
 * ![arrow.png](img/arrow.png) 更改字体并添加边框
+
 * ![arrow.png](img/arrow.png) 更改字体并添加边框
+
 * ![arrow.png](img/arrow.png) 更改字体并添加边框
+
 * ![arrow.png](img/arrow.png) 更改字体并添加边框
+
 * ![arrow.png](img/arrow.png) 更改字体并添加边框
+
 * ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-## 发现 CSS 能不能为你的页面做什么
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-本节从高层视角查看 CSS。
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-### 什么是 CSS？
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-CSS 通过为网页提供外观和感觉来补充 HTML。CSS 有它自己的语言，独立于 HTML，但没有 HTML 你无法使用 CSS。换句话说，尽管 HTML 可以独立存在并向浏览器展示页面，但 CSS 不能。你不会编写 CSS 页面。相反，你编写 HTML 然后使用 CSS 来样式该页面。
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-### 为什么要使用 CSS？
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-在使用 CSS 之前，HTML 开发者通过更改每个元素的属性来更改字体和颜色。如果开发者想让所有标题看起来某种样子，他必须更改每一个标题。想象在一个有十个标题的页面上这样做，然后想象在 50 个页面上这样做。这项任务很快变得枯燥。然后想象当网站所有者决定将所有标题改回原来的样子时会发生什么。
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-CSS 减轻了这种单独更新元素的负担，使得你可以将单一样式应用到一个或多个元素。你可以对同一个元素应用多种样式，也可以针对单个元素设置特定的样式。例如，如果你想让所有标题都加粗，但某个标题应该是斜体，你可以通过 CSS 实现这一点。
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-### CSS 的局限性
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-CSS 并不是没有局限性。CSS 的主要局限性并不是所有网页浏览器都以相同的方式支持 CSS。一个浏览器可能会以略不同的方式解释你的布局，将项目放置得更高或更低或在完全不同的地方。
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-此外，旧浏览器不支持新版本的 CSS，特别是 CSS3 规范。这意味着这些浏览器无法使用 CSS3 规范的某些功能。为了解决这个问题，你可以使用那些旧浏览器更广泛支持的旧版本规范。
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-使用 CSS 以及（正如你后面看到的）使用 JavaScript 时，关键是在多个浏览器中进行测试。Firefox、Chrome 和 Safari 等网络浏览器都是免费下载的，微软提供了一种名为“应用程序兼容性虚拟 PC”（Virtual PC for Application Compatibility）的软件，它是 Windows 的免费免费版本，包含了旧版本的 Internet Explorer。你可以在微软免费的 Virtual PC 仿真软件内部运行它们。通过在其他浏览器中测试，你可以看到网站在这些浏览器中的外观，并在将其部署到互联网之前修正布局问题。
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-![tip.eps](img/tip_fmt.png) 始终在多个浏览器中测试你的页面，以确保它们的显示和行为符合你的预期。
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-# 将 CSS 连接到页面
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-你可以通过几种不同的方式向页面添加 CSS：
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-* check 直接应用于 HTML 元素
-* check 使用内部样式表
-* check 使用外部样式表
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-向页面添加 CSS 最具重用性的方法是使用外部样式表，但简单的方法是直接在元素上添加样式信息。我们将展示这每种方法。
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-## 为 HTML 元素添加样式
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-你可以通过 `style` 属性为几乎任何 HTML 元素添加样式，如下例所示，它将第一段中的所有文本变为粗体：
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-```html
-<p style="font-weight: bold;">All of this text will be bold.</p>
-```
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-在浏览器中查看时，文本是加粗的，如 图 2-1 所示。
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-![9781118213704-fg020201.eps](img/9781118213704-fg020201_fmt.png)
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-**图 2-1:** 使用 CSS 化的加粗文本。
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-在 图 2-1 中，加粗文本的段落出现在普通段落上方。那个普通段落没有使用 CSS 进行样式设置。
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-![remember.eps](img/remember_fmt.png) 当样式在 HTML 元素内部应用时，它被称为内联样式或内联 CSS。
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-这是一个你可以尝试的示例。你先构建一些 HTML，然后开始向它添加样式。
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-1. 打开你的文本编辑器。创建一个空白文件。有关文本编辑器和创建新文本文档的更多信息，请参见本迷你书籍的 第 1 章。
-2. 在空白文本文档中，放置以下 HTML：
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-```html
-<!doctype html>
-<html>
-<head>
-<title>A CSS Exercise</title>
-</head>
-<body>
-<<div>This is my web page.</div
-<div>
-    This is the <span>nicest</span> page I've made yet.
-</div>
-<div>Here is some text on my page.</</div>
-</body>
-</html>
-```
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-3. 将文件保存为 `css.html`。在文本编辑器中，使用名称 `css.html` 保存文件，确保文件名中没有空格或其他字符。该文件应保存在你的文档根目录下。
-4. 打开你的网络浏览器并查看页面。在网络浏览器的地址栏中输入 `http://localhost/css.html`，你将看到一个与 图 2-2 所示类似的页面。
-5. 关闭浏览器。现在你已经验证了页面工作正常，关闭浏览器。
-6. 回到文本编辑器编辑 HTML。在文本编辑器中，编辑步骤 2 中的 HTML 以添加 CSS。如果你已经关闭了文件，请在文本编辑器中重新打开它。
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-![9781118213704-fg020202.eps](img/9781118213704-fg020202_fmt.png)
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-**图 2-2:** 创建简单的网页。
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-7. 修改 HTML 以添加两个不同的样式属性，如下所示：
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-```html
-<!doctype html>
-<html>
-<head>
-<title>A CSS Exercise</title>
-</head>
-<body>
-<div style="font-weight: bold;">This is my web page.</div>
-<div>
-    This is the <span style="font-style: italic;">nicest</span> page I've made yet.
-</div>
-<div style="font-weight: bold;">Here is some text on my page.</div>
-</body>
-</html>
-```
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-8. 保存文件。你可以将其保存为 `css.html`，或者如果你不想覆盖原始的 `css.html` 文件，可以保存为 `css2.html`。该文件应保存在你的文档根目录下。
-9. 打开你的网络浏览器并查看页面。输入 `http://localhost/css.html`（如果你保存为 `css2.html`，则输入 `css2.html`）即可显示文件，现在两个区域都应用了内联样式。这在 图 2-3 中所示。
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-![9781118213704-fg020203.eps](img/9781118213704-fg020203_fmt.png)
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-**图 2-3:** 添加内联样式。这个练习创建了一个同时使用 `<div>` 和 `<span>` 元素的 HTML 文件。然后使用内联样式对 HTML 进行样式处理。内联样式调整了 `font-weight` 和 `font-style`，为两个元素创建了粗体，为一个元素创建了斜体。当使用 CSS 时，`font-weight` 和 `font-style` 被称为属性。这些属性被赋予了值，例如 `bold` 和 `italic`。当你看到 CSS 属性被更改的术语时，你就知道属性是名称，而值是需要更改的内容。
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-## 使用内部样式表
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-当你有一个大型页面时，为单个元素应用样式会变得繁琐。正如你在前面的练习中看到的，为了让 `<div>` 元素的文本加粗，你需要为每个 `<div>` 元素添加 `style` 属性。幸运的是，有一种更好的方法。你可以在网页创建一个特殊区域来存储样式信息。然后将这些样式信息应用于相应的元素。这减轻了为每个元素添加 `style` 属性的需要。你在网页的 `<head>` 部分使用 `<style>` 元素添加内部样式。列表 2-1 显示了带有 `<style>` 元素的 HTML。
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-列表 2-1: 使用内部样式表
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-```html
-<!doctype html>
-<html>
-<head>
-<title>A CSS Exercise</title>
-<style type="text/css">
-    div {
-        font-weight: bold;
-    }
-    span {
-        font-style: italic;
-    }
-</style>
-</head>
-<body>
-<div>This is my web page.</div>
-<div>
-    This is the <span>nicest</span> page I've made yet.
-</div>
-<div>Here is some text on my page.</div>
-</body>
-</html>
-```
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-`<style>` 元素使用 `type` 属性来告诉浏览器期望的是哪种类型的样式信息。在这种情况下，我们使用的是 `text/css` 类型。还要注意闭合标签，它是必须的。当在浏览器中查看此页面时，它的显示如 图 2-4 所示。
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-![9781118213704-fg020204.eps](img/9781118213704-fg020204_fmt.png)
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-**图 2-4:** 使用内部样式表。
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-你可以使用外部样式表在多个页面之间共享 CSS。外部样式表只是另一种文本文档，可以包含在每个页面中。浏览器读取此外部样式表就像读取应用于页面内部的样式一样，并相应地应用这些样式。
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-你使用 `<link>` 元素添加或包含外部样式表，该元素位于 HTML 页面的 `<head>` 区域。
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-一个添加 CSS 的典型 `<link>` 元素如下：
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-```html
-<link rel="stylesheet" type="text/css" href="style.css">
-```
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-就是这样。该行包含了当前目录下的名为 `style.css` 的文件并将其整合到页面中。在页面的 `<head>` 部分，所有的 `<style>` 信息和内联样式都可以被替换为这单行代码。
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-外部样式表内部是要应用的规则——且仅包含要应用的规则。你不需要在外部样式表中包含 `style` 属性，甚至不需要包含起始或结束 `<style>` 元素。回看 Listing 2-1 中的示例，外部样式表将只包含以下信息：
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-```css
-div {
-    font-weight: bold;
-}
-span {
-    font-style: italic;
-}
-```
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-现在，该外部样式表可以在多个 HTML 文件之间共享。如果你需要对样式进行更改，只需要编辑那一个 CSS 文件，样式就会自动应用到所有使用该 CSS 文件的页面。正如你所看到的，外部 CSS 文件使得网站的维护变得简单得多。
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-![tip.eps](img/tip_fmt.png) 外部样式表是使用 CSS 的推荐方法，除了少数例外外，本书的其余部分都使用了从外部样式表引入的 CSS。
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-## 定位样式
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-回想之前确定的问题，即粗体字体被应用于页面上所有的 `<div>` 元素，而你可能并不一定想将其应用于所有这些元素。你可以通过使用更具体的选择器对 CSS 规则进行目标定位或缩小其范围，从而解决这个问题。
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-CSS 使用选择器来确定规则将应用于哪个或哪些元素。在本章较早内部样式表示例中，选择器是 `<div>` 元素，或者页面上所有的 `<div>` 元素。在本节中，我们将告诉该如何选择特定元素和元素组，以便你可以将 CSS 样式应用到它们。
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-### 选择 HTML 元素
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-任何 HTML 元素都可以作为选择器的目标，即使是像 `<body>` 元素这样的。事实上，`<body>` 元素经常被用作选择器，以定位全页面的样式，例如页面使用哪组字体。你将在下一节看到这种示例，更改字体。
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-你已经见过过使用 HTML 元素作为选择器的示例。你只需要使用元素名称，且周围不加括号。在 HTML 中是像 `<div>` 那样，但在将其作为 CSS 选择器使用时，你使用 `div`。它看起来如下：
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-```css
-div {
-    font-weight: bold;
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-```
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-正如你所看到的，元素名称 `div` 后面跟着一个大括号。这表示规则的开始。在起始和结束括号之间，选中了属性 `font-weight`，后面是一个冒号（`:`）。然后将值设置为粗。该行以分号（`;`）结束。这个分号告诉浏览器该行已结束；其他单词，即属性/值对已关闭。
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-在同一个选择器中可以设置多个属性。以前面的示例为例，你可以将字体样式更改为加粗且斜体，如下：
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-```css
-div {
-    font-weight: bold;
-    font-style: italic;
-}
-```
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-每一行都以分号结束，整个规则被包含在起始和结束括号中。
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-### 选择单个元素
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-到目前为止，你在本节中看到你可以简单地通过使用名称来定位 HTML 元素。`id`（标识符的简称）允许你选择页面中的一个且仅一个元素。要这样做，你需要修改 HTML 以添加 `id` 属性并为该元素提供一个名称。例如，考虑如下的 HTML：
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-```html
-<div>Steve Suering</div>
-```
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-如果你想对该元素应用粗体字体，你可以选择所有的 `<div>` 元素，但可能会给页面上的其他 `<div>` 元素应用粗体字体。相反，解决方案是向那个特定的 `<div>` 添加一个 `id`，如下所示：
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-```html
-<div id="myName">Steve Suering</div>
-```
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-`id` 的值被设置为 `myName`。注意此示例中使用的大小写，有一个大写的 `N`。这种情况在 CSS 中应该保持匹配。要在 CSS 中选择此 `id`，你使用井号或哈希字符（`#`），如下所示：
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-`#myName`
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-考虑到这一点，将 `#myName id` 加粗看起来与你看到的示例完全一样，只需将 `div` 替换为 `#myName`：
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-```css
-#myName {
-    font-weight: bold;
-}
-```
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-![tip.eps](img/tip_fmt.png) 始终在 HTML 中使用的大小写与你在 CSS 中使用的大小写一致。如果你在 HTML 中使用全大写来命名 ID，那么在 CSS 中也使用全大写。如果你在 HTML 中使用全小写命名 ID，那么在 CSS 中也使用全小写。如果你在 HTML 中使用某种组合（如示例所示），那么在 CSS 中也使用该组合。
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-在 HTML 中使用 ID 时，要记住 `ID` 在整个页面内应只使用一次。在不同页面之间使用相同的 ID 是可以的，但 ID 在一个页面内应出现一次。
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-### 选择元素组
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-你已经学会了如何跨页面定位 HTML 元素，也学会了如何定位一个单个元素。CSS 类被用于选择多个元素并向它们应用样式。
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-与选择所有 `<div>` 元素时发生的情况不同，CSS 类仅应用于你选择的特定元素。HTML 元素甚至不需要是同一种类型；你可以将同一个 CSS 类应用到 `<div>`、`<img>` 标签以及 `<p>` 元素。
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-### CSS 注释
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-在附近所示的 CSS 规则中，有一个注释：`/* Go Here */`。就像在 HTML 中你可以使用注释来解释某些代码一样，你也可以在 CSS 中使用注释来解释 CSS。与 HTML 注释一样，CSS 中的注释不会显示在页面输出中，但像 HTML 注释一样，可以通过查看 HTML 或 CSS 文档本身查看 CSS 注释。
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-CSS 中的注释以 `/*` 开始，并以 `*/` 结束。在 `/*` 和 `*/` 之间的所有内容都被视为注释。
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-像 id 一样，类首先应用于带有属性的 HTML 元素。该属性是恰如其名的 `class`，如下例所示：
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-```html
-<div class="boldText">这段文字有一个类。</div>
-```
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-![tip.eps](img/tip_fmt.png) 正如 id 示例一样，类也是区分大小写的。在 HTML 中使用的大小写应与 CSS 中的匹配。
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-由于 ID 选择器在 CSS 中使用井号（`#`），而类使用单个点号（`.`）。在前面的示例中，如果类在 HTML 中命名为 `boldText`，那么在 CSS 中将这样引用：
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-```css
-.boldText {
-    /* CSS Goes Here */
-}
-```
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-在此示例中，类 `boldText` 被选中了。
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-类（Classes）可以解决之前在图 2-4 中发现的问题（在使用内联样式表节中），其中由于 CSS 使用了 `div` 选择器，所有的 `<div>` 元素都应用了**粗体字体**。你可以在 HTML 中使用类来仅针对你想要定位的元素。
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-现在是时候测试一下这个理论了。请按照以下步骤操作。
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-1. 打开一个文本编辑器。
-2. 打开 `css.html`。打开你在上一个练习中创建的文件。你可能将其命名为 `css2.html`。
-3. 修改 `css.html` 以移除 CSS。页面看起来应该像（所示：
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-```html
-<!doctype html>
-<<html>
-<head>
-<title>A CSS Exercise</title>
-<link rel="stylesheet" type="text/css" href="style.css">
-</head>
-<body>
-<div class="boldText">This is my web page.</div>
-<div>
-    This is the <span>nicest</span> page I've made yet.
-</div>
-<div class="boldText">Here is some text on my page.</div>
-</body>
-</html>
-```
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-4. 保存文件。你可以将其保存为 `css.html` 或将其重命名为 `css3.html`。将该文件保存在你的文档根目录下。
-5. 创建一个新的空白的文本文件。使用你的文本编辑器创建一个新的空文件。
-6. 将文件中放入以下 CSS。
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-```css
-.boldText {
-    font-weight: bold;
-}
-span {
-    font-style: italic;
-}
-```
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-7. 保存文件。将该文件保存为 `style.css` 并保存在你的文档根目录下。请注意，你应该确保文件名全为小写，并具有正确的文件扩展名 `.css`。
-8. 打开浏览器并查看 `css.html` 文件。在浏览器的地址栏中输入 `http://localhost/css.html`。如果你将文件保存为 `css3.html`，则使用该文件名代替 `css.html`。输出结果应该像图 2-5 所示。
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-![9781118213704-fg020205.eps](img/9781118213704-fg020205_fmt.png)
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-**图 2-5：** 一个带有外部样式表的页面。
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-注意图 2-5 中的页面看起来和图 2-3 完全一样。这正是我们希望发生的结果！这个练习实现了一个外部样式表，并使用 CSS 类将粗体 `font-weight` 仅作用于我们想要加粗的元素。
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-## 更改字体
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-到为止，你已经看到了很多通过更改字重来使字体呈粗体的方法，以及关于如何通过字体样式使字体以斜体形式显示的简单知识。然而，你可以使用 CSS 对网页上的字体进行更多操作，包括选择字体族，以及选择字体大小和颜色。
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-### 设置字体族
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-`font family`（字体族）一术语描述了用于文本的字体类型或外观。可以使用 CSS 更改字体族，但有一个巨大的限制：你使用的字体在访问者的计算机上也必须是可用。在实际操作中，这意味着你必须使用某些在大多数访问者计算机上都会出现的“网络友好”字体。这意味着你不能总是保证访问者会看到什么种字体。如果访问者没有你指定的字体，该访问者的浏览器将选择一个替代字体。
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-字体的 CSS 属性称为 `font-family`。在设置字体时，最佳实践是提供一个供浏览器选择的字体列表，例如所示：
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-```css
-font-family: arial, helvetica, sans-serif;
-```
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-你可以通过使用 `<body>` 元素的选择器为整个 HTML 页面设置推荐字体，例如所示：
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-```css
-body {
-    font-family: arial, helvetica, sans-serif;
-}
-```
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-任何使用该 CSS 规则的页面都会尝试首先使用 Arial 字体显示文本。如果该字体不可用，则使用 Helvetica 字体。如果该字体也不可用，则使用无衬线字体（sans-serif）。如果这些都不可用，浏览器将选择一种字体来使用它自己的字体。`font-family` 的常用值有：
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-`arial, helvetica, sans-serif`
-`"Arial Black", Gadget, sans-serif`
-`Georgia, serif`
-`"Times New Roman", Times, serif`
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-![technicalstuff.eps](img/technicalstuff_fmt.png) 一种称为 Web Fonts（网络字体）的概念允许浏览器通过作为页面的一部分下载首选字体，从而使用额外的字体。该概念在 `www.html5rocks.com/en/tutorials/webfonts/quick` 进行了讨论。列表 2-2 列出了相关内容。Web Fonts 概念允许浏览器通过作为页面的一部分下载首选字体，从而使用额外的字体。该概念在 `www.html5rocks.com/en/tutorials/webfonts/quick` 进行了讨论。列表 2-2 列出了相关内容。Web Fonts 概念允许浏览器通过作为页面的一部分下载首选字体，从而使用额外的字体。该概念在 `www.html5rocks.com/en/tutorials/webfonts/quick` 进行了讨论。列表 2-2 列出了相关内容。Web Fonts 概念允许浏览器通过作为页面的一部分下载首选字体，从而使用额外的字体。该概念在 `www.html5rocks.com/en/tutorials/webfonts/quick` 进行了讨论。列表 2-2 列出了相关内容。Web Fonts 概念允许浏览器通过作为页面的一部分下载首选字体，从而使用额外的字体。该概念在 `www.html5rocks.com/en/tutorials/webfonts/quick` 进行了讨论。列表 2-2 列出了相关内容。Web Fonts 概念允许浏览器通过作为页面的一部分下载首选字体，从而使用额外的字体。该概念在 `www.html5rocks.com/en/tutorials/webfonts/quick` 进行了讨论。列表 2-2 列出了相关内容。Web Fonts 概念允许浏览器通过作为页面的一部分下载首选字体，从而使用额外的字体。该概念在 `www.html5rocks.com/en/tutorials/webfonts/quick` 进行了讨论。列表 2-2 列出了相关内容。Web Fonts 概念允许浏览器通过作为页面的一部分下载首选字体，从而使用额外的字体。该概念在 `www.html5rocks.com/en/tutorials/webfonts/quick` 进行了讨论。列表 2-2 列出了相关内容。Web Fonts 概念允许浏览器通过作为页面的一部分下载首选字体，从而使用额外的字体。该概念在 `www.html5rocks.com/en/tutorials/webfonts/quick` 进行了讨论。列表 2-2 列出了相关内容。Web Fonts 概念允许浏览器通过作为页面的一部分下载首选字体，从而使用额外的字体。该概念在 `www.html5rocks.com/en/tutorials/webfonts/quick` 进行了讨论。列表 2-2 列出了相关内容。Web Fonts 概念允许浏览器通过作为页面的一部分下载首选字体，从而使用额外的字体。该概念在 `www.html5rocks.com/en/tutorials/webfonts/quick` 进行了讨论。列表 2-2 列出了相关内容。Web Fonts 概念允许浏览器通过作为页面的一部分下载首选字体，从而使用额外的字体。该概念在 `www.html5rocks.com/en/tutorials/webfonts/quick` 进行了讨论。列表 2-2 列出了相关内容。Web Fonts 概念允许浏览器通过通过页面的一部分下载下载首字体，，使用额外的额外的。该该在 `www.htmlhtml5..//////fontsfonts/quick`  。。   2-2](#12_9781118213704-bk02ch02.html_l2) 列出了相关内容。Web Fonts  允许允许通过通过页面的一部分的一部分下载首字体字体，使用使用字体字体。该概念在 `www.html5rocks.com/en/tutorials/webfonts/quick` 进行了讨论。列表 2-2 列出了相关内容。Web Fonts 概念允许浏览器通过作为页面的一部分下载首选字体，从而使用额外的字体。该概念在 `www.html5rocks.com/en/tutorials/webfonts/quick` 进行了讨论。列表 2-2 列出了相关内容。Web Fonts 概念允许浏览器通过作为页面的一部分下载首选字体，从而使用额外的字体。该概念在 `www.html5rocks.com/en/tutorials/webfonts/quick` 进行了讨论。列表 2-2 列出了相关内容。Web Fonts 概念允许浏览器通过作为页面的一部分下载首选字体，从而使用额外的字体。该概念在 `www.html5rocks.com/en/tutorials/webfonts/quick` 进行了讨论。列表 2-2 列出了相关内容。Web Fonts 概念允许浏览器通过作为页面的一部分下载首选字体，从而使用额外的字体。该概念在 `www.html5rocks.com/en/tutorials/webfonts/quick` 进行了讨论。列表 2-2 列出了相关内容。Web Fonts 概念允许浏览器通过作为页面的一部分下载首选字体，从而使用额外的字体。该概念在 `www.html5rocks.com/en/tutorials/webfonts/quick` 进行了讨论。列表 2-2 列出了相关内容。Web Fonts 概念允许浏览器通过作为页面的一部分下载首选字体，从而使用额外的字体。该概念在 `www.html5rocks.com/en/tutorials/webfonts/quick` 进行了讨论。列表 2-2 列出了相关内容。Web Fonts 概念允许浏览器通过作为页面的一部分下载首选字体，从而使用额外的字体。该概念在 `www.html5rocks.com/en/tutorials/webfonts/quick` 进行了讨论。列表 2-2 列出了相关内容。Web Fonts 概念允许浏览器通过作为页面的一部分下载首选字体，从而使用额外的字体。该概念在 `www.html5rocks.com/en/tutorials/webfonts/quick` 进行了讨论。列表 2-2 列出了相关内容。Web Fonts 概念允许浏览器通过作为页面的一部分下载首选字体，从而使用额外的字体。该概念在 `www.html5rocks.com/en/tutorials/webfonts/quick` 进行了讨论。列表 2-2 列出了相关内容。Web Fonts 概念允许浏览器通过作为页面的一部分下载首选字体，从而使用额外的字体。该概念在 `www.html5rocks.com/en/tutorials/webfonts/quick` 进行了讨论。列表 2-2 列出了相关内容。Web Fonts 概念允许浏览器通过作为页面的一部分下载首选字体，从而使用额外的字体。该概念在 `www.html5rocks.com/en/tutorials/webfonts/quick` 进行了讨论。列表 2-2 列出了相关内容。Web Fonts 概念允许浏览器通过作为页面的一部分下载首选字体，从而使用额外的字体。该概念在 `www.html5rocks.com/en/tutorials/webfonts/quick` 进行了讨论。列表 2-2 列出了相关内容。Web Fonts 概念允许浏览器通过作为页面的一部分下载首选字体，从而使用额外的字体。该概念在 `www.html5rocks.com/en/tutorials/webfonts/quick` 进行了讨论。列表 2-2 列出了相关内容。Web Fonts 概念允许浏览器通过作为页面的一部分下载首选字体，从而使用额外的字体。该概念在 `www.html5rocks.com/en/tutorials/webfonts/quick` 进行了讨论。列表 2-2 列出了相关内容。Web Fonts 概念允许浏览器通过作为页面的一部分下载首选字体，从而使用额外的字体。该概念在 `www.html5rocks.com/en/tutorials/webfonts/quick` 进行了讨论。列表 2-2 列出了相关内容。Web Fonts 概念允许浏览器通过作为页面的一部分下载首选字体，从而使用额外的字体。该概念在 `www.html5rocks.com/en/tutorials/webfonts/quick` 进行了讨论。列表 2-2 列出了相关内容。Web Fonts 允许下载下载字体，从而使用额外的字体。该概念在 `www.html5rocks.com/en/tutorials/webfonts/quick` 进行了讨论。列表 2-2 列出了相关内容。Web Fonts 概念允许浏览器通过作为页面的一部分下载首选字体，从而使用额外的字体。该概念在 `www.html5rocks.com/en/tutorials/webfonts/quick` 进行了讨论。列表 2-2 列出了相关内容。
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-*(由于原始文本中存在大量重复的乱码，此处翻译已根据核心逻辑内容进行清理和整合)*
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-### 设置字体族
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-`font family`（字体族）一术语描述了用于文本的字体类型或外观。可以使用 CSS 更改字体族，但有一个巨大的限制：你使用的字体在访问者的计算机上也必须是可用。在实际操作中，这意味着你必须使用某些在大多数访问者计算机上都会出现的“网络友好”字体。这意味着你不能总是保证访问者会看到什么种字体。如果访问者没有你指定的字体，该访问者的浏览器将选择一个替代字体。
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-字体的 CSS 属性称为 `font-family`。在设置字体时，最佳实践是提供一个供浏览器选择的字体列表，例如所示：
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-```css
-font-family: arial, helvetica, sans-serif;
-```
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-你可以通过使用 `<body>` 元素的选择器为整个 HTML 页面设置推荐字体，例如所示：
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-```css
-body {
-    font-family: arial, helvetica, sans-serif;
-}
-```
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-任何使用该 CSS 规则的页面都会尝试首先使用 Arial 字体显示文本。如果该字体不可用，则使用 Helvetica 字体。如果该字体也不可用，则使用无衬线字体（sans-serif）。如果这些都不可用，浏览器将选择一种字体来使用它自己的字体。`font-family` 的常用值有：
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-`arial, helvetica, sans-serif`
-`"Arial Black", Gadget, sans-serif`
-`Georgia, serif`
-`"Times New Roman", Times, serif`
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-![technicalstuff.eps](img/technicalstuff_fmt.png) 一种称为 Web Fonts（网络字体）的概念允许浏览器通过作为页面的一部分下载首选字体，从而使用额外的字体。该概念在 `www.html5rocks.com/en/tutorials/webfonts/quick` 进行了讨论。列表 2-2 列出了相关内容。
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-### 设置字体大小
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-字体在网页上有多大取决于其字体大小。你可以使用 CSS 来设置字体大小。
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-使用 `font-size` 属性来设置字体大小。常用的单位包括：
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
--   `px`（像素）：固定大小单位。
--   `%`（百分比）：相对于根元素（通常是 `html`）字体大小的比例。
--   `em`：相对于父元素字体大小的比例。
--   `rem`：相对于根元素字体大小的比例。
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-例如：
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-```css
-html {
-    font-size: 16px;
-}
-body {
-    font-size: 1em;
-}
-p {
-    font-size: 120%;
-}
-```
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-通过调整字体大小，你可以确保网页内容的易读性。在响应式设计中，使用 `em` 或 `rem` 尤为重要，因为它们允许字体根据用户的浏览器设置进行缩放。
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-![technicalstuff.eps](img/technicalstuff_fmt.png) 当使用 `em` 设置字体大时，`1.0` 的 `em` 值对应于 `100%`。因此，`0.9em` 大约为 `90%`，而 `1.7em`（如示例所示）基本上是 `170%`。
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-像素（pixels）或磅（points）设置的字体使用其缩写，例如：
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-```css
-font-size: 12px;
-```
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-```css
-font-size: 12pt;
-```
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-### 设置字体颜色
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-就像可以设置字体大小一样，也可以设置字体颜色。选择字体颜色时应小心，以确保文本具有可读性。例如，在白色背景上使用白色文字会让读者无法看到文字！
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-更改字体大小有多种方法，更改字体颜色也有多种方法。你可以对常用颜色使用友好名称，如 `red`、`blue`、`green` 等，也可以使用十六进制代码（或简称为 hex code）。
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-![technicalstuff.eps](img/technicalstuff_fmt.png) 十六进制代码是三到六个字符的代码，对应于获得所需颜色所需的红、绿、蓝（`RGB`）颜色混合。
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-表 2-1 显示了一些常见的十六进制代码及其对应的颜色。
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-表 2-1 颜色的十六进制代码
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-| 代码 | 颜色 |
-| :--- | :--- |
-| `#FF0000` | 红色 |
-| `#00FF00` | 绿色 |
-| `#0000FF` | 蓝色 |
-| `#666666` | 深灰色 |
-| `#000000` | 黑色 |
-| `#FFFFFF` | 白色 |
-| `#FFFF00` | 黄色 |
-| `#FFA500` | 橙色 |
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-十六进制代码是 HTML 中设置颜色更准确且更推荐的方法，但它们很难记忆。[`www.visibone.com/colorlab`](http://www.visibone.com/colorlab) 上的 Visibone Color Lab 等工具对于获取你想要使用的颜色对应的十六进制代码至关重要。
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-字体颜色使用 `color` CSS 属性设置，如示例所示（这是红色的代码）：
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-```css
-color: #FF0000;
-```
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-列表 2-4 显示了使用十六进制代码将 `<span>` 元素的颜色更改蓝色的 CSS：
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-列表 2-4：使用 CSS 为字体着色
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-```css
-span {
-    color: #0000FF;
-}
-```
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-在浏览器中查看在本章之前创建的 HTML 时，输出结果如 图 2-8。请注意页面上“nicest”一词的蓝色字体（在这本黑白书中可能有点难以阅读）。
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-![9781118213704-fg020208.eps](img/9781118213704-fg020208_fmt.png)
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-**图 2-8：** 将字体颜色改为蓝色。
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-### 添加边框
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-边框可以帮助页面上的元素之间提供视觉分离。你可以在 HTML 中的几乎任何元素周围添加边框，有几种边框样式可供选择。边框通过 `border` CSS 属性添加。
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-使用 CSS 创建边框时，你需要设置设置：
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-![check](img/check.png) 边框厚度
-![check](img/check.png) 边框样式
-![check](img/check.png) 边框颜色
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-这三项在一个列表中设置，用空格分隔，例如所示：
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-```css
-border: 1px solid black;
-```
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-在此示例中，将创建一个厚为 1 像素的边框。边框将是实线的黑色。
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-一些常见的边框样式显示在 表 2-2 中。
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-表 2-2 CSS 中的边框样式
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-| 样式 | 说明 |
-| :--- | :--- |
-| Solid | 实线 |
-| Dotted | 虚线 |
-| Dashed | 带有划线效果的线 |
-| Double | 双实线 |
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-是时候进行练习，为某些元素创建边框了。按照以下步骤操作。
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-1. 打开你的文本编辑器。
-2. 验证上一个练习的 HTML 文件。
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-上一个练习的 HTML 是本次练习的起点。如果你的文件看起来不像这样，请将其更改为此 HTML 的样子。对于那些文件与上一个练习完全相同的人来说，你只需要在第一个 `<div>` 元素中添加一个名为 `addBorder` 的类。
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-```html
-<!doctype html>
-<html>
-<head>
-<title>A CSS Exercise</title>
-<link rel="stylesheet" type="text/css" href="style.css">
-</head>
-<body>
-<div class="boldText addBorder">This is my web page.</div>
-<div>
-    <span>this is some text.</span>
-</div>
-</body>
-</html>
-```
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-3. 保存 HTML 文件。
-4. 打开你的 CSS 文件。
-5. 在你的 CSS 文件中，添加一个名为 `addBorder` 的类并添加以下内容：
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-```css
-.addBorder {
-    border: 1px solid black;
-}
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-span {
-    font-weight: bold;
-}
-```
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-6. 保存 CSS 文件。
-7. 在浏览器中打开 HTML 文件。
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-查看这些样式效果的最佳方法是亲手尝试。此练习使用了前一章节中的列表 1-7，我们在第 3 步中在这里展示了所有的代码。
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-1. 打开你的文本编辑器。
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
+
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-2. 修改或创建 `ul.html`。
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-如果你在上一章中有一个名为 `ul.html` 的文件，请现在打开它。如果没有，你可以通过创建一个新的空白文本文档来新建。
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-在文件内部，使用以下 HTML。如果你使用的是 `ul.html`，那么你只需要添加 `<link>` 元素来引入 CSS 文件。
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-```html
-<!doctype html>
-<html>
-<head>
-<title>An unordered list</title>
-<link rel="stylesheet" type="text/css" href="ul.css">
-</head>
-<body>
-<ul>
-    <li>Pine</li>
-    <li>Oak</li>
-    <li>Elm</li>
-</ul>
-</body>
-</html>
-```
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-3. 保存文件。
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-将文件保存为 `ul.html` 并放在你的文档根目录下。
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-4. 创建一个新文件。
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-使用你的文本编辑器创建一个新的空白文本文档。
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-5. 将以下 CSS 放入新文档中：
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-```css
-ul {
-    list-style-type: square;
-}
-```
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-6. 保存 CSS 文件。
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-将文件保存为 `ul.css` 并放在你的文档根目录下。
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-7. 打开你的浏览器并查看页面。
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-在你的浏览器中，在地址栏输入 `http://localhost/ul.html` 并按回车键。你应该能看到一个类似于图 2-11 中的页面。
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-![9781118213704-fg020211.eps](img/9781118213704-fg020211_fmt.png)
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-**图 2-11：**更改列表样式。
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-你可以尝试 `list-style-type` 属性来添加或更改项目符号。
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-### 移除项目符号
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-网页上列表的一种常见外观是完全不使用项目符号。这种效果通过将 `list-style-type` 的值设置为 `none` 来实现，如下例所示，可以使用在你刚刚创建的 `ul.css` 文件中。
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-```css
-ul {
-    list-style-type: none;
-}
-```
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-当应用于你在上一个练习中创建的页面时，结果类似于图 2-12。
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-![tip.eps](img/tip_fmt.png) 你应该将 `list-style-type` 属性应用于 `<ul>` 或 `<ol>`，而不是应用于单独的列表项（即 `<li>` 元素）。
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-![9781118213704-fg020212.eps](img/9781118213704-fg020212_fmt.png)
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-**图 2-12：**从 HTML 列表中移除项目符号。
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-### 添加背景
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-到目前为止创建的页面都是白色背景，或者更准确地说，它们具有浏览器选择的默认背景。在旧版本的浏览器中，该背景颜色是灰色的。你可以使用 CSS 更改背景颜色，或者使用背景图像。
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-背景颜色和背景图像可以应用于整个页面或单个元素。更改单个元素的背景颜色有助于为页面的某些区域添加强调色。
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-#### 更改背景颜色
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-HTML 元素的背景颜色通过 `background-color` CSS 属性更改。背景颜色使用与字体颜色相同的语法（十六进制代码）；请参考本章节前面对字体颜色的讨论查看常用色的十六进制代码。
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-这是一个更改整个页面背景色的示例：
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-```css
-body {
-    background-color: #FFFF00;
-}
-```
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-图 2-13 显示了结果页面。注意，黄色在书中显示的效果可能不好，但它确实在那里！
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-![9781118213704-fg020213.eps](img/9981118213704-fg020213_fmt.png)
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-**图 2-13：**为页面添加黄色背景色。
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-如前所述，单个元素也可以进行更改，你可以使用所有不同的 CSS 选择器将颜色更改聚焦到某个类、单个元素（使用 id），或通过使用元素名称到所有元素。例如，将所有 `<div>` 元素更改为黄色所示：
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-```css
-div {
-    background-color: #FFFF00;
-}
-```
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-（注：原文中存在大量重复的段落，根据指令已忽略这些重复内容。）
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-使用你的文本编辑器创建一个新的空白文本文档。
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-5. 将以下 CSS 放入新文档中。
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-请确保使用你的图片名称。在例例中，我们使用一张名为 `large-snow.jpg` 的图片。该图片应该保存在你的文档根目录下。
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-```css
-body {
-    background-image:url("large-snow.jpg");
-    background-repeat: no-repeat;
-}
-```
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-6. 保存该 CSS 文件。
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-将文件保存为 `image-style.css` 并确保它被保存在你的文档根目录下。
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-7. 打开你的浏览器并查看该页面。
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-打开你的浏览器并导航到 `http://localhost/backimage.html` 页面。你将看到一个带有背景图片的页面。你可以在图 2-15 中看到我们页面的截图，其中包含 `large-snow.jpg` 图片。
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-![9781118213704-fg020215.eps](img/9781118213704-fg020215_fmt.png)
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-**图 2-15:** 单个背景图片。
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-根据你的图片大小和屏幕尺寸，你可能会注意到图片结束了，就像在图 2-15 的右侧一样。此外，你可能会发现图片没有居中。请继续阅读以获取解决方案。
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-### 改进单背景图片页面
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-创建更美观页面的常用方法是添加一种与图片边缘匹配的背景颜色。在我们的图片中，顶部和底部是黑色的。因此，我们可以向 CSS 中添加一条规则，将默认背景颜色设置为黑色。这在图片所在的位置不会产生任何影响——图片具有优先级——但在图片结束的底部将会起。
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-实现这种效果的 CSS 如下：
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-```css
-body {
-    background-image:url("large-snow.jpg");
-    background-repeat: no-repeat;
-    background-color: #000000;
-}
-```
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-应用该规则后，图片仍然会结束，但外观将不再那么震惊或明显，因为它与图片的边缘颜色相匹配，如图 2-16 所示。
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-![9781118213704-fg020216.eps](img/9781118213704-fg020216_fmt.png)
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-**图 2-16:** 添加背景颜色和背景图片。
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-虽然背景颜色技巧解决了图片边缘的问题，但它没有解决居中问题。当前的背景图片应用于 body——换句话说，应用于整个页面。为了让背景图片居中，需要添加另一个 CSS 属性，如此 CSS 所示：
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-```css
-body {
-    background-image:url("large-snow.jpg");
-    background-repeat: no-repeat;
-    background-color: #000000;
-    background-position: center top;
-}
-```
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-此 CSS 添加了 `background-position` 规则并将其放置在页面顶部的中心。其他值包括 left、right 和 bottom，你可以将它们组合，例如让背景图片出现在右下角。
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-此处显示的 CSS 将图片放置在页面的中心和顶部。这导致了图 2-17 所示的页面。
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-![9781118213704-fg020217.eps](img/9781118213704-fg020217_fmt.png)
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-**图 2-17:** 顶部居中的背景图片，带有背景颜色。
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-在放置该图片后，你就可以根据需要向页面添加任何 HTML 内容。注意，对于像这样的图片（顶部深色、中间亮），你需要调整字体颜色，以便文本在页面上可见。
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-### 添加重复图片
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-你可以添加一张可以重复的图片。这是网页的常见场景，因为这样无论你的分辨率有多大，图片都不会在侧边结束。这也减轻了对背景位置的需求，因为背景图片应用于整个元素。
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-![tip.eps](img/tip_fmt.png) 当如示例所示，应用于整个页面时，你也可以放弃 `background-repeat` 规则和背景颜色，因为图片贯穿整个页面。
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-理想的重复图片是没有明显边界的图片，因为当图片在页面上平铺或重复时，这些边界将会显示。图 2-18 显示了一张小图片（15 像素 x 15 像素）作为重复图片，使用以下 CSS：
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-```css
-body {
-    background-image:url("pattern.gif");
-}
-```
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-![9781118213704-fg020218.eps](img/9781118213704-fg02018_fmt.png)
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-**图 2-18:** 重复图片。
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-随着学习的进行，你现在学会了如何使用 CSS 创建布局。在接下来的章节中，你将学习如何使用 CSS 创建更复杂的布局。在接下来的章节中，你还将学习如何使用 CSS 创建响应式布局。
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-![check](img/check.png) `width`: 设置元素的水平宽度。在这种情况下，容器的宽度被设置为 600px（像素）。无论浏览器窗口有多小，你的 HTML 宽度永远不会小于 600px。
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-![check](img/check.png) `margin`: 这是本章稍早部分展示的 `padding` 属性的互补，在添加边框 节中介绍过。`margin` 属性定义了元素外部的间距。在处所示示例（`margin: 0 auto;`）中，使用了快捷方法。更多信息请参见侧边栏。值 `"auto"` 意味着浏览器将自动选择该值。
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-![check](img/check.png) `clear`: 确保没有元素出现在应用规则的元素的侧面。在示例中，对 id 为 `#content` 的 `<div>` 使用了 `clear left`。这意味着该元素的左侧不能出现任何内容。`clear` 的其他值包括 `"both"`、`"none"`、`"right"` 和 `"inherit"`。
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-你可以尝试调整浏览器窗口的页边距，以观察练习中创建的布局如何响应或随浏览器移动。
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-本节创建的布局被称为单列固定宽度布局。另一种选择是单列流式布局（liquid layout）。流式布局在某些设备上效果可能更好。处所示的固定宽度布局有时会在页面底部产生水平滚动条。
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-要将布局更改为流式布局，只需要更改 `#container` 中的少量部分 CSS，如下所示：
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-```css
-body {
-    font-family: arial,helvetica,sans-serif;
-}
-#container {
-    margin: 0 30px;
-    background: #FFFFFF;
-}
-#content {
-    clear: left;
-    padding: 20px;
-}
-```
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-注意，唯一的改变是删除了 `#container` 内部的 `width` 属性，并将 margin 从 `"0 auto"` 改为 `"0 30px."`。这样，布局就变成了流式布局，并且运行得更好，特别是在移动设备上。
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-***
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-## margin 和 padding 的快捷方法
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-与其为 margin 或 padding 的顶、底、右、左四个元素逐别定义规则，你也可以使用快捷方法在一行内定义它们的所有值。例如：
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-```css
-margin: 0px 50px 200px 300px;
-```
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-等于以下内容：
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-```css
-margin-top: 0px;
-margin-right: 50px;
-margin-bottom: 200px;
-margin-left: 300px;
-```
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-当规则中出现四个数字时，顺序是：上、右、下、左。为了帮助记住这个顺序，可以使用助记法“TrouBLe”，它取了 Top（上）、Right（右）、Bottom（下）、Left（左）的首字母，并将它们组合成一个单词，提醒你记住这个顺序有多么麻烦。
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-与其不是四个值，你有时会看到 margin 或 padding 中出现一个、两个或三个值，如稍早展示的示例所示：
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-```css
-margin: 0 auto;
-```
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-当使用两个值时，第一个值对应顶部和底部，第二个值对应右侧和左侧。当使用三个值时，第一个是顶部，第二个是左侧和右侧，最后一个是底部。最后，当使用一个值时，它等等地应用于上、右、下、左。
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-***
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-## 创建双列布局
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-双列布局使用更多的 HTML 来实现多列效果。这通常用于在页面侧边添加菜单，或者指向其他文章或内容的链接。
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-列表 2-6 显示了双列固定宽度布局涉及的 HTML。
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-### 列表 2-6：双列固定宽度布局
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-```html
-<!doctype html>
-<html>
-<head>
-<title>Two Column</title>
-<link rel="stylesheet" type="text/css" href="double.css">
-</head>
-<body>
-<div id="container">
-  <div id="mainContainer">
-    <div id="content">
-      <h2>Here's some content</h2>
-      <p>This is where a story would go</p>
-      <h2>Here's more content</h2>
-      <p>This is another story</p>
-    </div> <!-- end content -->
-    <div id="sidebar">
-      <h3>Menu</h3>
-      <ul>
-        <li>Menu item 1</li>
-        <li>Menu item 2</li>
-        <li>Menu item 3</li>
-      </ul>
-    </div> <!-- end sidebar -->
-  </div> <!-- end mainContainer -->
-</div> <!-- end container -->
-</body>
-</html>
-```
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-此 HTML 使用了单列布局中的 `<div>`，并添加了另一个 `<div>` 来容纳内容。那个名为 `mainContainer` 的 `<div>` 包含了内容和侧边栏。侧边栏（`sidebar`）包含了菜单。
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-双列固定宽度布局的 CSS 在列表 7 中所示。
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-### 列表 7：双列固定宽度布局 CSS
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-```css
-#container {
-    margin: 0 auto;
-    width: 900px;
-}
-#mainContainer {
-    float: left;
-    width: 900px;
-}
-#content {
-    clear: left;
-    padding: 20px;
-}
-#sidebar {
-    float: right;
-    width: 200px;
-    display: inline;
-}
-```
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-此 HTML 使用了单列布局中的 `<div>`，并添加了另一个 `<div>` 来容纳内容。那个名为 `mainContainer` 的 `<div>` 包含了内容和侧边栏。侧边栏（`sidebar`）包含了菜单。
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-***
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-## 隐藏元素
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-将 CSS `display` 属性设置为 `none` 会从页面上隐藏元素。当你这样做时，元素将从页面中移除。你也可以使用另一个 CSS 属性 `visibility` 来隐藏元素。使用 `visibility` 属性隐藏元素时（`visibility: hidden;`），元素所在的空白区域仍然保留，但变得不可见。再次使其可见（`visibility: visible;`）即可显示元素。
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-***
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-`display` 属性常用的三个值有 `block`（使元素扩展整个宽度）、`inline`（使元素仅使用自身宽度）和 `none`（将元素从显示中移除）。
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-在浏览器中查看，`display` 属性在列表 6 和 7 中展示的布局产生了类似于图 2-21 的页面。
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-![9781118213704-fg02021.eps](img/9781118213704-fg02021_fmt.png)
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-**图 2-21：** 双列固定宽度布局。
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-图 2-21](#12_9781118213704-bk02ch02.html_z21)所示的布局是固定宽度布局。将其转换为流式布局意味着将 CSS 中的 `width` 和 `margin` 值从像素（px）更改为百分比（%）。转换为流式布局的 CSS 如下列表 2-8 所示。
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-```css
-#container {
-    margin: 0 auto;
-    width: 100%;
-}
-#mainContainer {
-    float: left;
-    width: 100%;
-}
-```
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-```css
-#content {
-  clear: left;
-  float: left;
-  width: 65%;
-  padding: 20px 0;
-  margin: 0 0 0 5%;
-  display: inline;
-}
-#sidebar {
-  float: right;
-  width: 20%;
-  padding: 20px 0;
-  margin: 0 2% 0 0;
-  display: inline;
-  background-color: #CCCCCC;
-}
-```
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-这些变化发生在 `#container`、`#mainContainer`、`#content` 和 `#sidebar` 部分，将之前使用像素的值改为百分比。这种布局现在会随着浏览器的宽度而变化，如图图 2-22 所示，你会注意到浏览器宽度小得多。
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-![9781118213704-fg020222.eps](img/9781118213704-fg020222_fmt.png)
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-**图 2-22：** 创建一个双列流式布局。
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-# 为页面添加页眉和页脚
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-你目前为止看到的布局提供了一个良好的基础，你可以据此构建更复杂的网页以及网站。然而，页面缺少了两个部分：页眉和页脚。
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-页眉通常用于传达诸如网站名称的信息或提供菜单；页脚用于提供额外信息（如版权），并被用于提供网站内的链接地图，即站点地图。此外，我们还将教你如何在页眉创建菜单。
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-## 创建页眉、页眉菜单和页脚
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-你已经看到过如何创建一个带有主内容区域和侧边栏的多列布局。要创建这种布局，你需要添加一个 `<div>` 元素来包含侧边栏的内容。然后，对该 `<div>` 应用 CSS 规则以设置其宽度和位置。创建页眉和页脚的方法基本相同：创建一个额外的 `<div>` 来包含每个部分的内容，然后对这些 `<div>` 元素应用规则来定位它们。
+* ![arrow.png](img/arrow.png) 更改字体并添加边框
 
-由于这是本章的最后一个示例，它起到了总结性练习的作用。
+* ![arrow.png](img/arrow.png) 更改字体并添�
 
-1. 打开你的文本编辑器。创建一个新的空白文本文档。
-2. 在文本文档中输入以下 HTML：
 
-```html
-<!doctype html>
-<html
-<head>
-  <title>带页眉和页脚的双列布局</title>
-  <link rel="stylesheet" type="text/css" href="final.css">
-</head>
-<body>
-  <div id="container">
-    <div id="header">
-      <h1>This is my site!</h1>
-    </div> <!-- end header -->
-    <div id="menu">
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><A href="#">Services</a></li>
-        <li><a href="#">About Me</a></li>
-        <li><a href="#">Contact Me</a></li>
-      </ul>
-    </div> <!-- end menu -->
-    <div id="mainContainer">
-      <div id="content">
-        <h2>Here's some content</h2>
-        <p>This is where a story would go</p>
-        <h2>Here's more content</h2>
-        <p>This is another story</p>
-      </div> <!-- end content -->
-      <div id="sidebar">
-        <h3>Menu</h3>
-        <ul>
-          <li>Menu item 1</li>
-          <li>Menu item 2</li>
-          <li>Menu item 3</li>
-        </ul>
-      </div> <!-- end sidebar -->
-      <div id="footer">
-        <p>Copyright (c) 2012 Suehring</p>
-      </div> <!-- end footer -->
-    </div> <!-- end mainContainer -->
-  </div> <!-- end container -->
-</body>
-</html>
-```
 
-3. 保存文件。将文件保存为 `final.html` 并存于你的文档根目录下。
-4. 创建一个新的文本文档。创建一个空的文本文档。这个文件应该包含以下 CSS：
 
 ```css
 body {
@@ -3750,11 +6203,8 @@ body {
 ```
 
 5. 保存文件。将文件保存为 `final.css` 并存于你的文档根目录下。
+
 6. 打开你的浏览器，访问 `http://final.html`，你会看到页面如图 2-22 所示。
-
-
-
-
 
 通过 Web 表单（如图 3-1 所示），你可以从用户那里收集信息。
 
@@ -3781,7 +6231,7 @@ Web 表单可以收集任何内容，从姓名、电子邮件地址和消息（�
 
 ## 查看表单元素
 
-通过表单输入的方法有很多，每种方式都有特定的名称或输入类型。前一节中的代码示例包含了两种 `input types`：`text` 类型和 `submit` 类型。`text` 类型创建一个允许用户输入信息的文本框。`submit` 类型创建一个按钮，用户用它将信息发送到服务器。
+通过表单输入的方法有很多，每种方式都有特特定的名称或输入类型。前一节中的代码示例包含了两种 `input types`：`text` 类型和 `submit` 类型。`text` 类型创建一个允用户输入信息的文本框。`submit` 类型创建一个按钮，用户用它将信息发送到服务器。
 
 表单中还有许多其他类型的输入元素，包括以下这些：
 
@@ -3857,9 +6307,6 @@ Web 表单可以收集任何内容，从姓名、电子邮件地址和消息（�
 <input type="text" name="username" value="Username Here">
 ```
 
-
-
-
 将该形式添加到图 3-2 中的表单中，结果将得到一个如图 3-3 所示的表单。注意 `Name` 字段中的值现在是根据 `<input>` 定义中的 `value` 属性设置的。
 
 ![9781118213704-fg020303.eps](img/9781118213704-fg020303_fmt.png)
@@ -3881,7 +6328,7 @@ Web 表单可以收集任何内容，从姓名、电子邮件地址和消息（�
 
 ```html
 <!doctype html>
-<html
+<html>
 <head>
 <title>A Basic Select</title>
 </head>
@@ -4028,10 +6475,6 @@ Web 表单可以收集任何内容，从姓名、电子邮件地址和消息（�
 <html>
 <head>
 ```
-
-
-
-
 
 # 基础表单
 
@@ -4199,17 +6642,22 @@ JavaScript
 ## 内容概览
 
 - 第 1 章：JavaScript 基础
+
 - 展望 JavaScript 世界
+
 - 检查向页面添加 JavaScript 的方法
+
 - 第 2 章：构建 JavaScript 程序
+
 - 开始 JavaScript 编程
+
 - 使用条件语句进行测试
+
 - 使用循环执行多次操作
+
 - 使用函数避免重复代码
+
 - 对象简述
-
-
-
 
 JavaScript 用于 Web 编程，旨在增强或增加用户在使用网页时的体验。本节将介绍 JavaScript 的某些方面，这些内容将帮助你理解这种语言，并打下良好的基础，让你能够让你的网页真正脱颖而出。
 
@@ -4281,7 +6729,7 @@ JavaScript 程序运行在用户的 Web 浏览器中。这既是祝福也是诅�
 
 ![tip.eps](img/tip_fmt.png) 使用外部 JavaScript 文件与使用外部 CSS 文件的原理相同。这样做提高了可重用性并使故障排除变得更简单。
 
-你可以使用 `src` 属性添加外部 JavaScript，如下：
+你可以使用 `src` 属添加外部 JavaScript，如下：
 
 ```html
 <script type="text/javascript" src="externalfile.js"></script>
@@ -4316,13 +6764,14 @@ JavaScript 程序运行在用户的 Web 浏览器中。这既是祝福也是诅�
 ## 本章内容
 
 ![arrow.png](img/arrow.png) 理解 JavaScript 的基础语法
+
 ![arrow.png](img/arrow.png) 实现 JavaScript 函数
+
 ![arrow.png](img/arrow.png) 结合 JavaScript 和 HTML
+
 ![arrow.png](img/arrow.png) 在 浏览器中使用 JavaScript
 
 上一章展示了如何向页面添加 JavaScript 标签，本章侧重于在此之后你可以做什么。理解一种编程语言的关键是学习它的语法。就像当你学习一种外语时需要学习该语言的词汇和语法一样，编程语言的语法就是它：构成语言的词汇和语法。
-
-
 
 在本章中，你将学习如何构建一个 JavaScript 程序，包括 JavaScript 编程中的一些门道。
 
@@ -4435,9 +6884,6 @@ var myVariable = 4;
 
 （注：用户提供的输入文本在后半部分变得高度重复/乱码。我已对提供文本的逻辑流进行了处理，以确保文档结构清晰。）*
 
-
-
-
 你已经看到 JavaScript 变量可以存储数字。你也可以使用 JavaScript 进行数学运算，可以直接对数字进行，也可以通过变量进行。例如，两个数字相加：
 
 ```javascript
@@ -4540,6 +6986,7 @@ if (temperature > 75) {
 按下 Ctrl+R 或 Command+R 在浏览器中重新加载。你应该能看到类似于图 2-5 中的提示框。
 
 ![9781118213704-fg03205.eps](img/9781118213704-fg03205_fmt.png)
+
 **图 2-5:** 进入 else 条件。
 
 点击 OK 关闭提示框。
@@ -4575,7 +7022,7 @@ if (temperature > 75) {
 
 ## for 循环
 
-`for` 循环允许你根据一个指定的次数重复执行代码。它的语法如下：
+`for` 循允许你根据一个指定的次数重复执行代码。它的语法如下：
 
 ```javascript
 for (initialization; condition; increment) {
@@ -4584,7 +7031,9 @@ for (initialization; condition; increment) {
 ```
 
 - **initialization（初始化）**：在循环开始前执行一次。通常用于初始化循环变量。
+
 - **condition（条件）**：在每次循环迭代前进行检查。如果条件为真，则继续循环；如果为假，则循环停止。
+
 - **increment（增量）**：在每次循环迭代结束后执行。通常用于更新循环变量。
 
 例如：
@@ -4640,9 +7089,6 @@ do {
 ```
 
 在这个例子中，即使 `i` 的初始值为 6（条件 `i < 5` 为假），代码仍然会打印一次“数字: 6”。
-
-
-
 
 图 2-7：`for` 循环的结果。
 
@@ -4713,7 +7159,7 @@ while (i < 10) {
 
 JavaScript 包含了许多内置函数。你在整个章节中一直在使用其中一个：`alert()`。`alert()` 函数在浏览器中创建一个对话框。
 
-## 创建函数
+## 创建函函数
 
 使用 `function` 关键字后跟函数名、括号以及左、右大括号来创建函数，如下：
 
@@ -4815,7 +7261,9 @@ function addNumbers(num1,num2) {
 你创建函数 `addNumbers()` 两个参数并并将加它们。但如果你发送了一个非数字数字呢？该函数没有测试这一点，所以它尝试相加加。为了实验这一点，将 `addNumbers` 调用中的 `2` 改为 `"two"`，如下：
 
 ```javascript
+
 addNumbers(4,"two");
+
 ```
 
 当你重新加载页面时，你会看到如 `图 2-10` 中的的警报。
@@ -4827,15 +7275,25 @@ addNumbers(4,"two");
 JavaScript 包含一个函数来测试某个东西是否为数字。该函数名为 `isNaN()`，意为“不是数字”。这可以添加到任何你需要测试在处理某个东西之前确保它是数字的地方，比如 `addNumbers()` 函数的例子。你在 `if` 条件中使用 `isNaN()` 函数，并在如果它不是数字时做出相应的反应。这是更新后的 `addNumbers()` 函数：
 
 ```javascript
+
 function addNumbers(num1,num2) {
+
     if (isNaN(num1)) {
+
         alert(num1 + " is not a number");
+
     } else if (isNaN(num2)) {
+
         alert(num2 + " is not a number");
+
     } else {
+
         alert(num1+num2);
+
     }
+
 }
+
 ```
 
 如果你用两个参数之一作为非数字，你将收到关于它的警报。例如，如果你将数字 `2` 改为 `"two"`，你会收到如 `图 2-11` 所示的警报。
@@ -4859,16 +7317,23 @@ function addNumbers(num1,num2) {
 `return` 关键字用于从函数返回结果。在所示的 `addNumbers()` 函数示例中，你不需要直接在函数内部使用 `alert()`，而是返回结果。这里有一个示例：
 
 ```javascript
+
 function addNumbers(num1,num2) {
+
     var result = num1+num2;
+
     return result;
+
 }
+
 ```
 
 你可以像以前一样调用该函数，但你现在需要捕获结果，通常将其放入另一个变量中，如下：
 
 ```javascript
+
 var myResult = addNumbers(49,2);
+
 ```
 
 [Listing 2-3] 显示了此示例的完整 HTML：
@@ -4876,24 +7341,43 @@ var myResult = addNumbers(49,2);
 Listing 2-3：从函数返回值
 
 ```html
+
 <!doctype html>
+
 <html>
+
 <head>
+
 <title>JavaScript Chapter 2</title>
+
 </head>
+
 <body>
+
 <h1>这里是另一个基础页面</h1>
+
 <script type="text/javascript">
+
     // 定义函数
+
     function addNumbers(num1,num2) {
+
         var result = num1+num2;
+
         return result;
+
     }
+
     // 调用函数
+
     var myResult = addNumbers(49,2);
+
 </script>
+
 </body>
+
 </html>
+
 ```
 
 ![remember.eps](img/remember_fmt.png) 一个函数只允许有一个 return，且 return 语句之后的任何代码都不会被执行。一旦你调用了 return，函数就会结束。
@@ -4907,10 +7391,15 @@ Listing 2-3：从函数返回值
 这是一个球的示例对象：
 
 ```javascript
+
 var ball = {
+
     "color": "white",
+
     "type": "baseball"
+
 };
+
 ```
 
 数组使用方括号创建，而对象使用大括号创建，如示例所示。当你一个对象时，可以定义一个或多个属性（类似于数组中的元素）。在本例中，你创建了两个属性，一个称为 `color`，另一个称为 `type`。值分别被设置为 `white` 和 `baseball`。
@@ -4918,7 +7407,9 @@ var ball = {
 你可以使用单个点来访问对象，如下所示：
 
 ```javascript
+
 ball.color
+
 ```
 
 ![tip.eps](img/tip_fmt.png) 当以此方式使用时，单个点被称为点表示法（dot notation）。
@@ -4928,22 +7419,39 @@ ball.color
 Listing 2-4：创建对象并显示属性
 
 ```html
+
 <!doctype html>
+
 <html>
+
 <head>
+
 <title>JavaScript Chapter 2</title>
+
 </head>
+
 <body>
+
 <h1>这里是另一个基础页面</h1>
+
 <script type="text/javascript">
+
     var ball = {
+
         "color": "white",
+
         "type": "baseball"
+
     };
+
     alert(ball.color);
+
 </script>
+
 </body>
+
 </html>
+
 ```
 
 在浏览器中查看时，你会得到一个类似于[Figure 2-12]所示的警报。
@@ -4957,31 +7465,53 @@ Listing 2-4：创建对象并显示属性
 有时你想在对象创建后向它们添加属性。这也可以点表示法完成，如下所示：
 
 ```javascript
+
 ball.weight = 15;
+
 ```
 
 这是一个练习题，用于创建一个对象，向其添加内容，然后使用一种新的循环构造对其进行遍历。首先用文本编辑器打开一个新或空白文档。在文本编辑器中，放置以下 HTML 和 JavaScript：
 
 ```html
+
 <!doctype html>
+
 <html>
+
 <head>
+
 <title>JavaScript Chapter 2</title>
+
 </head>
+
 <body>
+
 <h1>这里是另一个基础页面</h1>
+
 <script type="text/javascript">
+
     var ball = {
+
         "color": "white",
+
         "type": "baseball"
+
     };
+
     ball.weight = 15;
+
     for (var prop in ball) {
+
         alert(ball[prop]);
+
     }
+
 </script>
+
 </body>
+
 </html>
+
 ```
 
 将其保存为文档根目录下的 `obj.html`。在浏览器中访问 `http://localhost/obj.html` 查看该页面。你应该看到三个警报，类似于[Figure 2-13]中的警报。
@@ -5011,20 +7541,35 @@ ball.weight = 15;
 Listing 2-5：演示 DOM 的基础 HTML
 
 ```html
+
 <!doctype html>
+
 <html>
+
 <head>
+
 <title>JavaScript Chapter 2</title>
+
 </head>
+
 <body>
+
 <div id="myDiv">Hello</div>
+
 <div class="divClass">Second Line</div>
+
 <div class="divClass">
+
     <p class="pClass">This is in a paragraph.</p>
+
 </div>
+
 <div class="divClass">Last Line</div>
+
 </body>
+
 </html>
+
 ```
 
 该 HTML 在浏览器中查看时，会创建一个类似于[Figure 2-14]所示的页面。
@@ -5041,23 +7586,41 @@ Listing 2-5：演示 DOM 的基础 HTML
 2. 在文本编辑器中，放置以下 HTML 和 JavaScript：
 
 ```javascript
+
 <!doctype html>
+
 <html>
+
 <head>
+
 <title>JavaScript Chapter 2</title>
+
 </head>
+
 <body>
+
 <div id="myDiv">Hello</div>
+
 <div class="divClass">Second Line</div>
+
 <div class="divClass">
+
     <p class="pClass">This is in a paragraph.</p>
+
 </div>
+
 <div class="divClass">Last Line</div>
+
 <script type="text/javascript">
+
     var theDiv = document.getElementById("myDiv");
+
 </script>
+
 </body>
+
 </html>
+
 ```
 
 
@@ -5065,7 +7628,9 @@ Listing 2-5：演示 DOM 的基础 HTML
 
 
 ```javascript
+
 alert("The content is " + theDiv.innerHTML);
+
 ```
 
 </script>
@@ -5091,18 +7656,27 @@ alert("The content is " + theDiv.innerHTML);
 6. 回到编辑器中的 `getbyid.html`，删除以 `alert(` 开头的 JavaScript 行。将该行替换为以下两行：
 
 ```javascript
+
 theDiv.style.border = "3px solid black";
+
 theDiv.innerHTML = "This is now changed text.";
+
 ```
 
 整个脚本块现在应该像这样：
 
 ```html
+
 <script type="text/javascript">
+
     var theDiv = document.getElementById("myDiv");
+
     theDiv.style.border = "3px solid black";
+
     theDiv.innerHTML = "This is now changed text.";
+
 </script>
+
 ```
 
 在浏览器中查看时，页面现在看起来像图 2-16 所示。请特别注意，第一行的文本已经更改，并且现在有了边框。
@@ -5140,22 +7714,39 @@ theDiv.innerHTML = "This is now changed text.";
 代码列表 2-6：显示用户代理
 
 ```html
+
 <!doctype html>
+
 <html>
+
 <head>
+
 <title>第 2 章</title>
+
 </head>
+
 <body>
+
 <div id="output"></div>
+
 <script type="text/javascript">
+
     var outputDiv = document.getElementById("output");
+
     outputDiv.style.border = "3px solid black";
+
     outputDiv.style.padding = "3px";
+
     var userAgent = navigator.userAgent;
+
     outputDiv.innerHTML = "You are using " + userAgent;
+
 </script>
+
 </body>
+
 </html>
+
 ```
 
 在浏览器中查看时，输出结果如图 2-17 所示。
@@ -5202,7 +7793,9 @@ jQuery 的 CDN 托管选项非常适合开发。你不需要担心下载文件�
 向页面添加 jQuery 意味着添加外部脚本引用，如下：
 
 ```html
+
 <script type="text/javascript" src="jquery-1.8.1-min.js"></script>
+
 ```
 
 该引用通常被添加到页面的 `<head>` 部分。列表 3-1 显示了一个在 `<head>` 部分引用了 jQuery 脚本的页面。
@@ -5210,17 +7803,29 @@ jQuery 的 CDN 托管选项非常适合开发。你不需要担心下载文件�
 列表 3-1：将 jQuery 添加到页面
 
 ```html
+
 <!doctype html>
+
 <html>
+
 <head>
+
   <title>jQuery</title>
+
   <script type="text/javascript"
+
       src="jquery-1.8.1.min.js"></script>
+
 </head>
+
 <body>
+
   <h1>Adding jQuery</h1>
+
 </body>
+
 </html>
+
 ```
 
 添加 jQuery 的全部操作就是这样。在本章的后面，你将了解到在加载完成后现在该做什么。
@@ -5234,9 +7839,13 @@ jQuery 的 CDN 托管选项非常适合开发。你不需要担心下载文件�
 
 
 ```javascript
+
 $(document).ready(function() {
+
     alert("hi");
+
 });
+
 ```
 `</script>`
 </body>
@@ -5251,9 +7860,13 @@ $(document).ready(function() {
 这段代码有两个关注点。第一个是 `<script>` 元素本身：
 
 ```html
+
 <script type="text/javascript"
+
     src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.1.min.js">
+
 </script>
+
 ```
 
 这把来自 Microsoft CDN 的 jQuery 引入了页面。
@@ -5261,12 +7874,18 @@ $(document).ready(function() {
 另一个关注点位于 `<body>` 内部，具体来说是 `<body>` 内部的 `<script>`：
 
 ```html
+
 <script type="text/javascript">
+
     $(document).ready(function() {
+
         alert("hi");
+
     });
+
 </script>
-```
+
+
 
 这段代码调用了 jQuery 的 `ready()` 函数，它是文档对象的一部分。注意这个带有美元符号和括号的特殊语法。这告诉浏览器和 JavaScript 之后的内容将是 jQuery，因此处理权将交给 jQuery。因为 jQuery 有一个名为 `ready()` 的函数，所以它知道该做什么。
 
@@ -5275,9 +7894,13 @@ $(document).ready(function() {
 在 jQuery 的 `ready()` 函数内部有这样这段代码：
 
 ```javascript
+
 function() {
+
     alert("hi");
+
 }
+
 ```
 
 你已经对函数非常熟悉了，所以这没什么新奇的。又不然呢？如果这是一个函数，那么函数名在哪里？对于大多数 jQuery 的用法，你会看到与此处看到的相似的语法，即一个像这样没有名字的函数，以及其内部的代码。
@@ -5308,7 +7931,9 @@ jQuery 中三种主要的或基础选择器。我们称它们为主要或基础�
 如果你有类似这样的 HTML：
 
 ```html
+
 <p id="bookTitle">My Book</p>
+
 ```
 
 你可以这样用 jQuery 访问它：
@@ -5320,7 +7945,9 @@ jQuery 中三种主要的或基础选择器。我们称它们为主要或基础�
 现在看这段 HTML：
 
 ```html
+
 <p class="titleClass">This is some text</p>
+
 ```
 
 jQuery 选择器看起来如下：
@@ -5337,8 +7964,11 @@ jQuery 选择器看起来如下：
 你为 jQuery 所做的只是将其封装在 `$()` 结构中，并使用一些引号。
 
 ```javascript
+
 $("#bookTitle")
+
 $(".titleClass")
+
 ```
 
 下面的选择器选择所有的 `div` 元素：
@@ -5349,22 +7979,36 @@ $(".titleClass")
 
 
 
-
 ```html
+
 </head>
+
 <body>
+
 <h1>添加 HTML</h1>
+
 <ul id="theList">
+
     <li>这里是 1</li>
+
     <li>这里是 2</li>
+
 </ul>
+
 <script type="text/javascript">
+
 $(document).ready(function() {
+
     $("#theList").append("<li>这里是 3</li>");
+
 });
+
 </script>
+
 </body>
+
 </html>
+
 ```
 
 在浏览器中查看时，结果如图 3-3 所示。
@@ -5392,31 +8036,57 @@ $(document).ready(function() {
 代码列表 3-6：使用 `each()` 更改文本
 
 ```html
+
 <!doctype html>
+
 <html>
+
 <head>
+
 <title>jQuery</title>
+
 <script type="text/javascript"
+
     src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.1.min.js">
+
 </script>
+
 </head>
+
 <body>
+
 <h1>添加 HTML</h1>
+
 <ul id="theList">
+
     <li>这里是 1</li>
+
     <li>这里是 2</li>
+
 </ul>
+
 <script type="text/javascript">
+
 $(document).ready(function() {
+
     $("#theList").append("<li>这里是 3</li>");
+
     $("#theList li").each(function() {
+
         var existingText = $(this).text().substr(7,1);
+
         $(this).text("Item " + existingText);
+
     });
+
 });
+
 </script>
+
 </body>
+
 </html>
+
 ```
 
 这里的 JavaScript 和 jQuery 显示了几个新花点，所以请仔细观察代码。
@@ -5424,7 +8094,9 @@ $(document).ready(function() {
 新代码的第一行是这样的：
 
 ```javascript
+
 $("#theList li").each(function() {
+
 ```
 
 该行使用选择器找到 ID 为 `theList` 内部所有的 `<li>` 元素。这与你在章节中看到的其他选择器略有不同，代表了 jQuery 如何利用页面的层级结构来访问你需要的项。
@@ -5434,7 +8106,9 @@ $("#theList li").each(function() {
 下一行代码如下：
 
 ```javascript
+
 var existingText = $(this).text().substr(7,1);
+
 ```
 
 这段代码设置了一个普通的 JavaScript 变量 `existingText`，并将其赋值为 `$(this).text().substr(7,1)` 的结果。但这是什么，或者更准确地说，`$(this)`？特殊选择器 `$(this)` 指向当前处理的元素。JavaScript 有一个等价物 `this`，但你想要 jQuery 版本，所以你将其封装在美元符号/括号中。
@@ -5446,13 +8120,17 @@ var existingText = $(this).text().substr(7,1);
 从左侧数字符，`Here's` 有六个字符，加上一个空格字符。总共七个，所以你得到了 `substr(7,1)`。诚然，当你处理到十个项时这会失效，因为你只返回了单字符。你可以使用正则表达式来让它高级化，你还没有真正花时间研究它，所以对于这个示例，保持原样即可。好吧，如果你非要知道，你可以用 `match()` 函数替换 `substr()` 函数，它看起来会像这样：
 
 ```javascript
+
 var existingText = $(this).text().match(/[\d]/);
+
 ```
 
 回到现实和示例，最后一行代码如下：
 
 ```javascript
+
 $(this).text("Item " + existingText);
+
 ```
 
 该行简单的调用了 `text()` 函数，但这次你不是返回文本，而是将其设置为 `"Item " + existingText`。
@@ -5461,7 +8139,7 @@ $(this).text("Item " + existingText);
 
 在浏览器中查看的页面如图 3-4 所示。
 
-![9781118213704-fg030304.eps](img/9781118213704-fg0303_fmt.png)
+![9781118213704-fg030304.eps](img/9781118213704-fg030304_fmt.png)
 
 **图 3-4：** 修改网页中的文本。
 
@@ -5477,35 +8155,56 @@ jQuery 让获取和设置 HTML 属性变得简单。这意味着你可以更改�
 
 你在 `<a>` 元素中看到的 `id`、`class` 和 `href` 部分都是属性。使用 jQuery 可以获取所有属性的值，正如后面所示，也可以设置它们。
 
-使用 jQuery 读取属性意味着使用 `attr()` 函数。代码列表 3-7 显示了使用 `attr` 读取 `href` 属性的代码。
+使用 jQuery 读取属性意味着使用 `attr()` 函数。代码列表 3-7 显示了使用 `attr()` 函数读取 `href` 属性的代码。
 
 代码列表 3-7：使用 `attr()` 函数
 
 ```html
+
 <!doctype html>
+
 <html>
+
 <head>
+
 <title>jQuery</title>
+
 <script type="text/javascript"
+
     src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.1.min.js">
+
 </script>
+
 </head>
+
 <body>
+
 <h1>属性</h1>
+
 <a id="exLink" class="link" href="http://www.example.com">网站</a>
+
 <script type="text/javascript">
+
 $(document).ready(function() {
+
     alert($("#exLink").attr("href"));
+
 });
+
 </script>
+
 </body>
+
 </html>
+
 ```
 
 大部分工作在一行中完成：
 
 ```javascript
+
 alert($("#exLink").attr("href"));
+
 ```
 
 ## 属性
@@ -5513,9 +8212,10 @@ alert($("#exLink").attr("href"));
 就像 `text()` 和 `html()` 函数一样，你也可以使用 `attr()` 函数设置属性的值。例如，为了更改代码列表 3-7 代码中 `href` 属性的值，你可以这样做：
 
 ```javascript
-$("#exLink").attr("href", "http://www.braingia.org");
-```
 
+$("#exLink").attr("href", "http://www.braingia.org");
+
+```
 
 
 
@@ -5524,16 +8224,27 @@ $("#exLink").attr("href", "http://www.braingia.org");
 ### 列表 3-8：带有图片的页面
 
 ```html
+
 <!doctype html>
+
 <html>
+
 <head>
+
 <title>jQuery</title>
+
 </head>
+
 <body>
+
 <h1>Attributes</h1>
+
 <img alt="square" id="theImage" src="square.jpg" />
+
 </body>
+
 </html>
+
 ```
 
 在浏览器中查看时，该页面看起来所示 图 3-6。
@@ -5547,24 +8258,43 @@ $("#exLink").attr("href", "http://www.braingia.org");
 ### 列表 3-9：更改图片的源
 
 ```html
+
 <!doctype html>
+
 <html>
+
 <head>
+
 <title>jQuery</title>
+
 <script type="text/javascript"
+
     src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.1.min.js">
+
 </script>
+
 </head>
+
 <body>
+
 <h1>Attributes</h1>
+
 <img alt="square" id="theImage" src="square.jpg" />
+
 <script type="text/javascript">
+
 $(document).ready(function() {
+
     $("#theImage").attr("src","heart.jpg");
+
 });
+
 </script>
+
 </body>
+
 </html>
+
 ```
 
 图 3-7 显示了结果。
@@ -5576,7 +8306,9 @@ $(document).ready(function() {
 仔细观察 HTML，你会发现一个问题。你成功更改了 `src` 属性，但 `alt` 属性仍然显示图片是一个正方形。你应该更改 `alt` 属性以与图片匹配。这样做非常简单，再次调用 `attr()` 即可，这次是设置 `alt` 属性。
 
 ```javascript
+
 $("#theImage").attr("alt","heart");
+
 ```
 
 由于你看不见变化，列表 3-9 中的代码可能看起来并不有趣。做些什么改变它。添加一个定时器来延迟切换。对于这个定时器，使用原生的 JavaScript 函数 `setTimeout`。
@@ -5588,32 +8320,54 @@ $("#theImage").attr("alt","heart");
 ### 列表 3-10：延迟更改图片
 
 ```html
+
 <!doctype html>
+
 <html>
+
 <head>
+
 <title>jQuery</title>
+
 <script type="text/javascript"
+
     src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.1.min.js">
+
 </script>
+
 </head>
+
 <body>
+
 <h1>Attributes</h1>
+
 <img alt="square" id="theImage" src="square.jpg" />
+
 <script type="text/javascript">
+
 function changeImage() {
+
     $("#theImage").attr("src","heart.jpg");
+
     $("#theImage").attr("alt","heart");
+
 }
+
 $(document).ready(function() {
+
     setTimeout(changeImage,2000);
+
 });
+
 </script>
+
 </body>
+
 </html>
+
 ```
 
 这段代码构建了一个名为 `changeImage()` 的函数。该函数内部包含了你在上一个示例中使用的 jQuery 代码（列表 3-9）。在 `ready()` 函数内部，现在有一个对 `setTimeout` 的调用，带有我们已经提到的两个函数参数：`changeImage` 函数和 `2000`（用于 2 秒的延迟）。当你在浏览器中查看此内容时，首先接收到一个类似于 图 3-6 的页面，然后在两秒后收到一个类似于它的页面。
-
 
 
 
@@ -5624,7 +8378,7 @@ $(document).ready(function() {
 通常情况下，你将关注四种类型的事件：
 
 -   ![check](img/check.png) **表单事件**：包括选择勾选框或提交表单本身等操作。对表单事件做出反应是 JavaScript 程序员最常见的操作之一。
--   ![check](img/check.png) **鼠标事件**：可以是从鼠标点击到页面上的鼠标移动任何任何。没错，你实际上可以跟踪鼠标在页面上的位置并对其反应。
+-   ![check](img/check.png) **鼠标事件**：可以是从鼠标点击到页面上的鼠标移动任何任何。没错，你实际上可以跟踪鼠在页面上的位置并对其反应。
 -   ![check](img/check.png) **键盘事件**：通过键盘发生的事件（如按键）被视为键盘事件。
 -   ![check](img/check.png) **页面事件**：如页面加载或卸载等事件被视为页面事件。你会高兴地知道，你已经通过 jQuery 的 `ready()` 函数对页面加载事件做出反应了。
 
@@ -5643,53 +8397,101 @@ jQuery 包含一个函数，可以自动监听表单的提交。
 ### 列表 4-1：一个简单表单
 
 ```html
+
 <!doctype html>
+
 <html
+
 <head>
+
 <title>A Basic Form</title>
+
 <script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.1.min.js"></script>
+
 <style type="text/css">
+
 .form-field {
+
     clear: both;
+
     padding: 10px;  
+
     width: 350px;
+
 }
+
 .form-field label {
+
     float: left;
+
     width: 150px;
+
     text-align: right;
+
 }
+
 .form-field input {
+
     float: right;
+
     width: 150px;
+
     text-align: left;
+
 }
+
 #submit {
+
     text-align: center;
+
 }
+
 </style>
+
 </head>
+
 <body>
+
 <h1>A Basic Form</h1>
+
 <hr>
+
 <form action="#">
+
 <fieldset>
+
     <legend>Form Information</legend>
+
     <div class="form-field">
+
         <label for="username">Name:</label>
+
         <input type="text" id="username" name="username">
+
     </div>
+
     <div class="form-field">
+
         <label for="email">E-mail Address:</label>
+
         <input type="text" id="username" name="email">
+
     </div>
+
     <div class="form-field">
+
         <input id="submit" type="submit" name="submit" value="Send Form">
+
     </div>
+
 </fieldset>
+
 </form>
+
 </body>
+
 </html>
+
 ```
 
 在浏览器中查看页面看起来所示 图 4-1。![9781118213704-fg030401](img/9781118213704-fg030401) **图 4-1：** 一个基础表单。
@@ -5700,53 +8502,101 @@ jQuery 包含一个函数，可以自动监听表单的提交。
 2. 在编辑器中，放置以下代码：
 
 ```html
+
 <!doctype html>
+
 <html>
+
 <head>
+
 <title>A Basic Form</title>
+
 <script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jQuery-1.8.1.min.js"></script>
+
 <style type="text/css">
+
 .form-field {
+
     clear: both;
+
     padding: 10px;  
+
     width: 350px;
+
 }
+
 .form-field label {
+
     float: left;
+
     width: 150px;
+
     text-align: right;
+
 }
+
 .form-field input {
+
     float: right;
+
     width: 150px;
+
     text-align: left;
+
 }
+
 #submit {
+
     text-align: center;
+
 }
+
 </style>
+
 </head>
+
 <body>
+
 <h1>A Basic Form</h1>
+
 <hr>
+
 <form action="#">
+
 <fieldset>
+
     <legend>Form Information</legend>
+
     <div class="form-field">
+
         <label for="username">Name:</label>
+
         <input type="text" id="username" name="username">
+
     </div>
+
     <div class="form-field">
+
         <label for="email">E-mail Address:</label>
+
         <input type="text" id="username" name="email">
+
     </div>
+
     <div class="form-field">
+
         <input id="submit" type="submit" name="submit" value="Send Form">
+
     </div>
+
 </fieldset>
+
 </form>
+
 </body>
+
 </html>
+
 ```
 
 3. 将文件保存为 `form1.html`。
@@ -5754,14 +8604,23 @@ jQuery 包含一个函数，可以自动监听表单的提交。
 5. 在 `</form>` 标签之后、`</body>` 标签之前添加以下代码：
 
 ```javascript
+
 <script type="text/javascript">
+
 $(document).ready(function() {
+
     $("form").submit(function() {
+
         alert("You submitted the form");
+
         return false;
+
     });
+
 });
+
 </script>
+
 ```
 
 6. 再次保存为 `form1.html`。
@@ -5778,15 +8637,25 @@ $(document).ready(function() {
 代码如下：
 
 ```javascript
+
 $(document).ready(function() {
+
     $("form").submit(function(event) {
+
         if ($("#username").val() == "") {
+
             alert("Name can't be blank");
+
             event.preventDefault();
+
             return false;
+
         }
+
     });
+
 });
+
 ```
 
 你可以通过将之前示例中的 JavaScript 替换为这段代码来尝试。如果你尝试在不给 Name 字段填写任何内容的情况下提交表单，将收到类似图 4-3 所示的提示。
@@ -5818,76 +8687,147 @@ $(document).ready(function() {
 ### 列表 4-2：创建一个自定义表单
 
 ```html
+
 <!doctype html>
+
 <html>
+
 <head>
+
 <title>A Basic Form</title>
+
 <script type="text/javascript"
+
     src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.1.min.js">
+
 </script>
+
 <style type="text/css">
+
 .form-field {
+
     clear: both;
+
     padding: 10px;
+
     width: 350px;
+
 }
+
 .form-field label {
+
     float: left;
+
     width: 150px;
+
     text-align: right;
+
 }
+
 .form-field input {
+
     float: right;
+
     width: 50px;
+
     text-align: left;
+
 }
+
 #submit {
+
     text-align: center;
+
 }
+
 </style>
+
 </head>
+
 <body>
+
 <h1>A Form</h1>
+
 <hr>
+
 <form action="#">
+
 <fieldset>
+
 <legend>Car Trim and Package</legend>
+
 <div class="form-field">
+
     <div>Package:</div>
+
     <input id="plain" name="trim" value="plain">
+
     <label for="plain">Plain</label>
+
     <input id="deluxe" name="trim" value="deluxe">
+
     <label for="deluxe">Deluxe</label>
+
     <input id="custom" name="trim" value="custom">
+
     <label for="custom">Custom</label>
+
 </div>
+
 <div class="form-field">
+
     <div>Extra Options:</div>
+
     <input type="checkbox" id="foglights" name="option" value="foglights">
+
     <label for="foglights">Fog Lights</label>
+
     <input type="checkbox" id="leather" name="option" value="leather">
+
     <label for="leather">Leather</label>
+
     <input type="checkbox" id="dvd" name="option" value="dvd">
+
     <label for="dvd">DVD</label>
+
 </div>
+
 <div class="form-field">
+
     <input id="submit" type="submit" name="submit" value="Send Form">
+
 </div>
+
 </fieldset>
+
 </form>
+
 <script type="text/javascript">
+
 $(document).ready(function() {
+
     $("input[name='trim']").click(function(event) {
+
         if ($(this).val() == "deluxe") {
+
             $("input[name='option']").attr("checked", true);
+
         } else if ($(this).val() == "plain") {
+
             $("input[name='option']").attr("checked", false);
+
         }
+
     });
+
 });
+
 </script>
+
 </body>
+
 </html>
+
 ```
 
 
@@ -5908,36 +8848,67 @@ $(document).ready(function() {
 ### 列表 4-3：在 HTML 中创建三个框框
 
 ```html
+
 <!doctype html>
+
 <html>
+
 <head>
+
 <title>Hover</title>
+
 <script type="text/javascript"
+
     src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.1.min.js">
+
 </script>
+
 <style type="text/css">
+
 .box {
+
     margin: 50px;
+
     padding: 30px;
+
     width: 50px;
+
     border: 3px solid black;
+
 }
+
 .colorBox {
+
     background-color: #abacab;
+
 }
+
 </style>
+
 </head>
+
 <body>
+
 <h1>Hover</h1>
+
 <hr>
+
 <br />
+
 <br />
+
 <br />
+
 <span class="box">Box 1</span>
+
 <span class="box">Box 2</span>
+
 <span class="box">Box 3</span>
+
 </body>
+
 </html>
+
 ```
 
 在浏览器中查看页面将类似于图 4-5 所示。
@@ -5946,45 +8917,72 @@ $(document).ready(function() {
 
 **图 4-5：** 悬停效果的 HTML。
 
-对于悬停效果，你添加 JavaScript 使得当鼠标悬停在框框上时，背景颜色会改变。
+对于悬停效果，你添加 JavaScript 使得当鼠悬停在框框上时，背景颜色会改变。
 
 为了创建这种效果，在页面中使用了以下 JavaScript，位于通常的闭合标签 `</body>` 标签上方。
 
 ```javascript
+
 <script type="text/javascript">
+
 $(document).ready(function() {
+
     $(".box").hover(
+
         // 鼠标移入
+
         function() {
+
             $(this).addClass("colorBox");
+
         },
+
         // 鼠标移出
+
         function() {
+
             $(this).removeClass("colorBox");
+
         }
+
     );
+
 });
+
 </script>
+
 ```
 
 这段代码像往常一样将所有内容放在 jQuery 的 `ready()` 函数中。接下来，所有类名为 `"box"` 的项目被选中，并对它们链式 `hover()` 函数：
 
 ```javascript
+
 $(".box").hover(
+
 ```
 
 `hover()` 函数接受两个参数：当悬停生效时做什么，以及当悬停结束时做什么。因此，这两个函数都被创建了。第一个函数添加了一个名为 `"colorBox"` 的类，这仅仅是将背景颜色更改为灰色；该类的 CSS 写在列表 4-3 中。第二个函数在鼠标移出所选元素时应用，它会移除 `"colorBox"` 类，如下所示。
 
 ```javascript
+
         // 鼠标移入
+
         function() {
+
             $(this).addClass("colorBox");
+
         },
+
         // 鼠标移出
+
     function() {
+
         $(this).removeClass("colorBox");
+
     }
+
 );
+
 ```
 
 当鼠标悬停在元素 2 上时的结果如图 4-6 所示。框框变成了灰色（`#abacab`）。
@@ -6004,23 +9002,41 @@ $(".box").hover(
 #### 列表 4-4：创建一个 HTML textarea
 
 ```html
+
 <!doctype html>
+
 <html>
+
 <head>
+
 <title>Hover</title>
+
 <script type="text/javascript"
+
     src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.1.min.js">
+
 </script>
+
 </head>
+
 <body>
+
 <h1>keyup</h1>
+
 <hr>
+
 <form action="#">
+
 <textarea rows="10" cols="20" id="message" name="message"></textarea>
+
 <p>剩余字符数：<span id="remaining">50</span></p>
+
 </form>
+
 </body>
+
 </html>
+
 ```
 
 在浏览器中查看的页面类似于图 4-7。
@@ -6032,16 +9048,27 @@ $(".box").hover(
 添加 JavaScript 来计数字符如下所示：
 
 ```javascript
+
 <script type="text/javascript">
+
 $(document).ready(function() {
+
     var maxCharacters = 50;
+
     $("#message").on("keyup",function() {
+
         var currentVal = $("#message").val().length;
+
         var totalRemaining = maxCharacters - currentVal;
+
         $("#remaining").text(totalRemaining);
+
     });
+
 });
+
 </script>
+
 ```
 
 这段 JavaScript 首先设置了最大字符数的变量 `50`。然后选择了 ID 为 `"message"` 的元素。在该元素上绑定了一个事件处理程序。`on()` 函数的第一个参数是要监听的事件名称。在本例中，你想监听 `"keyup"` 事件，以便知道按键何时被释放。
@@ -6049,21 +9076,27 @@ $(document).ready(function() {
 一旦 `keyup` 事件触发，你做的第一件事是统计文本框中的字符数。这通过此行代码实现：
 
 ```javascript
+
 var currentVal = $("#message").val().length;
+
 ```
 
-现在你知道了允许的最大字符数 `50`，以及字段中当前的字符数。接下来是：数学运算。
+现在你知道了允的最大字符数 `50`，以及字段中当前的字符数。接下来是：数学运算。
 
 你需要从变量 `maxCharacters` 中的允许字符数减去变量 `currentVal` 中的当前字符数。结果将存储在一个名为 `totalRemaining` 的新变量中。
 
 ```javascript
+
 var totalRemaining = maxCharacters - currentVal;
+
 ```
 
 最后是将该值放入显示剩余字符的 `<span>` 元素中：
 
 ```javascript
+
 $("#remaining").text(totalRemaining);
+
 ```
 
 现在你在 textarea 中打字时，剩余字符数就会倒计时。图 4-8 显示了一个示例。
@@ -6082,7 +9115,7 @@ $("#remaining").text(totalRemaining);
 
 
 
-![remember.eps](img/remember_fmt.png) 因为你最终还是会检查 PHP 程序中的字符数，即使用户超过了最大允许限制，也不会是末日。你也可以防止用户提交表单。我们将在第六卷中告诉如何实现这些操作。
+![remember.eps](img/remember_fmt.png) 因为你最终还是会检查 PHP 程中的字符数，即使用户超过了最大允许限制，也不会是末日。你也可以防止用户提交表单。我们将在第六卷中告诉如何实现这些操作。
 
 ## 防止字符输入
 
@@ -6093,31 +9126,57 @@ Listing 4-5 显示了此类页面的 HTML 代码段。
 ### 列表 4-5：收货信息页
 
 ```html
+
 <!doctype html>
+
 <html>
+
 <head>
+
 <title>Prevent</title>
+
 <script type="text/javascript"
+
   src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.1.min.js">
+
 </script>
+
 </head>
+
 <body>
+
 <h1>Shopping Info</h1>
+
 <hr>
+
 <form action="#">
+
 Billing Address same as Shipping Address:
+
 <input type="checkbox" name="billingAddress" id="billingAddress">
+
 <br />
+
 <br />
+
 Street Address:
+
 <input class="baddr" type="text" name="street" id="street">
+
 <br />
+
 <br />
+
 City:
+
 <input class="baddr" type="text" name="city" id="city">
+
 </form>
+
 </body>
+
 </html>
+
 ```
 
 在浏览器中查看页面时如 图 4-10 所示。
@@ -6131,16 +9190,27 @@ City:
 添加 JavaScript 来禁用这些文本框的代码如下：
 
 ```javascript
+
 $(document).ready(function() {
+
     $("#billingAddress").click(function() {
+
         if ($("#billingAddress").attr("checked") == "checked") {
+
         $(".baddr").val("");
+
         $(".baddr").attr("disabled","disabled");
+
       } else if ($("#billingAddress").attr("checked") == undefined) {
+
         $(".baddr").removeAttr("disabled");
+
       }
+
     });
+
 });
+
 ```
 
 当然，代码从 `ready()` 函数开始。之后，为复选框添加了一个 `click` 事件处理程序。如果勾选了 `billingAddress` 复选框，表单字段的值将被清空，这些表单字段将被禁用。如果没有勾选 `billingAddress` 复选框，则得助于 `removeAttr()` 函数移除 `disabled` 属性。
@@ -6173,13 +9243,21 @@ $(document).ready(function() {
 如果你想注释掉多行或创建一个多行注释，可以使用单个斜杠配合一个星号来开启注释块，然后用一个星号和单个斜杠来结束注释块。它们之间的任何内容都将被忽略。这里有一个示例：
 
 ```javascript
+
 /*
+
 此区域内的所有内容都是注释，将被忽略。
+
 这包括像这样的普通行，也包括代码行，例如：
+
 if (myVariable = "something") {
+
    return false;
+
 }
+
 */
+
 ```
 
 在那个示例中，所有的代码都将被忽略，因为它们出现在注释块中。
@@ -6187,21 +9265,33 @@ if (myVariable = "something") {
 ![remember.eps](img/remember_fmt.png) 注意，在使用多行注释时的一点点是你不能嵌套它们。例如，这种写法是无效的：
 
 ```javascript
+
 /*
+
 另一个多行注释
+
 /*  注释内部的注释 */
+
 结束注释
+
 */
+
 ```
 
 一旦 JavaScript 解释器遇到结束代码 `*/`，它就会认为注释已经结束，因此它将不知道如何处理接到的下一个 `*/`。你仍然可以使用双斜杠结构，如下所示：
 
 ```javascript
+
 /*
+
 另一个多行注释
+
 // 注释内部的注释
+
 结束注释
+
 */
+
 ```
 
 ![warning_bomb.eps](img/warning_bomb_fmt.png) 任何查看你网页源代码的人都能看到 JavaScript，因此请小心你在注释中显示的内容。在代码注释中放置敏感（或攻击性）信息会给你带来麻烦！
@@ -6264,7 +9354,9 @@ if (myVariable = "something") {
 如果你在使用 Firebug 或 Chrome 浏览器，还可以利用另一种名为 `console.log` 的故障排除方法。使用 `console.log`，你调试的结果将显示在开发者工具的 `Console` 标签页中。`console.log` 的用法类似于 alert：
 
 ```javascript
+
 console.log("hello world");
+
 ```
 
 花些时间研究 Firebug 以了解它的用途以及它如何帮助你的 JavaScript 编程。一旦你熟悉了这个工具，它将对你变得不可或缺！
@@ -6349,7 +9441,7 @@ PHP 是一种专门为 Web 设计的脚本语言。它具有许多功能，可�
 虽然这一章很长，但你已经通过上一本迷你书对 JavaScript 的回顾接触过编程。本章从基础开始，逐渐过渡到复杂的材料。即使你之前对 PHP 有一些经验，从头开始学习也是个好主意。
 
 PHP 如何工作
-PHP 软件与 Web 服务器协作，Web 服务器是向世界传递页面的软件。当你向 Web 浏览器的地址栏输入 URL 时，你正在向该 URL 的 Web 服务器发送消息，请求它向你发送 HTML 文件。Web 服务器通过发送请求的文件来响应。你的浏览器读取 HTML 文件并显示网页。当你点击网页上的链接时，也会向 Web 服务器请求文件。此外，当你点击提交表单的网页按钮时，Web 服务器会处理文件。当安装 PHP 后，这个过程本质上是相同的。你请求一个文件， Web 服务器恰好正在运行 PHP，由于 PHP 的编程支持，它将 HTML 返回给浏览器。
+PHP 软件与 Web 服务器协作，Web 服务器是向世界传递页面的软件。当你向 Web 浏览器的地址栏输入 URL 时，你正在向该 URL 的 Web 服务器发送消息，请求它向你发送 HTML 文件。Web 服务器通过发送请的文件来响应。你的浏览器读取 HTML 文件并显示网页。当你点击网页上的链接时，也会向 Web 服务器请求文件。此外，当你点击提交表单的网页按钮时，Web 服务器会处理文件。当安装 PHP 后，这个过程本质上是相同的。你请求一个文件， Web 服务器恰好正在运行 PHP，由于 PHP 的编程支持，它将 HTML 返回给浏览器。
 
 Web 服务器如何处理 PHP 文件
 当浏览器指向一个扩展名为 `.html` 或 `.htm` 的普通 HTML 文件时，Web 服务器会将文件原样发送给浏览器。浏览器处理该文件并显示由 HTML 标签描述的网页。当浏览器指向一个 PHP 文件（扩展名为 `.php`）时，Web 服务器会在文件中查找 PHP 部分并对其进行处理，或者更准确地说，将它们交给 PHP 处理器，而不是原样发送给浏览器。Web 服务器/PHP 处理器处理 PHP 文件的方式：
@@ -6365,13 +9457,17 @@ Web 服务器如何处理 PHP 文件
 当处理语言语句时，Web 服务器仅向浏览器发送输出或任何打印到屏幕上的内容。PHP 语句（即不产生屏幕输出的语句）不会包含在发送给浏览器的输出中，因此用户通常看不到代码。例如，在这个简单的 PHP 语句中：
 
 ```php
+
 <?php echo "<p>Hello World</p>"; ?>
+
 ```
 
 在这里，`echo` 是一个 PHP 指令，告诉 PHP 输出后续文本。PHP 软件处理该 PHP 语句并输出以下内容：
 
 ```html
+
 <p>Hello World</p>
+
 ```
 
 该普通的 HTML 语句被传递给用户的浏览器。浏览器将该语句解释为 HTML 代码并显示一个带段落——Hello World 的网页。PHP 语句没有传递给浏览器，因此用户永远看不到任何 PHP 语句。
@@ -6387,12 +9483,14 @@ PHP 和 Web 服务器必须协同工作。
 
 PHP 在用于网页时是一种嵌入式脚本 语言。这意味着 PHP 代码被嵌入在 HTML 代码中。你使用 HTML 标签来包裹嵌入到 HTML 文件中的 PHP 语言——就像你使用其他 HTML 标签一样。你创建和编辑包含 PHP 的网页的方法与创建和编辑普通 HTML 页面的方法完全相同。
 
-### PHP 标签
+### PHP 标筘
 
 PHP 语言语句被封装在如下形式的 PHP 标签中：
 
 ```php
+
 <?php      ?>
+
 ```
 
 ![tip.eps](img/tip_fmt.png) 有时你可以使用更短版本的 PHP 标签。你可以尝试使用不带 `php` 的 `<?` 和 `?>`。如果启用了短标签，你可以节省少打几个字。然而，如果你使用了短标签，当脚本移动到另一个未启用 PHP 短标签的 Web 主机时，脚本将无法运行。
@@ -6404,13 +9502,21 @@ PHP 处理两个 PHP 标签之间的所有语句。在处理完 PHP 部分之后
 #### 列表 1-1：Hello World HTML 脚本
 
 ```html
+
 <!doctype html>
+
 <html>
+
 <head><title>Hello World Script</title></head>
+
 <body>
+
 <p>Hello World!</p>
+
 </body>
+
 </html>
+
 ```
 
 如果你在浏览器中打开此 HTML 脚本，你将看到一个显示为
@@ -6424,15 +9530,25 @@ PHP 处理两个 PHP 标签之间的所有语句。在处理完 PHP 部分之后
 #### 列表 1-2：Hello World PHP 脚本
 
 ```html
+
 <!doctype html>
+
 <html>
+
 <head><title>Hello World Script</title></head>
+
 <body>
+
 <?php
+
   echo "<p>Hello World!</p>\n";
+
 ?>
+
 </body>
+
 </html>
+
 ```
 
 当你运行此脚本并在浏览器中查看它时，它会显示出与 [列表 1-1] 中的 HTML 脚本相同的网页。但现在你是使用 PHP 实现的！
@@ -6442,9 +9558,13 @@ PHP 处理两个 PHP 标签之间的所有语句。在处理完 PHP 部分之后
 在这段 PHP 脚本中，PHP 部分是：
 
 ```php
+
 <?php
+
   echo "<p>Hello World!</p>";
+
 ?>
+
 ```
 
 PHP 标签仅包裹了一个语句——一个 `echo` 语句。`echo` 语句是你将频繁使用的 PHP 语句。输出仅仅是包含在双引号之间的文本。
@@ -6456,19 +9576,33 @@ PHP 标签仅包裹了一个语句——一个 `echo` 语句。`echo` 语句是�
 你可以在脚本中包含任意数量的 PHP 部分，以及任意数量的 HTML 部分，甚至是零个 PHP 或 HTML 部分。例如，以下脚本有两个 PHP 部分和两个 HTML 部分：
 
 ```html
+
 <html>
+
 <head><title>Hello World Script</title></head>
+
 <body>
+
 <?php
+
   echo "<p>Hello World!</p>";
+
 ?>
+
 <p>This is HTML only.</p>
+
 <?php
+
   echo "<p>Hello World again!</p>";
+
 ?>
+
 <p> This is a second HTML section.</p>
+
 </body>
+
 </html>
+
 ```
 
 ### 观察 PHP 语法
@@ -6484,16 +9618,23 @@ PHP 标签仅包裹了一个语句——一个 `echo` 语句。`echo` 语句是�
 ![check](img/check.png) PHP 语句可以使用大写或小写编写。在 `echo` 语句中，`Echo`、`echo` 和 `eCHo` 对 PHP 来说都是相同的。就像在 JavaScript 中一样，以下是一个有效的 PHP 语句：
 
 ```php
+
 <?php echo "<p>Hello World!" ?>
+
 ```
 
 `echo` 语句与 PHP 标签在同一行上。下一个示例也会产生相同的输出：
 
 ```php
+
 <?php
+
   echo "<p>Hello</p>";
-  echo "<p>World</p>";
+
+  echo "<p>World</p>;
+
 ?>
+
 ```
 
 此示例包含两个 PHP `echo` 语句，每个都以分号结束。
@@ -6503,10 +9644,15 @@ PHP 标签仅包裹了一个语句——一个 `echo` 语句。`echo` 语句是�
 有时，一组简单语句会被组合成块。块由大括号 `{` 和 `}` 包围。一个语句块一起执行。块的一个常见用途是条件块，其中只有当某些条件为真时才会执行语句。例如，你可能希望你的脚本执行以下操作：
 
 ```php
+
 if (the sky is blue) {
+
   put leash on dragon;
+
   take dragon for a walk in the park;
+
 }
+
 ```
 
 这些语句被包裹在大括号中，以确保它们作为一个块执行。如果天空是蓝色的，`put leash on dragon` 和 `take dragon for a walk in the park` 都会执行。如果天空不是蓝色的，则两个语句都不会执行（没有牵绳；没有散步），你将面对一只恼怒的龙。
@@ -6524,11 +9670,17 @@ PHP 代码既必须被人类读取，也必须被软件读取。PHP 脚本由人
 在编写（复杂的）语句块时，编码风格规定你应当对块语句进行缩进，以清晰地显示块的开始和结束。例如，在下面的条件语句示例中，块中的简单语句经过了缩进处理：
 
 ```
+
 if(the sky is blue)
+
 {
+
   put leash on dragon;
+
   take dragon for a walk in the park;
+
 }
+
 ```
 
 PHP 不需要缩进，但它有助于人类阅读代码。
@@ -6536,16 +9688,25 @@ PHP 不需要缩进，但它有助于人类阅读代码。
 关于大括号的放置，通常有两种样式，如下所示：
 
 ```php
+
 if(the sky is blue)
+
 {
+
   put leash on dragon;
+
   take dragon for a walk in the park;
+
 }
 
 if(the sky is blue) {
+
   put leash on dragon;
+
   take dragon for a walk in the park;
+
 }
+
 ```
 
 ## 在网页上显示内容
@@ -6613,10 +9774,15 @@ PHP 允许一些格式化输出的特殊字符，但它们不是 HTML 标签。P
 变量可以存储数字或字符串。你使用单个等号（`=`）在变量中存储信息。例如，以下四条 PHP 语句将信息赋值给变量：
 
 ```
+
 $age = 12;
+
 $price = 2.55;
+
 $number = -2;
+
 $name = "Little Bo Peep";
+
 ```
 
 注意，字符串被引号括起来，但数字没有。我们将在本章后面的理解数据类型 部分详细讨论关于使用数字和字符。
@@ -6624,7 +9790,9 @@ $name = "Little Bo Peep";
 每当你向一个之前不存在的变量放入信息时，你就创建了该变量。例如，假设你使用了以下 PHP 语句：
 
 ```
+
 $firstname = "George";
+
 ```
 
 如果这条语句是你第一次提到变量 `$firstname`，那么该语句将创建该变量并设置为 `"George"`。如果你之前有一条将 `$firstname` 设置为 `"Mary"` 的语句，那么这条语句会将 `$firstname` 的值改为 `"George"`。
@@ -6632,7 +9800,9 @@ $firstname = "George";
 你也可以从变量中移除信息。你这样做可能是为了清除信息或初始化变量。例如，以下语句从变量 `$age` 中提取了信息：
 
 ```
+
 $age = "";
+
 ```
 
 变量 `$age` 存在但不包含任何值。这并不意味着 `$age` 被设置为 `0`（零），因为 0 是一个值。这意味着 `$age` 不存储任何信息。它包含一个长度为 0 的字符串。
@@ -6640,7 +9810,9 @@ $age = "";
 ### 你可以进一步使用这条语句来销毁变量：
 
 ```
+
 unset($age);
+
 ```
 
 在执行此语句后，变量 `$age` 不再存在。
@@ -6652,19 +9824,25 @@ PHP 允许你使用动态变量名，称为可变（variable variables）。你�
 也就是说，一个变量包含了另一个变量的名字。例如，假设你想创建一个名为 `$city` 值为 `Los Angeles` 的变量。你可以使用以下语句：
 
 ```
+
 $name_of_the_variable = "city";
+
 ```
 
 这条语句创建了一个变量，其中包含了你想给变量指定的名称。然后，你使用以下语句：
 
 ```
+
 $$name_of_the_variable = "Los Angeles";
+
 ```
 
 注意变量名开头有一个额外的美元符号（`$`）。这表示这是一个可变。这条语句创建一个以 `$name_of_the_variable` 的值为变量名的新变量，结果如下：
 
 ```
+
 $city = "Los Angeles";
+
 ```
 
 `$name_of_the_variable` 的值没有改变。
@@ -6674,12 +9852,19 @@ $city = "Los Angeles";
 假设你想用城市名称命名一系列变量，其值为这些城市的人口。你可以使用以下代码：
 
 ```
+
 $Reno = 360000;
+
 $Pasadena = 138000;
+
 $cityname = "Reno";
+
 echo "The size of $cityname is ${$cityname}";
+
 $cityname = "Pasadena";
+
 echo "The size of $cityname is ${$cityname}";
+
 ```
 
 输出结果为：
@@ -6693,17 +9878,22 @@ The size of Pasadena is 138000
 你可以编写以下语句来显示变量的值：
 
 ```
+
 $weekday = "Monday";
+
 ```
 
 ```
+
 var_dump($weekday);
+
 ```
 
 `var_dump` 的输出是：
 
 ```string(6) "Monday"
-```
+
+
 
 输出显示 `$weekday` 的值为 `Monday`。输出还显示该值是一个长度为六字符的字符串数据类型。
 
@@ -6868,9 +10058,6 @@ $result = 9 + 1;         (接着执行剩余的加法。)
 $result = 10
 ```
 
-
-
-
 你可以使用括号来改变算术运算的顺序。括号内的算术运算优先执行。例如，你可以这样用括号编写前面的语句：
 
 ```
@@ -6967,7 +10154,7 @@ echo $string;
 
 ## 在字符串中使用单引号和双引号
 
-单引号字符串和双引号字符串的处理方式如下：
+单引号字符字符串和双引号字符串的处理方式如下：
 
 ![check](img/check.png) 单引号字符串以字面形式存储——`\'` 除外，会被存储为撇号。
 
@@ -7032,7 +10219,7 @@ $string2 = 'String in\tsingle quotes';
 String in	double quotes
 ```
 
-`$string2` 输出：
+$string2 输出：
 
 ```
 String in	single quotes
@@ -7104,9 +10291,6 @@ text
 ENDSTRING;
 ```
 
-
-
-
 `ENDSTRING` 可以包含你想要使用的任何字符串，正如你稍后看到的。你通过在开头和结尾再次输入 `ENDSTRING` 来将你想要存储在变量 `$varname` 中的文本包围起来。当 PHP 处理 `heredoc` 时，它会读取第一个 `ENDSTRING` 并知道要开始将文本读入 `$varname`。它会继续读取文本到 `$varname` 直到再次遇到相同的 `ENDSTRING` 为止。在这一点上，它结束字符串。由 `heredoc` 语句创建的字符串以与双引号字符串相同的方式评估变量和特殊字符。
 
 以下语句使用 `heredoc` 方法创建一个字符串：
@@ -7168,7 +10352,7 @@ $var1 = NULL;
 
 创建数组的最简单方法是在变量名末尾带有方括号（`[ ]`）分配一个值。例如，假设你在脚本之前的任何时间点都没有引用过 `$cities`，以下语句创建了 `$cities` 数组：
 
-```php
+```
 $cities[] = "Los Angeles";
 ```
 
@@ -7176,7 +10360,7 @@ $cities[] = "Los Angeles";
 
 接下来，你使用以下语句：
 
-```php
+```
 $cities[] = "Pasadena";
 $cities[] = "San Diego";
 $cities[] = "San Francisco";
@@ -7186,7 +10370,7 @@ $cities[] = "San Francisco";
 
 数组可以被看作是键值对的列表。每个键值对称为一个元素。要获取特定的值，你需要指定键。例如，你可以使用以下语句：
 
-```php
+```
 $capitals[] = "Sacramento";
 $capitals[] = "Austin";
 $capitals[] = "Salem";
@@ -7194,18 +10378,17 @@ $capitals[] = "Salem";
 
 `print_r` 输出显示每个元素的键和值。`var_dump` 输出显示数据类型以及键。
 
-```php
+```
 print_r($capitals);
 // 输出:
-Array
-(
+Array (
     [CA] => Sacramento
     [TX] => Austin
     [OR] => Salem
 )
 ```
 
-```php
+```
 var_dump($capitals);
 // 输出:
 array(3) {
@@ -7227,7 +10410,7 @@ echo "</pre>";
 
 有时你需要从数组中完全删除一个元素。例如，假设你有如下包含五个元素的数组：
 
-```php
+```
 $cities[0] = "Phoenix";
 $cities[1] = "Tucson";
 $cities[2] = "Flagstaff";
@@ -7237,33 +10420,29 @@ $cities[4] = "Prescott";
 
 现在你决定不再包含 Tempe，所以你使用以下语句尝试从数组中移除 `Tempe`：
 
-```php
+```
 $cities[3] = "";
 ```
 
 虽然此语句将 `$cities[3]` 设置为空字符串，但它并没有从数组中删除该元素。你仍然有一个拥有五个元素的数组，但其中五个值之一是空的。要从数组中彻底删除元素，你需要使用以下语句取消它：
 
-```php
+```
 unset($cities[3]);
 ```
 
 现在你的数组中只包含四个元素，如下。
 
-
-
-
-
 数组最用的特性之一是 PHP 可以对它们进行排序。PHP 初始按照你创建元素的顺序来存储数组元素。如果你在不改变顺序的情况下显示整个数组，元素将按照它们创建的顺序显示。通常，你希望更改这种顺序。例如，你可能希望按值或按键按字母顺序显示数组。
 
 PHP 有多种方式对数组进行排序。要对以数字作为键的数组进行排序，使用以下 `sort` 函数：
 
-```php
+```
 sort($cities);
 ```
 
 此语句按值排序，并分配相应的数字作为新键。值的排序顺序是：数字在前，大写字母在前，小写字母最后。例如，考虑在前节创建的 `$cities` 数组：
 
-```php
+```
 $cities[0] = "Phoenix";
 $cities[1] = "Tucson";
 $cities[2] = "Flagstaff";
@@ -7271,13 +10450,13 @@ $cities[2] = "Flagstaff";
 
 在执行以下 `sort` 语句后
 
-```php
+```
 sort($cities);
 ```
 
 数组变为：
 
-```php
+```
 $cities[0] = "Flagstaff";
 $cities[1] = "Phoenix";
 $cities[2] = "Tucson";
@@ -7287,7 +10466,7 @@ $cities[2] = "Tucson";
 
 要对以单词作为键的数组进行排序，使用 `asort` 函数。此语句按值排序，并为每个值保留原始键。例如，考虑在前节创建的州首数组：
 
-```php
+```
 $capitals['CA'] = "Sacramento";
 $capitals['TX'] = "Austin";
 $capitals['OR'] = "Salem";
@@ -7295,13 +10474,13 @@ $capitals['OR'] = "Salem";
 
 在执行以下 `asort` 语句后
 
-```php
+```
 asort($capitals);
 ```
 
 数组变为：
 
-```php
+```
 $capitals['TX'] = "Austin";
 $capitals['CA'] = "Sacramento";
 $capitals['OR'] = "Salem";
@@ -7327,7 +10506,7 @@ $capitals['OR'] = "Salem";
 
 你可以通过直接访问的方式来获取数组中的任何单个值，如下所示：
 
-```php
+```
 $CAcapital = $capitals['CA'];
 echo $CAcapital ;
 ```
@@ -7338,7 +10517,7 @@ echo $CAcapital ;
 
 如果你使用不存在的数组元素，会显示一个通知（参读本章稍后的 理解 PHP 错误消息 部分关于通知的内容）。例如，假设使用以下语句：
 
-```php
+```
 $CAcapital = $capitals['CAx'];
 ```
 
@@ -7348,7 +10527,7 @@ $CAcapital = $capitals['CAx'];
 
 通知不会导致脚本停止。通知后的语句将继续执行。但由于没有值被放入 `$CAcapital`，任何随后的 `echo` 语句都将输出空白。你可以通过使用 `@` 符号来防止通知 own：
 
-```php
+```
 @$CAcapital = $capitals['CAx'];
 ```
 
@@ -7356,7 +10535,7 @@ $CAcapital = $capitals['CAx'];
 
 `list` 函数从数组中获取值并将它们放入变量。以下语句包含一个 `list` 语句：
 
-```php
+```
 $flowerInfo = array ("Rose", "red", 12.00);
 list($firstvalue,$secondvalue) = $flowerInfo;
 echo $firstvalue,"<br />";
@@ -7365,7 +10544,7 @@ echo $secondvalue,"<br />";
 
 第一行创建 `$flowerInfo` 数组。第三行设置了两个名为 `$firstvalue` 和 `$secondvalue` 的变量，并将 `$flowerInfo` 中的两个值复制到这两个新变量中，就像你使用了以下两个语句一样
 
-```php
+```
 $firstvalue=$flowerInfo[0];
 $secondvalue=$flowerInfo[1];
 ```
@@ -7389,7 +10568,7 @@ $secondvalue=$flowerInfo[1];
 
 以下语句手动遍历一个包含州首的数组：
 
-```php
+```
 $value = current($capitals);
 echo "$value<br />";
 $value = next($capitals);
@@ -7400,13 +10579,9 @@ echo "$value<br />";
 
 除非你之前移动过指针，否则在开始遍历数组时，它位于第一个元素。如果你认为数组指针在脚本早期可能被移动过，或者你从数组的输出似乎从中间开始，请在开始遍历前使用 `reset` 语句，如下：
 
-```php
+```
 reset($capitals);
 ```
-
-
-
-
 
 这种方法赋予了你活性。你可以以任何方式遍历数组——而不仅仅是一次处理一个值。你可以向后移动、直接跳到末尾、通过连续使用两个 `next` 语句跳过每一个其他值，或者使用任何实用的方法。然而，如果你想从头到尾遍历数组，且每次处理一个值，PHP 提供了 `foreach`，它可以更高效地完成你的所需。下一节将介绍 `foreach`。
 
@@ -7414,7 +10589,7 @@ reset($capitals);
 
 `foreach` 语句一次处理数组的一个值来遍历数组。在每次执行语句块时，可以使用数组当前的键（key）和值（value）。其通用格式如下：
 
-```php
+```
 foreach( $arrayname as $keyname => $valuename )
 {
     block of statements;
@@ -7429,9 +10604,8 @@ foreach( $arrayname as $keyname => $valuename )
 
 例如，下面的 `foreach` 语句遍历了州首示例数组并回出一个列表：
 
-```php
-$capitals = array("CA" => "Sacramento", "TX" => "Austin",
-                  "OR" => "Salem" );
+```
+$capitals = array("CA" => "Sacramento", "TX" => "Austin", "OR" => "Salem" );
 ksort($capitals);
 foreach( $capitals as $state => $city )
 {
@@ -7449,13 +10623,13 @@ Austin, TX
 
 你可以使用以下行替换上述语句中的 `foreach` 行：
 
-```php
+```
 foreach( $capitals as $city )
 ```
 
 在使用此 `foreach` 语句时，只有城市名称可以输出。此时你应该使用下面的 `echo` 语句：
 
-```php
+```
 echo "$city<br />";
 ```
 
@@ -7473,7 +10647,7 @@ Austin
 
 在本章的早期章节中，我们描述了单列表键/值对的数组。然而，在某些情况下，你可能希望通过多个键来存储值。例如，假设你想按州和县存储城市，如下：
 
-```php
+```
 $cities['AZ']['Maricopa'] = Phoenix;
 $cities['AZ']['Cochise'] = Tombstone;
 $cities['AZ']['Yuma'] = Yuma;
@@ -7494,10 +10668,6 @@ $cities      key        value
                             Tillamook    Tillamook
 ```
 
-
-
-
-
 # 引言
 
 `$timestamp` 是一个存储时间戳的变量。此代码假设你之前已经将时间戳存储在变量中，你可能使用 PHP 函数来实现这一点（我们将在本节稍后部分描述）。如果没有包含 `$timestamp`，则将从操作系统获取并使用当前时间。因此，你可以通过以下代码获取今天的日期：
@@ -7512,7 +10682,7 @@ $today = date("Y/m/d");
 2013/08/10
 ```
 
-该格式是一个字符串，指定了你想要存储在变量中的日期格式。例如，格式 `"y-m-d"` 返回 13-08-10，而 `"M.d.Y"` 返回 Aug.10.2013。表 1-6 列出了你可以在格式字符串中使用的一些一些符号。（如需完整的符号列表，请参阅[`www.php.net/manual/en/function.date.php`](http://www.php.net/manual/en/function.date.php)中的文档。）日期的部分可以使用连字符（`-`）、点（`.`）、正斜杠（`/`）或空格分隔。
+该格式是一个字符丝，指定了你想要存储在变量中的日期格式。例如，格式 `"y-m-d"` 返回 13-08-10，而 `"M.d.Y"` 返回 Aug.10.2013。表 1-6 列出了你可以在格式字符串中使用的一些一些符号。（如需完整的符号列表，请参阅[`www.php.net/manual/en/function.date.php`](http://www.php.net/manual/en/function.date.php)中的文档。）日期的部分可以使用连字符（`-`）、点（`.`）、正斜杠（`/`）或空格分隔。
 
 ## 表 1-6 日期格式符号
 
@@ -7591,6 +10761,7 @@ $timeSpan = $today - $importantDate;
 ```php
 $timeSpan =(($today - $importantDate)/60)/60
 ```
+
 来计算自重要日期以来的小时数。
 
 ## 理解 PHP 错误消息
@@ -7632,10 +10803,6 @@ Parse error: parse error, unexpected T_ECHO, expecting ',' or ';', in c:\test.ph
 ```
 Fatal error: Call to undefined function xxx() in C:\Program Files\Apache Group\Apache2\htdocs\PHPandMySQL\info.php on line 10
 ```
-
-
-
-
 
 ![warning_bomb.eps](img/warning_bomb_fmt.png) 我们使用“致命错误”（fatal error）这一术语将这类错误与其他错误区分开来。然而，PHP 只（令人困惑地）称称为错误（errors）。你不会在手册中找到“fatal error”这个术语。此外，显示这类错误所需的关键字是 `E_ERROR`。（我们将在本章节的显示所选消息部分详细介绍这一点。）
 
@@ -7777,9 +10944,6 @@ Notice: Undefined variable: news1 in C:\Program Files\Apache Group\Apache2\htdoc
 log_errors = Off
 ```
 
-
-
-
 将设置更改为 `On`。在保存修改过的 `php.ini` 文件并重启您的 Web 服务器后，PHP 会将错误记录到文本文件中。你可以通过下一节介绍的 `error_log` 设置来告诉 PHP 将错误发送到哪里。如果你没有在 `error_log` 设置中指定文件，则错误信息将写入 Apache 错误日志，该日志位于 Apache 安装目录下的 `logs` 子目录中。错误日志具有 `.err` 文件扩展名。
 
 你可以通过在脚本开头包含以下语句来为单个脚本记录错误：
@@ -7794,13 +10958,13 @@ ini_set("log_errors","On");
 
 你通过 `php.ini` 中的设置来指定 PHP 记录错误信息的文件。找到该设置：
 
-```php
+```
 ;error_log = filename
 ```
 
 删除行首 get 分号。将 `filename` 替换为你希望 PHP 记录错误信息的文件的路径和文件名，例如：
 
-```php
+```
 error_log = "c:\php\logs\errs.log"
 ```
 
@@ -7877,7 +11041,7 @@ PHP 注释不会包含在发送给用户浏览器的 HTML 代码中。用户看�
 
 在脚本中尽可能频繁地使用注释使其清晰。然而，使用过多的注释是一个错误。不要注释每一行。
 
-### 第 2 章：构建 PHP 脚本
+## 第 2 章：构建 PHP 脚本
 
 ## 本章内容
 - 设置条件
@@ -7896,7 +11060,7 @@ PHP 脚本是一系列带有特定扩展名的指令，告诉 Web 服务器预�
 - **循环**：重复执行语句块的语句。四种类型的循环是 `foreach`、`for`、`while` 和 `do..while` 循环。
 - **函数**：可以多次重复使用的语句。许多任务在程序的多个部分执行。PHP 允许你通过创建函数来重用语句块。
 
-条件语句和循环根据条件执行语句块。也就是说，如果条件为真，则执行该块。因此，要使用条件语句和循环，你需要设置条件。
+条件语句和循环根据条件执行语句块。也就是说，如果条件为真，则执行该块。因此，要使用条语句和循环，你需要设置条件。
 
 在本章中，你将了解到如何使用复杂语句以及如何将它们组织成 PHP 脚本。
 
@@ -7909,9 +11073,6 @@ PHP 脚本是一系列带有特定扩展名的指令，告诉 Web 服务器预�
 - Nick 比 Bobby 幼小吗？
 - Sally 的房子价格超过了一百万美元吗？
 
-
-
-
 ![check](img/check.png) 字符串是否匹配某种模式？Bobby 的名字是否以 S 开头？邮政编码是否有五个数字字符？
 
 你还可以设置包含两个或更多问题的条件。例如，你可能会问：Nick 是否比 Bobby 大，且 Nick 是否比 Sally 小？或者你可能会问：今天是星期日且天气晴吗？或者你可能会问：今天是星期日还是周一？
@@ -7920,7 +11081,7 @@ PHP 脚本是一系列带有特定扩展名的指令，告诉 Web 服务器预�
 
 你可以比较数字或字符串以判断它们是否相等、一个是否大于另一个，或者不相等。你使用比较运算符来比较值。PHP 会评估比较并返回 `true` 或 `false`。例如，以下是一个简单的比较：
 
-```php
+```
 $result = $a == $b;
 ```
 
@@ -7948,18 +11109,15 @@ PHP 提供了几种你可以用于比较值的比较运算符。对比表 2-1 �
 以下是 PHP 可以测试以判断它们是否为真的有效比较：
 
 ![check](img/check.png) `$a == $b`
-
 ![check](img/check.png) `$age != 21`
-
 ![check](img/check.png) `$ageNick < $ageBobby`
-
 ![check](img/check.png) `$house_price >= 1000000`
 
 ![warning_bomb.eps](img/warning_bomb_fmt.png) 询问两个值是否相等的比较运算符由两个等号 (`==`) 组成。最常见的错误之一是使用单等号进行比较。单等号会将值放入变量。因此，像 `if ($weather = "raining")` 这样的语句会将 `$weather` 设置为 `raining` 而不是检查它是否已经等于 raining，并且将始终为真。
 
 如果你写一个否定（通过使用 `!`），则否定条件为真。看下面的比较：
 
-```php
+```
 $age != 21
 ```
 
@@ -7969,38 +11127,34 @@ $age != 21
 
 有时你只需要知道变量是否存在，或者变量中存储了什么类型的数据。以下是一些测试变量的常用方法：
 
-```php
+```
 isset($varname) # 如果变量已设置，即使没有存储任何内容也为真。
 empty($varname) # 如果值为 0 或是不含字符字符串或未设置，则为真。
 ```
 
 你还可以测试变量中是什么什么类型的数据。例如，要查看值是否为整数，你可以使用：
 
-```php
+```
 is_int($number)
 ```
 
 如果 `$number` 中的值是整数，则比较为真。PHP 提供的其他测试如下：
 
 ![check](img/check.png) `is_array($var2)`: 检查 `$var2` 是否为数组。
-
 ![check](img/check.png) `is_float($number)`: 检查 `$number` 是否为浮点数。
-
 ![check](img/check.png) `is_null($var1)`: 检查 `$var1` 是否为 null。
-
 ![check](img/check.png) `is_numeric($number)`: 检查 `$number` 是否为数字。
-
 ![check](img/check.png) `is_string($string)`: 检查 `$string` 是否为字符串。
 
 如果你写一个否定（通过使用 `!`），则否定条件为真。看下面的比较：
 
-```php
+```
 !isset($varname)
 ```
 
 可以用通白语言将其理解为“如果 `varname` 未设置”。例如：
 
-```php
+```
 !empty($varname)
 ```
 
@@ -8008,7 +11162,7 @@ is_int($number)
 
 有时你需要比较字符串以查看它们是否符合某些特征，而不是查看它们是否匹配精确的值。例如，你可能想识别以 S 开头的字符串。这些模式被称为正则表达式。
 
-你过去可能已经使用过某种形式的模式匹配。当你搜索文件时使用星号 (`*`) 作为通配符（例如 `dir*.doc`），你就是在进行模式匹配。例如，`ex*.txt` 是一个模式。任何以 `ex` 开头并以 `.txt` 结尾且中间包含任何字符的字符串都匹配该模式。使用正则表达式只是更强大的变体。模式匹配的一个常见用途是检查来自网页的输入。如果输入的信息符合特定模式，它可能不是你想要存储在数据库中的内容。例如，如果用户在表单中输入邮政编码，你就知道格式需要五个位数字或邮政编码+4。因此，你可以检查输入以查看它是否符合模式。如果不符合，你就知道这不是有效的邮政编码，你可以要求用户输入正确的信息。
+你过去可能已经使用过某种形式的模式匹配。当你搜索文件时使用星号 (`*`) 作为通配符（例如 `dir*.doc`），你就是在进行模式匹配。例如，`ex*.txt` 是一个模式。任何以 `ex` 开头并以 `.txt` 结尾且中间包含任何字符的字符串都匹配该模式。使用正则表达式只是更强大的变体。模式匹配的一个常见用途是检查来自网页的输入。如果输入的信息符合特特定模式，它可能不是你想要存储在数据库中的内容。例如，如果用户在表单中输入邮政编码，你就知道格式需要五个位数字或邮政编码+4。因此，你可以检查输入以查看它是否符合模式。如果不符合，你就知道这不是有效的邮政编码，你可以要求用户输入正确的信息。
 
 正则表达式用于许多情况的模式匹配。许多 Linux 命令和程序如 `grep`、`vi` 或 `sed` 使用正则表达式。许多应用程序（如文本编辑器和文字处理器）允许使用正则表达式搜索。
 
@@ -8026,9 +11180,6 @@ PHP 支持 Perl 的正则表达式。以下章节描述了一些基础的正则�
 
 考虑一些示例模式
 
-
-
-
 字面字符和特殊字符组合成模式，有时是冗长且复杂的模式。将字符串与模式进行比较，如果匹配，则比较结果为真。下面是一些示例模式，并对模式进行了拆解，以及了一些匹配和不匹配的示例。
 
 ## 示例 1
@@ -8038,7 +11189,7 @@ PHP 支持 Perl 的正则表达式。以下章节描述了一些基础的正则�
 该模式定义了以字母开头并包含以下两个部分的字符串：
 
 - ![check](img/check.png) `^[A-Za-z]`: 模式的第一部分规定字符串的开头必须是一个字母（大写或小写）。
-- ![check](img/check.png) `.*`: 模式的第二部分告诉 PHP 字符字符串长度可以是一个或多个字符，包括数字、空格或任何内容。
+- ![check](img/check.png) `.*`: 模道的第二部分告诉 PHP 字符字符串长度可以是一个或多个字符，包括数字、空格或任何内容。
 
 表达式 `^[A-Za-z].*` 匹配以下字符串：`play it again, Sam, 4 times` 和 `I`。
 
@@ -8071,7 +11222,7 @@ PHP 支持 Perl 的正则表达式。以下章节描述了一些基础的正则�
 
 表达式 `^[0-9]{5}(\-[0-9]{4})?$` 匹配以下字符串：`90001` 和 `90002-4323`。
 
-表达式 `^[0-9]{5}(\-[0-9]{4})?$` 不匹配以下字符串：`9001` 和 `12-4321`。
+表达式 `^[0-9]{5}(\-[0-9]{4})?$` 不匹配以下字符串：`9001` 和 `12-4321`.
 
 ## 示例 4
 
@@ -8087,7 +11238,7 @@ PHP 支持 Perl 的正则表达式。以下章节描述了一些基础的正则�
 
 表达式 `^.+@.+\.com$` 匹配以下字符串：`you@yourcompany.com` 和 `johndoe@somedomain.com`。
 
-表达式 `^.+@.+\.com$` 不匹配以下字符串：`you@yourcompany.net`、`you@.com` 和 `@you.com`。
+表达式 `^.+@.+\.com$` 不匹配以下字符串：`you@yourcompany.net`、`you@.com` 和 `@you.com`.
 
 ## 使用 PHP 函数进行模式匹配
 
@@ -8107,11 +11258,9 @@ preg_match("/^[A-Za-z' -]+$/", $name);
 
 - ![check](img/check.png) 用正斜杠（`/`）封装模式。
 - ![check](img/check.png) 使用 `^` 和 `$` 分别表示字符串的开头结尾。这意味着字符串中的所有字符必须匹配模式。
-- ![check](img/check.png) 用 `[` `]` 封装字符串中允许的所有字面字符。不允许有其他字符。允许的字符是大写和小写字母、单引号（`'`）、空白格和连字符（`-`）。
+- ![check](img/check.png) 用 `[` `]` 封装字符串中允许的所有字面字符。不允有其他字符。允许的字符是大写和小写字母、单引号（`'`）、空白格和连字符（`-`）。
 
 你可以通过使用连字符来指定字符范围。
-
-
 
 你可以使用括号来改变比较的执行顺序。括号内的连接词会被先求。例如，你可以使用括号来重写之前的陈述：
 
@@ -8167,12 +11316,10 @@ else
 `if` 语句由三部分组成：
 
 ![check](img/check.png) `if`：这部分是必须。只允许一个 `if`。它测试一个条件：
-
 * 如果条件为真：执行语句块。执行语句后，脚本移动到条件语句之后的下一条指令；如果条件语句包含任何 `elseif` 或 `else` 部分，脚本将跳过它们。
 * 如果条件不为真：不执行语句块。脚本跳到下一条指令，该指令可以是 `elseif`、`else` 或 `if` 条件语句之后的下一条指令。
 
 ![check](img/check.png) `elseif`：这部分是可选的。如果你愿意，可以使用多个 `elseif`。`elseif` 也测试一个条件：
-
 * 如果条件为真：执行语句块。执行语句块后，脚本进入条件语句之后的下一条指令；如果 `if` 语句包含任何额外的 `elseif` own 或 `else` 部分，脚本将跳过它们。
 * 如果条件不为真：不执行语句块。脚本跳到下一条指令，该指令可以是 `elseif`、`else` 或 `if` 条件语句之后的下一条指令。
 
@@ -8261,10 +11408,6 @@ if (preg_match("/^S[a-z]*/",$string))
 
 这个 `if` 语句创建一个以 `S` 开头的字符串数组。具体来说，如果 `$string` 匹配指定开头为一个大写 `S` 后面跟若干小写字母的模式，则条件为真并执行语句块。然而，如果你在条件开头放置一个感叹号，情况将发生巨大变化。例如，假设你改用以下语句：
 
-
-
-
-
 ```php
 if (!preg_match("/^S[a-z]*/",$string))
 {
@@ -8278,7 +11421,7 @@ if (!preg_match("/^S[a-z]*/",$string))
 
 你可以在一个 `if` 条件语句内部内部包含另一个 `if` 条件条件语句。将一个语句放在另一个语句内部被称为嵌套。例如，假设你需要联系所有居住在爱达荷州（Idaho）的客户。你计划向有电子邮件地址的客户发送电子邮件，向没有电子邮件地址的客户发送信件。你可以使用以下嵌套的 `if` 语句来识别客户群体：
 
-```php
+```
 if ( $custState == "ID" )
 {
     if ( $EmailAdd = "" )
@@ -8314,10 +11457,18 @@ switch ( $variablename )
         block of statements;
         break;
     ...
+```
+
+
+
     default:
+
         block of statements;
+
         break;
+
 }
+
 ```
 
 `switch` 语句测试 `$variablename` 的值。脚本随后跳转到该值的 `case` 部分并执行语句，直到遇到 `break` 语句或 `switch` 语句的结束。如果 `$variablename` 的值没有对应的 `case` 部分，脚本将执行 `default` 部分。你可以根据需要使用任意数量的 `case` 部分。`default` 部分可选的。如果你使用 `default` true，习惯上将其放在末尾，但对 PHP 而言，它可以放在任何地方。
@@ -8325,23 +11476,34 @@ switch ( $variablename )
 以下语句设置了不同州的销售税率：
 
 ```php
+
 switch ( $custState )
+
 {
+
     case "OR" :
+
       $salestaxrate = 0;
+
       break;
+
     case "CA" :
+
       $salestaxrate = 1.0;
+
       break;
+
     default:
+
       $salestaxrate = .5;
+
       break;
+
 }
+
 ```
 
 `$salestax = $salestaxrate`
-
-
 
 
 
@@ -8350,15 +11512,25 @@ switch ( $custState )
 你可以在 `for` 循环嵌套在 `for` 循环内部。假设你想打印从 1 到 9 的乘法表。你可以使用以下语句：
 
 ```php
+
 for($i=1;$i<=9;$i++)
+
 {
+
     echo "\nMultiply by $i \n";
+
     for($j=1;$j<=9;$j++)
+
     {
+
         $result = $i * $j;
+
         echo "$i x $j = $result\n";
+
     }
+
 }
+
 ```
 
 输出如下：
@@ -8384,10 +11556,15 @@ Multiply by 3
 `for` 循环的结构非常灵活，允许你为几乎任何目的构建循环。虽然本节到目前为止讨论的基础型 `for` 循环在初始化、条件和递增部分各有一个语句，但通用格式允许每个部分包含多个语句。通用格式如下：
 
 ```php
+
 for (beginning statements; conditional statements; ending statements)
+
 {
+
     block of statements;
+
 }
+
 ```
 
 `for` 循环内部的语句具有以下作用：
@@ -8403,12 +11580,19 @@ for (beginning statements; conditional statements; ending statements)
 以下循环在三个部分都包含语句：
 
 ```php
+
 $t = 0;
+
 for ($i=0,$j=1;$t<=4;$i++,$j++)
+
 {
+
   $t = $i + $j;
+
   echo "$t<br />";
+
 }
+
 ```
 
 在这个示例中，`$i=0` 和 `$j=1` 是初始化语句， `$t<=4` 是条件语句，而 `$i++` 和 `$j++` 是结束语句。
@@ -8439,29 +11623,49 @@ for ($i=0,$j=1;$t<=4;$i++,$j++)
 以下语句建立了一个寻找苹果的循环。该脚本的作用与前一节使用 `while` 循环的脚本相同：
 
 ```php
+
 $fruit = array ( "orange", "apple", "grape" );
+
 $testvar = "no";
+
 $k = 0;
+
 do
+
 {
+
   if ($fruit[$k] == "apple" )
+
   {
+
     $testvar = "yes";
+
     echo "apple\n";
+
   }
+
   else
+
   {
+
     echo "$fruit[$k] is not an apple\n";
+
   }
+
   $k++;
+
 } while ( $testvar != "yes" );
+
 ```
 
 这些语句在浏览器中的输出如下：
 
 ```
+
 orange is not an apple
+
 apple
+
 ```
 
 这与 `while` 循环示例显示的输出相同。`while` 循环和 `do..while` 循环之间的区别在于检查条件的位置。在 `while` 循环中，条件在循环顶部检查。因此，如果条件永远为假，循环将永远不会执行。在 `do..while` 循环中，条件在循环底部检查。因此，即使条件永远为假，循环也会至少执行一次。
@@ -8469,13 +11673,17 @@ apple
 例如，在前面检查苹果的循环中，假设使用此语句将原始条件设置为 `yes` 而不是 `no`：
 
 ```php
+
 $testvar = "yes";
+
 ```
 
 条件从开始测试即为假。它永远为真。在 `while` 循环中，没有输出。语句块永远不会运行。然而，在 `do..while` 循环中，语句块在测试条件之前会运行一次。因此，`while` 循环没有产生输出，但 `do..while` 循环产生了以下输出：
 
 ```
+
 orange is not an apple
+
 ```
 
 `do..while` 循环在测试条件之前产生了一行输出。它没有产生第二行输出，是因为条件测试结果为假。
@@ -8487,32 +11695,55 @@ orange is not an apple
 这里是本章较早之前 Using while loops 部分所示脚本的微调版本：
 
 ```php
+
 $fruit = array ( "orange", "apple", "grape" );
+
 $testvar = "no";
+
 while ( $testvar != "yes" )
+
 {
+
   $k = 0;
+
   if ($fruit[$k] == "apple" )
+
   {
+
     $testvar = "yes";
+
     echo "apple\n";
+
   }
+
   else
+
   {
+
     echo "$fruit[$k] is not an apple\n";
+
   }
+
   $k++;
+
 }
+
 ```
 
 微小的变化是将语句 `$k = 0;` 从循环外部移动到循环内部。这个小变化使其变成了一个死循环。更改后的脚本有以下输出：
 
 ```
+
 orange is not an apple
+
 orange is not an apple
+
 orange is not an apple
+
 orange is not an apple
+
 ...
+
 ```
 
 这将永远重复。每当循环运行时，它都会将 `$k` 重置为 `0`。然后它获取 `$fruit[0]` 并将其输出。在循环结束时，`$k` 加 1。然而，当循环再次开始时，`$k` 被设回 `0`。因此，数组中只会被读取第一个值 `orange`。循环永远到不了 `apple`，且 `$testvar` 永远被设置为 `"yes"`。循环是无尽的。
@@ -8532,15 +11763,21 @@ orange is not an apple
 
 
 ```php
+
 echo "<p><img src='Images/logo.jpg' width='50' height='50' hspace='10' align='left' /></p>";
+
 echo "<p style='font-size: x-large'>My Fine Company</p>";
+
 echo "<p style='font-style: italic'>quality products</p>";
+
 ```
 
 与其在脚本中每个想要显示 logo 的地方都输入这段代码，你可以创建一个包含这些语句的函数并将其命名为 `display_logo`。然后，每当你需要显示 logo 的时候，只需使用该函数即可。使用该函数的形式如下：
 
 ```php
+
 display_logo();
+
 ```
 
 你可以看到，使用这一行代码可以了大量的输入工作，并且比在每个需要 logo 的地方都输入 `echo` 语句更容易阅读和理解。在接下来的章节中，我们将告诉你如何创建和调用函数、在函数内部使用变量、向函数以及从函数中传递和返回值，以及使用 PHP 的内置函数简化你的工作。
@@ -8550,30 +11787,47 @@ display_logo();
 你可以通过将代码放入函数块中来创建一个函数。通用格式如下：
 
 ```php
+
 function functionname()
+
 {
+
     block of statements;
+
     return;
+
 }
+
 ```
 
 例如，你可以使用以下语句创建上一节中讨论过的 `display_logo()` 函数：
 
 ```php
+
 function display_logo()
+
 {
+
     echo "<p><img src='Images/logo.jpg' width='50' height='50'
+
         hspace='10' align='left' /></p>";
+
     echo "<p style='font-size: x-large'>My Fine Company</p>";
+
     echo "<p style='font-style: italic'>quality products</p>";
+
     return;
+
 }
+
 ```
 
 然后你可以在任何想要显示 logo 的地方调用该函数，如下：
 
 ```php
+
 display_logo();
+
 ```
 
 上述函数末尾的 `return` 语句会停止函数并将控制权返回给主脚本。函数末尾不需要 `return` 语句，因为函数在结束就会停止并将控制权返回给调用它的脚本。然而，`return` 语句会让函数更容易理解。`return` 语句将在本章稍后的 从函数返回一个值 部分中进行详细讨论。
@@ -8585,30 +11839,47 @@ display_logo();
 你可以在函数内部创建并使用变量。这种变量被称为函数的**局部变量**。然而，该变量在函数外部是不可用的；主脚本也无法使用它。如果你想在函数外部使用该变量，必须使用 `global` 语句将变量设为全局的而非局部的。例如，变量 `$name` 在以下函数中创建：
 
 ```php
+
 function format_name()
+
 {
+
     $first_name = "John";
+
     $last_name = "Smith";
+
     $name = $last_name, ".$first_name;
+
 }
 
 format_name();
+
 echo "$name";
+
 ```
 
 这些语句不会产生任何输出。在 `echo` 语句中，`$name` 不包含任何值。变量 `$name`是在函数内部创建的，所以它在函数外部并不。你可以通过使用 `global` 语句在函数内部创建一个外部存在的变量。以下语句包含了相同的函数，但添加了 `global` 语句：
 
 ```php
+
 function format_name()
+
 {
+
     global $name;
+
     $first_name = "John";
+
     $last_name = "Smith";
+
     $name = $last_name . ", " . $first_name;
+
 }
 
 format_name();
+
 echo "$name";
+
 ```
 
 现在脚本会输出此：
@@ -8620,15 +11891,25 @@ echo "$name";
 同样，如果变量在函数外部创建，除非它是全局的，否则你无法在函数内部使用它。在以下语句中，唯一的 `global` 语句在函数内部：
 
 ```php
+
 $first_name = "John";
+
 $last_name = "Smith";
+
 function format_name()
+
 {
+
     global $first_name, $last_name;
+
     $name = $last_name.", ".$first_name;
+
     echo "$name";
+
 }
+
 format_name();
+
 ```
 
 由于代码没有在函数外部包含 `global` 语句，函数内部的 `$last_name` 和 `$first_name` 与脚本中创建的 `$last_name` 和 `$first_name` 不同。函数内部的变量 `$last_name` 和 `$first_name` 在命名它们时创建，且没有值。因此，`$name` 只输出一个逗号，如下：
@@ -8644,40 +11925,67 @@ format_name();
 当然，变量不能凭空出现。函数必须预期它们。函数语句包含了它预期的值的变量名，如下：
 
 ```php
+
 function functionname($var1,$var2...)
+
 {
+
     return;
+
 }
+
 ```
 
 例如，以下函数计算了销售税：
 
 ```php
+
 function compute_salestax($amount,$custState)
+
 {
+
     switch ( $custState )
+
     {
+
         case "OR":
+
             $salestaxrate = 0;
+
             break;
+
         case "CA":
+
             $salestaxrate = 1.0;
+
             break;
+
         default:
+
             $salestaxrate = .5;
+
             break;
+
     }
+
     $salestax = $amount * $salestaxrate;
+
     echo "$salestax<br />";
+
 }
+
 ```
 
 第一行显示函数预期两个值——`$amount` 和 `$custState`。当你调用函数时，你向它传递两个值，如下：
 
 ```php
+
 $amount = 2000.00;
+
 $custState = "CA";
+
 compute_salestax($amount,$custState);
+
 ```
 
 在这种情况下，传递的金额是 2000.00，州是 CA。输出是 `2000`，因为 CA 的 `salestaxrate` 是 1.0。
@@ -8687,43 +11995,69 @@ compute_salestax($amount,$custState);
 你可以直接传递值（包括计算后的值），也可以传递包含值的变量。以下调用是有效的：
 
 ```php
+
 compute_salestax(2000,"CA");
+
 compute_salestax(2*1000,"");
+
 compute_salestax(2000,"CA");
+
 ```
 
 你可以传递任何数据类型的值。参见本微型书的第一章 关于数据类型的讨论。通常情况下，你想测试传递的值以检查这些值是否为预期的数据类型。例如，以下函数预期一个数组：
 
 ```php
+
 function add_numbers($numbers)
+
 {
+
     if(is_array($numbers))
+
     {
+
         for($i=0;$i <sizeof($numbers);$i++)
+
         {
+
             @sum = $sum + $numbers[$i];
+
         }
+
         echo $sum;
+
     }
+
     else
+
     {
+
         echo "value passed is not an array";
+
         return;
+
     }
+
 }
+
 ```
 
 你可以使用以下语句调用 `add_numbers` 函数：
 
 ```php
+
 $arrayofnumbers = array(100,200);
+
 add_numbers($arrayofnumbers);
+
 ```
 
 该函数显示 300，它是 100 加 200 的和。如果传递的值不是数组，如下所示：
 
 ```php
+
 add_numbers(100);
+
 ```
 
 函数显示消息：
@@ -8735,16 +12069,23 @@ add_numbers(100);
 函数按照值传递的顺序接收值。也就是说，假设你有如下函数：
 
 ```php
+
 function functionx($x,$y,$z)
+
 {
+
     do stuff
+
 }
+
 ```
 
 你如下调用函数：
 
 ```php
+
 functionx($var1,$var2,$var3);
+
 ```
 
 `functionx` 设置 `$x=$var1`，`$y=$var2` 且 `$z=$var3`。
@@ -8753,19 +12094,26 @@ functionx($var1,$var2,$var3);
 
 
 
-如果你传递的值不符合预期顺序，函数在执行任务时将使用错误的值。例如，你为计算销售税定义的函数看起来可能如下：
+如果你传递的值不符合预期顺序，函数在执任务时将使用错误的值。例如，你为计算销售税定义的函数看起来可能如下：
 
 ```php
+
 function compute_salestax($orderCost,$custState)
+
 {
+
     compute tax
+
 }
+
 ```
 
 在这里，`$orderCost` 是订单成本，而 `$custState` 是客户所在的州。但假设你使用了以下调用：
 
 ```php
+
 compute_salestax($custState,$orderCost);
+
 ```
 
 函数将 `$custState` 变量的值用作订单成本，并将其设置为 `0`，因为它是一个字符串。它将 `$custState` 变量设置为 `$orderCost` 中的数字，但这与它的任何一个类别都不匹配。输出结果将为 `0`。
@@ -8775,17 +12123,25 @@ compute_salestax($custState,$orderCost);
 函数的设计初衷是期望接收特定数量的传参值。如果你发送的值不足，函数会将缺失的值设置为 `NULL`。如果你开启了警告消息级别，则会显示警告消息。（有关错误级别的描述，请参阅本微型书中第 1 章中的理解错误消息部分。）例如，假设你有一个格式化名称的函数：
 
 ```php
+
 function format_name($first_name,$last_name)
+
 {
+
     $name = "$last_name, ".$first_name;
+
     echo $name;
+
 }
+
 ```
 
 该函数期望接收两个值。假设你使用以下语句调用它：
 
 ```php
+
 format_name("John");
+
 ```
 
 你会看到类似下面的消息：
@@ -8801,19 +12157,29 @@ format_name("John");
 你可以设置默认值以便在未传递值时使用它们。默认值是在编写函数时设置的，如下所示：
 
 ```php
+
 function add_2_numbers($num1=1,$num2=1)
+
 {
+
     $total = $num1 + $num2;
+
     echo "total = $total";
+
 }
+
 ```
 
-如果一个或两个值没有传递给函数，函数将使用指定的默认值；但如果传递了值，则使用该值而不是默认值。例如，你可能会使用以下调用：
+如果一个或两个值没有传递给函函数，函数将使用指定的默认值；但如果传递了值，则使用该值而不是默认值。例如，你可能会使用以下调用：
 
 ```php
+
 add_2_numbers(2,2);
+
 add_2_numbers(2);
+
 add_2_numbers();
+
 ```
 
 连续顺序的结果为：
@@ -8827,18 +12193,27 @@ add_2_numbers();
 当你像目前所示在函数定义中将值传递给变量时，你使用的是**值传递**。值传递是向函数传递值最常见的方式，如下：
 
 ```php
+
 function add_1($num1)
+
 {
+
     $num1 = $num1 + 1;
+
 }
+
 ```
 
 在值传递时，会创建 `$num1` 的副本并将其传递给函数。虽然在函数内部通过加 1 改变了 `$num1`，但函数外部的变量 `$num1` 并不会改变。所以，如果你使用以下语句调用函数：
 
 ```php
+
 $num1 = 3;
+
 add_1($num1);
+
 echo $num1;
+
 ```
 
 输出是 `3`
@@ -8846,7 +12221,9 @@ echo $num1;
 `$num1` 仍然包含调用函数之前的相同值。你可以通过在函数内部将变量设为全局变量，或者在修改后返回 `$num1` 并调用函数来实现这一点，如下：
 
 ```php
+
 $num1 = add_1($num1);
+
 ```
 
 `$num1` 的新值从函数返回并存储在函数外部的 `$num1` 中。
@@ -8854,18 +12231,27 @@ $num1 = add_1($num1);
 在某些情况下，你想直接更改变量的值，从而改变函数外部的值。**引用传递**用于此类任务。要通过引用传递变量，需要在变量名之前添加 `&`，如下：
 
 ```php
+
 function add_1(&$num1)
+
 {
+
     $num1 = $num1 + 1;
+
 }
+
 ```
 
 当你调用此函数时，传递的是变量位置的指针，而不是变量的副本。也就是说，函数调用传递了一个指向名为 `$num` 容器的指针，该容器存储了值 `3`。当你使用函数内部的语句更改变量时，原始位置的值也会发生改变。所以，如果你使用以下语句调用函数：
 
 ```php
+
 $num1 = 3;
+
 add_1($num1);
+
 echo $num1;
+
 ```
 
 输出结果为 `4`
@@ -8877,50 +12263,83 @@ echo $num1;
 如果你想从函数返回一个值，请使用 `return`。例如，一个相加的函数可能如下：
 
 ```php
+
 function add_2_numbers($num1,$num2)
+
 {
+
     $total = $num1 + $num2;
+
     return $total;
+
 }
+
 ```
 
 函数的结果将返回给调用者，调用者随后可以使用该值：
 
 ```php
+
 $sum = add_2_numbers(5,10);
+
 echo $sum;
+
 ```
 
 函数通常被设计为返回布尔值（true 或 false），如下函数所示：
 
 ```php
+
 function is_over_100($number)
+
 {
+
     if($number > 100)
+
     {
+
         return true;
+
     }
+
     else
+
     {
+
         return false;
+
     }
+
 }
+
 ```
 
 另一种常见的函数设计是：如果函数成功则返回一个值，如果函数未成功则返回 `false`。例如，你可以这样设计 `find_value` 函数：
 
 ```php
+
 function find_value($array,$value)
+
 {
+
     for($i=1;$i<sizeof($array);$i++)
+
     {
+
         if($array[$i] == $value)
+
         {
+
             return $i;
+
         }
+
     }
+
     return false;
+
 }
+
 ```
 
 如果函数在数组中找到了该值，它将返回找到 `$value` 的数组索引。然而，如果在数组的任何地方都没有找到该值，它将返回 `false`。
@@ -8944,7 +12363,7 @@ PHP 在线文档在 [`www.php.net/manual/en/funcref.php`](http://www.php.net/man
 
 脚本是一系列 PHP 语句，每条语句执行一个操作。PHP 从脚本开始开始并顺序执行每条语句。某些语句是复杂语句，它们会根据条件或重复地执行简单语句。
 
-一个应用程序通常包含多个 PHP 脚本。通常情况下，一个脚本执行一个主要任务。例如，一个应用程序可能包含一个显示表单的脚本和一个将数据存储在数据库中的脚本。然而，这只是准则而非规则。有些脚本既显示表单又处理表单数据。
+一个应用程序通常包含多个 PHP 脚本。通常情况下，一个脚本执行一个主要任务。例如，一个应用程可能包含一个显示表单的脚本和一个将数据存储在数据库中的脚本。然而，这只是准则而非规则。有些脚本既显示表单又处理表单数据。
 
 每个脚本都应该组织成每个特定任务的章节。每个部分的开始都使用注释描述该部分的功能。（我们在第二本书的第 1 章中介绍编写注释。）用空行将各个部分隔开。例如，登录脚本可能包含以下部分：
 
@@ -8971,16 +12390,27 @@ PHP 在线文档在 [`www.php.net/manual/en/funcref.php`](http://www.php.net/man
 例如，假设你的客户向购物车添加了一个物品。在购物车网页上，你包含了两个按钮——一个显示“继续购物”（Continue Shopping），另一个显示“注销”（Log Out）。当用户点击任一按钮时，将执行以下 PHP 脚本：
 
 ```php
+
 <?php
+
 if($button == "Continue Shopping")
+
 {
+
     include("catalog.inc");
+
 }
+
 else
+
 {
+
     include("logout.inc");
+
 }
+
 ?>
+
 ```
 
 如果用户点击“继续购物”，将使用包含显示目录 HTML 代码的文件。如果用户点击“注销”按钮，将使用包含注销消息 HTML 代码的文件。我们将在在本章稍后的使用 include 文件组织部分中讨论使用 `include` 文件的细节。
@@ -9004,7 +12434,9 @@ else
 寻找使用函数的机会。有了这样一行代码，你的脚本会更易阅读和理解：
 
 ```php
+
 getCustomerName();
+
 ```
 
 这比使用 20 行实际上获取客户名称的语句要易读得多。事实上，在你写写了一段时间 PHP 脚本后，你将拥有一堆你为各种脚本编写的函数。很多时候，你正在编写的脚本可以使用你两个工作项目前为另一个应用程序编写的函数。例如，你可能经常需要一个州列表。与其每次需要时都包含美国所有 50 个州的列表，你可以创建一个名为 `getStateNames()` 的函数，返回一个按字母顺序存储 50 个州名的数组；以及创建一个名为 `getStateCodes()` 的函数，返回一个按相同顺序的所有 50 个双字母州缩写代码数组。
@@ -9012,19 +12444,25 @@ getCustomerName();
 ![tip.eps](img/tip_fmt.png) 始终使用描述性的函数名。脚本中的函数调用应该准确地告诉函数的功能。长名字是可以接受的。你不希望在脚本中看到类似这样的代码：
 
 ```php
+
 function1();
+
 ```
 
 即使是下面这一行提供的信息也比要求的少：
 
 ```php
+
 getData();
+
 ```
 
 你希望看到这样一行：
 
 ```php
+
 getAllCustomerNames();
+
 ```
 
 ### 使用 include 文件组织
@@ -9037,17 +12475,24 @@ getAllCustomerNames();
 
 
 
-![check](img/check.png) 将你的函数放在 `include` 文件中。你不需要在脚本中编写函数的声明；你可以将它们放在一个 `include` 文件中。如果你有很多函数，可以将相关的函数组织到几个 `include` 文件中，例如 `data_functions.inc` 和 `form_functions.inc`。在脚本的顶部使用 `include` 语句，只读取脚本中用到的函数。
+![check](img/check.png) 将你的函数放在 `include` 文件中。你不需要在脚本中编写函数的声声明；你可以将它们放在一个 `include` 文件中。如果你有很多函数，可以将相关的函数组织到几个 `include` 文件中，例如 `data_functions.inc` 和 `form_functions.inc`。在脚本的顶部使用 `include` 语句，只读取脚本中用到的函数。
 
 ![check](img/check.png) 存储网站上所有文件共有的语句。大多数网站都有许多具有许多共同元素的网页。例如，所有网页都以 `<html>`、`<head>` 和 `<body>` 标签开头。如果你将这些共同语句存储在一个 true `include` 文件中，你就可以在每个网页中包含它们，从而确保你的所有页面看起来都一样。例如，你可能在 `include` 文件中拥有以下语句：
 
 ```html
+
 <html>
+
 <head><title><?php echo $title ?></title></head>
+
 <body topmargin="0">
+
 <p style="text-align: center">
+
     <img src="logo.gif" width="100" height="200">
+
 <hr color="red" />
+
 ```
 
 如果你在网站上每个脚本的顶部包含此文件，你就可以节省大量的打字工作，并且知道你的所有页面都是匹配的。此外，如果你想更改所有页面的任何外观，你只需要在一个地方进行更改——在 `include` 文件中。
@@ -9080,14 +12525,19 @@ PHP 提供了四种 `include` 语句：
 例如，你可能想在不同的日期显示不同的消息。你可能将这些消息存储在以消息出现日期命名的文件中。例如，你可以有一个名为 `Sun.inc` 的文件，内容如下：
 
 ```html
+
 <p>尽管去吧。睡会儿吧。今天不用上班。</p>
+
 ```
 
 以及一周所有天的类似文件。可以使用以下语句显示当日的正确消息：
 
 ```php
+
 $today = date("D");
+
 include("$today".".inc");
+
 ```
 
 在第一条语句之后，`$today` 包含周几的缩写。`date` 语句在本小型书籍的[第一章]中讨论过。第二条语句使用存储在 `$today` 中的日期包含正确的文件。如果 `$today` 包含 `Sun`，该语句将包含名为 `Sun.inc` 的文件。
@@ -9101,10 +12551,15 @@ include("$today".".inc");
 如果 Web 服务器配置为仅处理 `.php` 扩展名文件的 PHP 部分，且 `secretpasswords.inc` 包含以下语句：
 
 ```php
+
 <?php
+
   $mysecretaccount="account48756";
+
   $mypassword="secret";
+
 ?>
+
 ```
 
 Web 服务器将乐意地向用户显示 `secretpasswords.inc` 的内容。你可以通过以下方式进行保护：
@@ -9116,21 +12571,25 @@ Web 服务器将乐意地向用户显示 `secretpasswords.inc` 的内容。你�
 要包含隐藏目录（例如 空间之外的目录）的文件，你可以使用文件的完整路径，如下：
 
 ```php
+
 include("d:/hidden/secretpasswords.inc");
+
 ```
 
 然而，PHP 允许你设置一个 `include` 目录。你可以仅使用文件名包含包含目录中的文件。
 
 ### 设置包含目录
 
-PHP 在当前目录（即你的网页文件所在的目录）以及 `php.ini` 文件设置指定的的一个或多个目录中查找 `include` 文件。你无需指定路径即可包含包含目录中的文件。
+PHP 在当前目录（即你的网页文件所在的目录）以及 `php.ini` 文件设置指定的的一个或多个目录中查找 `include` 文件。你无需指指定路径即可包含包含目录中的文件。
 
 你可以通过 `phpinfo()` 语句查看当前的 `include` 目录位置。在输出中，在 PHP Core 部分，你可以找到 `include_path` 设置，它显示了当前 `include` 目录的位置。例如，在 PHP 5 中，默认位置可能是 `c:\php5\pear`。
 
 你可以在 `php.ini` 文件中更改 `include` 目录设置。找到 `include_path` 设置并将其更改为所需目录的路径，如下：
 
 ```ini
+
 include_path=".;c:\php\include";     # 用于 Windows
+
 ```
 
 
@@ -9138,7 +12597,9 @@ include_path=".;c:\php\include";     # 用于 Windows
 
 
 ```php
+
 include_path=".:/user/local/include"; # 用于 Unix/Linux
+
 ```
 
 这两条语句都指定了 PHP 查找 `include` 文件的两个目录。第一个目录是 `dot`（意味着当前目录），接着是第二个目录 `path`。你可以指定任意数量的 `include` 目录，PHP 将按照它们列出的顺序进行搜索以找到 `include` 文件。目录路径在 Windows 上使用分号 `;` 分隔，在 Unix 和 Linux 上使用冒号 `:` 分隔。
@@ -9146,7 +12607,9 @@ include_path=".:/user/local/include"; # 用于 Unix/Linux
 如果你无法在 `php.ini` 中自行设置路径，可以使用以下语句在每个独立脚本中设置路径：
 
 ```php
+
 ini_set("include_path","d:\hidden");
+
 ```
 
 该语句仅在脚本运行期间将 `include_path` 设置为指定的目录。它不会为整个网站设置该目录。
@@ -9154,13 +12617,17 @@ ini_set("include_path","d:\hidden");
 要访问 `include` 目录中的文件，只需使用文件名，如下所示。你不需要使用完整路径名。
 
 ```php
+
 include("secretpasswords.inc");
+
 ```
 
 如果你的 `include` 文件不在 `include` 目录中，你可能需要在 `include` 语句中使用完整路径名。如果文件与脚本位于同一目录中，仅需文件名即可。然而，如果文件位于另一个目录（例如脚本所在目录的子目录或 Web 之外的隐藏目录），你需要使用文件的完整路径名，如下：
 
 ```php
+
 include("d:\hidden\secretpasswords.inc");
+
 ```
 
 # 第 3 章：PHP 与你的操作系统
@@ -9176,7 +12643,7 @@ include("d:\hidden\secretpasswords.inc");
 
 本书描述了如何结合使用 HTML、PHP、MySQL 和 CSS 等工具来开发动态 Web 应用。HTML 和 CSS 提供了页面的呈现和标记，而 PHP 则显示网页并与 MySQL 交互，以检索应用程序检索和存储数据。对于大多数 Web 应用程序，PHP 只需要与 MySQL 交互。然而，某些情况需要更复杂的 Web 应用程序。该应用程序可能需要与操作系统或系统上的其他软件交互。
 
-照片库就是一个可能需要与你的操作系统交互的 Web 应用。你的照片库可能允许用户将图形文件上传到你的应用程序中。对于这样的应用程序，你可能需要管理用户上传的文件。你可能需要对它们进行重命名、移动或删除。你可能需要知道照片何时被上传或最后何时何时被访问。PHP 提供了管理文件系统所需的所有功能，我们将帮助你理解如何进行操作。
+照片库就是一个可能需要与你的操作系统交互的 Web 应用。你的照片库可能允许用户将图形文件上传到你的应用程序中。对于这样的应用程序，你可能需要管理用户上传的文件。你可能需要对它们进行重命名、移动或删除。你可能需要知道照片何时被上传或最后何时何时被访问。PHP 提供了管理文件系所需的所有功能，我们将帮助你理解如何进行操作。
 
 PHP 还允许你运行计算机上的任何程序，无论它是否是 PHP 程序。通过 PHP 代码，你可以使用文件传输协议 (FTP) 在计算机之间传输文件。你可以在数据库以外的文件中存储信息。本章将为你提供使用 PHP 在计算机上完成几乎你所想象的任何操作所需的信息。本章还提供了关于执行操作系统命令固有的安全风险的信息。本章最后介绍了通过名为 SQLite 的实用程序存储数据的快速方法。
 
@@ -9199,16 +12666,23 @@ PHP 还允许你运行计算机上的任何程序，无论它是否是 PHP 程�
 你可以使用 `file_exists` 语句来判断文件是否存在，如下：
 
 ```php
+
 $result = file_exists("stuff.txt");
+
 ```
 
 执行该语句后，`$result` 包含 `true` 或 `false`。该函数通常用于条件判断，例如：
 
 ```php
+
 if(!file_exists("stuff.txt"))
+
 {
+
 echo "File not found!\n";
+
 }
+
 ```
 
 当你知道文件存在时，可以获取有关它的信息。表 3-1 获取信息的函数
@@ -9233,7 +12707,9 @@ echo "File not found!\n";
 返回关于路径/文件名有用信息的函数是 `pathinfo()`。你可以使用以下语句：
 
 ```php
+
 $pinfo = pathinfo("/topdir/nextdir/stuff.txt");
+
 ```
 
 
@@ -9257,32 +12733,47 @@ $pinfo = pathinfo("/topdir/nextdir/stuff.txt");
 你可以将现有文件复制到新文件中。复制后，你将拥有两个不同名称的文件副本。复制文件对于备份重要文件通常有用。要复制文件，请使用 `copy` 语句，如下：
 
 ```php
+
 copy("fileold.txt","filenew.txt");
+
 ```
 
 该语句将现有文件 `fileold.txt` 复制到 `filenew.txt`。如果已经存在名为 `filenew.txt` 的文件，它将被被覆盖。如果你不想覆盖现有文件，可以使用以下语句防止发生：
 
 ```php
+
 If(!file_exists("filenew.txt"))
+
 {
+
     copy("fileold.txt","filenew.txt");
+
 }
+
 else
+
 {
+
     echo "File already exists!\n";
+
 }
+
 ```
 
 你可以通过使用路径作为目标将文件复制到不同的目录，如下：
 
 ```php
+
 copy("fileold.txt","newdir/filenew.txt");
+
 ```
 
 你可以使用 `rename` 语句重命名文件，如下：
 
 ```php
+
 rename("oldname.txt","newname.txt");
+
 ```
 
 如果你尝试将文件重命名为已存在的同名文件，将显示如下警告，且文件不会被重命名：
@@ -9292,7 +12783,9 @@ rename("oldname.txt","newname.txt");
 要删除不需要的文件，请使用 `unlink` 语句，如下：
 
 ```php
+
 unlink("badfile.txt");
+
 ```
 
 执行该语句后，文件将被删除。
@@ -9308,7 +12801,9 @@ unlink("badfile.txt");
 要创建一个目录，请使用 `mkdir` 函数，如下：
 
 ```php
+
 mkdir("testdir");
+
 ```
 
 该语句在脚本所在的目录中创建一个名为 `testdir` 的新目录。也就是说，如果脚本是 `/test/test.php`，则新目录就是 `/test/testdir`。如果已经存在同名的目录，将显示如下警告，且不会创建新目录：
@@ -9318,14 +12813,23 @@ mkdir("testdir");
 你可以使用以下语句先检查目录是否已存在：
 
 ```php
+
 If(!is_dir("mynewdir"))
+
 {
+
     mkdir("mynewdir");
+
 }
+
 else
+
 {
+
     echo "Directory already exists!";
+
 }
+
 ```
 
 创建完成后，你可以通过将文件复制到目录内或移出目录来组织其内容。复制文件的描述在在本章前面的 复制、重命名和删除文件 节中介绍。
@@ -9333,13 +12837,17 @@ else
 要在另一个目录中创建目录，请使用完整路径，如下：
 
 ```php
+
 mkdir("/topdir/nextdir/mynewdir");
+
 ```
 
 你可以使用相对路径来创建新目录，如下：
 
 ```php
+
 mkdir("../mynewdir");
+
 ```
 
 使用该语句，如果你的脚本是 `/topdir/test/makedir.php`，则新目录是 `/topdir/mynewdir`。
@@ -9347,7 +12855,9 @@ mkdir("../mynewdir");
 要切换到不同的目录，使用以下语句：
 
 ```php
+
 chdir("../anotherdir");
+
 ```
 
 ### 构建目录中所有文件的列表
@@ -9357,7 +12867,9 @@ chdir("../anotherdir");
 PHP 提供了打开和读取目录的函数。要打开目录，使用 `opendir` 语句，如下：
 
 ```php
+
 $dh = opendir("/topdir/testdir");
+
 ```
 
 如果你尝试打开一个不存在的目录，将显示如下警告：
@@ -9367,16 +12879,23 @@ $dh = opendir("/topdir/testdir");
 在新语句中，变量 `$dh` 是一个目录句柄，指向打开的目录，你可以后用它读取目录。要读取目录的文件，使用 `readdir` 函数：
 
 ```php
+
 $filename = readdir($dh);
+
 ```
 
-执行该语句后，`$filename` 包含文件名。存储在变量中的是文件名而不是文件的完整路径。要读取目录中的所有文件名，可以使用 `while` 循环：
+执行该语句后，$filename 包含文件名。存储在变量中的是文件名而不是文件的完整路径。要读取目录中的所有文件名，可以使用 `while` 循环：
 
 ```php
+
 while($filename = readdir($dh))
+
 {
+
     echo $filename;
+
 }
+
 ```
 
 假设你想创建一个显示指定目录下所有图像的图库。以下脚本展示了如何实现 列表 3-1。
@@ -9384,30 +12903,55 @@ while($filename = readdir($dh))
 #### 列表 3-1：创建一个图库的脚本
 
 ```php
+
 <?php
+
 /*
+
  * 脚本名称: displayGallery
+
  * 描述: 显示目录中的所有图像。
+
  */
+
 echo "<html><head><title>Image Gallery</title></head><body>";
+
 $dir = "../testdir/";
+
 $dh = opendir($dir);
+
 while($filename = readdir($dh))
+
 {
+
     $filepath = $dir.$filename;
+
     if(is_file($filepath) and ereg("\.jpg$",$filename))
+
     {
+
         $gallery[] = $filepath;
+
     }
+
 }
+
 sort($gallery);
+
 foreach($gallery as $image)
+
 {
+
     echo "<hr />";
+
     echo "<img src='$image' /><br />";
+
 }
+
 echo "</body></html>";
+
 ?>
+
 ```
 
 下文对脚本的讨论引用列表 3-1](#23_9781118213704-bk04ch03.html_l1) 中的行号：
@@ -9438,13 +12982,21 @@ PHP 允许你通过以下任何方法使用系统命令或运行其他语言的�
 如果你的操作系统允许对输出进行管道（pipe）或重定向，你可以在 `PHP` 中执行的系统命令中使用管道或重定向。如果你的操作系统允许在一行中输入两个命令，你就可以将两个命令放入从 `PHP` 执行的单条命令中。以下示例命令在 `PHP` 中执行是有效的，具体取决于操作系统：
 
 ```
+
 dir
+
 rm badfile.txt
+
 dir | sort
+
 cd c:\php ;      (在 Windows 中无效)
+
 "cd c:\php && dir"  (Windows)
+
 dir > dirfile
+
 sort < unsortedfile.txt
+
 ```
 
 ![technicalstuff.eps](img/technicalstuff_fmt.png) 在某些情况下，你想要运行一个需要长时间才能完成的系统命令。你可以在后台运行该系统命令（如果你的操作系统支持），同时让 `PHP` 继续执行脚本。如果你这样做，你需要将输出重定向到文件，而不是返回给脚本，这样 `PHP` 才能在系统命令完成之前继续运行。
@@ -9453,59 +13005,106 @@ sort < unsortedfile.txt
 
 ### 使用反引号
 
-执行系统命令的一种简单方法是将命令放在两个反引号（`` ``）之间，如下：
+执系统命令的一种简单方法是将命令放在两个反引号（`` ``）之间，如下：
 
 ```php
+
 $result = `dir c:\php`;
+
 ```
 
 变量 `$result` 包含语句的输出 —— 在这种情况下，它是 `c:\php` 目录下的文件列表。如果你 `echo` `$result`，将显示以下输出：
 
 ```
+
 Volume in drive C has no label.
+
 Volume Serial Number is 58B2-DBD6
+
 Directory of c:\php
+
 10/10/2013  05:43 PM    <DIR>           .
+
 10/10/2013  05:43 PM    <DIR>           ..
+
 10/10/2013  04:53 PM    <DIR>           dev
+
 10/10/2013  04:53 PM    <DIR>           ext
+
 10/10/2013  04:53 PM    <DIR>           extras
+
 08/30/2013  07:11 AM              417,792 fdftk.dll
+
 08/30/2013  07:11 AM               90,112 fribidi.dll
+
 08/30/2013  07:11 AM              346,624 gds32.dll
+
 08/30/2013  07:11 AM                   90 go-pear.bat
+
 08/30/2013  07:11 AM                  96,317 install.txt
+
 08/30/2013  07:11 AM             1,097,728 libeay32.dll
+
 08/30/2013  07:11 AM                166,912 libmcrypt.dll
+
 08/30/2013  07:11 AM                   165,643 libmhash.dll
+
 08/30/2013  07:11 AM              2,035,712 libmysql.dll
+
 08/30/2013  07:11 AM              385,024 libswish-e.dll
+
 08/30/2013  07:11 AM                    3,286 license.txt
+
 08/30/2013  07:11 AM                    5,344 msql.dll
+
 08/30/2013  07:11 AM                   168,858 news.txt
+
 08/30/2013  07:11 AM                  278,800 ntblib.dll
+
 10/10/2013  04:53 PM    <DIR>           PEAR
+
 08/30/2013  07:11 AM                4,017 php-cgi.exe
+
 08/30/2013  07:11 AM                3,825 php-win.exe
+
 08/30/2013  07:11 AM                3,821 php.exe
+
 08/30/2013  07:11 AM                2,523 php.gif
+
 08/30/2013  07:11 AM               46,311 php.ini-dist
+
 08/30/2013  07:11 AM               49,953 php.ini-recommended
+
 08/30/2013  07:11 AM               36,924 php5apache.dll
+
 08/30/2013  07:11 AM               36,925 php5apache2.dll
+
 08/30/2013  07:11 AM               36,927 php5apache2_2.dll
+
 08/30/2013  07:11 AM               36,932 php5apache2_filter.dll
+
 08/30/2013  07:11 AM               57,410 php5apache_hooks.dll
+
 08/30/2013  07:11 AM                669,318 php5embed.lib
+
 08/30/2013  07:11 AM                28,731 php5isapi.dll
+
 08/30/2013  07:11 AM                28,731 php5nsapi.dll
+
 08/30/2013  07:11 AM             4,796,472 php5ts.dll
+
 08/30/2013  07:11 AM                86,076 php_mysqli.dll
+
 08/30/2013  07:11 AM                   135 pws-php5cgi.reg
+
 08/30/2013  07:11 AM                   139 pws-php5isapi.reg
+
 08/30/2013  07:11 AM                1,830 snapshot.txt
+
 08/30/2013  07:11 AM              200,704 ssleay32.dll
+
              35 File(s)      11,569,880 bytes
+
 ```
 
 
@@ -9520,19 +13119,25 @@ Directory of c:\php
 你可以通过在你正在执行的系统命令后添加几个额外的字符，来返回或显示操作系统的错误消息。在大多数操作系统上，如果你在系统命令后添加字符 `2>&1`，错误消息将发送到输出重定向的地方。例如，你可以使用以下语句：
 
 ```
+
 $result = system("di c:\php");
+
 ```
 
 当系统命令执行时，`system` 函数会显示目录。然而，注意 `dir` 拼写错了。应该是 `di` 而不是 `dir`。不存在名为 `di` 的系统命令，因此系统命令无法执行，且什么也不会显示。假设你改用以下语句：
 
 ```
+
 $result = system("di c:\php 2>&1");
+
 ```
 
 在这种情况下，就会显示错误消息。在 Windows 上，显示的错误消息如下：
 
 ```
+
 'di' 不是内部或外部命令、可运行的程序或批文件。
+
 ```
 
 ![remember.eps](img/remember_fmt.png) 请确保不要在 `2>&1` 中包含任何空格。该格式要求字符连在一起，不能有空格。
@@ -9544,8 +13149,11 @@ $result = system("di c:\php 2>&1");
 ![remember.eps](img/remember_fmt.png) 只要你只执行自己编写的命令（如 `dir` 或 `ls`），你就是安全的。但当你开始执行包含用户发送的数据的命令时，你需要极其小心。例如，假设你有一个应用程序，用户在表单中输入名称，然后你的应用程序根据用户发送的名称创建一个目录。用户在名为 `directoryName` 的表单字段中输入 `Smith`。你处理表单的脚本有如下命令：
 
 ```
+
 $directoryName = $_POST['directoryName'];
+
 exec("mkdir $directoryName");
+
 ```
 
 因为 `$directoryName = Smith`，执行的系统命令是 `mkdir Smith`。目录被创建，大家都很开心。
@@ -9553,11 +13161,14 @@ exec("mkdir $directoryName");
 然而，假设用户在表单中输入了 `Smith; rm *`。在这种情况下，`$directoryName = Smith;rm *`。现在执行的系统命令是 `mkdir Smith;rm *`。在许多操作系统（如 Unix 和 Linux）中，分号字符分隔两个命令，以便在一行内输入两个命令。哎呀！命令的执行情况如下：
 
 ```
+
 mkdir Smith
+
 rm *
+
 ```
 
-现在你遇到问题了。目录 `Smith` 被创建了，当前目录下的所有文件都被删除了。
+现在你遇到问题了。目录 `Smith` 被创建了，当前目下的所有文件都被删除了。
 
 如果你在系统命令中使用变量，必须谨慎使用。你必须知道它是从哪里而来的。如果它来自脚本外部，你需要在使用它之前检查该变量的值。在前面的示例中，你可以添加代码，让脚本在 `mkdir` 命令中使用变量之前进行检查，确保它只包含字母和数字。（本微型的第 2 章 描述了如何使用 `if` 语句执行此类检查。）
 
@@ -9574,7 +13185,9 @@ FTP 是客户端/服务器软件。要在你的计算机和远程计算机之间
 要在你的脚本中使用 `FTP`，在安装 PHP 时需要启用 FTP 支持。如果你为 Windows 安装了 PHP，则不需要进行额外操作来启用 FTP 支持。如果你在 Unix、Linux 或 Mac 上编译 PHP 并想要启用 FTP 支持，可以使用 FTP 支持安装选项，如下所示：
 
 ```
+
 --enable-ftp
+
 ```
 
 在本节中，我们将告诉你关于登录 FTP 服务器、访问目录列表、在 FTP 服务器与之间传输文件，以及使用各种函数完成 FTP 相关任务所需要的的知识。
@@ -9584,13 +13197,17 @@ FTP 是客户端/服务器软件。要在你的计算机和远程计算机之间
 要连接到你想要交换文件的计算机上的 FTP 服务器，请使用 `ftp_connect` 函数，如下：
 
 ```
+
 $connect = ftp_connect("janet.valade.com");
+
 ```
 
 或者，你可以使用 IP 地址连接，如下：
 
 ```
+
 $connect = ftp_connect("172.204.2");
+
 ```
 
 连接成功后，你必须登录 FTP 服务器。你需要一个用户 ID 和密码来登录。你可能有自己的个人 ID 和密码，也可能正在使用任何人都可以使用的通用 ID 和密码。互联网上的一些公共网站允许任何人使用用户 ID `anonymous` 和用户的电子邮件地址作为密码进行登录。为了安全起见，最好将用户 ID 和密码放在单独的文件中并在需要时包含该文件。
@@ -9598,20 +13215,27 @@ $connect = ftp_connect("172.204.2");
 `ftp_login` 函数允许你在建立连接后登录服务器。该语句假设你已经将帐户和密码存储在变量中，如下：
 
 ```
+
 $login_result = ftp_login($connect,$passwd);
+
 ```
 
 如果你尝试在未建立连接的情况下登录，你会看到以下警告：
 
 ```
+
 Warning: ftp_login() expects parameter 1 to be resource, boolean given in d:\test1\test13.php on line 9
+
 ```
 
 警告并没有停止程序。登录失败了，但脚本继续执行，这可能不是你想要的。由于脚本的大部分内容依赖于成功的 FTP 连接，你可能希望函数失败时停止脚本。以下语句会在函数失败时停止脚本：
 
 ```
+
 $connect = ftp_connect("janet.valade.com") or die("Can't connect to server");
+
 $login_result = ftp_login($connect,$passwd) or die("Can't login to server");
+
 ```
 
 登录 FTP 服务器后，你可以向它发送请求以完成任务，例如获取目录列表或上传和下载文件，如下节所示。
@@ -9621,25 +13245,35 @@ $login_result = ftp_login($connect,$passwd) or die("Can't login to server");
 一个常见的任务是获取目录列表。`ftp_nlist` 语句从远程计算机获取目录列表并将其存储在数组中，如下：
 
 ```
+
 $filesArr = ftp_nlist($connect,"data");
+
 ```
 
 括号中的第二个参数是目录名称。如果你不知道目录名称，可以请求 FTP 服务器向你发送当前目录名称，如下：
 
 ```
+
 $directory_name = ftp_pwd($connect);
+
 $filesArr = ftp_nlist($connect,$directory_name);
+
 ```
 
 
 
-在 `ftp_nlist` 语句执行后，FTP 发送的目录列表存储在一个数组中，数组的每个元素存储一个文件名。然后你可以如下所示从数组中显示目录列表：
+在 `ftp_nlist` 语句执行后，FTP 发送的目录列表存储在一个数组中，数组的每个元素存储一个文件名。然后你可以如下所示从数组中显示目列表：
 
 ```php
+
 foreach($filesArr as $value)
+
 {
+
     echo "$value\n";
+
 }
+
 ```
 
 ## 使用 FTP 下载和上传文件
@@ -9647,7 +13281,9 @@ foreach($filesArr as $value)
 你可以使用 `ftp_get` 函数从远程计算机下载文件。在登录 FTP 服务器后，执行以下语句可以从远程计算机下载一个文件：
 
 ```php
+
 ftp_get($connect,"newfile.txt","data.txt",FTP_ASCII);
+
 ```
 
 第一个文件名 `newfile.txt` 是文件下载到你的计算机后将具有的名称。第二个文件名 `data.txt` 是你想要下载的文件的现有名称。
@@ -9663,7 +13299,9 @@ ftp_get($connect,"newfile.txt","data.txt",FTP_ASCII);
 你可以使用一个名为 `ftp_put` 的类似函数上传文件。以下语句上传一个文件：
 
 ```php
+
 ftp_put($connect,"newfile.txt","data.txt",FTP_ASCII);
+
 ```
 
 第一个文件名 `newfile.txt` 是文件上传到远程计算机后将具有的名称。第二个文件名 `data.txt` 是你想要上传的文件的现有名称。
@@ -9671,7 +13309,9 @@ ftp_put($connect,"newfile.txt","data.txt",FTP_ASCII);
 当你完成通过 FTP 连接传输文件后，可以使用以下语句关闭连接：
 
 ```php
+
 ftp_close($connect);
+
 ```
 
 Listing 3-2 中的脚本下载目录中所有具有 `.txt` 扩展名的文件。这些文件通过 FTP 连接从远程计算机下载。
@@ -9679,28 +13319,49 @@ Listing 3-2 中的脚本下载目录中所有具有 `.txt` 扩展名的文件。
 ### 列表 3-2：通过 FTP 下载文件
 
 ```php
+
 <?php
+
 /* 脚本名称：通过 FTP 下载文件
+
    描述：下载目录中所有具有 .txt 扩展的文件
+
 */
+
 include("ftpstuff.inc");
+
 $servername = "ftp.example.com";
+
 $userID = "user";
+
 $passwd = "password";
+
 $connect = ftp_connect($servername, $userID, $passwd);
 
 if ($connect) {
+
     $filesArr = ftp_nlist($connect);
+
     foreach ($filesArr as $value) {
+
         if (strpos($value, ".txt") !== false) {
+
             ftp_get($connect, "newfile.txt", $value, FTP_ASCII);
+
         }
+
     }
+
     ftp_close($connect);
+
 } else {
+
     echo "无法连接 FTP 服务器";
+
 }
+
 ?>
+
 ```
 
 
@@ -9717,13 +13378,17 @@ if ($connect) {
 你可以使用以下语句打开文件 `file1.txt` 并读取其中的信息：
 
 ```php
+
 $fh = fopen("file1.txt", "r");
+
 ```
 
 根据该语句，PHP 会在当前目录查找 `file1.txt`，当前目录就是你的 PHP 脚本所在的目录。如果找不到文件，可能会显示或不显示类似下面的警告信息，这取决于设置的错误级别，详见本型书的第 1 章：
 
 ```
+
 Warning: fopen(file1.txt): failed to open stream: No such file or directory in d:\test2.php on line 15
+
 ```
 
 ![warning_bomb.eps](img/warning_bomb_fmt.png) 记住，警告条件不会停止脚本。脚本会继续运行，但文件没有打开，因此稍后任何读取或写入该文件的语句都不会执行。
@@ -9731,8 +13396,11 @@ Warning: fopen(file1.txt): failed to open stream: No such file or directory in d
 如果无法打开文件，你可能希望脚本停止。你需要使用 `die` 语句手动实现这一点，如下：
 
 ```php
+
 $fh = fopen("file1.txt", "r")
+
      or die("Can't open file");
+
 ```
 
 `die` 语句会停止脚本并显示指定的消息。
@@ -9742,7 +13410,9 @@ $fh = fopen("file1.txt", "r")
 你可以使用以下类型的语句打开指定目录中的文件以存储信息：
 
 ```php
+
 $fh = fopen("c:/testdir/file1.txt", "w");
+
 ```
 
 如果文件不存在，它将在指定的目录中创建。然而，如果目录不存在，则不会创建目录并会显示警告。（你必须在尝试向目录写入文件之前先创建目录。）
@@ -9750,10 +13420,15 @@ $fh = fopen("c:/testdir/file1.txt", "w");
 在尝试向目录写入文件之前，可以使用以下语句检查目录是否存在：
 
 ```php
+
 if(is_dir("c:/tester"))
+
 {
+
     $fh = fopen("c:/testdir/file1.txt", "w");
+
 }
+
 ```
 
 通过这些语句，只有当路径/文件名存在且是一个目录时，`fopen` 语句才会执行。
@@ -9763,7 +13438,9 @@ if(is_dir("c:/tester"))
 你也可以使用下面的语句打开另一个网站上的文件：
 
 ```php
+
 $fh = fopen("http://janet.valade.com/index.html", "r");
+
 ```
 
 ![tip.eps](img/tip_fmt.png) 你只能将 URL 用于读模式，不能用于写模式，而且有更好的方法——即 cURL 函数。有关 cURL 函数的更多信息，请参阅 http://php.net/manual/en/book.curl.php 中的 PHP 手册。
@@ -9773,7 +13450,9 @@ $fh = fopen("http://janet.valade.com/index.html", "r");
 在完成对文件的读取或写入后，使用以下语句关闭文件：
 
 ```php
+
 fclose($fh);
+
 ```
 
 在该语句中，$fh` 是你在打开文件时创建的文件句柄变量。
@@ -9783,22 +13462,30 @@ fclose($fh);
 打开文件后，你可以使用 `fwrite` 语句写入内容，其通用格式如下：
 
 ```php
+
 fwrite($fh, "datatosave");
+
 ```
 
 在该语句中，$fh 是你打开包含文件指针的文件时创建的文件句柄，它指向打开的文件，而 `datatosave` 是要存储在文件中的信息。信息可以是字符串或变量。例如，你可以使用以下语句：
 
 ```php
+
 $today = date("Y-m-d");
+
 $fh = fopen("file2.txt", "a");
+
 fwrite($fh, "$today\n");
+
+
+
 fclose($fh);
-```
 
 这些语句将当前日期存储在名为 `file2.txt` 的文件中。注意文件是以追加模式（`a`）打开的。如果文件不存在，将创建它并将日期作为第一行写入。如果文件存在，日期将添加到文件末尾。通过这种方式，你创建了一个日志文件，存储脚本运行的日期列表。`fwrite` 语句会存储你发送的内容。在 `fwrite` 语句执行两次后，`file2.txt` ：
 
 ```
 2013-10-22
+
 2013-10-22
 ```
 
@@ -9814,7 +13501,7 @@ fclose($fh);
 $line = fgets($fh)
 ```
 
-在该语句中，$fh` 持有指向打开文件的指针。该语句读取字符串，直到遇到行尾或文件末尾（以先者为准），并将字符串存储在 `$line` 中。要读取整个文件，你需要继续读取行直到到达文件末尾。PHP 识别文件末尾并提供函数 `feof` 来告诉你何时到达文件末尾。以下语句读取并显示文件中所有的行：
+在该语句中，`$fh` 持有指向打开文件的指针。该语句读取字符串，直到遇到行尾或文件末尾（以先者为准），并将字符串存储在 `$line` 中。要读取整个文件，你需要继续读取行直到到达文件末尾。PHP 识别文件末尾并提供函数 `feof` 来告诉你何时到达文件末尾。以下语句读取并显示文件中所有的行：
 
 ```php
 while(!feof($fh))
@@ -9825,15 +13512,6 @@ while(!feof($fh))
 ```
 
 在第一行中，当到达文件末尾时，`feof($fh)` 返回 `true`。感叹号否定了所测试的条件，使得 `while` 语句只要未到达文件末尾就会继续运行。当到达文件末尾时，`while` 停止。
-
-如果到达文件末尾，`while` 停止。（等等，原文说的是“当到达文件末尾时，`while` 停止”。）
-
-如果到达文件末尾，`feof($fh)` 返回 `true`。感叹号否定了所测试的条件，使得 `while` 语句只要未到达文件末尾就会继续运行。当到达文件末尾时，`while` 停止。
-
-（注：此处原文存在大量重复段落，已按要求处理核心逻辑）
-
-
-
 
 `1` 告诉 PHP 在 `include` 目录下查找 `file2.txt`，而不是在当前目录查找。
 
@@ -9855,6 +13533,7 @@ echo $content;
 
 ```
 2013-10-22
+
 2013-10-22
 ```
 
@@ -9862,7 +13541,7 @@ echo $content;
 
 ![warning_bomb.eps](img/warning_bomb_fmt.png) `file_get_contents` 函数在 4.3.0 版本中引入。在较旧版本的 PHP 中不可用。
 
-#与其他程序交换数据
+# 与其他程序交换数据
 
 你有时需要向其他程序提供信息，或从其他程序向 PHP 读取信息。平面文件（Flat files）对于此类任务特别有用，我们在这里解释如何执行这类任务。
 
@@ -9870,7 +13549,7 @@ echo $content;
 
 几乎所有软件都有从平面文件中读取信息或向平面文件中写入信息的能力。例如，默认情况下，你的文字处理器以自己的格式保存文档，只有该处理器才能理解。但是，你可以选择以文本格式保存文档。文本文档是一个包含文本的平面文件，可以被其他软件读取。你的文字处理器也可以读取文本文件，甚至是其他软件编写的文件。
 
-当你的 PHP 脚本将信息保存到文本文件中时，任何具有读取文件能力的软件都可以读取。例如，大多数文字处理软件都可以读取文本文件。然而，某些软件要求文本文件具有特定格式。例如，地址簿软件程序可能会从平面文件中读取数据，但要求信息位于指定位置——例如，一行的前 20 个字符被视为名称，接下来的 20 个字符视为街道地址，依此类推。你需要知道软件在平面文件中要求的格式。然后在你的 PHP 脚本中使用 `fwrite` 语句按正确的格式写入平面文件，正如本章较早位置的写入文件 节中所讨论的那样。
+当你的 PHP 脚本将信息保存到文本文件中时，任何具有读取文件能力的软件都可以读取。例如，大多数文字处理软件都可以读取文本文件。然而，某些软件要求文本文件具有特定格式。例如，地址簿软件程序可能会从平面文件中读取数据，但要求信息位于指定位置——例如，一行的前 20 个字符被视为名称，接下来的 20 个字符视为街道地址，依此类推。你需要知道软件在平面文件中要求的格式。然后在你的 PHP 脚本中使用 `fwrite` 语句按正确的格式写入平面文件，正如本章较早位置的写入文件节中所讨论的那样。
 
 ## 在逗号分隔格式中交换数据
 
@@ -9908,14 +13587,11 @@ fclose($fh);
 
 ### 读取逗号分隔文件
 
-PHP 可以通过 `file` 或 `fgets` 函数读取 CSV 文件，正如本章较早位置的将文件读取到数组 节所述。然而，PHP 提供了一个名为 `fgetcsv` 的函数，专门设计用于读取 CSV 文件。当你使用此函数读取 CSV 文件中的一行时，该行被存储在数组中，每个列项都是数组中的一个元素。例如，你可以使用该函数读取地址簿 CSV 文件的第一行，如下：
+PHP 可以通过 `file` 或 `fgets` 函数读取 CSV 文件，正如本章较早位置的将文件读取到数组节所述。然而，PHP 提供了一个名为 `fgetcsv` 的函数，专门设计用于读取 CSV 文件。当你使用此函数读取 CSV 文件中的一行时，该行被存储在数组中，每个列项都是数组中的一个元素。例如，你可以使用该函数读取地址簿 CSV 文件的第一行，如下：
 
 ```php
 $address = fgetcsv($fh,10);
 ```
-
-
-
 
 →12 这一行打开一个文件，文件名是传递给函数并带有 `.tsv` 扩展名的。文件以追加模式打开。该文件位于脚本的当前目录。如果文件位于另一个目录，且你认为文件可能无法以写入模式打开，请在此处使用 `if` 语句来测试文件是否已打开，如果没有打开则执行某些操作。
 
@@ -9952,7 +13628,7 @@ SQLite 是一种在平文件中存储数据的快速、简单的方法。然而�
 
 要连接到数据文件，请使用以下 PHP 函数：
 
-```
+```php
 $db = sqlite_open("testdb");
 ```
 
@@ -9960,14 +13636,14 @@ $db = sqlite_open("testdb");
 
 要发送 SQL 查询，请使用 `sqlite_query` 函数，如下：
 
-```
+```php
 $sql = "SELECT * FROM Product";
 $result = sqlite_query($db,$sql);
 ```
 
 检索到的数据以行和列的形式存储在临时表中。你可以使用 PHP 函数从临时数据表中检索一行并将其存储在数组中，以字段名作为数组的键。语句如下：
 
-```
+```php
 $row = sqlite_fetch_array($result);
 ```
 
@@ -9992,7 +13668,7 @@ while($row=sqlite_fetch_asoc($result))
 
 当你完成存储和/或检索数据时，可以使用以下语句关闭数据文件：
 
-```
+```php
 sqlite_close($db);
 ```
 
@@ -10034,9 +13710,6 @@ PHP 4 可以实现功能有限的面向对象编程。通过 PHP 5，PHP 的面�
 面向对象程序的基本元素是对象。将对象理解为物理对象是最容易的。例如，汽车是一个对象。汽车有属性（也称为特征），例如颜色、型号、发动机和轮胎。汽车也有它它可以做的事情，例如向前移动、后退、停车、翻滚和装死（好吧，至少我们的汽车是这样）。
 
 通常来说，对象是名词。人是一个对象。动物、房子、办公室、垃圾桶、大衣、云、行星和按钮也同样如此。然而，对象不仅仅是物理对象。像名词一样，对象通常更具概念性。例如，银行账户不是你手握在手里的东西，但它可以被视为一个对象。计算机账户或抵押贷款也是如此。文件通常是一个对象。数据库也是。电子邮件、地址、歌曲、电视节目、会议和日期都可以是对象。Web 应用程序中的对象可能是目录、目录项目、购物车、客户、订单或客户列表。
-
-
-
 
 类（class）是作为创建对象的模板或模式的 PHP 代码。类定义了对象的属性（properties/attributes）。它还定义了对象可以执行的操作 —— 它的职责（responsibilities）。例如，你写了一个类将汽车定义为四个轮子和一个引擎，该类列出了汽车可以做的事情，比如向前移动和停车。然后，根据该类，你可以编写一条类似下方的语句来创建一个汽车对象：
 
@@ -10100,12 +13773,9 @@ $price = 10;
 
 当你规划面向对象的程序时，识别对象的最佳策略是列出你能想到的所有对象 —— 即所有与你的项目有任何关系的名词。有时，程序员可以从项目建议书文档中提取所有的名词，开发出一个相当全面的可能的对象列表。
 
-
-
-
 在你创建了一个长长的可能对象列表后，下一个任务是尽可能多地删除其中的对象。你应该消除任何重复项、职责重叠的对象以及与你的项目无关的对象。例如，如果你的项目涉及制造一辆汽车，那么你的汽车项目可能需要为汽车的每个部分创建一个对象。另一方面，如果你的项目涉及停车车库的交通控制，你可能只需要一个可以移动的汽车对象；汽车的零件对于这个项目并不重要。
 
-## 为每个对象选择属性和方法
+### 为每个对象选择属性和方法
 
 当你有了一份完整的对象列表时，就可以开始为每个对象制定属性列表了。问问自己你需要了解关于每个对象的哪些信息。例如，对于一个汽车维修项目，你可能需要知道如汽车最后维修的时间、维修历史、任何事故、零件详情等信息。对于一个涉及停车车库交通的项目，你可能只需要知道汽车的尺寸。汽车在停车车库中占了多少空间？
 
@@ -10113,7 +13783,7 @@ $price = 10;
 
 然而，再多想一下，或者进行一些测试，可能会发现你遗漏的活动。例如，账户存储了关于所有者的信息，如姓名和地址。你还记得在客户搬家时包含一个更新这些信息的方法吗？与移动资金相比，这似乎是微不足道的，但如果你无法做到这一点，它就不微不足道了。
 
-## 创建和使用对象
+### 创建和使用对象
 
 在你决定了对象的设计后，就可以创建并使用该对象。创建和使用对象的步骤如下：
 
@@ -10139,7 +13809,7 @@ $price = 10;
 
 你通过编写 `class` 语句来定义类的属性和方法。`class` 语句具有以下通用格式：
 
-```
+```php
 class className
 {
     添加定义属性的语句
@@ -10151,7 +13821,7 @@ class className
 
 所有的属性设置和方法定义都包含在起始和结束的大括号中。如果你想让一个类成为继承属性和方法的子类，请使用类似于下面的语句：
 
-```
+```php
 class whiteRose extends Rose
 {
     添加属性语句
@@ -10161,13 +13831,13 @@ class whiteRose extends Rose
 
 从该类创建的对象可以访问 `whiteRose` 子类和 `Rose` 类的所有属性和方法。然而，`Rose` 类无法访问子类 `whiteRose` 中的属性或方法。想象一下，子类拥有父类拥有的一切，但父类没有子类的任何东西。多么有主意。
 
-接下来的几节将向你展示如何在 `class` 语句中设置属性和定义方法。有关完整 `class` 语句的更全面的示例，请参见本章稍后的将一切整合在一起 节。
+接下来的几节将向你展示如何在 `class` 语句中设置属性和定义方法。有关完整 `class` 语句的更全面的示例，请参见本章稍后的将一切整合在一起节。
 
 ### 设置属性
 
 在定义类时，你在类的顶端声明所有属性，如下所示：
 
-```
+```php
 class Car
 {
     private $color;
@@ -10190,14 +13860,14 @@ class Car
 如果你想为属性设置默认值，你可以这样做，但允许的值是受限的。如下面的示例中详细所示：
 
 - 以下变量声明允许作为默认值：
-```
+```php
 private $color = "black";
 private $gas = 10;
 private $tires = 4;
 ```
 
 - 以下变量声明不允许作为默认值：
-```
+```php
 private $color = "blue"." black";
 private $gas = 10 - 3;
 private $tires = 2 * 2;
@@ -10205,11 +13875,11 @@ private $tires = 2 * 2;
 
 在变量声明中允许数组，只要值是简单的，如下所示：
 
-```
+```php
 private $doors = array("front","back");
 ```
 
-要在创建对象时设置或更改变量的值，请使用构造函数（见本章稍后的编写构造函数 节）或你为此目的编写的方法。
+要在创建对象时设置或更改变量的值，请使用构造函数（见本章稍后的编写构造函数节）或你为此目的编写的方法。
 
 ### 使用 $this 访问属性
 
@@ -10225,17 +13895,13 @@ private $doors = array("front","back");
 
 使用 `$this` 指的是类内部的 `$totalCost`。你可以在以下任何语句中使用 `$this`：
 
-```
+```php
 $this->totalCost = 200.25;
 if($this->totalCost > 1000)
 $product[$this->size] = $price;
 ```
 
 你可以看到，你使用 `$this->varname` 的方式与使用 `$varname` 的方式完全相同。
-
-
-
-
 
 注意美元符号 (`$`) 出现在 `this` 之前，但在 `gas` 之前没有。不要在 `totalCost` 之前使用美元符号——例如 `$this->$totalCost`——因为这会改变你语句的含义。你可能会收到错误信息，也可能不会，但它指向并不是当前类内部的变量 `$totalCost`。
 
@@ -10265,15 +13931,15 @@ class CustomerOrder
   private $total = 0.0;
   function addItem($amount)
   {
-      if(is_numeric($amount)
+      if(is_numeric($amount))
       {
           $this->total = $this->total + $amount;
           echo "$amount added; current total is $this->total";
       }
       else
-      (
+      {
         echo "value passed is not a number.";
-      )
+      }
   }
 }
 ```
@@ -10402,9 +14068,6 @@ class Car
 
 ## 编写构造函数
 
-
-
-
 构造函数是一个特殊的方法，是从 PHP 5 开始引入的，当使用类作为模板创建对象时执行。构造函数不是必须的，如果你不需要在创建对象时设置任何属性值或执行任何操作，就不需要使用构造函数。类只允许一个构造函数。
 
 构造函数有一个特殊的名称，以便 PHP 知道在创建对象时执行该方法。构造函数命名为 `__construct`（两个下划线）。构造方法的形式的形式如下所示：
@@ -10508,7 +14171,7 @@ class Form
       echo "<label style='float: left; width: 20%'>{$this->fields[$j-1]['label']}</label>";
       echo "<input style='width:200px' type='text' name='{$this->fields[$j-1]['name']}</p>";
     }
-    echo "<input type='submit' value='{$this->submit}' style='margin-left: 25%; margin-top: 10px'>";n";
+    echo "<input type='submit' value='{$this->submit}' style='margin-left: 25%; margin-top: 10px'>";
     echo "</form>";
   }
   /* 向表单添加字段的函数。用户需要
@@ -10540,10 +14203,12 @@ class Form
 
 ![check](img/check.png) `addField`: 将字段的名称和标签添加到 `$fields` 数组中。如果用户为表单添加了姓和名的字段，数组可能如下所示：
 
-`$fields[1][name]=first_name`
-`$fields[1][label]=First Name`
-`$fields[2][name]=last_name`
-`$fields[2][label]=Last Name`
+```
+$fields[1][name]=first_name
+$fields[1][label]=First Name
+$fields[2][name]=last_name
+$fields[2][label]=Last Name
+```
 
 依此类推
 
@@ -10551,7 +14216,7 @@ class Form
 
 下一节将描述如何使用类，包括 Listing 4-1 所示的 `Form` 类。
 
-在脚本中使用类
+## 在脚本中使用类
 
 类代码需要位于使用该类的脚本中。大多数情况下，类存储在单独的文件中并包含在任何使用该类的脚本中。
 
@@ -10579,14 +14244,11 @@ $car_Sam->paintCar("blue");
 $name = $customer1->getName();
 ```
 
-
-
-
 从同一个类创建的不同对象是独立的个体。Sam 的车被涂成了蓝色，但 Joe 的车仍然是红色的。Joe 收到了一罚单，但这并没有影响到 Sam。
 
 列表 4-2 中的脚本展示了如何使用在前一节创建并在列表 4-1 中展示的 `Form` 类。
 
-列表 4-2：创建一个表单的脚本
+### 列表 4-2：创建一个表单的脚本
 
 ```php
 <?php
@@ -10637,7 +14299,6 @@ abstract class Message
   }
   abstract public function displayMessage($color);
 }
-
 class GiantMessage extends Message
 {
   public function displayMessage($color)
@@ -10646,7 +14307,6 @@ class GiantMessage extends Message
               this->message_content</h1>";
   }
 }
-
 class BigMessage extends Message
 {
   public function displayMessage($color)
@@ -10684,7 +14344,6 @@ interface Moveable
 {
   function moveForward($distance);
 }
-
 class Car
 {
   protected $gas = 0;
@@ -10694,7 +14353,6 @@ class Car
     echo "<p>At creation, Car contains $this->gas gallons of gas</p>";
   }
 }
-
 class Sedan extends Car implements Moveable
 {
   private $mileage = 18;
@@ -10716,7 +14374,6 @@ $my_car->moveForward(50);
 以下将在将在窗口中显示：
 
 At creation, Car contains 20 gallons of gas
-
 After moving 50 miles, Sedan contains 17.22 gallons of gas
 
 ## 防止更改类或方法
@@ -10735,17 +14392,14 @@ After moving 50 miles, Sedan contains 17.22 gallons of gas
 
 ## 使用异常处理错误
 
-
-
-
 PHP 提供了一个名为 `Exception` 的错误处理类。你可以使用该类来处理脚本中发生的非预期情况。当你定义的非预期情况发生时，方法中的代码会创建一个异常对象。在面向对象的术语中，这被称为“抛出异常”（throwing an exception）。然后，当你使用该类时，会检查是否抛出了异常并执行指定的动作。
 
-## 抛出异常
+### 抛出异常
 
 你可以使用以下语句在方法中抛出异常：
 
 ```php
-throw new Exception("``message");
+throw new Exception("message");
 ```
 
 该语句会创建一个 `Exception` 对象并在对象中存储一条消息。`Exception` 对象有一个 `getMessage` 方法，你可以用它来获取存储的消息。
@@ -10788,8 +14442,8 @@ catch(Exception $e)
 
 上述脚本包含一个 `try` 块和一个 `catch` 块：
 
-- ![check](img/check.png) `try`: 在 `try` 块中，你包含任何认为可能触发异常的语句。在此脚本中，添加过多燃料可能会触发异常，因此将任何 `addGas` 方法调用放在 `try` 块内部。
-- ![check](img/check.png) `catch`: 在 `catch` 块中，你捕获 `Exception` 对象并将其命名为 `$e`。然后你执行 `catch` 块中的语句。其中一条语句是调用 `Exception` 类中名为 `getMessage` 的方法。`getMessage` 函数返回你存储的消息，你的语句输出返回的消息。随后，语句输出换行符，以便消息能正确显示。脚本在 `exit` 语句处停止。
+![check](img/check.png) `try`: 在 `try` 块中，你包含任何认为可能触发异常的语句。在此脚本中，添加过多燃料可能会触发异常，因此将任何 `addGas` 方法调用放在 `try` 块内部。
+![check](img/check.png) `catch`: 在 `catch` 块中，你捕获 `Exception` 对象并将其命名为 `$e`。然后你执行 `catch` 块中的语句。其中一条语句是调用 `Exception` 类中名为 `getMessage` 的方法。`getMessage` 函数返回你存储的消息，你的语句输出返回的消息。随后，语句输出换行符，以便消息能正确显示。脚本在 `exit` 语句处停止。
 
 如果没有抛出异常，`catch` 块将无内容可捕获并被忽略。脚本将继续执行 `catch` 块之后的语句。在这种情况下，如果燃料量没有超过 50 加仑，`catch` 块会被忽略，脚本继续执行 `catch` 块之后的语句。
 
@@ -10836,8 +14490,8 @@ $secondCar = clone $firstCar;
 
 执行这些语句后，你拥有了两辆车：
 
-- ![check](img/check.png) `$firstCar`: 这辆车是红色的，包含十加仑燃料。这十加仑是通过 `addGas` 方法添加的。
-- ![check](img/check.png) `$secondCar`: 这辆车也是红色的，但包含五加仑燃料。复制的车是使用 `Car` 类中的 `__clone` 方法创建的。该方法将燃料设置为 `5`且完全没有设置 `$color`。
+![check](img/check.png) `$firstCar`: 这辆车是红色的，包含十加仑燃料。这十加仑是通过 `addGas` 方法添加的。
+![check](img/check.png) `$secondCar`: 这辆车也是红色的，但包含五加仑燃料。复制的车是使用 `Car` 类中的 `__clone` 方法创建的。该方法将燃料设置为 `5`且完全没有设置 `$color`。
 
 如果在 `Car` 类中没有 `__clone` 方法，PHP 将使用默认的 `__clone` 方法复制所有属性，使得 `$secondCar` 既是红色的又包含十加仑燃料。
 
@@ -10850,7 +14504,6 @@ $secondCar = clone $firstCar;
 ```php
 $my_car = new Car();
 $my_car2 = new Car();
-
 if($my_car == $my_car2) {
    echo "equal";
 }
@@ -10875,26 +14528,26 @@ $my_car2 = clone $my_car;
 
 PHP 提供了几个可以使用来获取对象和类信息的函数：
 
-- ![check](img/check.png) 你可以检查一个类是否存在：`class_exists("classname")`
-- ![check](img/check.png) 你可以使用以下语句测试特定类中是否存在某个属性：`property_exists("classname","propertyname")`
-- ![check](img/check.png) 你可以使用以下语句查找类中的属性及其默认值以及定义的方法：
+![check](img/check.png) 你可以检查一个类是否存在：`class_exists("classname")`
+![check](img/check.png) 你可以使用以下语句测试特定类中是否存在某个属性：`property_exists("classname","propertyname")`
+![check](img/check.png) 你可以使用以下语句查找类中的属性及其默认值以及定义的方法：
 ```php
 get_class_vars("classname");
 get_class_methods("classname");
 ```
 `get_class_` 系列函数返回一个数组。属性数组以属性名为键，以默认值为值。方法数组以数字索引为键，以方法名为值。如果属性或方法是私有的（private），除非在类内部执行，否则函数将不会返回其名称。
 
-- ![check](img/check.png) 你可以使用 PHP 5 引入的 `instanceof` 运算符测试一个对象、其父类或其实现的接口是否是由指定的类创建的：
+![check](img/check.png) 你可以使用 PHP 5 引入的 `instanceof` 运算符测试一个对象、其父类或其实现的接口是否是由指定的类创建的：
 ```php
 if($objectname instanceof "classname")
 ```
-- ![check](img/check.png) 你可以使用以下函数获取对象属性的当前值：
+![check](img/check.png) 你可以使用以下函数获取对象属性的当前值：
 ```php
 get_object_vars($objectname);
 ```
 该函数返回一个包含属性当前值的数组，以属性名为键。
 
- 销毁对象
+## 销毁对象
 
 你可以使用以下语句销毁对象：
 
@@ -10924,10 +14577,6 @@ class Bridge
 ```
 
 如果你使用以下语句，对象将执行创建并销毁：
-
-
-
-
 
 ```php
 $bigBridge = new Bridge;
@@ -10959,7 +14608,7 @@ unset($bigBridge);
 
 服务器本身应该被加固。这通常意味着加固服务器并确保服务器使用防火墙。
 
-### 加固服务器
+#### 加固服务器
 
 通常这意味着通过卸载不必要的服务来加固操作系统。例如，通常没有理由在运行公共网站的同一台服务器上运行打印服务器。
 
@@ -10967,7 +14616,7 @@ unset($bigBridge);
 
 `SELinux` 和 `grSecurity` 等工具也能增强服务器的安全性，并减少成功的攻击者破坏其自身小沙箱之外区域的能力。
 
-### 使用防火墙
+#### 使用防火墙
 
 无论是在服务器本身使用防火墙，还是在互联网与你的网络交汇点使用防火墙，或者两者都用，你应该确保有一个防火墙阻止指向特定允许端口以外的所有端口的连接，例如典型 Web 服务器的 TCP 端口 `80` 和 `443`。
 
@@ -11019,11 +14668,6 @@ unset($bigBridge);
 | `safe_mode_gid = off` | 此设置配合 `safe_mode`，允许 PHP 脚本仅访问所有者和组与运行脚本的用户/组匹配的文件。 |
 | `open_basedir = directory` | 当启用此参数时，PHP 脚本可以仅能访问位于指定目录中的文件。 |
 | `expose_php = off` | 防止 PHP 在发送给用户的 HTTP 头部中泄露自身信息。 |
-
-
-
-
-
 | `register_globals = off` | 如果启用此参数，所有环境变量、`GET`、`POST`、cookie 和服务器变量都注册为全局变量，使得攻击者可以轻易获取。除非你别无选择启用它，否则你应该保持 `register_globals` 为关闭状态。 |
 | `display_errors = off` | 防止 PHP 错误和警告显示给用户。PHP 警告不仅会让你的网站看起来不专业，而且经常会泄露敏感信息，例如路径和 SQL 查询。 |
 | `log_errors = on` | 当启用此参数时，所有的警告和错误都将写入日志文件，你可以稍后在该文件中检查这些警告和错误。 |
@@ -11082,9 +14726,9 @@ $sql = "SELECT * FROM User WHERE username = 'John' OR 'foo' = 'foo' -- ' AND pas
 
 你可以对预期的用户输入数据做几个相当准确的假设。例如，当你询问一个名字时，你预期以下情况为真：
 
-- ![check](img/check.png) 数据是字母的——没有数字。
-- ![check](img/check.png) 名字可能包含空格、单引号或连字符，例如 Mary Jane、O’Hara 或 Anne-Marie。
-- ![check](img/check.png) 数据肯定不包含 HTML 标签或其他代码段。
+![check](img/check.png) 数据是字母的——没有数字。
+![check](img/check.png) 名字可能包含空格、单引号或连字符，例如 Mary Jane、O’Hara 或 Anne-Marie。
+![check](img/check.png) 数据肯定不包含 HTML 标签或其他代码段。
 
 这些假设是测试意外输入的关键。通过使用 PHP 的 `preg_match()` 函数将输入通过正则表达式进行处理，以确定它是否包含任何除空格、单引号或连字符以外的非字母字符。
 
@@ -11121,10 +14765,6 @@ $safe_string = htmlentities($inputString);
 
 坏数据是如何从下拉列表或单选按钮发送的？很简单。有浏览器插件可以在点击提交按钮后更改 `GET` 和 `POST` 数据的值。因此，恶意人员可以简单地将任何值更改为他们想要的任何内容。
 
-
-
-
-
 有时候，当用户未能输入有效数据时，仅仅要求他们返回并重试并不是一个可行的方案。当你不得不根据用户提供的内容来行事时，可以使用一些技术来确保坏数据不会破坏你的应用程序——更糟的是，破坏支持你应用程序的底层系统，例如电子邮件传输和操作系统。接下来的章节将介绍如何防止错误的用户输入搞乱运行。
 
 ## 转换 HTML 特殊字符
@@ -11133,11 +14773,11 @@ $safe_string = htmlentities($inputString);
 
 如果你允许用户输入 HTML，你应该始终使用 `htmlentities()` 函数将 HTML 特殊字符转换为 HTML 实体。`htmlentities()` 函数接受要转换的字符串作为其参数。该函数随后会对以下 HTML 特殊字符进行简单的查找和替换：
 
-- ![check](img/check.png) `&`（和 符号）变为 `&amp;`。
-- ![check](img/check.png) `"`（双引号）变为 `&quot;`。
-- ![check](img/check.png) `'`（单引号）变为 `&#039;`。
-- ![check](img/check.png) `<`（小于）变为 `&lt;`。
-- ![check](img/check.png) `>`（大于）变为 `&gt;`。
+![check](img/check.png) `&`（和 符号）变为 `&amp;`。
+![check](img/check.png) `"`（双引号）变为 `&quot;`。
+![check](img/check.png) `'`（单引号）变为 `&#039;`。
+![check](img/check.png) `<`（小于）变为 `&lt;`。
+![check](img/check.png) `>`（大于）变为 `&gt;`。
 
 ![tip.eps](img/tip_fmt.png) 如果你需要转义 HTML 中每一个具有特殊含义的字符，请使用 `htmlentities()` 而不是 `htmlspecialchars()`。关于 HTML 中具有特殊含义的字符，请参考 [`www.w3schools.com/html/html_entities.asp`](http://www.w3schools.com/html/html_entities.asp)。
 
@@ -11148,6 +14788,8 @@ $safe_string = htmlentities($inputString);
 ```
 file_uploads = On
 ```
+
+
 
 将设置更改为 `Off` 以防止 PHP 脚本上传任何文件。
 
@@ -11177,7 +14819,7 @@ $input = $_POST['input_file'];
 
 if (is_binary($input)) {
     // 正常继续
-}else {
+} else {
     // 拒绝文件，重定向浏览器，等
 }
 ```
@@ -11186,15 +14828,13 @@ if (is_binary($input)) {
 
 ## 使用 FTP 函数确保文件安全上传
 
-Web 应用程序出于各种原因允许用户上传文件是非常普遍的。例如，某些留言板允许用户上传小图片或头像，显示在该用户的每条帖子旁边。其他应用程序允许你上传数据文件进行分析。你可以使用 PHP 内置的 `fopen()` 函数，它会自动打开一个指向文件或 URL 的流，允许用户上传文件。不幸的是，这种方法很容易被恶意用户利用，他们可以使用它从远程服务器将文件上传到你的 Web 服务器。
+Web 应用程序出于各种原因允许用户上传文件是非常普遍的。例如，某些留言板允用户上传小图片或头像，显示在该用户的每条帖子旁边。其他应用程序允许你上传数据文件进行分析。你可以使用 PHP 内置的 `fopen()` 函数，它会自动打开一个指向文件或 URL 的流，允许用户上传文件。不幸的是，这种方法很容易被恶意用户利用，他们可以使用它从远程服务器将文件上传到你的 Web 服务器。
 
 防止这种类型的利用需要你在 `php.ini` 中禁用两个设置：`register_globals` 和 `url_fopen`。禁用这些设置可以防止用户在没有显式开启该功能的情况下使用 PHP 内置的文件上传。
 
 在 `php.ini` 中禁用这两个函数后，你仍然需要允许用户上传文件。使用 PHP 的 FTP 函数集（这比 `fopen()` 方法安全得多）来允许用户上传文件。
 
 你可以非常直观地使用 FTP 函数。首先，建立连接，然后上传你需要的文件，最后关闭连接。列表 5-1 显示了如何在 PHP 中使用 FTP 函数：
-
-列表 5-1: 使用基本 FTP 函数
 
 ```php
 <?php
@@ -11239,17 +14879,13 @@ ftp_close($connection_id);
 
 - 理解 Session 和 Cookie
 
-
-
-
-
 ![arrow.png](img/arrow.png) 使用 sessions
 
 本章将介绍 PHP 用于在多个页面之间跟踪访问者的内置方法，统称为 session（会话）。本章首先介绍 sessions 和 cookies，然后将直接进入正题，向你展示如何使用 sessions 来跟踪访问者。
 
 ## 理解 sessions 和 cookies
 
-你无疑见过某些能够追踪你身份身份的网站，它们可能会在你登录后欢迎你，或者在登录后向你展示有关账户的自定义信息。实现这一功能有几种方法，包括在每次请求时随表单一同发送数据。但这并不安全，对于当今的 Web 应用程序来说也不够灵活。幸运的是，有一种更好的方法——它触手可及：sessions。
+你无疑见过某些能够追踪你身份身份的网站，它们可能会在你登录后欢迎你，或者在登录后向你展示有关账户的自定信息。实现这一功能有几种方法，包括在每次请求时随表单一同发送数据。但这并不安全，对于当今的 Web 应用程序来说也不够灵活。幸运的是，有一种更好的方法——它触手可及：sessions。
 
 ## 查看 sessions
 
@@ -11313,7 +14949,7 @@ if (isset($_GET['cookiecheck'])) {
 
 **图 6-2:** 显示未启用 cookies。
 
-注意：如果你想在禁用 cookies 的情况下测试页面，可以这样做。首先，关闭浏览器然后重新打开（不要进入 `cookie.php` 页面）。在 Internet Explorer 中，进入“Internet 选项”。在“隐私”选项卡上，将设置滑块向上滑动阻止所有 cookie。在 Firefox 中，进入“选项”，并选择“隐私”选项卡。在“历史记录”部分，选择“使用自定义设置”，然后取消勾选“接受网站 cookie”复选框。现在加载 `cookie.php` 页面。
+注意：如果你想在禁用 cookies 的情况下测试页面，可以这样做。首先，关闭浏览器然后重新打开（不要进入 `cookie.php` 页面）。在 Internet Explorer 中，进入“Internet 选项”。在“隐私”选项卡上，将设置滑块向上滑动阻止所有 cookie。在 Firefox 中，进入“选项”，并选择“隐私”选项卡。在“历史记录”部分，选择“使用自定设置”，然后取消勾选“接受网站 cookie”复选框。现在加载 `cookie.php` 页面。
 
 现在你已经知道 cookies 已启用，可以安全地开始使用 sessions 了。
 
@@ -11321,7 +14957,7 @@ if (isset($_GET['cookiecheck'])) {
 
 在启用 cookies 的情况下（大多数浏览器通常都启用），你可以开始使用 sessions 在你的 PHP 应用程序的页面之间存储数据。
 
-##启动 session
+## 启动 session
 
 使用 sessions 的关键是 `session_start()` 函数。你在每个页面上调用 `session_start()`，随后就可以访问 `$_SESSION` 数组中的所有项。
 
@@ -11339,8 +14975,6 @@ session_start();
 这里是几个页面的代码，用于跟踪你何时访问程序的第一个页面。这展示了 `session_start()` 函数的使用以及创建一个用于存储访问时间的变量。
 
 列表 6-1 显示了第一个页面 `page1.php` 的代码。
-
-列表 6-1: 创建 Session 变量
 
 ```php
 <?php
@@ -11360,20 +14994,10 @@ print "<<div><a href=\"page2.php\">Continue to next page</</a></div>";";
 
 程序的下一个页面随后启动 session，并访问 session 中已设置的任何变量。列表 6-2 显示了第二个页面 `page2.php` 的代码。
 
-列表 6-2: 第二页面访问 Session 变量
-
 ```php
 <?php
 session_start();
 print "This is page 2<br />";
-?>
-```
-
-
-
-
-
-```php
 print "You accessed the application at: " . $_SESSION['accessTime'];
 print "<div><a href=\"page3.php\">Continue to next page</a></div>";
 ?>
@@ -11419,8 +15043,6 @@ if (!isset($_SESSION['accessTime'])) {
 
 列表 6-4 显示了列表 6-1 `page1.php` 的更新版本。在此代码中，有一个单一添加，一个名为 `appStarted` 的新话变量。
 
-### 列表 6-4: 为话添加全局变量
-
 ```php
 <?php
 session_start();
@@ -11433,8 +15055,6 @@ print "<div><a href=\"page2.php\">Continue to next page</a></div>";
 ```
 
 然后你可以更改应用程序中的其他页面以检查此变量的存在性，如列表 6-5 中注的更改。
-
-### 列表 6-5: 检查全局话变量
 
 ```php
 <?php
@@ -11486,7 +15106,7 @@ print "<div><a href=\"page3.php\">Continue to next page</a></a>
 | UPDATE | 修改表中的数据 |
 | USAGE | 无权限 |
 
-![pt_webextra_bw.png](img/pt_webextra_bw.png) 更多关于 MySQL 的信息，请访问 [www.dummies.com/extras/phpmysqljavasripth5aio](http://www.dummies.com/extras/phpmysqljavasripth5aio)。
+![pt_webextra_bw.png](img/pt_webextra_bw.png) 更更多关于 MySQL 的信息，请访问 [www.dummies.com/extras/phpmysqljavasripth5aio](http://www.dummies.com/extras/phpmysqljavasripth5aio)。
 
 ## 内容概览
 
@@ -11506,30 +15126,25 @@ print "<div><a href=\"page3.php\">Continue to next page</a></a>
 - 第 3 章：设计和构建数据库
 - 设计数据库
 - 设计示例数据库
-
-
-
-
-
-# 记录你的设计
-## 构建数据库
-## 修改数据库结构
+- 记录你的设计
+- 构建数据库
+- 修改数据库结构
 
 # 第 4 章：使用数据库
-## 向数据库中添加信息
-## 查看数据库中的数据
-## 从数据库中检索信息
-## 更新数据库中的信息
-## 从数据库中删除信息
+- 向数据库中添加信息
+- 查看数据库中的数据
+- 从数据库中检索信息
+- 更新数据库中的信息
+- 从数据库中删除信息
 
 # 第 5 章：通过 PHP 脚本数据库通信
-## 了解 MySQL 和 PHP 如何协同工作
-## 与 MySQL 通信的 PHP 函数
-## 与 MySQL 通信
-### 选择数据库
-## 处理 MySQL 错误
-### 使用其他常用的 mysqli 函数
-### 将 mysqli 函数转换为 mysql 函数
+- 了解 MySQL 和 PHP 如何协同工作
+- 与 MySQL 通信的 PHP 函数
+- 与 MySQL 通信
+  - 选择数据库
+- 处理 MySQL 错误
+- 使用其他常用的 mysqli 函数
+- 将 mysqli 函数转换为 mysql 函数
 
 # 第 1 章：简介 MySQL
 
@@ -11538,7 +15153,7 @@ print "<div><a href=\"page3.php\">Continue to next page</a></a>
 * 与 MySQL 通信
 * 存储在 MySQL 中的数据安全
 
-许多动态网站都需要一个后端数据库。数据库可以包含网页向用户显示的信息，或者数据库的可能是为了存储用户提供的信息。在某些应用程序中，数据库既提供可用信息又存储新信息。
+许多动态网站都需要一个后端数据库。数据库可以包含网页向用户显示的信息，或者数据库的可能是为了存储用户提供的信息。在某些应用程中，数据库既提供可用信息又存储新信息。
 
 MySQL 是网站中最常用的数据库，它的开发目标是快速且轻量，特别是专为网站设计的。MySQL 在与 PHP 编写的网站配合时特别受欢迎，因为 PHP 和 MySQL 配合得非常好。
 
@@ -11575,10 +15190,6 @@ SELECT lastName,firstName FROM Member WHERE state="CA" AND
     city="Fresno" ORDER BY lastName
 ```
 
-
-
-
-
 ![check](img/check.png) # 大写
 
 在本书中，我们将 SQL 语言单词全大写；而变量信息项（如列名）通常使用全小写或大部分小写字母的标签。我们这样做是为了方便你阅读——而不是因为 MySQL 需要这种格式。SQL 单词的大小写并不重要；例如，对于 MySQL 而言，`select` 与 `SELECT` 是相同的，`from` 与 `FROM` 也是相同的。
@@ -11609,7 +15220,7 @@ SQL 单词之间必须用一个或多个空格分隔。使用多少个空格并�
 
 安装 MySQL 后，还会安装一个名为 `mysql` 的文本文本程序（有时称为命令行界面或 `CLI`）。与 MySQL 服务器通信的程序称为客户端；当你在这个客户端中输入 SQL 查询时，响应会被返回并显示在屏幕上。客户端始终可用。如果你熟悉 SQL 并且能够无错误地输入查询语句，它非常简单且快速。
 
-要从 `mysql` 客户端向 MySQL 发送 SQL 查询，请遵循以下步骤：
+要从 `mysql` 客户端向 MySQL 发送 SQL 查询，请遵�以下步骤：
 
 1. **找到 mysql 客户端。**
 默认情况下，`mysql` 客户端程序安装在 MySQL 安装目录下的 `bin` 子目录。在 Unix 和 Linux 中，默认路径是 `/usr/local/mysql/bin`。在 Windows 中，默认路径是 `c:\Program Files\MySQL Server 5.0\bin`。然而，客户端可能安装在不同的目录。或者，如果你不是 MySQL 管理员，你可能无法访问该客户端。
@@ -11670,10 +15281,6 @@ MySQL 提供了一个安全系统来保护你的数据。该系统包括：
 
 ![check](img/check.png) **权限：** MySQL 使用账户权限来指定谁可以做什么。任何使用有效账户都可以都可以到 MySQL 服务器，但他们只能执行账户权限允许的操作。例如，可以设置一个账户，让用户可以选择数据但不能插入或更新数据。或者，可以设置一个账户使其更改特定表中的数据，但只能查看另一个表中的数据。
 
-
-
-
-
 你可以使用 SQL 查询来创建和删除账户、添加和更改密码，以及添加和删除权限。你可以使用前节描述的任一种方法发送 SQL 查询。你还可以使用 `phpMyAdmin` 提供的功能管理你的 MySQL 账户。我们将在本迷你书的第 2 章中描述如何管理 MySQL 数据库。
 
 # 第 2 章：管理 MySQL
@@ -11688,7 +15295,7 @@ MySQL 提供了一个安全系统来保护你的数据。该系统包括：
 
 如前所述，`MySQL` 是一种数据库管理软件。它管理包含你构建的动态网站所需信息的数据库。你的目标是在数据库中存储数据，或从数据库中检索数据。你可以直接存储和检索数据（参见本迷你书的第 3 章和 4 章),也可以通过 `PHP` 脚本存储和检索数据（参见本迷你书的第 5 章).此外，还需要 `MySQL` 管理员来确保 `MySQL` 正确高效地执行工作。
 
-我们将在章中描述 `MySQL` 管理。在本章的前几节中，我们将为你提供了解 `MySQL` 管理所需的初步信息，以及你如何通过账户名、主机名和密码控制对数据的访问。随后，我们将提供有关如何添加账户、更改密码和权限的具体信息。备份和恢复数据库也是重要的管理任务，我们在本章中也会告诉你如何操作。最后，作为 `MySQL` 管理员，你还需要确保使用最新版本的 `MySQL`，我们将在本章的最后一节讨论这一点。
+我们将在章中描述 `MySQL` 管理。在本章的前几节中，我们将为你提供了解 `MySQL` 管理所需的初步信息，以及你如何通过账户名、主机名和密码控制对数据的访问。随后，我们将提供有关如何添账户、更改密码和权限的具体信息。备份和恢复数据库也是重要的管理任务，我们在本章中也会告诉你如何操作。最后，作为 `MySQL` 管理员，你还需要确保使用最新版本的 `MySQL`，我们将在本章的最后一节讨论这一点。
 
 ## 理解管理员职责
 
@@ -11702,7 +15309,7 @@ MySQL 提供了一个安全系统来保护你的数据。该系统包括：
 
 ![check](img/check.png) 启动和关机 `MySQL` 服务器。详见第一本书的第 4 章。如果 `MySQL` 运行在网络托管计算机上，则你不需要启动或停止服务器。
 
-![check](img/check.png) 创建和维护 `MySQL` 用户账户。没有账户，任何人无法访问你数据库中的数据。账户需要安装和删除，密码需要添加或删除，并需要向账户分配或撤销权限。我们将在本章稍后的设置 MySQL 账户节中描述管理用户账户。
+![check](img/check.png) 创建和维抚 `MySQL` 用户账户。没有账户，任何人无法访问你数据库中的数据。账户需要安装和删除，密码需要添加或删除，并需要向账户分配或撤销权限。我们将在本章稍后的设置 MySQL 账户节中描述管理用户账户。
 
 如果你在网络托管公司使用 `MySQL`，你可能被允许或不允许创建或更改 `MySQL` 账户。你可能被限制为一个具有定义权限的账户。
 
@@ -11716,7 +15323,7 @@ MySQL 提供了一个安全系统来保护你的数据。该系统包括：
 
 ![warning_bomb.eps](img/warning_bomb_fmt.png) 通常情况下，你不应该使用没有密码的 `root` 账户。如果你的安装设置了一个没有密码的 `root` 账户，请立即添加密码。`root` 账户拥有所有权限。你使用此账户管理你的 `MySQL` 数据库。你不需要具有所有权限的账户来访问你的 `MySQL` 数据库，或添加和检索数据。因此，在大多数情况下，你想创建一个权限较少的账户，用于从你的 `PHP` 脚本访问数据，我们将在本章中告诉如何这样做。
 
-## 控制对数据的访问
+## 控制对数据的访控
 
 你需要控制对数据库中信息的访问。你需要决定谁可以查看数据，谁可以更改数据。想象一下如果你的竞争对手能够更改你在线产品目录的信息或复制你的客户列表会发生什么——你很快就会破产。显然，你需要保护你的数据。
 
@@ -11736,10 +15343,6 @@ MySQL 提供了一个安全系统来保护你的数据。该系统包括：
 1. 连接验证：`MySQL` 检查用户名和密码的有效性，并检查连接是否来自允许使用指定账户连接到 MySQL 服务器的主机。如果一切检查通过，`MySQL` 将接受连接。
 
 2. 请求验证：在 `MySQL` 接受连接后，它检查该账户是否有足够的权限来执行指定的语句。如果是，`MySQL` 将执行该语句。
-
-
-
-
 
 你发送到 MySQL 的任何语句都可能失败，可能是因为第一步连接被拒绝，也可能是因为第二步语句未被允许。系统会返回错误消息来帮助你识别问题的根源。
 
@@ -11771,7 +15374,7 @@ MySQL 账户名主机名具有以下特征：
 
 ## 密码
 
-每个账户都设置了密码。如果没有为账户提供密码，密码为空，这意味着不需要密码。MySQL 对密码长度没有限制，但有时系统上的其他软件会将长度限制为八个字符。如果是这样，八位之后的任何字符都会被丢弃。
+每个账户都设置了密码。如果没有为账户提供密密码，密码为空，这意味着不需要密码。MySQL 对密码长度没有限制，但有时系统上的其他软件会将长度限制为八个字符。如果是这样，八位之后的任何字符都会被丢弃。
 
 为了额外的安全，MySQL 在存储密码之前会对其进行加密。这意味着密码并不是以你输入的可识别字符存储的。这种安全措施确保了没有人能通过简单查看存储的密码来理解它们是什么。
 
@@ -11816,16 +15419,13 @@ MySQL 使用账户权限来指定谁可以做什么。任何使用有效账户�
 
 安装 MySQL 时，它会自动创建一个名为 `mysql` 的数据库。所有用于保护你的数据的信息都存储在这个数据库中，包括账户名、主机名、密码和权限。
 
-
-
-
 权限以列的形式存储。每个列名称的格式为 `privilege_priv`，其中 `privilege` 是一个特定的账户权限。例如，包含 `ALTER` 权限的列名为 `alter_priv`。每个权限列的值为 `Y` 或 `N`，表示“是”或“否”。因此，例如在用户表（在下文列表中描述）中，会有一行代表一个账户，并有一列代表 `alter_priv`。如果 `alter_priv` 对应的账户字段包含 `Y`，则该账户可用于执行 `ALTER` 语句。如果 `alter_priv` 包含 `N`，则该账户没有执行 `ALTER` 语句的权限。
 
 `mysql` 数据库包含以下存储权限的表：
 
 ![check.png](img/check.png) `user` 表：此表存储适用于所有数据库和表的权限。它为每个有效账户包含了一行，其中包含 `user name`、`hostname` 和 `password` 列。MySQL 服务器会拒绝此表中不存在的账户的连接。
 
-![check.png](img/check.png) `db` 表：此表存储适用于特定数据库的权限。它为数据库包含了一行，授予某个账户名和主机的权限。账户必须存在于 `user` 表才能授予权限。在 `user` 表中授予的权限优于此表中的权限。
+![check.png](img/check.png) `db` 表：此表存储适用于特定数据库的权限。它为数据库包含了一行，授予某个账户名和主机的权限。账户必须存在于 `user` 表才能授权权限。在 `user` 表中授予的权限优于此表中的权限。
 
 例如，如果 `user` 表中为 `designer` 账户有一行并授予了 `INSERT` 权限，那么 `designer` 就可以向所有数据库插入数据。如果 `db` 表中的某行显示 `designer` 账户在 `PetCatalog` 数据库中的 `INSERT` 权限为 `N`，则 `user` 表将覆盖它，`designer` 可以在 `PetCatalog` 数据库中插入。
 
@@ -11835,7 +15435,7 @@ MySQL 使用账户权限来指定谁可以做什么。任何使用有效账户�
 
 ![![check.png](img/check.png) `tables_priv` 表：此表存储适用于特定表的权限。
 
-![check.png](img/check.png) `columns_priv` 表：此表存储适用于特定列的权限。
+![check.png](img/check.png) `columns_priv` 表：此表存储适用于特特定列的权限。
 
 如果你使用的是具有相应权限的账户，可以直接查看和更改 `mysql` 中的表。你可以使用诸如 `SELECT`、`INSERT` 和 `UPDATE` 等 SQL 查询语句。如果你通过雇主、客户端或网络托管公司访问 MySQL，你可能没有具有相应权限的账户。
 
@@ -11880,7 +15480,7 @@ CREATE USER accountname@hostname IDENTIFIED BY 'password',
 CREATE USER accountname@hostname IDENTIFIED BY 'password',...
 ```
 
-该语句为每个账户创建具有指定密码的新用户账户。你不需要指定密码。如果你省略了 `IDENTIFIED BY 'password'`，则创建的账户没有密码。你可以稍后为账户添加或更改密码。我们将在添加这些密码和更改权限节讨论这些。
+该语句为每个账户创建具有指指定密码的新用户账户。你不需要指定密码。如果你省略了 `IDENTIFIED BY 'password'`，则创建的账户没有密码。你可以稍后为账户添加或更改密码。我们将在添加这些密码和更改权限节讨论这些。
 
 ![warning_bomb.eps](img/warning_bomb_fmt.png) 如果你使用的是 5.0.2 之前的版本，必须使用 `GRANT` 语句创建账户。我们将在后面的更改权限节描述 `GRANT` 语句。
 
@@ -11899,9 +15499,6 @@ SET PASSWORD FOR username@hostname = PASSWORD('password')
 ```sql
 SET PASSWORD FOR username@hostname = PASSWORD('')
 ```
-
-
-
 
 ![remember.eps](img/remember_fmt.png) 当你更改密码时，需要刷新权限以便 `MySQL` 能够识别这些更改。这通过 `FLUSH PRIVILEGES` 语句来实现：
 
@@ -11943,7 +15540,7 @@ GRANT select (firstName,lastName), update,
 - `tablename`：当前数据库中名为 `tablename` 的整个表。你可以使用星号 (`*`) 来表示当前数据库中的所有表。如果你使用星号且没有选择当前数据库，则权限将授予所有数据库中的所有表。
 - `databasename.tablename`：`databasename` 中名为 `tablename` 的整个表。你可以在数据库名或表名中使用星号 (`*`) 来表示所有数据库或所有表。使用 `*.*` 授予授予所有数据库中所有表的权限。
 
-![check](img/check.png) `accountname@`hostname`：如果账户已存在，则将赋予其指定的权限。如果账户不存在，则会添加它。账户通过 `accountname` 和 `hostname` 一对来标识。如果存在具有指定账户名但主机名不同的账户，则不会更改现有账户，而是创建一个新的。
+![check](img/check.png) `accountname@`hostname`：如果账户已存在，则将赋予其指定的权限。如果账户不存在，则会添加它。账户通过 `accountname`和 `hostname` 一对来标识。如果存在具有指定账户名但主机名不同的账户，则不会更改现有账户，而是创建一个新的。
 
 ![check](img/check.png) `password`：你正在添加或更改的密码。密码不是必须的。如果你不想为此账户添加或更改密码，请省略 `IDENTIFIED BY 'password'` 短语。
 
@@ -12002,9 +15599,6 @@ DROP USER accountname@`hostname`, accountname@`hostname`, ...
 ![remember.eps](img/remember_fmt.png) 如果你是 MySQL 管理员，由你负责制作备份。即使你在别人的计算机上使用 MySQL，你可能也想自己制作一份备份，以防万一。
 
 在特定的时间进行备份——至少每天一次。如果你的数据库经常变化，你可能需要更频繁地备份。例如，你可能每小时备份到备份目录，但每天备份到另一台计算机一次。
-
-
-
 
 你可以使用 MySQL 提供的名为 `mysqldump` 的实用程序来备份 MySQL 数据库。`mysqldump` 程序会创建一个文本文件，其中包含重建整个数据库所需的所有 SQL 语句。该文件包含每个表的 `CREATE` 语句以及表中每行数据的 `INSERT` 语句。你可以通过执行这组 MySQL 语句，将数据库恢复到当前位置，或者恢复到另一台计算机上。
 
@@ -12119,9 +15713,10 @@ mysql -u accountname -p < path/backupfilename
 ```bash
 mysql -u root -p < c:\Program Files\MySQL\MySQL Server 5.0\bin\bak\ProductCatalog.bak
 ```
+
+
+
 表的恢复可能需要一些短时间。等待命令完成。如果发生问题，会显示错误信息。如果没有问题发生，则没有输出。命令完成后，提示符将出现。
-
-
 
 您的数据库现在已恢复，并包含了创建副本时其中所有的所有数据。如果数据在创建副本后发生了更改，您将丢失这些更改。例如，如果在创建备份副本后添加了更多数据，则新数据将不会被恢复。如果您知道创建备份后所做的更改，你可以在恢复的数据库中手动进行这些更改。
 
@@ -12204,22 +15799,17 @@ MySQL 是一个关系数据库管理系统（RDBMS），这意味着数据被组
 您为每个对象创建一个表。表名应该用描述性的词或术语清晰地标识其所包含的对象，基于以下指南：
 
 - ![check](img/check.png) 名称必须是字符字符串，包含字母、数字、下划线或美元符号，但不能包含空格。
-
-
-
-
-![check](img/check.png) 习惯上使用单数形式为表命名。因此，客户表可以命名为 `Customer`，而包含客户订单表可以命名为 `CustomerOrder`。
-
-![check](img/check.png) 在 Linux 和 Unix 上，大小写是有区别的，但在 Windows 上没有。`CustomerOrder` 和 `Customerorder` 对 Windows 来说是相同的——但对 Linux 或 Unix 则不是。尽管如此，为了以后可能更改托管平台，最好对大小写保持敏感。
+- ![check](img/check.png) 习惯上使用单数形式为表命名。因此，客户表可以命名为 `Customer`，而包含客户订单表可以命名为 `CustomerOrder`。
+- ![check](img/check.png) 在 Linux 和 Unix 上，大小写是有区别的，但在 Windows 上没有。`CustomerOrder` 和 `Customerorder` 对 Windows 来说是相同的——但对 Linux 或 Unix 则不是。尽管如此，为了以后可能更改托管平台，最好对大小写保持敏感。
 
 在数据库术语中，对象（object）是一个实体（entity），而实体具有属性（attributes）。在表中，每行代表一个实体，每一列包含每个实体的属性。例如，在客户表中，每行包含一个客户的信息。列中包含的某些属性可能包括姓、名、电话号码和年龄。
 
 按照以下步骤决定如何将你的数据组织成表：
 
-### 1. 为你的数据库命名。
+### 1. 为你的数据库命名
 为你的应用程序数据库分配一个名称。例如，你可以将一个包含社区内家庭信息的数据库命名为 `HouseholdDirectory`。
 
-### 2. 识别对象。
+### 2. 识别对象
 查看你想要存储在数据库中的信息列表（如上一节所述）。分析你的列表并识别对象。例如，`HouseholdDirectory` 数据库可能需要存储以下内容：
 * 每个家庭成员的名字
 * 房屋的地址
@@ -12229,28 +15819,28 @@ MySQL 是一个关系数据库管理系统（RDBMS），这意味着数据被组
 
 当你仔细分析此列表时，你会发现你正在存储关于两个对象的信息：家庭（household）和家庭成员（household members）。地址和电话通常针对家庭，但名字、年龄和喜欢的麦片是针对每个特定家庭成员的。
 
-### 3. 为每个对象定义并命名表。
+### 3. 为每个对象定义并命名表
 例如，`HouseholdDirectory` 数据库需要一个名为 `Household` 的表和一个名为 `HouseholdMember` 的表。
 
-### 4. 识别每个对象的属性。
+### 4. 识别每个对象的属性
 分析你的信息列表，并识别你为每个对象需要存储的属性。将要存储的信息拆分为最小的合理单元。例如，当在表中存储人的姓名时，你可以将姓名拆分为姓和名。这样做可以让你按姓进行排序，如果将姓和名存储在一起，这样做将困难得多。你甚至可以将姓名拆分为名、中间名和姓，尽管并没有许多应用程序需要单独使用中间名。
 
-### 5. 为步骤 4 中识别的每个独立属性定义并命名列。
+### 5. 为步骤 4 中识别的每个独立属性定义并命名列
 为每列给出一个能够清晰标识该列中信息的名称。列名应该是单词，且没有空格。例如，你可能会有名为 `firstName` 和 `lastName` 的列，或者 `first_name` 和 `last_name`。
 
 ![remember.eps](img/remember_fmt.png) MySQL 和 SQL 保留了一些单词供自身使用，你不能将这些单词用列名。这些单词目前用于 SQL 语句或预留供以后使用。你不能使用 `ADD`、`ALL`、`AND`、`CREATE`、`DROP`、`GROUP`、`ORDER`、`RETURN`、`SELECT`、`SET`、`TABLE`、`USE`、`WHERE` 以及许多许多单词作为列名。完整的保留字列表请参阅在线 MySQL 手册：`reserved-words.html`（`保留字`）。
 
-### 6. 识别主键。
+### 6. 识别主键
 表中的每行都需要一个唯一标识符。表中的没有两行应该是完全相同的。在设计表时，你决定哪一列持有唯一标识符，这被称为主键（primary key）。
 
 主键可以是多个列的组合。在许多情况下，你的对象属性没有唯一标识符。例如，客户表可能没有唯一标识符，因为两个客户可能有相同的名字。当你没有唯一标识符列时，你需要专门添加一列作为主键。通常，使用一个带有序列号的列来实现此目的。例如，在 表 3-1 中，主键是 `cust_id` 字段，因为每个客户都有一个唯一的 ID 号。
 
 ![Table 3-1](img/9781118213704-tb050302.png)
 
-### 7. 定义默认值。
+### 7. 定义默认值
 你可以定义一个默认值，当没有向字段输入数据时，MySQL 会将其分配给该字段。你不需要默认值，但它通常很有用。例如，如果你的应用程序存储了包含国家的地址，你可以指定 `U.S.` 为默认值。如果用户没有输入国家，MySQL 将输入 `U.S.`。
 
-### 8. 识别需要数据的列。
+### 8. 识别需要数据的列
 你可以指定某些列不允许为空（也称为 `NULL`）。例如，包含主键的列不能为空。如果主键列中没有存储值，MySQL 将不会创建该行并返回错误消息。该值可以是空格或空字符串（例如 `""`），但列中必须存储某些值。除了主键外，你还可以设置其他列需要数据。
 
 ![warning_bomb.eps](img/warning_bomb_fmt.png) 设计良好的数据库将每条信息只存储在一个地方。将其存储在多个地方是效率低效的，并且当你需要更改信息时会产生问题。如果你更改了一个地方的信息但忘记更改另一个地方，你的数据库可能会出现严重问题。
@@ -12262,10 +15852,6 @@ MySQL 是一个关系数据库管理系统（RDBMS），这意味着数据被组
 数据库中的某些表是相关的。通常情况下，一个表中的某行与另一个表中的几行相关。你需要一列来连接不同表中的相关行。在许多情况下，你在一个表中包含一列，用于存储与另一个表的主键列数据匹配的数据。
 
 一个需要两个关联表的常见应用程序是客户订单应用程序。例如，一个表包含客户信息，如姓名、地址和电话号码。每个客户可以从零到多个订单。你可以将订单信息存储在客户信息的表中，但每当客户下单时就会创建一个新行，且每个新行都包含所有客户信息。你可以更高效地将订单存储在独立的表中，可能命名为 `CustomerOrder`。（你不能将表命名为 `Order`，因为那是保留字。）在 `CustomerOrder` 表中，你包含一列来自 `Customer` 表某行的主键，这样订单就与 `Customer` 表的正确行相关。这种关系在 表 3-1（本章前面的部分）和 [表 3-2](#30_9781118213704-bk05ch03.html_table-2）中所示。
-
-
-
-
 
 本示例中的 `Customer` 表如 表 3-1 所示。每个客户都有唯一的 `cust_id`。相关的 `CustomerOrder` 表如 表 3-2 所示。它拥有与 `Customer` 表相同的 `cust_id` 列。通过该列，`CustomerOrder` 表中的订单信息可以与 `Customer` 表中相关的客户姓名和电话号码关联。
 
@@ -12283,9 +15869,8 @@ MySQL 根据你告诉 MySQL 预期的信息类型，以不同的格式存储信�
 
 字符数据可以以固定长度或可变格式存储：
 
-![check](img/check.png) 固定长度格式：在此格式下，MySQL 为数据预留了固定空间。如果数据超过固定长度，则只存储符合的字符——末尾剩余的字符不会被存储。如果字符串比固定长度短，多出的空间将留空并浪费。
-
-![check](img/check.png) 可变格式：在此格式下，MySQL 将字符串存储在与字符串长度相同的字段中。虽然你指定了一个字符串长度，但如果字符串本身短于指定的长度，MySQL 只使用所需的空间，而不是将额外空间留空。如果字符串超过指定的空间，多出的字符将不会存储。
+- ![check](img/check.png) 固定长度格式：在此格式下，MySQL 为数据预留了固定空间。如果数据超过固定长度，则只存储符合的字符——末尾剩余的字符不会被存储。如果字符串比固定长度短，多出的空间将留空并浪费。
+- ![check](img/check.png) 可变格式：在此格式下，MySQL 将字符串存储在与字符串长度相同的字段中。虽然你指定了一个字符串长度，但如果字符串本身短于指定的长度，MySQL 只使用所需的空间，而不是将额外空间留空。如果字符串超过指定的空间，多出的字符将不会存储。
 
 如果字符字符串的长度略有变化，请使用固定长度格式。例如，长度为十适用于所有邮政编码，包括包含 ZIP+4 号的。如果邮政编码不包含 ZIP+4 号，则只留五个空格。然而，如果你的字符字符串变化超过几个字符，请使用可变格式以节省空间。例如，你的宠物描述可能是 `small bat`，也可能会长达几行描述。通过以可变格式存储此描述，你只使用必要的空间。
 
@@ -12333,25 +15918,16 @@ MySQL 提供了一种特定的数值列类型，称为自增列（auto-increment
 
 创建你想为每个客户存储的信息列表：
 
-![check](img/check.png) 姓名
-
-![check](img/check.png) 地址
-
-![check](img/check.png) 电话号码
-
-![check](img/check.png) 传真
-
-![check](img/check.png) 电子邮件地址
-
-
-
-
+- ![check](img/check.png) 姓名
+- ![check](img/check.png) 地址
+- ![check](img/check.png) 电话号码
+- ![check](img/check.png) 传真
+- ![check](img/check.png) 电子邮件地址
 
 此外，你还需要收集客户订购哪些产品的信息。对于每个订单，你需要收集以下信息：
 
-![check](img/check.png) 订单下单日期
-
-![check](img/check.png) 订单中每个项目的的产品信息
+- ![check](img/check.png) 订单下单日期
+- ![check](img/check.png) 订单中每个项目的的产品信息
 
 在本示例中，产品是 T 恤。因此，对于每个项目，你需要以下信息：
 
@@ -12455,15 +16031,12 @@ MySQL 提供了一种特定的数值列类型，称为自增列（auto-increment
 
 你可能花费了大量时间进行设计。
 
-
-
-
 创建新数据库的第一步是创建一个空数据库并为它命名。你的数据库名称长度最多可达 64 个字符。你可以使用大多数字母、数字和标点符号，但有少数例外。通常情况下，你不能使用操作系统目录名中的非法字符（请参阅你的操作系统文档以了解这些字符是什么）。不要在名称末尾使用空格。不要在数据库名称（或表名）中使用正斜线（`/`）或反斜线（`\`）。你可以在数据库名称中使用引号，但这样做这样做并不明智。
 
 要创建一个新的空数据库，请使用以下 SQL 语句：
 
 ```sql
-CREATE DATABASE `abasename`
+CREATE DATABASE `databasename`
 ```
 
 在此语句中，将 `databasename` 替换为你为数据库命的名称。例如，要创建本章设计的示例数据库，请使用以下 SQL 语句：
@@ -12493,7 +16066,7 @@ CREATE DATABASE IF NOT EXISTS CustomerOrderInformation
 你可以使用以下 SQL 语句删除数据库：
 
 ```sql
-DROP DATABASE `databasenam``e
+DROP DATABASE `databasename`
 ```
 
 ![warning_bomb.eps](img/warning_bomb_fmt.png) 请谨慎使用 `DROP`，因为它是不可逆的。删除数据库后，该数据库将永久消失。其中的任何数据也会之消失。
@@ -12508,7 +16081,7 @@ DROP DATABASE IF EXISTS `databasename`
 
 ## 添加表并指定主键
 
-你可以向任何数据库添加表，无论是你刚刚创建的空数据库，还是已经包含表和数据的现有数据库。允许的表名的规则在本章早前的组织数据章节中解释。当你在数据库中创建表时，数据库会添加一个名为 `tablename``.frm` 的文件。
+你可以向任何数据库添加表，无论是你刚刚创建的空数据库，还是已经包含表和数据的现有数据库。允许的表名的规则在本章早前的组织数据章节中解释。当你在数据库中创建表时，数据库会添加一个名为 `tablename.frm` 的文件。
 
 在创建表时，你需要包含表定义。你定义每一列——给它一个名称、分配一个类型并指定任何其他定义。以下是经常为列指定的定义：
 
@@ -12539,9 +16112,13 @@ PRIMARY KEY(`columnname`)
 
 ```sql
 CREATE TABLE `tablename` (
-`columnname`datatype1 definition2...,
-`columnname`datatype1 definition2...,
+
+`columnname` datatype1 definition2...,
+
+`columnname` datatype1 definition2...,
+
 ...,
+
 PRIMARY KEY(`columnname`) )
 ```
 
@@ -12551,16 +16128,27 @@ Listing 3-1: 创建表的 SQL 语句
 
 ```sql
 CREATE TABLE Customer (
+
   CustomerID SERIAL,
+
   lastName VARCHAR(50),
+
   firstName VARCHAR(40),
+
   street VARCHAR(50),
+
   city VARCHAR(50),
+
   state CHAR(2),
+
   zip CHAR(10),
+
   email VARCHAR(50),
+
   phone CHAR(15),
+
   fax CHAR(15),
+
   PRIMARY KEY(customerID) );
 ```
 
@@ -12569,18 +16157,14 @@ CREATE TABLE Customer (
 ![warning_bomb.eps](img/warning_bomb_fmt.png) 记住不要对列名使用任何 MySQL 保留字，正如我们在本章早前的组织数据章节中所讨论的那样。如果你对列名使用保留字，MySQL 会给你类似这样的错误信息：
 
 ```
-
 You have an error in your SQL syntax near 'order var(20))' at line 1
 ```
-
-
-
 
 如果表不存在，该语句将创建它。如果表已经存在，该语句不会创建它，但也不会返回错误信息。
 
 你可以按照如下方式创建一个与现有表完全相同（结构相同）的新表：
 
-```
+```sql
 CREATE TABLE `tablename` LIKE `oldtablename`
 ```
 
@@ -12588,13 +16172,13 @@ CREATE TABLE `tablename` LIKE `oldtablename`
 
 创建表后，你可以查询以查看它、检查其结构或将其删除。
 
-![check](img/check.png) 要查看已添加到数据库的表，请使用此查询：
+- ![check](img/check.png) 要查看已添加到数据库的表，请使用此查询：
 
 ```sql
 SHOW TABLES
 ```
 
-![check](img/check.png) 要查看表的结构，请使用此查询：
+- ![check](img/check.png) 要查看表的结构，请使用此查询：
 
 ```sql
 EXPLAIN `tablename`
@@ -12624,13 +16208,13 @@ DROP TABLE `tablename`
 
 | 更改 | 描述 |
 | :--- | :--- |
-| `ADD` `columnname``definition` | 添加列；`definition` 包含数据类型和可选定义。 |
+| `ADD` `columnname` `definition` | 添加列；`definition` 包含数据类型和可选定义。 |
 | `ALTER` `columnname` `SET DEFAULT` `value` | 更改列的默认值。 |
-| `ALTER` `columnname` `DROP DEFAULT` | 列的默认值。 |
-| `CHANGE` `columnname``newcolumnname definition` | 更改列的定义并重命名列；`definition` 包含数据类型和可选定义。 |
+| `ALTER` `columnname` `DROP DEFAULT` | 删除列的默认值。 |
+| `CHANGE` `columnname` `newcolumnname definition` | 更改列的定义并重命名列；`definition` 包含数据类型和可选定义。 |
 | `DROP` `columnname` | 删除列，包括列中的所有数据。数据无法恢复。 |
-| `MODIFY` `columnname``definition` | 更改列的定义；`definition` 包含数据类型和可选定义。 |
-| `RENAME` `newtablenam``e` | 重命名表。 |
+| `MODIFY` `columnname` `definition` | 更改列的定义；`definition` 包含数据类型和可选定义。 |
+| `RENAME` `newtablename` | 重命名表。 |
 
 例如，以下语句将 `Customer` 表重命名为 `NewCustomer`：
 
@@ -12648,10 +16232,10 @@ ALTER TABLE Customer MODIFY lastName VARCHAR(50)
 
 ## 本章
 
-![arrow.png](img/arrow.png) 在数据库中存储数据
-![arrow.png](img/arrow.png) 从数据库中查看和检索数据
-![arrow.png](img/arrow.png) 更新数据
-![arrow.png](img/arrow.png) 删除数据
+- ![arrow.png](img/arrow.png) 在数据库中存储数据
+- ![arrow.png](img/arrow.png) 从数据库中查看和检索数据
+- ![arrow.png](img/arrow.png) 更新数据
+- ![arrow.png](img/arrow.png) 删除数据
 
 空数据库就像一个空的饼干罐——你从中得不到任何东西。搜索空数据库并不比搜索空饼干罐更有趣或收获。数据库的实用性取决于它所承载的信息。
 
@@ -12659,10 +16243,10 @@ ALTER TABLE Customer MODIFY lastName VARCHAR(50)
 
 你的 MySQL 数据库响应四种请求：
 
-![check](img/check.png) 添加信息：向表中添加行。
-![check](img/check.png) 检索信息：查看数据。此请求不会从数据库中删除数据。
-![check](img/check.png) 更新信息：更改现有行中的信息。这包括向现有行中的空白字段添加数据。
-![check](img/check.png) 删除信息：从数据库中删除数据。
+- ![check](img/check.png) 添加信息：向表中添加行。
+- ![check](img/check.png) 检索信息：查看数据。此请求不会从数据库中删除数据。
+- ![check](img/check.png) 更新信息：更改现有行中的信息。这包括向现有行中的空白字段添加数据。
+- ![check](img/check.png) 删除信息：从数据库中删除数据。
 
 你通过 SQL 语句和查询与数据库交互，正如本微型书第 1 章所示。本章解释了如何使用 SQL 语句和查询在你的数据库中添加、查看、检索、更新和删除信息。
 
@@ -12682,10 +16266,6 @@ ALTER TABLE Customer MODIFY lastName VARCHAR(50)
 
 如果数据量较小，你可以一次向表中添加一行数据。PHP 脚本通常需要一次添加一行数据。例如，当 PHP 脚本从表单中接收客户的数据时，它通常需要以新行的形式将客户信息存入数据库。
 
-
-
-
-
 你使用 `INSERT` 语句向数据库添加行数据。该语句告诉 MySQL 应该将此行添加到哪个表中，以及该行中字段的值是什么。该语句的通用形式为：
 
 ```sql
@@ -12695,15 +16275,11 @@ VALUES (`value`, `value`, ..., `value`)
 
 以下规则适用于 `INSERT` 语句：
 
-![check](img/check.png) 值的顺序必须与列名列出的顺序一致。值列表中的第一个值将插入到列列表中第一个命名的 `columnname` 中；值列表中的第二个值将插入到第二个为命名的列中；依此类推。
-
-![check](img/check.png) 允许列出完整或部分的列列表。你不需要列出所有列。未列出的列将赋予其默认值，或者如果没有定义默认值，则留空。
-
-![warning_bomb.eps](img/warning_bomb_fmt.png) 记住，任何定义为 `NOT NULL` 的列都必须包含其值，否则语句将失败。
-
-![check](img/check.png) 不强制要求列出列列表。如果你正在为所有列输入值，则完全不需要列出列。如果未列出列，MySQL 将按照它们在表中出现的顺序查找所有列的值。
-
-![check](img/check.png) 列列表和值列表必须一致。你必须为你列出的每个列提供值，否则你将得到类似 `Column count doesn't match value count` 的错误消息。
+- ![check](img/check.png) 值的顺序必须与列名列出的顺序一致。值列表中的第一个值将插入到列列表中第一个命名的 `columnname` 中；值列表中的第二个值将插入到第二个为命名的列中；依此类推。
+- ![check](img/check.png) 允许列出完整或部分的列列表。你不需要列出所有列。未列出的列将赋予其默认值，或者如果没有定义默认值，则留空。
+- ![warning_bomb.eps](img/warning_bomb_fmt.png) 记住，任何定义为 `NOT NULL` 的列都必须包含其值，否则语句将失败。
+- ![check](img/check.png) 不强制要求列出列列表。如果你正在为所有列输入值，则完全不需要列出列。如果未列出列，MySQL 将按照它们在表中出现的顺序查找所有列的值。
+- ![check](img/check.png) 列列表和值列表必须一致。你必须为你列出的每个列提供值，否则你将得到类似 `Column count doesn't match value count` 的错误消息。
 
 以下 `INSERT` 语句向 `Customer` 表添加了一行：
 
@@ -12726,9 +16302,8 @@ SELECT * FROM Customer
 
 由于数据库中的数据按行和列组织，因此被读取的文本文件必须指示每列数据的开始和结束位置，以及一行的结束位置。以下是创建表结构的方法：
 
-![check](img/check.png) **列**：为了指示列，使用特定字符分隔每列的数据。默认情况下，MySQL 寻找制表符（tab）来分隔字段。然而，如果制表符对你的数据文件无效，你可以选择不同的字符来分隔字段，并告诉 MySQL 使用不同制表符的字符来分隔字段。
-
-![check](img/check.png) **行**：同样默认情况下，期望行尾是行的结束——尽管在需要时，你可以选择一个字符来指示行结束。`Inventory` 表的数据文件可能如下：
+- ![check](img/check.png) **列**：为了指示列，使用特定字符分隔每列的数据。默认情况下，MySQL 寻找制表符（tab）来分隔字段。然而，如果制表符对你的数据文件无效，你可以选择不同的字符来分隔字段，并告诉 MySQL 使用不同制表符的字符来分隔字段。
+- ![check](img/check.png) **行**：同样默认情况下，期望行尾是行的结束——尽管在需要时，你可以选择一个字符来指示行结束。`Inventory` 表的数据文件可能如下：
 
 ```
 Rock<TAB>Classic<TAB>Steely Dan<Tab>Aja<Tab>10.99
@@ -12772,13 +16347,9 @@ LOAD DATA LOCAL INFILE "path/datafilename" INTO TABLE filename
 
 你必须包含文件的路径。即使在 Windows 计算机上使用正斜杠路径，例如 `"C:/data/datafile1.txt"`。如果在发送此语句时收到错误消息，可能是 `LOCAL` 未启用。更多关于 `LOCAL` 关键字的信息，请参阅 [`http://dev.mysql.com/doc/refman/5.1/en/load-data.html`](http://dev.mysql.com/doc/refman/5.1/en/load-data.html)。
 
-
-
-
-
 要查看你加载的数据——确保它们是正确的——请使用 SQL 查询从数据库中检索数据。我们将在下一节中详细描述这些类型的 SQL 查询。简而言之，使用以下查询查看表中的所有数据，以便你进行检查：
 
-```
+```sql
 SELECT * FROM Customer
 ```
 
@@ -12918,15 +16489,9 @@ SELECT * FROM Inventory GROUP BY Category
 
 通常，你不需要表中的所有信息。你只需要来自选定行的信息。有三个 SQL 单词经常用于指定信息的来源：
 
-
-
-
-
-![check](img/check.png) `WHERE`：允许你从具有特定特征的数据库对象请求信息。例如，你可以请求住在加利福尼亚州的客户名称，或者只列出特定类别的衣服。
-
-![check](img/check.png) `LIMIT`：允许你限制检索信息的信息的行数。例如，你可以只从表中前三行请求信息。
-
-![check](img/check.png) `DISTINCT`：允许你仅从完全相同的行中的一行请求信息。例如，在 `Login` 表中，你可以请求 `loginName` 但指定不出现重复的名称，从而将响应限制为每个成员的一条记录。这将回答“客户是否登录过？”这个问题，而不是“客户登录了多少次？”这个问题。
+- ![check](img/check.png) `WHERE`：允许你从具有特定特征的数据库对象请求信息。例如，你可以请求住在加利福尼亚州的客户名称，或者只列出特定类别的衣服。
+- ![check](img/check.png) `LIMIT`：允许你限制检索信息的信息的行数。例如，你可以只从表中前三行请求信息。
+- ![check](img/check.png) `DISTINCT`：允许你仅从完全相同的行中的一行请求信息。例如，在 `Login` 表中，你可以请求 `loginName` 但指定不出现重复的名称，从而将响应限制为每个成员的一条记录。这将回答“客户是否登录过？”这个问题，而不是“客户登录了多少次？”这个问题。
 
 ### 使用 WHERE 子句
 
@@ -12950,8 +16515,8 @@ SELECT * FROM Inventory GROUP BY Category
 | `column` `<` `value` | `zip < "50000"` | 仅选择邮政编码为 49999 或更低的行 |
 | `column` `<=` `value` | `zip <= "50000"` | 仅选择邮政编码为 50000 或更低的行 |
 | `column` `BETWEEN` `value1` `AND` `value2` | `zip BETWEEN "20000" AND "30000"` | 仅选择邮政编码大于 19999 且小于 30001 的行 |
-| `column` `IN (``value1,value2``,…)` | `zip IN ("90001","30044")` | 仅选择邮政编码为 90001 或 30044 的行 |
-| `column` `NOT IN (``value1,value2``,…)` | `zip NOT IN` `("90001","30044")` | 选择邮政编码为 90001 或 30044 以外的任何行 |
+| `column` `IN (` `value1,value2` `,…)` | `zip IN ("90001","30044")` | 仅选择邮政编码为 90001 或 30044 的行 |
+| `column` `NOT IN (` `value1,value2` `,…)` | `zip NOT IN` `("90001","30044")` | 选择邮政编码为 90001 或 30044 以外的任何行 |
 | `column` `LIKE` `value` 注意：`value` 可以包含通配符 `%`（匹配任何字符串）和 `_`（匹配任何字符）。 | `zip LIKE "9%"` | 选择所有邮政编码以 9 开头的行 |
 | `column` `NOT LIKE` `value` 注意：`value` 可以包含通配符 `%`（匹配任何字符串）和 `_`（匹配任何字符）。 | `zip NOT LIKE "9%"` | 选择所有邮政编码不以 9 开头的行 |
 
@@ -12996,9 +16561,8 @@ SELECT DISTINCT Category FROM Product
 
 `SELECT` 查询可以使用两个单词来合并表：
 
-![check](img/check.png) `UNION`：从一个或多个表中检索行并将它们合并存储在结果中。例如，如果你的查询从一个表选择了 6 行，从另一个表选择了 5 行，结果将包含 11 行。
-
-![check](img/check.png) `JOIN`：表并排合并，并从两个表中检索信息。
+- ![check](img/check.png) `UNION`：从一个或多个表中检索行并将它们合并存储在结果中。例如，如果你的查询从一个表选择了 6 行，从另一个表选择了 5 行，结果将包含 11 行。
+- ![check](img/check.png) `JOIN`：表并排合并，并从两个表中检索信息。
 
 ### UNION
 
@@ -13008,18 +16572,14 @@ SELECT DISTINCT Category FROM Product
 
 你可以根据需要组合尽可能多的 `SELECT` 查询。每个 `SELECT` 查询都可以包含任何有效的 `SELECT` 格式，包括 `WHERE` 子句、`LIMIT` 子句等。查询的规则是：
 
-![check](img/check.png) 所有的 `SELECT` 查询必须选择相同数量的列。
-
-![check](img/check.png) 查询选择的列必须包含相同类型的数据。
-
-
-
+- ![check](img/check.png) 所有的 `SELECT` 查询必须选择相同数量的列。
+- ![check](img/check.png) 查询选择的列必须包含相同类型的数据。
 
 结果集包含了第一个查询的所有行，紧接着是第二个查询的所有行，依此类推。结果集中使用的列名是第一个 `SELECT` 查询中的列名。
 
 这一系列 `SELECT` 查询句可以从同一张表中选择不同的列，但如果你想要一个新表，其中第一列是该表的一列，紧接着是该表的另一列，这种情况通常是不寻常的。更有可能的情况是你想要组合来自不同表中的列。例如，你可能有一个存储已退出俱乐部的成员的表（`OldMember`）和一个存储当前成员的独立表（`Member`）。你可以通过以下查询获取所有成员（包括当前和离职的）的列表：
 
-```
+```sql
 SELECT lastName,firstName FROM Member UNION ALL
       SELECT lastName,firstName FROM OldMember
 ```
@@ -13030,7 +16590,7 @@ SELECT lastName,firstName FROM Member UNION ALL
 
 你可以在每个 `SELECT` 查询中使用 `ORDER BY`，正如我们在本章前面的按特定顺序检索数据节中所讨论的，或者你可以在 `UNION` 查询中使用 `ORDER BY` 来对结果中的所有行进行排序。如果你想让 `ORDER BY` 应用于整个结果集而不是仅仅适用于其后面的查询，请如下使用括号：
 
-```
+```sql
 (SELECT lastName FROM Member UNION ALL
       SELECT lastName FROM OldMember) ORDER BY lastName
 ```
@@ -13041,9 +16601,8 @@ SELECT lastName,firstName FROM Member UNION ALL
 
 两种常见的连接类型是内连接（inner join）和外连接（outer join）。内连接和外连接的区别在于结果表中包含的行数。
 
-![check](img/check.png) 内连接：内连接产生的结果表仅包含两个表中都存在的行。
-
-![check](img/check.png) 外连接：外连接产生的组合表包含存在于一个中的所有行，对于在第二个表中不存在的行，列将留空。
+- ![check](img/check.png) 内连接：内连接产生的结果表仅包含两个表中都存在的行。
+- ![check](img/check.png) 外连接：外连接产生的组合表包含存在于一个中的所有行，对于在第二个表中不存在的行，列将留空。
 
 例如，如果 `table1` 包含 Joe 的行和 Sally 的行，而 `table2` 仅包含 Sally 的行，那么内连接将只包含一行：Sally 的行。然而，外连接将包含两行——Joe 的行和 Sally 的行——尽管 Joe 的那行在 `weight` 字段上将是空白。
 
@@ -13051,14 +16610,14 @@ SELECT lastName,firstName FROM Member UNION ALL
 
 你为内连接和两种类型的外连接使用不同的 `SELECT` 查询。以下查询是一个内连接：
 
-```
+```sql
 SELECT columnnamelist FROM table1,table2
 WHERE table1.col2 = table2.col2
 ```
 
 而这些查询是外连接：
 
-```
+```sql
 SELECT columnnamelist FROM table1 LEFT JOIN table2
 ON table1.col1=table2.col2
 
@@ -13088,7 +16647,7 @@ Loafer      black
 
 你需要提出一个需要两个表信息的问题。如果你使用以下查询进行内连接：
 
-```
+```sql
 SELECT * FROM Product,Color WHERE Product.Name = Color.Name
 ```
 
@@ -13102,7 +16661,7 @@ T-shirt     Shirt     T-shirt     red
 
 注意只有 `T-shirt` 出现在结果表中——因为只有 `T-shirt` 在两个原始表中。另一方面，假设你对以下查询进行左外连接：
 
-```
+```sql
 SELECT * FROM Product LEFT JOIN Color
       ON Product.Name=Color.Name
 ```
@@ -13121,7 +16680,7 @@ Jeans        Pants     <NULL>
 
 最后，假设你对以下查询进行右外连接：
 
-```
+```sql
 SELECT * FROM Product RIGHT JOIN Color
       ON Product.Name=Color.Name
 ```
@@ -13137,7 +16696,7 @@ T-shirt     Shirt     T-shirt     red
 
 我们之前讨论的连接查找表中的匹配项。有时，查找表中哪些行在另一个表中没有匹配项是有用的。例如，假设你想知道谁从未登录过你的会员专区。假设你有一个存储成员登录名（`Member`）的表，另一个存储登录日期（`Login`）的表。你可以通过从两个表查询来提出这个问题。你可以通过以下查询找出哪些登录名不在 `Login` 表中：
 
-```
+```sql
 SELECT loginName FROM Member LEFT JOIN Login
       ON Member.loginName=Login.loginName
       WHERE Login.loginName IS NULL
@@ -13151,11 +16710,10 @@ SELECT loginName FROM Member LEFT JOIN Login
 
 `UPDATE` 语句非常直接：
 
-
-
-
-`UPDATE tablename SET column1`=`value1`,`column2`=`value2`,...`
-`WHERE clause`
+```sql
+UPDATE tablename SET column1=`value1`,column2=`value2`,...
+WHERE clause
+```
 
 在 `SET` 子句中，你列出要更新的列和要插入的新值。请在一个语句中列出所有你想要更改的列。如果没有 `WHERE` 子句，所有行的列值都将被更改。但有了 `WHERE` 子句，你可以指定要更新哪些行。例如，要更新 `Customer` 表中的地址，可以使用此语句：
 
@@ -13234,34 +16792,28 @@ PHP 提供了两组与 MySQL 通信的函数——`mysql` 函数和 `mysqli`（M
 ## 与 MySQL 通信
 
 本章描述了如何从 PHP 脚本访问 MySQL。（在 PHP 脚本之外访问 MySQL 数据库将在本文迷你书的第 1
+
+```php
+mysqli_connect("host", "acct", "password", "dbname")
 or die ("message");
 ```
 
 填写以下信息：
 
-![check](img/check.png) `host`: 安装 MySQL 的计算机名称——例如 `databasehost.example.com`。如果 MySQL 数据库与你的网站在同一台计算机上，可以使用 `localhost` 作为计算机名称。如果你留此信息为空（`""`），PHP 会假设为 `localhost`。
-
-![check](img/check.png) `acct`: 有效 MySQL 账户的名称。（我们在本文迷你书第 [2 章](#29_9781118213704-bk05ch02.html）中详细讨论了 MySQL 账户。）
-
-
-
-
-
-![check](img/check.png) `password`: 由 `acct` 指定 MySQL 账户的密码。如果 MySQL 账户不需要密码，请在引号之间什么都不输入：`""`。
-
-![check](img/check.png) `dbname`: 你想要通信的数据库名称。此参数是可选的——如果你愿意，稍后可以使用单独的命令选择数据库。你可以在脚本的任何时候选择不同的数据库。
-
-![warning_bomb.eps](img/warning_bomb_fmt.png) 如果你正在使用 mysql 函数，则不能在 `connect` 函数中选择数据库。你必须使用单独的函数 `mysql_select_db` 来选择数据库。
-
-![check](img/check.png) `message`: 如果连接失败，发送到浏览器的消息。如果计算机或网络中断，或者 MySQL 服务器未运行，连接将失败。如果提供的信息不正确，连接也可能失败——例如密码中包含输入错误。
-
-![tip.eps](img/tip_fmt.png) 在开发期间你可能希望使用描述性的 `message`，例如 `Couldn't connect to server`，但在应用程序投入后，可以使用更适合客户的通用 `message`，例如 `The Catalog is not available at the moment. Please try again later.`。
-
-![technicalstuff.eps](img/technicalstuff_fmt.png) `host` 包含了连接所需的端口号。几乎总是，端口号是 3306。在少数情况下，MySQL 管理员需要设置 MySQL 以通过不同的端口连接。在这些情况下，连接需要端口号。端口号的格式为 `hostname:portnumber`。例如，你可能会使用 `localhost:8808`。
+- ![check](img/check.png) `host`: 安装 MySQL 的计算机名称——例如 `databasehost.example.com`。如果 MySQL 数据库与你的网站在同一台计算机上，可以使用 `localhost` 作为计算机名称。如果你留此信息为空（`""`），PHP 会假设为 `localhost`。
+- ![check](img/check.png) `acct`: 有效 MySQL 账户的名称。（我们在本文迷你书第 [2 章](#29_9781118213704-bk05ch02.html）中详细讨论了 MySQL 账户。）
+- ![check](img/check.png) `password`: 由 `acct` 指定 MySQL 账户的密码。如果 MySQL 账户不需要密码，请在引号之间什么都不输入：`""`。
+- ![check](img/check.png) `dbname`: 你想要通信的数据库名称。此参数是可选的——如果你愿意，稍后可以使用单独的命令选择数据库。你可以在脚本的任何时候选择不同的数据库。
+- ![warning_bomb.eps](img/warning_bomb_fmt.png) 如果你正在使用 mysql 函数，则不能在 `connect` 函数中选择数据库。你必须使用单独的函数 `mysql_select_db` 来选择数据库。
+- ![check](img/check.png) `message`: 如果连接失败，发送到浏览器的消息。如果计算机或网络中断，或者 MySQL 服务器未运行，连接将失败。如果提供的信息不正确，连接也可能失败——例如密码中包含输入错误。
+- ![tip.eps](img/tip_fmt.png) 在开发期间你可能希望使用描述性的 `message`，例如 `Couldn't connect to server`，但在应用程序投入后，可以使用更适合客户的通用 `message`，例如 `The Catalog is not available at the moment. Please try again later.`。
+- ![technicalstuff.eps](img/technicalstuff_fmt.png) `host` 包含了连接所需的端口号。几乎总是，端口号是 3306。在少数情况下，MySQL 管理员需要设置 MySQL 以通过不同的端口连接。在这些情况下，连接需要端口号。端口号的格式为 `hostname:portnumber`。例如，你可能会使用 `localhost:8808`。
 
 通过这些语句，`mysqli_connect` 尝试使用提供的账户名和密码打开与指定计算机的连接。如果连接失败，脚本停止运行向浏览器发送 `message`。
 
 以下语句连接到本地计算机上的 MySQL 服务器，使用名为 `phpuser` 不需要密码的 MySQL 账户：
+
+
 
 ```
 $cxn = mysqli_connect("localhost","phpuser","","Customer")
@@ -13335,19 +16887,15 @@ mysqli_select_db($cxn,"databasename")
     or die("message");
 ```
 
-
-
-
-
 ![warning_bomb.eps](img/warning_bomb_fmt.png) 如果你使用的是 `mysql` 函数而不是 `mysqli` 函数，则你必须在一个单独的函数中使用 `mysql_select_db` 来选择数据库。本章稍后出现的将 mysqli 函数转换为 mysql 函数 节将进行更详细的解释。
 
 填写以下信息：
 
-![check](img/check.png) `cxn`: 包含连接信息的变量。
+![check](img/check.png) `$cxn`: 包含连接信息的变量。
 
-![check](img/check.png) `databasename`: 数据库名称。
+![check](img/check.png) `$databasename`: 数据库名称。
 
-![check](img/check.png) `message`: 如果无法选择数据库，则发送到浏览器的消息。选择失败可能是因为找不到数据库，这通常是数据库名称拼写错误导致的。
+![check](img/check.png) `$message`: 如果无法选择数据库，则发送到浏览器的消息。选择失败可能是因为找不到数据库，这通常是数据库名称拼写错误导致的。
 
 例如，你可以使用以下语句选择 `Customer` 数据库：
 
@@ -13427,7 +16975,7 @@ if(!$result = mysqli_query($cxn,$query))
 
 其他有用的 `mysqli` 函数供你在 PHP 脚本中使用。以下小节描述了如何使用 `mysqli` 函数统计查询返回的行数、确定最后自动生成的条目、统计查询影响的行数以及转义字符。
 
-## 计算查询返回的行数
+### 计算查询返回的行数
 
 通常，你想知道 SQL 查询返回了多少行。你的查询指定了信息返回必须满足的标准，例如 `state` 必须等于 `TX` 或 `lastName` 必须等于 `Smith`。`mysqli_num_rows` 函数告诉你找到了多少行符合标准的记录。
 
@@ -13448,7 +16996,7 @@ if($n < 1)
 
 在此代码中，SQL 查询查找用户提供的用户名（在本例中称为 `acct`）和密码。代码随后测试查询结果以查看它包含多少行。如果结果不包含任何行（即少于一行），则数据库中不存在具有所提供用户名和密码的用户，因此账户信息无效，且不允许该用户登录。
 
-## 确定最后一个自动递增项
+### 确定最后一个自动递增项
 
 许多数据库表包含一个 `AUTO_INCREMENT` 字段。这是一个序列字段，MySQL 会自动向该字段添加值。当添加新行时，MySQL 会给 `AUTO_INCREMENT` 字段赋予前一个行之后的下一个序列值。此类字段通常被定义为表的唯一标识符或主键。
 
@@ -13465,10 +17013,6 @@ $query = "INSERT INTO OrderItem (orderID,color,size,price)
           VALUES ($orderID,$color,$size,$price)";
 $result = mysqli_query($cxn,$query);
 ```
-
-
-
-
 
 在第一个查询中，未指定 `orderID`，因此 MySQL 在该字段中存储了下一个序列号。在第二个查询中，上一个查询插入的 `orderID` 被插入到第二个表中。
 
@@ -13564,10 +17108,6 @@ mysql_select_db($dbname);
 | `mysqli_query($cxn,$sql)` | `mysql_query($sql)` 或 `mysql_query($sql,$cxn)` |
 | `mysqli_select_db($cxn,$dbname)` | `mysql_select_db($dbname)` |
 
-
-
-
-
 在前面的章节中，你已经学习了如何使用 PHP 进行编程。你已经学会了如何创建程序、如何编写循环、如何设置条件等。所有这些知识都让你能够创建出在网络上运行良好的 PHP 程序。但你可以让它们变得更好、更易用，而这正是本章的全部内容。
 
 在本章中，你将看到如何改进和扩展你的 `PHP` 程序，以及如何自动创建和使用辅助函数。你还将学习复用代码的方法，而不是在每次需要时都重新编写一遍。
@@ -13606,7 +17146,7 @@ php_value auto_prepend_file "prepend.php"
 
 或者，你也可以在 Web 服务器配置中针对文档根目录的 `<Directory>` 块中添加该行。例如，如果你的文档根目录是 `"/var/www"`，你可以在 Apache 配置中 `<Directory "/var/www">` 指令之后、结束标签 `</Directory>` 之前添加该行。
 
-![tip.eps](img/tip_fmt.png) 有关 `.htaccess` 文件的更多信息，请参阅[`www.javascriptkit.com/howto/htaccess.shtml`](http://www.javascriptkit.com/howto/htaccess.shtml)。
+![tip.eps](img/tip_fmt.png) 有关 `.htaccess` 文件的更多信息，请参阅 [`www.javascriptkit.com/howto/htaccess.shtml`](http://www.javascriptkit.com/howto/htaccess.shtml)。
 
 打开文本编辑器并创建一个新的空文件。在文件中放入以下代码：
 
@@ -13655,10 +17195,6 @@ session_start();
 相反，如果你使用类来定义程序，那么 `addPermission` 函数就永远不会与其他函数冲突，因为 `addPermission` 方法是绑定在用户类上的。
 
 记得以面向对象的方式创建用户（称为实例化用户对象）需要使用 `New` 关键字。例如，如果你的用户类名为 `User`（由于缺乏更具描述性的词汇），你可以这样实例化它：
-
-
-
-
 
 ```php
 $user = new User;
@@ -13756,9 +17292,6 @@ if (array_key_exists($state, $stateList)) {
 }
 ```
 
-
-
-
 数据库对于你用自己的网站构建的绝大多数功能都非常有用。但在某些情况下，你可能需要访问数据库之外的信息。在这些情况下，你可以使用（或消费）由其他公司提供的 Web 服务。例如，Twitter 提供了允许你检索推文和其他信息的 Web 服务，Amazon 提供了各种 Web 服务，而其他几家公司也提供了访问其数据的公共 Web 服务。
 
 本章将介绍如何创建和消费 Web 服务。我们将从一个返回当前日期的简单 Web 服务开始，然后进入创建其他接受输入的 Web 服务。
@@ -13777,11 +17310,12 @@ Web 服务通常返回格式化为可扩展标记语言 (XML) 或 JavaScript 对
 
 任何你可以从 PHP 程序返回的内容都可以作为 Web 服务返回。本节将介绍如何以 Web 服务的格式返回数据。
 
-## 返回日期
+### 返回日期
 
 上手 Web 服务的一种简单方法是以 JSON 格式返回日期。以下是实现方法：
 
 1. 打开你的文本编辑器或编程 IDE 并创建一个新的空文件。
+
 2. 将以下代码放入文件中：
 
 ```php
@@ -13794,6 +17328,7 @@ print json_encode($date);
 ```
 
 3. 将文件保存为 `date.php` 并放在你的文档根目录下。
+
 4. 在网页浏览器中访问 `http://localhost/date.php` 查看页面。
 
 你应该能看到类似图 2-1 所示页面（尽管日期可能会不同）。
@@ -13884,10 +17419,6 @@ print $decoded['dayOfWeek'];
 
 这种模式在 Web 服务消费中非常典型。事实上，为 cURL 设置一个共享函数或类是很常见的，这样你就可以调用 cURL Web 服务，而必在所有文件中包含这段相同的代码。本小型书籍的第 1 章讨论了辅助函数。
 
-
-
-
-
 对于此部分，你将使用一个数据库来标记某个网站是否上线并运行正常。Web 服务将根据数据库表的内容简单返回“Up”（在线）或“Down”（离线）。
 
 在此部分，你使用一个名为 `sites` 的数据库。因此，第一步是使用命令创建数据库本身：
@@ -13971,10 +17502,6 @@ if (!$dbLink) {
 ### 为 Web 服务接收输入
 
 目前为止，你创建的 Web 服务仅仅返回数据，但没有接受任何自己的输入。你可以添加接收输入的能力，然后根据该输入做出反应，就像处理 Web 表单时做的那样。例如，你可能接受 `date` Web 服务的输入，将日期转换为其他格式。
-
-
-
-
 
 ## 列表 2-6: 日期服务的 XML 输出
 
@@ -14096,7 +17623,9 @@ if (isset($_GET['format'])) {
 ## 本章
 
 - ![arrow.png](img/arrow.png) 重要的 Web 表单验证问题
+
 - ![arrow.png](img/arrow.png) 使用 JavaScript 验证
+
 - ![arrow.png](img/arrow.png) 使用 PHP 验证
 
 当你将 Web 表单发布到互联网时，你是在邀请向你发送信息。遗憾的是，并不是所有人都能正确地填写 Web 表单；有些人不知道电话号码应该如何格式，或者应该使用五位数还是九位的邮政编码。除了基础错误外，还有恶意用户会错误地填写表单，看看他们是否能让你的程序崩溃，或者是否可以访问不应该访问的数据。
@@ -14121,11 +17650,7 @@ if (isset($_GET['format'])) {
 
 ### 永远不要假设有 JavaScript
 
-新手和资深程序员都会犯的一个错误是假设访问者的浏览器会启用 JavaScript。有了这个假设，程序员们在 JavaScript 中进行验证，而只在关重要的 PHP 中进行最少的验证。遗憾的是，JavaScript 并不总是可用的，即使可用时，恶意用户仍然可以通过跳过 JavaScript 检查向服务器发送坏数据。无论进行多少次额外的检查来确保 JavaScript 已启用，都对解决这个问题没有帮助。
-
-
-
-
+新手和资深程序员都会犯的一个错误是假设访问者的浏览器会启用 JavaScript。有了这个假设，程序员们在 JavaScript 中进行验证，而只在关键的 PHP 中进行最少的验证。遗憾的是，JavaScript 并不总是可用的，即使可用时，恶意用户仍然可以通过跳过 JavaScript 检查向服务器发送坏数据。无论进行多少次额外的检查来确保 JavaScript 已启用，都对解决这个问题没有帮助。
 
 ![remember.eps](img/remember_fmt.png) 唯一的解决方案是永远不要假设 `JavaScript` 已经进行过验证，而是始终在 `PHP` 中执行严格的验证。一旦数据进入 `PHP`，用户就不再对其拥有控制权，出错概率也会随之减少。
 
@@ -14142,75 +17667,6 @@ if (isset($_GET['format'])) {
 本节介绍如何使用 `JavaScript` 对各种输入类型进行基础验证。第一个练习设置了 Web 表单的 HTML。一旦完成此练习和本节，你就完成了该表单的 `JavaScript` 验证。
 
 1. 打开你的文本编辑器并创建一个新的空文件。
-
-2. 在文件中放置以下 HTML：
-
-```html
-<!doctype html>
-<html
-<head>
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-<script type="text/javascript" src="form.js"></script>
-<link rel="stylesheet" type="text/css" href="form.css">
-<title>A form</title>
-</head>
-<body>
-<form id="userForm" method="POST" action="form-process.php">
-<div>
-         <fieldset>
-         <legend>User Information</legend>
-         <div id="errorDiv"></div>
-          <label for="name">Name:* </label>
-           <input type="text" id="name" name="name">
-           <span class="errorFeedback errorSpan" id="nameError">Name is required</span>span
-     <brbr
-
-����������������������<label for="city">City: </label>
- << type="text" id="="""="="">
-���������������������<<br />����������������������< for for for="state">State: </label>
-    <select name="state" id="state">
-             <option></option>
-             <option>Alabama</option>
-             <option>California</option>
-             <option>Colorado</option>
-             <option>Florida</option>
-             <option>Illinois</option>
-             <option>New Jersey</option>
-            <option>New York</option>
-            <option>Wisconsin</option>
-            </select>
-            <br />
-            <label for="zip">ZIP: </label>
-            <input type="text" id="zip" name="zip">
-            <br />
-      <label for="email">E-mail Address:* </label>
-          <input type="text" id="email" name="email">
-          <span class="errorFeedback errorSpan" id="emailError">E-mail is required</span>span
-          <br />
-          <label for="phone">Telephone Number: </label>
-          <input type="text" id="phone" name="phone">
-          <span class="errorFeedback errorSpan" id="phoneError">Format: xxx-xxxx</span>span
-           <<br />
-�����������������������<label for="work">Number Type:</label>
-           <input class="radioButton" type="radio" name="phonetype" id="work" value="work">
-           <label class="radioButton" for="work">Work</label>
-           <input class="radioButton" type="radio" name="phonetype" id="home" value="home">
-           <label class="radioButton" for="home">Home</label>
-           <span class="errorFeedback TypeError" id="phonetypeError">Please choose an option</span>span
-       <br />
- <label for="password1">Password:* </label>
-           <input type="password" id="password1" name="password1">
-           <span class="errorFeedback errorSpan" id="password1Error">Password required</span>span
-           <br />
-           <label for="password2">Verify Password:* </label>
-           <input type="password" id="password2" name="password2">
-           <span class="errorFeedback errorSpan" id="password2Error">Passwords don't match</span>span
-          <br />
-          <input type="submit" id="submit" name="submit">
-</form>
-```
-
-3. 打开你的文本编辑器并创建一个新的空文件。
 
 2. 在文件中放置以下 HTML：
 
@@ -14366,16 +17822,12 @@ $(document).ready(function() {
 
 虽然警报对话框本身并不新鲜，但它证明了你已经正确连接了 HTML 和 JavaScript。从这里开始，我们将为表单添加 JavaScript 验证。
 
-
-
-
-
 接下来将添加表单元素。页面上的各种表单元素都遵循相同的通用模式：一个 `<label>` 后跟着一个 `<input>`，然后是一个用于错误反馈的 `<span>`。该 `<span>` 元素通过 CSS 隐藏。这一点稍后会介绍。
 
 ```html
 <label for="name">Name:* </label>
 <input type="text" id="name" name="name">
-<span class="errorFeedback errorSpan" id="nameError">Name is required</span
+<span class="errorFeedback errorSpan" id="nameError">Name is required</span>
 <br />
 ```
 
@@ -14545,23 +17997,29 @@ $(document).ready(function() {
     }
 ```
 
-3.  在文件中有了这些函数后，接下来你需要调用它们。对 `removeFeedback` 函数的调用被直接添加到 `submit` 处理程序中，以便在表单提交时清除错误反馈。该调用看起来如下所示：`removeFeedback();`。`provideFeedback` 函数需要添加到表单 `submit` 处理程序的 `else` 条件中，看起来如下所示：`provideFeedback(errors);`。现在 `submit` 处理程序应该像这样：
+
+
+### 3. 调用函数
+
+在文件中有了这些函数后，接下来你需要调用它们。对 `removeFeedback` 函数的调用被直接添加到 `submit` 处理程序中，以便在表单提交时清除错误反馈。该调用看起来如下所示：`removeFeedback();`。`provideFeedback` 函数需要添加到表单 `submit` 处理程序的 `else` 条件中，看起来如下所示：`provideFeedback(errors);`。现在 `submit` 处理程序应该像这样：
 
 ```javascript
-    $("#userForm").submit(function(e) {
-        removeFeedback();
-        var errors = validateForm();
-        if (errors == "") {
-            return true;
-        } else {
-            provideFeedback(errors);
-            e.preventDefault();
-            return false;
-        }
-    });
+$("#userForm").submit(function(e) {
+    removeFeedback();
+    var errors = validateForm();
+    if (errors == "") {
+        return true;
+    } else {
+        provideFeedback(errors);
+        e.preventDefault();
+        return false;
+    }
+});
 ```
 
-4.  将该文件（作为 `form.js`）保存到你的文档根目录下。此时，整个文件应该包含以下内容：
+### 4. 保存文件
+
+将该文件（作为 `form.js`）保存到你的文档根目录下。此时，整个文件应该包含以下内容：
 
 ```javascript
 $(document).ready(function() {
@@ -14591,19 +18049,7 @@ $(document).ready(function() {
         return errorFields;
     }
 });
-```
 
-
-
-
-```javascript
-      errorFields.push('email');
-    }
-    if ($('#password1').val() == "") {
-        errorFields.push('password1');
-    }
-    return errorFields;
-} //end function validateForm
 function provideFeedback(incomingErrors) {
     for (var i = 0; i < incomingErrors.length; i++) {
         $("#" + incomingErrors[i]).addClass("errorClass");
@@ -14611,6 +18057,7 @@ function provideFeedback(incomingErrors) {
     }  
     $("#errorDiv").html("Errors encountered");
 }
+
 function removeFeedback() {
     $("#errorDiv").html("");
     $('input').each(function() {
@@ -14622,48 +18069,60 @@ function removeFeedback() {
 }
 ```
 
-5. 在浏览器中重新加载 `form.php`。
+### 5. 重新加载页面
 
-6. 清空字段中任何由浏览器保存的信息（如果有的话）。
+在浏览器中重新加载 `form.php`。
 
-7. 在表单空字段内，点击“提交查询”（Submit Query）。
+### 6. 清空字段
 
-你应该会收到如 图 3-4 所示的错误。
+清空字段中任何由浏览器保存的信息（如果有的话）。
+
+### 7. 提交空表单
+
+在表单空字段内，点击“提交查询”（Submit Query）。
+
+你应该会收到如图 3-4 所示的错误。
 
 ![9781118213704-fg060304.eps](img/9781118213704-fg060304_fmt.png)
 
 **图 3-4:** 通过 JavaScript 提供的错误。
 
-8. 填写姓名（Name）字段并点击“提交查询”。
+### 8. 填写姓名字段
 
-指示姓名字段存在错误的反馈应该消失，但其他错误将仍然存在，如 图 3-5 所示。
+填写姓名（Name）字段并点击“提交查询”。
+
+指示姓名字段存在错误的反馈应该消失，但其他错误将仍然存在，如图 3-5 所示。
 
 ![9781118213704-fg060305.eps](img/9781118213704-fg060305_fmt.png)
 
 **图 3-5:** 修正表单中的一个错误。
 
-9. 在填充电子邮件地址（E-mail Address）和密码（Password）字段中的详细信息并点击“提交查询”。
+### 9. 填写剩余字段
+
+在填充电子邮件地址（E-mail Address）和密码（Password）字段中的详细信息并点击“提交查询”。
 
 表单应该会提交，再次出现“页面未找到”或类似的错误。
 
+---
+
 ## 完善验证
 
-现在你已经检查了必填字段并向用户提供了反馈。接下来，你需要完善验证逻辑。在在此之前，你应该停顿一下，查看你为验证而添加的代码。
+现在你已经检查了必填字段并向用户提供了反馈。接下来，你需要完善验证逻辑。在此之前，你应该停顿一下，查看你为验证而添加的代码。
 
 `submit` 事件处理程序是通过 jQuery 的 `submit()` 函数进行设置的：
 
 ```javascript
-    $("#userForm").submit(function(e) {
-        removeFeedback();
-        var errors = validateForm();
-        if (errors == "") {
-            return true;
-        } else {        
-            provideFeedback(errors);
-            e.preventDefault();
-            return false;
-        }
-    });
+$("#userForm").submit(function(e) {
+    removeFeedback();
+    var errors = validateForm();
+    if (errors == "") {
+        return true;
+    } else {        
+        provideFeedback(errors);
+        e.preventDefault();
+        return false;
+    }
+});
 ```
 
 在 `submit()` 函数内部，首先发生的事情是移除任何反馈。接下来，调用 `validateForm()` 函数，并将该函数返回的内容设置到 `errors` 变量中。如果 `errors` 变量为空，`submit()` 函数将返回 `true`，这本质上是告诉浏览器：“一切正常，继续提交表单。”然而，如果遇到错误，将调用 `provideFeedback()` 函数，得益于 `preventDefault` 和返回 `false`，将停止默认操作（提交表单）。
@@ -14671,23 +18130,23 @@ function removeFeedback() {
 `validateForm()` 函数是表单验证的核心：
 
 ```javascript
-    function validateForm() {
-        var errorFields = new Array();
-        // 检查必填字段是否有内容
-        if ('('#name').val() == "") {
-            errorFields.push('name');
-        }
-        if ('('#email').val() == "") {
-            errorFields.push('email');
-        }
-        if ('('#password1').val() == "") {
-            errorFields.push('password1');
-        }
-        return errorFields;
-    } //end function validateForm
+function validateForm() {
+    var errorFields = new Array();
+    // 检查必填字段是否有内容
+    if ($('#name').val() == "") {
+        errorFields.push('name');
+    }
+    if ($('#email').val() == "") {
+        errorFields.push('email');
+    }
+    if ($('#password1').val() == "") {
+        errorFields.push('password1');
+    }
+    return errorFields;
+} //end function validateForm
 ```
 
-在此函数中，实例化了一个数组来存放错误字段。这允许你一次存储多个错误（否则会会让用户感到非常沮丧）。每个必填字段都通过其 `ID` 获取。如果该字段的值为 `""`，则将带有错误的字段的 `ID` 被推入 `errorFields` 数组中。最后，`errorFields` 数组被返回，并成为你在 `submit()` 处理程序中看到的错误数组。
+在此函数中，实例化了一个数组来存放错误字段。这允许你一次存储多个错误（否则会让用户感到非常沮丧）。每个必填字段都通过其 `ID` 获取。如果该字段的值为 `""`，则将带有错误的字段的 `ID` 被推入 `errorFields` 数组中。最后，`errorFields` 数组被返回，并成为你在 `submit()` 处理程序中看到的错误数组。
 
 ![tip.eps](img/tip_fmt.png) 另一种完成此任务的方法是为每个元素的元素添加一个 `required` 类，然后使用 jQuery 遍历每个 `required` 类，例如 `$('.required').each(`。
 
@@ -14697,7 +18156,7 @@ function removeFeedback() {
 function provideFeedback(incomingErrors) {
     for (var i = 0; i < incomingErrors.length; i++) {
         $("#" + incomingErrors[i]).addClass("errorClass");
-        $("#" + incomingErrors[i] "Error").removeClass("errorFeedback");
+        $("#" + incomingErrors[i] + "Error").removeClass("errorFeedback");
     }
     $("#errorDiv").html("Errors encountered");
 }
@@ -14708,26 +18167,30 @@ function provideFeedback(incomingErrors) {
 `form.js` 文件（到目前为止）的最后部分是 `removeFeedback()` 函数：
 
 ```javascript
-    function removeFeedback() {
-        $("#errorDiv").html("");
-        $('input').each(function() {
-            $(this).removeClass("errorClass");
-        });
-        $('.errorSpan').each(function() {
-            $(this).addClass("errorFeedback");
-        });
-    }
+function removeFeedback() {
+    $("#errorDiv").html("");
+    $('input').each(function() {
+        $(this).removeClass("errorClass");
+    });
+    $('.errorSpan').each(function() {
+        $(this).addClass("errorFeedback");
+    });
+}
 ```
 
-此函数首先将 `errorDiv` 的 HTML 设置为空。接下来，每个输入框都移除了 `errorClass`，页面上的每个 `errorSpan` 都添加了 `errorFeedback` 类，这本质上将它们隐藏了。这一切都是在 jQuery 选择器和函数的帮助下完成的
+此函数首先将 `errorDiv` 的 HTML 设置为空。接下来，每个输入框都移除了 `errorClass`，页面上的每个 `errorSpan` 都添加了 `errorFeedback` 类，这本质上将它们隐藏了。这一切都是在 jQuery 选择器和函数的帮助下完成的。
+
+---
 
 ## 添加更多验证
 
 观察你目前所做的验证，有几点很明显：第一，电子邮件字段可以填写无效的电子邮件地址。其次，没有任何验证密码是否匹配。你接下来将处理这两者以及另一个电话号码。幸运的是，你已经有了验证的底层结构，因此完善工作变得简单得多。
 
-通过添加检查来继续进行验证，确保密码匹配且电子邮件地址包含点和 @ 符号。
+通过添加检查来继续进行验证，确保密码匹配且电子邮件地址包含点和 `@` 符号。
 
-1. 在 `form.js` 文件中，在 `validateForm()` 函数中、`errorFields` 语句之前添加以下代码：
+### 1. 修改 `validateForm()` 函数
+
+在 `form.js` 文件中，在 `validateForm()` 函数中、`errorFields` 语句之前添加以下代码：
 
 ```javascript
 // 检查密码匹配
@@ -14741,17 +18204,23 @@ if (!($('#email').val().indexOf(".") > 2) && ($('#email').val().indexOf("@"))) {
 }
 ```
 
-2. 将文件保存（`form.js`）到你的文档根目录下。
+### 2. 保存文件
 
-3. 在浏览器中加载 [`http://localhost/form.php`](http://localhost/form.php) 或如果页面已打开则刷新页面。
+将文件保存（`form.js`）到你的文档根目录下。
 
-4. 在电子邮件地址中输入除电子邮件以外的内容。
+### 3. 重新加载页面
 
-具体来说，不要在输入中输入 @ 符号。
+在浏览器中加载 [`http://localhost/form.php`](http://localhost/form.php) 或如果页面已打开则刷新页面。
 
-5. 点击“提交查询”。
+### 4. 测试电子邮件验证
 
-你应该看到一个如 图 3-6 所示页面。
+在电子邮件地址中输入除电子邮件以外的内容。具体来说，不要在输入中输入 `@` 符号。
+
+### 5. 提交表单
+
+点击“提交查询”。
+
+你应该看到一个如图 3-6 所示页面。
 
 ![9781118213704-fg060306.eps](img/9781118213704-fg060306_fmt.png)
 
@@ -14759,18 +18228,19 @@ if (!($('#email').val().indexOf(".") > 2) && ($('#email').val().indexOf("@"))) {
 
 ![tip.eps](img/tip_fmt.png) 注意，错误反馈显示电子邮件是必填的。进一步的完善应该是指示该地址无效。
 
-6. 在字段中输入有效的电子邮件地址，并在第一个密码字段中输入密码。
+### 6. 填写电子邮件和密码
 
-7. 点击“提交查询”。
+在字段中输入有效的电子邮件地址，并在第一个密码字段中输入密码。
 
-你现在看到了一个指示密码不匹配的错误，如 图 3-7 所示。
+### 7. 再次提交
+
+点击“提交查询”。
+
+你现在看到了一个指示密码不匹配的错误，如图 3-7 所示。
 
 ![9781118213704-fg060307.eps](img/9781118213704-fg060307_fmt.png)
 
 **图 3-7:** 测试密码匹配验证。
-
-
-
 
 拆解这段代码，你会发现添加了两个验证：一个用于密码匹配，另一个用于电子邮件地址验证。这里是密码匹配的验证：
 
@@ -14793,11 +18263,17 @@ if (!($('#email').val().indexOf(".") > 2) && ($('#email').val().indexOf("@"))) {
 
 此验证会查找地址中是否存在单个点，并且会查找 `@` 符号。诚然，这是一种非常基础的验证，但考虑到地址中允许的有效变体和字符数量，电子邮件地址的检查是出了名的复杂工作。
 
+---
+
+### 验证电话号码
+
 最后一个需要验证的区域：电话号码。虽然它不是必填字段，但如果填写了，最好能确保它至少包含特定数量的数字。此外，如果填写了电话号码，则 `Number Type` 字段会变为必填。
 
 添加这些检查不会像其他那么简单，尤其是 `Number Type` 字段是一个单选按钮。尽管如此，并不困难。按照以下步骤操作：
 
-1. 在 `form.js` 中，在 `validateForm()` 函数返回 `errorFields` 语句之前添加以下代码：
+#### 1. 添加电话号码验证代码
+
+在 `form.js` 中，在 `validateForm()` 函数返回 `errorFields` 语句之前添加以下代码：
 
 ```javascript
 if ($('#phone').val() != "") {
@@ -14812,9 +18288,17 @@ if ($('#phone').val() != "") {
 }
 ```
 
-2. 保存文件（命名为 `form.js`）。
-3. 加载 `form.php` 页面，或者如果浏览器已打开则刷新。
-4. 正确填写必填字段，并在 Phone Number 字段中输入有效的十位电话号码，但不要选择任何 Number Type 选项。点击 Submit Query（提交查询）。
+#### 2. 保存文件
+
+保存文件（命名为 `form.js`）。
+
+#### 3. 重新加载页面
+
+加载 `form.php` 页面，或者如果浏览器已打开则刷新。
+
+#### 4. 测试 Number Type 验证
+
+正确填写必填字段，并在 Phone Number 字段中输入有效的十位电话号码，但不要选择任何 Number Type 选项。点击 Submit Query（提交查询）。
 
 你应该会收到一个类似于图 3-8 所示的页面。
 
@@ -14824,8 +18308,13 @@ if ($('#phone').val() != "") {
 
 你可以从图 3-8 中看到，视觉反馈并不明显或容易发现。为了修正这一点，你需要添加一些 CSS。
 
-5. 在编辑器中打开 `form.css`。
-6. 在 `form.css` 的文件底部添加以下 CSS：
+#### 5. 修改 CSS
+
+在编辑器中打开 `form.css`。
+
+#### 6. 添加 CSS 样式
+
+在 `form.css` 的文件底部添加以下 CSS：
 
 ```css
 .phoneTypeError {
@@ -14835,8 +18324,13 @@ if ($('#phone').val() != "") {
 }
 ```
 
-7. 在浏览器中重新加载 `form.php`。
-8. 正确填写必填字段，然后在电话号码字段中输入有效的十位数字，但不要选择任何 Number Type 选项。点击 Submit Query。
+#### 7. 重新加载页面
+
+在浏览器中重新加载 `form.php`。
+
+#### 8. 再次测试
+
+正确填写必填字段，然后在电话号码字段中输入有效的十位数字，但不要选择任何 Number Type 选项。点击 Submit Query。
 
 你现在应该收到一个类似于图 3-9 所示的页面。
 
@@ -14846,6 +18340,8 @@ if ($('#phone').val() != "") {
 
 你现在完成了一些 JavaScript 验证，但你的工作尚未结束。你到为止所做的有助于用户在填写表单时获得快速反馈。表单验证最重要的区域是服务器端的 PHP。
 
+---
+
 ## 执行 PHP 验证
 
 本节使用 PHP 检查服务器端验证。你使用了之前章节中的 HTML、CSS 和 JavaScript。整体目标是确保来自用户表单、网络服务或其他地方的任何输入都经过检查和清理。
@@ -14854,14 +18350,19 @@ if ($('#phone').val() != "") {
 
 为了将错误传回表单，你需要使用 session。此外，你需要在使用的 `form.php` 文件中留出一个空间来提供 PHP 的错误反馈。这似乎是一个很好的起点。
 
-1. 在编辑器中打开 `form.php`。
-2. 在 `form.php` 中，在 `<doctype>` 声明上方添加以下代码：
+### 1. 修改 `form.php` - 启动 Session
+
+在编辑器中打开 `form.php`。
+
+在 `form.php` 中，在 `<doctype>` 声明上方添加以下代码：
 
 ```php
 <?php session_start(); ?>
 ```
 
-3. 将 `<div id="errorDiv"></` 行更改如下代码：
+### 2. 修改错误显示区域
+
+将 `<div id="errorDiv"></` 行更改如下代码：
 
 ```html
 <div id="errorDiv">
@@ -14877,16 +18378,19 @@ if ($('#phone').val() != "") {
 </div>
 ```
 
-4. 为了测试 PHP 验证，你需要跳过 JavaScript 验证文件 `form.js`，使其不加载。
+### 3. 禁用 JavaScript 验证
 
-完成后，该行应该像这样：
+为了测试 PHP 验证，你需要跳过 JavaScript 验证文件 `form.js`，使其不加载。完成后，该行应该像这样：
 
 ```html
 <!-- <script type="text/javascript" src="form.js"></script> -->
 ```
 
-5. 保存 `form.php`。
-6. 在浏览器中加载 [`http://localhost/form.php`](http://localhost/form.php)。
+### 4. 保存并测试
+
+保存 `form.php`。
+
+在浏览器中加载 [`http://localhost/form.php`](http://localhost/form.php)。
 
 与之前加载页面时没有变化。然而，现在你不需要填写任何内容，由于 JavaScript 验证已被临时移除，表单将会提交。
 
@@ -14894,10 +18398,19 @@ if ($('#phone').val() != "") {
 
 如果遇到错误，将创建输出并将每个错误消息打印到屏幕上。（稍后你会进行测试。）
 
+---
+
+### 创建成功页面
+
 另一个前提条件是设置成功页面。按照以下步骤操作：
 
-1. 在编辑器中创建一个新的空文件。
-2. 在文件中放置以下 HTML：
+#### 1. 创建新文件
+
+在编辑器中创建一个新的空文件。
+
+#### 2. 添加 HTML 内容
+
+在文件中放置以下 HTML：
 
 ```html
 <!doctype html>
@@ -14913,14 +18426,23 @@ if ($('#phone').val() != "") {
 </html>
 ```
 
-3. 将文件保存为 `success.php` 并存于你的文档根目录。
+#### 3. 保存文件
+
+将文件保存为 `success.php` 并存于你的文档根目录。
+
+---
 
 ## 验证必填字段
 
 准备工作完成后，你现在可以开始构建 `form-process` 页面了。你可以分阶段构建此文件，从基础框架开始，随着进展添加更复杂的验证和功能。
 
-1. 打开你的文本编辑器并创建一个新文件。
-2. 在文件中放置以下内容：
+### 1. 创建处理文件
+
+打开你的文本编辑器并创建一个新文件。
+
+### 2. 添加基础验证代码
+
+在文件中放置以下内容：
 
 ```php
 <?php
@@ -14951,18 +18473,21 @@ if (isset($_SESSION['error']) && count($_SESSION['error']) > 0) {
 ?>
 ```
 
-3. 将文件保存为 `form-process.php` 并存于你的文档根目录。
+### 3. 保存文件
 
+将文件保存为 `form-process.php` 并存于你的文档根目录。
 
-
-
-你应该在 图 3-10 中看到这样的页面。
+你应该在图 3-10 中看到这样的页面。
 
 ![9781118213704-fg060310.eps](img/9781118213704-fg060310_fmt.png)
 
 **图 3-10:** 验证 PHP 校验。
 
 ![tip.eps](img/tip_fmt.png) 如果你看到了与之前任何图中类似的页面，且文本字段显示为红色，说明 JavaScript 验证仍在运行。请确保你已经从 `form.php` 中注释掉了 JavaScript，并确保浏览器最近重新加载了该页面。
+
+---
+
+### 代码解析
 
 在继续之前，请查看这段代码，因为它是你 PHP 验证的基础。文件中执行的第一步是确保它是从表单的提交按钮触发的：
 
@@ -15017,6 +18542,8 @@ if (count($_SESSION['error']) > 0) {
 }
 ```
 
+---
+
 ### 验证文本
 
 你现在已经检查了必填字段是否填写了内容，但你还没有检查它们包含什么。据你所知，它们可能只包含一个空格。
@@ -15030,6 +18557,8 @@ if (!preg_match('/^[\w .]+$/',$_POST['name'])) {
 ```
 
 这段代码设置了一个正则表达式，用于寻找任何不是字母或数字（`\w` 部分）、空格或句点的字符。显然，如果你有一个表单允许其他字符，可以将它们添加到字符类中。如果你将该段代码添加到 `form-process.php` 并尝试在 Name 字段中填写包含其他字符的内容，你将收到错误。
+
+---
 
 ### 验证下拉列表、单选按钮和复选框
 
@@ -15049,6 +18578,8 @@ if (isset($_POST['state']) && $_POST['state'] != "") {
 这里需要注意的一点是，你不仅需要检查状态是否设置，还需要检查它是否为空。你需要这样做是因为表单上该下拉列表的默认值为空且该字段不是必填的，因此空白是一个有效值。但如果它已设置且不为空，那么它需要被设置为有效值。
 
 电话号码类型的单选按钮是相同的原理。设置一个有效值数组，并检查传递的值是否这些有效值之一。由于除非填写了电话号码，否则该字段不是必填的，请将其检查推迟稍后。
+
+---
 
 ### 验证数字
 
@@ -15086,20 +18617,19 @@ if (isset($_POST['phone']) && $_POST['phone'] != "") {
 }
 ```
 
+---
+
 ### 验证 URL 和电子邮箱地址
-
-
-
 
 真正验证一个电子邮件地址是一项出乎意料困难的任务。电子邮件地址的标准允许字母、数字和特殊字符的复杂组合，其中某些字符只能出现在特定的位置。PHP 5.2 及更高版本包含一个 `filter_var()` 函数，它消除了这种复杂性，并使得过滤电子邮件地址和 URL（以及其他内容）变得更容易。
 
 本节将检查电子邮件地址和 URL 的验证。
 
-## 验证电子邮件地址
+#### 验证电子邮件地址
 
 `filter_var()` 函数包含了许多内置测试，用于检查电子邮件地址是否有效。表 3-1 显示了部分用于验证的内置过滤器。
 
-### 表 3-1 PHP 中的选择验证过滤器
+**表 3-1 PHP 中的选择验证过滤器**
 
 | 过滤器 | 描述 |
 | :--- | :--- |
@@ -15120,9 +18650,9 @@ if (!filter_var($_POST['email'],FILTER_VALIDATE_EMAIL)) {
 
 在 PHP 中验证电子邮件地址只需要这些代码。
 
-## 验证 URL
+#### 验证 URL
 
-虽然没有包含在本章使用的表单中，但 也可以以相同的方式验证 URL。假设你有一个名为 `$url` 的变量。验证代码看起来相同，只是使用了不同的过滤器。
+虽然没有包含在本章使用的表单中，但也可以以相同的方式验证 URL。假设你有一个名为 `$url` 的变量。验证代码看起来相同，只是使用了不同的过滤器。
 
 ```php
 if (!filter_var($url,FILTER_VALIDATE_URL)) {
@@ -15130,7 +18660,9 @@ if (!filter_var($url,FILTER_VALIDATE_URL)) {
 }
 ```
 
-## 确保密码匹配
+---
+
+### 确保密码匹配
 
 填写此表单的用户需要输入两次密码。然后由你确保用户输入的密码是相同的。虽然这个检查是在 JavaScript 中进行的，但在 PHP 中也需要进行。
 
@@ -15146,7 +18678,7 @@ if ($_POST['password1'] != $_POST['password2']) {
 
 列表 3-1 显示了本章构建的最终表单处理页。
 
-### 列表 3-1: 最终表单处理页
+#### 列表 3-1: 最终表单处理页
 
 ```php
 <?php
@@ -15214,11 +18746,13 @@ if (count($_SESSION['error'])) {
 ?>
 ```
 
+---
+
 ## 创建函数
 
 `filter_var` 函数在自动化常用元素方面发挥了很大作用。如果你从表单开始，你会发现自己需要反复验证相同的内容，比如邮政编码或州。遗憾的是，PHP 并没有内置函数来阻止你创建函数。例如，列表 3-2 显示了一个用于验证州的函数。
 
-### 列表 3-2: 创建一个州
+### 列表 3-2: 创建一个州验证函数
 
 ```php
 function is_valid_state($state) {
@@ -15234,7 +18768,7 @@ function is_valid_state($state) {
 
 就像州函数一样，列表 3-3 中的函数也接受一个传入参数，这次是需要验证的邮政编码。该函数中执行的基本验证检查与 `form-process.php` 文件中的非函数版本相同。如果邮政编码仅为数字且长度为五或九位，则返回布尔值 `true`；否则返回 `false`。
 
-### 列表 3-3: 创建一个邮政编码
+### 列表 3-3: 创建一个邮政编码验证函数
 
 ```php
 function is_valid_zip($zip) {
@@ -15271,17 +18805,15 @@ if (isset($_POST['zip']) && $_POST['zip'] != "") {
 }
 ```
 
-
-
-
-
 ```php
-      $_SESSION['error'][] = "ZIP code error.";
-    }
+    $_SESSION['error'][] = "ZIP code error.";
+}
 }
 ```
 
 这些函数和概念的变体将在下一章中使用——事实上在你整个 PHP 程序员生涯中都会用到！
+
+---
 
 # 第 4 章：构建会员专属网站
 
@@ -15295,13 +18827,15 @@ if (isset($_POST['zip']) && $_POST['zip'] != "") {
 
 许多网站是私密的——仅限授权用户访问——或者拥有秘密区域。此类网站要求用户在查看秘密信息之前先登录。以下是网站可能限制访问的某些情景示例：
 
-- **电子商务管理**：许多在线商家要求客户登录，以便将他们的信息存储起来以备将来交易。客户信息（特别是财务信息）需要保护保护免受公众泄露。
+- **电子商务管理**：许多在线商家要求客户登录，以便将他们的信息存储起来以备将来交易。客户信息（特别是财务信息）需要保护免受公众泄露。
 - **机密性**：许多网站需要将信息限制给某些人员。例如，公司信息可能仅限制给公司员工或特定部门的成员。
 - **付费访问**：某些网站提供可出售的信息，因此这些信息需要限制给支付过费用的人。
 
 用户登录是网络上最常见的应用程序之一，有许多用途。我们确信你见过并登录过许多登录应用程序。
 
 如果你需要构建一个复杂的登录应用程序，那么这一章就是为你准备的。在这里，我们将介绍这类类型应用程序的一些重要功能，然后引导你创建所有所需的元素：用户数据库、用于收集信息和登录用户的 Web 表单，以及允许此类应用程序顺畅运行的所有后端细节。
+
+---
 
 ## 理解会员专属网站
 
@@ -15317,6 +18851,8 @@ if (isset($_POST['zip']) && $_POST['zip'] != "") {
 - 将输入的用户名和密码与数据库中的用户名和密码进行比较。如果找到匹配项，则从网站向客户发送一个网页。如果没有找到匹配项，则给客户机会尝试再次登录。
 
 除了注册和登录的功能，登录应用程序还可以变得非常复杂，赋予管理员为某些账户分配角色的能力。例如，某个用户可能是管理员，可以查看和更改其他用户账户的详情。虽然该功能超出了本章的范围，但它是身份验证系统的另一个功能。
+
+---
 
 ## 创建用户数据库
 
@@ -15334,9 +18870,9 @@ if (isset($_POST['zip']) && $_POST['zip'] != "") {
 
 数据库只包含一张表。客户信息存储在表中，每个客户有一条记录（行）。表所需的字段如表 4-1 所示。
 
-表 4-1 数据库表：Customer
+**表 4-1 数据库表：Customer**
 
-| 变量名 | 类型 |  |
+| 变量名 | 类型 | 说明 |
 | :--- | :--- | :--- |
 | `id` | `INT` | 自动增加的主键 |
 | `email` | `VARCHAR(255)` | 账户的电子邮件地址。这也用于用户账户登录的用户名。 |
@@ -15344,13 +18880,7 @@ if (isset($_POST['zip']) && $_POST['zip'] != "") {
 | `password` | `VARCHAR(255)` | 账户密码 |
 | `last_name` | `VARCHAR(255)` | 客户的姓 |
 | `first_name` | `VARCHAR(255)` | 客户的名 |
-
-
-
-
-
 | `street` | `VARCHAR(255)` | 客户街道地址 |
-| :--- | :--- | :--- |
 | `city` | `VARCHAR(255)` | 客户居住的城市 |
 | `state` | `CHAR(2)` | 两位州代码 |
 | `zip` | `CHAR(10)` | 邮政编码；5 位数字或邮政编码+4 位 |
@@ -15359,7 +18889,9 @@ if (isset($_POST['zip']) && $_POST['zip'] != "") {
 
 该表有 12 个字段。前四个字段 `id`、`email`、`password` 和 `create_date` 是必填的，且不能为空。其余字段包含客户姓名、地址和电话等信息，允许为空。第一个字段 `id` 是主键。
 
-## 构建客户数据库
+---
+
+### 构建客户数据库
 
 你可以使用第五卷中讨论的任何方法来创建 MySQL 数据库，参考第 3 章。以下 SQL 语句创建此数据库：
 
@@ -15386,7 +18918,9 @@ CREATE TABLE Customer (
 );
 ```
 
-## 访问客户数据库
+---
+
+### 访问客户数据库
 
 PHP 提供了用于从 PHP 脚本访问数据库的 MySQL 函数。访问数据库所需的信息，例如 MySQL 用户名和密码。MySQL 用户名和密码与你拥有的任何其他用户名或密码（例如登录系统的密码）无关。
 
@@ -15408,6 +18942,8 @@ define("DB","CustomerDirectory");
 此数据库旨在存储客户输入的数据——而不是你输入。当应用程序首次向客户提供时，它是空的，直到客户添加数据为止。
 
 ![tip.eps](img/tip_fmt.png) 当你测试应用程序脚本时，脚本将向数据库添加行数据。在测试脚本时，你需要添加一个包含你自己的用户名和密码的行以便使用。
+
+---
 
 ## 创建基础函数
 
@@ -15442,6 +18978,7 @@ function is_valid_state($state) {
         return false;
     }
 } // is_valid_state
+
 function is_valid_zip($zip) {
     if (preg_match('/^\d{5}(-\d{4})?$/', $zip)) {
         return true;
@@ -15454,15 +18991,13 @@ function is_valid_zip($zip) {
 
 此 `validation.inc` 文件与第 3 章中使用的类似。主要的更改是状态数组。当你移动此章节时，其他字段将添加到 `functions.inc` 文件中。
 
+---
+
 ## 创建表单
 
 应用程序中的页面将使用 jQuery 以及外部样式表 (CSS) 文件。注册页面大量借用了在第 3 章中使用的模式，正如你所看到的，它与该章节非常相似。
 
-页面
-
-列表 4-3 显示了注册页的代码，`register.php`。
-
-### 列表 4-3：注册页面
+### 列表 4-3：注册页面 (`register.php`)
 
 ```php
 <?php require_once("functions.inc"); ?>
@@ -15504,66 +19039,55 @@ function is_valid_zip($zip) {
     <br />
     <label for="password1">密码:* </label>
     <input type="password" id="password1" name="password1">
-</fieldset>
+    <span class="errorFeedback errorSpan" id="password1Error">需要密码</span>
+    <br />
+    <label for="password2">验证密码:* </label>
+    <input type="password" id="password2" name="password2">
+    <span class="errorFeedback errorSpan" id="password2Error">密码不匹配</span>
+    <br />
+    <label for="addr">地址： </label>
+    <input type="text" id="addr" name="addr">
+    <br />
+    <label for="city">城市： </label>
+    <input type="text" id="city" name="city">
+    <br />
+    <label for="state">州： </label>
+    <select name="state" id="state">
+    <option></option>
+    <option value="AL">阿拉巴马州</option>
+    <option value="CA">加利福尼亚州</option>
+    <option value="CO">科罗拉州</option>
+    <option value="FL">佛罗里达州</option>
+    <option value="IL">伊利诺伊州</option>
+    <option value="NJ">新泽西州</option>
+    <option value="NY">纽约州</option>
+    <option value="WI">威斯康星州</option>
+    </select>
+    <br />
+    <label for="zip">邮政编码： </label>
+    <input type="text" id="zip" name="zip">
+    <br />
+    <label for="phone">电话号码： </label>
+    <input type="text" id="phone" name="phone">
+    <span class="errorFeedback errorSpan" id="phoneError">格式：xxx-xxx-xxxx</span>
+    <br />
+    <br />
+    <label for="work">类型类型：</label>
+    <input class="radioButton" type="radio" name="phonetype" id="work" value="work">
+    <label class="radioButton" for="work">工作</label>
+    <input class="radioButton" type="radio" name="phonetype" id="home" value="home">
+    <label class="radioButton" for="home">家庭</label>
+    <span class="errorFeedback errorSpan phoneTypeError" id="phonetypeError">请选择一个选项</span>
+    <br />
+    <input type="submit" id="submit" name="submit">
+    </fieldset>
 </div>
 </form>
 </body>
 </html>
 ```
 
-
-
-
-```html
-<span class="errorFeedback errorSpan" id="password1Error">需要密码</span>
-<br />
-<label for="password2">验证密码:* </label>
-<input type="password" id="password2" name="password2">
-<span class="errorFeedback errorSpan" id="password2Error">密码不匹配</span>
-<br />
-<label for="addr">地址： </label>
-<input type="text" id="addr" name="addr">
-<br />
-<label for="city">城市： </label>
-<input type="text" id="city" name="city">
-<br />
-<label for="state">州： </label>
-<select name="state" id="state">
-<option></option>
-<option value="AL">阿拉巴马州</option>
-<option value="CA">加利福尼亚州</option>
-<option value="CO">科罗拉州</option>
-<option value="FL">佛罗里达州</option>
-<option value="IL">伊利诺伊州</option>
-<option value="NJ">新泽西州</option>
-<option value="NY">纽约州</option>
-<option value="WI">威斯康星州</option>
-</select>
-<br />
-<label for="zip">邮政编码： </label>
-<input type="text" id="zip" name="zip">
-<br />
-<label for="phone">电话号码： </label>
-<input type="text" id="phone" name="phone">
-<span class="errorFeedback errorSpan" id="phoneError">格式：xxx-xxx-xxxx</span>
-<br />
-<br />
-<label for="work">类型类型：</label>
-<input class="radioButton" type="radio" name="phonetype" id="work" value="work">
-<label class="radioButton" for="work">工作</label>
-<input class="radioButton" type="radio" name="phonetype" id="home" value="home">
-<label class="radioButton" for="home">家庭</label>
-<span class="errorFeedback errorSpan phoneTypeError" id="phonetypeError">请选择一个选项</span>
-<br />
-<input type="submit" id="submit" name="submit">
-</fieldset>
-</div>
-</form>
-</body>
-</html>
-```
-
-当在浏览器中查看时，该页面看起来如图图 4-1 所示。
+当在浏览器中查看时，该页面看起来如图 4-1 所示。
 
 ![9781118213704-fg060401.eps](img/9781118213704-fg060401_fmt.png)
 
@@ -15571,7 +19095,7 @@ function is_valid_zip($zip) {
 
 注册页面使用的 JavaScript 和 CSS 与第 3 章中的表单几乎相同。注册页面的 HTML 分别引用它们为 `register.js` 和 `form.css`。列表 4-4 显示了注册页面使用的 JavaScript。
 
-### 列表 4-4：注册 JavaScript
+### 列表 4-4：注册 JavaScript (`register.js`)
 
 ```javascript
 $(document).ready(function() {
@@ -15589,27 +19113,27 @@ $(document).ready(function() {
     function validateForm() {
       var errorFields = new Array();
       // 必填字段有内容
-      if ('('#lname').val() == "") {
+      if ($('#lname').val() == "") {
         errorFields.push('lname');
       }
-      if ('('#fname').val() == "") {
+      if ($('#fname').val() == "") {
         errorFields.push('fname');
       }
-      if ('('#email').val() == "") {
+      if ($('#email').val() == "") {
         errorFields.push('email');
       }
-      if ('('#password1').val() == "") {
+      if ($('#password1').val() == "") {
         errorFields.push('password1');
       }
       // 检查密码匹配
-      if ('('#password2').val() != $('#password1').val()) {
+      if ($('#password2').val() != $('#password1').val()) {
         errorFields.push('password2');
       }
       // 简单的邮箱检查，只是一个 @ 符号
-      if (!($('#email').val().indexOf(".") > 2) && ('('#email').val().indexOf("@"))) {
+      if (!($('#email').val().indexOf(".") > 2) && ($('#email').val().indexOf("@"))) {
         errorFields.push('email');
       }
-      if ('('#phone').val() != "") {
+      if ($('#phone').val() != "") {
         var phoneNum = $('#phone').val();
         phoneNum.replace(/[⁰-9]/g, "");
         if (phoneNum.length != 10) {
@@ -15640,9 +19164,7 @@ $(document).ready(function() {
 });
 ```
 
-列表 4-5 显示了注册页面使用的 CSS。
-
-### 列表 4-5：注册页面 CSS
+### 列表 4-5：注册页面 CSS (`form.css`)
 
 ```css
 body {
@@ -15691,7 +19213,7 @@ form input {
 
 注册处理 PHP 页面是从 `register.php` 页面作为表单 action 用的（参见列表 4-3），它包含了你在第 3 章示例中看到的许多错误处理。此外，注册函数也包含在该页面上。列表 4-6 显示了 `register-process.php` 页面。
 
-### 列表 4-6：register-process 页面
+### 列表 4-6：register-process 页面 (`register-process.php`)
 
 ```php
 <?php
@@ -15719,14 +19241,9 @@ if (!preg_match('/^[\w .]+$/',$_POST['lname'])) {
   $_SESSION['error'][] = "姓只能包含字母和数字";
 }
 if (isset($_POST['state']) && $_POST['state'] != "") {
-```
-
-
-
-```php
-if (!is_valid_state($_POST['state'])) {
-    $_SESSION['error'][] = "Please choose a valid state";
-}
+    if (!is_valid_state($_POST['state'])) {
+        $_SESSION['error'][] = "Please choose a valid state";
+    }
 }
 
 if (isset($_POST['zip']) && $_POST['zip'] != "") {
@@ -15758,6 +19275,7 @@ if (!filter_var($_POST['email'],FILTER_VALIDATE_EMAIL)) {
 if ($_POST['password1'] != $_POST['password2']) {
     $_SESSION['error'][] = "Passwords don't match";
 }
+
 //final disposition
 if (count($_SESSION['error']) > 0) {
     die(header("Location: register.php"));
@@ -15833,7 +19351,10 @@ function registerUser($userData) {
 }
 ?>
 ```
-如果没有遇到其他错误，将调用 `registerUser` 函数。因此，当你运行 `registerUser` 函数时，你已经知道电子邮件地址是有效的、密码匹配匹配，并且所有必填字段都已填写。这意味着 `registerUser` 函数可以专注于它的工作：将输入的用户信息存数据库。
+
+如果没有遇到其他错误，将调用 `registerUser` 函数。因此，当你运行 `registerUser` 函数时，你已经知道电子邮件地址是有效的、密码匹配，并且所有必填字段都已填写。这意味着 `registerUser` 函数可以专注于它的工作：将输入的用户信息存数据库。
+
+
 
 `registerUser` 函数首先使用 `dbstuff.inc` 文件中定义的常量连接 MySQL 数据库。假设连接成功，将对电子邮件地址进行转义，以确保在 SQL 语句中使用的安全。然后使用该电子邮件地址检查是否已存在该邮箱的用户。如果找到了，则设置错误并返回布尔值 `false`，这将触发错误显示。MySQL 表名为 `Customer`，C 为大写。如果你尝试用小写 c（如 `customer`）访问它，查询将失败。假设没有找到现有用户，将使用 `mysqli_real_escape_string()` 函数对要插入数据库的每个值进行转义。密码也使用 PHP 内置的 `crypt()` 函数进行加密。构建并对数据库执行 `INSERT` 语句。如果语句执行正确，则检索 ID；否则，将生成错误。
 
@@ -15897,8 +19418,6 @@ function registerUser($userData) {
 <?php
 ```
 
-
-
 ```php
 if (isset($_SESSION['error']) && isset($_SESSION['formAttempt'])) {
     unset($_SESSION['formAttempt']);
@@ -15919,10 +19438,10 @@ if (isset($_SESSION['error']) && isset($_SESSION['formAttempt'])) {
     <br />
     <input type="submit" id="submit" name="submit">
 </fieldset>
-</div
+</div>
 </form>
-</</body>
-</</html>
+</body>
+</html>
 ```
 
 这段代码使用了名为 `form.js` 的 JavaScript 文件，详见列表 4-9。
@@ -15989,80 +19508,150 @@ $(document).ready(function() {
 `require_once("ClassUser.php");`
 
 现在，`User` 类将在所有使用 `functions.inc` 的地方可用（这几乎涵盖了应用程序中的每个地方）。`User` 类用于验证用户并将其信息设置会话，以便在应用程序的多个页面之间使用。列表 4-10 {
+
         if (session_id() == "") {
+
             session_start();
+
         }
+
         if (isset($_SESSION['isLoggedIn']) && $_SESSION['isLoggedIn'] == true) {
+
             $this->_initUser();
+
         }
+
     } //end __construct
+
     public function authenticate($user,$pass) {
+
         $mysqli = new mysqli(DBHOST,DBUSER,DBPASS,DB);
+
         if ($mysqli->connect_errno) {
+
             error_log("Cannot connect to MySQL: " . $mysqli->connect_error);
+
             return false;
+
         }
+
         $safeUser = $mysqli->real_escape_string($user);
+
         $incomingPassword = $mysqli->real_escape_string($pass);
+
         $query = "SELECT * from Customer WHERE email = '{$safeUser}'";
+
         if (!$result = $mysqli->query($query)) {
+
             error_log("Cannot retrieve account for {$user}");
+
             return false;
+
         }
+
         // 只有一行，所以不需要 while() 循环
+
         $row = $result->fetch_assoc();
+
         $dbPassword = $row['password'];
+
         if (crypt($incomingPassword,$dbPassword) != $dbPassword) {
+
             error_log("Passwords for {$user} don't match");
+
             return false;
+
         }
+
         $this->id = $row['id'];
+
         $this->email = $row['email'];
+
         $this->firstName = $row['firstName'];
+
         $this->lastName = $row['last_name'];
+
         $this->address = $row['address'];
+
         $this->city = $row['city'];
+
         $this->state = $row['state'];
+
         $this->zip = $row['zip'];
+
         $this->phone = $row['phone'];
+
         $this->phoneType = $row['phoneType'];
+
         $this->isLoggedIn = true;
+
         $this->_setSession();
+
         return true;
+
     } //end authenticate
+
     function _setSession() {
+
         if (session_id() == "") {
+
             session_start();
+
         }
+
         $_SESSION['id'] = $this->id;
+
         $_SESSION['email'] = $this->email;
+
         $_SESSION['firstName'] = $this->firstName;
+
         $_SESSION['last_name'] = $this->lastName;
+
         $_SESSION['address'] = $this->address;
+
         $_SESSION['city'] = $this->city;
+
         $_SESSION['state'] = $this->state;
+
         $_SESSION['zip'] = $this->zip;
+
         $_SESSION['phone'] = $this->phone;
+
         $_SESSION['phoneType'] = $this->phoneType;
+
         $_SESSION['isLoggedIn'] = $this->isLoggedIn;
+
     } //end _setSession
+
     function _initUser() {
+
         $this->id = $_SESSION['id'];
+
         $this->email = $_SESSION['email'];
-        $this->firstName = $_SESSION['firstName'];
+
+        $this->firstName = $_SESSION['email'];
+
         $this->lastName = $_SESSION['last_name'];
+
         $this->address = $_SESSION['address'];
+
         $this->city = $_SESSION['city'];
+
         $this->state = $_SESSION['state'];
+
         $this->zip = $_SESSION['zip'];
+
         $this->phone = $_SESSION['phone'];
+
         $this->phoneType = $_SESSION['phoneType'];
+
         $this->isLoggedIn = $_SESSION['isLoggedIn'];
+
     } //end _initUser
+
 }
+
 ```
-
-
 
 接下来在构造函数中，检查用户是否已登录。如果是，运行 `initUser` 函数。`initUser` 函数从会话（session）中获取用户信息，并将这些信息的每个元素设置为属性。
 
@@ -16083,40 +19672,75 @@ $(document).ready(function() {
 ### 列表 4-11：login-process 代码
 
 ```php
+
 <?php
+
 require_once('functions.inc');
+
 // 如果没有提交表单，则阻止访问
+
 if (!isset($_POST['submit'])) {
+
     die(header("Location: login.php"));
+
 }
+
 $_SESSION['formAttempt'] = true;
+
 if (isset($_SESSION['error'])) {
+
     unset($_SESSION['error']);
+
 }
+
 $_SESSION['error'] = array();
+
 $required = array("email","password");
+
 // 检查必填字段
+
 foreach ($required as $requiredField) {
+
     if (!isset($_POST[$requiredField]) || $_POST[$requiredField] == "") {
+
         $_SESSION['error'][] = $requiredField . " is required.";
+
     }
+
 }
+
 if (!filter_var($_POST['email'],FILTER_VALIDATE_EMAIL)) {
+
     $_SESSION['error'][] = "Invalid e-mail address";
+
 }
+
 if (count($_SESSION['error']) > 0) {
+
     die(header("Location: login.php"));
+
 } else {
+
     $user = new User;
+
     if ($user->authenticate($_POST['email'],$_POST['password'])) {
+
         unset($_SESSION['formAttempt']);
+
         die(header("Location: authenticated.php"));
+
     } else {
+
         $_SESSION['error'][] = "There was a problem with your username or password.";
+
         die(header("Location: login.php"));
+
     }
+
 }
+
 ?>
+
 ```
 
 `login-process` 文件中的代码与本章早前的 `register-process` 文件共享许多相同的逻辑。该初始逻辑在第 3 章中进行了分析。
@@ -16129,7 +19753,7 @@ if (count($_SESSION['error']) > 0) {
 
 ### 构建受保护页面
 
-需要保护的页面——换句话说，用户登录才能访问的页面——可以通过 `User` 类的轻松构建。每当用户登录时，名为 `isLoggedIn` 的属性就会被设置为布尔 `true`。这意味着你可以通过检查该属性在任何页面上有效地检查用户是否已登录。
+需要保护的页面——换句话说，用户登录才能访问的页面——可以通过 `User` 类的轻松构建。每当用户登录时，名为 `isLoggedIn` 的属性就会被设置为布尔 `true`。这意味着你可以通过检查该属性在任何页面上有效的检查用户是否已登录。
 
 ![tip.eps](img/tip_fmt.png) 会话作为应用程序的一部分被大量使用。你可能想直接从会话中访问像 `isLoggedIn` 这样的参数。然而，最佳实践是尽可能使用面向对象的接口（即 `User` 类）。在某些情况下，面向对象的接口可能需要额外的检查以判断用户是否已登录（或请求的任何其他属性）。因此，通过使用面向对象的接口，你保持了与抽象技术一致，并为以后提供了最大的灵活性。
 
@@ -16138,27 +19762,49 @@ if (count($_SESSION['error']) > 0) {
 ### 列表 4-12：身份验证页面代码
 
 ```php
+
 <?php
+
 require_once("functions.inc");
+
 $user = new User;
+
 if (!$user->isLoggedIn) {
+
     die(header("Location: login.php"));
+
 }
+
 ?>
+
 <!doctype html>
+
 <html>
+
 <head>
+
 <title>超级秘密身份验证页面</title>
+
 </head>
+
 <body>
+
 <div>
+
 <?php print "Welcome {$user->firstName}<br />\n"; ?>
+
 </div>
+
 <div>
+
     <a href="logout.php">点击此处注销</a>
+
 </div>
+
 </body>
+
 </html>
+
 ```
 
 该页面的核心就在顶部，在那里实例化了一个新的 `User` 并检查了 `isLoggedIn` 属性。如果 `isLoggedIn` 属性为 `false`，则用户被重定向回登录页面。如果 `isLoggedIn` 属性为 `true`，则继续执行并欢迎用户，如图 4-5 所示。
@@ -16170,13 +19816,21 @@ if (!$user->isLoggedIn) {
 本质上，任何需要保护的页面都应该添加以下代码：
 
 ```php
+
 <?php
+
 require_once("functions.inc");
+
 $user = new User;
+
 if (!$user->isLoggedIn) {
+
     die(header("Location: login.php"));
+
 }
+
 ?>
+
 ```
 
 ### 构建注销页面
@@ -16196,9 +19850,6 @@ if (!$user->isLoggedIn) {
 
 PHP 手册中 `session_destroy` 的页面包含了一些完全移除会话的有用代码，你可以将其调整后用于你的注销函数；没必要重复造轮子。
 
-
-
-
 ![tip.eps](img/tip_fmt.png) 你可以在 PHP 手册的 `session_destroy` 页面查看 [``http://php.net/manual/en/function.session-destroy.php``](http://php.net/manual/en/function.session-destroy.php)。
 
 列表 4-13 显示了注销函数。该函数被添加到 `ClassUser.php` 文件的类内部（位于 `User` 类结束的合大括号之前）。
@@ -16206,26 +19857,47 @@ PHP 手册中 `session_destroy` 的页面包含了一些完全移除会话的有
 ### ### 列表 4-13：注销函数
 
 ```php
+
     public function logout() {
+
         $this->isLoggedIn = false;
+
         if (session_id() == '') {
+
             session_start();
+
         }
+
         $_SESSION['isLoggedIn'] = false;
+
         foreach ($_SESSION as $key => $value) {
+
             $_SESSION[$key] = "";
+
             unset($_SESSION[$key]);
+
         }
+
         $_SESSION = array();
+
         if (ini_get("session.use_cookies")) {
+
             $cookieParameters = session_get_cookie_params();
+
             setcookie(session_name(), '', time() - 28800,
+
                 $cookieParameters['path'],$cookieParameters['domain'],
+
                 $cookieParameters['secure'],$cookieParameters['httponly']
+
             );
+
         } //end if
+
         session_destroy();
+
     } //end function logout
+
 ```
 
 此函数将 `isLoggedIn` 属性设置为 `false`，然后清除所有的会话变量。如果使用 HTTP cookie 进行会话，将向浏览器发送一个新的 cookie，从而使该 cookie 过期。
@@ -16233,6 +19905,7 @@ PHP 手册中 `session_destroy` 的页面包含了一些完全移除会话的有
 ### ### 构建注销页面
 
 当用户点击网站任何地方的退出链接时，他们将被引导到名为 `logout.php` 的页面，该页面执行实际注销操作并将用户送回登录页面。注销页面 `logout.php` 的代码只有四行，如列表 4-14;
+
 $user = new User;
 $user->logout();
 die(header("Location: login.php"));
@@ -16287,7 +19960,7 @@ this->isLoggedIn = false;
 
 ### ### 添加电子邮件功能
 
-用户会忘记密码。有时他们甚至会忘记用户名，但因为你的应用程序使用了电子邮件，这种情况不太可能发生。你可以添加重置密码的功能。
+用户会忘记密码。有时他们甚至会忘记用户名，但因为你的应用程序使用了电�件，这种情况不太可能发生。你可以添加重置密码的功能。
 
 该网站密码重置的整体流程将调用一个重置页面。这个唯一的 URL 将包含一个伪随机字符串，并存储在服务器中。
 
@@ -16323,9 +19996,6 @@ CREATE TABLE resetPassword (
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 </head>
 ```
-
-
-
 
 ```html
 <script type="text/javascript" src="email.js"></script>
@@ -16497,7 +20167,7 @@ if (isset($_SESSION['error']) && isset($_SESSION['formAttempt'])) {
              ($_SESSION['errorSESSION as $error as {
 ) {
              print $error . "<br />\n";
-             end�end�end��������end�����������������������������������������������������������������������������������������������������������������������������������������������������}
+             end�end�end�������������������������������������������������������������������������������������������������������������������������������������������������������������}
 }
 }
 ?>
@@ -16521,10 +20191,6 @@ if (isset($_SESSION['error']) && isset($_SESSION['formAttempt'])) {
 </html>
 ```
 
-
-
-
-
 ```html
 <a href="login.php">点击此处登录</a>
 </div>
@@ -16539,38 +20205,71 @@ if (isset($_SESSION['error']) && isset($_SESSION['formAttempt'])) {
 ## 创建密码找回处理文件
 
 密码找回处理文件名为 `email-process.php`，如列表 4-20;
+
 // 如果用户没有提交表单，则防止访问。
+
 if (!isset($_POST['submit'])) {
+
     die(header("Location: login.php"));
+
 }
+
 $_SESSION['formAttempt'] = true;
+
 if (isset($_SESSION['error'])) {
+
     unset($_SESSION['error']);
+
 }
+
 $_SESSION['error'] = array();
+
 $required = array("email");
+
 // 检查必需字段
+
 foreach ($required as $requiredField) {
+
     if (!isset($_POST[$requiredField]) || $_POST[$requiredField] == "") {
+
         $_SESSION['error'][] = $requiredField . " 是必须的 ";
+
     }
+
 }
+
 if (!filter_var($_POST['email'],FILTER_VALIDATE_EMAIL)) {
+
     $_SESSION['error'][] = "无效的电子邮件地址";
+
 }
+
 if (count($_SESSION['error']) > 0) {
+
     die(header("Location: emailpass.php"));
+
 } else {
+
     $user = new User;
+
     if ($user->emailPass($_POST['email'])) {
+
         unset($_SESSION['formAttempt']);
+
         die(header("Location: email-success.php"));
+
     } else {
+
         $_SESSION['error'][] = "查找电子邮件地址时出现问题。";
+
         die(header("Location: emailpass.php"));
+
     }
+
 }
+
 ?>
+
 ```
 
 这个文件并没有并不复杂——至少你已经见过几次了。大部分细节涉及验证逻辑。假设一切都是有效的，则会实例化 `User` 类并调用 `emailPass()` 方法。你稍后会构建它。
@@ -16582,46 +20281,87 @@ if (count($_SESSION['error']) > 0) {
 ### 列表 4-21：重置处理文件
 
 ```php
+
 <?php
+
 require_once('functions.inc');
+
 // 如果用户没有提交表单，则防止访问。
+
 if (!isset($_POST['submit'])) {
+
     die(header("Location: login.php"));
+
 }
+
 $_SESSION['formAttempt'] = true;
+
 if (isset($_SESSION['error'])) {
+
     unset($_SESSION['error']);
+
 }
+
 $_SESSION['error'] = array();
+
 $required = array("email","password1","password2");
+
 // 检查必需字段
+
 foreach ($required as $requiredField) {
+
     if (!isset($_POST[$requiredField]) || $_POST[$requiredField] == "") {
+
         $_SESSION['error'][] = $requiredField . " 是必须的 ";
+
     }
+
 }
+
 if (!filter_var($_POST['email'],FILTER_VALIDATE_EMAIL)) {
+
     $_SESSION['error'][] = "无效的电子邮件地址";
+
 }
+
 if (count($_SESSION['error']) > 0) {
+
     die(header("Location: reset.php"));
+
 } else {
+
     $user = new User;
+
     if ($user->validateReset($_POST)) {
+
         unset($_SESSION['formAttempt']);
+
         die(header("Location: reset-success.php"));
+
     } else {
+
         if ($user->errorType = "nonfatal") {
+
             $_SESSION['hash'] = $_POST['hash'];
+
             $_SESSION['error'][] = "表单出现问题。";
+
             die(header("Location: reset.php"));
+
         } else {
+
             $_SESSION['error'][] = "表单出现问题。";
+
             die(header("Location: emailpass.php"));
+
         }
+
     }
+
 }
+
 ?>
+
 ```
 
 这个文件中的一个新项是错误类型概念。具体来说，应用程序现在将错误类型定义为致命的（fatal），意味着处理不应继续；以及非致命的（nonfatal），意味着可以提醒用户该问题并可能让他们修复它。你可以在对 `errorType` 的检查中看到这一点。如果是非致命错误，你将唯一 ID 保留在会话中让用户重试。如果你发现你认为是致命的错误，就不允许用户重试。致命错误的一个示例可能是你检测到的可能尝试黑入应用程序的尝试。在这种情况下，你不希望允许用户继续，并且可能会采取其他行动，例如封锁她的地址等。目前，请在此文件中以及你接要看到的 `User` 类中使用非致命标记。
@@ -16676,10 +20416,6 @@ if (count($_SESSION['error']) > 0) {
     return true;
 } //end function emailPass
 ```
-
-
-
-
 
 PHP `mail()` 函数在 `emailPass` 方法中使用。该内置函数接受四个参数：电子邮件的接收地址（To）、邮件主题、实际的正文内容以及任何额外的标头。这些额外的标头包括你在电子邮件中常见的 `From:` 头部，但也可以包括 `Reply-To:` 头部以及 `CC` 和 `BCC` 头部。
 
@@ -16786,13 +20522,10 @@ public $errorType = "fatal";
 这样，你现在就可以在少于 1500 行代码以及当然还有 PHP 的帮助下创建账户、登录并重置密码了。
 
 第七卷
+
 PHP 与模板
 
 有关 PHP 和模板的更多信息，请访问 `www.dummies.com/extras/phpmysqljavasripthtml5aio`。
-
-
-
-
 
 `php.ini` 文件是一个纯文本文件，应该使用记事本、Textpad 或 Vi 等纯文本编辑器进行编辑。
 
@@ -16860,7 +20593,9 @@ session.cookie_domain =
 ```
 disable_functions =
 ```
+
 disable_classes =
+
 ```
 
 每个指令期望一个用逗号分隔的待禁用函数或类列表。例如，你可能想要禁用 `exec()` 函数。列表 1-1 显示了一个用于测试此项的简单 PHP 页面。
@@ -16868,10 +20603,15 @@ disable_classes =
 列表 1-1：带有 exec() 的简单 PHP 页面
 
 ```php
+
 <?php
+
 $passwd = exec("ls -la /etc/passwd");
+
 print "{$passwd}<br />\n";
+
 ?>
+
 ```
 
 在浏览器中查看时，该页面类似于 图 1-1 所示。
@@ -16883,7 +20623,9 @@ print "{$passwd}<br />\n";
 通过更改 `php.ini` 来禁用该函数意味着使用此指令：
 
 ```
+
 disable_functions = exec
+
 ```
 
 一旦 Apache 重启，更改将生效。现在重新加载页面将导致 图 1-2 所示的警告。
@@ -16896,7 +20638,7 @@ disable_functions = exec
 
 
 
-当你创建一个网站时，通常会为整个网站使用相同的布局。你有一个顶部区域（可能包含一个菜单）；一个主内容区域；以及底部区域（可能包含链接或版权声明）。每一个页面都需要相同的 CSS 和 HTML，以在整个网站中创建统一的视觉效果和体验。
+当你创建一个网站时，通常会为整个网站使用相同的布局。你有一个顶部区域（可能包含一个菜单）；一个主内容区域；以及底部区域（可能包含链接或版权声明）。每一个页面都需要相同的 CSS和 HTML，以在整个网站中创建统一的视觉效果和体验。
 
 当你的网站只有几个页面时，将 HTML 和 CSS 分开可能是没问题的。如果你需要进行更改，例如添加一个菜单项或更改版权年份，你只需要编辑每个文件即可。但想象一下，如果你的网站有几十个甚至数百个页面。现在更改那个年份或添加一个菜单项（或其他任何内容）将变成一项艰巨的任务。在没有模板的情况下进行这样的全局更改，需要你编辑每一个文件来完成修改，并确保在这些编辑中没有出现任何错误或拼写问题。
 
@@ -16914,7 +20656,7 @@ disable_functions = exec
 
 **图 2-1：** 将页面转换为模板系统。
 
-此页面包含一个页头部分，其中包含一个导航菜单，内有指向首页、关于我们和联系我的链接。该页面还包含一个主内容区域和一个页脚。
+此页面包含一个页头部分，其中包含一个导航菜内有指向首页、关于我们和联系我的链接。该页面还包含一个主内容区域和一个页脚。
 
 ### 创建模板类
 
@@ -16924,14 +20666,23 @@ disable_functions = exec
 2. 在文件中放置以下 PHP 代码：
 
 ```php
+
 <?php
+
 class Page
+
 {
+
     public $type = "default";
+
     public $title = "My Web Site";
+
     public $titleExtra = "";
+
 }   //结束 Page 类
+
 ?>
+
 ```
 
 3. 将文件保存为 `classPage.php` 并存于你的文档根目录下。
@@ -16956,14 +20707,23 @@ class Page
 2. 在 `classPage` 内部，在 `public $titleExtra = "";` 行下方，输入以下代码：
 
 ```php
+
     public function getTop() {
+
         $output = "";
+
         $output .= $this->_getDocType();
+
         $output .= $this->_getHtmlOpen();
+
         $output .= $this->_getHead();
+
         $output .= file_get_contents("pageTop.txt");
+
         return $output;
+
     } //结束函数 getTop()
+
 ```
 
 3. 保存 `classPage.php`。
@@ -16973,30 +20733,55 @@ class Page
 4. 在 `classPage.php` 中（如果未打开请打开），在 `getTop()` 方法的结束括号下方，输入以下代码：
 
 ```php
+
 protected function _getDocType($doctype = "html5") {
+
     if ($doctype == "html5") {
+
         $dtd = "<!DOCTYPE html>";
+
     }
+
     return $dtd . "\n";
+
 }
+
 protected function _getHtmlOpen($lang = "en-us") {
+
     if ($lang == "en-us") {
+
         $htmlopen = "<html lang=\"en\">";
+
     }
+
     return $htmlopen . "\n";
+
 }
+
 protected function _getHead() {
+
     $output = "";
+
     $output .= file_get_contents("pageHead.txt");
+
     if ($this->titleExtra != "") {
+
         $title = $this->titleExtra . "|" . $this->title;
+
     } else {
+
         $title = $this->title;
+
     }
+
     $output .= "<title>" . $title . "</title>";
+
     $output .= "</head>";
+
     return $output;
+
 } //结束函数 _getHead()
+
 ```
 
 你在步骤 4 中添加的三个方法负责构建页面的 `<head>` 部分。第一个方法 `_getDocType` 返回 DTD，对于你的案例是 HTML5，可以是任何其他有效的文档类型。
@@ -17015,8 +20800,11 @@ protected function _getHead() {
 2. 在文件中，输入以下标记：
 
 ```html
+
 <head>
+
 <link rel="stylesheet" href="style.css" type="text/css" />
+
 ```
 
 
@@ -17033,14 +20821,23 @@ protected function _getHead() {
 2. 在文件内部添加以下标记：
 
 ```html
+
 <body>
+
 <div id="menu">
+
 <ul>
+
 <li><a href="home.php">Home</a></li>
+
 <li><a href="about.php">About</a></li>
+
 <li><a href="contact.php">Contact Me</a></li>
+
 </ul>
+
 </div> <!-- end menu -->
+
 ```
 
 3. 将文件保存为 `pageTop.txt` 并放在你的文档根目录下。
@@ -17053,9 +20850,13 @@ protected function _getHead() {
 2. 在 `classPage.php` 中，将以下代码放在 `_getHead()` 方法的结束括号下方：
 
 ```php
+
     public function getBottom() {
+
         return file_get_contents("pageBottom.txt");
+
     } //end function getBottom()
+
 ```
 
 3. 保存文件。
@@ -17066,11 +20867,17 @@ protected function _getHead() {
 2. 在文件中放置以下 HTML：
 
 ```html
+
 <div id="footer">
+
 Copyright (c) 2013 Steve Suehring.
+
 </div>  <!-- end footer -->
+
 </body>
+
 </html>
+
 ```
 
 3. 将文件保存为 `pageBottom.txt` 并放在你的文档根目录下。
@@ -17082,49 +20889,95 @@ Copyright (c) 2013 Steve Suehring.
 列表 2-1: 最终的 classPage.php 文件
 
 ```php
+
 <?php
+
 class Page
+
 {
+
     public $type = "default";
+
     public $title = "My Web Site";
+
     public $titleExtra = "";
+
     public function getTop() {
+
         $output = "";
+
         $output .= $this->_getDocType();
-        $output .= $this->_getHtmlOpen();
-        $output .= $this->_getHead();
-        $output .= file_get_contents("pageTop.txt");
-        return $output;
-    } //end function getTop()
-    protected function _getDocType($doctype = "html5") {
-        if ($doctype == "html5") {
-            $dtd = "<!DOCTYPE html>";
-        }
-        return $dtd . "\n";
+
+
+
+$output .= $this->_getHtmlOpen();
+
+$output .= $this->_getHead();
+
+$output .= file_get_contents("pageTop.txt");
+
+return $output;
+
+} //end function getTop()
+
+protected function _getDocType($doctype = "html5") {
+
+    if ($doctype == "html5") {
+
+        $dtd = "<!DOCTYPE html>";
+
     }
-    protected function _getHtmlOpen($lang = "en-us") {
-        if ($lang == "en-us") {
-            $htmlopen = "<html lang=\"en\">";
-        }
-        return $htmlopen . "\n";
+
+    return $dtd . "\n";
+
+}
+
+protected function _getHtmlOpen($lang = "en-us") {
+
+    if ($lang == "en-us") {
+
+        $htmlopen = "<html lang=\"en\">";
+
     }
-    protected function _getHead() {
-        $output = "";
-        $output .= file_get_contents("pageHead.txt");
-        if ($this->titleExtra != "") {
-            $title = $this->titleExtra . "|" . $this->title;
-        } else {
-            $title = $this->title;
-        }
-        $output .= "<title>" . $title . "</title>";
-        $output .= "</head>";
-        return $output;
-    } //end function _getHead()
-    public function getBottom() {
-        return file_get_contents("pageBottom.txt");
-    } //end function getBottom()
+
+    return $htmlopen . "\n";
+
+}
+
+protected function _getHead() {
+
+    $output = "";
+
+    $output .= file_get_contents("pageHead.txt");
+
+    if ($this->titleExtra != "") {
+
+        $title = $this->titleExtra . "|" . $this->title;
+
+    } else {
+
+        $title = $this->title;
+
+    }
+
+    $output .= "<title>" . $title . "</title>";
+
+    $output .= "</head>";
+
+    return $output;
+
+} //end function _getHead()
+
+public function getBottom() {
+
+    return file_get_contents("pageBottom.txt");
+
+} //end function getBottom()
+
 }  //end class Page
+
 ?>
+
 ```
 
 你现在准备好使用你新的模板系统创建页面了。按照以下步骤操作：
@@ -17133,46 +20986,71 @@ class Page
 2. 在文件内部输入以下代码和 HTML：
 
 ```php
+
 <?php
+
 require_once("classPage.php");
+
 $page = new Page();
+
 print $page->getTop();
+
 print <<<EOF
+
 <div id="mainContent">
+
 <p>This is where content would go, should there be any.</p>
+
 </div> <!-- end main content -->
+
 EOF;
+
 print $page->getBottom();
+
 ?>
+
 ```
 
 3. 将文件保存为 `home.php` 并放在你的文档根目录下。
-
-
-
-
 
 2. 在 `_getHead()` 方法内部，为新类型的页面添加一个条件判断。
 
 整个 `_getHead` 方法应该如下所示：
 
 ```php
+
 protected function _getHead() {
+
     $output = "";
+
     if ($this->type == "contact") {
+
         $output .= file_get_contents("pageHeadContact.txt");
+
     } else {
+
         $output .= file_get_contents("pageHead.txt");
+
     }
+
     if ($this->titleExtra != "") {
+
         $title = $this->titleExtra . "|" . $this->title;
+
     } else {
+
         $title = $this->title;
+
     }
+
     $output .= "<title>" . $title . "</title>";
+
     $output .= "</head>";
+
     return $output;
+
 } //end function _getHead()
+
 ```
 
 这段代码检查 `type` 属性（`$this->type`）是否设置为 `contact`。如果是，则包含一个新的 `<head>` 部分文件。否则，则包含常规的 `<head>` 部分。
@@ -17184,10 +21062,15 @@ protected function _getHead() {
 5. 在文件内部，添加以下标记：
 
 ```html
+
 <head>
+
 <link rel="stylesheet" href="style.css" type="text/css" />
+
 <link rel="stylesheet" href="contact.css" type="text/css" />
+
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+
 ```
 
 6. 将文件保存为 `pageHeadContact.txt` 并放在你的文档根目录下。
@@ -17197,10 +21080,15 @@ protected function _getHead() {
 8. 在文件内部，放置以下 CSS：
 
 ```css
+
 .contactMethod {
+
     font-style: italic;
+
     font-weight: bold;
+
 }
+
 ```
 
 9. 将文件保存为 `contact.css` 并放在你的文档根目录下。
@@ -17210,21 +21098,37 @@ protected function _getHead() {
 11. 在文件中，放置以下代码和 HTML：
 
 ```php
+
 <?php
+
 require_once("classPage.php");
+
 $page = new Page();
+
 $page->type = "contact";
+
 $page->titleExtra = "Contact Me";
+
 print $page->getTop();
+
 print <<<EOF
+
 <div id="mainContent">
+
 <h1>Contacting me is easy</h1>
+
 <p class="contactMethod">suehring@braingia.com</p>
+
 <p class="contactMethod">Twitter:  @stevesuehring</p>
-</</div> <!-- end main content -->
+
+</div> <!-- end main content -->
+
 EOF;
+
 print $page->getBottom();
+
 ?>
+
 ```
 
 12. 将文件保存为 `contact.php` 并放在你的文档根目录下。

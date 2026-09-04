@@ -1,33 +1,15 @@
+
 # Node.js：从新手到忍者
-
-
-
-
-
-
-
 
 ![](img/df734780c88ebde9dc5bf93f50faf4c6_0_0.png)
 
-
-
-
-
-
-
-
-
-
-
 ![](img/df734780c88ebde9dc5bf93f50faf4c6_1_0.png)
-
-
 
 # 关于 Craig Buckler
 
 Craig 是一位位于英国的自由职业全栈 Web 开发人员、作家和演讲师，对标准和性能充满热情。
 
-他从 20 世纪 80 年代开始编程，并在 1995 年 JavaScript 发布时开始从事客户端 开发，当时 HTML、间距 GIF 和跑马灯被认为是尖端技术。你可能在 SitePoint 看过他的作品，他在那里编写了超过 1,200 篇教程以及书籍，包括 [Jump Start Web Performance](#)、[Browser DevTool Secrets](#) 和 [Docker for Web Developers](#)。
+他从 20 世纪 80 年代开始编程，并在 1995 年 JavaScript 发布时开始从事客户端开发，当时 HTML、间距 GIF 和跑马灯被认为是尖端技术。你可能在 SitePoint 看过他的作品，他在那里编写了超过 1,200 篇教程以及书籍，包括 [Jump Start Web Performance](#)、[Browser DevTool Secrets](#) 和 [Docker for Web Developers](#)。
 
 Craig 从一开始就开始使用 Node.js，并希望这本书能成为你服务器端 JavaScript 之旅的良好起步。你可以通过 Twitter @craigbuckler 或访问 craigbuckler.com 与他联系。
 
@@ -35,134 +17,100 @@ Craig 从一开始就开始使用 Node.js，并希望这本书能成为你服务
 
 SitePoint 专门为 Web 专业人士出版有趣、实用且易于理解的内容。访问 [https://www.sitepoint.com/](#) 获取我们的博客、书籍、时通讯、文章和社区论坛。你将在那里找到关于 JavaScript、PHP、Ruby、移动开发、设计等方面的丰富信息。
 
+## 目录
 
-- 前言 ................................................................................ xvii
-
-
-
-
-
-
-
-
-
-
-
-- 并行 Promises.......................................................174
-
-
-
-
-
-
-
-
-
-
-- Process ..........................................................................................235
-- OS ...................................................................................................237
-- Util ...................................................................................................238
-- URL ................................................................................................239
-- File System（文件系统）...............................................................240
-- Events（事件）.............................................................................244
-- Streams（流）.............................................................................248
-- Worker Threads（工作线程）......................................................253
-- Child Processes（子进程）............................................................257
-- Clusters（集群）..............................................................................258
-- Exercises（练习）.............................................................................259
-- Summary（总结）..................................................................................259
-- Quiz（测验）...............................................................................260
-
-
-- 源代码.......................................................................263
-问答快速上手 ................................................................................263
-总结................................................................................................270
-
-
-- 为什么要使用多个服务器进行开发？..................................272
-- 1. 一个 PostgreSQL 数据库服务器 ................................................273
-- 2. 两个 Express HTTP Web 服务器.........................................................275
-- 3. 三个 WebSocket 服务器..................................................................276
-- 4. 一个流量负载均衡器...............................................................277
-- 5. Adminer 数据库客户端...............................................................277
-- Docker 开发环境......................................................277
-- Docker 生产环境...........................................................279
-- 总结.....................................................................................279
-
-
-- 数据库库 .......................................................................281
-- 问题数据库初始化 ........................................287
-- 开始一个新游戏.......................................................................294
-加入游戏...............................................................................297
-问答页面.....................................................................................298
-总结.......................................................................................301
-
-
-启动 WebSocket 连接..................................303
-WebSocket消息格式...............................................304
-PostgreSQL 发布/订阅...........................................................305
-游戏逻辑.....................................................................309
-加入游戏 ............................................................297
-开始游戏..................................................................315
-回答问题.....................................................317
-离开游戏...............................................................326
-练习.....................................................................328
-总结.......................................................................331
-
-
-- 开发工具............................................................................... 335
-- 测试............................................................................................... 336
-- 日志............................................................................................... 337
-- 全栈框架....................................................................... 338
-- 服务端框架 ................................................. 339
-- Web 发布、内容管理系统和博客............................................................................... 339
-- 无头内容管理系统.................................................. 340
-- 静态站点生成器...................................................... 340
-- 数据库驱动程序............................................................... 341
-- 模板........................................................................... 342
-- 命令行..................................................................... 343
-- 文件系统....................................................................... 240
-- 网络.............................................................................. 344
-- WebSockets....................................................................... 344
-- 电子邮件............................................................................... 345
-- 安全与身份验证.............................................. 346
-- 总结........................................................................... 347
-
-
-- 页面 vs 应用程序...............................................................349
-- Node.js 应用准备...............................................351
-- 专用服务器托管..........................................................352
-- HTTP 和 HTTPS 注意事项.......................................353
-- 进程管理...............................................................354
-- 使用反向代理...............................................................355
-- 静态站点托管 (Jamstack)......................................357
-- 无服务器/Lambda 函数.......................................357
-- 容器托管...............................................................................359
-- 总结...............................................................................359
-
-
-- Node.js 适合你吗？..................................................362
-- Deno 更好吗？...............................................................364
-- 感谢阅读！...............................................365
+- 前言
+- 并行 Promises
+- Process
+- OS
+- Util
+- URL
+- File System（文件系统）
+- Events（事件）
+- Streams（流）
+- Worker Threads（工作线程）
+- Child Processes（子进程）
+- Clusters（集群）
+- Exercises（练习）
+- Summary（总结）
+- Quiz（测验）
+- 源代码
+- 问答快速上手
+- 总结
+- 为什么要使用多个服务器进行开发？
+- 1. 一个 PostgreSQL 数据库服务器
+- 2. 两个 Express HTTP Web 服务器
+- 3. 三个 WebSocket 服务器
+- 4. 一个流量负载均衡器
+- 5. Adminer 数据库客户端
+- Docker 开发环境
+- Docker 生产环境
+- 总结
+- 数据库库
+- 问题数据库初始化
+- 开始一个新游戏
+- 加入游戏
+- 问答页面
+- 总结
+- 启动 WebSocket 连接
+- WebSocket 消息格式
+- PostgreSQL 发布/订阅
+- 游戏逻辑
+- 加入游戏
+- 开始游戏
+- 回答问题
+- 离开游戏
+- 练习
+- 总结
+- 开发工具
+- 测试
+- 日志
+- 全栈框架
+- 服务端框架
+- Web 发布、内容管理系统和博客
+- 无头内容管理系统
+- 静态站点生成器
+- 数据库驱动程序
+- 模板
+- 命令行
+- 文件系统
+- 网络
+- WebSockets
+- 电子邮件
+- 安全与身份验证
+- 总结
+- 页面 vs 应用程序
+- Node.js 应用准备
+- 专用服务器托管
+- HTTP 和 HTTPS 注意事项
+- 进程管理
+- 使用反向代理
+- 静态站点托管 (Jamstack)
+- 无服务器/Lambda 函数
+- 容器托管
+- 总结
+- Node.js 适合你吗？
+- Deno 更好吗？
+- 感谢阅读！
 
 ## 附录 A 测验答案
 
 ## 前言
 
 本课程将帮助你以最短的时间开始学习 Node.js。
+
 在一天或两天内，你应该就能拥有足够的知识来编写简单的应用程序。
 
 ## 先决条件
 
-本课程是为迈出 Node.js 第一步的 Web 开发者准备的。理想情况下，
-你应该理解 Web 开发概念和技术：
+本课程是为迈出 Node.js 第一步的 Web 开发者准备的。理想情况下，你应该理解 Web 开发概念和技术：
 
 - Web 浏览器（客户端 HTML、CSS 和 JavaScript）
 - Web 服务器（用于提供网页和 API 的代码）
 
 如果你已经熟悉一些 JavaScript（可能是通过编写客户端脚本），那么学习将会有帮助。本书解释了与 Node.js 相关的 JavaScript 方面，但你不会发现对变量、循环、函数、对象等内容的深度探讨。
 
-了解一点命令行、Git 以及如 VS Code 等代码编辑器也会很有用。
+了解一点命令行、Git 以及如 `VS Code` 等代码编辑器也会很有用。
 
 ## 代码示例
 
@@ -176,29 +124,27 @@ PostgreSQL 发布/订阅........................................................
 
 当需要上下文来显示现有代码而不是重复所有代码时，它将显示为：
 
-
-
 ```javascript
 function animate() {
   new_variable = "Hello";
 }
 ```
 
-某些代码行应该写在一行内，但由于页面限制，我们不得不对其进行换行处理。↩ 表示仅为了格式目的而存在的换行，应该被忽略：
+某些代码行应该写在一行内，但由于页面限制，我们不得不对其进行换行处理。`↩` 表示仅为了格式目的而存在的换行，应该被忽略：
 
 ```
 URL.open("https://www.sitepoint.com/responsive-web-design-real-user-testing/?responsive1");
 ```
 
-# 提示、注意与警告
+## 提示、注意与警告
 
 嘿，你！
 
-提示（Tips）提供实用的小建议。
+**提示（Tips）** 提供实用的小建议。
 
 咳咳，打扰一下…………
 
-注意（Notes）是与当前主题相关但并非关重要的补充说明。将它们视为额外的信息小贴士。
+**注意（Notes）** 是与当前主题相关但并非关键的补充说明。将它们视为额外的信息小贴士。
 
 请确保你总是……
 
@@ -206,9 +152,9 @@ URL.open("https://www.sitepoint.com/responsive-web-design-real-user-testing/?res
 
 当心！
 
-警告（Warnings）强调了在过程中可能会让你碰脚的任何“陷阱”。
+**警告（Warnings）** 强调了在过程中可能会让你碰脚的任何“陷阱”。
 
-什么是 Node.js？
+## 什么是 Node.js？
 
 Node.js 是一个 JavaScript 运行时环境，意味着它可以运行用 JavaScript 编写的程序。大多数开发者使用它来创建命令行工具或 Web 服务器应用程序。
 
@@ -218,9 +164,9 @@ Node.js 是一个 JavaScript 运行时环境，意味着它可以运行用 JavaS
 
 ### JavaScript, JavaScript, ECMAScript, ES6, ES2015？
 
-为了让初学者的学习更加混乱，JavaScript 有许多名字。它诞生于 1994 年，最初被称为“Live Script”。在与 Sun Microsystems 进行了一项草率交易后，Netscape 将其重新命名为“JavaScript”，尽管它与 Java 或轻量级脚本几乎没有相似。微软无法使用该名称，因此它在 Internet Explorer 中变成了“JavaScript”。
+为了让初学者的学习更加混乱，JavaScript 有许多名字。它诞生于 1994 年，最初被称为“Live Script”。在与 Sun Microsystems 进行了一项草率交易后，Netscape 将其重新命名为“JavaScript”，尽管它与 Java 或轻量级脚本几乎没有相似。微软无法使用该名称，因此它在 Internet Explorer 中变成了“JScript”。
 
-2005 年，Mozilla（源自 Netscape）加入了 ECMA 国际组织，并将该语言标准化为“ECMAScript”。第 1 到第 3 版本记录了直到 1999 年的 JavaScript 演变。第 4 版本被遗弃，ECMAScript 5 在 2009 年成为大多数大多数浏览器支持的标准。
+2005 年，Mozilla（源自 Netscape）加入了 ECMA 国际组织，并将该语言标准化为“ECMAScript”。第 1 到第 3 版本记录了直到 1999 年的 JavaScript 演变。第 4 版本被遗弃，ECMAScript 5 在 2009 年成为大多数浏览器支持的标准。
 
 ECMAScript 6——“ES6”的开发开始。最终规范于 2015 年获得批准，这导致了另一个名称：“ES2015”。新规范每年都会到来。
 
@@ -228,14 +174,13 @@ ECMAScript 6——“ES6”的开发开始。最终规范于 2015 年获得批�
 
 Node.js 最初由 Ryan Dahl 开发。他从 Google 的 Chrome 浏览器中提取 V8 JavaScript 引擎，添加了一些 API，将其封装在 ECMA 事件循环中，并于 2009 年作为开源产品发布在 Linux 和 macOS 上。Windows 版本于 2011 年问世。
 
-Node 包管理器（npm）于 2010 年引入。它允许开发者在自己的项目中使用他人发布的代码模块。当时还没有官方的 ECMAScript 模块标准，因此 Node.js 和 npm 弃用了 CommonJS。
+Node 包管理器（`npm`）于 2010 年引入。它允许开发者在自己的项目中使用他人发布的代码模块。当时还没有官方的 ECMAScript 模块标准，因此 Node.js 和 `npm` 采用了 `CommonJS`。
 
 Node.js 的第一个（非测试）版本于 2015 年发布，承诺每六个月更新一次。
 
-Node.js 并不是第一个 JavaScript 运行时，但与 Rhino 和 SpiderMonkey 等其他选项不同，它的人气呈指数级增长。编写 PHP、Python、Ruby 或语言的开发者经常使用 Node.js 工具来补充他们的开发流程。
+Node.js 并不是第一个 JavaScript 运行时，但与 Rhino 和 SpiderMonkey 等其他选项不同，它的人气呈指数级增长。编写 PHP、Python、Ruby 或 Java 等语言的开发者经常使用 Node.js 工具来补充他们的开发流程。
 
-
-JavaScript 是 GitHub 上最常用的语言，并被开发者评得很高。包括 Netflix、Uber、Trello、PayPal、LinkedIn、eBay、NASA 和 Media 在内的公司已采用 Node.js，大多数专业开发者都会遇到过 Node.js 工具。
+JavaScript 是 GitHub 上最常用的语言，并被开发者评价很高。包括 Netflix、Uber、Trello、PayPal、LinkedIn、eBay、NASA 和 Media 在内的公司已采用 Node.js，大多数专业开发者都会遇到过 Node.js 工具。
 
 下面，我们将看看你应该考虑使用 Node.js 的一些原因。
 
@@ -245,21 +190,19 @@ JavaScript 用于数万亿网页，在其中拥有浏览器垄断地位。每位
 
 服务端语言更加多样化。从历史上看，开发者可以选择 PHP、Ruby、Python、C# (ASP.NET)、Perl 或 Java，但这些语言具有不同的语法和概念。切换上下文可能会困难，因此较大的项目团队通常会分为前端和后端开发者。
 
-## 什么是 Node.js？
+Node.js 允许拥有前端 JavaScript 知识的开发者在后端利用他们的技能。它不会让你一夜之间变成全栈开发者，但概念是类似的，而且在格式化 JSON、处理字符集、使用 WebSockets 等时的繁琐工作会更少。
 
-Node.js 允许前端 JavaScript 知识的开发者在后端利用他们的技能。它不会让你一夜之间变成全栈开发者，但概念是类似的，而且在格式化 JSON、处理字符集、使用 WebSockets 等时的繁琐工作会更少。
-
-> JavaScript 替代方案
-> 一些开发者倾向于使用 TypeScript、PureScript、CoffeeScript、Reason 和 Dart 等语言，这些语言可以编译 JavaScript 并在浏览器或 Node.js 中运行。最终，它仍然产生 JavaScript 代码。
+> **JavaScript 替代方案**
+>
+> 一些开发者倾向于使用 TypeScript、PureScript、CoffeeScript、Reason 和 Dart 等语言，这些语言可以编译为 JavaScript 并在浏览器或 Node.js 中运行。最终，它仍然产生 JavaScript 代码。
 
 ## 它是快速的
 
-大多数服务端语言都足够快，但很少有比得上 Node.js 的速度。V8 引擎非常快，并且进化迅速，背后有 Google 和 Chrome 的开发支持。Node.js 还具有非阻塞的、事件驱动的 I/O。
+大多数服务端语言都足够快，但很少有比得上 Node.js 的速度。`V8` 引擎非常快，并且进化迅速，背后有 Google 和 Chrome 的开发支持。Node.js 还具有非阻塞的、事件驱动的 I/O。
 
 让我们用更少的术语再过一遍。大多数语言使用同步阻塞执行。当你发布一个命令（例如从数据库获取信息）时，该命令将停止后续处理，并等待运行时进展到下一个语句。为了确保多个用户可以同时访问，像 Apache 这样的 Web 服务器为每个请求创建一个新的处理线程。这是一个昂贵的操作，Apache 的默认限制为 150 个并发连接。繁忙的服务器可能会过载。
 
 Node.js 代码（以及浏览器 JavaScript）运行在单个处理线程上。像数据库查询等长时间任务是异步处理的，这不会停止执行。任务在后台运行，不会停止执行。当任务完成时，回调函数会处理数据。
-
 
 异步编程具有挑战，但 Node.js 能够很好地扩展。
 
@@ -268,6 +211,7 @@ Node.js 代码（以及浏览器 JavaScript）运行在单个处理线程上。�
 WebSocket 和服务器发送事件等实时功能允许即时更新、在线聊天、多人游戏等。这些在传统的服务端语言中实现可能很困难。
 
 ## 轻量级
+
 Node.js 运行时很小且跨平台。除了 Web，你还会发现它用于嵌入式系统，甚至是 SpaceX 火箭。
 
 ## 模块化
@@ -276,150 +220,125 @@ Node 提供了一个功能良好的标准库。它包含了错误处理、文件
 
 ## 可扩展
 
-Node.js 拥有世界上最大的包表，拥有数百万模块。你会发现任务运行器、日志器、数据库连接器、图像处理器、编译器、Web 服务器、API 管理器甚至是客户端库。
+Node.js 拥有世界上最大的包生态系统，拥有数百万模块。你会发现任务运行器、日志器、数据库连接器、图像处理器、编译器、Web 服务器、API 管理器甚至是客户端库。
 
-npm 命令行随 Node.js 提供，便于安装、更新和删除模块。你还可以使用它安装全局模块，以便 Node.js 脚本可以在任何地方作为命令运行。
-
-
+`npm` 命令行随 Node.js 提供，便于安装、更新和删除模块。你还可以使用它安装全局模块，以便 Node.js 脚本可以在任何地方作为命令运行。
 
 Node.js 是开源项目。运行时免费使用，没有任何商业限制。大多数模块也是免费的，因为它们是由社区提交给其他开发者的。
 
-
-本课程专注于 Web 应用程序，但你可以使用 Node.js 创建无服务器函数、部署脚本、跨平台命令行工具，甚至是复杂的图形应用，如 VS Code、Slack 和 Skype——它们都使用了 Electron 框架。
+本课程专注于 Web 应用程序，但你可以使用 Node.js 创建无服务器函数、部署脚本、跨平台命令行工具，甚至是复杂的图形应用，如 `VS Code`、`Slack` 和 `Skype`——它们都使用了 `Electron` 框架。
 
 作为开发者，你几乎会遇到 Node.js，即使它不是你技术栈的核心。了解一点 Node.js 对你的项目和职业有所帮助。你将对现代 Web 应用程序的可能性有更好的见解。
 
+Node.js 是一个跨平台的、基于 `V8` 的 JavaScript 运行时，由 Ryan Dahl 于 2009 年发布。
 
-Node.js 是一个跨平台的、基于 V8 的 JavaScript 运行时，由 Ryan Dahl于2009发布。
+Deno 是一个跨平台的、基于 `V8` 的 JavaScript 运行时，由 Ryan Dahl 于 2020 年发布。
 
-Deno 是一个跨平台的、基于 V8 的 JavaScript 运行时，由 Ryan Dahl于2020发布。
-
-Deno 解决了 Node.js 的一些缺陷和不一致之处，并带有十年经验的回顾。它直接支持 TypeScript 而无需编译器，使用 ES6 模块而非 CommonJS，复制了许多浏览器 API（window addEventListener, Fetch, Web Workers 等），并提供了用于 lint 、测试和绑定的内置工具。
+Deno 解决了 Node.js 的一些缺陷和不一致之处，并带有十年经验的回顾。它直接支持 TypeScript 而无需编译器，使用 ES6 模块而非 `CommonJS`，复制了许多浏览器 API（`window.addEventListener`、`Fetch`、`Web Workers` 等），并提供了用于 `lint`、测试和绑定的内置工具。
 
 Deno 非常棒——它是新的，还没有达到 Node 的几分之一人气。框架是相似的：如果你熟悉一个，很容易切换到另一个。
 
-
-
-
-
 在本章中，你学习了 Node.js 是一个流行的 JavaScript 运行时，它非常适合 Web 开发。我在本章的视频中对其进行了总结。第 2 章将介绍如何在你选择的平台上安装 Node.js。
-
 
 本课程的许多章节都以快速测验结束，以确保你已经掌握了这些概念。注意！有些问题的设计目的是难住你，请确保你一直在专注意力！答案可以在书末的附录中找到。
 
-a. JavaScript 运行时。
-b. 用于创建命令行、GUI  way Web 应用程序的工具。
-c. 跨平台编程框架。
-d. 以上所有。
+1.  a. JavaScript 运行时。
+    b. 用于创建命令行、GUI 和 Web 应用程序的工具。
+    c. 跨平台编程框架。
+    d. 以上所有。
 
-a. JavaScript 是 Java 的精简版。
-b. JavaScript 是 Java 的跨平台版本。
-c. JavaScript 是在浏览器中运行的 Java。
-d. JavaScript 是一个营销名称。
+2.  a. JavaScript 是 Java 的精简版。
+    b. JavaScript 是 Java 的跨平台版本。
+    c. JavaScript 是在浏览器中运行的 Java。
+    d. JavaScript 是一个营销名称。
 
-a. ECMAScript
-b. TypeScript
-c. JavaScript
-d. ES2015
+3.  a. ECMAScript
+    b. TypeScript
+    c. JavaScript
+    d. ES2015
 
-- a. 在单独的处理线程中运行的代码。
-- b. 同步运行的代码；下一个命令在当前命令完成后才运行。
-- c. 异步运行的代码；下一个命令可以在当前命令完成之前运行。
-- d. 与其它进程并行运行的代码。
+4.  a. 在单独的处理线程中运行的代码。
+    b. 同步运行的代码；下一个命令在当前命令完成后才运行。
+    c. 异步运行的代码；下一个命令可以在当前命令完成之前运行。
+    d. 与其它进程并行运行的代码。
 
-- a. Node Package Manager（Node 包管理器）
-- b. Node Program Maintenance（Node 程序维护）
-- c. Node Parsing Methods（Node 解析方法）
-- d. Node.js Perfect Manual（Node.js 完美手册）
+5.  a. Node Package Manager（Node 包管理器）
+    b. Node Program Maintenance（Node 程序维护）
+    c. Node Parsing Methods（Node 解析方法）
+    d. Node.js Perfect Manual（Node.js 完美手册）
 
-安装 Node.js
+# 安装 Node.js
 
 如果不先安装运行时，你的 Node.js 之旅将无法走远！
+
 你有三个主要选择：
 
-- 在运行 Linux、macOS 或 Windows 的本地开发机器上安装 Node.js。
+- 在运行 Linux、macOS 或 Windows 的本地开发机器上安装 Node.js。这是最简单的选择，也是最好的入门方式——这也是在这里采用的选项。
+- 通过运行在 VMware、VirtualBox、Parallels 或 Hyper-V 等虚拟机管理程序上的虚拟机（通常是 Linux）安装 Node.js。这不会影响你的主操作系统，因此你可以无风险地尝试。Windows 用户还应该考虑 Windows 的 Linux 子系统 (`WSL2`)，它提供了一个高度集成的 Linux 环境。请相应遵循 Linux 指南（见下文“如何在 Linux（或 Windows WSL2）上安装 Node.js”部分）。
+- 容器化软件，如 `Docker`。`Docker` 为应用程序提供了一个名为“容器”的封装器。你将在随后的章节中使用 `Docker` 安装此类软件如数据库），但你也可以以类似的方式开发、调试和部署 Node.js 应用程序。配置好的容器在每个操作系统上的运行方式都是相同的，因此在成员拥有不同设备的团队工作时，它是理想的选择。
 
-这是最简单的选择，也是最好的入门方式——这也是在这里采用的选项。
+Node.js 应用程序可以跨平台运行，但在文件系统和支持软件方面存在差异。Web 应用通常部署在 Linux 服务器上，因此在 Linux 操作系统、虚拟机或 `Docker` 容器上开发有助于避免兼容性问题。
 
-- 通过运行在 VMware、VirtualBox、Parallels 或 Hyper-V 等虚拟机管理程序上的虚拟机（通常是 Linux）安装 Node.js。
-
-这不会影响你的主操作系统，因此你可以无风险地尝试。
-
-Windows 用户还应该考虑 Windows 的 Linux 子系统 (WSL2)，它提供了一个高度集成的 Linux 环境。请相应遵循 Linux 指南（见下文“如何在 Linux（或 Windows WSL2）上安装 Node.js”部分）。
-
-- 容器化软件，如 Docker。
-
-Docker 为应用程序提供了一个名为“容器”的封装器。你将在随后的章节中使用 Docker 安装此类软件如数据库），但你也可以以类似的方式开发、调试和部署 Node.js 应用程序。
-
-配置好的容器在每个操作系统上的运行方式都是相同的，因此在成员拥有不同设备的团队工作时，它是理想的选择。
-
-Node.js 应用程序可以跨平台运行，但在文件系统和支持软件方面存在差异。Web 应用通常部署在 Linux 服务器上，因此在 Linux 操作系统、虚拟机或 Docker 容器上开发有助于避免兼容性问题。
-
-
-Node Version Manager (nvm) 是一个允许在多个 Linux、macOS 或 Windows WSL 系统上安装多个版本 Node.js 的工具。如果你正在使用不同版本的 Node.js 开发两个或多个项目，这将非常实用。
-
+`Node Version Manager (nvm)` 是一个允许在多个 Linux、macOS 或 Windows `WSL` 系统上安装多个版本 Node.js 的工具。如果你正在使用不同版本的 Node.js 开发两个或多个项目，这将非常实用。
 
 除非你正在支持具有特定要求的旧版应用程序，否则请安装最新版本的 Node.js。
 
-偶数版本的 Node.js（如 16、18 和 20）侧重于稳定性和安全性，具有长期支持 (LTS)。它们提供至少两年的更新，我建议将其用于实时生产服务器。你应该在开发机器上安装相同的版本。
+偶数版本的 Node.js（如 16、18 和 20）侧重于稳定性和安全性，具有长期支持 (`LTS`)。它们提供至少两年的更新，我建议将其用于实时生产服务器。你应该在开发机器上安装相同的版本。
 
 奇数版本（如 15、17、19）处于活跃开发中，并可能包含实验性功能。如果你正在学习、实验或频繁升级，这些版本也是没问题的。
 
 Node.js 16 用于开发本课程中的示例代码。然而，Node.js 通常具有良好的向后兼容性，在框架早期版本中编写的应用程序通常可以在更高版本中运行。
 
-# 如何 Linux（或 Windows WSL2）上安装 Node.js
+## 如何在 Linux（或 Windows WSL2）上安装 Node.js
 
-在浏览器中打开 nodejs.org 首页，它将引导你下载适用于你操作系统的安装包。然而，最实用的方法是通过操作系统内置的包管理器。NodeSource 提供 Ubuntu 和 Debian 的二进制文件，以版本 16.x 为例，你可以这样在 Ubuntu bash 终端安装 Node.js：
+在浏览器中打开 `nodejs.org` 首页，它将引导你下载适用于你操作系统的安装包。然而，最实用的方法是通过操作系统内置的包管理器。`NodeSource` 提供 Ubuntu 和 Debian 的二进制文件，以版本 16.x 为例，你可以这样在 Ubuntu `bash` 终端安装 Node.js：
 
-```
+```bash
 curl -fsSL https://deb.nodesource.com/setup_16.x | sudo -E bash -
 sudo apt-get install -y nodejs
 ```
 
-通过在终端运行以下命令查看版本号，验证 Node.js 和 npm 是否正确安装：
+通过在终端运行以下命令查看版本号，验证 Node.js 和 `npm` 是否正确安装：
 
-```
+```bash
 node -v
 npm -v
 ```
 
+`Node Package Manager` 命令行工具随 Node.js 一起提供，并便于安装、更新和删除。
 
-
-Node Package Manager 命令行工具随 Node.js 一起提供，并便于安装、更新和删除。
-
-
-```javascript
-'Hello World'
+```bash
+$ node
+> 'Hello World'
 > 
 ```
 
-最后，按下 Ctrl|Cmd + D 退出 REPL 控制台。
+最后，按下 `Ctrl|Cmd + D` 退出 `REPL` 控制台。
 
-你可能不会每天都使用 REPL 环境，但在将简单表达式添加到脚本之前对它们进行评估，它是非常有用的。
+你可能不会每天都使用 `REPL` 环境，但在将简单表达式添加到脚本之前对它们进行评估，它是非常有用的。
 
+在本章中，你学习了如何在各种设备上安装 Node.js 并在 `REPL` 控制台中运行 JavaScript 命令。我已在本章的配套视频中对其进行了总结。在下一章中，你将编写你的第一个由 JavaScript 驱动的控制台和网络应用程序。
 
-在本章中，你学习了如何在各种设备上安装 Node.js 并在 REPL 控制台中运行 JavaScript 命令。我已在本章的配套视频中对其进行了总结。在下一章中，你将编写你的第一个由 JavaScript 驱动的控制台和网络应用程序。
+1.  a. 大多数 Linux 发行版
+    b. macOS
+    c. Microsoft Windows
+    d. 以上所有
 
+2.  a. 它是标准 `npm` 的替代方案。
+    b. 它可以在一台设备上安装和管理不同版本的 Node.js。
+    c. 它是一个模块搜索系统。
+    d. 它是一个专门为 JavaScript 应用设计的文本编辑器。
 
-   - a. 大多数 Linux 发行版
-   - b. macOS
-   - c. Microsoft Windows
-   - d. 以上所有
+3.  a. read-evaluate-print loop（读取-评估-打印循环）
+    b. read-execute-print loop（读取-执行-打印循环）
+    c. run-evaluate-print loop（运行-评估-打印循环）
+    d. read-execute-primary loop（读取-执行-主循环）
 
-   - a. 它是标准 npm 的替代方案。
-   - b. 它可以在一台设备上安装和管理不同版本的 Node.js。
-   - c. 它是一个模块搜索系统。
-   - d. 它是一个专门为 JavaScript 应用设计的文本编辑器。
+# 你的第一个 Node.js 应用
 
-   - a. read-evaluate-print loop（读取-评估-打印循环）
-   - b. read-execute-print loop（读取-执行-打印循环）
-   - c. run-evaluate-print loop（运行-评估-打印循环）
-   - d. read-execute-primary loop（读取-执行-主循环）
+在本章中，你将编写、运行和调试你的第一个 Node.js 程序。为了保持简单，你不需要任何第三方模块或 `npm`。它们是自包含的脚本，你使用 Node.js 提供的标准库。
 
-你的第一个 Node.js 
-
-在本章中，你将编写、运行和调试你的第一个 Node.js 程序。为了保持简单，你不需要任何第三方模块或 npm。它们是自包含的脚本，你使用 Node.js 提供的标准库。
-
+## 你的第一个控制台应用
 
 命令行控制应用程序适用于自动化任务、数据格式化、文件操作或任何适合计算机处理的繁琐工作。
 
@@ -449,8 +368,7 @@ node hello.js
 
 ![](img/df734780c88ebde9dc5bf93f50faf4c6_39_0.png)
 
-3-1. 控制台中的 Hello World!
-
+**3-1. 控制台中的 Hello World!**
 
 `hello.js` 中的第一行 — `hashbang` — `#!/usr/bin/env node` 被称为 **shebang**。它是完全可选的，并且在你运行 `node hello.js` 时会被忽略，因为你正在将脚本传递给执行代码的 Node.js 运行时。
 
@@ -466,9 +384,9 @@ chmod +x ./hello.js
 ./hello.js
 ```
 
-操作系统会分析 shebang 并使用 Node.js 运行代码。没有输入完整的 `node hello.js` 命令，尽管该命令仍然有效。
+操作系统会分析 shebang 并使用 Node.js 运行代码。无需输入完整的 `node hello.js` 命令，尽管该命令仍然有效。
 
-这超出了 Node.js 的范围，我们不会再次使用它，因为 npm 提供了一些跨平台选项。当你需要它时，它就在那里。
+这超出了 Node.js 的范围，我们不会再次使用它，因为 `npm` 提供了一些跨平台选项。当你需要它时，它就在那里。
 
 为了让脚本更有用，你可以在命令行上传递一个名称。标准库中的 `process.argv` 属性返回一个包含命令行参数的数组：
 
@@ -476,7 +394,7 @@ chmod +x ./hello.js
 - 第二个元素（索引 1）是你运行的脚本（`hello.js`）
 - 第三个元素（索引 2）是传递的第一个参数
 
-编辑 hello.js 脚本以提取第二个参数并在 `console.log()` 语句中输出它：
+编辑 `hello.js` 脚本以提取第二个参数并在 `console.log()` 语句中输出它：
 
 ```javascript
 #!/usr/bin/env node
@@ -492,87 +410,40 @@ console.log(`Hello ${nameArg}`);
 
 ![](img/df734780c88ebde9dc5bf93f50faf4c6_41_0.png)
 
-3-2. 控制台中的 Hello Craig!
+**3-2. 控制台中的 Hello Craig!**
 
-如果你省略了参数（node hello.js），应用将回退到 Hello world。
+如果你省略了参数（`node hello.js`），应用将回退到 Hello world。
 
 ![](img/df734780c88ebde9dc5bf93f50faf4c6_42_0.png)
 
-3-3. 控制台中显示 Hello world!
+**3-3. 控制台中显示 Hello world!**
 
-“world”这个回退文本有点无聊，所以你可以获取存储在操作系统环境变量中的用户名称。`process.env` 属性返回一个包含环境变量名/值对的对象。尝试在 REPL 中输入 `process.env`。（此请参见第2章中的“在 Node.js REPL 中运行 JavaScript 命令”部分。）
+“world”这个回退文本有点无聊，所以你可以获取存储在操作系统环境变量中的用户名称。`process.env` 属性返回一个包含环境变量名/值对的对象。尝试在 `REPL` 中输入 `process.env`。（请参见第 2 章中的“在 Node.js REPL 中运行 JavaScript 命令”部分。）
 
 Linux 和 macOS 定义了 `USER` 变量，而 Windows 设置了 `USERNAME`。在声明 `nameArg` 时检查两者以确保你的脚本是跨平台的：
 
 ```javascript
 // 从命令行参数、环境或回退值获取名称
-const nameArg = (process.argv[2]) || process.env.USER || process.env.USERNAME ||
+const nameArg = process.argv[2] || process.env.USER || process.env.USERNAME || 'world';
+
+console.log(`Hello ${nameArg}`);
 ```
-
-这里的 `process.argv[2]) || process.env.USER || process.env.USERNAME ||` 似乎在原文中被截断了，但根据逻辑我将翻译剩余部分。
-
-等等，重新审视原文：
-`const nameArg = (process.argv[2]) || process.env.USER || process.env.USERNAME ||`
-（原文在此处似乎不完整，我将按样翻译）
-
-实际上，我重新检查了输入流：
-`const nameArg = (process.argv[2]) || process.env.USER || process.env.USERNAME ||`
-这看起来是原文提供时的截断错误，我会根据上下文完成翻译。
-
-等等，我发现原文的文本中有一段是：
-`const nameArg = (process.argv[2]) || process.env.USER || process.env.USERNAME ||`
-这后面紧跟着一些乱的字符。我将按照我提供的逻辑进行翻译。
-
-等等，我再次仔细看你提供的文本：
-`const nameArg = (process.argv[2]) || process.env.USER || process.env.USERNAME ||`
-这后面跟着一些奇怪的重复字符。我将忽略这些重复的字符。我我我我。我我我。我。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。
-`console.log。Hello ${。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。
-`console.log(`Hello ${nameArg}`);`
-。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。js。。。。。。。。。。。。。。。
-
-你的第一个 Node.js 
 
 ![](img/df734780c88ebde9dc5bf93f50faf4c6_44_0.png)
 
-3-4. 控制台中的响应
+**3-4. 控制台中的响应**
 
-你的第一个控制台应用
-
-命令行控制应用程序适用于自动化任务、数据格式化、文件操作或任何适合计算机处理的繁琐工作。
-
-为你的项目创建一个目录，例如 `console`：
-
-```bash
-mkdir console
-cd console
-```
-
-然后添加一个名为 `hello.js` 的文件，内容如下：
-
-```javascript
-#!/usr/bin/env node
-
-// 输出消息
-console.log('Hello World!');
-```
-
-从命令行保存并运行它：
-
-```bash
-node hello.js
-```
-
-你现在应该能看到 `Hello World!`。
-
-![](img/df734780c88ebde9dc5bf93f50faf4c6_45_0.png)
-
-3-5. JavaScript 服务器
+## 你的第一个 Web 服务器
 
 Web 应用需要 Web 服务器来返回 HTML 页面。Apache 和 NGINX 等专用 Web 服务器常用于此。
 
+![](img/df734780c88ebde9dc5bf93f50faf4c6_45_0.png)
+
+**3-5. JavaScript 服务器**
+
 ![](img/df734780c88ebde9dc5bf93f50faf4c6_45_1.png)
 
-3-6. Node.js 服务器
+**3-6. Node.js 服务器**
 
 为你的项目创建一个目录，例如 `server`：
 
@@ -599,21 +470,16 @@ http.createServer((req, res) => {
 console.log(`Server running at http://localhost:${port}/`);
 ```
 
-运行 `node webhello.js`，你会看到 Server running at http://localhost:3000/ 或类似的地址。在浏览器中打开该地址以查看带有“Hello World!”段落的网页。
+运行 `node webhello.js`，你会看到 `Server running at http://localhost:3000/` 或类似的地址。在浏览器中打开该地址以查看带有“Hello World!”段落的网页。
 
 ![](img/df734780c88ebde9dc5bf93f50faf4c6_47_0.png)
-
 
 代码执行了以下操作：
 
 - 定义了服务器端口 `port` 变量。这可以通过命令行传递、`PORT` 环境变量提供，或者回退到 `3000`。
 - 使用 `http.createServer` 库创建一个在 `port` 上监听的 Web 服务器。当其回调函数接收到请求时，它可以检查 `req` 对象中的详细信息并使用 `res` 对象返回响应。
 
-
-
-
-
-## 端口 3000？
+### 端口 3000？
 
 Web 服务器在 80 端口监听 HTTP 请求，在 443 端口监听 HTTPS 请求。你可以设置不同的端口，但必须在 URL 中指定它。
 
@@ -622,7 +488,7 @@ Web 服务器在 80 端口监听 HTTP 请求，在 443 端口监听 HTTPS 请求
 - 它们可能被其他软件占用，例如其他 Web 服务器或 Skype。
 - Linux 和 macOS 会阻止监听 1000 以下端口的程序，除非它们是由超级用户启动的。这赋予了你的脚本权限，它据此执行任何操作，如擦除你的操作系统或将密码发布到 Twitter。记住，你不仅在运行自己的代码，还隐藏在 Node.js 以及你安装的任何模块中。
 
-在较高的端口上带有严格权限运行 Web 应用更安全。生产环境服务器可以使用 NGINX 等 Web 服务器将请求转发给 Node.js。
+在较高的端口上以严格权限运行 Web 应用更安全。生产环境服务器可以使用 NGINX 等 Web 服务器将请求转发给 Node.js。
 
 让我们通过对 URL 传递的字符串说“hello”来改进应用程序。URL 存储在 `req.url` 中，因此你可以像以前一样删除任何非单词字符并将首字母大写。更新此脚本：
 
@@ -633,37 +499,31 @@ const http = require('http');
 
 http.createServer((req, res) => {
   console.log(req.url);
-  const nameArg = capitalize(req.url.replace(/^\w.-]+/g, ' ').replace(/\s+/g, ' ').trim() || 'world');
+  const nameArg = capitalize(req.url.replace(/[^\w.-]+/g, ' ').replace(/\s+/g, ' ').trim() || 'world');
 
   res.statusCode = 200;
   res.setHeader('Content-Type', 'text/html');
   res.end(`<p>Hello ${nameArg}!</p>`);
-});
-```
-
-```javascript
-)).listen(port);
+}).listen(port);
 
 console.log(`Server running at http://localhost:${port}/`);
 
 // 大写所有单词的首字母
 function capitalize(str) {
   return str
-  .trim()
-  .toLowerCase()
-  .split(' ')
-  .map(word => word.charAt(0).toUpperCase() + word.slice(1))
-  .join(' ');
+    .trim()
+    .toLowerCase()
+    .split(' ')
+    .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+    .join(' ');
 }
 ```
 
 现在在浏览器中打开 `http://localhost:3000/Node.js`。你很有可能会看到“Hello World!”，因为你之前的应用程序实例仍在运行！
 
-切换到终端并按 Ctrl | Cmd + C 停止应用程序。使用 `node webhello.js` 重启它，返回浏览器并刷新页面看到“Hello From Node.js!”。
-
+切换到终端并按 `Ctrl | Cmd + C` 停止应用程序。使用 `node webhello.js` 重启它，返回浏览器并刷新页面看到“Hello From Node.js!”。
 
 ![](img/df734780c88ebde9dc5bf93f50faf4c6_50_0.png)
-
 
 尝试不同的 URL 路径并分析 `nameArg` 声明以理解它是如何工作的。
 
@@ -680,16 +540,15 @@ Server running at http://localhost:3000/
 
 那些意外的 `/favicon.ico` 请求是什么？你将在下一章进一步调查并调试。
 
+每次做出更改都必须重启 Node.js 应用程序。按下 `Ctrl + Cmd + C` 并再次启动会很快变得疲惫。
 
-每次做出更改都必须重启 Node.js 应用程序。按下 Ctrl + Cmd + C 并再次启动会很快变得疲惫。
-
-Nodemon 是一个工具，它可以监控源文件的更改并自动重启应用程序。使用 npm 全局安装：
+`Nodemon` 是一个工具，它可以监控源文件的更改并自动重启应用程序。使用 `npm` 全局安装：
 
 ```bash
 npm install -g nodemon
 ```
 
-你可以用 nodemon 代替 node 来启动任何 Node.js 应用程序。例如：
+你可以用 `nodemon` 代替 `node` 来启动任何 Node.js 应用程序。例如：
 
 ```bash
 nodemon webhello.js
@@ -697,21 +556,20 @@ nodemon webhello.js
 
 （你可以像以前一样传递任何参数。）
 
-当你保存代码更改时，Nodemon 会重启应用程序，你会在终端中看到一条日志记录：
+当你保存代码更改时，`Nodemon` 会重启应用程序，你会在终端中看到一条日志记录：
 
 ```bash
 [nodemon] restarting due to changes...
 [nodemon] starting `node webhello.js`
 ```
 
-如果不起作用，尝试使用 `--legacy-watch / -L` 参数运行 nodemon：
+如果不起作用，尝试使用 `--legacy-watch / -L` 参数运行 `nodemon`：
 
 ```bash
 nodemon -L webhello.js
 ```
 
-更多选项请参阅 Nodemon 文档。
-
+更多选项请参阅 `Nodemon` 文档。
 
 在默认情况下，Windows Powershell 不允许你作为 `nodemon` 执行第三方脚本。在 PowerShell 窗口中输入此命令以允许脚本执行：
 
@@ -721,38 +579,34 @@ Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
 
 你可以在此处找到 Web 应用运行的视频演示。
 
-
-
+> **注意**
+>
 > 本节涵盖了一些高级主题。如果现在不理解请不要担心。我们稍后会重新回到实现。
 
-这个轻量级脚本实现了一个功能性的 Web 服务器，令人惊叹。应用程序是永久开启的，无论其状态如何，都可以保留自己的状态。（注：原文在此处存在大量重复的 OCR 错误，已清理）。
+这个轻量级脚本实现了一个功能性的 Web 服务器，令人惊叹。应用程序是永久开启的，无论其状态如何，都可以保留自己的状态。
 
+1.  不行。一次只能启动一个 Node.js 应用程序实例。
+2.  是的，但每个实例必须位于独立的物理服务器或虚拟服务器上。
+3.  是的，但如 `Docker` 等容器化软件是必不可少的。
+4.  是的，但应用程序应该是无状态的，并通过负载均衡器或 Web 服务器接收请求。
 
-
-
-
-- 不行。一次只能启动一个 Node.js 应用程序实例。
-- 是的，但每个实例必须位于独立的物理服务器或虚拟服务器上。
-- 是的，但如 Docker 等容器化软件是必不可少的。
-- 是的，但应用程序应该是无状态的，并通过负载均衡器或 Web 服务器接收请求。
-
-如何调试 Node.js 脚本
-
+## 如何调试 Node.js 脚本
 
 教程通常在最后的章节介绍调试。如果你在编码之旅之初就遇到问题，这可能会让你感到很沮丧——而你确实会遇到这种情况。软件开发是复杂的。
 
 如果你足够幸运，你的代码会崩溃并显示一条明显的错误信息。如果你运气不好，你的应用程序会继续运行，但不会生成你预期的结果。如果你非常倒霉，一切都会运行良好，直到第一个用户发现了一个灾难性的擦除磁盘的 Bug。
 
-> 跳过一下？
-> 这是一个很长的章节，描述了多种调试选项。如果你想立即开始，可以跳过到“练习：调试 webhello.js”部分（位于章节末尾）。尽管如此，现在学一点可以以后以后好几个小时的努力！
-# 什么是调试？
+> **想跳过？**
+>
+> 这是一个很长的章节，描述了多种调试选项。如果你想立即开始，可以跳过到“练习：调试 webhello.js”部分（位于章节末尾）。尽管如此，现在学一点可以以后节省好几个小时的努力！
+
+### 什么是调试？
 
 调试是修复软件缺陷的“黑艺术”。修复一个 Bug 往往很容易；修改一个字符或增加一行代码就能解决问题。但找到那个 Bug 是另一回事，开发者可能会花费许多令人沮丧的时间来定位问题根源。幸运的是，Node.js 有一些非常棒的工具来追踪问题。
 
+你通常可以在测试应用程序之前防止 Bug 的产生。让我们看看某些方法。
 
-你通常可以在测试应用程序之前防止 Bug 的产生。让我们某些方法。
-
-# 使用良好的代码编辑器
+### 使用良好的代码编辑器
 
 一个良好的代码编辑器提供以下功能：
 
@@ -763,19 +617,19 @@ Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
 - 括号匹配：高亮嵌套结构中的问题
 - 自动缩进：确保使用正确的 Tab 或空格字符
 - 跨文件和项目的变量重命名
-- 代码段（Snippet）的保存与重用
+- 代码片段的保存与重用
 - 函数、属性和方法的参数提示
 - 函数导航：跳转到声明处
 - 不可达代码检测
 - 重构工具：用于整理杂乱的代码
 
-Node.js 开发者有很多很好的选择，诸如 VS Code、Atom 和 Sublime Text 等编辑器。
+Node.js 开发者有很多很好的选择，诸如 `VS Code`、`Atom` 和 `Sublime Text` 等编辑器。
 
-# 使用代码检查工具（Linter）
+### 使用代码检查工具（Linter）
 
-Linter 会在你保存和测试代码之前报告各种类错误，如语法错误、缩进不当、未声明变量、括号不匹配以及你个人的偏好（分号、引号使用等）。JavaScript 和 Node.js 的流行选项包括 ESLint、JSLint 和 JSHint。
+`Linter` 会在你保存和测试代码之前报告各种类错误，如语法错误、缩进不当、未声明变量、括号不匹配以及你个人的偏好（分号、引号使用等）。JavaScript 和 Node.js 的流行选项包括 `ESLint`、`JSLint` 和 `JSHint`。
 
-这些可以作为全局 Node.js 模块安装。例如，这里是如何使用 npm 全局安装 ESLint 的：
+这些可以作为全局 Node.js 模块安装。例如，这里是如何使用 `npm` 全局安装 `ESLint` 的：
 
 ```bash
 npm install eslint -g
@@ -786,8 +640,6 @@ npm install eslint -g
 ```bash
 eslint myscript.js
 ```
-
-# 41 Node.js：从新手到忍者
 
 ```bash
 cig@craigdev:~$ more myscript.js
@@ -810,33 +662,29 @@ cig@craigdev:~$ eslint myscript.js
 cig@craigdev:~$
 ```
 
-4-1. 使用 ESLint
+**4-1. 使用 ESLint**
 
-4-2. 在 VS Code 中使用 ESLint
+**4-2. 在 VS Code 中使用 ESLint**
 
-### 如何调试 Node.js 脚本
+### 使用版本控制
 
-![调试 Node.js 脚本](img/73480c5bf90)
+版本控制系统 `Git` 可以帮助保护代码并管理修订。`GitHub` 和 `Bitbucket` 等在线仓库提供了这些功能。
 
-# 使用版本控制
+### 采用问题跟踪系统
 
-版本控制系统 Git 可以帮助保护代码并管理修订。GitHub 和 Bitbucket 等在线仓库提供了这些功能。
+问题跟踪系统可以用于报告 Bug、确定严重程度、分配任务。对于较大的团队和项目，`Jira`、`FogBugz` 或 `Bugzilla` 等解决方案可能是合适的。
 
-# 采用问题跟踪系统
-
-问题跟踪系统可以用于报告 Bug、确定严重程度、分配任务。对于较大的团队和项目，Jira、FogBug 或 Bugzilla 等解决方案可能是合适的。
-
-# 使用测试驱动开发
+### 使用测试驱动开发
 
 **测试驱动开发（TDD）** 是一种鼓励开发者在编写代码之前通过测试来确保函数正常运行的过程。*当然，你的测试也可能有 Bug。*
 
 更多资源：
 
 - [维基百科上的 TDD 概览](https://en.wikipedia.org/wiki/Test-driven_development)
-- [什么是测试驱动开发](#
-- [在 Node.js 中掌握测试驱动开发](#
+- [什么是测试驱动开发](#)
+- [在 Node.js 中掌握测试驱动开发](#)
 
-# Node.js 调试环境变量
+### Node.js 调试环境变量
 
 在操作系统中设置的环境变量控制 Node.js 设置。最常见的是 `NODE_ENV`，调试时通常设置为 `development`，在生产环境中设置为 `production`。
 
@@ -869,9 +717,9 @@ if (DEVMODE) {
 }
 ```
 
-# Node.js 命令行选项
+### Node.js 命令行选项
 
-可以传递给 node 的各种命令行选项。最有用之一是 --trace-warnings：
+可以传递给 `node` 的各种命令行选项。最有用之一是 `--trace-warnings`：
 
 ```bash
 node --trace-warnings index.js
@@ -879,11 +727,11 @@ node --trace-warnings index.js
 
 其他选项包括：
 
-- --enable-source-maps：在使用转换器时启用源 map
-- --throw-deprecation：在使用弃用功能时抛出错误
-- --inspect：激活 V8 调试器（参见“Node.js 调试器”章节）
+- `--enable-source-maps`：在使用转换器时启用源 map
+- `--throw-deprecation`：在使用弃用功能时抛出错误
+- `--inspect`：激活 V8 调试器（参见“Node.js 调试器”章节）
 
-# 控制台调试
+### 控制台调试
 
 最简单的方法之一是将值输出到控制台：
 
@@ -891,27 +739,23 @@ node --trace-warnings index.js
 console.log( myVariable );
 ```
 
-# 永远不要使用 console.log()！
+### 永远不要使用 console.log()！
 
-有些开发者声你不应该使用 `console.log()`，因为你在更改代码，而且有更好的调试选项。确实——*每个人都这么做！*
+有些开发者声称你不应该使用 `console.log()`，因为你在更改代码，而且有更好的调试选项。确实——*每个人都这么做！*
 
-使用任何能让你高效的工具。控制台日志是一个快速且实用的选项。找到 Bug 比使用什么方法更重要。很少开发者会深入探索标准的 `console.log()` 之外，但他们错过了[许多可能性](:
+使用任何能让你高效的工具。控制台日志是一个快速且实用的选项。找到 Bug 比使用什么方法更重要。很少开发者会深入探索标准的 `console.log()` 之外，但他们错过了许多可能性。
 
-
-
-
-
-# Node.js：从初学者到大师
+### console.dir()
 
 为你提供的辛苦工作：
 
-```
+```javascript
 console.dir(obj, { depth: null, color: true });
 ```
 
-# Node.js util.debuglog
+### Node.js util.debuglog
 
-Node.js util 模块提供了一个内置的 `debuglog` 方法，可以条件条件将日志消息写入 STDERR：
+Node.js `util` 模块提供了一个内置的 `debuglog` 方法，可以有条件地将日志消息写入 `STDERR`：
 
 ```javascript
 const util = require('util');
@@ -925,24 +769,24 @@ debuglog('myapp message [%d]', 123);
 
 (9876 是 Node.js 进程 ID。)
 
-# 使用日志模块进行调试
+### 使用日志模块进行调试
 
 如果你需要对消息级别、详细程度、排序、文件输出、性能分析、报告等更高级的选项，可以使用第三方日志模块。流行的解决方案包括：
 
-- cabin
-- loglevel
-- morgan
-- pino
-- signale
-- storyboard
-- tracer
-- winston
+- `cabin`
+- `loglevel`
+- `morgan`
+- `pino`
+- `signale`
+- `storyboard`
+- `tracer`
+- `winston`
 
-# Node.js V8 Inspector
+### Node.js V8 Inspector
 
 后续章节将使用上一章开发的 `webhello.js` 脚本来阐明调试概念。
 
-Node.js 是 V8 JavaScript 引擎的封装。它包含了自身的检查器和调试客户端。使用 `inspect` 参数启动应用程序（不要与 `--inspect` 标志混淆——后者将在下面的“使用 Chrome 调试 Node.js 应用”章节中介绍）：
+Node.js 是 `V8` JavaScript 引擎的封装。它包含了自身的检查器和调试客户端。使用 `inspect` 参数启动应用程序（不要与 `--inspect` 标志混淆——后者将在下面的“使用 Chrome 调试 Node.js 应用”章节中介绍）：
 
 ```bash
 node inspect webhello.js
@@ -967,13 +811,11 @@ Break on start in webhello.js:4
 
 输入 `help` 查看命令列表。你可以通过这些选项逐行执行应用程序：
 
-- `cont` 或 `c`: 继续执行
-- `next` 或 `n`: 执行下一条命令
-- `step` 或 `s`: 进入被调用的函数
-- `out` 或 `o`: 跳出函数并返回到调用命令
-- `pause` 或 `p`: 暂停运行中的代码
-
-# Node.js：从初学者到大师
+- `cont` 或 `c`：继续执行
+- `next` 或 `n`：执行下一条命令
+- `step` 或 `s`：进入被调用的函数
+- `out` 或 `o`：跳出函数并返回到调用命令
+- `pause` 或 `p`：暂停运行中的代码
 
 其他选项还包括：
 
@@ -984,7 +826,7 @@ Break on start in webhello.js:4
 
 如果这听起来非常笨拙，那它确实如此。只有在完全没有其他选择或者你感到受虐倾向时，才使用内置的调试客户端。
 
-# 使用 Chrome 调试 Node.js 应用
+### 使用 Chrome 调试 Node.js 应用
 
 使用 `--inspect` 标志启动 Node.js V8 检查器：
 
@@ -998,7 +840,7 @@ node --inspect webhello.js
 
 > Debugger listening on ws://127.0.0.1:9229/20ac75ae-90c5-4db6-af6b-d9d74592572f
 
-如果你在另一个设备或 Docker 容器上运行 Node.js ，请确保端口 `9229` 可用，并使用以下命令授予远程访问：
+如果你在另一个设备或 `Docker` 容器上运行 Node.js ，请确保端口 `9229` 可用，并使用以下命令授予远程访问：
 
 ```bash
 node --inspect=0.0.0.0:9229 webhello.js
@@ -1008,46 +850,21 @@ node --inspect=0.0.0.0:9229 webhello.js
 
 打开 Chrome 浏览器并在地址栏中输入 `chrome://inspect`。
 
-### 如何调试 Node.js 脚本
+**4-3. 使用 Chrome inspect**
 
-## DevTools
+> **没有使用 Chrome？**
+>
+> Chromium、Edge、Opera、Vivaldi 和 Brave 都具有与 Chrome 相同的调试器。`chrome://inspect` 地址完全相同。
 
-## 设备
-
-| | | |
-|---|---|---|
-| 设备 | 发现 USB 设备 | 端口转发... |
-| 页面 | | |
-| 扩展 | 发现网络目标 | 配置... |
-| 应用 | | |
-| 共享 Worker | 为 Node 打开专用的 DevTools | |
-| Service Worker | | |
-| 其他 | | |
-
-## 远程目标 #LOCALHOST
-
-Target (v16.12.0) trace
-webhello.js file://mnt/d/projects/course-ultimatenode1/code/ch03/server/webhello.js inspect
-
-## 4-3. 使用 Chrome inspect
-
-> 没有使用 Chrome？
-Chromium、Edge、Opera、Vivaldi 和 Brave 都具有与 Chrome 相同的调试器。`chrome://inspect` 地址完全相同。
-
-> 远程目标
-如果 Node.js 应用未作为远程目标出现，请确保勾选了“发现网络目标”，然后点击“配置”添加运行应用程序设备的 IP 地址和端口。
+> **远程目标**
+>
+> 如果 Node.js 应用未作为远程目标出现，请确保勾选了“发现网络目标”，然后点击“配置”添加运行应用程序设备的 IP 地址和端口。
 
 点击目标的 **inspect** 链接启动 DevTools。你会感到非常熟悉。
 
-
-
-
-
-### 如何调试 Node.js 脚本
-
--   标准断点（breakpoint）。
--   条件断点（conditional breakpoint），当满足特定标准时停止程序——例如 `count > 3`。
--   日志点（logpoint）。这实际上是于无需编写代码的 `console.log()`！输入任何带有大括号内求值表达式的字符串。例如：`URL: { req.url }` 会输出 `req.url` 的值。
+- 标准断点（breakpoint）。
+- 条件断点（conditional breakpoint），当满足特定标准时停止程序——例如 `count > 3`。
+- 日志点（logpoint）。这实际上是无需编写代码的 `console.log()`！输入任何带有大括号内求值表达式的字符串。例如：`URL: { req.url }` 会输出 `req.url` 的值。
 
 ```javascript
 console.log(req.url);
@@ -1058,59 +875,59 @@ res.setHeader('Content-Type', 'text/html');
 res.end('<p>Hello ${nameArg}</p>');
 ```
 
-### 4-10. VS Code 日志点
+**4-10. VS Code 日志点**
 
 当刷新网页时，调试控制台（DEBUG CONSOLE）会显示日志点的数值。
 
 ![](img/df734780c88ebde9dc5bf93f50faf4c6_75_0.png)
 
-### 4-11. VS Code 日志点输出
+**4-11. VS Code 日志点输出**
 
 更多信息，请参阅“在 Visual Studio Code 中调试”。
 
 ## 高级调试配置
 
-当你在另一个设备、虚拟机上调试代码，或者想要使用不同的启动选项时，需要进行 VS Code 配置。VS Code 将启动配置存储在项目内 `.vscode` 文件夹下的 `Launch.json` 文件中。要生成该文件，请点击“运行和调试”面板顶部的“创建 launch.json 文件”链接，并选择 Node.js 环境。
+当你在另一个设备、虚拟机上调试代码，或者想要使用不同的启动选项时，需要进行 `VS Code` 配置。`VS Code` 将启动配置存储在项目内 `.vscode` 文件夹下的 `launch.json` 文件中。要生成该文件，请点击“运行和调试”面板顶部的“创建 launch.json 文件”链接，并选择 Node.js 环境。
 
 ![](img/df734780c88ebde9dc5bf93f50faf4c6_76_0.png)
 
-### 4-12. VS Code 启动配置
+**4-12. VS Code 启动配置**
 
-你可以向 `"configurations": []` 数组中添加任意数量的配置设置对象。点击**添加配置（Add Configuration）**按钮来添加合适的选项。VS Code 可以：
+你可以向 `"configurations": []` 数组中添加任意数量的配置设置对象。点击**添加配置（Add Configuration）**按钮来添加合适的选项。`VS Code` 可以：
 
--   **启动（Launch）**使用 Node.js 本身启动一个进程
--   **附加（Attach）**到 Node.js 调试器进程，该进程可能运行在远程机器或 Docker 容器上
+- **启动（Launch）**：使用 Node.js 本身启动一个进程
+- **附加（Attach）**：到 Node.js 调试器进程，该进程可能运行在远程机器或 `Docker` 容器上
 
 上面的截图显示了一个 `nodemon` 启动配置。**添加配置**提供了 `nodemon` 选项；你只需要编辑 `"program"` 属性指向 `$(workspaceFolder)/webhello.js` 即可。
 
-保存 `Launch.json`，从**运行和调试**面板顶部的列表中选择 `nodemon`，然后点击**绿色**运行图标。
+保存 `launch.json`，从**运行和调试**面板顶部的列表中选择 `nodemon`，然后点击**绿色**运行图标。
 
 ![](img/df734780c88ebde9dc5bf93f50faf4c6_77_0.png)
 
-### 4-13. VS Code 启动调试
+**4-13. VS Code 启动调试**
 
 `nodemon` 将启动你的应用程序。你可以像以前一样编辑代码并设置断点或日志点。
 
-有关更多信息，请参阅 VS Code 启动配置。
+有关更多信息，请参阅 `VS Code` 启动配置。
 
-VS Code 可以调试任何 Node.js ，但以下扩展可以让生活更轻松：
+`VS Code` 可以调试任何 Node.js ，但以下扩展可以让生活更轻松：
 
--   Remote - Containers：连接到在 Docker 容器中运行的应用
--   Remote - WSL：连接到在 Windows 的 WSL 中运行的 Linux 应用
+- `Remote - Containers`：连接到在 `Docker` 容器中运行的应用
+- `Remote - WSL`：连接到在 Windows 的 `WSL` 中运行的 Linux 应用
 
 ## 其他 Node.js 调试工具
 
-Node.js 调试指南为其他 IDE 和编辑器提供了建议，包括 Visual Studio、JetBrains、WebStorm、Gitpod 和 Eclipse。此外还有 `node-debug` 扩展。
+Node.js 调试指南为其他 IDE 和编辑器提供了建议，包括 `Visual Studio`、`JetBrains`、`WebStorm`、`Gitpod` 和 `Eclipse`。此外还有 `node-debug` 扩展。
 
 `ndb` 提供了改进的调试体验，具有强大的功能，如附加到子进程和黑盒（blackboxing），以便只显示特定文件夹中的代码。
 
-用于 Node.js 的 IBM `report-toolkit` 通过分析 node 在带有 `--experimental-report` 选项运行时的数据输出来工作。
+用于 Node.js 的 IBM `report-toolkit` 通过分析 `node` 在带有 `--experimental-report` 选项运行时的数据输出来工作。
 
-最后，如 LogRocket 和 Sentry.io 等商业服务可以与你在客户端和服务器上的实时 Web 应用程序集成，在真实用户遇到错误时进行记录。
+最后，如 `LogRocket` 和 `Sentry.io` 等商业服务可以与你在客户端和服务器上的实时 Web 应用程序集成，在真实用户遇到错误时进行记录。
 
 ## 练习：调试 webhello.js
 
-`webhello.js` 代码有一个奇怪的 bug，会记录一个意外的 `/favicon.ico` 请求。要检查发生了什么，请启动 VS Code 并打开 `webhello.js` 文件夹。然后：
+`webhello.js` 代码有一个奇怪的 bug，会记录一个意外的 `/favicon.ico` 请求。要检查发生了什么，请启动 `VS Code` 并打开 `webhello.js` 文件夹。然后：
 
 1.  切换到“运行和调试”面板。
 2.  创建 `launch.json` 文件并选择 Node.js 环境。
@@ -1125,236 +942,113 @@ Node.js 调试指南为其他 IDE 和编辑器提供了建议，包括 Visual St
 
 ![](img/df734780c88ebde9dc5bf93f50faf4c6_78_0.png)
 
-### 4-14. VS Code 调试点
+**4-14. VS Code 调试点**
 
 当刷新网页时，调试控制台会显示日志点的数值。
-
-### 如何调试 Node. 脚本
-
-
-
- 调试.js 脚本
-
--   一个标准断点（standard. **）。
--   一个条件断点，在满足标准时停止程序——例如 `count > 3`。
--   一个日志点（logpoint）。这实际上是无需console代码的 `console.log()`！输入大大大求求求求的字符串字符串。例如：：: { req.url } } 会输出 `reqrequrlurl。。```javascript
-javascriptjavascriptjavascriptconsole..(req.url);
-const nameArg = capitalize(req.url);
-res.statusCode = 200;
-Log Message: URL: {req.url}
-res.setHeader('Content-Type', 'text/html');
-res.end('<p>Hello ${nameArg}</p>');
-```
-
-### 4-10. VS Code 日志点
-
-当刷新网页时，调试控制台会显示日志点的数值。
-
-![](img/df734780c88ebde9dc5bf93f50faf4c6_75_0.png)
-
-### 4-11. VS Code 日志点输出
-
-更多信息，请参阅“在 Visual Studio Code 中调试”。
-
-## 高级调试配置
-
-当你在另一个设备、虚拟机上调试代码，或者想要使用不同的启动选项时，需要进行 VS Code 配置。VS Code 将启动配置存储在项目内 `.vscode` 文件夹下的 `Launch.json` 文件中。要生成该文件，请点击“运行和调试”面板顶部的“创建 launch.json 文件”链接，并选择 Node.js 环境。
-
-![](img/df734780c88ebde9dc5bf93f50faf4c6_76_0.png)
-
-### 4-12. VS Code 启动配置
-
-你可以向 `"configurations": []` 数组中添加任意数量的配置设置对象。点击**添加配置（Add Configuration）**按钮来添加合适的选项。VS Code 可以：
-
--   **启动（Launch）**使用 Node.js 本身启动一个进程
--   **附加（Attach）**到 Node.js 调试器进程，该进程可能运行在远程机器或 Docker 容器上
-
-上面的截图显示了一个 `nodemon` 启动配置。**添加配置**提供了 `nodemon` 选项；你只需要编辑 `"program"` 属性指向 `$(workspaceFolder)/webhello.js` 即可。
-
-保存 `Launch.json`，从**运行和调试**面板顶部的列表中选择 `nodemon`，然后点击**绿色**运行图标。
-
-![](img/df734780c88ebde9dc5bf93f50faf4c6_77_0.png)
-
-### 4-13. VS Code 启动调试
-
-`nodemon` 将启动你的应用程序。你可以像以前一样编辑代码并设置断点或日志点。
-
-有关更多信息，请参阅 VS Code 启动配置。
-
-VS Code 可以调试任何 Node.js ，但以下扩展可以让生活更轻松：
-
--   Remote - Containers：连接到在 Docker 容器中运行的应用
--   Remote - WSL：连接到在 Windows 的 WSL 中运行的 Linux 应用
-
-## 其他 Node.js 调试工具
-
-Node.js 调试指南为其他 IDE 和编辑器提供了建议，包括 Visual Studio、JetBrains、WebStorm、Gitpod 和 Eclipse。此外还有 `node-debug` 扩展。
-
-`ndb` 提供了改进的调试体验，具有强大的功能，如附加到子进程和黑盒（blackboxing），以便只显示特定文件夹中的代码。
-
-用于 Node.js 的 IBM `report-toolkit` 通过分析 node 在带有 `--experimental-report` 选项运行时的数据输出来工作。
-
-最后，如 LogRocket 和 Sentry.io 等商业服务可以与你在客户端和服务器上的实时 Web 应用程序集成，在真实用户遇到错误时进行记录。
-
-## 练习：调试 webhello.js
-
-`webhello.js` 代码有一个奇怪的 bug，会记录一个意外的 `/favicon.ico` 请求。要检查发生了什么，请启动 VS Code 并打开 `webhello.js` 文件夹。然后：
-
-1.  切换到“运行和调试”面板。
-2.  创建 `launch.json` 文件并选择 Node.js 环境。
-3.  在 `"configurations"` 数组中添加一个配置项。
-4.  修改 `"program"` 属性指向 `$(workspaceFolder)/webhello.js`。
-5.  保存 `launch.json`，从**运行和调试**面板顶部的列表中选择 `nodemon`，然后点击**绿色**运行图标。
-6.  `nodemon` 将启动你的应用程序。你可以像以前一样编辑代码并设置断点或日志点。
-7.  刷新浏览器，调试控制台会显示日志点的数值。
-8.  查看输出。
-9.  为了完成调试，点击调试工具栏上的红色图标。
-10. 尝试在左侧添加断点。
-
-![](img/df734780c88ebde9dc5bf93f50faf4c6_78_0.png)
-
-### 4-14. VS Code 调试点
-
-当刷新网页时，调试控制台会显示日志点的数值。
-
-### 如何调试 Node. 脚本
-
--   一个标准断点（standard. **breakpoint**）。
--   一个条件断点，在满足标准时停止程序——例如 `count > 3`。
--   一个日志点（logpoint）。这实际上是无需编写代码的 `console.log()`！输入任何带有大括号内求值表达式的字符串。例如：`URL: { req.url }` 会输出 `req.url` 的值。
-
-```javascript
-console.log(req.url);
-const nameArg = capitalize(req.url);
-res.statusCode = 200;
-Log Message: URL: {req.url}
-res.setHeader('Content-Type', 'text/html');
-res.end('<p>Hello ${nameArg}</p>');
-```
-
-# 总结
-
-### 
-
-在下一章中，你将开始编写更复杂的 Node.js 代码，使用 npm 和第三方模块。
 
 ## 调试术语
 
 调试有自己的套晦涩术语。我们在本章节中涵盖了大部分内容，但你可能会遇到下面的术语。
 
-## Node.js：初学者
-
 | 术语 | 解释 |
 | :--- | :--- |
 | breakpoint | 调试器停止程序运行的行，以便检查其状态。 |
-| breakpoint | 由特定条件触发的断点，例如（条件的）值达到100。也称为监视点。 |
+| conditional breakpoint | 由特定条件触发的断点，例如变量值达到 100。也称为监视点。 |
 | debugger | 提供调试功能的工具，如逐行运行代码以检查变量状态。 |
 | duplication | 已经报告过的 bug——可能以不同的方式报告。 |
 | feature | 正如所言，“这不是 bug，而是功能”。你会发现自己也这么说。 |
 | frequency | bug 发生的频率。 |
-| it doesn't | 最常见但用最小的 bug。 |
+| heisenbug | 最常见但最难捉摸的 bug。 |
 | logpoint | 在执行期间显示表达式值的调试指令。 |
 | logging | 将运行时信息输出到控制台或文件。 |
 | logic error | 程序可以运行但行为不符合预期。 |
 | priority | bug 在计划更新列表中的位置。 |
-| race | 取决于不可控事件的顺序或时机的难以追踪的 bug。 |
+| race condition | 取决于不可控事件的顺序或时机的难以追踪的 bug。 |
 | refactoring | 为了可读性和维护性而重写代码。 |
 | regression | 由于其他更新，以前修复的 bug 重新出现。 |
 | related | bug 与另一个相似或相关。 |
 | reproduce | 引起错误所需的步骤。 |
-
-
-
-
-
-| 术语 | 解释 |
-| --- | --- |
-| | “友好手册” |
-| 步入 (step into) | 在调试器中逐行执行代码时，进入被调用的函数 |
-| 步出 (step out) | 在逐行执行代码时，完成当前函数的执行并返回到调用代码 |
-| 步过 (step over) | 在逐行执行代码时，完成命令的执行而不进入被调用的函数 |
-| 严重程度 (severity) | Bug 对系统的影响。例如，数据丢失通常被认为比单像素 UI 对齐问题严重，除非发生频率非常低 |
-| 堆栈跟踪 (stack trace) | 错误发生之前调用的所有函数的历史列表 |
-| 语法错误 (syntax error) | 打印错误，例如 `console.log()` |
-| 用户错误 (user error) | 由用户而非应用程序引起的错误。取决于引起问题的人的资历，这可能仍需要更新！ |
-| 监视 (watch) | 调试执行期间输出的变量或表达式 |
+| step into | 在调试器中逐行执行代码时，进入被调用的函数。 |
+| step out | 在逐行执行代码时，完成当前函数的执行并返回到调用代码。 |
+| step over | 在逐行执行代码时，完成命令的执行而不进入被调用的函数。 |
+| severity | Bug 对系统的影响。例如，数据丢失通常被认为比单像素 UI 对齐问题严重，除非发生频率非常低。 |
+| stack trace | 错误发生之前调用的所有函数的历史列表。 |
+| syntax error | 语法错误，例如缺少括号。 |
+| user error | 由用户而非应用程序引起的错误。取决于引起问题的人的资历，这可能仍需要更新！ |
+| watch | 调试执行期间输出的变量或表达式。 |
 
 ## 练习
 
-1. 你可以通过以下方式调试 Node.js 应用：
+1.  你可以通过以下方式调试 Node.js 应用：
+    a. 使用命令行 V8 检查器
+    b. 使用 Chrome DevTools 附加到进程
+    c. 使用如 `VS Code` 等合适的编辑器
+    d. 以上所有
 
-- a. 使用命令行 V8 检查器
-- b. 使用 Chrome DevTools 附加到进程
-- c. 使用如 VS Code 等合适的编辑器
-- d. 以上所有
+2.  哪种命令适用于输出 JavaScript 对象包含的值？
+    a. `console.log('%j', obj)`
+    b. `console.table(obj)`
+    c. `console.dir(obj, { depth: null, color: true })`
+    d. 以上任一即可
 
-2. 哪种命令适用于输出 JavaScript 对象包含的值？
+3.  断点 (breakpoint) 是：
+    a. 由 `console.log()` 触发的
+    b. 执行过程中停止处理的点
+    c. 停止程序的语句，例如 `exit`
+    d. 开发者选择停止工作的时刻
 
-- a. `console.log('%j', obj)`
-- b. `console.table(obj)`
-- c. `console.dir(obj, { depth: null, color: true })`
-- d. 以上任一即可
+4.  日志点 (logpoint) 是：
+    a. 用于在执行期间显示表达式的值的值
+    b. 断点的另一种名称
+    c. 对 `console.log()` 语句的引用
+    d. 输出日志中的特定某行
 
-3. 断点 (breakpoint) 是：
-
-- a. 由 `console.log()` 触发的
-- b. 执行过程中停止处理的点
-- c. 停止程序的语句，例如 exit
-- d. 开发者选择停止工作的时刻
-
-4. 日志点 (logpoint) 是：
-
-- a. 用于在执行期间显示表达式的值的值
-- b. 断点的另一种名称
-- c. 对 `console.log()` 语句的引用
-- d. 输出日志中的特定某行
-
-5. `console.log()` :
-
-- a. 永远不应该使用
-- b. 只有在没有其他选择时才使用
-- c. 如果有助于定位 Bug 则应该使用
-- d. 对于调试来说是不实用的
+5.  `console.log()` :
+    a. 永远不应该使用
+    b. 只有在没有其他选择时才使用
+    c. 如果有助于定位 Bug 则应该使用
+    d. 对于调试来说是不实用的
 
 # 第 5 章
-开始使用 Express
+
+## 开始使用 Express
 
 在本章中，你将创建一个构建并返回简单网页的 Web 服务器应用程序。它将帮助你更熟悉以下内容：
 
-- npm (Node 软件包管理器)
+- `npm` (Node 软件包管理器)
 - ES6 模块
-- Express 框架
+- `Express` 框架
 - URL 路由
 - HTML 模板引擎
 
-## 为什么使用 Express？
+### 为什么使用 Express？
 
-你在第 3 章中创建了一个小型 Web 应用。它快速且运行良好，但复杂的 Web 应用程序需要 URL 路由、查询字符串解析、发布数据解码、HTML 模板、图像服务等功能。你可以自己编写这些，但很多工作已经在 Express 中实现了。
+你在第 3 章中创建了一个小型 Web 应用。它快速且运行良好，但复杂的 Web 应用程序需要 URL 路由、查询字符串解析、发布数据解码、HTML 模板、图像服务等功能。你可以自己编写这些，但很多工作已经在 `Express` 中实现了。
 
-Express 是一个 Node.js Web 框架，它自称为“快速、无主见且极简的”。它允许你专注于应用程序的业务逻辑，而无需过多担心 URL 路由、解析数据、设置 HTTP Header 等 Web 服务器技术。
+`Express` 是一个 Node.js Web 框架，它自称为“快速、无主见且极简的”。它允许你专注于应用程序的业务逻辑，而无需过多担心 URL 路由、解析数据、设置 HTTP Header 等 Web 服务器技术。
 
-Node.js 生态系统中存在各种 Web 框架，包括 Fastify、Koa、Hapi。这些可能更近期、维护更频繁、速度更快，并且更适合你的应用程序。然而，Express 是最早的框架之一，影响了后续的所有框架。它稳定、易用并保持流行，每周有 1800 万下载。你遇到 Express 的概率比遇到其他框架更高。
+Node.js 生态系统中存在各种 Web 框架，包括 `Fastify`、`Koa`、`Hapi`。这些可能更近期、维护更频繁、速度更快，并且更适合你的应用程序。然而，`Express` 是最早的框架之一，影响了后续的所有框架。它稳定、易用并保持流行，每周有 1800 万下载。你遇到 `Express` 的概率比遇到其他框架更高。
 
-> Express 版本
-> 在编写时，Express 4 是活跃的推荐版本，Express 5 处于 alpha 阶段。所有示例在两个版本中都可以运行，但如果你遇到问题请切换到版本 4。
+> **Express 版本**
+>
+> 在编写时，`Express 4` 是活跃的推荐版本，`Express 5` 处于 alpha 阶段。所有示例在两个版本中都可以运行，但如果你遇到问题请切换到版本 4。
 
-## 创建一个新的 Node.js 项目
+### 创建一个新的 Node.js 项目
 
 为你的新应用程序创建并访问项目目录。使用类似 `express` 的名称即可：
 
-```
+```bash
 mkdir express
 cd express
 ```
 
-> ### 创建一个新的 Git 仓库
+> **创建一个新的 Git 仓库**
+>
 > 对于真实项目，我建议创建一个新的 Git 仓库并相应地克隆。这比以后尝试对部分编写的项目进行 Git 化要简单得多。
 
-运行 `npm init` 初始化一个新的 Node.js 项目。npm 会提示你输入某些值，但你可以按 `Enter` 接受默认值。
+运行 `npm init` 初始化一个新的 Node.js 项目。`npm` 会提示你输入某些值，但你可以按 `Enter` 接受默认值。
 
-# Node.js：从新手到忍者
-
-```
+```bash
 craig@craigdev:~/apps$ mkdir directory
 craig@craigdev:~/apps$ cd express
 craig@craigdev:~/express$ npm init
@@ -1364,7 +1058,7 @@ it only covers the most common items, and tries to guess sensible defaults.
 See npm help init for definitive documentation on these fields
 exactly what they do.
 
-Use npm install pkg> afterwards to install a package and
+Use npm install <pkg> afterwards to install a package and
 save as a dependency in the package.json file.
 
 Press C at any time to quit.
@@ -1384,7 +1078,7 @@ About to write to /home/craig/apps/express/package.json:
   "description": "Example Express.js app",
   "main": "index.js",
   "scripts": {
-    "test": "echo \Error: no test specified && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Craig Buckler",
   "license": "MIT"
@@ -1392,6 +1086,8 @@ About to write to /home/craig/apps/express/package.json:
 Is this OK? (yes)
 craig@craigdev:~/apps/express$ |
 ```
+
+
 
 ## 初始化一个新的 Node.js 项目
 
@@ -1405,7 +1101,7 @@ craig@craigdev:~/apps/express$ |
   "type": "module",
   "main": "index.js",
   "scripts": {
-    "test": "echo \Error: no test specified && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Craig Buckler",
   "license": "MIT",
@@ -1417,7 +1113,7 @@ craig@craigdev:~/apps/express$ |
 
 ## 语义化版本
 
-大多数 Nodejs 项目使用语义化版本，格式为 MAJOR.MINOR.PATCH。当发生变化时，你增加相应的数字：
+大多数 Node.js 项目使用语义化版本，格式为 MAJOR.MINOR.PATCH。当发生变化时，你增加相应的数字：
 
 - MAJOR：适用于不兼容 API 的重大更新
 - MINOR：适用于不影响兼容的新功能
@@ -1455,10 +1151,6 @@ craig@craigdev:~/apps/express$ ls
 node_modules package-lock.json package.json
 craig@craigdev:~/apps/express$ |
 ```
-
-
-
-
 
 # 运行时依赖与开发依赖
 
@@ -1517,7 +1209,7 @@ app.listen(cfg.port, () => {
 
 # Node.js：从新手到大师
 
-3. Express 启动
+## 3. Express 启动
 
 该脚本导入了 `express` 模块并创建了一个名为 `app` 的实例。定义了一个路由函数来处理对根路径 `/` 的 HTTP 请求：
 
@@ -1528,12 +1220,12 @@ app.get('/', (req, res) => {
 });
 ```
 
-# 什么是路由？
+## 什么是路由？
 
 **路由** 决定了当接收到特定 URL（如 `/` 或 `/path`）的请求时执行哪些函数。因此，你的路由函数的顺序至关重要：如果前面的函数完成了请求，则后面的函数将不会运行。路由函数接收以下两个对象：
 
-- 一个 Express HTTP 请求对象 (req)，包含了浏览器请求的详细信息。
-- 一个 Express HTTP 响应对象 (res)，提供了用于向浏览器返回响应的方法。
+- 一个 Express HTTP 请求对象 (`req`)，包含了浏览器请求的详细信息。
+- 一个 Express HTTP 响应对象 (`res`)，提供了用于向浏览器返回响应的方法。
 
 尝试在下方添加另一个路由函数来处理对 `/hello/` 的 HTTP 请求：
 
@@ -1554,14 +1246,11 @@ app.get('/hello/', (req, res) => {
 HTTPS 需要一个安全套接层 (SSL) 证书。这些是由证书机构为特定域名颁发的，用于加密浏览器和服务器之间防篡改的数据。对于本地测试，开发者通常会创建自己的自签名证书。
 ```
 
-
-
-
 ## 定义工作目录
 
 上面使用了硬编码的 `static` 目录。对于 Express 来说没问题，但如果另一个模块需要定位同一个目录来读取或写入文件呢？
 
-我们可以在 `cfg` 配置对象中定义所有工作目录的完全限定引用。这在 CommonJS 中很容易（关于此主题的更多信息请参阅第 8 章），因为 Node 提供了一个 `__dirname` 常量，包含当前模块的完整目录路径。在 ES6 模块中情况更为复杂，因为它们是通过文件 URL 引用的。当前模块的 URL可以通过 `import.meta.url` 获取，因此可以使用标准的 Node.js 将其解析为文件路径：
+我们可以在 `cfg` 配置对象中定义所有工作目录的完全限定引用。这在 CommonJS 中很容易（关于此主题的更多信息请参阅第 8 章），因为 Node 提供了一个 `__dirname` 常量，包含当前模块的完整目录路径。在 ES6 模块中情况更为复杂，因为它们是通过文件 URL 引用的。当前模块的 URL 可以通过 `import.meta.url` 获取，因此可以使用标准的 Node.js 将其解析为文件路径：
 
 ```javascript
 import { fileURLToPath } from 'url';
@@ -1634,7 +1323,7 @@ port: 3000,
 Example app listening at http://localhost:3000
 ```
 
-###5. 我们的 Express 配置
+### 5. 我们的 Express 配置
 
 除非你 `export` 它，否则其他模块无法访问 `cfg` 对象。`app` 对象也很有用，因此在 `index.js` 的末添加以下代码：
 
@@ -1741,7 +1430,7 @@ Node.js 拥有广泛的 HTML 模板引擎，用于创建输出 HTML 页面或片
 
 <h1><%= title %></h1>
 
-%- include('partials/_footer'); %>
+<%- include('partials/_footer'); %>
 ```
 
 此模板包含部分，因此在 `views` 中创建一个 `partials` 子目录并添加 `_header.ejs` 文件：
@@ -1821,13 +1510,9 @@ render 方法传递了模板名称 'message' — .ejs 扩展名可以省略，�
 
 ![](img/df734780c88ebde9dc5bf93f50faf4c6_109_0.png)
 
-###5-6. Express EJS 渲染
+### 5-6. Express EJS 渲染
 
 结果可能没有显著差异，但它是带有 `<h1>` 标题的完整 HTML 页面。（查看源码，卢克。）
-
-
-
-
 
 # 高级路由
 
@@ -1867,7 +1552,7 @@ Express 使用 Path-to-RegExp 模块解析路径。Express Route Tester 工具�
 
 路由参数是命名的路径段，前面带有冒号 (`:`) 以标识 URL 中的变量。例如，路由 /user/:id 匹配任何以 /user/ 开头且仅有一个段的 URL 路径——例如 /user/123 或 /user/abc。
 
-捕获的值可以在 `Request params` 对象中可用，因此在上面的示例中，req.params.id` 将设置为 123 或 abc。
+捕获的值可以在 `Request params` 对象中可用，因此在上面的示例中，`req.params.id` 将设置为 123 或 abc。
 
 可以定义任意数量的 URL 参数。以下路由函数将在路径 /author/Craig-Buckler/book/Node.js 上运行：
 
@@ -1883,7 +1568,7 @@ app.get('/author/:name/:bookName', (req, res, next) => {
 });
 ```
 
-# HTTP 方法方法
+# HTTP 方法
 
 上面的示例通过定义 `app.get()` 函数处理 HTTP GET 请求。Express 支持所有其他 HTTP 方法，包括：
 
@@ -1891,7 +1576,7 @@ app.get('/author/:name/:bookName', (req, res, next) => {
 - 使用 `app.put()` 的 HTTP PUT
 - 使用 `app.delete()` 的 HTTP DELETE
 
-app.all() 处理特定路由的所有 HTTP 方法。该函数可以检查 `req.method` 属性来确定使用了哪种 HTTP 方法。
+`app.all()` 处理特定路由的所有 HTTP 方法。该函数可以检查 `req.method` 属性来确定使用了哪种 HTTP 方法。
 
 ## 创建路由处理器
 
@@ -1900,7 +1585,7 @@ app.all() 处理特定路由的所有 HTTP 方法。该函数可以检查 `req.m
 - /hello/:name 返回一个显示按名字问候的页面。例如，/hello/craig 显示 "Hello!"
 - /hello/:lang/:name 返回一个用特定语言按名字问候的页面。例如，/hello/fr/craig 切换到法语并显示 "Bonjour!"
 
-在在此之前，为通用模块创建一个 `lib` 子目录。在 `lib/locale.js` 中添加一个新文件并包含以下代码：
+在此之前，为通用模块创建一个 `lib` 子目录。在 `lib/locale.js` 中添加一个新文件并包含以下代码：
 
 ```javascript
 // international greetings
@@ -1964,7 +1649,7 @@ helloRouter.get('/:lang/:name', (req, res, next) => {
 
 这定义了一个名为 `helloRouter` 的 Express Router。
 
-这定义了一个名为 helloRouter 的 Express Router。路由器是微型应用，可以执行路由。
+路由器是微型应用，可以执行路由。
 
 第一个路由定义了参数化路径 /name。它渲染消息，标题使用了 Hello。
 
@@ -1990,6 +1675,7 @@ app.use('/hello', helloRouter);
 如有，重启 Express 应用并在浏览器中访问 http://localhost:3000/hello/craig 来查看 “Hello!”
 
 5-7. 我们的路由
+
 访问 http://localhost:3000/hello/au/craig 切换澳大利亚。
 
 ## 练习
@@ -2009,40 +1695,42 @@ app.use('/hello', helloRouter);
 # Quiz
 
 1. Express 是：
+
 - a. 类似于 Apache 或 Nginx 但可以使用 JavaScript 代码编程
 - b. 一个 Node.js 服务器端框架
 - c. 多个 Node.js 服务器框架之一
 - d. 以上所有
 
 2. Express 通常作为以下项安装在项目中：
+
 - a. 全局模块
 - b. 开发依赖
 - c. 依赖
 - d. 单静态 JavaScript 文件
 
 3. package.json 文件用于：
+
 - a. 存储 Node.js 应用程序的配置信息
 - b. 存储应用程序运行时数据
 - c. 配置 npm
 - d. 以上所有
 
 4. Express 中间件函数：
+
 - a. 是 Express 内部模块
 - b. 在 Express 应用启动时运行
 - c. 可以处理或操作 HTTP 请求和响应
 - d. 在 Express 应用关闭时运行
 
 5. 中间件函数按顺序传递以下参数：
+
 - a. next 函数、Request 对象、Response 对象
 - b. Request 对象、Response 对象、next 函数
 - c. next 函数、Response 对象、Request 对象
 - d. Response 对象、Request 对象、next 函数
 
-
-
-
-
 # 第 6 章
+
 ## 使用 Express 处理表单数据
 
 除非你正在创建一个静态网站，否则处理从 HTML 表单提交的用户数据是所有 Web 应用的核心。在本章中，你将学习 Express 如何：
@@ -2086,7 +1774,7 @@ Express 会自动解析查询字符串并在 `Request.query` 属性中返回一�
 
 `code/ch06/express-get` 中的示例代码提供了一个简单的例子。模板 `views/form.ejs` 实现了一个 HTML `<form>`。它通过将 `method` 设置为 "get" 来提交到自身。顶部的表格显示了传递到数据对象的所有名称/值键对：
 
-```
+```html
 <%- include('partials/_htmlhead'); -%>
 
 <h1><%= title %></h1>
@@ -2094,12 +1782,12 @@ Express 会自动解析查询字符串并在 `Request.query` 属性中返回一�
 <% if (data) { %>
 <p>上一次请求收到的数据:</p>
 <table>
-<% for (const name in data) { % %>
+<% for (const name in data) { %>
 <tr>
 <th><%= name %>:</th>
 <td><%= data[name] %></td>
 </tr>
-<% %}
+<% } %>
 </table>
 
 <% } %>
@@ -2119,7 +1807,7 @@ Express 会自动解析查询字符串并在 `Request.query` 属性中返回一�
 </div>
 <div>
 <label for="nodejs">like Node.js</label>
-<input type="checkbox" id="nodejs" name="nodejs" value="yes" <% if (data.nodejs) { %>checked<% %> />
+<input type="checkbox" id="nodejs" name="nodejs" value="yes" <% if (data.nodejs) { %>checked<% } %> />
 </div>
 <input type="hidden" name="date" value="<%= new Date();%>" />
 <button>submit</button>
@@ -2235,7 +1923,9 @@ app.listen(cfg.port, () => {
 输入一些数据并点击 submit。数据被提交，所有的名称/值键对都显示出来（注意日期是以隐藏输入值传递的）。上一次请求收到的数据：
 
 | | Craig |
+
 |---|---|
+
 | job | developer |
 
 like Node.js? [ ] submit
@@ -2260,8 +1950,6 @@ like Node.js? [ ] submit
 }
 ```
 
-
-
 ## 使用 Express 处理数据
 
 模板 `views/form.ejs` 定义了一个 `<form>`，其方法设置为 "post"，`entype`设置为 "multipart/form-data"。还添加了一个允许上传图片的字段：
@@ -2276,17 +1964,17 @@ like Node.js? [ ] submit
 <table>
 <% for (const name in data) { %>
 <tr>
-<th>%- name %></th>
+<th><%= name %></th>
 <td>
 <% if data[name] %>
 <% if (name === 'imageURL') { %>
-<img src="%- data[name] %>" alt="uploaded image" />
+<img src="<%= data[name] %>" alt="uploaded image" />
 <% } %>
 <% } %>
 </td>
 </tr>
 <% }% %>
-</</table>
+</table>
 ```
 
 `index.js` 入口脚本定义了 `uploads` 子目录，上传的文件将存储在此处：
@@ -2433,11 +2121,13 @@ app.listen(cfg.port, () => {
   - b. 可用 `Request.query` 属性返回的对象
   - c. 可用 `Request.querystring` 属性返回的对象
   - d. 可用 `Request.body` 属性返回的对象
+
 - 2. HTTP 请求中的 Body 数据：
   - a. Express 默认不解析
   - b. 可用 `Request.query` 属性返回的对象
   - c. 可用 `Request.querystring` 属性返回的对象
   - d. 可用 `Request.body` 属性返回的对象
+
 - 3. HTTP 请求中的文件上传：
   - a. Express 默认不解析
   - b. 需要第三方模块来处理传入的数据
@@ -2445,7 +2135,8 @@ app.listen(cfg.port, () => {
   - d. 以上所有
 
 # 第 7 章
-如何使用 npm 包管理器
+
+## 如何使用 npm 包管理器
 
 # Node.js：从新手到大师
 
@@ -2458,14 +2149,12 @@ npm 是世界最大的注册表。几乎有150万个包已发布在 registry.npm
 课程较早的章节介绍了一些 npm 概念，但接下来的部分解释了你每天使用的选项（以及一些较少使用的选项）。这些信息很重要，尽管你可以快速略过并使用本章作为参考。
 
 > npm 替代方案
+
 > npm 不是唯一的 Node.js 包管理器，你可以尝试如 Yarn 和 npm 等替代方案。然而，npm 是 Node.js 一起安装的，对于大多数开发者来说已经足够。
 
 ## 全局包与本地包
 
 默认情况下，npm 将包安装在本地项目目录，以便可以
-
-
-
 
 # 如何使用 npm 节点管理器
 
@@ -2521,7 +2210,7 @@ npm config set init-author-name="Craig Buckler"
 
 npm init 会创建一个名为 `package.json` 的配置文件。你可以从另一个项目调整它，或者根据喜好进行手动编辑。该文件包含有关你的项目及其依赖的信息。例如：
 
-```
+```json
 {
   "name": "express",
   "version": "1.0.0",
@@ -2545,8 +2234,6 @@ npm init 会创建一个名为 `package.json` 的配置文件。你可以从另�
 
 常见的 package.json 值包括：
 
-## name 描述
-
 | name | 描述 |
 | --- | --- |
 | name | 项目名称——如果你想在 npm 注册表上发布，该名称必须是唯一的（参见下方的“发布包”部分） |
@@ -2564,8 +2251,6 @@ npm init 会创建一个名为 `package.json` 的配置文件。你可以从另�
 | devDependencies | 开发期间需要的开发依赖项（参见下方的“开发依赖项”部分） |
 
 较少使用的值包括：
-
-## name 描述
 
 | name | 描述 |
 |--- | --- |
@@ -2621,10 +2306,6 @@ set NODE_ENV=production
 ```powershell
 env:NODE_ENV="production"
 ```
-
-
-
-
 
 # Node.js：从新手到大师
 
@@ -2717,14 +2398,14 @@ npm i eslint -g
 
 ## 如何使用 npm Node 包管理器
 
-- * 1.2.33 安装精确版本
-- >1.2.33 安装大于 1.2.3 的版本（允许 0）
-- >=1.2.33 安装大于或等于 1.2.33 的版本
-- <1.2.33 安装小于 1.2.33 的版本
-- <=1.2.33 安装小于或等于 1.2.33 的版本
-- ^1.2.33 安装任何与主版本（MAJOR）兼容且大于或相等的版本——例如 1.3.0 但不是 2.0.0（这是默认设置）
-- ~1.2.33 类似于 ^ 但不会超过下一个次版本（MINOR）数字——即最大为 1.3.0
-- *（或空字符串）：安装任何版本
+- `1.2.33` 安装精确版本
+- `>1.2.33` 安装大于 1.2.3 的版本（允许 0）
+- `>=1.2.33` 安装大于或等于 1.2.33 的版本
+- `<1.2.33` 安装小于 1.2.33 的版本
+- `<=1.2.33` 安装小于或等于 1.2.33 的版本
+- `^1.2.33` 安装任何与主版本（MAJOR）兼容且大于或相等的版本——例如 1.3.0 但不是 2.0.0（这是默认设置）
+- `~1.2.33` 类似于 ^ 但不会超过下一个次版本（MINOR）数字——即最大为 1.3.0
+- `*`（或空字符串）：安装任何版本
 
 版本可以组合——例如 `<2.0.0 || >=3.0.0>`，以跳过 2.x.x。
 
@@ -2793,10 +2474,6 @@ craig@cradev:~/apps/express-file$
 ```
 
 （注：此处原文中似乎存在部分字符的重复或乱码，已根据逻辑进行了翻译并过滤了无效的重复字符）
-
-
-
-
 
 ## 如何使用 npm Node 包管理器
 
@@ -2936,10 +2613,6 @@ npm install yall-scripts rimraf --save-dev
 }
 ```
 
-
-
-
-
 - 将你选择的包安装到项目中。
 - 创建一个小型命令行应用程序，接收一个字符串和一个颜色参数。以该颜色输出该字符串。
 - （可选地）将代码发布到 npm，然后将其作为全局包安装，以便你可以在从任何地方运行它。
@@ -2999,11 +2672,13 @@ npm install yall-scripts rimraf --save-dev
 - d. npm update
 
 # 第 8 章
+
 ## 使用 ES2015 和 CommonJS 模块
 
 上一章解释了如何使用 npm 在多个 JavaScript 文件（或模块）之间查找并安装包。在本章中，我们将检查模块在 Node.js 中是如何被使用的。
 
 > 先跳过？
+
 > 本章的信息很重要，因为你可能会遇到与旧版 Node.js 包有关的问题。然而，本课程引用的所有包都经过了兼容性测试，所以你可以先跳过，并在最终遇到问题时返回！
 
 模块提供了一种在一个文件中定义功能并在另一个文件中使用的方法。开发者通常会创建封装的代码库来处理相关任务。其益处包括：
@@ -3046,7 +2721,6 @@ function mult(...args) {
 function log(...msg) {
   console.log(...msg);
 }
-```
 
 module.exports = { PI, sum, mult };
 ```
@@ -3065,6 +2739,7 @@ module.exports = { PI, sum, mult };
 const { sum, mult } = require('./lib.js');
 
 console.log(sum(1,2,3,4)); // 10
+
 console.log(mult(1,2,3,4)); // 24
 ```
 
@@ -3074,7 +2749,9 @@ console.log(mult(1,2,3,4)); // 24
 const lib = require('./lib.js');
 
 console.log(lib.PI); // 3.1415926
+
 console.log(lib.sum(1,2,3,4)); // 10
+
 console.log(lib.mult(1,2,3,4)); // 24
 ```
 
@@ -3082,14 +2759,13 @@ console.log(lib.mult(1,2,3,4)); // 24
 
 ```javascript
 const { sum, mult } = require('./lib.js');
-
-console.log(sum(1,2,3,4)); // 10
-console.log(mult(1,2,3,4)); // 24
 ```
 
 
 
+console.log(`sum(1,2,3,4)`); // 10
 
+console.log(`mult(1,2,3,4)`); // 24
 
 # 使用 ES2015 和 CommonJS 模块
 
@@ -3141,7 +2817,6 @@ function waitOneSec() {
     (resolve) => setTimeout(resolve, 1000)
   );
 }
-
 await waitOneSec();
 ```
 
@@ -3194,7 +2869,7 @@ const hello = require('./two.cjs');
 console.log(hello);
 ```
 
-这是运行 `node.one.cjs` 的输出：
+这是运行 `node one.cjs` 的输出：
 
 ```
 running one
@@ -3207,8 +2882,8 @@ hello from two
 ESM 在 Node.js 中支持花费多年。采用了以下方法来解决潜在的兼容性问题：
 
 - CommonJS 是默认的（或在 `package.json` 中设置 `type="commonjs"`）。
-- 任何带有 .cjs 扩展的文件都会被解析为 CommonJS。
-- 任何带有 .mjs 扩展的文件都会被解析为 ESM。
+- 任何带有 `.cjs` 扩展的文件都会被解析为 CommonJS。
+- 任何带有 `.mjs` 扩展的文件都会被解析为 ESM。
 - 运行 `node --input-type=module index.js` 会将入口脚本解析为 ESM。
 - 在 `package.json` 中设置 `type="module"` 会将入口脚本解析为 ESM。
 
@@ -3224,7 +2899,7 @@ import lib from './lib.cjs';
 
 ## 在 CommonJS 中引入 ES2015 模块
 
-你不能在 CommonJS 文件中引入 ESM 模块。ESM 模块异步异步加载，因此它们与 CommonJS 中的同步加载和执行不兼容。
+你不能在 CommonJS 文件中引入 ESM 模块。ESM 模块异步加载，因此它们与 CommonJS 中的同步加载和执行不兼容。
 
 解决此问题的方法之一是动态 `import()` 函数，它可以按需加载模块：
 
@@ -3264,11 +2939,8 @@ import { something } from './somewhere.js';
 
 ```html
 <script type="module" src="runs-when-ESM-supported.js"></script>
-<script nomodule src="runs-when-ESM-supported.js"></script>
+<script nomodule src="runs-when-ESM-not-supported.js"></script>
 ```
-
-
-
 
 # Node.js: 从新手到大师
 
@@ -3313,7 +2985,6 @@ PHP 解释器处理 `file_put_contents()` 语句，并等待文件完全写入�
 
 ```javascript
 import { writeFile } from 'fs';
-
 console.log('saving file');
 writeFile('file.txt', 'Hello Node.js', 'utf8', err => {
   if (err) console.log('file saved');
@@ -3370,7 +3041,6 @@ console.log('processing complete');
 function wait(ms, callback) {
   setTimeout(callback, ms);
 }
-
 // 等待一秒
 wait(1000, () => {
   console.log('waited 1000ms');
@@ -3382,13 +3052,11 @@ wait(1000, () => {
 ```javascript
 function wait(ms, callback) {
   ms = parseFloat(ms);
-
   // 无效的 ms 值
   if (!ms || ms < 1 || ms > 3000) {
     const err = new Error('Invalid ms value');
     callback(err);
   }
-
   // 回调前等待
   setTimeout(callback, ms);
 }
@@ -3396,7 +3064,6 @@ function wait(ms, callback) {
 
 ```javascript
 setTimeout(callback, null, ms);
-
 // 调用 wait
 wait(500, (err, ms) => {
   if (err) console.log(err);
@@ -3411,14 +3078,12 @@ wait(500, (err, ms) => {
 ```javascript
 function wait(ms, callback) {
   ms = parseFloat(ms);
-
   // 无效的 ms 值
   if (!ms || ms < 1 || ms > 3000) {
     const err = new Error('Invalid ms value');
     callback(err);
     return;
   }
-
   // 回调前等待
   setTimeout(callback, ms);
 }
@@ -3436,14 +3101,12 @@ function wait(ms, callback) {
 ```javascript
 function wait(ms, callback) {
   ms = parseFloat(ms);
-
   // 无效的 ms 值
   if (!ms || ms < 1 || ms > 3000) {
     const err = new RangeError('Invalid ms value');
     setImmediate(callback, err);
     return;
   }
-
   // 回调前等待
   setTimeout(callback, null, ms);
 }
@@ -3460,10 +3123,8 @@ function wait(ms, callback) {
 ```javascript
 wait(100, (err) => {
   console.log('wait 1');
-
   wait(200, (err) => {
     console.log('wait 2');
-
     wait(300, (err) => {
       console.log('wait 3');
     });
@@ -3482,12 +3143,9 @@ Promise 在 ES6/2015 中引入，它们是语法糖；底层仍在使用回调�
 - resolve : 处理成功完成时运行的函数
 - reject : 发生错误时运行的函数
 
-
-
 ```javascript
 function pWait(ms) {
   ms = parseFloat(ms);
-
   return new Promise((resolve, reject) => {
     if (!ms || ms < 1 || ms > 3000) {
       reject(new RangeError('Invalid ms value'));
@@ -3500,7 +3158,7 @@ function pWait(ms) {
 
 ## util.promisify()
 
-util.promisify() 将任何以第一个参数为错误的回调函数转换为 promise。你不需要重写 `wait()`，而是可以创建一个名为 `pWait()` 的 promise 替代方案：
+`util.promisify()` 将任何以第一个参数为错误的回调函数转换为 promise。你不需要重写 `wait()`，而是可以创建一个名为 `pWait()` 的 promise 替代方案：
 
 ```javascript
 import { promisify } from 'util';
@@ -3509,28 +3167,28 @@ const pWait = promisify(wait);
 
 任何返回 promise 的对象都可以拥有：
 
-- 一个 `then()` 方法，它接收的函数接收接收上一个 `resolve()` 传递的结果
+- 一个 `then()` 方法，它接收的函数接收上一个 `resolve()` 传递的结果
 - 一个 `catch()` 方法，它接收的函数会在任何 `reject()` 返回错误时运行
 - 一个 `finally()` 方法，无论结果如何最后都会被调用
 
 ```javascript
 pWait(100)
   .then(ms => console.log(`waited ${ms}`))
-  .catch(err => console.log(`err} `))
+  .catch(err => console.log(`err`))
   .finally(() => console.log(`all done`));
 ```
 
 每个 `.then()` 函数都可以返回一个值或另一个 promise，以便顺序的异步函数调用可以链式执行。例如：
 
 ```javascript
-pwait(100)
+pWait(100)
   .then(ms => {
     console.log(`waited ${ms}`);
-    return pwait(ms + 100);
+    return pWait(ms + 100);
   })
   .then(ms => {
     console.log(`waited ${ms}`);
-    return pwait(ms + 100);
+    return pWait(ms + 100);
   })
   .then(ms => {
     console.log(`waited ${ms}`);
@@ -3563,7 +3221,6 @@ pwait(100)
 ```javascript
 // 书籍数据对象
 const bookData = { id: 123 };
-
 getBook(bookData.id)
   .then(book => {
     bookData.title = book.title;
@@ -3588,7 +3245,6 @@ getBook(bookData.id)
 ```javascript
 // 书籍数据对象
 const bookData = { id: 123 };
-
 Promise.all([
   getBook(bookData.id),
   getStock(bookData.id),
@@ -3630,14 +3286,14 @@ ES2017 引入了 `async` 和 `await` 关键字，使得能够以更简洁的方�
 一个难以阅读的 promise 链：
 
 ```javascript
-pwait(100)
+pWait(100)
   .then(ms => {
     console.log(`waited ${ms}`);
-    return pwait(ms + 100);
+    return pWait(ms + 100);
   })
   .then(ms => {
     console.log(`waited ${ms}`);
-    return pwait(ms + 100);
+    return pWait(ms + 100);
   })
   .then(ms => {
     console.log(`waited ${ms}`);
@@ -3654,10 +3310,8 @@ pwait(100)
   try {
     const p1 = await pWait(100);
     console.log(`waited ${p1} ms`);
-
     const p2 = await pWait(p1 + 100);
     console.log(`waited ${p2} ms`);
-
     const p3 = await pWait(p2 + 100);
     console.log(`waited ${p3} ms`);
   } catch (err) {
@@ -3675,10 +3329,8 @@ pwait(100)
   try {
     const p1 = await pWait(100);
     console.log(`waited ${p1} ms`);
-
     const p2 = await pWait(p1 + 100);
     console.log(`waited ${p2} ms`);
-
     const p3 = await pWait(p2 + 100);
     console.log(`waited ${p3} ms`);
   } catch (err) {
@@ -3694,22 +3346,11 @@ pwait(100)
 ```javascript
 const ms = [100, 200, 300];
 let totalWait = 0;
-
 ms.forEach(async i => {
   console.log(i);
   const w = await pWait(i);
   console.log(`waited ${w} ms`);
-});
-```
-
-
-
-
-
-# 181 Node.js: 从入门到大师
-
-```javascript
-totalWait += w;
+  totalWait += w;
 });
 console.log(`total wait time: ${totalWait}ms`);
 ```
@@ -3739,7 +3380,6 @@ total wait time: 600ms
 ```javascript
 const ms = [100, 200, 300];
 let totalWait = 0;
-
 for (let i = 0; i < ms.length; i++) {
   console.log(ms[i]);
   const w = await pWait(ms[i]);
@@ -3864,11 +3504,7 @@ Web 应用程序通常需要在页面加载和应用程序重启之间持久数�
 - 增加数据库中的计数。
 - 返回带有更新计数的图像。
 
-
-
-
-
-# Node.js：从新手到忍者
+# Node.js: 从新手到忍者
 
 ```json
 {
@@ -3879,11 +3515,11 @@ Web 应用程序通常需要在页面加载和应用程序重启之间持久数�
 }
 ```
 
-# 启动 MongoDB 
+# 启动 MongoDB
 
 要使用此基于 MongoDB 的应用程序，请进入 `pagehit-mongodb` 目录并使用 `docker-compose up` 启动 MongoDB 和 Adminer 客户端。
 
--   你自己的 MongoDB 安装：
+- 你自己的 MongoDB 安装：
 
 数据库配置参数定义在项目的 `.env` 文件中。它配置了 Docker，Node.js 应用通过 `dotenv` 模块读取这些配置。
 
@@ -3909,10 +3545,10 @@ npx small-static-server 8888 ./test
 
 你现在已经运行了四个服务：
 
--   位于 `http://localhost:27017` 的 MongoDB 数据库
--   位于 `http://localhost:8080/` 的 Adminer 数据库客户端
--   位于 `http://localhost:8001/` 的 page hit 服务
--   位于 `http://localhost:8888/` 的测试页面 Web 服务器
+- 位于 `http://localhost:27017` 的 MongoDB 数据库
+- 位于 `http://localhost:8080/` 的 Adminer 数据库客户端
+- 位于 `http://localhost:8001/` 的 page hit 服务
+- 位于 `http://localhost:8888/` 的测试页面 Web 服务器
 
 如果有冲突，可以在 `.env` 文件中定义不同的端口。
 
@@ -3920,11 +3556,11 @@ npx small-static-server 8888 ./test
 
 你可以使用 `http://localhost:8080/` 的 Adminer 面板检查数据库数据。使用 `.env` 中指定的凭据登录：
 
--   系统：MongoDB
--   服务器：host.docker.internal（如果未使用使用 Desktop，则使用你的网络 IP 地址）
--   用户名：root
--   密码：rootopoprw
--   数据库：pagehitmongo
+- 系统：MongoDB
+- 服务器：host.docker.internal（如果未使用使用 Desktop，则使用你的网络 IP 地址）
+- 用户名：root
+- 密码：rootopoprw
+- 数据库：pagehitmongo
 
 ## 10-2. Adminer 登录
 
@@ -3944,7 +3580,6 @@ npx small-static-server 8888 ./test
 import dotenv from 'dotenv';
 import { MongoClient } from 'mongodb';
 import httpReferrer from './httpreferrer.js';
-
 // 加载 .env 配置
 dotenv.config();
 ```
@@ -3958,7 +3593,6 @@ dotenv.config();
 const client = new MongoClient(`mongodb://${process.env.MONGO_INITDB_ROOT_USER}:${process.env.MONGO_INITDB_ROOT_PASSWORD}@${process.env.MONGO_INITDB_HOST}:${process.env.MONGO_INITDB_PORT}/`,
   {useNewUrl: true, useUnifiedTopology: true}
 );
-
 await client.connect();
 ```
 
@@ -3975,8 +3609,8 @@ MongoDB 允许你向集合中的文档任意添加数据，而无需预先描述
 
 索引是一个或多个字段中按特定顺序的数据列表——就像书的索引一样。例如，你可以在每人注册时创建一个 `user` 记录。当有人登录时，你必须通过其电子邮件地址定位用户的记录：
 
--   如果没有索引，数据库必须逐个搜索每个 `user` 记录，直到找到正确的电子邮件。
--   如果 `email` 字段上有按字母升序排列的索引，数据库可以更快地定位匹配的记录。
+- 如果没有索引，数据库必须逐个搜索每个 `user` 记录，直到找到正确的电子邮件。
+- 如果 `email` 字段上有按字母升序排列的索引，数据库可以更快地定位匹配的记录。
 
 索引应该使用在你经常查询的字段上。在每个字段上创建索引很有诱惑力，但添加的索引越多，写入新记录和更新所有索引的时间就越长。
 
@@ -3994,12 +3628,8 @@ await hit.createIndex({hash: 1, time: 1});
 export default async function(req) {
   // 引用 URL 的哈希
   const hash = httpReferrer(req);
-
   // 没有引用页？
 ```
-
-
-
 
 以下是 Publisher 表：
 
@@ -4030,7 +3660,7 @@ SQL 简要概述：
 
 其他流行的 SQL 数据库包括 MariaDB、PostgreSQL、SQLite、Microsoft SQL Server 和 Oracle。
 
-# 启动 MySQL 
+# 启动 MySQL
 
 要使用基于 MySQL 的应用程序，导航到 `pagehit-mysql` 并使用 `docker-compose up` 启动 MySQL 和 Adminer 客户端。
 
@@ -4086,7 +3716,7 @@ npx small-static-server 8888 ./test
 
 ![](img/df734780c88ebde9dc5bf93f50faf4c6_222_0.png)
 
-10-4. Adminer 登录
+## 10-4. Adminer 登录
 
 然后点击 hit 表旁边的 select。
 
@@ -4101,7 +3731,6 @@ npx small-static-server 8888 ./test
 ```sql
 -- MySQL 数据库初始化
 USE pagemysql;
-
 CREATE TABLE IF NOT EXISTS hits (
   id bigint unsigned NOT NULL AUTO_INCREMENT COMMENT 'record ID',
   hash binary(20) NOT NULL COMMENT 'URL hash',
@@ -4121,9 +3750,8 @@ CREATE TABLE IF NOT EXISTS hits (
 import dotenv from 'dotenv';
 import mysqlPromise from 'mysql2/promise';
 import httpReferrer from './referrer.js';
-
 // 加载 .env 配置
-dotenv.config();
+dotenv.process();
 ```
 
 选择了 mysql2 驱动用于 MySQL 通信。基于 promise 的低级方法用于构建和执行：
@@ -4143,7 +3771,7 @@ const db = mysqlPromise.createPool({
 
 sequelize 是一个流行的 Node.js ORM，支持 MySQL、MariaDB、PostgreSQL、SQLite、SQL Server 以及其他 SQL 数据库。它仍然需要原生数据库驱动程序（如 mysql），但不需要编写 SQL 语句。
 
-# 启动 Sequelize ORM 
+# 启动 Sequelize ORM
 
 要使用基于 ORM 的应用程序，请导航到 pagehit-orm 目录并使用 `docker-compose up` 启动 MySQL 和 Adminer 客户端。
 
@@ -4202,7 +3830,6 @@ Lib/pagehit.js 文件处理所有的 Sequelize 功能。它加载了所需的模
 import dotenv from 'dotenv'
 import Sequelize from 'sequelize';
 import HTTPRefer from './httpreferrer.js'
-
 // 加载 .env 配置
 dotenv.config();
 ```
@@ -4267,13 +3894,10 @@ await sequelize.sync();
 ```javascript
 // 计数处理器
 export default async function(req) {
-
   // 引用 URL 的哈希
   const hash = httpReferrer(req);
-
   // 没有引用页？
   if (!hash) return null;
-
   // 获取浏览器 IP 地址和用户代理
   const ipRe = req.ip.match(/(?:\d{1,3}\.){3}\d{1,3}/),
   ip = ipRe?.[0] || null,
@@ -4297,7 +3921,6 @@ try {
 const res = await Hit.findAndCount({
   where: { hash }
 });
-
 return res?.count;
 ```
 
@@ -4350,10 +3973,6 @@ ORM 对于原型和小型项目可能是理想的。对于数据需求更关键�
 # 总结
 
 数据库是 Web 应用程序的核心技术。如果你的数据库运行良好，无论你使用什么来编写业务逻辑并不重要。
-
-
-
-
 
 ## 使用数据库存储
 
@@ -4456,13 +4075,12 @@ WebSocket 为实时应用提供了解决方案。浏览器发起初始 WebSocket
 
 ## Web 服务器
 
-11-2. WebSocket 双向通信
+### 11-2. WebSocket 双向通信
 
 需要注意的两个点：
 
 - 浏览器只能向 WebSocket 服务器发送消息。WebSocket 服务器可以向其任何连接的客户端发送消息。
-
-一个浏览器不能直接向另一个浏览器发送消息。它只能向中央 WebSocket 服务器发送消息，并希望按需要转发。
+- 一个浏览器不能直接向另一个浏览器发送消息。它只能向中央 WebSocket 服务器发送消息，并希望按需要转发。
 
 ## WebSocket 示例聊天应用程序
 
@@ -4476,14 +4094,10 @@ WebSocket 为实时应用提供了解决方案。浏览器发起初始 WebSocket
 
 该应用程序通过启动 [missing text context] 来工作。
 
-
-
 ```javascript
 // handle WebSocket communication
 function wsInit(wsServer) {
-
   const ws = new WebSocket(wsServer);
-
   // connect to server
   ws.addEventListener('open', () => {
     sendMessage('entered the chat room');
@@ -4496,13 +4110,10 @@ function wsInit(wsServer) {
 ```javascript
 // send message
 function sendMessage(setMsg) {
-
   let
   name = dom.name.value.trim();
   msg = setMsg || dom.message.value.trim();
-
   name && msg && ws.send(JSON.stringify({ name, msg }));
-
 }
 ```
 
@@ -4511,25 +4122,20 @@ function sendMessage(setMsg) {
 ```javascript
 // receive message
 ws.addEventListener('message', e => {
-
   try {
     const
     chat = JSON.parse(e.data),
     name = document.createElement('div'),
     msg = document.createElement('div');
-
     name.className = 'name';
     name.textContent = (chat.name || 'unknown');
     dom.chat.appendChild(name);
-
     msg.className = 'msg';
     msg.textContent = (chat.msg || 'said nothing');
     dom.chat.appendChild(msg).scrollIntoView({ behavior: 'smooth' });
-
   } catch(err) {
     console.log('invalid JSON', err);
   }
-
 });
 ```
 
@@ -4606,30 +4212,19 @@ dom.form.addEventListener('submit', e => {
 
 调整聊天应用程序将消息存储在数据库中。作为额外加分，尝试不同类型的消息。
 
-
-
-
 通过。
 
 其他有用的属性和方法包括：
 
-- * process.env：返回一个包含环境变量键值对的对象——例如 process.env.NODE_ENV。
-
-- * process.cwd() 返回当前工作目录。
-
-- * process.platform 返回一个标识操作系统的字符串：'aix','darwin' (macOS),'freebsd','Linux','openbsd','sunos' 或 'win32' (Windows)。
-
-- * process.uptime() 返回 Node.js 进程运行的秒数。
-
-- * process.cpuUsage() 返回当前进程的用户和系统 CPU 使用情况——例如 { user: 12345, system: 9876 }。将该对象传回给方法可以获取相对读数。
-
-- * process.memoryUsage() 返回一个以字节为单位描述内存使用情况的对象。
-
-- * process.version 返回 Node.js 版本字符串——例如 18.0.0。
-
-- * process.report 生成诊断报告。
-
-- * process.exit(code) 退出当前应用程序。使用退出代码 0 表示成功，在必要时使用适当的错误代码。
+- `process.env`：返回一个包含环境变量键值对的对象——例如 `process.env.NODE_ENV`。
+- `process.cwd()` 返回当前工作目录。
+- `process.platform` 返回一个标识操作系统的字符串：'aix','darwin' (macOS),'freebsd','linux','openbsd','sunos' 或 'win32' (Windows)。
+- `process.uptime()` 返回 Node.js 进程运行的秒数。
+- `process.cpuUsage()` 返回当前进程的用户和系统 CPU 使用情况——例如 `{ user: 12345, system: 9876 }`。将该对象传回给方法可以获取相对读数。
+- `process.memoryUsage()` 返回一个以字节为单位描述内存使用情况的对象。
+- `process.version` 返回 Node.js 版本字符串——例如 18.0.0。
+- `process.report` 生成诊断报告。
+- `process.exit(code)` 退出当前应用程序。使用退出代码 0 表示成功，在必要时使用适当的错误代码。
 
 process 还是一个事件发射器（参见“Events”部分）：你可以将事件处理函数附加到如 'beforeExit' 等事件，以便在进程终止前进行清理。例如：
 
@@ -4648,39 +4243,29 @@ process.on('beforeExit', code => {
 
 os API 与 process 有相似之处（参见上文“Process”部分），但它还可以返回以下内容：
 
-- os.cpu()：返回一个包含每个逻辑 CPU 核心信息的对象数组。下方的“Clusters”部分引用了 os.cpu() 来派生进程（fork）。在 16 核 CPU 上，你将会有 16 个运行的 Node.js 应用程序实例来提高性能。
-
-- os.hostname()：OS 主机名。
-
-- os.version()：返回一个标识 OS 内核版本的字符串。
-
-- os.homedir()：用户主目录的完整路径。
-
-- os.tmpdir()：操作系统默认临时目录的完整路径。
-
-- os.uptime()：OS 运行的秒数。
+- `os.cpus()`：返回一个包含每个逻辑 CPU 核心信息的对象数组。下方的“Clusters”部分引用了 `os.cpus()` 来派生进程（fork）。在 16 核 CPU 上，你将会有 16 个运行的 Node.js 应用程序实例来提高性能。
+- `os.hostname()`：OS 主机名。
+- `os.version()`：返回一个标识 OS 内核版本的字符串。
+- `os.homedir()`：用户主目录的完整路径。
+- `os.tmpdir()`：操作系统默认临时目录的完整路径。
+- `os.uptime()`：OS 运行的秒数。
 
 ## Util
 
-util 模块提供了各种实用的 JavaScript 方法。最实用的之一是 util.promisify(function)，它接收一个错误优先回调风格函数并返回一个基于 promise 的函数。（演示参见第 9 章中的代码。）
+util 模块提供了各种实用的 JavaScript 方法。最实用的之一是 `util.promisify(function)`，它接收一个错误优先回调风格函数并返回一个基于 promise 的函数。（演示参见第 9 章中的代码。）
 
 更多方法包括：
 
-- util.callbackify(function)：接收一个返回 promise 的函数，并返回一个基于回调的函数。
+- `util.callbackify(function)`：接收一个返回 promise 的函数，并返回一个基于回调的函数。
+- `util.isDeepStrictEqual(object1, object2)`：当两个对象之间存在深度相等时返回 true（所有子属性必须匹配）。
+- `util.format(format, [args])`：返回一个使用类似 printf 格式输出的字符串。
+- `util.inspect(object, options)`：返回一个用于调试的对象的字符串表示。这类似于使用 `console.dir(object, { depth: null, color: true });`。
+- `util.stripVTControlCharacters(str)`：从字符串中移除 ANSI 码。
 
-- util.isDeepStrictEqual(object1, object2)：当两个对象之间存在深度相等时返回 true（所有子属性必须匹配）。
-
-- util.format(format, [args])：返回一个使用类似 printf 格式输出的字符串。
-
-- util.inspect(object, options)：返回一个用于调试的对象的字符串表示。这类似于使用 console.dir(object, { depth: null, color: true });。
-
-- util.stripVTControlCharacters(str)：从字符串中移除 ANSI 码。
-
-util.types 提供了对常见 JavaScript 和 Node.js 值的检查。例如：
+`util.types` 提供了对常见 JavaScript 和 Node.js 值的检查。例如：
 
 ```javascript
 import util from 'util';
-
 util.types.isDate(new Date()); // true
 util.types.isMap(new Map()); // true
 util.types.isRegExp(/abc/); // true
@@ -4729,15 +4314,12 @@ console.log(myURL.href);
 myURL.searchParams.delete('abc');
 myURL.searchParams.append('xyz', '987');
 console.log(myURL.search);
-// ?xy=987
+// ?xyz=987
 ```
-
-
-
 
 ## 有用的 Node.js API 244
 
-```
+```bash
 node filecompress.js ./test/example.html ./test/output.html
 craig@craig:~/apps/filecompress$ node filecompress.js ./test/example.html ./test/output.html
 processing /home/craig/apps/filecompress/test/example.html
@@ -4758,12 +4340,10 @@ craig@craig:~/apps/filecompress$ |
 ```javascript
 // 示例伪代码
 async function userRegister(name, email, password) {
-
   try {
     await dbAddUser(name, email, password);
     await new UserSession(email);
     await emailRegister(name, email);
-
   } catch (e) {
     // 处理错误
   }
@@ -4778,14 +4358,13 @@ try {
   await dbAddUser(name, email, password);
   await new UserSession(email);
   await emailRegister(name, email);
-
   await cmRegister(name, email); // 在客户系统中注册
   await cmSales(name, email); // 通知销售团队
 ```
 
 你可能在这个不断增长的单个代码块中管理几十次调用。
 
-Node.js 事件 API 了一种了一种使用发布-订阅模式（publish–subscribe pattern）组织代码的替代方案。`userRegister()` 函数可以在创建数据库记录后触发一个事件——可能命名为 `newer`。
+Node.js 事件 API 提供了一种使用发布-订阅模式（publish–subscribe pattern）组织代码的替代方案。`userRegister()` 函数可以在创建数据库记录后触发一个事件——可能命名为 `newer`。
 
 任意数量的事件处理器函数都可以订阅并响应 `newer` 事件；无需更改 `userRegister()` 函数。每个处理器都独立于其他处理器运行，因此它们可以任何顺序执行。
 
@@ -4795,1125 +4374,50 @@ Node.js 事件 API 了一种了一种使用发布-订阅模式（publish–subsc
 
 ```javascript
 // 客户端 JS 点击处理器
-document.getElementById('myelement').addEventListener('click', e => {
-
-  // 输出关于事件的信息
-  console.dir(e);
-
-});
-```
-
-在某些情况下，你正在为用户或浏览器事件挂载处理器，尽管你也可以触发自己的自定义事件。Node.js 中的事件处理在概念上是类似的，但 API 是不同的。
-
-## 有用的 Node.js API
-
-触发事件的对象必须是 Node.js `EventEmitter` 类的实例。它们有一个 `emit()` 方法用于触发新事件，以及一个 `on()` 方法用于附加处理器。
-
-事件示例项目提供了一个在预定义间隔上触发 `tick` 事件的类。`./lib/ticker.js` 模块导出一个扩展了 `EventEmitter` 的默认类：
-
-```javascript
-// 每隔发射一次 'tick' 事件
-import EventEmitter from 'events';
-import { setInterval, clearInterval } from 'timers';
-
-export default class extends EventEmitter {
-```
-
-它的 `constructor` 必须调用父类构造函数。然后将 `delay` 参数传递给 `start()` 方法：
-
-```javascript
-constructor(delay) {
-  super();
-  this.start(delay);
-}
-```
-
-`start()` 方法检查延迟是否有效，如果有必要则重置当前计时器并设置新的 `delay` 属性：
-
-```javascript
-start(delay) {
-  if (!delay || delay == this.delay) return;
-
-  if (this.interval) {
-    clearInterval(this.interval);
-  }
-
-  this.delay = delay;
-}
-```
-
-它启动一个新的间隔计时器，运行带有事件名 `tick` 的 `emit()` 方法。此事件的订阅者将接收一个包含延迟值和 Node.js 启动以来秒数的对象：
-
-## Node.js: 从新手到忍者
-
-```javascript
-// 计时器
-this.interval = setInterval(() => {
-
-  // 触发事件
-  this.emit('tick', {
-    delay: this.delay,
-    time: performance.now()
-  });
-
-}, this.delay);
-```
-
-主入口脚本 `event.js` 导入该模块并设置了一秒（1000 毫秒）的延迟周期：
-
-```javascript
-// 创建计时器
-import Ticker from './lib/ticker.js';
-
-// 每秒触发一次新事件
-const ticker = new Ticker(1000);
-```
-
-它挂载了每次发生 `tick` 事件时都会触发的处理器：
-
-```javascript
-// 添加处理器
-ticker.on('tick', e => {
-  console.log('handler 1 tick!', e);
-});
-
-// 添加处理器
-ticker.on('tick', e => {
-  console.log('handler 2 tick!', e);
-});
-```
-
-第三个处理器仅使用 `once()` 方法在第一次 `tick` 事件时触发：
-
-```javascript
-// 添加处理器
-ticker.once('tick', e => {
-  console.log('handler 3 tick!', e);
-});
-```
-
-最后，当前的监听器数量是：
-
-```javascript
-// 显示监听器数量
-console.log(`listeners: ${ticker.listenerCount('tick')}`);
-```
-
-*(注：由于原文后部分存在大量重复的段落，译文已根据要求提取核心逻辑并去除了重复内容)*
-
-
-
-```javascript
-console.log('loaded');
-</script>
-```
-
-两个数据块可能会顺序到达：
-
-```javascript
-<script type="module">
-// example
-```
-
-以及：
-
-```javascript
-script
-console.log('loaded');
-</script>
-```
-
-独立处理每个数据块将导致以下无效的压缩后脚本：
-
-```
-<script type="module">script console.log('loaded');</script>
-```
-
-解决方案是预解析每个数据块，并将其拆分为可以处理的完整部分。在某些情况下，数据块（或数据块的一部分）会被添加到下一个数据块的开头。
-
-压缩是应用于整行的，尽管存在一个额外的复杂情况，因为 `<!-- -->` 和 `/* */` 注释可能会跨行。对于每个传入的数据块，都有一个可能的算法：
-
-- 将从上一个数据块保存的所有数据添加到新数据块的开头。
-- 从数据块中移除任何完整的 `<!-- -->` 和 `/* ... */` 部分。
-- 将剩余数据块分为两部分，其中 part2 从找到的 `<!--` 或 `/*` 符号开始。如果存在任何一个，则从 part2 中移除该符号之外的后续内容。
-
-如果两个都没有找到，则在最后一个回车符处拆分。如果未找到，则将 `part1` 设置为空字符串并将 `part2` 设置为整个数据块。
-
-如果 `part2` 变得非常大——可能超过 100,000 个字符，因为没有回车符——则将 part2 追加到 part1，并将 `part2` 设置为空字符串。这将确保保存的部分不会无限增长。
-
-- 4. 压缩并输出 `part1`。
-- 5. 保存 `part2`（它会被添加到下一个数据块的开头）。
-
-该过程会对每个传入的数据块再次运行。
-
-这就是你的下一个代码挑战——如果你*愿意接受的话*！
-
-## 253 Node.js: 菜级忍者
-
-第 9 章讨论了 Node.js 应用如何在单线程上运行。假设用户可以在你的 Express 应用中触发一个复杂的、耗时十秒的 JavaScript 计算。该计算将成为瓶颈，停止所有用户的处理。在计算完成之前，你的应用程序无法处理任何请求或运行其他函数。
-
-> 异步计算
-> 处理来自文件或数据库数据的复杂计算可能问题较小，因为每个阶段在等待数据到达时都是异步运行的。处理发生在事件循环的单独迭代中。
-
-然而，仅用 JavaScript 编写的长时间运行计算——例如图像处理或机器学习算法——将占用事件循环的当前迭代。
-
-一种解决方案是工作线程（worker threads）。它们类似于浏览器的 Web Workers，会在单独的线程上启动 JavaScript 进程。主线程和工作线程可以通过交换消息来触发或终止处理。
-
-## 工作线程与事件循环
-
-工作线程对于 CPU 密集型 JavaScript 操作非常有用，尽管仍应使用主 Node.js 事件循环处理异步 I/O 活动。
-
-示例代码包含一个工作项目，它在 `Lib/dice.js` 中导出一个 `diceRun()` 函数。该函数会多次投掷任意数量的面 面骰子，并记录总分的计数（这应该产生正态分布曲线）：
-
-```javascript
-// 投掷骰子
-export function diceRun(runs = 1, dice = 2, sides = 6) {
-
-  const stat = [];
-
-  while (runs > 0) {
-
-    let sum = 0;
-    for (let d = dice; d > 0; d--) {
-      sum += Math.floor(Math.random() * sides) + 1;
-    }
-
-    stat[sum] = (stat[sum] || 0) + 1;
-
-    runs--;
-  }
-
-  return stat;
-}
-```
-
-`index.js` 中的代码启动了一个每秒运行一次并输出消息的进程：
-
-```javascript
-// 每秒运行进程
-const timer = setInterval(() => {
-  console.log(' another process');
-}, 1000);
-```
-
-然后通过标准调用 `diceRun()` 函数投掷十十亿次两个骰子：
-
-```javascript
-import { diceRun } from './lib/dice.js';
-
-// 投掷 2 个骰子 10 亿次
-const numberOfDice = 2,
-runs = 999_999_999;
-
-const stati1 = diceRun(runs, numberOfDice);
-```
-
-这会停止计时器，因为在计算完成之前，Node.js 事件循环无法继续下一次迭代。
-
-代码随后在新的 `Worker` 中尝试相同的计算。这加载了名为 `worker.js` 的脚本，并在选项对象的 `workerData` 属性中传递了计算参数：
-
-```javascript
-import { Worker } from 'worker_threads';
-
-const worker = new Worker('./worker.js', { workerData: { runs, numberOfDice } });
-```
-
-在运行 `worker.js` 脚本的 `worker` 对象上绑定了事件处理程序，以便它可以接收传入的结果：
-
-```javascript
-// 返回的结果
-worker.on('message', result => {
-  console.table(result);
-});
-```
-
-并处理错误：
-
-```javascript
-// worker 错误
-worker.on('error', e => {
-  console.log(e);
-});
-```
-
-...并在处理完成后清理：
-
-```javascript
-// worker 完成
-worker.on('exit', code => {
-
-  // 清理
-});
-```
-
-`worker.js` 脚本启动 `diceRun()` 计算并向父线程发送消息，以便上面的 `message` 处理程序可以接收结果：
-
-```javascript
-// 工作线程
-import { workerData, parentPort } from 'worker_threads';
-import { diceRun } from './lib/dice.js';
-
-// 计算
-const stat = diceRun(runs, numberOfDice);
-
-// 向父线程发送消息
-parentPort.postMessage(stat);
-```
-
-（注：由于提供的文本包含大量重复段落，译文已针对核心内容进行整合，以保持翻译的一致性与准确性。）
-
-
-
-鼓励你浏览文档并亲身发现。文档通常编写得很好并包含简单的示例，但在某些地方可能比较简练。必要时，可以在 SitePoint 上搜索更详尽的教程。
-
-下一章将基于你的 Node.js 知识，开发一个实时的多人测验应用。
-
-# 测验 (Quiz)
-
-- 1. `process` 对象提供：
-  a. 启动新线程的方法
-  b. 关于你的应用程序和环境的信息
-  c. 管理应用程序执行的工具
-  d. 以上所有
-
-- 2. 文件系统 API 的名称为：
-  a. filesystem 
-  b. file-system
-  c. fsysystem
-  d. fs
-
-- 3. 发射事件的对象：
-  a. 是 `EventEmitter` 类的实例
-  b. 运行 `emit()` 方法
-  c. 提供 `on()` 事件处理器
-  d. 以上所有
-
-- 4. Node.js 流（stream）提供：
-  a. 对更小、更易于管理的块数据进行数据处理
-  b. 自定义事件管理
-  c. 处理线程管理
-  d. 异步函数管理
-
-5. 工作线程（Worker threads）最适合运行：
-  a. 异步 I/O 活动
-  b. CPU 密集型 JavaScript 操作
-  c. 非 Node.js 应用程序
-  d. 子进程
-
-# 第 13 章
-### 示例实时多人测验：概述
-
-本章演示了一个用 Node.js 编写的实时多人测验应用。该应用比之前章节中显示的简单、自包含的示例更进一步。它具有更复杂的架构，但没有使用任何你之前没过的模块或技术。我建议你按照自己的节奏阅读解释，并在编辑器中查看代码，以便跟踪正在发生的情况。
-
-游戏允许任何玩家使用自己的配置选项启动新的测验——例如问题数量、评分标准、时间限制等。任何数量的其他玩家可以使用唯一代码加入该测验。
-
-可以同时运行任意数量的测验游戏。玩家可能连接到不同的 HTTP 和 WebSocket 服务器，这些服务器在事件发生时必须保持同步。
-
-本章描述了如何运行和玩游戏。接下来的章节将涵盖这些主题：
-
-字体 应用程序的架构（第 14 章）
-- Express 代码（第 15 章）
-- WebSocket 代码（第 16 章）
-
-## 源代码
-
-源代码位于 `code/ch13/nodequiz/` 目录下，尽管你可能发现使用以下 Git 命令从 `github.com/craigbuckler/nodequiz` 拉取仓库更具实用：
-
-```
-git clone https://github.com/craigbuckler/nodequiz
-```
-
-# 测验快速上手
-
-应用使用 Docker 和 Docker Compose 来下载并运行 Node.js 和数据库服务器。
-
-## 什么是 Docker？
-
-Docker 提供了一种快速安装、配置和运行数据库等应用程序的方法。每个应用程序都在一个名为容器的隔离环境中启动。它的行为有点像 Linux 虚拟机，但它是轻量级的，不需要持续维护。
-
-Docker Compose 可以通过单个命令运行任意数量的容器化应用程序。这使其成为管理 Web 应用程序依赖的理想选择，而且在所有平台上的行为完全相同——无论你使用的是 Windows、macOS 还是 Linux。类似的环境也可以部署到生产服务器。
-
-如果你想了解更多，SitePoint 提供《Web 开发者的 Docker》书籍和视频课程。
-
-一旦安装了 Docker，导航到项目根目录（nodequiz）并使用 `docker-compose up` 在开发模式下启动应用。
-
-所有软件依赖都会下载并初始化，因此首次运行可能需要几分钟。终端会显示数据库和服务器活动的日志。
-
-启动后，在浏览器中访问 http://quiz.localhost/ 即可测验。
-
-## 13-1. 启动测验应用
-
-在开始测验之前，你必须导入一些问题，因此点击 **Import questions...**（导入问题...）从 **Open Trivia Database** 获取选取——这是一个免费、用户贡献的趣味问答数据库。随后你会被提示 **JOIN**（加入）一个现有的游戏。
-
-## 示例实时多人测验：概述
-
-13-2. 加入测验
-
-或者你可以 START（开始）一个新游戏。
-
-## 13-3. 启动测验
-
-可以同时运行任意数量具有不同配置的游戏，根据时间限制以及你是猜测还是拒绝回答问题，会导致不同的策略。
-
-游戏一旦启动，将被分配一个唯一代码——例如如下所示的 **a23**。其他人可以在 **JOIN** 屏幕上输入代码并进入大厅来加入此游戏。
-
-## 示例实时多人测验：概述
-
-13-4. 加入测验
-
-任何玩家都可以开始游戏，游戏将进入第一个问题。在第一个人回答后，倒计时器开始运行，因此其他人必须在规定时间内做出响应。
-
-# Node.js：从新手到忍者
-
-13-5. 回答问题
-
-分数在问题之间以及游戏结束时显示。计时器指示下一个问题即将到来。
-
-## 示例实时多人测验：概述
-
-13-6. 查看测验分数
-
-要关闭测验，在另一个终端中导航到项目根目录（`nodequiz`）并运行 ` docker-compose down ` 。
-
-[查看演示视频](#) 以查看游戏运行情况。
-
-# 总结
-
-该测验使用 Node.js 开发，使用了几个第三方模块、原生 ES6 和少于 60KB 的代码。它具有可扩展性：随着流量的增加，你可以添加更多的 Node.js HTTP 和 WebSocket 服务器。这带来了一些相当大的软件工程挑战，我们将在下一章中讨论。
-
-# 第 14 章
-### 示例实时多人测验：架构
-
-本章描述了测验应用的架构和依赖关系。它确实变得复杂了，如果你关注 Node.js 部分（第 15 章）和 WebSocket 代码（第 16 章），可以跳过本章。尽管如此，这些章节中的技术决策是基于架构的，所以了解基础是重要的。
-
-## 为什么使用多个服务器开发？
-
-你可以在单个服务器上开发并运行启动 HTTP 和 WebSocket 服务器的 Node.js 应用。这会让开发变得更容易，并且支持几十个并发用户。然而，随着流量增长，会出现问题：
-
-- Node.js 应用运行在单个 CPU 核心上。
-
-使用多核 CPU 的收益极小：Node.js 将使用一个。你可以使用集群（参见第 12 章），但这需要大量的编码工作，而且你仍然受限于物理 CPU 的数量。
-
-- 你无法启动多个实例。
-
-像 PM2 这样的进程管理器可以在不同的域名和/或 HTTP 上启动多个隔离实例。想要加入同一个测验的玩家必须确保他们连接到同一个实例。
-
-因此，测验使用了多服务器架构，运行至少七个独立的应用程序。新的 Node.js 实例可以在同一台服务器甚至不同的服务器上启动，并开始处理传入流量。服务器故障并重启不会导致明显的停机。
-
-开发此应用的唯一可靠方法是从开始就使用适当的架构。
-
-# Node.js：从新手到忍者
-
-14-1. 测验应用架构
-
-本章节及后续部分描述了设置。
-
-## 1. 一个 PostgreSQL 数据库服务器
-
-单个 PostgreSQL 数据库服务器实现了一个带有以下数据表的测验数据库：
-
-- **question**: 问题
-- **answer**: 带有正确/错误标记的答案
-- **game**: 游戏实例和配置
-- **player**: 连接到每个游戏的玩家
-- **pubsub**: 当特定事件发生向所有 WebSocket 服务器共享的数据
-
-
-
-
-
-# 示例实时多人问验：架构
-
-## 14-2. 数据库模式
-
-数据库通过在模式中定义的约束来保证数据完整性。例如：
-
-- 无法添加两个具有相同 `text` 的问题
-- 修改问题的 `id` 会自动更新关联的 `answer` 记录中的 `question_id`
-- 删除游戏记录会自动删除与该游戏相关的 `player` 和 `pubsub` 记录
-
-项目选择 PostgreSQL 是因为其提供了发布-订阅（或简称 pub-sub）服务。当应用程序更改数据库数据（发布）时，可以触发事件，而而这些事件可以通知所有订阅者。这意味着我们不需要将专门的 pub-sub 解决方案作为另一个依赖。
-
-# 275 Node.js：从新手到大师
-
-项目根目录下的 .env 文件配置了数据库连接凭据。在启动 PostgreSQL 后，/db/001-quiz.sql 文件将创建表结构。
-
-请注意，Express 和 WebSocket 应用程序对于所有数据库活动都使用在 libshared/quizdb.js 中定义的 Node.js 模块。
-
-## 2. 两个 Express HTTP Web 服务器
-
-Express 应用程序处理：
-
-- 从 Open Trivia Database 导入问题
-- 允许玩家使用特定的默认值开始新游戏
-- 允许其他玩家加入游戏
-
-它提供所有的客户端 HTML、CSS 和 JavaScript 文件。最终，同一游戏中的所有用户都会将到达 URL /game/<gameCode>/<playerName>，其中：
-
-- <gameCode> 是特定问答游戏的唯一代码
-- <playerName> 是玩家名称
-
-在此时，每个用户都连接到一个 WebSocket 服务器，由该服务器控制后续的交互——例如开始和回答问题。
-
-系统启动了两个隔离的 Web 服务器实例。这提供了更高的性能和冗余性：如果一个 Web 服务器失败，另一个将保持活动状态，同时第一个将重启。来自任何用户的传入 HTTP 请求都可以由任一服务器处理。
-
-代码定义在 web 目录中。.env 配置文件和 Libshared 目录还提供了所有组件共享的代码。
-
-## 3. 三个 WebSocket 服务器
-
-WebSocket 服务器使用 ws 库来处理：
-
-- 玩家加入游戏时的初始连接
-- 为所有连接的玩家启动游戏
-- 向所有玩家发送问题和答案
-- 响应玩家选择并记录分数
-- 用户离开或游戏完成时断开连接
-
-系统启动了三个隔离的 WebSocket 服务器实例。这提供了更高的性能和某些冗余。如果某个服务器失败，连接到不同服务器的玩家游戏应该继续进行。
-
-当玩家连接时，他们在整个会话期间将保持连接到同一个 WebSocket 服务器。然而，同一个问答游戏中的两个玩家可能会连接到不同的 WebSocket 服务器！
-
-游戏使用 PostgreSQL 中的 pub–sub 功能来保持同步：
-
-1. 当一个 WebSocket 服务器上发生事件时（例如用户回答问题），该服务器会在 pubsub 表中插入一条新记录。
-
-2. PostgreSQL 激活触发器，该触发器会将包含新数据的事件发送到运行同一特定游戏实例的所有 WebSocket 服务器（订阅者）。
-
-3. 每个 WebSocket 服务器（包括最初接收请求的服务器）都会运行一个处理器，对传入的事件数据进行操作。
-
-代码定义在 ws 目录中。.env 配置文件和 Libshared 目录还提供了所有组件共享的代码。
-
-## 4. Traefik 负载均衡器
-
-Traefik 是一个反向代理和负载均衡器，它将所有传入的 HTTP WebSocket 请求重定向到适当（最空闲的）服务器。
-
-当应用程序运行时，可以通过 http://localhost:8080 访问并监控 Traefik 仪表板。
-
-## 5. Adminer 数据库客户端
-
-（可选的）Adminer 数据库客户端以开发模式启动，以便你可以检查 PostgreSQL 表数据。使用以下凭据访问 http://adminer.localhost/：
-
-- **System**: PostgreSQL
-- **Server**: dbserver (或 host.docker.internal) 或你 PC 的 IP 地址
-- **Username**: quizuser
-- **Password**: quizpass
-- **Database**: quiz
-
-如果你倾向于使用你偏好的客户端应用程序访问数据库，请在 Server  处输入 localhost。包括 Beekeeper Studio、DBeaver 和 Postbird 在内的流行选项应该兼容。
-
-## Docker 开发环境
-
-在单个服务器上安装、配置和启动所有七个应用程序（加上 Adminer 是八个）将不会留下开发时间！幸运的是，整个环境可以使用 Docker 管理，因为它可以在几秒内启动，并且仍然支持使用 nodemon 重启 Node.js。
-
-由于此原因，Docker 是你需要安装的软件依赖。即使是 Node.js 环境也由 Docker 管理。
-
-完整的 Docker 教程超出了本书的范围，但 web 和 ws 目录有 Dockerfile 配置（web.Dockerfile 和 ws.Dockerfile），它们告诉 Docker 如何从轻量级的 Node.js 16 Alpine Linux 构建并运行 Express 和 WebSocket 应用程序。
-
-两者都会创建一个 Docker 镜像。你可以将其视为包含运行应用程序所需的文件、库和可执行文件的磁盘镜像。
-
-你可以启动任意数量的 Docker 镜像实例。运行实例被称为容器。将其想象为一个运行单个可执行程序（如数据库或 Node.js 应用）的隔离 Linux 虚拟机。
-
-启动容器需要单个 docker run 命令。幸运的是，Docker Compose 可以使用 docker-compose.yml 中定义的开发环境配置管理并运行所有容器。它执行了以下操作：
-
-- 声明所有容器、副本和重启策略。
-- 定义 .env 文件中的环境变量。
-- 挂载磁盘存储卷，这样不需要每次启动都重新初始化数据库。它还挂载了 web 和 ws 项目中的 Libshared 模块目录。
-- 覆盖某些 Dockerfile 设置以使用 nodemon 并启动 Node.js 调试服务器。
-- 将所有容器连接到同一个内部 Docker 网络。
-- 配置 Traefik 负载均衡器。
-
-从项目根目录以开发模式启动整个环境：
-
-```bash
-docker-compose up
-```
-
-终端显示实时活动日志和任何错误。每当 JavaScript 文件发生更改时，`nodemon` 就会重启 `web` 和 `ws` 应用程序。
-
-要优雅地关闭所有应用程序，请在根目录的另一个终端运行以下命令：
-
-```bash
-docker-compose down
-```
-
-## Docker 生产环境
-
-`docker-compose-production.yml` 定义了生产级设置，以便问答程序可以在服务器上运行。配置来说，因为不需要覆盖 Dockerfile 设置或启动 Adminer。
-
-使用以下命令以生产模式启动应用程序：
-
-```bash
-docker-compose -f ./docker-compose-production.yml up
-```
-
-> Docker Compose 适用于生产环境吗？
-
-> 可能不。在容器中运行 PostgreSQL 并不高效，而且有更好的选项如 Docker Swarm 和 Kubernetes 来跨多个服务器管理容器。但这超出了本书范围！
-
-# 总结
-
-设置开发环境是复杂的，但你最初的决定会影响项目的长期成功。我们现在处于可以创建（大部分）无状态应用程序的良好位置，从下一章开始。
-
-# 第 15 章
-示例实时多人问验：Express 代码
-
-# 281 Node.js：从新手到大师
-
-问答应用程序的 Express 部分：
-
-- 从 Open Trivia Database 导入问题
-- 允许玩家使用特定的默认值开始新游戏
-- 允许其他玩家加入游戏
-
-它提供所有的客户端 HTML、CSS 和 JavaScript 文件。最终，同一游戏中的用户都会将到达 URL /game/<gameCode>/<playerName>，其中 WebSocket 服务器（见第 16 章）接管并控制游戏。
-
-Docker 启动了两个隔离的 HTTP 服务器，单个请求可以定向到 Traefik 负载均衡器。同一页面的两个请求（例如 CSS 和 JavaScript 文件）可能由不同的服务器交付。这种情况很少发生，因为 Web 默认是无状态的：应用程序避免在一个服务器上存储另一个服务器无法的状态。
-
-在深入 Express 代码之前，我们将查看数据库代码。
-
-## 数据库库
-
-PostgreSQL 数据库连接由 Node.js pg 库处理（参见文档）。它被加载在 Libshared/quiz.js 模块中，该模块提供了一系列用于在问答数据库中记录的函数。两个 Web 服务器都使用该模块。
-
-代码最初导入 pg 库并定义了整数类型解析器。默认情况下，pg 返回所有记录字段为字符串，因此解析器可以将其转换为正确的类型：
-
-```
-import pg from 'pg';
-
-// 数据类型解析器
-pg.types.setType(pg.types.builtins.INT2, v => parseInt(v, 10));
 ```
 
 
 
-
-
-# 实时多人问答示例：Express 代码
-
-```javascript
-pg.types.setTypeParser(pg.types.builtins.INT4, v => parseInt(v, 10));
-p.types.setTypeParser(pg.types.builtins.INT8, v => parseFloat(v));
-```
-
-代码随后使用环境变量默认值定义了一个连接池：
-
-```javascript
-const pool = new pg.Pool({
-  host: process.env.POSTGRES_SERVER,
-  port: process.env.POSTGRES_PORT,
-  database: process.env.POSTGRES_DB,
-  user: process.env.POSTGRES_QUIUSER,
-  password: process.env.POSTGRES_QUIZPASS
-});
-```
-
-连接池提供了一个可重用的数据库连接客户端集合，你可以从中提取、使用、释放并重用。这具有许多优点，包括：
-
-- 重用客户端时没有握手延迟。
-- 每个客户端都是到数据库的独立连接。与单个连接不同，它们可以同时发送请求。
-
-这是一个基础参数化 SQL 查询示例，它使用一个池连接返回 `question` 表中 id 在 1 到 10 之间的所有记录：
-
-```javascript
-// DB 连接
-const client = await pool.connect();
-
-try {
-  // 获取 id 在 1 到 10 之间的所有问题
-  const result = await client.query(
-    'SELECT * FROM question WHERE id >= $1 AND id <= $2',
-    [1, 10]
-  );
-} catch (err) {
-  console.log(err);
-} finally {
-```
-
-# 283 Node.js：新手到忍者
-
-```javascript
-// 释放客户端
-client.release();
-}
-```
-
-SQL SELECT 字符串引用了 $1 和 $2，它们会被替换为数组第一个和第二个元素中的值。查询执行成功时会返回一个行对象数组。
-
-创建单独的 SQL 命令可能非常麻烦，而且很容易遗漏或弄错数组参数。Libshared/quizdb.js 模块拥有私有的函数 `dbSelect()`、`dbInsert()`、`dbUpdate()` 和 `dbDelete()` 函数，这使得开发变得更容易。例如，在为特定游戏添加新玩家记录时，使用了公共的 `playerCreate()` 函数：
-
-```javascript
-// 创建新玩家
-export async function playerCreate(game_id, name) {
-  return await dbInsert({ table: 'player', values: { game_id, name }, return: 'id' });
-}
-```
-
-这会调用私有的 `dbInsert()` 函数，传入表名、一个包含键值对的值对象以及用于获取插入记录 id 的返回字段。`dbInsert()` 函数返回添加的 id，在发生错误时返回 false：
-
-```javascript
-// 数据库 INSERT
-// 传入对象：{ table: <<table>>, values: { n1: v1... }, return: <field> }
-async function dbInsert(ins) {
-  const ret = ins.return ? ` RETURNING ${ins.return}` : '',
-  key = Object.keys(ins.values),
-  sym = key.map((v,i) => `$${i + 1}`),
-```
-
-# 实时多人问答示例：Express 代码
-
-```javascript
-sql = `INSERT INTO ${ins.table} (${key.join()}) VALUES(${sym.join()});${ret};`;
-client = ins.client || await pool.connect();
-
-let success = false;
-
-try {
-  // 执行插入
-  const i = await client.query(sql, Object.values(ins.values));
-
-  // 成功了吗？
-  success = i.rowCount === 1;
-
-  // 返回值？
-  if (success && ins.return) {
-    success = i.rows[0][ins.return];
-  }
-
-} catch(err) {
-} finally {
-  if (!ins.client) client.release();
-}
-
-  return success;
-}
-```
-
-顶部的 `const` 变量负责创建 SQL 字符串：
-
-```sql
-INSERT INTO player (game_id, name) VALUES ($1, $2) RETURNING id;
-```
-
-这里有四点需要：
-
-- `key` 定义了一个从 `values` 对象中提取的属性名数组。
-- `sym` 定义了一个从 $1 到 $n 的字符串数组，它们与 `key` 数组中的项目数量匹配。
-- 这里的 `values` 的属性值通过以下方式传递给 SQL 查询：
-
-```javascript
-Object.values(ins.values)
-```
-
-# 285 Node.js：新手到忍者
-
-调用函数可以传递它自己的 `pool.connect()` 对象。当在数据库事务中运行一系列更新时，这是必要的。
-
-私有的 `dbUpdate()` 方法也类似，尽管它还接收一个包含键值对的 `where` 对象来创建 SQL 字符串，如下：
-
-```sql
-UPDATE game SET time_started=$1 WHERE game_id=$2;
-```
-
-该函数确保名称和值能够正确解析：
-
-```javascript
-// 数据库 UPDATE
-// 传入对象：{ table: <tablename>, values: { n1: v1, ... } }
-// where: { n1: v1, ... } }
-async function dbUpdate(up) {
-
-  const sym = [...Object.values(up.values), ...Object.values(up.where)],
-  vkey = Object.keys(up.values),
-  val = vkey.map((k, i) => `${k}=\${i + 1}`),
-  ckey = Object.keys(up.where),
-  cond = ckey.map((k, i) => `${k}=\${i + vkey.length + 1}`),
-  sql = `UPDATE ${up.table} SET ${val.join(', ')} WHERE ${cond.join(' AND ')}`,
-  
-  client = up.client || await pool.connect();
-
-  try {
-    // 执行更新
-    const i = await client.query(sql, [...Object.values(up.values), ...Object.values(up.where)]);
-    // 成功了吗？
-    return i.rowCount === 1;
-  } catch (err) {
-    return false;
-  } finally {
-    if (!up.client) client.release();
-  }
-}
-```
-
-
-
-
-
-## 示例实时多人问答：Express Code
-
-当点击时，它将使用带有 `import` 查询字符串重载主页，这会触发 `if` 块。该操作会执行 `web/Lib/questionsimport.js` 中的 `questionsImport()` 并返回导入的题目数量。
-
-随后，代码将重定向到带有 `imported=N` 查询字符串的首页，页面会显示已导入的题目数量。假设数据库中至少有一个问题，`web/views/home.ejs` 视图将显示 `START`（开始）和 `JOIN`（加入）游戏选项：
-
-```javascript
-% if (questions) { %%
-  <section class="tabs">
-    <article id="new">
-      <h2>开始新游戏 (NEW GAME)</h2>
-      <!-- 更多代码 -->
-    </article>
-  </section>
- } %
-```
-
-## 为什么导入的题目数量会发生变化？
-
-Open Trivia Database API 返回一组随机问题。某些问题可能与之前导入的题目重复，但数据库的 `question.text` 字段具有 `UNIQUE`（唯一）标记，以确保问题只能被添加一次。
-
-`questionsImport()` 函数有点长，因此请在编辑器中查看 `web/Lib/questionsimport.js`。它使用了一系列基于 promise 的函数，通过 `Promise.allSettled()` 向 `https://opentrivdb.com/api.php` 的 Open Trivia API 发起最多十次调用。数据使用 `node-fetch` 模块获取。
-
-## 原生 Node.js Fetch()
-
-Deno 通常实现了浏览器的 Fetch API，因此你可以在服务器应用程序中使用它。Node.js 第 18 版本引入了类似的 Fetch API，但仍处于实验阶段。为了向后兼容，这里使用了第三方模块。
-
-Open Trivia API 返回的 JSON 数据如下：
-
-```jsonjson
-  "response_code": 0,
-  "results": [
-    {
-      "category": "History",
-      "type": "multiple",
-      "difficulty": "medium",
-      "question": "帝国大厦的顶端最初是为了什么目的建造的？",
-      "correct_answer": "飞艇停靠",
-      "incorrect_answers": [
-        "避雷针",
-        "天线",
-        "旗杆"
-      ]
-    },
-    {
-      "category": "Entertainment - Cartoon & Animations",
-      "type": "multiple",
-      "difficulty": "easy",
-      "question": "以下哪一个不是迪士尼卡通角色？",
-      "correct_answer": "达菲鸭",
-      "incorrect_answers": [
-        "唐唐老鸭",
-        "黛西鸭",
-        "史铁奇·白金鹅"
-      ]
-    },
-    {
-      "category": "History",
-      "type": "multiple",
-      "difficulty": "hard",
-      "question": "纽约市原来的名称是什么？",
-      "correct_answer": "新阿姆丹",
-      "incorrect_answers": [
-        "新伦敦",
-        "新巴黎",
-        "新罗马"
-      ]
-    }
-  ]
-}
-```
-
-这些数据被转换为 JavaScript 值并进行格式化，然后通过 `Libshared/quizdb.js` 中的 `questionAdd(question, answer)` 函数将每个问题/答案对添加到数据库中。每个问题和答案对都在一个数据库事务中插入，因此，如果任何 SQL INSERT 操作失败，所有操作都将失败：
-
-```javascript
-// 添加新的问题和问答对
-export async function questionAdd(question, answer) {
-
-  const client = await pool.connect();
-  let commit = false;
-
-  try {
-    // 新开启事务
-    await client.query('BEGIN');
-
-    // 添加问题
-    const qId = await dbInsert({
-    client,
-    table: 'question',
-    values: {
-      text: question
-    },
-    return: 'id'
-  });
-
-  if (qId) {
-    // 按顺序插入答案
-    let inserted = 0;
-    for (let item of answer) {
-
-      const a = await dbInsert({
-        client,
-        table: 'answer',
-        values: {
-          question_id: qid,
-          text: item.text,
-          correct: item.correct
-        }
-      });
-
-      if (a) inserted++;
-    }
-
-    // 答案添加完毕？
-    commit = inserted === answer.length;
-
-  } catch (err) {
-  } finally {
-
-    // 提交或回滚事务
-    if (commit) {
-      await client.query('COMMIT');
-    } else {
-      await client.query('ROLLBACK');
-    }
-
-    client.release();
-  }
-
-  return commit;
-}
-```
-
-## 顺序插入数据库 INSERT
-
-代码可以在短时间内运行多个数据库 `INSERT` 命令。这种方式更快，但问题和答案的 ID 在数据库表中的出现顺序似乎是随机的。例如，`id` 为 1 的 `question` 记录可能关联了 `id` 为 17、22、52 和 54 的 `answer` 记录。
-
-这对于索引过的数据库来说不是问题，但在开发过程中这会使表格更难以阅读！由于这个原因，问题和答案是按顺序一个接一个插入的。这也这意味着通过 `answer.id` 排序将返回一个按字母顺序排列的列表，而不需要额外的 `answer.order` 字段。
-
-## 开始新游戏
-
-`web/views/home.ejs` 模板定义了一个 HTML 表单，用于配置和开始新游戏：
-
-```html
-<form action="/newgame/" method="post">
-  <label for="namenew">姓名：</label>
-  <input type="text" id="namenew" name="namenew" required>
-
-  <label for="questions_asked">题目数量：</label>
-  <input type="number" id="questions_asked" name="questions_asked" min="1" required>
-
-  <label for="timeout_answered">超时时间：</label>
-  <input type="number" id="timeout_answered" name="timeout_answered" min="5" required>
-
-  <label for="score_correct">正确得分：</label>
-  <input type="number" id="score_correct" name="score_correct">
-
-  <label for="score_fastest">最快得分：</label>
-  <input type="number" id="score_fastest" name="score_fastest">
-
-  <label for="score_incorrect">错误得分：</label>
-  <input type="number" id="score_incorrect" name="score_incorrect">
-
-  <label for="score_noanswer">未回答：</label>
-  <input type="number" id="score_noanswer" name="score_noanswer">
-
-  <button type="submit">进入问答 (ENTER QUIZ)</button>
-</form>
-```
-
-表单通过 `POST` 将数据发送 `/newgame/`，由 `web/index.js` 中的以下路由处理：
-
-```javascript
-app.post('/newgame', async (req, res) => {
-  const gameId = await gameCreate(req.body);
-  const playerName = req.body.name;
-
-  if (gameId === null) {
-    // 创建游戏错误
-    res.status(500).render('error', {
-      title: config.title,
-      error: '无法创建游戏'
-    });
-  } else {
-    // 重定向到游戏页面
-    res.redirect(`/game/${gameId}/${playerName}`);
-  }
-});
-```
-
-
-
-
-
-## 示例 实时多人问答游戏：Express 代码 298
-
-路由定义：
-
-```html
-<form action="/joing/" method="post">
-<div class="formgrid">
-<label for="namejoin">你的名字:</label>
-<div><input type="text" name="name" id="namejoin" value="" minlength="1" maxlength="10" pattern="[A-Za-z0-9]{1,10}" required /></div>
-
-<label for="slug">游戏代码:</label>
-<div><input type="text" name="slug" id="slug" value="" minlength="3" maxlength="8" autocomplete="off" required /></div>
-
-<button>进入问答大厅&hellip;</button>
-</form>
-```
-
-表单通过 POST 将数据发送到 `/joingame/` URL，该请求由 `web/index.js` 中定义的路由处理：
-
-```javascript
-// 加入已有的游戏
-app.post('/joingame', (req, res) => {
-
-  // 使用 slug 和用户名重定向到游戏页面
-  res.redirect(`/game/${libId.clean(req.body.slug).toLowerCase() || 'x'}/${libId.clean(req.body.name)}`);
-
-});
-```
-
-此操作接收数据，清理字符串，并将用户重定向到 URL `/game/<gameCode>/<playerName>` —— 例如 `/game/a23/Craig`。
-
-## 问答页面
-
-所有开始或加入游戏的玩家都会到达 URL `/game/<gameCode>/<playerName>`，在该处：
-
-## 299 Node.js：新手忍者
-
-- `<gameCode>` 是特定问答游戏的唯一代码
-- `<playerName>` 是玩家的名称
-
-这由 `web/index.js` 中的 Express 路由函数进行处理：
-
-```javascript
-// 游戏页面
-app.get('/game/:slug/:name', async (req, res) => {
-  // 获取游戏 ID 和玩家名
-  slug = req.params.slug,
-  gameId = libID.decode(slug),
-  game = gameID && gameId === null ? await gameFetch(gameId),
-  gameValid = game && gameId === game.id,
-  playerName = libID.clean(req.params.name) || 'Player';
-
-  if (gameValid && game.time_started === null) {
-    // 游戏对玩家开放
-    res.render('game', {
-      domain: cfg.domain,
-      wsDomain: cfg.wsDomain,
-      slug,
-      title: cfg.title,
-      game,
-      playerName
-    });
-  } else {
-    // 游戏已开始或无效
-    const url = `${ cfg.domain}/game/${ slug }`;
-
-    res.status(gameValid ? 403 : 404).render('error', {
-      title: cfg.title,
-      error: gameValid ? `你加入游戏 ${ url } 的时候已经太晚了` : `游戏 ${ url } 效的。你输入得正确吗？`
-    });
-  }
-});
-```
-
-## 示例 实时多人问答游戏：Express 代码 300
-
-该函数将游戏代码解码为整数，并通过调用 `Libshared/quizdb.js` 中的 `gameFetch()` 从数据库中获取游戏信息：
-
-```javascript
-// 获取游戏数据
-export async function gameFetch(gameId) {
-
-  const game = await dbSelect('SELECT * FROM game WHERE id=$1', [ gameId ]);
-  return game?.[0];
-
-}
-```
-
-假设游戏 ID 有效且游戏的 `time_started` 值为 NULL，代码将渲染 `web/views/game.ejs` 处的模板。配置变量被传递给模板中的客户端脚本：
-
-```html
-<script type="module">
-window.cfg = {
-  wsDomain: '%%= wsDomain %',
-  gameId: '%%= gameId %',
-  playerName: '%%= playerName %'
-};
-</script>
-<script type="module" src="/js/main.js"></script>
-```
-
-这配置配置了 `web/static/js/main.js` 客户端脚本中使用的值。
-
-在需要时，将使用 `web/views/error.js` 模板显示错误：
-
-- 无效的游戏 ID 将返回 HTTP 404 Not found（未找到）错误。
-- 已开始的游戏（`time_started` 不为 NULL）将返回 HTTP 403 Forbidden（禁止）错误。
-
-# 总结
-
-应用程序的 Express 部分说明了 URL 路由如何解析以触发服务器端功能。
-
-至此，所有加入游戏的玩家都加载了 `web/views/game.ejs` 模板。后续所有的问答游戏处理现在都将使用客户端 JavaScript 和 WebSocket 服务器消息进行处理（见第 16 章）。Express 已完成它的工作！
-
-# 第 16 章
-### 示例 实时多人问答游戏：WebSocket 代码
-
-## 303 Node.js：从新手到忍者
-
-第 11 章介绍了 WebSockets，它在客户端浏览器和服务器之间建立了一个双向交互通信通道。
-
-我们的问答应用程序启动了三个 WebSocket 服务器，并且启动的服务器数量没有限制。但是：
-
-- 用户将连接到单个服务器，并在整个会话期间保持连接。
-- 同一游戏的两个用户*可能*连接到不同的 WebSocket 服务器。
-
-发送和来自 WebSocket 服务器的消息通常是简单的字符串，但我们面临的额外挑战是跨所有服务器协调消息！
+# 示例实时多人测验：WebSocket 代码
 
 ## 建立 WebSocket 连接
 
-位于 `web/static/js/main.js` 的客户端 JavaScript 发起 WebSocket 连接。注意 `index.js` 中的服务器端脚本初始化了 WebSocket 服务器并监听新连接：
+位于 `web/static/js/main.js` 的客户端 JavaScript 发起 WebSocket 连接。注意 `ws/index.js` 中的服务器端脚本初始化了 WebSocket 服务器并监听新连接：
 
 ```javascript
 // 服务器
-ws = new WebSocketServer({ port: cfg.port });
+const ws = new WebSocketServer({ port: cfg.port });
 
 // 连接
 ws.on('connection', (socket) => {
-
   // 处理...
 });
 ```
 
 ## 消息格式
 
-问答应用程序客户端或服务器发送的所有 WebSocket 消息使用相同的格式。标识字符串 `type` 后跟着冒号和 JSON 格式的 `data`：
+测验应用程序客户端或服务器发送的所有 WebSocket 消息使用相同的格式。标识字符串 `type` 后跟着冒号和 JSON 格式的 `data`：
 
 ```json
-gameInit":{"gameId": "a23", "playerName": "Craig"}
+gameInit:{"gameId": "a23", "playerName": "Craig"}
 ```
 
 例如，上述 `gameInit` 消息将游戏 ID 和用户名传递给服务器。当收到玩家的消息时，WebSocket 服务器可能会执行操作。然而，大多数消息会被转发到连接到游戏的 WebSocket 服务器。每个 WebSocket 服务器（包括最初接收消息的服务器）随后处理消息，并在大多数情况下将其传回连接的客户端以更新游戏状态。
 
-## 16-1. 问答 PostgreSQL-sub
+## PostgreSQL Pub/Sub
 
-### PostgreSQL-sub
+消息使用 PostgreSQL 的发布/订阅功能广播到所有 WebSocket 服务器。`pubsub` 表具有以下字段：
 
-消息使用 PostgreSQL 的发布/订阅功能广播到所有 WebSocket 服务器。*pubsub* 表具有以下字段：
+- `id`：自增整数
+- `game_id`：未编码的游戏 ID（`game_id` 的外键）
+- `type`：快速 JSONB 格式的消息负载
+- `queued`：当前时间戳
 
-## 示例 多人问答游戏：WebSocket 代码
-
-- id：自增整数
-- game_id：未编码的游戏 ID（game_id 的外键）
-- type：快速 JSONB 格式的消息负载
-- queued：当前时间戳
-
-当单个 WebSocket 服务器想要共享一个事件时，它使用 `Libshared/quizdb.js` 中的 `broadcast()` 函数向 pubsub 表插入一条新记录：
+当单个 WebSocket 服务器想要共享一个事件时，它使用 `lib/shared/quizdb.js` 中的 `broadcast()` 函数向 `pubsub` 表插入一条新记录：
 
 ```javascript
 // 广播事件
 export async function broadcast(game_id, type, data) {
-
   return await dbInsert({
     table: 'pubsub',
     values: { game_id, type, data },
@@ -5922,25 +4426,20 @@ export async function broadcast(game_id, type, data) {
 }
 ```
 
-当向 pubsub 表插入记录时，数据库触发器 `pubsub_insert_trigger` 会调用 `sub_insert_notify()` 函数。这执行 PostgreSQL 的 `pg_notify()` 命令，将记录发送给所有订阅者：
+当向 `pubsub` 表插入记录时，数据库触发器 `pubsub_insert_trigger` 会调用 `sub_insert_notify()` 函数。这执行 PostgreSQL 的 `pg_notify()` 命令，将记录发送给所有订阅者：
 
 ```sql
 CREATE OR REPLACE FUNCTION pubsub_insert_notify()
 RETURNS trigger AS
 $BODY$
 BEGIN
-
   PERFORM pg_notify('pubsub_insert', row_to_json(NEW)::text);
   RETURN NULL;
 END;
 $BODY$
-LANGUAGE plplpgsql VOLATILE
+LANGUAGE plpgsql VOLATILE
 COST 100;
 ```
-
-
-
-
 
 ```sql
 CREATE TRIGGER "pubsub_insert_trigger"
@@ -5948,12 +4447,11 @@ AFTER INSERT ON public.pubsub FOR EACH ROW
 EXECUTE FUNCTION pubsub.pubsub_insert_notify();
 ```
 
-PubSub 对象扩展了 Node.js 的 EventEmitter 类，定义在 Libshared/quizdb.js 中：
+`PubSub` 对象扩展了 Node.js 的 `EventEmitter` 类，定义在 `lib/shared/quizdb.js` 中：
 
 ```javascript
 // pubsub event emitter
 class PubSub extends EventEmitter {
-
   constructor(delay) {
     super();
   }
@@ -5961,9 +4459,7 @@ class PubSub extends EventEmitter {
   async listen() {
     if (this.listening) return;
     this.listening = true;
-
     const client = await pool.connect();
-
     client.on('notification', event => {
       try {
         const payload = JSON.parse(event.payload);
@@ -5978,15 +4474,15 @@ class PubSub extends EventEmitter {
           );
         }
       } catch (e) {
+        // 忽略错误
       }
     });
-
     await client.query('LISTEN pubsub_insert');
   }
 }
 ```
 
-实例化并导出一个名为 pubsub 的单例。调用 `listen()` 方法，该方法会连接到数据库并在发生通知事件时定义一个处理函数。这会触发一个 Node.js 事件 `event:<gameId>`，其负载荷对象包含 gameId、type 字符串和 data 对象：
+实例化并导出一个名为 `pubsub` 的单例。调用 `listen()` 方法，该方法会连接到数据库并在发生通知事件时定义一个处理函数。这会触发一个 Node.js 事件 `event:<gameId>`，其负载对象包含 `gameId`、`type` 字符串和 `data` 对象：
 
 ```javascript
 export const pubsub = new PubSub();
@@ -5996,18 +4492,15 @@ await pubsub.listen();
 每个服务器上的游戏实例使用 `pubsub.on` 方法订阅 `event:<gameId>` 事件：
 
 ```javascript
-import * as db from '../libshared/quizdb.js';
+import * as db from '../lib/shared/quizdb.js';
 
 // 缩略代码
 class Game {
-
   #handlerFunction = async e => await this.#eventHandler(e);
 
   // 初始化游戏
   async create(gameId) {
-
     this.gameId = gameId;
-
     // 监控监听/传入的事件
     db.pubsub.on(`event:${this.gameId}`, this.#handlerFunction);
   }
@@ -6019,10 +4512,8 @@ class Game {
 ```javascript
 // 发送到所有游戏服务器的传入事件
 async #eventHandler({ gameId, type, data }) {
-
   console.log('Shared server event', type, data);
   // ...
-
   // 处理服务器事件（所有服务器上）
   switch (type) {
     //...
@@ -6044,7 +4535,7 @@ HTML 的 `<body>` 类名被设置为传入消息的 `type`。这可以触发 CSS
 
 ## 加入游戏
 
-当玩家通过 URL `/game/<gameCode>` 访问有效游戏时（例如 `/game/a23/Craig`），客户端会与单个服务器建立 WebSocket 连接并发送一个 `gameInit` 消息。例如：
+当玩家通过 URL `/game/<gameCode>/<playerName>` 访问有效游戏时（例如 `/game/a23/Craig`），客户端会与单个服务器建立 WebSocket 连接并发送一个 `gameInit` 消息。例如：
 
 ```json
 gameInit:{"gameId": "a23", "playerName": "Craig"}
@@ -6057,14 +4548,12 @@ gameInit:{"gameId": "a23", "playerName": "Craig"}
 socket.on('message', async (msg) => {
     // 解析消息
     msg = parseMessage(msg);
-
     // 初始化玩家和游戏
     if (!player && msg.type === 'gameInit' && msg.data) {
         player = new Player();
         const pId = await player.create(msg.data.gameId, msg.data.playerName, socket);
-        if (pId) player = null;
+        if (!pId) player = null;
     }
-
     // 将消息传递给游戏对象
     msg.data = msg.data || {};
     msg.data.playerId = player.id;
@@ -6077,31 +4566,25 @@ socket.on('message', async (msg) => {
 ```javascript
 // 初始化新玩家
 async create(gameId, playerName, socket) {
-
   // 玩家属性
   this.name = playerName;
   this.#socket = socket;
-
   // 初始化游戏
   this.gameId = gameId;
   this.game = await GameFactory(gameId);
-  if (this.game) return null;
-
+  if (!this.game) return null;
   // 将现有玩家发送给新玩家
   this.send('player', this.game.playerAll())
-
   // 创建玩家
   this.id = await db.playerCreate(this.gameId, playerName);
   if (!this.id) return null;
-
   // 将玩家加入游戏
   this.game.playerAdd(this);
-
   return this.id;
 }
 ```
 
-## 为什么要运行 create()
+### 为什么要运行 create()
 
 `Player` 对象负责游戏状态。当玩家加入 WebSocket 服务器时，`GameFactory()` 函数会创建并返回游戏对象。`web/static/js/player.js` 将每个玩家加入 `<table>` 并将其存储在 Map 中。
 
@@ -6109,34 +4592,29 @@ async create(gameId, playerName, socket) {
 // 客户端代码
 const pList = document.getElementById('player');
 const pnum = document.getElementById('pnum');
-player = new Map();
+const player = new Map();
 
 // 添加玩家
 export function init(pAll, score = false) {
-  pList.clear();
+  pList.innerHTML = '';
   player.clear();
   pAll.forEach(p => add(p, score));
 }
 
 // 添加新玩家
 export function add(p, score = false) {
-
   if (!p.id || player.has(p.id)) return;
-
   const item = document.createElement('tr');
   item.appendChild(document.createElement('th')).textContent = p.name;
   const info = item.appendChild(document.createElement('td'));
   info.textContent = score ? p.score || 0 : 'joined';
-
   const pObj = {
     name: p.name,
     node: item
   };
-  pObj.info = pObj.node.getElementsBy('td')[0];
-
+  pObj.info = pObj.node.querySelector('td');
   player.set(p.id, pObj);
   pnum.textContent = player.size;
-
   return pObj;
 }
 ```
@@ -6145,24 +4623,21 @@ export function add(p, score = false) {
 // ws/game.js 中的 GameFactory 函数
 export async function GameFactory(gameId) {
   const gameActive = new Map();
-
   if (!gameActive.has(gameId)) {
     const game = new Game(gameId);
     if (game) {
       gameActive.set(gameId, game);
     }
   }
-
   return gameActive.get(gameId) || null;
 }
 ```
 
-通过调用 Libshared/quizdb.js 中的 `playerCreate()` 函数，将玩家添加到数据库的玩家表中：
+通过调用 `lib/shared/quizdb.js` 中的 `playerCreate()` 函数，将玩家添加到数据库的玩家表中：
 
 ```javascript
 // 创建新玩家
 export async function playerCreate(game_id, name) {
-
   return await dbInsert({
     table: 'player',
     values: { game_id, name },
@@ -6171,18 +4646,15 @@ export async function playerCreate(game_id, name) {
 }
 ```
 
-假设玩家可以插入数据库，则将 `Player` 对象 ( this ) 传递给游戏对象的 `playerAdd()` 方法：
+假设玩家可以插入数据库，则将 `Player` 对象 (`this`) 传递给游戏对象的 `playerAdd()` 方法：
 
 ```javascript
 // 将玩家加入游戏
 async playerAdd(player, broadcast = true) {
-
   // 将玩家添加到此服务器
   this.player.set(player.id, player);
-
   // 广播事件
   if (broadcast) {
-
     await db.broadcast(
       this.gameId,
       'playerAdd',
@@ -6192,212 +4664,160 @@ async playerAdd(player, broadcast = true) {
 }
 ```
 
+这会向所有 WebSocket 服务器广播一个包含新玩家 ID、游戏 ID 和名称的 `playerAdd` 消息。这些服务器会将消息发送给同一游戏的所有连接客户端（包括新加入的玩家）。当接收到消息时，客户端 `web/static/js/player.js` 脚本中的 `add()` 函数会将新玩家添加到同一个 HTML `<table>` 中。
 
+## 启动游戏
 
+加入后，任何玩家都可以点击 `START QUIZ`（开始测验）按钮。这会向一个 WebSocket 服务器发送一个开始消息，由其将其广播到所有服务器并返回所有客户端。每个客户端都会调用 `web/static/js/player.js` 脚本中的 `start()` 函数，显示玩家已开始游戏，并使用 `web/static/js/timer.js` 中的 `startTimer()` 函数初始化一个五秒倒计时器：
 
-
-# Node.js: 从语音到忍者
-
-这会向所有 WebSocket 服务器广播一个包含新玩家 ID、游戏 ID 和名称的 `playerAdd` 消息。这些服务器会将消息发送给同一游戏游戏的所有连接客户端（包括新加入的玩家）。当接收到消息时，客户端 `web/static/js/player.js` 脚本（如上所示）中的 `add()` 函数会将新玩家添加到同一个 HTML `<table>` 中。
-
-# 启动游戏
-
-加入后，任何玩家都可以点击 `START QUIZ`（开始测试）按钮。这会向一个 WebSocket 服务器发送一个开始消息，由其将其广播到所有服务器并返回所有客户端。每个客户端都会调用 `web/static/js/player.js` 脚本中的 `start()` 函数，显示玩家已开始游戏，并使用 `web/static/js/timer.js` 中的 `startTimer()` 函数初始化一个五秒倒计时器：
-
-```
-// CLIENT-SIDE JAVASCRIPT
+```javascript
+// 客户端 JavaScript
 // started
 export function start(pId) {
-
   if (!player.has(pId)) return;
   player.get(pId).info.textContent = 'started game';
   startTimer();
-
 }
 ```
 
-WebSocket 服务器 (ws/Lib/game.js) 上的 `Game` 对象接收到开始消息并调用私有方法 `#questionNext()`：
+WebSocket 服务器 (`ws/lib/game.js`) 上的 `Game` 对象接收到开始消息并调用私有方法 `#questionNext()`：
 
-```
+```javascript
 // incoming client event
 async clientMessage({ type, data }) {
-
   console.log('Data from client', type, data);
-
   // handle client event (on single server)
-switch (type) {
-
-  case 'start':
-    // fetch first question
-```
-
-this.#state.current = type;
-
-// 未找到问题吗？
-if (!await this.#questionNext( timerDefault )) {
-    await db.broadcast(this.gameId, 'gameover');
+  switch (type) {
+    case 'start':
+      // fetch first question
+      this.#state.current = type;
+      // 未找到问题吗？
+      if (!await this.#questionNext(timerDefault)) {
+        await db.broadcast(this.gameId, 'gameover');
+      }
+      break;
+  }
 }
-break;
 ```
 
 `#questionNext()` 方法决定是否可以继续提问，从数据库中获取下一个问题，并在延迟五秒后使用 `questionactive` 消息类型将其广播到所有 WebSocket 服务器：
 
-```
+```javascript
 // fetch and broadcast next question
-async #questionNext( delay ) {
-
+async #questionNext(delay) {
     // 还可以提问下一个问题吗？
     if (this.#state.question >= this.cfg.questions_asked) return;
-
     // 获取下一个问题和答案集
     const qSet = await db.questionFetch(this.#state.question + this.cfg.question_offset);
     if (!qSet) return;
-
-qSet.num = this.#state.question + 1;
-
-this.#setTimer(async () => {
+    qSet.num = this.#state.question + 1;
+    this.#setTimer(async () => {
         await db.broadcast(this.gameId, 'questionactive', qSet);
     }, delay || 1);
-
     return qSet.num;
 }
 ```
 
-定义在 `Libshared/quizdb.js` 中的 `questionFetch()` 函数返回一个包含问题文本和答案对象数组的get，其中一个答案的 `correct` 属性被设置为 `true`：
+定义在 `lib/shared/quizdb.js` 中的 `questionFetch()` 函数返回一个包含问题文本和答案对象数组的对象，其中一个答案的 `correct` 属性被设置为 `true`：
 
-```
+```javascript
 // fetch next question and answer set
 export async function questionFetch(qNum) {
-```
-
-```
-// fetch question
-const
-qCount = await questionCount(),
-question = await dbSelect('SELECT * FROM question ORDER BY id LIMIT 1
-OFFSET $1', [qNum % qCount]);
-```
-
-```
-if (question.length !== 1) return null;
-
-// fetch answer
-const answer = await dbSelect('SELECT * FROM answer WHERE question_id=$1
-ORDER BY id;', [question[0].id]);
-```
-
-```
-if (!answer.length) return null;
-
-return {
-text: question[0].text,
-answer: answer.map(a => { text: a.text, correct: a.correct })
-};
+  // fetch question
+  const qCount = await questionCount();
+  const question = await dbSelect('SELECT * FROM question ORDER BY id LIMIT 1 OFFSET $1', [qNum % qCount]);
+  if (question.length !== 1) return null;
+  // fetch answer
+  const answer = await dbSelect('SELECT * FROM answer WHERE question_id=$1 ORDER BY id;', [question[0].id]);
+  if (!answer.length) return null;
+  return {
+    text: question[0].text,
+    answer: answer.map(a => ({ text: a.text, correct: a.correct }))
+  };
+}
 ```
 
 注意，PostgreSQL 的 `OFFSET` 子句会根据当前游戏定义的随机 `question_offset` 获取下一个问题。
 
-# 回答问题
+## 回答问题
 
 当每个客户端接收到 `questionactive` 消息时，它会运行客户端 `web/static/js/question.js` 脚本中的 `show()` 函数来显示问题和可能的答案按钮：
 
-```
-// CLIENT-SIDE JAVASCRIPT
+```javascript
+// 客户端 JavaScript
 // show question
-export function show( q ) {
-
-currentQuestion = q;
-currentQuestion.answered = null;
-
-clear(question);
-clear(answers);
-```
-
-# 实时多人在线测验示例：WebSocket 代码
-
-```
-answers.classList.remove( answeredClass );
-
-qnum.textContent = q.num;
-question.innerHTML = q.text;
-currentQuestion.answerNode = [];
-
-q.answer.forEach((ans, idx) => {
-  const button = document.createElement('button');
-  button.value = idx;
-  button.innerHTML = `<span>${idx+1}</span><span>${ans}</span>`;
-  currentQuestion.answerNode[idx] = answers.appendChild(button);
-});
+export function show(q) {
+  currentQuestion = q;
+  currentQuestion.answered = null;
+  question.innerHTML = '';
+  answers.innerHTML = '';
+  answers.classList.remove(answeredClass);
+  qnum.textContent = q.num;
+  question.innerHTML = q.text;
+  currentQuestion.answerNode = [];
+  q.answer.forEach((ans, idx) => {
+    const button = document.createElement('button');
+    button.value = idx;
+    button.innerHTML = `<span>${idx+1}</span><span>${ans}</span>`;
+    currentQuestion.answerNode[idx] = answers.appendChild(button);
+  });
+}
 ```
 
 当玩家回答问题时——通过点击按钮或在键盘上按下相应的数字（1 到 4），客户端 `web/static/js/question.js` 脚本中的 `questionAnswered()` 函数会验证其有效性，高亮按钮并触发一个名为 `answered` 的自定义事件：
 
-```
-// CLIENT-SIDE JAVASCRIPT
-
+```javascript
+// 客户端 JavaScript
 // answer event handlers
 answers.addEventListener('click', questionAnswered);
 window.addEventListener('keydown', questionAnswered);
 
 // user answers a question
-function questionAnswered() {
-
-// 已经回答过？
-if (!currentQuestion || currentQuestion.answered !== null ) return;
-
-let ans = null;
-if (e.type == 'click') {
-
-// 点击按钮
-ans = e.target && e.target.nodeName === 'BUTTON' ? parseInt(e.target.value, 10) : null;
-
-if (ans > currentQuestion.answer.length) ans = null;
+function questionAnswered(e) {
+  // 已经回答过？
+  if (!currentQuestion || currentQuestion.answered !== null) return;
+  let ans = null;
+  if (e.type === 'click') {
+    // 点击按钮
+    ans = e.target && e.target.nodeName === 'BUTTON' ? parseInt(e.target.value, 10) : null;
+    if (ans >= currentQuestion.answer.length) ans = null;
+  } else {
+    // 按键按下
+    ans = e.key >= '1' && e.key <= '4' ? parseInt(e.key, 10) - 1 : null;
+  }
+  if (ans === null) return;
+  currentQuestion.answered = ans;
+  currentQuestion.answerNode[ans].classList.add('selected');
+  // 发送答案到服务器
+  ws.send(`answered:${JSON.stringify({ answer: ans })}`);
 }
 ```
 
-```
-else {
-
-// 按键按下
-ans = e.key >= '1' && e.key <= '4' ? parseInt(e.key, 10) : null; // 注：原文此处略有断层，此处按逻辑补全
-}
-```
-
-
-
-
+服务器接收 `answered` 消息，验证答案，计算分数，并广播 `questioncomplete` 消息。客户端接收后，运行 `correctAnswer()` 函数高亮正确答案：
 
 ```javascript
-const { type, data } = parseMessage(e.data);
-if (!type || !data) return;
-
-console.log('Data from server:', type, data);
-
-switch (type) {
-  case 'questiontimeout':
-    startTimer(data.timeout);
-    break;
-```
-
-服务器上会启动一个相同的计时器。在计时结束后，它会广播一个带有正确答案的 `questioncomplete` 消息。接收后，每个客户端都会运行客户端 `web/static/js/question.js` 脚本中的 `correctAnswer()` 函数来高亮相应的按钮：
-
-```javascript
-// CLIENT-SIDE JAVASCRIPT
+// 客户端 JavaScript
 // receive message
 ws.addEventListener('message', e => {
-
-const { type, data } = parseMessage(e.data);
-if (!type || !data) return;
-
-console.log('Data from server:', type, data);
-
-switch (type) {
-  case 'questioncomplete':
-    question.correctAnswer(data.correct);
-    break;
+  const { type, data } = parseMessage(e.data);
+  if (!type || !data) return;
+  console.log('Data from server:', type, data);
+  switch (type) {
+    case 'questioncomplete':
+      question.correctAnswer(data.correct);
+      break;
+    case 'questiontimeout':
+      startTimer(data.timeout);
+      break;
+  }
+});
 ```
 
-五秒钟后，服务器向每台服务器广播一个 `scoreboard` 消息。接收后，每台服务器会将计算出的玩家总分附加到消息中，并通过 `Game#EventHandler()` 方法（`Lib/game.js`）发送到连接的客户端；
+服务器上会启动一个相同的计时器。在计时结束后，它会广播一个带有正确答案的 `questioncomplete` 消息。接收后，每个客户端都会运行客户端 `web/static/js/question.js` 脚本中的 `correctAnswer()` 函数来高亮相应的按钮。
+
+五秒钟后，服务器向每台服务器广播一个 `scoreboard` 消息。接收后，每台服务器会将计算出的玩家总分附加到消息中，并通过 `Game#eventHandler()` 方法 (`lib/game.js`) 发送到连接的客户端。
+
+
 
 ## 实时多人测试示例：WebSocket 代码
 
@@ -6467,7 +4887,7 @@ if (this.state.current === 'gameover') {
 }
 ```
 
-每台服务器运行 `gameComplete()` 函数来删除 Game 对象以及数据库表中的关联记录（只有第一个操作会成功）。这将导致该游戏玩家表和 pubsub 表的级联删除：
+每台服务器运行 `gameComplete()` 函数来删除 `Game` 对象以及数据库表中的关联记录（只有第一个操作会成功）。这将导致该游戏玩家表和 pubsub 表的级联删除：
 
 ```javascript
 // remove active game
@@ -6494,7 +4914,7 @@ socket.on('close', async () => {
 });
 ```
 
-它调用 `ws/lib/game.js` 中 Game 对象的 `playerRemove()` 方法：
+它调用 `ws/lib/game.js` 中 `Game` 对象的 `playerRemove()` 方法：
 
 ```javascript
 // remove player from game
@@ -6561,7 +4981,7 @@ export function remove(p) {
 
 ## 练习
 
-尝试使用第 4 章提供的说明调试此测试应用程序。这不像之前那么简单，因为单个用户可以与任何 HTTP 或 WebSocket 服务器通信。坦率地说，每个玩家一次只能连接到一个服务器。当你启动或加入游戏时，检查 Docker 日志：
+尝试使用第 4 章提供的说明调试此测试应用程序。这不像之前那么简单，因为单个用户可以与任何 HTTP 或 WebSocket 服务器通信。坦白说，每个玩家一次只能连接到一个服务器。当你启动或加入游戏时，检查 Docker 日志：
 
 ```
 ws_1 | connection from :ffff:172.18.0
@@ -6575,7 +4995,7 @@ docker container ls
 
 # Node.js：从入门到忍者
 
-注意 NAMES 和 PORTS 映射：
+注意 `NAMES` 和 `PORTS` 映射：
 
 |   | NAMES |
 | :--- | :--- |
@@ -6588,11 +5008,8 @@ docker container ls
 | 0.0.0.0:5951->8080/tcp | nodequiz_admin_1 |
 | 0.0.0.0:80->80/tcp, 0.0.0.0:8080->8080/tcp | nodequiz_reverse-proxy-1 |
 
-
-
-
-
 # 第 17 章
+
 ## Node.js 工具与资源
 
 我希望你已经有足够的信心来编写 Node.js 程序并在必要时找到合适的包。这个运行环境的成功也有副作用：你面临着选择太多的问题！有 150 万个包可供选择，范围从全应用开发套件到简单的单功能模块不等。这可能会导致选择困难症，而且当你选定了一个包时，更好的选择不可避免地会出现。
@@ -6601,9 +5018,9 @@ docker container ls
 
 ### 17-1. npm
 
-本章提供了一个适用于各种情况的流行且经过验证的 npm 包列表。它们可以为你提供一个起点，但请不要认为你必须使用它们。只有你才能判断一个包对你的项目是否是否有用。
+本章提供了一个适用于各种情况的流行且经过验证的 npm 包列表。它们可以为你提供一个起点，但请不要认为你必须使用它们。只有你才能判断一个包对你的项目是否有用。
 
-我还将重申本书书中反复提到的一个观点：仅在绝对时使用第三方模块。利用框架、数据库驱动程序、图像优化器等经过多年开发和真实世界测试的成果是有意义的。你可以自己编写较小的模块——例如字符串或日期处理函数。起初可能需要更长时间，但从远来看可以为你节省时间，因为不需要搜索合适的包、管理更新、评估安全问题或切换到替代方案。
+我还将重申本书中反复提到的一个观点：仅在绝对必要时使用第三方模块。利用框架、数据库驱动程序、图像优化器等经过多年开发和真实世界测试的成果是有意义的。你可以自己编写较小的模块——例如字符串或日期处理函数。起初可能需要更长时间，但从长远来看可以为你节省时间，因为不需要搜索合适的包、管理更新、评估安全问题或切换到替代方案。
 
 ## 完美包的追求
 
@@ -6681,17 +5098,15 @@ $ npm search mysql
 - nodemon: 在源文件更改时重启应用
 - Browsersync: 浏览器自动刷新 HTML、CSS 或 JavaScript 更新
 
-## nodemon
-
 ### 17-2. Nodemon
 
-nodemon 在书中一直被。当脚本或其任何模块更改时使用它来运行 *node*：
+`nodemon` 在书中一直被使用。当脚本或其任何模块更改时使用它来运行 `node`：
 
 ```bash
 $ nodemon index.js
 ```
 
-Browsersync 是浏览器自动刷新 HTML、CSS 或 JavaScript 更新。最后，你可能需要良好的调试器，如 VS Code、Atom 或 Sublime。
+`Browsersync` 是浏览器自动刷新 HTML、CSS 或 JavaScript 更新。最后，你可能需要良好的调试器，如 VS Code、Atom 或 Sublime。
 
 ## 测试
 
@@ -6703,7 +5118,7 @@ Browsersync 是浏览器自动刷新 HTML、CSS 或 JavaScript 更新。最后�
 - Tap
 - uvu
 
-此示例使用了 uvu：
+此示例使用了 `uvu`：
 
 ```javascript
 import { test } from 'uvu'
@@ -6722,7 +5137,7 @@ test('main', () => {
 
 ## 日志
 
-如果你更倾向于输出 console()，第三方模块提供了更详细的日志级别、详细度和报告。流行的选项包括：
+如果你更倾向于输出 `console()`，第三方模块提供了更详细的日志级别、详细度和报告。流行的选项包括：
 
 - cabin: Node.js 和中间件
 - logLevel: 浏览器
@@ -6740,7 +5155,7 @@ test('main', () => {
 ### 17-3. Next.js
 
 - Next.js: 基于 React
-- Nuxt.js: 基于 Vue 的组件（注：原文中 Nuxt.js 描述为 Vue components，此处可能为误，或指基于 Vue 组件的框架，按原意译为 *基于 Vue 组件*）
+- Nuxt.js: 基于 Vue 组件
 
 ## 服务端框架
 
@@ -6759,33 +5174,33 @@ test('main', () => {
 
 以下平台提供了管理面板，内容编辑可以在其中编写内容，当访问者访问网站时，这些内容会被提取到网站主题模板中。这些实际上是基于 PHP 的 WordPress 的 Node.js 替代方案。
 
+### Ghost
 
-
-
-
-# Ghost
-
-# 欢迎使用 Ghost
+#### 欢迎使用 Ghost
 
 - 你应该了解的几点
-1. Ghost 专为有抱心的专业出版者设计，他们希望围绕自己的内容积极构建业务。它的工作原理如下：
+
+1. Ghost 专为有抱负的专业出版者设计，他们希望围绕自己的内容积极构建业务。它的工作原理如下：
 2. 整个平台可以根据你的需求进行修改和自定义。它非常强大，但对于初学者或只想建立简单个人博客的人来说，需要一些技巧。
 3. 你可以通过数百种集成与你喜爱的所有工具和应用程序协同工作，以加速工作流、连接邮件列表、构建等等。
 
 开源 CMS：伟大的网站创建工具 - 免费
+
 正在寻找免费且开源的网站创建器吗？我们创建了 17 多个开源 CMS，你可以将其用于各种类型……
 
 ![](img/df734780c88ebde9dc5bf93f50faf4c6_359_0.png)
 
-幕后故事
+#### 幕后故事
+
 Ghost 由一个名为 Ghost Foundation 的独立非营利组织开发。我们通过 GhostPro 的收入实现 100% 自筹资金，赚取的每一分钱都会重新投入到进一步的资金中。
 
-17-Ghost CMS
-
+> **17-Ghost CMS**
+>
 > Ghost: 在 ghost.org 提供商业化托管服务。
+
 Hexo: 更接近 SSG（参见下文的“静态网站生成器”部分），但可以通过插件添加管理面板。
 
-# 无头内容管理系统 (Headless Content Management Systems)
+## 无头内容管理系统 (Headless Content Management Systems)
 
 以下包提供了编辑面板并通过 API 提供内容。文章和其他数据可以提取到你的应用程序或静态网站生成器中，输出到网页、App、电子书、PDF 或其他地方：
 
@@ -6793,9 +5208,9 @@ Hexo: 更接近 SSG（参见下文的“静态网站生成器”部分），但�
 - Keystone
 - Apostrophe
 
-# 静态网站生成器
+## 静态网站生成器
 
-静态网站生成器 (SSGs) 获取内容（通常来自 Markdown 文件或无头 CMS）并在构建时将其放入模板中。结果是包含预渲染 HTML 文件的完整网站，可以托管在任何网络服务器上，无需担心语言运行时、安全或性能影响。你可能会看到这被称为 Jamstack，它最初是指 JavaScript、API 和 Markup，现在被用于更广泛的语文中：
+静态网站生成器 (SSGs) 获取内容（通常来自 Markdown 文件或无头 CMS）并在构建时将其放入模板中。结果是包含预渲染 HTML 文件的完整网站，可以托管在任何网络服务器上，无需担心语言运行时、安全或性能影响。你可能会看到这被称为 Jamstack，它最初是指 JavaScript、API 和 Markup，现在被用于更广泛的语境中：
 
 - Eleventy: Markdown 转 HTML，支持许多模板引擎
 - MetalSmith: 一个简单的可插式 SSG
@@ -6803,7 +5218,7 @@ Hexo: 更接近 SSG（参见下文的“静态网站生成器”部分），但�
 - VuePress: 基于 Vue 组件
 - Gridsome: 基于 Vue 组件
 
-# 数据库驱动程序
+## 数据库驱动程序
 
 数据库驱动程序——也称为连接器或客户端——提供了 API，允许你连接、查询和更新数据库数据。以下包是原生驱动程序：它们支持单一系统，复制标准命令，并且通常有数据库开发者的官方支持：
 
@@ -6822,22 +5237,22 @@ Hexo: 更接近 SSG（参见下文的“静态网站生成器”部分），但�
 
 对象关系映射 (ORM) 模块可以在代码和数据库之间提供一个抽象层。代码不是直接运行命令，而是操作数据对象，这些对象从数据库的表示中保存和恢复。这允许你在系统之间切换，但你还需要安装原生驱动程序，并且可能无法使用数据库功能。示例包括：
 
-- mongoose : 用于 MongoDB
-- sequelize : 用于 MySQL, MariaDB, PostgreSQL, SQLite, DB2 和 Microsoft SQL Server
-- typeorm : 用于 MySQL, MariaDB, PostgreSQL, SQLite, Oracle 和 Microsoft SQL
+- mongoose: 用于 MongoDB
+- sequelize: 用于 MySQL, MariaDB, PostgreSQL, SQLite, DB2 和 Microsoft SQL Server
+- typeorm: 用于 MySQL, MariaDB, PostgreSQL, SQLite, Oracle 和 Microsoft SQL
 
 参考第 10 章获取数据库使用示例。
 
-# 模板
+## 模板
 
 大多数模板系统通过将值插入适当的块来生成 HTML。提供一些编程结构（如文件包含、循环和条件）以优化开发。流行的选项包括：
 
 - EJS
-- unucks
+- nunjucks
 - Handlebars
 - Pug
 
-Pug 与其他工具的区别在于，你使用简洁的缩进式文档，而不是 HTML 标签。例如，假设在以下 Pug 模板中 `title` 的值设置为“My Site”：
+`Pug` 与其他工具的区别在于，你使用简洁的缩进式文档，而不是 HTML 标签。例如，假设在以下 Pug 模板中 `title` 的值设置为“My Site”：
 
 ```
 doctype html
@@ -6850,7 +5265,7 @@ body
 
 生成的 HTML 是：
 
-```
+```html
 <!DOCTYPE html>
 <html>
 <head>
@@ -6863,7 +5278,7 @@ body
 </html>
 ```
 
-你通常会在像 Express 这样的服务器端框架中使用模板系统。本书的第 5 章、第 6 章和第 15 章使用了 EJS。例如，在部分组件（partials）的头部和页脚之间渲染一个 <h1> 标题：
+你通常会在像 `Express` 这样的服务器端框架中使用模板系统。本书的第 5 章、第 6 章和第 15 章使用了 `EJS`。例如，在部分组件（partials）的头部和页脚之间渲染一个 `<h1>` 标题：
 
 ```html
 <%- include('partials/_htmlhead'); -%>
@@ -6874,48 +5289,48 @@ body
 <%- include('partials/_htmlfoot'); -%>
 ```
 
-# 命令行 (Command Line)
+## 命令行 (Command Line)
 
 在使用 Node.js 创建命令行应用时，以下包非常有用：
 
-- commander : 解析命令行参数
-- clify : 实现交互式 CLI
-- chalk : 输出彩色控制台消息
-- terminal-link : 输出可点击的超链接
-- boxen : 输出边框
-- progress : 一个简单的进度条
+- commander: 解析命令行参数
+- clify: 实现交互式 CLI
+- chalk: 输出彩色控制台消息
+- terminal-link: 输出可点击的超链接
+- boxen: 输出边框
+- progress: 一个简单的进度条
 
 ```
 progress [=====     ] 29%
 ```
 
-# 文件系统
+## 文件系统
 
 标准的 Node.js 库提供了广泛的文件系统 API，用于创建、修改、读取和删除文件及目录。这些是相当底层的函数，因此以下包提供了更容易的文件操作选项：
 
-- fs-extra : 提供方法
-- globby : 匹配
-- chokidar : 文件监听
-- del : 删除
-- rimraf : 目录
+- fs-extra: 提供方法
+- globby: 匹配
+- chokidar: 文件监听
+- del: 删除
+- rimraf: 目录
 
-# 网络
+## 网络
 
 以下包提供了从网络请求和获取数据的 API：
 
-- axios : HTTP Fetch
-- got : HTTP Fetch
-- node-fetch : HTTP Fetch
-- request : HTTP Fetch
+- axios: HTTP Fetch
+- got: HTTP Fetch
+- node-fetch: HTTP Fetch
+- request: HTTP Fetch
 
-# WebSockets
+## WebSockets
 
 WebSockets 建立双向通信通道。以下包提供了服务器和客户端：
 
-- ws : 轻量级服务器
-- socket.io : 完整的客户端
+- ws: 轻量级服务器
+- socket.io: 完整的客户端
 
-# 图片
+## 图片
 
 Node.js 应用可以创建、检查和修改大多数流行格式（JPG, GIF, PNG 等）的图片。包通常提供缩放、裁剪、翻转和旋转，或应用锐化、模糊、灰度和透明度等过滤器。流行的选项包括：
 
@@ -6923,7 +5338,7 @@ Node.js 应用可以创建、检查和修改大多数流行格式（JPG, GIF, PN
 - image-js: 像素处理
 - sharp: 快速转换
 
-以下示例使用 jimp 加载图片，将其转换为灰度，将宽高缩小 50%，并输出修改后的版本：
+以下示例使用 `jimp` 加载图片，将其转换为灰度，将宽高缩小 50%，并输出修改后的版本：
 
 ```javascript
 import Jimp from 'jimp';
@@ -6935,9 +5350,9 @@ Jimp.read('one.png').then(image => {
 });
 ```
 
-# 电子邮件
+## 电子邮件
 
-发送电子邮件最流行的 Node.js 包是 Nodemailer。以下代码通过 SMTP 账户发送单封邮件：
+发送电子邮件最流行的 Node.js 包是 `Nodemailer`。以下代码通过 SMTP 账户发送单封邮件：
 
 ```javascript
 const nodemailer = require('nodemailer');
@@ -6961,30 +5376,26 @@ await transport.sendMail({
 });
 ```
 
-另一种方案是 node-email，它提供了开源 Sendmail 程序的封装。对于用户注册或密码重置确认等即时邮件，任一方案都可以。
+另一种方案是 `node-email`，它提供了开源 `Sendmail` 程序的封装。对于用户注册或密码重置确认等即时邮件，任一方案都可以。
 
 批量邮件推送——如新闻通讯——最好使用专用服务，如 Mailgun、SendGrid、MailerSend 或 Mailchimp。这些服务通常提供 Node.js API 来高效地管理邮件传输。
 
-最后，imap-simple 提供了一种连接并读取 IMAP 收件箱的方法，以便在你需要提供自动邮件回复时。
+最后，`imap-simple` 提供了一种连接并读取 IMAP 收件箱的方法，以便在你需要提供自动邮件回复时。
 
-# 安全与身份验证
+## 安全与身份验证
 
-Passport 是 Node.js 中最流行的 Express 兼容身份验证包之一。它支持超过 500 种策略（插件），范围从基础的用户名和密码到无密码和单点登录。
-
-
+`Passport` 是 Node.js 中最流行的 `Express` 兼容身份验证包之一。它支持超过 500 种策略（插件），范围从基础的用户名和密码到无密码和单点登录。
 
 适用于 Google、GitHub、Facebook、Twitter 和 LinkedIn 的 OAuth 选项。
 
-另一种可选方案是 grant，它支持超过 200 个 OAuth 提供者。
+另一种可选方案是 `grant`，它支持超过 200 个 OAuth 提供者。
 
-# 总结
+## 总结
 
 Node.js 生态系统极其庞大且呈指数级增长。第三方包通常设计用于处理某个特定的任务，因此你会发现对于每种情况都能找到一系列合适的选项。其缺点是：
 
-- 在花费精力和精力评估程序包时，很容易感到无所从从并产生“选择恐惧症”。
-
+- 在花费精力评估程序包时，很容易感到无所适从并产生“选择恐惧症”。
 - 你可能会越来越依赖第三方解决方案。你的开发生涯可能会沦为编写枯燥的代码来将各个包“粘合”在一起。
-
 - 使用的第三方包越多，维护和更新该软件所需的时间就越长。随着 API 的演进，你通常需要更新自己的代码。
 
 世界上并不存在完美的 Node.js 包，我不为重复我的格言而感到抱歉：只使用绝对必要的第三方模块。把大部分时间花在编写代码上，而不是选择工具和资源！
@@ -6992,15 +5403,18 @@ Node.js 生态系统极其庞大且呈指数级增长。第三方包通常设计
 我希望你现在已经准备好了几个简单的 Web 项目来向世界展示。下一章将深入探讨部署。
 
 # 第 18 章
-Node.js 应用部署
+
+## Node.js 应用部署
 
 你最终会想要将 Node.js Web 应用发布到世界上。
+
 自 2009 年运行时发布以来，部署选项呈指数级增长。本章描述了生产环境托管的通用类型，并提供了相关公司的链接，但服务的范围和价格每天都在变化。
 
 ## 页面 vs 应用
 
-本书的许多读者会熟悉 PHP——世界上最广泛使用的 Web 编程语言。仅 WordPress 一一个就运行了几乎一半的网站。
-PHP 应用由 .php 文件组成，当通过 Apache 等服务器访问它们时，PHP 运行时会对它们进行解释。然后，HTML 或数据将返回给用户的浏览器。
+本书的许多读者会熟悉 PHP——世界上最广泛使用的 Web 编程语言。仅 WordPress 一个就运行了几乎一半的网站。
+
+PHP 应用由 `.php` 文件组成，当通过 Apache 等服务器访问它们时，PHP 运行时会对它们进行解释。然后，HTML 或数据将返回给用户的浏览器。
 
 ![](img/df734780c88ebde9dc5bf93f50faf4c6_368_0.png)
 
@@ -7009,12 +5423,10 @@ PHP 应用由 .php 文件组成，当通过 Apache 等服务器访问它们时�
 需要注意以下几点：
 
 - 每次页面加载都是无状态的。它不了解应用的状态，因此如果用户已登录，则在每次页面请求期间必须从令牌或数据库记录中检索其状态。
+- 更改 `.php` 文件会立即更新应用，因为代码会在用户请求该资源时执行。
+- 导致错误的 `.php` 文件不太可能在其他页面上引起问题。当然，该 `.php` 文件可能提供多个页面共享的函数，但服务器和应用的其他部分通常会保持活动。
 
-更改 .php 文件会立即更新应用，因为代码会在用户请求该资源时执行执行。
-
-- 导致错误的 .php 文件不太可能在其他页面上引起问题。当然，该 .php 文件可能提供多个页面共享的函数，但服务器和应用的其他部分通常会保持活动。
-
-Node.js Web 项目是一个处理 Web 请求的完整应用。它（不一定）需要 Apache 这样的服务器，并在代码从 .js 文件加载后持续运行。
+Node.js Web 项目是一个处理 Web 请求的完整应用。它（不一定）需要 Apache 这样的服务器，并在代码从 `.js` 文件加载后持续运行。
 
 ![](img/df734780c88ebde9dc5bf93f50faf4c6_369_0.png)
 
@@ -7023,14 +5435,12 @@ Node.js Web 项目是一个处理 Web 请求的完整应用。它（不一定）
 因此：
 
 - 状态可以保留。如果有必要，服务器应用可以为每个登录用户存储 JavaScript 对象。（我建议你编写无状态应用，但这并非强制）
-
-- 更改 .js 文件对运行中的应用没有影响。它只会在 node 进程停止并重启后被加载。
-
+- 更改 `.js` 文件对运行中的应用没有影响。它只会在 `node` 进程停止并重启后被加载。
 - 如果应用的任何部分导致崩溃，它将永远停止！没有任何用户能够访问系统的任何部分，并且它将丢失任何保留在内存中的状态。
 
 Node.js 模型相比 PHP 有优点也有缺点，但将应用部署到生产服务器更具挑战性。
 
-大多数共享服务器主机支持 PHP，因为可以通过向服务器目录上传 .php 文件来运行。提供 Node.js 的主机要少得多，因为你需要操作系统级别的访问权限来启动应用，因为它在持续运行时可能会占用资源。
+大多数共享服务器主机支持 PHP，因为可以通过向服务器目录上传 `.php` 文件来运行。提供 Node.js 的主机要少得多，因为你需要操作系统级别的访问权限来启动应用，因为它在持续运行时可能会占用资源。
 
 有些主机通过 cPanel 等系统提供 Node.js 功能，可以在其中定义应用的启动命令和配置。然而，这些功能通常会实施运行时限制，例如 CPU 限制或无法访问 npm。
 
@@ -7046,7 +5456,7 @@ Node.js 模型相比 PHP 有优点也有缺点，但将应用部署到生产服�
 NODE_ENV=production
 ```
 
-设置后，Express 框架将禁用详细日志并启用模板缓存以提高性能。其他模块可能提供类似的优化，请检查它们的 README 文件和文档。
+设置后，`Express` 框架将禁用详细日志并启用模板缓存以提高性能。其他模块可能提供类似的优化，请检查它们的 README 文件和文档。
 
 在内部，你的应用可以检测 `NODE_ENV` 值并禁用终端调试信息，或进行其他更改，例如记录到文件中。例如：
 
@@ -7063,7 +5473,7 @@ if (DEVMODE) {
 
 可能需要其他环境变量来定义应用配置或数据库连接。
 
-最后，生产服务器通常应该使用 node 运行时命令启动应用，而不是 nodemon 或类似的工具。不应使用如 `--inspect` 和 `--enable-source-maps` 等命令行选项。
+最后，生产服务器通常应该使用 `node` 运行时命令启动应用，而不是 `nodemon` 或类似的工具。不应使用如 `--inspect` 和 `--enable-source-maps` 等命令行选项。
 
 ## 专用服务器托管
 
@@ -7079,11 +5489,11 @@ if (DEVMODE) {
 
 许多主机提供虚拟服务器，包括 DigitalOcean Droplets、Amazon EC2、Google Compute Engine 和 Azure 虚拟机。
 
-> **不要**使用 sudo 以管理员权限运行 Node.js 应用。应用或任何模块都可以执行任何操作——例如删除文件。
+> **不要**使用 `sudo` 以管理员权限运行 Node.js 应用。应用或任何模块都可以执行任何操作——例如删除文件。
 
 ## HTTP 和 HTTPS 考虑
 
-第 5 章介绍了如何在 Express 中配置 SSL 证书。在生产服务器上不建议这样做，因为必须使用 sudo 来使用 1000 以下的端口（HTTPS 为 443）。
+第 5 章介绍了如何在 `Express` 中配置 SSL 证书。在生产服务器上不建议这样做，因为必须使用 `sudo` 来使用 1000 以下的端口（HTTPS 为 443）。
 
 更好的选项是非标准端口（例如 3000）上启动应用，然后使用反向代理（参见“使用反向代理”章节）来转发流量。
 
@@ -7094,7 +5504,7 @@ if (DEVMODE) {
 我建议你采取任一方法：
 
 - 在开发期间使用 HTTP，但在引用生产服务器上的内部 URL 时要小心。
-- 使用 mkcert 生成真实的本地信任的 SSL 证书。这些证书可以在你自己的开发 PC 上使用，但你无法与其他成员共享（因此他们需要生成自己的证书）。
+- 使用 `mkcert` 生成真实的本地信任的 SSL 证书。这些证书可以在你自己的开发 PC 上使用，但你无法与其他成员共享（因此他们需要生成自己的证书）。
 
 ## 进程管理
 
@@ -7111,31 +5521,23 @@ Node.js 应用运行在单处理线程上。换句话说，你的 64 核服务�
 
 ### 18-4. PM2
 
-PM2 是 Node.js 进程管理的主要竞争者。在
+`PM2` 是 Node.js 进程管理的主要竞争者。通过全局安装，你可以跨所有可用 CPU 核心启动集群模式启动 Node.js 应用程序：
 
-
-
-
-
-# Node.js：从新手到大师
-
-通过全局安装，你可以跨所有可用 CPU 核心启动模式启动 Node.js 应用程序：
-
-```
+```bash
 pm2 start app.js -i max
 ```
 
 > ### PM2 端口冲突
-
-PM2 会神奇地管理端口。如果你的 Express 应用程序有十六个实例都监听 3000 端口，PM2 会确保它们不会发生冲突。发送到 3000 端口的单个请求会被转发到一个应用程序实例。下一个请求可能会发送到另一个。
-
-请注意，如果你使用 npm 脚本启动应用程序，PM2 的端口管理可能会失效。
+>
+> `PM2` 会神奇地管理端口。如果你的 `Express` 应用程序有十六个实例都监听 3000 端口，`PM2` 会确保它们不会发生冲突。发送到 3000 端口的单个请求会被转发到一个应用程序实例。下一个请求可能会发送到另一个。
+>
+> 请注意，如果你使用 npm 脚本启动应用程序，`PM2` 的端口管理可能会失效。
 
 可以使用 `pm2 status` 监控运行进程。
 
-# 使用反向代理
+## 使用反向代理
 
-反向代理将传入的请求传递给你的 Node.js Web 应用程序。大多数 Web 服务器都可以配置为反向代理——包括 NGINX。
+反向代理将传入的请求传递给你的 Node.js Web 应用程序。大多数 Web 服务器都可以配置为反向代理——包括 `NGINX`。
 
 ![](img/df734780c88ebde9dc5bf93f50faf4c6_374_0.png)
 
@@ -7143,13 +5545,10 @@ PM2 会神奇地管理端口。如果你的 Express 应用程序有十六个实�
 
 - 在同一台服务器上可以配置任意数量的域名和应用程序。
 - 你的 Node.js 应用程序可以集群化并在无需使用 `sudo` 的情况下启动。
-
-# Node.js 应用程序部署
-
 - HTTPS 的 SSL 证书可以由 Web 服务器管理。
-Web 服务器可以配置为提供静态资源——例如客户端图像、CSS 和 JavaScript。这比将请求传递给 Express 效率更高，因为大多数 Web 服务器都是多线程的。
+- Web 服务器可以配置为提供静态资源——例如客户端图像、CSS 和 JavaScript。这比将请求传递给 `Express` 效率更高，因为大多数 Web 服务器都是多线程的。
 
-位于 /etc/nginx/sites-available/default 的 NGINX 配置文件可以定义入站端口、SSL 证书、查找静态文件的路径，并在未找到静态文件时将请求解析到 Node.js 应用程序：
+位于 `/etc/nginx/sites-available/default` 的 `NGINX` 配置文件可以定义入站端口、SSL 证书、查找静态文件的路径，并在未找到静态文件时将请求解析到 Node.js 应用程序：
 
 ```
 server {
@@ -7182,11 +5581,11 @@ server {
 }
 ```
 
-NGINXConfig 配置工具可以帮助创建适用于你要求的设置。
+`NGINXConfig` 配置工具可以帮助创建适用于你要求的设置。
 
-# 静态站点托管 (Jamstack)
+## 静态站点托管 (Jamstack)
 
-如果你的应用程序主要使用客户端 HTML、CSS 和 JavaScript，那么可能不需要部署 Node.js 应用程序或使用任何服务端运行时。静态站点生成器 (SSG) 使用内容（通常是 Markdown）和模板构建基于目录的 HTML 文件。市上有许多 SSG，但 Eleventy 是较较受欢迎的 Node.js 选项之一。
+如果你的应用程序主要使用客户端 HTML、CSS 和 JavaScript，那么可能不需要部署 Node.js 应用程序或使用任何服务端运行时。静态站点生成器 (SSG) 使用内容（通常是 Markdown）和模板构建基于目录的 HTML 文件。市上有许多 SSG，但 `Eleventy` 是较受欢迎的 Node.js 选项之一。
 
 生成的构建文件可以上传到任何 Web 服务器。这些页面提供了：
 
@@ -7199,17 +5598,17 @@ NGINXConfig 配置工具可以帮助创建适用于你要求的设置。
 
 某些服务器提供简单的命令行部署工具，而另一些要求你将分支推送到 Git 仓库。
 
-> 使用 Node.js 构建 驱动的静态站点
+> 使用 Node.js 构建驱动的静态站点
+>
+> 我经常对小型网站使用 Node.js SSG。有时它们需要基本的服务端功能，例如重定向旧 URL 或解析内容表单。与其部署 Node.js 服务器，我会输出几个 `.php` 文件，这样站点就可以部署到任何 PHP 托管主机。
 
-我经常对小型网站使用 Node.js SSG。有时它们需要基本的服务端功能，例如重定向旧 URL 或解析内容表单。与其部署 Node.js 服务器，我会输出几个 .php 文件，这样站点就可以部署到任何 PHP 托管主机。
+## Serverless/Lambda 函数
 
-# Serverless/Lambda 函数
+如果你的应用需要更全面的服务端处理（例如数据库存储），你可以考虑 serverless 函数。尽管名字如此，serverless 函数仍然运行在服务器上，但你不需要管理操作系统、运行时或使用像 `Express` 这样的框架。
 
-如果你的应用需要更全面的服务端处理（例如数据库存储），你可以考虑 serverless 函数。尽管名字如此，serverless 函数仍然运行在服务器上，但你不需要管理操作系统、运行时或使用像 Express 这样的框架。
+Serverless 函数通常在网络端点处响应。例如，发布到 `https://myapp.com/store-contact/` 的数据会将 HTTP 请求传递给在 `store-contact.js` 中定义的函数，该函数存储信息并返回结果。位于 `functions/hello.js` 的以下 Netlify serverless 函数返回请求 `/hello/` 端点的消息：
 
-Serverless 函数通常在网络端点处响应。例如，发布到 https://myapp.com/store-contact/ 的数据会将 HTTP 请求传递给在 store-contact.js 中定义的函数，该函数存储信息并返回结果。位于 functions/hello.js 的以下 Netlify serverless 函数返回请求 /hello/ 端点的消息：
-
-```
+```javascript
 exports.handler = async (event, context) => {
   return (
     statusCode: 200,
@@ -7222,85 +5621,74 @@ exports.handler = async (event, context) => {
 
 大多数云托管商都提供 Node.js serverless 函数，包括 AWS、Azure、Google、Cloudflare、Heroku、Vercel 和 Netlify。
 
-# AWS 无处不在
+## AWS 无处不在
 
-许多 serverless 托管商（包括 Netlify 和 Vercel）都部署 serverless 函数。Node.js 应用程序部署
+许多 serverless 托管商（包括 Netlify 和 Vercel）都部署 serverless 函数。
 
-- 使用限制：serverless 函数可以-
-- 启动延迟：但 Node.js 可以
-- 供应商锁定：serverless 函数可以是
-- 不可估量的成本：Node.js 是 de
-- 关闭：如果 serverless 函数是
+- 使用限制：serverless 函数可以……
+- 启动延迟：但 Node.js 可以……
+- 供应商锁定：serverless 函数可以是……
+- 不可估量的成本：Node.js 是 de……
+- 关闭：如果 serverless 函数是……
 
-# 容器托管
+## 容器托管
 
 许多 serverless 托管商（包括 Netlify 和 Vercel）都部署 serverless 函数。Node.js 已从一个小众的引擎演变为不可或缺的开发者运行时。即使使用其他语言的人也会安装 Node.js，因为它们提供了许多在其他地方可能找不到的工具。
 
-原因：JavaScript。Web 开发已成为平台应用程序的主要媒介，因此很难避免基于浏览器的代码。在前端和后端使用相同的语言可以减少认知负担。Node.js 将不会
+原因：JavaScript。Web 开发已成为平台应用程序的主要媒介，因此很难避免基于浏览器的代码。在前端和后端使用相同的语言可以减少认知负担。Node.js 将不会……
 
-# 总结
+## 总结
 
-Node.js 托管方案多种多样，拥有丰富的生态系统，价格从免费到昂贵不等。我个人喜欢编写与服务无关的应用程序并且可以。我们已经到了你应该考虑 AWS 的点。
-
-
-
-
+Node.js 托管方案多种多样，拥有丰富的生态系统，价格从免费到昂贵不等。我个人喜欢编写与服务无关的应用程序并且可以……我们已经到了你应该考虑 AWS 的点。
 
 # Node.js：从新手到忍者
 
 当然，Node.js 并非没有批评之处：
 
-- 1 有些程序员非常憎恶 JavaScript。
+- **1** 有些程序员非常憎恶 JavaScript。
 
 没有一种语言是完美的，但 JavaScript 是在十天内开发的，它的发明者 Brendan Eich 很可能从未考虑过它会被用于全规模的企业级应用。某些问题已经通过 ES6 以及像 TypeScript 这样的 JavaScript 编译器中的类型得到了解决。
 
 就个人而言，我热爱 JavaScript——尽管它有各种缺点。那些抱怨得最厉害的人通常是在与他们最喜欢的语言进行比较，并且被 JavaScript 的奇特性（如原型继承）所坑过。如果它不符合你的胃口，永远不要坚持，或者考虑许多服务器端替代方案之一。
 
-- 2 npm显得很繁琐。
+- **2** npm 显得很繁琐。
 
-npm 对 Node.js 的成功有部分功劳。它可以轻松安装、更新和删除 150 万个包中的任何一个。可以理解，并不是每个包都是好的，有些甚至非常危险——充斥着恶意软件和加密矿代码。npm 解决了许多问题，但其他问题仍会发生。
+`npm` 对 Node.js 的成功有部分功劳。它可以轻松安装、更新和删除 150 万个包中的任何一个。可以理解，并不是每个包都是好的，有些甚至非常危险——充斥着恶意软件和加密矿代码。`npm` 解决了许多问题，但其他问题仍会发生。
 
-尽管最近进行了优化，你的 `node_modules` 目录仍然会增长到几兆字节，npm 仍然可以在不同项目中下载相同的包。从长远来看，软件包维护可能会变得越来越费力。
+尽管最近进行了优化，你的 `node_modules` 目录仍然会增长到几兆字节，`npm` 仍然可以在不同项目中下载相同的包。从长远来看，软件包维护可能会变得越来越费力。
 
-记住，npm 只是一个工具。只安装你需要的包，就能最大限度地减少第三方代码的影响。
+记住，`npm` 只是一个工具。只安装你需要的包，就能最大限度地减少第三方代码的影响。
 
-- 3 CommonJS 与 ES6 模块的混乱。
+- **3** CommonJS 与 ES6 模块的混乱。
 
 Node.js 正在向 ES6 模块迁移，但这个过程是痛苦的，某些遗留包可能永远不会支持它。不过，情况正在改善，我在写这本书期间遇到的问题之少令我感到非常惊喜。
 
-# 异步编程是一项挑战。
+- **4** 异步编程是一项挑战。
 
 你在其他语言中并不一定会遇到异步编程，而且很容易犯导致应用不稳定的错误。我将整个第 9 章都给了这个主题，因为它在 Node.js 程序中非常重要。
 
-对于 JavaScript 初学者学者来说，理解回调可能是困难的，但避免客户端或服务器上的事件处理是不可能的。Promises 和 `async / await` 有帮助，尽管我最初在理解这些概念时很挣扎。
+对于 JavaScript 初学者来说，理解回调可能是困难的，但避免客户端或服务器上的事件处理是不可能的。`Promises` 和 `async / await` 有帮助，尽管我最初在理解这些概念时很挣扎。
 
 尽管如此，异步编程使得实时 Web 应用成为可能。在 Node.js 中，实时更新的仪表板、在线聊天和多人游戏要容易得多。
 
-Node.js 没有像 runtimeX 那样好/快/流行/稳定/安全。
+- **5** Node.js 没有像 runtimeX 那样好/快/流行/稳定/安全。
 
 总会有替代方案能以更好的方式处理应用程序编程的某些方面。但对于 Web 应用和命令行工具的开发，Node.js 在大多数方面已经足够优秀了。
 
 引用 C++ 设计者 Bjarne Stroustrup 的话：“语言只有两种：一种人们抱怨的语言，和没人使用的语言。”
 
-# Deno 更好吗？
+## Deno 更好吗？
 
 Ryan Dahl 在 2020 年发布了 Deno，它解决了他对 Node.js 的许多遗憾，Deno 提供了：
 
 - 更好的安全性。当应用程序需要访问环境变量、文件系统、网络和其他资源时，必须授予其特定的权限。
-
 - 原生 TypeScript 支持。你可以使用 JavaScript 或 TypeScript 编写应用程序，而无需额外的第三方编译器。
+- 仅限 ES6 模块。模块从 URL 加载：没有等同于 npm 的，包可以缓存，因此在你的系统中所有项目中都只有一个实例。
+- 内置工具。代码检查、格式化、测试、基准测试、打包、文档生成、任务运行等都可以由 `deno` 运行时提供。
+- 复制的浏览器 API。诸如 `window`、`addEventListener`、`Fetch` 和 web workers 等功能在 Deno 中可用。
+- 复制的 Node.js API。Deno 在 Node.js 兼容模式下运行时支持诸如 `fs`、`events`、`http`、`os`、`process`、`stream`、`url`、`util` 和 CommonJS。
 
-# Node.js：从新手到忍者
-
- 仅限 ES6 模块。模块从 URL 加载：没有等同于 npm 的，包可以缓存，因此在你的系统中所有项目中都只有一个实例。
-
-内置工具。代码检查、格式化、测试、基准测试、打包、文档生成、任务运行等都可以由 `deno` 运行时提供。
-
-复制的浏览器 API。诸如 `window`、`addEventListener`、`Fetch` 和 web workers 等功能在 Deno 中可用。
-
-复制的 Node.js API。Deno 在 Node.js 兼容模式下运行时支持诸如 `fs`、`events`、`http`、`os`、`process`、`stream`、`url`、`util` 和 CommonJS
-
-Deno 是一个很好的选择，但它很新，不像 Node.js 那样流行或受到良好支持。也许十年后我们都会使用 Deno，而 Node.js 将被载入历史书籍。但现在结论还为太早。用 Deno 写几个小工具或示例应用并无大碍……但当你很难找到超过几个月经验的程序员时，你应该将其用于长期的、关键任务的应用吗？
+Deno 是一个很好的选择，但它很新，不像 Node.js 那样流行或受到良好支持。也许十年后我们都会使用 Deno，而 Node.js 将被载入历史书籍。但现在结论还为时过早。用 Deno 写几个小工具或示例应用并无大碍……但当你很难找到超过几个月经验的程序员时，你应该将其用于长期的、关键任务的应用吗？
 
 Deno 与 Node.js 足够相似，因此在运行时之间切换很容易。今天学习 Node.js，明天考虑 Deno。
 
@@ -7316,95 +5704,94 @@ Deno 与 Node.js 足够相似，因此在运行时之间切换很容易。今天
 
 以下是测试的答案。
 
-# 第 1 章
+## 第 1 章
 
 - 1. d.
-2. 除了一些浅表的语法相似之处，JavaScript 与 Java没有任何技术关系！
-3. b. TypeScript 可以编译为 JavaScript，但它是 JavaScript 语法的超集，所以它本身不是 JavaScript！
-4. c.
-5. a.
+- 2. 除了一些浅表的语法相似之处，JavaScript 与 Java 没有任何技术关系！
+- 3. b. TypeScript 可以编译为 JavaScript，但它是 JavaScript 语法的超集，所以它本身不是 JavaScript！
+- 4. c.
+- 5. a.
 
-# 第 2 章
+## 第 2 章
 
 - 1. d.
-2. b.
-3. a.
+- 2. b.
+- 3. a.
 
-# 第 3 章
+## 第 3 章
 
 - 1. c.
-2. d. ... 虽然 c. 有些极端！
-3. b.
-4. a.
-d. 如果你知道 Docker 不是必须的，可以加分，尽管它可以让 Node.js 部署变得更容易！
+- 2. d. ... 虽然 c. 有些极端！
+- 3. b.
+- 4. a.
+- 5. d. 如果你知道 Docker 不是必须的，可以加分，尽管它可以让 Node.js 部署变得更容易！
 
-# 第 4 章
-
-- 1. d.
-2. d.
-3. b.
-4. a.
-5. 嗯，我要说 c。这很有主见，但我不相信有从不使用 `console.log()` 的开发者。
-
-# 第 5 章
+## 第 4 章
 
 - 1. d.
-2. c.
-3. a.
-4. c.
-5. b.
+- 2. d.
+- 3. b.
+- 4. a.
+- 5. 嗯，我要说 c。这很有主见，但我不相信有从不使用 `console.log()` 的开发者。
 
-# 第 6 章
+## 第 5 章
+
+- 1. d.
+- 2. c.
+- 3. a.
+- 4. c.
+- 5. b.
+
+## 第 6 章
 
 - 1. b.
-2. a. 但如果你定义了解析中间件函数，d 可能是正确的。
+- 2. a. 但如果你定义了解析中间件函数，d 可能是正确的。
 
-# 第 7 章
+## 第 7 章
 
 - 1. d.
-2. b.
-3. b.
-4. c.
-5. d. 如果你意识到 a. 和 b. 在旧版本的 npm 中会列出所有依赖，可以加分。
-6. a.
+- 2. b.
+- 3. b.
+- 4. c.
+- 5. d. 如果你意识到 a. 和 b. 在旧版本的 npm 中会列出所有依赖，可以加分。
+- 6. a.
 
-# 第 8 章
+## 第 8 章
 
 - 1. a.
-2. c.
-3. a.
-4. b.
-5. d.
+- 2. c.
+- 3. a.
+- 4. b.
+- 5. d.
 
-# 第 9 章
+## 第 9 章
 
 - 1. c.
-2. d.
-3. a.
-4. a.
-5. d.
+- 2. d.
+- 3. a.
+- 4. a.
+- 5. d.
 
-# 第 10 章
+## 第 10 章
 
 - 1. b.
-2. d.
-3. d.
-4. a.
-5. d.
+- 2. d.
+- 3. d.
+- 4. a.
+- 5. d.
 
-# 第 11 章
+## 第 11 章
 
 - 1. d.
-2. a.
-3. d.
-4. b.
-5. b.
+- 2. a.
+- 3. d.
+- 4. b.
+- 5. b.
 
-# 第 12 章
+## 第 12 章
 
 - 1. b.
-2. d.
-3. d.
-4. a.
-5. b.
-
+- 2. d.
+- 3. d.
+- 4. a.
+- 5. b.

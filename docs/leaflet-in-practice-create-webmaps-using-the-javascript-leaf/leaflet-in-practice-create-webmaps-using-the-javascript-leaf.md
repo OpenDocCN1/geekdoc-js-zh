@@ -1,10 +1,7 @@
+
 # Leaflet 实战：使用 JavaScript Leaflet 库创建网络地图
 
-
-
-
-
-# 前言
+## 前言
 
 本书旨在帮助新兴的GIS专家、地理学家或制图师，他们有兴趣在掌握最少JavaScript知识的情况下快速学习如何创建网页地图。本书的目标是让学习者掌握如何使用Leaflet创建几乎任何类型的网页地图。本书从自学程序员的角度撰写，更像是一本中级水平的Leaflet JavaScript语法导航指南。然而，作者希望本书能激发你的兴趣，深入使用编程不仅用于地理信息系统(GIS)目的，也用于任何其他令你着迷的目的。
 
@@ -31,11 +28,12 @@ Samuel Gachuhi Ngugi毕业于内罗毕大学，持有地理与环境研究学士
 这是许可协议的人类可读摘要（而非替代品）。免责声明。
 
 **你可以自由地：**
+
 分享 — 在任何介质或格式中复制和重新分发材料
+
 改编 — 重新混合、转换和构建材料
+
 只要您遵循许可条款，许可人就不能撤销这些自由。
-
-
 
 ## 须遵守以下条款：
 
@@ -114,13 +112,21 @@ knitr::include_graphics(rep("D:/gachuhi/my-Leaflet/images/elements.jpg"))
 让我们逐一介绍上述标签。
 
 1. `<!DOCTYPE html>` - 它是向浏览器“通报”期望什么文档类型的“信息”。
+
 2. `<html lang="en">` - 它是所有其他 HTML 元素（`<!DOCTYPE>` 标签除外）的容器。`lang` 属性用于帮助网络引擎了解网站使用的语言。
+
 3. `<head>` - 它不像其他标签那样显示在网页上，但包含网页的元数据。
+
 4. `<title>` - 能猜到吗？您猜对了。定义文档的标题。在我们的例子中，如果您在 VS Code 中创建了它并打开网页，网页的浏览器标签页将显示标题 “A basic html webpage”。
+
 5. `<meta charset="utf-8">` - 这是 `<head>` 标签托管的元数据的一部分。我们之前提到过 `<head>` 包含网页的元数据。现在我们想补充一点，位于 `<head>` 中的 `<meta>` 标签定义了元数据。您可以将其视为任何软件随附的 **README** 文本文件。在我们的例子中，`<meta>` 标签使用属性 `charset="utf-8"` 定义了 HTML5 文档的编码。不要想太多。HTML5 文档使用 `utf-8` 作为其编码。您可以试着查找什么是编码，但这对本教程没有用处！
+
 6. `<link>` - 定义文档与外部资源之间的关系。它有各种属性，但这里使用了 `rel` 和 `href`。前者指定当前文档与链接的文档/资源之间的关系。这里的 `rel` 将 `styles.css` 文件引用为我们 HTML 的样式表。也就是说，我们 HTML 的样式包含在 `styles.css` 文件中。而 `href` 将 HTML 文档指向样式表的路径——`styles.css` 文件。
+
 7. `<body>` - 这是您网页的核心。如果 `<body>` 标签内没有任何内容，您的网页将像一张白纸一样空白。此标签是网页所有其他内容（如标题、段落、图像、表格等）的载体。
+
 8. `<div>` - 这是一个特殊的元素，可让您在网页上将相似的内容组组合在一起。您可以将其用作关联相似内容的通用容器。在上面的 HTML 脚本中，我们包含了一个 `<id>` 属性，换句话说，是此网页部分的唯一标识符。`<id>` 在您想要自定义网页特定部分的外观时非常有用。`<class>` 的行为类似，但 `<id>` 和 `<class>` 之间的区别在于 `<id>` 必须是唯一的，而 `<class>` 可以多次使用。
+
 9. `<script>` - 用于嵌入可执行代码或数据。在大多数情况下，它指的是 JavaScript，它增强了交互性。
 
 如果您注意到上面，大多数 HTML 标签以 `</标签名>` 结尾。除了少数例外（如 `<img>`），几乎所有 HTML 标签都以此方式结束。
@@ -136,6 +142,7 @@ CSS 代表 *层叠样式表*。CSS 定义了您 HTML 的外观，例如文本的
 尽管在新手眼中看似简单，但 CSS 是一个相当庞大的领域。然而，网页的 HTML 元素都带有一个包含指定属性和值的花括号。CSS 术语“属性”和“值”描述如下。
 
 - **属性**：这些是人类可读的标识符，指示您要修改哪些样式特征。例如，`font-size`、`width`、`background-color`。
+
 - **值**：每个属性都分配一个值。此值指示如何设置属性的样式。
 
 以我们的 ProGMO 网站为例，以下是我们将如何指定网页 `<body>` 元素的字体和颜色。在某些情况下，CSS 元素中的属性值可以不止一个，如下方的 **font-family**。
@@ -183,8 +190,11 @@ MDN 网站提供了大量关于 HTML 和 CSS 的信息。
 本章介绍了超文本标记语言（HTML）、JavaScript 和层叠样式表（CSS）语言。你学到了以下内容：
 
 - 你可以在 HTML 或 JavaScript 文件中使用 Leaflet。在 HTML 中，JavaScript 代码必须出现在 `<script>` 标签下。
+
 - HTML 文件由称为标签的元素组成。标签是将任何形式的内容引入网页的特征。
+
 - JavaScript 是网络的主要语言。它是负责大多数网站交互性的语言。
+
 - CSS 代表层叠样式表（Cascading Style Sheets）。CSS 定义了你的 HTML 应该如何显示，例如文本的颜色和大小、背景颜色，甚至 HTML 页面的结构。
 
 ## 第 1 章. 简介
@@ -272,9 +282,13 @@ L.tileLayer 所做的是从提供的统一资源定位符（url）源检索网�
 在本章中，我们创建了我们的第一个 Leaflet 地图。以下是你在这段网络地图之旅第一步中学到的一些东西。
 
 - 浏览器从上到下读取代码脚本，就像快速浏览页面一样。
+
 - 在 CSS 样式表中定义的样式（本例中为 `styles.css`）将应用于 `map.html` 文件中的 HTML 元素。
+
 - 我们使用 `src` 属性将 HTML 以外的其他文件（如 JavaScript 文件）链接到你的 HTML 文件。例如，在线脚本 `leaflet.js` 通过 `<script>` 的 `src` 属性连接到 HTML 文件，使 HTML 文件能够执行 Leaflet 功能，如网络地图创建、渲染和控件。
+
 - 如果 HTML 是宏伟的建筑，JavaScript 就像一位优秀的外部设计师。
+
 - `L.map()` 类就是初始化 Leaflet 地图的类。
 
 # 第 3 章. 附加组件
@@ -284,8 +298,6 @@ L.tileLayer 所做的是从提供的统一资源定位符（url）源检索网�
 就像一部剧集的最终季，本集以“上回讲到...”开头，本章将是第 2 章的延续。所以我们有了一个看起来很简单的网络地图，如下所示。
 
 然而，尽管它是一个很酷的网络地图，但它没有向用户提供任何其他附加信息。为了传递一些信息，例如显示基苏木的位置以及*其他内容*，标记是显示此类内容的一种方式。顺便提一下，这里还有其他与 Leaflet 兼容的底图图层服务器。
-
-
 
 ## 3.2 一个标记点
 
@@ -429,11 +441,16 @@ knitr::include_graphics(rep("D:/gachuhi/my-leaflet/images/polygon-marker.jpg"))
 本章带你进一步丰富了网络地图中可以显示的内容。你已经看到，网络地图可以提供的有用信息远不止网络画布上的简单标记和符号。弹出窗口是显示信息的一种方式，它们也可以进一步定制。通过本章的实践，你学到了以下内容：
 
 - 要在 Leaflet 中创建弹出窗口，我们使用 `bindPopup` 方法。
+
 - `openPopup` 在 Leaflet 地图加载后会自动打开弹出窗口。它们只有在你关闭后才会消失。
+
 - 标记点也可以与HTML元素一起使用。
+
 - 除了位置图钉，标记点也可以是圆形和矩形。
+
 - Leaflet 中存在一些方法，可以自动解析弹出窗口中的信息，而无需程序员进行任何硬编码。例如，我们使用 `getRadius` 在弹出窗口中显示圆的半径，而无需在 `bindPopup` 方法中手动输入。
-- 你可以使用 `//` 来注释掉 JavaScript 代码。
+
+- 你可以使用 `//` 来注释掉 JavaScript 代码.
 
 # 第三章 附加功能
 
@@ -452,8 +469,6 @@ knitr::include_graphics(rep("D:/gachuhi/my-leaflet/images/webmap-in-web.jpg"))
 ![网站中的网络地图](img/264f6ca7b7ac3fbb9517b8a021818465_31_0.png)
 
 在本练习中，我们将把一个 Leaflet 地图嵌入到一个简单的 HTML 网页中。这
-
-
 
 ## 4.2 HTML 网页
 
@@ -526,7 +541,7 @@ knitr::include_graphics(rep("D:/gachuhi/my-leaflet/images/webmap-in-web.jpg"))
 <div id="div-for-article">
     <article id="introduction">
         <h2>Introduction</h2>
-        <q>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt, ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</q>
+        <q>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciint. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt, ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</q>
     </article>
 </div>
 <div id="div-for-section">
@@ -658,7 +673,7 @@ for (var i = 0; i < branches.length; i++) {
 
 好的。那么关键字 `new` 呢？
 
-`new` 关键字是一个构造函数。也就是说，它创建一个空对象。可以从 `new` 对象的实例创建变量 `marker` 的多个实例。有关 `new` 关键字构造函数的更多信息，请参阅此网站。请放心，`new` 关键字并非使我们的网络地图正常工作的必需品，但学习这个 JavaScript 技巧对你来说是有益的，可以增加你的知识储备。
+`new` 关键字是一个构造函数。也就是说，它创建一个空对象。可以从 `new` 对象的实例创建变量 `marker` 的多个实例。有关 `new` 关键字构造函数的更多信息，请参阺此网站。请放心，`new` 关键字并非使我们的网络地图正常工作的必需品，但学习这个 JavaScript 技巧对你来说是有益的，可以增加你的知识储备。
 
 下面是虚构的 Pro-GMO 网站嵌入我们新的网络地图后的截图。
 
@@ -687,10 +702,10 @@ Our Branches
 本章向您介绍了如何使用 CSS 来自定义网络地图的外观和位置。您还接触到了在 JavaScript 代码中使用 `for` 循环来检索地理空间信息，特别是从数组中检索。以下是本章的一些要点。
 
 *   如虚构的 Pro-GMO 网页所示，Leaflet 地图可以嵌入到网站内部。
+
 *   可以使用 `for` 循环来遍历数组中的元素并检索地理空间信息。在本章中，`for` 循环被用于从 `branches` 数组变量中检索经纬度坐标和文本。
-*   我们可以使用 CSS 元素，如 `display` 和 `padding-left`，来定位和定义网络地图在我们的网页上如何显示。
 
-
+*   我们可以使用 CSS 元素，如 `display` 和 `padding-left`，来定位和定义网络地图在我们的网页上如何显示.
 
 ## 第五章
 
@@ -796,7 +811,7 @@ knitr::include_graphics(rep("D:/gachuhi/my-leaflet/images/table.jpg"))
 
 ![image](img/264f6ca7b7ac3fbb9517b8a021818465_41_0.png)
 
-点击它，在出现的图形中，为你的列命名为**City**。点击**Ok**，然后在出现的表格单元格中，输入**Nairobi**。
+点击它，在出现的图形中，为你的列命名为**City**。点击**Ok**，然后在出现的表格单元中，输入**Nairobi**。
 
 ```
 knitr::include_graphics(rep("D:/gachuhi/my-leaflet/images/nairobi-named.jpg"))
@@ -819,13 +834,21 @@ read.csv("D:/gachuhi/my-leaflet-vs/data/points.csv")[ , 1:2]
 ```
 
 | 城市 | 人口 |
+
 | :--- | :--- |
+
 | Nairobi | 4, 300, 000 |
+
 | Kisumu | 610, 082 |
+
 | Mombasa | 1, 440, 000 |
+
 | Nakuru | 422, 000 |
+
 | Nyeri | 759, 164 |
+
 | Machakos | 1, 422, 000 |
+
 | Malindi | 119, 859 |
 
 完成后，前往geojson.io网站的左上角，点击**Save**。将出现一个选项列表，点击另存为**geojson**。它应该会出现在你的*Downloads*目录中的某个地方。
@@ -879,8 +902,6 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
 ```
 knitr::include_graphics(rep("D:/gachuhi/my-leaflet/images/geojson-copy.jpg"))
 ```
-
-
 
 ## 5.6. 将GeoJSON加载到Leaflet中
 
@@ -1042,8 +1063,6 @@ fetch("https://raw.githubusercontent.com/sammigachuhi/geojson_files/main/cities-
 
 ¹异步编程是一种技术，它使你的程序能够启动一个可能耗时较长的任务，并且在该任务运行时仍能响应其他事件，而不是必须等到该任务完成。一旦该任务完成，程序就会呈现结果。参见Mozilla
 
-
-
 ## 5.6. 将 GeoJSON 加载到 Leaflet 中
 
 ```javascript
@@ -1093,9 +1112,11 @@ knitr::include_graphics(rep("D:/gachuhi/my-leaflet/images/city-population.jpg"))
 
 谁能想到简单的 GeoJSON 文件加载和查看起来会如此复杂？让我们回顾一下所学内容。
 
+
+
 -   GeoJSON 文件是一种开放标准的地理空间数据交换格式，用于表示简单的地理要素及其非空间属性。
 -   GeoJSON 基于以其轻量级特性而闻名的 JavaScript 对象表示法（JSON）文件格式。
--   GeoJSON 文件是在 Web 上处理空间信息的*通用语言*。
+-   GeoJSON 文件是在 Web 上处理空间信息的通用语言。
 -   geojson.io 网站允许用户以交互式和直观的方式创建 GeoJSON 文件。
 -   在 Leaflet 中加载 GeoJSON 文件主要有三种方法。一种是在 JavaScript 文件中硬编码空间属性的字典。这是我们探索的第一种方法。
 -   另一种方法是使用 Ajax 插件。我们通过将提取的 Ajax 文件路径插入到 `<head>` 元素中来调用 Ajax 到 Leaflet。
@@ -1103,7 +1124,7 @@ knitr::include_graphics(rep("D:/gachuhi/my-leaflet/images/city-population.jpg"))
 
 ## 第六章：创建你自己的自定义标记
 
-## 6.1 设置基础
+### 6.1 设置基础
 
 希望你没有丢弃我们在上一章创建的城市。在本章中，我们将专注于创建自己的自定义标记。我们喜欢干净的工作，因此我们将创建一个新的 JavaScript 文件并将其命名为 `custom-markers.js`。我们知道上一章相当长，但请相信我，尽管创建自定义标记听起来更容易，但我们花了更长时间才掌握它。好消息是，我们已经经历了足够多的教训来教你如何避免这些痛点。
 
@@ -1246,7 +1267,7 @@ knitr::include_graphics(rep("D:/gachuhi/my-leaflet/images/geojson-nowebmap.jpg")
 
 没有渲染地图，只是一个包含其他字典的字典。
 
-## 6.2 图标
+### 6.2 图标
 
 好的。让我们创建一个城市地图，但这次使用自定义标记。以下代码创建了我们的自定义标记。
 
@@ -1292,14 +1313,7 @@ L.geoJSON(cities, {
         return L.marker(latlng, {icon: yellowIcon});
     }
 }).bindPopup(function (layer) {
-```
-
-
-
-## 第六章 创建自定义标记
-
-```js
-return layer.feature.properties.City;
+    return layer.feature.properties.City;
 }).addTo(map);
 ```
 
@@ -1313,7 +1327,7 @@ knitr::include_graphics(rep("D:/gachuhi/my-leaflet/images/geojson-markers.jpg"))
 
 所有城市都被标记为黄色，无论其人口数量或行政级别如何。从制图师的角度来看，这个网页地图需要更多的样式设计，但在深入之前，我们先来看看`pointToLayer()`函数的用途是什么？根据Leaflet指南，`pointToLayer()`是针对GeoJSON变量的一个特殊函数，它指定了这些变量应如何被绘制。更具体地说，该函数将`return L.marker...`函数解析到每一个经纬度坐标上，从而在该点创建一个标记。
 
-## 6.3 在网页地图上区分自定义标记
+### 6.3 在网页地图上区分自定义标记
 
 现在来看城市标记。我们希望标记能根据某个特定变量（比如人口）来区分城市。顺便说一句，城市规模通常由人口决定。以下代码将根据圆形标记的大小对城市进行分类，而这个大小将基于城市的人口。如果你在QGIS中见过点符号，准备好在Leaflet中看看它们的实际效果吧！
 
@@ -1402,7 +1416,7 @@ knitr::include_graphics(rep("D:/gachuhi/my-leaflet/images/geojson-diff2.jpg"))
 
 `pointToLayer()`键的值被分配了一个函数，该函数检查城市人口是否在特定范围内。如果一个城市落在if语句指定的范围内，`L.marker()`函数就会返回一个特定的图标——无论是`yellowIcon`、`orangeIcon`还是`redIcon`。
 
-## 6.4 使用 fetch
+### 6.4 使用 fetch
 
 还记得在前面章节中`fetch`如何帮助我们从服务器检索数据吗？虽然我们不会重复整个过程（你可以松一口气了），但区分标记图标的相同逻辑也可以插入到`fetch` API中。所有这些操作都在`L.geoJson(data, {options})`的选项内部完成。
 
@@ -1446,7 +1460,7 @@ knitr::include_graphics(rep("D:/gachuhi/my-leaflet/images/cities_colored.jpg"))
 
 ![](img/264f6ca7b7ac3fbb9517b8a021818465_63_0.png)
 
-## 6.5 独特的自定义标记
+### 6.5 独特的自定义标记
 
 这部分可能不是必需的，但加入它是为了向你展示除了Leaflet提供的默认标记外，还有各种其他标记。可以使用Leaflet.Awesome.Markers插件在Leaflet之外创建自定义标记。就像Ajax的情况一样，你需要使用`<script>`标签提供插件依赖项的路径。将以下`<script>`标签插入到map.html中。
 
@@ -1465,10 +1479,6 @@ knitr::include_graphics(rep("D:/gachuhi/my-leaflet/images/cities_colored.jpg"))
 ```
 
 为了节省时间，按照他们网站上的示例，我们只需将图标键的值替换为新的`L.AwesomeMarkers.icon`。我们还调整了每个图标的颜色以匹配之前使用的颜色。因为这些标记代表各种便利设施，为了演示它们的用途，我们做了一些过于简化的假设，即人口超过1,000,000的大城市有最好的购物中心，人口在250,000到800,000之间的城市必定有不错的咖啡馆，而人口低于250,000的城市显然有像样的工业。我们假设我们的假设是公平合理的。那么，代码如下。
-
-
-
-## 第六章 创建自定义标记
 
 ```javascript
 L.geoJSON(cities, {
@@ -1501,7 +1511,7 @@ knitr::include_graphics(rep("D:/gachuhi/my-leaflet/images/extra-markers.jpg"))
 
 自定义标记也是可点击的！
 
-## 6.6 图像叠加
+### 6.6 图像叠加
 
 有时一张图片也能起到很好的标记作用。在地图上叠加图像相当简单。以下代码在肯尼亚首都内罗毕的一处历史纪念碑上方插入了一张图像。
 
@@ -1535,21 +1545,7 @@ knitr::include_graphics(rep("D:/gachuhi/my-leaflet/images/geltan-fenzi.jpg"))
 
 请注意，这座纪念碑建于1939年，是为了纪念莱昂内尔·道格拉斯·加尔顿-芬齐；早在1926年，他就成为第一位驾车从内罗毕前往蒙巴萨的驾驶者。纪念碑上还刻有指向多个东非城市的方位，不过今天的历史就讲到这里了。
 
-## 第六章 创建自定义标记
-
-总之，以下是 **L.imageOverlay** 所用属性的简要说明：
-a) **var latLngBounds** 使用 **L.latLngBounds** 类来设置经纬度坐标。请注意，它们是两个用单个 **[]** 绑定在一起的坐标列表。未能用 **[]** 包裹这两个坐标会导致错误。b) **var ImageUrl** 是图像源。
-
-对于传递给 **L.imageOverlay()** 类的附加选项，描述如下：
-
--   1. **opacity** - 定义图像叠加层的不透明度，默认值为1.0。减小此值可以使图像叠加层变得透明，并露出底层的地图图层。
--   2. **errorOverlayUrl** - 是一个URL，用于在加载失败的叠加层位置显示叠加图像。
--   3. **alt** - 设置HTML的alt属性，以提供图像的替代文本描述。在网络连接不佳导致图像加载失败时，它能以文本形式描述图像，这非常有用。此外，它还能改善其所在网站的搜索引擎优化（SEO）。
--   4. **interactive** - 默认为false。如果设为true，图像叠加层在被点击或悬停时会触发鼠标事件。
-
-完整代码和文件在这里。
-
-## 6.7 总结
+### 6.7 总结
 
 这一章内容相当长，详细讲解了如何在Leaflet中自定义GeoJSON标记。通过本章中的各种练习，你学到了以下内容：
 
@@ -1557,17 +1553,12 @@ a) **var latLngBounds** 使用 **L.latLngBounds** 类来设置经纬度坐标。
 -   可以根据GeoJSON文件的属性自定义标记的颜色或大小。在本章中，城市人口值被用来定义标记的大小和颜色。
 -   **pointToLayer** 键在作为 **L.geoJSON** 的选项使用时，会为GeoJSON对象的每个经纬度坐标解析一个特定函数。
 -   也可以在 **fetch** API中通过简单指定其应如何显示（以函数形式）在 **L.geoJson** 选项环境中来自定义标记。
-
-## 6.7. 总结
-
 -   除了Leaflet自带的，还存在许多与Leaflet兼容的自定义图标库。其中一个例子就是Leaflet Awesome Markers。
 -   图像也可以叠加在Leaflet地图上。这在图像叠加子章节中已完成。
 
-# 第七章
+## 第七章 创建交互式分级统计图
 
-## 创建交互式分级统计图
-
-## 7.1 什么是分级统计图？
+### 7.1 什么是分级统计图？
 
 现在，我们将从标记转向更宏大的主题——分级统计图。你可能会问，*分级统计图到底是什么？* 地理学家们会对这个术语翻白眼，因为他们在职业生涯中已经无数次遇到它了。然而，为了新读者着想，分级统计图是一种地图，其地理区域或区域根据数据变量被着色、阴影或图案化。如果在选举期间，你看到过一张地图，它在获胜候选人所在的（一个或多个）州披上了其政党的主题颜色，那么这就是一张分级统计图。大多数人口地图也是分级统计图。在本章中，我们将创建肯尼亚各县的分级统计图，并通过利用每个县的区域和人口特征使其具有交互性。
 
@@ -1579,7 +1570,7 @@ knitr::include_graphics(rep("D:/gachuhi/my-leaflet/images/choropleth.png"))
 
 来源：数据可视化目录
 
-## 7.2 创建分级统计图：开始
+### 7.2 创建分级统计图：开始
 
 显然，到现在为止，无需太多细节，你也能闭着眼睛创建一个基本的Leaflet地图了。无论如何，眼见为实，所以让我们立即开始。创建另一个名为 **interactive-choropleth.js** 的新JavaScript文件。为了打破单调，我们将使用不同的图层。请记住，Leaflet有多个瓦片图层服务器，本章使用的CyclOSM只是众多服务器中的一种。
 
@@ -1617,19 +1608,15 @@ knitr::include_graphics(rep("D:/gachuhi/my-leaflet/images/kenya_json.jpg"))
 
 ![](img/264f6ca7b7ac3fbb9517b8a021818465_71_0.png)
 
-## 7.3 为各县着色
+### 7.3 为各县着色
 
 好了，我们已经成功将json文件加载到了Leaflet地图上。然而，它看起来很单调，并且没有给随意观察者提供有意义的信息。制作地图时，要以闪电般的速度提供信息。也就是说，让读者一目了然。接下来的代码片段大量借鉴了Volodymyr的交互式分级统计图教程。
-
-
-
-## 72 第7章. 创建交互式分级统计图
 
 首先，让我们创建一个为每个种群类别设置十六进制颜色代码的函数。我们为此使用了 color brewer。
 
 看看这段代码，我们将进行解释。
 
-```
+```javascript
 // 添加一些颜色
 function getColor(d) {
     return d > 1400 ? '#8c2d04' :
@@ -1648,17 +1635,15 @@ function getColor(d) {
 
 如果听起来仍然模糊，下面这张改编自 FreeCodeCamp 的图片应该会有所帮助。
 
-```
+```r
 knitr::include_graphics(rep("D:/gachuhi/my-leaflet/images/ternary.png"))
 ```
-
-## 7.3. 为县着色
 
 ![](img/264f6ca7b7ac3fbb9517b8a021818465_73_0.png)
 
 换句话说，三元运算符是在多行中编写 **if...else** 语句的简写形式。看看下面这段代码，它只是我们上面使用的三元运算符的 **if...else** 版本。毫无疑问，在简洁性方面，三元运算符胜出了。
 
-```
+```javascript
 function getColor(d) {
     if (d > 1400) {
         return '#8c2d04';
@@ -1680,7 +1665,7 @@ function getColor(d) {
 
 现在，我们已经创建了为 Leaflet 上的 json 文件设置颜色的函数，接下来我们还需要**创建**一个函数，将颜色指定应用到 GeoJSON 文件本身的各县中。幸运的是，我们有 Leaflet 的 **style** 选项，这是一个专门用于设置 GeoJSON 线条和多边形样式的函数。我们在第5章见过它，这里也将使用它。
 
-```
+```javascript
 var style = ((feature)=> {
     return {
         fillColor: getColor(feature.properties.Pop_Density),
@@ -1698,7 +1683,7 @@ var style = ((feature)=> {
 
 最后，我们将 `style` 变量添加到 `L.geoJson` 类的 `style` 选项中。
 
-```
+```javascript
 fetch("https://raw.githubusercontent.com/sammigachuhi/geojson_files/main/counties_json.json")
   .then((response) =>{
     return response.json()
@@ -1715,7 +1700,7 @@ fetch("https://raw.githubusercontent.com/sammigachuhi/geojson_files/main/countie
 
 今天的 JavaScript 内容到此为止！
 
-```
+```r
 knitr::include_graphics(rep("D:/gachuh/my-leaflet/images/choropleth-map.jpg"))
 ```
 
@@ -1723,7 +1708,7 @@ knitr::include_graphics(rep("D:/gachuh/my-leaflet/images/choropleth-map.jpg"))
 
 我们的分级统计图开始成形了。
 
-## 7.4 高亮显示功能
+### 7.4 高亮显示功能
 
 从我们上次中断的地方继续，我们希望分级统计图在屏幕指针（或鼠标）悬停时能高亮显示任何县。此外，点击时，地图应缩放到被点击的县并显示其属性。当屏幕指针移出时，各县也应恢复其默认特征。
 
@@ -1733,7 +1718,7 @@ knitr::include_graphics(rep("D:/gachuh/my-leaflet/images/choropleth-map.jpg"))
 
 记得我们之前用于检索 json 文件的 fetch API 吗？我们将稍微调整一下，在调用 `L.geoJson` 类之前添加变量 `var geojson`。我们将把变量 `var geojson` 解析到 `L.geoJson` 类。我们将解释为什么我们要将 `L.geoJson` 赋值给一个变量 (`var geojson`)，因为我们很清楚它本身就可以工作，如前两章所示。
 
-```
+```javascript
 fetch("https://raw.githubusercontent.com/sammigachuhi/geojson_files/main/counties_json")
     .then((response) =>{
         return response.json()
@@ -1749,7 +1734,7 @@ fetch("https://raw.githubusercontent.com/sammigachuhi/geojson_files/main/countie
 
 我们最初提到，我们希望悬停的县被高亮显示。以下代码将用白色色调高亮显示悬停的县，同时使其似乎从其余部分中凸显出来。
 
-```
+```javascript
 geojson = L.geoJson(data, {
     style: style,
     onEachFeature: ((feature, layer) => {
@@ -1775,7 +1760,7 @@ geojson = L.geoJson(data, {
 
 记住，我们也提到过，当鼠标移出到另一个县或完全移出地图时，我们希望各县恢复到其默认状态。以下代码完成了这项工作。
 
-```
+```javascript
 layer.on('mouseout', function() {
              geojson.resetStyle(this);
            })
@@ -1787,25 +1772,21 @@ layer.on('mouseout', function() {
 
 最后，我们提到我们希望在点击某个县时缩放到该特定县。以下代码将地图适配到被点击县的边界。请注意，**fitBounds** 被解析为 **getBounds**，后者获取被点击县的边界。浏览器能够通过参数 **e** 和 **e.target** 的帮助识别被点击的县。
 
-```
+```javascript
 layer.on('click', ((e) => {
              map.fitBounds(e.target.getBounds())
            }))
 ```
 
-```
+```r
 knitr::include_graphics(rep('D:/gachuhi/my-leaflet/images/highlightable-map.jpg'))
 ```
 
-
-
-## 第7章 创建交互式分级统计图
-
-![分级统计图](img/264f6ca7b7ac3fbb9517b8a021818465_78_0.png)
+![](img/264f6ca7b7ac3fbb9517b8a021818465_78_0.png)
 
 你在fetch API中的代码应该如下所示。
 
-```
+```javascript
 fetch("https://raw.githubusercontent.com/sammigachuhi/geojson_files/main/counties_json")
     .then((response) =>{
         return response.json()
@@ -1843,11 +1824,11 @@ fetch("https://raw.githubusercontent.com/sammigachuhi/geojson_files/main/countie
     })
 ```
 
-## 7.5 创建自定义信息框
+### 7.5 创建自定义信息框
 
 我们的分级统计图运行完美，但缺少一些交互性。如果在它旁边补充一个信息界面会怎样？自定义信息控件就是一种实现方式。可以将控件视为允许交互的UI元素。对于我们的分级统计图，我们希望自定义信息控件能提供鼠标悬停县区的名称、总人口和人口密度的详细信息。
 
-```
+```javascript
 // 添加控件
 var info = L.control();
 
@@ -1869,13 +1850,13 @@ info.addTo(map);
 
 好的。让我们尽可能详细地逐段解析上面的代码。
 
-```
+```javascript
 var info = L.control();
 ```
 
 上面这行代码创建了一个名为 **info** 的变量，它保存了所有地图控件的基类 **L.control()**。例如，在 **L.control.zoom** 中，**L.control** 类会在地图中创建一个缩放控件。
 
-```
+```javascript
 info.onAdd = function (map) {
     this.div = L.DomUtil.create('div', 'info');
     this.update();
@@ -1889,7 +1870,7 @@ info.onAdd = function (map) {
 
 在上图中，红色框内的`<div>` class在引入包含L.DomUtil的函数之前并不存在。继续向前，`this.update()`只是使用每个新点击县区的属性来更新自定义信息控件的内容。
 
-```
+```javascript
 // 我们将根据传递的要素属性使用此方法更新控件
 info.update = function (props) {
     this.div.innerHTML = '<h4>肯尼亚人口密度</h4>' + (props ?
@@ -1910,7 +1891,7 @@ info.addTo(map);
 
 我明白你的意思，但请记住我们创建了一个名为 **info** 的新`<div>`，它在浏览器启动时出现。而且由于这个`<div class="info ...">`必须在浏览器启动时出现，因此必须使用CSS样式来定义其外观。
 
-```
+```css
 .info {
     padding: 6px 8px;
     font: 14px/16px Arial, Helvetica, sans-serif;
@@ -1926,11 +1907,11 @@ info.addTo(map);
 }
 ```
 
-## 7.6 创建图例
+### 7.6 创建图例
 
 创建了自定义信息控件后，接下来的代码创建图例。
 
-```
+```javascript
 var legend = L.control({position: 'bottomright'});
 
 legend.onAdd = function (map) {
@@ -1960,7 +1941,7 @@ legend.addTo(map);
 
 以下是CSS。
 
-```
+```css
 .legend {
     line-height: 18px;
     color: #555;
@@ -1976,16 +1957,17 @@ legend.addTo(map);
 
 图例制作完成，最终被添加到地图上。
 
-
-
+```r
 knitr::include_graphics('D:/gachuhi/my-leaflet/images/choropleth-legend.jpg')
+```
 
 ![](img/264f6ca7b7ac3fbb9517b8a021818465_83_0.png)
 
 完整代码文件可从这里获取。
+
 创建等级统计地图时，应旨在挑战读者并使其产生共鸣，而非仅仅提供信息。
 
-## 7.7 总结
+### 7.7 总结
 
 本章篇幅较长，过程艰难，甚至可能令人困惑。尽管如此，以下是我们从本章中总结的要点：
 
@@ -1997,13 +1979,13 @@ knitr::include_graphics('D:/gachuhi/my-leaflet/images/choropleth-legend.jpg')
 -   `L.control()` 类是启用大多数 Leaflet 控件的基础类。例如，`L.control.zoom` 用于创建缩放控件。
 -   `L.control()` 也可用于自定义图例的外观和显示的信息。
 
-# 第 8 章：图层组与控件
+## 第八章 图层组与控件
 
-## 8.1 图层组与控件的目的
+### 8.1 图层组与控件的目的
 
 有时，用户可能希望其网络地图由多个底图图层或叠加地图组成。假设您希望您的 Leaflet 地图包含两个底图图层，以及一个可切换显示任意底图的额外叠加图层，您将如何操作？
 
-## 8.2 设置底图
+### 8.2 设置底图
 
 为了创建控件，我们需要将保存地图变量的对象解析为 `L.control.layers` 类。之后，`L.control.layers` 类用于将对象值解析到 Leaflet 地图并创建用户界面控件。为此，打开一个新的 JavaScript 文件并将其命名为 `groups_controls.js`。插入以下代码，这将把我们的底图保存到各自的变量 `osm` 和 `cyclOSM` 中。
 
@@ -2029,11 +2011,13 @@ var map = L.map('myMap', {
 
 然而，这将只会添加第一个底图变量（即 `osm`），同时屏蔽 `cyclOSM`。如下所示。
 
+```r
 knitr::include_graphics(rep('D:/gachuhi/my-leaflet/images/no-control.jpg'))
+```
 
 ![](img/264f6ca7b7ac3fbb9517b8a021818465_86_0.png)
 
-## 8.3 创建控件
+### 8.3 创建控件
 
 然而，为了给 `cyclOSM` 一个公平的机会，我们需要将它们存储在一个对象中，比如 `var basemaps`，并将其解析到 `L.control.layers`，它将为每个底图创建一个复选按钮。下面的代码正是这样做的。
 
@@ -2049,11 +2033,13 @@ L.control.layers(basemaps).addTo(map);
 
 这是您得到的结果。
 
+```r
 knitr::include_graphics(rep('D:/gachuhi/my-leaflet/images/controls.jpg'))
+```
 
 ![](img/264f6ca7b7ac3fbb9517b8a021818465_87_0.png)
 
-## 8.4 添加叠加地图
+### 8.4 添加叠加地图
 
 现在我们已经看到了如何向 Leaflet 添加两个或多个底图，并使它们全部显示在图层控件中。添加叠加地图也遵循相同的步骤。
 
@@ -2147,16 +2133,15 @@ var overlays = {
 L.control.layers(basemaps, overlays).addTo(map);
 ```
 
+```r
 knitr::include_graphics(rep('D:/gachuhi/my-leaflet/images/controls-overlay.jpg'))
+```
 
 ![](img/264f6ca7b7ac3fbb9517b8a021818465_89_0.png)
 
 如果您点击任何一个县，将会看到弹出窗口出现。
+
 我们还将添加一个叠加图层到我们的显示中，以完整地结束我们对图层控件的实验。还记得我们的 **cities** 变量对应的 GeoJSON 吗？让我们再次调用它。但首先，让我们加载根据人口区分城市的自定义图标标记。
-
-
-
-## 第八章 图层组与控件
 
 ```javascript
 // 彩色图标
@@ -2213,8 +2198,6 @@ var cities = L.geoJson.ajax("https://raw.githubusercontent.com/sammigachuhi/geoj
 }).addTo(mymap);
 ```
 
-## 8.4 添加叠加地图
-
 ```javascript
     icon: redIcon
     });
@@ -2250,7 +2233,7 @@ knitr::include_graphics(rep('D:/gachuhi/my-leaflet/images/controls-all.jpg'))
 
 ![控制面板示意图](img/264f6ca7b7ac3fbb9517b8a021818465_92_0.png)
 
-## 8.5 添加比例尺
+### 8.5 添加比例尺
 
 比例尺是任何地图的关键要素之一。有人可能会好奇它们在网络地图中的作用，但它们对于估算要素的大小和长度非常有用。添加一个小型的动态比例尺并没有坏处！
 
@@ -2267,7 +2250,7 @@ knitr::include_graphics(rep('D:/gachuhi/my-leaflet/images/controls-scale.jpg'))
 
 本章使用的所有文件和脚本都可以在这里访问。
 
-## 8.6 总结
+### 8.6 总结
 
 与纸质地图不同，网络地图使我们能够在同一个平台中包含多个底图和叠加图层。以下是您从本章学到的内容。
 
@@ -2276,13 +2259,13 @@ knitr::include_graphics(rep('D:/gachuhi/my-leaflet/images/controls-scale.jpg'))
 - GeoJSON 要素也可以解析到图层控件。只需将调用 GeoJSON 文件的函数保存到一个变量中即可。例如，Ajax 函数 `var cities` 被解析到 `L.control.layers()` 类。
 - 比例尺对于估算大小和长度非常有用，即使在网络地图中也是如此。Leaflet 提供了 `L.control.scale` 类来为你的网络地图添加自定义比例尺。
 
-# 第九章 热力图
+## 第九章 热力图
 
-## 9.1 什么是热力图？
+### 9.1 什么是热力图？
 
 热力图是一种在地理上可视化特定变量（如犯罪、疾病、服务中心等）发生频率高于平均水平的地点的地图类型。
 
-## 9.2 加载热力图插件
+### 9.2 加载热力图插件
 
 Leaflet 没有内置的绘制热力图的工具。相反，我们需要使用一个名为 Leaflet.heat 的外部插件。zip 文件的链接可在此处获取。下载并将文件夹解压到与 map.html 相同的目录中。
 
@@ -2300,7 +2283,7 @@ Leaflet 没有内置的绘制热力图的工具。相反，我们需要使用一
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 ```
 
-## 9.3 创建 Leaflet 热力图
+### 9.3 创建 Leaflet 热力图
 
 让我们调用添加底图的常规代码。
 
@@ -2347,6 +2330,8 @@ $.when(geojsonLayer).done(function() {
 ```
 
 为了给予应有的赞扬，这些代码片段取自这个 Stack Overflow 问题并稍作修改。为了对大家公平起见，我们逐段解析上述代码。
+
+
 
 ```javascript
 var geoJsonUrl = "https://raw.githubusercontent.com/sammigachuhi/geojson_files/main/selected_hospitals.json";
@@ -2403,25 +2388,40 @@ $.when(geojsonLayer).done(function() {
 });
 ```
 
-
-
 $.when(geojsonLayer).done(function() {
+
     // var kill = L.geoJSON(geojsonLayer.responseJSON);
+
     var layer = geoJson2heat(geojsonLayer.responseJSON, 4);
+
     var heatMap = L.heatLayer(layer, {
+
         radius: 40,
+
         blur: 10,
+
         gradient: {
+
             '0': 'Navy', '0.25': 'Navy',
+
             '0.26': 'Green',
+
             '0.5': 'Green',
+
             '0.51': 'Yellow',
+
             '0.75': 'Yellow',
+
             '0.76': 'Red',
+
             '1': 'Red'
+
         },
+
         maxZoom: 13});
+
     map.addLayer(heatMap);
+
 });
 
 说实话，上一个例子有点牵强，因为 jQuery 在 Leaflet 或现代普通 JavaScript 编程中已很少使用。
@@ -2441,7 +2441,9 @@ knitr::include_graphics(rep('D:/gachuhi/my-leaflet/images/heatmap.jpg'))
 热力图是地理学中最简单的地图形式之一。它们使用颜色和色调来可视化现象在空间上的分布集中程度。以下是本章的关键要点。
 
 - 热力图是一种地图类型，它从地理上可视化那些特定变量发生频率高于平均水平的区域模式。
+
 - 要使用 Leaflet 绘制热力图，我们必须下载 Leaflet.heat 插件。然后，将该插件的路径解析到 HTML 文件的 script 标签中。
+
 - 除了使用 `L.heatLayer`，从 GeoJSON 数据创建热力图的另一种方法是结合使用 Ajax 和 jQuery。
 
 # 第 10 章
@@ -2554,10 +2556,13 @@ knitr::include_graphics(rep('D:/gachuhi/my-leaflet/images/cluster-marker-plain.j
 ![](img/264f6ca7b7ac3fbb9517b8a021818465_105_0.png)
 
 回到原点，圆形标记要好得多。
+
 大部分 Ajax 代码的灵感来源于这个视频。
+
 但是等等！先别高兴得太早，这里有一个 bug。尝试点击任何一个展开的或单独的医院，你会注意到一件令人皱眉的事情。所有医院在被点击时都显示以下弹出窗口：
 
 Facility Name: Wajir Tb Manyatta Sub - District Hospital
+
 Type: Sub-District Hospital
 
 knitr::include_graphics(rep('D:/gachuhi/my-leaflet/images/cluster-marker-bug.jpg'))
@@ -2565,9 +2570,8 @@ knitr::include_graphics(rep('D:/gachuhi/my-leaflet/images/cluster-marker-bug.jpg
 ![](img/264f6ca7b7ac3fbb9517b8a021818465_105_1.png)
 
 除非开发者想因为给所有医院分配相同的地名而出丑，否则这个问题应该迅速处理。我们的代码本身没问题，因为它在其他场景中（例如这里）是有效的。然而，在万维网上分配错误的地名是不可接受的。
+
 是时候尝试不同的策略了：使用 **fetch** API。我们之前已经使用过 **fetch**，所以这里不再过多解释。你可以随意搜索一下作为复习。将之前从 **var markers** 到 **map.addLayer(markers)** 的代码注释掉，并替换为以下代码块。
-
-
 
 ## 第十章 通过聚类减少杂乱
 
@@ -2659,7 +2663,9 @@ knitr::include_graphics(rep('D:/gachuhi/my-leaflet/images/cluster-marker-mouseov
 聚类标记点是显示多个点的一种简洁方式。当缩小视图时，空间上分散的点会合并成一个显示数字的单一单位，该数字代表它包含的标记数量。当放大视图时，这些点会“蛛网式展开”（想象一下散开）到其相应的位置。以下是本章的要点。
 
 - 聚类点有时有助于地图的整洁。在 Leaflet 中，这通过 `Leaflet.markercluster` 插件得以实现。
+
 - 可以自定义“蛛网式展开”的标记点的外观。例如，我们没有满足于单个标记的默认样式，而是使用了圆形标记来显示各个点。
+
 - 也可以为“蛛网式展开”的标记点添加事件。当点击时，“蛛网式展开”的标记点可以显示弹出窗口，或触发代码块中指定的任何其他事件。
 
 # 第十一章
@@ -2762,8 +2768,6 @@ var overlays = {
 
 在继续之前，请注意，将 `overlays` 对象插入到 `L.control.layers()` 类中会导致多个错误。这就是为什么我们无法为 `var cluster` 中包含的标记创建控件。下图显示了在将 `overlays` 对象插入 `L.control.layers()` 后控制台中出现的错误。
 
-
-
 ## 第十一章 适配移动端的 Web 应用
 
 ```
@@ -2847,7 +2851,9 @@ knitr::include_graphics(rep('D:/gachuhi/my-leaflet/images/mobile-app.jpg'))
 启用 Leaflet 地图适配移动端，使其能够在智能手机上快速加载并高效缩放。以下是您学到的内容。
 
 -   在 HTML 文件的 `<head>` 元素中插入一个特殊的 `meta` 标签，以便在用户于智能手机上查看 Leaflet 地图时，浏览器能够平滑缩放。
--   Leaflet 有一个特殊函数 `map.locate`，可以进行地理定位并缩放到用户的精确坐标。如果由于某种原因精度失败，它会在移动用户的大致位置周围创建一个缓冲区。
+
+-   Leaflet 有一个特殊函数 `map.locate`，可以进行地理定位并缩放到用户的精确坐标。如果由于某种原因精度失败，它会在移用户的大致位置周围创建一个缓冲区。
+
 -   如果 Leaflet 无法近似用户位置，可以使用 `message` 事件，该事件会在浏览器上返回一个错误。
 
 # 第十二章 Web 地图服务图层
@@ -2856,7 +2862,7 @@ knitr::include_graphics(rep('D:/gachuhi/my-leaflet/images/mobile-app.jpg'))
 
 Web 地图服务（WMS）由通过互联网托管的地理空间数据组成，其标准由开放地理空间信息联盟（OGS）制定。
 
-WMS 允许通过网络交换空间信息，并以地图或图像的形式在浏览器中查看。Web 地图服务最常见的格式包括 Web 地图服务（WMS）、Web 要素服务（WFS）、Web 覆盖服务（WCS）、Web 处理服务（WPS）、Web 地图瓦片服务（WMTS）和 Web 覆盖处理服务（WCPS）。然而，Web 地图服务（WMS）图层是使用最广泛的。它提供基本的平移、缩放和快速渲染速度。
+WMS 允许通过网绾交换空间信息，并以地图或图像的形式在浏览器中查看。Web 地图服务最常见的格式包括 Web 地图服务（WMS）、Web 要素服务（WFS）、Web 覆盖服务（WCS）、Web 处理服务（WPS）、Web 地图瓦片服务（WMTS）和 Web 覆盖处理服务（WCPS）。然而，Web 地图服务（WMS）图层是使用最广泛的。它提供基本的平移、缩放和快速渲染速度。
 
 ## 12.2 加载 WMS 服务器
 
@@ -2926,11 +2932,12 @@ knitr::include_graphics(rep('D:/gachuhi/my-leaflet/images/wms_layer.jpg'))
 Web 地图服务（WMS）图层在许多方面看起来和表现得像一个底图。就像 Open Street Map 和其他类似服务器一样，WMS 图层通过互联网托管数据。以下是本章的要点。
 
 -   Web 地图服务由通过互联网托管的地理空间数据组成，其标准由开放地理空间信息联盟（OGS）制定。
+
 -   Web 地图服务最常见的格式包括 Web 地图服务（WMS）、Web 要素服务（WFS）、Web 覆盖服务（WCS）、Web 处理服务（WPS）、Web 地图瓦片服务（WMTS）和 Web 覆盖处理服务（WCPS）。
+
 -   `L.tileLayer.wms` 类用于将 WMS 图层加载到 Leaflet 中。
+
 -   就像任何其他底图一样，可以将 WMS 图层解析到 Leaflet 控件中，如 `wmsLayerTopo` 和 `wmsLayerTopomask` 所示。
-
-
 
 # 第13章：使用Leaflet项目的标准网站
 
@@ -3087,8 +3094,6 @@ knitr::include_graphics(rep('D:/gachuhi/my-leaflet/images/elearning-plugins.jpg'
 </div>
 ```
 
-
-
 126 第13章 标准网站与LEAFLET项目
 
 ```
@@ -3156,7 +3161,9 @@ eLearning网站
 将必要的Leaflet文件夹与你的HTML网站文件放在同一目录下，可以防止Leaflet地图因路径中断而无法加载。以下是我们遇到的其他经验教训。
 
 - 为了将Leaflet地图嵌入你的网站，你必须将必要的Leaflet `<link>`和`<script>`标签加载到你的`<head>`以及必要的`<div>`元素中。
+
 - 使用`<script>`标签插入启动你的Leaflet的JavaScript代码。这就是将JavaScript文件`cluster-markers.js`插入eLeaflet示例网站的方法。
+
 - 确保你的Leaflet地图出现在所有子网页中的正确位置也很重要。例如，就像在其父文件`index.html`中所做的那样，Leaflet也必须嵌入到`about.html`、`courses.html`、`team.html`、`testimonial.html`和`contact.html`网页的图库部分。
 
 # 第14章
@@ -3184,6 +3191,7 @@ eLearning网站
 ## 14.3 创建ESRI Leaflet地图
 
 在你的空白`esri_leaflet.js`文件中，创建一个变量来存储你的API密钥。这个密钥对于访问你的ESRI权益非常重要，就像传说中*阿里巴巴与四十大盗*故事里能打开通往满是宝藏洞穴的魔法咒语“芝麻开门”一样！
+
 下面是如何从你的ArcGIS开发者账户获取API密钥的示例。
 
 ```
@@ -3277,8 +3285,6 @@ knitr::include_graphics(rep('D:/gachuhi/my-leaflet/images/search_bar.jpg'))
 
 ![](img/264f6ca7b7ac3fbb9517b8a021818465_132_0.png)
 
-
-
 ## 14.6 让搜索栏功能生效
 
 为了让搜索栏能够实现其名称所示的功能，我们将把 providers 键的值设置为一个 `arcgisOnlineProvider`。后者是通过构造函数 `L.esri.Geocoding.arcgisOnlineProvider` 进行实例化的。ESRI 在其平台上提供了各种开源教程，为大多数工具提供了简洁明了的说明。
@@ -3370,7 +3376,9 @@ ArcGIS Developers 网站还提供了更多关于使用 ESRI Leaflet 的教程。
 以下是本章学到的经验教训。
 
 - 需要一个 ArcGIS 开发者账户才能使用 ESRI Leaflet 功能。
+
 - 应用程序编程接口（API）密钥就像现实世界中的钥匙，用于授予用户访问 ESRI Leaflet 功能和特性的权限。
+
 - 独立的 Leaflet 和 ESRI Leaflet 在许多方面相似。可以通过各种 ESRI Leaflet 构造函数（如 `L.esri.Geocoding.arcgisOnlineProvider`）在 Leaflet 之上构建 ArcGIS 功能。
 
 # 第15章

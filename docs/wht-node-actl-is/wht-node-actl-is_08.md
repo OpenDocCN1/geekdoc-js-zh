@@ -1,3 +1,5 @@
+
+
 # 与缓冲区一起工作
 
 > 原文：[`www.thenodebook.com/buffers/working-with-buffers`](https://www.thenodebook.com/buffers/working-with-buffers)
@@ -59,9 +61,8 @@ V8 垃圾回收器看到这个引用并将整个父缓冲区标记为“可到�
 
 这个两部分的系统是既带来惊人性能又造成巨大困惑的源头：
 
-+   Node 可以将这些巨大的内存块直接传递给文件系统或网卡，而无需将它们复制到 JavaScript 的世界中。这非常高效。
-
-+   V8 垃圾回收器只能看到这张微小的钥匙卡。如果你的代码意外地保留了这张钥匙卡（比如在闭包或长期存在的对象中），V8 就不会清理它。只要钥匙卡存在，它就充当锚点，防止那巨大的、多兆字节的块外部内存被释放。你并不是在泄漏几个字节的 JavaScript 对象；你是在泄漏它们指向的巨大内存块。
+- Node 可以将这些巨大的内存块直接传递给文件系统或网卡，而无需将它们复制到 JavaScript 的世界中。这非常高效。
+- V8 垃圾回收器只能看到这张微小的钥匙卡。如果你的代码意外地保留了这张钥匙卡（比如在闭包或长期存在的对象中），V8 就不会清理它。只要钥匙卡存在，它就充当锚点，防止那巨大的、多兆字节的块外部内存被释放。你并不是在泄漏几个字节的 JavaScript 对象；你是在泄漏它们指向的巨大内存块。
 
 ### 8KB 速度黑客：Buffer 池
 
@@ -138,13 +139,10 @@ console.log(mainBuffer); // Output: <Buffer 01 63 03 04 05> (Note the 99 is 0x63
 
 第三个字符是`Buffer.from()`。这个函数有点棘手，因为它的行为完全取决于你提供的输入类型。
 
-+   `Buffer.from(string)`: **分配新的内存**并将字符串数据复制到其中。
-
-+   `Buffer.from(array)`: **分配新的内存**并复制字节数据。
-
-+   `Buffer.from(arrayBuffer)`: **创建一个与提供的`ArrayBuffer`共享内存的视图**。这是一个零复制操作。
-
-+   `Buffer.from(buffer)`: **分配新的内存** 并从源缓冲区复制数据。这是一个完整的拷贝！
+- `Buffer.from(string)`: **分配新的内存**并将字符串数据复制到其中。
+- `Buffer.from(array)`: **分配新的内存**并复制字节数据。
+- `Buffer.from(arrayBuffer)`: **创建一个与提供的`ArrayBuffer`共享内存的视图**。这是一个零复制操作。
+- `Buffer.from(buffer)`: **分配新的内存**并从源缓冲区复制数据。这是一个完整的拷贝！
 
 ⚠️警告
 
@@ -163,7 +161,10 @@ const largeBuffer = Buffer.alloc(10 * 1024 * 1024); // 10MB
 const chunkSize = 1024; // 1KB
 ```
 
-这个分配触发了单个 `mmap()` 系统调用，用于 10,485,760 字节。内核保留了虚拟地址空间，但尚未分配物理页面——这发生在第一次通过按需分页写入时。Node.js 通过 `Isolate::AdjustAmountOfExternalAllocatedMemory()` 通知 V8 的垃圾收集器，这会影响下一次主要 GC 周期的触发。如果外部内存增长过快，V8 将崩溃并强制进行同步 GC，这可能会阻塞你的事件循环数百毫秒。
+
+
+
+这个分配触发了单个`mmap()`系统调用，用于 10,485,760 字节。内核保留了虚拟地址空间，但尚未分配物理页面——这发生在第一次通过按需分页写入时。Node.js 通过`Isolate::AdjustAmountOfExternalAllocatedMemory()`通知 V8 的垃圾收集器，这会影响下一次主要 GC 周期的触发。如果外部内存增长过快，V8 将崩溃并强制进行同步 GC，这可能会阻塞你的事件循环数百毫秒。
 
 ```js
 // --- The Zero-Copy View ---
@@ -172,7 +173,7 @@ const view = largeBuffer.subarray(5000, 5000 + chunkSize);
 console.timeEnd("view creation");
 ```
 
-`subarray()` 操作在纳秒级别完成。它为新的 Buffer 对象在 V8 堆上分配了正好 72 字节，并设置了三个字段：缓冲区指针、偏移量（5000）和长度（1024）。没有内存屏障，没有缓存失效，没有 TLB 清除。CPU 可以将整个操作保持在 L1 缓存中。性能计数器显示 ~0.007ms，因为那主要是 `console.time()` 自身的开销——实际的子数组操作在现代 CPU 上不到 100 纳秒。
+`subarray()`操作在纳秒级别完成。它为新的 Buffer 对象在 V8 堆上分配了正好 72 字节，并设置了三个字段：缓冲区指针、偏移量（5000）和长度（1024）。没有内存屏障，没有缓存失效，没有 TLB 清除。CPU 可以将整个操作保持在 L1 缓存中。性能计数器显示 ~0.007ms，因为那主要是`console.time()`自身的开销——实际的子数组操作在现代 CPU 上不到 100 纳秒。
 
 ```js
 // --- The Full Copy ---
@@ -190,7 +191,7 @@ console.timeEnd("copy creation");
 
 💡提示
 
-使用 `performance.timerify()` 或 `perf_hooks` 模块在生产环境中准确测量缓冲区操作。`console.time()` 方法很方便，但对于亚毫秒级的测量来说不够精确。
+使用`performance.timerify()`或`perf_hooks`模块在生产环境中准确测量缓冲区操作。`console.time()`方法很方便，但对于亚毫秒级的测量来说不够精确。
 
 创建视图的成本实际上是常数时间，O(1)。无论你查看 10 字节还是 10 兆字节，你只是在创建一个带有一些指针和偏移的小型 JS 对象。然而，复制的成本是线性时间，O(n)。它与你要复制的数据量成正比。对于一个从 100MB 缓冲区中提取的 1MB 数据块，视图仍然几乎是瞬时的，而复制则需要消耗一个可测量的毫秒时间。在一个热点路径中，这会累积起来。我们自己的遥测数据显示，在关键解析循环中将不必要的复制替换为视图可以减少 CPU 使用率 30%。
 
@@ -198,20 +199,20 @@ console.timeEnd("copy creation");
 
 这是基本的权衡：你用内存安全性换取速度。你是在告诉运行时，“相信我，我知道我在做什么。保留这块巨大的内存块，因为我需要它的一小部分。”运行时会完全按照你的要求去做。而且如果你不小心，它甚至会一直信任你直到出现内存不足异常。正确的“优化”不是在所有地方都使用视图，而是要理解何时小而明确的复制的成本远远低于保留大型父缓冲区的内存成本。
 
-### 缓冲区、类型化数组以及它们共享的内存
+## 缓冲区、类型化数组以及它们共享的内存
 
-好吧，所以我们已经确定 `Buffer` 是 Node 处理二进制数据的特殊调料。但正如我们在第一章中看到的，它们并不是孤立存在的。它们是更大家族 `TypedArray` 的一部分，理解这种关系至关重要。
+好吧，所以我们已经确定`Buffer`是 Node 处理二进制数据的特殊调料。但正如我们在第一章中看到的，它们并不是孤立存在的。它们是更大家族`TypedArray`的一部分，理解这种关系至关重要。
 
-自从 Node.js v3.0 版本以来，`Buffer` 类是 `Uint8Array` 的直接子类。
+自从 Node.js v3.0 版本以来，`Buffer`类是`Uint8Array`的直接子类。
 
 ```js
 const buf = Buffer.from("hello");
 console.log(buf instanceof Uint8Array); // true
 ```
 
-这不仅仅是你下次面试的 trivia。这是互操作性的金票。这意味着你可以将 Node `Buffer` 传递给任何期望 `Uint8Array` 的现代 API - 在浏览器中、在 WebAssembly 中、在任何地方 - 它都能正常工作。
+这不仅仅是你下次面试的 trivia。这是互操作性的金票。这意味着你可以将 Node`Buffer`传递给任何期望`Uint8Array`的现代 API - 在浏览器中、在 WebAssembly 中、在任何地方 - 它都能正常工作。
 
-关键概念是这样的：原始的内存块本身是一个 `ArrayBuffer`。`Buffer`、`Uint8Array`、`Int32Array` 等，都是你可以放置在相同原始内存上的不同 **视图**。将 `ArrayBuffer` 想象成一块原始的钢铁。一个 `Buffer` 是一个模板，让你可以看到它作为一个字节序列。一个 `Int32Array` 是一个不同的模板，将那些字节分组为 4 字节块，并显示 32 位数字。
+关键概念是这样的：原始的内存块本身是一个`ArrayBuffer`。`Buffer`、`Uint8Array`、`Int32Array`等，都是你可以放置在相同原始内存上的不同**视图**。将`ArrayBuffer`想象成一块原始的钢铁。一个`Buffer`是一个模板，让你可以看到它作为一个字节序列。一个`Int32Array`是一个不同的模板，将那些字节分组为 4 字节块，并显示 32 位数字。
 
 这非常强大。这也是你可以在不抛出任何错误的情况下静默地损坏所有数据的方法。
 
@@ -339,16 +340,16 @@ videoBuffer.copy(metadataCopy, 0, 0, 1024);
 
 ## 复制语义和 Buffer.copy()
 
-因此，我们已经确定有时你绝对需要副本。在 Node.js 中，这个主要工具是 `Buffer.prototype.copy()`。它是一个低级、高性能的方法，旨在成为 JavaScript 世界的 `memcpy`。它的签名是 `buf.copy(targetBuffer, targetStart, sourceStart, sourceEnd)`。
+因此，我们已经确定有时你绝对需要副本。在 Node.js 中，这个主要工具是`Buffer.prototype.copy()`。它是一个低级、高性能的方法，旨在成为 JavaScript 世界的`memcpy`。它的签名是`buf.copy(targetBuffer, targetStart, sourceStart, sourceEnd)`。
 
-重要的是要注意，`copy()` 将写入一个 *现有* 的 `targetBuffer`。在调用它之前，你必须自己分配目标缓冲区。这给了你细粒度的控制，但也增加了处理步骤。
+重要的是要注意，`copy()`将写入一个*现有*的`targetBuffer`。在调用它之前，你必须自己分配目标缓冲区。这给了你细粒度的控制，但也增加了处理步骤。
 
 ```js
 const source = Buffer.from("abcdefghijklmnopqrstuvwxyz");
 const target = Buffer.alloc(10);
 ```
 
-`Buffer.from(string)` 将 26 个字符的字母表编码为 26 字节的 UTF-8（全部是 ASCII，所以每个字符一个字节）。Node 从其缓冲区池中分配它，因为它的尺寸小于 4KB。`Buffer.alloc(10)` 创建另一个小缓冲区，也来自池，但来自不同的偏移量。这两个缓冲区实际上可能是同一 8KB 池片的不同切片，但它们是非重叠的区域，具有独立的生命周期。
+`Buffer.from(string)`将 26 个字符的字母表编码为 26 字节的 UTF-8（全部是 ASCII，所以每个字符一个字节）。Node 从其缓冲区池中分配它，因为它的尺寸小于 4KB。`Buffer.alloc(10)`创建另一个小缓冲区，也来自池，但来自不同的偏移量。这两个缓冲区实际上可能是同一 8KB 池片的不同切片，但它们是非重叠的区域，具有独立的生命周期。
 
 ```js
 // Copy the first 10 bytes from source into target.
@@ -356,7 +357,7 @@ source.copy(target, 0, 0, 10);
 console.log(target.toString()); // 'abcdefghij'
 ```
 
-这个 `copy()` 操作在 C++ 中会解析为单个 `memcpy(target_ptr + 0, source_ptr + 0, 10)` 调用。现代 CPU 使用 SIMD 指令进行优化，每次循环移动多个字节。对于如此小的缓冲区，操作可以在纳秒内完成。数据在物理上是复制的——对 `source` 的更改不会影响 `target`，反之亦然。
+这个`copy()`操作在 C++ 中会解析为单个`memcpy(target_ptr + 0, source_ptr + 0, 10)`调用。现代 CPU 使用 SIMD 指令进行优化，每次循环移动多个字节。对于如此小的缓冲区，操作可以在纳秒内完成。数据在物理上是复制的——对`source`的更改不会影响`target`，反之亦然。
 
 ```js
 // Copy 'klmno' from the source into the middle of the target.
@@ -364,9 +365,11 @@ source.copy(target, 3, 10, 15); // target, targetStart, sourceStart, sourceEnd
 console.log(target.toString()); // 'abcklmnohij'
 ```
 
-Node 的 C++ 内核对 `Buffer.copy()` 的性能进行了大量优化。对于在缓冲区之间复制数据，它几乎总是比你在 JavaScript 中编写的任何手动、逐字节循环要快。内存分析结果显示，所需时间与复制的字节数成正比，而常数因子非常低。
+Node 的 C++ 内核对`Buffer.copy()`的性能进行了大量优化。对于在缓冲区之间复制数据，它几乎总是比你在 JavaScript 中编写的任何手动、逐字节循环要快。内存分析结果显示，所需时间与复制的字节数成正比，而常数因子非常低。
 
-然而，有一种更方便的方法来创建副本，许多人都会选择：`Buffer.from(buffer)`。正如我们之前提到的，这个特定的 `Buffer.from()` 重载明确是一个复制操作。
+然而，有一种更方便的方法来创建副本，许多人都会选择：`Buffer.from(buffer)`。正如我们之前提到的，这个特定的`Buffer.from()`重载明确是一个复制操作。
+
+
 
 ```js
 const original = Buffer.from("This is the original buffer");
@@ -374,7 +377,7 @@ const original = Buffer.from("This is the original buffer");
 const clone = Buffer.from(original);
 ```
 
-我们已经多次讨论了 `Buffer.from`，但——`Buffer.from(buffer)` 构造函数在其简单性上具有欺骗性。内部，它分配了一个与原始缓冲区大小完全相同的新 ArrayBuffer（这里为 28 字节），然后执行整个内容的 `memcpy()`。这发生在 Node 的 C++ 层，通过 `node::Buffer::Copy()` 函数。新的缓冲区是完全独立的——它有自己的后端存储，没有对原始缓冲区的引用。这对于内存隔离和防止我们一直在讨论的保留问题至关重要。
+我们已经多次讨论了`Buffer.from`，但——`Buffer.from(buffer)`构造函数在其简单性上具有欺骗性。内部，它分配了一个与原始缓冲区大小完全相同的新`ArrayBuffer`（这里为 28 字节），然后执行整个内容的`memcpy()`。这发生在 Node 的 C++ 层，通过`node::Buffer::Copy()`函数。新的缓冲区是完全独立的——它有自己的后端存储，没有对原始缓冲区的引用。这对于内存隔离和防止我们一直在讨论的保留问题至关重要。
 
 ```js
 clone.write("That"); // Modify the clone
@@ -386,53 +389,53 @@ console.log(clone.toString()); // 'That is the original buffer'
 
 知道何时复制是一种艺术。科学在于知道如何做。规则很简单：如果数据需要比其原始的、庞大的父缓冲区存活更久，你必须给它一个新的家。分配一个所需的确切大小的新的缓冲区，并将数据复制到其中。这打破了与父缓冲区的链接，允许垃圾回收器完成其工作。
 
-📌重要
-
-`Buffer.copy()`需要一个预先分配的目标缓冲区。常见模式：`const copy = Buffer.alloc(size); source.copy(copy, 0, start, end);`。为了方便，可以使用`Buffer.from(source.subarray(start, end))`在一行中创建一个副本。
+> 📌重要
+>
+> `Buffer.copy()`需要一个预先分配的目标缓冲区。常见模式：`const copy = Buffer.alloc(size); source.copy(copy, 0, start, end);`。为了方便，可以使用`Buffer.from(source.subarray(start, end))`在一行中创建一个副本。
 
 这是我们最终为我们的日志解析器实现的解决方案。我们不是存储`slice`，而是这样做：
 
 ```js
 function getSessionId(logBuffer) {
- // Instead of a view, we make an explicit copy.
- const sessionId = Buffer.alloc(16);
- logBuffer.copy(sessionId, 0, 0, 16);
+  // Instead of a view, we make an explicit copy.
+  const sessionId = Buffer.alloc(16);
+  logBuffer.copy(sessionId, 0, 0, 16);
 ```
 
-这种模式使我们分配了 16 个字节的内存，并且`memcpy()`操作需要几纳秒。`Buffer.alloc(16)`从 Node 的缓冲池（小于 4KB）中获取内存，并且出于安全考虑，内存被初始化为零。然后`copy()`操作从源中精确地移动 16 个字节。关键的区别是`sessionId`有一个自己的 ArrayBuffer，没有对`logBuffer`的引用。当这个函数返回并且`logBuffer`超出作用域时，整个多兆字节的缓冲区可以立即被垃圾回收。你的堆分析器将显示 16 字节的缓冲区，保留大小正好是 16 字节——这正是你所期望的。
+这种模式使我们分配了 16 个字节的内存，并且`memcpy()`操作需要几纳秒。`Buffer.alloc(16)`从 Node 的缓冲池（小于 4KB）中获取内存，并且出于安全考虑，内存被初始化为零。然后`copy()`操作从源中精确地移动 16 个字节。关键的区别是`sessionId`有一个自己的`ArrayBuffer`，没有对`logBuffer`的引用。当这个函数返回并且`logBuffer`超出作用域时，整个多兆字节的缓冲区可以立即被垃圾回收。你的堆分析器将显示 16 字节的缓冲区，保留大小正好是 16 字节——这正是你所期望的。
 
 ```js
 // Now, storing 'sessionId' retains only 16 bytes, not the whole logBuffer.
- return sessionId.toString("utf-8");
+  return sessionId.toString("utf-8");
 }
 ```
 
-⚠️警告
-
-永远不要在可能包含敏感数据的复制操作中使用`Buffer.allocUnsafe()`。未初始化的内存可能会暴露来自先前释放的缓冲区的密码、令牌或其他秘密。始终使用`Buffer.alloc()`来确保安全关键代码。
+> ⚠️警告
+>
+> 永远不要在可能包含敏感数据的复制操作中使用`Buffer.allocUnsafe()`。未初始化的内存可能会暴露来自先前释放的缓冲区的密码、令牌或其他秘密。始终使用`Buffer.alloc()`来确保安全关键代码。
 
 从`slice`到`alloc`+`copy`的一行更改为我们节省了数 GB 的 RAM。从表面上看，它可能看起来不太“高效”，因为它做了更多的工作（分配和复制），但在整个系统健康的大背景下，它要高效得多。
 
-## SharedArrayBuffer 和跨线程视图
+## `SharedArrayBuffer`和跨线程视图
 
 当我们引入 Node.js 工作线程时，情况变得更加复杂。长期以来，JavaScript 都是单线程的。如果你想要进行 CPU 密集型工作，你会阻塞主事件循环，你的应用程序的性能会降至停顿。工作线程改变了游戏规则，允许真正的并行性。但是，你如何在不需要昂贵的序列化和复制的情况下在线程之间共享数据？
 
-答案是 `SharedArrayBuffer` (SAB)。普通的 `ArrayBuffer` 不能被多个线程访问。如果你传递一个给工作线程，就会创建一个副本。然而，`SharedArrayBuffer` 是一种特殊的 `ArrayBuffer` 类型，其底层的内存块可以被多个线程同时引用和操作。
+答案是`SharedArrayBuffer`（SAB）。普通的`ArrayBuffer`不能被多个线程访问。如果你传递一个给工作线程，就会创建一个副本。然而，`SharedArrayBuffer`是一种特殊的`ArrayBuffer`类型，其底层的内存块可以被多个线程同时引用和操作。
 
-⚠️警告
+> ⚠️警告
+>
+> 由于 Spectre 漏洞，`SharedArrayBuffer`在浏览器中（2018-2020 年）被暂时禁用。虽然重新启用并加入了安全缓解措施，但仍需要谨慎处理。在 Node.js 中，始终使用`Atomics`操作来防止多线程场景中的竞态条件和数据损坏。
 
-由于 Spectre 漏洞，`SharedArrayBuffer` 在浏览器中（2018-2020 年）被暂时禁用。虽然重新启用并加入了安全缓解措施，但仍需要谨慎处理。在 Node.js 中，始终使用 `Atomics` 操作来防止多线程场景中的竞态条件和数据损坏。
-
-这是我们对视图理解变得强大的地方。你可以在主线程上创建一个 `SharedArrayBuffer`，将其传递给工作线程，然后两个线程都可以在相同的内存块上创建 `TypedArray` 或 `Buffer` 视图。
+这是我们对视图理解变得强大的地方。你可以在主线程上创建一个`SharedArrayBuffer`，将其传递给工作线程，然后两个线程都可以在相同的内存块上创建`TypedArray`或`Buffer`视图。
 
 ```js
 // main.js
 import { Worker } from "worker_threads";
- // Create a SharedArrayBuffer of 4 bytes.
+// Create a SharedArrayBuffer of 4 bytes.
 const sab = new SharedArrayBuffer(4);
 ```
 
-这分配了 4 字节的内存，可以被多个 JavaScript 上下文同时访问。与常规 `ArrayBuffer` 不同，这种内存使用平台特定的机制（POSIX 上的共享内存，Windows 上的内存映射文件）映射到多个地址空间。分配是页面对齐的，以支持原子操作。V8 会特别跟踪这一点 - 在垃圾回收期间，它不能移动或压缩这种内存，因为多个隔离区可能同时访问它。
+这分配了 4 字节的内存，可以被多个 JavaScript 上下文同时访问。与常规`ArrayBuffer`不同，这种内存使用平台特定的机制（POSIX 上的共享内存，Windows 上的内存映射文件）映射到多个地址空间。分配是页面对齐的，以支持原子操作。V8 会特别跟踪这一点——在垃圾回收期间，它不能移动或压缩这种内存，因为多个隔离区可能同时访问它。
 
 ```js
 // Create a view over it on the main thread.
@@ -440,85 +443,83 @@ const mainThreadView = new Int32Array(sab);
 mainThreadView[0] = 123; // Initial value
 ```
 
-默认情况下，这个写入操作不是原子的。在 x86-64 上，32 位对齐的写入在硬件级别上是原子的，但 JavaScript 并不提供这样的保证。如果不使用 `Atomics.store()`，这个写入可能会被撕裂 - 另一个线程可能会看到部分写入的值。值 123 直接写入共享内存，没有任何同步原语，这意味着由于 CPU 缓存一致性延迟，无法保证其他线程何时会看到这个更新。
+默认情况下，这个写入操作不是原子的。在 x86-64 上，32 位对齐的写入在硬件级别上是原子的，但 JavaScript 并不提供这样的保证。如果不使用`Atomics.store()`，这个写入可能会被撕裂——另一个线程可能会看到部分写入的值。值 123 直接写入共享内存，没有任何同步原语，这意味着由于 CPU 缓存一致性延迟，无法保证其他线程何时会看到这个更新。
 
 ```js
 const worker = new Worker("./worker.js");
 worker.postMessage({ sab });
 ```
 
-`postMessage` 不会复制 `SharedArrayBuffer` - 它传递了对相同内存的引用。现在两个线程都可以访问相同的 4 字节 RAM。这与常规 `ArrayBuffer` 消息传递有根本的不同，后者会克隆数据。工作线程获得自己的 Int32Array 视图，但它指向与主线程视图完全相同的内存页。
+`postMessage`不会复制`SharedArrayBuffer`——它传递了对相同内存的引用。现在两个线程都可以访问相同的 4 字节 RAM。这与常规`ArrayBuffer`消息传递有根本的不同，后者会克隆数据。工作线程获得自己的`Int32Array`视图，但它指向与主线程视图完全相同的内存页。
 
 ```js
 worker.on("message", () => {
- console.log("Main thread sees:", mainThreadView[0]); // Output: 456
+  console.log("Main thread sees:", mainThreadView[0]); // Output: 456
 });
 ```
 
 ```js
 // worker.js
 import { parentPort } from "worker_threads";
- parentPort.on("message", ({ sab }) => {
- const workerView = new Int32Array(sab);
- console.log("Worker sees initial value:", workerView[0]); // Output: 123
+parentPort.on("message", ({ sab }) => {
+  const workerView = new Int32Array(sab);
+  console.log("Worker sees initial value:", workerView[0]); // Output: 123
 ```
 
 工作线程立即看到主线程写入的值 123。但这并不保证在没有适当同步的情况下。由于 CPU 缓存一致性协议，一个线程写入和另一个线程看到更新之间可能会有延迟。在弱顺序内存架构（如 ARM）上，如果没有内存屏障，你可能根本看不到更新。
 
 ```js
 // Modify the memory from the worker thread.
- workerView[0] = 456;
- parentPort.postMessage("done");
+  workerView[0] = 456;
+  parentPort.postMessage("done");
 });
 ```
 
 这非常强大，令人难以置信。我们只是在一条线程上修改了内存，并在另一条线程上立即看到了结果，没有任何复制和序列化开销。这是 Node.js 中高性能并行计算的基础。你可以有一个工作线程在大型数据集上执行复杂计算，而主线程则读取结果，这些结果一旦可用即可读取。
 
-然而，这引入了一个全新的问题类别：竞争条件。由于两个线程可以同时读取和写入相同的内存，你需要同步原语来协调访问。这就是 `Atomics` 发挥作用的地方。`Atomics` 对象提供了在 `SharedArrayBuffer` 视图上执行原子读取、写入和读取-修改-写入操作的方法。这些操作保证在没有被另一个线程中断的情况下完成，从而防止数据损坏。
+然而，这引入了一个全新的问题类别：竞争条件。由于两个线程可以同时读取和写入相同的内存，你需要同步原语来协调访问。这就是`Atomics`发挥作用的地方。`Atomics`对象提供了在`SharedArrayBuffer`视图上执行原子读取、写入和读取-修改-写入操作的方法。这些操作保证在没有被另一个线程中断的情况下完成，从而防止数据损坏。
 
-📌重要
+> 📌重要
+>
+> 没有使用`Atomics`，`SharedArrayBuffer`访问不是线程安全的。常规数组索引（`array[0] = value`）可能导致数据竞争。始终使用`Atomics.store()`、`Atomics.load()`和其他原子操作进行线程安全的访问。
 
-没有使用 `Atomics`，`SharedArrayBuffer` 访问不是线程安全的。常规数组索引（`array[0] = value`）可能导致数据竞争。始终使用 `Atomics.store()`、`Atomics.load()` 和其他原子操作进行线程安全的访问。
-
-使用 `SharedArrayBuffer` 是一种高级技术，它将并发编程的挑战直接带入你的 Node.js 应用程序。但理解它全部建立在相同的视图（`TypedArray`s）共享内存块（`SharedArrayBuffer`）的基础之上，就能揭开魔法的面纱。这与 `slice` 和 `subarray` 的原理相同，只是扩展到了线程边界之外。
+使用`SharedArrayBuffer`是一种高级技术，它将并发编程的挑战直接带入你的 Node.js 应用程序。但理解它全部建立在相同的视图（`TypedArray`s）共享内存块（`SharedArrayBuffer`）的基础之上，就能揭开魔法的面纱。这与`slice`和`subarray`的原理相同，只是扩展到了线程边界之外。
 
 ## 记忆保留与垃圾回收
 
 我们已经讨论了很多关于记忆保留的内容，但让我们正式化它。这是我们 10GB（假设）日志解析器泄露背后的机制。在像 JavaScript 这样的垃圾回收语言中，只要从“根”集合（例如，全局对象，当前调用栈）有可到达的引用，对象就会保留在内存中。
 
-当你使用 `slice()` 或 `subarray()` 创建 `Buffer` 视图时，你创建了两个具有关系的对象。
+当你使用`slice()`或`subarray()`创建`Buffer`视图时，你创建了两个具有关系的对象。
 
-1.  **视图对象** - 新的 `Buffer` 实例（`userIdSlice`）。它是在 V8 堆上的一个小对象。
+1. **视图对象**——新的`Buffer`实例（`userIdSlice`）。它是在 V8 堆上的一个小对象。
+2. **父缓冲对象**——原始的`Buffer`（`massiveBuffer`），它持有对大型外部`ArrayBuffer`的引用。
 
-1.  **父缓冲对象** - 原始的 `Buffer` (`massiveBuffer`)，它持有对大型外部 `ArrayBuffer` 的引用。
+视图对象维护对其父缓冲区的内部引用。根据 V8 的内存模型，只要视图对象是可到达的，它的父缓冲区也被认为是可到达的。垃圾回收器看到从`userIdSlice`到`massiveBuffer`的引用，会说：“不行，还不能收集`massiveBuffer`，还有人需要它。”它不知道你只关心 50MB 中的 16 字节。它只看到有效的引用并尊重它。
 
-视图对象维护对其父缓冲区的内部引用。根据 V8 的内存模型，只要视图对象是可到达的，它的父缓冲区也被认为是可到达的。垃圾回收器看到从 `userIdSlice` 到 `massiveBuffer` 的引用，会说：“不行，还不能收集 `massiveBuffer`，还有人需要它。”它不知道你只关心 50MB 中的 16 字节。它只看到有效的引用并尊重它。
+这就是为什么堆快照如此令人困惑。分析器正确地识别出`userIdSlice`对象很小。但它还有一个“保留大小”与“浅层大小”的概念。
 
-这就是为什么堆快照如此令人困惑。分析器正确地识别出 `userIdSlice` 对象很小。但它还有一个“保留大小”与“浅层大小”的概念。
-
-+   **浅层大小** 是对象本身的大小。对于我们的切片，这非常小，只是 JavaScript 对象包装器几十字节。
-
-+   **保留大小** 是所有仅因为该对象存在而被保留的内存的大小。对于我们的切片，保留大小非常大，因为它们是唯一阻止 50MB 父缓冲区被垃圾回收的东西。
+- **浅层大小**是对象本身的大小。对于我们的切片，这非常小，只是 JavaScript 对象包装器几十字节。
+- **保留大小**是所有仅因为该对象存在而被保留的内存的大小。对于我们的切片，保留大小非常大，因为它们是唯一阻止 50MB 父缓冲区被垃圾回收的东西。
 
 堆快照显示 890MB 的切片保留了 10KB。它看起来像是一个会计错误，但这是视图语义的残酷真相。一旦我们理解了这一点，修复就显而易见了：我们必须切断我们所需的小数据片段与其庞大的父对象之间的联系。唯一的方法是进行复制。
 
 ```js
 // Before: A view that retains the parent
 function createView(parent) {
- return parent.slice(0, 10);
+  return parent.slice(0, 10);
 }
 ```
 
-此函数返回一个视图，它保持对 `parent` 的 `ArrayBuffer` 的强引用。如果 `parent` 是 10MB，你的 10 字节视图将保持所有 10MB 的活跃状态。V8 垃圾收集器追踪引用链，并将整个父对象标记为可到达。这种模式是生产环境中 Node.js 应用程序中与 Buffer 相关的大多数内存泄漏的原因。
+此函数返回一个视图，它保持对`parent`的`ArrayBuffer`的强引用。如果`parent`是 10MB，你的 10 字节视图将保持所有 10MB 的活跃状态。V8 垃圾收集器追踪引用链，并将整个父对象标记为可到达。这种模式是生产环境中 Node.js 应用程序中与`Buffer`相关的大多数内存泄漏的原因。
 
 ```js
 // After: A copy that lets the parent be freed
 function createCopy(parent) {
- return Buffer.from(parent.slice(0, 10));
+  return Buffer.from(parent.slice(0, 10));
 }
 ```
 
-`Buffer.from(buffer)` 构造函数调用是关键。它接受由 `slice()` 创建的 10 字节视图，分配一个新的 10 字节 `ArrayBuffer`，将数据复制到其中，并返回一个新的 `Buffer` 对象，该对象指向这个新的、小的分配。原始父缓冲区不再被返回的对象引用，由 `slice()` 创建的临时视图可以立即回收。这种模式，`Buffer.from(buf.slice(...))`，是创建大型缓冲区一小部分“修剪”副本的常见且有效的方法。它是基于视图的内存保留的解药。在经历了足够的生产事故后，你就能像鹰一样迅速发现缺失的副本。
+`Buffer.from(buffer)`构造函数调用是关键。它接受由`slice()`创建的 10 字节视图，分配一个新的 10 字节`ArrayBuffer`，将数据复制到其中，并返回一个新的`Buffer`对象，该对象指向这个新的、小的分配。原始父缓冲区不再被返回的对象引用，由`slice()`创建的临时视图可以立即回收。这种模式，`Buffer.from(buf.slice(...))`，是创建大型缓冲区一小部分“修剪”副本的常见且有效的方法。它是基于视图的内存保留的解药。在经历了足够的生产事故后，你就能像鹰一样迅速发现缺失的副本。
 
 ## 基于视图的二进制协议解析
 
@@ -526,68 +527,65 @@ function createCopy(parent) {
 
 例如，一条消息可能的结构如下：
 
-+   字节 0-1：消息类型（Uint16）
-
-+   字节 2-3：消息长度（Uint16）
-
-+   字节 4：标志（Uint8）
-
-+   字节 5-20：会话 ID（16 字节 UUID 字符串）
-
-+   字节 21-结束：有效载荷（原始字节）
+- 字节 0-1：消息类型（`Uint16`）
+- 字节 2-3：消息长度（`Uint16`）
+- 字节 4：标志（`Uint8`）
+- 字节 5-20：会话 ID（16 字节 UUID 字符串）
+- 字节 21-结束：有效载荷（原始字节）
 
 解析此内容的一个简单方法涉及大量的切片和复制。
 
 ```js
 // Naive, copy-heavy parsing
 function parseMessageWithCopies(buffer) {
- const messageType = buffer.slice(0, 2).readUInt16BE();
- const messageLength = buffer.slice(2, 4).readUInt16BE();
- const flags = buffer.slice(4, 5).readUInt8();
+  const messageType = buffer.slice(0, 2).readUInt16BE();
+  const messageLength = buffer.slice(2, 4).readUInt16BE();
+  const flags = buffer.slice(4, 5).readUInt8();
 ```
 
-每行代码都创建一个临时视图，仅用于读取原始值。`slice(0, 2)` 创建一个缓冲区对象（堆上 72 字节），然后 `readUInt16BE()` 读取两个字节并将它们从大端转换为本地端序。视图立即被丢弃，但在 V8 分配、跟踪并最终垃圾回收它之前。每秒数千条消息，你正在无端地创建大量的 GC 压力。这些中间视图没有任何作用——你可以直接从原始缓冲区读取。
+每行代码都创建一个临时视图，仅用于读取原始值。`slice(0, 2)`创建一个缓冲区对象（堆上 72 字节），然后`readUInt16BE()`读取两个字节并将它们从大端转换为本地端序。视图立即被丢弃，但在 V8 分配、跟踪并最终垃圾回收它之前。每秒数千条消息，你正在无端地创建大量的 GC 压力。这些中间视图没有任何作用——你可以直接从原始缓冲区读取。
 
 ```js
 const sessionId = buffer.slice(5, 21).toString("utf-8");
- const payload = buffer.slice(21); // This slice could be huge!
- return { messageType, messageLength, flags, sessionId, payload };
-}
+const payload = buffer.slice(21); // This slice could be huge!
+return { messageType, messageLength, flags, sessionId, payload };
 ```
 
-⚠️警告
+> ⚠️警告
+>
+> 上述模式为每条消息创建 5 个缓冲区视图。以每秒 1MB 的负载处理 1000 条消息将保留 1GB 的内存，即使你只需要 16 字节的会话 ID！
 
-上述模式为每条消息创建 5 个缓冲区视图。以每秒 1MB 的负载处理 1000 条消息将保留 1GB 的内存，即使你只需要 16 字节的会话 ID！
-
-这段代码*工作*，但它为每条消息创建了五个新的 `Buffer` 对象。如果你每秒处理数千条消息，这些分配会累加起来，给垃圾收集器施加压力，并减慢你的应用程序。
+这段代码*工作*，但它为每条消息创建了五个新的`Buffer`对象。如果你每秒处理数千条消息，这些分配会累加起来，给垃圾收集器施加压力，并减慢你的应用程序。
 
 另一方面，零拷贝方法利用视图读取数据，而不创建数据的副本。我们可以在主缓冲区上直接使用基于偏移量的读取方法，或者为更复杂的数据类型创建`TypedArray`视图。
 
 ```js
 // Efficient, zero-copy parsing
 function parseMessageWithViews(buffer) {
- const messageType = buffer.readUInt16BE(0); // Read directly from offset
- const messageLength = buffer.readUInt16BE(2);
- const flags = buffer.readUInt8(4);
+  const messageType = buffer.readUInt16BE(0); // Read directly from offset
+  const messageLength = buffer.readUInt16BE(2);
+  const flags = buffer.readUInt8(4);
 ```
 
-这些直接读取操作非常快速。没有中间对象，没有分配，没有 GC 压力。`readUInt16BE()` 方法计算内存地址（缓冲区基础地址 + 偏移量），读取两个字节，并在优化的 C++代码中执行字节序转换。整个操作都保持在 CPU 缓存中。对于高频解析，创建视图然后读取与直接读取之间的差异可能意味着每秒 10,000 条和 100,000 条消息之间的差异。
+这些直接读取操作非常快速。没有中间对象，没有分配，没有 GC 压力。`readUInt16BE()`方法计算内存地址（缓冲区基础地址 + 偏移量），读取两个字节，并在优化的 C++代码中执行字节序转换。整个操作都保持在 CPU 缓存中。对于高频解析，创建视图然后读取与直接读取之间的差异可能意味着每秒 10,000 条和 100,000 条消息之间的差异。
 
 ```js
 // For the session ID and payload, we create views
- const sessionIdView = buffer.subarray(5, 21);
- const payloadView = buffer.subarray(21);
- return { messageType, messageLength, flags, sessionIdView, payloadView };
+  const sessionIdView = buffer.subarray(5, 21);
+  const payloadView = buffer.subarray(21);
+  return { messageType, messageLength, flags, sessionIdView, payloadView };
 }
 ```
 
-📌重要
+> 📌重要
+
+
 
 这个零拷贝版本速度快 10 倍，但返回保留整个父缓冲区的视图。明确记录：如果调用者需要将数据存储在立即处理作用域之外，调用者必须复制数据。
 
-这个版本效率显著更高。它为原始数字类型不创建任何中间副本。它为会话 ID 和有效载荷创建了两个视图，但没有数据被重复。`sessionIdView`和`payloadView`是轻量级指针，指向原始消息缓冲区。
+这个版本效率显著更高。它为原始数字类型不创建任何中间副本。它为会话 ID 和有效载荷创建了两个视图，但没有数据被重复。`sessionIdView` 和 `payloadView` 是轻量级指针，指向原始消息缓冲区。
 
-这是我们 TCP 服务中最终节省了 8GB RAM 的模式。我们使用视图是因为处理是临时的。如果我们需要长期存储`sessionIdView`或`payloadView`（例如，在缓存或请求映射中），我们就会回到内存保留陷阱。此类函数的契约应该是清晰的：它返回仅在处理立即作用域内有效的视图。如果调用者需要持久化该数据，它就是调用者的*责任*来执行复制。
+这是我们 TCP 服务中最终节省了 8GB RAM 的模式。我们使用视图是因为处理是临时的。如果我们需要长期存储 `sessionIdView` 或 `payloadView`（例如，在缓存或请求映射中），我们就会回到内存保留陷阱。此类函数的契约应该是清晰的：它返回仅在处理立即作用域内有效的视图。如果调用者需要持久化该数据，它就是调用者的责任来执行复制。
 
 这是对高性能库至关重要的设计模式。解析函数应执行零拷贝操作并返回视图。函数的消费者然后决定数据是短期的（直接使用视图）还是长期的（创建副本）。这分离了关注点，并将内存管理决策交给了具有最多上下文的代码。
 
@@ -595,13 +593,12 @@ function parseMessageWithViews(buffer) {
 
 当你处理来自网络或文件的二进制数据时，你无法避开字节序的概念。它指的是多字节数字（如 16 位或 32 位整数）在内存中存储的顺序。
 
-ℹ️注意
+> ℹ️ **注意**
+>
+> 如果位操作和位掩码仍然有点模糊，不要担心；我们将在后面的专门章节中深入探讨它们。现在，只需耐心等待。
 
-如果位操作和位掩码仍然有点模糊，不要担心；我们将在后面的专门章节中深入探讨它们。现在，只需耐心等待。
-
-+   **大端（BE）** - 最显著的字节首先。这在网络协议中很常见（通常称为“网络字节序”）。数字`0x12345678`将存储为`12 34 56 78`。
-
-+   **小端（LE）** - 最不显著的字节首先。这是大多数现代 CPU 的本地格式，包括 Intel 和 AMD x86-64。相同的数字将存储为`78 56 34 12`。
+- **大端（BE）**：最显著的字节首先。这在网络协议中很常见（通常称为“网络字节序”）。数字 `0x12345678` 将存储为 `12 34 56 78`。
+- **小端（LE）**：最不显著的字节首先。这是大多数现代 CPU 的本地格式，包括 Intel 和 AMD x86-64。相同的数字将存储为 `78 56 34 12`。
 
 忽略字节序问题在读取二进制协议时会导致数据完全混乱。Node.js 的 `Buffer` 提供了明确的方法来处理这个问题：`readUInt16BE`、`readUInt16LE`、`writeInt32BE` 等。当你知道你正在解析的数据的确切字节序时，这些方法是你的最佳选择。
 
@@ -610,7 +607,7 @@ function parseMessageWithViews(buffer) {
 ```js
 // A 16-bit integer, 258, in Big-Endian format is [0x01, 0x02]
 const networkBuffer = Buffer.from([0x01, 0x02]);
- // Using the Buffer method correctly:
+// Using the Buffer method correctly:
 console.log(networkBuffer.readUInt16BE(0)); // 258, Correct!
 ```
 
@@ -622,25 +619,25 @@ const int16View = new Int16Array(networkBuffer.buffer, networkBuffer.byteOffset,
 console.log(int16View[0]); // 513, Incorrect! (It read 0x0201)
 ```
 
-🚨 警告
-
-`TypedArray` 视图使用平台字节序（通常在 x86/ARM 上是小端字节序）。网络协议通常使用大端字节序。永远不要使用原始的 `TypedArray` 视图来处理网络数据 - 总是使用 `Buffer` 的 BE/LE 方法或带有明确字节序的 `DataView`。
+> 🚨 **警告**
+>
+> `TypedArray` 视图使用平台字节序（通常在 x86/ARM 上是小端字节序）。网络协议通常使用大端字节序。永远不要使用原始的 `TypedArray` 视图来处理网络数据——总是使用 `Buffer` 的 BE/LE 方法或带有明确字节序的 `DataView`。
 
 这是一个即将发生的灾难。我们如何在使用通用 `TypedArray` 视图时控制字节序？答案是 `DataView` 对象。`DataView` 是一个低级接口，用于读取和写入 `ArrayBuffer` 中的数据，允许你为每个操作明确指定字节序。它比使用 `TypedArray` 更冗长，但它提供了绝对的控制。
 
 ```js
 const arrayBuffer = new ArrayBuffer(4);
 const dataView = new DataView(arrayBuffer);
- // Write a 32-bit integer in Big-Endian format
+// Write a 32-bit integer in Big-Endian format
 dataView.setInt32(0, 123456789, false); // false for big-endian
 ```
 
-`setInt32()` 方法使用 `false` 将字节写入为 [0x07, 0x5B, 0xCD, 0x15] - 最高有效字节首先写入。`DataView` 内部处理字节序，无论平台字节序如何。在小端系统上，它在写入之前反转字节。在大端系统上，它直接写入。这个抽象层会消耗一些 CPU 周期，但确保了所有平台上的正确行为。
+`setInt32()` 方法使用 `false` 将字节写入为 `[0x07, 0x5B, 0xCD, 0x15]`——最高有效字节首先写入。`DataView` 内部处理字节序，无论平台字节序如何。在小端系统上，它在写入之前反转字节。在大端系统上，它直接写入。这个抽象层会消耗一些 CPU 周期，但确保了所有平台上的正确行为。
 
 ```js
 // Read it back in Little-Endian format (will be wrong)
 console.log(dataView.getInt32(0, true)); // Some garbage number
- // Read it back correctly in Big-Endian format
+// Read it back correctly in Big-Endian format
 console.log(dataView.getInt32(0, false)); // 123456789
 ```
 
@@ -650,51 +647,52 @@ console.log(dataView.getInt32(0, false)); // 123456789
 
 经历了这些生产问题后，我的团队开发了一套经过充分验证的模式，用于处理缓冲区。这些不仅仅是理论上的最佳实践；它们是生产系统中必不可少的模式。
 
-**模式 1：用于同步处理的临时视图**
+### 模式 1：用于同步处理的临时视图
 
 这是零拷贝最常见且最安全的使用方式。当你需要在单个函数作用域内处理更大缓冲区的一个块时，视图是完美的。
 
 ```js
 // Strategic view for temporary processing
 function processChunk(largeBuffer, offset, length) {
- const view = largeBuffer.subarray(offset, offset + length);
- const result = performComplexCalculation(view);
+  const view = largeBuffer.subarray(offset, offset + length);
+  const result = performComplexCalculation(view);
 ```
 
 这个模式是安全的，因为视图的寿命限制在函数执行范围内。视图被创建、使用，并在函数返回时变得不可达。V8 的逃逸分析通常可以进一步优化这一点——如果视图没有逃逸函数，它甚至可能不在堆上分配 Buffer 对象，而将所有内容保持在寄存器中。关键洞察：同步、函数作用域的视图几乎总是安全于保留问题。
 
 ```js
 // Once the function returns, 'view' is eligible for GC.
- return result;
+  return result;
 }
 ```
 
-我们在这里使用视图是因为处理是临时的且同步的。视图不会超出函数的作用域。如果我们需要长期存储这个块或用于异步回调，我们会选择复制。这里就是为什么这个决定很重要的原因...
+我们在这里使用视图是因为处理是临时的且同步的。视图不会超出函数的作用域。如果我们需要长期存储这个块或用于异步回调，我们会选择复制。这里就是为什么这个决定很重要的原因……
 
-**模式 2：用于异步操作和存储的防御性复制**
+### 模式 2：用于异步操作和存储的防御性复制
 
 任何需要跨异步边界或存储在集合中的缓冲区数据，你必须假设它需要被复制。原始缓冲区可能在你回调执行时被重用或垃圾回收。
 
 ```js
 const longLivedCache = new Map();
- function processAndCache(dataBuffer) {
- const key = dataBuffer.subarray(0, 16); // Temporary view for the key
- const value = dataBuffer.subarray(16); // Temporary view for the value
+
+function processAndCache(dataBuffer) {
+  const key = dataBuffer.subarray(0, 16); // Temporary view for the key
+  const value = dataBuffer.subarray(16); // Temporary view for the value
 ```
 
-这些视图是为了立即处理而创建的。它们很轻量级——在堆上每个视图只有 72 字节——但它们持有`dataBuffer`整个 ArrayBuffer 的引用。如果我们直接将这些视图存储在我们的缓存中，就会创建内存泄漏。整个`dataBuffer`将保留，直到缓存条目存在，这在生产系统中可能是几个小时或几天。
+这些视图是为了立即处理而创建的。它们很轻量级——在堆上每个视图只有 72 字节——但它们持有 `dataBuffer` 整个 `ArrayBuffer` 的引用。如果我们直接将这些视图存储在我们的缓存中，就会创建内存泄漏。整个 `dataBuffer` 将保留，直到缓存条目存在，这在生产系统中可能是几个小时或几天。
 
 ```js
 // Before storing, we make a defensive copy.
- const storedValue = Buffer.from(value);
- // The key is converted to a string, which is implicitly a copy.
- longLivedCache.set(key.toString("hex"), storedValue);
+  const storedValue = Buffer.from(value);
+  // The key is converted to a string, which is implicitly a copy.
+  longLivedCache.set(key.toString("hex"), storedValue);
 }
 ```
 
-在这里，我们创建视图以最初解析缓冲区。但当我们决定将`value`放入我们的`longLivedCache`时，我们立即创建一个副本。这确保我们的缓存条目是自包含的，并且不会意外地持有对更大的`dataBuffer`的引用。
+在这里，我们创建视图以最初解析缓冲区。但当我们决定将 `value` 放入我们的 `longLivedCache` 时，我们立即创建一个副本。这确保我们的缓存条目是自包含的，并且不会意外地持有对更大的 `dataBuffer` 的引用。
 
-**模式 3：解析器协议（输出视图，输入副本**）
+### 模式 3：解析器协议（输出视图，输入副本）
 
 这是库作者的模式。编写纯零拷贝的解析函数，并返回视图。明确记录返回的值是视图，如果原始缓冲区发生变化，它们可能会被无效化。
 
@@ -707,10 +705,10 @@ const longLivedCache = new Map();
  * @returns {{id: Buffer, body: Buffer}} Views for id and body.
  */
 function parseHeader(buffer) {
- return {
- id: buffer.subarray(0, 8),
- body: buffer.subarray(8),
- };
+  return {
+    id: buffer.subarray(0, 8),
+    body: buffer.subarray(8),
+  };
 }
 ```
 
@@ -720,7 +718,7 @@ function parseHeader(buffer) {
 // Consumer of the function decides the memory strategy
 const rawMessage = getMessageFromNetwork();
 const { id, body } = parseHeader(rawMessage);
- // I need to use 'id' later, so I'll copy it.
+// I need to use 'id' later, so I'll copy it.
 const savedId = Buffer.from(id);
 // I'm just logging the body, so the temporary view is fine.
 logBodyPreview(body);
@@ -730,33 +728,30 @@ logBodyPreview(body);
 
 ## 使用视图调试内存问题
 
-当你怀疑与视图相关的内存泄漏时，你的主要工具是堆快照。你可以使用 Node.js 的 Chrome DevTools 或使用像`heapdump`这样的模块来生成这些快照。
+当你怀疑与视图相关的内存泄漏时，你的主要工具是堆快照。你可以使用 Node.js 的 Chrome DevTools 或使用像 `heapdump` 这样的模块来生成这些快照。
 
 该过程通常如下：
 
-1.  当你的应用程序处于稳定、低内存状态时，进行堆快照。
+1. 当你的应用程序处于稳定、低内存状态时，进行堆快照。
+2. 向你的应用程序施加你认为可能触发泄漏的负载。
+3. 再次进行堆快照。
+4. 在一段时间后再次进行第三次快照以确认增长趋势。
 
-1.  向你的应用程序施加你认为可能触发泄漏的负载。
+在快照查看器中，你将想要使用“比较”视图来查看快照之间分配了哪些对象。当调试我们的日志解析器时，我们看到了 `Buffer` 对象数量的巨大增加。
 
-1.  再次进行堆快照。
+> 💡 **提示**
+>
+> 使用 `node --inspect-brk` 与 Chrome DevTools 进行内存分析。关键的是“保留大小”列——它显示了每个对象保留的内存。寻找具有巨大保留大小的微小缓冲区——这是基于视图的泄漏的标志。
 
-1.  在一段时间后再次进行第三次快照以确认增长趋势。
+当你点击这些 `Buffer` 对象之一时，分析器将显示其属性。关键是寻找对父缓冲区的内部引用。在 Chrome DevTools 中，这通常在像 `[[backing_store]]` 这样的属性下显示，或者通过检查对象保留者。你会看到你那微小的 16 字节 `Buffer` 切片，在其保留链中，你会找到它所保持活的巨大多兆字节父 `Buffer`。
 
-在快照查看器中，你将想要使用“比较”视图来查看快照之间分配了哪些对象。当调试我们的日志解析器时，我们看到了`Buffer`对象数量的巨大增加。
+另一种强大的技术是使用我们已多次讨论过的 `process.memoryUsage()`。
 
-💡提示
+> 💡 **提示**
+>
+> 在 Node.js 13.9.0+ 中，使用 `process.memoryUsage().arrayBuffers` 来专门跟踪缓冲区内存。这比包括其他 C++ 分配的 `external` 更准确。
 
-使用`node --inspect-brk`与 Chrome DevTools 进行内存分析。关键的是“保留大小”列——它显示了每个对象保留的内存。寻找具有巨大保留大小的微小缓冲区——这是基于视图的泄漏的标志。
-
-当你点击这些`Buffer`对象之一时，分析器将显示其属性。关键是寻找对父缓冲区的内部引用。在 Chrome DevTools 中，这通常在像`[[backing_store]]`这样的属性下显示，或者通过检查对象保留者。你会看到你那微小的 16 字节`Buffer`切片，在其保留链中，你会找到它所保持活的巨大多兆字节父`Buffer`。
-
-另一种强大的技术是使用我们已多次讨论过的`process.memoryUsage()`。
-
-💡提示
-
-在 Node.js 13.9.0+中，使用`process.memoryUsage().arrayBuffers`来专门跟踪缓冲区内存。这比包括其他 C++分配的`external`更准确。
-
-在我们的泄漏中，`heapUsed`缓慢增长，但`external`和`rss`却在爆炸性增长。这告诉我们泄漏不在标准 JavaScript 对象中，而是在 Node.js 管理的外部内存中——这是`Buffer`保留问题的经典特征。
+在我们的泄漏中，`heapUsed` 缓慢增长，但 `external` 和 `rss` 却在爆炸性增长。这告诉我们泄漏不在标准 JavaScript 对象中，而是在 Node.js 管理的外部内存中——这是 `Buffer` 保留问题的经典特征。
 
 在分析后，我们发现我们的视图在另一个服务中相互别名。我们有一个循环缓冲区实现，我们会通过创建视图来环绕。我们偏移逻辑中的错误导致新视图与旧视图略有重叠，无意中使旧视图（以及整个缓冲区）比预期存活得更久。堆快照是唯一可视化这些引用链的方法。
 
@@ -766,81 +761,76 @@ logBodyPreview(body);
 
 在经历了足够的生产事故后，你学会了在部署任何大量操作缓冲区的新代码之前**分析内存保留情况**。你不仅测试正确性，还测试负载下的内存行为。你开始使用**视图进行临时、同步处理**，但对于任何长期存在、异步或存储在集合中的数据，你都会寻求**显式复制**。你内化了视图与其底层缓冲区之间的父子关系，因为你已经在凌晨 3 点调试了替代方案。你**使用内存分析器进行测试**，因为你已经因为假设而多次被烧伤。
 
-你**不懈地记录函数签名**。如果一个函数返回一个视图，你会在 JSDoc 注释中大声疾呼。你使下一个开发者不可能意外地误用你的 API 并创建泄漏。你学会了识别 `slice()` 或 `subarray()` 的代码异味，其结果被分配给具有更广作用域的变量，如对象属性或模块级变量。你看到这一点，就会立刻问，“那不应该是一个复制吗？”
+你**不懈地记录函数签名**。如果一个函数返回一个视图，你会在 JSDoc 注释中大声疾呼。你使下一个开发者不可能意外地误用你的 API 并创建泄漏。你学会了识别 `slice()` 或 `subarray()` 的代码异味，其结果被分配给具有更广作用域的变量，如对象属性或模块级变量。你看到这一点，就会立刻问：“那不应该是一个复制吗？”
 
-最重要的是，你**对每个零拷贝操作都持怀疑态度**。你不将其视为免费性能提升；你将其视为一个具有重大风险的强大工具。你问自己，“我创建的数据的生命周期是什么？我引用的数据的生命周期是什么？”如果这两个生命周期不同，复制几乎总是正确的答案。
+最重要的是，你**对每个零拷贝操作都持怀疑态度**。你不将其视为免费性能提升；你将其视为一个具有重大风险的强大工具。你问自己：“我创建的数据的生命周期是什么？我引用的数据的生命周期是什么？”如果这两个生命周期不同，复制几乎总是正确的答案。
 
 ## 内存分析数据
 
 这里是我们调查期间收集到的数据样本。测试创建了一个由单个 50MB 缓冲区派生出的 100,000 个小对象。
 
-**测试场景 1：使用 `slice()`（创建视图**）
+### 测试场景 1：使用 `slice()`（创建视图）
 
 ```js
 const largeBuffer = Buffer.alloc(50 * 1024 * 1024);
 const views = [];
+
 for (let i = 0; i < 100000; i++) {
- views.push(largeBuffer.slice(0, 10));
+  views.push(largeBuffer.slice(0, 10));
 }
+
 // At this point, take a heap snapshot.
 ```
 
-ℹ️注意
+> ℹ️ **注意**
+>
+> 在 Node.js 22+ 的本地 TypeScript 支持下，你可以直接运行 TypeScript 缓冲区代码，无需转译。对于进行缓冲区操作的 `.ts` 文件，使用 `node --experimental-strip-types`。
 
-在 Node.js 22+的本地 TypeScript 支持下，你可以直接运行 TypeScript 缓冲区代码，无需转译。对于进行缓冲区操作的.ts 文件，使用 `node --experimental-strip-types`。
+- **`process.memoryUsage()` 输出：**
+  - `rss`：~78 MB
+  - `heapUsed`：~8 MB
+  - `external`：~50.5 MB
 
-+   **`process.memoryUsage()` 输出：**
+- **堆快照分析：**
+  - `views` 数组中所有 `Buffer` 对象的浅层大小：~800 KB（100,000 * ~8 字节/对象）
+  - 保留大小：**~50 MB**。整个 `largeBuffer` 都被视图保留。
 
-    +   `rss`: ~78 MB
-
-    +   `heapUsed`: ~8 MB
-
-    +   `external`: ~50.5 MB
-
-+   **堆快照分析：**
-
-    +   `views` 数组中所有 `Buffer` 对象的浅层大小：~800 KB（100,000 * ~8 字节/对象）
-
-    +   保留大小：**~50 MB**。整个 `largeBuffer` 都被视图保留。
-
-**测试场景 2：使用战略复制**
+### 测试场景 2：使用战略复制
 
 ```js
 const largeBuffer = Buffer.alloc(50 * 1024 * 1024);
 const copies = [];
+
 for (let i = 0; i < 100000; i++) {
- // Creating a copy for each item
- copies.push(Buffer.from(largeBuffer.slice(0, 10)));
+  // Creating a copy for each item
+  copies.push(Buffer.from(largeBuffer.slice(0, 10)));
 }
 ```
 
-每次迭代都会使用 `slice(0, 10)` 创建一个临时视图，然后立即使用 `Buffer.from()` 进行复制。临时视图在 `Buffer.from()` 完成后即可进行回收。复制拥有自己的 10 字节 ArrayBuffer，与 `largeBuffer` 无关。在循环结束后，我们拥有 100,000 个独立的 10 字节缓冲区，总共约 1MB 的内存，而 `largeBuffer` 可以被垃圾回收，释放 50MB。
+
+
+每次迭代都会使用`slice(0, 10)`创建一个临时视图，然后立即使用`Buffer.from()`进行复制。临时视图在`Buffer.from()`完成后即可进行回收。复制拥有自己的 10 字节 `ArrayBuffer`，与`largeBuffer`无关。在循环结束后，我们拥有 100,000 个独立的 10 字节缓冲区，总共约 1MB 的内存，而`largeBuffer`可以被垃圾回收，释放 50MB。
 
 ```js
 // At this point, 'largeBuffer' can be garbage collected.
 ```
 
-+   **`process.memoryUsage()` 输出（触发垃圾回收后）：**
+- **`process.memoryUsage()`输出（触发垃圾回收后）：**
+  - `rss`：~32 MB
+  - `heapUsed`：~9 MB
+  - `external`：~1.5 MB
 
-    +   `rss`: ~32 MB
-
-    +   `heapUsed`: ~9 MB
-
-    +   `external`: ~1.5 MB
-
-+   **堆快照分析：**
-
-    +   50MB 的 `largeBuffer` 已消失。
-
-    +   `copies`数组包含 100,000 个小的`Buffer`对象，每个对象都有自己的 10 字节后端存储。总外部内存大约为 1MB（100,000 * 10 字节）加上一些开销。
+- **堆快照分析：**
+  - 50MB 的`largeBuffer`已消失。
+  - `copies`数组包含 100,000 个小的`Buffer`对象，每个对象都有自己的 10 字节后端存储。总外部内存大约为 1MB（100,000 * 10 字节）加上一些开销。
 
 这些测量清楚地量化了权衡。基于视图的方法在初期使用了更少的 CPU，但保留了它不需要的 50MB 内存。基于副本的方法在循环中使用了稍微更多的 CPU，但结果内存占用大大减小。
 
 ## 结束语
 
-ℹ️注意
-
-在 Node.js 22+的本地 TypeScript 支持下，你可以编写无需构建步骤的类型安全缓冲区操作。TypeScript 的类型系统可以在编译时帮助捕获缓冲区误用，从而防止本章讨论的许多运行时问题。
+> ℹ️ **注意**
+>
+> 在 Node.js 22+的本地 TypeScript 支持下，你可以编写无需构建步骤的类型安全缓冲区操作。TypeScript 的类型系统可以在编译时帮助捕获缓冲区误用，从而防止本章讨论的许多运行时问题。
 
 我仍然记得我的一个徒弟，他带着真正的好奇心问道：“那么我们为什么不在每个地方都使用副本呢？这似乎更安全。”这是一个合理的问题。答案是，真正的工程是关于做出明智的权衡。我们可以复制一切，我们的应用程序将更容易推理，但也会更慢、效率更低。我们可以拥有使用两倍 CPU 和内存的服务，在一个大规模系统中，这是你负担不起的成本。
 

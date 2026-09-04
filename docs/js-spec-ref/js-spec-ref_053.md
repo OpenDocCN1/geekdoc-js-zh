@@ -1,20 +1,5 @@
-# 7.2 Canvas API
 
-*   概述
-*   绘图方法
-*   图像处理方法
-    *   drawImage 方法
-    *   getImageData 方法，putImageData 方法
-    *   toDataURL 方法
-    *   save 方法，restore 方法
-    *   动画
-    *   像素处理
-        *   灰度效果
-        *   复古效果
-        *   红色蒙版效果
-        *   亮度效果
-        *   反转效果
-    *   参考链接
+# 7.2 Canvas API
 
 ## 概述
 
@@ -22,7 +7,7 @@ Canvas API（画布）用于在网页实时生成图像，并且可以操作图�
 
 使用前，首先需要新建一个 canvas 网页元素。
 
-```js
+```html
 <canvas id="myCanvas" width="400" height="200">
     您的浏览器不支持 canvas！
 </canvas>
@@ -190,7 +175,7 @@ image.onload = function() {
     canvas.height = image.height;
     canvas.getContext("2d").drawImage(image, 0, 0);
 
-    return canvas;
+    return canvas; 
 } 
 
 image.src = "image.png";
@@ -447,7 +432,11 @@ invert = function (pixels) {
 ## 参考链接
 
 *   David Walsh, [JavaScript Canvas Image Conversion](http://davidwalsh.name/convert-canvas-image)
+
 *   Matt West, [Getting Started With The Canvas API](http://blog.teamtreehouse.com/getting-started-with-the-canvas-api)
+
 *   John Robinson, [How You Can Do Cool Image Effects Using HTML5 Canvas](http://www.storminthecastle.com/2013/04/06/how-you-can-do-cool-image-effects-using-html5-canvas/)
+
 *   Ivaylo Gerchev, [HTML5 Canvas Tutorial: An Introduction](http://www.sitepoint.com/html5-canvas-tutorial-introduction/)
+
 *   Donovan Hutchinson, [Particles in canvas](http://hop.ie/blog/particles/)

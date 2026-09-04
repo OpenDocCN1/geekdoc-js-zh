@@ -1,11 +1,7 @@
+
 # 少儿 JavaScript：开启你的编程冒险
 
-
-
-![](img/cover.jpeg)
-
-
-
+![Image](img/cover.jpeg)
 
 ## 引言
 
@@ -47,7 +43,7 @@ JavaScript 是一种主要存在并运行在网页浏览器中的编程语言。
 
 想象我给了你一些信息，并让你把它写在笔记本上。
 
-你在第一行写下产品名称，第二行写下价格，以此此类推。
+你在第一行写下产品名称，第二行写下价格，以此类推。
 
 只有信息，没有任何设计或编程。
 
@@ -87,7 +83,7 @@ return firstNumber + secondNumber;
 
 我们使用单词 `return` 在计算完成后返回最终结果。
 
-为了能够调用它，我们将其插入到函数函数中。
+为了能够调用它，我们将其插入到函数中。
 
 ```javascript
 function sum(firstNumber, secondNumber) {
@@ -197,9 +193,6 @@ let myDivElement = document.querySelector("#myDiv");
 let myDivElement = document.querySelector(".container");
 ```
 
-
-
-
 注意类名前的点。
 
 这将选取加粗的 div 元素。
@@ -207,7 +200,7 @@ let myDivElement = document.querySelector(".container");
 ```html
 <div id="myDiv" class="container">
   <p class="text">Hello, World!</p>
-</div
+</div>
 ```
 
 ### 操作 DOM
@@ -233,14 +226,19 @@ let myDivElement = document.querySelector(".container");
 ### 基本数据类型
 
 - **Number：** 代表整数和浮点数。
+
 ```javascript
 let num = 42;
 ```
+
 - **String：** 代表字符序列。
+
 ```javascript
 let str = "Hello, World!";
 ```
+
 - **Boolean：** 代表逻辑实体，可以是 true 或 false。
+
 ```javascript
 let isActive = true;
 ```
@@ -250,6 +248,7 @@ let isActive = true;
 引用类型是更复杂的数据结构，可以持有值的集合。
 
 - **Object（对象）：** 对象是键值对的集合，可以存储不同类型的多个值，并用于表示现实世界中的实体。
+
 ```javascript
 let person = {
   name: "Alice",
@@ -257,7 +256,9 @@ let person = {
   isActive: true
 };
 ```
+
 - **Array（数组）：** 数组是一种特殊的对象，用于存储有序的值集合。数组可以包含任何类型的元素，包括其他数组或对象。
+
 ```javascript
 let colors = ["red", "green", "blue"];
 ```
@@ -268,11 +269,12 @@ let colors = ["red", "green", "blue"];
 
 ### 运算符
 
-运算符是用于对或多个值或变量执行操作的特殊符号。它们是编程的基础，因为它们允许开发者执行计算并控制程序的流。
+运算符是用于对一个或多个值或变量执行操作的特殊符号。它们是编程的基础，因为它们允许开发者执行计算并控制程序的流。
 
 #### 算术运算符
 
 算术运算符用于执行数学计算。
+
 - `+`：加法。
 - `-`：减法。
 - `*`：乘法。
@@ -281,6 +283,7 @@ let colors = ["red", "green", "blue"];
 #### 比较运算符
 
 比较运算符用于比较两个值并返回布尔结果（true 或 false）。
+
 - `==`：相等
 - `!=`：不相等
 - `>`：大于
@@ -300,6 +303,7 @@ if (score > 60) {
 ```
 
 `if` 语句在指定条件为真时执行一个代码块。
+
 `else` 语句在条件为假时执行。
 
 ## 三元运算符
@@ -359,6 +363,7 @@ myButton.addEventListener('click', () => {
 箭头函数是在 ES6 中引入的。与传统的函数表达式相比，它们提供了更简洁的语法，在处理回调时特别有用。
 
 旧方法：
+
 ```javascript
 function sum(a, b) {
   return a + b;
@@ -366,13 +371,10 @@ function sum(a, b) {
 ```
 
 箭头函数：
+
 ```javascript
 const sum = (a, b) => a + b;
 ```
-
-
-
-
 
 ```javascript
 myDiv.style.backgroundColor = "green";
@@ -510,10 +512,12 @@ White, Emily
 [立即购买并阅读（广告）](http://www.mynextread.de/redirect/Kobo/2012001/9783384443243/9783384113863/db140da8e8f24c34044bfa8c302ff8a9?dipaMethod=TOPSELLER&ibpPosition=END&orderId=1)
 
 在 Emily White 的情色杰作中沉浸于激情与诱惑的难忘之旅！在 Emily White 最新的迷人情色故事集中，进入一个迷人的世界，在那里，诱惑无边，并配有迷幻的成人漫画（hentai）插画。沉浸在一个宇宙中，每一个词都是一个低语的承诺，每一笔触都是视觉上的魔力，以纯正的动漫风格让幻想变为现实。这个系列是对探索未知欲望深处的大胆邀请，愉悦在大胆的笔触和细节中展开，加速你的心跳。精心制作的成人插画作为感官的门户，将你带入一个每个隐藏的幻想都能得到直率表达的维度。预期内容：
+
 - 文学造诣与感官艺术的融合
 - 露骨且迷人的成人插画
 - 探索欲望与幻想边界的故事
 - 诱惑与引诱的旋风
+
 这不仅仅是一个集；它是你通往动漫色情维度的专属门票，由 Emily White 精心叙述并热烈插画。打开封面，准备好迎接由激情火焰驱动的强烈体验。警告：本集不适合心脏脆弱的人。你准备好跨越那道门槛了吗？
 
 [立即购买并阅读（广告）](http://www.mynextread.de/redirect/Kobo/2012001/9783384443243/9783384113863/db140da8e8f24c34044bfa8c302ff8a9?dipaMethod=TOPSELLER&ibpPosition=END&orderId=1)
@@ -528,43 +532,44 @@ Waterlow, Jon
 
 84 页
 
-
-
-
-
-[立即购买并阅读（广告)](http://www.mynextread.de/redirect/Kobo/2012001/9783384443243/9783732387144/8a87ef3ef306f91107c5e4ab3a4822a0?dipaMethod=TOPSELLER&ibpPosition=END&orderId=2)
+[立即购买并阅读（广告）](http://www.mynextread.de/redirect/Kobo/2012001/9783384443243/9783732387144/8a87ef3ef306f91107c5e4ab3a4822a0?dipaMethod=TOPSELLER&ibpPosition=END&orderId=2)
 
 罗伯特·格林的《权力的 48 法则》震撼了数百万人的生活。成功的商业高管、顶尖的演员和音乐家，甚至是犯罪头目都在运用它。但你又该如何将这些教训应用于你的生活呢？也许你想成为一个现代的马基雅维利。也许你想逃离日常的琐碎，实现你真正的潜力和梦想。又或者，你只是厌倦了自己成为他人游戏的受害者。但是，由于有 48 条法则可供选择，而且其中任何一条似乎都像是对你习惯和思维模式的彻底颠覆，将这些法则付诸实践似乎可能令人无从下手或遥不可及。帮助就在身边。本书基于我们主要的播客系列——《探索权力的 48 法则》，为你提供了将法则付诸实践并为生活带来持久改变所需的所有内容。我们揭示了 **3 条最重要的法则**（你应该从它们开始，且其他法则都建立在此此）以及 **4 个不可或缺的权力原则**（解释法则在当今世界真实运作的具体准则和社交“黑科技”）。掌握了这些知识，《权力的 48 法则》将不再是一本你扫一眼就放在架子上的酷书。它将改变你的生活。
 
-[立即购买并阅读（广告)](http://www.mynextread.de/redirect/Kobo/2012001/9783384443243/9783732387144/8a87ef3ef306f91107c5e4ab3a4822a0?dipaMethod=TOPSELLER&ibpPosition=END&orderId=2)
+[立即购买并阅读（广告）](http://www.mynextread.de/redirect/Kobo/2012001/9783384443243/9783732387144/8a87ef3ef306f91107c5e4ab3a4822a0?dipaMethod=TOPSELLER&ibpPosition=END&orderId=2)
 
 ![推荐书籍的封面](img/bookwire_ad_cover4.jpg)
 
 ## 乌克兰的瑞士士兵
 
 Neidhart, Jona
+
 9783384240583 
+
 80 页
 
-[立即购买并阅读（广告)](http://www.mynextread.de/redirect/Kobo/2012001/9783384443243/9783384240583/f843e10a9461d304930fc1208b6aa99a?dipaMethod=TOPSELLER&ibpPosition=END&orderId=3)
+[立即购买并阅读（广告）](http://www.mynextread.de/redirect/Kobo/2012001/9783384443243/9783384240583/f843e10a9461d304930fc1208b6aa99a?dipaMethod=TOPSELLER&ibpPosition=END&orderId=3)
 
 为什么一个虔畏上帝的瑞士公民会违反本国法律去为乌克兰战斗？他为什么要反对自己的国家？欧盟和北约能为乌克兰多做些吗？你怎么看？俄罗斯真的像描述的那样糟糕吗？还是说人们在夸大？此外，在战国家士兵的日常生活是怎样的？这种士兵的生活真的像动作电影和游戏中描写的那样充满动作感吗？面对真实的死亡和毁灭又是种什么？真正的战斗是什么感觉？战争中最重要的技能有哪些？如果你对上述问题感兴趣，那么你找到了这本该读的书……
 
-[立即购买并阅读（广告)](http://www.mynextread.de/redirect/Kobo/2012001/9783384443243/9783384240583/f843e10a9461d304930fc1208b6aa99a?dipaMethod=TOPSELLER&ibpPosition=END&orderId=3)
+[立即购买并阅读（广告）](http://www.mynextread.de/redirect/Kobo/2012001/9783384443243/9783384240583/f843e10a9461d304930fc1208b6aa99a?dipaMethod=TOPSELLER&ibpPosition=END&orderId=3)
 
 ![推荐书籍的封面](img/bookwire_ad_cover5.jpg)
 
 ## 妇产科医生
 
 White, Emily
+
 9783384121356 
+
 92 页
 
-[立即购买并阅读（广告)](http://www.mynextread.de/redirect/Kobo/2012001/9783384443243/9783384121356/5e67200e5ccd3105930a86cb8478b4c0?dipaMethod=TOPSELLER&ibpPosition=END&orderId=4)
+[立即购买并阅读（广告）](http://www.mynextread.de/redirect/Kobo/2012001/9783384443243/9783384121356/5e67200e5ccd3105930a86cb8478b4c0?dipaMethod=TOPSELLER&ibpPosition=END&orderId=4)
 
 跟随 Emily White 的色情杰作，沉浸在场令人难忘的激情与诱惑之旅中！在 Emily White 最新的一系列闪耀色情故事集中，进入一个诱惑毫无边界的世界，书中还配有迷人的工口（hentai）插画。沉浸在这个宇宙中，每一个字都是一个低语的承诺，每一笔触都是一次视觉魔力，以纯粹的工口风格让幻想栩如生。这部合集是一次探索欲望未知深度的大胆邀请，在那里，快感以大胆的笔触和细节展开，令你的心跳加速。精心设计的工口插画作为感官的门户，将你带入一个维度，在那里每个隐藏的幻想都能找到毫无掩饰的表达。
 
 **内容期待：**
+
 - 文学造诣与感官艺术的融合
 - 露骨且迷人的工口插画
 - 探索欲望与幻想边界的故事
@@ -574,5 +579,4 @@ White, Emily
 
 **警告：** 本合集不适合心理胆小者。你准备好跨越那道门槛了吗？
 
-[立即购买并阅读（广告)](http://www.mynextread.de/redirect/Kobo/2012001/9783384443243/9783384121356/5e67200e5ccd3105930a86cb8478b4c0?dipaMethod=TOPSELLER&ibpPosition=END&orderId=4)
-
+[立即购买并阅读（广告）](http://www.mynextread.de/redirect/Kobo/2012001/9783384443243/9783384121356/5e67200e5ccd3105930a86cb8478b4c0?dipaMethod=TOPSELLER&ibpPosition=END&orderId=4)

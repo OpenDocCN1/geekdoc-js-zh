@@ -1,15 +1,17 @@
+
+
 # 第十章　其他接口
 
-除上述接口外 Chrome 应用还有其他各类丰富的接口，在本章将对其他的接口做以介绍。
+除上述接口外，Chrome 应用还有其他各类丰富的接口，本章将对其他接口进行介绍。
 
 ## 10.1　操作 USB 设备
 
-通过`usb`接口可以与 USB 设备进行交互，这能让 Chrome 应用作为 USB 设备的驱动程序。要使用`usb`接口需要在 Manifest 中声明`usb`权限：
+通过`usb`接口可以与 USB 设备进行交互，这能让 Chrome 应用作为 USB 设备的驱动程序。要使用`usb`接口，需要在 Manifest 中声明`usb`权限：
 
 ```js
 "permissions": [
     "usb"
-] 
+]
 ```
 
 本章内容参考自[`crxdoc-zh.appspot.com/apps/usb`](https://crxdoc-zh.appspot.com/apps/usb)。
@@ -26,7 +28,7 @@ var options = {
 
 chrome.usb.getDevices(options, function(deviceArray){
     //do something with deviceArray;
-}); 
+});
 ```
 
 请求访问操作系统占用的设备（仅限 Chrome OS）：
@@ -34,7 +36,7 @@ chrome.usb.getDevices(options, function(deviceArray){
 ```js
 chrome.usb.requestAccess(device, interfaceId, function(sucess){
     //sucess is boolean
-}); 
+});
 ```
 
 其中`interfaceId`为接口标识符。
@@ -44,12 +46,12 @@ chrome.usb.requestAccess(device, interfaceId, function(sucess){
 ```js
 chrome.usb.openDevice(device, function(ConnectionHandle){
     //do something with handle
-}); 
+});
 ```
 
-`ConnectionHandle`为连接句柄，包括三个属性，`handle`、`vendorId`和`productId`，其中 handle 为连接句柄的标识符。
+`ConnectionHandle`为连接句柄，包括三个属性：`handle`、`vendorId`和`productId`，其中`handle`为连接句柄的标识符。
 
-寻找指定的 USB 设备（如果权限允许的话同时打开设备以便使用）：
+寻找指定的 USB 设备（如果权限允许的话，同时打开设备以便使用）：
 
 ```js
 var options = {
@@ -60,7 +62,7 @@ var options = {
 
 chrome.usb.findDevices(options, function(ConnectionHandleArray){
     //do something with ConnectionHandleArray
-}); 
+});
 ```
 
 关闭连接句柄：
@@ -68,7 +70,7 @@ chrome.usb.findDevices(options, function(ConnectionHandleArray){
 ```js
 chrome.usb.closeDevice(ConnectionHandle, function(){
     //do something after close a device
-}); 
+});
 ```
 
 重置 USB 设备：
@@ -76,7 +78,7 @@ chrome.usb.closeDevice(ConnectionHandle, function(){
 ```js
 chrome.usb.resetDevice(ConnectionHandle, function(result){
     //result is boolean
-}); 
+});
 ```
 
 ### 10.1.2　操作接口
@@ -86,17 +88,17 @@ chrome.usb.resetDevice(ConnectionHandle, function(result){
 ```js
 chrome.usb.listInterfaces(ConnectionHandle, function(descriptorsArray){
     //do something with descriptorsArray
-}); 
+});
 ```
 
-`descriptorsArray`是一个包含多个`descriptors`对象的数组，`descriptors`包含的属性有`interfaceNumber`、`alternateSetting`、`interfaceClass`、`interfaceSubclass`、`interfaceProtocol`、`description`和`endpoints`。`endpoints`也是一个数组，每个对象包含的属性有`address`、`type`、`direction`、`maximumPacketSize`、`synchronization`、`usage`和`pollingInterval`。
+`descriptorsArray`是一个包含多个`descriptors`对象的数组。`descriptors`包含的属性有`interfaceNumber`、`alternateSetting`、`interfaceClass`、`interfaceSubclass`、`interfaceProtocol`、`description`和`endpoints`。`endpoints`也是一个数组，每个对象包含的属性有`address`、`type`、`direction`、`maximumPacketSize`、`synchronization`、`usage`和`pollingInterval`。
 
 在指定 USB 设备上获取接口：
 
 ```js
 chrome.usb.claimInterface(ConnectionHandle, interfaceNumber, function(){
     //do something after the interface is claimed
-}); 
+});
 ```
 
 释放在提供的设备上获取的接口：
@@ -104,7 +106,7 @@ chrome.usb.claimInterface(ConnectionHandle, interfaceNumber, function(){
 ```js
 chrome.usb.releaseInterface(ConnectionHandle, interfaceNumber, function(){
     //do something after the interface is released
-}); 
+});
 ```
 
 在之前获取的设备接口上选择替代的设置：
@@ -112,7 +114,7 @@ chrome.usb.releaseInterface(ConnectionHandle, interfaceNumber, function(){
 ```js
 chrome.usb.setInterfaceAlternateSetting(ConnectionHandle, interfaceNumber, alternateSetting, function(){
     //do something after the interface setting is set
-}); 
+});
 ```
 
 `alternateSetting`为要设置的替代设置。
@@ -124,19 +126,19 @@ chrome.usb.setInterfaceAlternateSetting(ConnectionHandle, interfaceNumber, alter
 ```js
 chrome.usb.controlTransfer(ConnectionHandle, transferInfo, function(info){
     //do something with info
-}); 
+});
 ```
 
 其中`transferInfo`为对象，包含的属性有`direction`、`recipient`、`requestType`、`request`、`value`、`index`、`length`和`data`。如果输出数据，`transferInfo.data`必须指定，值的类型为`ArrayBuffer`。
 
-`info`为对象，包含的属性有`resultCode`和`data`，`resultCode`为 0 时表示成功，`data`为传入数据，类型为`ArrayBuffer`。
+`info`为对象，包含的属性有`resultCode`和`data`。`resultCode`为 0 时表示成功，`data`为传入数据，类型为`ArrayBuffer`。
 
 在指定设备上进行大块传输：
 
 ```js
 chrome.usb.bulkTransfer(ConnectionHandle, transferInfo, function(info){
     //do something with info
-}); 
+});
 ```
 
 `transferInfo`为对象，包含的属性有`direction`、`endpoint`、`length`和`data`。此方法返回的`info`类型与`controlTransfer`相同。
@@ -146,7 +148,7 @@ chrome.usb.bulkTransfer(ConnectionHandle, transferInfo, function(info){
 ```js
 chrome.usb.interruptTransfer(ConnectionHandle, transferInfo, function(info){
     //do something with info
-}); 
+});
 ```
 
 此方法各参数类型与`bulkTransfer`相同。
@@ -156,7 +158,7 @@ chrome.usb.interruptTransfer(ConnectionHandle, transferInfo, function(info){
 ```js
 chrome.usb.isochronousTransfer(ConnectionHandle, transferInfo, function(info){
     //do something with info
-}); 
+});
 ```
 
 此方法各参数类型与`bulkTransfer`相同。
@@ -168,7 +170,7 @@ chrome.usb.isochronousTransfer(ConnectionHandle, transferInfo, function(info){
 ```js
 "permissions": [
     "serial"
-] 
+]
 ```
 
 本章内容参考自[`crxdoc-zh.appspot.com/apps/serial`](https://crxdoc-zh.appspot.com/apps/serial)。
@@ -180,7 +182,7 @@ chrome.usb.isochronousTransfer(ConnectionHandle, transferInfo, function(info){
 ```js
 chrome.serial.getDevices(function(portsArray){
     //do something with portsArray
-}); 
+});
 ```
 
 `portsArray`为包含多个`ports`的数组。每个`ports`是一个包含多个属性的对象，其属性有`path`、`vendorId`、`productId`和`displayName`。
@@ -190,7 +192,7 @@ chrome.serial.getDevices(function(portsArray){
 ```js
 chrome.serial.connect(path, options, function(connectionInfo){
     //do something with connectionInfo
-}); 
+});
 ```
 
 其中`options`为端口配置选项，完整的结构如下：
@@ -207,7 +209,7 @@ chrome.serial.connect(path, options, function(connectionInfo){
     ctsFlowControl: 是否启用 RTS/CTS 硬件流控制,
     receiveTimeout: 等待新数据的最长时间，以毫秒为单位,
     sendTimeout: 等待 send 操作完成的最长时间，以毫秒为单位
-} 
+}
 ```
 
 更新打开的串行端口连接的选项设置：
@@ -215,7 +217,7 @@ chrome.serial.connect(path, options, function(connectionInfo){
 ```js
 chrome.serial.update(connectionId, options, function(result){
     //result is boolean
-}); 
+});
 ```
 
 断开串行端口连接：
@@ -223,7 +225,7 @@ chrome.serial.update(connectionId, options, function(result){
 ```js
 chrome.serial.disconnect(connectionId, function(result){
     //result is boolean
-}); 
+});
 ```
 
 暂停或恢复打开的连接：
@@ -231,7 +233,7 @@ chrome.serial.disconnect(connectionId, function(result){
 ```js
 chrome.serial.setPaused(connectionId, paused, function(){
     //do something after pause a connection
-}); 
+});
 ```
 
 ### 10.2.2　发送和接收数据
@@ -241,7 +243,7 @@ chrome.serial.setPaused(connectionId, paused, function(){
 ```js
 chrome.serial.send(connectionId, data, function(sendInfo){
     //do something with sendInfo
-}); 
+});
 ```
 
 `sendInfo`为一个包含两个属性的对象，分别为`bytesSent`和`error`。
@@ -251,7 +253,7 @@ chrome.serial.send(connectionId, data, function(sendInfo){
 ```js
 chrome.serial.flush(connectionId, function(result){
     //result is boolean
-}); 
+});
 ```
 
 当接收到数据时，会触发`onReceive`事件：
@@ -259,7 +261,7 @@ chrome.serial.flush(connectionId, function(result){
 ```js
 chrome.serial.onReceive.addListener(function(info){
     //do something with info
-}); 
+});
 ```
 
 `info`是一个包含两个属性的对象，分别是`connectionId`和`data`。
@@ -269,7 +271,7 @@ chrome.serial.onReceive.addListener(function(info){
 ```js
 chrome.serial.onReceiveError.addListener(function(info){
     //do something with info
-}); 
+});
 ```
 
 `info`为一个包含两个属性的对象，分别为`connectionId`和`error`。
@@ -281,7 +283,7 @@ chrome.serial.onReceiveError.addListener(function(info){
 ```js
 chrome.serial.getInfo(connectionId, function(connectionInfo){
     //do something with connectionInfo
-}); 
+});
 ```
 
 获取当前应用拥有并打开的串行端口连接列表：
@@ -289,7 +291,7 @@ chrome.serial.getInfo(connectionId, function(connectionInfo){
 ```js
 chrome.serial.getConnections(function(connectionInfoArray){
     //do something with connectionInfoArray
-}); 
+});
 ```
 
 获取指定连接上控制信号的状态：
@@ -297,7 +299,7 @@ chrome.serial.getConnections(function(connectionInfoArray){
 ```js
 chrome.serial.getControlSignals(connectionId, function(signals){
     //do something with signals
-}); 
+});
 ```
 
 `signals`是一个包含 4 个属性的对象，分别是`dcd`、`cts`、`ri`和`dsr`。
@@ -307,7 +309,7 @@ chrome.serial.getControlSignals(connectionId, function(signals){
 ```js
 chrome.serial.setControlSignals(connectionId, signals, function(result){
     //result is boolean
-}); 
+});
 ```
 
 `signals`参数为一个包含两个属性的对象，分别是`dtr`和`rts`。
@@ -321,7 +323,7 @@ chrome.serial.setControlSignals(connectionId, signals, function(result){
 ```js
 "permissions": [
     "tts"
-] 
+]
 ```
 
 ### 10.3.1　朗读文字
@@ -329,13 +331,13 @@ chrome.serial.setControlSignals(connectionId, signals, function(result){
 使用`speak`方法来朗读文字：
 
 ```js
-chrome.tts.speak('Hello, world.'); 
+chrome.tts.speak('Hello, world.');
 ```
 
 `speak`方法还可以指定朗读参数和回调函数：
 
 ```js
-chrome.tts.speak(utterance, options, callback); 
+chrome.tts.speak(utterance, options, callback);
 ```
 
 回调函数`callback`会在`speak`方法调用成功后立刻执行，这意味着不会等到朗读结束后才调用`callback`。`options`指定了朗读时所采用的语调、语速、音量等等，`options`完整的结构如下所示：
@@ -353,20 +355,20 @@ chrome.tts.speak(utterance, options, callback);
     requiredEventTypes: 声音必须支持的事件,
     desiredEventTypes: 需要监听的事件，如未指定则监听全部事件,
     onEvent: 用于监听事件的函数
-} 
+}
 ```
 
 如下面的例子，用美式英文以正常语速的 2 倍阅读“Hello, world.”：
 
 ```js
-chrome.tts.speak('Hello, world.', {lang: 'en-US', rate: 2.0}); 
+chrome.tts.speak('Hello, world.', {lang: 'en-US', rate: 2.0});
 ```
 
 而下一个例子会在“Speak this first.”阅读完毕后才阅读“Speak this next, when the first sentence is done.”：
 
 ```js
 chrome.tts.speak('Speak this first.');
-chrome.tts.speak('Speak this next, when the first sentence is done.', {enqueue: true}); 
+chrome.tts.speak('Speak this next, when the first sentence is done.', {enqueue: true});
 ```
 
 使用`chrome.runtime.lastError`来抓取`tts`接口使用中可能发生的错误：
@@ -376,25 +378,25 @@ chrome.tts.speak(utterance, options, function() {
     if (chrome.runtime.lastError) {
         console.log('Error: ' + chrome.runtime.lastError.message);
     }
-}); 
+});
 ```
 
 使用`stop`方法可以随时停止正在进行的朗读任务：
 
 ```js
-chrome.tts.stop(); 
+chrome.tts.stop();
 ```
 
 使用`pause`方法可以随时暂停正在进行的朗读任务：
 
 ```js
-chrome.tts.pause(); 
+chrome.tts.pause();
 ```
 
 使用`resume`方法可以随时恢复被暂停的朗读任务：
 
 ```js
-chrome.tts.resume(); 
+chrome.tts.resume();
 ```
 
 ### 10.3.2　获取声音
@@ -404,12 +406,15 @@ chrome.tts.resume();
 ```js
 chrome.tts.getVoices(function(voices){
     //do something with voices
-}); 
+});
 ```
 
 返回的结果`voices`是一个包含多个声音对象的数组。声音对象包含 6 个属性，分别是`voiceName`、`lang`、`gender`、`remote`、`extensionId`和`eventTypes`，其中`remote`属性表示此声音是否为网络资源，`eventTypes`为此声音支持的全部事件。
 
 如下面为一个声音对象的实例：
+
+
+
 
 ```js
 {
@@ -425,7 +430,7 @@ chrome.tts.getVoices(function(voices){
     "lang": "en-GB",
     "remote": true,
     "voiceName": "Google UK English Female"
-} 
+}
 ```
 
 获取到声音对象后，通过指定`speak`方法中的相应参数来应用声音，如：
@@ -434,7 +439,7 @@ chrome.tts.getVoices(function(voices){
 chrome.tts.speak(utterance, {
     voiceName: 'Google UK English Female',
     lang: 'en-GB'
-}, callback); 
+}, callback);
 ```
 
 ### 10.3.3　获取朗读状态及监听事件
@@ -444,7 +449,7 @@ chrome.tts.speak(utterance, {
 ```js
 chrome.tts.isSpeaking(function(isSpeaking){
     //isSpeaking is boolean
-}); 
+});
 ```
 
 在 10.3.1 中提到`speak`参数的`onEvent`属性用来监听朗读事件：
@@ -457,7 +462,7 @@ chrome.tts.speak(utterance,{
             console.log('Error: ' + event.errorMessage);
         }
     }
-}, callback); 
+}, callback);
 ```
 
 其中`event`对象包含三个属性，分别是`type`、`charIndex`和`errorMessage`。`type`为事件类型，可能的值包括`start`、`end`、`word`、`sentence`、`marker`、`interrupted`、`cancelled`、`error`、`pause`和`resume`。
@@ -481,7 +486,7 @@ Chrome 应用可以获取到的系统信息包括 CPU、内存、存储设备、
     "system.storage",
     "system.display",
     "system.network"
-] 
+]
 ```
 
 由于 CPU、内存和存储设备相关的内容已经在 5.4 节讲过了，所以本节只讲解显示器和网卡的内容。
@@ -491,7 +496,7 @@ Chrome 应用可以获取到的系统信息包括 CPU、内存、存储设备、
 ```js
 chrome.system.display.getInfo(function(displayInfoArray){
     //do something with displayInfoArray
-}); 
+});
 ```
 
 `displayInfoArray`是一个包含多个`displayInfo`对象的数组。`displayInfo`对象的完整结构如下：
@@ -525,7 +530,7 @@ chrome.system.display.getInfo(function(displayInfoArray){
         width: 工作区范围像素宽度,
         height: 工作区范围像素高度
     }
-} 
+}
 ```
 
 其中`overscan`属性目前只在 Chrome OS 平台有效，`workArea`的范围不包括系统占用部分，如任务栏等。
@@ -535,7 +540,7 @@ chrome.system.display.getInfo(function(displayInfoArray){
 ```js
 chrome.system.display.setDisplayProperties(id, info, function(){
     //do something after set display properties
-}); 
+});
 ```
 
 通过`chrome.system.display.onDisplayChanged`监听显示器设置更改事件：
@@ -543,7 +548,7 @@ chrome.system.display.setDisplayProperties(id, info, function(){
 ```js
 chrome.system.display.onDisplayChanged.addListener(function(){
     //do something after display properties are changed
-}); 
+});
 ```
 
 通过`chrome.system.network.getNetworkInterfaces`方法可以获取到网卡信息：
@@ -552,7 +557,7 @@ chrome.system.display.onDisplayChanged.addListener(function(){
 chrome.system.network.getNetworkInterfaces(function(networkInterfaces){
     //do something with networkInterfaces
     console.log(networkInterfaces);
-}); 
+});
 ```
 
-`networkInterfaces`是一个包含多个`networkInterface`对象的数组，`networkInterface`对象包含 3 个属性，分别是`name`、`address`和`prefixLength`。`name`为网卡的名称，在*nix 系统上通常是 eth0 或 wlan0 等。`address`为网卡可用的 IPv4 或 IPv6 地址。`prefixLength`为前缀长度。
+`networkInterfaces`是一个包含多个`networkInterface`对象的数组，`networkInterface`对象包含 3 个属性，分别是`name`、`address`和`prefixLength`。`name`为网卡的名称，在 *nix 系统上通常是`eth0`或`wlan0`等。`address`为网卡可用的 IPv4 或 IPv6 地址。`prefixLength`为前缀长度。

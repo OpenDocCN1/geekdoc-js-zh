@@ -1,13 +1,5 @@
-# 7.12 WebSocket
 
-*   概述
-*   客户端
-    *   建立连接和断开连接
-    *   发送数据和接收数据
-    *   处理错误
-    *   服务器端
-    *   Socket.io 简介
-    *   参考链接
+# 7.12 WebSocket
 
 ## 概述
 
@@ -55,7 +47,9 @@ WebSocket 协议需要服务器支持，目前比较流行的实现是基于 nod
 浏览器端对 WebSocket 协议的处理，无非就是三件事：
 
 *   建立连接和断开连接
+
 *   发送数据和接收数据
+
 *   处理错误
 
 ### 建立连接和断开连接
@@ -79,8 +73,11 @@ if(window.WebSocket != undefined) {
 建立连接以后的 WebSocket 实例对象（即上面代码中的 connection），有一个 readyState 属性，表示目前的状态，可以取 4 个值：
 
 *   0： 正在连接
+
 *   1： 连接成功
+
 *   2： 正在关闭
+
 *   3： 连接关闭
 
 握手协议成功以后，readyState 就从 0 变为 1，并触发 open 事件，这时就可以向服务器发送信息了。我们可以指定 open 事件的回调函数。
@@ -141,7 +138,7 @@ function wsMessage (event) {
 
 上面代码的回调函数 wsMessage 的参数为事件对象 event，该对象的 data 属性包含了服务器返回的数据。
 
-如果接收的是二进制数据，需要将连接对象的格式设为 blob 或 arraybuffer。
+如果接收的是二进化数据，需要将连接对象的格式设为 blob 或 arraybuffer。
 
 ```js
 connection.binaryType = 'arraybuffer';
@@ -199,7 +196,7 @@ wsServer.on('request', function(req){
 });
 ```
 
-上面代码的回调函数接受一个参数 req，表示 request 请求对象。然后，在回调函数内部，建立 WebSocket 连接 connection。接着，就要对 connection 的 message 事件指定回调函数。
+上面代码的回调函数接受一个参数 req，表示 request 请请求对象。然后，在回调函数内部，建立 WebSocket 连接 connection。接着，就要对 connection 的 message 事件指定回调函数。
 
 ```js
 wsServer.on('request', function(r){
@@ -307,11 +304,19 @@ io.sockets.on('connection', function (socket) {
 ## 参考链接
 
 *   Ryan Stewart, [Real-time data exchange in HTML5 with WebSockets](http://www.adobe.com/devnet/html5/articles/real-time-data-exchange-in-html5-with-websockets.html)
+
 *   Malte Ubl & Eiji Kitamura，[WEBSOCKETS 简介：将套接字引入网络](http://www.html5rocks.com/zh/tutorials/websockets/basics/)
+
 *   Jack Lawson, [WebSockets: A Guide](http://buildnewgames.com/websockets/)
+
 *   Michael W., [Starting with Node and Web Sockets](http://codular.com/node-web-sockets)
+
 *   Jesse Cravens, [Introduction to WebSockets](http://tech.pro/tutorial/1167/introduction-to-websockets)
+
 *   Matt West, [An Introduction to WebSockets](http://blog.teamtreehouse.com/an-introduction-to-websockets)
+
 *   Maciej Sopyło, [Node.js: Better Performance With Socket.IO and doT](http://net.tutsplus.com/tutorials/javascript-ajax/node-js-better-performance-with-socket-io-and-dot/)
+
 *   Jos Dirksen, [Capture Canvas and WebGL output as video using websockets](http://www.smartjava.org/content/capture-canvas-and-webgl-output-video-using-websockets)
+
 *   Fionn Kellehe, [Understanding Socket.IO](https://nodesource.com/blog/understanding-socketio)

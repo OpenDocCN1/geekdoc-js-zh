@@ -1,10 +1,7 @@
+
 # JavaScript 自动化：更多实用且有趣的脚本
 
-
-
 ![](img/cover.jpeg)
-
-
 
 # 前言
 
@@ -18,18 +15,25 @@ Python 是一种高级解释型编程语言，以其简单、可读性和多功�
 
 1. **易于学习和使用**：
    - Python 的语法清晰直观，初学者也能上手。它的代码易于阅读和编写，降低了学习曲线并提高了生产力。
+
 2. **解释型语言**：
    - Python 是一种解释型语言，意味着代码按行执行，允许即时反馈和快速开发周期。这一特性使得调试和测试脚本更加高效。
+
 3. **跨平台兼容性**：
-   - Python 脚本可以在包括 Windows、macOS 和 Linux 在各种操作系统上运行，无需修改。这种跨平台的特性确保了 Python 脚本具有高度的可移植性。
+   - Python 脚本可以在包括 Windows、macOS 和 Linux 在内的各种操作系统上运行，无需修改。这种跨平台的特性确保了 Python 脚本具有高度的可移植性。
+
 4. **丰富的标准库**：
    - Python 拥有全面的标准库，为各种任务（如文件处理、系统操作、互联网协议和数据处理）提供了许多模块和函数。这一丰富的库减少了从零开始编写代码的需求。
+
 5. **庞大且活跃的社区**：
    - Python 拥有庞大且活跃的用户社区，贡献了大量的第三方模块和包。这个生态系统支持从 Web 开发、数据分析到机器学习和自动化的各种应用。
+
 6. **集成能力**：
-   - Python 可以轻松与其他语言和工具集成，使其成为多环境中脚本编写的通用功能选择。它可以与 `C/C++`、`Java` 以及其他编程语言交互，以及各种 API 和 Web 服务。
+   - Python 可以轻松与其他语言和工具集成，使其成为多环境中脚本编写的通用选择。它可以与 `C/C++`、`Java` 以及其他编程语言交互，以及各种 API 和 Web 服务。
+
 7. **自动化与脚本**：
    - Python 广泛用于自动化重复任务，如文件操作、数据提取和批量处理。它用极少代码编写复杂工作流的能力使其成为系统管理员和开发者的强大工具。
+
 8. **面向对象与函数式编程**：
    - Python 支持面向对象和函数式编程范式。这种灵活性允许开发者根据特定需求选择最佳方法，增强了代码的可重用性和维护性。
 
@@ -58,9 +62,7 @@ Python 简单性、多功能性和强大库的结合使其成为脚本的极佳�
 
 ```javascript
 const se = Application("Script Editor");
-
 const app = Application.currentApplication();
-
 app.includeStandardAdditions = true;
 ```
 
@@ -70,33 +72,22 @@ app.includeStandardAdditions = true;
 
 ```javascript
 function getPresetsText() {
+  // 预设选项数组
+  const presets = [
+    "1 - Rewrite this code to be more efficient",
+    "2 - Continue this code",
+    "3 - Write a function with this code",
+    "4 - Write comments for this code"
+  ];
 
-// 预设选项数组
+  // 显示对话框并捕获用户输入
+  const response = app.displayDialog(presets.join('\n'), {
+    defaultAnswer: '4'
+  });
 
-const presets = ["1 - Rewrite this code to be more efficient",
-```
-
-
-
-
-
-```javascript
-"2 - Continue this code",
-"3 - Write a function with this code",
-"4 - Write comments for this code"];
-
-// 显示对话框并捕用户输入
-
-const response = app.displayDialog(presets.join('\n'), {
-  defaultAnswer: '4'
-});
-
-// 解析用户的选择并返回对应的预设文本
-
-const inputNumber = parseInt(response.textReturned);
-
-return presets[inputNumber - 1] || "Invalid input";
-
+  // 解析用户的选择并返回对应的预设文本
+  const inputNumber = parseInt(response.textReturned);
+  return presets[inputNumber - 1] || "Invalid input";
 }
 ```
 
@@ -116,7 +107,7 @@ function cleanString(inputString) {
 
 ## 构建 API 请求
 
-准备好的文本将进行编码以确保安全传输，并整合到 `curl` 命令中，格式化为 JSON 负载。该命令旨在与 OpenAI 的 GPT-3.5 模型交互，发送一个包含用户意图以及选中或输入代码的。
+准备好的文本将进行编码以确保安全传输，并整合到 `curl` 命令中，格式化为 JSON 负载。该命令旨在与 OpenAI 的 GPT-3.5 模型交互，发送一个包含用户意图以及选中或输入代码的请求。
 
 ```javascript
 const command = `curl https://api.openai.com/v1/chat/completions ...`;
@@ -134,7 +125,6 @@ try {
 
   // 将 AI 生成的内容插入脚本编辑器
   const thisMessage = obj.choices[0].message.content + '\n\n';
-
   se.documents[1].selection.contents = thisMessage;
 } catch (error) {
   // 错误处理
@@ -149,49 +139,62 @@ try {
 该脚本旨在自动化涉及视频文件转换和音频转录的任务序列，使用了 Apple 的 JavaScript 自动化（JXA）以及 FFmpeg 和 OpenAI API 等外部工具。以下是脚本的逐步说明，并带有解释每个部分的注释：
 
 ### 1. 初始化 JXA 对象
+
 ```javascript
 app = Application.currentApplication()
 app.includeStandardAdditions = true
 ```
+
 - 初始化当前脚本的 `Application` 对象并包含标准脚本扩展，允许使用对话框、文件选择对话框等。
 
 ### 2. 转义特殊字符的函数
+
 ```javascript
 function escapeCharacters(str) {
   return str.replace(/~/g, '\\~').replace(/&/g, '\\&');
 }
 ```
+
 - 定义函数 `escapeCharacters` 用于转义字符串中的特殊字符（`~` 和 `&`）。这对于清理将用于 shell 命令的文件路径或字符串非常有用。
 
 ### 3. 文件选择对话框
+
 ```javascript
 filePath = app.chooseFile({withPrompt:"Choose an MP4 or M4v Movie file"})
 inFile = filePath.toString()
 ```
-- 打开文件对话框，要求用户选择一个 MP4 或 M4v 电影文件。选的文件路径被转换为字符串。
+
+- 打开文件对话框，要求用户选择一个 MP4 或 M4v 电影文件。选中的文件路径被转换为字符串。
 
 ### 4. 提取文件名并准备输出路径
+
 ```javascript
 filePathParts = inFile.split('/')
 fileName = filePathParts[filePathParts.length-1].split('.')
 outFile = `/users/homefolder/${fileName[0]}.mp3`
 ```
+
 - 将选中的文件路径拆分（以 `/` 分隔），提取文件名，并在用户目录下准备一个带有 `.mp3` 扩展名的输出文件路径。
 
 ### 5. 用于提取音频的 FFmpeg 命令
+
 ```javascript
 command = `/usr/local/bin/ffmpeg -i ${inFile} ${outFile}`
 response = app.doShellScript(command)
 ```
+
 - 构建命令使用 FFmpeg 从选定的视频文件中提取音频并将其保存为 MP3 文件。使用 `doShellScript` 执行该命令。
 
 ### 6. 显示对话框并等待用户
+
 ```javascript
 holder = app.displayDialog("Wait")
 ```
+
 - 显示带有“Wait”消息的对话框。这可能是为了在继续之前等待用户确认的占位符。这里可以根据典型的处理速度设计一个计时，推延迟转录直到 ffmpeg 完成其工作。
 
 ### 7. 检查用户响应并继续
+
 ```javascript
 if (holder.buttonReturned === "OK"){
   // API 调用和转录逻辑
@@ -199,9 +202,11 @@ if (holder.buttonReturned === "OK"){
   app.displayAlert("No")
 }
 ```
+
 - 检查用户是否在对话框中点击了“OK”。如果没有，则显示带有“No”消息的警告。
 
 ### 8. 用于转录的 API 调用
+
 ```javascript
 command = "curl --request POST --url https://api.openai.com/v1/audio/transcriptions " +
 "--header 'Authorization: Bearer $OPEN-API-KEY' " +
@@ -218,13 +223,12 @@ try {
 
 app.setTheClipboardTo(obj.text)
 ```
+
 - 构建 `curl` 命令向 OpenAI 音频转录 API 发送 POST 请求，使用生成的 MP3 文件。
 - 脚本尝试执行命令、解析 JSON 响应并将转录打印到控制台。
 - 如果成功，转录将被复制到剪贴板。如果发生错误，则记录错误信息。
 
 此脚本要求用户已安装 FFmpeg 可以在 `/usr/local/bin/ffmpeg` 访问，并假设 OpenAI API 令牌直接在脚本中或通过其他方式提供。脚本未对文件选择或 FFmpeg 命令执行进行错误检查，因此假设这些操作是成功的。此外，API 令牌必须包含在脚本中，以便转录 API 调用能够正常工作。
-
-# ￼![DALL·E 2024-03-03 17.17.29 - A playful and imaginative black and white line cartoon drawing that features a walking and talking Macintosh iMac, personified with arms and legs, sit.jpeg](img/image_rsrc16V.jpg)
 
 # 使用自定义 GPT 为 Pages 文档创建索引的脚本
 
@@ -270,17 +274,13 @@ delay(1)
 se.keyCode(53, { using: ["shift down"] });
 delay(1)
 
-// 粘贴到 ChatGPT 你可以使用位于 https://chat.openai.com/g/g-Fv9AmeZvV-index-master 的自定义 GPT "Index Master" /
+// 粘贴到 ChatGPT 你可以使用位于 https://chat.openai.com/g/g-Fv9AmeZvV-index-master 的自定义 GPT "Index Master"
 se.keystroke("v", { using: ["command down"] })
 delay(1)
 
 // 按回车键
 se.keyCode(76)
 ```
-
-
-
-
 
 / 一旦 ChatGPT 返回索引，可以使用 Shift-command-down 进行复制。在此系统中，不同的部分将以不同的格式返回。这是聊天回复具有不确定性的一部分。文本将需要被编译和重新格式化。 /
 
@@ -300,9 +300,7 @@ se.keyCode(76)
 
 一旦 ChatGPT 处理了提交的文本，用户将手动处理响应。“Index Master”是一个专为文档索引设计的自定义 ChatGPT 模型。
 
-这种自动化可以是大型文档管理工作流的一部分，通过 ChatGPT 的处理能力实现 Pages 文档文本索引的自动化。该脚本巧妙地使用 JXA 弥了了应用程序与网络服务之间的差距，展示了 macOS 上自动化的多功能性。
-
-# ￼![DALL·E 2024-03-03 17.07.04 - 一幅有趣的黑白线条卡通画，捕捉了一个正在走动和说话的 Macintosh iMac，具有俏皮且夸张的角色设计。jpeg](img/image_rsrc16W.jpg)
+这种自动化可以是大型文档管理工作流的一部分，通过 ChatGPT 的处理能力实现 Pages 文档文本索引的自动化。该脚本巧妙地使用 JXA 弥合了应用程序与网络服务之间的差距，展示了 macOS 上自动化的多功能性。
 
 # 从 JXA 调用 Python 脚本以接口 OpenAI API
 
@@ -362,7 +360,7 @@ import sys
 ```python
 client = OpenAI(api_key='OPEN-AI KEY)
 ```
-- 使用特定的 API key 初始化 OpenAI 。
+- 使用特定的 API key 初始化 OpenAI 客户端。
 
 3. **命令行参数处理**：
 ```python
@@ -370,6 +368,7 @@ if len(sys.argv) > 1:
     parameter = sys.argv[1]
 else:
     parameter = "A cat in a hat"  # 如果未提供参数的默认值
+```
 - 检查是否提供了命令行参数（来自 JXA 脚本）。如果没有，则使用默认值。
 
 4. **图像生成请求**：
@@ -403,7 +402,7 @@ webbrowser.open(image_url)
 
 使用名为 "JXA Helper" 的自定义 GPT
 
-￼![](img/image_rsrc16X.jpg)
+![](img/image_rsrc16X.jpg)
 
 # 查询 Google Gemini API
 
@@ -413,7 +412,6 @@ app.includeStandardAdditions = true
 bebe = Library('bebe')
 prompt = "make list of ways to research javescript language"
 command = `curl -H 'Content-Type: application/json' -d '{"contents":[{"parts":[{"text":"${prompt}"}]}]}' -X POST https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent?key=API-KEY`
-
 try {
     jsonObj = app.doShellScript(command)
     obj = JSON.parse(jsonObj)
@@ -424,7 +422,6 @@ try {
         as: 'critical'
     })
 }
-
 bebe.newBBDocWithText ('JSON',geminiText)
 ```
 
@@ -433,40 +430,27 @@ bebe.newBBDocWithText ('JSON',geminiText)
 1. **初始化应用程序对象**：它通过创建当前应用程序的实例（`Application.currentApplication()`）并启用标准 OS 添加项，如显示警报或运行 shell 脚本（`app.includeStandardAdditions = true`）。
 2. **导入库**：导入一个名为 'bebe' 的库（`Library('bebe')`）。该库在脚本后部分用于创建新文档，表明它提供了某些文档管理功能。
 3. **准备 API 调用**：设置变量 `prompt`，文本为“make list of ways to research javascript language”（列出研究 javascript 语言的方法）。这是将发送到外部服务的数据。
-
-
-
-
-4. `CURL 命令构建`：构建一个 `curl` 命令，向 `https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent` 发送 POST 请求，并带有 JSON 负载（payload）。该负载包含 `prompt` 变量的内容。该命令结构用于向 API（由占位符 `API-Key` 标识）发送 JSON 请求。
-
-5. 执行并处理 API 响应：
-- Try 块：使用 `app.doShellScript(command)` 方法执行 `curl` 命令，并将 JSON 响应捕获在 `jsonObj` 中。
-- 使用 `JSON.parse(jsonObj)` 将 `jsonObj` 字符串解析为对象（`obj`）。
-- 从解析的对象中提取特定的文本（`googleText`），这似乎是 API 响应 prompt 返回的主要内容。
-
-6. 错误处理：如果在执行 `curl` 命令或处理 JSON 响应时发生错误，它将捕获错误并使用 `app.displayAlert` 显示带有错误信息的警告框。
-
-7. 'bebe' 库的使用：使用 'bebe' 库创建一个新文档（`bebe.newBBDocWithText ('JSON',googleText)`），使用从 API 响应中提取的文本。
+4. **CURL 命令构建**：构建一个 `curl` 命令，向 `https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent` 发送 POST 请求，并带有 JSON 负载（payload）。该负载包含 `prompt` 变量的内容。该命令结构用于向 API（由占位符 `API-Key` 标识）发送 JSON 请求。
+5. **执行并处理 API 响应**：
+   - Try 块：使用 `app.doShellScript(command)` 方法执行 `curl` 命令，并将 JSON 响应捕获在 `jsonObj` 中。
+   - 使用 `JSON.parse(jsonObj)` 将 `jsonObj` 字符串解析为对象（`obj`）。
+   - 从解析的对象中提取特定的文本（`geminiText`），这似乎是 API 响应 prompt 返回的主要内容。
+6. **错误处理**：如果在执行 `curl` 命令或处理 JSON 响应时发生错误，它将捕获错误并使用 `app.displayAlert` 显示带有错误信息的警告框。
+7. **'bebe' 库的使用**：使用 'bebe' 库创建一个新文档（`bebe.newBBDocWithText ('JSON',geminiText)`），使用从 API 响应中提取的文本。
 
 此脚本本质上自动化了向外部生成语言模型 API 发送 prompt、接收响应并使用响应通过自定义库创建新文档的过程。
 
-# ![](img/image_rsrc16Y.jpg)
-
-#为照片中的选定图片添加关键词
+# 为照片中的选定图片添加关键词
 
 ```javascript
 // JXA 脚本，用于为 macOS 照片应用中的选定照片添加关键词并可选地更新说明
 
 // 初始化照片应用并包含用于对话框和警告的标准扩展
-
 const Photos = Application('Photos');
-
 Photos.includeStandardAdditions = true;
-
 Photos.activate(); // 将照片应用带到前台
 
 // 获取当前选择的照片
-
 const selection = Photos.selection();
 
 // 检查是否至少选择了一张照片
@@ -530,13 +514,10 @@ function userInput(prompt, type) {
 
 此脚本简化了在照片应用中增强照片元数据的过程，使用户能够更有效地组织和注释他们的照片集。通过自动化添加关键词和更新说明的选项，它节省了时间并确保了照片元数据的一致性。
 
-![DALL·E 2024-03-03 17.03.23 - 一幅卡通风格的黑白线条画，描绘了一个边走边说的 Macintosh iMac，具有趣味且夸张的角色设计。这张 iMac 是.jpeg](img/image_rsrc16Z.jpg)
-
 # 显示文件的 Spotlight 信息
 
 ```javascript
 // 选择文件将显示所有非空的 Spotlight 信息并放入 TextEdit 文档
-
 app = Application.currentApplication()
 app.includeStandardAdditions = true
 file = app.chooseFile({withPrompt:"选择一个文件以获取 kMDItem 信息"})
@@ -555,7 +536,7 @@ document.text = kMDinfo
 document.text.color = [256, 40421, 398]
 ```
 
-此脚本允许用户在 Mac 上选择一个文件，然后检索并显示该文件所有用的 Spotlight 元数据，排除任何空值的元数据值。以下是脚本执行步骤的详细说明：
+此脚本允许用户在 Mac 上选择一个文件，然后检索并显示该文件所有可用的 Spotlight 元数据，排除任何空值的元数据值。以下是脚本执行步骤的详细说明：
 
 1. 它使用标准扩展初始化当前应用程序，使其可以使用系统对话框和 shell 脚本。
 2. 用户被提示选择一个文件。脚本随后捕获所选文件的路径。
@@ -566,13 +547,7 @@ document.text.color = [256, 40421, 398]
 7. 它将文档的文本设置为过滤后的元数据信息。
 8. 最后，它将文档中的文本颜色设置为特定的颜色值。
 
-总结来说，该脚本旨在提供一种用户友的方法，使用 Spotlight 的 `mdls` 命令查看 macOS 上任何文件的非空元数据，并将结果显示在新的 TextEdit 文档中。
-
-
-
-
-
-# ![DALL·E 2024-03-03 17.05.16 - A fun and engaging black and white line cartoon drawing depicting a walking and talking Macintosh iMac with a lively and exaggerated character design,.jpeg](img/image_rsrc170.jpg)
+总结来说，该脚本旨在提供一种用户友好的方法，使用 Spotlight 的 `mdls` 命令查看 macOS 上任何文件的非空元数据，并将结果显示在新的 TextEdit 文档中。
 
 ## 将 Numbers 表格数据转换为 JSON
 
@@ -590,27 +565,19 @@ document.text.color = [256, 40421, 398]
 
 ```javascript
 bebe = Library("bebe")
-
 numbersApp = Application('Numbers');
-
 frontTable = numbersApp.documents[0].activeSheet().tables[0];
-
 theRows = frontTable.rowCount();
-
 theCols = frontTable.columnCount();
-
 sheetArray = [];
 
 // 获取列标题
-
 columnHeadings = [];
-
 for (j = 0; j < theCols; j++) {
   columnHeadings.push(frontTable.rows[0].cells[j].value());
 }
 
 // 使用列标题作为键将行转换为对象
-
 for (i = 0; i < theRows; i++) {
   rowObj = {};
   for (j = 0; j < theCols; j++) {
@@ -624,7 +591,6 @@ for (i = 0; i < theRows; i++) {
 jText = JSON.stringify(sheetArray, null, 2);
 
 // 假设 bebe 是处理文件的库
-
 bebe.newBBDocWithText("Json File", jText);
 ```
 
@@ -638,28 +604,23 @@ bebe.newBBDocWithText("Json File", jText);
 
 ```javascript
 // 定义一个从 Numbers 获取数据的函数
-
 function getDataFromNumbers() {
   const Numbers = Application('Numbers');
   Numbers.activate();
   const doc = Numbers.documents[0]; // 假设文档已打开且是第一个
   const sheet = doc.sheets[0]; // 假设数据在第一个工作表中
   const table = sheet.tables[0]; // 假设数据在第一个表格中
-
   // 范围 A1-H16
   const range = table.ranges['A1:H16'];
   const data = range.cells.value();
-
   return data;
 }
 
 // 定义一个创建 Keynote 幻灯片的函数
-
 function createKeynoteSlides(data) {
   const Keynote = Application('Keynote');
   Keynote.activate();
   const doc = Keynote.documents[0]; // 假设文档已打开且是第一个
-
   data.forEach((row, index) => {
     const slide = Keynote.Slide({body: row.join(' ')}); // 将行数据合并为字符串作为幻灯片正文
     doc.slides.push(slide);
@@ -667,7 +628,6 @@ function createKeynoteSlides(data) {
 }
 
 // 定义一个数据生成演示脚本的函数
-
 function generatePresentationScript(data) {
   let script = "演示脚本:\n\n";
   data.forEach((row, index) => {
@@ -677,7 +637,6 @@ function generatePresentationScript(data) {
 }
 
 // 协调工作流的主函数
-
 function main() {
   const data = getDataFromNumbers();
   createKeynoteSlides(data);
@@ -729,9 +688,6 @@ for(i=0;i<len;i++){
 }
 ```
 
-
-
-
 4. **确定记录数量**：它计算'Picture List' 布局中存在的记录（艺术家）总数。
 
 5. **遍历每条记录**：
@@ -755,21 +711,14 @@ for(i=0;i<len;i++){
 
 此脚本自动化了数据库中艺术家简介的生成和更新，展示了数据库操作、外部 API 请求和错误处理在自动化脚本中的集成。
 
-# ![](img/image_rsrc172.jpg)
-
 # 将页面从 Safari 传输到 Google Chrome
 
 ```javascript
 Safari = Application('Safari')
-
 Chrome = Application('Google Chrome')
-
 myUrl = Safari.windows[0].currentTab.url()
-
 Chrome.activate()
-
 newWindow = Chrome.Window().make();
-
 newWindow.tabs.push(Chrome.Tab({url: myUrl }));
 ```
 
@@ -777,7 +726,7 @@ newWindow.tabs.push(Chrome.Tab({url: myUrl }));
 
 1. **初始化 Safari 和 Chrome 的应用对象**：脚本首先为 Safari (`Application('Safari')`）和 Google Chrome (`Application('Google Chrome')`）创建应用对象。这些对象允许脚本控制并与每个浏览器交互。
 2. **从 Safari 获取当前 URL**：然后使用 `Safari.windows[0].currentTab.url()` 获取 Safari 前台窗口当前标签页的 URL。这假设 Safari 正在运行并且至少有一个打开的活动标签页。
-3. **激活 Google Chrome**：脚本激活 Google Chrome 将将其置于顶，使其成为屏幕上的活动应用程序。
+3. **激活 Google Chrome**：脚本激活 Google Chrome 将其置于顶层，使其成为屏幕上的活动应用程序。
 4. **在 Chrome 中创建新窗口**：使用 `Chrome.Window().make();` 在 Google Chrome 中创建一个新窗口。此命令有效地打开了一个新的 Chrome 窗口。
 5. **在 Chrome 中打开 Safari 的 URL**：最后，脚本在新创建的 Chrome 窗口中创建一个标签页，将其 URL 设置为之前从 Safari 当前标签页获取的 URL。这是通过 `newWindow.tabs.push(Chrome.Tab({url: myUrl }));` 实现的。
 
@@ -785,11 +734,9 @@ newWindow.tabs.push(Chrome.Tab({url: myUrl }));
 
 对于那些大部分时间使用 Safari，但偶尔使用 Google Chrome 访问整个 Safari 生态系统之外网站的人来说，这非常方便。我设置了可以在 Microsoft Edge 之间发送 URL 的脚本，以便在我出于某种原因使用该浏览器时。
 
-![](img/image_rsrc173.jpg)
-
 # 从长播放列表中提取 AI 选取的较短播放列表
 
-Apple Music 允许创建包含数千首歌曲的超级播放列表。当你拥有一个包含数千首歌曲的播放列表时，能够生成多少个特定长度的独特播放列表是非常惊的。最棒的部分是将超级播放列表设置为随机播放，每次都能获得独特的列表。但较大的脚本可以作为歌曲池。此脚本使用 AI 根据预设标准挑选歌曲。
+Apple Music 允许创建包含数千首歌曲的超级播放列表。当你拥有一个包含数千首歌曲的播放列表时，能够生成多少个特定长度的独特播放列表是非常惊人的。最棒的部分是将超级播放列表设置为随机播放，每次都能获得独特的列表。但较大的脚本可以作为歌曲池。此脚本使用 AI 根据预设标准挑选歌曲。
 
 此脚本是一个复杂的自动化工具，旨在简化 macOS 上 Music 应用程序中的播放列表管理。利用 JavaScript 自动化（JXA）的力量，脚本集成了多个 macOS 应用程序和功能，通过自动化与播放列表策划相关的重复任务来提高用户效率。
 
@@ -808,12 +755,6 @@ Apple Music 允许创建包含数千首歌曲的超级播放列表。当你拥�
 ## 如何在 macOS 上为 ChatGPT 网站创建 Web 应用以供脚本使用
 
 ### 使用 Web 应用的好处
-
-
-
-
-
-# Web App 功能
 
 - **独立功能**：Web App 的功能与 Safari 独立运行。它不会与 Safari 共享浏览历史、Cookies、网站数据或设置，确保你在 Web App 中的活动仅在该内部进行。
 - **简洁界面**：Web App 具有极简主义风格的工具栏，仅包含后退、前进和分享按钮。这提供了一个干净且专注的用户界面。
@@ -840,25 +781,16 @@ Apple Music 允许创建包含数千首歌曲的超级播放列表。当你拥�
 
 ```javascript
 music = Application('Music')
-
 gpt = Application('ChatGPT')
-
 gpt.includeStandardAdditions = true
-
 se = Application('System Events')
-
 app = Application.currentApplication()
-
 app.includeStandardAdditions = true
-
 prePrompt = ""
-
 theLists = ["Ultimate Blues Collection Collection"]
-
 existingPlaylist = music.playlists.whose({ name: theLists[0] })[0]
 
 // Ensure the playlist exists
-
 if (!existingPlaylist) {
 console.log("Playlist not found: " + existingPlaylistName);
 throw new Error("Playlist not found: " + existingPlaylistName);
@@ -877,15 +809,10 @@ for(i=0;i<theLists.length;i++){
 }
 
 prePrompt = "Pick out the 25 most interesting sogs from the provided list and produce a list in the format of a return-delimited list as code using \r: "
-
 prompt = prePrompt + csvText
-
 app.setTheClipboardTo(prompt)
-
 gpt.activate()
-
 // se.keystroke("o", { using: ["shift down","command down"] })
-
 delay(2)
 se.keyCode(53, { using: ["shift down"] })
 delay(2)
@@ -897,14 +824,11 @@ delay(2)
 se.keystroke("c", { using: ["shift down","command down"] })
 content = app.theClipboard()
 finalTracks = content.split("\r")
-
 // Remove the first item: the apostrophes and plain text
 finalTracks.shift()
-
 // Remove the last item: the apostrophes
 finalTracks.pop();
 console.log(finalTracks.toString())
-
 newPlaylist = music.Playlist().make()
 newPlaylist.name = "Extracted from " + theLists[0]
 newPlaylist.description = "This playlist is extracted from " + theLists[0]
@@ -929,7 +853,7 @@ function makeCsv(item){
 ## 脚本逐步说明
 
 1. **初始化应用程序**：
-   - 脚本首先初始化 `Music` 应用程序、`ChatGPT` 应用程序、`System Events` 以及当前应用程序。它还这些这些应用程序的标准添加以扩展其功能。
+   - 脚本首先初始化 `Music` 应用程序、`ChatGPT` 应用程序、`System Events` 以及当前应用程序。它还为这些应用程序启用标准添加以扩展其功能。
 2. **验证播放列表是否存在**：
    - 脚本检查 `Music` 应用中是否存在指定的播放列表。如果未找到播放列表，它将记录错误消息并停止后续执行。
 3. **提取轨道信息**：
@@ -939,13 +863,13 @@ function makeCsv(item){
 5. **激活 ChatGPT**：
    - 脚本激活 `ChatGPT` 并模拟按键粘贴提示词，发送请求。
 6. **处理 ChatGPT 响应**：
-   - 脚本处理来自 `ChatGPT` 的响应，提取轨道列表并清理不元素。
+   - 脚本处理来自 `ChatGPT` 的响应，提取轨道列表并清理不必要元素。
 7. **创建新播放列表**：
    - 在 `Music` 应用中创建一个新的播放列表，其名称反映了来源。
 8. **复制所选轨道**：
    - 脚本将 `ChatGPT` 选择的轨道复制到新创建的播放列表中。它遍历所选轨道列表，在现有的播放列表中查找每个曲目。
 9. **记录并显示信息**：
-   - 在整个过程中，脚本会记录相关信息并在需要显示对话框，以让用户了解其进度以及任何需要确认的操作。
+   - 在整个过程中，脚本会记录相关信息并在需要时显示对话框，以让用户了解其进度以及任何需要确认的操作。
 
 通过遵循这些步骤，该脚本自动化了策划和组织音乐播放列表的任务，结合了 macOS 自动化工具和通过 `ChatGPT` 进行 AI 驱动选择的力量。
 
@@ -975,12 +899,9 @@ app.includeStandardAdditions = true;
 result = app.doShellScript("osascript /users/scripts/removecaret.scpt")
 ```
 
-
-
-
 第三，我可以使用一个 JavaScript 函数来替换文本。这虽然行得通，但 BBEdit 一直是我使用 grep 时的首选：
 
-```
+```javascript
 app = Application.currentApplication();
 app.includeStandardAdditions = true;
 se = Application('System Events')
@@ -993,6 +914,7 @@ function grepFindAndReplace(inputString, searchPattern, replaceWith) {
   const outputString = inputString.replace(regex, replaceWith);
   return outputString;
 }
+
 bb.documents[0].text = changedText
 ```
 
@@ -1000,7 +922,7 @@ bb.documents[0].text = changedText
 
 正则表达式是用于匹配字符串中字符组合的模式。在 JavaScript 中，正则表达式也是对象。这些模式用于 `RegExp` 的 `exec()` 和 `test()` 方法，以及 `String` 的 `match()`、`matchAll()`、`replace()`、`replaceAll()`、`search()` 和 `split()` 方法。
 
-# 在 JXA 中使用 JavaScript 正正则实现的威力
+# 在 JXA 中使用 JavaScript 正则实现的威力
 
 JavaScript for Automation (JXA)将 JavaScript 强大且多功能的特性引入了 macOS 任务的自动化中。在其许多强大的功能中，JavaScript 的正则表达式（regex）实现是文本处理和操作中一个特别有力的工具。在 JXA 中利用 JavaScript 的正则能力可以显著增强你自动化复杂工作流的能力。具体方法如下：
 
@@ -1008,7 +930,7 @@ JavaScript for Automation (JXA)将 JavaScript 强大且多功能的特性引入�
 
 正则表达式提供了一种简洁且强大的手段来搜索、匹配和操作文本。通过 JXA 中的 JavaScript 正则实现，你可以快速识别字符串中的模式、提取特定数据并用最少的代码转换文本。这对于处理日志文件、从结构化文本中提取数据或验证输入格式等任务特别有用。
 
-## 2. 高级字符串操作
+## 高级字符串操作
 
 JavaScript 的正则函数（如 `match()`、`replace()`、`search()` 和 `split()`）能够实现复杂的字符串操作。例如，你可以：
 
@@ -1017,11 +939,11 @@ JavaScript 的正则函数（如 `match()`、`replace()`、`search()` 和 `split
 - 根据复杂的分隔符将文本拆分为数组。
 - 查找并替换模式，例如纠正拼写错误或更新文件内容的路径。
 
-## 3. 动态且灵活的自动化
+## 动态且灵活的自动化
 
 JavaScript 中的正则表达式高度动态，可以在运行时构建或修改。这允许创建灵活的自动化脚本以适应不同的输入格式或不断变化的需求。通过编程构建正则模式，你的 JXA 脚本可以处理更广泛的任务，而无需不断更新。
 
-## 4. 与 macOS 应用程序集成
+## 与 macOS 应用程序集成
 
 JXA 与 macOS 应用程序和系统组件交互的能力意味着你可以直接在自动化工作流中使用正则驱动的文本操作。例如，你可以：
 
@@ -1029,7 +951,7 @@ JXA 与 macOS 应用程序和系统组件交互的能力意味着你可以直接
 - 处理并重新格式 Numbers 或 Excel 表格中的数据。
 - 从 Safari 中的网页或文档中提取并转换内容。
 
-## 5. 无缝错误处理与验证
+## 无缝错误处理与验证
 
 正则表达式在验证输入和确保数据完整性方面非常出色。在 JXA 中，你可以使用正则在进一步处理数据之前强制模式（如有效的电子邮件格式或 URL 结构）。这减少了错误并确保你的自动化脚本一致且正确地处理数据。
 
@@ -1057,48 +979,37 @@ console.log(emails); // 输出: ["support@example.com", "sales@example.org"]
 
 # 快捷指令
 
-![](img/image_rsrc175.jpg)
-
 # 生成 QR 代码
 
 1. **从共享表接收更多输入**：此操作被设置为接收来自共享表的输入。如果没有提供输入，它将继续执行下一个操作。这可能是快捷指令接收要转换为 QR 代码 URL 的起点。
 2. **从快捷指令输入获取 URL**：此操作从快捷指令接收的输入中提取 URL。如果用户选择了包含 URL 的文本或文件并分享到快捷指令，此操作可确保仅取 URL 作为下一步的输入。
 
-![](img/image_rsrc176.jpg)
 3. **从 URL 生成 QR 代码**：此操作获取上一步提取的 URL 并生成对应的 QR 代码图像。这是快捷指令的核心功能。
-4. **将 QR 代码保存到最近**：最后，此操作将生成的 QR 代码图像保存到用户照片应用中的“最近”专辑。
+4. **将 QR 代码保存到最近**：最后，此操作将生成的 QR 代码图像保存到用户照片应用中的“最近”专辑中。
 
 ### 快捷指令描述：
 
-此快捷指令旨在通过共享表接收用户的 URL 并将其转换为 QR 代码。然后，该 QR 代码会被保存到照片应用的“最近”相中中方便访问。这个快捷指令可以以视觉化格式共享 URL，这种格式可以被手机或其他带有相机和 QR 代码扫描功能的设备扫描。这是一种无需专用应用即可生成 QR 代码的简单高效的方法。
+此快捷指令旨在通过共享表接收用户的 URL 并将其转换为 QR 代码。然后，该 QR 代码会被保存到照片应用的“最近”相册中方便访问。这个快捷指令可以以视觉化格式共享 URL，这种格式可以被手机或其他带有相机和 QR 代码扫描功能的设备扫描。这是一种无需专用应用即可生成 QR 代码的简单高效的方法。
 
-# 选择照片提取文本到备录
-
-![](img/image_rsrc177.jpg)
+# 选择照片提取文本到备忘录
 
 1. **请求文本**：快捷指令提示用户输入文本作为笔记的名称。给用户的提示信息是“Make a name for note”（为笔记命名）。
 2. **创建笔记**：快捷指令在名为“Biz”的文件夹或账户中，使用提供的输入（上一步输入的名称）创建一个新笔记。
 3. **选择照片**：提示用户选择照片。
-4. **从照片中提取文本**：快捷指令使用 OCR（光学字符识别）技术从选照片中提取文本。
+4. **从照片中提取文本**：快捷指令使用 OCR（光学字符识别）技术从选定照片中提取文本。
 5. **追加**：将提取的文本追加到之前创建的笔记中。
 
 ### 快捷指令描述：
 
-此快捷指令旨在从一个或多个选定的照片中提取文本并将文本保存到笔记中。用户首先为笔记，然后选择照片。文本将从这些图像中识别并编译到“Biz”文件夹或账户内新建的笔记中。这对于快速将物理文档或图像中的文本捕获并整理成数字格式，以便日后访问和参考非常有用。
+此快捷指令旨在从一个或多个选定的照片中提取文本并将文本保存到笔记中。用户首先为笔记命名，然后选择照片。文本将从这些图像中识别并编译到“Biz”文件夹或账户内新建的笔记中。这对于快速将物理文档或图像中的文本捕获并整理成数字格式，以便日后访问和参考非常有用。
 
 # 创建带有更改问题的测验
 
-图片概述了一个名为“Monarchy Quiz”的 macOS 快捷指令。该快捷指令似乎是一个简单的测验应用程序，询问关于君主（特别是爱华一世）的问题并显示答案。
-
-![](img/image_rsrc178.jpg)
-![](img/image_rsrc179.jpg)
+图片概述了一个名为“Monarchy Quiz”的 macOS 快捷指令。该快捷指令似乎是一个简单的测验应用程序，询问关于君主（特别是爱德华一世）的问题并显示答案。
 
 以下是该快捷指令工作原理的逐步说明：
 
 1. 快捷指令包含一个格式化的 JSON 数组文本块，数组中的每个对象包含一个类别（“Edward I”）、一个子类别（如“Biography”或“Reign”）、一个问题和一个答案。
-
-
-
 2. 随后，快捷指令从此 JSON 格式的文本中提取出一个字典。
 3. 它进入一个重复循环，遍历字典中的每个项目。
 4. 对于每个项目（每对问题和回答对），它会从当前重复项中获取键 `'category'` 的值（尽管这一步在后续操作中似乎没有进一步的用途）。
@@ -1111,43 +1022,38 @@ console.log(emails); // 输出: ["support@example.com", "sales@example.org"]
 如何使用该快捷指令：
 - 运行“Monarchy Quiz”快捷指令。
 - 阅读弹窗中显示的问题并思考你的答案。
-- 忽略问题弹窗，在下一个弹窗中查看正确答案。
+- 关闭问题弹窗，在下一个弹窗中查看正确答案。
 - 对测验中的每个问题重复此过程，直到所有问题都回答完毕。
 
 此快捷指令是一种向用户展示一系列问题和答案的简单方法，可能用于教育或娱乐目的。
 
-# 使用 AI 创建播放歌列表图像
+# 使用 AI 创建播放列表图像
 
-Apple Music 最近的一次更新包含了一个意想不到的惊喜。过去，当创建一个新的播放歌列表时，使用前四张专辑的封面图来创建播放歌列表的“封面”。用户可以通过包含所需封面的四首歌曲放在列表开头来控制所使用的封面图。但这次更新完全取消了这个功能，并提供了一些特别难看的预制图像作为选择，除非选择从文件或照片库中添加图像。在创建新播放歌列表后这样做非常麻烦，因此我使用了快捷指令通过两种方式来简化它。首先是使用 OpenArt.ai 网站创建图像
+Apple Music 最近的一次更新包含了一个意想不到的惊喜。过去，当创建一个新的播放列表时，使用前四张专辑的封面图来创建播放列表的“封面”。用户可以通过包含所需封面的四首歌曲放在列表开头来控制所使用的封面图。但这次更新完全取消了这个功能，并提供了一些特别难看的预制图像作为选择，除非选择从文件或照片库中添加图像。在创建新播放列表后这样做非常麻烦，因此我使用了快捷指令通过两种方式来简化它。首先是使用 OpenArt.ai 网站创建图像。
 
 用法：
 
-![](img/image_rsrc17A.jpg)
+# 使用 OpenArt.ai 创建播放列表图像
 
-# ![](img/image_rsrc17B.jpg)
-
-图片显示了一个名为“Use AI To Get Playlist Art”的 macOS 快捷指令。该快捷指令旨在帮助你为特定风格的音乐播放歌列表创建艺术。其工作原理如下：
+图片显示了一个名为“Use AI To Get Playlist Art”的 macOS 快捷指令。该快捷指令旨在帮助你为特定风格的音乐播放列表创建艺术。其工作原理如下：
 
 1. 快捷指令开始，如果没有来自共享表的直接输入，则继续接收输入。
-2. 使用 `Dictionary` 动作定义一个样式列表，可以通过选择这些样式来确定你想创建的艺术类型。提供的选项包括用于漫画风格的“Comic”、“新艺术（Art Nouveau）”、“哥特（Gothic）”、“Picasso（毕加，可能是替代更抽象的风格）”、“California”、“Sixties（六十年代）和“Movie”。你也可以向此字典中添加更多样式。
-3. `'Choose from Dictionary` 动作允许你选择这些样式中的一种。
+2. 使用 `Dictionary` 动作定义一个样式列表，可以通过选择这些样式来确定你想创建的艺术类型。提供的选项包括用于漫画风格的“Comic”、“新艺术（Art Nouveau）”、“哥特（Gothic）”、“Picasso（毕加索，可能是指代更抽象的风格）”、“California”、“Sixties（六十年代）”和“Movie”。你也可以向此字典中添加更多样式。
+3. `'Choose from Dictionary'` 动作允许你选择这些样式中的一种。
 4. 随后，快捷指令会提示输入文本，可能是为了接收关于艺术更具体的细节或偏好。
 5. 从字典中选定的项目（所选样式）和提供的输入文本合并成单个文本块。
 6. 该文本块被复制到剪贴板。
 7. 创建一个指向 `https://www.openart.ai/create` 的 URL。
-8. 快捷指令打开此 URL，包含样式和任何额外输入的合并文本块可以在此处使用 AI 生成播放歌列表封面。
+8. 快捷指令打开此 URL，包含样式和任何额外输入的合并文本块可以在此处使用 AI 生成播放列表封面。
 
 如何使用该快捷指令：
 - 运行快捷指令并从预定义列表中选择样式。
 - 在提示时输入任何额外细节。
-- 快捷指令将合并后的文本复制到你的剪贴板，并导航到 openart.ai 网站，你可以在那里使用复制的文本指示 AI 生成所选风格的播放歌列表封面。
+- 快捷指令将合并后的文本复制到你的剪贴板，并导航到 openart.ai 网站，你可以在那里使用复制的文本指示 AI 生成所选风格的播放列表封面。
 
-# 使用 Google 查找播放歌列表图像
+# 使用 Google 查找播放列表图像
 
-其次，使用 Google 搜索适合作为播放歌列表封面的图像。在播放歌列表界面，点击三个点获取共享表。选择快捷指令名称。如果正在播放歌曲，快捷指令将立即使用 `Current Song` 的 `Album name`、`Song Title` 和 `Artist` 作为搜索词，否则它将提供音频输入以语音提供搜索词：
-
-![](img/image_rsrc17C.jpg)
-![](img/image_rsrc17D.jpg)
+其次，使用 Google 搜索适合作为播放列表封面的图像。在播放列表界面，点击三个点获取共享表。选择快捷指令名称。如果正在播放歌曲，快捷指令将立即使用 `Current Song` 的 `Album name`、`Song Title` 和 `Artist` 作为搜索词，否则它将提供音频输入以语音提供搜索词。
 
 以下是所示每个步骤的分解和描述：
 
@@ -1161,7 +1067,6 @@ Apple Music 最近的一次更新包含了一个意想不到的惊喜。过去�
 6. `'If'` 条件结束后，快捷指令使用 `'Choice'` 变量构建 Google 搜索 URL，以寻找与输入或口述信息相关的图像。
 7. 最后，打开构建的 URL。
 
-要使用此快捷指令，你可以在 Apple Music 中选择一首歌，将其共享到此快捷指令，然后它将帮助你在在线寻找相关图像，可能用于创建播放歌列表封面或类似的目的。
+要使用此快捷指令，你可以在 Apple Music 中选择一首歌，将其共享到此快捷指令，然后它将帮助你在线寻找相关图像，可能用于创建播放列表封面或类似的目的。
 
-![](img/image_rsrc17E.jpg)
-
+```

@@ -1,387 +1,386 @@
+
 # JavaScript 专业框架高级指南：Prototype、YUI、Ext JS、Dojo 和 MooTools
 
+`$({sel, ...)`
 
+`interpret(value)`
 
-
-
-
-
-
-
-
-
-
-$({sel, ...)
-
-interpret(value)
+## 枚举与 DOM 操作
 
 处理枚举
 
-XMLHttpRequest 接口
+`XMLHttpRequest` 接口
 
-通过 $ 和 $() 扩展 DOM 节点（如果作为单例执行，元素为第一个参数）
+通过 `$` 和 `$()` 扩展 DOM 节点（如果作为单例执行，元素为第一个参数）
 
-通过 $ 和 $() 扩展 DOM 节点（如果作为单例执行，元素为第一个参数）
+通过 `$` 和 `$()` 扩展 DOM 节点（如果作为单例执行，元素为第一个参数）
 
-each more element ID D elements moves in elements
+`each more element ID D elements moves in elements`
 
-gsub(pattern, value)
+`gsub(pattern, value)`
 
-each(Slice, n)
+`each(Slice, n)`
 
-get()
+`get()`
 
-reset(frm)
+`reset(frm)`
 
-serializeElement(els)
+`serializeElement(els)`
 
-$$$Selectors(s, s..)
+`$$$Selectors(s, s..)`
 
-sub(pattern, t, len)
+`sub(pattern, t, len)`
 
-active()
+`active()`
 
-activeRequestCount
+`activeRequestCount`
 
-getElement()
+`getElement()`
 
-getElementsBy()
+`getElementsBy()`
 
 使用 CSS 选择器查找元素
 
-scar(pattern, value)
+`scar(pattern, value)`
 
-all()
+`all()`
 
-visible()
+`visible()`
 
-toggle()
+`toggle()`
 
-hide()
+`hide()`
 
-将 Array 封装为 Array
+将 `Array` 封装为 `Array`
 
-length(str, len)
+`length(str, len)`
 
-collect()
+`collect()`
 
-show()
+`show()`
 
-update(html)
+`update(html)`
 
-replace(html)
+`replace(html)`
 
-将 Array 封装为 Hash
+将 `Array` 封装为 `Hash`
 
-strip()
+`strip()`
 
-find()
+`find()`
 
-remove()
+`remove()`
 
-focus()
+`focus()`
 
-val()
+`val()`
 
-$({sel)
+`$({sel)`
 
-bandSize()
+`bandSize()`
 
-getPattern()
+`getPattern()`
 
-register()
+`register()`
 
-updateName()
+`updateName()`
 
-getInput(type s, name)
+`getInput(type s, name)`
 
-wrap()
+`wrap()`
 
-extractScripts()
+`extractScripts()`
 
-getPattern()
+`getPattern()`
 
-unregister()
+`unregister()`
 
-empty()
+`empty()`
 
-findFirst()
+`findFirst()`
 
-Try { ... } catch
+`Try { ... } catch`
 
-escapeHTML()
+`escapeHTML()`
 
-groupPattern()
+`groupPattern()`
 
-dispatch(ev, request, transport, json)
+`dispatch(ev, request, transport, json)`
 
-normalizeCollection()
+`normalizeCollection()`
 
-focus()
+`focus()`
 
 如果函数失败后
 
-toQuery()
+`toQuery()`
 
-inject()
+`inject()`
 
-Ajax Request  Base
+## Ajax Request Base
 
-ancestor()
+`Ajax Request Base`
 
-disabled() 只能从 String 调用
+`ancestor()`
 
-$($
+`disabled()` 只能从 `String` 调用
 
-separator(separator)
+`$($`
 
-method(value)
+`separator(separator)`
+
+`method(value)`
 
 处理 Ajax 请求
 
-descendant()
+`descendant()`
 
-serialize()
+`serialize()`
 
 - 表单元素
 
-slice(start)
+`slice(start)`
 
-max()
+`max()`
 
-initialize(list, options to)
+`initialize(list, options to)`
 
-immediateSiblingDescendants()
+`immediateSiblingDescendants()`
 
-clear()
+`clear()`
 
-get(value)
+`get(value)`
 
-camelCase
+`camelCase`
 
-partition()
+`partition()`
 
-success()
+`success()`
 
-previousSiblings
+`previousSiblings`
 
-getValue()
+`getValue()`
 
-getSelector
+`getSelector`
 
-underscore
+`underscore`
 
-reject()
+`reject()`
 
-getHeader()
+`getHeader()`
 
-nextSibling()
+`nextSibling()`
 
-get()
+`get()`
 
 使用...查找元素
 
-desherize()
+`desherize()`
 
-toArray()
+`toArray()`
 
-expression()
+`expression()`
 
-up()
+`up()`
 
-clear
+`clear`
 
-ScriptFragment
+`ScriptFragment`
 
-requestive()
+`requestive()`
 
-property()
+`property()`
 
-next(index)
+`next(index)`
 
-parent()
+`parent()`
 
-val()
+`val()`
 
-Class
+## 类与对象
 
-inspect(value)
+`Class`
 
-toJSON()
+`inspect(value)`
 
-Ajax.Updater extends Base
+`toJSON()`
 
-index()
+`Ajax.Updater extends Base`
 
-get()
+`index()`
+
+`get()`
 
 启用对象以初始化方法
 
-jQuery()
+`jQuery()`
 
 通过 Ajax 更新页面
 
-getAttribute()
+`getAttribute()`
 
-disabled()
+`disabled()`
 
-Object
+`Object`
 
-map()
+`map()`
 
-initialize(list, options to)
+`initialize(list, options to)`
 
-className()
+`className()`
 
-enable()
+`enable()`
 
-extend (dest, str or obj)
+`extend (dest, str or obj)`
 
-filter()
+`filter()`
 
-addClassName()
+`addClassName()`
 
-addClass()
+`addClass()`
 
-disabled
+`disabled`
 
-values()
+`values()`
 
-clone()
+`clone()`
 
-remove()
+`remove()`
 
-getVal()
+`getVal()`
 
-disable()
+`disable()`
 
-Function
+`Function`
 
-bind()
+`bind()`
 
-stop()
+`stop()`
 
-toggle()
+`toggle()`
 
-disabled
+`disabled`
 
-bind
+`bind`
 
-addEventListener()
+`addEventListener()`
 
-Ajax.PeriodicUpdater Base
+## Ajax.PeriodicUpdater Base
 
-show()
+`Ajax.PeriodicUpdater Base`
 
-disabled
+`show()`
 
+`disabled`
 
-find()
+`find()`
 
 通过 Ajax 重复更新元素
 
-find()
+`find()`
 
 使用 CSS 选择器选择元素
 
-initialize(list, options to)
+`initialize(list, options to)`
 
-initialize(el, n)
+`initialize(el, n)`
 
-inspect()
+`inspect()`
 
-findElements(el, elements, expressions)
+`findElements(el, elements, expressions)`
 
-PeriodicUpdater
+`PeriodicUpdater`
 
-stop()
+`stop()`
 
-toEach()
+`toEach()`
 
-matches(el, expressions)
+`matches(el, expressions)`
 
+`find()`
 
-find()
+`stop()` 重置默认浏览器事件处理器
 
-stop() 重置默认浏览器事件处理器
+`element(ev)`
 
-element(ev)
+`isLeftClick(ev)`
 
-isLeftClick(ev)
+`pointer(ev)`
 
-pointer(ev)
+`Event`
 
-Event
+`stop()`
 
-stop()
+`findElement(ev, target, args)`
 
-findElement(ev, target, args)
+`element(ev, target, f, usebubble)`
 
-element(ev, target, f, usebubble)
+`stopObserver()`
 
-stopObserver()
+## 表单元素
 
 表单元素
 
-Abstract.Observer
+`Abstract.Observer`
 
-initialize(el, f)
+`initialize(el, f)`
 
-Form.Element.Observer
+`Form.Element.Observer`
 
-Abstract.TimedObserver
+`Abstract.TimedObserver`
 
-initialize(el, f, n)
+`initialize(el, f, n)`
 
-getValue()
+`getValue()`
 
-# 图例 (Legend)
+# 图例（Legend）
 
-s = 布尔值
+`s` = 布尔值
 
-c = 数字
+`c` = 数字
 
-a = [可选]
+`a` = [可选]
 
-n = 元素
+`n` = 元素
 
-r = 模式
+`r` = 模式
 
-f = 函数 (回调)
+`f` = 函数（回调）
 
-Array extends Array
+## Array
 
-默认 Array 对象
+`Array extends Array`
 
-## 元素类 (ElementClassNames)
+默认 `Array` 对象
+
+## 元素类（ElementClassNames）
 
 处理类名
 
-set(className, a)
+`set(className, a)`
 
-addClass()
+`addClass()`
 
-removeClass()
+`removeClass()`
 
-toggle()
+`toggle()`
 
-toArray = clone
+`toArray = clone`
 
-## 模板 (Template)
+## 模板（Template）
 
-initialize(template, p)
+`initialize(template, p)`
 
-evaluate(obj)
+`evaluate(obj)`
 
-数字范围
+## 数字范围
 
-initialize(n, start, n, b) absolute(n)
+`initialize(n, start, n, b)`
 
-range
+`absolute(n)`
 
-# 对象范围 (Object Range)
+`range`
 
-扩展 Object
+# 对象范围（Object Range）
 
-*
-
+扩展 `Object`

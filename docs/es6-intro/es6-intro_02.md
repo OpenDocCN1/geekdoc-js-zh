@@ -1,3 +1,4 @@
+
 # ECMAScript 6 简介
 
 ECMAScript 6（以下简称 ES6）是 JavaScript 语言的下一代标准，已经在 2015 年 6 月正式发布了。Mozilla 公司将在这个标准的基础上，推出 JavaScript 2.0。
@@ -40,26 +41,24 @@ ECMA 的第 39 号技术专家委员会（Technical Committee 39，简称 TC39�
 
 ## 部署进度
 
-各大浏览器的最新版本，对 ES6 的支持可以查看[kangax.github.io/es5-compat-table/es6/](http://kangax.github.io/es5-compat-table/es6/)。随着时间的推移，支持度已经越来越高了，ES6 的大部分特性都实现了。
+各大浏览器的最新版本，对 ES6 的支持可以查看 [kangax.github.io/es5-compat-table/es6/](http://kangax.github.io/es5-compat-table/es6/)。随着时间的推移，支持度已经越来越高了，ES6 的大部分特性都实现了。
 
 Node.js 和 io.js（一个部署新功能更快的 Node 分支）是 JavaScript 语言的服务器运行环境。它们对 ES6 的支持度，比浏览器更高。通过它们，可以体验更多 ES6 的特性。
 
-建议使用版本管理工具[nvm](https://github.com/creationix/nvm)，来安装 Node.js 和 io.js。不过，nvm 不支持 Windows 系统，下面的操作可以改用[nvmw](https://github.com/hakobera/nvmw)或[nvm-windows](https://github.com/coreybutler/nvm-windows)代替。
+建议使用版本管理工具 [nvm](https://github.com/creationix/nvm)，来安装 Node.js 和 io.js。不过，nvm 不支持 Windows 系统，下面的操作可以改用 [nvmw](https://github.com/hakobera/nvmw) 或 [nvm-windows](https://github.com/coreybutler/nvm-windows) 代替。
 
 安装 nvm 需要打开命令行窗口，运行下面的命令。
 
 ```js
 $ curl -o- https://raw.githubusercontent.com/creationix/nvm/<version number>/install.sh | bash
-
 ```
 
 上面命令的 version number 处，需要用版本号替换。本书写作时的版本号是 v0.25.4。
 
-该命令运行后，nvm 会默认安装在用户主目录的`.nvm`子目录。然后，激活 nvm。
+该命令运行后，nvm 会默认安装在用户主目录的 `.nvm` 子目录。然后，激活 nvm。
 
 ```js
 $ source ~/.nvm/nvm.sh
-
 ```
 
 激活以后，安装 Node 或 io.js 的最新版。
@@ -68,7 +67,6 @@ $ source ~/.nvm/nvm.sh
 $ nvm install node
 # 或
 $ nvm install iojs
-
 ```
 
 安装完成后，就可以在各种版本的 node 之间自由切换。
@@ -79,7 +77,6 @@ $ nvm use node
 
 # 切换到 iojs
 $ nvm use iojs
-
 ```
 
 需要注意的是，Node.js 对 ES6 的支持，需要打开 harmony 参数，iojs 不需要。
@@ -88,7 +85,6 @@ $ nvm use iojs
 $ node --harmony
 # iojs 不需要打开 harmony 参数
 $ node
-
 ```
 
 上面命令执行后，就会进入 REPL 环境，该环境支持所有已经实现的 ES6 特性。
@@ -112,22 +108,20 @@ $ node --v8-options | grep harmony
   --harmony_arrays
   --harmony_maths
   --harmony
-
 ```
 
 上面命令的输出结果，会因为版本的不同而有所不同。
 
-我写了一个[ES-Checker](https://github.com/ruanyf/es-checker)模块，用来检查各种运行环境对 ES6 的支持情况。访问[ruanyf.github.io/es-checker](http://ruanyf.github.io/es-checker)，可以看到您的浏览器支持 ES6 的程度。运行下面的命令，可以查看本机支持 ES6 的程度。
+我写了一个 [ES-Checker](https://github.com/ruanyf/es-checker) 模块，用来检查各种运行环境对 ES6 的支持情况。访问 [ruanyf.github.io/es-checker](http://ruanyf.github.io/es-checker)，可以看到您的浏览器支持 ES6 的程度。运行下面的命令，可以查看本机支持 ES6 的程度。
 
 ```js
 $ npm install -g es-checker
 $ es-checker
-
 ```
 
 ## Babel 转码器
 
-[Babel](https://babeljs.io/)是一个广泛使用的 ES6 转码器，可以 ES6 代码转为 ES5 代码，从而在浏览器或其他环境执行。这意味着，你可以用 ES6 的方式编写程序，又不用担心现有环境是否支持。下面是一个例子。
+[Babel](https://babeljs.io/) 是一个广泛使用的 ES6 转码器，可以 ES6 代码转为 ES5 代码，从而在浏览器或其他环境执行。这意味着，你可以用 ES6 的方式编写程序，又不用担心现有环境是否支持。下面是一个例子。
 
 ```js
 // 转码前
@@ -137,7 +131,6 @@ input.map(item => item + 1);
 input.map(function (item) {
   return item + 1;
 });
-
 ```
 
 上面的原始代码用了箭头函数，这个特性还没有得到广泛支持，Babel 将其转为普通函数，就能在现有的 JavaScript 环境执行了。
@@ -146,10 +139,9 @@ input.map(function (item) {
 
 ```js
 $ npm install --global babel
-
 ```
 
-Babel 自带一个`babel-node`命令，提供支持 ES6 的 REPL 环境。它支持 Node 的 REPL 环境的所有功能，而且可以直接运行 ES6 代码。
+Babel 自带一个 `babel-node` 命令，提供支持 ES6 的 REPL 环境。它支持 Node 的 REPL 环境的所有功能，而且可以直接运行 ES6 代码。
 
 ```js
 $ babel-node
@@ -157,15 +149,13 @@ $ babel-node
 > console.log([1,2,3].map(x => x * x))
     [ 1, 4, 9 ]
 >
-
 ```
 
-`babel-node`命令也可以直接运行 ES6 脚本。假定将上面的代码放入脚本文件`es6.js`。
+`babel-node` 命令也可以直接运行 ES6 脚本。假定将上面的代码放入脚本文件 `es6.js`。
 
 ```js
 $ babel-node es6.js
 [1, 4, 9]
-
 ```
 
 babel 命令可以将 ES6 代码转为 ES5 代码。
@@ -177,32 +167,28 @@ $ babel es6.js
 console.log([1, 2, 3].map(function (x) {
   return x * x;
 }));
-
 ```
 
-`-o`参数将转换后的代码，从标准输出导入文件。
+`-o` 参数将转换后的代码，从标准输出导入文件。
 
 ```js
 $ babel es6.js -o es5.js
 # 或者
 $ babel es6.js --out-file es5.js
-
 ```
 
-`-d`参数用于转换整个目录。
+`-d` 参数用于转换整个目录。
 
 ```js
 $ babel -d build-dir source-dir
-
 ```
 
-注意，`-d`参数后面跟的是输出目录。
+注意，`-d` 参数后面跟的是输出目录。
 
-如果希望生成 source map 文件，则要加上`-s`参数。
+如果希望生成 source map 文件，则要加上 `-s` 参数。
 
 ```js
 $ babel -d build-dir source-dir -s
-
 ```
 
 Babel 也可以用于浏览器。
@@ -212,21 +198,19 @@ Babel 也可以用于浏览器。
 <script type="text/babel">
 // Your ES6 code
 </script>
-
 ```
 
-上面代码中，`browser.js`是 Babel 提供的转换器脚本，可以在浏览器运行。用户的 ES6 脚本放在 script 标签之中，但是要注明`type="text/babel"`。
+上面代码中，`browser.js` 是 Babel 提供的转换器脚本，可以在浏览器运行。用户的 ES6 脚本放在 script 标签之中，但是要注明 `type="text/babel"`。
 
 Babel 配合 Browserify 一起使用，可以生成浏览器能够直接加载的脚本。
 
 ```js
 $ browserify script.js -t babelify --outfile bundle.js
-
 ```
 
 ## Traceur 转码器
 
-Google 公司的[Traceur](https://github.com/google/traceur-compiler)转码器，也可以将 ES6 代码转为 ES5 代码。
+Google 公司的 [Traceur](https://github.com/google/traceur-compiler) 转码器，也可以将 ES6 代码转为 ES5 代码。
 
 ### 直接插入网页
 
@@ -241,7 +225,6 @@ Traceur 允许将 ES6 代码直接插入网页。首先，必须在网页头部�
 <script>
 traceur.options.experimental = true;
 </script>
-
 ```
 
 接下来，就可以把 ES6 代码放入上面这些代码的下方。
@@ -260,19 +243,17 @@ traceur.options.experimental = true;
   var c = new Calc();
   console.log(c.add(4,5));
 </script>
-
 ```
 
 正常情况下，上面代码会在控制台打印出 9。
 
-注意，`script`标签的`type`属性的值是`module`，而不是`text/javascript`。这是 Traceur 编译器识别 ES6 代码的标识，编译器会自动将所有`type=module`的代码编译为 ES5，然后再交给浏览器执行。
+注意，`script` 标签的 `type` 属性的值是 `module`，而不是 `text/javascript`。这是 Traceur 编译器识别 ES6 代码的标识，编译器会自动将所有 `type=module` 的代码编译为 ES5，然后再交给浏览器执行。
 
-如果 ES6 代码是一个外部文件，也可以用`script`标签插入网页。
+如果 ES6 代码是一个外部文件，也可以用 `script` 标签插入网页。
 
 ```js
 <script type="module" src="calc.js" >
 </script>
-
 ```
 
 ### 在线转换
@@ -306,7 +287,6 @@ $traceurRuntime.ModuleStore.getAnonymousModule(function() {
   return {};
 });
 </script>
-
 ```
 
 ### 命令行转换
@@ -315,7 +295,6 @@ $traceurRuntime.ModuleStore.getAnonymousModule(function() {
 
 ```js
 $ npm install -g traceur
-
 ```
 
 安装成功后，就可以在命令行下使用 traceur 了。
@@ -326,23 +305,20 @@ traceur 直接运行 es6 脚本文件，会在标准输出显示运行结果，�
 $ traceur calc.js
 Calc constructor
 9
-
 ```
 
-如果要将 ES6 脚本转为 ES5 保存，要采用下面的写法
+如果要将 ES6 脚本转为 ES5 保存，要采用下面的写法。
 
 ```js
 $ traceur --script calc.es6.js --out calc.es5.js
-
 ```
 
-上面代码的`--script`选项表示指定输入文件，`--out`选项表示指定输出文件。
+上面代码的 `--script` 选项表示指定输入文件，`--out` 选项表示指定输出文件。
 
-为了防止有些特性编译不成功，最好加上`--experimental`选项。
+为了防止有些特性编译不成功，最好加上 `--experimental` 选项。
 
 ```js
 $ traceur --script calc.es6.js --out calc.es5.js --experimental
-
 ```
 
 命令行下转换的文件，就可以放到浏览器中运行。
@@ -372,22 +348,23 @@ if (result.error)
 fs.writeFileSync('out.js', result.js);
 // sourceMap 属性对应 map 文件
 fs.writeFileSync('out.js.map', result.sourceMap);
-
 ```
 
 ## ECMAScript 7
 
+
+
 2013 年 3 月，ES6 的草案封闭，不再接受新功能了。新的功能将被加入 ES7。
 
-ES7 可能包括的功能有：
+## ES7 可能包括的功能
 
-（1）**Object.observe**：用来监听对象（以及数组）的变化。一旦监听对象发生变化，就会触发回调函数。
+1. **`Object.observe`**：用来监听对象（以及数组）的变化。一旦监听对象发生变化，就会触发回调函数。
 
-（2）**Async 函数**：在 Promise 和 Generator 函数基础上，提出的异步操作解决方案。
+2. **Async 函数**：在 Promise 和 Generator 函数基础上，提出的异步操作解决方案。
 
-（3）**Multi-Threading**：多线程支持。目前，Intel 和 Mozilla 有一个共同的研究项目 RiverTrail，致力于让 JavaScript 多线程运行。预计这个项目的研究成果会被纳入 ECMAScript 标准。
+3. **Multi-Threading**：多线程支持。目前，Intel 和 Mozilla 有一个共同的研究项目 `RiverTrail`，致力于让 JavaScript 多线程运行。预计这个项目的研究成果会被纳入 ECMAScript 标准。
 
-（4）**Traits**：它将是“类”功能（class）的一个替代。通过它，不同的对象可以分享同样的特性。
+4. **Traits**：它将是“类”功能（`class`）的一个替代。通过它，不同的对象可以分享同样的特性。
 
 其他可能包括的功能还有：更精确的数值计算、改善的内存回收、增强的跨站点安全、类型化的更贴近硬件的低级别操作、国际化支持（Internationalization Support）、更多的数据结构等等。
 

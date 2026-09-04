@@ -1,3 +1,4 @@
+
 # 操作符 - 转换
 
 # 操作符转换
@@ -6,7 +7,7 @@
 
 ## from
 
-在 Rxjs4 中存在一堆类似名称的操作符，比如 `fromArray()`、`from()`、`fromPromise()` 等。所有这些 `from()` 操作符现在都只是 `from()`。让我们看一些例子：
+在 Rxjs4 中存在一堆类似名称的操作符，比如`fromArray()`、`from()`、`fromPromise()`等。所有这些`from()`操作符现在都只是`from()`。让我们看一些例子：
 
 **旧 fromArray**
 
@@ -25,7 +26,7 @@ Rx.Observable.from(new Promise(resolve, reject) => {
 
 ## of
 
-`of` 操作符接受 x 个参数，因此你可以用一个参数调用它，也可以用 10 个参数调用，如下所示：
+`of`操作符接受 x 个参数，因此你可以用一个参数调用它，也可以用 10 个参数调用，如下所示：
 
 ```
 Rx.Observable.of(1,2);

@@ -1,14 +1,5 @@
-# 7.6 Web Worker
 
-*   概述
-*   新建和启动子线程
-*   子线程的事件监听
-*   主线程的事件监听
-*   错误处理
-*   关闭子线程
-*   主线程与子线程的数据通信
-*   同页面的 Web Worker
-*   参考链接
+# 7.6 Web Worker
 
 ## 概述
 
@@ -16,16 +7,13 @@ JavaScript 语言采用的是单线程模型，也就是说，所有任务排成
 
 Web Worker 的目的，就是为 JavaScript 创造多线程环境，允许主线程将一些任务分配给子线程。在主线程运行的同时，子线程在后台运行，两者互不干扰。等到子线程完成计算任务，再把结果返回给主线程。因此，每一个子线程就好像一个“工人”（worker），默默地完成自己的工作。
 
-普通的 Wek Worker，只能与创造它们的主进程通信。还有另一类 Shared worker，能被所有同源的进程获取（比如来自不同的浏览器窗口、iframe 窗口和其他 Shared worker）。本节不涉及这一类的 worker 进程。
+普通的 Web Worker，只能与创造它们的主进程通信。还有另一类 Shared worker，能被所有同源的进程获取（比如来自不同的浏览器窗口、iframe 窗口和其他 Shared worker）。本节不涉及这一类的 worker 进程。
 
 Web Worker 有以下几个特点：
 
 *   同域限制。子线程加载的脚本文件，必须与主线程的脚本文件在同一个域。
-
 *   DOM 限制。子线程无法读取网页的 DOM 对象，即 document、window、parent 这些对象，子线程都无法得到。（但是，navigator 对象和 location 对象可以获得。）
-
 *   脚本限制。子线程无法读取网页的全局变量和函数，也不能执行 alert 和 confirm 方法，不过可以执行 setInterval 和 setTimeout，以及使用 XMLHttpRequest 对象发出 AJAX 请求。
-
 *   文件限制。子线程无法读取本地文件，即子线程无法打开本机的文件系统（file://），它所加载的脚本，必须来自网络。
 
 使用之前，检查浏览器是否支持这个 API。支持的浏览器包括 IE10、Firefox (从 3.6 版本开始)、Safari (从 4.0 版本开始)、Chrome 和 Opera 11，但是手机浏览器还不支持。
@@ -131,7 +119,7 @@ self.close();
 
 主线程与子线程之间也可以交换二进制数据，比如 File、Blob、ArrayBuffer 等对象，也可以在线程之间发送。
 
-但是，用拷贝方式发送二进制数据，会造成性能问题。比如，主线程向子线程发送一个 500MB 文件，默认情况下浏览器会生成一个原文件的拷贝。为了解决这个问题，JavaScript 允许主线程把二进制数据直接转移给子线程，但是一旦转移，主线程就无法再使用这些二进制数据了，这是为了防止出现多个线程同时修改数据的麻烦局面。这种转移数据的方法，叫做[Transferable Objects](http://www.w3.org/html/wg/drafts/html/master/infrastructure.html#transferable-objects)。
+但是，用拷贝方式发送二进制数据，会造成性能问题。比如，主线程向子线程发送一个 500MB 文件，默认情况下浏览器会生成一个原文件的拷贝。为了解决这个问题，JavaScript 允许主线程把二进制数据直接转移给子线程，但是一旦转移，主线程就无法再使用这些二进制数据了，这是为了防止出现多个线程同时修改数据的麻烦局面。这种转移数据的方法，叫做 Transferable Objects。
 
 如果要使用该方法，postMessage 方法的最后一个参数必须是一个数组，用来指定前面发送的哪些值可以被转移给子线程。
 
@@ -144,7 +132,7 @@ window.postMessage(arrayBuffer, targetOrigin, [arrayBuffer]);
 
 通常情况下，子线程载入的是一个单独的 JavaScript 文件，但是也可以载入与主线程在同一个网页的代码。假设网页代码如下：
 
-```js
+```html
 <!DOCTYPE html>
     <body>
         <script id="worker" type="app/worker">
@@ -187,7 +175,7 @@ worker.postMessage('');
 
 整个页面的代码如下：
 
-```js
+```html
 <!DOCTYPE html>
     <body>
         <script id="worker" type="app/worker">
@@ -224,8 +212,12 @@ worker.postMessage('');
 
 ## 参考链接
 
-*   Matt West, [Using Web Workers to Speed-Up Your JavaScript Applications](http://blog.teamtreehouse.com/using-web-workers-to-speed-up-your-javascript-applications)
-*   Eric Bidelman, [The Basics of Web Workers](http://www.html5rocks.com/en/tutorials/workers/basics/)
-*   Eric Bidelman, [Transferable Objects: Lightning Fast!](http://updates.html5rocks.com/2011/12/Transferable-Objects-Lightning-Fast)
-*   Jesse Cravens, [Web Worker Patterns](http://tech.pro/tutorial/1487/web-worker-patterns)
-*   Bipin Joshi, [7 Things You Need To Know About Web Workers](http://www.developer.com/lang/jscript/7-things-you-need-to-know-about-web-workers.html)
+*   Matt West, [Using Web Workers to Speed-Up Your JavaScript Applications](http://blog.teamtreehouse.com/using-web-workers-to-speed-up-your-javascript-applications)
+
+*   Eric Bidelman, [The Basics of Web Workers](http://www.html5rocks.com/en/tutorials/workers/basics/)
+
+*   Eric Bidelman, [Transferable Objects: Lightning Fast!](http://updates.html5rocks.com/2011/12/Transferable-Objects-Lightning-Fast)
+
+*   Jesse Cravens, [Web Worker Patterns](http://tech.pro/tutorial/1487/web-worker-patterns)
+
+*   Bipin Joshi, [7 Things You Need To Know About Web Workers](http://www.developer.com/lang/jscript/7-things-you-need-to-know-about-web-workers.html)

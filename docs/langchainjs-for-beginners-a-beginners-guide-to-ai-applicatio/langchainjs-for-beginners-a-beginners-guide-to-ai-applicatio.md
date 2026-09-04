@@ -1,40 +1,35 @@
+
 # LangChainJS 初学者指南：使用 LangChain、JavaScript、OpenAI/ChatGPT 开发 AI 应用
-
-## LangChainJS 入门指南
-
-使用LangChain、JavaScript/NextJS、OpenAI/ChatGPT及其他大语言模型进行AI应用开发的分步指南
-
-作者：Nathan Sebhastian
 
 ## 前言
 
-本书的目标是提供温和的分步指导，帮助你从基础到高级逐步学习LangChain.js。
+本书的目标是提供温和的分步指导，帮助你从基础到高级逐步学习 LangChain.js。
 
-你将了解为何LangChain是构建AI应用的绝佳工具，以及它如何简化将语言模型集成到Web应用中的过程。
+你将了解为何 LangChain 是构建 AI 应用的绝佳工具，以及它如何简化将语言模型集成到 Web 应用中的过程。
 
-我们将了解LangChain的核心功能（如提示模板、链、智能体、文档加载器、输出解析器和模型类）是如何被用来创建一个智能且灵活的生成式AI应用的。
+我们将了解 LangChain 的核心功能（如提示模板、链、智能体、文档加载器、输出解析器和模型类）是如何被用来创建一个智能且灵活的生成式 AI 应用的。
 
-之后，我们将把LangChain集成到Next.js中，让你了解如何创建AI驱动的Web应用。
+之后，我们将把 LangChain 集成到 Next.js 中，让你了解如何创建 AI 驱动的 Web 应用。
 
 ### 如何使用本书
 
-本书分为16个简洁的章节，每章都专注于LangChain编程中的一个特定主题。
+本书分为 16 个简洁的章节，每章都专注于 LangChain 编程中的一个特定主题。
 
-我鼓励你编写书中看到的代码并运行它们，以便你亲身体验LangChain开发的样子。当你跟着书中的示例一起编码时，学习效果最佳。
+我鼓励你编写书中看到的代码并运行它们，以便你亲身体验 LangChain 开发的样子。当你跟着书中的示例一起编码时，学习效果最佳。
 
-充分利用本书的一个小技巧：每完成一章后，至少休息10分钟，以便恢复精力和专注力。
+充分利用本书的一个小技巧：每完成一章后，至少休息 10 分钟，以便恢复精力和专注力。
 
 另外，如果某个概念难以理解，请不要气馁。学习任何新事物在第一次接触时都是困难的，尤其是像编程这样的技术性内容。最重要的是坚持下去。
 
 ### 先决条件
 
-为了充分体验本书的全部价值，你需要具备基本的JavaScript和NextJS知识。
+为了充分体验本书的全部价值，你需要具备基本的 JavaScript 和 NextJS 知识。
 
-如果你需要在学习JavaScript或NextJS方面寻求帮助，可以在 https://codewithnathan.com 获取我的相关书籍。
+如果你需要在学习 JavaScript 或 NextJS 方面寻求帮助，可以在 https://codewithnathan.com 获取我的相关书籍。
 
 ### 源代码
 
-你可以从以下GitHub链接下载源代码：
+你可以从以下 GitHub 链接下载源代码：
 
 https://github.com/nathansebhastian/langchain-js
 
@@ -42,7 +37,7 @@ https://github.com/nathansebhastian/langchain-js
 
 ![](img/e0794cfae6ccfa863233c46659e3d9d8_9_0.png)
 
-*图1. 在GitHub上下载源代码*
+*图 1. 在 GitHub 上下载源代码*
 
 你需要解压压缩包才能访问代码。通常，只需双击压缩包即可解压内容。
 
@@ -52,168 +47,167 @@ https://github.com/nathansebhastian/langchain-js
 
 如果你需要帮助，可以通过 [nathan@codewithnathan.com](mailto:nathan@codewithnathan.com) 联系我。
 
-你也可以在LinkedIn上联系或关注我：[https://linkedin.com/in/nathansebhastian](https://linkedin.com/in/nathansebhastian)
+你也可以在 LinkedIn 上联系或关注我：[https://linkedin.com/in/nathansebhastian](https://linkedin.com/in/nathansebhastian)
 
-## 第一章：生成式AI应用简介
+## 第一章：生成式 AI 应用简介
 
-生成式AI应用是一种计算机应用程序，它能够根据给定的输入（或提示）生成上下文相关的输出。
+生成式 AI 应用是一种计算机应用程序，它能够根据给定的输入（或提示）生成上下文相关的输出。
 
-生成式AI应用在2022年进入公众视野，当时OpenAI发布了ChatGPT，并在短短5天内迅速获得了100万用户：
+生成式 AI 应用在 2022 年进入公众视野，当时 OpenAI 发布了 ChatGPT，并在短短 5 天内迅速获得了 100 万用户：
 
 ![](img/e0794cfae6ccfa863233c46659e3d9d8_11_0.png)
 
-*图2. ChatGPT在5天内达到100万用户*
+*图 2. ChatGPT 在 5 天内达到 100 万用户*
 
-生成式AI应用的另一个例子是chatpdf.com，它允许用户上传PDF文件并执行各种任务，例如从PDF中提取见解。
+生成式 AI 应用的另一个例子是 chatpdf.com，它允许用户上传 PDF 文件并执行各种任务，例如从 PDF 中提取见解。
 
-chatpdf.com提供的答案包含了它们在原始PDF文档中的来源引用，因此无需再翻页查找来源。
+chatpdf.com 提供的答案包含了它们在原始 PDF 文档中的来源引用，因此无需再翻页查找来源。
 
-在幕后，这些生成式AI应用利用大语言模型（LLM）的力量来生成答案。
+在幕后，这些生成式 AI 应用利用大语言模型（LLM）的力量来生成答案。
 
 ### 什么是大语言模型？
 
-大语言模型（简称LLM）是一种机器学习模型，它能够理解并生成人类可以理解的输出。
+大语言模型（简称 LLM）是一种机器学习模型，它能够理解并生成人类可以理解的输出。
 
-LLM通常在互联网上大量的文本数据上进行训练，因此它们能够执行广泛的与语言相关的任务，例如翻译、摘要、问答和创意写作。
+LLM 通常在互联网上大量的文本数据上进行训练，因此它们能够执行广泛的与语言相关的任务，例如翻译、摘要、问答和创意写作。
 
-LLM的例子包括OpenAI的GPT-4、Google的Gemini、Meta的Llama和Mistral的Mistral。
+LLM 的例子包括 OpenAI 的 GPT-4、Google 的 Gemini、Meta 的 Llama 和 Mistral 的 Mistral。
 
-一些LLM是闭源的，比如GPT和Gemini；而另一些则是开源的，如Llama和Mistral。
+一些 LLM 是闭源的，比如 GPT 和 Gemini；而另一些则是开源的，如 Llama 和 Mistral。
 
-### 什么是LangChain？
+### 什么是 LangChain？
 
-LangChain是一个开源框架，旨在简化LLM驱动的应用开发过程。
+LangChain 是一个开源框架，旨在简化 LLM 驱动的应用开发过程。
 
-LangChain使你能够通过简单地调用代表模型的类来集成和调用为生成式AI应用提供动力的LLM。
+LangChain 使你能够通过简单地调用代表模型的类来集成和调用为生成式 AI 应用提供动力的 LLM。
 
-在底层，LangChain会执行与语言模型API交互所需的所有步骤，并管理输入和输出的处理，从而使你只需最少的代码更改就能访问不同的LLM。
+在底层，LangChain 会执行与语言模型 API 交互所需的所有步骤，并管理输入和输出的处理，从而使你只需最少的代码更改就能访问不同的 LLM。
 
-更重要的是，你还可以将外部数据源（如PDF、维基百科文章或搜索引擎结果）与LangChain一起使用，以生成上下文相关的响应。
+更重要的是，你还可以将外部数据源（如 PDF、维基百科文章或搜索引擎结果）与 LangChain 一起使用，以生成上下文相关的响应。
 
+通过使用 LangChain，您可以开发针对特定用例优化的专用生成式 AI 应用，例如总结 YouTube 视频内容、从 PDF 中提取洞察或撰写文章。
 
+LangChain 支持 Python 和 JavaScript。本书重点介绍 JavaScript 版本的 LangChain。
 
-通过使用LangChain，您可以开发针对特定用例优化的专用生成式AI应用，例如总结YouTube视频内容、从PDF中提取洞察或撰写文章。
-
-LangChain支持Python和JavaScript。本书重点介绍JavaScript版本的LangChain。
-
-### 生成式AI应用的架构
+### 生成式 AI 应用的架构
 
 传统应用通常采用如下客户端-服务器架构：
 
 ![](img/e0794cfae6ccfa863233c46659e3d9d8_13_0.png)
 
-图3. 客户端-服务器架构
+*图 3. 客户端-服务器架构*
 
-客户端和服务器通过HTTP请求进行通信。必要时，服务器可能与数据库交互以处理客户端发送的请求。
+客户端和服务器通过 HTTP 请求进行通信。必要时，服务器可能与数据库交互以处理客户端发送的请求。
 
-另一方面，生成式AI应用利用大语言模型（LLM）的力量来理解人类语言提示并生成相关输出：
+另一方面，生成式 AI 应用利用大语言模型（LLM）的力量来理解人类语言提示并生成相关输出：
 
-### 生成式AI架构示例
+### 生成式 AI 架构示例
 
 ![](img/e0794cfae6ccfa863233c46659e3d9d8_14_0.png)
 
-图4. AI驱动的应用架构
+*图 4. AI 驱动的应用架构*
 
-虽然其架构与传统应用相似，但增加了一个用于连接LLM的额外层。
+虽然其架构与传统应用相似，但增加了一个用于连接 LLM 的额外层。
 
-这个额外的层正是LangChain发挥作用的地方，因为它执行和管理与LLM相关的任务，例如将我们的输入处理成LLM能理解的提示。它还将LLM的响应处理成传统应用可接受的格式。
+这个额外的层正是 LangChain 发挥作用的地方，因为它执行和管理与 LLM 相关的任务，例如将我们的输入处理成 LLM 能理解的提示。它还将 LLM 的响应处理成传统应用可接受的格式。
 
-随着您在后续章节中实践构建生成式AI应用，您会更深入地理解这一点。
+随着您在后续章节中实践构建生成式 AI 应用，您会更深入地理解这一点。
 
-目前，您可以将LangChain视为应用服务器与LLM之间的管理层。
+目前，您可以将 LangChain 视为应用服务器与 LLM 之间的管理层。
 
 ### 开发环境设置
 
-要开始使用LangChain.js开发AI应用，您的计算机上需要具备三样东西：
+要开始使用 LangChain.js 开发 AI 应用，您的计算机上需要具备三样东西：
 
 1.  网页浏览器
 2.  代码编辑器
-3.  Node.js程序
+3.  Node.js 程序
 
 我们将在下一节中安装它们。
 
-### 安装Chrome浏览器
+### 安装 Chrome 浏览器
 
 任何网页浏览器都可用于浏览互联网，但出于开发目的，您需要安装一个具备足够开发工具的浏览器。
 
-Google开发的Chrome浏览器是Web开发的绝佳选择。如果您尚未安装此浏览器，可以在此处下载：
+Google 开发的 Chrome 浏览器是 Web 开发的绝佳选择。如果您尚未安装此浏览器，可以在此处下载：
 
 https://www.google.com/chrome/
 
 该浏览器适用于所有主流操作系统。下载完成后，按照安装程序提供的步骤操作，即可将浏览器安装到您的计算机上。
 
-接下来，我们需要安装一个代码编辑器。互联网上有多款免费的代码编辑器可用，例如Sublime Text、Visual Studio Code和Notepad++。
+接下来，我们需要安装一个代码编辑器。互联网上有多款免费的代码编辑器可用，例如 Sublime Text、Visual Studio Code 和 Notepad++。
 
-在这些编辑器中，我最青睐Visual Studio Code，因为它快速且易于使用。
+在这些编辑器中，我最青睐 Visual Studio Code，因为它快速且易于使用。
 
-### 安装Visual Studio Code
+### 安装 Visual Studio Code
 
-Visual Studio Code（简称VSCode）是一款专为编写代码而创建的代码编辑器应用。除了免费之外，VSCode还运行速度快，并且可在所有主流操作系统上使用。
+Visual Studio Code（简称 VSCode）是一款专为编写代码而创建的代码编辑器应用。除了免费之外，VSCode 还运行速度快，并且可在所有主流操作系统上使用。
 
-您可以在此处下载Visual Studio Code：
+您可以在此处下载 Visual Studio Code：
+
 https://code.visualstudio.com/
 
 当您打开上述链接时，应该会看到一个按钮，显示与您操作系统兼容的版本，如下所示：
 
 ![](img/e0794cfae6ccfa863233c46659e3d9d8_16_0.png)
 
-点击按钮下载VSCode，并将其安装到您的计算机上。
+点击按钮下载 VSCode，并将其安装到您的计算机上。
 
-现在代码编辑器已安装完毕，下一步是安装Node.js。
+现在代码编辑器已安装完毕，下一步是安装 Node.js。
 
-### 安装Node.js
+### 安装 Node.js
 
-Node.js是一个JavaScript运行时应用，使您能够在浏览器之外运行JavaScript。我们需要这个程序来安装TypeScript编译器。
+Node.js 是一个 JavaScript 运行时应用，使您能够在浏览器之外运行 JavaScript。我们需要这个程序来安装 TypeScript 编译器。
 
-您可以从 https://nodejs.org 下载并安装Node.js。请选择推荐的LTS版本，因为它提供长期支持。安装过程非常直接。
+您可以从 https://nodejs.org 下载并安装 Node.js。请选择推荐的 LTS 版本，因为它提供长期支持。安装过程非常直接。
 
-要检查Node是否已正确安装，请在命令行（Windows上的命令提示符或Mac上的终端）中输入以下命令：
+要检查 Node 是否已正确安装，请在命令行（Windows 上的命令提示符或 Mac 上的终端）中输入以下命令：
 
 ```
 node -v
 ```
 
-命令行应返回您计算机上安装的Node.js版本号。
+命令行应返回您计算机上安装的 Node.js 版本号。
 
-Node.js还包含一个名为npm（Node包管理器）的程序，您可以使用它来安装和管理Node包：
+Node.js 还包含一个名为 npm（Node 包管理器）的程序，您可以使用它来安装和管理 Node 包：
 
 ```
 npm -v
 ```
 
-Node包是您可以免费在项目中使用的JavaScript库和框架。我们稍后将使用npm来安装一些包。
+Node 包是您可以免费在项目中使用的 JavaScript 库和框架。我们稍后将使用 npm 来安装一些包。
 
-现在您已拥有开始开发LangChain应用所需的所有软件。让我们在下一章中开始实践。
+现在您已拥有开始开发 LangChain 应用所需的所有软件。让我们在下一章中开始实践。
 
 ## 总结
 
-在本章中，您了解了生成式AI应用的架构，以及LangChain如何在服务器与LLM API端点之间扮演集成层的角色。
+在本章中，您了解了生成式 AI 应用的架构，以及 LangChain 如何在服务器与 LLM API 端点之间扮演集成层的角色。
 
-您还在计算机上安装了编写和运行LangChain应用所需的工具。
+您还在计算机上安装了编写和运行 LangChain 应用所需的工具。
 
 如果您遇到任何问题，可以发送电子邮件至 [nathan@codewithnathan.com](mailto:nathan@codewithnathan.com)，我将尽力为您提供帮助。
 
-## 第2章：您的第一个LangCHAIN应用
+## 第二章：您的第一个 LangChain 应用
 
-现在是时候创建我们的第一个LangChain应用了。
+现在是时候创建我们的第一个 LangChain 应用了。
 
 我们将创建一个简单的问答应用，可以向大型语言模型提出任何类型的问题。
 
-首先，在计算机上创建一个用于存储与此项目相关的所有文件的文件夹。您可以将文件夹命名为'beginning_langchain_js'。
+首先，在计算机上创建一个用于存储与此项目相关的所有文件的文件夹。您可以将文件夹命名为 `beginning_langchain_js`。
 
-接下来，打开Visual Studio Code，从菜单栏选择 `File > Open Folder...`（文件 > 打开文件夹...）。选择您刚刚创建的文件夹。
+接下来，打开 Visual Studio Code，从菜单栏选择 `File > Open Folder...`。选择您刚刚创建的文件夹。
 
-VSCode将加载该文件夹并在资源管理器侧边栏中显示其内容。由于我们尚未创建任何文件，它应该是空的。
+VSCode 将加载该文件夹并在资源管理器侧边栏中显示其内容。由于我们尚未创建任何文件，它应该是空的。
 
-要创建文件，请在VSCode窗口内任意位置右键单击，然后从菜单中选择 `New Text File`（新建文本文件）或 `New File...`（新建文件...）。
+要创建文件，请在 VSCode 窗口内任意位置右键单击，然后从菜单中选择 `New Text File` 或 `New File...`。
 
-文件创建后，按 `Control + S` 或 `Command + S` 保存文件。将该文件命名为app.js。
+文件创建后，按 `Control + S` 或 `Command + S` 保存文件。将该文件命名为 `app.js`。
 
-### 安装LangChain包
+### 安装 LangChain 包
 
-现在您需要安装创建LangChain应用所需的包。
+现在您需要安装创建 LangChain 应用所需的包。
 
-在VSCode中，右键单击您刚创建的文件夹，然后选择 *Open in Integrated Terminal*（在集成终端中打开），以在VSCode内显示命令行。
+在 VSCode 中，右键单击您刚创建的文件夹，然后选择 `Open in Integrated Terminal`，以在 VSCode 内显示命令行。
 
 在终端中，运行以下命令：
 
@@ -223,47 +217,47 @@ npm install langchain @langchain/google-genai dotenv
 
 上述命令将安装三个包：
 
-- langchain 包含LangChain的所有核心模块
-- @langchain/google-genai 是Google生成式AI集成模块
-- dotenv 用于从环境变量加载LLM API密钥
+- `langchain` 包含 LangChain 的所有核心模块
+- `@langchain/google-genai` 是 Google 生成式 AI 集成模块
+- `dotenv` 用于从环境变量加载 LLM API 密钥
 
-包安装完成后，npm将生成一个package.json文件，其中包含这些已安装包的版本信息。
+包安装完成后，npm 将生成一个 `package.json` 文件，其中包含这些已安装包的版本信息。
 
 ### 创建问答应用
 
 现在是时候为问答应用编写代码了。
 
-在app.js文件中，导入Google生成式AI类并加载环境变量：
+在 `app.js` 文件中，导入 Google 生成式 AI 类并加载环境变量：
 
-```
+```javascript
 import { ChatGoogleGenerativeAI } from '@langchain/google-genai';
 
 // load environment variables
 import 'dotenv/config';
 ```
 
-要在LangChain中与LLM交互，您需要创建一个表示该LLM API的对象。
+要在 LangChain 中与 LLM 交互，您需要创建一个表示该 LLM API 的对象。
 
-因为我们要与Google的LLM交互，所以需要从ChatGoogleGenerativeAI类创建一个对象，如下所示：
+因为我们要与 Google 的 LLM 交互，所以需要从 `ChatGoogleGenerativeAI` 类创建一个对象，如下所示：
 
-```
+```javascript
 const llm = new ChatGoogleGenerativeAI({
   model: 'gemini-1.5-pro-latest',
   apiKey: process.env.GOOGLE_GEMINI_KEY,
 });
 ```
 
-GOOGLE_GEMINI_KEY 包含您将在下一节中获取的API密钥。
+`GOOGLE_GEMINI_KEY` 包含您将在下一节中获取的 API 密钥。
 
-目前，您只需理解ChatGoogleGenerativeAI对象代表了您想要使用的Google LLM。
+目前，您只需理解 `ChatGoogleGenerativeAI` 对象代表了您想要使用的 Google LLM。
 
-在实例化新的llm对象时，您需要传递一个指定该实例选项的对象。
+在实例化新的 `llm` 对象时，您需要传递一个指定该实例选项的对象。
 
-model选项是必需的，以便Google知道您想使用哪个模型，而apiKey选项用于验证您是否有权使用该模型。
+`model` 选项是必需的，以便 Google 知道您想使用哪个模型，而 `apiKey` 选项用于验证您是否有权使用该模型。
 
 接下来，编写一个简单的问答应用的代码，如下所示：
 
-```
+```javascript
 console.log('Q & A With AI');
 console.log('================');
 
@@ -276,13 +270,13 @@ console.log(`Answer: ${response.content}`);
 
 在上面的代码中，我们只是打印一些文本，显示我们要向模型提出的问题。
 
-llm.invoke() 方法将把输入的问题发送给LLM并返回响应对象。
+`llm.invoke()` 方法将把输入的问题发送给 LLM 并返回响应对象。
 
-答案存储在content属性下，因此我们打印response.content的值。
+答案存储在 `content` 属性下，因此我们打印 `response.content` 的值。
 
-由于我们使用了await语法，需要在package.json文件中添加"type": "module"选项，如下所示：
+由于我们使用了 `await` 语法，需要在 `package.json` 文件中添加 `"type": "module"` 选项，如下所示：
 
-```
+```json
 {
   "type": "module",
   "dependencies": {
@@ -291,11 +285,9 @@ llm.invoke() 方法将把输入的问题发送给LLM并返回响应对象。
 }
 ```
 
-当我们使用import语法而不是require()来导入包时，也需要这个type选项。
+当我们使用 `import` 语法而不是 `require()` 来导入包时，也需要这个 `type` 选项。
 
-现在应用已准备就绪，但我们仍然需要获取Google Gemini API密钥才能访问LLM。
-
-
+现在应用已准备就绪，但我们仍然需要获取 Google Gemini API 密钥才能访问 LLM。
 
 ### 获取 Google Gemini API 密钥
 
@@ -313,7 +305,7 @@ llm.invoke() 方法将把输入的问题发送给LLM并返回响应对象。
 
 ![](img/e0794cfae6ccfa863233c46659e3d9d8_24_0.png)
 
-图 7. Google AI Studio 可用区域页面
+*图 7. Google AI Studio 可用区域页面*
 
 此页面通常在您位于 Google AI Studio 不提供服务的地区时出现。
 
@@ -323,7 +315,7 @@ llm.invoke() 方法将把输入的问题发送给LLM并返回响应对象。
 
 ![](img/e0794cfae6ccfa863233c46659e3d9d8_25_0.png)
 
-图 8. Google AI Studio 服务条款
+*图 8. Google AI Studio 服务条款*
 
 只需勾选“我同意”选项，然后点击“继续”。
 
@@ -331,7 +323,7 @@ llm.invoke() 方法将把输入的问题发送给LLM并返回响应对象。
 
 ![](img/e0794cfae6ccfa863233c46659e3d9d8_26_0.png)
 
-图 9. Gemini 创建 API 密钥
+*图 9. Gemini 创建 API 密钥*
 
 如果被询问在何处创建 API 密钥，请选择在新项目中创建：
 
@@ -347,19 +339,19 @@ Google 将会创建一个 Cloud 项目并为您生成密钥。
 
 *图 11. Gemini API 密钥已生成*
 
-复制 API 密钥字符串，然后在您的应用程序文件夹中创建一个 .env 文件，内容如下：
+复制 API 密钥字符串，然后在您的应用程序文件夹中创建一个 `.env` 文件，内容如下：
 
 ```
 GOOGLE_GEMINI_KEY='Your Key Here'
 ```
 
-将上面的 Your Key Here 字符串替换为您的实际 API 密钥。
+将上面的 `Your Key Here` 字符串替换为您的实际 API 密钥。
 
 ### 运行应用程序
 
 获得 API 密钥后，您就可以运行 LangChain 应用程序了。
 
-在终端中，使用 Node.js 运行 app.js 文件，如下所示：
+在终端中，使用 Node.js 运行 `app.js` 文件，如下所示：
 
 ```
 node app.js
@@ -380,14 +372,14 @@ Answer: Thai baht
 
 您可以尝试将模型更改为“gemini-1.5-flash-latest”，如下所示：
 
-```
+```javascript
 const llm = new ChatGoogleGenerativeAI({
   model: 'gemini-1.5-flash-latest',
   apiKey: process.env.GOOGLE_GEMINI_KEY,
 });
 ```
 
-现在再次运行 app.js 文件，这次的答案会有所不同：
+现在再次运行 `app.js` 文件，这次的答案会有所不同：
 
 ```
 Q & A With AI
@@ -398,9 +390,9 @@ Answer: The currency of Thailand is the **Thai baht**, which is abbreviated as *
 
 这里，“gemini-1.5-flash”首先重复了问题，然后提供了更多信息，例如货币缩写和符号。
 
-THB 周围的星号 ** 符号旨在使文本显示为粗体，但在终端中它被原样渲染。
+THB 周围的星号 `**` 符号旨在使文本显示为粗体，但在终端中它被原样渲染。
 
-现在，尝试将 question 变量替换为您想向 LLM 提出的任何问题。
+现在，尝试将 `question` 变量替换为您想向 LLM 提出的任何问题。
 
 ### 资源耗尽错误
 
@@ -414,7 +406,7 @@ ResourceExhausted: 429 Resource has been exhausted (e.g. check quota)..
 
 ## 总结
 
-本章的代码位于 *02_Simple_Q&A_Gemini* 文件夹中。
+本章的代码位于 `02_Simple_Q&A_Gemini` 文件夹中。
 
 在本章中，您已经创建并运行了您的第一个 LangChain 应用程序。恭喜！
 
@@ -422,7 +414,7 @@ ResourceExhausted: 429 Resource has been exhausted (e.g. check quota)..
 
 在下一章中，我们将学习如何在 LangChain 中使用 OpenAI 的 GPT 模型。
 
-## 第 3 章：在 LANGCHAIN 中使用 OPENAI LLM
+## 第三章：在 LangChain 中使用 OpenAI LLM
 
 在上一章中，您已经了解了如何使用 LangChain 与 Google 的 Gemini 模型进行通信。
 
@@ -432,7 +424,7 @@ ResourceExhausted: 429 Resource has been exhausted (e.g. check quota)..
 
 因此，如果您想使用 OpenAI API，您需要购买最少的信用额度，即 5 美元。
 
-### OPENAI API 入门
+### OpenAI API 入门
 
 OpenAI 是一家人工智能研究公司，旨在开发并推广有益于人类的强大 AI 软件。著名的 ChatGPT 就是 OpenAI 开发的产品之一。
 
@@ -452,7 +444,7 @@ OpenAI 仅使用您的电话号码进行验证。您将通过短信收到验证�
 
 ![](img/e0794cfae6ccfa863233c46659e3d9d8_33_0.png)
 
-图 13. OpenAI 添加信用额度
+*图 13. OpenAI 添加信用额度*
 
 OpenAI 接受信用卡支付，因此您需要有一张信用卡。您可以购买的最低金额是 5 美元，这足以使用 OpenAI 运行本书中的所有示例。
 
@@ -490,7 +482,7 @@ LangChain-Test
 
 *图 15. OpenAI 复制 API 密钥*
 
-您需要将此 API 密钥复制并粘贴到项目的 .env 文件中：
+您需要将此 API 密钥复制并粘贴到项目的 `.env` 文件中：
 
 ```
 OPENAI_KEY='Your Key Here'
@@ -498,19 +490,19 @@ OPENAI_KEY='Your Key Here'
 
 现在您的 OpenAI 密钥已准备好，是时候在 LangChain 应用程序中使用它了。
 
-### 将 OPENAI 与 LANGCHAIN 集成
+### 将 OpenAI 与 LangChain 集成
 
-要在 LangChain 中使用 OpenAI，您需要使用 npm 安装 @langchain/openai 包：
+要在 LangChain 中使用 OpenAI，您需要使用 npm 安装 `@langchain/openai` 包：
 
 ```
 npm install @langchain/openai
 ```
 
-安装完包后，创建一个名为 app_gpt.js 的新文件，并从包中导入 ChatOpenAI 类。
+安装完包后，创建一个名为 `app_gpt.js` 的新文件，并从包中导入 `ChatOpenAI` 类。
 
-实例化 llm 对象时，指定 model 和 openAIApiKey 选项，如下所示：
+实例化 `llm` 对象时，指定 `model` 和 `openAIApiKey` 选项，如下所示：
 
-```
+```javascript
 import { ChatOpenAI } from '@langchain/openai';
 
 import 'dotenv/config';
@@ -521,11 +513,11 @@ const llm = new ChatOpenAI({
 });
 ```
 
-您可以将 model 参数更改为要使用的模型。截至撰写本文时，GPT-4o 是 OpenAI 发布的最新 LLM。
+您可以将 `model` 参数更改为要使用的模型。截至撰写本文时，GPT-4o 是 OpenAI 发布的最新 LLM。
 
 让我们向 GPT 询问与 Gemini 相同的问题：
 
-```
+```javascript
 console.log('Q & A With AI');
 console.log('=============');
 
@@ -551,43 +543,41 @@ Question: What's the currency of Thailand?
 Answer: The currency of Thailand is the Thai Baht. Its ISO code is THB.
 ```
 
+这意味着 LangChain 应用成功与 OpenAI 的 GPT 聊天模型进行了通信。太棒了！
 
-
-这意味着LangChain应用成功与OpenAI的GPT聊天模型进行了通信。太棒了！
-
-你可以通过修改问题变量的值来尝试提出另一个问题。
+你可以通过修改 `question` 变量的值来尝试提出另一个问题。
 
 ### ChatGPT 与 Gemini：该如何选择？
 
-ChatGPT和Gemini都非常擅长完成我们希望它们在本书中执行的任务，所以这完全取决于你。
+ChatGPT 和 Gemini 都非常擅长完成我们希望它们在本书中执行的任务，所以这完全取决于你。
 
-过去，OpenAI曾提供5美元的免费额度。但情况似乎已不再如此，因为OpenAI论坛上很多人表示注册后并未获得额度。
+过去，OpenAI 曾提供 5 美元的免费额度。但情况似乎已不再如此，因为 OpenAI 论坛上很多人表示注册后并未获得额度。
 
-另一方面，Google为Gemma模型提供了免费层级服务，作为交换，我们允许使用我们的数据来训练模型，因此用它来学习和探索LangChain是可以的。
+另一方面，Google 为 Gemma 模型提供了免费层级服务，作为交换，我们允许使用我们的数据来训练模型，因此用它来学习和探索 LangChain 是可以的。
 
-不过，Google保留随时停止免费层级服务的权利，所以让我再为你介绍一种在LangChain中使用大语言模型（LLM）的方法。
+不过，Google 保留随时停止免费层级服务的权利，所以让我再为你介绍一种在 LangChain 中使用大语言模型（LLM）的方法。
 
 这次，我们将使用开源模型。
 
 ### 本章小结
 
-本章的代码位于书籍源代码的 03_Using_OpenAI 文件夹中。
+本章的代码位于书籍源代码的 `03_Using_OpenAI` 文件夹中。
 
-在本章中，你学习了如何创建OpenAI API密钥并在LangChain应用中使用它。
+在本章中，你学习了如何创建 OpenAI API 密钥并在 LangChain 应用中使用它。
 
-这里，我们开始看到使用LangChain的好处之一，即易于与任何类型的大语言模型（LLM）集成。
+这里，我们开始看到使用 LangChain 的好处之一，即易于与任何类型的大语言模型（LLM）集成。
 
-LangChain将大语言模型（LLM）表示为你可以安装并导入到项目中的包。
+LangChain 将大语言模型（LLM）表示为你可以安装并导入到项目中的包。
 
-你只需要创建一个模型类的实例并运行`invoke()`方法即可访问大语言模型（LLM）。
+你只需要创建一个模型类的实例并运行 `invoke()` 方法即可访问大语言模型（LLM）。
 
-每当你需要使用另一个大语言模型（LLM）时，你只需更改使用的类并传递正确的模型和API密钥。
+每当你需要使用另一个大语言模型（LLM）时，你只需更改使用的类并传递正确的模型和 API 密钥。
 
-## 第四章：在LangChain中使用开源大语言模型（LLMs）
+## 第四章：在 LangChain 中使用开源大语言模型（LLMs）
 
-LangChain库使你能够与各种大语言模型（LLM）通信，从专有的大语言模型（LLM）（如Google的Gemini和OpenAI的GPT）到开源大语言模型（LLM）（如Meta的Llama和Mistral）。
+LangChain 库使你能够与各种大语言模型（LLM）通信，从专有的大语言模型（LLM）（如 Google 的 Gemini 和 OpenAI 的 GPT）到开源大语言模型（LLM）（如 Meta 的 Llama 和 Mistral）。
 
-本章将向你展示如何在LangChain中使用开源模型。让我们开始吧。
+本章将向你展示如何在 LangChain 中使用开源模型。让我们开始吧。
 
 ### Ollama 简介
 
@@ -638,9 +628,9 @@ Mark Zuckerberg is the co-founder and CEO of Meta (formerly Facebook). He co-fou
 
 *图 19. 在 Ollama 中向 Gemma 提问的示例*
 
-要退出正在运行的模型，请输入 /bye 并按回车键。
+要退出正在运行的模型，请输入 `/bye` 并按回车键。
 
-只要 Ollama 在你的计算机上运行，Ollama API 端点就可以通过 localhost:11434 访问，如下所示：
+只要 Ollama 在你的计算机上运行，Ollama API 端点就可以通过 `localhost:11434` 访问，如下所示：
 
 ![](img/e0794cfae6ccfa863233c46659e3d9d8_44_0.png)
 
@@ -650,7 +640,7 @@ LangChain 将使用此 API 端点与 Ollama 模型进行通信，这正是我们
 
 ### 在 LangChain 中使用 Ollama
 
-要使用 Ollama 下载的模型，你需要导入由 LangChain 社区开发的 ChatOllama 类。
+要使用 Ollama 下载的模型，你需要导入由 LangChain 社区开发的 `ChatOllama` 类。
 
 在终端中，使用 npm 安装社区包，如下所示：
 
@@ -658,9 +648,9 @@ LangChain 将使用此 API 端点与 Ollama 模型进行通信，这正是我们
 npm install @langchain/community
 ```
 
-接下来，创建一个名为 `app_ollama.py` 的新文件，并如下所示导入 Ollama 聊天模型：
+接下来，创建一个名为 `app_ollama.js` 的新文件，并如下所示导入 Ollama 聊天模型：
 
-```
+```javascript
 import { ChatOllama } from '@langchain/community/chat_models/ollama';
 
 const llm = new ChatOllama({
@@ -677,7 +667,7 @@ const response = await llm.invoke(question);
 console.log(`Answer: ${response.content}`);
 ```
 
-因为 Ollama 是开源且本地运行的，你不需要导入 dotenv 模块或使用 API 密钥。
+因为 Ollama 是开源且本地运行的，你不需要导入 `dotenv` 模块或使用 API 密钥。
 
 现在你可以使用 Node.js 运行该文件来与大语言模型（LLM）通信。你应该会得到类似于这样的响应：
 
@@ -696,11 +686,11 @@ Answer: The currency of Thailand is the Thai baht (THB). It is subdivided into 1
 ollama pull mistral
 ```
 
-pull 命令会下载模型但不在命令行中运行它。
+`pull` 命令会下载模型但不在命令行中运行它。
 
-之后，你可以在创建 ChatOllama 对象时切换模型参数：
+之后，你可以在创建 `ChatOllama` 对象时切换 `model` 参数：
 
-```
+```javascript
 // 切换模型
 const llm = new ChatOllama({
   model: 'mistral',
@@ -733,7 +723,7 @@ const llm = new ChatOllama({
 
 ### 本章小结
 
-本章的代码位于书籍源代码的 *04_Using_Ollama* 文件夹中。
+本章的代码位于书籍源代码的 `04_Using_Ollama` 文件夹中。
 
 在本章中，你学习了如何使用 Ollama 和 LangChain 使用开源大语言模型（LLM）。
 
@@ -745,23 +735,23 @@ const llm = new ChatOllama({
 
 ## 第五章：通过提示词启用用户输入
 
-到目前为止，你都是通过在 question 常量中写下问题来向大语言模型（LLM）提问的。
+到目前为止，你都是通过在 `question` 常量中写下问题来向大语言模型（LLM）提问的。
 
 与其必须明确输入问题，不如让我们启用用户输入，以便你可以在终端中输入问题。
 
-这可以通过从 npm 安装 prompts 包来实现：
+这可以通过从 npm 安装 `prompts` 包来实现：
 
 ```
 npm install prompts
 ```
 
-prompts 包是一个轻量级的包，用于为终端添加交互性。
+`prompts` 包是一个轻量级的包，用于为终端添加交互性。
 
 这意味着你可以在运行问答应用时请求用户输入。
 
-回到应用中，导入 prompts 包并这样提问：
+回到应用中，导入 `prompts` 包并这样提问：
 
-```
+```javascript
 import prompts from 'prompts';
 
 // ...
@@ -795,7 +785,7 @@ console.log(response.content);
 
 通过这种方式，你可以询问任何类型的问题，而无需每次替换 `question` 变量。
 
-你也可以允许用户与 LLM 聊天，直到用户在终端输入 '/bye'。如以下所示，将用户输入提示包装在 `while` 循环中：
+你也可以允许用户与 LLM 聊天，直到用户在终端输入 `/bye`。如以下所示，将用户输入提示包装在 `while` 循环中：
 
 ```javascript
 console.log('Q & A With AI');
@@ -820,7 +810,7 @@ while (!exit) {
 }
 ```
 
-这样，JavaScript 将会持续请求输入，直到用户输入 '/bye'：
+这样，JavaScript 将会持续请求输入，直到用户输入 `/bye`：
 
 ![](img/e0794cfae6ccfa863233c46659e3d9d8_50_0.png)
 
@@ -828,7 +818,7 @@ while (!exit) {
 
 ## 总结
 
-本章的代码位于书籍源代码的 *05_Enabling_User_Input* 文件夹中。
+本章的代码位于书籍源代码的 `05_Enabling_User_Input` 文件夹中。
 
 在本章中，你添加了 `prompts` 包来捕获用户输入，并使应用程序更具交互性。
 
@@ -836,7 +826,7 @@ while (!exit) {
 
 在下一章，我们将学习提示模板。
 
-## 第 6 章：LANGCHAIN 提示模板
+## 第六章：LangChain 提示模板
 
 LangChain 提示模板是一个 JavaScript 类，用于创建发送给大型语言模型的特定提示（或指令）。
 
@@ -894,8 +884,8 @@ const prompt = new PromptTemplate({});
 
 调用 `PromptTemplate()` 构造函数时，你需要传递两个参数：
 
-1.  inputVariables - 模板中使用的变量名称数组
-2.  template - 提示模板本身的字符串
+1.  `inputVariables` - 模板中使用的变量名称数组
+2.  `template` - 提示模板本身的字符串
 
 这是一个完整的 `PromptTemplate()` 调用示例：
 
@@ -928,7 +918,7 @@ console.log(response.content);
 
 ![](img/e0794cfae6ccfa863233c46659e3d9d8_55_0.png)
 
-图 22. LLM 响应
+*图 22. LLM 响应*
 
 `PromptTemplate` 类提供了一个结构，你可以用它来构建特定的提示。
 
@@ -1002,7 +992,7 @@ console.log(response.content);
 
 ![](img/e0794cfae6ccfa863233c46659e3d9d8_57_0.png)
 
-图 23. 多输入结果
+*图 23. 多输入结果*
 
 将提示模板与 `prompts` 结合，你可以创建一个更复杂的货币信息应用程序，该程序可以生成精确 N 段长度且符合你首选语言的答案。
 
@@ -1014,10 +1004,7 @@ console.log(response.content);
 
 ![](img/e0794cfae6ccfa863233c46659e3d9d8_57_1.png)
 
-图 24. LLM 回答各种问题
-```
-
-
+*图 24. LLM 回答各种问题*
 
 虽然答案是合适的，但你可能一开始就不想提供关于虚构或不存在国家的信息。
 
@@ -1031,9 +1018,7 @@ const prompt = new PromptTemplate({
     You give information about a specific currency used in a specific country.
     Avoid giving information about fictional places.
     If the country is fictional or non-existent, answer: I don't know.
-
     Answer the question: What is the currency of {country}?
-
     Answer in {paragraph} short paragraph in {language}
   `,
 });
@@ -1045,7 +1030,7 @@ const prompt = new PromptTemplate({
 
 ![](img/e0794cfae6ccfa863233c46659e3d9d8_58_0.png)
 
-图25。大语言模型拒绝回答
+*图 25. 大语言模型拒绝回答*
 
 如你所见，当被问及虚构国家的货币时，大语言模型拒绝了回答。
 
@@ -1053,7 +1038,7 @@ const prompt = new PromptTemplate({
 
 ## 总结
 
-本章的代码在书籍源代码的*06_Prompt_Template*文件夹中。
+本章的代码在书籍源代码的 `06_Prompt_Template` 文件夹中。
 
 使用提示模板使你能够为大语言模型设计复杂的指令，同时仅需用户提供最少的输入。
 
@@ -1061,9 +1046,9 @@ const prompt = new PromptTemplate({
 
 你甚至可以指示大语言模型避免回答不需要的提示，如最后一节所示。
 
-## 第7章：LangChain表达式语言（LCEL）
+## 第七章：LangChain 表达式语言（LCEL）
 
-在上一章中，我们在`llm.invoke()`方法内部调用了`prompt.format()`方法，如下所示：
+在上一章中，我们在 `llm.invoke()` 方法内部调用了 `prompt.format()` 方法，如下所示：
 
 ```javascript
 const response = await llm.invoke(
@@ -1073,38 +1058,39 @@ const response = await llm.invoke(
 console.log(response.content);
 ```
 
-虽然这种技术有效，但LangChain实际上提供了一种声明式的方法来顺序执行提示和大语言模型对象。
+虽然这种技术有效，但 LangChain 实际上提供了一种声明式的方法来顺序执行提示和大语言模型对象。
 
-这种声明式方法被称为LangChain表达式语言（简称LCEL）。
+这种声明式方法被称为 LangChain 表达式语言（简称 LCEL）。
 
-使用LCEL，你可以将提示和大语言模型对象包装在一个链中，如下所示：
+使用 LCEL，你可以将提示和大语言模型对象包装在一个链中，如下所示：
 
 ```javascript
 const chain = prompt.pipe(llm);
 ```
 
-LCEL的标志是`pipe()`方法，它可用于将LangChain组件包装在一起。
+LCEL 的标志是 `pipe()` 方法，它可用于将 LangChain 组件包装在一起。
 
-LangChain中的组件包括提示、大语言模型、链本身和解析器。我们将在下一节中更多地了解解析器。
+LangChain 中的组件包括提示、大语言模型、链本身和解析器。我们将在下一节中更多地了解解析器。
 
-你可以从`chain`对象调用`invoke()`方法，并将提示所需的输入作为对象传递如下：
+你可以从 `chain` 对象调用 `invoke()` 方法，并将提示所需的输入作为对象传递如下：
 
 ```javascript
 const response = await chain.invoke({ country, paragraph, language });
+
 console.log(response.content);
 ```
 
-`chain`对象将格式化提示，然后自动将其传递给`llm`对象。
+`chain` 对象将格式化提示，然后自动将其传递给 `llm` 对象。
 
-`response`对象与调用`llm.invoke()`方法时相同：它是一个消息对象，答案存储在`content`属性下。
+`response` 对象与调用 `llm.invoke()` 方法时相同：它是一个消息对象，答案存储在 `content` 属性下。
 
 ### 顺序链
 
-使用LCEL，你可以创建多个链，并在大语言模型响应前一个提示后运行下一个提示。
+使用 LCEL，你可以创建多个链，并在大语言模型响应前一个提示后运行下一个提示。
 
 这种在前一个提示被回答后运行下一个提示的方法被称为顺序链。
 
-根据输入和输出结果，顺序链分为2类：
+根据输入和输出结果，顺序链分为 2 类：
 
 - 简单顺序链
 - 常规顺序链
@@ -1117,7 +1103,7 @@ console.log(response.content);
 
 ![](img/e0794cfae6ccfa863233c46659e3d9d8_62_0.png)
 
-图26。简单顺序链示意图
+*图 26. 简单顺序链示意图*
 
 例如，假设你想创建一个能够撰写短文的应用程序。
 
@@ -1130,16 +1116,14 @@ const titlePrompt = new PromptTemplate({
   inputVariables: ['topic'],
   template: `
     You are an expert journalist.
-
     You need to come up with an interesting title for the following topic:
     {topic}
-
     Answer exactly with one title
   `
 });
 ```
 
-上面的`titlePrompt`接收一个输入变量：它将生成的标题主题。
+上面的 `titlePrompt` 接收一个输入变量：它将生成的标题主题。
 
 接下来，你需要为文章创建一个提示，如下所示：
 
@@ -1148,27 +1132,23 @@ const essayPrompt = new PromptTemplate({
   inputVariables: ['title'],
   template: `
     You are an expert nonfiction writer.
-
     You need to write a short essay of 350 words for the following title:
-
     {title}
-
     Make sure that the essay is engaging and makes the reader feel excited.
   `
 });
 ```
 
-这个`essayPrompt`也接受一个输入：我们之前创建的`titlePrompt`生成的标题。
+这个 `essayPrompt` 也接受一个输入：我们之前创建的 `titlePrompt` 生成的标题。
 
 现在你需要创建两个链，每个提示一个：
 
 ```javascript
 const firstChain = titlePrompt.pipe(llm).pipe(new StringOutputParser());
-
 const secondChain = essayPrompt.pipe(llm);
 ```
 
-`firstChain`使用`StringOutputParser`类将大语言模型响应解析为字符串，因此你需要从LangChain导入解析器：
+`firstChain` 使用 `StringOutputParser` 类将大语言模型响应解析为字符串，因此你需要从 LangChain 导入解析器：
 
 ```javascript
 import { StringOutputParser } from '@langchain/core/output_parsers';
@@ -1176,7 +1156,7 @@ import { StringOutputParser } from '@langchain/core/output_parsers';
 
 使用字符串解析器，大语言模型响应将从对象转换为单个字符串值，移除响应中包含的元数据。
 
-现在你可以将`firstChain`和`secondChain`组合起来创建一个`overallChain`，如下所示：
+现在你可以将 `firstChain` 和 `secondChain` 组合起来创建一个 `overallChain`，如下所示：
 
 ```javascript
 const overallChain = firstChain
@@ -1184,9 +1164,9 @@ const overallChain = firstChain
     .pipe(secondChain);
 ```
 
-注意，第一个`pipe()`方法中传入了一个箭头函数。此函数将`firstChain`返回的值格式化为一个可以传递给`secondChain`的对象。
+注意，第一个 `pipe()` 方法中传入了一个箭头函数。此函数将 `firstChain` 返回的值格式化为一个可以传递给 `secondChain` 的对象。
 
-现在你有了一个`overallChain`，让我们更新提示问题，只问一个问题：
+现在你有了一个 `overallChain`，让我们更新提示问题，只问一个问题：
 
 ```javascript
 console.log('Essay Writer');
@@ -1208,17 +1188,17 @@ console.log(response.content);
 
 ![](img/e0794cfae6ccfa863233c46659e3d9d8_65_0.png)
 
-*图27。简单顺序链结果*
+*图 27. 简单顺序链结果*
 
-结果中有一些段落被截断了，但你已经可以看到`firstChain`提示生成了`secondChain`提示使用的`title`变量。
+结果中有一些段落被截断了，但你已经可以看到 `firstChain` 提示生成了 `secondChain` 提示使用的 `title` 变量。
 
 使用简单顺序链允许你将复杂任务分解为一系列较小的任务，提高大语言模型结果的准确性。
 
 ### 在顺序链中使用多个大语言模型
 
-你也可以为使用LCEL创建的每个链分配不同的大语言模型。
+你也可以为使用 LCEL 创建的每个链分配不同的大语言模型。
 
-以下示例代码使用Google Gemini运行第一个链，而第二个链使用OpenAI GPT：
+以下示例代码使用 Google Gemini 运行第一个链，而第二个链使用 OpenAI GPT：
 
 ```javascript
 const llm = new ChatOpenAI({
@@ -1236,7 +1216,7 @@ const firstChain = titlePrompt.pipe(llm).pipe(new StringOutputParser());
 const secondChain = essayPrompt.pipe(llm2);
 ```
 
-因为LCEL是声明式的，你可以轻松地交换链中的组件。
+因为 LCEL 是声明式的，你可以轻松地交换链中的组件。
 
 ### 调试顺序链
 
@@ -1252,7 +1232,7 @@ const llm = new ChatOpenAI({
 
 当你重新运行应用程序时，你会在终端上看到调试输出。
 
-你可以通过搜索`[llm/start]`日志来查看LangChain发送给大语言模型的提示，如下所示：
+你可以通过搜索 `[llm/start]` 日志来查看 LangChain 发送给大语言模型的提示，如下所示：
 
 ```
 [llm/start] [1:llm:ChatOpenAI] Entering LLM run with input: {
@@ -1260,7 +1240,7 @@ const llm = new ChatOpenAI({
 }
 ```
 
-要查看输出，你需要查找`[llm/end]`日志。
+要查看输出，你需要查找 `[llm/end]` 日志。
 
 如果你搜索第二个链的输入，你会看到定义如下的提示：
 
@@ -1270,29 +1250,27 @@ const llm = new ChatOpenAI({
     [
 ```
 
-
-
 ## 总结
 
 本章的代码可在书籍源代码的 `07_LCEL` 文件夹中找到。
 
-在本章中，你了解了LangChain表达式语言（LCEL），它可以用于以声明式方式组合LangChain组件。
+在本章中，你了解了 LangChain 表达式语言（LCEL），它可以用于以声明式方式组合 LangChain 组件。
 
-一个链（Chain）本质上是这些LangChain组件的封装器：
+一个链本质上是这些 LangChain 组件的封装器：
 
 - 提示模板
-- 要使用的LLM
-- 用于处理LLM输出的解析器
+- 要使用的 LLM
+- 用于处理 LLM 输出的解析器
 
-链的组件是可互换的，这意味着你可以对第一个提示使用GPT模型，然后对第二个提示使用Gemini模型，如上所示。
+链的组件是可互换的，这意味着你可以对第一个提示使用 GPT 模型，然后对第二个提示使用 Gemini 模型，如上所示。
 
-通过使用LCEL，你可以创建高级工作流，并与大型语言模型交互来解决复杂任务。
+通过使用 LCEL，你可以创建高级工作流，并与大型语言模型交互来解决复杂任务。
 
 在下一章中，我将向你展示如何创建一个常规的顺序链。
 
 ## 第八章：常规顺序链
 
-常规顺序链（Regular Sequential Chain）是顺序链的一种更通用的形式，允许多个输入和输出。
+常规顺序链是顺序链的一种更通用的形式，允许多个输入和输出。
 
 下一个链的输入通常是前一个链的输出与另一个来源的混合，如下所示：
 
@@ -1300,26 +1278,23 @@ const llm = new ChatOpenAI({
 
 这个链比简单的顺序链稍微复杂一些，因为我们需要跟踪多个输入和输出。
 
-例如，假设你将上一章的`essayPrompt`更改为具有两个`inputVariables`，如下所示：
+例如，假设你将上一章的 `essayPrompt` 更改为具有两个 `inputVariables`，如下所示：
 
 ```javascript
 const essayPrompt = new PromptTemplate({
   inputVariables: ['title', 'emotion'],
   template: `
     You are an expert nonfiction writer.
-
     You need to write a short essay of 350 words for the following title:
-
     {title}
-
     Make sure that the essay is engaging and makes the reader feel {emotion}.
   `,
 });
 ```
 
-作文提示所需的情感输入并非来自第一个链，第一个链只返回`title`变量。
+作文提示所需的情感输入并非来自第一个链，第一个链只返回 `title` 变量。
 
-你需要在创建`overallChain`时注入情感输入，如下所示：
+你需要在创建 `overallChain` 时注入情感输入，如下所示：
 
 ```javascript
 const overallChain = firstChain
@@ -1330,12 +1305,13 @@ const overallChain = firstChain
   .pipe(secondChain);
 ```
 
-这样，`title`输入从`firstChain`的输出中获取，而`emotion`输入来自另一个来源。
+这样，`title` 输入从 `firstChain` 的输出中获取，而 `emotion` 输入来自另一个来源。
 
 现在你需要向用户请求情感输入：
 
 ```javascript
 console.log('Essay Writer');
+
 const questions = [
   {
     type: 'text',
@@ -1354,17 +1330,17 @@ const questions = [
 const { topic, emotion } = await prompts(questions);
 ```
 
-现在你为第二个链准备了两个输入：`title`和`emotion`。
+现在你为第二个链准备了两个输入：`title` 和 `emotion`。
 
-确保`overallChain`在`await prompts()`行之下声明。
+确保 `overallChain` 在 `await prompts()` 行之下声明。
 
 ### 格式化输出变量
 
 一个顺序链通常也跟踪多个输出变量。
 
-要跟踪多个输出变量，你可以使用LangChain的`StructuredOutputParser`将输出格式化为JSON对象。
+要跟踪多个输出变量，你可以使用 LangChain 的 `StructuredOutputParser` 将输出格式化为 JSON 对象。
 
-首先，从LangChain导入解析器：
+首先，从 LangChain 导入解析器：
 
 ```javascript
 import {
@@ -1373,11 +1349,11 @@ import {
 } from '@langchain/core/output_parsers';
 ```
 
-接下来，创建一个解析器，该解析器包含以对象形式表示的输出模式（schema）。
+接下来，创建一个解析器，该解析器包含以对象形式表示的输出模式。
 
-假设你想在响应中显示`title`、`emotion`和`essay`值。
+假设你想在响应中显示 `title`、`emotion` 和 `essay` 值。
 
-调用`StructuredOutputParser.fromNamesAndDescriptions()`方法并传入模式，如下所示：
+调用 `StructuredOutputParser.fromNamesAndDescriptions()` 方法并传入模式，如下所示：
 
 ```javascript
 const firstChain = titlePrompt.pipe(llm).pipe(new StringOutputParser());
@@ -1389,34 +1365,30 @@ const structuredParser = StructuredOutputParser.fromNamesAndDescriptions({
 });
 ```
 
-之后，将解析器传入`secondChain`，如下所示：
+之后，将解析器传入 `secondChain`，如下所示：
 
 ```javascript
 const secondChain = essayPrompt.pipe(llm).pipe(structuredParser);
 ```
 
-现在LLM被指示使用`structuredParser`解析输出。
+现在 LLM 被指示使用 `structuredParser` 解析输出。
 
-在`essayPrompt`中，更新`inputVariables`和`template`参数以包含`format_instructions`输入：
+在 `essayPrompt` 中，更新 `inputVariables` 和 `template` 参数以包含 `format_instructions` 输入：
 
 ```javascript
 const essayPrompt = new PromptTemplate({
   inputVariables: ['title', 'emotion', 'format_instructions'],
   template: `
 You are an expert nonfiction writer.
-
 You need to write a short essay of 350 words for the following title:
-
 {title}
-
 Make sure that the essay is engaging and makes the reader feel {emotion}.
-
 {format_instructions}
   `,
 });
 ```
 
-对于最后一步，在创建`overallChain`对象时，通过调用`structuredParser.getFormatInstructions()`方法来传递`format_instructions`输入：
+对于最后一步，在创建 `overallChain` 对象时，通过调用 `structuredParser.getFormatInstructions()` 方法来传递 `format_instructions` 输入：
 
 ```javascript
 const overallChain = firstChain
@@ -1428,13 +1400,13 @@ const overallChain = firstChain
   .pipe(secondChain);
 ```
 
-`getFormatInstructions()`方法返回一个包含指令和JSON模式的字符串。如果你想查看，可以通过调用`console.log()`来显示：
+`getFormatInstructions()` 方法返回一个包含指令和 JSON 模式的字符串。如果你想查看，可以通过调用 `console.log()` 来显示：
 
 ```javascript
 console.log(structuredParser.getFormatInstructions());
 ```
 
-现在你可以运行应用程序，并为作文提供`title`和`emotion`输入。LLM将返回一个JavaScript对象：
+现在你可以运行应用程序，并为作文提供 `title` 和 `emotion` 输入。LLM 将返回一个 JavaScript 对象：
 
 ```
 Essay Writer
@@ -1463,6 +1435,7 @@ Essay Writer
 const response = await overallChain.invoke({
   topic,
 });
+
 console.log(response.title);
 console.log(response.emotion);
 console.log(response.essay);
@@ -1470,28 +1443,26 @@ console.log(response.essay);
 
 现在你拥有一个跟踪多个输入和输出的顺序链。非常好！
 
-
-
-本章的代码位于书籍源代码的*08_Sequential_Chain*文件夹中。
+本章的代码位于书籍源代码的 `08_Sequential_Chain` 文件夹中。
 
 创建顺序链时，你可以向下一个链添加额外的输入，这些输入并非源自前一个链。
 
-你也可以将输出格式化为JSON对象，以使响应更易于组织和处理。
+你也可以将输出格式化为 JSON 对象，以使响应更易于组织和处理。
 
-## 第9章：在LANGCHAIN中实现聊天历史记录
+## 第九章：在 LangChain 中实现聊天历史记录
 
 到目前为止，大语言模型接收我们提出的问题，并从训练数据中检索答案。
 
-回顾第5章中的简单问答应用，你可以尝试向大语言模型提出如下问题：
+回顾第 5 章中的简单问答应用，你可以尝试向大语言模型提出如下问题：
 
 1.  上一届国际足联世界杯是什么时候举办的？
-2.  将年份乘以2
+2.  将年份乘以 2
 
-在撰写本文时，上一届国际足联世界杯于2022年举办。阅读上述第二个提示，我们可以理解“年份”指的是“2022”。
+在撰写本文时，上一届国际足联世界杯于 2022 年举办。阅读上述第二个提示，我们可以理解“年份”指的是“2022”。
 
 然而，由于大语言模型没有意识之前的交互，答案将不相关。
 
-对于GPT，大语言模型指的是当前年份，而不是上一届国际足联世界杯的年份：
+对于 GPT，大语言模型指的是当前年份，而不是上一届国际足联世界杯的年份：
 
 ![](img/e0794cfae6ccfa863233c46659e3d9d8_78_0.png)
 
@@ -1499,7 +1470,7 @@ console.log(response.essay);
 
 要解决此问题，你需要保存之前的消息，并在发送新提示时使用它们。
 
-要跟随本章内容，你可以从第5章复制代码并将其用作起点。
+要跟随本章内容，你可以从第 5 章复制代码并将其用作起点。
 
 ### 创建聊天提示模板
 
@@ -1522,9 +1493,9 @@ const chatTemplate = ChatPromptTemplate.fromMessages([
 ]);
 ```
 
-在上面的示例中，消息分别关联了“system”、“human”和“ai”角色。“system”消息用于影响AI行为。
+在上面的示例中，消息分别关联了“system”、“human”和“ai”角色。“system”消息用于影响 AI 行为。
 
-你可以使用`ChatPromptTemplate`和`MessagesPlaceholder`类创建一个接受聊天历史记录的提示，如下所示：
+你可以使用 `ChatPromptTemplate` 和 `MessagesPlaceholder` 类创建一个接受聊天历史记录的提示，如下所示：
 
 ```javascript
 import {
@@ -1544,11 +1515,11 @@ const prompt = ChatPromptTemplate.fromMessages([
 ]);
 ```
 
-`MessagesPlaceholder`类充当一个入口，你可以通过它注入聊天历史记录。实例化该类时，你需要传递一个用于存储聊天历史记录的字符串键。
+`MessagesPlaceholder` 类充当一个入口，你可以通过它注入聊天历史记录。实例化该类时，你需要传递一个用于存储聊天历史记录的字符串键。
 
-### 在LangChain中保存消息
+### 在 LangChain 中保存消息
 
-要在LangChain中保存聊天消息，你可以使用提供的`ChatMessageHistory`类：
+要在 LangChain 中保存聊天消息，你可以使用提供的 `ChatMessageHistory` 类：
 
 ```javascript
 import { ChatMessageHistory } from 'langchain/memory';
@@ -1556,11 +1527,11 @@ import { ChatMessageHistory } from 'langchain/memory';
 const history = new ChatMessageHistory();
 ```
 
-`ChatMessageHistory`类提供了获取、添加和清除消息的方法。
+`ChatMessageHistory` 类提供了获取、添加和清除消息的方法。
 
-但你不会直接操作历史记录对象。相反，你需要将此对象传递给`RunnableWithMessageHistory`类。
+但你不会直接操作历史记录对象。相反，你需要将此对象传递给 `RunnableWithMessageHistory` 类。
 
-`RunnableWithMessageHistory`类创建一个链，为你注入聊天历史记录。它还会在调用链时自动添加新消息：
+`RunnableWithMessageHistory` 类创建一个链，为你注入聊天历史记录。它还会在调用链时自动添加新消息：
 
 ```javascript
 const chain = prompt.pipe(llm);
@@ -1573,11 +1544,11 @@ const chainWithHistory = new RunnableWithMessageHistory({
 });
 ```
 
-创建`RunnableWithMessageHistory`对象时，你需要传递要注入历史记录的链（`runnable`）和一个返回聊天历史记录的函数（`getMessageHistory`）。
+创建 `RunnableWithMessageHistory` 对象时，你需要传递要注入历史记录的链（`runnable`）和一个返回聊天历史记录的函数（`getMessageHistory`）。
 
-`inputMessagesKey`是提示中存在的输入键，而`historyMessagesKey`是接受历史记录的变量（它应该与传递给提示中`MessagesPlaceholder`的字符串键相同）。
+`inputMessagesKey` 是提示中存在的输入键，而 `historyMessagesKey` 是接受历史记录的变量（它应该与传递给提示中 `MessagesPlaceholder` 的字符串键相同）。
 
-现在`chainWithHistory`对象已创建，你可以测试AI并查看它是否意识到之前的对话。这里使用while循环再次显示输入：
+现在 `chainWithHistory` 对象已创建，你可以测试 AI 并查看它是否意识到之前的对话。这里使用 while 循环再次显示输入：
 
 ```javascript
 console.log('Chat With AI');
@@ -1593,6 +1564,7 @@ while (!exit) {
       validate: value => (value ? true : 'Question cannot be empty'),
     },
   ]);
+
   if (question === '/bye') {
     console.log('See you later!');
     exit = true;
@@ -1605,14 +1577,15 @@ while (!exit) {
         },
       }
     );
+
     console.log(response.content);
   }
 }
 ```
 
-调用`chainWithHistory`对象时，你需要将`sessionId`键传递到config参数中，如上所示。
+调用 `chainWithHistory` 对象时，你需要将 `sessionId` 键传递到 config 参数中，如上所示。
 
-`sessionId`可以是任何字符串值。
+`sessionId` 可以是任何字符串值。
 
 现在你可以通过给出后续问题来测试应用程序：
 
@@ -1620,8 +1593,13 @@ while (!exit) {
 Q: When was the last FIFA World Cup held?
 A: The last FIFA World Cup was held in 2022 in Qatar.
 Q: Multiply the year by 2
-A: Multiplying the year 2022 by 2 gives you 4044.
 ```
+
+
+
+# 第9章：聊天历史记录
+
+A: Multiplying the year 2022 by 2 gives you 4044.
 
 因为聊天历史记录被注入到提示中，大语言模型可以将第二个问题置于第一个问题的上下文中。
 
@@ -1635,7 +1613,7 @@ const llm = new ChatOpenAI({
 });
 ```
 
-当你在运行第二个问题时，你会在messages数组中看到聊天历史记录被传递：
+当你在运行第二个问题时，你会在`messages`数组中看到聊天历史记录被传递：
 
 ```
 [llm/start] [1:llm:ChatOpenAI] Entering LLM run with input: {
@@ -1649,7 +1627,7 @@ const llm = new ChatOpenAI({
 
 ## 总结
 
-本章的代码位于书籍源代码的*09_Chat_History*文件夹中。
+本章的代码位于书籍源代码的`09_Chat_History`文件夹中。
 
 在本章中，你学习了如何使用LangChain的`RunnableWithMessageHistory`类将聊天历史记录注入提示中。
 
@@ -1657,7 +1635,7 @@ const llm = new ChatOpenAI({
 
 将聊天历史记录与提示结合使用，你可以与AI持续聊天，同时保留之前的交互。
 
-## 第10章：AI代理与工具
+# 第10章：AI代理与工具
 
 AI代理是一种思考软件，能够通过一系列操作解决任务。它使用大语言模型作为推理引擎来规划和执行操作。
 
@@ -1675,7 +1653,7 @@ AI代理是一种思考软件，能够通过一系列操作解决任务。它使
 
 接下来，我将向你展示如何使用LangChain创建代理。
 
-### 使用LangChain创建AI代理
+## 使用LangChain创建AI代理
 
 创建一个名为`react_agent.js`的新JavaScript文件，并导入以下模块：
 
@@ -1698,22 +1676,19 @@ LangChain社区中心是一个开放的提示集合，你可以在项目中免�
 
 `createReactAgent`模块创建一个使用ReAct提示的代理，而`AgentExecutor`管理代理的执行，例如处理输入、生成响应和更新代理状态。
 
-接下来，按照以下方式初始化llm并从中心获取提示：
+接下来，按照以下方式初始化`llm`并从中心获取提示：
 
 ```javascript
 const llm = new ChatOpenAI({
   model: 'gpt-4o',
   apiKey: process.env.OPENAI_KEY,
 });
-
 const prompt = await pull('hwchase17/react');
 ```
 
 `pull()`函数从你指定为参数的仓库中检索提示。这里，我们使用用户“hwchase17”创建的“react”提示。
 
 如果你想查看提示，可以访问 https://smith.langchain.com/hub/hwchase17/react
-
-
 
 接下来，实例化我们希望提供给LLM的工具，然后按照以下方式创建代理执行器对象：
 
@@ -1731,17 +1706,17 @@ const agentExecutor = new AgentExecutor({
 ```
 
 我们为代理提供了三个工具：
-1.  wikipedia 用于访问和总结维基百科文章
-2.  ddgSearch 用于使用DuckDuckGo搜索引擎搜索互联网
-3.  calculator 用于计算数学方程式
+1. `wikipedia` 用于访问和总结维基百科文章
+2. `ddgSearch` 用于使用DuckDuckGo搜索引擎搜索互联网
+3. `calculator` 用于计算数学方程式
 
-要运行DuckDuckGo搜索工具，你需要使用npm安装 duck-duck-scrape 包：
+要运行DuckDuckGo搜索工具，你需要使用npm安装 `duck-duck-scrape` 包：
 
 ```bash
 npm install duck-duck-scrape
 ```
 
-其余的工具已经可以从 @langchain/community 模块中获取。
+其余的工具已经可以从 `@langchain/community` 模块中获取。
 
 安装完成后，通过添加问题提示并调用 `invoke()` 方法来完成代理：
 
@@ -1754,7 +1729,6 @@ const { question } = await prompts([
     validate: value => (value ? true : 'Question cannot be empty'),
   },
 ]);
-
 const response = await agentExecutor.invoke({ input: question });
 console.log(response);
 ```
@@ -1771,7 +1745,7 @@ node react_agent.js
 
 ![](img/e0794cfae6ccfa863233c46659e3d9d8_87_0.png)
 
-图32。LLM代理推理和采取行动
+图32. LLM代理推理和采取行动
 
 LLM将使用我们创建的代理来采取行动，以寻求最终答案。
 
@@ -1794,7 +1768,7 @@ LLM将使用我们创建的代理来采取行动，以寻求最终答案。
 }
 ```
 
-图33。LLM代理完成
+图33. LLM代理完成
 
 代理运行完成后，它将返回一个包含两个属性的对象：`input` 和 `output`，如下所示：
 
@@ -1805,17 +1779,14 @@ LLM将使用我们创建的代理来采取行动，以寻求最终答案。
 }
 ```
 
-如果你使用的LLM在其训练数据中已经有了答案，你可能会立即看到输出，而没有任何 [agent/action] 日志。
+如果你使用的LLM在其训练数据中已经有了答案，你可能会立即看到输出，而没有任何 `[agent/action]` 日志。
 
 例如，我下面问了“美国独立日是什么时候？”
 
 ```
 Your question:  ... When is America Independence Day?
-
 America's Independence Day is a well-known historical event that does not require searching for current updates or detailed information from an encyclopedia.
-
 It is generally known information.\n\nFinal Answer: America's Independence Day is on July 4th.
-
 {
   input: 'When is America Independence Day?',
   output: "America's Independence Day is on July 4th."
@@ -1838,7 +1809,7 @@ It is generally known information.\n\nFinal Answer: America's Independence Day i
 }
 ```
 
-图34。LLM代理进行搜索
+图34. LLM代理进行搜索
 
 如果你问一个数学问题，例如“5的2次方，然后乘以6和3的和”，代理应该使用计算器工具：
 
@@ -1850,7 +1821,7 @@ It is generally known information.\n\nFinal Answer: America's Independence Day i
 }
 ```
 
-图35。LLM代理进行数学计算
+图35. LLM代理进行数学计算
 
 最新的LLM足够智能，能够理解问题的意图并选择正确的工具来完成任务。
 
@@ -1860,13 +1831,13 @@ AI代理只能使用你在创建代理时添加的工具。
 
 LangChain提供的工具列表可以在 [https://js.langchain.com/v0.2/docs/integrations/tools](https://js.langchain.com/v0.2/docs/integrations/tools) 找到。
 
-但是，像 Calculator 和 BingSerpAPI 这样的工具并未在上面的集成页面中列出，因此你需要深入研究LangChain社区包的源代码来找到所有可用的工具。
+但是，像 `Calculator` 和 `BingSerpAPI` 这样的工具并未在上面的集成页面中列出，因此你需要深入研究LangChain社区包的源代码来找到所有可用的工具。
 
 只需打开 `node_modules/` 文件夹，然后进入 `@langchain/community/tools`，你就能看到所有的工具：
 
 ![](img/e0794cfae6ccfa863233c46659e3d9d8_91_0.png)
 
-*图36。LLM代理可用工具*
+图36. LLM代理可用工具
 
 你可以在这里看到其他工具，如Google搜索和Bing搜索，但这些工具需要API密钥才能运行。
 
@@ -1882,7 +1853,7 @@ ReAct代理是一种通用代理，还有更专业的代理，例如XML代理和
 
 ## 总结
 
-本章的代码可在书籍源代码的 *10_Agents_and_Tools* 文件夹中找到。
+本章的代码可在书籍源代码的 `10_Agents_and_Tools` 文件夹中找到。
 
 虽然我们目前的世界还没有自主机器人助手（还没有），但我们已经可以看到AI代理的发展有一天可能被用作AI机器人的大脑。
 
@@ -1896,7 +1867,7 @@ AI代理是一项了不起的创新，它展示了一台机器如何能提出一
 
 有时，训练有素的LLM可以直接从训练数据中回答，从而绕过使用工具的需要。
 
-## 第11章：在LANGCHAIN中与文档交互
+# 第11章：在LANGCHAIN中与文档交互
 
 最有趣的AI用例之一是“与文档聊天”功能，它允许用户通过对话式查询与文档进行交互。
 
@@ -1904,11 +1875,11 @@ AI代理是一项了不起的创新，它展示了一台机器如何能提出一
 
 以下是创建“与文档聊天”应用程序所需过程的说明：
 
-### 与文档聊天应用程序流程
+## 与文档聊天应用程序流程
 
 ![](img/e0794cfae6ccfa863233c46659e3d9d8_95_0.png)
 
-图37。与文档聊天应用程序流程
+图37. 与文档聊天应用程序流程
 
 你首先需要将单个文档分割成块，以便有效地处理和索引文档。然后将这些块转换为向量嵌入。
 
@@ -1920,9 +1891,7 @@ AI代理是一项了不起的创新，它展示了一台机器如何能提出一
 
 寻找相关信息并将其发送给LLM的过程也称为检索增强生成。
 
-
-
-### 获取文档
+## 获取文档
 
 您将向应用程序上传一个文档并对其进行提问。您可以从源代码文件夹中获取名为 `ai-discussion.txt` 的文本文件。
 
@@ -1930,7 +1899,7 @@ AI代理是一项了不起的创新，它展示了一台机器如何能提出一
 
 因为是虚构的，您可以确信大语言模型是从文档中获取答案，而非来自其训练数据。
 
-### 构建文档对话应用程序
+## 构建文档对话应用程序
 
 创建一个新的 JavaScript 文件，命名为 `rag_app.js`，然后按照以下方式导入文档对话应用程序所需的包：
 
@@ -1938,7 +1907,6 @@ AI代理是一项了不起的创新，它展示了一台机器如何能提出一
 import { ChatOpenAI, OpenAIEmbeddings } from '@langchain/openai';
 import { ChatPromptTemplate } from '@langchain/core/prompts';
 import prompts from 'prompts';
-
 // New packages:
 import { TextLoader } from 'langchain/document_loaders/fs/text';
 import { RecursiveCharacterTextSplitter } from '@langchain/textsplitters';
@@ -1977,7 +1945,6 @@ const splitter = new RecursiveCharacterTextSplitter({
   chunkSize: 1000,
   chunkOverlap: 200,
 });
-
 const chunks = await splitter.splitDocuments(docs);
 ```
 
@@ -1989,13 +1956,11 @@ OpenAI 提供了一个 API 端点来将文档转换为向量，而 LangChain 提
 
 ```javascript
 const embeddings = new OpenAIEmbeddings({ apiKey: process.env.OPENAI_KEY });
-
 const vectorStore = await MemoryVectorStore.fromDocuments(chunks, embeddings);
-
 const retriever = vectorStore.asRetriever();
 ```
 
-`MemoryVectorStore.from_documents()` 方法将块和嵌入数据发送到向量存储。
+`MemoryVectorStore.fromDocuments()` 方法将块和嵌入数据发送到向量存储。
 
 接下来，您需要调用 `asRetriever()` 方法来创建一个检索器对象，该对象接受用户输入并返回文档的相关块。
 
@@ -2008,7 +1973,6 @@ the question. If you don't know the answer, say that you
 don't know. Use three sentences maximum and keep the
 answer concise.
 \n\n{context}`;
-
 const prompt = ChatPromptTemplate.fromMessages([
   ['system', systemPrompt],
   ['human', '{input}'],
@@ -2050,7 +2014,6 @@ const { question } = await prompts([
     validate: value => (value ? true : 'Question cannot be empty'),
   },
 ]);
-
 const response = await ragChain.invoke(
   { input: question },
   {
@@ -2090,24 +2053,19 @@ Mr. Thompson works at VegaTech Inc. as the Chief AI Scientist.
 
 ```javascript
 import { createHistoryAwareRetriever } from 'langchain/chains/history_aware_retriever';
-
 // ... other code
-
 const retriever = vectorStore.asRetriever();
-
 const contextualizeSystemPrompt = `
 Given a chat history and the latest user question
 which might reference context in the chat history, formulate a standalone question
 which can be understood without the chat history. Do NOT answer the question,
 just reformulate it if needed and otherwise return it as is.
 `;
-
 const contextualizePrompt = ChatPromptTemplate.fromMessages([
   ['system', contextualizeSystemPrompt],
   new MessagesPlaceholder('chat_history'),
   ['human', '{input}'],
 ]);
-
 const historyAwareRetriever = await createHistoryAwareRetriever({
   llm,
   retriever,
@@ -2144,16 +2102,12 @@ const ragChain = await createRetrievalChain({
 // Add the imports
 import { ChatMessageHistory } from 'langchain/memory';
 import { RunnableWithMessageHistory } from '@langchain/core/runnables';
-
 // ... other code
-
 const ragChain = await createRetrievalChain({
   retriever: historyAwareRetriever,
   combineDocsChain: questionAnswerChain,
 });
-
 const history = new ChatMessageHistory();
-
 const conversationalRagChain = new RunnableWithMessageHistory({
   runnable: ragChain,
   getMessageHistory: sessionId => history,
@@ -2166,8 +2120,6 @@ const conversationalRagChain = new RunnableWithMessageHistory({
 最后一步，当应用程序接收到问题时，将调用的链更改为 `conversationalRagChain`，并为 `sessionId` 添加可配置参数。
 
 为了重复提示，像之前一样添加一个 `while` 循环：
-
-
 
 ### 关于向量数据库
 
@@ -2192,13 +2144,11 @@ import {
   ChatGoogleGenerativeAI,
   GoogleGenerativeAIEmbeddings,
 } from '@langchain/google-genai';
-
 // llm
 const llm = new ChatGoogleGenerativeAI({
   model: 'gemini-1.5-pro-latest',
   apiKey: process.env.GOOGLE_GENERAI_KEY
 });
-
 // embeddings
 const embeddings = new GoogleGenerativeAIEmbeddings({
   apiKey: process.env.GOOGLE_GENERAI_KEY,
@@ -2211,10 +2161,8 @@ const embeddings = new GoogleGenerativeAIEmbeddings({
 ```javascript
 import { ChatOllama } from '@langchain/community/chat_models/ollama';
 import { OllamaEmbeddings } from '@langchain/community/embeddings/ollama';
-
 // llm
 const llm = new ChatOllama({ model: 'mistral' });
-
 // embeddings
 const embeddings = new OllamaEmbeddings({ model: 'mistral' });
 ```
@@ -2223,7 +2171,7 @@ const embeddings = new OllamaEmbeddings({ model: 'mistral' });
 
 ## 总结
 
-本章的代码可在书籍源代码的 *11_Chat_With_Document* 文件夹中找到。
+本章的代码可在书籍源代码的 `11_Chat_With_Document` 文件夹中找到。
 
 在本章中，你学习了如何使用 LangChain 创建一个与文档对话的应用程序。
 
@@ -2235,7 +2183,7 @@ const embeddings = new OllamaEmbeddings({ model: 'mistral' });
 
 接下来，让我们看看如何加载不同格式的文档，例如 .docx 和 .pdf。
 
-## 第 12 章：上传不同类型的文档
+# 第12章：上传不同类型的文档
 
 既然我们可以在 LangChain 中加载 .txt 文档，让我们来改进应用程序，使其也能加载其他类型的文档或格式，例如 .docx 和 .pdf。
 
@@ -2253,14 +2201,10 @@ import { DocxLoader } from "@langchain/community/document_loaders/fs/docx";
 
 ```javascript
 import path from 'path';
-
 // ...
-
 const filePath = './python.pdf';
 const extension = path.extname(filePath);
-
 let loader = null;
-
 if (extension === '.txt'){
     loader = new TextLoader(filePath);
 } else if (extension === '.pdf') {
@@ -2270,7 +2214,6 @@ if (extension === '.txt'){
 } else {
     throw new Error('The document format is not supported');
 }
-
 const docs = await loader.load();
 ```
 
@@ -2282,7 +2225,7 @@ const docs = await loader.load();
 
 LangChain 加载器依赖于 Node 包。你需要安装 `mammoth` 来加载 .docx 文件，安装 `pdf-parse` 来加载 .pdf 文件：
 
-```
+```bash
 npm install mammoth pdf-parse
 ```
 
@@ -2290,12 +2233,10 @@ npm install mammoth pdf-parse
 
 ```javascript
 const docs = await loader.load();
-
 const splitter = new RecursiveCharacterTextSplitter({
     chunkSize: 1000,
     chunkOverlap: 200,
 });
-
 const chunks = await splitter.splitDocuments(docs);
 // 剩余部分相同...
 ```
@@ -2308,13 +2249,13 @@ const chunks = await splitter.splitDocuments(docs);
 
 ## 总结
 
-本章的代码可在书籍源代码的 *12_Uploading_Different_Document_Types* 文件夹中找到。
+本章的代码可在书籍源代码的 `12_Uploading_Different_Document_Types` 文件夹中找到。
 
 在本章中，你通过创建文件上传界面，然后根据文档类型使用不同的加载器加载文档，进一步改进了与文档对话的应用程序。
 
 在下一章中，我将向你展示如何与 YouTube 视频进行对话。到时见！
 
-## 第 13 章：与 YouTube 视频对话
+# 第13章：与 YouTube 视频对话
 
 既然你已经学会了如何让 AI 与文档交互，让我们继续创建一个与 YouTube 对话的应用程序。
 
@@ -2322,13 +2263,13 @@ const chunks = await splitter.splitDocuments(docs);
 
 让我们开始吧！
 
-### 添加 YouTube 加载器
+## 添加 YouTube 加载器
 
 与 YouTube 对话的应用程序使用 RAG 技术，用视频的转录数据来增强大语言模型。
 
 要获取 YouTube 视频的转录，你需要使用 npm 安装 `youtube-transcript` 和 `youtubei.js` 包，如下所示：
 
-```
+```bash
 npm install youtube-transcript youtubei.js
 ```
 
@@ -2347,7 +2288,6 @@ import { YoutubeLoader } from
 
 ```javascript
 const history = new ChatMessageHistory();
-
 const processUrl = async ytUrl => {
     const loader = YoutubeLoader.createFromUrl(ytUrl);
     const docs = await loader.load();
@@ -2355,32 +2295,24 @@ const processUrl = async ytUrl => {
         chunkSize: 1000,
         chunkOverlap: 200,
     });
-
     const chunks = await splitter.splitDocuments(docs);
-
     const embeddings = new OpenAIEmbeddings({ apiKey: process.env.OPENAI_KEY });
-
     const vectorStore = await MemoryVectorStore.fromDocuments(
         chunks,
         embeddings
     );
-
     const retriever = vectorStore.asRetriever();
-
     const historyAwareRetriever = await createHistoryAwareRetriever({
         llm,
         retriever,
         rephrasePrompt: contextualizePrompt,
     });
-
     const ragChain = await createRetrievalChain({
         retriever: historyAwareRetriever,
         combineDocsChain: questionAnswerChain,
     });
 };
 ```
-
-
 
 ### 处理转录文本不存在错误
 
@@ -2399,19 +2331,16 @@ Error: Failed to get YouTube video transcription: [YoutubeTranscript]
 
 ```
 YouTube URL: https://amazon.com
-
 Error: Failed to get youtube video id from the url
 ```
 
 为避免上述两种错误，你需要按如下方式将函数体包裹在try..catch块中：
 
-```
+```javascript
 const processUrl = async ytUrl => {
   try {
     const loader = YoutubeLoader.createFromUrl(ytUrl);
-
     // ...
-
     return conversationalRagChain;
   } catch (error) {
     console.log('Not a YouTube URL or video has no transcript. Please try another URL');
@@ -2431,22 +2360,21 @@ Not a YouTube URL or video has no transcript. Please try another URL
 
 ## 总结
 
-本章代码可在书籍源代码的文件夹 *13_Chat_With_Youtube* 中找到。
+本章代码可在书籍源代码的文件夹 `13_Chat_With_Youtube` 中找到。
 
 在本章中，你学习了如何创建一个“与YouTube视频聊天”的应用程序：该应用使用URL获取YouTube视频转录文本，然后将转录文本转换为向量，可用于增强大语言模型的知识。
 
 借助AI，你可以直接询问长视频的要点或摘要，无需亲自观看视频。
 
-## 第14章：使用多模态消息与图像交互
+# 第14章：使用多模态消息与图像交互
 
 既然我们可以与不同类型的文档交互并“与YouTube视频聊天”，接下来让我们继续探索如何让AI理解图像。
 
-### 理解多模态消息
+## 理解多模态消息
 
 多模态消息是指使用多种通信模式进行传递的消息。
 
 人类已知的通信模式包括：
-
 - 文本
 - 视频
 - 音频
@@ -2458,48 +2386,43 @@ Not a YouTube URL or video has no transcript. Please try another URL
 
 接下来，让我们学习如何使用LangChain创建这样的应用。
 
-### 在LangChain中发送多模态消息
+## 在LangChain中发送多模态消息
 
 要在LangChain中发送多模态消息，你只需调整提示模板并为人类消息传递一个列表即可。
 
-首先，创建一个名为handle_image.js的新文件，导入所需的包，并定义要使用的大语言模型，如下所示：
+首先，创建一个名为`handle_image.js`的新文件，导入所需的包，并定义要使用的大语言模型，如下所示：
 
-```
+```javascript
 import { ChatOpenAI } from '@langchain/openai';
-
 import { ChatPromptTemplate } from '@langchain/core/prompts';
-
 import { readFile } from 'node:fs/promises';
 import prompts from 'prompts';
-
 import 'dotenv/config';
-
 const llm = new ChatOpenAI({
   model: 'gpt-4o',
   apiKey: process.env.OPENAI_KEY,
 });
 ```
 
-Node中的readFile模块用于读取图像文件并将其编码为base64字符串格式。
+Node中的`readFile`模块用于读取图像文件并将其编码为base64字符串格式。
 
-在llm变量下方编写图像编码函数：
+在`llm`变量下方编写图像编码函数：
 
-```
+```javascript
 const encodeImage = async imagePath => {
     const imageData = await readFile(imagePath);
     return imageData.toString('base64');
 }
-
 const image = await encodeImage('./image.jpg');
 ```
 
-将传递给encodeImage()函数的 './image.jpg' 替换为你计算机上的图像文件。
+将传递给`encodeImage()`函数的 `'./image.jpg'` 替换为你计算机上的图像文件。
 
 你可以将计算机上的任何图像传递给该函数，但请确保其中不包含任何敏感数据。
 
 然后，可以将编码后的图像按如下方式传递给聊天提示模板：
 
-```
+```javascript
 const prompt = ChatPromptTemplate.fromMessages([
     ['system', 'You are a helpful assistant that can describe images in detail.'],
     ['human',
@@ -2525,10 +2448,9 @@ const prompt = ChatPromptTemplate.fromMessages([
 
 从提示和大语言模型创建一个链，并向用户请求输入：
 
-```
+```javascript
 const chain = prompt.pipe(llm);
 const response = await chain.invoke({"input": "What do you see on this image?"})
-
 console.log(response.content);
 ```
 
@@ -2540,30 +2462,24 @@ console.log(response.content);
 
 首先，像往常一样导入添加网络界面和历史记录所需的包：
 
-```
+```javascript
 import { ChatOpenAI } from '@langchain/openai';
-
 import { ChatMessageHistory } from 'langchain/memory';
 import { RunnableWithMessageHistory } from '@langchain/core/runnables';
 import {
   ChatPromptTemplate,
   MessagesPlaceholder,
 } from '@langchain/core/prompts';
-
 import { readFile } from 'node:fs/promises';
-
 import prompts from 'prompts';
-
 import 'dotenv/config';
 ```
 
-接下来，你需要实例化ChatMessageHistory类，并升级链以包含聊天记录，这与第9章类似。
+接下来，你需要实例化`ChatMessageHistory`类，并升级链以包含聊天记录，这与第9章类似。
 
-```
+```javascript
 const history = new ChatMessageHistory();
-
 const chain = prompt.pipe(llm);
-
 const chainWithHistory = new RunnableWithMessageHistory({
   runnable: chain,
   getMessageHistory: sessionId => history,
@@ -2574,10 +2490,9 @@ const chainWithHistory = new RunnableWithMessageHistory({
 
 下一步是向用户提问。使用prompts来实现：
 
-```
+```javascript
 console.log('Chat With Image');
 console.log('Type /bye to stop the program');
-
 let exit = false;
 while (!exit) {
   const { question } = await prompts([
@@ -2605,15 +2520,13 @@ while (!exit) {
 }
 ```
 
-
-
 就是这样。现在你可以针对你传递给 `encodeImage()` 函数的图像提问了。
 
 下面我将使用来自 [https://g.codewithnathan.com/lc-image](https://g.codewithnathan.com/lc-image) 的图像作为示例：
 
 ![](img/e0794cfae6ccfa863233c46659e3d9d8_120_0.png)
 
-*图 39. 图像对话结果*
+图 39. 图像对话结果
 
 试着询问某个具体细节，例如你能看到图像中有多少人，或者图像中主要是什么颜色。
 
@@ -2625,7 +2538,7 @@ while (!exit) {
 
 要向 Ollama 发送多模态消息，你需要确保 `image_url` 键的值是一个字符串，如下所示：
 
-```
+```javascript
 ['human',
   [
     { type: 'text', text: '{input}' },
@@ -2637,11 +2550,11 @@ while (!exit) {
 ],
 ```
 
-不过，LangChain 端存在一个 bug，它会将 image_url 键转换为一个对象，并在该对象中添加一个 url 属性。
+不过，LangChain 端存在一个 bug，它会将 `image_url` 键转换为一个对象，并在该对象中添加一个 `url` 属性。
 
-为了解决这个问题，你需要打开位于 node_modules/@langchain/community/dist/chat_models 目录下的 ollama.js 源代码，并将第 468 行的代码修改如下：
+为了解决这个问题，你需要打开位于 `node_modules/@langchain/community/dist/chat_models` 目录下的 `ollama.js` 源代码，并将第 468 行的代码修改如下：
 
-```
+```javascript
 else if (contentPart.type === "image_url") {
   console.log(contentPart.image_url);
   const imageUrlComponents = contentPart.image_url.url.split(",");
@@ -2650,7 +2563,7 @@ else if (contentPart.type === "image_url") {
 }
 ```
 
-上面的 console.log() 将打印 image_url 键的内容，它看起来像这样：
+上面的 `console.log()` 将打印 `image_url` 键的内容，它看起来像这样：
 
 ```
 {
@@ -2660,9 +2573,9 @@ else if (contentPart.type === "image_url") {
 
 正如你所看到的，即使我们传递的是一个字符串，它也被 LangChain 转换成了一个对象。
 
-这导致原始的 ollama.js 代码中检查字符串类型的那部分始终报错：
+这导致原始的 `ollama.js` 代码中检查字符串类型的那部分始终报错：
 
-```
+```javascript
 else if (
   contentPart.type === "image_url" &&
   typeof contentPart.image_url === "string"
@@ -2682,7 +2595,7 @@ else if (
 
 ## 总结
 
-本章的代码可在书籍源代码的 *14_Handling_Images* 文件夹中找到。
+本章的代码可在书籍源代码的 `14_Handling_Images` 文件夹中找到。
 
 在本章中，你学习了如何使用 LangChain 向语言模型发送多模态消息。
 
@@ -2690,7 +2603,7 @@ else if (
 
 如果大语言模型不理解，它通常会告诉你它无法理解你发送的消息。
 
-## 第 15 章：开发 AI 驱动的 NEXT.JS 应用程序
+# 第15章：开发 AI 驱动的 NEXT.JS 应用程序
 
 既然你已经探索了 LangChain 的核心概念，接下来让我们学习如何将 LangChain 集成到 Next.js Web 应用程序中。
 
@@ -2702,7 +2615,7 @@ Next.js 是一个 JavaScript 和 React 框架，它使你能够开发功能齐�
 
 让我们开始吧！
 
-### 创建 Next.js 应用程序
+## 创建 Next.js 应用程序
 
 要创建 Next.js 应用程序，你需要使用 npx 运行 create-next-app 包。
 
@@ -2710,11 +2623,11 @@ Next.js 是一个 JavaScript 和 React 框架，它使你能够开发功能齐�
 
 为避免此问题，让我们使用 Next.js 14.1 版本。从终端运行以下命令：
 
-```
+```bash
 npx create-next-app@14.1.0 nextjs-langchain
 ```
 
-npx 命令允许你直接从终端执行一个 Javascript 包。
+`npx` 命令允许你直接从终端执行一个 Javascript 包。
 
 你应该会看到 npm 要求安装一个新包，如下所示。输入 'y' 并按 Enter 继续：
 
@@ -2747,18 +2660,15 @@ Ok to proceed? (y) y
 Success! Created nextjs-langchain at ...
 ```
 
-下一步是使用 cd 命令将工作目录更改为刚刚创建的应用程序，然后运行 npm run dev 来启动应用程序：
+下一步是使用 `cd` 命令将工作目录更改为刚刚创建的应用程序，然后运行 `npm run dev` 来启动应用程序：
 
-```
+```bash
 cd nextjs-langchain
 npm run dev
-
 > next-events@0.1.0 dev
 > next dev
-
  ▲ Next.js 14.1.0
  - Local:      http://localhost:3000
-
  ✓ Ready in 1156ms
 ```
 
@@ -2768,25 +2678,25 @@ npm run dev
 
 如果你看到上面的屏幕，意味着你已经成功创建并运行了你的第一个 Next.js 应用程序。干得好！
 
-### 安装所需的包
+## 安装所需的包
 
 按 CTRL + C 停止正在运行的应用程序，然后安装我们将要使用的包：
 
-```
+```bash
 npm install langchain @langchain/openai
 ```
 
-langchain 和 @langchain/openai 包与我们在前面章节中使用的相同。
+`langchain` 和 `@langchain/openai` 包与我们在前面章节中使用的相同。
 
 接下来，安装创建前端 React 组件所需的包：
 
-```
+```bash
 npm install @radix-ui/react-icons react-textarea-autosize react-code-blocks marked
 ```
 
 包安装完成后，让我们创建一个服务器操作（server action），接下来它将指示 LangChain 调用大语言模型。
 
-### 添加服务器操作
+## 添加服务器操作
 
 服务器操作是 Next.js 14 中添加的新功能，作为在 Next.js 应用程序中获取和处理数据的新标准方式。
 
@@ -2803,17 +2713,14 @@ npm install @radix-ui/react-icons react-textarea-autosize react-code-blocks mark
 
 在此文件中，导入 langchain 模块，并创建将用于与大语言模型通信的链（chain）：
 
-```
+```typescript
 'use server';
-
 import { ChatOpenAI } from '@langchain/openai';
 import { ChatPromptTemplate } from '@langchain/core/prompts';
-
 const llm = new ChatOpenAI({
   model: 'gpt-4o',
   apiKey: process.env.OPENAI_KEY,
 });
-
 const prompt = ChatPromptTemplate.fromMessages([
   ['system',
 'You are an AI chatbot having a conversation with a human. Use the
@@ -2822,20 +2729,19 @@ your answer',
 ],
 ['human', '{input}'],
 ]);
-
 const chain = prompt.pipe(llm);
 ```
 
-文件顶部的 'use server' 指令用于告知 Next.js
+文件顶部的 `'use server'` 指令用于告知 Next.js
 此文件只能在服务器上运行。
 
 在 Next.js 应用程序中，你不需要
-dotenv 来加载环境变量。
+`dotenv` 来加载环境变量。
 
-之后，创建一个名为 getReply()
-的异步函数，它接受一个字符串参数并调用 chain.invoke() 方法，如下所示：
+之后，创建一个名为 `getReply()`
+的异步函数，它接受一个字符串参数并调用 `chain.invoke()` 方法，如下所示：
 
-```
+```typescript
 export const getReply = async (message: string) => {
     const response = await chain.invoke({
         input: message
@@ -2844,13 +2750,11 @@ export const getReply = async (message: string) => {
 };
 ```
 
-这样，当你想向大语言模型发送消息时，就可以调用 getReply() 函数。
+这样，当你想向大语言模型发送消息时，就可以调用 `getReply()` 函数。
 
 接下来，我们将为聊天界面创建组件。
 
 ### 为用户和助手添加头像
-
-
 
 在创建界面之前，让我们先添加两张图片，它们将用作头像。
 
@@ -2864,9 +2768,8 @@ export const getReply = async (message: string) => {
 
 在 `chat/` 文件夹内，创建一个名为 `index.tsx` 的文件，并导入该文件所需的包：
 
-```
+```tsx
 'use client';
-
 import { useState } from 'react';
 import ChatList from './chat-list';
 import ChatBottombar from './chat-bottombar';
@@ -2879,7 +2782,7 @@ import { getReply } from '@/actions/openai.action';
 
 接下来，你需要为 Message 对象定义一个接口，如下所示：
 
-```
+```tsx
 export interface Message {
   role: string;
   content: string;
@@ -2890,17 +2793,14 @@ export interface Message {
 
 接下来，创建 `Chat()` 函数组件，如下所示：
 
-```
+```tsx
 export default function Chat() {
   const [loadingSubmit, setLoadingSubmit] = useState(false);
   const [messages, setMessages] = useState<Message[]>([]);
-
   const sendMessage = async (newMessage: Message) => {
     setLoadingSubmit(true);
     setMessages(prevMessages => [...prevMessages, newMessage]);
-
     const response = await getReply(newMessage.content);
-
     const reply: Message = {
       role: 'assistant',
       content: response as string,
@@ -2908,7 +2808,6 @@ export default function Chat() {
     setLoadingSubmit(false);
     setMessages(prevMessages => [...prevMessages, reply]);
   };
-
   return (
     <div className='max-w-2xl flex flex-col justify-between w-full h-full'>
       <ChatList messages={messages} loadingSubmit={loadingSubmit} />
@@ -2926,24 +2825,20 @@ export default function Chat() {
 
 接下来，你需要创建 `ChatList` 组件，因此请创建一个名为 `chat-list.tsx` 的新文件，内容如下：
 
-```
+```tsx
 import { useRef, useEffect } from 'react';
 import Image from 'next/image';
 import { marked } from 'marked';
 import { Message } from './';
-
 interface ChatListProps {
   messages: Message[];
   loadingSubmit: boolean;
 }
-
 export default function ChatList({ messages, loadingSubmit }: ChatListProps) {
   const bottomRef = useRef<HTMLDivElement>(null);
-
   const scrollToBottom = () => {
     bottomRef.current?.scrollIntoView({ behavior: 'smooth', block: 'end' });
   };
-
   useEffect(() => {
     scrollToBottom();
   }, [messages]);
@@ -2956,7 +2851,7 @@ export default function ChatList({ messages, loadingSubmit }: ChatListProps) {
 
 在 `useEffect()` 调用下方，创建一个 `if` 语句来检查 `messages` 数组的长度：
 
-```
+```tsx
 if (messages.length === 0) {
   return (
     <div className='w-full h-full flex justify-center items-center'>
@@ -2983,7 +2878,7 @@ if (messages.length === 0) {
 
 就在 `if` 语句的正下方，编写另一个 `return` 语句以显示现有消息：
 
-```
+```tsx
 return (
   <div className='w-full overflow-x-hidden h-full justify-end'>
     <div className='w-full flex flex-col overflow-x-hidden overflow-y-hidden min-h-full justify-end'>
@@ -3074,12 +2969,11 @@ return (
 
 接下来，创建一个名为 `chat-bottombar.tsx` 的新文件，其中包含一个聊天输入栏：
 
-```
+```tsx
 import { useState } from 'react';
 import TextareaAutosize from 'react-textarea-autosize';
 import { PaperPlaneIcon } from '@radix-ui/react-icons';
 import { Message } from './';
-
 interface ChatBottombarProps {
   sendMessage: (newMessage: Message) => void;
 }
@@ -3091,17 +2985,17 @@ interface ChatBottombarProps {
 
 你可以从 `app/page.tsx` 导入该组件，如下所示：
 
-```
+
+
 import Chat from '@/components/chat';
 
 export default function Home() {
   return (
-    <main className='flex h-[calc(100dvh)] flex-col items-center '>
+    <main className='flex h-[calc(100dvh)] flex-col items-center'>
       <Chat />
     </main>
   );
 }
-```
 
 另外，请移除 `globals.css` 中定义的 CSS 样式，只保留 Tailwind 指令：
 
@@ -3109,13 +3003,10 @@ export default function Home() {
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
 /* 移除其余部分... */
 ```
 
 现在使用 `npm run dev` 运行应用程序，并尝试在浏览器中与 LLM 进行聊天。
-
-
 
 ### 添加聊天记录
 
@@ -3127,25 +3018,17 @@ export default function Home() {
 // openai.action.ts
 import { ChatMessageHistory } from 'langchain/memory';
 import { RunnableWithMessageHistory } from '@langchain/core/runnables';
-import {
-  ChatPromptTemplate,
-  MessagesPlaceholder,
-} from '@langchain/core/prompts';
-
+import { ChatPromptTemplate, MessagesPlaceholder } from '@langchain/core/prompts';
 // ... 其他代码
 
 const history = new ChatMessageHistory();
-
 const prompt = ChatPromptTemplate.fromMessages([
-  ['system',
-    '你是一个正在与人类进行对话的AI聊天机器人。使用以下上下文来理解人类的问题。你的回答中不要包含表情符号',
-  ],
+  ['system', '你是一个正在与人类进行对话的AI聊天机器人。使用以下上下文来理解人类的问题。你的回答中不要包含表情符号'],
   new MessagesPlaceholder('chat_history'),
   ['human', '{input}'],
 ]);
 
 const chain = prompt.pipe(llm);
-
 const chainWithHistory = new RunnableWithMessageHistory({
   runnable: chain,
   getMessageHistory: sessionId => history,
@@ -3158,47 +3041,43 @@ const chainWithHistory = new RunnableWithMessageHistory({
 
 ```typescript
 export const getReply = async (message: string) => {
-  const response = await chainWithHistory.invoke({
-    input: message
-  }, {
-    configurable: {
-      sessionId: "test"
-    }
-  });
-
+  const response = await chainWithHistory.invoke(
+    { input: message },
+    { configurable: { sessionId: 'test' } }
+  );
   return response.content;
-}
+};
 ```
 
 现在，之前的聊天消息将被添加到提示词中。
 
 你可以尝试先问一个问题，然后如所示询问你上次问的问题。
 
-现在，这个应用程序看起来像是一个简化版的ChatGPT。非常不错！
+现在，这个应用程序看起来像是一个简化版的 ChatGPT。非常不错！
 
 ## 总结
 
-本章的代码可在书籍源代码的 *15_nextjs_langchain* 文件夹中找到。
+本章的代码可在书籍源代码的 `15_nextjs_langchain` 文件夹中找到。
 
-在本章中，你已成功地将LangChain集成到一个Next.js应用中。
+在本章中，你已成功地将 LangChain 集成到一个 Next.js 应用中。
 
-如你所见，开发一个AI驱动的应用程序与开发一个常规的Web应用程序没有太大区别。
+如你所见，开发一个 AI 驱动的应用程序与开发一个常规的 Web 应用程序没有太大区别。
 
-使用Next.js时，你可以使用React组件创建界面，然后定义使用LangChain库来调用LLM的服务器操作。
+使用 Next.js 时，你可以使用 React 组件创建界面，然后定义使用 LangChain 库来调用 LLM 的服务器操作。
 
 收到响应后，你可以将响应存储在一个状态中，然后从中向用户显示。
 
-## 第16章：将NEXT.JS AI应用部署到生产环境
+## 第16章：将 NEXT.JS AI 应用部署到生产环境
 
-既然Next.js应用程序已经可以运行，我们将进行一些改进，以便将其部署到生产环境。
+既然 Next.js 应用程序已经可以运行，我们将进行一些改进，以便将其部署到生产环境。
 
-我们需要改进用户体验，让应用程序感觉更具交互性，然后向用户请求API密钥以使用该应用程序。
+我们需要改进用户体验，让应用程序感觉更具交互性，然后向用户请求 API 密钥以使用该应用程序。
 
 ### 流式传输响应
 
-到目前为止，LLM的响应在LLM完成生成答案后一次性显示。这种延迟使得用户体验不够交互。
+到目前为止，LLM 的响应在 LLM 完成生成答案后一次性显示。这种延迟使得用户体验不够交互。
 
-为了改善用户体验，我们可以在LLM生成响应时流式传输响应。这样，用户将逐渐看到输出，使交互更具动态性和响应性。
+为了改善用户体验，我们可以在 LLM 生成响应时流式传输响应。这样，用户将逐渐看到输出，使交互更具动态性和响应性。
 
 在终端中，运行 `npm install ai`，如下所示：
 
@@ -3206,7 +3085,7 @@ export const getReply = async (message: string) => {
 npm install ai
 ```
 
-`ai` 包是一个用于管理聊天流和UI更新的库。它使你能够更高效地开发动态的AI驱动界面。
+`ai` 包是一个用于管理聊天流和 UI 更新的库。它使你能够更高效地开发动态的 AI 驱动界面。
 
 现在打开 `openai.action.ts` 文件，并从 `ai/rsc` 包导入 `createStreamableValue` 函数：
 
@@ -3215,26 +3094,16 @@ import { createStreamableValue } from 'ai/rsc';
 
 export const getReply = async (message: string) => {
   const stream = createStreamableValue();
-
   (async () => {
     const response = await chainWithHistory.stream(
-      {
-        input: message,
-      },
-      {
-        configurable: {
-          sessionId: 'test',
-        },
-      }
+      { input: message },
+      { configurable: { sessionId: 'test' } }
     );
-
     for await (const chunk of response) {
       stream.update(chunk.content);
     }
-
     stream.done();
   })();
-
   return { streamData: stream.value };
 };
 ```
@@ -3243,7 +3112,7 @@ export const getReply = async (message: string) => {
 
 我们不是调用通常的 `invoke()` 方法，而是调用链的 `stream()` 方法。
 
-`stream()` 方法返回一个可迭代对象，该对象在LangChain流式传输响应时更新。
+`stream()` 方法返回一个可迭代对象，该对象在 LangChain 流式传输响应时更新。
 
 `for await...of` 语法用于处理从响应对象接收到的数据块的异步迭代。
 
@@ -3251,7 +3120,7 @@ export const getReply = async (message: string) => {
 
 流处理过程被包装在一个立即调用函数表达式（IIFE）中，以便流处理可以并行运行。
 
-如果我们移除IIFE，`streamData` 会在流完成之前立即返回给前端。
+如果我们移除 IIFE，`streamData` 会在流完成之前立即返回给前端。
 
 接下来，打开 `chat/index.tsx` 文件，并按照以下方式更新 `sendMessage()` 函数以读取可流式传输的值：
 
@@ -3261,22 +3130,13 @@ import { readStreamableValue } from 'ai/rsc';
 const sendMessage = async (newMessage: Message) => {
   setLoadingSubmit(true);
   setMessages(prevMessages => [...prevMessages, newMessage]);
-
   const { streamData } = await getReply(newMessage.content);
-
-  const reply: Message = {
-    role: 'assistant',
-    content: '',
-  };
-
+  const reply: Message = { role: 'assistant', content: '' };
   setLoadingSubmit(false);
   setMessages(prevMessages => [...prevMessages, reply]);
-
   for await (const stream of readStreamableValue(streamData)) {
     reply.content = `${reply.content}${stream}`;
-    setMessages(prevMessages => {
-      return [...prevMessages.slice(0, -1), reply];
-    });
+    setMessages(prevMessages => [...prevMessages.slice(0, -1), reply]);
   }
 };
 ```
@@ -3289,19 +3149,19 @@ const sendMessage = async (newMessage: Message) => {
 
 最新的消息通过 `setMessages()` 函数不断被 `reply` 对象覆盖。
 
-现在，当你向LLM发送消息时，响应将具有打字动画效果。
+现在，当你向 LLM 发送消息时，响应将具有打字动画效果。
 
-### 创建API密钥输入
+### 创建 API 密钥输入
 
-这个Next.js应用程序使用我们的API密钥来访问LLM提供商的API。
+这个 Next.js 应用程序使用我们的 API 密钥来访问 LLM 提供商的 API。
 
 这在生产环境中不被推荐，因为每次用户使用该应用程序时我们都会被收费。
 
-与其提供我们的API密钥，不如让用户添加他们自己的API密钥到应用程序中。
+与其提供我们的 API 密钥，不如让用户添加他们自己的 API 密钥到应用程序中。
 
-为此，我们需要在侧边栏中为API密钥创建一个文本输入，并仅在添加此API密钥时在服务器上运行实例化LLM的过程。
+为此，我们需要在侧边栏中为 API 密钥创建一个文本输入，并仅在添加此 API 密钥时在服务器上运行实例化 LLM 的过程。
 
-我们将首先添加服务器操作来处理API密钥。
+我们将首先添加服务器操作来处理 API 密钥。
 
 ### 添加 setApi() 函数
 
@@ -3317,20 +3177,13 @@ export const setApi = async (apiKey: string) => {
     model: 'gpt-4o',
     apiKey: apiKey,
   });
-
   const history = new ChatMessageHistory();
-
   const prompt = ChatPromptTemplate.fromMessages([
-    [
-      'system',
-      '你是一个正在与人类进行对话的AI聊天机器人。使用以下上下文来理解人类的问题。你的回答中不要包含表情符号',
-    ],
+    ['system', '你是一个正在与人类进行对话的AI聊天机器人。使用以下上下文来理解人类的问题。你的回答中不要包含表情符号'],
     new MessagesPlaceholder('chat_history'),
     ['human', '{input}'],
   ]);
-
   const chain = prompt.pipe(llm);
-
   chainWithHistory = new RunnableWithMessageHistory({
     runnable: chain,
     getMessageHistory: sessionId => history,
@@ -3353,23 +3206,20 @@ import { AIMessageChunk } from '@langchain/core/messages';
     chainWithHistory as RunnableWithMessageHistory<any, AIMessageChunk>
   ).stream(
     // ...
-  )
-})
+  );
+})();
 ```
 
-`as` 类型断言告诉TypeScript，在此函数执行时，我们确定 `chainWithHistory` 变量不是 `null`。
+`as` 类型断言告诉 TypeScript，在此函数执行时，我们确定 `chainWithHistory` 变量不是 `null`。
 
 ### 添加聊天侧边栏
 
-既然我们已经有了 `setApi()` 函数，我们需要创建一个侧边栏，用户可以在其中输入他们的API密钥以使用该应用程序。
-
-
+既然我们已经有了 `setApi()` 函数，我们需要创建一个侧边栏，用户可以在其中输入他们的 API 密钥以使用该应用程序。
 
 创建一个名为 `chat-sidebar.tsx` 的新文件，并编写以下代码：
 
-```
+```tsx
 'use client';
-
 import { useState } from 'react';
 
 interface ChatSidebarProps {
@@ -3378,12 +3228,10 @@ interface ChatSidebarProps {
 
 export default function ChatSidebar({ handleSubmitKey }: ChatSidebarProps) {
   const [keyInput, setKeyInput] = useState('');
-
   const submitForm = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     handleSubmitKey(keyInput);
   };
-
   return (
     <aside className='fixed top-0 left-0 z-40 w-64 h-screen -translate-x-full translate-x-0'>
       <div className='h-full px-3 py-4 overflow-y-auto bg-slate-50'>
@@ -3415,29 +3263,23 @@ export default function ChatSidebar({ handleSubmitKey }: ChatSidebarProps) {
 
 接下来，打开 `index.tsx` 文件以导入该组件和 `setApi()` 函数并使用它们：
 
-```
+```tsx
 import { setApi, getReply } from '@/actions/openai.action';
 import ChatSidebar from './chat-sidebar';
 
 export default function Chat() {
   // ...
   const [apiKey, setApiKey] = useState('');
-
   // ...
-
   const handleSubmitKey = async (apiKey: string) => {
     await setApi(apiKey);
     setApiKey(apiKey);
   };
-
   return (
-    <div className='max-w-2xl flex flex-col justify-between w-full h-full  '>
+    <div className='max-w-2xl flex flex-col justify-between w-full h-full'>
       <ChatSidebar handleSubmitKey={handleSubmitKey} />
-      <ChatList apiKey={apiKey} messages={messages} loadingSubmit=
-{loadingSubmit} />
-      {apiKey && (
-        <ChatBottombar sendMessage={sendMessage} />
-      )}
+      <ChatList apiKey={apiKey} messages={messages} loadingSubmit={loadingSubmit} />
+      {apiKey && <ChatBottombar sendMessage={sendMessage} />}
     </div>
   );
 }
@@ -3447,7 +3289,7 @@ export default function Chat() {
 
 稍微更新一下 `ChatList` 组件以读取 `apiKey` 值：
 
-```
+```tsx
 useEffect(() => {
   scrollToBottom();
 }, [messages]);
@@ -3456,14 +3298,9 @@ if (!apiKey) {
   return (
     <div className='w-full h-full flex justify-center items-center'>
       <div className='flex flex-col gap-4 items-center'>
-        <div
-          className='bg-blue-50 text-blue-700 px-4 py-3 rounded'
-          role='alert'
-        >
+        <div className='bg-blue-50 text-blue-700 px-4 py-3 rounded' role='alert'>
           <p className='font-bold'>OpenAI Key</p>
-          <p className='text-sm'>
-            Input your OpenAI API Key to use this application.
-          </p>
+          <p className='text-sm'>Input your OpenAI API Key to use this application.</p>
         </div>
       </div>
     </div>
@@ -3483,7 +3320,7 @@ if (!apiKey) {
 
 从项目的根文件夹运行 Next.js 构建命令，如下所示：
 
-```
+```bash
 npm run build
 ```
 
@@ -3507,9 +3344,9 @@ npm run build
 
 在“创建一个仓库”页面中，填写项目的详细信息。唯一必需的字段是仓库名称。
 
-我将其命名为 'nextjs-langchain'，如下所示：
+我将其命名为 `nextjs-langchain`，如下所示：
 
-### 创建一个新仓库
+#### 创建一个新仓库
 
 一个仓库包含所有项目文件，包括修订历史记录。已经在其他地方有项目仓库了？[导入一个仓库。](https://github.com/)
 
@@ -3537,7 +3374,7 @@ npm run build
 
 ...或者从命令行推送现有仓库
 
-```
+```bash
 git remote add origin https://github.com/nathansebhastian/nextjs-langchain.git
 git branch -M main
 git push -u origin main
@@ -3547,19 +3384,19 @@ git push -u origin main
 
 现在你需要为你的项目创建一个仓库。打开命令行，在项目的根文件夹中运行 `git init` 命令：
 
-```
+```bash
 git init
 ```
 
 这会将你的项目转换为一个本地仓库。通过运行 `git add .` 命令将所有项目文件添加到这个本地仓库中：
 
-```
+```bash
 git add .
 ```
 
 更改添加到仓库后并非永久性的，直到你运行 `git commit` 命令。按如下所示提交更改：
 
-```
+```bash
 git commit -m 'Application ready for deployment'
 ```
 
@@ -3567,7 +3404,7 @@ git commit -m 'Application ready for deployment'
 
 现在你需要将这个现有仓库推送到 GitHub。你可以按照 GitHub 的说明进行操作：
 
-```
+```bash
 git remote add origin <URL>
 git branch -M main
 git push -u origin main
@@ -3600,8 +3437,6 @@ Vercel 是一家云托管公司，你可以用它来构建并将 Web 应用程�
 接下来，你将被要求提供要构建和部署的项目。
 
 由于项目已上传到 GitHub，你可以选择 *Continue With Github*，如下所示：
-
-
 
 ## 总结
 

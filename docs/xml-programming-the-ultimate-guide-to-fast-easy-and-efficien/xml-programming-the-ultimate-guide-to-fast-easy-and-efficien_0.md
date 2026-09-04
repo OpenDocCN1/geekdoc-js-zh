@@ -1,21 +1,19 @@
-# XML 编程：快速、简单高效学习 XML 编程的终极指南（操作系统、项目、XML 编程、DTD、HTML5、JavaScript）
 
+# XML 编程：快速、简单、高效学习 XML 编程的终极指南
 
+（操作系统、项目、XML 编程、DTD、HTML5、JavaScript）
 
 ![](img/00005.jpeg)
 
-
-
-
 ## 引言
 
-你是否曾觉得学习 XML 是一场噩梦？是否被海量的初学者指南搞得心灰意灭？我理解从一本几百页的书中提取核心内容的困难。为了自己创建一个简单的 XML 文档而去阅读几千行代码并不无趣。如果我说我可以为你完成这项工作，你会有什么感觉？我已经为你读完了数百页的内容，并将将为你提供即取即用的“果汁”。
+你是否曾觉得学习 XML 是一场噩梦？是否被海量的初学者指南搞得心灰意灭？我理解从一本几百页的书中提取核心内容的困难。为了自己创建一个简单的 XML 文档而去阅读几千行代码并不无趣。如果我说我可以为你完成这项工作，你会有什么感觉？我已经为你读完了数百页的内容，并将为你提供即取即用的“果汁”。
 
 本书是一份快速易懂的指南，是从那些像枕头一样厚的书籍、令人人生的冗长示例以及枯燥的高级术语中提取出来的。我写这本书时，考虑到了我作为初学者所面临的所有困难，因此提取的内容是简单、易懂且简洁的。
 
 通过这段简短的介绍，我请求你的关注，并欢迎你和我一起穿过这本书。
 
-## 第 1 章 - 标记语言包含什么？
+## 第 1 章：标记语言包含什么？
 
 ![](img/00001.jpeg)
 
@@ -53,7 +51,7 @@ SGML stands for Standard Generalized Markup Language.
 
 ### 小贴士
 
-纯文本：John Mathews
+纯文本：`John Mathews`
 
 HTML 文件（显示纯文本，使用预定义标签）：
 
@@ -66,7 +64,7 @@ HTML 文件（显示纯文本，使用预定义标签）：
 
 你在标记容器里发现什么吗？
 
-## 第 2 章 - 有了 HTML 为什么还要 XML？
+## 第 2 章：有了 HTML 为什么还要 XML？
 
 ![](img/00002.jpeg)
 
@@ -105,25 +103,17 @@ XML 是人类可读的，与语言无关；它可以跨平台共享且不依赖�
 
 以下是 XML 的一些实际用途：
 
-数据传输和存储：代码段 2 是使用 `XML` 记录的完美示例。`XML` 使用标签标记每个信息字段，从而使数据处理（搜索、排序、过滤等）变得简单。
+- 数据传输和存储：代码段 2 是使用 `XML` 记录的完美示例。`XML` 使用标签标记每个信息字段，从而使数据处理（搜索、排序、过滤等）变得简单。
+- 文档发布：可以轻松地将样式表添加到 `XML` 中以获得布局。
+- 计算机程序之间的信息交换：程序员对 XML 最流行的用途之一是在网络服务通信中的应用。`XML` 可以跨网络服务携带信息，而不依赖于构建网络服务的语言或平台。
+- 为操作系统创建 KVM 和启动：这是 `XML` 最不为人知的用法之一。可以使用 `XML` 创建内核虚拟机和引导。
+- 创建、格式化、存储、编码和交换：数学公式、化学分子结构、乐谱、DNA、RNA、蛋白质序列信息、复杂的电子商务交易、天文学数据、谱系数据等，都可以以所需的格式进行创建或交换。
 
-文档发布：可以轻松地将样式表添加到 `XML` 中以获得布局。
-
-计算机程序之间的信息交换：程序员对 XML 最流行的用途之一是在网络服务通信中的应用。`XML` 可以跨网络服务携带信息，而不依赖于构建网络服务的语言或平台。
-
-为操作系统创建 KVM 和启动：这是 `XML` 最不为人知的用法之一。可以使用 `XML` 创建内核虚拟机和引导。
-
-创建、格式化、存储、编码和交换：数学公式、化学分子结构、乐谱、DNA、RNA、蛋白质序列信息、复杂的电子商务交易、天文学数据、谱系数据等，都可以以所需的格式进行创建或交换。
-
-基于 XML 的操作系统
+### 基于 XML 的操作系统
 
 基于 XML 的互联网操作系统（XIOS）是由一家名为 Xcerion 的公司提出的提议，该操作系统运行在网络浏览器中，预计将提供桌面计算体验和云计算的优势。提议的操作系统将带来许多好处，最重要的一点是 XIOS 将成为有以来最安全的操作系统，因为它对大多数恶意软件免疫。其他优点包括：低开发成本、数据可移植性、平台和硬件无关以及内置协作。
 
-基于 XML 的接口定义语言
-
-
-
-
+### 基于 XML 的接口定义语言
 
 WSDL - Web 服务描述语言（Web Services Description Language）是 XML 最重要的应用之一。WSDL 是一种描述 Web 服务提供的功能的 XML 文档。它还描述了如何使用提供的服务。虽然这种 XML 对人类可读且可编辑，但大多数是通过程序化生成和消费的。
 
@@ -142,11 +132,11 @@ XML 文件（使用用户定义的标签将纯文本转换为可用的信息）�
 
 XML 不值得探索吗？
 
-## 第 3 章 - 学习语法与语义
+## 第 3 章：学习语法与语义
 
 ![](img/00003.jpeg)
 
-对于一个简单的标记语言来说，炒作得太过了了不是吗？让我们学习它、使用它，看看它到底有多好。学习使用一种语言的第一步是学习它遵循的规则。
+对于一个简单的标记语言来说，炒作得太过了不是吗？让我们学习它、使用它，看看它到底有多好。学习使用一种语言的第一步是学习它遵循的规则。
 
 ### XML 不是一种编程语言
 
@@ -183,7 +173,7 @@ xmlns:a="http://www.xml.example.com/ns/attender">
 </list:coffeeshopmanagementlist>
 ```
 
-### 颜色代码：
+### 颜色代码
 
 - `XML version` 和编码类型
 - `Namespaces`（命名空间）
@@ -192,7 +182,7 @@ xmlns:a="http://www.xml.example.com/ns/attender">
 
 ### XML 声明
 
-如果 XML 包含声明，那么它应该是 XML 的第一行。在代码片段 3 中，蓝色标记的第一行是 `XML declaration`，它通常以 `"<?xml"` 开始。XML 声明是区分大小敏感的，`"<?xml"` 应该始终小小写。XML 声明有三个参数 `version`（表示 XML 的版本）、`encoding`（表示使用的编码类型）和 `standalone`（表示它是否是独立的 XML）。参数的使用顺序必须与前一个语句解释的顺序相同。参数 `"version"` 是声明中的强制性参数。
+如果 XML 包含声明，那么它应该是 XML 的第一行。在代码片段 3 中，蓝色标记的第一行是 `XML declaration`，它通常以 `"<?xml"` 开始。XML 声明是区分大小敏感的，`"<?xml"` 应该始终小小写。XML 声明有三个参数：`version`（表示 XML 的版本）、`encoding`（表示使用的编码类型）和 `standalone`（表示它是否是独立的 XML）。参数的使用顺序必须与前一个语句解释的顺序相同。参数 `"version"` 是声明中的强制性参数。
 
 ### XML 元素
 
@@ -226,7 +216,7 @@ xmlns:a="http://www.xml.example.com/ns/attender">
 </shoes>
 ```
 
- XML 的元素可以有属性，它们被称为属性（attributes）。每个元素可以有一个或多个属性，且属性是区分大小敏感的。属性只能有一个值。在代码片段 6 中，元素 `"emails"` 具有属性 `"date"` 和 `"from"`，值分别为 `"10/12/2014"` 和 `"Ann"`。
+XML 的元素可以有属性，它们被称为属性（attributes）。每个元素可以有一个或多个属性，且属性是区分大小敏感的。属性只能有一个值。在代码片段 6 中，元素 `"emails"` 具有属性 `"date"` 和 `"from"`，值分别为 `"10/12/2014"` 和 `"Ann"`。
 
 ### 代码片段 6
 
@@ -280,7 +270,7 @@ xmlns:a="http://www.xml.example.com/ns/attender">
 xmlns:prefix="URI"
 ```
 
-命名空间声明示例
+### 命名空间声明示例
 
 ```xml
 xmlns:list="http://www.xml.example.com/ns/list"
@@ -293,11 +283,11 @@ xmlns:list="http://www.xml.example.com/ns/list"
 - XML 声明没有闭合标签。
 - XML 声明参数区分大小写。
 - XML 中只有一个根元素。
-- 所有的 XML 元素都区分大小写的。
+- 所有的 XML 元素都区分大小写。
 - 所有的 XML 元素必须有闭合标签。
 - 所有 XML 元素的值必须在单引号或双引号内。
 
-## 第 4 章 - 文档类型定义
+## 第 4 章：文档类型定义
 
 在实际应用中，XML 文档跨应用程序使用。因此，XML 文档必须符合标准。所以一个 XML 不仅应当是格式良好的（well formed），而且是有效的（valid）。
 
@@ -305,7 +295,7 @@ xmlns:list="http://www.xml.example.com/ns/list"
 
 文档类型定义（DTD）有助于构建有效的 XML。它是一个带有规则的文档，定义了 XML 文档的结构和合法元素。这使得 XML 文档具有可比性并适用于应用程序的数据交换。消费应用程序可以使用相同的 DTD 验证输入的 XML 文档。
 
-### 示例：
+### 示例
 
 如果 XML 文档包含一个元素 `"size"`，它可以表示为 `<Size>` 或 `<size>` 或 `<SIZE>`。它可以有值，也可以为空；值可以是英寸或厘米。这些歧义在共享 XML 之前必须进行检查并实现标准的表示方法。
 
@@ -322,10 +312,10 @@ DTD 可以是内部或外部的。内部 DTD 作为 XML 的一部分包含，而
 - 元素
 - 属性
 - 实体
-- PCDATA
-- CDATA
+- `PCDATA`
+- `CDATA`
 
-我们已经充分讨论了元素和属性，实体是 XML 文档中使用的特殊字符。实体包括：`<`, `>`, `&`, `'`, `"` 。PCDATA 是会被解析器解析的文本，它们会被视为实体或标记。CDATA 是不会被解析器解析的文本。
+我们已经充分讨论了元素和属性，实体是 XML 文档中使用的特殊字符。实体包括：`<`、`>`、`&`、`'`、`"`。`PCDATA` 是会被解析器解析的文本，它们会被视为实体或标记。`CDATA` 是不会被解析器解析的文本。
 
 ### DTD 中的元素声明
 
@@ -335,12 +325,9 @@ DTD 可以是内部或外部的。内部 DTD 作为 XML 的一部分包含，而
 <!ELEMENT element-name ANY>
 ```
 
-其中，
+其中：
 
 `element-name` 将替换为实际的元素名称，`element-name` 区分大小写。
-
-
-
 
 该类别定义了 `element-name` 中数据的类型。
 
@@ -348,7 +335,7 @@ DTD 可以是内部或外部的。内部 DTD 作为 XML 的一部分包含，而
 
 关键字 `ANY` 表示该元素可以包含任何类型的内容。
 
-以下代码段示例了在 DTD 中声明带有子元素的各种语法：
+以下代码段示例了在 DTD 中声明带有子元素的各种语法。
 
 ### 声明具有多个子元素的元素
 
@@ -381,6 +368,8 @@ DTD 可以是内部或外部的。内部 DTD 作为 XML 的一部分包含，而
 ```
 
 ### 声明只有一个子元素的元素
+
+
 
 ```xml
 <!ELEMENT camera (lens)>
@@ -513,7 +502,7 @@ DTD 可以是内部或外部的。内部 DTD 作为 XML 的一部分包含，而
 <!ELEMENT filter (#PCDATA)>
 ```
 
-上述 DTD 保存为 `camera.dtd`。XML 中包含了该文件，并遵循 DTD 的标准。
+上述 DTD 保存为`camera.dtd`。XML 中包含了该文件，并遵循 DTD 的标准。
 
 ```xml
 <?xml version="1.0"?>
@@ -531,7 +520,7 @@ DTD 可以是内部或外部的。内部 DTD 作为 XML 的一部分包含，而
 
 我们可以尝试一下运气吗？我们如何应用目前所学的知识？
 
-来吧，让我们尝试创建一个符合下方 `excursion.dtd` 标准的 XML 文档：
+来吧，让我们尝试创建一个符合下方`excursion.dtd`标准的 XML 文档：
 
 ```xml
 <!DOCTYPE EXCURSION [ 
@@ -550,7 +539,7 @@ DTD 可以是内部或外部的。内部 DTD 作为 XML 的一部分包含，而
 ### 在继续之前，先尝试一下
 
 - 编写一个 XML 声明。
-- 包含 `excursion.dtd`。
+- 包含`excursion.dtd`。
 - 查看你是否已经识别了根元素和其他子元素。
 - 一个有效的 XML 必须是格式良好的（well-formed）。
 - 检查是否正确映射了所有属性。
@@ -572,9 +561,6 @@ DTD 可以是内部或外部的。内部 DTD 作为 XML 的一部分包含，而
 </EXCURSION>
 ```
 
-
-
-
 ```java
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.DocumentBuilder;
@@ -594,6 +580,7 @@ import java.io.File;
 通过文档构建器解析 XML 文件并创建文档。
 
 `File xmlFile = new File("/user/organizer.xml");`
+
 `Document doc = dBuilder.parse(xmlFile);`
 
 提取根元素并创建一个从根节点到子节点的循环。获取元素的值及其对应的属性。
@@ -609,9 +596,10 @@ import java.io.File;
 ### 提取属性和值
 
 `Element subElement = (Element) subElementNode;`
+
 `String subElementAttribute = subElement.getAttribute("date");`
 
-让我们来看一个 Java 完整示例代码及其输出，它演示了从 "oraganizer.xml"（代码段 9 所示）中解析和提取数据。
+让我们来看一个 Java 完整示例代码及其输出，它演示了从`oraganizer.xml`（代码段 9 所示）中解析和提取数据。
 
 ### Java 类
 
@@ -672,11 +660,11 @@ No. Of Calls : 0
 No. Of Messages : 4
 ```
 
-### 使用 Javascript 解析 XML
+## 使用 Javascript 解析 XML
 
 让我们考虑代码段 9 中的相同 XML 文档。使用 javascript 解析 XML 文档，必须遵循以下步骤：
 
-### 通过 javascript 加载 XML 文件。
+### 通过 javascript 加载 XML 文件
 
 ```javascript
 var xmlDoc = new ActiveXObject("Microsoft.XMLDOM");
@@ -688,9 +676,9 @@ function loadXML(xmlFile) {
 }
 ```
 
-必须触发 `loadXML` 函数，XML 文档必须作为参数传递给函数。
+必须触发`loadXML`函数，XML 文档必须作为参数传递给函数。
 
-函数中的第二个语句调用了名为 `verify` 的另一个函数。该函数验证创建的 ActiveX DOM 对象是否处于就绪状态。
+函数中的第二个语句调用了名为`verify`的另一个函数。该函数验证创建的 ActiveX DOM 对象是否处于就绪状态。
 
 ```javascript
 function verify() {
@@ -700,7 +688,7 @@ function verify() {
 }
 ```
 
-要查看 XML 文档，可以使用 javascript 的 `alert` 函数。
+要查看 XML 文档，可以使用 javascript 的`alert`函数。
 
 ```javascript
 function viewOrganizerXML() {
@@ -709,7 +697,7 @@ function viewOrganizerXML() {
 }
 ```
 
-要解释 XML 文档中的数据，必须访问子节点并返回它们的标签名，可以使用 `getAttribute` 函数来获取属性值。
+要解释 XML 文档中的数据，必须访问子节点并返回它们的标签名，可以使用`getAttribute`函数来获取属性值。
 
 ```javascript
 function viewOrganizerData() {
@@ -733,11 +721,11 @@ No. Of Calls : 0
 No. Of Messages : 4
 ```
 
-### 使用 Javascript 解析 XML
+## 使用 Javascript 解析 XML
 
 让我们考虑代码段 9 中的相同 XML 文档。使用 javascript 解析 XML 文档，必须遵循以下步骤：
 
-### 通过 javascript 加载 XML 文件。
+### 通过 javascript 加载 XML 文件
 
 ```javascript
 var xmlDoc = new ActiveXObject("Microsoft.XMLDOM");
@@ -749,9 +737,9 @@ function loadXML(xmlFile) {
 }
 ```
 
-必须触发 `loadXML` 函数，XML 文档必须作为参数传递给函数。
+必须触发`loadXML`函数，XML 文档必须作为参数传递给函数。
 
-函数中的第二个语句调用了名为 `verify` 的另一个函数。该函数验证创建的 ActiveX DOM 对象是否处于就绪状态。
+函数中的第二个语句调用了名为`verify`的另一个函数。该函数验证创建的 ActiveX DOM 对象是否处于就绪状态。
 
 ```javascript
 function verify() {
@@ -761,7 +749,7 @@ function verify() {
 }
 ```
 
-要查看 XML 文档，可以使用 javascript 的 `alert` 函数。
+要查看 XML 文档，可以使用 javascript 的`alert`函数。
 
 ```javascript
 function viewOrganizerXML() {
@@ -770,7 +758,9 @@ function viewOrganizerXML() {
 }
 ```
 
-要解释 XML 文档中的数据，必须访问子节点并返回它们的标签名，可以使用 `getAttribute` 函数来获取属性值。
+
+
+要解释 XML 文档中的数据，必须访问子节点并返回它们的标签名，可以使用`getAttribute`函数来获取属性值。
 
 ```javascript
 function viewOrganizerData() {
@@ -796,11 +786,11 @@ No. Of Messages : 4
 
 ### SAX 解析器
 
-SAX 是 Simple API for XML 的简称，与 DOM 不同，它不会为 XML 文档创建对象。它可以从上到部读取。无法随机访问任何元素。SAX 可以处理大型文档，因为它不存储内容。
+`SAX`是`Simple API for XML`的简称，与`DOM`不同，它不会为 XML 文档创建对象。它可以从上到部读取。无法随机访问任何元素。`SAX`可以处理大型文档，因为它不存储内容。
 
 ### SAX 工作原理
 
-我们熟悉事件驱动编程吗？SAX 是基于事件驱动的。我们在每天使用的应用程序中看到它们。
+我们熟悉事件驱动编程吗？`SAX`是基于事件驱动的。我们在每天使用的应用程序中看到它们。
 
 ### 回调方法
 
@@ -820,10 +810,6 @@ void startPrefixMapping(String prefix, String uri)
 void endPrefixMapping(String prefix)
 ```
 
-
-
-
-
 ```java
 import org.xml.sax.helpers.DefaultHandler;
 ```
@@ -834,7 +820,7 @@ import org.xml.sax.helpers.DefaultHandler;
 
 `SAXParser saxParser = factory.newSAXParser();`
 
-创建一个扩展 `DefaultHandler` 的 Java 类并重写回调方法。
+创建一个扩展`DefaultHandler`的 Java 类并重写回调方法。
 
 ### 创建一个扩展 DefaultHandler 的类
 
@@ -861,7 +847,7 @@ class SAXXMLHandler extends DefaultHandler {
 }
 ```
 
--   通过 sax 解析器解析 XML 文件，并触发 `SAXXMLHandler` 类中重写的回调方法。
+-   通过 sax 解析器解析 XML 文件，并触发`SAXXMLHandler`类中重写的回调方法。
 
 `File xmlFile = new File("/user/shoes.xml");`
 
@@ -869,7 +855,7 @@ class SAXXMLHandler extends DefaultHandler {
 
 `saxParser.parse(xmlFile, saxHandler);`
 
-让我们来看一个完整的 Java 示例代码及其输出，它演示了从“shoes.xml”（如代码段 10 所示）中解析并提取数据。
+让我们来看一个完整的 Java 示例代码及其输出，它演示了从`shoes.xml`（如代码段 10 所示）中解析并提取数据。
 
 ### Java 类
 
@@ -967,36 +953,48 @@ End Element : shoe
 
 ### 小贴士
 
--   当解析的 XML 文件很大时，`DOM` 解析器消耗更多内存且速度非常慢。
--   `DOM` 实现可能使用 10 字节内存来处理 1 字节的 XML。
--   当 XML 数据被重复使用时，优先选择 `DOM` 解析器。
--   当 XML 文档深度嵌套时，优先选择 `DOM` 解析器。
--   当 XML 文档通过流到达时，优先选择 `SAX` 解析器。
--   当 XML 巨大时，优先选择 `SAX` 解析器。
+-   当解析的 XML 文件很大时，`DOM`解析器消耗更多内存且速度非常慢。
+
+-   `DOM`实现可能使用 10 字节内存来处理 1 字节的 XML。
+
+-   当 XML 数据被重复使用时，优先选择`DOM`解析器。
+
+-   当 XML 文档深度嵌套时，优先选择`DOM`解析器。
+
+-   当 XML 文档通过流到达时，优先选择`SAX`解析器。
+
+-   当 XML 巨大时，优先选择`SAX`解析器。
 
 我告诉过你了，这个解析器听起来很有趣！！
 
 ## 第 7 章 - HTML5，为什么在这里？
 
-`HTML5` 是 `HTML` 的增强版本，具有更多功能。`HTML5` 有什么如此迷人的地方？
+`HTML5`是`HTML`的增强版本，具有更多功能。`HTML5`有什么如此迷人的地方？
 
--   有新的 `canvas` 元素，有助于绘制图形。
+-   有新的`canvas`元素，有助于绘制图形。
+
 -   有新的媒体元素。
+
 -   有新的表单元素。
+
 -   有新的结构化元素。
+
 -   语法被简化了。
+
 -   有新的特定内容元素。
+
 -   支持本地存储。
+
 -   支持应用缓存。
+
 -   它现在是跨平台的。
 
-好吧，`HTML5` 看起来很棒，但我们为什么要在这里（XML 平台）讨论它呢？
+好吧，`HTML5`看起来很棒，但我们为什么要在这里（XML 平台）讨论它呢？
 
-有一个原因，那就是 `XHTML5`，它是 XML 序列化的 `HTML5`。改进后的 `HTML5` 现在已经和 `XML` 一样好了。`XHTML5` 是 `XML` 的良好格式语法与 `HTML5` 功能的结合。根据所使用的媒体类型，可以选择 `HTML5` 或 `XHTML5`。
+有一个原因，那就是`XHTML5`，它是 XML 序列化的`HTML5`。改进后的`HTML5`现在已经和`XML`一样好了。`XHTML5`是`XML`的良好格式语法与`HTML5`功能的结合。根据所使用的媒体类型，可以选择`HTML5`或`XHTML5`。
 
 ### 总结
 
-`XML` 本身仅仅是一种良好格式文本的表示。它是一种定义结构化数据的机制。但它在信息交换中的应用提升了其作为标记语言的声誉。这本书介绍了创建和解释有效 XML 文档的方法，并配有实时示例。
+`XML`本身仅仅是一种良好格式文本的表示。它是一种定义结构化数据的机制。但它在信息交换中的应用提升了其作为标记语言的声誉。这本书介绍了创建和解释有效 XML 文档的方法，并配有实时示例。
 
 祝大家在实践所学时顺利。
-

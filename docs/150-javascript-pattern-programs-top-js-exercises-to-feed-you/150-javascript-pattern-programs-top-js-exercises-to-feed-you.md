@@ -1,8 +1,5 @@
 # 150+ JavaScript 模式程序：通过 if 语句和循环激发创造力的顶级 JS 练习（150+ 模式程序系列 2）
 
-
-
-
 ```
 * * * * *       *       * * * * *
   * * * *     * *       * * * *
@@ -13,18 +10,13 @@
 
 ![](img/f5f49b882c86cd82f621f7efd2597c85_0_0.png)
 
+## 简介
 
-
-
-
-
-# 简介
-
-通过使用 JavaScript 语言的 if 语句和循环创建美丽的星号图案来培养你的创造力。这门强大的语言将让你在编写代码时更加得心应手，因为通过练习这些技巧，你将掌握编程中更核心的主题。
+通过使用 JavaScript 语言的 `if` 语句和循环创建美丽的星号图案来培养你的创造力。这门强大的语言将让你在编写代码时更加得心应手，因为通过练习这些技巧，你将掌握编程中更核心的主题。
 
 如果你在大学学习计算机科学，这本书非常适合你。他们将要求你创建这类图案，这对于学习各种高级技巧并快速掌握这门美妙的语言非常有用。
 
-# 模式 1
+## 模式 1
 
 ```
 // *****
@@ -42,7 +34,7 @@ for (let i = 1; i <= 5; i++) {
 }
 ```
 
-# 模式 2
+## 模式 2
 
 ```
 // *
@@ -60,7 +52,7 @@ for (let i = 1; i <= 5; i++) {
 }
 ```
 
-# 模式 3
+## 模式 3
 
 ```
 // *****
@@ -78,7 +70,7 @@ for (let i = 1; i <= 5; i++) {
 }
 ```
 
-# 模式 4
+## 模式 4
 
 ```
 //     *
@@ -104,7 +96,7 @@ for (let i = 1; i <= n; i++) {
 }
 ```
 
-# 模式 5
+## 模式 5
 
 ```
 // *****
@@ -130,7 +122,7 @@ for (let i = n; i >= 1; i--) {
 }
 ```
 
-# 模式 6
+## 模式 6
 
 ```
 //     *
@@ -155,7 +147,7 @@ for (let i = 1; i < p_height; i++) {
 }
 ```
 
-# 模式 7
+## 模式 7
 
 ```
 // * * * * *
@@ -181,7 +173,7 @@ for (let i = p_height; i >= 1; i--) {
 }
 ```
 
-# 模式 8
+## 模式 8
 
 ```
 //     *
@@ -669,23 +661,6 @@ for (let i = 0; i <= n; i++) {
 // EDCBA
 ```
 
-```javascript
-const n = 4;
-
-for (let i = 0; i <= n; i++) {
-    let row = "";
-
-    for (let j = n; j >= 0; j--) {
-        if (j > i) {
-            row += '*';
-        } else {
-            row += String.fromCharCode(j + 65);
-        }
-    }
-
-    console.log(row);
-}
-```
 
 ## 模式 26
 
@@ -905,7 +880,9 @@ for (let i = 1; i <= n; i++) {
 // 1* 2* 3
 // 1* 2* 3* 4
 // 1* 2* 3* 4* 5
+```
 
+```javascript
 const n = 5;
 
 for (let i = 1; i <= n; i++) {
@@ -930,7 +907,9 @@ for (let i = 1; i <= n; i++) {
 // 4* 5* 6
 // 10* 9* 8* 7
 // 11* 12* 13* 14* 15
+```
 
+```javascript
 const n = 5;
 
 let px = 1;
@@ -968,7 +947,9 @@ for (let i = 1; i <= n; i++) {
 // ###
 // ****
 // #####
+```
 
+```javascript
 const n = 5;
 
 for (let i = 1; i <= n; i++) {
@@ -994,7 +975,9 @@ for (let i = 1; i <= n; i++) {
 // 333
 // ****
 // 55555
+```
 
+```javascript
 const n = 5;
 
 for (let i = 1; i <= n; i++) {
@@ -1020,7 +1003,9 @@ for (let i = 1; i <= n; i++) {
 // 123
 // ****
 // 12345
+```
 
+```javascript
 const n = 5;
 
 for (let i = 1; i <= n; i++) {
@@ -1046,7 +1031,9 @@ for (let i = 1; i <= n; i++) {
 // 1*3
 // 1*3*
 // 1*3*5
+```
 
+```javascript
 const n = 5;
 
 for (let i = 1; i <= n; i++) {
@@ -1072,7 +1059,9 @@ for (let i = 1; i <= n; i++) {
 // 3*3
 // 4*4*
 // 5*5*5
+```
 
+```javascript
 const n = 5;
 
 for (let i = 1; i <= n; i++) {
@@ -1098,7 +1087,9 @@ for (let i = 1; i <= n; i++) {
 // ####
 // **
 // #
+```
 
+```javascript
 const n = 5;
 
 for (let i = n; i >= 1; i--) {
@@ -1124,7 +1115,9 @@ for (let i = n; i >= 1; i--) {
 // #*#
 // #*
 // #
+```
 
+```javascript
 const n = 5;
 
 for (let i = n; i >= 1; i--) {
@@ -1150,7 +1143,9 @@ for (let i = n; i >= 1; i--) {
 // 333
 // **
 // 1
+```
 
+```javascript
 const n = 5;
 
 for (let i = n; i >= 1; i--) {
@@ -1176,7 +1171,9 @@ for (let i = n; i >= 1; i--) {
 // 123
 // **
 // 1
+```
 
+```javascript
 const n = 5;
 
 for (let i = n; i >= 1; i--) {
@@ -1202,7 +1199,9 @@ for (let i = n; i >= 1; i--) {
 // 1*3
 // 1*
 // 1
+```
 
+```javascript
 const n = 5;
 
 for (let i = n; i >= 1; i--) {
@@ -1228,7 +1227,9 @@ for (let i = n; i >= 1; i--) {
 // 3*3
 // 2*
 // 1
+```
 
+```javascript
 const n = 5;
 
 for (let i = n; i >= 1; i--) {
@@ -1254,7 +1255,9 @@ for (let i = n; i >= 1; i--) {
 //   ####
 //  ****
 // ######
+```
 
+```javascript
 const n = 5;
 
 for (let i = n; i >= 1; i--) {
@@ -1284,7 +1287,9 @@ for (let i = n; i >= 1; i--) {
 //   #*#
 //  *##*
 // #*##*
+```
 
+```javascript
 const n = 5;
 
 for (let i = 1; i <= n; i++) {
@@ -1308,33 +1313,6 @@ for (let i = 1; i <= n; i++) {
 
 ## 模式 48
 
-```
-// 1
-// **
-// 333
-// ****
-// 55555
-
-const n = 5;
-
-for (let i = 1; i <= n; i++) {
-    let row = "";
-
-    for (let j = n; j >= 1; j--) {
-        if (i >= j) {
-            if (i % 2 === 0) {
-                row += '*';
-            } else {
-                row += i;
-            }
-        } else {
-            row += ' ';
-        }
-    }
-
-    console.log(row);
-}
-```
 
 ## 模式 49
 
@@ -1947,31 +1925,8 @@ for (let i = 1; i <= n; i++) {
 
 ## 模式 70
 
-```
-// *****
-// *   *
-// *   *
-// *   *
-// *****
 
-const n = 5;
-
-for (let i = 1; i <= n; i++) {
-    let row = "";
-
-    for (let j = 1; j <= n; j++) {
-        if ((j === 1 || j === n) || (i === 1 || i === n)) {
-            row += '*';
-        } else {
-            row += ' ';
-        }
-    }
-
-    console.log(row);
-}
-```
-
-## 模式 71
+# 模式 71
 
 ```
 // *****
@@ -2582,7 +2537,11 @@ for (let i = 1; i <= n; i++) {
 // * * * * * * *
 ```
 
-```
+
+
+# 模式 90
+
+```javascript
 let n = 7;
 let x = 1;
 
@@ -2607,7 +2566,7 @@ for (let i = 1; i <= n; i++) {
 }
 ```
 
-## 模式 90
+输出：
 
 ```
 // *       *
@@ -2619,7 +2578,9 @@ for (let i = 1; i <= n; i++) {
 // *       *
 ```
 
-```
+# 模式 91
+
+```javascript
 let n = 7;
 let x = 1;
 
@@ -2644,7 +2605,7 @@ for (let i = 1; i <= n; i++) {
 }
 ```
 
-## 模式 91
+输出：
 
 ```
 // * * * * *
@@ -2658,7 +2619,9 @@ for (let i = 1; i <= n; i++) {
 // * * * * *
 ```
 
-```
+# 模式 92
+
+```javascript
 let size = 4;
 
 for (let i = size; i >= -size; i--) {
@@ -2672,7 +2635,7 @@ for (let i = size; i >= -size; i--) {
 }
 ```
 
-## 模式 92
+输出：
 
 ```
 // * * * *
@@ -2684,7 +2647,9 @@ for (let i = size; i >= -size; i--) {
 // * * * *
 ```
 
-```
+# 模式 93
+
+```javascript
 let n = 7;
 let x = 1;
 
@@ -2709,7 +2674,7 @@ for (let i = 1; i <= n; i++) {
 }
 ```
 
-## 模式 93
+输出：
 
 ```
 // *     *
@@ -2719,7 +2684,9 @@ for (let i = 1; i <= n; i++) {
 // *********
 ```
 
-```
+# 模式 94
+
+```javascript
 let n = 5;
 
 for (let i = 1; i <= n; i++) {
@@ -2737,7 +2704,7 @@ for (let i = 1; i <= n; i++) {
 }
 ```
 
-## 模式 94
+输出：
 
 ```
 // *********
@@ -2747,7 +2714,9 @@ for (let i = 1; i <= n; i++) {
 // *       *
 ```
 
-```
+# 模式 95
+
+```javascript
 let n = 5;
 let px = n;
 let py = n;
@@ -2769,7 +2738,7 @@ for (let i = 1; i <= n; i++) {
 }
 ```
 
-## 模式 95
+输出：
 
 ```
 //     *       *
@@ -2779,7 +2748,9 @@ for (let i = 1; i <= n; i++) {
 // *******************
 ```
 
-```
+# 模式 96
+
+```javascript
 let minStars = 1;
 let pHeight = 5;
 let pSpace = pHeight - 1;
@@ -2811,7 +2782,7 @@ for (let i = 0; i < pHeight; i++) {
 }
 ```
 
-## 模式 96
+输出：
 
 ```
 // 1 2 3 4 * 4 3 2 1
@@ -2820,6 +2791,8 @@ for (let i = 0; i < pHeight; i++) {
 // 1 * * * * * * * 1
 // * * * * * * * * *
 ```
+
+# 模式 97
 
 ```javascript
 let n = 5;
@@ -2843,7 +2816,7 @@ for (let i = 1; i <= n; i++) {
 }
 ```
 
-## 模式 97
+输出：
 
 ```
 //       *
@@ -2852,6 +2825,8 @@ for (let i = 1; i <= n; i++) {
 // # * # * # * #
 // * # * # * # * # *
 ```
+
+# 模式 98
 
 ```javascript
 let n = 5;
@@ -2875,7 +2850,7 @@ for (let i = 1; i <= n; i++) {
 }
 ```
 
-## 模式 98
+输出：
 
 ```
 //         *
@@ -2888,6 +2863,8 @@ for (let i = 1; i <= n; i++) {
 // * * * * * * * *
 // * * * * * * * * *
 ```
+
+# 模式 99
 
 ```javascript
 let p_height = 5;
@@ -2923,7 +2900,7 @@ for (let i = 0; i < p_height; i++) {
 }
 ```
 
-## 模式 99
+输出：
 
 ```
 //     *
@@ -2932,6 +2909,8 @@ for (let i = 0; i < p_height; i++) {
 //  *     *
 // *********
 ```
+
+# 模式 100
 
 ```javascript
 let n = 5;
@@ -2955,7 +2934,7 @@ for (let i = 1; i <= n; i++) {
 }
 ```
 
-## 模式 100
+输出：
 
 ```
 // *
@@ -2966,6 +2945,8 @@ for (let i = 1; i <= n; i++) {
 // **
 // *
 ```
+
+# 模式 101
 
 ```javascript
 let n = 7;
@@ -2992,7 +2973,7 @@ for (let i = 1; i <= n; i++) {
 }
 ```
 
-## 模式 101
+输出：
 
 ```
 // *
@@ -3003,6 +2984,8 @@ for (let i = 1; i <= n; i++) {
 // **
 // *
 ```
+
+# 模式 102
 
 ```javascript
 let n = 7;
@@ -3029,7 +3012,7 @@ for (let i = 1; i <= n; i++) {
 }
 ```
 
-## 模式 102
+输出：
 
 ```
 // *********
@@ -3042,6 +3025,8 @@ for (let i = 1; i <= n; i++) {
 // *       *
 // *********
 ```
+
+# 模式 103
 
 ```javascript
 let n = 5;
@@ -3065,7 +3050,7 @@ for (let i = 1; i <= n; i++) {
 }
 ```
 
-## 模式 103
+输出：
 
 ```
 // *       *
@@ -3076,6 +3061,8 @@ for (let i = 1; i <= n; i++) {
 // * *     * *
 // *       *
 ```
+
+# 模式 104
 
 ```javascript
 let n = 7;
@@ -3102,7 +3089,7 @@ for (let i = 1; i <= n; i++) {
 }
 ```
 
-## 模式 104
+输出：
 
 ```
 // *     *     *
@@ -3113,6 +3100,8 @@ for (let i = 1; i <= n; i++) {
 //   *   *   *
 // *     *     *
 ```
+
+# 模式 105
 
 ```javascript
 let n = 7;
@@ -3129,7 +3118,7 @@ for (let i = 1; i <= n; i++) {
 }
 ```
 
-## 模式 105
+输出：
 
 ```
 // *     * * * *
@@ -3140,6 +3129,8 @@ for (let i = 1; i <= n; i++) {
 //     *     *
 // * * *     *
 ```
+
+# 模式 106
 
 ```javascript
 let n = 7;
@@ -3164,37 +3155,19 @@ for (let i = 1; i <= n; i++) {
 }
 ```
 
-## 模式 106
+输出：
 
 ```
-// *   *   *   *
-// *   *   *   *
+// *     * * * *
+// *     *
+// *     *
 // * * * * * * *
-// *           *
-// *           *
-// *           *
-// * * * * * * *
+//     *     *
+//     *     *
+// * * *     *
 ```
 
-```javascript
-let n = 7;
 
-for (let i = 1; i <= n; i++) {
-    let row = "";
-    for (let j = 1; j <= n; j++) {
-        if (
-            (i === Math.floor(n / 2) || i === n) ||
-            ((j === 1 || j === n) && i >= Math.floor(n / 2)) ||
-            (j % 2 === 1 && i <= Math.floor(n / 2))
-        ) {
-            row += "* ";
-        } else {
-            row += "  ";
-        }
-    }
-    console.log(row);
-}
-```
 
 ## 模式 107
 
@@ -3737,6 +3710,10 @@ for (let i = 1; i <= n; i++) {
 // *****
 ```
 
+
+
+## 模式 126
+
 ```javascript
 const n = 3;
 let s1 = n * 2 - 1, s2 = 3;
@@ -3765,8 +3742,6 @@ for (let i = 1; i <= n - 1; i++) {
     console.log(row);
 }
 ```
-
-## 模式 126
 
 ```
 //     * * * * * * *
@@ -3941,6 +3916,7 @@ function drawPattern() {
 }
 ```
 
+```javascript
 for (let i = 1; i <= 4; i++) {
     let rowOutput = "";
     for (let j = space - 3; j >= 1; j--) {
@@ -3953,6 +3929,7 @@ for (let i = 1; i <= 4; i++) {
 }
 
 drawPattern();
+```
 
 ## 图案 130
 
@@ -3962,7 +3939,9 @@ drawPattern();
 // *   *
 // * *
 // * * * * *
+```
 
+```javascript
 let n = 5;
 
 for (let i = 1; i <= n; i++) {
@@ -3986,7 +3965,9 @@ for (let i = 1; i <= n; i++) {
 //     *
 //     *
 // * * * * *
+```
 
+```javascript
 let n = 5;
 let mid = Math.floor(n / 2) + 1;
 
@@ -4011,7 +3992,9 @@ for (let i = 1; i <= n; i++) {
 // * * * * *
 // *
 // * * * * *
+```
 
+```javascript
 let n = 5;
 let mid = Math.floor(n / 2) + 1;
 
@@ -4036,7 +4019,9 @@ for (let i = 1; i <= n; i++) {
 // * * * * *
 //         *
 // * * * * *
+```
 
+```javascript
 let n = 5;
 let mid = Math.floor(n / 2) + 1;
 
@@ -4061,7 +4046,9 @@ for (let i = 1; i <= n; i++) {
 // * * * * *
 //       *
 //       *
+```
 
+```javascript
 let n = 5;
 let mid = Math.floor(n / 2) + 1;
 
@@ -4086,7 +4073,9 @@ for (let i = 1; i <= n; i++) {
 // * * * * *
 //         *
 // * * * * *
+```
 
+```javascript
 let n = 5;
 let mid = Math.floor(n / 2) + 1;
 
@@ -4111,7 +4100,9 @@ for (let i = 1; i <= n; i++) {
 // * * * * *
 // *       *
 // * * * * *
+```
 
+```javascript
 let n = 5;
 let mid = Math.floor(n / 2) + 1;
 
@@ -4136,7 +4127,9 @@ for (let i = 1; i <= n; i++) {
 //   *
 // *
 // *
+```
 
+```javascript
 let n = 5;
 
 for (let i = 1; i <= n; i++) {
@@ -4160,7 +4153,9 @@ for (let i = 1; i <= n; i++) {
 // * * * * *
 // *       *
 // * * * * *
+```
 
+```javascript
 let n = 5;
 let mid = Math.floor(n / 2) + 1;
 
@@ -4185,7 +4180,9 @@ for (let i = 1; i <= n; i++) {
 // * * * * *
 //       *
 // * * * * *
+```
 
+```javascript
 let n = 5;
 let mid = Math.floor(n / 2) + 1;
 
@@ -4210,7 +4207,9 @@ for (let i = 1; i <= n; i++) {
 //  *****
 //  *   *
 // *     *
+```
 
+```javascript
 let n = 5;
 let x = n;
 
@@ -4231,6 +4230,9 @@ for (let i = 1; i <= n; i++) {
 ```
 
 ## 图案 141
+
+
+# 图案 141
 
 ```
 // ****
@@ -4873,8 +4875,11 @@ for (let i = 1; i <= 5; i++) {
 感谢你们允许我成为你们旅程的一部分。
 
 此致，
+
 埃尔南多·阿贝拉
+
 《150+ JavaScript 模式程序》作者
 
 在以下网址发现其他有用资源：
-www.hernandoabella.com
+
+`www.hernandoabella.com`

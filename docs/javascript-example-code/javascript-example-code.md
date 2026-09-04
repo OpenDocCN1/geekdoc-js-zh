@@ -1,17 +1,7 @@
+
 # JavaScript 示例
 
-
-
-
-
 ![](img/c4712982624c6b0b4d50250b90aebac6_1_0.png)
-
-
-
-
-
-
-
 
 # 序言
 
@@ -31,9 +21,9 @@
 
 幸运的是，在重新接触它后，我开始尊重它。多年来，它已经成长为一种强大的语言。
 
-JavaScript
+## JavaScript
 
-尽管起点卑微，JavaScript 已经演变成一种现代编程语言。从浏览器到服务器，它几乎可以处理一切。Node.js 在服务器端为它提供了强大的框架。
+尽管起点卑微，JavaScript 已经演变成一种现代编程语言。从浏览器到服务器，它几乎可以处理一切。`Node.js` 在服务器端为它提供了强大的框架。
 
 Mozilla 创建了它，以下是他们对其定义。“JavaScript 是一种具有一等函数的轻量级解释型编程语言。”这听起来真绕口！
 
@@ -55,7 +45,7 @@ Mozilla 创建了它，以下是他们对其定义。“JavaScript 是一种具�
 
 ![](img/c4712982624c6b0b4d50250b90aebac6_10_0.png)
 
-JavaScript 警告消息
+### JavaScript 警告消息
 
 一旦点击 ok，你将看到这个。
 
@@ -65,9 +55,9 @@ JavaScript 警告消息
 
 普通文本
 
-HTML 截图
+### HTML 截图
 
-语句
+## 语句
 
 语句是 JavaScript 的基本指令。我们可以创建一些变量并为它们赋值。
 
@@ -102,61 +92,6 @@ function sumTwoNumbers(num1, num2) {
 }
 ```
 
-当我们想要执行某个任务时，可以创建一个函数。如果我们需要两个数字之和，我们可以在代码中这样做，也可以创建一个函数。
-
-```javascript
-// 加两个数字
-num3 = num1 + num2;
-```
-
-```javascript
-// 两个数字之和的函数
-function sumTwoNumbers(num1, num2) {
-  return num1 + num2;
-}
-```
-
-当我们想要执行某个任务时，可以创建一个函数。如果我们需要两个数字之和，我们可以在代码中这样做，也可以创建一个函数。
-
-```javascript
-// 加两个数字
-num3 = num1 + num2;
-```
-
-```javascript
-// 两个数字之和的函数
-function sumTwoNumbers(num1, num2) {
-  return num1 + num2;
-}
-
-当我们想要执行某个任务时，可以创建一个函数。如果我们需要两个数字之和，我们可以在代码中这样做，也可以创建一个函数。
-
-```javascript
-// 加两个数字
-num3 = num1 + num2;
-```
-
-```javascript
-// 两个数字之和的函数
-function sumTwoNumbers(num1, num2) {
-  return num1 + num2;
-}
-
-当我们想要执行某个任务时，可以创建一个函数。如果我们需要两个数字之和，我们可以在代码中这样做，也可以创建一个函数。
-
-```javascript
-// 加两个数字
-num3 = num1 + num2;
-```
-
-```javascript
-// 两个数字之和的函数
-function sumTwoNumbers(num1, num2) {
-  return num1 + num2;
-```
-
-
-
 ### 最迷人的入门简单 JavaScript 函数基础
 
 ![](img/c4712982624c6b0b4d50250b90aebac6_19_0.png)
@@ -173,40 +108,38 @@ function calculateFlooring(length, width) {
 
 如果我们重新装修厨房，这个函数将计算出所需的地板面积。那么，为什么我们需要函数呢？
 
-### 益处
+#### 益处
 
 将函数想象成你代码的容器。它类似于代码块，但我们可以重复调用这个函数。这将有助于代码的复用。在我们先先的示例中，你可以复制该语句。当然，如果我们想修改它，我们需要搜索那段代码并修改所有的出现处。
 
-### 示例
+#### 示例
 
 在第一个函数示例中，我们计算了地板面积。让我们退一步，让它变得更简单。我们可以在屏幕上打印一些内容。
 
 ```javascript
 function greetTom() {
-alert("Hello Tom!");
+  alert("Hello Tom!");
 }
 ```
 
 当然，你可以把我的名字换成你的。如果你想遵循这个传统，可以将其替换为“Hello World”。你是否好奇过为什么这是传统，看……
 
-### 调用
+#### 调用
 
 代码看起来很不错，但如果你不调用它，什么都不会发生。该怎么做呢？我很高兴你问。这里有一个示例。
 
 ```javascript
 function greetTom() {
-alert("Hello Tom!");
+  alert("Hello Tom!");
 }
-```
 
-```javascript
 greetTom();
 // do other things...
 ```
 
 那个调用非常简单，因为它不需要参数。在我们第一个函数中，我们两个两个参数。让我们下一个试试。
 
-### 传递参数
+#### 传递参数
 
 在我们的第一个示例中，我们从一个计算地板的函数开始。它接收两个参数。
 
@@ -215,7 +148,7 @@ function calculateFlooring(length, width) {
   return length * width;
 }
 
-calculateFlooring(12,10);
+calculateFlooring(12, 10);
 ```
 
 我们可以传入这两个数字来获取所需的地板。在这个示例中，我们硬编码了值。你通常不会这样做，或者永远不会这样做。
@@ -225,12 +158,12 @@ function calculateFlooring(length, width) {
   return length * width;
 }
 
-calculateFlooring(length,width);
+calculateFlooring(length, width);
 ```
 
 如你在此看到的，我们将两个参数作为变量。名字与函数相同，但并不一定相同。
 
-### 返回数据
+#### 返回数据
 
 当我们返回计算结果时是有帮助的。如果不这样做，函数就没有它本可以那么用。我们只需要使用 `return`。我们在计算地板函数中已经这样做了。尽管我们需要将其赋值或打印出来。
 
@@ -240,10 +173,10 @@ function calculateFlooring(length, width) {
 }
 
 let totalFlooring = 0;
-totalFlooring = calculateFlooring(length,width);
+totalFlooring = calculateFlooring(length, width);
 ```
 
-现在我们可以在应用程序稍中使用这个值。之前的示例没有使用返回的值。如果你以后不需要它，这始终是一个选项。
+现在我们可以在应用程序稍后使用这个值。之前的示例没有使用返回的值。如果你以后不需要它，这始终是一个选项。
 
 函数可以为我们做很多事情。它们为我们的代码提供了一个容器。然后我们可以调用它们并传递参数。此外，它们还可以返回数据。如果你需要更多信息，这里有一些进一步的……
 
@@ -262,7 +195,7 @@ if
 `if` 语句以一个条件开始。如果它为真，后面的语句将会执行。
 
 ```javascript
-if(pizzaArrives) {
+if (pizzaArrives) {
   openDoor();
 }
 ```
@@ -274,7 +207,7 @@ if(pizzaArrives) {
 有时你有两种不同的行动方案。我们可以在 `if` 的同时添加 `else` 语句。假设你正在做一些汉堡。
 
 ```javascript
-if(sideCooked) {
+if (sideCooked) {
   flipBurger();
 } else {
   keepCooking();
@@ -284,9 +217,9 @@ if(sideCooked) {
 这个检查可以运行你最喜欢的汉堡店的烹饪机器人。它可能需要一些代码。如果你需要检查两个条件，你可以使用 `if else`：
 
 ```javascript
-if(sideCooked) {
+if (sideCooked) {
   flipBurger();
-} else if(otherCooked) {
+} else if (otherCooked) {
   removeFromGrill();
 } else {
   keepCooking();
@@ -300,11 +233,11 @@ if(sideCooked) {
 我们用于 `if` 语句的运算符必须解析为真或假。你有很多选项供你使用。根据经验，你需要测试出正确的那个。
 
 ```javascript
-if(9>5) { alert("Greater than"); } // 大于
-if(5<8) { alert("Less than"); } // 小于
-if(9>=6) { alert("Greater equal to"); } // 大于
-if(4<=6) { alert("Less equal to"); } // 小于
-if(4!=6) { alert("Not equal to"); } // 不等于
+if (9 > 5) { alert("Greater than"); } // 大于
+if (5 < 8) { alert("Less than"); } // 小于
+if (9 >= 6) { alert("Greater equal to"); } // 大于
+if (4 <= 6) { alert("Less equal to"); } // 小于
+if (4 != 6) { alert("Not equal to"); } // 不等于
 ```
 
 还有逻辑运算符。逻辑与 (`&&`) 和逻辑或 (`||`)。 它们被频繁使用，但不要被它们吓到。
@@ -358,13 +291,16 @@ for (let i = 0; i < books.length; i++) {
 
 `for` 循环有三个部分。开始、条件和步骤。
 
-**start**
+##### start
+
 这是我们设置循环变量的部分。在我们示例中，通常初始化为 0。尽管你也可以将其设置为 10 然后递减。
 
-**condition**
+##### condition
+
 下一步是条件，检查是否需要再次运行此循环。我们的示例检查是否还有更多书籍需要遍历。如果我们完成了就停止。
 
-**step**
+##### step
+
 最后一部分是步骤。它告诉我们每次迭代后发生了什么。我们的示例使用了增量运算符(`++`)。这是正常的步骤，但我们也可以做其他事情。
 
 #### while
@@ -397,8 +333,6 @@ do {
 console.log("I'm full of Donuts!");
 ```
 
-
-
 do-while 一直运行到条件为假为止——与我们讨论过的其他两种循环类型相反。输出看起来如下所示。
 
 ```
@@ -412,7 +346,9 @@ I'm full of Donuts!
 ```
 
 当你需要循环执行代码时，JavaScript 为你提供了几个选项。
+
 与其他编程语言一样，它有 `for`、`while` 和 `do-while` 循环。
+
 只需确保它符合你的需求。
 
 # 你需要的意外改进 JavaScript 变量作用域
@@ -433,7 +369,7 @@ I'm full of Donuts!
 
 全局作用域项在处处可见。在我们的示例中，我们在函数内部和外部创建了一个可见变量。
 
-```
+```javascript
 let myGlobalVariable = "TheBigGlobalVariable";
 
 function logGlobalVariable() {
@@ -449,7 +385,7 @@ logGlobalVariable();
 
 局部变量只在函数内部可见。这里有一个示例可以尝试。
 
-```
+```javascript
 let myGlobalVariable = "TheBigGlobalVariable";
 
 function logGlobalVariable() {
@@ -477,7 +413,7 @@ ReferenceError: localVariable is not defined
 
 如果局部作用域是在函数内部，那么块作用域就是在大括号内部。有时你会创建大括号来标识某些代码。让我们来看看我想表达什么。
 
-```
+```javascript
 console.log("here");
 {
   let blockScopeVariable = 0;
@@ -493,7 +429,7 @@ console.log(blockScopeVariable); // 将无法工作
 
 作用域可能会令人困惑并导致一些错误。随着你对 JavaScript 经验的增加，你可以尽早发现它们。例如，如果我们看这段代码片段：
 
-```
+```javascript
 const colors = ['red', 'blue', 'white'];
 
 for (let i = 0, l = colors.length; i < l; i++) {
@@ -504,7 +440,9 @@ console.log(i); // ???
 ```
 
 变量 `i` 和 `l` 将会导致引用错误。它们与我们之前的示例类似，超出了作用域。Dmitri Pavlutin 深入解释了这一点。他还涵盖了我们在编码中可能犯的一些常见错误。
+
 JavaScript 作用域有你需要记忆的基本原则。全局作用域随处可见。局部和块作用域更集中。
+
 总而言，你应该使用后者并避免前者。继续编码吧！
 
 # 多利用 JavaScript 闭包，不要恐慌
@@ -519,7 +457,7 @@ JavaScript 作用域有你需要记忆的基本原则。全局作用域随处可
 
 我们如何定义闭包？嗯，这篇文章是这样定义的：“JavaScript 中的闭包是词法作用域的一种形式，用于在函数的内部作用域中保留函数外部作用域的变量。”
 
-```
+```javascript
 function outerFunction() {
   var x = 10;
 
@@ -547,7 +485,7 @@ console.log(inner);
 
 词法作用域术语指的是变量定义的地方。以及它是否可以被引用的。
 
-```
+```javascript
 let x = 10
 let myFunc = function () {
   let y = 20;
@@ -583,9 +521,10 @@ Tom 学习了如何解决技术领域的挑战性问题并领导技术团队。�
 
 你可以以下方式与我联系：
 
-+   - http://codeiseasy.co
+- http://codeiseasy.co
 - https://twitter.com/TomHenricksen
 - https://www.linkedin.com/in/tomhenricksen
 
 订阅我的时事：
+
 https://t.co/NkolrQgXHM

@@ -1,3 +1,4 @@
+
 # [ES2015] Map/Set
 
 > 原文：[`jsprimer.net/basic/map-and-set/`](https://jsprimer.net/basic/map-and-set/)
@@ -280,7 +281,7 @@ event.addListener(() => {
     // `EventEmitter`のインスタンスに紐づくイベントリスナーの処理
 });
 // `event`へ`null`を代入することで、`EventEmitter`のインスタンスへの参照がなくなる
-// インスタンスがどこからも参照されなくなったため、紐づいていたイベントリスナーが自動的に解放される
+// インスタンスがどこからも参照されなくなったため、紐づいていたイベントリスナーが自动的に解放される
 event = null; 
 ```
 

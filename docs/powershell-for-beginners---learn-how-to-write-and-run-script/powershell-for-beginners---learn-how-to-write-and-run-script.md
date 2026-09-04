@@ -1,31 +1,13 @@
-# PowerShell 初学者指南：学习如何在 PowerShell 命令行编写并运行脚本（Python 编程、Javascript、计算机编程）
 
-
-
-
-
-
-
-![](img/dcd30329fa29a8abe29fc8f78488dd81_0_0.png)
-
-
+# PowerShell 初学者指南：学习如何在 PowerShell 命令行编写并运行脚本
 
 ## 给您的额外赠品！
-
-![](img/dcd30329fa29a8abe29fc8f78488dd81_2_0.png)
 
 点击下方链接，**免费**获取您的赠送书籍《亚马逊图书合集：5 种亚马逊产品完整用户指南》。
 
 [>>>点击此处下载<<<](https://freebookpromo.leadpages.co/amazon-book-bundle/)
-（或访问：https://freebookpromo.leadpages.co/amazon-book-bundle/)
 
-
-
-
-
-
-
-
+（或访问：https://freebookpromo.leadpages.co/amazon-book-bundle/）
 
 ## 引言
 
@@ -43,15 +25,7 @@ PowerShell（包括 PowerShell Core 和 Windows PowerShell）是一种配置管�
 
 PowerShell 拥有丰富的基于控制台的辅助功能。
 
-（注：后续章节内容包含大量重复占位符及技术描述，已按要求保留格式并翻译核心术语）
-
 PowerShell 具有丰富的基于控制台的辅助功能。
-
-（此处由于原文存在大量重复的占位符文本，已完成核心逻辑翻译）
-
-
-
-
 
 ## 第 2 章 – 开始使用您的 PowerShell
 
@@ -70,13 +44,17 @@ Windows PowerShell 通常在 Shell 中引入了 cmdlet（命令/小命令）和�
 4.0 版本 PowerShell 运行在最新的 Windows 版本上：
 
 - Windows 8.1，默认安装。
+
 - Windows Server 2012 R2，默认安装。
+
 - Windows 7 及其 01 服务补丁包，你需要安装 Windows 4.0 框架来运行更新后的 PowerShell。
+
 - Windows Server 2008 和带有 01 服务补丁包的 R2，你需要安装 Windows 4.0 管理框架以获取最新的 4.0 PowerShell。
 
 3.0 版本 PowerShell 适用于以下 Windows：
 
 - Windows 8 默认安装
+
 - 2012 Windows 安装版
 
 ### 微软 .NET 框架要求
@@ -104,13 +82,21 @@ Windows 3.0 和 4.0 PowerShell 可能针对 CLR 4.0（通用语言运行时）�
 Windows PowerShell 基于控制台应用程序，可能不需要任何图形用户界面。它适用于没有显示器、用户界面和屏幕的计算机，例如 R2 Server 2012 或 Windows Server 2012。对于图形用户界面还需要某些项：
 
 - Windows PowerShell 集成脚本环境 (ISE)
+
 - Cmdlets
+
 - 1. Out-GridView
+
 - 2. Show-Command
+
 - 3. Show-ControlPanel
+
 - 4. Show-EventLog
+
 - 结构
+
 - 1. Get-Help cmdlet ShowWindow 结构。
+
 - 2. Register-PSSessionConfiguration, Set-PSSessionConfiguration cmdlet 以及 ShowSecurityDescriptorUI。
 
 ### Windows PowerShell 引擎要求
@@ -126,8 +112,11 @@ Windows PowerShell 2.0 版本至少需要微软 .NET (2.0.50727) 框架。第一
 2.0 和 3.0 PowerShell 运行在 Windows PE 中。以下 cmdlet 可以：
 
 -* Windows-Management
+
 -* Update-Help
+
 -* Get-Event
+
 -* Get-EventLog
 
 2.0 和 3.0 PowerShell 运行在 Windows PE 中。此预装的 PowerShell 是默认提供的，或者你可以从微软数据中心获取。
@@ -141,6 +130,7 @@ Windows 8 和 2012 拥有 3.0 PowerShell 以及所有前提条件。该系统可
 这些指令将帮助你向带有 Windows 7 服务补丁包 01 和 R2 Windows Server (2008) 的计算机上安装 3.0 PowerShell。在安装 Windows 管理框架之前，你必须卸载之前的版本 (Windows-3.0)。
 
 - 从微软下载中心 http://go.microsoft.com/fwlink/?LinkID=212547 完整安装 .Net Framework 4.0 [dotNetFx40_Full.exe]
+
 - 你必须从微软下载中心 http://go.microsoft.com/fwlink/?LinkID=242919 安装微软 4.5 .NET Framework (dotNetFx45_Full.exe)
 
 ### 在 Windows Server Core 上安装 PowerShell
@@ -152,6 +142,7 @@ Windows 8 和 2012 拥有 3.0 PowerShell 以及所有前提条件。该系统可
 要安装 3.0 PowerShell：
 
 你必须从 Cmd.exe 开始
+
 现在你需要运行 DISM 命令，这些命令将帮助你安装 2.0 .Net Framework 和 Windows 2.0 PowerShell。
 
 ```
@@ -159,9 +150,6 @@ disp /online /enable-feature:NetFx2-ServerCore
 dism /online /enable-feature:MicrosoftwindowsPowerShell
 dism /online /enable-feature:NetFx2-ServerCore-WOW64
 ```
-
-
-
 
 通过此链接访问微软下载中心：http://go.microsoft.com/fwlink/?LinkId=248450
 
@@ -187,15 +175,15 @@ Windows Management 3.0 框架将从指定的链接微软下载中心安装：htt
 
 安装完成后，你可以开始使用 Windows PowerShell，并可以同时执行各种任务：
 
-## 安装帮助文件
+### 安装帮助文件
 
 你必须从帮助文件开始工作，例如 Windows PowerShell 3.0 提供了带有文件的 cmdlets。你可以使用 `update-help` 命令行在计算机上安装并下载帮助文件。安装文件后，你可以使用 `Get-Help` 命令行在单命令行中显示它们。
 
-## 运行脚本
+### 运行脚本
 
 Windows PowerShell 的默认执行策略被限制，以保持你的 PowerShell 安全。此策略对于轻松运行脚本以外的 cmdlets很有帮助。如果你想运行脚本，可以使用 `Set-ExecutionPolicy` 命令将执行策略修改为 RemoteSigned 或 AllSigned。管理员组的成员可以在计算机上运行此特定命令。
 
-## 激活远程化
+### 激活远程化
 
 系统很容易配置为在各种其他计算机上运行不同的远程命令。如果你正在使用 Windows 2012 服务器和 2012 R2 服务器，系统可以配置为接受远程命令。它允许其他计算机在本地计算机上轻松运行远程命令。
 
@@ -203,7 +191,7 @@ Windows PowerShell 的默认执行策略被限制，以保持你的 PowerShell �
 
 如果在运行 Windows PowerShell 2.0 的计算机上启用了远程化，一旦安装了 Windows Management Framework 3.0，远程化就会启用。Windows Server 2008 在安装 Windows Management Framework 3.0 后需要重新启用远程化。
 
-# 第章 – 如何从 PowerShell 命令行编写和运行脚本
+## 第 4 章 – 如何从 PowerShell 命令行编写和运行脚本
 
 在你的脚本面板中打开和修改 Windows PowerShell 非常。Windows 中的这些特殊文件有 .ps1（脚本文件）、.psd（脚本数据文件）和 .psm1（脚本模块文件）。这些类型的文件在脚本编辑器中具有语法颜色显示。其他类型的文件很容易在脚本面板中打开，并配置 XML、文本和 .ps1xml 文件。
 
@@ -221,9 +209,6 @@ Windows PowerShell 的默认执行策略被限制，以保持你的 PowerShell �
 
 你可以通过点击工具栏中的图标并选择文件来运行脚本。
 
-
-
-
 ## 第 5 章 脚本的命令与过程
 
 脚本的命令和过程是 PowerShell 的基础。你可以利用框架的优势创建脚本，并添加一些条件使其具有逻辑性。PowerShell 脚本是扩展名为 .ps1 的特殊文本文件。如果你想创建一个脚本，你必须在记事文件中按照特定的顺序输入一组命令。你可以将其保存为 .ps1，且名称应该是一个易于描述且不带任何空格的名字。如果你想运行 PowerShell 脚本，可以进入 PowerShell 窗口。
@@ -235,6 +220,7 @@ c:\powershell\myscript.ps1
 ```
 
 如果脚本位于当前目录，控制台可以使用一个点和一个反斜杠，例如：\myscript.ps1。
+
 在 PowerShell 中创建一个脚本并没有什么特殊之处。你可以根据自己的喜好添加命令。脚本管理员通常多年来使用登录脚本，以便在每次登录时根据用户的需要配置环境和桌面。随着技术的发展，任何内容都可以实现脚本化，从在服务器上对系统的裸机安装到服务器上的工作负载。它还包括文件服务器角色或安装 Exchange。
 
 为了编写脚本，涵盖几个元素至关重要，并且有几个阶段可以提供帮助：
@@ -408,7 +394,6 @@ While ($numbers -lt 10) {
     Write-Host "The current value of the variable is $numbers"
 }
 ```
-
 
 部分，系统将通过复制和共享利用容器和镜像的副本来工作。
 

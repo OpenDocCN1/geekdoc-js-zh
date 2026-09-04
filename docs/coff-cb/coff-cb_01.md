@@ -1,3 +1,5 @@
+
+
 # 一、语法
 
 ## 服务端和客户端的代码重用
@@ -11,9 +13,9 @@
 以下列方法输出函数：
 
 ```js
- # simpleMath.coffee
+# simpleMath.coffee
 
- # these methods are private
+# these methods are private
 
 add = (a, b) ->
     a + b
@@ -24,11 +26,11 @@ subtract = (a, b) ->
 square = (x) ->
     x * x
 
- # create a namespace to export our public methods
+# create a namespace to export our public methods
 
 SimpleMath = exports? and exports or @SimpleMath = {}
 
- # items attached to our namespace are available in Node.js as well as client browsers
+# items attached to our namespace are available in Node.js as well as client browsers
 
 class SimpleMath.Calculator
     add: add
@@ -38,9 +40,9 @@ class SimpleMath.Calculator
 
 ### 讨论
 
-在上面的例子中，我们创建了一个新的名为 “SimpleMath” 的命名空间。如果 “export” 是有效的，我们的类就会作为一个 Node.js 模块输出。如果 “export” 是无效的，那么 “SimpleMath” 就会被加入全局命名空间，这样就可以被我们的网页使用了。
+在上面的例子中，我们创建了一个新的名为“`SimpleMath`”的命名空间。如果“`export`”是有效的，我们的类就会作为一个 Node.js 模块输出。如果“`export`”是无效的，那么“`SimpleMath`”就会被加入全局命名空间，这样就可以被我们的网页使用了。
 
-在 Node.js 中，我们可以使用 “require” 命令包含我们的模块。
+在 Node.js 中，我们可以使用“`require`”命令包含我们的模块。
 
 ```js
 $ node
@@ -66,10 +68,10 @@ undefined
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
     <script src="simpleMath.js"></script>
     <script>
-        jQuery(document).ready(function    (){
+        jQuery(document).ready(function (){
             var Calculator = new SimpleMath.Calculator();
             var result = $('<li>').html("5 + 6 = " + Calculator.add(5, 6));
-            $('#SampleResults').append(result); 
+            $('#SampleResults').append(result);
         });
     </script>
 </head>
@@ -103,7 +105,7 @@ minAcromegaly = 213
 height = 180
 
 normalHeight = maxDwarfism < height < minAcromegaly
- # => true
+# => true
 ```
 
 ### 讨论
@@ -111,7 +113,7 @@ normalHeight = maxDwarfism < height < minAcromegaly
 这是从 Python 中借鉴过来的一个很棒的特性。利用这个特性，不必像下面这样写出完整的比较：
 
 ```js
-    normalHeight = height > maxDwarfism && height < minAcromegaly
+normalHeight = height > maxDwarfism && height < minAcromegaly
 ```
 
 CoffeeScript 支持像写数学中的比较表达式一样连缀两个比较，这样更直观。
@@ -131,10 +133,10 @@ CoffeeScript 支持像写数学中的比较表达式一样连缀两个比较，�
 return "Hello "+name;
 }`
 
- # Back to CoffeeScript
+# Back to CoffeeScript
 
 greet "Coffee"
- # => "Hello Coffee"
+# => "Hello Coffee"
 ```
 
 ### 讨论
@@ -146,10 +148,10 @@ hello = `function (name) {
 return "Hello "+name
 }`
 hello "Coffee"
- # => "Hello Coffee"
+# => "Hello Coffee"
 ```
 
-这里的变量 "hello" 还在 CoffeeScript 中，但赋给它的函数则是用 JavaScript 写的。
+这里的变量“`hello`”还在 CoffeeScript 中，但赋给它的函数则是用 JavaScript 写的。
 
 ## For 循环
 
@@ -160,24 +162,25 @@ hello "Coffee"
 ### 解决方案
 
 ```js
- # for(i = 1; i<= 10; i++)
+# for(i = 1; i<= 10; i++)
 
 x for x in [1..10]
- # => [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]
+# => [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]
 
- # To count by 2
+# To count by 2
 
- # for(i=1; i<= 10; i=i+2)
+# for(i=1; i<= 10; i=i+2)
 
 x for x in [1..10] by 2
- # => [ 1, 3, 5, 7, 9 ]
+# => [ 1, 3, 5, 7, 9 ]
 
- # Perform a simple operation like squaring each item.
+# Perform a simple operation like squaring each item.
 
 x * x for x in [1..10]
- # = > [1,4,9,16,25,36,49,64,81,100]
+# = > [1,4,9,16,25,36,49,64,81,100]
 ```
 
 ### 讨论
 
 CoffeeScript 使用推导（comprehension）来代替 for 循环，这些推导最终会被编译成 JavaScript 中等价的 for 循环。
+

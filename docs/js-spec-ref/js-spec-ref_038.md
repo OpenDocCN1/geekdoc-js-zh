@@ -1,16 +1,5 @@
-# 5.7 Mutation Observer
 
-*   概述
-*   MutationObserver 构造函数
-*   Mutation Observer 实例的方法
-    *   observe()
-    *   disconnect()，takeRecords（）
-    *   MutationRecord 对象
-    *   应用示例
-        *   子元素的变动
-        *   属性的变动
-        *   取代 DOMContentLoaded 事件
-    *   参考链接
+# 5.7 Mutation Observer
 
 ## 概述
 
@@ -23,9 +12,7 @@ Mutation Observer（变动观察器）是监视 DOM 变动的接口。DOM 发生
 Mutation Observer 有以下特点：
 
 *   它等待所有脚本任务完成后，才会运行，即采用异步方式。
-
 *   它把 DOM 变动记录封装成一个数组进行处理，而不是一条条地个别处理 DOM 变动。
-
 *   它既可以观察发生在 DOM 的所有类型变动，也可以观察某一类变动。
 
 目前，Firefox（14+）、 Chrome(26+)、Opera（15+）、IE（11+）和 Safari（6.1+）支持这个 API。Safari 6.0 和 Chrome 18-25 使用这个 API 的时候，需要加上 WebKit 前缀（WebKitMutationObserver）。可以使用下面的表达式，检查当前浏览器是否支持这个 API。
@@ -57,10 +44,10 @@ observe 方法指定所要观察的 DOM 节点，以及所要观察的特定变�
 ```js
 var article = document.querySelector('article');
 
-var  options = {
+var options = {
   'childList': true,
-  'attributes':true
-} ;
+  'attributes': true
+};
 
 observer.observe(article, options);
 ```
@@ -79,9 +66,7 @@ observer.observe(article, options);
 除了变动类型，options 对象还可以设定以下属性：
 
 *   attributeOldValue：类型为布尔值，表示观察 attributes 变动时，是否需要记录变动前的属性值。
-
 *   characterDataOldValue：类型为布尔值，表示观察 characterData 变动时，是否需要记录变动前的值。
-
 *   attributeFilter：类型为数组，表示需要观察的特定属性（比如['class','src']）。
 
 对一个节点添加观察器，就像添加 addEventListener 方法一样。多次添加同一个观察器是无效的，回调函数依然只会触发一次。但是，如果指定不同的 options 对象，就会被当作两个不同的观察器。
@@ -100,7 +85,7 @@ observer.observe(document, { childList: true });
 console.log(insertedNodes);
 ```
 
-### disconnect()，takeRecords（）
+### disconnect()，takeRecords()
 
 disconnect 方法用来停止观察。再发生相应变动，就不再调用回调函数。
 
@@ -168,12 +153,12 @@ var callback = function(records){
 
 var mo = new MutationObserver(callback);
 
-var element = document.getElementById('#my_element');
+var element = document.getElementById('my_element');
 
 var options = {
   'attributes': true,
   'attributeOldValue': true
-}
+};
 
 mo.observe(element, options);
 ```
@@ -224,7 +209,7 @@ observer.observe(document.documentElement, {
   }
 
   function check(){
-  // 检查是否匹配已储存的节点
+    // 检查是否匹配已储存的节点
     for(var i = 0; i < listeners.length; i++){
       var listener = listeners[i];
       // 检查指定节点是否有匹配
@@ -253,8 +238,8 @@ ready('.foo', function(element){
 
 ## 参考链接
 
-*   Tiffany Brown, [Getting to know mutation observers](http://dev.opera.com/articles/view/mutation-observers-tutorial/)
-*   Michal Budzynski, [JavaScript: The less known parts. DOM Mutations](http://michalbe.blogspot.com/2013/04/javascript-less-known-parts-dom.html)
-*   Jeff Griffiths, [DOM MutationObserver – reacting to DOM changes without killing browser performance](https://hacks.mozilla.org/2012/05/dom-mutationobserver-reacting-to-dom-changes-without-killing-browser-performance/)
-*   Addy Osmani, [Detect, Undo And Redo DOM Changes With Mutation Observers](http://addyosmani.com/blog/mutation-observers/)
-*   Ryan Morr, [Using Mutation Observers to Watch for Element Availability](http://ryanmorr.com/using-mutation-observers-to-watch-for-element-availability/)
+*   Tiffany Brown, [Getting to know mutation observers](http://dev.opera.com/articles/view/mutation-observers-tutorial/)
+*   Michal Budzynski, [JavaScript: The less known parts. DOM Mutations](http://michalbe.blogspot.com/2013/04/javascript-less-known-parts-dom.html)
+*   Jeff Griffiths, [DOM MutationObserver – reacting to DOM changes without killing browser performance](https://hacks.mozilla.org/2012/05/dom-mutationobserver-reacting-to-dom-changes-without-killing-browser-performance/)
+*   Addy Osmani, [Detect, Undo And Redo DOM Changes With Mutation Observers](http://addyosmani.com/blog/mutation-observers/)
+*   Ryan Morr, [Using Mutation Observers to Watch for Element Availability](http://ryanmorr.com/using-mutation-observers-to-watch-for-element-availability/)

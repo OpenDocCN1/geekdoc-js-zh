@@ -1,6 +1,5 @@
-# 字符串和 Unicode
 
-> 原文：[`jsprimer.net/basic/string-unicode/`](https://jsprimer.net/basic/string-unicode/)
+# 字符串和 Unicode
 
 「字符串」的章节介绍了，JavaScript 采用 Unicode 作为字符编码，并采用 UTF-16 作为编码方式。采用 UTF-16 仅仅是为了在 JavaScript 内部处理字符串时使用的字符编码（内部编码）。因此，文件本身的字符编码（外部编码）可以是 UTF-8 等非 UTF-16 的字符编码。
 
@@ -10,20 +9,20 @@
 
 如果想要了解 Unicode 的历史以及字符编码本身的更多信息，请参考“[程序员必备的文字编码技术入门](https://gihyo.jp/book/2019/978-4-297-10291-3)”或“[文字编码「超」研究](https://www.rutles.net/products/detail.php?product_id=298)”等。
 
-## *代码点*
+## 代码点
 
-*Unicode 规范为所有字符（包括不可见字符等）定义了 ID。对于这些“字符”的“唯一 ID”，我们称之为**代码点**（代码点）。
+Unicode 规范为所有字符（包括不可见字符等）定义了 ID。对于这些“字符”的“唯一 ID”，我们称之为**代码点**（代码点）。
 
 处理代码点的方法大多是在 ECMAScript 2015 中添加的。通过使用 ES2015 中添加的 String 的 `codePointAt` 方法和 `String.fromCodePoint` 静态方法，可以相互转换字符串和代码点。
 
-String 的 `codePointAt` 方法^([ES2015])会返回字符串中指定索引处字符的代码点值。
+String 的 `codePointAt` 方法会返回字符串中指定索引处字符的代码点值。
 
 ```
 // 文字列"あ"のCode Pointを取得
 console.log("あ".codePointAt(0)); // => 12354 
 ```
 
-另一方面，`String.fromCodePoint` 方法^([ES2015])会返回与指定代码点对应的字符。
+另一方面，`String.fromCodePoint` 方法会返回与指定代码点对应的字符。
 
 ```
 // Code Pointが`12354`の文字を取得する
@@ -44,9 +43,9 @@ console.log(hexOfあ);// => "3042"
 console.log("\u{3042}"); // => "あ" 
 ```
 
-## *代码点与代码单元的区别*
+## 代码点与代码单元的区别
 
-*我们介绍了代码点，但 JavaScript 字符串的构成元素是经过 UTF-16 转换的代码单元（详细信息请参考“字符串”章节）。对于某些范围的字符串，代码点和代码单元的值最终会相同。
+我们介绍了代码点，但 JavaScript 字符串的构成元素是经过 UTF-16 转换的代码单元（详细信息请参考“字符串”章节）。对于某些范围的字符串，代码点和代码单元的值最终会相同。
 
 在下面的代码中，我们展示了名为`アオイ`的字符串的每个元素作为代码点和代码单元的表示。`convertCodeUnits` 函数将字符串转换为代码单元数组，`convertCodePoints` 函数将字符串转换为代码点数组。暂时不需要理解这两个函数的具体实现。
 
@@ -114,9 +113,9 @@ UTF-16 是一种编码方式，用 16 位（2 字节）的代码单元来表示�
 
 在这种情况下，UTF-16 使用两个代码单元的组合（总计 4 个字节）来表示一个字符（一个代码点）。这种机制被称为**代理对**。
 
-## *代理对*
+## 代理对
 
-*代理对中，由 2 个代码单元的组合（总计 4 个字节）来表示一个字符（一个代码点）。UTF-16 中，使用以下范围作为代理对的利用区域。
+代理对中，由 2 个代码单元的组合（总计 4 个字节）来表示一个字符（一个代码点）。UTF-16 中，使用以下范围作为代理对的利用区域。
 
 +   `\uD800`～`\uDBFF`：高位代理的范围
 
@@ -164,9 +163,9 @@ console.log("🍎".length); // => 2
 
 在这种情况下，需要考虑按 Code Point 处理字符串。
 
-## *处理 Code Point*
+## 处理 Code Point
 
-*要按 Code Point 顺序排列字符串，需要使用与 Code Point 对应的函数等方法。
+要按 Code Point 顺序排列字符串，需要使用与 Code Point 对应的函数等方法。
 
 从 ES2015 开始，增加了处理字符串为 Code Point 的方法或语法。接下来要介绍的是，这些方法将处理字符串为 Code Point。
 
@@ -178,9 +177,9 @@ console.log("🍎".length); // => 2
 
 我们将查看处理这些 Code Point 的具体方法和用法。
 
-### *正则表达式的`.`和 Unicode*
+### 正则表达式的`.`和 Unicode
 
-*ES2015 中，正则表达式添加了`u`（Unicode）标志。添加了`u`标志的正则表达式将按 Code Point 顺序排列的字符串进行处理。
+ES2015 中，正则表面添加了`u`（Unicode）标志。添加了`u`标志的正则表达式将按 Code Point 顺序排列的字符串进行处理。
 
 具体来说，我们将查看添加或未添加`u`标志的`.`（除了换行符以外的任意一个字符）的行为差异。
 
@@ -208,9 +207,9 @@ console.log(fish); // => "𩸽"
 
 基本上，添加了`u`标志的正则表达式应该很少出现问题。这是因为很少需要编写只匹配替代对中一个部分的正则表达式。
 
-### *计算 Code Point 的数量*
+### 计算 Code Point 的数量
 
-*String 的`length`属性表示的是构成字符串的 Code Unit 的个数。因此，包含替代对的字符串中，`length`的结果可能会比预期的要大。
+String 的`length`属性表示的是构成字符串的 Code Unit 的个数。因此，包含替代对的字符串中，`length`的结果可能会比预期的要大。
 
 ```
 // Code Unitの個数を返す
@@ -221,7 +220,7 @@ console.log("\uD83C\uDF4E".length); // => 2
 
 JavaScript 没有提供计算字符串中 Code Point 个数的内置方法。为此，需要将字符串转换为按 Code Point 分隔的数组，然后计算数组的长度。
 
-`Array.from`方法^([ES2015])接受一个可迭代的对象作为参数，并返回一个新的数组。可迭代的对象是指实现了`Symbol.iterator`这个特殊名称的方法的对象的总称，`for...of`语句等可以对其进行迭代处理（详细信息请参考“循环与重复处理的 for...of 语句”章节）。
+`Array.from`方法接受一个可迭代的对象作为参数，并返回一个新的数组。可迭代的对象是指实现了`Symbol.iterator`这个特殊名称的方法的对象的总称，`for...of`语句等可以对其进行迭代处理。
 
 字符串也是可迭代的对象，因此可以使用`Array.from`方法将其转换为按 1 个字符（严格来说是一个 Code Point）分隔的数组。正如之前所介绍的，当将字符串作为可迭代对象处理时，应按 Code Point 进行处理。
 
@@ -236,9 +235,9 @@ console.log(codePoints.length); // => 4
 
 然而，在计算 Code Point 的数量时，有时也可能得到不直观的结果。这是因为 Code Point 中定义了诸如控制字符等视觉上不可见的字符。因此，在需要计算视觉上的**字符串长度**时，需要额外的技巧。
 
-### *按 Code Point 进行循环处理*
+### 按 Code Point 进行循环处理
 
-*使用之前介绍的`Array.from`方法，可以将字符串转换为按 Code Point 分隔的字符数组。然后，可以使用“循环与重复处理”章节中学到的技术，对 Code Point 进行循环处理。
+使用之前介绍的`Array.from`方法，可以将字符串转换为按 Code Point 分隔的字符数组。然后，可以使用“循环与重复处理”章节中学到的技术，对 Code Point 进行循环处理。
 
 下面的代码计算了字符串中出现`🍎`的次数。`countOfCodePoints`函数将使用`Array.from`将字符串转换为 Code Point 数组，并返回由数组过滤器`codePoint`产生的数组的元素数。
 
@@ -270,10 +269,10 @@ function countOfCodePoints(str, codePoint) {
 console.log(countOfCodePoints("🍎🍇🍎🥕🍒", "🍎")); // => 2 
 ```
 
-## *结论*
+## 结论
 
-*本章简要介绍了字符串和 Unicode 之间的关系。Unicode 还有一些未在本章介绍的方面。此外，JavaScript 并非总是提供处理 Unicode 的完美 API。
+本章简要介绍了字符串和 Unicode 之间的关系。Unicode 还有一些未在本章介绍的方面。此外，JavaScript 并非总是提供处理 Unicode 的完美 API。
 
 另一方面，正如在“字符串”章节中介绍的那样，即使不考虑 Code Unit 或 Code Point，也可以进行灵活而强大的字符串处理。然而，由于近年来使用表情符号的情况越来越多，因此也越来越需要意识到按 Code Point 编程的情况。
 
-Unicode 是一个独立于 ECMAScript 的规范，因此，处理字符串的问题成为了所有编程语言都会遇到的共同问题。特别是 Java 采用了与 JavaScript 相同的 UTF-16 编码方式，因此存在类似的问题。因此，在遇到 JavaScript 中的字符串处理问题时，了解其他语言的处理方式也是很重要的。********
+Unicode 是一个独立于 ECMAScript 的规范，因此，处理字符串的问题成为了所有编程语言都会遇到的共同问题。特别是 Java 采用了与 JavaScript 相同的 UTF-16 编码方式，因此存在类似的问题。因此，在遇到 JavaScript 中的字符串处理问题时，了解其他语言的处理方式也是很重要的。

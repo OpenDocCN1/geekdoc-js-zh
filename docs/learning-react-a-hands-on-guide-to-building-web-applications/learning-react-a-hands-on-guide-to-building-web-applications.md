@@ -1,41 +1,7 @@
+
 # 学习 React：使用 React 和 Redux 构建 Web 应用实用指南
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 * 18
-
-
-
-
-
-
-
 
 Mark Taber
 
@@ -57,80 +23,94 @@ Chuti Pratasertith
 
 codamantra
 
-
-
 - 发布的更新和更正
-
 
 要访问学习网页版，您只需注册此书：
 
 2. 登录或创建新账户。
+
 3. 输入 ISBN：9780134843551。
+
 5. 网页版将出现在您账户页的“数字购买”（Digital Purchases）标签下。点击 Launch 链接访问产品。
 
 献给我的父亲！
+
 （他总是相信我——即使我经常做的事情对他来说……或者对我来说也毫无意义！🙂）
 
 # 内容概览
 
 1 简介 React 1
+
 2 构建你的第一个 React 应用 13
+
 3 React 中的组件 23
+
 4 React 中的样式处理 37
+
 5 创建复杂组件 47
+
 6 属性传递 59
+
 7 再次见到 JSX……！79
+
 8 React 中的状态处理 87
+
 9 React 中从数据到 UI 99
+
 10 React 中的事件 107
+
 11 组件生命周期 123
+
 12 在 React 中访问 DOM 元素 135
+
 13 轻松搭建你的 React 开发环境 149
+
 14 在 React 中处理外部数据 163
+
 15 在 React 中构建一个强大的 Todo List 应用 177
+
 16 在 React 中创建滑动菜单 197
+
 17 避免 React 中不必要的渲染 211
+
 18 使用 React Router 在 React 中创建单页应用 223
+
 19 Redux 简介 237
+
 20 在 React 中使用 Redux 249
 
 索引 267
+
 # React 目录
-
-
 
 结论 46
 
-
 结论 86
+
 结论 97
-
-
-
-
-
-
-
-
-
-
 
   - 结论 162
 
-
-
   - 动画！动画！动画！ 194
+
   - 结论 195
 
 ## 16 在 React 中创建一个滑动菜单 197
 
 ## 17 避免 React 中进行不必要的渲染 211
+
   - 关于 render 方法 211
+
   - 优化 render 调用 213
+
   - 运行一个示例 213
+
   - 查看 render 调用 216
+
   - 覆盖组件更新 218
+
   - 使用 PureComponent 220
+
   - 结论 222
 
 ## 18 在 React Router 中创建单页应用 223
@@ -138,19 +118,31 @@ codamantra
 目录 xiii
 
 ## 19 Redux 简介 237
+
   - 什么是 Redux？ 238
+
   - 使用 Redux 构建一个简单应用 243
+
   - 该是 Redux 的时间 243
+
   - 灯光！摄像！开戏！244
+
   - 我们的 Reducer 245
+
   - 存储内容 247
+
   - 结论 248
 
 ## 20 在 React 中使用 Redux 249
+
   - 使用 Redux 管理 React 状态 256
+
   - Redux 和 React 如何重叠 257
+
   - 入门 259
+
   - 构建应用 260
+
   - 结论 266
 
 索引 267
@@ -172,19 +164,24 @@ Kirupa Chinnathambi 尽用了生命的大部分时间试图教别人像他一样
 在出版方面，你在这里看到的文字是简单的部分。将书交到你手中是一个极其复杂的过程。我了解的涉及的环节就越多，我就越对所有在幕后辛勤工作以保持这台奇妙机器运转的个人感到敬佩。向所有让这一切可能的 Pearson 同士表示感谢：
 
 - Meena
+
 - 我的父母
+
 - Pearson
+
 - Tabor
+
 - Chris
+
 - Hansen
+
 - Loretta
+
 - Murray
+
 - Murray
+
 - Yates
-
-
-
-
 
 更糟糕的是，取决于你所使用的框架，你的模板外观以及与数据交互的方式会有巨大的差异。例如，在 Mustache hooks 中定义和使用模板看起来像是这样：
 
@@ -231,7 +228,7 @@ React 会处理其他一切。它会计算需要发生什么来确保你的 UI �
 
 图 1.7 想象一个这样的内存虚拟 DOM。
 
-操作虚拟 DOM 的速度极快，React 会在合适的时候更新真实的 DOM。它通过比较你的虚拟 DOM 和真实 DOM 之间的差异，找出哪些变化真正重要，并进行最少的 DOM 更改以保持所有内容更新，这个过程被称为“协调”（reconciliation）。
+操作虚拟 DOM 的速度极快，React 会在合适的时候更新真实的 DOM。它通过比较你的虚括 DOM 和真实 DOM 之间的差异，找出哪些变化真正重要，并进行最少的 DOM 更改以保持所有内容更新，这个过程被称为“协调”（reconciliation）。
 
 ## 创建真正可组合 UI 的 API
 
@@ -314,9 +311,6 @@ ReactDOM.render(React.createElement(
 
 我们快结束了！React 并不是一个对应用中所有内容的行为方式都有意见的完整框架。相反，React 主要在视图层（View）工作，其所有的关注点都围绕着你的视觉元素。这意味着你可以自由使用任何工具来处理 MVC（即模型-视图-控制器）架构中的 M 和 C 部分。
 
-
-
-
 ## 处理 JSX
 
 在我们开始构建你的应用之前，有一个重要的点需要先说明。React 与你可能使用过的 JavaScript 库不同。当你简单地使用 `<script>` 标签引用编写的代码时，它并不会感到非常高兴。React 在这方面特别得麻烦，这与 React 应用的构建方式有关。
@@ -340,6 +334,7 @@ ReactDOM.render(React.createElement(
 如果我们这样做，我们的 React 应用将根本无法工作。那可不酷。幸运的是，我们有两个解决方案：
 
 - 围绕 Node 和一些构建工具搭建一个开发环境。在这个环境中，每当你执行构建时，你所有的 JSX 都会自动转换为 JS 并放置在磁盘上，供你像引用任何纯 JavaScript 文件一样引用它。
+
 - 让你的浏览器在运行时自动将 JSX 转换为 JavaScript。你直接指定 JSX，就像编写任何旧的 JavaScript 代码一样，你的浏览器会处理剩下的工作。
 
 这两种解决方案在我们的世界中都有用武之地，但让我们来谈谈它们的影响。
@@ -398,8 +393,6 @@ ReactDOM.render(React.createElement(
 注意 `type="text/babel"`，这告诉 Babel 编译此脚本块。
 
 现在，保存文件并在浏览器中打开。你应该看到页面上显示巨大的“Hello React!”。恭喜你！你构建了第一个 React 应用。
-
-
 
 既然容器 `div` 元素已经安全定义，让我们修改 `render` 方法使用它而不是 `document.body`。这里有一种实现这一点的方法：
 
@@ -503,6 +496,7 @@ JSX 的影响不仅限于你定义 UI 元素的方式。它还改变了你构建
 在后续的章节中，我们将花时间深入研究 JSX，并在学习让 React 运行的关键事项时，超越 `render` 方法范围。
 
 - 注意：如果你遇到任何问题，请提问！
+
 - 如果你有任何问题或你的代码运行不符合预期，请不要犹豫提问！在 https://forum.kirupa.com 论坛发帖，从互联网上过的最友好、最有学问那里获得帮助！
 
 ## React 中的组件
@@ -523,7 +517,7 @@ JSX 的影响不仅限于你定义 UI 元素的方式。它还改变了你构建
 
 ## 快速回顾函数
 
-在 JavaScript 中，函数是用于执行特定任务的代码块。它们在被“调用”时执行。你可以通过参数将数据传递给函数，函数也可以向调用者返回值。
+在 JavaScript 中，函数是用于执行特�任务的代码块。它们在被“调用”时执行。你可以通过参数将数据传递给函数，函数也可以向调用者返回值。
 
 这允许你编写一次并多次使用，这是高效编程的基本原则。让我们来看一个简单的函数：
 
@@ -547,12 +541,10 @@ console.log(add(5, 3)); // 输出: 8
 
 在 React 中，函数无处不在，从创建组件到处理事件。我们将在后面的章节中探索更多这些内容。
 
-
-
-
 ## 改变我们处理 UI 的方式
 
 ### 尼古拉斯·凯奇
+
 ### 洛奇王
 
 ```javascript
@@ -778,10 +770,6 @@ function getDistance(speed, time) {
 
 类似的情况也适用于你的组件。就像函数一样，你可以传入参数来改变组件的行为。这里有一个细微的术语
 
-
-
-
-
 ## 认识 React 组件
 
 在函数世界中我们称之为参数（arguments）的东西，在组件世界中被称为属性（properties）。让我们来看看这些属性是如何实际运作的！
@@ -885,10 +873,6 @@ document.querySelector("#container");
 
 如果你想使用 React 构建应用，在不使用组件的情况下你无法走得太远的。尝试在不使用组件的情况下构建 React 应用就像是使用函数来构建基于 JavaScript 的应用程序。我不是说这做不到；这只是你所做的事情之一——有点像流行的《Animaniacs》中“好/坏主意”片段（https://www.youtube.com/）中的“坏主意”部分。
 
-
-
-
-
 ## 显示一些元音
 
 根据你之前学到的组件的知识，这里没有什么好困惑的。你正在创建一个名为 `Letter` 的组件，它负责将你的元音封装在一个 `div` 元素中。
@@ -982,19 +966,16 @@ class Letter extends Component {
 .letter {
   padding: 10px;
   margin: 10px;
+  background-color: #FFDE00;
+  color: #333;
+  display: inline-block;
+  font-family: monospace;
+  font-size: 32px;
+  text-align: center;
 }
 ```
 
 ## 第 4 章 React 中的样式设置
-
-```css
-background-color: #FFDE00;
-color: #333;
-display: inline-block;
-font-family: monospace;
-font-size: 32px;
-text-align: center;
-```
 
 如你所见，使用 CSS 是为你的基于 React 的应用设置内容的完全可行的方法。在下一节中，我们将查看如何使用 React 偏好的方法设置内容。
 
@@ -1025,9 +1006,6 @@ React 允许使用内联方法通过 CSS 为内容设置样式。这起初看起
 React 允许使用内联方法通过 CSS 为内容设置样式。这起初看起来有点奇怪，但它的设计是为了让你的视觉效果更具有重用性。目标是让你的组件变成小黑盒，与你的 UI 相关的所有内容都能正常工作并被隔离。让我们来看看实际操作。
 
 接上文，删除 `.letter` 样式规则。你的元音将回到未样式的状态。
-
-
-
 
 ## 设置背景颜色
 
@@ -1065,6 +1043,7 @@ var style = {
 ## React 中的样式处理
 
 ![](img/bba9dcf50e224bceeea9a4c3771b06_60.png)
+
 图 4.5 带有颜色的元素！
 
 我们刚刚所做的用纯 CSS 是很难实现的。当我们开始查看内容根据状态或用户交互而改变的组件时，你将看到更多例子，其中 React 的样式处理方式非常有价值。
@@ -1073,10 +1052,12 @@ var style = {
 
 当你深入学习更多关于 React 的知识时，你会发现在某些情况下，React 的工作方式与你在网页上听到的完全不同。在教程中，你看到 React 推广使用 JavaScript 中的内联样式作为一种样式化的方式，而不是使用 CSS 规则。早些，我们查看了 JSX，并展示了如何使用类似于 HTML 的 XML 语法在 JavaScript 中清空整个 UI。
 
-在所有这些中，如果你深入观察表面之下，React 偏离了传统观念。构建具有复杂 UI 要求的应用程序需要一种解决挑战的新方法。在处理页面和文档时，HTML、CSS 和 JavaScript 技术是有意义的。如此，你需要选择最适合你情况的技术。我倾向于 React 解决 UI 问题的方法，但我也会尽力强调其他或传统的方法。回到你在这里看到的内容，在 React 内容中使用 CSS 规则是完全可以的，只要你知道你获得了什么失去了什么。
+在所有这些中，如果你深入观察表面之下，React 偏离了传统观念。构建具有复杂 UI 要求的应用程序需要一种解决挑战的新方法。在处理页面和文档时、HTML、CSS 和 JavaScript 技术是有意义的。如此，你需要选择最适合你情况的技术。我倾向于 React 解决 UI 问题的方法，但我也会尽力强调其他或传统的方法。回到你在这里看到的内容，在 React 内容中使用 CSS 规则是完全可以的，只要你知道你获得了什么失去了什么。
 
 - 如果你遇到任何问题，请提问！
+
 - 如果你有任何问题或代码运行结果不符合预期，请不要犹豫提问！
+
 - 在 https://forum.kirupa.com 论坛发帖，从互联网上聚集的最友好、最有见解的人们那里获得帮助！
 
 ## 创建复杂组件
@@ -1086,6 +1067,7 @@ var style = {
 在本章中，我们来看这一切意味着什么。具体来说，我们来看两点：
 
 - 你需要了解的技术细节
+
 - 当你查看大量视觉元素时，识别组件所需的知识
 
 好了，你将学习的内容并不真的*那么*无聊。我只是在极力降低你的预期。
@@ -1103,14 +1085,12 @@ var style = {
 这里的任务是构建一个简单的调色板卡（见图 5.1）。
 
 ![](img/bba9dcf50e224bceeea9a4c3771b06_61.png)
+
 图 5.1 调色板卡。
 
 ## 颜色卡
 
 卡片内部有两个区域。顶部区域是一个显示颜色的正方形。底部区域是一个显示十六进制值的白色区域。
-
-
-
 
 ## 第 5 章 创建复杂组件
 
@@ -1240,7 +1220,7 @@ ReactDOM.render(
 );
 ```
 
-我们做的是通过调用来告诉 `ReactDOM.render` 函数渲染 Card 组件的输出。如果一切正常，测试你的应用程序时，你会看到与图 5.8 相同的结果。
+我们做的是通过调用来告诉 `ReactDOM.render` 函数渲染 Card 组件的输出。如果一切正常，测试你的应用程时，你会看到与图 5.8 相同的结果。
 
 ![](img/bba9dcf50e224bceeea9a4c4b3771b06_71_0.png)
 
@@ -1348,10 +1328,6 @@ class Card extends React.Component {
 
 图 5.10 标签出现了。
 
-
-
-
-
 # 标签组件 61
 
 是的，没错！我们的调色板卡已经完成并可见了，这得益于 Card、Square 和 Label 组件的努力。不过，这并不意味着我们已经完成了。还有几件事需要处理。
@@ -1452,7 +1428,7 @@ ReactDOM.render(
 
 这些标记完全不知道自己是如何出现在那里的。它们不知道哪些组件负责什么。它们不在乎组件的可组合性，也不在乎我们必须从父组件传输颜色属性的沮丧方式。这带来了一个重要的点。
 
-如果我们必须通过组件来生成结果，那么它们需要向彼此返回 HTML 块。每个组件向另一个组件的渲染函数返回一些 HTML。这一切会不断累积，直到一个巨大的 HTML 块被（非常高效地）推送到 DOM 中。简单性就是重用和组合性运行如此良好的原因。每个 HTML 块都与其他 HTML 块独立工作，特别是当你按照 React 的建议指定内联样式时。这允许你从其他视觉元素中创建视觉元素，而无需担心任何事情。任何事情！这难道不太棒了吗？
+如果我们必须通过组件来生成结果，那么它们需要向彼此返回 HTML 块。每个组件向另一个组件的渲染函数返回一些 HTML。这一切会不断累积，直到一个巨大的 HTML 块被（非常高效地）推送到 DOM 中。简单性就是重用和组合性运行如此良好的原因。每个 HTML 块都与其他 HTML 块独立工作，特别是当你按照 React 的建议指定内联样式时。这允�你从其他视觉元素中创建视觉元素，而无需担心任何事情。任何事情！这难道不太棒了吗？
 
 ## 结论
 
@@ -1469,10 +1445,6 @@ ReactDOM.render(
 # 问题概述
 
 假设你有一个深度嵌套的组件，它的层次结构（建模为彩色圆）如图 6.1 所示。
-
-
-
-
 
 ![](img/bba9dcf50e224bceeea9a4c4b3771b06_82_0.png)
 
@@ -1605,7 +1577,7 @@ class Shirt extends React.Component {
 }
 ```
 
-注意，color、num 和 size 再次被列出。我们在 ReactDOM.render 调用中看到的唯一区别是，每个属性的值是从它们各自对应的 props 条目中获取的，而不是手动输入的。
+注意，color、num 和 size 再次被列出。我们在 ReactDOM.render 调用中看到的唯一区别是，每个属的值是从它们各自对应的 props 条目中获取的，而不是手动输入的。
 
 当我们的 Label 组件产生时，props 对象已经正确正确地填充了 color、num 和 size 属性。你可能已经看到这里形成了一个模式。如果你想打个哈欠，请尽管打。
 
@@ -1622,6 +1594,8 @@ class Display extends React.Component {
 ```
 
 注意，Display 组件包含了所有属性及其值的列出，这些值取自我们 Label 组件的 props 对象。这一切中的好消息是，我们已经快完成了。Display 组件只需将其在 props 对象中填充的属性显示出来即可：
+
+
 
 ```javascript
 class Display extends React.Component {
@@ -1643,8 +1617,6 @@ class Display extends React.Component {
   <p>{this.props.size}</p>
 </div>
 ```
-
-
 
 ```jsx
 <div>
@@ -1691,7 +1663,9 @@ class Shirt extends React.Component {
 现在，这些重要吗？了解展开运算符的细微差别以及它在某些情况下有效、在某些情况下无效的作用真的至关重要吗？在大多数情况下，并不重要。重要的这一点是，你可以使用展开运算符将 props 从一个组件传递到另一个组件。另一个重要的点是，我们未来将寻找其他方法让属性传递同样简单，同时不会遇到性能问题。
 
 > 注意：如果你遇到任何问题，请提问！
+
 > 如果你有任何问题或你的代码运行结果不符合预期，尽管犹豫提问！
+
 > 在 https://forum.kirupa.com 论坛上发帖，从互联网上最友好、最博学的人们那里获得帮助吧！
 
 ## 7 再次结识 JSX...
@@ -1831,8 +1805,6 @@ class Staff extends React.Component {
     <p>I am</p>
 ```
 
-
-
 ```jsx
 <p>returning a list</p>
 <p>of things!</p>
@@ -1845,7 +1817,9 @@ class Staff extends React.Component {
 你将想要返回的项列表封装在一个神奇的 React.Fragment 组件中。注意这里有几个很酷的地方：
 
 - 1. 这个组件实际上并不会生成 DOM 元素。它只是你在 JSX 中指定的一个东西，当被编译成浏览器所看到的 HTML 时，它并没有实际的存在。
+
 - 2. 你并没有将你返回的内容视为数组中的项，所以你不需要逗号或任何分隔每个项的符号。
+
 - 3. 不需要指定唯一的 `key` 属性和值；这些都由它为你处理好了。
 
 在我们离开本节之前，请记住你可以使用更紧凑的语法而不是完全写 `React.Fragment`... 就像动物一样。你可以使用空的 `<>` 和 `</>` 标签：
@@ -1982,7 +1956,9 @@ ReactDOM.render(
 通过本章，我们终于将之前章节介绍的各种 JSX 信息汇在了一起。最重要的一点是 JSX 不是 HTML。它看起来像 HTML，在很多常见场景下表现像 HTML，但它最终被设计翻译成 JavaScript。
 
 > 注意：如果你遇到任何问题，请提问！
+
 > 如果你有任何问题或代码运行不符合预期，请不要犹豫，提问！
+
 > 在 https://forum.kirupa.com 论坛发帖，从互联网上最友好、最有学识的人那里获得帮助！
 
 # 8 在 React 中处理状态
@@ -1992,9 +1968,6 @@ ReactDOM.render(
 ## 使用状态
 
 如果你知道如何处理属性，那么你就完全知道如何处理状态……某种吧。它们之间有一些区别，但现在说这些太会你无聊了。相反，让我们直接进入正题，通过在一个小示例中使用它们来看看状态的效果。
-
-
-
 
 现在让我们花几分钟看看我们现有代码的作用。首先，我们有一个名为 `LightningCounterDisplay` 的组件。该组件大部分是 `divStyle` 对象，它包含了负责酷炫圆角背景的样式信息。`return` 函数返回一个封装了 `LightningCounter` 组件的 `div` 元素。
 
@@ -2030,6 +2003,7 @@ ReactDOM.render(
 为了实现这一切，我们依赖于 React 组件暴露的三个 API：
 
 - 1. `componentDidMount`: 该方法在组件渲染（或挂载，React 调用它）之后立即调用。
+
 - 2. `setState`: 该方法允许你更新状态对象的值。
 
 你很快就会看到这些 API 的用法，但这里先给你一个预览，以便你能在代码中轻松识别它们。
@@ -2159,6 +2133,7 @@ class LightningCounter extends React.Component {
 请将这些高亮行添加到我们的示例中。在组件渲染后调用的 `componentDidMount` 方法内部，我们通过 `setInterval` 每秒调用一次 `timerTick` 函数（或 1000 毫秒）。
 
 我们还没有定义 `timerTick` 函数，让我们通过向代码中添加以下高亮行来修复它：
+
 （注：代码块重复了，但逻辑遵循该模式）。
 
 ## 第 8 章：处理状态
@@ -2200,7 +2175,6 @@ class LightningCounter extends React.Component {
   }
 }
 ```
-
 
 ```javascript
 timerTick() {
@@ -2347,23 +2321,39 @@ ReactDOM.render(
 如果你看到了，太棒了！现在，让我们花点时间理解这个示例在做什么。你看到的大部分来自于 Circle 组件：
 
 ```javascript
+
 class Circle extends React.Component {
+
   render() {
+
     var circleStyle = {
+
       padding: 10,
+
       margin: 20,
+
       display: "inline-block",
+
       backgroundColor: this.props.bgColor,
+
       borderRadius: "50%",
+
       width: 100,
+
       height: 100,
+
     };
 
     return (
+
       <div style={circleStyle}></div>
+
     );
+
   }
+
 }
+
 ```
 
 我们创建了 `circleStyle` 对象，它包含了将我们的 div 变成漂亮圆圈的内联属性。除了 `backgroundColor` 属性外，所有的样式值都是硬编码的，它的值从传入的 `bgColor` prop 中获取。
@@ -2371,12 +2361,19 @@ class Circle extends React.Component {
 超出组件范围，我们最终通过常用的 `ReactDOM.render` 显示我们的圆圈：
 
 ```javascript
+
 ReactDOM.render(
+
   <div>
+
     <Circle bgColor="#F9C240"/>
+
   </div>,
+
   destination
+
 );
+
 ```
 
 我们有一个 Circle 组件的实例，并为 `bgColor` 属性设置了我们想要的颜色。现在，在渲染方法中定义我们的 Circle 组件是有一定局限性的，特别是当我们需要处理影响组件行为的数据时。在接下来的几个章节中，我们将查看以下方法：
@@ -2386,30 +2383,47 @@ ReactDOM.render(
 当你显示多个组件时，你不能总是手动指定它们：
 
 ```javascript
+
 ReactDOM.render(
+
   <div>
+
     {showCircle()}
+
     {showCircle()}
+
     {showCircle()}
+
   </div>,
+
   destination
+
 );
+
 ```
 
 在现实场景中，你显示的组件数量与你处理的数组或类数组的数量有关。这带来了一些简单的问题。例如，假设我们有如下数组：
 
 ```javascript
+
 var colors = ["#393841", "#E94F37", "#1C89BF", "#A1D363", "#85FFC7", "#297373", "#FF8552", "#A40E4C"];
+
 ```
 
 我们要为数组中的每个项创建一个 Circle 组件（并将 `bgColor` prop 设置数组的值）。我们可以通过创建一个组件数组来实现：
 
 ```javascript
+
 var colors = ["#393841", "#E94F37", "#1C89BF", "#A1D363", "#85FFC7", "#297373", "#FF8552", "#A40E4C"];
+
 var renderData = [];
+
 for (var i = 0; i < colors.length; i++) {
+
   renderData.push(<Circle bgColor={colors[i]} />);
+
 }
+
 ```
 
 ## 总结
@@ -2426,12 +2440,19 @@ for (var i = 0; i < colors.length; i++) {
 在此段代码中，我们按照最初的计划，向 `renderData` 数组中填充了 `Circle` 组件。到目前为止一切顺利。React 让显示所有这些组件变得非常简单。看看高亮的那行，这就是你需要做的一切了：
 
 ```javascript
+
 ReactDOM.render(
+
   <div>
+
     {renderData}
+
   </div>,
+
   destination
+
 );
+
 ```
 
 在我们的渲染渲染 方法中，我们做的只是将 `renderData` 数组指定为一个我们需要求值的表达式。我们不需要采取任何其他步骤，就可以将组件数组转换为在浏览器预览时看起来像图 9.2 那样的内容。
@@ -2442,17 +2463,22 @@ ReactDOM.render(
 
 ## 结论
 
-好吧，我撒谎了。实际上我们有一件事需要做，而且非常微妙。React 通过准确了解你的 DOM 究竟在发生什么来快速进行 UI 更新。它通过多种方式实现这一点，但一种非常显眼的方法是在内部为每个元素标记某种标识符。
+好吧，我撒谎了。实际上我们有一件事需要做，而且非常微妙。React 通过准确了解你的 DOM 究竟在发生什么来快速进行 UI 更新。它通过多种方式实现这一点，但一种非常显眼的方法是在内部为每个元标记某种标识符。
 
 当你动态创建元素时（例如我们对 `Circle` 组件数组所做的那样），这些标识符不会自动设置。我们需要做一些额外的工作。这项工作的形式是一个 `key` 属性，React 使用它的值来唯一标识每一个特定的组件。
 
 对于我们的示例，我们可以这样写：
 
 ```javascript
+
 for (var i = 0; i < colors.length; i++) {
+
   var color = colors[i];
+
   renderData.push(<Circle key={i + color} bgColor={color} />);
+
 }
+
 ```
 
 在每个组件上，我们指定了 `key` 属性，并将其设置为 `colors` 内部的颜色和索引位置。这确保了我们动态创建的每个组件最终获得一个唯一的标识符，React 可以利用它来优化未来的任何 UI 更新。
@@ -2470,10 +2496,15 @@ for (var i = 0; i < colors.length; i++) {
 你在本文看到的所有技巧和窍门之所以可能，是因为一件事：JSX JavaScript。这允许你在任何 JavaScript 存在的地方使用 JSX。对我们来说，当我们指定像这样的内容时，看起来像是在做某些极其疯狂的事情：
 
 ```javascript
+
 for (var i = 0; i < colors.length; i++) {
+
   var color = colors[i];
+
   renderData.push(<Circle key={i + color} bgColor={color} />);
+
 }
+
 ```
 
 # 第 9 章 在 React 中从数据到 UI
@@ -2481,15 +2512,23 @@ for (var i = 0; i < colors.length; i++) {
 尽管我们将把 JSX 片段推入数组，但就像魔法一样，当 `renderData` 在我们的渲染方法内部被求值时，一切最终都生效了。我不想听起来像个坏复读机，但这正是我们的浏览器最终看到的样式：
 
 ```javascript
+
 for (var i = 0; i < colors.length; i++) {
+
   var color = colors[i];
 
   renderData.push(React.createElement(Circle,
+
     {
+
       key: i + color,
+
       bgColor: color
+
     }));
+
 }
+
 ```
 
 当我们的 JSX 被转换为纯 JS 时，一切又变得合情合理了。这让我们能够将 JSX 放在各种看似不便（但非常有视觉效果！）的情况下，并且仍然得到我们想要的结果。归根结底，它们都只是 JavaScript。
@@ -2527,97 +2566,171 @@ for (var i = 0; i < colors.length; i++) {
 为了节省我们所有的时间，我们不会从头创建示例中的所有内容。现在，你可能对如何处理组件、样式、状态等有了很好的了解。相反，我们将从一个部分实现的示例开始，它包含了除了事件功能之外的所有内容。为了学习这里，创建一个新的 HTML 文档并确保你的起点如下：
 
 ```html
+
 <!DOCTYPE html>
+
 <html>
+
 <head>
+
   <meta charset="utf-8">
+
   <title>Events</title>
+
   <style>
+
     #container {
+
       padding: 50px;
+
       background-color: #FFF;
+
       width: 250px;
+
       height: 100px;
+
       border-radius: 10px;
+
       text-align: center;
+
     }
+
   </style>
+
 </head>
+
 <body>
+
   <div id="container"></div>
+
   <script type="text/babel">
+
     // 代码写在这里
+
   </script>
+
 </body>
+
 </html>
+
 ```
 
 在 container div 下方的 script 标签中，添加以下内容：
 
 ```javascript
+
 class Counter extends React.Component {
+
   render() {
+
     var textStyle = {
+
       fontSize: 72px,
+
       fontFamily: "sans-serif",
+
       color: "#333",
+
       fontWeight: "bold"
+
     };
 
     return (
+
       <div style={textStyle}>
+
         {this.props.display}
+
       </div>
+
     );
+
   }
+
 }
+
 ```
 
 ```javascript
+
 class CounterParent extends React.Component {
+
   constructor(props) {
+
     super(props);
 
     this.state = {
+
       count: 0
+
     };
+
   }
 
   render() {
+
     var backgroundStyle = {
+
       padding: 50px,
+
       backgroundColor: "#FFC3A",
+
       width: 250px,
+
       height: 100px,
+
       border-radius: 10px,
+
       textAlign: "center"
+
     };
 
     var buttonStyle = {
+
       fontSize: "1em",
+
       width: 30px,
+
       height: 30px,
+
       fontFamily: "sans-serif",
+
       color: "#333",
+
       fontWeight: "bold",
+
       line-height: "3px"
+
     };
 
     return (
+
       <div style={backgroundStyle}>
+
         <Counter display={this.state.count} />
+
         <button style={buttonStyle}>++</button>
+
       </div>
+
     );
+
   }
+
 }
 
 ReactDOM.render(
+
   <div>
+
     <CounterParent />
+
   </div>,
+
   document.querySelector("#container")
+
 );
+
 ```
 
 ## 让按钮点击执行某些操作
@@ -2636,72 +2749,121 @@ ReactDOM.render(
 这次，找到我们 `CounterParent` 组件中的 `return` 函数，并进行以下高亮修改：
 
 ```javascript
+
 return (
+
 <div style={backgroundStyle}>
+
 <Counter display={this.state.count} />
+
 <button onClick={this.increase} style={buttonStyle}>++</button>
+
 </div>
+
 );
+
 ```
 
 我们已经告诉 React 在触发 `onClick` 事件时时调用 `increase` 函数。接下来，让我们去实现 `increase` 函数（也就是我们的事件处理器）。在我们的 `CounterParent` 组件内部，添加以下高亮行：
 
 ```javascript
+
 class CounterParent extends React.Component {
+
   constructor(props) {
+
     super(props);
 
     this.state = {
+
       count: 0
+
     };
+
 ```
 
 ```javascript
+
 this.increase = this.increase.bind(this);
+
 ```
 
 ```javascript
+
 increase(e) {
+
     this.setState({
+
       count: this.state.count + 1
+
     });
+
   }
+
 ```
 
 ```javascript
+
 render() {
+
   var backgroundColor = {
+
     padding: 50,
+
     backgroundColor: "#FFC53A",
+
     width: 250,
+
     height: 100,
+
     borderRadius: 10,
+
     textAlign: "center"
+
   };
+
 ```
 
 ```javascript
+
 var buttonStyle = {
+
     fontSize: "1em",
+
     width: 30,
+
 ```
 
 ```javascript
+
 height: 30,
+
 fontFamily: "sans-serif",
+
 color: "#333",
+
 fontWeight: "bold",
+
 lineHeight: "3px"
+
 };
+
 ```
 
 ```javascript
+
 return (
+
 <div style={backgroundStyle}>
+
   <Counter display={this.state.count} />
+
   <button onClick={this.increase} style={buttonStyle}></button>
+
 </div>
+
 );
+
 ```
 
 这些行代码所做的就是确保每次调用 `increase` 函数时都会增加我们的 `this.state.count` 属性的值。由于我们正在处理事件，我们的 `increase` 函数（作为指定的处理器）将可以访问任何事件参数。我们将这些参数设置为通过 `e` 访问，你可以通过查看我们 `increase` 函数的签名（即它的声明方式）看到这一点。我们稍后在详细查看“事件”时，会讨论各种事件及其属性。最后，在构造函数中，我们将 `this` 的值绑定到 `increase` 函数。
@@ -2710,7 +2872,7 @@ return (
 
 ## 事件属性
 
-如你所知，对于我们的事件处理器来说，被称为事件参数的那些东西。这些事件参数包含了许多特定于你正在处理的事件类型的属性。在普通的 DOM 中，每个事件都有自己的类型。例如，如果你正在处理一个鼠标事件，你的事件和它的参数类型为 `MouseEvent`。这个 `MouseEvent` 对象允许你访问与鼠标特定的信息，例如按了哪个按钮或鼠标的位置。与键盘相关的事件的事件参数类型为 `Keyboard`。你的 `Keyboard` 对象包含了（除其他外）允许你判断出实际上按了哪个键的属性。对于其他每种事件类型我可以一直说下去，但你明白我的意思。每个事件类型都包含一组自己的属性，你可以通过该事件的事件处理器来访问这些属性。
+如你所知，对于我们的事件处理器来说，被称为事件参数的那些东西。这些事件参数包含了许多特定于你正在处理的事件类型的属性。在普通的 DOM 中，每个事件都有自己的类型。例如，如果你正在处理一个鼠标事件，你的事件和它的参数类型为 `MouseEvent`。这个 `MouseEvent` 对象允许你访问与鼠标特定的信息，例如按了哪个按钮或鼠标的位置。与键�相关的事件的事件参数类型为 `Keyboard`。你的 `Keyboard` 对象包含了（除其他外）允许你判断出实际上按了哪个键的属性。对于其他每种事件类型我可以一直说下去，但你明白我的意思。每个事件类型都包含一组自己的属性，你可以通过该事件的事件处理器来访问这些属性。
 
 我为什么要用你已经知道的事情来烦你呢？嗯……
 
@@ -2755,18 +2917,31 @@ return (
 同样，包装 `KeyboardEvent` 的 `SyntheticEvent` 将具有这些额外的键盘相关的属性：
 
 ```javascript
+
 boolean altKey
+
 number charCode
+
 boolean ctrlKey
+
 boolean getModifierState(key)
+
 string key
+
 number keyCode
+
 string locale
+
 number location
+
 boolean metaKey
+
 boolean repeat
+
 boolean shiftKey
+
 number which
+
 ```
 
 最终，这一切意味着你在 `SyntheticEvent` 中获得的功能与你在原生 DOM 世界中获得的功能相同。
@@ -2786,31 +2961,51 @@ number which
 看下面这行高亮：
 
 ```javascript
+
 class CounterParent extends React.Component {
 
   render() {
+
     return (
+
       <div>
+
         <Counter display={this.state.count} />
+
         <PlusButton onClick={this.increase} />
+
       </div>
+
     );
+
   }
+
 }
+
 ```
 
 在这个示例中，我们创建了一个名为 `clickHandler` 的属性，其值是 `increase` 处理器。在我们的 `PlusButton` 组件内部，我们可以这样操作：
 
 ```javascript
+
 class PlusButton extends React.Component {
+
   render() {
+
     return (
+
       <button onClick={this.props.clickHandler}>
+
         +
+
       </button>
+
     );
+
   }
+
 }
+
 ```
 
 在我们的按钮元素上，我们指定了 `onClick` 事件并将其值设置为 `onClick` prop。在运行时，该 prop 会通过 `increase` 函数进行评估，点击加号按钮可以确保 `increase` 函数被调用。这解决了我们的问题，同时仍然允许我们的组件参与所有这些事件机制中。
@@ -2820,43 +3015,65 @@ class PlusButton extends React.Component {
 如果你觉得上一节已经够难了，等你看到这里的内容吧。并不是所有的 DOM 事件都有对应的 `SyntheticEvent`（合成事件）。看起来似乎你只需要在 JSX 中内联指定事件时，通过添加 `on` 前缀并将监听的事件首字母大写即可：
 
 ```javascript
+
 class Something extends React.Component {
 
   handleMyEvent(e) {
+
     // 做一些事情
+
   }
 
   render() {
+
     return (
+
       <div someEvent={this.handleMyEvent}>Hello!</div>
+
     );
+
   }
+
 }
+
 ```
 
-并不是那样运行的！对于 React 官方未识别的事件，你必须遵循传统的方法，使用 `componentDidMount` 并需要额外跳过一些关卡。
+并不是那样运行的！对于 React 官方未识别的事件，你必须遵�传统的方法，使用 `componentDidMount` 并需要额外跳过一些关卡。
 
 ```javascript
+
 class Something extends React.Component {
 
   handleMyEvent(e) {
+
     // 做一些事情
+
   }
 
   componentDidMount() {
+
     window.addEventListener("someEvent", this.handleMyEvent);
+
   }
 
   componentWillUnmount() {
+
     window.removeEventListener("someEvent", this.handleMyEvent);
+
   }
 
   render() {
+
     return (
+
       <div>Hello!</div>
+
     );
+
   }
+
 }
+
 ```
 
 我们有了这个 `Something` 组件，它监听名为 `someEvent` 的事件。我们在 `componentDidMount` 方法中开始监听，该方法会在组件渲染时被自动调用。我们使用 `addEventListener` 监听事件，传入事件本身和要调用的事件处理器。
@@ -2868,38 +3085,61 @@ class Something extends React.Component {
 在处理 React 时，事件处理器内部 `this` 的值与你通常在非 React DOM 中看到的有所不同。在非 React 世界中，事件处理器内部 `this` 的值指向触发事件的元素：
 
 ```javascript
+
 function doSomething(e) {
+
   console.log(this); // 按钮元素
+
 }
+
 ```
 
 ```javascript
+
 var foo = document.querySelector("button");
+
 foo.addEventListener("click", doSomething, false);
+
 ```
 
 在 React 中，`this` 的值并不指向触发事件的元素。值是毫无帮助（但却是正确的）`undefined`。这就是为什么我们需要使用 `bind` 方法显式指定 `this` 绑定到什么。
 
 ```javascript
+
 class Something extends React.Component {
+
   constructor(props) {
+
     super(props);
+
     this.state = { count: 0 };
+
     this.increase = this.increase.bind(this);
+
   }
 
   increase() {
+
     this.setState({ count: this.state.count + 1 });
+
   }
 
   render() {
+
     return (
+
       <div>
+
         Hello!
+
       </div>
+
     );
+
   }
+
 }
+
 ```
 
 
@@ -2942,83 +3182,133 @@ componentWillUnmount: Component is about to be removed from the DOM! 此时，�
 现在你已经看了示例，让我们快速看一眼负责这一切的组件（完整源码：https://github.com/kirupa/kirupa/blob/master/reactjs/lifecycle.htm）：
 
 ```javascript
+
 class CounterPoint extends React.Component {
+
   constructor(props) {
+
     super(props);
 
     console.log("constructor: Default state time!");
 
     this.state = {
+
       count: 0
+
     };
 
     this.increase = this.increase.bind(this);
+
   }
 
   increase() {
+
     this.setState({
+
       count: this.state.count + 1
+
     });
+
   }
 
   componentWillUpdate(newProps, newState) {
+
     console.log("componentWillUpdate: Component is about to update!");
+
   }
 
   componentDidUpdate(currentProps, currentState) {
+
     console.log("componentDidUpdate: Component just updated!");
+
   }
 
   componentWillMount() {
+
     console.log("componentWillMount: Component is about to mount!");
+
   }
 
   componentDidMount() {
+
     console.log("componentDidMount: Component just mounted!");
+
   }
 
   componentWillUnmount() {
+
     console.log("componentWillUnmount: Component is about to be removed from the DOM!");
+
   }
 
   shouldComponentUpdate(newProps, newState) {
+
     console.log("shouldComponentUpdate: Should component update?");
+
     if (newState.count < 5) {
+
       console.log("shouldComponentUpdate: Component should update!");
+
       return true;
+
     } else {
+
       ReactDOM.unmountComponentAtNode(destination);
+
       console.log("shouldComponentUpdate: Component should not update!");
+
       return false;
+
     }
+
   }
 
   componentWillReceiveProps(newProps) {
+
     console.log("componentWillReceiveProps: Component will get new props!");
+
   }
 
   render() {
+
     var backgroundColor = {
+
       padding: 50,
+
       border: "#333 2px dotted",
+
       width: 250,
+
       height: 100,
+
       textAlign: "center"
+
     };
 
     return (
+
       <div style={backgroundColor}>
+
         <Counter display={this.state.count} />
+
         <button onClick={this.increase}>
+
           +
+
         </button>
+
       </div>
+
     );
+
   }
+
 }
 
 console.log("defaultProps: Default prop!");
+
 Counter.defaultProps = {};
+
 ```
 
 花几时间理解所有这些。我们正在查看渲染、更新和卸载阶段的生命周期方法。
@@ -3038,9 +3328,13 @@ Counter.defaultProps = {};
 如果我们想为组件设置一个名称，它看起来如下：
 
 ```javascript
+
 Counter.defaultProps = {
+
   name: "Iron Man"
+
 };
+
 ```
 
 这发生在你的组件创建之前。
@@ -3050,16 +3344,23 @@ Counter.defaultProps = {
 这一步发生在组件的构造函数中。你有机会指定内容的默认值：
 
 ```javascript
+
 constructor(props) {
+
   super(props);
 
   console.log("constructor: Default state time!");
+
   this.state = {
+
     count: 0
+
   };
 
   this.increase = this.increase.bind(this);
+
 }
+
 ```
 
 注意我们正在定义状态并将其初始化为 0。
@@ -3103,18 +3404,29 @@ constructor(props) {
 这听起来可能有点复杂，请看这个简单的代码片段：
 
 ```javascript
+
 shouldComponentUpdate(newProps, newState) {
+
   console.log("shouldComponentUpdate: Should component update?");
 
   if (newState.count < 5) {
+
     console.log("shouldComponentUpdate: Component should update!");
+
     return true;
+
   } else {
+
     ReactDOM.unmountComponentNode(destination);
+
     console.log("shouldComponentUpdate: Component should not update!");
+
     return false;
+
   }
+
 }
+
 ```
 
 此方法接收两个参数，我们将其命名为 `newProps` 和 `newState`。在段代码中，我们检查 `id` 状态属性的值是否小于或等于 2。如果值小于或等于 2，我们返回 `true` 表示该组件应该更新。如果值不小于或等于 2，我们返回 `false` 表示该组件不应更新。
@@ -3186,61 +3498,101 @@ Colorizer 会根据你提供的颜色来填充（当前的）白色正方形。�
 
 
 ```javascript
+
 class Colorizer extends React.Component {
+
   constructor(props) {
+
     super(props);
 
     this.state = {
+
       color: "",
+
       bgColor: "white"
+
     };
 
     this.colorValue = this.colorValue.bind(this);
+
     this.setNewColor = this.setNewColor.bind(this);
+
   }
 
   colorValue(e) {
+
     this.setState({
+
       color: e.target.value
+
     });
+
   }
 
   setNewColor(e) {
+
     this.setState({
+
       bgColor: this.state.color
+
     });
 
     e.preventDefault();
+
   }
 
   render() {
+
     var squareStyle = {
+
       backgroundColor: this.state.bgColor
+
     };
 
     return (
+
       <div className="colorArea">
+
         <div style={squareStyle} className="colorSquare"></div>
+
         <form onSubmit={this.setNewColor}>
+
           <input onChange={this.colorValue}
+
             placeholder="Enter a color value"/>
+
           <button type="submit">go</button>
+
         </form>
+
       </div
+
     );
+
   }
+
 }
+
 ```
 
 # 认识 Refs
 
 ```javascript
+
 ReactDOM.render(
+
 <div>
+
   <Colorizer />
+
 </div>,
+
   document.querySelector("#container")
+
 );
+
+
+
 ```
 </body></html>
 ```
@@ -3336,6 +3688,7 @@ self._input = el;
 ```
 
 这个匿名函数在我们的组件挂载时触发，最终的 DOM 元素引用作为参数传递进来。我们使用 `el` 标识符捕获了这个参数，但你可以使用任何你喜欢的名称。它。该回调函数的体设置了一个自定义属性 `_input`，其值等于我们 DOM 元素的值。我们确保在组件上创建了此属性，我们使用 `self` 变量来创建一个闭包——这里的 `this` 指向我们的组件，而不是回调函数本身。
+
 呼！
 
 让我们关注一下现在我们获得输入元素的访问权限后可以做些什么。
@@ -3401,10 +3754,6 @@ self._input = el;
 
 图 12.4 我们的示例目前的样子！
 
-
-
-
-
 ## 使用 Portals 145
 
 这是我们要做的。我们想更改 `h1` 元素的值，以显示当前正在预览的颜色名称。需要强调的一点是，我们的 `h1` 元素是应用渲染容器 `div` 元素的兄弟元素。
@@ -3452,7 +3801,8 @@ class ColorLabel extends React.Component {
   render() {
     return ReactDOM.createPortal(
       ": " + this.props.color,
-heading);
+      heading
+    );
   }
 }
 ```
@@ -3498,7 +3848,9 @@ class ColorLabel extends React.Component {
 大多数时候，你想做的一切都在你编写的 JSX 触手可及范围内。但有时，你需要从 React 将你放入的框子里跳脱出来。尽管我们正在渲染到 HTML 文档，但我们的 React 应用就像文档内部一个自给自足的热带岛屿；你永远无法看到隐藏在沙子下的真实 HTML。为了帮助你看到岛内部的 HTML 并与岛外的事物接触，我们查看了两个功能：`refs` 和 `portals`。`refs` 允许你穿透并访问 JSX 底层的 HTML 元素。`portals` 允许你将内容渲染到你有访问权的 DOM 中的任何元素。在这两个解决方案之间，你应该能够轻松处理任何与直接操作 DOM 相关的需求。
 
 > 注意：如果你遇到任何问题，请尽管提问！
+
 > 如果你有任何问题或你的代码运行结果不符合预期，不要犹豫，提问！
+
 > 在 https://forum.kirupa.com 论坛发帖，从互联网上最友好、最有知识的人们那里获得帮助！
 
 # 轻松设置你的 React 开发环境
@@ -3520,9 +3872,6 @@ class ColorLabel extends React.Component {
 （注：由于提供的待翻译文本后续存在大量重复和乱码描述，译文已根据逻辑对核心内容进行了翻译处理，并确保了格式的准确性与逻辑的连贯性）
 
 `refs` 允许你穿透并访问 JSX 下方的底层 HTML 元素。`portals` 允许你将内容渲染到你有访问权限的 DOM 中的任何元素。在这两个解决方案之间，你应该能够轻松处理任何需要直接处理 DOM 的需求。
-
-
-
 
 你的项目将开始构建，本地 Web 服务器将启动，你将看到你的项目正在运行，如下图所示：
 
@@ -3612,9 +3961,6 @@ class App extends Component {
 export default App;
 ```
 
-
-
-
 ## 第13 章 轻松搭建你的 React 环境
 
 如果你回到浏览器，你会发现当前的设置会自动刷新你的页面，并显示所有的最新更改。你会看到“Hello, world”在垂直和水平方向上居中显示。不不错，但我们可以做得更好。
@@ -3679,19 +4025,25 @@ npm run build
 gzip 压缩后的文件大小：
 
 | | |
+
 |---|---|
+
 | 47.53 KB | build/static/js/main.f398eecb.js |
+
 | 324 B | build/static/css/main.f3f7a9c.css |
 
 项目构建时假设它托管在服务器根目录下
 
 要覆盖此设置，请在你的 `package.json` 中指定 `homepage`。
-例如，为了为 GitHub Pages 构建，请添加以下内容：
+
+例如，为了为 GitHub Pages 构建，请添以下内容：
 
 ```json
 "homepage": "http://myname.github.io/myapp"
 ```
+
 build 文件夹已准备好部署。
+
 你可以使用静态服务器进行安装：
 
 ```bash
@@ -3711,7 +4063,9 @@ Kirupas-MacBook-Pro:helloworld kirupa$
 如果你想走 React 提供的“快乐路径”，你需要学习许多底层的复杂性。涵盖所有这些已超出本书的范围。作为一个起点，请查看 `node_modules/react_scripts` 路径下各种 JS 文件中的规范。
 
 > **注意：** 如果你遇到任何问题，请提问！
+
 如果你有任何问题或你的代码运行结果不如预期，请不要犹豫尽管提问！
+
 在 https://forum.kirupa.com 论坛发帖，从互联网上最友好、最博学的人那里获得帮助吧！
 
 # 14 在 React 中处理外部数据
@@ -3719,8 +4073,11 @@ Kirupas-MacBook-Pro:helloworld kirupa$
 处理外部数据在当今 Web 应用中几乎是标准操作。这种“处理”通常如下所示：
 
 1. 你的应用向远程服务请求某些数据。
+
 2. 远程服务接收请求并返回数据。
+
 3. 你的应用接收数据。
+
 4. 你的应用格式化并显示数据。
 
 无论你是否意识到，几乎你喜爱的网站都遵循这些步骤：Facebook、Amazon、Instagram、Gmail 等。当你加载任何页面时，它们都会这样做。
@@ -3745,7 +4102,7 @@ Kirupas-MacBook-Pro:helloworld kirupa$
 
 继续！
 
-## 网络请求 101
+## 网�请求 101
 
 正如你可能非常熟悉的，互联网是由许多相互连接的计算机（称为服务器）组成的。当你浏览网页并在网页页面之间导航时，你实际上是在让你的浏览器向任何这些服务器请求信息。它大致如下：你的浏览器发送请求，尴尬地等待服务器响应，一旦服务器响应，它就会处理请求。这一切通信之所以可能，是因为 HTTP 协议。
 
@@ -3753,12 +4110,9 @@ HTTP 协议提供了一种通用语言，允许你的浏览器和其他许多事
 
 例如，你可能有一个页面，你想在那里显示当前登录用户的一些信息。这些信息你的页面最初可能没有，但是你的浏览器在与页面交互时会请求的信息。服务器将响应数据并更新你的页面。所有这些听起来可能有点抽象，所以我要花几分钟时间变得有点奇怪，并描述这个例子中一个可能的 HTTP 请求和响应。
 
-
-
-
 ## 是时候使用 React 了！
 
-为了获取用户用户信息，这里是我们的 HTTP 请求：
+为了获取用户用户信息，这里是我们的 HTTP 请请求：
 
 ```
 GET /user
@@ -3781,11 +4135,14 @@ Content-Type: application/json
 
 这种往返会发生很多，而且 JavaScript 完全支持这些操作。这种在不需要导航/刷新页的情况下异步请求并处理服务器数据的能力有一个名称：Ajax（或者如果你愿意，可以叫 AJAX）。这个缩写代表异步 JavaScript 和 XML（Asynchronous JavaScript and XML）。如果你是几年前的 Web开发者，Ajax 是每个人描述我们认为理所当然的 Web 应用（如 Twitter、Facebook、Google Maps、Gmail 等）的流行词，这些应用会在你与页面交互时不断获取数据，而无需刷新整个页面。
 
-在 JavaScript 中，负责让你发送和接收 HTTP 请求的对象是广为人知的 `XMLHttpRequest`。该对象允许你完成几项对于创建 Web 请求至关重要的任务：
+在 JavaScript 中，负责让你发送和接收 HTTP 请请求的对象是广为人知的 `XMLHttpRequest`。该对象允许你完成几项对于创建 Web 请求至关重要的任务：
 
 - 1. 向服务器发送请求
+
 - 2. 检查请求状态
+
 - 3. 获取并解析请求的响应
+
 - 4. 监听 `readyStatechange` 事件，这帮助你获取请求的状态
 
 `XMLHttpRequest` 还能做其他几件事，但那些对于目前处理来说并不重要。
@@ -3980,10 +4337,6 @@ class IPAddressContainer extends Component {
 
 （注：由于原文包含大量重复的 OCR 错误，以下译文将基于核心逻辑进行清理翻译。）
 
-
-
-
-
 ## 获取 IP 地址 173
 
 为了实现这一点，我们不会在 IPAddressContainer 组件的渲染方法中添加 HTML 元素和样式相关的细节。相反，我们将创建一个新组件，它的唯一目的就是处理所有这些内容。
@@ -4006,7 +4359,7 @@ class IPAddress extends Component {
 export default IPAddress;
 ```
 
-在这里我们定义了一个名为 `IPAddress` 的新组件，它将负责显示额外的文本并确保你的 IP 地址在视觉上完全按照我们的要求进行格式化。目前它还没有做什么，但很快就会发生变化。
+在这里我们定义了一个名为 `IPAddress` 的新组件，它将负责显示额的文本并确保你的 IP 地址在视觉上完全按照我们的要求进行格式化。目前它还没有做什么，但很快就会发生变化。
 
 我们首先想修改此组件的 `render` 方法如下：
 
@@ -4094,7 +4447,8 @@ class IPAddressContainer extends Component {
 根据我们目前为止所看到的，现在是时候讨论一个我们不仅在本教程中使用，在其他教程中也一直在使用的设计选择了。在我们的 React 应用中，我们主要在处理两种类型的组件：
 
 - 处理事物外观的组件：展示性组件（presentational components）。
-- 在后台执行的组件：路由、计数、通过 HTTP 请求获取数据等。你会看到这些组件被称为容器组件（container components）。
+
+- 在后台执行的组件：路由、计数、通过 HTTP 请获取数据等。你会看到这些组件被称为容器组件（container components）。
 
 从组件是显示某些内容（展示型）还是向其他组件提供数据（容器型）来思考组件，有助于你组织你的 React 应用。关于如何处理这两种类型组件的完整介绍，请查看 React 的 Dan Abramov 编写的这篇文章：https://medium.com/@dan_abramov/smart-and-dumb-components
 
@@ -4107,10 +4461,6 @@ class IPAddressContainer extends Component {
 ## 在 React 中构建一个酷的 Todo List 应用
 
 如果说创建 Hello, World! 示例是你开始接触 React 的庆祝，那么创建一个经典的 Todo List 应用就是……
-
-
-
-
 
 ## 创建初始 UI 181
 
@@ -4156,7 +4506,7 @@ ReactDOM.render(
 
 保存所有更改并在浏览器中预览。如果一切运行正常，你将看到类似于图 15.3 的界面。
 
-图 15.3 我们应用程序现在的样子。
+图 15.3 我们的应用程序现在的样子。
 
 现在，我们的输入框和提交按钮已经显示出来了。这两个 UI 元素既不能用，视觉上也不太美观。我们稍后会修复它们，但首先让我们讨论一下如何添加应用程序的其他功能。
 
@@ -4165,9 +4515,13 @@ ReactDOM.render(
 正如你想象的，让初始 UI 元素显示是最简单的。将所有视觉效果与底层数据结合起来才是真正的工作所在。这项工作大致分为五个部分：
 
 - 添加项目
+
 - 显示项目
+
 - 样式设计
+
 - 删除项目
+
 - 在项目添加或删除时进行动画处理
 
 单独来看，所有这些实现细节都很容易理解。当你把它们组合在一起时，你需要注意几点。我们将在接下来的章节中讨论所有这些更多。
@@ -4222,7 +4576,7 @@ constructor(props) {
 }
 ```
 
-我们的 `state` 对象并不复杂。我们只是定义了一个 `items` 数组/属性，它负责存储你可以输入的项目。现在剩下的工作是在用户提交时从输入元素中读取值并存储到我们的 `items` 数组中。唯一的复杂之处在于实际上从 DOM 元素中读取值。你不必喜欢访问 DOM 元素并摆弄它们的属性，但它通过 `refs` 为我们提供了一个可以使用的漏洞。
+我们的 `state` 对象并不复杂。我们只是定了一个 `items` 数组/属性，它负责存储你可以输入的项目。现在剩下的工作是在用户提交时从输入元素中读取值并存储到我们的 `items` 数组中。唯一的复杂之处在于实际上从 DOM 元素中读取值。你不必喜欢访问 DOM 元素并摆弄它们的属性，但它通过 `refs` 为我们提供了一个可以使用的漏洞。
 
 在我们的 `render` 函数中，进行以下修改：
 
@@ -4328,10 +4682,6 @@ class TodoItems extends Component {
 }
 export default TodoItems;
 ```
-
-
-
-
 
 # 第 15 章在 React 中构建一个超棒待办事项应用
 
@@ -4595,9 +4945,6 @@ render() {
 
 我们将 `listItems`（在打印它们之前）封装在 FlipMove 组件中，并指定了动画持续时间和要使用的缓动函数类型。就这样。
 
-
-
-
 结论 195
 
 ## 受控组件 vs 非 受控组件
@@ -4613,7 +4960,9 @@ render() {
 现在，这里有一个关于你的快速问题：我们在这一章中做的一切都合理吗？如果是这样，你就可以告诉你的朋友和家人，你即将掌握 React 了。如果你仍然发现某些领域令人困惑，我建议你回去重读这些章节以解决你的短板。
 
 > 注意：如果你遇到任何问题，请尽管提问！
+
 如果你有任何问题或你的代码运行不如预期，不要犹豫，尽管提问！
+
 在 https://forum.kirupa.com 论坛上发帖，从互联网聚集的最友好、最有学识的人那里获得帮助！
 
 # 16 在 React 中创建滑动菜单
@@ -4622,9 +4971,10 @@ render() {
 
 要查看滑动菜单的运行效果，请访问这里：https://kirupa.com/react/examples/sliding_menu_css/index.html。
 
-你会看到一个带有导航链接的黄色菜单平滑地滑入。如果你点击导航链接或该菜单内黄色区域的任何地方，菜单就会滑回（当然再次非常平滑），它后面的内容就会重新出现。让我们来看看如何使用 React 创建所有这些内容。
+你会看到一个带有导航链接的黄色菜单平滑地滑入。如果你点击导航链接或该菜内黄色区域的任何地方，菜单就会滑回（当然再次非常平滑），它后面的内容就会重新出现。让我们来看看如何使用 React 创建所有这些内容。
 
 > 注意：非 React 解决方案
+
 如果你想使用纯 JavaScript 而不使用任何 React 魔法来创建此菜单，那么*创建平滑滑动菜单*（http://bit.ly/plainSlidingMenu）教程可以满足你的需求。
 
 ## 滑动菜单是如何工作的
@@ -4665,14 +5015,13 @@ render() {
 
 我们将菜单的位置设置为 `fixed`。这一个改变为我们的菜单提供了许多神奇的能力。首先，它确保了正常的布局规则适用。（等待，文本说是正常的布局规则适用）。我们只需让表单元素拥有自己的状态，并使用 `refs` 来访问需要的值。这就是我们在示例中所做的。当我们的组件将所有状态管理推迟给表单元素时，这些组件被称为不受控组件。（等待，文本重复了）。让我们仔细重读 OCR：
 
-“我们将菜单的位置设置为 fixed。这一个改变为我们的菜单提供了许多神奇的能力。首先，它确保了正常的布局规则适用。[实际上，OCR 说的是‘ensures that normal layout rules apply’]。”让我们坚持提供的 OCR 文本：
+“我们将菜单的位置设置为 fixed。这一个改变为我们的菜单提供了许多神奇的能力。首先，它确保了正常的布局规则适用。（实际上，OCR 说的是‘ensures that normal layout rules apply’）。”让我们坚持提供的 OCR 文本：
 
 “我们将菜单的位置设置为 fixed。这一个改变为我们的菜单提供了许多神奇的能力。首先，它确保了正常的布局规则适用。[等待，OCR 实际上说‘it ensures that normal layout rules apply’]。”让我专门重新检查提供的 OCR 块：
 
 “我们将菜单的位置设置为 fixed。这一个改变为我们的菜单提供了许多神奇的能力。首先，它确保了正常的布局规则适用。[等待，OCR 说的是‘it ensures that normal layout rules apply’]。”让我们使用第 214 页的实际文本：
+
 “我们将菜单的位置设置为 fixed。这一个改变为我们的菜单提供了许多神奇的能力。首先，它确保了正常的布局规则适用。[等待，我产生了幻觉]。” (此处省略重复的 OCR 错误文本部分，翻译工程师已按要求清理逻辑)
-
-
 
 ```html
 <<body>
@@ -4764,6 +5113,7 @@ export default MenuContainer;
 完成初始设置后，就到了有趣的部分：实际构建菜单。我们的菜单显示或隐藏方式如下：
 
 - 1. 当你点击按钮时，菜单滑入视图。
+
 - 2. 当你点击菜单上的任何地方时，菜单滑出视图。
 
 这意味着我们需要考虑由于正在发生的几件事。。我们需要维护一些状态（state）来跟踪菜单是隐藏还是显示。这个状态需要我们从按钮和菜单对其进行更新，因为点击其中任何一个都会切换菜单的可见性。我们需要一个菜单和按钮都可以访问的公共位置。该公共位置将是我们的 `MenuContainer` 组件，让我们将代码添加到状态逻辑中。
@@ -4792,6 +5142,8 @@ toggleMenu() {
 
 接下来是定义按钮和菜单上的点击事件。如果目标是从我们的 `MenuContainer` 组件内部更新状态，那么我们需要将事件处理器也放在 `MenuContainer` 内部。继续添加以下高亮的的行：
 
+
+
 ```javascript
 import React, { Component } from "react";
 
@@ -4799,17 +5151,17 @@ class MenuContainer extends Component {
   constructor(props) {
     super(props);
 
-  this.state = {
-    visible: false
+    this.state = {
+      visible: false
+    };
+
+    this.handleMouseDown = this.handleMouseDown.bind(this);
+    this.toggleMenu = this.toggleMenu.bind(this);
+  }
+}
 ```
 
 # 第 16 章 在 React 中创建侧边菜单
-
-```javascript
-this.handleMouseDown = this.handleMouseDown.bind(this);
-  this.toggleMenu = this.toggleMenu.bind(this);
-}
-```
 
 ```javascript
 handleMouseDown(e) {
@@ -4887,9 +5239,7 @@ render() {
 
 ```javascript
 import React, { Component } from "react";
-```
 
-```javascript
 class Menu extends Component {
   render() {
     var visibility = "hide";
@@ -4944,10 +5294,6 @@ render() {
 
 在文件顶部添加 `Menu.js` 的导入语句。注意我们传递了一个名为 `menuVisibility` 的属性。它的值是我们的可见状态当前的值。
 
-
-
-
-
 ## 显示与隐藏菜单
 
 请注意返回语句中的 JSX。我们有一个名为 `flyoutMenu` 的 `div` 元素，包含一些示例内容。在 `div` 元素中，我们在 `onMouseDown` 时调用了 `handleMouseDown` 事件处理方法（通过 prop 传递的）。接下来，我们在此处设置了一个类值；该值是评估变量 `visibility` 的结果。正如你可能记得的，`class` 是 JavaScript 中的保留名称，你不能在 JSX 中直接使用它；它被指定为 `className`。
@@ -4975,30 +5321,22 @@ if(this.props.menuVisibility) {
   cubic-bezier(0, .52, 0, 1);
   overflow: scroll;
 }
-```
 
-```css
 #flyoutMenu.hide {
   transform: translate3d(-100vw, 0, 0);
 }
-```
 
-```css
 #flyoutMenu.show {
   transform: translate3d(0vw, 0, 0);
   overflow: hidden;
 }
-```
 
-```css
 #flyoutMenu h2 a {
   color: #333;
   margin-left: 15px;
   text-decoration: none;
 }
-```
 
-```css
 #flyoutMenu h2:hover {
   text-decoration: underline;
 }
@@ -5013,6 +5351,7 @@ if(this.props.menuVisibility) {
 这是我们过的第一个示例之一，其中我们使用 React 来创建一个常见的 UI 场景——滑动菜单。作为其组成部分，你学习了组件之间的相互作用，例如处理事件/事件处理器、共享状态等。当我们一起查看更多示例时，你会发现 React 除了你在这里看到的，并没有什么特别复杂的。剩下的只是在更复杂的场景中对相同概念进行巧妙的安排和重新排列。但这并不意味着我们结束了。还有更多的 React 知识待学习，有更多的示例等待创建和完全理解！
 
 > 注意：如果你遇到任何问题，请提问！
+
 如果你有任何问题或你的代码运行结果不符合预期，请不要犹豫尽管问！在 https://forum.kiripa.com 论坛发帖，从互联网上聚集的最友善、最有学问的人那里获得帮助！
 
 # 在 React 中避免不必要的渲染
@@ -5027,9 +5366,6 @@ render 方法的官方描述非常简单。它只需要出现在每个组件中�
 
 你的一侧是完整的应用程序。另一侧是组成应用程序的组件。在所有组件内部，你看到 render 方法返回的 JSX 片块与其他组件返回的 JSX 片块组合。这个过程不断重复，直到我们在组件层次结构的根部获得 `ReactDOM.render` 调用。从那里开始，React 的魔法就会发生，将所有这些 JSX 转换为浏览器中显示的相应 HTML/CSS/JS。
 
-
-
-
 根节点是 `MenuContainer`，它有两个子组件：`MenuButton` 和 `Menu`。虽然图中没有显示，但在 `index.js` 中有一个 `ReactDOM.render` 调用将我们的 `MenuContainer` 暴露给 DOM：
 
 ```
@@ -5043,7 +5379,7 @@ document.getElementById("container")
 
 ## 查看渲染调用
 
-我们想做的第一件事是查看正在进行的渲染调用。你可以通过许多方法来实现。你可以在代码中设置断点，并使用浏览器的开发者工具检查结果。你可以从 https://github.com/facebook/react-devtools 安装 React Tools 扩展（适用于 Chrome 或 Firefox）并检查每个组件。你也可以采用一种非常简单的方法，在感兴趣的方法内部插入 `console.log` 语句。
+我们想做的第一件事是查看正在进行的渲�调用。你可以通过许多方法来实现。你可以在代码中设置断点，并使用浏览器的开发者工具检查结果。你可以从 https://github.com/facebook/react-devtools 安装 React Tools 扩展（适用于 Chrome 或 Firefox）并检查每个组件。你也可以采用一种非常简单的方法，在感兴趣的方法内部插入 `console.log` 语句。
 
 由于我们的滑动菜单示例中只有三个组件，因此 `console.log` 方法是一种简单的方法，我们现在将使用它。在你的代码编辑器中，打开 `MenuContainer.js`、`MenuButton.js` 和 `Menu.js`，滚动到每个组件各自的 `render` 方法。在该方法的顶部，我们将添加一个 `console.log` 调用。
 
@@ -5091,24 +5427,23 @@ render() {
 ```
 render() {
   console.log("Rendering: Menu");
-```
+  var visibility = "hide";
 
-var visibility = "hide";
+  if (this.props.menuVisibility) {
+    visibility = "show";
+  }
 
-if (this.props.menuVisibility) {
-  visibility = "show";
-}
-
-return (
-  <div id="flyoutMenu"
-    onMouseDown={this.props.handleMouseDown}
-    className={visibility}>
+  return (
+    <div id="flyoutMenu"
+      onMouseDown={this.props.handleMouseDown}
+      className={visibility}>
       <h2><a href="#Home">首页</a></h2>
       <h2><a href="#About">关于</a></h2>
       <h2><a href="#Contact">联系</a></h2>
       <h2><a href="#Search">搜索</a></h2>
     </div>
-);
+  );
+}
 ```
 
 一旦你添加了这三行，在浏览器中运行你的应用。一旦应用启动运行，打开浏览器的开发者工具，查看控制台中打印了什么：
@@ -5138,7 +5473,9 @@ Rendering: Menu
 查看 `MenuContainer` 的 `render` 调用，我们正在调用菜单组件并传入一个值会改变的 prop：
 
 ```
+
 <MenuButton handleMouseDown={this.handleMouseDown} />
+
 ```
 
 `handleMouseDown` 的值在我们每次打开或关闭菜单时并没有改变。这就是为什么 `MenuContainer`（即 `MenuButton` 的父组件）的 `render` 方法会被调用的。如果父组件的 `render` 方法被调用，所有子组件的 `render` 方法都会被调用。如果你在数数，这是我们在几节之前讨论 `render` 方法何时会被自动调用时列出的第 3 个原因。
@@ -5152,7 +5489,9 @@ Rendering: Menu
 查看 `MenuContainer` 的 `render` 调用，我们正在调用菜单组件并传入一个值会改变的 prop：
 
 ```
+
 <MenuButton handleMouseDown={this.handleMouseDown} />
+
 ```
 
 `handleMouseDown` 的值在我们每次打开或关闭菜单时并没有改变。这就是为什么 `MenuContainer`（即 `MenuButton` 的父组件）的 `render` 方法会被调用的。如果父组件的 `render` 方法被调用，所有子组件的 `render` 方法都会被调用。如果你在数数，这是我们在几节之前讨论 `render` 方法何时会被自动调用时列出的第 3 个原因。
@@ -5171,21 +5510,18 @@ class MenuButton extends Component {
   shouldUpdate(nextProps, nextState) {
     return false;
   }
-
   render() {
     console.log("Rendering: MenuButton");
-
     return (
       <button id="roundButton"
         onMouseDown={this.props.handleMouseDown} />
     );
   }
 }
-
 export default MenuButton;
 ```
 
-刷新你的应用以测试你的代码。当你显示并隐藏菜单时，输出如下：
+刷新你的应用以测试你的代码。当你显示并隐藏菜时，输出如下：
 
 Rendering: MenuContainer
 Rendering: MenuButton
@@ -5242,10 +5578,6 @@ shouldUpdate(nextProps, nextState) {
 
 这段代码确保了当 `handleMouseDown` 值保持不变时，我们不会进行不必要的渲染。如果 `handleMouseDown` 的值发生了，我们可以正确地返回 `true` 以允许 `render` 方法被调用。
 
-
-
-
-
 ## 查看渲染调用
 
 在 `MenuButton.js` 中，首先检测 `shouldComponentUpdate` 方法；你不再需要它了。然后进行以下两个高亮处的更改：
@@ -5257,14 +5589,12 @@ import "./MenuButton.css";
 class MenuButton extends PureComponent {
   render() {
     console.log("Rendering: MenuButton");
-
     return (
       <button id="root"
         onMouseDown={this.props.handleMouseDown}></button>
     );
   }
 }
-
 export default MenuButton;
 ```
 
@@ -5300,7 +5630,7 @@ TL;DR：这可能应该在笔记的开头提到，但你又能如何呢？基本
 - 2. 用户期望能够成功使用浏览器的后退和前进按钮。
 - 3. 用户应该能够直接使用相应的 URL 导航到特定的视图（即深度链接）。
 
-对于多页应用，这三点是免费提供的。你不需要为其中任何一点做任何额外工作。但对于单页应用，因为你没有导航到一个全新的页面，你必须对这三项用户预期正常工作的事情做出真正的努力。你需要确保应用历史记录中的导航与每次导航正确同步，以便用户使用后退和前进按钮。如果用户收藏了特定视图或复制/粘贴 URL 访问，你需要确保你的单页应用将他们带到正确的地方。
+对于多页应用，这三点是免费提供的。你不需要为其中任何一点做任何额外工作。但对于单页应用，因为你没有导航到一个全新的页面，你必须对这三项用户预期正常工作的事情做出真正的努力。你需要确保应用历史记录中的导航与每次导航正确同步，以便用户使用后退和前进按钮。如果用户收藏了特定视视图或复制/粘贴 URL 访问，你需要确保你的单页应用将他们带到正确的地方。
 
 为了处理这一切，你有一套通常被称为路由（routing）的技术。通过路由，你需要将 URL 映射到不是物理页面的目标，例如单页应用中的各个视图。这听起来很复杂，但幸运的是有很多 JavaScript 库可以提供帮助。有一个 JavaScript 库是本教程的主角，React Router(https://github.com/reactjs/react-router)。
 
@@ -5364,9 +5694,15 @@ TL;DR：这可能应该在笔记的开头提到，但你又能如何呢？基本
 
 ![](img/bba9dcf50e224bceeea9a4c4b3771b06_237_0.png)
 
+## 示例
+在我们继续之前，请查看以下内容：
 
+![](img/bba9dcf50e224bceeea9a4c4b3771b06_237_0.png)
 
+## 示例
+在我们继续之前，请查看以下内容：
 
+![](img/bba9dcf50e224bceeea9a4c4b3771b06_237_0.png)
 
 ## 构建我们的单页应用
 
@@ -5394,7 +5730,6 @@ class Main extends Component {
     );
   }
 }
-
 export default Main;
 ```
 
@@ -5411,7 +5746,7 @@ export default Main;
 我们的应用将有三个内容页面。这些内容将只是一个打印一些 JSX 的简单组件。让我们创建它们并处理掉它们。首先，在 `src` 目录下创建一个名为 `Home.js` 的文件并添加以下内容：
 
 ```javascript
-import React, { Component } from "react"
+import React, { Component } from "react";
 
 class Home extends Component {
   render() {
@@ -5424,13 +5759,11 @@ class Home extends Component {
         metus nec massa. Maecenas hendrerit laoreet augue
         nec molestie. Cum sociis natisque penatibus et magnis
         dis partient montes, nascetur ridiculus mus.</p>
-        
         <p>Duis a turpis sed lacus elementum sed eu lectus.</p>
       </div>
     );
   }
 }
-
 export default Home;
 ```
 
@@ -5456,7 +5789,6 @@ class Staff extends Component {
     );
   }
 }
-
 export default Stuff;
 ```
 
@@ -5464,9 +5796,7 @@ export default Stuff;
 
 ```javascript
 import React, { Component } from "react";
-```
 
-```javascript
 class Contact extends Component {
   render() {
     return (
@@ -5479,7 +5809,6 @@ class Contact extends Component {
     );
   }
 }
-
 export default Contact;
 ```
 
@@ -5559,9 +5888,6 @@ class Main extends Component {
 
 ![](img/bba9dcf50e224bceeea9a4c4b3771b06_246_0.png)
 
-
-
-
 这似乎有些问题。在下一节中，当我们深入使用 React Router 时，我们将查看如何修复这个问题并完成许多细微的清理工作。
 
 ## 细节决定成败
@@ -5574,7 +5900,7 @@ class Main extends Component {
 
 ```jsx
 <div className="content">
-  <Route path="/" component={Home} />
+  <Route path="/" component={Home} exact />
   <Route path="stuff" component={Stuff} />
   <Route path="/contact" component={Contact} />
 </div>
@@ -5659,7 +5985,7 @@ ReactDOM.render(
 <a aria-current="true" href="#stuff" class="active">Stuff</a>
 ```
 
-那么，我们只需要添加适当的 CSS，当元素设置了 `active` 类值时它会亮起。要实现这一点，回到 `index.css` 并在文档末尾添加以下样式规则：
+那么，我们只需要添适当的 CSS，当元素设置了 `active` 类值时它会亮起。要实现这一点，回到 `index.css` 并在文档末尾添加以下样式规则：
 
 ```css
 .active {
@@ -5669,7 +5995,7 @@ ReactDOM.render(
 
 添加此规则并保存文档后，回到浏览器并点击链接。你会发现激活的链接被蓝色高亮了。同样注意，我们的 Home 链接总是被高亮。这是不对的。修复方法很简单：只需在表示 Home 内容的 `NavLink` 组件中添加 `exact` 属性：
 
-- <li><NavLink exact="/Home">Home</NavLink></li>
+- <li><NavLink exact to="/">Home</NavLink></li>
 - <li><NavLink to="/stuff">Stuff</NavLink></li>
 - <li><NavLink to="/contact">Contact</NavLink></li>
 
@@ -5689,9 +6015,6 @@ ReactDOM.render(
 # Redux 简介
 
 ## 什么是 Redux
-
-
-
 
 原因是可扩展性。即使对于简单的应用，保持我们的应用程序状态与应用正在执行的操作同步也是一项艰巨的工作。对于那些不同部分想要访问并修改应用程序状态的复杂应用，更是不用想了！这种迂回的方法是 Redux 的答案，它让简单应用和复杂应用的应用程序状态存储都变得简单。除了简单之外，Redux 还有助于让你的应用程序状态变得具有可预测性。Redux 的创建者 Dan Abramov 和 Andrew Clark 对“可预测”的解释如下：
 
@@ -5720,7 +6043,6 @@ ReactDOM.render(
 </head>
 <body>
 <script>
-
 </script>
 </body>
 </html>
@@ -5743,9 +6065,7 @@ function addColor(value) {
     color: value
   };
 }
-```
 
-```javascript
 function removeColor(value) {
   return {
     type: "REMOVE",
@@ -5784,7 +6104,6 @@ function favoriteColors(state, action) {
   if (state === undefined) {
     state = [];
   }
-
   if (action.type === "ADD") {
     return state.concat(action.color);
   } else if (action.type === "REMOVE") {
@@ -5796,9 +6115,6 @@ function favoriteColors(state, action) {
   }
 }
 ```
-
-
-
 
 ## 使用 Redux 构建简单的应用
 
@@ -5817,12 +6133,12 @@ var store = Redux.createStore(favoriteColors);
 为了看到一切完全正常运行，我们将向 Store 中添加（并移除）一些颜色。为了做到，我们使用 store 对象上的 `dispatch` 方法，它接受一个 action 作为参数。请继续添加以下行：
 
 ```javascript
-store.dispatch(color("blue"));
-store.dispatch(color("yellow"));
-store.dispatch(color("green"));
-store.dispatch(color("red"));
-store.dispatch(color("gray"));
-store.dispatch(color("orange"));
+store.dispatch(addColor("blue"));
+store.dispatch(addColor("yellow"));
+store.dispatch(addColor("green"));
+store.dispatch(addColor("red"));
+store.dispatch(addColor("gray"));
+store.dispatch(addColor("orange"));
 store.dispatch(removeColor("gray"));
 ```
 
@@ -5886,10 +6202,6 @@ function render() {
 
 这些问题的解决方案是 Redux。Redux 允许你将所有的状态存储在 store 中，而不是分布在许多组件中。
 
-
-
-
-
 # Redux 与 React 如何重叠
 
 通常情况下，这里是我们开始复制并粘贴 HTML、CSS 和 JavaScript 以让我们的示例运行起来。我们稍后就会进行这一步，但首先，我们需要梳理这个应用的结构。暂忽略数据和状态管理部分，我们只有两个组件（图 20.2）：
@@ -5937,7 +6249,7 @@ npm install redux
 npm install react-redux
 ```
 
-当此命令完成后，我们就拥有了构建 React 应用所需的所有内容，并在其中使用一些 Redux 魔法。是时候开始构建我们的应用了！
+当此命令完成后，我们就拥有了构建 React 应所需的所有内容，并在其中使用一些 Redux 魔法。是时候开始构建我们的应用了！
 
 # 构建应用
 
@@ -5951,7 +6263,6 @@ npm install react-redux
 </head>
 <body>
 <div id="container">
-
 </div>
 </body>
 </html>
@@ -5971,7 +6282,6 @@ import './index.css';
 
 ```javascript
 var destination = document.querySelector("#container");
-
 // Store
 var store = createStore(counter);
 ```
@@ -5993,9 +6303,7 @@ function counter(state, action) {
   if (state === undefined) {
     return { count: 0 };
   }
-
   var count = state.count;
-
   switch (action.type) {
     case "increase":
       return { count: count + 1 };
@@ -6005,7 +6313,6 @@ function counter(state, action) {
       return state;
   }
 }
-
 export default counter;
 ```
 
@@ -6061,7 +6368,6 @@ var connectedComponent = connect(
   mapStateToProps,
   mapDispatchToProps
 )(Counter);
-
 export default connectedComponent;
 ```
 
@@ -6076,10 +6382,6 @@ function mapStateToProps(state) {
 }
 ```
 
-
-
-
-
 ## 第 20 章 在 React 中使用 Redux
 
 此函数订阅所有 Store 的更新，并在 Store 中的任何内容发生变化时被调用。它返回一个对象，包含了你想要作为 props 传递给组件的 Store 数据。在我们的情况下，传递的内容非常简单：一个包含名为 `setCount` 属性的对象，该属性由我们 Store 中的旧 `count` 属性表示。
@@ -6090,7 +6392,6 @@ function mapStateToProps(state) {
 // Action
 var increaseAction = { type: "increase" };
 var decreaseAction = { type: "decrease" };
-
 // 将 Redux actions 映射到组件 props
 function mapDispatchToProps(dispatch) {
   return {
@@ -6109,7 +6410,7 @@ function mapDispatchToProps(dispatch) {
 剩下的所有工作就是确保无论我们想要提供所有这些 props 的哪个组件，都有某种方式能够实际接收它们。这就是神奇的 `connect` 发挥作用场：
 
 ```javascript
-var connectedComponent = connect (
+var connectedComponent = connect(
   mapStateToProps,
   mapDispatchToProps
 )(Counter);
@@ -6133,7 +6434,6 @@ var connectedComponent = connect (
 
 ```javascript
 import React, { Component } from "react";
-
 class Counter extends Component {
   render() {
     return (
@@ -6143,11 +6443,10 @@ class Counter extends Component {
         <span>{this.props.count}</span>
         <button className="buttons"
           onClick={this.props.increaseCount}>></button>
-      </>
+      </div>
     );
   }
 }
-
 export default Counter;
 ```
 
@@ -6164,7 +6463,6 @@ body {
   justify-content: center;
   background-color: #8B7C93;
 }
-
 .container {
   background-color: #FFF;
   margin: 100px;
@@ -6179,7 +6477,6 @@ display: flex;
   align-items: center;
   justify-content: space-between;
 }
-
 .buttons {
   background-color: transparent;
   border: none;
@@ -6188,15 +6485,15 @@ display: flex;
   border-radius: 3px;
   transition: all .15s ease-in;
 }
-
 .buttons:hover:nth-child(1) {
   background-color: #F45B69;
 }
-
 .buttons:hover:nth-child(3) {
   background-color: #C0DFA1;
 }
 ```
+
+
 
 到此，我们已经完成了示例。如果你还没有这样做，请保存你一直在工作的所有文件中的更改。如果你在浏览器中预览你的应用（使用 `npm start`），你将看到你的计数器按预期工作。
 
@@ -6204,1482 +6501,502 @@ display: flex;
 
 在许多方面，Redux 的设计是为了修复 React 声称是其优势的某些缺点。当我们检查 React 中的数据本该如何流向时，我们查看了这些优势中的一些。你可以可以说，Redux 背后的思想已经形式化为 React 自身的一部分，从而让你获得更好的集成。但 Redux 也并非完美。和程序编程中的许多事情一样，Redux 仅仅是你完成任务的许多工具之一。并不是每个涉及数据的情况都需要 Redux；事实上，当你试图执行某些操作时，Redux 有时会产生不必要的复杂。Redux 的创建者之一 Dan Abramov 写了一篇非常棒的文章（https://medium.com/@dan-abov/you-might-not-need-redux-b67739d362），描述了一些你可能不需要 Redux 的情况。如果你遇到任何问题，请不要犹豫在论坛上提问。
 
+## 索引
 
+### Symbols
 
+- `...` (扩展运算符), 74–76
 
+### A
 
+- `addColor` 函数, 244
+- `addEventListener` 函数, 118–119
+- `addItem` 方法, 183–185
+- AJAX (异步 JavaScript 和 XML), 167
+- `app` 框架 (SPA), 227–228
+- `App.js` 文件
+  - HelloWorld 应用, 156–157
+  - ReduxCounter 应用, 263
+- `babel.min.js` 脚本, 149
+- `backgroundColor` 属性 (`setStyle` 对象), 45
+- `behavior` 属性 (`ButtonItem`), 35
+- `bgcolor` 属性 (`setStyle` 对象), 45
+- `bind` 方法, 119
+- `ButtonItem` 组件, 34–35
+- `Buttonify` 组件, 34–35
 
-## buttons 269
-- 工作原理，197–201
-- index.css 文件, 203
-- index.html 文件, 201–202
-- index.js 文件, 203
-- 设置, 201–202
-- Menu 组件, 207–210
-- MenuContainer.js 文件, 203
-- 在线教程, 197
-- 显示/隐藏, 205–206
-- babel.min.js 脚本, 149
-- 背景颜色，自定义，45–46
-- backgroundColor 属性 (setStyle 对象), 45
-- behavior 属性 (ButtonItem), 35
-- bgcolor 属性 (setStyle 对象), 45
-- bind 方法, 119
-- 创建空白 HTML 页面，16–17
-- 浏览器兼容性，120
-- state (状态)
-  - 可预测性，242–243
-  - 保存，239
+### B
 
-## Todo List
-- 添加项目到，183–186
-- CSS (层叠样式表)，189–190
-- 在其中显示项目，186–189
-- index.css 文件, 180
-- index.html 文件, 179–180
-- 概述，177–179
-- 从中移除项目，191–193
-- render 方法，183–184, 186–197
-- UI (用户界面)，180–182
-
-## button counter
-- 事件处理器，110–112
-- 事件监听
-  - 直接路由自，116–117
-  - 常规 DOM 事件，118–119
-- 事件 事件属性，114–115
-- 初始代码列表，108–110
-- 生命周期方法
-  - componentDidMount, 129
-  - componentDidUpdate, 131
-  - componentWillMount, 129
-  - componentWillReceiveProps, 132
-  - componentWillUnmount, 132
-  - componentWillUpdate, 131
-- 默认状态，129
-- getDefProps, 128
-- 初始代码列表，124–127
-- 初始渲染阶段，128
-- render, 129, 131
-- ShouldComponentUpdate, 131
-- 卸载阶段，132
-- 更新阶段，130
-- 概述，107–108
-- 架构 (MVC)，12
-- 数组
-  - 组件的数组，103–105
-  - filteredItems, 193
-- 异步 JavaScript 和 XML (AJAX)，167
-- 自动 UI 状态管理，7
-- SyntheticEvent, 113–114
-- this 关键字，119–120
-
-## B
 - Babel, 152, 162. 另参见 Create React project
-- 引用，16
-- 从 JSX 到 JavaScript 的转换，80–81
-- ButtonItem 组件，34–35
-- buttons. 另参见 button counter
-- 侧边菜单，206–207
+- `babel.min.js` 脚本, 149
+- 背景颜色，自定义, 45–46
+- `backgroundColor` 属性 (`setStyle` 对象), 45
+- `behavior` 属性 (`ButtonItem`), 35
+- `bgcolor` 属性 (`setStyle` 对象), 45
+- `bind` 方法, 119
+- 浏览器兼容性, 120
+- `ButtonItem` 组件, 34–35
+- `Buttonify` 组件, 34–35
+- `buttons` (参见 `button counter`)
 
-## Colorizer component
-- 行为，135–137
-- 调用函数，25
-- 代码列表，137–140
-- 大写字母 (JSX)，85
-- 端口 (portals)，143–147
-- Card 组件，56–57
-- 引用，140–143
-- 目录浏览器应用
-  - 网站，136
-- 多页设计，1–3
+### C
 
-## ColorLabel component, 145–146
-- SPA (单页应用) 模型，3–6
+- `cd helloworld` 命令, 153
+- `create-react-app` 命令, 153, 154, 202, 213, 225, 259
+- `createStore` 方法, 247, 261
+- `createTasks` 函数, 187–188
+- `Circle` 组件
+  - `circleStyle` 对象, 101–102
+  - `componentDidMount` 方法, 101–102
+  - 初始代码列表, 99–102
+  - `render` 方法, 102
+  - `showCircle` 函数, 102–103
+  - `theCircle` 对象, 101–102
+- `Colorizer` 组件
+  - 行为, 135–137
+  - 代码列表, 137–140
+  - 端口 (portals), 143–147
+  - 引用, 140–143
+- `ColorLabel` 组件, 145–146
+- `ColorPalette` (调色板)
+  - `Card` 组件, 56–57
+  - `Square` 组件, 58–59
+  - 组件标识, 49–51
+  - 概述, 47–49
+  - 使用 CSS 样式, 41–42
+  - 使用 React 样式, 42–46
+- `commands` (命令)
+  - `cd helloworld`, 153
+  - `create-react-app`, 153, 154, 202, 213, 225, 259
+  - `npm install`, 152, 259–260
+  - `npm start`, 153, 204, 227
+- `componentDidMount` 方法
+  - `button counter`, 118–119, 129
+  - `Circle` 组件, 101–102
+  - `IP` 地址应用, 170
+  - `LightningCounterDisplay`, 90, 92–93, 96
+- `componentDidUpdate` 方法, 131
+- `componentWillMount` 方法, 129
+- `componentWillReceiveProps` 方法, 132
+- `componentWillUnmount` 方法, 119, 132
+- `componentWillUpdate` 方法, 131
+- `components` (组件)
+  - `ButtonItem`, 34–35
+  - `Card`, 56–57
+  - `Circle`, 99–103
+  - `Colorizer`, 135–147
+  - `ColorLabel`, 145–146
+  - `Contact` (SPA), 229–230
+  - `CounterPart`, 73
+  - `Fragment`, 82–83
+  - `HashRouter`, 230–233
+  - `HelloWorld`, 29–32
+  - `Home` (SPA), 227
+  - `IPAddress`, 172–175
+  - `IPAddressContainer`, 169–172
+  - `Letter`, 37–39
+  - `LightningCounterDisplay`, 87–97
+  - `Main` (SPA), 227
+  - `Menu`, 207–210
+  - `MenuContainer`, 201–202, 215
+  - `NavLink`, 231
+  - `PlusButton`, 116–117
+  - `Provider` (Redux), 261
+  - `PureComponent`, 220–221
+  - `Route`, 231–233
+  - `Shirt`, 69–73
+  - `Square`, 58–59
+  - `Stuff` (SPA), 229
+  - 组合性, 47–49, 63–64
+  - 容器, 175
+  - 受控, 195
+  - 定义, 23–24, 28–29, 54–56
+  - 层级, 50, 53–54, 66, 249–255
+  - 非受控, 195
+  - 表现性, 175
+  - 更新, 覆盖, 218–220
+  - 属性, 32–34
+  - 高阶组件 (HOCs), 259
+  - 生命周期方法, 123–132
+- `connect` 函数 (Redux), 264
+- `console.log` 语句, 216–218
+- `console` 警告, 105
+- `console` 驱动应用 (Redux), 243
+- `Counter` 应用 (Redux), 256–266
+- `Counter.js` 文件, 265
+- `CounterParent` 组件
+  - 事件处理器, 110–112
+  - 事件监听, 116–117
+  - 事件属性, 114–115
+  - 初始代码列表, 108–110
+  - 概述, 107–108
+  - `this` 关键字, 119–120
+- `createElement` 函数, 80–81
+- `createPortal` 方法, 146
+- `createStore` 方法, 247, 261
+- `createTasks` 函数, 187–188
+- CSS (层叠样式表)
+  - 第一个 React 应用, 20–22
+  - HelloWorld 应用, 159–160
+  - IP 地址应用, 169
+  - ReduxCounter 应用, 265–266
+  - 滑动菜单, 199–201
+  - SPA (单页应用), 233–236
+  - TodoList 应用, 189–190
+  - 使用 CSS 样式化 React 内容, 40–42
 
-## commands
-- cd helloworld, 153
-- cd helloworld, 153
-- 更改目标，19–20
-- create-react-app, 153, 154, 202, 213, 225, 259
-- 子组件
-  - createStore, 261
-  - 概述，34–35
-- 导出/导入，157
-- 传递属性到，61–63
-- npm install, 152, 259–260
-- 传递属性到
-- npm start, 153, 204, 227
-- 组件层级和，65–69
-- 注释，84–85
-- 相关问题，65–74
-- 组件层级，50, 53–54, 66, 249–255
-- 扩展运算符 (...)，74–76
+### D
 
-## Circle component
-- 组件更新，覆盖，218–220
-- 组件的数组，103–105
-- componentDidMount 方法
-  - circleStyle 对象，101–102
-- button counter, 118–119, 129
-- 初始代码列表，99–102
-- IP 地址应用，170
-- render 方法，102
-- LightningComponentDisplay, 90, 92–93, 96
-- showCircle 函数，102–103
-- componentDidUpdate 方法，131
-- theCircle 对象，101–102
-- 组件。另参见 methods
-  - circleStyle 对象，101–102
-  - 数组，103–105
-- Clark, 242
-- Buttonify, 34–35
-- 类语法，29. 另参见 components
-  - 大写字母，85
-- CleverComponent, 34
-  - 子组件，34–53
-- 背景颜色自定义，45–46
-- 调色板
-  - 数组，103–105
-- Card 组件，56–57
-  - circleStyle 对象，101–102
-- 组件定义，54–56
-- 初始代码列表，99–102
-- 组件标识，51–54
-- render 方法，102
-- 生成的 HTML，63–64
-- showCircle 函数，102–103
-- Label 组件，59–61
-- theCircle 变量，102–103
-- 概述，47–49
-- 类语法，29
-- 传递属性到
-- CleverComponent, 34
-- 组件，61–63
-- 调色板
-  - Square 组件，58–59
-  - 组件标识，49–51
-- Card 组件，56–75
-
-## components 271
-- 组件定义，54–56
-- 组件标识，51–54
-- 生成的 HTML，63–64
-- Label 组件，59–61
-- 概述，47–49
-- 传递属性到，61–63
-- Square 组件，58–59
-- 组件标识，49–51
-- 定义，23–24, 28–29
-- Fragment, 82–83
-- HashRouter, 230–233
-- HelloWorld，创建，29–32
-- 属性，32–34
-- 层级，50, 53–54, 66, 249–255
-- HOCs (高阶组件)，259
-- Home, 228
-- IPAddress, 172–175
-- IPAddressContainer, 169–172
-- Colorizer 行为，135–137
-- 代码列表，137–140
-- 端口，143–147
-- 引用，140–143
-- 网站，136
-- ColorLabel, 145–146
-- 可组合性。另参见 color palette
-  - 优势，63–64
-  - 定义，47
-  - 概述，47–49
-- Contact，229–230
-- 容器，175
-- 受控，195
-- CounterPart, 73
-- Letter，37–39
-- 生成的 HTML，40–41
-- 概述，37–39
-- 使用 CSS 样式，41–42
-- 使用 React 样式，42–46
-- LightningCounter componentDidDidMount 方法，90, 92–93, 96
-- 全量代码列表，95–97
-- getInitial 方法，91–92
-- 初始状态值，设置，91–92
-- 概述，87–88
-- setInterval 函数，90
-- setState 方法，90, 93–94
-- 状态变化，渲染，95
-- strikes 变量，91–92
-- 计时函数，94–95
-- 事件处理器，110–112
-- 事件监听，116–117
-- 事件属性，114–115
-- 初始代码列表，108–108
-- 概述，107–108
-- this 关键字，119–120
-- 创建
-  - Card 组件，56–57
-  - 组件定义，54–56
-  - 组件标识，51–54
-  - 生成的 HTML，63–64
-  - Label 组件，59–61
-  - 概述，47–49
-  - 属性，61–63
-- Main, 227
-- Menu, 207–210
-- MenuContainer, 201–202, 215
-- MenuContainer.js 文件, 203
-- render 方法，207–208, 216–218
-- shouldComponentUpdate 方法，218–220
-
-## 272 components
-- 多组件，显示，103–105
-- render 方法，183–184, 186–187, 194
-- NavLink, 231
-- PlusButton, 116–117
-- UI (用户界面)，180–182
-- 非受控，195
-- 表现性，175
-- 更新，覆盖，218–220
-- 属性，32–34
-- componentWillMount 方法，129
-- Provider, 261
-- componentWillReceiveProps 方法，123
-- PureComponent, 220–221
-- componentWillUnmount 方法，119, 132
-- componentWillUpdate 方法，131
-- Route, 231–233
-- Shirt, 69–73
-- 组件组合性
-  - 侧边菜单
-    - 优势，63–64
-    - 创建，206–207
-- 调色板
-  - CSS (层叠样式表)，199–201
-  - Card 组件，56–57
-  - 工作原理，197–210
-- 组件定义，54–56
-- 组件标识，51–54
-- index.css 文件，203
-- index.html 文件，201–202
-- 生成的 HTML，63–64
-- index.js 文件，203
-- Label 组件，59–61
-- 初始设置，201–202
-- 概述，47–49
-- Menu 组件，207–210
-- 传递属性到，61–63
-- MenuContainer.js 文件, 203
-- Square 组件，58–59
-- 组件标识，49–51
-- Stuff,229
-- 定义，47
-- 概述，47–49
-- 使用 CSS 样式，41–42
-- 使用 React 样式，42–46
-- Create React project
-  - 优势，152
-  - 背景颜色自定义，45–46
-  - 项目，152–154
-  - 项目结构，154
-- ToDoList 开发方法，161
-- 添加项目到，183–186
-- 动画，194
-- HelloWorld app (层叠样式表)，189–199
-- Node，安装，152
-
-## createStore 方法 273
-- connect 函数，264
-- console 警告，105
-- console 驱动应用 (Redux)，243
-- actions，244
-- favoriteColors.html,243–244
-- reducer，245–247
-- Store，247–248
-- 全量代码列表，95–97
-- 初始代码，88–90
-- 初始状态值，设置，91–92
-- 概述，87–88
-- setInterval 函数，90
-- setState 方法，90, 93–94
-- 状态变化，渲染，95
-- strikes 变量，91–92
-- timerTick 函数，92–95
-- console.log 语句，216–218
-- Contact 组件 (SPA)，229–230
-- 容器元素，175
-- 容器元素，19–20, 143–144
-- 内容页面 (单页应用)，228–230
-- 受控组件，195
-- Redux Counter，256
-- App.js 文件，263
-- connect 函数，264
-- Counter.js 文件，265
-- Counter app (Redux)，256
-- App.js 文件，263
-- connect 函数，264
-- Counter.js 文件，265
-- 创建，259
-- decreaseCount 函数，264
-- increaseCount 函数，264
-- index.css 文件，265–266
-- index.html 文件，260
-- index.js 文件，260–261
-- mapDispatchToProps 函数，264
-- mapDispatchToProps 函数，263–264
-- Redux 和 React 的叠加，257–259
-- Provider 组件，261
-- reducer.js 文件，261–262
-- Redux 库安装，259–260
-- 创建，259
-- decreaseCount 函数，264
-- increaseCount 函数，264
-- index.css 文件，265–266
-- index.html 文件，260
-- index.js 文件，260–261
-- mapDispatchToProps 函数，264
-- mapDispatchToProps 函数，263–264
-- Redux 和 React 的叠加，257–259
-- Provider 组件，261
-- reducer.js 文件，261–262
-- Redux 库安装，259–260
-- Counter.js 文件，265
-- CounterParent 组件
-- 事件处理器，110–112
-- 事件监听，116–117
-- 事件属性，114–115
-- 初始代码列表，108–110
-- 概述，107–108
-- this 关键字，119–120
-- counters. 另参见 counter
-
-
-
-
-
-
-## 274 createTasks 函数
-createTasks 函数, 187-188
-
-创建平滑滑动菜单教程, 197
-
-### CSS（层叠样式表）
-- 第一个 React 应用, 20–22
-- HelloWorld 应用
-- HelloWorld.css 文件, 160
-- index.css 文件, 159–160
-- HTML 与 JX, 83–84
-- IP 地址应用, 169
-- ReduxCounter 应用, 265–266
-- 滑动菜单, 199–201
-- index.css 文件, 203
-- MenuButton.css 文件, 206–207
-- Menu.css, 209–210
-- SPA（单页应用）, 233–236
-- 使用 CSS 样式化 React 内容, 40–42
-- TodoList 注释 (( )), 180–190
-- 大括号 (( )), 33, 84–85
-- 自定义背景颜色, 45–46
-
-## D
-decreaseCount 函数, 264
-delete 函数, 191
-deleteItem 函数, 192–193
-
-### 设计
-- 多页设计, 2–3
-- SPA（单页应用）模型, 3–6
-- 目的地, 修改, 19–20
-- 目的地变量, 20
-
-### 开发环境
-- 优势, 149–152
-- 创建 React 项目
-- 优势, 152
-- 使用创建项目, 152–154
-- 项目文件和文件夹结构, 154–157
-- 开发模式, 161
-
-### HelloWorld 应用
-- HelloWorld.css 文件, 160
-- HelloWorld.js 文件, 158–159
-- index.css 文件, 159–160
-- index.js 文件, 158–161
-- 生产环境构建, 161–162
-
-### Node, 安装, 152
-- 开发模式, 161
-- dispatch 方法, 247
-
-### div 元素
-- 第一个 React 应用, 19–20
-- HelloWorld 组件, 31–32
-- 使用 CSS 样式, 41–42
-
-### document.body 参数 (render 方法)
-### DOM 元素，访问
-- 优势, 135–137
-- ES6 箭头函数, 143
-- 端口 (portals), 143–147
-- 引用, 140–143
+- `decreaseCount` 函数, 264
+- `delete` 函数, 191
+- `deleteItem` 函数, 192–193
+- `dispatch` 方法, 247
+- `div` 元素
+  - 第一个 React 应用, 19–20
+  - `HelloWorld` 组件, 31–32
+  - 使用 CSS 样式, 41–42
+- DOM 元素，访问
+  - 优势, 135–137
+  - ES6 箭头函数, 143
+  - 端口 (portals), 143–147
+  - 引用, 140–143
 - DOM 操作, 209–210
 
-## E
-### JS 中的元素大小写, 85
-- div
-- 容器 div, 143–144
-- 第一个 React 应用, 19–20
-- HelloWorld 组件, 31–32
-- 使用 CSS 样式, 41–42
+### E
 
-### DOM 元素，访问
-- 优势, 135–137
-- ES6 箭头函数, 143
-- 端口 (portals), 143–147
-- 引用, 140–143
-- input, 141–142
-- 多个元素，返回, 82–83
-- script, 244
-- 文件 275
-- 传输属性, 141–142
-- 外部数据, 163–166
-- UI 元素的低效问题, 26–28
-
-### IP 地址应用
-### 省号 (...) 运算符
-- 创建, 168
-- 解释, 74
-- index.css 文件, 169
-- 局限性, 76
-- index.html 文件, 168
-- 使用省略号传输属性, 75–76
-- index.js 文件, 168–169
-- EmberJS 模板, 10
-- IPAddress 组件, 172–175
-- Erikson, Mark, 247
-- IPAddressContainer 组件, 169–172
-- 范围中的错误, 105
-- 网络请求处理, 166–169
 - ES6 箭头函数, 143, 191
-- 表达式求, 81
-
-### 事件处理器
-- 概述, 110–112
-- FavoriteColors 应用, 243
-- this 关键字, 119–120
--  (actions), 244
-
-### 事件
-- favoriteColors.html 文件, 243–244
-- 浏览器兼容性, 372
-- reducer, 245–247
-- 按钮计数器-Store, 247–248
-- 事件处理器, 110–112
-- favoriteColors 函数, 245–246
-- 事件监听, 116–119
-- favoriteColors.html 文件, 243–244
+- 事件处理器
+  - 概述, 110–112
+  - `this` 关键字, 119–120
+- 事件监听
+  - 间接性, 116–117
+  - 常规 DOM 事件, 118–119
 - 事件属性, 114–115
-- 文件。参见组件
-- 初始代码列表, 108–110
+- 表达式求值, 81
+- 外部数据, 163–166
 
-### HelloWorld 应用
-- App.js, 156–157
-- this 关键字, 119–120
-- HelloWorld.js, c, 160
-- 定义, 107
-- HelloWorld.js, 158–159
-- index.css 文件, 159–160
-- index.js, 158–161
-- 概述, 110–112
-- this 关键字, 119–120
+### F
 
-### 事件处理器
-- 概述, 107–108
-- 初始代码列表, 108–110
-- index.css 文件, 159–160
-- index.js, 158–161
-- 间接性, 116–117
-- 常规 DOM 事件, 118–119
+- `favoriteColors` 函数, 245–246
+- `favoriteColors.html` 文件, 243–244
+- `filter` 函数, 192
+- `formatDistance` 函数, 25
+- `Fragment` 组件, 80–83
+- `frames` (app), 227–228
+- Flip Move 库, 194
 
-### IP 地址应用
-- index.css 文件, 169
-- index.html, 168
-- index.js, 168–169
-- IPAddressContainer, 169–172
-- IPAddress.js, 172–175
-- 性能, 120–121
+### G
 
-### Redux 驱动的应用
-- actions, 244
-- favoriteColors.html, 243–244
-- reducer, 245–247
-- Store, 247–248
-- export, 157
-- 表达式求, 81
--  PureComponent, 220–221
+- `getDefaultProps` 方法, 128
+- `getDistance` 函数, 25, 32
+- `getState` 方法, 247
+- `greetTarget` 属性 (`HelloWorld` 组件), 33–34
 
-### ReduxCounter 应用
-- App.js, 263
-- Counter.js, 265
-- index.css, 203
-- index.html, 201–202
-- index.js, 260–262
-- 滑动菜单, 199–201
+### H
 
-### Flip Move 库, 194
-- 空 HTML 页面，创建, 16–17
-- 目的地，修改, 19–20
-- 名称，显示, 17–19
-- 样式, 20–22
-
-### 文件夹
-- node_modules, 194
-- formatDistance 函数, 25
-- Fragment 组件, 80–83
-- fragments, 82–83
-- frames (app), 227–228
-- 函数。参见方法
-- addColor, 244
-- addEventListener, 118–119
-- 箭头函数, 143, 191
-- 调用, 25
-- connect, 264
-- createElement, 80–81
-- createTasks, 187–188
-- decreaseCount, 264
-- delete, 191
-- deleteItem, 192–193
-- favoriteColors, 245–246
-- filter, 192
-- formatDistance, 25
-- getDistance, 25, 32
-- increase, 112–116
-- increaseCount, 264
-- mapDispatch, 264
-- mapStateProps, 263–264
-- preventDefault, 185–186
-- printStuff, 74
-- removeColor, 244
-- removeEventListener, 219
-- timerTick, 92–94
-
-## G
-- 生成的 HTML 色调板, 63–64
-- Letter 组件, 40–41
-- getDefaultProps 方法, 128
-- getDistance 函数, 25, 32
-
-## CSS 简介
-- getState 方法, 247
-- greetTarget 属性 (HelloWorld 组件), 33–34
-- 导入库, 156
-- increase 函数, 111–112
-- increaseCount 函数, 264
-- state 值, 94
-
-## H
-- handleMouseDown 属性, 209–220
-- HashRouter 组件, 230–233
-- heading 变量, 146
-- index.file, 159–160
-- HelloWorld 应用, 169
-- IP 地址应用, 169
-- ReduxCounter 应用, 265–266
-- 滑动菜单, 203
-
-### HelloWorld 应用
-- HelloWorld.js 文件, 160
-- HelloWorld.js 文件, 158–159
-- index.css 文件, 159–160
-- index.js 文件, 158–161
-- 生产环境构建, 161–162
-- SPA（单页）, 223–234
-- TodoList 应用, 180
-- index.html 文件
-- IP 地址应用, 168
-- ReduxCounter, 260
-- 滑动菜单, 201–202
-- SPA（单页应用）, 226, 234
-- TodoList 应用, 179–180
-
-### HelloWorld 组件
-- 创建, 29–32
-- 属性, 32–34
-- 调用, 33–34
-- 定义, 33
-- index.js, 158–161
-- IP 地址应用, 168
-- ReduxCounter 应用, 260–261
-- 滑动菜单, 203
-- SPA（单页应用）, 226, 234
-- TodoList 应用, 180, 181–182
-- HelloWorld.file, 160
-- HelloWorld.js 文件, 158–159
-- 激活链接高亮, 235–236
-- 层级，组件, 50, 53–54, 65–66, 249–255
-- HTML 元素，JSX 中的大小写, 85
-- HTML 模板, 5–6
+- `handleMouseDown` 属性, 209–220
+- `HashRouter` 组件, 230–233
+- `heading` 变量, 146
+- `HelloWorld` 应用
+  - `HelloWorld.css` 文件, 160
+  - `HelloWorld.js` 文件, 158–159
+  - `index.css` 文件, 159–160
+  - `index.js` 文件, 158–161
+  - 生产环境构建, 161–162
+- `HelloWorld` 组件
+  - 创建, 29–32
+  - 属性, 32–34
+  - 调用, 33–34
+  - 定义, 33
+- `Home` 组件 (SPA), 227
 - HTTP 协议, 166
 - HTTP 请求, 166–167
-- 渲染阶段 (生命周期方法), 128
-- 内联样式, 43–44
-- Circle 组件, 102
-- 自定义背景颜色, 45–86
-- letterStyle 对象，创建, 42–43
-- 概述, 42
-- 样式应用, 43–44
-- 创建, 42–43
-- 自定义背景颜色, 45–84
-- 概述, 84
-- style 属性, 43–44
-- 库。参见 React Router
-- Flip Move, 194
-- 导入, 156
-- Redux 库安装, 259–812
 
-## L
-- Letter 组件, 59–61, 73
-- 生成的 HTML, 40–41
-- 概述, 37–39
-- 使用 CSS 样式, 41–42
-- 自定义背景颜色, 45–46
-- letterStyle 对象，创建, 42–43
-- 概述, 42
-- 样式应用, 43–44
+### I
 
-## J
-- JavaScript。参见组件；函数；React Router
-- JSX 到 JavaScript 的转换, 79–81
-- 定义的视觉效果, 10–12
-- XMLHttpRequest 请求对象, 167
+- `increase` 函数, 112–116
+- `increaseCount` 函数, 264
+- `index.css` 文件
+  - HelloWorld 应用, 159–160
+  - IP 地址应用, 169
+  - ReduxCounter 应用, 265–266
+  - 滑动菜单, 203
+  - TodoList 应用, 180
+- `index.html` 文件
+  - IP 地址应用, 168
+  - ReduxCounter, 260
+  - 滑动菜单, 201–202
+  - SPA (单页应用), 226, 234
+  - TodoList 应用, 179–180
+- `index.js` 文件
+  - HelloWorld 应用, 158–161
+  - IP 地址应用, 168–169
+  - ReduxCounter 应用, 260–261
+  - 滑动菜单, 203
+  - SPA (单页应用), 226, 234
+  - TodoList 应用, 180, 181–182
+- `IPAddress` 组件, 172–175
+- `IPAddressContainer` 组件, 169–172
+- IP 地址应用
+  - 创建, 168
+  - `index.css` 文件, 169
+  - `index.html` 文件, 168
+  - `index.js` 文件, 168–169
+  - `IPAddress` 组件, 172–175
+  - `IPAddressContainer` 组件, 169–172
+  - 网络请求处理, 166–169
 
-## JSX
-- 数组, 103–105
-- 大小写, 84–85
-- 注释, 84–85
-- 与 CSS（层叠样式表）, 83–84
-- 解释, 11–12, 14–15
-- 表达式求, 81
-- 第一个 React 应用
-- 创建空 HTML 页面, 16–37
-- 目的地，修改, 19–20
-- 名称，显示, 17–19
-- 样式, 20–22
-- JSX 到 JavaScript 的转换, 79–81
-- 代码中的位置, 86
-- m 元素，返回, 82–83
-- style 属性, 83–84
+### J
 
-## 生命周期方法
-- 按钮计数示例, 124–127
-- counterDidMount, 128–119, 129
-- IP 地址应用, 170
-- LightningCounterDisplay, 90, 92–93, 96
-- componentDidUpdate, 131
-- componentWillMount, 129
-- componentWillReceiveProps, 132
-- componentWillUnmount, 119, 132
-- componentWillUpdate, 131
-- 默认状态, 129
-- 定义, 123
-- getDefaultProps, 128
-- 初始渲染阶段, 128
-- 概述, 123–124
-- render
+- JavaScript
+  - JSX 到 JavaScript 的转换, 79–81
+  - `XMLHttpRequest` 请求对象, 167
+- JSX
+  - 数组, 103–105
+  - 大小写, 84–85
+  - 注释, 84–85
+  - 与 CSS, 83–84
+  - 表达式求值, 81
+  - 解释, 11–12, 14–15
+  - 多个元素，返回, 82–83
+  - `style` 属性, 83–84
 
-## K
-- key 属性, 82
-- KeyboardEvent 类型, 112
-- 关键字。参见命令；方法；语句
-- 按钮计数, 129, 131
-Buttonify 组件, 74
+### K
 
+- `key` 属性, 82
+- `KeyboardEvent` 类型, 112
 
+### L
 
+- `Letter` 组件
+  - 生成的 HTML, 40–41
+  - 概述, 37–39
+  - 使用 CSS 样式, 41–42
+  - 使用 React 样式, 42–46
+- `letterStyle` 对象, 42–43
+- 生命周期方法
+  - `button counter` 示例, 124–127
+  - `componentDidMount`, 128–129
+  - `componentDidUpdate`, 131
+  - `componentWillMount`, 129
+  - `componentWillReceiveProps`, 132
+  - `componentWillUnmount`, 119, 132
+  - `componentWillUpdate`, 131
+  - 默认状态, 129
+  - 定义, 123
+  - `getDefaultProps`, 128
+  - 初始渲染阶段, 128
+  - 概述, 123–124
+  - `render`, 129, 131
+  - `shouldComponentUpdate`, 131
+  - 卸载阶段, 132
+  - 更新阶段, 130
+- `LightningCounterDisplay` 组件
+  - `componentDidMount` 方法, 90, 92–93, 96
+  - 完整代码列表, 95–97
+  - 初始代码, 88–90
+  - 初始状态值，设置, 91–92
+  - 概述, 87–88
+  - `setInterval` 函数, 90
+  - `setState` 方法, 90, 93–94
+  - 状态变化，渲染, 95
+  - `strikes` 变量, 91–92
+  - `timerTick` 函数, 92–94
+- 链接
+  - 激活链接，高亮, 235–236
+  - 深度链接, 224
+- `listitems` 变量, 188
+- `log` 方法, 247
 
+### M
 
-## 方法 279
-
-- 卡片组件, 57
-- 圆形组件, 102, 104
-- 颜色渲染器组件, 140–142
-- 标签组件, 145–156
-- 第一个 React 应用, 17–19
-- HashRouter 组件, 203–231
-- HelloWorld 组件, 156
-- HelloWorld 组件, 29–32
-- 渲染阶段, 129
-- IPAddress 组件, 173, 174
-- IPAddressContainer 组件, 171–172
-- 标签组件, 59–60
-- LightningCounterDisplay 组件, 90
-- 优化, 213–221
-- 概述, 26–27
-- renderData 事件，在 105–106
-- 查看, 216–218
-- SPA (单页应用) 示例, 228
-- 正方形组件, 58
-- 待事项列表, 183–184, 194
-- 更新阶段, 131
-- 何时调用, 211–213
-- shouldComponentUpdate, 131
-- 卸载阶段, 132
-- 更新阶段变化, 132
-- 状态变化, 130–131
-
-### LightningCounterDisplay 组件
-- componentDidMount 方法, 90
-- 完整代码列表, 95–97
-- 初始代码, 88–90
-- 初始状态值，设置, 91–92
-- 概述, 87–88
-- setInterval 函数, 90
-- setStateMethod, 90
-- 状态变化，渲染, 95
-- strikes 变量, 91–92
-- timerTick 函数, 92–94
-
-### 链接
-- 激活链接，高亮, 235–236
-- 深度链接, 224
-
-### 事件
-- 间接性, 116–117
-- 常规 DOM 事件, 118–119
-
-- listitems 变量, 188
-- lists。参阅 TodoList 组件
-- log 方法, 247
-
-## M
-
-- 主组件 (SPA), 227
-- mapDispatchToProps 函数, 264
-- mapStateToProps 函数, 263–264
-- Matryoshka dagli (俄罗斯套娃), 9–10
-- 菜单组件, 207–210
-- MenuButton.css 文件, 206–207
-- MenuButton.js 文件, 206, 211
-- MenuContainer, 201–202, 215
-- MenuContainer.js 文件, 203
-- render 方法, 207–208, 216–218
-- shouldComponentUpdate 方法, 218–220
-
-- MenuContainer.js 文件, 203
-- Menu.css 文件, 209–210
-- Menu.js 文件, 208
-- 菜单，滑动。参阅滑动菜单
-- 消息，控制台警告, 105
-
-### 方法
-- addItem, 183–185
-- bind, 119
-- 按钮计数器示例, 124–127
-- componentDidMount
-  - 按钮计数, 118–119, 129
-  - IP 地址应用, 170
-  - LightningCounterDisplay, 90, 92–93, 96
-- componentDidUpdate, 131
-- componentWillMount, 129
-- componentWillReceiveProps, 132
-- componentWillUnmount, 119, 132
-- componentWillUpdate, 131
-- createPortal, 146
-- createStore, 247
-- defined, 123
-- dispatch, 247
-- getDefaultProps, 128
-- getDistance, 32
-- State, 247
-- 初始渲染阶段, 128
-- log, 247
-- 概述, 123–124
-- processRequest, 171
-
-- render
-  - 按钮计数器, 129
-  - Buttonify 计数器, 34
-  - 卡片组件, 57
-  - 圆形计数器, 102, 104
-  - 颜色渲染器组件, 140–142
-  - ColorLabel 组件, 145–146
-  - 第一个 React 应用, 17–19
-  - HashRouter 组件, 230–231
-  - HelloWorld 应用, 156
-  - HelloWorld 组件, 29–32
-  - 初始渲染阶段, 129
-  - IPAddress 组件, 173, 174
-  - IPAddressContainer, 171–172
-  - 标签组件, 59–60
-  - LightningDisplay 组件, 90
-  - 优化, 213–221
-  - 概述, 26–27
-  - renderData 评估值, 105–456
-  - 查看, 216–218
-  - SPA (单页应用) 示例, 228
-  - 正方形组件, 58
-  - 待事项列表, 183–184, 194
-  - 更新阶段, 131
-  - 何时调用, 211–213
-
-- setInterval, 90
-- setNewColor, 142
-- setState, 90, 93–94
-- shouldComponentUpdate, 131, 218–220
-- showCircle, 102–103
-- subscribe, 248
-- timerTick, 95
-- toggleMenu, 205
-- translate3, 200
-- unmountComponentNode, 131
-- 卸载阶段, 132
-- 更新阶段, 130
-- Mouse 类型, 112
+- `Main` 组件 (SPA), 227
+- `mapDispatchToProps` 函数, 264
+- `mapStateToProps` 函数, 263–264
+- `Menu` 组件, 207–210
+- `MenuButton.css` 文件, 206–207
+- `MenuButton.js` 文件, 206, 211
+- `MenuContainer` 组件, 201–202, 215
+- `MenuContainer.js` 文件, 203
+- `Menu.css` 文件, 209–210
+- `Menu.js` 文件, 208
+- 方法
+  - `addItem`, 183–185
+  - `bind`, 119
+  - `componentDidMount`, 90, 101–102, 118–119, 129, 170
+  - `componentDidUpdate`, 131
+  - `componentWillMount`, 129
+  - `componentWillReceiveProps`, 132
+  - `componentWillUnmount`, 119, 132
+  - `componentWillUpdate`, 131
+  - `createPortal`, 146
+  - `createStore`, 247, 261
+  - `dispatch`, 247
+  - `getDefaultProps`, 128
+  - `getDistance`, 32
+  - `getState`, 247
+  - `log`, 247
+  - `processRequest`, 171
+  - `render`, 26–27, 29–32, 57, 59–60, 90, 102, 129, 131, 140–142, 145–146, 156, 171–174, 183–184, 194, 207–208, 216–218, 228, 230–231
+  - `setInterval`, 90
+  - `setNewColor`, 142
+  - `setState`, 90, 93–94
+  - `shouldComponentUpdate`, 131, 218–220
+  - `showCircle`, 102–103
+  - `subscribe`, 248
+  - `timerTick`, 92–95
+  - `toggleMenu`, 205
+  - `translate3`, 200
+  - `unmountComponentNode`, 131
+- `Mouse` 类型, 112
+- MVC 架构, 12
 - 多页面设计, 2–3
 - 多个组件，显示, 103–105
 - 多个元素，返回, 82–83
-- MVC 架构, 112
 
-## N
+### N
 
-- 名称，显示, 17–19
-- NavLink 组件, 231
-- Node，安装, 152。参阅项目
-- node_modules 文件夹, 194
-- npm install, 152, 259, 260
-- npm start, 153, 204, 227
+- `NavLink` 组件, 231
+- Node，安装, 152
+- `node_modules` 文件夹, 194
+- `npm install` 命令, 152, 259–260
+- `npm start` 命令, 153, 204, 227
 
-## O
+### O
 
-- 对象。参阅组件
-- circleStyle, 101–102
-- 创建, 42–43
-- 可自定义背景, 45–46
-- 概述, 84
-- style 属性, 43–44
-- props, 73–74, 75
-- HTTPRequest, 167
+- 对象
+  - `circleStyle`, 101–102
+  - `props`, 73–74, 75
+  - `XMLHttpRequest`, 167
+- `onClick` 事件处理器, 110–112
 
-## React Router 281
+### P
 
-- onClick 事件处理器, 110–112
-- backgroundColor, 45
-- JavaScript 教程, 29
-- 运算符，展开 (...), 74–76
-- prop 变化, 132
-- ref, 141–142
-- 组件更新，覆盖, 218–020
-- 组件定义, 33
-- console.log 组件, 216–218
-- style, 83–84
+- `PlusButton` 组件, 116–117
+- `preventDefault` 函数, 185–186
+- `printStuff` 函数, 74
+- `processRequest` 方法, 171
+- `props` 对象, 73–74, 75
+- `Provider` 组件 (Redux), 261
 - PureComponent, 220–221
-- SyntheticType, 113–114
-- 示例程序, 213–215
-- 覆盖组件更新, 218–220
-- 色调板示例, 61–63
-- 组件层次结构, 65–69
-- 问题, 69–73
-- 传递属性
-- props 对象, 73–74, 75
-- 色调板示例, 61–63
-- 组件层次结构, 65–69
-- 问题, 69–74
-- 协议，HTTP, 166
-- Provider 组件, 261
-- 示例, 74
-- PureComponent, 220–221
-- 解释, 74
+
+### R
+
 - React Developer Tools 插件, 216
-- 性能，事件, 120–121
-- React 事件系统, 114
-- PlusButton, 116–117
-- React 库，导入, 156
-- 端口, 143–147
-- 应用状态的可预测性, 242–243
-- 演示组件, 175
-- 激活行，高亮, 235–236
-- preventDefault 函数, 185–186
-- 框架, 227–228
-- processRequest 方法, 171
-- 生产构建, 161–162
-- CSS (层样式表)，属性, 233–236
-- 示例, 224–225
-- 访问, 33
-- HashRouter 组件, 230–233
-- 事件属性, 114–115
-- 主组件, 227
-- handleMouseDown, 209, 219–220
-- NavLink 组件, 231
-- Hello 组件, 32–34
-- 概述, 222–224
-- 组件调用, 33–34
-- 组件定义, 33
+- React Router
+  - `HashRouter` 组件, 230–233
+  - `NavLink` 组件, 231
+  - `Route` 组件, 231–233
+  - 安装, 226
+  - 概述, 222–224
+  - 路由区域, 230–231
+- `react.development.js` 脚本, 149
+- `react.dom.js` 脚本, 149
+- `reducer` (Redux), 245–247, 261–262
+- `reducer.js` 文件, 261–262
+- Redux
+  - 优势, 249–255
+  - 构建应用, 243–248
+  - `actions`, 244
+  - `createStore` 方法, 247, 261
+  - `dispatch` 方法, 247
+  - `getState` 方法, 247
+  - `Provider` 组件, 261
+  - `reducer`, 245–247
+  - `subscribe` 方法, 248
+  - `Store`, 247–248
+  - Redux 和 React 的叠加, 257–259
+  - 应用状态的可预测性, 242–243
+  - 状态管理, 256
+  - Counter 应用, 259–266
+  - FavoriteColors 应用, 243–248
+  - 库安装, 259–260
+- `removeColor` 函数, 244
+- `removeEventListener` 函数, 219
+- `render` 方法 (参见 方法)
+- `Route` 组件, 231–233
 
-## React Router
+### S
 
-- render 方法, 228
-- Route 组件, 231–233
-- 路由区域, 230–231
-- Stuff 组件, 229
-- 安装, 226
-- reducer.js 文件, 261–262
-- Redux 库安装, 259–260
-- FavoriteColors 应用, 243
-- actions, 244
-- favoriteColors.html 文件, 243–244
-- reducer, 245
-- Store, 247–248
-- Redux and React, 257–259
-- 应用状态的可预测性, 242–243
-- 状态管理, 256
-- react_spa 文件夹, 226
-- react.development.js 脚本, 149
-- React-DOM 库，导入, 156
-- react.dom.js 脚本, 149
-- state 事件, 167
+- `setInterval` 函数, 90
+- `setNewColor` 函数, 142
+- `setState` 方法, 90, 93–94
+- `shouldComponentUpdate` 方法, 131, 218–220
+- `showCircle` 函数, 102–103
+- `sliding menu` (滑动菜单)
+  - CSS, 199–201
+  - 工作原理, 197–201
+  - `index.css` 文件, 203
+  - `index.html` 文件, 201–202
+  - `index.js` 文件, 203
+  - 初始化设置, 201–202
+  - `Menu` 组件, 207–210
+  - `MenuContainer.js` 文件, 203
+  - 在线教程, 197
+  - 显示/隐藏, 205–206
+- SPA (单页应用) 模型, 3–6
+- `Square` 组件, 58–59
+- `strikes` 变量, 91–92
+- `style` 属性, 43–44, 83–84
+- `subscribe` 方法, 248
+- `SyntheticEvent` 类型, 113–114
 
-### reconciliation (调和)
-- 注意事项, 246
-- 定义, 240
-- FavoriteColors 应用, 245–247
-- Redux 驱动的应用, 245
-- Redux 计数器, 261
+### T
 
-### Redux
+- `this` 关键字, 119–120
+- `timerTick` 函数, 92–95
+- `toggleMenu` 方法, 205
+- `translate3` 函数, 200
+- TodoList 应用
+  - 添加项目到, 183–186
+  - CSS, 189–190
+  - 显示项目, 186–189
+  - `index.css` 文件, 180
+  - `index.html` 文件, 179–180
+  - 概述, 177–179
+  - 从中移除项目, 191–193
+  - `render` 方法, 183–184, 186–197
+  - `TodoItems.js` 文件, 187
+  - `TodoList.js` 文件, 181
+  - UI (用户界面), 180–182
 
-- 优势, 249
-- 构建应用, 243
-- actions, 244
-- 组件, 245
-- 创建, 259
-- 减少函数, 264
-- 增加函数, 264
-- index.css 文件, 265–266
-- index.html 文件, 260–261
-- index.js 文件, 260–261
-- mapDispatch 函数, 264
-- mapStateToProps 函数, 263–264
-- Redux and React, 257–259
-- Provider 组件, 261
-- 249
-- 243
-- 组件, 245
-- 243
-- 创建, 259
-- 函数, 264
-- 函数, 264
-- 文件, 265–266
-- 文件, 260–261
-- 文件, 260–261
-- 函数, 264
-- 函数, 263–264
-- 和, 257–259
-- 组件, 261
-
-- 249
-- 243
-- 组件, 245
-- 243
-- 创建, 259
-- 函数, 264
-- 函数, 264
-- 文件, 265–266
-- 文件, 260–261
-- 文件, 260–261
-- 函数, 264
-- 函数, 263–264
-- 和, 257–259
-- 组件, 261
-
-- 249
-- 243
-- 组件, 245
-- 243
-- 创建, 259
-- 函数, 264
-- 函数, 264
-- 文件, 265–266
-- 文件, 260–261
-- 文件, 260–261
-- 函数, 264
-- 函数, 263–264
-- 和, 257–259
-- 组件, 261
-
-- 249
-- 243
-- 组件, 245
-- 243
-- 创建, 259
-- 函数, 264
-- 函数, 264
-- 文件, 265–266
-- 文件, 260–261
-- 文件, 260–261
-- 函数, 264
-- 函数, 263–264
-- 和, 257–259
-- 组件, 261
-
-- 249
-- 243
-- 组件, 245
-- 243
-- 创建, 259
-- 函数, 264
-- 函数, 264
-- 文件, 265–266
-- 文件, 260–261
-- 文件, 260–261
-- 函数, 264
-- 函数, 263–264
-- 和, 257–259
-- 组件, 261
-
-- 249
-- 243
-- 组件, 245
-- 243
-- 创建, 259
-- 函数, 264
-- 函数, 264
-- 文件, 265–266
-- 文件, 260–261
-- 文件, 260–261
-- 函数, 264
-- 函数, 263–264
-- 和, 257–259
-- 组件, 261
-
-- 249
-- 243
-- 组件, 245
-- 243
-- 创建, 259
-- 函数, 264
-- 函数, 264
-- 文件, 265–266
-- 文件, 260–261
-- 文件, 260–261
-- 函数, 264
-- 函数, 263–264
-- 和, 257–259
-- 组件, 261
-
-- 249
-- 243
-- 组件, 245
-- 243
-- 创建, 259
-- 函数, 264
-- 函数, 264
-- 文件, 265–266
-- 文件, 260–261
-- 文件, 260–261
-- 函数, 264
-- 函数, 263–264
-- 和, 257–259
-- 组件, 261
-
-- 249
-- 243
-- 组件, 245
-- 243
-- 创建, 259
-- 函数, 264
-- 函数, 264
-- 文件, 265–266
-- 文件, 260–261
-- 文件, 260–261
-- 函数, 264
-- 函数, 263–264
-- 和, 257–259
-- 组件, 261
-
-- 249
-- 243
-- 组件, 245
-- 243
-- 创建, 259
-- 函数, 264
-- 函数, 264
-- 文件, 265–266
-- 文件, 260–261
-- 文件, 260–261
-- 函数, 264
-- 函数, 263–264
-- 和, 257–259
-- 组件, 261
-
-- 249
-- 243
-- 组件, 245
-- 243
-- 创建, 259
-- 函数, 264
-- 函数, 264
-- 文件, 265–266
-- 文件, 260–261
-- 文件, 260–261
-- 函数, 264
-- 函数, 263–264
-- 和, 257–259
-- 组件, 261
-
-- 249
-- 243
-- 组件, 245
-- 243
-- 创建, 259
-- 函数, 264
-- 函数, 264
-- 文件, 265–266
-- 文件, 260–261
-- 文件, 260–261
-- 函数, 264
-- 函数, 263–264
-- 和, 257–259
-- 组件, 261
-
-- 249
-- 243
-- 组件, 245
-- 243
-- 创建, 259
-- 函数, 264
-- 函数, 264
-- 文件, 265–266
-- 文件, 260–261
-- 文件, 260–261
-- 函数, 264
-- 函数, 263–264
-- 和, 257–259
-- 组件, 261
-
-- 249
-- 243
-- 组件, 245
-- 243
-- 创建, 259
-- 函数, 264
-- 函数, 264
-- 文件, 265–266
-- 文件, 260–261
-- 文件, 260–261
-- 函数, 264
-- 函数, 263–264
-- 和, 257–259
-- 组件, 261
-
-- 249
-- 243
-- 组件, 245
-- 243
-- 创建, 259
-- 函数, 264
-- 函数, 264
-- 文件, 265–266
-- 文件, 260–261
-- 文件, 260–261
-- 函数, 264
-- 函数, 263–264
-- 和, 257–259
-- 组件, 261
-
-## sliding menu 283
-
-- 249
-- 243
-- 组件, 245
-- 243
-- 创建, 259
-- 函数, 264
-- 函数, 264
-- 文件, 265–266
-- 文件, 260–261
-- 文件, 260–261
-- 函数, 264
-- 函数, 263–264
-- 和, 257–259
-- 组件, 261
-
-- 249
-- 243
-- 组件, 245
-- 243
-- 创建, 259
-- 函数, 264
-- 函数, 264
-- 文件, 265–266
-- 文件, 260–261
-- 文件, 260–261
-- 函数, 264
-- 函数, 263–264
-- 和, 257–259
-- 组件, 261
-
-
-
-
-
-# 侧边菜单
-
-- 初始化设置, 201–202
-- Menu 组件, 207–210
-- MenuButton.js, 221
-- MenuContainer.js 文件, 203
-- 在线教程, 197
-- 显示/隐藏, 205–206
-
-+   使用 React Router 创建 SPA
-    - 激活链接、高亮, 235–236
-    - 应用框架, 227–225
-    - Contact 组件, 229–230
-    - CSS (级联样式表), 233–236
-    - 示例, 224–225
-
-+   HashRouter 组件, 230–233
-    - Home 组件, 227
-    - NavLink 组件, 231
-    - 概述, 223–224
-    - 项目设置, 225–226
-    - render 方法, 228
-    - Route 组件, 231–233
-    - Stuff 组件, 229
-
-+   模型 (model), 36
-    - 指定属性
-        - 组件调用, 33–34
-        - 组件定义, 33
-
-+   展开运算符 (...)
-    - 解释, 74
-    - 局限性, 76
-    - 使用其传递属性, 75–76
-
-+   Square 组件, 58–59
-    - 状态改变、渲染, 95
-    - 状态管理
-        - 应用状态
-        - 可预测性, 242–243
-        - 存储, 239
-    - 生命周期方法, 130–131
-
-## LightningCounterDisplay
-
-- componentDidMount 方法, 90, 92–93, 96
-- 初始代码, 88–90
-- 初始状态值，设置, 91–92
-- 概述, 87–88
-- setInterval 函数, 90, 93–94
-- strikes 变量, 91–92
-
-+   LightningCounterDisplay
-    - 完整代码列表, 95–97
-    - 初始代码, 88–90
-    - 概述, 87–88
-    - setInterval 函数, 90
-    - 状态改变、渲染, 95
-    - ticker 函数, 228
-
-+   Redux, 237–238
-    - 优势, 249–255
-    - 组件组成, 238–243
-    - Counter 应用, 259–266
-    - FavoriteColors 应用, 243–248
-    - 使用 Redux 管理 状态, 256
-    - Redux 和 React 的叠加, 257–259
-    - 应用状态的可预测性, 222–234
-
-+   状态值，递增, 94
-- UI (用户界面), 7
-- 状态对象 (Todo List 应用), 184
-- 状态值，递增, 94
-- 语句
-
-+   console.log, 216–218
-- import
-- SPA (单页)应用, 230–234
-- Todo List 应用, 187, 194
-- return, 33
-- ColorLabel 组件, 145
-- 侧边菜单, 208
-- Todo List 应用, 191
-- this, 119–120
-
-## UI (用户界面)
-
-## 285
-
-- this 关键字, 119–120
-- 创建, 247
-- this.props 属性, 33
-- 定义, 239
-- timerTick 函数, 92–94, 95
-- FavoriteColors, 247–248
-- TodoItems.js 文件, 187
-- Redux 控制台驱动应用, 247–248
-
-## Store (Redux)
-
-- 存储应用状态, 239
-- 向其中添加项, 183–186
-- strikes 变量, 91–92
-
-## TodoList 组件
-
-- Stuff 组件 (SPA), 229
-
-## CSS (级联样式表)
-
-- 取消 strikes 变量, 91–92
-- 动画, 194
-- style 属性, 43, 83–84
-- 显示项, 186–189
-- 
-- index.css, 180
-- 首次 React, 20–22
-- index.html 文件, 179–180
-- HelloWorld 应用, 159–160
-- 概述, 177–199
-- HTML 对, 83–84
-- 从中移除项, 191–193
-- IP 地址, 169
-- render 方法, 183–184, 186–197
-- ReduxCounter, 265–266
-- TodoItems.js 文件, 187
-- 侧边菜单, 199
-- TodoList.css 文件, 189–190
-- SPA (单页应用), 233–236
-- TodoList.js 文件, 181
-- 使用其样式化 React 内容, 40–42
-- UI (用户界面), 180–182
-- TodoList, 180, 189–190
-## TodoList 文件, 189–190
-
-- 首次 React, 20–22
-- toggleMenu 方法, 205
-- 内联方法
-- 传递属性
-- Circle 组件, 102
-- 色调板示例, 61–63
-- 自定义背景颜色,
-- 组件层级, 69–72
-- 45–46
-- 使用问题, 69–74
-- 展开运算符 (...)
-- 概述, 42
-- 示例, 75–76
-- 样式应用, 43–44
-- 解释, 74
-- 局限性, 76
-- subscribe 方法, 248
-- 过渡 (CSS), 199–201
-- switch 变量, 88
-- translate 方法, 200
-- SyntheticEvent 类型, 113–114
-- 来自 JavaScript 的, 79–81
-
-## U
+### U
 
 - UI (用户界面)
-- 模板
-    - UI (用户界面)
-    - Circle 组件示例
-    - HTML 模板, 5–6
-    - 数组, 103
-    - 变量, 102–103
-    - 初始列表, 99–102
-## 286 UI (用户界面)
+  - 自动状态管理, 7
+  - 效率, 26–28
+  - 滑动菜单创建, 206–207
+  - TodoList, 180–182
+- `unmountComponentNode` 方法, 131
 
-- render 方法, 102
-- show 函数, 102–103
-- 变量, 102
-- 效率, 26–28
-- 侧边菜单
-    - 创建, 206–207
-    - CSS (级联样式表), 199–201
-    - 示例, 197
-    - 工作原理, 197–201
-    - index.css 文件, 203
-    - index.html 文件, 201–202
-    - index.js 文件, 203
-    - 初始化设置, 201–220
-    - Menu 组件, 207–210
-    - MenuContainer.js 文件, 203
-    - 在线教程, 197
-    - 显示/隐藏, 205–206
-    - Todo List 应用, 180–182
-    - 非控组件, 195
-    - 卸载节点, 131
-    - 卸载阶段 (生命周期方法), 132
-    - 避免不必要的渲染
-    - 组件更新, 218–220
-    - console.log 语句, 216–218
-    - PureComponent, 220–221
-    - 示例程序, 213–215
-    - 查看渲染, 216–218
-    - 何时渲染, 211–213
-    - 更新, 218–220
-    - 更新阶段 (生命周期方法)
-    - prop 改变, 132
-    - 状态改变, 130–131
-
-## V
+### V
 
 - 变量
-- 目标, 20
-- 标题, 146
-- ip_address, 175
-- 列表项, 188
-- strikes, 91–92
-- swatch 组件, 86
-- 变量, 102–103
-- visibility, 209
-- 视口高度 (vw), 200
-- 视口宽度 (vw), 200
-- 视图, 223
+  - `destination`, 20
+  - `heading`, 146
+  - `ip_address`, 175
+  - `listitems`, 188
+  - `strikes`, 91–92
+  - `theCircle`, 102–103
+  - `visibility`, 209
 - 虚拟 DOM, 7–8
-- visibility 变量, 209
-- Visual
-- 在 JavaScript 中定义, 10–12
-- 识别, 49–51
-- 视觉层级, 50
-- vw (视口宽度), 200
+- `visibility` 变量, 209
 
-## W-X-Y-Z
+### W-X-Y-Z
 
+- `webpack`, 152, 162. 另参见 Create React project
+- `XMLHttpRequest` 对象, 167
 - 控制台中的警告, 105
-- 网络请求
-- IP 地址应用
-    - 创建, 168
-    - index.css 文件, 169
-    - index.html 文件, 168
-    - index.js 文件, 168–169
-    - IPAddress 组件, 172–175
-    - IPAddressContainer 组件, 169–172
-    - 处理, 166–167
-    - webpack, 152, 162. 另参见创建 React 项目
-- XMLHttpRequest 对象, 167
+- 网络请求处理, 166–167
 
-## 在 informit.com/register 注册您的产品 享受额外权益并在下次购买时节省 35%
+## 产品注册信息
+
+在 informit.com/register 注册您的产品，享受额外权益并在下次购买时节省 35%。
 
 - 下载可用的产品更新。
 - 在适用时访问奖励材料。
 - 新版本和相关产品的独家优惠（在设置账户时勾选此框以接收我们的消息）。
-- 获取下次购买的 35% 优惠券，有效期为 30 天。您的代码将出现在您的 InformIT 购物车中（您也可以在账户页的“管理代码”部分找到它）。
-
-按产品划分的注册权益。权益将列在您账户页的“已注册产品”下。
-
-InformIT.com-- 信赖的技术学习来源
-InformIT 是全球领先教育公司 Pearson 旗下信息技术品牌的在线家园。在 InformIT，您可以：
-
-- 购买我们的书籍、电子书、软件和视频培训。
-- 利用独家优惠和促销活动 (informit.com/promotions)。
-- 注册特价优惠和内容通讯 (informit.com/newsletters)。
-- 阅读信息技术专家写的免费文章和博客。
-- 访问数千个免费章节和视频课程。
-
-与 InformIT 连接--访问 informit.com/community
-了解 InformIT 社区活动和计划。
+- 获取下次购买的 35% 优惠券，有效期为 30 天。
 
 ## 访问免费 Web 版本
 
@@ -7692,9 +7009,8 @@ Web 版本可以在任何支持 HTML5 的现代网络浏览器的各种电脑和
 
 要访问《Learning React》Web 版本，您只需注册此书：
 
-- 1. 访问 www.informit.com/register。
+1. 访问 www.informit.com/register。
 2. 登录或创建新账户。
 3. 输入 ISBN：9780134843551。
 4. 回答问题以证明购买。
 5. Web 版本将出现在您账户页的“数字购买”选项卡下。点击“启动”链接访问产品。
-

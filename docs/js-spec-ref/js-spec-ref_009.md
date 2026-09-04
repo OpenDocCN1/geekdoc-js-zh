@@ -1,12 +1,19 @@
+
 # 2.5 数组
 
-*   数组的定义
-*   数组与对象的关系
-*   length 属性
-*   数组的空位
-*   in 运算符，for...in 循环
-*   Array 构造函数
-*   参考链接
+## 数组的定义
+
+ 数组与对象的关系
+
+ length 属性
+
+ 数组的空位
+
+ in 运算符，for...in 循环
+
+ Array 构造函数
+
+ 参考链接
 
 ## 数组的定义
 
@@ -340,6 +347,9 @@ a.length // 2
 ## 参考链接
 
 *   Axel Rauschmayer, [Arrays in JavaScript](http://www.2ality.com/2012/12/arrays.html)
+
 *   Axel Rauschmayer, [JavaScript: sparse arrays vs. dense arrays](http://www.2ality.com/2012/06/dense-arrays.html)
+
 *   Felix Bohm, [What They Didn’t Tell You About ES5′s Array Extras](http://net.tutsplus.com/tutorials/javascript-ajax/what-they-didnt-tell-you-about-es5s-array-extras/)
+
 *   Juriy Zaytsev, [How ECMAScript 5 still does not allow to subclass an array](http://perfectionkills.com/how-ecmascript-5-still-does-not-allow-to-subclass-an-array/)

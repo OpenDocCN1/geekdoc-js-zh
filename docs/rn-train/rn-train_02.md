@@ -1,10 +1,11 @@
-# 2 组件
 
 # 2 组件
 
-1.MyComponent.js
+## 2.1 渲染 & JSX
 
-```
+### 2.1.1 MyComponent.js
+
+```javascript
 //define component
 class MyComponent extends React.Component {
   render() {
@@ -15,9 +16,9 @@ class MyComponent extends React.Component {
 export default MyComponent; 
 ```
 
-2.Main.js
+### 2.1.2 Main.js
 
-```
+```javascript
 //import component
 import MyComponent from './MyComponent';
 class Main extends React.Component {
@@ -28,17 +29,15 @@ class Main extends React.Component {
 } 
 ```
 
-3.AppRegistry
+### 2.1.3 AppRegistry
 
-```
+```javascript
 AppRegistry.registerComponent('MyApp', () => Main); 
 ```
 
-# 2.1 渲染 & JSX
+## 2.2 渲染 & JSX
 
-# 2.1 渲染 & JSX
-
-```
+```javascript
 ..
 ...
 render() {
@@ -60,13 +59,11 @@ render() {
 ... 
 ```
 
-# 2.2 视图、文本、图片等
+## 2.3 视图、文本、图片等
 
-# 2.2 视图、文本、图片等
+### 2.3.1 [核心组件](https://facebook.github.io/react-native/docs/tutorial-core-components.html)
 
-1.  [核心组件](https://facebook.github.io/react-native/docs/tutorial-core-components.html)
-
-```
+```javascript
 ..
 ...
 import {
@@ -92,65 +89,51 @@ class Main extends Component {
 } 
 ```
 
-# 2.3 生命周期
+## 2.4 生命周期
 
-# 2.3 生命周期
+### 2.4.1 实例化
 
-1.  实例化
+#### 首次创建实例时调用的生命周期方法
 
-    1.1 首次创建实例时调用的生命周期方法
++   `getDefaultProps`
++   `getInitialState`
++   `componentWillMount`
++   `render`
++   `componentDidMount`
 
-    +   getDefaultProps
+#### 对于该组件类的所有后续使用：
 
-    +   **getInitialState**
++   `getInitialState`
++   `componentWillMount`
++   `render`
++   `componentDidMount`
 
-    +   componentWillMount
+### 2.4.2 生命周期
 
-    +   **render**
++   `componentWillReceiveProps`
++   `shouldComponentUpdate` // 返回 `true|false`
 
-    +   **componentDidMount**
+```javascript
+shouldComponentUpdate(nextProps, nextState) {
+  return nextProps.id !== this.props.id;
+} 
+```
 
-    1.2 对于该组件类的所有后续使用：
++   `componentWillUpdate` //不会在初始渲染时调用
++   `render`
++   `componentDidUpdate`
 
-    +   getInitialState
+### 2.4.3 拆卸和清理
 
-    +   componentWillMount
-
-    +   render
-
-    +   componentDidMount”
-
-1.  生命周期
-
-    +   componentWillReceiveProps
-
-    +   **shouldComponentUpdate // 返回 true|false**
-
-        ```
-        shouldComponentUpdate(nextProps, nextState) {
-        return nextProps.id !== this.props.id;
-        } 
-        ```
-
-    +   componentWillUpdate //不会在初始渲染时调用
-
-    +   render
-
-    +   componentDidUpdate
-
-1.  拆卸和清理
-
-    +   componentWillUnmount
++   `componentWillUnmount`
 
 ![](img/QQ20160627-0.png)
 
-# 2.4 属性和状态
+## 2.5 属性和状态
 
-# 2.4 属性和状态
+### 2.5.1 `props`：属性传递给组件，可以包含任何数据
 
-1.props：属性传递给组件，可以包含任何数据
-
-```
+```javascript
 class User extends Component {
   render(){
     const user = this.props.data;
@@ -186,9 +169,9 @@ class Main extends Component {
 } 
 ```
 
-2.state：状态与 props 不同，因为它是组件内部的。
+### 2.5.2 `state`：状态与 `props` 不同，因为它是组件内部的。
 
-```
+```javascript
 class Timer extends Component {
   constructor(props) {
     super(props);
@@ -226,23 +209,19 @@ class Main extends Component {
 } 
 ```
 
-3.*props* VS *state*
+### 2.5.3 `props` VS `state`
 
-+   使用 props 来通过组件树传递数据和设置。
-
-+   永远不要在组件内部直接修改 this.props；考虑 props 不可变。
-
-+   使用 props 来为事件处理程序与子组件通信。
-
-+   使用 state 来存储简单的视图状态，比如下拉选项是否可见。
-
-+   永远不要直接修改 this.state，而是使用 this.setstate。
++   使用 `props` 来通过组件树传递数据和设置。
++   永远不要在组件内部直接修改 `this.props`；考虑 `props` 不可变。
++   使用 `props` 来为事件处理程序与子组件通信。
++   使用 `state` 来存储简单的视图状态，比如下拉选项是否可见。
++   永远不要直接修改 `this.state`，而是使用 `this.setState`。
 
 ![](img/QQ20160702-0.png)
 
-4.无状态组件
+### 2.5.4 无状态组件
 
-```
+```javascript
 const Heading = ({title}) => <Text>{title}</Text>;
 
 ..
@@ -252,15 +231,13 @@ const Heading = ({title}) => <Text>{title}</Text>;
 .. 
 ```
 
-# 2.5 事件
+## 2.6 事件
 
-# 2.5 事件
+### 2.6.1 基本事件
 
-1.基本事件
+#### [`<TouchableHighlight/>`](https://facebook.github.io/react-native/docs/touchablehighlight.html)
 
-1.1.[`<TouchableHighlight/>`](https://facebook.github.io/react-native/docs/touchablehighlight.html)
-
-```
+```javascript
 class Touch extends Component {
   handlePress(){
     console.log('press');
@@ -282,9 +259,9 @@ class Touch extends Component {
 } 
 ```
 
-1.2\. [`<TextInput/>`](https://facebook.github.io/react-native/docs/textinput.html)
+#### [`<TextInput/>`](https://facebook.github.io/react-native/docs/textinput.html)
 
-```
+```javascript
 class Test extends Component {
   //...
   //handle events
@@ -303,9 +280,9 @@ class Test extends Component {
 } 
 ```
 
-1.3.[DeviceEventEmitter](https://kpetrovi.ch/2015/09/30/react-native-ios-keyboard-events.html)
+#### [`DeviceEventEmitter`](https://kpetrovi.ch/2015/09/30/react-native-ios-keyboard-events.html)
 
-```
+```javascript
 //keyboardWillShow, keyboardDidShow, keyboardWillHide, keyboardDidHide
 //keyboardWillChangeFrame, keyboardDidChangeFrame
 //add the listener
@@ -316,11 +293,15 @@ class Test extends Component {
  listener.remove(); 
 ```
 
-2.[Gesture Responder System](https://facebook.github.io/react-native/docs/gesture-responder-system.html#responder-lifecycle)
+### 2.6.2 [Gesture Responder System](https://facebook.github.io/react-native/docs/gesture-responder-system.html#responder-lifecycle)
 
-2.1 生命周期 ![](img/QQ20160630-2.png) 2.2 示例
+#### 生命周期
 
-```
+![](img/QQ20160630-2.png)
+
+#### 示例
+
+```javascript
 class Test extends Component {
   /* Capture handles */
   //the responder system bubbles up from the deepest component, 
@@ -390,29 +371,21 @@ class Test extends Component {
 } 
 ```
 
-2.3 evt 是一个合成的触摸事件，具有以下形式的 nativeEvent：
+#### `evt` 是一个合成的触摸事件，具有以下形式的 `nativeEvent`：
 
-+   changedTouches - 自上次事件以来发生变化的所有触摸事件的数组
++   `changedTouches` - 自上次事件以来发生变化的所有触摸事件的数组
++   `identifier` - 触摸的 ID
++   `locationX` - 触摸的 X 位置，相对于元素
++   `locationY` - 触摸的 Y 位置，相对于元素
++   `pageX` - 触摸的 X 位置，相对于根元素
++   `pageY` - 触摸的 Y 位置，相对于根元素
++   `target` - 接收触摸事件的元素的节点 ID
++   `timestamp` - 触摸的时间标识符，用于速度计算
++   `touches` - 屏幕上所有当前触摸的数组
 
-+   identifier - 触摸的 ID
+### 2.6.3 [PanResponder](https://facebook.github.io/react-native/docs/panresponder.html)
 
-+   locationX - 触摸的 X 位置，相对于元素
 
-+   locationY - 触摸的 Y 位置，相对于元素
-
-+   pageX - 触摸的 X 位置，相对于根元素
-
-+   pageY - 触摸的 Y 位置，相对于根元素
-
-+   target - 接收触摸事件的元素的节点 ID
-
-+   timestamp - 触摸的时间标识符，用于速度计算
-
-+   touches - 屏幕上所有当前触摸的数组
-
-3.[PanResponder](https://facebook.github.io/react-native/docs/panresponder.html)
-
-3.1
 
 ```
 this._panResponder = PanResponder.create({
@@ -431,45 +404,29 @@ this._panResponder = PanResponder.create({
   //touch cancel
   onPanResponderTerminate: (evt, gestureState) => {},
   onShouldBlockNativeResponder: (evt, gestureState) => true,
-}); 
+});
 ```
 
-3.2 gestureState 对象包含以下内容：
+## 3.2 `gestureState` 对象包含以下内容：
 
-+   stateID - gestureState 的 ID - 只要屏幕上至少有一个触摸，它就会持续存在
+- `stateID` - `gestureState` 的 ID - 只要屏幕上至少有一个触摸，它就会持续存在
+- `moveX` - 最近移动的触摸的最新屏幕坐标
+- `moveY` - 最近移动的触摸的最新屏幕坐标
+- `x0` - 响应者授予的屏幕坐标
+- `y0` - 响应者授予的屏幕坐标
+- `dx` - 自触摸开始以来手势的累积距离
+- `dy` - 自触摸开始以来手势的累积距离
+- `vx` - 手势的当前速度
+- `vy` - 手势的当前速度
+- `numberActiveTouches` - 当前屏幕上的触摸数
 
-+   moveX - 最近移动的触摸的最新屏幕坐标
-
-+   moveY - 最近移动的触摸的最新屏幕坐标
-
-+   x0 - 响应者授予的屏幕坐标
-
-+   y0 - 响应者授予的屏幕坐标
-
-+   dx - 自触摸开始以来手势的累积距离
-
-+   dy - 自触摸开始以来手势的累积距离
-
-+   vx - 手势的当前速度
-
-+   vy - 手势的当前速度
-
-+   numberActiveTouches - 当前屏幕上的触摸数
-
-3.3 [UIExplorer 中的 PanResponder 示例](https://github.com/facebook/react-native/blob/master/Examples/UIExplorer/PanResponderExample.js)
+## 3.3 [UIExplorer 中的 PanResponder 示例](https://github.com/facebook/react-native/blob/master/Examples/UIExplorer/PanResponderExample.js)
 
 # 2.6 资源
 
-# 2.6 资源
-
-+   [react.parts](https://react.parts/native)
-
-+   [js.coach](https://js.coach/)
-
-+   [props vs state](https://github.com/uberVU/react-guide/blob/master/props-vs-state.md)
-
-+   [在 React 中思考](https://facebook.github.io/react/docs/thinking-in-react.html)
-
-+   [深入理解 JSX](https://facebook.github.io/react/docs/jsx-in-depth.html)
-
-+   [本章的演示脚本](https://github.com/unbug/react-native-train-scripts)
+- [react.parts](https://react.parts/native)
+- [js.coach](https://js.coach/)
+- [props vs state](https://github.com/uberVU/react-guide/blob/master/props-vs-state.md)
+- [在 React 中思考](https://facebook.github.io/react/docs/thinking-in-react.html)
+- [深入理解 JSX](https://facebook.github.io/react/docs/jsx-in-depth.html)
+- [本章的演示脚本](https://github.com/unbug/react-native-train-scripts)

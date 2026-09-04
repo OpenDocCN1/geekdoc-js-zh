@@ -1,13 +1,10 @@
+
 # Javascript 编码指南
-
-
 
 ![](img/cover.jpeg)
 
 ## 引言
 
-
-## 引言
 在这一小书中，我们将向你展示一些重要且常见的 JavaScript 概念、问题与解答。本书采用简单的问答格式布局，以便你快速、轻松地吸收和学习。这本书的目标是编写一份极其简单、没有任何废话的指南，为你提供 JavaScript 语言的核心知识。
 
 本手册中包含了十个必须掌握的问题与解答。
@@ -17,66 +14,87 @@
 ## JS 问答简易小书
 
 ### 问题 1：JavaScript：哪些是数学赋值运算符？
+
 `+=`
+
 `-=`
+
 `*=`
+
 `/=`
+
 `%=`
+
 `**=`
 
 ### 问题 2：JavaScript：幂运算符是什么？
+
 `**`
 
 示例：
+
 ```javascript
 let answer = 3 ** 2;
 ```
+
 上述代码将 9 赋值给变量 `answer`。
 
 ### 问题 3：JavaScript：哪个 Math 方法返回 0 到 1 之间的随机小数值？
+
 `Random`
 
 ### 问题 4：JavaScript：模板字符串是如何格式化的？
+
 使用反引号 `` ` `` 代替引号 `''`。
 
 ### 问题 5：JavaScript：哪个 Number 方法根据给定数字是否为整数返回布尔值？
+
 `isInteger(number)`
 
 ### 问题 6：JavaScript：模板字符串的作用是什么？
+
 在不转义引号的情况下向字符串插入变量。
 
 ### 问题 7：JavaScript：哪个关键字声明一个可以更改值的变量？
+
 `Let`
 
 ### 问题 8：JavaScript：变量如何插入模板字符串中？
+
 在花括号 `${}` 内部。
 
 示例：
+
 ```javascript
 console.log(`该数字等于 ${valueOfNumber}`);
 ```
 
 ### 问题 9：JavaScript：单行注释是如何格式化的？
+
 使用 `//`。
 
 示例：
+
 ```javascript
 //这里是注释
 ```
 
 ### 问题 10：JavaScript：哪个运算符返回右侧变量的类型的字符串形式？
+
 `typeof`
 
 示例：
+
 ```javascript
 let valueType = typeof 42;
 ```
+
 变量 `valueType` 将被赋值为 `'number'`。
 
 ![](img/Image00000.jpg)
 
 ## 结语
+
 本书包含了你学习 JavaScript 编程语言的核心知识和特性。建议你使用回想记忆法复习书中的内容，以便加深记忆。
 
 感谢阅读。祝你在学习之旅上一切进展顺利。
-

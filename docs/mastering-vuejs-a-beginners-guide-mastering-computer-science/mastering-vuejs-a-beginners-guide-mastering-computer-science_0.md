@@ -1,45 +1,41 @@
+
 # 掌握 Vue.js：初学者指南 (计算机科学大师)
-
-
-
-
 
 **系列编辑：** Sufyan bin Uzayr
 
 *Lokesh Pancha, Divya Sachdeva, and Faruq KC*
 
-
-
-
-
-
 有关该系列书籍的更多信息，请访问：[`www.routledge.com/Mastering-Computer-Science/book-series/MCS`](https://www.routledge.com/Mastering-Computer-Science/book-series/MCS)
 
 ***“精通计算机科学”系列书籍由 Sufyan bin Uzayr 领导的 Zeba Academy 团队编写。Zeba Academy 是一家教育科技初创企业，主要为 STEM 领域的学习者开发课程和内容，并为全球的大学和机构提供教育咨询。有关更多信息，请访问 [`zeba.academy`](https://zeba.academy)。***
 
-
-
-
 **美国国会目录编排数据**
 
 姓名：Bin Uzayr, Sufyan, 编辑。
+
 标题：Mastering Vue.js : a beginner’s guide / Sufyan bin Uzayr 编辑。
+
 描述：第一版。 | Boca Raton : CRC Press, 2023\. |
+
 系列：Mastering computer science | 包含参考文献和索引。
+
 标识符：LCCN 2022020968 (纸质版) | LCCN 2022020969 (电子书) | ISBN 9781032315942 (精装本) | ISBN 9781032315935 (平装) | ISBN 9781003310464 (电子书)
+
 主题：LCSH: Vue.js (软件框架) | JavaScript (计算机程序语言) | Web 应用程序--开发。 | Web 应用程序--编程。 | 应用程序软件--开发。
+
 分类：LCC QA76.76.V84 M37 2023 (纸质版) | LCC QA76.76.V84 (电子书) | DDC 005.1/4--dc23/eng/20220812
+
 LC 记录可用 [`lccn.loc.gov/2022020968`](https://lccn.loc.gov/2022020968)
+
 LC 电子书记录可用 [`lccn.loc.gov/2022020969`](https://lccn.loc.gov/2022020969)
+
 ISBN: 9781032315942 (hbk)
+
 ISBN: 9781032315935 (pbk)
+
 ISBN: 9781003310464 (ebk)
 
 DOI: 10.1201/9781003310464](http://doi.org/10.1201/9781003310464)
-
-
-
-
 
 ## Vue 采用经典的模型-视图控制器（MVC）架构来查看应用程序或网站的用户界面（UI），其核心库作为默认的视图层。它具有适应性，可以像 React 一样与基于组件的架构（CBA）协同工作。
 
@@ -48,6 +44,7 @@ DOI: 10.1201/9781003310464](http://doi.org/10.1201/9781003310464)
 该工具允许在保留数据对象中信息的同时修改代码部分，并实时影响其他相关部分。
 
 ## 概述
+
 Vue.js 被誉为“用于构建用户界面的渐进式框架”。该框架的架构旨在实现逐步定制化，这使其与其他 JavaScript Web 开发框架区分开来。由于其轻量级的设计，该框架在开发者中非常受欢迎，能够极快速地创建应用程序。
 
 Evan，你在 Google 担任创意技术师期间构建了 Vue.js。例如，Vue.js 使用虚拟文档对象模型（DOM）的方式 React React，但它使用自动化依赖管理来确定在状态变化时哪些组件需要重新渲染。
@@ -57,33 +54,41 @@ Evan，你在 Google 担任创意技术师期间构建了 Vue.js。例如，Vue.
 由于这种开放的方式，该框架在开发者中获得了人气，尽管是一个独立项目，但它的功能、支持和认可度足以与 Facebook 的 React 和 Google 的 Angular 媲美。
 
 ## 社区增长
+
 在 GitHub 上，Vue.js 目前拥有近 200,000 个星（186 万，相比 React 的 171 万和 Angular 的 7.47 万），这表明开发者对该框架的兴趣程度。自 2014 年（七年前）发布初始版本以来，它已成长为关键的前端 Web 开发框架，驱动着全球数百万网站运行。
 
 Vue.js 之所以方便是因为它是可定制且轻量级的，但这并没有削弱它的潜力，其潜力与 React 和 Angular 等较笨重的框架相当。任何具有前端编程基础知识的人都应该能够在几天内学会。
 
 它只需要对“三巨”Web 开发技术有基本的了解：JavaScript、HTML 和 CSS。其他框架（如 Angular 和 React）需要你学习其他语言才能成功使用；在 Angular 的情况下，你必须学习 TypeScript，而 Vue.js 不需要。
 
-#### 渐进性
+### 渐进性
+
 该框架被准确地描述为渐进式的，这意味着它可以被缓慢使用；它逐渐向 HTML 代码添加额外的标记。因此，它适应开发者的需求，而不是强制开发者更新现有程序或建立服务器。
 
 Vue.js 可以作为一个基础脚本元素添加到你的 HTML 代码中，并逐渐扩展以满足你的需求，最终管理整个层。这就是为什么它在某些地方被称为“新 jQuery”。这是使用 Vue.js 的主要优势之一，特别是在从其他框架迁移时。
 
-Google 支持 Angular，Facebook 支持 React，但 Vue.js 完全由开源社区赞助，依靠本地开发者的贡献和赞助商的资金向前发展。尽管如此，后者作为最青睐的 Web 开发框架已让 Angular 和 React 相形见绻。
+Google 支持 Angular，Facebook 支持 React，但 Vue.js 完全由开源社区赞助，依靠本地开发者的贡献和赞助商的资金向前发展。尽管如此，后者作为最青睐的 Web 开发框架已让 Angular 和 React 相形见绌。
 
 开发者受益于 Vue.js 卓越且及时的支持。大多数官方查询在几小时内解决，GitHub issue 也是如此。
 
 ## 核心概念
+
 Vue（发音为/vju/，类似 view）是一个用于渐进式 UI 的框架。与其他单体框架不同，Vue 从零开始被设计为可以增量采纳。核心库被限制在显示层，易于与其他库或现有应用程序集成。另一方面，当与现代技术和相关库集成时，Vue 完全能够驱动复杂的单页应用程序（SPA）。
 
 1. Vue.js 使用双大括号 `{{ }}` 作为数据占位符。
+
 2. Vue.js 指令是以字母 `v-` 开头的 HTML 属性。
+
 3. Vue.js 允许使用称为指令的 HTML 属性扩展 HTML。
+
 4. HTML 应用程序受益于 Vue.js 指令提供的功能。
+
 5. Vue.js 同时拥有内置指令和用户定义指令。
 
 Vue.js 具有逐渐灵活的设计，专注于声明式渲染和组件组合。核心库仅关注显示层。官方维护的支持库和包提供了复杂应用程序所需的高级功能，如路由、状态管理和构建工具。Vue.js 允许通过称为指令的 HTML 元素增强 HTML。指令为 HTML 应用程序提供功能，可能是内置或用户定义的。
 
 ## 组件
+
 Vue 组件是 HTML 元素，它们增强了基础 HTML 元素以包含可重用的功能。在高级层面上，组件是 Vue 编译器为其分配了功能的自定义元素。Vue 中的组件仅仅是一个带有预定义设置的 Vue 对象。下面的代码示例展示了一个 Vue 组件。该组件显示一个按钮并打印它点击的次数：
 
 ```html
@@ -127,24 +132,27 @@ new Vue({
 ```
 
 ## 技术细节
+
 Vue 使用基于 HTML 的模板语法，允许可见 DOM 连接到底层的 Vue 实例数据。所有 Vue 模板都是有效的 HTML，可以被浏览器和标准的 HTML 解析器处理。Vue 将模板编译为虚拟 DOM 渲染方法。Vue 在内存中渲染组件。当配合响应式系统使用时，当应用状态 way 时，Vue 可以识别出最少需要重新渲染的组件和最少的 DOM 操作。
-
-
-
 
 虽然 JavaScript 是一门独立的语言，但它的生态系统包含远比语言本身的内容。例如，框架通过为更流畅的开发奠定基础让开发者的生活变得简单。如果说语言是字母表，那么框架就是手册，允许开发者组成句子并进行通信。
 
 当从 DOM 中插入、更改或删除资源时，Vue 提供了多种选项来应用过渡效果。这涵盖了用于：
 
 * 自动为 CSS 过渡和动画应用类。
+
 * 应当使用第三方 CSS 动画库，如 `Animate.css`。
+
 * 在过渡钩子（transition hooks）期间使用 JavaScript 直接修改 DOM。
+
 * 集成第三方 JavaScript 动画库，如 `Velocity.js`。
 
 当封装在过渡组件中的元素被引入或移除时，会发生以下情况：
 
 1. Vue 将检测目标元素是否使用了 CSS 过渡或动画。如果如果是，将在适当的时机添加/移除 CSS 过渡类。
+
 2. 如果过渡组件包含了 JavaScript 钩子，它们将在适当的时机被调用。
+
 3. 如果没有检测到 CSS 过渡或动画且没有提供 JavaScript 钩子，则将在下一帧执行 DOM 插入和/或移除操作。
 
 在给定网页内无法交换特定“子”页面的链接一直是 SPA（单页应用）的一个限制。因为 SPA 只从服务器交付一个基于 URL 的响应（`index.html` 或 `index.vue`），书签某些屏幕或共享特定部分的链接是非常困难的，甚至是可能的。为了解决这个问题，一些客户端路由器使用“hashbang”（`#!`）来划分动态 URL，例如 `page.com/#!/`。然而，大多数现代浏览器已支持无需 hashbang 的 HTML5 路由。
@@ -174,9 +182,13 @@ const router = new VueRouter({
 代码如下：
 
 * 在 `websitename.com/user/id` 处建立了一个前端路由。
+
 * 这将渲染在 (`const User`…）中描述的 `User` 组件。
+
 * 允许 `User` 组件通过 `$route` 对象的 `params` 字段传入 URL 中的用户 id： `$route.params.id`。
+
 * 此模板将渲染到 DOM 中 `div#app` 内的 `router-view></router-view>` 中（取决于传入路由的参数）。
+
 * 为进入 `websitename.com/user/1` 的用户创建的最终 HTML 将是：
 
 ```html
@@ -190,10 +202,15 @@ const router = new VueRouter({
 核心库包含了由核心团队创建以及贡献的工具和库。Vue.js 使用了各种官方工具和库。它们如下：
 
 * **Devtools**: 可以浏览器开发者插件对 Vue.js 应用进行调试。
+
 * **Vue CLI**: Vue.js 开发工具的标准化。
+
 * **Vue Loader**: 一个 `webpack` 加载器，便于以单文件组件（`SFCs`）格式创建 Vue 组件。
+
 * **Vue Router**: 官方的 Vue.js 路由器。
+
 * **Vuex**: 受 Flux 启发的 Vue.js 集中状态管理。
+
 * **Vue Server Renderer**: Vue.js 服务器端渲染。
 
 以下是使用 Vue.js 的一些优缺点。
@@ -205,49 +222,57 @@ const router = new VueRouter({
 ### 优点
 
 ## 易于学习
+
 Vue.js 在开发者中非常先进，因为它是可定制且轻量级的，但这并没有削弱它的潜力，其潜力与 `React` 和 `Angular` 等较笨重的框架相当。任何具有前端编程基础知识的人都能够在几天内完成。
 
 这只需要对 Web 开发“三剑客”技术有基本的了解：`JavaScript`、`HTML` 和 `CSS`。其他框架如 `Angular` 和 `React` 需要你学习其他语言才能成功使用它们；在 `Angular` 的情况下，你必须学习 `TypeScript`，而 Vue.js 不需要。
 
 #### 渐进性
+
 该框架被准确地描述为渐进式的，这意味着它可以缓慢使用；它逐渐向 HTML 代码添加额外的标记。可以将 Vue.js 作为基本元素放入你的 HTML 代码中，并逐渐扩展以满足你的需求，最终管理整个层。这就是为什么它在某些地方被称为“新 jQuery”。
 
 #### 社区与支持
+
 Angular 由 Google 支持，React 由 Facebook 支持，但 Vue.js 完全由开源社区支持，依靠本地开发者的贡献和赞助者的捐赠向前发展。尽管如此，后者已成功挑战了 Angular 和 React 作为首选 Web 开发框架的地位。
 
 #### 兼顾两者
+
 Vue.js 的另一个优点是，因为它受到 `Angular` 和 `React` 的影响，它学习并结合了后者的最佳特性，同时去除了不理想的特性。例如，Vue.js 与 React 一样使用虚拟 DOM，但它采用自动依赖管理来识别状态更改时哪些组件需要重新渲染。这在 `React` 中默认不会发生，你必须显式地为每个组件应用 `ComponentUpdate` 函数。
 
 #### 模型-视图模型 (MVVM) 架构
+
 如果不解释其架构，对 Vue.js 优点的解释就是完整的。Vue.js 中的 MVVM 概念有助于提高 UI 体验。MVVM 简化了事件驱动的 UI 编程。
 
 #### 轻量
+
 Vue.js 是一个非常小的框架，极其惊人。它只有 18 千字节——眨眼比下载还快。
 
 #### 轻而易事
 
-
-
-
 `Vue.js` 极其易学习，正因为这一特性，它成为了程序员中流行和使用率不断上升的主要动力。要开始编写 `Vue` 代码，你不需要像在 `Angular` 或 `React` 那样具备库、`JSX` 或 `TypeScript` 的专家级知识。你只需要对 `HTML`、`CSS` 和 `JavaScript` 有基础了解即可。
 
 ## 工具完备
+
 在首次发布六年后，`Vue.js` 已经收集了全面的单元测试和端到端测试工具，以及一种插件安装机制。考虑到 `Vue.js` 包含了自身的浏览器调试工具、服务端渲染器和状态管理器，你已经准备充分绪，并正走在设计前端的道路上。
 
 ## 社区氛围
+
 在线 `Vue.js` 社区简直不可思议。该社区的众筹结构，加上它不受 `Facebook` 或 `Google` 这种商业实体的支持，使得 `Vue` 赢得了一批忠实追随者。因此，有许多教程可以帮助你，还有非常活跃的 `Reddit` 和 `Discord` 小组，在那里会有热心的成员能够正确地回答你的问题。
 
 ## DOM 统治
+
 如前所述，`DOM` 是 `HTML` 页面的链接对象表示，由样式、元素和页面内容组成。这导致了一个倒置的族树，文档分支成它的许多组件，并通过显示关系的连线连接起来。
 
 当用户与基于 `HTML` 的网页进行交互时，如果对象改变了状态，浏览器必须更新信息并将其呈现在用户的屏幕上。这是一种耗时且低下的方法，即使只有一个对象发生变化，整个页面也必须刷新。`Vue.js` 创建了原始 `DOM` 的虚拟副本，并确定哪些元素需要更新，而无需重新渲染整个 `DOM`，从而显著提升了应用的效率和速度。
 
 ## 双向绑定
+
 `Angular` 的双向数据绑定被继承到了 `Vue.js`。这种链接将模型数据的变化与 UI 显示连接起来。这简化了更新连接组件以及跟踪已更新数据的过程。
 
 在 `Vue.js` 中，绑定的数据随着 `DOM` 对象的改变而实时更新，这种响应性使得数据更新更加简洁和容易。
 
 ## 分而治之
+
 在 `Vue.js` 中，网页或应用程序的每个组件都表示为 UI 的一个封装元素。这些元素可以用 `HTML`、`CSS` 和 `JavaScript` 编写，而不需要单独的文件。
 
 这些代码段可以作为其他系统部分的模板。由于它们被保存在不同的文件中，布局变得极其易于阅读和理解——使其更容易管理和纠正。测试可以确定程序即使是最微小的组件独立运行的良好程度。
@@ -255,32 +280,41 @@ Vue.js 是一个非常小的框架，极其惊人。它只有 18 千字节——
 由于 `Vue.js` 具有多功能性，它可以与任何现有的应用程序接口。它是基于 `JavaScript` 的，不需要任何其他工具即可运行。从 `React` 或 `Angular` 切换到 `Vue.js` 没有任何问题，因为 `Vue` 是后者的结合体，并且可以与模型视图控制器（MVC）和 `CBA` 通信。
 
 ## 工具与库
+
 - `Vue.js official CLI`：必须开发并安装 `Vue` 的核心库和第三方插件。
+
 - `Development Tools`：用于排查基于 `Vue.js` 的应用程序。
+
 - `Vue Loader`：Webpack 加载器。
+
 - `Vue Router`：映射和路由组件。
 
 ## 低存储空间要求
+
 `Vue` 是一个轻量级程序（下载的 zip 大小仅为 18 KB），它不仅允许快速下载，还通过使用 `Virtual DOM` 改进了你的 SEO 和 UX。
 
 因此，在高速参数方面，它相比于 `React` 和 `Angular` 等竞争对手为你提供了巨大的优势。
 
 ## 简单性
+
 `Vue.js` 的语法不仅简单易学，而且已经处理过 `JavaScript` 的开发者也可以很快上手。它的结构直观，它的组件（这些组件实际上是 `HTML` 和 `JavaScript` 能力的混合体）也易于安装。
 
 它的简单性有助于想要在减少代码错误的同时改进字符串模板语法的开发者。它可以通过单个 `<script>` 标签来激活。
 
 ## 文档
+
 除了简洁的语法外，`Vue.js` 框架非常用户友好。`Vue.js` 的文档非常详尽——文档视频课程以及关注视图层的核心库使得人们很容易掌握并实现这些原则。
 
 在 `Vue.js` `DOM` 的帮助下，任何对 `HTML` 和 `JavaScript` 有基础了解的人都可以轻松设计应用。
 
 ## 响应式
+
 区分 `Vue.js` 与其他框架的特性之一是它的响应式机制。它与 `HTML` 和 `JavaScript` 的交互简化了 `Vue.js` 上这些框架之间的数据绑定。
 
 `Vue.js` 完全有能力处理双向响应式数据绑定操作，使其成为需要实时变化的 Web 项目的极佳选择。
 
 ## 组件与重用
+
 另一个让 `Vue.js` 具有吸引力的方面是代码重用的简单性。程序代码中较小的交互部分（如组件和视图）可以很容易地合并到现有的应用程序中。
 
 使用 `Vue.js` 对现有基础设施没有负面影响。由于这种能力，它是将多个响应式组件纳入现有模板的理想工具。
@@ -288,19 +322,22 @@ Vue.js 是一个非常小的框架，极其惊人。它只有 18 千字节——
 此外，跨组件的状态管理可以通过名为 `Vuex` 的状态管理器进行链接。`Vue Router` 和 `Views` 等功能使得创建单页应用变得异常简单。
 
 ## 组件化架构 (CBA)
+
 `Vue` 组件是应用程序接口的封装部分，可以用 `HTML`、`CSS` 或 `JavaScript` 编写，而不需要单独的文件。这种架构方法和组件系统有许多优点：
+
 - 代码可读性：由于 `Vue` 组件独立地保存在不同的文件中，你可以轻松访问特定的代码区域并进行修正。
+
 - 利于单元测试：组件的存在简化了单元测试。其目标是理解程序中最微小的组件是如何独立运行的。
 
 ### 灵活性
+
 `JavaScript` 长期以来以其适应性闻名；它被认为是最灵活的编程语言之一。然而，随着 `Vue` 前端的演进，这种灵活性现在达到了新的高度。这主要是因为它只需要 `JavaScript`，而不需要任何其他插件。
 
 生成组件的选项是无限的；完成任务没有唯一的“正确”方法。熟悉 `React` 或 `Angular` 框架的开发者迁移到 `Vue` 不会有太大困难。
 
 ## 虚拟 DOM 渲染与性能
+
 在渲染网页时，你肯定会遇到 `DOM`。`DOM` 是 `HTML` 页面的面向对象表示。当页面加载时，浏览器会生成存储在树形结构中的项。
-
-
 
 当用户与网站交互时，对象的状态会发生，这需要浏览器更新信息并将其显示在屏幕上。然而，更新整个 DOM 是非常耗时的。Vue.js 为了追求速度，采用了虚拟 DOM（Virtual DOM）：你可以将其视为原始 DOM 的一个副本，通过它来决定哪些项需要更新，而无需重绘整个 DOM。这种方法加速了页面渲染并提升了应用程序的性能。
 
@@ -321,7 +358,9 @@ Vue 绑定的数据和 DOM 对象是响应式更新的，这使其成为任何�
 拆分应用程序代码是一种 CBA（关注点分离）架构策略，也常用于 `Angular` 和 `React`。使用这种架构方法有几个优势：
 
 *   **组件复用性：** 封装的组件是代码块，可以重用为相似系统元素的模板。
+
 *   **代码可读性：** 由于所有组件都包含在单独的文件中（每个组件仅一个文件），代码更容易阅读和理解，便于维护和纠错。
+
 *   **有利于单元测试：** 单元测试是一项 QA 活动，用于检查软件最小单元如何独立运行。组件的引入使得这项工作变得简单得多。
 
 ## 集成能力与灵活性
@@ -369,8 +408,6 @@ Vue 支持最流行的代码编辑器，包括 `Sublime Text`、`Visual Studio` 
 ### 对大型项目支持支持有限
 
 Vue.js 是一个新框架。它的社区和开发团队仍然逊于成熟的 `Angular`。它没有获得大型企业的资金资助。尽管有 `IBM` 和 `Adobe` 等公司的需求，它仍然主要被用于小型项目。
-
-
 
 虽然该生态系统非常庞大，且提供了启动 Vue 所需的所有工具，但它的规模还没有 React 或 Angular 那么大。具体来说，比较 React 和 Vue 可用插件的数量，其差异以数十万美元计。现有的可能与其他框架配合使用的插件通常不受支持；然而，这可能只是时间问题。
 
@@ -462,10 +499,6 @@ vue ui
 
 我们学习了 Vue.js。
 
-
-
-
-
 `JSX` 的名称是由 Facebook 的工程团队发明的`JSX` 是一种 JavaScript XML 类的语法扩展，没有指定的语义。`JSX` 并不是供引擎或浏览器直接使用的。相反，我们将利用如 `Babel` 等转换器将 `JSX` 转换为标准 JavaScript。
 
 在 JavaScript 中，得益于 `JSX`，我们可以使用类似 HTML 的语法。
@@ -475,7 +508,9 @@ vue ui
 为了跟随本节，你必须具备以下条件：
 
 *   PC 上安装了 `Node.js` 10x 或更高版本以及 `Yarn/npm` 5.2 或更高版本
+
 *   具备 `JavaScript`、`React` 和 `Vue` 基础知识
+
 *   你可以运行以下 `yarn` 命令在 PC 上安装 `Vue CLI`：
 
 ```bash
@@ -571,6 +606,7 @@ Vue.component('anchored-heading', {
 我们现在可以在组件的渲染方法中使用 `JSX` 了。
 
 > Vue 的 JSX 语法陷阱
+
 > 在 `Vue` 中使用 `JSX` 时会遇到一些问题。
 
 例如，用于绑定和监听事件的 `:` 和 `@` 简写将不再可用。它们是错误的 `JSX` 语法，导致你的代码无法编译。
@@ -610,24 +646,26 @@ Vue.component('anchored-heading', {
 当 `setup` 执行时，组件实例尚未生成。因此，你只能访问以下列出的属性：
 
 *   `props`
+
 *   `attrs`
+
 *   `slots`
+
 *   `emit`
 
 换句话说，你将无法使用以下组件选项：
 
 *   `data`
+
 *   `computed`
+
 *   `methods`
+
 *   `refs`（模板引用）
 
 ### 与模板配合
 
 如果 `setup` 返回一个对象，则该对象的属性以及传入 `setup` 的 props 属性都可以在组件模板中访问：
-
-
-
-
 
 ```html
 <template>
@@ -699,7 +737,7 @@ export default {
 
 这不会指向 `setup()` 内部当前激活的实例。因为 `setup()` 在处理其他组件选项之前被调用，因此 `setup()` 中的此选项的作用方式将与其他选项完全不同。在与各种 Options API 结合使用 `setup()` 时，可能会导致困惑。
 
-#### 第组件
+#### 组件
 
 在进入 Vue 组件的世界之前，让我们先定义在应用开发中什么是 Web 组件。
 
@@ -820,10 +858,6 @@ $ npm run dev
 我们将在 `src` 文件夹中创建三个文件，命名为 `NavbarComponent.vue`、`PageHeadingComponent.vue` 和 `StaffListComponent.vue`，顺序如下。
 
 将 `NavbarComponent.vue` 的内容更改为：
-
-
-
-
 
 ```vue
 <!--NavbarComponent.vue-->
@@ -985,10 +1019,6 @@ bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
 </html>
 ```
 
-
-
-
-
 如果你想将对象的所有属性作为 props 传递，请使用不带参数的 `v-bind`（使用 `v-bind` 而不是 `v-bind:prop-name`）。假设有一个 `post` 对象：
 
 ```
@@ -1093,12 +1123,19 @@ Vue.component('my-component', {
 类型可以是下面列出的原生构造函数之一：
 
 *   String
+
 *   Number
+
 *   Array
+
 *   Boolean
+
 *   Object
+
 *   Symbol
+
 *   Date
+
 *   Function
 
 此外，类型可以是自定义的构造函数，断言将通过实例检查执行。例如，假设存在以下构造函数：
@@ -1156,6 +1193,7 @@ Vue.component('blog-post', {
 在这种情况下，该类有两个不同的值：
 
 *   `form-control`，定义在组件内部。
+
 *   `date-picker-theme-dark`，由组件提供。
 
 ## 状态 (STATE)
@@ -1185,10 +1223,6 @@ const Counter = {
 ```
 
 当 `store.state.count` 改变时，计算属性会重新求值，从而触发相关的 DOM 修改。
-
-
-
-
 
 然而，这种设计强制组件依赖于全局 store 单例。当使用模块系统时，需要在每个需要 store 状态的组件中导入 store，在测试组件时也需要对其进行 mock（模拟）。
 
@@ -1296,271 +1330,12 @@ export default {
 }
 ```
 
-`Vue` 方法是一个链接到 `Vue` 实例的对象。`methods` 对象包含了函数的定义。当你需要使用 `v-on` 指令对元素执行某些操作以管理事件时，方法非常有用。在 `methods` 对象中指定的函数可以再次调用以完成操作。
 
-**语法：**
 
-```javascript
-methods: {
-  // 我们可以在这里添加函数
-}
-```
+# Vue 组件与样式指南
 
-单文件组件的语法：
+## Vuex Store 注入
 
-```javascript
-export default {
-  methods: {
-    // 我们可以在这里添加函数
-  }
-}
-```
-
-`Vue` 方法是一个链接到 `Vue` 实例的对象。`methods` 对象包含了函数的定义。当你需要使用 `v-on` 指令对元素执行某些操作以管理事件时，方法非常有用。在 `methods` 对象中指定的函数可以再次调用以完成操作。
-
-**语法：**
-
-```javascript
-methods: {
-  // 我们可以在这里添加函数
-}
-```
-
-单文件组件的语法：
-
-```javascript
-export default {
-  methods: {
-    // 我们可以在这里添加函数
-  }
-}
-```
-
-`Vue` 方法是一个链接到 `Vue` 实例的对象。`methods` 对象包含了函数的定义。当你需要使用 `v-on` 指令对元素执行某些操作以管理事件时，方法非常有用。在 `methods` 对象中指定的函数可以再次调用以完成操作。
-
-**语法：**
-
-```javascript
-methods: {
-  // 我们可以在这里添加函数
-}
-```
-
-单文件组件的语法：
-
-```javascript
-export default {
-  methods: {
-    // 我们可以在这里添加函数
-  }
-}
-```
-
-`Vue` 方法是一个链接到 `Vue` 实例的对象。`methods` 对象包含了函数的定义。当你需要使用 `v-on` 指令对元素执行某些操作以管理事件时，方法非常有用。在 `methods` 对象中指定的函数可以再次调用以完成操作。
-
-**语法：**
-
-```javascript
-methods: {
-  // 我们可以在这里添加函数
-}
-```
-
-单文件组件的语法：
-
-```javascript
-export default {
-  methods: {
-    // 我们可以在这里添加函数
-  }
-}
-```
-
-`Vue` 方法是一个链接到 `Vue` 实例的对象。`methods` 对象包含了函数的定义。当你需要使用 `v-on` 指令对元素执行某些操作以管理事件时，方法非常有用。在 `methods` 对象中指定的函数可以再次调用以完成操作。
-
-**语法：**
-
-```javascript
-methods: {
-  // 我们可以在这里添加函数
-}
-```
-
-单文件组件的语法：
-
-```javascript
-export default {
-  methods: {
-    // 我们可以在这里添加函数
-  }
-}
-```
-
-`Vue` 方法是一个链接到 `Vue` 实例的对象。`methods` 对象包含了函数的定义。当你需要使用 `v-on` 指令对元素执行某些操作以管理事件时，方法非常有用。在 `methods` 对象中指定的函数可以再次调用以完成操作。
-
-**语法：**
-
-```javascript
-methods: {
-  // 我们可以在这里添加函数
-}
-```
-
-单文件组件的语法：
-
-```javascript
-export default {
-  methods: {
-    // 我们可以在这里添加函数
-  }
-}
-```
-
-`Vue` 方法是一个链接到 `Vue` 实例的对象。`methods` 对象包含了函数的定义。当你需要使用 `v-on` 指令对元素执行某些操作以管理事件时，方法非常有用。在 `methods` 对象中指定的函数可以再次调用以完成操作。
-
-**语法：**
-
-```javascript
-methods: {
-  // 我们可以在这里添加函数
-}
-```
-
-单文件组件的语法：
-
-```javascript
-export default {
-  methods: {
-    // 我们可以在这里添加函数
-  }
-}
-```
-
-`Vue` 方法是一个链接到 `Vue` 实例的对象。`methods` 对象包含了函数的定义。当你需要使用 `v-on` 指令对元素执行某些操作以管理事件时，方法非常有用。在 `methods` 对象中指定的函数可以再次调用以完成操作。
-
-**语法：**
-
-```javascript
-methods: {
-  // 我们可以在这里添加函数
-}
-```
-
-单文件组件的语法：
-
-```javascript
-export default {
-  methods: {
-    // 我们可以在这里添加函数
-  }
-}
-```
-
-`Vue` 方法是一个链接到 `Vue` 实例的对象。`methods` 对象包含了函数的定义。当你需要使用 `v-on` 指令对元素执行某些操作以管理事件时，方法非常有用。在 `methods` 对象中指定的函数可以再次调用以完成操作。
-
-**语法：**
-
-```javascript
-methods: {
-  // 我们可以在这里添加函数
-}
-```
-
-单文件组件的语法：
-
-```javascript
-export default {
-  methods: {
-    // 我们可以在这里添加函数
-  }
-}
-```
-
-`Vue` 方法是一个链接到 `Vue` 实例的对象。`methods` 对象包含了函数的定义。当你需要使用 `v-on` 指令对元素执行某些操作以管理事件时，方法非常有用。在 `methods` 对象中指定的函数可以再次调用以完成操作。
-
-**语法：**
-
-```javascript
-methods: {
-  // 我们可以在这里添加函数
-}
-```
-
-单文件组件的语法：
-
-```javascript
-export default {
-  methods: {
-    // 我们可以在这里添加函数
-  }
-}
-```
-
-`Vue` 方法是一个链接到 `Vue` 实例的对象。`methods` 对象包含了函数的定义。当你需要使用 `v-on` 指令对元素执行某些操作以管理事件时，方法非常有用。在 `methods` 对象中指定的函数可以再次调用以完成操作。
-
-**语法：**
-
-```javascript
-methods: {
-  // 我们可以在这里添加函数
-}
-```
-
-单文件组件的语法：
-
-```javascript
-export default {
-  methods: {
-    // 我们可以在这里添加函数
-  }
-}
-```
-
-`Vue` 方法是一个链接到 `Vue` 实例的对象。`methods` 对象包含了函数的定义。当你需要使用 `v-on` 指令对元素执行某些操作以管理事件时，方法非常有用。在 `methods` 对象中指定的函数可以再次调用以完成操作。
-
-**语法：**
-
-```javascript
-methods: {
-  // 我们可以在这里添加函数
-}
-```
-
-单文件组件的语法：
-
-```javascript
-export default {
-  methods: {
-    // 我们可以在这里添加函数
-  }
-}
-```
-
-`Vue` 方法是一个链接到 `Vue` 实例的对象。`methods` 对象包含了函数的定义。当你需要使用 `v-on` 指令对元素执行某些操作以管理事件时，方法非常有用。在 `methods` 对象中指定的函数可以再次调用以完成操作。
-
-**语法：**
-
-```javascript
-methods: {
-  // 我们可以在这里添加函数
-}
-```
-
-单文件组件的语法：
-
-```javascript
-export default {
-  methods: {
-    // 我们可以在这里添加函数
-  }
-}
-```
-
-（注：由于提供的文本中存在大量重复的段落，根据“不要重复输出原文”的原则，译文已对核心逻辑内容进行唯一性翻译处理）
-
----
-
-[content]
 然而，这种设计强制组件依赖于全局 store 单例。当使用模块系统时，需要在每个需要 store 状态的组件中导入 store，在测试组件时也对其进行 mock（模拟）。
 
 通过 `store` 选项，`Vuex` 提供了一种技术，可以从根组件将 store “注入”到所有子组件中：
@@ -1572,11 +1347,11 @@ const app = new Vue({
   // 这会将 store 实例注入到所有子组件中。
   store,
   components: { Counter },
-  template: '
+  template: `
     <div class="app">
       <counter></counter>
     </div>
-  '
+  `
 })
 ```
 
@@ -1584,7 +1359,7 @@ const app = new Vue({
 
 ```javascript
 const Counter = {
-  template: '<div{{ count }}</div>',
+  template: '<div>{{ count }}</div>',
   computed: {
     count () {
       return this.$store.state.count
@@ -1629,7 +1404,7 @@ computed: mapState([
 
 ### 对象展开运算符
 
-需要注意的是，`mapState` 返回的是一个对象。我们如何将其与其他本地计算属性结合呢？通常，我们必须使用一个实用工具将许多对象合并为一个对象，然后再将最终对象传递给计算。然而，我们可以通过对象展开运算符（在新窗口打开）来简化语法：
+需要注意的是，`mapState` 返回的是一个对象。我们如何将其与其他本地计算属性结合呢？通常，我们必须使用一个实用工具将许多对象合并为一个对象，然后再将最终对象传递给计算。然而，我们可以通过对象展开运算符来简化语法：
 
 ```javascript
 computed: {
@@ -1645,11 +1420,9 @@ computed: {
 
 使用 `Vuex` 并不意味着你必须将所有状态包含在 `Vuex` 中。虽然向 `Vuex` 添加更多条件会让状态修改更加清晰且易于调试，但也可能让代码变得冗长且间接。如果部分状态明确属于单个组件，将其留为本地状态可能就足够。你应该权衡利弊，并根据你的 `App` 开发需求做出合适的选择。
 
-## 方法 (METHODS)
+## 方法
 
-`Vue` 方法是一个链接到 `Vue` 实例的对象。`methods` 对象包含了函数的定义。（注：此处省略了原文中大量重复的定义描述段落）
-
-当你需要使用 `v-on` 指令对元素执行某些操作以管理事件时，方法非常有用。在 `methods` 对象中指定的函数可以再次调用以完成操作。
+`Vue` 方法是一个链接到 `Vue` 实例的对象。`methods` 对象包含了函数的定义。当你需要使用 `v-on` 指令对元素执行某些操作以管理事件时，方法非常有用。在 `methods` 对象中指定的函数可以再次调用以完成操作。
 
 **语法：**
 
@@ -1669,11 +1442,9 @@ export default {
 }
 ```
 
-
-
 如果 `title` 日期或 `formatDate` 方法访问了任何响应式数据，它将被追踪为渲染依赖项，就像它直接在模板中使用它一样。
 
-从模板调用的方法不应该产生任何意料之外的影响，例如更改数据或启动异步过程。相反，如果你有此倾向，请使用生命周期钩子（lifecycle hook）。
+从模板调用的方法不应该产生任何意料之外的影响，例如更改数据或启动异步过程。相反，如果你有此倾向，请使用生命周期钩子。
 
 ## 结论
 
@@ -1699,7 +1470,7 @@ DOI: [10.1201/9781003310464-3](https://doi.org/10.1201/9781003310464-3)
 
 ### Vue.js 条件渲染
 
-Vue.js 是一个用于构建用户界现代框架。核心库只关注视图层，易于上手并与其他库结合。当与现代技术和相关框架集成时，Vue 还能够驱动复杂的单页应用（SPA）。
+Vue.js 是一个用于构建用户界面的现代框架。核心库只关注视图层，易于上手并与其他库结合。当与现代技术和相关框架集成时，Vue 还能够驱动复杂的单页应用（SPA）。
 
 Vue 的条件渲染使得我们可以根据预定义的标准，简单地控制 DOM 中任何元素的存在。这是通过使用 `v-if` 和 `v-else` 指令实现的。
 
@@ -1709,76 +1480,61 @@ Vue 的条件渲染使得我们可以根据预定义的标准，简单地控制 
 
 **第一个示例：** 如果 `isVisible` 变量有效，则将显示 `v-if` 指令指定的文本。
 
-```
-Filename: index.html
-
+```html
+<!-- Filename: index.html -->
 <html>
 <head>
-<script src=
-"https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js">
-</script>
+<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
 </head>
 <body>
 <div id='parent'>
-      <h1 style="color: yellow">
-      PiiksforPiiks
-      </h1>
-      <strong v-if="isVisible">
-      Text is visible
-      <strong>
+  <h1 style="color: yellow">PiiksforPiiks</h1>
+  <strong v-if="isVisible">Text is visible</strong>
 </div>
 <script src='app.js'></script>
 </body>
 </html>
+```
 
-Filename: app.js
-
+```javascript
+// Filename: app.js
 const parent = new Vue({
-el : '#parent',
-data :
-
-      // 数据在 DOM 中进行插值
-      isVisible: false
-}
+  el: '#parent',
+  data: {
+    // 数据在 DOM 中进行插值
+    isVisible: false
+  }
 })
 ```
 
 **第二个示例：**
 
-```
-Filename: index.html
+```html
+<!-- Filename: index.html -->
 <html>
 <head>
-<script src=
-"https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js">
-</script>
+<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
 </head>
 <body>
 <div id='parent'>
-     <h1 style="color: yellow">
-     PiiksforPiiks
-     </h1>
-     <h3>DataStructure Course</h3>
-     <p v-if='gfg'>
-     PiiksforPiiks Self-paced the Data Structure course is Awesome!
-     </p>
-
-     <p v-else>
-     Not PiiksforPiiks course!
-     </p>
-
+  <h1 style="color: yellow">PiiksforPiiks</h1>
+  <h3>DataStructure Course</h3>
+  <p v-if='gfg'>PiiksforPiiks Self-paced the Data Structure course is Awesome!</p>
+  <p v-else>Not PiiksforPiiks course!</p>
 </div>
 <script src='app.js'></script>
 </body>
 </html>
-Filename: app.js
-const parent = new Vue({
-el : '#parent',
-data : {
+```
 
-     // 数据在 DOM 中进行插值
-     gfg: true
-}
+```javascript
+// Filename: app.js
+const parent = new Vue({
+  el: '#parent',
+  data: {
+    // 数据在 DOM 中进行插值
+    gfg: true
+  }
 })
 ```
 
@@ -1786,9 +1542,9 @@ data : {
 
 考虑以下示例。假设我们正在设计一个表单，如果密码少于六个字符，我们想要显示无效输入错误消息。
 
-因此，我们将在模板中包含一个带有几个输入框的必要表单区域。我们将在脚本中使用 `V-model` 使我们的表单模型成为我们的数据。
+因此，我们将在模板中包含一个带有几个输入框的必要表单区域。我们将在脚本中使用 `v-model` 使我们的表单模型成为我们的数据。
 
-```
+```html
 <template>
   <div>
     <h2>SignUp</h2>
@@ -1810,21 +1566,18 @@ data : {
 </script>
 ```
 
-
-
-
 通过 `v-else`，你还可以包含一个“else 块”。
 
-```
+```html
 <h1 v-if="awesome">The Vue is awesome!</h1>
 <h1 v-else>Oh no </h1>
 ```
 
-### 在 <template> 上使用 v-if 进行条件分组
+### 在 `<template>` 上使用 `v-if` 进行条件分组
 
--由于 `v-if` 是一个指令，它只能应用于一个元素。但如果我们想同时切换多个元素呢？在这种情况下，我们可以在 `<template>` 元素上使用 `v-if` 来创建一个不可见的包装器。`<template>` 元素不会包含在最终的显示输出中。
+由于 `v-if` 是一个指令，它只能应用于一个元素。但如果我们想同时切换多个元素呢？在这种情况下，我们可以在 `<template>` 元素上使用 `v-if` 来创建一个不可见的包装器。`<template>` 元素不会包含在最终的显示输出中。
 
-```
+```html
 <template v-if="ok">
   <h1>标题</h1>
   <p>段落 1</p>
@@ -1832,11 +1585,11 @@ data : {
 </template>
 ```
 
-#### v-else
+#### `v-else`
 
--由于 `v-else` 指令可以为 `v-if` 提供一个“else 块”：
+`v-else` 指令可以为 `v-if` 提供一个“else 块”：
 
-```
+```html
 <div v-if="Math.random() > 0.6">
   Now you see me
 </div>
@@ -1847,9 +1600,11 @@ data : {
 
 `v-else` 元素必须紧跟在 `v-if` 或 `v-else-if` 元素之后，否则它将被忽略。
 
-`v-else-if` 顾如其义，充当 `v-if` 的“else if 块”。它可以被多次链用：
+#### `v-else-if`
 
-```
+`v-else-if` 顾名思义，充当 `v-if` 的“else if 块”。它可以被多次链用：
+
+```html
 <div v-if="type === 'A'">
   A
 </div>
@@ -1870,7 +1625,7 @@ data : {
 
 Vue 尝试尽可能高效地渲染元素，频繁地复用它们而不是从头创建。除了让 Vue 变得极快之外，这还有几个有益处。例如，如果你允许用户在几种登录方式之间进行选择：
 
-```
+```html
 <template v-if="loginType === 'username'">
   <label>Username</label>
   <input placeholder="Enter username">
@@ -1891,7 +1646,7 @@ Vue 尝试尽可能高效地渲染元素，频繁地复用它们而不是从头�
 
 这并不总是我们希望的；因此，Vue 提供了一种方法来声明：“这两个项目是完全独立的——不要复用它们。” 包含一个具有不同值的 `key` 属性即可：
 
-```
+```html
 <template v-if="loginType === 'username'">
   <label>Username</label>
   <input placeholder="Enter username" key="username-input">
@@ -1910,11 +1665,11 @@ Vue 尝试尽可能高效地渲染元素，频繁地复用它们而不是从头�
 
 由于它们缺少 `key` 属性，`<label>` 元素仍然被高效地复用。
 
-#### v-show
+#### `v-show`
 
 `v-show` 指令是条件显示元素的另一种选择。用法相同：
 
-```
+```html
 <h1 v-show="ok">Hello!</h1>
 ```
 
@@ -1922,7 +1677,7 @@ Vue 尝试尽可能高效地渲染元素，频繁地复用它们而不是从头�
 
 需要注意的是，`v-show` 不支持 `<template>` 元素，且无法与 `v-else` 配合使用。
 
-#### v-if vs v-show
+#### `v-if` vs `v-show`
 
 由于 `v-if` 保证了条件块内的事件监听器和子组件在切换期间会被适当地删除和重建，因此它是“真正的”条件渲染。
 
@@ -1932,19 +1687,19 @@ Vue 尝试尽可能高效地渲染元素，频繁地复用它们而不是从头�
 
 通常，`v-if` 的切换开销更大，而 `v-show` 的初始渲染成本更高。因此，如果你需要频繁切换内容，请使用 `v-show`；如果条件在运行时不太改变，请使用 `v-if`。
 
-#### v-if 与 v-for
+#### `v-if` 与 `v-for`
 
-不建议将 `v-if` 和 `v-for` 同时使用。更多信息请参阅样式指南。
+不建议将 `v-if` 和 `v_for` 同时使用。更多信息请参阅样式指南。
 
 当与 `v-if` 使用时，`v-for` 的优先级高于 `v-if`。
 
-#### v-else-if
+#### `v-else-if` 示例
 
 `v-else-if` 指令像 `v-else` 一样可以与 `v-if` 指令结合使用。
 
 例如：
 
-```
+```html
 <div v-if="type == 'bus'">
    <p>Bus</p>
 </div>
@@ -1959,12 +1714,12 @@ Vue 尝试尽可能高效地渲染元素，频繁地复用它们而不是从头�
 </div>
 ```
 
+## 样式化
 
-
-
+### CSS 重置
 
 ```css
-/*reset.css*/
+/* reset.css */
 /* RESETS */
 *,
 *::before,
@@ -2036,7 +1791,7 @@ body {
     line-height: 1.32579;
   }
 }
-/*END RESETS*/
+/* END RESETS */
 ```
 
 接下来，在你的 `src/main.js` 文件中，如下所示引入 `reset.css` 文件：
@@ -2053,7 +1808,7 @@ import './assets/reset.css';
 
 ### 在单文件组件中添加全局样式
 
-由于我们已经重置了 CSS 以使其在不同浏览器之间保持一致，现在我们需要再稍微修改一下样式。我们希望为应用程序中的不同组件应用特定的样式。虽然将这些文件添加到 `reset.CSS` 样式表中是可行的，但我们将把它们添加到 `app.vue` 的 `<style>` 标签中，以展示如何进行操作。
+由于我们已经重置了 CSS 以使其在不同浏览器之间保持一致，现在我们需要再稍微修改一下样式。我们希望为应用程序中的不同组件应用特定的样式。虽然将这些文件添加到 `reset.css` 样式表中是可行的，但我们将把它们添加到 `App.vue` 的 `<style>` 标签中，以展示如何进行操作。
 
 文件中已经包含了一些样式。让我们去掉它们，并将它们替换为下面列出的样式。这些样式实现了几项功能：它们美化了按钮和输入框，并自定义了 `#app` 元素及其子元素。
 
@@ -2122,379 +1877,16 @@ import './assets/reset.css';
   white-space: nowrap;
 }
 [class*="stack"] > * {
-  margin-top: 0;
-}
-@media screen and (min-width: 620px) {
-  [class*="__lg"] {
-    font-size: 2.5rem;
-  }
-}
-[class*="stack"] > * {
   margin-top: 0.8rem;
 }
-.btn-group {
-  display: flex;
-  justify-content: space-between;
-}
-.btn-group > * {
-  flex: 1 1 auto;
-}
-.btn-group > * + * {
-  margin-left: 0.8rem;
-}
-.label-wrapper {
-  margin: 0;
-  flex: 0 0 100%;
-  text-align: left;
-}
-[class*="__lg"] {
-  display: inline-block;
-  width: 90%;
-  font-size: 1.8rem;
-}
-[class*="__lg"]:not(:last-child) {
-  margin-bottom: 1rem;
-}
-@media screen and (min-width: 620px) {
-  [class*="__lg"] {
-    font-size: 2.5rem;
-  }
-}
-.visually-hidden {
-  position: absolute;
-  height: 1px;
-  width: 1px;
-  overflow: hidden;
-  clip: rect(1px 1px 1px 1px);
-  clip: rect(1px, 1px, 1px, 1px);
-  clip-path: rect(1px, 1px, 1px, 1px);
-  white-space: nowrap;
-}
-[class*="stack"] > * {
-  margin-top: 0.8rem;
-}
-/* 全局样式 */
-.btn {
-  padding: 0.9rem 1rem 0.7rem;
-  border: 0.3rem solid #4d4d4d;
-  cursor: pointer;
-  text-transform: capitalize;
-}
-.btn__danger {
-  color: #fff;
-  background-color: #ca3c3c;
-  border-color: #bd2131;
-}
-.btn__filter {
-  border-color: grey;
-}
-.btn__danger:focus {
-  outline-color: #c82334;
-}
-.btn__primary {
-  color: #fff;
-  background-color: #001;
-}
-.btn-group {
-  display: flex;
-  justify-content: space-between;
-}
-.btn-group > * {
-  flex: 1 1 auto;
-}
-.btn-group > * + * {
-  margin-left: 0.8rem;
-}
-.label-wrapper {
-  margin: 0;
-  flex: 0 0 100%;
-  text-align: left;
-}
-[class*="__lg"] {
-  display: inline-block;
-  width: 90%;
-  font-size: 1.8rem;
-}
-[class*="__lg"]:not(:last-child) {
-  margin-bottom: 1rem;
-}
-@media screen and (min-width: 620px) {
-  [class*="__lg"] {
-    font-size: 2.5rem;
-}
-}
-.visually-hidden {
-  position: absolute;
-  height: 1px;
-  width: 1px;
-  overflow: hidden;
-  clip: rect(1px 1px 1px 1px);
-  clip: rect(1px, 1px, 1px, 1px);
-  clip-path: rect(1px, 1px, 1px, 1px);
-  white-space: nowrap;
-}
-[class*="stack"] > * {
-  margin-top: 0.8rem;
-}
-/* 全局样式 */
-.btn {
-  padding: 0.9rem 1rem 0.7rem;
-  border: 0.3rem solid #4d4d4d;
-  cursor: pointer;
-  text-transform: capitalize;
-}
-.btn__danger {
-  color: #fff;
-  background-color: #ca3c3c;
-  border-color: #bd2131;
-}
-.btn__filter {
-  border-color: grey;
-}
-.btn__danger:focus {
-  outline-color: #c82334;
-}
-.btn__primary {
-  color: #fff;
-  background-color: #001;
-}
-.btn-group {
-  display: flex;
-  justify-content: space-between;
-}
-.btn-group > * {
-  flex: 1 1 auto;
-}
-.btn-group > * + * {
-  margin-left: 0.8rem;
-}
-.label-wrapper {
-  margin: 0;
-  flex: 0 0 100%;
-  text-align: left;
-}
-[class*="__lg"] {
-  display: inline-block;
-  width: 90%;
-  font-size: 1.8rem;
-}
-[class*="__lg"]:not(:last-child) {
-  margin-bottom: 1rem;
-}
-@media screen and (min-width: 620px) {
-  [class*="__lg"] {
-    font-size: 2.5rem;
-  }
-}
-.visually-hidden {
-  position: absolute;
-  height: 1px;
-  width: 1px;
-  overflow: hidden;
-  clip: rect(1px 1px 1px 1px);
-  clip: rect(1px, 1px, 1px, 1px);
-  clip-path: rect(1px, 1px, 1px, 1px);
-  white-space: nowrap;
-}
-[class*="stack"] > * {
-  margin-top: 0.8rem;
-}
-/* 全局样式 */
-.btn {
-  padding: 0.9rem 1rem 0.7rem;
-  border: 0.3rem solid #4d4d4d;
-  cursor: pointer;
-  text-transform: capitalize;
-}
-.btn__danger {
-  color: #fff;
-  background-color: #ca3c3c;
-  border-color: #bd2131;
-}
-.btn__filter {
-  border-color: grey;
-}
-.btn__danger:focus {
-  outline-color: #c82334;
-}
-.btn__primary {
-  color: #fff;
-  background-color: #001;
-}
-.btn-group {
-  display: flex;
-  justify-content: space-between;
-}
-.btn-group > * {
-  flex: 1 1 auto;
-}
-.btn-group > * + * {
-  margin-left: 0.8rem;
-}
-.label-wrapper {
-  margin: 0;
-  flex: 0 0 100%;
-  text-align: left;
-}
-[class*="__lg"] {
-  display: inline-block;
-  width: 90%;
-  font-size: 1.8rem;
-}
-[class*="__lg"]:not(:last-child) {
-  margin-bottom: 1rem;
-}
-@media screen and (min-width: 620px) {
-  [class*="__lg"] {
-    font-size: 2.5rem;
-  }
-}
-.visually-hidden {
-  position: absolute;
-  height: 1px;
-  width: 1px;
-  overflow: hidden;
-  clip: rect(1px 1px 1px 1px);
-  clip: rect(1px, 1px, 1px, 1px);
-  clip-path: rect(1px, 1px, 1px, 1px);
-  white-space: nowrap;
-}
-[class*="stack"] > * {
-  margin-top: 0.8rem;
-}
-/* 全局样式 */
-.btn {
-  padding: 0.9rem 1rem 0.7rem;
-  border: 0.3rem solid #4d4d4d;
-  cursor: pointer;
-  text-transform: capitalize;
-}
-.btn__danger {
-  color: #fff;
-  background-color: #ca3c3c;
-  border-color: #bd2131;
-}
-.btn__filter {
-  border-color: grey;
-}
-.btn__danger:focus {
-  outline-color: #c82334;
-}
-.btn__primary {
-  color: #fff;
-  background-color: #001;
-}
-.btn-group {
-  display: flex;
-  justify-content: space-between;
-}
-.btn-group > * {
-  flex: 1 1 auto;
-}
-.btn-group > * + * {
-  margin-left: 0.8rem;
-}
-.label-wrapper {
-  margin: 0;
-  flex: 0 0 100%;
-  text-align: left;
-}
-[class*="__lg"] {
-  display: inline-block;
-  width: 90%;
-  font-size: 1.8rem;
-}
-[class*="__lg"]:not(:last-child) {
-  margin-bottom: 1rem;
-}
-@media screen and (min-width: 620px) {
-  [class*="__lg"] {
-    font-size: 2.5rem;
-  }
-}
-.visually-hidden {
-  position: absolute;
-  height: 1px;
-  width: 1px;
-  overflow: hidden;
-  clip: rect(1px 1px 1px 1px);
-  clip: rect(1px, 1px, 1px, 1px);
-  clip-path: rect(1px, 1px, 1px, 1px);
-  white-space: nowrap;
-}
-[class*="stack"] > * {
-  margin-top: 0.8rem;
-}
-/* 全局样式 */
-.btn {
-  padding: 0.9rem 1rem 0.7rem;
-  border: 0.3rem solid #4d4d4d;
-  cursor: pointer;
-  text-transform: capitalize;
-}
-.btn__danger {
-  color: #fff;
-  background-color: #ca3c3c;
-  border-color: #bd2131;
-}
-.btn__filter {
-  border-color: grey;
-}
-.btn__danger:focus {
-  outline-color: #c82334;
-}
-.btn__primary {
-  color: #fff;
-  background-color: #001;
-}
-.btn-group {
-  display: flex;
-  justify-content: space-between;
-}
-.btn-group > * {
-  flex: 1 1 auto;
-}
-.btn-group > * + * {
-  margin-left: 0.8rem;
-}
-.label-wrapper {
-  margin: 0;
-  flex: 0 0 100%;
-  text-align: left;
-}
-[class*="__lg"] {
-  display: inline-block;
-  width: 90%;
-  font-size: 1.8rem;
-}
-[class*="__lg"]:not(:last-child) {
-  margin-bottom: 1rem;
-}
-@media screen and (min-width: 620px) {
-  [class*="__lg"] {
-    font-size: 2.5rem;
-  }
-}
-.visually-hidden {
-  position: absolute;
-  height: 1px;
-  width: 1px;
-  overflow: hidden;
-  clip: rect(1px 1px 1px 1px);
-  clip: rect(1px, 1px, 1px, 1px);
-  clip-path: rect(1px, 1px, 1px, 1px);
-  white-space: nowrap;
-}
-[class*="stack"] > * {
-  margin-top: 0.8rem;
-}
+</style>
 ```
 
 ### 添加作用域样式
 
-我们最后一个需要样化的组件是 `ToDoItem` 组件。我们可以在它放入一个 `<style>` 元素，将样式定义保持在组件附近。然而，如果这些样式更改了组件之外的任何内容，可能很难追踪和修复问题。这就是 scoped 功能大显用场的地方；它为你的每个样式分配一个唯一的 HTML 数据属性选择器，从而防止它们在全局范围内冲突。
+我们最后一个需要样式化的组件是 `ToDoItem` 组件。我们可以在它放入一个 `<style>` 元素，将样式定义保持在组件附近。然而，如果这些样式更改了组件之外的任何内容，可能很难追踪和修复问题。这就是 `scoped` 功能大显用场的地方；它为你的每个样式分配一个唯一的 HTML 数据属性选择器，从而防止它们在全局范围内冲突。
 
-要使用 scoped 修符，请在 `ToDoItem.vue` 底部创建一个 `<style>` 元素并为它添加 `scoped` 属性：
+要使用 `scoped` 修饰符，请在 `ToDoItem.vue` 底部创建一个 `<style>` 元素并为它添加 `scoped` 属性：
 
 ```html
 <style scoped>
@@ -2503,11 +1895,8 @@ import './assets/reset.css';
 
 接下来，将下面的 CSS 复制到新创建的 `<style>` 元素中：
 
-
-
-
 ```css
-.custom-checkbox >.checkbox-label {
+.custom-checkbox > .checkbox-label {
   font-family: Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -2519,7 +1908,7 @@ import './assets/reset.css';
   display: block;
   margin-bottom: 6px;
 }
-.custom-checkbox >.checkbox {
+.custom-checkbox > .checkbox {
   font-family: Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -2569,7 +1958,7 @@ import './assets/reset.css';
   margin: 0;
   opacity: 0;
 }
-.custom-checkbox >.checkbox-label {
+.custom-checkbox > .checkbox-label {
   font-size: inherit;
   font-family: inherit;
   line-height: inherit;
@@ -2627,11 +2016,11 @@ import './assets/reset.css';
 
 为根元素 `<div>` 添加 `custom-checkbox` 类。为 `<input>` 添加 `checkbox` 类。最后，为 `<label>` 添加 `checkbox-label` 类。修改后的模板如下所示：
 
-*   应用程序中现在可以使用**自定义复选框**（*Custom checkboxes*）了。
-*   Vue 组件的 CSS 样式可以帮助开发者为其应用程序添加设计感，例如背景颜色、文本大小、内边距、位置、动画以及针对不同屏幕尺寸的响应式显示。
-*   Vue 指令允许你在模板中处理类和样式绑定。为了保持应用程序的结构化，你可以在组件中使用内联样式或使用外部 CSS 文件。
+* 应用程序中现在可以使用**自定义复选框**了。
+* Vue 组件的 CSS 样式可以帮助开发者为其应用程序添加设计感，例如背景颜色、文本大小、内边距、位置、动画以及针对不同屏幕尺寸的响应式显示。
+* Vue 指令允许你在模板中处理类和样式绑定。为了保持应用程序的结构化，你可以在组件中使用内联样式或使用外部 CSS 文件。
 
-通过创建一个简单的网页，本节将将介绍几种使用 CSS 对 Vue 组件进行样式化的方法。
+通过创建一个简单的网页，本节将介绍几种使用 CSS 对 Vue 组件进行样式化的方法。
 
 ### 前提条件
 
@@ -2668,6 +2057,7 @@ vue create <project_name>
 ```
 
 它将提示你选择预设：
+
 1. 默认设置，包含 Babel + ESLint。
 2. Vue。
 3. 手动选择你想要的功能。
@@ -2682,7 +2072,8 @@ cd <project_name>
 
 ```bash
 npm run serve
-or yarn serve
+# 或
+yarn serve
 ```
 
 ### 在 Vue 中设置样式，使用 Scoped
@@ -2694,9 +2085,9 @@ or yarn serve
 ```vue
 <template>
     <div class="navbar">
-        <a href="#">About</a>
-        <a href="#">Services</a>
-        <a href="#">Contact</a>
+        <a href="#" class="navLink">About</a>
+        <a href="#" class="navLink">Services</a>
+        <a href="#" class="navLink">Contact</a>
     </div>
 </template>
 
@@ -2757,6 +2148,7 @@ export default {
 上面的组件将包含以下外部 CSS 文件：
 
 ```css
+/* startpage.css */
 .startPage {
     height: 610px;
     background-color: #f44337;
@@ -2781,13 +2173,13 @@ h2 {
 }
 ```
 
-当使用外部文件时，你可以直接从源文件链接，或者在 `<style>` 标签中导入。在这个示例中，我们连接了位于 Vue 应用程序 文件夹中的外部 CSS 文件。
+当使用外部文件时，你可以直接从源文件链接，或者在 `<style>` 标签中导入。在这个示例中，我们连接了位于 Vue 应用程序文件夹中的外部 CSS 文件。
 
 ### 在 Vue.js 中使用全局样式
 
 我们将在应用程序组件中使用各种样式。为了节省时间，我们将使用全局样式，而不是在 scoped 或外部文件中设置样式（尽管那样也行）。对于字体、颜色、背景颜色、圆角和边距等通用样式，全局样式是你的最佳选择。
 
-在下面的示例中，将在 `app.vue` 的 style 标签中添加全局样式：
+在下面的示例中，将在 `App.vue` 的 style 标签中添加全局样式：
 
 ```vue
 <template>
@@ -2812,8 +2204,8 @@ export default {
 <style>
 * {
   box-sizing: border-box;
-  padding: 1;
-  margin: 1;
+  padding: 0;
+  margin: 0;
 }
 h1,h2,h3,h4,h5,h6 {
   color: #fff;
@@ -2821,9 +2213,7 @@ h1,h2,h3,h4,h5,h6 {
 </style>
 ```
 
-
-
-我们使用了 CSS 通配符选择器（读作星号）来选取我们应用程序中的所有项目，正如你看到的。在这种情况下，所有方向的页边距（margin）和内边距（padding）均设置为 0，且 `box-sizing` 为 `border-box`。
+我们使用了 CSS 通配符选择器来选取我们应用程序中的所有项目。在这种情况下，所有方向的页边距和内边距均设置为 0，且 `box-sizing` 为 `border-box`。
 
 ## 使用内联样式
 
@@ -2831,7 +2221,7 @@ h1,h2,h3,h4,h5,h6 {
 
 这是一个简单的示例：
 
-```
+```html
 <h1 style="color: yellow; text-align: center;">I am a footer</h1>
 ```
 
@@ -2841,14 +2231,14 @@ h1,h2,h3,h4,h5,h6 {
 
 ### 对象语法
 
-使用对象语法，我们可以通过将 CSS 属性名作为对象的键名（key），将值作为每个 CSS 属性的值，来利用内联样式。在使用对象语法时，请使用 `camelCase`（驼峰命名法）或 “kebab-case”（短横线命名法），如下所示：
+使用对象语法，我们可以通过将 CSS 属性名作为对象的键名，将值作为每个 CSS 属性的值，来利用内联样式。在使用对象语法时，请使用 `camelCase`（驼峰命名法）或 “kebab-case”（短横线命名法），如下所示：
 
-```
+```html
 <template>
     <footer
       :style="{backgroundColor: bgColor, color: textColor,
-              height: '${height}px', textAlign: align,
-              padding: '${padding}rem'
+              height: height + 'px', textAlign: align,
+              padding: padding + 'rem'
               }">
           <p> &copy; 2022</p>
     </footer>
@@ -2858,7 +2248,7 @@ export default {
     data(){
         return{
             bgColor: 'black',
-            textColor: 'black',
+            textColor: 'white',
             height: 220,
             align: 'center',
             padding: 6
@@ -2875,7 +2265,7 @@ export default {
 
 当使用对象语法技术时，直接连接到样式对象是一个创新想法，这样随着应用程序的增长，我们的模板看起来更整洁。考虑以下示例：
 
-```
+```html
 <template>
         <footer :style="footerStyles">
           <p> &copy; 2022</p>
@@ -2892,7 +2282,6 @@ export default {
                 textAlign: 'left',
                 padding: '6rem'
             }
-
         }
     }
 }
@@ -2906,30 +2295,27 @@ export default {
 
 数组语法用于为内联样式添加多个样式对象。在下一个示例中，我们将向数组语法添加一个新对象 `textColor`，它将改变文本颜色。
 
-```
+```html
 <template>
-             <footer :style="[footerStyles1, textColor]">
-             <p> &copy; 2022</p>
-             </footer>
+    <footer :style="[footerStyles1, textColor]">
+      <p> &copy; 2022</p>
+    </footer>
 </template>
 <script>
 export default {
-    data(){
-         return{
-             footerStyles1:{
-                backgroundColor: 'white',
-                height: '220px',
-                textAlign: 'left',
-                padding: '6rem'
-            },
-             textColor:{
-               color: 'red',
-              }
-
-         }
-       }
-
-   }
+    data(){
+        return{
+            footerStyles1:{
+                backgroundColor: 'white',
+                height: '220px',
+                textAlign: 'left',
+                padding: '6rem'
+            },
+            textColor:{
+                color: 'red',
+            }
+        }
+    }
 }
 </script>
 <style>
@@ -2939,39 +2325,39 @@ export default {
 
 如上面的示例所示，当添加许多样式对象时，数组语法是理想的；而对于动态样式类，对象语法是内联样式的最佳选择。
 
-本节向我们展示了如何通过多种方法为 Vue.js 应用设置样式，包括范围样式、连接外部 CSS 文件、全局样式以及使用对象和数组语法的内联样式。
+本节向我们展示了如何通过多种方法为 Vue.js 应用设置样式，包括作用域样式、连接外部 CSS 文件、全局样式以及使用对象和数组语法的内联样式。
 
-完成本章内容后，我们将进入 第 3 章 的后续部分：样式组件（Styled Components）。
+完成本章内容后，我们将进入第 3 章的后续部分：样式组件。
 
-## 样式组件 (STYLED COMPONENTS)
+## 样式组件
 
 Web 开发框架的样式随着 Web 开发能力和工具的进步而演变。放弃内联样式转向 CSS-in-JS 解决方案提高了开发体验的一致性。
 
 开发者可以在 JavaScript 中使用 CSS，或者在 JavaScript 中使用 JavaScript 来处理样式。
 
-### 在 Vue 中使用样式组件的优势 (Benefits of Styled Components in Vue)
+### 在 Vue 中使用样式组件的优势
 
-#### 构建你的组件 (Build Components)
+#### 构建你的组件
 
-#### 在 Vue 中的样式组件 (Styled Components in Vue)
+#### 在 Vue 中的样式组件
 
-#### 无需类名 (No Classes)
+#### 无需类名
 
-#### 并发设计 (Concurrent Design)
+#### 并发设计
 
-#### 巨大的社区 (A Huge Community)
+#### 巨大的社区
 
-### 在 Vue 中安装样式组件 (Installing Styled Components in Vue)
+### 在 Vue 中安装样式组件
 
 正如我们看到的，有一个基础的 h1 元素没有样式。我们将使用样式组件为这个 h1 设置样式，因此我们需要在 `src` 目录下创建一个新文件夹来存放它们。
 
 在为我们的 HTML 标签设置样式之前，我们需要在机器上安装库。
 
-### 在 Vue 项目中安装样式组件 (Styled Components in Vue 项目)
+### 在 Vue 项目中安装样式组件
 
 在创建 Vue 项目后，使用以下命令安装库：
 
-```
+```bash
 npm i vue-styled-components
 ```
 
@@ -2981,9 +2367,9 @@ npm i vue-styled-components
 
 目录结构。
 
-移除所有样式后，Helloeveryone.vue 看起来是这样的：
+移除所有样式后，`Helloeveryone.vue` 看起来是这样的：
 
-```
+```vue
 <template>
   <div class="hello">
     <h1>{{ msg }}</h1>
@@ -3002,15 +2388,15 @@ export default {
 
 让我们执行项目并在浏览器中查看结果。
 
-![A screenshot displays a project output in the browser when all styles are removed. The navigation bar reads local host 8080. The screen reads, Welcome to Your Vue.](img/ufig3_6.jpg) <details><summary>图 1 详细描述 (Long Description Unnumbered Figure 1)</summary> 导航栏显示 VUE APP，带有保存、刷新和最小化按钮。屏幕列出了：node_modules、public、src（右侧有一个小圆）、assets、logo.png（带有图标）、components（右侧有一个小圆）、styled components（右侧有一个小圆）、App.vue（带有 Vue 图标）、main.js（带有 JS 图标）、.gitignore、babel.config.js、package.json（带有一对大括号）、package-lock.json、readme.md（带有图标）。</details>
+![A screenshot displays a project output in the browser when all styles are removed. The navigation bar reads local host 8080. The screen reads, Welcome to Your Vue.](img/ufig3_6.jpg)
 
 输出屏幕。
 
-正如我们看到的，有一个没有任何样式的基础 h1 头部元素。我们将使用样式组件为该 h1 设置样式，因此我们需要 `src` 目录下创建一个文件夹来保持它们。在该文件夹中创建一个 `Header.js` 文件。以下是项目结构。
+正如我们看到的，有一个没有任何样式的基础 h1 头部元素。我们将使用样式组件为该 h1 设置样式，因此我们需要在 `src` 目录下创建一个文件夹来保持它们。在该文件夹中创建一个 `Header.js` 文件。以下是项目结构。
 
 然后，在 `Header.js` 中添加以下代码：
 
-```
+```javascript
 import styled from "vue-styled-components";
 
 export const StyledHeader = styled.h1`
@@ -3018,14 +2404,12 @@ export const StyledHeader = styled.h1`
   text-align: left;
   color: red;
   background-color: lightgrey;
-';
+`;
 ```
 
 最后，在 `Helloeveryone.vue` 中，我们可以注册 `StyledHeader` 并使用它来替代 `h1`。
 
-
-
-```html
+```vue
 <template>
   <div class="hello">
     <StyledHeader>{{ msg }}</StyledHeader>
@@ -3033,10 +2417,11 @@ export const StyledHeader = styled.h1`
 </template>
 
 <script>
-import {StyledHeader} from "../styled-components/Header"
+import { StyledHeader } from "../styled-components/Header"
+
 export default {
   name: 'Helloeveryone',
-  components:{
+  components: {
     StyledHeader
   },
   props: {
@@ -3057,7 +2442,7 @@ Props 可以像任何其他组件一样与 styled 组件一起使用。例如，
 ```javascript
 import styled from "vue-styled-components";
 
-export const StyledInput = styled.input'
+export const StyledInput = styled.input`
   font-size: 1.26em;
   padding: 0.6em;
   margin: 0.6em;
@@ -3069,12 +2454,12 @@ export const StyledInput = styled.input'
   &:hover {
     box-shadow: inset 2px 2px 1px rgba(0, 0, 0, 0.1);
   }
-';
+`;
 ```
 
-接一步是在 `Helloeveryone.vue` 中使用它：
+接下来一步是在 `Helloeveryone.vue` 中使用它：
 
-```html
+```vue
 <template>
   <div class="hello">
     <StyledHeader>{{ msg }}</StyledHeader>
@@ -3083,13 +2468,13 @@ export const StyledInput = styled.input'
 </template>
 
 <script>
-import {StyledInput} from "../styled-components/Input"
-import {StyledHeader} from "../styled-components/Header"
+import { StyledInput } from "../styled-components/Input"
+import { StyledHeader } from "../styled-components/Header"
 
 export default {
   name: 'Helloeveryone',
-  components:{
-    StyledInput,StyledHeader
+  components: {
+    StyledInput, StyledHeader
   },
   props: {
     msg: String
@@ -3109,8 +2494,6 @@ export default {
   <StyledInput placeholder="Password" type="text"/>
   </div>
 </template>
-
-…
 ```
 
 ### 在 Vue.js 中通过 Props 进行动态样式处理
@@ -3125,12 +2508,12 @@ export default {
 import styled from "vue-styled-components";
 const hdrProps = { primary: Boolean };
 
-export const StyledHeader = styled("h1", hdrProps)'
+export const StyledHeader = styled("h1", hdrProps)`
   font-size: 1.5em;
   text-align: start;
-  color: ${(props) => (props.primary?  "white" : "black")};
-  background-color: ${(props) => (props.primary?  "green" : "red")};
-';
+  color: ${(props) => (props.primary ? "white" : "black")};
+  background-color: ${(props) => (props.primary ? "green" : "red")};
+`;
 ```
 
 我们在这里为 `StyledHeader` 指定了 props。`styled` 函数接受包含 props 的 HTML 元素作为参数，此后我们可以根据该 prop 的值提供 CSS 的行为。
@@ -3139,7 +2522,7 @@ export const StyledHeader = styled("h1", hdrProps)'
 
 它的运行方式正如我们预期的那样。现在，给我们的 `StyledHeader` 一个主 prop，看看样式是否正确应用：
 
-```html
+```vue
 <template>
   <div class="hello">
   <StyledHeader primary>{{ msg }}</StyledHeader>
@@ -3148,13 +2531,13 @@ export const StyledHeader = styled("h1", hdrProps)'
 </template>
 
 <script>
-import {StyledInput} from "../styled-components/Input"
-import {StyledHeader} from "../styled-components/Header"
+import { StyledInput } from "../styled-components/Input"
+import { StyledHeader } from "../styled-components/Header"
 
 export default {
   name: 'Helloeveryone',
-  components:{
-    StyledInput,StyledHeader
+  components: {
+    StyledInput, StyledHeader
   },
   props: {
     msg: String
@@ -3172,8 +2555,7 @@ export default {
 我们可以通过简单的在 `Header.js` 中添加以下行代码来为 `h2` 应用相同的样式：
 
 ```javascript
-export const StyledHeader2
-= StyledHeader.withComponent("h2");
+export const StyledHeader2 = StyledHeader.withComponent("h2");
 ```
 
 ### 动态更改显示的组件
@@ -3185,7 +2567,7 @@ export const StyledHeader2
 ```html
 <template>
   <div class="hello">
-  <StyledHeader as=button>{{ msg }}</StyledHeader>
+  <StyledHeader as="button">{{ msg }}</StyledHeader>
   <StyledInput placeholder="Password" type="text"/>
   </div>
 </template>
@@ -3199,17 +2581,17 @@ export const StyledHeader2
 import styled from "vue-styled-components";
 const hdrProps = { primary: Boolean };
 
-export const StyledHeader = styled("h1", hdrProps)'
+export const NewHeader = styled("h1", hdrProps)`
   font-size: 1.5em;
   text-align: start;
-  color: ${(props) => (props.primary?  "white" : "black")};
-  background-color: ${(props) => (props.primary?  "green" : "red")};
-';
+  color: ${(props) => (props.primary ? "white" : "black")};
+  background-color: ${(props) => (props.primary ? "green" : "red")};
+`;
 ```
 
 让我们在 `Helloeveryone.vue` 中渲染并使用它：
 
-```html
+```vue
 <template>
   <div class="hello">
   <StyledHeader>{{ msg }}</StyledHeader>
@@ -3218,14 +2600,14 @@ export const StyledHeader = styled("h1", hdrProps)'
 </template>
 
 <script>
-import {StyledInput} from "../styled-components/Input"
-import {StyledHeader} from "../styled-components/Header"
-import {NewHeader} from "../styled-components/NewHeader"
+import { StyledInput } from "../styled-components/Input"
+import { StyledHeader } from "../styled-components/Header"
+import { NewHeader } from "../styled-components/NewHeader"
 
 export default {
   name: 'Helloeveryone',
-  components:{
-    StyledInput,StyledHeader,NewHeader
+  components: {
+    StyledInput, StyledHeader, NewHeader
   },
   props: {
     msg: String
@@ -3240,14 +2622,14 @@ export default {
 
 在本章中，我们学习了条件、样式和样式组件，以及它们的用途以及如何使用它们。在后续章节中，我们将学习图片。
 
-# 第 4 章处理图片
+# 第 4 章 处理图片
 
 DOI: [10.1201/9781023044](https://doi.org/10.1201/9781023044)
 
 ## 本章内容
 
-*   图片
-*   导入图片
+* 图片
+* 导入图片
 
 在第 3 章中，我们讨论了 Vue.js 中的条件、样式和样式组件，以及它们的用途以及如何使用它们。在本章中，我们将学习如何导入图片并在 Vue.js 中使用它们。
 
@@ -3312,15 +2694,11 @@ DOI: [10.1201/9781023044](https://doi.org/10.1201/9781023044)
 </style>
 ```
 
-强烈建议在从资源导入图片时使用 webpack，并通常出于优化和路径目的。如果你想通过 webpack 加载它们，可以使用 `src=require('path/to/file')`，否则它将不会执行所需的 Javascript 语句。
+强烈建议在从资源导入图片时使用 webpack，并通常出于优化和路径目的。如果你想通过 webpack 加载它们，可以使用 `:src="require('path/to/file')"，否则它将不会执行所需的 Javascript 语句。
 
-在 typescript 中你可以执行完全相同的操作：`:src=require‘@/assets/image.png’”。
+在 typescript 中你可以执行完全相同的操作：`:src="require('@/assets/image.png')"。
 
 为什么以下内容被认为是不良好的做法？
-
-
-
-
 
 ```html
 <template>
@@ -3338,7 +2716,7 @@ export default {
 </style>
 ```
 
-使用 `Vue CLI` 构建时，`webpack` 无法保证资源文件保留相对导入结构。这是由于 `webpack` 尝试对资源文件夹中的找到对象进行优化和分块（chunk）。如果你想使用相对导入，请导航到 `static` 文件夹并使用：`<img src="./static/logo.png">`。
+使用 `Vue CLI` 构建时，`webpack` 无法保证资源文件保留相对导入结构。这是由于 `webpack` 尝试对资源文件夹中的找到对象进行优化和分块。如果你想使用相对导入，请导航到 `static` 文件夹并使用：`<img src="./static/logo.png">`。
 
 我最近在处理 `Typescript` 时遇到了这个问题。如果你也像我一样使用 `Typescript`，那么你需要导入以下资源：
 
@@ -3397,7 +2775,7 @@ methods: {
 
 随后文件将被发送到服务器（你可以使用 `Axios`）。
 
-你可以以二进制数据的形式提交状态文件，或者将其封装在 `form data` 对象中。
+你可以以二进制数据的形式提交状态文件，或者将其封装在 `FormData` 对象中。
 
 作为二进制数据：
 
@@ -3425,7 +2803,7 @@ onUpload() {
 
 ```html
 <template>
-  <div :style="image"></div
+  <div :style="image"></div>
 </template>
 
 <script>
@@ -3443,7 +2821,7 @@ export default {
 
 ```html
 <template>
-  <div :style="{backgroundImage:'url(${post.image})'}"></div>
+  <div :style="{backgroundImage: 'url(' + post.image + ')'}"></div>
 </template>
 ```
 
@@ -3456,6 +2834,8 @@ export default {
 ```
 
 或者，你也可以如下所示直接利用变量：
+
+
 
 ```html
 <template>
@@ -3521,7 +2901,7 @@ export default {
 </script>
 ```
 
-##结论
+## 结论
 
 在本章中，我们学习了如何在 `Vue.js` 中导入并使用图像。
 
@@ -3644,9 +3024,6 @@ export default {
 
 ## 路由配置
 
-
-
-
 在我们创建了这四个组件之后，必须配置路由器，以便在它们之间进行跳转。
 
 那么，我们如何使用路由器进入每个组件呢？
@@ -3705,7 +3082,9 @@ export default {
     ```
 
 *   `path`: 组件的路径
+
 *   `name`: 组件的名称
+
 *   `component`: 组件的视图
 
 要将任何组件设置为默认组件，请将 `path` 属性设置为斜杠（`/`）：
@@ -3729,9 +3108,13 @@ path:'/'
 以下是使用 `vue-router` 时可能用属性和方法：
 
 *   嵌套路由 (Nested routers)
+
 *   命名视图 (Named view)
+
 *   重定向与别名 (Redirect and Alias)
+
 *   导航守卫 (Navigation guard)
+
 *   路由实例 (Router instance)
 
 现在你可以通过输入组件名称来浏览到任何组件。
@@ -3768,7 +3151,7 @@ path:'/'
 
 在此阶段，我们将使用参数进入各个组件。参数允许路由是动态的。
 
-我们将创建一个产品列表和一个数据的 `array`（数组）来处理参数。当你点击产品链接时，它将通过参数引导我们进入信息页。
+我们将创建一个产品列表和一个数据的 `array`（数组）来处理参数。当你点击产品铏接时，它将通过参数引导我们进入信息页。
 
 在这种情况下，我们不会利用数据库或 API 来获取产品数据。因此，我们需要建立一个项目数组 `Array` 作为数据库。
 
@@ -3843,10 +3226,15 @@ methods: {
 `vue-router` 包含了更复杂的参数和方法，但我们现在不会深入讨论这些。
 
 以下是使用 `vue-router` 时可能用的属性和方法：
+
 *   嵌套路由 (Nested routers)
+
 *   命名视图 (Named view)
+
 *   重定向与别名 (Redirect and Alias)
+
 *   导航守卫 (Navigation guard)
+
 *   路由实例 (Router instance)
 
 现在你可以通过输入组件名称来浏览到任何组件。
@@ -3860,10 +3248,6 @@ methods: {
   component:home
 }
 ```
-
-
-
-
 
 ```html
 <div class="col-md-12" v-for="(product,index) in products" :key="index">
@@ -3996,7 +3380,7 @@ export default{
 }
 ```
 
-当组件离开视图时，添加另一个淡出效果。当组件离开视图时，我们将让它向上移动。
+当组件离开视视图时，添加另一个淡出效果。当组件离开视图时，我们将让它向上移动。
 
 ```css
 .moveInUp-leave-active{
@@ -4023,11 +3407,13 @@ transform: translateY(-41px);
 ```
 
 -   **使用 NPM:** 安装 `vue-router` 请使用以下命令：
+
   ```bash
   npm install vue-router
   ```
 
 -   **使用 GitHub:** 我们可以通过以下操作从 GitHub 克隆仓库：
+
   ```bash
   git clone https://github.com/vuejs/vue-router node_modules/vue-router
   cd node_modules/vue-router
@@ -4073,10 +3459,6 @@ transform: translateY(-41px);
 </body>
 </html>
 ```
-
-
-
-
 
 已添加 `class = “router-link-exact-active router-link-active"`。如上面的示例所示，激活的链接会接收该类。需要记住的另外一点是 `<router-link>` 被生成为一个标签。
 
@@ -4354,9 +3736,6 @@ export default {
 </script>
 ```
 
-
-
-
 因此，当我们访问 `#/hello?name=jamy` 时，我们再次看到了“hey, jamy”。
 
 ## URLSearchParams
@@ -4366,6 +3745,7 @@ export default {
 例如，我们可以这样写：
 
 ### main.js
+
 ```javascript
 import Vue from "vue";
 import App from "./App.vue";
@@ -4376,6 +3756,7 @@ new Vue({
 ```
 
 ### App.vue
+
 ```html
 <template>
   <div id="app">
@@ -4395,6 +3776,7 @@ export default {
 ```
 
 ### components/Helloeveryone.vue
+
 ```html
 <template>
   <div class="hello">
@@ -4437,6 +3819,7 @@ DOI: [10.1201/9781003310464-6](https://doi.org/10.1201/9781003310464-6)
 ## 本章内容
 
 *   程序化导航
+
 *   懒加载
 
 在 第 5 章 中，我们学习了 Vue.js 中的路由，以及什么是路由器和参数以及如何使用。本章将教我们程序化导航和懒加载。
@@ -4449,7 +3832,7 @@ Vue.js 是一个用于开发交互式前端项目的基础 Web 应用框架。
 
 ### 程序化路由
 
-我们可以通过程序化的探索路由，并使用 `router-link` 生成允许用户导航到路由的链接。
+我们可以通过程序化的探索路由，并使用 `router-link` 生成允用户导航到路由的链接。
 
 ### router.push(location, onComplete?, onAbort?)
 
@@ -4599,10 +3982,6 @@ const Bar = { template: "<p>bar</p>" };const routes = [
 
 这等同于在浏览器中输入 `#/foo?id=1`。
 
-
-
-
-
 ```
 src/index.js :
 const Foo = { template: "<p>foo</p>" };
@@ -4712,7 +4091,9 @@ router.push(location, onComplete?, onAbort?)
 由于这是在点击 `<router-link:to="…">` 时内部调用的方法，因此点击 `<router-link:to="…">` 等同于调用 `router.push (…)`。
 
 | 声明式 | 程序化 |
+
 | --- | --- |
+
 | `<router-link :to="…">` | `router.push(…)` |
 
 参数可以是字符串路径或位置描述符对象。示例说明：
@@ -4759,10 +4140,6 @@ Vue.js 通过路由懒地处理加载，因此你可以在需要时通过路由�
 
 随着你的 Vue.js 项目规模和复杂性的增加，急加载策略会让 JS 包变得非常沉重。这对于你的终端用户来说可能是一个问题，因为他们可能使用移动设备或没有连接到高速互联网。
 
-
-
-
-
 在你选择的目录中打开终端并运行以下命令来创建一个新项目：
 
 ```
@@ -4794,7 +4171,7 @@ npm run serve
 
 ![一张显示 Vue 应用欢迎界面的截图。](img/ufig6_1.jpg) <details><summary>详细描述无编号图 1</summary> 
 
-显示了 Vue 标志，上方有两个按钮：home 和 About。标志是一个较小的 V 叠在一个较大的 V 之上。较小的 V 是深色的，较大的 V 是浅色的。About 按钮被高亮了。标志下方的文字写着：Welcome to Your Vue dot j s App。有关如何配置或自定义此项目的指南和配方，请查看超链接 vue dot c l I documentation。</details> 
+显示了 Vue 标志，上方有两个按钮：home 和 About。标志是一个较小的 V 叠在一个较大的 V 之上。较小的 V 是深色的，较大的 V 是浅色的。About 按钮被高亮了。标志下方的文字写着：Welcome to Your Vue dot j s App。有关如何配置或自定此项目的指南和配方，请查看超链接 vue dot c l I documentation。</details> 
 
 欢迎界面。
 
@@ -4935,15 +4312,11 @@ npm run serve
 
 在浏览器中访问 `http://localhost:8080/` 并启动开发者工具。选择网络部分的 JS 标签。
 
-加载的 JavaScript 分块被分为数字：`0.js` 代表 home 视图，`1.js` 代表 about 视图，第三个 `2.js` 代表不同的视图。
+加载的 JavaScript 分块被分为数字：`0.js` 代表 home 视视图，`1.js` 代表 about 视图，第三个 `2.js` 代表不同的视图。
 
 ```bash
 npm run build
 ```
-
-
-
-
 
 通过按懒加载合适的组件和库，我们能够将 Vue Storefront 的包体积缩小 60%。这是提升性能最简单的技术。
 
@@ -4974,8 +4347,11 @@ npm run build
 假设我们有一个包含四个文件的微型网店：
 
 *   `main.js` 作为我们的主包
+
 *   `product.js` 用于产品页的脚本
+
 *   `productGallery.js` 用于产品页上的产品画廊
+
 *   `category.js` 用于分类页的操作
 
 在不进行深入探讨的情况下，让我们看看这些文件是如何分布在应用程序中的：
@@ -5060,9 +4436,6 @@ const Baz = () => import(/* webpackChunkName: "group-foo" */ './Baz.vue')
 
 任何具有相同块的异步模块都将被 webpack 分组到同一个块中。
 
-
-
-
 Redux 仅仅是一个想法。假设你已经习惯了 reducers（用用器）和 actions（动作），并且认为认为它们是障碍。在这种情况下，正如 Redux 的发明者 Dan Abramov 在他关于 Redux 是否总是必要的 Medium 文章中强调的那样，你也可以设计出涵盖 Context API 作为 store（存储）的 reducers 和 actions。
 
 ## 我如何利用 Context API？
@@ -5070,15 +4443,25 @@ Redux 仅仅是一个想法。假设你已经习惯了 reducers（用用器）�
 你可能在想：“到目前为止，我很满意。我该如何将 Context API 引入到我的应用中？”首先，确定你确实需要它。人们有时会在嵌套组件之间使用共享状态，而不是仅仅通过 props 向它们传递。如果你确实需要它，应该执行以下步骤：
 
 1. 在应用的根目录下创建一个名为 `contexts` 的文件夹（可选，仅为一种约定）。
+
 2. 创建一个名为 `<你的 context 名称>Context.js` 的文件，例如 `userContext.js`。
+
 3. 按照如下方式导入并构建 context：
+
 4. 创建一个名为 `Provider` 的组件来包裹 provider，例如 `UserProvider`。
+
 5. 一个 React Hooks 示例：
+
 6. 创建一个名为 `with` 的高阶组件，例如 `withUser`，用于消费 context。
+
 7. 使用 React Hooks 的示例：
+
    上述两种方案的区别在于，你希望 context 成为该名称下的单个嵌套属性，还是希望它展开为其各个属性（这更方便）。
+
 8. 最后导出。
+
 9. 并按照你喜欢的方式使用它们。
+
 10. 例如：
 
 ## 学习 React Context API 的工作原理以及何时利用它来避免应用中的“属性钻取”（Prop-Drilling）
@@ -5119,7 +4502,7 @@ const Notes = () => {
 };
 ```
 
-从这段代码中我们可以看到可以将此组件分成更小的组件，使我们的代码更清晰、更易管理。例如，我们可以构建一个 `Note` 组件，然后在其中嵌套三个额外的组件：`Title`、`Description` 和 `Done`。
+从这段代码中我们可以看到可以将此组件分成更小的组件，使我们的代码更清晰、更易管理。例如，我们可以构建一个 `Note` 组件，然后在其中嵌套三个额的组件：`Title`、`Description` 和 `Done`。
 
 ```javascript
 const Notes = () => {
@@ -5146,6 +4529,7 @@ const Notes = () => {
   );
 };
 ```
+
 （注：提供的源码包含一个拼写错误 `estate` 而非 `useState`，根据语义指令予以保留）。
 
 从这段代码中我们可以可以将此组件分成更小的组件，使我们的代码更清晰、更易管理。例如，我们可以构建一个 `Note` 组件，然后在其中嵌套三个额外的组件：`Title`、`Description` 和 `Done`。
@@ -5177,9 +4561,6 @@ const Notes = () => {
   );
 };
 ```
-
-
-
 
 我们可以使用 `useContext`  hook 来连接并消费一个上下文。`useContext`  hook 接收单个参数，即你想要访问的上下文。
 
@@ -5258,6 +4639,8 @@ ReactDOM.render(
 
 接下来，我们将在 `App.js` 文件中处理我们的上下文数据。首先，我们必须导入我们开发的 `useAuth` hook，并从 `useAuth` 中获取 `auth` 和 `handleAuth`。
 
+
+
 让我们创建一个按钮，每次点击它都会调用 `handleAuth` 方法。我们还通过对基础 `h1` 进行三元渲染，来验证在点击按钮时 `auth` 值是否发生了变化。
 
 ```javascript
@@ -5272,10 +4655,6 @@ const App = () => {
   );
 };
 ```
-
-
-
-
 
 ```html
 <template>
@@ -5497,10 +4876,6 @@ Vue.component('accordion-panel', {
 
 ### 谨慎使用
 
-
-
-
-
 值得记住，只有在合理的情况下才应该隐式地向下传递属性（props）。过度使用这种方法可能会隐藏组件的真实功能，并困扰可能正在开发你项目的其他开发者。
 
 一个用于其他应用程序的打包和分发的组件库是一个很好的用例，因为组件的内部属性不需要向最终用户泄露。
@@ -5578,8 +4953,10 @@ Composition API 为我们提供了检索关键组件信息（如 props 和 slots
 
 这三个特征如下：
 
-1. `Context.attracts`：传递给组件的非 prop 属性。
-2. `Context.slots`：一个包含我们模板插槽所有渲染方法的对象。
+1. `Context.attracts`：传�给组件的非 prop 属性。
+
+2. `Context.slots`：一个包含我们模板插槽所有渲�方法的对象。
+
 3. `Context.emit`：组件通信事件的技术。
 
 让我们深入查看一下其中的每一项。
@@ -5627,7 +5004,7 @@ export default {
 
 简而言之，`context.slots` 为我们提供了访问每个插槽渲染方法的方法。当我们不使用模板而开发自己的渲染方法时，这非常重要。
 
-Vue 建议在大多数情况下使用模板；但是，如果你真的想充分利用 JavaScript 的威力，我们可以编写自己的渲染函数。根据 Vue 的说明，使用自定义渲染方法的绝佳时机是当我们开发一个根据 prop 值渲染不同标题的插槽的组件时。
+Vue 建议在大多数情况下使用模板；但是，如果你真的想充分利用 JavaScript 的威力，我们可以编写自己的渲染函数。根据 Vue 的说明，使用自定�渲染方法的绝佳时机是当我们开发一个根据 prop 值渲染不同标题的插槽的组件时。
 
 ```html
 <template>
@@ -5729,9 +5106,6 @@ export default {
 </script>
 ```
 
-
-
-
 然后，通过 `von` 指令，我们可以在父组件中监听此闭包事件。
 
 ```
@@ -5745,7 +5119,9 @@ export default {
 然而，由于 `setup` 发生于组件实例之前，我们将无法访问以下三个组件属性：
 
 - `data`
+
 - `computed`
+
 - `methods`
 
 这些是在我们在 `setup` 内部定义的属性，但没有内置机制可以访问所有 `data` 属性的列表（例如）。
@@ -5761,6 +5137,7 @@ DOI: [10.1201/9781003310464-8](https://doi.org/10.1201/9781003310464-8)
 ## 本章内容
 
 - `NOCK`
+
 - `Vue.js-testing-library`
 
 我们在 第 7 章 中学习了 `Context API`，包括它们是什么以及如何被使用。本章将教我们测试、`Nock` 和 `Vue.js-testing-library`。
@@ -5769,7 +5146,7 @@ DOI: [10.1201/9781003310464-8](https://doi.org/10.1201/9781003310464-8)
 
 `Nock` 是一个 `Node.js` 服务器模拟和断言库。
 
-`Nock` 可用于隔离并测试执行 HTTP 请求的模块。例如，如果一个模块向 `CouchDB` 服务器或 `Amazon API` 发送 HTTP 查询，你可以隔离该模块并对其单独测试。
+`Nock` 可用于隔离并测试执行 HTTP 请请求的模块。例如，如果一个模块向 `CouchDB` 服务器或 `Amazon API` 发送 HTTP 查询，你可以隔离该模块并对其单独测试。
 
 ### 它是如何工作的？
 
@@ -5778,12 +5155,14 @@ DOI: [10.1201/9781003310464-8](https://doi.org/10.1201/9781003310464-8)
 我们应该检查：
 
 - 为什么在测试期间要模拟 HTTP 请求？
+
 - 什么是 `Nock`？
+
 - `Nock` 和 `Nock.back` 的代码示例。
 
 ### 为什么在测试期间执行模拟 HTTP 请求？
 
-在处理依赖于外部服务的代码时，维护测试覆盖率和编写可靠的测试可能会困难。由于多种原因，对外部服务执行真实 HTTP 查询的测试可能会出错。例如，交付的精确数据随每次请求而变化、存在网络连接问题，甚至存在速率限制。
+在处理依赖于外部服务的代码时，维护测试覆盖率和编写可靠的测试可能会困难。由于多种原因，对外部服务执行真实 HTTP 查询的测试可能会出错。例如，交付的精确数据随每次请而变化、存在网络连接问题，甚至存在速率限制。
 
 除非测试明确明确为了验证外部服务的可用性、响应速度或数据格式，否则它不应该因为外部依赖而失败。
 
@@ -5792,7 +5171,9 @@ DOI: [10.1201/9781003310464-8](https://doi.org/10.1201/9781003310464-8)
 #### 什么是 Nock？
 
 - `Nock` 是一个 `Node.js` HTTP 服务器模拟和断言库。
+
 - `Nock` 可用于测试执行 HTTP 请求的模块。
+
 - `Nock` 通过修改 `Node` 中的 `HTTP.request` 方法来工作。它还重写了 `HTTP.ClientRequest` 以适应直接使用它的模块。
 
 通过拦截外部 HTTP 查询并允许我们发送定制回复以测试不同的情况，或者将准确的结果保存为“固件”（fixtures，即将返回可靠响应的预制数据），`Nock` 帮助我们避免上述问题。
@@ -5804,6 +5185,7 @@ DOI: [10.1201/9781003310464-8](https://doi.org/10.1201/9781003310464-8)
 目前，`Nock` 有两种使用方式：
 
 - `Nock` 用于模拟开发者定义的特定回复。
+
 - `Nock.back` 用于记录、保存和重用实时答案。
 
 两者都可以在单个测试中找到。如果在同一个测试文件中使用了两者，则必须在使用前后后显式地设置和重置 `nock.back` 模式。我们稍后会详细介绍。
@@ -5870,7 +5252,7 @@ it('should return a user of set nationality', () => {
 
 值得注意的是，我们使用 `afterAll(Nock.restore)` 和 `afterEach(Nock.cleanAll)` 来确保拦截器互不冲突。
 
-最后，我们运行 500 响应测试。对于此，我们开发了一个新方法，当 API 请求不提供响应时返回默认值。在验证函数输出之前，我们使用 `Nock` 拦截请求并模拟 500 响应。
+最后，我们运行 500 响应测试。对于此，我们开发了一个新方法，当 API 请求不提供响应时返回默认值。在验证函数输出之前，我们使用 `Nock` 拦截请请求并模拟 500 响应。
 
 ```
 it('should return a default user on 500', () => {
@@ -5891,9 +5273,6 @@ it('should return a default user on 500', () => {
 
 如果识别出的固件在记录模式下存在，则将使用它替代实时调用；否则将为未来的调用建立固件。
 
-
-
-
 虽然在我们的示例项目中每个测试只执行了一次 HTTP 请求，但 `nock.back` 固件能够记录所有外出的调用。这在测试连接多个服务的复杂组件，或者在执行端到端测试（可能会产生多种调用）时特别有用。利用固件的关键优势在于，它们一旦建立，就可以快速访问，从而消除了超时的可能。因为它们使用的是真实数据，因此无需模拟数据结构，并且可以检测到任何更改。
 
 如前所述，定期移除和刷新固件至关重要，以防止它们变得过时。
@@ -5912,7 +5291,9 @@ nock.back.setMode('wild');
 我们必须首先创建一个 `nock.js` 辅助文件。在下面的示例中，它执行了三件事：
 
 *   指定我们想要存放固件的地方。
+
 *   将模式设置为 `record`，以便在执行测试时，我们既记录又使用固件，而不是像普通的空运行（dry run）那样只使用现有机构但不记录新的机构。
+
 *   使用 `afterRecord` 选项，我们可以对固件采取各种操作以提高其可读性。
 
 这可以通过 `const defaultOptions = require('./helpers/nock');` 或 `import defaultOptions from './helpers/nock';` 在测试文件中进行访问。
@@ -6030,9 +5411,6 @@ describe('Actions', () => {
   })
 })
 ```
-
-
-
 
 ```
 import { shallowMount, createLocalVue } from '@vue/test-utils'
@@ -6265,10 +5643,6 @@ test('updates "evenOrOdd" when "increment" is committed', () => {
 })
 ```
 
-
-
-
-
 你的单元测试框架在测试失败时提供有用的错误信息是至关重要的。断言库负责这一点。具有高质量错误信息的断言可以减少调试问题所需的时间。断言库不仅会报告哪些测试失败了，还会提供测试失败的原因信息，例如预期值与实际获取值之间的对比。
 
 断言库包含在多个单元测试框架中，例如 `Jest`。而其他框架（如 `Mocha`）则需要单独安装断言库（通常是 `Chai`）。
@@ -6284,7 +5658,9 @@ test('updates "evenOrOdd" when "increment" is committed', () => {
 简而言之，`Vue Testing Library` 做了三件事：
 
 1. 重新导出 `DOM Testing Library` 的查询工具和辅助函数。
+
 2. 隐藏了与 `Testing Library` 不兼容的 `@vue/test-utils` 函数。
+
 3. 对两个来源的某些方法进行了微调。
 
 #### 安装
@@ -6353,7 +5729,9 @@ test('increments value on click', async () => {
 #### 为什么要使用 Vue Testing Library？
 
 * 你希望开发不关注实现细节的测试，例如检查解决方案是如何实现的，而不是检查它是否提供了预期的结果。
+
 * 你希望开发关注 DOM 节点而非显示的 Vue 组件的测试。
+
 * 你希望开发像用户一样查询 DOM 的测试。
 
 #### Vue Testing Library 如何工作
@@ -6391,9 +5769,6 @@ vue add unit-jest
 ```json
 "test:unit": "vue-cli-service test",
 ```
-
-
-
 
 你可能还想安装 `@testing-library/jest-dom` 以利用针对 DOM 的专用 Jest 匹配器（matchers）。
 
@@ -6437,28 +5812,41 @@ Vue Testing Library 是一个针对 Vue 组件的轻量级测试解决方案。�
   }
 </script>
 ```
+
 import {render, screen, fireEvent} from '@testing-library/vue'
+
 import Button from './Button'
 
 test('increments value on click', async () => {
+
   // 'render' 方法将组件渲染到文档中。
+
   // 它还在 'screen' 上绑定了所有可用的查询方法以交互组件("@testing-library/vue - Documentation, Popularity | Stackleap")
+
   render(Button)
 
   // queryByText 获取匹配指定文本的第一个节点
+
   // 或者返回 null。
+
   expect(screen.queryByText('Times clicked: 0')).toBeTruthy()
 
   // getByText 获取匹配指定文本的第一个节点
+
   // 或者抛出错误。
+
   const button = screen.getByText('increment')
 
   // 点击几次。
+
   await fireEvent.click(button)
+
   await fireEvent.click(button)
 
   expect(screen.queryByText('Times clicked: 2')).toBeTruthy()
+
 })
+
 ```
 
 安装 `@testing-library/jest-dom` 以提供实用的断言，如 `.toBeInTheDocument()`。你可以在上面的示例中编写 `expect(screen.queryByText('Times clicked: 0')).toBeInTheDocument()`（）。
@@ -6485,8 +5873,11 @@ DOI: [10.1201/9781003310464-9](https://doi.org/10.1201/9781003310464-9)
 在 HTML 中创建表单，你使用 `<form>` 元素：（“JavaScript Form Archives - Tutorial”）
 
 ```
+
 <form action="/signup" method="post" id="signup">
+
 </form>
+
 ```
 
 *   `action` 是一个用于处理表单提交的 URL。在此情况下，`action` 是 `/signup` 路径。
@@ -6509,13 +5900,17 @@ JavaScript 中的 `HTMLFormElement` 对象用于表示表单。`HTMLFormElement`
 你可以使用 `getElementById('signup')` 来引用表单：
 
 ```javascript
+
 const form = document.getElementById('signup');
+
 ```
 
 `forms` 属性返回表单列表（HTMLFormCollection）：
 
 ```javascript
+
 document.forms
+
 ```
 
 ### 提交表单
@@ -6523,20 +5918,35 @@ document.forms
 使用索引来查找特定的表单。考虑以下注册表单，它有两个输入元素：
 
 ```html
+
 <form action="signup.html" method="post" id="signup">
+
        <h1>Sign Up</h1>
+
        <div class="field">
+
               <label for="name">Name:</label>
+
               <input type="text" id="name" name="name" placeholder="Enter fullname" />
+
               <small></small>
+
        </div>
+
        <div class="field">
+
               <label for="email">Email:</label>
+
               <input type="text" id="email" name="email" placeholder="Enter email address" />
+
               <small></small>
+
        </div>
+
        <button type="submit">Subscribe</button>
+
 </form>
+
 ```
 
 当提交按钮被选中时按下回车键，浏览器会提交表单。
@@ -6544,20 +5954,29 @@ document.forms
 使用表单元素的 `addEventListener()` 函数为提交事件添加监听器：
 
 ```javascript
+
 const form = document.getElementById('signup');
 
 form.addEventListener('submit', (event) => {
+
     // 处理表单数据
+
 });
+
 ```
 
 要防止表单被提交，在提交处理器内部执行 `event` 对象的 `preventDefault()` 函数：
 
 ```javascript
+
 form.addEventListener('submit', (event) => {
+
     // 停止表单提交
+
     event.preventDefault();
+
 });
+
 ```
 
 如果表单数据无效，你通常调用 `event.preventDefault()` 方法。
@@ -6565,7 +5984,9 @@ form.addEventListener('submit', (event) => {
 表单对象的 `submit()` 方法用于在 JavaScript 中提交表单：
 
 ```javascript
+
 form.submit();
+
 ```
 
 `form.submit()` 函数不会触发提交事件。因此，在使用此方法之前，你应该仔细验证表单。
@@ -6579,7 +6000,9 @@ form.submit();
 你可以通过索引、ID 或名称在 JavaScript 中访问元素。
 
 ```javascript
+
 form.elements[0]
+
 ```
 
 
@@ -6587,40 +6010,57 @@ form.elements[0]
 
 
 ```javascript
+
 const form = document.getElementById('signup');
+
 ```
 要访问该元素，可以使用 `index`、`id` 或 `name`。访问第一个表单元素如下：
 
 ```javascript
+
 form.elements[0]; // 通过索引访问
+
 form.elements['name']; // 通过 name 访问
+
 form.elements['name']; // 通过 id 访问（在此情况下 name 和 id 相同的）
+
 ```
 
 以下是访问第二个输入元素：
 
 ```javascript
+
 form.elements[1]; // 通过索引访问
+
 form.elements['email']; // 通过 name 访问
+
 form.elements['email']; // 通过 id 访问
+
 ```
 
 访问表单字段后，你可以使用 `value` 属性来获取其值，例如：
 
 ```javascript
+
 const form = document.getElementById('signup');
+
 const name = form.elements['name'];
+
 const email = form.elements['email'];
 
 // 获取元素的值
+
 let fullName = name.value;
+
 let emailAddress = email.value;
+
 ```
 
 ### 整合在一起：注册表单
 以下包含注册表单的 HTML 文档示例。
 
 ```html
+
 ```
 HTML 文本中引用了 `style.css` 和 `app.js` 文件。`<small>` 元素用于在 `<input>` 元素的数据无效时显示错误消息。
 
@@ -6629,6 +6069,7 @@ HTML 文本中引用了 `style.css` 和 `app.js` 文件。`<small>` 元素用于
 下面是整个 `app.js` 文件的内容：
 
 ```javascript
+
 ```
 
 ### 工作原理
@@ -6637,21 +6078,25 @@ HTML 文本中引用了 `style.css` 和 `app.js` 文件。`<small>` 元素用于
 `showMessage()` 函数接收一个输入元素 `message` 和一个类型 `type`。
 
 ```javascript
+
 ```
 
 以下显示了表单上的名称输入字段：
 
 ```html
+
 ```
 
 如果 `name` 的 `value` 为空，你需要先获取它的父元素，即具有类 `field` 的 `<div>`。
 
 ```css
+
 ```
 
 接下来，你需要选择 `<small>` 元素：
 
 ```javascript
+
 ```
 
 然后，我们更新消息：
@@ -6659,11 +6104,13 @@ HTML 文本中引用了 `style.css` 和 `app.js` 文件。`<small>` 元素用于
 随后，将根据 `type` 参数的值更改输入字段的 CSS 类。如果 `type` 为 `true`，我们将输入元素的类设置为 `success`。否则，将类设置为 `error`。
 
 ```javascript
+
 ```
 
 最后，返回 `type` 的值：
 
 ```javascript
+
 ```
 
 `showError()` 和 `showSuccess()` 函数分别用于显示错误和成功。
@@ -6671,18 +6118,21 @@ HTML 文本中引用了 `style.css` 和 `app.js` 文件。`<small>` 元素用于
 `showMessage()` 函数由 `showError()` 和 `showSuccess()` 程调用。`showError()` 函数始终返回 `false`，但 `showSuccess()` 函数始终返回 `true`。`showSuccess()` 方法还会将错误消息设置为空字符串。
 
 ```javascript
+
 ```
 
 ### hasValue() 函数
 `hasValue()` 函数确定输入元素是否有值，并根据需要适当使用 `showError()` 或 `showSuccess()` 函数显示错误消息或成功消息：
 
 ```javascript
+
 ```
 
 ### validateEmail() 函数
 `validateEmail()` 函数验证邮箱字段是否包含有效的电子邮件地址：
 
 ```php
+
 ```
 
 `validateEmail()` 方法调用 `hasValue()` 函数来检查字段值是否为空。如果输入字段为空，它会显示 `requiredMsg`。
@@ -6693,22 +6143,25 @@ HTML 文本中引用了 `style.css` 和 `app.js` 文件。`<small>` 元素用于
 首先，使用 `querySelector()` 方法通过其 `id` 选择注册表单：
 
 ```javascript
+
 ```
 
 其次，创建一些变量来存储错误消息：
 
 ```javascript
+
 ```
 
 第三，使用 `addEventListener()` 方法为注册表单添加 `submit` 事件监听器：
 
 ```javascript
+
 ```
 
 在 `submit` 事件处理器中：
 1. 调用事件以停止表单提交。`preventDefault()` 是一个阻止默认发生任何操作的方法。
 2. 使用 `hasValue()` 和 `validateEmail()` 函数验证姓名和邮箱字段。
-3. 如果姓名和电子邮件地址都正确，则显示提示。在实际应用中，你必须调用 `form`。要提交表单，请使用 `submit()` 方法。
+3. 如果姓名和电子邮件地址都正确，则显示提示。在实际应用中，你必须调用 `form`。要提交表请使用 `submit()` 方法。
 
 ## 总结
 * 要构建 HTML 表单，使用 `<form>` 元素。
@@ -6722,29 +6175,44 @@ JavaScript 能够验证 HTML 表单。
 如果表单字段 (`fname`) 为空，此方法将发送一条消息并返回 `false`，防止表单上传：
 
 ```javascript
+
 function validateForm() {
+
   let x = document.forms["myForm"]["fname"].value;
+
   if (x == "") {
+
     alert("Name must filled out");
+
     return false;
+
   }
+
 }
+
 ```
 
 在提交表单时可以调用该函数：
 
 ```html
+
 <form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+
 Name: <input type="text" name="fname">
+
 <input type="submit" value="Submit">
+
 </form>
+
 ```
 
 ### JavaScript 有验证数值输入的能力
 数字输入经常使用 JavaScript 进行验证：
 
 ```
+
 请输入 1 到 10 之间的值
+
 ```
 
 ### 自动 HTML 表单验证
@@ -6753,10 +6221,15 @@ Name: <input type="text" name="fname">
 `required` 属性会在当表单字段 (`fname`) 为空时阻止此表单提交：
 
 ```html
+
 <form action="/action_page.php" method="post">
+
   <input type="text" name="fname" required>
+
   <input type="submit" value="Submit">
+
 </form>
+
 ```
 
 Internet Explorer 9 及之前的版本不支持自动 HTML 验证。
@@ -6789,8 +6262,11 @@ Internet Explorer 9 及之前的版本不支持自动 HTML 验证。
 
 #### 文本 (Text)
 ```html
+
 <input v-model="message" placeholder="edit me">
+
 <p>Message is: {{ message }}</p>
+
 ```
 ![一个文本框示例，标签为 edit me，下方是陈述 message is:。](img/fig9_1.jpg)
 
@@ -6798,10 +6274,15 @@ Internet Explorer 9 及之前的版本不支持自动 HTML 验证。
 
 #### 多行文本 (Multiline text)
 ```html
+
 <span>Multiline message is:</span>
+
 <p style="white-space: pre;">{{ message }}</p>
+
 <br>
+
 <textarea v-model="message" placeholder="add lines"></textarea>
+
 ```
 ![一个陈述，multiline message is: 后面跟着一个标签为 add multiple 的文本框。](img/fig9_2.jpg)
 
@@ -6810,8 +6291,11 @@ Internet Explorer 9 及之前的版本不支持自动 HTML 验证。
 #### 复选框 (Checkbox)
 ##### 单选复选框，布尔值
 ```html
+
 <input type="checkbox" id="checkbox" v-model="checked">
+
 <label for="checkbox">{{ checked }}</label>
+
 ```
 ![一个标记为 false 的复选框。](img/fig9_3.jpg)
 
@@ -6819,18 +6303,73 @@ Internet Explorer 9 及之前的版本不支持自动 HTML 验证。
 
 ##### 多复选框，绑定到同一个数组
 ```html
+
 <input type="checkbox" id="jacky" value="Jack" v-model="checkedNames">
+
 <label for="jacky">Jacky</label>
+
 <input type="checkbox" id="johnny" value="John" v-model="checkedNames">
+
 <label for="johnny">Johny</label>
+
 <input type="checkbox" id="midny" value="Mike" v-model="checkedNames">
+
 <label for="midny">Midny</label>
+
 <br>
+
 <span>Checked names: {{ checkedNames }}</span>
+
+```
+```javascript
+
+new Vue({
+
+  el: '…',
+
+  data: {
+
+
+
+# 表单输入绑定
+
+## 基础用法
+
+### 复选框 (Checkbox)
+
+#### 单个复选框
+```html
+<input type="checkbox" id="checkbox" v-model="checked">
+<label for="checkbox">{{ checked }}</label>
 ```
 ```javascript
 new Vue({
-  el: '…',
+  el: '...',
+  data: {
+    checked: false
+  }
+})
+```
+![一个标记为 checkbox 的复选框。陈述 false 位于右侧。](img/fig9_1.jpg)
+
+单个复选框示例。
+
+#### 多个复选框（绑定到同一个数组）
+```html
+<div id="example-3">
+  <input type="checkbox" id="jack" value="Jack" v-model="checkedNames">
+  <label for="jack">Jack</label>
+  <input type="checkbox" id="john" value="John" v-model="checkedNames">
+  <label for="john">John</label>
+  <input type="checkbox" id="mike" value="Mike" v-model="checkedNames">
+  <label for="mike">Mike</label>
+  <br>
+  <span>Checked names: {{ checkedNames }}</span>
+</div>
+```
+```javascript
+new Vue({
+  el: '#example-3',
   data: {
     checkedNames: []
   }
@@ -6840,8 +6379,7 @@ new Vue({
 
 多复选框块。
 
-#### 单选按钮 (Radio)
-##### 多复选框（注：此处标题可能有误，实为单选框）
+### 单选按钮 (Radio)
 ```html
 <input type="radio" id="one" value="One" v-model="picked">
 <label for="one">One</label>
@@ -6855,8 +6393,9 @@ new Vue({
 
 单选按钮示例。
 
-#### 下拉框 (Select)
-##### 单选框
+### 下拉框 (Select)
+
+#### 单选框
 ```html
 <select v-model="selected">
   <option value="">Please select one</option>
@@ -6868,7 +6407,7 @@ new Vue({
 ```
 ```javascript
 new Vue({
-  el: '…',
+  el: '...',
   data: {
     selected: ''
   }
@@ -6878,7 +6417,7 @@ new Vue({
 
 select 按钮示例。
 
-##### 多选框（绑定到数组）
+#### 多选框（绑定到数组）
 ```html
 <select v-model="selected" multiple>
   <option>A</option>
@@ -6903,7 +6442,7 @@ select 列表示例。
 ```
 ```javascript
 new Vue({
-  el: '…',
+  el: '...',
   data: {
     selected: 'A',
     options: [
@@ -6915,16 +6454,14 @@ new Vue({
 })
 ```
 
-#### 值绑定 (Value Bindings)
+### 值绑定 (Value Bindings)
 `v-model` 对于 `radio`、`checkbox` 和 `select` 的值通常是字符串（checkboxes 为布尔值）：
 
 ```html
 <!-- 选中时，picked 为字符串 "a" -->
 <input type="radio" v-model="picked" value="a">
-
 <!-- toggle 为 true 或 false -->
 <input type="checkbox" v-model="toggle">
-
 <!-- 选中第一个选项时，selected 为字符串 "abc" -->
 <select v-model="selected">
   <option>ABC</option>
@@ -6933,7 +6470,7 @@ new Vue({
 
 有时我们希望将值与 `Vue` 实例的动态属性关联。为了实现这一点，我们可以使用 `v-bind`。我们也可以通过 `v-bind` 将输入绑定到非字符串值。
 
-##### 复选框
+#### 复选框
 ```html
 <input
   type="checkbox"
@@ -6947,7 +6484,7 @@ vm.toggle === 'yes'
 vm.toggle === 'no'
 ```
 
-##### 单选按钮
+#### 单选按钮
 ```html
 <input
   type="radio"
@@ -6966,7 +6503,7 @@ vm.toggle === 'no'
 <label for="two">Two</label>
 ```
 
-##### 下拉框
+#### 下拉框
 ```html
 <select v-model="selected">
   <option value="">Please select one</option>
@@ -6976,180 +6513,147 @@ vm.toggle === 'no'
 </select>
 ```
 
-#### 修饰符 (Modifiers)
-- `.lazy`: 默认，`v-model` 在每次 `input` 事件时同步输入（IME 组合除外）。如果你希望在输入完成后后同步，可以使用 `lazy` 修饰符。
+### 修饰符 (Modifiers)
+- `.lazy`: 默认，`v-model` 在每次 `input` 事件时同步输入（IME 组合除外）。如果你希望在输入完成后同步，可以使用 `lazy` 修饰符。
 - `.number`: 如果希望输入被自动转换为 `Number` 类型，因为 HTML 元素的值总是字符串，你可以在输入框上添加 `number` 修饰符。
 - `.trim`: 你可以使用 `trim` 修饰符来修剪用户输入中的空白字符。
 
-#### 组件上的 v-model
+### 组件上的 v-model
 内置的输入类型并不总是能满足需求。相反，`Vue` 组件允许你创建具有完全可配置行为的可用输入。这些输入甚至与 `v-model` 兼容！
 
-### 懒更新
-
-
-
-
+## 懒更新
 在每个输入事件后，`v-model` 默认会将输入内容与数据同步。你可以通过添加 `lazy` 属性将行为更改为在 `change` 事件后同步：
-
+```html
+<!-- 在 "change" 事件而非 "input" 事件后同步 -->
+<input v-model="msg" lazy>
 ```
-1 <!-- 在 "change" 事件而非 "input" 事件后同步 -->
-2 <input v-model="msg" lazy>
-```
 
-### 将值强制转换为数字
-
+## 将值强制转换为数字
 如果你希望用户输入被自动存储为数字，可以为你的 `v-model` 驱动的输入框添加 `number` 属性：
-
+```html
+<input v-model="age" number>
 ```
-1 <input v-model="age" number>
-```
 
-### 绑定到表达式
-
-**仅限 ⁰.12.12**
+## 绑定到表达式
+**仅限 0.12.12**
 
 当在复选框和单选框上使用 `v-model` 时，绑定的值是 `Boolean` 类型或字符串：
-
-```
-1 <!-- toggle 值为 true 或 false -->
-2 <input type="checkbox" v-model="toggle">
-3 
-4 <!-- 选中此单选框时，pick 为 "green" -->
-5 <input type="radio" v-model="pick" value="green">
+```html
+<!-- toggle 值为 true 或 false -->
+<input type="checkbox" v-model="toggle">
+<!-- 选中此单选框时，pick 为 "green" -->
+<input type="radio" v-model="pick" value="green">
 ```
 
 这可能会有一些限制；有时我们希望将底层值绑定到其他内容。以下是实现方法：
 
 复选框：
-
-```
-1 <input type="checkbox" v-model="toggle" true-exp="a" false-exp="b">
-1 // 选中时：
-2 vm.toggle === vm.a
-3 // 未勾选时：
-4 vm.toggle === vm.b
+```html
+<input type="checkbox" v-model="toggle" true-exp="a" false-exp="b">
+// 选中时：
+vm.toggle === vm.a
+// 未勾选时：
+vm.toggle === vm.b
 ```
 
 单选框：
-
+```html
+<input type="radio" v-model="pick" exp="a">
+// 选中时：
+vm.pick === vm.a
 ```
-1 <input type="radio" v-model="pick" exp="a">
-1 // 选中时：
-2 vm.pick === vm.a
-```
 
-### 动态选择选项
-
+## 动态选择选项
 由于你需要为 `<select>` 元素动态渲染选项列表，你应该使用 `options` 属性配合 `v-model`，以便当选项变化时，`v-model` 能够正确同步：
-
+```html
+<select v-model="selected" options="myOptions"></select>
 ```
-1 <select v-model="selected" options="myOptions"></select>
-```
-
 `MyOptions` 应该是你数据中的一个键路径/表达式，它连接到一个将用作选项的 `Array`。
 
 纯字符串可以在 `Array` 选项中找到：
-
-```
-1 options = ['a', 'b', 'c']
-```
-
-它也可以包含 `{text:’, value:’’}` 格式的项目。在这种对象格式下，选项的文字显示可以与底层值不同：
-
-```
-1 options = [
-2   { text: 'A', value: 'a' },
-3   { text: 'B', value: 'b' }
-4 ]
+```javascript
+options = ['a', 'b', 'c']
 ```
 
+它也可以包含 `{text: '', value: ''}` 格式的项目。在这种对象格式下，选项的文字显示可以与底层值不同：
+```javascript
+options = [
+  { text: 'A', value: 'a' },
+  { text: 'B', value: 'b' }
+]
+```
 将渲染为：
-
+```html
+<select>
+  <option value="a">A</option>
+  <option value="b">B</option>
+</select>
 ```
-1 <select>
-2   <option value="a">A</option>
-3   <option value="b">B</option>
-4 </select>
-```
-
 `value` 也可以是 `Objects`：
-
-仅限 0.12.11+
-
-```
-1 options = [
-2   { text: 'A', value: { msg: 'hello' }},
-3   { text: 'B', value: { msg: 'bye' }}
-4 ]
+**仅限 0.12.11+**
+```javascript
+options = [
+  { text: 'A', value: { msg: 'hello' }},
+  { text: 'B', value: { msg: 'bye' }}
+]
 ```
 
-#### 选项组
-
-或者，可以将格式化为 `{label:", options:[…]}`。在这种情况下，它将呈现为 `<optgroup>`：
-
+### 选项组
+或者，可以将格式化为 `{label: '', options: [...]}。在这种情况下，它将呈现为 `<optgroup>`：
+```javascript
+[
+  { label: 'A', options: ['a', 'b']},
+  { label: 'B', options: ['c', 'd']}
+]
 ```
-1 [
-2   { label: 'A', options: ['a', 'b']},
-3   { label: 'B', options: ['c', 'd']}
-4 ]
-```
-
 将渲染为：
-
+```html
+<select>
+  <optgroup label="A">
+    <option value="a">a</option>
+    <option value="b">b</option>
+  </optgroup>
+  <optgroup label="B">
+    <option value="c">c</option>
+    <option value="d">d</option>
+  </optgroup>
+</select>
 ```
-1 <select>
-2   <optgroup label="A">
-3     <option value="a">a</option>
-4     <option value="b">b</option>
-5   </optgroup>
-6   <optgroup label="B">
-7     <option value="c">c</option>
-8     <option value="d">d</option>
-9   </optgroup>
-10 </select>
-```
 
-#### 选项过滤器
-
+### 选项过滤器
 你的源数据可能不是这种格式，因此你必须更改它来创建动态选项。`options` 参数支持过滤器以简化转换（DRY 原则），并且将你的转换逻辑封装在可重用的自定义过滤器中非常有用：
-
+```javascript
+Vue.filter('extract', function (value, keyToExtract) {
+  return value.map(function (item) {
+    return item[keyToExtract]
+  })
+})
 ```
-1 Vue.filter('extract', function (value, keyToExtract) {
-2   return value.map(function (item) {
-3     return item[keyToExtract]
-4   })
-5 })
-1 <select
-2   v-model="selectedUser"
-3   options="users | extract 'name'">
-4 </select>
+```html
+<select
+  v-model="selectedUser"
+  options="users | extract 'name'">
+</select>
 ```
-“上述过滤器将数据 `[{ name: ‘Bruce’ }, { name: ‘Chuck’ }]` 转换为 `['Bruce’, ‘Chuck’]`，使其格式正确。”（“Handling Forms - vue.js”）
+“上述过滤器将数据 `[{ name: 'Bruce' }, { name: 'Chuck' }]` 转换为 `['Bruce', 'Chuck']`，使其格式正确。”（“Handling Forms - vue.js”）
 
-#### 静态默认选项
-
-仅限 0.12.10+
-
+### 静态默认选项
+**仅限 0.12.10+**
 除了动态生成的选项外，你还可以提供一个静态默认选项：
-
+```html
+<select v-model="selectedUser" options="users">
+  <option>Select a user</option>
+</select>
 ```
-1 <select v-model="selectedUser" options="users">
-2   <option>Select a user</option>
-3 </select>
-```
 
-### 输入防抖
-
+## 输入防抖
 `debounce` 参数允许你在处理输入（例如耗时操作）之前指定一个延迟：
-
+```html
+<input v-model="msg" debounce="500">
 ```
-1 <input v-model="msg" debounce="500">
-```
 
-### 设置 Vue 应用
-
+# 设置 Vue 应用
 我们从构建一个带有某些标记的基础应用开始：
-
 ```html
 <!DOCTYPE html>
 <html>
@@ -7157,7 +6661,6 @@ vm.toggle === 'no'
   <title>Forms with Vue</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.4/css/bulma.min.css">
 </head>
-
 <body>
   <div class="container">
     <div class="section">
@@ -7167,8 +6670,7 @@ vm.toggle === 'no'
         <!-- 内容将在这里 -->
       </div>
     </div>
-  </div>>
-
+  </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.3.4/vue.min.js"></script>
   <script>
     new Vue({
@@ -7184,12 +6686,10 @@ vm.toggle === 'no'
 </html>
 ```
 
-### 使用 v-model 绑定输入值
-
+# 使用 v-model 绑定输入值
 使用 `v-model`，可以将输入元素绑定到实例数据。`name` 是我们定义的第一个属性，它是表单输入的初始值。
 
 文本输入示例：
-
 ```html
 <div class="field">
   <label class="label">Name</label>
@@ -7198,9 +6698,7 @@ vm.toggle === 'no'
   </div>
 </div>
 ```
-
 以及数据模型中的对应值：
-
 ```javascript
 data: {
   form : {
@@ -7208,9 +6706,7 @@ data: {
   }
 }
 ```
-
 为了查看表单对象的所有属性，我们可以添加一个结果区域：
-
 ```html
 <section id="results">
   <div class="box">
@@ -7224,9 +6720,7 @@ data: {
 ```
 
 文本域示例：
-
 它们的工作方式与普通输入框相同：
-
 ```html
 <div class="field">
   <label class="label">Message</label>
@@ -7235,9 +6729,7 @@ data: {
   </div>
 </div>
 ```
-
 以及数据模型中的对应值：
-
 ```javascript
 data: {
   form : {
@@ -7246,18 +6738,12 @@ data: {
   }
 }
 ```
-
 务必记住，双向绑定在 `textarea> form.message/textarea>` 的插值中不起作用。相反，请使用 `v-model` 指令。
 
-### 使用 v-model 指令处理选择框
-
+# 使用 v-model 指令处理选择框
 对于选择框，`v-model` 指令也可以轻松接入。所指定选项的值将与定义的模型同步。
-
-
-
-
 ```html
-…
+...
 <div class="field">
   <label class="label">咨询类型</label>
   <div class="control">
@@ -7271,11 +6757,9 @@ data: {
     </div>
   </div>
 </div>
-…
+...
 ```
-
 我们在上面的代码中使用了 `v-for` 指令来动态加载选项。这要求我们同时定义 Vue 实例中可访问的选项：
-
 ```javascript
 data: {
   form : {
@@ -7292,13 +6776,11 @@ data: {
   }
 }
 ```
-
 多选框遵循相同的步骤。另一方面，多选框选中的值被存储在一个数组中。
 
 示例：
-
 ```html
-…
+...
 <div class="field">
   <label class="label">LogRocket 用用例</label>
   <div class="control">
@@ -7311,191 +6793,106 @@ data: {
     </div>
   </div>
 </div>
-…
+...
 ```
 
 ## 结论
-
 在本章，我们学习了 Vue.js 表单和表单验证，包括它们是什么以及如何使用它们。
 
 # 参考文献
-
-1.  #learning, A. A., & Agile. (2021, 2 月 15 日). *使用零配置构建全栈 React 应用 - Agile Actors #learning*. Agile Actors #learning; [learningactors.com](http://learningactors.com). [`learningactors.com/build-a-full-stack-react-app-with-zero-configuration/`](https://learningactors.com)
-
-2.  @nirnejak. (n.d.). *使用 Vue.JS 的 7 个优势 | 渐进框架*. 7 Advantages of Using Vue.JS | The Progressive Framework; [www.inkoop.io](http://www.inkoop.io). 检索于 2022 年 7 月 11 日，[`www.inkoop.io/blog/7-advantages-of-using-vue-js/`](https://www.inkoop.io)
-
-3.  *27\. Setup (重用性与组合) - Vue.js 3 - W3cubDocs*. (n.d.). 27\. Setup (重用性与组合) - Vue.Js 3 - W3cubDocs; [docs.w3cub.com](http://docs.w3cub.com). 检索于 2022 年 7 月 11 日，[`docs.w3cub.com/vue∼3/guide/composition-api-setup.html`](https://docs.w3cub.com)
-
-4.  Adebayo-Oyetoro, A. (2019, 11 月 14 日). *在 Vue 中使用 JSX - LogRocket Blog*. LogRocket Blog; [blog.logrocket.com](http://blog.logrocket.com). [`blog.logrocket.com/using-jsx-with-vue/`](https://blog.logrocket.com)
-
-5.  admin. (2022, 1 月 8 日). *JavaScript 表单*. JavaScript 教程; [www.javascripttutorial.net](http://www.javascripttutorial.net). [`www.javascripttutorial.net/javascript-dom/javascript-form/`](https://www.javascripttutorial.net)
-
-6.  Amaechi, A. (2021, 2 月 4 日). *使用 CSS 样式 Vue.js 应用 - LogRocket Blog*. LogRocket Blog; [blog.logrocket.com](http://blog.logrocket.com). [`blog.logrocket.com/styling-a-vue-js-application-using-css/`](https://blog.logrocket.com)
-
-7.  Au-Yeung, J. (2020, 4 月 19 日). *Vue Router 路由程序化导航 | 作者 John Au-Yeung | JavaScript in Plain English*. Medium; [javascript.plainenglish.io](http://javascript.plainenglish.io). [`javascript.plainenglish.io/programmatic-navigation-of-vue-router-routes-288b81cc5516`](https://javascript.plainenglish.io)
-
-8.  Au-Yeung, J. (2020, 1 月 23 日). *Vue.js 基础：输入、事件和组件 | 作者 John Au-Yeung | Better Programming*. Medium; [betterprogramming.pub](http://betterprogramming.pub). [`betterprogramming.pub/vue-js-basics-inputs-events-and-components-1a874528e66a`](https://betterprogramming.pub)
-
-9.  Au-Yeung, J. (2021, 2 月 6 日). *如何在 Vue.js 中从 URL 获取查询参数? - The Web Dev*. The Web Dev; [thewebdev.info](http://thewebdev.info). [`thewebdev.info/2021/02/06/how-to-get-query-parameters-from-vue-js/`](https://thewebdev.info)
-
+1. #learning, A. A., & Agile. (2021, 2 月 15 日). *使用零配置构建全栈 React 应用 - Agile Actors #learning*. Agile Actors #learning; [learningactors.com](http://learningactors.com). [`learningactors.com/build-a-full-stack-react-app-with-zero-configuration/`](https://learningactors.com)
+2. @nirnejak. (n.d.). *使用 Vue.JS 的 7 个优势 | 渐进框架*. 7 Advantages of Using Vue.JS | The Progressive Framework; [www.inkoop.io](http://www.inkoop.io). 检索于 2022 年 7 月 11 日，[`www.inkoop.io/blog/7-advantages-of-using-vue-js/`](https://www.inkoop.io)
+3. *27. Setup (重用性与组合) - Vue.js 3 - W3cubDocs*. (n.d.). 27. Setup (重用性与组合) - Vue.Js 3 - W3cubDocs; [docs.w3cub.com](http://docs.w3cub.com). 检索于 2022 年 7 月 11 日，[`docs.w3cub.com/vue∼3/guide/composition-api-setup.html`](https://docs.w3cub.com)
+4. Adebayo-Oyetoro, A. (2019, 11 月 14 日). *在 Vue 中使用 JSX - LogRocket Blog*. LogRocket Blog; [blog.logrocket.com](http://blog.logrocket.com). [`blog.logrocket.com/using-jsx-with-vue/`](https://blog.logrocket.com)
+5. admin. (2022, 1 月 8 日). *JavaScript 表单*. JavaScript 教程; [www.javascripttutorial.net](http://www.javascripttutorial.net). [`www.javascripttutorial.net/javascript-dom/javascript-form/`](https://www.javascripttutorial.net)
+6. Amaechi, A. (2021, 2 月 4 日). *使用 CSS 样式 Vue.js 应用 - LogRocket Blog*. LogRocket Blog; [blog.logrocket.com](http://blog.logrocket.com). [`blog.logrocket.com/styling-a-vue-js-application-using-css/`](https://blog.logrocket.com)
+7. Au-Yeung, J. (2020, 4 月 19 日). *Vue Router 路由程序化导航 | 作者 John Au-Yeung | JavaScript in Plain English*. Medium; [javascript.plainenglish.io](http://javascript.plainenglish.io). [`javascript.plainenglish.io/programmatic-navigation-of-vue-router-routes-288b81cc5516`](https://javascript.plainenglish.io)
+8. Au-Yeung, J. (2020, 1 月 23 日). *Vue.js 基础：输入、事件和组件 | 作者 John Au-Yeung | Better Programming*. Medium; [betterprogramming.pub](http://betterprogramming.pub). [`betterprogramming.pub/vue-js-basics-inputs-events-and-components-1a874528e66a`](https://betterprogramming.pub)
+9. Au-Yeung, J. (2021, 2 月 6 日). *如何在 Vue.js 中从 URL 获取查询参数? - The Web Dev*. The Web Dev; [thewebdev.info](http://thewebdev.info). [`thewebdev.info/2021/02/06/how-to-get-query-parameters-from-vue-js/`](https://thewebdev.info)
 10. Bistolfi, N. (2021, 7 月 5 日). *在 Vue.js 中使用图片 - 完整指南 – Piio*. Use Images in Vue.js: A Complete Guide – Piio; [blog.piio.co](http://blog.piio.co). [`blog.piio.co/posts/how-to-use-images-in-vue-js`](https://blog.piio.co)
-
 11. Chaudhari, M. (2021, 8 月 16 日). *优化 Vue 应用：懒加载和代码分割 | 作者 Mayank Chaudhari | Medium*; [mayank-1513.medium.com](http://mayank-1513.medium.com). [`mayank-1513.medium.com/optimizing-vue-apps-lazy-loading-and-code-splitting-1036d275fd`](https://mayank-1513.medium.com)
-
 12. *动态路由匹配 | Vue Router*. (n.d.). Dynamic Route Matching | Vue Router; [v3.router.vuejs.org](http://v3.router.vuejs.org). 检索于 2022 年 7 月 11 日，[`v3.router.vuejs.org/guide/essentials/dynamic-matching`](https://v3.router.vuejs.org)
-
 13. Eluwande, Y. (2021, 1 月 1 日). *Vue.js 表单完整指南 - LogRocket Blog*. LogRocket Blog; [blog.logrocket.com](http://blog.logrocket.com). [`blog.logrocket.com/imperative-guide-to-forms-in-vue-js-2/`](https://blog.logrocket.com)
-
 14. *解释 Vue Context - 组合教程*. (n.d.). Explaining the Vue Context - Composition Tutorial; [learnvue.co](http://learnvue.co). 检索于 2022 年 7 月 11 日，[`learnvue.co/2021/06/explaining-the-vue-context-a-tutorial/`](https://learnvue.co)
-
 15. *表单输入绑定 — Vue.js*. (n.d.). Form Input Bindings — Vue.Js; [v2.vuejs.org](http://v2.vuejs.org). 检索于 2022 年 7 月 11 日，[`v2.vuejs.org/v2/forms`](https://v2.vuejs.org)
-
 16. *表单输入绑定 | Vue.js*. (n.d.). Form Input Bindings | Vue.Js; [vuejs.org](http://vuejs.org). 检索于 2022 年 7 月 11 日，[`vuejs.org/guide/essentials/forms`](https://vuejs.org)
-
 17. frankies. (n.d.). *懒加载 · vue-r-pdf*. Lazy Loading · Vue-r-Pdf; [frankies1.gitbooks.io](http://frankies1.gitbooks.io). 检索于 2022 年 7 月 11 日，[`frankies1.gitbooks.io/vue-r-pdf/content/en/advanced/lazy-loading.html`](https://frankies1.gitbooks.io)
-
 18. Fraser, D. (2018, 7 月 17 日). *使用 Nock 模拟 HTTP 请求。这是一篇关于如何……的文章 | 作者 Dominic Fraser | codeburst*. Medium; [codeburst.io](http://codeburst.io). [`codeburst.io/testing-mocking-http-requests-with-nock-48e3f164851`](https://codeburst.io)
-
 19. Galyamov, R. (2019, 7 月 21 日). *如何在 Vue.js 中通过路由程序化导航 — Renat Galyamov*. Renat Galyamov; [renatello.com](http://renatello.com). [`renatello.com/vue-js-navigate-programmatically/`](https://renatello.com)
-
 20. GARG, S. (2019, 12 月 31 日). *Vue.js/Nuxt.js 应用的 Context API | 作者 SHIV GARG | upGrad 技术*. Medium; [engineering.upgrad.com](http://engineering.upgrad.com). [`engineering.upgrad.com/context-api-for-vue-js-nuxt-js-applications-e4c984508bd1`](https://engineering.upgrad.com)
-
 21. *通过 JavaScript 获取表单名称*. (n.d.). Get Form Name via JavaScript; [www.devasking.com](http://www.devasking.com). 检索于 2022 年 7 月 11 日，[`www.devasking.com/issue/get-form-name-via-javascript`](https://www.devasking.com)
-
 22. Group, K. (2021, 3 月 15 日). *VueJS 如此受欢迎的 7 个理由 | Kofi Group*. [www.kofi-group.com](http://www.kofi-group.com). [`www.kofi-group.com/7-reasons-why-vuejs-is-so-popular/`](https://www.kofi-group.com)
-
 23. Gunjal, A. (2021, 7 月 3 日). *Context API。Context API 可用于共享…… | 作者 Amol Gunjal | Medium*; [amolbkgunjal.medium.com](http://amolbkgunjal.medium.com). [`amolbkgunjal.medium.com/context-api-ba43eed4c91`](https://amolbkgunjal.medium.com)
-
 24. *处理表单 - Vue.js*. (n.d.). Handling Forms - Vue.Js; [012.vuejs.org](http://012.vuejs.org). 检索于 2022 年 7 月 11 日，[`012.vuejs.org/guide/forms`](https://012.vuejs.org)
-
-
-
-
-
 25. Harrell, J. (2018, 11 月 6). *隐式状态共享：React 的 context API 与 Vue 中的 provide/inject - LogRocket Blog*. LogRocket Blog; [blog.logrocket.com](http://blog.logrocket.com). [https://blog.logrocket.com/implicit-state-sharing-reacts-context-api-provide-inject-in-vue-679062a50f05/]
-
 26. *如何在 Vue.js 中添加背景图片 | Reactgo*. (n.d.). Reactgo; [reactgo.com](http://reactgo.com). 检索于 2022 年 7 月 11 日，自 [https://reactgo.com/vue-background-image/]
-
 27. *如何在 Vue 单文件组件中导入和使用图片？* (n.d.). NewbeDEV; [newbedev.com](http://newbedev.com). 检索于 2022 年 7 月 11 日，自 [https://newbedev.com/how-to-import-and-use-image-in-a-vue-single-file-component]
-
 28. *如何使用 Vue.js 路由来创建更好的用户体验*。(2018, 6 月 28 日)。 [freeCodeCamp.Org](http://freeCodeCamp.Org); [www.freecodecamp.org](http://www.freecodecamp.org). [https://www.freecodecamp.org/news/how-to-use-routing-in-vue-js-to-create-a-better-user-experience-98d225bbcdd9/]
-
 29. [https://nx-designs.ch/agile_downloads/public/Routing%20in%20vue.js.pdf]
-
 30. [https://www.spaceo.ca/blog/vue-js-pros-and-cons/]
-
 31. *在 Vue 应用中实现懒加载*. (2020, 6 月 19 日). 在 Vue 应用中实现懒加载; [academind.com](http://academind.com). [https://academind.com/tutorials/vue-lazy-loading]
-
 32. *React & Vue 中的隐式状态共享 | Jonathan Harrell*. (n.d.). React & Vue 中的隐式状态共享 | Jonathan Harrell; [www.jonathan-harrell.com](http://www.jonathan-harrell.com). 检索于 2022 年 7 月 11 日，自 [https://www.jonathan-harrell.com/blog/implicit-state-sharing-in-react-vue/]
-
 33. intigriti. (2021, 11 月 30 日). *不安全的直接对象引用 (IDOR) - Intigriti*. Intigriti; [blog.intigriti.com](http://blog.intigriti.com). [https://blog.intigriti.com/hackademy/idor/]
-
 34. *介绍 | Testing Library*. (2022, 2 月 28 日). 介绍 | Testing Library; [testing-library.com](http://testing-library.com). [https://testing-library.com/docs/vue-testing-library/intro/]
-
 35. *JavaScript 表单验证*. (n.d.). JavaScript 表单验证; [www.w3schools.com](http://www.w3schools.com). 检索于 2022 年 7 月 11 日，自 [https://www.w3schools.com/JS//js_validation.asp]
-
 36. *JavaScript 表单验证*. (n.d.). JavaScript 表单验证; [daks.me](http://daks.me). 检索于 2022 年 7 月 11 日，自 [https://daks.me/js_validation.php]
-
 37. *JSX: 你应该探索的在 Vue JS 中使用它的优势*。(2020, 7 月 17 日)。 软件外包公司; [www.arrowhitech.com](http://www.arrowhitech.com). [https://www.arrowhitech.com/jsx-the-benefits-of-using-it-with-vue-js/]
-
 38. Khosravi, K. (2021, 5 月 28 日). *使用 styled-components 为 Vue.js 主题 - LogRocket Blog*. LogRocket Blog; [blog.logrocket.com](http://blog.logrocket.com). [https://blog.logrocket.com/theming-vue-js-with-styled-components/]
-
 39. Kopachovets, O. (2021, 7 月 22 日). *Vue.js 的优缺点：为什么为你的应用选择它？ | ProCoders*. ProCoders; [procoders.tech](http://procoders.tech). [https://procoders.tech/blog/advantages-of-vue-js/]
-
 40. LaptrinhX. (2018, 7 月 16 日). *使用 Nock 模拟 HTTP 请求 | LaptrinhX*. 使用 Nock 模拟 HTTP 请求 | LaptrinhX; [laptrinhx.com](http://laptrinhx.com). [https://laptrinhx.com/mocking-http-requests-with-nock-2410543980/]
-
 41. LaptrinhX. (2021, 2 月 4 日). *使用 CSS 为 Vue.js 应用设置样式 | LaptrinhX*. 使用 CSS 为 Vue.js 应用设置样式 | LaptrinhX; [laptrinhx.com](http://laptrinhx.com). [https://laptrinhx.com/styling-vue-js-application-using-css]
-
 42. *使用 CSS 为 Vue.js 应用设置样式 | LaptrinhX*. 使用 CSS 为 Vue.js 应用设置样式 | LaptrinhX; [laptrinhx.com](http://laptrxx.com). [`trtrx.com//-----------
-
 43.....   ....... ( ( ( (.....    . | | | | | Profile; [newbed..com`](http://newbedharma.com). 检索于 2022 年 7 月 11 日，自 [https://newbedev.com/lazy-and-
-
 -
-
 ]
-
 44. *路由加载 | 路由 ( (n.d  路由加载 | 路由; [v3.router.com](http://v3.router.com). 检索于 2022 年 7 月 11 日，自 [`v3.router.com/lazy-
-
-45. Lotanna, N. (2021, 4 月 15 日). *懒加载和代码分割 - LogRocket Blog*. LogRocket Blog; [blog.logrocket.com`](http://blog.logrocket.com). [`blog.logrocket.com/lazy-components-
-
-46. nock. (2022). *GitHub - nock: HTTP 模拟*. [github.com`](http://github.com). [https://github.com/nock]
-
+45. Lotanna, N. (2021, 4 月 15 日). *懒加载和代码分割 - LogRocket Blog*. LogRocket Blog; [blog.logrocket.com](http://blog.logrocket.com). [`blog.logrocket.com/lazy-components-
+46. nock. (2022). *GitHub - nock: HTTP 模拟*. [github.com](http://github.com). [https://github.com/nock]
 47. Oza, H. (n.d.). *在- ( 需求- 2022 年的深度需求 - 深度需求; [www.hyperinfosystem.com](http://www.hyperinfosystem.com). 检索于 2022 年 7 月 11 日，自 [`www.hyperinfosystem.com/demand-
-
-48. *属性 | Vue.js*. (n.d.). 属性 | Vue.js; [vuejs.org`](http://vuejs.org). 检索于 2022 年 7 月 11 日，自 [https://vuejs.org/guide/props]
-
+48. *属性 | Vue.js*. (n.d.). 属性 | Vue.js; [vuejs.org](http://vuejs.org). 检索于 2022 年 7 月 11 日，自 [https://vuejs.org/guide/props]
 49. *r/node - 我们在梗，但这些职位存在（Vue 还没有 7 年）？！*. (n.d.). Reddit; [www.reddit.com](http://www.reddit.com). [`www.reddit.com/r/node/comments/sf5d29/we_meme_but_these_kinds-of
-
-50. Sanchis, J. (2020, 2 月 19 日). *Vue.js，第 1 个强大的前端开发工具 - Stratton Apps*. Stratton Apps; [strattonapps.com`](http://strattonapps.com). [https://strattonapps.com/web-development/vuejs/vuejs-js-future-of-web/]
-
-
-
-
-
+50. Sanchis, J. (2020, 2 月 19 日). *Vue.js，第 1 个强大的前端开发工具 - Stratton Apps*. Stratton Apps; [strattonapps.com](http://strattonapps.com). [https://strattonapps.com/web-development/vuejs/vuejs-js-future-of-web/]
 55. *使用 CSS 样式 Vue 组件 - 学习 Web 开发 | MDN*.. (2022 年 5 月 23 日). 使用 CSS 样式 Vue 组件 - 学习 Web 开发 | MDN; [developer.mozilla.org](http://developer.mozilla.org). [`developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Client-side_JavaScript_frameworks/Vue_styling`](https://developer.mozilla.org)
-
 56. *测试 — Vue.js*. (无日期). 测试 — Vue.Js; [v2.vuejs.org](http://v2.vuejs.org). 检索于 2022 年 7 月 11 日，来自 [`v2.vuejs.org/v2/guide/testing.html`](https://v2.vuejs.org)
-
 57. *使用 Vue Testing Library 测试 Vue 应用 — Smashing Magazine*. (2020 年 11 月 24 日). Smashing Magazine; [www.smashingmagazine.com](http://www.smashingmagazine.com). [`www.smashingmagazine.com/2020/11/vue-applications-vue-testing-library/`](https://www.smashingmagazine.com)
-
 58. *Vue.js 的优缺点 | AltexSoft*. (2019 年 9 月 11 日). AltexSoft; [www.altexsoft.com](http://www.altexsoft.com). [`www.altexsoft.com/blog/engineering/pros-and-cons-of-vue-js/`](https://www.altexsoft.com)
-
 59. *前 7 个实用的 JavaScript 开源框架 - Corporate Today*. (2020 年 7 月 12 日). Corporate Today; [corporatetoday.org](http://corporatetoday.org). [`corporatetoday.org/top-javascript-open-source-framework/`](https://corporatetoday.org)
-
 60. *理解 React Context API*. (2021 年 5 月 6 日). Telerik Blogs; [www.telerik.com](http://www.telerik.com). [`www.telerik.com/blogs/understand-react-context-api`](https://www.telerik.com)
-
 61. *配合 Vuex 使用 | Vue Test Utils*. (无日期). 配合 Vuex 使用 | Vue Test Utils; [v1.test-utils.vuejs.org](http://v1.test-utils.vuejs.org). 检索于 2022 年 7 月 11 日，来自 [`v1.test-utils.vuejs.org/guides/using-with-vuex.html`](https://v1.test-utils.vuejs.org)
-
 62. *v-if 与 v-show - Vue 条件渲染*. (无日期). V-If 对比 v-Show - Vue 条件渲染; [learnvue.co](http://learnvue.co). 检索于 2022 年 7 月 11 日，来自 [`learnvue.co/2021/05/v-if-vs-v-show-vue-conditional-rendering/`](https://learnvue.co)
-
 63. *Vue | 印度最好的 Vue 开发公司*. (2022 年 2 月 11 日). Pebery Technologies; [peberytechnologies.com](http://peberytechnologies.com). [`peberytechnologies.com/technologies-vue/`](https://peberytechnologies.com)
-
 64. *Vue js – uilayouts*. (无日期). Vue Js – Uilayouts; [uilayouts.com](http://uilayouts.com). 检索于 2022 年 7 月 11 日，来自 [`uilayouts.com/category/vue-js/`](https://uilayouts.com)
-
 65. *vue js 开发者*. (2020 年 10 月 6 日). 堕胎改革中的人性与平等 IOM; [www.hearcampaign.im](http://www.hearcampaign.im). [`www.hearcampaign.im/site/vue-js-developed-by-42326f`](http://www.hearcampaign.im)
-
 66. *Vue 上下文参数说明 — 组合 API 教程*. (无日期). [ICHI.PRO](http://ICHI.PRO); [ichi.pro](http://ichi.pro). 检索于 2022 年 7 月 11 日，来自 [`ichi.pro/vue-kontekisuto-hikisu-no-setsumei-konpojishon-api-chu-toriaru-147676481601998`](https://ichi.pro)
-
 67. *Vue.js - CodeDocs*. (2019 年 7 月 1 日). Vue.Js - CodeDocs; [codedocs.org](http://codedocs.org). [`codedocs.org/what-is/vue-js`](https://codedocs.org)
-
 68. *vue.js - 在 vue 中何时何时使用渲染函数？ - Stack Overflow*. (2020 年 6 月 23 日). Stack Overflow; [stackoverflow.com](http://stackoverflow.com). [`stackoverflow.com/questions/62527036/when-do-you-use-the-render-function-in-vue`](https://stackoverflow.com)
-
 69. *Vue.js 条件渲染*. (无日期). Vue.Js 条件渲染; [linuxhint.com](http://linuxhint.com). 检索于 2022 年 7 月 11 日，来自 [`linuxhint.com/vue-js-conditional-rendering/`](https://linuxhint.com)
-
 70. *Vue.js 方法 - Geeksfor*. (2020 年 9 月 13 日). Geeksfor; [www.geforgeeks.org](http://www.geforgeeks.org). [`www.geforgeeks.org/vue-js-methods/`](https://www.geforgeeks.org)
-
 71. *VueJS - 路由*. (无日期). VueJS - 路由; [tutorialoint.com](http://tutorialoint.com). 检索于 2022 年 7 月 11 日，来自 [`tutorialoint.com/vuejs/routing`](https://tutorialoint.com)
-
 72. vuejs (无日期). `v2.vuejs.org/components-props.md` 在 master `vuejs/v2.vuejs.org`. GitHub; 检索于 2022 年 7 月 11 日，来自 [`github.com/vuejs/vuejs.org/blob/master/v2/guide/components.md`](https://github.com)
-
 73. vuejs (无日期). `v2.vuejs.org/routing.md` 在 master `vuejs/v2.vuejs.org`. GitHub; 检索于 2022 年 7 月 11 日，来自 [`github.com/vuejs/vuejs.org/blob/master/v2/guide/routing.md`](https://github.com)
-
 74. yaoningvital. (2019 年 4 月 21 日). *Vue - 绑定 · Issue #122 · yaoningvital/blog*. GitHub; [github.com](http://github.com). [`github.com/yaoningvital/blog/issues/122`](https://github.com)
-
 75. Yoon, J.-Y. (2021 年 12 月 14 日). *Focal Adhesion | SpringerLink*. Focal Adhesion | SpringerLink; [link.springer.com](http://link.springer.com). [`link.springer.com/chapter/10.1007/978-3-030-83696_7`](https://link.springer.com)
-
 76. *创建 Vue JSX: 组件、渲染和其他方法*. (2018 年 3 月 30 日). 创建 Vue JSX: 组件、渲染和其他方法; [webformyself.com](http://webformyself.com). [`webformyself.com/ispolovanie-jsx-s-vue-i-zachem-eto-nuzno/`](https://webformyself.com)
 
 # 索引
 
 ## A
-
 * 折叠页头部, 171
 * 折叠项, 171
 * 折叠面板, 171
-* 激活类 (Active-class), 125
+* 激活类 (`Active-class`), 125
 * `addEventListener()` 函数, 209
-* 记录选项 (afterRecord option), 187
+* 记录选项 (`afterRecord option`), 187
 * 阿里巴巴, 16
 * Angular, 2–3, 9
 * 动画过渡, 118–119
 * `App.vue`, 118–119
-* 添加 (Append), 124–125
+* 添加 (`Append`), 124–125
 * 数组语法, 87
 * 属性继承, 禁用, 49–50
 
 ## B
-
 * Vue.js 的优势, 8
     * 作为工具, 10
     * 兼者之长, 9
@@ -7520,11 +6917,6 @@ data: {
         * 灵活性, 20
         * 强大的工具, 20–21
         * 简单集成, 19–20
-
-
-
-
-
 - 渐进性, 9
 - 响应式双向数据绑定, 14
 - 响应式, 12
@@ -7538,7 +6930,6 @@ data: {
 - 虚拟 DOM 渲染与性能, 14
 
 ## C
-
 - CamelCase 与 kebab-case, 42
 - 将值转换为数字, 227
 - CBA, *参见* 基于组件的架构
@@ -7631,7 +7022,6 @@ data: {
 - Vue 组件的 CSS 样式, 70
 
 ## D
-
 - 调试 React 应用, 176
 - Detail.vue 组件, 117–118
 - Details.vue, 116–117
@@ -7640,11 +7030,6 @@ data: {
     - 缺乏经验开发者, 18
     - 大型项目缺乏资金支持, 19
     - 缺乏插件, 18
-
-
-
-
-
 - 缺乏扩展性，18
 - 缺乏对大型项目的支持，17
 - 语言障碍，16–17
@@ -7711,8 +7096,8 @@ data: {
     - 基础用法，220–223
     - 绑定到表达式，228
     - 转换为数字，227
-    -   CSS 选择器，220
-    -   HTML 属性验证，220
+    - CSS 选择器，220
+    - HTML 属性验证，220
     - 数据验证，219
     - 使用 `v-for` 动态渲染选项，223–224
     - 动态选择选项，228
@@ -7734,7 +7119,7 @@ data: {
 - JavaScript 语法扩展 (JSX)，5, 23
     - 配置 Vue 使用，26–27
     - 导入 Vue JSX 组件，28
-    - 让 JSX  typescript 工作，28–29
+    - 让 JSX typescript 工作，28–29
     - 前提条件，24–26
     - 在渲染 函数中，28
 - JSX，参见 JavaScript 语法扩展
@@ -7776,15 +7161,9 @@ data: {
     - `.trim`226
     - 组件的 `v-model`，226
 - MVC 架构，参见 模型-视图-控制器架构
-
-
-
-
-
 - MVVM 架构，*参见* Model-View-ViewModel 架构
 
 ## N
-
 - `NavbarComponent`, 38
 - `Nock.back`, 使用, 186
     * 操作 (actions), 模拟 (mocking), 188–191
@@ -7794,7 +7173,6 @@ data: {
 - `.number`, 225
 
 ## O
-
 - 对象扩展运算符 (Object spread operator), 53
 - 对象语法 (Object syntax), 85–86
 - 单向数据流 (One-way data flow), 45–46
@@ -7803,7 +7181,6 @@ data: {
 - 过度灵活性 (Over flexibility), 风险, 17
 
 ## P
-
 - 插件 (Plugins), 缺乏, 18
 - Vue.js 的贫瘠的包 (Poverty pack), 18
 - 生产环境 React 应用, 完全可见性, 176–177
@@ -7844,7 +7221,6 @@ data: {
 - Provider 组件 (Provider component), 163
 
 ## R
-
 - React, 2–3
 - React Context API 工作 (React Context API, working), 160
 - 响应式双向绑定 (Reactive two-way data binding), 14
@@ -7887,7 +7263,6 @@ data: {
     * 在路由内部使用参数 (using the inside the routers), 112–116
 
 ## S
-
 - 可扩展性 (Scalability), 缺乏, 18
 - 作用域样式 (Scoped styles), 添加, 76–80
 - 设置 (Setup), 29
@@ -7906,11 +7281,6 @@ data: {
 - 状态 (State), 50
     * 组件拥有本地状态 (components having local state), 53
     * `mapState` 辅助函数 (mapState helper), 52–53
-
-
-
-
-
 - 对象展开运算符，53
 - 单状态树，50–52
 - 静态默认选项，230
@@ -7919,7 +7289,6 @@ data: {
 - 提交事件处理器，217–218
 
 ## T
-
 - `<template>` 元素带有 `v-if` 的条件组，65–66
 - 模板（Templates），用法，32–33
 - 此选项，用法，34
@@ -7934,7 +7303,6 @@ data: {
     - 非 prop 属性，48–49
 
 ## U
-
 - UI，参见用户界面 (User interface)
 - 单元测试，13
     - 选择你的框架，198–199
@@ -7945,7 +7313,6 @@ data: {
 - 用户界面（UI），1
 
 ## V
-
 - `validateEmail()` 函数，216
 - `V-else`，66
 - `V-else-if`，68–69
@@ -7994,11 +7361,8 @@ data: {
     - 分别测试 getters、mutations 和 actions，195–196
 
 ## W
-
 - Web 开发框架的风格，88
 - Webpack import 语句，147–148
 
 ## X
-
 - 小米 (Xiaomi)，16
-

@@ -1,8 +1,5 @@
+
 # 编码学习指南：HTML、CSS和JavaScript实战——构建网站、应用与游戏
-
-
-
-
 
 # 引言
 
@@ -19,8 +16,6 @@
 # 关于作者
 
 我从事各种语言的编码工作已有近四十年。我担任 IT 总监一职，并在总监级别的职位上工作了近十年。
-
-
 
 ## 泡一杯茶
 
@@ -46,7 +41,7 @@
 
 每课都以易于遵循的步骤进行编排。请参阅以下示例：
 
-### 课程目标：
+### 课程目标
 
 编写一个略带风格的"Hello, World"程序。
 
@@ -56,7 +51,7 @@
 
 ### 步骤1 - 约定示例
 
-打开一个合适的代码编辑器。可以是记事本、Notepad++、Visual Studio Code（推荐）或类似的工具....
+打开一个合适的代码编辑器。可以是记事本、Notepad++、`Visual Studio Code`（推荐）或类似的工具....
 
 ![](img/159b1f3f81255361f46fe5a11415ff6e_10_0.png)
 
@@ -78,7 +73,7 @@
 
 URL的第一部分称为协议标识符（**HTTPS**），它指示要使用的协议，第二部分称为资源名称（**google.com**），它指定资源所在的IP地址或域名。
 
-```
+```html
 <!DOCTYPE html>
 <html>
 <head>
@@ -97,6 +92,7 @@ URL的第一部分称为协议标识符（**HTTPS**），它指示要使用的�
 请注意，每课的所有代码均可通过支持网站获取，以易于下载的文件形式提供。直接链接在每课末尾提供。
 
 > **自动换行：**
+>
 > 一行需要更多空间的文本会换行并显示在下方的额外行上。
 
 ## HELLO, WORLD!
@@ -111,15 +107,15 @@ URL的第一部分称为协议标识符（**HTTPS**），它指示要使用的�
 
 **步骤1 - 选择一个合适的代码编辑器**
 
-打开一个合适的代码编辑器。可以是记事本、Notepad++、Visual Studio Code（推荐）或类似的工具。
+打开一个合适的代码编辑器。可以是记事本、Notepad++、`Visual Studio Code`（推荐）或类似的工具。
 
 **步骤2 - 设置您的文件结构**
 
 在您的桌面上创建一个新文件夹，命名为"hello world"。
 
-在其中，创建另一个名为"css"的文件夹，一个名为"js"的文件夹，最后创建一个名为"images"的文件夹。接下来，打开您选择的代码编辑器，创建一个新文件，并将其保存为空文件，文件名为"hello.html"，存放在您的"hello world"文件夹中。
+在其中，创建另一个名为"css"的文件夹，一个名为"js"的文件夹，最后创建一个名为"images"的文件夹。接下来，打开您选择的代码编辑器，创建一个新文件，并将其保存为空文件，文件名为`hello.html`，存放在您的"hello world"文件夹中。
 
-如果您正确地遵循了这些步骤，您应该拥有以下文件结构 - 一个名为"hello world"的文件夹，一个文件（hello.html）和三个文件夹：
+如果您正确地遵循了这些步骤，您应该拥有以下文件结构 - 一个名为"hello world"的文件夹，一个文件（`hello.html`）和三个文件夹：
 
 ![](img/159b1f3f81255361f46fe5a11415ff6e_14_0.png)
 
@@ -127,11 +123,11 @@ URL的第一部分称为协议标识符（**HTTPS**），它指示要使用的�
 
 ### 步骤3 - 定义您的HTML结构
 
-用最简单的描述，HTML布局可以如下图所示。将代码完全按照您看到的样子输入到您的"hello.html"文件中，然后点击文件菜单中的"保存"或按CTRL和S键。
+用最简单的描述，HTML布局可以如下图所示。将代码完全按照您看到的样子输入到您的`hello.html`文件中，然后点击文件菜单中的"保存"或按`CTRL`和`S`键。
 
-> 为了更方便地保存，请使用快捷键 - Windows系统为CTRL和S，Mac系统为Command和S。
+> 为了更方便地保存，请使用快捷键 - Windows系统为`CTRL`和`S`，Mac系统为`Command`和`S`。
 
-```
+```html
 <html>
     <head>
     </head>
@@ -140,15 +136,15 @@ URL的第一部分称为协议标识符（**HTTPS**），它指示要使用的�
 </html>
 ```
 
-为了告诉浏览器我们想显示一个HTML页面，我们以<html>开始标记。
+为了告诉浏览器我们想显示一个HTML页面，我们以`<html>`开始标记。
 
-接下来，我们有<head>。在<head>和</head>的开闭标签内，我们放置指向外部文件的链接，例如CSS和JavaScript，此外我们还可以包含元数据，并在需要时添加页面样式等等。
+接下来，我们有`<head>`。在`<head>`和`</head>`的开闭标签内，我们放置指向外部文件的链接，例如CSS和JavaScript，此外我们还可以包含元数据，并在需要时添加页面样式等等。
 
-最后，我们有<body>。在<body>和</body>标签内，我们放置网页的主要内容。
+最后，我们有`<body>`。在`<body>`和`</body>`标签内，我们放置网页的主要内容。
 
-接下来，按以下方式更新您的"hello.html"文件：
+接下来，按以下方式更新您的`hello.html`文件：
 
-```
+```html
 <html>
 
 <head>
@@ -164,13 +160,13 @@ URL的第一部分称为协议标识符（**HTTPS**），它指示要使用的�
 
 好的，您已经认出了HTML文件结构。那么，我们还有其他什么？
 
-```
+```html
 <title>Hello</title>
 ```
 
 这设置了页面标题，可以在浏览器的页面标签上查看。
 
-```
+```html
 <link rel="stylesheet" href="css/app.css">
 ```
 
@@ -178,7 +174,7 @@ URL的第一部分称为协议标识符（**HTTPS**），它指示要使用的�
 
 注意！如果您使用的是记事本，您的代码将不会进行语法高亮显示。相反，它将以纯黑色文本显示。
 
-现在，您可以双击您的"hello.html"文件，在默认浏览器中打开它。您将看到一个白色页面，其中<h1>标题"Hello, World!"以浏览器默认字体显示。到目前为止，它很朴素，坦率地说相当单调，但我们还远未完成。
+现在，您可以双击您的`hello.html`文件，在默认浏览器中打开它。您将看到一个白色页面，其中`<h1>`标题"Hello, World!"以浏览器默认字体显示。到目前为止，它很朴素，坦率地说相当单调，但我们还远未完成。
 
 ![](img/159b1f3f81255361f46fe5a11415ff6e_16_0.png)
 
@@ -192,11 +188,11 @@ URL的第一部分称为协议标识符（**HTTPS**），它指示要使用的�
 
 CSS（层叠样式表）如何与我们的HTML标记协同工作？
 
-正如我们上面所说，CSS为格式化HTML页面的布局和样式提供了一套规则。这些规则通过id、class或关键字选择器来应用。CSS选择器是CSS规则的第一部分。它是一个元素和其他术语的模式，告诉浏览器应该选择哪些HTML元素，以便将规则内的CSS属性值应用于它们。如果这听起来像天书，现在不必太担心。一切都会变得清晰明了。
+正如我们上面所说，CSS为格式化HTML页面的布局和样式提供了一套规则。这些规则通过`id`、`class`或关键字选择器来应用。CSS选择器是CSS规则的第一部分。它是一个元素和其他术语的模式，告诉浏览器应该选择哪些HTML元素，以便将规则内的CSS属性值应用于它们。如果这听起来像天书，现在不必太担心。一切都会变得清晰明了。
 
-现在创建一个名为app.css的新文件，并将其保存在"css"文件夹中。然后添加以下代码：
+现在创建一个名为`app.css`的新文件，并将其保存在"css"文件夹中。然后添加以下代码：
 
-```
+```css
 html, body {
     margin: 0px;
     background-image: linear-gradient(to bottom right, #95d9f9, #ae4bc3);
@@ -207,17 +203,17 @@ h1 {
 }
 ```
 
-保存文件。(CTRL + S)
+保存文件。(`CTRL + S`)
 
-目前，我们的网页上只有两个元素。即h1标题和页面的html / body。如果您现在查看网页并刷新它，您将看到这两个元素已经应用了样式规则。
+目前，我们的网页上只有两个元素。即`h1`标题和页面的`html / body`。如果您现在查看网页并刷新它，您将看到这两个元素已经应用了样式规则。
 
 ![](img/159b1f3f81255361f46fe5a11415ff6e_17_0.png)
 
 背景和字体已设置颜色，并且字体已更改。让我们仔细看看。
 
-首先，我们可以看到边距设置为 0 像素。此命令意味着所有边距都设置为零。边距可以使用 margin-left、margin-right、margin-top 和 margin-bottom 单独设置，也可以使用组合边距命令设置。以这种方式使用时，您仍然可以设置独立的值，如下所示：
+首先，我们可以看到边距设置为 0 像素。此命令意味着所有边距都设置为零。边距可以使用 `margin-left`、`margin-right`、`margin-top` 和 `margin-bottom` 单独设置，也可以使用组合边距命令设置。以这种方式使用时，您仍然可以设置独立的值，如下所示：
 
-```
+```css
 margin: 0px 0px 0px 0px;
 ```
 
@@ -225,15 +221,15 @@ margin: 0px 0px 0px 0px;
 
 换句话说，框架将紧贴屏幕的角落渲染到用户的视图中。
 
-接下来，我们使用线性渐变来设置 body 元素的样式。它设置为向右下角，这意味着渐变将从页面的左上角渲染到右下角。在逗号之后，我们有 #95d9f9，这是浅蓝色的十六进制代码，最后我们有 #ae4bc3，这是紫色的十六进制代码。
+接下来，我们使用线性渐变来设置 `body` 元素的样式。它设置为向右下角，这意味着渐变将从页面的左上角渲染到右下角。在逗号之后，我们有 `#95d9f9`，这是浅蓝色的十六进制代码，最后我们有 `#ae4bc3`，这是紫色的十六进制代码。
 
-接下来，我们设置了 h1 标签的样式。这意味着页面上位于 `<h1>` 和 `</h1>` 之间的所有内容都将使用设置的规则进行样式化。
+接下来，我们设置了 `h1` 标签的样式。这意味着页面上位于 `<h1>` 和 `</h1>` 之间的所有内容都将使用设置的规则进行样式化。
 
-首先我们设置了字体颜色。注意 color 在代码中是用美式拼写拼写的。颜色使用更深的蓝色设置，十六进制代码为：#1b95cd；
+首先我们设置了字体颜色。注意 `color` 在代码中是用美式拼写拼写的。颜色使用更深的蓝色设置，十六进制代码为：`#1b95cd`；
 
-> 💡 颜色可以通过三种方式之一进行设置。一种是如示例所示的十六进制代码，第二种是 RGB 代码，第三种，某些颜色可以通过名称设置。例如，red、blue、green。在本书中，我们将使用十六进制代码以及 RGB 和 RGBA 代码，因为它们能对输出提供更大的控制。
+> 💡 颜色可以通过三种方式之一进行设置。一种是如示例所示的十六进制代码，第二种是 RGB 代码，第三种，某些颜色可以通过名称设置。例如，`red`、`blue`、`green`。在本书中，我们将使用十六进制代码以及 RGB 和 RGBA 代码，因为它们能对输出提供更大的控制。
 
-其次，我们将字体从默认更改为 Tahoma, sans-serif。大多数人通过在文字处理应用程序等中的使用会熟悉这种字体。sans-serif 仅仅是无衬线的意思。衬线是某些字体具有的装饰性边缘。在某些字体中，轻微的投影会结束字母的笔画。例如 Times New Roman。
+其次，我们将字体从默认更改为 `Tahoma, sans-serif`。大多数人通过在文字处理应用程序等中的使用会熟悉这种字体。`sans-serif` 仅仅是无衬线的意思。衬线是某些字体具有的装饰性边缘。在某些字体中，轻微的投影会结束字母的笔画。例如 `Times New Roman`。
 
 好的，让我们再提升几个档次。
 
@@ -241,9 +237,9 @@ margin: 0px 0px 0px 0px;
 
 由于网站旨在全球范围内可用，让我们用几种语言说“你好”，以使其更具文化性和多样性。
 
-编辑您的 ‘hello.html’ 文件并添加以下代码。
+编辑您的 `hello.html` 文件并添加以下代码。
 
-```
+```html
 <h1 class="GB"> Hello </h1>
 <h1 class="ES"> Hola </h1>
 <h1 class="FR"> Bonjour </h1>
@@ -260,7 +256,7 @@ margin: 0px 0px 0px 0px;
 
 替换：
 
-```
+```html
 <h1>Hello World!</h1>
 ```
 
@@ -280,9 +276,9 @@ margin: 0px 0px 0px 0px;
 
 JavaScript 函数是设计用于执行特定任务的代码块。JavaScript 函数在被调用（invoked/called）时执行。
 
-创建一个名为 app.js 的新文件并将其保存在 ‘js’ 文件夹中。然后输入以下代码。
+创建一个名为`app.js`的新文件并将其保存在 `js` 文件夹中。然后输入以下代码。
 
-```
+```javascript
 //Generate salutations
 //t - top, l - left, c - colour, s - font-size, z - z-index, id - class
 
@@ -302,7 +298,7 @@ sals('35%', '60%', 'green', '170px', '17', "IT");
 sals('54%', '20%', 'orange', '170px', '16', "GE");
 ```
 
-```
+```javascript
 sals('54%', '35%', 'yellow', '100px', '15', 'JP');
 sals('10%', '55%', 'grey', '80px', '14', 'RU');
 sals('27%', '21%', 'lightgrey', '100px', '13', 'KO');
@@ -312,24 +308,24 @@ sals('47%', '11%', 'lightblue', '115px', '10', 'HE');
 sals('27%', '31%', 'lightgreen', '185px', '9', 'SW');
 ```
 
-我们需要将此脚本连接到 ‘hello.html’ 文件中的模板。按如下方式编辑它：
+我们需要将此脚本连接到 `hello.html` 文件中的模板。按如下方式编辑它：
 
 在 `</body>` 标签内部，添加以下代码行：
 
-```
+```html
 <script src="js/app.js"></script>
 ```
 
 那么，让我们稍微谈谈这段 JavaScript 代码在做什么。
 
-```
+```javascript
 //Generate salutations
 //t - top, l - left, c - colour, s - font-size, z - z-index, id - class
 ```
 
-这部分代码是注释，以便您在重新访问时记住代码的用途。您可以在 JS 中任何文本前使用 // 双斜杠注释掉单行，也可以使用 /* 作为开始和 */ 作为结束来注释多行，如下所示：
+这部分代码是注释，以便您在重新访问时记住代码的用途。您可以在 JS 中任何文本前使用 `//` 双斜杠注释掉单行，也可以使用 `/*` 作为开始和 `*/` 作为结束来注释多行，如下所示：
 
-```
+```javascript
 /* Generate salutations
 t - top, l - left, c - colour, s - font-size, z - z-index, id - class */
 ```
@@ -338,9 +334,9 @@ t - top, l - left, c - colour, s - font-size, z - z-index, id - class */
 
 我在这里记录了每个函数参数的含义。我们可以向每个参数传递数据，以在函数内部使用。
 
-接下来，我们有 sals（salutations 的缩写）函数本身。
+接下来，我们有 `sals`（salutations 的缩写）函数本身。
 
-```
+```javascript
 function sals(t, l, c, s, z, id){
     var sal = document.getElementsByClassName(id);
     sal[0].style.top = t;
@@ -351,35 +347,35 @@ function sals(t, l, c, s, z, id){
 }
 ```
 
-好的，这里的第一行代码打开了我们命名为 sals 的函数，并传递了参数 t、l、c、s、z 和 id。所有这些都由这一行代码完成。
+好的，这里的第一行代码打开了我们命名为 `sals` 的函数，并传递了参数 `t`、`l`、`c`、`s`、`z` 和 `id`。所有这些都由这一行代码完成。
 
-```
+```javascript
 function sals(t, l, c, s, z, id){
 ```
 
 在函数的末尾，我们用花括号关闭它。
 
-```
+```javascript
 }
 ```
 
-在函数内部，我们的第一行代码创建了一个名为 sal 的变量。我们的变量保存一个 id 标签，该标签与我们在 ‘hello.html’ 文件中给出的类名相关联。
+在函数内部，我们的第一行代码创建了一个名为 `sal` 的变量。我们的变量保存一个 `id` 标签，该标签与我们在 `hello.html` 文件中给出的类名相关联。
 
-```
+```html
 <h1 class="GB"> Hello </h1>
 ```
 
-在这里您可以看到类名关联的第一部分，其中代码的 class=”GB” 部分用于将我们的 CSS 和 JS 代码归因于我们的 HTML 标记。
+在这里您可以看到类名关联的第一部分，其中代码的 `class="GB"` 部分用于将我们的 CSS 和 JS 代码归因于我们的 HTML 标记。
 
-因此，本质上，这行代码的意思是连接到 id 参数给出的类。
+因此，本质上，这行代码的意思是连接到 `id` 参数给出的类。
 
-下一行代码将顶部 CSS 样式更改为参数 t 中给出的新值。
+下一行代码将顶部 CSS 样式更改为参数 `t` 中给出的新值。
 
-```
+```javascript
 sal[0].style.top = t;
 ```
 
-函数开放和关闭花括号 { 和 } 内的每一行代码都会更改给定参数的特定样式，如我们的注释所示。
+函数开放和关闭花括号 `{` 和 `}` 内的每一行代码都会更改给定参数的特定样式，如我们的注释所示。
 
 ```
 t - top - 距离屏幕顶部多少像素
@@ -394,37 +390,35 @@ id - class - 我们选择的类名
 
 这自然地引出了我们的一组函数调用。如果不调用函数，其中的代码将不会运行。我们的每个函数调用都做同样的事情，除了更改给定的参数。让我们检查第一个函数调用以获得更好的理解。
 
-```
+```javascript
 sals('5%', '50%', '#1b95cd', '250px', '20', "GB");
 ```
 
 好的，首先要调用一个函数，我们需要以下代码：
 
-```
+```javascript
 sals();
 ```
 
-这将调用名为 sals 的函数，但不传递参数。在我们的例子中，它会抛出一个错误，可以在浏览器控制台中查看，但除此之外，它似乎什么都不做，因为我们需要传递参数，我们的代码才能实现我们想要的效果。
+这将调用名为 `sals` 的函数，但不传递参数。在我们的例子中，它会抛出一个错误，可以在浏览器控制台中查看，但除此之外，它似乎什么都不做，因为我们需要传递参数，我们的代码才能实现我们想要的效果。
 
 当我们这样正确调用它时：
 
-```
+```javascript
 sals('5%', '50%', '#1b95cd', '250px', '20', "GB");
 ```
 
--   sals(); 调用函数
--   ‘5%’ 代表 t 参数
--   ‘50%’ 代表 l 参数
--   ‘#1b95cd’ 代表 c 参数
--   ‘250px’ 代表 s 参数
--   ‘20’ 代表 z 参数
--   ‘GB’ 代表 id 参数
-
-
+-   `sals();` 调用函数
+-   `'5%'` 代表 `t` 参数
+-   `'50%'` 代表 `l` 参数
+-   `'#1b95cd'` 代表 `c` 参数
+-   `'250px'` 代表 `s` 参数
+-   `'20'` 代表 `z` 参数
+-   `'GB'` 代表 `id` 参数
 
 因此，使用我们的函数，我们只需一行代码就能为每个问候语更改所有这些参数。
 
-将以下内容添加到我们CSS文件的h1规则中，并保存（CTRL + S）：
+将以下内容添加到我们CSS文件的`h1`规则中，并保存（`CTRL + S`）：
 
 ```css
 opacity: 60%;
@@ -433,7 +427,7 @@ position: absolute;
 
 `opacity: 60%;` 的作用如其名所示。它使每个问候语略微透明，即60%不透明或40%透明，这取决于你选择的观察视角。不透明度也可以用小数设置。1等于100%不透明，而0则不可见。不透明度可以在0.0到1之间以增量设置，值越低越透明。
 
-`position: absolute;` 允许我们JavaScript函数中的top和left参数更新CSS的position属性。CSS中有七个定位属性。分别是：static（这是默认值）、absolute、fixed、relative、sticky、initial和inherit。目前，你只需要知道`position: absolute`允许我们根据top和left坐标在屏幕上的精确位置放置元素。
+`position: absolute;` 允许我们JavaScript函数中的`top`和`left`参数更新CSS的`position`属性。CSS中有七个定位属性。分别是：`static`（这是默认值）、`absolute`、`fixed`、`relative`、`sticky`、`initial`和`inherit`。目前，你只需要知道`position: absolute`允许我们根据`top`和`left`坐标在屏幕上的精确位置放置元素。
 
 现在刷新浏览器查看结果。它开始看起来更有趣了！
 
@@ -443,30 +437,30 @@ position: absolute;
 
 我们最初的程序显示的是"Hello, World"，所以我们来处理一下world这部分。这就是我们images文件夹的用武之地。
 
-好的，请从以下地址下载world.gif文件：
+好的，请从以下地址下载`world.gif`文件：
 
-https://wddtrw.co.uk/resources/learntocode/images/world.gif
+[https://wddtrw.co.uk/resources/learntocode/images/world.gif](https://wddtrw.co.uk/resources/learntocode/images/world.gif)
 
 将图片保存到你文件结构中的images文件夹。为此，请访问给定链接地址，右键单击旋转的地球，并从上下文菜单中选择"另存为"。然后选择你文件结构中的images文件夹并点击保存按钮。
 
 ![](img/159b1f3f81255361f46fe5a11415ff6e_27_0.png)
 
-注意！如果你决定更改文件名，你也必须在代码中相应更改。文件名为'world.gif'，因此图片必须被引用为'images/world.gif'。确保这两者匹配至关重要，否则你的图片将无法显示。
+注意！如果你决定更改文件名，你也必须在代码中相应更改。文件名为`world.gif`，因此图片必须被引用为`images/world.gif`。确保这两者匹配至关重要，否则你的图片将无法显示。
 
-接下来，编辑你的'hello.html'文件，并在开始的`<body>`标签下方添加以下代码行，如下所示。然后保存你的文件。
+接下来，编辑你的`hello.html`文件，并在开始的`<body>`标签下方添加以下代码行，如下所示。然后保存你的文件。
 
 ```html
 <body> ◄ 不要添加这行。
 <div class="globe"><img src="images/world.gif" class="globe_image"></div>
 ```
 
-这里我们将图片放在了一个`<div></div>`分区内。可以将此视为可见屏幕的一个分区。我们给`<div>`赋予了globe类。我们将使用它来将div及其内容放置在我们希望它出现在屏幕上的位置。我们也给图片赋予了一个类。这样我们就可以控制图片的显示方式。
+这里我们将图片放在了一个`<div></div>`分区内。可以将此视为可见屏幕的一个分区。我们给`<div>`赋予了`globe`类。我们将使用它来将div及其内容放置在我们希望它出现在屏幕上的位置。我们也给图片赋予了一个类。这样我们就可以控制图片的显示方式。
 
 > **`<div>`：**
 >
 > div标签被称为Division标签。div标签在HTML中用于在网页中划分内容区域，如（文本、图片、页眉、页脚、导航栏等）。... 它用于将各种HTML标签分组，以便可以创建区块并为其应用样式。
 
-接下来，打开app.css文件并添加以下代码行。
+接下来，打开`app.css`文件并添加以下代码行。
 
 首先，在`h1 { }`内部添加以下代码行：
 
@@ -482,7 +476,7 @@ https://wddtrw.co.uk/resources/learntocode/images/world.gif
 >
 > 像素也被称为picture element（pix = picture，el = element）。
 
-接下来，在app.css文件底部添加以下两个类：
+接下来，在`app.css`文件底部添加以下两个类：
 
 ```css
 .globe {
@@ -495,9 +489,9 @@ https://wddtrw.co.uk/resources/learntocode/images/world.gif
 }
 ```
 
-globe类被赋予了两条规则。首先，它被设置为页面居中对齐，其次，它设置了从可见屏幕顶部开始的150像素边距。
+`globe`类被赋予了两条规则。首先，它被设置为页面居中对齐，其次，它设置了从可见屏幕顶部开始的150像素边距。
 
-globe_image类被赋予了一条规则。这将我们地球的高度设置为70vh或视口高度的70%。
+`globe_image`类被赋予了一条规则。这将我们地球的高度设置为70vh或视口高度的70%。
 
 保存文件并预览你的结果。如果一切都正确操作，你应该看到以下显示，背景中有一个旋转的动画地球。
 
@@ -517,7 +511,7 @@ globe_image类被赋予了一条规则。这将我们地球的高度设置为70v
 
 # 快速访问网页菜单
 
-### 课程目标：
+### 课程目标
 
 设计和开发一个结构良好的网页，其中包含一个用于你所有常用网站的快速访问菜单。
 
@@ -535,7 +529,7 @@ globe_image类被赋予了一条规则。这将我们地球的高度设置为70v
 
 ## 第2步 - 组织文件结构
 
-接下来，我们需要构建文件结构。对于这个项目，它比上一个稍微简单一些。在你的桌面上创建一个名为'website'的新文件夹。打开它，并在其中创建一个名为'css'的文件夹和一个名为'images'的文件夹。最后，打开你选择的代码编辑器并新建一个文件。将其保存为'web_menu.html'。
+接下来，我们需要构建文件结构。对于这个项目，它比上一个稍微简单一些。在你的桌面上创建一个名为`website`的新文件夹。打开它，并在其中创建一个名为`css`的文件夹和一个名为`images`的文件夹。最后，打开你选择的代码编辑器并新建一个文件。将其保存为`web_menu.html`。
 
 如果你正确遵循了说明，你应该拥有以下文件结构：
 
@@ -545,9 +539,9 @@ globe_image类被赋予了一条规则。这将我们地球的高度设置为70v
 
 接下来，对于你选择的每个网站，在谷歌上搜索并找到合适的图片来代表它们。选择清晰的图片。现在不必太担心尺寸，因为我会解释如何编辑和优化你的图片。
 
-使用我们保存'world.gif'图片时相同的方法，在谷歌图片中搜索合适的图片，右键单击，从上下文菜单中选择"另存为"，并将每张图片保存到你的images文件夹中。
+使用我们保存`world.gif`图片时相同的方法，在谷歌图片中搜索合适的图片，右键单击，从上下文菜单中选择"另存为"，并将每张图片保存到你的images文件夹中。
 
-这次，我建议你更改图片的名称，以便清晰和易于使用。例如，在我的例子中，我将第一张图片命名为'santander.jpg'。图片有许多不同的文件格式，因此，你选择的可能不是jpeg格式。如果是这种情况，不用担心，只需将其命名为'[你的文件名].[你的扩展名]'即可。我们可以在代码中更改文件名和扩展名以适应。
+这次，我建议你更改图片的名称，以便清晰和易于使用。例如，在我的例子中，我将第一张图片命名为`santander.jpg`。图片有许多不同的文件格式，因此，你选择的可能不是jpeg格式。如果是这种情况，不用担心，只需将其命名为`[你的文件名].[你的扩展名]`即可。我们可以在代码中更改文件名和扩展名以适应。
 
 所以我有10个网站，因此我也有10张图片来代表这些网站，并保存在我的images文件夹中。如果你正确完成了这一步，你的images文件夹中应该有类似的内容，当然除了可能不同的文件名和扩展名。
 
@@ -595,7 +589,7 @@ zoom.jpg
 
 ## 第4步 - 实现HTML文件结构
 
-如果尚未打开，请在你选择的代码编辑器中打开'website.html'。与上一个练习一样，首先我们需要实现我们的文件结构，如下所示。
+如果尚未打开，请在你选择的代码编辑器中打开`website.html`。与上一个练习一样，首先我们需要实现我们的文件结构，如下所示。
 
 ```html
 <html>
@@ -606,8 +600,6 @@ zoom.jpg
 </html>
 ```
 
-
-
 ## 第5步 - 页面布局设计
 
 在这一阶段，我们需要思考页面布局。绘制一个方框图来代表你希望通过CSS实现的效果是个好主意。在我的示例中，我有10个网站，因此我确定了以下页面结构：
@@ -616,22 +608,22 @@ zoom.jpg
 
 ## 第6步 - 使用HTML实现页面布局
 
-接下来，我们将更新‘website.html’，添加一个标题、一个指向我们将创建的CSS文件的链接，并探讨如何为我们网站的菜单实现页面结构。
+接下来，我们将更新`website.html`，添加一个标题、一个指向我们将创建的CSS文件的链接，并探讨如何为我们网站的菜单实现页面结构。
 
 其中一些代码你在上一个练习中已经见过，所以你应该已经开始有点熟悉并能识别各种关键字和标记了。
 
-在代码的<head></head>部分添加以下内容：
+在代码的`<head></head>`部分添加以下内容：
 
-```
+```html
 <head>
     <title>Fast Access Web Menu</title>
     <link rel="stylesheet" href="css/app.css">
 </head>
 ```
 
-然后，在<body><body>中，添加以下内容：
+然后，在`<body><body>`中，添加以下内容：
 
-```
+```html
 <body>
     <header>
         <h1>Fast Access Web Menu</h1>
@@ -649,20 +641,21 @@ zoom.jpg
 </body>
 ```
 
-好的，让我们看看目前我们有什么。我们有一个名为<header></header>的部分。<header>元素代表一个用于介绍性内容或一组导航链接的容器。
+好的，让我们看看目前我们有什么。我们有一个名为`<header></header>`的部分。`<header>`元素代表一个用于介绍性内容或一组导航链接的容器。
 
-一个<header>元素通常包含：
+一个`<header>`元素通常包含：
 
-- 一个或多个标题元素（<h1> - <h6>）
+- 一个或多个标题元素（`<h1>` - `<h6>`）
 - 标志或图标
 - 作者信息
 
-> 你可以在一个HTML文档中有多个<header>元素。然而，<header>不能放在<footer>、<address>或另一个<header>元素内部。
+> 你可以在一个HTML文档中有多个`<header>`元素。然而，`<header>`不能放在`<footer>`、`<address>`或另一个`<header>`元素内部。
 
-接下来，我们有一个类名为‘wrapper’的<div>。这将用于将所有页面链接封闭在一个分区（页面区域）中。
+接下来，我们有一个类名为`wrapper`的`<div>`。这将用于将所有页面链接封闭在一个分区（页面区域）中。
+
 接下来的部分是主要工作完成的地方。
 
-```
+```html
 <div class="">
     <a href="" alt="" title="">
         <img src="" title="" alt="" class="">
@@ -670,27 +663,25 @@ zoom.jpg
 </div>
 ```
 
-我们添加的每个网站链接都会复制这段代码。我有10个网页，因此我将需要复制这个10次。为我的每个页面链接复制一次。你会注意到我还没有命名类，也没有在href、alt、title或src标签中添加任何详细信息。这是因为对于每个链接，这些信息都会有所不同。
+我们添加的每个网站链接都会复制这段代码。我有10个网页，因此我将需要复制这个10次。为我的每个页面链接复制一次。你会注意到我还没有命名类，也没有在`href`、`alt`、`title`或`src`标签中添加任何详细信息。这是因为对于每个链接，这些信息都会有所不同。
 
 让我们深入看看。
 
-我们有一个带类的<div>。这个类将为每个页面链接适当地命名，以便可以在CSS中使用。如果你完成了上一个练习，你将已经熟悉这段代码。
+我们有一个带类的`<div>`。这个类将为每个页面链接适当地命名，以便可以在CSS中使用。如果你完成了上一个练习，你将已经熟悉这段代码。
 
-接下来，我们有一个<a></a>锚点标签，也称为超链接或链接。href携带引用信息，我们希望用户在点击链接时被定向到哪里。超链接可以使用内部和外部URL，甚至可以指向同一网页的特定部分的锚点。在我们的示例中，我们将为第三方网站使用外部URL。我们将在本书后面探讨其他选项。
+接下来，我们有一个`<a></a>`锚点标签，也称为超链接或链接。`href`携带引用信息，我们希望用户在点击链接时被定向到哪里。超链接可以使用内部和外部URL，甚至可以指向同一网页的特定部分的锚点。在我们的示例中，我们将为第三方网站使用外部URL。我们将在本书后面探讨其他选项。
 
-接下来，我们有alt=""，你会注意到这在图像标签中也有显示。这是用于替代文本的。或者换句话说，如果由于某种原因信息或图像无法显示，则向用户显示的文本。例如，当连接缓慢或源文件出现错误时，可能会发生这种情况。Alt标签也会被屏幕阅读器读取。对于超链接，描述链接指向哪里是一个好的做法。它们不是严格必要的，但这是高度推荐的最佳实践，并且是良好搜索引擎优化（SEO）的一部分。
+接下来，我们有`alt=""`，你会注意到这在图像标签中也有显示。这是用于替代文本的。或者换句话说，如果由于某种原因信息或图像无法显示，则向用户显示的文本。例如，当连接缓慢或源文件出现错误时，可能会发生这种情况。Alt标签也会被屏幕阅读器读取。对于超链接，描述链接指向哪里是一个好的做法。它们不是严格必要的，但这是高度推荐的最佳实践，并且是良好搜索引擎优化（SEO）的一部分。
 
-title=""，类似于alt标签，应该携带相关的标题信息。当鼠标悬停时显示。带有这些标签的超链接和图像被认为是格式良好的。
+`title=""`，类似于alt标签，应该携带相关的标题信息。当鼠标悬停时显示。带有这些标签的超链接和图像被认为是格式良好的。
 
-此外，我们在图像标签中有一个class=""。这将用于相应地设置图像的样式。
+此外，我们在图像标签中有一个`class=""`。这将用于相应地设置图像的样式。
 
-```
-注意，`<img src="" title="" alt="" class="">` 在 `<a></a>` 内部。这可以是文本，或者像我们这里做的那样，是一个图像。它使图像可点击。当点击时，用户将被重定向到给定的URL。
-```
+> 注意，`<img src="" title="" alt="" class="">` 在 `<a></a>` 内部。这可以是文本，或者像我们这里做的那样，是一个图像。它使图像可点击。当点击时，用户将被重定向到给定的URL。
 
-最后，我们有页脚。<footer>标签为文档或区域定义一个页脚。
+最后，我们有页脚。`<footer>`标签为文档或区域定义一个页脚。
 
-一个<footer>元素通常包含：
+一个`<footer>`元素通常包含：
 
 - 作者信息
 - 版权信息
@@ -699,13 +690,13 @@ title=""，类似于alt标签，应该携带相关的标题信息。当鼠标悬
 - 返回顶部链接
 - 相关文档
 
-你可以在一个文档中有多个<footer>元素。
+你可以在一个文档中有多个`<footer>`元素。
 
 我们保持事情简单，只添加版权信息。根据你的细节进行更新以适应情况。
 
 考虑到所有这些，相应地更新你的代码。参见我下面的示例：
 
-```
+```html
 <html>
     <head>
         <title>Fast Access Web Menu</title>
@@ -774,13 +765,13 @@ title=""，类似于alt标签，应该携带相关的标题信息。当鼠标悬
 </html>
 ```
 
-注意我们现在如何有10个类名为page的div，10个链接，以及这些链接内的10个图像。在这个示例中，我选择将我的页面链接设置为相同的样式，如果你愿意，可以轻松更改为单独的样式。
+注意我们现在如何有10个类名为`page`的div，10个链接，以及这些链接内的10个图像。在这个示例中，我选择将我的页面链接设置为相同的样式，如果你愿意，可以轻松更改为单独的样式。
 
 好的，理解了解释后，让我们继续。
 
 ## 第7步 - 选择颜色设计并实现CSS
 
-现在是时候开始处理我们的CSS了。打开你选择的编码编辑器，创建一个名为‘app.css’的新文件，并将其保存在你的文件结构中的‘css’文件夹内。
+现在是时候开始处理我们的CSS了。打开你选择的编码编辑器，创建一个名为`app.css`的新文件，并将其保存在你的文件结构中的`css`文件夹内。
 
 不过，在我们深入之前，让我们选择一些颜色。我已经提到过，使用十六进制代码或RGB代码进行颜色选择将提供更多的选项。
 
@@ -788,7 +779,7 @@ title=""，类似于alt标签，应该携带相关的标题信息。当鼠标悬
 
 我特别喜欢Adobe色轮生成器。通过下面的链接查看：
 
-https://color.adobe.com/create/color-wheel
+[https://color.adobe.com/create/color-wheel](https://color.adobe.com/create/color-wheel)
 
 ![](img/159b1f3f81255361f46fe5a11415ff6e_40_0.png)
 
@@ -809,23 +800,23 @@ https://color.adobe.com/create/color-wheel
 
 我保持我的配色方案相当简单。
 
-#EB8716 – 用于我的标题
+`#EB8716` – 用于我的标题
 
 ![](img/159b1f3f81255361f46fe5a11415ff6e_42_0.png)
 
-#90CEE8 – 用于我主要内容周围的包装器
+`#90CEE8` – 用于我主要内容周围的包装器
 
 ![](img/159b1f3f81255361f46fe5a11415ff6e_42_1.png)
 
-#006F9E – 用于我的页脚
+`#006F9E` – 用于我的页脚
 
 ![](img/159b1f3f81255361f46fe5a11415ff6e_42_2.png)
 
 好的，决定了之后，我们继续构建 CSS。
 
-如果还没有，请打开 ‘app.css’ 并添加以下代码：
+如果还没有，请打开 `app.css` 并添加以下代码：
 
-```
+```css
 html, body{
     margin: 0px;
 }
@@ -881,17 +872,17 @@ footer p{
 
 那么区别是什么？
 
-一个 id 选择器使用格式 - #id
+一个 id 选择器使用格式 - `#id`
 
-一个类选择器使用格式 - .class
+一个类选择器使用格式 - `.class`
 
-一个元素选择器使用格式 - element，例如 p = 样式所有 <p> 元素
+一个元素选择器使用格式 - `element`，例如 `p` = 样式所有 `<p>` 元素
 
 但远不止于此。选择器可以组合在一起形成复杂的模式。
 
 你可以在这里看到一个简单的例子，我们使用了：
 
-```
+```css
 header h1{
 ```
 
@@ -899,7 +890,7 @@ header h1{
 
 大多数规则是重复的，所以我们只检查不同的规则。然后你也可以将这些知识应用到其他规则上。有些规则你之前也见过。话虽如此，让我们来看看。
 
-```
+```css
 background-color: #EB8716;
 //CHANGES THE BACKGROUND COLOUR
 
@@ -938,9 +929,9 @@ display: inline-block;
 
 让我们从图像源 URL 开始。
 
-打开你的 images 文件夹，将所有图像信息逐个添加到每个图像 src="" 占位符中，格式如下：
+打开你的 images 文件夹，将所有图像信息逐个添加到每个图像 `src=""` 占位符中，格式如下：
 
-'images/[image name].[extension]'
+`images/[image name].[extension]`
 
 以我为例，它们将是：
 
@@ -951,11 +942,11 @@ display: inline-block;
 | images/googlemaps.png | images/youtube.png |
 | images/linkedin.png | images/zoom.jpg |
 
-填写相应的 alt 文本和标题，并添加 ‘image_link’ 作为类。
+填写相应的 alt 文本和标题，并添加 `image_link` 作为类。
 
-现在你的 ‘website.html’ 文件应该看起来像这样：
+现在你的 `website.html` 文件应该看起来像这样：
 
-```
+```html
 <html>
     <head>
         <title>Fast Access Web Menu</title>
@@ -1027,9 +1018,9 @@ display: inline-block;
 
 让我们快速更新一下 CSS，以处理我们刚刚添加的图像类。
 
-打开 ‘app.css’ 并将以下代码添加到底部：
+打开 `app.css` 并将以下代码添加到底部：
 
-```
+```css
 .image_link{
     height: 180px;
     width: 18.5vw;
@@ -1042,30 +1033,30 @@ display: inline-block;
 
 那么这里发生了什么？
 
-```
+```css
 height: 180px;
 width: 18.5vw;
 ```
 
 这是为了让你的所有图像都以统一的大小出现。
 
-```
+```css
 margin: 1% 0 1% 1%;
 ```
 
-这设置了边距，并带有轻微偏移，以产生一种 3D 投影效果。记住边距设置是上、右、下、左 (TRBL)。我总是想到单词 ‘trouble’ 来帮助记住这个顺序。所以下次当你 **TROUBLE** 试图记住顺序时，嘿，变好了！！
+这设置了边距，并带有轻微偏移，以产生一种 3D 投影效果。记住边距设置是上、右、下、左 (TRBL)。我总是想到单词 `trouble` 来帮助记住这个顺序。所以下次当你 **TROUBLE** 试图记住顺序时，嘿，变好了！！
 
 下一部分有一个我们以前没见过的选择器模式。
 
-```
+```css
 .image_link:hover {
 ```
 
-这仅仅意味着，当你用鼠标悬停在一个具有 ‘image_link’ 类的元素上时，规则就会被应用。
+这仅仅意味着，当你用鼠标悬停在一个具有 `image_link` 类的元素上时，规则就会被应用。
 
 最后，我们设置了一个规则，用于当我们悬停在元素上时：
 
-```
+```css
 filter: grayscale(70%);
 ```
 
@@ -1087,21 +1078,19 @@ filter: grayscale(70%);
 
 最后一步。
 
-```
+```html
 <a href="" alt="" title="">
 ```
 
-我们现在剩下的就是在 href="" 占位符中填写 URL 信息，填写替代文本，并添加我们的标题。让我们看一个例子：
+我们现在剩下的就是在 `href=""` 占位符中填写 URL 信息，填写替代文本，并添加我们的标题。让我们看一个例子：
 
-```
+```html
 <a href="https://amazon.co.uk" alt="Visit Amazon" title="Visit Amazon">
 ```
 
 现在，填写其余部分。
 
-
-
-## 创建一个网页应用
+# 创建一个网页应用
 
 ### 什么是网页应用？它与网站有何不同？
 
@@ -1112,6 +1101,7 @@ filter: grayscale(70%);
 好的，它们听起来很相似，对吧？从用户角度来看，本质上确实如此。它们都是通过网络浏览器访问的，你都可以通过搜索引擎找到。
 
 简而言之，主要区别在于：
+
 - 网站提供可供查看和阅读的信息，但无法进行操作。
 - 普通网站不需要强制认证。
 - 通过网站，信息是公开可访问的——无需注册。
@@ -1126,7 +1116,7 @@ filter: grayscale(70%);
 
 ![](img/159b1f3f81255361f46fe5a11415ff6e_58_0.png)
 
-https://viewbook.at/wddtrw1
+[https://viewbook.at/wddtrw1](https://viewbook.at/wddtrw1)
 
 ## 课程目标
 
@@ -1137,17 +1127,18 @@ https://viewbook.at/wddtrw1
 开发系统以允许用户添加或删除问题，并包含一个倒计时计时器。
 
 > **移动设备优先方法：**
+>
 > “移动设备优先”方法指的是，从移动版本开始设计桌面站点，然后将其适配到更大的屏幕上（这与传统上先从桌面站点开始再适配到小屏幕的方法相反）。
 
 ## 第 1 步 - 设置你的文件结构
 
 大家，放开手脚吧！让我们开始构建下一个令人兴奋的项目。首先，让我们实现所需的文件结构。
 
-到现在你应该已经熟悉如何设置文件结构了。这一次，你需要在桌面上创建一个名为 'web app' 的新文件夹。在该文件夹内，添加一个 'css' 文件夹、一个 'images' 文件夹、一个 'js' 文件夹和一个 'json' 文件夹。最后，打开你选择的代码编辑器，创建一个名为 'quiz_app.html' 的新文件。如果一切操作正确，你应该有一个名为 'web app' 的文件夹，包含以下文件结构：
+到现在你应该已经熟悉如何设置文件结构了。这一次，你需要在桌面上创建一个名为 `web app` 的新文件夹。在该文件夹内，添加一个 `css` 文件夹、一个 `images` 文件夹、一个 `js` 文件夹和一个 `json` 文件夹。最后，打开你选择的代码编辑器，创建一个名为 `quiz_app.html` 的新文件。如果一切操作正确，你应该有一个名为 `web app` 的文件夹，包含以下文件结构：
 
 ![](img/159b1f3f81255361f46fe5a11415ff6e_59_0.png)
 
-你之前见过其他文件夹，但那个 'json' 文件夹是做什么的呢？通常，我们会使用数据库来允许用户添加和删除数据。在这个练习中，我们将通过写入一个 JSON 文件来模拟这种功能。
+你之前见过其他文件夹，但那个 `json` 文件夹是做什么的呢？通常，我们会使用数据库来允许用户添加和删除数据。在这个练习中，我们将通过写入一个 JSON 文件来模拟这种功能。
 
 类似于 JSON 的文档被用作一种名为 MongoDB 的 NoSQL 基于文本的数据库系统的数据结构。如果你想了解更多，可以查看下面的链接。不过，我们这里不会使用它。
 
@@ -1160,13 +1151,11 @@ https://viewbook.at/wddtrw1
 - JSON 是“自描述的”且易于理解
 - JSON 是语言无关的——这意味着它可以在许多编程语言中使用——因此，它便于在这些不同的语言之间传递数据
 
-
-
 ## 为何使用 JSON？
 
 一个简单的 JSON 字符串示例如下所示：
 
-```
+```json
 {"name":"Garry Owen", "age":47, "car":"BMW"}
 ```
 
@@ -1174,13 +1163,12 @@ https://viewbook.at/wddtrw1
 
 这种结构被称为键值对。一个键值对由两个相关的数据元素组成：一个键，它是定义数据集的常量；以及一个值，它是属于该数据集的变量。
 
-例如 "name":"Garry Owen" – “键”：“值”
+例如 `"name":"Garry Owen"` – “键”：“值”
 
 这个 JSON 字符串定义了 3 个属性（name、age 和 car），每个属性都有一个值。如果你用 JavaScript 解析这个 JSON 字符串，就可以像这样将数据作为对象来访问：
 
-```
+```javascript
 let personName = obj.name;
-
 let personAge = obj.age;
 ```
 
@@ -1189,23 +1177,24 @@ let personAge = obj.age;
 JSON 格式的语法与用于构造对象的 JavaScript 代码相似。因此，我们可以轻松地将 JSON 数据转换为 JavaScript。更棒的是，JavaScript 有一个内置函数用于将 JSON 字符串转换为对象，同时也有一个内置函数用于将 JavaScript 对象转换为 JSON。顶级！
 
 > 语法上：
+>
 > 指与计算机语言中语句或元素的结构相关的方式
 
 JSON 转换为 JavaScript 如下所示：
 
-```
+```javascript
 JSON.parse()
 ```
 
 而将 JavaScript 对象转换为 JSON，则如下所示：
 
-```
+```javascript
 JSON.stringify()
 ```
 
 那么，让我们把这一切结合起来，看看如何将 JSON 字符串传递到 JavaScript 对象中。
 
-```
+```html
 <html>
 <head></head>
 <body>
@@ -1227,7 +1216,7 @@ document.getElementById("result").innerHTML = obj.name + " is " + obj.age+ " and
 </html>
 ```
 
-快速浏览一下，我们可以看到已经将 JSON 字符串放入了一个名为 person 的常量中。然后，我们创建了一个新的 JavaScript 对象，并将我们的 JSON ‘person’ 字符串解析到其中，再通过引用对象（obj）的键属性，将每个键值对的选择结果展示在 `<div>` 中。
+快速浏览一下，我们可以看到已经将 JSON 字符串放入了一个名为 `person` 的常量中。然后，我们创建了一个新的 JavaScript 对象，并将我们的 JSON `person` 字符串解析到其中，再通过引用对象（`obj`）的键属性，将每个键值对的选择结果展示在 `<div>` 中。
 
 这会产生如下效果：
 
@@ -1237,9 +1226,9 @@ document.getElementById("result").innerHTML = obj.name + " is " + obj.age+ " and
 
 ## 第 2 步 - 实现 HTML 结构
 
-到现在，你应该已经相当熟悉 HTML 结构了。在添加任何装饰之前，先将下面的标记代码添加到我们的 ‘quiz_app.html’ 文件中。
+到现在，你应该已经相当熟悉 HTML 结构了。在添加任何装饰之前，先将下面的标记代码添加到我们的 `quiz_app.html` 文件中。
 
-```
+```html
 <html>
     <head>
     </head>
@@ -1263,7 +1252,7 @@ document.getElementById("result").innerHTML = obj.name + " is " + obj.age+ " and
 
 好的，首先我们希望使用页眉、页脚和内容属性来设置布局样式。我们有一个问题和 4 个可能的多项选择答案，还有上一题和下一题按钮的预留位置。确定好之后，让我们为 HTML 文件添加一些标记。
 
-```
+```html
 <!DOCTYPE html>
 <html>
 <head>
@@ -1294,7 +1283,7 @@ document.getElementById("result").innerHTML = obj.name + " is " + obj.age+ " and
 
 我们在 head 内部遇到的第一行代码是：
 
-```
+```html
 <meta name="viewport" content="user-scalable=no, width=device-width" />
 ```
 
@@ -1302,7 +1291,7 @@ document.getElementById("result").innerHTML = obj.name + " is " + obj.age+ " and
 
 接下来我们有：
 
-```
+```html
 <link rel="stylesheet" type="text/css" href="css/app.css">
 <title>Question Time</title>
 ```
@@ -1311,7 +1300,7 @@ document.getElementById("result").innerHTML = obj.name + " is " + obj.age+ " and
 
 然后，在 `<body>` 标签内部，我们有：
 
-```
+```html
 <div id="header"><h1>Question Time<br>The Quiz App</h1></div>
 ```
 
@@ -1319,7 +1308,7 @@ document.getElementById("result").innerHTML = obj.name + " is " + obj.age+ " and
 
 接着，我们有：
 
-```
+```html
 <script type="text/javascript" src="json/questions.json"></script>
 ```
 
@@ -1331,20 +1320,21 @@ document.getElementById("result").innerHTML = obj.name + " is " + obj.age+ " and
 
 好的，接下来我们有两个嵌套的 `<div>` 标签。
 
-```
+```html
 <div class="quiz-wrapper">
     <div id="quiz"></div>
 </div>
 ```
 
-这是我们将要显示测验的地方。请注意，我们给一个 div 设置了 quiz-wrapper 的类，给另一个设置了 quiz 的 id。
+这是我们将要显示测验的地方。请注意，我们给一个 div 设置了 `quiz-wrapper` 的类，给另一个设置了 `quiz` 的 id。
 
 > **嵌套：**
+>
 > 一个元素可以被放置在另一个元素内部。嵌套允许你对单个内容应用多个 HTML 标签。
 
 接下来，我们有三个 `<button>` 标签。它们将实现我们测验的用户交互需求。
 
-```
+```html
 <button id="previous">Previous Question</button>
 <button id="next">Next Question</button>
 <button id="submit">Submit Quiz</button>
@@ -1354,13 +1344,13 @@ document.getElementById("result").innerHTML = obj.name + " is " + obj.age+ " and
 
 然后，我们有另一个 div 用于显示结果。
 
-```
+```html
 <div id="results"></div>
 ```
 
 接下来是我们的页脚。请将此处的信息更改为反映你的姓名和正确的日期。
 
-```
+```html
 <div id="footer">
     <h5>Written by Garry Owen &copy; Copyright December 2021</h5>
 </div>
@@ -1368,9 +1358,9 @@ document.getElementById("result").innerHTML = obj.name + " is " + obj.age+ " and
 
 注意我们使用了 `<h5>` 标签。这会将文本显示为较小的字体，并如前所述，为我们的搜索引擎设置层级结构。
 
-最后，就在关闭 `<body>` 之前，我们有一个链接指向我们的 ‘app.js’ 文件。有时我们可以将其放在 HTML 的 `<head></head>` 部分。但在这种情况下，将其放在紧挨着 body 结束标签的内部非常重要。
+最后，就在关闭 `<body>` 之前，我们有一个链接指向我们的 `app.js` 文件。有时我们可以将其放在 HTML 的 `<head></head>` 部分。但在这种情况下，将其放在紧挨着 body 结束标签的内部非常重要。
 
-```
+```html
 <script src="js/app.js"></script>
 </body>
 ```
@@ -1381,7 +1371,7 @@ document.getElementById("result").innerHTML = obj.name + " is " + obj.age+ " and
 
 构建我们的 JSON 题库相当简单。每个问题本身需要包含问题文本、四个可能的答案以及正确答案。让我们看一个包含这些元素的简单空 JSON 结构：
 
-```
+```json
 {
     question: "",
     answers: {
@@ -1396,11 +1386,9 @@ document.getElementById("result").innerHTML = obj.name + " is " + obj.age+ " and
 
 由于我们的题库会包含多个问题，如果需要，我们可以将每个问题结构化在一行中，如下所示：
 
-```
+```json
 {question: "", answers: {a: "", b: "", c: "", d: ""}, correctAnswer: ""},
 ```
-
-
 
 这将使我们的文件保持简短。出于我们 Web 应用的目的，我们将所有问题称为“数据”，通过声明名称并将其全部包装在方括号中，像这样：
 
@@ -1579,40 +1567,46 @@ body{
 
 好的，除了 `overflow-x` 命令，如果你一直按步骤跟随本书，你之前应该已经见过所有这些命令。
 
+
+
 简而言之，如果内容高于或宽于屏幕，你的浏览器会自动添加滚动条。你可以通过为 X 轴和 Y 轴都添加 `overflow: hidden` 命令来防止这两种情况。或者你可以用 `overflow-x` 和 `overflow-y` 分别控制每个轴。`hidden` 命令并非唯一选项。可选值包括：
 
 - `visible` - 默认值。溢出内容不会被裁剪。内容在元素的框外渲染。
+
 - `hidden` - 溢出内容被裁剪，其余内容将不可见。
+
 - `scroll` - 溢出内容被裁剪，并添加滚动条以查看其余内容。
+
 - `auto` - 类似于 `scroll`，但仅在必要时添加滚动条。
 
 接下来是下一节，页头：
 
 ```css
-#header{ // 这些规则适用于 header div 内的所有元素
+#header{
+    // 这些规则适用于 header div 内的所有元素
     border-bottom: 1px solid #666;
-// 在元素底部边缘显示实线边框
+    // 在元素底部边缘显示实线边框
     color: #222;
-// 将文本颜色设置为深灰色
+    // 将文本颜色设置为深灰色
     display: block;
-// 将元素显示为块级元素。开始新行并占据整个宽度
+    // 将元素显示为块级元素。开始新行并占据整个宽度
     padding: 10px 0;
-// 将上下内边距设置为 10px，左右内边距设置为 0
+    // 将上下内边距设置为 10px，左右内边距设置为 0
     text-align: center;
-// 将文本居中对齐
-    background-image: -webkit-gradient(linear, left top, left bottom,
-from(#ccc), to(#999));
-// 创建从上到下的浅灰色到深灰色的渐变
+    // 将文本居中对齂
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#ccc), to(#999));
+    // 创建从上到下的浅灰色到深灰色的渐变
+}
 ```
 
 ```css
-}
-#header h1{ // 这些规则仅适用于 header div 内的 <h1> 元素
+#header h1{
+    // 这些规则仅适用于 header div 内的 <h1> 元素
     text-shadow: 0px 1px 0px #fff; // 文本阴影 - offset-x | offset-y | blur-radius | 颜色
     font-weight: 300; // 将字体粗细设置为细体 (最大 900)
     margin: 0px; // 将所有外边距设置为 0px (TRBL)
     padding: 10px; // 将内边距设置为 10px
-    font-size: 25px;// 将字体大小设置为 25px
+    font-size: 25px; // 将字体大小设置为 25px
 }
 ```
 
@@ -1637,29 +1631,29 @@ from(#ccc), to(#999));
 这些命令你都见过了。它们现在还不会起任何作用，但会影响问题和答案的布局。它们将在下一节中与 JavaScript 一起使用。更多内容稍后介绍。
 
 ```css
-button p{ // 这只影响 button 和 p 标签内的元素
+button p{
+    // 这只影响 button 和 p 标签内的元素
     margin-top: -8px; // 将按钮文本上移 8px
 }
-button{ // 这影响 button 标签内的所有元素
+button{
+    // 这影响 button 标签内的所有元素
     font-weight: 200; // 字体粗细
     font-size: 20px; // 字体大小（像素）
     width: 300px; // 按钮的宽度
     height: 50px; // 按钮的高度
     padding: 20px; // 元素内容周围的内边距
-```
-
-```css
-cursor: pointer; // 将光标更改为指针 - 更多设置见下页说明
-border-radius: 3px; // 将元素的所有角设置为 3px 的圆角半径
-color: #fff; // 将文本颜色设置为白色
-background-image: -webkit-gradient(linear, left top, left bottom, from(#aaa), to(#888)); // 将按钮的背景设置为渐变
-margin-top: 15px; // 在所有按钮元素上方创建 15px 的间距
+    cursor: pointer; // 将光标更改为指针 - 更多设置见下页说明
+    border-radius: 3px; // 将元素的所有角设置为 3px 的圆角半径
+    color: #fff; // 将文本颜色设置为白色
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#aaa), to(#888)); // 将按钮的背景设置为渐变
+    margin-top: 15px; // 在所有按钮元素上方创建 15px 的间距
 }
 ```
 
 ```css
-button:hover{ // 这仅影响鼠标悬停的按钮元素
-background-image: -webkit-gradient(linear, left top, left bottom, from(#bbb), to(#999)); // 将背景颜色更改为更浅的渐变
+button:hover{
+    // 这仅影响鼠标悬停的按钮元素
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#bbb), to(#999)); // 将背景颜色更改为更浅的渐变
 }
 ```
 
@@ -1672,9 +1666,11 @@ background-image: -webkit-gradient(linear, left top, left bottom, from(#bbb), to
 接下来是下一节，测验容器和结果：
 
 ```css
-.quiz-wrapper{ // 应用于 quiz-wrapper 类内的所有内容
-position: relative; // 将元素相对于其正常位置定位
-height: 200px; // 将元素高度设置为 200px
+.quiz-wrapper{
+    // 应用于 quiz-wrapper 类内的所有内容
+    position: relative; // 将元素相对于其正常位置定位
+    height: 200px; // 将元素高度设置为 200px
+}
 ```
 
 ## 步骤 5 - 构建 JavaScript 引擎
@@ -1706,13 +1702,17 @@ const submitButton = document.getElementById('submit');
 除了作用域，简而言之：
 
 -   `var` 变量可以在其作用域内被更新和重新声明。
+
 -   `let` 变量可以被更新但不能被重新声明。
+
 -   `const` 变量既不能被更新也不能被重新声明。
 
 JavaScript 有 3 种作用域：
 
 -   块级作用域
+
 -   函数作用域
+
 -   全局作用域
 
 在 2015 年之前，JavaScript 只有全局作用域和函数作用域。JavaScript ES6 引入了两个新的重要关键字：`let` 和 `const`。
@@ -1752,7 +1752,9 @@ for(i=0; i < data.length; i++){
 让我们检查一下我们这里做了什么。首先，我们创建了一个新的空数组。
 
 > **数组：**
+
 >
+
 > 数组是一种数据结构，可以存储相同数据类型的固定大小元素集合。数组用于存储数据集合，但通常将数组视为相同类型变量的集合会更有用。
 
 ```
@@ -1778,7 +1780,9 @@ for(i=0; i < data.length; i++){
 这分解为：
 
 -   `i=0;` - 'i' 的初始值设置为 0。
+
 -   `i < data.length;` - 当 'i' 小于数据的长度时
+
 -   `i++` - 每次执行代码块时，i 增加 1。
 
 每次循环迭代，都会执行以下代码块：
@@ -1826,24 +1830,22 @@ function buildQuiz(){
             const answers = [];
             for(letter in currentQuestion.answers){
                 answers.push(
-                    `<label>`
-                )
-            <input type="radio" name="question${questionNumber}"
-               value="${letter}" class="rad_butn">
-              ${letter} :
-              ${currentQuestion.answers[letter]}
-            </label>
-          );
-      }
-      output.push(
-        `<div class="slide">
-          <div class="question"> ${(questionNumber+1)}. ${currentQuestion.question} </div>
-          <div class="answers"> ${answers.join("")} </div>
-        </div>`
-      );
-    }
-  );
-  quizBox.innerHTML = output.join('');
+                    `<label>
+                        <input type="radio" name="question${questionNumber}" value="${letter}" class="rad_butn">
+                        ${letter} :
+                        ${currentQuestion.answers[letter]}
+                    </label>`
+                );
+            }
+            output.push(
+                `<div class="slide">
+                    <div class="question"> ${(questionNumber+1)}. ${currentQuestion.question} </div>
+                    <div class="answers"> ${answers.join("")} </div>
+                </div>`
+            );
+        }
+    );
+    quizBox.innerHTML = output.join('');
 }
 ```
 
@@ -1863,8 +1865,6 @@ myQuestions.forEach(
 //要在这里执行的代码块
 }
 ```
-
-
 
 我们正在使用箭头（=>）函数对每个问题执行操作。因为这位于一个forEach循环中，所以我们获得当前值、索引（当前项目在数组中的位置编号）以及数组本身作为参数。我们只需要当前值和索引，为了我们的目的，我们将它们分别命名为`currentQuestion`和`questionNumber`。
 
@@ -1918,7 +1918,9 @@ answers.push( 要推入数组的数据 );
 这向数组添加了一块数据。在我们的例子中，我们添加的是：
 
 *   一个单选按钮
+
 *   与答案关联的字母
+
 *   与该字母关联的答案
 
 ![](img/159b1f3f81255361f46fe5a11415ff6e_86_0.png)
@@ -2114,15 +2116,16 @@ Pink, Green, Blue, Black
 关于数组，我最后想提一点，在我们的例子中，每个项目都是一个字符串，但在数组中，我们可以存储各种数据类型：
 
 *   字符串
+
 *   数字
+
 *   对象
+
 *   甚至其他数组
 
 我们还可以在单个数组中混合数据类型——我们不必将自己限制在一个数组中只存储数字，在其他数组中只存储字符串。
 
 关于数组，我们还可以探讨更多内容，但这超出了本书的范围。不过，希望现在你对数组及其用途应该更清楚了。
-
-
 
 在进入下一步之前，先稍作休息。
 
@@ -2222,6 +2225,7 @@ const userAnswer = (answerBox.querySelector(selector) || {}).value;
 接下来，我们有一个条件判断语句，if-else 语句。这些语句可以更复杂，但我们的非常直接。
 
 - 我们使用 **if** 来指定如果指定条件为真时要执行的代码块。
+
 - 我们使用 **else** 来指定如果同一条件为假时要执行的代码块。
 
 ```
@@ -2235,6 +2239,7 @@ if (condition) {
 在我们的例子中，我们做了两件事：
 
 - 我们只是根据满足的条件，改变答案文本的颜色。
+
 - 对于正确的答案，我们将变量 `numCorrect` 的值加 1。
 
 ```
@@ -2398,8 +2403,6 @@ previousButton.addEventListener("click", showPreviousSlide);
 // 监听 previousButton 的点击。如果点击，则调用 showPreviousSlide 函数
 ```
 
-
-
 ## 第9步 - 添加倒计时计时器
 
 `nextButton.addEventListener("click", showNextSlide);`
@@ -2469,8 +2472,7 @@ h2{
 #clockdiv > div{
     padding: 10px;
     border-radius: 100px;
-    background-image: -webkit-gradient(linear, left top, left bottom,
-from(#ccc), to(#999)));
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#ccc), to(#999)));
     display: inline-block;
     border: solid 1px #333;
     width: 100px;
@@ -2531,7 +2533,9 @@ initializeClock('clockdiv', deadline);
 ```
 
 *   这里我们计算当前的日期/时间，然后加上3分钟。
+
 *   `(3 * 60 * 1000)` 的意思是 `(3 x 60 x 1000)`，换句话说就是 180000。
+
 *   然后我们通过调用 `initializeClock('clockdiv', deadline)` 将这个值传递给初始化函数，这样 `initializeClock` 函数就知道从哪里开始了。
 
 让我们看看目前的效果：
@@ -2541,10 +2545,15 @@ initializeClock('clockdiv', deadline);
 看起来很不错，对吧？
 
 *   我们有一个适用于手机的漂亮布局
+
 *   我们有了问题包裹器
+
 *   我们正在加载问题库
+
 *   我们在获取用户输入并收集他们的答案
+
 *   用户提交测验后，我们可以显示结果
+
 *   我们有一个3分钟的倒计时计时器
 
 那么，当计时器归零时会发生什么？嗯，目前什么都不会发生。让我们来让它提交测验并显示结果。
@@ -2579,8 +2588,6 @@ showResults();
 它包装了你的代码。只需移除它，保存文件，然后刷新浏览器即可。
 
 当然，我们也可以继续使用 IIFE，并将倒计时脚本复制粘贴到我们的 `app.js` 文件中，让所有逻辑都在一个较长的 JavaScript 文件中。然而，当我们处理可能有数百个函数时，我发现最好将你的代码结构化在单独的、命名明确的文件中。这样你的代码会更清晰，也更容易调试。在我们下一个练习中开始构建平台游戏时，你就会完全明白我的意思。
-
-
 
 现在你应该得到以下结果：
 
@@ -2698,7 +2705,9 @@ initializeClock('clockdiv', deadline);
 我们需要问自己几个问题：
 
 -   1. 我们将如何从用户那里收集数据？
+
 -   2. 我们如何将用户数据添加到我们的 JSON 题库中？
+
 -   3. 我们将如何从 JSON 题库中删除问题？
 
 都是好问题。在编程中，解决问题的方法总是多种多样。让我们先从第一个问题入手。
@@ -2706,13 +2715,17 @@ initializeClock('clockdiv', deadline);
 我们尚未使用过的是 HTML 表单。HTML 表单是从用户那里收集数据并使我们的数据收集更加用户友好的明显方式。我们知道需要以下信息：
 
 -   问题
+
 -   四个可能的答案
+
 -   由 a、b、c 或 d 表示的正确答案
 
 再一次，我们的设计分为三个领域。
 
 -   1. 由 HTML 提供的视图
+
 -   2. 由 CSS 提供的样式和页面格式
+
 -   3. 由 JavaScript 提供的程序逻辑
 
 我们将为此设计一个新的 HTML 页面，然后添加适当的页面链接以允许用户在两者之间导航。然后我们将创建一个新的 JavaScript 文件来容纳使其运行所需的逻辑。
@@ -2724,7 +2737,9 @@ initializeClock('clockdiv', deadline);
 通常，在创建这样的程序时，你会使用数据库和服务器端语言，如 PHP 或 Node.js 等。然而，本书探讨的是使用 HTML、CSS 和 JavaScript，这些都是客户端技术。我们将使用其他技术来编码所有内容并在你的浏览器中本地运行，而无需使用任何其他外部技术。
 
 > **客户端和服务器端：**
+
 >
+
 > 客户端和服务器端有时被称为前端和后端。网站的客户端是指 Web 浏览器，服务器端是存储数据和源代码的地方。
 
 供你参考，有许多可用的数据库。一些最常用和最知名的是 MySQL、MariaDB 和 PostgreSQL。这些都使用一种专门开发的语言来查询它们，称为结构化查询语言（或 SQL，发音为“sequel”）。然后还有另一种数据库类型称为 NoSQL 数据库，如 MongoDB、ApacheDB 和 Cassandra，它们使用替代的结构和查询技术，例如 MongoDB 的类似 JSON 的数据结构或 Cassandra 的 CQL。
@@ -2738,8 +2753,6 @@ initializeClock('clockdiv', deadline);
 ![](img/159b1f3f81255361f46fe5a11415ff6e_115_0.png)
 
 ....以及更多
-
-
 
 ## 如何构建我们的HTML表单
 
@@ -2775,7 +2788,7 @@ initializeClock('clockdiv', deadline);
                 <option value="" selected disabled> Choose </option>
                 <option value="a"> - A -</option>
                 <option value="b"> - B -</option>
-                <option value="c"> - C -</option>
+                <option value="c"> - C -</option
                 <option value="d"> - D -</option>
             </select><br><br>
             <button id="submitQuestion"><p>Submit Question</p></button><br><br><br>
@@ -2819,17 +2832,29 @@ initializeClock('clockdiv', deadline);
 ### 输入类型表单属性
 
 | 输入类型 | 输入类型 |
+
 | :--- | :--- |
+
 | `<input type="button">` | `<input type="password">` |
+
 | `<input type="checkbox">` | `<input type="radio">` |
+
 | `<input type="color">` | `<input type="range">` |
+
 | `<input type="date">` | `<input type="reset">` |
+
 | `<input type="datetime-local">` | `<input type="search">` |
+
 | `<input type="email">` | `<input type="submit">` |
+
 | `<input type="file">` | `<input type="tel">` |
+
 | `<input type="hidden">` | `<input type="text">` |
+
 | `<input type="image">` | `<input type="time">` |
+
 | `<input type="month">` | `<input type="url">` |
+
 | `<input type="number">` | `<input type="week">` |
 
 如所见，有许多HTML表单输入类型。随着内容的深入，我们将更详细地探讨我们正在使用的类型。
@@ -2837,40 +2862,75 @@ initializeClock('clockdiv', deadline);
 ### 其他表单属性
 
 | 属性 | 值 | 描述 |
+
 | --- | --- | --- |
+
 | name | 文本 | 输入元素的名称。 |
+
 | value | 文本 | 输入元素的值。 |
+
 | id | 标识符 | 为输入定义一个唯一的标识符。 |
+
 | class | 类名 | 设置一个或多个要应用于输入的CSS类。 |
+
 | style | CSS样式 | 设置输入的样式。 |
+
 | data-* | 值 | 定义可供JavaScript使用的附加数据。 |
+
 | hidden | hidden | 指定输入是否隐藏。 |
+
 | title | 文本 | 设置一个标题，显示为工具提示。 |
+
 | tabindex | 索引 | 设置相对于其他元素的制表序列。 |
+
 | checked | checked | 用于类型：checkbox或radio。使选项被选中或选择。 |
+
 | placeholder | 文本 | 描述预期值的简短提示 |
+
 | maxlength | 数字 | 允许的最大字符数 |
+
 | required | 无值 | 将输入设置为必填字段 |
+
 | readonly | readonly | 使输入为只读 |
+
 | disabled | disabled | 禁用输入元素 |
+
 | autofocus | 无值 | 页面加载后将焦点设置在元素上 |
+
 | autocomplete | on / off | 向用户显示以前输入的值 |
+
 | form | 表单-id | 引用`<input>`元素所属表单的id |
+
 | formaction | URL | 用于类型：submit, image。提交数据将被处理的文件的URL或路径 |
+
 | formtarget | _blank _self _parent _top 帧名 | 用于类型：submit和image。指示响应应在何处显示 |
+
 | formenctype | application/x-www-form-urlencoded, multipart/form-data, text/plain | 用于类型：submit, image。如何将提交的表单数据编码到服务器。 |
+
 | formmethod | get / post | 用于类型：submit和image。发送表单数据的HTTP方法 |
+
 | formnovalidate | formnovalidate | 避免表单在提交后被验证 |
+
 | accept | 文件扩展名 audio/* video/* image/* 媒体类型 | 用于类型：file。指示用户可以选择哪些文件类型上传 |
+
 | min | 数字 / 日期 | 最小值 |
+
 | max | 数字 / 日期 | 最大值 |
+
 | step | 数字 / any | 合法数字之间的间隔 |
-| multiple | multiple | 允许用户从选择中选择多个值 |
+
+| multiple | multiple | 允用户从选择中选择多个值 |
+
 | pattern | 正则表达式 | 用于检查`<input>`元素值的正则表达式 |
+
 | size | 数字 | 输入控件的宽度（以字符数计） |
+
 | width | 像素 | 输入元素的宽度（以像素为单位）。用于图像输入类型。 |
+
 | height | 像素 | 元素的高度（以像素为单位）。用于图像输入类型 |
+
 | list | 数据列表-id | 包含`<input>`元素预定义选项的`<datalist>`元素 |
+
 | dirname | 输入名 | 要提交的文本方向 |
 
 与输入类型一样，也有许多HTML表单属性可供选择，用途各异。随着内容的深入，我们将更详细地探讨我们需要的那些。
@@ -2882,8 +2942,6 @@ initializeClock('clockdiv', deadline);
 ```
 
 好的，这与表单输入略有不同，因为它可以占据多行，而且顾名思义，它预设的输入类型是文本。
-
-
 
 ## 为我们的HTML表单设置样式
 
@@ -2991,7 +3049,9 @@ form{
 让我们思考一下这个部分的标题。它包含2个部分，但需要3个步骤。
 
 1.  从HTML表单获取数据
+
 2.  将其转换为JSON格式
+
 3.  将其添加到JSON文件
 
 创建一个名为‘addquestions.js’的新文件，并将其保存在‘js’文件夹中。
@@ -3006,7 +3066,7 @@ function submitForm(event){
 
 第一个函数与添加到HTML表单标签中的一些代码结合使用。即**onsubmit**="submitForm(event)"。它们共同阻止表单以默认方式提交，并使我们能够在下一个函数中收集表单数据。
 
-为什么我们需要这样做？默认情况下，当表单提交时，网页会刷新，因此数据会被清除。
+为什么我们需要这样做？默认情况下，当表提交时，网页会刷新，因此数据会被清除。
 
 ```
 function getMyData(){
@@ -3104,7 +3164,15 @@ localStorage.removeItem("fullname"); // 清除存储
 
 在代码的最后一部分，我们有变量声明和事件监听器，用于监听表单提交和点击保存题库按钮的事件。
 
-```
+
+
+# 创建测验应用与平台游戏
+
+## 测验应用开发
+
+### 初始化题库与本地存储
+
+```javascript
 const addQuestionButton = document.getElementById("submitQuestion");
 // 引用 submitQuestion 按钮并将其存储在名为 addQuestionButton 的变量中
 
@@ -3120,31 +3188,31 @@ const newObject = localStorage.getItem("questionBank");
 let dataStored = JSON.parse(newObject);
 // 将 JSON 数据解析为新的 JavaScript 对象
 
-if(dataStored != ""){
+if (dataStored != "") {
     // 如果 dataStored 不为空..
-    for(i=0; i < dataStored.length; i++){
+    for (i = 0; i < dataStored.length; i++) {
         questionBank.push(dataStored[i]);
     }
     // 遍历 dataStored 数组，并将每个问题推入 questionBank 数组
 } else {
-    for(i=0; i < data.length; i++){
+    for (i = 0; i < data.length; i++) {
         questionBank.push(data[i]);
     }
     // 否则，遍历 data 数组（在代码的 <head></head> 部分引入）并将每个问题推入 questionBank 数组
-}// 结束条件语句
+} // 结束条件语句
 ```
 
-```
+```javascript
 document.getElementById('qCount').innerHTML = questionBank.length;
 // 用题库中当前的题目数量更新 <h1> 标题标签
 ```
 
-```
+```javascript
 addQuestionButton.addEventListener("click", getMyData);
 // 监听提交表单按钮，当点击时调用或触发 getMyData() 函数
 ```
 
-```
+```javascript
 saveButton.addEventListener("click", saveMyFile);
 // 监听保存题库按钮，当点击时调用（触发） saveMyFile() 函数
 ```
@@ -3169,7 +3237,7 @@ saveButton.addEventListener("click", saveMyFile);
 
 好的，让我们来构建 HTML 标记。创建一个名为 `remove_questions.html` 的新文件，并将其保存在主 web 应用目录中。添加以下代码，然后保存（CTRL + S）。
 
-```
+```html
 <html>
 <head>
     <title>Quiz Bank Editor</title>
@@ -3201,7 +3269,7 @@ saveButton.addEventListener("click", saveMyFile);
 
 非常直接，对吧？你以前几乎见过这里所有的东西。然而，让我们深入看看这个表单，了解一下发生了什么。
 
-```
+```html
 <form id="removeQuestion" onsubmit="submitRemoveForm(event)">
     <label class="formLabel">Question Bank:</label><br>
     <!-- 在此添加所有带有复选框的问题 -->
@@ -3218,7 +3286,7 @@ saveButton.addEventListener("click", saveMyFile);
 
 打开 `app.css` 文件，并在底部添加以下内容：
 
-```
+```css
 #showQstn {
     text-align: left;
     display: block;
@@ -3255,19 +3323,19 @@ saveButton.addEventListener("click", saveMyFile);
 
 好的，除了一些规则外，你现在应该已经见过所有这些 CSS 了。本着避免过多重复的精神，我将只解释那些差异。
 
-```
+```css
 margin: 0 auto 0 auto;
 ```
 
 我们之前见过 `margin`，但 `auto` 是我们还没有探索过的。与 `display: block;` 和 `width: 420px;` 一起使用时，这会使元素作为块级元素显示在显示区域的中心。
 
-```
+```css
 #showQstn label:first-of-type{
     margin-left: 10px;
 }
 ```
 
-**label:first-of-type** - 这只为第一个 label 元素设置规则。
+`label:first-of-type` - 这只为第一个 label 元素设置规则。
 
 其余部分我们已经见过了。但是，请注意我们又创建了一个 wrapper 类和一个 footer 类。这是因为现有的规则不适用于我们的新 HTML 页面。这是因为这里的布局比我们问答幻灯片的原始结构更长（根据用户决定的问题数量，可能会长很多）。
 
@@ -3275,7 +3343,7 @@ margin: 0 auto 0 auto;
 
 打开 `app.js` 并替换这段代码：
 
-```
+```javascript
 const questionBank = [];
 for(i=0; i < data.length; i++){
     questionBank.push(data[i]);
@@ -3283,8 +3351,6 @@ for(i=0; i < data.length; i++){
 
 document.getElementById('quizLength').innerHTML = data.length;
 ```
-
-
 
 使用以下代码：
 
@@ -3519,8 +3585,6 @@ if (dataStored != "") {
 } // 关闭条件语句
 ```
 
-
-
 最后但同样重要的是，我们引用了用于删除和保存问题的按钮，并设置事件监听器来监听按钮点击。
 
 ```javascript
@@ -3674,15 +3738,19 @@ saveButton.addEventListener("click", saveMyFile);
 与之前对样式表的添加一样，你已经见过其中大部分命令了，所以我只讲解那些我们尚未涉及的部分：
 
 `border: solid 1px #333;`
+
 // 应用实线边框，宽度1像素，深灰色
 
 `margin: 50px 0 0 7vw;`
+
 // 虽然我们之前处理过外边距，但这里的7vw是一个我还没提到的尺寸度量单位。vw代表视口宽度。你也可以使用vh或视口高度。本质上，我们是将7%的视口宽度设置为左外边距（上、右、下、左）
 
 `#menubox a:hover`
+
 //这会将规则应用于ID为menubox的元素内部，被鼠标悬停的`<a>`标签
 
 `background-color: rgba(255,255,255,0.5);`
+
 //最后，我们之前见过使用命名颜色和十六进制颜色代码的颜色和背景颜色设置，但这里我们使用的是‘r, g, b, a’（红、绿、蓝、透明度）设置。‘r, g和b’的值范围都是0 - 255，即从黑色到白色，而‘a’代表Alpha通道或不透明度通道。我们选择的值255, 255, 255, 0.5是白色，不透明度为50%。
 
 ## 处理简单导航的JavaScript
@@ -3719,19 +3787,19 @@ function htmlMenu(){
 //开始htmlMenu函数
 
 	const menu = document.getElementById('menu');
-//引用ID为menu的元素，并将其存储在名为menu的变量中
+	//引用ID为menu的元素，并将其存储在名为menu的变量中
 
 	const menudismiss = document.getElementById('menudismiss');
-//引用ID为menudismiss的元素，并将其存储在一个变量中
+	//引用ID为menudismiss的元素，并将其存储在一个变量中
 
 	menu.innerHTML = '<h1>&#9776;</h1>';
-//将菜单设置为汉堡符号
+	//将菜单设置为汉堡符号
 
 	menu.addEventListener("click", displayMenu);
-//添加事件监听器以检测菜单点击。如果被点击则打开菜单
+	//添加事件监听器以检测菜单点击。如果被点击则打开菜单
 
 	menudismiss.addEventListener("click", dismissMenu);
-//添加事件监听器以检测菜单关闭点击。如果被点击则关闭菜单
+	//添加事件监听器以检测菜单关闭点击。如果被点击则关闭菜单
 
 }//结束函数
 
@@ -3739,17 +3807,17 @@ function displayMenu(){
 //开始显示菜单函数
 
 	const menubox = document.getElementById('menubox');
-//引用ID为menubox的元素，并将其存储在名为menubox的变量中
+	//引用ID为menubox的元素，并将其存储在名为menubox的变量中
 
 	if(menubox.style.display == "block"){
-//如果菜单框已显示..
+	//如果菜单框已显示..
 
 		menubox.style.display = "none";
-//...将其从显示中移除
+	//...将其从显示中移除
 	} else {
-//否则，如果菜单未显示
+	//否则，如果菜单未显示
 		menubox.style.display = "block";
-//显示菜单
+	//显示菜单
 
 	}//结束条件判断
 }//结束函数
@@ -3758,10 +3826,10 @@ function dismissMenu(){
 //开始关闭菜单函数
 
 	const menubox = document.getElementById('menubox');
-//引用ID为menubox的元素，并将其存储在名为menubox的变量中
+	//引用ID为menubox的元素，并将其存储在名为menubox的变量中
 
 	menubox.style.display = "none";
-//将菜单从显示中移除
+	//将菜单从显示中移除
 
 }//结束函数
 
@@ -3844,10 +3912,10 @@ htmlMenu();
 
 <head>
 	<title>Sorcerers Mountain</title>
-//为我们的 HTML 页面添加标题
+	//为我们的 HTML 页面添加标题
 
-<link rel="stylesheet" type="text/css" href="css/app.css"/>
-//引用 'app.css' 以允许我们为页面设置样式规则
+	<link rel="stylesheet" type="text/css" href="css/app.css"/>
+	//引用 'app.css' 以允许我们为页面设置样式规则
 
 </head>
 
@@ -3857,7 +3925,7 @@ htmlMenu();
     <div id="gameArea">
         <canvas id="canvas"></canvas>
     </div>
-//在 div 中添加一个 canvas 元素。这将用于显示我们的游戏，并为我们的 CSS 和 JavaScript 命令进行必要的引用
+	//在 div 中添加一个 canvas 元素。这将用于显示我们的游戏，并为我们的 CSS 和 JavaScript 命令进行必要的引用
 
     <script type="text/javascript" src="js/assets.js"></script>
     <script type="text/javascript" src="js/tiles.js"></script>
@@ -3865,7 +3933,7 @@ htmlMenu();
     <script type="text/javascript" src="js/main.js"></script>
     <script type="text/javascript" src="js/startScreen.js"></script>
     <script type="text/javascript" src="js/map1.js"></script>
-//引用 JavaScript 文件。将所有内容整合在一起
+	//引用 JavaScript 文件。将所有内容整合在一起
 
 </body>
 </html>
@@ -3902,6 +3970,7 @@ body, html {
     background: #1f1f1f;
 }
 ```
+
 //为整个 html 元素和 body 设置规则。将高度设置为 100%，如果内容大于页面则不显示滚动条，并将背景设置为深灰色。
 
 ```css
@@ -3909,6 +3978,7 @@ canvas{
     border:1px solid black;
 }
 ```
+
 //为 canvas 元素设置规则——制作一个 1 像素宽的纯黑色边框
 
 ```css
@@ -3917,6 +3987,7 @@ canvas{
     margin-top: 70px;
 }
 ```
+
 //为 ID 为 gameArea 的元素设置规则。将游戏区域居中对齐，并距屏幕顶部 70 像素。
 
 如前所述，这些都是非常直接的规则集。
@@ -3986,8 +4057,6 @@ https://wddtrw/resources/learntocode/platformgame_building_tiles.zip
 
 [https://wddtrw/resources/learntocode/quizapp.zip](https://wddtrw/resources/learntocode/quizapp.zip)
 
-
-
 你也可以选择自行制作这些图块。如果你希望这样做，或者编辑文件中现有的图块以使其略有不同，你需要一个图像编辑器。如果你没有可用的，我推荐使用 Gimp，它完全足够胜任这项工作，而且最重要的是它是免费的。你可以在 [https://gimp.org](https://gimp.org) 免费下载它。
 
 ![](img/159b1f3f81255361f46fe5a11415ff6e_161_0.png)
@@ -4019,7 +4088,7 @@ https://wddtrw/resources/learntocode/platformgame_building_tiles.zip
 ======================== */
 ```
 
-```
+```javascript
 const tile = [];
 for(i=0; i < 17; i++){
     tile[i] = new Image();
@@ -4031,7 +4100,7 @@ for(i=0; i < 17; i++){
 
 首先，注意这里有大量的注释。这样我们在绘制图块地图时，就能知道应该使用哪个索引号。
 
-```
+```javascript
 const tile = [];
 
 //创建一个空数组并将其存储在一个名为 tile 的变量中
@@ -4051,7 +4120,7 @@ tile[i].src = `tilesets/building_tiles/${i}.png`;
 
 请注意，为了使此方法有效，文件名需要是顺序的并且格式相同。我们也可以使用类似的代码将单个图块添加到我们的图块数组中，但需要指定索引而不是使用 `for` 循环，像这样：
 
-```
+```javascript
 tile[99] = new Image();
 tile[99].src = ‘tilesets/building_tiles/[FILENAME HERE]’;
 ```
@@ -4099,7 +4168,7 @@ for(i = 100; i < 110; i++){
 
 打开你选择的编码环境（如果尚未打开），创建一个名为 `main.js` 的新文件，并将其保存在 `js` 文件夹中。然后添加以下代码并保存 (CTRL + S)。
 
-```
+```javascript
 canvas.width = width;
 canvas.height = height;
 function update() {
@@ -4123,7 +4192,7 @@ document.body.addEventListener("keyup", function (e) {
 
 `main.js` 文件将包含使我们能够根据按键和/或玩家离开当前游戏屏幕边界来加载不同地图的代码。在构建游戏的过程中，我们将在这里添加更多逻辑。现在，让我们更深入地看看我们到目前为止做了什么：
 
-```
+```javascript
 canvas.width = width;
 //从 assets 文件中引入画布宽度的初始设置
 
@@ -4159,7 +4228,7 @@ document.body.addEventListener("keyup", function (e) {
 
 接下来，我们将创建第一个将显示一些结果的脚本。创建一个名为 `startScreen.js` 的新文件，并将其保存在 `js` 文件夹中。现在添加以下代码并保存 (CTRL + S)。
 
-```
+```javascript
 function drawMyMap1000(){
 ctx.drawImage(tile[15], 0, 0, 1152, 704);
   if(keys[83]){
@@ -4185,7 +4254,7 @@ ctx.drawImage(tile[15], 0, 0, 1152, 704);
 
 太棒了！让我们仔细看看发生了什么：
 
-```
+```javascript
 function drawMyMap1000(){// 打开绘制开始画面函数
 
 ctx.drawImage(tile[15], 0, 0, 1152, 704);
@@ -4233,15 +4302,13 @@ if (press_s.f === 100){
 
 ![](img/159b1f3f81255361f46fe5a11415ff6e_168_0.png)
 
-
-
 ## 第8步 - 构建我们的第一个瓦片地图
 
 现在让我们构建第一个瓦片地图！
 
 创建一个名为‘map1.js’的新文件，并将其保存在‘js’文件夹中。好的，现在添加以下代码，然后保存文件（CTRL + S）。
 
-```
+```javascript
 function drawMyMap(){
 ctx.drawImage(tile[16], 0, 0);
 var xt = 0;
@@ -4254,7 +4321,7 @@ tileMap[2] = [6, 0, 0, 9, 9, 9, 9, 9, 9, 8, 0, 0, 0, 0, 0, 0, 0];
 tileMap[3] = [6, 0, 11, 0, 0, 0, 0, 0, 0, 0, 10, 0, 0, 0, 9, 9, 0, 6];
 tileMap[4] = [6, 9, 9, 9, 9, 0, 0, 0, 0, 8, 9, 9, 9, 0, 0, 0, 6];
 tileMap[5] = [6, 0, 0, 0, 0, 9, 9, 0, 0, 0, 10, 0, 0, 9, 0, 9, 9, 6];
-tileMap[6] = [6, 0, 0, 0, 0, 0, 0, 0, 0, 9, 9, 9, 0, 0, 0, 0, 0, 6];
+tileMap[6] = [6, 0, 0, 0, 0, 0, 0, 0, 0, 0, 9, 9, 9, 0, 0, 0, 0, 6];
 tileMap[7] = [0, 0, 0, 0, 0, 0, 9, 9, 0, 0, 0, 0, 0, 8, 9, 8, 9, 6];
 tileMap[8] = [9, 9, 9, 8, 9, 0, 0, 0, 0, 0, 0, 0, 8, 10, 0, 10, 0, 6];
 tileMap[9] = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 3];
@@ -4272,7 +4339,7 @@ ctx.drawImage(tile[i], xt, yt);
 
 我们的每个游戏地图都会以相同的方式绘制。让我们仔细看看：
 
-```
+```javascript
 function drawMyMap(){
 //打开绘制地图函数
 ctx.drawImage(tile[16], 0, 0);
@@ -4285,11 +4352,11 @@ tileMap[0] = [6, 6, 6, 6, 6, 6, 0, 0, 0, 6, 6, 6, 6, 6, 6, 6, 6];
 tileMap[1] = [6, 0, 0, 0, 10, 0, 0, 11, 0, 0, 10, 0, 6, 0, 0, 0, 0, 0];
 tileMap[2] = [6, 0, 0, 9, 9, 9, 9, 9, 9, 9, 8, 0, 0, 0, 0, 0, 0, 0];
 tileMap[3] = [6, 0, 11, 0, 0, 0, 0, 0, 0, 0, 10, 0, 0, 0, 9, 9, 0, 6];
-tileMap[4] = [6, 9, 9, 9, 0, 0, 0, 0, 0, 0, 8, 9, 9, 0, 0, 0, 0, 6];
+tileMap[4] = [6, 9, 9, 9, 0, 0, 0, 0, 0, 0, 8, 9, 9, 9, 0, 0, 0, 0, 6];
 tileMap[5] = [6, 0, 0, 0, 0, 9, 9, 0, 0, 0, 10, 0, 0, 9, 0, 9, 9, 6];
-tileMap[6] = [6, 0, 0, 0, 0, 0, 0, 0, 0, 0, 9, 9, 9, 0, 0, 0, 0, 6];
+tileMap[6] = [6, 0, 0, 0, 0, 0, 0, 0, 0, 0, 9, 9, 9, 0, 0, 0, 0, 0, 6];
 tileMap[7] = [0, 0, 0, 0, 0, 0, 9, 9, 0, 0, 0, 0, 0, 8, 9, 8, 9, 6];
-tileMap[8] = [9, 9, 9, 8, 9, 0, 0, 0, 0, 0, 0, 8, 10, 0, 10, 0, 6];
+tileMap[8] = [9, 9, 9, 8, 9, 0, 0, 0, 0, 0, 0, 0, 8, 10, 0, 10, 0, 6];
 tileMap[9] = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 3];
 tileMap[10] = [13, 14, 13, 14, 13, 14, 13, 14, 13, 14, 13, 14, 13, 14, 13, 14, 13, 14];
 //将瓦片索引号存储在tileMap数组中
@@ -4370,7 +4437,7 @@ ctx.drawImage(tile[i], xt, yt);
 ============================ */
 ```
 
-```
+```javascript
 var wiz = [];
 for(i = 1; i < 11; i++){
     wiz[i] = new Image();
@@ -4386,7 +4453,7 @@ for(i = 1; i < 11; i++){
 
 接下来，打开‘assets.js’文件，并按照下面的方式更新玩家对象，然后保存文件（CTRL + S）：
 
-```
+```javascript
 player = {
     x: 608,
     y: height - 182,
@@ -4402,11 +4469,11 @@ player = {
 
 好的，完成这些后，现在打开‘main.js’，添加以下两个条件语句，并保存文件（CTRL + S）：
 
-```
+```javascript
 if (player.screen === 1){ drawMyMap(); } ← 在这行代码之后添加以下内容
 ```
 
-```
+```javascript
 if (player.screen < 15 && player.start === 0) {
     player.start = 1;
 }
@@ -4417,14 +4484,14 @@ if (player.screen != 15){
 
 那么我们在这里做了什么？
 
-```
+```javascript
 if (player.screen < 15 && player.start === 0) {
     player.start = 1;
 }
 //如果屏幕不再是标题屏幕，并且玩家的start属性为0，则将start属性设置为1
 ```
 
-```
+```javascript
 if (player.screen != 15){
     ctx.drawImage(wiz[player.f], player.x, player.y);
 }
@@ -4435,7 +4502,7 @@ if (player.screen != 15){
 
 现在让我们添加一些控件来让你的玩家移动。再次编辑‘assets.js’文件，并添加以下突出显示的属性：
 
-```
+```javascript
 player = {
     x: 608,
     y: height - 182,// 起始高度（必须大于瓦片高度加上角色高度
@@ -4459,7 +4526,7 @@ friction = 0.8;
 
 接下来，编辑‘main.js’文件，并在`update()`函数的开头行之后添加以下内容：
 
-```
+```javascript
 if (keys[39]) {
     if (player.velX < player.speed) {
         player.velX++;
@@ -4474,9 +4541,7 @@ if (keys[37]) {
 }
 ```
 
-
-
-```
+```javascript
 player.velX *= friction;
 player.velY += gravity;
 player.x += player.velX;
@@ -4484,7 +4549,7 @@ player.x += player.velX;
 
 保存文件（CTRL + S）。现在，让我们更仔细地看看这些代码：
 
-```
+```javascript
 if (keys[39]) {
     if (player.velX < player.speed) {
         player.velX++;
@@ -4495,7 +4560,7 @@ if (keys[39]) {
 //并将玩家精灵设置为 sprite[1] - 面朝右
 ```
 
-```
+```javascript
 if (keys[37]) {
     if (player.velX > -player.speed) {
         player.velX--;
@@ -4506,17 +4571,17 @@ if (keys[37]) {
 //并将玩家精灵设置为 sprite[3] - 面朝左
 ```
 
-```
+```javascript
 player.velX *= friction;
 // 通过应用摩擦系数，将X轴速度设置为逐渐停止
 ```
 
-```
+```javascript
 player.velY += gravity;
 // 通过应用重力系数，将Y轴速度设置为向回落到地面
 ```
 
-```
+```javascript
 player.x += player.velX;
 // 根据X轴速度移动玩家的x位置
 ```
@@ -4548,6 +4613,9 @@ player.x += player.velX;
 | delete | 46 | w | 87 | f12 | 123 |
 | 0 | 48 | x | 88 | num lock | 144 |
 | 1 | 49 | y | 89 | scroll lock | 145 |
+
+
+
 | 2 | 50 | z | 90 | semi-colon | 186 |
 | 3 | 51 | left window key | 91 | equal sign | 187 |
 | 4 | 52 | right window key | 92 | comma | 188 |
@@ -4572,16 +4640,16 @@ player.x += player.velX;
 让我们先看看碰撞检测的概念。它确实涉及一些计算，但如果我们以圆为例，则更容易理解。取两个圆，直径均为10厘米，因此半径为5厘米。如果我们说圆1的中心是C1，圆2的中心是C2。要计算它们是否发生碰撞（重叠），我们只需要计算C1和C2之间的距离是否小于10厘米。请参见下图：
 
 ![](img/159b1f3f81255361f46fe5a11415ff6e_181_0.png)
-
 ![](img/159b1f3f81255361f46fe5a11415ff6e_181_1.png)
 
 如果距离更大，则圆不可能接触；如果距离更小，则表示它们已重叠。
+
 为了实现这一点，我们需要：
 
-- 1. 计算对象的大小
-- 2. 找到两个对象的中心
-- 3. 计算从中心到两个对象边缘的距离并求和
-- 4. 计算当前中心测量值与总允许距离之间的差值
+1. 计算对象的大小
+2. 找到两个对象的中心
+3. 计算从中心到两个对象边缘的距离并求和
+4. 计算当前中心测量值与总允许距离之间的差值
 
 因此，我们的碰撞检测公式将如下所示：
 
@@ -4594,11 +4662,11 @@ if(((c1.x - c1_middle) - (c2.x - c2_middle)) < c_total || ((c1.y - c1_middle) - 
 }
 ```
 
-当然，我们可以进一步简化我们的方程，但这只是为了举例说明。这里的 c1.x c1.y c2.x c2.y 代表 c1 和 c2 当前的 x 和 y 坐标。所以，我们是在说，如果 c1 和 c2 的当前 x 位置小于10厘米，或者 c1 和 c2 的当前 y 位置小于10厘米，则发生了碰撞。好消息是，我们只需要设置一次碰撞检测。一个函数就能为我们处理所有事情。表面上看起来很复杂，但分解开来就更容易理解了。
+当然，我们可以进一步简化我们的方程，但这只是为了举例说明。这里的 `c1.x` `c1.y` `c2.x` `c2.y` 代表 `c1` 和 `c2` 当前的 x 和 y 坐标。所以，我们是在说，如果 `c1` 和 `c2` 的当前 x 位置小于10厘米，或者 `c1` 和 `c2` 的当前 y 位置小于10厘米，则发生了碰撞。好消息是，我们只需要设置一次碰撞检测。一个函数就能为我们处理所有事情。表面上看起来很复杂，但分解开来就更容易理解了。
 
 在你能完全理解之前，你可以把这个函数当作一个黑盒子。你只需要知道获得所需输出所需的输入即可。然而，数学在游戏编程中起着根本性作用，所以如果你能掌握它会更好。
 
-好的，让我们开始吧！再次打开 'assets.js' 文件，在文件底部添加以下代码并保存文件（CTRL + S）：
+好的，让我们开始吧！再次打开 `assets.js` 文件，在文件底部添加以下代码并保存文件（`CTRL + S`）：
 
 ```
 var boxes = [];
@@ -4607,7 +4675,7 @@ var boxesDrawn1 = 0;
 //为我们的碰撞坐标创建两个空数组，并设置一个变量来检查碰撞框是否已绘制。
 ```
 
-接下来，创建一个名为 'collisions.js' 的新文件，并将其保存在 'js' 文件夹中。添加以下函数，然后保存它（CTRL + S）。
+接下来，创建一个名为 `collisions.js` 的新文件，并将其保存在 `js` 文件夹中。添加以下函数，然后保存它（`CTRL + S`）。
 
 ```
 function colCheck(shapeA, shapeB) {
@@ -4641,7 +4709,7 @@ function colCheck(shapeA, shapeB) {
 }
 ```
 
-好的，这里我们向函数传递了两个参数，‘shapeA’ 和 ‘shapeB’。我们正在检查两个形状之间所有方向的碰撞，并返回一个名为 ‘colDir’ 的值。返回的 ‘colDir’ 值简单地是 ‘l’, ‘r’, ‘b’ 或 ‘t’，分别代表检测到的任何碰撞的方向：左、右、下和上。使用这些值，我们将确定在这种情况下我们想要做什么。不过，首先，让我们更仔细地看看 colDir 函数内部发生了什么：
+好的，这里我们向函数传递了两个参数，`shapeA` 和 `shapeB`。我们正在检查两个形状之间所有方向的碰撞，并返回一个名为 `colDir` 的值。返回的 `colDir` 值简单地是 `l`、`r`、`b` 或 `t`，分别代表检测到的任何碰撞的方向：左、右、下和上。使用这些值，我们将确定在这种情况下我们想要做什么。不过，首先，让我们更仔细地看看 `colDir` 函数内部发生了什么：
 
 ```
 function colCheck(shapeA, shapeB) {
@@ -4682,20 +4750,20 @@ function colCheck(shapeA, shapeB) {
     }
     // 确定我们碰撞在哪一侧（顶部、底部、左侧或右侧）
 }
-```
-
-
 
 return colDir;
+
 //返回碰撞方向
 
 }// 关闭碰撞检测函数
+```
 
 这里有一个数学函数 `Math.abs()`。`Math.abs()` 方法返回一个数字的绝对值。
+
 它的返回值是：
 
 - 一个代表指定数字绝对值的数字
-- 如果该值不是数字（例如文本字符串），则返回 NaN
+- 如果该值不是数字（例如文本字符串），则返回 `NaN`
 - 如果该值为 `null`（没有值），则返回 0
 
 根据定义，一个数字的绝对值意味着什么？
@@ -4703,7 +4771,8 @@ return colDir;
 1. 数学 - 不考虑符号的实数的大小。
 2. 技术 - 一个数值或测量的实际大小，与其与其他值的关系无关。
 
-在我们的例子中，如果我们使用 `Math.abs(vX)`，无论 vX 是负数还是正数，该方法都只返回该数字。
+在我们的例子中，如果我们使用 `Math.abs(vX)`，无论 `vX` 是负数还是正数，该方法都只返回该数字。
+
 例如
 
 ```
@@ -4863,7 +4932,7 @@ if (player.screen != 15){
 //如果玩家不在标题屏幕，则绘制主角
 ```
 
-最后，打开 `map1.js` 并在文件底部添加以下代码，然后保存（CTRL + S）：
+最后，打开 `map1.js` 并在文件底部添加以下代码，然后保存（`CTRL + S`）：
 
 ```
 function addBox(a,b,c,d){
@@ -4947,8 +5016,6 @@ if (keys[38] || keys[32]) {
 }
 ```
 
-
-
 保存文件。这样玩家就能跳跃了。每当按下空格键或向上箭头键时。结合左右方向键，你现在可以浏览整个游戏屏幕了。试试看。
 
 太棒了！让我们添加一些敌人吧！
@@ -4958,15 +5025,16 @@ if (keys[38] || keys[32]) {
 在练习开始时，我解释了游戏的目标是收集所有宝石并避开障碍物。在这一部分，我们将添加幽灵、蝙蝠和致命的尖刺。为了给它们一个标签，我们将它们统称为敌人。
 
 我们需要做的第一件事是导入所需的精灵图。和之前一样，你可以通过以下链接下载：
+
 [https://wddtrw/resources/learntocode/platformgame_enemy_sprites.zip](https://wddtrw/resources/learntocode/platformgame_enemy_sprites.zip)
 
-下载后，解压并将内容添加到 'sprites' 文件夹。要解压文件，双击它，然后选择所有内容 (CTRL + A) 并复制 (CTRL + C)，接着打开 'sprites' 文件夹并粘贴 (CTRL + V)。
+下载后，解压并将内容添加到 `sprites` 文件夹。要解压文件，双击它，然后选择所有内容 (`CTRL + A`) 并复制 (`CTRL + C`)，接着打开 `sprites` 文件夹并粘贴 (`CTRL + V`)。
 
 如果一切顺利，你应该能看到以下内容：
 
 ![](img/159b1f3f81255361f46fe5a11415ff6e_193_0.png)
 
-按照常规方式，我们将它们添加到精灵图文件中。打开 'sprites.js' 并将以下代码添加到文件底部，然后保存 (CTRL + S)：
+按照常规方式，我们将它们添加到精灵图文件中。打开 `sprites.js` 并将以下代码添加到文件底部，然后保存 (`CTRL + S`)：
 
 ```
 /* ================================
@@ -4984,7 +5052,7 @@ for(i = 200; i < 205; i++){
 //this adds our 5 enemy sprites to the sprites array at stated indexes
 ```
 
-接下来我们需要做的是在资源文件中设置它们。打开 'assets.js' 文件。在 player 对象的结束花括号 ( }, ) 之后添加以下代码，然后保存文件：
+接下来我们需要做的是在资源文件中设置它们。打开 `assets.js` 文件。在 player 对象的结束花括号 (`},`) 之后添加以下代码，然后保存文件：
 
 ```
 enemy1 = { x: 64, y: 452, w: 59, h: 57, s: 2, f: 200, dest: 0 },
@@ -4997,17 +5065,17 @@ spikes2 = { x: 684, y: 556, w: 61, h: 20 },
 
 //在这里，我们设置了三个幽灵（敌人 1 - 3）、一只蝙蝠和两个尖刺对象的初始值。每个对象都有一些或全部以下变量：
 
-- x - X轴起始坐标
-- y - Y轴起始坐标
-- w - 以像素为单位的宽度
-- h - 以像素为单位的高度
-- s - 速度
-- f - 精灵图帧
-- dest - 目的地
+- `x` - X轴起始坐标
+- `y` - Y轴起始坐标
+- `w` - 以像素为单位的宽度
+- `h` - 以像素为单位的高度
+- `s` - 速度
+- `f` - 精灵图帧
+- `dest` - 目的地
 
 重要的是，我们不必在每个游戏屏幕中都使用所有这些变量，但它们现在已声明并设置好以备使用。还要注意，尖刺对象不需要速度、帧或目的地，因为它们是静态的。
 
-接下来，创建一个名为 'enemy.js' 的新文件并将其保存在 'js' 文件夹中。然后添加以下代码：
+接下来，创建一个名为 `enemy.js` 的新文件并将其保存在 `js` 文件夹中。然后添加以下代码：
 
 ```
 function enemy(sn, e, ax, bx, f1, f2, p, xy, xos, yos){
@@ -5058,7 +5126,7 @@ function lifeLost(e, p, xos){
 }
 ```
 
-好的，正如你所看到的，我们这里有三个函数。第一个函数绘制敌人，根据需要在X轴或Y轴上设置它们的移动，每200毫秒为敌人制作动画，并处理与这些（动画和移动的）敌人的碰撞。第二个函数绘制静态敌人，并处理与这些静态敌人（尖刺）的碰撞。第三个函数（lifeLost）在上述函数检测到玩家与敌人之间发生碰撞时被调用。
+好的，正如你所看到的，我们这里有三个函数。第一个函数绘制敌人，根据需要在X轴或Y轴上设置它们的移动，每200毫秒为敌人制作动画，并处理与这些（动画和移动的）敌人的碰撞。第二个函数绘制静态敌人，并处理与这些静态敌人（尖刺）的碰撞。第三个函数（`lifeLost`）在上述函数检测到玩家与敌人之间发生碰撞时被调用。
 
 让我们仔细看看：
 
@@ -5150,7 +5218,7 @@ function enemyStatic(sn, e, xos, yos, p){
 }
 ```
 
-简单得多，但对玩家来说也更容易导航。最后，我们有 lifeLost 函数。
+简单得多，但对玩家来说也更容易导航。最后，我们有 `lifeLost` 函数。
 
 ```
 function lifeLost(e, p, xos){
@@ -5177,7 +5245,7 @@ function lifeLost(e, p, xos){
 }
 ```
 
-接下来，我们需要在绘制地图后调用 enemy 和 enemyStatic 函数。打开 'map1.js'，在外部 for 循环的结束花括号 ( } ) 之后添加以下函数调用，然后保存 (CTRL + S)。
+接下来，我们需要在绘制地图后调用 `enemy` 和 `enemyStatic` 函数。打开 `map1.js`，在外部 for 循环的结束花括号 (`}`) 之后添加以下函数调用，然后保存 (`CTRL + S`)。
 
 ```
 enemy(enemy1.f, enemy1, 335, 0, 200, 201, player, 1, 0, 0);
@@ -5186,7 +5254,7 @@ enemy(enemy3.f, enemy3, 265, 64, 200, 201, player, 2, 0, 0);
 enemyStatic(202, spikes1, 0, 0, player);
 ```
 
-好的，最后我们需要设置起始位置并给玩家一些反馈。打开 main.js'。
+好的，最后我们需要设置起始位置并给玩家一些反馈。打开 `main.js`。
 
 添加以下条件语句来设置敌人起始位置：
 
@@ -5198,11 +5266,9 @@ if (player.screen === 1 && boxesDrawn1 < 2 ) {
     bat1.x = 62; bat1.y = 70; enemy2.dest = 0;
 ```
 
-
-
 ## 游戏结束
 
-打开‘enemy.js’文件，在`lifeLost`函数末尾添加以下条件判断：
+打开 `enemy.js` 文件，在 `lifeLost` 函数末尾添加以下条件判断：
 
 ```javascript
 if (player.lives === 0){
@@ -5210,7 +5276,7 @@ if (player.lives === 0){
 }
 ```
 
-然后在文件末尾添加以下`gameOver`函数，并保存文件（CTRL + S）：
+然后在文件末尾添加以下 `gameOver` 函数，并保存文件（`CTRL + S`）：
 
 ```javascript
 function gameOver(){
@@ -5220,30 +5286,32 @@ function gameOver(){
 }
 ```
 
-最后，打开‘main.js’，在`update`函数顶部添加以下条件判断：
+最后，打开 `main.js`，在 `update` 函数顶部添加以下条件判断：
 
 ```javascript
 if (player.screen === 15){ drawMyMap1000();}◀ 在此行之后
 if (player.screen === 20){ gameOver();}◀ 添加此行
 ```
 
-保存文件（CTRL + S）。现在当`player.lives === 0`时，你会得到：
+保存文件（`CTRL + S`）。现在当 `player.lives === 0` 时，你会得到：
 
 ![](img/159b1f3f81255361f46fe5a11415ff6e_202_0.png)
 
 ## 第12步 - 添加可收集物品
 
 首先，我们需要导入所需的精灵图。与之前所有情况一样，你可以通过以下链接下载：
+
 https://wddtrw/resources/learntocode/platfromgame_collectables.zip
 
-下载后，解压并将内容添加到‘sprites’文件夹。要解压文件，双击它，然后选择所有内容（CTRL + A），复制（CTRL + C），接着打开‘sprites’文件夹并粘贴（CTRL + V）。
+下载后，解压并将内容添加到 `sprites` 文件夹。要解压文件，双击它，然后选择所有内容（`CTRL + A`），复制（`CTRL + C`），接着打开 `sprites` 文件夹并粘贴（`CTRL + V`）。
+
 如果一切顺利，你应该能看到以下内容：
 
 ![](img/159b1f3f81255361f46fe5a11415ff6e_203_0.png)
 
 其中一些精灵图也将在下一节中用于游戏监视器。
 
-以我们现在非常熟悉的方式，我们将它们添加到精灵文件中。打开‘sprites.js’，在文件底部添加以下代码，然后保存（CTRL + S）：
+以我们现在非常熟悉的方式，我们将它们添加到精灵文件中。打开 `sprites.js`，在文件底部添加以下代码，然后保存（`CTRL + S`）：
 
 ```javascript
 /* ===============================
@@ -5298,23 +5366,23 @@ function init() {
 
 继续...
 
-创建一个名为‘collectables.js’的新文件，将其保存在‘js’文件夹中，并确保在‘sorcerer.html’文件中添加对该文件的引用，如下所示并保存（CTRL + S）：
+创建一个名为 `collectables.js` 的新文件，将其保存在 `js` 文件夹中，并确保在 `sorcerer.html` 文件中添加对该文件的引用，如下所示并保存（`CTRL + S`）：
 
 ```html
 <script type="text/javascript" src="js/collectables.js"></script>
 //放置在 enemy.js 引用下方
 ```
 
-接下来，打开‘assets.js’，添加以下两行代码，以初始化我们的金币设置。第一行声明了一个新的硬币对象，设置了我们精灵图的宽高，并将初始硬币计数设置为零（0）。其次，我们有一个包含十个分隔值的`coinsCollected`数组，所有值都设置为零。这些值中的每一个代表一枚硬币。零（0）表示未收集，一（1）表示已收集。你很快就会看到我们如何使用它来确定是否应该绘制该硬币。
+接下来，打开 `assets.js`，添加以下两行代码，以初始化我们的金币设置。第一行声明了一个新的硬币对象，设置了我们精灵图的宽高，并将初始硬币计数设置为零（0）。其次，我们有一个包含十个分隔值的 `coinsCollected` 数组，所有值都设置为零。这些值中的每一个代表一枚硬币。零（0）表示未收集，一（1）表示已收集。你很快就会看到我们如何使用它来确定是否应该绘制该硬币。
 
 ```javascript
 coin = { width: 49, height: 50, count: 0 },
 coinsCollected = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
 ```
 
-好了，回到我们的‘collectables.js’文件，让我们来处理绘制和收集硬币。
+好了，回到我们的 `collectables.js` 文件，让我们来处理绘制和收集硬币。
 
-添加以下代码，然后保存文件（CTRL + S）。
+添加以下代码，然后保存文件（`CTRL + S`）。
 
 ```javascript
 var coins = [];
@@ -5341,7 +5409,7 @@ player.score+=10;
 }
 ```
 
-`addCoins`函数完成三项工作。它传入所需的参数，检查玩家是否与任何硬币发生了碰撞，然后在确定玩家尚未碰撞（收集）硬币时绘制该硬币。
+`addCoins` 函数完成三项工作。它传入所需的参数，检查玩家是否与任何硬币发生了碰撞，然后在确定玩家尚未碰撞（收集）硬币时绘制该硬币。
 
 让我们仔细看看：
 
@@ -5384,15 +5452,15 @@ ctx.drawImage(sprite[305], coins[i].x, coins[i].y, coins[i].width, coins[i].heig
 //否则，如果硬币已被收集
 
     coin.count+=1;
-//硬币计数加1 - 用于游戏监视器
+    //硬币计数加1 - 用于游戏监视器
 
     player.score+=10;
-//玩家得分加10 - 用于游戏监视器
+    //玩家得分加10 - 用于游戏监视器
   }
 }
 ```
 
-现在，让我们让它工作起来。打开‘map1.js’，在绘制瓦片地图的嵌套 for 循环之后立即添加以下函数调用，并保存文件（CTRL + S）：
+现在，让我们让它工作起来。打开 `map1.js`，在绘制瓦片地图的嵌套 for 循环之后立即添加以下函数调用，并保存文件（`CTRL + S`）：
 
 ```javascript
 addCoins(coin, 49, 50, 76, 78, 76, 142, 76, 206, 140, 332, 396, 204, 460, 204, 396, 12, 716, 332, 908, 76, 600, 78)
@@ -5442,9 +5510,9 @@ if (gems[i].c == 0 && gemsCollected[i] == 0){
 }
 ```
 
-注意这段代码除了变量名从`coins`改为`gems`外，几乎是完全相同的。这意味着我们可以对其进行优化。我们应该尽可能地消除重复代码。例如，这里我们可以构建一个大型数组来存放所有可收集对象。考虑到这一点，让我们快速回顾一下。
+注意这段代码除了变量名从 `coins` 改为 `gems` 外，几乎是完全相同的。这意味着我们可以对其进行优化。我们应该尽可能地消除重复代码。例如，这里我们可以构建一个大型数组来存放所有可收集对象。考虑到这一点，让我们快速回顾一下。
 
-首先，打开‘assets.js’文件，添加以下代码替换原来的硬币资源，然后保存（CTRL + S）：
+首先，打开 `assets.js` 文件，添加以下代码替换原来的硬币资源，然后保存（`CTRL + S`）：
 
 ```
 coin = {width:49, height:50, count:0, mn:1, sn:305, fct:0, t:'coins'},
@@ -5454,18 +5522,18 @@ potion = {width:30, height:52, count:0, mn:1, sn:308, fct:16, t:'potions' },
 flask = {width:38, height:49, count:0, mn:1, sn:309, fct:18, t:'flasks' },
 star = {width:39, height:39, count:0, mn:1, sn:307, fct:23, t:'stars' },
 bolt = {width:39, height:39, count:0, mn:1, sn:306, fct:28, t:'bolts' },
-itemsCollected = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+itemsCollected = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
 ```
 
 这些是所有可收集物品的初始设置。
 
-- width（宽度）
-- height（高度）
-- count – 已收集的数量
-- mn – 地图编号
-- sn – 精灵图编号
-- fct – 递增索引因子
-- t – 可收集物品的类型，作为字符串
+- `width`（宽度）
+- `height`（高度）
+- `count` – 已收集的数量
+- `mn` – 地图编号
+- `sn` – 精灵图编号
+- `fct` – 递增索引因子
+- `t` – 可收集物品的类型，作为字符串
 
 在同一文件的底部，为屏幕2的平台碰撞检测添加以下代码：
 
@@ -5474,9 +5542,9 @@ var boxes2 = [];
 var boxesDrawn2 = 0;
 ```
 
-然后保存文件（CTRL + S）。
+然后保存文件（`CTRL + S`）。
 
-接下来，让我们添加函数调用。打开‘map1.js’文件，添加以下代码，替换掉原来的addCoins函数调用，然后保存（CTRL + S）：
+接下来，让我们添加函数调用。打开 `map1.js` 文件，添加以下代码，替换掉原来的 `addCoins` 函数调用，然后保存（`CTRL + S`）：
 
 ```
 //addCxs(item, x1, y1, x2, y2, x3, y3, x4, y4, x5, y5, x6, y6, x7, y7,
@@ -5492,7 +5560,7 @@ addCxs(bolt, 425, 384);
 //现在我们最多可以为每种物品添加10个，只需指定x和y坐标并从assets中引入物品对象
 ```
 
-最后，打开‘collectables.js’文件，用以下函数替换所有代码，以处理所有可收集物品，然后保存文件（CTRL + S）：
+最后，打开 `collectables.js` 文件，用以下函数替换所有代码，以处理所有可收集物品，然后保存文件（`CTRL + S`）：
 
 ```
 var items = [];
@@ -5555,7 +5623,7 @@ y7, x8, y8, x9, y9, x10, y10){
 }
 ```
 
-让我们像往常一样分解解释一下。这里的逻辑与之前的addCoins函数相同，但考虑了我们引用的是哪种可收集物品。
+让我们像往常一样分解解释一下。这里的逻辑与之前的 `addCoins` 函数相同，但考虑了我们引用的是哪种可收集物品。
 
 ```
 var items = [];
@@ -5579,7 +5647,6 @@ function addCxs(item, x1, y1, x2, y2, x3, y3, x4, y4, x5, y5, x6, y6, x7, y7, x8
 //玩家在第1号屏幕上，计算公式将是0 * 30 + assets中给出的物品因子，
 //第2号屏幕将是1 * 30 + 物品因子，以此类推。30是每个游戏屏幕
 //可收集物品的最大数量，基于以下考虑：
-```
 
 - 硬币 x 10
 - 宝石 x 2
@@ -5590,7 +5657,6 @@ function addCxs(item, x1, y1, x2, y2, x3, y3, x4, y4, x5, y5, x6, y6, x7, y7, x8
 - 闪电螺栓 x 2
 - 备用索引 x 5 – 如果我们想添加更多可收集物品
 
-```
     let xs = [];
     xs[1+mn] = x1;
     xs[2+mn] = x2;
@@ -5646,26 +5712,25 @@ function addCxs(item, x1, y1, x2, y2, x3, y3, x4, y4, x5, y5, x6, y6, x7, y7, x8
             //物品计数加1 - 用于下一节的游戏监控器
 ```
 
-
-
 干得漂亮！如果你一切都操作正确，刷新浏览器并按“s”键开始，你应该会看到以下内容：
 
 ![](img/159b1f3f81255361f46fe5a11415ff6e_216_0.png)
 
 很好！在下一节中，我们将研究如何生成一些用户反馈。
+
 我想是时候再次休息一下了。喝杯茶，放松一下，恢复精力。
 
 ![](img/159b1f3f81255361f46fe5a11415ff6e_217_0.png)
 
 ## 第13步 - 游戏监控器
 
-好的，首先打开“sorcerer.html”，在“enemy.js”引用之后添加以下JavaScript文件引用，然后保存。
+好的，首先打开 `sorcerer.html`，在 `enemy.js` 引用之后添加以下JavaScript文件引用，然后保存。
 
 ```
 <script type="text/javascript" src="js/gameMonitor.js"></script>
 ```
 
-接下来，创建一个名为“gameMonitor.js”的新文件，然后添加下面的代码并保存文件（CTRL + S）：
+接下来，创建一个名为 `gameMonitor.js` 的新文件，然后添加下面的代码并保存文件（`CTRL + S`）：
 
 ```
 function gameMonitor(){
@@ -5686,7 +5751,7 @@ bolt.height/1.5);
 }
 ```
 
-我们这里所做的只是将精灵绘制到屏幕的特定位置并稍微调整它们的大小。为了让他们被绘制出来，我们必须调用该函数。打开“map1.js”，在可收集物品的函数调用下方添加以下函数调用：
+我们这里所做的只是将精灵绘制到屏幕的特定位置并稍微调整它们的大小。为了让他们被绘制出来，我们必须调用该函数。打开 `map1.js`，在可收集物品的函数调用下方添加以下函数调用：
 
 ```
 gameMonitor();
@@ -5696,7 +5761,7 @@ gameMonitor();
 
 ![](img/159b1f3f81255361f46fe5a11415ff6e_219_0.png)
 
-现在，我们需要添加数字来向玩家提供反馈。打开“main.js”，在player.screen条件内部添加以下代码，然后像往常一样保存文件：
+现在，我们需要添加数字来向玩家提供反馈。打开 `main.js`，在 `player.screen` 条件内部添加以下代码，然后像往常一样保存文件：
 
 ```
 if (player.screen != 15 && player.screen != 20){
@@ -5724,6 +5789,7 @@ if (player.screen != 15 && player.screen != 20){
 ```
 
 //add counts to the game monitor - updated with
+
 requestAnimationFrame(update); 60 frames per second (every 16.7 ms)
 
 如果你一切都操作正确，你现在应该能看到以下内容：
@@ -5740,15 +5806,15 @@ requestAnimationFrame(update); 60 frames per second (every 16.7 ms)
 
 ![](img/159b1f3f81255361f46fe5a11415ff6e_221_0.png)
 
-接下来，打开“sorcerer.html”，在map1的引用下方添加第二个地图的引用，如下所示：
+接下来，打开 `sorcerer.html`，在 map1 的引用下方添加第二个地图的引用，如下所示：
 
 ```
 <script type="text/javascript" src="js/map2.js"></script>
 ```
 
-保存文件（CTRL + S）。
+保存文件（`CTRL + S`）。
 
-现在，创建一个名为“map2.js”的新文件并保存在“js”文件夹中。然后添加以下代码：
+现在，创建一个名为 `map2.js` 的新文件并保存在 `js` 文件夹中。然后添加以下代码：
 
 ```
 function drawMyMap2(){
@@ -5829,9 +5895,9 @@ return boxesDrawn2;
 
 你应该能认出所有这些代码。除了改变的参数，这段程序代码与界面1的相同。只是为了回顾一下，我们绘制了背景图像，然后是瓦片地图，添加了可收集物品，接着是游戏监控器、敌人，最后是碰撞框。
 
-如果你需要进一步的澄清，请回到第162页及以后，那里我们构建了“map1.js”。因为解释基本上是相同的。
+如果你需要进一步的澄清，请回到第162页及以后，那里我们构建了 `map1.js`。因为解释基本上是相同的。
 
-我们需要采取的最后一步是对“main.js”进行一个小更新，以允许主角访问其他瓦片地图。例如，当玩家移出界面1的左侧时，他们需要到达界面2的右侧。同样，如果玩家移出界面2的右侧，他们需要到达界面1的左侧。打开“main.js”并添加以下代码，然后保存文件：
+我们需要采取的最后一步是对 `main.js` 进行一个小更新，以允许主角访问其他瓦片地图。例如，当玩家移出界面1的左侧时，他们需要到达界面2的右侧。同样，如果玩家移出界面2的右侧，他们需要到达界面1的左侧。打开 `main.js` 并添加以下代码，然后保存文件：
 
 ```
 if (player.screen === 1){ drawMyMap(); }← following this line add the code below
@@ -5865,17 +5931,24 @@ if (player.x > 1103 && player.screen === 2){
 }
 ```
 
-
-
 如果 (`player.y > 635 && player.screen === 2`) {
+
     player.screen = 5;
+
     player.y = 5;
+
     player.entered = 0;
+
 }
+
 如果 (`player.y < -20 && player.screen === 2`) {
+
     player.screen = 8;
+
     player.y = 576;
+
     player.entered = 0;
+
 }
 
 然后，在这段代码块之后：
@@ -5922,6 +5995,8 @@ if (player.x < 5 && player.screen === 1){
 ```
 
 每个屏幕的每个可能的出入口点都有相应的条件判断。接下来，我们看下面的代码块：
+
+
 
 ```
 if (player.screen === 2){ drawMyMap2(); }
@@ -6099,8 +6174,6 @@ if(player.lives < 1){ playMusic(2);}
 
 现在我们有了音乐和音效。为什么不尝试实验并添加更多你自己的音效呢？如果你没有编辑音效文件的工具，我强烈推荐免费的Audacity。
 
-
-
 你可以在以下地址找到它：
 
 [https://www.audacityteam.org/download/](https://www.audacityteam.org/download/)
@@ -6114,16 +6187,27 @@ if(player.lives < 1){ playMusic(2);}
 ## 可以尝试的想法：
 
 - 添加更多游戏画面
-- 制作新的图块和图块地图
+
+- 制作新的图块和图块地 map
+
 - 添加不同的敌人
+
 - 尝试添加不同的收集品，例如浆果或面包。你也可以添加一些应该避免食用的物品。如果玩家吃了有毒的浆果，也许会失去一条生命？
+
 - 生成和重生动画
+
 - 遇敌和死亡动画
+
 - 主角动画——行走、跳跃
+
 - 施放法术
+
 - 确定角色能从多高处坠落而不死亡
+
 - 添加高分榜
+
 - 门——收集钥匙来开门
+
 - ...列表仍在继续
 
 一如既往，你可以通过以下链接下载所有相关文件：
@@ -6171,8 +6255,11 @@ HTML, CSS 与 JAVASCRIPT
 Web 服务器通常分为以下几类：
 
 - WordPress 或其他网站构建器 – 无安全 Shell 访问
+
 - 仅 Web 托管和 SSL – 无安全 Shell 访问
+
 - 虚拟专用服务器 – VPS – 有安全 Shell 访问
+
 - 专用服务器 – 有安全 Shell 访问
 
 如果您想建立一个常规网站，并且希望有一些快速便捷的工具，减少编码，那么 WordPress 或网站构建器托管将适合您。
@@ -6245,146 +6332,282 @@ SSH，也称为安全外壳 (Secure Shell) 或安全套接字外壳 (Secure Sock
 
 > “你能想象的一切都是真实的。” - 巴勃罗·毕加索。
 
-
-
 ## 索引
 
 关于作者 ...............III, 2
+
 添加图片 .................III, 21
+
 为图片添加样式 IV, 43
+
 动画 .......................23, 190
+
 应用 ....I, 2, 9, 11, 15, 16, 22, 29, 32, 34, 36, 41, 43, 46, 51, 53, 56, 57, 58, 59, 60, 61, 62, 63, 64, 73, 76, 92, 95, 96, 101, 102, 103, 104, 105, 110, 120, 121, 125, 128, 130, 131, 139, 142, 147, 150, 151, 230
+
 数组 .... 75, 76, 77, 78, 79, 80, 81, 82, 84, 85, 86, 124, 126, 127, 135, 136, 137, 138, 156, 157, 164, 169, 185, 188, 199, 201, 204, 207, 208, 209, 223
+
 数组 .......... 84, 85, 86, 176, 201
+
 资源 ............................. V, 153
+
 背景...11, 12, 22, 23, 36, 37, 39, 64, 65, 66, 67, 68, 70, 72, 97, 130, 142, 143, 144, 151, 152, 154, 155, 156, 161, 164, 217, 221
+
 浏览器 2, 8, 9, 10, 11, 14, 19, 20, 39, 51, 59, 61, 68, 77, 101, 103, 104, 108, 109, 117, 125, 150, 162, 170, 173, 210, 213
+
 构建...... 36, 52, 101, 149, 154, 155, 156, 157
+
 层叠样式表 ....... 10
+
 层叠样式表 ....III, 10
-代码 ... 2, 5, 6, 8, 9, 11, 12, 13, 15, 16, 17, 18, 19, 20, 21, 22, 26, 28, 29, 30, 32, 36, 43, 54, 58, 61, 64, 66, 75, 76, 77, 79, 82, 88, 89, 90, 92, 93, 94, 95, 96, 97, 101, 103, 105, 108, 109, 111, 117, 120, 121, 122, 123, 126, 128, 131, 132, 144, 153, 154, 155, 156, 157, 158, 159, 160, 162, 163, 168, 170, 172, 176, 181, 184, 186, 188, 189, 194, 198, 199, 200, 204, 205, 212, 213, 215, 217, 218, 219, 220, 223, 224, 225, 228
+
+代码 ... 2, 5, 6, 8, 9, 11, 12, 13, 15, 16, 17, 18, 19, 20, 21, 22, 26, 28, 29, 30, 32, 36, 43, 54, 58, 61, 64, 66, 75, 76, 77, 79, 82, 88, 89, 90, 92, 93, 94, 95, 96, 97, 101, 103, 105, 108, 109, 111, 117, 120, 121, 122, 123, 126, 128, 131, 132, 144, 153, 154, 155, 156, 157, 158, 159, 160, 162, 163, 168, 170, 172, 176, 181, 184, 186, 188, 189, 194, 198, 199, 200, 204, 205, 212, 213, 215, 217, 218, 219, 220, 223, 224, 225, 226, 227, 228
+
 编程 ..............................4, 7
+
 代码编辑器 ...................III, 7
+
 可收藏品........... V, 197, 198
+
 色彩设计 ................IV, 34
+
 色轮......................34
+
 注释 ........................16
+
 计算机 ...... 3, 4, 7, 51, 98, 229, 231, 234
-常量....55, 73, 74, 75, 76, 77, 78, 79, 84, 85, 86, 88, 89, 90, 92, 93, 98, 99, 103, 105, 106, 123, 124, 126, 131, 132, 133, 134, 135, 136, 138, 139, 144, 145, 146, 156
+
+常量....55, 73, 74, 75, 76, 77, 78, 79, 84, 85, 86, 88, 89, 90, 92, 93, 98, 99, 103, 105, 106, 123, 124, 126, 131, 132, 133, 134, 135, 136, 137, 138, 144, 145, 146, 156
+
 本书使用的约定 ...................................III
+
 倒计时器 ......IV, 95, 96
+
 创建平台游戏.V, 148
+
 创建一个网络应用 .........IV, 51
+
 CSS...................................5
+
 CSS...I, V, 2, 5, 8, 10, 14, 15, 16, 18, 20, 28, 30, 34, 36, 38, 43, 59, 66, 67, 70, 90, 91, 107, 108, 109, 111, 112, 113, 116, 117, 118, 120, 131, 139, 148, 151, 152
+
 花括号 18, 88
+
 光标 65, 69, 70
+
 删除 V, 132
+
 部署你的项目 VI
+
 开发者 2, 231
+
 显示 8, 18, 21, 22, 23, 37, 40, 60, 64, 68, 69, 89, 92, 93, 94, 96, 97, 102, 103, 125, 130, 131, 135, 136, 137, 139, 140, 141, 144, 145, 146, 151, 160
+
 DIV 21, 22, 29, 30, 32, 33, 41, 42, 46, 47, 48, 55, 56, 58, 59, 60, 68, 69, 71, 73, 78, 81, 82, 91, 95, 96, 97, 103, 104, 105, 110, 111, 128, 129, 134, 136, 139, 140, 141, 150, 151
+
 除法 22
+
 下载 6
+
 下载和准备图片 III, 26
-元素 12, 29, 31, 38, 44, 66, 67, 68, 70, 71, 72, 79, 97, 104, 111, 112, 113, 114, 115, 116, 117, 123, 124, 129, 131, 143, 145, 146, 151, 152, 153
+
+元素 12, 29, 31, 38, 44, 66, 67, 68, 70, 71, 79, 97, 104, 111, 112, 113, 114, 115, 116, 117, 123, 124, 129, 131, 143, 145, 146, 151, 152, 153
+
 引擎 IV, 73
+
 环境 52, 73, 158, 174
+
 练习 24, 27, 30, 48, 49, 53, 59, 66, 73, 101, 109, 139, 141, 146, 147, 148, 162, 165, 187, 221, 227
+
 文件结构 III, IV, V, 7, 25, 27, 52, 149
+
 文件传输协议 VI, 228
+
 文件 6
+
 字体 10, 11, 12, 13, 15, 16, 18, 37, 39, 64, 65, 66, 67, 69, 72, 96, 97, 120, 121, 122, 130, 142, 143, 194, 213, 214
+
 字体颜色 12
+
 表单属性 IV, 112, 113
+
 函数 III, IV, 15, 76, 87
+
 功能性 48, 51, 53, 103
+
 游戏监视器 V, 212
+
 游戏结束 V, 196
+
 游戏界面 VI, 215
+
 谷歌 5, 26, 39, 47, 51
-H1 标签 12
-页眉 29, 32, 36, 39, 41, 46, 57, 58, 59, 63, 64, 68, 69, 105, 110, 128, 139, 140
-高度 10, 22, 23, 36, 37, 39, 43, 65, 66, 69, 70, 71, 97, 115, 116, 130, 142, 143, 151, 152, 153, 154, 158, 159, 160, 162, 169, 170, 171, 176, 178, 181, 183, 184, 185, 189, 192, 199, 200, 201, 202, 203, 204, 205, 206, 207, 209, 212, 217
+
+H1 标筓 12
+
+页眉 29, 32, 36, 39, 41, 46, 46, 47, 48, 57, 58, 59, 63, 64, 68, 69, 105, 110, 128, 139, 140
+
+高度 10, 22, 23, 36, 37, 39, 43, 65, 66, 69, 70, 71, 97, 115, 116, 130, 142, 143, 151, 152, 154, 155, 156, 161, 164, 217, 221
+
 你好世界 7, 8
+
 你好世界 4, 7, 10, 13, 21
+
 你好，世界！ III, 7
+
 十六进制 12, 34, 144
+
 悬停 43, 44, 65, 70, 142, 143
+
 HREF 5, 9, 29, 30, 32, 33, 41, 42, 45, 46, 47, 48, 58, 59, 110, 128, 139, 140, 141, 150, 151
+
 HTML 5, 7, 8, 9, 10, 11, 13, 16, 18, 21, 26, 27, 28, 32, 33, 36, 41, 43, 46, 48, 53, 55, 56, 58, 95, 101, 102, 103, 105, 110, 111, 125, 128, 129, 134, 137, 139, 140, 141, 149, 150, 151, 152, 162, 194, 199, 212, 215, 223, 228
+
 HTML 文件 III, V, 27, 150
+
 HTML 表单 IV, 110, 120, 122
+
 实现 CSS IV, 34
+
 实现 HTML 结构 .............................IV, 56
+
 说明 ....26, 154, 161, 203, 224, 225
+
 介绍 ............................2, 4
+
 介绍 ............................III
+
 JavaScript...I, 2, 8, 14, 15, 16, 20, 53, 54, 55, 56, 57, 59, 61, 66, 69, 71, 73, 74, 75, 77, 82, 95, 98, 101, 102, 103, 104, 105, 107, 108, 109, 111, 113, 116, 117, 123, 126, 129, 138, 148, 150, 151, 154, 155, 212, 223, 226
+
 JavaScript...III, IV, V, 15, 73, 131, 132, 144, 158
+
 JSON..IV, 53, 54, 55, 56, 57, 59, 61, 75, 80, 107, 109, 122, 125, 126, 132, 133, 134, 135, 136, 137, 138, 153
+
 JSON 文件 .................IV, 53, 61, 122
+
 课程 .......................................2
-LET 13, 16, 21, 24, 29, 34, 36, 39, 50, 52, 54, 55, 56, 57, 58, 66, 67, 74, 75, 78, 79, 83, 84, 88, 89, 91, 93, 94, 104, 111, 125, 126, 128, 129, 132, 133, 134, 135, 136, 137, 138, 144, 149, 155, 159, 163, 168, 170, 172, 174, 175, 176, 177, 199, 200, 201, 202, 203, 204, 205, 206, 207, 208, 215, 219, 226
+
+LET 13, 16, 21, 24, 29, 34, 36, 39, 50, 52, 54, 55, 55, 56, 57, 58, 66, 67, 74, 75, 78, 79, 83, 84, 88, 89, 91, 93, 94, 104, 111, 125, 126, 128, 129, 132, 133, 134, 135, 136, 137, 138, 144, 149, 155, 159, 163, 168, 170, 172, 174, 175, 176, 177, 199, 200, 201, 202, 203, 204, 205, 206, 207, 208, 215, 219, 226
+
 链接. 5, 9, 21, 28, 29, 30, 31, 32, 34, 41, 42, 43, 44, 45, 46, 47, 48, 52, 53, 58, 59, 62, 66, 110, 128, 150, 151, 187, 197, 222, 227
+
 本地存储....IV, V, 125, 131
+
 位置 104, 125, 134, 137, 149
+
 苹果电脑 ..........................2, 8, 52, 109, 229
+
 外边距 .11, 12, 22, 23, 36, 37, 39, 43, 64, 65, 66, 67, 69, 70, 71, 72, 96, 130, 131, 142, 143, 152
+
 音乐 ....................................VI, 222
+
 我的其他著作 ...VI, 233
+
 导航 .........V, 139, 142, 144
+
 记事本 ...................................2, 4, 7, 9
+
 数字 54, 82, 86, 112, 115, 137, 164, 213
+
 对象 54, 86, 175, 188, 189, 204
+
 不透明度 10, 20, 44, 66, 71, 91, 144
+
 运算符 .............V, 179, 180, 181
+
 溢出 ..... 64, 67, 68, 151, 152
+
 内边距 10, 37, 40, 64, 65, 67, 68, 69, 71, 97, 130, 142
+
 页面布局设计 ............III, 28
+
 个人电脑 ..............................................2, 52, 229
+
 像素 .....22, 97, 143, 152, 155, 164, 167, 186, 220
+
 平台游戏 V, 148, 150, 151, 153
+
 指针..........................................65, 69
+
 位置 20, 65, 66, 70, 71, 79, 82, 84, 91, 130, 142, 143, 172, 183, 190, 191, 193, 201, 216, 220
+
 编程. 3, 4, 5, 7, 52, 53, 107, 176
+
 编程环境 .....................................52
+
 参考 .................V, 154, 157
+
 结果...20, 23, 40, 52, 55, 56, 57, 58, 60, 63, 65, 70, 71, 73, 74, 75, 76, 89, 95, 98, 100, 101, 103, 104, 160, 185
+
 RGB..........................................12, 34
+
 规则 ..9, 10, 11, 12, 14, 20, 23, 39, 44, 67, 68, 69, 111, 112, 116, 117, 120, 121, 131, 139, 142, 143, 151, 152, 183, 195
+
 保存 .8, 11, 21, 23, 26, 93, 96, 101, 111, 122, 129, 171, 172, 187, 196, 215, 223, 224, 226
+
 搜索. 26, 31, 39, 51, 59, 60, 112
+
 选择器模式.......................... 43
+
 音效 .......................... VI, 149, 221, 222
+
 声音 .......................................... VI, 222
+
 精灵对象 .......................... V, 157
+
 精灵表.......................... V, 198
+
 SSH ............................................ VI, 231
+
 SSL .......................... VI, 228, 230, 231
+
 字符串.... 54, 55, 56, 81, 82, 83, 86, 116, 125, 179, 205
+
 字符串 ..............................54, 82, 86
+
 样式表 . 5, 9, 29, 32, 41, 46, 58, 59, 110, 128, 150, 151
+
 语法 ................................................... 5
+
 语法高亮 ............... 5
+
 目标 ...................................................46
+
 瓦片地图 ....................... V, 154, 167
+
 瓦片 .................................................... V, 154
+
 标题界面...................... V, 160
+
 过渡 ..............................66, 71, 91
+
 URL.. 5, 30, 31, 40, 45, 48, 114, 154, 157, 168
+
 用户管理功能 ............................IV, 107
+
 变量 18, 54, 73, 74, 77, 78, 83, 84, 90, 98, 124, 126, 135, 136, 137, 138, 145, 146, 153, 156, 164, 176, 181, 182, 201, 207, 220
+
 Visual Studio Code............2, 4, 7
+
 网络服务器 ....................................VI
+
 格式良好的超链接 ..IV, 45
+
 格式良好的图片元素 ....................................................IV, 40
+
 什么是 JSON 文件？ .............IV, 53
+
 什么是网络应用，它与网站有何不同？ ....................................................IV, 51
+
 什么是数组？ .............IV, 84
+
 接下来去哪里 VI, 232
+
 为什么使用 JSON？ .........................IV, 54
+
 宽度 ... 5, 6, 10, 36, 37, 39, 43, 58, 59, 65, 66, 68, 69, 71, 91, 97, 110, 115, 116, 120, 121, 122, 128, 130, 131, 142, 143, 153, 154, 158, 159, 160, 162, 169, 170, 171, 175, 176, 178, 181, 183, 184, 185, 189, 190, 192, 193, 199, 200, 201, 202, 203, 204, 205, 206, 207, 209, 212, 217
+
 视窗系统 ........................................ 2, 8
+
 自动换行.................................. 6
+
 Z-index.. 15, 16, 18, 66, 71, 91, 142

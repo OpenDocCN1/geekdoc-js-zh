@@ -1,3 +1,4 @@
+
 # 6.11 移动设备 API
 
 为了更好地为移动设备服务，HTML 5 推出了一系列针对移动设备的 API。
@@ -19,7 +20,7 @@ Viewport 指的是网页的显示区域，也就是不借助滚动条的情况�
 
 viewport 缩放规则，需要在 HTML 网页的 head 部分指定。
 
-```js
+```html
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
 </head>
@@ -38,7 +39,7 @@ viewport 全部属性如下。
 
 其他的例子如下。
 
-```js
+```html
 <meta name = "viewport" content = "width = 320,
        initial-scale = 2.3, user-scalable = no">
 ```
@@ -125,9 +126,7 @@ navigator.geolocation.getCurrentPosition(geoSuccess, geoError, option);
 这个参数对象有三个成员：
 
 *   enableHighAccuracy：如果设为 true，就要求客户端提供更精确的位置信息，这会导致更长的定位时间和更大的耗电，默认设为 false。
-
 *   Timeout：等待客户端做出回应的最大毫秒数，默认值为 Infinity（无限）。
-
 *   maximumAge：客户端可以使用缓存数据的最大毫秒数。如果设为 0，客户端不读取缓存；如果设为 infinity，客户端只读取缓存。
 
 ### watchPosition 方法和 clearWatch 方法
@@ -239,7 +238,7 @@ window.addEventListener('devicelight', function(e) {
 
 CSS 下一个版本的 Media Query 可以单独设置亮度，一旦浏览器支持，就可以用来取代 Luminosity API。
 
-```js
+```css
 @media (light-level: dim) {
   /* 暗光环境 */
 }
@@ -287,7 +286,7 @@ function callback(event){
 
 *   alpha：表示围绕 z 轴的旋转，从 0 到 360 度。当设备水平摆放时，顶部指向地球的北极，alpha 此时为 0。
 *   beta：表示围绕 x 轴的旋转，从-180 度到 180 度。当设备水平摆放时，beta 此时为 0。
-*   gramma：表示围绕 y 轴的选择，从-90 到 90 度。当设备水平摆放时，gramma 此时为 0。
+*   gamma：表示围绕 y 轴的选择，从-90 到 90 度。当设备水平摆放时，gamma 此时为 0。
 
 ## 参考链接
 

@@ -1,10 +1,7 @@
+
 # 学习 ReactJS 基础：初学者指南及考试面试 JavaScript 练习册：快速轻松地学习编程基础
 
-
-
 ![](img/Image00039.jpg)
-
-
 
 ## ReactJS 简介
 
@@ -19,44 +16,69 @@ MVC（模型-视图-控制器）架构现在被许多网站使用。MVC 中的�
 本节将教你如何为开发 ReactJS 应用搭建开发环境：
 
 ### ReactJS 准备工作
+
 1. `NodeJS` 和 `NPM`
+
 2. `React` 和 `DOM`
+
 3. `Webpack`
+
 4. `Babel`
 
 #### 两种方式 - 安装 ReactJS:
+
 1. 使用 `npm` 命令
+
 2. 使用 `create-react-app`
 
 #### 使用 `npm` 命令
 
 **第 1 步：安装 NodeJS** 访问 https://nodejs.org。
+
 **第 2 步：安装 npm** ![Image0000]
+
 **第 3 步：检查版本** 使用以下命令检查版本![Image0001]
+
 **第 4 步：创建 package.json 文件** 在你的目录中![Image0002]
+
 **第 5 步：初始化** 使用以下命令初始化：
+
 ```bash
 npm init -y
 ```
+
 **第 6 步：安装 React 和 DOM**
+
 ```bash
 npm install react react-dom
 ```
+
 **第 7 步：安装 Webpack** Webpack 主要用于打包，开发期间需要它：
+
 ```bash
 npm install webpack webpack-cli webpack-dev-server
 ```
+
 **第 8 步：安装 Babel** Babel 是一个用于转换源代码的编译器。使用以下命令安装 Babel![Image0003]
+
 ```bash
 npm install --save-dev babel-
 ```
+
 **第 9 步：创建文件** 我们需要创建以下文件以完成安装：
+
 - `index.html`
+
 - `App.js`
+
 - `main.js`
+
 - `webpack.config.js`
+
 - `.babelrc`
+
 这些文件可以手动创建或使用以下命令创建：
+
 ```bash
 type nul > filename
 ```
@@ -100,12 +122,15 @@ module.exports={
 现在编辑 `package.json` 文件，从 `"scripts"` 对象中删除 `"test": "echo Error: no test specified && exit 1"`，并将其替换为 `start` 和 `build` 指令。
 
 删除上述项目并替换为以下两个：
+
 1. `"start": "webpack-dev-server --mode development --open --hot"`
+
 2. `"build": "webpack --mode production"`
 
 如下所示：
 
 ### index.html 的 HTML webpack 模板
+
 使用 `HtmlWebpackPlugin` 插件，我们需要创建一个自定义模板来生成 `index.html`。它允许我们使用 viewport 标签来方便移动端缩放。在你的 `index.html` 文件中粘贴以下代码：
 
 ```html
@@ -122,9 +147,6 @@ module.exports={
 </body>
 </html>
 ```
-
-
-
 
 这是第一个 React 组件，作为应用的入口点。它将渲染 Hello World。
 
@@ -167,6 +189,7 @@ ReactDOM.render(<App/>, document.getElementById('app'));
 向你的 `.babelrc` 文件添加以下代码。
 
 `.babelrc`
+
 ```json
 {
   "presets": [
@@ -183,16 +206,23 @@ ReactDOM.render(<App/>, document.getElementById('app'));
 此命令将显示端口号，你需要打开浏览器窗口。打开后，你将看到以下内容：
 
 ![Image 9.jpg](img/Image00005.jpg)
+
 ![](img/Image00006.jpg)
+
 ![Image 10.jpg](img/Image00007.jpg)
 
 React 应用的根目录包含许多文件和目录。以下是一些示例：
 
 1. `node_modules`: 它包含了 React 库以及任何可能需要的其他第三方库。
+
 2. `public`: 它包含应用的公共资源。它包含 `index.html` 文件，React 默认会将应用程序挂载到 `<div id="root">` 元素上。
+
 3. `src`: 此文件夹中有多个文件，包括 `App.css`、`App.js`、`App.test.js`、`index.css`、`index.js` 和 `serviceWorker.js`。`App.js` 文件将负责始终显示 React 输出屏幕。
+
 4. `package-lock.json`: 每当 `npm` 包更改 `package.json` 或 `node_modules` 树时，它会自动生成。它是无法发布的。如果发现它位于顶层包以外的位置，它将被忽略。
+
 5. `package.json`: 它包含了项目元数据信息。它为 `npm` 提供了允许其识别项目依赖关系以及项目本身的信息。
+
 6. `README.md`: 它还包含了 React 主题的文档。
 
 ## React JSX
@@ -210,8 +240,11 @@ JavaScript 扩展 `JSX` 允许你编写看起来像 HTML 的 JavaScript 代码�
 ### 为什么使用 JSX？
 
 - 它比 JavaScript 更快，因为它在翻译成 JavaScript 之前对代码进行了优化。
+
 - React 并不是通过将 HTML 和逻辑放在不同的文件中来分离技术，而是使用同时包含两者的组件。
+
 - 它是类型安全的，因为大多数问题在编译期间就会被发现。
+
 - 它简化了创建模板的过程。
 
 ### JSX 中的嵌套元素
@@ -240,7 +273,7 @@ export default App;
 
 ### JSX 属性
 
-`JSX` 中 HTML 元素的特性与普通 HTML 相同。在 `JSX` 中，属性使用驼峰命名，而不是 HTML 的传统命名模式，例如 HTML 中的 `class` 在 JSX 中变更为 `className`。这是因为在 JavaScript 中，`class` 关键字是一个保留关键字。在 `JSX` 中也可以使用自定义属性。对于自定义属性，我们必须使用 `data-prefix`。
+`JSX` 中 HTML 元素的特性与普通 HTML 相同。在 `JSX` 中，属性使用驼峰命名，而不是 HTML 的传统命名模式，例如 HTML 中的 `class` 在 JSX 中变更为 `className`。这是因为在 JavaScript 中，`class` 关键字是一个保留关键字。在 `JSX` 中也可以使用自定属性。对于自定义属性，我们必须使用 `data-prefix`。
 
 自定义属性 `data-customAttr` 用于下面示例中 `<p>` 标签的属性。
 
@@ -291,12 +324,10 @@ class App extends Component {
 
 （注：由于原文中后续大量关于“JSX 属性”、“嵌套元素”、“JavaScript 表达式”的章节内容完全重复，已按指令要求不再重复输出。）
 
-
-
-
 以下是 ReactJS 的两种类型组件：
 
 1. `Functional Components`（无状态组件）。
+
 2. `Class Components`（有状态组件）。
 
 ## Functional Components
@@ -424,19 +455,29 @@ export default App;
 ### ReactJS 的优点
 
 1. **易于学习和使用**：ReactJS 是一个简单易用且易学的框架。它带有大量的文档、培训材料和教程。对于具有 JavaScript 经验的开发者来说，它很容易理解，可以在几天内开始开发 Web 。它是 JavaScript 框架之一，是 MVC（模型-视图-控制器）模型中的视图部分。我们不能说 ReactJS 功能丰富，但它确实具有开源用户界面（UI）库的优点，有助于任务执行。
+
 2. **创建动态应用程序变得更容易**：由于复杂的编码，使用 HTML 创建动态应用是很困难，但 ReactJS 解决了这个问题使其简单。它需要更少的代码并提供更多功能。它利用 `JSX` 扩展，是一种允许 HTML 标签渲染某些组件的语法。支持机器可读代码。
-3. **可复用组件**：ReactJS Web 应用由多个组件组成，每个组件都有自己的逻辑和控制。这些组件负责产生短的、可重用的 HTML 代码。这些复用代码使得应用程序更容易设计和维护。ReactJS 使用基于虚拟 DOM 的技术来用数据填充 HTML。因为它只是更改特定 DOM 的元素而不是每次重新加载，所以虚拟 DOM 是快速的。
+
+3. **可复用组件**：ReactJS Web 应用由多个组件组成，每个组件都有自己的逻辑和控制。这些组件负责产生短的、可重用的 HTML 代码。这些复用代码使得应用程序更容易设计和维护。ReactJS 使用基于虚拟 DOM 的技术来用数据填充 HTML。因为它只是更改特定 DOM 的元素而不是每次重新加载，所以虚括 DOM 是快速的。
+
 4. **性能增强**：由于虚拟 DOM，ReactJS 的速度已经提高。ReactJS 极快。由于此功能，ReactJS 变得比其他框架好得多。这背后有一个管理虚拟 DOM 的概念。文档对象模型（DOM）是 HTML、XML 和 XHTML 的跨平台编程 API。DOM 仅包含在内存中。因此，每当我们构建组件时，我们不会直接将其写入 DOM；而是编写转换为 DOM 的虚拟组件，从而导致更平滑、更快的性能。
+
 5. **方便的工具支持**：ReactJS 流行还因为可用实用的工具集。这些技术提高了可读性。这些工具是 Chrome 和 Firefox 扩展，允许您检查虚拟 DOM 中的层次结构。
+
 6. **SEO 友好**：当涉及到 SEO 时，标准框架存在问题。搜索引擎很难读取大型 JavaScript 应用。ReactJS 解决了这个问题，使其更容易在不同的搜索引擎之间导航。这就是为什么 React 应用可以在服务器上运行虚拟 DOM 并返回标准页面。
+
 7. **拥有库的优势**：ReactJS 流行还因为提供了非常有用的库。这些技术提高了可读性并为开发者提供了更多自由。
+
 8. **代码测试范围**：ReactJS 启动简单。它让能够使用原生工具快速测试和调试程序的开发者。
 
 ### ReactJS 的缺点
 
 1. **开发节奏快**：这既是优点也是缺点。由于环境变化非常快，大多数开发者想要经常重新学习新方法。跟上所有变化和持续更新可能是困难的。
+
 2. **文档不佳**：这是不断变化的技术的常见缺点之一。由于 React 技术的快速更新，缺乏良好的文档。
+
 3. **视图部分**：ReactJS 只处理应用程序的 UI 层。因此，必须选择其他技术为项目开发提供完整的工具集。
+
 4. **JSX 是障碍**：ReactJS 使用 `JSX`，一种允许 HTML 和 JavaScript 混合的语法扩展。这种策略是有益的，但开发社区的某些成员（特别是新开发者）认为 `JSX` 是一个障碍。开发者对于学习 `JSX` 有多困难存在分歧。
 
 #### ReactJS 的特性
@@ -444,129 +485,178 @@ export default App;
 ReactJS 目前作为最强大的 JavaScript 框架正受欢迎。它对于前端生态系统的成功至关重要。以下是 ReactJS 的一些重要特性：
 
 * `JSX`
+
 * `组件`
+
 * 单向数据绑定
+
 * `Virtual DOM`
 
-
-
-
-
 * 简单性
+
 * 性能
+
 * 让我们详细阐述这些特性：
 
 ## JSX
+
 JavaScript XML 缩写为 `JSX`。它是经过扩展的 JavaScript 语法。它的语法与 XML 或 HTML 相似。
 
 这种语法会被转换为 React 框架 JavaScript 调用。它改进了 `ES6`，允许类 HTML 文本与 JavaScript React 代码共存。在 `ReactJS` 中并不强制要求使用 `JSX`，但建议使用它。
 
 ## 单向数据绑定
+
 ReactJS 的设计目标是遵循单向数据流，通常被称为单向数据绑定。单向数据绑定是有益的，因为它允许对整个应用程序进行更多的控制。当数据向反方向流动时，就需要额外的特性。出现这种情况是因为系统假设组件是不可变的，且它们内部包含的数据是不可更改的。`Flux` 是一种有助于数据单向性的模式。它为应用程序提供了额外的灵活性，从而提高了效率。
 
 ## 虚拟 DOM
+
 虚拟 DOM 仅仅是真实 DOM 的副本。它与单向数据绑定类似。每当 Web 应用发生修改时，整个 UI 都会在虚拟 DOM 表示中重新渲染。然后会检查新 DOM（重新渲染的）与先前的 DOM 表示之间的差异。完成后，真实 DOM 会修改发生变化的项目。这减少了内存占用并加快了运行速度。
 
 ## 简单性
+
 众所周知，ReactJS 使用了 `JSX`，这使得应用程序更符合用户习惯，代码更易于理解。ReactJS 采用基于组件的方法，允许代码复用。它易于学习和利用。
 
 ## 组件
+
 ReactJS 由组件组成，每个组件都有自己的逻辑和控制。组件是可重用的，这在开发大型项目时使得代码维护更加容易。
 
 ## 性能
+
 ReactJS 非常快。与其他框架相比，ReactJS 受益于这一功能。这一逻辑背后有一个管理虚拟 DOM 的概念。文档对象模型 (`DOM`）是一种用于 HTML、XML 和 XHTML 的跨平台计算机编程 API。`DOM` 仅包含在内存中。因此，当我们构建任何组件时，不会直接将其写入 `DOM`；而是写入转换为 `DOM` 的虚拟组件，从而实现了更流畅、更快的性能。
 
 ## React 与 Vue 的比较
+
 React 和 Vue 都是著名的 JavaScript 库，如今用于构建数百万个网站。React 和 Vue 都提供了极其强大的框架，各自都有优缺点。你选择哪一个取决于你的业务需求和用例。React 和 Vue 有许多共同点，例如基于组件的设计、虚拟 DOM 的使用、props 的使用、使用 Chrome 开发工具进行调试等。它们在以下方面相互不同：
 
 ![](img/Image00008.jpg)
+
 ![](img/Image00009.jpg)
+
 ![](img/Image00010.jpg)
 
 ## ReactJS vs AngularJS
+
 ReactJS 与 AngularJS 之间的区别
 
 ### AngularJS
+
 AngularJS 是一个开源 JavaScript 框架，用于创建动态 Web 应用程序。它由 Misko Hovery 和 Adam Abrons 于 2009 年创建，目前由 Google 维护。2019 年 3 月 11 日，AngularJS 更新到了 `1.7.8`。它主要用于创建单页应用，并利用 HTML 和 JavaScript 属性。使用 `<script>` 标签将其整合到 HTML 页面中。它使用表达式将数据绑定到 HTML，并通过使用指令添加内置属性来扩展 HTML。
 
 #### AngularJS 的特性
+
 以下是 AngularJS 的一些特性：
+
 1. **数据绑定**：AngularJS 支持双向数据绑定。模型和显示组件之间的数据同步是自动发生的。
+
 2. **POJO 模型**：AngularJS 使用的“纯旧 JavaScript 模型”缩写为 `POJO`。它提供了自发和计划良好的对象。它使得 AngularJS 是自包含的且易于利用。
+
 3. **MVC 框架（模型-视图-控制器）**：`MVC` 是一种用于创建 Web 应用的软件架构范式。AngularJS 的功能模型主要构建在 `MVC` 概念之上。AngularJS 中的 `MVC` 具有动态、舒适且多架构。
+
 4. **服务**：AngularJS 带有许多内置服务，例如用于创建 `XMLHttpRequest` 的 `$http`。
+
 5. **用于用户界面的 HTML**：AngularJS 使用 HTML 创建用户界面。AngularJS 是一种声明式语言，使用更短、更易理解的标签。它提供了良好的界面。
+
 6. **依赖注入**：AngularJS 具有依赖注入子系统，简化了开发者设计、理解和测试应用程序的过程。
+
 7. **Google 的活跃社区**：众所周知，Google 维护 AngularJS，因此在出现维护问题时，有很多论坛可以回答问题。
+
 8. **路由**：路由是允许你从一个视图移动到另一个视图的系统。对于所有内容都包含在页面上的单页应用来说至关重要。开发者不希望用户每次点击菜单项时都将其引导到新页面。开发者要求在 URL 更改时在同一页面加载内容。
 
 ## ReactJS
+
 它是一个由 Facebook 软件工程师 Jordan Walke 创建的关键前端库。Facebook 是第一个创建并维护它的，后来被整合到 Whatsapp 和 Instagram 等主要产品中。2011 年，Facebook 首次引入了 React，但直到 2013 年才向公众开放。
 
 ReactJS 是一个用于开发单页应用界面的开源 JavaScript 库。根据 `MVC`，React 是“V”，即 View（视图）。许多组件构成了 ReactJS；这些组件是所有 React 应用的核心。
 
 #### ReactJS 的特性
+
 * **JSX**：JavaScript XML 缩写为 `JSX`。它是经过扩展的 JavaScript 语法。它的语法与 XML 或 HTML 相似。这种语法会被转换为 React 框架 JavaScript 调用。它改进了 `ES6`，允许类 HTML 文本与 JavaScript 代码共存。在 `ReactJS` 中并不强制要求使用 `JSX`，但建议使用它。
-* **单向数据绑定**：ReactJS 的设计目标是遵循单向数据流，通常被称为单向数据绑定。单向数据绑定是有益的，因为它允许对整个应用程序进行更多的控制。当数据向反方向流动时，就需要额外的特性。出现这种情况是因为系统假设组件是不可变的，且它们内部包含的数据是不可更改的。`Flux` 是一种有助于数据单向性的模式。它为应用程序提供了额外的灵活性，从而提高了效率。
-* **虚拟 DOM**：虚拟 DOM 仅仅是真实 DOM 的副本。它与单向数据绑定类似。每当 Web 应用发生修改时，整个 UI 都会在虚拟 DOM 表示中重新渲染。然后会检查新 DOM（重新渲染的）与先前的 DOM 表示之间的差异。完成后，真实 DOM 会修改发生变化的项目。这减少了内存占用并加快了运行速度。
+
+* **单向数据绑定**：ReactJS 的设计目标是遵循单向数据流，通常被称为单向数据绑定。单向数据绑�是有益的，因为它允许对整个应用程序进行更多的控制。当数据向反方向流动时，就需要额外的特性。出现这种情况是因为系统假设组件是不可变的，且它们内部包含的数据是不可更改的。`Flux` 是一种有助于数据单向性的模式。它为应用程序提供了额外的灵活性，从而提高了效率。
+
+* **虚拟 DOM**：虚括 DOM 仅仅是真实 DOM 的副本。它与单向数据绑定类似。每当 Web 应用发生修改时，整个 UI 都会在虚括 DOM 表示中重新渲染。然后会检查新 DOM（重新渲染的）与先前的 DOM 表示之间的差异。完成后，真实 DOM 会修改发生变化的项目。这减少了内存占用并加快了运行速度。
+
 * **简单**：众所周知，ReactJS 使用了 `JSX`，这使得应用程序更符合用户习惯，代码更易于理解。ReactJS 采用基于组件的方法，允许代码复用。它易于学习和利用。
+
 * **组件**：ReactJS 由组件组成，每个组件都有自己的逻辑和控制。组件是可重用的，这在开发大型项目时使得代码维护更加容易。
 
-
-
-
-
 ## 性能
-`ReactJS` 的性能非常出色。与其他框架相比，`ReactJS` 很大程度上受益于这一功能。这一逻辑背后有一个管理虚拟 DOM 的概念。`Document Object Model`（`DOM`）是一种用于 `HTML`、`XML` 和 `XHTML` 的跨平台计算机编程 API。`DOM` 仅包含在内存中。因此，每当我们构建一个组件时，我们不会直接将其写入 `DOM`；而是编写转换成 `DOM` 的虚拟组件，从而实现了更平滑、更快的性能。
+
+`ReactJS` 的性能非常出色。与其他框架相比，`ReactJS` 很大程度上受益于这一功能。这一逻辑背后有一个管理虚括 DOM 的概念。`Document Object Model`（`DOM`）是一种用于 `HTML`、`XML` 和 `XHTML` 的跨平台计算机编程 API。`DOM` 仅包含在内存中。因此，每当我们构建一个组件时，我们不会直接将其写入 `DOM`；而是编写转换成 `DOM` 的虚括组件，从而实现了更平滑、更快的性能。
 
 ## AngularJS 与 ReactJS 的对比
+
 ![](img/Image00011.jpg)
+
 ![](img/Image00012.jpg)
 
 ## React Native vs ReactJS
+
 ### React Native 与 ReactJS 之间的区别
 
 ### React Native
+
 React Native 是一个开源 JavaScript 框架，可用于为 iOS、Android 和 Windows 创建移动应用。它使用 `JavaScript` 来创建跨平台移动应用。`React Native` 与 `react` 类似，但它不是使用 Web 组件作为构建块，而是使用原生组件。因此，它不是用于浏览器，而是用于移动设备。2013 年，它由 Facebook 为其著名的内部项目 `Hackathon` 开发。Facebook 在 2015 年 3 月宣布 `React Native` 是开源的并可以在 `GitHub` 上。
 
 ### React Native 的优势
+
 以下是使用 `React Native` 的一些优势：
+
 1. **原生组件**：如果我们需要原生功能，我们就需要开发尚未设计的特定平台代码。
+
 2. **类性能**：`React Native` 的代码被编译为原生代码，使其能够在两个操作系统上运行并执行相同的功能。
+
 3. **跨平台使用**：它同时兼容 `Android` 和 `iOS` 设备。
+
 4. **JavaScript**：它用于原生移动应用的开发。
+
 5. **随时间改进**：社区不断开发最佳实践。
+
 6. **社区**：它拥有一个庞大的社区，帮助人们获得他们需要的答案。
+
 7. **不确定性的存在**：由于该框架是由 Facebook 创建的，其存在性未知，因为公司保留了随时终止项目的权利。随着 `React Native` 流行度的提高，这种情况不太可能发生。
 
 ### React Native 的缺点
+
 1. **学习困难**：对于应用开发领域的新手来说，学习非常困难。
+
 2. **初始化耗时更多**：即使对于高科技设备，启动也需要很长时间。
+
 3. **React Native 仍然很新 - 不成熟**：`React Native` 仍处于测试阶段，且仅适用于 `Android` 和 `iOS`，这对移动应用有不利影响。
+
 4. **缺乏安全性稳健性**：`React Native` 创建了安全漏洞。专家建议不要使用 `React Native` 开发对机密性要求高的银行金融应用。
 
 ## ReactJS
+
 `ReactJS` 是一个用于开发单页应用界面的开源 JavaScript 库。根据 MVC，`React` 是“V”，代表 View（视图）。有许多组件构成了 `ReactJS` 应用；这些组件构成了所有 React 应用的核心。当这些组件与其他部分结合时，它们允许创建复杂的应用程序。它是由名为 `Jordan Walke` 的 Facebook 软件工程师创建的关键前端库。Facebook 最初创建并维护它，后来它被整合到 `Whatsapp` 和 `Instagram` 等主要产品中。2011 年，Facebook 首次引入 `React`，但直到 2013 年 5 月才向公众开放。
 
 ### ReactJS 的益处
+
 1. **易于学习和使用**：`ReactJS` 是一个简单易用易学习的框架。它带有大量的文档、培训材料和教程。对于具有 `JavaScript` 经验的开发者来说，它很容易理解，可以在几天内立即开始开发 Web 应用。它是 JavaScript 框架之一，是 `MVC`（模型-视图-控制器）模型中的 V（视图部分）。我们不能说 `ReactJS` 功能丰富，但它确实具有开源 JavaScript 用户界面（`UI`）库的优势，有助于任务执行。
+
 2. **创建动态 Web 应用变得更简单**：使用 `HTML` 字符串创建动态 Web 应用由于需要复杂的编码非常困难，但 `ReactJS` 解决了这个问题并使其简单。它需要更少的代码并提供更多的功能。它利用 `JSX`（`JavaScript`）扩展，这是一种允许 `HTML` 和 `HTML` 标签语法渲染某些子组件的语法。还支持机器读代码。
-3. **可重用组件**：`ReactJS` Web 应用由多个组件组成，每个组件都有自己的逻辑和控制。这些组件负责生成短的、可重用的 `HTML` 代码。这种可重用的代码使得应用的设计和维护变得更加容易。`ReactJS` 使用基于虚拟 DOM 的技术向 `HTML DOM` 填充数据。因为它只是更改特定 DOM 的元素而不是每次都重新加载，所以虚拟 DOM 非常快。
-4. **性能增强**：由于虚拟 DOM，`ReactJS` 的速度有所提高。`ReactJS` 非常快。由于这一功能，`ReactJS` 明显优于其他框架。这一逻辑背后有一个管理虚拟 DOM 的概念。`Document Object Model`（`DOM`）是一种用于 `HTML`、`XML` 和 `XHTML` 的跨平台计算机编程 API。`DOM` 仅包含在内存中。因此，每当我们构建一个组件时，我们不会直接将其写入 `DOM`；而是编写转换成 `DOM` 的虚拟组件，从而实现了更平滑、更快的性能。
+
+3. **可重用组件**：`ReactJS` Web 应用由多个组件组成，每个组件都有自己的逻辑和控制。这些组件负责生成短的、可重用的 `HTML` 代码。这种可重用的代码使得应用的设计和维护变得更加容易。`ReactJS` 使用基于虚括 DOM 的技术向 `HTML DOM` 填充数据。因为它只是更改特定 DOM 的元素而不是每次都重新加载，所以虚括 DOM 非常快。
+
+4. **性能增强**：由于虚括 DOM，`ReactJS` 的速度有所提高。`ReactJS` 非常快。由于这一功能，`ReactJS` 明显优于其他框架。这一逻辑背后有一个管理虚括 DOM 的概念。`Document Object Model`（`DOM`）是一种用于 `HTML`、`XML` 和 `XHTML` 的跨平台计算机编程 API。`DOM` 仅包含在内存中。因此，每当我们构建一个组件时，我们不会直接将其写入 `DOM`；而是编写转换成 `DOM` 的虚括组件，从而实现了更平滑、更快的性能。
+
 5. **工具支持**：`ReactJS` 还因其可用工具集而受欢迎。这些技术提高了可读性并让开发者的工作更容易。这些工具是 `Chrome` 和 `Firefox` 扩展，允许研究 react 组件的层次结构。
-6. **已知 SEO 友好**：在 SEO 方面，标准框架存在问题。搜索引擎难以读取大型 JavaScript 应用。`ReactJS` 解决了这个问题，让开发者更容易跨多个搜索引擎。这就是为什么 `React.js` 应用可以在服务器上运行，通过虚拟 DOM 渲染标准页面。
+
+6. **已知 SEO 友好**：在 SEO 方面，标准框架存在问题。搜索引擎难以读取大型 JavaScript 应用。`ReactJS` 解决了这个问题，让开发者更容易跨多个搜索引擎。这就是为什么 `React.js` 应用可以在服务器上运行，通过虚括 DOM 渲染标准页面。
+
 7. **JavaScript 库的优势**：`ReactJS` 提供了丰富的 JavaScript 库，这就是它如此受欢迎的原因。JavaScript 库给了 Web 开发者更多的自由。
+
 8. **代码测试范围**：`ReactJS` 应用启动简单。它允许开发者使用原生工具轻松测试和调试代码。
 
 ### ReactJS 的缺点
+
 1. **开发节奏快**：这既是优势也是劣势。由于环境变化太快，大多数开发者不希望频繁重新学习新方法。跟上所有变化和持续更新可能是困难的。他们必须定期更新技能并获取新方法。
+
 2. **文档匮乏**：这是不断变化的技术的另一个共同缺点。由于 react 技术的快速更新，缺乏良好的文档。
+
 3. **视图部分**：`ReactJS` 只处理应用的 UI 层。因此，必须选择其他技术来为项目开发提供完整的工具集。
+
 4. **JSX 作为障碍**：`ReactJS` 使用 `JSX`，这是一种允许 `HTML` 和 `JavaScript` 混合的语法扩展。这种策略是有利的，但开发社区的某些成员（特别是新开发者）将 `JSX` 视为障碍。开发者对于学习 `JSX` 有多困难存在分歧。
-
-
-
-
 
 区别 - ReactJS - React Native
 
@@ -693,6 +783,7 @@ export default App
 ### 示例：
 
 **App.js**
+
 ```javascript
 import React, { Component } from 'react';
 class App extends React.Component {
@@ -709,6 +800,7 @@ export default App;
 ```
 
 **Main.js**
+
 ```javascript
 import React from 'react';
 import ReactDOM from 'react-dom';
@@ -743,6 +835,7 @@ export default App;
 ```
 
 **Main.js**
+
 ```javascript
 import React from 'react';
 import ReactDOM from 'react-dom';
@@ -756,6 +849,7 @@ import App from './App.js';
 ### 示例：
 
 **App.js**
+
 ```javascript
 import React, { Component } from 'react';
 class App extends React.Component {
@@ -790,6 +884,7 @@ export default App;
 ```
 
 **Main.js**
+
 ```javascript
 import React from 'react';
 import ReactDOM from 'react-dom';
@@ -821,6 +916,7 @@ Component.propTypes = { /*Definition */};
 此示例中有一个 App 组件提供了我们需要的所有 props。在这种情况下，使用 `App.propTypes` 来验证 props。你必须在 App.js 文件中包含 `import PropTypes from 'prop-types'` 行来验证 props。
 
 **App.js**
+
 ```javascript
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
@@ -838,6 +934,28 @@ class App extends React.Component {
           </tr>
           <tr>
             <td>布尔</td>
+            <td>{this.props.propBool ? "true" : "False"}</td>
+            <td>{this.props.propBool ? "true" : "False"}</td>
+          </tr>
+          <tr>
+            <td>数组 (Array)</td>
+            <td>{this.props.propArray}</td>
+            <td>{this.props.propArray ? "true" : "False"}</td>
+          </tr>
+          <tr>
+            <td>函数 (Function)</td>
+            <td>{this.props.propFunc(2)}</td>
+            <td>{this.props.propFunc(2) ? "true" : "False"}</td>
+          </tr>
+          <tr>
+            <td>数字 (Number)</td>
+            <td>{this.props.propNumber}</td>
+            <td>{this.props.propNumber ? "true" : "False"}</td>
+          </tr>
+          <tr>
+            <td>字符串 (String)</td>
+            <td>{this.props.propString}</td>
+            <td>{this.props.propString ? "true" : "False"}</td>
           </tr>
         </table>
       </div>
@@ -846,40 +964,7 @@ class App extends React.Component {
 }
 ```
 
-
-
-
-
 ```javascript
-<td>{this.props.propBool ? "true" : "False"}</td>
-<td>{this.props.propBool ? "true" : "False"}</td>
-</tr>
-<tr>
-  <td>数组 (Array)</td>
-  <td>{this.props.propArray}</td>
-  <td>{this.props.propArray ? "true" : "False"}</td>
-</tr>
-<tr>
-  <td>函数 (Function)</td>
-  <td>{this.props.propFunc(2)}</td>
-  <td>{this.props.propFunc(2) ? "true" : "False"}</td>
-</tr>
-<tr>
-  <td>数字 (Number)</td>
-  <td>{this.props.propNumber}</td>
-  <td>{this.props.propNumber ? "true" : "False"}</td>
-</tr>
-<tr>
-  <td>字符串 (String)</td>
-  <td>{this.props.propString}</td>
-  <td>{this.props.propString ? "true" : "False"}</td>
-</tr>
-</table>
-</div>
-);
-}
-}
-
 App.propTypes = {
   propBool: PropTypes.bool.isRequired,
   propArray: PropTypes.array.isRequired,
@@ -900,6 +985,7 @@ export default App;
 ```
 
 ### Main.js
+
 ```javascript
 import React from 'react';
 import ReactDOM from 'react-dom';
@@ -910,7 +996,9 @@ ReactDOM.render(<App/>, document.getElementById('app'));
 ## ReactJS Props 校验
 
 ![](img/Image00015.jpg)
+
 ![](img/Image00016.jpg)
+
 ![](img/Image00017.jpg)
 
 ## React 组件 API
@@ -918,13 +1006,17 @@ ReactDOM.render(<App/>, document.getElementById('app'));
 这是一个非常高级的 API。它在提高应用代码复用性的同时，使其具有绝对的独特性。它可以以多种方式使用：
 
 * 创建元素。
+
 * 转换元素。
+
 * 碎片 (Fragments)。
 
 现在我们来介绍 React 组件 API 中可以访问的三个最重要的方法：
 
 * `findDOMNode()`
+
 * `setState()`
+
 * `forceUpdate()`
 
 ### findDOMNode()
@@ -932,10 +1024,13 @@ ReactDOM.render(<App/>, document.getElementById('app'));
 你必须使用 `ReactDOM` 来操作 DOM。`findDOMNode()` 方法用于定位 DOM 节点。这种方法帮助我们定位或访问底层的 DOM 节点。
 
 ### 语法：
+
 `ReactDOM.findDOMNode(component)`
 
 ### 示例：
+
 App.js
+
 ```javascript
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
@@ -978,10 +1073,13 @@ export default App;
 该方法用于更新组件的状态（state)。它并不是即时更改状态，而是修改现有的状态。它是响应事件处理程序和服务器响应以修改用户界面 (UI) 的主要技术。
 
 ### 语法：
+
 `this.setState(object newState[, function callback])`
 
 ### 示例：
+
 App.js
+
 ```javascript
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
@@ -1014,6 +1112,7 @@ export default App
 ```
 
 Main.js
+
 ```javascript
 import React from 'react';
 import ReactDOM from 'react-dom';
@@ -1026,10 +1125,13 @@ ReactDOM.render(<App/>, document.getElementById('app'));
 该方法允许手动更新组件。
 
 ### 语法：
+
 `Component.forceUpdate(callback)`
 
 ### 示例：
+
 App.js
+
 ```javascript
 import React, { Component } from 'react';
 class App extends React.Component {
@@ -1062,8 +1164,11 @@ export default App;
 每个组件都有自己的生命周期。组件的生命周期分为四个阶段：
 
 * 初始阶段 (Initial Phase)
+
 * 挂载阶段 (Mounting Phase)
+
 * 更新阶段 (Updating Phase)
+
 * 卸载阶段 (Unmounting Phase)
 
 生命周期的每个阶段都有自己的一组方法。让我们来看这些方法：
@@ -1073,6 +1178,7 @@ export default App;
 ReactJS 的诞生步骤。这些方法包括：
 
 * `getDefaultProps()` - 在组件创建之前调用。
+
 * `getInitialState()` - 在这里设置初始状态。
 
 ## 挂载阶段
@@ -1080,7 +1186,9 @@ ReactJS 的诞生步骤。这些方法包括：
 在此阶段，组件实例被创建并添加到 DOM 中。这些方法有：
 
 * `componentWillMount()` - 在组件渲染到 DOM 之前调用。
+
 * `componentDidMount()` - 在组件渲染并放置到 DOM 之后立即调用。
+
 * `render()` - 负责返回根 HTML 元素。
 
 ## 更新阶段
@@ -1088,16 +1196,16 @@ ReactJS 的诞生步骤。这些方法包括：
 该阶段与诞生或死亡阶段不同会不断重复。它包含：
 
 * `componentWillReceiveProps()` - 当组件接收新 props 时。
+
 * `shouldComponentUpdate()` - 它允许你控制组件的行为。
+
 * `componentWillUpdate()` - 在组件更新发生之前的调用。
+
 * `render()` - 检查 `this.props` 和 `this.state`。
+
 * `componentDidUpdate()` - 在组件更新后立即调用。
 
 ## 卸载阶段
-
-
-
-
 
 React 组件的生命周期在此阶段结束。当组件实例被销毁并从 DOM 中卸载时，会调用此函数。此阶段仅包含一个方法，列如下：
 
@@ -1155,7 +1263,7 @@ class App extends React.Component {
 export default App;
 ```
 
-## React 构造函数
+## React 构造函ner
 
 ### 什么是构造函数？
 
@@ -1176,6 +1284,7 @@ Constructor(props) {
 构造函数在 React 中主要有两个用途：
 
 1. 通过给 `this.state` 赋值一个对象，初始化组件的本地状态。
+
 2. 用于绑定组件拥有的事件处理函数。
 
 如果你不需要为 React 组件初始化状态或为其绑定方法，则没有必要为 React 组件构建 `Object() { [native code] }`。
@@ -1187,6 +1296,7 @@ Constructor(props) {
 以下示例演示了构造函数的概念：
 
 **App.js**
+
 ```javascript
 import React, { Component } from 'react';
 
@@ -1218,6 +1328,7 @@ export default App;
 ```
 
 **Main.js**
+
 ```javascript
 import React from 'react';
 import ReactDOM from 'react-dom';
@@ -1360,13 +1471,12 @@ function find_FirstNotRepeatedChar(str) {
 }
 ```
 
-
-
-
 ```javascript
 console.log(find_FirstNotRepeatedChar('abacddbec'));
 ```
+
 OUTPUT
+
 ```
 e
 ```
@@ -1376,6 +1486,7 @@ e
 ![](img/Image00024.jpg)
 
 ### HTML 代码
+
 ```html
 <!DOCTYPE html>
 <html>
@@ -1389,6 +1500,7 @@ e
 ```
 
 ### JAVASCRIPT 代码
+
 ```javascript
 function find_longest_word(str)
 {
@@ -1405,7 +1517,9 @@ function find_longest_word(str)
 }
 console.log(find_longest_word('Web Development Tutorial'));
 ```
+
 OUTPUT
+
 ```
 Development
 ```
@@ -1415,6 +1529,7 @@ Development
 ![](img/Image00025.jpg)
 
 ### HTML 代码
+
 ```html
 <!DOCTYPE html>
 <html>
@@ -1428,6 +1543,7 @@ Development
 ```
 
 ### JAVASCRIPT 代码
+
 ```javascript
 function vowel_count(str1)
 {
@@ -1444,7 +1560,9 @@ function vowel_count(str1)
 }
 console.log(vowel_count("The quick brown fox"));
 ```
+
 OUTPUT
+
 ```
 5
 ```
@@ -1454,6 +1572,7 @@ OUTPUT
 ![](img/Image00026.jpg)
 
 ### HTML 代码
+
 ```html
 <!DOCTYPE html>
 <html>
@@ -1467,6 +1586,7 @@ OUTPUT
 ```
 
 ### JAVASCRIPT 代码
+
 ```javascript
 function test_prime(n)
 {
@@ -1491,7 +1611,9 @@ function test_prime(n)
 }
 console.log(test_prime(37));
 ```
+
 OUTPUT
+
 ```
 True
 ```
@@ -1499,6 +1621,7 @@ True
 ## JavaScript: 获取数据类型
 
 ### HTML 代码
+
 ```html
 <!DOCTYPE html>
 <html>
@@ -1512,6 +1635,9 @@ True
 ```
 
 ### JAVASCRIPT 代码
+
+
+
 ```javascript
 function detect_data_type(value)
 {
@@ -1532,7 +1658,9 @@ console.log(detect_data_type(12));
 console.log(detect_data_type('w3resource'));
 console.log(detect_data_type(false));
 ```
+
 OUTPUT
+
 ```
 number
 string
@@ -1544,6 +1672,7 @@ Boolean
 ![](img/Image00027.jpg)
 
 ### HTML 代码
+
 ```html
 <!DOCTYPE html>
 <html>
@@ -1557,6 +1686,7 @@ Boolean
 ```
 
 ### JAVASCRIPT 代码
+
 ```javascript
 function Second_Greatest_Lowest(arr_num)
 {
@@ -1578,7 +1708,9 @@ function Second_Greatest_Lowest(arr_num)
   }
 console.log(Second_Greatest_Lowest([1,2,3,4,5]));
 ```
+
 OUTPUT
+
 ```
 2,4
 ```
@@ -1586,6 +1718,7 @@ OUTPUT
 ## 相加两位正整数的两个数字之和
 
 ### HTML 代码
+
 ```html
 <!DOCTYPE html>
 <html>
@@ -1600,6 +1733,7 @@ OUTPUT
 ```
 
 ### JAVASCRIPT 代码
+
 ```javascript
 function add_two_digits(n)
 {
@@ -1608,7 +1742,9 @@ function add_two_digits(n)
 console.log(add_two_digits(25));
 console.log(add_two_digits(50));
 ```
+
 OUTPUT
+
 ```
 7
 5
@@ -1617,6 +1753,7 @@ OUTPUT
 ## 闰年检查
 
 ### HTML 代码
+
 ```html
 <!DOCTYPE html>
 <html>
@@ -1630,6 +1767,7 @@ OUTPUT
 ```
 
 ### JAVASCRIPT 代码
+
 ```javascript
 function leapyear(year)
 {
@@ -1640,7 +1778,9 @@ console.log(leapyear(2000));
 console.log(leapyear(1700));
 console.log(leapyear(1800));
 ```
+
 OUTPUT
+
 ```
 true
 true
@@ -1653,6 +1793,7 @@ false
 ![](img/Image00028.jpg)
 
 ### HTML 代码
+
 ```html
 <!DOCTYPE html>
 <html>
@@ -1667,6 +1808,7 @@ false
 ```
 
 ### JAVASCRIPT 代码
+
 ```javascript
 function test37(x)
 {
@@ -1683,7 +1825,9 @@ console.log(test37(14));
 console.log(test37(10));
 console.log(test37(11));
 ```
+
 OUTPUT
+
 ```
 true
 true
@@ -1694,6 +1838,7 @@ false
 ## 以 'Java' 开头 - 否则 false
 
 ### HTML 代码
+
 ```html
 <!DOCTYPE html>
 <html>
@@ -1709,6 +1854,7 @@ false
 ```
 
 ### JAVASCRIPT 代码
+
 ```javascript
 function start_spec_str(str)
 {
@@ -1730,7 +1876,9 @@ console.log(start_spec_str("JavaScript"));
 console.log(start_spec_str("Java"));
 console.log(start_spec_str("Python"));
 ```
+
 OUTPUT
+
 ```
 true
 true
@@ -1742,6 +1890,7 @@ false
 ![](img/Image00029.jpg)
 
 ### HTML 代码
+
 ```html
 <!DOCTYPE html>
 <html>
@@ -1756,6 +1905,7 @@ false
 ```
 
 ### JAVASCRIPT 代码
+
 ```javascript
 function check_numbers(x, y)
 {
@@ -1771,7 +1921,9 @@ console.log(check_numbers(12, 101));
 console.log(check_numbers(52, 80));
 console.log(check_numbers(15, 99));
 ```
+
 OUTPUT
+
 ```
 false
 true
@@ -1781,6 +1933,7 @@ true
 ## 查找距离 100 的值
 
 ### HTML 代码
+
 ```html
 <!DOCTYPE html>
 <html>
@@ -1795,6 +1948,7 @@ true
 ```
 
 ### JAVASCRIPT 代码
+
 ```javascript
 function near_100(x, y)
 {
@@ -1819,7 +1973,9 @@ console.log(near_100(90, 89));
 console.log(near_100(-90, -89));
 console.log(near_100(90, 90));
 ```
+
 OUTPUT
+
 ```
 90
 -89
@@ -1831,6 +1987,7 @@ false
 ![](img/Image0032.jpg)
 
 ### HTML 代码
+
 ```html
 <!DOCTYPE html>
 <html>
@@ -1845,6 +2002,7 @@ false
 ```
 
 ### JAVASCRIPT 代码
+
 ```javascript
 function test37(x)
 {
@@ -1861,7 +2019,9 @@ console.log(test37(14));
 console.log(test37(10));
 console.log(test37(11));
 ```
+
 OUTPUT
+
 ```
 true
 true
@@ -1872,6 +2032,7 @@ false
 ## 两个数字的乘法和除法
 
 ### HTML 代码
+
 ```html
 <!DOCTYPE html>
 <html>
@@ -1887,10 +2048,6 @@ body {margin: 30px;}
 
 1 Number : <input type="text" id="firstNumber" />
 ```
-
-
-
-
 
 第二个个数字：<input type="text" id="secondNumber" /><br>
 
@@ -1909,6 +2066,7 @@ body {margin: 30px;}
 </</body>
 
 </html>
+```
 
 ### JAVASCRIPT 代码
 
@@ -1981,37 +2139,59 @@ fToC(45);
 #### TAM SEL
 
 - [初学者 Apache Spark 和 Scala：二本书合一 - 快速学习编程！](https://www.amazon.com/APACHE-SPARK-SCALA-BEGINNERS-QuickStart-ebook/dp/B084SGW51Y/ref=sr_1_1?dchild=1&keywords=APACHE+SPARK+AND+SCALA+FOR+BEGINNERS%3A+2+BOOKS+IN+1+-+Learn+Coding+Fast%21&qid=1627653411&s=digital-text&sr=1-1)
+
 - [Python 和 JavaScript 编程基础：适合绝对初学者](https://www.amazon.com/PYTHON-JAVASCRIPT-CODING-BASICS-BEGINNERS-ebook/dp/B09756TC9M/ref=sr_1_1?dchild=1&keywords=PYTHON+AND+JAVASCRIPT+CODING+BASICS%3A+FOR+ABSOLUTE+BEGINNERS&qid=1627653589&s=digital-text&sr=1-1)
+
 - [初学者 Laravel：快速学习编程](https://www.amazon.com/LARAVEL-BEGINNERS-Framework-Hands-Beginners-ebook/dp/B08779PRGD/ref=sr_1_1?dchild=1&keywords=LARAVEL+FOR+BEGINNERS%3A+Learn+Coding+Fast%3A&qid=1627653650&s=digital-text&sr=1-1)
+
 - [初学者 HTML：HTML CSS 编程语言速成，易步骤网页设计快速上手教程书 - 快速学习编程](https://www.amazon.com/HTML-BEGINNERS-Programming-Language-Tutorial-ebook/dp/B07SBFC4TG/ref=sr_1_1?dchild=1&keywords=HTML+FOR+BEGINNERS%3A+Html+CSS+Programming+Language+Crash+Course%2C+Web+Design+Quick+Start+Script+Tutorial+Book+in+Easy+Steps+-+LEARN+TO+CODE+FAST&qid=1627653769&s=digital-text&sr=1-1)
+
 - [Dart 编程基础：适合绝对初学者](https://www.amazon.com/DART-PROGRAMMING-BASICS-ABSOLUTE-BEGINNERS-ebook/dp/B08ZHVYV2L/ref=sr_1_1?dchild=1&keywords=DART+PROGRAMMING+BASICS%3A+FOR+ABSOLUTE+BEGINNERS&qid=1627653907&s=digital-text&sr=1-1)
+
 - [初学者 Rust 和 Go：二本书合一 - 快速学习编程！Rust 和 Go](https://www.amazon.com/RUST-GOLANG-BEGINNERS-QuickStart-Tutorial-ebook/dp/B085417F/ref=sr_1_1?dchild=1&keywords=RUST+AND+GOLANG+FOR+BEGINNERS%3A+2+BOOKS+IN+1+-+Learn+Coding+Fast&qid=1627653411&s=digital-text&sr=1-1)
+
 - [初学者 Apache Spark 和 Hadoop：二本书合一 - 快速学习编程](https://www.amazon.com/APACHE-SPARK-HADOOP-BEGINNERS-QuickStart-ebook/dp/B083VCKQ/ref=sr_1_1?dchild=1&keywords=APACHE+SPARK+HADOOP+FOR+BEGINNERS%3A+2+BOOKS+IN+1+-+Learn+Coding+Fast&qid=1627653411&s=digital-text&sr=1-1)
+
 - [初学者 TensorFlow：快速学习](https://www.amazon.com/TensorFlow-Beginners-Framework-Hands-ebook/dp/B0872GS1/ref=sr_1_1?dchild=1&keywords=TensorFlow+For+Beginners&qid=1627653411&s=digital-text&sr=1-1)
+
 - [初学者 Django 和 Python：二本书合一 - 快速学习](https://www.amazon.com/DJANGO-PYTHON-BEGINNERS-QuickStart-ebook/dp/B07Y5VS/ref=sr_1_1?dchild=1&keywords=DJANGO+PYTHON+BEGINNERS%3A+2+BOOKS+IN+1+-+Learn+Coding+Fast&qid=1627653411&s=digital-text&sr=1-1)
+
 - [JavaScript 和 Dart 编程基础：适合绝对初学者](https://www.amazon.com/JAVASCRIPT-DART-CODING-BASICS-BEGINNERS-ebook/dp/B092X7S/ref=sr_1_1?dchild=1&keywords=JAVCRIPT+DART+CODING+BASICS%3A+FOR+ABSOLUTE+BEGINNER&qid=1627653411&s=digital-text&sr=1-1)
+
 - [初学者 TensorFlow 和 Python 编程基础：适合绝对初学者](https://www.amazon.com/TENSORFLOW-BEGINNERS-PYTHON-BASICS-ebook/dp/B08GF3C/ref=sr_1_2?dchild=1&keywords=TENSORFLOW+BEGINNERS+AND+PYTHON+BASICS%3A+FOR+ABSOLUTE+BEGINNERS&qid=1627653411&s=digital-text&sr=1-1)
+
 - [Rust 语言：适合初学者，快速学习！](https://www.amazon.com/RUST-Programming-Language-Beginners-QuickStart-ebook/dp/B07VR2PR/ref=sr_1_2?dchild=1&keywords=RUST+Programming+Language+TAM+SEL&qid=1627653411&s=digital-text&sr=1-1)
+
 - [初学者 Hadoop 和 Python：二本书合一 - 快速学习！](https://www.amazon.com/HADOOP-PYTHON-BEGINNERS-QuickStart-Tutorial-ebook/dp/B082WH5Y/ref=sr_1_1?dchild=1&keywords=HADOOP+AND+PYTHON+FOR+BEGINNERS%3A+2+BOOKS+IN+1+-+Learn+Coding+Fast%21&qid=1627653411&s=digital-text&sr=1-1)
+
 - [初学者 Selenium 和 Java：二本书合一 - 快速学习！](https://www.amazon.com/SELENIUM-JAVA-BEGINNERS-framework-QuickStart-ebook/dp/B08533D/ref=sr_1_1?dchild=1&keywords=SELENIUM+AND+JAVA+FOR+BEGINNERS%3A+2+BOOKS+IN+1+-+Learn+Coding+Fast%21&qid=1627653411&s=digital-text&sr=1-1)
+
 - [初学者 Android 和 Java：二本书合一 - 快速学习！](https://www.amazon.com/ANDROID-JAVA-BEGINNERS-QuickStart-Tutorial-ebook/dp/B087F5V/ref=sr_1_1?dchild=1&keywords=ANDROID+AND+JAVA+FOR+BEGINNERS%3A+2+BOOKS+IN+1+-+Learn+Coding+Fast%21&qid=1627653411&s=digital-text&sr=1-1)
 
 #### J KING
 
 - [Python 和 Hadoop 基础](https://www.amazon.com/PYTHON-HADOOP-BASICS-PROGRAMMING-QuickStart-ebook/dp/B08CQYV/ref=sr_1_1?dchild=1&keywords=PYTHON+HADOOP+BASICS&qid=1627653589&s=digital-text&sr=1-1)
+
 - [Python 基础和 Python 编程示例](https://www.amazon.com/PYTHON-BASICS-PYTHON-CODING-ebook/dp/B0FL5C/ref=sr_1_1?dchild=1&keywords=PYTHON+BASICS+AND+PYTHON+CODING&qid=1627653589&s=digital-text&sr=1-1)
+
 - [C# 和 C++ 编程示例](https://www.amazon.com/CODING-EXAMPLES-BEGINNERS-ebook/dp/B0NG562/ref=sr_1_1?dchild=1&keywords=C#+AND+C+++CODING&qid=1627653589&s=digital-text&sr=1-1)
+
 - [Python 编程和 C 编程示例](https://www.amazon.com/PYTHON-CODING-C-PROGRAMMING-BEGINNERS-ebook/dp/B0L27P/ref=sr_1_3?dchild=1&keywords=PYTHON+CODING+AND+C+PROGRAMMING&qid=1627653589&s=digital-text&sr=1-1)
+
 - [C++ 和 Java 编程示例](https://www.amazon.com/JAVA-CODING-EXAMPLES-BEGINNERS-ebook/dp/B0P3SVG/ref=sr_1_1?dchild=1&keywords=C+++AND+JAVA+CODING&qid=1627653589&s=digital-text&sr=1-1)
+
 - [Android 基础和 Python 编程示例](https://www.amazon.com/ANDROID-BASICS-PYTHON-CODING-ebook/dp/B9B5DZ/ref/sr_1_3?dchild=1&keywords=ANDROID+BASICS+AND+PYTHON+CODING&qid=1627653589&s=digital-text&sr=1-1)
-- [C# 基础和 Python 编程示例](https://www.amazon.com/C#-BASICS-PYTHON-CODING-ebook/dp/B999PM/ref/sr_1_10?dchild=1&keywords=C#+BASICS+AND+PYTHON+CODING&qid=1627653589&s=digital-text&sr=1-1)
 
-
-
+- [C# 基础和 Python 编程示例](https://www.amazon.com/C#-BASICS-PYTHON-CODING-ebook/dp/B999PM/ref=sr_1_10?dchild=1&keywords=C#+BASICS+AND+PYTHON+CODING&qid=1627653589&s=digital-text&sr=1-1)
 
 - [JAVA 基础与 PYTHON 编码示例](https://www.amazon.com/JAVA-BASICS-PYTHON-CODING-EXAMPLES-ebook/dp/B098LVH4GK/ref=sr_1_21?dchild=1&qid=1627630555&refinements=p_27%3AJ+KING&s=digital-text&sr=1-21&text=J+KING)
+
 - [PYTHON 基础与 C# 编码示例](https://www.amazon.com/PYTHON-BASICS-CODING-EXAMPLES-PROGRAMMING-ebook/dp/B098FMBC9Z/ref=sr_1_20?dchild=1&qid=1627630555&refinements=p_27%3AJ+KING&s=digital-text&sr=1-20&text=J+KING)
+
 - [ANDROID 基础与 JAVA 编码示例](https://www.amazon.com/ANDROID-BASICS-JAVA-CODING-EXAMPLES-ebook/dp/B098PKHZD3/ref=sr_1_24?dchild=1&qid=1627630555&refinements=p_27%3AJ+KING&s=digital-text&sr=1-24&text=J+KING)
+
 - [C# 基础与 C# 编码示例](https://www.amazon.com/BASICS-CODING-EXAMPLES-PROGRAMMING-QuickStart-ebook/dp/B08GZL6NW6/ref=sr_1_6?dchild=1&keywords=C%23+BASICS+AND+C%23+CODING+EXAMPLES&qid=1627631068&s=digital-text&sr=1-6)
+
 - JAVASCRIPT 与 HTML 基础
+
 - [HTML AND JAVASCRIPT 编码示例](https://www.amazon.com/HTML-JAVASCRIPT-CODING-EXAMPLES-PROGRAMMING-ebook/dp/B08STNKT5M/ref=sr_1_1?dchild=1&keywords=HTML+AND+JAVASCRIPT+CODING+EXAMPLES&qid=1627631214&s=digital-text&sr=1-1)

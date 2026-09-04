@@ -1,22 +1,11 @@
+
 # JavaScript：JavaScript 秘籍 (Awesomeness Books 3)
-
-
-
-
-
-
 
 ![](img/81eaa03c19eb495528381306284d8000_0_0.png)
 
-
-
 用酷炫的方式学习 JavaScript
 
-
-
-
-
-# 停止一切！我送你一个礼物！
+## 停止一切！我送你一个礼物！
 
 天呐！天呐！！！天呐！！！你不兴奋吗？……谁不喜欢礼物呢？？？
 
@@ -26,9 +15,9 @@
 
 因为你购买了这本书，我将为你提供视频课程的 5 折优惠。太棒了，对吧？
 
-在这里获取视频：http://basicjavascript.gil.me/discount50/
+在这里获取视频：`http://basicjavascript.gilad.me/discount50/`
 
-# 引言
+## 引言
 
 嘿，大家好！
 
@@ -61,7 +50,8 @@
 你可以查看课程描述，我期待在课程中见到你。
 
 # 第 1 章
-# 无论如何学习 JavaScript
+
+## 无论如何学习 JavaScript
 
 你是否曾坐在家里舒服的沙发上思考过？
 
@@ -75,54 +65,39 @@
 
 如果这发生在你身上，请立即摸摸你的新大象。而且，和我一起学习更多关于 JavaScript 的知识吧。
 
-一上手，JavaScript 就**非常酷**！你可以为你的网站添加逻辑，使其更具交互性，并根据这些逻辑操作你的 HTML 和 CSS！
+一上手，JavaScript 就非常酷！你可以为你的网站添加逻辑，使其更具交互性，并根据这些逻辑操作你的 HTML 和 CSS！
 
-但如果你认为“酷”是唯一的特性，那么你就错了，因为 JavaScript 相对简单，而且还有流行的框架，如 angular.js、react.js、backbone.js、knockout，甚至还有 JQuery。
+但如果你认为“酷”是唯一的特性，那么你就错了，因为 JavaScript 相对简单，而且还有流行的框架，如 `angular.js`、`react.js`、`backbone.js`、`knockout`，甚至还有 `JQuery`。
 
 如果你渴望学习，你将很快掌握 JavaScript 的每一个基础构建模块！很酷，对吧？
 
 因为你购买了这本书，我将为你提供视频课程的 5 折优惠。太棒了，对吧？
 
-在这里获取视频：http://basicjavascript.gilad.me/discount50/
-
-一上手，JavaScript 就**非常酷**！你可以为你的网站添加逻辑，使其更具交互性，并根据这些逻辑操作你的 HTML 和 CSS！
-
-但如果你认为“酷”是唯一的特性，那么你就错了，因为 JavaScript 相对简单，而且还有流行的框架，如 angular.js、react.js、backbone.js、knockout，甚至有 JQuery。
-
-如果你渴望学习，你将很快掌握 JavaScript 的每一个基础构建模块！很酷，对吧？
-
-一上手，JavaScript 就**非常酷**！你可以为你的网站添加逻辑，使其更具交互性，并根据这些逻辑操作你的 HTML 和 CSS！
-
-但如果你认为“酷”是唯一的特性，那么你就错了，因为 JavaScript 相对简单，而且还有流行的框架，如 angular.js、react.js、backbone.js、knockout，甚至有 JQuery。
-
-如果你渴望学习，你将很快掌握 JavaScript 的每一个基础构建模块！很酷，对吧？
-
-一上手，JavaScript 就**非常酷**！你可以为你的网站添加逻辑，使其更具交互性，并根据这些逻辑操作你的 HTML 和 CSS！
-
-但如果你认为“酷”是唯一的特性，那么你就错了，因为 JavaScript 相对简单，而且还有流行的框架，如 angular.js、react.js、backbone.js、knockout，甚至有 JQuery。
-
-如果你渴望学习，你将很快掌握 JavaScript 的每一个基础构建模块！很酷，对吧？
+在这里获取视频：`http://basicjavascript.gilad.me/discount50/`
 
 # 第 2 章
-# 什么是 JavaScript？
+
+## 什么是 JavaScript？
 
 你也可以为你的网站添加逻辑，使其更具交互性，并根据这些逻辑操作你的 HTML 和 CSS！
 
-但如果你认为“酷”是唯一的特性，那么你就错了，因为 JavaScript 相对简单，而且还有流行的框架，如 angular.js、react.js、backbone.js、knockout，甚至有 JQuery。
+但如果你认为“酷”是唯一的特性，那么你就错了，因为 JavaScript 相对简单，而且还有流行的框架，如 `angular.js`、`react.js`、`backbone.js`、`knockout`，甚至有 `JQuery`。
 
 如果你渴望学习，你将很快掌握 JavaScript 的每一个基础构建模块！很酷，对吧？
 
 # 第 3 章
-# 在学习 JavaScript 之前我需要了解什么吗？
+
+## 在学习 JavaScript 之前我需要了解什么吗？
 
 你也可以为你的网站添加逻辑，使其更具交互性，并根据这些逻辑操作你的 HTML 和 CSS！
 
-但如果你认为“酷”是唯一的特性，那么你就错了，因为 JavaScript 相对简单，而且还有流行的框架，如 angular.js、react.js、backbone.js、knockout，甚至有 JQuery。
+但如果你认为“酷”是唯一的特性，那么你就错了，因为 JavaScript 相对简单，而且还有流行的框架，如 `angular.js`、`react.js`、`backbone.js`、`knockout`，甚至有 `JQuery`。
 
 如果你渴望学习，你将很快掌握 JavaScript 的每一个基础构建模块！很酷，对吧？
 
 # 第 4 章
-# 如何设置你的页面
+
+## 如何设置你的页面
 
 ```html
 <!DOCTYPE html>
@@ -139,19 +114,18 @@
 ```
 
 # 第 5 章
-# 简单的 alert，写入文档
 
+## 简单的 alert，写入文档
 
-
-
-[content]
 好的，好吧……现在在我们打印那些山羊之前，我们要提醒大家，小心！红色的毛茸茸山羊逃逸了！最好是在屏幕上弹出一个烦人的弹窗！
 
 所以我们会写 `alert`，然后打开括号，在我们的段落内部，我们也会使用双引号，然后写下“小心！红色的毛茸山羊正在路上了！”
 
 然后我们像往常一样，用分号结束这个语句。
 
-alert(“watch out! Red Fluffy goats are on their way! ");
+```
+alert("watch out! Red Fluffy goats are on their way!");
+```
 
 现在保存你的文档并刷新页面，然后……噢！你那个类似交通标志的小东西让我印象深刻，它在警告大家某些可能是……末日的事情！
 
@@ -164,7 +138,8 @@ alert(“watch out! Red Fluffy goats are on their way! ");
 在下一章中，我将为你展示如何编写注释。
 
 # 第 6 章
-注释
+
+## 注释
 
 嘘嘘！！！我必须告诉你一个秘密。
 
@@ -205,6 +180,7 @@ alert(“watch out! Red Fluffy goats are on their way! ");
 ```
 
 保存它，刷新它，然后……这是一个圣诞节奇迹！正如我们预期的那样：什么都没有渲染
+
 现在我和我的同事 Jeff 就知道我们那个小插曲了。
 
 但如果我想给 Jeff 留一段关于我晚餐吃了什么的多行注释……我的过敏清单……以及为什么下雨时我总是像个疯子一样大呢？
@@ -223,14 +199,15 @@ P.S. : 这段代码不起作用。
 P.S.S : 我们没牛奶了。所以去买一瓶吧。谢谢！ */
 ```
 
-希望你不会和 Jeff一起工作，因为他很难对付……
+希望你不会和 Jeff 一起工作，因为他很难对付……
 
 但无论你是否一起工作，至少你现在知道如何写 JavaScript 注释了。
 
 # 第 7 章
-变量
 
-你还记得在学校时，你的老师说过类似……X = 98
+## 变量
+
+你还记得在学校时，你的老师说过类似……`X = 98`
 
 然后她说：“丹尼刚刚吃了 X 个苹果”，
 
@@ -260,12 +237,13 @@ document.write(name);
 记住，JavaScript 是区分大小写的。这意味着 `name` 和 `Name` 被认为是不同的变量。
 
 # 第 8 章
-变量类型
+
+## 变量类型
 
 你还记得当你还是婴儿时，有这个形状的游戏，你需要对这些形状进行分类，并将每个形状放在合适的位置吗？就像那个游戏一样，JavaScript 有不同类型的变量。最常见的类型有：
 
 - 数字（Number）：用于像 9 这样的数值。
-- 字符串（String）：用于像 "gilad" 这样的文本。
+- 字符串（String）：用于像 `"gilad"` 这样的文本。
 - 布尔值（Boolean）：用于真假值。
 
 当你声明一个变量时，你实际上是在为该数据创建一个容器。
@@ -275,20 +253,20 @@ var count = 9;
 var name = "gilad";
 var isHappy = true;
 ```
-[/content]
 
 保存，刷新，然后……没错，宝贝！我们还很棒！
 
 现在我们知道我们有两种不同类型的变量。数字和字符串。它们之间的区别就在于那个小引号。
 
-在 javascript 中我们还有其他类型的变量，我们将在稍后的课程中介绍它们。
+在 JavaScript 中我们还有其他类型的变量，我们将在稍后的课程中介绍它们。
 
 # 第 9 章
-使用不同类型的 `var`
 
-你知道 Javascript 可以帮你做家庭作业吗？
+## 使用不同类型的 `var`
 
-如果我早早知道，，我会在 5 岁时就开始学 Javascript 了！
+你知道 JavaScript 可以帮你做家庭作业吗？
+
+如果我早早知道，我会在 5 岁时就开始学 JavaScript 了！
 
 这里有一个例子：
 
@@ -302,7 +280,7 @@ document.write(3 + 3);
 
 我将声明两个变量，第一个命名为 `num1` 并将其设置为 4，然后第二个将命名为 `num2`，并将其设置为数字 2。
 
-现在在 `document.write` 中，我将 `3+ 3` 替换为 `num1 + num2`，然后运行它。
+现在在 `document.write` 中，我将 `3 + 3` 替换为 `num1 + num2`，然后运行它。
 
 ```javascript
 var num1 = 4;
@@ -312,7 +290,7 @@ document.write(num1 + num2);
 
 好了……我们得到了 6。太棒了！我们学了新东西！我们实际上可以把变量加在一起！想象一下这些可能性！
 
-但我在想，如果我把……比方……4 改成 "4"，你知道的，作为一个字符串……会发生什么呢……
+但我在想，如果我把……比方……4 改成 `"4"`，你知道的，作为一个字符串……会发生什么呢……
 
 好了，让我们戴上疯狂科学家的眼镜来试一下：
 
@@ -337,11 +315,12 @@ document.write(num1 + num2);
 浏览器！！！你这个傻瓜……
 
 # 第 10 章
-数学运算符
+
+## 数学运算符
 
 在数学中，我们有 4 种可以进行的各种基础运算。加、减、乘、除。
 
-在上一节课中，我们已经看到可以在 javascript 中相加数字。
+在上一节课中，我们已经看到可以在 JavaScript 中相加数字。
 
 ```javascript
 var num1 = 4;
@@ -349,7 +328,7 @@ var num2 = 2;
 document.write(num1 + num2);
 ```
 
-除了基础加法外，我们在 Javascript 中还有另一种数学运算。让我们来看看剩下的。
+除了基础加法外，我们在 JavaScript 中还有另一种数学运算。让我们来看看剩下的。
 
 我们有减法：
 
@@ -388,7 +367,7 @@ var num1 = 4;
 document.write(num1 + 1);
 ```
 
-但是！如果你是一个像我一样的懒人，你可以使用简写来这样做：！
+但是！如果你是一个像我一样的懒人，你可以使用简写来这样做：
 
 ```javascript
 var num1 = 4;
@@ -405,18 +384,16 @@ document.write(num1--);
 加加号 `++` 符号（还有减减号 `--`）会将你的数字增加或……减少吗？（我们可以说是减少吗？）增加 1。它既短又好，我们以后在遇到更复杂的内容时，也会看到它！
 
 # 第 11 章
-函数
+
+## 函数
 
 这是一个真实故事：当我第一次离开父母家时，我有一个……呃……小小的……真的……问题。好吧，你懂吗？我讨厌打扫卫生，当我第一次离开父母家时，没有人帮我打扫了（啊！）。所以过了一两天，我的水槽里堆满了脏碗，床上一到处是脏衣服，地板完全是一团糟，我的猫也没帮上什么忙（喵！）。
 
 所以我所做的第一件事就是找来那些机器人。
 
-
-
-
 与其在最后才调用，我们可以在按钮被点击时调用它。
 
-所以，为每个按钮添加一个 "onclick" 属性并将其设置为你的函数。记住，我们的函数需要一个奖品（prize）参数，因此将其设置为你想要的奖品。由于我们已经在 HTML 属性中使用了双引号，所以这里改用单引号来包裹我们的字符串……这样应该可以了。
+所以，为每个按钮添加一个 `onclick` 属性并将其设置为你的函数。记住，我们的函数需要一个奖品（prize）参数，因此将其设置为你想要的奖品。由于我们已经在 HTML 属性中使用了双引号，所以这里改用单引号来包裹我们的字符串……这样应该可以了。
 
 ```
 <input type="button" value="Curtain 1" onclick='a shiny brand new tooth pick!' />
@@ -434,10 +411,11 @@ document.write(num1--);
 
 我真不敢相信……真是美好的一天……
 
-Javascript 函数参数？？还有活生生的羊驼？！老师还有什么可要求的呢？！
+JavaScript 函数参数？？还有活生生的羊驼？！老师还有什么可要求的呢？！
 
 # 第 13 章
-**多参数 (Multiple Parameters)**
+
+## 多参数 (Multiple Parameters)
 
 有时候，你可以拥有包含参数的函数，但你还需要添加另一个参数。
 
@@ -466,11 +444,15 @@ function ShowCurtain(curtainNumber, prize){
 万岁！
 
 # 第 14 章
-**返回语句 (Return Statement)**
+
+## 返回语句 (Return Statement)
 
 在之前的课程中，我们讨论了函数，而我们的函数只是执行了某些操作，对吧？
+
 我们在屏幕上打印内容，点击一个按钮弹出一个消息，诸此类……
+
 但在某些情况下，你希望函数返回某个值，以便以后使用。
+
 这就是为什么我们有 `return` 语句。
 
 来看这个例子：
@@ -488,6 +470,7 @@ function BasicAddition(num1,num2){
 `BasicAddition(1, 2);`
 
 如果我们现在运行它，什么都不会显示。
+
 这是因为我们没有告诉函数对结果进行什么处理。它既没有打印，也没有存储在任何地方。
 
 创建一个新变量名为 `result`。从 `BasicAddition` 函数中获取结果。然后将 `result` 打印到页面上。
@@ -502,13 +485,14 @@ document.write(result);
 我们返回了相加数字的结果，将其存储在名为 `result` 的变量中，然后使用该变量将其打印在页面上。
 
 # 第 15 章
-**从另一个函数调用 (Calling from another function)**
+
+## 从另一个函数调用 (Calling from another function)
 
 好了，你已经知道如何写函数，如何为这个写写参数，甚至是多个参数，甚至……（保佑上帝！）为这个函数写返回语句！
 
 现在我要向你展示一个有一天派上用场的小技巧……
 
-你实际上可以在……**函数内部调用函数**！
+你实际上可以在……函数内部调用函数！
 
 让我们试一下，创建一个 `GoodNight` 函数，以及另一个名为 `GoodMorning` 的函数。它们都不接受任何参数。
 
@@ -545,7 +529,7 @@ function Start(){
 
 现在让我们尝试让浏览器崩溃。（千万不要在家里尝试！）不……开玩笑的。你可以试的！
 
-我们将 `GoodMorning` 函数放在 `GoodNight` 函数内部，反之亦然，然后通过告诉它调用 `GoodMorning` 来启动 `start`。（为了可读性，在每个 write 语句中添加 `<br>` 标签。）
+我们将 `GoodMorning` 函数放在 `GoodNight` 函数内部，反之亦然，然后通过告诉它调用 `GoodMorning` 来启动 `Start`。（为了可读性，在每个 write 语句中添加 `<br>` 标签。）
 
 我们预期浏览器会进入 `GoodMorning` 并说 good morning，然后进入 `GoodNight` 说“good night!”。然后回到 good morning，good night，good morning，good night good morning，good night good morning……它应该陷入了某种 limbo 状态……抛弃了妻子和孩子……甚至还有它自己的理智！
 
@@ -574,12 +558,8 @@ function Start(){
 看到了吗？当我们启动 `Start` 函数时，我们也运行了它内部的两个函数。
 
 # 第 16 章
-**if 语句 (If Statement)**
 
-（注：原文此处存在大量重复与乱码，翻译已基于核心逻辑进行整理。）
-
-
-
+## if 语句 (If Statement)
 
 ```javascript
 if(num1 < num2){
@@ -596,6 +576,7 @@ if(num1 <= num2){
 ```
 
 所以如果我们检查数字 4，它不会运行；检查 3，它不会运行；2……？砰。明白了。
+
 我们还可以检查它是否“大于”或“等于”
 
 ```javascript
@@ -607,11 +588,12 @@ if(num1 >= num2){
 酷酷！
 
 # 第 17 章
-Else & if
+
+## Else & if
 
 假设你有一个条件，例如……单词“banana”等于单词“banana”：
 
-当条件成立时，你将有一个名为“ChoppingBanana”的函数。
+当条件成立时，你将有一个名为 `ChoppingBanana` 的函数。
 
 ```javascript
 if("banana" == "banana"){
@@ -623,9 +605,10 @@ if("banana" == "banana"){
 
 香蕉就是香蕉，代码将会执行。
 
-如果我把其中一个香蕉换成菠萝（Pineapple）……ChoppingBanana 函数就不会被触发……对吧？
+如果我把其中一个香蕉换成菠萝（Pineapple）……`ChoppingBanana` 函数就不会被触发……对吧？
 
 但如果我想在条件不成立时触发另一个函数呢？我该怎么做？
+
 在这种情况下，我们需要在花括号之后输入一个 `else` 语句，以及另一组大括号，在这些大括号内部，我们可以编写我们的代码。
 
 ```javascript
@@ -655,15 +638,21 @@ if("banana" == "pineapple"){
 如果你的浏览器访问了任何条件，`else` 语句就不会被触发。
 
 # 第 18 章
-Switch
+
+## Switch
 
 谁知道呢，也许有一天你将拥有自己的网页开发公司。
+
 和任何其他大公司一样，它有它自己的……自动售卖机！
+
 但我们不像任何其他大公司，对吧？我们的自动售卖机将是特殊的！
+
 所以我们将有一个……*鼓点*
+
 等待售卖机（Vending Pending Machine）！
 
 我们的自动售卖机会让你等待（pending）。而且就这样。没有汽水或任何东西。只是……等一会儿，然后离开。
+
 好了，首先，我们必须构建我们的等待售卖机标题，所以我们会在 HTML 中添加一些小花样……
 
 ```html
@@ -675,6 +664,7 @@ Switch
 ```
 
 现在让我们构建等待售卖机函数。
+
 我会写一个名为 `VendingMachine` 的函数，它接收一个 `pendingTime` 参数，在我们的函数内部我将初始化一个 `switch` 语句，让我写下来，稍后我会解释：
 
 ```javascript
@@ -708,19 +698,12 @@ function PendingMessage(time){
   alert("Vending Machine says " + time + " minutes");
 }
 ```
-（注：OCR 文本极其破碎。我将对提供的文本块进行尽可能可能的重构。）
 
 # 第 19 章
-For loop
 
-在过去，现在在辛普森一家（Simpsons）里，学生有普遍的惩罚。例如……“我必须在课上说话”或“我不会忘记做作业”。今天我们将让所有学生获得自由，用我们新新的……
+## For loop
 
-（等待，OCR 非常杂乱。我将提供提供文本的干净版本。）
-
-# 第 19 章
-For loop
-
-在过去，现在在辛普森一家里，学生有普遍的惩罚。今天我们将让所有学生获得自由，用我们新新的机器，写下……
+在过去，现在在辛普森一家（Simpsons）里，学生有普遍的惩罚。例如……“我必须在课上说话”或“我不会忘记做作业”。今天我们将让所有学生获得自由，用我们新新的机器，写下……
 
 所以首先让我们的文档看起来像这样：
 
@@ -731,22 +714,14 @@ body{background-color: #33333; color: #f0f0f0;}
 ```
 
 好了，第一件事，看看我们可以重复相同的……
+
 为了让这发生，我们将使用我们妈妈的兄弟，`for` 循环。
 
 ```javascript
 for(i=0; i < 10 ; i++) {
-  ##... 代码... 
+  //... 代码... 
 }
 ```
-
-实际上，我将只输出提示中提供的特定文本的干净版本。
-
-（注：此处重复了前文示例和逻辑内容，已按要求处理翻译和格式。）
-
-
-
-
-## ♫ ...正在编写 Linemachineee.... yeah... ea... ea... a... ♫ ??
 
 是的，首先，我们将编写一个名为 `WriteLineMachine` 的函数，并在里面包含循环，该函数将接收一个名为 `lineText` 的参数。
 
@@ -808,26 +783,28 @@ StartMachine(text);
 
 ```javascript
 var loopNum = 50;
-for(i=0 ; i <loopNum ; i++){
+for(i=0 ; i < loopNum ; i++){
   Write(lineText);
 }
 ```
 
 就是这样。
+
 现在我们可以欺骗老师们，让我们的机器为我们写行了！
 
 # 第 20 章
-数组 (Array)
+
+## 数组 (Array)
 
 现在我们将学习数组。
 
-有时你可能想在 Javascript 中列出一些东西，比如用户名列表、日期或任何其他。
+有时你可能想在 JavaScript 中列出一些东西，比如用户名列表、日期或任何其他。
 
 为了做到这一点，你当然可以为每一个声明一个变量，比如 `var1`、`var2`、`var3` 等……但将是完全低效的（尤其是当规模更大时……）。
 
 所以对于这类任务，我们有了数组。数组会存储一个列表，但只在一个变量中。
 
-让我给你们看看我的意思，我会创建一个名称数组。你只需要做的是输入 `" new "` 然后输入 `" Array "`，而 `Array` 这个词是你必须输入的，你不能随心所欲，它是保留字名称……
+让我给你们看看我的意思，我会创建一个名称数组。你只需要做的是输入 `new` 然后输入 `Array`，而 `Array` 这个词是你必须输入的，你不能随心所欲，它是保留字名称……
 
 打开括号，在括号内写下你的变量，我会像之前说的那样输入一组字符串名称列表。Big Tony, Amazing Bob, Cool Jeff, and Awesome Jane.
 
@@ -839,108 +816,9 @@ var names = new Array("Big Tony", "Amazing Bob", "Cool Jeff", "Awesome Jane");
 
 我会写 `document.write`，然后是 `Amazing Bob`。
 
-```，这里```
-``````
-
-，是 `Amazing Bob`，在屏幕上打印 Cool Jeff，, Awesome Jane。Big Tony, Amazing Bob, Cool Jeff, and Awesome Jane。
-
-```javascript
-var names = new Array("Big Tony", "Amazing Bob", "Cool Jeff", "Awesome Jane");
-```
-
-现在假设我想在屏幕上打印名字 Amazing Bob，我该怎么办？
-
-我会写 `document.write`，然后是 `Amazing Bob`。
-
-```，这里```
-Big Tony, Amazing Bob, Cool Jeff, and Awesome Jane。
-
-```javascript
-function Write(lineText) {
-    document.write(lineText);
-}
-```
-
-```，这里```
-```, Jane, Cool Jeff, and Awesome Jane。Big Tony, Amazing Bob, Cool Jeff, and Awesome Jane。
-
-```javascript
-var names = new Array("Big Tony", "Amazing Bob", "Cool Jeff", "Awesome Jane");
-```
-
-现在假设我想在屏幕上打印名字 Amazing Bob，我该怎么办？
-
-我会写 `document.write`，然后是 `Amazing Bob`。
-
-```，这里```
-```, Jane, Cool Jeff, and Awesome Jane。Big Tony, Amazing Bob, Cool Jeff, and Awesome Jane。
-
-```javascript
-var names = new Array("Big Tony", "Amazing Bob", "Cool Jeff", "Awesome Jane");
-```
-
-现在假设我想在屏幕上打印名字 Amazing Bob，我该怎么办？
-
-我会写 `document.write`，然后是 `Amazing Bob`。
-
-```，这里```
-```, Jane, Cool Jeff, and Awesome Jane。Big Tony, Amazing Bob, Cool Jeff, and Awesome Jane。
-
-```javascript
-var names = new Array("Big Tony", "Amazing Bob", "Cool Jeff", "Awesome Jane");
-```
-
-现在假设我想在屏幕上打印名字 Amazing Bob，我该怎么办？
-
-我会写 `document.write`，然后是 `Amazing Bob`。
-
-```，这里```
-```, Jane, Cool Jeff, and Awesome Jane。Big Tony, Amazing Bob, Cool Jeff, and Awesome Jane。
-
-```javascript
-var names = new Array("Big Tony", "Amazing Bob", "Cool Jeff", "Awesome Jane");
-```
-
-*(注：由于原文文本在后续出现了大量重复和乱码，此处翻译已根据逻辑对核心功能描述进行了处理，并保持了文档工程师的专业性)*
-
-**修正：基于逻辑核心部分的翻译：**
-
-In order to do that, you can surely declare a variable for every one of them, like var1, var2, var3, and so on... But it will be completely inefficient. (especially on bigger bigger, ...) )
-
-So for that kind of task, we have Arrays. Arrays will store a list, but on just one variable.
-
-Let me show you what I mean, I will create an array of names. All you need to do is type " new " and then " Array " and the Array word is something you have to type , you cannot type whatever you want, that's reserved name...
-
-You open parenthesis, and inside of those parentheses you write your variables , I will type a n list of string names as I said earlier. Big Tony, Amazing Bob, Cool Jeff, and Awesome Jane.
-
-```javascript
-var names = new Array("Big Tony", "Amazing Bob", "Cool Jeff", "Awesome Jane");
-```
-
-Now let's say I want to print on the screen the name Amazing Bob, what do I do ?
-
-I will write document.write, and then is `Amazing Bob`.
-
-```javascript
-function Write(lineText) {
-    document.write(lineText);
-}
-```
-
-And we will insert our new function inside of our WriteLineMachine ... And link the parameter of the WriteLineMachine
-
-*(此处由于原文存在大量逻辑重复乱码，已根据上述核心代码块完成翻译逻辑)*
-
----
-
-**[说明]**：我已对提供的文本中核心的逻辑部分（函数定义、循环、数组使用）进行了高质量翻译。由于您提供的原文在后半部分存在大量重复的随机字符和乱码，根据高级文档工程师的原则，我优先翻译了具有实际意义的指令内容，并确保了格式的完整性。
-
-
-
-
-
 # 第 23 章
-接下来怎么办？
+
+## 接下来怎么办？
 
 恭喜你！
 
@@ -950,8 +828,8 @@ And we will insert our new function inside of our WriteLineMachine ... And link 
 
 现在，我已经完成了我的第一个 JavaScript 课程，我接下来该做什么呢？我该如何提高我的 Web 开发技能呢？
 
-嗯，年轻的小学徒（padawan），现在是时候将你的 JavaScript技能与服务端开发结合起来了。
+嗯，年轻的小学徒（padawan），现在是时候将你的 JavaScript 技能与服务端开发结合起来了。
 
 我有一门专门为你准备的 C# 课程，因为你购买了这本书（或者为了补偿我那些糟糕的笑话），我将为你提供 Udemy 上所有的课程的 5 折优惠。
 
-你可以在这里获取你的优惠券：http://basicjavascript.gilad.me/discount50/
+你可以在这里获取你的优惠券：`http://basicjavascript.gilad.me/discount50/`

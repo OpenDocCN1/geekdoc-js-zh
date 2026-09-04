@@ -1,9 +1,11 @@
-# C#：精通C# (C#编程语言, C#教程, C#编码, .NET, Visual Studio, C#运算符, Python, PowerShell, JavaScript)
 
+# C#：精通 C#
 
-# 引言
+C# 编程语言、C# 教程、C# 编码、.NET、Visual Studio、C# 运算符、Python、PowerShell、JavaScript
 
-恭喜您下载了《*C#*》一书，感谢您这样做。
+## 引言
+
+恭喜您下载了《C#》一书，感谢您这样做。
 
 接下来的章节将讨论您需要了解的关于 C# 的所有内容。当您读完本书时，您应该能够使用 C# 编写程序，并以该语言应有的水平与计算机进行交互。
 
@@ -11,48 +13,46 @@ C# 将与其他 C 语言类似，但您会意识到存在一些差异，使其�
 
 市面上有很多关于这个主题的书籍，再次感谢您选择这一本！我们已尽一切努力确保本书包含尽可能多的有用信息，请尽情享受阅读！
 
-# 第一章：C# 概述
+## 第一章：C# 概述
 
 当您开始使用 C# 时，您会注意到它是一种面向对象的语言，由微软公司创建，并随后获得了 ECMA（欧洲计算机制造商协会）和 ISO（国际标准化组织）的批准。
 
-安德斯·海尔斯伯格开发了这种语言，同时他的团队也在开发与之配套的 .Net 框架。它被设计用于 CLI（公共语言基础结构），这将向您展示可执行的代码以及运行时环境，使您能够在各种平台和架构上使用高级别功能。
+安德斯·海尔斯伯格开发了这种语言，同时他的团队也在开发与之配套的 .NET 框架。它被设计用于 CLI（公共语言基础结构），这将向您展示可执行的代码以及运行时环境，使您能够在各种平台和架构上使用高级别功能。
 
 使 C# 成为一种广泛使用的语言的一些原因如下：
 
-1.  您可以将其作为 .Net 框架的一部分使用
-2.  它是一种通用编程语言
-3.  您可以在多种平台上使用它
-4.  它是一种面向对象的程序
-5.  它将生成高效的程序
-6.  它面向组件
-7.  该语言结构清晰且易于学习
+1. 您可以将其作为 .NET 框架的一部分使用。
+2. 它是一种通用编程语言。
+3. 您可以在多种平台上使用它。
+4. 它是一种面向对象的程序。
+5. 它将生成高效的程序。
+6. 它面向组件。
+7. 该语言结构清晰且易于学习。
 
 虽然 C# 可能看起来只是 C 编程语言的另一种变体，但它实际上更像 Java 而非 C，因为它是一种被全球程序员使用的程序。
 
 程序员认为重要的一些特性包括：
 
-1.  可与 Windows 集成
-2.  布尔条件
-3.  LINQ 和 Lambda 表达式
-4.  自动垃圾回收
-5.  简化的多线程
-6.  标准库
-7.  条件编译
-8.  程序集变体
-9.  索引器
+1. 可与 Windows 集成
+2. 布尔条件
+3. LINQ 和 Lambda 表达式
+4. 自动垃圾回收
+5. 简化的多线程
+6. 标准库
+7. 条件编译
+8. 程序集变体
+9. 索引器
 10. 属性和事件
 11. 易于使用的泛型
 12. 委托和事件管理
 
-# 第二章：C# 的历史
+## 第二章：C# 的历史
 
-在 .Net 框架开发过程中，类库是使用一种称为“简单托管 C”（Simple Managed C）的系统中的托管代码编译器编写的。直到 1999 年 1 月，海尔斯伯格才组建了一个团队，开发了一种新语言，简称为 Cool，但实际上它是“类似 C 的面向对象语言”（C like Object Oriented Language）。当时微软曾考虑将 Cool 作为该项目的最终名称，但由于版权原因未能实现。
+在 .NET 框架开发过程中，类库是使用一种称为“简单托管 C”（Simple Managed C）的系统中的托管代码编译器编写的。直到 1999 年 1 月，海尔斯伯格才组建了一个团队，开发了一种新语言，简称为 Cool，但实际上它是“类似 C 的面向对象语言”（C like Object Oriented Language）。当时微软曾考虑将 Cool 作为该项目的最终名称，但由于版权原因未能实现。
 
-2000 年，在专业开发者大会上，.Net 项目被公之于众，该语言被赋予了新名称 C#，类库被命名为 ASP.Net，而运行时则被移植到了该语言中。
+2000 年，在专业开发者大会上，.NET 项目被公之于众，该语言被赋予了新名称 C#，类库被命名为 ASP.NET，而运行时则被移植到了该语言中。
 
 C# 语言的首席设计师同时也是微软的首席架构师，他曾参与创建 Turbo Pascal、Embarcadero Delphi（曾用名 CodeGear Delphi、Inprise Delphi 和 Borland Delphi）的设计，并参与了 Visual J++ 的工作。在采访和撰写的论文中，海尔斯伯格表示，大多数编程语言中存在的缺陷正是推动公共语言运行时基础设计的动力，进而推动了该语言本身的设计。
-
-
 
 1994 年，詹姆斯·高斯林创造了 Java 语言，而太阳微系统公司的联合创始人比尔·乔伊表示，C#只是对 Java 语言的模仿。他甚至进一步说：“C#就像是去掉了可靠性、生产力和安全性的 Java。”克雷夫特和朗格回应道：“Java 和 C#几乎是相同的编程语言。无聊的重复，缺乏创新。几乎没有人会声称 Java 或 C#是改变了我们编写程序方式的革命性编程语言。而且，C#从 Java 借鉴了很多，反之亦然。现在 C#支持装箱和拆箱，我们 Java 中也将有非常类似的功能。”
 
@@ -62,7 +62,7 @@ C# 语言的首席设计师同时也是微软的首席架构师，他曾参与�
 
 以下是 C#每个版本发布时添加的功能。
 
-## 版本 2.0
+### 版本 2.0
 
 1. 委托推断
 2. 泛型
@@ -75,7 +75,7 @@ C# 语言的首席设计师同时也是微软的首席架构师，他曾参与�
 9. Getter/Setter 单独可访问性
 10. 可空类型
 
-## 版本 3.0
+### 版本 3.0
 
 1. 分部方法
 2. 隐式类型局部变量
@@ -87,36 +87,36 @@ C# 语言的首席设计师同时也是微软的首席架构师，他曾参与�
 8. 匿名类
 9. 扩展方法
 
-## 版本 4.0
+### 版本 4.0
 
 1. 嵌入式互操作类
 2. 动态绑定
 3. 泛型协变和逆变
 4. 命名参数和可选参数
 
-## 版本 5.0
+### 版本 5.0
 
 1. 调用方信息特性
 2. 异步方法
 
-## 版本 6.0
+### 版本 6.0
 
 1. 字典初始化器
 2. 编译器即服务
-3. nameof 运算符
+3. `nameof` 运算符
 4. 将静态类成员导入命名空间
 5. 字符串插值
 6. 异常筛选器
-7. null 传播器
-8. 在 catch/finally 块中使用 await
+7. `null` 传播器
+8. 在 `catch`/`finally` 块中使用 `await`
 9. 表达式体成员
 10. 自动属性初始化器
 11. 仅 getter 属性的默认值
 
-## 版本 7.0
+### 版本 7.0
 
 1. 表达式体 getter 和 setter
-2. out 变量
+2. `out` 变量
 3. 表达式体构造函数和终结器
 4. 模式匹配
 5. 通用异步返回类型
@@ -127,16 +127,16 @@ C# 语言的首席设计师同时也是微软的首席架构师，他曾参与�
 10. 局部函数
 11. 数字分隔符
 
-## 版本 7.1
+### 版本 7.1
 
 1. 默认表达式
-2. 异步 Main 方法
+2. 异步 `Main` 方法
 
-# 第三章
+## 第三章
 
 ![](img/00001.jpeg)
 
-## C# 环境
+### C# 环境
 
 .NET 是一个运行在自身平台上的框架，它将帮助你编写 Windows 应用程序、Web 服务和 Web 应用程序。由于该框架设计为几乎可以与任何编程语言一起使用，因此其应用程序将能够在多个平台上运行。每种语言都可以选择访问该框架，以便它们能够相互通信。
 
@@ -177,11 +177,11 @@ VCE 和 Web 创建器是比 Visual Studio 更小的版本，并且具有与 Visu
 
 Mono 的整个目的是能够运行为 Microsoft .NET 构建的应用程序，以便它们能够与为其他系统软件（如 Android、iOS、Linux 和 Unix）开发的工具一起工作。
 
-# 第四章
+## 第四章
 
 ![](img/00001.jpeg)
 
-## C# 的程序结构
+### C# 的程序结构
 
 在你能够学习构建 C# 程序需要什么之前，你必须先了解该编程语言是如何构建的。
 
@@ -191,37 +191,26 @@ Mono 的整个目的是能够运行为 Microsoft .NET 构建的应用程序，�
 2. 命名空间声明
 3. 语句和表达式
 4. 类
-5. Main 方法
+5. `Main` 方法
 6. 类方法
 7. 类属性
 
 **示例**
 
-```
+```csharp
 using System;
 
 namespace HelloOuterSpaceApplication
-
 {
-
-class HelloOuterSpace
-
-{
-
-static void Main(string[] args)
-
-{
-
-/* 你的第一个 C# 程序 */
-
-Console.WriteLine("Hello outer space");
-
-Console.ReadKey();
-
-}
-
-}
-
+    class HelloOuterSpace
+    {
+        static void Main(string[] args)
+        {
+            /* 你的第一个 C# 程序 */
+            Console.WriteLine("Hello outer space");
+            Console.ReadKey();
+        }
+    }
 }
 ```
 
@@ -241,15 +230,11 @@ Console.ReadKey();
 
 `WriteLine` 是 `Console` 类在命名空间中拼写时使用的方法。这个语句将导致你的结果显示在你面前的屏幕上。
 
-
-
-
-
-# 第五章
+## 第五章
 
 ![](img/00001.jpeg)
 
-## C# 语法
+### C# 语法
 
 由于 C# 是一种面向对象的编程语言，你将需要使用对象来与其他对象交互，从而创建动作。这些动作在使用时会产生方法。相同的对象将拥有类，或者属于同一个类。
 
@@ -257,107 +242,79 @@ Console.ReadKey();
 
 **示例：**
 
-```
+```csharp
 Using system;
 
 Namespace circle application
-
 {
+    Class circle
+    {
+        // variables
+        Double width;
+        Double circumference
 
-Class circle
+        Open void accept details ()
+        {
+            Width = 3. 4
+            Circumference = 3.2
+        }
 
-{
+        Open double ()
+        {
+            Return width * circumference
+        }
 
-// variables
+        Open void display ()
+        {
+            Console. WriteLine (“width: {0}”, width);
+            Console. WriteLine (circumference: {0}, circumference);
+        }
+    }
 
-Double width;
-
-Double circumference
-
-Open void accept details ()
-
-{
-
-Width = 3. 4
-
-Circumference = 3.2
-
-}
-
-Open double ()
-
-{
-
-Return width * circumference
-
-}
-
-Open void display ()
-
-{
-
-Console. WriteLine (“width: {0}”, width);
-
-Console. WriteLine (circumference: {0}, circumference);
-
-}
-
-}
-
-Class perform circle
-
-{
-
-Static void main (string [] para)
-
-{
-
-Circle c = new circle ();
-
-C accept details ();
-
-C. display ();
-
-Console. ReadiLine ();
-
-}
-
-}
-
+    Class perform circle
+    {
+        Static void main (string [] para)
+        {
+            Circle c = new circle ();
+            C accept details ();
+            C. display ();
+            Console. ReadiLine ();
+        }
+    }
 }
 ```
 
 对于上面所示的示例，你将得到圆的测量值。
 
-**Using**
+### `Using`
 
 在 C# 中，你的第一条语句始终是 `using system;`
 
 关键字 `using` 用于 C# 中的命名空间。
 
-**Class**
+### `Class`
 
 当你声明类时，将使用此关键字。
 
-**注释**
+### 注释
 
 当你需要解释所创建的代码时，可以使用注释。C# 编译器会忽略你添加的任何注释。多行注释以 `/*` 开头，以 `*/` 结尾。
 
 单行注释使用一组双斜杠。
 
-**成员变量**
+### 成员变量
 
 这些变量是类成员的属性。使用时可以存储数据。
 
-**成员函数**
+### 成员函数
 
 成员函数是执行任务的语句。类的这些函数通常在类内部声明。
 
-**实例化类**
+### 实例化类
 
 类将在脚本的 `main` 方法中包含类的名称。
 
-**标识符**
+### 标识符
 
 标识符是你用来标识类、变量和函数的单词。在 C# 中创建标识符有三条规则。
 
@@ -365,13 +322,13 @@ Console. ReadiLine ();
 2. 必须以字母开头，后面可以跟其他字母、数字或下划线。但不能以数字开头。
 3. 不能使用任何特殊字符，但下划线除外。
 
-**C# 中的关键字**
+### C# 中的关键字
 
 关键字是 C# 编译器保留的单词。这些关键字被设置为不能用作标识符。但是，如果你想将这些单词用作标识符，可以在单词前使用 at 符号（`@`），使其在 C# 中有效。
 
 C# 中的标识符在代码中具有特殊含义，因此有些被称为上下文关键字。
 
-**保留关键字**
+#### 保留关键字
 
 1. `abstract`
 2. `catch`
@@ -453,7 +410,7 @@ C# 中的标识符在代码中具有特殊含义，因此有些被称为上下�
 78. `uint`
 79. `void`
 
-**上下文关键字**
+#### 上下文关键字
 
 1. `partial`
 2. `get`
@@ -474,11 +431,11 @@ C# 中的标识符在代码中具有特殊含义，因此有些被称为上下�
 17. `global`
 18. `add`
 
-# 第六章
+## 第六章
 
 ![](img/00001.jpeg)
 
-## 数据类型
+### 数据类型
 
 C# 中有三种不同的数据类型。
 
@@ -486,7 +443,7 @@ C# 中有三种不同的数据类型。
 2. 值类型
 3. 引用类型
 
-### 值类型
+#### 值类型
 
 值类型是直接赋值的变量。它们派生自 `System.ValueType`。
 
@@ -512,42 +469,31 @@ C# 中有三种不同的数据类型。
 
 **语法**
 
-```
+```csharp
 Using system;
 
 Namespace dataclass application
-
 {
-
-Class program
-
-{
-
-Static void main (string [] args)
-
-{
-
-Console. Write line (size of int: {0}, Sizeof (int));
-
-Console. ReadiLine ()
-
-}
-
-}
-
+    Class program
+    {
+        Static void main (string [] args)
+        {
+            Console. Write line (size of int: {0}, Sizeof (int));
+            Console. ReadiLine ()
+        }
+    }
 }
 ```
 
-### 引用类型
-
-
-
+#### 引用类型
 
 你实际上不会在引用类变量中存储任何数据。基本上，你只是引用程序内存中的一个位置。当你使用多个变量时，引用类将指向这些类所在的位置。如果该位置的数据被某个变量修改，那么另一个变量将自动反映这一变化。
 
-### 对象类
+#### 对象类
 
-该类将成为你在 C# 中遇到的所有数据类的基类。CTS（通用类型系统）在使用该系统时会使用别名 `Object` 类。只要该类由程序预定义或由用户定义，这个 `Object` 类就可以被赋值为本章将要讨论的其他类的值。在你可以赋值之前，需要先进行转换。
+
+
+该类将成为你在 `C#` 中遇到的所有数据类的基类。`CTS`（通用类型系统）在使用该系统时会使用别名 `Object` 类。只要该类由程序预定义或由用户定义，这个 `Object` 类就可以被赋值为本章将要讨论的其他类的值。在你可以赋值之前，需要先进行转换。
 
 当 `Object` 类被转换时，这一过程称为装箱（boxing）；而当它被转换为值类型时，则称为拆箱（unboxing）。
 
@@ -557,23 +503,23 @@ Console. ReadiLine ()
 
 **语法**
 
-```
+```csharp
 Dynamic <variable_name> = value;
 ```
 
 ### 字符串类
 
-该类允许你将任何字符串值赋给任何变量。`string` 类在系统中包含一个别名 `String` 类。该类也派生自 `object` 类。你会注意到，`string` 类的值是通过字符串字面量来赋值的，字符串字面量有两种形式：带引号的和 @ 引号的。
+该类允许你将任何字符串值赋给任何变量。`string` 类在系统中包含一个别名 `String` 类。该类也派生自 `object` 类。你会注意到，`string` 类的值是通过字符串字面量来赋值的，字符串字面量有两种形式：带引号的和 `@` 引号的。
 
 用户定义的引用类被称为 `interface`、`delegate` 和 `class`。
 
 ### 指针类
 
-指针变量将存储其他类的内存地址。这些指针具有与其他 C 语言中指针相同的功能。
+指针变量将存储其他类的内存地址。这些指针具有与其他 `C` 语言中指针相同的功能。
 
 **语法**
 
-```
+```csharp
 Class * identifier;
 ```
 
@@ -586,12 +532,11 @@ Class * identifier;
 C# 类型转换是将一种数据类型转换为另一种数据类型的行为。你可能也听说过这种转换称为类型强制转换。你会发现有两种不同的转换类型。
 
 1. 隐式转换：在此类转换下，C# 会以与正在转换的类相同的方式执行转换。例如，当转换从最小到最大时，会使派生类转换为基类。
-
 2. 显式转换：显式转换由用户在使用预定义函数时完成。这些转换需要强制转换运算符。
 
 **语法**
 
-```
+```csharp
 using System;
 
 namespace TypeClassConversionApplication
@@ -632,9 +577,9 @@ namespace TypeClassConversionApplication
 15. `ToUInt32`：你将得到一个无符号长整型类
 16. `ToUInt64`：你将得到一个无符号大整数
 
-**示例：**
+**示例**
 
-```
+```csharp
 using System;
 
 namespace ClassConversionApplication
@@ -681,28 +626,28 @@ C# 允许你使用 `class` 和 `enum` 等变量来定义值类型。
 
 **语法**
 
-```
+```csharp
 <data_class> <variable_lists>;
 ```
 
 数据类型必须是有效的 C# 数据类型。变量列表必须至少包含一个标识符，多个标识符之间用逗号分隔。
 
-**变量定义：**
+**变量定义**
 
-```
+```csharp
 int i, j, k;
 char c, ch;
 float f, salary;
 double d;
 ```
 
-**初始化变量**
+### 初始化变量
 
 初始化变量时，需要有一个等号，后面跟着一个常量表达式。
 
 **语法**
 
-```
+```csharp
 variable_name = value;
 ```
 
@@ -710,13 +655,13 @@ variable_name = value;
 
 **语法**
 
-```
+```csharp
 <data_class> <variable_name> = value;
 ```
 
 **示例**
 
-```
+```csharp
 int d = 3, f = 5; /* 初始化 d 和 f。 */
 byte z = 22; /* 初始化 z。 */
 double pi = 3.14159; /* 声明 pi 的近似值。 */
@@ -727,7 +672,7 @@ char x = 'x'; /* 变量 x 的值为 'x'。 */
 
 **示例**
 
-```
+```csharp
 using System;
 
 namespace VariableDefinition
@@ -752,13 +697,13 @@ namespace VariableDefinition
 }
 ```
 
-**接受用户输入**
+### 接受用户输入
 
 你的 `Console` 类位于 `System` 命名空间中，它提供了一个名为 `ReadLine()` 的函数，用于接受用户输入并将其存储为变量。
 
 **示例**
 
-```
+```csharp
 int num;
 num = Convert.ToInt32(Console.ReadLine());
 ```
@@ -780,10 +725,6 @@ num = Convert.ToInt32(Console.ReadLine());
 
 ## C# 常量和字面量
 
-
-
-
-
 你的常量将指向一个固定值，在程序执行代码期间该值无法更改。这些固定值被称为字面量。常量可以是任何数据类型，例如整数或字符。你也可以使用枚举常量。
 
 除了值在定义后无法更改之外，你可以像对待普通变量一样对待常量。
@@ -796,7 +737,7 @@ num = Convert.ToInt32(Console.ReadLine());
 
 **示例**
 
-```
+```csharp
 85 /* 十进制 */
 0x4b /* 十六进制 */
 30 /* int */
@@ -811,7 +752,7 @@ num = Convert.ToInt32(Console.ReadLine());
 
 **示例**
 
-```
+```csharp
 3.14159 /* 合法 */
 314159E-5F /* 合法 */
 510E /* 非法：指数不完整 */
@@ -844,7 +785,7 @@ num = Convert.ToInt32(Console.ReadLine());
 
 **示例**
 
-```
+```csharp
 using System;
 
 namespace EscapeChar
@@ -868,7 +809,7 @@ namespace EscapeChar
 
 **示例**
 
-```
+```csharp
 "hello, dear"
 "hello, \
 dear"
@@ -882,13 +823,13 @@ dear"
 
 **语法**
 
-```
+```csharp
 const <数据类型> <常量名> = 值;
 ```
 
 **示例**
 
-```
+```csharp
 using System;
 
 namespace DeclaringConstants
@@ -1021,13 +962,13 @@ C# 中的优先级告诉你哪一组项会先被求值。某些运算符的优�
 4. `switch` 语句：该语句允许对变量进行相等性测试
 5. 嵌套 `switch` 语句：一个 `switch` 语句放在另一个 `switch` 语句内部
 
-**`? :` 运算符**
+### `? :` 运算符
 
 该运算符可用于替代 `if-else` 语句。
 
 **语法**
 
-```
+```csharp
 表达式 1 ? 表达式 2 : 表达式 3 ;
 ```
 
@@ -1045,21 +986,14 @@ C# 中的优先级告诉你哪一组项会先被求值。某些运算符的优�
 
 1. `while` 循环：如果条件为真，则重复执行所选语句。
 2. `for` 循环：语句会被执行并简化，以便管理循环变量。
-
-
-
-
-
-### 3. do while 循环：条件将在循环体的末尾进行测试。
-
-### 4. 嵌套循环：就像其他嵌套语句一样，这是一个循环嵌套在另一个循环内部。
+3. `do while` 循环：条件将在循环体的末尾进行测试。
+4. 嵌套循环：就像其他嵌套语句一样，这是一个循环嵌套在另一个循环内部。
 
 ### 循环控制语句
 
 控制语句将改变循环的正常执行方式。每当执行离开作用域时，任何自动对象都将被销毁。
 
 1. `Break` 语句：循环或 `switch` 语句将被终止，同时执行循环或 `switch` 之后的语句。
-
 2. `Continue` 语句：循环将跳过其所有主体，并在再次迭代之前测试条件。
 
 ### 无限循环
@@ -1068,41 +1002,29 @@ C# 中的优先级告诉你哪一组项会先被求值。某些运算符的优�
 
 **示例**
 
+
+
 ```csharp
 using System;
 
 namespace Loops
-
 {
-
-class Program
-
-{
-
-static void Main(string[] args)
-
-{
-
-for (; ; )
-
-{
-
-Console. WriteLine("Hey! I am Trapped");
-
-}
-
-}
-
-}
-
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            for (; ; )
+            {
+                Console.WriteLine("Hey! I am Trapped");
+            }
+        }
+    }
 }
 ```
 
-当条件表达式不存在时，它将被假定为真。你可能需要初始化增量表达式。然而，许多程序员使用 `for ( ; ; )` 来构造无限循环。
+当条件表达式不存在时，它将被假定为真。你可能需要初始化增量表达式。然而，许多程序员使用`for ( ; ; )`来构造无限循环。
 
 # 第十三章
-
-![](img/00001.jpeg)
 
 ## C# 中的封装
 
@@ -1113,18 +1035,14 @@ Console. WriteLine("Hey! I am Trapped");
 有一些访问说明符可以实现封装。访问说明符将定义作用域以及类成员的可见性。以下是 C# 支持的说明符。
 
 1. `Protected internal`
-
 2. `Open`
-
 3. `Internal`
-
 4. `Private`
-
 5. `Protected`
 
 ### OPEN
 
-这些说明符将使类能够展示其成员变量和函数，以便其他对象和函数可以看到它们。当一个成员是 `Open` 时，它可以从外部访问。
+这些说明符将使类能够展示其成员变量和函数，以便其他对象和函数可以看到它们。当一个成员是`Open`时，它可以从外部访问。
 
 **示例**
 
@@ -1132,71 +1050,45 @@ Console. WriteLine("Hey! I am Trapped");
 using System;
 
 namespace RectangleApplication
-
 {
+    class Rectangle
+    {
+        //member variables
+        Open double length;
+        Open double width;
 
-class Rectangle
+        Open double GetArea()
+        {
+            return length * width;
+        }
 
-{
+        Open void Display()
+        {
+            Console.WriteLine("Length: {0}", length);
+            Console.WriteLine("Width: {0}", width);
+            Console.WriteLine("Area: {0}", GetArea());
+        }
+    }//end class Rectangle
 
-//member variables
-
-Open double length;
-
-Open double width;
-
-Open double GetArea()
-
-{
-
-return length * width;
-
-}
-
-Open void Display()
-
-{
-
-Console. WriteLine("Length: {0}", length);
-
-Console. WriteLine("Width: {0}", width);
-
-Console. WriteLine("Area: {0}", GetArea());
-
-}
-
-}//end class Rectangle
-
-class PerformRectangle
-
-{
-
-static void Main(string[] args)
-
-{
-
-Rectangle r = new Rectangle();
-
-r.length = 4.5;
-
-r.width = 3.5;
-
-r.Display();
-
-Console.ReadLine();
-
-}
-
-}
-
+    class PerformRectangle
+    {
+        static void Main(string[] args)
+        {
+            Rectangle r = new Rectangle();
+            r.length = 4.5;
+            r.width = 3.5;
+            r.Display();
+            Console.ReadLine();
+        }
+    }
 }
 ```
 
-在这个示例中，你可以看到成员变量 `length` 和 `width` 是 `Open` 的，因此可以通过使用类名从你的函数中访问它们。你的成员函数只能直接访问变量，而不需要使用任何类实例。它们也通过使用 `main()` 函数被声明为 `Open`。
+在这个示例中，你可以看到成员变量`length`和`width`是`Open`的，因此可以通过使用类名从你的函数中访问它们。你的成员函数只能直接访问变量，而不需要使用任何类实例。它们也通过使用`main()`函数被声明为`Open`。
 
 ### PRIVATE
 
-`Private` 说明符将使类能够隐藏其成员变量和函数，使其不被代码中的其他内容访问。只有在同一个类中的函数才能访问私有成员。甚至会出现类无法访问私有成员的情况。
+`Private`说明符将使类能够隐藏其成员变量和函数，使其不被代码中的其他内容访问。只有在同一个类中的函数才能访问私有成员。甚至会出现类无法访问私有成员的情况。
 
 **示例**
 
@@ -1204,75 +1096,44 @@ Console.ReadLine();
 using System;
 
 namespace RectangleApplication
-
 {
+    class Rectangle
+    {
+        //member variables
+        private double length;
+        private double width;
 
-class Rectangle
+        Open void Acceptdetails()
+        {
+            Console.WriteLine("Enter Length: ");
+            length = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Enter Width: ");
+            width = Convert.ToDouble(Console.ReadLine());
+        }
 
-{
+        Open double GetArea()
+        {
+            return length * width;
+        }
 
-//member variables
+        Open void Display()
+        {
+            Console.WriteLine("Length: {0}", length);
+            Console.WriteLine("Width: {0}", width);
+            Console.WriteLine("Area: {0}", GetArea());
+        }
+    }//end class Rectangle
 
-private double length;
-
-private double width;
-
-Open void Acceptdetails()
-
-{
-
-Console. WriteLine("Enter Length: ");
-
-length = Convert.ToDouble(Console.ReadLine());
-
-Console. WriteLine("Enter Width: ");
-
-width = Convert.ToDouble(Console.ReadLine());
-
-}
-
-Open double GetArea()
-
-{
-
-return length * width;
-
-}
-
-Open void Display()
-
-{
-
-Console. WriteLine("Length: {0}", length);
-
-Console. WriteLine("Width: {0}", width);
-
-Console. WriteLine("Area: {0}", GetArea());
-
-}
-
-}//end class Rectangle
-
-class PerformRectangle
-
-{
-
-static void Main(string[] args)
-
-{
-
-Rectangle r = new Rectangle();
-
-r.Acceptdetails();
-
-r.Display();
-
-Console.ReadLine();
-
-}
-
-}
-
+    class PerformRectangle
+    {
+        static void Main(string[] args)
+        {
+            Rectangle r = new Rectangle();
+            r.Acceptdetails();
+            r.Display();
+            Console.ReadLine();
+        }
+    }
 }
 ```
 
@@ -1284,7 +1145,7 @@ Console.ReadLine();
 
 ### 内部访问说明符
 
-`internal` 访问说明符将允许成员函数和变量暴露给你正在处理的程序集中的其他函数和对象。因此，只要成员定义所在的应用程序中定义了任何类或方法，你就可以访问它们。
+`internal`访问说明符将允许成员函数和变量暴露给你正在处理的程序集中的其他函数和对象。因此，只要成员定义所在的应用程序中定义了任何类或方法，你就可以访问它们。
 
 **示例**
 
@@ -1292,63 +1153,37 @@ Console.ReadLine();
 using System;
 
 namespace RectangleApplication
-
 {
+    class Rectangle
+    {
+        //member variables
+        internal double length;
+        internal double width;
 
-class Rectangle
+        double GetArea()
+        {
+            return length * width;
+        }
 
-{
+        Open void Display()
+        {
+            Console.WriteLine("Length: {0}", length);
+            Console.WriteLine("Width: {0}", width);
+            Console.WriteLine("Area: {0}", GetArea());
+        }
+    }//end class Rectangle
 
-//member variables
-
-internal double length;
-
-internal double width;
-
-double GetArea()
-
-{
-
-return length * width;
-
-}
-
-Open void Display()
-
-{
-
-Console. WriteLine("Length: {0}", length);
-
-Console. WriteLine("Width: {0}", width);
-
-Console. WriteLine("Area: {0}", GetArea());
-
-}
-
-}//end class Rectangle
-
-class PerformRectangle
-
-{
-
-static void Main(string[] args)
-
-{
-
-Rectangle r = new Rectangle();
-
-r.length = 4.5;
-
-r.width = 3.5;
-
-r.Display();
-
-Console.ReadLine();
-
-}
-
-}
-
+    class PerformRectangle
+    {
+        static void Main(string[] args)
+        {
+            Rectangle r = new Rectangle();
+            r.length = 4.5;
+            r.width = 3.5;
+            r.Display();
+            Console.ReadLine();
+        }
+    }
 }
 ```
 
@@ -1360,16 +1195,13 @@ Console.ReadLine();
 
 # 第十四章
 
-![](img/00001.jpeg)
-
 ## C# 中使用的方法
 
-方法是用于执行任务的一组语句。C# 中的每个程序都有一个名为 `main` 的类方法。
+方法是用于执行任务的一组语句。C# 中的每个程序都有一个名为`main`的类方法。
 
 要使用一个方法，你必须：
 
 1. 定义你的方法
-
 2. 调用你的方法
 
 ### 定义方法
@@ -1380,28 +1212,17 @@ Console.ReadLine();
 
 ```csharp
 <access specifier> <return class> <method name> (parameter list)
-
 {
-
-Method body
-
+    Method body
 }
 ```
 
 方法的一些元素包括：
 
 1. 访问说明符：变量的可见性将由另一个类决定。
-
-2. 返回类：该方法将返回一个值。这个返回类将是返回给你的值的数据类。如果方法不返回值，那么返回类将是 `void`。
-
+2. 返回类：该方法将返回一个值。这个返回类将是返回给你的值的数据类。如果方法不返回值，那么返回类将是`void`。
 3. 方法名：方法名是区分大小写的标识符。它不会与类中声明的其他标识符相同。
-
 4. 参数列表：在括号之间，参数将用于向正在使用的方法传递和获取数据。参数指的是方法所使用的参数的顺序、数量和类。参数不是必须使用的。
-
-
-
-
-
 5. 方法体：你的指令将放在这里，你需要这些指令来完成需要执行的步骤。
 
 **示例**
@@ -1409,18 +1230,18 @@ Method body
 ```csharp
 class NumberManipulator
 {
-   Open int FindMax(int num1, int num2)
-   {
-      /* 局部变量声明 */
-      int result;
+    Open int FindMax(int num1, int num2)
+    {
+        /* 局部变量声明 */
+        int result;
 
-      if (num1 > num2)
-         result = num1;
-      else
-         result = num2;
-      return result;
-   }
-   ...
+        if (num1 > num2)
+            result = num1;
+        else
+            result = num2;
+        return result;
+    }
+    ...
 }
 ```
 
@@ -1435,39 +1256,39 @@ using System;
 
 namespace CalculatorApplication
 {
-   class NumberManipulator
-   {
-      Open int FindMax(int num1, int num2)
-      {
-         /* 局部变量声明 */
-         int result;
+    class NumberManipulator
+    {
+        Open int FindMax(int num1, int num2)
+        {
+            /* 局部变量声明 */
+            int result;
 
-         if (num1 > num2)
-            result = num1;
-         else
-            result = num2;
-         return result;
-      }
+            if (num1 > num2)
+                result = num1;
+            else
+                result = num2;
+            return result;
+        }
 
-      static void Main(string[] args)
-      {
-         /* 局部变量定义 */
-         int a = 100;
-         int b = 200;
-         int ret;
+        static void Main(string[] args)
+        {
+            /* 局部变量定义 */
+            int a = 100;
+            int b = 200;
+            int ret;
 
-         NumberManipulator n = new NumberManipulator();
+            NumberManipulator n = new NumberManipulator();
 
-         // 调用 FindMax 方法
-         ret = n.FindMax(a, b);
-         Console.WriteLine("最大值是：{0}", ret );
-         Console.ReadLine();
-      }
-   }
+            // 调用 FindMax 方法
+            ret = n.FindMax(a, b);
+            Console.WriteLine("最大值是：{0}", ret);
+            Console.ReadLine();
+        }
+    }
 }
 ```
 
-你也可以选择从其他类中调用 Open 方法，这些方法将在该类的实例中使用。
+你也可以选择从其他类中调用`Open`方法，这些方法将在该类的实例中使用。
 
 **示例**
 
@@ -1476,38 +1297,38 @@ using System;
 
 namespace CalculatorApplication
 {
-   class NumberManipulator
-   {
-      Open int FindMax(int num1, int num2)
-      {
-         /* 局部变量声明 */
-         int result;
+    class NumberManipulator
+    {
+        Open int FindMax(int num1, int num2)
+        {
+            /* 局部变量声明 */
+            int result;
 
-         if(num1 > num2)
-            result = num1;
-         else
-            result = num2;
-         return result;
-      }
-   }
+            if (num1 > num2)
+                result = num1;
+            else
+                result = num2;
+            return result;
+        }
+    }
 
-   class Test
-   {
-      static void Main(string[] args)
-      {
-         /* 局部变量定义 */
-         int a = 100;
-         int b = 200;
-         int ret;
+    class Test
+    {
+        static void Main(string[] args)
+        {
+            /* 局部变量定义 */
+            int a = 100;
+            int b = 200;
+            int ret;
 
-         NumberManipulator n = new NumberManipulator();
+            NumberManipulator n = new NumberManipulator();
 
-         // 调用 FindMax 方法
-         ret = n.FindMax(a, b);
-         Console.WriteLine("最大值是：{0}", ret );
-         Console.ReadLine();
-      }
-   }
+            // 调用 FindMax 方法
+            ret = n.FindMax(a, b);
+            Console.WriteLine("最大值是：{0}", ret);
+            Console.ReadLine();
+        }
+    }
 }
 ```
 
@@ -1522,35 +1343,35 @@ using System;
 
 namespace CalculatorApplication
 {
-   class NumberManipulator
-   {
-      Open int factorial(int num)
-      {
-         /* 局部变量声明 */
-         int result;
+    class NumberManipulator
+    {
+        Open int factorial(int num)
+        {
+            /* 局部变量声明 */
+            int result;
 
-         if (num == 1)
-         {
-            return 1;
-         }
-         else
-         {
-            result = factorial(num - 1) * num;
-            return result;
-         }
-      }
+            if (num == 1)
+            {
+                return 1;
+            }
+            else
+            {
+                result = factorial(num - 1) * num;
+                return result;
+            }
+        }
 
-      static void Main(string[] args)
-      {
-         NumberManipulator n = new NumberManipulator();
+        static void Main(string[] args)
+        {
+            NumberManipulator n = new NumberManipulator();
 
-         // 调用 factorial 方法
-         Console.WriteLine("6 的阶乘是：{0}", n.factorial(6));
-         Console.WriteLine("7 的阶乘是：{0}", n.factorial(7));
-         Console.WriteLine("8 的阶乘是：{0}", n.factorial(8));
-         Console.ReadLine();
-      }
-   }
+            // 调用 factorial 方法
+            Console.WriteLine("6 的阶乘是：{0}", n.factorial(6));
+            Console.WriteLine("7 的阶乘是：{0}", n.factorial(7));
+            Console.WriteLine("8 的阶乘是：{0}", n.factorial(8));
+            Console.ReadLine();
+        }
+    }
 }
 ```
 
@@ -1559,20 +1380,16 @@ namespace CalculatorApplication
 每当调用参数时，你必须将参数传递给方法。至少有以下三种方式可以传递参数。
 
 1. 值参数：值参数会将实参的值复制到函数的形参中。这样做之后，对参数所做的任何更改都不会影响实参。
-
 2. 引用参数：你的引用将被复制到实参的内存位置，并传递给形参。这最终意味着你对参数所做的更改将影响实参。
-
 3. 输出参数：你将获得多个返回值。
 
 # 第十五章
 
-![](img/00001.jpeg)
-
 ## C# 中的可空类型
 
-可空类型是一种特殊的数据类型，它可以将正常范围的值赋为 null。
+可空类型是一种特殊的数据类型，它可以将正常范围的值赋为`null`。
 
-你可以存储从 -2,147,483,648 到 2,147,483,647 的任何值，或者 null。你也可以分配具有 true、false 或 null 输出的值。
+你可以存储从 -2,147,483,648 到 2,147,483,647 的任何值，或者`null`。你也可以分配具有`true`、`false`或`null`输出的值。
 
 **语法**
 
@@ -1585,22 +1402,22 @@ using System;
 
 namespace CalculatorApplication
 {
-   class NullablesAtShow
-   {
-      static void Main(string[] args)
-      {
-         int? num1 = null;
-         int? num2 = 45;
-         double? num3 = new double?();
-         double? num4 = 3.14157;
-         bool? boolval = new bool?();
+    class NullablesAtShow
+    {
+        static void Main(string[] args)
+        {
+            int? num1 = null;
+            int? num2 = 45;
+            double? num3 = new double?();
+            double? num4 = 3.14157;
+            bool? boolval = new bool?();
 
-         // 显示值
-         Console.WriteLine("可空类型显示：{0}, {1}, {2}, {3}", num1, num2, num3, num4);
-         Console.WriteLine("可空布尔值：{0}", boolval);
-         Console.ReadLine();
-      }
-   }
+            // 显示值
+            Console.WriteLine("可空类型显示：{0}, {1}, {2}, {3}", num1, num2, num3, num4);
+            Console.WriteLine("可空布尔值：{0}", boolval);
+            Console.ReadLine();
+        }
+    }
 }
 ```
 
@@ -1608,7 +1425,7 @@ namespace CalculatorApplication
 
 当使用可空值类型和引用类型时，会用到空合并运算符。你将使用空合并运算符将一个操作数转换为另一个可空值类型操作数的类型，前提是这种转换是可行的。
 
-如果你的第一个操作数的值为 null，那么当运算符返回第二个操作数的值时，它将返回第一个操作数的值。
+如果你的第一个操作数的值为`null`，那么当运算符返回第二个操作数的值时，它将返回第一个操作数的值。
 
 **示例**
 
@@ -1617,29 +1434,27 @@ using System;
 
 namespace CalculatorApplication
 {
-   class NullablesAtShow
-   {
-      static void Main(string[] args)
-      {
-         double? num1 = null;
-         double? num2 = 3.14157;
-         double num3;
+    class NullablesAtShow
+    {
+        static void Main(string[] args)
+        {
+            double? num1 = null;
+            double? num2 = 3.14157;
+            double num3;
 
-         num3 = num1 ?? 5.34;
-         Console.WriteLine("num3 的值：{0}", num3);
+            num3 = num1 ?? 5.34;
+            Console.WriteLine("num3 的值：{0}", num3);
 
-         num3 = num2 ?? 5.34;
-         Console.WriteLine("num3 的值：{0}", num3);
+            num3 = num2 ?? 5.34;
+            Console.WriteLine("num3 的值：{0}", num3);
 
-         Console.ReadLine();
-      }
-   }
+            Console.ReadLine();
+        }
+    }
 }
 ```
 
 # 第十六章
-
-![](img/00001.jpeg)
 
 ## C# 中的数组
 
@@ -1656,22 +1471,22 @@ namespace CalculatorApplication
 `数据类型 [] 数组名;`
 
 1. 数据类型告诉你数组中元素的类型。
-
 2. 方括号告诉你数组的秩。秩将告诉你数组的大小。
-
 3. 数组名显然告诉你正在处理的数组的名称。
 
 **示例**
 
-`double [ ] hello ;`
+`double[] hello;`
 
 ### 初始化数组
 
 声明数组时，你不会在程序的内存中初始化数组。当数组变量被初始化时，你可以为数组赋值。
 
-数组被称为引用类型，这意味着你需要使用 `new` 关键字来创建将在数组中发生的实例。
+数组被称为引用类型，这意味着你需要使用`new`关键字来创建将在数组中发生的实例。
 
 **示例：**
+
+
 
 `double [ ] hello = new double [ 39 ]`
 
@@ -1722,7 +1537,7 @@ namespace ArrayApplication
 
 For Each 语句用于遍历数组。
 
-**示例**
+**示例：**
 
 ```csharp
 using System;
@@ -1733,33 +1548,26 @@ namespace ArrayApplication
    {
       static void Main(string[] args)
       {
-```
+         int [] n = new int[10]; /* n 是一个包含 10 个整数的数组 */
 
+         /* 初始化数组 n 的元素 */
 
+         for ( int i = 0; i < 10; i++ )
+         {
+            n[i] = i + 100;
+         }
 
+         /* 输出每个数组元素的值 */
 
+         foreach (int j in n )
+         {
+            int i = j-100;
+            Console. WriteLine("Element[{0}] = {1}", i, j);
+         }
 
-```csharp
-int [] n = new int[10]; /* n 是一个包含 10 个整数的数组 */
-
-/* 初始化数组 n 的元素 */
-
-for ( int i = 0; i < 10; i++ )
-{
-    n[i] = i + 100;
-}
-
-/* 输出每个数组元素的值 */
-
-foreach (int j in n )
-{
-    int i = j-100;
-    Console. WriteLine("Element[{0}] = {1}", i, j);
-}
-
-Console.ReadKey();
-}
-}
+         Console.ReadKey();
+      }
+   }
 }
 ```
 
@@ -1777,7 +1585,7 @@ Console.ReadKey();
 
 ## C# 中的字符串
 
-使用 C#，你可以将字符串当作数组来使用。但更常见的做法是使用 `string` 关键字来声明字符串变量。`string` 关键字是 `System.String` 的别名。
+使用 C#，你可以将字符串当作数组来使用。但更常见的做法是使用`string`关键字来声明字符串变量。`string`关键字是`System.String`的别名。
 
 ### 创建字符串对象
 
@@ -1973,13 +1781,13 @@ namespace StringApplication
 
 ## C# 结构体
 
-在 C# 中，数据类有值类型，它们可以帮助你创建单个变量来保存与该数据类相关的任何数据。`struct` 关键字用于创建结构体。
+在 C# 中，数据类有值类型，它们可以帮助你创建单个变量来保存与该数据类相关的任何数据。`struct`关键字用于创建结构体。
 
 结构体用于表示记录。
 
 ### 定义结构体
 
-要定义结构体，你需要使用 `struct` 语句。该语句用于在程序中定义包含多个成员的新数据类。
+要定义结构体，你需要使用`struct`语句。该语句用于在程序中定义包含多个成员的新数据类。
 
 #### 示例
 
@@ -2032,6 +1840,8 @@ Open class testStructure
 
 ### C# 结构体的特性
 
+
+
 既然你已经有了上面示例中创建的结构体，你会意识到它们与其他 C 编程语言中的结构体不同。C# 为其结构体提供了以下特性：
 
 1. 结构体可以包含方法、字段、属性、事件、运算符方法和索引器。
@@ -2039,15 +1849,8 @@ Open class testStructure
 3. 禁止继承。
 4. 不能将结构体用作任何其他结构体或类的基类。
 5. 结构体至少要实现一个接口。
-
-
-
-
-
 6. 结构成员不允许被指定为 `protected`、`virtual` 或 `abstract`。
-
 7. 每当使用 `new` 运算符创建结构对象时，你将创建该对象及其对应的构造函数。
-
 8. 如果未使用 `new` 运算符，则在字段初始化之前，该字段将保持未赋值状态。
 
 ### 类与结构
@@ -2379,15 +2182,11 @@ namespace LineApplication
 }
 ```
 
-
-
-
-
 默认构造函数不会提供任何参数，但如果你需要一个可以带参数的构造函数，则存在一些称为参数化构造函数的参数，它们有助于在创建对象时为其赋予初始值。
 
 **示例**
 
-```
+```csharp
 using System;
 
 namespace LineApplication
@@ -2451,13 +2250,13 @@ Console.ReadKey();
 
 ### 析构函数
 
-析构函数也是一种特殊函数，当某个类超出其作用域时会被执行。析构函数与类同名，但前面会有一个波浪号（~），并且不能有任何参数或返回值。
+析构函数也是一种特殊函数，当某个类超出其作用域时会被执行。析构函数与类同名，但前面会有一个波浪号（`~`），并且不能有任何参数或返回值。
 
 当你需要在退出程序前释放内存时，析构函数会很有用，但析构函数不能被继承或重载。
 
 **示例**
 
-```
+```csharp
 using System;
 
 namespace LineApplication
@@ -2529,7 +2328,8 @@ Console. WriteLine("Length of line : {0}", line.getLength());
 
 下一步就是运用您所学到的新编程语言，并将其付诸实践。无论您使用 C# 做什么，您都会发现所有 C 语言之间都存在相似之处。
 
+
+
 学习编程语言时请务必保持耐心，因为如果不这样做，您将不得不回头纠正许多错误，这会占用您本可用于其他事情的宝贵时间。
 
 谢谢，祝您好运。
-

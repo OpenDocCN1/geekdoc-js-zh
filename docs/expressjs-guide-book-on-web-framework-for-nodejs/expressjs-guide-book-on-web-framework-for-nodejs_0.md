@@ -1,7 +1,5 @@
+
 # Express.js：Node.js Web框架指南
-
-
-
 
 尽管已尽力验证本书中提供的信息，但作者对其中所含主题的任何错误、遗漏或相反解释不承担任何责任。本书提供的信息仅供教育和娱乐之用。读者应对自己的行为负责，作者不承担因使用此信息而产生的任何责任或损害（无论是实际还是感知的）。
 
@@ -9,31 +7,37 @@
 
 # 引言
 
-ExpressJS 是最有用且最有趣的 Node 框架之一。它用于 Web 和移动应用程序的开发。这类应用程序在软件环境中使用最为广泛。这表明您需要了解如何使用此框架进行开发。该框架拥有众多模块，可用于增强应用程序的外观和感觉。
+`ExpressJS` 是最有用且最有趣的 `Node` 框架之一。它用于 Web 和移动应用程序的开发。这类应用程序在软件环境中使用最为广泛。这表明您需要了解如何使用此框架进行开发。该框架拥有众多模块，可用于增强应用程序的外观和感觉。
 
 # 第 1 章 - ExpressJS 概述
 
-ExpressJS 是一个 Node 框架，非常灵活，为开发人员提供了众多用于 Web 和移动应用程序开发的功能。该框架可用于 API 的开发。在本书中，我们将讨论 ExpressJS 的各种特性。
+`ExpressJS` 是一个 `Node` 框架，非常灵活，为开发人员提供了众多用于 Web 和移动应用程序开发的功能。该框架可用于 API 的开发。在本书中，我们将讨论 `ExpressJS` 的各种特性。
 
 # 第 2 章 - 会话
 
-要在 Express 中安装此模块，只需执行以下命令：
+要在 `Express` 中安装此模块，只需执行以下命令：
 
-`$ npm install express-session`
+```bash
+$ npm install express-session
+```
 
 上述命令会将会话安装到您的系统中。要在程序中使用它，您必须使用 `require` 命令。如下所示：
 
-`var session = require('express-session')`
+```javascript
+var session = require('express-session')
+```
 
 会话中间件可以通过使用给定的 `options` 来创建。您应该知道，会话数据不应保存在 cookie 本身中，而此处仅存储会话 ID。会话数据存储在应用程序的服务器端。然而，默认的服务器端会话存储 `MemoryStore` 并非为生产环境使用而开发。在大多数情况下，它会泄漏且无法扩展到单个进程之外。它是为调试目的而开发的。
 
-`express-session` 会在 options 对象中接受以下属性：
+`express-session` 会在 `options` 对象中接受以下属性：
 
 ## Cookie
 
 这些是会话 ID 的 cookie 设置。请参考下面给出的示例：
 
-`{ path: '/', httpOnly: true, secure: false, maxAge: null }`.
+```javascript
+{ path: '/', httpOnly: true, secure: false, maxAge: null }.
+```
 
 ## Genid
 
@@ -41,11 +45,11 @@ ExpressJS 是一个 Node 框架，非常灵活，为开发人员提供了众多�
 
 注意：为避免会话冲突，请确保生成的 ID 是唯一的，即它们应彼此不同。请参考下面给出的示例，展示如何实现这一点：
 
-```
+```javascript
 application.use(session({
     genid: function(req) {
-    return genuuid() // 使用 UUID 作为会话 ID
-},
+        return genuuid() // 使用 UUID 作为会话 ID
+    },
     secret: ' my secret '
 }))
 ```
@@ -86,7 +90,7 @@ application.use(session({
 
 请参考下面给出的示例：
 
-```
+```javascript
 var application = express()
 
 application.set('trust proxy', 1) // 信任第一个代理
@@ -101,7 +105,7 @@ application.use(session({
 
 我们需要能够在生产环境中使用 cookie，同时允许在开发环境中进行测试。可以通过使用 `NODE_ENV` 来启用此设置。请参考下面给出的示例，展示如何实现这一点：
 
-```
+```javascript
 var application = express()
 var session = {
     secret: ' my secret ',
@@ -109,249 +113,268 @@ var session = {
 }
 ```
 
-
-
-
 ```javascript
 if (application.get('env') === 'production') {
-application.set('trust proxy', 1) // trusting the first proxy
-     session.cookie.secure =  true // serving secure cookies
+    application.set('trust proxy', 1) // trusting the first proxy
+    session.cookie.secure = true // serving secure cookies
 }
-    application.use(session(session))
+application.use(session(session))
 ```
 
-`cookie.maxAge`的默认设置为`null`，永不过期，这意味着 cookie 将成为浏览器会话 cookie。只有当用户关闭浏览器时，cookie 才会被移除。会话也会被移除。
+`cookie.maxAge` 的默认设置为 `null`，永不过期，这意味着 cookie 将成为浏览器会话 cookie。只有当用户关闭浏览器时，cookie 才会被移除。会话也会被移除。
 
-`req.session`
+## req.session
 
-要存储和访问会话数据，应使用属性`req.session`，存储会将其初始化为 JSON。会话对象将保持良好状态。考虑下面给出的示例，它展示了一个特定于用户的视图计数器：
+要存储和访问会话数据，应使用属性 `req.session`，存储会将其初始化为 JSON。会话对象将保持良好状态。考虑下面给出的示例，它展示了一个特定于用户的视图计数器：
 
 ```javascript
-application.use(session({ secret: ' my secret ', cookie: { maxAge:  50000 }}))
+application.use(session({ secret: ' my secret ', cookie: { maxAge: 50000 }}))
 ```
 
 ```javascript
 application.use(function(req, res, next) {
-var session = req.session
-if (session.views) {
-session.views++
-res.setHeader('Content-Type', 'text/html')
-res.write('<p>views: ' + session.views + '</p>')
-res.write('<p>will expires in: ' + (session.cookie.maxAge /  1000) + 's</p>')
-res.end()
-} else {
-session.views =  1
-res.end(' This is a demo for sessions. Refresh the page!')
-}
+    var session = req.session
+    if (session.views) {
+        session.views++
+        res.setHeader('Content-Type', 'text/html')
+        res.write('<p>views: ' + session.views + '</p>')
+        res.write('<p>will expires in: ' + (session.cookie.maxAge / 1000) + 's</p>')
+        res.end()
+    } else {
+        session.views = 1
+        res.end(' This is a demo for sessions. Refresh the page!')
+    }
 })
 ```
 
-### `Session.regenerate()`
+### Session.regenerate()
 
-当我们想要生成会话时，会调用此方法。之后，一个新的会话实例和 SID 将在`req.session`中初始化。如下所示：
+当我们想要生成会话时，会调用此方法。之后，一个新的会话实例和 SID 将在 `req.session` 中初始化。如下所示：
 
 ```javascript
 req.session.regenerate(function(error) {
-// a new session should be added here
+    // a new session should be added here
 })
 ```
 
-### `Session.destroy()`
+### Session.destroy()
 
-通过此方法，会话被销毁，`req.session`被移除。它将在下一个请求中重新生成。如下所示：
+通过此方法，会话被销毁，`req.session` 被移除。它将在下一个请求中重新生成。如下所示：
 
 ```javascript
 req.session.destroy(function(error) {
-// a session cannot be accessed here.
+    // a session cannot be accessed here.
 })
 ```
 
-### `Session.reload()`
+### Session.reload()
 
 用于重新加载会话，如下所示：
 
 ```javascript
 req.session.reload(function(error) {
-// the session has been updated
+    // the session has been updated
 })
 ```
 
-### `Session.save()`
+### Session.save()
 
 用于保存会话，如下所示：
 
 ```javascript
 req.session.save(function(error) {
-// session has been saved
+    // session has been saved
 })
 ```
 
-考虑下面给出的示例，它使用`express-session`来存储用户的页面浏览量：
+考虑下面给出的示例，它使用 `express-session` 来存储用户的页面浏览量：
 
 ```javascript
-var express =  require('express')
-var purl =  require('parseurl')
-var session =  require('express-session')
+var express = require('express')
+var purl = require('parseurl')
+var session = require('express-session')
 var application = express()
+
 application.use(session({
-secret: ' my secret ',
-resave:  false,
-saveUninitialized:  true
+    secret: ' my secret ',
+    resave: false,
+    saveUninitialized: true
 }))
+
 application.use(function (req, res, next) {
-var vws = req.session.views
-if (!vws) {
-vws = req.session.views = {}
-}
-// getting the url pathname
-var pathname = purl(req).pathname
-// counting the views
-vws[pathname] = (vws[pathname] ||  0) +  1
-next()
+    var vws = req.session.views
+    if (!vws) {
+        vws = req.session.views = {}
+    }
+
+    // getting the url pathname
+    var pathname = purl(req).pathname
+
+    // counting the views
+    vws[pathname] = (vws[pathname] || 0) + 1
+    next()
 })
+
 application.get('/foo', function (req, res, next) {
-res.send('you have viewed this page ' + req.session.vws['/test'] + ' times')
+    res.send('you have viewed this page ' + req.session.vws['/test'] + ' times')
 })
+
 application.get('/bar', function (req, res, next) {
-res.send('you have viewed this page ' + req.session.vws['/bar'] + ' times')
+    res.send('you have viewed this page ' + req.session.vws['/bar'] + ' times')
 })
 ```
 
-这就是在 ExpressJS 中使用会话的方式。
+这就是在 `ExpressJS` 中使用会话的方式。
 
 # 第 3 章 - serve-index
 
 它用于提供包含目录列表的页面到特定路径。可以通过执行以下命令来安装：
 
-`$ npm install serve-index`
+```bash
+$ npm install serve-index
+```
 
-上述命令会将`serve-index`安装到你的计算机上。要在程序中使用它，必须通过`require`方法包含或调用它。如下所示：
+上述命令会将 `serve-index` 安装到你的计算机上。要在程序中使用它，必须通过 `require` 方法包含或调用它。如下所示：
 
 ```javascript
-var svIndex =  require('serve-index')
+var svIndex = require('serve-index')
 ```
 
 然后 API 将被包含在你的程序中。
 
-## `serveIndex(path, options)`
+## serveIndex(path, options)
 
-这将返回一个中间件，用于提供你指定的`path`目录的索引。这里的路径基于`req.url`的值。要更改 URL 基址，请使用`app.use`。
+这将返回一个中间件，用于提供你指定的 `path` 目录的索引。这里的路径基于 `req.url` 的值。要更改 URL 基址，请使用 `app.use`。
 
-serve index 在 options 对象中接受以下属性：
+serve index 在 `options` 对象中接受以下属性：
 
-**过滤器**
+### 过滤器
 
-此过滤器函数应用于文件。其默认值为`false`。它会为每个文件调用，并使用签名`filter(filename, index, files, dir)`。`Filename`是文件名，`index`是数组索引，`files`是文件数组，而`dir`是文件所在的绝对路径。
+此过滤器函数应用于文件。其默认值为 `false`。它会为每个文件调用，并使用签名 `filter(filename, index, files, dir)`。`Filename` 是文件名，`index` 是数组索引，`files` 是文件数组，而 `dir` 是文件所在的绝对路径。
 
-**隐藏文件**
+### 隐藏文件
 
-用于显示隐藏文件。其默认值为`false`。
+用于显示隐藏文件。其默认值为 `false`。
 
-**图标**
+### 图标
 
-用于显示图标。其默认值为`false`。
+用于显示图标。其默认值为 `false`。
 
-**样式表**
+### 样式表
 
 这是一个可选的路径，指向 CSS 样式表。其默认值为内置样式表。
 
-**模板**
+### 模板
 
 这是一个可选的路径，指向 HTML 模板，用于渲染 HTML 字符串。
 
-**视图**
+### 视图
 
 这是显示模式。
 
 考虑下面给出的示例，它展示了如何使用上述所有内容：
 
 ```javascript
-var fhandler =  require('finalhandler')
-var http =  require('http')
-var svIndex =  require('serve-index')
-var svStatic =  require('serve-static')
+var fhandler = require('finalhandler')
+var http = require('http')
+var svIndex = require('serve-index')
+var svStatic = require('serve-static')
+
 // The Serve directory works to indexe for public/ftp folder (having icons)
-var index = svIndex('public/ftp', {'icons':  true})
+var index = svIndex('public/ftp', {'icons': true})
+
 // Serving up the public/ftp folder files
 var serve = svStatic('public/ftp')
+
 // Creating a server
-var server = http.createServer(function onRequest(req, res){
-var done = fhandler(req, res)
-serve(req, res, function onNext(error) {
-if (error) return done(error)
-index(req, res, done)
+var server = http.createServer(function onRequest(req, res) {
+    var done = fhandler(req, res)
+    serve(req, res, function onNext(error) {
+        if (error) return done(error)
+        index(req, res, done)
+    })
 })
-})
+
 // Listen
 server.listen(3000)
 ```
 
-要使用 express 提供目录索引，请执行以下操作：
+要使用 `express` 提供目录索引，请执行以下操作：
 
 ```javascript
-var express =  require('express')
-var svIndex =  require('serve-index')
+var express = require('express')
+var svIndex = require('serve-index')
 var application = express()
+
 // Serving URLs like the /ftp/thing as public/ftp/thing
-application.use('/ftp', svIndex('public/ftp', {'icons':  true}))
+application.use('/ftp', svIndex('public/ftp', {'icons': true}))
 application.listen()
 ```
 
 # 第 4 章 - cookie-sessions
 
-这是一个用于提供访客会话的模块，这样每个访问者都会有一个会话，无论是否经过身份验证。如果会话是新的，无论你是否填充会话，都会生成`Set-Cookie`属性。
+这是一个用于提供访客会话的模块，这样每个访问者都会有一个会话，无论是否经过身份验证。如果会话是新的，无论你是否填充会话，都会生成 `Set-Cookie` 属性。
 
 可以通过以下命令安装：
 
-`$ npm install cookie-session`
-
-要在程序中使用 API，我们必须使用`require`命令，如下所示：
-
-```javascript
-var cookieSession =  require('cookie-session')
+```bash
+$ npm install cookie-session
 ```
 
-cookie session 在 options 对象中接受以下选项：
+要在程序中使用 API，我们必须使用 `require` 命令，如下所示：
 
-**名称**
+```javascript
+var cookieSession = require('cookie-session')
+```
 
-这是要设置的 cookie 的名称。其默认值为`session`。
+cookie session 在 `options` 对象中接受以下选项：
 
-**密钥**
+### 名称
 
-用于签名和验证 cookie 值的密钥列表。已设置的 cookie 始终使用`keys[0]`签名。其余密钥将用于验证，从而允许轮换。
+这是要设置的 cookie 的名称。其默认值为 `session`。
 
-**秘密**
+### 密钥
 
-这是一个字符串，当未提供`keys`时，将用作密钥。还有一些 cookie 选项需要了解如何使用。
+用于签名和验证 cookie 值的密钥列表。已设置的 cookie 始终使用 `keys[0]` 签名。其余密钥将用于验证，从而允许轮换。
+
+### 秘密
+
+这是一个字符串，当未提供 `keys` 时，将用作密钥。还有一些 cookie 选项需要了解如何使用。
 
 如果需要销毁特定会话，请按如下方式操作：
 
 ```javascript
-req.session =  null
+req.session = null
 ```
 
 考虑下面给出的简单视图计数器示例。示例如下：
 
 ```javascript
-var cookieSession =  require('cookie-session')
-var express =  require('express')
+var cookieSession = require('cookie-session')
+var express = require('express')
 var application = express()
+
 appliation.set('trust proxy', 1) // trusting the first proxy
+
 application.use(cookieSession({
-     name: 'session',
-     keys: ['key1', 'key2']
+    name: 'session',
+    keys: ['key1', 'key2']
 }))
+
 application.use(function (req, res, next) {
-     // Updating the views
-req.session.views = (req.session.views ||  0) +  1
-     // Writing the response
-res.end(req.session.views + ' views')
+    // Updating the views
+    req.session.views = (req.session.views || 0) + 1
+
+    // Writing the response
+    res.end(req.session.views + ' views')
 })
+
 application.listen(3000)
 ```
 
 考虑下面给出的下一个示例：
+
+
 
 ```javascript
 var cookieSession =  require('cookie-session')
@@ -370,11 +393,9 @@ req.sessionOptions.maxAge = req.session.maxAge || req.sessionOptions.maxAge
 // ... the logic should be added here ...
 ```
 
-
-
 你必须注意，整个会话对象将被编码并存储在 cookie 中。这可能会超出不同浏览器对 cookie 大小的最大限制。如果会话对象足够大，并且在编码后可能超出浏览器的限制，那么在大多数情况下，浏览器会拒绝或避免存储该 cookie。
 
-# 第 5 章 - ExpressJS 中的 Morgan
+# 第 5 章：ExpressJS 中的 Morgan
 
 这是一个用于 Node.js HTTP 请求的日志记录中间件。要在程序中使用该 API，你必须使用 `require` 关键字，如下所示：
 
@@ -384,17 +405,17 @@ var morgan = require('morgan')
 
 创建时使用以下格式：
 
-## morgan(format, options)
+## `morgan(format, options)`
 
 如上格式所示，我们有两个参数或参数项。
 
-Morgan 在 options 对象中接受以下属性：
+Morgan 在 `options` 对象中接受以下属性：
 
-**Immediate**
+### `Immediate`
 
 日志行应在请求时而非响应时写入。这意味着即使服务器本身崩溃，请求也始终会被记录，但我们将无法记录来自响应的数据。
 
-**Skip**
+### `Skip`
 
 这是一个用于判断是否跳过日志记录的函数。其默认值为 `false`。请参考下面的示例，该示例展示了如何调用该函数：
 
@@ -405,7 +426,7 @@ morgan('combined', {
 })
 ```
 
-**Stream**
+### `Stream`
 
 这是一个用于写入日志行的输出流，其默认值为 `process.stdout`。
 
@@ -526,7 +547,7 @@ function assignId(req, res, next) {
 }
 ```
 
-# 第 6 章 - CORS
+# 第 6 章：CORS
 
 这是一个 Node.js 包，提供了一个 ExpressJS/Connect 中间件，可用于启用 CORS 的各种选项。
 
@@ -657,10 +678,7 @@ var cOptionsDelegate = function(req, callback){
 }
 ```
 
-
-
-
-```
+```javascript
 callback(null, cOptions); // callback 需要两个参数：error 和 options
 
 };
@@ -680,7 +698,7 @@ console.log(' 已启用 CORS 的 Web 服务器正在监听 80 端口');
 
 这就是实现方式。
 
-# 第 7 章 - Express-Paginate
+# 第 7 章：Express-Paginate
 
 该模块需与数据库的分页插件（如 MongoDB 的分页插件）配合使用。
 
@@ -690,13 +708,15 @@ console.log(' 已启用 CORS 的 Web 服务器正在监听 80 端口');
 
 要在程序中使用它，需要使用 `require` 关键字将其引入。示例如下：
 
-```
+```javascript
 var paginate = require('express-paginate');
 ```
 
 通过 `paginate`，将创建一个新的 `express-paginate` 实例。参考下面的示例：
 
-```
+
+
+```js
 // # app.js
 var express = require('express');
 var paginate = require('express-paginate');
@@ -738,7 +758,7 @@ application.listen(3000);
 
 第二个代码文件内容如下：
 
-```
+```jade
 //- users.jade
 h1 用户
 
@@ -761,7 +781,7 @@ include _paginate
 
 第三个代码文件内容如下：
 
-```
+```jade
 //- _paginate.jade
 //- 在此示例中，我们将使用 Bootstrap 3.x 的分页类
 
@@ -792,7 +812,7 @@ if paginate.hasPreviousPages || paginate.hasNextPages(pageCount)
 
 参考下面的示例，了解如何实现：
 
-```
+```js
 var express = require('express')
 var multer = require('multer')
 var uploadfile = multer({ dest: 'uploads/' })
@@ -822,7 +842,7 @@ application.post('/cool-profile', cUpload, function (req, res, next) {
 
 如果需要处理 multipart 表单中的文本数据，可以使用 Multer 的任何方法，包括 `single()`、`.array()` 和 `fields()`。下面的示例展示了如何使用 `.array()`：
 
-```
+```js
 var express = require('express')
 var application = express()
 var multer = require('multer')
@@ -841,7 +861,7 @@ Multer 支持多种选项，请确保理解如何传递这些选项。
 
 在普通的 Web 应用程序中，可能只需要 `dest` 属性，配置方式如下：
 
-```
+```js
 var uploadfile = multer({ dest: 'uploads/' })
 ```
 
@@ -849,7 +869,7 @@ var uploadfile = multer({ dest: 'uploads/' })
 
 如果需要完全控制存储在磁盘上的文件，可以使用磁盘存储引擎。示例如下：
 
-```
+```js
 var storage = multer.diskStorage({
   destination: function (req, file, cb) {
     cb(null, '/tmp/file-uploads')
@@ -868,7 +888,7 @@ var uploadfile = multer({ storage: storage })
 
 此属性可用于设置哪些文件应被上传，哪些应被跳过。该函数的使用方法如下例所示：
 
-```
+```js
 function fileFilter (req, file, cb) {
   // 该函数将调用 `cb` 并传入一个布尔值
   // 以指示文件是否应被接受
@@ -887,30 +907,20 @@ function fileFilter (req, file, cb) {
 
 当遇到错误时，Multer 会将其传递给 Express。可以使用标准的 Express 错误处理方式来显示错误。
 
-
-
-
 为了让您捕获源自 Multer 的错误，只需自行调用中间件函数。如下例所示：
 
-```
+```js
 var uploadfile = multer().single('avatar')
 
 application.post('/profile', function (req, res) {
+  uploadfile(req, res, function (error) {
+    if (error) {
+      // 上传时发生了错误
+      return
+    }
 
-uploadfile(req, res, function (error) {
-
-if (error) {
-
-// 上传时发生了错误
-
-return
-
-}
-
-// 一切正常
-
-})
-
+    // 一切正常
+  })
 })
 ```
 
@@ -920,8 +930,8 @@ return
 
 这是 Node.js 中可用的中间件。它支持以下压缩编码：
 
-* deflate
-* gzip
+- `deflate`
+- `gzip`
 
 要在您的系统中安装此中间件，请执行以下命令：
 
@@ -933,31 +943,25 @@ return
 
 有多种选项可用于返回压缩中间件。
 
-## .filter
+## `.filter`
 
 这是默认的过滤函数。它用于构建一个自定义过滤函数，该函数将是默认函数的扩展。下面的示例展示了如何使用它：
 
-```
+```js
 application.use(compression({filter: compress}))
 
 function compress(req, res) {
+  if (req.headers['x-no-compression']) {
+    // 带有此标头的请求的响应不应被压缩。
+    return false
+  }
 
-if (req.headers['x-no-compression']) {
-
-// 带有此标头的请求的响应不应被压缩。
-
-return false
-
-}
-
-// 回退到标准过滤函数
-
-return compression.filter(req, res)
-
+  // 回退到标准过滤函数
+  return compression.filter(req, res)
 }
 ```
 
-## red.flush()
+## `red.flush()`
 
 使用此模块，可以将部分压缩的响应刷新到客户端。让我们举例说明。
 
@@ -965,15 +969,12 @@ return compression.filter(req, res)
 
 此模块可以通过 `app.use` 使用，该函数在 Express 和 Connect 中均可用。通过中间件的请求始终会被压缩。考虑下面的示例，展示了如何实现：
 
-```
+```js
 var compression = require('compression')
-
 var express = require('express')
-
 var application = express()
 
 // 压缩所有请求
-
 application.use(compression())
 
 // 添加所有路由
@@ -987,43 +988,30 @@ application.use(compression())
 
 为此，我们需要为那些需要将数据写入客户端的人调用 `red.flush()`。如下所示：
 
-```
+```js
 var compression = require('compression')
-
 var express = require('express')
-
 var application = express()
 
 // 压缩响应
-
 application.use(compression())
 
 // 服务器发送事件流
-
 application.get('/events', function (req, res) {
+  res.setHeader('Content-Type', 'text/event-stream')
+  res.setHeader('Cache-Control', 'no-cache')
 
-res.setHeader('Content-Type', 'text/event-stream')
+  // 大约每 2 秒发送一次 ping
+  var timer = setInterval(function () {
+    res.write('data: ping\n\n')
 
-res.setHeader('Cache-Control', 'no-cache')
+    // !!! 我们程序中最重要的一部分
+    res.flush()
+  }, 2000)
 
-// 大约每 2 秒发送一次 ping
-
-var timer = setInterval(function () {
-
-res.write('data: ping\n\n')
-
-// !!! 我们程序中最重要的一部分
-
-res.flush()
-
-}, 2000)
-
-res.on('close', function () {
-
-clearInterval(timer)
-
-})
-
+  res.on('close', function () {
+    clearInterval(timer)
+  })
 })
 ```
 
@@ -1043,57 +1031,40 @@ clearInterval(timer)
 
 考虑下面的示例，它展示了一个用于生成可回发的 CSRF 表单的服务器端代码。示例如下：
 
-```
+```js
 var cParser = require('cookie-parser')
-
 var csrf = require('csurf')
-
 var bParser = require('body-parser')
-
 var express = require('express')
 
 // 设置路由中间件
-
 var csrfProtection = csrf({ cookie: true })
-
 var pForm = bParser.urlencoded({ extended: false })
 
 // 创建一个 express 应用
-
 var application = express()
 
 // 解析 cookies
-
 // 这是必需的，因为 csrfProtection 中的 "cookie" 为 true
-
 application.use(cParser())
 
 application.get('/form', csrfProtection, function(req, res) {
-
-// 将 csrfToken 传递给视图
-
-res.render('send', { csrfToken: req.csrfToken() })
-
+  // 将 csrfToken 传递给视图
+  res.render('send', { csrfToken: req.csrfToken() })
 })
 
 application.post('/process', pForm, csrfProtection, function(req, res) {
-
-res.send('数据正在处理中')
-
+  res.send('数据正在处理中')
 })
 ```
 
 在您的视图中，`csrfToken` 的值应设置为隐藏输入字段 `_csrf` 的值。如下所示：
 
-```
+```html
 <form action="/process" method="POST">
-
-<input type="hidden" name="_csrf" value="{{csrfToken}}">
-
-最佳颜色: <input type="text" name="bestColor">
-
-<button type="submit">提交</button>
-
+  <input type="hidden" name="_csrf" value="{{csrfToken}}">
+  最佳颜色: <input type="text" name="bestColor">
+  <button type="submit">提交</button>
 </form>
 ```
 
@@ -1103,69 +1074,51 @@ res.send('数据正在处理中')
 
 在网站的 API 区域中，如果我们的请求已完全通过身份验证，则应禁用 CSRF。可以通过使用路由器和 Express 来忽略 API 路由。考虑下面的示例，展示了如何实现：
 
-```
+
+
+```js
 var cParser = require('cookie-parser')
-
 var csrf = require('csurf')
-
 var bParser = require('body-parser')
-
 var express = require('express')
 
 // 设置路由中间件
-
 var csrfProtection = csrf({ cookie: true })
-
 var pForm = bParser.urlencoded({ extended: false })
 
 // 创建一个 express 应用
-
 var application = express()
 
 // 解析 cookies
-
 // 这是必需的，因为 csrfProtection 中的 "cookie" 为 true
-
 application.use(cParser())
 
 // 创建一个 API 路由器
-
 var api = createApiRouter()
 
 // 在将 csrf 附加到应用堆栈之前挂载 API
-
 application.use('/api', api)
 
 // 在 "/api" 挂载之后添加 csrf
-
 appliation.use(csrfProtection)
 
 application.get('/form', function(req, res) {
-
-// 将 csrfToken 传递给视图
-
-res.render('send', { csrfToken: req.csrfToken() })
-
+  // 将 csrfToken 传递给视图
+  res.render('send', { csrfToken: req.csrfToken() })
 })
 
 application.post('/process', pForm, function(req, res) {
-
-res.send('需要 csrf 才能到达这里')
-
+  res.send('需要 csrf 才能到达这里')
 })
 
 function createApiRouter() {
+  var router = new express.Router()
 
-var router = new express.Router()
+  router.post('/getProfile', function(req, res) {
+    res.send('这里没有 csrf 需要获取')
+  })
 
-router.post('/getProfile', function(req, res) {
-
-res.send('这里没有 csrf 需要获取')
-
-})
-
-return router
-
+  return router
 }
 ```
 
@@ -1175,35 +1128,25 @@ return router
 
 当 CSRF 验证失败时，会抛出一个带有 `err.code === 'EBADCSRFTOKEN'` 的错误。这也可以用于显示错误消息。考虑下面的示例，展示了如何实现：
 
-```
+```js
 var bParser = require('body-parser')
-
 var cParser = require('cookie-parser')
-
 var csrf = require('csurf')
-
 var express = require('express')
 
 var application = express()
 
 application.use(bParser.urlencoded({ extended: false }))
-
 application.use(cParser())
-
 application.use(csrf({ cookie: true }))
 
 // 错误处理程序
-
 application.use(function (error, req, res, next) {
+  if (error.code !== 'EBADCSRFTOKEN') return next(error)
 
-if (error.code !== 'EBADCSRFTOKEN') return next(error)
-
-// 在此处处理 CSRF 令牌错误
-
-res.status(403)
-
-res.send('表单已被篡改')
-
+  // 在此处处理 CSRF 令牌错误
+  res.status(403)
+  res.send('表单已被篡改')
 })
 ```
 
@@ -1213,31 +1156,28 @@ res.send('表单已被篡改')
 
 这是用于解析请求体的 Node.js 中间件。但是，它不处理 multipart 请求体，因为其体积庞大且结构复杂。在处理 multipart 请求体时，您可能需要处理以下模块：
 
-* [multer](https://www.npmjs.org/package/multer#readme)
-* [busboy](https://www.npmjs.org/package/busboy#readme) 和 [connect-busboy](https://www.npmjs.org/package/connect-busboy#readme)
-* [formidable](https://www.npmjs.org/package/formidable#readme)
-* [multiparty](https://www.npmjs.org/package/multiparty#readme) 和 [connect-multiparty](https://www.npmjs.org/package/connect-multiparty#readme)
+- [multer](https://www.npmjs.org/package/multer#readme)
+- [busboy](https://www.npmjs.org/package/busboy#readme) 和 [connect-busboy](https://www.npmjs.org/package/connect-busboy#readme)
+- [formidable](https://www.npmjs.org/package/formidable#readme)
+- [multiparty](https://www.npmjs.org/package/multiparty#readme) 和 [connect-multiparty](https://www.npmjs.org/package/connect-multiparty#readme)
 
 该模块为用户提供以下解析器：
 
-* [URL 编码的表单请求体解析器](https://github.com/expressjs/body-parser#bodyparserurlencodedoptions)
-* [原始请求体解析器](https://github.com/expressjs/body-parser#bodyparserrawoptions)
-* [JSON 请求体解析器](https://github.com/expressjs/body-parser#bodyparserjsonoptions)
-
-
-
+- [URL 编码的表单请求体解析器](https://github.com/expressjs/body-parser#bodyparserurlencodedoptions)
+- [原始请求体解析器](https://github.com/expressjs/body-parser#bodyparserrawoptions)
+- [JSON 请求体解析器](https://github.com/expressjs/body-parser#bodyparserjsonoptions)
 
 ## [文本正文解析器](https://github.com/expressjs/body-parser#bodyparsertextoptions)
 
 要安装它，只需执行以下命令：
 
-```
+```bash
 $ npm install body-parser
 ```
 
 要使用该 API，请通过 `require` 命令将其包含到程序中。如下所示：
 
-```
+```js
 var bParser = require('body-parser')
 ```
 
@@ -1245,7 +1185,7 @@ var bParser = require('body-parser')
 
 在 Express 中，可以将通用的 JSON 和 URL 编码解析器添加为顶层中间件。这样，所有传入请求的请求体都会被解析。请参考下面的简单示例，展示如何实现：
 
-```
+```js
 var express = require('express')
 var bParser = require('body-parser')
 var application = express()
@@ -1267,7 +1207,7 @@ application.use(function (req, res) {
 
 可以将请求体解析器添加到需要它们的路由中。这在 Express 中是可行的，并且很容易实现。这是在 Express 中使用 `body-parser` 最简单且推荐的方式。请参考下面的示例，展示如何实现：
 
-```
+```js
 var express = require('express')
 var bParser = require('body-parser')
 var application = express()
@@ -1295,7 +1235,7 @@ application.post('/api/users', jParser, function (req, res) {
 
 所有解析器都接受一个 `type` 选项，通过它可以更改 `content-type`，使其成为中间件要解析的类型。请参考下面的示例，展示如何实现：
 
-```
+```js
 // 将各种不同的自定义 JSON 类型解析为 JSON
 application.use(bodyParser.json({ type: 'application/*+json' }))
 
@@ -1310,13 +1250,13 @@ application.use(bParser.text({ type: 'text/html' }))
 
 这是实现 Express 的最简单方式。要安装它，请执行以下命令：
 
-```
+```bash
 npm i flash
 ```
 
 请参考下面的示例，展示如何实现：
 
-```
+```js
 application.use(session()); // session 中间件
 application.use(require('flash')());
 application.use(function (req, res) {
@@ -1328,7 +1268,7 @@ application.use(function (req, res) {
 
 请参考第二个示例：
 
-```
+```jade
 for msge in flash
   a.alert(class='alert-' + msge.type)
   p= message.msge
@@ -1336,7 +1276,7 @@ for msge in flash
 
 这是最后一个示例：
 
-```
+```jade
 while msge = flash.shift() // 消费消息，因为 jade 已经读取了它们
   a.alert(class='alert-' + msge.type)
   p= message.msge
@@ -1344,7 +1284,7 @@ while msge = flash.shift() // 消费消息，因为 jade 已经读取了它们
 
 一个 Flash 消息数组可以如下所示：
 
-```
+```json
 {
   "type": "info",
   "message": "message"
@@ -1355,7 +1295,7 @@ while msge = flash.shift() // 消费消息，因为 jade 已经读取了它们
 
 这用于覆盖 HTTP 动词。通过它，可以在客户端不支持“DELETE”和“PUT”等 HTTP 动词的地方使用它们。要在系统中安装它，请执行以下命令：
 
-```
+```bash
 $ npm install method-override
 ```
 
@@ -1365,7 +1305,7 @@ $ npm install method-override
 
 要使用标头进行覆盖，必须将标头名称作为字符串参数传递给 `methodOverride` 函数。要进行调用，必须将 POST 请求发送到具有该标头作为覆盖方法的 URL。请参考下面的示例，展示如何实现：
 
-```
+```js
 var connect = require('connect')
 var mthdOverride = require('method-override')
 
@@ -1375,7 +1315,7 @@ application.use(mthdOverride('X-HTTP-Method-Override'))
 
 请参考下面的示例，展示如何与 `XMLHttpRequest` 一起使用：
 
-```
+```js
 var c = new XMLHttpRequest()
 c.onload = onload
 c.open('post', '/resource', true)
@@ -1393,13 +1333,13 @@ function onload() {
 
 可以通过执行以下命令将模块安装到系统中：
 
-```
+```bash
 npm install serve-favicon
 ```
 
 请参考下面的示例，展示如何在 express 中使用：
 
-```
+```js
 var express = require('express');
 var favicon = require('serve-favicon');
 var application = express();
@@ -1412,7 +1352,7 @@ application.listen(3000);
 
 在 connect 中，可以按如下方式实现：
 
-```
+```js
 var connect = require('connect');
 var favicon = require('serve-favicon');
 var application = connect();
@@ -1429,7 +1369,7 @@ application.listen(3000);
 
 下面的示例展示了如何实现：
 
-```
+```js
 var http = require('http');
 var favicon = require('serve-favicon');
 var fnhandler = require('finalhandler');
@@ -1454,19 +1394,19 @@ server.listen(3000);
 
 可以通过执行以下命令安装此模块：
 
-```
+```bash
 $ npm install response-time
 ```
 
 可以通过使用 `require` 关键字将模块包含到程序中，如下所示：
 
-```
+```js
 var respTime = require('response-time')
 ```
 
 请参考下面的示例，展示如何在 Express 和 connect 中使用：
 
-```
+```js
 var express = require('express')
 var respTime = require('response-time')
 var application = express()
@@ -1484,7 +1424,7 @@ application.get('/', function (req, res) {
 
 可以按如下方式使用：
 
-```
+```js
 var finalhandler = require('finalhandler')
 var http = require('http')
 var respTime = require('response-time')
@@ -1509,8 +1449,6 @@ http.createServer(function (req, res) {
 
 
 
-
-
 ```javascript
 var express = require('express')
 var respTime = require('response-time')
@@ -1531,15 +1469,15 @@ application.get('/', function (req, res) {
 })
 ```
 
-# 第 15 章 - [express-namespace](https://github.com/expressjs/express-namespace)
+# 第 15 章：express-namespace
 
-通过此模块，Express 增加了命名空间路由功能。要将其安装到系统中，可以执行以下命令：
+[express-namespace](https://github.com/expressjs/express-namespace) 模块为 Express 增加了命名空间路由功能。要将其安装到系统中，可以执行以下命令：
 
 `$ npm install express-namespace`
 
-考虑下面给出的示例，该示例可用于响应任何请求。示例如下：
+考虑下面给出的示例，该示例可用于响应任何请求：
 
-```
+```text
 GET /forum/12
 GET /forum/12/view
 GET /forum/12/edit
@@ -1547,7 +1485,7 @@ GET /forum/12/thread/5
 DELETE /forum/12
 ```
 
-要使用该模块，必须使用 `app.namespace()` 和 `require('express-namespace')`。然后该模块将可供您使用。
+要使用该模块，必须使用`app.namespace()`和`require('express-namespace')`。然后，该模块将可供您使用。
 
 要使用它，我们必须传递一个回调函数，然后对方法进行路由。在每个回调之后，调用将完成，命名空间将与其状态一起存储。如下所示：
 
@@ -1570,7 +1508,7 @@ application.namespace('/forum/:id', function(){
 });
 ```
 
-当前命名空间也可以通过 `app.currentNamespace` 访问。您还应该知道如何运行测试。但是，在此之前，请确保系统中已安装所有子模块。可以通过执行以下命令来安装它们：
+当前命名空间也可以通过`app.currentNamespace`访问。您还应该知道如何运行测试。但是，在此之前，请确保系统中已安装所有子模块。可以通过执行以下命令来安装它们：
 
 `$ git submodule update –init`
 
@@ -1580,9 +1518,9 @@ application.namespace('/forum/:id', function(){
 
 这就是该模块的使用方式。
 
-# 第 16 章 - [express-expose](https://github.com/expressjs/express-expose)
+# 第 16 章：express-expose
 
-此模块用于将对象、函数和原始 JavaScript 暴露给客户端。此功能非常适合共享设置、工具和用户的当前数据。辅助方法和局部变量也会暴露给客户端。
+[express-expose](https://github.com/expressjs/express-expose) 模块用于将对象、函数和原始 JavaScript 暴露给客户端。此功能非常适合共享设置、工具和用户的当前数据。辅助方法和局部变量也会暴露给客户端。
 
 要安装此模块，请执行以下命令：
 
@@ -1597,7 +1535,7 @@ application = expose(application);
 application.expose(...);
 ```
 
-以上是模块在 express 4.x 中的使用方式。在 express 2.x 和 3.x 中，可以按如下方式完成：
+以上是模块在 Express 4.x 中的使用方式。在 Express 2.x 和 3.x 中，可以按如下方式完成：
 
 ```javascript
 var express = require('express');
@@ -1607,7 +1545,7 @@ application.expose(...);
 
 ## 如何暴露对象
 
-将对象暴露给客户端的一种方法是暴露属性，最可能是 Express 配置。当 `app.expose(object)` 被暴露时，属性将暴露给 `application.*`。下面的示例展示了如何做到这一点：
+将对象暴露给客户端的一种方法是暴露属性，最可能是 Express 配置。当`app.expose(object)`被暴露时，属性将暴露给`application.*`。下面的示例展示了如何做到这一点：
 
 ```javascript
 application.set('views', __dirname + '/views');
@@ -1623,15 +1561,15 @@ application.expose(application.settings);
 application.expose({ en: 'English', fr: 'French' }, 'application', 'languages');
 ```
 
-然后您需要将默认缓冲区输出到模板。对于 Jade 用户，可以按如下方式完成：
+然后，您需要将默认缓冲区输出到模板。对于 Jade 用户，可以按如下方式完成：
 
-```
+```text
 script!= javascript
 ```
 
 对于 EJS 用户，可以按如下方式完成：
 
-```
+```html
 <script><%- javascript %></script>
 ```
 
@@ -1670,7 +1608,7 @@ application.expose(function(){
 
 ## 请求级别的暴露
 
-以上所有讨论的内容都可以应用于请求级别。考虑下面的示例，展示了如何做到这一点。示例如下：
+以上所有讨论的内容都可以应用于请求级别。考虑下面的示例，展示了如何做到这一点：
 
 ```javascript
 application.get('/', function(req, res){
@@ -1680,9 +1618,9 @@ application.get('/', function(req, res){
 });
 ```
 
-# 第 17 章 - connect-render
+# 第 17 章：connect-render
 
-这是一个用于 connect 的模板渲染辅助工具。可以通过执行以下命令来安装：
+这是一个用于 Connect 的模板渲染辅助工具。可以通过执行以下命令来安装：
 
 `$ npm install connect-render`
 
@@ -1760,11 +1698,6 @@ function middleware(options) {}
 
 可以说 ExpressJS 是一个 Node 框架。它为开发者提供了一个可以用来创建 Web 和移动应用程序的框架。它具有许多开发者可以利用的功能来创建他们的应用程序。它通过其中间件来工作。该框架还为开发者提供了许多可用于开发应用程序的模块。
 
+这些模块各自拥有独立的命令，可用于安装。要使用其中任何一个模块，你必须先安装它。它支持会话功能，这在创建 Web 应用程序时非常有用。它提供了多种选项，可供开发使用。你应该学习如何使用每个 ExpressJS 模块中可用的不同选项。`serve-index`模块用于提供包含目录列表的页面，并将其映射到特定路径。
 
-
-
-
-这些模块各自拥有独立的命令，可用于安装。要使用其中任何一个模块，你必须先安装它。它支持会话功能，这在创建 Web 应用程序时非常有用。它提供了多种选项，可供开发使用。你应该学习如何使用每个 ExpressJS 模块中可用的不同选项。`serve-index` 模块用于提供包含目录列表的页面，并将其映射到特定路径。
-
-这在开发过程中非常有趣。借助 `cookie-sessions` 模块，你可以提供访客会话，这样每位访问者都会拥有一个会话，无论是否经过身份验证。这也是 Express 中最出色且最有趣的功能之一。这个 Node 框架即使对于初学者来说也非常容易学习。本书将帮助你学习如何使用它。
-
+这在开发过程中非常有趣。借助`cookie-sessions`模块，你可以提供访客会话，这样每位访问者都会拥有一个会话，无论是否经过身份验证。这也是 Express 中最出色且最有趣的功能之一。这个 Node 框架即使对于初学者来说也非常容易学习。本书将帮助你学习如何使用它。

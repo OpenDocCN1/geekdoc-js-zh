@@ -1,40 +1,13 @@
+
 # JavaScript 高级指南：使用 JavaScript 编程特性、技术和模块解决日常问题（英文版）
 
-
-
 ![](img/cover.jpg)
-
-![image](img/cover.jpg)
-
-
-
-![](img/line.jpg)
-
-
-![](img/line.jpg)
 
 # 作者
 
 # Ockert J. Du Preez
 
 ![](img/logo.jpg)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 # 献给
 
@@ -68,422 +41,495 @@ Elmarie du Preez 和 Michaela du Preez
 
 从头到尾，本书将涵盖 JavaScript 语言的所有复杂细节！你将获得所有 `Statements`（语句）、`Functions`（函数）和 `Operators`（运算符）的概述。然后你将学习有趣的内容，包括：`Classes`（类）、`Prototypes`（原型）、`Promises`（承诺）和 `Generators`（生成器）。你将学习数组以及如何让脚本实现逻辑。最后，你将学习如何将 JavaScript 与其他语言结合。
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-2. JavaScript 对象
-4. JavaScript 运算符
-
-
-
-
-
-
-
-*   JavaScript 历史
-*   JavaScript 特性
 ## 目标
+
 *   学习什么是 JavaScript
 *   了解早期的浏览器大战
 
-
-
 JavaScript 是**万维网**（**WWW**）的核心技术之一。JavaScript 是一种高级、解释型编程语言，这意味着它的大多数指令可以直接执行，而无需编译。JavaScript 最吸引人的特性是它能够让网页具有交互性。JavaScript 语言支持动态类型、函数、基于原型的面向对象以及大量的 API，允许你处理数组、文本、正则表达式、日期和**文档对象模型**（**DOM**）。
+
 JavaScript 最初仅在网络浏览器的客户端实现，但现在，JavaScript 引擎已嵌入到许多其他类型的宿主软件中，包括：
+
 *   Web 服务器和数据库中的服务端
-*   允许使用 编写移动和桌面应用程序的运行时环境
+*   允许使用 JavaScript 编写移动和桌面应用程序的运行时环境
+
 通过嵌入其他类型的宿主，这些软件使得 JavaScript 更加多功能、强大，并且对跨平台的变化更有适应性。
+
 # JavaScript 历史
+
 为了更深入地了解 JavaScript 的历史，让我们快速看看“浏览器战争”这个术语。
+
 # 浏览器战争
+
 顾如其名，浏览器战争是浏览器之间的竞争，主要是关于市场份额的竞争。在 20 世纪 90 年代后期，第一次浏览器战争发生在微软 Internet Explorer 和 Netscape Navigator 之间。
+
 第一次浏览器战争从 1995 年开始，持续到 2001 年。Netscape Navigator 曾是最广泛使用的网络浏览器，因为微软在 1995 年 8 月仅作为 Windows 95 Plus! 包的一部分发布了 Internet Explorer 1.0。
+
 三个月后，微软免费下载发布了 Internet Explorer 2.0。Internet Explorer 4 改变了一切。Internet Explorer 4 被集成到 Microsoft Windows 中，这导致了 Netscape Navigator 的衰落，因为用户觉得在已经有 Internet Explorer 浏览器的情况下，没有必要下载另一个浏览器。
+
 第一次浏览器战争结束时，Internet Explorer 在其市场份额上已没有其他严肃的竞争对手，从而结束了 Web 浏览器的快速创新。
+
 随着 Internet Explorer 使用份额的下降以及 Firefox、Google Chrome、Safari、Opera 等浏览器的流行，浏览器战争在 21 世纪 10 年代初加剧。
+
 # JavaScript 的诞生
+
 Netscape Communications 的创始人 Marc Andreessen 设想了一种更具动态的 Web 体验。他不想只显示无法兼顾用户活动的静态网页，他想要更多。问题在于，想要一种包含自动化、动画和基础用户交互的更动态 Web 体验，需要一种轻量级的脚本语言，这种语言要让非程序员也能使用，并且能够与 `DOM` 直接交互。
+
 Mocha 出生了。Mocha 将成为一种简单且动态的 Web 脚本语言。JavaScript 之父 Brendan Eich 出现了。Netscape Communications 聘请 Eich 为他们的浏览器开发 Scheme（一种轻量级 Lisp 方言）。Scheme 是强大、动态且函数式的。几个月后，Mocha 的原型在 1995 年 5 月集成到 Netscape Communicator 中。不久后，它被更名为 LiveScript。1995 年 12 月，Mocha/LiveScript 被更名为 JavaScript，并作为一种用于客户端浏览器任务的脚本语言推出。
+
 # 为什么选择 JavaScript?
+
 很难想象一个没有 JavaScript 的 Web。
+
 # JavaScript 特性
+
 JavaScript 是世界上最流行的语言之一。它被用于创建交互式网站、移动应用，甚至是服务端应用程序。JavaScript 是一种多功能且灵活的语言，可以用于各种任务。
+
 JavaScript 的一些特性包括：
+
 *   动态类型
 *   基于原型的面向对象
 *   异步编程
+
 JavaScript 是一门强大的语言，为开发者提供了许多机会。如果你对 Web 开发感兴趣，学习 JavaScript 是必修之路。
+
 # JavaScript 特性总结
+
 在本章中，我们探索了 JavaScript 的历史及其特性。我们还学习了为什么 JavaScript 是一门强大且多功能的语言。在下一章中，我们将学习更多关于 JavaScript 对象以及如何使用它们。
+
 ## 问题
+
 1. 谁创建了 JavaScript？
-3. 写出 JavaScript 的四个特性。
-5. JavaScript 相比 HTML 有什么优势？
+2. 写出 JavaScript 的四个特性。
+3. JavaScript 相比 HTML 有什么优势？
+
 # 第 2 章
+
 ## JavaScript 对象
+
 ## 引言
+
 在任何编程语言中，对象都是任何应用程序的基石。在对象内部存储信息并检索其值对于速度至关重要。
+
 在对象内部存储信息并利用它们有许多方法。我们将学习 JavaScript 对象是什么，然后快速查看原始类型（primitives）。我们将通过五种方式创建对象。最后，我们将探索 `this` 关键字以及它的含义在不同用法下的何不同。
+
 ## 结构
+
 *   JavaScript 对象
 *   `this` 关键字
+
 ## 目标
+
 *   理解 JavaScript 对象以及如何创建它们
 *   学习如何创建对象
 *   理解并使用 `this` 关键字
+
 ## JavaScript 对象
+
 对象是具有属性和方法的东西。属性描述对象。方法是该对象可以执行的操作。基本上，在 JavaScript 中，万物皆可对象。除了原始类型外，所有的 JavaScript 值都是对象。在详细介绍内置对象之前，让我们先探索原始类型。
+
 ## 原始值和原始数据类型
+
 原始值是不具有属性或方法的值。原始数据类型就是具有原始值的数据。JavaScript 有 7 种原始数据类型。它们是：
+
 *   string
+*   number
 *   bigint
+*   boolean
+*   undefined
 *   null
 *   symbol
+
 让我们逐一个探索这些原始数据类型。
+
 ### string
+
 字符串代表文本数据。如果允许我表现得技术化一点：JavaScript 字符串原始数据类型简单来说是一组 16 位无符号整数值的集合。字符串中的每个项目都占据字符串中的一个位置，从 0 开始。
+
 ### number
 
+`number` 类型表示整数和浮点数。
 
+### bigint
 
+`bigint` 类型表示任意精度的整数。
 
+### boolean
 
+`boolean` 类型表示逻辑实体，只有两个值：`true` 和 `false`。
 
+### undefined
 
+`undefined` 类型表示未定义的值。
 
+### null
 
+`null` 类型表示空值。
 
+### symbol
 
+`symbol` 类型表示唯一的标识符。
 
+## 创建对象
 
+在 JavaScript 中有多种创建对象的方法。我们将探索以下五种方式：
 
+*   对象字面量语法
+*   `new` 关键字
+*   `Object.create()`
+*   `Object.assign()`
+*   ES6 classes
 
+让我们探索一下区别。
+
+### 对象字面量语法
+
+对象字面量是创建对象最简单的方法。它使用花括号 `{}` 来定义对象及其属性。
+
+```javascript
 var objStudent = {
-Course:”JavaScript”,
+  Course: "JavaScript"
 };
-
-
-
-
--   `new` 关键字
--   `Object.assign()`
-
-
-
 
 var objCar = {
-model: “i8 Roadster”,
+  make: "BMW",
+  model: "i8 Roadster",
+  price: 2329300
 };
 
-
-
-console.log(objCar); // 输出 {make: “BMW”, model: “i8 Roadster”, price: 2329300}
+console.log(objCar); // 输出 {make: "BMW", model: "i8 Roadster", price: 2329300}
 console.log(objCar.model); // 输出 i8 Roadster
 ```
-让我们把这些内容整合在一个小练习中：
-1.  打开你任的文本编辑器，并输入以下 HTML 和 JavaScript 代码：
-```html
-<html>
-<h1>Object literal syntax</h1>
-<script>
-make : “BMW”,
-price : 2329300
-console.log(objCar); // 输出 {make: “BMW”, model: “i8 Roadster”, price: 2329300}
-console.log(objCar.model); // 输出 i8 Roadster
-</script>
-</html>
 
-
-
-
-
--   使用 `new` 配合自定义构造函数
-让我们探索一下区别。
 ### 使用 ‘new’ 配合内置对象函数
+
 在基于类的面向对象编程 (`OOP`) 中，构造函数是一种特殊的子程序，用于创建对象。构造函数通过初始化对象的成员为新对象做好准备。要创建一个新对象，必须使用 `new` 关键字配合 `Object()` 构造函数，如下所示：
+
 ```javascript
+var house = new Object();
 ```
+
 这创建并初始化了一个名为 `house` 的新对象。我们可以使用下面的代码为此对象添加属性：
+
 ```javascript
+house.bedrooms = 3;
 house.bathrooms = 2;
+house.garages = 2;
 house.hasSwimmingPool = false;
+house.hasOutsideWalls = true;
 ```
+
 你可以看到，为使用 `Object()` 构造函数创建的对象属性可能会变成一项繁琐的任务，并且涉及大量的输入工作。我们上面创建的 `house` 对象具有 `bedrooms` 属性、`bathrooms`、`garages`，以及表示是否存在游泳池或外墙的布尔值属性。
+
 如果我们必须创建数百个 `house` 对象怎么办？让我们看看如何通过使用自定义构造函数让这段代码更短一些。
+
 ### 使用 ‘new’ 配合自定义构造函数
+
 在创建自定义构造函数时，你基本上是为对象的属性和方法创建了一个模板。你只需要创建一次函数，然后向它传递必要的属性，而不是像之前在“使用 `new` 配合内置对象构造函数”部分所示那样手动输入每个属性和每个设置。
+
 让我们再次以 `house` 对象为例创建自定义构造函数：
+
 ```javascript
-    this.bedRooms = _bed;
-    this.garages = _garage;
-    this.hasOutsideWalls = _walls;
+function House(_bed, _bath, _garage, _pool, _walls) {
+  this.bedRooms = _bed;
+  this.bathRooms = _bath;
+  this.garages = _garage;
+  this.hasSwimmingPool = _pool;
+  this.hasOutsideWalls = _walls;
+}
 ```
+
 构造函数的名称是 `House`。括号内有五个参数：`_bed`、`_bath`、`_garage`、`_pool` 和 `_walls`。这些参数将用于向 `House` 函数传递信息。在构造函数内部，每个属性都被赋值为它自己的参数。记住，这仅仅是一个模板，目前还没有值。
+
 现在我们有了构造函数，根据它来创建对象就很简单了。方法如下：
+
 ```javascript
-var houseTwo = new House(3, 1, 1, true, false);
-
-
-
-
-this.garages = _garage;
-this.hasOutsideWalls = _walls;
 var houseOne = new House(4, 2, 2, false, true);
+var houseTwo = new House(3, 1, 1, true, false);
 console.log(houseOne);
+console.log(houseTwo);
 ```
-</script>
-</html>
 
+### Object.create()
 
+`Object.create()` 方法创建一个新对象，使用现有的对象来提供新创建的对象的 `__proto__`。
 
-
-
-
-
-
-
-
-let Course = {name: ‘Web Programming’}
-
-
-let Subject = Object.create(Course, { name:{ value: ‘JavaScript’ } });
-console.log(Subject.Course); //Output: Web Programming
-
-
-
-
-
-let Course = {Coursename: ‘Web Programming’}
+```javascript
+let Course = {name: 'Web Programming'};
+let Subject = Object.create(Course, { name: { value: 'JavaScript' } });
+console.log(Subject.name); // Output: JavaScript
+console.log(Subject.Course); // Output: Web Programming (通过原型链访问)
 ```
+
+### Object.assign()
+
+`Object.assign()` 方法用于将所有可枚举属性的值从一个或多个源对象复制到目标对象。它将返回目标对象。
+
 你有一个 `Student` 对象正在学习 `Web Programming` 课程，并且目前正忙于名为 `JavaScript` 的科目。你可以通过 `Object.assign` 的帮助来实现这一点，如下所示：
-```javascript
-```
-现在，你有一个 `Student` 对象，它将 `Coursename` 和 `Subjectname` 作为其属性：
-```javascript
-console.log(Student.Subjectname) //Output: JavaScript
 
-
-<!DOCTYPE html>
-<body>
-<p>以下代码创建了一个 JavaScript 对象并在浏览器的控制台窗口中显示其结果</p>
-let Course = {Coursename: ‘Web Programming’}
+```javascript
+let Course = {Coursename: 'Web Programming'};
+let Subject = {Subjectname: 'JavaScript'};
 let Student = Object.assign({}, Course, Subject);
-console.log(Student.Subjectname) //Output: JavaScript
-</body>
+console.log(Student.Coursename); // Output: Web Programming
+console.log(Student.Subjectname); // Output: JavaScript
 ```
-你的 Chrome 控制台窗口应该像下方的图 2.3 所示：
-![](img/Img_02_03.jpg)
-图 2.3：Object.assign() 输出
-让我们进入 ES6 类。
+
 ### ES6 classes
+
 使用 ES6（ECMAScript 6 或 JavaScript 6）类就像使用 `new` 关键字配合用户定义的构造函数一样。构造函数简单地被类所取代。这是一个简短的示例：
+
 ```javascript
+class Car {
   constructor(_make, _model) {
+    this.carMake = _make;
     this.carModel = _model;
+  }
 }
 
+myCar = new Car("BMW", "i8 Roadster");
+console.log(myCar.carMake); // BMW
+console.log(myCar.carModel); // i8 Roadster
+```
 
-myCar = new Car(“BMW”, “i8 Roadster”);
+## `this` 关键字
 
+`this` 关键字指向它所属的对象。它的值根据使用位置的不同而不同。
 
+### 单独使用
 
+单独使用时，`this` 指向全局对象（浏览器中为 `window`）。
 
-* 单独使用
-* 在严格模式下的函数中
+```javascript
+var objWindow = this; // returns [object Window]
+```
 
+### 在函数中
 
+在函数中，`this` 指向全局对象（非严格模式下）。
 
-var Student = {
-  lastName : “du Preez”,
-  score : 85,
-    return this.firstName + “ wrote “ + this.subject + “ and got “ + this.score + “%”;
-};
-
-
-
-
-
-var objWindow = this; //returns [object window]
-
-
-
+```javascript
 function mainWindow() {
+  return this; // returns [object Window]
 }
-
-
-
-“use strict”;
-  return this; //returns undefined
 ```
-### In an event
+
+### 在严格模式下的函数中
+
+在严格模式下，函数中的 `this` 是 `undefined`。
+
+```javascript
+"use strict";
+function mainWindowStrict() {
+  return this; // returns undefined
+}
+```
+
+### 在事件中
+
 当 `this` 在事件中使用时，`this` 指向接收事件的 HTML 元素：
+
 ```html
-Click Me!
+<button onclick="this.style.display='none'">Click Me!</button>
 ```
-### Conclusion
-在本章中，我们探索了 JavaScript 中的对象。我们学习了各种对象创建技术：`new` 关键字、用户定义构造函数、对象构造、ES6 类，然后学习了 `Object.create()` 和 `Object.assign()` 方法。最后，我们学习了 `this` 关键字的不同实现方式。
+
+## 结论
+
+在本章中，我们探索了 JavaScript 中的对象。我们学习了各种对象创建技术：对象字面量、`new` 关键字、自定义构造函数、`Object.create()`、`Object.assign()` 方法和 ES6 类。最后，我们学习了 `this` 关键字的不同实现方式。
+
 在下一章中，我们将学习 JavaScript 语句（它们是什么以及如何构造）和 JavaScript 关键字。
-### Questions
+
+## 问题
+
 1. `Object.create()` 和 `Object.assign()` 方法的区别是什么？
-3. 什么是用户定义的构造函数？
-5. 解释参数（parameter）。
+2. 什么是用户定义的构造函数？
+3. 解释参数（parameter）。
+
 # 第 3 章
+
 ## JavaScript Statements
+
 ## Introduction
+
 没有语句，就不会有程序。语句是发送给解释器或编译器的指令。你组合语句的方式对于整个脚本的成功至关重要。是的，这听起来有点极端，但如果你使用没有空格或换行的粗糙代码，它很快就会变得混乱。
+
 在本节中，你将学习 JavaScript 语句是什么，以及为了可读性和理解性组合它们有多重要。
+
 ## Structure
+
 本章涵盖的主题有：
-* 语句结构
-* 空格和换行
 
+*   语句结构
+*   空格和换行
 
-* 学习如何创建 JavaScript 语句
-* 学习空格和换行
+## 目标
 
+*   学习如何创建 JavaScript 语句
+*   学习空格和换行
 
+## 语句结构
 
+JavaScript 程序由多条语句组成。语句通常以分号（`;`）结束。
 
+```javascript
 var objWidth, objHeight;
+objWidth = 500;
 objHeight = 100;
-document.getElementById(“displaySizeLabel”).innerHTML = size; /*显示屏幕尺寸*/
-
-
-JavaScript 语句应该以分号（`;`）结束。你也可以在一行中包含多个语句，只要它们之间用分号隔开，如下例所示：
+var size = objWidth + " x " + objHeight;
+document.getElementById("displaySizeLabel").innerHTML = size; /*显示屏幕尺寸*/
 ```
+
+你也可以在一行中包含多个语句，只要它们之间用分号隔开，如下例所示：
+
+```javascript
+var a = 1; var b = 2; var c = a + b;
 ```
+
 通过用分号隔开，三个语句被合并了一行。
+
 ## JavaScript 代码块
+
 代码块将语句组合在一起。因为语句被分组在代码块内部，它们会被一起执行。在代码块中组合语句的常用方法是使用函数。JavaScript 函数的格式如下：
+
 ```javascript
-//statement_1;
-//statement_3;
+function functionName(parameters) {
+  // statement_1;
+  // statement_2;
+  // statement_3;
+}
 ```
+
 函数以关键字 `function` 开始。左括号和右括号允许你为函数输入参数。代码块存在于函数的左右大括号之间。在 *第 5 章：JavaScript 函数* 中，我们将更深入地探讨函数。
+
 单独的代码块也可以出现在另一个代码块（如函数）内部。例如，一个函数可以包含分组的语句，如 `while` 循环、`for` 循环或 `if` 语句。这里是对每种语句的简短说明和示例。
+
 ## 语句分组
+
 JavaScript 中的语句分组包括循环和条件测试。JavaScript 中的循环是一段重复执行的代码块，直到某个条件变为真。条件是用于进行测试的事物，例如：如果某个值小于 100，则应该发生某些事情。条件语句是判断特定条件为真还是为假的语句，例如：是否输入了名称。
+
 接下来的几个代码块将演示各种循环和条件测试。
-## while 循环
+
+### while 循环
+
 `while` 循环只要指定的条件存在，就会循环执行代码块。让我们来看一个示例：
+
 ```javascript
-while (counter <= 100)
-document.write(counter + “<br>);
-}
-
-
-
-
-for (let i = 0; i <= 100; i++)
-document.write(i + “<br>”);
-```
-`for` 循环与 `while` 循环略有不同。`while` 循环被称为*条件*循环（它在某个条件存在时循环，或者直到某个条件变为真），而 `for` 循环是计数器循环。通过 `for` 循环，你可以精确指定循环从哪里开始，在哪里停止。为了演示区别，我保持了与上面 `while` 循环相同的参数。`for` 循环将从 `0` 循环到 `100`。
-它随后会将循环计数器的值写入文档。正如你所见的，不需要手动增加循环变量，因为它是自动增加的。我现在不会细说太详细，因为循环将在 *第 14 章：循环* 中进行详细解释。
-## if 语句
-JavaScript 的 `if` 语句在特定条件为真时执行分组的语句。这里有一个小示例：
-```javascript
-{
-break;
-```
-上面的 `if` 语句也通过使用大括号将一组语句组合在一起。在上面的示例中，它判断 `counter` 变量是否大于 `50`。如果是，它将显示一个带有 `stop it!` 的弹出框；如果 `counter` 小于或等于 `50`，则什么都不会发生。我现在不会细说太详细，因为 `if` 语句将在 *第 13 章：控制流语句* 中进行详细解释。
-## 空格和换行
-代码会变得非常杂乱，你可能会更快迷失在代码中。想象一个包含 1000 行的脚本。进一步想象你必须更改其中某处的几行。现在，如果没有空格，你将挣苦于寻找你的函数和分组语句何时结束。你将在寻找需要编辑的地方时面临极大困难。
-这就是空格和换行的用武之地。空格允许你以一种优化的方式格式化代码的流：
-# 空格
-空格简单地添加空格、制表符或换行符，以便你的代码更具读性。JavaScript 解释器忽略空格，让我们把 `while` 循环、`for` 循环和 `if` 语句在没有空格的情况下写出来。
-## 没有空格的 while 循环
-```javascript
-while (counter <= 100)
-document.write(counter + “<br>);
-}
-
-
-
-for (let i = 0; i <= 100; i++)
-document.write(i + “<br>”);
-```
-## 没有空格的 if
-```javascript
-{
-break;
-```
-正如你所见的，代码不再容易阅读了，尽管代码并不长。现在，想象有一个包含几十个 `if` 语句和循环组合在一起的长脚本。不仅对你来说，对你团队中的其他开发者来说，跟踪代码都将极其困难。你现在可能知道脚本中发生的一切切，但一个月后可能就不如此了。
-让我们让代码变得漂亮起来！
-## 带有空格的 while 循环
-```javascript
-while (counter <= 100)
-document.write(counter + “<br>);
-}
-
-
-
-for (let i = 0; i <= 100; i++)
-document.write(i + “<br>”);
-```
-## 带有空格的 if
-```javascript
-{
-break;
-```
-代码看起来已经清晰多了。通过添加换行符，你可以让它更易读。
-## 换行符
-一条长的 JavaScript 语句可以分成多行。通常，超过 80 个字符的行会让阅读和跟踪代码变得困难。像这样的行就很长：
-```javascript
-```
-一个很好的断行位置是在运算符之后（*第 4 章：JavaScript 运算符* 将详细介绍运算符），如下下面的代码段所示：
-```javascript
-size; /*Display screen size*/
-
-
-
-
-
 var counter = 0;
-{
+while (counter <= 100) {
+  document.write(counter + "<br>");
   counter++;
+}
 ```
-以上是一个小型 `while` 循环在添加了一些空格和换行后的简短示例。让我们为 `for` 循环添加一些换行。
-## 带有换行和空格的 for 循环
+
+### for 循环
+
+`for` 循环与 `while` 循环略有不同。`while` 循环被称为*条件*循环（它在某个条件存在时循环，或者直到某个条件变为真），而 `for` 循环是计数器循环。通过 `for` 循环，你可以精确指定循环从哪里开始，在哪里停止。为了演示区别，我保持了与上面 `while` 循环相同的参数。`for` 循环将从 `0` 循环到 `100`。
+
 ```javascript
-{
+for (let i = 0; i <= 100; i++) {
+  document.write(i + "<br>");
 }
+```
 
+它随后会将循环计数器的值写入文档。正如你所见的，不需要手动增加循环变量，因为它是自动增加的。我现在不会细说太详细，因为循环将在 *第 14 章：循环* 中进行详细解释。
 
+### if 语句
 
-if (counter > 50)
+JavaScript 的 `if` 语句在特定条件为真时执行分组的语句。这里有一个小示例：
+
+```javascript
+var counter = 60;
+if (counter > 50) {
   alert("stop it!");
+  break;
 }
+```
 
+上面的 `if` 语句也通过使用大括号将一组语句组合在一起。在上面的示例中，它判断 `counter` 变量是否大于 `50`。如果是，它将显示一个带有 `stop it!` 的弹出框；如果 `counter` 小于或等于 `50`，则什么都不会发生。我现在不会细说太详细，因为 `if` 语句将在 *第 13 章：控制流语句* 中进行详细解释。
 
+## 空格和换行
 
+代码会变得非常杂乱，你可能会更快迷失在代码中。想象一个包含 1000 行的脚本。进一步想象你必须更改其中某处的几行。现在，如果没有空格，你将挣苦于寻找你的函数和分组语句何时结束。你将在寻找需要编辑的地方时面临极大困难。
+
+这就是空格和换行的用武之地。空格允许你以一种优化的方式格式化代码的流。
+
+### 空格
+
+空格简单地添加空格、制表符或换行符，以便你的代码更具读性。JavaScript 解释器忽略空格。
+
+#### 没有空格的 while 循环
+
+```javascript
+var counter=0;while(counter<=100){document.write(counter+"<br>");counter++;}
+```
+
+#### 没有空格的 for 循环
+
+```javascript
+for(let i=0;i<=100;i++){document.write(i+"<br>");}
+```
+
+#### 没有空格的 if
+
+```javascript
+var counter=60;if(counter>50){alert("stop it!");break;}
+```
+
+正如你所见的，代码不再容易阅读了，尽管代码并不长。现在，想象有一个包含几十个 `if` 语句和循环组合在一起的长脚本。不仅对你来说，对你团队中的其他开发者来说，跟踪代码都将极其困难。你现在可能知道脚本中发生的一切切，但一个月后可能就不如此了。
+
+让我们让代码变得漂亮起来！
+
+#### 带有空格的 while 循环
+
+```javascript
+var counter = 0;
+while (counter <= 100) {
+  document.write(counter + "<br>");
+  counter++;
+}
+```
+
+#### 带有空格的 for 循环
+
+```javascript
+for (let i = 0; i <= 100; i++) {
+  document.write(i + "<br>");
+}
+```
+
+#### 带有空格的 if
+
+```javascript
+var counter = 60;
+if (counter > 50) {
+  alert("stop it!");
+  break;
+}
+```
+
+代码看起来已经清晰多了。通过添加换行符，你可以让它更易读。
+
+### 换行符
+
+一条长的 JavaScript 语句可以分成多行。通常，超过 80 个字符的行会让阅读和跟踪代码变得困难。像这样的行就很长：
+
+```javascript
+var size = screen.width + " x " + screen.height + " pixels " + "Color Depth: " + screen.colorDepth + " bits";
+```
+
+一个很好的断行位置是在运算符之后（*第 4 章：JavaScript 运算符* 将详细介绍运算符），如下下面的代码段所示：
+
+```javascript
+var size = screen.width + " x " + screen.height + " pixels " +
+  "Color Depth: " + screen.colorDepth + " bits";
+```
+
+## JavaScript 关键字
+
+JavaScript 关键字是保留字，不能用作变量名、函数名或标签。以下是 JavaScript 关键字列表：
 
 | `arguments` | `boolean` |
+| :--- | :--- |
 | `byte` | `catch` |
 | `class` | `continue` |
 | `default` | `do` |
@@ -499,25 +545,38 @@ if (counter > 50)
 | `throws` | `TRUE` |
 | `typeof` | `void` |
 | `while` | `yield` |
+
 **表 3.1：** JavaScript 关键字
+
 在本书的学习过程中，我们将涵盖这些关键字，因为本章只是一个介绍。
+
 ## 结论
+
 在本章中，我们学习了 JavaScript 语句的细节。我们学习了如何创建语句、语句是如何形成的，然后学习了空白字符和换行。最后，我们快速查看了可用的 JavaScript 关键字。
+
 # 第 4 章：JavaScript 运算符
+
 ## 引言
+
 运算符允许我们对不同的操作数进行操作。这些操作数可以是我们想要加、减、乘、除的对象名称。有很多运算符，每个运算符都有自己的功能。本章将解释什么是运算符，并将它们分为类别和类型以便更好地理解，并提供了如何使用常用运算符的实用示例。
+
 ## 目标
-* 什么是运算符？
-* 了解什么是算术运算符
-* 理解赋值运算符
-* 学习运算符优先级
+
+*   什么是运算符？
+*   了解什么是算术运算符
+*   理解赋值运算符
+*   学习运算符优先级
+
 ## 什么是运算符？
+
 运算符可以被解释为行为几乎像函数的结构，但在语义或语法上与普通函数不同。有许多类型的运算符，甚至还有我们很快将涵盖的类别。一些常用的运算符包括：
+
 | 运算符类型/类别 | 运算符(s) |
-| 算术 | `+ - / %` |
-| 逻辑 | `||` |
-
-
+| :--- | :--- |
+| 算术 | `+ - * / % ** ++ --` |
+| 比较 | `== === != !== > < >= <= ?` |
+| 逻辑 | `&& || !` |
+| 赋值 | `= += -= *= /= %= **=` |
 
 主要运算符可以归类为实现相似目标的任何运算符类别。主要运算符包括算术、赋值、比较和逻辑运算符。我将在接下来的几个表格和标题中逐一强调每个主要类型。
 
@@ -588,9 +647,9 @@ if (counter > 50)
 
 除了作为运算符具有不同功能外，还有使用各种运算符构建语句的多种方法。在大多数情况下，你需要两个操作数（运算符作用于的对象）和一个运算符。有时你可能需要三个操作数和两个运算符。我所称的运算符子类型列在下方：
 
-* 一元
-* 二元
-* 三元
+*   一元
+*   二元
+*   三元
 
 ## 一元运算符
 
@@ -609,33 +668,31 @@ if (counter > 50)
     let c = 5;
     let d = 5;
     a = -a;
-    alert( a ); // -1, 应用了一元否定
+    alert(a); // -1, 应用了一元否定
     b = +b;
-    alert( b ); // +1, 应用了一元加法
+    alert(b); // +1, 应用了一元加法
     c++;
-    alert( c ); // 6, 应用了增一
+    alert(c); // 6, 应用了增一
     d--;
-    alert( d ); // 4, 应用了减一
+    alert(d); // 4, 应用了减一
   </script>
 </body>
 </html>
 ```
 
+2.  以 HTML 扩展名保存文件，例如 `Chapter 4.1.html`。
 
-
-
-
-### 3. 双击文件并在默认浏览器中打开它。
+3.  双击文件并在默认浏览器中打开它。
 
 一旦加载，该网页将连续产生四个警告框（alert boxes）。在上面的示例中，输出了以下答案：
 
-`名为 a 的变量值为 -1\.` ` `这是因为我们对其进行了取反，将其变为负数。`
+`名为 a 的变量值为 -1。` 这是因为我们对其进行了取反，将其变为负数。
 
-`名为 b 的变量值为 1\.` ` `它没有变化，因为已经是正数了。`
+`名为 b 的变量值为 1。` 它没有变化，因为已经是正数了。
 
-`名为 c 的变量值为 6\.` ` `我们在它现有的值 5 的基础上加了 1。`
+`名为 c 的变量值为 6。` 我们在它现有的值 5 的基础上加了 1。
 
-`名为 d 的变量值为 4\.` ` `我们在它现有的值 5 的基础上减去了 1。`
+`名为 d 的变量值为 4。` 我们在它现有的值 5 的基础上减去了 1。
 
 ## 二元运算符
 
@@ -655,11 +712,11 @@ if (counter > 50)
     let d = 2;
     var e;
     a = a + b;
-    alert( a ); // 3, 将 b 的值加到 a 上
+    alert(a); // 3, 将 b 的值加到 a 上
     b = b - c;
-    alert( b ); // -1, 从 b 中减去 c 的值
+    alert(b); // -1, 从 b 中减去 c 的值
     e = c % d;
-    alert( e ); // 1, 余数为 1
+    alert(e); // 1, 余数为 1
   </script>
 </body>
 </html>
@@ -671,15 +728,15 @@ if (counter > 50)
 
 一旦加载，该网页将连续产生三个警告框。在上面的示例中，输出了以下答案：
 
-`名为 a 的变量值为 3\.` ` `这是因为将 b 的值加到了 a。`
+`名为 a 的变量值为 3。` 这是因为将 b 的值加到了 a。
 
-`名为 b 的变量值为 -1\.` ` `从 b 中减去了 c 的值。`
+`名为 b 的变量值为 -1。` 从 b 中减去了 c 的值。
 
-`名为 e 的变量值为 1\.` ` `余数为 1。`
+`名为 e 的变量值为 1。` 余数为 1。
 
 ## 三元运算符
 
-三元运算符是一种接受三个操作数的运算符。下面的示例展示了一些二元运算符的操作（注：此处原文应为三元运算符）：
+三元运算符是一种接受三个操作数的运算符。下面的示例展示了三元运算符的操作：
 
 1. 打开你任选的文本编辑器，并输入以下 HTML 和 JavaScript 代码：
 
@@ -693,41 +750,41 @@ if (counter > 50)
     var age = 21;
     var canEnterCollege;
     if (age > 18) {
-      canEnterCollege = “Old enough”;
+      canEnterCollege = "Old enough";
     }
     else {
-      canEnterCollege = “Too young”;
+      canEnterCollege = "Too young";
     }
     alert(canEnterCollege);
     // 使用三元条件运算符简化
-    var canEnterCollege = (age < 18) ? “Too young” : “Old enough”;
+    var canEnterCollege = (age < 18) ? "Too young" : "Old enough";
     alert(canEnterCollege);
   </script>
 </body>
 </html>
 ```
 
-2. 以 HTML 扩展名保存文件，例如 `Chapter 4.2.html`。
+2. 以 HTML 扩展名保存文件，例如 `Chapter 4.3.html`。
 
 3. 双击文件并在默认浏览器中打开它。
 
 一旦加载，该网页将连续产生两个警告框。在上面的示例中，输出了以下答案。
 
-名为 `canEnterCollege` 的变量值为 `21`。在第一个控制流语句中（我们将在 *第 13 章：控制流语句* 中介绍控制流语句），我们测试变量 `canEnterCollege` 是否大于 `18`。如果是，警告框将显示 `old enough`；`else`，另一个警告框将显示 `Too young`。
+名为 `canEnterCollege` 的变量值为 `Old enough`。在第一个控制流语句中（我们将在 *第 13 章：控制流语句* 中介绍控制流语句），我们测试变量 `age` 是否大于 `18`。如果是，警告框将显示 `Old enough`；`else`，另一个警告框将显示 `Too young`。
 
-在代码的最后部分，注意同时同时使用了 `?` 和 `:`。条件写在括号中——在本例中，为 `age < 18`。如果条件为真，则执行 `?`（问号）旁边的代码；如果条件为假（`age` 不小于 18），则触发 `:`（冒号）旁边的代码。
+在代码的最后部分，注意同时使用了 `?` 和 `:`。条件写在括号中——在本例中，为 `age < 18`。如果条件为真，则执行 `?`（问号）旁边的代码；如果条件为假（`age` 不小于 18），则触发 `:`（冒号）旁边的代码。
 
 ## 运算符优先级
 
-如果表达式包含多个运算符，其执行顺序由它们的优先级顺序定义，即优先级。下表显示了 JavaScript 中的运算符优先级：
+如果表达式包含多个运算符，其执行顺序由它们的优先级顺序定义，即优先级。下表显示了 JavaScript 中的运算符优先级（从高到低）：
 
 | 运算符类型 | 逐个运算符 |
 | :--- | :--- |
 | 分组 | `()` |
 | 成员访问 | `.` |
-| 计算的成员访问 | `[ ]` |
-| new (带参数列表) | `new ( )` |
-| 函数调用 | `( )` |
+| 计算的成员访问 | `[]` |
+| new (带参数列表) | `new ()` |
+| 函数调用 | `()` |
 | 可选链 | `?.` |
 | new (不带参数列表) | `new` |
 | 后置递增 | `++` |
@@ -750,7 +807,7 @@ if (counter > 50)
 | 减法 | `-` |
 | 按位左移 | `<<` |
 | 按位右移 | `>>` |
-| 无符号符号右移 | `>>>` |
+| 无符号右移 | `>>>` |
 | 小于 | `<` |
 | 小于或等于 | `<=` |
 | 大于 | `>` |
@@ -767,6 +824,8 @@ if (counter > 50)
 | 逻辑与 | `&&` |
 | 逻辑或 | `||` |
 | 空值合并 | `??` |
+| 条件（三元） | `? :` |
+| 赋值 | `= += -= *= /= %= **=` |
 | 逗号 | `,` |
 
 ### 还没有结束
@@ -789,22 +848,18 @@ if (counter > 50)
 
 ## 结构
 
-* 什么是函数？
-* 函数声明
-* 参数
-* 默认值
-* 函数表达式
+*   什么是函数？
+*   函数声明
+*   参数
+*   默认值
+*   函数表达式
 
 ## 目标
 
-* 理解函数
-* 学习如何声明函数
-* 学习函数参数
-* 理解函数表达式
-
-
-
-
+*   理解函数
+*   学习如何声明函数
+*   学习函数参数
+*   理解函数表达式
 
 通俗地来说，`function` 是一个返回特定值的代码块。它可以被比作脚本或程序内部的一个小型子程序，从另一个方法或函数中调用（或触发）。调用它的方法、函数或对象将使用被调用函数返回的值。函数应该始终返回一个值。如果没有指定返回值，则将返回 `undefined`。
 
@@ -820,11 +875,11 @@ function functionName(parameters) {
 }
 ```
 
-首先编写 `function` 关键字。这是为了告诉解释器你正在创建一个函数。名称紧随 `function` 关键字之后。它可以可以是任何名称，JavaScript 关键字除外，并记住它是区分大小写的。在括号内，你可以包含一个用逗号分隔的参数列表。这是一个小例子：
+首先编写 `function` 关键字。这是为了告诉解释器你正在创建一个函数。名称紧随 `function` 关键字之后。它可以是任何名称，JavaScript 关键字除外，并记住它是区分大小写的。在括号内，你可以包含一个用逗号分隔的参数列表。这是一个小例子：
 
 ```javascript
 function showGreeting() {
-  alert(‘Good morning!’
+  alert('Good morning!');
 }
 ```
 
@@ -834,9 +889,9 @@ function showGreeting() {
 
 嗯，函数如果没有从某处被调用（或触发），它是无法运行的。在调用函数时，你只需要引用函数名并包含它的可选参数。函数可以从以下任何方式被调用：
 
-* 当事件发生时
-* 当被直接调用时
-* 自执行
+*   当事件发生时
+*   当被直接调用时
+*   自执行
 
 ## 事件触发的函数示例
 
@@ -851,15 +906,16 @@ function showGreeting() {
   <p>The following code Calls a function from a button click</p>
   <script>
     function showGreeting() {
-      alert(‘Good morning!’);
+      alert('Good morning!');
     }
   </script>
-  <button onclick=”showGreeting()">Greeting</button>
+  <button onclick="showGreeting()">Greeting</button>
 </body>
 </html>
 ```
 
 2. 将文件保存为 HTML 扩展名，例如 `Chapter 5.1.html`。
+
 3. 双击文件在默认浏览器中打开它。
 
 正如你将看到的，页面正常加载，还没有弹出警告框。这是因为我们从按钮的点击事件中调用了该函数。如果没有点击按钮，函数将不会执行。
@@ -883,7 +939,7 @@ function showGreeting() {
   <p>The following code Calls a function just after the function is created</p>
   <script>
     function showGreeting() {
-      alert(‘Good morning!’);
+      alert('Good morning!');
     }
     showGreeting();
   </script>
@@ -892,6 +948,7 @@ function showGreeting() {
 ```
 
 2. 将文件保存为 HTML 扩展名，例如 `Chapter 5.2.html`。
+
 3. 双击文件在默认浏览器中打开它。
 
 ## 自执行函数示例
@@ -907,7 +964,7 @@ function showGreeting() {
   <p>The following code creates a function and invokes it automatically</p>
   <script>
     (function showGreeting(){
-      alert(‘Good morning!’);
+      alert('Good morning!');
     })()
   </script>
 </body>
@@ -915,6 +972,7 @@ function showGreeting() {
 ```
 
 2. 将文件保存为 HTML 扩展名，例如 `Chapter 5.3.html`。
+
 3. 双击文件在默认浏览器中打开它。
 
 这里的函数声明看起来有一点不同，原因是因为我们现在创建了一个函数表达式（我们将在本章稍后部分介绍函数表达式）。名为 `showGreeting` 的函数被创建并自动执行，无需手动调用。
@@ -934,19 +992,20 @@ function showGreeting() {
   <p>The following code creates a function with parameters and makes use of the parameters inside the function</p>
   <script>
     function showGreeting(from, message) { // arguments: from, message
-      alert(from + ‘: ‘ + message);
+      alert(from + ': ' + message);
     }
-    showGreeting(‘Ockert’, ‘Hello!’); // Outputs - Ockert: Hello!
-    showGreeting(‘BpB’, “Hi!”); // Outputs - BPB: Hi!
+    showGreeting('Ockert', 'Hello!'); // Outputs - Ockert: Hello!
+    showGreeting('BPB', "Hi!"); // Outputs - BPB: Hi!
   </script>
 </body>
 </html>
 ```
 
 2. 将文件保存为 HTML 扩展名，例如 `Chapter 5.4.html`。
+
 3. 双击文件在默认浏览器中打开它。
 
-声明了一个名为 `showGreeting` 带有两个参数 `from` 和 `message` 的函数。在代码块内部调用了警告框并将值复制到参数中。第一次调用 `showGreeting` 函数包括：`Ockert`、`Hello!`。第二次调用 `showGreeting` 函数包括：`BpB`、`Hi!`。当运行此脚本时，你将看到两个警告框相继弹出。第一个警告包含输入数据；第二个警告包含最后的输入数据。
+声明了一个名为 `showGreeting` 带有两个参数 `from` 和 `message` 的函数。在代码块内部调用了警告框并将值复制到参数中。第一次调用 `showGreeting` 函数包括：`Ockert`、`Hello!`。第二次调用 `showGreeting` 函数包括：`BPB`、`Hi!`。当运行此脚本时，你将看到两个警告框相继弹出。第一个警告包含输入数据；第二个警告包含最后的输入数据。
 
 ## 默认值
 
@@ -954,9 +1013,9 @@ function showGreeting() {
 
 ```javascript
 function showGreeting(from, message) { // arguments: from, message
-  alert(from + ‘: ‘ + message);
+  alert(from + ': ' + message);
 }
-showGreeting(‘Ockert’); // Outputs - Ockert: undefined
+showGreeting('Ockert'); // Outputs - Ockert: undefined
 ```
 
 这是完全可以的，解释器不会产生错误。这就是默认值发挥作用的地方。你可以给参数一个默认值，这样即使没有提供值，它仍然有一个可以使用的设置默认值。
@@ -964,10 +1023,10 @@ showGreeting(‘Ockert’); // Outputs - Ockert: undefined
 这是一个小例子：
 
 ```javascript
-function showGreeting(from, message = ‘Hey there!’) { // arguments: from, message
-  alert(from + ‘: ‘ + message);
+function showGreeting(from, message = 'Hey there!') { // arguments: from, message
+  alert(from + ': ' + message);
 }
-showGreeting(‘Ockert’); // Outputs - Ockert: Hey there!
+showGreeting('Ockert'); // Outputs - Ockert: Hey there!
 ```
 
 ## 函数表达式
@@ -975,7 +1034,7 @@ showGreeting(‘Ockert’); // Outputs - Ockert: Hey there!
 JavaScript 函数也可以通过表达式定义，并且通常存储在变量中。该变量随后可以被作函数使用。这是一个小例子：
 
 ```javascript
-var answer = function (operand1, operand2) {return operand1 * operand2};
+var answer = function (operand1, operand2) { return operand1 * operand2; };
 ```
 
 在 `Chapter 12: Variables` 中，我们将对变量和函数进行更详细的介绍。
@@ -983,10 +1042,6 @@ var answer = function (operand1, operand2) {return operand1 * operand2};
 ## 总结
 
 在本章中，我们通过一些很好的示例学习了 `JavaScript` 函数。我们学习了 `Functions` 如何改进我们的代码，以及如何通过参数和默认值进一步改进它。在本书稍后部分（在 `Chapter 12: Variables` 中），我们将再次回到函数并探索函数表达式的世界。
-
-
-
-
 
 在下一章中，我们将深入探讨 JavaScript 类。你将学习如何创建 JavaScript 类、属性、方法以及混入（Mixins）。你还将了解 JavaScript 中现有的类以及继承。
 
@@ -1023,22 +1078,22 @@ JavaScript 类创建了其子对象的结构。虽然 JavaScript 并不是一种
 
 ## 结构
 
-* 什么是类？
-    * 创建类
-    * 类声明
-    * 类表达式
-* 属性
-    * 属性的属性
-* 方法
-    * 静态方法
-* 继承
+*   什么是类？
+    *   创建类
+    *   类声明
+    *   类表达式
+*   属性
+    *   属性的属性
+*   方法
+    *   静态方法
+*   继承
 
 ## 目标
 
-* 学习什么是类
-* 理解属性的概念
-* 理解方法的概念
-* 学习什么是继承
+*   学习什么是类
+*   理解属性的概念
+*   理解方法的概念
+*   学习什么是继承
 
 ## 什么是类？
 
@@ -1048,8 +1103,8 @@ JavaScript 类创建了其子对象的结构。虽然 JavaScript 并不是一种
 
 在 JavaScript 中创建类本质上只有两种方式，它们是：
 
-* 声明类
-* 使用类表达式
+*   声明类
+*   使用类表达式
 
 让我们来看看每种示例。
 
@@ -1086,7 +1141,7 @@ class Student {
       }
     }
     // 使用:
-    student = new Student('ckert', 'JavaScript');
+    student = new Student('Ockert', 'JavaScript');
     student.showInfo();
   </script>
 </body>
@@ -1094,7 +1149,9 @@ class Student {
 ```
 
 1. 以 HTML 扩展名保存文件，例如 `Chapter 6.1.html`。
+
 2. 双击文件在默认浏览器中打开它。
+
 将出现一个与下一个截图类似的警告框：`Img_06_01.jpg`
 
 **图 6.1：** 类声明的运行
@@ -1125,7 +1182,7 @@ class Student {
       }
     };
     // 使用:
-    var student = new Student('ckert', 'JavaScript');
+    var student = new Student('Ockert', 'JavaScript');
     student.showInfo();
   </script>
 </body>
@@ -1133,6 +1190,7 @@ class Student {
 ```
 
 1. 以 HTML 扩展名保存文件，例如 `Chapter 6.2.html`。
+
 2. 双击文件在默认浏览器中打开它。
 
 好的，这里发生了什么？你通过使用表达式创建了一个匿名类。然后你创建了一个 `constructor`，初始化了参数并创建了 `showInfo` 函数来显示输入的值。
@@ -1155,7 +1213,7 @@ class Student {
       }
     };
     // 使用:
-    var newStudent = new student('ckert', 'JavaScript');
+    var newStudent = new student('Ockert', 'JavaScript');
     newStudent.showInfo();
   </script>
 </body>
@@ -1163,15 +1221,12 @@ class Student {
 ```
 
 1. 以 HTML 扩展名保存文件，例如 `Chapter 6.3.html`。
+
 2. 双击文件在默认浏览器中打开它。
 
 如你所见，它与之前的两个示例非常相似，但仍然有所不同。你在类表达式中为类指定名称，创建了构造函数，然后创建了一个基于链接 `Student` 类的 `newStudent` 对象。
 
 ## 属性
-
-
-
-
 
 属性描述了一个对象。任何对象都具有某些可以设置和检索的属性。以汽车对象为例，可以为汽车设置许多属性，这些包括：
 
@@ -1196,9 +1251,7 @@ OR
 
 OR
 
-`objectName[expression];      // newStudent = "studentName";`
-
-`student[newStudent]`
+`objectName[expression];      // newStudent = "studentName"; student[newStudent]`
 
 你可能想知道如何向对象添加新属性呢？嗯，这非常简单！你只需要给它一个值即可。这里有一个示例：
 
@@ -1206,7 +1259,7 @@ OR
 
 等号左侧包含对象，然后是它的属性。等号右侧包含将存储在属性中的值。
 
-# 属性的属性 #toc.xhtml_s104a
+### 属性的属性
 
 属性最常见的特征是它的值和名称。你通过它的名称来访问属性，但它提供了请求的值。这里就变得复杂了！某些属性是不可写入的，这意味着它们是只读的且不能更改。某些属性无法通过循环遍历。它们必须是可枚举的（enumerable）。某些属性不能被删除。
 
@@ -1247,6 +1300,7 @@ OR
 ```
 
 2.  以 HTML 扩展名保存文件，例如 `Chapter 6.4.html`。
+
 3.  双击文件在默认浏览器中打开它。
 
 在上面的代码段中，你创建了一个对象。然后在 `showInfo` 方法中，你利用 `getOwnPropertyDescriptor` 方法来调查 `newStudent` 对象中 `studentName` 属性的属性。
@@ -1265,7 +1319,7 @@ OR
 Object.defineProperty(newStudent, "studentName", {
   writable: false
 });
-newStudent.studentName = "Test"; // Error: Cannot assign to read only property ‘studentName’
+newStudent.studentName = "Test"; // Error: Cannot assign to read only property 'studentName'
 ```
 
 如果在浏览器中运行上述代码段的代码，产生的错误：
@@ -1276,7 +1330,7 @@ newStudent.studentName = "Test"; // Error: Cannot assign to read only property �
 
 在第 8 章：属性中，我们将更详细地讨论 getter（getters）和 setter（setters）、标记（flags）和描述符（descriptors）。
 
-# 方法 #toc.xhtml_s105a
+## 方法
 
 任何编程语言中的方法都意味着对象可以做什么。因此，在我们持续的学生对象示例上下文中，学生对象可以考试、通过或未通过考试、旷课、上到或不交学费。
 
@@ -1306,20 +1360,32 @@ newStudent.studentName = "Test"; // Error: Cannot assign to read only property �
 ```
 
 1.  打开你喜欢的文本编辑器，并输入以下 HTML 和 JavaScript 代码。
+
 2.  以 HTML 扩展名保存文件，例如 `Chapter 6.5.html`。
+
 3.  双击文件在默认浏览器中打开它。
 
 你创建了带有其属性的类。`AllInfo` 方法返回一个包含学生姓名、学生课程和一些组成漂亮句子的文本字符串。然后你创建了一个名为 `newStudent` 的新学生对象，赋予了它初始化值，并立即调用了 `AllInfo` 函数。最后，alert 框显示了结果。
 
-# 静态方法 #toc.xhtml_s106a
+### 静态方法
 
 静态方法与普通方法略有不同。静态方法是在类本身中创建的，而不是在使用类的对象（原型）上。这意味着你不能在对象上调用静态方法，但可以在类上调用。
 
 以下示例显示了静态方法的用法：
 
+```javascript
+class Student {
+  constructor(name) {
+    this.name = name;
+  }
+  static createAnonymous() {
+    return new Student("Anonymous");
+  }
+}
 
-
-
+let anon = Student.createAnonymous();
+console.log(anon.name); // Anonymous
+```
 
 ## 继承
 
@@ -1329,7 +1395,7 @@ newStudent.studentName = "Test"; // Error: Cannot assign to read only property �
 
 另一个例子是你从父母那里继承特征。你可能拥有母亲的头发和眼睛，可能拥有父亲的性格，但你仍然是独一无二的，你依然是你自己。这个过程被称为继承。
 
-在`Chapter 7: Prototypes` 中，我们将进一步探索继承，并使用 Mixins（混合器）来在不需要继承的情况下使用不同类的方法。
+在 `Chapter 7: Prototypes` 中，我们将进一步探索继承，并使用 Mixins（混合器）来在不需要继承的情况下使用不同类的方法。
 
 ## 结论
 
@@ -1355,16 +1421,16 @@ JavaScript 中的原型使我们能够让代码更加面向对象。JavaScript �
 
 ## 结构
 
-- 什么是原型？
-- 原型继承
-- Mixins
+*   什么是原型？
+*   原型继承
+*   Mixins
 
 ## 目标
 
-- 学习不同类型的原型
-- 理解原型的需求
-- 理解原型继承
-- 理解 Mixins
+*   学习不同类型的原型
+*   理解原型的需求
+*   理解原型继承
+*   理解 Mixins
 
 ## 什么是原型？
 
@@ -1372,33 +1438,33 @@ JavaScript 中的原型使我们能够让代码更加面向对象。JavaScript �
 
 JavaScript 中有两种原型，即 `prototype` 和 `[[Prototype]]`：
 
-- `prototype`：原型被赋值为你在 JavaScript 中创建的任何函数的属性，正如 `Chapter 6: JavaScript Classes` 中解释的那样。
-- `[[Prototype]]`：每个由运行上下文访问的对象都有一个 `[[Prototype]]` 属性，当读取对象的某个属性不可用时，就会读取它。
+*   `prototype`：原型被赋值为你在 JavaScript 中创建的任何函数的属性，正如 `Chapter 6: JavaScript Classes` 中解释的那样。
+*   `[[Prototype]]`：每个由运行上下文访问的对象都有一个 `[[Prototype]]` 属性，当读取对象的某个属性不可用时，就会读取它。
 
 好了，这现在听起来真的不太通，对吗？不。让我们仔细观察。
 
 我们在 `Chapter 6: JavaScript Classes` 中学习过，你可以使用构造函数来创建对象。来看下面的示例：
 
-```
+```javascript
 function Student(studentFirstName, studentLastName) {
-  this.studentFirstName = studentFirstName,
-  this.studentLastName = studentLastName,
+  this.studentFirstName = studentFirstName;
+  this.studentLastName = studentLastName;
   this.studentFullName = function() {
     return this.studentFirstName + " " + this.studentLastName;
   }
 }
 
 var student1 = new Student("Ockert", "du Preez");
-var student2 = new Student("BpB", "Publications");
+var student2 = new Student("BPB", "Publications");
 console.log(student1);
-console.log(student2)
+console.log(student2);
 ```
 
 函数 `Student` 是 `Student` 对象的构造函数。它包含了名和姓参数，或者在本例中，是属性。`studentFullName` 是一个组合名和姓字符串的函数。
 
-然后了两个 `Student` 对象：`student1` 和 `student2`，结果显示在控制台窗口中。
+然后创建了两个 `Student` 对象：`student1` 和 `student2`，结果显示在控制台窗口中。
 
-现在，看这段代码，似乎没有任何异常之处。确实如此。它创建了两个 `Student` 构造函数的副本，分别用于 `student1` 和 `student2`。这意味着使用 `Student` 构造函数创建的每个对象都将拥有它自己的方法和属性副本。这正是问题出现的地方。构造函数中的 `studentFirstName` 方法通过拥有它的两个实例浪费了内存，并且在每个独立的对象中都执行相同的操作。
+现在，看这段代码，似乎没有任何异常之处。确实如此。它创建了两个 `Student` 构造函数的副本，分别用于 `student1` 和 `student2`。这意味着使用 `Student` 构造函数创建的每个对象都将拥有它自己的方法和属性副本。这正是问题出现的地方。构造函数中的 `studentFullName` 方法通过拥有它的两个实例浪费了内存，并且在每个独立的对象中都执行相同的操作。
 
 我们通过创建原型来解决这个问题。
 
@@ -1406,15 +1472,12 @@ console.log(student2)
 
 `Figure 7.1` 显示 `Student` 构造函数包含一个指向原型对象的原型属性。该原型对象包含一个指向回函数的构造函数。
 
-
-
-
 函数的 `prototype` 属性是一个对象，它包含两个属性：
 
-- `constructor` 属性：它指向 `Student` 函数。
-- `__proto__` 属性：它指向构造函数的原型对象。
+*   `constructor` 属性：它指向 `Student` 函数。
+*   `__proto__` 属性：它指向构造函数的原型对象。
 
-## 在原型对象上添加属性
+### 在原型对象上添加属性
 
 通过在原型对象上附加属性和方法，你可以让使用该构造函数创建的所有对象都共享这些内容。
 
@@ -1429,20 +1492,20 @@ console.log(student2)
 <p>Add properties to prototype object example</p>
 <script>
 function Student(studentFirstName, studentLastName) {
-  this.studentFirstName = studentFirstName,
-  this.studentLastName = studentLastName,
+  this.studentFirstName = studentFirstName;
+  this.studentLastName = studentLastName;
   this.studentFullName = function() {
-    return this.studentFirstName + “ “ + this.studentLastName;
+    return this.studentFirstName + " " + this.studentLastName;
   }
 }
-var student1 = new Student(“Ockert”, “du Preez”);
-var student2 = new Student(“BpB”, “Publications”);
-//Method 1 - dot notation
-Student.prototype.studentID = ‘Student001’
-console.log(Student.prototype.studentID)
-//Method 2 - square brackets
-Student.prototype["studentCourse"] = ‘JavaScript’
-console.log(Student.prototype)
+var student1 = new Student("Ockert", "du Preez");
+var student2 = new Student("BPB", "Publications");
+// Method 1 - dot notation
+Student.prototype.studentID = 'Student001';
+console.log(Student.prototype.studentID);
+// Method 2 - square brackets
+Student.prototype["studentCourse"] = 'JavaScript';
+console.log(Student.prototype);
 </script>
 </body>
 </html>
@@ -1478,19 +1541,32 @@ console.log(Student.prototype)
 <h1>prototypal inheritance example</h1>
 <p>prototypal inheritance example</p>
 <script>
-function Student (studentFirstName, studentLastName) {
-  this.studentFirstName = studentFirstName,
-  this.studentLastName = studentLastName
+function Student(studentFirstName, studentLastName) {
+  this.studentFirstName = studentFirstName;
+  this.studentLastName = studentLastName;
 }
-Student.prototype.attendClass = function (timeIn, timeOut) {
-  console.log(this.studentFirstName + ‘ arrived for class at: ‘ + timeIn + ‘ and left at ‘ + timeOut)
+Student.prototype.attendClass = function(timeIn, timeOut) {
+  console.log(this.studentFirstName + ' arrived for class at: ' + timeIn + ' and left at ' + timeOut);
+};
+Student.prototype.writeExam = function() {
+  console.log(this.studentFirstName + ' is writing exam.');
+};
+
+function ProgrammingStudent(studentFirstName, studentLastName, language) {
+  Student.call(this, studentFirstName, studentLastName);
+  this.language = language;
 }
-Student.prototype.writeExam = function () {
-  console.log(this.studentFirstName + ‘ is writing exam.’)
-}
-const student1 = new Student('Ockert’, ‘du Preez’);
-student1.attendClass(‘10:00’, ‘14:00’);
-student1.writeExam()
+ProgrammingStudent.prototype = Object.create(Student.prototype);
+ProgrammingStudent.prototype.constructor = ProgrammingStudent;
+
+const student1 = new Student('Ockert', 'du Preez');
+student1.attendClass('10:00', '14:00');
+student1.writeExam();
+
+const progStudent = new ProgrammingStudent('Jane', 'Doe', 'JavaScript');
+progStudent.attendClass('09:00', '13:00');
+progStudent.writeExam();
+console.log(progStudent.language);
 </script>
 </body>
 </html>
@@ -1504,7 +1580,7 @@ student1.writeExam()
 
 ![](img/Img_07_05.jpg)
 
-**图 7.5：****
+**图 7.5：** 原型继承示例输出
 
 在上面的练习中，你使用函数创建了 `Student` 并包含了 `studentFirstName` 和 `studentLastName` 参数。然后你向原型添加了两个方法。其中一个是 `attendClass`，另一个是 `writeExam`。正如你所见，`ProgrammingStudent` 类在创建时没有 `attendClass` 和 `writeExam` 方法，但现在包含了它们。这是因为 `ProgrammingStudent` 类的原型通过这一行代码从 `Student` 类继承了方法和属性：
 
@@ -1528,46 +1604,45 @@ JavaScript 的一个局限性是我们只能继承一个对象，因为一个对
 <h1>Mixin example</h1>
 <p>Mixin example</p>
 <script>
+// mixin
+let HumanMixin = {
+  cry() {
+    alert('Stop crying');
+  },
+  laugh() {
+    alert('Be happy');
+  }
+};
+
+function Student(studentFirstName, studentLastName) {
+  this.studentFirstName = studentFirstName;
+  this.studentLastName = studentLastName;
+}
+Student.prototype.attendClass = function(timeIn, timeOut) {
+  console.log(this.studentFirstName + ' arrived for class at: ' + timeIn + ' and left at ' + timeOut);
+};
+Student.prototype.writeExam = function() {
+  console.log(this.studentFirstName + ' is writing exam.');
+};
+
+function ProgrammingStudent(studentFirstName, studentLastName, language) {
+  Student.call(this, studentFirstName, studentLastName);
+  this.language = language;
+}
+ProgrammingStudent.prototype = Object.create(Student.prototype);
+ProgrammingStudent.prototype.constructor = ProgrammingStudent;
+
+// copy the methods from HumanMixin
+Object.assign(ProgrammingStudent.prototype, HumanMixin);
+
+const progStudent = new ProgrammingStudent('Ockert', 'du Preez', 'JavaScript');
+progStudent.laugh();
 </script>
 </body>
 </html>
 ```
 
-
-
-
-```javascript
-// mixin
-let HumanMixin = {
-  cry() {
-    alert('Stop crying’);
-  },
-  laugh() {
-    alert('Be happy’);
-  }
-};
-
-function Student (studentFirstName, studentLastName) {
-  this.studentFirstName = studentFirstName,
-  this.studentLastName = studentLastName
-}
-Student.prototype.attendClass = function (timeIn, timeOut) {
-  console.log(this.studentFirstName + ‘ arrived for class at: ‘ + timeIn + ‘ and left at ‘ + timeOut)
-}
-Student.prototype.writeExam = function () {
-  console.log(this.studentFirstName + ‘ is writing exam.’)
-}
-function ProgrammingStudent(studentFirstName, studentLastName, language) {
-  Student.call(this)
-  this.language = language
-}
-ProgrammingStudent.prototype = Object.create(Student.prototype)
-// copy the methods from HumanMixin
-Object.assign(ProgrammingStudent.prototype, HumanMixin);
-const progStudent = new ProgrammingStudent('Ockert’, ‘du Preez’, ‘JavaScript’).laugh();
-```
-
-2 将文件保存为 HTML 扩展名，例如 `Chapter 7.6.html`。
+2. 将文件保存为 HTML 扩展名，例如 `Chapter 7.6.html`。
 
 3. 双击文件在默认浏览器中打开它。
 
@@ -1585,7 +1660,7 @@ const progStudent = new ProgrammingStudent('Ockert’, ‘du Preez’, ‘JavaSc
 
 `Object.assign(ProgrammingStudent.prototype, HumanMixin);`
 
-`const progStudent = new ProgrammingStudent('Ockert’, ‘du Preez’, ‘JavaScript’).laugh();`
+`const progStudent = new ProgrammingStudent('Ockert', 'du Preez', 'JavaScript'); progStudent.laugh();`
 
 ## 结论
 
@@ -1613,25 +1688,27 @@ JavaScript 中的属性允许你在应用程序生命周期内存储和设置各
 
 ## 结构
 
-* 什么是属性？
-* 属性的属性
-* Getter 和 setter
+*   什么是属性？
+*   属性的属性
+*   Getter 和 setter
 
 ## 目标
 
-* 学习什么是属性
-* 理解属性
-* 创建属性
+*   学习什么是属性
+*   理解属性
+*   创建属性
 
 ## 什么是属性？
 
 在*第 6 章：类*中，我们看到过对象具有某些属性。例如，这里有属性包括：
 
-* 品牌 (Make)
-* 型 (Model)
-* 变速箱 (Transmission)
-* 颜色 (Color)
-*  (Number)
+*   品牌
+*   型号
+*   变速箱
+*   颜色
+*   座位数量
+
+
 
 属性最常见的特征是它的值和名称。为了访问任何属性的特征，你可以使用 `getOwnPropertyDescriptor` 方法。你提供想要查询的对象，然后是属性名。
 
@@ -1649,13 +1726,13 @@ JavaScript 中的属性允许你在应用程序生命周期内存储和设置各
         this.studentCourse = studentCourse;
       }
       showInfo() {
-        let descriptor = Object.getOwnPropertyDescriptor(newStudent, ‘studentName’);
+        let descriptor = Object.getOwnPropertyDescriptor(newStudent, 'studentName');
         alert(JSON.stringify(descriptor, null, 2));
       }
     };
 
     // Usage:
-    var newStudent = new student('Ockert’, ‘JavaScript’);
+    var newStudent = new student('Ockert', 'JavaScript');
     newStudent.showInfo();
   </script>
 </body>
@@ -1673,7 +1750,7 @@ JavaScript 中的属性允许你在应用程序生命周期内存储和设置各
 这些都取决于某个特定属性的特征（或标志）。某些属性是只读的，无法更改。设置属性时，使用点符号法。这是一个示例：
 
 ```javascript
-studentCourse = “JavaScript”;
+studentCourse = "JavaScript";
 ```
 
 这非常简单！下方将显示一个类似 `Figure 7.7` 的警框：
@@ -1682,22 +1759,18 @@ studentCourse = “JavaScript”;
 
 **图 7.7:** Mixin 方法
 
-
-
-
-
 **图 8.1：** `studentName` 属性
 
 要更改这些属性，你应该使用 `Object` 类的 `defineProperty` 方法。下一个示例将 `studentName` 属性的 `writable` 属性改为 `false`。这意味着该属性现在是只读的，无法通过代码进行更改：
 
 ```javascript
-Object.defineProperty(newStudent, “studentName”, {
-writable: false
-}); own
+Object.defineProperty(newStudent, "studentName", {
+  writable: false
+});
 ```
 
 ```javascript
-newStudent.studentName = “Test”; // Error: 无法赋值给只读属性 ‘studentName’ own
+newStudent.studentName = "Test"; // Error: 无法赋值给只读属性 'studentName'
 ```
 
 *图 8.2* 显示了在浏览器中运行类似上述代码段的代码时的错误：
@@ -1708,7 +1781,7 @@ newStudent.studentName = “Test”; // Error: 无法赋值给只读属性 ‘st
 
 现在我们对属性有了正确的理解，让我们继续为属性创建 getters（get 器）和 setters（set 器）。
 
-# Getters and setters](#toc.xhtml_s124a)
+## Getters and setters
 
 到为止，在书中我主要处理的是数据属性。另一种类型的属性被称为访问器属性（accessor property）。这意味着这些类型的属性实际上是能够获取和设置值的函数，但从外部看是普通的属性。
 
@@ -1740,16 +1813,16 @@ let object = {
     <p>Property Getters and Setters example</p>
     <script>
     let Student = {
-        studentName: “Ockert”,
-        studentSurname: “du Preez”,
+        studentName: "Ockert",
+        studentSurname: "du Preez",
         get studentFullName() {
-            return ‘${this.studentName} ${this.studentSurname}’;
+            return `${this.studentName} ${this.studentSurname}`;
         },
         set studentFullName(value) {
-            [this.studentName, this.studentSurname] = value.split(“ “);
+            [this.studentName, this.studentSurname] = value.split(" ");
         }
     };
-    Student.studentFullName = “BpB Publications”;
+    Student.studentFullName = "BpB Publications";
     alert(Student.studentName); //BPB
     alert(Student.studentFullName); //BpB Publications
     </script>
@@ -1778,15 +1851,12 @@ let object = {
 *   **enumerable**: 属性是否可以被列出。
 *   **configurable**: 允许删除属性。
 
-
-
-
-
 JavaScript 语言的一个优秀特性是它能够异步地执行任务。同步任务可能会阻塞其他需要的任务，从而延迟指令的执行。能够独立地执行任务而无需担心它们何时完成是非常有帮助的。这种设置也非常简单。
 
 在本节中，你将学习如何创建 promises 以在你的页面上启用更多 `async` 特性。我们还将查看回调函数（callbacks）以及如何链多个 promises。
 
 ## 结构
+
 * JavaScript Promises 描述
 * 同步与异步方法
 * Promise 链式
@@ -1795,12 +1865,14 @@ JavaScript 语言的一个优秀特性是它能够异步地执行任务。同步
 * Promise 方法
 
 ## 目标
+
 * 学习什么是 Promises
 * 理解同步方法与异步方法之间的区别
 * 理解宏任务与微任务之间的区别
 * 学习如何让多个 promise 协同工作
 
 ## JavaScript Promises 描述
+
 字典对名词 `promise`（承诺）的解释如下：一种承诺将做某事或某事将会发生的保证。那么，当双方之间达成一个承诺时会发生什么呢？
 
 承诺给了一方某事将会完成的保证。任务是由承诺方完成还是其他人完成并不重要。基于给出的保证，另一方可以据此制定计划。
@@ -1814,9 +1886,11 @@ JavaScript 语言的一个优秀特性是它能够异步地执行任务。同步
 在这种情况下，一方应该设定一个时间阈值。例如：如果承诺方在给定时间内没有响应，承诺方可能会意识到由于不可预见的情况，承诺可能无法被履行。即使如此，如果承诺方的回复比预期时间要晚，也没关系，因为承诺方可能已经制定了备用计划。
 
 ## JavaScript promises
+
 JavaScript promise 的工作方式与上述解释的普通 promise 类似。你可以将处理程序与异步操作的成功值或失败原因相关联。异步方法不是立即返回成功或失败值，而是返回一个 promise，以便最终提供适当的值。
 
 一个 Promise 有三种状态：
+
 * `pending`：这是 promise 的初始状态。promise 既没有完成（fulfilled）也没有被拒绝（另外两个状态）。
 * `resolved`：这意味着 promise 的操作已成功完成。
 * `rejected`：这意味着 promise 的操作失败了。
@@ -1826,6 +1900,7 @@ JavaScript promises 也可以被一个值完成，也可以被一个原因（一
 以下示例展示了一个已解析 promise 的运行：
 
 1. 打开你喜欢的文本编辑器并输入以下 HTML 和 JavaScript 代码：
+
 ```html
 <html>
 <body>
@@ -1833,17 +1908,19 @@ JavaScript promises 也可以被一个值完成，也可以被一个原因（一
 <p>Promise resolve example</p>
 <script>
 let promise = new Promise(function(resolve, reject) {
-setTimeout(() => resolve(“Success!”), 5000); //5000 毫秒 = 5 秒
+setTimeout(() => resolve("Success!"), 5000); //5000 毫秒 = 5 秒
 });
 promise.then(
-result => alert(result), // 如果成功， 5 秒后显示“Success!”
+result => alert(result), // 如果成功， 5 秒后显示"Success!"
 error => alert(error) // 不运行
 );
 </script>
 </body>
 </html>
 ```
+
 2. 以 HTML 扩展保存文件，例如 `Chapter 9.1.html`。
+
 3. 双击文件在默认浏览器中打开。
 
 在上述代码段中，你创建了一个带有两个参数——`resolve` 和 `reject` 的新 `Promise`。在 Promise 内部，你利用内置的 JavaScript 定时函数 `setTimeout` 来启动计时器。5 秒后，它应该显示消息 `Success!`。
@@ -1851,6 +1928,7 @@ error => alert(error) // 不运行
 当 `Promise` 完成其任务时，它将返回一个拒绝消息或一个解析消息。在这种情况下，将弹出一个带有 `Success!` 消息的警告框。看起来就像下方的 [图 9.1]：
 
 ![](img/Img_09_01.jpg)
+
 **图 9.1：** Resolved Promise
 
 接下来我们来看一个拒绝 promise 的示例。
@@ -1858,6 +1936,7 @@ error => alert(error) // 不运行
 以下示例展示了一个被拒绝 promise 的运行：
 
 1. 打开你喜欢的文本编辑器并输入以下 HTML 和 JavaScript 代码：
+
 ```html
 <html>
 <body>
@@ -1865,27 +1944,31 @@ error => alert(error) // 不运行
 <p>Promise resolve example</p>
 <script>
 let promise = new Promise(function(resolve, reject) {
-setTimeout(() => reject(new Error(“Failure!”)), 5000); //5000 毫秒 = 5 秒
+setTimeout(() => reject(new Error("Failure!")), 5000); //5000 毫秒 = 5 秒
 });
 promise.then(
 result => alert(result), // 不运行
-error => alert(error) // 5 秒后显示“Error: Failure!”
+error => alert(error) // 5 秒后显示"Error: Failure!"
 );
 </script>
 </body>
 </html>
 ```
+
 2. 以 HTML 扩展保存文件，例如 `Chapter 9.2.html`。
+
 3. 双击文件在默认浏览器中打开。
 
 当 `Promise` 完成其任务时，它将返回一个拒绝消息或一个解析消息。在这种情况下，会显示一个带有 `Error: Failure!` 消息的警告框。看起来就像下方的 [图 9.2]：
 
 ![](img/Img_09_02.jpg)
+
 **图 9.2：** Rejected Promise
 
 我之前提过异步和同步方法及任务，但它们究竟是什么？让我们详细介绍一下。
 
 ## 同步与异步方法
+
 假设你开始了自己的纸蛋糕业务。规模相对较小，所以你与客户有直接互动。他们会订一个或两个蛋糕，你烘焙相应数量的蛋糕，然后交付蛋糕。这是同步行为，因为它是一个“请求并获取”的场景。
 
 进一步想象，你的蛋糕非常畅销，你变得越来越忙，甚至还提到了特许经营！你无法同时出现在不同的地方。你无法同时为不同的客户服务。你需要帮助。这就是异步性的用武之地。异步允许你将订单放在等待列表中，并在你能够完成的时候完成它们。
@@ -1899,28 +1982,28 @@ error => alert(error) // 5 秒后显示“Error: Failure!”
 以下示例展示了同步调用的运行：
 
 1. 打开你喜欢的文本编辑器并输入以下 HTML 和 JavaScript 代码：
+
 ```html
 <html>
 <body>
 <h1>Synchronous methods example</h1>
 <p>Synchronous methods example</p>
 <script>
-console.log(“First”);
-console.log(“Second”);
-console.log(“Third”);
+console.log("First");
+console.log("Second");
+console.log("Third");
 </script>
 </body>
 </html>
 ```
+
 2. 以 HTML 扩展保存文件，例如 `Chapter 9.3.html`。
+
 3. 双击文件在默认浏览器中打开。
 
+4. 如果浏览器是 Google Chrome，请按 `Ctrl` + `Shift` + `J` 打开控制台窗口。
 
-
-
-3.  双击文件在默认浏览器中打开它。如果浏览器是 Google Chrome，请按 `Ctrl` + `Shift` + `J` 打开控制台窗口。
-
-指令将一个接一个地按顺序执行。万遇其中某条指令执行耗时过长，下一条指令将等待其完成后再运行。你的控制台窗口应该类似于下方的`Figure 9.3*`：
+指令将一个接一个地按顺序执行。万遇其中某条指令执行耗时过长，下一条指令将等待其完成后再运行。你的控制台窗口应该类似于下方的 `Figure 9.3`：
 
 ![](img/Img_09_03.jpg)
 
@@ -1930,28 +2013,28 @@ console.log(“Third”);
 
 1.  打开你选择的文本编辑器，并输入以下 HTML 和 JavaScript 代码：
 
-    ```html
-    <html>
-    <body>
-    <h1>Asynchronous methods example</h1>
-    <p>Asynchronous methods example</p>
-    <script>
-    console.log(“Hello”)
-    setTimeout(function()
-    {
-    console.log(“Ockert”)
-    }, 3000);
-    console.log(“My name is “)
-    </script>
-    </body>
-    </html>
-    ```
+```html
+<html>
+<body>
+<h1>Asynchronous methods example</h1>
+<p>Asynchronous methods example</p>
+<script>
+console.log("Hello")
+setTimeout(function()
+{
+console.log("Ockert")
+}, 3000);
+console.log("My name is ")
+</script>
+</body>
+</html>
+```
 
 2.  用 HTML 扩展名保存文件，例如 `Chapter 9.4.html`。
 
 3.  双击文件在默认浏览器中打开它。如果浏览器是 Google Chrome，请按 `Ctrl` + `Shift` + `J` 打开控制台窗口。
 
-第一个执行的语句将向控制台窗口打印 `Hello` 的语句。它会启动 `Timer`，但仍会继续执行下一条打印 `My name` 的语句。当计时器完成后，它将打印我的名字。如你所见，它并没有等待计时器完成任务再继续。你的控制台窗口应该类似于下方的`Figure 9.4*`：
+第一个执行的语句将向控制台窗口打印 `Hello` 的语句。它会启动 `Timer`，但仍会继续执行下一条打印 `My name` 的语句。当计时器完成后，它将打印我的名字。如你所见，它并没有等待计时器完成任务再继续。你的控制台窗口应该类似于下方的 `Figure 9.4`：
 
 ![](img/Img_09_04.jpg)
 
@@ -1967,46 +2050,46 @@ console.log(“Third”);
 
 1.  打开你选择的文本编辑器，并输入以下 HTML 和 JavaScript 代码：
 
-    ```html
-    <html>
-    <body>
-    <h1>Chaining promises example</h1>
-    <p>Chaining Promises example</p>
-    <script>
-    var Method_1 = function() {
-    var promise = new Promise(function(resolve, reject){
-    setTimeout(function() {
-    console.log(‘Method_1 Done.’);
-    resolve({string: ‘1’});
-    }, 3000);
-    });
-    return promise;
-    };
-    var Method_2 = function(strTemp) {
-    var promise = new Promise(function(resolve, reject){
-    setTimeout(function() {
-    console.log(‘Method_2 Done.’);
-    resolve({newString: strTemp.string + ‘2’});
-    }, 3000);
-    });
-    return promise;
-    };
-    var Method_3 = function(strTemp) {
-    var promise = new Promise(function(resolve, reject){
-    setTimeout(function() {
-    console.log(‘Method_3 Done.’);
-    resolve({endString: strTemp.newString});
-    }, 3000);
-    });
-    return promise;
-    };
-    Method_1()
-    .then(Method_2)
-    .then(Method_3);
-    </script>
-    </body>
-    </html>
-    ```
+```html
+<html>
+<body>
+<h1>Chaining promises example</h1>
+<p>Chaining Promises example</p>
+<script>
+var Method_1 = function() {
+var promise = new Promise(function(resolve, reject){
+setTimeout(function() {
+console.log('Method_1 Done.');
+resolve({string: '1'});
+}, 3000);
+});
+return promise;
+};
+var Method_2 = function(strTemp) {
+var promise = new Promise(function(resolve, reject){
+setTimeout(function() {
+console.log('Method_2 Done.');
+resolve({newString: strTemp.string + '2'});
+}, 3000);
+});
+return promise;
+};
+var Method_3 = function(strTemp) {
+var promise = new Promise(function(resolve, reject){
+setTimeout(function() {
+console.log('Method_3 Done.');
+resolve({endString: strTemp.newString});
+}, 3000);
+});
+return promise;
+};
+Method_1()
+.then(Method_2)
+.then(Method_3);
+</script>
+</body>
+</html>
+```
 
 2.  用 HTML 扩展名保存文件，例如 `Chapter 9.5.html`。
 
@@ -2016,7 +2099,7 @@ console.log(“Third”);
 
 这些信息随后并没有被真正使用，但字符串会不断增长。如果发生了某些错误，`resolve` 参数将失败，Promise 也会失败。
 
-每个方法都包含一个计时器，在三秒后打印一段文本。如果一切进展顺利，你的控制台窗口应该类似于下方的`Figure 9.5*`：
+每个方法都包含一个计时器，在三秒后打印一段文本。如果一切进展顺利，你的控制台窗口应该类似于下方的 `Figure 9.5`：
 
 ![](img/Img_09_05.jpg)
 
@@ -2036,24 +2119,24 @@ console.log(“Third”);
 
 1.  打开你选择的文本编辑器，并输入以下 HTML 和 JavaScript 代码：
 
-    ```html
-    <html>
-    <body>
-    <h1>Callback example</h1>
-    <p>Callback example</p>
-    <script>
-    function DisplayName(name, surname, callback){
-    document.write(`Welcome ${name + surname}!<br>`);
-    callback();
-    }
-    function EnjoyMessage(){
-    document.write(‘Enjoy.’);
-    }
-    DisplayName('Ockert’, du Preez’, EnjoyMessage);
-    </script>
-    </body>
-    </html>
-    ```
+```html
+<html>
+<body>
+<h1>Callback example</h1>
+<p>Callback example</p>
+<script>
+function DisplayName(name, surname, callback){
+document.write(`Welcome ${name + surname}!<br>`);
+callback();
+}
+function EnjoyMessage(){
+document.write('Enjoy.');
+}
+DisplayName('Ockert', 'du Preez', EnjoyMessage);
+</script>
+</body>
+</html>
+```
 
 2.  用 HTML 扩展名保存文件，例如 `Chapter 9.6.html`。
 
@@ -2065,7 +2148,7 @@ console.log(“Third”);
 
 看，这并不难！
 
-你的网页浏览器应该类似于：`Figure 9.6*`：
+你的网页浏览器应该类似于：`Figure 9.6`：
 
 ![](img/Img_09_06.jpg)
 
@@ -2081,30 +2164,30 @@ Promise 化是将接受回调的函数转换为返回 Promise 的函数的过程
 
 1.  打开你选择的文本编辑器，并输入以下 HTML 和 JavaScript 代码：
 
-    ```html
-    <html>
-    <body>
-    <h1>Promisification example</h1>
-    <p>Promisification example</p>
-    <script>
-    function promiseDisplayName(name, surname) {
-    return new Promise((resolve, reject) =>
-    DisplayName(name, surname, (err, result) =>
-    // 如果有错误，则 reject；否则 resolve
-    err ? `reject(err)` : resolve(result)`
-    )
-    );
-    }
-    // 像这样调用：
-    promiseDisplayName('Ockert’, ‘ Du Preez’).then(result => {
-    // 解析
-    }).catch(err => {
-    // 错误
-    });
-    </script>
-    </body>
-    </html>
-    ```
+```html
+<html>
+<body>
+<h1>Promisification example</h1>
+<p>Promisification example</p>
+<script>
+function promiseDisplayName(name, surname) {
+return new Promise((resolve, reject) =>
+DisplayName(name, surname, (err, result) =>
+// 如果有错误，则 reject；否则 resolve
+err ? reject(err) : resolve(result)
+)
+);
+}
+// 像这样调用：
+promiseDisplayName('Ockert', ' Du Preez').then(result => {
+// 解析
+}).catch(err => {
+// 错误
+});
+</script>
+</body>
+</html>
+```
 
 2.  用 HTML 扩展名保存文件，例如 `Chapter 9.7.html`。
 
@@ -2113,9 +2196,6 @@ Promise 化是将接受回调的函数转换为返回 Promise 的函数的过程
 回调函数和 Promise 有它们自己的用处。有些任务可以很容易地 Promise 化。
 
 ## 微任务与宏任务
-
-
-
 
 微任务（microtask）简单来说就是一个短函数（名副如此），它在创建它的函数退出后执行。JavaScript 中的 Promises 利用微任务来运行它们的回调函数。
 
@@ -2134,7 +2214,7 @@ Promise 化是将接受回调的函数转换为返回 Promise 的函数的过程
 1.  打开你任的文本编辑器，并输入以下 HTML 和 JavaScript 代码：
 
 ```html
-<<html>>
+<html>
 <body>
     <h1>Microtasks versus Macrotasks example</h1>
     <p>Microtasks versus Macrotasks example</p>
@@ -2151,7 +2231,7 @@ Promise 化是将接受回调的函数转换为返回 Promise 的函数的过程
         };
         console.log("First");
         setTimeout(firstCallback, 0);
-        console.log('Second Answer: ${doTasks()}');
+        console.log(`Second Answer: ${doTasks()}`);
         console.log("Third");
     </script>
 </body>
@@ -2206,7 +2286,7 @@ Promise.all([
 
 ```javascript
 const prom_1 = Promise.resolve(5);
-const prom_2 = new Promise((resolve, reject) => setTimeout(reject, 100, ‘fail’));
+const prom_2 = new Promise((resolve, reject) => setTimeout(reject, 100, 'fail'));
 const promArray = [prom_1, prom_2];
 Promise.allSettled(promArray).then((results) =>
     results.forEach((result) =>
@@ -2270,9 +2350,6 @@ Promise.allSettled(promArray).then((results) =>
 *   比较普通迭代器与异步迭代器
 *   比较普通生成器与异步生成器
 
-
-
-
 是的，你也可以使用 `return` 语句结束生成器函数，或者让生成器函数运行到结束，但你也可以包含 `yield` 语句，它允许你临时暂停函数的执行。
 
 普通函数和生成器函数之间的另一个区别是，普通的 JavaScript 函数只能返回一个值，而生成器函数可以在 `yield` 的帮助下返回多个值。这提供了一个连续的返回值流。
@@ -2281,35 +2358,35 @@ Promise.allSettled(promArray).then((results) =>
 
 1.  打开你选择的文本编辑器并输入以下 HTML 和 JavaScript 代码：
 
-    ```html
-    <html>
-    <body>
-      <h1>Quick Generator Function example</h1>
-      <p>Quick Generator Function example</p>
-      <script>
-        //Normal loop
-        for (let i = 0; i < 5; i += 1) {
-          console.log(i);
-        }
-        //立即返回 0, 1, 2, 3, 4
+```html
+<html>
+<body>
+  <h1>Quick Generator Function example</h1>
+  <p>Quick Generator Function example</p>
+  <script>
+    //Normal loop
+    for (let i = 0; i < 5; i += 1) {
+      console.log(i);
+    }
+    //立即返回 0, 1, 2, 3, 4
 
-        //Generator Loop
-        function * genFunctionForLoop(_number) {
-          for (let i = 0; i < _number; i += 1) {
-            yield console.log(i);
-          }
-        }
-        const genLoop = genFunctionForLoop(5);
-        genLoop.next(); // 0
-        genLoop.next(); // 1
-        genLoop.next(); // 2
-        console.log("I am Paused!");
-        genLoop.next(); // 3
-        genLoop.next(); // 4
-      </script>
-    </body>
-    </html>
-    ```
+    //Generator Loop
+    function * genFunctionForLoop(_number) {
+      for (let i = 0; i < _number; i += 1) {
+        yield console.log(i);
+      }
+    }
+    const genLoop = genFunctionForLoop(5);
+    genLoop.next(); // 0
+    genLoop.next(); // 1
+    genLoop.next(); // 2
+    console.log("I am Paused!");
+    genLoop.next(); // 3
+    genLoop.next(); // 4
+  </script>
+</body>
+</html>
+```
 
 2.  以 HTML 扩展名保存文件，例如 `Chapter 10.1.html`。
 
@@ -2362,28 +2439,28 @@ JavaScript 生成器有两个主要优势，它们是：
 
 1.  打开你选择的文本编辑器并输入以下 HTML 和 JavaScript 代码：
 
-    ```html
-    <html>
-    <body>
-      <h1>Lazy Evaluation example</h1>
-      <p>Lazy Evaluation example</p>
-      <script>
-        function * genPowerFunction(number, power) {
-          let start = number;
-          while(true) {
-            yield Math.pow(start, power);
-            start++;
-          }
-        }
-        const genPower = genPowerFunction(5, 2);
-        console.log(genPower.next()); //25 = 5*5
-        //console.log(genPower.next()); // 36 = 6*6
-        //console.log(genPower.next()); //49 = 7*7
-        //console.log(genPower.next()); // 64 = 8*8
-      </script>
-    </body>
-    </html>
-    ```
+```html
+<html>
+<body>
+  <h1>Lazy Evaluation example</h1>
+  <p>Lazy Evaluation example</p>
+  <script>
+    function * genPowerFunction(number, power) {
+      let start = number;
+      while(true) {
+        yield Math.pow(start, power);
+        start++;
+      }
+    }
+    const genPower = genPowerFunction(5, 2);
+    console.log(genPower.next()); //25 = 5*5
+    //console.log(genPower.next()); // 36 = 6*6
+    //console.log(genPower.next()); //49 = 7*7
+    //console.log(genPower.next()); // 64 = 8*8
+  </script>
+</body>
+</html>
+```
 
 2.  以 HTML 扩展名保存文件，例如 `Chapter 10.2.html`。
 
@@ -2410,40 +2487,40 @@ JavaScript 迭代器是一个定义序列的对象，并在终止时返回值。
 
 1.  打开你选择的文本编辑器并输入以下 HTML 和 JavaScript 代码：
 
-    ```html
-    <html>
-    <body>
-      <h1>Iterator example</h1>
-      <p>Iterator example</p>
-      <script>
-        function iteratorRange(iStart = 0, iEnd = Infinity, iStep = 1) {
-          let next = iStart;
-          let Count = 0;
-          const iterator = {
-            next: function() {
-              let result;
-              if (next < iEnd) {
-                result = { value: next, done: false };
-                next += iStep;
-                Count++;
-              } else {
-                result = { value: Count, done: true };
-              }
-              return result;
-            }
-          };
-          return iterator;
+```html
+<html>
+<body>
+  <h1>Iterator example</h1>
+  <p>Iterator example</p>
+  <script>
+    function iteratorRange(iStart = 0, iEnd = Infinity, iStep = 1) {
+      let next = iStart;
+      let Count = 0;
+      const iterator = {
+        next: function() {
+          let result;
+          if (next < iEnd) {
+            result = { value: next, done: false };
+            next += iStep;
+            Count++;
+          } else {
+            result = { value: Count, done: true };
+          }
+          return result;
         }
-        let iterate = iteratorRange(1, 20, 2);
-        let result = iterate.next();
-        while (!result.done) {
-          console.log(result.value); // 1 3 5 7 9 11 13 15 17 19
-          result = iterate.next();
-        }
-      </script>
-    </body>
-    </html>
-    ```
+      };
+      return iterator;
+    }
+    let iterate = iteratorRange(1, 20, 2);
+    let result = iterate.next();
+    while (!result.done) {
+      console.log(result.value); // 1 3 5 7 9 11 13 15 17 19
+      result = iterate.next();
+    }
+  </script>
+</body>
+</html>
+```
 
 2.  以 HTML 扩展名保存文件，例如 `Chapter 10.3.html`。
 
@@ -2475,60 +2552,64 @@ JavaScript 迭代器是一个定义序列的对象，并在终止时返回值。
 
 你也可以创建自己的可迭代对象。这里有一个小示例。
 
-
-
-
-
-```javascript
-    'Iron Maiden',
-    'Metallica',
-    'Anthrax'
-  ],
-  Rock: [
-    'Def Leppard',
-    'Guns n Roses',
-    'Bon Jovi',
-    'Nickelback'
-  ],
-  Rap: [
-    'Snoop Dogg',
-    'Eminem',
-    'Dr. Dre'
-  ],
-  },
-  [Symbol.iterator]() {
-    const genres = Object.values(this.allBands);
-    let BandIndex = 0;
-    let GenreIndex = 0;
-    return {
-        next() {
-            const bands = genres[GenreIndex];
-            const BandsComplete = !(BandIndex < bands.length);
-            if (BandsComplete) {
-                GenreIndex++;
-                BandIndex = 0;
-            }
-            const GenreComplete = !(GenreIndex < genres.length);
-            if (GenreComplete) {
+```html
+<html>
+<body>
+  <h1>Iterable example</h1>
+  <p>Iterable example</p>
+  <script>
+    const iterableMusicCollection = {
+      allBands: {
+        Metal: [
+          'Iron Maiden',
+          'Metallica',
+          'Anthrax'
+        ],
+        Rock: [
+          'Def Leppard',
+          'Guns n Roses',
+          'Bon Jovi',
+          'Nickelback'
+        ],
+        Rap: [
+          'Snoop Dogg',
+          'Eminem',
+          'Dr. Dre'
+        ],
+      },
+      [Symbol.iterator]() {
+        const genres = Object.values(this.allBands);
+        let BandIndex = 0;
+        let GenreIndex = 0;
+        return {
+            next() {
+                const bands = genres[GenreIndex];
+                const BandsComplete = !(BandIndex < bands.length);
+                if (BandsComplete) {
+                    GenreIndex++;
+                    BandIndex = 0;
+                }
+                const GenreComplete = !(GenreIndex < genres.length);
+                if (GenreComplete) {
+                    return {
+                        value: undefined,
+                        done: true
+                    };
+                }
                 return {
-                    value: undefined,
-                    done: true
-                };
+                    value: genres[GenreIndex][BandIndex++],
+                    done: false
+                }
             }
-            return {
-                value: genres[GenreIndex][BandIndex++],
-                done: false
-            }
-        }
+        };
+      }
     };
-  }
-};
-for (const band of iterableMusicCollection) {
-  console.log(band);
-}
-</script>
+    for (const band of iterableMusicCollection) {
+      console.log(band);
+    }
+  </script>
 </body>
-</</html>
+</html>
 ```
 
 2. 以 HTML 扩展名保存文件，例如 `Chapter 10.4.html`。
@@ -2677,17 +2758,17 @@ async function* quickSequence(begin, end) {
 4. 解释术语 iterable。
 5. `yield` 是什么？
 
-# 第 11 章](#toc.xhtml_c11)
+# 第 11 章
 
-# 模块](#toc.xhtml_c11)
+## 模块
 
-# 引言](#toc.xhtml_s163a)
+## 引言
 
 模块允许你将逻辑从页面逻辑中移动出来。我们可以从模块中导入函数，也可以从模块中导出函数，这非常用户友好。
 
 在本节中，你将学习模块是什么。你将看到导出和导入模块函数是多简单。然后我们将深入讨论 CORS 以及它可能引起的问题以及 CORS 错误的解决方案。最后，你将学习对你的模块进行打包。
 
-# 结构](#toc.xhtml_s164a)
+## 结构
 
 *   什么是模块？
 *   导出模块
@@ -2697,15 +2778,10 @@ async function* quickSequence(begin, end) {
 *   nomodule
 *   打包工具
 
-# 目标](#toc.xhtml_s165a)
+## 目标
 
 *   创建模块
 *   导出模块函数
-
-
-
-
-
 * 在 JavaScript 和 HTML 中导入模块函数
 * 了解模块的优点
 * 了解 CORS 以及如何解决 CORS 问题
@@ -2713,7 +2789,7 @@ async function* quickSequence(begin, end) {
 
 ## 什么是模块？
 
-在`第 1 章：JavaScript 的力量及其用途]`中，我们讨论了 JavaScript 语言的历史和起源。快进十二十年后，这种语言已经有了巨大的增长，对其的需求也更加迫切。
+在`第 1 章：JavaScript 的力量及其用途`中，我们讨论了 JavaScript 语言的历史和起源。快进十二十年后，这种语言已经有了巨大的增长，对其的需求也更加迫切。
 
 过去 JavaScript 仅用于提供交互和一些脚本任务，而现在它的用途要广泛得多。简单来说：没有 JavaScript，2019 年就没有网页。
 
@@ -2745,10 +2821,10 @@ async function* quickSequence(begin, end) {
 
 ```javascript
 export function sayHello(name) {
-alert(‘Hello, ${name}!’);
+alert(`Hello, ${name}!`);
 }
 export function sayBye(name) {
-alert(‘Bye, ${name}!’);
+alert(`Bye, ${name}!`);
 }
 ```
 
@@ -2767,12 +2843,12 @@ alert(‘Bye, ${name}!’);
 1. 打开你喜欢的文本编辑器并输入以下 JavaScript 代码：
 
 ```javascript
-import {sayHello} from ‘./greet.mjs’;
-import {sayBye} from ‘./greet.mjs’;
+import {sayHello} from './greet.mjs';
+import {sayBye} from './greet.mjs';
 alert(sayHello); // function…
-sayHello(‘Ockert’); // Hello, Ockert!
+sayHello('Ockert'); // Hello, Ockert!
 alert(sayBye); // function…
-sayBye(‘Ockert’); // Bye, Ockert!
+sayBye('Ockert'); // Bye, Ockert!
 ```
 
 2. 以 `.mjs` 扩展保存文件，例如 `main.mjs`。
@@ -2790,18 +2866,20 @@ sayBye(‘Ockert’); // Bye, Ockert!
 <body>
 <h1>Import module functions example</h1>
 <p>Import module functions example</p>
-<script type=”module">
-import {sayHello} from ‘./greet.mjs’;
-import {sayBye} from ‘./greet.mjs’;
-document.body.innerHTML = sayHello(‘Ockert’);
-//document.body.innerHTML = sayBye(‘Ockert’);
+<script type="module">
+import {sayHello} from './greet.mjs';
+import {sayBye} from './greet.mjs';
+document.body.innerHTML = sayHello('Ockert');
+//document.body.innerHTML = sayBye('Ockert');
 </script>
 </body>
 </html>
 ```
 
 2. 以 HTML 扩展保存文件，例如 `Chapter 11.1.html`。
+
 3. 双击文件在默认浏览器中打开它。
+
 4. 如果浏览器是 Google Chrome，按下 `Ctrl` + `Shift` + `J` 打开控制台窗口。
 
 我们将脚本类型标识为模块，然后导入函数。现在，这可能有效也可能无效，如下方的 `图 11.1` 所示。为什么？因为 CORS：
@@ -2819,17 +2897,19 @@ document.body.innerHTML = sayHello(‘Ockert’);
 <body>
 <h1>Import module functions example</h1>
 <p>Import module functions example</p>
-<script type=”module” src=”greet.mjs"></script>
+<script type="module" src="greet.mjs"></script>
 <script>
-document.body.innerHTML = sayHello(‘Ockert’);
-document.body.innerHTML = sayBye(‘Ockert’);
+document.body.innerHTML = sayHello('Ockert');
+document.body.innerHTML = sayBye('Ockert');
 </script>
 </body>
 </html>
 ```
 
 2. 以 HTML 扩展保存文件，例如 `Chapter 11.2.html`。
+
 3. 双击文件在默认浏览器中打开它。
+
 4. 如果浏览器是 Google Chrome，按下 `Ctrl` + `Shift` + `J` 打开控制台窗口。
 
 脚本文件的源被设置为目标模块。这稍微快一点且更易读。两个网页都可能因为**跨源资源共享**（**CORS**）产生错误。让我解释一下它。
@@ -2846,18 +2926,18 @@ CORS 添加了新的 HTTP Header 来描述哪些源允许从 浏览器读取信�
 
 兼容 CORS 的浏览器发送一个带有 `Origin` Header 的 `OPTIONS` 请求到 [`service.javascriptforgurus.com`](http://service.javascriptforgurus.com)，该 Header 包含父页面的域：
 
+`http://www.javascriptforgurus.com`
 
-
-
-
-`http://www.javascriptforurus.com`
-
-`http://service.javascriptforurus.com` 处的服务器可能会返回以下任意内容：
+`http://service.javascriptforgurus.com` 处的服务器可能会返回以下任意内容：
 
 * `Access-Control-Allow-Origin` 头部，显示哪些站点被允许。例如：
-    `Access-Control-Allow-Origin: http://www.javascriptforurus.com`
+
+    `Access-Control-Allow-Origin: http://www.javascriptforgurus.com`
+
 * 带有通配符的 `Access-Control-Allow-Origin` 头部，允许所有域。例如：
+
     `Access-Control-Allow-Origin: *`
+
 * 错误页面
 
 ## CORS 预检请求
@@ -2865,27 +2945,37 @@ CORS 添加了新的 HTTP Header 来描述哪些源允许从 浏览器读取信�
 之前我提到浏览器应该对请求进行 `preflight`（预检）。在执行跨域请求时，兼容 CORS 的浏览器会插入 `preflight` 请求，以确定它们是否有权限执行该操作。这里是一个简单的示例：
 
 `OPTIONS /`
-`Host: service.javascriptforurus.com`
-`Origin: http://www.javascriptforurus.com`
 
-如果 `service.javascriptforurus.com` 接受该操作，它将返回以下头部：
+`Host: service.javascriptforgurus.com`
 
-`Access-Control-Allow-Origin: http://www.javascriptforurus.com`
+`Origin: http://www.javascriptforgurus.com`
+
+如果 `service.javascriptforgurus.com` 接受该操作，它将返回以下头部：
+
+`Access-Control-Allow-Origin: http://www.javascriptforgurus.com`
+
 `Access-Control-Allow-Methods: PUT, DELETE`
 
 另一个示例如下。此示例演示了客户端在发送 `DELETE` 预检请求之前，向服务器询问其是否允许 `DELETE` 请求：
 
-`OPTIONS http://www.javascriptforurus.com`
+`OPTIONS http://www.javascriptforgurus.com`
+
 `Access-Control-Request-Method: DELETE`
+
 `Access-Control-Request-Headers: origin, x-requested-with`
-`Origin: http://www.javascriptforurus.com`
+
+`Origin: http://www.javascriptforgurus.com`
 
 以下是服务器的响应：
 
 `HTTP/1.1 204 No Content`
+
 `Connection: keep-alive`
-`Access-Control-Allow-Origin: http://www.javascriptforurus.com`
+
+`Access-Control-Allow-Origin: http://www.javascriptforgurus.com`
+
 `Access-Control-Allow-Methods: POST, GET, OPTIONS, DELETE`
+
 `Access-Control-Max-Age: 86400`
 
 因为服务器响应了 `Access-Control-Allow-Methods`，所以服务器允许该请求。但我们仍然面临 CORS 问题。我什么意思？嗯，你做的练习仍然抛出 CORS 错误，如图 1.1 所示。我们该如何修复这个问题？
@@ -2909,21 +2999,29 @@ CORS 添加了新的 HTTP Header 来描述哪些源允许从 浏览器读取信�
 
 ## 命令提示符 (Command Prompt)
 
-命令提示符用于执行输入的命令，例如通过脚本和批文件自动化任务、执行管理功能以及排排除 Windows 问题。以下步骤将以禁用安全模式打开 Google Chrome：
+命令提示符用于执行输入的命令，例如通过脚本和批文件自动化任务、执行管理功能以及排除 Windows 问题。以下步骤将以禁用安全模式打开 Google Chrome：
 
 1. 关闭所有 Google Chrome 实例。
 2. 按键盘上的 Windows 键。
 3. 输入 `cmd`。按 `Enter`。
 4. 命令提示符窗口将出现，如图 4 所示。
 5. 输入以下命令并按回车：
+
    `CD "Program Files (x86)\Google\Chrome\Application"`
+
    这意味着更改目录（文件夹）到 Chrome 应用程序文件所在。
 6. 输入以下命令并按 `Enter`。屏幕如图 5 所示：
+
    `Chrome.exe --disable-web-security`
+
    OR
+
    `chrome.exe --user-data-dir="C://Chrome dev session" --disable-web-security`
+
    OR
+
    `chrome.exe --disable-web-security --disable-gpu --user-data-dir="C://Chrome dev session"`
+
 7. 这将启动禁用了安全的 Chrome，这可能不是一个完全好的主意。
 
 现在，让我们来看 Out of blink CORS 设置。
@@ -2936,11 +3034,27 @@ Out of blink CORS 是 Chrome 的设置，你可以用它来启用或禁用 CORS 
 2. 导航到：`chrome://flags/#out-of-blink-cors`
 3. 在 `Out of blink CORS` 设置旁边，从下拉菜单中选择 `Disabled`，如图 6 所示。
 
+## 动态导入
 
+动态导入允许你在需要时按需加载模块。这与静态导入不同，静态导入在文件加载时就会加载所有模块。动态导入使用 `import()` 函数，它返回一个 Promise。
 
+以下示例演示了动态导入：
 
+```javascript
+button.addEventListener('click', async () => {
+  const module = await import('./module.mjs');
+  module.someFunction();
+});
+```
+
+## nomodule
+
+`nomodule` 属性允许你为不支持模块的旧版浏览器提供回退脚本。支持模块的浏览器会忽略带有 `nomodule` 属性的脚本。
+
+以下示例演示了 `nomodule` 的用法：
 
 ```html
+<script type="module" src="modern.js"></script>
 <script nomodule src="old.js"></script>
 </body>
 </html>
@@ -3106,9 +3220,9 @@ var progStudent = "Ockert du Preez", Age = 41, Grades = 75.5;
 
 JavaScript 字符串数据类型表示文本数据。字符串的示例包括：
 
-* ‘Ockert’
-* “BpB”
-* “1”
+* 'Ockert'
+* "BpB"
+* "1"
 
 与许多编程语言不同，这里没有单独的字符数据类型。JavaScript 字符串是不可变的，这意味着一旦创建了字符串，就无法修改。你可以通过对原始字符串进行操作来创建另一个字符串，使用的函数如 `String.concat()`（将两个字符串连接在一起）和 `String.substr()`（允许你提取字符串的一部分）。
 
@@ -3120,15 +3234,11 @@ JavaScript 字符串数据类型表示文本数据。字符串的示例包括：
 
 你在这个主题的开头注意到我将所有字符串都放在了引号内。但是，如果你仔细看，你会发现我使用了两种类型的引号：单引号和双引号。识别字符串的另一种方法是使用反引号（backticks）。
 
-
-
-
-
-单引号（`‘`）和双引号（`“`）本质上是相同的，唯一需要记住的是你不能用单引号开头并双引号结束字符串，反之亦然。通过让你所有的字符串看起来都一样来保持某种标准，这会让将来更容易识别它们。
+单引号（`'`）和双引号（`"`）本质上是相同的，唯一需要记住的是你不能用单引号开头并双引号结束字符串，反之亦然。通过让你所有的字符串看起来都一样来保持某种标准，这会让将来更容易识别它们。
 
 ## 反引号 (Backticks)
 
-反引号（`‘`）允许你通过用 `${…}` 包裹表达式将其嵌入字符串中。在本书书中我们一直在进行这种用例，但让我们通过一个小型的练习来复习一下记忆吧。
+反引号（`` ` ``）允许你通过用 `${...}` 包裹表达式将其嵌入字符串中。在本书书中我们一直在进行这种用例，但让我们通过一个小型的练习来复习一下记忆吧。
 
 下面的示例演示了如何在你的网页中使用反引号：
 
@@ -3182,7 +3292,7 @@ alert(students);
 然而，你仍然可以使用单引号和双引号创建多行字符串。你通过在字符串内部插入换行符（写作 `\n`）来实现这一点。下一行代码产生的结果与之前所示的反引号包裹的多行引号完全相同。
 
 ```javascript
-let students = “Students:\n * Ockert\n * BpB\n * John\n * Peter\n * William\n* Jessica”;
+let students = "Students:\n * Ockert\n * BpB\n * John\n * Peter\n * William\n* Jessica";
 alert(students);
 ```
 
@@ -3198,13 +3308,15 @@ alert(students);
 | :--- | :--- |
 | `\n` | 换行 |
 | `\r` | 回车。通常使用 `\n` 和 `\r` 的组合在文本文件中创建新行。 |
-| `\’` | 单引号 |
-| `\”` | 双引号 |
+| `\'` | 单引号 |
+| `\"` | 双引号 |
 | `\\` | 反斜杠 |
 | `\t` | 制表符 |
 | `\b, \f, \v` | 退格符、分页符、垂直制表符。主要为了兼容性而保留。 |
-| `\xXX` | Unicode 字符。例如：‘`\x6F`’ 等于‘`O`’ |
+| `\xXX` | Unicode 字符。例如：`\x6F` 等于 `O`。 |
 | `\uXXXX` | Unicode 符号。例如，`\u00AE` 等于注册符号 `®`。 |
+
+
 
 **表 12.1：** 特殊字符
 
@@ -3242,6 +3354,8 @@ document.write(“str.length is:” + str.length);
 
 下表列出了标准的字符串方法：
 
+**表 12.2：** 字符串方法
+
 | 方法 | 描述 |
 | :--- | :--- |
 | `charAt()` | 获取指定索引处的字符。 |
@@ -3269,8 +3383,6 @@ document.write(“str.length is:” + str.length);
 | `toUpperCase()` | 将字符串转换为大写。 |
 | `trim()` | 移除字符串开头和结尾的空白。 |
 | `valueOf()` | 返回基本值。 |
-
-**表 12.2：** 字符串方法
 
 下面的示例演示了 `charAt` 字符串方法的使用：
 
@@ -3301,14 +3413,13 @@ document.writeln(`<br />str.charAt(5) is:` + str.charAt(5));
 
 创建了一个包含我名字和姓氏的字符串。然后使用 `charAt` 获取指定索引处的字符。例如：0 是字符串的第一个字符。
 
-
-
-
 `Number` 类型是一个双精度 64 位二进制值。它可以存储浮点数或范围在 `-(2⁵³ -1)` 到 `(2⁵³ -1)` 之间的整数。数字类型还有三个特殊值：`+Infinity`、`-Infinity` 和 `NaN`（不是数字）。常量 `Number.MAX_VALUE` 和 `Number.MIN_VALUE` 可用于确定 `+Infinity` 和 `-Infinity` 之间的最大或最小值。你还可以使用 `Number.isSafeInteger()` 或 `Number.MAX_SAFE_INTEGER` 和 `Number.MIN_SAFE_INTEGER` 来检查一个数字是否在双精度浮点范围内。
 
-# Number 属性](#toc.xhtml_s198a)
+## Number 属性
 
 原始类型数字具有以下属性：
+
+**表 12.3:** Number 属性
 
 | 属性 | 描述 |
 | :--- | :--- |
@@ -3321,20 +3432,20 @@ document.writeln(`<br />str.charAt(5) is:` + str.charAt(5));
 | `NEGATIVE_INFINITY` | 负无穷 |
 | `POSITIVE_INFINITY` | 正无穷 |
 
-**表 12.3:** Number 属性
-
 现在我们已经熟悉了数字类型的属性，让我们来看看它的方法。
 
-# Number 方法](#toc.xhtml_s199a)
+## Number 方法
 
 原始类型数字具有以下方法：
+
+**表 12.4:** Number 方法
 
 | 方法 | 描述 |
 | :--- | :--- |
 | `isFinite` | 该值是否为有限数字？ |
 | `isInteger` | 该值是否为整数（整数字）？ |
 | `isNaN` | 该值是否不是数字？ |
-| `isSafeInteger` | 该值是否为 `-(253 -1)` 到 `(253 -1)` 之间的整数 |
+| `isSafeInteger` | 该值是否为 `-(2⁵³ -1)` 到 `(2⁵³ -1)` 之间的整数 |
 | `parseFloat` | 将参数解析为浮点数 |
 | `parseInt` | 将参数解析为整数 |
 | `prototype.toExponential` | 科学计数法表示字符串 |
@@ -3344,8 +3455,6 @@ document.writeln(`<br />str.charAt(5) is:` + str.charAt(5));
 | `prototype.toSource` | Number 对象的对象字面量 |
 | `prototype.toString` | 数字的字符串表示 |
 | `prototype.valueOf` | 返回对象的原始值 |
-
-**表 12.4:** Number 方法
 
 让我们来一个快速的练习吧！以下示例演示了几个数字方法的使用：
 
@@ -3372,6 +3481,7 @@ document.writeln("<br />" + nn);
 ```
 
 2.  以 HTML 扩展名保存文件，例如 `Chapter 12.4.html`。
+
 3.  双击文件在默认浏览器中打开它。
 
 如你所示，使用数字方法非常简单。在上面的练习中，你显示了一个数字的指数值，获取了另一个数字的固定值并显示了第三个数字的值。*图 12.4* 显示了结果：
@@ -3382,7 +3492,7 @@ document.writeln("<br />" + nn);
 
 说到数字，让我们快速看一眼 `BigInt` 原始类型。
 
-# BigInt](#toc.xhtml_s200a)
+## BigInt
 
 你可能对数字原始类型的限制感兴趣。简单回顾一下：它在 `-(2⁵³ -1)` 和 `(2⁵³ -1)` 之间。现在，如果你有一个更大的数字怎么办？这就是 `BigInt` 用用用场。`BigInt` 表示大于 `(2⁵³ -1)` 的整数。创建一个 `BigInt` 非常简单，你只需要在整数字面量后添加一个 `n`，或者调用函数 `BigInt()`。
 
@@ -3405,11 +3515,12 @@ const num3 = BigInt("9007199254740991");
 ```
 
 2.  以 HTML 扩展名保存文件，例如 `Chapter 12.5.html`。
+
 3.  双击文件在默认浏览器中打开它。
 
 注意我在创建 `num1` 对象时在长数字后面添加的 `n`。`num2` 是通过 `BigInt` 函数创建的，`num3` 也是如此，但为 `num3` 提供的是一个字符串，它会被转换为 `BigInt` 数字。
 
-# Null 与 undefined](#toc.xhtml_s201a)
+## Null 与 undefined
 
 Null 意味着无。它是值的刻意缺失。Undefined 意味着变量已经创建，但还没有被赋值。
 
@@ -3436,6 +3547,7 @@ document.writeln("<br />" + undefinedVar);
 ```
 
 2.  以 HTML 扩展名保存文件，例如 `Chapter 12.6.html`。
+
 3.  双击文件在默认浏览器中打开它。
 
 在这里我创建了一个名为 `nullVar` 的变量并将其初始化为 `null`。这意味着没有值，所以检查 `nullVar` 变量值的 `if` 语句将产生一行说明 `nullVar` 是 null 的输出。
@@ -3446,7 +3558,7 @@ document.writeln("<br />" + undefinedVar);
 
 **图 12.5:** Null 与 undefined
 
-# Boolean](#toc.xhtml_s202a)
+## Boolean
 
 现在我们已经知道了如何存储数字和字符串值，以及像 null 和 undefined 这样的复杂值，我们可以转向一个更简单的原始类型 Boolean。
 
@@ -3478,6 +3590,7 @@ alert("This code does not execute");
 ```
 
 2.  以 HTML 扩展名保存文件，例如 `Chapter 12.7.html`。
+
 3.  双击文件在默认浏览器中打开它。
 
 如你所示，我在这里使用了另一个 if 语句，实际上是两个 `if` 语句。我将在 *第 13 章：控制流语句* 中更详细介绍 if 语句。这些 if 语句检查传递的对象包含什么值。如果它包含真值，则执行其块中的代码，如*图 12.6*所示：
@@ -3488,17 +3601,13 @@ alert("This code does not execute");
 
 最后一个我想谈的原始类型是 Symbol 原始类型
 
-
-
-
-
 符号（Symbol）代表一个唯一的标识符，并且被保证是唯一的。
 
 这里有一个短小的示例。下面的示例演示了如何创建和使用符号：
 
 1.  打开你选择的文本编辑器，并输入以下 HTML 和 JavaScript 代码
 
-    ```html
+```html
 <!doctype html>
 <body>
 <h1>Symbol example</h1>
@@ -3513,7 +3622,7 @@ alert("This code does not execute");
 </script>
 </body>
 </html>
-    ```
+```
 
 2.  以 HTML 扩展名保存该文件，例如 `Chapter 12.8.html`。
 
@@ -3530,9 +3639,13 @@ alert("This code does not execute");
 ## 问题
 
 1.  什么是变量？
+
 2.  局部作用域和全局作用域之间的区别是什么？
+
 3.  列出七种原始数据类型。
+
 4.  列出三个字符串函数。
+
 5.  什么是符号？
 
 # 第 13 章
@@ -3606,31 +3719,6 @@ alert("This code does not execute");
 </html>
 ```
 
-1.  打开你选择的文本编辑器，并输入以下 HTML 和 JavaScript 代码：
-
-    ```html
-<!doctype html>
-<body>
-<h1>Symbol example</h1>
-<p>Symbol example</p>
-<script>
-  let student = {
-  name: “Ockert”
-  };
-  let id = Symbol(“id”);
-  student[id] = 123;
-  alert( student[id] );
-</script>
-</body>
-</html>
-    ```
-
-2.  以 HTML 扩展名保存该文件，例如 `Chapter 12.8.html`。
-
-3.  双击该文件在默认浏览器中打开它
-
-运行后，ID `idsymbol` 会被赋值给 `student` 对象，它将产生 `123`。
-
 这也许是 `if` 语句最基本的演示。因为 `time` 是一个 `Date` 对象，我们可以访问 `Date` 属性如 `getHours`。
 
 ```html
@@ -3689,10 +3777,6 @@ alert("This code does not execute");
 如果时间小于 18，那么 greeting 变量 `greeting` 将包含消息 `Good afternoon`。
 
 之前我提到过，当没有 `else…if` 条件存在时，什么都不会发生。好吧，我们可以让某些事情发生！
-
-
-
-
 
 ## else 语句
 
@@ -3912,16 +3996,6 @@ case 5:
 document.write(‘Visiting 5 places in 5 days’);
 break;
 case 15:
-</script>
-</body>
-</html>
-```
-
-
-
-
-
-```javascript
 document.write('Visiting 15 places in 15 days');
 break;
 case 25:
@@ -3946,7 +4020,7 @@ break;
 }
 </script>
 </body>
-</</html>
+</html>
 ```
 
 2. 将文件以 HTML 扩展名保存，例如 `Chapter 13.7.html`。
@@ -4008,8 +4082,11 @@ document.write(greeting);
 ## 问题
 
 1. 为什么你会使用 `switch` 语句而不是 `else…if` 语句？
+
 2. 什么是三元运算符？
+
 3. 为什么你会使用 `else` 子句？
+
 4. 解释“条件”这一术语。
 
 # 第 14 章
@@ -4188,11 +4265,6 @@ for (var i = 0; i < 10; i++) {
 }
 ```
 
-
-
-
-3. 双击文件在默认浏览器中打开它。
-
 `for` 循环从 `9` 开始。然后你进行测试以确保 `i` 大于 `-1`，最后循环使用递减运算符进行递减。运算符在`第 4 章：JavaScript 运算符`中讨论过。最终结果如下一个截图所示：
 
 ![](img/Img_14_02.jpg)
@@ -4235,7 +4307,7 @@ for (variable in object)
     document.write(“<p>” + output);
   </script>
 </body>
-</</html>
+</html>
 ```
 
 2. 以 HTML 扩展名保存文件，例如 `Chapter 14.3.html`。
@@ -4283,7 +4355,7 @@ for (variable of iterable)
     }
   </script>
 </body>
-</</html>
+</html>
 ```
 
 2. 以 HTML 扩展名保存文件，例如 `Chapter 14.4.html`。
@@ -4315,7 +4387,7 @@ for (variable of iterable)
     }
   </script>
 </body>
-</</html>
+</html>
 ```
 
 2. 以 HTML 扩展名保存文件，例如 `Chapter 14.5.html`。
@@ -4365,7 +4437,7 @@ while (condition)
     alert( ‘Total: ‘ + total );
   </script>
 </body>
-</</html>
+</html>
 ```
 
 2. 以 HTML 扩展名保存文件，例如 `Chapter 14.6.html`。
@@ -4377,9 +4449,6 @@ while (condition)
 在循环内部，另一个名为 `newVal` 的变量接收提示框中输入的任何值，然后这个值会被加到 `total` 变量上。
 
 这里非常重要的一点是，测试的是变量 `total` 的值，如果值在循环某处没有发生变化，循环将是无限循环且永远不会结束，例如 total 永远不会变成 100 或更多。
-
-
-
 
 打开此页面时，你将看到一个类似于图 14.6 的框，你可以在其中输入数字。现在，你可以每次输入 `1`，它会不断累加 `1` 直到达到 `100`。或者你可以输入 `50` 和 `50`，甚至直接输入 `100`。
 
@@ -4522,12 +4591,10 @@ do
 </body>
 </html>
 ```
+
 （注：原文中关于 `break with label` 的部分文本有些杂乱，我已根据提供的代码字符串重构了逻辑。）
 
-
-
-
-*   了解如何在 JavaScript 中使用注释。
+# 第 15 章
 
 ## 调试
 
@@ -4562,24 +4629,26 @@ JavaScript 语言包含两个调试特性；它们是：
 
 *   打开你任选的文本编辑器并输入以下 HTML 和 JavaScript 代码：
 
-    ```html
-    <html>
-    <body>
-    <h1>console.log Output</h1>
-    <p>The following code demonstrates the use of console.log</p>
-    <script>
-    console.log(“I love JavaScript”);
-    var myObj = { firstname : “Ockert”, lastname : “du Preez” };
-    console.log(myObj);
-    var myArr = [“JavaScript”, “CSS”, “HTML5”, “jQuery” ];
-    console.log(myArr);
-    </script>
-    </body>
-    </html>
-    ```
+```html
+<html>
+<body>
+<h1>console.log Output</h1>
+<p>The following code demonstrates the use of console.log</p>
+<script>
+console.log(“I love JavaScript”);
+var myObj = { firstname : “Ockert”, lastname : “du Preez” };
+console.log(myObj);
+var myArr = [“JavaScript”, “CSS”, “HTML5”, “jQuery” ];
+console.log(myArr);
+</script>
+</body>
+</html>
+```
 
 *   用 HTML 扩展名保存文件，例如 `Chapter 15.1.html`。
+
 *   双击该文件在默认浏览器中打开它。
+
 *   在 Google Chrome 中按 `Ctrl` + `Shift` + `J` 或 `F12` 打开控制台窗口。
 
 当控制台窗口打开时，你将看到被写入其中的三个不同类型的内容。首先是字符串：`I love JavaScript!`，然后是显示我名字和姓氏的对象。最后，数组的内容也被打印出来。*图 15.1** 显示了结果：
@@ -4596,25 +4665,27 @@ JavaScript 语言包含两个调试特性；它们是：
 
 1.  打开你任选的文本编辑器并输入以下 HTML 和 JavaScript 代码：
 
-    ```html
-    <html>
-    <body>
-    <h1>console timing features</h1>
-    <p>The following code demonstrates the use of console.time and console.timeEnd</p>
-    <script>
-    console.time(‘Timer1’);
-    var items = [];
-    for(var i = 0; i < 500000; i++){
-    items.push({index: i});
-    }
-    console.timeEnd(‘Timer1’);
-    </script>
-    </body>
-    </html>
-    ```
+```html
+<html>
+<body>
+<h1>console timing features</h1>
+<p>The following code demonstrates the use of console.time and console.timeEnd</p>
+<script>
+console.time(‘Timer1’);
+var items = [];
+for(var i = 0; i < 500000; i++){
+items.push({index: i});
+}
+console.timeEnd(‘Timer1’);
+</script>
+</body>
+</html>
+```
 
 2.  用 HTML 扩展名保存文件，例如 `Chapter 15.2.html`。
+
 3.  双击该文件在默认浏览器中打开它。
+
 4.  在 Google Chrome 中按 `Ctrl` + `Shift` + `J` 或 `F12` 打开控制台窗口。
 
 我得到的输出显示在*图 15.2*中：
@@ -4628,6 +4699,8 @@ JavaScript 语言包含两个调试特性；它们是：
 ## 更多 console 方法
 
 `console` 对象包含了许多其他方法来帮助调试。它们列在下表中：
+
+**表 15.1：** 控制台方法
 
 | 方法 | 描述 |
 | :--- | :--- |
@@ -4643,46 +4716,46 @@ JavaScript 语言包含两个调试特性；它们是：
 | `trace()` | 向控制台输出堆栈跟踪 |
 | `warn()` | 向控制台输出警告消息 |
 
-**表 15.1：** 控制台方法
-
 让我们来做一个练习！
 
 还有几个 console 方法，下一个练习将演示：
 
 1.  打开你任选的文本编辑器并输入以下 HTML 和 JavaScript 代码：
 
-    ```html
-    <html>
-    <body>
-    <h1> more console methods</h1>
-    <p>The following code demonstrates the use of console methods</p>
-    <script>
-    var myObj = { firstname : “Ockert”, lastname : “du Preez” };
-    console.assert(document.getElementById(“demo”), myObj);
-    console.clear();
-    for (i = 0; i < 10; i++) {
-    console.count();
-    }
-    console.error(“I am a mistake!”);
-    console.log(“Hello world!` `- Normal”);
-    console.group();
-    console.log(“Hello again!` `- Inside a group”);
-    console.info(“I love JavaScript!”);
-    function myFunction() {
-    anotherFunction();
-    }
-    function anotherFunction() {
-    console.trace();
-    }
-    console.warn(“This is a warning!”);
-    console.table([“JavaScript”, “HTML5”, “CSS”]);
-    </script>
-    </body>
-    </html>
-    ```
+```html
+<html>
+<body>
+<h1> more console methods</h1>
+<p>The following code demonstrates the use of console methods</p>
+<script>
+var myObj = { firstname : “Ockert”, lastname : “du Preez” };
+console.assert(document.getElementById(“demo”), myObj);
+console.clear();
+for (i = 0; i < 10; i++) {
+console.count();
+}
+console.error(“I am a mistake!”);
+console.log(“Hello world!` `- Normal”);
+console.group();
+console.log(“Hello again!` `- Inside a group”);
+console.info(“I love JavaScript!”);
+function myFunction() {
+anotherFunction();
+}
+function anotherFunction() {
+console.trace();
+}
+console.warn(“This is a warning!”);
+console.table([“JavaScript”, “HTML5”, “CSS”]);
+</script>
+</body>
+</html>
+```
 
 2.  用 HTML 扩展名保存文件，例如 `Chapter 15.3.html`。
+
 3.  双击该文件在默认浏览器中打开它。
+
 4.  在 Google Chrome 中按 `Ctrl` + `Shift` + `J` 或 `F12` 打开控制台窗口。
 
 上述代码的输出如下方的所示：
@@ -4694,9 +4767,6 @@ JavaScript 语言包含两个调试特性；它们是：
 如所见，控制台比想象的要强大得多。通过使用 `assert`、`warn` 和 `error` 方法，你可以快速检查错误，通过分组和表格方法，你可以组织数据的输出。
 
 接下来的 JavaScript 调试语言特性是 `debugger` 关键字，将在后面解释。
-
-
-
 
 接下来的这个小练习演示了 `debugger` 关键字的使用：
 
@@ -4719,6 +4789,7 @@ document.getElementbyId(“Answer”).innerHTML = x;
 2.  以 HTML 扩展名保存文件，例如 `Chapter 15.4.html`。
 
 3.  双击该文件在默认浏览器中打开它。
+
 4.  在 Google Chrome 中按 `Ctrl` + `Shift` + `J` 或 `F12` 打开控制台窗口。
 
 屏幕将显示暂停的浏览器窗口：
@@ -4731,7 +4802,7 @@ document.getElementbyId(“Answer”).innerHTML = x;
 
 让我们看看如何处理运行时错误。
 
-# try 和 catch 块 #toc.xhtml_s243a
+## try 和 catch 块
 
 `try…catch` 语句处理运行代码时可能发生的错误。你将可能出错的代码放在 `try` 块中，调试器会尝试执行它。如果发生错误，`catch` 块中的代码将触发。这可以防止页面崩溃以及浏览器产生错误。
 
@@ -4774,6 +4845,7 @@ function Check() {
 2.  以 HTML 扩展名保存文件，例如 `Chapter 15.5.html`。
 
 3.  双击该文件在默认浏览器中打开它。
+
 4.  在 Google Chrome 中按 `Ctrl` + `Shift` + `J` 或 `F12` 打开控制台窗口。
 
 输出示例所示：
@@ -4784,11 +4856,11 @@ function Check() {
 
 `try` 块用于确定用户输入到 `userInput` 字段的内容。如果数字在 `15` 到 `20` 之间，什么都不会发生；换句话说，不会产生错误。然而，如果没有输入值、输入单词而不是数字、或者值大于 `20`（如 `Figure 15.5`所示），或值小于 `15`，将抛出错误并在 `catch` 块内部处理。
 
-# 编码风格 #toc.xhtml_s244a
+## 编码风格
 
 每种编程语言都有一套开发者应该遵循的不成文规则。好吧，并非完全不成文，而是一些被遵循的规则，你可以称之为标准，以提高代码的可读性。这是必要的，因为脚本可能会变得非常非常长，你很快就会在大量糟糕的变量和对象名称以及混乱的条件语句和循环中迷失。
 
-# 变量和对象名称 #toc.xhtml_s245a
+## 变量和对象名称
 
 变量命名主要有两种规范，即：驼峰命名法（camel case）和帕斯命名法（pascal case）。它们在大写方式上有所不同，如下：
 
@@ -4802,12 +4874,14 @@ function Check() {
 变量名可以包含字母、数字、美元符号和下划线。以下是几个例子：
 
 `full_Name`
+
 `student1`
+
 `student_Name$`
 
 但记住，你应该在整个脚本始终保持相同的命名规范。变量在 `第 12 章：变量` 中已经讨论过。
 
-# 运算符和缩进 #toc.xhtml_s246a
+## 运算符和缩进
 
 运算符的通用规则是在所有操作数之间始终保持空格格。比较以下内容：
 
@@ -4837,11 +4911,13 @@ if (time < 12) {
 ```javascript
 var time = new Date().getHours();
 if (time < 12) {greeting =“morning”;}else if (time < 18) {greeting =“afternoon”;}else {greeting =“evening”;}
-```（注：根据文本上下文重构）
+```
+
+（注：根据文本上下文重构）
 
 带有空格的部分要易读得多。这可能是一个非常简单的例子，但当嵌套控制流语句时，你会感到困惑。
 
-# 对象规则 #toc.xhtml_s247a
+## 对象规则
 
 `第 2 章：对象` 定义的常见做法如下：
 
@@ -4865,7 +4941,7 @@ var student = {
 
 很容易看出对象由什么组成。
 
-# 注释 #toc.xhtml_s248a
+## 注释
 
 注释用于描述代码正在做什么。相信我，在太晚之前你不会这有多重要。想象你在解决一个复杂的问题，过了一段时间你解决了。进一步想象你没有添加注释来描述代码，并在 6 个月后回到代码处进行更新。记住你做了什么以及在哪里做的可能极其困难。
 
@@ -4878,7 +4954,7 @@ var student = {
 
 让我们仔细观察。
 
-# 单行注释 #toc.xhtml_s249a
+## 单行注释
 
 单行注释可以放在一行的任何位置，例如：
 
@@ -4888,7 +4964,7 @@ var objstudent; //在此处声明学生对象
 
 在上述代码中，注释以两个斜杠开头，并放在对象声明之后。
 
-# 多行注释 #toc.xhtml_s250a
+## 多行注释
 
 多行注释可以跨多行，例如：
 
@@ -4896,8 +4972,6 @@ var objstudent; //在此处声明学生对象
 /*这个条件语句测试时间
 显示的结果取决于一天中的时间*/
 ```
-
-
 
 `创建者：OJ du Preez`
 
@@ -4930,9 +5004,13 @@ document.write(greeting);
 ## 问题
 
 1. 写出 JavaScript 中两种最常见的错误类型
+
 2. `console.time` 和 `console.timeEnd` 关键字的作用是什么？
+
 3. 如何在调试器中暂停代码？
+
 4. 为什么需要使用 `try…catch`？
+
 5. 写出 JavaScript 中的两种注释类型。
 
 # 第四部分
@@ -5007,44 +5085,47 @@ else {
 document.write(greeting);
 ```
 
-
-
 控制台窗口显示了 `Sachin` 和 `CSS`，如预期所示。尝试操作其他元素，不要害怕在初始数组中添加更多元素。
+
+
 
 数组的妙之处在于，你可以通过向其添加或删除元素来操作它的元素。你还可以在特定位置插入元素并从特定位置删除元素。
 
-# 向数组中添加项 (#toc.xhtml_s261a)
+# 向数组中添加项
 
 数组在向其添加项时，功能性强大得令人惊讶。你可以将元素添加到数组的开头、末尾或数组的中间。
 
-### 使用 push 向数组的末尾添加项
+## 使用 push 向数组的末尾添加项
 
 为了向数组的末尾添加元素，你需要使用 `push` 方法，如下所示：
 
 ```javascript
-let arrStudents = [“Ockert”, “Sachin”, “Shoaib”]; //Easy
-arrStudents.push(“John”);
+let arrStudents = ["Ockert", "Sachin", "Shoaib"]; //Easy
+arrStudents.push("John");
 ```
+
 John 被添加到数组的末尾
 
-### 使用 unshift 向数组的开头添加项
+## 使用 unshift 向数组的开头添加项
 
 利用 `unshift` 向数组的开头添加项。这里有一个小示例：
 
 ```javascript
-let arrStudents = [“Ockert”, “Sachin”, “Shoaib”];
-arrStudents.unshift(“Sam”);
+let arrStudents = ["Ockert", "Sachin", "Shoaib"];
+arrStudents.unshift("Sam");
 ```
+
 Sam 现在位于开头。
 
-### 使用 splice 向数组的中间添加项
+## 使用 splice 向数组的中间添加项
 
 要向数组的中间（或开头、结尾以外的任何地方）添加项，你需要使用 `splice` `array` 方法。如下所示：
 
 ```javascript
-let arrStudents = [“Ockert”, “Sachin”, “Shoaib”];
-arrStudents.splice(2, 0, “Peter”);
+let arrStudents = ["Ockert", "Sachin", "Shoaib"];
+arrStudents.splice(2, 0, "Peter");
 ```
+
 在这里 `Peter` 被放置在数组的第三位置。`splice` 方法的一点是，你也可以删除项，但在这种情况下你提供了 `0`，因为你不想删除项，你只是想插入。
 
 为了将所有的添加方法整合在一起，让我们来快速做个练习：
@@ -5057,13 +5138,13 @@ arrStudents.splice(2, 0, “Peter”);
 <h1>Adding Array elements</h1>
 <p>Adding Array elements</p>
 <script>
-let arrStudents = [“Ockert”, “Sachin”, “Shoaib”];
+let arrStudents = ["Ockert", "Sachin", "Shoaib"];
 console.log(arrStudents);
-arrStudents.push(“John”);
+arrStudents.push("John");
 console.log(arrStudents);
-arrStudents.unshift(“Sam”);
+arrStudents.unshift("Sam");
 console.log(arrStudents);
-arrStudents.splice(2, 0, “Peter”);
+arrStudents.splice(2, 0, "Peter");
 console.log(arrStudents);
 </script>
 </body>
@@ -5071,7 +5152,9 @@ console.log(arrStudents);
 ```
 
 2.  用 HTML 扩展保存文件，例如 `Chapter 16.4.html`。
+
 3.  双击文件在默认浏览器中打开。
+
 4.  在 Google Chrome 中按 `Ctrl` + `Shift` + `J` 或 `F12` 打开控制台窗口。
 
 输出下所示：
@@ -5082,7 +5165,7 @@ console.log(arrStudents);
 
 初始数组包含三个项。John 被添加到末尾，然后 Sam 被添加到数组的开头。最后，Peter 被添加到中间。删除项的操作也类似，让我们来看
 
-# 从数组中移除项 (#toc.xhtml_s262a)
+# 从数组中移除项
 
 数组在从它们中移除项时也同样多功能。你可以从数组的开头和末尾删除项。你还可以从数组的中间删除项。
 
@@ -5096,7 +5179,7 @@ console.log(arrStudents);
 <h1>Removing Array elements</h1>
 <p> Removing Array elements</p>
 <script>
-let arrStudents = [“Ockert”, “Sachin”, “Shoaib”];
+let arrStudents = ["Ockert", "Sachin", "Shoaib"];
 console.log(arrStudents);
 arrStudents.pop();
 console.log(arrStudents);
@@ -5106,7 +5189,9 @@ console.log(arrStudents);
 ```
 
 2.  用 HTML 扩展保存文件，例如 `Chapter 16.5.html`。
+
 3.  双击文件在默认浏览器中打开。
+
 4.  在 Google Chrome 中按 `Ctrl` + `Shift` + `J` 或 `F12` 打开控制台窗口。
 
 结果数组显示在如下所示：
@@ -5127,13 +5212,13 @@ console.log(arrStudents);
 <h1>Adding Array elements</h1>
 <p>Adding Array elements</p>
 <script>
-let arrStudents = [“Ockert”, “Sachin”, “Shoaib”];
+let arrStudents = ["Ockert", "Sachin", "Shoaib"];
 console.log(arrStudents);
-arrStudents.push(“John”);
+arrStudents.push("John");
 console.log(arrStudents);
-arrStudents.unshift(“Sam”);
+arrStudents.unshift("Sam");
 console.log(arrStudents);
-arrStudents.splice(2, 0, “Peter”);
+arrStudents.splice(2, 0, "Peter");
 console.log(arrStudents);
 </script>
 </body>
@@ -5141,7 +5226,9 @@ console.log(arrStudents);
 ```
 
 2.  用 HTML 扩展保存文件，例如 `Chapter 16.4.html`。
+
 3.  双击文件在默认浏览器中打开。
+
 4.  在 Google Chrome 中按 `Ctrl` + `Shift` + `J` 或 `F12` 打开控制台窗口。
 
 输出下所示：
@@ -5152,7 +5239,7 @@ console.log(arrStudents);
 
 初始数组包含三个项。John 被添加到末尾，然后 Sam 被添加到数组的开头。最后，Peter 被添加到中间。删除项的操作也类似，让我们来看
 
-# 多维数组 (#toc.xhtml_s263a)
+# 多维数组
 
 数组在从它们中移除项时也同样多功能。你可以从数组的开头和末尾删除项。你还可以从数组的中间删除项。
 
@@ -5166,14 +5253,14 @@ console.log(arrStudents);
 <h1>Multidimensional Array</h1>
 <p>Multidimensional Array</p>
 <script>
-var emp1 = [“Ockert”, 15, 25000];
-var emp2 = [“Jack”, 30, 50000];
-var emp3 = [“Joseph”, 45, 75000];
-var emp4 = [“William”, 60, 100000];
-var emp5 = [“Paul”, 75, 125000];
+var emp1 = ["Ockert", 15, 25000];
+var emp2 = ["Jack", 30, 50000];
+var emp3 = ["Joseph", 45, 75000];
+var emp4 = ["William", 60, 100000];
+var emp5 = ["Paul", 75, 125000];
 var salaries = [emp1, emp2, emp3, emp4, emp5];
 for(var i = 0; i < salaries.length; i++) {
-document.write(salaries[i] + “</br>”);
+document.write(salaries[i] + "</br>");
 }
 </script>
 </body>
@@ -5181,7 +5268,9 @@ document.write(salaries[i] + “</br>”);
 ```
 
 2.  用 HTML 扩展保存文件，例如 `Chapter 16.7.html`。
+
 3.  双击文件在默认浏览器中打开。
+
 4.  在 Google Chrome 中按 `Ctrl` + `Shift` + `J` 或 `F12` 打开控制台窗口。
 
 写入页面的文本如下所示：
@@ -5192,22 +5281,23 @@ document.write(salaries[i] + “</br>”);
 
 创建了五个数组。每个包含一个字符串值和两个数值。然后创建了另一个数组，它包含了五个数组，因此变成了多维。最后，使用 `for` 循环遍历数组，并将其打印到页面上，如所示。
 
-# 总结 (#toc.xhtml_s264a)
+# 总结
 
 在本章中，我们学习了如何使用数组。你学习了如何从数组中移除项以及向数组中添加项。你还学习了什么是多维数组。
 
 在下一章中，我们将介绍 JavaScript 中的正则表达式。
 
-# 问题 (#toc.xhtml_s265a)
+# 问题
 
 1.  定义数组术。
+
 2.  `shift` 方法的作用是什么？
+
 3.  举例使用 `splice` 移除数组项的例子。
+
 4.  什么是多维数组？
+
 5.  `pop` 方法的作用是什么？
-
-
-
 
 在字符串中搜索文本可能是困难的，特别是当你只知道字符串中短语的一部分时。幸运的是，JavaScript 包含了正则表达式。正则表达式帮助你通过特殊字符和模式的组合来识别文本部分。
 
@@ -5216,22 +5306,27 @@ document.write(salaries[i] + “</br>”);
 ## 结构
 
 *   正则表达式定义
+
 *   正则表达式修饰符/标志（flags）
+
 *   正则表达式模式
 
 ## 目标
 
 *   了解正则表达式。
+
 *   了解如何使用修饰符/标志来改进搜索结果。
+
 *   利用模式搜索文本或短语。
 
-## 正表达式定义
+## 正则表达式定义
 
 `JavaScript` 中的正则表达式是用于匹配字符串中各种字符组合的模式。这些字符序列形成搜索模式，可以用于搜索字符串内部的文本以及替换字符串中的文本。它可以是一个单个字符，也可以是一个更复杂的模式。
 
 正则表达式可以通过以下两种方式之一构建：
 
 *   使用正则表达式字面量（regular expression literal）
+
 *   调用 `RegExp` 对象的构造函数。
 
 让我们进入更多细节。
@@ -5251,7 +5346,7 @@ let exp = /ab+c/;
 你通过使用关键字 `new`（在 `第 2 章：JavaScript 对象` 中已解释）来调用 `RegExp` 对象的构造函数，例如：
 
 ```javascript
-let exp = new RegExp('‘ab+c’);
+let exp = new RegExp('ab+c');
 ```
 
 当你知道正则表达式模式可能会发生，或者你不知道模式并正在从其他来源获取它时，这种方法是最好的。
@@ -5285,20 +5380,20 @@ let exp = new RegExp('‘ab+c’);
     <h1>RegEx Example 1</h1>
     <p>RegEx Example 1</p>
     <script>
-        let str = “Ob-La-Di, ob-la-da”;
-        document.write( str.match(/Ob/gi) + “</br>” ;
+        let str = "Ob-La-Di, ob-la-da";
+        document.write( str.match(/Ob/gi) + "</br>" );
         let result = str.match(/La/i);
-        document.write( result[0] + “</br>”) ;
-        document.write( result.length + “</br>”) ;
+        document.write( result[0] + "</br>" );
+        document.write( result.length + "</br>" );
         // Details:
-        document.write( result.index + “</br>”) ;
-        document.write( result.input + “</br>”) ;
+        document.write( result.index + "</br>" );
+        document.write( result.input + "</br>" );
         try {
             let matches = str.match(/JavaScript/);
             if (!matches.length) {
             }
         } catch(err) {
-            document.write(“Error in the line above”);
+            document.write("Error in the line above");
         }
     </script>
 </body>
@@ -5306,6 +5401,7 @@ let exp = new RegExp('‘ab+c’);
 ```
 
 2.  用 HTML 扩展保存文件，例如 `Chapter 17.1.html`。
+
 3.  双击文件在默认浏览器中打开它。
 
 上述代码的输出显示如下所示：
@@ -5345,28 +5441,11 @@ let exp = new RegExp('‘ab+c’);
 | `[^xyz]` | 匹配不在括号内的任意内容 |
 | `[\b]` | 匹配退格符 |
 | `\b` | 匹配单词字符与非单词字符之间的边界 |
-| `\B` | 匹配以下位置： |
-
-*   字符串第一个字符之前 |
-
-*   字符串最后一个字符之后 |
-
-*   两个单词字符之间 |
-
-*   两个非单词字符之间 |
-
-*   空字符串。 |
+| `\B` | 匹配以下位置：<br>* 字符串第一个字符之前<br>* 字符串最后一个字符之后<br>* 两个单词字符之间<br>* 两个非单词字符之间<br>* 空字符串。 |
 | `\cX` | 匹配字符串中的控制字符 |
 | `\d` | 匹配数字字符 |
 | `\D` | 匹配非数字字符 |
 | `\f` | 匹配分页符 |
-
-
-
-
-
-| 模式 | 描述 |
-| --- | --- |
 | `\n` | 匹配换行符 |
 | `\r` | 匹配回车符 |
 | `\s` | 匹配空白字符 |
@@ -5379,7 +5458,7 @@ let exp = new RegExp('‘ab+c’);
 | `\xhh` | 匹配代码为 `hh` 的字符（两个十六进制数字） |
 | `\uhhhh` | 匹配代码为 `hhhh` 的字符（四个十六进制数字） |
 
-表 17.2: 特殊字符模式
+**表 17.2:** 特殊字符模式
 
 让我们来做个快速练习吧！
 
@@ -5388,32 +5467,44 @@ let exp = new RegExp('‘ab+c’);
 ```html
 <html><body><h1>RegEx Example 2</h1><p>RegEx Example 2</p><script>
 var Num = /^\d{10}$/;
-console.log(Num.test‘7795483645’));
+console.log(Num.test('7795483645'));
 var Dt = /^(\d{1,2}-){2}\d{2}(\d{2})?$/;
-console.log(Dt.test‘01-01-1990’));
-console.log(Dt.test‘01-01-90’));
+console.log(Dt.test('01-01-1990'));
+console.log(Dt.test('01-01-90'));
 var Txt = /^(.{3}\.){3}.{3}$/;
-console.log(Txt.test‘abc.def.123.456’));
-console.log(Txt.test‘abc.def.ghi.jkl’));
+console.log(Txt.test('abc.def.123.456'));
+console.log(Txt.test('abc.def.ghi.jkl'));
 </script></body></html>
 ```
 
 2. 以 HTML 扩展名保存文件，例如 `Chapter 17.2.html`。
+
 3. 双击该文件在默认浏览器中打开。
+
 4. 在 Google Chrome 中按 `Ctrl` + `Shift` + `F12` 打开控制台窗口。
 
 这看起来非常复杂！其实其实不是。让我来拆解一下。
 
 * 变量 `Num` 包含一个正则表达式模式。
+
     * 在此模式中，你通过在开头包含 `^` 在字符串结尾包含 `$` 来确保匹配跨越整个字符串。
+
     * 表达式中的 `\d` 匹配数字。
+
     * `{10}` 精确匹配前一个表达式 10 次。
+
 * 变量 `Dt` 也以 `^` 开头并以 `$` 结尾，以便查看整个字符串。
+
     * 第一个左括号开始第一个子表达式。
+
     * `\d{1,2}` 匹配 1 个数字，但最多可以有 2 个数字。
+
     * 匹配一个连字符 `-`。
+
     * 右括号结束第一个子表达式。
+
     * `{2}` 将第一个子表达式匹配 2 次。
+
 * 变量 `Txt` 仅允许由四个三字母组组成的字符串输入，每组之间由点隔开。
 
 在每个表达式中，都使用了 `test` 方法。该方法将返回 `true` 或 `false`，取决于表达式是否匹配成功。
@@ -5422,7 +5513,7 @@ console.log(Txt.test‘abc.def.ghi.jkl’));
 
 ![](img/Img_17_02.jpg)
 
-图 17.2: 运行中的正则表达式
+**图 17.2:** 运行中的正则表达式
 
 所有测试均成功。
 
@@ -5433,32 +5524,34 @@ console.log(Txt.test‘abc.def.ghi.jkl’));
 ```html
 <html><body><h1>RegEx Example 3</h1><p>RegEx Example 3</p><script>
 var regex1 = /lo{2}t/;
-console.log(regex1.test‘loot’));
-console.log(regex1.test‘lot’));
+console.log(regex1.test('loot'));
+console.log(regex1.test('lot'));
 var regex2 = /[hm]ail/;
-console.log(regex2.test‘hail’));
-console.log(regex2.test‘mail’));
-console.log(regex2.test‘nail’));
+console.log(regex2.test('hail'));
+console.log(regex2.test('mail'));
+console.log(regex2.test('nail'));
 var regex3 = /\d+/;
-console.log(regex3.test‘7’));
-console.log(regex3.test‘77845’));
-console.log(regex3.test‘77777723’));
+console.log(regex3.test('7'));
+console.log(regex3.test('77845'));
+console.log(regex3.test('77777723'));
 var regex4 = /(green|red) apple/;
-console.log(regex4.test‘green apple’));
-console.log(regex4.test‘red apple’));
-console.log(regex4.test‘orange apple’));
+console.log(regex4.test('green apple'));
+console.log(regex4.test('red apple'));
+console.log(regex4.test('orange apple'));
 </script></body></html>
 ```
 
 2. 以 HTML 扩展名保存文件，例如 `Chapter 17.3.html`。
+
 3. 双击该文件在默认浏览器中打开。
+
 4. 在 Google Chrome 中按 `Ctrl` + `Shift`+ `J` 或 `F12` 打开控制台窗口。
 
 [图 17.3] 显示了测试结果：
 
 ![](img/Img_17_03.jpg)
 
-图 17.3: 更多的正则表达式测试
+**图 17.3:** 更多的正则表达式测试
 
 让我们来看看这里测试了什么。第一个对象 `regex1` 测试了两个单词：`loot` 和 `lot`。`loot` 成功了，但 `lot` 没有。为什么？因为你指定了在结尾的 `t` 之前需要 2 个字符。
 
@@ -5477,7 +5570,9 @@ console.log(regex4.test‘orange apple’));
 ## 问题
 
 1. 定义正则表达式术语。
+
 2. 写出构造正则表达式的两种方法。
+
 3. 写出三个正则表达式标志。
 
 # 第 18 章
@@ -5493,11 +5588,13 @@ JavaScript 函数可以变得更加简单，并在需要时自定义以使用特
 ## 结构
 
 * 偏函数
+
 * 柯里化
 
 ## 目标
 
 * 理解偏函数应用函数式编程概念。
+
 * 理解柯里化函数式编程概念。
 
 ## 偏函数
@@ -5534,14 +5631,16 @@ console.log(doubleAgain);
 ```
 
 2. 以 HTML 扩展名保存文件，例如 `Chapter 18.1.html`。
+
 3. 双击该文件在默认浏览器中打开。
+
 4. 如果浏览器是 Google Chrome，按 `Ctrl` + `Shift` + `J` 打开控制台窗口。
 
 上述代码的输出如下所示所示：
 
 ![](img/Img_18_01.jpg)
 
-图 18.1: 偏函数绑定示例
+**图 18.1:** 偏函数绑定示例
 
 函数 `add` 是 JavaScript 中调用和使用函数的普通方式。函数 `addAgain` 展示了绑定的实际应用。你可以看到，并不是所有的参数都提供了值，但 JavaScript 编译器完全没有抱怨。
 
@@ -5549,19 +5648,15 @@ console.log(doubleAgain);
 
 1. 打开你任选的文本编辑器，并输入以下 HTML 和 JavaScript 代码：
 
-
-
-
-
 ```javascript
 function addStudent(fullName, age, course) {
-    var message = ‘”’+ fullName + ‘, ‘ + age + ‘,” ‘ +
-    course + ‘ added to database.’;
+    var message = '"' + fullName + ', ' + age + '," ' +
+    course + ' added to database.';
     console.log(message);
 }
-var student_1 = addStudent.bind(null, “Ockert”);
-student_1(41, “JavaScript”);
-var student_2 = addStudent.bind(null, “du Preez”, 41, “JavaScript”);
+var student_1 = addStudent.bind(null, "Ockert");
+student_1(41, "JavaScript");
+var student_2 = addStudent.bind(null, "du Preez", 41, "JavaScript");
 student_2();
 ```
 
@@ -5575,7 +5670,7 @@ student_2();
 
 ![](img/Img_18_02.jpg)
 
-图 18.2：复杂函数的 `bind` 示例。
+**图 18.2：** 复杂函数的 `bind` 示例。
 
 原始函数 `addStudent` 包含三个参数：`fullName`、`age` 和 `course`。传递给此函数的任何内容都会带有友好的消息打印在控制台窗口中。`student_1` 变量通过提供一个值绑定到 `addStudent` 函数。在下一行中，另外两个参数值被提供给绑定函数。`student_2` 也绑定到了 `addStudent` 函数，但提供了一个额外的参数。
 
@@ -5626,7 +5721,7 @@ console.log(result_3);
 
 ![](img/Img_18_03.jpg)
 
-图 18.3：数组与函数绑定
+**图 18.3：** 数组与函数绑定
 
 ## 柯里化 (Currying)
 
@@ -5669,7 +5764,7 @@ console.log(add_2(1)(2)(3))
 
 ![](img/Img_18_04.jpg)
 
-图 18.4：柯里化示例
+**图 18.4：** 柯里化示例
 
 第一个函数 `add_1` 是一个普通的 JavaScript 函数，并会被输出到控制台。函数 `adds_2` 是柯里化的示例。它将函数拆分为多个函数，每个函数接受一个参数。在这种情况下，有 3 个参数，因此会有 3 个内联函数。
 
@@ -5682,6 +5777,7 @@ console.log(add_2(1)(2)(3))
 ## 问题
 
 1. 定义部分应用（partials）这一术语。
+
 2. 什么是柯里化？
 
 # 第 V 部分
@@ -5701,14 +5797,19 @@ JavaScript 已经存在了很久，而且还将存在更久。像任何编程语
 ## 结构
 
 *   jQuery 和 JavaScript
+
 *   JSON 和 JavaScript
+
 *   AJAX 和 JavaScript
+
 *   基于 JavaScript 或受 JavaScript 影响的语言
 
 ## 目标
 
 *   理解什么是 jQuery 以及如何使用。
+
 *   理解什么是 JSON 和 AJAX 以及如何在 JavaScript 中使用它们。
+
 *   了解 ActionScript、CoffeeScript 和 TypeScript 如何工作。
 
 ## 其他语言
@@ -5730,7 +5831,7 @@ JavaScript 和 jQuery 之间的一些重要区别下表所示：
 | 代码行长。 | 代码更少。 |
 | 学习困难。 | 相对容易学习。 |
 
-表 19.1：JavaScript 对比 jQuery
+**表 19.1：** JavaScript 对比 jQuery
 
 让我们通过几个练习快速查看代码编写上的差异。
 
@@ -5739,23 +5840,20 @@ JavaScript 和 jQuery 之间的一些重要区别下表所示：
 ```html
 <html
 <head>
-<script src= “https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js”></script>
+<script src= "https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 <body>
 <h1>jQuery versus JavaScript 1</h1>
 <p>jQuery versus JavaScript 1</p>
-<input id=”button1” type=”button”value=”click Me!” //>
+<input id="button1" type="button" value="click Me!" //>
 <script>
-$(‘#button1’).click(function() {
-    alert(“BpB”);
+$('#button1').click(function() {
+    alert("BpB");
 });
 </script>
 </body>
 </html>
 ```
-
-
-
 
 2. 以 HTML 扩展名保存文件，例如 `Chapter 19.1.html`。
 
@@ -5770,10 +5868,10 @@ $(‘#button1’).click(function() {
 <body>
 <h1>jQuery versus JavaScript 2</h1>
 <p>jQuery versus JavaScript 2</p>
-<input id=”button1” type=”button”value=”click Me!”/>
+<input id="button1" type="button" value="click Me!"/>
 <script>
-document.getElementById(“button1”).addEventListener(‘click’, function(){
-alert(“BpB”);
+document.getElementById("button1").addEventListener('click', function(){
+alert("BpB");
 });
 </script>
 </body>
@@ -5794,7 +5892,7 @@ alert(“BpB”);
 
 ```html
 <head>
-<script src= “https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js”>
+<script src= "https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
 </script>
 </head>
 ```
@@ -5805,8 +5903,8 @@ alert(“BpB”);
 
 ```javascript
 <script>
-$(‘#button1’).click(function() {
-alert(“BpB”);
+$('#button1').click(function() {
+alert("BpB");
 });
 </script>
 ```
@@ -5817,8 +5915,8 @@ alert(“BpB”);
 
 ```javascript
 <script>
-document.getElementById(“button1”).addEventListener(‘click’, function(){
-alert(“BpB”);
+document.getElementById("button1").addEventListener('click', function(){
+alert("BpB");
 });
 </script>
 ```
@@ -5831,27 +5929,25 @@ alert(“BpB”);
 
 如果你看这个名字，你会看到 JavaScript Object Notation，那么 JavaScript 对象和 JSON 之间的真实区别是什么？让我来回答。
 
-JavaScript 对象在第 2 章：JavaScript 对象中有深入介绍，但这里有几个重点。
-
-## JavaScript 对象
+### JavaScript 对象
 
 对象是拥有属性和方法的实体。属性描述对象。方法是该对象可以执行的操作。基本上，JavaScript 中的一切万物都可以是对象。除了原始类型外，所有的 JavaScript 值都是对象。在详细介绍内置对象之前，让我们快速探索一下原始类型。
 
-## Object 数据类型
+### Object 数据类型
 
 对象也是变量，但与原始类型不同，对象可以在其中存储多个值。对象存储键值对的数据集合和复杂实体。对象内部的信息以键值对的形式存储。键通常是属性名。值是该属性的值，例如：
 
 ```javascript
 var objStudent = {
-Name : “Ockert”,
-Course : “JavaScript”,
+Name : "Ockert",
+Course : "JavaScript",
 Year : 2019
 };
 ```
 
 在上面的代码段中，创建了一个名为 `objStudent` 的新 JavaScript 对象。`objStudent` 包含三个属性，即 `Name`、`Course` 和 `Year`。
 
-## 创建 JavaScript 对象
+### 创建 JavaScript 对象
 
 现在我们对对象有了更多了解，让我们来看看如何创建它们。可以使用以下任何一种方式创建对象：
 
@@ -5863,14 +5959,14 @@ Year : 2019
 
 让我逐一解释它们。
 
-## 对象字面量语法
+### 对象字面量语法
 
 这种方法非常易理解且执行速度快。这是一个示例：
 
 ```javascript
 var objCar = {
-make : “BMW”,
-model : “i8 Roadster”,
+make : "BMW",
+model : "i8 Roadster",
 price : 2329300
 };
 ```
@@ -5880,13 +5976,13 @@ price : 2329300
 现在创建的对象名为 `objCar`。它包含 make、model 和 price 属性。为了使用 `objCar` 对象，你可以编写如下的语句：
 
 ```javascript
-console.log(objCar); // 输出 {make: “BMW”, model: “i8 Roadster”, price: “2329300”}
+console.log(objCar); // 输出 {make: "BMW", model: "i8 Roadster", price: "2329300"}
 console.log(objCar.make); // 输出 BMW
 console.log(objCar.model); // 输出 i8 Roadster
 console.log(objCar.price); // 输出 2329300
 ```
 
-## new 关键字
+### new 关键字
 
 使用 `new` 关键字创建对象类似于在基于类的语言（如 C# 或 Java）中创建对象。使用 `new` 关键字创建对象有两种方法：
 
@@ -5924,9 +6020,6 @@ this.hasOutsideWalls = _walls;
 }
 ```
 
-
-
-
 构造函数的名称为 `House`。在括号内有五个参数：（`_bed`、`_bath`、`_garage`、`_pool` 和 `_walls`）。这些参数将用于向 `House` 函数传递信息。在构造函数内部，每个属性都将被设置为其对应的参数。记住，这仅仅是一个模板，目前还没有任何值。
 
 现在我们已经有了构造函数，基于它创建对象就很简单了。方法如下：
@@ -5938,27 +6031,27 @@ var houseTwo = new House(3, 1, 1, true, false);
 
 上面的 `houseOne` 变量是一个新的 `House` 对象。它有 4 卧室、2 间浴室、2 个车库、没有游泳池且有外墙。相比之下，`houseTwo` 变量有 3 卧室、1 间浴室、1 个车库、一个游泳池，且没有外墙。
 
-## 创建 JSON 对象
+### 创建 JSON 对象
 
 JSON 对象写在花括号内，并可以包含多个键/值对，如下所示：
 
 ```json
-{"firstName”:”Ockert”, “lastName”:”du Preez”
+{"firstName":"Ockert", "lastName":"du Preez"
 ```
 
 你可以更进一步，在一个 `Student` 对象中包含更多的 `firstName` 和 `lastName`，例如：
 
 ```json
 {
-  “Student”:[
-    {"firstName”:”Ockert”, “lastName”:”du Preez”},
-    {"firstName”:”William”, “lastName”:”Shakespeare”},
-    {"firstName”:”Stephen”, “lastName”:”King}
+  "Student":[
+    {"firstName":"Ockert", "lastName":"du Preez"},
+    {"firstName":"William", "lastName":"Shakespeare"},
+    {"firstName":"Stephen", "lastName":"King"}
   ]
 }
 ```
 
-## 有效 JSON 的规则
+### 有效 JSON 的规则
 
 以下内容在 JSON 格式中都是允许的：
 
@@ -5980,17 +6073,17 @@ JSON 对象写在花括号内，并可以包含多个键/值对，如下所示�
     <p>Encoding and Decoding JSON</p>
     <script>
         const encodeData = {
-            name: “Ockert du Preez”,
+            name: "Ockert du Preez",
             age: 41,
-            title: “JavaScript Guru”
+            title: "JavaScript Guru"
         }
         const encodeStr = JSON.stringify(encodeData);
         console.log(encodeStr);
-        const decodeStr = ‘{
-            “name”:”Ockert du Preez”,
-            “age”:41,
-            “title”:”JavaScript Guru”
-        }’;
+        const decodeStr = '{
+            "name":"Ockert du Preez",
+            "age":41,
+            "title":"JavaScript Guru"
+        }';
         const decodeData = JSON.parse(decodeStr);
         console.log(decodeData.title);
     </script>
@@ -6038,13 +6131,13 @@ AJAX 的强大之处在于它允许通过与后台 Web 服务器交换数据来�
 
 ```php
 <?php
-if(isset($_GET[“studentFirstName”]) && isset($_GET[“studentLastName”])) {
-    $fname = htmlspecialchars($_GET[“studentFirstName”]);
-    $lname = htmlspecialchars($_GET[“studentLastName”]);
-    $studentFullName = $studentFirstName.“ “.$studentLastName;
-    echo “Hello, $studentFullName! Welcome!”;
+if(isset($_GET["studentFirstName"]) && isset($_GET["studentLastName"])) {
+    $fname = htmlspecialchars($_GET["studentFirstName"]);
+    $lname = htmlspecialchars($_GET["studentLastName"]);
+    $studentFullName = $studentFirstName." ".$studentLastName;
+    echo "Hello, $studentFullName! Welcome!";
 } else {
-    echo “Hi there, stranger! Welcome!”;
+    echo "Hi there, stranger! Welcome!";
 }
 ?>
 ```
@@ -6059,10 +6152,10 @@ if(isset($_GET[“studentFirstName”]) && isset($_GET[“studentLastName”])) 
     <script>
         function showStudentName() {
             var request = new XMLHttpRequest();
-            request.open(“GET”, “greet.php?studentFirstName=Ockert&studentLastName=du Preez”);
+            request.open("GET", "greet.php?studentFirstName=Ockert&studentLastName=du Preez");
             request.onreadystatechange = function() {
                 if(this.readyState === 4 && this.status === 200) {
-                    document.getElementById(“result”).innerHTML = this.responseText;
+                    document.getElementById("result").innerHTML = this.responseText;
                 }
             };
             request.send();
@@ -6072,10 +6165,10 @@ if(isset($_GET[“studentFirstName”]) && isset($_GET[“studentLastName”])) 
 <body>
     <h1>AJAX Example</h1>
     <p>AJAX Example</p>
-    <div id=”result”>
+    <div id="result">
         <p>Result will be displayed here</p>
     </div>
-    <button type=”button” onclick=”showStudentName()”>Show Full Name</button>
+    <button type="button" onclick="showStudentName()">Show Full Name</button>
 </body>
 </html>
 ```
@@ -6090,8 +6183,7 @@ if(isset($_GET[“studentFirstName”]) && isset($_GET[“studentLastName”])) 
 
 在你创建的 `Chapter19.4html` 文件中，你创建了一个函数 `showStudentName`。该函数的作用是调用 `greet.php` 文件中的逻辑，组合给定的名和姓。如果函数执行成功，它将在名为 `result` 的 `div` 中显示全名。
 
-
-
+### CoffeeScript
 
 CoffeeScript 可编译为 JavaScript。CoffeeScript 添加了受 Ruby、Python 和 Haskell 启发的语法糖，以增强 JavaScript 的可读性。
 
@@ -6100,7 +6192,7 @@ CoffeeScript 可编译为 JavaScript。CoffeeScript 添加了受 Ruby、Python �
 ```javascript
 add =(a,b) ->
 c=a+b
-console.log “Answer is: “+c
+console.log "Answer is: "+c
 ```
 
 它在 JavaScript 中等价于：
@@ -6111,14 +6203,14 @@ console.log “Answer is: “+c
   add = function(a, b) {
     var c;
     c = a + b;
-    return console.log(“Answer is: “ + c);
+    return console.log("Answer is: " + c);
   };
 }).call(this);
 ```
 
 虽然 CoffeeScript 使用的代码较少，但理解起来可能会稍微困难。这两个函数本质上是相同的，即两个数字相加并提供答案。
 
-## TypeScript
+### TypeScript
 
 TypeScript 命令行编译器可以作为 Node.js 包安装，请访问以下 URL：
 
@@ -6141,10 +6233,10 @@ TypeScript 命令行编译器可以作为 Node.js 包安装，请访问以下 UR
        this.isAutomatic = isAutomatic;
      }
      make(): void {
-       console.log(‘Car Make and model: ${this.make}, ${this.model}. Number of doors: ${this.doors}’ );
+       console.log('Car Make and model: ${this.make}, ${this.model}. Number of doors: ${this.doors}' );
      }
    }
-   let newCar = new Car(‘Lamborghini’, ‘Aventador’, 2, false);
+   let newCar = new Car('Lamborghini', 'Aventador', 2, false);
    newCar.make();
    ```
 
@@ -6159,7 +6251,11 @@ TypeScript 命令行编译器可以作为 Node.js 包安装，请访问以下 UR
 ## 问题
 
 1. 什么是 jQuery？
+
 2. 什么是 JSON？
+
 3. 什么是 AJAX？
+
 4. 列举两种受 JavaScript 影响的语言。
+
 5. JavaScript 仍然很困难吗？

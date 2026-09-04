@@ -1,15 +1,5 @@
+
 # jQuery, JavaScript 与 HTML5 简易入门指南（由软件工程师撰写）（jQuery, JavaScript, HTML5, Web 开发）（第 1 卷）
-
-
-
-
-
-
-
-
-
-
-
 
 https://archive.org/details/simplestarttojqu0000sand
 
@@ -77,15 +67,16 @@ HTML5 定义了超过 100 个元素。这些元素及其定义在附录中提供
 
 这里，`id` 和 `class` 是属性，其中 `id` 唯一地标识元素，`class` 指定 CSS 样式。
 
-
-
 ### 布尔属性
 
 可以使用多种类型的属性。其中最常用的一种是布尔属性。布尔属性可以从允许的值集合中取值。一些可能的值包括：
 
 - Checked
+
 - Disabled
+
 - Selected
+
 - Readonly
 
 有两种方式可以指定布尔属性的值。
@@ -141,7 +132,9 @@ HTML 文档必须以标签 `<!DOCTYPE html>` 开头。在 HTML5 中，该声明�
 下一个标签应该是 `<html>`。此元素本身包含 `<head>` 和 `<body>` 元素。`<head>` 元素可以包含 HTML 文档的元数据，这些元数据使用 `<meta>` 标签声明和定义。`<head>` 元素还包含 `<title>` 元素，其用途如下：
 
 - 被搜索引擎使用
+
 - 此内容显示在浏览器工具栏中
+
 - 为页面提供默认名称。
 
 `<body>` 元素包含要在 HTML 文档上显示的任何其他信息。
@@ -164,8 +157,11 @@ CONTENT
 注意：
 
 1.  像 '>' 或 '<' 这样的特殊字符是 HTML 语法的一部分，可以在 HTML 文档上使用它们的名称或编号。它们的使用语法是：
+
     *   `&entity_name` 或 `&entity_number`
+
     *   附录中包含了要使用的实体名称和编号的表格。
+
 2.  使用制表符、换行符和空格创建的空格会被 HTML 规范化为单个空格。因此，如果你想使用多个空格，必须使用不换行空格字符。例如，如果你想显示 `10 mph` 并且 `10` 和 `mph` 之间没有换行符分隔，你可以写成 `10&amp;nbsp;mph`。
 
 ### 如何嵌入内容
@@ -177,7 +173,9 @@ CONTENT
 内联框架用于将 HTML 文档内联嵌入到当前 HTML 文档的内容中。因此，从某种意义上说，此元素创建了嵌套浏览器，因为在同一个窗口中加载了多个网页。这些是使用 `<iframe>` 元素实现的。嵌套的浏览上下文可以使用以下方式导航：
 
 - `window.parent` – 此 WindowProxy 对象表示父浏览上下文。
+
 - `window.top` – 此 WindowProxy 对象表示顶层浏览上下文。
+
 - `window.frameElement` – 这表示浏览上下文容器，如果没有上下文容器，则返回 null。
 
 `<iframe>` 元素的语法如下：
@@ -200,8 +198,11 @@ CONTENT
 当你使用沙盒时，会对被调用的上下文施加多项限制。这些限制包括禁用表单、脚本、插件以及除自身之外的任何框架。你可以使用以下关键字强制系统覆盖这些限制：
 
 - `allow-same-origin`
+
 - `allow-scripts`
+
 - `allow-forms`
+
 - `allow-top-navigation`
 
 可以使用空格分隔多个关键字。
@@ -225,7 +226,9 @@ CONTENT
 所有链接都带有下划线，并且根据链接的性质，链接的颜色会发生变化。
 
 - 蓝色 - 未访问的链接
+
 - 紫色 - 已访问的链接
+
 - 红色 - 活动链接
 
 `<a>` 元素的第一个属性是 `href`，其值为 URL。
@@ -244,16 +247,17 @@ CONTENT
 
 这里的 `id` 是你希望链接跳转到的标签的 id。但是，如果你只使用 `#` 值，链接会跳转到页面顶部。
 
-与 `<a>` 元素一起使用的另一个属性是 `target`，它允许你控制链接的行为。例如，如果你希望链接在另一个窗口中打开，那么可以使用此属性指定此要求。可以使用以下值：
+与 `<a>` 元素一起使用的另一个属性是 `target`，它允你控制链接的行为。例如，如果你希望链接在另一个窗口中打开，那么可以使用此属性指定此要求。可以使用以下值：
 
 - `_blank` - 这会在新的浏览器窗口中打开链接。
+
 - `_parent` - 这会在父窗口中打开链接。
+
 - `_self` - 这会在当前窗口中打开链接，这是默认设置。
+
 - `_top` - 这会在当前窗口的最顶层框架中打开链接。
+
 - `<iframe_name>` - 这会在 `<iframe>` 元素中打开链接。
-
-
-
 
 指定的名称。这通常用于菜单中。
 
@@ -288,7 +292,9 @@ CONTENT
 shape属性可以被赋予poly、circle、rect或default值。默认值将区域设置为图像的大小。href和alt属性的使用方式与在`<a>`元素中的使用方式相同。最后，coords属性根据所选形状按以下方式定义：
 
 -   poly – $x_1, y_1, x_2, y_2, ..., x_n, y_n$
+
 -   circle – $x, y, radius$
+
 -   rect – x₁, y₁, x₂, y₂
 
 对于多边形，起始和结束坐标应该相同。如果在这方面存在差异，会添加一个闭合值。
@@ -316,7 +322,9 @@ shape属性可以被赋予poly、circle、rect或default值。默认值将区域
 src属性指定要嵌入文件的URL或地址。`<embed>`元素接受的其他属性包括：
 
 -   type – 用于指定内容的MIME类型
+
 -   height – 用于指定内容的高度（以像素为单位）
+
 -   width – 用于指定内容的宽度（以像素为单位）
 
 如前所述，某些浏览器可能不支持`<embed>`元素。因此，如果你在文档中使用它，你必须添加备用内容规范。例如，如果你正在嵌入一个flash文件，如果浏览器尚不支持它，你必须将用户重定向到flash播放器的下载链接。
@@ -337,11 +345,17 @@ alt="Download Adobe Flash player" />
 `<object>`标签允许你嵌入各种多媒体文件，如视频、音频、PDF、小程序和Flash。该元素接受以下属性：
 
 -   type – 用于指定数据的MIME类型
+
 -   form – 用于指定对象的表单ID
+
 -   data – 用于指定对象使用的资源的URL
+
 -   usemap – 用于指定对象使用的客户端图像映射的名称
+
 -   name – 用于指定对象名称
+
 -   height – 用于指定对象的高度（以像素为单位）
+
 -   width – 用于指定对象的宽度（以像素为单位）
 
 在所有上述属性中，必须指定data或type属性之一。
@@ -357,6 +371,7 @@ alt="Download Adobe Flash player" />
 注意：
 
 1.  `<object>`元素必须始终在`<body>`元素内使用。
+
 2.  HTML5仅支持上述列出的属性以及`<object>`元素的全局属性。
 
 ## 第3章
@@ -389,16 +404,16 @@ JavaScript中定义了几个内置对象。这些包括Object对象、全局对�
 
 由于系统内存限制，253是可以存储的最大整数。需要注意的是，整数计算会产生精确的值。然而，分数数据计算可能会产生...
 
-
-
-
 不精确的结果。因此，这些值必须被截断。
 
 除了数字和字符串，JavaScript 还支持使用以下特殊字符。
 
 - `undefined` 表示该值尚未被赋值。
+
 - `NaN` 代表 'Not a Number'（非数字）。
+
 - `-Infinity` 任何小于 -1.7976931348623157E + 10308 的数字都由 `-Infinity` 表示。
+
 - `Infinity` 任何超过值 1.7976931348623157E + 10308 的数字都由 `Infinity` 表示。
 
 #### 字符串数据类型
@@ -410,8 +425,11 @@ JavaScript中定义了几个内置对象。这些包括Object对象、全局对�
 "Hello World!"
 
 然而，如果你想将引号本身作为字符包含在字符串中，则必须在引号前添加 '\\'。
+
 示例字符串：
+
 'You\'re Welcome'
+
 "You\'re Welcome"
 
 JavaScript 还支持其他转义序列，例如 `\t` 代表制表符，`\n` 代表换行符。
@@ -425,8 +443,11 @@ JavaScript 还支持其他转义序列，例如 `\t` 代表制表符，`\n` 代�
 为了执行计算，需要使用运算符。JavaScript 支持所有基本运算符，运算符优先级如下：
 
 - 加法和减法具有相同的优先级。
+
 - 乘法和除法具有相同的优先级。
+
 - 乘法和除法的优先级高于加法和减法。
+
 - 如果一个表达式包含多个具有相同优先级的运算符，则该表达式从左到右进行计算。
 
 除了基本运算符，JavaScript 还支持取模（`%`）运算符。此运算符执行除法并返回余数作为结果。例如，`23 % 7` 等于 2。
@@ -440,9 +461,13 @@ JavaScript 还支持其他转义序列，例如 `\t` 代表制表符，`\n` 代�
 JavaScript 中可用三种逻辑运算符，即 Not (!)、Or (||) 和 And (&&)。涉及这些运算符的操作结果是布尔值（`true` 或 `false`）。这些操作的结果根据以下规则计算：
 
 | 运算符 | 描述 |
+
 | --- | --- |
+
 | AND (&&) | 二元运算符<br>两个条件都必须为真 |
+
 | OR (\|\|) | 二元运算符<br>至少一个条件必须为真 |
+
 | NOT (!) | 一元运算符<br>条件的值取反 |
 
 例如，
@@ -482,9 +507,13 @@ var result = 23*4+6;
 在命名变量时必须遵循某些规则。这些规则如下：
 
 - 变量名可以是数字和字符的组合。
+
 - 变量名不能以数字开头。
+
 - 变量名中唯一允许的特殊字符是下划线 (_) 和美元符号($)。
+
 - 变量名中不应有任何空格。例如，'result value' 是不允许的。
+
 - JavaScript 关键字是保留的，不能用作变量名。
 
 请注意，**JavaScript** 与 HTML 不同，**区分大小写**。因此，`VAL` 和 `val` 是两个不同的变量。此外，建议变量名应能描述其用途。例如，如果我们命名一个变量为 `result`，很明显这个变量将包含代码计算出的结果值。
@@ -493,7 +522,7 @@ JavaScript 中使用的另一个惯例是变量名的第一个字母小写。但
 
 #### 环境
 
-一组完整的变量及其包含的值构成了所谓的环境。因此，每当你在浏览器中加载一个新网页时，你就是在创建一个新的环境。以 Windows 8 为例，它在应用程序启动时创建一个环境，并在应用程序结束时销毁该环境。
+一组完整的变量及其包含的值构成了所谓的环境。因此，每当你在浏览器中加载一个新网页时，你就是在创建一个新的环境。以 Windows 8 为例，它在应用程启动时创建一个环境，并在应用程序结束时销毁该环境。
 
 #### 函数
 
@@ -521,23 +550,25 @@ var c=multiply(x, y);
 
 这里，`x` 和 `y` 是函数 `multiply` 将作为参数接收的实参。
 
-JavaScript 是一种弱类型语言。这意味着如果你传递给函数的参数数量多于其预期，系统将只使用所需的前 n 个参数，而丢弃其余部分。此功能的优点是你可以使用已实现的函数，并传递额外的参数来扩展该函数并为其添加功能。另一方面，如果你无意中传递了错误数量的参数，你将无法得到任何错误提示。
+JavaScript 是一种弱类型语言。这意味着如果你传递给函数的参数数量多于其预期，系统将只使用所需的前 n 个参数，而丢弃其余部分。此功能的优点是你可以使用已实现的函数，并传递额的参数来扩展该函数并为其添加功能。另一方面，如果你无意中传递了错误数量的参数，你将无法得到任何错误提示。
 
 JavaScript 还提供了一些内置函数来与用户交互。这些函数如下：
 
 - `alert`：此函数显示一个带有消息的警告框，用户单击“确定”按钮后系统恢复操作。示例实现：
+
     - `alert('Alert message!');`
-- `prompt`：此函数向用户显示一个文本框，并要求其输入。你可以在显示的文本框中提供默认值，用户可以单击“确定”按钮以接受输入的值是正确的。示例实现：
+
+- `prompt`：此函数向用户显示一个文本框，并要求其输入。你可以在显示的文本框提供默认值，用户可以单击“确定”按钮以接受输入的值是正确的。示例实现：
+
     - `var result = prompt('Enter a value', 'default value');`
+
 - `confirm`：此消息向用户提供选择以“确定”或“取消”某个操作。示例实现：
+
     - `var result = confirm('Do you wish to proceed?');`
 
 #### 函数作用域
 
 你声明的每个变量都拥有一个作用范围，即该变量在其中有效的函数内部。
-
-
-
 
 变量已声明。这被称为局部作用域。与许多其他语言（通过变量所在的花括号来定义局部作用域）不同，<mark>JavaScript 的局部作用域与函数作用域相同</mark>。
 
@@ -552,8 +583,11 @@ JavaScript 还提供了一些内置函数来与用户交互。这些函数如下
 前面讨论的 prompt 函数返回一个字符串。但是，您要求用户输入一个数字。在这种情况下，可能需要将字符串转换为数字。在 JavaScript 中，可以使用以下函数将变量从一种类型转换为另一种类型：
 
 - **Number 函数**
+
     该函数将其接收到的对象转换为数字数据类型。但是，如果函数无法执行转换，则返回 *NaN*。
+
 - **String 函数**
+
     该函数将其接收到的对象转换为字符串数据类型。
 
 #### 条件编程
@@ -744,6 +778,7 @@ for(i=0; i<10; i=i+1)
 **注意：**
 
 1.  如果在任何时候您希望中断循环，可以使用 `break` 语句。
+
 2.  如果您未指定条件或指定的条件始终为真，则循环将无限运行。
 
 #### 错误处理
@@ -751,9 +786,6 @@ for(i=0; i<10; i=i+1)
 预期在代码的多个点会发生异常。因此，最好实现一种可以帮助您处理这些异常并避免崩溃的机制。
 
 异常可以描述为非法操作或任何意外且不寻常的情况。异常的一些示例包括未经授权的内存访问。
-
-
-
 
 你可以在执行任何操作之前，通过验证变量的值来进行自己水平的异常处理。例如，在进行除法运算前，最好检查分母的值是否等于零。任何涉及将数字除以零的操作都会引发除零异常。
 
@@ -793,59 +825,100 @@ JavaScript 允许用户访问许多现有对象。其中之一是数组。本节
 可以使用以下三种方法创建数组：
 
 - 使用索引器插入元素
+
     - 可以使用 new 关键字创建数组，然后通过为数组的独立元素赋值来向数组中添加元素。new 关键字使用其构造函数创建 Array 对象的一个实例。
+
         - 示例实现：
+
             - var arrName = new Array();
+
             - arrName[0] = 'Jack';
+
             - arrName[1] = 'Alex';
+
 - 紧凑数组
+
     - 第二种实现方式也使用 new 关键字。但是，在这种情况下，值作为 Array 对象构造函数的参数赋给元素。
+
         - 示例实现：
+
             - var arrName = new Array('Jack', 'Alex');
+
 - 字面量数组
+
     - 在这种数组定义方式中，值在方括号内提供。
+
         - 示例实现：
+
             - var arrName = ['Jack', 'Alex'];
 
 使用第一种定义方式的优点是，它允许你在代码中的任何位置为元素赋值。而第二种和第三种实现方式则要求你事先准备好确切的元素列表。
 
 所有对象都有一些属性。对你可能有用的属性之一是 *length*，它是一个只读值，调用时返回数组中存在的元素数量。你可以在循环和条件中使用此属性。
 
-对象也可以有自己的函数。这些函数称为方法。**数组可用的方法包括**：
+对象也可以有自己的函函数。这些函数称为方法。**数组可用的方法包括**：
 
 - concat
+
 - 返回一个数组，该数组是提供给它的两个数组的连接结果。
+
 - indexOf
+
 - 查找相关元素在数组中的位置并返回其索引。
+
 - join
+
 - 此方法连接数组中存在的所有值。但是，默认情况下，所有这些值都用逗号分隔。你也可以指定自己选择的分隔符。
+
 - lastIndexOf
+
 - 此方法的工作方式与 indexOf 类似。但是，它从数组的最后一个元素开始搜索。因此，它返回与指定条件匹配的最后一个元素的索引。
+
 - pop
+
 - 移除最后一个元素并返回其值。
+
 - push
+
 - 将相关元素添加到数组末尾，并返回修改后的 length 值。
+
 - reverse
+
 - 此方法反转数组元素的顺序。此方法会修改原始数组。
+
 - shift
+
 - 移除并返回第一个值。如果数组为空，则返回 undefined。
+
 - slice
+
 - 此方法需要两个参数：起始索引和结束索引。创建一个新数组，其元素与（起始索引）和（结束索引 - 1）位置存在的元素相同。
+
 - sort
+
 - 此方法对元素进行排序并修改原始数组。
+
 - splice
+
 - 此方法从指定数组中移除和添加元素。此方法接受的参数是起始索引（系统应从哪个索引开始移除元素）、要移除的元素数量以及要添加的元素。如果传递的要移除的元素数量为 0，则不会删除任何元素。另一方面，如果此值大于数组的大小，则从起始索引到数组末尾的所有元素都将被删除。
+
 - toString
+
 - 此方法创建一个字符串，该字符串是由数组中存在的所有元素连接而成的逗号分隔字符串。
+
 - unshift
+
 - 此方法在数组的第一个位置添加一个元素，并返回修改后的 length 值。
+
 - valueOf
+
 - 此方法返回一个字符串，该字符串是包含数组中所有值的连接、逗号分隔的字符串。
 
 **注意：**
 
 1. 使用函数时，可以传递整个数组（使用数组名称）或数组的特定元素（使用 数组名称[索引器]）。
-2. 可以通过使用索引器访问元素来修改数组元素。例如，arrName[1] = 'Danny'; 将值 'Danny' 赋给数组的第二个元素。
+
+2. 可以通过使用索引器访问元来修改数组元素。例如，arrName[1] = 'Danny'; 将值 'Danny' 赋给数组的第二个元素。
 
 ### DOM 对象
 
@@ -856,16 +929,27 @@ DOM 是对象层次结构的表示。这些对象可以使用内置的 document 
 DOM 可用的搜索方法包括：
 
 - getElementById
+
 - 此方法返回对具有指定 ID 的第一个元素的引用。
+
 - getElementsByTagName
+
 - 此方法返回具有指定标签名称的活动 NodeList。
+
 - getElementsByName
+
 - 此方法返回具有指定名称的活动 NodeList。这是单选按钮的首选方法。
+
 - getElementsByClass
+
 - 此方法返回具有指定类名的活动 NodeList。但是，Internet Explorer 8 及更早版本不支持此方法。
+
 - querySelector
+
 - 此方法接受 CSS 选择器作为参数，并返回第一个匹配的元素。但是，Internet Explorer 7 及更早版本不支持此方法。
+
 - querySelectorAll
+
 - 此方法接受 CSS 选择器作为参数，并返回所有匹配的元素。因此，它返回一个静态 NodeList。但是，Internet Explorer 7 及更早版本不支持此方法。
 
 ### 事件
@@ -873,9 +957,6 @@ DOM 可用的搜索方法包括：
 如果将 JavaScript 视为一个引擎，那么事件就是赋予其所需动力的火花。**事件可能在两种情况下发生。第一类事件是发生在用户交互期间的事件。** 用户可能点击图像或输入文本。所有这些都被归类为事件。此外，**系统状态的变化也被视为事件。** 例如，如果视频开始或停止播放，就认为发生了事件。DOM 允许你捕获事件并执行相应的代码。
 
 **在 JavaScript 中，事件基于发布-订阅模型。** 创建对象后，开发人员可以发布与该对象相关的事件。此外，每当使用该对象时，都可以为其添加事件处理程序。事件处理程序函数会通知已订阅的事件已被触发。此通知包括关于...
-
-
-
 
 事件包括鼠标位置和按键，以及与该事件相关的其他若干细节。
 
@@ -949,23 +1030,41 @@ JavaScript还提供了 *this* 关键字，如果你需要频繁访问触发事�
 当前浏览器窗口由 `window` 变量表示，它是 **Window对象** 的一个实例。与此对象关联的事件如下：
 
 - afterprint
+
 - beforeonload
+
 - beforeprint
+
 - error
+
 - blur
+
 - haschange
+
 - load
+
 - message
+
 - focus
+
 - online
+
 - offline
+
 - pageshow
+
 - pagehide
+
 - redo
+
 - popstate
+
 - storage
+
 - resize
+
 - unload
+
 - undo
 
 ### 表单事件参考
@@ -973,14 +1072,23 @@ JavaScript还提供了 *this* 关键字，如果你需要频繁访问触发事�
 在HTML表单内发生的操作会触发以下事件：
 
 - change
+
 - blur
+
 - focus
+
 - contextmenu
+
 - forminput
+
 - formchange
+
 - invalid
+
 - input
+
 - submit
+
 - select
 
 ### 键盘事件参考
@@ -988,7 +1096,9 @@ JavaScript还提供了 *this* 关键字，如果你需要频繁访问触发事�
 键盘触发以下事件：
 
 - keyup
+
 - keypress
+
 - keydown
 
 ### 鼠标事件参考
@@ -996,20 +1106,35 @@ JavaScript还提供了 *this* 关键字，如果你需要频繁访问触发事�
 鼠标触发以下事件：
 
 - click
+
 - drag
+
 - drop
+
 - scroll
+
 - dblclick
+
 - dragenter
+
 - dragstart
+
 - dragend
+
 - dragover
+
 - dragleave
+
 - mousemove
+
 - mousedown
+
 - mouseover
+
 - mouseout
+
 - mousewheel
+
 - mouseup
 
 ### 媒体事件参考
@@ -1017,27 +1142,49 @@ JavaScript还提供了 *this* 关键字，如果你需要频繁访问触发事�
 视频、图像和音频等媒体元素也会触发事件，具体如下：
 
 - canplay
+
 - abort
+
 - waiting
+
 - durationchange
+
 - canplaythrough
+
 - ended
+
 - emptied
+
 - loadeddata
+
 - error
+
 - loadstart
+
 - loadedmetadata
+
 - play
+
 - pause
+
 - progress
+
 - playing
+
 - readystatechange
+
 - ratechange
+
 - seeking
+
 - seeked
+
 - suspend
+
 - stalled
+
 - volumechange
+
 - timeupdate
 
 ## 第4章
@@ -1048,7 +1195,7 @@ JavaScript还提供了 *this* 关键字，如果你需要频繁访问触发事�
 
 已知CSS是从SGML（标准通用标记语言）发展而来。这一方向的努力旨在使网页外观标准化。该技术的最新版本是CSS3，它是一个包含50个模块的集合。
 
-CSS最强大的特性是其层叠能力。简单来说，它允许网页从多个样式表中获取样式，这样，在后续读取的样式表中对样式的更改会覆盖之前一个或多个样式表中已实现的样式。
+CSS最强大的特性是其层叠能力。简单来说，它允许网页从多个样式表中获获取样式，这样，在后续读取的样式表中对样式的更改会覆盖之前一个或多个样式表中已实现的样式。
 
 ### 如何定义和应用样式
 
@@ -1097,8 +1244,6 @@ body {
 <body>
 ```
 
-
-
 ### 如何创建外部样式表
 
 对于需要在整个网页或多个网页上使用相同样式的场景，最佳做法是使用外部样式表。
@@ -1130,13 +1275,21 @@ body {
 需要注意的是，一个样式表可以包含任意数量的样式规则。除此之外，你还可以为不同的媒体链接不同的 CSS 文件。不同的媒体类型如下：
 
 - all
+
 - embossed
+
 - braille
+
 - print
+
 - handheld
+
 - speech
+
 - screen
+
 - tv
+
 - tty
 
 可以按以下方式定义所使用的媒体：
@@ -1205,7 +1358,7 @@ li a {
 }
 ```
 
-另一方面，你可能只想在元素是选择器的直接子元素时才应用样式。这可以通过指定父元素和子元素，并用大于号（`>`）分隔来实现，如下所示：
+另一方面，你可能只想在元素是选择器的直接子元素时才应用样式。这可以通过指定父元器和子元素，并用大于号（`>`）分隔来实现，如下所示：
 
 ```css
 li > a {
@@ -1218,24 +1371,39 @@ li > a {
 既然你知道了如何将样式应用于特定元素，让我们继续探讨如何将样式应用于更具体的部分，例如第二段的第一行。为了对无法根据名称、内容分类或不是 DOM 树一部分的元素应用样式，可以使用伪类。可用的伪类包括：
 
 - :visited
+
 - :link
+
 - :hover
+
 - :active
+
 - :checked
+
 - :focus
+
 - :nth-last-child(n)
+
 - :not
+
 - :only-child
+
 - :nth-child(formula)
+
 - :lang(language)
+
 - :first-of-type
+
 - :only-of-type
 
 如果你想访问 DOM 树中通常无法访问的信息，可以使用伪元素。**伪元素**包括：
 
 - ::first-letter
+
 - ::first-line
+
 - ::after
+
 - ::before
 
 #### 分组选择器
@@ -1271,8 +1439,11 @@ div ~ h1 {
 #### 使用属性选择器
 
 此选择器选择所有存在指定属性的元素。选择器书写形式如下：
+
 `a[title]`
+
 此选择器将选择所有指定了 `title` 属性的链接。此外，这种选择器类型可以通过指定属性值修改为属性-值选择器，如下所示：
+
 `a[title="value"]`
 
 #### 浏览器的内置样式
@@ -1292,7 +1463,9 @@ body {
 样式的优先级和优先顺序基于以下参数决定。
 
 - 重要性
+
 - 特异性
+
 - 文本顺序
 
 ### 使用 CSS 属性
@@ -1306,8 +1479,11 @@ body {
 RGB 值通常使用 0-255 之间的十进制数字定义。
 
 - 白色 #ffffff
+
 - 红色 #ff0000
+
 - 黑色 #000000
+
 - 绿色 #008000
 
 颜色值也可以代替颜色名称使用。以下是其用法示例：
@@ -1339,8 +1515,6 @@ h1 { font-family: arial, verdana, sans-serif; }
 h1 { font-size: 12px; }
 ```
 
-
-
 ### CSS 盒模型
 
 CSS 盒模型假定网页可以被视为由多个盒子构成。这些盒子之间的间距通过外边距（margin）和内边距（padding）设置来定义。这些属性可以按以下方式赋值：
@@ -1364,9 +1538,13 @@ border: 10px;
 用于定义 div 元素位置的属性包括：
 
 - div 元素的位置可以使用 `top`、`bottom`、`left` 和 `right` 属性以像素为单位来定义。
+
 - `position` 属性用于定义指定的位置是静态的还是相对的。
+
 - `float` 属性可用于让元素向左或向右浮动，其定义为 `float: left` 或 `float: right`。
+
 - `clear` 属性会在浮动元素之后紧随一个清除元素。
+
 - 您还可以借助 `box-sizing` 属性来改变浏览器计算宽度的方式。该属性可以接受三个值：`content-box`（默认设置）、`border-box` 和 `padding-box`。
 
 ### 内容居中
@@ -1397,7 +1575,7 @@ border: 10px;
 
 ### 如何创建 HTML5 文档
 
-尽管上述讨论明确提到了使用有意义标签的重要性，并禁止使用像 `<div>` 和 `<span>` 这样的标签，但您可能仍需出于样式设置的目的而使用它们。随着阅读的深入，您将理解如何必须提供语义化标签来赋予您的标签以意义。这里需要提及的是，应谨慎使用语义化标签。如果您意识到需要定义自定义元素，那么就继续使用 `<div>` 和 `<span>` 元素。但是，请务必为元素添加尽可能描述其含义的 ID 和类名。
+尽管上述讨论明确提到了使用有意义标筓的重要性，并禁止使用像 `<div>` 和 `<span>` 这样的标签，但您可能仍需出于样式设置的目的而使用它们。随着阅读的深入，您将理解如何必须提供语义化标签来赋予您的标签以意义。这里需要提及的是，应谨慎使用语义化标签。如果您意识到需要定义自定义元素，那么就继续使用 `<div>` 和 `<span>` 元素。但是，请务必为元素添加尽可能描述其含义的 ID 和类名。
 
 ### 如何创建 HTML5 布局容器
 
@@ -1408,16 +1586,27 @@ border: 10px;
 一些常用于创建布局容器的元素包括：
 
 - `<header>`
+
   - 用于定义 HTML 文档的头部部分或最顶部部分。此元素也可以定义在 `<article>` 元素内部。
+
 - `<footer>`
+
   - 用于定义 HTML 文档的页脚部分或最底部部分。此元素也可以定义在 `<article>` 元素内部。
+
 - `<nav>`
+
   - 用于定义包含所有导航链接的部分。
+
 - `<aside>`
+
   - 此元素通常用于侧边栏，并将 `<aside>` 元素内的内容与此元素外部的内容分隔开。
+
 - `<section>`
+
   - 此元素定义了整体部分中的一个片段，并使用 `<h1>`、`<h2>`、`<h3>`、`<h4>`、`<h5>` 和 `<h6>` 元素来命名。
+
 - `<article>`
+
   - 此元素定义了一个完整的内容单元，您可以将其从一个位置复制到另一个位置。例如，一篇博客文章就是一个这样的单元。
 
 ### 使用角色
@@ -1427,20 +1616,35 @@ border: 10px;
 父角色类之一是 `landmark` 角色类，它定义了网页上的导航地标。父角色类的子类包括：
 
 - `banner`
+
   - 定义网站特定的内容，这些内容预期不会在不同网页之间变化，例如页眉。
+
 - `application`
+
   - 定义指定区域是一个 Web 应用程序。
+
 - `contentinfo`
+
   - 定义网页中包含的有关网页本身的信息，例如版权信息。这些信息通常是页脚内容的一部分。
+
 - `complementary`
+
   - 定义一个部分，即使从页面中分离出来，该部分仍然有意义。
+
 - `main`
+
   - 使用此子角色类定义网页的主要内容。
+
 - `form`
+
   - 定义网页中预期接收用户输入的区域。
+
 - `search`
+
   - 此子角色类用于定义网页上用于接收用户搜索查询并显示搜索结果的位置。
+
 - `navigation`
+
   - 包含导航链接的区域属于此子角色类。
 
 这些角色可以用于提供含义。然而，HTML5 中包含的新元素本身就具有意义。不过，HTML5 中缺少一些实用功能，对于这些功能，可以使用 `role` 属性。
@@ -1456,9 +1660,6 @@ border: 10px;
 ### 如何标注内容？
 
 有多种可用于标注的元素。这些包括您长期以来一直在使用的 `<b>` 和 `<i>`。然而，除了它们所表示的样式之外，现在它们有了新的含义。例如，`<b>` 元素表示“粗体”样式。此外
-
-
-
 
 与此不同，HTML5 为 `<b>` 元素赋予了“具有特殊强调意义的文本段落，但不改变语气、重要程度或含义”的含义。
 
@@ -1539,15 +1740,24 @@ white-space: pre;
 
 除了上述内容外，还有更多可用的注释，包括：
 
-- <s> - 用于删除文本
+-  - 用于删除文本
+
 - <u> - 用于为文本添加下划线
+
 - <mark> - 用于高亮显示文本
+
 - <ins> - 用于指示文本已被插入
+
 - <del> - 用于指示文本已被删除
+
 - <small> - 用于指示文本必须以小字体打印
+
 - <sub> - 表示文本是下标
+
 - <sup> - 表示文本是上标
+
 - <time> - 用于指示文本表示时间和日期
+
 - <kbd> - 用于指示文本是用户输入
 
 ### 语言元素
@@ -1563,7 +1773,9 @@ white-space: pre;
 有序列表使用 `<ol>` 元素声明，此列表中的“顺序”元素通过自动编号包含在此列表中的元素来实现。可用于有序列表的属性包括：
 
 - start - 用于设置列表的起始编号
+
 - reversed - 用于声明列表必须按升序还是降序排序
+
 - type – 用于声明列表的类型，可以是 A、a、1 或 I。
 
 #### 无序列表
@@ -1576,7 +1788,7 @@ white-space: pre;
 
 #### 自定义列表
 
-开发者可以利用 CSS 样式创建自定义列表。在这种情况下，可以为嵌套列表的每个级别创建不同的样式规则。
+开发者可以利用 CSS 样式创建自�定列表。在这种情况下，可以为嵌套列表的每个级别创建不同的样式规则。
 
 ### 处理表格
 
@@ -1585,10 +1797,8 @@ white-space: pre;
 尽管 HTML5 表格是开发者可用的最强大的结构之一，但理解如何以及在哪里最恰当地使用表格非常重要。以下是不应使用表格的原因：
 
 - 为网页创建的表格在读取 `</table>` 标签之前不会渲染。另一方面，如果使用 `<div>` 元素创建相同的结构，内容将在读取时立即渲染。
+
 - 表格极其难以维护。
-
-
-
 
 - 表格对于辅助功能设备来说难以解读。
 
@@ -1614,8 +1824,11 @@ white-space: pre;
 上面创建的表格看起来会是：
 
 | Frank | 1978 |
+
 |-------|------|
+
 | David | 1967 |
+
 | Alex  | 1989 |
 
 当你观察这个表格时，你一定意识到，除非我们定义所谓的表头，否则这个表格是不完整的。这可以使用 `<th>` 元素来完成。你可以垂直或水平地创建表头。例如，我们可以在上面使用的代码中定义以下表头。
@@ -1644,9 +1857,13 @@ white-space: pre;
 此代码生成的表格将如下所示：
 
 | Name  | Year of Birth |
+
 |-------|---------------|
+
 | Franky| 1978          |
+
 | David | 1967          |
+
 | Alex  | 1989          |
 
 在上面的例子中，表头只是字体较大。但是，你可以通过样式规则随心所欲地设置它们的样式。这可以通过以下方式完成：
@@ -1707,11 +1924,17 @@ var customer1 = {
 除此之外，你也可以使用 `new` 关键字动态创建对象。继承的方法包括：
 
 - constructor
+
 - isPrototypeOf
+
 - hasOwnProperty
+
 - toLocalString
+
 - propertyIsEnumerable
+
 - valueOf
+
 - toString
 
 对象创建后，可以按以下方式向其添加属性：
@@ -1730,36 +1953,36 @@ function getCustomer(myName, myYearOfBirth) {
 
 此代码动态创建了一个对象 newCust。可以按以下方式创建其多个实例：
 
+
+
 ```javascript
 var cust1 = getCustomer('Alex', 1978);
 var cust2 = getCustomer('David', 1986);
 ```
 
-尽管 JavaScript 不支持特定的 'class' 关键字，但你可以使用上述方法模拟类。
+尽管 JavaScript 不支持特定的 `class` 关键字，但你可以使用上述方法模拟类。
 
-#### 命名空间
+### 命名空间
 
-没有像 *namespace* 这样的特定关键字来实现命名空间。但是，可以使用类和对象的概念来实现命名空间。如果你将变量和方法分类到对象中，并将它们作为这些对象的实例来访问，那么你实际上是将这些对象的名称放在全局命名空间中，从而将变量的范围缩小到它们所属的对象。
+没有像 `namespace` 这样的特定关键字来实现命名空间。但是，可以使用类和对象的概念来实现命名空间。如果你将变量和方法分类到对象中，并将它们作为这些对象的实例来访问，那么你实际上是将这些对象的名称放在全局命名空间中，从而将变量的范围缩小到它们所属的对象。
 
-#### 实现继承
+### 实现继承
 
-你可以通过创建对象，然后根据其共同特征对这些对象进行分类，来在 JavaScript 中定义对象之间的 'is-a' 关系。例如，如果你正在为公司的员工实现一个对象。你可以为特定类型的对象创建对象，如 managerTechnical、managerGeneral、technicalStaff、recruitmentStaff 和 officeStaff，然后将它们分类为对象，technicalStaff（包括 managerTechnical 和 technicalStaff 对象）和 adminStaff（包括 managerGeneral、recruitmentStaff 和 officeStaff）。同样，也可以定义新的函数。
+你可以通过创建对象，然后根据其共同特征对这些对象进行分类，来在 JavaScript 中定义对象之间的 `is-a` 关系。例如，如果你正在为公司的员工实现一个对象。你可以为特定类型的对象创建对象，如 `managerTechnical`、`managerGeneral`、`technicalStaff`、`recruitmentStaff` 和 `officeStaff`，然后将它们分类为对象，`technicalStaff`（包括 `managerTechnical` 和 `technicalStaff` 对象）和 `adminStaff`（包括 `managerGeneral`、`recruitmentStaff` 和 `officeStaff`）。同样，也可以定义新的函数。
 
-#### 使用 jQuery
+### 使用 jQuery
 
 jQuery 是一个浏览器兼容的辅助函数库，你可以在代码中使用它来减少输入、实现和测试所需的工作量。这些函数本质上是用 JavaScript 编写的。因此，**你也可以将 jQuery 称为一个 JavaScript 库。**
 
 jQuery 中可用的功能列表包括：
 
-- 属性（Attributes），这是一组可用于获取和设置 DOM 元素属性的方法。
-- Ajax，这是一组提供同步和异步服务器调用支持的方法。
-- 核心方法（Core Methods）是基础的 jQuery 函数。
-- 回调对象（Callbacks object）是为管理回调提供的对象。
-- 数据方法（Data Methods）是促进在 DOM 元素和任意数据之间建立关联的方法。
-- CSS 方法（CSS Methods）是可用于获取和设置 CSS 相关属性的方法。
-- 尺寸（Dimensions）是可用于访问和操作 DOM 元素尺寸的方法。
-
-
+- **属性（Attributes）**：这是一组可用于获取和设置 DOM 元素属性的方法。
+- **Ajax**：这是一组提供同步和异步服务器调用支持的方法。
+- **核心方法（Core Methods）**：是基础的 jQuery 函数。
+- **回调对象（Callbacks object）**：是为管理回调提供的对象。
+- **数据方法（Data Methods）**：是促进在 DOM 元素和任意数据之间建立关联的方法。
+- **CSS 方法（CSS Methods）**：是可用于获取和设置 CSS 相关属性的方法。
+- **尺寸（Dimensions）**：是可用于访问和操作 DOM 元素尺寸的方法。
 
 ## 第7章
 
@@ -1769,11 +1992,11 @@ jQuery 中可用的功能列表包括：
 
 简单来说，**表单是一种收集数据并将其发送到可处理位置的方式**，在大多数情况下这个位置是服务器。然而，由于我们尚未讨论服务器端脚本，我们将重点介绍将数据发送到电子邮件地址的方法。但需要注意的是，我们并不推荐这种做法，它仅用于理解目的。
 
-**Web通信**
+#### Web通信
 
 在了解表单的工作原理之前，有必要了解HTTP的一些基础知识。典型的Web通信包括以下活动：
 
-1. 当用户浏览网页时，通过发送GET HTTP请求发起访问Web服务器资源的请求。
+1. 当用户浏览网页时，通过发送`GET` HTTP请求发起访问Web服务器资源的请求。
 2. 服务器处理该请求，并使用HTTP协议向浏览器发送响应。
 3. 浏览器处理服务器响应，并以“表单”的形式呈现给用户。
 4. 用户在表单中输入信息，点击提交或回车按钮后，这些数据再次通过HTTP协议发送到服务器。
@@ -1787,7 +2010,7 @@ jQuery 中可用的功能列表包括：
 
 ### Web浏览器
 
-Web浏览器是一种桌面应用程序，用于显示网页并管理网页与服务器之间的用户交互。Web服务器与网页之间的通信通过AJAX和异步JavaScript等技术建立。
+Web浏览器是一种桌面应用程序，用于显示网页并管理网页与服务器之间的用户交互。Web服务器与网页之间的通信通过`AJAX`和异步JavaScript等技术建立。
 
 ### 数据如何提交到Web服务器
 
@@ -1809,129 +2032,31 @@ Enter Customer Number:
 
 但需要注意的是，并非所有元素都可用于在表单中提交数据。允许用于此目的的元素包括：
 
-- `<textarea>` - 它接受多行输入。
-- `<button>` - 它是一个可点击的按钮，可以放置在任何内容或图像上。
-- `<select>` - 它是一个下拉列表，允许多选。可以使用jQuery识别选中的选项：`$('option:selected')`。
-- `<input type='checkbox'>` - 它是一个复选框，其`value`属性用于设置和读取复选框的状态。使用jQuery识别已选中的复选框：`$('input[type=checkbox]:checked')`。
-- `<input type='button'>` - 它是一个可点击的按钮，带有文本提示。
-- `<input type='datetime'>` - 它是一个日期和时间（UTC）控件。
-- `<input type='date'>` - 它是一个仅包含日期的控件。
-- `<input type='email'>` - 它是一个文件选择字段，带有用于上传文件的浏览按钮。
-- `<input type='color'>` - 它是一个颜色选择器。
-- `<input type='hidden'>` - 它是一个隐藏的输入字段。
-- `<input type='datetime-local'>` - 它是一个日期和时间（任意时区）控件。
-- `<input type='month'>` - 它是一个月份-年份控件。
-- `<input type='image'>` - 它是一个图像提交按钮。
-- `<input type='password'>` - 它是一个密码字段，字符会被隐藏显示。
-
----
-
-
-在使用jQuery之前，你需要将其包含到你的项目中。一旦安装完毕并准备好在项目中使用，下一步就是学习如何使用它。
-
-首先，你需要在需要使用jQuery的网页中以如下方式引用jQuery库：
-
-```html
-<script type="text/javascript" src="Scripts/qunit.js"></script>
-
-<script src="Scripts/jquery-1.8.2.js"></script>
-```
-
-接下来需要知道的是，你希望在HTML页面中使用的jQuery代码位于jQuery命名空间中，该命名空间有一个别名`$`。因此，在引用jQuery的某个功能时，你可以写`jQuery.jFeature`或`$.jFeature`。
-
-在网页中开始使用jQuery之前，你还需要按如下方式修改`default.js`文件：
-
-```javascript
-function initialize() {
-
-    txtInput = $('#txtInput');
-
-    txtResult = $('#txtResult');
-
-    clear();
-
-}
-```
-
-这允许你通过匹配ID来使用jQuery和CSS选择器。
-
-此外，在使用jQuery进行编码时，请记住在进行任何更改后使用Ctrl+F5刷新屏幕，因为浏览器可能无法立即捕获JavaScript的修改。同时，尽可能使用jQuery对象，因为它们提供了跨浏览器兼容性。
-
-可以按以下方式从jQuery包装器中引用DOM对象：
-
-```javascript
-var domElement = $('#txtInput')[0];
-```
-
-以下是一个简单的代码，在引用元素之前检查其是否存在。
-
-```javascript
-var domElement;
-if($('#txtInput').length > 0){
-    domElement = $('#txtInput')[0];
-}
-```
-
-### 如何创建jQuery包装器以引用DOM元素
-
-可以按以下方式从DOM元素引用创建jQuery包装器：
-
-```javascript
-var myDoc = $(document);
-var inText = $(this).text();
-```
-
-第一条语句将包装后的对象赋值给变量。而第二条语句包装了使用`this`引用的对象。
-
-### 如何添加事件监听器
-
-jQuery提供了`.on`方法来订阅事件。除此之外，你可以使用`.off`方法取消订阅。这些方法可以按以下方式使用：
-
-```javascript
-$('#btnSubmitInfo').on('click', onSubmit);
-$('#btnSubmitInfo').off('click', onSubmit);
-```
-
-### 如何触发事件处理程序
-
-jQuery提供了触发器或`triggerHandler`方法，用于触发事件处理程序或处理程序代码的执行。可以按以下方式进行：
-
-```javascript
-$('#btnSubmitInfo').triggerHandler('click');
-```
-
-### 初始化代码
-
-你经常会遇到在HTML文档加载时运行初始化代码的需求。你可以使用jQuery按如下方式实现：
-
-```html
-<script>
-
-$(document).ready(function () {
-
-initializationFunction();
-
-});
-
-</script>
-```
-
-这段代码可以放在HTML文档的底部。它将调用`initializationFunction`。
-
-
-
-
-- `<input type='number'>` - 它是一个数字输入字段。
-- `<input type='range'>` - 它是一个控件，接受一个数值并定义了允许的值范围。
-- `<input type='radio'>` - 它是一个单选按钮，具有用于设置和读取按钮状态的 `value` 属性。用于识别被选中单选按钮的 jQuery 代码是 `$('input[type=radio]:checked')`。
-- `<input type='search'>` - 它是一个文本字段，用于输入搜索字符串。
-- `<input type='reset'>` - 它是一个可用于重置表单字段的按钮。
-- `<input type='url'>` - 它是一个 URL 输入字段。
-- `<input type='tel'>` - 它是一个电话号码输入字段。
-- `<input type='submit'>` - 它是一个提交按钮。
-- `<input type='time'>` - 它是一个控件，接受一个时间值。
-- `<input type='text'>` - 它是一个单行文本输入字段。
-- `<input type='week'>` - 它是一个周-年份控件。
+- `<textarea>`：它接受多行输入。
+- `<button>`：它是一个可点击的按钮，可以放置在任何内容或图像上。
+- `<select>`：它是一个下拉列表，允许多选。可以使用jQuery识别选中的选项：`$('option:selected')`。
+- `<input type='checkbox'>`：它是一个复选框，其`value`属性用于设置和读取复选框的状态。使用jQuery识别已选中的复选框：`$('input[type=checkbox]:checked')`。
+- `<input type='button'>`：它是一个可点击的按钮，带有文本提示。
+- `<input type='datetime'>`：它是一个日期和时间（UTC）控件。
+- `<input type='date'>`：它是一个仅包含日期的控件。
+- `<input type='email'>`：它是一个文件选择字段，带有用于上传文件的浏览按钮。
+- `<input type='color'>`：它是一个颜色选择器。
+- `<input type='hidden'>`：它是一个隐藏的输入字段。
+- `<input type='datetime-local'>`：它是一个日期和时间（任意时区）控件。
+- `<input type='month'>`：它是一个月份-年份控件。
+- `<input type='image'>`：它是一个图像提交按钮。
+- `<input type='password'>`：它是一个密码字段，字符会被隐藏显示。
+- `<input type='number'>`：它是一个数字输入字段。
+- `<input type='range'>`：它是一个控件，接受一个数值并定义了允许的值范围。
+- `<input type='radio'>`：它是一个单选按钮，具有用于设置和读取按钮状态的 `value` 属性。用于识别被选中单选按钮的 jQuery 代码是 `$('input[type=radio]:checked')`。
+- `<input type='search'>`：它是一个文本字段，用于输入搜索字符串。
+- `<input type='reset'>`：它是一个可用于重置表单字段的按钮。
+- `<input type='url'>`：它是一个 URL 输入字段。
+- `<input type='tel'>`：它是一个电话号码输入字段。
+- `<input type='submit'>`：它是一个提交按钮。
+- `<input type='time'>`：它是一个控件，接受一个时间值。
+- `<input type='text'>`：它是一个单行文本输入字段。
+- `<input type='week'>`：它是一个周-年份控件。
 
 ### `<label>` 元素
 
@@ -1947,7 +2072,7 @@ initializationFunction();
 
 `<input>` 元素可用于触发表单提交。除此之外，你也可以使用 JavaScript 来实现此目的。为此，你必须为相关的表单 `myFirstForm` 设置一个 `id`。链接到 HTML 文档的 `default.js` 文件必须包含以下代码：
 
-```
+```javascript
 $(document).ready(function () {
     $('#myFirstButton').on('click', submitMyFirstForm);
 });
@@ -1967,7 +2092,7 @@ customerID=1245
 
 ```
 Mywebpage.asp?customerID=1245
-``
+```
 
 这里还需要提一下，查询字符串是经过 URI 编码的。因此，特殊字符由特定的值表示。例如，空格表示为 `+`，感叹号（!）表示为 `%21`。名称-值对表示为 `name=value`，多个名称-值对之间用 `&` 分隔。
 
@@ -1975,13 +2100,13 @@ Mywebpage.asp?customerID=1245
 
 你可以使用 jQuery 的 `serialize` 方法序列化表单。可以按如下方式完成：
 
-```
+```javascript
 var myFormData = $('#myFirstForm').serialize();
 ```
 
 你可以使用以下代码解码 URI 编码的字符串：
 
-```
+```javascript
 var data = decodeURIComponent(myFormData);
 ```
 
@@ -1989,13 +2114,13 @@ var data = decodeURIComponent(myFormData);
 
 默认情况下，焦点不会设置在表单的任何元素上。但是，你可以使用 `focus` 方法设置焦点，可以按如下方式实现：
 
-```
+```javascript
 $('input[name="firstName"]').focus();
 ```
 
 然而，你也可以按以下方式设置自动聚焦：
 
-```
+```html
 <input type="text" name="firstName" autofocus="autofocus"/>
 ```
 
@@ -2017,7 +2142,7 @@ $('input[name="firstName"]').focus();
 
 ### 如何使用 POST 或 GET
 
-有两种 HTTP 方法可用于向服务器提交数据。这些方法是 GET 和 POST。在前者的情况下，URL 会附加查询字符串。然而，在后者的情况下，信息在消息体中发送。
+有两种 HTTP 方法可用于向服务器提交数据。这些方法是 `GET` 和 `POST`。在前者的情况下，URL 会附加查询字符串。然而，在后者的情况下，信息在消息体中发送。
 
 ### 表单验证
 
@@ -2025,7 +2150,7 @@ $('input[name="firstName"]').focus();
 
 你能实现的最简单的验证形式是在 `<select>` 元素中使用 `required` 属性。你可以按以下方式设置此属性：
 
-```
+```html
 <select name="dateOfBirth" required="required">
 ```
 
@@ -2033,7 +2158,7 @@ $('input[name="firstName"]').focus();
 
 除此之外，还有 `placeholder` 属性可用，它会将提示固定在未填写的字段上，直到用户为其提供了值。可以按如下方式实现：
 
-```
+```html
 <input type="text" name="Date of birth" required="required" placeholder="enter the date of birth"/>
 ```
 
@@ -2055,12 +2180,9 @@ Node.js 是一个基于 Google Chrome 构建的平台，可用于创建可扩展
 
 第一步是打开任何文本编辑器并创建一个名为 `myfile.js` 的文件。在文件中，编写代码：
 
-```
+```javascript
 var http = require('http');
-```
 
-
-```
 http.createServer(function (request, response) {
   response.writeHead(200, {'Content-Type': 'text/plain'});
   response.end('Hello World!\n');
@@ -2072,12 +2194,7 @@ console.log('Server running at http://localhost:8080/');
 
 第一行加载了 `http` 模块，而第二行创建了一个服务器对象。`createServer` 函数接受两个参数：`request` 和 `response`。所有的网站处理都通过这些函数完成。在这个例子中，`response` 函数通过在屏幕上写入 "Hello World" 来结束。
 
-`createServer` 函数返回一个服务器对象，该对象调用 `listen` 函数。此函数在端口 `8080` 上监听，主机的 IP 地址设置为 `127.0.0.1`。因此，如果你的系统上安装了网络适配器，你的 Web 服务器将立即开始监听 Web 请求。最后一行
-
-
-
-
-在屏幕上打印一行内容，告知用户服务器正在运行并监听请求。
+`createServer` 函数返回一个服务器对象，该对象调用 `listen` 函数。此函数在端口 `8080` 上监听，主机的 IP 地址设置为 `127.0.0.1`。因此，如果你的系统上安装了网络适配器，你的 Web 服务器将立即开始监听 Web 请求。最后一行在屏幕上打印一行内容，告知用户服务器正在运行并监听请求。
 
 创建文件并按照上述方式保存内容后，必须打开命令提示符并输入以下命令：
 
@@ -2087,21 +2204,23 @@ Node myFile.js
 
 现在，保持命令提示符活动状态，您需要打开网页浏览器并输入地址：http://localhost:8080/
 
-一旦请求发送并收到响应，系统会通过控制台窗口将信息传达给用户。如果您已成功完成此操作，那么您刚刚创建了第一个 node.js 网站。如果希望停止代码运行，只需按 Cntl+C 即可。
+一旦请求发送并收到响应，系统会通过控制台窗口将信息传达给用户。如果您已成功完成此操作，那么您刚刚创建了第一个 node.js 网站。如果希望停止代码运行，只需按 `Cntl+C` 即可。
 
-了解请求如何被接收后，接下来需要查看这些请求如何被处理以及响应如何生成。您可能需要使用 url 模块来解析 QueryString。
+了解请求如何被接收后，接下来需要查看这些请求如何被处理以及响应如何生成。您可能需要使用 `url` 模块来解析 QueryString。
 
 以下代码展示了如何解析 URL 字符串并据此生成响应。
 
 ```javascript
 var http = require('http');
 var url = require('url');
+
 http.createServer(function (request, response) {
     var url_parts = url.parse(request.url, true);
     response.writeHead(200, {'Content-Type': 'text/plain'});
     response.end('Hey ' + url_parts.query.name + ':\n');
     console.log('Handled request from ' + url_parts.query.name);
 }).listen(8080, 'localhost');
+
 console.log('Server is running at: http://localhost:8080/');
 ```
 
@@ -2124,12 +2243,13 @@ function start(){
     }).listen(8080, 'localhost');
     console.log('Server running at http://localhost:8080/');
 }
+
 exports.start = start;
 ```
 
 ### 如何创建 Node.js 包
 
-当您将这段代码保存在文件中时，就创建了一个模块。其他函数可以使用 require 函数来调用此模块。例如，如果文件保存为 sample1.js，则可以在另一个函数中通过以下方式使用 start()：
+当您将这段代码保存在文件中时，就创建了一个模块。其他函数可以使用 `require` 函数来调用此模块。例如，如果文件保存为 `sample1.js`，则可以在另一个函数中通过以下方式使用 `start()`：
 
 ```javascript
 var samplex = require('./sample1.js');
@@ -2140,21 +2260,21 @@ sample1.start();
 
 根文件夹必须包含以下内容：
 
-- README.md
-- \packName
-- \lib
-- main.js
-- \bin
-- mod1.js
-- mod2.js
+- `README.md`
+- `\packName`
+- `\lib`
+- `main.js`
+- `\bin`
+- `mod1.js`
+- `mod2.js`
 
 ### 创建聚合模块
 
-您可能希望只提供一个对象供用户访问。用户应能通过此对象访问包中的所有模块。为此，必须在 bin 文件夹中创建一个 main.js 模块，该模块需要在 module.exports 中定义要包含的模块。
+您可能希望只提供一个对象供用户访问。用户应能通过此对象访问包中的所有模块。为此，必须在 `bin` 文件夹中创建一个 `main.js` 模块，该模块需要在 `module.exports` 中定义要包含的模块。
 
 ### 如何创建 README.md 文件
 
-README.md 文件是一个帮助文件，开发者可以将其作为使用您包的入门指南。此文件的扩展名为 .md，是 mark-down 的缩写。这种格式提高了文件中文本的可读性。
+`README.md` 文件是一个帮助文件，开发者可以将其作为使用您包的入门指南。此文件的扩展名为 `.md`，是 mark-down 的缩写。这种格式提高了文件中文本的可读性。
 
 以下是此类文件的示例：
 
@@ -2165,8 +2285,8 @@ samplePackage package
 
 在 samplePackage 中，以下函数可用：
 
-- **add** 执行两个数字的加法并显示结果。
-- **sub** 执行两个数字的减法并显示结果。
+- **add**：执行两个数字的加法并显示结果。
+- **sub**：执行两个数字的减法并显示结果。
 
 ### 如何创建 package.json 文件
 
@@ -2203,28 +2323,25 @@ npm init
 
 ### 如何发布包
 
-如前所述，包可以通过文件夹结构来定义。发布包时，您使其对所有用户可访问。要执行此操作，必须使用 npm 命令，这也是用于搜索和安装包的命令。但是，在发布任何包之前，您需要使用命令为自己创建一个账户：npm adduser。输入所需信息后，您的账户就创建好了。然而，这也意味着不需要验证。因此，任何人都可以向仓库添加代码。因此，从注册表下载和安装包时应小心谨慎。
+如前所述，包可以通过文件夹结构来定义。发布包时，您使其对所有用户可访问。要执行此操作，必须使用 `npm` 命令，这也是用于搜索和安装包的命令。但是，在发布任何包之前，您需要使用命令为自己创建一个账户：`npm adduser`。输入所需信息后，您的账户就创建好了。然而，这也意味着不需要验证。因此，任何人都可以向仓库添加代码。因此，从注册表下载和安装包时应小心谨慎。
 
-要发布包，您只需进入包的根目录并在命令提示符中输入命令 npm publish。
+要发布包，您只需进入包的根目录并在命令提示符中输入命令 `npm publish`。
 
 ### 如何安装和使用包
 
-发布的包可以被任何用户下载和安装。您只需进入文件夹并输入命令 npm install samplePackage。这会在本地安装包。另一方面，如果您希望全局安装包，可以使用命令 npm install -g samplePackage。对于全局安装，您需要使用命令 npm link samplePackage 为每个应用程序创建指向全局安装的链接。
+发布的包可以被任何用户下载和安装。您只需进入文件夹并输入命令 `npm install samplePackage`。这会在本地安装包。另一方面，如果您希望全局安装包，可以使用命令 `npm install -g samplePackage`。对于全局安装，您需要使用命令 `npm link samplePackage` 为每个应用程序创建指向全局安装的链接。
 
-全局安装的路径是一个 junction。您可以使用 cd 命令进入 node_modules 文件夹并返回。进入文件夹后，可以输入命令：npm install contoso，来启动安装。现在您可以编写一些使用该包的代码。以下是示例：
+全局安装的路径是一个 junction。您可以使用 `cd` 命令进入 `node_modules` 文件夹并返回。进入文件夹后，可以输入命令：`npm install contoso`，来启动安装。现在您可以编写一些使用该包的代码。以下是示例：
 
 ```javascript
 var samplePackage = require('samplePackage');
 var finalResult = 0;
-
 console.log();
 finalResult = samplePackage.add (5,10);
 console.log('add (5,10) = ' + finalResult);
-
 console.log();
 result = samplePackage.sub (50,10);
 console.log('sub(50,10) = ' + finalResult);
-
 console.log();
 console.log('done');
 ```
@@ -2249,10 +2366,10 @@ npm uninstall -g samplePackage
 
 ### 如何使用 Express
 
-1. 第一步是安装 Node.js 并创建一个示例文件夹来存放所有 .js 文件和项目。此外，您还必须安装 Express，它是用于 Node.js 开发的 web 应用程序框架。
+1. 第一步是安装 Node.js 并创建一个示例文件夹来存放所有 `.js` 文件和项目。此外，您还必须安装 Express，它是用于 Node.js 开发的 web 应用程序框架。
 2. 您可以使用以下命令集和说明来创建一个包。
-   - a. npm init
-   - b. 您可以创建一个 myPackage.js 文件，包含以下内容：
+   - a. `npm init`
+   - b. 您可以创建一个 `myPackage.js` 文件，包含以下内容：
 
 ```json
 {
@@ -2274,26 +2391,18 @@ npm uninstall -g samplePackage
 ```
 
 要在 Express 中使用此文件，必须添加依赖项。此外，如果您未将其定义为私有，当计算机防火墙尝试加载页面时，您可能会收到错误信息。
-
-   - c. 输入安装命令：npm install
-   - d. 您可以使用命令 npm ls 来查看包是否存在于注册表中。
+   - c. 输入安装命令：`npm install`
+   - d. 您可以使用命令 `npm ls` 来查看包是否存在于注册表中。
 
 3. 您可以使用以下说明集创建一个简单的应用程序：
-   - a. 创建一个文件 myApp.js 并将以下内容添加到文件中：
-   - b. 您可以使用 myApp.Method() 语法来定义路由。
+   - a. 创建一个文件 `myApp.js` 并将以下内容添加到文件中：
+   - b. 您可以使用 `myApp.Method()` 语法来定义路由。
 
 ```javascript
 var express = require('express');
 var app = express();
-
 app.get('/', function(request, response){
-```
-
-
-
-
-```javascript
-response.send('Hey World!');
+    response.send('Hey World!');
 });
 ```
 
@@ -2345,7 +2454,7 @@ console.log('Listening on port: ' + port);
 
 该应用程序可以按上述方式运行。
 
-5. *formidable* 包可用于回传数据。虽然前面的方法使用 GET 方法，但此方法使用 POST 方法。
+5. `formidable` 包可用于回传数据。虽然前面的方法使用 GET 方法，但此方法使用 POST 方法。
 
 a. 为说明其工作方式，请创建如下 HTML：
 
@@ -2392,7 +2501,7 @@ c. 你也可以按以下方式修改 `package.json` 文件：
 }
 ```
 
-d. 现在你可以通过在命令提示符中键入以下命令来安装 *formidable* 包：
+d. 现在你可以通过在命令提示符中键入以下命令来安装 `formidable` 包：
 
 ```
 npm install
@@ -2443,7 +2552,7 @@ f. 你现在可以像运行前一个示例那样运行应用程序。
 
 你一定听说过术语“mashups”，它用于描述将 Web 服务拼凑在一起的应用程序。存在两类主要的 Web 服务：任意 Web 服务和 REST（即表述性状态转移）。在第一种情况下，操作集是任意的，而在第二种情况下，存在一个统一的操作集。
 
-### 表述性状态转移（REST）
+#### 表述性状态转移（REST）
 
 此框架使用标准 HTTP 操作，这些操作映射到其创建、删除、更新和检索操作。此外，REST 不专注于与消息交互。相反，它的交互专注于无状态资源。这也许就是为什么 REST 概念以创建简洁的 URL 而闻名的原因。REST URL 的示例包括 http://localhost:8080/Customers/2（用于删除客户）和 http://localhost:8080/Vehicles?VIN=XYZ12（用于使用 GET 方法通过传递参数来检索有关车辆的信息）。
 
@@ -2455,7 +2564,7 @@ http://localhost:8080/Vehicles?verb=DELETE&VIN=XYZ987
 
 HTTP 协议还允许你使用 HTTPS 版本实现安全性。REST 提供了多种好处，例如连接简单、操作更快以及资源消耗更少。然而，许多开发人员更喜欢使用 JSON（或 JavaScript 对象表示法），因为它体积紧凑。除此之外，REST 仅支持 GET 和 POST，这限制了其功能。因此，一些开发人员转向使用 RESTful。
 
-### 任意 Web 服务
+#### 任意 Web 服务
 
 这种类型的 Web 服务也称为大型 Web 服务。此类服务的一个示例是 WCF（Windows Communication Foundation）。任意 Web 服务通过不将它们的操作仅映射到协议的某个方面，从而扩展了它们的操作领域。因此，它们提供了更多功能，包括许多安全机制和消息路由。
 
@@ -2463,20 +2572,17 @@ HTTP 协议还允许你使用 HTTPS 版本实现安全性。REST 提供了多种
 
 ### 如何使用 Node.js 创建 RESTful Web 服务
 
-在前面提到的示例中，`samplePackage` 可以被暴露为 Web 服务。GET 方法可以
+在前面提到的示例中，`samplePackage` 可以被暴露为 Web 服务。GET 方法可以该包可被使用，并将操作作为参数传递。这个包一个良好的 RESTful 实现可能如下所示：
 
-
-
-
-该包可被使用，并将操作作为参数传递。这个包一个良好的 RESTful 实现可能如下所示：
-
+```
 http://localhost:8080/samplePackage?operation=add&x=1&y=5
+```
 
 ### 如何使用 AJAX 调用 Web 服务
 
 可以使用 AJAX 异步调用 Web 服务，AJAX 实际上是一种 JavaScript。AJAX 不是调用服务器并重绘 HTML 文档，而是回调到服务器。在这种情况下，屏幕不会被重绘。以下是一个示例实现：
 
-可以使用以下代码创建一个 MyPage.html：
+可以使用以下代码创建一个 `MyPage.html`：
 
 ```html
 <!DOCTYPE html>
@@ -2497,11 +2603,11 @@ http://localhost:8080/samplePackage?operation=add&x=1&y=5
 </html>
 ```
 
-必须修改 default.js 文件，以包含处理这些功能所需的代码。请务必检查 jQuery 的版本，以及它是否与你在 default.js 文件中提到的版本名称相匹配。此处使用的 `<form>` 元素仅是一种安排数据格式的方式，数据实际上并非通过表单发送到服务器。JavaScript 和 jQuery 访问输入的数据并执行 AJAX 调用。
+必须修改 `default.js` 文件，以包含处理这些功能所需的代码。请务必检查 jQuery 的版本，以及它是否与你在 `default.js` 文件中提到的版本名称相匹配。此处使用的 `<form>` 元素仅是一种安排数据格式的方式，数据实际上并非通过表单发送到服务器。JavaScript 和 jQuery 访问输入的数据并执行 AJAX 调用。
 
 ### 如何使用 XMLHttpRequest
 
-实际发起 AJAX 调用的对象是 XMLHttpRequest，它可用于发送/接收 XML 和其他类型的数据。该对象可以按以下方式使用：
+实际发起 AJAX 调用的对象是 `XMLHttpRequest`，它可用于发送/接收 XML 和其他类型的数据。该对象可以按以下方式使用：
 
 ```javascript
 var xmlhttp=new XMLHttpRequest();
@@ -2512,7 +2618,7 @@ var xmlDoc=xmlhttp.responseXML;
 
 第一行创建对象，第二行设置使用 GET 方法和指定的 QueryString，'false' 的使用表示操作必须异步执行。下一行发送请求，最后一行将响应设置为一个变量，之后可以读取和解析该变量以处理响应。
 
-但是，生成的输出是 JSON 而不是 XML，因此，必须将 default.js 文件更改为：
+但是，生成的输出是 JSON 而不是 XML，因此，必须将 `default.js` 文件更改为：
 
 ```javascript
 $(document).ready(function () {
@@ -2531,7 +2637,7 @@ function addTwoNum() {
 }
 ```
 
-该代码从对应的 `<input>` 元素中提取 x 和 y 的值。之后，创建 XMLHttpRequest 对象，并使用 QueryString 调用 open 方法。执行 send 函数后，响应字符串被解析。为了测试页面，你可以给出命令：
+该代码从对应的 `<input>` 元素中提取 x 和 y 的值。之后，创建 `XMLHttpRequest` 对象，并使用 QueryString 调用 `open` 方法。执行 `send` 函数后，响应字符串被解析。为了测试页面，你可以给出命令：
 
 ```
 node app
@@ -2541,7 +2647,7 @@ node app
 
 http://localhost:8080/SamplePage.html
 
-这段代码现在可以运行了。但是，你可能希望以异步方式执行 AJAX 调用。为此，你必须找到 open 方法并将 'false' 参数更改为 'true'。除此之外，你还需要订阅 *onreadystatechange* 以管理异步调用。这可以按以下方式实现：
+这段代码现在可以运行了。但是，你可能希望以异步方式执行 AJAX 调用。为此，你必须找到 `open` 方法并将 'false' 参数更改为 'true'。除此之外，你还需要订阅 `onreadystatechange` 以管理异步调用。这可以按以下方式实现：
 
 ```javascript
 function addTwoNum () {
@@ -2563,11 +2669,11 @@ function addTwoNum () {
 
 状态码如下：
 
-- 0 - 未初始化
-- 1 - 加载中
-- 2 - 已加载
-- 3 - 交互中
-- 4 - 完成
+- 0：未初始化
+- 1：加载中
+- 2：已加载
+- 3：交互中
+- 4：完成
 
 如果服务器提供了进度事件，你可以订阅浏览器的进度事件。然后，可以添加一个事件监听器，以便在事件触发时启动代码的执行。这可以按以下方式完成：
 
@@ -2599,7 +2705,7 @@ function updateProgress(evt) {
 }
 ```
 
-你也可以通过订阅 error 事件和 abort 事件来执行错误处理。这可以按以下方式完成：
+你也可以通过订阅 `error` 事件和 `abort` 事件来执行错误处理。这可以按以下方式完成：
 
 ```javascript
 function addTwoNum () {
@@ -2630,7 +2736,7 @@ function canceled(evt) {
 }
 ```
 
-你了解这一点也很有帮助：不同的浏览器以不同的方式实现和响应对象。因此，建议你必须使用 jQuery 包装器来包装 XMLHttpRequest。使用 jQuery 使代码与浏览器无关。用于 AJAX 调用的 jQuery 包装器是 `$ajax()`，它接受一个对象作为参数。上述代码可以按以下方式重新实现：
+你了解这一点也很有帮助：不同的浏览器以不同的方式实现和响应对象。因此，建议你必须使用 jQuery 包装器来包装 `XMLHttpRequest`。使用 jQuery 使代码与浏览器无关。用于 AJAX 调用的 jQuery 包装器是 `$.ajax()`，它接受一个对象作为参数。上述代码可以按以下方式重新实现：
 
 ```javascript
 function addTwoNum () {
@@ -2652,8 +2758,6 @@ function addTwoNum () {
 
 检索变量值并将其提供给 ajax 调用。其他属性和对象如图所示进行设置。另一个值得关注的主题是 CORS，即跨域资源共享，它是一种允许跨站 AJAX 调用的方式。
 
-
-
 ## 第9章
 
 ### WebSocket 通信
@@ -2674,19 +2778,19 @@ WebSocket 协议允许建立双向连接，专为 Web 服务器和客户端的�
 
 WebSocket 技术的核心是 WebSocket 对象。该对象定义在 `window` 对象上，并包含以下成员：
 
-- close
-- WebSocket 构造函数
-- binaryType
-- send
-- extensions
-- bufferedAmount
-- onerror
-- url
-- onclose
-- onopen
-- onmessage
-- readyState
-- protocol
+- `close`
+- `WebSocket` 构造函数
+- `binaryType`
+- `send`
+- `extensions`
+- `bufferedAmount`
+- `onerror`
+- `url`
+- `onclose`
+- `onopen`
+- `onmessage`
+- `readyState`
+- `protocol`
 
 #### 如何实现 WebSocket 对象
 
@@ -2694,7 +2798,6 @@ WebSocket 通信基于 TCP，因此它在端口号 80 上运行。你可以使�
 
 ```javascript
 /// <reference path="_references.js" />
-
 var wsUri = 'ws://echo.websocket.org/';
 var webSocket;
 
@@ -2758,10 +2861,10 @@ function onError(evt) {
 
 当你创建一个 WebSocket 对象时，会自动发起与 URI 的连接。`connect` 函数将该对象订阅到上述事件。消息使用 `doSend` 函数发送。然而，在发送任何消息之前，需要检查对象的 `readyState` 属性。该属性的可能取值如下：
 
-- Open = 1
-- Connecting = 0
-- Closing = 2
-- Closed = 3
+- `Open = 1`
+- `Connecting = 0`
+- `Closing = 2`
+- `Closed = 3`
 
 当接收到服务器的消息时，客户端会调用 `onMessage` 函数，该函数接收事件对象。该对象的 `data` 属性包含从服务器发送的消息。相反，如果发生错误，则会调用 `onError` 函数，并且 `data` 属性包含错误生成的原因。在某些情况下，`data` 属性可能为“undefined”。这在连接超时的场景中尤为常见。
 
@@ -2774,6 +2877,7 @@ function onError(evt) {
 var wsUri = 'ws://echo.websocket.org/';
 var webSocket;
 var timerId = 0;
+
 $(document).ready(function () {
     if (checkSupported()) {
         connect();
@@ -2901,7 +3005,6 @@ function getCookieValue(cName) {
 
 ```javascript
 setCookie('fName', 'Clark', 1);
-
 var fName = getCookie('fName');
 ```
 
@@ -2909,7 +3012,6 @@ var fName = getCookie('fName');
 
 ```javascript
 $.cookie('fName', 'Clark');
-
 var fName = $.cookie('fName');
 ```
 
@@ -2946,13 +3048,13 @@ LocalStorage 是用于数据存储的两种存储机制之一。它本质上是�
 
 可用的属性和方法包括：
 
-- **setItem(key, value)**：此方法用于通过关联的键设置值。此操作的语法为：
+- **`setItem(key, value)`**：此方法用于通过关联的键设置值。此操作的语法为：
 
 ```javascript
 localStorage.setItem('fName', $('#fName').val());
 ```
 
-- **getItem(key)**：此方法用于获取与指定键关联的值。此操作的语法为：
+- **`getItem(key)`**：此方法用于获取与指定键关联的值。此操作的语法为：
 
 ```javascript
 var fName = localStorage.getItem('fName');
@@ -2960,25 +3062,25 @@ var fName = localStorage.getItem('fName');
 
 如果未设置任何值，则返回 null。
 
-- **removeItem(key)**：此方法用于移除与指定键关联的值。此操作的语法为：
+- **`removeItem(key)`**：此方法用于移除与指定键关联的值。此操作的语法为：
 
 ```javascript
 localStorage.removeItem('fName');
 ```
 
-- **clear()**：从本地存储中移除所有项。其语法为：
+- **`clear()`**：从本地存储中移除所有项。其语法为：
 
 ```javascript
 localStorage.clear();
 ```
 
-- **length**：返回存储中条目数量的属性。
+- **`length`**：返回存储中条目数量的属性。
 
 ```javascript
 var count = localStorage.length;
 ```
 
-- **key(index)**：此方法用于查找与给定值关联的键。此操作的语法为：
+- **`key(index)`**：此方法用于查找与给定值关联的键。此操作的语法为：
 
 ```javascript
 var keyValue = localStorage.key(1);
@@ -3014,15 +3116,15 @@ SessionStorage 也是一个存储对象，具有与 localStorage 相同的属性
 
 ### 如何处理存储事件
 
-同步是实现 Web 存储时面临的最大挑战。为了应对这个问题，你可以订阅存储事件，该事件会通知你可能已发生的任何更改。当你订阅一个 StorageEvent 时，你将可以访问以下属性：
+同步是实现 Web 存储时面临的最大挑战。为了应对这个问题，你可以订阅存储事件，该事件会通知你可能已发生的任何更改。当你订阅一个 `StorageEvent` 时，你将可以访问以下属性：
 
-- newValue
-- oldValue
-- url
-- key
-- storageArea
+- `newValue`
+- `oldValue`
+- `url`
+- `key`
+- `storageArea`
 
-与其他事件不同，StorageEvent 不允许取消或冒泡。你可以使用以下结构来订阅事件：
+与其他事件不同，`StorageEvent` 不允许取消或冒泡。你可以使用以下结构来订阅事件：
 
 ```javascript
 function respond(exc) {
@@ -3040,8 +3142,6 @@ localStorage.setItem('name', 'Clark');
 
 你也可以借助 jQuery 来绑定这些事件。
 
-
-
 ## 第11章
 
 ### 离线Web应用
@@ -3058,7 +3158,7 @@ Web SQL是一个关系型数据库，其最新实现基于SQLite构建。但需�
 
 可以使用以下语法创建和打开数据库：
 
-```
+```javascript
 var dbase = openDatabase('Lib', '1.0', 'Sample library', 5 * 1024 * 1024);
 ```
 
@@ -3074,13 +3174,8 @@ var dbase = openDatabase('Lib', '1.0', 'Sample library', 5 * 1024 * 1024);
 
 可以在`transaction.executeSql()`函数中传入SQL操作脚本来操作数据库。以下是一个创建表示例：
 
-```
-transaction.executeSql("CREATE TABLE IF NOT EXISTS
-employees(
-id INTEGER PRIMARY KEY AUTOINCREMENT,
-fName TEXT,
-lName TEXT
-)");
+```javascript
+transaction.executeSql("CREATE TABLE IF NOT EXISTS employees(id INTEGER PRIMARY KEY AUTOINCREMENT, fName TEXT, lName TEXT)");
 ```
 
 #### IndexedDB
@@ -3089,68 +3184,58 @@ lName TEXT
 
 可以按以下方式打开或创建数据库：
 
-```
+```javascript
 var indexedDB = window.indexedDB;
-
 var openRequest = indexedDB.open('Lib', 1);
 ```
 
-IndexedDB对象的一个重要特性是keypath属性，它用于定义必须用作键的属性。如果指定的属性不存在，则可以创建一个自动递增或自动递减的属性。
+IndexedDB对象的一个重要特性是`keypath`属性，它用于定义必须用作键的属性。如果指定的属性不存在，则可以创建一个自动递增或自动递减的属性。
 
 可以使用以下代码添加索引：
 
-```
+```javascript
 var openRequest = indexedDB.open('Lib', 2);
-
-openRequest.onupgradeneeded = function(response)
-{
-
-var store = response.currentTarget.transaction.objectStore("employees");
-
-store.createIndex('lName', 'lName', { unique: false });
+openRequest.onupgradeneeded = function(response) {
+    var store = response.currentTarget.transaction.objectStore("employees");
+    store.createIndex('lName', 'lName', { unique: false });
 };
 ```
 
 所需参数为：名称、键路径和可选参数。类似地，可以使用以下代码删除索引：
 
-```
+```javascript
 store.deleteIndex('lastName');
 ```
 
 你可以使用以下代码添加和删除对象存储：
 
-```
+```javascript
 var openRequest = indexedDB.open('Lib', 3);
-
-openRequest.onupgradeneeded = function(response)
-{
-    response.currentTarget.result.
-    deleteObjectStore("employees");
+openRequest.onupgradeneeded = function(response) {
+    response.currentTarget.result.deleteObjectStore("employees");
 };
 ```
 
 类似地，可以按以下方式添加一个对象：
 
-```
-response.currentTarget.result.
-createObjectStore("employees", { keyPath: 'email' });
+```javascript
+response.currentTarget.result.createObjectStore("employees", { keyPath: 'email' });
 ```
 
 接下来的操作是事务，按以下方式执行：
 
 1. 必须按以下方式打开一个事务：
 
-```
+```javascript
 var newTrans = dbase.transaction(['employees', 'payroll']);
 ```
 
-```
+```javascript
 var openRequest = indexedDB.open('Lib', 1);
 ```
 
-```
+```javascript
 var dbase;
-
 openRequest.onsuccess = function(response) {
     dbase = openRequest.result;
     addEmployee();
@@ -3171,62 +3256,68 @@ function addEmployee() {
 
 2. 你可以按以下方式添加一条新记录：
 
-```
+```javascript
 var openRequest = indexedDB.open('Lib', 1);
-
 var dbase;
-
 openRequest.onsuccess = function(response) {
-dbase = openRequest.result;
-updateEmployee();
+    dbase = openRequest.result;
+    updateEmployee();
 };
 
 function updateEmployee() {
-var myTrans = dbase.transaction('employees', 'readwrite');
+    var myTrans = dbase.transaction('employees', 'readwrite');
+    var employees = myTrans.objectStore("employees");
+```
 
-var employees = myTrans.objectStore("employees");
 
+
+# jQuery、JavaScript 和 HTML5 入门指南
+
+## 更新记录
+
+```javascript
 var request = employees.put({fName: 'Sammy', lName: 'Carnie'}, 1);
 
 request.onsuccess = function(response) {
-alert('已更新记录的ID = ' + request.result);
-};
+    alert('已更新记录的ID = ' + request.result);
 };
 ```
 
-3. 可以按以下方式更新一条记录：
+## 更新记录的另一种方式
 
-```
+```javascript
 request.onerror = function(response) {
     alert('更新记录时出错');
 };
 ```
 
-4. 你可以使用以下代码删除一条记录：
+## 删除记录
 
-```
+```javascript
 function deleteEmployee() {
     var myTrans = dbase.transaction('employees', 'readwrite');
     var employees = myTrans.objectStore("employees");
     var request = employees.delete(1);
+
     request.onsuccess = function(response) {
         alert('记录已删除');
     };
+
     request.onerror = function(response) {
         alert('删除记录时出错');
     };
 }
 ```
 
-#### 如何使用FileSystem API
+## 如何使用 FileSystem API
 
-上述存储机制可用于存储字符串形式的数据。然而，像文件和图像这样的复杂数据结构也可以使用URI来存储。不过，这是一个成本极高的选项。为此，HTML5提供了一种成本更低、更简单的选项，称为FileSystem API。使用此格式，你可以在用户文件系统的沙盒位置创建文件和目录。
+上述存储机制可用于存储字符串形式的数据。然而，像文件和图像这样的复杂数据结构也可以使用 URI 来存储。不过，这是一个成本极高的选项。为此，HTML5 提供了一种成本更低、更简单的选项，称为 FileSystem API。使用此格式，你可以在用户文件系统的沙盒位置创建文件和目录。
 
-可用的功能包括：
+### 可用功能
 
-1. 可以使用以下方式打开和创建文件系统：
+#### 1. 打开和创建文件系统
 
-```
+```javascript
 window.requestFileSystem(TEMPORARY, 5 * 1024 * 1024, getFile, handleError);
 
 function getFile(fileSystem) {
@@ -3242,56 +3333,61 @@ function handleError(error) {
 }
 ```
 
-`requestFileSystem()`函数的参数是类型、大小、成功回调和错误回调。另一方面，`getFile()`函数的参数是路径和选项。
+`requestFileSystem()` 函数的参数是类型、大小、成功回调和错误回调。另一方面，`getFile()` 函数的参数是路径和选项。
 
-2. 你可以使用以下代码写入文件：
+#### 2. 写入文件
 
-```
+```javascript
 function writeToFile(fileWriter) {
-  fileWriter.onwriteend = function() {
-    alert('成功'); };
-
-  fileWriter.onerror = function() { alert('失败'); };
-
-  fileWriter.write(new Blob(['Hello world'], {type: 'text/plain'}));
+    fileWriter.onwriteend = function() {
+        alert('成功');
+    };
+    fileWriter.onerror = function() {
+        alert('失败');
+    };
+    fileWriter.write(new Blob(['Hello world'], {type: 'text/plain'}));
 }
 ```
 
-你可以使用以下代码追加到文件：
+#### 3. 追加到文件
 
-```
+```javascript
 function appendToFile(fileWriter) {
-  fileWriter.onwriteend = function() {
-    alert('成功'); };
-
-  fileWriter.onerror = function() { alert('失败'); };
-
-  fileWriter.seek(fileWriter.length);
-
-  fileWriter.write(new Blob(['Hello world'], {type: 'text/plain'}));
+    fileWriter.onwriteend = function() {
+        alert('成功');
+    };
+    fileWriter.onerror = function() {
+        alert('失败');
+    };
+    fileWriter.seek(fileWriter.length);
+    fileWriter.write(new Blob(['Hello world'], {type: 'text/plain'}));
 }
 ```
 
-3. 你可以使用以下代码读取文件：
+#### 4. 读取文件
 
-```
+```javascript
 function readFile(file) {
     var fileReader = new FileReader();
-    fileReader.onloadend = function() { alert(this.result); };
-    fileReader.onerror = function() { alert('失败'); };
+    fileReader.onloadend = function() {
+        alert(this.result);
+    };
+    fileReader.onerror = function() {
+        alert('失败');
+    };
     fileReader.readAsText(file);
 }
 ```
 
-4. 你可以使用以下代码删除文件：
+#### 5. 删除文件
 
-```
+```javascript
 fileEntry.remove(fileRemoved, handleError);
 ```
 
 目录也存在类似的功能。
 
-## 附录
+## 附录：HTML 元素参考
 
 - `<a>` 超链接
 - `<abbr>` 缩写
@@ -3301,223 +3397,121 @@ fileEntry.remove(fileRemoved, handleError);
 - `<aside>` 辅助内容
 - `<audio>` 音频流
 - `<b>` 粗体文本
-- `<base>` 文档基础URI
+- `<base>` 文档基础 URI
 - `<bb>` 浏览器按钮
 - `<bdo>` 双向文本覆盖
 - `<blockquote>` 长引用
 - `<body>` 主要内容
 - `<br>` 换行
 - `<button>` 按钮控件
-
-
-
-## *面向初学者的 jQuery、JavaScript 和 HTML5 入门指南*
-
-**\<canvas\>** 位图画布
-
-**\<caption\>** 表格标题
-
-**\<cite\>** 引用
-
-**\<code\>** 代码片段
-
-**\<col\>** 表格列
-
-**\<colgroup\>** 表格列组
-
-**\<command\>** 用户可调用的命令
-
-**\<datagrid\>** 交互式树形结构、列表或表格数据
-
-**\<datalist\>** 预定义控件值
-
-**\<dd\>** 定义描述
-
-**\<del\>** 删除内容
-
-**\<details\>** 附加信息
-
-**\<dfn\>** 术语的定义实例
-
-**\<dialog\>** 对话框
-
-**\<div\>** 通用分区
-
-**\<dl\>** 描述列表
-
-**\<dt\>** 描述术语
-
-**\<em\>** 强调语气
-
-**\<embed\>** 嵌入式应用
-
-**\<fieldset\>** 表单控件组
-
-**\<figure\>** 带标题的图表
-
-**\<footer\>** 页脚区域
-
-**\<form\>** 表单
-
-**\<h1\>** 一级标题
-
-**\<h2\>** 二级标题
-
-**\<h3\>** 三级标题
-
-**\<h4\>** 四级标题
-
-**\<h5\>** 五级标题
-
-**\<h6\>** 六级标题
-
-**\<head\>** 文档头部
-
-**\<header\>** 页眉区域
-
-**\<hr\>** 水平分隔线
-
-**\<html\>** 文档根元素
-
-**\<i\>** 斜体文本
-
-**\<iframe\>** 内联框架
-
-**\<img\>** 图像
-
-**\<input\>** 表单输入控件
-
-**\<ins\>** 插入内容
-
-**\<kbd\>** 用户输入
-
-**\<label\>** 表单控件标签
-
-**\<legend\>** 说明性标题或图例
-
-**\<li\>** 列表项
-
-**\<link\>** 链接到外部资源
-
-**\<map\>** 客户端图像映射
-
-**\<mark\>** 标记或高亮文本
-
-**\<menu\>** 命令菜单
-
-**\<meta\>** 元数据
-
-**\<meter\>** 标量度量
-
-**\<nav\>** 导航链接
-
-**\<noscript\>** 不支持脚本时的替代内容
-
-**\<object\>** 通用嵌入资源
-
-**\<ol\>** 有序列表
-
-**\<optgroup\>** 选项组
-
-**\<option\>** 下拉选择项
-
-**\<output\>** 输出控件
-
-**\<p\>** 段落
-
-**\<param\>** 插件参数
-
-**\<pre\>** 预格式化文本
-
-**\<progress\>** 任务进度
-
-**\<q\>** 行内引用
-
-**\<rp\>** Ruby 括号
-
-**\<rt\>** Ruby 文本
-
-**\<ruby\>** Ruby 注音标注
-
-**\<samp\>** 示例输出
-
-**\<script\>** 链接或嵌入的脚本
-
-**\<section\>** 文档章节
-
-**\<select\>** 下拉选择控件
-
-**\<small\>** 小号文本
-
-**\<source\>** 媒体资源
-
-**\<span\>** 通用行内容器
-
-**\<strong\>** 强烈重要性
-
-**\<style\>** 嵌入式样式表
-
-**\<sub\>** 下标
-
-**\<sup\>** 上标
-
-**\<table\>** 表格
-
-**\<tbody\>** 表格主体
-
-**\<td\>** 表格单元格
-
-**\<textarea\>** 多行文本输入控件
-
-**\<tfoot\>** 表格页脚
-
-**\<th\>** 表格表头单元格
-
-**\<thead\>** 表格表头
-
-**\<time\>** 日期和/或时间
-
-**\<title\>** 文档标题
-
-**\<tr\>** 表格行
-
-**\<ul\>** 无序列表
-
-**\<var\>** 变量
-
-**\<video\>** 视频或电影
-
-**\<wbr\>** 在此元素处可选择性断开长单词
-
-其他 Scott Sanderson 的书籍：
-
-![](img/c4e7cfc2217cd8a7446051514e7132b3_228_0.png)
-
-[jQuery、JavaScript 和 HTML5：由软件工程师撰写的 jQuery、JavaScript 和 HTML5 入门指南](link1)
-
-![](img/c4e7cfc2217cd8a7446051514e7132b3_228_1.png)
-
-[C++ 编程入门：由软件工程师撰写的 C++ 编程入门指南](link2)
-
-223
-
-![](img/c4e7cfc2217cd8a7446051514e7132b3_229_0.png)
-
-PHP 编程与 MySQL 入门：由软件工程师撰写的 PHP 和 MySQL 入门指南
-
-17040190R00129
+- `<canvas>` 位图画布
+- `<caption>` 表格标题
+- `<cite>` 引用
+- `<code>` 代码片段
+- `<col>` 表格列
+- `<colgroup>` 表格列组
+- `<command>` 用户可调用的命令
+- `<datagrid>` 交互式树形结构、列表或表格数据
+- `<datalist>` 预定义控件值
+- `<dd>` 定义描述
+- `<del>` 删除内容
+- `<details>` 附加信息
+- `<dfn>` 术语的定义实例
+- `<dialog>` 对话框
+- `<div>` 通用分区
+- `<dl>` 描述列表
+- `<dt>` 描述术语
+- `<em>` 强调语气
+- `<embed>` 嵌入式应用
+- `<fieldset>` 表单控件组
+- `<figure>` 带标题的图表
+- `<footer>` 页脚区域
+- `<form>` 表单
+- `<h1>` 一级标题
+- `<h2>` 二级标题
+- `<h3>` 三级标题
+- `<h4>` 四级标题
+- `<h5>` 五级标题
+- `<h6>` 六级标题
+- `<head>` 文档头部
+- `<header>` 页眉区域
+- `<hr>` 水平分隔线
+- `<html>` 文档根元素
+- `<i>` 斜体文本
+- `<iframe>` 内联框架
+- `<img>` 图像
+- `<input>` 表单输入控件
+- `<ins>` 插入内容
+- `<kbd>` 用户输入
+- `<label>` 表单控件标签
+- `<legend>` 说明性标题或图例
+- `<li>` 列表项
+- `<link>` 链接到外部资源
+- `<map>` 客户端图像映射
+- `<mark>` 标记或高亮文本
+- `<menu>` 命令菜单
+- `<meta>` 元数据
+- `<meter>` 标量度量
+- `<nav>` 导航链接
+- `<noscript>` 不支持脚本时的替代内容
+- `<object>` 通用嵌入资源
+- `<ol>` 有序列表
+- `<optgroup>` 选项组
+- `<option>` 下拉选择项
+- `<output>` 输出控件
+- `<p>` 段落
+- `<param>` 插件参数
+- `<pre>` 预格式化文本
+- `<progress>` 任务进度
+- `<q>` 行内引用
+- `<rp>` Ruby 括号
+- `<rt>` Ruby 文本
+- `<ruby>` Ruby 注音标注
+- `<samp>` 示例输出
+- `<script>` 链接或嵌入的脚本
+- `<section>` 文档章节
+- `<select>` 下拉选择控件
+- `<small>` 小号文本
+- `<source>` 媒体资源
+- `<span>` 通用行内容器
+- `<strong>` 强烈重要性
+- `<style>` 嵌入式样式表
+- `<sub>` 下标
+- `<sup>` 上标
+- `<table>` 表格
+- `<tbody>` 表格主体
+- `<td>` 表格单元格
+- `<textarea>` 多行文本输入控件
+- `<tfoot>` 表格页脚
+- `<th>` 表格表头单元格
+- `<thead>` 表格表头
+- `<time>` 日期和/或时间
+- `<title>` 文档标题
+- `<tr>` 表格行
+- `<ul>` 无序列表
+- `<var>` 变量
+- `<video>` 视频或电影
+- `<wbr>` 在此元素处可选择性断开长单词
+
+## 其他 Scott Sanderson 的书籍
+
+- [jQuery、JavaScript 和 HTML5：由软件工程师撰写的 jQuery、JavaScript 和 HTML5 入门指南](link1)
+- [C++ 编程入门：由软件工程师撰写的 C++ 编程入门指南](link2)
+- PHP 编程与 MySQL 入门：由软件工程师撰写的 PHP 和 MySQL 入门指南
+
+ISBN: 17040190R00129
 
 美国制造
 加利福尼亚州圣贝纳迪诺
 2014年11月28日
 
-### jQuery、JavaScript 和 HTML5 入门指南
+## 书籍简介
 
 想以最简单的方式学习 jQuery、JavaScript 和 HTML5 吗？
 
 如果是，那么你即将找到答案。这本电子书由一位软件工程师撰写，将引导你一步步掌握 jQuery、JavaScript、HTML5 等技能！
 
-以下是你将学到的内容预览：
+### 你将学到的内容预览
 
 - HTML 基础知识
 - JavaScript 基础知识
@@ -3530,7 +3524,3 @@ PHP 编程与 MySQL 入门：由软件工程师撰写的 PHP 和 MySQL 入门指
 - 使用 Web 存储管理本地数据
 - 离线 Web 应用
 - 以及更多内容！
-
-![](img/c4e7cfc2217cd8a7446051514e7132b3_235_0.png)
-
-![](img/c4e7cfc2217cd8a7446051514e7132b3_235_1.png)

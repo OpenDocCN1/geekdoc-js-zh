@@ -1,72 +1,126 @@
+
 # JavaScript：速成课程 - 在 12 小时内学习 JavaScript 编程的终极初学者指南
-
-
 
 ![](img/Image00009.jpg)
 
-
 © Copyright 2015
+
 保留所有权利。未经出版者许可，不得以机械、电子或任何其他方式（包括复印）复制本书的任何部分。
 
 ## 免责声明
+
 书中提供的信息旨在为讨论的话题提供有用信息。作者的书籍仅旨在为读者提供 JavaScript 编程的基础知识，对于学生是否能够吸收并应用所提供的所有信息，不作任何保证。尽管作者将尽最大努力分享其见解，但本书或作者的任何其他书籍均不构成读者将在特定时间内学会 JavaScript 编程的承诺。插图仅供参考。
 
 # 目录
+
 - 引言
+
 - 第 1 章
+
     - [JavaScript 的历史]
+
     - [什么是 JavaScript?]
+
 - 第 2 章
+
     - [HTML]
+
     - [标签]
+
     - [输出]
+
     - [CSS]
+
     - [外部 CSS]
+
 - 第 3 章
+
 - 第 4 章
+
 - 第 5 章
+
     - [算术运算符]
+
     - [加法]
+
     - [减法]
+
     - [乘法]
+
     - [除法]
+
     - [模块]
+
     - [后自增]
+
     - [前自增]
+
     - [后自减]
+
     - [前自减]
+
     - [赋值运算符]
+
 - 第 6 章
+
     - [if 语句]
+
     - [关系运算符]
+
     - [逻辑运算符:]
+
     - [组合运算符]
+
     - [赋值]
+
     - [答案与解释:]
+
 - 第 7 章
+
     - [循环]
-    - [for 循环]
+
+    - [for 循循环]
+
     - [while 循环]
+
     - [continue 关键字]
+
     - [break 关键字]
+
     - [数组]
+
     - [多维数组]
+
 - 第 8 章
+
 - 第 9 章
+
 - 第 10 章
+
 - 第 11 章
+
 - 第 12 章
+
 - 第 13 章
+
 - 第 14 章
+
 - 第 15 章
+
 - 第 16 章
+
 - 第 17 章
+
 - 第 18 章
+
 - [JAVA 速成预览 - 在 12 小时内学习 Java 编程的终极入门课程]
+
 - [关于作者]
 
 ## 引言
+
 ## 欢迎来到你的新编程语言
+
 所以，你决定学习 JavaScript 编程了吗？很好，祝贺你，欢迎来到你的新编程语言！你会喜欢它的！
 
 在 Eprogramy，我们相信良好教育的基础是提供能够开启未来之门的工具。毫无疑问，世界已经进入了一个一切触手可及的时代。社会需求发生了变化。因此，今天的沟通方式也发生了变化。沟通开启了大门，所以学习如何沟通是我们的挑战。在 Eprogramy，我们希望你学会用一种新语言交流：编程语言。这种语言允许我们使用电脑或笔记本电脑进行创作。
@@ -78,10 +132,13 @@
 未来的大门已经开启。让我们一起一步步来。
 
 让我们开始吧！
+
 Eprogramy 团队
 
 # 第 1 章：JavaScript 编程语言
+
 ## JavaScript 的历史
+
 自从万维网诞生以来，网站包含静态页面。进入不同的网页时，你看到的是那个时代允许的最基本形式（20 世纪 90 年代初）。页面交互是不可能的，但现在终于可以了，通过你将在本指南中学习的编程语言——`Javascript`。
 
 通过使用 `Javascript`，你能够与按钮、文本字段、列表、表格等许多组件进行交互，因为你建立了一个基础设施来监听用户鼠标点击或键盘击键的交互，并根据对其编写的程序做出相应响应。`Javascript` 的核心思想是能够向你的网页发出指令，使其对不同的情况做出反应，或根据时间、动作以及用于触发 javascript 事件的各种其他元素按顺序执行操作。
@@ -91,10 +148,8 @@ Eprogramy 团队
 尽管如此，在 1996 年，`Javascript` 编程语言交给了一个名为 `EMCA` 的国际标准组织，从那时起由他们处理该语言。
 
 ## 什么是 JavaScript?
+
 让我们清除对 `Javascript`的一些误解——它不是 `Java`。许多人倾向于将两者混淆，并不完全理解其中的区别。这两种语言不仅在概念上不同，在设计上也不同，应该被视为两种完全不同的编程语言。
-
-
-
 
 Javascript 是一种最常用于网站交互的编程语言。它可以用于让网页变得动态且可交互，甚至可以用 Javascript 和 HTML5 制作出游戏！Javascript 代码要么被放置在 HTML 文档中（HTML 是所有网页编写的格式，或者至少是你的浏览器翻译网页时使用的格式），要么是从 HTML 文档中引用的。如果你想更深入地了解这一点，请去寻找一个 HTML 教程。
 
@@ -114,7 +169,7 @@ Javascript 的执行方式不是通过任何特殊的第三方程序（比如编
 
 在 HTML 中，有一个标准的约定来开始和结束一个语句。在英语中，我们必须以大写字母开头句子并以句号结尾，以保持易于理解的标准写作流。那么，HTML 使用“标签”（Tags）的概念来理解你具体在写什么。在 HTML 中，你必须记住几个关键标签，并理解它们的用途。
 
-在任何 HTML 文件中，都必须遵循一个标准的结构。这里有一个显示该示例的样本代码：
+在任何 HTML 文件中，都必须遵循一个标标准的结构。这里有一个显示该示例的样本代码：
 
 ```html
 <html>
@@ -138,15 +193,19 @@ Javascript 的执行方式不是通过任何特殊的第三方程序（比如编
 现在让我们分析下下面的样本代码：
 
 `<html>`
+
 这个标签指示网站的 HTML 部分何时开始，因此它必须出现在每个 HTML 文档中。该标签在文档结束处关闭。因此，`<html>` 标签是内部所有标签（子标签）的父标签。
 
 `<head>`
+
 此标签在加载网页时包含所有的头部信息。此标签内的所有内容都不会显示给用户，主要用于初始化脚本以准备使用。例如，在头部部分设置一个 `script` 标签，为整个 HTML 文档的其余部分使用做准备。我们在学习 jQuery 库时将需要这样做。
 
 `<title>`
+
 此标签的内容将包含网页的标题。
 
 `<body>`
+
 这是网站的整个内容部分。就像任何文章一样，你有论点、正文和结论。这在标签形式上的这种理念是相同的。
 
 HTML 中还有许多其他标签你可以在网上查询。让我们来看各种示例并识别一些有用的标签。
@@ -177,11 +236,11 @@ HTML 中还有许多其他标签你可以在网上查询。让我们来看各种
 
 上述示例中加粗的标签本质上描述了一个段落，并对其进行了格式化，使其具有正确的内边距/间距，而无需你操作。
 
-![输出](https://lh.googleusercontent.com/vnQxDcrM4I9w1I1I1I1I1I1I1I1I1I1I1I1I6Ube763FLzZ6I1I1I1I1I1I1I1/00000.jpg)
+![输出](https://lh.googleusercontent.com/vnQxDcrM4I9w1I1I1I1I1I1I1I1I1I1I1I1I6Ube763FLzZ6I1I1I1I1I1I1I1I/00000.jpg)
 
 ### 输出 (Output)
 
-最后，让我们来看一下 HTML 中的注释概念。有时你可能编写某些代码但并不实际将其打印到屏幕上，只是想在代码中添加提醒。你可以通过以 `<!--` 开头并以 `-->` 结束来进行注释。
+最后，让我们来看一下 HTML 中的注释概念。有时你可能编写某些代码但并不实际将其打印到屏幕上，只是想在代中添加提醒。你可以通过以 `<!--` 开头并以 `-->` 结束来进行注释。
 
 因此，如果我对某一行进行注释，我会这样做：
 
@@ -207,12 +266,10 @@ HTML 中仍有许多标签可以供你学习，但这些是你开始编写时需
 让我们回顾一下：
 
 - `<html>` 和 `</html>` 定义 HTML 文档，标签本身仅仅是将其内部内容定义为 HTML 类型，以便浏览器能够解释。
+
 - `<head>` 和 `</head>` 为文档提供信息并初始化任何外部脚本或样式表。
+
 - `<title>` 和 `</title>` 仅为浏览器提供信息以显示 HTML 文档的标题。
-
-
-
-
 
 `<body>` 和 `</body>` 标签包含了文档的所有内容，包括段落、导航栏、表格、图像等。
 
@@ -263,7 +320,7 @@ p {
 }
 ```
 
-上述示例中的**粗体文本**表示属性。在每个选定的标签中，你必须指定该标签的属性，例如文本颜色、字体大小、字体样式、字体粗细等。你可以在互联网上查找任何你需要的属性。有许多属性，我们不会在本指南中介绍它们。不同的属性应用于不同的标签。对于本例中的“p”标签，我们可以引用 `color` 属性和 `font-size` 属性。在花括号内引用它们（这仅表示适用于选择器 `p` 的属性块），然后将其分配给特定值。
+上述示例中的**粗体文本**表示属性。在每个选定的标标签中，你必须指定该标签的属性，例如文本颜色、字体大小、字体样式、字体粗细等。你可以在互联网上查找任何你需要的属性。有许多属性，我们不会在本指南中介绍它们。不同的属性应用于不同的标签。对于本例中的“p”标签，我们可以引用 `color` 属性和 `font-size` 属性。在花括号内引用它们（这仅表示适用于选择器 `p` 的属性块），然后将其分配给特定值。
 
 ```css
 p {
@@ -279,17 +336,25 @@ p {
 为了回顾 CSS 语法，让我们查看以下：
 
 1. `p`
+
 2. `{`
+
 3. `color:`
+
 4. `red;`
+
 5. `}`
 
 上面的代码获取段落的颜色并将其更改为红色。每行都经过编号，但不会包含在代码中。编号是为了让我们扫描每一行并了解它的工作原理：
 
 1. 选择器/标签
+
 2. 表示属性的开始
+
 3. 带有冒号的属性/特征以指示值
+
 4. 属性/特征的值，然后用分号表示语句结束
+
 5. 表示特定选择器（即 `p`）的属性结束
 
 记住，你可以多次这样做，记住分隔选择器块，以防浏览器产生混淆。好了，让我们先看看你如何在 HTML 文档中实际开始编码。首先，你必须进入 `<head>` 标签之间并输入以下内容：
@@ -372,10 +437,6 @@ p {
 </html>
 ```
 
-
-
-
-
 在上面的代码中，我们没有使用井号符号来选择具有特定 id 名称的属性，而是这次使用了类名。利用这些选择器的知识，我们可以使用 `Javascript` 引用特定的 HTML 元素，并通过添加属性或更改标签内的内容使其对用户交互产生动态，从而操作这些标签。
 
 在 CSS 中，有不同的方法可以将样式语言实际实现到 HTML 中。我已经向你展示了一种方法，即在 `head` 标签中使用 `style` 标签。事实上，实现 CSS 的方法主要有三种类型：一种是内联（inline），另一种是内部（internal），也就是我们之前采用的方法；另一种是外部（external）。我们之前是直接在 `head` 中内部编写的。要实现外部引用，我们不再在标签内编写 CSS 代码，而是让 `style` 标签引用一个包含所有 CSS 代码的文件。
@@ -397,7 +458,7 @@ p {
         <h1> 这是标题文本 </h1>
         <p id = "content"> 这是网页的内容。 </p>
     </body>
-</</html>
+</html>
 ```
 
 文件名：`pageStyle.css`
@@ -426,7 +487,7 @@ p {
         <h1> 这是标题文本 </h1>
         <p style = "color: red; font-size: 14px" id = "content"> 是网页的内容。 </p>
     </body>
-</</html>
+</html>
 ```
 
 我们终于涵盖了 HTML 和 CSS 的基础知识，终于开始学习如何实现 `Javascript` 了！
@@ -467,7 +528,7 @@ p {
         <h1> 这是标题文本 </h1>
         <p style = "color: red; font-size: 14px" id = "content"> 这是网页的内容。 </p>
     </body>
-</</html>
+</html>
 ```
 
 或者
@@ -484,7 +545,7 @@ p {
             alert("Javascript");
         </script>
     </body>
-</</html>
+</html>
 ```
 
 如两种情况所示，你可以选择在 `head` 或 `body` 中使用。现在，为了从外部实现，你必须使用 `script` 标签，但在此情况下，`script` 标签具有 `src` 属性，它仅包含目录。在这种情况下，没有提供目录。为了实际创建 `test.js`，你只需编写原始代码并带扩展名保存文件。
@@ -499,13 +560,10 @@ p {
         <h1> 这是标题文本 </h1>
         <p style = "color: red; font-size: 14px" id = "content"> 是网页的内容。 </p>
     </body>
-</</html>
+</html>
 ```
 
 拥有外部 javascript 代码的优点是缓存的 Javascript 文件能够加载更快，从而提高页面加载速度。使用外部 Javascript 文件的另一个大优点是它更容易维护，特别是对于大型项目。
-
-
-
 
 现在让我们来回顾一些关于通用编程的常识。代码中的间距对于程序的运行与否完全没有影响，但保持适当的间距是符合惯例且高效的，这样其他程序员才能阅读你的代码，你自己在编写代码时也能读懂自己的代码。随着你不断地编程和实践，你将开始掌握如何理解标准的间距规范以及何时需要使用它们。最好的方法就是继续阅读本指南，并留意何时留有间距。
 
@@ -570,8 +628,6 @@ var anObject = {myName:"Something"};
 ## JavaScript 运算符
 
 就像在数学课上，你学习了加法、减法、乘法、除法等。这些都是算术运算符，用于编程中接收数字、对其进行处理并进行相应的计算。让我们来看看编程中的这些运算符，因为它们是最重要的理解内容之一，也是最容易掌握的内容之一。
-
-
 
 当你在浏览器中打开 HTML 文件时，你应该会看到一个黑色页面。大多数浏览器都应该某种形式的控制台，通常通过 `F12` 键激活。这在我们学习编程时非常有用。所以，让我们开始吧！首先，始终将你的代码放在 `script` 标签之间。接下来，`console.log()` 函数允许你查看括号内任何表达式或对象的值。目前，你只需要知道如何使用它，但稍后我会解释它的实际含义。这里有一些示例代码：
 
@@ -668,6 +724,7 @@ total= x / y;
 ### 取模
 
 `6 % 3 = 0      7 % 3 = 1`
+
 `8 % 3 = 2      9 % 3 = 0`
 
 这对于判断一个数字是否为偶数非常有用。只需对 `2` 取模，如果结果为 `0`，则数字为偶数，否则为奇数。这在尝试查找分钟（例如时钟）时也有用。只需将分钟除以 `60`（一小时 60 分钟），结果将是时钟的分钟计数。注意，当使用取模时，你只能得到从 `0` 到任何小于你运算符的数字（运算符也可以是小数）。
@@ -748,6 +805,7 @@ total= x / y;
 ### 取模示例
 
 `6 % 3 = 0`, `7 % 3 = 1`
+
 `8 % 3 = 2`, `9 % 3 = 0`
 
 这对于判断一个数字是否为偶数非常有用。只需对 `2` 取模，如果结果为 `0`，则数字为偶数，否则为奇数。这在尝试查找分钟（例如时钟）时也有用。只需将分钟除以 `60`（一小时 60 分钟），结果将是时钟的分钟计数。注意，当使用取模时，你只能得到从 `0` 到任何小于你运算符的数字（运算符也可以是小数）。
@@ -791,8 +849,6 @@ var x = 5;
 var x = 5;
 x += 5;
 ```
-
-
 
 在这个示例中，如果你打印 `x`，其值将是 10，因为你正在将 5 的值加到 `x` 的值上。这句话等同于 `x = x + 5` → `x += 5`。
 
@@ -898,15 +954,19 @@ var text = "It’s great to learn!" ;
 ```
 
 ## 布尔逻辑
+
 布尔值（boolean）是一个持有真（true）或假（false）的变量。
 
 ## If 语句
+
 `if` 语句允许你仅在条件为真时执行代码块。如果条件为假，块中的代码将不会运行。
 
 ### Else If
+
 `else if` 语句允许在第一个 `if` 条件为假时检查另一个条件。你可以根据需要拥有尽可能多个 `else if` 语句。
 
 ### Else
+
 `else` 语句在所有先前的 `if` 和 `else if` 条件都为假时执行。每个 `if` 块只能有一个 `else` 语句。
 
 ```javascript
@@ -923,10 +983,13 @@ if (a == b) {
 ```
 
 此示例中使用的操作数（`==` 和 `>`）在下方解释：
+
 - `==`: 检查两个值是否相等。
+
 - `>`: 检查左侧的值是否大于右侧。
 
 ## 嵌套 If 语句
+
 知道另一个 `if` 语句内部包含一个 `if` 语句也是重要的。这被称为嵌套 `if` 语句。
 
 ```javascript
@@ -942,9 +1005,6 @@ if (a == 20) {
 
 在这个示例中，我们首先检查 `a` 是否等于 `b`。如果是，我们再检查 `a` 是否小于 `b`。如果该语句也返回真，我们就可以向控制台打印 `"a is less than b and it is equal to 20"`。
 
-
-
-
 Javascript 支持 6 种不同的关系运算符，用于比较变量的值。它们如下：
 
 ### 关系运算符
@@ -952,6 +1012,7 @@ Javascript 支持 6 种不同的关系运算符，用于比较变量的值。它
 `==`  此运算符检查两个整数的值是否相等。如果它们相等，运算符返回 `true`。如果不相等，则返回 `false`。
 
 示例：
+
 ```javascript
 var a = 10;
 var b = 10;
@@ -959,11 +1020,13 @@ if (a == b) {
     alert("they are the same");
 }
 ```
+
 这段代码检查 `a` 的值是否等于 `b` 的值。由于 `a` 的值等于 `b` 的值，括号内的值将为 `true`。这导致上述代码打印出语句“they are the same”。
 
 `!=` 此运算符检查两个值是否**不相等**。如果两个值**不相等**，那么它将返回 `true`。如果它们**相等**，它将返回 `false`。
 
 示例：
+
 ```javascript
 var a = 10;
 var b = 20;
@@ -971,11 +1034,13 @@ if (a != b) {
     alert("they are not the same");
 }
 ```
+
 这段代码将检查 `a` 是否等于 `b`。由于 `a` 不等于 `b`，程序将在控制台中打印“they are not the same”。
 
 `>` 此运算符检查一个值是否**大于**另一个值。如果它前面的变量的值大于后面变量的值，它将返回 `true`。如果前面变量的值小于后面变量的值，它将返回 `false`。
 
 示例：
+
 ```javascript
 var a = 10;
 var b = 20;
@@ -985,11 +1050,13 @@ if (a > b) {
     alert("a is not larger than b");
 }
 ```
+
 这个示例检查 `a` 是否大于 `b`。由于 `a` 不大于 `b`，这个 `if` 语句将返回 `false`。相反，它将打印“a is not larger than b”，因为代码通过了失败的 `if` 语句并调用了 `else` 语句。
 
 `<` 此运算符检查一个值是否**小于**另一个值。如果运算符前的变量的值小于变量变量的值，则代码将返回 `true`；否则，它将返回 `false`。
 
 示例：
+
 ```javascript
 var a = 10;
 var b = 20;
@@ -999,11 +1066,13 @@ if (a < b) {
     alert("a is not larger than b");
 }
 ```
+
 这个示例与上一个相似，但运算符从“大于”变成了“小于”。因此，这次 `if` 语句返回 `true`。由于 `a` 的值小于 `b` 的值，程序将在控制台中打印“a is larger than b”。
 
 `>=` 此运算符检查一个值是否**大于或等于**另一个值。如果它前面的变量的值大于或等于后面的变量，那么它将返回 `true`。如果后面的变量大于但不等于前面的变量，它将返回 `false`。
 
 示例：
+
 ```javascript
 var a = 20;
 var b = 20;
@@ -1013,11 +1082,13 @@ if (a >= b) {
     alert("a is not larger or equal to b");
 }
 ```
+
 在这个示例中，`a` 和 `b` 的值均为 20。虽然 `a` 不大于 `b`，但它**等于** `b`，因此该语句返回 `true`，代码最终打印出“a is larger or equal to b”。
 
 `<=` 此运算符检查一个值是否**小于或等于**另一个值。如果它前面的变量的值小于或等于后面的变量，那么它将返回 `true`。如果后面的变量小于但不等于前面的变量，它将返回 `false`。
 
 示例：
+
 ```javascript
 var a = 20;
 var b = 20;
@@ -1027,15 +1098,17 @@ if (a <= b) {
     alert("a is not larger than b");
 }
 ```
+
 这个示例与上一个相同，只是运算符从 `>=` 改变为了 `<=`。虽然运算符变了，但结果是相同的。由于 `a` 等于 `b`，这段代码将返回 `true`，打印“a is larger than b”。
 
 ### 逻辑运算符
 
 Javascript 支持 3 种用于逻辑判断的逻辑运算符，它们通常与关系运算符配合使用。
 
-`&&` 这被称为逻辑**与**（AND）运算符。如果该运算符前后的操作数都返回 `true`，则条件返回 `true`。如果两个操作数均为 `false`，或其中一个操作数为 `false`，则条件将返回 `false`。**两个**操作数都必须为 `true`，条件才会返回 `true`。
+`&&` 这被称为逻辑**与**（AND）运算符。如果该运算符前后的操作数都返回 `true`，则条条件返回 `true`。如果两个操作数均为 `false`，或其中一个操作数为 `false`，则条件将返回 `false`。**两个**操作数都必须为 `true`，条件才会返回 `true`。
 
 示例：
+
 ```javascript
 var a = 20;
 var b = 20;
@@ -1045,9 +1118,11 @@ if (a == 20 && a == b) {
     alert("a is not equal to 20 or is not equal to b");
 }
 ```
+
 在这个示例中，我们检查 `a` 是否等于 20，**且** `a` 是否等于 `b`。这两个条件被称为操作数。由于 `a` 等于 20 且等于 `b`，语句返回 `true`，我们在控制台中打印“a is larger than b”。
 
 示例 2：
+
 ```javascript
 var a = 20;
 var b = 30;
@@ -1057,11 +1132,13 @@ if (a == 20 && a == b) {
     alert("a is not equal to 20 or is not equal to b");
 }
 ```
+
 在下一个示例中，我们检查与第一个示例完全相同的内容。然而这次的区别在于，我们将 `b` 的值从 20 改变为了 30。这意味着当我们运行这段代码时，`if` 语句将返回 `false`，因为虽然 `a` 等于 20，但它不等于 `b`。因此我们打印“a is not equal to 20 or is b”。
 
 `||` 此运算符被称为逻辑**或**（OR）运算符。如果第一个操作数或第二个操作数返回 `true`，则语句将返回 `true`。这意味着如果第一个操作数返回 `false` 而第二个返回 `true`，语句将会返回 `true`，反之亦然。如果两个操作数均为 `true`，语句也会返回 `true`。本质上，使用或运算符时，至少有一个操作数必须返回 `true`。
 
 示例：
+
 ```javascript
 var a = 20;
 var b = 30;
@@ -1071,9 +1148,11 @@ if (a == 20 || a == b) {
     alert("a is not larger than b");
 }
 ```
+
 在这个示例中，我们检查 `a` 是否等于 20，**或者** `a` 是否等于 `b`。在这种情况下，`a` 等于 20 而不等于 `b`。由于这些操作数中只要有一个为 `true`，整个语句将返回 `true`。因此程序将在控制台中打印“a is equal to 20 or b”。
 
 示例 2：
+
 ```javascript
 var a = 20;
 var b = 20;
@@ -1083,11 +1162,13 @@ if (a == 20 || a == b) {
     alert("a is not equal to 20 or b");
 }
 ```
+
 在这个示例中，我将上一个示例中 `b` 的值从 30 改为 20。这意味着 `a` 等于 20 且 `a` 等于 `b`。两个操作数都返回 `true`，因此语句返回 `true`。这是因为或运算符要求一个或多个运算符为 `true`。该程序向控制台输出“a is equal to 20 and b”。
 
 `!` 此运算符被称为逻辑**非**（NOT）运算符。它用于反转操作数的逻辑状态。该操作数可以与其他任何操作数一起以反转其输出。如果操作数返回 `true`，在应用逻辑非运算符后，操作数将返回 `false`。
 
 示例：
+
 ```javascript
 var a = 21;
 var b = 20;
@@ -1097,10 +1178,6 @@ if (!(a == 20) && a > b) {
     alert("a is equal to 20, and a is not greater than b");
 }
 ```
-
-
-
-
 
 在这个示例中，我们检查 `a` 的值是否不等于 20，并检查 `a` 是否大于 `b`。由于 `a` 既不等于 20 又大于 `b`，我们可以向控制台输出“a 不等于 20, 且 a 大于 b”。
 
@@ -1158,7 +1235,9 @@ else {
 我们现在将完成另一个赋值题，以确保我们理解了运算符的所有内容。我们有 3 个朋友想知道他们的钱与其他人相比如何。我们将编写一个程序，输出谁比谁富。我们将三个名为 `bob`、`john` 和 `tom` 的整数。我们将给他们每个人分配一个不同的值，程序必须输出谁更富。它还必须告诉我们是否有人的钱数一样。
 
 例如：
+
 如果 `bob = 20`, `tom = 10`, 且 `john = 5`，输出必须是：“bob is richer than tom, who is richer than john”
+
 但如果 `bob = 20`, `tom = 20`, 和 `john = 5`，输出必须是：“bob is as rich as tom, both are richer than john”
 
 程序需要适用于每种结果。我强烈建议你自己尝试这个程序，并在查看答案之前尽可能地努力思考。编程的很大一部分是解决问题和理解代码，所以我建议你先自己想出来。
@@ -1231,10 +1310,6 @@ else if (bob > john && john > tom) {
 }
 ```
 
-
-
-
-
 ```javascript
 alert("john is richest, followed by bob, followed by tom");
 }
@@ -1253,7 +1328,7 @@ else if (john > tom && tom > bob) {
 
 ## 循环
 
-Javascript 中的循环与许多其他编程语言相似。其语法也相当直观。在每个循环中，都有一个设置好的条件供循环检查该条件是否为真，直到情况相反，循环本身就会退出。例如，如果你创建一个循环并说我想让它在停止之前运行 10 次某个代码块，有几种方法可以实现这一点，因为有不同类型的循环。循环的大致思路如下：
+Javascript 中的循环与许多其他编程语言相似。其语法也相当直观。在每个循循环中，都有一个设置好的条件供循环检查该条件是否为真，直到情况相反，循环本身就会退出。例如，如果你创建一个循环并说我想让它在停止之前运行 10 次某个代码块，有几种方法可以实现这一点，因为有不同类型的循环。循环的大致思路如下：
 
 ```javascript
 loop (condition) {
@@ -1302,14 +1377,23 @@ for (x = 0; x < 10; x++) {
 我们可以看到这个循环将 `x` 从 0 递增到 9，所以技术上是 10 次迭代，因为 0 是包含在。因此，循环会弹出以下内容：
 
 Current Number: 0
+
 Current Number: 1
+
 Current Number: 2
+
 Current Number: 3
+
 Current Number: 4
+
 Current Number: 5
+
 Current Number: 6
+
 Current Number: 7
+
 Current Number: 8
+
 Current Number: 9
 
 记得我说的 for 循环的最后一个语句是变量的算术操作吗——变量也可以以你任何想要的方式受到影响。现在我们知道了 `for` 循环是如何工作的，那么理解 `while` 循环和 `do-while` 循环是如何工作的就会变得更容易。
@@ -1329,14 +1413,23 @@ while (x < 10) {
 在上面的示例中，可以看到，`while` 循环只需检查一个条件，当条件满足时，运行代码块，然后影响变量 `x`，这样在代码块执行完成后它就会返回检查条件，并一直这样做直到 `x` 不再小于 10。输出与 `for` 循环相同：
 
 Current Number: 0
+
 Current Number: 1
+
 Current Number: 2
+
 Current Number: 3
+
 Current Number: 4
+
 Current Number: 5
+
 Current Number: 6
+
 Current Number: 7
+
 Current Number: 8
+
 Current Number: 9
 
 这种 `while` 循环可能会出现问题，比如意外创建无限循环。
@@ -1348,7 +1441,7 @@ while (x < 10) {
 }
 ```
 
-在上面的示例中，它执行了之前循环所做的一切，只是由于变量 `x` 从未被影响，输出（显示某些文本）将无限显示。
+在上面的示例中，它执行了之前循循环所做的一切，只是由于变量 `x` 从未被影响，输出（显示某些文本）将无限显示。
 
 我们将涵盖的最后一种循环是 `do-while` 循环。这种循环执行 `while` 循环执行的一切，只是它在考虑条件之前，无论条件如何至少执行一次。
 
@@ -1379,13 +1472,21 @@ while (x < 10) {
 在上面的示例中，我们正在检查 `x` 是否等于 5，如果是，我们做的就是跳过循环的迭代，这意味着这个循环的输出变为：
 
 Current Number: 0
+
 Current Number: 1
+
 Current Number: 2
+
 Current Number: 3
+
 Current Number: 4
+
 Current Number: 6
+
 Current Number: 7
+
 Current Number: 8
+
 Current Number: 9
 
 如上面的输出所示，循环跳过了 5，因为它在有机会机会弹出数字之前就被告知要跳过那次迭代。
@@ -1403,9 +1504,6 @@ while (x < 10) {
     alert(x);
 }
 ```
-
-
-
 
 在上面的示例中，我们正在检查 `x` 是否等于 `5`，如果是的话，我们做的就是跳出循环，这意味着该循环的输出变为：
 
@@ -1534,8 +1632,6 @@ var x = document.getElementById(‘text1’);
 x.innerHTML = “Hello World!”;
 ```
 
-
-
 此调用会查找 id 为“text1”的元素。然后我们把该元素的 `innerHTML` 设置为“Hello World!”。这会将该内容写入屏幕。
 
 `createElement` 函数也相当有用。它根据一个字符串创建元素，该字符串定义了要创建的元素类型。然后它返回该元素供你的代码使用。此函数也是 `document` 对象的一部分。
@@ -1544,10 +1640,12 @@ x.innerHTML = “Hello World!”;
 var x = document.createElement(“button”);
 ```
 
+
+
 另一个实用的函数是 `appendChild` 函数。它可以在任何 `DOM` 对象上调用。此函数将设置第一个参数的值（该参数应该是一个 `DOM` 对象），将其设置为调用该函数的 `DOM` 对象的子元素。必须使用此函数才能将元素放到屏幕上。`createElement` 函数创建了元素，但没有将其附加到 `document` 上。而此函数可以。我们可以从 `document` 对象轻松访问 `document` 的 `body`。
 
 ```
-var x = document.body.appendChild(document.createElement(“button”));
+var x = document.body.appendChild(document.createElement("button"));
 ```
 
 `Math` 对象包含了许多实用的函数。这包括诸如 `pow` 函数，用于计算幂；`sqrt` 函数，用于计算数字的平方根；`abs` 函数，用于获取数字的绝对值；`ceil` 函数，将小数向上舍入到整数；`floor` 函数，将小数向下舍入到整数；以及 `round` 函数，它按照数学课教你的方式对小数进行四舍五入：.5 及以上进位，小于则舍入。
@@ -1564,14 +1662,14 @@ var k = Math.round(3.2); // k = 3
 另一个实用的函数是 `setInterval` 函数。此函数允许你每 x 毫秒调用一次函数。它接收两个参数：要调用的函数以及调用之间等待的毫秒数。它还返回一个数字，即间隔器 ID，可以用它来停止间隔。
 
 ```
-var x = setInterval(function(){console.log(“Groundhog Day!”);}, 1000);
+var x = setInterval(function(){console.log("Groundhog Day!");}, 1000);
 ```
 
 此示例将每秒打印一次 Groundhog Day!另一个实用的函数是 `clearInterval` 函数。它通过 ID 停止间隔。它接受一个参数，即间隔器的 ID。
 
 ```
 clearInterval(x);
-console.log(“Groundhog day is over!”);
+console.log("Groundhog day is over!");
 ```
 
 # 第 9 章
@@ -1581,7 +1679,7 @@ console.log(“Groundhog day is over!”);
 DOM 元素是显示在你 HTML 文档上的内容。`DOM` 代表文档对象模型（Document Object Model）。`DOM` 元素包含类型（由创建它的标签定义）、属性（使元素更具唯一性）以及 `innerHTML`（定义其中包含哪些文本或元素）。让我们来看一个示例元素。这将放在你的 HTML 文件中。
 
 ```html
-<div id=’x’ style=’border: black 1px solid’>
+<div id='x' style='border: black 1px solid'>
   This is part of the innerHTML.
   <button>Click Me!</button>
 </div
@@ -1606,7 +1704,7 @@ if (window.XMLHttpRequest) {
 }
 ```
 
-现在你可以在整个代码中使用适当的请求，而无需每次都检查使用哪种请求。我们本质上是将 `requestType` 设置为这两个函数之一的值。现在让我们配置我们的请求。首先，我们创建对象。
+现在你可以在整个代码中使用适当的请请求，而无需每次都检查使用哪种请求。我们本质上是将 `requestType` 设置为这两个函数之一的值。现在让我们配置我们的请求。首先，我们创建对象。
 
 ```javascript
 var request = new requestType("Microsoft.XMLHTTP");
@@ -1625,16 +1723,13 @@ request.onreadystatechange = function() {
 在这个函数中，我们首先检查两个值：`readyState` 和 `status`。`readyState` 检查请求处于什么状态，4 表示完成。`status` 检查服务器返回的代码，200 表示“成功”。`Status` 也可以其他值，如 404，意味着“未找到文件”。如果请求完成且状态为 200，我们就运行任何想要的代码，在此例中只是写入文本。AJAX 的最后一步是实际发送请求。这是该部分的代码。
 
 ```
-request.open(“GET”, “目标文件的本地 url”, true);
+request.open("GET", "目标文件的本地 url", true);
 request.send();
 ```
 
-
-
-
 ## NodeJS 简介
 
-NodeJS 是常规 Apache 服务器的替代品。NodeJS 提供了实时服务器管理（而 Apache 服务器仅在客户端请求 PHP 代码时才运行 PHP 代码），并允许使用 Javascript 进行服务器端编程。通过 NodeJS，你可以完全自定义服务器响应请求的方式。这非常有用，例如，如果你希望每当客户端向服务器发送特定请求时，都返回一个随机的文件或一组数据。此外，你还可以让服务器执行许多实时任务，比如响应套字（sockets），甚至是套字之间的交互。这可以用于很多事情，但我们将从游戏的角度来它。
+NodeJS 是常规 Apache 服务器的替代品。NodeJS 提供了实时服务器管理（而 Apache 服务器仅在客户端请求 PHP 代码时才运行 PHP 代码），并允许使用 Javascript 进行服务器端编程。通过 NodeJS，你可以完全自定义服务器响应请请求的方式。这非常有用，例如，如果你希望每当客户端向服务器发送特定请求时，都返回一个随机的文件或一组数据。此外，你还可以让服务器执行许多实时任务，比如响应套字（sockets），甚至是套字之间的交互。这可以用于很多事情，但我们将从游戏的角度来它。
 
 ## 设置项目
 
@@ -1671,7 +1766,7 @@ function handler(req, res) {
 }
 ```
 
-这段代码非常简单。首先，我们使用 `require` 方法加载 `http` 模块。`require` 方法可以用于加载模块，包括自定义模块。然后我们创建一个服务器，并为它提供一个 `handler` 函数。这个 `handler` 函数有两个参数：`req`——请求（requests）；和 `res`——响应（response）。`Request` 告诉我们关于用户请求的各种数据，包括 `url`、POST 数据或任何其他内容。`Response` 允许我们程序员用任何想要的数据响应用户的请求，无论这些数据是否与用户的请求有关。
+这段代码非常简单。首先，我们使用 `require` 方法加载 `http` 模块。`require` 方法可以用于加载模块，包括自定模块。然后我们创建一个服务器，并为它提供一个 `handler` 函数。这个 `handler` 函数有两个参数：`req`——请求（requests）；和 `res`——响应（response）。`Request` 告诉我们关于用户请求的各种数据，包括 `url`、POST 数据或任何其他内容。`Response` 允许我们程序员用任何想要的数据响应用户的请求，无论这些数据是否与用户的请求有关。
 
 在这个示例中，我们忽略了他们提出的任何请求，简单地返回状态码 `200`（意味着“良好”）和内容类型 `text/plain`（意味着我们正在向用户发送纯文本）。这是 `writeHead` 函数——我们正在写入响应的头部。另一方面，我们的正文需要使用 `write` 函数。这只是向我们的响应中写入文本，在本例中，我们简单地响应“Hello World”。最后我们调用 `end` 函数，结束我们的响应并发送给用户。这就是我们的 `handler` 函数。最后，一旦我们创建了服务器，我们就告诉它监听 `127.0.0.1` IP 的 `80` 端口。这就是我们非常简单的服务器。
 
@@ -1724,19 +1819,16 @@ function handler(req, res) {
 }
 ```
 
-
-
-
 这里到底发生了什么？首先，我们加载了两个新模块：`fs`（文件系统）和 `mime`（检测文件类型）。在我们的处理器（handler）中，我们做了很多操作。首先，我们获取 `url` 的统计信息，但在其后面附加了“public”。这意味着无论如何，处理器都只会查找名为“public”文件夹中的文件，而该文件夹必须存在于你的项目中（紧邻你服务器的 `.js` 文件）。这样做是为了防止人们看到公共内容以外的任何东西。如果人们能看到你的服务器代码，将非常不妙，因为他们可能更容易找到漏洞并利用它们。我们还为这个 `lstat` 方法提供了一个回调函数。这使得该方法是异步的。这些内容是异步的非常重要，否则你的整个服务器在检查文件数据时将会冻结。这是糟糕的，因为这意味着你的服务器在文件处理完成之前，将停止响应用户的请求。
 
 在回调函数中，我们做的第一件事是检查是否存在错误，如果存在，向用户返回一个非常通用的错误消息（如果你想让它更好，可以根据收到的错误类型更改此错误消息，但这里应该保持简单），并且不再继续执行方法的其余部分。如果没有错误，我们检查正在查看的文件是否为目录。如果是目录，我们就尝试获取默认文件，即 `index.html` 文件。我们通过简单地追加 `/index.html` 并尝试读取该文件来实现。`readFile` 也有一个回调函数，意味着它也是异步的。在这个回调函数中，我们再次检查是否有错误，如果是，则返回一个通用错误消息。否则，我们使用数据并将其发送给客户端。
 
-注意，我们假设索引文件只能是 html 文件。情况可能并不总是如此，但在大多数情况下，你可以有一个 html 文件，它只需通过 AJAX 加载其他动态数据。现在，如果原始请求不是目录（意味着它是一个文件），我们只需尝试加载该文件，检查是否有错误，并在可以的情况下进行响应。注意，对于“Content-Type”，我们使用了 `mime.lookup(req.url)`。该方法会为我们请求的文件找到适当的内容类型。这仅仅是为了避免混淆浏览器或任何其他向服务器请求的实体。现在，这离你能够制作的最复杂的处理器还差得远。你可以让它可能加载并运行 php 文件，还可以让错误处理变得更健壮，但作为一个简单的 Apache 服务器，这已经足够了。
+注意，我们假设索引文件只能是 html 文件。情况可能并不总是如此，但在大多数情况下，你可以有一个 html 文件，它只需通过 AJAX 加载其他动态数据。现在，如果原始请求不是目录（意味着它是一个文件），我们只需尝试加载该文件，检查是否有错误，并在可以的情况下进行响应。注意，对于“Content-Type”，我们使用了 `mime.lookup(req.url)`。该方法会为我们请请求的文件找到适当的内容类型。这仅仅是为了避免混淆浏览器或任何其他向服务器请求的实体。现在，这离你能够制作的最复杂的处理器还差得远。你可以让它可能加载并运行 php 文件，还可以让错误处理变得更健壮，但作为一个简单的 Apache 服务器，这已经足够了。
 
 我们将学习的下一步是 SocketIO。如上所述，套字（sockets）允许客户端和服务器之间传输实时数据。SocketIO 相当易用，我们不会深入探讨某些复杂性，但你可以利用所学的知识做很多非常花哨的东西。所以，让我们学习它吧！第一步是在你的服务器中加载该模块。
 
 ```javascript
-var socketIOModule = require‘socket.io’);
+var socketIOModule = require('socket.io');
 ```
 
 下一步是创建一个 socketIO 对象。只需将 `socketIOModule` 当作一个函数调用，并使用我们上一个示例中的 `server` 作为第一个参数即可。
@@ -1748,7 +1840,7 @@ var socketIO = socketIOModule(server);
 最后，我们将为 SocketIO 的‘connection’（连接）事件创建一个处理器。这意味着每当用户通过 SocketIO 连接时，此处理器就会触发。
 
 ```javascript
-socketIO.on(‘connection’, socketConnect)
+socketIO.on('connection', socketConnect)
 
 function socketConnect(socket)
 {
@@ -1759,15 +1851,15 @@ function socketConnect(socket)
 `socketIO` 对象意味着全局范围内，每当触发连接事件时，所有的 SocketIO 都会调用 `socketConnect` 回调。我们的回调有一个参数 `socket`，它可以被设置为以与 `socketIO` 对象响应事件相同的方式来响应事件——即使用 `on` 方法。该方法的第一个参数是事件名称。你可以创建自定义事件名称，只需在第一个参数中输入事件名称即可，每当服务器收到此事件（来自此 socket）时，它就会调用第二个参数——即回调函数。回调的参数取决于事件的类型，但所有自定义事件将只有一个“data”参数，它可以是任何对象。`Socket.emit` 是交换的另一侧。它实际上是向 socket 另一端的客户端或服务器发送一个事件。第一个参数是以字符串形式发送的要发送的事件。第二个参数是待发送的对象。
 
 ```javascript
-socketIO.on(‘connection’, socketConnect)
+socketIO.on('connection', socketConnect)
 
 function socketConnect(socket)
 {
-    socket.emit(‘greetClient’, {});
-    socket.on(‘greetServer’, function(data){
+    socket.emit('greetClient', {});
+    socket.on('greetServer', function(data){
         if(data.playerName == “Spykill”)
         {
-            socket.emit(‘greetClient’, {});
+            socket.emit('greetClient’, {});
         }
     });
 }
@@ -1777,7 +1869,7 @@ function socketConnect(socket)
 
 ```html
 <!DOCTYPE html>
-<<html>
+<html>
 <head>
     <title></title>
     <script src="https://cdn.socket.io/socket.io-2.0.js"></script>
@@ -1786,10 +1878,10 @@ function socketConnect(socket)
         socket.on('greetClient', function(data){
             socket.emit('greetServer', {rank: ‘admin’});
         });
-        socket.on(‘changeRank’, function(data){
+        socket.on('changeRank', function(data){
             if(data.rank == ‘admin’)
             {
-                document.write(“You are admin!”);
+                document.write("You are admin!");
             }
         });
     </script>
@@ -1815,16 +1907,13 @@ function socketConnect(socket)
 接下来我们需要为 canvas 设置一些尺寸。在第一个 canvas 标签中，添加 `width` 和 `height` 属性，并将它们设置为所需的值。你还应该设置 `id` 属性作为一个标识符，以便找到该元素。
 
 ```html
-<canvas id=’ourCanvas’ width=’800’ height=’600’></canvas>
+<canvas id='ourCanvas' width='800' height='600'></canvas>
 ```
-
-
-
 
 你可能还想添加某种边框来将背景与画布区分开来。这涉及到 CSS 领域，所以我将简要带过。只需将 style 属性设置为“border:black 1px solid”即可。这会在你的画布周围创建一个宽度为 1 像素的黑色边框。
 
 ```html
-<canvas id=’ourCanvas’ width=’800’ height=’600’ style=’border:black 1px solid’></canvas>
+<canvas id='ourCanvas' width='800' height='600' style='border:black 1px solid'></canvas>
 ```
 
 现在我们已经设置好了画布，必须使用它。我们需要创建一个在画布加载后运行的函数。该函数要的第一件事是使用 id 找到画布。然后，它必须获取画布的 2d 上，用于在画布上进行绘制。
@@ -1840,14 +1929,14 @@ function doCanvasStuff()
 在继续之前，我们必须对画布元素做最后的一件事才能继续操作。我们必须设置它的 `onload` 属性来执行我们的 `doCanvasStuff` 函数，这样一旦画布加载，它就会运行我们的画布代码。
 
 ```html
-<canvas id=’ourCanvas’ width=’800’ height=’600’ style=’border:black 1px solid’ onload=’doCanvasStuff()’></canvas>
+<canvas id='ourCanvas' width='800' height='600' style='border:black 1px solid' onload='doCanvasStuff()'></canvas>
 ```
 
 接下来，我们需要使用上下文（context）来绘制一些东西。首先让我们谈谈样式（Styles）。样式描述了计算机如何在画布上绘制。这可能意味着样式是实色，也可能是渐变。你可以使用样式做很多事情，但在此后的内容中，我们将重点关注实色。你可以设置两种样式：`fill style`（填充样式）和 `stroke style`（描边样式）。`fill style` 的作用顾如其名——填充形状。`stroke style` 基本上遵循形状的线条。你可以使用描边来勾勒形状的轮廓。要将样式设置为实色，只需将上下文的 `strokeStyle` 或 `fillStyle` 设置为 HTML 颜色值即可。该颜色值是十六进制的还是 `rgb` 函数的值并不重要。以下是两者的示例。
 
 ```javascript
-context.strokeStyle = ‘#88888’;
-context.fillStyle = ‘rgb(200, 45, 130)’
+context.strokeStyle = '#88888';
+context.fillStyle = 'rgb(200, 45, 130)'
 ```
 
 在这里，我们将描边样式设置为十六进制值（注意我们在十六进制值前面有一个井号 #），它的求值结果为灰色；我们将填充样式设置为 `rgb` 函数的值（注意这个函数带有引号，因为这不是一个 JavaScript 函数，而是 HTML 函数或 CSS 函数），其中红色值设置为 200，绿色设置为 45，蓝色设置为 130，最终看起来像粉粉色。现在，每当我们调用填充函数或描边函数时，这些颜色就会被使用。那么，我们到底是如何绘制图形的呢？让我们从矩形开始。创建矩形有多种方法。第一种是使用 `fillRect` 函数（或者 `strokeRect` 函数，允许你仅勾勒矩形的轮廓）。它接受四个参数，你可能已经猜到了：x 位置、y 位置、宽度和高度。请注意，x 和 y 位置是从左角的原点开始的。你可以使用负的 x 和 y 值，只是矩形的一部分会被切掉。所有这些值都以像素为单位。
@@ -1878,9 +1967,6 @@ context.lineTo(100, 100);
 
 我们需要做的最后一件事是告诉计算机以某种方式实际绘制该形状。在这里，我们将同时进行描边和填充。注意顺序。你通常希望先描边后填充。
 
-
-
-
 你也可以通过简单的赋值为对象添加新变量。你不需要编写 `var` 关键字。
 
 ```javascript
@@ -1906,7 +1992,7 @@ function Person(personName)
     this.name = personName;
 }
 
-var david = new Person(“David”);
+var david = new Person("David");
 david.age = 23;
 console.log(david.name + “, ” + david.age);
 ```
@@ -1929,7 +2015,7 @@ function Person(personName, personAge)
     };
 }
 
-var david = new Person(“David”, 23);
+var david = new Person("David", 23);
 david.talkAbout(); // David is currently 23
 david.birthDay();
 david.talkAbout(); // David is currently 24
@@ -1959,7 +2045,7 @@ console.log(x.y); // 4
 ```javascript
 function printSomething()
 {
-    console.log(“Something I guess? I don’t know...”);
+    console.log("Something I guess? I don’t know...");
 }
 ```
 
@@ -1970,7 +2056,7 @@ function printSomething(times)
 {
     for(var i = 0; i < times; i++)
     {
-        console.log(“Mum!”);
+        console.log("Mum!");
     }
 }
 ```
@@ -2024,7 +2110,7 @@ function kindaUess(number)
         if(number == i)
         {
             console.log(i);
-            console.log(“That wasn’t the best way to do that”);
+            console.log("That wasn’t the best way to do that");
             return;
         }
     }
@@ -2032,8 +2118,6 @@ function kindaUess(number)
 ```
 
 这不是一个非常有用的示例，但它展示了语法。这个循环只要 true 为真就会一直运行。这种循环将无限运行。我们还有一个名为 `i` 的变量，它是我们定义的。在每次迭代中，我们检查要查找的数字是否等于我们的变量 `i`。如果是，我们就打印 `i`，并打印一些关于该函数的通用信息。最后，我们返回函数。由于函数在返回后停止执行，无限循环被跳出，我们的程序可以继续运行。这非常有用，特别是在你想限制迭代次数的情况下。例如，如果你在数组中搜索某个内容并找到了它，你可能想直接返回，以避免浪费更多迭代去寻找重复内容或其他内容。
-
-
 
 函数极其有用，特别是当你的代码变得异常冗长时。与其在代码中到处写相似的代码，你不如使用函数，让代码只编写一次，并在需要运行的地方调用。函数还允许我们像注释一样让代码更清晰，只不过是以函数名的形式呈现的。例如，假设你有一些难以阅读或令人困惑的代码来打印你代码的输出。你可以创建一个名为 `printOutput` 的函数。这使得代码变得更容易读，因为你面对不再是一块代码，而是单行代码，直接告诉它在做什么：打印输出。
 
@@ -2098,9 +2182,6 @@ var Pathfinding = {
 };
 ```
 
-
-
-
 ```javascript
 if(i+1 < width && (map[i+1][j] != 1 || (i+1 == end.x && j == end.y))) { Pathfinding.tryPush(Pathfinding.calcTile(i+1, j, tile, false, end, reachedTarget, pathTile, openList, closedList), openList); }
 if(j-1 >= 0 && (map[i][j-1] != 1 || (i == end.x && j-1 == end.y))) { Pathfinding.tryPush(Pathfinding.calcTile(i, j-1, tile, false, end, reachedTarget, pathTile, openList, closedList), openList); }
@@ -2155,10 +2236,6 @@ getPathFromLastTile: function(tile) {
 }
 ```
 
-
-
-
-
 # A* 路径规划算法实现
 
 由于我们的排序是升序的，因此开放列表（open list）中的第一个元素将感知成本最低，意味着它的值最高，因此我们将在本次迭代中使用该瓦格。我们调用一个函数，尝试将所有相邻的瓦格添加到开放列表中。在这个函数中，我们检查每个相邻坐标，以确定它是否在地图范围内，以及它是否为空或者是终点瓦格，因为即使终点瓦格被阻塞，我们也希望系统能够到达该瓦格。如果这些条件有效，我们就尝试计算该瓦格的所有值。
@@ -2196,7 +2273,7 @@ getPathFromLastTile: function(tile) {
                 Main.canvas = document.getElementById('canvas');
                 Main.canvas.width = window.innerWidth;
                 Main.canvas.height = window.innerHeight;
-                Main.c = canvas.getContext('d');
+                Main.c = canvas.getContext('2d');
                 setInterval(Main.update, 5);
             },
             update : function() {
@@ -2255,33 +2332,29 @@ getPathFromLastTile: function(tile) {
                 Main.c.beginPath();
                 Main.c.moveTo(-Main.offset, Main.canvas.height/2);
                 for(i = 0; i < Main.heights.length; i++) {
-```
-
-
-
-
-
-```javascript
-Main.c.lineTo((i + 1) / Main.heights.length * Main.canvas.width - Main.offset, (Main.canvas.height/2)*Main.heights[i] + Main.canvas.height / 2);
-}
-//Main.c.lineTo(Main.canvas.width - Main.offset, Main.canvas.height);
-for(i = 0; i < Main.nextHeights.length; i++)
-{
-    Main.c.lineTo((i + 1) / Main.nextHeights.length * Main.canvas.width - Main.offset + Main.canvas.width, (Main.canvas.height/2)*Main.nextHeights[i] + Main.canvas.height / 2);
-}
-Main.c.lineTo(Main.canvas.width, Main.canvas.height);
-Main.c.lineTo(0, canvas.height);
-Main.c.fillStyle='#000000';
-Main.c.fill();
-}
-};
-```
-</script>
+                    Main.c.lineTo((i + 1) / Main.heights.length * Main.canvas.width - Main.offset, (Main.canvas.height/2)*Main.heights[i] + Main.canvas.height / 2);
+                }
+                //Main.c.lineTo(Main.canvas.width - Main.offset, Main.canvas.height);
+                for(i = 0; i < Main.nextHeights.length; i++) {
+                    Main.c.lineTo((i + 1) / Main.nextHeights.length * Main.canvas.width - Main.offset + Main.canvas.width, (Main.canvas.height/2)*Main.nextHeights[i] + Main.canvas.height / 2);
+                }
+                Main.c.lineTo(Main.canvas.width, Main.canvas.height);
+                Main.c.lineTo(0, canvas.height);
+                Main.c.fillStyle='#000000';
+                Main.c.fill();
+            }
+        };
+    </script>
 </head>
+
 <body style='overflow: hidden; position: fixed; margin:0; padding: 0' onload='Main.init();'>
+
 <canvas id='canvas' width='1600' height='900' style='border: 1px solid black'></canvas>
+
 </body>
+
 </html>
+```
 
 让我们从 HTML 部分开始。我们创建了 HTML 标签以及 `head`，并将脚本放置在其中。在 `head` 之后，我们创建了 `body`。我们设置了样式，通过 `overflow` 属性防止出现滚动条等情况，并通过将其位置设置为 `fixed` 来防止滚动。我们还禁用了外边距（margin）和内边距（padding），以便让 `body` 紧贴左上角。最后，我们将 `body` 的 `onload` 事件设置为调用脚本的 `init` 函数，我们稍后会介绍这个函数。我们还定义了用于绘制风景的 `canvas`。我们给它分配了 `id="canvas"`，宽度为 `1600`，高度为 `900`。我们还设置了它的样式，使其具有 `1` 像素的黑色边框。
 
@@ -2289,7 +2362,7 @@ Main.c.fill();
 
 在我们的 `init` 函数中，我们设置了 `heights` 和 `nextHeights`。该函数通过创建一个数组和一个循环开始。在每次迭代中，它生成一个随机高度并将其添加到 `heights` 数组中。然后它对 `nextHeights` 数组执行相同的操作。循环完成后，我们调用 `generateStarMap` 来填充 `starMap` 和 `nextStarMap` 数组。最后，我们调用 `drawHeights`。
 
-`generateStarMap` 函数创建一个数组并循环 `1000` 次。在循环中，它向数组中添加一个星星对象，该对象包含 `x` 位置和 `y` 位置，这两个位置都是在 `canvas` 的宽度和高度之间随机生成的。最后，它返回这个数组。我们的 `init` 函数还获取了 `canvas` 元素及其上下文。最后，它设置了一个定时器，每 `25` 毫秒运行一次 `update` 函数。
+`generateStarMap` 函数创建一个数组并循环 `1000` 次。在循环中，它向数组中添加一个星星对象，该对象包含 `x` 位置和 `y` 位置，这两个位置都是在 `canvas` 的宽度和高度之间随机生成的。最后，它返回这个数组。我们的 `init` 函数还获取了 `canvas` 元素及其上下文。最后，它设置了一个定时器，每 `5` 毫秒运行一次 `update` 函数。
 
 在我们的 `update` 函数中，我们检查 `offset` 是否等于画布宽度（因为我们正在向右滚动），如果是，我们就改变 `offset` 重新从左侧开始，将 `nextHeights` 移动到 `heights`（因为我们已经向右滚动，导致旧的高度不再显示在视野内），并生成一组新的高度。
 
@@ -2297,16 +2370,13 @@ Main.c.fill();
 
 在这个 `drawHeights` 函数中，我们绘制了一个渐变层作为我们的日落，因为日落很美。我们将 `canvas` 上下文的 `fillStyle` 设置为渐变，并用这个背景填充整个画布。之后，我们将 `fillStyle` 设置为 `white`，因为我们准备绘制 `starMap`。为了实现这一点，我们遍历 `starMap`，然后对于每一个星星，在它所在的位置填充一个 `1` x `1` 的矩形，但向左偏移了 `offset` 的量。这样做是为了随着 `offset` 的增加，整个地图都会向左移动。我们还绘制了 `nextStarMap`，方法与普通的 `starMap` 相同，只是我们额外将其向右偏移了画布宽度的距离。
 
-
-
-
 绘制完星图后，我们开始一条路径，并从地图的左侧开始，这意味着偏移值向左移动到画布高度的一半，因为我们从 0 开始。然后，我们遍历 `heights` 数组，在每次迭代中，我们向每个 `height` 值绘制一条线，其中 `x` 值是我们正在查看的 `heights` 数组所占的百分比乘以画布宽度，这意味着 `heights` 将沿画布宽度均匀分布。高度是画布的一半乘以 `height`，所以如果 `height` 为 -1，它将处于最低高度；如果 `height` 为 1，它将处于最高高度。我们对 `nextHeights` 执行相同的操作，只是像位移 `nextStarMap` 那样对它进行位移。最后，我们通过绘制连接到画布右下角和左下角的线来完成地形绘制。然后我们用黑色填充它。这形成了一个非常漂亮、无限滚动且随机生成的地形。
 
 # 第 18 章：结语
 
 这是你作为 Javascript 程序员旅程的起点。通过本指南，你仅仅触及皮毛，因为学习一门语言的语法和约定只是开始。编程中最重要的部分是它的逻辑方面。当然，你可能知道如何遍历一个变量数组（如购物列表），但如果有人要求你利用你的编程知识来处理图像，并在 API 的帮助和一些思考下，你就能弄清楚如何反转图像颜色、翻转、旋转、缩放等。
 
-真正的编程来自于大脑的逻辑部分。这与你学习任何其他语言相似，例如学习英语。你可能理解语法规则和约定（如在句末加句号），但能够写出清晰、逻辑、深思熟虑且结构化的文章才是真技能所在。这一概念同样适用于编程，编写代码的人必须知道如何应用他对所用语言（如 `Javascript`）规则的知识，并利用它为自己的优势，编写出整洁的程序。
+真正的编程来自于大脑的逻辑部分。这与你学习任何其他语言相似，例如学习英语。你可能理解语言的规则（如语法、结构等），但能够写出清晰、逻辑、深思熟虑且结构化的文章才是真技能所在。这一概念同样适用于编程，编写代码的人必须知道如何应用他对所用语言（如 `Javascript`）规则的知识，并利用它为自己的优势，编写出整洁的程序。
 
 编程的知识和理解真的是伟大的，因为它是最接近拥有一种的力量。你可以字面上地从一个空白记事本从零开始某些东西，并让它运行你想要实现的功能。无论是创建一个分析股票市场并做出预测的机器人，还是创建一个游戏。选择权在于你。
 
@@ -2345,6 +2415,7 @@ http://www.amazon.com/Java-Ultimate-Beginners-Learning-Programming-ebook/dp/B00Y
 让我们开始吧！
 
 Tim Markus
+
 Eprogramy 团队
 
 # 第 1 章：Java 编程语言
@@ -2356,21 +2427,22 @@ Java 是一种编程语言，首次于 1995 年发布，由 Sun Microsystems (Su
 该语言的大部分语法源自 `C` 和 `C++`，但并没有它们那么强大，因为它对用户的要求更少。像垃圾回收（减少程序使用的内存的过程）这样的功能在 Java 中是自动化的。它最初设计用于交互式电视，但超越了当时数字电视行业的技术和设计。创建 Java 语言时使用了五个原则：
 
 1. 它必须是“简单、面向对象且熟悉的”
+
 2. 它必须是“健壮且安全的”
+
 3. 它必须是“体系无关且可移植的”
+
 4. 它必须以“高性能”执行
+
 5. 它必须是“解释的、线程的且动态的”
 
 另一个重要的设计目标是可移植性，这是 Java 迅速流行的关键因素。
 
 ## 什么是 Java？
 
-Java 是一种具有多平台能力的编程语言，这意味着你可以为任何类型的设备编写 Java 程序，无论是安卓 手机、Windows 电脑还是苹果产品。由于 Java 的灵活性，它已成为全球许多程序员使用的最流行编程语言之一。Java 可用于创建 Web 应用程序、游戏、Windows 应用程序、数据库系统、Android 应用等。
+Java 是一种具有多平台能力的编程语言，这意味着你可以为任何类型的设备编写 Java 程无论是安卓 手机、Windows 电脑还是苹果产品。由于 Java 的灵活性，它已成为全球许多程序员使用的最流行编程语言之一。Java 可用于创建 Web 应用程、游戏、Windows 应用程序、数据库系统、Android 应用等。
 
 Java 因其简单性和强大而与其他编程语言不同。这种结合使得 Java 编程语言非常好用。Java 是一种简单的编程语言，因为它在内存管理或处理相互继承的极其复杂的类层次方面对用户的要求并不多。
-
-
-
 
 Java 程序通过 Java 虚拟机（`JVM`）运行，它本质上是一个操作系统的软件实现，用于执行 Java 程序。编译器（将代码转换为计算机可读指令的过程）分析 Java 代码并将其转换为字节码（byte code），使计算机能够理解程序员发出的指令并相应地执行。
 
@@ -2383,11 +2455,13 @@ Java 程序通过 Java 虚拟机（`JVM`）运行，它本质上是一个操作�
 为了在机器上安装 Java，你必须下载以下内容：
 
 1. 适用于 Java 开发者的 IDE
+
 2. Java `JDK`
 
 下载这两个工具将开启你通往 Java 程序员的之路。IDE（集成开发环境）是程序员使用的一个软件包程序，因为它包含了处理和执行代码所需的工具。IDE 包含一个代码编辑器、一个编译器、调试器和一个图形用户界面（`GUI`）。有许多类型的 IDE，但最常用的是：
 
 1. Netbeans
+
 2. Eclipse
 
 在本指南中，由于其简单易用的特性推荐使用 `Eclipse`。要下载 `Eclipse`，请使用以下链接：
@@ -2425,18 +2499,23 @@ Java 程序通过 Java 虚拟机（`JVM`）运行，它本质上是一个操作�
 操作步骤：
 
 1. 点击 `File`（文件）
+
 2. 点击 `New`（新建）→ `Java Project`（Java 项目）
 
 ![`lh3.googleusercontent.com/Uul4AHUr2ZURDElR9Y503X0iTSRDnAT0yK1j5R489G0kjKa8knxzkCrbXTZOkZPVBJ57VzYFAv2MCDPQ98GergtcUD9efhjBn8WoeWPLAZ9c-p1Jofiju6tB-mtiEMfP4v4Ia08`](img/Image00006.jpg)
 
 3. 在“Project name:”（项目名称：）字段中输入项目名称
+
 4. 点击“Finish”（完成）
+
 5. 现在右键点击 `src` → `New`（新建）→ `Class`（类）
 
 ![`lh3.googleusercontent.com/c1DJ75yt6_Bp0f-XdRKqu2Z7WY_Q3PbDSjkXq-iWmI-NTzRdaUrqLpIzKBx6nnvTPiwAR19HRF8giYlstqw8LeRR4uWDrdXuPTP-OE`](img/Image00007.jpg)
 
 6. 在 name 字段中填写任何包含字母且不包含特殊字符的内容。例如：`ThisIsAClass`
+
 7. 点击 Finish（完成）
+
 8. 你现在将看到显示以下内容的屏幕：
 
 ```
@@ -2456,4 +2535,3 @@ public class ThisIsAClass {
 Eprogramy 了解这一点，并致力于在这一背景下提供相应的应对。
 
 基于这一目标，我们提供了多种课程来教授许多编程语言的基础知识。我们相信任何人都可以学习编程语言并运用所学知识解决问题。
-

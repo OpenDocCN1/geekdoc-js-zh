@@ -1,15 +1,9 @@
+
 # 周末掌握微软 VBScript
-
-
-
-
-
 
 ## 关于作者
 
 **小杰里·李·福特** 是一位作家、教育工作者和 IT 专业人士，拥有 14 年信息技术经验，曾担任自动化分析师、技术经理、技术支持分析师、自动化工程师和安全分析师。杰里是 MCSE，并获得了 Microsoft 的 MCP 和 MCP + Internet 认证。此外，他拥有弗吉尼亚州里士满弗吉尼亚联邦大学的工商管理硕士学位。杰里还是另外七本书的作者，包括《一个周末速成 JavaScript》和《Microsoft Windows Shell Scripting and WSH》。他拥有超过五年在信息技术领域担任兼职讲师教授网络课程的经验。杰里与妻子玛丽以及他们的孩子威廉、亚历山大和莫莉住在弗吉尼亚州里士满。
-
-
 
 ## 引言
 
@@ -26,16 +20,27 @@
 本书将为您提供开始所需的所有信息和背景知识。到了周一早上，您将学到：
 
 - 构成 VBScript 语言的基本语法和编程语句
+
 - 如何使用 VBScript 通过弹出对话框为网页添加交互性
+
 - 如何为网页添加图形效果
+
 - 如何验证 HTML 表单并通过电子邮件发送其内容
+
 - 如何检测访问您网站的访客所使用的类型和浏览器版本
+
 - 如何在网页的横幅中宣传和显示消息
+
 - 如何创建 VBScript cookie，以存储和检索有关网站访客的信息
+
 - 如何将 VBScript 与 WSH 集成以自动化多项系统任务，例如创建新用户帐户和管理打印机
+
 - 如何将 VBScript 与另一种脚本语言结合到 Windows 脚本文件中，从而利用两种脚本语言的优势
+
 - 如何使用 VBScript 和 WSH 读写文件、创建日志和报告
+
 - 如何使用 VBScript 和 WSH 处理 Windows 开始菜单、快捷方式和快速启动栏
+
 - 如何调试 VBScript
 
 ### 谁应该阅读本书
@@ -50,8 +55,6 @@
 
 与某些编程语言（如 C++ 或 Visual Basic）不同，VBScript 不要求您掌握完整的*集成开发环境*（IDE）。事实上，编写 VBScript 所需的一切都已包含在 Windows 中。
 
-
-
 #### 简介
 
 这是一款能将文件保存为纯文本的文本编辑器。它不仅让学习曲线变得平缓许多，也使得脚本开发过程变得简单直接。
@@ -59,11 +62,17 @@
 以下列表概述了完成本书内容所需的工具。
 
 - **一台Windows计算机。** 你需要一台运行Windows 95或更高版本操作系统的计算机。本书中所有示例均使用Windows XP家庭版或Windows XP专业版。
+
 - **互联网接入。** 如果你计划在网页开发中使用VBScript，那么你将需要互联网接入，以便将网页上传到你的网站。
+
 - **Internet Explorer浏览器。** VBScript与Microsoft Internet Explorer浏览器配合工作。你需要该浏览器来测试你的网页，并查看你的VBScript是否按预期运行。
+
 - **一个网站托管服务。** 如果你尚未建立网站，那么你可能可以安排你的互联网服务提供商来托管你的网页。此外，互联网上有很多免费的网页托管网站，你可以注册使用。
+
 - **WSH和VBScript 5.6。** 如果你正在运行Windows XP，你已经拥有了这个版本的WSH。否则，你应该从msdn.microsoft.com/scripting下载此版本。
+
 - **一个文本编辑器。** 任何可以将脚本保存为纯文本文件的文本编辑器都可以。例如，可以使用Windows记事本应用程序。不过，你可能希望找到一个更高级的脚本编辑器，它应具备诸如脚本语句着色、语法检查和脚本模板等功能。
+
 - **一个图形编辑器。** 这个工具可以让你创建图形图像，然后将其整合到你的网页中。不过，它是可选的，你可能可以不使用任何图形，或者使用互联网上可以找到的免费图形来完成工作。
 
 #### 本书的组织结构
@@ -73,14 +82,23 @@
 以下是本书组织结构的更详细大纲。
 
 - **周五晚上：“VBScript简介”。** 本章提供了你完成本书其余部分所需的概念框架。你将接触到一个关于使用VBScript可以做的事情的想法列表。你还会找到一段关于VBScript的简短历史，以及VBScript与Visual Basic编程家族中其他语言的比较。在本章结束前，你将看到你的第一个VBScript示例，并学习如何使用VBScript来增强你的HTML页面，并提高你在使用Windows操作系统时的工作效率。
+
 - **周六上午：“VBScript编程入门”。** 本章为你提供VBScript编程基础。首先，你将从学习VBScript语法开始。然后，你将学习构成VBScript语言的基本编程语句。你将学习的VBScript编程结构包括常量、变量、表达式、条件逻辑、循环、过程、数组以及弹出对话框的使用。
-- **周六下午：“在Internet Explorer中编写脚本”。** 本章向你介绍面向对象编程，并解释VBScript对象模型。你将学习对象及其属性和方法。此外，你将复习最常用的对象，并学习如何将它们整合到你的VBScript中。你还将了解浏览器事件以及如何使用VBScript来响应这些事件并创建交互式网页。
+
+- **周六下午：“在Internet Explorer中编写脚本”。** 本章向你介绍面向对象编程，并解释VBScript对象模模型。你将学习对象及其属性和方法。此外，你将复习最常用的对象，并学习如何将它们整合到你的VBScript中。你还将了解浏览器事件以及如何使用VBScript来响应这些事件并创建交互式网页。
+
 - **周六晚上：“网页技巧”。** 本章继续讨论如何将VBScript集成到你的网页中。在这里，你将找到具体的示例，说明如何使用VBScript来控制Internet Explorer的状态栏，以及执行各种技巧，包括创建导航菜单和图形翻转效果。你还会找到示例，向你展示如何使用弹出对话框，以及如何验证HTML表单的内容和创建VBScript cookie。
+
 - **周日上午：“使用Windows Script Host”。** 本章解释Windows Script Host的工作原理以及如何配置其操作。你还将接触一点XML，以了解如何将VBScript与其他脚本语言结合到Windows脚本文件中。本章最后介绍了WSH对象模型，并解释了如何使用它来创建真正强大的脚本。
+
 - **周日下午：“处理文件和文件夹”。** 本章向你展示如何使用VBScript和WSH来控制Windows文件系统。你将学习如何复制、移动和删除文件和文件夹。你将学习如何创建新文件并写入内容。你还将了解如何重新打开它们并读取或修改其内容。当你完成本章时，你将掌握开始创建日志文件和报告所需的所有知识。
+
 - **周日晚上：“桌面、计算机和网络自动化”。** 本章介绍了一些主题，向你展示如何自动化各种Windows任务。你将学到的示例包括如何创建快捷方式、处理Windows应用程序以及配置Windows开始菜单。你还将看到如何执行高级系统管理任务的示例，包括如何读取Windows事件日志、管理打印机以及停止和启动Windows服务。
+
 - **附录A：“VBScript语言参考”。** 本附录为你提供VBScript编程语言参考，你可以用它来查找关于VBScript对象、属性、方法、语句、函数运算符、事件、保留字和常量的信息。
+
 - **附录B：“网站上有什么”。** 本附录为你介绍了本书配套网站上有哪些内容。
+
 - **术语表：** 本书中出现的所有术语的汇总列表。
 
 #### 本书使用的约定
@@ -94,21 +112,24 @@
 斜体。用于突出显示新术语和强调关键信息。
 
 ## 周五晚上
+
 ### VBScript简介
 
 - 了解VBScript的不同用途
+
 - 查看如何将VBScript集成到HTML页面中
+
 - 研究Internet浏览器的兼容性
+
 - 研究Windows Script Host的架构
+
 - 学习如何使用VBScript和Windows Script Host
 
 晚上好！今晚，你将通过奠定一些基础，开始VBScript编程之旅。这包括解释VBScript的功能和局限性。今晚的内容还包括VBScript的简短历史，并解释它与Visual Basic和Visual Basic for Applications的关系。
 
-在你对VBScript的起源有了一点了解之后，我将介绍本书的两个主要主题中的第一个——使用VBScript来增强你的个人网页。我将谈论如何使用VBScript为你的网页添加交互性以及执行其他有用的功能。本章还将向你展示如何编写包含VBScript的第一个网页，以便你看到VBScript和HTML如何结合并一起使用。
+在你对VBScript的起源有了一点了解之后，我将介绍本书的两个主要主题中的第一个——使用VBScript来增强你的个人网页。我将谈论如何使用VBScript为你的网页添交互性以及执行其他有用的功能。本章还将向你展示如何编写包含VBScript的第一个网页，以便你看到VBScript和HTML如何结合并一起使用。
 
 今晚阅读的最后一部分涵盖了本书的第二个主要主题，VBScript和Windows Script Host。Windows Script Host是微软的高级脚本解决方案。它允许你使用VBScript等脚本语言来自动化各种Windows任务。本章最后向你展示了如何使用WSH编写和测试你自己的VBScript。
-
-
 
 #### 什么是 VBScript？
 
@@ -131,26 +152,43 @@ VBScript 是一种脚本语言。它旨在让你能够编写脚本，从而自�
 以下列表为你提供了在网页中使用 VBScript 时可能想要实现的一些想法。
 
 - 在将 HTML 表单内容作为电子邮件提交之前对其进行验证。
+
 - 创建动画效果，例如翻转效果，当鼠标指针移过图形（如按钮）时，该效果会改变图形的外观。
+
 - 创建旋转横幅。
+
 - 使用弹出对话框与访客交互，显示消息并收集信息。
+
 - 检测浏览器类型，并将访客重定向到专为其浏览器版本设计的 HTML 页面。
+
 - 在 Internet Explorer 状态栏上发布消息并创建滚动消息。
+
 - 使用 VBScript 更好地管理 HTML 框架。
+
 - 当用户访问你的网站时，自动打开多个自定义的 Internet Explorer 窗口。
+
 - 基于用户提供的输入执行计算。
+
 - 使用 VBScript 管理 Cookie，按名称称呼访问你网站的访客。
 
 虽然嵌入 HTML 页面的 VBScript 在影响操作系统和计算机上其他资源方面的能力有限，但由 WSH 运行的 VBScript 则不然。事实上，WSH 的主要目的是允许脚本自动化系统任务。这使得由 WSH 运行的 VBScript 特别擅长自动化那些可能花费你数小时但脚本却能在片刻之间完成的重复且平凡的任务。VBScript 也很好地用于自动化那些不经常执行但可能复杂且冗长，从而容易出错的任务。以下列表仅展示了你可以使用 VBScript 和 WSH 自动化的一些任务类型。
 
 - 创建桌面快捷方式
+
 - 通过自动复制、移动、存档和删除文件来管理你的文件系统
-- 管理家庭和企业网络上的网络资源
+
+- 管理家庭和企�网络上的网络资源
+
 - 生成显示系统和状态信息的报告
+
 - 与其他应用程序协同工作
+
 - 管理本地和网络打印机
+
 - 设置自动化脚本，可以在你的计算机不使用时在非工作时间运行
+
 - 创建新的用户帐户
+
 - 管理操作系统资源，例如服务和事件日志
 
 #### VBScript 执行环境
@@ -158,9 +196,13 @@ VBScript 是一种脚本语言。它旨在让你能够编写脚本，从而自�
 VBScript 无法独立运行。它们需要一个执行宿主环境来执行它们。当 Microsoft 在 1996 年首次推出 VBScript 时，它被设计为在 Internet Explorer 浏览器内运行。然而，从那时起，Microsoft 不断扩展 VBScript 的角色和功能。因此，VBScript 现在可以在多种不同的环境中运行。尽管本书重点介绍了其中的两种环境——HTML 页面和 WSH——但我想简要介绍一下这些环境以及其他一些可以使用 VBScript 的环境。这不仅将让你了解 VBScript 功能的范围，还将为你提供一些想法，以便你后来可能决定利用新掌握的 VBScript 编程技能去探索其他途径。
 
 - **Internet Explorer。** 当 VBScript 首次推出时，它仅作为 Internet Explorer 3 浏览器的脚本语言受到支持。VBScript 可以通过响应用户输入使网页更具交互性。它也可以用于验证表单和添加图形效果。
+
 - **Windows Script Host。** Windows 脚本宿主或 WSH 是 Microsoft 为 Windows 操作系统提供超出其内置批处理脚本语言能力的解决方案。WSH 为 VBScript 提供了一个可以访问 Windows 资源（如桌面、注册表、文件系统和网络）的执行环境。使用 WSH 和 VBScript，你可以开发执行重复任务并加速复杂繁琐工作的脚本。
-- **Internet Information Server 和 ASP。** *Internet Information Server (IIS)* 是 Microsoft 的 Web 服务器应用程序。它允许你创建和管理自己的网站，并被互联网上的许多公司用于运营业务。IIS 使用 *Active Server Pages (ASP)* 以 HTML 页面的形式向互联网用户传递信息。VBScript 在 ASP 开发中扮演着重要角色，它提供了一种强大的脚本语言，可以处理传入请求、访问本地数据库并返回动态构建的 HTML 内容。
+
+- **Internet Information Server 和 ASP。** *Internet Information Server (IIS)* 是 Microsoft 的 Web 服务器应用程序。它允许你创建和管理自己的网站，并被互联网上的许多公司用于运营业务。IIS 使用 *Active Server Pages (ASP)* 以 HTML 页面的形式向互联网用户传递信息。VBScript 在 ASP 开发中扮演着重要角色，它提供了一种强大的脚本语言，可以处理传入请求、访本地数据库并返回动态构建的 HTML 内容。
+
 - **Outlook Express。** VBScript 可用于自动化 Outlook Express 电子邮件客户端的行为和功能。
+
 - **Microsoft Windows Script Console。** 这是一项新功能，允许第三方应用程序的开发人员将脚本功能直接集成到其应用程序中。这使你能够使用 VBScript 或 JScript 来自动化应用程序功能并扩展其能力。
 
 #### VBScript 简史
@@ -169,15 +211,16 @@ Microsoft 于 1996 年随 Internet Explorer 3 首次推出了 VBScript。然而�
 
 > **注意** 如果你想了解更多关于 JavaScript 以及如何使用它进行网页开发，我推荐你阅读 Jerry Lee Ford, Jr. 撰写、Premier Press Books 出版的 **《Learn JavaScript In a Weekend》** (ISBN 0-76156-3332-X)。
 
-
-
 尽管原始版本的 VBScript 支持在 Internet 浏览器内进行脚本编写，但与 IIS 3 一起发布的 VBScript 版本 2 将 VBScripting 带到了 Web 服务器。通过将 VBScript 嵌入到 ASP 页面中，Web 开发人员可以访问本地数据库并构建动态 HTML 页面，然后将这些页面返回到 Internet 浏览器。
 
 VBScript 版本 3 部署到了多个环境中，包括：
 
 -   Internet Explorer 4
+
 -   IIS 4
+
 -   Outlook 98
+
 -   Windows 脚本宿主
 
 除了支持基于客户端和服务器的 Web 开发外，VBScript 版本 3 还为 Microsoft 的电子邮件客户端提供了脚本功能，并为 Microsoft 新推出的 Windows 脚本宿主提供了两种默认脚本语言之一。WSH 支持的另一种脚本语言是 JScript。*JScript* 是 Microsoft 为其自身的 JavaScript 实现所起的名称。
@@ -191,14 +234,16 @@ VBScript 版本 5 于 2000 年随着 Windows 2000 和 Internet Explorer 5 的推
 VBScript 是组成 Microsoft Visual Basic 编程语言家族的几种语言之一。这些编程语言包括：
 
 -   Visual Basic
+
 -   Visual Basic for Applications
+
 -   VBScript
 
-这个编程语言家族的原始成员是 Visual Basic。Visual Basic 最初于 1991 年推出。在过去的 10 多年里，它已发展成为世界上最流行的编程语言之一。Visual Basic 提供了一个强大的*集成开发环境 (IDE)*，以支持构建桌面、网络和基于 Web 的应用程序。其当前版本称为 Visual Basic .NET，反映了它与 Microsoft 的 .NET 基于 Web 的框架的关系。Visual Basic 通常用于创建完整的独立程序。
+这个编程语言家族的原始成员是 Visual Basic。Visual Basic 最初于 1991 年推出。在过去的 10 多年里，它已发展成为世界上最流行的编程语言之一。Visual Basic 提供了一个强大的*集成开发环境 (IDE)*，以支持构建桌面、网绚和基于 Web 的应用程序。其当前版本称为 Visual Basic .NET，反映了它与 Microsoft 的 .NET 基于 Web 的框架的关系。Visual Basic 通常用于创建完整的独立程序。
 
 > **注意** Microsoft 的 .NET Framework 是一个开发平台，旨在支持使用基于 XML 的 Web 服务创建 Web 应用程序。.NET 旨在允许应用程序无论使用何种编程语言或操作系统，都能通过 Internet 交换数据。要了解更多关于 .NET 的信息，请查看 **www.microsoft.com/net**。
 
-Visual Basic for Applications (VBA) 代表了 Visual Basic 的一个子集。VBA 首次发布于 1993 年。它旨在为应用程序提供类似 Visual Basic 的编程能力。最好的例子是 Microsoft Office，它提供 VBA 允许人们开发宏。*宏*是可用于自动化应用程序功能或使用 VBA 和宿主应用程序创建新应用程序的程序。例如，使用 VBA 和 Microsoft Excel，可以开发会计或记账应用程序。VBA 可以编译成 p-code，这类似于部分编译，允许 VBA 代码快速运行（但不如常规编译的 Visual Basic 程序快）。
+Visual Basic for Applications (VBA) 代表了 Visual Basic 的一个子集。VBA 首次发布于 1993 年。它旨在为应用程序提供类似 Visual Basic 的编程能力。最好的例子是 Microsoft Office，它提供 VBA 允许人们开发宏。*宏*是可用于自动化应用程序功能或使用 VBA 和宿主应用程创建新应用程序的程序。例如，使用 VBA 和 Microsoft Excel，可以开发会计或记账应用程序。VBA 可以编译成 p-code，这类似于部分编译，允许 VBA 代码快速运行（但不如常规编译的 Visual Basic 程序快）。
 
 VBScript 于 1996 年推出，是 VBA 的一个子集。VBScript 不能提前编译，必须在执行时由执行主机进行解释。这使得 VBScript 成为 Visual Basic 家族中最慢的成员。然而，与 VBA 一样，VBScript 提供了同样易于使用的 Visual Basic 编程语言，尽管根据脚本编写的需求进行了缩减。
 
@@ -209,13 +254,19 @@ VBScript 不提供 IDE。然而，这一缺陷可以通过购买优秀的第三�
 ###### 表 1.1 比较 Visual Basic、VBA 和 VBScript
 
 | 语言 | IDE | 可编译 | 独立 |
+
 | :--- | :--- | :--- | :--- |
+
 | Visual Basic | 是 | 是 | 是 |
+
 | VBA | 是 | 是 | 否* |
+
 | VBScript | 否** | 否 | 否*** |
 
 *VBA 需要宿主应用程序，例如 Microsoft Office
+
 **尽管 VBScript 不提供 IDE，但您可以使用众多优秀的脚本编辑器中的任何一个，它们提供相当不错的开发环境
+
 ***VBScript 需要执行主机，例如 Internet Explorer 或 WSH
 
 VBScript 不支持开发独立程序。您必须在执行主机内运行 VBScript；但是，脚本并非用于完全成熟的应用程序开发。它们旨在提供快速解决方案或将其他应用程序粘合在一起。因此，这不应被视为缺失的功能，而是一个不必要的功能。
@@ -227,9 +278,13 @@ VBScript 不支持开发独立程序。您必须在执行主机内运行 VBScrip
 由于记事本是一个非常简单的文本编辑器，我建议您找一个更适合脚本编写的编辑器。这就是为什么我在本书网站 **www.premierpressbooks.com/downloads.asp** 上包含了一个 30 天的 HomeSite 共享软件副本。如图 1.1 所示的 HomeSite 是一个 HTML 和脚本编辑器，它提供了许多高级脚本编辑器中常见的功能，包括：
 
 -   脚本语句的彩色编码，使脚本更易于阅读
+
 -   在开发过程中预览网页的能力
+
 -   HTML 标记完成和代码验证
+
 -   支持其他语言，如 HTML、XHTML 和 JavaScript，允许您将其用作通用编辑器
+
 -   有助于编写 HTML 代码的模板
 
 ![](img/26f0ae5097205615f9285e10dc13f45e_40_0.png)
@@ -241,8 +296,6 @@ VBScript 不支持开发独立程序。您必须在执行主机内运行 VBScrip
 由于 VBScript 在过去几年中发展迅速，每个新版本的 Internet Explorer 都必须调整其对 VBScript 的支持，以适应新的 VBScript 特性和功能。这意味着尽管 Internet Explorer 6 支持 VBScript 5.6 的所有功能，但浏览器的早期版本则不支持。对于更早版本的浏览器也是如此。例如，Internet Explorer 5 完全支持 VBScript 版本 5，而版本 3 和 4 则不支持。
 
 由于不同版本的 Internet Explorer 对使用不同版本 VBScript 编写的脚本会有不同的反应，因此使用您打算支持的每个版本的浏览器测试您的网页非常重要。与 Netscape 允许您在同一台计算机上安装不同版本的浏览器不同，Internet Explorer 仅允许您在给定的计算机上安装一个版本。
-
-
 
 ##### 浏览器兼容性
 
@@ -292,7 +345,9 @@ TYPE="TEXT/VBS"
 在本书中，你将看到的所有脚本我都使用`LANGUAGE`属性。如果你愿意，可以将你的VBScript存储在单独的文本文件中，并使用`SRC`属性引用其URL。外部VBScript文件必须具有`.vbs`的文件扩展名。你可能出于以下几个原因想这样做，包括：
 
 -   通过将VBScript放在外部引用文件中，使你的HTML代码更易于阅读
+
 -   将冗长的VBScript文件与你的HTML代码分开
+
 -   创建一个可共享的VBScript库，供多个HTML页面引用
 
 `</SCRIPT>`标签标记脚本或脚本引用的结束。
@@ -368,8 +423,6 @@ end sub
 
 不幸的是，我无法给你一个完美的解决方案，让你能支持所有类型浏览器的所有版本。恐怕互联网还太新，发展太快，以至于微软和世界其他地方尚未就一套共同的标准达成一致。
 
-
-
 ##### 测试你的 VBScript
 
 好了，现在你已经将 HTML 和脚本输入到编辑器中，保存它吧。我已经将这个脚本保存为 Script 1.1。你可以在随书附带的网站 **www.premierpressbooks/downloads.asp** 上找到它以及本书中展示的其他脚本。你会注意到这个文件名与 HTML 标题标签中显示的文件名相同。这是我在这本书中将遵循的一个惯例，以便你能够轻松识别任何脚本，并在书的网站上找到它。
@@ -381,8 +434,11 @@ end sub
 > 根据你使用的脚本编辑器，你可能无需离开编辑器即可加载 HTML 页面并测试脚本。
 
 - 1. 单击“开始”，“所有程序”，然后单击“Internet Explorer”。
+
 - 2. 单击“文件”，然后选择“打开”。此时会出现“打开”对话框。
+
 - 3. 输入你的 HTML 文件的名称（包括完整路径），然后单击“确定”，或者单击“浏览”并找到 HTML 文件，然后单击“确定”。
+
 - 4. Internet Explorer 打开 HTML 页面，并立即运行你的 VBScript，如图 1.2 所示。
 
 如图 1.2 所示，Internet Explorer 在网页加载后立即显示了你的 VBScript 代码中指定的弹出对话框。
@@ -453,7 +509,7 @@ msgbox "Welcome to the world of VBScripting!"
 
 ##### 休息一下
 
-在我们深入探讨今晚 VBScript 介绍的第二部分之前，何不稍事休息，放松一下。当你回来时，我将通过研究其架构和运作方式来更详细地介绍 WSH。我还将为你提供一些有用的链接，指向一些网站，你可以在那里找到关于 VBScript 的好资料，更不用说一些示例脚本，你可以在学习编写自己的 VBScript 时下载并试用。
+在我们深入探讨今晚 VBScript 介绍的第二部分之前，何不稍事休息，放松一下。当你回来时，我将通过研究其架构和运作方式来更详细地介绍 WSH。我还将为你提供一些有用的链接，指向一些网站，你可以在那里找到关于 VBScript 的好资料，更不要一些示例脚本，你可以在学习编写自己的 VBScript 时下载并试用。
 
 ##### 介绍 Windows 脚本宿主
 
@@ -465,41 +521,56 @@ Windows XP 与早期的 Windows 操作系统一样，提供了一个直观的 *�
 
 > **注意** 如果你想了解更多关于 Windows Shell 脚本的知识，我推荐你查阅 **Microsoft Windows Shell Scripting and the WSH Administrator's Guide**，作者是 Jerry Lee Ford, Jr.，由 Prima 出版（ISBN 1-931841-26-8）。
 
-
-
 WSH 与操作系统紧密耦合，能够访问和操作多种 Windows 资源。这些资源包括：
 
 -   - Windows 注册表
+
 - Windows 桌面
+
 - Windows 文件系统
+
 - Windows 开始菜单
+
 - Windows 快速启动栏
+
 - Windows 应用程序
+
 - 网络打印机和驱动器
+
 - Windows 服务
+
 - 用户账户
 
 WSH 为 Windows 操作系统提供了最完整、最强大的脚本解决方案，可应用于从 Windows 95 开始的所有 Windows 操作系统版本。因此，除非您只支持 Windows NT、2000 和 XP 操作系统，否则 WSH 应该是您的主要脚本语言。
 
 > **注意** Windows 操作系统上还有其他可用的脚本语言。这些语言包括 REXX、Perl 和 Python。这些脚本语言的版本也可以与 WSH 结合使用。
 
-WSH 的当前版本是 5.6。之前的版本是 2.0 和 1.0。如果您使用的是 Windows XP，那么您已经拥有了 WSH 5.6 版本。如果您支持其他 Windows 操作系统，那么您可能已经安装了之前版本的 WSH。表 1.2 总结了 Windows 操作系统及其附带的 WSH 版本。
+WSH 的当前版本是 5.6。之前的版本是 2.0和 1.0。如果您使用的是 Windows XP，那么您已经拥有了 WSH 5.6 版本。如果您支持其他 Windows 操作系统，那么您可能已经安装了之前版本的 WSH。表 1.2 总结了 Windows 操作系统及其附带的 WSH 版本。
 
 您可以在任何 Windows 95 或更高版本的操作系统上安装或升级到 WSH 5.6 版本。您可以从 **www.msdn.microsoft.com/scripting** 下载 WSH 5.6。
 
 表 1.2 Microsoft 操作系统对 WSH 的支持
 
 | 操作系统 | WSH 支持 | 版本 |
+
 | :--- | :--- | :--- |
+
 | Windows 3.X | 否 | - |
+
 | Windows 95 | 是* | - |
+
 | Windows 98 | 是 | 1.0 |
+
 | Windows Me | 是 | 2.0 |
+
 | Windows NT | 是 | ** |
+
 | Windows 2000 | 是 | 2.0 |
+
 | Windows XP | 是 | 5.6 |
 
 *Windows 95 从未预装 WSH。但您可以下载并安装它。
+
 **安装 Service Pack 4 后，Windows NT 4 会安装 WSH 1.0。
 
 ##### WSH 架构
@@ -508,13 +579,15 @@ WSH 脚本由特定语言的编程语句组成。默认情况下，WSH 附带 VB
 
 > **注意** 可以在 [www.activestate.com](http://www.activestate.com) 找到与 WSH 兼容的 Perl 和 Python 版本。IBM 还提供了一个名为 Object REXX 的 REXX 版本，可以与 WSH 一起使用。有关 Object REXX 的信息可在 [www-4.ibm.com/software/ad/obj-rexx](http://www-4.ibm.com/software/ad/obj-rexx) 查到。
 
-因为 WSH 提供了一个可扩展的脚本宿主环境，第三方开发者有可能继续为 WSH 提供额外的脚本语言。然而，在 WSH 支持的所有语言中，VBScript 仍然是最受欢迎的。这是因为：
+因为 WSH 提供了一个可扩展的脚本宿主环境，第三方开发者有可能继续为 WSH 提供额的脚本语言。然而，在 WSH 支持的所有语言中，VBScript 仍然是最受欢迎的。这是因为：
 
 -   - 它是 WSH 附带的两种默认脚本语言之一。
+
 - 作为 Visual Basic 编程家族的一员，它拥有为数百万 Visual Basic 和 VBA 程序员所熟悉的优势。
+
 - 它是一种功能强大但易于学习的脚本语言。
 
-> **注意** 要使用 WSH，您必须至少精通一种脚本语言。如果您知道多种支持的脚本语言，WSH 允许将它们组合成一个特殊的 Windows 脚本文件。因为所有脚本语言都有自己独特的优势和劣势，WSH 允许您利用每种脚本语言的长处。我将在周日更详细地讨论 Windows 脚本文件，并给您一个如何使用 VBScript 和 JScript 创建它的示例。
+> **注意** 要使用 WSH，您必须至少精通一种脚本语言。如果您知道多种支持的脚本语言，WSH 允许将它们组合成一个特殊的 Windows 脚本文件。因为所有脚本语言都有自己独特的优势和劣势，WSH 允许您利用每种脚本语言的长处。我将在周日更详细地讨论 Windows 脚本文件，并给您一个如何使用 VBScript和 JScript 创建它的示例。
 
 要使用 WSH，了解其基本架构和组件（如图 1.4 所示）会很有帮助。
 
@@ -551,7 +624,7 @@ Windows 命令提示符是您与操作系统之间的基于文本的接口。要
 
 命令提示符以驱动器号后跟冒号、反斜杠和大于号的形式显示。在命令提示符的右侧，您会看到一个闪烁的光标。这表示命令提示符已准备好接受新输入。例如，键入
 
-DIR 并按 Enter 键。DIR 命令告诉 Windows 显示当前工作目录中所有文件的目录列表，如下所示：
+DIR 并按 Enter 键。DIR 告诉 Windows 显示当前工作目录中所有文件的目录列表，如下所示：
 
 ```
 C:\>dir
@@ -566,7 +639,6 @@ C:\>dir
   11/10/2001  12:40 PM            90 CONFIG.SYS
   11/10/2001  11:18 AM    <DIR>          WINDOWS
   11/10/2001  11:43 AM            65 CONFIG.BAK
-  11/10/2001  01:24 PM    <DIR>          Program Files
   11/10/2001  12:35 PM         1,330 SCANDISK.LOG
   12/01/2001  10:45 AM        90,112 ffastunT.ffl
   11/10/2001  01:01 PM    <DIR>          Documents and Settings
@@ -641,10 +713,15 @@ Wscript "Script 1.5.vbs"
 #### VBScript 编程简介
 
 - 学习 VBScript 语法的基础知识
+
 - 了解 VBScript 如何处理变量和常量
+
 - 发现如何使用条件和循环逻辑控制脚本执行
+
 - 了解如何使用 VBScript 运算符和表达式
+
 - 发现如何将你的 VBScript 组织成过程
+
 - 学习如何使用数组组织大量数据
 
 早上好！希望你休息好了，准备好开始工作了。昨天我们看了 VBScript 的历史和功能。我们还讨论了如何将 VBScript 集成到 HTML 页面中并将其保存为 WSH VBScript 文件。今天早上我们将开始研究构成 VBScript 编程语言的编程语句。
@@ -656,10 +733,12 @@ Wscript "Script 1.5.vbs"
 现在是确保你拥有开始编写 VBScript 所需所有工具的好时机。你需要
 
 - 一个脚本编辑器
+
 - Internet Explorer 6
+
 - Windows Script Host 5.6
 
-只要它能将你的脚本保存为纯文本，任何编辑器都可以。如果你打算使用记事本，可以通过单击“开始”、“所有程序”、“附件”，然后单击“记事本”来启动它。
+只要它能将你的脚本保为纯文本，任何编辑器都可以。如果你打算使用记事本，可以通过单击“开始”、“所有程序”、“附件”，然后单击“记事本”来启动它。
 
 我将在 Windows XP Home Edition 和 Windows XP Professional 上对本书中你将看到的所有脚本进行测试和开发。然而，任何 Windows 95 或更高版本的 Microsoft 操作系统都可以正常工作。
 
@@ -680,11 +759,9 @@ Wscript.echo "Good morning!"
 WsCrIpT.eChO "Good morning!"
 ```
 
-
-
 然而，编写 VBScript 时最好保持统一的格式风格。尽管 VBScript 允许混合大小写，但这会使脚本难以阅读。
 
-VBScript 是一种灵活的语言，因为它在格式化脚本方面为你提供了很大的自由度。例如，你可以在语句之间添加空行以提高可读性，并在语句前缩进多个空格，从而为它们提供一个易于阅读的视觉组织结构。
+VBScript 是一种灵活的语言，因为它在格式化脚本方面为你提供了很大的自由度。例如，你可以在语句之间添空行以提高可读性，并在语句前缩进多个空格，从而为它们提供一个易于阅读的视觉组织结构。
 
 ##### 避免语法错误
 
@@ -704,6 +781,7 @@ VBScript MsgBox() 语句的语法要求文本消息必须包含在匹配的引�
 ![](img/26f0ae5097205615f9285e10dc13f45e_69_0.png)
 
 图 2.1
+
 WSH VBScript 执行期间发生的 VBScript 语法错误。
 
 如果你将脚本嵌入到 HTML 页面中，如下面所示，也会出现错误。
@@ -736,11 +814,13 @@ WSH VBScript 执行期间发生的 VBScript 语法错误。
 ![](img/26f0ae5097205615f9285e10dc13f45e_70_0.png)
 
 **图 2.2**
+
 默认情况下，Internet Explorer 会隐藏 VBScript 错误。
 
 ![](img/26f0ae5097205615f9285e10dc13f45e_70_1.png)
 
 **图 2.3**
+
 Internet Explorer 报告的 VBScript 错误。
 
 当你为 HMTL 页面开发脚本时，如果在错误发生时能看到它们，通常会容易得多。你可以按照以下过程中概述的步骤配置 Internet Explorer 6 以自动显示脚本错误。
@@ -750,9 +830,10 @@ Internet Explorer 报告的 VBScript 错误。
 ###### 配置 Internet Explorer 6 以显示脚本错误
 
 1.  启动 Internet Explorer。
+
 2.  从“工具”菜单中选择“Internet 选项”。出现 Internet 选项对话框。
-3.  选择“高级”属性表，如图 2.4 所示。
-4.  选中“显示每个脚本错误的通知”选项，然后单击“确定”。
+
+3.  选中“显示每个脚本错误的通知”选项，然后单击“确定”。
 
 ![](img/26f0ae5097205615f9285e10dc13f45e_71_0.png)
 
@@ -790,10 +871,15 @@ End Sub
 VBScript 由一个或多个 VBScript 语句组成。VBScript 提供了一套完整的编程语句集，本章其余部分将概述和解释这些语句。我们将涵盖的编程语句类型包括
 
 -   VBScript 注释
+
 -   变量声明和赋值
+
 -   VBScript 常量
+
 -   条件语句
+
 -   循环语句
+
 -   函数和子过程
 
 ####### 为 VBScript 添加注释
@@ -823,6 +909,7 @@ MsgBox "This is a VBScript!"    'This statement displays a message in a pop-up d
 ```
 
 > 你也可以使用 Rem 在 VBScript 语句末尾添加注释。但是，你还必须在 VBScript 语句之后和 Rem 关键字之前添加一个冒号。
+
 MsgBox "This is a VBScript!" : Rem This statement displays a message in a pop-up dialog
 
 注释的另一个好用途是构建脚本模板。然后，你可以将该模板作为每次坐下来编写新 VBScript 时的起点。下面的示例展示了我将在本书中用于记录 WSH VBScript 的模板。
@@ -886,22 +973,36 @@ VBScript 允许你编写可以在执行时将数据存储在内存中的脚本�
 尽管 VBScript 只支持 variant 变量类型，但它确实允许你使用 variant 子类型进一步对变量进行分类。表 2.1 列出了 VBScript 支持的 variant 子类型。
 
 | 子类型 | 描述 |
+
 |---|---|
+
 | Empty | 创建一个未初始化的变量 |
+
 | Null | 建立一个具有空值的变量 |
+
 | Boolean | 值为 *true* 或 *false* |
+
 | Byte | 设置一个介于 0 到 255 之间的整数值 |
+
 | Integer | 设置一个介于 -32,768 到 32,767 之间的整数值 |
+
 | Currency | 货币值 |
+
 | Long | 一个介于 -2,147,483,648 到 2,147,483,647 之间的整数值 |
+
 | Single | 单精度浮点数 |
+
 | Double | 双精度浮点数 |
+
 | Date | 表示日期的数字 |
+
 | String | 文本字符串 |
+
 | Object | 对象 |
+
 | Error | 错误号 |
 
-VBScript 允许你使用内置的转换函数将 variant 子类型从一种类型转换为另一种类型。这些函数的列表在附录 A 中提供。通过使用转换函数，你可以设置 variant 的子类型。例如，你可以创建一个 variant 变量，如下所示。
+VBScript 允�你使用内置的转换函数将 variant 子类型从一种类型转换为另一种类型。这些函数的列表在附录 A 中提供。通过使用转换函数，你可以设置 variant 的子类型。例如，你可以创建一个 variant 变量，如下所示。
 
 ```
 myBirthday = "November 20, 1964"
@@ -918,8 +1019,11 @@ myBirthDate = Cdate(myBirthday)
 在向 VBScript 添加第一个变量之前，你需要了解一些需要遵循的规则。
 
 - 变量名在其使用范围内必须是唯一的。
+
 - 变量名不能超过 255 个字符。
+
 - 变量名必须以字母字符开头。
+
 - 变量名不能包含嵌入的句点。
 
 虽然不是强制性的，但我建议你为变量起描述性的名称，以帮助记录其内容。例如，定义为 totalValue 的变量比名为 x 的变量更容易理解。描述性的变量名将使你的脚本更易于阅读和维护。
@@ -955,6 +1059,8 @@ userName = "Jerry Ford"
 ```
 Dim userName, userBirthday, userAge, userId
 ```
+
+
 
 在使用变量之前正式声明变量被认为是良好的编程实践。为了强制在你的 VBScript 中正式声明变量，你可以使用 Option Explicit 语句。使用时，Option Explicit 必须是脚本的第一行。Option Explicit 告诉 VBScript，如果你尝试使用一个尚未使用 Dim 关键字定义过的变量，将生成一个错误。
 
@@ -1023,8 +1129,6 @@ Function Display_Names()
     Dim userName
 ```
 
-
-
 ###### 使用运算符操作 VBScript 变量
 
 正如你已经看到的，VBScript 的 `=` 赋值运算符用于为变量赋值。当你处理包含数值的变量时，可以使用任何 VBScript 算术运算符（如表 2.2 所示）来更改分配给变量的值。
@@ -1040,15 +1144,25 @@ WScript.Echo "myAge = " & myAge
 ```
 
 | 运算符 | 描述 |
+
 |---|---|
+
 | ^ | 幂运算 |
+
 | - | 取负 |
+
 | * | 乘法 |
+
 | / | 除法 |
+
 | \ | 整数除法 |
+
 | Mod | 取模 |
+
 | + | 加法 |
+
 | - | 减法 |
+
 | & | 字符串连接 |
 
 ###### 一个周末学会 VBScript
@@ -1084,12 +1198,19 @@ VBScript 提供了一组运算符，你可以使用它们来比较 VBScript 中�
 ####### **表 2.3 比较运算符**
 
 | 运算符 | 描述 |
+
 | :--- | :--- |
+
 | = | 等于 |
+
 | <> | 不等于 |
+
 | < | 小于 |
+
 | > | 大于 |
+
 | <= | 小于或等于 |
+
 | >= | 大于或等于 |
 
 在脚本中测试变量的值是你将发现自己反复做的事情。当与条件执行逻辑（我稍后会介绍）结合时，你将能够编写可以测试特定条件，然后基于这些测试的结果在多个执行路径之间切换的脚本。
@@ -1126,11 +1247,12 @@ End If
 VBScript 提供两个语句，允许你添加可以改变脚本逻辑执行方式的逻辑。这样，你的脚本就可以根据用户或环境标准做出决策。这些语句如下所列。
 
 - **If...Then...Else。** 基于一个或多个测试条件指导脚本的逻辑执行。
+
 - **Select...Case。** 基于对同一条件执行的多个测试指导脚本的逻辑执行。
 
 ####### If...Then...Else
 
-If...Then...Else 语句执行一个或多个条件的测试，并根据测试结果是否为真或假来改变脚本的执行。If...Then...Else 语句有两个版本。第一个版本允许你测试单个条件。其语法如下所示。
+If...Then...Else 语句执行一个或多个条件的测试，并根据测试结果是否为真或假来改变脚本的执行。If...Then...Else 语句有两个版本。第一个版本允你测试单个条件。其语法如下所示。
 
 ```
 If *condition* Then *statement* [Else *statement*]
@@ -1197,8 +1319,6 @@ If unitsSent < unitsReceived Then
     unitsOnhand = unitsReceived - unitsSent
 ```
 
-
-
 ###### 星期六早晨 VBScript 编程入门
 
 ```vbscript
@@ -1246,14 +1366,18 @@ End Select
 
 ###### 使用循环
 
-与任何高级编程语言一样，VBScript 提供了多种语句，允许 VBScript 循环或迭代重复执行，以快速高效地处理大量数据。这些语句使得编写能够处理海量数据的小型脚本成为可能。
+与任何高级编程语言一样，VBScript 提供了多种语句，允许 VBScript 循环或迭代重复执行，以快速高效处理大量数据。这些语句使得编写能够处理海量数据的小型脚本成为可能。
 
 VBScript 提供了五种不同类型的循环，此处进行了总结，每种都有其独特的目的和优势。
 
 -   - **Do While.** 设置一个循环，在指定条件保持为真时进行迭代。
+
 -   - **Do Until.** 设置一个循环，在指定条件变为真之前进行迭代。
+
 -   - **For...Next.** 设置一个循环以执行指定次数。
+
 -   - **While...Wend.** 设置一个在条件保持为真时执行的循环。
+
 -   - **For...Each...Next.** 创建一个循环，遍历对象的属性。
 
 ####### Do While
@@ -1437,8 +1561,6 @@ Next
 
 例如，以下 `For...Next` 循环设置了一个将执行 10 次的循环，并在每次迭代时显示控制变量 `i` 的值。变量 `i` 用于控制循环执行，并在每次循环结束时自动递增 1。
 
-
-
 ####### For...Next 循环
 
 通过添加 `Step` 关键字，你可以控制计数器递增的值。
@@ -1467,7 +1589,7 @@ Copyright (C) Microsoft Corporation 1996-2001. All rights reserved.
 
 > **注意** 你可以使用 `Exit For` 语句来强制提前结束 `For...Next` 循环。
 
-####### While...Wend 循环
+####### While...Wend 循循环
 
 VBScript 的 `While...Wend` 语句用于创建只要测试条件保持为真就会执行的循环。第一种方法的语法如下所示。
 
@@ -1535,6 +1657,7 @@ Next [元素]
 VBScript 提供了两种不同类型的过程。
 
 - **函数（Function）**。一个执行后返回结果给调用它的语句的过程。
+
 - **子程序（Subroutine）**。一个执行但不返回结果的过程。
 
 > **提示** 我建议你将所有的过程放在脚本中的一个共同位置。这使它们易于查找和维护。例如，大多数网页程序员将他们的函数和子例程嵌入到 HTML 页面的 HEAD 部分。这确保了所有过程在被 BODY 部分的 VBScript 调用之前都已初始化并可用。我建议你使用本章前面展示过的类似模板，将所有过程放在你的 WSH VBScript 的末尾。
@@ -1616,8 +1739,6 @@ End Function
 End Sub
 ```
 
-
-
 `Private` 和 `Public` 是可选的关键字。`Private` 关键字用于设置一个只能从定义它的脚本内部调用的子程序。使用 `Public` 关键字则允许其他脚本调用该子程序。`Name` 标识函数的名称。`Arglist` 用于指定一个或多个可以传递给该子程序的参数。
 
 当子程序被调用时，它会执行，然后将处理控制权返回给调用语句之后的语句。例如，下面的例子展示了如何在嵌入 HTML 页面的 VBScript 中使用子程序。
@@ -1691,7 +1812,7 @@ WScript.Echo myArray(2)
 Dim myArray (4,4)
 ```
 
-你可以将这个例子创建的数组想象为有五行五列。请记住，任何数组维度的长度等于 1 加上指定其长度的值。类似地，你可以通过在 `Dim` 语句中添加额外的逗号分隔值来定义一个三维数组，如下所示。
+你可以将这个例子创建的数组想象为有五行五列。请记住，任何数组维度的长度等于 1 加上指定其长度的值。类似的，你可以通过在 `Dim` 语句中添加额外的逗号分隔值来定义一个三维数组，如下所示。
 
 ```
 Dim myArray (4,4,4)
@@ -1746,7 +1867,7 @@ Dim myArray (4,4,4)
 
 上一个例子展示了一个在填充数据之前就静态设置了大小的数组。然而，有时更改数组的大小可能会很有用。例如，如果你正在收集用户输入，而用户希望提供的数据超出了预期。
 
-一种设置数组以便稍后在脚本中更改其大小的方法是使用 `Dim` 语句，并指定一个空括号集，如下所示：
+一种设置数组以便稍后在脚本中更改其大的方法是使用 `Dim` 语句，并指定一个空括号集，如下所示：
 
 ```
 Dim myArray()
@@ -1818,39 +1939,50 @@ ReDim Preserve myArray(7)
 </HTML>
 ```
 
-
-
 `Option Explicit`
 
 `Dim i` ' 用于控制 `For...Each` 循环的变量
 
 `ReDim myArray(3)`
+
 `myArray(0) = "Ford, Jerry"`
+
 `myArray(1) = "Mahoney, Mike"`
+
 `myArray(2) = "Canzoneri, Nick"`
+
 `myArray(3) = "Benson, Markland"`
 
 `Document.Write "<B>我的小测试数组：</B> <BR>"`
 
 `For Each i IN myArray`
+
     `Document.Write i & "<BR>"`
+
 `Next`
 
 `ReDim Preserve myArray(6)`
 
 `myArray(4) = "Ford, Alexander"`
+
 `myArray(5) = "Ford, William"`
+
 `myArray(6) = "Ford. Molly"`
 
 `Document.Write "<P><B>我扩展后的测试数组：</B> <BR>"`
 
 `For Each i IN myArray`
+
     `Document.Write i & "<BR>"`
+
 `Next`
 
 ' 结束隐藏 VBScript 语句 -->
+
 `</SCRIPT>`
+
 `</BODY>`
+
 `</HTML>`
 
 图 2.7 展示了运行此脚本后你将看到的结果。
@@ -1860,6 +1992,7 @@ ReDim Preserve myArray(7)
 ![](img/26f0ae5097205615f9285e10dc13f45e_108_0.png)
 
 **图 2.7**
+
 使用 `ReDim` 语句调整动态数组的大小。
 
 ##### VBScript 弹出对话框
@@ -1869,11 +2002,12 @@ VBScript 提供了两个内置函数，允许你添加弹出对话框，可以�
 无论你是将 VBScript 嵌入到 HTML 页面中还是编写 WSH 脚本，都可以使用这两个函数。这里描述了这两个函数。
 
 - **MsgBox()**。一个执行过程，然后返回一个结果给调用它的语句。
+
 - **InputBox()**。一个执行过程，但不返回结果。
 
 > **注意** 你已经在本书中看到了使用 `WScript.Echo` 语句创建的弹出对话框的示例。`Echo` 是属于 WSH `WScript` 对象的一种方法，允许你向用户显示消息，这些消息根据处理它们的执行主机而有所不同。如果 WScript 执行主机处理 `WScript.Echo` 命令，它会在弹出对话框中显示结果。但是，如果使用 CScript 执行主机来处理 `WScript.Echo` 语句，结果将作为打印文本出现在 Windows 命令控制台中。你将在明天了解更多关于 `WScript.Echo` 的信息。
 
-> **注意** 显示弹出对话框的另一种方法是使用 WSH Popup() 函数。Popup() 函数提供了与 VBScript MsgBox() 函数相同的基本功能。创建它是因为 Microsoft 为 WSH 提供的另一种脚本语言 JScript 没有提供任何用于显示对话框的内置函数或方法。但是，Popup() 函数可以像 MsgBox() 函数一样轻松地在 VBScript 中使用。你将在明天了解更多关于 Popup() 函数的信息。
+> **注意** 显示弹出对话框的另一种方法是使用 WSH Popup() 函数。Popup() 函数提供了与 VBScript MsgBox() 函数相同的基本功能。创建它是因为 Microsoft 为 WSH 提供的另一种脚本语言 JScript 没有提供任何用用于显示对话框的内置函数或方法。但是，Popup() 函数可以像 MsgBox() 函数一样轻松地在 VBScript 中使用。你将在明天了解更多关于 Popup() 函数的信息。
 
 ####### VBScript MsgBox 函数
 
@@ -1886,8 +2020,11 @@ MsgBox(prompt [, buttons] [, title] [, helpfile, context])
 `Prompt` 是对话框显示的文本消息，最长可达 1,024 个字符。`Button` 是一个数字表达式或值，它是许多其他值的总和，这些值用于指定：
 
 - 要显示的按钮类型
+
 - 要在对话框中显示的图标类型
+
 - 默认选中的按钮
+
 - 对话框的模式
 
 这四个按钮属性的每个可能数字值都在以下四个表格中概述。表 2.4 列出了指定对话框上将显示的按钮数量和类型的数字值。表 2.5 列出了指定对话框上将显示的图标类型的数字值。表 2.6 列出了指定对话框上哪个按钮将被设为默认按钮的数字值。表 2.7 列出了指定对话框将应用的模式类型的数字值。
@@ -1895,37 +2032,57 @@ MsgBox(prompt [, buttons] [, title] [, helpfile, context])
 ######## 表 2.4 VBSCRIPT MSGBOX 按钮
 
 | 常量 | 值 | 描述 |
+
 | --- | --- | --- |
+
 | vbOKOnly | 0 | 显示“确定”按钮 |
+
 | vbOKCancel | 1 | 显示“确定”和“取消”按钮 |
+
 | vbAbortRetryIgnore | 2 | 显示“中止”、“重试”和“忽略”按钮 |
+
 | vbYesNoCancel | 3 | 显示“是”、“否”和“取消”按钮 |
+
 | vbYesNo | 4 | 显示“是”和“否”按钮 |
+
 | vbRetryCancel | 5 | 显示“重试”和“取消”按钮 |
 
 ######## 表 2.5 VBSCRIPT MSGBOX 图标
 
 | 常量 | 值 | 描述 |
+
 | --- | --- | --- |
+
 | vbCritical | 16 | 显示严重图标 |
+
 | vbQuestion | 32 | 显示问号图标 |
+
 | vbExclamation | 48 | 显示感叹号图标 |
+
 | vbInformation | 64 | 显示信息图标 |
 
 ######## 表 2.6 VBSCRIPT MSGBOX 默认按钮
 
 | 常量 | 值 | 描述 |
+
 | --- | --- | --- |
+
 | vbDefaultButton1 | 0 | 使第一个按钮成为默认按钮 |
+
 | vbDefaultButton2 | 256 | 使第二个按钮成为默认按钮 |
+
 | vbDefaultButton3 | 512 | 使第三个按钮成为默认按钮 |
+
 | vbDefaultButton4 | 768 | 使第四个按钮成为默认按钮 |
 
 ######## 表 2.7 VBSCRIPT MSGBOX 模式设置
 
 | 常量 | 值 | 描述 |
+
 | --- | --- | --- |
+
 | vbApplicationModal | 0 | 用户必须做出响应后脚本才能继续执行 |
+
 | vbSystemModal | 4096 | 用户必须做出响应后脚本才能继续执行。此外，弹出对话框将保持在其他活动应用程序的顶部显示 |
 
 > **注意** 对话框的模式控制其行为。例如，当对话框被设置为应用程序模式时，用户必须先响应对话框，VBScript 才能继续执行。
@@ -1945,6 +2102,7 @@ MsgBox("感谢您的访问，期待您再次光临！")
 ![](img/26f0ae5097205615f9285e10dc13f45e_112_0.png)
 
 **图 2.8**
+
 使用 MsgBox() 函数显示通知消息。
 
 当你如上所示执行 MsgBox() 函数时，不会返回值。但是，如果你重新构造 MsgBox() 函数的使用方式，VBScript 可以返回一个值，指示用户单击的按钮。表 2.8 提供了 MsgBox() 函数可能返回的返回值列表。
@@ -1960,13 +2118,21 @@ myResponse = MsgBox("您希望退出吗？", 1, "您希望做什么？")
 **表 2.8 VBScript MsgBox 返回值**
 
 | 常量 | 值 | 描述 |
+
 | --- | --- | --- |
+
 | vbOK | 1 | 用户单击了“确定”按钮 |
+
 | vbCancel | 2 | 用户单击了“取消”按钮 |
+
 | vbAbort | 3 | 用户单击了“中止”按钮 |
+
 | vbRetry | 4 | 用户单击了“重试”按钮 |
+
 | vbIgnore | 5 | 用户单击了“忽略”按钮 |
+
 | vbYes | 6 | 用户单击了“是”按钮 |
+
 | vbNo | 7 | 用户单击了“否”按钮 |
 
 > **注意** 如果用户按下 **Esc** 键，则返回的值将是 2，这与单击 **Cancel** 按钮的值相同。
@@ -1979,8 +2145,6 @@ Dim myResponse
 myResponse = MsgBox("您希望退出吗？", 17, "您希望做什么？")
 ```
 
-
-
 如图2.9所示，该对话框包含了所有三个元素。
 
 ![](img/26f0ae5097205615f9285e10dc13f45e_114_0.png)
@@ -1990,7 +2154,9 @@ myResponse = MsgBox("您希望退出吗？", 17, "您希望做什么？")
 要创建满足所有这些条件的对话框，你需要使用以下 VBScript 常量。
 
 - **`vbOKCancel`** 值为 1
+
 - **`vbCritical`** 值为 16
+
 - **`vbDefaultbutton2`** 值为 256
 
 将这三个 VBScript 常量关联的值相加，得到 273，这就是本例中使用的数字。
@@ -2034,6 +2200,7 @@ Input = InputBox("What country do you reside in?", "Welcome to my script!", "USA
 图 2.11 显示了执行这些语句时显示的对话框。
 
 **图 2.11**
+
 向弹出对话框添加标题栏消息和默认答案。
 
 ![](img/26f0ae5097205615f9285e10dc13f45e_116_0.png)
@@ -2050,6 +2217,7 @@ Input = InputBox("What country do you reside in? If you prefer not" _
 图 2.12 显示了由上一个示例创建的对话框。
 
 **图 2.12**
+
 创建带有格式化文本的弹出对话框。
 
 ![](img/26f0ae5097205615f9285e10dc13f45e_116_1.png)
@@ -2065,9 +2233,13 @@ Input = InputBox("What country do you reside in? If you prefer not" _
 ### 在 Internet Explorer 中进行脚本编写
 
 - 检查 Internet Explorer 支持的对象模型
+
 - 学习如何使用对象的方法和属性来操作浏览器对象
+
 - 了解如何在 Internet Explorer 状态栏上发布消息
+
 - 学习如何响应键盘击键和鼠标点击
+
 - 了解如何跟踪和响应鼠标移动
 
 ![](img/26f0ae5097205615f9285e10dc13f45e_120_0.png)
@@ -2077,20 +2249,33 @@ Input = InputBox("What country do you reside in? If you prefer not" _
 今天下午，你将完成两章中的第一章，向你展示如何将你新的 VBScript 编程技能应用于 HTML 页面。你将看到 VBScript 如何与 Internet Explorer 交互并使用对象模型来控制许多浏览器功能，例如打开和关闭浏览器窗口。你还将学习使用许多 Internet Explorer 对象，这些对象允许你编写脚本来显示弹出对话框、控制浏览器导航以及响应浏览器和用户事件（如鼠标点击和双击）。
 
 > 注意
-Internet Explorer 支持 VBScript，但 Netscape Communicator 不支持。这也意味着基于 Netscape Communicator 开源代码的 Opera 浏览器不支持 VBScript。然而，市场上还有许多其他 Internet 浏览器，其中大量是基于 Internet Explorer 引擎构建的，这使得 VBScript 的支持范围比大多数人意识到的要广泛得多。例如，美国在线支持许多自定义浏览器。一些基于 Netscape，另一些基于 Internet Explorer。但是，AOL 分发给其用户的浏览器是基于 Internet Explorer 的，因此支持 VBScript。那么，微软分发给其 MSN 用户的 MSN Explorer 浏览器也支持 VBScript，这大概不会让你感到惊讶。总的来说，我知道至少有十几种基于 Internet Explorer 并支持 VBScript 的浏览器。这些包括
+
+Internet Explorer 支持 VBScript，但 Netscape Communicator 不支持。这也意味着基于 Netscape Communicator 开源代码的 Opera 浏览器不支持 VBScript。然而，市场上还有许多其他 Internet 浏览器，其中大量是基于 Internet Explorer 引擎构建的，这使得 VBScript 的支持范围比大多数人意识到的要广泛得多。例如，美国在线支持许多自定浏览器。一些基于 Netscape，另一些基于 Internet Explorer。但是，AOL 分发给其用户的浏览器是基于 Internet Explorer 的，因此支持 VBScript。那么，微软分发给其 MSN 用户的 MSN Explorer 浏览器也支持 VBScript，这大概不会让你感到惊讶。总的来说，我知道至少有十几种基于 Internet Explorer 并支持 VBScript 的浏览器。这些包括
 
 - Internet Explorer
+
 - MSN Explorer
+
 - AOL
+
 - EarthLink LiteAOL
+
 - CompuServe
+
 - Oligo
+
 - UltraBrowser
+
 - CrystalPort
+
 - NeoPlanet
+
 - Kidnet
+
 - ExplorerRapidBrowser
+
 - SmartExplorer
+
 - Fast Browser Pro
 
 我确信还有更多基于 Internet Explorer（也支持 VBScript）的浏览器没有列在这里。这些只是我听说并尝试过的。
@@ -2102,8 +2287,6 @@ Internet Explorer 支持 VBScript，但 Netscape Communicator 不支持。这也
 每个版本的 Internet Explorer 都提供其自己的对象模型。这个模型在每次新版本发布时都会进行修改和扩展。因此，在 Internet Explorer 6 中发现的一些对象、方法和属性不被该浏览器的早期版本支持。这意味着，如果你创建的 VBScript 使用了由较新版本的 Internet Explorer 引入的对象、方法或属性，它们在早期版本中将不可用，你的脚本将经历运行时错误。这使得脚本开发变得困难。
 
 有些人选择编写忽略较新对象、方法和属性的脚本，并坚持使用所有版本的 Internet Explorer 都支持的一组对象。这样他们就知道他们的脚本总是会按预期运行。然而，这可能会限制你可以做的事情，因为许多在较新版本中引入的功能在早期版本中无法使用。
-
-
 
 ##### 理解对象组织
 
@@ -2134,6 +2317,7 @@ Internet Explorer 支持 VBScript，但 Netscape Communicator 不支持。这也
 为了从 VBScript 中引用对象，你需要键入对象名称，后跟一个点，然后是属性名称，如下所示。
 
 document.bgColor
+
 document.fgColor
 
 例如，以下 HTML 页面包含一个 VBScript，该脚本将 HTML 页面上默认的白色背景黑色前景颜色反转。
@@ -2219,24 +2403,29 @@ Internet Explorer 3 和 4 版支持 DHTML 模型的变体。Internet Explorer 5 
 
 **注意** DHTML 模型缺少指定树中特定对象然后以编程方式在树中向上、向下或横向导航的能力。本章稍后讨论的 DOM 模型提供了此功能。
 
-DHTML 模型的顶部是 `window` 对象。每个 HTML 页面都有一个 `window` 对象——除非使用框架——在这种情况下，每个框架都有一个单独的 `window` 对象，以及一个父 `window` 对象，该对象代表定义每个框架的页面。
+DHTML 模型的顶部是 `window` 对象。每个 HTML 页面都有一个 `window` 对象——除却使用框架——在这种情况下，每个框架都有一个单独的 `window` 对象，以及一个父 `window` 对象，该对象代表定义每个框架的页面。
 
 `window` 对象提供了对许多子对象的访问，如图 3.3 所示。`window` 对象提供了属性和方法，使其能够执行许多操作，包括：
 
 -   在 Internet Explorer 状态栏中放置文本消息
+
 -   打开一个新窗口并在其中加载 URL
+
 -   关闭一个窗口
+
 -   创建弹出对话框以显示消息、提示用户单击预设选项或键入文本响应
 
 `window` 对象下的对象包括：
 
 -   **Navigator 对象。** 提供有关加载 HTML 页面的浏览器的信息，包括浏览器类型和版本。
+
 -   **History 对象。** 提供可用于浏览文档对象历史记录列表（例如，自浏览器窗口打开以来访问过的地方）的方法。
+
 -   **Document 对象。** 表示 Internet Explorer 当前显示的 HTML 页面，并提供用于操作它的属性和方法。
+
 -   **Location 对象。** 提供有关当前加载的 URL 的信息，并提供重新加载 HTML 页面或加载新 URL 的能力。
+
 -   **Frames 集合。** 提供当前位于浏览器窗口中的框架的索引列表（一个数组）。
-
-
 
 ![](img/26f0ae5097205615f9285e10dc13f45e_129_0.png)
 
@@ -2274,18 +2463,31 @@ DHTML 模型的顶部是 `window` 对象。每个 HTML 页面都有一个 `windo
 ######## 表 3.1 文档对象模型属性
 
 | 属性 | 描述 |
+
 | :--- | :--- |
+
 | firstChild | 对象的第一个子节点 |
+
 | lastChild | 对象的最后一个子节点 |
+
 | childNodes | 所有子对象的集合/数组 |
+
 | parentNode | 对象的父对象 |
+
 | nextSibling | DOM 树中紧随其后的子节点 |
+
 | prevSibling | 当前子节点之前的子节点 |
-| nodeName | HTML 标签的名称 |
+
+| nodeName | HTML 标标签的名称 |
+
 | nodeType | 指定一个代表 HTML 元素类型的值（标签、属性或文本） |
+
 | nodeValue | 分配给文本节点的值 |
+
 | data | 指定文本节点的值 |
+
 | specified | 指示属性是否已设置 |
+
 | attributes | 所有对象属性的集合/数组 |
 
 接下来，让我们创建一个表示此 HTML 页面树结构的模型，如图 3.5 所示。如图 3.5 所示，`document` 对象是树的根。它只有一个子对象——`documentElement`——它对应于页面上的第一个 `<HTML>` 标签。
@@ -2337,6 +2539,7 @@ window.alert("The ID for the first element is: " & document.documentElement.firs
 图 3.6 显示了执行此语句时出现的弹出对话框。
 
 **图 3.6**
+
 Internet Explorer DOM 允许你访问 HTML 页面上的每个元素。
 
 ![](img/26f0ae5097205615f9285e10dc13f45e_133_0.png)
@@ -2350,6 +2553,8 @@ window.alert("The ID for the second element is: " & document.documentElement.fir
 #### 星期六下午 在 Internet Explorer 中进行脚本编写
 
 下一条 VBScript 语句显示 `document` 对象的第一个子元素的第一个子元素的标签名，即 `TITLE` 标签。
+
+
 
 ```
 window.alert("The ID for the child of the first element is: " & document.documentElement.firstChild.firstChild.tagName)
@@ -2392,7 +2597,9 @@ document.getElementById("paraTag2").firstChild.nodeValue="This is " & "new and i
 此语句可以分解如下。
 
 - 从 `document` 对象开始
+
 - 添加 `getElementById()` 方法并指定 `paraTag2`。这让你到达第二个 `<P>` 标签。
+
 - 添加对 `firstChild` 和 `nodeValue` 属性的引用。这创建了一个对存储在 `<P>` 标签中的文本的引用。
 
 图 3.8 显示了修改第二段中存储的文本后 HTML 页面的外观。
@@ -2400,8 +2607,6 @@ document.getElementById("paraTag2").firstChild.nodeValue="This is " & "new and i
 如你所见，DOM 提供了强大的功能，用于导航 HTML 页面并操作其内容。这可以成为一个强大的工
 
 ![](img/26f0ae5097205615f9285e10dc13f45e_135_0.png)
-
-
 
 编程技巧；然而，它也为你的VBScript增加了一层复杂性。要完整介绍如何实现文档对象模型（DOM）的所有对象、方法和属性，将超出本书可用的篇幅。你可以访问**www.w3c.org/DOM**来了解更多关于这个对象模型的信息。此外，通过搜索**www.microsoft.com**也能找到大量有用的信息。
 
@@ -2418,9 +2623,13 @@ document.getElementById("paraTag2").firstChild.nodeValue="This is " & "new and i
 接下来，让我们花点时间来了解一下你在VBScript中会用到的一些对象。这些对象包括：
 
 - window
+
 - document
+
 - location
+
 - history
+
 - navigator
 
 ####### window对象
@@ -2428,8 +2637,11 @@ document.getElementById("paraTag2").firstChild.nodeValue="This is " & "new and i
 window对象位于对象模型层次结构的顶层，是document对象的父对象。如果使用了框架，那么每个框架都会创建一个window对象，还有一个额外的父窗口代表定义了框架集的HTML页面。window对象提供以下访问方式：
 
 - window对象方法
+
 - window对象属性
+
 - 其他对象
+
 - 集合
 
 你可以操作window对象的属性并执行其方法，以多种方式影响浏览器。以下示例展示了如何使用window对象的`prompt()`和`alert()`方法按姓名问候访客。
@@ -2564,6 +2776,7 @@ End If
 ![](img/26f0ae5097205615f9285e10dc13f45e_142_0.png)
 
 ####### 图3.12
+
 通过操作window对象的status属性，你可以在Internet Explorer状态栏上发布消息。
 
 最后一个示例演示了如何使用window对象的`open()`方法打开第二个浏览器窗口并自定义其外观。通过将此示例应用于你自己的网页，你可以轻松创建在访客加载主页时打开任意数量浏览器窗口的网站。这样，你就可以加载显示广告页面、提供控制菜单以及大量其他信息的页面。
@@ -2578,10 +2791,10 @@ End If
     <!-- Start hiding VBScript statements
 ```
 
-
-
 window.open "http://www.premierpressbooks.com", "Window1", "toolbar=no", "menubar=No", "scrollbar=no"
+
 ' 隐藏 VBScript 语句结束 -->
+
 </SCRIPT>
 
 ```
@@ -2644,15 +2857,24 @@ document.write("<B>文档 URL：</B> " & document.URL)
 你可能想尝试的其他 `document` 对象属性包括
 
 - **linkColor。** 指定文档链接的颜色
+
 - **alinkColor。** 指定活动文档链接的颜色
-- **vlinkColor。** 指定已访问链接的颜色
-- **anchor**。一个对象，其 `length` 属性指定 HTML 页面上的锚点数量
-- **link**。一个对象，其 `length` 属性指定 HTML 页面上的链接数量
-- **cookie**。提供在访客计算机上创建、存储和检索 cookie 的能力
-- **elements**。一个对象，其 `length` 属性指定表单上的控件数量
-- **form**。代表 HTML 页面上的一个表单
-- **lastModified**。检索当前 HTML 页面最后修改的日期和时间
-- **title**。检索存储在 HTML 页面 TITLE 标签中的值
+
+- **vlinkColor。** 指定已访问链链接的颜色
+
+- **anchor。** 一个对象，其 `length` 属性指定 HTML 页面上的锚点数量
+
+- **link。** 一个对象，其 `length` 属性指定 HTML 页面上的链接数量
+
+- **cookie。** 提供在访客计算机上创建、存储和检索 cookie 的能力
+
+- **elements。** 一个对象，其 `length` 属性指定表单上的控件数量
+
+- **form。** 代表 HTML 页面上的一个表单
+
+- **lastModified。** 检索当前 HTML 页面最后修改的日期和时间
+
+- **title。** 检索存储在 HTML 页面 TITLE 标签中的值
 
 ##### location 对象
 
@@ -2698,14 +2920,18 @@ window.location=document.myForm.myList.value
 ```
 
 > 注意
+
 > 引用其子对象时不需要 `window` 对象。换句话说，以下两种语句都可以正常工作。
+
 > ```
 > window.location=document.myForm.myList.value
 > location=document.myForm.myList.value
 > ```
+
 > 我只是使用更长的版本以使我的示例更容易理解。
 
 图 3.15 展示了上一个示例生成的 HTML 页面。
+
 下一个示例包含两个 VBScript。第一个 VBScript 嵌入在 `HEAD` 部分。它定义了两个子例程：`ppBooks_onClick` 使用 `location` 对象的 `replace()` 方法将新的 URL 加载到 Internet Explorer 窗口中。`reload_onClick` 子例程执行 `location` 对象的 `reload()` 方法，该方法刷新当前加载的 HTML 页面。
 
 第二个 VBScript 嵌入在 HTML 页面的 `BODY` 部分。它由一个 VBScript 语句组成。此语句使用 `document` 对象的 `write()` 方法在 HTML 页面上显示一条文本消息，其中包含存储在 `location` 对象的 `href` 属性中的值。
@@ -2785,8 +3011,6 @@ End Sub
     End Sub
 ```
 
-
-
 ##### 一个周末学 VBScript
 
 ```html
@@ -2834,6 +3058,7 @@ history.forward()
 ![图3.17](img/26f0ae5097205615f9285e10dc13f45e_152_0.png)
 
 **图 3.17**
+
 你可以使用 `history` 对象的方法以编程方式浏览 Internet Explorer 的历史记录列表。
 
 ##### navigator 对象
@@ -2843,7 +3068,9 @@ history.forward()
 以下示例显示了一些 navigator 属性。这些属性包括：
 
 - **appCodeName**。检索加载 HTML 页面的浏览器的代号。
+
 - **appName**。检索加载 HTML 页面的浏览器的名称。
+
 - **appVersion**。检索有关加载 HTML 页面的浏览器的版本信息。
 
 ```html
@@ -2876,9 +3103,10 @@ history.forward()
 ![图3.18](img/26f0ae5097205615f9285e10dc13f45e_154_0.png)
 
 **图 3.18**
+
 使用 navigator 对象的属性收集有关浏览器的信息。
 
-应用程序代号是 Mozilla。你可能不会太多地使用此属性。返回的应用程序名称是 Microsoft Internet Explorer。最后，应用程序版本是 4.0（兼容；MSIE 6.0；Windows NT 5.1；Q312461）。
+应用程序代号是 Mozilla。你可能不会太多地使用此属性。返回的应用程名称是 Microsoft Internet Explorer。最后，应用程序版本是 4.0（兼容；MSIE 6.0；Windows NT 5.1；Q312461）。
 
 以下示例显示了一个 VBScript，它查询 `appName` 和 `appVersion` 属性的值，以确定将访问者的浏览器重定向到何处。
 
@@ -2985,6 +3213,7 @@ End If
 在你自己的 HTML 页面上使用此示例之前，你可能需要进行一些更改。实际上，显示浏览器名称和版本号没有太大意义。相反，你可能希望取消注释 VBScript 中的以下语句。
 
 `'window.location="http://www.myHtmlPages.com"`
+
 `'window.location="http://www.myVbscriptPages.com"`
 
 这些语句将浏览器重定向到适合该浏览器的 HTML 页面。图 3.19 显示了当在运行 Internet Explorer 浏览器的 Windows XP 计算机上执行脚本时，HTML 页面的外观。
@@ -2992,6 +3221,7 @@ End If
 ![图3.19](img/26f0ae5097205615f9285e10dc13f45e_157_0.png)
 
 **图 3.19**
+
 根据访问者的浏览器类型和版本进行重定向。
 
 前面的 VBScript 如果由 Netscape 浏览器打开，对你没有太大用处，因为 Netscape 浏览器不支持 VBScript，并且会忽略任何 VBScript 语句。然而，你可以将其作为构建脚本的模型，用于询问 Internet Explorer 的版本号。然后，你可以将访问者的浏览器重定向到你设计的支持所使用浏览器版本的 HTML 页面。
@@ -3008,7 +3238,7 @@ End If
 
 事件与特定对象相关联。当事件被触发时，如果为其编写了事件处理程序，则该事件处理程序会自动执行。
 
-有几种方法可以定义事件。首先，你可以将它们直接嵌入 HTML 标签中，如这里所示。
+有几种方法可以定义事件。首先，你可以将它们直接嵌入 HTML 标标签中，如这里所示。
 
 ```html
 <BODY onLoad="window.status = 'Welcome to my web site!'">
@@ -3021,7 +3251,7 @@ End If
       onUnload="window.alert('Good Bye!')">
 ```
 
-你还可以通过定义以事件命名的子程序和函数来设置事件处理程序，这些事件处理程序将以执行它们的事件命名。例如，下面的 VBScript 子程序名为 `myButton_onMouseOver`。当访问者使用鼠标将指针移动到名为 `myButton` 的按钮上时，它会自动执行。
+你还可以通过定义以事件命名的子程序和函数来设置事件处理程序，这些事件处理程序将以执行它们的事件命名。例如，下面的 VBScript 子程序名为 `myButton_onMouseOver`。当访问者使用鼠将指针移动到名为 `myButton` 的按钮上时，它会自动执行。
 
 ```vb
 Sub myButton_onMouseOver
@@ -3044,20 +3274,27 @@ End Sub
 事件处理程序可以根据它们的执行时间来定义。这些类别包括
 
 - 窗口和框架事件
+
 - 鼠标事件
+
 - 键盘事件
+
 - 错误事件
+
 - 与表单一起使用的常用事件
 
-这些事件的详细列表在附录 A 中提供。今天下午剩余的时间将专门用于演示如何使用与上表中前三个类别事件处理程序相关的事件处理程序。剩下的两个类别将在今天晚上晚些时候介绍。
+这些事件的详绂列表在附录 A 中提供。今天下午剩余的时间将专门用于演示如何使用与上表中前三个类别事件处理程序相关的事件处理程序。剩下的两个类别将在今天晚上晚些时候介绍。
 
 ####### 窗口和框架事件处理程序
 
 当影响窗口和框架对象的事件发生时，会触发窗口和框架事件处理程序。这些事件处理程序包括
 
 - **onLoad**。当 HTML 或图像加载完成时执行。
+
 - **onResize**。当访问者调整框架或窗口大小时执行。
+
 - **onUnload**。当访问者关闭浏览器窗口或框架或加载不同的 URL 时执行。
+
 - **onMove**。当访问者移动框架或窗口时执行。
 
 要使用这些事件处理程序，请将它们放在 HTML `BODY` 标签内，如接下来的两个示例所示。第一个示例将 `onLoad` 事件处理程序放在 `BODY` 标签中。当 HTML 页面加载时，它会执行并调用 `DisplayMsg()` 函数。此外，它通过将参数放在函数的括号内（在本例中，参数是一个名称）来传递一个参数供函数处理。因为传递的值是文本，所以它也包含在一对引号内。传递数字不需要引号。
@@ -3126,19 +3363,24 @@ onUnload="window.alert('You killed me. What did I ever do to you?')">
 每当访问者用鼠标做一些事情时，鼠标事件就会执行，例如单击表单按钮或将指针移到图像上。以下鼠标事件处理程序可供你使用。
 
 - **onMouseOver**。当访问者将指针移动到对象上时执行。
+
 - **onMouseOut**。当访问者将指针移出对象时执行。
+
 - **onMouseDown**。当访问者按下鼠标按钮时执行。
+
 - **onMouseUp**。当访问者释放鼠标按钮时执行。
+
 - **onMouseMove**。当访问者移动鼠标时执行。
+
 - **onMouseWheel**。当鼠标滚轮被旋转时执行。
+
 - **onClick**。当访问者单击对象时执行。
+
 - **onDblClick**。当访问者双击对象时执行。
 
 接下来的 VBScript 示例展示了如何将 `onMouseOver` 和 `onMouseOut` 事件处理程序合并到你的脚本中。在这个示例中，创建了一个由一个名为 `myButton` 的按钮组成的 HTML 表单。在 HTML 页面的 `HEAD` 部分定义了两个子程序。第一个函数名为 `myButton_onMouseOver`，每当访问者使用鼠标将指针移动到 `myButton` 按钮上时，它会自动执行。类似地，当指针移出 `myButton` 按钮时，`myButton_onMouseOut` 子程序会执行。
 
 当 HTML 页面首次执行嵌入在 `BODY` 标签中的 `onLoad` 语句时，它会在 Internet Explorer 状态栏中放置一条文本消息。`myButton_onMouseOver` 子程序中的 VBScript 语句将一条文本消息赋值给 window 对象的 `status` 属性，从而在 Internet Explorer 状态栏中显示该消息。`myButton_onMouseOut` 子程序中的语句用空字符串替换文本消息，从而清除状态栏。
-
-
 
 让一切得以运作的关键在于，为 myButton 按钮分配 NAME 属性，并在为每个子例程分配名称时，将相应的事件处理程序名称附加到按钮名称之后。
 
@@ -3173,7 +3415,7 @@ End Sub
 
 图 3.24 展示了当页面加载到 Internet Explorer 中并将指针移动到按钮上方时，上述示例的显示效果。
 
-下一个示例同样演示了 onMouseOver 和 onMouseOut 事件处理程序，同时也展示了 onMouseDown 和 onMouseUp 事件处理程序。在 HTML 页面的 BODY 部分有两个指向网站的链接，分别命名为 link1 和 link2。在 HTML 页面的 HEAD 部分嵌入了一段 VBScript，其中定义了四个函数。其中两个函数用于为第一个链接提供事件处理程序，另外两个函数则为第二个链接提供事件处理程序。将指针移动到第一个链接上或移开会改变 HTML 页面的前景和背景颜色。类似地，点击第二个链接会导致在加载指定网站之前，先改变页面的背景和前景颜色。
+下一个示例同样演示了 onMouseOver和 onMouseOut 事件处理程序，同时也展示了 onMouseDown 和 onMouseUp 事件处理程序。在 HTML 页面的 BODY 部分有两个指向网站的链接，分别命名为 link1 和 link2。在 HTML 页面的 HEAD 部分嵌入了一段 VBScript，其中定义了四个函数。其中两个函数用于为第一个链接提供事件处理程序，另外两个函数则为第二个链接提供事件处理程序。将指针移动到第一个链接上或移开会改变 HTML 页面的前景和背景颜色。类似地，点击第二个链接会导致在加载指定网站之前，先改变页面的背景和前景颜色。
 
 ```html
 <HTML>
@@ -3245,6 +3487,7 @@ End Function
 ```
 
 **图 3.26**
+
 onClick 和 onDblClick 事件允许 VBScript 响应任何鼠标点击。
 
 ######## 键盘事件处理程序
@@ -3252,7 +3495,9 @@ onClick 和 onDblClick 事件允许 VBScript 响应任何鼠标点击。
 每当访问者在键盘上输入时，鼠标事件就会执行。提供了三种键盘事件，包括：
 
 - **onKeyDown**：当访问者按下某个键时执行
+
 - **onKeyUp**：当访问者释放某个键时执行
+
 - **onKeyPress**：当访问者按下并释放某个键时执行
 
 以下示例演示了 onKeyDown 事件处理程序的使用。定义了一个 HTML 表单，其中包含一个名为 entryField 的文本输入字段。在 HEAD 部分定义了一个名为 entryField_onKeyDown() 的函数，当访问者将焦点给予文本字段（例如，将光标置于文本字段中）并按下某个键时，该函数将执行。
@@ -3294,11 +3539,17 @@ End Function
 ### 网页技巧
 
 - 学习如何在 VBScript 中处理错误
+
 - 学习使用 Internet Explorer 状态栏的新技巧
+
 - 探索如何执行定时操作
+
 - 使用翻转效果为你的网页增添趣味
+
 - 查看如何使用 VBScript 控制 HTML 框架
+
 - 了解如何使用 VBScript 验证 HTML 表单
+
 - 学习如何烘焙 VBScript cookies
 
 晚上好！希望你的休息很愉快，并且准备好享受一些真正的乐趣了。今天下午，你学习了大量关于浏览器对象模型以及如何使用对象属性和方法来操作 Internet Explorer 和 HTML 页面的知识。
@@ -3311,8 +3562,6 @@ End Function
 
 今天下午，你学习了大量关于如何处理浏览器事件的知识。还有另一个浏览器事件我想介绍，那就是错误事件。
 
-
-
 VBScript 会遇到两种类型的错误——语法错误和运行时错误。*语法错误*是由于脚本中的拼写错误或未正确遵循 VBScript 语句语法而导致的。*运行时错误*则由多种不同原因引起。例如，如果您的 VBScript 试图操作已被用户关闭的浏览器窗口，就会发生运行时错误。
 
 > **注意** 有关 VBScript 语法错误和运行时错误的完整列表，请参阅附录 A，“VBScript 语言参考”。
@@ -3320,6 +3569,7 @@ VBScript 会遇到两种类型的错误——语法错误和运行时错误。*�
 VBScript 为您提供了两种处理错误的方式。
 
 -   让您的 VBScript 忽略错误
+
 -   在您的 VBScript 中添加逻辑来处理错误
 
 > **提示** 默认情况下，Internet Explorer 会向用户隐藏 VBScript 错误消息。这是合理的，因为大多数用户无法理解 VBScript 错误消息的含义。但是，作为 VBScript 程序员，在编写和测试自己的 VBScript 时，看到错误消息可能会对您有所帮助。要设置此选项，请打开 Internet Explorer 并单击“工具”、“Internet 选项”，选择“高级”选项卡，然后启用“显示每个脚本错误的通知”选项，如图 4.1 所示。
@@ -3339,6 +3589,7 @@ On Error Resume Next
 单击此处启用脚本错误的显示
 
 图 4.1
+
 配置 Internet Explorer 对脚本错误的处理。
 
 以下示例展示了一个包含 VBScript 错误的简单 VBScript。
@@ -3415,6 +3666,7 @@ document.writ("This is line 3" & "<P>")
 ![](img/26f0ae5097205615f9285e10dc13f45e_176_0.png)
 
 **图 4.3**
+
 使用 On Error Resume Next 语句绕过 VBScript 错误。
 
 当 On Error Resume Next 语句放置在过程外部、VBScript 的开头时，它的作用域是全局的，这意味着它会告诉 VBScript 忽略脚本中任何位置或脚本调用的过程中发生的错误。但是，当 On Error Resume Next 语句放置在过程内部时，它的作用域是局部的，当退出该过程时，其作用域也就结束了。例如，查看以下脚本。
@@ -3472,6 +3724,7 @@ End Function
 正如我已提到的，忽略错误并不总是一个好的选择。处理错误的一种更好的方法是向脚本中添加额外的代码来处理它们。为此，您需要使用 Err 对象的属性和方法。
 
 > **提示**
+
 如果您想在 VBScript 的某个点禁用 On Error Resume Next 语句的效果，那么在适当的位置添加以下语句。
 
 On Error Goto 0
@@ -3479,7 +3732,9 @@ On Error Goto 0
 Err 对象包含有关最近错误的信息。您可以通过引用 Err 对象的属性来获取此信息，这些属性如下所列。
 
 -   **Number**。检索或设置与错误关联的错误编号。
+
 -   **Description**。检索或设置与错误关联的消息。
+
 -   **Source**。检索或设置导致错误的对象名称。
 
 以下示例演示了如何通过查询 Err 对象的 number 属性的值来处理错误。
@@ -3530,6 +3785,7 @@ End if
 > **注意** `number` 属性是 `Err` 对象的默认属性。因此，以下语句是等效的。
 
 `Err`
+
 `Err.number`
 
 以下是这些语句的功能。首先，检查上一条命令（例如 `document.bogusmethod()`）的返回码。如果错误码大于零（例如发生了错误），则使用 `MsgBox()` 函数显示 `Err` 对象的 `number`、`description` 和 `source` 属性。然后执行 `Err` 对象的 `clear()` 方法。此方法清除当前存储在 `Err` 对象属性中的错误信息。
@@ -3537,8 +3793,6 @@ End if
 > **提示** 在此示例中，更好地使用 `Err` 对象的 `description` 属性可能是在显示其内容之前，将其分配给一个更友好的错误消息，从而使用户更容易理解。
 
 图 4.4 显示了 VBScript 显示的错误消息。图 4.5 显示了脚本完成执行时用户看到的输出。
-
-
 
 ##### 图 4.4
 
@@ -3553,7 +3807,9 @@ End if
 `Err` 对象的 `clear()` 方法在以下情况下会自动执行。
 
 - 当执行 `On Error Resume Next` 语句时
+
 - 当执行 `Exit Sub` 语句时
+
 - 当执行 `Exit Function` 语句时
 
 `Exit Sub` 和 `Exit Function` 语句在 VBScript 子程序和函数中使用，作为在到达子程序或函数末尾之前结束其执行的一种方式。
@@ -3690,7 +3946,7 @@ loopAgain = window.setTimeout("Msg_Blink()", 1000)
 msg = "Let me hypnotize you with this message................................. "
 ```
 
-此示例使用 `Left()` 函数和一个名为 `i` 的变量来控制在函数的每次迭代中显示消息的哪一部分。`Left()` 函数显示从字符串左侧开始到由 `i` 表示的字符位置的所有字符。函数第一次执行时，`i` 的值等于 1，因此只显示消息的第一个字符。消息本身长 60 个字符。当 `i` 大于 60 时（例如，`If i > Len(msg) then`），`i` 的值会重置为 1，整个过程重新开始。
+此示例使用 `Left()` 函数和一个名为 `i` 的变量来控制在函数的每次迭代中显消息的哪一部分。`Left()` 函数显示从字符串左侧开始到由 `i` 表示的字符位置的所有字符。函数第一次执行时，`i` 的值等于 1，因此只显示消息的第一个字符。消息本身长 60 个字符。当 `i` 大于 60 时（例如，`If i > Len(msg) then`），`i` 的值会重置为 1，整个过程重新开始。
 
 图 4.7 显示了在 Internet Explorer 中查看时滚动消息的显示效果。
 
@@ -3741,9 +3997,9 @@ End Function
 
 一旦执行，该函数通过使用 `setTimeout()` 方法创建循环来继续每秒执行自身。在每次执行 `Display_Clock()` 期间，通过调用 `Time()` 函数检索的当前系统时间会显示在表单的文本字段中，如下所示。
 
-```
-document.myForm.myClock.value = time()
-```
+
+
+`document.myForm.myClock.value = time()`
 
 图 4.8 显示了将此示例加载到 Internet Explorer 时数字时钟的外观。
 
@@ -3751,12 +4007,10 @@ document.myForm.myClock.value = time()
 
 你可以添加到网页的最佳视觉效果之一是鼠标悬停效果。鼠标悬停是一种图像、按钮或链接，当你使用鼠标将指针移到对象上时，其外观会发生变化。鼠标悬停效果最常用于创建菜单，以向访问者显示当前突出显示的菜单选项。
 
-
-
+```html
 <HTML>
 <HEAD>
 <TITLE>脚本 4.8 - 创建按钮悬停效果</TITLE>
-
 <SCRIPT LANGUAGE="VBScript">
 <!-- 隐藏 VBScript 语句开始
 Function myButton1_onMouseOver
@@ -3768,7 +4022,6 @@ End Function
 Function myButton1_onClick
   window.location="http://www.nbc.com"
 End Function
-
 Function myButton2_onMouseOver
   myForm.myButton2.VALUE="<< ABC >>"
 End Function
@@ -3778,7 +4031,6 @@ End Function
 Function myButton2_onClick
   window.location="http://www.abc.com"
 End Function
-
 Function myButton3_onMouseOver
   myForm.myButton3.VALUE="<< CBS >>"
 End Function
@@ -3788,7 +4040,6 @@ End Function
 Function myButton3_onClick
   window.location="http://www.cbs.com"
 End Function
-
 Function myButton4_onMouseOver
   myForm.myButton4.VALUE="<< Email>>"
 End Function
@@ -3798,11 +4049,9 @@ End Function
 Function myButton4_onClick
     window.alert("Please feel free to email us at: jlf04@yahoo.com")
 End Function
-
 ' 隐藏 VBScript 语句结束 -->
 </SCRIPT>
 </HEAD>
-
 <BODY>
     <B>网络新闻</B><P>
     <FORM NAME="myForm">
@@ -3813,6 +4062,7 @@ End Function
     </FORM>
 </BODY>
 </HTML>
+```
 
 要让悬停效果生效，你只需创建一些过程来响应特定对象的 MouseOver（鼠标悬停）和 MouseOut（鼠标移出）事件，并利用这些过程来触发对象外观的变化。例如，前面这个 HTML 页面包含一个名为 myForm 的表单，表单上有四个按钮。每个按钮都定义了一个提供按钮标签的默认值。此外，为每个按钮编写了一对函数。一个函数在用户将指针移到其关联按钮上时执行，另一个函数在指针移开按钮时执行。
 
@@ -3828,10 +4078,10 @@ End Function
 
 下一个示例展示了如何创建改变文本链接颜色的悬停效果。这个示例与前面的示例类似，因为它定义了四个链接以及每个链接的 MouseOver 和 MouseOut 事件对应的一对函数。这些函数不是更改分配给按钮标签的文本，而是更改分配给其关联链接的文本颜色。
 
+```html
 <HTML>
   <HEAD>
     <TITLE>脚本 4.9 - 链接悬停示例</TITLE>
-
     <SCRIPT LANGUAGE="VBScript">
     <!-- 隐藏 VBScript 语句开始
     Function amazon_onMouseOver
@@ -3840,21 +4090,18 @@ End Function
     Function amazon_onMouseOut
         amazon.style.color="blue"
     End Function
-
     Function bamm_onMouseOver
         bamm.style.color="red"
     End Function
     Function bamm_onMouseOut
         bamm.style.color="blue"
     End Function
-
     Function bn_onMouseOver
         bn.style.color="red"
     End Function
     Function bn_onMouseOut
         bn.style.color="blue"
     End Function
-
     Function borders_onMouseOver
         borders.style.color="red"
     End Function
@@ -3864,7 +4111,6 @@ End Function
     ' 隐藏 VBScript 语句结束 -->
     </SCRIPT>
   </HEAD>
-
   <BODY>
   <B>选择一个链接：</B><P>
   <A HREF="http://www.amazon.com" NAME="amazon"> amazon.com</A><P>
@@ -3873,6 +4119,7 @@ End Function
   <A HREF="http://www.borders.com" NAME="borders"> Borders</A>
   </BODY>
 </HTML>
+```
 
 图 4.10 展示了前面这个示例在 Internet Explorer 中加载时的外观。然而，书中展示的图片确实无法完全展现这个示例的效果，所以请务必花一分钟时间加载这个示例，亲自看看它是如何工作的。
 
@@ -3892,7 +4139,7 @@ End Function
 
 以下示例由四个 HTML 页面组成，向你展示如何使用 VBScript 控制你的框架。这里显示的第一个 HTML 页面定义了网页的框架将如何设置。如你所见，这里没有 VBScript，只有普通的 HTML。
 
-```
+```html
 <HTML>
   <HEAD>
     <TITLE>Script 4.10 - Frameset Page</TITLE>
@@ -3920,7 +4167,7 @@ parent.frame[1]
 
 本示例中的第二个脚本为框架提供导航控制。
 
-```
+```html
 <HTML>
   <HEAD>
     <TITLE>Script 4.11 - Frame controls page</TITLE>
@@ -3960,8 +4207,6 @@ parent.frame[1]
         myForm.myButton4.VALUE="Contact Us"
       End Function
 ```
-
-
 
 #### 已验证的 HTML 表单
 
@@ -4008,17 +4253,15 @@ button 对象用于定义一个按钮。单独的 HTML 按钮作用不大。然�
 
 在 HEAD 部分定义了一个 VBScript，其中包含一个名为 myButton_onClick() 的函数。如你所见，该函数被设置为按钮 onClick 事件的事件处理程序。其目的是在用户单击按钮时显示一个弹出消息。
 
-```
+```html
 <HTML>
   <HEAD>
     <TITLE>Script 4.14 - A form button example</TITLE>
     <SCRIPT LANGUAGE="VBScript">
     <!-- Start hiding VBScript statements
-
       Function myButton_onClick()
         window.alert("Hello and welcome to my web site!")
       End Function
-
     ' End hiding VBScript statements -->
     </SCRIPT>
   </HEAD>
@@ -4039,7 +4282,7 @@ button 对象用于定义一个按钮。单独的 HTML 按钮作用不大。然�
 
 复选框是非常简单的表单元素。复选框要么被选中，要么未被选中。下面的示例展示了一个定义了两个复选框和一个按钮的 HTML 页面。这两个复选框分别命名为 chkbx1 和 chkbx2。
 
-```
+```html
 <HTML>
   <HEAD>
     <TITLE>Script 4.15 - A form checkbox example</TITLE>
@@ -4058,10 +4301,8 @@ button 对象用于定义一个按钮。单独的 HTML 按钮作用不大。然�
         End If
         MsgBox(selection)
     End Function
-
     ' End hiding VBScript statements -->
     </SCRIPT>
-
   </HEAD>
   <BODY>
     <H3>Jerry Ford's Web Site!</H3><P>
@@ -4098,11 +4339,9 @@ If myForm.chkbx1.checked = "True" Then
 
 图 4.14 显示了访问者加载此示例并选择第一个复选框时产生的输出。
 
-
-
 ##### 单选按钮
 
-单选按钮与复选框非常相似，不同之处在于用户只能从一组单选按钮中选择一个。要将单选按钮分组，只需在定义时为它们分配相同的名称即可。在此示例中，定义了五个单选按钮，每个按钮都被分配了名为 myRadio 的名称（例如，NAME="myRadio"）。
+单选按钮与复选框非常相似，不同之处在于用户只能从一组单选按钮中选择一个。要将单选按�分组，只需在定义时为它们分配相同的名称即可。在此示例中，定义了五个单选按钮，每个按钮都被分配了名为 myRadio 的名称（例如，NAME="myRadio"）。
 
 ```html
 <HTML>
@@ -4114,7 +4353,6 @@ Option Explicit
 Dim i
 Dim radioSelected
 radioSelected = "No"
-
 Function myButton_onClick()
     For i = 0 To myForm.myRadio.length - 1
         If myForm.myRadio(i).Checked = "True" Then
@@ -4206,7 +4444,6 @@ End Sub
 <!-- Start hiding VBScript statements
 Option Explicit
 Dim loadText
-
 Sub myList_OnChange()
     Select Case myList.Selectedindex
         Case 0: myForm.myText.value="Welcome to my web site!"
@@ -4286,8 +4523,6 @@ Please type your password:
 </HTML>
 ```
 
-
-
 图4.18展示了当访问者输入密码“qwerty”时该示例的外观。如图所示，尽管访问者在密码字段中输入时文本已被掩盖，但VBScript仍然可以访问并显示其实际值。
 
 ![](img/26f0ae5097205615f9285e10dc13f45e_212_0.png)
@@ -4302,19 +4537,15 @@ Please type your password:
 <TITLE>Script 4.20- A form hidden field example</TITLE>
 <SCRIPT LANGUAGE="VBScript">
 <!-- Start hiding VBScript statements
-
 Function myButton1_onClick
 document.myForm.myField.value="I told you not to click the other button!"
 End Function
-
 Function myButton2_onClick
 window.alert(document.myForm.myField.value)
 End Function
-
 ' End hiding VBScript statements -->
 </SCRIPT>
 </HEAD>
-
 <BODY>
 <FORM NAME="myForm">
 <INPUT NAME="myField" TYPE="hidden" VALUE="Nothing to see here!">
@@ -4322,7 +4553,6 @@ End Function
 <INPUT NAME="myButton2" TYPE="button" VALUE="Show Hidden">
 </FORM>
 </BODY>
-
 </HTML>
 ```
 
@@ -4332,7 +4562,7 @@ End Function
 <INPUT NAME="myField" TYPE="hidden" VALUE="Nothing to see here!">
 ```
 
-此示例为用户提供了两个按钮。其中一个按钮指示用户点击它。另一个按钮则显示由隐藏对象存储的文本。如果用户点击第一个按钮，则使用以下语句来更改隐藏对象存储的文本。
+此示例为用户提供了两个按钮。其中一个按指示用户点击它。另一个按钮则显示由隐藏对象存储的文本。如果用户点击第一个按钮，则使用以下语句来更改隐藏对象存储的文本。
 
 ```javascript
 document.myForm.myField.value="I told you not to click the other button!"
@@ -4351,10 +4581,8 @@ document.myForm.myField.value="I told you not to click the other button!"
 
 ```html
 <HTML>
-
 <HEAD>
 <TITLE>Script 4.21 - A Creating a custom navigation tool with the select element</TITLE>
-
 <SCRIPT LANGUAGE="VBScript">
 <!-- Start hiding VBScript statements
 Function myList_onChange()
@@ -4362,12 +4590,9 @@ Function myList_onChange()
 End Function
 ' End hiding VBScript statements -->
 </SCRIPT>
-
 </HEAD>
-
 <BODY>
 <H3>Select an on-line bookstore</H3>
-
 <FORM NAME="myForm">
     <SELECT NAME="myList" size=1>
         <OPTION VALUE="http://www.amazon.com"> Amazon.com
@@ -4393,26 +4618,18 @@ reset按钮会自动将所有表单元素重置为其原始值。当用户意识
 
 ```html
 <HTML>
-
 <HEAD>
     <TITLE>Script 4.22 - A form reset example</TITLE>
-
     <SCRIPT LANGUAGE="VBScript">
     <!-- Start hiding VBScript statements
-
     Function myReset_onClick()
         MsgBox("The form has been reset. Please try again!")
     End Function
-
     ' End hiding VBScript statements -->
     </SCRIPT>
-
 </HEAD>
-
 <BODY>
-
     <FORM NAME="myForm">
-
         <H3>What color would you like to paint your car?</H3>
         Red <INPUT NAME="myRadio" TYPE="radio" VALUE="Red"><BR>
         Blue <INPUT NAME="myRadio" TYPE="radio" VALUE="Blue"><BR>
@@ -4426,11 +4643,9 @@ reset按钮会自动将所有表单元素重置为其原始值。当用户意识
 ```
 
 ![](img/26f0ae5097205615f9285e10dc13f45e_216_0.png)
-
 ![](img/26f0ae5097205615f9285e10dc13f45e_217_0.png)
 
 ###### 图 4.21
-
 向HTML表单添加重置按钮提供了一种快速将表单重置回默认值的方法。
 
 ##### 一个注册表单
@@ -4440,8 +4655,7 @@ reset按钮会自动将所有表单元素重置为其原始值。当用户意识
 该表单使用以下HTML语句定义。
 
 ```html
-<FORM NAME="myForm" ACTION="mailto:jlf04@yahoo.com"
-ENCTYPE="text/plain">
+<FORM NAME="myForm" ACTION="mailto:jlf04@yahoo.com" ENCTYPE="text/plain">
 ```
 
 此语句告诉浏览器，当访问者点击提交按钮时，将表单内容以纯文本形式通过电子邮件发送到指定的电子邮件地址。表单本身由一组文本字段、单选按钮、一个SELECT下拉列表和三个按钮（其中两个是重置和提交按钮）组成，如图4.22所示。
@@ -4450,14 +4664,11 @@ ENCTYPE="text/plain">
 <HTML>
   <HEAD>
     <TITLE>Script 4.23 - A form validation example</TITLE>
-
     <SCRIPT LANGUAGE="VBScript">
     <!-- Start hiding VBScript statements
-
       Option Explicit
       Dim radioSelected
       Dim i
-
       Function process_Order()
         If Len(document.myForm.firstName.value) < 1 Then
           window.alert("You must provide your first name.")
@@ -4483,7 +4694,6 @@ ENCTYPE="text/plain">
         End If
         window.alert("Your registration form looks good. Click on Submit!")
       End Function
-
     ' End hiding VBScript statements -->
     </SCRIPT>
   </HEAD>
@@ -4492,7 +4702,6 @@ ENCTYPE="text/plain">
         <H3>Registration Page</H3>
     </CENTER>
     <B>Please fill out the following information to register at our web site!</B>
-
     <FORM NAME="myForm" ACTION="mailto:jlf04@yahoo.com" ENCTYPE="text/plain">
         <B>What is your first name:</B> <INPUT NAME="firstName" TYPE="text" SIZE="10" MAXLENGTH="30"><P>
         <B>What is your last name: </B> <INPUT NAME="lastName" TYPE="text" SIZE="10" MAXLENGTH="30"><P>
@@ -4501,7 +4710,6 @@ ENCTYPE="text/plain">
         Weekly Update Newsletter: <INPUT NAME="myRadio" TYPE="radio" VALUE="weekly"><BR>
         Monthly Recap Newsletter: <INPUT NAME="myRadio" TYPE="radio" VALUE="monthly"><BR>
         No Newsletter: <INPUT NAME="myRadio" TYPE="radio" VALUE="none"><BR>
-
         <P><B>What do you think of our web site?</B>
         <SELECT NAME="myList">
             <OPTION SELECTED VALUE="high">I like it a lot
@@ -4512,8 +4720,6 @@ ENCTYPE="text/plain">
 </BODY>
 </HTML>
 ```
-
-
 
 ##### 为您的网站构建注册表单
 
@@ -4576,6 +4782,7 @@ Cookie 的过期日期必须按此处所示的格式设置：
 Monday, 02-Feb-2002 12:45:00 GMT
 
 以下语句展示了当访问者返回时如何检索此 cookie。
+
 ```
 myCookie = document.cookie
 ```
@@ -4584,13 +4791,12 @@ myCookie = document.cookie
 
 让我们看一个快速示例，展示如何烘焙一个完整的 VBScript cookie。在此示例中，我们将创建一个脚本，提示访问者输入他们的名字。然后该脚本构建一个包含访问者名称的 cookie 并将其保存在他们的计算机上。
 
-```
+```html
 <HTML>
 <HEAD>
 <TITLE>脚本 4.24 - 烘焙一个 VBScript cookie</TITLE>
 <SCRIPT LANGUAGE="VBScript">
 <!-- 开始隐藏 VBScript 语句
-
 Function Bake_The_Cookie(name)
     exp_Date = Weekdayname(DatePart("w",Date())) & ", " _
     & Date_Format(DatePart("d",Date())) & "-" _
@@ -4601,28 +4807,22 @@ Function Bake_The_Cookie(name)
     document.cookie = myCookie
     MsgBox(myCookie)
 End Function
-
 Function Date_Format(rawDate)
     If Len(rawDate) = 1 Then rawDate = "0" & rawDate
     date_Format = rawDate
 End Function
-
 ' 结束隐藏 VBScript 语句 -->
 </SCRIPT>
 </HEAD>
 <BODY>
-
   <H3>Cookie 信息收集器</H3>
-
   <FORM NAME="myForm">
     <B>您叫什么名字？ </B>
     <INPUT TYPE="text" NAME="visitorName">
     <INPUT NAME="myButton" TYPE="button" VALUE="保存 Cookie"
       onClick="Bake_The_Cookie(document.myForm.visitorName.value)">
   </FORM>
-
 </BODY>
-
 </HTML>
 ```
 
@@ -4640,7 +4840,7 @@ exp_Date = Weekdayname(DatePart("w",Date())) & ", "
                   & " 00:00:00 GMT"
 ```
 
-过期日期必须按照之前讨论的特定格式设置。为了完成此任务，使用了 `weekdayname()` 函数。此函数检索一个包含指定星期几的字符串。`weekdayname()` 函数接收一个日期参数，该日期本身是使用 `DatePart()` 函数检索的。此函数检索指定日期的指定部分。在此情况下，`DatePart("w", Date())` 中的 `w` 告诉 `DatePart()` 函数检索当前日期的星期几。
+过期日期必须按照之前讨论的特定格式设置。为了完成此任务，使用了 `weekdayname()` 函数。此函数检索一个包含指定星期几的字符串。`weekdayname()` 函数接收一个日期参数，该日期本身是使用 `DatePart()` 函数检索的。此函数检索指日期的指定部分。在此情况下，`DatePart("w", Date())` 中的 `w` 告诉 `DatePart()` 函数检索当前日期的星期几。
 
 接下来，该函数再次调用 `DatePart()` 函数来检索一周中的天数。然后将该值传递给 `Date_Format()` 函数，在必要时用零填充。接着调用 `Monthname()` 函数。它基于以下表达式的值检索一个表示月份值的字符串。
 
@@ -4660,15 +4860,13 @@ document.cookie = myCookie
 
 然后该函数使用 `MsgBox()` 函数显示完整的 cookie，以便您可以看到最终产品，如图 4.23 所示。
 
-
-
 ###### 检索 Cookie
 
 好的，现在你知道了如何创建和存储 VBScript cookie，让我们来看一个示例，展示当访问者稍后返回你的网页时，如何检索该 cookie。
 
 正如本示例所示，检索 cookie 比最初创建它要容易得多。
 
-```
+```html
 <HTML>
     <HEAD>
         <TITLE>Script 4.25 - Reading your VBScript cookie</TITLE>
@@ -4676,14 +4874,12 @@ document.cookie = myCookie
     <BODY>
         <SCRIPT LANGUAGE="VBScript">
             <!-- Start hiding VBScript statements
-
             If document.cookie <> "" Then
                 MsgBox(document.cookie)
                 MsgBox(Mid(document.cookie,6))
             Else
                 window.alert("Your cookie was not found!")
             End If
-
             ' End hiding VBScript statements -->
         </SCRIPT>
     </BODY>
@@ -4709,28 +4905,24 @@ If document.cookie <> "" Then
 
 如果访问者选择提供姓名，则将其烘焙成一个 cookie，并用于创建个性化的问候语。如果访问者选择不提供姓名，则显示通用问候语；但是，当访问者下次返回你的网页时，他将再次被提示确认自己的身份。
 
-```
+```html
 <HTML>
     <HEAD>
         <TITLE>Script 4.26 - Adding a VBScript cookie to your HTML page</TITLE>
     </HEAD>
-
     <SCRIPT LANGUAGE="VBScript">
     <!-- Start hiding VBScript statements
-
         'Define a function to bake the VBScript cookie
         Function Bake_The_Cookie(name)
             exp_Date = Weekdayname(DatePart("w",Date())) & ", " & Date_Format(DatePart("d",Date())) & "-" & Monthname(DatePart("m",Date(),1) + 1) & "-" & DatePart("yyyy",Date()) & " 00:00:00 GMT"
             myCookie = "name=" & name & ";expires=" & exp_Date
             document.cookie = myCookie
         End Function
-
         'Define a function to format the day of the week as 2 characters when necessary
         Function Date_Format(rawDate)
             If Len(rawDate) = 1 Then rawDate = "0" & rawDate
             date_Format = rawDate
         End Function
-
         'Define a function to check for the cookie and use it in the welcome message if found
         Function Cookie_Check()
             visitor_name = ""
@@ -4749,7 +4941,6 @@ If document.cookie <> "" Then
                 End If
             End If
         End Function
-
         ' End hiding VBScript statements -->
     </SCRIPT>
     </HEAD>
@@ -4802,8 +4993,6 @@ Windows NT、2000 和 XP 系列操作系统还支持一种称为 *Windows Shell 
 - **脚本引擎**。脚本解释器，旨在处理和执行使用特定脚本语言（如 VBScript）编写的编程语句。
 - **对象模型**。提供对对象集合的访问，这些对象公开了 Windows 操作系统的功能，并允许 WSH 脚本以编程方式与 Windows 资源进行交互和操作。
 
-
-
 WSH 脚本可以使用任何能够将数据保存为纯文本文件的编辑器来创建。WSH 脚本由属于一种或多种脚本语言的程序语句组成。完全由 VBScript 编写的 WSH 脚本将被保存为扩展名为 `.vbs` 的纯文本文件。同样，完全由 JScript 编写的 WSH 脚本将被保存为扩展名为 `.js` 的文件。
 
 由不同脚本语言编写的脚本组成的 WSH 脚本被称为 Windows 脚本文件，其文件扩展名为 `.wsf`。每种脚本语言都有其自身的优点和缺点。通过创建 Windows 脚本文件，你可以开发出能够利用不同脚本语言最佳特性的脚本。
@@ -4816,9 +5005,10 @@ WSH 存在的原因是为你提供一种自动化 Windows 任务的方法。它�
 
 WSH 也非常适合自动化复杂任务，例如注册表修改。人为会犯错，而在处理注册表时出错可能对你的计算机是致命的。另一方面，一个编写良好的脚本不会输错注册表项或意外删除错误的注册表值。最重要的是，你可以与他人分享你的脚本，让他们能够安全地对你的计算机进行更改，否则你永远不会信任他们来执行这些操作。
 
-也许你有一些任务会消耗大量计算机资源，并在执行时导致计算机运行速度过慢。通过利用 Windows 计划任务服务的功能，你可以设置 WSH 脚本来执行任务，然后在晚上你离开计算机时运行它们。例如，假设你编写了一个脚本，旨在在每个月末处理大量文件。如果你有数千个文件要处理，脚本运行可能需要数小时。如果没有脚本，你可能需要整个周末来手动处理这些文件。脚本可能会将这个时间缩短到仅仅一小时。通过将脚本的执行安排在晚上你不使用计算机时运行，它在运行时不会对你造成影响。这使你即使在不工作时也能提高生产力。
+也许你有一些任务会消耗大量计算机资源，并在执行时导计算机运行速度过慢。通过利用 Windows 计划任务服务的功能，你可以设置 WSH 脚本来执行任务，然后在晚上你离开计算机时运行它们。例如，假设你编写了一个脚本，旨在在每个月末处理大量文件。如果你有数千个文件要处理，脚本运行可能需要数小时。如果没有脚本，你可能需要整个周末来手动处理这些文件。脚本可能会将这个时间缩短到仅仅一小时。通过将脚本的执行安排在晚上你不使用计算机时运行，它在运行时不会对你造成影响。这使你即使在不工作时也能提高生产力。
 
 还有许多其他任务示例，你可能想要使用 VBScript 和 WSH 来自动化。这些任务包括：
+
 - 创建桌面快捷方式
 - 管理文件和文件夹
 - 配置 Windows 开始菜单
@@ -4829,7 +5019,7 @@ WSH 也非常适合自动化复杂任务，例如注册表修改。人为会犯�
 - 创建报告
 - 创建网络驱动器映射
 - 安排非工作时间任务
-- 与其他 Windows 应用程序交互
+- 与其他 Windows 应用程交互
 - 管理 Windows 事件日志
 
 ##### WSH 操作系统兼容性
@@ -4863,6 +5053,7 @@ Microsoft 将 WSH 设计为模块化方式，功能分布在多个组件中，�
 ![](img/26f0ae5097205615f9285e10dc13f45e_239_0.png)
 
 如你所见，WSH 架构由以下组件组成。
+
 - **脚本引擎。** WSH 脚本引擎（如 VBScript）将脚本编程语句解释为机器可读的代码，以便计算机可以执行该脚本。
 - **CScript.exe。** 一个脚本执行主机，为不实现图形弹出对话框的脚本提供支持。
 - **WScript.exe。** 一个脚本执行主机，为通过图形弹出对话框与最终用户交互的脚本提供支持。
@@ -4892,8 +5083,6 @@ Microsoft 构建 WSH 的一个伟大之处在于它允许你引用其他对象�
 
 正如我已经指出的，WSH 支持两个独立的执行主机：CScript 和 WScript。CScript 旨在支持执行产生基于字符的输出或根本不产生输出的脚本，这使得它
 
-
-
 ##### 选择脚本引擎
 
 与 WSH 执行宿主一样，选择脚本引擎归根结底是个人偏好问题。换句话说，如果你熟悉 VBScript，那么就用 VBScript 编写脚本，并将其保存为纯文本文件，文件扩展名为 `.vbs`。另一方面，如果你是一名长期的 JavaScript 程序员，那么你可能更倾向于使用 JScript。
@@ -4906,11 +5095,13 @@ Microsoft 构建 WSH 的一个伟大之处在于它允许你引用其他对象�
 
 正如你可能预料的那样，WSH 对 VBScript 和 JScript 的支持是有限的，因为当由 WSH 执行时，这两种脚本语言都无法执行与浏览器相关的任务，例如显示表单或图形效果。毕竟，这些功能是特定于浏览器环境的。类似地，嵌入在 HTML 页面中的 VBScript 和 JScript 无法访问本地计算机的文件系统或操作其资源。
 
+
+
 > **注意** 在 HTML 页面中执行的脚本能够影响本地计算机的一个例外情况是使用 Cookie。Cookie 技术确实允许在本地计算机上存储少量的文本数据。这些文本数据之后可以由创建它的网站检索。
 
 > **注意** 如果你选择创建 Windows 脚本文件，这允许你使用多种脚本语言开发自动化任务，Windows 脚本文件中的每个脚本将被提交到相应的脚本引擎。我们将在稍后的部分更详细地介绍如何创建 Windows 脚本文件。
 
-##### 使用 WSH 的执行宿主
+## 使用 WSH 的执行宿主
 
 CScript 和 WScript 执行宿主都可用于执行任何 WSH 脚本。CScript 设计用于处理作为后台任务运行或只需要基于字符界面的脚本。而 WScript 设计用于执行通过显示图形弹出对话框与用户交互的脚本。
 
@@ -4920,7 +5111,7 @@ CScript 和 WScript 执行宿主都可用于执行任何 WSH 脚本。CScript �
 
 你不仅可以更改 CScript 和 WScript 执行宿主执行脚本的默认方式，还可以通过一些简单的命令行参数即时覆盖它们的执行默认值，我稍后会介绍。最后，你还可以创建 `.wsh` 文件，为特定脚本指定自定义执行设置。
 
-##### CScript 和 WScript 命令行配置
+### CScript 和 WScript 命令行配置
 
 CScript 和 WScript 执行宿主的命令行执行设置是相同的。这两个执行宿主的语法如下所示。
 
@@ -4933,7 +5124,7 @@ wscript scriptname [//options] [arguments]
 
 表 5.2 概述了在配置 CScript 和 WScript 执行宿主时可以使用的 `//options` 参数列表。
 
-###### 表 5.2 CSCRIPT 和 WSCRIPT 命令行选项
+#### 表 5.2 CSCRIPT 和 WSCRIPT 命令行选项
 
 | 选项 | 用途 |
 |---|---|
@@ -4943,14 +5134,14 @@ wscript scriptname [//options] [arguments]
 | //e:jscript \| //e:vbscript | 指定用于执行脚本的脚本引擎。 |
 | //h:wscript \| //h:cscript | 指定用于执行脚本的 WSH 执行宿主。 |
 | //i | 告诉执行宿主在交互模式下运行脚本，允许显示错误和消息输出。 |
-| //job:id | 指定要执行的 Windows 脚本文件中的特定任务。 |
+| //job:id | 指要执行的 Windows 脚本文件中的特定任务。 |
 | //logo | 导致在脚本执行开始时显示 CScript 或 WScript 徽标。 |
 | //nologo | 阻止在脚本执行开始时显示 CScript 或 WScript 徽标。 |
 | //s | 将指定的选项保存为新的默认执行设置。 |
 | //t:nn | 设置超时值，用于限制脚本可以执行的时间。默认情况下，脚本执行没有时间限制。 |
 | //x | 禁用脚本调试。 |
 
-##### 配置 CScript 和 WScript 命令行执行
+### 配置 CScript 和 WScript 命令行执行
 
 既然你已经了解了 WSH 执行宿主的配置选项，让我们通过几个示例来应用它们。首先，让我们看看如何从 Windows 命令提示符使用 CScript 执行宿主运行名为 `Script 5.1.vbs` 的脚本。
 
@@ -5009,9 +5200,8 @@ cscript //nologo //s
 使用以下过程从 Windows 桌面修改 WScript 执行宿主的默认执行设置。
 
 1.  单击“开始”、“运行”，然后键入 `WScript` 并单击“确定”。出现 Windows Script Host Settings 对话框，如图 5.2 所示。
+
 2.  默认情况下没有执行时间限制。你可以通过选择“在指定的秒数后停止脚本”，然后在秒数字段中键入时间限制，从而对 WScript 执行宿主处理的所有脚本应用时间限制。
-
-
 
 ##### 配置执行主机处理单个脚本的方式
 
@@ -5022,9 +5212,13 @@ cscript //nologo //s
 你可以使用以下过程为任何脚本创建 Windows 脚本宿主文件。
 
 1.  右键单击要为其创建 Windows 脚本宿主文件的脚本，然后选择“属性”。将出现该脚本的“属性”对话框。
+
 2.  选择“脚本”属性表，如图 5.3 所示。
+
 3.  你可以通过选择“在指定秒数后停止脚本”选项并在“秒数”字段中输入一个数字来为脚本创建时间限制。
+
 4.  要在从 Windows 命令提示符执行脚本时禁用显示标志信息，请清除“在命令控制台执行脚本时显示标志”选项。
+
 5.  单击“确定”。
 
 你会注意到，在脚本所在的同一位置创建了一个与脚本同名但具有 .wsh 文件扩展名的新文件。
@@ -5064,6 +5258,7 @@ WshShell 和 WshNetwork 对象是使用 WSH 的 `createObject()` 方法创建的
 表 5.4 提供了 WSH 核心对象模型中每个对象所提供的 Windows 功能的描述。你很快会看到，核心对象模型中的对象提供了大量的属性和方法。为了便于管理，此表还标识了哪些属性和方法与哪个 WSH 对象相关联。然后我将分别列出所有属性和方法。
 
 图 5.4
+
 WSH 对象模型为你的 VBScript 提供了可用于与 Windows 操作系统及其资源交互和操作的属性和方法的访问。
 
 ###### 表 5.3 使用非公开的 WSH 对象
@@ -5082,15 +5277,13 @@ WSH 对象模型为你的 VBScript 提供了可用于与 Windows 操作系统及
 | 对象名称 | 描述 |
 |---|---|
 | WScript | 这是 WSH 根对象。它提供了对 WSH 对象模型中其余对象的访问。<br>属性：Application、Arguments、FullName、Name、Path、ScriptFullName、ScriptName、StdErr、StdIn、StdOut 和 Version。<br>方法：ConnectObject、CreateObject、DisconnectObject、Echo、GetObject、Quit 和 Sleep。 |
-| WshArguments | 此对象提供对命令行参数的访问。<br>属性：Count、Item 和 Length。<br>方法：此对象不支持任何方法。 |
+| WshArguments | 此对象提供对命行参数的访问。<br>属性：Count、Item 和 Length。<br>方法：此对象不支持任何方法。 |
 | WshEnvironment | 此对象为脚本提供对 Windows 环境变量的访问。<br>属性：Count、Item 和 Length。<br>方法：Remove。 |
 | WshNetwork | 此对象为脚本提供对各种网络资源的访问，包括共享的网络驱动器和打印机。<br>属性：ComputerName、UserDomain 和 UserName。<br>方法：AddPrinterConnection、EnumNetworkDrives、EnumPrinterConnection、MapNetworkDrive、RemoveNetworkDrive、RemovePrinterConnection 和 SetDefaultPrinter。 |
 | WshShell | 此对象提供对 Windows 注册表和环境变量的访问。<br>属性：Environment 和 SpecialFolders。<br>方法：AppActivate、CreateShortcut、ExpandEnvironmentStrings、LogEvent、Popup、RegDelete、RegRead、RegWrite、Run 和 SendKeys。 |
 | WshShortcut | 此对象提供创建 Windows 快捷方式的功能。<br>属性：Arguments、Description、FullName、Hotkey、IconLocation、TargetPath、WindowStyle 和 WorkingDirectory。<br>方法：Save。 |
 | WshSpecialFolders | 此对象提供操作 Windows 文件夹和更改 Windows 开始菜单的功能。<br>属性：Count、Item 和 Length。<br>方法：此对象不支持任何方法。 |
 | WshUrlShortcut | 此对象提供为 URL 创建快捷方式的功能。<br>属性：FullName 和 TargetPath。<br>方法：Save。 |
-
-
 
 ##### 检查 WSH 核心对象属性
 
@@ -5099,33 +5292,61 @@ WSH 对象模型为你的 VBScript 提供了可用于与 Windows 操作系统及
 > **提示** 请记住，可以使用表 5.4 来确定哪些属性与哪个对象相关联。
 
 - **Application**。获取 WScript 对象的 IDispatch 接口。
+
 - **Arguments**。设置指向 WshArguments 集合的指针引用。
+
 - **AtEndOfLine**。返回 true 或 false，取决于是否已到达流中的行尾标记。
+
 - **AtEndOfStream**。返回 true 或 false，取决于是否已到达输入流的末尾。
+
 - **Column**。返回输入流中的当前列位置。
+
 - **ComputerName**。检索计算机的名称。
+
 - **Count**。检索枚举器值。
+
 - **Description**。检索指定快捷方式的描述。
+
 - **Environment**。设置指向 WshEnvironment 的指针引用。
-- **FullName**。检索快捷方式或可执行程序的路径。
+
+- **FullName**。检索快捷方式或可执程序的路径。
+
 - **HotKey**。检索与指定快捷方式关联的快捷键。
+
 - **IconLocation**。检索图标的位置。
+
 - **Item**。从集合中检索指定的项。
+
 - **Length**。检索枚举项目的数量。
+
 - **Line**。返回输入流中当前行的行号。
+
 - **Name**。返回表示 WScript 对象名称的字符串。
-- **Path**。返回 CScript 或 WScript 执行宿主所在的文件夹位置。
+
+- **Path**。返回 CScript 或 WScript 执行宿主所在的文件夹位。
+
 - **ScriptFullName**。返回正在执行的脚本的路径。
+
 - **ScriptName**。返回正在执行的脚本的名称。
+
 - **SpecialFolders**。提供对 Windows 开始菜单和桌面文件夹的访问。
+
 - **StdErr**。使脚本能够写入错误输出流。
+
 - **StdIn**。使脚本能够读取输入流。
+
 - **StdOut**。使脚本能够写入输出流。
+
 - **TargetPath**。检索快捷方式指向其关联对象的路径。
+
 - **UserDomain**。检索域名。
+
 - **UserName**。检索当前登录用户的名称。
+
 - **Version**。检索 WSH 版本号。
+
 - **WindowStyle**。检索快捷方式的窗口样式。
+
 - **WorkingDirectory**。返回与指定快捷方式关联的工作目录。
 
 ##### 检查 WSH 核心对象方法
@@ -5133,41 +5354,77 @@ WSH 对象模型为你的 VBScript 提供了可用于与 Windows 操作系统及
 WSH 核心对象模型中的对象也提供了数十个方法。您可以在脚本中执行这些方法来操作这些对象及其数据。这使您的脚本能够直接控制 Windows 操作系统及其资源。以下是 WSH 核心对象模型中的对象支持的方法列表。
 
 - **AddPrinterConnection**。创建打印机映射。
+
 - **AddWindowsPrinterConnection**。创建新的打印机连接。
+
 - **AppActivate**。激活目标应用程序窗口。
+
 - **Close**。终止或结束打开的数据流。
+
 - **ConnectObject**。建立到对象的连接。
+
 - **CreateObject**。创建对象的新实例。
+
 - **CreateShortcut**。创建 Windows 快捷方式。
+
 - **DisconnectObject**。终止与对象的连接。
+
 - **Echo**。显示文本消息。
+
 - **EnumNetworkDrives**。允许访问网络驱动器。
+
 - **EnumPrinterConnections**。允许访问网络打印机。
+
 - **ExpandEnvironmentStrings**。检索表示 Process 环境变量内容的字符串。
+
 - **GetObject**。检索自动化对象。
+
 - **GetResource**。检索由 `<resource>` 标签指定的资源值。
+
 - **LogEvent**。在 Windows 事件日志中写入消息。
+
 - **MapNetworkDrive**。创建网络驱动器映射。
+
 - **Popup**。在弹出对话框中显示文本消息。
+
 - **Quit**。终止或结束脚本。
+
 - **Read**。从输入流中检索一串字符。
+
 - **ReadAll**。检索由输入流中的字符组成的字符串。
+
 - **ReadLine**。从输入流中检索包含整行数据的字符串。
+
 - **RegDelete**。删除注册表项或值。
+
 - **RegRead**。检索注册表项或值。
+
 - **RegWrite**。创建注册表项或值。
+
 - **Remove**。删除指定的环境变量。
+
 - **RemoveNetworkDrive**。删除与指定网络驱动器的连接。
+
 - **RemovePrinterConnection**。删除与指定网络打印机的连接。
+
 - **Run**。启动新进程。
+
 - **Save**。保存快捷方式。
+
 - **SendKeys**。模拟按键操作，并将输入数据发送到指定的窗口。
+
 - **SetDefaultPrinter**。设置默认的 Windows 打印机。
+
 - **Skip**。在从输入流读取时跳过 x 个字符。
+
 - **SkipLine**。在从输入流读取时跳过整行。
+
 - **Sleep**。暂停脚本执行 x 秒。
+
 - **Write**。将字符串放入输出流。
+
 - **WriteBlankLines**。在输出流中放置空行。
+
 - **WriteLine**。将字符串放入输出流。
 
 ##### 休息一下
@@ -5181,11 +5438,11 @@ WSH 核心对象模型中的对象也提供了数十个方法。您可以在脚�
 通过将这些对象的属性和方法整合到您的 VBScript 中，您可以执行各种巧妙的技巧，例如读取和写入日志文件以及创建报告。您还可以自动化这些日志和报告的管理和维护。表 5.5 列出了每个 VBScript 运行时对象，并指明了其关联的属性和方法。
 
 | 对象 | 描述 |
-| :--- | :--- |
+|:---|:---|
 | Dictionary | 存储数据键、项对。<br>属性：CompareMode、Count、Item、Key。<br>方法：Add、Exists、Items、Keys、Remove、RemoveAll。 |
 | Drive | 提供对磁盘驱动器属性的访问。<br>属性：AvailableSpace、DriveLetter、DriveType、FileSystem、FreeSpace、IsReady、Path、RootFolder、SerialNumber、ShareName、TotalSize、VolumeName。<br>方法：此对象不支持任何方法。 |
 | Drives Collection | 提供对有关驱动器在计算机上位置的各种信息的访问。<br>属性：Count、Item。<br>方法：此对象不支持任何方法。 |
-| File | 提供对文件属性的访问。<br>属性：Attributes、DateCreated、DateLastAccessed、DateLastModified、Drive、Name、ParentFolder、Path、ShortName、ShortPath、Size、Type。<br>方法：Copy、Delete、Move、OpenAsTextStream。 |
+| File | 提供对文件属的访问。<br>属性：Attributes、DateCreated、DateLastAccessed、DateLastModified、Drive、Name、ParentFolder、Path、ShortName、ShortPath、Size、Type。<br>方法：Copy、Delete、Move、OpenAsTextStream。 |
 | Files Collection | 提供对存储在文件夹中的所有文件的访问。<br>属性：Count、Item。<br>方法：此对象不支持任何方法。 |
 | FileSystemObject | 提供对 Windows 文件系统的访问。<br>属性：Drives。<br>方法：BuildPath、CopyFile、CopyFolder、CreateFolder、CreateTextFile、DeleteFile、DeleteFolder、DriveExists、FileExists、FolderExists、GetAbsolutePathName、GetBaseName、GetDrive、GetDriveName、GetExtensionName、GetFile、GetFileName、GetFolder、GetParentFolderName、GetSpecialFolder、GetTempName、MoveFile、MoveFolder、OpenTextFile。 |
 | Folder | 提供对文件夹属性的访问。<br>属性：Attributes、DateCreated、DateLastAccessed、DateLastModified、Drive、Files、IsRootFolder、Name、ParentFolder、Path、ShortName、ShortPath、Size、SubFolders、Type。<br>方法：Copy、Delete、Move、OpenAsTextStream。 |
@@ -5196,8 +5453,6 @@ WSH 核心对象模型中的对象也提供了数十个方法。您可以在脚�
 与 WSH 核心对象模型中的对象类似，VBScript 运行时对象提供了大量的属性。您可以使用这些属性来查看或更改众多文件系统属性。此处列出了这些属性。
 
 > **提示** 请记住，可以使用表 5.5 来确定哪些属性与哪个 VBScript 运行时对象相关联。
-
-
 
 ##### VBScript 运行时属性
 
@@ -5234,22 +5489,39 @@ WSH 核心对象模型中的对象也提供了数十个方法。您可以在脚�
 **FileSystem**。返回驱动器上实现的文件系统类型。
 
 -   **IsReady**。返回 `true` 或 `false` 值，具体取决于驱动器是否可用。
+
 -   **IsRootFolder**。返回 `true` 或 `false` 值，标识文件夹是否为根文件夹。
+
 -   **Item**。根据指定的 Dictionary 对象键获取或设置项目。
+
 -   **Key**。设置 Dictionary 对象的键。
+
 -   **Line**。返回 TextStream 文件中的当前行号。
+
 -   **Name**。获取或设置文件或文件夹的名称。
+
 -   **ParentFolder**。获取文件或文件夹的父文件夹对象。
+
 -   **Path**。获取与文件、文件夹或驱动器关联的路径。
+
 -   **RootFolder**。获取与指定驱动器上的根文件夹关联的 Folder 对象。
+
 -   **SerialNumber**。获取磁盘卷的序列号。
+
 -   **ShareName**。获取网络驱动器的共享名称。
+
 -   **ShortName**。获取文件或文件夹的 8.3 字符短名称。
+
 -   **ShortPath**。获取与文件或文件夹的 8.3 字符名称关联的短路径。
+
 -   **Size**。获取文件或文件夹的字节大小。
+
 -   **SubFolders**。建立一个 Folders 集合，包含指定文件夹内的所有文件夹。
+
 -   **TotalSize**。返回驱动器上剩余的总字节数。
+
 -   **Type**。获取有关文件或文件夹类型的信息。
+
 -   **VolumeName**。获取或设置驱动器的卷标。
 
 ##### VBScript 运行时方法
@@ -5261,48 +5533,91 @@ WSH 核心对象模型中的对象也提供了数十个方法。您可以在脚�
 属于 VBScript 运行时对象的方法在此列出。
 
 -   **Add (Dictionary)**。向 Dictionary 对象添加一个键和项目对。
+
 -   **Add (Folders)**。向集合中添加一个 Folder。
+
 -   **BuildPath**。将名称附加到路径。
+
 -   **Close**。关闭打开的 TextStream 文件。
+
 -   **Copy**。复制文件或文件夹。
+
 -   **CopyFile**。复制一个或多个文件。
+
 -   **CopyFolder**。递归复制文件夹。
+
 -   **CreateFolder**。创建新文件夹。
+
 -   **CreateTextFile**。创建一个文件和一个 TextStream 对象，可用于读取和写入该文件。
+
 -   **Delete**。删除文件或文件夹。
+
 -   **DeleteFile**。删除文件。
+
 -   **DeleteFolder**。删除文件夹的内容。
+
 -   **DriveExists**。根据驱动器是否存在返回 `true` 或 `false`。
+
 -   **Exists**。根据键是否存在于 Dictionary 对象中返回 `true` 或 `false`。
+
 -   **FileExists**。根据是否能找到文件返回 `true` 或 `false`。
+
 -   **FolderExists**。根据是否能找到文件夹返回 `true` 或 `false`。
+
 -   **GetAbsolutePathName**。返回完整的路径名。
+
 -   **GetBaseName**。获取不含文件扩展名的文件名。
+
 -   **GetDrive**。返回与指定路径中的驱动器关联的 Drive 对象。
+
 -   **GetDriveName**。获取驱动器的名称。
+
 -   **GetExtensionName**。获取文件的扩展名。
+
 -   **GetFile**。获取 File 对象。
+
 -   **GetFileName**。获取指定路径中的最后一个文件名或文件夹。
+
 -   **GetFileVersion**。获取文件的版本号。
+
 -   **GetFolder**。获取与指定路径中的文件夹关联的 Folder 对象。
+
 -   **GetParentFolderName**。获取父文件夹的名称。
+
 -   **GetSpecialFolder**。获取特殊文件夹的名称。
+
 -   **GetTempName**。获取临时文件或文件夹的名称。
+
 -   **Items**。返回一个数组，其中包含 Dictionary 对象中的项目。
+
 -   **Keys**。返回一个数组，其中包含 Dictionary 对象中的键。
+
 -   **Move**。移动文件或文件夹。
+
 -   **MoveFile**。移动一个或多个文件。
+
 -   **MoveFolder**。移动一个或多个文件夹。
+
 -   **OpenAsTextStream**。打开文件并返回可用于引用该文件的 TextStream 对象。
+
 -   **OpenTextFile**。打开文件并返回可用于引用该文件的 TextStream 对象。
+
 -   **Read**。返回一个字符串，包含从 TextStream 文件中读取的 x 个字符。
+
 -   **ReadAll**。读取整个 TextStream 文件并返回其内容。
+
 -   **ReadLine**。读取 TextStream 文件中的一行。
+
 -   **Remove**。删除 Dictionary 对象的键、项目对。
+
 -   **Skip**。在处理 TextStream 文件时跳过 x 个字符位置。
+
 -   **SkipLine**。在处理 TextStream 文件时跳过一行。
+
 -   **Write**。将字符串放入 TextStream 文件中。
+
 -   **WriteBlankLines**。向 TextStream 文件写入 x 个换行符。
+
 -   **WriteLine**。将字符串写入 TextStream 文件中。
 
 ##### VBScript 运行时常量
@@ -5316,14 +5631,12 @@ VBScript 运行时常量提供了一组值，这些值在脚本执行时会自�
 ###### 表 5.6 运行时常量
 
 | 常量 | 描述 |
-| :--- | :--- |
+|:---|:---|
 | DriveType | 提供对以下常量集合的访问：<br>Unknown：未确定的驱动器类型。<br>Removable：支持可移动介质的驱动器。<br>Fixed：包括计算机上的任何固定磁盘驱动器。<br>Remote：共享的网络驱动器。<br>CDROM：CD-ROM 驱动器。<br>RAMDisk：使用内存创建的逻辑驱动器。 |
 | File Attribute | 提供对以下常量集合的访问：<br>Normal：没有任何设置属性的文件。<br>ReadOnly：只读文件。<br>Hidden：隐藏文件。<br>System：系统文件。<br>Directory：文件夹。<br>Archive：标识文件自上次备份后是否已更改。<br>Alias：快捷方式。<br>Compressed：压缩文件。 |
-| File Input/Output | 提供对以下常量集合的访问：<br>ForReading：打开文件以进行读取。<br>ForWriting：打开文件以进行读取和写入。<br>ForAppending：打开文件并允许将数据追加到文件末尾。 |
+| File Input/Output | 提供对以下常量集合的访问：<br>ForReading：打开文件用于读取。<br>ForWriting：打开文件用于写入。<br>ForAppending：打开文件并允许将数据追加到文件末尾。 |
 | FileSystemObject | 以下列表描述了 VBScript FileSystemObject 提供的常量类型。<br>DriveType：标识所有可用的驱动器类型。<br>File Attribute：标识文件属性类型。<br>File Input/Output：标识可用于文件输入/输出操作的常量。<br>SpecialFolder：标识特殊文件夹。 |
 | SpecialFolder | 提供对以下常量的引用：<br>WindowsFolder：标识包含 Windows 操作系统文件的文件夹。<br>SystemFolder：标识存储设备驱动程序和库文件的 System 文件夹。<br>TemporaryFolder：标识 Windows 临时文件夹。 |
-
-
 
 #### 使用 XML 创建 Windows 脚本文件
 
@@ -5335,20 +5648,28 @@ XML 看起来非常像 HTML，并且具有类似的语法。在 Windows 脚本�
 
 XML 对文档格式有严格的规则。例如，与 HTML 不同（HTML 有时允许省略一对标签中的第二个标签而不会报错），XML 始终需要第二个标签。XML 区分大小写。此外，当前的 XML 1.0 标准规定，推荐使用全小写字母的标签。
 
-> 与 WSH VBScript 一样，你可以使用任何能将文件保存为纯文本的文本编辑器（包括 Windows 记事本应用程序）来创建 Windows 脚本文件。如果你愿意，也可以使用 HomeSite 编辑器来开发你所有的 XML 代码。你可以在本书的配套网站 www.premierpressbooks.com/downloads.asp 上找到 Macromedia 网站的链接，从那里可以下载 HomeSite 的试用版。还有许多优秀的 XML 编辑器可用。你可能想看看的一个是 XMLwriter，可在 www.xmlwriter.net 获取。
+> 与 WSH VBScript 一样，你可以使用任何能将文件保存为纯文文本的文本编辑器（包括 Windows 记事本应用程序）来创建 Windows 脚本文件。如果你愿意，也可以使用 HomeSite 编辑器来开发你所有的 XML 代码。你可以在本书的配套网站 www.premierpressbooks.com/downloads.asp 上找到 Macromedia 网站的链接，从那里可以下载 HomeSite 的试用版。还有许多优秀的 XML 编辑器可用。你可能想看看的一个是 XMLwriter，可在 www.xmlwriter.net 获取。
 
 ##### XML 标签
 
 微软在 WSH 中对 XML 的实现仅使用了部分 XML 标签集。以下列表描述了你在使用 WSH 时将用到的 XML 标签。
 
 - `<?job ?>`。启用或禁用任务的调试和错误处理。
+
 - `<?XML ?>`。设置 Windows 脚本文件的 XML 级别。
+
 - `<comment> </comment>`。允许你添加 XML 注释。
+
 - `<job> </job>`。标记 Windows 脚本文件中任务的开始和结束。
+
 - `<package> </package>`。允许将多个任务添加到 Windows 脚本文件中。
+
 - `<object> </object>`。在 Windows 脚本文件中设置对象引用。
+
 - `<reference> </reference>`。设置对外部库的引用。
+
 - `<resource> </resource>`。定义 Windows 脚本文件中任何脚本都可以引用的静态数据。
+
 - `<script> </script>`。标记 Windows 脚本文件中脚本的开始和结束。
 
 随着晨间课程的继续，我将详细介绍这些 XML 标签中的每一个。
@@ -5363,7 +5684,7 @@ XML 标签用于启用和禁用 Windows 脚本文件的调试和错误报告。`
 <?job error="flag" debug="flag" ?>
 ```
 
-使用时，error 参数被赋予一个布尔值，为 true 或 false。因此，error="true" 启用错误报告，而 error="false" 禁用它。类似地，debug 参数用于开启和关闭调试。
+使用时，error 参数被赋予一个布尔值，为 true 或 false。因此，error="true" 启用错误报告，而 error="false" 禁用它。类似的，debug 参数用于开启和关闭调试。
 
 以下示例展示了如何使用 `<?job ?>` 标签同时启用错误报告和调试。
 
@@ -5469,8 +5790,6 @@ id 参数用于为特定任务分配一个标识符。Windows 脚本文件可以
     </job>
 </package>
 ```
-
-
 
 ###### `<object>` 标签
 
@@ -5645,8 +5964,6 @@ wscript.exe "Script 5.6.wsf"
 cscript.exe script_name //job:jobname
 ```
 
-
-
 ##### 252 周末学习 VBScript
 
 图 5.7 使用通过 XML `<resource>` `</resource>` 标签创建的 WSH WScript.exe 执行主机来执行 Windows 脚本文件。
@@ -5682,8 +5999,11 @@ wscript "Script 5.6.wsf" //job:vbs_job2
 ### 处理文件和文件夹
 
 - 学习如何创建文本文档、报告和日志
+
 - 学习如何编写脚本以执行文件管理
+
 - 学习如何以编程方式处理 Windows 文件夹
+
 - 了解如何安排你的文件和文件夹管理脚本的执行
 
 ![](img/26f0ae5097205615f9285e10dc13f45e_283_0.png)
@@ -5741,8 +6061,11 @@ End Function
 然后使用更多注释将脚本的其余部分分为三个部分。第一部分用于包含任何设置或初始化脚本执行环境的语句。这包括诸如：
 
 - `Option Explicit` 语句
+
 - `On Error Resume Next` 语句
+
 - 变量的声明
+
 - 变量值的初始赋值
 
 脚本中的下一个部分称为主处理部分。这是放置脚本控制逻辑的地方。位于此部分的脚本语句可以调用脚本最后部分中的函数或子程序。通过将所有过程放在一个位置，你使它们更容易查找和修改。
@@ -5803,8 +6126,6 @@ set fsoObject = WScript.CreateObject("Scripting.FileSystemObject")
 set drive1 = fsoObject.GetDrive(fsoObject.GetDriveName("c:"))
 set drive2 = fsoObject.GetDrive(fsoObject.GetDriveName("d:"))
 ```
-
-
 
 ##### 262 一个周末学会 VBScript
 
@@ -5992,7 +6313,9 @@ If (fsoObject.FileExists("C:\myfile.txt")) Then
 在处理文件之前，必须先打开它。你可以使用 FileSystemObject 对象的 `OpenTextFile()` 方法打开文件。要使用此方法，你需要提供一些信息，包括以下内容。
 
 - 要打开的文件的名称和路径
+
 - 你是要以读取、写入还是追加方式打开文件
+
 - 如果文件不存在，是否创建该文件
 
 表 6.2 定义了用于告诉 `OpenTextFile()` 方法一旦文件打开后要执行什么操作的常量。
@@ -6001,12 +6324,10 @@ If (fsoObject.FileExists("C:\myfile.txt")) Then
 
 现在，使用表 6.2 和表 6.3 中提供的信息，你就可以打开一个文件了。
 
-
-
 ##### 表 6.2 OpenTextFile() 常量
 
 | 常量 | 描述 | 值 |
-| :--- | :--- | :--- |
+|:---|:---|:---|
 | ForReading | 打开文件用于读取 | 1 |
 | ForWriting | 打开文件用于写入 | 2 |
 | ForAppending | 打开文件用于追加 | 8 |
@@ -6014,7 +6335,7 @@ If (fsoObject.FileExists("C:\myfile.txt")) Then
 ##### 表 6.3 OpenTextFile() 文件创建选项
 
 | 值 | 描述 |
-| :--- | :--- |
+|:---|:---|
 | True | 如果文件存在则打开，否则创建并打开它 |
 | False | 如果文件存在则打开，否则不创建 |
 
@@ -6027,6 +6348,8 @@ If (fsoObject.FileExists("C:\myfile.txt")) Then
 文件指针用于标识文件中下一个字符数据将被放置的位置。在一个新初始化的文件中，指针会自动定位在左上角（第0行，第0列）。如果添加一个新字符信息，指针将移动到第0行第1列的位置。如果添加了回车符（表示行结束标记），则文件指针将移动到第1行第0列。了解文件指针的位置及其移动方式很重要，特别是当你要向或从具有固定记录格式、数据字段在指定列位置开始和结束的文件进行写入或读取时。
 
 好了，关于文件指针就讨论到这里。让我们看一个例子，它将我们讨论过的所有内容整合在一起。在这个例子中，我编写了一个VBScript，它打开一个名为 myFile.txt 的文件，该文件位于我的 C: 驱动器的根目录中。如果文件已经存在，脚本会打开它；如果文件不存在，则会创建并打开它。
+
+
 
 ```
 ' ******************************************************
@@ -6112,6 +6435,7 @@ This line of data should be written to the text file.
 ![创建文本文件并向其写入和追加数据。](img/26f0ae5097205615f9285e10dc13f45e_298_0.png)
 
 **图 6.1**
+
 创建文本文件并向其写入和追加数据。
 
 ##### 向文件写入
@@ -6173,8 +6497,6 @@ open_file.WriteLine("-----------------------------------")
 open_file.WriteBlankLines(2)
 ```
 
-
-
 ##### 从文件中读取
 
 读取文件内容的方式与写入文件非常相似。首先，确保文件存在。如果存在，你的脚本就可以打开它。脚本接下来应做的是使用 `TextStream` 对象的 `AtEndOfStream` 属性来查明文件中是否还有任何数据。毕竟，读取一个空文件是没有意义的。实际上，你应该在每次读取操作之前检查 `AtEndOfStream` 属性的值，以确保你的脚本尚未到达文件结束标记（即，文件末尾）。
@@ -6224,7 +6546,9 @@ C:\>
 在这个例子中，我们通过一次读取一行的方式读取了整个文件。还有许多其他读取文件的技术，包括
 
 -   读取文件时跳过行
+
 -   从文件中读取指定数量的字符
+
 -   一次性读取整个文件
 
 ###### 跳过文件的部分内容
@@ -6234,6 +6558,7 @@ C:\>
 你可以使用以下任一方法跳过文件中的文本，这两个方法都属于 `FileSystemObject`。
 
 -   `Skip()`。跳过特定数量的字符
+
 -   `SkipLine()`。跳过一行
 
 `Skip()` 方法允许你提供一个数字，指示应跳过多少个字符。例如，以下语句将跳过引用为 `open_file` 的文件中的 25 个字符。
@@ -6302,25 +6627,32 @@ MsgBox(read_rpt)
 你可以使用属于 FileSystemObject 的方法一次管理一个或多个文件或文件夹。处理文件的 FileSystemObject 方法包括
 
 -   **CopyFile()**。复制一个或多个文件。
--   **MoveFile()**。将一个或多个文件移动到其他位置。
+
+-   **MoveFile()**。将一个或多个文件移动到其他位。
+
 -   **DeleteFile()**。删除一个或多个文件。
+
 -   **FileExists()**。验证文件是否包含数据。
 
 FileSystemObject 还提供了许多可用于管理 Windows 文件夹的方法，包括
 
 -   **CopyFolder()**。复制一个或多个文件夹。
+
 -   **MoveFolder()**。将一个或多个文件夹移动到其他位置。
+
 -   **DeleteFolder()**。删除一个或多个文件夹。
+
 -   **FolderExists()**。验证文件夹是否存在。
+
 -   **CreateFolder()**。创建一个新文件夹。
 
 或者，你也可以使用 File 和 Folder 对象来管理你的文件和文件夹，而不是使用 FileSystemObject。这两个对象共享许多相同的方法，包括
 
 -   **Copy()**。将文件或文件夹复制到指定位置。
+
 -   **Delete()**。移除指定的文件或文件夹。
+
 -   **Move()**。将文件或文件夹移动到指定位置。
-
-
 
 > **注意**：由于 `File` 和 `Folder` 对象使用相同的方法，在使用时容易出错。例如，如果你有一个文件和一个文件夹名称相同或相似，当你只想删除一个文件时，可能会不小心删除了整个文件夹。请谨慎使用这些对象。
 
@@ -6352,7 +6684,7 @@ Set fsoObject = CreateObject("Scripting.FileSystemObject")
 fsoObject.CopyFile("c:\myfile.*", "d:\myDocs")
 ```
 
-> **注意**：通配符包括 ? 和 * 字符。通配符允许你使用模式匹配来识别文件和文件夹。? 字符用于指定单个字符匹配，而 * 字符用于匹配任意数量的字符。例如，如果你指定 tes?.txt，那么任何以字母 tes 开头且具有 .txt 文件扩展名的四字符文件名都将匹配。同样，如果你指定 test.*，那么任何文件名为 test 的文件都将匹配，无论其扩展名如何。
+> **注意**：通配符包括 ? 和 * 字符。通配符允你使用模式匹配来识别文件和文件夹。? 字符用于指定单个字符匹配，而 * 字符用于匹配任意数量的字符。例如，如果你指定 tes?.txt，那么任何以字母 tes 开头且具有 .txt 文件扩展名的四字符文件名都将匹配。同样，如果你指定 test.*，那么任何文件名为 test 的文件都将匹配，无论其扩展名如何。
 
 `CopyFile()` 方法支持一个额外的参数，允许你在尝试将文件复制到另一个已存在同名文件的文件夹时，指定如何处理。此参数可以设置为 true 或 false。将其设置为 true 将导致任何匹配的文件被覆盖。将其设置为 false 将防止这种情况发生。让我们看几个示例。
 
@@ -6383,7 +6715,7 @@ fsoObject.MoveFile("c:\*.txt", "c:\myDocs")
 
 ###### 删除文件
 
-你可以使用 `FileSystemObject` 对象的 `DeleteFile()` 方法删除一个或多个文件。例如，你可能想编写一个脚本在每天结束时清理一个文件夹，或者在读取和处理文件后删除它们。你可以按照此处的演示删除一个或多个文件。
+你可以使用 `FileSystemObject` 对象的 `DeleteFile()` 方法删除一个或多个文件。例如，你可能想编写一个脚本在每天结束时清理一个文件夹，或者在读取和处文件后删除它们。你可以按照此处的演示删除一个或多个文件。
 
 ```
 Set fsoObject = CreateObject("Scripting.FileSystemObject")
@@ -6456,8 +6788,6 @@ fsoObject.MoveFolder("d:\myDocs", "c:\myDocs")
 
 > **注意**：与 `CopyFolder()` 不同，`MoveFolder()` 方法不提供覆盖选项，允许你的脚本覆盖目标文件夹中具有重复文件名的任何文件。
 
-
-
 ###### 删除文件夹
 
 你可以使用 `FileSystemObject` 对象的 `DeleteFolder()` 方法删除一个或多个文件夹。此方法会删除文件夹及其所有内容，包括子文件夹。例如，以下 VBScript 语句可用于删除位于计算机 D: 驱动器上名为 `myDocs` 的文件夹。
@@ -6519,7 +6849,7 @@ source_file.Delete()
 
 如果你需要一次复制多个文件夹，最好使用 FileSystemObject 对象的 CopyFolder() 方法。
 
-例如，以下 VBScript 语句演示了如何使用 Copy() 方法。在此例中，名为 myDocs 的文件夹从计算机 D: 驱动器的根目录复制到计算机 C: 驱动器的根目录。
+例如，以下 VBScript 语句演示了如何使用 Copy() 方法。在此例中，名为 myDocs 的文件夹从计算机 D: 驱动器的根目员复制到计算机 C: 驱动器的根目录。
 
 ```
 Set fsoObject = CreateObject("Scripting.FileSystemObject")
@@ -6576,28 +6906,37 @@ Windows XP 让你可以使用以下两种方法之一来安排任务的执行。
 设置Windows任务计划程序的第一步是确保其正在运行。以下是在Windows XP系统上执行此任务的步骤。
 
 1.  单击“开始”，然后单击“控制面板”。Windows XP控制面板出现。
+
 2.  单击“性能和维护”链接。这将打开“性能和维护”对话框。
+
 3.  单击“管理工具”链接。
+
 4.  双击“服务”图标。这将打开“服务”控制台，如图6.5所示。
+
 5.  向下滚动，直到看到“任务计划程序”服务并选中它。
+
 6.  确保其状态列为“已启动”。如果不是，请单击对话框左侧显示的“启动服务”选项。
 
 ![](img/26f0ae5097205615f9285e10dc13f45e_317_0.png)
 
 **图6.5**
-Windows使用作为后台程序运行的服务来提供其大部分功能。
+
+Windows使用作为后台程序运行的服务来提供其大部分功能.
 
 ## 星期日下午：处理文件和文件夹
 
 如果任务计划程序服务正在运行，那么您将不会在对话框左侧看到“启动服务”选项。相反，您将看到如图6.5所示的以下选项。
 
 -   停止服务
+
 -   暂停服务
+
 -   重新启动服务
 
 在任务计划程序服务启动并运行后，您需要将其配置为使用本地系统账户以外的账户。这个其他账户应设置足够的安全权限，以便能够运行您的VBScripts。一旦您创建了新账户并为其分配了密码，请使用以下过程配置任务计划程序以使用它。
 
 1.  在“服务”控制台中向下滚动，直到可以看到“任务计划程序”服务。
+
 2.  双击它。任务计划程序属性对话框出现，如图6.6所示。
 
 ![](img/26f0ae5097205615f9285e10dc13f45e_318_0.png)
@@ -6609,6 +6948,7 @@ Windows使用作为后台程序运行的服务来提供其大部分功能。
 **图6.7** 指定任务计划程序服务要使用的替代用户账户。
 
 4.  选择“此账户”选项，然后键入新用户账户的名称。接下来，在“密码”和“确认密码”字段中键入分配给此账户的密码。
+
 5.  单击“确定”。
 
 > **提示** 检查为Windows任务计划程序配置的用户账户是否设置了定期过期的密码。如果是，您可能需要研究更改该账户，使其密码无需更改。否则，您将必须记住，在每次账户密码更改时，也要按照任务计划程序服务的要求更改账户密码。
@@ -6628,14 +6968,23 @@ at [\\computername] time [/interactive] [/every:date[,...] |
 ```
 
 -   **无参数。** 显示计划任务列表。
+
 -   **\\computername。** 指定要执行任务的远程计算机。
+
 -   **Id。** 标识分配给计划任务的ID号。
+
 -   **/delete。** 终止计划的命令。
+
 -   **/yes。** 需要确认。
+
 -   **Time。** 设置执行任务的时间，以24小时制的 *hh:mm* 格式表示。
+
 -   **/interactive。** 允许与桌面和登录用户进行交互。
+
 -   **/every:date[,...]。** 基于指定的一周中的某天或一个月中的某天设置任务执行计划。日期指定为M, T, W, Th, F, S, Su或1–31。多个日期用逗号分隔。
+
 -   **/next:date[,...]。** 在指定日期（M, T, W, Th, F, S, Su）或日期（1 - 31）的下一次出现时执行任务。
+
 -   **Command。** 指定要执行的任务、应用程序或脚本。
 
 您可以通过在命令提示符下键入AT来查看所有当前计划任务的列表，如下所示。
@@ -6701,30 +7050,35 @@ at /delete
 现在让我们看看如何使用任务计划程序。涉及的步骤在以下过程中概述。
 
 1.  打开“计划任务”文件夹，然后双击“添加计划任务”图标。
+
 2.  计划任务向导出现。单击“下一步”。
-3.  系统会提示您从显示的Windows应用程序列表中选择要设置计划的程序，如图6.10所示。单击“浏览”。
+
+3.  系统会提示您从显示的Windows应用程列表中选择要设置计划的程序，如图6.10所示。单击“浏览”。
 
 ![](img/26f0ae5097205615f9285e10dc13f45e_324_0.png)
 
 4.  “选择要计划的程序”对话框出现，如图6.11所示。找到您的脚本，选中它，然后单击“打开”。
+
 5.  计划任务向导接下来会提示您提供计划任务的名称，并提供有关任务应何时运行的信息，如图6.12所示。单击“下一步”继续。
+
 6.  您接下来将看到的对话框取决于您刚才选择的计划选项。例如，图6.13显示了如果您选择每周运行任务时出现的对话框。在这种情况下，任务已设置为在接下来的一年中每周三上午10:00执行。单击“下一步”继续。
-
-
 
 ### 周末学VBScript
 
 图6.11
+
 选择您想为其创建自动执行计划的VBScript。
 
 ![](img/26f0ae5097205615f9285e10dc13f45e_325_0.png)
 
 图6.12
+
 为计划任务命名并选择其计划。
 
 ![](img/26f0ae5097205615f9285e10dc13f45e_325_1.png)
 
 7.  接下来，系统会提示您输入一个帐户名和密码，如图6.14所示。任务计划程序将使用分配给此帐户的安全权限运行此脚本。点击“下一步”。
+
 8.  向导宣布已成功完成计划任务的设置。点击“完成”。新的计划任务现在将出现在“计划任务”文件夹中。
 
 **图6.13**
@@ -6758,11 +7112,17 @@ at /delete
 ### 桌面、计算机和网络自动化
 
 - 学习如何以编程方式创建和自定义快捷方式
+
 - 了解如何运行Windows实用程序并与Windows应用程序交互
+
 - 查看如何执行Windows控制面板实用程序
+
 - 学习如何将VBScript代码包装在Windows命令周围
+
 - 学习如何将消息写入Windows应用程序事件日志
+
 - 了解如何通过更改注册表设置来配置Windows
+
 - 学习如何设置网络驱动器的映射
 
 欢迎来到本周末的最后一章。到目前为止，您应该对自己感觉相当不错。您不仅学习了VBScript，还学会了如何将其应用于网页开发和计算机自动化。这绝非易事。今晚，让我们通过完成对VBScript和WSH的介绍来结束本书。
@@ -6808,12 +7168,19 @@ VBScript的易用性和脚本编写能力很容易被用来对付任何在计算
 **表 7.1 快捷方式属性**
 
 | 属性 | 描述 |
+
 |---|---|
+
 | 目标 | 指定 Windows 对象的完整路径和文件名。 |
+
 | 起始位置 | 指定应用程序的默认工作目录。 |
+
 | 快捷键 | 指定可用于打开快捷方式的键盘按键序列。 |
+
 | 运行方式 | 指定应用程序是以正常窗口打开，还是在最大化或最小化的窗口中打开。 |
+
 | 备注 | 指定可选的快捷方式描述。 |
+
 | 图标文件名 | 标识用于表示快捷方式的图标。 |
 
 你可以通过右键单击快捷方式，单击“属性”，然后选择“快捷方式”属性表来查看快捷方式的属性，如图 7.2 所示。
@@ -6835,6 +7202,7 @@ C:\Documents and Settings\xxxxxxxx\Desktop
 ![](img/26f0ae5097205615f9285e10dc13f45e_335_0.png)
 
 **图 7.3**
+
 通过将快捷方式放入正确的文件夹，你可以配置许多 Windows 资源，包括 Windows 桌面。
 
 ##### 创建桌面快捷方式
@@ -6888,13 +7256,17 @@ myShortcut.Save()
 > **注意** 桌面特殊文件夹是你可以在 VBScript 中使用的许多特殊文件夹之一。其他特殊文件夹包括
 
 *   **Desktop**。此文件夹代表你的 Windows 桌面。
+
 *   **Programs**。此文件夹代表位于 Windows 开始菜单上的“程序”菜单。
+
 *   **StartMenu**。此文件夹代表 Windows 开始菜单。
 
 向这些文件夹中的任何一个添加快捷方式都会将其添加到特殊文件夹所代表的 Windows 资源中。对这些特殊文件夹的更改仅影响运行更改它们的脚本的用户。换句话说，如果你对 Desktop 特殊文件夹进行了更改，则仅影响你的桌面，而不影响可能共享你计算机的任何其他用户的桌面。但是，如果你将快捷方式添加到以下任何特殊文件夹，则会影响计算机的每个用户的桌面。
 
 *   **AllUsersDesktop**。此文件夹代表计算机每个用户的桌面。
+
 *   **AllUsersStartMenu**。此文件夹代表计算机每个用户的开始菜单。
+
 *   **AllUsersPrograms**。此文件夹代表计算机每个用户的“程序”菜单。
 
 ##### 将快捷方式添加到 Windows 文件夹
@@ -6938,15 +7310,13 @@ fsoObject.DeleteFile("c:\myFolder\notepad.lnk")
 
 WshShortcut 对象提供对许多属性的访问，你可以操作这些属性来指定快捷方式设置。表 7.2 列出了这些属性。其中，只有 TargetPath 属性是必需的。
 
-例如，以下 VBScript 在 Windows 桌面上为 Windows 记事本应用程序创建一个快捷方式。
+例如，以下 VBScript 在 Windows 桌面上为 Windows 记事本应用程创建一个快捷方式。
 
 ```
 Set wshObject = WScript.CreateObject("WScript.Shell")
 trgtFolder = wshObject.SpecialFolders("Desktop")
 Set myShortcut = wshObject.CreateShortcut(trgtFolder + "\\Text_doc.lnk")
 ```
-
-
 
 ##### 配置Windows开始菜单
 
@@ -6967,6 +7337,7 @@ myShortcut.Save
 ![](img/26f0ae5097205615f9285e10dc13f45e_340_0.png)
 
 **图7.4**
+
 通过添加快捷方式配置Windows开始菜单。
 
 ##### 自定义快速启动栏
@@ -6991,6 +7362,7 @@ myShortcut.Save
 图7.5显示了脚本执行后的快速启动栏。
 
 **图7.5**
+
 将快捷方式添加到Windows快速启动栏。
 
 ![](img/26f0ae5097205615f9285e10dc13f45e_341_0.png)
@@ -7030,10 +7402,15 @@ Set shellApp = CreateObject("Shell.Application")
 你可以打开的其他Windows实用程序示例包括：
 
 - **FileRun**。Windows“运行”实用程序。
+
 - **ShutdownWindows**。Windows XP“关闭计算机”实用程序。
+
 - **FindFiles**。Windows“搜索结果”实用程序。
+
 - **FindComputer**。Windows“搜索结果”实用程序（并自动选中计算机选项）。
+
 - **SetTime**。Windows“日期和时间属性”对话框。
+
 - **Help**。Windows“帮助和支持中心”。
 
 从VBScript内部调用这些实用程序可能非常方便。例如，假设你编写了一个脚本，提示用户输入一个文件名，然后脚本以某种方式处理该文件名。如果用户输入了无效的文件名，你的脚本可以显示错误消息并退出。或者，它可以改为显示一个弹出对话框，提供运行Windows“搜索结果”实用程序，以便用户可以搜索正确的文件，然后重新运行你的脚本。
@@ -7089,32 +7466,6 @@ End Function
 ' *****************************************
 ' * Script Name: Script 7.2.vbs      *
 ' * Author: Jerry Ford           *
-```
-
-
-
-###### 表格 7.3 控制面板实用程序
-
-| CPL 文件 | 描述 |
-| --- | --- |
-| access.cpl | 辅助功能选项 |
-| appwiz.cpl | 添加或删除程序 |
-| desk.cpl | 显示属性 |
-| findfast.cpl | 快速查找 |
-| hdwwiz.cpl | 添加硬件向导 |
-| inetcpl.cpl | Internet 属性 |
-| intl.cpl | 区域和语言选项 |
-| joy.cpl | 游戏控制器 |
-| main.cpl | 鼠标属性 |
-| mmsys.cpl | 声音和音频设备属性 |
-| ncpa.cpl | 网络连接 |
-| nusrmgr.cpl | 用户账户 |
-| odbccp32.cpl | ODBC 数据源管理器 |
-| powercfg.cpl | 电源选项属性 |
-| sysdm.cpl | 系统属性 |
-| telephon.cpl | 电话和调制解调器属性选项（拨号规则属性表） |
-| timedate.cpl | 日期和时间属性 |
-
 ' * 地址：弗吉尼亚州里士满 *
 ' * 创建于：2002年3月23日 *
 ' **********************************************
@@ -7126,13 +7477,17 @@ Option Explicit
 On Error Resume Next
 
 Dim shellApp, answer
+
 Set shellApp = CreateObject("Shell.Application")
 
 ' ********** 主处理部分 **********
 
 answer = MsgBox("点击确定以手动创建用户账户？", 1)
+
 If answer = 1 then  ' 用户点击了确定
+
     Open_Control_Panel_File()
+
 End if
 
 ' ************ 过程代码在此 *************
@@ -7140,8 +7495,11 @@ End if
 ' 打开 Windows 关机对话框
 
 Function Open_Control_Panel_File()
+
     shellApp.ControlPanelItem("nusrmgr.cpl")
+
 End Function
+```
 
 如你所见，这个示例很简单。首先，它询问用户是否要打开该小程序，然后使用以下语句执行操作。
 
@@ -7162,17 +7520,29 @@ WScript.Run(command, [WindowStyle], [WaitonReturn])
 `Command` 标识要运行的 Windows 应用程序、命令或实用程序。`WindowStyle` 是可选的，用于指定应用程序、命令或实用程序将在其中打开的窗口样式。表格 7.4 描述了可能的窗口样式。`WaitOnReturn` 是一个可选的 `True` 或 `False` 值，添加它以指定脚本是在执行 `Run` 方法后等待还是继续执行。默认情况下，脚本将继续执行。
 
 | 样式 | 描述 |
+
 |---|---|
+
 | 0 | 窗口被隐藏，应用程序在后台运行 |
-| 1 | 在新窗口中打开应用程序，或将最小化或最大化的窗口恢复到其先前大小 |
+
+| 1 | 在新窗口中打开应用程序，或将最小化或最大化的窗口恢复到其先前大size |
+
 | 2 | 最小化窗口 |
+
 | 3 | 最大化窗口 |
+
 | 4 | 显示窗口，不影响当前活动窗口 |
+
 | 5 | 激活并显示窗口，将焦点从当前活动窗口移开 |
+
 | 6 | 最小化窗口并将焦点给予最近使用的窗口 |
+
 | 7 | 以最小化状态打开窗口，不将焦点从当前活动窗口移开 |
+
 | 8 | 使用默认设置显示窗口，不影响当前活动窗口 |
+
 | 9 | 在新窗口中打开应用程序，或将最小化或最大化的窗口恢复到其先前大小 |
+
 | 10 | 使用调用窗口的 Windows 设置来确定新窗口的设置 |
 
 要在你的 VBScript 中使用 `Run()` 方法，你只需建立 `wshShell` 对象的一个实例并执行该方法。例如，以下语句可用于启动 Windows 记事本应用程序。
@@ -7268,38 +7638,34 @@ wshObject.SendKeys "~"
 
 ![](img/26f0ae5097205615f9285e10dc13f45e_352_0.png)
 
-**图 7.9** VBScript 和 WSH 如何与 Windows 计算器应用程序交互的一个示例。
+**图 7.9** VBScript和WSH如何与Windows计算器应用程序交互的一个示例。
 
 ####### # 使用应用程序对象模型进行集成
 
-除了使用 WSH 对象模型提供的方法来处理 Windows 应用程序外，你还可以使用它们自己的自定义对象模型（前提是它们公开了一个对象模型）来处理其他应用程序。Microsoft Word 就是这样一个应用程序的例子。
+除了使用 WSH 对象模型提供的方法来处理 Windows 应用程序外，你还可以使用它们自己的自定�对象模型（前提是它们公开了一个对象模型）来处理其他应用程序。Microsoft Word 就是这样一个应用程序的例子。
+
+
+
+# 使用 VBScript 自动化 Microsoft Word
 
 如果你的计算机上安装了 Microsoft Word，那么你可以编写一个 VBScript，并指示它打开并访问 Microsoft Word 的一个实例及其对象模型，如下所示。
 
-```
+```vb
 Set myWordDoc = WScript.CreateObject("Word.Application")
 ```
 
 一旦实例化，你就可以使用 `myWordDoc` 对象来访问 Word 对象模型的任何方法和属性。以下 VBScript 示例展示了如何启动 Word，创建一个新文档，写入内容，打印并保存它，关闭文档，然后退出 Word。
 
-```
-'' '' '' '' '' '' '' '' '' '' '' '' '' '' '' '' '' '' '' '' '' '' '' '' '' '' '' '' '' '' '' '' '' '' '' '' '' '' '' ''
-'* 脚本名称：Script 7.4.vbs                                *
-'* 作者：Jerry Ford                                          *
-'* 地址：弗吉尼亚州里士满                                  *
-'* 创建于：2001年3月28日                                           *
-'' '' '' '' '' '' '' '' '' '' '' '' '' '' '' '' '' '' '' '' '' '' '' '' '' '' '' '' '' '' '' '' '' '' '' '' '' '' '' ''
-
-'' **** 在此处执行脚本初始化 ****
+```vb
+' 脚本名称：Script 7.4.vbs
+' 作者：Jerry Ford
+' 地址：弗吉尼亚州里士满
+' 创建于：2001年3月28日
 
 Option Explicit
 
 Dim myWordDoc
-```
 
-326 | 一个周末脚本所用的
-
-```vb
 ' Instantiate an instance of Microsoft Word
 Set myWordDoc = WScript.CreateObject("Word.Application")
 
@@ -7310,7 +7676,6 @@ Word_Demo()
 
 ' ************ Procedures go here ************
 
-' Create, print and save the Word document
 Function Word_Demo()
     ' Makes Word visible
     myWordDoc.Visible = TRUE
@@ -7341,1220 +7706,210 @@ Function Word_Demo()
 
     ' Exit Word
     myWordDoc.Quit()
-
 End Function
 ```
 
-在此示例中，脚本首先打开 Microsoft Word，然后创建一个文本文档并将其提交打印，之后将其保存为 myreport.doc，最后关闭 Microsoft Word。
+在此示例中，脚本首先打开 Microsoft Word，然后创建一个文本文档并将其提交打印，之后将其保存为 `myReport.doc`，最后关闭 Microsoft Word。
 
 > **提示** 你可以使用这个 Word 示例作为模板来创建自动打印自身的报告。这样，当你需要这些报告时，它们将被打印好并等待在你的打印机的输出托盘中。
 
-##### 其他计算机自动化任务
+## 其他计算机自动化任务
 
-你还可以使用 VBScript 和 WSH 与另外两个关键的 Windows 资源进行交互。这些是 Windows 应用程序事件日志和注册表。Windows 事件日志被操作系统及其应用程序用于记录报告计算机操作的事件。这些日志提供了计算机上已发生事件的历史记录，还可以帮助调试问题和审计用户活动。
+你还可以使用 VBScript 和 WSH 与另外两个关键的 Windows 资源进行交互：Windows 应用程序事件日志和注册表。
 
-Windows 注册表是一个内部数据库，存储了你计算机几乎所有方面的关键配置信息。通过学习如何在脚本内部配置注册表，你可以开发出能够配置几乎任何 Windows 设置的脚本。
+### 写入 Windows 事件日志
 
-####### 写入 Windows 事件日志
+如果你在运行 Windows NT、2000 或 XP 的计算机上工作，那么你可以访问由操作系统及其应用程序自动生成和管理的一组三个日志：**应用程序日志**、**安全日志**、**系统日志**。要将消息记录到应用程序事件日志，你需要使用 `WshShell` 对象的 `LogEvent()` 方法。
 
-如果你在运行 Windows NT、2000 或 XP 的计算机上工作，那么你可以访问由操作系统及其应用程序自动生成和管理的一组三个日志。这些日志包括
-
-- **应用程序日志。** 记录由 Windows 应用程序生成的事件。
-- **安全日志。** 记录与安全和审计事件相关的事件。
-- **系统日志。** 记录由操作系统记录的事件。
-
-**注意** 要在 Windows 应用程序事件日志中记录事件，应用程序必须设计为执行此操作。如果你使用的是旧版本的软件程序，它们可能不会生成事件。
-
-你可以使用 Windows 事件查看器控制台查看这些日志的内容，如图 7.10 所示。
-
-![img/26f0ae5097205615f9285e10dc13f45e_355_0.png](img/26f0ae5097205615f9285e10dc13f45e_355_0.png)
-
-**图 7.10** 使用 Windows XP 事件查看器控制台检查事件日志中记录的事件消息。
-
-如果需要，你可以使用 VBScript 记录你自己的消息事件。然后你可以将应用程序事件日志用作所有脚本的中心日志。
-
-要将消息记录到应用程序事件日志，你需要使用 WshShell 对象的 LogEvent() 方法。其语法为
-
-```
+```vb
 WshShell.LogEvent event_type, message_text, [target])
 ```
 
-Event_type 是正在记录的事件类型的数字表示。有许多不同的事件类型可供使用，包括
+示例：
 
-- 0。表示成功事件。
-- 1。表示已发生错误事件。
-- 2。表示警告事件。
-- 4。表示信息事件。
-- 8。表示成功的审计事件。
-- 16。表示失败的审计事件。
-
-Message_text 是包含要记录的消息文本的字符串。Target 是一个可选参数。它允许你指定另一个应在其中记录事件的计算机。默认情况下，所有事件都记录在计算机的本地事件日志中。Target 在你想要尝试创建单个、集中的应用程序事件日志的情况下很有用，这样你就可以前往一个地方查看所有应用程序事件，无论事件发生在哪台计算机上。但是，除非你正在网络上工作，否则你将不需要此参数。
-
-让我们看一个简单的例子。这里记录了一个事件，记录了脚本执行的开始。
-
-```
+```vb
 Set wshObject = WScript.CreateObject("WScript.Shell")
 wshObject.LogEvent 0, "Script 7.X Beginning script execution."
 ```
 
-通过将此语句添加到 VBScript 的开头，并在脚本末尾添加类似的语句，你可以保留脚本执行的记录。如果你有在 Windows 任务计划程序控制下运行的脚本，并且希望能够验证你的脚本实际上确实按预期运行，这可能会被证明特别有益。
+### 操作 Windows 注册表
 
-> **注意** Windows 95、98 和 Me 操作系统不支持 Windows 事件日志。如果你使用的是这些操作系统中的任何一个，你为所有脚本创建中心日志的唯一选择就是自己构建它。今天下午你已经学习了文件管理的所有基础知识，包括如何写入文件，你应该拥有所需的一切来建立你自己的个人日志文件。
+Windows 注册表是一个内部数据库，存储了计算机几乎所有方面的关键配置信息。注册表由五个顶级根键组成（见表 7.5），常用方法包括 `RegWrite()`、`RegRead()`、`RegDelete()`。
 
-图 7.11 显示了从 Windows XP 事件查看器查看时日志事件的显示方式。
+#### 写入注册表
 
-> **注意**：你可以通过单击“开始”、“控制面板”、“性能和维护”、“管理工具”、“事件查看器”，然后选择“应用程序日志”来打开 Windows XP 应用程序事件查看器控制台。
-
-![img/26f0ae5097205615f9285e10dc13f45e_357_0.png](img/26f0ae5097205615f9285e10dc13f45e_357_0.png)
-
-**图 7.11** 检查你的应用程序事件消息。
-
-####### 操作 Windows 注册表
-
-Windows 控制面板上的实用程序用于配置 Windows。每个实用程序实际上都是编辑 Windows 注册表内容的界面。*注册表*是一个数据库，存储关于操作系统、硬件、应用程序和用户设置的配置信息。之前你学习了如何在 VBScript 中打开控制面板实用程序，这使得随时启动这些实用程序或小程序变得容易。但是，要更改任何配置设置，你仍然必须使用小程序手动进行更改。现在让我们看看如何通过直接操作注册表来进行配置更改。
-
-> **注意** Windows 注册表包含关键的配置设置。在处理注册表时应非常小心。在对其进行更改之前，请始终备份注册表。即使是微小的配置错误也可能导致问题，甚至可能使你的计算机无法使用。
-
-注册表由五个顶级根键组成，如表 7.5 所示。这些根键共同以树状层次结构存储 Windows 计算机的所有配置设置。
-
-数据存储在注册表中位于各个根键下的各个键中，使用以下格式。
-
-```
-Key : key_type : value
-```
-
-**表 7.5 顶级注册表键**
-
-| 键 | 缩写名称 | 内容 |
-| :--- | :--- | :--- |
-| HKEY_LOCAL_MACHINE | HKLM | 全局计算机设置 |
-| HKEY_USERS | — | 关于计算机所有用户的信息 |
-| HKEY_CURRENT_CONFIG | — | 关于计算机当前配置的信息 |
-| HKEY_CLASSES_ROOT | HKCR | Windows 文件关联 |
-| HKEY_CURRENT_USER | HKCU | 关于当前登录用户的信息 |
-
-Key 表示注册表键的名称。Key_type 指定键中存储的数据类型，value 是实际存储的信息。可以在注册表中存储多种不同类型的数据。数据类型包括
-
-- **REG_BINARY。** 二进制值。
-- **REG_DWORD。** 十六进制 DWORD 值。
-- **REG_EXPAND_SZ。** 可以扩展的字符串，例如 %windir%。
-- **REG_MULTI_SZ。** 多个字符串。
-- **REG_SZ。** 文本字符串。
-
-你可以使用 Windows Regedit 实用程序手动配置 Windows 注册表。图 7.12 显示了此实用程序及其对 Windows 注册表的视图。
-
-**图 7.12** 使用 Regedit 实用程序查看和更改存储在 Windows 注册表中的配置设置。
-
-![img/26f0ae5097205615f9285e10dc13f45e_359_0.png](img/26f0ae5097205615f9285e10dc13f45e_359_0.png)
-
-你可以使用 WshShell 对象提供的三种方法以编程方式配置注册表设置。这些方法及其功能概述如下。
-
-- **RegWrite()。** 写入或更改注册表键或值。
-- **RegRead()。** 返回注册表键或值。
-- **RegDelete()。** 删除注册表键或值。
-
-
-
-######## 写入注册表
-
-让我们从学习如何使用 `RegWrite()` 方法添加或更改注册表键和值开始。要完成此任务，您需要提供键的名称及其在某个注册表根键内的位置。您还必须分配一个值。例如，以下 VBScript 语句在 `HKEY_Current_User` 根键下创建一个名为 `MyKey` 的新注册表键，并将其值分配为 `MyName`。然后将字符串 `Jerry Ford` 赋给 `MyName`。
-
-```
+```vb
 Set wshObject = WScript.CreateObject("WScript.Shell")
 wshObject.RegWrite "HKCU\MyKey\MyName", "Jerry Ford"
 ```
 
-执行时，这些语句将创建新的键和值（除非它们已存在，在这种情况下，语句将修改分配给该值的字符串）。
+#### 从注册表读取
 
-######## 从注册表读取
-
-现在我们已经创建了新的键，您可以使用 REGEDIT 查看它。您也可以使用以下脚本显示其值。
-
-```
+```vb
 Set wshObject = WScript.CreateObject("WScript.Shell")
 results = wshObject.RegRead("HKCU\MyKey\Myname")
 WScript.Echo("The Value of HKCU\MyKey\Myname is: " & results)
 ```
 
-在此示例中，使用了 `WshShell` 对象的 `RegRead()` 方法来检索分配给 `HKCU\MyKey\Myname` 的字符串。
+#### 删除注册表键值
 
-######## 从注册表删除
-
-现在您已经学习了如何创建、修改和检索注册表键和值，让我们尝试使用 `WshShell` 对象的 `RegDelete()` 方法删除它们。毕竟，您刚才使用的键实际上没有任何价值，没有理由将其保留在注册表中。
-
-您可以使用以下示例删除值 `MyName`。
-
-```
+```vb
 Set wshObject = WScript.CreateObject("WScript.Shell")
 wshObject.RegDelete "HKCU\MyKey\MyName"
 ```
 
-但是，此示例仍保留父键。如果您想摆脱整个键及其所有子值和子键，可以使用以下示例。
+删除整个键：
 
-```
+```vb
 Set wshObject = WScript.CreateObject("WScript.Shell")
 wshObject.RegDelete "HKCU\MyKey\"
 ```
 
-####### 修改 Windows 配置设置
+### 修改 Windows 配置设置（示例：屏幕保护程序）
 
-您现在知道如何读取、写入和删除注册表键和值了。让我们看一个更实际的例子，了解如何以编程方式操作 Windows 注册表。这次让我们编写一个可以重新配置计算机屏幕保护程序的 VBScript。
-
-```
-' ***************************************************
-' * 脚本名称: Script 7.5.vbs                        *
-' * 作者: Jerry Ford                                  *
-' * 地址: 弗吉尼亚州里士满                            *
-' * 创建日期: 2002年3月23日                            *
-' ***************************************************
-
-' **** 在此处执行脚本初始化 ****
-
+```vb
+' 脚本名称: Script 7.5.vbs
 Option Explicit
-
 On Error Resume Next
 
 Dim wshObject, response
-
 Set wshObject = WScript.CreateObject("WScript.Shell")
 
-' ********* 主要处理部分 *********
-
-' 询问用户是否设置屏幕保护程序的权限
-
-response = MsgBox("此 VBScript 将设置您的默认屏幕保护程序。" & "是否继续？", 4)
+response = MsgBox("此 VBScript 将设置您的默认屏幕保护程序。是否继续？", 4)
 
 Set_Screen_Saver()
-```
 
-```
-' ************** 过程在此 **************
 Function Set_Screen_Saver()
-    '如果用户点击“是”，则设置和配置我们的屏幕保护程序
     If response = 6 Then
-        '启用屏幕保护程序
         wshObject.RegWrite "HKCU\Control Panel\Desktop\ScreenSaveActive", 1
-        '启用屏幕保护程序密码保护
         wshObject.RegWrite "HKCU\Control Panel\Desktop\ScreenSaverIsSecure", 1
-        '将等待值设置为 10 分钟（即 600 秒）
         wshObject.RegWrite "HKCU\Control Panel\Desktop\ScreenSaveTimeOut", 600
-        '启用 3D 管道 (OpenGL) 屏幕保护程序
         wshObject.RegWrite "HKCU\Control Panel\Desktop\SCRNSAVE.EXE", "C:\%windir%\System32\sspipes.scr"
     End If
 End Function
 ```
 
-此示例首先在其初始化部分定义了两个变量。一个变量提供了对 WshShell 对象的引用。另一个变量存储用户对使用 MsgBox() 弹出对话框显示的问题的回答。此 MsgBox() 语句位于脚本的主要处理部分。如果用户点击“是”，则执行名为 Set_Screen_Saver() 的函数。
+### 使用 Windows 命令行
 
-Set_Screen_Saver() 函数执行了 4 个 RegWrite() 方法操作。第一个 RegWrite() 操作将 `HKCU\Control Panel\Desktop\ScreenSaveActive` 的值设置为 1（或真）。这将启用 Windows 屏幕保护程序。接下来，将 `HKCU\Control Panel\Desktop\ScreenSaverIsSecure` 设置为 1。这将启用密码保护选项。然后将 `HKCU\Control Panel\Desktop\ScreenSaveTimeOut` 设置为 600，这设置了在没有用户活动的情况下，屏幕保护程序启动前的时间量。最后，将 `HKCU\Control Panel\Desktop\SCRNSAVE.EXE` 赋值为 `C:\WINNT\System32\sspipes.scr`。此语句选择了 3D 管道 (OpenGL) 屏幕保护程序。
+`WshShell` 的 `Run()` 方法可用于在 VBScript 中执行任何 Windows 命令。例如，使用 `NET SEND` 发送网络消息：
 
-> **注意**
-
-在 Windows XP 上，您会在 `C:\Windows\System32` 中找到 Windows 屏幕保护程序。它们的文件名使其难以识别，但您可以双击它们以打开并辨别是哪一个。
-
-运行此脚本，然后右键单击 Windows 桌面并从出现的菜单中选择“属性”。这将打开“显示属性”对话框。选择“屏幕保护程序”属性页，您将看到脚本已将您的屏幕保护程序配置为如图 7.13 所示。
-
-![](img/26f0ae5097205615f9285e10dc13f45e_363_0.png)
-
-##### 休息一下
-
-好了。暂停一下。让我们休息 15 分钟。夜晚还很漫长，我们还有大量材料要学习。所以，伸展一下腿脚，为最后的冲刺积蓄力量。回来后，我们将研究 Windows 命令行，并学习如何在 VBScript 中利用 Windows 命令的强大功能。同时，您将学习如何创建新用户帐户、管理 Windows 服务、创建可以修改 Windows 任务计划程序的脚本，以及映射网络驱动器。
-
-##### 使用命令和命令行实用程序
-
-您已经了解了如何使用 `WshShell` 对象的 `Run()` 方法来启动 Windows 应用程序。当用作将 VBScript 和 WSH 与 Windows 命令行集成的一种手段时，`Run()` 方法甚至更加有用。这意味着您可以在 VBScript 中运行任何 Windows 命令或命令行实用程序。
-
-Windows NT、2000 和 XP 操作系统提供了许多内置命令和实用程序，允许您执行管理任务。在接下来的部分中，我将演示如何使用其中一些命令来处理网络资源、管理 Windows 服务、创建用户帐户以及与 Windows 任务计划程序进行交互。
-
-> **提示** 如果您可以访问 Windows 资源工具包，那么您也可以执行这些工具包中的任何命令行实用程序。例如，资源工具包的 `Dumpe1` 命令为您提供了读取 Windows 事件日志的能力。
-
-####### 通过网络发送消息
-
-Windows 命令可能难以使用，并且经常被许多拒绝离开 Windows GUI 的安全性和熟悉环境、冒险进入命令行管理更深层次的人所忽视。一个选择是使用 VBScript 和 WSH 为 Windows 命令创建一个包装器，允许用户通过响应收集运行命令所需信息的弹出对话框来执行它。例如，您接下来将看到的 VBScript 演示了如何为 NET SEND 命令提供 GUI 前端。
-
-NET SEND 命令允许您向网络上的用户和计算机发送基于文本的消息。与其他一些命令相比，NET SEND 命令相对简单，因此是一个很好的示例。此命令的语法如下所示。
-
-```
-NET SEND [name | * | /DOMAIN[:name] | /USERS] message
-```
-
-*Name* 是消息应发送到的用户或计算机的名称。要将消息发送到工作组或域中的所有用户，请键入 * 代替名称。/DOMAIN[:name] 指定要向其发送消息的域。/Users 将消息发送到当前连接到您的计算机的所有用户，而 *message* 当然是要发送的消息。
-
-NET SEND 命令使用起来相对简单。例如，您可以通过在 Windows 命令提示符处键入以下命令，向当前登录到名为 citrix-366 的计算机的用户发送一条显示“Hi there”的消息。
-
-```
-C:\>net send citrix-366 Hi there
-The message was successfully sent to CITRIX-366.
-```
-
-如果您发现此命令有用，但不想每次发送消息时都必须打开 Windows 命令提示符，那么可以编写一个 VBScript。让脚本使用 VBScript 的 InputBox() 函数收集用户或计算机的名称以及要发送的消息。然后，如本例所示，将此数据作为参数传递给 WshShell 对象的 Run() 方法。
-
-```
-' ****************************************************
-' * 脚本名称: Script 7.6.vbs
-' * 作者: Jerry Ford
-' * 地址: Richmond Virginia
-' * 创建日期: 03/17/02
-' ****************************************************
-
-' **** 在此处执行脚本初始化 ****
-
+```vb
+' 脚本名称: Script 7.6.vbs
 Option Explicit
-
 On Error Resume Next
 
 Dim wshObject, destination, messageText
-
 Set wshObject = WScript.CreateObject("WScript.Shell")
 
-destination = InputBox("请输入您希望向其发送消息的用户名或 " & _
-    "计算机名称: ")
-
-messageText = InputBox("请输入您的消息: ")
-
-' ********** 主处理部分 **********
-
-' 调用一个使用 NET SEND 命令发送消息的函数
+destination = InputBox("请输入您希望向其发送消息的用户名或计算机名称:")
+messageText = InputBox("请输入您的消息:")
 
 Send_Msg()
 
-' ************* 过程定义于此 ***************
-
-' 使用 NET SEND 命令向用户或计算机发送消息
-
 Function Send_Msg()
-
     wshObject.Run "Net Send " & destination & " " & messageText, 7, False
-
 End Function
 ```
-如这个例子所示，使用 VBScript 和 WSH 来封装大多数 Windows 命令并使其更易于使用是相当简单的。
 
-####### 管理 Windows 服务
+### 管理 Windows 服务
 
-Windows NT、2000 和 XP 是模块化的操作系统，它们以服务的形式提供了大量的功能。这些服务在启用时，会执行诸如管理 Windows 任务计划程序、打印后台处理程序、即插即用和 UPS（不间断电源）等任务。
-
-> **提示** 您可以通过在 Windows 命令提示符下键入 **net start** 或打开“服务”控制台来显示计算机上安装的服务列表，在 Windows XP 上，可以通过单击“开始”、“控制面板”、“性能和维护”、“管理工具”，然后单击“服务”来找到该控制台。
-
-通过控制这些服务，您可以限制用户或其计算机可以执行的操作。您甚至可以通过停止未使用的服务来释放资源，从而提供小幅性能改进。Windows 服务可以使用以下命令从 Windows 命令提示符进行管理。
-
-- **NET START**。启动一项服务。
-- **NET PAUSE**。暂停一项服务而不停止它。
-- **NET CONTINUE**。恢复已暂停的服务。
-- **NET STOP**。停止一项服务。
-
-通过将这些命令与 **WshShell** 对象的 **Run()** 方法结合使用，您可以在 VBScript 内启动和停止任何服务。例如，以下 VBScript 语句可用于停止 Eventlog 服务。
-
-```
+```vb
 Set wshObject = WScript.CreateObject("WScript.Shell")
 wshObject.Run "net stop Eventlog ", 0, "True"
 ```
 
-类似地，您可以启动 **Eventlog** 服务，如下所示。
+启动服务：
 
-```
+```vb
 Set wshObject = WScript.CreateObject("WScript.Shell")
 wshObject.Run "net start Eventlog ", 0, "True"
 ```
 
-####### 管理用户帐户
+### 管理用户帐户
 
-另一个如何将 VBScript 和 WSH 与 Windows 命令结合使用的良好示例是创建新的用户帐户。Windows NT、2000 和 XP 都支持使用以下命令创建用户和组帐户。
-
-- **net user**。创建和删除用户帐户。
-- **net group**。管理全局组中的用户帐户和全局帐户成员身份。
-- **net localgroup**。管理本地组中的用户帐户成员身份。
-
-> **注意** 组帐户用于管理用户帐户集合。通过使用户帐户成为组帐户的成员，该用户帐户会继承分配给该组的所有安全权限。管理几个组比管理大量单个用户帐户更容易。
-
-例如，以下 VBScript 语句在本地计算机上创建一个名为 JFord 的新用户帐户，并为其分配初始密码 bluebird。
-
-```
+```vb
 Set wshObject = WScript.CreateObject("WScript.Shell")
 return = wshObject.Run("net user JFord bluebird /add", 0)
 ```
 
-通过如后续代码所示在 NET USER 命令中添加 /domain，您可以创建一个网络帐户而不是本地帐户，前提是您正在 Windows 网络上操作并且具有网络管理员权限。
+创建网络帐户（使用 `/domain`）：
 
-```
+```vb
 Set wshObject = WScript.CreateObject("WScript.Shell")
 return = wshObject.Run("net user JFord bluebird /add /domain", 0)
 ```
 
-让我们看一个更完整的例子。这里有一个 VBScript，它创建新的用户帐户并将它们添加到本地计算机的管理员组。新用户帐户的名称列在一个名为 c:\userlist.txt 的外部文本文件中。该脚本打开外部文件，并使用 Do...While 循环进行处理。在循环的每次迭代中，执行 NET USER 和 NET LOCALGROUP 命令，以创建新帐户并将它们添加到管理员组。
+### 编写计划脚本执行
 
-```
-' ******************************************
-' * 脚本名称: Script 7.7.vbs
-' * 作者: Jerry Ford
-' * 地址: Richmond Virginia
-' * 创建日期: 06/09/01
-' ******************************************
-
-' **** 在此处执行脚本初始化 ****
-
-Option Explicit
-
-On Error Resume Next
-
-Dim fsoObject, wshObject, workingFile, newAcct, return
-
-'实例化 FileSystemObject，以便脚本可以使用
-'Windows 文件系统
-
-Set fsoObject = CreateObject("Scripting.FileSystemObject")
-
-'实例化 WshShell 对象，以便脚本可以使用
-'WshShell 的 Run 方法
-
-Set wshObject = WScript.CreateObject("WScript.Shell")
-
-'指定存储新帐户名称的外部文件的路径
-
-Set workingFile = fsoObject.OpenTextFile("c:\userlist.txt", 1, "True")
-
-' *********** 主处理部分 ***********
-
-'调用处理新用户帐户的函数
-
-Create_Accts()
-
-' *********** 过程定义于此 ***********
-
-'此函数执行实际的帐户创建和配置
-
-Function Create_Accts()
-
-    '循环读取文件，一次一行
-    Do while False = workingFile.AtEndOfStream
-        newAcct = workingFile.ReadLine()
-        '创建新的域帐户
-        return = wshObject.Run("net user " & newAcct & " newpasswd /add", 0)
-        If return = 0 then
-            '将该帐户添加到本地 Administrators 组
-            return = wshObject.Run("net localgroup Administrators /add " & newAcct, 0)
-        End If
-    Loop
-
-    '处理完毕后关闭文件
-    workingFile.Close
-
-End Function
-```
-
-####### 编写计划脚本执行
-
-WshShell 对象的 Run() 方法的另一个用途是使用 AT 命令与 Windows 任务计划程序交互。这使您的脚本能够添加和删除计划任务。例如，假设您有一个脚本被安排每周运行一次，并且该脚本执行多个维护任务，包括检查多个文件夹集中是否存在文件。如果脚本发现存在文件，那么它可以安排另一个脚本的执行，该脚本可能在当天晚些时候删除文件之前将它们复制到网络驱动器。另一方面，如果没有找到文件，那么就不会在任务计划程序中添加任何内容。
-
-以下 VBScript 语句演示了如何以编程方式安排一个 VBScript 的执行，该脚本将作为后台任务在周二和周四的晚上 10 点运行。
-
-```
+```vb
 Set wshObject = WScript.CreateObject("WScript.Shell")
 wshObject.Run "at 22:00 /every:T,Th cmd /c Script 7.7.vbs", 0, "True"
 ```
 
-如您所见，在 VBScript 中利用 AT 的功能是直接了当的，它为您提供了自动化 VBScript 条件执行的能力。
+### 访问网络资源
 
-####### 访问网络资源
-
-我们已经看了一个使用 Windows NET SEND 命令通过网络发送文本消息的示例。我还解释了如何修改 NET USER、NET GROUP 和 NET LOCALGROUP 命令在网络上的新用户帐户。现在让我们看看 WshNetwork 对象以及如何使用它来开发与网络资源交互的脚本。
-
-WshNetwork 对象提供了许多可用于收集网络信息的属性。WshNetwork 对象的属性包括：
-
-- **UserName**。标识分配给用户帐户的名称。
-- **ComputerName**。检索用户计算机的名称。
-- **UserDomain**。检索用户当前登录的域的名称。
-
-WshNetwork 对象还提供了几种方法，允许您查看和访问共享网络驱动器。这些方法包括：
-
-- **EnumNetworkDrives**。提供对驱动器映射的访问。
-- **MapNetworkDrive**。映射网络驱动器。
-- **RemoveNetworkDrive**。删除网络驱动器映射。
-
-WshNetwork 对象还提供了许多方法，您可以使用它们来查看网络打印机并与其协同工作。
-
-- **EnumPrinterConnection**。提供有关网络打印机的信息。
-- **AddPrinterConnection**。连接到网络打印机。
-
-
-
-######## RemovePrinterConnection
-移除与网络打印机的连接。
-
-######## SetDefaultPrinter
-设置默认打印机。
-
-以如何使用 Wsh-Network 对象的方法为例，我们来看看连接和断开网络驱动器的步骤。网络驱动器就是一个可以通过网络访问的硬盘驱动器。通过创建与网络驱动器的连接，你建立了一个逻辑连接，使得该网络驱动器看起来和表现得就像你自己计算机上的一个本地驱动器一样。
-
-> **注意：** 如果你已经映射了一个或多个网络驱动器，那么只要你亲自运行脚本，你的脚本就能自动访问这些驱动器，就好像它们本地连接到你的计算机一样。如果你使用任务计划程序来启动脚本执行，那么你的驱动器映射将对脚本不可用。因此，你需要在脚本中添加适当的语句来连接和断开网络驱动器。
-
-在你建立了与网络驱动器的连接或映射后，你就可以像读写任何其他磁盘驱动器一样读写它（假设你拥有相应的安全权限）。你可以使用 WshNetwork 对象的 `MapNetworkDrive()` 方法创建与网络驱动器的映射。此方法的语法如下所示。
-
-```
-WshNetwork.MapNetworkDrive letter, name, [persistent], [username], [password]
-```
-
-*Letter* 是你想分配给该驱动器的盘符。*Name* 是共享资源的 UNC 名称。*Persistent* 是一个可选值，为 true 或 false。True 会在用户会话之间保留驱动器映射。如果省略，则使用默认值 false，连接仅持续当前登录会话。最后，*username* 和 *password* 是可选参数，用于指定访问驱动器可能需要的用户名和密码（例如，如果驱动器受安全权限保护）。
-
-> **注意** 将真实用户名及其关联密码嵌入脚本中被认为是重大的安全漏洞，不被推荐。我建议不惜一切代价避免这样做。也许你可以设置脚本，在每次运行时使用 VBScript 的 `InputBox()` 函数来向你查询这些信息。
-
-## 映射到网络驱动器
-
-好的，让我们看看从 VBScript 内部映射到网络驱动器需要什么。首先，你必须使用 `WScript` 对象的 `CreateObject()` 方法来实例化一个 `WshNetwork` 对象的实例。然后，你可以按如下方式使用 `WshNetwork` 对象的 `MapNetworkDrive()` 方法。
-
-```
+```vb
 Set wshNet = WScript.CreateObject("WScript.Network")
 wshNet.MapNetworkDrive "x:", "\\OfficeSvr\C"
 ```
 
-就是这样，只有两行代码。使用 VBScript 的功能如此强大却又如此简单，真是令人惊叹。如你所见，网络驱动器名为 `C:`，位于名为 `OfficeSvr` 的计算机上。执行脚本后，你会发现本地计算机上将出现一个新的盘符为 `x` 的驱动器。此处创建的驱动器映射是临时性的，下次用户登录时将不存在。
+断开映射：
 
-你可以通过图标的外观来区分映射的网络驱动器和本地硬盘驱动器。图 7.14 显示了使用前面的示例创建的图标。
-
-## 断开映射的驱动器
-
-创建驱动器映射如此简单，断开映射则更加容易。你应该断开不再使用的任何映射驱动器。你可以使用 `WshNetwork` 对象的 `RemoveNetworkDrive()` 方法来执行此操作。其语法如下所示。
-
-```
-WshNetwork.RemoveNetworkDrive letter, [kill], [persistent]
-```
-
-![](img/26f0ae5097205615f9285e10dc13f45e_374_0.png)
-
-### 图 7.14
-驱动器图标下方的电缆连接图片标识了映射的网络驱动器。
-
-#### 映射的网络驱动器
-
-Letter 是分配给映射驱动器的盘符。Kill 是可选的，值为 true 或 false。True 会断开与映射驱动器的连接，即使它当前正在使用。Persistent 是另一个可选的 true 或 false 值，允许你断开网络驱动器的持久映射。
-
-作为本次周末学习的最后一个示例，让我们看看如何断开我们在前面示例中创建的网络驱动器映射。
-
-```
+```vb
 Set wshNet = WScript.CreateObject("WScript.Network")
 wshNet.RemoveNetworkDrive "x:"
 ```
 
-一旦执行，此示例将移除映射驱动器的所有痕迹。
+## 下一步
 
-## 下一步是什么？
+恭喜！你已经在为网页添加更多乐趣以及开发能帮助你提高效率的 VBScript 方面取得了长足进步。继续深入研究 VBScript，编写自己的脚本，搜索他人示例，祝你好运！
 
-恭喜！你已经在为网页添加更多乐趣和精彩、以及开发能帮助你提高效率的 VBScript 方面取得了长足进步。那么，下一步是什么？我建议你继续深入研究 VBScript。还有很多东西需要学习。最好的方法是开始编写你自己的脚本。关注互联网，并养成搜索由他人开发的新想法和 VBScript 示例的习惯。祝你好运！
-
-## 附录 A
-VBScript 语言参考
-
-![](img/26f0ae5097205615f9285e10dc13f45e_376_0.png)
-
-VBScript 是 Microsoft 提供的一种脚本语言，受到 Internet Explorer 和 Windows Script Host 的支持。VBScript 也是 Visual Basic 编程语言家族的一员。
-
-本附录旨在作为 VBScript 程序员的参考。在这里，你将找到列出和表格，用于标识构成 VBScript 编程语言的主要编程结构。
-
-本附录涵盖的主题包括：
-- VBScript 格式规则
-- VBScript 常量回顾
-- VBScript 变量命名规则
-- 声明变量的不同方式列表
-- VBScript 变量子类型回顾
-- VBScript 对话框回顾
-- VBScript 错误列表
-- VBScript 事件回顾
-- 浏览器处理器回顾
-- VBScript 函数回顾
-- VBScript 关键字回顾
-- VBScript 对象和集合回顾
-- VBScript 方法回顾
-- VBScript 属性回顾
-- VBScript 运算符回顾
-- VBScript 保留字回顾
-- VBScript 特殊字符回顾
-- VBScript 语句回顾
+## 附录 A – VBScript 语言参考
 
 ### VBScript 格式规则
 
-与任何编程语言一样，VBScript 在编写脚本时必须遵循某些规则。以下列表回顾了一些你应该记住的基本 VBScript 格式规则。
+- `Option Explicit` 可用于强制变量声明。  
+- 空白空格被忽略，允许缩进。  
+- 默认情况下，一条 VBScript 语句必须位于单行。  
 
-- VBScript 对变量、常量、子例程和过程名称不区分大小写。
-- `Option Explicit` 语句可用于强制区分大小写。
-- 空白空格被忽略，允许你缩进 VBScript 语句并为你的 VBScript 提供组织结构。
-- 默认情况下，一个 VBScript 语句必须位于单行。
-- 可以通过使用冒号 (:) 在每个前面的 VBScript 语句末尾标记，将多个 VBScript 语句放在单行上。
-- 可以通过在续行末尾添加 `_` 字符，将 VBScript 语句分布在多行上。
+### 常量、变量与关键字
 
-#### VBScript 常量
+- 常量示例：`vbTrue`、`vbFalse`、`vbCrLf`。  
+- 变量声明使用 `Dim`、`Const`、`Private`、`Public`、`ReDim`。  
+- 关键字包括 `If`、`Then`、`Else`、`Function`、`Sub` 等。
 
-常量是一个不会改变的值，例如 PI。VBScript 允许你创建自己的常量。此外，VBScript 提供了许多常量集合。VBScript 常量使你可以访问这些值，而无需自己知道它们。
+### 常用函数
 
-##### VBScript 颜色常量
+`MsgBox()`、`InputBox()`、`CreateObject()`、`WScript.Sleep()`、`WScript.Echo()` 等。
 
-表 A.1 提供了定义已知颜色集合的常量列表。
+### 常用对象
 
-##### VBScript 日期和时间常量
+- `WshShell`：提供 `Run()`、`LogEvent()`、`RegWrite()`、`RegRead()`、`RegDelete()`。  
+- `WshNetwork`：提供 `MapNetworkDrive()`、`RemoveNetworkDrive()`、`EnumNetworkDrives()`。  
+- `FileSystemObject`：用于文件操作。  
 
-表 A.2 提供了定义星期几和其他日期相关值的常量列表。
+### 错误与异常
 
-###### 表 A.1 VBScript 颜色常量
+运行时错误代码如 `5`（无效的过程调用或参数）、`13`（类型不匹配）等；语法错误代码如 `1005`（应有 '('）等。
+
+### 表格示例（摘录）
+
 | 常量 | 描述 |
-| :--- | :--- |
-| vbBlack | 黑色 |
-| vbBlue | 蓝色 |
-| vbCyan | 青色 |
-| vbGreen | 绿色 |
-| vbMagenta | 品红色 |
-| vbRed | 红色 |
-| vbWhite | 白色 |
-| vbYellow | 黄色 |
+|------|------|
+| `vbTrue` | 真 |
+| `vbFalse` | 假 |
+| `vbCrLf` | 回车换行符 |
 
-###### 表 A.2 VBScript 日期和时间常量
-| 常量 | 值 | 描述 |
-| :--- | :--- | :--- |
-| vbSunday | 1 | 星期日 |
-| vbMonday | 2 | 星期一 |
-| vbTuesday | 3 | 星期二 |
-| vbWednesday | 4 | 星期三 |
-| vbThursday | 5 | 星期四 |
-| vbFriday | 6 | 星期五 |
-| vbSaturday | 7 | 星期六 |
-
-
-
-###### 表 A.2 续
-| 常量 | 值 | 描述 |
-|---|---|---|
-| vbFirstFourDays | 2 | 新年中包含至少4天的首个完整周 |
-| vbFirstFullWeek | 3 | 年度的首个完整周 |
-| vbFirstJan1 | 1 | 包含1月1日的周 |
-| vbUseSystemDayOfWeek | 0 | 操作系统指定的星期几 |
-
-##### VBScript 日期和时间格式常量
-表 A.3 提供了定义日期和时间格式的常量列表。
-
-##### VBScript 错误常量
-表 A.4 提供了定义分配给 VBScript 错误值的常量。
-
-###### 表 A.3 VBScript 日期和时间格式常量
-| 常量 | 值 | 描述 |
-|---|---|---|
-| vbGeneralDate | 0 | 显示日期和时间 |
-| vbLongDate | 1 | 以长格式显示日期 |
-| vbShortDate | 2 | 以短格式显示日期 |
-| vbLongTime | 3 | 以长格式显示时间 |
-| vbShortTime | 4 | 以短格式显示时间 |
-
-###### 表 A.4 VBScript 错误常量
-| 常量 | 值 | 描述 |
-|---|---|---|
-| vbObjectError | -2147221504 | 分配给 VBScript 错误的值。 |
-
-##### VBScript MsgBox 按钮常量
-表 A.5 提供了定义使用 VBScript `MsgBox()` 函数显示的弹出对话框上可能出现的按钮的常量列表。
-
-##### VBScript MsgBox 图标常量
-表 A.6 提供了定义使用 VBScript `MsgBox()` 函数创建的对话框上可能出现的图标的常量列表。
-
-###### 表 A.5 VBScript MsgBox 按钮常量
-| 常量 | 值 | 描述 |
-|---|---|---|
-| vbOKOnly | 0 | 显示“确定”按钮 |
-| vbOKCancel | 1 | 显示“确定”和“取消”按钮 |
-| vbAbortRetryIgnore | 2 | 显示“中止”、“重试”和“忽略”按钮 |
-| vbYesNoCancel | 3 | 显示“是”、“否”和“取消”按钮 |
-| vbYesNo | 4 | 显示“是”和“否”按钮 |
-| vbRetryCancel | 5 | 显示“重试”和“取消”按钮 |
-
-###### 表 A.6 VBScript MsgBox 图标常量
-| 常量 | 值 | 描述 |
-|---|---|---|
-| vbCritical | 16 | 显示严重错误图标 |
-| vbQuestion | 32 | 显示问题图标 |
-| vbExclamation | 48 | 显示感叹号图标 |
-| vbInformation | 64 | 显示信息图标 |
-
-##### VBScript MsgBox 按钮默认值常量
-表 A.7 提供了可用于定义使用 VBScript `MsgBox()` 函数显示的弹出对话框上的默认按钮的常量列表。
-
-###### 表 A.7 VBScript MsgBox 按钮默认值常量
-| 常量 | 值 | 描述 |
-|---|---|---|
-| vbDefaultButton1 | 0 | 使第一个按钮成为默认按钮 |
-| vbDefaultButton2 | 256 | 使第二个按钮成为默认按钮 |
-| vbDefaultButton3 | 512 | 使第三个按钮成为默认按钮 |
-| vbDefaultButton4 | 768 | 使第四个按钮成为默认按钮 |
-
-##### VBScript MsgBox 模态设置常量
-表 A.8 提供了可用于定义使用 VBScript `MsgBox()` 函数显示的弹出对话框的模态的常量列表。
-
-###### 表 A.8 VBScript MsgBox 模态设置常量
-| 常量 | 值 | 描述 |
-|---|---|---|
-| vbApplicationModal | 0 | 用户必须响应后脚本才能继续 |
-| vbSystemModal | 4096 | 用户必须响应后脚本才能继续。此外，弹出对话框将始终保持在其他活动应用程序的顶部 |
-
-##### VBScript MsgBox 返回值常量
-表 A.9 提供了可用于定义当用户单击使用 VBScript `MsgBox()` 函数显示的弹出对话框上的按钮时可以返回的值的常量列表。
-
-###### 表 A.9 VBScript MsgBox 返回值常量
-| 常量 | 值 | 描述 |
-|---|---|---|
-| vbOK | 1 | 用户单击了“确定”按钮 |
-| vbCancel | 2 | 用户单击了“取消”按钮 |
-| vbAbort | 3 | 用户单击了“中止”按钮 |
-| vbRetry | 4 | 用户单击了“重试”按钮 |
-| vbIgnore | 5 | 用户单击了“忽略”按钮 |
-| vbYes | 6 | 用户单击了“是”按钮 |
-| vbNo | 7 | 用户单击了“否”按钮 |
-
-##### VBScript 脚本常量
-表 A.10 提供了可用于定义与字符串相关的常量的常量列表。
-
-###### 表 A.10 VBScript 字符串常量
-| 常量 | 值 | 描述 |
-|---|---|---|
-| vbCr | `Chr(13)` | 回车符 |
-| vbCrLf | `Chr(13)` 和 `Chr(10)` | 回车换行符 |
-| vbFormFeed | `Chr(12)` | 换页符 |
-| vbLf | `Chr(10)` | 换行符 |
-| vbNewLine | `Chr(13)` 和 `Chr(10)` | 换行字符 |
-| vbNullChar | `Chr(0)` | 0 |
-| vbNullString | 无值字符串 | 空字符串 |
-| vbTab | `Chr(9)` | 水平制表符 |
-| vbVerticalTab | `Chr(11)` | 垂直制表符 |
-
-##### VBScript 三态常量
-表 A.11 提供了等于真值或假值的常量，或指定由操作系统定义的值的常量列表。
-
-###### 表 A.11 VBScript 三态常量
-| 常量 | 值 | 描述 |
-|---|---|---|
-| vbUseDefault | -2 | 从操作系统获取默认值 |
-| vbTrue | -1 | 真 |
-| vbFalse | 0 | 假 |
-
-##### VBScript VarType 常量
-表 A.12 提供了表示指示变体中存储的数据类型的整数的常量列表。
-
-###### 表 A.12 VBScript VarType 常量
-| 常量 | 值 | 描述 |
-|---|---|---|
-| vbEmpty | 0 | 未初始化的值 |
-| vbNull | 1 | 空值/无数据 |
-| vbInteger | 2 | 整型 |
-| vbLong | 3 | 长整型 |
-| vbSingle | 4 | 单精度型 |
-| vbDouble | 5 | 双精度型 |
-| vbCurrency | 6 | 货币型 |
-| vbDate | 7 | 日期型 |
-| vbString | 8 | 字符串型 |
-| vbObject | 9 | 对象型 |
-| vbError | 10 | 错误型 |
-| vbBoolean | 11 | 布尔型 |
-| vbVariant | 12 | 变体型 |
-| vbDataObject | 13 | 数据访问对象 |
-| vbDecimal | 14 | 小数型 |
-| vbByte | 17 | 字节型 |
-| vbArray | 8192 | 数组 |
-
-##### VBScript 变量
-VBScript 允许使用变量临时存储值。变量使脚本能够保留值并在整个脚本中引用它们。VBScript 在声明和使用变量时必须遵循特定的规则。VBScript 支持一种称为变体的变量类型。但是，VBScript 还提供了使用子类型对存储在变体中的数据类型进行进一步分类的能力。
-
-###### VBScript 变量命名规则
-VBScript 对 VBScript 变量的名称施加了一些严格的规则。VBScript 变量名：
-
--   在其作用域内必须是唯一的
--   长度必须少于 255 个字符
--   必须以字母字符开头
--   不能包含空格
--   只能由字母字符、数字字符和下划线（_）字符组成
--   不能是 VBScript 的保留字
-
-###### 声明 VBScript 变量
-VBScript 提供了多种可用于声明变量、数组和常量的语句。表 A.13 列出了这些语句。
-
-**表 A.13 VBScript 变量声明**
-| 语句 | 描述 |
-|---|---|
-| `Const` | 定义 VBScript 常量 |
-| `Dim` | 定义 VBScript 变量或数组 |
-| `Private` | 定义仅在声明它的脚本中可用的 VBScript 变量 |
-| `Public` | 定义在整个脚本中全局作用域并可从其他脚本访问的 VBScript 变量 |
-| `ReDim` | 定义动态数组 |
-
-##### VBScript 数据类型
-VBScript 仅支持一种称为变体的变量类型。但是，VBScript 确实允许您将变体分类为子类型。表 A.14 列出了 VBScript 支持的变体子类型。
-
-**表 A.14 VBScript 变体子类型**
-| 子类型 | 描述 |
-|---|---|
-| `Boolean` | 值为 True 或 False。 |
-| `Byte` | 值介于 0 到 255 之间的整数。 |
-| `Currency` | 介于 -922,337,203,685,477.5808 和 922,337,203,685,477.5807 之间的货币值。 |
-| `Date` | 表示 100 年 1 月 1 日到 9999 年 12 月 31 日之间日期的数字。 |
-| `Double` | 浮点数，其范围介于 -1.79769313486232E308 到 -4.94065645841247E-324 或 4.94065645841247E-324 到 1.79769313486232E308 之间。 |
-| `Empty` | 未初始化的变体。 |
-| `Error` | 错误号。 |
-| `Integer` | 值介于 -32,768 到 32,767 之间的整数。 |
-| `Long` | 值介于 -2,147,483,648 到 2,147,483,647 之间的长整型值。 |
-| `Null` | 变体为空值。 |
-| `Single` | 浮点数，其范围介于 -3.402823E38 到 -1.401298E-45 或 1.401298E-45 到 3.402823E38 之间。 |
-| `String` | 长达 20 亿个字符的字符串。 |
-
-##### VBScript 弹出对话框
-VBScript 支持两个函数，它们提供了显示图形化弹出对话框并与用户直接交互的能力。表 A.15 描述了这些函数及其功能。
-
-
-
-###### 表 A.15 VBScript 对话框
-| 函数 | 描述 |
-| --- | --- |
-| MsgBox | 显示弹出对话框，可用于显示消息，并向用户提供供选择的选项列表 |
-| InputBox | 显示一个弹出对话框，可用于收集文本响应 |
-
-##### VBScript 错误
-
-与任何编程语言一样，VBScript 执行过程中有时会发生错误。VBScript 错误分为运行时和语法两类。默认情况下，Internet Explorer 会抑制错误消息的显示，以对最终用户隐藏它们。
-
-###### VBScript 运行时错误
-
-VBScript 运行时错误是在脚本执行过程中发生的错误。当 VBScript 尝试执行不允许的操作（例如尝试打开不存在的文件）时，会发生运行时错误。表 A.16 列出了 VBScript 的运行时错误消息。
-
-####### 表 A.16 VBScript 运行时错误
-| 错误 | 描述 |
-| --- | --- |
+| 错误代码 | 描述 |
+|----------|------|
 | 5 | 无效的过程调用或参数 |
-| 6 | 溢出 |
-| 7 | 内存不足 |
-| 9 | 下标越界 |
-| 10 | 此数组是固定的或临时锁定的 |
-| 11 | 被零除 |
 | 13 | 类型不匹配 |
-| 14 | 字符串空间不足 |
-| 17 | 无法执行请求的操作 |
-| 28 | 堆栈空间不足 |
-| 35 | 未定义子过程或函数 |
-| 48 | 加载 DLL 时出错 |
-| 51 | 内部错误 |
-| 91 | 对象变量未设置 |
-| 92 | For 循环未初始化 |
-| 94 | Null 的使用无效 |
-| 424 | 需要对象 |
-| 429 | ActiveX 组件无法创建对象 |
-| 430 | 类不支持自动化 |
-| 432 | 在自动化操作期间找不到文件名或类名 |
-| 438 | 对象不支持此属性或方法 |
-| 445 | 对象不支持此操作 |
-| 447 | 对象不支持当前区域设置 |
-| 448 | 找不到命名参数 |
-| 449 | 参数不是可选的 |
-| 450 | 参数数量错误或属性赋值无效 |
-| 451 | 对象不是集合 |
-| 458 | 变量使用了 VBScript 不支持的自动化类型 |
-| 462 | 远程服务器机器不存在或不可用 |
-| 481 | 图片无效 |
-| 500 | 变量未定义 |
-| 502 | 对象对脚本不安全 |
-| 503 | 对象初始化不安全 |
-| 504 | 对象创建不安全 |
-| 505 | 无效或未限定的引用 |
-| 506 | 未定义类 |
-| 507 | 发生异常 |
-| 5008 | 非法赋值 |
-| 5017 | 正则表达式中的语法错误 |
-| 5018 | 意外的量词 |
-| 5019 | 正则表达式中应有 ] |
-| 5020 | 正则表达式中应有 ) |
-| 5021 | 字符集中的范围无效 |
 
-###### VBScript 语法错误
-
-VBScript 语法错误是在 VBScript 开始加载但尚未实际开始执行时发生的错误。当未遵循 VBScript 语句的格式化规则时，会发生语法错误。例如，如果在 VBScript 语句中需要提供结束引号或括号时未能提供，则会发生 VBScript 语法错误。表 A.17 列出了 VBScript 的语法错误消息。
-
-| 错误 | 描述 |
-|---|---|
-| 1001 | 内存不足 |
-| 1002 | 语法错误 |
-| 1005 | 应有 '(' |
-| 1006 | 应有 ')' |
-| 1010 | 应有标识符 |
-| 1011 | 应有 '=' |
-| 1012 | 应有 'If' |
-| 1013 | 应有 'To' |
-| 1013 | 无效数字 |
-| 1014 | 应有 'End' |
-| 1014 | 无效字符 |
-| 1015 | 应有 'Function' |
-| 1015 | 未终止的字符串常量 |
-| 1016 | 应有 'Sub' |
-| 1017 | 应有 'Then' |
-| 1018 | 应有 'Wend' |
-| 1019 | 应有 'Loop' |
-| 1020 | 应有 'Next' |
-| 1021 | 应有 'Case' |
-| 1022 | 应有 'Select' |
-| 1023 | 应有表达式 |
-| 1024 | 应有语句 |
-| 1025 | 应有语句结束 |
-| 1026 | 应有整数常量 |
-| 1027 | 应有 'While' 或 'Until' |
-| 1028 | 应有 'While'、'Until' 或语句结束 |
-| 1029 | 应有 'With' |
-| 1030 | 标识符过长 |
-| 1037 | 关键字 'Me' 使用无效 |
-| 1038 | 没有 'do' 的 'loop' |
-| 1039 | 无效的 'exit' 语句 |
-| 1040 | 无效的 'for' 循环控制变量 |
-| 1041 | 名称重定义 |
-| 1042 | 必须是行上的第一条语句 |
-| 1044 | 调用 Sub 时不能使用括号 |
-| 1045 | 应有字面常量 |
-| 1046 | 应有 'In' |
-| 1047 | 应有 'Class' |
-| 1048 | 必须在类内定义 |
-| 1049 | 属性声明中应有 Let 或 Set 或 Get |
-| 1050 | 应有 'Property' |
-| 1051 | 参数数量在属性规范中必须一致 |
-| 1052 | 类中不能有多个默认属性/方法 |
-| 1053 | 类初始化或终止没有参数 |
-| 1054 | 属性 Set 或 Let 必须至少有一个参数 |
-| 1055 | 意外的 Next |
-| 1057 | 'Default' 规范也必须指定 'Public' |
-| 1058 | 'Default' 规范只能出现在 Property Get 中 |
-
-##### VBScript 事件
-
-VBScript 提供了两个事件，当关联类的实例被初始化或终止时执行。这些事件在表 A.18 中定义。
-
-###### 表 A.18 VBScript 事件
-
-| 事件 | 描述 |
-| :--- | :--- |
-| Initialize | 当关联类的实例被初始化时执行。 |
-| Terminate | 当关联类的实例被终止时执行。 |
-
-##### 浏览器事件处理程序
-
-Internet Explorer 提供了许多事件，你可以为 VBScript 编程以响应这些事件。表 A.19 提供了浏览器事件及其响应的事件处理程序列表。
-
-###### 表 A.19 文档对象模型属性
-
-| 属性 | 事件 | 描述 |
-| :--- | :--- | :--- |
-| Abort | onAbort | 当访问者在图像加载过程中中止图像时执行 |
-| Blur | onBlur | 当当前选定对象失去焦点时执行 |
-| Change | onChange | 当访问者更改对象时执行 |
-| Click | onClick | 当访问者单击对象时执行 |
-| DblClick | onDblClick | 当访问者双击对象时执行 |
-| DragDrop | onDragDrop | 当访问者将对象拖放到框架或窗口上时执行 |
-| Error | onError | 当 HTML 页面上发生错误时执行 |
-| Focus | onFocus | 当访问者选择对象时执行 |
-| KeyDown | onKeyDown | 当访问者按下键时执行 |
-| KeyPress | onKeyPress | 当访问者按下并释放键时执行 |
-| KeyUp | onKeyUp | 当访问者释放键时执行 |
-| Load | onLoad | 当 HTML 页面或图像完成加载时执行 |
-| MouseDown | onMouseDown | 当访问者按下鼠标按钮时执行 |
-| MouseMove | onMouseMove | 当访问者移动指针时执行 |
-| MouseOut | onMouseOut | 当访问者将指针移出对象时执行 |
-| MouseOver | onMouseOver | 当访问者将指针移入对象时执行 |
-| MouseUp | onMouseUp | 当访问者释放鼠标按钮时执行 |
-| MouseWheel | onMouseWheel | 当旋转鼠标滚轮时执行 |
-| Move | onMove | 当访问者移动框架或窗口时执行 |
-| Reset | onReset | 当访问者单击重置按钮时执行 |
-| Resize | onResize | 当访问者调整框架或窗口大小时执行 |
-| Select | onSelect | 当访问者选择表单文本字段的内容时执行 |
-| Submit | onSubmit | 当访问者单击提交按钮时执行 |
-| Unload | onUnload | 当访问者关闭浏览器窗口或框架或加载不同的 URL 时执行 |
-
-##### VBScript 函数
-
-VBScript 的优势之一是其函数集合。通过在脚本中引用 VBScript 函数，你可以节省编写自己的过程来执行 VBScript 内置函数所完成任务的时间和精力。表 A.20 提供了 VBScript 函数列表。
-
-###### 表 A.20 VBScript 函数
-
-| 函数 | 描述 |
-| :--- | :--- |
-| Abs | 返回数字的绝对值 |
-| Array | 基于提供的参数列表返回数组 |
-| Asc | 返回所提供参数中第一个字母的 ANSI 代码 |
-| Atn | 返回参数的反正切值的反三角函数 |
-| CBool | 将表达式转换为布尔值并返回结果 |
+> **注意**：在处理注册表或系统设置时，请务必备份重要数据，避免导致系统不可用。
 
 
 
-###### 表 A.20 续表
 
-| 函数 | 描述 |
-| :--- | :--- |
-| CByte | 将表达式转换为 Byte 变体子类型并返回结果 |
-| CCur | 将表达式转换为 Currency 变体子类型并返回结果 |
-| CDate | 将表达式转换为 Date 变体子类型并返回结果 |
-| CDbl | 将表达式转换为 double 变体子类型并返回结果 |
-| Chr | 根据提供的 ANSI 代码返回一个字符 |
-| CInt | 将表达式转换为 Integer 变体子类型并返回结果 |
-| CLng | 将表达式转换为 Long 变体子类型并返回结果 |
-| Cos | 三角函数，返回参数的余弦值 |
-| CreateObject | 创建一个 Automation 对象并返回其引用 |
-| CSng | 将表达式转换为 Single 变体子类型并返回结果 |
-| Date | 返回当前日期 |
-| DateAdd | 向当前日期添加一个额外的时间间隔并返回结果 |
-| DateDiff | 比较两个日期并返回它们之间的间隔数 |
-| DatePart | 返回指定日期的一部分 |
-| DateSerial | 根据提供的年、月、日返回一个 Variant（子类型为 Date） |
-| DateValue | 将字符串表达式转换为 Date 类型的变体并返回结果 |
-| Day | 将表示日期的表达式转换为 1 到 31 之间的数字并返回结果 |
-| Eval | 返回计算表达式的结果 |
-| Exp | 返回参数提升到指定幂次的值 |
-| Filter | 根据使用提供的筛选条件筛选出的元素集返回一个数组 |
-| FormatCurrency | 返回一个已格式化为货币值的表达式 |
-| FormatDateTime | 返回一个已格式化为日期或时间值的表达式 |
-| FormatNumber | 返回一个已格式化为数值的表达式 |
-| FormatPercent | 返回一个已格式化为百分比（包括伴随的 % 符号）的表达式 |
-| GetLocale | 返回区域设置 ID |
-| GetObject | 返回 Automation 对象的引用 |
-| GetRef | 返回过程的引用 |
-| Hex | 返回表示一个数字的十六进制字符串 |
-| Hour | 返回表示一天中小时的整数（0–23） |
-| InputBox | 从对话框返回用户输入 |
-| InStr | 返回子字符串在字符串中首次出现的起始位置 |
-| InStrRev | 返回子字符串在字符串中首次出现的结束位置 |
-| Int | 返回所提供数字的整数部分 |
-| IsArray | 根据变量是否为数组返回 True 或 False |
-| IsDate | 根据表达式是否格式正确以进行数据转换返回 True 或 False |
-| IsEmpty | 根据变量是否已初始化返回 True 或 False |
-| IsNull | 根据表达式是否设置为 Null 返回 True 或 False |
-| IsNumeric | 根据表达式是否计算为数字返回 True 或 False |
-| IsObject | 根据表达式是否具有有效的 Automation 对象引用返回 True 或 False |
-| Join | 返回一个通过连接数组内容创建的字符串 |
-| LBound | 返回指定数组维度的最小可能下标 |
-| LCase | 返回小写字符串 |
-| Left | 返回字符串左侧的字符 |
-| Len | 返回数字或字符串的字符长度 |
-| LoadPicture | 返回图片对象 |
-| Log | 返回指定参数的自然对数 |
-| LTrim | 从字符串中修剪任何前导空格并返回结果 |
-| Mid | 根据提供的起始位置和长度参数从字符串返回一定数量的字符 |
-| Minute | 返回表示一小时中分钟的数字，范围为 0–59 |
-| Month | 返回表示一年中月份的数字，范围为 1–12 |
-| MonthName | 返回包含指定月份名称的字符串 |
-| MsgBox | 返回一个值，指定用户在对话框中点击的按钮 |
-| Now | 返回当前日期和时间 |
-| Oct | 返回包含八进制数表示的字符串 |
-| Replace | 将一个子字符串的所有出现替换为另一个子字符串后返回字符串 |
-| RGB | 返回表示 RGB 颜色的数字 |
-| Right | 返回字符串右侧的字符 |
-| Rnd | 返回一个随机生成的数字 |
-| Round | 按指定的小数位数舍入后返回数字 |
-| RTrim | 从字符串中修剪任何尾随空格并返回结果 |
-| ScriptEngine | 返回标识当前脚本语言的字符串 |
-| ScriptEngineBuildVersion | 返回脚本引擎的内部版本号 |
-| ScriptEngineMajorVersion | 返回脚本引擎的主版本号 |
-| ScriptEngineMinorVersion | 返回脚本引擎的次版本号 |
-| Second | 返回表示一分钟中秒的数字，范围为 0–59 |
-| Sgn | 返回指定参数的符号 |
-| Sin | 三角函数，返回参数的正弦值 |
-| Space | 返回由多个空格组成的字符串 |
-| Split | 将字符串组织成数组 |
-| Sqr | 返回数字的平方根 |
-| StrComp | 返回一个值，指定字符串比较的结果 |
-| String | 返回由重复字符序列组成的字符串 |
-| Tan | 三角函数，返回参数的正切值 |
-| Time | 返回一个已设置为等于系统当前时间的 Date 子类型 Variant |
-| Timer | 返回一个值，表示自午夜以来经过的秒数 |
-| TimeSerial | 返回一个已设置为等于指定小时、分钟和秒的 Date 子类型 Variant |
-| TimeValue | 返回一个已使用指定时间设置的 Date 子类型 Variant |
-| Trim | 移除任何前导或尾随空格后返回字符串 |
-| TypeName | 返回一个字符串，指定关于指定变量的 Variant 子类型信息 |
-| UBound | 返回指定数组维度的最大下标 |
-| UCase | 返回大写字符串 |
-| VarType | 返回一个字符串，指定关于指定变量的 Variant 子类型信息 |
-| Weekday | 返回一个 1–7 形式的整数，表示一周中的给定某天 |
-| WeekdayName | 返回标识一周中特定某天的字符串 |
-| Year | 返回指定年份的数字 |
-
-##### 关键字
-
-在 VBScript 中，关键字用于表示一系列独特或不常见的值。这些值可用于在表达式中比较变量的值。VBScript 关键字概述见表 A.21。
-
-###### 表 A.21 VBScript 关键字
-
-| 关键字 | 描述 |
-| :--- | :--- |
-| Empty | 表示未初始化的变量 |
-| False | 表示值为零 |
-| Nothing | 从对象中移除对象变量的关联 |
-| Null | 表示变量没有有效值 |
-| True | 表示值为 -1 |
-
-##### 对象和集合
-
-VBScript 提供对一组内置对象的访问。这些对象列于表 A.22 中。
-
-###### VBScript 对象方法
-
-VBScript 方法是与特定 VBScript 对象关联的预定义过程。方法旨在控制关联的对象及其数据。表 A.23 定义了属于 VBScript 对象的方法。
-
-
-
-####### 表 A.22 VBScript 对象
-
-| 对象 | 描述 |
-|---|---|
-| Class | 提供对事件的访问<br>属性：无<br>方法：无<br>事件：Initialize、Terminate |
-| Err | 提供有关运行时错误的详细信息<br>属性：Description、HelpContext、HelpFile、Number、Source<br>方法：Clear、Raise<br>事件：无 |
-| Match | 访问正则表达式匹配的只读属性<br>属性：FirstIndex、Length、Value<br>方法：无<br>事件：无 |
-| Matches 集合 | 正则表达式 Match 对象的集合<br>属性：无<br>方法：无<br>事件：无 |
-| RegExp | 支持正则表达式<br>属性：Global、IgnoreCase、Pattern<br>方法：Execute、Replace、Test。<br>事件：无 |
-| SubMatches 集合 | 访问正则表达式子匹配字符串的只读值<br>属性：无<br>方法：无<br>事件：无 |
-
-####### 表 A.23 VBScript 对象方法
-
-| 方法 | 描述 |
-|---|---|
-| Clear | 清除 Err 对象的属性设置 |
-| Execute | 对字符串执行正则表达式搜索 |
-| Raise | 模拟运行时错误 |
-| Replace | 替换正则表达式搜索中的文本 |
-| Test | 对字符串执行正则表达式搜索 |
-
-###### VBScript 对象属性
-
-VBScript 属性是与 VBScript 对象关联的属性。属性包含表示对象特定特征的存储值。通过操作对象的属性，VBScript 影响对象本身。表 A.24 定义了属于 VBScript 对象的属性。
-
-####### 表 A.24 VBScript 对象属性
-
-| 属性 | 描述 |
-|---|---|
-| Description | 检索错误消息 |
-| FirstIndex | 返回字符串中指定子字符串的第一个位置 |
-| Global | 更改或检索布尔值 |
-| HelpContext | 检索帮助文件主题的上下文 ID |
-| HelpFile | 返回帮助文件的路径 |
-| IgnoreCase | 检索一个布尔值，指示模式搜索是否区分大小写 |
-| Length | 返回搜索字符串匹配的长度 |
-| Number | 返回指定错误的错误号 |
-| Pattern | 检索搜索操作中的正则表达式模式 |
-| Source | 检索生成错误的对象名称 |
-| Value | 返回搜索字符串匹配的值 |
-
-##### VBScript 运算符
-
-VBScript 运算符允许你执行数学计算，其结果可以赋给 VBScript 变量或在执行条件测试时由 VBScript 使用。
-
-####### 算术运算符
-
-算术运算符提供了操作数学值的能力。表 A.25 列出了 VBScript 支持的算术运算符。
-
-######## 表 A.25 VBScript 算术运算符
-
-| 运算符 | 描述 |
-| --- | --- |
-| + | 加 |
-| - | 减 |
-| * | 乘 |
-| / | 除 |
-| \ | 整数除法 |
-| Mod | 取模 |
-| -x | 反转 x 的符号 |
-| ^ | 求幂 |
-
-####### 比较运算符
-
-VBScript 比较运算符用于测试表达式、变量和常量的值。比较运算符与 If...Then...Else 和 Select Case 语句结合使用，以确定 VBScript 中的逻辑流程。表 A.26 列出了 VBScript 支持的比较运算符。
-
-######## 表 A.26 VBScript 比较运算符
-
-| 运算符 | 描述 |
-| --- | --- |
-| = | 等于 |
-| <> | 不等于 |
-| > | 大于 |
-| < | 小于 |
-| >= | 大于或等于 |
-| <= | 小于或等于 |
-
-###### 运算符优先级
-
-VBScript 对涉及多个运算符的表达式强制执行严格的运算符优先级。表 A.27 定义了 VBScript 计算数学运算符的顺序。
-
-####### 表 A.27 VBScript 运算符优先级
-
-| 运算符 | 描述 |
-|---|---|
-| \ | 转义 |
-| (), (?:), (?=), [] | 圆括号和方括号 |
-| *, +, ?, {n}, {n,}, {n,m} | 量词 |
-| ^, $, \metacharacter | 锚点和序列 |
-| \| | 交替 |
-
-*注：表格开头列出的运算符比后面列出的先计算，同一行中列出的运算符按呈现顺序（从左到右）计算。*
-
-##### 保留字
-
-表 A.28 提供了 VBScript 保留的单词列表。这些单词不能用作 VBScript 中的常量、变量或其他类型的标识符。这些单词包含 VBScript 语言的关键元素或留作将来使用。你只能按其预期用途在脚本中使用这些单词。
-
-###### 表 A.28 VBScript 保留字
-
-| And | EndIf | LSet | RSet |
-| As | Enum | Me | Select |
-| Boolean | Eqv | Mod | Set |
-| ByRef | Event | New | Shared |
-| Byte | Exit | Next | Single |
-| ByVal | False | Not | Static |
-| Call | For | Nothing | Stop |
-| Case | Function | Null | Sub |
-| Class | Get | On | Then |
-| Const | GoTo | Option | To |
-| Currency | If | Optional | True |
-| Debug | Imp | Or | Type |
-| Dim | Implements | ParamArray | TypeOf |
-| Do | In | Preserve | Until |
-| Double | Integer | Private | Variant |
-| Each | Is | Public | Wend |
-| Else | Let | RaiseEvent | While |
-| ElseIf | Like | ReDim | With |
-| Empty | Long | Rem | Xor |
-| End | Loop | Resume | |
-
-##### VBScript 特殊字符
-
-VBScript 有一些特殊字符，你在编写脚本时必须了解。要在 VBScript 中包含这些字符，必须使用 \ 字符进行转义。表 A.29 列出了所有 VBScript 特殊字符。
-
-| 字符 | 描述 |
-| --- | --- |
-| $ | 匹配字符串末尾的位置 |
-| ( ) | 标识子表达式的开始和结束 |
-| * | 匹配子表达式零次或多次出现 |
-| + | 匹配子表达式一次或多次出现 |
-| . | 匹配单个字符 |
-| [ | 标识方括号表达式的开始 |
-| ? | 匹配子表达式零次或一次出现 |
-| \ | 标识其后跟的字符为特殊字符 |
-| ^ | 匹配字符串开头的位置 |
-| { | 标识量词表达式的开始 |
-| \| | 指定选择条件 |
-
-##### VBScript 语句
-
-表 A.30 列出了构成 VBScript 编程语言的编程语句。
-
-###### 表 A.30 VBScript 语句
-
-| 语句 | 描述 |
-| --- | --- |
-| Call | 将脚本中的流程控制重定向到过程 |
-| Class | 定义类名 |
-| Const | 定义常量 |
-| Dim | 定义 VBScript 变量 |
-| Do...Loop | 只要条件为 True 或直到条件变为 True，就重复执行一组语句 |
-| Erase | 重新初始化数组中的元素。 |
-| Execute | 运行指定的语句 |
-| ExecuteGlobal | 在脚本的全局命名空间中运行指定的语句 |
-| Exit | 终止循环、子程序或函数 |
-| For Each...Next | 迭代处理数组或集合的内容 |
-| For...Next | 重复循环指定次数 |
-| Function | 定义函数名及其参数 |
-| If...Then...Else | 基于测试表达式的值执行一个或多个语句 |
-| On Error | 打开错误处理 |
-| Option Explicit | 在脚本中显式声明所有变量 |
-| Private | 定义私有变量 |
 | Property Get | 定义属性名及其参数并返回其值 |
 | Property Let | 定义属性过程的名称和参数 |
 | Property Set | 定义属性过程的名称和参数 |
@@ -8568,8 +7923,6 @@ VBScript 有一些特殊字符，你在编写脚本时必须了解。要在 VBSc
 | While...Wend | 只要指定条件保持为 True，就执行一个或多个语句 |
 | With | 将一系列语句与要为其执行的指定对象关联 |
 
-
-
 ## 附录 B
 
 ### 网站内容
@@ -8579,7 +7932,9 @@ VBScript 有一些特殊字符，你在编写脚本时必须了解。要在 VBSc
 您将在网站上找到的一些内容包括
 
 -   一个链接页面，提供指向 VBScript 相关网站的链接列表，您可以在那里找到大量的 VBScript 文档和 VBScript 示例。
+
 -   一个下载页面，您可以从中下载本书的示例 VBScript。您会发现示例脚本按章节组织。您还可以将它们全部作为一个 zip 文件下载。
+
 -   一个包含有关 Macromedia HomeSite 编辑器信息的页面，以及一个指向 http://www.macromedia.com/software/homesite/ 的链接，您可以在那里下载 HomeSite 5.0 的 30 天试用版。
 
 ## 术语表
@@ -8606,9 +7961,9 @@ VBScript 有一些特殊字符，你在编写脚本时必须了解。要在 VBSc
 
 **<reference>.** 一个 WSH XML 标签，用于建立对外部库的引用。
 
-**<resource>**。一个 WSH XML 标签，用于定义一个常量，该常量可被 Windows Script 文件中的脚本引用。
+**<resource>。**一个 WSH XML 标签，用于定义一个常量，该常量可被 Windows Script 文件中的脚本引用。
 
-**<script>**。一个 WSH XML 标签，用于标识 Windows Script 文件中的脚本。
+**<script>。**一个 WSH XML 标签，用于标识 Windows Script 文件中的脚本。
 
 ### A
 
@@ -8714,8 +8069,6 @@ VBScript 有一些特殊字符，你在编写脚本时必须了解。要在 VBSc
 
 **Folders Collection.** 一个 VBScript 运行时集合，提供对存储在指定文件夹中的所有文件夹的访问。
 
-
-
 #### 394 周末学习 VBScript
 
 **For...Next.** 一种 VBScript 编程语句，用于创建循环，该循环将执行指定的次数。
@@ -8730,7 +8083,7 @@ VBScript 有一些特殊字符，你在编写脚本时必须了解。要在 VBSc
 
 **全局变量。** 在过程外部建立的脚本变量，可以从脚本中的任何位置引用。
 
-**GUI（图形用户界面）。** 一种点击式图形界面，允许用户无需使用命令提示符即可与操作系统交互。
+**GUI（图形用户界面）。** 一种点击式图形界面，允用户无需使用命令提示符即可与操作系统交互。
 
 ### H
 
@@ -8846,7 +8199,7 @@ VBScript 有一些特殊字符，你在编写脚本时必须了解。要在 VBSc
 
 **onSelect。** 由 Select 事件触发的事件处理程序。当用户选择一个对象（如链接或图像）时，此事件发生。
 
-**onSubmit。** 由 Submit 事件触发的事件处理程序。当用户单击表单的提交按钮时，此事件发生。
+**onSubmit。** 由 Submit 事件触发的事件处理程序。当用户单击表单的提交按钖时，此事件发生。
 
 **onUnload。** 由 Unload 事件触发的事件处理程序。当浏览器关闭或加载新的 HTML 时，此事件发生。
 
@@ -8872,55 +8225,98 @@ VBScript 有一些特殊字符，你在编写脚本时必须了解。要在 VBSc
 
 **属性。** 与对象关联的属性，用于控制或描述对象的特定特性或方面。
 
-
-
 ### A
+
 - **中止事件**，390
+
 - **Active X**，390
+
 - **alert() 方法**，112
+
 - **Alert 方法**，390
+
 - **AllUsersDesktop 文件夹**，310
+
 - **AllUsersPrograms 文件夹**，310
+
 - **AllUsersStartMenu 文件夹**，310
+
 - **动画**，5
+
 - **appCodeName 属性，navigator 对象**，126
+
 - **应用程序日志**，327
+
 - **应用程序，Windows**，320–325
+
   - 使用对象模型进行集成，325–327
+
   - WSH 与，25
+
 - **AppName，navigator 对象**，126
+
 - **appVersion，navigator 对象**，126
+
 - **参数**，390
+
 - **算术运算符**，55–56
+
 - **数组**，70, 75, 390
+
   - Dim 语句，75
+
   - 元素，处理，76–78
+
   - 多维数组，397
+
   - 动态调整大小，78–81
+
 - **ASP（Active Server Pages）**，7–8, 390
+
 - **at 命令**，390
+
 - **AtEndOfStream 属性**，274–275
+
 - **身份验证，HTML 表单**，172–194
+
 - **自动化**，6
 
 ### B
+
 - **back() 方法**，122–125
+
 - **backButton_onclick 子程序**，124
+
 - **Bake_The_Cookie() 函数**，197
+
 - **横幅**，5
+
 - **二进制代码**，4, 390
+
 - **blur 事件**，390
+
 - **布尔变量**，390
+
 - **基于浏览器的对象**，94
+
 - **浏览器**，390
+
   - 兼容性，14–15
+
   - 事件处理器，368–370
+
   - 事件，131–142
+
   - Internet Explorer 版本，13–14
+
   - 对象，109–110
+
     - window 对象，110–116
+
   - 支持 VBScript 的，93–94
+
 - **Button 对象**，391
+
   - HTML 表单，173–174
 
 ## 术语表
@@ -9045,696 +8441,1316 @@ VBScript 有一些特殊字符，你在编写脚本时必须了解。要在 VBSc
 
 **XML（可扩展标记语言）。** XML 是纯文本文件的数据格式模型。WSI 实现了 XML 标签的一个子集，支持 Windows 脚本文件的开发。
 
-
-
 ### 406 索引
 
 - **按钮**
+
   - 表单按钮，21
+
   - MsgBox，83
+
   - 单选按钮，177–179
+
   - 重置按钮，HTML 表单，188–190
+
 - **大小写敏感，40**
+
 - **更改事件，391**
+
 - **字符，特殊字符，384**
+
 - **复选框对象，391**
+
   - HTML 表单，174–177
+
 - **clear() 方法，154**
+
 - **点击事件，391**
+
 - **close() 方法，112**
+
 - **关闭文件，268–271**
+
 - **集合数组，391**
+
 - **集合，对象，102**
+
   - FileSystemObject，260
+
 - **命令行实用程序（Windows），337–344**
+
   - 管理服务，340
+
 - **命令提示符，Windows**
+
   - CScript 配置，217–220
+
   - 调度脚本执行，293–295
+
   - 编写 VBScript，30–32
+
   - WScript 配置，217–220
+
 - **命令（Windows），337–344**
+
   - net group，341–343
+
   - net localgroup，341–343
+
   - NET SEND，338–339
+
   - net user，341–343
+
 - **\<comment\> XML 标签，241，243，389**
+
 - **注释，46–48，391**
+
   - 模板与注释，47
+
 - **比较运算符，56–58，380–381**
+
 - **编译，391**
+
 - **连接，391**
+
 - **连接运算符（&），56**
+
 - **条件逻辑**
+
   - If...Then...Else 语句，58–61
+
   - Select Case 语句，61–62
+
 - **配置**
+
   - CScript 命令行执行，217–220
+
   - 脚本处理，221–224
+
   - “开始”菜单，313
+
   - 修改 Windows 设置，334–336
+
   - WScript
+
     - 命令行执行，217–220
+
     - Windows 桌面，220–221
+
 - **confirm() 方法，112**
+
 - **confirm 方法，391**
+
 - **常量，48，351，392**
+
   - 颜色常量，351，352
+
   - 日期和时间常量，351–353
+
     - 格式常量，353
+
   - 错误常量，353–354
+
   - 模态设置常量，355–356
+
   - MsgBox 按钮常量，354
+
     - 默认常量，355
+
   - MsgBox 图标常量，354，355
+
   - MsgBox 返回值常量，356
+
   - OpenTextFile() 方法，268
+
   - 运行时常量，238–239
+
   - 脚本常量，357
+
   - 字符串常量，357
+
   - Tristate 常量，357，358
+
   - VarType 常量，357–359
+
 - **控制面板，实用程序，318–320**
+
 - **Cookies，194–196，391**
+
   - 创建，196–199
+
   - 过期日期，195，198
+
   - 添加到 HTML 页面，200–203
+
   - 检索，199–200
+
 - **CopyFile() 方法，280–281**
+
 - **CopyFolder() 方法，283–284**
+
 - **复制**
+
   - 文件
+
     - File 对象，285–286
+
     - FileSystemObject 对象，280–281
+
   - 文件夹
+
     - FileSystemObject 对象，283–284
+
     - Folder 对象，287
+
 - **核心对象模型，392**
+
 - **CreateFolder() 方法，282–283**
+
 - **CreateObject() 方法，225**
+
 - **CScript，WSH，213，214–215，392**
+
   - 命令行配置，217
 
 ### D
 
 - **数据类型，360–361**
+
   - 注册表，332
+
 - **日期和时间常量，351–353**
+
   - 格式常量，353
+
 - **日期和时间属性对话框（Windows），317**
+
 - **DatePart() 函数，198**
+
 - **双击事件，392**
+
 - **调试，392**
+
 - **DeleteFile() 方法，282**
+
 - **DeleteFolder() 方法，285**
+
 - **删除**
+
   - 文件
+
     - File 对象，286
+
     - FileSystemObject 对象，282
+
   - 文件夹
+
     - FileSystemObject 对象，285
+
     - Folder 对象，288
+
   - 从注册表删除，333
+
   - 快捷方式，桌面，311
+
 - **Description 属性，Err 对象，152**
+
 - **桌面**
+
   - 快速启动栏与桌面，305
+
   - 快捷方式，6，305–308
+
     - 创建，308–310
+
     - 删除，311
+
   - WSH 与桌面，25
+
 - **Desktop 文件夹，309**
+
 - **DHTML 对象模型，100–102**
+
 - **对话框，弹出式。参见 弹出式对话框**
+
 - **字典，392**
+
 - **数字时钟，160–161**
+
 - **Dim 语句，392**
+
   - 创建数组，75
+
 - **显示属性对话框，336**
+
 - **Display_Clock() 函数，161**
+
 - **Do Until 语句，65–67**
+
 - **Do While 循环，62–64**
+
 - **文档对象，392**
+
   - window 对象，101，117–119
+
   - 属性，118–119
+
 - **文档，267–271**
+
 - **DOM（文档对象模型），100，102–109，392**
+
   - Internet Explorer，109
+
   - 属性，104
+
 - **Do...Until 语句，392**
+
 - **Do...While 语句，392**
+
 - **驱动器可用空间，Windows 文件系统，261–263**
+
 - **驱动器对象，392**
+
 - **驱动器，392**
+
   - 映射到网络驱动器，346
+
   - 断开连接，346–347
+
   - WSH 与驱动器，25
+
 - **双引导，Internet Explorer 实例与双引导，14**
 
 ### E
 
 - **元素，数组，393**
+
   - 处理，76–78
+
 - **内嵌脚本错误，42**
+
 - **读取整个文件，277–278**
+
 - **Err 对象，151–155**
+
 - **错误常量，353–354**
+
 - **错误，362，393**
+
   - On Error Resume Next 语句，148–151
+
   - 忽略错误，146–151
+
   - 管理错误，145–155
+
   - 运行时错误，146，362–365
+
   - 语法错误，41–44，146，365–367，402
+
 - **事件处理程序，393**
+
   - 浏览器事件处理程序，368–370
+
   - 框架事件处理程序，133–135
+
   - 框架，169
+
   - 键盘事件处理程序，141–142
+
   - 鼠标事件处理程序，136–141
+
   - onLoad 事件，132
+
   - 设置，131–132
+
   - 窗口事件处理程序，133–135
+
 - **事件日志，写入 Windows 事件日志，327–330**
+
 - **事件，99，368，393**
+
   - 浏览器事件，131–142
+
   - 加载事件，132
+
   - 响应事件执行脚本，20–22
+
   - 类型，133–142
+
 - **执行脚本文件，249–252**
+
   - 命令提示符，293–295
+
   - 调度，343–344
+
 - **执行环境，7–8**
+
 - **执行宿主，4，393**
+
 - **执行宿主，WSH，216–217**
+
   - 脚本处理，221–224
+
 - **过期日期，Cookies，195，198**
+
 - **表达式，393**
+
 - **引用外部脚本，22–23**
+
 - **文件，393**
+
   - 关闭，268–271
+
   - 复制
+
     - File 对象，285–286
+
     - FileSystemObject 对象，280–281
+
   - 删除
+
     - File 对象，286
+
     - FileSystemObject 对象，282
+
   - 外部脚本，22–23
+
   - 移动
+
     - File 对象，286
+
     - FileSystemObject 对象，282
+
   - 打开，268–271
+
   - 从文件读取，274–276
+
     - 读取整个文件，277–278
+
     - 格式化数据，277
+
     - 跳过部分内容，276
+
   - 脚本文件，执行，249–252
+
   - 写入文件
+
     - 添加字符，272–273
+
     - 添加行，273
+
     - 空行，273–274
+
   - WSH 与文件，25
+
 - **Files 集合，393**
+
 - **FileSystemObject，260，393**
+
   - 复制文件，280–281
+
 - **焦点事件，393**
+
 - **Folder 对象，286–287，393**
+
   - 复制文件夹，287
+
   - 删除文件夹，288
+
   - 移动文件夹，287–288
+
 - **FolderExists() 方法，282–283**
+
 - **文件夹，279**
+
   - AllUsersDesktop，310
+
   - AllUsersPrograms，310
+
   - AllUsersStartMenu，310
+
   - 复制
+
     - FileSystemObject 对象，283–284
+
     - Folder 对象，287
+
   - 删除
+
     - FileSystemObject 对象，285
+
     - Folder 对象，288
+
   - Desktop，309
+
   - 检查文件夹是否存在，FileSystemObject 对象，282–283
+
   - 移动
+
     - FileSystemObject 对象，284
+
     - Folder 对象，287–288
+
   - 新建，FileSystemObject 对象，282–283
+
   - Programs，309
+
   - 计划任务文件夹，401
+
   - 文件夹快捷方式，310–311
+
   - StartMenu，309
+
 - **Folders 集合，393**
+
 - **For Each…Next 语句，70，394**
+
 - **表单按钮，21**
+
 - **Form 对象，394**
+
 - **格式化数据，从文件读取，277**
+
 - **格式化，351**
+
 - **表单，HTML**
+
   - 身份验证，172–194
+
   - 复选框对象，174–177
+
   - 隐藏对象，185–187
+
   - 密码对象，184–185
+
   - 属性，172–173
+
   - 单选按钮，177–179
+
   - 注册表单示例，190–194
+
   - 重置按钮，188–190
+
   - 选择对象，187–188
+
   - 文本，180–181
+
   - 文本区域，181–183
+
 - **For…Next 语句，67–68**
+
 - **forward() 方法，122–125**
+
 - **框架事件处理程序，133–135**
+
 - **Frame 对象，394**
+
 - **框架，166–171**
+
 - **frames[] 数组，167**
+
 - **frames 集合，window 对象，101**
+
 - **驱动器可用空间，Windows 文件系统，261–263**
+
 - **函数，71–73，370–377，394**
+
   - Bake_The_Cookie()，197
+
   - Display_Clock()，161
+
   - 框架函数，169
+
   - InputBox()，81，87–89
+
   - Msg_Blink()，156–157
+
   - MsgBox 函数，397
+
   - MsgBox()，81，82–87
+
   - myButton_onClick()，173–174
+
   - process_Order()，193
+
   - Scroll_Msg() 函数，157–158
+
   - Set_Screen_Saver()，335–336
+
   - Time()，160–161
+
   - Weekdayname()，198
+
   - Windows 注册表函数，332
 
 ### G
 
 - **GetDriveName() 方法，262**
+
 - **Get_First_Name() 过程，73**
+
 - **GetFolder() 方法，311**
+
 - **全局变量，53，394**
+
 - **go() 方法，122–125**
+
 - **GUI（图形用户界面），24，394**
 
 ### H
 
 - **帮助和支持中心（Windows），317**
+
 - **隐藏对象，394**
+
   - HTML 表单，185–187
+
 - **history 对象，122–125，394**
+
   - window 对象，101
+
 - **HomeSite，5，12–13，394**
+
 - **HTML（超文本标记语言），394–395**
+
   - Cookies，添加到页面，200–203
+
   - 内嵌脚本，错误，42
+
   - 表单，5
+
     - 身份验证，172–194
+
     - 按钮对象，173–174
+
     - 复选框对象，174–177
+
     - 隐藏对象，185–187
+
     - 密码对象，184–185
+
     - 属性，172–173
+
     - 单选按钮，177–179
+
     - 注册表单示例，190–194
+
     - 重置按钮，188–190
+
     - 选择对象，187–188
+
     - 文本，180–181
+
     - 文本区域，181–183
+
   - \<SCRIPT\> 标签，16
+
   - 内嵌 VBScript，6
 
 ### I
 
 - **IDE（集成开发环境），10**
+
 - **If...Then...Else 语句，58–61**
+
 - **IIS（Internet 信息服务器），7，395**
+
 - **爱虫病毒，304**
+
 - **InputBox() 函数，81，87–89**
+
 - **Internet Explorer，7，395**
+
   - DOM，109
+
   - 显示脚本错误，44
+
   - 版本，13–14
+
 - **解释型语言，395**
 
 ### J
 
 - **JavaScript，8，395**
+
 - **\<?job?\> XML 标签，241–244，389**
+
 - **.js 文件扩展名，209，389**
+
 - **JScript，9，395**
 
 ### K
 
 - **键盘事件处理程序，141–142**
+
 - **KeyDown 事件，395**
+
 - **KeyPress 事件，395**
+
 - **KeyUp 事件，395**
+
 - **关键字，377**
+
   - Private，71
+
   - Rem，47
+
   - While，63
 
 ### L
 
 - **LiveScript，8**
+
 - **加载事件，132，396**
+
 - **局部变量，53，396**
+
 - **location 对象，119–122，396**
+
   - window 对象，101
+
 - **location 属性，window 对象，169**
+
 - **LogEvent() 方法，328**
+
 - **逻辑，条件逻辑**
+
   - If...Then...Else 语句，58–61
+
   - Select Case 语句，61–62
+
 - **日志，267–271**
+
 - **循环语句，396**
+
 - **循环**
+
   - Do Until 语句，65–67
+
   - Do While 循环，62–64
+
   - For Each...Next 语句，70
+
   - For...Next 语句，67–68
+
   - While...Wend 语句，68–69
 
 #### M
 
 - **宏，396**
+
   - VBA，10–11
+
 - **MapNetworkDrive() 方法，345**
-- **映射到网络驱动器，346**
+
+- **映射到网�驱动器，346**
+
   - 断开映射的驱动器，346–347
+
 - **通过网络发送消息，338–339**
-
-
 
 ### 索引
 
 #### M
+
 -   方法，396
+
     -   alert()，112、390
+
     -   back()，122-125
+
     -   clear()，154
+
     -   close()，112
+
     -   confirm，391
+
     -   confirm()，112
+
     -   CopyFile()，280-281
+
     -   CopyFolder()，283-284
+
     -   CreateFolder()，282-283
+
     -   CreateObject()，225
+
     -   DeleteFile()，282
+
     -   DeleteFolder()，285
+
     -   FolderExists()，282-283
+
     -   forward()，122-125
+
     -   GetDriveName()，262
+
     -   GetFolder()，311
+
     -   go()，122-125
+
     -   LogEvent()，328
+
     -   MapNetworkDrive()，345
+
     -   MoveFile()，282
+
     -   MoveFolder()，284
+
     -   对象方法，377-379
+
     -   对象，98-99
+
     -   OpenTextFile()，268
+
     -   prompt()，111、399
+
     -   raise() 方法，155
+
     -   Read()，277
+
     -   ReadAll()，277-278
+
     -   ReadLine()，275
+
     -   reload()，119-122
+
     -   replace()，119-122
+
     -   运行时方法，235-238
+
     -   setTimeout()，157-158、160-161
+
     -   Skip()，276
+
     -   SkipLine()，276
+
     -   Windows 注册表，332
+
     -   Write()，272
+
     -   WriteBlankLines()，274
+
     -   WriteLine()，273
+
 -   WSH，28
+
 -   WSH 核心对象模型，229-231
+
 -   WshNetwork 对象，344-345
+
 -   **模式设置常量，355-356**
+
 -   **模型，对象模型。** 请参见对象模型
--   **鼠标事件处理程序，136-141**
+
+-   **鼠星事件处理程序，136-141**
+
 -   **MouseDown 事件，396**
+
 -   **MouseMove 事件，396**
+
 -   **MouseOut 事件，396**
+
     -   与鼠标悬停，163-166
+
 -   **MouseOver 事件，396**
-    -   与鼠标悬停，163-166
+
+    -   与鼠星悬停，163-166
+
 -   **MouseUp 事件，396**
+
 -   **MoveFile() 方法，282**
+
 -   **MoveFolder() 方法，284**
+
 -   **移动**
+
     -   文件
+
         -   File 对象，286
+
         -   FileSystemObject 对象，282
+
     -   文件夹
+
         -   FileSystemObject 对象，284
+
         -   Folder 对象，287-288
+
 -   **Msg_Blink() 函数，156-157**
+
 -   **MsgBox() 函数，81、82-87**
+
 -   **MsgBox 按钮**
+
     -   常量，354
+
     -   默认常量，355
+
 -   **MsgBox 函数，397**
+
 -   **MsgBox 图标常量，354、355**
+
 -   **MsgBox 返回值常量，356**
+
 -   **多维数组，397**
+
 -   **myButton_onClick() 函数，173-174**
+
     -   单选按钮，178-179
 
 #### N
+
 -   **命名约定，变量**，50-51、359
+
 -   **Navigator 对象**，397
+
 -   **navigator 对象**，125-131
+
     -   window 对象，101
+
 -   **.NET**，10
+
 -   **NET SEND 命令 (Windows)**，338-339
+
 -   **Netscape**，14-15
+
 -   **网络**，344-346
+
     -   驱动器，映射到，346
+
     -   发送消息，338-339
+
 -   **非公开对象，WSH 对象模型**，226
+
 -   **记事本**，4
+
 -   **Number 属性，Err 对象**，152
 
 #### O
+
 -   组织，95-96
+
 -   **密码对象**，399
+
     -   HTML 表单，184-185
+
 -   **属性**，97-98、379-380
+
 -   **单选对象**，400
+
 -   **引用**，97
+
 -   **重置对象**，400
+
 -   **运行时对象**，231-233
+
 -   **选择对象**，402
+
     -   HTML 表单，187-188
+
 -   **提交对象**，402
+
 -   **文本对象**，402
+
 -   **文本区域对象**，402
+
 -   **TextStream 对象**，402
+
 -   **Window 对象**，403
+
 -   **window 对象**，98
+
 -   **WshShortcut**，309
+
     -   属性，312
+
 -   **On Error Resume Next 语句**，148-151
+
 -   **onAbort 事件处理程序**，397
+
 -   **onBlur 事件处理程序**，397
+
 -   **onChange 事件处理程序**，397
+
 -   **onClick 事件处理程序**，136、397
+
 -   **onDblClick 事件处理程序**，136、397
+
 -   **onError 事件处理程序**，397
+
 -   **onFocus 事件处理程序**，398
+
 -   **onKeyDown 事件处理程序**，141、398
+
 -   **onKeyPress 事件处理程序**，141、398
+
 -   **onKeyUp 事件处理程序**，141、398
+
 -   **onLoad 事件处理程序**，132、133、398
+
 -   **onMouseDown 事件处理程序**，136、398
+
 -   **onMouseMove 事件处理程序**，136、398
+
 -   **onMouseOut 事件处理程序**，136、398
--   **onMouseOver 事件处理程序**，136、398
+
 -   **onMouseUp 事件处理程序**，136、398
+
+-   **onMouseOver 事件处理程序**，136、398
+
 -   **onMouseWheel 事件处理程序**，136
+
 -   **onMove 事件处理程序**，133
+
 -   **onReset 事件处理程序**，398
+
 -   **onResize 事件处理程序**，133、398
+
 -   **对象方法**，377-379
+
 -   **对象模型**，99-100
+
     -   DHTML，100-102
+
     -   Windows 应用程序，325-327
+
     -   WSH，208
+
 -   **\<object\> XML 标签**，241、246、389
+
 -   **对象**，94-95、397
+
     -   基于浏览器的，94
+
     -   浏览器对象，109-110
+
     -   window 对象，110-116
+
     -   按钮对象，HTML 表单，173-174
+
     -   复选框对象，HTML 表单，174-177
+
     -   集合，102
+
     -   document 对象，117-119
+
     -   **Err**，151-155
+
     -   事件，99
+
     -   **FileSystemObject**，260
+
     -   **隐藏**
+
         -   HTML 表单，185-187
+
     -   **history 对象**，122-125
+
     -   **location 对象**，119-122
+
     -   **方法**，98-99
+
         -   对象方法，377-379
+
     -   **onSelect 事件处理程序**，398
+
     -   **onSubmit 事件处理程序**，399
+
     -   **onUnload 事件处理程序**，133、399
+
     -   **打开文件**，268-271
+
     -   **OpenTextFile() 方法，常量**，268
+
     -   **操作系统，WSH 兼容性**，25-26、210-211
+
     -   **运算符**
+
         -   算术，55-56、380
+
         -   比较，56-58、380-381
+
         -   连接，56
+
         -   优先级顺序，382
+
     -   **选项对象**，399
+
     -   **优先级顺序，运算符**，382
+
     -   **对象的组织**，95-96
+
     -   **Outlook Express**，8
+
     -   **prompt 方法**，399
+
     -   **提示**，399
+
     -   **属性**，399
+
         -   AtEndOfStream，274-275
+
         -   document 对象，118-119
+
         -   DOM，104
+
         -   Err 对象，151-152
+
         -   文件，Windows 文件系统，265-266
+
         -   HTML 表单，172-173
+
         -   对象，97-98、379-380
+
         -   运行时对象，233-235
+
         -   快捷方式，306
+
             -   定义，311-312
+
         -   status 属性，window 对象，155-159
+
         -   WSH，28
+
         -   WSH 核心对象模型，228-229
+
         -   WshNetwork 对象，344-345
+
         -   WshShortcut 对象，312
+
     -   **Python**，400
 
 #### P
+
 -   **\<package\> XML 标签**，241、245、389
+
 -   **参数**，399
+
 -   **对象方法中的括号**，98
+
 -   **密码对象**，399
+
     -   HTML 表单，184-185
+
 -   **Perl (Practical Extraction and Reporting Language)**，399
+
 -   **PerlScript**，399
+
 -   **弹出对话框**，5、81-82、361-362
+
     -   InputBox() 函数，87-89
+
     -   MsgBox() 函数，82-87
+
 -   **打印机，WSH 与**，25
+
 -   **Private 关键字**，71
+
 -   **过程**，70-71、399
+
     -   函数，71-73
+
 -   **process_Order() 函数**，193
+
 -   **编程语言，Visual Basic 系列**，10-12
+
 -   **程序**，399
+
 -   **程序文件夹**，309
+
 -   **prompt() 方法**，111
 
 #### Q
+
 -   **快速启动栏**，305、400
+
     -   自定义，314-315
+
     -   WSH 与，25
 
 #### R
+
 -   **单选按钮，HTML 表单**，177-179
+
 -   **单选对象**，400
+
 -   **raise() 方法，Err 对象**，155
+
 -   **Read() 方法**，277
+
 -   **ReadAll() 方法**，277-278
+
 -   **从文件读取**，274-276
+
     -   整个文件，277-278
+
     -   格式化数据，277
+
     -   跳过部分内容，276
+
 -   **从注册表读取**，333
+
 -   **ReadLine() 方法**，275
+
 -   **ReDim 语句**，80、400
+
 -   **\<reference\> XML 标签**，241、246-247、389
+
 -   **引用，外部脚本**，22-23
+
 -   **Regedit 实用工具**，332
+
 -   **注册表单，HTML 表单示例**，190-194
+
 -   **注册表。** 请参见 Windows 注册表
+
 -   **reload() 方法**，119-122
+
 -   **reloadButton_onclick 子程序**，124
+
 -   **Rem 关键字，注释**，47、400
+
 -   **replace() 方法**，119-122
+
 -   **报告**，267-271
+
 -   **保留字**，382-383、400
+
 -   **重置按钮，HTML 表单**，188-190
+
 -   **重置事件**，400
+
 -   **重置对象**，400
+
 -   **调整大小事件**，400
+
 -   **\<resource\> XML 标签**，241、247-248、390
+
 -   **获取 cookie**，199-200
+
 -   **返回值，MsgBox**，86
+
 -   **REXX (Restructured Extended Exactor language)**，401
+
 -   **鼠标悬停**，161-166、401
+
     -   框架，169
+
 -   **运行实用工具，打开 (Windows)**，316
+
 -   **运行时常量**，238-239
+
 -   **运行时错误**，146、362-365、401
+
 -   **运行时方法**，235-238
+
 -   **运行时对象**，231-233
+
     -   FileSystemObject，260
+
     -   属性，233-235
 
 #### S
+
 -   **计划任务文件夹**，401
+
 -   **计划任务向导**，295-299、401
+
 -   **调度脚本执行**，343-344
+
 -   **作用域**，401
+
 -   **作用域，变量**，52-54
+
 -   **脚本常量**，357
+
 -   **脚本编辑器，共享软件**，40
+
 -   **脚本引擎，WSH**，213、215-216
+
 -   **脚本文件，执行**，249-252
+
 -   **\<SCRIPT\> 标签，HTML**，16
+
 -   **\<script\> XML 标签**，241、248-249、390
+
 -   **脚本引擎，WSH**，208、401
+
 -   **脚本宿主，WSH 与**，208
+
 -   **脚本语言**，4-5
+
     -   Shell 脚本，24
+
 -   **脚本**，401。另请参见 VBScript
+
     -   功能，5-7
+
     -   注释，46-48
+
     -   创建，17-20
+
     -   嵌入式，错误，42
+
     -   响应事件执行，20-22
+
     -   执行，调度，293-295
+
     -   外部，引用，22-23
+
     -   与网页集成，15-17
+
     -   调度执行，343-344
+
     -   Shell 脚本，24
+
     -   语法，40-41
+
     -   测试，19-20
+
     -   实用工具，启动，315
+
     -   WSH，编写，29-32
+
 -   **滚动消息，状态栏**，157-159
+
 -   **Scroll_Msg() 函数**，157-158
+
 -   **搜索结果实用工具，打开 (Windows)**，317
+
 -   **安全日志**，327
+
 -   **Select Case 语句**，61-62、401
+
 -   **select 事件**，401
+
 -   **select 对象**，402
+
     -   HTML 表单，187-188
+
 -   **服务，WSH 与**，25
+
 -   **Set_Screen_Saver() 函数**，335-336
+
 -   **setTimeout() 方法**，157-158、160-161
+
 -   **Shell 脚本**，24
+
 -   **快捷方式属性表**，307
+
 -   **快捷方式，桌面**，305-308
+
     -   创建，308-310
+
     -   删除，311
+
     -   指向文件夹，310-311
-
-
 
 ### 索引
 
 **属性,** 306
+
   定义, 311–312
 
 **Skip( ) 方法,** 276
@@ -9750,18 +9766,25 @@ VBScript 有一些特殊字符，你在编写脚本时必须了解。要在 VBSc
 **特殊字符,** 384
 
 **开始菜单**
+
   配置, 313
+
   WSH 与, 25
 
 **StartMenu 文件夹,** 309
 
 **语句,** 46, 385–386, 402
+
   注释, 46–48
+
   对非 IE 浏览器隐藏, 44–45
 
 **状态栏,** 402
+
   添加闪烁消息, 155–156
+
   增强功能, 155–159
+
   滚动消息, 157–159
 
 **status 属性, window 对象,** 155–159
@@ -9777,6 +9800,7 @@ VBScript 有一些特殊字符，你在编写脚本时必须了解。要在 VBSc
 **子程序,** 73–74, 402
 
 **语法,** 40–41
+
   错误, 41–44, 146, 365–367, 402
 
 **系统日志,** 327
@@ -9786,17 +9810,23 @@ VBScript 有一些特殊字符，你在编写脚本时必须了解。要在 VBSc
 **标签, XML,** 241
 
 **任务计划程序**
+
   其局限性, 299–300
+
   设置, 289–292
 
 **模板**
+
   注释与, 47
+
   创建, 257–259
 
 **测试脚本,** 19–20
 
 **文本编辑器,** 4–5
+
   HomeSite, 12–13
+
   共享软件, 40
 
 **HTML 表单中的文本,** 180–181
@@ -9830,9 +9860,13 @@ VBScript 有一些特殊字符，你在编写脚本时必须了解。要在 VBSc
 **用户, WSH 与,** 25
 
 **实用程序**
+
   命令行, 337–344
+
   Regedit, 332
+
   Windows, 从脚本启动, 315–318
+
   WSH/Windows 集成, 315–320
 
 ### V
@@ -9840,36 +9874,55 @@ VBScript 有一些特殊字符，你在编写脚本时必须了解。要在 VBSc
 **验证,** 403
 
 **变量,** 49–50, 403
+
   数据类型, 360–361
+
   声明, 360
+
   全局, 53
+
   局部, 53
+
   命名, 50–51
+
   命名规则, 359
+
   运算符与, 55–56
+
   作用域, 52–54
+
   用途, 51–52
 
 **变体,** 49, 403
+
   子类型, 50
 
 **VarType 常量,** 357–358, 358–359
 
 **VBA (Visual Basic for Applications),** 10
+
   对比表, 11
 
 **.vbs 文件扩展名,** 29, 389
 
 **VBScript,** 403. 另请参见脚本
+
   对比表, 11
+
   嵌入在 HTML 页面中, 6
+
   历史, 8–9
+
   概述, 4–5
+
   源代码, 查看, 33–35
+
   WSH 与, 27
+
   WSH 架构与, 212–216
 
 **病毒,** 304. 另请参见蠕虫
+
   ILOVEYOU, 304
 
 **Visual Basic 对比表,** 11
@@ -9879,7 +9932,9 @@ VBScript 有一些特殊字符，你在编写脚本时必须了解。要在 VBSc
 ### W
 
 **网页**
+
   与脚本集成, 15–17
+
   必需工具, 12–14
 
 **书籍网站,** 388
@@ -9895,48 +9950,83 @@ VBScript 有一些特殊字符，你在编写脚本时必须了解。要在 VBSc
 **window 事件处理程序,** 133–135
 
 **window 对象,** 98, 110–116, 403
+
   document 对象, 101
+
   frames 集合, 101
+
   history 对象, 101
+
   location 对象, 101
+
   navigator 对象, 101
+
   status 属性, 155–159
 
 **Windows**
+
   应用程序, 320–325
+
     使用对象模型集成, 325–327
+
   命令行实用程序, 337–344
+
     命令, 337–344
+
       net group, 341–343
+
       net localgroup, 341–343
+
       NET SEND, 338–339
+
       net user, 341–343
+
     配置设置, 修改, 334–336
+
     事件日志, 写入, 327–330
+
     服务, 管理, 340
+
     开始菜单, 配置, 313
+
     用户帐户, 341–343
+
   实用程序
+
     从脚本启动, 315–318
+
     WSH 集成, 315–320
+
   窗口样式, 321
 
 **Windows 事件查看器控制台, 日志与,** 328
 
 **Windows 文件系统**
+
   访问, 259–261
+
   关闭文件, 268–271
+
   文件属性, 265–266
+
   磁盘可用空间, 261–263
+
   打开文件, 268–271
 
 **Windows 注册表,** 330–332
+
   删除, 333
+
   函数, 332
+
   键, 顶级, 331–332
+
   方法, 332
+
   读取, 333
+
   写入, 333
+
   WSH 与, 25
 
 **Windows 脚本控制台 (Microsoft),** 8
@@ -9952,14 +10042,21 @@ VBScript 有一些特殊字符，你在编写脚本时必须了解。要在 VBSc
 **WriteLine( ) 方法,** 273
 
 **写入**
+
   文件
+
     添加字符, 272–273
+
     添加行, 273
+
     空行, 273–274
+
   注册表, 333
 
 **WScript, WSH,** 213, 214–215, 403–404
+
   命令行配置, 217
+
   Windows 桌面配置, 220–221
 
 **Wscript.exe 文件,** 27
@@ -9969,37 +10066,65 @@ VBScript 有一些特殊字符，你在编写脚本时必须了解。要在 VBSc
 **WSF (Windows 脚本文件),** 404
 
 **WSH 核心对象模型,** 213, 224–228
+
   方法, 229–231
+
   未公开对象, 226
+
   属性, 228–229
 
 **.wsh 文件扩展名,** 389
 
 **WSH (Windows 脚本宿主),** 3, 7, 207, 404
+
   架构, 26–28
+
     VBScript 与, 212–216
+
   CScript, 214–215
+
   执行宿主, 214–215, 216–217
+
     CScript 配置, 217–220
+
     脚本处理, 221–224
+
     WScript 配置, 217–220
+
   方法, 28
+
   对象模型, 208
+
   操作系统与, 25–26
+
   操作系统兼容性, 210–211
+
   概述, 24–26
+
   属性, 28
+
   脚本引擎, 215–216
+
   脚本编写引擎, 208
+
   脚本编写宿主, 208
+
   模板, 创建, 257–259
+
   用途, 209–210
+
   实用程序, 集成, 315–320
+
   VBScript 与, 27
+
   VBScript 编写, 29
+
     Windows 命令提示符, 30–32
+
   版本, 操作系统与, 211
+
   WScript, 214–215
+
     Windows 桌面配置, 220–221
 
 **WshArguments 对象,** 404
@@ -10007,7 +10132,9 @@ VBScript 有一些特殊字符，你在编写脚本时必须了解。要在 VBSc
 **WshEnvironment 对象,** 404
 
 **WshNetwork 对象,** 404
+
   方法, 344–345
+
   属性, 344–345
 
 **WSH.ocx 控件,** 404
@@ -10015,6 +10142,7 @@ VBScript 有一些特殊字符，你在编写脚本时必须了解。要在 VBSc
 **WshShell 对象,** 404
 
 **WshShortcut 对象,** 309, 404
+
   属性, 312
 
 **WshSpecialFolders 对象,** 404
@@ -10024,7 +10152,8 @@ VBScript 有一些特殊字符，你在编写脚本时必须了解。要在 VBSc
 ### X
 
 **XML (可扩展标记语言),** 208, 240–241, 404
-  标签, 241–249
+
+  标筓, 241–249
 
 **<?XML?> XML 标签,** 241, 242–243, 389
 
@@ -10041,34 +10170,53 @@ VBScript 有一些特殊字符，你在编写脚本时必须了解。要在 VBSc
 ![image](img/26f0ae5097205615f9285e10dc13f45e_446_3.png)
 
 **周末轻松创建 Macromedia Flash 影片**
+
 0-7615-2866-0 • U.S. $29.99
+
 Can. $44.95 • U.K. £21.99
 
 **周末轻松优化您的 PC, 第2版**
+
 1-941841-03-9 • U.S. $19.99
+
 Can. $29.95 • U.K. £14.99
 
 **周末轻松创建 Microsoft PowerPoint 2002 演示文稿**
+
 0-7615-3397-4 • U.S. $24.99
+
 Can. $37.95 • U.K. £18.99
 
 **周末轻松学会 JavaScript, 第3版**
+
 0-7615-3332-X • U.S. $24.99
+
 Can. $37.95 • U.K. £18.99
 
 ### 其他热门主题
 
 | 书籍 | 详情 | 价格 |
+
 |---|---|---|
+
 | 周末轻松搭建您的家庭影院 | 0-7615-2744-3 | U.S. $24.99, Can. $37.95, U.K. £18.99 |
+
 | 周末轻松创建 FrontPage 2002 网页 | 0-7615-3447-4 | U.S. $24.99, Can. $37.95, U.K. £18.99 |
+
 | 周末轻松提升您的网站流量, 第3版 | 0-7615-2313-8 | U.S. $24.99, Can. $37.95, U.K. £18.99 |
+
 | 周末轻松创建您的第一个网页, 第3版 | 0-7615-2482-7 | U.S. $24.99, Can. $37.95, U.K. £18.99 |
+
 | 周末轻松学会 HTML, 修订版 | 0-7615-1800-2 | U.S. $24.99, Can. $37.95, U.K. £18.99 |
+
 | 周末轻松学会 Microsoft Windows Me | 0-7615-3297-8 | U.S. $19.99, Can. $29.95, U.K. £14.99 |
+
 | 周末轻松让您的网站充满活力 | 0-7615-2505-X | U.S. $24.99, Can. $37.95, U.K. £18.99 |
+
 | 周末轻松启动您的在线求职 | 0-7615-2452-5 | U.S. $24.99, Can. $37.95, U.K. £18.99 |
+
 | 周末轻松学会数码摄影 | 0-7615-1532-1 | U.S. $24.99, Can. $37.95, U.K. £18.99 |
+
 | 周末轻松搭建您的家庭办公室 | 0-7615-3054-1 | U.S. $24.99, Can. $37.95, U.K. £18.99 |
 
 ### 周末轻松完成
@@ -10076,9 +10224,11 @@ Can. $37.95 • U.K. £18.99
 ![image](img/26f0ae5097205615f9285e10dc13f45e_446_4.png)
 
 Premier Press
+
 www.premierpressbooks.com
 
 ### 立即致电订购！
+
 1.800.428.7267
 
 ## Premier Press fast&easy 系列
@@ -10090,40 +10240,75 @@ www.premierpressbooks.com
 *fast & easy* 系列以极具吸引力的价格提供非凡价值，致力于一个理念：帮助读者尽可能快速、轻松地完成任务。独特的视觉教学方法结合了简明的教程和数百张屏幕截图，显著提高了学习速度和知识掌握程度。通过 Premier Press *fast & easy* 系列，您只需观看即可轻松学会。
 
 - The Official Family Tree Maker Version 9 Fast & Easy
+
   1-931841-02-0
+
   U.S. $18.99 • Can. $28.95 • U.K. £13.99
+
 - Microsoft Works Suite 2001 Fast & Easy
+
   0-7615-3371-0
+
   U.S. $24.99 • Can. $37.95 • U.K. £18.99
+
 - Microsoft Office XP Fast & Easy
+
   0-7615-3388-5
+
   U.S. $18.99 • Can. $28.95 • U.K. £13.99
+
 - Microsoft Windows Millennium Edition Fast & Easy
+
   0-7615-2739-7
+
   U.S. $18.99 • Can. $28.95 • U.K. £13.99
+
 - Microsoft Access 2002 Fast & Easy
+
   0-7615-3395-8
+
   U.S. $18.99 • Can. $28.95 • U.K. £13.99
+
 - Microsoft Outlook 2002 Fast & Easy
+
   0-7615-3422-9
+
   U.S. $18.99 • Can. $28.95 • U.K. £13.99
+
 - Paint Shop Pro 7 Fast & Easy
+
   0-7615-3241-2
+
   U.S. $18.99 • Can. $28.95 • U.K. £13.99
+
 - Microsoft Excel 2002 Fast & Easy
+
   0-7615-3398-2
+
   U.S. $18.99 • Can. $28.95 • U.K. £13.99
+
 - Microsoft PowerPoint 2002 Fast & Easy
+
   0-7615-3396-6
+
   U.S. $18.99 • Can. $28.95 • U.K. £13.99
+
 - Quicken 2001 Fast & Easy
+
   0-7615-2908-X
+
   U.S. $18.99 • Can. $28.95 • U.K. £13.99
+
 - Microsoft FrontPage 2002 Fast & Easy
+
   0-7615-3390-7
+
   U.S. $18.99 • Can. $28.95 • U.K. £13.99
+
 - Microsoft Word 2002 Fast & Easy
+
   0-7615-3393-1
+
   U.S. $18.99 • Can. $28.95 • U.K. £13.99
 
 ![image](img/26f0ae5097205615f9285e10dc13f45e_447_1.png)
@@ -10136,8 +10321,6 @@ Fast & Easy 是 Premier Press 的注册商标。所有其他产品和公司名�
 
 ![image](img/26f0ae5097205615f9285e10dc13f45e_447_2.png)
 
-
-
 ### 快速简便的Web开发
 
 更省时。更省力。更专注于开发。
@@ -10147,65 +10330,97 @@ Fast & Easy 是 Premier Press 的注册商标。所有其他产品和公司名�
 ![](img/26f0ae5097205615f9285e10dc13f45e_448_0.png)
 
 - Adobe® LiveMotion™ 快速简便® Web开发
+
   0-7615-3254-4 • 含CD
+
   美国$29.99 • 加拿大$44.95 • 英国£21.99
 
 - ASP 3 快速简便® Web开发
+
   0-7615-2854-7 • 含CD
+
   美国$24.99 • 加拿大$37.95 • 英国£18.99
 
 - CGI 快速简便® Web开发
+
   0-7615-2938-1 • 含CD
+
   美国$24.99 • 加拿大$37.95 • 英国£18.99
 
 - ColdFusion® 快速简便® Web开发
+
   0-7615-3016-9 • 含CD
+
   美国$24.99 • 加拿大$37.95 • 英国£18.99
 
 - Macromedia® Director® 8 和 Lingo™ 快速简便® Web开发
+
   0-7615-3049-5 • 含CD
+
   美国$24.99 • 加拿大$37.95 • 英国£18.99
 
 - Macromedia® Dreamweaver® 4 快速简便® Web开发
+
   0-7615-3518-7 • 含CD
+
   美国$29.99 • 加拿大$44.95 • 英国£21.99
 
 - Macromedia® Dreamweaver® UltraDev™ 4 快速简便® Web开发
+
   0-7615-3517-9 • 含CD
+
   美国$29.99 • 加拿大$44.95 • 英国£21.99
 
+
+
 - Macromedia® Fireworks® 4 快速简便® Web开发
+
   0-7615-3519-5 • 含CD
+
   美国$29.99 • 加拿大$44.95 • 英国£21.99
 
 - Macromedia® Flash™ 5 快速简便® Web开发
+
   0-7615-2930-6 • 含CD
+
   美国$24.99 • 加拿大$37.95 • 英国£18.99
 
 - HomeSite™ 4.5 快速简便® Web开发
+
   0-7615-3182-3 • 含CD
+
   美国$29.99 • 加拿大$44.95 • 英国£21.99
 
 - Java™ 2 快速简便® Web开发
+
   0-7615-3056-8 • 含CD
+
   美国$24.99 • 加拿大$37.95 • 英国£18.99
 
 - JavaServer Pages™ 快速简便® Web开发
+
   0-7615-3428-8 • 含CD
+
   美国$29.99 • 加拿大$44.95 • 英国£21.99
 
 - PHP 快速简便® Web开发
+
   0-7615-3055-x • 含CD
+
   美国$24.99 • 加拿大$37.95 • 英国£18.99
 
 - XHTML 快速简便® Web开发
+
   0-7615-2785-0 • 含CD
+
   美国$24.99 • 加拿大$37.95 • 英国£18.99
 
 立即致电订购！
+
 1.800.428.7267
 
 Premier Press, Inc.
+
 www.premierpressbooks.com
 
 ### 面向完全初学者
@@ -10214,43 +10429,58 @@ www.premierpressbooks.com
 
 ![](img/26f0ae5097205615f9285e10dc13f45e_449_0.png)
 
-**让我们面对现实。** C++、JavaScript和Java可能有点令人生畏。这就是为什么Premier Press开发了我们的最新系列——*面向完全初学者*，一个有趣且不具威胁性的编程入门系列。
+让我们面对现实。**C++、JavaScript和Java**可能有点令人生畏。这就是为什么Premier Press开发了我们的最新系列——*面向完全初学者*，一个有趣且不具威胁性的编程入门系列。
 
 本系列中的每一本书都使用简单的游戏编程作为教学辅助工具，教授特定的编程语言。如果您是编程新手，想要学习并乐在其中，那么Premier Press的*面向完全初学者*系列正是您期待已久的！
 
 ![](img/26f0ae5097205615f9285e10dc13f45e_449_1.png)
 
 - **面向完全初学者的ASP编程**
+
   ISBN 1-931841-01-2
+
   美国$29.99，加拿大$44.95，英国£21.99
 
 - **面向完全初学者的JavaScript™编程**
+
   ISBN 0-7615-3410-5
+
   美国$29.99，加拿大$44.95，英国£21.99
 
 - **面向完全初学者的C++编程**
+
   ISBN 1-931841-43-8
+
   美国$29.99，加拿大$44.95，英国£21.99
 
 - **面向完全初学者的Palm™编程**
+
   ISBN 0-7615-3524-1
+
   美国$29.99，加拿大$44.95，英国£21.99
 
 - **面向完全初学者的Java™编程**
+
   ISBN 0-7615-3522-5
+
   美国$29.99，加拿大$44.95，英国£21.99
 
 - **面向完全初学者的Visual Basic®编程**
+
   ISBN 0-7615-3553-5
+
   美国$29.99，加拿大$44.95，英国£21.99
 
 Premier Press
+
 www.premierpressbooks.com
 
 立即致电订购
+
 **(800)428-7267**
 
 ### 掌握Microsoft® VBScript的威力
+
 #### 在一个周末内
 
 现在，您只需一个周末就能成为VBScript高手！周五，您将开始接触VBScript简介，并了解它与Visual Basic®编程家族中其他语言的比较。周六，您将开始学习语法、基本编程语句和网页技巧。周日，您将学习VBScript如何与Windows脚本宿主和XML协同工作，以及处理文件和文件夹的细节。周日晚上，您将通过学习如何自动化Windows任务，将新掌握的技能融会贯通。
@@ -10258,21 +10488,31 @@ www.premierpressbooks.com
 #### 仅需一个周末，您将学会如何：
 
 - 将VBScript集成到您的网页中
+
 - 使用对象并处理事件
+
 - 增强状态栏并在网页上实现悬停效果
+
 - 将VBScript融入WSH架构
+
 - 写入和读取文件
+
 - 通过自定义和自动化掌控您的Windows桌面
 
 **本书所有源代码以及额外的在线链接，可从以下地址下载：**
+
 **http://www.premierpressbooks.com/downloads.asp**
 
 **Premier Press, Inc.**
+
 **www.premierpressbooks.com**
 
 **用户级别：初级至中级**
+
 **类别：编程**
+
 **美国$29.99 加拿大$46.95 英国£21.99**
 
 **ISBN 1-931841-70-5**
+
 **9 781931 841702 52999**

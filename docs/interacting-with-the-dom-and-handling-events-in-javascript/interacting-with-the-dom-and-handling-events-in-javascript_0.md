@@ -1,11 +1,9 @@
+
 # JavaScript DOM 交互与事件处理
-
-
 
 ![](img/image_rsrc36A.jpg)
 
-
-# 前言
+## 前言
 
 JavaScript 已成为现代 Web 开发的支柱，提供了创建动态、交互式 Web 应用程序的强大能力。这种动态性的核心在于文档对象模型（DOM）和事件处理——这些基本概念使开发者能够创建响应式、用户友好的 Web 体验。
 
@@ -13,40 +11,40 @@ JavaScript 已成为现代 Web 开发的支柱，提供了创建动态、交互�
 
 随着时间的推移，随着网站演变为丰富的动态应用程序，对 DOM 的更好控制以及更高级的事件处理技术的需求日益增长。掌握这些技能对于任何希望创建引人入胜的 Web 体验的开发者来说都变得至关重要。本书旨在深入探讨 JavaScript 中的 DOM 操作和事件处理，为你提供将 Web 开发技能提升到新水平的工具和知识。
 
-## 本书适合谁
+### 本书适合谁
 
 本书面向希望学习或提升 DOM 操作和事件处理技能的 Web 开发者和 JavaScript 爱好者。无论你是刚刚开始前端开发之旅，还是经验丰富的开发者希望完善技术，本书都将是一本实用的指南。具备 HTML、CSS 和 JavaScript 的基础知识将有所帮助，因为本书建立在这些基础之上。
 
-## 你将学到什么
+### 你将学到什么
 
 在本书中，你将探索 DOM 的方方面面以及 JavaScript 提供的与之交互的各种方法。你将学习如何：
 
-*   选择元素
-*   更改其内容和样式
-*   添加或删除元素
-*   处理用户驱动的事件，使你的 Web 应用程序更具交互性
+* 选择元素
+* 更改其内容和样式
+* 添加或删除元素
+* 处理用户驱动的事件，使你的 Web 应用程序更具交互性
 
 我们将从基础开始，介绍 DOM 和事件处理的基本概念。随着学习的深入，你将接触到更高级的技术，例如事件委托和动态 DOM 更新，这些对于构建可扩展的 Web 应用程序至关重要。
 
 在整本书中，我包含了代码示例、最佳实践和性能考虑，以帮助你编写高效且可维护的 JavaScript。到最后，你将扎实理解如何与 DOM 交互以及如何处理事件，以创建丰富的用户体验。
 
-## 为什么选择这本书？
+### 为什么选择这本书？
 
 尽管有许多关于 JavaScript 和 Web 开发的资源，但许多资源忽略了 DOM 和事件处理的复杂性。随着 React、Vue 和 Angular 等现代 JavaScript 框架的兴起，一些开发者已不再直接与 DOM 交互。然而，深入理解 DOM 的工作原理以及如何管理事件仍然至关重要——即使在使用这些框架时也是如此。这些知识构成了基础，使学习和使用更高级的库更加有效。
 
 本书提供了一种全面的、动手实践的方法来掌握这些基本技能。它通过不仅解释如何操作 DOM，还演示如何高效且注重性能地进行操作，弥合了理论与实践之间的差距。每一章都旨在逐步建立你的理解，从 DOM 的基本结构开始，一直到现代事件处理技术的复杂性。
 
-## 本书的组织结构
+### 本书的组织结构
 
 本书分为八章，从 DOM 的介绍开始，逐步深入到更高级的概念，如事件委托、表单处理和异步 DOM 更新。在此过程中，实际示例和迷你项目为你提供了应用所学知识的背景。最后几章介绍了现代 JavaScript 框架和 Web Components 等新技术，让你一窥 Web 开发的未来。
 
-## 如何使用本书
+### 如何使用本书
 
 你可以从头到尾阅读本书，也可以直接跳转到与你当前需求相符的特定章节。每一章都是独立的，包含清晰的解释和代码示例，以帮助你掌握概念。后面章节中提供的项目旨在通过在实际场景中应用各种技术来巩固你的学习。
 
 我鼓励你在阅读本书的过程中尝试示例并尝试构建自己的项目。边做边学是掌握 JavaScript 在 DOM 操作和事件处理方面能力的关键。
 
-## 最后的话
+### 最后的话
 
 与 DOM 交互和处理事件的能力是创建动态、交互式 Web 应用程序的核心。无论你是在构建一个简单的待办事项列表还是一个复杂的单页应用程序（SPA），这些技能都是无价的。当你读完本书时，你将扎实理解如何使用 JavaScript 让你的网页栩栩如生，为用户创造无缝且引人入胜的体验。
 
@@ -59,9 +57,11 @@ WebLighters Studio
 # 第 1 章：DOM 简介
 
 ## 1.1 什么是 DOM？
+
 文档对象模型（DOM）是用于 HTML 和 XML 文档的编程接口。它将文档结构表示为树形层次结构的对象，允许开发者使用 JavaScript 等编程语言动态地访问和操作网页的内容、结构和样式。
 
 ### 文档对象模型 (DOM) 解释
+
 DOM 充当网页与编程语言之间的桥梁，它提供了文档的结构化表示，可以使用 JavaScript 等脚本语言进行修改。它定义了：
 
 1. 文档的结构
@@ -71,12 +71,14 @@ DOM 充当网页与编程语言之间的桥梁，它提供了文档的结构化�
 DOM 并不是一种编程语言，但没有它，JavaScript 就对网页、HTML 文档、XML 文档及其组成部分没有任何模型或概念。文档中的每一个元素——整个文档、头部（head）、文档中的表格、表头、单元格内的文本——都是该文档文档对象模型的一部分。这些元素可以使用 DOM 和像 JavaScript 脚本语言进行访问和操作。
 
 DOM 的关键特性包括：
+
 - 与平台和语言无关：DOM 设计上用于在任何编程语言和任何平台上的运行。
 - 动态访问：它允许对文档的内容、结构和样式进行动态访问。
 - 程序化控制：开发者可以通过编程更改文档的结构、样式和内容。
 - 标准化：DOM 是 W3C（世界维网联盟）标准，确保了不同浏览器和平台之间的一致性。
 
 ### 理解浏览器如何解释 HTML 文档
+
 当网页浏览器加载 HTML 文档时，它会经过几个步骤来解释并显示内容：
 
 1. 解析（Parsing）：浏览器解析 HTML，将其转换为 DOM 树结构。
@@ -89,30 +91,38 @@ DOM 的关键特性包括：
 理解这一过程对于 Web 开发者至关重要，因为有助于优化网页性能并创建高效、响应式的设计。
 
 ## 1.2 DOM 树结构
+
 DOM 将文档表示为层次化的树结构，由各种类型的节点组成。这种树形表示允许对文档的内容和结构进行高效的遍历和操作。
 
 ### 节点：元素、文本、注释、文档等
+
 DOM 树由不同类型的节点组成，每个节点代表文档的特定部分。主要的节点类型有：
 
 1. **文档节点 (Document Node)**：
    - 代表整个文档
    - 作为 DOM 树的根节点
    - 每个页面只有一个文档节点
+
 2. **元素节点 (Element Nodes)**：
-   - 代表 HTML 元素（例如 `<div>`、`<p>`, `<a>`）
+   - 代表 HTML 元素（例如 `<div>`、`<p>`、`<a>`）
    - 可以拥有属性和子节点
    - 构成文档的结构
+
 3. **属性节点 (Attribute Nodes)**：
    - 代表元素节点的属性
    - 不视为子节点，而是元素的属性
+
 4. **文本节点 (Text Nodes)**：
    - 包含元素内的实际内容
    - 始终是叶子节点（没有子节点）
+
 5. **注释节点 (Comment Nodes)**：
    - 代表文档中的 HTML 注释
    - 浏览器不渲染，但可以通过 DOM 访问
+
 6. **文档类型节点 (DocumentType Node)**：
    - 代表类型声明（例如 `<!DOCTYPE html>`）
+
 7. **文档碎片节点 (DocumentFragment Node)**：
    - 轻量级文档，用于存储文档片段
    - 用于在将节点添加到活动 DOM 之前进行操作
@@ -120,7 +130,9 @@ DOM 树由不同类型的节点组成，每个节点代表文档的特定部分�
 理解这些节点类型对于有效的 DOM 操作至关重要，因为不同类型的节点具有不同的属性和方法。
 
 ### DOM 树的层次结构表示
+
 DOM 树按照层次化的父子关系组织，其中：
+
 - 文档节点位于层次结构的顶端（根节点）。
 - 元素节点可以是其他元素的父节点、子节点或兄弟节点。
 - 文本节点和注释节点始终是叶子节点（不能拥有子节点）。
@@ -146,15 +158,12 @@ Document
 ```
 
 在此表示中：
+
 - Document 节点是根。
 - html 是 Document 的子节点，是 head 和 body 的父节点。
 - head 和 body 是兄弟节点。
-
-
-
-
-*   文本节点（如"Welcome"或"This is a paragraph."）是叶子节点。
-*   注释节点是`div`元素的子节点。
+- 文本节点（如"Welcome"或"This is a paragraph."）是叶子节点。
+- 注释节点是 `div` 元素的子节点。
 
 这种层次结构允许高效地遍历和操作文档。例如，你可以轻松地从一个节点移动到它的父节点、子节点或兄弟节点，这对于许多 DOM 操作来说是基础。
 
@@ -202,29 +211,29 @@ JavaScript 通过 Web 浏览器提供的一组 API（应用程序编程接口）
 
 JavaScript 中 DOM 操作的关键概念包括：
 
-*   选择元素：
-    *   `document.getElementById()`
-    *   `document.getElementsByClassName()`
-    *   `document.getElementsByTagName()`
-    *   `document.querySelector()` 和 `document.querySelectorAll()`
+* 选择元素：
+  * `document.getElementById()`
+  * `document.getElementsByClassName()`
+  * `document.getElementsByTagName()`
+  * `document.querySelector()` 和 `document.querySelectorAll()`
 
-*   修改元素：
-    *   更改文本内容：`element.textContent` 或 `element.innerText`
-    *   更改 HTML 内容：`element.innerHTML`
-    *   修改属性：`element.setAttribute()`、`element.getAttribute()`
+* 修改元素：
+  * 更改文本内容：`element.textContent` 或 `element.innerText`
+  * 更改 HTML 内容：`element.innerHTML`
+  * 修改属性：`element.setAttribute()`、`element.getAttribute()`
 
-*   创建和删除元素：
-    *   创建：`document.createElement()`
-    *   追加：`parentElement.appendChild()`
-    *   删除：`element.remove()` 或 `parentElement.removeChild()`
+* 创建和删除元素：
+  * 创建：`document.createElement()`
+  * 追加：`parentElement.appendChild()`
+  * 删除：`element.remove()` 或 `parentElement.removeChild()`
 
-*   修改样式：
-    *   直接修改：`element.style.property = 'value'`
-    *   使用类：`element.classList.add()`、`element.classList.remove()`
+* 修改样式：
+  * 直接修改：`element.style.property = 'value'`
+  * 使用类：`element.classList.add()`、`element.classList.remove()`
 
-*   事件处理：
-    *   添加事件监听器：`element.addEventListener('event', handler)`
-    *   移除事件监听器：`element.removeEventListener('event', handler)`
+* 事件处理：
+  * 添加事件监听器：`element.addEventListener('event', handler)`
+  * 移除事件监听器：`element.removeEventListener('event', handler)`
 
 理解这些概念和方法对于有效地操作 DOM 和使用 JavaScript 创建动态 Web 应用程序至关重要。
 
@@ -330,9 +339,6 @@ JavaScript 中 DOM 操作的关键概念包括：
 
 要开始使用这个模板：
 
-
-
-
 1. 创建一个扩展名为 `.html` 的新文件（例如 `index.html`）。
 2. 将模板代码复制到该文件中。
 3. 为 CSS (`styles.css`) 和 JavaScript (`script.js`) 创建独立的文件。
@@ -348,67 +354,72 @@ JavaScript 中 DOM 操作的关键概念包括：
 ### 基础 DOM 操作
 
 1. 选择元素：
+
 JavaScript 提供了多种从 DOM 中选择元素的方法：
 
 ```javascript
-// 通过 ID 
-const element = document.getElementById('myId'); 
-// 通过类名 
-const elements = document.getElementsByClassName('myClass'); 
-// 通过标签名 
-const paragraphs = document.getElementsByTagName('p'); 
-// 使用 CSS 选择器 
-const firstMatch = document.querySelector('.myClass'); 
+// 通过 ID
+const element = document.getElementById('myId');
+// 通过类名
+const elements = document.getElementsByClassName('myClass');
+// 通过标签名
+const paragraphs = document.getElementsByTagName('p');
+// 使用 CSS 选择器
+const firstMatch = document.querySelector('.myClass');
 const allMatches = document.querySelectorAll('.myClass');
 ```
 
 2. 修改元素内容：
+
 你可以更改元素的文本或 HTML 内容：
 
 ```javascript
-// 更改文本内容 
-element.textContent = 'New text content'; 
-// 更改 HTML 内容 
+// 更改文本内容
+element.textContent = 'New text content';
+// 更改 HTML 内容
 element.innerHTML = '<strong>New HTML content</strong>';
 ```
 
 3. 修改属性：
+
 可以访问并修改元素的属性：
 
 ```javascript
-// 获取属性值 
-const src = img.getAttribute('src'); 
-// 设置属性值 
-img.setAttribute('src', 'new-image.jpg'); 
-// 移除属性 
+// 获取属性值
+const src = img.getAttribute('src');
+// 设置属性值
+img.setAttribute('src', 'new-image.jpg');
+// 移除属性
 element.removeAttribute('class');
 ```
 
 4. 修改样式：
+
 可以直接更改元素样式，或通过操作类名来更改：
 
 ```javascript
-// 直接修改样式 
-element.style.color = 'red'; 
-element.style.fontSize = '16px'; 
-// 类名操作 
-element.classList.add('highlight'); 
-element.classList.remove('hidden'); 
+// 直接修改样式
+element.style.color = 'red';
+element.style.fontSize = '16px';
+// 类名操作
+element.classList.add('highlight');
+element.classList.remove('hidden');
 element.classList.toggle('active');
 ```
 
 5. 创建和删除元素：
+
 可以创建新元素并将其添加到 DOM 中，也可以删除现有元素：
 
 ```javascript
-// 创建一个新元素 
-const newDiv = document.createElement('div'); 
-newDiv.textContent = 'New Element'; 
-// 追加到现有元素 
-document.body.appendChild(newDiv); 
-// 删除一个元素 
-element.remove(); 
-// 或者 
+// 创建一个新元素
+const newDiv = document.createElement('div');
+newDiv.textContent = 'New Element';
+// 追加到现有元素
+document.body.appendChild(newDiv);
+// 删除一个元素
+element.remove();
+// 或者
 element.parentNode.removeChild(element);
 ```
 
@@ -417,47 +428,53 @@ element.parentNode.removeChild(element);
 事件是你在编程的系统中发生的操作或情况，系统会通知你，以便你做出响应。以下是在 JavaScript 中处理事件的方法：
 
 1. 添加事件监听器：
+
 `addEventListener` 方法用于将事件处理程序附加到元素上：
 
 ```javascript
-const button = document.querySelector('button'); 
+const button = document.querySelector('button');
 button.addEventListener('click', function() {
     console.log('Button clicked!');
 });
 ```
 
 2. 常见事件：
+
 一些常用的事件包括：
+
 * `click`：当元素被点击时
 * `submit`：当表单被提交时
-* `keydown`, `keyup`：当按键被按下或释放时
-* `mouseover`, `mouseout`：当鼠标进入或离开元素时
+* `keydown`、`keyup`：当按键被按下或释放时
+* `mouseover`、`mouseout`：当鼠标进入或离开元素时
 * `load`：当页面或元素完成加载时
 * `change`：当输入元素的值发生变化时
 
 3. 事件对象：
+
 事件处理函数会接收一个包含事件信息的事件对象：
 
 ```javascript
 button.addEventListener('click', function(event) {
     console.log('Clicked at coordinates:', event.clientX, event.clientY);
-    event.preventDefault(); // 阻止默认行为 
+    event.preventDefault(); // 阻止默认行为
 });
 ```
 
 4. 移除事件监听器：
+
 当不再需要事件监听器时，可以将其移除：
 
 ```javascript
 function handleClick() {
     console.log('Clicked!');
-} 
-button.addEventListener('click', handleClick); 
-// 稍后，当你想要移除监听器时 
+}
+button.addEventListener('click', handleClick);
+// 稍后，当你想要移除监听器时
 button.removeEventListener('click', handleClick);
 ```
 
 5. 事件委托：
+
 与其为多个元素分别添加事件监听器，你可以使用事件委托，将监听器添加到父元素上：
 
 ```javascript
@@ -469,16 +486,17 @@ document.getElementById('parent-list').addEventListener('click', function(e) {
 ```
 
 6. 自定义事件：
+
 你可以创建并触发自定义事件：
 
 ```javascript
-// 创建一个自定义事件 
+// 创建一个自定义事件
 const customEvent = new CustomEvent('myCustomEvent', {
     detail: { message: 'Hello from custom event!' }
-}); 
-// 触发事件 
-element.dispatchEvent(customEvent); 
-// 监听自定义事件 
+});
+// 触发事件
+element.dispatchEvent(customEvent);
+// 监听自定义事件
 element.addEventListener('myCustomEvent', function(e) {
     console.log(e.detail.message);
 });
@@ -537,6 +555,7 @@ element.addEventListener('myCustomEvent', function(e) {
 ```
 
 这个示例演示了：
+
 * 从 DOM 中选择元素
 * 为元素添加事件监听器
 * 创建并追加新元素
@@ -553,32 +572,31 @@ element.addEventListener('myCustomEvent', function(e) {
 当你熟悉了基础 DOM 操作后，可以探索更高级的技巧，以创建更复杂且高效的 Web 应用程序。
 
 1. 文档片段 (Document Fragments)：
+
 在向 DOM 添加多个元素时，使用 `DocumentFragment` 可以提高性能：
 
 ```javascript
-const fragment = document.createDocumentFragment(); 
+const fragment = document.createDocumentFragment();
 for (let i = 0; i < 1000; i++) {
     const li = document.createElement('li');
     li.textContent = `Item ${i}`;
     fragment.appendChild(li);
-} 
+}
 document.getElementById('myList').appendChild(fragment);
 ```
 
 2. 变动观察器 (Mutation Observers)：
+
 这些观察器允许你监视 DOM 树中所做的更改：
 
 ```javascript
-const targetNode = document.getElementById('someElement'); 
+const targetNode = document.getElementById('someElement');
 const observer = new MutationObserver((mutationsList, observer) => {
     for(let mutation of mutationsList) {
         // handle mutation
     }
 });
 ```
-
-
-
 
 # 高级 DOM 操作技术
 
@@ -589,6 +607,7 @@ if (mutation.type === 'childList') {
     console.log('A child node has been added or removed.');
 }
 ```
+
 `observer.observe(targetNode, { childList: true });`
 
 ## Template Elements（模板元素）
@@ -768,24 +787,20 @@ const element = document.getElementById('elementId');
 </html>
 ```
 
-
-
-
-
 # DOM 选择方法
 
 ## 2.1 getElementById()
 
 ```html
-          // 输出: "This is a div with id "myDiv""  // 选择段落元素           const  pElement  =  document.getElementById('myParagraph');
+          // 输出: "This is a div with id "myDiv""  // 选择段落元素           const  pElement  =  document.getElementById('myParagraph');
 
-          console.log(pElement.textContent);
+          console.log(pElement.textContent);
 
-          // 输出: "This is a paragraph with id "myParagraph""  // 尝试选择一个不存在的元素           const  nonExistent  =  document.getElementById('nonExistentId');
+          // 输出: "This is a paragraph with id "myParagraph""  // 尝试选择一个不存在的元素           const  nonExistent  =  document.getElementById('nonExistentId');
 
-          console.log(nonExistent);
+          console.log(nonExistent);
 
-           // 输出: null      </script>
+           // 输出: null      </script>
 
 </body>
 
@@ -847,11 +862,8 @@ const elements = document.getElementsByClassName('className');
 #### 关键点
 
 1. 它返回一个包含所有指定类名元素的动态 `HTMLCollection`。
-
 2. 你可以通过用空格分隔多个类名来指定多个类。
-
 3. 类名的顺序不重要。
-
 4. 它是区分大小写的。
 
 #### 代码示例
@@ -898,9 +910,7 @@ const elements = document.getElementsByTagName('tagName');
 #### 关键点
 
 1. 它返回一个包含所有指定标签名元素的动态 `HTMLCollection`。
-
 2. 标签名是不区分大小写的。
-
 3. 它可以选择任何有效的 HTML 标签。
 
 #### 代码示例
@@ -945,11 +955,8 @@ const elements = document.getElementsByTagName('tagName');
 #### HTMLCollection 的特性
 
 1. 动态集合：`HTMLCollection` 会随着 DOM 的变化而自动更新。
-
 2. 类似数组但不是数组：它看起来像数组并具有 `length` 属性，但它并不是数组。它没有 `push()`、`pop()` 或 `forEach()` 等方法。
-
 3. 索引访问：可以使用括号表示法（例如 `collection[0]`）或 `item()` 方法进行访问。
-
 4. 命名访问：如果集合中的元素具有 `id` 或 `name` 属性，可以使用 `namedItem()` 方法或直接作为属性访问。
 
 #### 使用 HTMLCollection
@@ -1013,12 +1020,7 @@ const anotherArray = [...paragraphs];
 
 1. 注意其动态性：记住 `HTMLCollection` 是动态的。如果你在迭代时删除元素，考虑先将其转换为数组。
 
-
-
-
-
-## 2. 使用更具体的选择器
-在可能的情况下，请使用更具体的选择器来提高性能。例如，`getElementsByClassName('highlight')` 通常比使用 `getElementsByTagName('*')` 后进行过滤要快。
+2. 使用更具体的选择器：在可能的情况下，请使用更具体的选择器来提高性能。例如，`getElementsByClassName('highlight')` 通常比使用 `getElementsByTagName('*')` 后进行过滤要快。
 
 3. **考虑替代方案**：对于更复杂的选择，考虑使用 `querySelectorAll()`，它提供了更高的灵活性并返回一个静态的 `NodeList`。
 
@@ -1040,7 +1042,7 @@ const element = document.querySelector('selector');
 
 #### 关键点
 
-11. 它返回第一个匹配的元素，如果没有找到匹配项，则返回 `null`。
+1. 它返回第一个匹配的元素，如果没有找到匹配项，则返回 `null`。
 2. 它可以使用任何有效的 CSS 选择器。
 3. 它是 `document` 对象的一部分，也可以在任何元素上调用，以搜索该元素的后代。
 
@@ -1200,20 +1202,18 @@ CSS 选择器是用于选择和样式化 HTML 元素的模式。当与 `querySel
 </html>
 ```
 
-
-
-
-
-`console.log(allHeadings.length); // Output: 3`  
-`// Selecting elements with a specific attribute`  
-`const linksWithHref = document.querySelectorAll('a[href="#"]');`  
-`console.log(linksWithHref.length); // Output: 3`  
-`// Selecting odd paragraphs in the main content`  
-`const oddParagraphs = document.querySelectorAll('main p:nth-child(odd)');`  
-`console.log(oddParagraphs.length); // Output: 2`  
-`// Selecting the last child of the container that is a direct child`  
-`const lastDirectChild = document.querySelector('#container > :last-child');`  
-`console.log(lastDirectChild.tagName); // Output: "FOOTER"`  
+```javascript
+console.log(allHeadings.length); // Output: 3
+// Selecting elements with a specific attribute
+const linksWithHref = document.querySelectorAll('a[href="#"]');
+console.log(linksWithHref.length); // Output: 3
+// Selecting odd paragraphs in the main content
+const oddParagraphs = document.querySelectorAll('main p:nth-child(odd)');
+console.log(oddParagraphs.length); // Output: 2
+// Selecting the last child of the container that is a direct child
+const lastDirectChild = document.querySelector('#container > :last-child');
+console.log(lastDirectChild.tagName); // Output: "FOOTER"
+```
 
 这些示例展示了使用 `querySelector()` 和 `querySelectorAll()` CSS 选择器的强大和灵活性。它们允许非常特定且复杂的选择，而这在旧的 DOM 选择方法中是或无法实现的。
 
@@ -1244,7 +1244,7 @@ CSS 选择器是用于选择和样式化 HTML 元素的模式。当与 `querySel
 - `getElementsByClassName()` 和 `getElementsByTagName()` 在简单选择时比 `querySelectorAll()` 快。
 - `querySelector()` 和 `querySelectorAll()` 功能更全，但在简单选择时可能较慢。
 
-```
+```javascript
 // 通过 ID 选择单个元素的速度更快
 const element = document.getElementById('myId');
 // 比 querySelectorAll 更快的简单类名选择
@@ -1257,7 +1257,7 @@ const complexElements = document.querySelectorAll('div.myClass > p');
 
 更具体的选择器可以帮助浏览器更快地缩小搜索范围：
 
-```
+```javascript
 // 效率较低
 document.querySelectorAll('div');
 // 效率更高
@@ -1268,7 +1268,7 @@ document.querySelectorAll('#container div');
 
 通用选择器（`*`）和过度宽泛的选择器可能会非常慢，特别是在大型 DOM 中：
 
-```
+```javascript
 // 非常慢
 document.querySelectorAll('*');
 // 慢
@@ -1281,7 +1281,7 @@ document.querySelectorAll('div > *');
 
 如果你只对特定容器内的元素感兴趣，请先选择容器，然后在其中进行搜索：
 
-```
+```javascript
 // 效率较低
 const elements = document.querySelectorAll('#container .myClass');
 // 效率更高
@@ -1293,7 +1293,7 @@ const elements = container.getElementsByClassName('myClass');
 
 如果你将多次使用相同的元素，请将选择结果存储在变量中：
 
-```
+```javascript
 // 效率较低
 document.getElementById('myButton').addEventListener('click', handleClick);
 document.getElementById('myButton').style.color = 'red';
@@ -1307,7 +1307,7 @@ myButton.style.color = 'red';
 
 与其在多个子元素上绑定事件，不如在父元素上绑定单个事件监听器：
 
-```
+```javascript
 // 效率较低
 const buttons = document.querySelectorAll('button');
 buttons.forEach(button => {
@@ -1325,7 +1325,7 @@ document.addEventListener('click', function(e) {
 
 记住 `getElementsByClassName()` 和 `getElementsByTagName()` 返回的是活集合（live collections）。如果你将多次遍历它们，请考虑将其转换为数组：
 
-```
+```javascript
 const elements = document.getElementsByClassName('myClass');
 const elementsArray = Array.from(elements);
 // 现在你可以安全地修改 DOM 而不影响循环
@@ -1338,7 +1338,7 @@ elementsArray.forEach(element => {
 
 现代 JavaScript 特性可以帮助你的代码更高效、更易读：
 
-```
+```javascript
 // 使用解构进行多次选择
 const [header, main, footer] = document.querySelectorAll('header, main, footer');
 // 使用可选链进行安全的嵌套选择
@@ -1349,10 +1349,12 @@ const nestedElement = document.querySelector('.container')?.querySelector('.nest
 
 数据属性对于选择可能为了样式目的而改变的类名非常有用：
 
-```
+```html
 <div data-role="tab">Tab 1</div>
 <div data-role="tab">Tab 2</div>
+```
 
+```javascript
 const tabs = document.querySelectorAll('[data-role="tab"]');
 ```
 
@@ -1368,7 +1370,7 @@ const tabs = document.querySelectorAll('[data-role="tab"]');
 
 如果你处理大量内容，考虑实现懒加载。这意味着在需要时才加载和选择元素，通常是在用户滚动时：
 
-```
+```javascript
 const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
@@ -1398,7 +1400,7 @@ document.querySelectorAll('.lazy-load').forEach(element => {
 
 如果你需要对 DOM 进行多次更改，请考虑将它们批量处理：
 
-```
+```javascript
 // 效率较低
 elements.forEach(element => {
     element.style.color = 'red';
@@ -1414,10 +1416,6 @@ elements.forEach(element => {
 });
 document.body.appendChild(fragment);
 ```
-
-
-
-
 
 ```javascript
 clone.style.fontSize  ='16px';
@@ -1462,7 +1460,7 @@ element.textContent = 'New content';
 const element = document.getElementById('myElement');
 // 获取 HTML
 const html = element.innerHTML;
-//// HTML HTML
+// 设置 HTML
 element.innerHTML = '<strong>Hello World</strong>';
 ```
 
@@ -1505,6 +1503,7 @@ const className = element.className;
 // 设置类名
 element.className = 'container active';
 ```
+
 ---
 
 ## 3.2 更改属性和样式
@@ -1577,8 +1576,6 @@ parent.appendChild(newChild);
 ```
 
 #### insertBefore()
-
-
 
 # DOM 操作
 
@@ -1795,7 +1792,6 @@ function toggleTheme() {
 浏览器事件可以分为几种类型：
 
 1. 鼠标事件：这些由用户与指针设备（如鼠标或触控板）的交互触发。
-
    * `click`：当元素被点击时发生
    * `dblclick`：当元素被双击时发生
    * `mousedown`：当鼠标按钮在元素上按下时发生
@@ -1805,39 +1801,33 @@ function toggleTheme() {
    * `mouseout`：当鼠标指针离开元素时发生
 
 2. 键盘事件：这些由用户与键盘的交互触发。
-
    * `keydown`：当按键按下时发生
    * `keyup`：当按键释放时发生
    * `keypress`：当按下产生字符值的键时发生（已弃用）
 
 3. 表单事件：这些与 HTML 表单元素及其交互相关。
-
-
-
-- `submit`：当表单提交时触发
-- `reset`：当表单重置时触发
-- `change`：当输入元素的值发生变化时触发
-- `input`：当输入元素的值变化后立即触发
-- `focus`：当元素获得焦点时触发
-- `blur`：当元素失去焦点时触发
+   * `submit`：当表单提交时触发
+   * `reset`：当表单重置时触发
+   * `change`：当输入元素的值发生变化时触发
+   * `input`：当输入元素的值变化后立即触发
+   * `focus`：当元素获得焦点时触发
+   * `blur`：当元素失去焦点时触发
 
 4. 窗口事件：这些与浏览器窗口本身相关。
-- `load`：当页面加载完成时触发
-- `unload`：当页面被卸载时触发（例如，导航到新页面时）
-- `resize`：当浏览器窗口大小改变时触发
-- `scroll`：当文档视图或元素滚动时触发
+   * `load`：当页面加载完成时触发
+   * `unload`：当页面被卸载时触发（例如，导航到新页面时）
+   * `resize`：当浏览器窗口大小改变时触发
+   * `scroll`：当文档视图或元素滚动时触发
 
 5. 文档事件：这些与 HTML 文档相关。
-- `DOMContentLoaded`：当初始 HTML 文档已完全加载并解析时触发，不等待样式表、图片和子框架加载完成。
+   * `DOMContentLoaded`：当初始 HTML 文档已完全加载并解析时触发，不等待样式表、图片和子框架加载完成。
 
 ### 理解事件流：捕获与冒泡
 
 当事件发生在具有父元素的元素上时，现代浏览器会运行两个不同的阶段——捕获阶段和冒泡阶段。
 
 1. 捕获阶段：事件从文档根部开始，向下移动到目标元素。在实践中很少使用，但可以通过将 `true` 作为第三个参数传递给 `addEventListener()` 来使用。
-
 2. 目标阶段：事件到达目标元素。
-
 3. 冒泡阶段：到达目标后，事件在 DOM 树中通过其祖先向上冒泡，一路上触发任何事件监听器。
 
 下面是一个示例来说明事件冒泡：
@@ -1880,7 +1870,7 @@ Outer div clicked
 
 `addEventListener()` 方法用于将事件处理程序附加到元素上。其语法如下：
 
-```
+```javascript
 element.addEventListener(eventType, handlerFunction, useCapture);
 ```
 
@@ -2066,9 +2056,6 @@ input.addEventListener('blur', function(event) {
 - `preventDefault()`：防止事件默认行为的方法
 - `stopPropagation()`：阻止事件在 DOM 树中向上冒泡的方法
 
-
-
-
 这里是一个演示了这些属性的示例：
 
 ```javascript
@@ -2081,23 +2068,25 @@ document.addEventListener('click', function(event) {
 
 ### 使用 `event.preventDefault()` 和 `event.stopPropagation()`
 
-1.  `event.preventDefault()`
+1. `event.preventDefault()`
 
 此方法用于阻止事件的默认行为发生。例如，防止表单提交或链接跳转。
 
 ```javascript
 form.addEventListener('submit', function(event) {
-  event.preventDefault(); // 防止表单提交   console.log('Form submission prevented');
+  event.preventDefault(); // 防止表单提交
+  console.log('Form submission prevented');
 });
 ```
 
-2.  `event.stopPropagation()`
+2. `event.stopPropagation()`
 
 此方法停止事件向 DOM 树向上冒泡，防止父元素接收该事件。
 
 ```javascript
 innerElement.addEventListener('click', function(event) {
-  event.stopPropagation(); // 防止事件传递到父元素   console.log('Inner element clicked');
+  event.stopPropagation(); // 防止事件传递到父元素
+  console.log('Inner element clicked');
 });
 ```
 
@@ -2117,7 +2106,9 @@ outerElement.addEventListener('click', function(event) {
 
 `removeEventListener()` 方法用于移除通过 `addEventListener()` 绑定的事件处理器。它的语法与 `addEventListener()` 镜像：
 
-`element.removeEventListener(eventType, handlerFunction, useCapture);`
+```javascript
+element.removeEventListener(eventType, handlerFunction, useCapture);
+```
 
 需要注意的是，要移除事件监听器，你需要提供与添加监听器时使用的相同的函数引用。这意味着匿名函数无法被直接移除。
 
@@ -2149,9 +2140,8 @@ button.removeEventListener('click', clickHandler);
 
 ### 事件处理的内存管理和最佳实践
 
-1.  移除不必要的事件监听器：始终移除不再需要的事件监听器，特别是在从 DOM 中移除元素之前。
-
-2.  使用事件委托：与其在多个子元素上绑定事件，不如在父元素上绑定单个事件监听器，并使用 `event.target` 来判断哪个子元素被点击。这种方式更高效且更于管理。
+1. 移除不必要的事件监听器：始终移除不再需要的事件监听器，特别是在从 DOM 中移除元素之前。
+2. 使用事件委托：与其在多个子元素上绑定事件，不如在父元素上绑定单个事件监听器，并使用 `event.target` 来判断哪个子元素被点击。这种方式更高效且更于管理。
 
 ```javascript
 document.getElementById('parent-list').addEventListener('click', function(event) {
@@ -2161,11 +2151,9 @@ document.getElementById('parent-list').addEventListener('click', function(event)
 });
 ```
 
-3.  避免内联事件处理器：如前所述，使用 `addEventListener()` 代替内联的 `onclick` 属性。这使你的 JavaScript 与 HTML 分离，并允许更容易管理事件监听器。
-
-4.  在循环中使用事件监听器要小心：如果你在循环内部添加事件监听器，请确保你没有无意中创建一个可能导致意外行为的闭包。
-
-5.  使用 `DOMContentLoaded` 事件：如果你在页面加载时为 DOM 元素附加事件监听器，请使用 `DOMContentLoaded` 事件代替 `window.onload`。该事件在初始 HTML 文档完全加载并解析后触发，而无需等待样式表、图像和子框架加载。
+3. 避免内联事件处理器：如前所述，使用 `addEventListener()` 代替内联的 `onclick` 属性。这使你的 JavaScript 与 HTML 分离，并允许更容易管理事件监听器。
+4. 在循环中使用事件监听器要小心：如果你在循环内部添加事件监听器，请确保你没有无意中创建一个可能导致意外行为的闭包。
+5. 使用 `DOMContentLoaded` 事件：如果你在页面加载时为 DOM 元素附加事件监听器，请使用 `DOMContentLoaded` 事件代替 `window.onload`。该事件在初始 HTML 文档完全加载并解析后触发，而无需等待样式表、图像和子框架加载。
 
 ```javascript
 document.addEventListener('DOMContentLoaded', function() {
@@ -2173,7 +2161,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 ```
 
-6.  考虑使用节流（throttle）或防抖（debounce）函数：对于可以快速触发的事件（如 'scroll' 或 'resize'），考虑使用节流或防抖函数来限制事件处理器调用的频率。这可以显著提高性能。
+6. 考虑使用节流（throttle）或防抖（debounce）函数：对于可以快速触发的事件（如 'scroll' 或 'resize'），考虑使用节流或防抖函数来限制事件处理器调用的频率。这可以显著提高性能。
 
 ```javascript
 // 简单的防抖函数
@@ -2194,7 +2182,7 @@ window.addEventListener('resize', debounce(function() {
 }, 250));
 ```
 
-7.  对滚动事件使用 passive（被动）选项：对于滚动事件，特别是移动设备上的，考虑使用 `passive` 选项来提高滚动性能。
+7. 对滚动事件使用 passive（被动）选项：对于滚动事件，特别是移动设备上的，考虑使用 `passive` 选项来提高滚动性能。
 
 ```javascript
 document.addEventListener('scroll', function() {
@@ -2226,15 +2214,9 @@ document.addEventListener('scroll', function() {
 
 事件委托提供了几个重要的优势：
 
-1.  提高性能：与其在多个元素上附加多个事件监听器，你只需要在父元素上附加一个监听器。这减少了内存占用并提高了整体性能，特别是在处理大量元素时。
-
-2.  动态内容处理：事件委托与动态添加或删除的元素无缝工作。你不需要每次修改 DOM 时都重新绑定事件监听器，因为父元素的监听器会处理其所有子元素的事件，包括新添加的元素。
-
-3.  简化代码：事件委托可以产生更整洁、更易维护的代码，因为你将事件处理逻辑集中在一个地方而不是分散在多个元素中。
-
-
-
-
+1. 提高性能：与其在多个元素上附加多个事件监听器，你只需要在父元素上附加一个监听器。这减少了内存占用并提高了整体性能，特别是在处理大量元素时。
+2. 动态内容处理：事件委托与动态添加或删除的元素无缝工作。你不需要每次修改 DOM 时都重新绑定事件监听器，因为父元素的监听器会处理其所有子元素的事件，包括新添加的元素。
+3. 简化代码：事件委托可以产生更整洁、更易维护的代码，因为你将事件处理逻辑集中在一个地方而不是分散在多个元素中。
 
 # 事件委托与动态 DOM 操作
 
@@ -2461,14 +2443,9 @@ document.querySelectorAll('.accordion').forEach(accordion => new Accordion(accor
 通过创建此类组件，您可以在保持代码组织良好和可维护的同时，构建更复杂、更交互的用户界面。在开发更高级的组件时，请考虑实现以下附加功能：
 
 * 无障碍增强（例如，适当的 ARIA 属性）
-
-
-
-
-
-*   自定义配置选项（例如，允许同时打开多个部分）
-*   用于平滑过渡的动画
-*   供外部代码挂钩组件行为的事件回调
+* 自定义配置选项（例如，允许同时打开多个部分）
+* 用于平滑过渡的动画
+* 供外部代码挂钩组件行为的事件回调
 
 请记住在组件的复杂性与其重用性及可维护性之间取得平衡。随着组件变得复杂，请考虑将其拆分为更小、更集中的组件，并通过组合这些组件来创建更大的 UI 元素。
 
@@ -2515,7 +2492,7 @@ form.addEventListener('submit', function(event) {
   if (validateForm()) {
     console.log('Form submitted successfully');
     // Here you would typically send the form data to a server
-}
+  }
 });
 function validateForm() {
   let isValid = true;
@@ -2678,14 +2655,10 @@ function showErrorMessage(message) {
 4. **用户反馈**：显示成功和错误消息，以告知用户操作的结果。
 5. **重置表单**：在提交成功后，我们重置表单以清除所有输入字段。
 
-
-
-
-
-*   **清理输入**：即使有客户端验证，也务必在服务器端对数据进行清理和验证，以防止安全漏洞。
-*   **处理所有可能的状态**：在代码中考虑成功情况、各种类型的错误以及网络问题。
-*   **提供清晰的反馈**：始终告知用户其操作的结果，无论成功失败。
-*   **考虑可访问性**：确保成功和错误消息可以通过屏幕阅读器和其他辅助技术访问。
+* **清理输入**：即使有客户端验证，也务必在服务器端对数据进行清理和验证，以防止安全漏洞。
+* **处理所有可能的状态**：在代码中考虑成功情况、各种类型的错误以及网络问题。
+* **提供清晰的反馈**：始终告知用户其操作的结果，无论成功失败。
+* **考虑可访问性**：确保成功和错误消息可以通过屏幕阅读器和其他辅助技术访问。
 
 通过实现健壮的表单处理和数据处理，你可以创建更用户用户且更安全的 Web 应用程序，从而有效地管理用户输入和交互。
 
@@ -2701,7 +2674,7 @@ function showErrorMessage(message) {
 
 这里是一个使用 `setTimeout()` 创建简单打字机效果的示例：
 
-```
+```javascript
 function typeWriter(element, text, index = 0) {
   if (index < text.length) {
     element.textContent += text.charAt(index);
@@ -2729,7 +2702,7 @@ function startCountdown(duration, display) {
     display.textContent = `${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;
     if (--timer < 0) {
       clearInterval(interval);
-      display.textContent = 'Time's up!';
+      display.textContent = 'Time\'s up!';
     }
   }, 1000);
 }
@@ -2774,9 +2747,9 @@ animate(box);
 
 `Promise` 代表一个可能不会立即可用、但在未来某个时刻将解析的值。`Promise` 有三种状态：
 
-1.  Pending（待定）：初始状态；promise 既没有完成也没有被拒绝。
-2.  Fulfilled（已履行）：操作成功完成。
-3.  Rejected（已拒绝）：操作失败。
+1. Pending（待定）：初始状态；promise 既没有完成也没有被拒绝。
+2. Fulfilled（已履行）：操作成功完成。
+3. Rejected（已拒绝）：操作失败。
 
 这里有一个创建和使用 `Promise` 的基本示例：
 
@@ -2862,12 +2835,9 @@ updateUserProfile(123);
 
 这个示例展示了几个核心概念：
 
-1.  异步函数：`fetchUserData` 是一个 `async` 函数，从 API 获取用户数据。
-2.  错误处理：我们检查响应是否正常，如果不是则抛出错误，该错误将在 `catch` 块中捕获。
-3.  DOM 更新：我们更新 DOM 显示加载消息，并在获取数据后将其替换为用户数据。
-
-
-
+1. 异步函数：`fetchUserData` 是一个 `async` 函数，从 API 获取用户数据。
+2. 错误处理：我们检查响应是否正常，如果不是则抛出错误，该错误将在 `catch` 块中捕获。
+3. DOM 更新：我们更新 DOM 显示加载消息，并在获取数据后将其替换为用户数据。
 
 # 异步更新与事件处理
 
@@ -2921,49 +2891,49 @@ handleButtonClick();
 
 浏览器开发者工具是调试 `DOM` 操作的强大助手。大多数现代浏览器都配备了强大的开发者工具，允许你实时检查、修改和调试 `DOM`。以下是有效使用这些工具的一些关键功能和技巧：
 
-1.  **元素面板**：这通常是调试 `DOM` 问题的第一步。元素面板允许你：
-   -   检查 `DOM` 的当前状态
-   -   查看和修改元素的属性、样式和布局
-   -   在与页面交互时实时查看变化
+1. **元素面板**：这通常是调试 `DOM` 问题的第一步。元素面板允许你：
+   - 检查 `DOM` 的当前状态
+   - 查看和修改元素的属性、样式和布局
+   - 在与页面交互时实时查看变化
 
    有效使用元素面板的方法：
-   -   在浏览器中右键点击元素并选择“检查”以直接跳转到 `DOM` 树中的该元素
-   -   使用搜索功能按标签名、类或 ID 查找元素
-   -   切换元素状态（例如 `:hover`、`:focus`）以调试 CSS 问题
+   - 在浏览器中右键点击元素并选择“检查”以直接跳转到 `DOM` 树中的该元素
+   - 使用搜索功能按标签名、类或 ID 查找元素
+   - 切换元素状态（例如 `:hover`、`:focus`）以调试 CSS 问题
 
-2.  **控制台**：控制台对于记录信息和测试 JavaScript 代码非常有用。关键功能包括：
-   -   `console.log()` 用于输出变量和消息
-   -   `console.dir()` 用于以可折叠树形式显示对象属性
-   -   `console.table()` 用于以可读格式显示表格数据
+2. **控制台**：控制台对于记录信息和测试 JavaScript 代码非常有用。关键功能包括：
+   - `console.log()` 用于输出变量和消息
+   - `console.dir()` 用于以可折叠树形式显示对象属性
+   - `console.table()` 用于以可读格式显示表格数据
 
    有效使用控制台的技巧：
-   -   使用描述性日志消息使调试更容易
-   -   使用 `console.group()` 和 `console.groupEnd()` 对相关日志进行分组
-   -   使用 `console.time()` 和 `console.timeEnd()` 测量代码执行时间
+   - 使用描述性日志消息使调试更容易
+   - 使用 `console.group()` 和 `console.groupEnd()` 对相关日志进行分组
+   - 使用 `console.time()` 和 `console.timeEnd()` 测量代码执行时间
 
-3.  **断点**：在 JavaScript 代码中设置断点可以暂停执行并检查应用程序的状态。要有效使用断点：
-   -   在 Sources 面板中的特定代码行设置断点
-   -   使用条件断点仅在满足特定条件时暂停执行
-   -   使用调试器控制逐行步进代码执行
+3. **断点**：在 JavaScript 代码中设置断点可以暂停执行并检查应用程序的状态。要有效使用断点：
+   - 在 Sources 面板中的特定代码行设置断点
+   - 使用条件断点仅在满足特定条件时暂停执行
+   - 使用调试器控制逐行步进代码执行
 
    **DOM 断点**：这些允许你在 `DOM` 中发生特定变化时暂停执行。`DOM` 断点的类型包括：
-   -   子树修改
-   -   属性修改
-   -   节点移除
+   - 子树修改
+   - 属性修改
+   - 节点移除
 
    设置 `DOM` 断点：
-   -   在 Elements 面板中右键点击元素
-   -   选择“Break on”并选择要设置的断点类型
+   - 在 Elements 面板中右键点击元素
+   - 选择“Break on”并选择要设置的断点类型
 
-4.  **事件监听器**：Elements 面板中的 Event Listeners 窗格显示附加到所选元素的所有事件监听器。这对于以下方面很有用：
-   -   识别哪些事件绑定到元素
-   -   调试事件相关问题
-   -   临时移除或禁用事件监听器
+4. **事件监听器**：Elements 面板中的 Event Listeners 窗格显示附加到所选元素的所有事件监听器。这对于以下方面很有用：
+   - 识别哪些事件绑定到元素
+   - 调试事件相关问题
+   - 临时移除或禁用事件监听器
 
-5.  **性能分析**：对于更复杂的性能问题，使用 Performance 面板可以：
-   -   记录和分析页面加载和运行时性能
-   -   识别 JavaScript 代码中的瓶颈
-   -   可视化由 `DOM` 操作引起的回流和重绘
+5. **性能分析**：对于更复杂的性能问题，使用 Performance 面板可以：
+   - 记录和分析页面加载和运行时性能
+   - 识别 JavaScript 代码中的瓶颈
+   - 可视化由 `DOM` 操作引起的回流和重绘
 
 掌握这些开发者工具，你将能够很好地应对各种 `DOM` 相关的调试挑战。
 
@@ -2971,9 +2941,9 @@ handleButtonClick();
 
 在处理 `DOM` 操作时，开发人员经常会遇到几个常见的陷阱。了解这些问题以及如何避免它们可以节省时间和精力。以下是一些最常见的问题及其解决方案：
 
-1.  **在元素加载之前进行操作**：
-   -   **陷阱**：尝试在 `DOM` 元素创建或加载之前访问或修改它们。
-   -   **解决方案**：确保 JavaScript 在 `DOM` 完全加载后运行。使用 `DOMContentLoaded` 事件或将脚本放在 `<body>` 标签的末尾。
+1. **在元素加载之前进行操作**：
+   - **陷阱**：尝试在 `DOM` 元素创建或加载之前访问或修改它们。
+   - **解决方案**：确保 JavaScript 在 `DOM` 完全加载后运行。使用 `DOMContentLoaded` 事件或将脚本放在 `<body>` 标签的末尾。
 
    ```javascript
    document.addEventListener('DOMContentLoaded', function() {
@@ -2981,9 +2951,9 @@ handleButtonClick();
    });
    ```
 
-2.  **低效的 DOM 查询**：
-   -   **陷阱**：重复查询 `DOM` 中的相同元素，这可能很慢且资源密集。
-   -   **解决方案**：当需要多次使用 `DOM` 引用时，将其缓存到变量中。
+2. **低效的 DOM 查询**：
+   - **陷阱**：重复查询 `DOM` 中的相同元素，这可能很慢且资源密集。
+   - **解决方案**：当需要多次使用 `DOM` 引用时，将其缓存到变量中。
 
    ```javascript
    // Inefficient
@@ -2998,9 +2968,9 @@ handleButtonClick();
    });
    ```
 
-3.  **在循环中修改 DOM**：
-   -   **陷阱**：在循环内对 `DOM` 进行频繁的小更改，导致多次回流和重绘。
-   -   **解决方案**：使用文档片段批量更新 `DOM`，或在 `DOM` 之外修改元素。
+3. **在循环中修改 DOM**：
+   - **陷阱**：在循环内对 `DOM` 进行频繁的小更改，导致多次回流和重绘。
+   - **解决方案**：使用文档片段批量更新 `DOM`，或在 `DOM` 之外修改元素。
 
    ```javascript
    // Inefficient
@@ -3020,9 +2990,9 @@ handleButtonClick();
    document.body.appendChild(fragment);
    ```
 
-4.  **未清理事件监听器**：
-   -   **陷阱**：添加事件监听器后，在不再需要时未将其移除，导致内存泄漏或意外行为。
-   -   **解决方案**：在不再需要事件监听器时始终将其移除，特别是在从 `DOM` 中移除元素时。
+4. **未清理事件监听器**：
+   - **陷阱**：添加事件监听器后，在不再需要时未将其移除，导致内存泄漏或意外行为。
+   - **解决方案**：在不再需要事件监听器时始终将其移除，特别是在从 `DOM` 中移除元素时。
 
    ```javascript
    function handleClick() {
@@ -3037,13 +3007,9 @@ handleButtonClick();
    button.parentNode.removeChild(button);
    ```
 
-5.  **在事件处理器中错误使用 `this`**：
-   -   **陷阱**：在事件处理器中丢失 `this` 的正确上下文，特别是在使用箭头函数时。
-   -   **解决方案**：注意定义事件处理器的方式，当需要 `this` 引用元素时，使用 `bind()` 或传统函数语法。
-
-
-
-
+5. **在事件处理器中错误使用 `this`**：
+   - **陷阱**：在事件处理器中丢失 `this` 的正确上下文，特别是在使用箭头函数时。
+   - **解决方案**：注意定义事件处理器的方式，当需要 `this` 引用元素时，使用 `bind()` 或传统函数语法。
 
 ```javascript
 // `this` refers to the button
@@ -3060,6 +3026,7 @@ button.addEventListener('click', () => {
 ## DOM 操作中的常见陷阱
 
 ### 6. 忘记阻止默认行为
+
 **陷阱**：在必要时未在事件处理程序中阻止默认行为，导致出现意外操作，如表单提交或链接跳转。
 
 **解决方案**：当你想要停止事件的默认操作时，请使用 `event.preventDefault()`。
@@ -3072,6 +3039,7 @@ form.addEventListener('submit', function(event) {
 ```
 
 ### 7. 在迭代过程中修改 DOM
+
 **陷阱**：在迭代元素集合的同时修改该集合，这可能会导致不可预知的结果。
 
 **解决方案**：在迭代之前创建集合的静态副本，或者进行反向迭代。
@@ -3091,6 +3059,7 @@ for (let i = 0; i < elements.length; i++) {
 ```
 
 ### 8. 未考虑跨浏览器差异
+
 **陷阱**：编写的 DOM 操作代码在某个浏览器中运行正常，但由于 API 差异而在其他浏览器中失效。
 
 **解决方案**：使用特性检测（feature detection）、Polyfills 或跨浏览器库，以确保在不同浏览器之间行为一致。
@@ -3116,103 +3085,115 @@ if (element.classList) {
 
 #### 什么是回流和重绘？
 
-*   **回流（Reflow，也称为布局 Layout）**：当浏览器需要重新计算文档中元素的布局位置和尺寸时发生。当你更改任何影响页面布局的内容（如元素的大小、位置或 DOM 结构）时，就会触发回流。
-*   **重绘（Repaint）**：当浏览器需要更新元素的视觉外观而无需改变其布局时发生。这包括对可见性（visibility）、背景颜色、文本颜色等的更改。
+* **回流（Reflow，也称为布局 Layout）**：当浏览器需要重新计算文档中元素的布局位置和尺寸时发生。当你更改任何影响页面布局的内容（如元素的大小、位置或 DOM 结构）时，就会触发回流。
+* **重绘（Repaint）**：当浏览器需要更新元素的视觉外观而无需改变其布局时发生。这包括对可见性（visibility）、背景颜色、文本颜色等的更改。
 
 回流通常比重绘更昂贵，因为它们涉及重新计算整个文档或其中一部分的布局。
 
 #### 最小化回流和重绘的策略
 
-1.  **批量更新 DOM**：
-    与其对 DOM 进行多次微小更改，不如将它们批量合并为一次更新。这减少了浏览器需要执行的回流和重绘次数。
+1. **批量更新 DOM**：
 
-    ```javascript
-    // Inefficient (causes multiple reflows)
-    const element = document.getElementById('myElement');
-    element.style.width = '100px';
-    element.style.height = '100px';
-    element.style.backgroundColor = 'red';
+   与其对 DOM 进行多次微小更改，不如将它们批量合并为一次更新。这减少了浏览器需要执行的回流和重绘次数。
 
-    // Efficient (causes only one reflow)
-    const element = document.getElementById('myElement');
-    element.style.cssText = 'width: 100px; height: 100px; background-color: red;';
-    ```
+   ```javascript
+   // Inefficient (causes multiple reflows)
+   const element = document.getElementById('myElement');
+   element.style.width = '100px';
+   element.style.height = '100px';
+   element.style.backgroundColor = 'red';
 
-2.  **使用文档片段（Document Fragments）**：
-    当向 DOM 添加多个元素时，使用文档片段在离屏构建结构，然后再将其添加到实际的 DOM 中。
+   // Efficient (causes only one reflow)
+   const element = document.getElementById('myElement');
+   element.style.cssText = 'width: 100px; height: 100px; background-color: red;';
+   ```
 
-    ```javascript
-    const fragment = document.createDocumentFragment();
-    for (let i = 0; i < 1000; i++) {
-      const el = document.createElement('div');
-      el.textContent = `Item ${i}`;
-      fragment.appendChild(el);
-    }
-    document.body.appendChild(fragment);
-    ```
+2. **使用文档片段（Document Fragments）**：
 
-3.  **最小化 DOM 深度**：
-    尽可能保持 DOM 结构扁平。深度嵌套的元素在回流期间需要更多的计算量。
+   当向 DOM 添加多个元素时，使用文档片段在离屏构建结构，然后再将其添加到实际的 DOM 中。
 
-4.  **使用 CSS 类进行多次样式更改**：
-    与其更改多个内联样式，不如使用 CSS 类一次性应用一组样式。
+   ```javascript
+   const fragment = document.createDocumentFragment();
+   for (let i = 0; i < 1000; i++) {
+     const el = document.createElement('div');
+     el.textContent = `Item ${i}`;
+     fragment.appendChild(el);
+   }
+   document.body.appendChild(fragment);
+   ```
 
-    ```javascript
-    // Inefficient
-    element.style.fontWeight = 'bold';
-    element.style.fontSize = '20px';
-    element.style.color = 'red';
+3. **最小化 DOM 深度**：
 
-    // Efficient
-    element.classList.add('highlight');
-    ```
-    CSS:
-    ```css
-    .highlight {
-      font-weight: bold;
-      font-size: 20px;
-      color: red;
-    }
-    ```
+   尽可能保持 DOM 结构扁平。深度嵌套的元素在回流期间需要更多的计算量。
 
-5.  **高效读取布局属性**：
-    读取某些属性（如 `offsetHeight`、`offsetWidth` 等）可能会触发同步回流。将读取操作分组，并在进行任何更改之前执行它们，以最小化强制回流。
+4. **使用 CSS 类进行多次样式更改**：
 
-    ```javascript
-    // Inefficient (causes multiple reflows)
-    const height1 = element1.offsetHeight;
-    element1.style.height = `${height1 * 2}px`;
-    const height2 = element2.offsetHeight;
-    element2.style.height = `${height2 * 2}px`;
+   与其更改多个内联样式，不如使用 CSS 类一次性应用一组样式。
 
-    // Efficient (causes only one reflow)
-    const height1 = element1.offsetHeight;
-    const height2 = element2.offsetHeight;
-    element1.style.height = `${height1 * 2}px`;
-    element2.style.height = `${height2 * 2}px`;
-    ```
+   ```javascript
+   // Inefficient
+   element.style.fontWeight = 'bold';
+   element.style.fontSize = '20px';
+   element.style.color = 'red';
 
-6.  **为动画使用绝对定位**：
-    具有绝对定位（absolute）或固定定位（fixed）的元素脱离了正常的文档流，从而减少了其更改对其他元素的影响。
+   // Efficient
+   element.classList.add('highlight');
+   ```
 
-7.  **为动画使用 `requestAnimationFrame`**：
-    该方法允许浏览器通过将你的更新与浏览器的自然重绘周期同步来优化重绘。
+   CSS:
 
-    ```javascript
-    function animate() {
-      // Update element styles here
-      requestAnimationFrame(animate);
-    }
-    requestAnimationFrame(animate);
-    ```
+   ```css
+   .highlight {
+     font-weight: bold;
+     font-size: 20px;
+     color: red;
+   }
+   ```
 
-8.  **避免对非表格数据使用表格布局**：
-    表格需要多次遍历才能完成布局，使得回流成本更高。对于复杂布局，请改用 CSS Grid 或 Flexbox。
+5. **高效读取布局属性**：
 
-9.  **虚拟化长列表**：
-    对于非常长的列表，仅渲染可见项，并在用户滚动时更新它们。这显著减少了 DOM 元素的数量并提高了性能。
+   读取某些属性（如 `offsetHeight`、`offsetWidth` 等）可能会触发同步回流。将读取操作分组，并在进行任何更改之前执行它们，以最小化强制回流。
+
+   ```javascript
+   // Inefficient (causes multiple reflows)
+   const height1 = element1.offsetHeight;
+   element1.style.height = `${height1 * 2}px`;
+   const height2 = element2.offsetHeight;
+   element2.style.height = `${height2 * 2}px`;
+
+   // Efficient (causes only one reflow)
+   const height1 = element1.offsetHeight;
+   const height2 = element2.offsetHeight;
+   element1.style.height = `${height1 * 2}px`;
+   element2.style.height = `${height2 * 2}px`;
+   ```
+
+6. **为动画使用绝对定位**：
+
+   具有绝对定位（absolute）或固定定位（fixed）的元素脱离了正常的文档流，从而减少了其更改对其他元素的影响。
+
+7. **为动画使用 `requestAnimationFrame`**：
+
+   该方法允许浏览器通过将你的更新与浏览器的自然重绘周期同步来优化重绘。
+
+   ```javascript
+   function animate() {
+     // Update element styles here
+     requestAnimationFrame(animate);
+   }
+   requestAnimationFrame(animate);
+   ```
+
+8. **避免对非表格数据使用表格布局**：
+
+   表格需要多次遍历才能完成布局，使得回流成本更高。对于复杂布局，请改用 CSS Grid 或 Flexbox。
+
+9. **虚拟化长列表**：
+
+   对于非常长的列表，仅渲染可见项，并在用户滚动时更新它们。这显著减少了 DOM 元素的数量并提高了性能。
 
 10. **为动画使用 CSS 变换（Transforms）**：
+
     CSS 变换经过浏览器优化，通常不会触发回流或重绘，因此是动画的理想选择。
 
     ```css
@@ -3233,9 +3214,10 @@ if (element.classList) {
 节流限制了函数触发的频率。它确保函数在指定的时间段内最多被调用一次。
 
 节流的适用场景：
-*   `scroll` 事件处理程序
-*   连续的 `mousemove` 事件
-*   窗口 `resize` 处理程序
+
+* `scroll` 事件处理程序
+* 连续的 `mousemove` 事件
+* 窗口 `resize` 处理程序
 
 基础 `throttle` 函数的实现：
 
@@ -3256,13 +3238,9 @@ function throttle(func, limit) {
 // Usage
 const throttledScrollHandler = throttle(function() {
   console.log('Scroll event');
-});
+}, 1000);
+window.addEventListener('scroll', throttledScrollHandler);
 ```
-
-
-
-
-}, 1000); window.addEventListener('scroll', throttledScrollHandler);
 
 在这个示例中，无论滚动事件实际触发频率如何，滚动处理程序每秒最多会被调用一次。
 
@@ -3287,10 +3265,12 @@ function debounce(func, delay) {
     clearTimeout(debounceTimer);
     debounceTimer = setTimeout(() => func.apply(context, args), delay);
   }
-} // 使用 
+}
+// 使用
 const debouncedResizeHandler = debounce(function() {
   console.log('Resize complete');
-}, 250); window.addEventListener('resize', debouncedResizeHandler);
+}, 250);
+window.addEventListener('resize', debouncedResizeHandler);
 ```
 
 在这个示例中，调整处理程序只会在用户停止调整窗口 250 毫秒后被调用。
@@ -3324,10 +3304,12 @@ function advancedDebounce(func, wait, immediate = false) {
     timeout = setTimeout(later, wait);
     if (callNow) func.apply(context, args);
   };
-} // 使用 
+}
+// 使用
 const myEfficientFn = advancedDebounce(function() {
   // 你执行的所有耗资源操作
-}, 250, true); // 取消防抖函数 
+}, 250, true);
+// 取消防抖函数
 myEfficientFn.cancel = function() {
   clearTimeout(timeout);
 };
@@ -3358,20 +3340,29 @@ myEfficientFn.cancel = function() {
    - 避免内联样式和内联 JavaScript。
    - 使用类（classes）和 ID 用于样式和 JavaScript 钩子，但保持它们分离。
 
-<!-- 好 --> <button id="submitButton" class="btn btn-primary">提交</button> <!-- 避免 --> <button onclick="submitForm()" style="background-color: blue;">提交</button>
+```html
+<!-- 好 -->
+<button id="submitButton" class="btn btn-primary">提交</button>
+<!-- 避免 -->
+<button onclick="submitForm()" style="background-color: blue;">提交</button>
+```
 
 2. 使用外部 CSS 文件：
    - 将所有样式放在单独的 CSS 文件中。
    - 使用类进行样式设计，除非使用 ID。
    - 使用 Sass 或 Less 等 CSS 预处理器来编写更具维护性的 CSS。
 
+```html
 <link rel="stylesheet" href="styles.css">
+```
 
 3. 使用外部 JavaScript 文件：
    - 将所有 JavaScript 放在单独的文件。
    - 使用事件监听器绑定行为，而不是使用内联事件处理器。
 
+```html
 <script src="app.js"></script>
+```
 
 4. 实现非侵入式 JavaScript (unobtrusive JavaScript)：
    - 避免混合 JavaScript 和 HTML。
@@ -3419,8 +3410,10 @@ const template = `<div class="user">
 
 8. 实现状态管理：
    - 对于复杂的应用程序，使用 Redux 或 MobX 等状态管理库将应用程序状态与 UI 分离。
+
 9. 谨慎使用 CSS-in-JS：
    - 如果使用 CSS-in-JS 解决方案，确保它不会过度模糊样式和行为之间的界限。
+
 10. 文档化分离：
     - 使用注释说明每个文件的目的以及它们如何相互作用。
     - 维护一个反映关注点分离的项目结构。
@@ -3436,14 +3429,7 @@ const template = `<div class="user">
 1. 单一职责：每个模块应该有一个单一且定义明确的目的。
 2. 封装：模块应该隐藏其内部工作机制并暴露清晰的接口。
 3. 可组合性：模块的设计应该易于协同工作。
-
-
-
-
-
-## 4. 可重用性
-
-模块应具有足够的通用性，以便在不同上下文中重用。
+4. 可重用性：模块应具有足够的通用性，以便在不同上下文中重用。
 
 ### 创建模块化 DOM 操作代码的策略
 
@@ -3716,11 +3702,7 @@ if (!Element.prototype.matches) {
 
 5. 使用 JavaScript 库或框架
 
-
-
-
-
-# 像 `jQuery` 这样的库或 React 这样的框架抽象了许多跨浏览器差异
+像 `jQuery` 这样的库或 React 这样的框架抽象了许多跨浏览器差异。
 
 ```javascript
 // 使用 jQuery
@@ -3950,7 +3932,8 @@ function setPrefixedStyle(element, property, value) {
     element.style[prop] = value;
   }
 }
-// 用法 setPrefixedStyle(myElement, 'transform', 'rotate(45deg)');
+// 用法
+setPrefixedStyle(myElement, 'transform', 'rotate(45deg)');
 ```
 
 通过实施这些策略并了解潜在的跨浏览器问题，你可以创建在不同浏览器和平台上提供一致体验的 Web 应用程序。请记住，Web 生态系统在不断演变，因此及时了解最新的浏览器功能和跨浏览器兼容性的最佳实践非常重要。
@@ -4004,14 +3987,11 @@ ESLint 等工具可以帮助你在开发过程中尽早发现潜在的跨浏览�
 
 9. 实施错误跟踪：
 
-
-
-
 使用 Sentry 或 TrackJS 等服务来监控和记录生产环境中的 JavaScript 错误，帮助你识别特定于浏览器的问题。
 
-10.  创建浏览器支持矩阵：
+10. 创建浏览器支持矩阵：
 
-    明确界定你的应用程序支持的浏览器和版本，并据此矩阵进行测试。
+明确界定你的应用程序支持的浏览器和版本，并据此矩阵进行测试。
 
 ## 结论
 
@@ -4059,42 +4039,65 @@ ESLint 等工具可以帮助你在开发过程中尽早发现潜在的跨浏览�
 添加一些基本样式，使待办事项列表在视觉上更具吸引力：
 
 ```css
-body {font-family: Arial, sans-serif;
+body {
+    font-family: Arial, sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
-} .container {width: 80%;
+}
+.container {
+    width: 80%;
     margin: auto;
     overflow: hidden;
     padding: 20px;
-} h1 {text-align: center;
+}
+h1 {
+    text-align: center;
     color: #333;
-} #todo-form {display: flex;
+}
+#todo-form {
+    display: flex;
     margin-bottom: 20px;
-} #todo-input {flex: 1;
+}
+#todo-input {
+    flex: 1;
     padding: 10px;
     font-size: 16px;
-} button {padding: 10px 20px;
+}
+button {
+    padding: 10px 20px;
     background-color: #333;
     color: #fff;
     border: none;
     cursor: pointer;
-} button:hover {background-color: #555;
-} #todo-list {list-style-type: none;
+}
+button:hover {
+    background-color: #555;
+}
+#todo-list {
+    list-style-type: none;
     padding: 0;
-} .todo-item {background-color: #fff;
+}
+.todo-item {
+    background-color: #fff;
     padding: 10px;
     margin-bottom: 10px;
     border-radius: 5px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-} .todo-item button {background-color: #ff4136;
+}
+.todo-item button {
+    background-color: #ff4136;
     font-size: 12px;
     padding: 5px 10px;
-} .todo-item button:hover {background-color: #ff7066;
-} .completed {text-decoration: line-through;
+}
+.todo-item button:hover {
+    background-color: #ff7066;
+}
+.completed {
+    text-decoration: line-through;
     opacity: 0.7;
 }
 ```
@@ -4104,15 +4107,31 @@ body {font-family: Arial, sans-serif;
 现在，让我们使用 JavaScript 实现待办事项列表的功能：
 
 ```javascript
-// Get DOM elements const todoForm = document.getElementById('todo-form'); const todoInput = document.getElementById('todo-input'); const todoList = document.getElementById('todo-list'); // Array to store todo items let todos = []; // Function to render todo items function renderTodos() {
+// Get DOM elements
+const todoForm = document.getElementById('todo-form');
+const todoInput = document.getElementById('todo-input');
+const todoList = document.getElementById('todo-list');
+// Array to store todo items
+let todos = [];
+// Function to render todo items
+function renderTodos() {
     todoList.innerHTML = '';
-    todos.forEach((todo, index) => {const li = document.createElement('li');
+    todos.forEach((todo, index) => {
+        const li = document.createElement('li');
         li.className = 'todo-item';
         if (todo.completed) {
             li.classList.add('completed');
         }
-        li.innerHTML = `              <span>${todo.text}</span>              <div>                  <button class="complete-btn">${todo.completed ? 'Undo' : 'Complete'}</button>                  <button class="edit-btn">Edit</button>                  <button class="delete-btn">Delete</button>              </div>          `;
-        // Add event listeners for buttons         const completeBtn = li.querySelector('.complete-btn');
+        li.innerHTML = `
+            <span>${todo.text}</span>
+            <div>
+                <button class="complete-btn">${todo.completed ? 'Undo' : 'Complete'}</button>
+                <button class="edit-btn">Edit</button>
+                <button class="delete-btn">Delete</button>
+            </div>
+        `;
+        // Add event listeners for buttons
+        const completeBtn = li.querySelector('.complete-btn');
         const editBtn = li.querySelector('.edit-btn');
         const deleteBtn = li.querySelector('.delete-btn');
         completeBtn.addEventListener('click', () => toggleComplete(index));
@@ -4120,85 +4139,101 @@ body {font-family: Arial, sans-serif;
         deleteBtn.addEventListener('click', () => deleteTodo(index));
         todoList.appendChild(li);
     });
-} // Function to add a new todo function addTodo(text) {
-    todos.push({ text, completed: false });renderTodos();
-} // Function to toggle todo completion status function toggleComplete(index) {
+}
+// Function to add a new todo
+function addTodo(text) {
+    todos.push({ text, completed: false });
+    renderTodos();
+}
+// Function to toggle todo completion status
+function toggleComplete(index) {
     todos[index].completed = !todos[index].completed;
     renderTodos();
-} // Function to edit a todo function editTodo(index) {
+}
+// Function to edit a todo
+function editTodo(index) {
     const newText = prompt('Edit task:', todos[index].text);
     if (newText !== null && newText.trim() !== '') {
         todos[index].text = newText.trim();
         renderTodos();
     }
-} // Function to delete a todo function deleteTodo(index) {
+}
+// Function to delete a todo
+function deleteTodo(index) {
     todos.splice(index, 1);
     renderTodos();
-} // Event listener for form submission todoForm.addEventListener('submit', (e) => {e.preventDefault();
+}
+// Event listener for form submission
+todoForm.addEventListener('submit', (e) => {
+    e.preventDefault();
     const todoText = todoInput.value.trim();
     if (todoText !== '') {
         addTodo(todoText);
         todoInput.value = '';
     }
-}); // Initial render renderTodos();
+});
+// Initial render
+renderTodos();
 ```
 
 这个 JavaScript 代码实现了待办事项列表的核心功能：
 
-1.  我们首先获取重要 DOM 元素的引用：表单、输入字段以及将显示待办事项的列表。
-
-2.  我们创建一个数组 `todos` 来存储待办事项。
-
-3.  `renderTodos` 函数负责显示待办事项列表的当前状态。它清除现有列表，并为每个待办事项创建新的列表项，包括用于完成、编辑和删除任务的按钮。
-
-4.  我们实现了用于添加、切换完成状态、编辑和删除待办事项的函数。这些函数修改 `todos` 数组，然后调用 `renderTodos` 来更新显示。
-
-5.  为表单添加了一个事件监听器来处理新的待办事项提交。
-
-6.  最后，我们调用 `renderTodos` 来显示任何初始的 `todos`（如果有的话）。
+1. 我们首先获取重要 DOM 元素的引用：表单、输入字段以及将显示待办事项的列表。
+2. 我们创建一个数组 `todos` 来存储待办事项。
+3. `renderTodos` 函数负责显示待办事项列表的当前状态。它清除现有列表，并为每个待办事项创建新的列表项，包括用于完成、编辑和删除任务的按钮。
+4. 我们实现了用于添加、切换完成状态、编辑和删除待办事项的函数。这些函数修改 `todos` 数组，然后调用 `renderTodos` 来更新显示。
+5. 为表单添加了一个事件监听器来处理新的待办事项提交。
+6. 最后，我们调用 `renderTodos` 来显示任何初始的 `todos`（如果有的话）。
 
 此实现展示了几个关键概念：
 
-*   DOM 操作：我们动态地创建、修改和删除元素。
-
-*   事件处理：我们响应用户交互，如表单提交和按钮点击。
-
-*   状态管理：我们在数组中跟踪 `todos`，并在状态更改时更新显示。
+* DOM 操作：我们动态地创建、修改和删除元素。
+* 事件处理：我们响应用户交互，如表单提交和按钮点击。
+* 状态管理：我们在数组中跟踪 `todos`，并在状态更改时更新显示。
 
 ### 增强和扩展
 
 要进一步改进此待办事项列表应用程序，请考虑实现以下功能：
 
-1.  本地存储：将 `todos` 保存到 localStorage，以便在页面重新加载后保留。
+1. 本地存储：将 `todos` 保存到 localStorage，以便在页面重新加载后保留。
+
+
+
+# 待办事项列表增强
+
+## 1. 使用 `localStorage` 持久化数据
 
 ```javascript
-// Load todos from localStorage function loadTodos() {
+// Load todos from localStorage
+function loadTodos() {
     const storedTodos = localStorage.getItem('todos');
     if (storedTodos) {
         todos = JSON.parse(storedTodos);
         renderTodos();
     }
-} // Save todos to localStorage function saveTodos() {
+}
+
+// Save todos to localStorage
+function saveTodos() {
     localStorage.setItem('todos', JSON.stringify(todos));
-} // Call loadTodos on page load loadTodos(); // Modify existing functions to call saveTodos after changes function addTodo(text) {
-    todos.push({ text, completed: false });saveTodos();
+}
+
+// Call loadTodos on page load
+loadTodos();
+
+// Modify existing functions to call saveTodos after changes
+function addTodo(text) {
+    todos.push({ text, completed: false });
+    saveTodos();
     renderTodos();
-} function toggleComplete(index) {
+}
+
+function toggleComplete(index) {
     todos[index].completed = !todos[index].completed;
     saveTodos();
     renderTodos();
 }
-```
 
-
-
-```javascript
-todos[index].completed = !todos[index].completed;
-
-saveTodos();
-
-renderTodos();
-}
 function editTodo(index) {
     const newText = prompt('Edit task:', todos[index].text);
     if (newText !== null && newText.trim() !== '') {
@@ -4207,6 +4242,7 @@ function editTodo(index) {
         renderTodos();
     }
 }
+
 function deleteTodo(index) {
     todos.splice(index, 1);
     saveTodos();
@@ -4215,6 +4251,7 @@ function deleteTodo(index) {
 ```
 
 ## 2. 拖放功能
+
 允许用户通过拖拽和释放来重新排序任务。
 
 要实现拖放功能，你可以使用 HTML5 Drag and Drop API。这是一个基础实现示例：
@@ -4226,18 +4263,22 @@ function renderTodos() {
         const li = document.createElement('li');
         li.className = 'todo-item';
         li.draggable = true;
-        // ... (其余的渲染代码)  li.addEventListener('dragstart', dragStart);
+        // ... (其余的渲染代码)
+        li.addEventListener('dragstart', dragStart);
         li.addEventListener('dragover', dragOver);
         li.addEventListener('drop', drop);
         todoList.appendChild(li);
     });
 }
+
 function dragStart(e) {
     e.dataTransfer.setData('text/plain', e.target.dataset.index);
 }
+
 function dragOver(e) {
     e.preventDefault();
 }
+
 function drop(e) {
     e.preventDefault();
     const fromIndex = parseInt(e.dataTransfer.getData('text/plain'));
@@ -4250,15 +4291,18 @@ function drop(e) {
 ```
 
 ## 3. 截止日期
+
 添加为任务设置截止日期并按日期排序的功能。
 
-要添加截止日期，你需要修改你的待事项事项结构并添加一些 UI 元素：
+要添加截止日期，你需要修改你的待办事项结构并添加一些 UI 元素：
 
 ```javascript
 function addTodo(text, dueDate) {
-    todos.push({ text, completed: false, dueDate });saveTodos();
+    todos.push({ text, completed: false, dueDate });
+    saveTodos();
     renderTodos();
 }
+
 function renderTodos() {
     todoList.innerHTML = '';
     todos.forEach((todo, index) => {
@@ -4267,23 +4311,38 @@ function renderTodos() {
         if (todo.completed) {
             li.classList.add('completed');
         }
-        li.innerHTML = `            <span>${todo.text}</span>            <span class="due-date">${todo.dueDate ? new Date(todo.dueDate).toLocaleDateString() : 'No due date'}</span>            <div              <button class="complete-btn">${todo.completed ? 'Undo' : 'Complete'}</button>              <button class="edit-btn">Edit</button>              <button class="delete-btn">Delete</button>          </div>`;
+        li.innerHTML = `
+            <span>${todo.text}</span>
+            <span class="due-date">${todo.dueDate ? new Date(todo.dueDate).toLocaleDateString() : 'No due date'}</span>
+            <div>
+              <button class="complete-btn">${todo.completed ? 'Undo' : 'Complete'}</button>
+              <button class="edit-btn">Edit</button>
+              <button class="delete-btn">Delete</button>
+            </div>`;
         // ... (其余的渲染代码)
+    });
 }
+
 // 修改表单以包含日期输入
-todoForm.innerHTML = `<input type="text" id="todo-input" placeholder="Enter a new task" required><input type="date" id="todo-date"><button type="submit">Add Task</button>`; 
+todoForm.innerHTML = `
+    <input type="text" id="todo-input" placeholder="Enter a new task" required>
+    <input type="date" id="todo-date">
+    <button type="submit">Add Task</button>
+`;
+
 const todoDateInput = document.getElementById('todo-date');
 todoForm.addEventListener('submit', (e) => {
     e.preventDefault();
-    const todoText = todoDateInput.value.trim();
+    const todoText = document.getElementById('todo-input').value.trim();
     const todoDate = todoDateInput.value;
     if (todoText !== '') {
         addTodo(todoText, todoDate);
-        todoDateInput.value = '';
+        document.getElementById('todo-input').value = '';
         todoDateInput.value = '';
     }
 });
-// 按日期排序待事项函数
+
+// 按日期排序待办事项函数
 function sortByDate() {
     todos.sort((a, b) => {
         if (!a.dueDate) return 1;
@@ -4292,6 +4351,7 @@ function sortByDate() {
     });
     renderTodos();
 }
+
 // 在你的 HTML 中添加排序按钮
 const sortButton = document.createElement('button');
 sortButton.textContent = 'Sort by Date';
@@ -4299,12 +4359,14 @@ sortButton.addEventListener('click', sortByDate);
 document.querySelector('.container').insertBefore(sortButton, todoList);
 ```
 
-这些增强展示了你如何扩展基础的待事项列表功能，创建一个功能更丰富的应用程序。每个新功能的加入都引入了新的概念和挑战，例如与浏览器存储交互、实现拖放功能以及在 JavaScript 中处理日期。
+这些增强展示了你如何扩展基础的待办事项列表功能，创建一个功能更丰富的应用程序。每个新功能的加入都引入了新的概念和挑战，例如与浏览器存储交互、实现拖放功能以及在 JavaScript 中处理日期。
 
-## 7.2 带有灯箱效果的图片库
+# 7.2 带有灯箱效果的图片库
+
 创建一个带有灯箱效果的图片库是另一个实用的项目，它展示了 DOM 操作和事件处理的力量。这个项目将允许用户查看图片集，并点击它们在灯箱覆盖层中查看更大的版本。
 
-### HTML 结构
+## HTML 结构
+
 让我们先从 HTML 结构开始：
 
 ```html
@@ -4333,8 +4395,9 @@ document.querySelector('.container').insertBefore(sortButton, todoList);
 </html>
 ```
 
-### CSS 样式
-添加一些 CSS 来样式库和灯箱：
+## CSS 样式
+
+添加一些 CSS 来样式化画廊和灯箱：
 
 ```css
 body {
@@ -4399,8 +4462,9 @@ h1 {
 }
 ```
 
-### JavaScript 实现
-现在，让我们实现库和灯箱功能：
+## JavaScript 实现
+
+现在，让我们实现画廊和灯箱功能：
 
 ```javascript
 // 图片对象数组
@@ -4417,7 +4481,7 @@ const lightboxImg = document.getElementById('lightbox-img');
 const caption = document.getElementById('caption');
 const close = document.querySelector('.close');
 
-// 创建库项
+// 创建画廊项
 function createGalleryItems() {
     images.forEach(image => {
         const img = document.createElement('img');
@@ -4448,248 +4512,219 @@ lightbox.addEventListener('click', (e) => {
     }
 });
 
-// 初始化库
+// 初始化画廊
 createGalleryItems();
 ```
 
+1. 我们定义了一个图像对象数组，每个对象包含一个源 URL 和一个 alt 描述。
 
+2. 我们获取了重要 DOM 元素的引用：画廊容器、灯箱元素和关闭按钮。
 
+3. `createGalleryItems` 函数为数组中的每个图像动态创建 `img` 元素并添加到画廊中。每张图像都获得了一个点击事件监听器，用于打开灯箱。
 
-1.  我们定义了一个图像对象数组，每个对象包含一个源 URL 和一个 alt 描述。
+4. `openLightbox` 函数设置灯箱图像的源和说明文字，并显示灯箱。
 
-2.  我们获取了重要 DOM 元素的引用：画廊容器、灯箱元素和关闭按钮。```
+5. `closeLightbox` 函数隐藏灯箱。
 
-3.  `createGalleryItems` 函数为数组中的每个图像动态创建 `img` 元素并添加到画廊中。每张图像都获得了一个点击事件监听器，用于打开灯箱。
+6. 我们添加了事件监听器，以便在点击关闭按钮或用户点击图像外部时关闭灯箱。
 
-4.  `openLightbox` 函数设置灯箱图像的源和说明文字，并显示灯箱。
+7. 最后，我们调用 `createGalleryItems` 来初始化画廊。
 
-5.  `closeLightbox` 函数隐藏灯箱。
-
-6.  我们添加了事件监听器，以便在点击关闭按钮或用户点击图像外部时关闭灯箱。
-
-7.  最后，我们调用 `createGalleryItems` 来初始化画廊。
-
-### 增强与扩展
+## 增强与扩展
 
 为了改进这个图像画廊，可以考虑实现以下功能：
 
-1.  **键盘导航**：允许用户使用方向键进行图像切换，并使用 `Esc` 键关闭灯箱。
+### 1. 键盘导航
 
-```
-document.addEventListener('keydown', (e) => {if (!lightbox.style.display  ||  lightbox.style.display  ===  'none') return;
+允许用户使用方向键进行图像切换，并使用 `Esc` 键关闭灯箱。
 
-    if (e.key  ===  'Escape') {
+```javascript
+document.addEventListener('keydown', (e) => {
+    if (!lightbox.style.display || lightbox.style.display === 'none') return;
 
-       closeLightbox();
+    if (e.key === 'Escape') {
+        closeLightbox();
+    } else if (e.key === 'ArrowRight') {
+        showNextImage();
+    } else if (e.key === 'ArrowLeft') {
+        showPreviousImage();
+    }
+});
 
-    } else  if (e.key  ===  'ArrowRight') {
+let currentImageIndex = 0;
 
-       showNextImage();
+function showNextImage() {
+    currentImageIndex = (currentImageIndex + 1) % images.length;
+    updateLightboxImage();
+}
 
-    } else  if (e.key  ===  'ArrowLeft') {
+function showPreviousImage() {
+    currentImageIndex = (currentImageIndex - 1 + images.length) % images.length;
+    updateLightboxImage();
+}
 
-       showPreviousImage();
+function updateLightboxImage() {
+    const image = images[currentImageIndex];
+    lightboxImg.src = image.src;
+    caption.textContent = image.alt;
+}
 
-    }
-}); let  currentImageIndex  =  0; function  showNextImage() {
-
-     currentImageIndex  = (currentImageIndex  +  1) %  images.length;
-
-     updateLightboxImage();
-} function  showPreviousImage() {
-
-     currentImageIndex  = (currentImageIndex  -  1  +  images.length) %  images.length;
-
-     updateLightboxImage();
-} function  updateLightboxImage() {
-
-     const  image  =  images[currentImageIndex];
-
-     lightboxImg.src  =  image.src;
-
-     caption.textContent  =  image.alt;
-} function  openLightbox(image) {
-
-     currentImageIndex  =  images.findIndex(img  =>  img.src  ===  image.src);
-
-     updateLightboxImage();
-
-     lightbox.style.display  =  'block';
+function openLightbox(image) {
+    currentImageIndex = images.findIndex(img => img.src === image.src);
+    updateLightboxImage();
+    lightbox.style.display = 'block';
 }
 ```
 
-2.  **懒加载**：为图像实现懒加载以提高性能，特别是对于大型画廊。
+### 2. 懒加载
 
-要实现懒加载，你可以使用 `Intersection Observer` API：
+为图像实现懒加载以提高性能，特别是对于大型画廊。
 
-```
-function  createGalleryItems() {
+要实现懒加载，你可以使用 `IntersectionObserver` API：
 
-     images.forEach((image, index) => {const  img  =  document.createElement('img');
+```javascript
+function createGalleryItems() {
+    images.forEach((image, index) => {
+        const img = document.createElement('img');
+        img.dataset.src = image.src; // 使用 data-src 代替 src
+        img.alt = image.alt;
+        img.addEventListener('click', () => openLightbox(image));
+        gallery.appendChild(img);
 
-         img.dataset.src  =  image.src; // 使用 data-src 代替 src          img.alt  =  image.alt;
+        if (index < 5) { // 立即加载前 5 张图像
+            img.src = img.dataset.src;
+        } else {
+            observeImage(img);
+        }
+    });
+}
 
-         img.addEventListener('click', () =>  openLightbox(image));
-
-         gallery.appendChild(img);
-
-         if (index  <  5) { // 立即加载前 5 张图像             img.src  =  img.dataset.src;
-
-         } else {observeImage(img);
-
-         }
-
-    });
-} function  observeImage(img) {
-
-     const  observer  =  new  IntersectionObserver((entries, observer) => {entries.forEach(entry  => {if (entry.isIntersecting) {
-
-             img.src  =  img.dataset.src;
-
-             observer.unobserve(img);
-
-         
-
-     }, { rootMargin:  '0px 0px 200px 0px' });observer.observe(img);
+function observeImage(img) {
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                img.src = img.dataset.src;
+                observer.unobserve(img);
+            }
+        });
+    }, { rootMargin: '0px 0px 200px 0px' });
+    observer.observe(img);
 }
 ```
 
-3.  **触摸滑动支持**：添加触摸设备上的滑动支持以便在图像之间导航。
+### 3. 触摸滑动支持
+
+添加触摸设备上的滑动支持以便在图像之间导航。
 
 要添加滑动支持，你可以跟踪触摸事件：
 
-```
-let  touchStartX  =  0; let  touchEndX  =  0; lightbox.addEventListener('touchstart', (e) => {touchStartX  =  e.changedTouches[0].screenX;
+```javascript
+let touchStartX = 0;
+let touchEndX = 0;
 
-}); lightbox.addEventListener('touchend', (e) => {touchEndX  =  e.changedTouches[0].screenX;
+lightbox.addEventListener('touchstart', (e) => {
+    touchStartX = e.changedTouches[0].screenX;
+});
 
-    handleSwipe();
+lightbox.addEventListener('touchend', (e) => {
+    touchEndX = e.changedTouches[0].screenX;
+    handleSwipe();
+});
 
-}); function  handleSwipe() {
-
-     const  swipeThreshold  =  50;
-
-     if (touchEndX  <  touchStartX  -  swipeThreshold) {
-
-    showNextImage();
-
-    } else  if (touchEndX  >  touchStartX  +  swipeThreshold) {
-
-    showPreviousImage();
-
+function handleSwipe() {
+    const swipeThreshold = 50;
+    if (touchEndX < touchStartX - swipeThreshold) {
+        showNextImage();
+    } else if (touchEndX > touchStartX + swipeThreshold) {
+        showPreviousImage();
+    }
 }
 ```
 
-4.  **缩放功能**：允许用户在灯箱中放大图像。
+### 4. 缩放功能
+
+允许用户在灯箱中放大图像。
 
 要添加缩放功能，可以使用 CSS transform：
 
-```
-let  isZoomed  =  false; let  zoomLevel  =  1; lightboxImg.addEventListener('click', (e) => {if (!isZoomed) {
+```javascript
+let isZoomed = false;
+let zoomLevel = 1;
 
-       zoomLevel  =  2;
+lightboxImg.addEventListener('click', (e) => {
+    if (!isZoomed) {
+        zoomLevel = 2;
+        lightboxImg.style.transform = `scale(${zoomLevel})`;
+        isZoomed = true;
+    } else {
+        zoomLevel = 1;
+        lightboxImg.style.transform = 'scale(1)';
+        isZoomed = false;
+    }
+});
 
-       lightboxImg.style.transform  =  `scale(${zoomLevel})`;
-
-       isZoomed  =  true;
-
-} else {zoomLevel  =  1;
-
-       lightboxImg.style.transform  =  'scale(1)';
-
-       isZoomed  =  false;
-
-}}); lightboxImg.addEventListener('mousemove', (e) => {if (isZoomed) {
-
-       const  rect  =  lightboxImg.getBoundingClientRect();
-
-       const  x  =  (e.clientX  -  rect.left) /  rect.width;
-
-       const  y  =  (e.clientY  -  rect.top) /  rect.height;
-
-        lightboxImg.style.transformOrigin  =  `${x*100}% ${y*100}%`;
-
+lightboxImg.addEventListener('mousemove', (e) => {
+    if (isZoomed) {
+        const rect = lightboxImg.getBoundingClientRect();
+        const x = (e.clientX - rect.left) / rect.width;
+        const y = (e.clientY - rect.top) / rect.height;
+        lightboxImg.style.transformOrigin = `${x * 100}% ${y * 100}%`;
+    }
 });
 ```
 
 这些增强显著提升了画廊的用户体验。它们演示了更高级的 DOM 操作、键盘和触摸事件处理以及 Intersection Observer 等现代 Web API 使用。
 
-## 7.3 表单验证与提交
+# 7.3 表单验证与提交
 
 表单验证是 Web 开发的关键方面，确保用户输入在提交前符合某些标准。在这个项目中，我们将创建一个带有实时验证和自定义错误信息的注册表单。
 
-### HTML 结构
+## HTML 结构
 
 从注册表单的 HTML 结构开始：
 
-```
+```html
 <!DOCTYPE html>
-
 <html lang="en">
-
 <head>
-
-    <meta charset="UTF-8">
-
-    <meta name="viewport"  content="width=device-width, initial-scale=1.0">
-
-    <title>Registration Form</title>
-
-    <link rel="stylesheet"  href="styles.css">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
+    <div class="container">
+        <h1>Registration Form</h1>
+        <form id="registration-form">
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+                <span class="error" id="username-error"></span>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <span class="error" id="email-error"></span>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                <span class="error" id="password-error"></span>
+            </div>
+            <div class="form-group">
+                <label for="confirm-password">Confirm Password:</label>
+                <input type="password" id="confirm-password" name="confirm-password" required>
+                <span class="error" id="confirm-password-error"></span>
+            </div>
+            <button type="submit">Register</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+```
 
-    <div class="container">
-
-        <h1>Registration Form</h1>
-
-        <form id="registration-form">
-
-           <div class="form-group">
-
-              <label for="username">Username:</label>
-
-              <input type="text"  id="username"  name="username"  required>
-
-              <span class="error"  id="username-error"></span>
-
-           </div>
-
-           <div class="form-group">
-
-              <label for="email">Email:</label>
-
-              <input type="email"  id="email"  name="email"  required>
-
-              <span class="error"  id="email-error"></span>
-
-         </div>�</div>           <div class="form-group">
-
-              <label for="password">Password:</label>
-
-               <input type="password"  id="password"  name="password"  required>
-
-             <span class="error"  id="password-error"></span>
-
-                 
-
-               </�>
-
-           
-�
-�
-��
-
-。
-
-
-
-
-# 表单验证实现
-
-## 代码
+## 表单验证实现
 
 ```javascript
 // 获取表单和输入元素
@@ -4698,24 +4733,27 @@ const username = document.getElementById('username');
 const email = document.getElementById('email');
 const password = document.getElementById('password');
 const confirmPassword = document.getElementById('confirm-password');
+
 // 获取错误元素
 const usernameError = document.getElementById('username-error');
 const emailError = document.getElementById('email-error');
 const passwordError = document.getElementById('password-error');
 const confirmPasswordError = document.getElementById('confirm-password-error');
+
 // 验证函数
 function validateUsername() {
     const value = username.value.trim();
     if (value === '') {
         showError(username, usernameError, 'Username is required');
     } else if (value.length < 3) {
-        showError(username, usernameError, 'Username must be least 3 characters');
+        showError(username, usernameError, 'Username must be at least 3 characters');
     } else {
         showSuccess(username, usernameError);
         return true;
     }
     return false;
 }
+
 function validateEmail() {
     const value = email.value.trim();
     if (value === '') {
@@ -4728,6 +4766,7 @@ function validateEmail() {
     }
     return false;
 }
+
 function validatePassword() {
     const value = password.value.trim();
     if (value === '') {
@@ -4740,6 +4779,7 @@ function validatePassword() {
     }
     return false;
 }
+
 function validateConfirmPassword() {
     const passwordValue = password.value.trim();
     const confirmValue = confirmPassword.value.trim();
@@ -4753,26 +4793,31 @@ function validateConfirmPassword() {
     }
     return false;
 }
+
 // 辅助函数
 function showError(input, errorElement, message) {
     input.classList.add('error');
     input.classList.remove('success');
     errorElement.textContent = message;
 }
+
 function showSuccess(input, errorElement) {
     input.classList.add('success');
     input.classList.remove('error');
     errorElement.textContent = '';
 }
+
 function isValidEmail(email) {
     const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     return re.test(String(email).toLowerCase());
 }
+
 // 实时验证事件监听器
 username.addEventListener('input', validateUsername);
 email.addEventListener('input', validateEmail);
 password.addEventListener('input', validatePassword);
 confirmPassword.addEventListener('input', validateConfirmPassword);
+
 // 表单提交
 form.addEventListener('submit', (e) => {
     e.preventDefault();
@@ -4780,6 +4825,7 @@ form.addEventListener('submit', (e) => {
     const isEmailValid = validateEmail();
     const isPasswordValid = validatePassword();
     const isConfirmPasswordValid = validateConfirmPassword();
+
     if (isUsernameValid && isEmailValid && isPasswordValid && isConfirmPasswordValid) {
         // 如果所有验证通过，你就可以提交表单
         alert('Form submitted successfully!');
@@ -4796,10 +4842,10 @@ form.addEventListener('submit', (e) => {
 
 2. 我们为每个输入字段定义了验证函数：
 
-* `validateUsername`: 检查 `username` 是否为空以及长度是否至少 3 个字符。
-* `validateEmail`: 检查 `email` 是否为空以及是否匹配有效的邮箱格式。
-* `validatePassword`: 检查 `password` 是否为空以及长度是否至少 6 个字符。
-* `validateConfirmPassword`: 检查 `confirmPassword` 是否与 `password` 匹配。
+- `validateUsername`：检查 `username` 是否为空以及长度是否至少 3 个字符。
+- `validateEmail`：检查 `email` 是否为空以及是否匹配有效的邮箱格式。
+- `validatePassword`：检查 `password` 是否为空以及长度是否至少 6 个字符。
+- `validateConfirmPassword`：检查 `confirmPassword` 是否与 `password` 匹配。
 
 3. 使用辅助函数 `showError` 和 `showSuccess` 显示错误消息并更新输入样式。
 
@@ -4807,11 +4853,13 @@ form.addEventListener('submit', (e) => {
 
 5. 在提交表单时，阻止默认操作，运行所有验证，并仅在所有验证通过时才继续。
 
-### 增强与扩展
+## 增强与扩展
 
 为了进一步改进此表单验证项目，考虑实现以下功能：
 
-1. **异步用户名可用性检查**：通过调用 API 检查 `username` 是否已被。
+### 1. 异步用户名可用性检查
+
+通过调用 API 检查 `username` 是否已被占用。
 
 ```javascript
 let usernameTimeout;
@@ -4819,6 +4867,7 @@ username.addEventListener('input', () => {
     clearTimeout(usernameTimeout);
     usernameTimeout = setTimeout(checkUsernameAvailability, 500);
 });
+
 function checkUsernameAvailability() {
     const value = username.value.trim();
     if (value.length >= 3) {
@@ -4834,7 +4883,9 @@ function checkUsernameAvailability() {
 }
 ```
 
-2. **密码强度计**：为 `password` 强度添加视觉指示器。
+### 2. 密码强度计
+
+为 `password` 强度添加视觉指示器。
 
 ```javascript
 function checkPasswordStrength(password) {
@@ -4845,17 +4896,20 @@ function checkPasswordStrength(password) {
     if (password.match(/[$@#&!]+/)) strength += 1;
     return strength;
 }
+
 password.addEventListener('input', () => {
     const strength = checkPasswordStrength(password.value);
     const strengthMeter = document.createElement('div');
     strengthMeter.className = 'strength-meter';
     strengthMeter.style.width = `${strength * 25}%`;
     strengthMeter.style.backgroundColor = ['red', 'orange', 'yellow', 'green'][strength - 1];
+
     const existingMeter = password.parentElement.querySelector('.strength-meter');
     if (existingMeter) {
         existingMeter.remove();
     }
     password.parentElement.appendChild(strengthMeter);
+
     const strengthText = ['Weak', 'Fair', 'Good', 'Strong'][strength - 1];
     passwordError.textContent = strengthText || '';
     passwordError.style.color = strengthMeter.style.backgroundColor;
@@ -4874,7 +4928,9 @@ password.addEventListener('input', () => {
 
 此实现在 `password` 输入框下方添加了一个视觉强度计。强度计根据 `password` 的强度改变颜色和长度。
 
-3. **显示/隐藏密码**：添加一个切换按钮来显示或隐藏 `password`。
+### 3. 显示/隐藏密码
+
+添加一个切换按钮来显示或隐藏 `password`。
 
 ```javascript
 function createPasswordToggle(inputElement) {
@@ -4895,6 +4951,7 @@ function createPasswordToggle(inputElement) {
 
     inputElement.parentElement.appendChild(toggleButton);
 }
+
 createPasswordToggle(password);
 createPasswordToggle(confirmPassword);
 ```
@@ -4917,18 +4974,16 @@ createPasswordToggle(confirmPassword);
 }
 ```
 
-
-
-
-
-## 4. 表单数据持久化
+### 4. 表单数据持久化
 
 将表单数据保存到 `localStorage` 中以便在页面刷新时保持持久化。
 
 ```javascript
 function saveFormData() {
-    const formData = {username: username.value,
-        email: email.value };
+    const formData = {
+        username: username.value,
+        email: email.value
+    };
     localStorage.setItem('formData', JSON.stringify(formData));
 }
 
@@ -4945,7 +5000,7 @@ form.addEventListener('input', saveFormData);
 window.addEventListener('load', loadFormData);
 ```
 
-## 5. 自定义验证消息
+### 5. 自定义验证消息
 
 允许用户设置自定义验证消息。
 
@@ -4972,7 +5027,7 @@ email.addEventListener('invalid', (e) => {
 });
 ```
 
-## 6. 无障碍性改进
+### 6. 无障碍性改进
 
 使用 ARIA 属性和键盘导航增强表单的无障碍性。
 
@@ -5006,16 +5061,16 @@ form.addEventListener('keydown', (e) => {
 - 密码强度计为用户对其所选密码的安全性提供了即时视觉反馈。
 - 显示/隐藏密码切换改进了可用性，特别是在移动设备上。
 - 表单数据持久化帮助了可能需要离开页面并在稍后返回的用户。
-- 自定义验证消息为用户提供了更具具体、更有帮助的反馈。
+- 自定义验证消息为用户提供了更具体、更有帮助的反馈。
 - 无障碍性改进使表单对于使用屏幕阅读器或键盘导航的人来说更易用。
 
 通过实现这些功能，你正在创建一个更健壮、用户友好且符合无障碍标准的注册表单。该项目演示了高级的表单处理技术、实时验证以及对用户体验和无障碍性的考虑。
 
-## 7.4 简单 SPA 导航
+# 7.4 简单 SPA 导航
 
 创建一个简单的单页应用（SPA）导航系统是演示 DOM 操作和事件处理的极佳方法。此项目将展示如何创建一个基础 SPA，允许用户在不同的“页面”之间导航而无需实际刷新页面。
 
-### HTML 结构
+## HTML 结构
 
 让我们从基础的 HTML 结构开始：
 
@@ -5044,9 +5099,7 @@ form.addEventListener('keydown', (e) => {
 </html>
 ```
 
-### CSS 样式
-
-
+## CSS 样式
 
 添加一些基础 CSS 来样式化导航和内容区域：
 
@@ -5093,7 +5146,7 @@ main {
 }
 ```
 
-### JavaScript 实现
+## JavaScript 实现
 
 现在，让我们来实现 SPA 导航功能：
 
@@ -5119,13 +5172,13 @@ const contentElement = document.getElementById('content');
 
 // 渲染页面的函数
 function renderPage(pageName) {
-    contentElement.innerHTML = pages[pageName] || '<<h1>404 - Page Not Found</h1>';
-    
+    contentElement.innerHTML = pages[pageName] || '<h1>404 - Page Not Found</h1>';
+
     // 更新导航中的活动链接
     document.querySelectorAll('nav a').forEach(link => {
         link.classList.toggle('active', link.dataset.page === pageName);
     });
-    
+
     // 更新 URL
     history.pushState(null, '', `#${pageName}`);
 }
@@ -5153,16 +5206,22 @@ renderPage(initialPage);
 这段 JavaScript 代码实现了一个基础 SPA 导航系统：
 
 1. 我们定义了一个 `pages` 对象，其中包含了我们 SPA 中每个“页面”的 HTML 内容。
-2. `renderPage` 函数负责更新页面内容和导航链接的活动状态。
-3. 我们为所有导航链接添加了点击监听器。当点击链接时，阻止默认行为并渲染相应的页面。
-4. 我们通过监听 `popstate` 事件来处理浏览器的后退/前进导航。
-5. 在初始页面加载时，根据 URL 哈 或默认到主页渲染相应的页面。
 
-### 增强与扩展
+2. `renderPage` 函数负责更新页面内容和导航链接的活动状态。
+
+3. 我们为所有导航链接添加了点击监听器。当点击链接时，阻止默认行为并渲染相应的页面。
+
+4. 我们通过监听 `popstate` 事件来处理浏览器的后退/前进导航。
+
+5. 在初始页面加载时，根据 URL 哈希或默认到主页渲染相应的页面。
+
+## 增强与扩展
 
 为了改进这个简单的 SPA 导航系统，考虑实现以下功能：
 
-1. **加载指示器**：添加加载指示以获得更流畅的用户体验。
+### 1. 加载指示器
+
+添加加载指示以获得更流畅的用户体验。
 
 ```javascript
 function showLoader() {
@@ -5183,30 +5242,25 @@ function hideLoader() {
 // 修改 renderPage 函数
 function renderPage(pageName) {
     showLoader();
-    
+
     // 模拟异步页面加载
     setTimeout(() => {
         hideLoader();
-        contentElement.innerHTML = pages[pageName] || '<<h1>404 - Page Not Found</h1>';
-        
+        contentElement.innerHTML = pages[pageName] || '<h1>404 - Page Not Found</h1>';
+
         // 更新导航中的活动链接
         document.querySelectorAll('nav a').forEach(link => {
             link.classList.toggle('active', link.dataset.page === pageName);
         });
-        
+
         // 更新 URL
         history.pushState(null, '', `#${pageName}`);
-    }, 100);
+    }, 500); // 模拟 500ms 加载时间
 }
 ```
 
+将此 CSS 添加到你的样式表中：
 
-
-
-
-}, 500); // 模拟 500ms 加载时间 }
-
-// 将此 CSS 添加到你的样式表中
 ```css
 .loader {
     text-align: center;
@@ -5215,7 +5269,9 @@ function renderPage(pageName) {
 }
 ```
 
-## 2. 页面过渡：在页面之间添加平滑过渡。
+### 2. 页面过渡
+
+在页面之间添加平滑过渡。
 
 ```javascript
 function renderPage(pageName) {
@@ -5223,43 +5279,44 @@ function renderPage(pageName) {
 
     // 模拟异步页面加载
     setTimeout(() => {
-      hideLoader();
+        hideLoader();
 
-      // 为新内容创建一个新的 div
-      const newContent = document.createElement('div');
-      newContent.innerHTML = pages[pageName] || '<h1>404 - 未找到页面</h1>';
-      newContent.className = 'page';
+        // 为新内容创建一个新的 div
+        const newContent = document.createElement('div');
+        newContent.innerHTML = pages[pageName] || '<h1>404 - 未找到页面</h1>';
+        newContent.className = 'page';
 
-      // 将新内容添加到 DOM
-      contentElement.appendChild(newContent);
+        // 将新内容添加到 DOM
+        contentElement.appendChild(newContent);
 
-      // 触发重流 (reflow)
-      newContent.offsetHeight;
+        // 触发重流 (reflow)
+        newContent.offsetHeight;
 
-      // 添加 'active' 类以触发过渡
-      newContent.classList.add('active');
+        // 添加 'active' 类以触发过渡
+        newContent.classList.add('active');
 
-      // 过渡结束后移除旧内容
-      const oldContent = contentElement.querySelector('.page:not(.active)');
-      if (oldContent) {
-        oldContent.addEventListener('transitionend', () => {
-          oldContent.remove();
+        // 过渡结束后移除旧内容
+        const oldContent = contentElement.querySelector('.page:not(.active)');
+        if (oldContent) {
+            oldContent.addEventListener('transitionend', () => {
+                oldContent.remove();
+            });
+            oldContent.classList.remove('active');
+        }
+
+        // 更新导航中的激活链接
+        document.querySelectorAll('nav a').forEach(link => {
+            link.classList.toggle('active', link.dataset.page === pageName);
         });
-        oldContent.classList.remove('active');
-      }
 
-      // 更新导航中的激活链接
-      document.querySelectorAll('nav a').forEach(link => {
-        link.classList.toggle('active', link.dataset.page === pageName);
-      });
-
-      // 更新 URL
-      history.pushState(null, '', `#${pageName}`);
+        // 更新 URL
+        history.pushState(null, '', `#${pageName}`);
     }, 500); // 模拟 500ms 加载时间
 }
 ```
 
-// 将此 CSS 添加到你的样式表中
+将此 CSS 添加到你的样式表中：
+
 ```css
 .page {
     opacity: 0;
@@ -5270,79 +5327,85 @@ function renderPage(pageName) {
 }
 ```
 
-## 3. 动态内容加载：不要硬编码页面内容，而是从单独的文件或 API 动态加载。
+### 3. 动态内容加载
+
+不要硬编码页面内容，而是从单独的文件或 API 动态加载。
 
 ```javascript
 async function fetchPageContent(pageName) {
     try {
-      const response = await fetch(`pages/${pageName}.html`);
-      if (!response.ok) {
-        throw new Error('未找到页面');
-      }
-      return await response.text();
+        const response = await fetch(`pages/${pageName}.html`);
+        if (!response.ok) {
+            throw new Error('未找到页面');
+        }
+        return await response.text();
     } catch (error) {
-      console.error('加载页面出错:', error);
-      return '<h1>404 - 未找到页面</h1>';
+        console.error('加载页面出错:', error);
+        return '<h1>404 - 未找到页面</h1>';
     }
 }
 
 async function renderPage(pageName) {
     showLoader();
     try {
-      const content = await fetchPageContent(pageName);
-      hideLoader();
-      contentElement.innerHTML = content;
+        const content = await fetchPageContent(pageName);
+        hideLoader();
+        contentElement.innerHTML = content;
 
-      // 更新导航中的激活链接
-      document.querySelectorAll('nav a').forEach(link => {
-        link.classList.toggle('active', link.dataset.page === pageName);
-      });
+        // 更新导航中的激活链接
+        document.querySelectorAll('nav a').forEach(link => {
+            link.classList.toggle('active', link.dataset.page === pageName);
+        });
 
-      // 更新 URL
-      history.pushState(null, '', `#${pageName}`);
+        // 更新 URL
+        history.pushState(null, '', `#${pageName}`);
     } catch (error) {
-      hideLoader();
-      contentElement.innerHTML = '<h1>错误页面</h1>';
+        hideLoader();
+        contentElement.innerHTML = '<h1>错误页面</h1>';
     }
 }
 ```
 
-## 4. 元数据信息：更新每个页面的标题和 meta 描述。
+### 4. 元数据信息
+
+更新每个页面的标题和 meta 描述。
 
 ```javascript
 const pageMetaInfo = {
-  home: {
-    title: '首页 - SPA',
-    description: '欢迎来到我们单页面应用的首页。'
-  },
-  about: {
-    title: '关于我们 - SPA',
-    description: '了解关于我们公司和使命的信息。'
-  },
-  contact: {
-    title: '联系我们 - SPA',
-    description: '如有疑问请与我们联系。'
-  }
+    home: {
+        title: '首页 - SPA',
+        description: '欢迎来到我们单页面应用的首页。'
+    },
+    about: {
+        title: '关于我们 - SPA',
+        description: '了解关于我们公司和使命的信息。'
+    },
+    contact: {
+        title: '联系我们 - SPA',
+        description: '如有疑问请与我们联系。'
+    }
 };
 
 function updateMetaInfo(pageName) {
-  const meta = pageMetaInfo[pageName] || {
-    title: '404 - 未找到页面',
-    description: '找不到请求的页面。'
-  };
-  document.title = meta.title;
-  document.querySelector('meta[name="description"]').setAttribute('content', meta.description);
+    const meta = pageMetaInfo[pageName] || {
+        title: '404 - 未找到页面',
+        description: '找不到请求的页面。'
+    };
+    document.title = meta.title;
+    document.querySelector('meta[name="description"]').setAttribute('content', meta.description);
 }
 
 // 修改 renderPage 函数包含此内容
 function renderPage(pageName) {
-  // ... 现有代码 ...
-  updateMetaInfo(pageName);
-  // ... 函数其余部分 ...
+    // ... 现有代码 ...
+    updateMetaInfo(pageName);
+    // ... 函数其余部分 ...
 }
 ```
 
-## 5. 激活链接样式：增强导航中激活链接的样式。
+### 5. 激活链接样式
+
+增强导航中激活链接的样式。
 
 ```css
 nav ul li a {
@@ -5357,36 +5420,35 @@ nav ul li a.active, nav ul li a:hover {
 }
 ```
 
-## 6. 错误处理：改进不存在页面或内容加载失败的错误处理。
+### 6. 错误处理
+
+改进不存在页面或内容加载失败的错误处理。
 
 ```javascript
 function showErrorPage(message) {
-  contentElement.innerHTML = `
-    <h1>错误</h1>
-    <p>${message}</p>
-    <a href="#" data-page="home">返回首页</a>
-  `;
+    contentElement.innerHTML = `
+        <h1>错误</h1>
+        <p>${message}</p>
+        <a href="#" data-page="home">返回首页</a>
+    `;
 }
 
 async function renderPage(pageName) {
     showLoader();
     try {
-      const content = await fetchPageContent(pageName);
-      hideLoader();
-      if (content === '<h1>404 - 未找到页面</h1>') {
-        showErrorPage('找不到请求的页面。');
-      } else {
-        contentElement.innerHTML = content;
-      }
+        const content = await fetchPageContent(pageName);
+        hideLoader();
+        if (content === '<h1>404 - 未找到页面</h1>') {
+            showErrorPage('找不到请求的页面。');
+        } else {
+            contentElement.innerHTML = content;
+        }
     } catch (error) {
-      hideLoader();
-      showErrorPage('加载内容时出错。');
+        hideLoader();
+        showErrorPage('加载内容时出错。');
     }
 }
 ```
-
-
-
 
 # Angular
 
@@ -5395,11 +5457,14 @@ Angular 由 Google 开发，是一个用于构建大型应用程序的综合框�
 ## Angular 的主要特性
 
 1. TypeScript：使用 TypeScript 构建，并鼓励使用 TypeScript 以实现类型安全。
+
 2. 双向数据绑定：允许模型和视图之间的数据自动同步。
+
 3. 依赖注入：内置的依赖管理系统。
+
 4. RxJS：结合响应式编程处理异步数据。
 
-### Angular 组件示例
+## Angular 组件示例
 
 ```typescript
 import { Component } from '@angular/core';
@@ -5418,14 +5483,20 @@ export class HelloComponent {
 现代 JavaScript 框架通过提供抽象和优化，减少了直接操作 DOM 的需求，从而显著简化了 DOM 交互。具体实现方式如下：
 
 1. **声明式渲染**：开发者无需命令式地操作 DOM，而是根据当前状态描述 UI 的外观。框架负责高效地更新 DOM。
+
 2. **基于组件的架构**：通过将 UI 拆分为可复用的组件，框架鼓励模块化开发方式。这使得管理复杂 UI 更加容易，并减少了手动操作 DOM 的需求。
+
 3. **虚拟 DOM（React 和 Vue 中）**：虚拟 DOM 作为实际 DOM 的轻量级副本。当发生变化时，框架首先更新虚拟 DOM，然后仅将必要的更改高效地应用到真实 DOM 上，从而减少性能开销。
+
 4. **数据绑定**：框架提供了将数据绑定到 UI 的机制，当数据变化时自动更新视图。这消除了因数据变化而手动更新 DOM 的需求。
+
 5. **事件处理**：框架提供了简化的事件处理方式，通常允许在模板或组件中内联绑定事件。这减少了手动添加和移除事件监听器的需求。
+
 6. **状态管理**：许多框架提供或集成了状态管理解决方案（例如 React 的 Redux、Vue 的 Vuex）。这集中管理数据，进一步减少了直接操作 DOM 的需求。
+
 7. **生命周期钩子**：这些框架中的组件通常带有生命周期方法或钩子，允许开发者在组件生命周期的特定时刻执行操作，从而减少手动观察 DOM 的需求。
 
-### React 中简化 DOM 交互的示例
+## React 中简化 DOM 交互的示例
 
 ```jsx
 function Counter() {
@@ -5454,8 +5525,11 @@ function Counter() {
 Web Components 基于四项主要技术：
 
 1. **自定义元素**：允许你定义自定义 HTML 标签。
+
 2. **Shadow DOM**：为 Web Component 中的 JavaScript、CSS 和 HTML 提供封装。
+
 3. **HTML 模板**：定义 Web Component 的 HTML 结构。
+
 4. **ES 模块**：在 JavaScript 中组织和共享代码的首选方法。
 
 让我们更详细地探讨每一项：
@@ -5465,6 +5539,7 @@ Web Components 基于四项主要技术：
 自定义元素允许你定义新类型的 HTML 元素。自定义元素有两种类型：
 
 1. **自主自定义元素**：这些是独立的元素，不继承自标准 HTML 元素。
+
 2. **自定义内置元素**：这些元素扩展自基本 HTML 元素。
 
 以下是创建自主自定义元素的示例：
@@ -5487,7 +5562,9 @@ customElements.define('my-element', MyElement);
 
 现在你可以在 HTML 中像这样使用该元素：
 
+```html
 <my-element></my-element>
+```
 
 ### HTML 模板
 
@@ -5527,7 +5604,9 @@ Shadow DOM 是 Web Components 的关键部分。它通过将标记结构、样�
 Shadow DOM 的主要特性：
 
 1. **封装性**：组件的内部结构对页面其余部分隐藏。
+
 2. **作用域 CSS**：在 Shadow DOM 内定义的样式不会影响外部元素，全局样式也不会影响 Shadow DOM 内部的元素。
+
 3. **组合**：Shadow DOM 可用于创建类似于许多流行框架的基于组件的架构。
 
 以下是使用 Shadow DOM 创建 Web Component 的示例：
@@ -5565,25 +5644,43 @@ class MyComponent extends HTMLElement {
 
     // 创建一些 CSS 应用于 shadow dom
     const style = document.createElement('style');
-```
+    style.textContent = `
+      .wrapper {
+        position: relative;
+      }
+      .info {
+        font-size: 0.8rem;
+        width: 200px;
+        display: inline-block;
+        border: 1px solid black;
+        padding: 10px;
+        background: white;
+        border-radius: 10px;
+        opacity: 0;
+        transition: 0.6s all;
+        position: absolute;
+        bottom: 20px;
+        left: 10px;
+        z-index: 3;
+      }
+      img {
+        width: 1.2rem;
+      }
+      .icon:hover + .info, .icon:focus + .info {
+        opacity: 1;
+      }
+    `;
 
-
-
-
-```javascript
-style.textContent = `      .wrapper {        position: relative;      }      .info {        font-size: 0.8rem;        width: 200px;        display: inline-block;        border: 1px solid black;        padding: 10px;        background: white;        border-radius: 10px;        opacity: 0;        transition: 0.6s all;        position: absolute;        bottom: 20px;        left: 10px;        z-index: 3;      }      img {        width: 1.2rem;      }      .icon:hover + .info, .icon:focus + .info {        opacity: 1;      }    `;
-
-    // Attach the created elements to the shadow dom    shadow.appendChild(style);
-
+    // Attach the created elements to the shadow dom
+    shadow.appendChild(style);
     shadow.appendChild(wrapper);
-
     wrapper.appendChild(icon);
-
     wrapper.appendChild(info);
-
   }
+}
 
-} // Define the new element customElements.define('popup-info', MyComponent);
+// Define the new element
+customElements.define('popup-info', MyComponent);
 ```
 
 此组件可以在 HTML 中像这样使用：
@@ -5594,51 +5691,59 @@ style.textContent = `      .wrapper {        position: relative;      }      .in
 
 影子 DOM 提供了以下几个好处：
 
-1.  DOM 封装：组件的内部 DOM 是封装的，防止外部代码意外修改。
-2.  样式封装：在影子 DOM 中定义的样式仅限于该组件，不会影响页面的其他部分。
-3.  组合：影子 DOM 允许清晰地区分关注点并促进可重用性。
-4.  简化 CSS：由于样式是受限的，你可以使用更简单的选择器，而不必担心冲突。
+1. **DOM 封装**：组件的内部 DOM 是封装的，防止外部代码意外修改。
+
+2. **样式封装**：在影子 DOM 中定义的样式仅限于该组件，不会影响页面的其他部分。
+
+3. **组合**：影子 DOM 允许清晰地区分关注点并促进可重用性。
+
+4. **简化 CSS**：由于样式是受限的，你可以使用更简单的选择器，而不必担心冲突。
 
 但是，需要注意的是，虽然影子 DOM 提供了封装，但它不是一个安全特性。它的目的是分离关注点并防止意外的交互，而不是保护内容安全。
 
 Web 组件和影子 DOM 代表了创建可重用、封装的 Web 组件的重大进步。它们提供了一种标准的、框架无关的方式来创建复杂的 UI 元素，这可以带来更易维护和可互操作的 Web 应用程序。
 
-## 8.3 探索虚拟 DOM
+# 8.3 探索虚拟 DOM
 
-虚拟 DOM（VDOM）是一种编程概念，其中理想的或“虚拟”的 UI 表示保存在内存中，并通过诸如`ReactDOM`之类的库与“真实”DOM 同步。这个过程称为协调。虚拟 DOM 已成为现代 JavaScript 框架和库中流行的技术，特别是在`React`中，但也已被`Vue.js`等其他库采用。
+虚拟 DOM（VDOM）是一种编程概念，其中理想的或“虚拟”的 UI 表示保存在内存中，并通过诸如 `ReactDOM` 之类的库与“真实”DOM 同步。这个过程称为协调。虚拟 DOM 已成为现代 JavaScript 框架和库中流行的技术，特别是在 `React` 中，但也已被 `Vue.js` 等其他库采用。
 
-### 理解虚拟 DOM 如何提升现代库的性能
+## 理解虚拟 DOM 如何提升现代库的性能
 
 要理解为什么虚拟 DOM 可以带来性能提升，首先了解 Web 应用程序中潜在的性能瓶颈很重要：
 
-1.  DOM 操作代价高昂：直接操作 DOM 可能很慢，特别是在处理大型或复杂 UI 时。
-2.  频繁更新：在动态应用中，UI 可能需要频繁更新以响应用户交互或数据变化。
-3.  低效更新：如果管理不当，对 UI 的更新可能导致页面未更改部分的不必要重新渲染。
+1. **DOM 操作代价高昂**：直接操作 DOM 可能很慢，特别是在处理大型或复杂 UI 时。
+
+2. **频繁更新**：在动态应用中，UI 可能需要频繁更新以响应用户交互或数据变化。
+
+3. **低效更新**：如果管理不当，对 UI 的更新可能导致页面未更改部分的不必要重新渲染。
 
 虚拟 DOM 通过以下几种方式解决这些问题：
 
-#### 1\. 批量 DOM 更新
+### 1. 批量 DOM 更新
 
 当应用状态改变时，虚拟 DOM 不是立即更新 DOM，而是允许将更改批量在一起。可以一次处理多个更改，从而减少整体的 DOM 操作次数。
 
-#### 2\. 高效的差异算法
+### 2. 高效的差异算法
 
 当更新发生时，虚拟 DOM 使用高效的差异算法来确定实际更改了什么。这使其能够对真实 DOM 进行最少必要的更改。
 
-#### 3\. 最小化布局抖动
+### 3. 最小化布局抖动
 
 通过批量对 DOM 的读取和写入，虚拟 DOM 有助于最小化布局抖动，即由于交错的读取和写入操作，浏览器不得不多次重新计算布局。
 
-#### 4\. 抽象 DOM 操作
+### 4. 抽象 DOM 操作
 
 虚拟 DOM 提供了对直接 DOM 操作的抽象。这使得开发者可以按照 UI 的整个状态来思考，而不是逐步更改 DOM。
 
 下面是一个虚拟 DOM 工作原理的简化示例：
 
-1.  初始渲染创建 DOM 的虚拟表示。
-2.  当状态改变时，会创建一个新的虚拟 DOM。
-3.  新的虚拟 DOM 与之前的进行比较（差异对比）。
-4.  只有差异部分会被应用到真实 DOM 上。
+1. 初始渲染创建 DOM 的虚拟表示。
+
+2. 当状态改变时，会创建一个新的虚拟 DOM。
+
+3. 新的虚拟 DOM 与之前的进行比较（差异对比）。
+
+4. 只有差异部分会被应用到真实 DOM 上。
 
 让我们看一个简单的 React 示例来说明这一点：
 
@@ -5656,38 +5761,49 @@ function Counter() {
 
 在这个示例中，当按钮被点击时：
 
-1.  `React`创建一个包含更新计数的新虚拟 DOM。
-2.  它将这个新的虚拟 DOM 与之前的进行比较。
-3.  它确定只有`<p>`元素的文本内容需要更改。
-4.  它只更新真实 DOM 中的那个特定部分。
+1. `React` 创建一个包含更新计数的新虚拟 DOM。
+
+2. 它将这个新的虚拟 DOM 与之前的进行比较。
+
+3. 它确定只有 `<p>` 元素的文本内容需要更改。
+
+4. 它只更新真实 DOM 中的那个特定部分。
 
 这个过程比重新渲染整个组件或手动更新 DOM 要高效得多，特别是对于更复杂的 UI。
 
-### 虚拟 DOM 的优势
+## 虚拟 DOM 的优势
 
-1.  性能优化：通过最小化直接 DOM 操作，虚拟 DOM 可以显著提升性能，特别是在频繁更新的复杂应用中。
-2.  声明式 API：虚拟 DOM 允许开发者编写描述 UI 应该是什么样子的代码，而不是直接操作 DOM 的命令式代码。
-3.  跨平台开发：虚拟 DOM 提供的抽象使得更容易使用相同的代码库来支持不同平台（例如，使用`React Native`的 Web 和原生移动应用）。
-4.  更易于调试：由于虚拟 DOM 是一个普通的 JavaScript 对象，因此比实际 DOM 更容易检查和调试。
+1. **性能优化**：通过最小化直接 DOM 操作，虚拟 DOM 可以显著提升性能，特别是在频繁更新的复杂应用中。
 
-### 局限性和注意事项
+2. **声明式 API**：虚拟 DOM 允许开发者编写描述 UI 应该是什么样子的代码，而不是直接操作 DOM 的命令式代码。
+
+3. **跨平台开发**：虚拟 DOM 提供的抽象使得更容易使用相同的代码库来支持不同平台（例如，使用 `React Native` 的 Web 和原生移动应用）。
+
+4. **更易于调试**：由于虚拟 DOM 是一个普通的 JavaScript 对象，因此比实际 DOM 更容易检查和调试。
+
+## 局限性和注意事项
 
 虽然虚拟 DOM 提供了显著的好处，但它并不是万能的：
 
-1.  内存开销：虚拟 DOM 需要额外的内存来维护 UI 的虚拟表示。
-2.  并非总是更快：对于简单 UI 或不频繁更新，虚拟 DOM 的开销可能不值得。
-3.  学习曲线：使用虚拟 DOM 通常需要学习新的模式和最佳实践。
-4.  过度优化的可能性：在某些情况下，为了达到最佳性能，仍然可能需要手动优化应用程序的关键部分。
+1. **内存开销**：虚拟 DOM 需要额外的内存来维护 UI 的虚拟表示。
 
-### React 之外：其他库中的虚拟 DOM
+2. **并非总是更快**：对于简单 UI 或不频繁更新，虚拟 DOM 的开销可能不值得。
 
-虽然`React`使虚拟 DOM 的概念流行起来，但其他库和框架也采用了类似的方法：
+3. **学习曲线**：使用虚拟 DOM 通常需要学习新的模式和最佳实践。
 
-1.  `Vue.js`：使用虚拟 DOM，但有一些优化，使其在某些场景下比`React`更快。
-2.  `Inferno`：一个极速的类`React`库，使用了高度优化的虚拟 DOM 实现。
-3.  `Preact`：一个轻量级的`React`替代品，使用类似的虚拟 DOM 方法，但占用更小。
+4. **过度优化的可能性**：在某些情况下，为了达到最佳性能，仍然可能需要手动优化应用程序的关键部分。
 
-下面是一个`Vue.js`的简单示例：
+## React 之外：其他库中的虚拟 DOM
+
+虽然 `React` 使虚拟 DOM 的概念流行起来，但其他库和框架也采用了类似的方法：
+
+1. `Vue.js`：使用虚拟 DOM，但有一些优化，使其在某些场景下比 `React` 更快。
+
+2. `Inferno`：一个极速的类 `React` 库，使用了高度优化的虚拟 DOM 实现。
+
+3. `Preact`：一个轻量级的 `React` 替代品，使用类似的虚拟 DOM 方法，但占用更小。
+
+下面是一个 `Vue.js` 的简单示例：
 
 ```html
 <template>
@@ -5713,21 +5829,19 @@ export default {
 </script>
 ```
 
-在这个`Vue.js`示例中，当调用`updateMessage`时，`Vue`更新其虚拟 DOM，然后高效地只将必要的更改应用到真实 DOM。
+在这个 `Vue.js` 示例中，当调用 `updateMessage` 时，`Vue` 更新其虚拟 DOM，然后高效地只将必要的更改应用到真实 DOM。
 
-### DOM 操作的未来
+## DOM 操作的未来
 
 随着 Web 应用程序的复杂性不断增加，高效的 DOM 操作仍然是一个关键问题。虚拟 DOM 已被证明是提升性能和开发者体验的强大技术。然而，Web 平台本身也在不断发展，新的 API 和功能可能会影响我们未来处理 DOM 操作的方式：
 
+1. **Web Components**：如前所述，Web 组件提供了一种创建可复用、封装组件的标准方式。这种原生浏览器功能在某些场景下可能会减少对 Virtual DOM 的需求。
 
+2. **Incremental DOM**：一种由 Angular 等框架使用的替代方案，框架将模板编译为增量 DOM 指令，在某些情况下可能比 Virtual DOM 提供更好的内存使用。
 
-1. Web Components（Web 组件）：如前所述，Web 组件提供了一种创建可复用、封装组件的标准方式。这种原生浏览器功能在某些场景下可能会减少对 Virtual DOM 的需求。
+3. **Svelte**：一种激进的方法，将工作转移到编译时，生成高度优化的原生 JavaScript，直接操作 DOM，可能完全消除对 Virtual DOM 的需求。
 
-2. Incremental DOM（增量 DOM）：一种由 Angular 等框架使用的替代方案，框架将模板编译为增量 DOM 指令，在某些情况下可能比 Virtual DOM 提供更好的内存使用。
-
-3. Svelte：一种激进的方法，将工作转移到编译时，生成高度优化的原生 JavaScript，直接操作 DOM，可能完全消除对 Virtual DOM 的需求。
-
-4. 服务端渲染和水合：在服务端渲染初始状态，然后在客户端"水合"应用程序的技术，可能减少初始加载时间并提高性能。
+4. **服务端渲染和水合**：在服务端渲染初始状态，然后在客户端“水合”应用程序的技术，可能减少初始加载时间并提高性能。
 
 随着 Web 平台和开发实践的持续演进，我们可以预见在 DOM 更新管理和构建高性能 Web 应用程序方面将出现更多创新。Virtual DOM 是一个重要的进步，但可能只是 Web 开发技术持续演进中的一个步骤。
 
@@ -5751,9 +5865,8 @@ export default {
 12. 性能优化
 13. 结论
 14. 附录
-
-    * 术语表
-    * 示例代码和模板
+    - 术语表
+    - 示例代码和模板
 
 ## 引言
 
@@ -5765,15 +5878,15 @@ JavaScript 是一门强大的语言，使开发者能够创建动态和交互式
 
 ### DOM 的关键概念
 
-1. 节点：DOM 的基本构建块。HTML 文档中的每个元素、属性和文本片段都表示为 DOM 树中的一个节点。
+1. **节点**：DOM 的基本构建块。HTML 文档中的每个元素、属性和文本片段都表示为 DOM 树中的一个节点。
 
-2. 元素：表示 HTML 元素（如`<div>`、`<p>`或`<a>`）的特定类型的节点。
+2. **元素**：表示 HTML 元素（如 `<div>`、`<p>` 或 `<a>`）的特定类型的节点。
 
-3. 属性：表示 HTML 元素属性（如 class、id 或 src）的节点。
+3. **属性**：表示 HTML 元素属性（如 `class`、`id` 或 `src`）的节点。
 
-4. 文本：包含元素内文本内容的节点。
+4. **文本**：包含元素内文本内容的节点。
 
-5. 文档：DOM 树的根节点，代表整个 HTML 文档。
+5. **文档**：DOM 树的根节点，代表整个 HTML 文档。
 
 ### DOM 树结构
 
@@ -5794,25 +5907,18 @@ DOM 以分层结构组织文档内容，通常称为 DOM 树。这种结构便�
 
 对应的 DOM 树如下：
 
+```
 Document
-
 └── html
-
     ├── head
-
     │   └── title
-
     │       └── "我的网页"
-
     └── body
-
         ├── h1
-
         │   └── "欢迎"
-
         └── p
-
             └── "这是一个段落。"
+```
 
 理解这种树结构对于使用 JavaScript 有效地操作 DOM 至关重要。
 
@@ -5820,33 +5926,33 @@ Document
 
 在操作或与 DOM 中的元素交互之前，需要先选择它们。JavaScript 提供了多种选择 DOM 元素的方法，每种方法都有其特定的用例和优势。
 
-### getElementById()
+### `getElementById()`
 
-`getElementById()`方法根据元素的 id 属性选择元素。此方法快速且返回单个元素。
+`getElementById()` 方法根据元素的 id 属性选择元素。此方法快速且返回单个元素。
 
 ```javascript
 const header = document.getElementById('main-header');
 ```
 
-### getElementsByClassName()
+### `getElementsByClassName()`
 
-`getElementsByClassName()`方法选择具有特定类名的所有元素。它返回实时 HTMLCollection，当元素从文档中添加或删除时会自动更新。
+`getElementsByClassName()` 方法选择具有特定类名的所有元素。它返回实时 `HTMLCollection`，当元素从文档中添加或删除时会自动更新。
 
 ```javascript
 const paragraphs = document.getElementsByClassName('paragraph');
 ```
 
-### getElementsByTagName()
+### `getElementsByTagName()`
 
-`getElementsByTagName()`方法选择具有特定标签名称的所有元素。与`getElementsByClassName()`类似，它返回实时 HTMLCollection。
+`getElementsByTagName()` 方法选择具有特定标签名称的所有元素。与 `getElementsByClassName()` 类似，它返回实时 `HTMLCollection`。
 
 ```javascript
 const divs = document.getElementsByTagName('div');
 ```
 
-### querySelector()
+### `querySelector()`
 
-`querySelector()`方法选择匹配 CSS 选择器的第一个元素。此方法功能多样，可以基于 id、类名、标签名或更复杂的选择器选择元素。
+`querySelector()` 方法选择匹配 CSS 选择器的第一个元素。此方法功能多样，可以基于 id、类名、标签名或更复杂的选择器选择元素。
 
 ```javascript
 const firstParagraph = document.querySelector('p');
@@ -5854,9 +5960,9 @@ const header = document.querySelector('#main-header');
 const activeLink = document.querySelector('.nav-link.active');
 ```
 
-### querySelectorAll()
+### `querySelectorAll()`
 
-`querySelectorAll()`方法选择匹配 CSS 选择器的所有元素。它返回静态 NodeList，当文档更改时不会自动更新。
+`querySelectorAll()` 方法选择匹配 CSS 选择器的所有元素。它返回静态 `NodeList`，当文档更改时不会自动更新。
 
 ```javascript
 const allParagraphs = document.querySelectorAll('p');
@@ -5867,11 +5973,9 @@ const navLinks = document.querySelectorAll('.nav-link');
 
 每种选择方法都有其优势和用例：
 
-* `getElementById()`是当您需要选择具有已知 ID 的单个元素时最快的方法。
-
-* `getElementsByClassName()`和`getElementsByTagName()`在需要处理可能随时间变化的实时元素集合时很有用。
-
-* `querySelector()`和`querySelectorAll()`是最通用的方法，允许使用 CSS 选择器进行复杂选择。但是，对于简单选择，它们可能比更特定的方法稍慢。
+- `getElementById()` 是当您需要选择具有已知 ID 的单个元素时最快的方法。
+- `getElementsByClassName()` 和 `getElementsByTagName()` 在需要处理可能随时间变化的实时元素集合时很有用。
+- `querySelector()` 和 `querySelectorAll()` 是最通用的方法，允许使用 CSS 选择器进行复杂选择。但是，对于简单选择，它们可能比更特定的方法稍慢。
 
 根据您的特定需求和 HTML 文档结构选择合适的方法很重要。
 
@@ -5881,26 +5985,20 @@ const navLinks = document.querySelectorAll('.nav-link');
 
 ### 修改元素内容
 
-您可以使用`textContent`或`innerHTML`属性更改元素的内容。
+您可以使用 `textContent` 或 `innerHTML` 属性更改元素的内容。
 
-#### textContent
+#### `textContent`
 
-`textContent`属性设置或返回元素及其所有后代的文本内容。
+`textContent` 属性设置或返回元素及其所有后代的文本内容。
 
 ```javascript
 const paragraph = document.querySelector('p');
 paragraph.textContent = '这是新的文本内容。';
 ```
 
-#### innerHTML
+#### `innerHTML`
 
-`innerHTML`属性设置或返回元素内的 HTML 内容。
-
-
-
-# DOM 操作与事件处理
-
-## 修改元素属性
+`innerHTML` 属性设置或返回元素内的 HTML 内容。
 
 在使用用户提供的内容的 `innerHTML` 时要小心，如果未正确清理，可能会引入安全漏洞。
 
@@ -5909,7 +6007,9 @@ const container = document.querySelector('.container');
 container.innerHTML = '<h2>New Heading</h2><p>New paragraph content.</p>';
 ```
 
-### getAttribute() 和 setAttribute()
+### 修改元素属性
+
+#### `getAttribute()` 和 `setAttribute()`
 
 这些方法允许你获取和设置属性值：
 
@@ -5919,7 +6019,7 @@ const href = link.getAttribute('href');
 link.setAttribute('href', 'https://example.com');
 ```
 
-### 直接访问属性
+#### 直接访问属性
 
 对于许多标准属性，你可以直接作为元素的属性来访问它们：
 
@@ -5929,7 +6029,7 @@ image.src = 'new-image.jpg';
 image.alt = 'A new descriptive alt text';
 ```
 
-### removeAttribute()
+#### `removeAttribute()`
 
 此方法从元素中移除属性：
 
@@ -5938,11 +6038,11 @@ const button = document.querySelector('button');
 button.removeAttribute('disabled');
 ```
 
-## 修改元素样式
+### 修改元素样式
 
 你可以使用 `style` 属性或通过操作 CSS 类来更改元素的样式。
 
-### 使用 style 属性
+#### 使用 `style` 属性
 
 `style` 属性允许你直接在元素上设置内联样式：
 
@@ -5953,7 +6053,7 @@ div.style.fontSize = '18px';
 div.style.padding = '10px';
 ```
 
-### 操作 CSS 类
+#### 操作 CSS 类
 
 你可以使用 `classList` 属性添加、移除或切换 CSS 类：
 
@@ -6046,36 +6146,36 @@ button.addEventListener('click', function(event) {
 
 当事件发生时，浏览器会创建一个包含事件信息的事件对象。此对象会自动传递给事件处理函数。事件对象的一些有用属性包括：
 
-* `event.target`：触发事件的元素
-* `event.type`：事件类型（例如 'click'、'mouseover'）
-* `event.preventDefault()`：防止事件默认行为的方法
-* `event.stopPropagation()`：阻止事件在 DOM 树中冒泡的方法
+- `event.target`：触发事件的元素
+- `event.type`：事件类型（例如 `'click'`、`'mouseover'`）
+- `event.preventDefault()`：防止事件默认行为的方法
+- `event.stopPropagation()`：阻止事件在 DOM 树中冒泡的方法
 
 ### 常见事件类型
 
 以下是一些常用的事件类型：
 
 1. 鼠标事件：
-   * `click`：当元素被点击时触发
-   * `dblclick`：当元素被双击时触发
-   * `mouseover`：当鼠标进入元素时触发
-   * `mouseout`：当鼠标离开元素时触发
+   - `click`：当元素被点击时触发
+   - `dblclick`：当元素被双击时触发
+   - `mouseover`：当鼠标进入元素时触发
+   - `mouseout`：当鼠标离开元素时触发
 
 2. 键盘事件：
-   * `keydown`：当按键被按下时触发
-   * `keyup`：当按键被释放时触发
-   * `keypress`：当按键被按下时触发（针对可打印字符）
+   - `keydown`：当按键被按下时触发
+   - `keyup`：当按键被释放时触发
+   - `keypress`：当按键被按下时触发（针对可打印字符）
 
 3. 表单事件：
-   * `submit`：当表单被提交时触发
-   * `change`：当输入元素的值改变时触发
-   * `focus`：当元素获得焦点时触发
-   * `blur`：当元素失去焦点时触发
+   - `submit`：当表单被提交时触发
+   - `change`：当输入元素的值改变时触发
+   - `focus`：当元素获得焦点时触发
+   - `blur`：当元素失去焦点时触发
 
 4. 窗口事件：
-   * `load`：当页面加载完成时触发
-   * `resize`：当浏览器窗口调整大小时触发
-   * `scroll`：当文档视图滚动时触发
+   - `load`：当页面加载完成时触发
+   - `resize`：当浏览器窗口调整大小时触发
+   - `scroll`：当文档视图滚动时触发
 
 ### 移除事件监听器
 
@@ -6093,9 +6193,13 @@ button.removeEventListener('click', handleClick);
 ### 事件处理最佳实践
 
 1. 为事件处理函数使用语义化名称以提高代码可读性。
+
 2. 保持事件处理程序小而专注。如果处理程序变得复杂，请考虑将其拆分为更小的函数。
+
 3. 对于动态创建的元素或处理许多相似元素时，使用事件委托。
+
 4. 对于可能导致性能问题的事件监听器（如 `scroll` 或 `resize` 事件）要小心。考虑使用节流或防抖技术。
+
 5. 当不再需要事件监听器时，请务必移除它们，特别是对于将从 DOM 中移除的元素。
 
 ## 事件传播
@@ -6106,8 +6210,9 @@ button.removeEventListener('click', handleClick);
 
 事件传播有两个主要阶段：
 
-1. 捕获阶段：事件从 window 开始，然后是 document，沿着 DOM 树向下移动到目标元素。
-2. 冒泡阶段：到达目标后，事件从目标元素向上冒泡，经过其祖先元素回到 window。
+1. **捕获阶段**：事件从 `window` 开始，然后是 `document`，沿着 DOM 树向下移动到目标元素。
+
+2. **冒泡阶段**：到达目标后，事件从目标元素向上冒泡，经过其祖先元素回到 `window`。
 
 默认情况下，事件监听器在冒泡阶段被触发。
 
@@ -6116,11 +6221,8 @@ button.removeEventListener('click', handleClick);
 你可以使用以下方法来控制事件传播：
 
 1. `event.stopPropagation()`：阻止事件在 DOM 树中向上冒泡。
+
 2. `event.stopImmediatePropagation()`：阻止事件冒泡并防止同一元素上的其他监听器被调用。
-
-
-
-## 事件处理基础
 
 ```javascript
 child.addEventListener('click', function(event) {
@@ -6128,10 +6230,11 @@ child.addEventListener('click', function(event) {
   console.log('Child clicked');
 });
 parent.addEventListener('click', function(event) {
-  console.log('Parent clicked'); // This won't be logged if the child is clicked });
+  console.log('Parent clicked'); // This won't be logged if the child is clicked
+});
 ```
 
-要附加一个在捕获阶段触发的事件监听器，请将 `addEventListener()` 的第三个参数设置为 true：
+要附加一个在捕获阶段触发的事件监听器，请将 `addEventListener()` 的第三个参数设置为 `true`：
 
 ```javascript
 parent.addEventListener('click', function(event) {
@@ -6155,8 +6258,11 @@ child.addEventListener('click', function(event) {
 ### 事件委托的好处
 
 1. 提升性能，尤其是在元素数量较多时
+
 2. 动态添加的元素会自动被处理
+
 3. 由于减少了事件监听器的数量，降低了内存占用
+
 4. 代码更简洁、更易于维护
 
 ### 事件委托示例
@@ -6321,15 +6427,15 @@ document.dispatchEvent(customEvent);
 
 通过理解和有效使用这些事件，你可以创建丰富的、交互式的 Web 应用程序，这些程序可以响应用户操作和浏览器事件。
 
-### DOM 操作和事件处理的最佳实践
+## DOM 操作和事件处理的最佳实践
 
 ### 1. 最小化 DOM 访问和操作
 
 访问和操作 DOM 通常是性能方面最昂贵的操作。为了优化你的代码：
 
-* 当你需要多次使用一个元素时，缓存 DOM 引用。
-* 使用 `DocumentFragment` 批量更新 DOM，或者在将元素添加到 DOM 之前进行修改。
-* 使用 CSS 类进行样式更改，而不是直接操作内联样式。
+- 当你需要多次使用一个元素时，缓存 DOM 引用。
+- 使用 `DocumentFragment` 批量更新 DOM，或者在将元素添加到 DOM 之前进行修改。
+- 使用 CSS 类进行样式更改，而不是直接操作内联样式。
 
 ```javascript
 // Bad: Multiple DOM accesses
@@ -6353,7 +6459,7 @@ element.classList.add('highlighted');
 
 ### 3. 对昂贵操作进行防抖或节流
 
-对于可以快速触发的事件（如 scroll 或 resize），使用防抖或节流技术来限制事件处理程序的调用频率。
+对于可以快速触发的事件（如 `scroll` 或 `resize`），使用防抖或节流技术来限制事件处理程序的调用频率。
 
 ```javascript
 function debounce(func, delay) {
@@ -6372,9 +6478,9 @@ window.addEventListener('resize', debounce(function() {
 
 现代 DOM API 通常提供更高效的方式来操作 DOM。例如：
 
-* 使用 `querySelector` 和 `querySelectorAll` 而不是像 `getElementsByClassName` 这样的旧方法。
-* 使用 `classList` 而不是直接操作 `className` 字符串。
-* 当你只设置文本内容时，使用 `textContent` 而不是 `innerHTML`。
+- 使用 `querySelector` 和 `querySelectorAll` 而不是像 `getElementsByClassName` 这样的旧方法。
+- 使用 `classList` 而不是直接操作 `className` 字符串。
+- 当你只设置文本内容时，使用 `textContent` 而不是 `innerHTML`。
 
 ### 5. 清理事件监听器
 
@@ -6382,22 +6488,13 @@ window.addEventListener('resize', debounce(function() {
 
 ```javascript
 function handleClick() {
-  // Handler logic
+  console.log('Clicked');
 }
+element.addEventListener('click', handleClick);
+// Later, when the element is no longer needed:
+element.removeEventListener('click', handleClick);
+element.remove();
 ```
-
-
-
-# DOM 操作与事件处理最佳实践
-
-## 示例：添加和移除事件监听器
-
-```javascript
-console.log('Clicked');
-} element.addEventListener('click', handleClick); // Later, when the element is no longer needed: element.removeEventListener('click', handleClick); element.remove();
-```
-
-### 最佳实践
 
 ### 6. 避免使用内联事件处理程序
 
@@ -6419,9 +6516,9 @@ if ('IntersectionObserver' in window) {
 
 尽量减少 JavaScript 引起的重绘和回流次数：
 
-*   批量处理 DOM 更改，并在可能时在屏幕外执行。
-*   对动画和视觉更新使用 `requestAnimationFrame`。
-*   避免频繁查询导致回流的布局属性（如 `offsetWidth`、`scrollTop` 等）。
+- 批量处理 DOM 更改，并在可能时在屏幕外执行。
+- 对动画和视觉更新使用 `requestAnimationFrame`。
+- 避免频繁查询导致回流的布局属性（如 `offsetWidth`、`scrollTop` 等）。
 
 ### 9. 使用开发者工具
 
@@ -6515,7 +6612,7 @@ for (let i = 0; i < 100; i++) {
 document.getElementById('myList').innerHTML = html;
 ```
 
-### 2. 使用 DocumentFragment 进行批量插入
+### 2. 使用 `DocumentFragment` 进行批量插入
 
 向 DOM 添加多个元素时，请使用 `DocumentFragment` 批量插入，以减少回流和重绘的次数。
 
@@ -6550,7 +6647,7 @@ window.addEventListener('resize', debounce(function() {
 }, 250));
 ```
 
-### 5. 使用 requestAnimationFrame 进行动画
+### 5. 使用 `requestAnimationFrame` 进行动画
 
 执行动画或视觉更新时，请使用 `requestAnimationFrame` 以确保流畅性能并与浏览器渲染周期同步。
 
@@ -6606,16 +6703,13 @@ worker.onmessage = function(event) {
 
 ### 11. 使用 Performance API
 
-使用 `Performance API` 来测量和分析应用程序的性能指标。
-
-
-
-
-利用 Performance API 测量和分析代码的性能。
+利用 `Performance API` 测量和分析代码的性能。
 
 ```javascript
-const t0 = performance.now(); // 执行某些操作 
-const t1 = performance.now(); console.log(`操作耗时 ${t1 - t0} 毫。`);
+const t0 = performance.now();
+// 执行某些操作
+const t1 = performance.now();
+console.log(`操作耗时 ${t1 - t0} 毫秒。`);
 ```
 
 ### 12. 懒加载
@@ -6652,10 +6746,15 @@ document.addEventListener("DOMContentLoaded", function() {
 核心要点包括：
 
 1. 理解文档对象模型 (`DOM`) 及其树形结构。
+
 2. 选取和操纵 DOM 元素的高效方法。
+
 3. 事件处理的重要性以及管理事件的各种技术。
+
 4. DOM 操作和事件处理的最佳实践，包括性能考量。
+
 5. 浏览器兼容性问题及其解决策略。
+
 6. 用于创建快速且响应迅速的 Web 应用程序的性能优化技术。
 
 请记住，操作 `DOM` 和处理事件既是一门艺术也是一门科学。虽然遵循最佳实践和优化技术很重要，但编写清晰、可维护的代码以便让他人（包括你未来的自己）能够理解和维护，也同样重要。
@@ -6670,35 +6769,60 @@ document.addEventListener("DOMContentLoaded", function() {
 
 ### 术语表
 
-1. `DOM` (文档对象模型): 用于 HTML 和 XML 文档的编程接口，将文档结构表示为对象的树形层次结构。
-2. `Node` (节点): `DOM` 的基本构建单元，代表文档中的元素、属性或文本。
-3. `Element` (元素):一种特定类型的节点，代表 HTML 元素。
-4. `Event` (事件):程序检测到的动作或事件，通常由用户或浏览器触发。
-5. `Event Listener` (事件监听器):等待特定事件发生并响应该事件执行的函数。
-6. `Event Propagation` (事件传播):事件通过 `DOM` 树传输的过程，分为捕获阶段或冒泡阶段。
-7. `Event Delegation` (事件委托):一种技术，在父元素上附加单个事件监听器来处理其子元素的事件。
-8. `Bubbling` (冒泡):默认的事件传播模式，事件从目标元素开始并向祖先冒泡。
-9. `Capturing` (捕获):一种事件传播模式，事件从 `DOM` 树的根部开始向下到达目标元素。
-10. `preventDefault()` (阻止默认行为): 防止默认事件的方法。
-11. `stopPropagation()` (停止传播): 防止事件继续传播的方法。
-12. `querySelector()` (查询选择): 返回第一个匹配选择器的元素。
-13. `querySelectorAll()` (查询所有元素): 返回所有匹配选择器的 `NodeList`。
-14. `innerHTML` (内部 HTML): 元素的 HTML 内容。
-15. `textContent` (文本内容): 元素的文本内容。
-16. `setAttribute()` (设置属性): 设置元素属性的方法。
-17. `classList` (类列表): 元素的类名集合。
-18. `DocumentFragment` (文档片段): 存储文档节点的轻量级对象。
-19. `Reflow` (重流): 重新计算元素位置的过程。
-20. `Repaint` (重绘): 更新视觉外观的过程。
-21. `Debounce` (防抖): 确保函数不会被频繁触发的技术。
-22. `Throttle` (节流): 控制函数调用频率的技术。
-23. `Polyfill` (垫片): 为不支持某些功能的浏览器提供功能的代码。
-24. `Feature Detection` (特性检测): 判断浏览器是否支持某些功能。
-25. `Web Workers` (工作线程): 在后台运行的脚本。
+1. `DOM` (文档对象模型)：用于 HTML 和 XML 文档的编程接口，将文档结构表示为对象的树形层次结构。
+
+2. `Node` (节点)：`DOM` 的基本构建单元，代表文档中的元素、属性或文本。
+
+3. `Element` (元素)：一种特定类型的节点，代表 HTML 元素。
+
+4. `Event` (事件)：程序检测到的动作或事件，通常由用户或浏览器触发。
+
+5. `Event Listener` (事件监听器)：等待特定事件发生并响应该事件执行的函数。
+
+6. `Event Propagation` (事件传播)：事件通过 `DOM` 树传输的过程，分为捕获阶段或冒泡阶段。
+
+7. `Event Delegation` (事件委托)：一种技术，在父元素上附加单个事件监听器来处理其子元素的事件。
+
+8. `Bubbling` (冒泡)：默认的事件传播模式，事件从目标元素开始并向祖先冒泡。
+
+9. `Capturing` (捕获)：一种事件传播模式，事件从 `DOM` 树的根部开始向下到达目标元素。
+
+10. `preventDefault()` (阻止默认行为)：防止默认事件的方法。
+
+11. `stopPropagation()` (停止传播)：防止事件继续传播的方法。
+
+12. `querySelector()` (查询选择)：返回第一个匹配选择器的元素。
+
+13. `querySelectorAll()` (查询所有元素)：返回所有匹配选择器的 `NodeList`。
+
+14. `innerHTML` (内部 HTML)：元素的 HTML 内容。
+
+15. `textContent` (文本内容)：元素的文本内容。
+
+16. `setAttribute()` (设置属性)：设置元素属性的方法。
+
+17. `classList` (类列表)：元素的类名集合。
+
+18. `DocumentFragment` (文档片段)：存储文档节点的轻量级对象。
+
+19. `Reflow` (重流)：重新计算元素位置的过程。
+
+20. `Repaint` (重绘)：更新视觉外观的过程。
+
+21. `Debounce` (防抖)：确保函数不会被频繁触发的技术。
+
+22. `Throttle` (节流)：控制函数调用频率的技术。
+
+23. `Polyfill` (垫片)：为不支持某些功能的浏览器提供功能的代码。
+
+24. `Feature Detection` (特性检测)：判断浏览器是否支持某些功能。
+
+25. `Web Workers` (工作线程)：在后台运行的脚本。
 
 ### 代码示例与模板
 
 #### 1. 基础事件监听器
+
 ```javascript
 const button = document.querySelector('#myButton');
 button.addEventListener('click', function(event) {
@@ -6707,6 +6831,7 @@ button.addEventListener('click', function(event) {
 ```
 
 #### 2. 事件委托
+
 ```javascript
 document.getElementById('parent-list').addEventListener('click', function(e) {
   if(e.target && e.target.nodeName == "LI") {
@@ -6716,6 +6841,7 @@ document.getElementById('parent-list').addEventListener('click', function(e) {
 ```
 
 #### 3. 防抖函数
+
 ```javascript
 function debounce(func, delay) {
   let timeoutId;
@@ -6723,13 +6849,15 @@ function debounce(func, delay) {
     clearTimeout(timeoutId);
     timeoutId = setTimeout(() => func.apply(this, args), delay);
   };
-} // 使用
+}
+// 使用
 window.addEventListener('resize', debounce(function() {
   console.log('调整大小了!');
 }, 250));
 ```
 
 #### 4. 节流函数
+
 ```javascript
 function throttle(func, limit) {
   let inThrottle;
@@ -6742,25 +6870,30 @@ function throttle(func, limit) {
       setTimeout(() => inThrottle = false, limit);
     }
   }
-} // 使用
+}
+// 使用
 window.addEventListener('scroll', throttle(function() {
   console.log('滚动了!');
 }, 1000));
 ```
 
 #### 5. DOM 操作模板
+
 ```javascript
 // 选择元素
 const container = document.querySelector('#container');
-const paragraph = document.createElement('p'); // 修改元素
+const paragraph = document.createElement('p');
+// 修改元素
 paragraph.textContent = '这是一个新段落。';
-paragraph.classList.add('highlight'); // 添加到 DOM
-container.appendChild(paragraph); // 移除
-
+paragraph.classList.add('highlight');
+// 添加到 DOM
+container.appendChild(paragraph);
+// 移除
 // container.removeChild(paragraph);
 ```
 
 #### 6. AJAX 请求模板（使用 Fetch API）
+
 ```javascript
 fetch('https://api.example.com/data')
   .then(response => response.json())
@@ -6775,10 +6908,6 @@ fetch('https://api.example.com/data')
 
 #### 7. 自定义事件模板
 
-
-
-
-
 ```javascript
 // Create a custom event
 const customEvent = new CustomEvent('myCustomEvent', {
@@ -6792,7 +6921,7 @@ document.addEventListener('myCustomEvent', function(e) {
 document.dispatchEvent(customEvent);
 ```
 
-8. Intersection Observer 模板
+#### 8. Intersection Observer 模板
 
 ```javascript
 const observer = new IntersectionObserver((entries) => {
@@ -6809,4 +6938,3 @@ observer.observe(element);
 ```
 
 这些模板和示例代码片段为常见的 DOM 操作和事件处理任务提供了起点。请根据您的具体需求和使用场景进行适当的调整和定制。
-

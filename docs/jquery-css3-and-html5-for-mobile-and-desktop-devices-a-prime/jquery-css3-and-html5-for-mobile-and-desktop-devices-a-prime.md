@@ -1,29 +1,5 @@
+
 # jQuery、CSS3 与 HTML5 移动和桌面设备开发入门指南
-
-
-
-
-
-
-
-
-
-
-![](img/6f06c2ff7e29452e50d03258ed9c6b4f_2_0.png)
-
-
-
-
-![](img/6f06c2ff7e29452e50d03258ed9c6b4f_6_0.png)
-
-
-
-
-
-
-
-
-索引 791
 
 ## 前言
 
@@ -37,9 +13,7 @@
 
 ### 本书快速概览
 
-在第1章，您将了解新的 HTML5 元素（语义化标签、音频和视频）、HTML5 表单、HTML5 `localStorage`、HTML5 数据库、
-
-以及地理定位。本章主要代码示例的主题是创建一个包含英语单词及其在多种语言中对应词的列表。此示例的第一个版本使用HTML5表单，后续版本则整合了HTML5 localStorage。我们将使用一些简单的CSS3选择器，向你展示如何使HTML5页面比不使用CSS选择器的页面更加生动。
+在第1章，您将了解新的 HTML5 元素（语义化标签、音频和视频）、HTML5 表单、HTML5 `localStorage`、HTML5 数据库、以及地理定位。本章主要代码示例的主题是创建一个包含英语单词及其在多种语言中对应词的列表。此示例的第一个版本使用HTML5表单，后续版本则整合了HTML5 localStorage。我们将使用一些简单的CSS3选择器，向你展示如何使HTML5页面比不使用CSS选择器的页面更加生动。
 
 在第二章中，我们将深入探讨能够创建更复杂效果的CSS3选择器的细节。本章中的一些代码示例使用了CSS3选择器，目的是使网页比普通的网页更具视觉吸引力（但即使不使用CSS样式表，这些代码示例仍能正常工作）。在某些情况下，你可能需要先阅读第二章中与CSS3相关的材料，然后再回过头来看本章的HTML5/CSS3代码示例，这会对你有所帮助。
 
@@ -49,17 +23,23 @@
 
 还有一点涉及WebKit引擎，这是一个开源项目，你可以从这里下载：
 
+```
 http://www.webkit.org
+```
 
 如果你想测试WebKit的最新功能，可以从这个网站下载每夜构建版本：
 
+```
 http://nightly.webkit.org/
+```
 
 请记住，每夜构建版本不一定稳定或完整，因此请确保你也在WebKit的稳定版本发布时测试特定功能。
 
 如果你计划编写CPU密集型的HTML5网页，那么这个网站将很有用：
 
+```
 http://demos.hacks.mozilla.org/openweb/HWACCEL/
+```
 
 这个Mozilla网站会对你浏览器进行图形测试，以确定其速度，以FPS（每秒帧数）衡量。
 
@@ -73,13 +53,14 @@ http://demos.hacks.mozilla.org/openweb/HWACCEL/
 
 ## 本书术语
 
-尽管本书力求保持一致，但有时术语并非100%正确。例如，WebKit是一个引擎，而不是一个浏览器。因此，“基于WebKit的浏览器”是正确的，而“WebKit浏览器”是不正确的，但你会看到两者都在使用（即使只有前者在技术上是正确的）。第二，你会看到“HTML网页”和“HTML页面”交替使用。第三，有时引用HTML元素时不指定“HTML”，因此你会在代码示例前后的讨论中看到“<p>元素”和“HTML <p>元素”（以及其他HTML元素）。
+尽管本书力求保持一致，但有时术语并非100%正确。例如，WebKit是一个引擎，而不是一个浏览器。因此，“基于WebKit的浏览器”是正确的，而“WebKit浏览器”是不正确的，但你会看到两者都在使用（即使只有前者在技术上是正确的）。第二，你会看到“HTML网页”和“HTML页面”交替使用。第三，有时引用HTML元素时不指定“HTML”，因此你会在代码示例前后的讨论中看到“`<p>`元素”和“HTML `<p>`元素”（以及其他HTML元素）。
 
-有些代码行比本书中的文本行更长。每当你在代码中看到 ⏎ 符号时，紧随其后的行是续行，在你的实际代码中应位于同一行。配套DVD上的代码片段包含了正确行数的代码，可供直接使用。
+有些代码行比本书中的文本行更长。每当你在代码中看到 `⏎` 符号时，紧随其后的行是续行，在你的实际代码中应位于同一行。配套DVD上的代码片段包含了正确行数的代码，可供直接使用。
 
 请记住以上要点，这样在阅读本书时就不会产生任何困惑。
 
 O. Campesato
+
 2013年2月
 
 ## 致谢
@@ -93,15 +74,14 @@ O. Campesato
 最后，如果我不感谢Dave Pallai（出版人）和Rachel Leach（文字编辑），那将是一种疏忽，他们为提高本书的质量做出了宝贵贡献。一如既往，我对您可能在任何章节中发现的任何错误或遗漏负责。
 
 # 第1章
+
 # HTML5的新特性
 
-在本章中，你将了解几个HTML5主题，如HTML5特定元素（语义标记、音频和视频）、HTML5表单、HTML5 localStorage和HTML5数据库。其他各种HTML5技术被有意推迟到第10章，即jQuery和jQuery Mobile章节之后。因此，我们可以将jQuery（及相关插件）与第10章讨论的HTML5技术一起介绍，所以在你阅读jQuery材料之后，代码示例将更有意义。
+在本章中，你将了解几个HTML5主题，如HTML5特定元素（语义标记、音频和视频）、HTML5表单、HTML5 `localStorage`和HTML5数据库。其他各种HTML5技术被有意推迟到第10章，即jQuery和jQuery Mobile章节之后。因此，我们可以将jQuery（及相关插件）与第10章讨论的HTML5技术一起介绍，所以在你阅读jQuery材料之后，代码示例将更有意义。
 
 在本章中，还有一个代码示例出现在多个地方（使用不同的HTML5功能），它涉及创建一个包含英语单词及其在多种语言中对应词的列表。此代码示例的第一个版本使用HTML5表单，后续版本则整合了HTML5 localStorage。我们将使用简单的CSS3选择器，因为它们会使HTML5网页比不使用CSS选择器的页面更加生动和吸引人。这涉及到一点“向前引用”，即代码示例在向你介绍之前就使用了一些CSS3功能。但是，你可以在阅读了后续章节中关于CSS3功能的信息后，轻松地回到这个代码示例。在第2、3和4章中，我们将深入探讨能够创建更复杂效果的CSS3选择器的细节。
 
-如果你是HTML5新手，请记住，其某些功能在相关应用程序编程接口（API）的复杂性方面可能存在很大差异。为了说明这一点：localStorage API非常直接（正如你对管理名称/值对的API所期望的那样），并且比HTML5拖放API简单得多。因此，第1章试图提供一些你作为Web开发人员可能遇到的、不太复杂（但仍然有用）的HTML5相关技术的信息，在你阅读了前九章之后，
-
-
+如果你是HTML5新手，请记住，其某些功能在相关应用程序编程接口（API）的复杂性方面可能存在很大差异。为了说明这一点：`localStorage` API非常直接（正如你对管理名称/值对的API所期望的那样），并且比HTML5拖放API简单得多。因此，第1章试图提供一些你作为Web开发人员可能遇到的、不太复杂（但仍然有用）的HTML5相关技术的信息，在你阅读了前九章之后，
 
 ## HTML5与各种工作组
 
@@ -137,9 +117,6 @@ WHATWG主要专注于HTML和Web应用所需API的开发。该组织于2004年由
 
 ```
 http://www.whatwg.org/
-```
-
-```
 http://wiki.whatwg.org/wiki/FAQ
 ```
 
@@ -149,7 +126,7 @@ HTML5是W3C和WHATWG共同协作的成果。如果你喜欢阅读提案，会在
 
 - Battery Status API
 - HTML Media Capture
-- Media Capture and Streams（访问`getUserMedia`）
+- Media Capture and Streams（访问 `getUserMedia`）
 - Network Information API
 - Proximity Events
 - Vibration API
@@ -208,7 +185,11 @@ http://caniuse.com/#feat=fileapi
 - iPad 3（也可能兼容iPad 2）
 - 搭载Android ICS（或更高版本）的Sprint Nexus S 4G
 
-唯一的例外是第4章中展示CSS3最新特性（如CSS Shaders）的代码示例（及相关截图），这些特性在Adobe提供的特殊Chromium版本中渲染，该版本安装在Macbook上。此特殊版本的下载链接位于第4章，预计这些新CSS3特性将在近期获得支持。实际上，CSS混合与合成的工作已开展：http://www.webkit.org/blog/2102/last-week-in-webkit-a-new-content-security-policy-api-and-transitioning-from-percentages-to-pixels
+唯一的例外是第4章中展示CSS3最新特性（如CSS Shaders）的代码示例（及相关截图），这些特性在Adobe提供的特殊Chromium版本中渲染，该版本安装在Macbook上。此特殊版本的下载链接位于第4章，预计这些新CSS3特性将在近期获得支持。实际上，CSS混合与合成的工作已开展：
+
+```
+http://www.webkit.org/blog/2102/last-week-in-webkit-a-new-content-security-policy-api-and-transitioning-from-percentages-to-pixels
+```
 
 ## HTML5包含哪些技术？
 
@@ -226,18 +207,16 @@ http://caniuse.com/#feat=fileapi
 - Web Intents
 - Web Messaging
 
-
-
 ## W3C 技术
 
 前面的链接将 HTML5 技术分类如下：
 
--   W3C 推荐标准
--   候选推荐标准
--   最后征求意见阶段
--   工作草案
--   非 W3C 规范
--   已弃用的 W3C API
+- W3C 推荐标准
+- 候选推荐标准
+- 最后征求意见阶段
+- 工作草案
+- 非 W3C 规范
+- 已弃用的 W3C API
 
 请记住，其中一些技术的状态会发生变化，因此请务必访问包含每项技术详细信息的 W3C 规范链接，以查找其最新状态。此外，前面图表中的许多 HTML5 技术都在第 10 章中有所涉及，通常还会介绍提供 HTML5 技术抽象层的 jQuery 插件。
 
@@ -245,12 +224,12 @@ http://caniuse.com/#feat=fileapi
 
 广义上说，HTML5 与早期版本的 HTML 在以下方面有所不同：
 
--   不再支持某些 HTML4.x 元素
--   提供了对新元素的支持
--   简化了某些现有元素
--   支持自定义属性
+- 不再支持某些 HTML4.x 元素
+- 提供了对新元素的支持
+- 简化了某些现有元素
+- 支持自定义属性
 
-不推荐在 HTML5 中用于新工作的 HTML 元素包括：`<acronym>`、`<applet>`、`<basefont>`、`<big>`、`<center>`、`<dir>`、`<font>`、`<frame>`、`<frameset>`、`<noframes>`、`<s>`、`<strike>`、`<tt>` 和 `<u>`。
+不推荐在 HTML5 中用于新工作的 HTML 元素包括：`<acronym>`、`<applet>`、`<basefont>`、`<big>`、`<center>`、`<dir>`、`<font>`、`<frame>`、`<frameset>`、`<noframes>`、`<isindex>`、`<strike>`、`<tt>` 和 `<u>`。
 
 HTML5 中的一些新标签：`<article>`、`<aside>`、`<audio>`、`<canvas>`、`<command>`、`<datalist>`、`<details>`、`<dialog>`、`<embed>`、`<figure>`、`<footer>`、`<header>`、`<hgroup>`、`<keygen>`、`<mark>`、`<meter>`、`<nav>`、`<output>`、`<progress>`、`<rp>`、`<rt>`、`<ruby>`、`<section>`、`<source>`、`<time>` 和 `<video>`。
 
@@ -264,12 +243,12 @@ HTML5 中的一些新标签：`<article>`、`<aside>`、`<audio>`、`<canvas>`�
 
 为了方便你，本节列出的工具和网站如下：
 
--   http://www.modernizr.com/
--   http://yepnopejs.com/
--   http://www.caniuse.com
--   http://mobilehtml5.org/
--   http://www.quirksmode.org/mobile/
--   http://html5boilerplate.com/
+- http://www.modernizr.com/
+- http://yepnopejs.com/
+- http://www.caniuse.com
+- http://mobilehtml5.org/
+- http://www.quirksmode.org/mobile/
+- http://html5boilerplate.com/
 
 以下小节简要概述了这些工具以及它们在你设计 HTML5 网页时如何提供帮助。
 
@@ -277,7 +256,9 @@ HTML5 中的一些新标签：`<article>`、`<aside>`、`<audio>`、`<canvas>`�
 
 Modernizr 是一个非常有用的工具，用于在各种浏览器中检测与 HTML5 相关的功能。其主页在此：
 
+```
 http://www.modernizr.com/
+```
 
 “浏览器嗅探”曾经是检测用于渲染特定网页的浏览器的流行技术，但由于浏览器中快速变化的实现（换句话说，你今天使用的逻辑将来可能不适用），这种技术已不那么准确（或“干净”）。事实上，检查 HTML5 支持的最流行的网站使用的是功能检测，而不是浏览器嗅探。
 
@@ -307,13 +288,17 @@ if(Modernizr.canvas) {
 
 你还可以使用一个名为 yepnope.js 的 JavaScript 加载脚本（也是 Modernizr 的一部分），它是一个异步条件资源加载器，用于加载 JavaScript 文件等。其主页在此：
 
+```
 http://yepnopejs.com/
+```
 
 ### Caniuse
 
 以下网站（“When Can I Use…”）非常有用，因为它提供了关于许多 HTML5 功能在现代浏览器中支持情况的信息：
 
+```
 http://www.caniuse.com
+```
 
 目前，该网站上有两个主要选项卡。第一个（也是默认）选项卡分为多个部分（CSS、HTML5、SVG、JS API 和其他）。每个部分包含一个技术项目列表，这些项目是到其他网页的超链接，提供详细信息。
 
@@ -323,8 +308,10 @@ http://www.caniuse.com
 
 以下网站包含关于移动设备上 HTML5 支持的信息：
 
+```
 http://mobilehtml5.org/
 http://www.quirksmode.org/mobile/
+```
 
 第一个网站包含一组行，其中每一行是一个 HTML5 功能，列指定各种移动浏览器。当特定浏览器支持某个 HTML5 功能时，单元格中会包含一个勾选标记。
 
@@ -334,7 +321,9 @@ http://www.quirksmode.org/mobile/
 
 HTML5 BoilerPlate 是另一个非常有用的工具，它为 HTML5 元素提供默认值。其主页在此：
 
+```
 http://html5boilerplate.com/
+```
 
 根据该网站，“HTML5 BoilerPlate 是一个专业的前端模板，可帮助你构建快速、健壮、适应性强且面向未来的网站。”这个工具为 HTML、CSS 和 JavaScript 提供了起点，并包含几个有用的视频。你也可以将此工具与其他工具集成，例如 Twitter Bootstrap 和 960.css，并且可以用不同的 JavaScript 库替换 jQuery。花时间访问这个网站以了解其功能集是非常值得的。
 
@@ -352,35 +341,49 @@ http://html5boilerplate.com/
 
 这种技术涉及一种自下而上的方法：从一组可在多个浏览器中工作的核心功能开始，然后逐步添加新功能。渐进增强使特定网页的基本内容对所有用户可访问；拥有更好浏览器的用户将能够访问该网页的增强版本。像 Modernizr 这样的工具包允许你使用渐进增强。需要记住的一点是，对于非常依赖 JavaScript 进行用户交互的网页来说，渐进增强可能更具挑战性。进行互联网搜索以查找提供有关渐进增强更多信息的文章。
 
-
-
 ## 响应式设计
 
 响应式网页设计指的是一种创建网站的理念，其布局和元素能够“适应”并符合网站被查看的设备。简而言之，响应式网页设计涉及使用媒体查询、弹性布局以及弹性图像和媒体。
 
 伊桑·马科特撰写了一篇关于响应式网页设计的优秀文章：
-[http://www.alistapart.com/articles/responsive-web-design/](http://www.alistapart.com/articles/responsive-web-design/)
+
+```
+http://www.alistapart.com/articles/responsive-web-design/
+```
 
 这里收集了15篇讨论响应式网页设计的文章：
-[http://designwoop.com/2012/03/15-detailed-responsive-web-design-tutorials/](http://designwoop.com/2012/03/15-detailed-responsive-web-design-tutorials/)
+
+```
+http://designwoop.com/2012/03/15-detailed-responsive-web-design-tutorials/
+```
 
 通过互联网搜索，可以找到更多关于响应式网页设计的文章。你也可以在这里找到许多用于响应式网页设计的jQuery插件：
-[http://designbeep.com/2012/03/28/38-useful-and-effective-jquery-plugins-for-responsive-web-design/](http://designbeep.com/2012/03/28/38-useful-and-effective-jquery-plugins-for-responsive-web-design/)
+
+```
+http://designbeep.com/2012/03/28/38-useful-and-effective-jquery-plugins-for-responsive-web-design/
+```
 
 如果你不熟悉jQuery，那么在阅读本书的jQuery章节后，你将更能理解上述链接中的插件。
 
 如果你更愿意从响应式设计的模板开始，而不是从头开始设计自己的网站，可以在这里找到一个模板：
-[http://verekia.com/initializr/responsive-template](http://verekia.com/initializr/responsive-template)
+
+```
+http://verekia.com/initializr/responsive-template
+```
 
 最后，响应式设计开发套件Skeleton是一个与样式无关的工具包，也设计为能在各种设备间良好缩放。其主页在这里：
-[http://getskeleton.com/](http://getskeleton.com/)
+
+```
+http://getskeleton.com/
+```
 
 ## 一个简单的HTML5网页
 
 除了引入许多新的语义标签外，HTML5还简化了几个标签，包括`<!DOCTYPE>`声明以及`lang`和`charset`属性。清单1.1展示了`Sample1.html`，这是一个HTML5网页，说明了HTML5简化的语法。
 
-```
-清单 1.1 Sample1.html
+**清单 1.1 Sample1.html**
+
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -390,7 +393,7 @@ http://html5boilerplate.com/
 <body>
 <div id="outer">
 </div>
-<body>
+</body>
 </html>
 ```
 
@@ -432,9 +435,9 @@ HTML5 `<article>`元素的内容被认为是准备用于联合发布的，而作
 
 清单1.2展示了`SemanticMarkup1.html`的内容，说明了如何使用WebSQL数据库创建和管理我们的数据。
 
-**清单 1.2** `SemanticMarkup1.html`
+**清单 1.2 SemanticMarkup1.html**
 
-```
+```html
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -501,8 +504,6 @@ html5_canvas_css3_graphics.html">MercLearning Link</a></li>
     </section>
 ```
 
-
-
 ## HTML5 `<hgroup>` 元素
 
 HTML5 `<hgroup>` 元素使您能够在 HTML5 `<header>` 元素内部将一组与标题相关的标签“组合”在一起。HTML5 `<hgroup>` 元素必须包含至少两个 `<h1>` 到 `<h6>` 元素（并且不能包含其他内容）。该元素的用途与嵌套大纲类似：用于将标题与一个或多个副标题组合起来。
@@ -513,7 +514,7 @@ HTML5 `<hgroup>` 元素内部标签的缩进以一种与标题标签常规层级
 
 以下简单代码片段展示了如何在 HTML5 `<header>` 元素内部使用 HTML5 `<hgroup>` 元素：
 
-```
+```html
 <header>
   <hgroup>
     <h1>Title of post One</h1>
@@ -529,11 +530,11 @@ HTML5 `<hgroup>` 元素内部标签的缩进以一种与标题标签常规层级
 
 HTML5 支持自定义属性，这实际上使您能够编写 HTML5 网页，在这些网页中可以存储网页或应用程序私有的自定义数据。
 
-清单 1.3 展示了网页 *CustomAttributes1.html* 的内容，该网页说明了 jQuery Mobile 中可用的一些自定义属性。
+清单 1.3 展示了网页 `CustomAttributes1.html` 的内容，该网页说明了 jQuery Mobile 中可用的一些自定义属性。
 
-### 清单 1.3 CustomAttributes1.html
+**清单 1.3 CustomAttributes1.html**
 
-```
+```html
 <!doctype html>
 <html lang="en">
 <head>
@@ -565,7 +566,7 @@ HTML5 支持自定义属性，这实际上使您能够编写 HTML5 网页，在�
 
 HTML5 `<audio>` 标签使用起来非常简单，其语法如下所示：
 
-```
+```html
 <audio src="Sample1.mp3" controls autoplay loop>
     HTML5 audio tag not supported
 </audio>
@@ -575,9 +576,9 @@ HTML5 `<audio>` 标签支持多个属性，包括 `autoplay`（音频准备就�
 
 清单 1.4 展示了 HTML5Audio1.html 的内容，其中说明了如何在 HTML5 网页中使用 `<audio>` 标签的一个极简示例。
 
-### 清单 1.4 HTML5Audio1.html
+**清单 1.4 HTML5Audio1.html**
 
-```
+```html
 <!doctype html>
 <html>
 <head>
@@ -597,7 +598,7 @@ HTML5 audio tag not supported</audio>
 
 不同的浏览器支持不同的音频文件格式；幸运的是，HTML5 `<audio>` 标签支持 `<source>` 元素，该元素又提供了一个 `src` 属性，使您能够指定不同的文件格式，如下所示：
 
-```
+```html
 <audio controls="true">
 <source src="s.mp3" type="audio/mp3">
 <source src="s.ogg" type="audio/ogg">
@@ -610,9 +611,9 @@ HTML5 audio not supported
 
 您还可以使用 JavaScript 代码以编程方式控制 `<audio>` 标签。清单 1.5 展示了一个 HTML5 网页的内容，其中包含一个 `<audio>` 标签和一些错误处理 JavaScript 代码。
 
-### 清单 1.5 HTML5Audio2.html
+**清单 1.5 HTML5Audio2.html**
 
-```
+```html
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
@@ -651,7 +652,7 @@ HTML5 audio not supported
 
 清单 1.5 包含 JavaScript 函数 `ReportError()`，该函数在播放此 `<audio>` 元素中的音频文件时发生错误时被调用：
 
-```
+```html
 <audio controls onerror="ReportError(event)" src="Japanese1.mp3">
 ```
 
@@ -663,16 +664,22 @@ HTML5 audio not supported
 - MEDIA_ERR_SRC_NOT_SUPPORTED
 
 Google Chrome 中一些有趣的音频演示在此处：
+
+```
 http://chromium.googlecode.com/svn/trunk/samples/audio/index.html
+```
 
 如果您想了解更多关于 HTML5 音频功能的信息，可以阅读 W3C 音频规范：
+
+```
 https://dvcs.w3.org/hg/audio/raw-file/tip/webaudio/specification.html
+```
 
 ## HTML5 `<video>` 元素
 
 HTML5 `<video>` 标签可以像 HTML5 `<audio>` 标签一样简洁，其语法如下所示：
 
-```
+```html
 <video>
   <source type="video/mp4" src="filename">
 </video>
@@ -680,11 +687,11 @@ HTML5 `<video>` 标签可以像 HTML5 `<audio>` 标签一样简洁，其语法�
 
 正如您可能推测的那样，您也可以在 HTML5 `<video>` 元素中包含多个 `<source>` 元素，如下所示：
 
-```
+```html
 <video poster="MyVideo.gif" controls>
-  <source src='MyVideo.mp4' type='video/mp4; codecs=>avc1.4D401E, mp4a.40.2>>'>
-  <source src='MyVideo.ogv' type='video/ogg; codecs=>theora, vorbis>>'>
-  <source src='MyVideo.webm' type='video/webm; codecs=>vp8.0, vorbis>>'>
+  <source src='MyVideo.mp4' type='video/mp4; codecs="avc1.4D401E, mp4a.40.2"'>
+  <source src='MyVideo.ogv' type='video/ogg; codecs="theora, vorbis"'>
+  <source src='MyVideo.webm' type='video/webm; codecs="vp8.0, vorbis"'>
 </video>
 ```
 
@@ -696,10 +703,11 @@ HTML5 `<video>` 标签可以像 HTML5 `<audio>` 标签一样简洁，其语法�
 
 在移动端，iOS 和 Android 都仅支持 MP4 视频。
 
-清单 1.6 展示了 `HTML5Video1.html` 的内容，它演示了如何在 **HTML5 网页**中播放视频文件。
+清单 1.6 展示了 `HTML5Video1.html` 的内容，它演示了如何在 HTML5 网页中播放视频文件。
 
 **清单 1.6 HTML5Video1.html**
-```
+
+```html
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -716,7 +724,7 @@ HTML5 `<video>` 标签可以像 HTML5 `<audio>` 标签一样简洁，其语法�
 </html>
 ```
 
-清单 1.6 包含一些样板代码，以及一个 **HTML5 `<video>` 元素**，其属性与 **HTML5 `<audio>` 元素**类似。请注意，清单 1.6 中的 **HTML5 `<video>` 元素**指定了两个 `<source>` 元素，它们的 `src` 属性引用的是同一个视频文件，但采用两种不同的格式。浏览器处理 **HTML5 `<video>` 元素**的方式与处理 **HTML5 `<audio>` 元素**类似：当你在浏览器中打开一个包含 HTML5 `<video>` 元素的 HTML5 网页时，浏览器会播放其识别格式的第一个视频。
+清单 1.6 包含一些样板代码，以及一个 HTML5 `<video>` 元素，其属性与 HTML5 `<audio>` 元素类似。请注意，清单 1.6 中的 HTML5 `<video>` 元素指定了两个 `<source>` 元素，它们的 `src` 属性引用的是同一个视频文件，但采用两种不同的格式。浏览器处理 HTML5 `<video>` 元素的方式与处理 HTML5 `<audio>` 元素类似：当你在浏览器中打开一个包含 HTML5 `<video>` 元素的 HTML5 网页时，浏览器会播放其识别格式的第一个视频。
 
 > **注意** 您需要为清单 1.6 提供一个视频文件才能看到视频功能。
 
@@ -724,8 +732,9 @@ HTML5 `<video>` 标签可以像 HTML5 `<audio>` 标签一样简洁，其语法�
 
 清单 1.7 展示了 HTML5Video2.html 的内容，它演示了如何在 HTML5 网页中播放视频文件，该网页包含 JavaScript 中的错误处理代码。
 
-# 清单 1.7 HTML5Video2.html
-```
+**清单 1.7 HTML5Video2.html**
+
+```html
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
@@ -773,7 +782,7 @@ HTML5 `<video>` 标签可以像 HTML5 `<audio>` 标签一样简洁，其语法�
 
 清单 1.7 包含一个 JavaScript `init()` 方法，该方法在网页加载到浏览器时执行。此方法包含处理视频元素播放和暂停事件的 JavaScript 代码，如下所示：
 
-```
+```javascript
 var video = document.getElementById("video1");
 var toggle = document.getElementById("toggle1");
 
@@ -790,7 +799,7 @@ toggle.onclick = function() {
 
 清单 1.7 也包含样板代码和一个 HTML5 `<video>` 元素，该元素指定了一个视频文件以及用户可用于控制视频的控件，如下所示：
 
-```
+```html
 <video src="media/video1.webm" controls autoplay
        id="video1" width="400" height="300"
        data-description="Sample Video">
@@ -811,8 +820,9 @@ HTML `<video>` 元素还支持 `canPlayType()` 方法，该方法允许您以编
 
 清单 1.8 展示了 `HTML5Video3.html` 的内容，它演示了如何检查浏览器对不同视频类型的支持。
 
-# 清单 1.8 HTML5Video3.html
-```
+**清单 1.8 HTML5Video3.html**
+
+```html
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
@@ -865,30 +875,32 @@ Type: video/webm Can Play: maybe
 
 请注意，第一行指定了编解码器。浏览器已确定它可能可以播放给定的视频类型，而第二行是 "maybe"，因为未指定编解码器。
 
-# Popcorn.js：HTML5 媒体框架
+## Popcorn.js：HTML5 媒体框架
 
 Popcorn.js 是 Mozilla Popcorn 项目的一部分。它是一个基于 JavaScript 的 HTML5 媒体框架，用于创建基于时间的交互式媒体。Popcorn.js 主页和下载链接如下：
 
+```
 http://popcornjs.org
-
 http://popcornjs.org/download
+```
 
 Popcorn.js 由一个核心 JavaScript 库（可单独下载）和插件组成。您还可以创建 Popcorn.js 的自定义下载，包括压缩版和调试版。请访问主页获取更多信息，以及文档和演示 Popcorn.js 的视频。
 
-**28 • 适用于移动和桌面设备的 jQuery、CSS3 和 HTML5**
-
-# HTML5 `<video>` 和网络摄像头支持
+## HTML5 `<video>` 和网络摄像头支持
 
 您可以使用 HTML5 `<video>` 标签实现实时摄像头支持。此功能已在 Opera 中可用（请参见下面的链接）。在本书付印时，此功能已出现在 Chrome 的“每夜”构建版本中，可通过 `getUserMedia()` API 访问。
 
 有关 HTML5 视频的其他有用信息，请访问此网站：
 
-<http://html5video.org/>
+```
+http://html5video.org/
+```
 
 清单 1.9 展示了 WebCamera1.html 的内容。它演示了如何在浏览器中激活摄像头（目前仅在 Opera 中有效）。
 
 **清单 1.9 WebCamera1.html**
-```
+
+```html
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -923,7 +935,11 @@ Popcorn.js 由一个核心 JavaScript 库（可单独下载）和插件组成。
 
 清单1.9检查`navigator.getUserMedia`是否存在，如果存在，则通过调用`getUserMedia()`方法来搜索HTML5 `<video>`标签，并提供成功和失败的JavaScript回调函数，如下所示：`navigator.getUserMedia('video', successCallback, errorCallback);`
 
-适用于Linux、Mac、Windows和Android并提供网络摄像头支持的Opera构建版本可在此处下载：http://dev.opera.com/articles/view/labs-more-fun-using-the-web-with-getusermedia-and-native-pages/
+适用于Linux、Mac、Windows和Android并提供网络摄像头支持的Opera构建版本可在此处下载：
+
+```
+http://dev.opera.com/articles/view/labs-more-fun-using-the-web-with-getusermedia-and-native-pages/
+```
 
 下一节将讨论HTML5表单。你将看到第一个版本的`Form1.html`，它允许用户跟踪一组单词及其在多种语言中的翻译。
 
@@ -935,7 +951,11 @@ HTML5 表单元素支持新元素，并且与输入相关的元素可以为预�
 
 新的HTML5表单输入类型包括：`color`、`date`、`email`、`month`、`datetime`、`datetime-local`、`number`、`range`、`search`、`tel`、`time`、`url`和`week`。新输入类型以其提供的功能命名：电子邮件类型用于电子邮件地址，数字类型用于数字，搜索类型用于搜索字段，依此类推。本章后面展示的清单1.9中的HTML5表单将向你展示如何使用其中一些新输入类型（以及新属性）。
 
-一个关于HTML5表单元素的优秀网站在此处：http://www.wufoo.com/html5/
+一个关于HTML5表单元素的优秀网站在此处：
+
+```
+http://www.wufoo.com/html5/
+```
 
 本节中的HTML5网页允许用户在表单元素中的输入字段中输入新单词。此版本解决了HTML5表单的一些UI方面问题，包括一些简单的CSS3选择器，我们将在该HTML5网页中使用它们来设置各种HTML5元素的样式。此基于表单示例的第二个版本将向你展示如何使用`localStorage`来持久化你的字典内容。第三个版本将说明如何使用IndexedDB（代替`localStorage`）在兼容HTML5的浏览器的数据库中存储我们的字典内容。除了创建新条目，我们还将能够删除或更新现有条目，并搜索字典中的特定单词。
 
@@ -951,13 +971,13 @@ HTML5 表单元素支持新元素，并且与输入相关的元素可以为预�
 
 `placeholder`属性指定在输入字段中显示的字符串：
 
-```
+```html
 <input type="text" size="20" placeholder="Full name">
 ```
 
 `required`属性使关联的字段成为必填项：
 
-```
+```html
 <input type="text" name="name" required placeholder="Name"/>
 ```
 
@@ -971,9 +991,9 @@ HTML5 表单元素支持新元素，并且与输入相关的元素可以为预�
 
 清单1.10展示了`HTML5Form1.html`的内容，它说明了如何指定几种新的HTML5输入类型和属性。
 
-清单1.10 HTML5Form1.html
+**清单 1.10 HTML5Form1.html**
 
-```
+```html
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
@@ -990,7 +1010,7 @@ HTML5 表单元素支持新元素，并且与输入相关的元素可以为预�
 <input type="email" name="email" required placeholder="email@foo.com"/>
 
 <label for="message">Message:</label>
-<textarea name="message" required</textarea>
+<textarea name="message" required></textarea>
 
 <label for="number">Number:</label>
 <input type="number" name="number" min="0" max="50" step="1" required placeholder="Maximum 50">
@@ -1011,25 +1031,21 @@ HTML5 表单元素支持新元素，并且与输入相关的元素可以为预�
 
 在清单1.10中，第一个`<input>`元素显示占位符字符串`Name`，除了确保该字段非空外，不执行任何验证：
 
-```
+```html
 <input type="text" name="name" required placeholder="Name"/>
 ```
 
 然而，第二个`<input>`元素显示占位符字符串`email@foo.com`。执行验证，这意味着用户必须提供格式正确的电子邮件字符串：
 
-```
+```html
 <input type="email" name="email" required placeholder="email@foo.com"/>
 ```
 
-图1.2显示了在Android ICS平板电脑上以横屏模式渲染HTML5网页`HTML5Form1.html`的结果。
-
-![](img/6f06c2ff7e29452e50d03258ed9c6b4f_57_0.png)
-
 清单1.11展示了`MultiLingualForm1.html`的内容，它说明了如何输入一个英文单词及其在日语（罗马字）、意大利语、西班牙语和法语中的对应词。
 
-## 清单1.11 MultiLingualForm1.html
+**清单 1.11 MultiLingualForm1.html**
 
-```
+```html
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
@@ -1075,13 +1091,11 @@ input[type="text"] {
 
 清单1.11是一个基本的HTML5表单，包含一组`<div>`元素，每个元素包含一个类型为`text`的`<input>`元素（带有相应的`<label>`元素），允许用户输入英文、日文、西班牙文、法文和意大利文的单词。请注意，不执行任何验证，这意味着用户可以输入拼写错误的单词和错误语言的单词。
 
-
-
 ## HTML5 FormData 对象
 
 HTML5 的 `FormData` 对象可以通过编程方式实例化并填充数据，然后通过 XHR2（`XmlHttpRequest Level 2`）提交，如下所示：
 
-```
+```javascript
 var formData = new FormData();
 
 formData.append("username", "Dave");
@@ -1103,7 +1117,7 @@ HTML5 Web 存储的本质在于它提供了一种非常简单的方式来存储�
 
 尽管 localStorage 没有查询语言，但你可以通过 `localStorage.length` 确定 localStorage 中的键数，并且可以在遍历 localStorage 中的条目时使用正则表达式来选择合适的键。作为一个简单的示例，以下代码块遍历 localStorage 中的键，并检查那些以字符串 "Emp" 开头的值：
 
-```
+```javascript
 var itemCount = localStorage.length, i=0, key="", value="";
 
 while ( ++i < itemCount ) {
@@ -1121,13 +1135,15 @@ while ( ++i < itemCount ) {
 
 除了在 Web 存储中存储字符串，你还可以存储 JSON 数据，如下所示：
 
-> http://www.codeproject.com/Articles/361428/HTML5-Web-Storage
+```
+http://www.codeproject.com/Articles/361428/HTML5-Web-Storage
+```
 
 HTML5 Web 存储（包括本地存储和会话存储）的优点在于 API 的简单性。HTML5 Web 存储的缺点包括：
 
-- 1. 初始平台特定的数据限制。
-- 2. 不支持事务处理。
-- 3. 没有用于访问结构化数据的查询语言。
+1. 初始平台特定的数据限制。
+2. 不支持事务处理。
+3. 没有用于访问结构化数据的查询语言。
 
 每个浏览器都有自己独特的机制，用于在超过初始限制后增加可用存储空间。
 
@@ -1143,9 +1159,11 @@ IndexedDB 相对于 HTML5 Web 存储的首要优势在于其容量：IndexedDB �
 
 HTTP cookie 是一组用于与 Web 服务器通信的键值对。只要 cookie 数据仍然有效，并且请求的域名和路径也与原始 cookie 的域名和路径匹配，cookie 就会包含在 HTTP 请求头中。尽管 cookies 很方便，但它们确实有一些缺点，例如它们的大小和数量（通常为 4K 字节和 300 个 cookies）、性能和安全性问题。
 
-localStorage 和 sessionStorage 旨在提供支持存储更大量数据（兆字节而非千字节）、在当前会话之外存储数据，以及支持在多个浏览器窗口中同时发生的事务处理，所有这些都使得 HTML5 Web 存储成为比 cookies 更强大的技术。
 
-## HTML5 Web 存储与安全性
+
+# HTML5 Web 存储与安全性
+
+localStorage 和 sessionStorage 旨在提供支持存储更大量数据（兆字节而非千字节）、在当前会话之外存储数据，以及支持在多个浏览器窗口中同时发生的事务处理，所有这些都使得 HTML5 Web 存储成为比 cookies 更强大的技术。
 
 这些 API 遵循“同源”策略，其安全性定义方式与 `XMLHttpRequest` 对象相同。因此，不要在共享域上使用 localStorage，因为该域上的每个网页都可以访问你存储的数据。默认情况下，你本地存储的数据不会在子域之间共享。
 
@@ -1155,15 +1173,15 @@ https://developer.mozilla.org/en/Same_origin_policy_for_JavaScript
 
 既然你已经对 localStorage 有了基本的了解，下一节将包含一个代码示例，说明如何在 localStorage 中存储文本字符串（由连接的单词组成）。
 
-## HTML5 LOCALSTORAGE 示例
+# HTML5 LOCALSTORAGE 示例
 
 本节中的示例使用 localStorage，以便我们可以持久化多语言词典中的数据。如果你决定用 sessionStorage 替换 localStorage，那么数据将仅在当前浏览器会话期间可用（因此得名“会话存储”）。
 
 清单 1.12 展示了 `MultiLingualForm2.html` 的内容，该示例说明了如何在 localStorage 中创建和管理我们的数据。
 
-清单 1.12 MultiLingualForm2.html
+## 清单 1.12 MultiLingualForm2.html
 
-```
+```html
 <html lang="en">
 <head>
 <meta charset="utf-8"/>
@@ -1270,28 +1288,19 @@ function populateDropDownList() {
 
     while ( ++i < itemCount ) {
         // 检索当前键的值
+        key = localStorage.key( i );
+
+        // retrieve the value of the current item
+        items[key] = localStorage.getItem( key );
+
+        option = new Option( key );
+
+        // Append to existing options
+        wordList.options[wordList.length] = option;
     }
-}
-```
 
-
-
-## 清单 1.12
-
-```javascript
-    key = localStorage.key( i );
-
-    // retrieve the value of the current item
-    items[key] = localStorage.getItem( key );
-
-    option = new Option( key );
-
-    // Append to existing options
-    wordList.options[wordList.length] = option;
-}
-
-// Ensure option 0 is selected
-wordList.selectedIndex = 0;
+    // Ensure option 0 is selected
+    wordList.selectedIndex = 0;
 }
 </script>
 </head>
@@ -1299,7 +1308,6 @@ wordList.selectedIndex = 0;
 <body onLoad="populateDropDownList()">
 <h1>我们的多语言词典</h1>
 <form id="dictionary" onsubmit="return false;">
-<form>
 <fieldset>
 <div>
     <button id="add" onClick="addWord()">添加新单词</button>
@@ -1360,7 +1368,8 @@ var concatenated = english + ":" + japanese + ":" +
 localStorage.setItem(english, concatenated);
 ```
 
-**请记住**，前面的代码片段等价于以下代码片段：
+请记住，前面的代码片段等价于以下代码片段：
+
 `localStorage["eat"] = "eat:taberu:comer:manger:mangiare";`
 
 相反，当从词典中检索单词时，JavaScript 函数 `displayItem()` 会将每个拼接字符串“分割”成存储在拼接字符串中的单词，然后将各个单词显示在相应的语言字段中。
@@ -1372,7 +1381,7 @@ JavaScript 函数 `displayItem()` 在每种指定语言的输入字段中显示�
 ```javascript
 localStorage.setItem("eat", "eat:taberu:comer:manger:mangiare");
 localStorage.setItem("go", "go:iku:andar:aller:andare");
-localStorage.setItem("buy", "buy:kau:comprer:acheter:comprare");
+localStorage.setItem("buy", "buy:kau:comprar:acheter:comprare");
 ```
 
 最后，JavaScript 函数 `removeItemsFromDropDownList()` 使用以下代码行从下拉列表中移除数据：
@@ -1446,7 +1455,7 @@ background: #FF0;
 
 下一节中的示例也使用了处理数据输入的 HTML5 表单，但这次数据将存储在 HTML5 数据库中，而不是在线 localStorage。
 
-## LocalStorage 和 iOS 5.1
+# LocalStorage 和 iOS 5.1
 
 不幸的是，iOS 5.1 将 localStorage 视为“临时”数据，这意味着在 iOS 5.1 设备上，当存储空间不足时，localStorage 中的数据可能会被处置：
 
@@ -1454,7 +1463,7 @@ background: #FF0;
 
 到本书出版时，这个问题可能已经得到解决。
 
-## 在 localStorage 中存储图像
+# 在 localStorage 中存储图像
 
 除了在 HTML5 localStorage 中存储简单的文本字符串外，你还可以存储图像和文件。你可以在这里找到一些有用的信息和代码示例：
 
@@ -1466,9 +1475,10 @@ background: #FF0;
 
 请注意，由于 localStorage 的大小限制，最好将图像存储在 IndexedDB 中。
 
-## HTML5 WEB 数据库
+# HTML5 WEB 数据库
 
 除了使用 Web Storage 存储数据外，还有两个提供更强大功能的数据库。正在积极开发的数据库是 IndexedDB，截至本书出版时，它尚未在所有现代浏览器中完全实现。
+
 另一个数据库是 WebSQL，但该数据库的开发已于 2010 年 11 月停止。但是，如果你有一个使用 WebSQL 的 Web 应用程序，以下文章提供了有用的信息，以帮助你迁移到 IndexedDB：
 
 > http://www.html5rocks.com/en/tutorials/webdatabase/websql-indexeddb/
@@ -1485,13 +1495,13 @@ background: #FF0;
 
 下一节将向你介绍 IndexedDB，并向你展示如何在 IndexedDB 数据库中存储文本字符串。
 
-## 使用 HTML5 IndexedDB 数据库
+# 使用 HTML5 IndexedDB 数据库
 
 在本节中，我们将使用 IndexedDB 数据库来存储多语言词典中的数据。IndexedDB 支持 SQLITE 语法，你可能对此很熟悉。
 
 清单 1.14 显示了 HTML5 网页 MultiLingualForm2DB1.html 内容的部分内容，该网页说明了如何使用 IndexedDB 数据库创建和管理我们的数据。请注意，清单 1.14 的完整内容在 DVD 中提供。
 
-### 清单 1.14 MultiLingualForm2DB1.html
+## 清单 1.14 MultiLingualForm2DB1.html
 
 ```html
 <html lang="en">
@@ -1504,15 +1514,7 @@ background: #FF0;
 /* some database-related initialization here */
 var dbName = "MultiLingual1";
 var multilingual = {};
-```
 
-![](img/6f06c2ff7e29452e50d03258ed9c6b4f_70_0.png)
-
-
-
-## 46 • 用于移动与桌面设备的 jQuery、CSS3 与 HTML5
-
-```javascript
 var indexedDB = window.indexedDB || window.webkitIndexedDB ||
                 window.mozIndexedDB || window.moz_indexedDB;
 
@@ -1530,7 +1532,47 @@ multilingual.indexedDB.db = null;
 multilingual.indexedDB.onerror = function(e) {
   console.log(e);
 };
+
+multilingual.indexedDB.open = function() {
+  //console.log("dbName in open: "+dbName);
+  var request = indexedDB.open(dbName, 1);
+
+  request.onsuccess = function(e) {
+    //console.log("top of onsuccess function");
+    var v = "1.0";
+    multilingual.indexedDB.db = e.target.result;
+    var db = multilingual.indexedDB.db;
+
+    // We can only create Object stores in a setVersion
+    // transaction;
+    if (v != db.version) {
+      var setVrequest = db.setVersion(v);
+
+      // onsuccess is the only place we can create Object Stores
+      setVrequest.onerror = multilingual.indexedDB.onerror;
+
+      setVrequest.onsuccess = function(e) {
+        if(db.objectStoreNames.contains(dbName)) {
+          db.deleteObjectStore(dbName);
+        }
+        var store = db.createObjectStore(dbName,
+                                        {keyPath: "timeStamp"});
+
+        multilingual.indexedDB.getAllWords();
+      };
+    } else {
+      multilingual.indexedDB.getAllWords();
+    }
+  };
+
+  request.onerror = multilingual.indexedDB.onerror;
+};
+</script>
+</head>
+</html>
 ```
+
+![](img/6f06c2ff7e29452e50d03258ed9c6b4f_70_0.png)
 
 前面的代码块创建了一个名为 MultiLingual1 的 IndexedDB 数据库，并使用各种浏览器特定的前缀检查了 indexedDB 的存在性，之后代码定义了 `onerror()` JavaScript 函数。
 
@@ -1586,7 +1628,7 @@ function addWord() {
 }
 ```
 
-前面的代码块包含的代码几乎与清单 1.12 中的相应函数相同，区别在于**加粗显示的代码行**，它向你展示了向我们的 IndexedDB 多语言词典中添加新行是多么直接简单。
+前面的代码块包含的代码几乎与清单 1.12 中的相应函数相同，区别在于高亮显示的代码行，它向你展示了向我们的 IndexedDB 多语言词典中添加新行是多么直接简单。
 
 ```javascript
 multilingual.indexedDB.deleteWord = function(id) {
@@ -1612,7 +1654,7 @@ multilingual.indexedDB.deleteWord = function(id) {
 
 请注意，在清单 1.14 中，只有存储功能发生了变化，并且当你启动这个网页时，它的外观将与图 1.4 完全相同。
 
-## 将 Twitter 推文存储在 Web 数据库中
+# 将 Twitter 推文存储在 Web 数据库中
 
 Remy Sharp 创建了一个使用 Web 数据库存储 Twitter 推文的开源项目。你可以在这里 fork 他的代码项目：
 
@@ -1640,18 +1682,17 @@ select * from tweets;
 
 **图 1.6** Remy Sharp 的 tweet.js 源代码。
 
-## Web 数据库与移动设备
+# Web 数据库与移动设备
 
 你可以尝试将用于 Web 应用程序的相同技术用于移动应用程序，但你将在这两种环境中遇到类似的限制。虽然你可以使用原生代码来访问数据库，但该解决方案将特定于每种设备类型。你的选择取决于应用程序的要求。
 
 一个跨平台的解决方案是使用 CouchDB Mobile，它是 CouchDB 的移动版本。另一个基于移动设备的替代方案是 TouchDB，它是一个兼容 Apache CouchDB 的轻量级数据库引擎。TouchDB 的创建者做了一个类比：“如果 CouchDB 是 MySQL，那么 TouchDB 就是 SQLite。” 这里提供了 TouchDB 的 Android 移植版和 iOS 移植版：
 
 > https://github.com/couchbaselabs/TouchDB-Android
+
 > https://github.com/couchbaselabs/TouchDB-iOS
 
-## 50 • 用于移动与桌面设备的 jQuery、CSS3 与 HTML5
-
-## 性能、调试与测试工具
+# 性能、调试与测试工具
 
 有多种优秀的性能和调试工具可供使用，本节将简要提及其中几种：
 
@@ -1702,14 +1743,13 @@ PageSpeed 浏览器扩展适用于 Chrome 和 Firefox，可帮助你提高网页
 
 PageSpeed Insights 是一个基于 Web 的工具，无需下载扩展程序即可在任何浏览器中分析页面。mod_pagespeed Apache 模块会自动重写页面和资源以提高其性能。最后，PageSpeed Service 是一种在线服务，可加快网页的加载速度。
 
-
-
 ## WEINRE
 
-WEINRE（读作“winery”）是一款出色的调试工具，其用户界面显示与Chrome的Web Inspector相同。其主页位于：
+WEINRE（读作“winery”）是一款出色的调试工具，其用户界面显示与 Chrome 的 Web Inspector 相同。其主页位于：
+
 http://phonegap.github.com/weinre/
 
-WEINRE支持远程调试，这意味着你可以查看移动设备上的网页。你可以在以下位置找到关于WEINRE的YouTube视频、文档和讨论组：
+WEINRE 支持远程调试，这意味着你可以查看移动设备上的网页。你可以在以下位置找到关于 WEINRE 的 YouTube 视频、文档和讨论组：
 
 ```
 http://www.youtube.com/results?search_query=weinre
@@ -1717,61 +1757,75 @@ http://callback.github.com/callback-weinre
 http://groups.google.com/group/weinre
 ```
 
-## Firefox的Firebug
+## Firefox 的 Firebug
 
-Firebug是一款Firefox浏览器的附加组件调试工具。你可以在此安装Firebug：
+Firebug 是一款 Firefox 浏览器的附加组件调试工具。你可以在此安装 Firebug：
+
 https://addons.mozilla.org/en-US/firefox/addon/firebug/
 
-还有一些模拟工具可用，例如Remy Sharp开发的工具，它允许你在移动设备上模拟运动事件。其主页位于：
+还有一些模拟工具可用，例如 Remy Sharp 开发的工具，它允许你在移动设备上模拟运动事件。其主页位于：
+
 http://remote-tilt.com/
 
-你可以通过在网页中包含一行JavaScript来使用此工具，之后将出现一个弹出窗口，使你能够模拟各种运动事件。
+你可以通过在网页中包含一行 JavaScript 来使用此工具，之后将出现一个弹出窗口，使你能够模拟各种运动事件。
 
 遗憾的是，关于这些工具的进一步讨论超出了本书的主要范围，但至少学习其中一种工具绝对值得，这将为你提供在本书代码示例之外用于调试的知识。
 
 ## jsconsole
 
-jsconsole是一个用于调试目的的JavaScript和CoffeeScript Web控制台。此工具（由Remy Sharp创建）可在此下载：
+jsconsole 是一个用于调试目的的 JavaScript 和 CoffeeScript Web 控制台。此工具（由 Remy Sharp 创建）可在此下载：
+
 https://github.com/remy/jsconsole
 
-你可以在以下网站上看到jsconsole功能的示例：
+你可以在以下网站上看到 jsconsole 功能的示例：
+
 http://jsconsole.com/
 
 ## Socketbug
 
-Socketbug是Peter Schmalfeldt创建的一个工具，可帮助你调试移动应用程序。其主页位于：
+Socketbug 是 Peter Schmalfeldt 创建的一个工具，可帮助你调试移动应用程序。其主页位于：
+
 http://socketbug.com/
-Socketbug支持iOS Safari、Android Webkit和Palm WebOS，你可以使用任何现代浏览器作为调试控制台。
+
+Socketbug 支持 iOS Safari、Android Webkit 和 Palm WebOS，你可以使用任何现代浏览器作为调试控制台。
 
 ## Adobe Shadow
 
-Adobe Shadow是Adobe开发的移动调试工具。其主页位于：
+Adobe Shadow 是 Adobe 开发的移动调试工具。其主页位于：
+
 http://labs.adobe.com/technologies/shadow/
-Adobe Shadow提供了一种在多台设备上同时测试网站的方法，如果你对响应式设计感兴趣，这也很有吸引力。Adobe Shadow使用WEINRE在设备上执行远程DOM检查，目前支持Mac（OS X 10.6和10.7）和Windows 7。关于Adobe Shadow的四分钟视频位于：
+
+Adobe Shadow 提供了一种在多台设备上同时测试网站的方法，如果你对响应式设计感兴趣，这也很有吸引力。Adobe Shadow 使用 WEINRE 在设备上执行远程 DOM 检查，目前支持 Mac（OS X 10.6 和 10.7）和 Windows 7。关于 Adobe Shadow 的四分钟视频位于：
+
 http://tv.adobe.com/watch/adobe-technology-sneaks-2012/adobe-shadow
-另一个有用的调试工具是WebKit远程调试，它自2011年起就已可用，也包含在iOS和Android中。详细信息可在以下位置查看：
+
+另一个有用的调试工具是 WebKit 远程调试，它自 2011 年起就已可用，也包含在 iOS 和 Android 中。详细信息可在以下位置查看：
+
 http://www.webkit.org/blog/1875/announcing-remote-debugging-protocol-v1-0/
 
 ## 其他有用链接
 
-一个较新的网站是HTML5 Please，它由知名行业人士贡献：
+一个较新的网站是 HTML5 Please，它由知名行业人士贡献：
+
 http://html5please.com
-上述网站提供了一个输入字段，你可以在其中指定HTML5和CSS3功能，以确定它们是否已准备好使用，并查看如何使用它们。
-W3C为HTML网页（包括HTML5网页）提供免费的在线验证服务：
+
+上述网站提供了一个输入字段，你可以在其中指定 HTML5 和 CSS3 功能，以确定它们是否已准备好使用，并查看如何使用它们。
+
+W3C 为 HTML 网页（包括 HTML5 网页）提供免费的在线验证服务：
 
 ```
 http://validator.w3.org/#validate_by_uri+with_options
 ```
 
-上述网站使你能够验证URL、文件或直接输入的代码。
+上述网站使你能够验证 URL、文件或直接输入的代码。
 
-以下网站提供了HTML5电子邮件输入字段的“样板”模板（以及CSS和jQuery的模板）：
+以下网站提供了 HTML5 电子邮件输入字段的“样板”模板（以及 CSS 和 jQuery 的模板）：
 
 ```
 http://favbulous.com/post/848/6-useful-web-development-boilerplates
 ```
 
-以下两个链接分别指向HTML5草案规范和HTML5草案建议（2009年5月）。
+以下两个链接分别指向 HTML5 草案规范和 HTML5 草案建议（2009年5月）。
 
 ```
 http://www.w3.org/TR/html5/
@@ -1781,69 +1835,71 @@ http://www.w3.org/TR/html5/
 http://www.whatwg.org/specs/web-apps/current-work/
 ```
 
-还有一个“Web开发者版”的HTML5规范，它经过简化以提高可读性（不含供应商相关细节），你可以在此阅读：
+还有一个“Web开发者版”的 HTML5 规范，它经过简化以提高可读性（不含供应商相关细节），你可以在此阅读：
 
 ```
 http://developers.whatwg.org
 ```
 
-## 总结
+# 总结
 
-本章概述了几种使用HTML5表单管理和持久化用户提供的HTML5相关技术。在本章中，你学习了如何执行以下操作：
+本章概述了几种使用 HTML5 表单管理和持久化用户提供的 HTML5 相关技术。在本章中，你学习了如何执行以下操作：
 
--   创建HTML5网页
--   使用新的语义标记
--   使用HTML5 `<audio>` 和 `<video>` 元素
--   使用Web Forms创建HTML5网页
--   使用简单的CSS3增强HTML5网页
--   将数据持久化保存到localStorage
--   将数据持久化保存到在线数据库
+- 创建 HTML5 网页
+- 使用新的语义标记
+- 使用 HTML5 `<audio>` 和 `<video>` 元素
+- 使用 Web Forms 创建 HTML5 网页
+- 使用简单的 CSS3 增强 HTML5 网页
+- 将数据持久化保存到 localStorage
+- 将数据持久化保存到在线数据库
 
-接下来的三章讨论基于CSS3的功能（以及将CSS3与SVG结合使用的示例），并深入探讨一些更复杂的CSS3功能，这些功能可以帮助你创建具有生动有趣视觉效果的HTML5网页。
+接下来的三章讨论基于 CSS3 的功能（以及将 CSS3 与 SVG 结合使用的示例），并深入探讨一些更复杂的 CSS3 功能，这些功能可以帮助你创建具有生动有趣视觉效果的 HTML5 网页。
 
 # 第2章
-# CSS3简介
 
-本章是专门介绍CSS3的两章中的第一章。本章讨论并通常通过代码示例或代码块说明大量的CSS3相关内容。在某些情况下，由于篇幅限制，某些概念没有附带代码示例；但是，这些概念被包含在内是因为让你了解它们很重要。尽管省略了许多CSS3主题，你仍将获得对CSS3各个方面的工作知识。
+# CSS3 简介
 
-本章假定你对CSS有适度的理解，这意味着你知道如何在CSS选择器中设置属性。如果你不熟悉CSS选择器，可以通过互联网搜索找到许多入门文章。如果你确信CSS在令人困惑且看似深奥的规则下运作，那么阅读一篇关于CSS盒模型的在线文章可能值得你一读，之后你将更好地理解CSS的底层逻辑。
+本章是专门介绍 CSS3 的两章中的第一章。本章讨论并通常通过代码示例或代码块说明大量的 CSS3 相关内容。在某些情况下，由于篇幅限制，某些概念没有附带代码示例；但是，这些概念被包含在内是因为让你了解它们很重要。尽管省略了许多 CSS3 主题，你仍将获得对 CSS3 各个方面的工作知识。
 
-本章的第一部分包含代码示例，说明如何创建阴影效果、如何渲染带圆角的矩形以及如何使用线性和径向渐变。第二部分涵盖CSS3变换（缩放、旋转、倾斜和平移），以及说明如何将变换应用于HTML元素和JPG文件的代码示例。
+本章假定你对 CSS 有适度的理解，这意味着你知道如何在 CSS 选择器中设置属性。如果你不熟悉 CSS 选择器，可以通过互联网搜索找到许多入门文章。如果你确信 CSS 在令人困惑且看似深奥的规则下运作，那么阅读一篇关于 CSS 盒模型的在线文章可能值得你一读，之后你将更好地理解 CSS 的底层逻辑。
 
-本章第三部分简要讨论了CSS3媒体查询，它使你能够检测设备的一些特征，因此可以根据这些属性渲染HTML5网页。你将看到一些使用CSS3媒体查询的示例，例如根据移动设备的方向更改网页的布局。本章最后一部分讨论了CSS3 Web字体，你将看到如何在HTML5网页中使用Web字体的示例。
+本章的第一部分包含代码示例，说明如何创建阴影效果、如何渲染带圆角的矩形以及如何使用线性和径向渐变。第二部分涵盖 CSS3 变换（缩放、旋转、倾斜和平移），以及说明如何将变换应用于 HTML 元素和 JPG 文件的代码示例。
 
-完成本章后，你将知道如何使用CSS3变换方法 `translate()`、`rotate()`、`skew()` 和 `scale()`。这将为你学习第3章的内容做好准备，第3章包含其他新CSS3功能（如2D/3D动画）的代码示例，以及一些CSS框架的概述。
+本章第三部分简要讨论了 CSS3 媒体查询，它使你能够检测设备的一些特征，因此可以根据这些属性渲染 HTML5 网页。你将看到一些使用 CSS3 媒体查询的示例，例如根据移动设备的方向更改网页的布局。本章最后一部分讨论了 CSS3 Web 字体，你将看到如何在 HTML5 网页中使用 Web 字体的示例。
 
-你可以在桌面或笔记本电脑上基于WebKit的浏览器中启动本章中的代码示例；你也可以在移动设备上查看它们，只要你在支持代码示例中使用的CSS3功能的浏览器中启动它们。为方便起见，本章中的许多代码示例都附有在Sprint Nexus S 4G和Asus Prime Android ICS 10英寸平板电脑（均运行Android ICS）上的截图，使你可以将这些截图与在桌面和笔记本电脑上基于WebKit的浏览器渲染的相应图像进行比较。在第13章中，你将学习创建可以启动HTML5网页的Android应用程序的过程。别忘了，Android apk文件在附带的DVD上可用，你可以在支持Android ICS（或更高版本）的Android设备上启动它们。
+完成本章后，你将知道如何使用 CSS3 变换方法 `translate()`、`rotate()`、`skew()` 和 `scale()`。这将为你学习第3章的内容做好准备，第3章包含其他新 CSS3 功能（如 2D/3D 动画）的代码示例，以及一些 CSS 框架的概述。
+
+你可以在桌面或笔记本电脑上基于 WebKit 的浏览器中启动本章中的代码示例；你也可以在移动设备上查看它们，只要你在支持代码示例中使用的 CSS3 功能的浏览器中启动它们。为方便起见，本章中的许多代码示例都附有在 Sprint Nexus S 4G 和 Asus Prime Android ICS 10 英寸平板电脑（均运行 Android ICS）上的截图，使你可以将这些截图与在桌面和笔记本电脑上基于 WebKit 的浏览器渲染的相应图像进行比较。在第13章中，你将学习创建可以启动 HTML5 网页的 Android 应用程序的过程。别忘了，Android apk 文件在附带的 DVD 上可用，你可以在支持 Android ICS（或更高版本）的 Android 设备上启动它们。
 
 ![](img/6f06c2ff7e29452e50d03258ed9c6b4f_81_0.png)
 
-## CSS3支持和CSS3属性的浏览器特定前缀
+## CSS3 支持和 CSS3 属性的浏览器特定前缀
 
-在深入探讨CSS3的细节之前，有两个重要的细节你需要了解关于为HTML页面定义基于CSS3的选择器。首先，你需要知道不同浏览器中可用的CSS3功能。确定浏览器对CSS3功能支持的最佳网站之一位于：
+在深入探讨 CSS3 的细节之前，有两个重要的细节你需要了解关于为 HTML 页面定义基于 CSS3 的选择器。首先，你需要知道不同浏览器中可用的 CSS3 功能。确定浏览器对 CSS3 功能支持的最佳网站之一位于：
+
 http://caniuse.com/
-上述链接包含关于IE、Firefox、Safari、Chrome和Opera中CSS3支持的表格信息。
 
-另一个非常有用的检查CSS3功能支持的工具是Enhance.js，它测试浏览器以确定它们是否能支持一组基本的CSS和JavaScript属性，然后将功能传递给满足测试的浏览器。你可以在此下载Enhance.js：
+上述链接包含关于 IE、Firefox、Safari、Chrome 和 Opera 中 CSS3 支持的表格信息。
+
+另一个非常有用的检查 CSS3 功能支持的工具是 Enhance.js，它测试浏览器以确定它们是否能支持一组基本的 CSS 和 JavaScript 属性，然后将功能传递给满足测试的浏览器。你可以在此下载 Enhance.js：
+
 http://filamentgroup.com/lab/introducing_enhancejs_smarter_safer_apply_progressive_enhancement/
 
-你需要知道的第二个细节是，许多CSS3属性目前需要浏览器特定前缀才能正常工作。前缀 `-ie-`、`-moz-` 和 `-o-` 分别用于Internet Explorer、Firefox
-
-
+你需要知道的第二个细节是，许多 CSS3 属性目前需要浏览器特定前缀才能正常工作。前缀 `-ie-`、`-moz-` 和 `-o-` 分别用于 Internet Explorer、Firefox
 
 ## CSS3 功能快速概览
 
 CSS3 采用模块化的方法来扩展现有 CSS2 的功能，并支持新功能。因此，CSS3 可以逻辑上分为以下几个类别：
 
--   背景/边框
--   颜色
--   媒体查询
--   多栏布局
--   选择器
+- 背景/边框
+- 颜色
+- 媒体查询
+- 多栏布局
+- 选择器
 
 使用 CSS3，你可以创建具有圆角和阴影效果的框，使用线性渐变和径向渐变创建丰富的图形效果，检测纵向和横向模式，使用媒体查询选择器检测移动设备的类型，以及生成多栏文本渲染和格式化。
 
-此外，CSS3 允许你在选择器中使用伪类、首或末子元素（first-child、last-child、first-of-type 和 last-of-type）以及属性模式匹配测试来定义复杂的节点选择规则。本章的多个部分包含了如何创建此类选择规则的示例。
+此外，CSS3 允许你在选择器中使用伪类、首或末子元素（`first-child`、`last-child`、`first-of-type` 和 `last-of-type`）以及属性模式匹配测试来定义复杂的节点选择规则。本章的多个部分包含了如何创建此类选择规则的示例。
 
 ## CSS3 伪类、属性选择与关系符号
 
@@ -1865,17 +1921,17 @@ nth-child(insert-a-keyword-or-linear-expression-here)
 
 以下列表提供了在 HTML `<div>` 元素（也可用其他 HTML 元素替代）的子元素中使用 `nth-child()` 伪类以匹配各种子集的各种示例：
 
--   `div:nth-child(1)`：匹配第一个子元素
--   `div:nth-child(2)`：匹配第二个子元素
--   `div:nth-child(even)`：匹配偶数位置的子元素
--   `div:nth-child(odd)`：匹配奇数位置的子元素
+- `div:nth-child(1)`：匹配第一个子元素
+- `div:nth-child(2)`：匹配第二个子元素
+- `div:nth-child(even)`：匹配偶数位置的子元素
+- `div:nth-child(odd)`：匹配奇数位置的子元素
 
 `nth-child()` 伪类有趣且强大的方面在于它支持 `an+b` 形式的线性表达式，其中 `a` 是正整数，`b` 是非负整数，如下所示（使用 HTML5 `<div>` 元素）：
 
--   `div:nth-child(3n)`：从位置 0 开始，匹配每隔三个的子元素
--   `div:nth-child(3n+1)`：从位置 1 开始，匹配每隔三个的子元素
--   `div:nth-child(3n+2)`：从位置 2 开始，匹配每隔三个的子元素
--   `div:nth-child(3n+3)`：与 `div:nth-child(3n)` 相同
+- `div:nth-child(3n)`：从位置 0 开始，匹配每隔三个的子元素
+- `div:nth-child(3n+1)`：从位置 1 开始，匹配每隔三个的子元素
+- `div:nth-child(3n+2)`：从位置 2 开始，匹配每隔三个的子元素
+- `div:nth-child(3n+3)`：与 `div:nth-child(3n)` 相同
 
 如你从上面最后一个示例所见，如果常数 `b` 的值等于常数 `a` 的值，则结果表达式会“环绕”。因此，表达式 `nth-child(an)` 和 `nth-child(an+a)` 是等效的。所以，你可以专注于 0 到 `a-1` 之间的“偏移量”（如果这有帮助的话，此行为与模运算相同）。
 
@@ -1953,8 +2009,6 @@ CSS3 阴影效果对于使用简单选择器创建生动的视觉效果非常有
 ### CSS3 与文本阴影效果
 
 文本的阴影效果可以使网页看起来更生动、更有吸引力，许多网站在添加不过分的阴影效果（除非你特别需要）后看起来效果更好。
-
-
 
 ## 清单 2.1 TextShadow1.html
 
@@ -2195,8 +2249,6 @@ a.anchor {
 }
 ```
 
-
-
 ## CSS3 渐变
 
 CSS3 支持线性渐变和径向渐变，使您能够创建在视觉上与 SVG 等其他技术中渐变一样丰富的渐变效果。本节中的代码示例说明了如何在 CSS3 中定义线性渐变和径向渐变，然后将其应用到 HTML 元素。
@@ -2205,11 +2257,11 @@ CSS3 支持线性渐变和径向渐变，使您能够创建在视觉上与 SVG �
 
 CSS3 线性渐变要求您指定一个或多个“颜色停止点”，每个停止点指定了起始颜色、结束颜色和渲染模式。基于 WebKit 的浏览器支持以下语法来定义线性渐变：
 
--   一个起始点
--   一个结束点
--   使用 `from()` 指定的起始颜色
--   零个或多个中间颜色停止点
--   使用 `to()` 指定的结束颜色
+- 一个起始点
+- 一个结束点
+- 使用 `from()` 指定的起始颜色
+- 零个或多个中间颜色停止点
+- 使用 `to()` 指定的结束颜色
 
 起始点可以指定为一对 $(x, y)$ 数字或百分比。例如，$(100, 25\%)$ 这对值指定了一个点，该点位于原点右侧 100 像素，且从图案顶部向下 25% 的位置。请记住，原点位于屏幕的左上角。
 
@@ -2350,15 +2402,15 @@ text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
 
 ### 径向渐变
 
-CSS3 径向渐比 CSS3 线性渐变更复杂，但您可以使用它们来创建更复杂的渐变效果。基于 WebKit 的浏览器支持以下语法来定义径向渐变：
+CSS3 径向渐变比 CSS3 线性渐变更复杂，但您可以使用它们来创建更复杂的渐变效果。基于 WebKit 的浏览器支持以下语法来定义径向渐变：
 
--   一个起始点
--   一个起始半径
--   一个结束点
--   一个结束半径
--   使用 `from()` 指定的起始颜色
--   零个或多个中间颜色停止点
--   使用 `to()` 指定的结束颜色
+- 一个起始点
+- 一个起始半径
+- 一个结束点
+- 一个结束半径
+- 使用 `from()` 指定的起始颜色
+- 零个或多个中间颜色停止点
+- 使用 `to()` 指定的结束颜色
 
 请注意，径向渐变的语法与线性渐变的语法相似，只是您还需要指定一个起始半径和一个结束半径。
 
@@ -2395,13 +2447,6 @@ position: relative; top: 10px; left: 0px;
 }
 
 #radial1 {
-```
-
-
-
-76 • jQuery、CSS3和HTML5在移动与桌面设备上的应用
-
-```css
 font-size: 24px;
 width: 300px;
 height: 300px;
@@ -2461,6 +2506,12 @@ background: -webkit-gradient(
 
 清单 2.10 中 `#radial1` 选择器的第一部分包含了 `width` 和 `height` 属性，它们指定了渲染矩形的尺寸，以及一个与 `#outer` 选择器中类似的 `position` 属性。
 
+
+
+# CSS3 径向渐变与 2D 变换
+
+## 径向渐变详解
+
 `#radial1` 还包含一个 `background` 属性，该属性使用 `-webkit-` 前缀定义了径向渐变，如下所示：
 
 ```css
@@ -2471,12 +2522,12 @@ background: -webkit-gradient(
 
 前面的径向渐变指定了以下内容：
 
--   起点为 (100, 25%)
--   起始半径为 20
--   终点为 (100, 25%)
--   结束半径为 40
--   起始颜色为蓝色
--   结束颜色为白色 (#fff)
+- 起点为 (100, 25%)
+- 起始半径为 20
+- 终点为 (100, 25%)
+- 结束半径为 40
+- 起始颜色为蓝色
+- 结束颜色为白色 (#fff)
 
 请注意，起点和终点相同，这会渲染出一组从蓝色渐变到白色的同心圆。
 
@@ -2489,7 +2540,7 @@ color-stop(0.2, orange), color-stop(0.4, yellow),
 color-stop(0.6, green), color-stop(0.8, blue),
 ```
 
-你可以添加额外的 color-stop 属性来创建更复杂的径向渐变。
+你可以添加额外的 `color-stop` 属性来创建更复杂的径向渐变。
 
 图 2.5 展示了在运行 Android ICS 的华硕 Prime 平板电脑（横屏模式）上，将 CSS 样式表 `RadialGradient1.css` 中的选择器与 HTML 页面 `RadialGradient1.html` 匹配后的结果截图。
 
@@ -2501,15 +2552,15 @@ color-stop(0.6, green), color-stop(0.8, blue),
 
 现在你知道了如何手动创建渐变定义，可能也会很高兴地了解到，有各种在线工具可以为你创建渐变。以下网站提供的工具支持创建视觉上吸引人的 CSS3 渐变效果：
 
--   http://css3please.com
--   http://www.westciv.com/tools/gradients
--   http://gradients.glrzad.com
+- http://css3please.com
+- http://www.westciv.com/tools/gradients
+- http://gradients.glrzad.com
 
 由于这些工具提供不同的选项集，请尝试每个网站，评估哪个工具最适合你的特定需求。如果这些工具缺少你需要的功能，请通过互联网搜索来寻找更多创建基于 CSS3 效果的网站。
 
 ## CSS3 2D 变换
 
-除了过渡效果，CSS3 还支持四种可以应用于 2D 形状和 JPG 文件的变换。这四种 CSS3 变换分别是缩放 (scale)、旋转 (rotate)、倾斜 (skew) 和平移 (translate)。以下各节包含代码示例，说明如何将这些 CSS3 变换分别应用于一组 JPG 文件。当用户将鼠标悬停在任何 JPG 文件上时，会触发动画效果；此外，通过在相邻 JPG 文件之间快速移动鼠标，你可以创建“局部”动画效果。
+除了过渡效果，CSS3 还支持四种可以应用于 2D 形状和 JPG 文件的变换。这四种 CSS3 变换分别是缩放 (`scale`)、旋转 (`rotate`)、倾斜 (`skew`) 和平移 (`translate`)。以下各节包含代码示例，说明如何将这些 CSS3 变换分别应用于一组 JPG 文件。当用户将鼠标悬停在任何 JPG 文件上时，会触发动画效果；此外，通过在相邻 JPG 文件之间快速移动鼠标，你可以创建“局部”动画效果。
 
 ### 使用缩放变换实现放大/缩小效果
 
@@ -2523,7 +2574,7 @@ scale(someValue);
 
 清单 2.11 显示了 `Scale1.html` 的内容，清单 2.12 显示了 `Scale1.css` 的内容，它们说明了如何缩放 JPG 文件以创建“悬停框”图片库。
 
-**清单 2.11** Scale1.html
+**清单 2.11** `Scale1.html`
 
 ```html
 <!DOCTYPE html>
@@ -2549,37 +2600,29 @@ scale(someValue);
 </html>
 ```
 
-80 • jQuery、CSS3和HTML5在移动与桌面设备上的应用
+清单 2.11 引用了 CSS 样式表 `Scale1.css`（其中包含用于创建缩放效果的选择器）以及引用了 JPG 文件 `Laurie1.jpeg` 和 `Laurie2.jpeg` 的四个 HTML `<img>` 元素。清单 2.11 的其余部分很直接，包含简单的样板文本和 HTML 元素。
 
-清单 2.11 引用了 CSS 样式表 `Scale1.css`（其中包含用于创建缩放效果的选择器）以及引用了 JPG 文件 `Laurie1.jpeg` 和 `Laurie2.jpeg` 的四个 HTML `<img>` 元素。清单 2.12 的其余部分很直接，包含简单的样板文本和 HTML 元素。
-
-**清单 2.12** Scale1.css
+**清单 2.12** `Scale1.css`
 
 ```css
 #outer {
-float: left;
-position: relative; top: 50px; left: 50px;
+  float: left;
+  position: relative; top: 50px; left: 50px;
 }
-```
 
-```css
 img {
--webkit-transition: -webkit-transform 1.0s ease;
-transition: transform 1.0s ease;
+  -webkit-transition: -webkit-transform 1.0s ease;
+  transition: transform 1.0s ease;
 }
-```
 
-```css
 img.scaled {
--webkit-box-shadow: 10px 10px 5px #800;
-box-shadow: 10px 10px 5px #800;
+  -webkit-box-shadow: 10px 10px 5px #800;
+  box-shadow: 10px 10px 5px #800;
 }
-```
 
-```css
 img.scaled:hover {
--webkit-transform : scale(2);
-transform : scale(2);
+  -webkit-transform: scale(2);
+  transform: scale(2);
 }
 ```
 
@@ -2593,15 +2636,15 @@ transition: transform 1.0s ease;
 
 ```css
 img.scaled {
--webkit-box-shadow: 10px 10px 5px #800;
-box-shadow: 10px 10px 5px #800;
+  -webkit-box-shadow: 10px 10px 5px #800;
+  box-shadow: 10px 10px 5px #800;
 }
 ```
 
 最后，选择器 `img.scaled:hover` 指定了一个 `transform` 属性，该属性使用 `scale()` 函数，以便在用户将鼠标悬停在任何 `<img>` 元素上时，将相关 JPG 文件的大小加倍，如下所示：
 
 ```css
-transform : scale(2);
+transform: scale(2);
 ```
 
 由于 `img` 选择器指定了一个使用 `ease` 函数的一秒间隔，缩放效果将持续一秒。尝试为 CSS3 的 `scale()` 函数设置不同的值，以及为时间间隔设置不同的值，以创建适合你需求的动画效果。
@@ -2610,21 +2653,19 @@ transform : scale(2);
 
 ```css
 img {
--webkit-transition: -webkit-transform 1.0s ease;
-transition: transform 1.0s ease;
+  -webkit-transition: -webkit-transform 1.0s ease;
+  transition: transform 1.0s ease;
 }
 
 img.mystyle:hover {
--webkit-transform : scaleX(1.5) scaleY(0.5);
-transform : scaleX(1.5) scaleY(0.5);
+  -webkit-transform: scaleX(1.5) scaleY(0.5);
+  transform: scaleX(1.5) scaleY(0.5);
 }
 ```
 
 图 2.6 展示了在运行 Android ICS 的 Nexus S 4G 智能手机（横屏模式）上，将 CSS 样式表 `Scale1.css` 中的选择器与 HTML 页面 `Scale1.html` 匹配后的结果截图（基于清单 2.11 和清单 2.12 中的代码）。
 
 ![运行 Android ICS 的 Nexus S 4G 智能手机上的 CSS 缩放变换效果。](img/6f06c2ff7e29452e50d03258ed9c6b4f_106_0.png)
-
-
 
 ## 旋转变换
 
@@ -2638,8 +2679,9 @@ rotate(someValue);
 
 清单 2.13 展示了 `Rotate1.html` 的内容，清单 2.14 展示了 `Rotate1.css` 的内容，它们说明了如何反向旋转 JPG 文件。
 
+**清单 2.13** `Rotate1.html`
+
 ```html
-清单 2.13 Rotate1.html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -2663,8 +2705,9 @@ rotate(someValue);
 
 清单 2.13 引用了 CSS 样式表 `Rotate1.css`（其中包含创建旋转效果的选择器）以及一个引用了 JPG 文件 `Laurie1.jpeg` 和 `Laurie2.jpeg` 的 HTML `<img>` 元素。清单 2.13 的其余部分由简单的样板文本和 HTML 元素组成。
 
+**清单 2.14** `Rotate1.css`
+
 ```css
-清单 2.14 Rotate1.css
 #outer {
     float: left;
     position: relative;
@@ -2718,7 +2761,7 @@ CSS3 的 `transform` 属性允许你指定 `skew()` 函数来创建倾斜效果�
 
 清单 2.15 展示了 `Skew1.html` 的内容，清单 2.16 展示了 `Skew1.css` 的内容，它们说明了如何倾斜一个 JPG 文件。
 
-### 清单 2.15 Skew1.html
+### 清单 2.15 `Skew1.html`
 
 ```html
 <!DOCTYPE html>
@@ -2745,7 +2788,7 @@ CSS3 的 `transform` 属性允许你指定 `skew()` 函数来创建倾斜效果�
 
 清单 2.15 引用了 CSS 样式表 `Skew1.css`（其中包含创建倾斜效果的选择器）以及一个引用了 JPG 文件 `Laurie1.jpeg` 和 `Laurie2.jpeg` 的 `<img>` 元素。清单 2.15 的其余部分由简单的样板文本和 HTML 元素组成。
 
-### 清单 2.16 Skew1.css
+### 清单 2.16 `Skew1.css`
 
 ```css
 #outer {
@@ -2822,13 +2865,9 @@ CSS3 的 `transform` 属性允许你指定 `translate()` 函数来创建一个�
 
 清单 2.17 展示了 `Translate1.html` 的内容，清单 2.18 展示了 `Translate1.css` 的内容，它们说明了如何将平移效果应用于 JPG 文件。
 
+### 清单 2.17 `Translate1.html`
 
-
-## 88 • jQuery、CSS3与HTML5在移动和桌面设备上的应用
-
-清单 2.17 Translate1.html
-
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -2852,11 +2891,11 @@ CSS3 的 `transform` 属性允许你指定 `translate()` 函数来创建一个�
 </html>
 ```
 
-清单 2.17 引用了CSS样式表 `Translate1.css`（其中包含用于创建平移效果的选择器）以及一个引用了JPG文件 `Laurie1.jpeg` 和 `Laurie2.jpeg` 的 `<img>` 元素。清单 2.17 的其余部分由简单的样板文本和HTML元素组成。
+清单 2.17 引用了 CSS 样式表 `Translate1.css`（其中包含用于创建平移效果的选择器）以及一个引用了 JPG 文件 `Laurie1.jpeg` 和 `Laurie2.jpeg` 的 `<img>` 元素。清单 2.17 的其余部分由简单的样板文本和 HTML 元素组成。
 
-清单 2.18 Translate1.css
+### 清单 2.18 `Translate1.css`
 
-```
+```css
 #outer {
     float: left;
     position: relative; top: 100px; left: 100px;
@@ -2888,45 +2927,48 @@ img.trans4 {
 }
 
 img.trans1:hover {
-    -webkit-transform : scale(2) translate(100px, 50px);
-    transform : scale(2) translate(100px, 50px);
+    -webkit-transform: scale(2) translate(100px, 50px);
+    transform: scale(2) translate(100px, 50px);
 }
 
 img.trans2:hover {
-    -webkit-transform : scale(0.5) translate(-50px, -50px);
-    transform : scale(0.5) translate(-50px, -50px);
+    -webkit-transform: scale(0.5) translate(-50px, -50px);
+    transform: scale(0.5) translate(-50px, -50px);
 }
 
 img.trans3:hover {
-    -webkit-transform : scale(0.5,1.5) translate(0px, 0px);
-    transform : scale(0.5,1.5) translate(0px, 0px);
+    -webkit-transform: scale(0.5,1.5) translate(0px, 0px);
+    transform: scale(0.5,1.5) translate(0px, 0px);
 }
 
 img.trans4:hover {
-    -webkit-transform : scale(2) translate(50px, -50px);
-    transform : scale(2) translate(50px, -50px);
+    -webkit-transform: scale(2) translate(50px, -50px);
+    transform: scale(2) translate(50px, -50px);
 }
 ```
 
-清单 2.17 中包含 `img` 选择器，并使用 `ease` 时序函数指定了在1秒间隔内进行的变换效果，如下所示：
+清单 2.17 中包含 `img` 选择器，并使用 `ease` 时序函数指定了在 1 秒间隔内进行的变换效果，如下所示：
+
 `transition: transform 1.0s ease;`
+
 四个选择器 `img.trans1`、`img.trans2`、`img.trans3` 和 `img.trans4` 分别创建了具有红色、黄色、绿色和蓝色深浅阴影的背景效果，正如你在前面章节中所见。
+
 选择器 `img.trans1:hover` 指定了一个变换属性，当用户将鼠标悬停在第一个 `<img>` 元素上时，它会执行缩放效果和平移效果，如下所示：
 
+```css
+-webkit-transform: scale(2) translate(100px, 50px);
+transform: scale(2) translate(100px, 50px);
 ```
--webkit-transform : scale(2) translate(100px, 50px);
-transform : scale(2) translate(100px, 50px);
-```
 
-其他三个选择器包含类似的代码，涉及平移和缩放效果的组合，每种组合都创建了独特的视觉效果。图2.9展示了将CSS3样式表 `Translate1.css` 中定义的选择器与HTML页面 `Translate1.html` 中的元素进行匹配的结果。这张横向截图来自一个运行在Android ICS系统Nexus S 4G智能手机上的Android应用程序（基于清单2.17和2.18中的代码）。
+其他三个选择器包含类似的代码，涉及平移和缩放效果的组合，每种组合都创建了独特的视觉效果。图 2.9 展示了将 CSS3 样式表 `Translate1.css` 中定义的选择器与 HTML 页面 `Translate1.html` 中的元素进行匹配的结果。这张横向截图来自一个运行在 Android ICS 系统 Nexus S 4G 智能手机上的 Android 应用程序（基于清单 2.17 和 2.18 中的代码）。
 
-![具有CSS3缩放和平移效果的JPG文件。](img/6f06c2ff7e29452e50d03258ed9c6b4f_115_0.png)
+![具有 CSS3 缩放和平移效果的 JPG 文件。](img/6f06c2ff7e29452e50d03258ed9c6b4f_115_0.png)
 
-图2.9 具有CSS3缩放和平移效果的JPG文件。
+**图 2.9** 具有 CSS3 缩放和平移效果的 JPG 文件。
 
 ## CSS3 媒体查询
 
-本节包含一系列CSS3媒体查询，它们是非常有用的逻辑表达式，使你能够检测具有不同物理属性和方向的设备上的移动应用程序。例如，使用CSS3媒体查询，你可以更改应用程序的尺寸和布局，以便它们在智能手机和平板电脑上都能正确呈现。具体来说，你可以使用CSS3媒体查询来确定设备的以下特征：
+本节包含一系列 CSS3 媒体查询，它们是非常有用的逻辑表达式，使你能够检测具有不同物理属性和方向的设备上的移动应用程序。例如，使用 CSS3 媒体查询，你可以更改应用程序的尺寸和布局，以便它们在智能手机和平板电脑上都能正确呈现。具体来说，你可以使用 CSS3 媒体查询来确定设备的以下特征：
 
 - 浏览器窗口宽度和高度
 - 设备宽度和高度
@@ -2935,18 +2977,18 @@ transform : scale(2) translate(100px, 50px);
 - 设备宽高比
 - 分辨率
 
-CSS3媒体查询是布尔表达式，包含一个或多个“简单项”（通过 `and` 或 `or` 连接），这些项的值为 `true` 或 `false`。因此，CSS3媒体查询代表了条件逻辑，其求值结果为 `true` 或 `false`。
+CSS3 媒体查询是布尔表达式，包含一个或多个“简单项”（通过 `and` 或 `or` 连接），这些项的值为 `true` 或 `false`。因此，CSS3 媒体查询代表了条件逻辑，其求值结果为 `true` 或 `false`。
 
-例如，以下链接元素仅在设备是屏幕且设备的最大宽度为480px时加载CSS样式表 `mystuff.css`：
+例如，以下链接元素仅在设备是屏幕且设备的最大宽度为 480px 时加载 CSS 样式表 `mystuff.css`：
 
 ```html
 <link rel="stylesheet" type="text/css"
       media="screen and (max-device-width: 480px)" href="mystuff.css"/>
 ```
 
-上述链接包含一个媒体属性，该属性指定了两个组件：一个 `screen` 类型的 `media` 和一个指定 `max-device-width` 为 `480px` 的查询。CSS3媒体查询中 `media` 的支持值包括 `braille`、`embossed`、`handheld`、`print`、`projection`、`screen`、`speech`、`tty` 和 `tv`。
+上述链接包含一个媒体属性，该属性指定了两个组件：一个 `screen` 类型的 `media` 和一个指定 `max-device-width` 为 `480px` 的查询。CSS3 媒体查询中 `media` 的支持值包括 `braille`、`embossed`、`handheld`、`print`、`projection`、`screen`、`speech`、`tty` 和 `tv`。
 
-下一个CSS3媒体查询检查媒体类型、设备的最大宽度以及设备的分辨率：
+下一个 CSS3 媒体查询检查媒体类型、设备的最大宽度以及设备的分辨率：
 
 ```css
 @media screen and (max-device-width: 480px) and (resolution: 160dpi) {
@@ -2956,9 +2998,9 @@ CSS3媒体查询是布尔表达式，包含一个或多个“简单项”（通�
 }
 ```
 
-如果上述代码片段中的CSS3媒体查询结果为 `true`，那么嵌套的CSS选择器将匹配 `id` 属性值为 `innerDiv` 的HTML元素，并且在任何最大屏幕宽度为 `480px` 的设备上，其 `float` 属性将被设置为 `none`。如你所见，可以创建包含复杂逻辑的紧凑CSS3媒体查询，这显然非常有用，因为CSS3没有其他编程语言中可用的 `if/then/else` 结构。
+如果上述代码片段中的 CSS3 媒体查询结果为 `true`，那么嵌套的 CSS 选择器将匹配 `id` 属性值为 `innerDiv` 的 HTML 元素，并且在任何最大屏幕宽度为 `480px` 的设备上，其 `float` 属性将被设置为 `none`。如你所见，可以创建包含复杂逻辑的紧凑 CSS3 媒体查询，这显然非常有用，因为 CSS3 没有其他编程语言中可用的 `if/then/else` 结构。
 
-下一个CSS3媒体查询测试媒体类型、设备的最小宽度以及设备的分辨率：
+下一个 CSS3 媒体查询测试媒体类型、设备的最小宽度以及设备的分辨率：
 
 ```css
 @media screen and (min-device-width: 481px) and (resolution: 160dpi) {
@@ -2968,8 +3010,9 @@ CSS3媒体查询是布尔表达式，包含一个或多个“简单项”（通�
 }
 ```
 
-在上述CSS选择器中，在任何最小屏幕宽度为481px的设备上，`id` 属性值为 `innerDiv` 的HTML元素的 `float` 属性将为 `left`。
-下一个CSS3媒体查询在屏幕宽度介于321px和480px之间时，将div元素的宽度设置为100px：
+在上述 CSS 选择器中，在任何最小屏幕宽度为 481px 的设备上，`id` 属性值为 `innerDiv` 的 HTML 元素的 `float` 属性将为 `left`。
+
+下一个 CSS3 媒体查询在屏幕宽度介于 321px 和 480px 之间时，将 div 元素的宽度设置为 100px：
 
 ```css
 @media screen and (min-width: 321px) and (max-width: 480px) {
@@ -2977,14 +3020,15 @@ CSS3媒体查询是布尔表达式，包含一个或多个“简单项”（通�
 }
 ```
 
-在以下示例中，`myphone.css` 将应用于浏览器视为“手持设备”或屏幕宽度 <= 320px的设备。
+在以下示例中，`myphone.css` 将应用于浏览器视为“手持设备”或屏幕宽度 <= 320px 的设备。
 
 ```html
 <link rel="stylesheet" media="handheld, only screen and (max-device-width: 320px)" href="myphone.css">
 ```
 
-> 注意
-在媒体查询中使用 `only` 关键字会导致不兼容CSS3的浏览器忽略该规则。另一个例子，以下 `<link>` 加载了适用于屏幕尺寸在641px到800px之间的CSS样式表：
+> **注意**
+>
+> 在媒体查询中使用 `only` 关键字会导致不兼容 CSS3 的浏览器忽略该规则。另一个例子，以下 `<link>` 加载了适用于屏幕尺寸在 641px 到 800px 之间的 CSS 样式表：
 
 ```html
 <link rel="stylesheet" media="only screen and (min-width: 641px) and (max-width: 800px)" href="wide.css">
@@ -2996,33 +3040,33 @@ CSS3媒体查询是布尔表达式，包含一个或多个“简单项”（通�
 <style> @media only all and (orientation: portrait) { ... } </style>
 ```
 
-既然你已经对CSS3媒体查询的基本功能有了了解，你就可以理解下一节中的代码了，该节包含一个HTML5网页和一个CSS3样式表，它们展示了如何处理移动设备方向的改变。
+既然你已经对 CSS3 媒体查询的基本功能有了了解，你就可以理解下一节中的代码了，该节包含一个 HTML5 网页和一个 CSS3 样式表，它们展示了如何处理移动设备方向的改变。
 
-## 使用CSS3媒体查询检测方向
+## 使用 CSS3 媒体查询检测方向
 
-清单2.19和2.20展示了样式表 `CSS3MediaQuery1.css` 和HTML5网页 `CSS3MediaQuery1.html` 的内容，它们说明了当用户旋转移动设备时如何更改两个图像的大小。
+清单 2.19 和 2.20 展示了样式表 `CSS3MediaQuery1.css` 和 HTML5 网页 `CSS3MediaQuery1.html` 的内容，它们说明了当用户旋转移动设备时如何更改两个图像的大小。
 
-### 清单 2.19 CSS3MediaQuery1.css
+### 清单 2.19 `CSS3MediaQuery1.css`
 
 ```css
 @media all and (orientation: portrait) {
     #img1, #img2 {
         float: left;
-        width:120px;height:300px;
+        width: 120px; height: 300px;
     }
 }
 
 @media all and (orientation: landscape) {
     #img1, #img2 {
         float: left;
-        width:200px;height:200px;
+        width: 200px; height: 200px;
     }
 }
 ```
 
-清单2.19中的代码很直接：第一个选择器指定了当移动设备处于纵向模式时两个JPG文件的 `float`、`width` 和 `height` 属性的值；第二个选择器指定了当设备处于横向模式时这两个JPG文件的 `width` 和 `height` 属性的不同值。
+清单 2.19 中的代码很直接：第一个选择器指定了当移动设备处于纵向模式时两个 JPG 文件的 `float`、`width` 和 `height` 属性的值；第二个选择器指定了当设备处于横向模式时这两个 JPG 文件的 `width` 和 `height` 属性的不同值。
 
-### 清单 2.20 CSS3MediaQuery1.html
+### 清单 2.20 `CSS3MediaQuery1.html`
 
 ```html
 <!DOCTYPE html>
@@ -3050,13 +3094,11 @@ CSS3媒体查询是布尔表达式，包含一个或多个“简单项”（通�
 </html>
 ```
 
-清单2.20引用了清单2.19中的CSS样式表 `CSS3MediaQuery1.css`，以便将CSS选择器应用于 `<body>` 元素中的JPG文件。
-
-
+清单 2.20 引用了清单 2.19 中的 CSS 样式表 `CSS3MediaQuery1.css`，以便将 CSS 选择器应用于 `<body>` 元素中的 JPG 文件。
 
 接着，HTML `<body>` 元素包含两个 HTML `<div>` 元素，它们的 `id` 属性值分别为 `img1` 和 `img2`，这些值在对应的 CSS 选择器中被引用。
 
-图 2.10 展示了在配备 Android ICS 系统的 Sprint Nexus S 4G 智能手机上以横屏模式渲染 HTML 页面 CSS3MediaQuery.html 的结果。
+图 2.10 展示了在配备 Android ICS 系统的 Sprint Nexus S 4G 智能手机上以横屏模式渲染 HTML 页面 `CSS3MediaQuery.html` 的结果。
 
 ![](img/6f06c2ff7e29452e50d03258ed9c6b4f_119_0.png)
 
@@ -3064,10 +3106,11 @@ CSS3媒体查询是布尔表达式，包含一个或多个“简单项”（通�
 
 在本章前面，你了解了如何使用 CSS3 媒体查询来检测移动设备的方向变化。然而，请记住，同样可以通过简单的 JavaScript 代码来实现相同的功能，因此你并非“被迫”使用 CSS3 媒体查询。
 
-代码清单 2.21 展示了 Web 页面 CSS3OrientationJS1.html 的内容，该示例说明了如何使用标准 JavaScript 在用户旋转移动设备时改变两个图像的大小。
+代码清单 2.21 展示了 Web 页面 `CSS3OrientationJS1.html` 的内容，该示例说明了如何使用标准 JavaScript 在用户旋转移动设备时改变两个图像的大小。
 
-```
-代码清单 2.21 CSS3OrientationJS1.html
+**代码清单 2.21** `CSS3OrientationJS1.html`
+
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -3077,7 +3120,7 @@ CSS3媒体查询是布尔表达式，包含一个或多个“简单项”（通�
 <style>
   #img1, #img2 {
     float: left;
-    width:120px;height:300px;
+    width: 120px; height: 300px;
   }
 </style>
 
@@ -3134,7 +3177,7 @@ CSS3媒体查询是布尔表达式，包含一个或多个“简单项”（通�
 
 如你所见，与代码清单 2.20 相比，代码清单 2.21 中的代码要多得多。本质上，这段代码使用变量 `window.orientation` 的值来检测移动设备的四种不同方向，并在每种情况下，使用以下类型的代码更新 JPG 文件的尺寸：
 
-```
+```javascript
 document.getElementById("img1").style.width = "120px";
 document.getElementById("img1").style.height = "300px";
 ```
@@ -3147,9 +3190,9 @@ Web 字体在 CSS2 中引入，现在你可以将它们与 CSS3 选择器结合�
 
 代码清单 2.22 和代码清单 2.23 展示了 `WebFonts1.html` 和 `WebFonts1.css` 的内容，说明了如何在 HTML5 Web 页面中使用 CSS3 Web 字体。
 
-**代码清单 2.22** WebFonts1.html
+**代码清单 2.22** `WebFonts1.html`
 
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -3165,11 +3208,11 @@ Web 字体在 CSS2 中引入，现在你可以将它们与 CSS3 选择器结合�
 </html>
 ```
 
-代码清单 2.22 引用了 CSS 样式表 WebFonts1.css（如代码清单 2.23 所示），随后是一些按照 CSS 样式表中的 Web 字体进行样式化的 HTML 样板代码。
+代码清单 2.22 引用了 CSS 样式表 `WebFonts1.css`（如代码清单 2.23 所示），随后是一些按照 CSS 样式表中的 Web 字体进行样式化的 HTML 样板代码。
 
-**代码清单 2.23** WebFonts1.css
+**代码清单 2.23** `WebFonts1.css`
 
-```
+```css
 @font-face {
   font-family: "Kimberley";
   src: url(http://www.princexml.com/fonts/larabie/kimberle.ttf) format("truetype");
@@ -3198,6 +3241,7 @@ h2 { font-family: Goodfish, serif;
 http://www.css3.info/css3-resource-preview-custom-web-fonts-with-font-dragr/
 
 一个提供大量免费字体的绝佳资源在这里：
+
 http://www.fontsquirrel.com/
 
 Font Squirrel 提供了预包装的字体包，其中包含 TrueType 字体 (TTF)、EOT 字体、WOFF 字体、SVG 字体和 Cufon 字体。此外，你可以上传自己的字体，并使用 Font Squirrel 的字体生成器来生成你自己的字体包。
@@ -3205,14 +3249,16 @@ Font Squirrel 提供了预包装的字体包，其中包含 TrueType 字体 (TTF
 ## CSS3 与演示工具
 
 存在各种基于 CSS3 变换和过渡（以及一些 JavaScript）的开源演示工具，使你能够创建精美的演示文稿。
+
 其中一个工具是 Deck.js，它同时使用 CSS3 和 jQuery，其主页在这里：
+
 http://imakewebthings.github.com/deck.js/
 
 Deck.js 中的一个“幻灯片”由 HTML 组成，其结构如代码清单 2.24 所示。
 
 **代码清单 2.24** 示例幻灯片
 
-```
+```html
 <body class="deck-container on-slide-1">
     <section class="slide deck-previous">
         <h1>A Simple Presentation</h1>
@@ -3258,43 +3304,39 @@ Impress.js 使用 CSS3 3D 变换以 3D 方式呈现元素，并使用 CSS 过渡
 - 使用 `translate()`、`rotate()`、`skew()` 和 `scale()` 方法
 - 创建基于 CSS3 的动画效果
 
+# 第三章 CSS3 二维/三维动画与 CSS 框架
 
+本章继续讨论第二章引入的 CSS3，从一个将 CSS3 变换应用于基于 CSS3 的立方体的示例开始，接着是使用 CSS3 过渡创建简单动画效果（如发光效果和弹跳效果）的示例，以及创建三维效果的示例。本章的这一部分还包含代码示例，向你展示如何定义能对文本执行更复杂效果（如渲染多列文本）的 CSS3 选择器。
 
-## 第三章
+本章的第二部分向你展示如何定义 CSS3 选择器以创建三维效果和三维动画效果。具体来说，你将学习如何使用 CSS3 `keyframes` 以及 CSS3 函数 `scale3d()`、`rotate3d()` 和 `translate3d()`，这些功能使你能够创建三维动画效果。
 
-## CSS3 二维/三维动画与CSS框架
+本章的最后部分向你介绍了基于 CSS 的框架（如 Sass、Compass 和 CSS Scaffold），这些框架可以帮助你更快地开发代码，并简化代码维护的任务。虽然你可以手动创建 CSS 样式表，但请记住，CSS 框架提供了纯 CSS3 中不具备的强大功能。
 
-本章继续讨论第二章引入的CSS3，从一个将CSS3变换应用于基于CSS3的立方体的示例开始，接着是使用CSS3过渡创建简单动画效果（如发光效果和弹跳效果）的示例，以及创建三维效果的示例。本章的这一部分还包含代码示例，向你展示如何定义能对文本执行更复杂效果（如渲染多列文本）的CSS3选择器。
+尽管本书三个专注于 CSS3 的章节中的 HTML 页面在没有 JavaScript 的情况下使用了 CSS3，但请记住，你也可以将 CSS3 与 JavaScript 结合起来，以创建比单独使用 CSS3 更容易实现的视觉效果。事实上，第六章包含了一个将 jQuery 与 CSS3 结合以创建丰富图形效果的示例。
 
-本章的第二部分向你展示如何定义CSS3选择器以创建三维效果和三维动画效果。具体来说，你将学习如何使用CSS3 `keyframes` 以及CSS3函数 `scale3d()`、`rotate3d()` 和 `translate3d()`，这些功能使你能够创建三维动画效果。
+回想一下，你可以使用 CSS3 `媒体查询`（在第二章中讨论）在不同的移动设备上以不同的方式呈现 HTML5 网页。本章还包括一个使用 JavaScript 检测移动设备方向变化的示例。因此，你可以在你的 HTML5 网页中结合使用 JavaScript、CSS3 和其他技术，而具体选择取决于你的软硬件约束（例如，不支持 JavaScript，或支持智能手机和平板电脑）以及你的 HTML5 网页所需的功能。
 
-本章的最后部分向你介绍了基于CSS的框架（如Sass、Compass和CSS Scaffold），这些框架可以帮助你更快地开发代码，并简化代码维护的任务。虽然你可以手动创建CSS样式表，但请记住，CSS框架提供了纯CSS3中不具备的强大功能。
+在你的 HTML5 网页中使用 CSS3 有几个优点。首先，你将学习如何使用 CSS3 三维创建你自己的视觉效果。其次，像 jQuery Mobile 这样的工具包严重依赖 CSS3 来呈现内容和创建动画效果（包括页面过渡）。因此，你从本书中与 CSS3 相关的章节获得的知识将为你提供一个基础，帮助你理解 jQuery Mobile 如何实现其“魔法”，甚至可能使你更容易阅读 jQuery Mobile 的源代码。
 
-尽管本书三个专注于CSS3的章节中的HTML页面在没有JavaScript的情况下使用了CSS3，但请记住，你也可以将CSS3与JavaScript结合起来，以创建比单独使用CSS3更容易实现的视觉效果。事实上，第六章包含了一个将jQuery与CSS3结合以创建丰富图形效果的示例。
+第三，创建基于 CSS3 的非常令人印象深刻的图形和动画效果（尤其是三维效果）比用其他语言（包括 SVG）创建相同效果更容易。第四，如果你使用 CSS3 而不是依赖 JavaScript 和 JPG 文件来处理图形和动画，你的代码更有可能更紧凑，这对于移动设备来说是一个特别重要的点。请注意，许多 CSS3 三维效果需要硬件加速，好消息是越来越多的移动设备支持 CSS3 的硬件加速（HTML5 Canvas 也支持硬件加速）。
 
-回想一下，你可以使用CSS3 `媒体查询`（在第二章中讨论）在不同的移动设备上以不同的方式呈现HTML5网页。本章还包括一个使用JavaScript检测移动设备方向变化的示例。因此，你可以在你的HTML5网页中结合使用JavaScript、CSS3和其他技术，而具体选择取决于你的软硬件约束（例如，不支持JavaScript，或支持智能手机和平板电脑）以及你的HTML5网页所需的功能。
+请记住，第二章中的截图是在华硕 Prime Android ICS 10 英寸平板电脑、搭载 Android ICS 的 Sprint Nexus S 4G 手机以及 iPad 3 上截取的；本章中的截图也是如此。你可以再次将本章中的截图与代码示例在基于 WebKit 的笔记本电脑和台式机浏览器上渲染的结果进行比较。
 
-在你的HTML5网页中使用CSS3有几个优点。首先，你将学习如何使用CSS3三维创建你自己的视觉效果。其次，像jQuery Mobile这样的工具包严重依赖CSS3来呈现内容和创建动画效果（包括页面过渡）。因此，你从本书中与CSS3相关的章节获得的知识将为你提供一个基础，帮助你理解jQuery Mobile如何实现其“魔法”，甚至可能使你更容易阅读jQuery Mobile的源代码。
+## 基于 CSS3 的立方体
 
-第三，创建基于CSS3的非常令人印象深刻的图形和动画效果（尤其是三维效果）比用其他语言（包括SVG）创建相同效果更容易。第四，如果你使用CSS3而不是依赖JavaScript和JPG文件来处理图形和动画，你的代码更有可能更紧凑，这对于移动设备来说是一个特别重要的点。请注意，许多CSS3三维效果需要硬件加速，好消息是越来越多的移动设备支持CSS3的硬件加速（HTML5 Canvas也支持硬件加速）。
+本节向你展示如何使用 CSS3 创建一个立方体，这涉及渲染前面（一个矩形）、顶面（一个平行四边形）和右面（也是一个平行四边形）。
 
-请记住，第二章中的截图是在华硕Prime Android ICS 10英寸平板电脑、搭载Android ICS的Sprint Nexus S 4G手机以及iPad 3上截取的；本章中的截图也是如此。你可以再次将本章中的截图与代码示例在基于WebKit的笔记本电脑和台式机浏览器上渲染的结果进行比较。
+本节将使用以下 CSS3 变换和效果：
 
-## 基于CSS3的立方体
+1. CSS3 `skew()` 函数来创建左右面。
+2. CSS3 `scale()` 和 `rotate()` 函数来创建顶面。
+3. 线性渐变和径向渐变用于着色效果。
 
-本节向你展示如何使用CSS3创建一个立方体，这涉及渲染前面（一个矩形）、顶面（一个平行四边形）和右面（也是一个平行四边形）。
+本节的示例包含大量 CSS3 代码，在学习代码时，你最好在浏览器中启动网页。
 
-本节将使用以下CSS3变换和效果：
+清单 3.1 显示了 `3DCube1.html` 的内容，清单 3.2 显示了 `3DCube1.css` 的内容，它们说明了如何在 CSS3 中模拟一个立方体。
 
-1.  CSS3 `skew()` 函数来创建左右面。
-2.  CSS3 `scale()` 和 `rotate()` 函数来创建顶面。
-3.  线性渐变和径向渐变用于着色效果。
-
-本节的示例包含大量CSS3代码，在学习代码时，你最好在浏览器中启动网页。
-
-清单3.1显示了3DCube1.html的内容，清单3.2显示了3DCube1.css的内容，它们说明了如何在CSS3中模拟一个立方体。
-
-**清单 3.1 3DCube1.html**
+**清单 3.1** `3DCube1.html`
 
 ```html
 <!DOCTYPE html>
@@ -3317,9 +3359,9 @@ Impress.js 使用 CSS3 3D 变换以 3D 方式呈现元素，并使用 CSS 过渡
 </html>
 ```
 
-清单3.1是一个简单的HTML页面，引用了CSS样式表3DCSS1.css，该样式表包含了为本网页中的HTML `<div>` 元素设置样式的CSS3选择器。
+清单 3.1 是一个简单的 HTML 页面，引用了 CSS 样式表 `3DCSS1.css`，该样式表包含了为本网页中的 HTML `<div>` 元素设置样式的 CSS3 选择器。
 
-**清单 3.2 3DCube1.css**
+**清单 3.2** `3DCube1.css`
 
 ```css
 /* animation effects */
@@ -3346,7 +3388,7 @@ Impress.js 使用 CSS3 3D 变换以 3D 方式呈现元素，并使用 CSS 过渡
 
 /* size and position */
 #right, #left, #top {
-    position:relative; padding: 0px; width: 200px; height: 200px;
+    position: relative; padding: 0px; width: 200px; height: 200px;
 }
 
 #left {
@@ -3403,18 +3445,28 @@ Impress.js 使用 CSS3 3D 变换以 3D 方式呈现元素，并使用 CSS 过渡
             blue 12px);
     background-size: 100px 30px, 30px 100px;
     background-position: 0 0;
-    -webkit-transform: rotate(60deg) skew(0deg, -30deg); scale(1, 1.16);
+    -webkit-transform: rotate(60deg) skew(0deg, -30deg) scale(1, 1.16);
 }
 ```
 
-清单3.2中的前三个选择器定义了当用户悬停在立方体的顶面、左面或右面上时的动画效果。具体来说，#right:hover 选择器在用户悬停在立方体右面上时，执行一个三秒钟间隔的动画效果，如下所示：
+清单 3.2 中的前三个选择器定义了当用户悬停在立方体的顶面、左面或右面上时的动画效果。具体来说，`#right:hover` 选择器在用户悬停在立方体右面上时，执行一个三秒钟间隔的动画效果，如下所示：
 
 ```css
 #right:hover {
   -webkit-transition: -webkit-transform 3.0s ease;
 ```
 
+`transition` 属性你已经熟悉了，请注意 `transform` 属性指定了 CSS3 变换函数 `scale()`、`skew()` 和 `rotate()`，这三个函数你都已经在本章中见过。这三个函数同时被调用，这意味着你将看到缩放、倾斜和旋转效果同时发生，而不是依次发生。
 
+代码清单 3.2 中的最后三个选择器定义了立方体每个面的属性。例如，`#left` 选择器指定了某些文本的字体大小，以及立方体左面的位置属性。`#left` 选择器中最复杂的部分是 `background-image` 属性的值，它由 WebKit 特有的径向渐变、重复径向渐变和另一个径向渐变组合而成。注意，左面是一个矩形，使用这行代码将其变换为平行四边形：`-webkit-transform: skew(0deg, -30deg);`
+
+`#top` 选择器和 `#right` 选择器包含与 `#left` 选择器相当的代码，你可以尝试调整它们的值以创建其他令人愉悦的视觉效果。
+
+图 3.1 展示了在一款运行 Android ICS 的华硕 Prime 10 英寸平板电脑上，将 `3DCube1.css` 中的 CSS 选择器与 HTML 页面 `3DCube1.html` 中的 `<div>` 元素匹配后的结果（横向截图）。
+
+![图 3.1：基于 CSS3 的立方体在华硕 Prime Android ICS 10 英寸平板电脑上。](img/6f06c2ff7e29452e50d03258ed9c6b4f_131_0.png)
+
+**图 3.1** 基于 CSS3 的立方体在华硕 Prime Android ICS 10 英寸平板电脑上。
 
 ## CSS3 过渡
 
@@ -3424,9 +3476,9 @@ CSS3 过渡最初由 WebKit 开发，它们也可在 Safari、Chrome（3.2 或�
 
 创建 CSS 过渡的基本语法是一个“三元组”，它指定了：
 
--   一个 CSS 属性
--   一个持续时间（以秒为单位）
--   一个过渡时间函数
+- 一个 CSS 属性
+- 一个持续时间（以秒为单位）
+- 一个过渡时间函数
 
 这是一个基于 WebKit 的过渡示例：
 
@@ -3456,18 +3508,6 @@ a.foo:focus, a.foo:hover {
 }
 ```
 
-`transition` 属性你已经熟悉了，请注意 `transform` 属性指定了 CSS3 变换函数 `scale()`、`skew()` 和 `rotate()`，这三个函数你都已经在本章中见过。这三个函数同时被调用，这意味着你将看到缩放、倾斜和旋转效果同时发生，而不是依次发生。
-
-代码清单 3.2 中的最后三个选择器定义了立方体每个面的属性。例如，`#left` 选择器指定了某些文本的字体大小，以及立方体左面的位置属性。`#left` 选择器中最复杂的部分是 `background-image` 属性的值，它由 WebKit 特有的径向渐变、重复径向渐变和另一个径向渐变组合而成。注意，左面是一个矩形，使用这行代码将其变换为平行四边形：`-webkit-transform: skew(0deg, -30deg);`
-
-`#top` 选择器和 `#right` 选择器包含与 `#left` 选择器相当的代码，你可以尝试调整它们的值以创建其他令人愉悦的视觉效果。
-
-图 3.1 展示了在一款运行 Android ICS 的华硕 Prime 10 英寸平板电脑上，将 `3DCube1.css` 中的 CSS 选择器与 HTML 页面 `3DCube1.html` 中的 `<div>` 元素匹配后的结果（横向截图）。
-
-![图 3.1：基于 CSS3 的立方体在华硕 Prime Android ICS 10 英寸平板电脑上。](img/6f06c2ff7e29452e50d03258ed9c6b4f_131_0.png)
-
-**图 3.1** 基于 CSS3 的立方体在华硕 Prime Android ICS 10 英寸平板电脑上。
-
 过渡目前需要浏览器特定前缀才能在所有浏览器中正常工作。这是一个为 Internet Explorer、Firefox 和 Opera 指定浏览器特定前缀的示例：
 
 ```css
@@ -3478,11 +3518,11 @@ a.foo:focus, a.foo:hover {
 
 目前，你可以指定以下过渡时间函数之一（使用浏览器特定前缀）：
 
--   Ease
--   Ease-in
--   Ease-out
--   Ease-in-out
--   Cubic-bezier
+- Ease
+- Ease-in
+- Ease-out
+- Ease-in-out
+- Cubic-bezier
 
 如果这些过渡函数都不足以满足你的需求，你可以使用这个在线工具创建自定义函数：
 
@@ -3530,7 +3570,7 @@ CSS3 `@keyframes` 规则包含一组选择器，这些选择器通过一个表�
 
 代码清单 3.3 显示了 `Transition1.html` 的内容，代码清单 3.4 显示了 `Transition1.css` 的内容，其中包含在输入字段上创建“发光”效果的 CSS3 选择器。
 
-### 代码清单 3.3 Transition1.html
+### 代码清单 3.3 `Transition1.html`
 
 ```html
 <!DOCTYPE html>
@@ -3550,7 +3590,7 @@ CSS3 `@keyframes` 规则包含一组选择器，这些选择器通过一个表�
 
 代码清单 3.3 是一个简单的 HTML 页面，包含对 CSS 样式表 `Transition1.css` 的引用，以及一个包含 `<input>` 字段元素的 HTML `<div>` 元素。正如你将看到的，当用户将鼠标悬停在 `<input>` 元素上时，会创建一个动画效果。
 
-### 代码清单 3.4 Transition1.css
+### 代码清单 3.4 `Transition1.css`
 
 ```css
 #outer {
@@ -3598,18 +3638,11 @@ CSS3 `@keyframes` 规则包含一组选择器，这些选择器通过一个表�
 
 前面的示例向你展示了如何创建发光动画效果。本节向你展示如何使用 JPG 图像创建淡入淡出效果。代码清单 3.5 显示了 `FadingImages1.html` 的内容，代码清单 3.6 显示了 `FadeRotateImages1.css` 的内容，它们说明了如何在一个 JPG 文件上创建“淡入淡出”效果，在另一个 JPG 文件上创建发光效果。
 
-### 代码清单 3.5 FadeRotateImages1.html
+### 代码清单 3.5 `FadingImages1.html`
 
 ```html
 <!DOCTYPE html>
 <html lang="en">
-```
-
-
-
-## 面向移动和桌面设备的 jQuery、CSS3 与 HTML5
-
-```html
 <head>
     <meta charset="utf-8"/>
     <title>CSS3 图片淡入淡出与旋转效果</title>
@@ -3626,6 +3659,7 @@ CSS3 `@keyframes` 规则包含一组选择器，这些选择器通过一个表�
         <img width="200" height="200" src="Laurie1.jpg"/>
     </div>
 </body>
+</html>
 ```
 
 代码清单 3.5 引用了一个名为 `FadingImages1.css` 的 CSS 样式表，其中包含用于创建淡入淡出和发光效果的 CSS 选择器。代码清单 3.5 中的第一个 HTML `<div>` 元素包含两个 `<img>` 元素；当用户将鼠标悬停在渲染后的 JPG 文件上时，它会“淡出”，并显露出另一个 JPG 文件。第二个 HTML `<div>` 元素包含一个 `<img>` 元素，当用户将鼠标悬停在此 JPG 上时，一个 CSS3 选择器将使引用的 JPG 文件绕垂直轴旋转。
@@ -3639,13 +3673,13 @@ CSS3 `@keyframes` 规则包含一组选择器，这些选择器通过一个表�
 }
 
 #outer img {
-    position:absolute; left:0;
+    position: absolute; left: 0;
     -webkit-transition: opacity 1s ease-in-out;
     transition: opacity 1s ease-in-out;
 }
 
 #outer img.upper:hover {
-    opacity:0;
+    opacity: 0;
 }
 
 #third img {
@@ -3682,8 +3716,6 @@ CSS3 `@keyframes` 规则包含一组选择器，这些选择器通过一个表�
 接下来，代码清单 3.6 定义了一个 CSS3 选择器，该选择器通过调用标记为 `rotatey` 的关键帧中的 CSS3 函数 `rotateY()` 来创建绕垂直轴的旋转效果。请注意，你可以通过将 `rotateY()` 替换为 CSS3 函数 `rotateX()` 或 CSS3 函数 `rotateZ()` 来创建绕其他两个轴的旋转效果。你甚至可以在同一个关键帧中同时使用这三个函数来创建 3D 效果。CSS3 3D 效果将在本章后面更详细地讨论。
 
 图 3.3 显示了在 Sprint Nexus S 4G (运行 Android ICS) 上启动 `FadeRotateImages1.html` 后，点击左侧图像（该图像最初与右侧图像相同，使用了淡入淡出效果渲染）的结果。请注意，在桌面浏览器中，用户可以将鼠标悬停在任一图像上，而悬停在右侧图像上会产生旋转效果。
-
-## 114 • 面向移动和桌面设备的 jQuery、CSS3 与 HTML5
 
 ![](img/6f06c2ff7e29452e50d03258ed9c6b4f_139_0.png)
 
@@ -3759,20 +3791,24 @@ CSS3 `@keyframes` 规则包含一组选择器，这些选择器通过一个表�
 
 代码清单 3.8 包含一个标记为 `bounce` 的 `@keyframes` 规则，该规则指定了五个时间间隔：动画效果持续时间的 `0%`、`25%`、`50%`、`75%` 和 `100%` 点。每个时间间隔都指定了 `<input>` 字段的 `left`、`top` 和 `background-color` 属性的值。尽管这个 `@keyframes` 规则很简单，但它创建了一个令人愉悦的动画效果。
 
-`#input` 选择器匹配 `Bounce2.html` 中的输入字段，结果形成一个圆角矩形。选择器 `#input:hover` 使用 `bounce` 关键帧，以 `ease` 函数为动画效果创建一个持续两秒、重复四次的动画，如下所示：
+`#input` 选择器匹配 `Bounce2.html` 中的输入字段，结果形成一个圆角矩形。选择器 `#outer:hover` 使用 `bounce` 关键帧，以 `ease` 函数为动画效果创建一个持续两秒、重复四次的动画，如下所示：
+
+
+
 `-webkit-animation: bounce 2.0s 4 ease;`
 
 图 3.4 显示了在 Sprint Nexus S 4G (运行 Android ICS) 的 HTML 网页 `Bounce2.html` 中动画效果的快照。
 
 ![](img/6f06c2ff7e29452e50d03258ed9c6b4f_141_0.png)
 
-## CSS3 文本效果
+# CSS3 文本效果
 
 你在前面章节的几个代码示例中（特别是在 `TextShadow1.html` 中）已经看到了将文本字符串作为一部分进行渲染的例子。在本节中，我们将讨论 CSS3 一个非常好的新特性，它使你能够以多列形式渲染文本。
 
-### 渲染多列文本
+## 渲染多列文本
 
 CSS3 支持多列文本，当网页包含大量文本时，这可以创造出非常好的视觉效果。
+
 代码清单 3.9 展示了 `MultiColumns1.html` 的内容，代码清单 3.10 展示了 `MultiColumns1.css` 的内容，它们说明了如何渲染多列文本。
 
 **代码清单 3.9** `MultiColumns1.html`
@@ -3806,11 +3842,7 @@ CSS3 支持多列文本，当网页包含大量文本时，这可以创造出非
 
 代码清单 3.9 中的 **HTML5** 页面包含语义标签（在第 1 章讨论过），这些标签在几个 HTML `<p>` 元素中渲染文本。如你所见，这个 **HTML5** 页面很简单，多列效果是在代码清单 3.10 中显示的 CSS 样式表 `MultiColumns1.css` 中定义的。
 
-## CSS3 2D/3D 动画与 CSS 框架 • **117**
-
-
-
-## 代码清单 3.10 MultiColumn1.css
+**代码清单 3.10** `MultiColumns1.css`
 
 ```css
 /* 动画效果 */
@@ -3869,11 +3901,11 @@ CSS3 支持多列文本，当网页包含大量文本时，这可以创造出非
 
 ![CSS3 3D 效果](img/6f06c2ff7e29452e50d03258ed9c6b4f_144_0.png)
 
-### CSS3 中的 3D 效果
+# CSS3 中的 3D 效果
 
-CSS3 提供了创建 3D 效果的支持，但目前这些 3D 效果仅在运行于 Windows Vista 和 MacBook 上的基于 WebKit 的浏览器（Chrome 和 Safari）中得到支持。其他浏览器（如 Opera）的支持可能很快也会推出。代码清单 3.11 展示了 Threed2.html 的内容，它使用 CSS3 选择器创建 3D 效果。
+CSS3 提供了创建 3D 效果的支持，但目前这些 3D 效果仅在运行于 Windows Vista 和 MacBook 上的基于 WebKit 的浏览器（Chrome 和 Safari）中得到支持。其他浏览器（如 Opera）的支持可能很快也会推出。代码清单 3.11 展示了 `Threed2.html` 的内容，它使用 CSS3 选择器创建 3D 效果。
 
-## 代码清单 3.11 Threed2.html
+**代码清单 3.11** `Threed2.html`
 
 ```html
 <!DOCTYPE html>
@@ -3894,9 +3926,9 @@ CSS3 提供了创建 3D 效果的支持，但目前这些 3D 效果仅在运行�
 </html>
 ```
 
-代码清单 3.11 是一个简单的网页，在 HTML `<head>` 元素中引用了 CSS 样式表 Threed2.css。其顶级 `<div>` 元素的 `id` 属性为 `outer`，包含两个更多的 HTML `<div>` 元素，它们使用径向渐变进行渲染。代码清单 3.12 中的 CSS 选择器会导致它们在代码清单 3.11 的 HTML 元素中匹配的元素上产生动画效果。
+代码清单 3.11 是一个简单的网页，在 HTML `<head>` 元素中引用了 CSS 样式表 `Threed2.css`。其顶级 `<div>` 元素的 `id` 属性为 `outer`，包含两个更多的 HTML `<div>` 元素，它们使用径向渐变进行渲染。代码清单 3.12 中的 CSS 选择器会导致它们在代码清单 3.11 的 HTML 元素中匹配的元素上产生动画效果。
 
-## 代码清单 3.12 Threed2.css
+**代码清单 3.12** `Threed2.css`
 
 ```css
 #outer {
@@ -3954,7 +3986,7 @@ CSS3 提供了创建 3D 效果的支持，但目前这些 3D 效果仅在运行�
 
 这个简单的示例说明了如何使用可用的三个 3D 变换函数，你可以通过实验此代码来创建一些你自己的有趣视觉效果。
 
-图 3.6 展示了在 HTML 页面 ThreeD2.html 中，ThreeD2.css 样式表中的选择器与元素匹配的结果。
+图 3.6 展示了在 HTML 页面 `ThreeD2.html` 中，`ThreeD2.css` 样式表中的选择器与元素匹配的结果。
 
 **将鼠标悬停在矩形上：**
 
@@ -3962,11 +3994,11 @@ CSS3 提供了创建 3D 效果的支持，但目前这些 3D 效果仅在运行�
 
 *图 3.6 CSS3 3D 效果。*
 
-### CSS3 3D 动画效果
+# CSS3 3D 动画效果
 
 正如你现在所知，CSS3 提供了 `keyframes`，使你能够在动画序列的不同时间点创建不同的动画效果。本节中的示例使用 CSS3 `keyframes` 和 CSS3 函数 `scale3d()`、`rotate3d()` 和 `translate3d()` 的各种组合，以创建一个持续四分钟的动画效果。
 
-## 代码清单 3.13 Anim240Flicker3DLGrad4.html
+**代码清单 3.13** `Anim240Flicker3DLGrad4.html`
 
 ```html
 <!DOCTYPE html>
@@ -3996,7 +4028,7 @@ CSS3 提供了创建 3D 效果的支持，但目前这些 3D 效果仅在运行�
 
 由于 `Anim240Flicker3DLGrad4.css` 是一个如此长的代码示例，在代码清单 3.14 中只显示了部分代码。不过，完整的代码可在本书附带的 DVD 中找到。
 
-## 代码清单 3.14 Anim240Flicker3DLGrad4.css
+**代码清单 3.14** `Anim240Flicker3DLGrad4.css`
 
 ```css
 @-webkit-keyframes upperLeft {
@@ -4005,49 +4037,42 @@ CSS3 提供了创建 3D 效果的支持，但目前这些 3D 效果仅在运行�
       matrix(1.0, 0.0, 1.0, 1.0, 0, 0);
   }
   10% {
-```
-
-
-
-## 124 • jQuery、CSS3和HTML5在移动与桌面设备中的应用
-
-```
--webkit-transform: translate3d(50px,50px,50px)
+    -webkit-transform: translate3d(50px,50px,50px)
                    rotate3d(50,50,50,-90deg)
                    skew(-15deg,0) scale3d(1.25, 1.25, 1.25);
-}
-// 类似的代码已省略
-90% {
-  -webkit-transform: matrix(2.0, 0.5,  1.0, 2.0, 0, 0)
+  }
+  // 类似的代码已省略
+  90% {
+    -webkit-transform: matrix(2.0, 0.5,  1.0, 2.0, 0, 0)
                      matrix(1.5, 0.0,  0.5, 2.5, 0, 0);
-}
-95% {
-  -webkit-transform: translate3d(-50px,-50px,-50px)
+  }
+  95% {
+    -webkit-transform: translate3d(-50px,-50px,-50px)
                      rotate3d(-50,-50,-50, 120deg)
                      skew(135deg,0) scale3d(0.3, 0.4, 0.5);
-}
-96% {
-  -webkit-transform: matrix(0.2, 0.3, -0.5, 0.5, 100, 200)
+  }
+  96% {
+    -webkit-transform: matrix(0.2, 0.3, -0.5, 0.5, 100, 200)
                      matrix(0.4, 0.5,  0.5, 0.2, 200, 50);
-}
-97% {
-  -webkit-transform: translate3d(50px,-50px,50px)
+  }
+  97% {
+    -webkit-transform: translate3d(50px,-50px,50px)
                      rotate3d(-50,50,-50, 120deg)
                      skew(315deg,0) scale3d(0.5, 0.4, 0.3);
-}
-98% {
-  -webkit-transform: matrix(0.4, 0.5,  0.5, 0.3, 200, 50)
+  }
+  98% {
+    -webkit-transform: matrix(0.4, 0.5,  0.5, 0.3, 200, 50)
                      matrix(0.3, 0.5, -0.5, 0.4, 50, 150);
-}
-99% {
-  -webkit-transform: translate3d(150px,50px,50px)
+  }
+  99% {
+    -webkit-transform: translate3d(150px,50px,50px)
                      rotate3d(60,80,100, 240deg)
                      skew(315deg,0) scale3d(1.0, 0.7, 0.3);
-}
-100% {
-  -webkit-transform: matrix(1.0, 0.0,  0.0, 1.0, 0, 0)
+  }
+  100% {
+    -webkit-transform: matrix(1.0, 0.0,  0.0, 1.0, 0, 0)
                      matrix(1.0, 0.5,  1.0, 1.5, 0, 0);
-}
+  }
 }
 // 为简洁起见，代码已省略
 #linear1 {
@@ -4075,17 +4100,17 @@ border-radius: 4px;
 }
 ```
 
-清单3.14包含一个名为 `upperLeft` 的WebKit特定关键帧定义，它以以下行开始：
+清单 3.14 包含一个名为 `upperLeft` 的 WebKit 特定关键帧定义，它以以下行开始：
 
-```
+```css
 @-webkit-keyframes upperLeft {
     // 基于百分比的定义放在这里
 }
 ```
 
-`#linear` 选择器包含你已经见过的属性，以及一个引用了由 `lowerLeft` 标识的关键帧的属性，和一个指定持续时间为240秒的属性，如下所示：
+`#linear` 选择器包含你已经见过的属性，以及一个引用了由 `lowerLeft` 标识的关键帧的属性，和一个指定持续时间为 240 秒的属性，如下所示：
 
-```
+```css
 #linear1 {
     // 为简洁起见，代码已省略
     -webkit-animation-name: lowerLeft;
@@ -4093,11 +4118,11 @@ border-radius: 4px;
 }
 ```
 
-现在你已经知道如何在CSS3选择器中引用关键帧定义，让我们看看 `lowerLeft` 定义的细节，它包含19个指定各种动画效果的元素。`lowerLeft` 的每个元素都发生在动画的特定阶段。例如，`lowerLeft` 中的第八个元素指定值为50%，这意味着它将发生在动画效果的中点。由于 `#linear` 选择器包含一个值为240秒的 `-webkit-animation-duration` 属性（在清单3.14中以粗体显示），这意味着动画将持续四分钟，从HTML5页面启动的时间点开始。
+现在你已经知道如何在 CSS3 选择器中引用关键帧定义，让我们看看 `lowerLeft` 定义的细节，它包含 19 个指定各种动画效果的元素。`lowerLeft` 的每个元素都发生在动画的特定阶段。例如，`lowerLeft` 中的第八个元素指定值为 50%，这意味着它将发生在动画效果的中点。由于 `#linear` 选择器包含一个值为 240 秒的 `-webkit-animation-duration` 属性（在清单 3.14 中以粗体显示），这意味着动画将持续四分钟，从 HTML5 页面启动的时间点开始。
 
 `lowerLeft` 的第八个元素指定了平移、旋转、扭曲和缩放效果（所有这些都是三维的），其示例如下所示：
 
-```
+```css
 50% {
     -webkit-transform: translate3d(250px,250px,250px)
                              rotate3d(250px,250px,250px,-120deg)
@@ -4107,41 +4132,39 @@ border-radius: 4px;
 
 动画效果以顺序方式发生，从平移开始，以缩放效果结束，`lowerLeft` 中的其他元素也是如此。
 
-图3.7展示了在iPad 3上运行的iOS应用程序中，以横向模式截取的CSS3样式表 `Anim240Flicker3DLGrad4.css` 中定义的CSS3选择器与HTML页面 `Anim240Flicker3DLGrad4.html` 中的HTML元素匹配的初始视图。
+图 3.7 展示了在 iPad 3 上运行的 iOS 应用程序中，以横向模式截取的 CSS3 样式表 `Anim240Flicker3DLGrad4.css` 中定义的 CSS3 选择器与 HTML 页面 `Anim240Flicker3DLGrad4.html` 中的 HTML 元素匹配的初始视图。
 
 ![](img/6f06c2ff7e29452e50d03258ed9c6b4f_151_0.png)
 
-**图3.7** iPad 3上的CSS3 3D动画效果。
+**图 3.7** iPad 3 上的 CSS3 3D 动画效果。
 
-## CSS3动画和CSS精灵
+# CSS3 动画和 CSS 精灵
 
-CSS精灵减少了HTTP请求的数量（从而减少了网页的响应时间），同时也减小了总文件大小。这个想法很简单：下载一个包含网站上所有较小图像的单一图像（称为精灵），然后通过它们在精灵中的位置来引用较小的图像。
+CSS 精灵减少了 HTTP 请求的数量（从而减少了网页的响应时间），同时也减小了总文件大小。这个想法很简单：下载一个包含网站上所有较小图像的单一图像（称为精灵），然后通过它们在精灵中的位置来引用较小的图像。
 
-这个过程需要两个步骤：1.) 创建精灵，2.) 对于精灵中的每个图像，计算其在精灵中的位置，然后相应地更新CSS选择器。虽然你可以手动执行这两个步骤，但一个更简单的替代方案将为你节省大量的时间和精力，那就是一个名为SpriteMe的优秀工具，其主页在这里：
+这个过程需要两个步骤：1.) 创建精灵，2.) 对于精灵中的每个图像，计算其在精灵中的位置，然后相应地更新 CSS 选择器。虽然你可以手动执行这两个步骤，但一个更简单的替代方案将为你节省大量的时间和精力，那就是一个名为 SpriteMe 的优秀工具，其主页在这里：
 
 http://spriteme.org/
 
-这个网站包含一个演示，向你展示如何将该工具安装到书签工具栏中，以及如何在几分钟内轻松创建一个精灵。此外，你可以下载生成的精灵和包含精灵中每个图像位置的CSS选择器。创建精灵后，你可以使用本章前面学到的技术来对精灵应用2D和3D动画效果。
+这个网站包含一个演示，向你展示如何将该工具安装到书签工具栏中，以及如何在几分钟内轻松创建一个精灵。此外，你可以下载生成的精灵和包含精灵中每个图像位置的 CSS 选择器。创建精灵后，你可以使用本章前面学到的技术来对精灵应用 2D 和 3D 动画效果。
 
-另一个包含有关CSS精灵技术和教程集合的有用网站在这里：
+另一个包含有关 CSS 精灵技术和教程集合的有用网站在这里：
 
 http://nambuvick.blogspot.in/2012/05/building-faster-websites-with-css.html?goback=%2Egde_2071438_member_120537762
 
-## 使用CSS3动画的滑动面板
+# 使用 CSS3 动画的滑动面板
 
 面向菜单的移动应用程序通常涉及支持触摸的“页面”，这些页面使用滑动效果来显示详细页面，而详细页面通常有一个“返回”按钮来导航（也通过滑动效果）回主菜单。
 
-此时，你已经具备了创建此类移动应用程序的知识，这涉及HTML、简单的JavaScript（用于处理触摸相关事件）、CSS选择器和用于滑动效果的简单CSS3动画。
+此时，你已经具备了创建此类移动应用程序的知识，这涉及 HTML、简单的 JavaScript（用于处理触摸相关事件）、CSS 选择器和用于滑动效果的简单 CSS3 动画。
 
-本节中的代码将让你了解创建滑动效果所需的技术细节，并深入了解编写更复杂的面向菜单的移动应用程序所需的工作量。请记住，CSS样式表中唯一的CSS3功能是滑动动画效果。
+本节中的代码将让你了解创建滑动效果所需的技术细节，并深入了解编写更复杂的面向菜单的移动应用程序所需的工作量。请记住，CSS 样式表中唯一的 CSS3 功能是滑动动画效果。
 
-清单3.15显示了 `SlidingPanels.html` 的内容，清单3.16显示了 `SlidingPanels.css` 的内容，它们说明了如何使用CSS3动画在用户点击或点击列表中的菜单项时创建滑动效果。
+清单 3.15 显示了 `SlidingPanels.html` 的内容，清单 3.16 显示了 `SlidingPanels.css` 的内容，它们说明了如何使用 CSS3 动画在用户点击或点击列表中的菜单项时创建滑动效果。
 
-### 128 • jQuery、CSS3和HTML5在移动与桌面设备中的应用
+**清单 3.15** `SlidingPanels.html`
 
-### 清单3.15 SlidingPanels.html
-
-```
+```html
 <!DOCTYPE html>
 <html>
 <head>
@@ -4209,52 +4232,31 @@ http://nambuvick.blogspot.in/2012/05/building-faster-websites-with-css.html?goba
             </dd>
         </dl>
     </section>
-</body>
-</html>
-```
 
+    <script>
+        var panelContainer, leftPanel, rightPanel, panelCount = 2;
+        var backButton, clickedMenuText = "", detailsText, speed = 300;
 
+        window.addEventListener('load', init, false);
 
-## 清单 3.15 SlidingPanels.html
+        function init() {
+            //hide the browser address bar in iPhone/Android
+            setTimeout(function() { window.scrollTo(0, 1); }, 10);
 
-```
-<!-- "right"面板是详情面板 -->
-<dd id="rightPanel" style="width: 1000px; ">
-    <header class="pageHeader">
-        <span id="headerText">Details Page</span>
-        <img src="BlueBall1.png" id="backButton">
-    </header>
+            panelContainer = document.getElementById("panelContainer");
+            panelContainer.style.width = 
+                (panelCount * window.innerWidth) + "px";
 
-    <article class="content" id="detailsPage">
-        <p>This is the contents of the right panel.</p>
-    </article>
-</dd>
-</dl>
-</section>
+            leftPanel = document.getElementById("leftPanel");
+            leftPanel.style.width = window.innerWidth + "px";
 
-<script>
-    var panelContainer, leftPanel, rightPanel, panelCount = 2;
-    var backButton, clickedMenuText = "", detailsText, speed = 300;
+            rightPanel = document.getElementById("rightPanel");
+            rightPanel.style.width = window.innerWidth + "px";
 
-    window.addEventListener('load', init, false);
-
-    function init() {
-        //hide the browser address bar in iPhone/Android
-        setTimeout(function() { window.scrollTo(0, 1); }, 10);
-
-        panelContainer = document.getElementById("panelContainer");
-        panelContainer.style.width = 
-            (panelCount*window.innerWidth)+ "px";
-
-        leftPanel = document.getElementById("leftPanel");
-        leftPanel.style.width = window.innerWidth + "px";
-
-        rightPanel = document.getElementById("rightPanel");
-        rightPanel.style.width = window.innerWidth + "px";
-
-        backButton = document.getElementById("backButton");
-        backButton.addEventListener("click",
-            backButtonClicked, false);
+            backButton = document.getElementById("closeIcon");
+            backButton.addEventListener("click",
+                backButtonClicked, false);
+        }
 
         function clickedMenuItem(event) {
             // slide left panel to the left...
@@ -4266,45 +4268,42 @@ http://nambuvick.blogspot.in/2012/05/building-faster-websites-with-css.html?goba
 
             clickedMenuText =
                 event.currentTarget.firstChild.nodeValue.trim();
-            headerText.innerText = clickedMenuText + " Menu Item";
+            detailsPageHeader.innerText = clickedMenuText + " Menu Item";
 
-            detailsText = document.getElementById("detailsPage");
-            detailsPage.innerText =
-                headerText.innerText + ": " + detailsPage.innerText;
+            detailsText = document.getElementById("detailsPageContent");
+            detailsText.innerText =
+                detailsPageHeader.innerText + ": " + detailsText.innerText;
         }
 
         function backButtonClicked() {
             // slide right panel to the right...
-            panelContainer.style.webkitTransform = "translate3d(0, 0,
-                0)";
-            panelContainer.style.webkitTransitionDuration = speed +
-                "ms";
+            panelContainer.style.webkitTransform = "translate3d(0, 0, 0)";
+            panelContainer.style.webkitTransitionDuration = speed + "ms";
         }
-    }
-</script>
+    </script>
 </body>
 </html>
 ```
 
 清单 3.15 包含了 HTML5 元素 `<section>`、`<article>` 和 `<nav>`，它们提供了语义化标记，你已经在第一章中熟悉了它们。
 
-初始或主页面包含 `<nav>` 元素，该元素由五个菜单项组成；每当用户点击其中一个项目，主页面就会向左滑动，并显示详情页面的内容。当用户点击详情页面右上角的图标时，详情页面会向右滑动，再次显示主页面的内容。
+初始或主页面包含 `<nav>` 元素，该元素由菜单项组成；每当用户点击其中一个项目，主页面就会向左滑动，并显示详情页面的内容。当用户点击详情页面右上角的图标时，详情页面会向右滑动，再次显示主页面的内容。
 
 JavaScript 代码包含以下代码片段，它会在网页加载到浏览器后执行 JavaScript 函数 `init()`：
 
-```
+```javascript
 window.addEventListener('load', init, false);
 ```
 
 JavaScript `init()` 函数初始化了 JavaScript 变量 `leftPanel`、`rightPanel` 和 `backButton`，这些变量会在用户点击主页面中的菜单项以及详情页面中的返回按钮时被引用。
 
-JavaScript `menuClicked()` 函数包含了将主页面向左滑动以显示详情页面内容的代码，而 JavaScript 函数 `backButtonClicked()` 则处理相反的过渡效果。
+JavaScript `clickedMenuItem()` 函数包含了将主页面向左滑动以显示详情页面内容的代码，而 JavaScript 函数 `backButtonClicked()` 则处理相反的过渡效果。
 
 阅读此代码示例后，你可能会更倾向于使用移动端工具包（如 jQuery Mobile），它们能处理编写跨浏览器移动应用程序的许多繁琐细节。
 
-## 清单 3.16 SlidingPanels.css
+**清单 3.16** `SlidingPanels.css`
 
-```
+```css
 * { margin:0; padding:0;}
 
 html { background-color:#FCC; }
@@ -4378,7 +4377,7 @@ article.content {
     height:20px;
 }
 
-#backButton {
+#closeIcon {
     position:relative;
     top:5px;
     width:50px;
@@ -4399,19 +4398,17 @@ article.content {
 }
 ```
 
-132 • 适用于移动和桌面设备的 jQuery、CSS3 与 HTML5
-
 清单 3.16 包含各种选择器和标准 CSS 属性，其中大部分你已熟悉，因此对此代码的讨论在此省略。有两点需要你注意，因为它们影响了 HTML 网页的布局。第一，HTML 网页占据全屏，因为清单 3.16 的第一行将所有元素的 margin 和 padding 属性设置为 0：
 
-```
+```css
 * { margin:0; padding:0; }
 ```
 
-第二，第一个和最后一个菜单项的圆角效果有显著不同，因为分别使用了 15px 和 30% 的值。图 3.8 显示了在 iPad 3 上运行的 iOS 应用程序中启动 SlidingPanels1.html 的结果。
+第二，第一个和最后一个菜单项的圆角效果有显著不同，因为分别使用了 15px 和 30% 的值。图 3.8 显示了在 iPad 3 上运行的 iOS 应用程序中启动 `SlidingPanels.html` 的结果。
 
 ![图 3.8](img/6f06c2ff7e29452e50d03258ed9c6b4f_158_0.png)
 
-## CSS 框架
+# CSS 框架
 
 CSS3 提供了强大的功能，但如果你想让你的代码在多个浏览器中工作，就需要在选择器中包含特定于浏览器的代码。维护可能是一个繁琐且容易出错的过程，尤其是在你有许多 CSS 样式表时，并且增强 CSS 样式表的功能可能成为一项非平凡的任务。
 
@@ -4431,19 +4428,19 @@ http://code.google.com/p/css3-graphics
 
 请注意，你需要在你的机器上安装 Ruby 才能使用 Blueprint 验证器和 LESS 框架。其次，如果你想使用 LESS 框架支持的服务器端功能，需要安装 Node.js。
 
-
-
 ## Compass/Sass 框架
 
 Compass 是一个框架，允许你使用 Sass 而非纯 CSS 来创建 CSS 样式表。其主页在这里：
+
 http://compass-style.org/
 
 Sass 语言（你将与 Compass 一起使用）的链接在这里：
+
 http://sass-lang.com/
 
 Sass 支持以下功能：
 
-- @import
+- `@import`
 - 参数
 - 算术运算和函数
 - Mixins
@@ -4452,21 +4449,22 @@ Sass 支持以下功能：
 - 变量
 
 如果你想使用基于 Sass 的代码示例，你需要在 Windows 或 Linux 机器上安装 Ruby（请在网上搜索安装说明），而如果你使用的是 OS X，则 Ruby 已经安装好了。
+
 安装 Ruby 后，通过执行以下命令安装 Sass：
 
-```
+```bash
 gem install sass
 ```
 
 接下来的几个小节包含一些简单的代码示例，用以说明 Sass 框架的部分功能。
 
-## Sass 变量
+### Sass 变量
 
-Sass 支持使用变量，这对于快速轻松地修改 CSS 样式表非常有用。清单 3.15 显示了 Sass1.scss 的内容，清单 3.16 显示了生成的 CSS 样式表 Sass1.css。这两个文件的内容都很直观且不言自明，因此我们将不提供进一步的细节。
+Sass 支持使用变量，这对于快速轻松地修改 CSS 样式表非常有用。清单 3.17 显示了 `Sass1.scss` 的内容，清单 3.18 显示了生成的 CSS 样式表 `Sass1.css`。这两个文件的内容都很直观且不言自明，因此我们将不提供进一步的细节。
 
-清单 3.17 Sass1.scss
+**清单 3.17** `Sass1.scss`
 
-```
+```scss
 $theColor1: #ff0000;
 $theColor2: #0000ff;
 $theWidth: 400;
@@ -4480,13 +4478,13 @@ $theHeight: 300;
 
 a {
     color: $theColor1;
-    &:hover: { background: $theColor2; }
+    &:hover { background: $theColor2; }
 }
 ```
 
-清单 3.18 Sass1.css
+**清单 3.18** `Sass1.css`
 
-```
+```css
 #linear1 {
     width: 400;
     height: 300;
@@ -4494,17 +4492,17 @@ a {
 }
 a {
     color: #ff0000;
-    a:hover: { background: #0000ff; }
 }
+a:hover { background: #0000ff; }
 ```
 
-## Sass Mixins
+### Sass Mixins
 
-Sass mixins 允许你在多个 CSS 选择器中重用样式，它们通过 `@mixin` 指令定义。作为 Sass mixins 的一个示例，清单 3.19 显示了 Sass2.scss 的内容，清单 3.20 显示了生成的 CSS 样式表 Sass2.css。
+Sass mixins 允许你在多个 CSS 选择器中重用样式，它们通过 `@mixin` 指令定义。作为 Sass mixins 的一个示例，清单 3.19 显示了 `Sass2.scss` 的内容，清单 3.20 显示了生成的 CSS 样式表 `Sass2.css`。
 
-```
-清单 3.19 Sass2.scss
+**清单 3.19** `Sass2.scss`
 
+```scss
 @mixin rounded-top {
     $side: top;
     $radius: 10px;
@@ -4520,9 +4518,9 @@ Sass mixins 允许你在多个 CSS 选择器中重用样式，它们通过 `@mix
 
 注意，清单 3.19 底部的两个选择器通过 `@include` 语句引用了 `rounded-top` mixin，这将产生这样的效果：每当引用变量时，将指定的变量替换为其值后，再用 `rounded-top` 的内容替换该语句。
 
-清单 3.20 Sass2.css
+**清单 3.20** `Sass2.css`
 
-```
+```css
 #navbar li {
     border-top-radius: 10px;
     -moz-border-radius-top: 10px;
@@ -4539,6 +4537,7 @@ Sass mixins 允许你在多个 CSS 选择器中重用样式，它们通过 `@mix
 清单 3.20 显示了在对清单 3.19 中的 Sass 文件执行指定替换后，生成的 CSS 选择器的内容。前面的示例说明了在 Sass 中使用变量和 mixins 是多么容易。有关更多信息，请查阅 Sass 参考指南（其中提供了功能和代码片段的详尽列表）以及以下 Sass 教程：
 
 http://sass-lang.com/docs/yardoc/file.SASS_REFERENCE.html
+
 http://sass-lang.com/tutorial.html
 
 ## Blueprint 框架
@@ -4557,7 +4556,7 @@ Blueprint 支持以下功能：
 
 你需要在 HTML5 页面中包含以下三个 CSS 样式表才能使用 Blueprint：`screen.css`、`print.css` 和 `ie.css`。例如，你可以通过以下 HTML 代码片段包含这三个样式表：
 
-```
+```html
 <link rel="stylesheet" href="css/blueprint/screen.css"
       type="text/css" media="screen, projection">
 <link rel="stylesheet" href="css/blueprint/print.css"
@@ -4569,12 +4568,15 @@ Blueprint 支持以下功能：
 ```
 
 请注意，上面列出的第三个样式表使用了条件逻辑来决定是否包含该样式表（仅适用于版本低于 8 的 Internet Explorer）。
+
 Blueprint 的一个重要特性是其对网格的支持。请查阅在线文档以了解 Blueprint 网格及其其他功能。
 
 ## LESS 框架
 
 LESS CSS 框架可以在客户端（IE 6+、Webkit 和 Firefox）和服务端（配合 Node.js）运行。其主页在这里：
+
 http://lesscss.org/
+
 LESS 支持以下功能：
 
 - 函数
@@ -4584,17 +4586,17 @@ LESS 支持以下功能：
 
 你可以将 LESS 代码放在一个文本文件中（通常扩展名为 `.less`），然后通过命令行将该文件编译成 CSS 代码，如下所示：
 
-```
+```bash
 lessc mylessfile.less > mycssfile.css
 ```
 
 以下小节将向你展示如何在 LESS 框架中使用变量和 mixins。
 
-## LESS 变量
+### LESS 变量
 
 以下示例说明了如何在 LESS 代码中使用变量：
 
-```
+```less
 @color: #FF0000;
 
 #header {
@@ -4607,7 +4609,7 @@ p {
 
 前面的代码块定义了变量 `@color`，并在两个选择器中引用了这个变量。生成的 CSS 代码的内容如下所示：
 
-```
+```css
 #header {
     color: #FF0000;
 }
@@ -4618,12 +4620,12 @@ p {
 
 如你所见，变量 `@color` 在两个 CSS 选择器中都被其值 `#FF0000` 所替换（这显然是预期的行为）。
 
-## LESS Mixins
+### LESS Mixins
 
 以下示例说明了如何在 LESS 中使用 mixin：
 
-```
-#rounded-corners (@radius:4px) {
+```less
+#rounded-corners (@radius: 4px) {
     border-radius: @radius;
     -webkit-border-radius: @radius;
     -moz-border-radius: @radius;
@@ -4638,7 +4640,7 @@ p {
 
 前面的代码块包含一个 `#rounded-corners` mixin，它定义了一个变量 `radius`，其默认值为 `4px`，以及三个被赋值为变量 `radius` 的值的属性。生成的 CSS 代码如下所示：
 
-```
+```css
 #header {
     border-radius: 4px;
     -webkit-border-radius: 4px;
@@ -4655,17 +4657,17 @@ p {
 
 你还可以在 LESS 中使用操作符和函数来创建复杂的 mixins，这在 LESS 的在线文档中有说明。
 
-## 在客户端和服务端代码中使用 LESS
+### 在客户端和服务端代码中使用 LESS
 
 这是一个直接的过程，涉及包含一个 LESS CSS 样式表和 LESS JavaScript 文件。包含以下指向 LESS 样式表的链接：
 
-```
+```html
 <link rel="stylesheet/less" type="text/css" href="styles/less"/>
 ```
 
 从 LESS 主页下载 JavaScript 文件 `less.js`，然后包含以下引用 LESS JavaScript 文件的代码行：
 
-```
+```html
 <script src="less.js"></script>
 ```
 
@@ -4675,139 +4677,136 @@ http://nodejs.org
 
 安装 `Node.js` 和 `npm`（Node 包管理器）后，使用以下命令安装 LESS：
 
-```
+```bash
 npm install less
 ```
 
 可以使用以下命令安装最新版本的 LESS：
 
-```
+```bash
 npm install less@latest
 ```
 
 至此，我们对 CSS 框架的简短讨论就结束了。尽管代码示例很简单，但你可以看到这些框架为编写和维护 CSS 样式表所提供的功能的强大之处。
 
+# CSS3 性能
 
+尽管此处仅简要介绍此主题，但 CSS3 性能显然非常重要。本书中的许多 CSS3 样式表都包含具有 2D/3D 动画效果的选择器，而硬件加速将显著提升性能。事实上，某些平板设备并未提供良好的硬件加速支持，在这些设备上使用包含大量 2D 或 3D 动画效果的样式表几乎是不可能的。
 
-## CSS3 性能
-
-尽管此处仅简要介绍此主题，但CSS3性能显然非常重要。本书中的许多CSS3样式表都包含具有2D/3D动画效果的选择器，而硬件加速将显著提升性能。事实上，某些平板设备并未提供良好的硬件加速支持，在这些设备上使用包含大量2D或3D动画效果的样式表几乎是不可能的。
-
-幸运的是，存在一种技术可以为具备GPU的设备触发CSS3选择器的硬件加速（使用`translateZ(0)`或`translate3d(0,0,0)`），同时WebKit（Safari和Chrome）也提供了相应的调试技术。Google开发者布道师Paul Irish的以下30分钟视频讨论了这些以及其他相关技术：
+幸运的是，存在一种技术可以为具备 GPU 的设备触发 CSS3 选择器的硬件加速（使用 `translateZ(0)` 或 `translate3d(0,0,0)`），同时 WebKit（Safari 和 Chrome）也提供了相应的调试技术。Google 开发者布道师 Paul Irish 的以下 30 分钟视频讨论了这些以及其他相关技术：
 
 http://paulirish.com/2011/dom-html5-css3-performance/
 
-本文提供了编写更高效CSS选择器的相关信息：
+本文提供了编写更高效 CSS 选择器的相关信息：
 
 http://www.pubnub.com/blog/css3-performance-optimizations
 
-关于编写CSS3选择器的“最佳实践”信息，请参阅：
+关于编写 CSS3 选择器的“最佳实践”信息，请参阅：
 
 http://webdesignerwall.com/trends/css3-examples-and-best-practices
+
 http://www.impressivewebs.com/css3-best-practices/
 
-您可以通过网络搜索查找有关CSS3性能以及CSS3和HTML5 Canvas的“最佳实践”的其他在线视频和教程。
+您可以通过网络搜索查找有关 CSS3 性能以及 CSS3 和 HTML5 Canvas 的“最佳实践”的其他在线视频和教程。
 
-## 有用的链接
+# 有用的链接
 
 以下按字母顺序排列的链接列表虽短但非常有用。每个链接都包含非常好的信息（当然，您也可以随时自行进行网络搜索）。
 
-一组使用CSS3实现的“素描风格”视觉效果，请见：
+一组使用 CSS3 实现的“素描风格”视觉效果，请见：
 
 http://andrew-hoyer.com/index.html
 
-关于桌面和移动浏览器对HTML5、CSS3、SVG等支持情况的兼容性表格，请见：
+关于桌面和移动浏览器对 HTML5、CSS3、SVG 等支持情况的兼容性表格，请见：
 
 http://caniuse.com
 
-一个使用各种CSS3特性生成CSS3代码的网站：
+一个使用各种 CSS3 特性生成 CSS3 代码的网站：
 
 http://CSS3generator.com
 
-一个允许您实时编辑各种CSS3选择器的内容并查看结果的网站：
+一个允许您实时编辑各种 CSS3 选择器的内容并查看结果的网站：
 
 http://CSS3please.com
 
-一个处理浏览器特定CSS3属性扩展的工具包，使您能够编写无需前缀的CSS3选择器：
+一个处理浏览器特定 CSS3 属性扩展的工具包，使您能够编写无需前缀的 CSS3 选择器：
 
 http://ecsstender.org
 
-一个允许您在线创建渐变并查看相关CSS3代码的网站：
+一个允许您在线创建渐变并查看相关 CSS3 代码的网站：
 
 http://gradients.glrzad.com
 
-另一个提供有关浏览器对HTML5和CSS3特性支持信息的网站：
+另一个提供有关浏览器对 HTML5 和 CSS3 特性支持信息的网站：
 
 http://html5readiness.com
 
-大量关于HTML5的文章集合，请访问：
+大量关于 HTML5 的文章集合，请访问：
 
 http://www.html5rocks.com/en/
 
-一个在IE6-8中模拟CSS3伪类和属性选择器的JavaScript工具：
+一个在 IE6-8 中模拟 CSS3 伪类和属性选择器的 JavaScript 工具：
 
 http://selectivizr.com
 
-一个致力于所有CSS3相关内容的网站：
+一个致力于所有 CSS3 相关内容的网站：
 
 http://www.CSS3.info
 
-互联网上一个极佳的浏览器兼容性信息来源（由Peter-Paul Koch维护）：
+互联网上一个极佳的浏览器兼容性信息来源（由 Peter-Paul Koch 维护）：
 
 http://www.quirksmode.org
 
-一个非常好的在线工具，允许您试验许多CSS3特性并显示相关的CSS3代码：
+一个非常好的在线工具，允许您试验许多 CSS3 特性并显示相关的 CSS3 代码：
 
 http://www.westciv.com/tools/3Dtransforms/index.html
 
 这些链接提供了大量信息和有用的技术，因此您很有可能找到创建网站所需视觉效果的信息。
 
-以下是对15种跨浏览器测试工具的比较（大多数是免费的，有些是商业软件），并附有功能比较表格：
+以下是对 15 种跨浏览器测试工具的比较（大多数是免费的，有些是商业软件），并附有功能比较表格：
 
 http://www.smashingmagazine.com/2011/08/07/a-dozen-cross-browser-testing-tools/
 
-## 总结
+# 总结
 
-本章向您展示了如何创建图形效果，包括阴影效果，以及如何在CSS3中使用CSS3变换来定义CSS3选择器。您学习了如何创建可应用于HTML元素的2D/3D动画效果。您看到了如何定义CSS3选择器以实现以下功能：
+本章向您展示了如何创建图形效果，包括阴影效果，以及如何在 CSS3 中使用 CSS3 变换来定义 CSS3 选择器。您学习了如何创建可应用于 HTML 元素的 2D/3D 动画效果。您看到了如何定义 CSS3 选择器以实现以下功能：
 
 *   创建简单的动画效果
 *   显示多列文本
-*   使用CSS3选择器创建2D/3D效果
-*   使用CSS框架创建CSS样式表
+*   使用 CSS3 选择器创建 2D/3D 效果
+*   使用 CSS 框架创建 CSS 样式表
 *   使用变量和混入生成样式表
 
-下一章将向您介绍CSS着色器，并提供各种代码示例。然后您将学习如何将CSS3选择器与SVG结合使用。
+下一章将向您介绍 CSS 着色器，并提供各种代码示例。然后您将学习如何将 CSS3 选择器与 SVG 结合使用。
 
-# 第4章
+# 第 4 章
 
 ## CSS3 与 SVG
 
-在上一章中，您学习了如何创建基于CSS3的渐变和2D/3D动画效果。本章的第一部分讨论了一些即将到来的CSS3特性，并提供了展示CSS排除（Exclusions）、CSS区域（Regions）和CSS着色器（Shaders）的代码示例。在本书付印时，要在WebKit中查看这些代码示例，唯一的方法是使用Adobe提供的Chromium“特殊构建版本”。在Adobe将其代码合并到WebKit主干之后，本章中的一些代码示例可能无法在包含Adobe代码的最新“正式发布”版本的WebKit中正常工作。但是，如果您下载并安装当前可用的Adobe版本的WebKit（本章稍后将提供链接），那么这些代码示例将在此特殊构建版本的Chromium中正确渲染。
+在上一章中，您学习了如何创建基于 CSS3 的渐变和 2D/3D 动画效果。本章的第一部分讨论了一些即将到来的 CSS3 特性，并提供了展示 CSS 排除、CSS 区域和 CSS 着色器的代码示例。在本书付印时，要在 WebKit 中查看这些代码示例，唯一的方法是使用 Adobe 提供的 Chromium“特殊构建版本”。在 Adobe 将其代码合并到 WebKit 主干之后，本章中的一些代码示例可能无法在包含 Adobe 代码的最新“正式发布”版本的 WebKit 中正常工作。但是，如果您下载并安装当前可用的 Adobe 版本的 WebKit（本章稍后将提供链接），那么这些代码示例将在此特殊构建版本的 Chromium 中正确渲染。
 
-本章的第二部分向您展示如何将CSS3与SVG（可缩放矢量图形）结合使用，SVG是一种基于XML的二维图形渲染技术。我将提供一些指导原则，说明在何种情况下使用SVG而非CSS3（或何时将两者结合使用）更为合适。SVG支持线性渐变、径向渐变、滤镜效果、变换（平移、缩放、倾斜和旋转）以及使用基于XML语法的动画效果。虽然SVG不支持3D效果，但它提供了CSS3中不可用的功能，例如对任意多边形、椭圆弧、二次和三次贝塞尔曲线以及滤镜的支持。SVG的另一个优点是能够为SVG元素定义事件处理程序。
+本章的第二部分向您展示如何将 CSS3 与 SVG（可缩放矢量图形）结合使用，SVG 是一种基于 XML 的二维图形渲染技术。我将提供一些指导原则，说明在何种情况下使用 SVG 而非 CSS3（或何时将两者结合使用）更为合适。SVG 支持线性渐变、径向渐变、滤镜效果、变换（平移、缩放、倾斜和旋转）以及使用基于 XML 语法的动画效果。虽然 SVG 不支持 3D 效果，但它提供了 CSS3 中不可用的功能，例如对任意多边形、椭圆弧、二次和三次贝塞尔曲线以及滤镜的支持。SVG 的另一个优点是能够为 SVG 元素定义事件处理程序。
 
-幸运的是，您可以通过CSS `url()`函数在CSS选择器中引用SVG文档，本章的第三部分包含在HTML网页中结合使用CSS3和SVG的示例。正如您将看到的，CSS3和SVG的结合为您提供了一种强大的机制，可以在CSS选择器中利用SVG的功能。事实上，您甚至可以将SVG与本章中将看到的一些CSS3新特性结合使用。
+幸运的是，您可以通过 CSS `url()` 函数在 CSS 选择器中引用 SVG 文档，本章的第三部分包含在 HTML 网页中结合使用 CSS3 和 SVG 的示例。正如您将看到的，CSS3 和 SVG 的结合为您提供了一种强大的机制，可以在 CSS 选择器中利用 SVG 的功能。事实上，您甚至可以将 SVG 与本章中将看到的一些 CSS3 新特性结合使用。
 
-DVD上的SVG附录提供了SVG的概述，足以理解本章中的代码示例。阅读本章后，您可以通过网络搜索并从众多提供SVG代码示例的在线教程中选择，来了解更多关于SVG的知识。SVG附录中的许多基于SVG的示例（线条、圆、椭圆、贝塞尔曲线等）都有对应的HTML5 Canvas示例，将在第11章中讨论。
+DVD 上的 SVG 附录提供了 SVG 的概述，足以理解本章中的代码示例。阅读本章后，您可以通过网络搜索并从众多提供 SVG 代码示例的在线教程中选择，来了解更多关于 SVG 的知识。SVG 附录中的许多基于 SVG 的示例（线条、圆、椭圆、贝塞尔曲线等）都有对应的 HTML5 Canvas 示例，将在第 11 章中讨论。
 
-本章的最后一部分简要概述了一些与CSS相关的集成开发环境（IDE），例如Sencha Animator和Adobe Edge，以及用于CSS3的开源工具包AliceJS。请记住，本书中的CSS3示例是针对基于WebKit的浏览器，但您可以通过使用特定于浏览器的前缀（在第1章中已简要讨论过）插入其他浏览器的CSS3代码。除非另有说明，本章中涵盖新CSS特性的部分中的代码示例是在MacBook上的Chrome浏览器中渲染的。
+本章的最后一部分简要概述了一些与 CSS 相关的集成开发环境（IDE），例如 Sencha Animator 和 Adobe Edge，以及用于 CSS3 的开源工具包 AliceJS。请记住，本书中的 CSS3 示例是针对基于 WebKit 的浏览器，但您可以通过使用特定于浏览器的前缀（在第 1 章中已简要讨论过）插入其他浏览器的 CSS3 代码。除非另有说明，本章中涵盖新 CSS 特性的部分中的代码示例是在 MacBook 上的 Chrome 浏览器中渲染的。
 
-## 新的CSS3特性
+## 新的 CSS3 特性
 
 Several new CSS features are under development, and most (possibly all) of them will be available in WebKit-based browsers. In many cases, the W3C specification for each of the new CSS features is a "work-in-progress," so it's possible that they will be modified by the time you read this book. Check a Web site such as www.caniuse.com for information about the latest feature support in your browser of choice.
 
 Fortunately, Adobe has provided a downloadable "special build" of Chromium that you can use in order to render the code samples that illustrate some of the new features of CSS3. If you want to launch the code samples in this chapter, you need to use Adobe's version of Chromium, which is downloadable here:
+
 https://github.com/adobe/webkit/downloads
 
 In fact, many of the code samples are derived from the code that is included in the download file containing Adobe's version of Chromium. Among the new and experimental features that you will find in this special build of Chromium are:
 
-1.  CSS合成
-2.  CSS排除
-
-
-
-## 3. CSS 区域
-4. CSS 着色器
+1.  CSS 合成
+2.  CSS 排除
+3.  CSS 区域
+4.  CSS 着色器
 
 请记住，本章中的 CSS 着色器代码示例涉及的概念，其完整内容超出了本书的范围，并且在代码清单后的解释中，许多细节被“略过”了。然而，你仍然可以熟悉代码的功能，以及不同的代码块如何组合在一起。你也可以尝试这些代码示例，并查看代码更改的效果（始终使用 Adobe 构建的 Chromium 浏览器）。这个过程将帮助你更好地理解 CSS3 中的即将到来的功能，并决定你想深入探索哪些功能。此外，包含代码示例的章节中的截图将使你能够判断该功能是否对你自己的 HTML 网页有用。
 
@@ -4835,9 +4834,7 @@ In fact, many of the code samples are derived from the code that is included in 
 }
 ```
 
-清单 4.1 显示了 CSSCanvasBackground2.html 的内容，演示了如何在 CSS 选择器中将 HTML5 `<canvas>` 元素指定为 `background` 属性的值。
-
-### 清单 4.1 CSSCanvasBackground2.html
+**清单 4.1** `CSSCanvasBackground2.html`
 
 ```html
 <!DOCTYPE HTML>
@@ -4873,7 +4870,7 @@ In fact, many of the code samples are derived from the code that is included in 
 </html>
 ```
 
-清单 4.1 在网页加载到浏览器时调用 `drawGraphics()` JavaScript 函数。在这个示例中，`drawGraphics()` 方法包含渲染红色矩形和蓝色矩形的代码，但显然你也可以渲染许多其他形状。
+清单 4.1 在网页加载到浏览器时调用 `draw()` JavaScript 函数。在这个示例中，`draw()` 方法包含渲染红色矩形和蓝色矩形的代码，但显然你也可以渲染许多其他形状。
 
 请注意，`getCSSCanvasContext()` 方法指定了名称 `multisquares`，该名称被引用在赋给 `background` 属性的值中，如下所示：`background: -webkit-canvas(multisquares);`
 
@@ -4928,11 +4925,7 @@ CSS 排除区域使你能够指定一个被排除在文本流之外的任意区�
 
 CSS 排除区域指定一个形状作为文本的“边界”，在这种情况下，文本将被渲染在区域内（“包含”）或区域外（“排除”）。CSS 形状可以应用于任何元素，这控制了用于在元素外部或内部环绕文本的几何形状。例如，浮动上的圆形形状会导致文本围绕圆形形状环绕，而不是浮动的边界框。
 
-清单 4.2 显示了 CSSEXclusions1.html 内容的一部分，演示了如何在 HTML5 网页中为文本创建排除效果。完整的代码清单可在 DVD 上找到。
-
-![](img/6f06c2ff7e29452e50d03258ed9c6b4f_175_0.png)
-
-### 清单 4.2 CSSEXclusions1.html
+**清单 4.2** `CSSEXclusions1.html`
 
 ```html
 <!--
@@ -4963,1221 +4956,31 @@ Permissions beyond the scope of this license, pertaining to the examples of code
 
 .circle{
     /* 将元素塑造成圆形 */
-    -webkit-wrap-shape: polygon(0px, 150px 3px, 120px 12px, 92px 26px, 66px 44px, 44px 66px, 26px 92px, 12px 120px, 3px 150px, 0px, 180px, 3px, 208px, 12px, 234px, 26px, 256px, 44px, 274px, 66px, 288px, 92px, 297px, 120px, 300px, 150px, 297px, 180px, 288px, 208px, 274px, 234px, 256px, 256px, 234px, 274px, 208px, 288px, 180px, 297px, 150px, 300px, 120px, 297px, 92px, 288px, 66px, 274px, 44px, 256px, 26px, 234px, 12px, 208px, 3px, 180px, 0px, 150px, 150px);
+    -webkit-wrap-shape: polygon(0px, 150px 3px, 120px 12px, 92px 26px, 66px 44px, 26px 92px, 12px 120px, 3px 150px, 0px, 180px, 3px, 208px, 12px, 234px, 26px, 256px, 44px, 274px, 66px, 288px, 92px, 297px, 120px, 300px, 150px, 297px, 180px, 288px, 208px, 274px, 234px, 256px, 256px, 234px, 274px, 208px, 288px, 180px, 297px, 150px, 300px, 120px, 297px, 92px, 288px, 66px, 274px, 44px, 256px, 26px, 234px, 12px, 208px, 3px, 180px, 0px, 150px, 150px);
 }
 
 .heart{
     /* 将元素塑造成心形 */
     -webkit-wrap-shape: polygon(150px, 32px 142px, 23px 132px, 15px 122px, 9px 112px, 4px 100px, 1px 89px, 0px 77px, 0px 64px, 2px 53px, 6px 42px, 11px 32px, 18px 23px, 25px 16px, 34px 10px, 44px 5px, 55px 2px, 67px 0px, 80px 0px, 92px 2px, 103px 6px, 114px 9px, 122px 14px, 130px 21px, 136px 30px, 140px 40px, 142px 51px, 143px 62px, 142px 74px, 139px 85px, 134px 95px, 127px 104px, 118px 111px, 108px 117px, 97px 121px, 86px 122px, 75px 121px, 65px 117px, 55px 111px, 46px 103px, 39px 93px, 34px 82px, 32px 70px, 32px 57px, 35px 45px, 41px 34px, 50px 24px, 61px 17px, 74px 13px, 87px 13px, 100px 17px, 112px 24px);
+    11px, 125px 17px, 135px 25px, 144px 35px, 151px 73px, 180px 89px, 194px 103px, 208px 116px, 226px 128px, 246px 139px, 270px 150px, 300px 161px, 270px 172px, 246px 184px, 226px 197px, 208px 211px, 194px 227px, 180px 265px, 151px 275px, 144px 283px, 135px 289px, 125px 294px, 114px 298px, 103px 300px, 92px 300px, 80px 298px, 67px 295px, 55px 290px, 44px 284px, 34px 277px, 25px 268px, 18px 258px, 11px 247px, 6px 236px, 2px 223px, 0px 211px, 0px 200px, 1px 188px, 4px 178px, 9px 168px, 15px 158px, 23px 150px, 32px 150px, 32px);
 }
 ```
 
-152 • 用于移动和桌面设备的 jQuery、CSS3 与 HTML5
 
-```
-11px, 125px 17px, 135px 25px, 144px 35px, 151px 73px, 180px 89px, 194px 103px, 208px 116px, 226px 128px, 246px 139px, 270px 150px, 300px 161px, 270px 172px, 246px 184px, 226px 197px, 208px 211px, 194px 227px, 180px 265px, 151px 275px, 144px 283px, 135px 289px, 125px 294px, 114px 298px, 103px 300px, 92px 300px, 80px 298px, 67px 295px, 55px 290px, 44px 284px, 34px 277px, 25px 268px, 18px 258px, 11px 247px, 6px 236px, 2px 223px, 0px 211px, 0px 200px, 1px 188px, 4px 178px, 9px 168px, 15px 158px, 23px 150px, 32px 150px, 32px);
-```
-
-```
-<!-- 为简洁起见，省略了部分代码 -->
-    <div id="container">
-        <p>Lo&shy;rem ip&shy;sum do&shy;lor sit amet, con&shy;sec&shy;te&shy;tur ad&shy;ipisc&shy;ing elit. Vi&shy;va&shy;mus ac nul&shy;la ac nunc ves&shy;ti&shy;b&shy;u&shy;lum sod&shy;ales sed eget pu&shy;rus. In&shy;te&shy;ger tris&shy;tique neque at urna eleif&shy;end por&shy;ta. Mau&shy;ris a sa&shy;pi&shy;en augue, ve&shy;hic&shy;u&shy;la rutrum augue. Sus&shy;pend&shy;isse pre&shy;tium pulvi&shy;nar tris&shy;tique. Nul&shy;la el&shy;e&shy;men&shy;tim blan&shy;dit mas&shy;sa, pel&shy;len&shy;tesque el&shy;e&shy;men&shy;tum orci tem&shy;pus sed. Cur&shy;a&shy;bi&shy;tur eget est neque, nec pel&shy;len&shy;tesque enim. Sed blan&shy;dit do&shy;lor et neque tin&shy;ci&shy;dunt rutrum. Lo&shy;rem ip&shy;sum do&shy;lor sit amet, con&shy;sec&shy;te&shy;tur ad&shy;ipisc&shy;ing elit. Nul&shy;lam tin&shy;ci&shy;dunt do&shy;lor vel neque eleif&shy;end frin&shy;g&shy;il&shy;la. Prae&shy;sent et orci nec jus&shy;to vulpu&shy;tate ul&shy;tri&shy;c&shy;ies ac in leo. In nec ip&shy;sum enim. Donec sus&shy;cip&shy;it plac&shy;er&shy;at ad&shy;ipisc&shy;ing. Nul&shy;la a nunc mi. Sed ve&shy;hic&shy;u&shy;la sus&shy;cip&shy;it mag&shy;na sed con&shy;val&shy;lis. Donec ul&shy;trices con&shy;se&shy;quat tor&shy;tor, at fer&shy;men&shy;tum augue mal&shy;esua&shy;da in. Ut cur&shy;sus, odio non port&shy;ti&shy;tor var&shy;si&shy;&shy;us, dui neque luc&shy;tus la&shy;cus, in rhon&shy;cus dui odio eges&shy;tas libe&shy;ro. Mae&shy;ce&shy;nas po&shy;s&shy;u&shy;ere con&shy;sec&shy;te&shy;tur lec&shy;tus, vi&shy;tae con&shy;sec&shy;te&shy;tur lig&shy;u&shy;la con&shy;sec&shy;te&shy;tur eu.</p>
-<!-- 为简洁起见，省略了部分代码 -->
-    </div>
-</body>
-</html>
-```
-
-关于清单4.2，首先需要观察的是，在基于WebKit的浏览器中，CSS Exclusions 支持 `-webkit-wrap-shape-mode` 属性，当您希望文本围绕指定形状流动时，该属性的值设置为 `around`：
-
-```
--webkit-wrap-shape-mode: around;
-```
-
-其次，您通过 `-webkit-wrap-shape` 属性指定一个形状，您可以使用 `polygon()` 函数将其赋值为一个多边形，如下面所示：
-
-```
--webkit-wrap-shape: polygon(150px, 32px 142px, . . . );
-```
-
-请注意，`circle` 选择器和 `heart` 选择器都使用 `polygon()` 函数来渲染相应的形状。图4.1展示了在Macbook上的Chrome浏览器中渲染 `CSS3Exclusions1.html` 的结果。
-
-![](img/6f06c2ff7e29452e50d03258ed9c6b4f_178_0.png)
-
-您可以从 CSS Exclusions 规范（该规范仍在制定中）中获取更多信息：http://dev.w3.org/csswg/css3-exclusions/
-
-## CSS 滤镜
-
-滤镜效果是当您在HTML网页的元素上应用图形操作时创建的东西。滤镜可以接受零个或多个输入图像，以及可能的一些输入参数。输出的图像要么显示在HTML网页中，要么可以用作另一个滤镜效果的输入，或者作为CSS图像值提供。
-
-您已经了解了如何在SVG文档中使用SVG滤镜，它们在CSS中没有直接的对应物。然而，基于WebKit的浏览器将支持以下CSS滤镜（此处显示的是示例值）：
-
-```
--webkit-filter: blur(3px);
--webkit-filter: grayscale(100%);
--webkit-filter: hue-rotate(80deg);
--webkit-filter: opacity(0.8);
--webkit-filter: sepia(80%);
--webkit-filter: saturate(2);
--webkit-filter: brightness(0.5);
--webkit-filter: contrast(0.6);
--webkit-filter: hue-rotate(120deg);
--webkit-filter: invert(0.4);
-```
-
-您可以将这些CSS滤镜应用于JPG文件，如下面的选择器所示，该选择器为所有 `<img>` 元素应用了CSS模糊滤镜：
-
-```
-img {
-    -webkit-filter: blur(3px);
-}
-```
-
-您可以从 W3C 编辑草案（仍在制定中）中获取完整的滤镜列表和其他信息：
-
-https://dvcs.w3.org/hg/FXTF/raw-file/tip/filters/index.html
-
-另外两个包含有关滤镜有用信息的网站在这里：
-
-http://www.ssi-developer.net/css/visual-filters.shtml
-https://html5-demos.appspot.com/static/css/filters/index.html
-
-顺便提一下，CSS TextWrapper 是一个在线工具，它生成可以将文本“包裹”在内的CSS代码。其主页在这里：
-
-http://www.csstextwrap.com/
-
-## CSS Flexbox（弹性盒布局）
-
-CSS Flexbox 是一种CSS布局模型，其中弹性盒的子元素不仅可以在任何方向上布局，还可以调整它们的尺寸，要么扩展以填充未使用的空间，要么收缩以避免溢出父容器。您还可以嵌套弹性盒以在二维上创建各种布局：
-
-http://ie.microsoft.com/testdrive/Graphics/hands-on-css3/hands-on_flex.htm
-
-例如，考虑以下 `<style>` 代码块，它指定了一个宽度为 `300px` 的HTML `<div>` 元素，其中包含四个 `<button>` 元素，每个按钮的宽度为 `80px`：
-
-```
-<style>
-#div1 {
-  display: flexbox;
-  flex-flow: row wrap;
-  width: 300px;
-}
-
-button {
-  flex:80px 1;
-}
-<style>
-```
-
-```
-<div id="div1">
-  <button id="button1">Elephant</button>
-  <button id="button2">Tiger</button>
-  <button id="button3">Antelope</button>
-  <button id="button4">Wildebeest</button>
-</div>
-```
-
-由于HTML `<div>` 元素不够宽，无法在单行内容纳四个按钮，因此前三个按钮渲染在第一行，第四个按钮作为单独的元素渲染在第二行。此外，第一行中的三个按钮从 `80px` 扩展到 `100px`，第四个按钮从 `80px` 扩展到 `300px`。
-
-这种“扩展”行为以及为第四个按钮创建第二行，是因为 `flex-flow` 属性设置为 `"row wrap"`，这允许多行弹性盒。
-
-您可以从 CSS Flexbox 规范（该规范仍在制定中）中获取更多信息：
-
-## CSS Grid（网格布局）
-
-CSS Grid 使您能够以网格化的方式控制HTML网页元素的布局。CSS Grid 涉及一种 `grid` 显示模式，并使用一种称为 `fr`（“fraction”的缩写，代表“分数”）的新长度单位。您还可以使用 `pxs`、`ems` 或 `auto` 作为度量单位来指定行数和列数。
-
-例如，以下选择器指定了四列三行：
-
-```
-#mydiv {
-    display: grid;
-    grid-columns: 2fr 1fr 1fr 2fr;
-    grid-rows: 50px auto 50px;
-}
-```
-
-在前面的选择器中，第一列和最后一列各占据网格宽度的六分之二，而中间的一对列各占六分之一。顶部和底部行的高度均为50px，中间行占据剩余空间。
-
-CSS Grid 支持复杂的布局定义，其布局可能远非显而易见。例如，以下选择器指定了四列三行：
-
-```
-body {
-    grid-columns: * * (0.5in * *) [2];
-    grid-rows: 20% *;
-    columns:3; column-gap:0.5in;
-}
-```
-
-前面的CSS选择器包含以下信息：
-
--   指定了一个显式网格。
--   括号内的表达式是一个重复模式。
--   方括号中的整数是重复次数。
--   星号语法代表比例长度，这意味着每个“*”被分配相等的空间。
-
-您可以从 CSS Grid 规范（该规范仍在制定中）中获取更多信息：
-
-http://www.w3.org/TR/css3-grid/
-
-
-
-## CSS 区域
-
-CSS 区域使你能够在用户调整浏览器大小时指定文本的显示方式。例如，你可以指定文本的“源”和“目标”区域，这能创造出文本从一个区域“流动”到另一个区域的印象。
-
-其核心思想是使用 WebKit 特有的 CSS 属性 `-webkit-flow-from` 和 `-webkit-flow-into` 分别指定文本的源和目标，本节中的代码示例对此进行了说明。
-
-Adobe 和微软共同制定了 CSS3 区域（CSS3 Regions）和 CSS3 排除（CSS3 Exclusions）规范（现已成为 CSS3 规范的一部分），此功能在 Internet Explorer 10 和某些版本的 Chrome 中受支持。
-
-清单 4.3 和清单 4.4 展示了 `CSS3FlowRegions1.css` 和 `CSS3FlowRegions1.html` 的内容，说明了如何在 HTML5 网页中使用 CSS3 流动区域与文本。
-
-```
-清单 4.3 CSS3FlowRegions1.css
-
-@-webkit-keyframes resize {
-    from { width: 100%; }
-    to { width: 50%; }
-}
-
-html, body { margin: 0; padding: 0; }
-
-.container {
-    background-color: #EBEBEB;
-    margin: 0 auto;
-    max-width: 800px;
-    padding: 20px 0;
-    width: 100%;
-}
-
-.container:hover {
-    -webkit-animation: resize 3s alternate infinite;
-}
-
-#content {
-    -webkit-flow: 'foo';
-    -webkit-flow-into: foo;
-    color: #666;
-    font: normal 16px/1.25 'Helvetica Neue', sans-serif;
-}
-
-div[class^='content'] {
-    background-color: white;
-    border: 1px solid red;
-    -webkit-box-sizing: border-box;
-    content: -webkit-from-flow('foo');
-    -webkit-flow-from: foo;
-    margin: 20px 5%;
-    height: 82px;
-    overflow: hidden;
-    padding: 10px;
-    width: 90%;
-}
-
-div.content-2 {
-    margin-left: 50%;
-    width: 45%;
-}
-
-div.content-3 {
-    margin-right: 40%;
-    width: 55%;
-}
-```
-
-清单 4.3 包含你熟悉的属性选择器（因此我们将跳过这些属性的讨论）。请注意，`content` 选择器指定了一个值为 `foo` 的 `-webkit-flow` 属性，以及一个值为 `foo` 的 `-webkit-flow-into` 属性，如下所示：
-
-```
-#content {
-    -webkit-flow: 'foo';
-    -webkit-flow-into: foo;
-    color: #666;
-    font: normal 16px/1.25 'Helvetica Neue', sans-serif;
-}
-```
-
-文本会流入 `id` 属性值为 `content` 的 HTML `<div>` 元素。当用户调整网页大小时，文本将流入类名以字符串 `content` 开头的 HTML `<div>` 元素，如下所示：
-
-```
-div[class^='content'] {
-    // 省略属性
-    content: -webkit-from-flow('foo');
-    -webkit-flow-from: foo;
-    // 省略属性
-}
-```
-
-**清单 4.4** CSS3FlowRegions1.html
-
-```
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="utf-8"/>
-    <title>CSS3 Flow Regions</title>
-    <link href="CSS3FlowRegions1.css" rel="stylesheet" type="text/css">
-</head>
-
-<body>
-    <div class="container">
-        <p id="content">从前，一只老鼠、一只鸟和一只香肠结成了伙伴，共同建立了家庭。很长一段时间，一切都很顺利；它们生活得非常舒适，并且繁荣发展，以至于能够极大地增加它们的储备。鸟的职责是每天飞进森林并带回燃料；老鼠去取水；而香肠则负责烹饪。</p>
-        <div class="content-1"></div>
-        <div class="content-2"></div>
-        <div class="content-3"></div>
-    </div>
-</body>
-</html>
-```
-
-清单 4.4 包含简单的 HTML 标记，以及一个 `id` 属性值为 `content` 的 HTML `<p>` 元素。还有三个 HTML `<div>` 元素，其 `class` 属性包含一个类名以字符串 `content` 开头的类。因此，当用户调整网页大小时，文本将从 HTML `<p>` 元素流入这三个 HTML `<div>` 元素。
-
-图 4.2 展示了在 Macbook 上的 Google Chrome 浏览器中，CSS3FlowRegions1.css 中的选择器与 HTML 页面 CSS3FlowRegions1.html 中的元素匹配后的结果。
-
-![](img/6f06c2ff7e29452e50d03258ed9c6b4f_184_0.png)
-
-**图 4.2** 在 Macbook 的 Google Chrome 浏览器上显示的 CSS3 流动区域。
-
-你可以从 CSS 区域模块规范（该规范仍在进行中）获取更多信息：
-
-http://dev.w3.org/csswg/css3-regions/
-
-## CSS 着色器
-
-CSS 着色器提供的功能在概念上与 WebGL 中的一些概念非常相似，它使你能够通过在 CSS3 选择器中引用基于着色器的功能来创建更为复杂的视觉效果。WebGL 和 CSS 着色器都具有基于流水线的架构，其中某个阶段的输出可以用作流水线中下一阶段的输入。顶点着色器中变量（例如 `uniform`、`varying` 或 `attribute`）的声明类型指定了变量的值是在流水线的每个阶段可用，还是仅在单个阶段可用。
-
-基于着色器的效果的实现细节位于一个单独的文件中，该文件包含在 GPU 上运行的代码，该代码使用一种类似 C 的语言编写，称为 GL 着色器语言（GLSL）。你可以在使用 CSS 着色器的代码示例中使用多个顶点着色器。例如，清单 4.8 创建了一个涉及单个名为 `3DCube1SVAnimation1.vs` 的顶点着色器的动画效果，但你可以轻松修改清单 4.8，以在动画效果的不同时间点指定不同的顶点着色器。
-
-CSS 着色器和 WebGL 使用顶点着色器和片段着色器来渲染图形效果。顶点着色器是 GLSL 代码，它对“模型”（由一组 3D 点组成）应用变换，然后计算这些 3D 点的 2D 表示。片段着色器是 GLSL 代码，它计算屏幕上渲染的每个 2D 像素的颜色。CSS 着色器和 WebGL 中的顶点着色器是相同的；然而，CSS 着色器中的片段着色器与 WebGL 中的片段着色器有显著不同。
-
-本节的第一个示例是网页 `3DCube1CSSShaders1.html`，它引用了两个文件：CSS3 样式表 `3DCube1CSSShaders1.css`（其内容与 `3DCube1.css` 的内容相同，因此我们不会在本节中重复其内容），以及文件 `SimpleVertexParamsFlag.vs`，其中包含顶点着色器的代码。
-
-接下来的三个小节包含代码示例，向你展示如何使用 CSS 着色器创建一些非常有趣的视觉效果。
-
-### 简单顶点 CSS 着色器
-
-基本思想是使用 `filter` 属性指定一个 CSS3 选择器，该选择器引用一个包含类似 C 语法（GLSL）代码的文件，该代码为特定的 CSS 着色器执行计算。
-
-本节中的代码示例包含一个 HTML5 网页和一个顶点着色器文件（其文件名以“.vs”作为顶点着色器后缀，或“.fs”作为片段着色器后缀——本节示例中不使用片段着色器），有时还包括一个 CSS 样式表（其代码你在其他代码示例中已经见过）。请注意，你可以选择将带有 `filter` 属性的 CSS 选择器放在 HTML5 网页中，也可以放在 CSS 样式表中。
-
-清单 4.5 展示了 `3DCube1CSSShaders1.html` 的内容，这是一个引用了 CSS 着色器的 HTML 网页。清单 4.6 展示了 `SimpleVertexParamsFlag.vs` 的内容，这是如何指定顶点着色器的一个示例。
-
-```
-清单 4.5 3DCube1CSSShaders1.html
-<!--
-Copyright 2012 Adobe Systems, Incorporated
-本作品采用知识共享署名-非商业性使用-相同方式共享 3.0 未本地化版本许可协议进行许可。
-有关此许可协议的更多信息，请访问 http://creativecommons.org/licenses/by-nc-sa/3.0/ 。
-有关此作品中包含的代码示例的许可范围，请访问 Adobe http://www.adobe.com/communities/guidelines/ccplus/commer-
-cialcode_plus_permission.html 。
--->
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="utf-8"/>
-    <title>CSS 3D Cube Example</title>
-    <link href="3DCube1CSSShaders1.css" rel="stylesheet" type="text/css">
-    <style type="text/css">
-        #top, #left, #right {
-            -webkit-filter: custom(url(SimpleVertexParamsFlag.vs), 20 20, phase 270.0, amplitude 180.0, txf rotateX(50deg));
-        }
-    </style>
-</head>
-```
-
-## 将鼠标悬停在立方体面上：
-
-```html
-<body>
-  <header>
-    <h1>将鼠标悬停在立方体面上：</h1>
-  </header>
-
-  <div id="outer">
-    <div id="top">Text1</div>
-    <div id="left">Text2</div>
-    <div id="right">Text3</div>
-  </div>
-</body>
-</html>
-```
-
-清单 4.5 中的新代码（以粗体显示）包含一个 CSS 选择器，该选择器指定了一个 `filter` 属性，其值引用了名为 `SimpleVertexParamsFlag.vs` 的自定义顶点着色器。此外，还指定了几个以逗号分隔的值对，这些值对应于顶点着色器文件中的相应变量名称。在此示例中，变量是两个名为 `phase` 和 `amplitude` 的浮点变量，以及一个名为 `txf` 的矩阵。
-
-# 清单 4.6 SimpleVertexParamsFlag.vs
-
-```glsl
-/*
-Copyright 2012 Adobe Systems, Incorporated
-This work is licensed under a Creative Commons Attribution-
-Noncommercial-Share Alike 3.0 Unported License http://creative-
-commons.org/licenses/by-nc-sa/3.0/ .
-  Permissions beyond the scope of this license, pertaining to
-the examples of code included within this work are available at
-Adobe http://www.adobe.com/communities/guidelines/ccplus/commer-
-cialcode_plus_permission.html .
-*/
-
-precision mediump float;
-
-attribute vec4 a_position;
-attribute vec2 a_texCoord;
-
-uniform mat4 u_projectionMatrix;
-
-// 这些 uniform 值通过 CSS 传入。
-uniform mat4 txf;
-uniform float phase;
-uniform float amplitude;
-
-varying vec2 v_texCoord;
-
-const float PI = 3.1415;
-const float degToRad = PI / 180.0;
-
-void main()
-{
-    v_texCoord = a_texCoord;
-    vec4 pos = a_position;
-
-    float phi = degToRad * phase;
-    pos.z = (amplitude / 1000.0) * cos(pos.x * PI * 2.0 + phi);
-    gl_Position = u_projectionMatrix * txf * pos;
-}
-```
-
-清单 4.5 包含三个变量，这些变量在清单 4.6 中（粗体部分）被引用，它们在清单 4.6 中的对应部分如下所示：
-
-```glsl
-uniform mat4 txf;
-uniform float phase;
-uniform float amplitude;
-```
-
-如果你查看清单 4.5 中的选择器，可以看到 `phase` 和 `amplitude` 指定了浮点数，而 `txf` 指定了一个变换，该变换由名为 `mat4` 的 `matrix` 类型表示。
-
-清单 4.6 通过设置每个变换点的新位置来计算其 `z` 值，该值基于一个使用其 `x` 值作为余弦表达式一部分的计算，如下所示：
-
-```glsl
-pos.z = (amplitude / 1000.0) * cos(pos.x * PI * 2.0 + phi);
-```
-
-回想一下，`余弦`函数本质上是一个平移后的`正弦`函数（其确切偏移取决于其频率），因此变换后的点的坐标将呈现类似正弦波的失真。
-
-清单 4.6 还引用了两个重要的内置变量，其值在渲染管线中始终可用。一个变量是 `u_projection矩阵`，它是一个投影矩阵（类型为 `mat4`），用于计算 3D 点的 2D 表示。另一个变量是 `gl_Position`，它包含投影点的 2D 坐标。
-
-图 4.3 展示了在 MacBook 上的 Google Chrome 浏览器中以横向模式截图渲染 `3DCube1CSSShaders1.html` 的结果。
-
-![图 4.3](img/6f06c2ff7e29452e50d03258ed9c6b4f_189_0.png)
-
-**图 4.3** 在 MacBook 上的 Google Chrome 浏览器中使用 CSS Shaders。
-
-你可以轻松修改清单 4.6 中的代码，以创建图 4.3 中失真效果的变体。例如，用以下代码块替换清单 4.6 中的粗体代码：
-
-```css
-<style type="text/css">
-    #top, #left, #right {
-        -webkit-filter: custom(url(SimpleVertexParamsFlag.vs),
-                             20 20, phase 270.0,
-                             amplitude 180.0, txf rotateX(50deg));
-    }
-</style>
-```
-
-图 4.4 展示了在 MacBook 上的 Google Chrome 浏览器中渲染修改后的 HTML 页面 `3DCube1CSSShaders1.html` 的结果。
-
-![图 4.4](img/6f06c2ff7e29452e50d03258ed9c6b4f_189_1.png)
-
-**图 4.4** 在 MacBook 上的 Google Chrome 浏览器中使用 CSS Shaders。
-
-你可以从 CSS Shaders 规范（正在进行中）获取更多信息：
-https://dvcs.w3.org/hg/FXTF/raw-file/tip/custom/index.html
-
-# 使用 CSS Shaders 实现动画效果
-
-CSS Shaders 也可以在 CSS `keyframes` 中引用，这意味着它们可以在动画效果中使用。
-
-清单 4.7 展示了 `3DCube1SVAnimation1.html` 的内容，这是一个引用 CSS Shader 的 HTML 网页。清单 4.8 展示了 CSS 样式表 `3DCube1SVAnimation1.css` 的相关部分。文件 `3DCube1SVAnimation1.vs` 未显示，因为其内容与清单 4.6 相同。
-
-### 清单 4.7 3DCube1SVAnimation1.html
-
-```html
-<!--
-Copyright 2012 Adobe Systems, Incorporated
-This work is licensed under a Creative Commons Attribution-
-Noncommercial-Share Alike 3.0 Unported License http://creative-
-commons.org/licenses/by-nc-sa/3.0/ .
-Permissions beyond the scope of this license, pertaining to
-the examples of code included within this work are available at
-Adobe http://www.adobe.com/communities/guidelines/ccplus/commer-
-cialcode_plus_permission.html .
--->
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="utf-8"/>
-    <title>CSS 3D Cube with CSS Shaders Animation Example</title>
-    <link href="3DCube1SVAnimation1.css" rel="stylesheet">
-</head>
-
-<body>
-    <div id="outer">
-        <div id="top">Text1</div>
-        <div id="left">Text2</div>
-        <div id="right">Text3</div>
-    </div>
-
-    <p class="license">除非另有说明，代码和内容
-根据<a href="http://creativecommons.org/public-
-domain/zero/1.0/">公共领域许可证</a>授权。
-</body>
-</html>
-```
-
-清单 4.7 包含对下面清单 4.8 中 CSS 样式表的引用，但除此之外，其内容与 HTML 网页 **3DCube1.html** 相同。
-
-### 清单 4.8 3DCube1SVAnimation1.css
-
-```css
-@-webkit-keyframes wave {
-  0%, 100% {
-    -webkit-filter: custom(url(3DCube1SVAnimation1.vs),
-      20 20, phase 270.0,
-      amplitude 40, txf rotateX(30deg));
-  }
-
-  50% {
-    -webkit-filter: custom(url(3DCube1SVAnimation1.vs),
-      20 20, phase -90.0,
-      amplitude 180, txf rotateX(75deg));
-  }
-}
-
-#outer {
-  -webkit-filter: custom(url(3DCube1SVAnimation1.vs),
-    20 20, phase 270.0,
-    amplitude 40, txf rotateX(30deg));
-
-  -webkit-animation-name: wave;
-  -webkit-animation-duration: 10s;
-}
-```
-
-清单 4.8 中的每个选择器都包含基于 WebKit 的 `filter` 属性，该属性引用了顶点着色器 **3DCube1SVAnimation1.vs** 中的自定义代码。
-
-图 4.5 展示了在 MacBook 上的 Google Chrome 浏览器中启动 **3DCube1SVAnimation1.html** 和 **3DCube1CSSShaders1.html** 的结果。
-
-![图 4.5](img/6f06c2ff7e29452e50d03258ed9c6b4f_192_0.png)
-
-**图 4.5** 在 MacBook 上的 Google Chrome 浏览器中使用 CSS Shaders。
-
-尝试修改 CSS Shaders 代码，以创建有趣的图形图像变体。例如，尝试替换以下代码片段：
-
-```glsl
-pos.z = (amplitude / 1000.0) * cos(pos.x * PI * 2.0 + phi);
-```
-
-...替换为以下代码行：
-
-```glsl
-pos.z = (amplitude / 1000.0) * sin(pos.x * PI * 2.0 + phi) / cos(pos.x * PI * 2.0 + phi);
-```
-
-前面的代码片段计算的是角度的`正切`而不是角度的`余弦`。新的图形图像显示在图 4.5 中，这是在 MacBook 上的 Google Chrome 浏览器中的截图。
-
-# CSS Shaders 与分离的图块
-
-CSS Shaders 使您能够将 HTML5 网页中的图像细分为一组多个子图块，该图像可以是 JPG 文件或 SVG 文档。
-
-清单 4.9 展示了 `DetachedTiles.html` 的内容，这是一个引用 CSS 样式表的 HTML 网页。清单 4.10 展示了 CSS 样式表 `DetachedTiles.css` 的内容，该样式表又引用了清单 4.11 中的顶点着色器 `DetachedTiles.vs`。
-
-### 清单 4.9 DetachedTiles.html
-
-```html
-<!--
-Copyright 2012 Adobe Systems, Incorporated
-```
-
-## CSS着色器 - 顶点着色器 - 使用分离的图块
-
-本作品采用知识共享署名-非商业性使用-相同方式共享 3.0 未本地化版本许可协议 http://creativecommons.org/licenses/by-nc-sa/3.0/ 。超出此许可范围的权限，涉及本作品中包含的代码示例，请访问 Adobe http://www.adobe.com/communities/guidelines/ccplus/commer-cialcode_plus_permission.html 获取。
-
-```
-<!DOCTYPE html>
-<html>
-<head>
-<title>CSS Shaders - Vertex shader - using detached tiles</title>
-<link rel="stylesheet" href="DetachedTiles.css" media="all"/>
-<script src="http://adobe.github.io/web-platform-assets/js/BrowserDetector.js"></script>
-</head>
-<body>
-<h3>将鼠标悬停在图像上以查看分离的图块（沿Z轴变化）。</h3>
-<div id="content" class="shader">
-<div id="multi-col">
-<img id="png-img" src="Lauriel.jpeg" />
-</div>
-</div>
-<p class="license">除非另有说明，代码和内容均在<a href="http://creativecommons.org/public-domain/zero/1.0/">公共领域许可协议</a>下授权。</p>
-</body>
-</html>
-```
-
-清单 4.9 是一个简单的网页，包含标准HTML标记和一对嵌套的HTML `<div>`元素（对应CSS样式表中的选择器），以及一个HTML `<img>`元素，它指定了一个JPEG文件，当用户点击网页以"打开帷幕"时会被渲染。
-
-```
-.shader {
-    -webkit-filter: custom(url(DetachedTiles.vs),
-        20 20 border-box detached, amount 0.5, t 0.0, transform rotateX(0deg));
-    -webkit-filter-margin: 40%;
-    -webkit-transition: -webkit-filter linear 1s;
-}
-
-.shader:hover {
-    -webkit-filter: custom(url(DetachedTiles.vs),
-        20 20 border-box detached, amount 0.5,
-            t 1.0, transform rotateX(25deg)
-            rotateZ(-80deg));
-}
-```
-
-## 清单 4.10 DetachedTiles.css
-
-清单 4.10 中的两个选择器都包含了特定于WebKit的`filter`属性，该属性引用了顶点着色器`DetachedTiles.vs`（在清单 4.11 中显示），其代码在用户将鼠标悬停在网页内时执行动画效果。
-此外，特定于WebKit的`filter`属性指定了`amount`、`t`和`transform`的值，这些值在`DetachedTiles.vs`的计算中使用。
-
-## 清单 4.11 DetachedTiles.vs
-
-```
-/*
-Copyright 2012 Adobe Systems, Incorporated
-本作品采用知识共享署名-
-非商业性使用-相同方式共享 3.0 未本地化版本许可协议 http://creative-
-commons.org/licenses/by-nc-sa/3.0/ 。
-超出此许可范围的权限，涉及
-本作品中包含的代码示例，请访问
-Adobe http://www.adobe.com/communities/guidelines/ccplus/commer-
-cialcode_plus_permission.html 获取。
-*/
 
-precision mediump float;
+进入`/path/to/xxx`目录，找到`xxx.json`。
 
-attribute vec4 a_position;
-attribute vec2 a_texCoord;
-attribute vec3 a_triangleCoord;
+在表达式`cvar = avar + bvar`中，加法运算符（`+`）将`avar`与`bvar`相加，得到它们的和`cvar`
 
-uniform mat4 u_projectionMatrix;
+在`List.of(arg0, arg1, arg2)`中，`List`接口的工厂方法`of()`接受一系列的元素，返回包含它们的只读列表。
 
-// 这些uniform值通过CSS传入
-uniform mat4 transform;
-uniform float amount;
-uniform float t;
+之后我们这样调用`cmd`命令：`cmd arg0 arg1 arg2`。
 
-mat4 perspectiveMatrix(float p)
-{
-    float perspective = - 1.0 / p;
-    return mat4(
-        1.0, 0.0, 0.0, 0.0,
-        0.0, 1.0, 0.0, 0.0,
-        0.0, 0.0, 1.0, perspective,
-        0.0, 0.0, 0.0, 1.0);
-}
-
-// 基于图块坐标的随机函数。
-// 对于同一图块（即两个三角形）中的所有顶点，
-// 它将返回相同的值。
-float random(vec2 scale)
-{
-    // 使用片元位置作为每个像素的不同种子。
-    return fract(sin(dot(vec2(a_triangleCoord.x, a_triangleCoord.y), scale)) * 4000.0);
-}
-
-void main()
-{
-    float r = random(vec2(10.0, 80.0));
-
-    vec4 pos = a_position;
-
-    float dz = -amount * t * r;
-    vec3 tc = a_triangleCoord;
-
-    if (mod(tc.x + tc.y, 2.0) == 0.0) {
-        dz = amount * t * r;
-    }
-
-    pos.z += dz;
-
-    gl_Position = u_projectionMatrix *
-                 perspectiveMatrix(0.9) *
-                 transform * pos;
-}
-```
-
-清单 4.11 包含的代码在复杂性上并不困难，但其底层概念超出了本书范围。然而，你可以轻松使用此代码为你自己的JPG文件创建相同的效果。如果你在HTML5网页中使用SVG，还有一个好消息：你也可以用SVG创建此动画效果（这可能会让你感到惊讶！）。
-图 4.6 显示了在Macbook上的Google Chrome浏览器中启动`DetachedTiles.html`的结果，它使用文件`Laurel.jpeg`创建图形图像。
-
-![](img/6f06c2ff7e29452e50d03258ed9c6b4f_196_0.png)
-
-*图 4.6* 在Macbook上的Google Chrome浏览器中显示的CSS3分离文件。
-
-## CSS着色器与帷幕效果
-
-使用CSS着色器可以创建的最令人愉悦的视觉效果之一是帷幕动画效果，它会让你想起剧院舞台上帷幕开启的方式。你可以轻松地在CSS3中创建此效果，这意味着你可以用此功能制作一些有趣的HTML网页。
-图 4.7 显示了在Macbook上的Google Chrome浏览器中以横屏模式截取的HTML页面`Curtain.html`的启动结果。
-
-## 帷幕CSS着色器：点击内部切换开/关
-
-![](img/6f06c2ff7e29452e50d03258ed9c6b4f_197_0.png)
-
-*图 4.7* 在Macbook上的Google Chrome浏览器中显示的帷幕效果。
-
-当用户点击网页时，帷幕将打开，然后在用户再次点击网页时关闭。图 4.8 向你展示了帷幕打开时网页的内容。如果用户再次点击网页，则帷幕将关闭并恢复到原始状态。
-
-## 帷幕CSS着色器：点击内部切换开/关
-
-![](img/6f06c2ff7e29452e50d03258ed9c6b4f_197_1.png)
-
-*图 4.8* 在Macbook上的Google Chrome浏览器中显示的开启帷幕效果。
-
-以上结束了我们对一些新CSS3功能的讨论。如果你对CSS着色器感兴趣，这里是更多结合各种CSS着色器的CSS3代码示例：
-
-http://code.google.com/p/css-shader-graphics
-
-本章的下一部分将深入探讨SVG（一种基于XML的2D形状渲染技术），你可以在CSS选择器中引用它。
-
-## CSS3 和 SVG
-
-CSS3选择器可以使用CSS3的`url()`函数引用SVG文档，这意味着你可以在HTML页面中融入基于SVG的图形效果（包括动画）。一个简单的例子，清单 4.12 向你展示了如何在CSS3选择器中引用一个SVG文档。
-
-```
-#circle1 {
-  opacity: 0.5; color: red;
-  width: 250px; height: 250px;
-  position: absolute; top: 0px; left: 0px;
-  font-size: 24px;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  border-radius: 4px;
-  -webkit-background: url(Blue3DCircle1.svg) top right;
-  -moz-background: url(Blue3DCircle1.svg) top right;
-  background: url(Blue3DCircle1.svg) top right;
-}
-```
-
-## 清单 4.12 Blue3DCircle1.css
-
-清单 4.12 包含各种属性/值对，其中包含CSS `url()`函数的部分如下所示：
-
-```
-  -webkit-background: url(Blue3DCircle1.svg) top right;
-  -moz-background: url(Blue3DCircle1.svg) top right;
-  background: url(Blue3DCircle1.svg) top right;
-```
-
-此名称/值对将SVG文档`Blue3DCircle1.svg`指定为HTML5页面中`id`属性为`circle1`的HTML `<div>`元素的背景。请注意，使用带有`-moz-`前缀的属性意味着此代码可以在基于WebKit的浏览器（如Safari和Chrome）以及Firefox浏览器中工作。
-
-清单 4.13 显示了`Blue3DCircle1.html`的内容，它引用了清单 4.12 中的CSS样式表（而样式表又引用了SVG文档`Blue3DCircle1.svg`）。
-
-## 清单 4.13 Blue3DCircle1.html
-
-```
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="utf-8"/>
-    <title>SVG and CSS3 Example</title>
-    <link href="Blue3DCircle1.css" rel="stylesheet" type="text/css">
-</head>
-
-<body>
-    <div id="outer">
-        <div id="circle1"></div>
-        <article>
-            <div id="columns">
-                <p>
-第一段的第一行。第一段的第二行。第一段的第三行。第一段的第四行。第一段的第五行。第一段的第六行。第一段的第七行。第一段的第八行。第一段的第九行。第一段的第十行。第一段的第十一行。第一段的第十二行。第一段的第十三行。第一段的第十四行。
-                </p>
-                <p>
-第二段的第一行。第二段的第二行。第二段的第三行。第二段的第四行。第二段的第五行。第二段的第六行。第二段的第七行。第二段的第八行。第二段的第九行。第二段的第十行。第二段的第十一行。第二段的第十二行。第二段的第十三行。第二段的第十四行。
-                </p>
-            </div>
-        </article>
-    </div>
-</body>
-</html>
-```
-
-
-
-清单 4.13 包含一个简单的 HTML5 标记，由几个 HTML `<p>` 元素和一个 HTML5 `<article>` 元素组成。请注意，清单 4.13 中包含一个 HTML `<div>` 元素，其 `id` 属性值为 `circle1`，它在清单 4.12 中有一个对应的 CSS 选择器，该选择器引用了一个渲染不透明圆形的 SVG 文档。
-
-图 4.9 展示了在 Macbook 上的 Chrome 浏览器中渲染 HTML 页面 **Blue3DCircle1.html** 的结果。
-
-![](img/6f06c2ff7e29452e50d03258ed9c6b4f_200_0.png)
-
-## CSS3 与 SVG 柱状图
-
-既然你已经知道如何在 CSS3 选择器中引用 SVG 文档，让我们来看一个在 CSS3 选择器中引用基于 SVG 的柱状图的示例。清单 4.14 展示了 HTML5 页面 **CSS3SVGBarChart1.html** 的内容；清单 4.15 展示了 CSS3 样式表 **CSS3SVGBarChart1.css** 的内容（其选择器应用于清单 4.12 的内容）；而清单 4.14 展示了 SVG 文档 **CSS3SVGBarChart1.svg** 的内容（在清单 4.13 的一个选择器中被引用），该文档包含了用于渲染柱状图的 SVG 代码。
-
-**清单 4.14** `CSS3SVGBarChart1.html`
-
-```
-<!doctype html>
-<html en>
-<head>
-<meta charset="utf-8"/>
-<title>CSS Multi Column Text and SVG Bar Chart</title>
-<link href="CSS3SVGBarChart1.css" rel="stylesheet" type="text/css">
-</head>
-
-<body>
-<div id="outer">
-  <article>
-    <p id="line1">.</p>
-    <div id="columns">
-      <p>
-CSS enables you to define so-called "selectors" that specify the
-style or the manner in which you want to render elements in an
-HTML page. CSS helps you modularize your HTML content and since
-you can place your CSS definitions in a separate file, you can
-also re-use the same CSS definitions in multiple HTML files.</p>
-      <p>
-Moreover, CSS also enables you to simplify the updates that you
-need to make to elements in HTML pages. For example, suppose that
-multiple HTML table elements use a CSS rule that specifies the
-color red. If you later need to change the color to blue, you can
-effect such a change simply by making one change (i.e., changing
-red to blue) in one CSS rule.</p>
-      <p>
-Without a CSS rule, you would be forced to manually update the
-color attribute in every HTML table element that is affected,
-which is error-prone, time-consuming, and extremely inefficient.</p>
-      <p>
-As you can see, it's very easy to reference an SVG document in
-CSS selectors, and in this example, an SVG-based bar chart is ren-
-dered on the left-side of the screen.</p>
-    </div>
-
-    <p id="line1">.</p>
-  </article>
-</div>
-<div id="chart1">
-</div>
-</body>
-</html>
-```
-
-在第 2 章中，你看到了一个渲染多列文本的示例，清单 4.14 的内容本质上与该示例相同。然而，这里有一个额外的 HTML `<div>` 元素（其 `id` 属性值为 `chart1`），它用于通过清单 4.15 中的 CSS 选择器来渲染一个 SVG 柱状图。
-
-### 清单 4.15 CSS3SVGBbarChart1.css
-
-```
-#columns {
-    -webkit-column-count : 4;
-    -webkit-column-gap : 40px;
-    -webkit-column-rule : 1px solid rgb(255,255,255);
-    column-count : 3;
-    column-gap : 40px;
-    column-rule : 1px solid rgb(255,255,255);
-}
-```
-
-```
-#line1 {
-    color: red;
-    font-size: 24px;
-    background-image: -webkit-gradient(linear, 0% 0%, 0% 100%,
-    from(#fff), to(#f00));
-    background-image: -gradient(linear, 0% 0%, 0% 100%, from(#fff),
-    to(#f00));
-    -webkit-border-radius: 4px;
-    border-radius: 4px;
-}
-```
-
-```
-#chart1 {
-    opacity: 0.5;
-    color: red;
-    width: 800px;
-    height: 50%;
-    position: absolute; top: 20px; left: 20px;
-    font-size: 24px;
-    -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
-    border-radius: 4px;
-    border-radius: 4px;
-    -webkit-background: url(CSS3SVGBbarChart1.svg) top right;
-    -moz-background: url(CSS3SVGBbarChart1.svg) top right;
-    background: url(CSS3SVGBbarChart1.svg) top right;
-}
-```
-
-`#chart` 选择器包含各种属性，以及对一个 SVG 文档（该文档渲染了一个实际的柱状图）的引用，如下所示：
-
-```
--webkit-background: url(CSS3SVGBbarChart1.svg) top right;
--moz-background: url(CSS3SVGBbarChart1.svg) top right;
-background: url(CSS3SVGBbarChart1.svg) top right;
-```
-
-既然你已经看到了 HTML5 页面的内容和 CSS 样式表中的选择器，让我们来看一下渲染柱状图的 SVG 文档。
-
-### 178 • jQuery、CSS3 与 HTML5 适用于移动与桌面设备
-
-清单 4.16 CSS3SVGBarChart1.svg
-
-```
-<?xml version="1.0" encoding="iso-8859-1"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20001102//EN"
-"http://www.w3.org/TR/2000/CR-SVG-20001102/DTD/svg-20001102.dtd">
-
-<svg xmlns="http://www.w3.org/2000/svg"
-     xmlns:xlink="http://www.w3.org/1999/xlink"
-     width="100%" height="100%">
-  <defs>
-    <linearGradient id="pattern1">
-      <stop offset="0%"    stop-color="yellow"/>
-      <stop offset="40%"   stop-color="red"/>
-      <stop offset="80%"   stop-color="blue"/>
-    </linearGradient>
-
-    <radialGradient id="pattern2">
-      <stop offset="0%"    stop-color="yellow"/>
-      <stop offset="40%"   stop-color="red"/>
-      <stop offset="80%"   stop-color="blue"/>
-    </radialGradient>
-
-    <radialGradient id="pattern3">
-      <stop offset="0%"    stop-color="red"/>
-      <stop offset="30%"   stop-color="yellow"/>
-      <stop offset="60%"   stop-color="white"/>
-      <stop offset="90%"   stop-color="blue"/>
-    </radialGradient>
-  </defs>
-
-  <g id="chart1" transform="translate(0,0) scale(1,1)">
-    <rect width="30" height="235" x="15"  y="15"  fill="black"/>
-    <rect width="30" height="240" x="10"  y="10"
-          fill="url(#pattern1)"/>
-
-    <rect width="30" height="145" x="45"  y="105" fill="black"/>
-    <rect width="30" height="150" x="40"  y="100"
-          fill="url(#pattern2)"/>
-
-    <rect width="30" height="195" x="75"  y="55"  fill="black"/>
-    <rect width="30" height="200" x="70"  y="50"
-          fill="url(#pattern1)"/>
-
-    <rect width="30" height="185" x="105" y="65"  fill="black"/>
-    <rect width="30" height="190" x="100" y="60"
-          fill="url(#pattern3)"/>
-
-    <rect width="30" height="145" x="135" y="105" fill="black"/>
-    <rect width="30" height="150" x="130" y="100"
-          fill="url(#pattern1)"/>
-
-    <rect width="30" height="225" x="165" y="25"  fill="black"/>
-    <rect width="30" height="230" x="160" y="20"
-          fill="url(#pattern2)"/>
-
-    <rect width="30" height="145" x="195" y="105" fill="black"/>
-    <rect width="30" height="150" x="190" y="100"
-          fill="url(#pattern1)"/>
-
-    <rect width="30" height="175" x="225" y="75"  fill="black"/>
-    <rect width="30" height="180" x="220" y="70"
-          fill="url(#pattern3)"/>
-  </g>
-
-  <g id="chart2" transform="translate(250,125) scale(1,0.5)"
-           width="100%" height="100%">
-    <use xlink:href="#chart1"/>
-  </g>
-</svg>
-```
-
-清单 4.16 包含一个 SVG `<defs>` 元素，其中定义了三个渐变（一个线性渐变和两个径向渐变），它们的 `id` 属性值分别为 `pattern1`、`pattern2` 和 `pattern3`。这些渐变在用于渲染一组矩形条的 SVG `<g>` 元素中通过它们的 `id` 被引用。第二个 SVG `<g>` 元素（其 `id` 属性值为 `chart2`）执行了一个涉及 SVG `translate()` 和 `scale()` 函数的变换，然后渲染实际的柱状图，如以下代码所示：
-
-```
-<g id="chart2" transform="translate(250,125) scale(1,0.5)"
-           width="100%" height="100%">
-  <use xlink:href="#chart1"/>
-</g>
-```
-
-图 4.10 展示了在 `CSS3SVGBarChart1.css` 中的选择器与 `CSS3SVGBarChart1.html` 页面中的元素相匹配的结果，这是一张从运行在 Asus Prime Android ICS 10 英寸平板电脑上的 Android 应用程序截取的横屏模式截图。
-
-### 180 • jQuery、CSS3 与 HTML5 适用于移动与桌面设备
-
-![](img/6f06c2ff7e29452e50d03258ed9c6b4f_205_0.png)
-
-## 在 SVG 中渲染 3D 曲面
-
-虽然 SVG 不提供 3D 支持，但你可以基于 JavaScript 和 SVG 的组合来创建 3D 效果。事实上，你可以在此处找到大量说明 3D 效果的 SVG 代码示例：
-
-http://code.google.com/p/svg-filter-graphics
-
-图 4.11 展示了在 Macbook 上的 Chrome 浏览器中渲染 TroughPattern3S2.svg（它是前面提到的开源项目的一部分）的结果。请注意，Android ICS 不支持 SVG 滤镜。
-
-![](img/6f06c2ff7e29452e50d03258ed9c6b4f_205_1.png)
-
-
-
-如果您对使用SVG创建3D效果感兴趣，可以在此处获取更多信息（包括矩阵操作的详细信息）和代码示例：
-
-http://msdn.microsoft.com/en-us/library/hh535759(v=vs.85).aspx
-
-如果您对其他使用SVG的工具包感兴趣，可以在DVD的附录中找到关于D3和Raphael的信息，以及各种代码示例。
-
-## SVG和CSS3之间的异同
-
-本节简要总结了SVG和CSS3共有的特性，以及每种技术独有的特性。第2章至第4章和附录A包含了阐释本节总结的许多特性的代码示例。顺便提一下，第11章总结了SVG和HTML5 Canvas之间的异同，这将使您很好地理解这三种重要技术之间的关系。
-
-SVG和CSS3都支持以下内容：
-
-- 线性和径向渐变
-- 2D图形和动画效果
-- 创建矩形、圆形和椭圆形等形状的能力
-- WAI ARIA
-
-SVG提供了以下CSS3不具备的功能支持：
-
-- 贝塞尔曲线
-- 分层对象定义
-- 自定义字形
-- 沿任意路径渲染文本
-- 在SVG对象上定义事件监听器
-- 使用JavaScript以编程方式创建2D形状
-- “访问”基于XML的技术和工具
-
-![](img/6f06c2ff7e29452e50d03258ed9c6b4f_206_0.png)
-
-CSS3提供了以下SVG不具备的功能支持：
-
-- 3D图形和动画效果
-- 文本的多列渲染
-- 面向WebGL的功能（例如CSS着色器）
-
-请注意，SVG滤镜和CSS滤镜在不久的将来将合二为一。
-
-通常，SVG比CSS3更适合用于数据可视化的大规模数据集，您可以在CSS3选择器中使用CSS3 `url()`函数来引用SVG文档（该文档可能渲染某种类型的图表）。您已经在第3章中看到了这样的示例，其中SVG文档包含条形图的布局。通常，当数据从一个或多个来源（如数据库和Web服务）检索或聚合，然后使用某种编程语言（如XSLT、Java或JavaScript）进行操作以编程方式创建SVG文档或在浏览器会话中编程方式创建SVG元素时，可能涉及额外的处理。
-
-## CSS3工具包和IDE
-
-目前有两个优秀的CSS3 IDE可用：Sencha Animator和Adobe Edge，它们都简化了创建和生成基于CSS3的网页选择器。这两个IDE都不需要您编写任何代码，因此对Web设计师和Web开发者都易于上手。但是，如果您想要一个提供对CSS3进行更多编程访问的工具包，可以使用AliceJS，这是一个开源工具包。
-
-目前，这些工具可免费下载，因此您可以尝试使用这些产品（以及其他可用的IDE），以确定哪一个适合您的需求。
-
-### Sencha Animator
-
-Sencha Animator是一款桌面应用程序，用于为WebKit浏览器和移动设备开发CSS3动画，其主页（包含下载链接）在这里：
-
-http://www.sencha.com/products/animator
-
-Sencha Animator使您能够创建各种2D形状，并支持过渡、2D/3D变换、动画效果以及用于修改形状属性的属性面板。此外，Sencha Animator允许您定义自定义CSS效果，支持的设备包括iPhone、iPad、iPod Touch、BlackBerry Torch、Android和Google Chrome。
-
-Sencha Animator和Adobe Edge（将在下一节讨论）提供了一些类似的功能，但它们在支持的功能方面确实存在显著差异。
-
-您可以在以下博客文章中获取更详细的信息：
-http://www.sencha.com/blog/rocking-the-boat-of-flash-with-css3-animations/
-
-有关Sencha Animator的几个视频可用，它们可以让您概览如何使用Sencha Animator的功能：
-http://vimeo.com/16219355
-http://notes.sencha.com/post/1416864756/sencha-animator-introduction-video-19-47
-
-执行下载和安装后，启动Sencha Animator并创建一个新项目以尝试各种功能。有一个导出功能，使您能够将项目内容导出为HTML5页面。
-
-例如，在创建一个包含圆形、矩形（带简单动画）、线段和文本的Sencha Animator项目，然后导出该项目后，生成的HTML页面index.html包含所有必要的CSS3代码和HTML标记。
-
-了解Sencha Animator的最佳方式是安装该工具并探索其功能。
-
-### Adobe Edge
-
-Adobe Edge是一款使您能够使用HTML5、CSS3和JavaScript创建动画和交互内容的工具，其主页在这里：
-http://labs.adobe.com/technologies/edge/
-
-习惯于Adobe产品套件的设计者会非常喜欢Adobe Edge。
-
-Adobe Edge使用户能够快速开发复杂且专业外观的视觉效果。Adobe Edge的一些优势包括：
-
-- 导入GIF、JPG、PNG或SVG文件
-- 使用时间线编辑器编排动画
-- 在属性级别上动画化位置、大小、颜色、形状和旋转
-- 复制/粘贴过渡并反转它们
-- 支持超过25种内置缓动效果
-
-更多Adobe Edge功能请参见：
-http://labs.adobe.com/technologies/edge/?tabID=details#tabTop
-
-Adobe Edge发行说明：
-http://download.macromedia.com/pub/labs/edge/edge_p1_releasenotes.pdf
-http://news.cnet.com/8301-30685_3-20085619-264/adobe-dives-into-html-with-new-edge-software/
-
-### AliceJS
-
-AliceJS是“轻量级独立CSS引擎”的缩写，它支持基于CSS3的图形和动画效果。AliceJS主页在这里：
-http://blackberry.github.com/Alice/
-
-AliceJS是一个独立的JavaScript工具包，通过CSS操作设置动画。AliceJS由一组模块化的JavaScript文件组成，每个文件执行一个效果。不需要图像或CSS依赖项。AliceJS不执行事件处理，但您可以使用AliceJS来动画化jQuery UI组件。
-
-## 总结
-
-本章以结合SVG与CSS3的示例开始，接着概述了CSS3的一些令人兴奋的新功能。特别是，您了解了以下主题：
-
-- CSS Flexbox概述
-- 带代码示例的CSS区域
-- 带代码示例的CSS着色器
-- 如何在CSS3选择器中引用SVG文档
-
-CSS3和SVG支持创建复杂效果的附加功能，您可以通过互联网搜索找到讨论这些功能的链接。
-
-下一章将向您介绍jQuery，您将看到使用jQuery的HTML5网页，这些网页在华硕Prime平板电脑和Sprint Nexus S 4G智能手机（均运行Android ICS）以及iPad 3上渲染。
-
-# 第5章
-
-## JQUERY基础
-
-本章介绍jQuery，并提供使用jQuery API操作HTML5网页中元素的示例。jQuery是一个极受欢迎的开源JavaScript工具包，它在JavaScript之上提供了一层抽象层，以方便创建在多个浏览器中运行的HTML网页。您可以从jQuery网站下载压缩的生产版本用于生产网站，或下载未压缩的开发版本（这是一个更大但可读的文件，因为它包含注释和空格）：
-
-http://jquery.org
-
-本章第一部分提供了jQuery的介绍，以及如何在HTML5网页中使用jQuery的示例。本节包含许多代码片段，展示了有用的jQuery命令的语法；但是，后面的章节包含详细的代码示例，向您展示如何在更符合上下文的环境中使用许多这些jQuery命令。
-
-本章第二部分包含如何在jQuery中创建动画效果的示例，例如切换HTML `<div>`元素的可见性和更新CSS3属性的值。您还将看到如何使用jQuery在CSS3选择器中设置属性以创建2D和3D图形效果，包括动画。
-
-请记住，jQuery章节主要旨在帮助您获得对jQuery和jQuery Mobile的工作知识。这些知识将帮助您学习如何创建包含jQuery、CSS3和其他HTML5相关技术组合的HTML5网页。此外，本书中可能涵盖了一些对您有用的jQuery函数。因此，阅读jQuery文档可能值得您花些时间，该文档提供了许多有用的代码块和在线示例。
-
-
-
-## 什么是 jQuery？
-
-jQuery 是一个开源的 JavaScript 工具包，它使你能够编写跨浏览器和跨平台的 JavaScript 代码，用于管理 HTML 网页中的元素，包括查找、创建、更新和删除元素及其属性，还包括添加或移除与样式相关的属性。
-
-jQuery 一些重要且实用的功能（不分先后）包括它对以下方面的支持：
-
--   跨浏览器代码
--   第三方 jQuery 插件
--   可定制主题的小部件
--   事件处理
--   Ajax 支持
--   更简洁的 DOM 遍历
-
-jQuery 是一个可扩展的工具包，目前有数千个 jQuery 插件，涵盖多个类别。筛选可用的插件需要一些功夫，但这样做是完全值得的，特别是当你找到一个插件，可以让你免于编写和维护自己的代码来实现特定功能时。插件通常有一个相关的演示页面，以及其他用户的评分，这可以大大简化选择过程。
-
-jQuery 项目也分为四个部分：
-
--   jQuery 核心：我们将在本书中使用这部分代码
--   jQuery UI：动画、高级效果和可定制主题的小部件
--   QUnit：一个单元测试工具包
--   Sizzle：一个基于 JavaScript 的 CSS 选择器引擎
-
-在本书中，我们将重点介绍 jQuery 核心功能，并包含一些用于创建动画效果的 jQuery UI 功能。请访问 jQuery 主页以获取关于 jQuery 其他两个组件的更多信息。
-
-## 在 HTML5 网页中引用 jQuery 文件
-
-在 HTML 网页中引用 jQuery JavaScript 文件至少有四种方式：
-
--   下载 jQuery 文件并在你的 HTML5 网页中使用本地引用
--   下载 jQuery 文件并使用“通用”引用
--   通过 http 引用 jQuery 文件
--   使用 CDN（内容分发网络）
-
-第一种方法要求你在需要更新版本的 jQuery 时获取最新的 jQuery 代码。你还需要在 HTML5 网页中修改版本号。
-
-第二种方法涉及使用 `jquery-latest.js` 这样的名称创建下载的 jQuery 代码的副本。每次你下载新版本的 jQuery 时，你都不需要修改 HTML5 网页中的 jQuery 版本，但你仍然需要记住 HTML5 网页中引用的 jQuery 版本。
-
-第三种方法消除了下载文件的需要，但当你需要引用更新版本的 jQuery 时，你仍然需要在 HTML5 网页中修改版本号。请注意，本书中的许多 jQuery 示例使用第三种或第四种方法，而不是在本地下载文件。
-
-## 不使用 jQuery 的 HTML 网页
-
-在深入 jQuery 代码示例之前，让我们简要看看一些可用的非 jQuery JavaScript 方法：
-
--   `getElementById()`
--   `getElementsByTagName()`
--   `getElementByClassName()`
--   `querySelector()`
--   `querySelectorAll()`
-
-前三种方法的命名很直观，并且在 jQuery 中有对应的方法。`querySelectorAll` 方法支持伪选择器，这使你能够根据简单或复杂的选择条件选择元素集。例如，以下代码行将 `showAlert2` JavaScript 函数绑定到 id 值为 `outer` 的 HTML `<div>` 元素的第一个 HTML `<p>` 元素，这意味着每当用户点击这个 `<p>` 元素时，JavaScript 函数 `showAlert2` 就会执行：
-
 ```
-document.querySelector("#outer p:first-child").onclick = showAlert2;
+if (condVar > someVal) {console.log("xxx")}
 ```
 
-本节中的代码示例是一个简单的例子，说明如何使用 JavaScript 为 HTML 元素附加事件监听器。
-清单 5.1 显示了 `QuerySelectors1.html` 的内容，它说明了如何为 HTML 网页中的元素附加点击处理程序。
 
-### 清单 5.1 QuerySelectors1.html
-
-```
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8"/>
-  <title>JavaScript Query Selector</title>
-
-  <script>
-    function clickElements() {
-      var divList = document.querySelectorAll("#outer div");
-      for(var v=0; v<divList.length; v++) {
-        divList[v].onclick=showAlert;
-      }
-
-      document.querySelector("#outer").onclick = showAlert2;
-    }
-  </script>
-</head>
-```
-
-```
-function showAlert() {
-    var id = this.id;
-    alert("You clicked inner <div> "+id);
-}
-
-function showAlert2() {
-    var id = this.id;
-    alert("You clicked outer <div> "+id);
-}
-
-window.onload = clickElements;
-</script>
-</head>
-
-<body>
-<div id="outer">Outer DIV
-    <div id="inner1">Inner DIV1 </div>
-    <div id="inner2">Inner DIV2 </div>
-    <div id="inner3">Inner DIV3 </div>
-</div>
-</body>
-</html>
-```
-
-清单 5.1 包含 JavaScript 函数 `clickElements()`，该函数遍历 id 属性值为 `outer` 的 HTML `<div>` 元素的子元素 HTML `<div>` 元素列表，然后为每个这样的 HTML `<div>` 元素添加一个名为 `showAlert()` 的点击事件监听器。请注意，该函数还为父级 HTML `<div>` 元素添加了点击事件监听器 `showAlert2()`。
-
-当用户打开此网页时，由于以下代码片段，函数 `clickElements()` 会被执行：
-
-```
-window.onload = clickElements;
-```
-
-清单 5.1 的最后部分包含一个 HTML `<body>` 元素，其中包含由 `clickElements()` 函数处理的 HTML `<div>` 元素。
-
-显然，清单 5.1 包含的代码简单易读易懂，但当需要为多个版本的多个浏览器编写 JavaScript 代码时，创建（以及调试、维护和增强）HTML 网页会变得更加复杂。想象一下，你需要开发和维护一个不简单的 Web 应用程序，除了 Firefox 和基于 WebKit 的浏览器外，还需要支持 Internet Explorer 6（及更高版本）。这样的应用程序在维护和进行增强方面会变得繁琐且困难。
-
-因此，如果需要操作更复杂的元素选择，本节开头列出的 JavaScript 方法是不够的，这也是使用 JavaScript 工具包的一个原因。一个解决方案是使用 jQuery（以及用于移动网页的 jQuery Mobile）来快速轻松地创建跨浏览器的网页。jQuery 的优点在于，你可以避免处理 JavaScript 中繁琐的细节，专注于实现 HTML 网页的功能。
-
-## 使用 jQuery 在网页中查找元素
-
-上一节的代码向你展示了如何为 HTML 网页中的元素添加事件监听器。现在让我们看看如何使用 jQuery 以跨浏览器的方式管理网页中的元素。
-
-要记住的一个关键点是，“$” 前缀是 jQuery 函数，它是 `jQuery()` 的简写形式，这意味着以下两行代码是相同的：
-
-```
-var pElements1 = $("p");
-var pElements2 = jQuery("p");
-```
 
 第三种选项是使用 `window.jQuery`，但这不如使用 `jQuery` 或简单的“$”美元符号常见。
 
@@ -6193,8 +4996,6 @@ $("ul li#item4").next().next().css({'font-size':24,
 ```
 var pElements = $("p");
 ```
-
-
 
 # 使用 jQuery 的 "Hello World" 网页
 
@@ -6245,13 +5046,13 @@ $(document).ready(function(){
 
 上述构造确保 DOM 已加载到内存中，因此可以安全地访问和操作 DOM 元素。
 
-你可以使用 $ 符号来表示 jQuery，并且可以使用 jQuery 的 attr() 函数获取 HTML 元素（如 `<p>` 元素）的属性值。例如，你可以按如下方式获取 HTML `<p>` 元素的 id 属性值：
+你可以使用 $ 符号来表示 jQuery，并且可以使用 jQuery 的 `attr()` 函数获取 HTML 元素（如 `<p>` 元素）的属性值。例如，你可以按如下方式获取 HTML `<p>` 元素的 `id` 属性值：
 
 ```
 var pId = $("p").attr("id");
 ```
 
-你可以使用 jQuery 的 text() 函数获取 HTML `<p>` 元素中的文本字符串，如下所示：
+你可以使用 jQuery 的 `text()` 函数获取 HTML `<p>` 元素中的文本字符串，如下所示：
 
 ```
 // 获取 <p> 元素中的文本
@@ -6259,7 +5060,7 @@ var pText = $("p").text();
 console.log (pId+' says '+pText);
 ```
 
-最后，你可以使用 jQuery 的 text() 函数更新 HTML `<p>` 元素中的文本，如下所示：
+最后，你可以使用 jQuery 的 `text()` 函数更新 HTML `<p>` 元素中的文本，如下所示：
 
 ```
 // 更新 <p> 元素中的文本
@@ -6311,13 +5112,13 @@ var pText = $("p").text();
 </body>
 ```
 
-以粗体突出显示的文本是修改后的代码，它仅使用 jQuery 的 :eq() 限定符来操作第一个 HTML `<p>` 元素。jQuery 提供了丰富的限定符和函数集，用于选择元素的子集。此外，你可以通过“方法链”（稍后讨论）将 jQuery 函数组合起来，从而编写出非常简洁而又复杂的 jQuery 代码来操作 HTML 网页中的元素。
+以粗体突出显示的文本是修改后的代码，它仅使用 jQuery 的 `:eq()` 限定符来操作第一个 HTML `<p>` 元素。jQuery 提供了丰富的限定符和函数集，用于选择元素的子集。此外，你可以通过“方法链”（稍后讨论）将 jQuery 函数组合起来，从而编写出非常简洁而又复杂的 jQuery 代码来操作 HTML 网页中的元素。
 
 ## 在 jQuery 中使用 Web 存储
 
-在第 1 章中，你学习了 HTML5 的 localStorage，你已经对 jQuery 有了足够的了解，知道如何读取用户输入的字符串，然后如何将这些字符串存储到浏览器的 localStorage 中。尽管最好不要在 localStorage 中存储敏感信息（如密码），但此示例说明了如何存储上下文信息，以便在不同的浏览器会话中进行检索。
+在第 1 章中，你学习了 HTML5 的 `localStorage`，你已经对 jQuery 有了足够的了解，知道如何读取用户输入的字符串，然后如何将这些字符串存储到浏览器的 `localStorage` 中。尽管最好不要在 `localStorage` 中存储敏感信息（如密码），但此示例说明了如何存储上下文信息，以便在不同的浏览器会话中进行检索。
 
-清单 5.3 展示了 JQLoginLS.html 的内容，该示例说明了如何创建一个使用 jQuery 和 localStorage 的登录页面。
+清单 5.3 展示了 JQLoginLS.html 的内容，该示例说明了如何创建一个使用 jQuery 和 `localStorage` 的登录页面。
 
 清单 5.3 JQLoginLS.html
 
@@ -6371,7 +5172,7 @@ $(document).ready(function(){
 
 清单 5.3 引用了所需的 jQuery 文件，然后包含了一个简单 HTML 表单的代码，用于捕获用户名和密码。
 
-用于在 localStorage 中访问和存储用户名和密码的 jQuery 代码位于 HTML 按钮的 click 事件处理程序中，如下所示：
+用于在 `localStorage` 中访问和存储用户名和密码的 jQuery 代码位于 HTML 按钮的 `click` 事件处理程序中，如下所示：
 
 ```
 var username = $("#username").val();
@@ -6387,7 +5188,7 @@ if(userExists && username == userExists) {
 }
 ```
 
-上述代码块还执行了一些简单的验证，并且在 jQuery 中使用 val() 函数检索文本字段的值，如下所示：
+上述代码块还执行了一些简单的验证，并且在 jQuery 中使用 `val()` 函数检索文本字段的值，如下所示：
 
 ```
 var username = $("#username").val();
@@ -6402,13 +5203,13 @@ var password = $("#password").val();
 
 ## 使用 QUERYING 和 MODIFYING THE DOM 与 JQUERY
 
-在本章的前面部分，你已经了解了如何使用 jQuery 的 eq() 选择器在一组 `<p>` 元素中找到第一个 HTML `<p>` 元素。本节将向你展示如何使用各种 jQuery 修饰符，这些修饰符使得在 HTML5 网页中查找和更新元素变得非常容易。代码示例很短，因为它们只说明了一两个限定符，但你显然可以将它们组合起来执行非常复杂的 DOM 遍历和上下文敏感的 DOM 元素修改。
+在本章的前面部分，你已经了解了如何使用 jQuery 的 `eq()` 选择器在一组 `<p>` 元素中找到第一个 HTML `<p>` 元素。本节将向你展示如何使用各种 jQuery 修饰符，这些修饰符使得在 HTML5 网页中查找和更新元素变得非常容易。代码示例很短，因为它们只说明了一两个限定符，但你显然可以将它们组合起来执行非常复杂的 DOM 遍历和上下文敏感的 DOM 元素修改。
 
-本节代码示例中讨论的一些限定符包括 :first、:last、:even 和 :odd。选择器的部分列表包括 :eq()、:lt()、:gt()、:has()、:contains() 和 :eq()。
+本节代码示例中讨论的一些限定符包括 `:first`、`:last`、`:even` 和 `:odd`。选择器的部分列表包括 `:eq()`、`:lt()`、`:gt()`、`:has()`、`:contains()` 和 `:eq()`。
 
 ### 使用 :first 和 :last 限定符查找和修改元素
 
-本节中的示例将向你展示如何使用 jQuery 的 :first 和 :last 限定符来操作 HTML 元素中的文本。
+本节中的示例将向你展示如何使用 jQuery 的 `:first` 和 `:last` 限定符来操作 HTML 元素中的文本。
 
 清单 5.4 展示了 JQModifyElements1.html 的内容，该示例说明了如何交换两个 `<p>` 元素的内容。
 
@@ -6416,8 +5217,6 @@ var password = $("#password").val();
 清单 5.4 JQModifyElements1.html
 <!DOCTYPE html>
 ```
-
-
 
 清单 5.4 引用了所需的 jQuery 文件，添加了两个 HTML `<p>` 元素，然后提取了第一个 `<p>` 元素的 `id` 属性值和文本内容，如下所示：
 
@@ -6435,6 +5234,7 @@ $("p:last").html(pText1);
 ```
 
 尽管 jQuery 代码很简单，但这说明了通过可用的 jQuery 函数，你可以轻松地操作 HTML 网页中的 HTML 元素。
+
 顺便说一下，你可以通过以下两行代码获取和设置 HTML `<input>` 字段（其 `id` 属性值为 `myInput`）的值：
 
 ```javascript
@@ -6447,11 +5247,13 @@ $("#myInput").text("new input value");
 ![](img/6f06c2ff7e29452e50d03258ed9c6b4f_225_0.png)
 
 **图 5.2** 在搭载 Android ICS 的华硕 Prime 平板电脑上使用 jQuery 修改元素。
+
 下一节将向你展示如何使用 jQuery 方法，通过 jQuery 限定符 `:even()` 和 `:odd()` 来设置元素集合。
 
 ## 使用 :even 和 :odd 限定符查找元素
 
 本节中的示例展示了更复杂的操作，例如用单行代码设置所有偶数或奇数 HTML `<p>` 元素的颜色。
+
 清单 5.5 展示了 `JQFindByEvenOrOdd1.html` 的内容，演示了如何根据元素在 HTML 网页中的相对位置（如第一个、最后一个、偶数或奇数）来选择和更新元素。
 
 ### 清单 5.5 JQFindByEvenOrOdd1.html
@@ -6631,19 +5433,17 @@ jQuery 使用与 CSS 选择器相同的语法：“#”符号表示 `id` 属性�
 $("p.Michelle").css({'font-size':20, color:'blue'});
 ```
 
-
-
-你可以使用`addClass()`方法为HTML元素添加CSS类，如下面的示例所示：
+你可以使用 `addClass()` 方法为 HTML 元素添加 CSS 类，如下面的示例所示：
 
 ```javascript
-// 添加CSS类css-class1
+// 添加 CSS 类 css-class1
 $('div').addClass('class1');
 ```
 
-最后，你可以使用`removeClass()`方法从HTML元素中移除CSS类，如下面的示例所示：
+最后，你可以使用 `removeClass()` 方法从 HTML 元素中移除 CSS 类，如下面的示例所示：
 
 ```javascript
-// 移除CSS类css-class1
+// 移除 CSS 类 css-class1
 $('div').removeClass('class2');
 ```
 
@@ -6658,9 +5458,9 @@ $("ul li#item4").prev().css({'font-size':24,
 
 ## 查找和设置元素属性
 
-你已经了解了如何使用各种jQuery函数来操作元素，以及如何查找属性值。本节包含更新元素属性的示例。
+你已经了解了如何使用各种 jQuery 函数来操作元素，以及如何查找属性值。本节包含更新元素属性的示例。
 
-以下代码片段获取元素的`src`属性值：
+以下代码片段获取元素的 `src` 属性值：
 
 ```javascript
 var $source = $("img").attr("src");
@@ -6682,9 +5482,9 @@ $("img").attr({
 });
 ```
 
-请注意，jQuery `attr()`方法的语法与jQuery `css()`方法非常相似，因此当你理解了一个函数，你也会理解另一个函数。
+请注意，jQuery `attr()` 方法的语法与 jQuery `css()` 方法非常相似，因此当你理解了一个函数，你也会理解另一个函数。
 
-HTML5支持自定义属性，前提是属性名称以字符串`data-`开头，后跟一个属性名称。虽然你现在可能不需要使用自定义属性，但jQuery Mobile严重依赖于自定义属性，因此此功能非常有用。你可以使用jQuery `.data()`方法检索自定义属性的值。例如，假设你的HTML网页包含以下代码片段：
+HTML5 支持自定义属性，前提是属性名称以字符串 `data-` 开头，后跟一个属性名称。虽然你现在可能不需要使用自定义属性，但 jQuery Mobile 严重依赖于自定义属性，因此此功能非常有用。你可以使用 jQuery `.data()` 方法检索自定义属性的值。例如，假设你的 HTML 网页包含以下代码片段：
 
 ```html
 <div data-role="page" data-value="99" data-status="new"></div>
@@ -6698,17 +5498,17 @@ $("div").data("value") 返回值 99
 $("div").data("status") 返回值 true
 ```
 
-你将在jQuery Mobile代码示例中看到更多操作自定义数据属性的例子，如果你真的有野心，可以在jQuery Mobile源代码中找到更多示例。
+你将在 jQuery Mobile 代码示例中看到更多操作自定义数据属性的例子，如果你真的有野心，可以在 jQuery Mobile 源代码中找到更多示例。
 
 ## 查找表单元素及其属性
 
-jQuery使你能够使用直观的语法根据各种条件选择HTML表单元素。例如，你可以使用下面列出的选择器来查找处于各种状态（已选中、未选中、隐藏、可见）的元素（复选框、输入字段等）：
+jQuery 使你能够使用直观的语法根据各种条件选择 HTML 表单元素。例如，你可以使用下面列出的选择器来查找处于各种状态（已选中、未选中、隐藏、可见）的元素（复选框、输入字段等）：
 
-- `:checkbox`（`type`属性为`checkbox`的元素）
+- `:checkbox`（`type` 属性为 `checkbox` 的元素）
 - `:checked`（已选中的单选按钮和复选框）
 - `:input`（按钮、输入框、选择框和文本域）
-- `:radio`（`type`属性为“radio”的元素）
-- `:text`（`type`属性为“text”的元素）
+- `:radio`（`type` 属性为 “radio” 的元素）
+- `:text`（`type` 属性为 “text” 的元素）
 - `:hidden`（选择隐藏元素）
 - `:visible`（选择可见元素）
 
@@ -6720,24 +5520,24 @@ var textCount = $(":text").length;
 
 你可以使用以下选择器根据属性值选择元素：
 
-`[attribute!=somevalue]`选择属性不等于`somevalue`的元素。
+`[attribute!=somevalue]` 选择属性不等于 `somevalue` 的元素。
 
-如果你编写过处理HTML表单元素的JavaScript代码，那么你可以很容易地看到这些选择器在编写对应的jQuery代码时有多大的用处。
+如果你编写过处理 HTML 表单元素的 JavaScript 代码，那么你可以很容易地看到这些选择器在编写对应的 jQuery 代码时有多大的用处。
 
-## 使用`nth-child()`查找元素
+## 使用 `nth-child()` 查找元素
 
-你知道如何在CSS中使用`:even`和`:odd`来指定元素集合中处于偶数位置和奇数位置的元素；如果你喜欢这个功能，那么你一定会喜欢jQuery的`nth-child()`操作符，它使你能够指定算术表达式以及`:even`、`:odd`和特定的位置值。
+你知道如何在 CSS 中使用 `:even` 和 `:odd` 来指定元素集合中处于偶数位置和奇数位置的元素；如果你喜欢这个功能，那么你一定会喜欢 jQuery 的 `nth-child()` 操作符，它使你能够指定算术表达式以及 `:even`、`:odd` 和特定的位置值。
 
-清单5.7展示了`JQFindByCSS3StyleExpressions1.html`的内容，它演示了如何使用jQuery选择器`nth-child()`在HTML网页中选择和更新元素。
+清单 5.7 展示了 `JQFindByCSS3StyleExpressions1.html` 的内容，它演示了如何使用 jQuery 选择器 `nth-child()` 在 HTML 网页中选择和更新元素。
 
-### 清单5.7 JQFindByCSS3StyleExpressions1.html
+### 清单 5.7 JQFindByCSS3StyleExpressions1.html
 
 ```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8"/>
-    <title>使用jQuery的find方法</title>
+    <title>使用 jQuery 的 find 方法</title>
 
     <script src="http://code.jquery.com/jquery-1.7.1.min.js">
     </script>
@@ -6794,7 +5594,7 @@ var textCount = $(":text").length;
 </html>
 ```
 
-清单5.6包含一个无序元素列表，以及以下用于切换第一个和最后一个列表元素文本的代码。这段代码与清单5.4中切换第一个和最后一个`<p>`元素文本的代码类似：
+清单 5.6 包含一个无序元素列表，以及以下用于切换第一个和最后一个列表元素文本的代码。这段代码与清单 5.4 中切换第一个和最后一个 `<p>` 元素文本的代码类似：
 
 ```javascript
 // 获取第一个段落中的信息：
@@ -6809,7 +5609,7 @@ $("ul li:first").html(pText2);
 $("ul li:last").html(pText1);
 ```
 
-清单5.6中有趣的代码使用jQuery `css()`函数来更新偶数位置元素的CSS属性，如下所示：
+清单 5.6 中有趣的代码使用 jQuery `css()` 函数来更新偶数位置元素的 CSS 属性，如下所示：
 
 ```javascript
 $("ul li:nth-child(even)").css({color:"#f00","font-size":8});
@@ -6821,34 +5621,34 @@ $("ul li:nth-child(even)").css({color:"#f00","font-size":8});
 $("ul li:nth-child(3n+1)").css({"font-size":24});
 ```
 
-清单5.6中最后一行代码更新第二个列表元素：
+清单 5.6 中最后一行代码更新第二个列表元素：
 
 ```javascript
 $("ul li:nth-child(1)").css({color:"#ff0","font-size":18});
 ```
 
-其他有用且相关的jQuery选择器是`:first-child()`、`:last-child()`和`parent()`，你可以分别用它们来查找第一个子元素、最后一个子元素和父元素。
+其他有用且相关的 jQuery 选择器是 `:first-child()`、`:last-child()` 和 `parent()`，你可以分别用它们来查找第一个子元素、最后一个子元素和父元素。
 
-图5.3展示了在搭载Android ICS系统的华硕Prime平板电脑上以横向模式截屏显示的`JQFindByCSS3StyleExpressions.html`。
+图 5.3 展示了在搭载 Android ICS 系统的华硕 Prime 平板电脑上以横向模式截屏显示的 `JQFindByCSS3StyleExpressions.html`。
 
-![图5.3](img/6f06c2ff7e29452e50d03258ed9c6b4f_234_0.png)
+![图 5.3](img/6f06c2ff7e29452e50d03258ed9c6b4f_234_0.png)
 
-**图5.3** 在iPad 3上使用jQuery查找元素。
+**图 5.3** 在 iPad 3 上使用 jQuery 查找元素。
 
-## 使用jQuery移除元素
+## 使用 jQuery 移除元素
 
-正如你可能猜到的，除了查找和修改HTML网页中的元素外，jQuery还能让你移除元素。
+正如你可能猜到的，除了查找和修改 HTML 网页中的元素外，jQuery 还能让你移除元素。
 
-清单5.8展示了`JQRemovingElements1.html`的内容，它演示了如何在HTML网页中通过id或class选择并移除元素。
+清单 5.8 展示了 `JQRemovingElements1.html` 的内容，它演示了如何在 HTML 网页中通过 `id` 或 `class` 选择并移除元素。
 
-### 清单5.8 JQRemovingElements1.html
+### 清单 5.8 JQRemovingElements1.html
 
 ```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8"/>
-  <title>使用jQuery移除元素</title>
+  <title>使用 jQuery 移除元素</title>
 
   <script src="http://code.jquery.com/jquery-1.7.1.min.js">
   </script>
@@ -6880,18 +5680,16 @@ $("ul li:nth-child(1)").css({color:"#ff0","font-size":18});
       $("p:first").css({color:'yellow'});
       $("p:last").css({color:'blue'});
 
-      // 移除<p>元素Dave
+      // 移除 <p> 元素 Dave
       $("#Dave").remove();
 
-      // 移除<p>元素Michelle
+      // 移除 <p> 元素 Michelle
       $("div1").remove("#Michelle");
     });
   </script>
 </body>
 </html>
 ```
-
-
 
 jQuery 基础 • 211
 
@@ -7002,7 +5800,7 @@ $("#Dave").clone().css({color:"#000"}).appendTo("#div2");
 
 jQuery 提供了一组用于源元素已存在于 HTML 网页中的方法。另一组方法则用于动态创建新元素时。
 
-例如，如果 myDiv1 和 myImg1 是 HTML 网页中的两个元素，那么你可以使用 jQuery 的 `append()` 方法创建 myDiv1 的克隆并将其插入到 DOM 中 myImg1 元素的后面，如下所示：
+例如，如果 `myDiv1` 和 `myImg1` 是 HTML 网页中的两个元素，那么你可以使用 jQuery 的 `append()` 方法创建 `myDiv1` 的克隆并将其插入到 DOM 中 `myImg1` 元素的后面，如下所示：
 
 ```javascript
 $("myDiv1").clone().append("#myImg1");
@@ -7071,7 +5869,7 @@ if ( $('#myElement').length > 0 ) {
 ```javascript
 $('*').each(function() {
     if ($(this).text() == "") {
-        //在此处执行某些操作
+        // 在此处执行某些操作
     }
 });
 ```
@@ -7161,8 +5959,6 @@ jQuery 的 `next()` 方法选择当前“上下文”元素的下一个直接兄
     <script>
         $(document).ready(function(){
 ```
-
-
 
 ## 其他 jQuery 导航选择方法
 
@@ -7317,7 +6113,7 @@ $("button").click(function() {
 
 ## 在 jQuery 中处理点击事件
 
-jQuery 支持各种类型的事件和用户手势，你可以将它们“绑定”到自定义代码（由你编写），当这些事件或手势发生时，这些代码将被执行。你可以在 jQuery Mobile 中检测和绑定的事件包括 click、tap、taphold、swipe、swipeleft 和 swiperight（关于这些事件的更多细节将在后面讨论）。
+jQuery 支持各种类型的事件和用户手势，你可以将它们“绑定”到自定义代码（由你编写），当这些事件或手势发生时，这些代码将被执行。你可以在 jQuery Mobile 中检测和绑定的事件包括 `click`、`tap`、`taphold`、`swipe`、`swipeleft` 和 `swiperight`（关于这些事件的更多细节将在后面讨论）。
 
 `click()` 函数使你能够处理点击事件，其语法示例如下：
 
@@ -7327,9 +6123,7 @@ $("#button1").click(function() {
 })
 ```
 
-处理事件有几种技术（本章后面将提供更多信息），推荐的做法是
-
-如图所示：
+处理事件有几种技术（本章后面将提供更多信息），推荐的做法是如图所示：
 
 ```javascript
 $("#button1").on("click", function() {
@@ -7582,11 +6376,9 @@ myList().getFirstElem().getCustomer().setFirstName("Dave");
 <div id="outer">
 ```
 
-
-
 ## jQuery基础 • 233
 
-清单5.14包含对所需jQuery文件的引用、一些CSS样式、一个HTML `<ul>`元素，以及一段jQuery代码，移除注释后如下所示：
+清单 5.14 包含对所需 jQuery 文件的引用、一些 CSS 样式、一个 HTML `<ul>` 元素，以及一段 jQuery 代码，移除注释后如下所示：
 
 ```
 var $first = $("<div id='first'>first</div>")
@@ -7596,17 +6388,19 @@ var $first = $("<div id='first'>first</div>")
   .end();
 ```
 
-尽管jQuery使你能够构建几乎任意复杂度的表达式，但这类表达式也更容易出错。作为对比（这只是一个类比），如果你编写过复杂的正则表达式，你大概还记得想出一个完全符合需求的表达式所需的时间。
+尽管 jQuery 使你能够构建几乎任意复杂度的表达式，但这类表达式也更容易出错。作为对比（这只是一个类比），如果你编写过复杂的正则表达式，你大概还记得想出一个完全符合需求的表达式所需的时间。
 
-## 使用JQUERY实现HTML5地理定位
+## 使用 JQUERY 实现 HTML5 地理定位
 
-第10章将更详细地讨论HTML5地理定位，如果你不熟悉地理定位API，可以阅读该章。本节的示例说明了如何使用jQuery渲染用户的当前位置。正如你将看到的，清单5.14中的jQuery代码是HTML网页末尾非常简短的一段代码（以粗体显示），这说明在某些情况下，你可以编写主要包含“常规”JavaScript代码的HTML网页。
+第 10 章将更详细地讨论 HTML5 地理定位，如果你不熟悉地理定位 API，可以阅读该章。本节的示例说明了如何使用 jQuery 渲染用户的当前位置。正如你将看到的，清单 5.14 中的 jQuery 代码是 HTML 网页末尾非常简短的一段代码（以粗体显示），这说明在某些情况下，你可以编写主要包含“常规” JavaScript 代码的 HTML 网页。
 
-清单5.15显示了JQGeoLocation1.html的内容，该示例演示了如何确定用户的位置，然后在Google地图中渲染该位置。
+清单 5.15 显示了 JQGeoLocation1.html 的内容，该示例演示了如何确定用户的位置，然后在 Google 地图中渲染该位置。
 
-```
-清单5.15 JQGeoLocation1.html
 
+
+# 清单5.15 JQGeoLocation1.html
+
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7615,9 +6409,9 @@ var $first = $("<div id='first'>first</div>")
 
     <style>
     #div1 {
-    font-size: 16px;
-    height: 200px;
-    width:  400px;
+        font-size: 16px;
+        height: 200px;
+        width:  400px;
     }
     </style>
 
@@ -7702,16 +6496,15 @@ var $first = $("<div id='first'>first</div>")
       $('#geobutton').click(findUserLocation);
     });
   </script>
+</body>
 </html>
 ```
-
-234 • 面向移动与桌面设备的jQuery、CSS3和HTML5
 
 清单5.15以一些CSS样式、对所需jQuery文件的引用以及对Google地图JavaScript文件的引用开始。
 
 接下来，JavaScript函数`findUserLocation()`调用`geolocation`对象（通过`navigator`对象暴露）的`getCurrentPosition()`方法，以获取用户的当前位置，如下所示：
 
-```
+```javascript
 // 此方法指定了‘成功’和‘失败’的JS函数
 navigator.geolocation.getCurrentPosition(successCallback,
                                      errorCallback);
@@ -7721,7 +6514,7 @@ navigator.geolocation.getCurrentPosition(successCallback,
 
 `successCallback()`函数接收到一个位置参数，我们可以用它来确定用户当前位置的三个位置值，如下所示：
 
-```
+```javascript
 function successCallback(position) {
   var latitude  = position.coords.latitude;
   var longitude = position.coords.longitude;
@@ -7731,7 +6524,7 @@ function successCallback(position) {
 
 JavaScript变量`myOptions`指定了属性，例如我们要显示的地图类型，如下所示：
 
-```
+```javascript
 var myOptions = {
     zoom: 14,
     center: latlong,
@@ -7741,7 +6534,7 @@ var myOptions = {
 
 JavaScript map变量使用`myOptions`变量创建一个地图，并将其渲染在`id`属性值为`div1`的HTML `<div>`元素中，如下所示：
 
-```
+```javascript
 // 使用Google地图显示当前位置
 var map = new google.maps.Map(document.getElementById("div1"),
                           myOptions);
@@ -7750,7 +6543,7 @@ map.setCenter(latlong);
 
 错误函数也很重要，因为它可以提供有关发生错误原因的信息，如下所示：
 
-```
+```javascript
 function errorCallback(error) {
   if(error.code == error.PERMISSION_DENIED) {
     console.log("错误：您必须启用地理定位访问");
@@ -7767,7 +6560,7 @@ function errorCallback(error) {
 
 最后，清单5.15包含一个HTML `Form`元素，其中有一个按钮，其`id`属性值为`geobutton`，后面跟着一段非常简短的jQuery代码块（以粗体显示），当用户点击该按钮时，它会调用JavaScript函数`getCurrentPosition()`，如下所示：
 
-```
+```javascript
 $('#geobutton').click(findUserLocation);
 ```
 
@@ -7775,12 +6568,13 @@ $('#geobutton').click(findUserLocation);
 
 ![图5.9](img/6f06c2ff7e29452e50d03258ed9c6b4f_261_0.png)
 
-## 使用JQUERY获取加速度计数值
+# 使用JQUERY获取加速度计数值
 
 本节的示例说明了如何使用jQuery获取移动设备的加速度计数值。清单5.16显示了JQAccelerometer1.html的内容，该示例演示了如何在设备沿任何方向加速时显示其加速度计数值。清单5.16显示了CSS样式表JQAccelerometer1.css的内容，其中的选择器用于匹配HTML网页中的元素。
 
-```
-清单5.16 JQAccelerometer1.html
+## 清单5.16 JQAccelerometer1.html
+
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7788,13 +6582,6 @@ $('#geobutton').click(findUserLocation);
 <title>jQuery与加速度计</title>
 <script
 src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jque-
-```
-
-
-
-jQuery 基础 • 237
-
-```html
 ry.min.js">
 </script>
 
@@ -7849,7 +6636,7 @@ ry.min.js">
 </html>
 ```
 
-清单 5.16 中的代码获取移动设备三个方向（所有方向彼此垂直）的加速度计值，然后计算整数值，用作颜色值数组的索引。确定每个方向关联的颜色后，相应的矩形 `<div>` 元素将更新为对应的颜色。
+清单5.16中的代码获取移动设备三个方向（所有方向彼此垂直）的加速度计值，然后计算整数值，用作颜色值数组的索引。确定每个方向关联的颜色后，相应的矩形 `<div>` 元素将更新为对应的颜色。
 
 将 `window` 对象绑定到 `devicemotion` 事件后，我们可以使用事件对象（在此例中称为 `e`）获取加速对象（称为 `accel`）的 JavaScript 引用，然后提取三个不同轴的当前值，如下所示：
 
@@ -7889,7 +6676,7 @@ $("#valueX").html("<p>Acceleration x: <b>" + x + "</b></p>");
 
 y 方向和 z 方向的相应值以类似方式计算。
 
-## **清单 5.17** JQAccelerometer1.css
+## 清单 5.17 JQAccelerometer1.css
 
 ```css
 #outer {
@@ -7924,7 +6711,7 @@ background-color: white;
 
 图 5.10 显示了在运行 Android ICS 的华硕 Prime 平板电脑上，以横屏模式截取的 Android 应用程序中渲染清单 5.16 中 HTML 网页的结果。
 
-## 使用 JQUERY 插件
+# 使用 JQUERY 插件
 
 在 jQuery 概述中，您了解到 jQuery 支持插件，而且实际上有数百个（甚至可能数千个）可用插件。此主题超出了本书的范围，但请充分利用大量的 jQuery 插件，因为它们可以为您节省大量工作。以下两个链接提供了各种 jQuery 插件：
 
@@ -7933,14 +6720,14 @@ background-color: white;
 
 您也可以执行互联网搜索以查找更新的 jQuery 插件，然后选择适合您需求的插件。如果没有找到符合您要求的插件，您可以找到在线教程，这些教程将向您展示如何创建自己的 jQuery 插件。
 
-## 总结
+# 总结
 
 本章向您介绍了 jQuery，以及展示如何使用 jQuery 函数创建简单动画效果的代码示例。您看到了展示如何执行以下操作的代码示例：
 
 - 创建基于 jQuery 的简单 HTML5 网页
-- 使用 :first 和 :last 限定符查找和修改元素
-- 使用 :even 和 :odd 限定符查找元素
-- 使用 :eq、:lt 和 :gt 限定符查找元素
+- 使用 `:first` 和 `:last` 限定符查找和修改元素
+- 使用 `:even` 和 `:odd` 限定符查找元素
+- 使用 `:eq`、`:lt` 和 `:gt` 限定符查找元素
 - 查找 HTML 元素
 - 通过类或 id 查找元素
 - 查找/设置元素属性
@@ -7949,7 +6736,7 @@ background-color: white;
 - 移除 DOM 元素
 - 创建 DOM 元素
 - 在 jQuery 中处理事件
-- 使用 click() 函数
+- 使用 `click()` 函数
 - 检测键盘事件
 - 处理鼠标事件
 - 用于遍历元素的 jQuery API
@@ -7963,13 +6750,11 @@ background-color: white;
 
 本章向您展示如何创建具有动画效果并为用户提供交互性的 HTML5 网页。您将看到各种 jQuery 函数，它们可以创建各种动画效果，您可以轻松地将这些效果融入到您的 HTML5 网页中。这一精选章节旨在为您提供多种动画效果，以及一系列可以融入到其他 HTML5 网页中的代码示例和代码片段。
 
-本章的第一部分向您展示如何使用 jQuery 通过设置 CSS3 选择器中的属性值来操作元素的属性，以及使用 `animate` 和 `effect` 创建动画效果的示例。您将看到创建基于滑动和淡入淡出（fadeIn、fadeOut、fadeTo）动画效果的代码示例。本节还演示了如何将 jQuery 与 CSS3 关键帧结合使用来创建 2D 动画效果。
+本章的第一部分向您展示如何使用 jQuery 通过设置 CSS3 选择器中的属性值来操作元素的属性，以及使用 `animate` 和 `effect` 创建动画效果的示例。您将看到创建基于滑动和淡入淡出（`fadeIn`、`fadeOut`、`fadeTo`）动画效果的代码示例。本节还演示了如何将 jQuery 与 CSS3 关键帧结合使用来创建 2D 动画效果。
 
 本章的第二部分演示了如何创建一个“跟随鼠标”的 HTML5 网页，该网页使用 CSS3 实现视觉效果，并使用 jQuery 更新渐变填充矩形的位置。
 
 本章的第三部分包含使用基于 CSS3 的渐变色动态创建 HTML `<div>` 元素的示例，其视觉效果可与使用 SVG 图形或基于 Canvas 的图形相媲美。请记住，本书各章中的 CSS3 示例专门针对基于 WebKit 的浏览器，但您可以修改代码示例以包含特定于浏览器的前缀，以便代码示例可以在其他浏览器中运行。本章的最后一个示例演示了如何使用 jQuery 插件通过 jQuery 渲染 SVG。
-
-244 • 面向移动设备和桌面设备的 jQuery、CSS3 和 HTML5
 
 请注意，本章涵盖 jQuery 动画效果，第 8 章包含一些使用 jQuery Mobile 的相应动画效果。两章也都包含基于 CSS3 的动画效果。由于篇幅限制，本章仅涵盖 jQuery 中可用的部分动画相关功能。您可以通过阅读在线 jQuery 文档或通过互联网搜索额外的教程和文章来了解更多关于 jQuery 动画的信息。
 
@@ -7977,11 +6762,11 @@ background-color: white;
 
 本节包含代码示例，演示如何使用 jQuery 以编程方式创建 HTML 元素，并使用 CSS3 为其设置样式以创建各种效果，例如圆角、渐变和阴影效果。您当然可以通过手动创建所需的 CSS3 选择器和 HTML 元素来创建这些效果，但您也可以利用 jQuery 的强大功能来创建更复杂的视觉效果。
 
-## HTML `<div>` 元素和 jQuery css() 函数
+### HTML `<div>` 元素和 jQuery css() 函数
 
 jQuery `css()` 函数使您能够设置使用 `$('div')` 创建的 HTML `<div>` 元素中属性的值。您可以通过指定键/值对（类似于 CSS 选择器中的属性/值对）来执行此操作，然后可以使用 jQuery `append()` 方法将这些新元素附加到现有元素上。
 
-**清单 6.1** JQCssDivElements1.html
+## 清单 6.1 JQCssDivElements1.html
 
 ```html
 <!DOCTYPE html>
@@ -7996,14 +6781,11 @@ jQuery `css()` 函数使您能够设置使用 `$('div')` 创建的 HTML `<div>` 
     <div id="outer"> </div>
 
     <script>
-```
-
 var basePointX = 50, basePointY = 50;
 var rectWidth = 60, rectHeight = 60;
 var currentX = 0, currentY = 0;
 var rowCount = 5, colCount = 8;
 var fillColor = "";
-
 var fillColors = ["rgb(255, 0, 0)",
 					"rgb(0, 255, 0)",
 					"rgb(255, 255, 0)",
@@ -8015,7 +6797,6 @@ $(document).ready(function() {
 			currentX = basePointX+c*rectWidth;
 			currentY = basePointY+r*rectHeight;
 			fillColor = fillColors[(r+c) % fillColors.length];
-
 			// 在当前位置创建一个矩形
 			newNode = $('<div>').css({'position':'absolute',
 											'width':rectWidth+'px',
@@ -8025,7 +6806,6 @@ $(document).ready(function() {
 											'backgroundColor':
 fillColor
 											});
-
 			$("#outer").append(newNode);
 		}
 	}
@@ -8033,6 +6813,7 @@ fillColor
 </script>
 </body>
 </html>
+```
 
 清单 6.1 使用 jQuery 的 `css()` 函数渲染了一个类似网格的 HTML `<div>` 元素显示效果，如下所示：
 
@@ -8219,9 +7000,7 @@ CSS 样式表 `JQArchTripleShadowSkewEllipsesGrad3.html` 如清单 6.4 所示。
       });
 ```
 
-
-
-```
+```javascript
 top: currentY + 'px',
 'backgroundSize': '240px 240px, 80px 80px',
 'backgroundColor': fillColor,
@@ -8279,7 +7058,7 @@ if(angle % 20 == 0) {
 
 请注意，你在第 5 章已经学习了 jQuery 方法链；本章后面你将学习 jQuery 的 `toggleClass()` 方法。
 
-**清单 6.4** JQArchTripleShadowSkewEllipsesGrad3.css
+## 清单 6.4 JQArchTripleShadowSkewEllipsesGrad3.css
 
 ```css
 #outer {
@@ -8413,7 +7192,7 @@ jQuery 的淡入淡出相关和滑动相关效果很容易创建，并且如果�
 
 以下示例结合了 jQuery 的 `.fadeIn()` 和 `.fadeOut()` 函数，并向你展示了如何链式调用这些函数以创建多重动画效果。
 
-### fadeIn()、fadeOut() 和 fadeToggle() 函数
+### `fadeIn()`、`fadeOut()` 和 `fadeToggle()` 函数
 
 这三个 jQuery 方法 `.fadeIn()`、`.fadeOut()` 和 `.fadeToggle()` 可以指定三个参数。其语法如下所示：
 
@@ -8437,9 +7216,7 @@ $("#something").click(function() {
 });
 ```
 
-清单 6.5 展示了 `FadeInOut.html` 的内容，该文件演示了如何在 jQuery 中执行简单的和链式的淡入淡出效果。
-
-### 清单 6.5 FadeInOut.html
+## 清单 6.5 FadeInOut.html
 
 ```html
 <!DOCTYPE html>
@@ -8454,13 +7231,11 @@ $("#something").click(function() {
 </head>
 ```
 
-
-
 ## jQuery 滑动相关函数
 
 jQuery 的 `slideUp()`、`slideDown()` 和 `slideToggle()` 方法可以指定三个参数。它们的语法如下：
 
-```
+```javascript
 jQuery(elements).slideUp([milliseconds],
                         [easing-function],
                         [callback-function]);
@@ -8476,11 +7251,9 @@ jQuery(elements).slideToggle([milliseconds],
 
 毫秒的值指定了动画效果的持续时间，而回调函数是一个可选的 JavaScript 函数，在动画完成后执行。
 
-清单 6.6 展示了 JQSlideUpDown.html 的内容，它说明了如何在 jQuery 中执行简单的和链式的滑动效果。
+## 清单 6.6 JQSlideUpDown.html
 
-### 清单 6.6 JQSlideUpDown.html
-
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -8535,7 +7308,7 @@ jQuery(elements).slideToggle([milliseconds],
 
 顺便说一下，您也可以在自定义函数定义中组合滑动和淡入淡出函数，如下所示：
 
-```
+```javascript
 $.fn.slideFadeToggle = function(speed, easing, callback) {
     return this.animate(
         {opacity: 'toggle', height: 'toggle'}, speed, easing, callback);
@@ -8544,7 +7317,7 @@ $.fn.slideFadeToggle = function(speed, easing, callback) {
 
 您可以按如下方式使用前面的自定义函数：
 
-```
+```javascript
 $("#something").click(function() {
     $(this).slideFadeToggle();
 });
@@ -8599,7 +7372,7 @@ http://james.padolsey.com/demos/jquery/easing/
 
 如果您对 jQuery 缓动函数的 jQuery 代码感到好奇，以下代码块包含两个定义：
 
-```
+```javascript
 $.extend($.easing,
 {
     def: 'easeOutQuad',
@@ -8618,20 +7391,16 @@ $.extend($.easing,
 
 ## JQUERY 的 .ANIMATE() 方法
 
-jQuery 的 animate() 方法可以接受四个参数，它们的形式如下：
+jQuery 的 `animate()` 方法可以接受四个参数，它们的形式如下：
 
-```
+```javascript
 jQuery(elements).animate([properties],
                       [milliseconds],
                       [easing-function],
                       [complete-function]);
 ```
 
-
-
 而 `milliseconds` 参数指定了动画效果的持续时间。`easing-function` 参数指定了上一节讨论的某个缓动函数，而 `complete-function` 则指定了动画效果完成时要执行的 JavaScript 回调函数。
-
-清单 6.7 展示了 `JQAnimate1.html` 的内容，该示例说明了如何使用 jQuery 的 `animate()` 函数为两个 PNG 文件创建动画效果。
 
 ## 清单 6.7 JQAnimate1.html
 
@@ -8772,7 +7541,7 @@ $('#text1').animate({
 </html>
 ```
 
-清单 6.8 包含的代码与清单 6.7 类似，它说明了两个 HTML `<div>` 元素的动画效果。此外，清单 6.8 通过使用 jQuery animate() 方法的链式调用，创建了一个有趣的顺序动画效果，该效果在用户点击第二个 HTML `<div>` 元素时触发：
+清单 6.8 包含的代码与清单 6.7 类似，它说明了两个 HTML `<div>` 元素的动画效果。此外，清单 6.8 通过使用 jQuery `animate()` 方法的链式调用，创建了一个有趣的顺序动画效果，该效果在用户点击第二个 HTML `<div>` 元素时触发：
 
 ```javascript
 $("#div2").animate({"left": "+=100px"}, "slow")
@@ -8780,7 +7549,8 @@ $("#div2").animate({"left": "+=100px"}, "slow")
          .animate({"height": "+=50px"}, "slow");
 ```
 
-如上所示，前面的代码块只是在每次调用 jQuery animate() 时更改第二个 HTML `<div>` 元素的 `left` 属性值。
+如上所示，前面的代码块只是在每次调用 jQuery `animate()` 时更改第二个 HTML `<div>` 元素的 `left` 属性值。
+
 你可以通过改变 HTML 元素的不同 CSS 属性，使用 jQuery `animate()` 函数来创建其他有趣的视觉效果。例如，以下代码为属于 HTML `<ul>` 元素的列表项创建了一个“摇摆”效果：
 
 ```javascript
@@ -8843,9 +7613,7 @@ $('p:first').animate( {
 
 ## 创建图片幻灯片
 
-清单 6.9 展示了 `JQSlideShow1.html` 的内容，该示例说明了如何使用 jQuery 创建 JPG 图片的幻灯片。
-
-**清单 6.9** `JQSlideShow1.html`
+## 清单 6.9 JQSlideShow1.html
 
 ```html
 <!DOCTYPE html>
@@ -8866,15 +7634,15 @@ $('p:first').animate( {
         $(document).ready(function(){
 ```
 
-
-
-## 基于 CSS3 的动画效果
+# 基于 CSS3 的动画效果
 
 本节展示了多种可以通过 CSS3 创建的动画效果，其中代码示例使用了 CSS3 的 `@keyframes` 规则和 2D/3D 变换。
 
-### 使用 CSS3 关键帧和 2D 变换的动画效果
+## 使用 CSS3 关键帧和 2D 变换的动画效果
 
 清单 6.10 展示了 `JQButtonAnimation1.html` 的内容，该示例说明了如何创建由悬停伪类触发的按钮相关动画效果。
+
+
 
 清单 6.10 `JQButtonAnimation1.html`
 
@@ -9088,8 +7856,6 @@ http://code.google.com/p/css3-graphics
 
 ![](img/6f06c2ff7e29452e50d03258ed9c6b4f_300_0.png)
 
-
-
 本章剩余部分包含了一些与之前代码示例不同的示例。清单 6.13 和清单 6.14 涉及鼠标相关功能以及如何以编程方式处理鼠标事件。清单 6.14 展示了一个非常基础的、面向游戏的代码示例，它比之前的示例更广泛地结合了 JavaScript、jQuery 和 CSS3。
 
 ## 使用 jQuery 实现跟随鼠标的示例
@@ -9220,7 +7986,7 @@ $(document.body).append(newNode);
 </html>
 ```
 
-清单 6.14 与清单 6.13 类似，不同之处在于，现在每当用户移动鼠标时，我们都会创建并附加一个新的 HTML `<div>` 元素到 DOM，从而产生绘图效果。你还可以添加其他 CSS3 效果，例如渐变和动画，甚至可以让用户选择不同的“画笔”颜色（以及大小和形状），以创造更丰富的视觉效果。
+清单 6.14 与清单 6.13 类似，不同之处在于，现在每当用户移动鼠时，我们都会创建并附加一个新的 HTML `<div>` 元素到 DOM，从而产生绘图效果。你还可以添加其他 CSS3 效果，例如渐变和动画，甚至可以让用户选择不同的“画笔”颜色（以及大小和形状），以创造更丰富的视觉效果。
 
 图 6.5 展示了在 Macbook 上的 Chrome 浏览器中打开 `JQSketchSolid1.html` 的效果。
 
@@ -9233,6 +7999,7 @@ $(document.body).append(newNode);
 ## 使用 jQuery 实现其他动画效果
 
 用于 3D 动画的 jQuery 插件 `rotate3di` 可以让你为 HTML 内容以及其他视觉效果创建动画。其主页在这里：
+
 http://www.zachstronaut.com/projects/rotate3di/
 
 ![rotate3di 插件主页](img/6f06c2ff7e29452e50d03258ed9c6b4f_305_0.png)
@@ -9303,96 +8070,92 @@ http://www.zachstronaut.com/projects/rotate3di/
 
         //var dirXPts    = [1, -1, 1, -1, 1, 1, -1, 1, -1, 1];
         var dirXPts    = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
-```
+        var dirYPts    = [-1, 1, 1, -1, 1, -1, 1, 1, -1, 1];
 
+        var deltaXPts  = [5, 10, 15, 20, 25, 15, 10, 25, 10, 20];
+        var deltaYPts  = [25, 20, 15, 10, 5, 15, 10, 25, 10, 20];
 
+        var leftX = 20, rightX = 380, topY = 60, bottomY = 250;
+        var loopCount = 0, maxCount = 500, shortPause = 80;
+        var currWidth = 0, currHeight = 0, tapCount = 0;
+        var index = 0, radius = 10, color="", theTimeout;
 
-282 • 适用于移动和桌面设备的 jQuery、CSS3 和 HTML5
+        var ballColors = ['#f00','#ff0','#0f0','#00f','#f0f'];
 
-```javascript
-var dirYPts    = [-1, 1, 1, -1, 1, -1, 1, 1, -1, 1];
+        function updatePosition() {
+           for(var i=0; i<xPosPts.length; i++) {
+              xPosPts[i] += dirXPts[i]*deltaXPts[i];
+              yPosPts[i] += dirYPts[i]*deltaYPts[i];
 
-var deltaXPts  = [5, 10, 15, 20, 25, 15, 10, 25, 10, 20];
-var deltaYPts  = [25, 20, 15, 10, 5, 15, 10, 25, 10, 20];
+              if(xPosPts[i] < leftX) {
+                 xPosPts[i] = leftX;
+                 dirXPts[i] *= -1;
+              }
 
-var leftX = 20, rightX = 380, topY = 60, bottomY = 250;
-var loopCount = 0, maxCount = 500, shortPause = 80;
-var currWidth = 0, currHeight = 0, tapCount = 0;
-var index = 0, radius = 10, color="", theTimeout;
+              if(xPosPts[i] >= rightX) {
+                 xPosPts[i] = rightX;
+                 dirXPts[i] *= -1;
+              }
 
-var ballColors = ['#f00','#ff0','#0f0','#00f','#f0f'];
+              if(yPosPts[i] <= topY) {
+                 yPosPts[i] = topY;
+                 dirYPts[i] *= -1;
+              }
 
-function updatePosition() {
-   for(var i=0; i<xPosPts.length; i++) {
-      xPosPts[i] += dirXPts[i]*deltaXPts[i];
-      yPosPts[i] += dirYPts[i]*deltaYPts[i];
+              if(yPosPts[i] >= bottomY) {
+                 yPosPts[i] = bottomY;
+                 dirYPts[i] *= -1;
+              }
+           }
 
-      if(xPosPts[i] < leftX) {
-         xPosPts[i] = leftX;
-         dirXPts[i] *= -1;
-      }
+           displayBalls();
 
-      if(xPosPts[i] >= rightX) {
-         xPosPts[i] = rightX;
-         dirXPts[i] *= -1;
-      }
+           // 再次反弹？
+           if(++loopCount < maxCount) {
+              if(theTimeout != null) {
+                 theTimeout = setTimeout("updatePosition()",
+                                         shortPause);
+              }
+           }
+        }
 
-      if(yPosPts[i] <= topY) {
-         yPosPts[i] = topY;
-         dirYPts[i] *= -1;
-      }
+        function displayBalls() {
+            //index = loopCount % 40;
+            index = Math.floor(loopCount/40);
 
-      if(yPosPts[i] >= bottomY) {
-         yPosPts[i] = bottomY;
-         dirYPts[i] *= -1;
-      }
-   }
+            if(index % 2 == 0) {
+                currWidth  = (5+loopCount%40)+'px';
+                currHeight = (5+loopCount%40)+'px';
+            } else {
+                currWidth  = (45-(loopCount%40))+'px';
+                currHeight = (45-(loopCount%40))+'px';
+            }
 
-   displayBalls();
+            for(var i=0; i<xPosPts.length; i++) {
+                //color = ballColors[i % ballColors.length];
+                color = ballColors[(i+loopCount) % ballColors.length];
 
-   // 再次反弹？
-   if(++loopCount < maxCount) {
-      if(theTimeout != null) {
-         theTimeout = setTimeout("updatePosition()",
-                                 shortPause);
-      }
-   }
-}
+                var theCircle = $("#circle"+i);
+                // 更新小球的属性...
+                $(theCircle).css('left',           xPosPts[i]+'px');
+                $(theCircle).css('top',            yPosPts[i]+'px');
+                $(theCircle).css('width',          currWidth);
+                $(theCircle).css('height',         currHeight);
+                $(theCircle).css('background',     color);
+                $(theCircle).css('borderRadius',   (loopCount%50)+"%");
+            }
+        }
 
-function displayBalls() {
-    //index = loopCount % 40;
-    index = Math.floor(loopCount/40);
+        function startAnimation() {
+            event.preventDefault();
+            theTimeout = setTimeout("updatePosition()",
+                                    shortPause);
 
-    if(index % 2 == 0) {
-        currWidth  = (5+loopCount%40)+'px';
-        currHeight = (5+loopCount%40)+'px';
-    } else {
-        currWidth  = (45-(loopCount%40))+'px';
-        currHeight = (45-(loopCount%40))+'px';
-    }
-
-    for(var i=0; i<xPosPts.length; i++) {
-        //color = ballColors[i % ballColors.length];
-        color = ballColors[(i+loopCount) % ballColors.length];
-
-        var theCircle = $("#circle"+i);
-        // 更新小球的属性...
-        $(theCircle).css('left',           xPosPts[i]+'px');
-        $(theCircle).css('top',            yPosPts[i]+'px');
-        $(theCircle).css('width',          currWidth);
-        $(theCircle).css('height',         currHeight);
-        $(theCircle).css('background',     color);
-        $(theCircle).css('borderRadius',   (loopCount%50)+"%");
-    }
-}
-
-function startAnimation() {
-    event.preventDefault();
-    theTimeout = setTimeout("updatePosition()",
-                            shortPause);
-
-    updatePosition();
-}
+            updatePosition();
+        }
+    </script>
+</body>
+</html>
 ```
 
 清单 6.15 比你在本章中看到的许多其他代码示例都要长，但它可以被分成几个逻辑单元。第一部分包含一个 HTML `<style>` 元素，该元素定义了一组 HTML `<div>` 元素，随后是一个为这些元素设置各种属性的代码块，如下所示：
@@ -9493,7 +8256,7 @@ var dirXPts       = [0,  0,  0,   0, 0, 0,  0,  0,   0, 0];
 
 ### 处理鼠标事件
 
-jQuery 支持以下常见的鼠标事件，这些事件你可能很熟悉：mousedown、mouseenter、mouseleave、mousemove、mouseout、mouseover 和 mouseup。你可以使用以下 jQuery 代码构造来检测每一个鼠标事件：
+jQuery 支持以下常见的鼠标事件，这些事件你可能很熟悉：mousedown、mouseenter、mouseleave、mousemove、mouseout、mouseover 和 mouseup。你可以使用以下 jQuery 代码构造来检测每一个鼠星事件：
 
 ```javascript
 $("#myInput").mousedown(function() {
@@ -9538,8 +8301,6 @@ $("some-element").on(some-event)
 ```javascript
 $("#div1").on("click", function() {
 ```
-
-
 
 ## 288 • 面向移动设备和桌面设备的 jQuery、CSS3 和 HTML5
 
@@ -9600,7 +8361,7 @@ $("#myInput").keypress(function(e) {
 });
 ```
 
-您可以检查其他按键事件，但请记住，大写字母 A 是十进制 65（十六进制 41），小写字母 a 是十进制 97（十六进制 61），小写字母 z 是十进制 122（十六进制 7A）。
+您可以检查其他按键事件，但请记住，大写字母 A 是十进制 65（十六进ique 41），小写字母 a 是十进制 97（十六进制 61），小写字母 z 是十进制 122（十六进制 7A）。
 
 您还可以添加许多其他效果，包括本章前面代码示例中可用的动画效果。
 
@@ -9609,41 +8370,70 @@ $("#myInput").keypress(function(e) {
 本章向您介绍了 jQuery 图形和动画效果，以及说明如何使用 jQuery 函数创建简单动画效果的代码示例。特别是，您学习了如何执行以下操作：
 
 - jQuery 中的基本动画效果
+
 - jQuery 中的 `effect` 操作
+
 - jQuery 中的滚动效果
+
 - 在 jQuery 中使用 CSS3 选择器
+
 - 使用 `css()` 函数设置属性
+
 - 切换 CSS 属性
+
 - 创建圆角
+
 - 创建阴影效果
+
 - 设置线性渐变和径向渐变
+
 - 处理图像
+
 - `hide()` 和 `show()` 函数
+
 - 使用回调函数
+
 - `fadeIn()`、`fadeOut()` 和 `fadeTo()` 方法
+
 - 设置速度
+
 - 切换 `hide()` 和 `show()`
+
 - jQuery 的淡入淡出和滑动动画效果
+
 - `fadeIn()` 和 `fadeOut()` 函数
+
 - jQuery 的 `slideUp()` 和 `slideDown()` 函数
+
 - jQuery 中的缓动函数
+
 - 使用 `animate()` 自定义 CSS 动画
+
 - 用图像创建幻灯片
+
 - 基于 CSS3 的动画效果
+
 - 使用 CSS3 实现简单滑动效果
+
 - 使用 CSS3 更新多个属性
+
 - 使用 CSS 实现滑动效果
+
 - 使用 CSS3 `keyFrames` 和 2D 变换实现动画效果
+
 - 使用 CSS3 和 jQuery 实现 2D 变换
+
 - 使用 CSS3 和 jQuery 实现 3D 变换
+
 - 一个使用 jQuery 跟随鼠标的示例
+
 - 您的第一个草图程序
 
 下一章将向您介绍各种 jQuery UI 控件，以及展示如何在 HTML5 网页中呈现一些 jQuery UI 控件的代码示例。
 
 # jQuery UI 控件
 
-本章向您介绍各种 jQuery UI 控件，以及展示如何在 HTML5 网页中呈现一些 jQuery UI 控件的代码示例。使用这些 UI 控件的理由很简单：它们比编写自己的自定义 UI 控件所需的工作量少得多，并且您无需维护这些控件的代码。您将看到使用 jQuery 呈现手风琴、按钮、组合框、日期选择器、进度条、滑块和选项卡的示例。此外，您还将学习如何以编程方式处理涉及 jQuery UI 控件的用户触发事件。还有更多可用的 UI 控件，您可以通过查阅 jQuery 主页来了解。
+本章向您介绍各种 jQuery UI 控件，以及展示如何在 HTML5 网页中呈现一些 jQuery UI 控件的代码示例。使用这些 UI 控件的理由很简单：它们比编写自己的自定 UI 控件所需的工作量少得多，并且您无需维护这些控件的代码。您将看到使用 jQuery 呈现手风琴、按钮、组合框、日期选择器、进度条、滑块和选项卡的示例。此外，您还将学习如何以编程方式处理涉及 jQuery UI 控件的用户触发事件。还有更多可用的 UI 控件，您可以通过查阅 jQuery 主页来了解。
 
 本章中的 jQuery UI 控件按字母顺序呈现，因此您可以随意跳转阅读您感兴趣的 UI 控件。尽管关于这些 UI 控件的信息可在 jQuery 文档中找到，但这是一本入门书籍，因此将 UI 控件列表包含在一个方便的位置比告诉您“去阅读文档”更合适。在阅读本章之后，您也将能更好地理解本章末尾那个较长的代码示例，该示例展示了一个 HTML5 网页，其中包含以某种反映现实场景的方式呈现的各种 jQuery UI 控件。
 
@@ -9702,7 +8492,7 @@ jQuery UI 支持手风琴小部件，它包含一个或多个“文件夹”，�
             <li>List item two</li>
             <li>List item three</li>
         </ul>
-    </div>
+    </div
 
     <h3><a href="#">Section 3</a></h3>
     <div>
@@ -9732,8 +8522,6 @@ jQuery UI 支持手风琴小部件，它包含一个或多个“文件夹”，�
     });
 </script>
 ```
-
-
 
 事实上，前面 `<script>` 元素中的代码是 jQuery 将 HTML `<div>` 元素内容渲染为 jQuery 小部件的典型方式：
 
@@ -9788,8 +8576,6 @@ jQuery UI 支持手风琴小部件，它包含一个或多个“文件夹”，�
 按钮在网页中显然很重要，尤其是在提交基于表单的数据时，jQuery 为按钮相关功能提供了重要的支持。你可以定义 CSS3 选择器来为 HTML 按钮应用所需的任何样式效果，包括渐变和阴影效果。
 
 清单 7.3 展示了 HTML5 网页 JQUIButtons1.html 的内容，该网页演示了如何在 HTML 网页中渲染按钮。CSS 样式表 JQUIButtons1.css 被省略，因为其内容与清单 7.2 相同。
-
-296 • jQuery、CSS3 和 HTML5 用于移动与桌面设备
 
 ```
 清单 7.3 JQUIButtons1.html
@@ -9894,6 +8680,7 @@ $("button").click(function() {
 ```
 
 在前面的事件处理程序中，颜色是从一个名为 divColors 的 JavaScript 数组中选择的，该数组包含一组颜色。
+
 图 7.2 展示了在 iPad 3 上以横向模式截屏渲染清单 7.3 中 JQUIButtons1.html 的结果。
 
 ![](img/6f06c2ff7e29452e50d03258ed9c6b4f_323_0.png)
@@ -9903,6 +8690,7 @@ $("button").click(function() {
 ## 复选框和单选按钮
 
 jQuery 使你能够向 HTML 复选框和单选按钮添加事件处理程序，从而可以确定用户选择了哪些项。
+
 清单 7.4 展示了 JQUICheckBoxRadio1.html 的内容，该网页演示了如何在 HTML 网页中渲染一个复选框和一组单选按钮。CSS 样式表 JQUICheckBoxRadio1.css 被省略，因为其内容与清单 7.2 相同。
 
 ### 清单 7.4 JQUICheckBoxRadio1.html
@@ -9967,7 +8755,7 @@ jQuery 使你能够向 HTML 复选框和单选按钮添加事件处理程序，�
 </html>
 ```
 
-清单 7.4 包含两个 HTML `<div>` 元素，每个元素包含一个 HTML `<fieldset>` 元素，该元素指定一个 HTML 复选框后跟 HTML 单选按钮。
+清单 7.4 包含两个 HTML `<div>` 元素，每个元素包含一个 HTML `<fieldset>` 元素，该元指定一个 HTML 复选框后跟 HTML 单选按钮。
 
 你可以使用以下事件处理程序找到 `name` 属性值为 checkbox1 的复选框的状态：
 
@@ -10002,8 +8790,6 @@ $('input:radio[ name="postage" ]').change( function(){
 ```
 
 图 7.3 展示了在 Macbook 的 Chrome 浏览器中渲染清单 7.4 中 JQUICheckBoxRadio1.html 的结果。
-
-
 
 ## 组合框
 
@@ -10040,7 +8826,7 @@ jQuery 为 HTML 组合框提供了支持，你可以为这些 HTML 元素附加�
       <fieldset id="ComboBoxInfo">
         <label for="ComboBox"><strong>我的组合框：</strong></label>
         <select id="ComboBox" >
-          <option value="1">值 1</option>
+          <option value="1">值 1</option
           <option value="2">值 2</option>
           <option value="3">值 3</option>
           <optgroup label="分组1">
@@ -10131,7 +8917,7 @@ jQuery 支持“日期选择器”功能，使你能够设置过去、当前和�
             未来日期：
             <input type="text" name="date" id="date3"/>
         </div>
-    </div>
+    </div
 
     <script>
         $(document).ready(function() {
@@ -10237,42 +9023,43 @@ $("#date3").datepicker("setDate", futureDate);
 
 代码清单 7.7 引用了常用的 jQuery 文件，然后是一个 HTML `<div>` 元素（其 id 值为 outer），其中包含进度条的 HTML 代码、进度条的当前值（初始化为 40）以及一个允许用户更改状态栏值的输入字段。进度条值的创建、显示和更新在以下代码块中处理：
 
+
+
 ```javascript
 $(document).ready(function() {
     $("#progressBarDiv1").progressbar({ value: 40 });
 
-    $("#text1").val( $("#progressBarDiv1").progressbar("value") );
+    $("#text1").val($("#progressBarDiv1").progressbar("value"));
 
     $("#newValue").bind("change", function() {
         var newVal = $("#newVal").val();
-        $("#progressBarDiv1").progressbar("option", "value",
-                                       parseInt(newVal));
+        $("#progressBarDiv1").progressbar("option", "value", parseInt(newVal));
     });
 });
 ```
 
-如你所见，上面的代码块将一个 change 事件绑定到第二个 HTML `<input>` 字段，当用户输入一个新值时，进度条将用该值更新。
+如你所见，上面的代码块将一个 `change` 事件绑定到第二个 HTML `<input>` 字段，当用户输入一个新值时，进度条将用该值更新。
 
-图 7.6 显示了在 MacBook 上的 Chrome 浏览器中渲染代码清单 7.7 中的 JQUIProgressBar1.html 的结果。
+图 7.6 显示了在 MacBook 上的 Chrome 浏览器中渲染代码清单 7.7 中的 `JQUIProgressBar1.html` 的结果。
 
 ![图 7.6](img/6f06c2ff7e29452e50d03258ed9c6b4f_332_0.png)
 
-
-
 ## 使用 JQUERY JSCROLLPANE 插件实现滚动窗格
 
-目前 jQuery 并未提供滚动窗格组件，但你有其他选项可用。一种选择是使用 HTML5 进度条，它使用简单并提供了一些“合理的”功能。如果 HTML5 进度条不足以满足你的需求，你可以使用支持滚动窗格组件的 jQuery 插件，例如 jScrollPane 插件，其主页在这里：
+目前 jQuery 并未提供滚动窗格组件，但你有其他选项可用。一种选择是使用 HTML5 进度条，它使用简单并提供了一些“合理的”功能。如果 HTML5 进度条不足以满足你的需求，你可以使用支持滚动窗格组件的 jQuery 插件，例如 `jScrollPane` 插件，其主页在这里：
+
 http://jscrollpane.kelvinluck.com/
 
-jScrollPane 插件提供了 `jScrollPane-<version>.min.js` JavaScript 文件以及一个 CSS 样式表（`jScrollPane.css`），你可以使用自定义样式覆盖它。
+`jScrollPane` 插件提供了 `jScrollPane-<version>.min.js` JavaScript 文件以及一个 CSS 样式表（`jScrollPane.css`），你可以使用自定义样式覆盖它。
 
 该插件提供了超过 20 个演示，向你展示如何创建滚动条（水平、垂直或两者兼有）、箭头按钮的使用、其 `scrollTo` 和 `scrollBy` 方法、如何在 IFRAME 中设置滚动条样式以及其他各种效果。
 
-访问 jScrollPane 插件的主页，你将找到这些演示的链接、示例以及该 jQuery 插件的下载链接。
+访问 `jScrollPane` 插件的主页，你将找到这些演示的链接、示例以及该 jQuery 插件的下载链接。
 
 ## 滑块
 
 jQuery UI 滑块组件支持各种选项、方法和事件，其中一些在本节的代码示例中有所说明。
+
 列表 7.8 展示了 `JQUISlider1.html` 的内容，演示了如何在 HTML 网页中渲染水平和垂直滑块。
 
 ```
@@ -10284,13 +9071,9 @@ jQuery UI 滑块组件支持各种选项、方法和事件，其中一些在本�
     <meta charset="utf-8"/>
     <title>jQuery Slider</title>
 
-    <link href="http://ajax.googleapis.com/ajax/libs/
-        jqueryui/1.8/themes/base/jquery-ui.css"
-        rel="stylesheet" type="text/css"/>
-    <script src="http://ajax.googleapis.com/ajax/libs/
-        jquery/1.5/jquery.min.js"></script>
-    <script src="http://ajax.googleapis.com/ajax/libs/
-        jqueryui/1.8/jquery-ui.min.js"></script>
+    <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" type="text/css"/>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
 
 <style>
     #slider1 {
@@ -10340,8 +9123,7 @@ jQuery UI 滑块组件支持各种选项、方法和事件，其中一些在本�
         });
 
         $("#sliderDiv1").bind("slidechange", function(event, ui) {
-            var slider1Val = $("#sliderDiv1").slider(
-                                            "option", "value");
+            var slider1Val = $("#sliderDiv1").slider("option", "value");
             $("#text1").val(slider1Val);
         });
 
@@ -10353,16 +9135,13 @@ jQuery UI 滑块组件支持各种选项、方法和事件，其中一些在本�
         });
 
         $("#sliderDiv2").bind("slidechange", function(event, ui) {
-            var slider2Val = $("#sliderDiv2").slider
-                                    ("option", "value");
+            var slider2Val = $("#sliderDiv2").slider("option", "value");
             $("#text2").val(slider2Val);
 
-            if( slider2Val > 100) {
-                $("#sliderDiv2").slider({
-                    orientation: 'horizontal'});
+            if (slider2Val > 100) {
+                $("#sliderDiv2").slider({ orientation: 'horizontal' });
             } else {
-                $("#sliderDiv2").slider({
-                    orientation: 'vertical'});
+                $("#sliderDiv2").slider({ orientation: 'vertical' });
             }
         });
     });
@@ -10381,13 +9160,9 @@ $("#sliderDiv2").bind("slidechange", function(event, ui) {
     $("#text2").val(slider2Val);
 
     if (slider2Val > 100) {
-        $("#sliderDiv2").slider({
-            orientation: 'horizontal'
-        });
+        $("#sliderDiv2").slider({ orientation: 'horizontal' });
     } else {
-        $("#sliderDiv2").slider({
-            orientation: 'vertical'
-        });
+        $("#sliderDiv2").slider({ orientation: 'vertical' });
     }
 });
 ```
@@ -10397,6 +9172,7 @@ $("#sliderDiv2").bind("slidechange", function(event, ui) {
 http://jqueryui.com/demos/slider/
 
 请记住，有时将 CSS3 效果与滑块结合使用可能会产生意外的视觉效果。
+
 例如，将以下代码片段添加到列表 7.8 的 HTML `<style>` 元素中，然后观察当你移动垂直 jQuery 滑块时会发生什么：
 
 ```css
@@ -10405,13 +9181,14 @@ http://jqueryui.com/demos/slider/
 }
 ```
 
-图 7.7 展示了在 Macbook 上的 Chrome 浏览器中渲染列表 7.8 中 JQUISlider1.html 的结果。
+图 7.7 展示了在 Macbook 上的 Chrome 浏览器中渲染列表 7.8 中 `JQUISlider1.html` 的结果。
 
 ![图 7.7 Macbook 上的 Chrome 浏览器中的滑块。](img/6f06c2ff7e29452e50d03258ed9c6b4f_336_0.png)
 
 图 7.7 Macbook 上的 Chrome 浏览器中的滑块。
 
 jQuery 滑块的一个简单用法是使用它们来控制动画效果的速度（也可以使用微调器来完成）。
+
 列表 7.9 展示了 `JQUIAnimSlider1.html` 的内容，演示了如何使用滑块组件来控制动画效果。CSS 样式表 `JQUIAnimSlider1.css` 未显示，因为该 CSS 样式表与列表 7.2 相同：
 
 http://awardwinningfjords.com/2011/04/13/adjustable-animations-with-sliders.html
@@ -10461,7 +9238,7 @@ $(document).ready(function() {
 </html>
 ```
 
-在引用了所需的 jQuery 文件之后，列表 7.9 包含一个 HTML `<body>` 元素，其中又包含一个 HTML `<div>` 元素（其 id 属性值为 outer）。这个 HTML5 `<div>` 元素充当多个元素的容器：一个 HTML `<header>` 元素（用于显示说明）、一个 HTML `<input>` 元素（用于以毫秒为单位显示动画速度）以及三个 HTML `<div>` 元素，它们被渲染为不同颜色的矩形。
+在引用了所需的 jQuery 文件之后，列表 7.9 包含一个 HTML `<body>` 元素，其中又包含一个 HTML `<div>` 元素（其 `id` 属性值为 `outer`）。这个 HTML5 `<div>` 元素充当多个元素的容器：一个 HTML `<header>` 元素（用于显示说明）、一个 HTML `<input>` 元素（用于以毫秒为单位显示动画速度）以及三个 HTML `<div>` 元素，它们被渲染为不同颜色的矩形。
 
 每当用户更改水平 jQuery 滑块的值时，以下绑定到 `change` 事件的代码块会显示动画速度的值：
 
@@ -10493,7 +9270,7 @@ jQuery 标签页组件支持各种选项、方法和事件，其中一些在本�
 
 列表 7.10 展示了 `JQUITabs.html` 的内容，演示了如何在 HTML 网页中渲染标签页。
 
-列表 7.10 `JQUITabs.html`
+### 列表 7.10 `JQUITabs.html`
 
 ```html
 <!DOCTYPE html>
@@ -10501,9 +9278,126 @@ jQuery 标签页组件支持各种选项、方法和事件，其中一些在本�
     <head>
         <meta charset="utf-8"/>
         <title>jQuery Tabs</title>
+
+        <link href="JQUITabs.css" rel="stylesheet" type="text/css">
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
+        <style>
+            .tabs a {
+                padding: 5px 10px;
+                background: #f88;
+                color: #fff;
+                text-decoration: none;
+            }
+
+            .tabs li {
+                list-style: none;
+                display: inline;
+            }
+        </style>
+
+        <script>
+            $(document).ready(function(){
+                $('ul.tabs').each(function(){
+                    // keep track of the currently active tab
+                    var $active, $content, $links = $(this).find('a');
+
+                    // first link is the initial active tab
+                    $active = $links.first().addClass('active');
+                    $content = $($active.attr('href'));
+
+                    // hide the other tabs
+                    $links.not(':first').each(function () {
+                        $($(this).attr('href')).hide();
+                    });
+
+                    // bind the click event handler
+                    $(this).on('click', 'a', function(e){
+                        // Make the old tab inactive.
+                        $active.removeClass('active');
+                        $content.hide();
+
+                        // Update the variables with the new link and content
+                        $active = $(this);
+                        $content = $($(this).attr('href'));
+
+                        // Make the tab active
+                        $active.addClass('active');
+                        $content.show();
+
+                        // prevent the anchor's default click action
+                        e.preventDefault();
+                    });
+                });
+            });
+        </script>
+    </head>
+
+    <body>
+        <ul class='tabs'>
+            <li><a href='#tab1'>Tab 1</a></li>
+            <li><a href='#tab2'>Tab 2</a></li>
+            <li><a href='#tab3'>Tab 3</a></li>
+            <li><a href='#tab4'>Tab 4</a></li>
+        </ul>
+
+        <div id="tab1">
+            <p>Some text in the first tab. Some text in the first tab. Some text in the first tab.</p>
+        </div>
+
+        <div id="tab2">
+            <p>Some text in the second tab. Some text in the second tab. Some text in the second tab.</p>
+        </div>
+
+        <div id="tab3">
+            <p>Some text in the third tab. Some text in the third tab. Some text in the third tab.</p>
+        </div>
+
+        <div id="tab4">
+            <div id="outer">
+                <div id="inner1"></div>
+                <div id="inner2"></div>
+                <div id="inner3"></div>
+            </div>
+        </div>
+    </body>
+</html>
 ```
 
+代码清单 7.10 引用了所需的 jQuery 文件，然后是一个 HTML `<style>` 元素，它为文档后面指定的选项卡（即 HTML `<div>` 元素）添加了一些样式效果。特别要注意以下针对带有 "tabs" 类的 `<div>` 的子 `<a>` 元素的代码片段：
 
+```css
+text-decoration: none;
+```
+
+...以及以下针对带有 "tabs" 类的 `<div>` 元素的子 `<li>` 元素的代码片段：
+
+```css
+list-style: none;
+```
+
+这些代码片段使我们能够以水平行的形式渲染选项卡，没有“项目符号”，因此它们看起来就像真正的选项卡。
+
+以下代码块跟踪当前活动的选项卡并使其可见，同时使所有其他选项卡的内容不可见：
+
+```javascript
+var $active, $content, $links = $(this).find('a');
+
+// first link is the initial active tab
+$active = $links.first().addClass('active');
+$content = $($active.attr('href'));
+
+// hide the other tabs
+$links.not(':first').each(function () {
+    $($(this).attr('href')).hide();
+});
+```
+
+图 7.9 展示了在 Macbook 上的 Chrome 浏览器中渲染代码清单 7.10 的 `JQUITabs.html`（并点击第四个选项卡）后的结果。
+
+![](img/6f06c2ff7e29452e50d03258ed9c6b4f_342_0.png)
+
+**图 7.9** Macbook 上 Chrome 浏览器中的选项卡。
 
 ## JQUERY UI 主题定制
 
@@ -10527,11 +9421,8 @@ jQuery UI 提供了非常出色的支持，用于在不同主题之间切换，�
 <title>jQuery Themes</title>
 
 <link type="text/css" rel="stylesheet" href="http://jqueryui.com/themes/base/ui.all.css"/>
-<link rel="stylesheet"
-href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.2/themes/base/jquery-ui.css"
-type="text/css" media="all"/>
-<link rel="stylesheet" href="http://static.jquery.com/ui/css/demo-docs-theme/ui.theme.css"
-type="text/css" media="all"/>
+<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.2/themes/base/jquery-ui.css" type="text/css" media="all"/>
+<link rel="stylesheet" href="http://static.jquery.com/ui/css/demo-docs-theme/ui.theme.css" type="text/css" media="all"/>
 <script src="http://jqueryui.com/js/jquery.js"></script>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
 <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.2/jquery-ui.min.js"></script>
@@ -10561,9 +9452,7 @@ $(function () {
 
 // display a progress bar
 $(function () {
-    $("#MyProgressbar").progressbar({
-        value: 80
-    });
+    $("#MyProgressbar").progressbar({ value: 80 });
 });
 </script>
 
@@ -10573,8 +9462,7 @@ $(function () {
 </head>
 
 <body style="font-size:60%;">
-<script src="http://jqueryui.com/themeroller/themeswitcher-tool/">
-</script>
+<script src="http://jqueryui.com/themeroller/themeswitcher-tool/"></script>
 
 <div id="MyThemeRoller"></div>
 
@@ -10622,174 +9510,40 @@ $(function () {
 代码清单 7.12 展示了 `JQUIEffects1.html` 的内容，该示例演示了如何对一个 HTML `<div>` 元素及其 HTML `<p>` 子元素进行水平晃动然后“爆炸”效果。
 
 ```
+代码清单 7.12 JQUIEffects1.html
+
 <!DOCTYPE html>
 <head>
 <meta charset="utf-8"/>
 <title>jQuery Effect Function</title>
 
-<link rel="stylesheet"
-href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.2/
-themes/base/jquery-ui.css"
-type="text/css" media="all"/>
-
-<link rel="stylesheet" href="http://static.jquery.com/ui/css/
-demo-docs-theme/ui.theme.css"
-type="text/css" media="all"/>
-
+<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.2/themes/base/jquery-ui.css" type="text/css" media="all"/>
+<link rel="stylesheet" href="http://static.jquery.com/ui/css/demo-docs-theme/ui.theme.css" type="text/css" media="all"/>
 <script src="http://jqueryui.com/js/jquery.js"></script>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
 <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.2/jquery-ui.min.js"></script>
 
 <style>
 #outer {
-```
-
-代码清单 7.10 引用了所需的 jQuery 文件，然后是一个 HTML `<style>` 元素，它为文档后面指定的选项卡（即 HTML `<div>` 元素）添加了一些样式效果。特别要注意以下针对带有 "tabs" 类的 `<div>` 的子 `<a>` 元素的代码片段：
-
-```css
-text-decoration:none;
-```
-
-...以及以下针对带有 "tabs" 类的 `<div>` 元素的子 `<li>` 元素的代码片段：
-
-```css
-list-style:none;
-```
-
-这些代码片段使我们能够以水平行的形式渲染选项卡，没有“项目符号”，因此它们看起来就像真正的选项卡。
-
-以下代码块跟踪当前活动的选项卡并使其可见，同时使所有其他选项卡的内容不可见：
-
-```javascript
-var $active, $content, $links = $(this).find('a');
-
-// first link is the initial active tab
-$active = $links.first().addClass('active');
-$content = $($active.attr('href'));
-
-// hide the other tabs
-$links.not(':first').each(function () {
-  $($(this).attr('href')).hide();
-});
-```
-
-图 7.9 展示了在 Macbook 上的 Chrome 浏览器中渲染代码清单 7.10 的 `JQUITabs.html`（并点击第四个选项卡）后的结果。
-
-![](img/6f06c2ff7e29452e50d03258ed9c6b4f_342_0.png)
-
-**图 7.9** Macbook 上 Chrome 浏览器中的选项卡。
-
-```
-<link href="JQUITabs.css" rel="stylesheet"
-      type="text/css">
-<script src="http://ajax.googleapis.com/ajax/libs/
-jquery/1.7.1/jquery.min.js"></script>
-
-<style>
-  .tabs a {
-    padding:5px 10px;
-    background:#f88;
-    color:#fff;
-    text-decoration:none;
-  }
-
-  .tabs li {
-    list-style:none;
-    display:inline;
-  }
-</style>
-
-<script>
-  $(document).ready(function(){
-    $('ul.tabs').each(function(){
-      // keep track of the currently active tab
-      var $active, $content, $links = $(this).find('a');
-
-      // first link is the initial active tab
-      $active = $links.first().addClass('active');
-      $content = $($active.attr('href'));
-
-      // hide the other tabs
-      $links.not(':first').each(function () {
-        $($(this).attr('href')).hide();
-      });
-
-      // bind the click event handler
-      $(this).on('click', 'a', function(e){
-        // Make the old tab inactive.
-        $active.removeClass('active');
-        $content.hide();
-
-        // Update the variables with the new link and content
-        $active = $(this);
-        $content = $($(this).attr('href'));
-
-        // Make the tab active
-        $active.addClass('active');
-        $content.show();
-
-        // prevent the anchor's default click action
-        e.preventDefault();
-      });
-    });
-  });
-</script>
-</head>
-
-<body>
-  <ul class='tabs'>
-    <li><a href='#tab1'>Tab 1</a></li>
-    <li><a href='#tab2'>Tab 2</a></li>
-    <li><a href='#tab3'>Tab 3</a></li>
-    <li><a href='#tab4'>Tab 4</a></li>
-  </ul>
-
-  <div id="tab1">
-    <p>Some text in the first tab. Some text in the first tab. Some text in the first tab.</p>
-  </div>
-
-  <div id="tab2">
-    <p>Some text in the second tab. Some text in the second tab. Some text in the second tab.</p>
-  </div>
-
-  <div id="tab3">
-    <p>Some text in the third tab. Some text in the third tab. Some text in the third tab.</p>
-  </div>
-
-  <div id="tab4">
-    <div id="outer">
-      <div id="inner1"></div>
-      <div id="inner2"></div>
-      <div id="inner3"></div>
-    </div>
-  </div>
-</body>
-</html>
-```
-
-
-
-width: 300px;
-height: 150px;
-border: 1px solid black;
+    width: 300px;
+    height: 150px;
+    border: 1px solid black;
 }
 </style>
 </head>
-
 <body>
 <div id="outer">
-<div> <p id="p1">来自 jQuery 的 Hello World</p> </div>
-<div> <p id="p2">点击矩形内部</p> </div>
-<div> <p id="p3">来自 jQuery 的 Goodbye World</p> </div>
+    <div> <p id="p1">来自 jQuery 的 Hello World</p> </div>
+    <div> <p id="p2">点击矩形内部</p> </div>
+    <div> <p id="p3">来自 jQuery 的 Goodbye World</p> </div>
 </div>
-
 <script>
 $(document).ready(function(){
-$("#outer").click(function() {
-$("#outer").effect('shake', {times:3}, 300)
-.effect('highlight', {}, 3000)
-.hide('explode', {}, 1000);
-});
+    $("#outer").click(function() {
+        $("#outer").effect('shake', {times:3}, 300)
+        .effect('highlight', {}, 3000)
+        .hide('explode', {}, 1000);
+    });
 });
 </script>
 </body>
@@ -10800,7 +9554,7 @@ $("#outer").effect('shake', {times:3}, 300)
 
 清单 7.12 的有趣之处在于 `<script>` 元素，它通过方法链使用 jQuery 的 `effect()` 方法为容器 HTML `<div>` 元素定义了点击处理程序，如下所示：
 
-```
+```javascript
 $("#outer").effect('shake', {times:3}, 300)
 .effect('highlight', {}, 3000)
 .hide('explode', {}, 1000);
@@ -10814,11 +9568,11 @@ $("#outer").effect('shake', {times:3}, 300)
 
 本节中的示例说明如何使用您在本章前面看到的一些 UI 组件。为了说明如何在合理长度的代码示例中操作 UI 组件，省略了验证细节，您可以将这些技术用于您自己的网页。
 
-清单 7.13 展示了 JQUITravel1.html 的内容，它说明了如何以编程方式确定用户选择的值，以及如何处理涉及 UI 组件的用户发起事件。
+清单 7.13 展示了 `JQUITravel1.html` 的内容，它说明了如何以编程方式确定用户选择的值，以及如何处理涉及 UI 组件的用户发起事件。
 
-### 清单 7.13 JQUITravel1.html
+### 清单 7.13 `JQUITravel1.html`
 
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10831,11 +9585,7 @@ $("#outer").effect('shake', {times:3}, 300)
   <script>
     var startCity = "", destCity = "",
         flightItem = "", submitButton = "";
-
-    var flightTimes = new Array('11-09-2011 5AM',
-                               '11-09-2011 3PM',
-                               '11-09-2011 6PM');
-
+    var flightTimes = new Array('11-09-2011 5AM', '11-09-2011 3PM', '11-09-2011 6PM');
     var flightCount = flightTimes.length;
     var flightDest = new Array(flightCount);
   </script>
@@ -10874,22 +9624,15 @@ $("#outer").effect('shake', {times:3}, 300)
 <input type="text" name="phone" id="phone" value="" />
 </fieldset>
 <fieldset id="FromAndDate">
-    <label for="startFrom"><strong>我在此：</strong>
-    </label>
+    <label for="startFrom"><strong>我在此：</strong></label>
     <select id="startFrom">
         <option>芝加哥</option>
         <option>纽约</option>
         <option>明尼阿波利斯</option>
     </select>
-
-    <label for="departureDate"><strong>出发：</strong>
-    </label>
-    <input type="date" name="departureDate"
-           id="departureDate" value="" />
-
-    <label for="goingPreferredAirline"><strong>航空公司：
-    </strong>
-    </label>
+    <label for="departureDate"><strong>出发：</strong></label>
+    <input type="date" name="departureDate" id="departureDate" value="" />
+    <label for="goingPreferredAirline"><strong>航空公司：</strong></label>
     <select id="goingPreferredAirline">
         <option>美国航空</option>
         <option>日本航空</option>
@@ -10897,64 +9640,44 @@ $("#outer").effect('shake', {times:3}, 300)
     </select>
 </fieldset>
 <fieldset id="departureDate">
-    <label for="destination"><strong>前往：</strong>
-    </label>
+    <label for="destination"><strong>前往：</strong></label>
     <select id="destination">
         <option>毛伊岛</option>
         <option>巴哈马</option>
         <option>巴黎</option>
     </select>
-
-    <label for="arrivalDate"><strong>抵达：</strong>
-    </label>
-    <input type="date" name="arrivalDate"
-           id="arrivalDate" value="" />
-
-    <label for="returningPreferredAirline">
-        <strong>航空公司：</strong></label>
+    <label for="arrivalDate"><strong>抵达：</strong></label>
+    <input type="date" name="arrivalDate" id="arrivalDate" value="" />
+    <label for="returningPreferredAirline"><strong>航空公司：</strong></label>
     <select id="returningPreferredAirline">
         <option>美国航空</option>
         <option>日本航空</option>
         <option>全日空航空</option>
     </select>
 </fieldset>
-
 <fieldset id="checkAvailableFlights">
-    <input id="availableFlights" type="submit"
-           value="查询可用航班">
+    <input id="availableFlights" type="submit" value="查询可用航班">
 </fieldset>
-
-<div id="availableFlightsList">
-</div>
+<div id="availableFlightsList"></div>
 </form>
 </div> <!-- 外部容器 -->
-
 <script>
     var search = function() {
         $("#availableFlights").parent().remove();
         startCity = $("#startFrom").val();
         destCity  = $("#destination").val();
-
         for(var i=0; i<flightCount; i++) {
-            flightItem   = flightTimes[i]+" from "+
-                           startCity+" to "+destCity;
-            submitButton =
-            "<input id=\"reserve\" type=\"submit\" value=\"预订！\">";
-
+            flightItem   = flightTimes[i]+" from "+ startCity+" to "+destCity;
+            submitButton = "<input id=\"reserve\" type=\"submit\" value=\"预订！\">";
             flightDetails = flightItem+submitButton;
-
-            $("#availableFlightsList").append(
-                       "<li>"+flightItem+submitButton+"</li>");
+            $("#availableFlightsList").append("<li>"+flightItem+submitButton+"</li>");
         }
     };
-
     $(document).ready(function() {
         // 用户更改了“出发城市”...
         $("#startFrom").change(search);
-
         // 用户更改了“目的地城市”...
         $("#destination").change(search);
-
         // 用户想查看可用航班...
         $("#searchNow").change(search);
     });
@@ -10967,34 +9690,27 @@ $("#outer").effect('shake', {times:3}, 300)
 
 清单 7.13 的下一部分包含一个带有多个 HTML 下拉列表的 HTML Form 元素，随后是一个 JavaScript 代码块，该代码块定义了一个 JavaScript 变量，每当用户更改任何下拉列表中的选择时，该变量都会处理搜索功能，如下所示：
 
-```
+```javascript
 var search = function() {
     $("#availableFlights").parent().remove();
     startCity = $("#startFrom").val();
     destCity = $("#destination").val();
-
     for(var i=0; i<flightCount; i++) {
-        flightItem = flightTimes[i]+" from "+
-                     startCity+" to "+destCity;
-        submitButton =
-            "<input id=\"reserve\" type=\"submit\" value=\"预订！\">";
+        flightItem = flightTimes[i]+" from "+ startCity+" to "+destCity;
+        submitButton = "<input id=\"reserve\" type=\"submit\" value=\"预订！\">";
         flightDetails = flightItem+submitButton;
-
-        $("#availableFlightsList").append(
-                                     "<li>"+flightItem+submitButton+"</li>");
+        $("#availableFlightsList").append("<li>"+flightItem+submitButton+"</li>");
     }
 };
 ```
 
 清单 7.13 的最后一部分将“change”事件绑定到三个下拉列表中的任何一个，当用户更改其中任何一个的选择时，就会执行 JavaScript 变量 `search` 中的代码，从而在网页上显示用户选择的结果。
 
-图 7.11 显示了在 Macbook 上的 Chrome 浏览器中渲染清单 7.13 中的 JQUITravel1.html 的结果。
-
-
+图 7.11 显示了在 Macbook 上的 Chrome 浏览器中渲染清单 7.13 中的 `JQUITravel1.html` 的结果。
 
 ## JQUERY 的未来版本
 
-在本书付印之际，jQuery 1.8（测试版）现已发布。jQuery 1.9 将在2013年发布时支持旧版本（6、7和8）的 IE，并且在 jQuery 2.0 发布后，jQuery 团队将继续支持 1.9 版本。但是，jQuery 2.0 将停止对 IE 6、7 和 8 的支持。根据预测，jQuery 2.1 不太可能在2014年之前推出。jQuery 团队的目标是保持 jQuery 的 1.x 和 2.x 版本同步，并通过插件添加功能。
+在本书付印之际，jQuery 1.8（测试版）现已发布。jQuery 1.9 将在 2013 年发布时支持旧版本（6、7 和 8）的 IE，并且在 jQuery 2.0 发布后，jQuery 团队将继续支持 1.9 版本。但是，jQuery 2.0 将停止对 IE 6、7 和 8 的支持。根据预测，jQuery 2.1 不太可能在 2014 年之前推出。jQuery 团队的目标是保持 jQuery 的 1.x 和 2.x 版本同步，并通过插件添加功能。
 
 一些新的 jQuery 1.8 功能包括：
 
@@ -11003,7 +9719,7 @@ var search = function() {
 - Sizzle CSS 选择器引擎
 - 使用新方法 `$.parseHTML` 提供 XSS 保护
 
-目前你可以排除的模块有 ajax、css、dimensions、effects 和 offset。前缀生成的一个简单例子是，如果你的 HTML 网页在 Chrome 上包含以下 jQuery 代码片段：
+目前你可以排除的模块有 `ajax`、`css`、`dimensions`、`effects` 和 `offset`。前缀生成的一个简单例子是，如果你的 HTML 网页在 Chrome 上包含以下 jQuery 代码片段：
 
 ```javascript
 $("#myscroll").css("marquee-direction", "backwards")
@@ -11029,7 +9745,7 @@ http://jqueryui.com/demos/
 https://www.jformer.com/
 一个用于播放音频和视频文件的 jQuery 插件集合在此：
 http://superdit.com/2011/04/27/12-jquery-plugins-for-playing-audio-video-files/
-用于显示推文的 jQuery 插件 jTweetsAnywhere 在此：
+用于显示推文的 jQuery 插件 `jTweetsAnywhere` 在此：
 http://thomasbillenstein.com/jTweetsAnywhere/
 
 ## 总结
@@ -11086,22 +9802,20 @@ jQuery Mobile 依赖于带有 `data-` 前缀的自定义属性，一个简单的
 另一个需要牢记的关键点是，jQuery 使用以下构造：
 
 ```javascript
-$(document).ready() {
+$(document).ready(function() {
     // 在这里做些事情
-}
+});
 ```
 
 另一方面，jQuery Mobile 使用以下构造：
 
 ```javascript
-$(selector).live('pageinit', (function(event) {
+$(selector).live('pageinit', function(event) {
     // 在这里做些事情
-}));
+});
 ```
 
 注意不同的焦点：jQuery 在网页加载完成时发送事件，而 jQuery Mobile 在页面（或页面视图）初始化完成时发送事件。
-
-
 
 ## jQuery Mobile 的关键特性和组成部分
 
@@ -11131,18 +9845,17 @@ jQuery Mobile 提供了许多有用的功能，这些功能将简化创建移动
 
 清单 8.1 展示了 `JQMHelloWorld1.html` 的内容，该文件说明了如何在在桌面浏览器、平板电脑或智能手机上渲染的 HTML5 网页中显示“Hello World”消息。
 
-```
-清单 8.1 JQMHelloWorld1.html
+### 清单 8.1 `JQMHelloWorld1.html`
+
+```html
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset=utf-8"/>
+    <meta charset="utf-8"/>
     <title>Hello World from jQuery Mobile</title>
-    <link rel="stylesheet"
-          href="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.css"/>
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.css"/>
     <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
-    <script src="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.js">
-    </script>
+    <script src="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.js"></script>
   </head>
   <body>
     <div data-role="page">
@@ -11178,11 +9891,11 @@ jQuery Mobile 提供了许多有用的功能，这些功能将简化创建移动
 
 现在在一个基于 WebKit 的浏览器中启动清单 8.1，并将你看到的结果与图 8.1 和图 8.2 进行比较。
 
-早些时候你已经了解到，jQuery Mobile 通过添加额外的标签和 CSS 类来增强移动网页。清单 8.2 展示了 JQMHelloWorld1Enhanced.html，它展示了 jQuery Mobile 如何增强 HelloWorld1.html 这个 HTML 网页。
+早些时候你已经了解到，jQuery Mobile 通过添加额外的标签和 CSS 类来增强移动网页。清单 8.2 展示了 `JQMHelloWorld1Enhanced.html`，它展示了 jQuery Mobile 如何增强 `HelloWorld1.html` 这个 HTML 网页。
 
-### 清单 8.2 JQMHelloWorld1Enhanced.html
+### 清单 8.2 `JQMHelloWorld1Enhanced.html`
 
-```
+```html
 <!DOCTYPE html>
 <html lang="en" class="ui-mobile landscape min-width-320px min-width-480px min-width-768px max-width-1024px">
 <head>
@@ -11190,13 +9903,9 @@ jQuery Mobile 提供了许多有用的功能，这些功能将简化创建移动
     <base href="file:///Users/ocampesato/jqm/">
     <title>Hello World from jQuery Mobile</title>
     <link rel="stylesheet" href="jquery.mobile-1.1.0.min.css">
-
-    <script src="jquery-1.7.1.js">
-    </script>
-    <script src="jquery.mobile-1.1.0.min.js">
-    </script>
+    <script src="jquery-1.7.1.js"></script>
+    <script src="jquery.mobile-1.1.0.min.js"></script>
 </head>
-
 <body class="ui-mobile-viewport">
     <div data-role="page" class="ui-page ui-body-c ui-page-active">
         <div data-role="header" class="ui-bar-a ui-header" role="banner">Header</div>
@@ -11205,7 +9914,6 @@ jQuery Mobile 提供了许多有用的功能，这些功能将简化创建移动
         </div>
         <div data-role="footer" class="ui-bar-a ui-footer" role="contentinfo">Footer</div>
     </div>
-
     <div class="ui-loader ui-body-a ui-corner-all" style="top: 295.5px; ">
         <span class="ui-icon ui-icon-loading spin"></span>
         <h1>loading</h1>
@@ -11232,7 +9940,7 @@ jQuery 是一个用于在桌面浏览器上创建 HTML 网页的工具包，而 
 
 在页面视图之间进行导航非常简单：只需在 jQuery Mobile 应用程序中为带有 `data-role="content"` 属性的 `<div>` 元素添加一个链接，如下所示：
 
-```
+```html
 <div data-role="content">
     <p>A second page view<a href="#home">Home</a></p>
 </div>
@@ -11258,23 +9966,21 @@ jQuery Mobile 提供了页面过渡以及事件和 ui 对象，你可以在绑�
 
 以下是页面初始化期间发生的页面事件序列：
 
-pagebeforecreate：最先触发
-pagecreate：在填充 DOM 时触发
-
-
+- `pagebeforecreate`：最先触发
+- `pagecreate`：在填充 DOM 时触发
 
 每当用户点击一个导航到首次加载页面的链接时，会发生以下事件序列：
 
--   pagebeforehide：在过渡前于“来源”页面上触发
--   pagebeforeshow：在过渡前于“目标”页面上触发
--   pagehide：在过渡后于“来源”页面上触发
--   pageshow：在过渡后于“目标”页面上触发
+- `pagebeforehide`：在过渡前于“来源”页面上触发
+- `pagebeforeshow`：在过渡前于“目标”页面上触发
+- `pagehide`：在过渡后于“来源”页面上触发
+- `pageshow`：在过渡后于“目标”页面上触发
 
 每当使用 Ajax 加载新页面时，会发生以下事件序列：
 
--   pagebeforeload：在发出 AJAX 调用之前
--   pageload：在 AJAX 调用完成之后
--   pageloadfailed：如果 AJAX 调用失败则触发
+- `pagebeforeload`：在发出 AJAX 调用之前
+- `pageload`：在 AJAX 调用完成之后
+- `pageloadfailed`：如果 AJAX 调用失败则触发
 
 在页面过渡期间，`ui.nextPage` 被赋值为过渡的目标页面，如果没有下一个页面，则赋值为空的 jQuery 对象。类似地，`ui.prevPage` 被赋值为过渡前的当前页面，如果没有上一个页面，则赋值为空的 jQuery 对象。
 
@@ -11286,7 +9992,7 @@ jQuery Mobile 为其内部功能使用基于 Ajax 的异步方法调用，因此
 
 代码清单 8.3 展示了 `JQMPageEvents1.html` 的内容，说明了页面事件的执行顺序。
 
-## 代码清单 8.3 JQMPageEvents1.html
+### 代码清单 8.3 `JQMPageEvents1.html`
 
 ```html
 <!DOCTYPE html>
@@ -11294,69 +10000,56 @@ jQuery Mobile 为其内部功能使用基于 Ajax 的异步方法调用，因此
 <head>
     <meta charset="utf-8">
     <title>JQuery Mobile Page Events</title>
-    <link rel="stylesheet"
-          href="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.css"/>
-    <script
-        src="http://code.jquery.com/jquery-1.7.1.min.js">
-    </script>
-    <script
-        src="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.js">
-    </script>
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.css"/>
+    <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.js"></script>
 </head>
 <body>
     <div data-role="page" id="page1">
         <div data-role="header">
             <h3>JQuery Mobile Page Events</h3>
         </div>
-        <div data-role="content" id="content">
-        </div>
+        <div data-role="content" id="content"></div>
         <div data-role="footer"><h3>Footer</h3></div>
     </div>
     <script>
-        $("#page1").live('pagebeforecreate', (function(event){
+        $("#page1").live('pagebeforecreate', function(event){
             console.log("pagebeforecreate event");
-        })
-        );
-        $("#page1").live('pagecreate', (function(event){
+        });
+        $("#page1").live('pagecreate', function(event){
             console.log("pagecreate event");
-        })
-        );
-        $("#page1").live('pageinit', (function(event){
+        });
+        $("#page1").live('pageinit', function(event){
             console.log("pageinit event");
-        })
-        );
-        $("#page1").live('pagebeforehide', (function(event){
-            console.log("pagebeforehideevent");
-        })
-        );
-        $("#page1").live('pagebeforeshow', (function(event){
+        });
+        $("#page1").live('pagebeforehide', function(event){
+            console.log("pagebeforehide event");
+        });
+        $("#page1").live('pagebeforeshow', function(event){
             console.log("pagebeforeshow event");
-        })
-        );
-        $("#page1").live('pagehide', (function(event){
+        });
+        $("#page1").live('pagehide', function(event){
             console.log("pagehide event");
-        })
-        );
-        $("#page1").live('pageshow', (function(event){
+        });
+        $("#page1").live('pageshow', function(event){
             console.log("pageshow event");
-        })
-        );
+        });
     </script>
 </body>
 </html>
 ```
 
-代码清单 8.3 是一个简单的 HTML5 网页，包含用于单个页面视图的 HTML 标记和 jQuery Mobile 代码。主要代码块使用 jQuery 的 live() 方法来绑定各种页面相关事件，每当页面事件发生时，都会在控制台中显示一条消息。
+代码清单 8.3 是一个简单的 HTML5 网页，包含用于单个页面视图的 HTML 标记和 jQuery Mobile 代码。主要代码块使用 jQuery 的 `live()` 方法来绑定各种页面相关事件，每当页面事件发生时，都会在控制台中显示一条消息。
 
 图 8.3 展示了在 Macbook 上的 Chrome 浏览器中渲染代码清单 8.3 中 HTML 网页的结果。图 8.3 底部的 Chrome 检查器向你展示了在 jQuery Mobile 中触发的页面相关事件的顺序。
 
 ![](img/6f06c2ff7e29452e50d03258ed9c6b4f_367_0.png)
 
-# JQUERY MOBILE 与 CSS 相关的页面初始化
+## JQUERY MOBILE 与 CSS 相关的页面初始化
 
 除了公开页面相关事件外，jQuery Mobile 还会在网页在浏览器中渲染之前对其进行额外处理。首先，jQuery Mobile 触发 `beforecreate` 事件，然后为所有页面元素添加 `ui-page` 类，并为所有应用了 `data-role="none"` 或 `data-role="nojs"` 的页面元素添加 `ui-nojs` 类。
 
-接下来，jQuery Mobile 搜索具有 data- 属性的子元素，并添加主题类、适当的 ARIA 角色，并且（如有必要）还会为第一页之后的所有页面在标题中添加一个返回按钮。
+接下来，jQuery Mobile 搜索具有 `data-` 属性的子元素，并添加主题类、适当的 ARIA 角色，并且（如有必要）还会为第一页之后的所有页面在标题中添加一个返回按钮。
 
 最后，jQuery Mobile 增强按钮、控件组和表单控件，并对工具栏进行任何必要的调整。
 
@@ -11366,9 +10059,9 @@ jQuery Mobile 为其内部功能使用基于 Ajax 的异步方法调用，因此
 
 请注意，如果 jQuery Mobile 找不到网页，或者网页不包含具有 `data-role="page"` 属性的元素，它会显示一条错误消息。请确保外部网页中的 `id` 值与当前网页的 `id` 值不同。
 
-顺便提一下，你可以通过两种方式覆盖默认的页面加载：在链接上指定 target 属性（如 `blank`）或在链接上指定 `rel="external"` 属性。
+顺便提一下，你可以通过两种方式覆盖默认的页面加载：在链接上指定 `target` 属性（如 `_blank`）或在链接上指定 `rel="external"` 属性。
 
-# mobileinit 事件
+## mobileinit 事件
 
 jQuery Mobile 在执行时立即在 document 对象上触发 `mobileinit` 事件，因此你可以绑定它并覆盖任何默认配置。
 
@@ -11382,7 +10075,7 @@ $(document).bind('mobileinit', function () {
 
 请注意，`data-role="none"` 属性与前面代码块具有相同的目的，不同之处在于它仅应用于包含此属性的特定元素。
 
-# JQUERY MOBILE 选项与自定义
+## JQUERY MOBILE 选项与自定义
 
 jQuery Mobile 为各种对象提供选项和方法，包括 `.mobile`、`.mobile.path` 和 `.mobile.history`。有许多选项可以为你的移动应用程序配置，我们将在本节中仅介绍其中一些。一个显然有用的方法是 jQuery Mobile 的 `pageLoading()` 方法，它用于显示和隐藏 jQuery Mobile 加载对话框。你调用此方法时传递布尔值 `true` 以隐藏对话框，不带参数调用此方法以显示对话框，如下所示：
 
@@ -11408,33 +10101,35 @@ $.mobile.defaultPageTransition = "pop";
 ```javascript
 $.extend($.mobile, {
     "loadingMessage": "请稍候",
-```
-
-
-
-## 页面导航与页面切换
-
-当用户在你的移动Web应用中导航时，jQuery Mobile也会更新 `location.hash` 对象，其值是每个页面视图的唯一URL（该URL由带有 `data-role="page"` 属性的元素定义）。jQuery Mobile会自动将每个页面的URL存储在其分配给页面“容器”元素的 `data-url` 属性中。
-
-jQuery Mobile还提供了一组方法，使你能够以编程方式处理页面切换和滚动。其中一种方法是 `changePage()`，其语法如下：
-
-`changePage(to, transition, back, changeHash);`
-
-`to` 参数是一个字符串，用于指定元素ID或文件名（以及许多其他选项），它是对目标页面的引用。`transition` 参数是应用程序跳转到目标页面时创建的过渡效果名称。`back` 参数是一个布尔值，指定过渡是否反向进行。最后，`changeHash` 参数是一个布尔值，指定是否更新 `location.hash` 对象。
-
-`changePage()` 方法使你能够创建更复杂的页面过渡效果。例如，当用户点击带有 "flip" 效果且反向进行的 `.back-btn` 时，以下代码片段会跳转到页面 `#first`，且不更新location hash：
-
-```
-$(".back-btn").bind("click", function() {
-    changePage("#first", "flip", true, false);
+    "defaultPageTransition": "pop"
 });
 ```
 
-jQuery Mobile还提供了 `silentScroll()` 方法，它接受一个整数值来指定目标位置的 `y` 坐标。调用此方法时，不会触发滚动事件监听器。例如，以下代码片段会静默滚动到位置 200：
+## 页面导航与页面切换
 
+当用户在你的移动 Web 应用中导航时，jQuery Mobile 也会更新 `location.hash` 对象，其值是每个页面视图的唯一 URL（该 URL 由带有 `data-role="page"` 属性的元素定义）。jQuery Mobile 会自动将每个页面的 URL 存储在其分配给页面“容器”元素的 `data-url` 属性中。
+
+jQuery Mobile 还提供了一组方法，使你能够以编程方式处理页面切换和滚动。其中一种方法是 `changePage()`，其语法如下：
+
+`changePage(to, transition, back, changeHash);`
+
+`to` 参数是一个字符串，用于指定元素 ID 或文件名（以及许多其他选项），它是对目标页面的引用。`transition` 参数是应用程序跳转到目标页面时创建的过渡效果名称。`back` 参数是一个布尔值，指定过渡是否反向进行。最后，`changeHash` 参数是一个布尔值，指定是否更新 `location.hash` 对象。
+
+`changePage()` 方法使你能够创建更复杂的页面过渡效果。例如，当用户点击带有 "flip" 效果且反向进行的 `.back-btn` 时，以下代码片段会跳转到页面 `#first`，且不更新 location hash：
+
+```javascript
+$(".back-btn").bind("click", function() {
+    $.mobile.changePage("#first", "flip", true, false);
+});
 ```
+
+jQuery Mobile 还提供了 `silentScroll()` 方法，它接受一个整数值来指定目标位置的 `y` 坐标。调用此方法时，不会触发滚动事件监听器。例如，以下代码片段会静默滚动到位置 200：
+
+```javascript
 $.mobile.silentScroll(200);
 ```
+
+
 
 ## jqmData() 自定义选择器
 
@@ -11464,40 +10159,69 @@ jQuery Mobile使你能够方便地在单个HTML5网页中定义多个页面视�
 
 ```
 清单 8.4 JQMMultiPageViews1.html
+
 <!DOCTYPE html>
+
 <html>
+
 <head>
+
   <meta charset=utf-8"/>
+
   <title>jQuery Mobile: Multiple Page Views</title>
 
   <link rel="stylesheet"
+
     href="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.css"/>
+
   <script
+
     src="http://code.jquery.com/jquery-1.7.1.min.js">
+
   </script>
+
   <script src="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.js">
+
   </script>
+
 </head>
 
 <body>
+
   <div data-role="page" id="home">
+
     <div data-role="header"> <h1>Home Page Header</h1> </div>
+
     <div data-role="content">
+
       <p>This is the content of the main page</p>
+
       <p><a href="#about">Click here to get more information</a></p>
+
     </div>
+
     <div data-role="footer"> <h1>Home Page Footer</h1> </div>
+
   </div>
 
   <div data-role="page" id="about">
+
     <div data-role="header"> <h1>About This Page Header</h1></div>
+
     <div data-role="content">
+
       <p>A second page view (that's all for now)</p>
+
       <a href="#home"> Click Here or the 'Back' Button to go Home</a>
+
     </div>
+
     <div data-role="footer"> <h1>About This Page Footer</h1></div>
+
   </div>
+
 </body>
+
 </html>
 ```
 
@@ -11515,7 +10239,9 @@ jQuery Mobile框架会在每个页面视图上自动生成返回按钮和主页�
 
 ```
 <div data-role="header" data-backbtn="false">
+
     <h1>Page Header</h1>
+
 </div>
 ```
 
@@ -11549,37 +10275,61 @@ jQuery Mobile可以通过三种方式动态定位页眉和页脚工具栏：
 
 ```
 <!DOCTYPE html>
+
 <html lang="en">
+
 <head>
+
   <meta charset="utf-8"/>
+
   <title>Fixed Header and Footer in jQueryMobile</title>
+
   <link rel="stylesheet"
+
     href="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.css"/>
+
   <script
+
     src="http://code.jquery.com/jquery-1.7.1.min.js">
+
   </script>
+
   <script src="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.js">
+
   </script>
+
 </head>
+
 <body>
+
   <div id="page1" data-role="page">
+
     <header data-role="header" data-position="fixed">
+
       <h1>jQuery Mobile</h1>
+
     </header>
+
     <div class="content" data-role="content">
+
       <h3>Content area.</h3>
+
     </div>
+
     <footer data-role="footer" data-position="fixed">
+
       <h3>Fixed Footer</h3>
+
     </footer>
+
   </div>
+
 </body>
+
 </html>
 ```
 
 清单8.5包含HTML标记和一个页面视图，该视图也为页眉和页脚元素指定了属性 `data-position="fixed"`。你还可以通过在包含 `data-role="page"` 属性的元素中添加属性 `data-fullscreen="true"`，并在页眉和页脚元素中添加属性 `data-position="fixed"` 来创建全屏页眉或页脚，如下所示：
-
-
 
 ## 在 jQuery Mobile 中使用按钮
 
@@ -11593,10 +10343,15 @@ jQuery Mobile 通过向 HTML `<input>` 按钮、`<button>` 标签和锚点链接
 
 ```
 <div data-role="header">
+
     <a href="index.html" data-direction="reverse">Reverse Transition</a>
+
     <h1>Left and Right Buttons </h1>
+
     <!-- This appears on the right -->
+
     <a href="info.html" data-icon="plus">Add</a>
+
 </div>
 ```
 
@@ -11604,15 +10359,19 @@ jQuery Mobile 通过向 HTML `<input>` 按钮、`<button>` 标签和锚点链接
 
 ```
 <div data-role="header">
+
 <a href="index.html" class="ui-btn-right">Right</a>
+
  <h1>Page title</h1>
+
 <a href="info.html" class="ui-btn-left">Left</a>
+
 </div>
 ```
 
 ## 导航按钮作为锚点链接
 
-在 jQuery Mobile 中，推荐的做法是将导航按钮定义为锚点链接，并将表单提交按钮定义为按钮元素。
+在 jQuery Mobile 中，推荐的做法是将导航按钮定义为锚点链接，并将表单提交按�定义为按钮元素。
 
 包含属性 `data-role="button"` 的锚点链接将被样式化为按钮，如下所示：
 
@@ -11632,9 +10391,13 @@ jQuery Mobile 会渲染按钮，移除按钮之间的边距（和阴影），并
 
 ```
 <div data-role="controlgroup">
+
   <a href="index1.html" data-role="button">One</a>
+
   <a href="index2.html" data-role="button">Two</a>
+
   <a href="index3.html" data-role="button">Three</a>
+
 </div>
 ```
 
@@ -11644,8 +10407,11 @@ jQuery Mobile 框架通过一种称为 `ui-grid` 的块级样式类约定，使�
 
 ```
 <div class="ui-grid-a">
+
   <div class="ui-block-a">Block 1 and text inside will wrap</div>
+
   <div class="ui-block-b">Block 2 and text inside will wrap</div>
+
 </div>
 ```
 
@@ -11655,9 +10421,13 @@ jQuery Mobile 框架通过一种称为 `ui-grid` 的块级样式类约定，使�
 
 ```
 <div class="ui-grid-b">
+
   <div class="ui-block-a">Block 1 and text inside will wrap</div>
+
   <div class="ui-block-b">Block 2 and text inside will wrap</div>
+
   <div class="ui-block-c">Block 3 and text inside will wrap</div>
+
 </div>
 ```
 
@@ -11667,14 +10437,17 @@ http://jquerymobile.com/demos/1.0b1/#/demos/1.0/docs/content/content-grids.html
 
 ## 使用主题渲染按钮
 
-jQuery Mobile 有一个广泛的主题系统，标签从“a”到“e”，用于控制按钮的样式方式。当一个链接被添加到容器时，jQuery Mobile 会为其分配一个与父级主题匹配的“主题色板”字母。例如，一个放置在主题为“a”（在默认主题中为黑色）的内容容器内的按钮，会自动被分配按钮主题“a”（在默认主题中为炭灰色）。
+jQuery Mobile 有一个广泂的主题系统，标签从“a”到“e”，用于控制按钮的样式方式。当一个链接被添加到容器时，jQuery Mobile 会为其分配一个与父级主题匹配的“主题色板”字母。例如，一个放置在主题为“a”（在默认主题中为黑色）的内容容器内的按钮，会自动被分配按钮主题“a”（在默认主题中为炭灰色）。
 
 按钮主题的一个示例如下所示：
 
 ```
 <div data-role="footer" class="ui-bar">
+
   <a href="left.html" data-icon="arrow-l"
+
      data-role="button" data-theme="a">Left</a>
+
 </div>
 ```
 
@@ -11684,65 +10457,104 @@ jQuery Mobile 有一个广泛的主题系统，标签从“a”到“e”，用�
 
 ```
 <!DOCTYPE html>
+
 <html lang="en">
+
   <head>
+
     <meta charset="utf-8"/>
+
     <title>Multiple Buttons and Themes in jQuery Mobile</title>
+
     <link rel="stylesheet" href="CSS3Background1.css"/>
+
     <link rel="stylesheet"
+
           href="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.css"/>
+
     <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+
     <script src="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.js"></script>
+
   </script>
+
 </head>
 
 <body>
+
   <div id="pagel" data-role="page">
+
     <div data-role="header">
+
       <!-- This button appears on the left -->
+
       <a href="abc.html" data-icon="arrow-l"
+
          data theme="b">Index</a>
 
       <h1>Rendering Buttons in jQuery Mobile</h1>
 
       <!-- This button appears on the right -->
+
       <a href="def.html" data-icon="plus" data-theme="e">Add</a>
+
     </div>
 
     <div class="content" data-role="content">
+
       <div data-role="controlgroup" data-type="horizontal">
+
         <a href="index1.html" data-role="button">One</a>
+
         <a href="index2.html" data-role="button">Two</a>
+
         <a href="index3.html" data-role="button">Three</a>
+
         <a href="index4.html" data-role="button">Four</a>
+
         <a href="index5.html" data-role="button">Five</a>
+
       </div>
 
       <a href="index6.html" class="shadow"
+
          data-role="button">Vertical1</a>
+
       <a href="index7.html" class="shadow"
+
          data-role="button">Vertical2</a>
+
       <a href="index8.html" class="shadow"
+
          data-role="button">Vertical3</a>
 
       <div data-role="controlgroup">
+
         <a href="index6.html" data-role="button">Vertical1</a>
+
         <a href="index7.html" data-role="button">Vertical2</a>
+
         <a href="index8.html" data-role="button">Vertical3</a>
+
       </div>
 
       <div>
+
         <a href="index9.html" data-role="button" id="cancel"
+
            data-inline="true">Cancel</a>
+
         <a href="index10.html" data-role="button" id="submit"
+
            data-inline="true" data-theme="b">Save</a>
+
       </div>
+
     </div>
 
     <!-- Display four directional array keys -->
+
 ```
-
-
 
 ## JQUERY MOBILE 图标
 
@@ -11750,6 +10562,7 @@ jQuery Mobile 提供了一组默认的按钮图标，这些图标在移动应用
 
 ```
 <a href="index.html" data-role="button"
+
 data-icon="delete">Delete</a>
 ```
 
@@ -11761,10 +10574,11 @@ data-icon="delete">Delete</a>
 
 ```
 <a href="abc.html" data-role="button" data-icon="home"
+
 data-iconpos="right">Home</a>
 ```
 
-如果你想使用自定义图标，请指定一个唯一的 `data-icon` 值，jQuery Mobile 将生成一个类名，该类名是 `ui-con` 与你指定的唯一名称的串联。例如，如果你指定 `abc` 作为唯一名称，那么 jQuery Mobile 将生成类 `ui-icon-abc`。然后，你可以编写一个针对 `ui-icon-abc` 类的 CSS 规则来指定图标背景源。
+如果你想使用自定图标，请指定一个唯一的 `data-icon` 值，jQuery Mobile 将生成一个类名，该类名是 `ui-con` 与你指定的唯一名称的串联。例如，如果你指定 `abc` 作为唯一名称，那么 jQuery Mobile 将生成类 `ui-icon-abc`。然后，你可以编写一个针对 `ui-icon-abc` 类的 CSS 规则来指定图标背景源。
 
 jQuery Mobile 包含一个单一的白色图标精灵图以最小化下载大小，图标后面还有一个半透明的黑色圆圈，以确保它与任何背景颜色形成良好对比。
 
@@ -11778,7 +10592,7 @@ jQuery Mobile 中的表单遵循与普通 HTML 相同的准则，表单提交通
 
 本节中的示例包含一个 `<form>` 元素，其中有以下元素：复选框、下拉列表、单选按钮、滑块、文本输入框和文本区域。
 
-jQuery Mobile 会自动将复选框和单选按钮增强为用户界面中类似按钮的元素。你可以通过在容器元素中添加 `data-role="controlgroup"` 属性将它们分组为一个控件组。控件组是垂直堆叠的按钮，它们会拉伸到其容器元素的宽度，但你也可以通过 `data-type="horizontal"` 创建水平控件组。
+jQuery Mobile 会自动将复选框和单选按钮增强为用户界面中类似按钮的元素。你可以通过在容器元素中添加 `data-role="controlgroup"` 属性将它们分组为一个控件组。控件组是垂直堆另的按钮，它们会拉伸到其容器元素的宽度，但你也可以通过 `data-type="horizontal"` 创建水平控件组。
 
 清单 8.8 展示了 JQMForm1.html 的内容，说明了如何渲染各种类型的 HTML 小部件。本节中的代码示例旨在向你展示如何创建一些有趣的视觉效果，但请务必阅读清单 8.9 之前的注意事项。
 
@@ -11786,22 +10600,33 @@ jQuery Mobile 会自动将复选框和单选按钮增强为用户界面中类似
 
 ```
 <!DOCTYPE html>
+
 <html lang="en">
+
 <head>
+
 <meta charset=utf-8"/>
+
 <title>jQueryMobile Form Example</title>
 
 <link rel="stylesheet" href="CSS3Background2.css"/>
 
 <link rel="stylesheet"
+
 href="http://code.jquery.com/mobile/1.1.0/jquery.mobile-
+
 1.1.0.min.css"/>
 
 <script
+
 src="http://code.jquery.com/jquery-1.7.1.min.js">
+
 </script>
+
 <script src="http://code.jquery.com/mobile/1.1.0
+
 /jquery.mobile-1.1.0.min.js">
+
 ```
 
 <div data-role="footer" class="ui-bar">
@@ -11871,18 +10696,22 @@ data-role="button" data-theme="e">Right</a>
 如你所见，jQuery Mobile 中有许多与样式相关的选项可用，因此对 jQuery Mobile 按钮的讨论进行总结可能会有所帮助：
 
 -   带有 `data-role="button"` 属性的锚点链接被渲染为按钮。
+
 -   任何类型为 button、submit、reset 或 image 的 input 元素都会被分配一个 `ui-btn-hidden` 类，并显示一个基于链接的按钮。
+
 -   添加 `data-icon` 属性以创建带图标的按钮。
+
 -   添加 `data-iconpos` 属性以更改图标的位置。
+
 -   指定 `data-inline="true"` 以仅将按钮渲染为其文本的宽度。
+
 -   `data-role="controlgroup"` (`data-type="horizontal"`) 在 `<div>` 元素中垂直（水平）分组按钮。
+
 -   `data-theme="e"` 属性是五个 jQuery 主题（“a”到“e”）中的第五个。
-
-
 
 # JQUERY MOBILE 中的列表视图
 
-jQuery Mobile 支持列表视图（这在移动应用中非常常见），以及几种变体，包括列表视图按钮、嵌套列表视图和列表视图拆分按钮。
+jQuery Mobile 支持列表视图（这在移动应用中非常常见），以及几种变体，包括列表视按钮、嵌套列表视图和列表视图拆分按钮。
 
 ## 带按钮的简单列表视图
 
@@ -11923,14 +10752,14 @@ jQuery Mobile 可以通过为列表应用属性 `data-role="listview"` 来增强
         <li><a href="#">有序项 2</a></li>
         <li><a href="#">有序项 3</a></li>
       </ol>
-    </div>
+    </div
     <div data-role="footer"> <h2>这是页脚</h2> </div>
   </div>
 </body>
 </html>
 ```
 
-每当用户点击清单 8.10 中的任何列表项时，你都可以检测到该事件并执行你已绑定到该事件的自定义代码（如果有的话）。在此示例中，`href` 属性的值为 #，因此当用户点击或轻敲列表项时，页面会重新加载。
+每当用户点击清单 8.10 中的任何列表项时，你都可以检测到该事件并执行你已绑定到该事件的自定�代码（如果有的话）。在此示例中，`href` 属性的值为 #，因此当用户点击或轻敲列表项时，页面会重新加载。
 
 图 8.9 展示了在配备 Android ICS 的华硕 Prime 平板电脑上以横屏模式渲染清单 8.10 中 HTML 网页的结果。
 
@@ -12036,7 +10865,7 @@ src="http://code.jquery.com/jquery-1.7.1.min.js">
 
       <!-- 下拉列表 -->
       <div data-role="fieldcontain">
-          <label for="select-choice" class="select">你的类型：</label>
+          <label for="select-choice" class="select">你的类型：</label
           <select name="select-choice" id="select-choice">
               <option value="MP">早起型</option>
               <option value="NP">夜猫子型</option>
@@ -12076,7 +10905,7 @@ src="http://code.jquery.com/jquery-1.7.1.min.js">
 }
 ```
 
-清单 8.8 中的第一个选择器匹配清单 8.7 中的文本输入字段，第二个选择器匹配滑块和“翻转”元素。第一个选择器渲染带有红色调的阴影效果，而第二个选择器渲染带有蓝色调的阴影。你会注意到的一件事是，你可以为输入字段和按钮应用自定义样式，但其他类型的小部件不一定“拾取”你的自定义效果，因此你需要针对你的 HTML 网页中包含的其他类型的 jQuery 小部件（如下拉列表和组合框）来测试你的选择器。jQuery Mobile 也处理输入字段和文本区域；输入字段可以应用 `type` 属性并使用 HTML5 中定义的几个新值，通过显示正确的键盘类型来帮助用户。例如，具有 `type="number"` 的输入在大多数移动设备上将显示数字键盘，以此类推。文本区域将随着用户输入内容而增加高度，从而避免创建滚动条。jQuery Mobile 使用文本输入插件来处理文本区域和输入字段，如下所示：
+清单 8.8 中的第一个选择器匹配清单 8.7 中的文本输入字段，第二个选择器匹配滑块和“翻转”元素。第一个选择器渲染带有红色调的阴影效果，而第二个选择器渲染带有蓝色调的阴影。你会注意到的一件事是，你可以为输入字段和按钮应用自定义样式，但其他类型的小部件不一定“拾取”你的自定�效果，因此你需要针对你的 HTML 网页中包含的其他类型的 jQuery 小部件（如下拉列表和组合框）来测试你的选择器。jQuery Mobile 也处理输入字段和文本区域；输入字段可以应用 `type` 属性并使用 HTML5 中定义的几个新值，通过显示正确的键盘类型来帮助用户。例如，具有 `type="number"` 的输入在大多数移动设备上将显示数字键盘，以此类推。文本区域将随着用户输入内容而增加高度，从而避免创建滚动条。jQuery Mobile 使用文本输入插件来处理文本区域和输入字段，如下所示：
 
 ```
 $("#page").live('pageinit', (function(event){
@@ -12092,8 +10921,6 @@ $("#page").live('pageinit', (function(event){
 ![图 8.8](img/6f06c2ff7e29452e50d03258ed9c6b4f_389_0.png)
 
 图 8.8 Macbook 上的 Chrome 浏览器中的复选框和单选按钮。
-
-
 
 ## 导航栏
 
@@ -12136,7 +10963,7 @@ $("#page").live('pageinit', (function(event){
           <ul>
             <li><a href="#" class="ui-btn-active">Content1</a></li>
             <li><a href="#">Content2</a></li>
-            <li><a href="#">Content3</a></li>
+            <li><a href="#">Content3</a></li
             <li><a href="#">Content4</a></li>
             <li><a href="#">Content5</a></li>
             <li><a href="#">Content6</a></li>
@@ -12229,8 +11056,6 @@ jQuery Mobile 允许你显示和隐藏菜单选项列表，你还可以在菜单
 
       <footer data-role="footer">
 ```
-
-
 
 ## jQuery Mobile 滑动菜单示例（页脚）
 
@@ -12495,8 +11320,6 @@ function positionDetails(pos) {
 </html>
 ```
 
-
-
 ```
 <script>
     $("#page1").live('pageinit', (function(event){
@@ -12521,9 +11344,13 @@ function positionDetails(pos) {
 在本章中，你学习了 jQuery Mobile 的各种特性，并看到了展示如何处理事件、创建具有多个页面视图的网页以及如何使用 HTML 小部件创建表单的代码示例。你还看到了如何使用 CSS3 的阴影和渐变效果（你在第3章中已学过）来美化 jQuery Mobile 网页中的按钮。你学会了在使用 jQuery Mobile 的 HTML 网页中执行以下操作：
 
 - 渲染按钮
+
 - 显示简单和嵌套列表
+
 - 渲染滑动菜单
+
 - 将 jQuery Mobile 与 Ajax 结合使用
+
 - 将 jQuery Mobile 与地理位置功能结合使用
 
 既然你已经了解了如何使用 jQuery Mobile 创建移动应用，下一章将向你展示如何在 jQuery Mobile 中创建动画效果。
@@ -12544,7 +11371,7 @@ jQuery Mobile 为用户手势触发了多种事件，例如 `orientationchange`�
 
 如果你需要处理许多用户手势，可以考虑使用 jQuery 插件而不是自己编写代码。有各种插件可用，下一节将简要讨论其中的两个。
 
-当你想在 HTML 网页中检测用户手势时，可以使用 jQuery 的 `bind()` 方法（你在前面各章的各种代码示例中已经见过）编写自定义的 jQuery 代码来处理这些手势。请记住，`bind()` 方法在 jQuery 1.7 及更高版本中已被弃用，但你很可能会在现有使用该版本的 jQuery 代码中遇到此方法。本书包含一个部分，讨论了 jQuery 1.7 及更高版本中被弃用的方法，以及处理事件的推荐 jQuery 方法。
+当你想在 HTML 网页中检测用户手�时，可以使用 jQuery 的 `bind()` 方法（你在前面各章的各种代码示例中已经见过）编写自定义的 jQuery 代码来处理这些手势。请记住，`bind()` 方法在 jQuery 1.7 及更高版本中已被弃用，但你很可能会在现有使用该版本的 jQuery 代码中遇到此方法。本书包含一个部分，讨论了 jQuery 1.7 及更高版本中被弃用的方法，以及处理事件的推荐 jQuery 方法。
 
 正如你可能知道的，`tap` 事件在用户点击元素时触发，而 `taphold` 事件在用户触摸一个元素并保持接触一秒钟时触发。你可以使用以下代码片段在 jQuery Mobile 中绑定 `tap` 和 `taphold` 事件：
 
@@ -12568,16 +11395,16 @@ jQuery 事件处理程序中的 `return false` 语句，实际上等同于调用
 
 ### 清单 9.1 JQMSwipeTapEvents1.html
 
-```
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset=utf-8"/>
+<meta charset=utf-8/>
 <title>Swipe and Tap Events in jQuery Mobile</title>
 
 <link rel="stylesheet"
-href="http://code.jquery.com/mobile/1.1.0/jquery.mobile-
-1.1.0.min.css"/>
+href="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.css"/>
 <script
 src="http://code.jquery.com/jquery-1.7.1.min.js">
 </script>
@@ -12602,7 +11429,8 @@ height="150" >
 </div>
 <div data-role="footer"> <h3>Footer</h3> </div>
 </div>
-```
+</body>
+</html>
 
 ```
 <script>
@@ -12638,8 +11466,6 @@ height="150" >
 
 > “Miss a drag as we are waiting for Webcore's response for touch down.”
 
-
-
 ## 两个用于检测用户手势的 jQuery 插件
 
 jGestures jQuery 插件能够处理大量用户手势，包括捏合、旋转、滑动相关和点击相关的用户手势。该 jQuery 插件可在此处下载：
@@ -12659,10 +11485,15 @@ jQuery('#swipe').bind('swipeone', eventHandler);
 这个 JavaScript 工具包收集了丰富的示例，展示了如何处理用户手势。你可以在线查看这些示例：
 
 `http://eightmedia.github.com/hammer.js/demo/`
+
 `http://eightmedia.github.com/hammer.js/slideshow/`
+
 `http://eightmedia.github.com/hammer.js/scroll/`
+
 `http://eightmedia.github.com/hammer.js/drag/`
+
 `http://eightmedia.github.com/hammer.js/draw/`
+
 `http://eightmedia.github.com/hammer.js/zoom/`
 
 由于有很多用于处理用户手势的 jQuery Mobile 插件可用，因此进行互联网搜索以找到许多此类插件是个好主意，之后你可以评估它们，以确定哪些最适合你的需求。
@@ -12682,8 +11513,7 @@ jQuery Mobile 支持以下自定义事件：`orientationchange`（当设备方�
     <title>jQuery Mobile 中的滚动事件</title>
 
     <link rel="stylesheet"
-      href="http://code.jquery.com/mobile/1.1.0/jquery.mobile-
-      1.1.0.min.css"/>
+      href="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.css"/>
     <script
       src="http://code.jquery.com/jquery-1.7.1.min.js">
     </script>
@@ -12825,8 +11655,6 @@ $(window).bind ('orientationchange', function (e) {
     media="all and (orientation: landscape)" href="landscape.css"/>
 ```
 
-
-
 ## 使用 jQuery Mobile 实现动画效果
 
 你可以利用 jQuery Mobile 创建多种基于 jQuery 的动画效果，包括淡入淡出效果、滑动效果以及自定义动画效果。创建动画效果的方法（在 jQuery 和 jQuery Mobile 中均可使用）包括：`animation()`、`clearQueue()`、`delay()`、`dequeue()`、`fadeIn()`、`fadeOut()`、`fadeTo()`、`fadeToggle()`、`hide()`、`queue()`、`show()`、`slideDown()`、`slideToggle()`、`slideUp()`、`stop()` 和 `toggle()`。
@@ -12838,8 +11666,6 @@ $(window).bind ('orientationchange', function (e) {
 jQuery 的 `.fadeIn()` 和 `.fadeOut()` 方法提供了一种简便的方式来创建简单的动画效果。
 
 清单 9.4 展示了 JQMFadeInOut1.html 的内容，该文件说明了如何在 jQuery Mobile 页面中使用 jQuery 的 `.fadeIn()` 和 `.fadeOut()` 方法。
-
-### 清单 9.4 JQMFadeInOut1.html
 
 ```html
 <!DOCTYPE html>
@@ -12946,8 +11772,6 @@ var para = $("p");
 
 清单 9.5 展示了 JQMSlideUpDown1.html 的内容，该文件说明了如何在 jQuery Mobile 网页中使用 jQuery 的 `.slideUp()` 和 `.slideDown()` 方法。
 
-### 清单 9.5 JQMSlideUpDown1.html
-
 ```html
 <!DOCTYPE html>
 <html lang="en">
@@ -13034,17 +11858,20 @@ jQuery Mobile 使用基于 WebKit 的 CSS3 变换来动画化页面过渡，而�
 你通过应用 `data-transition` 属性来指定过渡，其支持的七个值分别为：
 
 -   Fade（淡入淡出）：简单地将页面或对话框淡入到之前的页面内容之上
+
 -   Flip（翻转）：动画化的页面翻转，将当前视图旋转出去，另一视图显示在背面
--   Pop（弹出）：页面从屏幕中心弹出进入视图
+
+-   Pop（弹出）：页面从屏幕中心弹出进入视 view
+
 -   Slide（滑动）：从左侧或右侧滑入，将之前的页面内容推开
+
 -   Slidedown（向下滑动）：从顶部向下滑入，位于当前页面内容之上
+
 -   Slideup（向上滑动）：向上滑动至顶部，显示下面的下一个内容
 
 jQuery Mobile 还提供了 `animationComplete` 事件，在添加或移除应用了 CSS 过渡的类之后，该事件可能很有用。
 
 清单 9.6 展示了 `JQMTransition1.html` 的内容，该文件说明了如何在 jQuery Mobile 页面中使用 `slidedown` 和 `flip` 过渡。
-
-### 清单 9.6 JQMTransition1.html
 
 ```html
 <!DOCTYPE html>
@@ -13058,13 +11885,6 @@ href="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.css"/>
 </script>
 <script src="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.js">
 </script>
-```
-
-
-
-## jQuery Mobile 与 CSS3、HTML5 在移动端和桌面端的应用
-
-```html
 </head>
 
 <body>
@@ -13105,14 +11925,16 @@ href="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.css"/>
 </html>
 ```
 
-清单 9.4 包含了这个 jQuery Mobile 网页的代码。当你点击第一个页面视图中的链接时，你会看到一个滑动效果，该效果由第一个页面视图（其 `id` 属性值为 `first`）的内容 HTML `<div>` 中的以下代码片段创建：
+清单 9.4 包含了这个 jQuery Mobile 网页的代码。当你点击第一个页面视视图中的链接时，你会看到一个滑动效果，该效果由第一个页面视图（其 `id` 属性值为 `first`）的内容 HTML `<div>` 中的以下代码片段创建：
 
 ```html
 <a href="#second" data-transition="slidedown">Go to Page Two</a>
 ```
 
 第二个页面视图显示以下文本和超链接：
+
 You saw a slidedown effect Go to Page #1 via 'flip' and reverse
+
 当你点击前面的链接时，你会看到一个翻转效果，该效果由第二个页面视图（其 `id` 属性值为 `second`）的内容 HTML `<div>` 中的以下代码片段创建：
 
 ```html
@@ -13251,10 +12073,15 @@ jQuery Mobile 提供了一组用于处理鼠标和触摸事件的“虚拟”鼠
 jQuery Mobile 中的虚拟鼠标事件的名称以字母“v”（代表“虚拟”）开头，后跟鼠标事件的通用或标准名称。例如，`vmousedown` 虚拟事件“传递”了 `mousedown` 事件，同时也传递了 `touchstart` 事件。虚拟鼠标事件（及其对应的触摸相关和鼠标相关事件）列表如下：
 
 - `vclick` (touchend 或鼠标点击事件)
+
 - `vmousecancel` (touch 或鼠标 mousecancel 事件)
+
 - `vmousedown` (touchstart 或 mousedown 事件)
+
 - `vmousemove` (touchmove 或 mousemove 事件)
+
 - `vmouseover` (touch 或 mouseover 事件)
+
 - `vmouseup` (touchend 或 mouseup 事件)
 
 请注意，在支持触摸的设备上，`vclick` 事件在 `vmouseup` 事件之后触发；然而，`vmouseup` 在 `vmousedown` 之前触发，而 `vmousedown` 在 `vclick` 之前触发，正如你所预期的那样。此外，事件对象包含属性 `pageX`、`pageY`、`screenX`、`screenY`、`clientX` 和 `clientY`，这些属性包含坐标信息，你将在后续的代码示例中看到。
@@ -13266,8 +12093,6 @@ jQuery Mobile 中的虚拟鼠标事件的名称以字母“v”（代表“虚�
 http://www.turnjs.com
 
 这个代码示例包含许多关于处理 jQuery Mobile 虚拟事件、用户手势和按键事件的示例。虽然由于篇幅所限，我们无法讨论这个代码示例的每一个细节，但非常值得你花时间仔细阅读代码，以学习一些实用的技术。
-
-
 
 ## 代码清单 9.8 JQMPageTurn1.html
 
@@ -13363,7 +12188,7 @@ http://www.turnjs.com
     })
     }
 
-    $('#page1').bind('vmousedown', function(event) {
+    $('#page1').bind('vmouseddown', function(event) {
         $('#magazine').turn('next');
     })
 
@@ -13567,27 +12392,42 @@ height: 400px;
 }
 ```
 
-
-
 }
+
 // 为简洁起见，省略了其他三个类似的关键帧
 
 #radiall {
+
     font-size: 24px;
+
     width: 600px;
+
     height: 100px;
+
     position: absolute; top: 400px; left: 0px;
+
     background: -webkit-gradient(
+
         radial, 400 25%, 20, 100 25%, 40, from(red),
+
         color-stop(0.05, orange), color-stop(0.4, yellow),
+
         color-stop(0.6, red), color-stop(0.9, blue),
+
         to(#fff)
+
     );
+
     -webkit-box-reflect: right 15px;
+
     -box-reflect: right 15px;
+
     -webkit-animation-name: upperLeft;
+
     -webkit-animation-duration: 10s;
+
 }
+
 // 为简洁起见，省略了其他三个类似的选择器
 
 清单 9.10 显示了名为 `upper-Left` 的 CSS3 关键帧定义，以及用于设置清单 9.9 中相应 HTML `<div>` 元素样式的 CSS3 选择器 `#radiall` 的内容。清单 9.10 中仅显示了部分代码以避免重复，但完整的代码清单可在附带的 DVD 上找到。
@@ -13763,8 +12603,6 @@ href="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.css"/>
 #right:hover {
 ```
 
-
-
 ## JQUERY MOBILE 弹力球
 
 在第6章中，你已经学习了如何使用jQuery渲染一组"弹力球"，而使用jQuery Mobile你也可以创建相同的效果。DVD中包含了一些使用jQuery Mobile的类似技术的其他代码示例，你可以将这些技术作为"构建模块"来创建更复杂的视觉效果。
@@ -13778,6 +12616,8 @@ href="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.css"/>
 清单9.14展示了`JQMAccelerometer1.html`的内容，它演示了当设备在任何方向上发生加速时，如何显示移动设备的加速度计数值。清单9.15展示了CSS样式表`JQMAccelerometer1.css`的内容，其选择器用于设置HTML网页中元素的样式。
 
 ### 清单 9.14 JQMAccelerometer1.html
+
+
 
 ```html
 <!DOCTYPE html>
@@ -13974,8 +12814,6 @@ p { font-size: 16px; }
 
 下一章将概述几种HTML5相关技术，以及jQuery和jQuery Mobile为这些技术提供的插件。
 
-
-
 ## 第10章
 
 ## 其他HTML5技术
@@ -14030,7 +12868,7 @@ REC（推荐）状态是批准过程的最后阶段，相当于许多其他行�
 
 电池API（由DAP工作组维护）提供有关宿主设备电池状态的信息。以下简单的代码片段在电量每次变化时将电池电量写入控制台：
 
-```
+```javascript
 navigator.battery.onlevelchange = function () {
     console.log(navigator.battery.level);
 };
@@ -14038,8 +12876,9 @@ navigator.battery.onlevelchange = function () {
 
 清单10.1显示了HTML网页`Battery.html`的内容，该网页说明了如何在网页中使用电池API。
 
-```
 清单 10.1 Battery.html
+
+```html
 <!DOCTYPE html>
 <html>
 <head>
@@ -14065,8 +12904,6 @@ navigator.battery.onlevelchange = function () {
             };
         }
 ```
-
-
 
 ## HTML5 地理定位
 
@@ -14214,7 +13051,7 @@ if(window.WebSocket) {
 
 清单10.2展示了WebSockets2.html的内容，该示例说明了如何从HTML5网页向WebSocket服务器发出Web请求。
 
-## 清单10.2 WebSockets2.html
+### 清单10.2 WebSockets2.html
 
 ```html
 <!DOCTYPE HTML>
@@ -14222,12 +13059,12 @@ if(window.WebSocket) {
 <head>
 ```
 
-
-
 ## HTML5 WebSockets
 
 清单10.2包含了JavaScript函数`WebSocketTest()`，该函数定义了所有WebSocket代码，从检查浏览器是否支持WebSockets的条件逻辑开始。如果支持WebSockets，那么一行代码将初始化JavaScript变量`ws`，该变量引用特定端口号上的WebSocket，如下所示：
+
 `var ws = new WebSocket("ws://localhost:9998/echo");`
+
 其余代码定义了`open`（向服务器发出请求）、`message`（处理从服务器收到的消息）、`close`（关闭连接）和`error`（报告错误消息）的处理器。
 
 下一节将向您展示一个使用WebSockets更新HTML5网页内容的简单示例。
@@ -14318,14 +13155,17 @@ function writeToScreen(message) {
 ```
 
 您可以在W3C规范中找到关于WebSockets的更多信息：
+
 http://dev.w3.org/html5/websockets/
 
 您可以在此处下载DZone的WebSockets参考卡（免费PDF副本）：
+
 http://refcardz.dzone.com/refcardz/html5-websocket
 
 ## SPDY 与 HTML5 WEBSOCKETS
 
 SPDY（发音为“speedy”）是Google开发的一个实验性协议。它旨在增强HTTP，使同步HTTP请求更快，如SPDY白皮书所述：
+
 http://www.chromium.org/spdy/spdy-whitepaper
 
 虽然SPDY不是HTML的官方部分，但它被包含在本章中，因为它可能变得对您的Web应用程序很重要且有用（如果事实并非如此，它仍然是对您有用的信息）。
@@ -14335,9 +13175,13 @@ SPDY在HTTP和SSL之间添加了一层，允许在单个TCP连接上进行多个
 相比之下，WebSockets是HTTP的替代方案，支持双向实时通信；实际上，WebSockets和SPDY是互补的协议。WebSockets通过HTTP与服务器进行初始握手以确定是否支持ws://协议，而SPDY的主要优化方法是压缩和缓存HTTP请求头。
 
 目前，通过SPDY获得的性能提升取决于各种因素（在Guy Podjamy下面的链接中有讨论）。一方面，SPDY白皮书断言性能提升可能非常显著：
+
 “头部压缩导致请求头大小减少了约88%，响应头大小减少了约85%……我们发现，仅由于头部压缩，页面加载时间减少了45 – 1142毫秒。”
+
 另一方面，Akamai的Guy Podjamy对“真实世界”的网站进行了一系列测试，他得出结论认为SPDY并未提供显著的性能改进，他在此记录了这一点：
+
 http://www.guypo.com/technical/not-as-spdy-as-you-thought/
+
 Chrome和Firefox都支持SPDY，Twitter现在也在其服务器上支持SPDY。
 
 ## 迁移到 HTML5 WEBSOCKETS
@@ -14345,8 +13189,11 @@ Chrome和Firefox都支持SPDY，Twitter现在也在其服务器上支持SPDY。
 每个应用程序都以某种形式维护状态，在服务器端的Web应用程序中，服务器必须做额外的工作来维护状态，因为1.) HTTP是无状态的，旨在作为获取文档的“即发即忘”方式；2.) 浏览器是作为渲染平台而不是统一的应用平台进行优化的。
 
 Richard Clark指出，尽管状态可以存储在客户端或服务器上，但请记住存在XSS漏洞，这表明服务器端的状态可能是一个较弱的解决方案。哪一方维护状态（客户端或服务器）的问题更多是信任问题：如果数据必须被安全地管理，它就被保存在服务器端（在信任边界内。）然而，像购物车之类的东西可以安全地保存在任何一方；事实上，您希望将尽可能多的状态保留在客户端，以提高响应能力并异步地将更新发布到服务器。有关更多详细信息，请参阅以下链接：
+
 http://alexmacca.com/posts/async_ui
+
 关于此主题（“构建活的Web应用程序”）的一篇有趣的白皮书在此：
+
 http://kaazingcorp.cachefly.net/com/file/Kaazing-WP-Living-Web-Architecture-Mar-2012.pdf
 
 Richard Clark还建议，人们不会仅仅为了迁移而迁移；相反，当使用旧应用程序存在足够大的痛苦时，他们将使用WebSockets构建下一代应用程序。例如，有些客户使用的应用程序涉及购物车、通过不可靠的网络连接下订单（拨号上网比你想象的更常见），他们的Web系统迫使用户每次都要重新开始。使用WebSockets的解决方案可以优雅地处理这种情况。
@@ -14356,6 +13203,7 @@ Richard Clark还建议，人们不会仅仅为了迁移而迁移；相反，当�
 例如，假设某人设置了一台Unix/Linux机器来处理50K连接，安装了Apache，并设置了“keep-alive”头部。这种配置类似于“穷人的SPDY服务器”，因为WebSockets和HTTP之间的区别超出了“keep-alive”。
 
 高度优化的Comet与标准WebSockets之间的比较（注意两边的50K情况）在此：
+
 http://webtide.intalio.com/2011/09/cometd-2-4-0-websocket-benchmarks/
 
 顺便说一句，Cookies仍然适用于存储需要随每个请求发送回服务器的小块数据。具体来说，它们也可以在建立WebSockets连接时发送，这也有助于与期望请求中有cookies的系统（例如传统的单点登录系统）保持互操作性。
@@ -14365,35 +13213,51 @@ http://webtide.intalio.com/2011/09/cometd-2-4-0-websocket-benchmarks/
 本节简要提及涉及WebSockets的其他一些计划，以及如何将其与移动设备一起使用。
 
 Atmosphere是一个框架，使您能够使用WebSockets向移动应用程序（具体来说，是一个Android移动应用程序）发送数据：
+
 https://github.com/Atmosphere/atmosphere
 
 GitHub网站指出，Atmosphere是“唯一支持Scala、Groovy和Java的便携式WebSockets/Comet框架。”
 
-
-
 ## 可用的 WEBSOCKET 服务器
 
 关于如何在移动设备上使用 Atmosphere 的说明，请参见：
+
 http://www.slideshare.net/misterdom/html5-websockets-the-mobile-web
+
 http://www.webofthings.org/2011/10/24/websockets-push-to-mobile/
+
 XSockets.NET 是一个适用于 Microsoft .NET 的 WebSocket 服务器：
+
 http://xsockets.net/xsockets-news
+
 一个使用 XSockets.NET、KnockoutJS 和 jQuery Mobile 的项目示例在此：
+
 http://dathor.blogspot.com/2011/12/knockoutauction-knockoutjsjquery-mobile.html
+
 该网站包含代码、视频以及如何将 jQuery Mobile 与 WebSockets 配合使用的详细说明。
+
 另一个有趣的工具是 Easy WebSocket，它提供了 WebSocket 广播功能：
+
 http://easywebsocket.org/
+
 一个使用设备 API 访问设备摄像头并通过 WebSockets 进行通信的示例在此：
+
 https://www.youtube.com/watch?v=jqXo-AEVhK4&feature=related
+
 上述演示从移动设备的摄像头捕获视频，然后通过 WebSockets 将快照发送到远程客户端。
 
 目前有许多可用的 WebSocket 服务器，它们使用 Java、JavaScript、Ruby、Python 和 C++ 等语言编写。其中一些流行的包括 NodeJS、Kaazing 和 mod_pyWebSocket（在第 12 章的代码示例中使用），但还有很多其他选择。
+
 以下链接列出了现代浏览器（包括桌面端和移动端）对 WebSockets 的支持情况：
+
 http://caniuse.com/#search=websocket
+
 WebSocket 服务器列表在此：
+
 http://www.slideshare.net/fullscreen/peterlubbers/html5-realtime-and-connectivity/55
 
 一个以表格形式详细列出多个 WebSocket 服务器功能支持情况的页面在此（但请务必阅读页面顶部的注意事项）：
+
 http://en.wikipedia.org/wiki/Comparison_of_WebSocket_implementations
 
 另一个需要记住的重要点是，WS 标准经历了多次迭代，开发者在最终协议确定之前，常常会实现其中一个中间版本。因此，你所选择的 WS 实现可能需要同时支持较旧的协议和最新的协议，直到大多数设备都完成升级。
@@ -14404,30 +13268,31 @@ http://en.wikipedia.org/wiki/Comparison_of_WebSocket_implementations
 
 在以下示例中，设备振动一秒：
 
-```
+```javascript
 // 振动1秒
 navigator.vibrate(1000);
 ```
 
 使用以下代码片段使设备振动一秒，停止振动 0.5 秒，然后再次振动两秒：
 
-```
+```javascript
 navigator.vibrate([1000, 500, 2000]);
 ```
 
 取消任何现有的振动：
 
-```
+```javascript
 navigator.vibrate(0);
 ```
 
 取消任何现有振动的第二种方法：
 
-```
+```javascript
 navigator.vibrate([]);
 ```
 
 如需更多信息，请访问 W3C 振动 API（目前是工作草案）：
+
 http://www.w3.org/TR/vibration/
 
 ## XMLHttpRequest 第 2 级 (XHR2)
@@ -14446,8 +13311,9 @@ XMLHttpRequest Level 2 规范支持以下新功能：
 
 本节的代码示例展示了如何发起一个“传统的” Ajax 调用，之后我们将了解如何使用 jQuery 完成相同的任务。这个例子的目的是说明 jQuery（再次）使你能够编写更简单、更易于维护、调试和扩展额外功能的代码（你已经从本书中看到的代码示例中了解了这一点）。
 
-```
 清单 10.4 BasicAjax1.html
+
+```html
 <!DOCTYPE html>
 <html>
 <head>
@@ -14491,7 +13357,7 @@ XMLHttpRequest Level 2 规范支持以下新功能：
 
 `loadXML()` 函数包含用于确定如何初始化 JavaScript 变量 `xmlhttp` 的条件逻辑，接着是一个代码块，该代码块设置了回调函数的名称，指定了 `GET` 方法和 `url` 变量中的 URL（此代码示例中未显示），然后发起了实际的 Ajax 请求，如下所示：
 
-```
+```javascript
 xmlHTTP.onreadystatechange = callback;
 xmlHTTP.open("GET", url, true);
 xmlHTTP.send();
@@ -14505,8 +13371,9 @@ xmlHTTP.send();
 
 本示例是清单 10.4 的修改版本，它在代码中添加了 jQuery 功能。有几种提供基于 Ajax 功能的 jQuery 方法，包括 `jQuery.load()`、`jQuery.get()`、`jQuery.post()` 和 `jQuery.ajax()`。清单 10.5 显示了 JQueryAjax1.html 的内容，演示了如何在 HTML 网页中使用这些 jQuery Ajax 方法中的第一个，以产生与清单 10.4 相同的结果。
 
-```
 清单 10.5 JQueryAjax1.html
+
+```html
 <!DOCTYPE html>
 <html>
 <head>
@@ -14534,9 +13401,10 @@ $(document).ready(function() {
 清单 10.5 仅包含一行代码，通过 jQuery 的 `load()` 方法执行 Ajax 请求，如下所示：`$("#myDiv").load(url, function() {});`
 
 执行清单 10.5 中代码的结果与执行清单 10.4 中代码的结果相同：`id` 属性为 `myDiv` 的 HTML `<div>` 元素的内容被替换为 `sample.xml` 的内容，并渲染出三个基于 SVG 的矩形。
+
 或者，你可以使用 `jQuery.ajax()` 方法，如下所示：
 
-```
+```javascript
 $.ajax({
     url: url,
     type: "get",
@@ -14546,6 +13414,7 @@ $.ajax({
 ```
 
 在前面的代码块中，你还需要定义一个名为 `GotData()` 的 JavaScript 函数，用于处理 Ajax 调用的结果。
+
 正如你所预期的，jQuery 提供了更丰富的 Ajax 功能。具体来说，jQuery 支持以下回调钩子：
 
 - `beforeSend()`
@@ -14555,6 +13424,7 @@ $.ajax({
 - `always()`
 
 `beforeSend()`、`error()` 和 `done()` 这些函数名称直观，行为符合预期。`dataFilter()` 回调是第一个接收数据的回调；在它完成处理后，`done()` 回调将被调用。最后，无论 Ajax 调用的结果是成功还是出错，`always()` 回调都会被调用。
+
 一个使用方法链和上述多个 API 发起 Ajax 请求的 jQuery 代码简洁示例如下：
 
 ```javascript
@@ -14567,15 +13437,13 @@ var jqxhr = $.ajax( "example.php" )
 
 // 在此处执行其他工作 ...
 // 为上面的请求设置另一个完成函数
+jqxhr.always(function() { alert("second complete"); });
 ```
-
-
-
-`jqxhr.always(function() { alert("second complete"); });`
 
 如果你想探索更多 jQuery 中与 Ajax 相关的功能，这里有一个完整的 jQuery Ajax 方法列表：
 
 http://api.jquery.com/category/ajax/
+
 http://api.jquery.com/ajaxComplete/
 
 本章包含另一个基于 Ajax 的代码示例，该示例使用 XHR2，但首先我们需要讨论跨源资源共享（CORS）以及它在 HTML5 中提供的一些特性。
@@ -14596,8 +13464,9 @@ CORS API 使用 XMLHttpRequest 对象作为发送和接收 CORS 所需头部的�
 
 清单 10.6 显示了 AjaxForm.html，它说明了如何创建使用新的 FormData 对象与 XHR2 的 HTML5 Web 页面。
 
-```
 清单 10.6 AjaxForm.html
+
+```html
 <!doctype html>
 <html lang="en">
 <head>
@@ -14634,7 +13503,7 @@ function sendForm(form) {
 
 清单 10.6 很直观。`<body>` 元素包含一个带有多个输入字段的 HTML `<form>` 元素。接下来，表单数据通过 JavaScript 函数 `sendForm()` 提交，该函数创建一个 FormData 对象，然后通过 XHR2 提交用户提供的数据，如以下代码块所示：
 
-```
+```javascript
 var xhr = new XMLHttpRequest();
 xhr.open('POST', form.action, true);
 xhr.onload = function(e) {
@@ -14647,16 +13516,12 @@ xhr.send(formData);
 
 如果你需要在你的 HTML Web 页面中使用 XHR2，这里有一个 XHR2 库：
 
-```
 https://github.com/p-m-p/xhr2-lib
-```
 
 更多关于 XHR2 的教程和信息在这里：
 
-```
 http://www.html5rocks.com/en/tutorials/file/xhr2/
 http://www.matiasmancini.com.ar/jquery-plugin-ajax-form-validation-html5.html
-```
 
 ## W3C 最终草案状态（LC）的 HTML5 APIS
 
@@ -14673,7 +13538,7 @@ HTML5 联系人 API 使你能够访问有关你联系人的信息。联系人记
 
 以下（稍长的）代码块向你展示如何通过调用 `contacts` 对象的 `find()` 方法来检索用户联系人的三个属性。请注意，`find()` 方法指定了一个错误回调函数和一个成功回调函数，后者是执行联系人列表实际处理的地方：
 
-```
+```javascript
 function findMyContacts() {
     // 联系人 API 是否可用？
     if (navigator.contacts) {
@@ -14690,7 +13555,7 @@ function findMyContacts() {
 }
 ```
 
-```
+```javascript
 // 查找联系人的成功回调函数
 function contactsSuccess(contactList) {
     // 定位用于显示结果的 'div'
@@ -14728,7 +13593,7 @@ function contactsSuccess(contactList) {
 }
 ```
 
-```
+```javascript
 // 查找联系人的错误回调函数
 function contactsError(error) {
     alert(error.code);
@@ -14757,7 +13622,7 @@ HTML5 拖放功能使你能够重新排列 HTML Web 页面中 HTML 元素的布�
 
 在你的 HTML5 Web 页面中，你将事件监听器附加到元素上，如下所示：
 
-```
+```javascript
 myElement.addEventListener('dragenter', handleDragEnter, false);
 myElement.addEventListener('dragleave', handleDragLeave, false);
 myElement.addEventListener('dragover', handleDragOver, false);
@@ -14784,11 +13649,7 @@ http://www.html5rocks.com/en/tutorials/dnd/basics/
 
 清单 10.7 显示了 HTML5 Web 页面 JQDragAndDrop1.html 的内容，它说明了使用 jQuery 创建具有拖放功能的 HTML5 Web 页面是多么容易。
 
-
-
-454 • 面向移动与桌面设备的 jQuery、CSS3 和 HTML5
-
-## 清单 10.7 JQDragAndDrop1.html
+### 清单 10.7 JQDragAndDrop1.html
 
 ```html
 <!doctype html>
@@ -14827,7 +13688,7 @@ http://www.html5rocks.com/en/tutorials/dnd/basics/
         <div id="draggable2">
             <img src="Laurie2.jpeg" width="100" height="100"/>
         </div>
-        <div id="draggable3">
+    <div id="draggable3">
             <img src="Laurie3.jpeg" width="100" height="100"/>
         </div>
     </div>
@@ -14854,11 +13715,15 @@ $('#draggable2').draggable();
 **图 10.2** Macbook 上 Chrome 浏览器中拖动后的三张图片。
 
 更多关于 jQuery 拖放（Drag and Drop）的信息（包括可用选项列表）可在此处获取：
+
 http://jqueryui.com/demos/draggable/
 
 - 这里列出了几个提供拖放功能的 jQuery 插件：
+
   http://plugins.jquery.com/projects/plugins?type=45
+
 - 你也可以将 jQuery Mobile 与 HTML5 DnD 结合使用，虽然我们不会讨论具体示例，但你可以通过互联网搜索找到教程和代码示例，或者从这个链接中的详细信息开始：
+
   http://www.jsplugins.com/Scripts/Plugins/View/Jquery-Mobile-Drag-And-Drop/
 
 ## JQUERY 和 HTML5 LOCALSTORAGE
@@ -14871,7 +13736,7 @@ http://www.jstorage.info/
 
 *jStorage* API 允许你获取、设置和删除存储中的数据；你还可以检查存储是否可用，以及已存储数据的大小（以字节为单位）。为了方便起见，这里列出了直观命名的 jStorage API：
 
-```
+```javascript
 $.jStorage.set(key, value)
 $.jStorage.get(key)
 $.jStorage.deleteKey(key)
@@ -14885,7 +13750,7 @@ $.jStorage.storageAvailable()
 
 清单 10.8 展示了 JQJStorage1.html 的内容，说明了如何使用 jStorage 将数据保存在浏览器的存储区域中。
 
-## 清单 10.8 JQJStorage1.html
+### 清单 10.8 JQJStorage1.html
 
 ```html
 <!DOCTYPE html>
@@ -14924,8 +13789,6 @@ href="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.css"/>
 </html>
 ```
 
-458 • 面向移动与桌面设备的 jQuery、CSS3 和 HTML5
-
 清单 10.8 中的核心功能在一个包含条件逻辑的短 JavaScript 代码块中进行，该逻辑检查 localStorage 中是否存在值为 key 的数据项。如果该值不存在，则调用 `load_data_from_server()` JavaScript 函数（未显示），然后将返回值存储在 localStorage 中。
 
 你也可以使用 jQuery 插件 jStore 进行 HTML5 存储，这是一个跨浏览器插件，允许你使用 jQuery 语法来管理 localStorage 中的数据，其主页在这里：
@@ -14939,14 +13802,17 @@ href="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.css"/>
 lscache 使用 HTML5 localStorage 模拟 memcache 功能，在客户端浏览器中缓存数据，并为每个数据项设置过期时间。
 
 lscache 主页在这里：
+
 https://github.com/pamelafox/lscache
 
 如果超过 localStorage 限制（约 5MB），则会移除最接近其过期日期的项目。如果 localStorage 不可用，则 lscache 不会缓存任何内容（所有缓存请求都返回 null）。
 
 lscache 方法包括 set()、get()、remove() 和 flush()。jQuery lscache 插件可在此处获取：
+
 https://github.com/mckamey
 
 YQL LocalCache 是一个用于支持 localStorage 的 YQL 包装器，其主页在这里：
+
 https://github.com/plunkei/autoStorage
 
 这里有一个使用 YQL LocalCache 的示例调用，参数说明不言自明：
@@ -14963,9 +13829,11 @@ yqlcache.get({
 ```
 
 回调中返回的数据是一个包含两个属性的对象：data（YQL 数据）和 type（对于缓存数据为 "cached"，否则为 "freshcache"）。你可以在此处获取更多代码示例：
+
 https://github.com/codepo8/yql-localcache
 
 Savify 是一个 jQuery 插件，用于在用户填写表单时自动记录其进度，其主页在这里：
+
 https://github.com/blackcoat/Savify
 
 ## HTML5 WEB 消息传递
@@ -15001,13 +13869,13 @@ var messageEventHandler = function(event) {
 };
 ```
 
-
-
 ## 使用 HTML5 服务器发送事件 (SSE)
 
 服务器发送事件（SSE）是一项 HTML5 技术，用于在建立初始客户端连接后，将数据从服务器发送到客户端。这种从服务器到客户端的单向通信在需要发送消息更新或数据流的场景中非常有用。
 
 请记住，SSE 是服务器向客户端的“推送”，这与客户端从服务器“拉取”数据正好相反。其次，你可能会认为 SSE 是 WebSocket 的“一半”，因为它没有从客户端到服务器的通信。
+
+
 
 SSE 规范要求服务器端具有消息 ID 和重连机制，而客户端 API 本质上与 WebSocket 相同。
 
@@ -15112,8 +13980,11 @@ http://dev.w3.org/html5/eventsource/
 在上一节中，我们简要对比了 SSE 和 WebSockets，你可能也想知道 Ajax 和 SSE 的比较。SSE 的一些优势如下：
 
 -   只需一个长期的 HTTP 连接
+
 -   在现代浏览器中得到良好支持
+
 -   更简单、“更干净”的客户端实现
+
 -   “从零开始”设计，追求高效
 
 由于每个客户端都需要一个持久连接，大量客户端将导致服务器上有许多打开的连接，因此你的服务器显然需要能够处理这种负载。另一方面，Ajax 轮询由于建立和“拆除” HTTP 连接的过程而增加了大量 HTTP 开销。
@@ -15127,7 +13998,9 @@ http://dev.w3.org/html5/eventsource/
 本节中的 HTML5 技术目前处于“工作草案”状态。IndexedDB 具有 WD 状态，并在第 1 章中讨论过，因此我们不会在这里重复该内容。此外，以下 HTML5 技术也具有 WD 状态，但本章未讨论：
 
 -   媒体捕获
+
 -   RDFa
+
 -   触摸事件
 
 ## 音频处理
@@ -15187,95 +14060,143 @@ var canvas2 = document.getElementsByTagName("canvas")[1];
 var canvas3 = document.getElementsByTagName("canvas")[2];
 var canvas4 = document.getElementsByTagName("canvas")[3];
 
- var context1 = canvas1.getContext(`2d`);
-var context2 = canvas2.getContext(`2d`);
-```
-
-
-
+ var context1 = canvas1.getContext('2d');
+var context2 = canvas2.getContext('2d');
 var context3 = canvas3.getContext('2d');
 var context4 = canvas4.getContext('2d');
 
 context1.lineWidth = 2; context1.strokeStyle = "#FFFFFF";
+
 context2.lineWidth = 4; context2.strokeStyle = "#FFFFFF";
+
 context3.lineWidth = 6; context3.strokeStyle = "#FFFFFF";
+
 context4.lineWidth = 1; context4.strokeStyle = "#FFFFFF";
 
 audio.addEventListener("MozAudioAvailable", writeSamples,
+
     false);
+
 audio.addEventListener("loadedmetadata", getMetadata,
+
     false);
 
 function getMetadata() {
+
     channels = audio.mozChannels;
+
     fbLength = audio.mozFrameBufferLength;
+
 }
 
 // 渲染波形图
+
 function writeSamples (event) {
+
     var data = event.frameBuffer;
+
     var step = (fbLength / channels) / sampleCount;
 
     if(loop % 4 == 0) {
+
         // 清空画布：
+
         context1.fillRect(0, 0, rectWidth, rectHeight);
 
         context1.beginPath();
+
         for(var x=1; x<sampleCount; x+= deltaX1){
+
             barHeight = 2*data[x*step]*rectHeight/2;
+
             context1.fillStyle = fillColors[x % fillColors.
+
                 length];
+
             context1.fillRect(x, rectHeight/2-barHeight,
+
                 barWidth, barHeight);
+
         }
+
     } else if(loop % 4 == 1) {
+
         context2.strokeStyle = fillColors[loop % fillColors.
+
             length];
 
         context2.beginPath();
+
         context2.moveTo(0, rectHeight/2-data[0]*rectHeight/2);
 
         for(var x=1; x<sampleCount; x++){
+
             context2.lineTo(x, rectHeight/2-data[x*step]*rectHeight/2);
+
         }
+
         context2.stroke();
+
     } else if(loop % 4 == 2) {
+
         index = Math.floor(Math.random()*5);
 
         x1 = (8*loop) % sampleCount;
+
         y1 = rectHeight - (loop % rectHeight);
+
         x2 = sampleCount - (loop % sampleCount);
+
         y2 = rectHeight/2- data[step*(sampleCount-1)]*rectHeight/2;
+
         x3 = sampleCount/2;
+
         y3 = rectHeight/2-data[step*sampleCount/2]*rectHeight/2;
 
         context3.strokeStyle = fillColors[index % fillColors.length];
+
         context3.fillStyle = fillColors[(index+1)%fillColors.length];
 
         context3.moveTo(x1, y1);
+
         context3.quadraticCurveTo(x2, y2, x3, y3);
 
         context3.fill();
+
         context3.stroke();
+
     } else {
+
         context4.strokeStyle = fillColors[loop % fillColors.length];
-        
+
         context4.beginPath();
+
         context4.moveTo(0, rectHeight/2-data[0]*rectHeight/2);
-        
+
         for(var x=1; x<sampleCount; x+=deltaX4){
+
             context4.strokeRect(
+
                 x, rectHeight/2-data[x*step]*rectHeight/2,
+
                 smallWidth, smallHeight);
+
         }
+
         context4.stroke();
+
     }
 
     ++loop;
+
 }
+
 </script>
+
 </body>
+
 <html>
+```
 
 清单 10.11 中的图形效果包括一个基于正弦波的柱状图、一条波浪线、一组贝塞尔曲线，以及另一组“模糊”的随机波浪线。
 
@@ -15324,16 +14245,23 @@ https://dvcs.w3.org/hg/audio/raw-file/tip/midi/specification.html
 其他有趣的 Web Audio 代码示例在这里：
 
 - http://updates.html5rocks.com/2012/02/HTML5-audio-and-the-Web-Audio-API-are-BFFs
+
 - http://www.html5audio.org/2012/05/new-google-doodle-uses-web-audio-api.html
+
 - http://www.html5rocks.com/en/tutorials/webaudio/positional_audio/
+
 - http://chromium.googlecode.com/svn/trunk/samples/audio/index.html
+
 - http://jeromeetienne.github.com/slides/webaudioapi/#1
+
 - https://bleedinghtml5.appspot.com/#1
 
 HTML5 文件 API 使您能够在文件系统上创建、读取和写入文件。第一步是获得对 HTML5 FileSystem 的访问权限，之后您可以执行与文件相关的操作。您可以在此处阅读有关这些 API 的信息并查看代码示例：
 
 - http://aquantum-demo.appspot.com/file-upload
+
 - http://www.htmlgoodies.com/html5/other/responding-to-html5-filereader-events.html
+
 - DVD 包含 HTML Web 页面 `JQFileInfo1.html`，它演示了如何使用 jQuery 来显示用户选择的文件的属性。一个更有趣（也更有用）的示例是清单 10.12 中的 `JQFileUpload2.html`，它演示了如何使用 jQuery 和 XHR2 来上传文件。
 
 ### 清单 10.12 JQFileUpload2.html
@@ -15377,7 +14305,7 @@ HTML5 文件 API 使您能够在文件系统上创建、读取和写入文件。
 </html>
 ```
 
-清单 10.12 包含一个 HTML `<input>` 字段，允许用户从文件系统中选择文件。选择文件后，jQuery 的 "change" 事件被触发，并创建一个 XHR2 FormData 对象（本章前面讨论过）并填充内容，如下所示：
+清单 10.12 包含一个 HTML `<input>` 字段，允用户从文件系统中选择文件。选择文件后，jQuery 的 "change" 事件被触发，并创建一个 XHR2 FormData 对象（本章前面讨论过）并填充内容，如下所示：
 
 ```
 var data = new FormData();
@@ -15385,13 +14313,17 @@ data.append('uploadfile', this.files[0]);
 ```
 
 所选文件通过 jQuery 的 `.ajax()` 方法上传，该方法包含一个 "success" 函数，该函数在 Ajax 请求成功完成后被调用。
+
 如果您想使用 jQuery 插件在 HTML5 网页中上传文件，有几个可用的插件，例如跨浏览器的 jQuery 插件 jquery-filedrop：
+
 https://github.com/weixiyen/jquery-filedrop
 
 ## HTML5 WEB INTENTS
 
 Web Intents 是一个即将推出的框架，它提供基于 Web 的应用程序间通信和服务发现。Web Intents 提供了一种发现机制和一种轻量级的 RPC 机制，其模型源自 Android 中的 Intents 系统。
+
 Web Intents 的一个优点是它使 Web 应用程序能够相互通信，而无需它们知道彼此的身份。Google Chrome 18+ 原生支持 Web Intents，并且有一个支持 IE 8+（以及其他浏览器）的 JavaScript 垫片。
+
 提议的意图注册方法是通过 Intent 标签，如下所示：
 
 ```
@@ -15414,12 +14346,13 @@ window.navigator.startActivity(intent);
 ```
 
 关于 Web Intents 的更多信息在这里：
+
 http://webintents.org/
 
-
-
 http://devs.w3.org/hg/web-intents/raw-file/tip/spec/Overview.html
+
 Robin Berjon 制作的 Web Intents 视频演示在此处：
+
 https://docs.google.com/file/d/0B-2pb_m94nPzRGV5LTRvM0pLaUU/edit?pli=1
 
 ## 使用 HTML5 微数据
@@ -15430,7 +14363,7 @@ https://docs.google.com/file/d/0B-2pb_m94nPzRGV5LTRvM0pLaUU/edit?pli=1
 
 微数据提供了一种标准化的方式在 HTML5 网页中包含额外的语义。微数据定义了五个 HTML 属性，可应用于任何 HTML5 标签，每个属性本质上都是一个名称/值对。最常用的标签是 `itemscope`、`itemtype` 和 `itemprop`，而 `itemref` 和 `itemid` 在大多数常见格式中不需要。
 
-微数据还支持自定义元素，允许你在 HTML5 网页中嵌入自定义属性。每一组称为一个项，每个名称-值对是一个属性。项和属性由普通元素表示。你可以使用 `itemscope` 属性创建一个项，并使用项的某个后代上的 `itemprop` 属性为该项添加属性。
+微数据还支持自定元素，允许你在 HTML5 网页中嵌入自定义属性。每一组称为一个项，每个名称-值对是一个属性。项和属性由普通元素表示。你可以使用 `itemscope` 属性创建一个项，并使用项的某个后代上的 `itemprop` 属性为该项添加属性。
 
 一个简单的例子是，以下代码块包含两个项，每个项都有属性 "name"：
 
@@ -15563,8 +14496,6 @@ importScripts("helper1.js", "helper2.js", "helper3.js");
 
 http://www.davetech.com/blog/web_workers_jquery
 
-
-
 ## HTML5 历史 API
 
 在 HTML5 之前，浏览器对与历史记录相关的 API 支持功能有限。你可以查找浏览器历史记录中的项目数量、前进后退以及回退若干链接，如下面所示：
@@ -15586,7 +14517,9 @@ history.replaceState(data, title, url);
 `history.pushState()` 方法的参数如下：
 
 - `data` 是某种结构化数据，分配给历史记录项。
+
 - `title` 是浏览器前进/后退按钮显示的历史下拉菜单中的项目名称。
+
 - `url` 是（可选的）显示在地址栏中的 URL。
 
 `history.replaceState()` 方法的参数与 `history.pushState()` 方法相同，区别在于前者更新的是浏览器历史记录中已有的信息。
@@ -15610,12 +14543,15 @@ window.addEventListener("popstate", function(event) {
 离线 Web 应用的目的很简单：即使用户断开互联网连接，也可以继续使用应用程序。当用户重新连接互联网时，他们的数据更改会同步，以确保所有内容都处于一致状态。
 
 一个包含演示、额外链接和教程类信息的网站在这里：
+
 http://appcachefacts.info/
 
 HTML5 规范要求一个所谓的“清单文件”（建议使用 “appcache” 作为后缀），该文件包含以下三个部分：
 
 - CACHE（将被缓存的文件列表）
+
 - NETWORK（只能在线访问的文件）
+
 - FALLBACK（指定当用户尝试访问未缓存资源时要显示的资源）
 
 作为简单示例，清单 10.13 展示了一个名为 MyApp.appcache 的示例清单文件内容。
@@ -15638,9 +14574,11 @@ FALLBACK:
 ```
 
 你必须确保清单文件使用以下 MIME 类型提供服务：
+
 `text/cache-manifest`
 
 其次，每个使用离线功能的 Web 页面必须在其顶部引用清单文件：
+
 `<html lang="en" manifest="mymanifest.manifest">`
 
 如果你有一个由提供商托管的 Web 页面，你可以通过发出以下类型的命令来验证该 Web 页面是否包含正确的 MIME 类型：
@@ -15682,12 +14620,15 @@ jQuery 插件 jquery-offline 是一个跨浏览器插件，使你能够使用 jQ
 本节涵盖了处于 W3C 流程早期阶段的 HTML5 API，因此介绍比较简略。
 
 CSS Compositing 规范是一个“编辑者注释”和进行中的工作，它最近出现在 WebKit “nightlies” 中，这意味着在本书付印时，该代码可能会成为 WebKit 主线的一部分。合成涉及将不同元素的形状组合成单个图像。以前的 SVG 版本使用简单 Alpha 合成，而最新的规范定义了一个新的合成模型，该模型扩展了简单 Alpha 合成模型。详细信息请参阅：
+
 http://dvcs.w3.org/hg/FXTF/raw-file/tip/compositing/index.html
 
 Mozilla Firefox OS（以前称为 B2G (Boot to Gecko)）旨在成为一个基于 HTML5 的新开放移动生态系统。运行 Firefox OS 的移动设备将支持能够访问移动设备所有功能的 HTML5 Web 页面。该操作系统（使用 Firefox）将使开发者能够作为 HTML5 应用程序的一部分访问这些移动设备的功能。更多详情请参阅：
+
 https://blog.mozilla.org/blog/2012/07/02/firefox-mobile-os/
 
 语音识别（TTS）规范涉及将文本转换为语音，这涉及通过语音合成来声明式地控制文档渲染的 CSS 属性，以及可选的音频提示。详细信息请参阅：
+
 http://www.w3.org/TR/css3-speech
 
 ## 其他即将推出的 HTML5 功能
@@ -15695,23 +14636,31 @@ http://www.w3.org/TR/css3-speech
 W3C 正在开发和讨论几组 API，其中一些列举如下：
 
 - Web Components
+
 - The Shadow DOM
+
 - Pointer Lock API（面向游戏）
+
 - Gamepad API（面向游戏）
 
 关于 Web Components 的详细信息请参阅：
+
 http://www.w3.org/TR/components-intro/
 
 Shadow DOM 规范请参阅：
+
 http://www.w3.org/TR/shadow-dom
 
 Pointer Lock API（WebApps 工作组）的规范请参阅：
+
 http://dvcs.w3.org/hg/pointerlock/raw-file/tip/index.html
 
 你可以在这里获取 GamePad API 的信息：
+
 https://dvcs.w3.org/hg/gamepad/raw-file/default/gamepad.html
 
 一些实验性的 GamePad 代码（仅限 Firefox）请参阅：
+
 https://developer.mozilla.org/en/API/Gamepad/Using_Gamepad_API
 
 ## 总结
@@ -15719,13 +14668,21 @@ https://developer.mozilla.org/en/API/Gamepad/Using_Gamepad_API
 本章概述了各种 HTML5 技术，并根据它们当前的 W3C 状态进行了分组。为了方便起见，这些 HTML5 技术按字母顺序列出如下：
 
 - Ajax (XHR2)
+
 - 拖放
+
 - 文件 API
+
 - 表单
+
 - 地理定位
+
 - 离线应用
+
 - 服务器发送事件
+
 - WebSockets
+
 - Web Workers
 
 在本章中，你了解了如何测试浏览器对 WebSocket 的支持，以及如何进行 WebSocket 调用。此外，你还学习了如何将 jQuery 与各种 HTML5 相关技术结合使用。
@@ -15746,8 +14703,6 @@ https://developer.mozilla.org/en/API/Gamepad/Using_Gamepad_API
 
 第二部分向你介绍 HTML5 Canvas 中的线性渐变和径向渐变，并给出如何将它们应用于贝塞尔曲线和 JPG 文件的示例。本章的第三部分讨论 jCanvas，这是一个用于 HTML5 Canvas 的 jQuery 插件，以及一个将基于 Canvas 的图形与 jQuery Mobile 结合使用的示例。
 
-
-
 ## 什么是 HTML5 Canvas？
 
 本章的概念和代码示例将帮助你理解第12章中基于HTML5 Canvas的图表和图形，这些内容都基于二维形状。此外，如果你在阅读完本章后想进一步探索HTML5 Canvas图形，这里提供了大量的代码示例：
@@ -15758,7 +14713,7 @@ https://developer.mozilla.org/en/API/Gamepad/Using_Gamepad_API
 
 Canvas最初作为一套小部件工具集诞生于OS/X平台，后来在Safari浏览器支持Canvas之后，它被制定为Web规范，如今通常被称为HTML5 Canvas。
 
-HTML5 Canvas和SVG都允许你通过JavaScript在浏览器中编程渲染图形。然而，HTML5 Canvas使用的是“立即模式”，这是一种“即写即忘”的图形渲染方式。因此，如果你要编写一个基于HTML5 Canvas的绘图程序，并且希望提供“撤销”功能，那么你必须以编程方式跟踪用户在屏幕上绘制的所有内容。另一方面，SVG使用的是“保留模式”，它涉及一个DOM（文档对象模型）结构，该结构会跟踪已渲染的对象及其相互关系。
+HTML5 Canvas和SVG都允许你通过JavaScript在浏览器中编程渲染图形。然而，HTML5 Canvas使用的是“立即模式”，这是一种“即写即忘”的图形渲染方式。因此，如果你要编写一个基于HTML5 Canvas的绘图程序，并且希望提供“撤销”功能，那么你必须以编程方式跟踪用户在屏幕上绘制的所有内容。另一方面，SVG使用的是“保留模式”，它涉及一个DOM（文档对象模型）结构，该结构会跟踪已渲渲染的对象及其相互关系。
 
 如果你打算编写大量使用图形效果的HTML Web页面，你可能需要理解HTML5 Canvas和SVG在性能方面的差异。你可以自由选择只使用一种技术，但也可以创建混合使用HTML5 Canvas、SVG和CSS3的HTML Web页面，而与性能相关的信息可以帮助你决定如何编写你的HTML Web页面。
 
@@ -15781,10 +14736,15 @@ http://code.google.com/p/explorercanvas/
 需要考虑的一点是，在什么情况下使用HTML5 Canvas比使用SVG等技术更有优势。在进行此类分析时，以下简短列表包含了一些需要考虑的特性：
 
 - 原生支持与插件支持
+
 - 不同浏览器对SVG的支持程度
+
 - 动画支持
+
 - 滤镜支持（仅SVG）
+
 - 内置的类HTML小部件支持
+
 - 第三方支持
 
 大多数现代浏览器对SVG提供不同程度的内置支持，Adobe的SVG查看器可以与Microsoft的Internet Explorer配合使用。如果你需要基于滤镜的视觉效果，那么SVG提供了非常丰富（甚至可能是最好的）功能。如果你需要对HTML控件的内置支持，那么像Wijmo这样的框架可能是一个很好的解决方案。另一点需要考虑的是，Adobe已不再支持其SVG查看器。这是一个重要的决定，因为Adobe的SVG查看器多年来一直是事实上的标准。尽管Firefox和Opera在SVG支持方面取得了显著进展，并且都在增强其SVG支持，但它们在功能支持方面仍然落后于Adobe的SVG查看器。因此，你需要权衡最重要的因素，以做出满足项目需求的决定。
@@ -15850,6 +14810,7 @@ var context = elem.getContext('2d');
 ```
 
 如果你在不支持HTML5 Canvas的浏览器中启动清单11.1，将显示文本消息“No support for Canvas.”。
+
 以下代码片段会在你每次启动Web页面时执行，这是因为在 `load` 事件期间执行了一个匿名JavaScript函数：
 
 ```
@@ -15867,8 +14828,6 @@ window.addEventListener('load', function () {
 本节包含一系列代码示例，展示了如何在HTML5 Canvas中渲染二维形状。本节介绍了很多概念，因此在深入代码示例之前，让我们先看看本节使用的一些HTML5 Canvas API。第2章包含一个描述指定颜色各种方法的部分，该部分的内容与本章中的代码示例相关。
 
 HTML5 Canvas提供了 `fillRect()` 方法用于渲染矩形，它需要四个参数：矩形的左上角顶点（由其x坐标和y坐标定义）、矩形的宽度和所需矩形的高度。Canvas的 `fillRect()` API如下所示：
-
-
 
 HTML5 Canvas 允许你通过指定线段两个端点的 (x,y) 坐标来渲染线段。本节代码示例中使用的两个新 API 是 `moveTo()` 和 `lineTo()`，它们的形式如下：
 
@@ -16001,7 +14960,7 @@ window.addEventListener('load', function() {
 </html>
 ```
 
-代码清单 11.2 中的 HTML5 代码首先初始化了一些 JavaScript 变量，然后定义了 JavaScript 函数 redrawCanvas()，该函数包含一个用于在屏幕上渲染矩形的循环。该循环计算每个矩形左上顶点的坐标，如下所示：
+代码清单 11.2 中的 HTML5 代码首先初始化了一些 JavaScript 变量，然后定义了 JavaScript 函数 redrawCanvas()，该函数包含一个用于在屏幕上渲染矩形的循环。该循环计算每个矩形左上顶点的坐点，如下所示：
 
 ```
 basePointX = canWidth*Math.random();
@@ -16099,9 +15058,7 @@ HTML5 Canvas 提供了两种主要类型的颜色渐变（类似于 SVG 和 CSS3
 
 线性颜色渐变可以进一步细分为三种类型：水平线性渐变、垂直线性渐变和对角线性渐变。因此，HTML5 Canvas 提供了颜色渐变，使你能够创建令人愉悦的视觉效果。
 
-
-
-线性渐变通过 `addColorStop` 元素定义，每个元素包含一个介于0和1之间的小数以及一个表示颜色的十六进制值。例如，如果你定义了一个初始颜色为 #FF0000（红色的十六进制值）且最终颜色为 #000000（黑色的十六进制值）的线性渐变，那么生成的颜色渐变将以线性方式从红色过渡到黑色。线性渐变能让你创建生动有趣的色彩组合，它有三种变体：水平、垂直和对角线。请注意，本书中"线性渐变"和"线性颜色渐变"这两个术语可以互换使用。
+线性渐变通过 `addColorStop` 元素定义，每个元素包含一个介于0和1之间的小数以及一个表示颜色的十六进化值。例如，如果你定义了一个初始颜色为 #FF0000（红色的十六进制值）且最终颜色为 #000000（黑色的十六进制值）的线性渐变，那么生成的颜色渐变将以线性方式从红色过渡到黑色。线性渐变能让你创建生动有趣的色彩组合，它有三种变体：水平、垂直和对角线。请注意，本书中"线性渐变"和"线性颜色渐变"这两个术语可以互换使用。
 
 ## 水平、垂直和对角线线性渐变
 
@@ -16115,156 +15072,153 @@ context.createLinearGradient(startX, startY, endX, endY);
 
 **清单 11.4** LGradRectangles1.html
 
+
+
+# HTML5 Canvas 线性渐变矩形
+
 ```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
     <title>Canvas Linear Gradient Rectangles</title>
-    <link href="HoverAnimation1.css"
-          rel="stylesheet" type="text/css">
-    <link href="HoverAnimation2.css"
-          rel="stylesheet" type="text/css">
+    <link href="HoverAnimation1.css" rel="stylesheet" type="text/css">
+    <link href="HoverAnimation2.css" rel="stylesheet" type="text/css">
     <style>
-input {
-    width:350px;
-    font-size:24px;
-    background-color:#f00;
-}
-</style>
+        input {
+            width: 350px;
+            font-size: 24px;
+            background-color: #f00;
+        }
+    </style>
     <script><!--
-    window.addEventListener('load', function () {
-        var elem = document.getElementById('myCanvas');
-        if (!elem || !elem.getContext) {
-            return;
-        }
+        window.addEventListener('load', function () {
+            var elem = document.getElementById('myCanvas');
+            if (!elem || !elem.getContext) {
+                return;
+            }
 
-        var context = elem.getContext('2d');
-        if (!context) {
-            return;
-        }
+            var context = elem.getContext('2d');
+            if (!context) {
+                return;
+            }
 
-        var elem2 = document.getElementById('myCanvas2');
-        if (!elem2 || !elem2.getContext) {
-            return;
-        }
+            var elem2 = document.getElementById('myCanvas2');
+            if (!elem2 || !elem2.getContext) {
+                return;
+            }
 
-        var context2 = elem2.getContext('2d');
-        if (!context2) {
-            return;
-        }
+            var context2 = elem2.getContext('2d');
+            if (!context2) {
+                return;
+            }
 
-        var basePointX = 0;
-        var basePointY = 0;
-        var currentX   = 0;
-        var currentY   = 0;
-        var rectWidth  = 200;
-        var rectHeight = 200;
-        var clickCount = 0;
-        var gradient1;
+            var basePointX = 0;
+            var basePointY = 0;
+            var currentX   = 0;
+            var currentY   = 0;
+            var rectWidth  = 200;
+            var rectHeight = 200;
+            var clickCount = 0;
+            var gradient1;
 
-        redrawCanvas = function() {
-            // clear the canvas before drawing new set of rectangles
-            //context.clearRect(0, 0, elem.width, elem.height);
-            //context2.clearRect(0, 0, elem.width, elem.height);
+            redrawCanvas = function() {
+                // clear the canvas before drawing new set of rectangles
+                //context.clearRect(0, 0, elem.width, elem.height);
+                //context2.clearRect(0, 0, elem.width, elem.height);
 
-            // upper left rectangle: horizontal linear gradient
-            currentX = basePointX;
-            currentY = basePointY;
-            gradient1 = context.createLinearGradient(
-                currentX,
-                currentY,
-                currentX+rectWidth,
-                currentY+0*rectHeight);
+                // upper left rectangle: horizontal linear gradient
+                currentX = basePointX;
+                currentY = basePointY;
+                gradient1 = context.createLinearGradient(
+                    currentX,
+                    currentY,
+                    currentX + rectWidth,
+                    currentY + 0 * rectHeight);
 
-            gradient1.addColorStop(0, '#f00');
-            gradient1.addColorStop(1, '#00f');
-            context.fillStyle = gradient1;
-            context.fillRect(currentX, currentY,
-                rectWidth, rectHeight);
+                gradient1.addColorStop(0, '#f00');
+                gradient1.addColorStop(1, '#00f');
+                context.fillStyle = gradient1;
+                context.fillRect(currentX, currentY, rectWidth, rectHeight);
 
-            // upper right rectangle: vertical linear gradient
-            currentX = basePointX+rectWidth;
-            currentY = basePointY;
+                // upper right rectangle: vertical linear gradient
+                currentX = basePointX + rectWidth;
+                currentY = basePointY;
 
-            gradient1 = context.createLinearGradient(
-                currentX,
-                currentY,
-                currentX+0*rectWidth,
-                currentY+rectHeight);
+                gradient1 = context.createLinearGradient(
+                    currentX,
+                    currentY,
+                    currentX + 0 * rectWidth,
+                    currentY + rectHeight);
 
-            gradient1.addColorStop(0, '#ff0');
-            gradient1.addColorStop(1, '#00f');
-            context.fillStyle = gradient1;
-            context.fillRect(currentX, currentY,
-                rectWidth, rectHeight);
+                gradient1.addColorStop(0, '#ff0');
+                gradient1.addColorStop(1, '#00f');
+                context.fillStyle = gradient1;
+                context.fillRect(currentX, currentY, rectWidth, rectHeight);
 
-            // render the lower rectangles in the second <canvas> element
-            // lower left rectangle: diagonal linear gradient
-            currentX = basePointX;
-            currentY = basePointY;
-            //currentY = basePointY+rectHeight;
+                // render the lower rectangles in the second <canvas> element
+                // lower left rectangle: diagonal linear gradient
+                currentX = basePointX;
+                currentY = basePointY;
+                //currentY = basePointY + rectHeight;
 
-            gradient1 = context2.createLinearGradient(
-                currentX,
-                currentY,
-                currentX+rectWidth,
-                currentY+rectHeight);
+                gradient1 = context2.createLinearGradient(
+                    currentX,
+                    currentY,
+                    currentX + rectWidth,
+                    currentY + rectHeight);
 
-            gradient1.addColorStop(0, '#f00');
-            gradient1.addColorStop(0.5,'#0f0');
-            gradient1.addColorStop(1, '#00f');
-            context2.fillStyle = gradient1;
-            context2.fillRect(currentX, currentY,
-                rectWidth, rectHeight);
+                gradient1.addColorStop(0, '#f00');
+                gradient1.addColorStop(0.5, '#0f0');
+                gradient1.addColorStop(1, '#00f');
+                context2.fillStyle = gradient1;
+                context2.fillRect(currentX, currentY, rectWidth, rectHeight);
 
-            // lower right rectangle: diagonal linear gradient
-            currentX = basePointX+rectWidth;
-            currentY = basePointY;
-            //currentY = basePointY+rectHeight;
+                // lower right rectangle: diagonal linear gradient
+                currentX = basePointX + rectWidth;
+                currentY = basePointY;
+                //currentY = basePointY + rectHeight;
 
-            gradient1 = context2.createLinearGradient(
-                            currentX+rectWidth,
-                            currentY,
-                            currentX+0*rectWidth,
-                            currentY+rectHeight);
+                gradient1 = context2.createLinearGradient(
+                    currentX + rectWidth,
+                    currentY,
+                    currentX + 0 * rectWidth,
+                    currentY + rectHeight);
 
-            gradient1.addColorStop(0, '#fff');
-            gradient1.addColorStop(0.3,'#000');
-            gradient1.addColorStop(0.6,'#ff0');
-            gradient1.addColorStop(1, '#f00');
-            context2.fillStyle = gradient1;
-            context2.fillRect(currentX, currentY,
-                            rectWidth, rectHeight);
+                gradient1.addColorStop(0, '#fff');
+                gradient1.addColorStop(0.3, '#000');
+                gradient1.addColorStop(0.6, '#ff0');
+                gradient1.addColorStop(1, '#f00');
+                context2.fillStyle = gradient1;
+                context2.fillRect(currentX, currentY, rectWidth, rectHeight);
 
-            ++clickCount;
-            basePointX += 4;
-            basePointY += 2;
-        }
+                ++clickCount;
+                basePointX += 4;
+                basePointY += 2;
+            }
 
-        // render linear gradient rectangles
-        redrawCanvas();
-    }, false);
+            // render linear gradient rectangles
+            redrawCanvas();
+        }, false);
     // --></script>
 </head>
 
 <body>
-<div>
-<canvas id="myCanvas" width="600" height="250">No support for Canvas
-    alt="Rendering linear gradient rectangles.">
-</canvas>
-</div>
+    <div>
+        <canvas id="myCanvas" width="600" height="250">No support for Canvas
+            alt="Rendering linear gradient rectangles.">
+        </canvas>
+    </div>
 
-<div>
-<canvas id="myCanvas2" width="600" height="250">No support for Canvas
-    alt="Rendering linear gradient rectangles.">
-</canvas>
-</div>
+    <div>
+        <canvas id="myCanvas2" width="600" height="250">No support for Canvas
+            alt="Rendering linear gradient rectangles.">
+        </canvas>
+    </div>
 
-<div>
-  <input type="button" onclick="redrawCanvas();return false"
-         value="Redraw the Rectangles"/>
-</div>
+    <div>
+        <input type="button" onclick="redrawCanvas();return false" value="Redraw the Rectangles"/>
+    </div>
 </body>
 </html>
 ```
@@ -16287,7 +15241,7 @@ input {
 context.createRadialGradient(startCenterX, startCenterY, startRadius, endCenterX, endCenterY, endRadius);
 ```
 
-径向颜色渐变可以比作石头投入池塘时产生的涟漪效果，每个"涟漪"都有一种以渐变方式变化的颜色。每个涟漪对应一个色标元素。例如，如果你定义了一个起始颜色为 #FF0000（红色）且结束颜色为 #000000（黑色）的径向渐变，那么生成的颜色渐变将以径向方式从红色过渡到黑色。径向渐变也可以包含多个起始/结束颜色组合。需要记住的关键点是，径向渐变以线性方式改变颜色，但渲染出的颜色是以扩展的径向方式绘制的。请注意，本书中"径向渐变"和"径向颜色渐变"这两个术语可以互换使用。
+径向颜色渐变可以比作石头投入池塘时产生的涟漪效果，每个"涟漪"都有一种以渐变方式变化的颜色。每个涟漪对应一个色标元素。例如，如果你定义了一个起始颜色为 `#FF0000`（红色）且结束颜色为 `#000000`（黑色）的径向渐变，那么生成的颜色渐变将以径向方式从红色过渡到黑色。径向渐变也可以包含多个起始/结束颜色组合。需要记住的关键点是，径向渐变以线性方式改变颜色，但渲染出的颜色是以扩展的径向方式绘制的。请注意，本书中"径向渐变"和"径向颜色渐变"这两个术语可以互换使用。
 
 清单 11.5 展示了 HTML5 页面 `RGradRectangles1.html` 的内容，该页面在 HTML5 `<canvas>` 元素中使用线性和径向渐变渲染线段、矩形和圆形。
 
@@ -16313,134 +15267,126 @@ context.createRadialGradient(startCenterX, startCenterY, startRadius, endCenterX
             if (!elem || !elem.getContext) {
                 return;
             }
-```
 
+            var context = elem.getContext('2d');
+            if (!context) {
+                return;
+            }
 
+            var basePointX = 10;
+            var basePointY = 10;
+            var currentX   = 0;
+            var currentY   = 0;
+            var rectWidth  = 200;
+            var rectHeight = 200;
+            var clickCount = 0;
+            var gradient1;
 
-var context = elem.getContext('2d');
-if (!context) {
-  return;
-}
+            redrawCanvas = function() {
+                // 绘制新矩形集前清除画布
+                //context.clearRect(0, 0, elem.width, elem.height);
 
-var basePointX = 10;
-var basePointY = 10;
-var currentX   = 0;
-var currentY   = 0;
-var rectWidth  = 200;
-var rectHeight = 200;
-var clickCount = 0;
-var gradient1;
+                // 左上角矩形
+                currentX = basePointX;
+                currentY = basePointY;
+                gradient1 = context.createRadialGradient(
+                    currentX,
+                    currentY,
+                    0,
+                    currentX + rectWidth,
+                    currentY + rectHeight,
+                    rectWidth);
 
-redrawCanvas = function() {
-  // 绘制新矩形集前清除画布
-  //context.clearRect(0, 0, elem.width, elem.height);
+                gradient1.addColorStop(0, '#f00');
+                gradient1.addColorStop(1, '#00f');
+                context.fillStyle = gradient1;
+                context.fillRect(currentX, currentY, rectWidth, rectHeight);
 
-  // 左上角矩形
-  currentX = basePointX;
-  currentY = basePointY;
+                // 右上角矩形
+                currentX = basePointX + rectWidth;
+                currentY = basePointY;
+                gradient1 = context.createRadialGradient(
+                    currentX,
+                    currentY,
+                    0,
+                    currentX + rectWidth,
+                    currentY + rectHeight,
+                    rectWidth);
 
-  gradient1 = context.createRadialGradient(
-                                currentX,
-                                currentY,
-                                0,
-                                currentX+rectWidth,
-                                currentY+rectHeight,
-                                rectWidth);
+                gradient1.addColorStop(0, '#ff0');
+                gradient1.addColorStop(1, '#00f');
+                context.fillStyle = gradient1;
+                context.fillRect(currentX, currentY, rectWidth, rectHeight);
 
-  gradient1.addColorStop(0, '#f00');
-  gradient1.addColorStop(1, '#00f');
-  context.fillStyle = gradient1;
-  context.fillRect(currentX, currentY,
-                   rectWidth, rectHeight);
+                // 左下角矩形
+                currentX = basePointX;
+                currentY = basePointY + rectHeight;
+                gradient1 = context.createRadialGradient(
+                    currentX,
+                    currentY,
+                    0,
+                    currentX + rectWidth,
+                    currentY + rectHeight,
+                    rectWidth);
 
-  // 右上角矩形
-  currentX = basePointX+rectWidth;
-  currentY = basePointY;
+                gradient1.addColorStop(0, '#f00');
+                gradient1.addColorStop(0.5, '#0f0');
+                gradient1.addColorStop(1, '#00f');
+                context.fillStyle = gradient1;
+                context.fillRect(currentX, currentY, rectWidth, rectHeight);
 
-  gradient1 = context.createRadialGradient(
-                                currentX,
-                                currentY,
-                                0,
-                                currentX+rectWidth,
-                                currentY+rectHeight,
-                                rectWidth);
+                // 右下角矩形
+                currentX = basePointX + rectWidth;
+                currentY = basePointY + rectHeight;
+                gradient1 = context.createRadialGradient(
+                    currentX,
+                    currentY,
+                    0,
+                    currentX + rectWidth,
+                    currentY + rectHeight,
+                    rectWidth);
 
-  gradient1.addColorStop(0, '#ff0');
-  gradient1.addColorStop(1, '#00f');
-  context.fillStyle = gradient1;
-  context.fillRect(currentX, currentY,
-                  rectWidth, rectHeight);
+                gradient1.addColorStop(0, '#fff');
+                gradient1.addColorStop(0.3, '#000');
+                gradient1.addColorStop(0.6, '#ff0');
+                gradient1.addColorStop(1, '#f00');
+                context.fillStyle = gradient1;
+                context.fillRect(currentX, currentY, rectWidth, rectHeight);
 
-  // 左下角矩形
-  currentX = basePointX;
-  currentY = basePointY+rectHeight;
+                ++clickCount;
+                basePointX += 2;
+                basePointY += 2;
+            }
 
-  gradient1 = context.createRadialGradient(
-                                 currentX,
-                                 currentY,
-                                 0,
-                                 currentX+rectWidth,
-                                 currentY+rectHeight,
-                                 rectWidth);
-
-  gradient1.addColorStop(0, '#f00');
-  gradient1.addColorStop(0.5,'#0f0');
-  gradient1.addColorStop(1, '#00f');
-  context.fillStyle = gradient1;
-  context.fillRect(currentX, currentY,
-                  rectWidth, rectHeight);
-
-  // 右下角矩形
-  currentX = basePointX+rectWidth;
-  currentY = basePointY+rectHeight;
-
-  gradient1 = context.createRadialGradient(
-                                 currentX,
-                                 currentY,
-                                 0,
-                                 currentX+rectWidth,
-                                 currentY+rectHeight,
-                                 rectWidth);
-
-  gradient1.addColorStop(0, '#fff');
-  gradient1.addColorStop(0.3,'#000');
-  gradient1.addColorStop(0.6,'#ff0');
-  gradient1.addColorStop(1, '#f00');
-  context.fillStyle = gradient1;
-  context.fillRect(currentX, currentY, rectWidth, rectHeight);
-
-  ++clickCount;
-  basePointX += 2;
-  basePointY += 2;
-}
-
-// 渲染一组矩形
-redrawCanvas();
-}, false);
-// --></script>
+            // 渲染一组矩形
+            redrawCanvas();
+        }, false);
+    // --></script>
 </head>
+
 <body>
-<div>
-<canvas id="myCanvas" width="600" height="500">No support for Canvas
-alt="渲染径向渐变矩形。">
-</canvas>
-</div>
-<div>
-<input type="button" onclick="redrawCanvas();return false"
-value="重新绘制矩形"/>
-</div>
+    <div>
+        <canvas id="myCanvas" width="600" height="500">No support for Canvas
+            alt="渲染径向渐变矩形。">
+        </canvas>
+    </div>
+
+    <div>
+        <input type="button" onclick="redrawCanvas();return false" value="重新绘制矩形"/>
+    </div>
 </body>
 </html>
+```
 
-清单 11.5 与清单 11.4 类似，除了使用径向渐变（而非线性渐变），该渐变以径向方式从蓝色渐变到红色。方法 addColorStop() 被调用了四次，以便向径向渐变添加四个“颜色停止值”。清单 11.5 还引用了 HoverAnimation1.css；其完整源代码可在 DVD 上找到。
+清单 11.5 与清单 11.4 类似，除了使用径向渐变（而非线性渐变），该渐变以径向方式从蓝色渐变到红色。方法 `addColorStop()` 被调用了四次，以便向径向渐变添加四个“颜色停止值”。清单 11.5 还引用了 `HoverAnimation1.css`；其完整源代码可在 DVD 上找到。
 
 ![](img/6f06c2ff7e29452e50d03258ed9c6b4f_528_0.png)
 
-图 11.4 显示了基于清单 11.5 中 RGradRectangles1.html 的一组带有径向渐变的矩形，在 iPad 3 上以横向模式显示。
+图 11.4 显示了基于清单 11.5 中 `RGradRectangles1.html` 的一组带有径向渐变的矩形，在 iPad 3 上以横向模式显示。
 
 ![](img/6f06c2ff7e29452e50d03258ed9c6b4f_529_0.png)
 
-图 11.4 iPad 3 上的径向渐变矩形。
+**图 11.4** iPad 3 上的径向渐变矩形。
 
 ## 贝塞尔曲线
 
@@ -16452,162 +15398,153 @@ HTML5 Canvas 支持二次贝塞尔曲线和三次贝塞尔曲线。本节中的�
 
 ## 使用线性和径向渐变的贝塞尔曲线
 
-HTML5 Canvas 提供了 quadraticCurveTo() 方法用于创建二次贝塞尔曲线，这需要一个控制点和一个端点。HTML5 Canvas 还提供了 bezierCurveTo() 方法用于创建三次贝塞尔曲线，这需要你指定两个控制点和一个端点。上下文点（即最近渲染点的位置）被用作二次贝塞尔曲线和三次贝塞尔曲线的起点。
+HTML5 Canvas 提供了 `quadraticCurveTo()` 方法用于创建二次贝塞尔曲线，这需要一个控制点和一个端点。HTML5 Canvas 还提供了 `bezierCurveTo()` 方法用于创建三次贝塞尔曲线，这需要你指定两个控制点和一个端点。上下文点（即最近渲染点的位置）被用作二次贝塞尔曲线和三次贝塞尔曲线的起点。
 
-HTML5 Canvas quadraticCurveTo() 方法的语法如下所示：
+HTML5 Canvas `quadraticCurveTo()` 方法的语法如下所示：
 
 ```
 quadraticCurveTo(controlX, controlY, endX, endY);
 ```
 
-HTML5 Canvas bezierCurveTo() 方法的语法如下所示：
+HTML5 Canvas `bezierCurveTo()` 方法的语法如下所示：
 
 ```
-bezierCurveTo(controlX1,controlY1,controlX2,controlY2,endX,
-endY);
+bezierCurveTo(controlX1, controlY1, controlX2, controlY2, endX, endY);
 ```
 
-清单 11.6 中的 HTML5 页面 LRGradQCBezier1.html 演示了如何渲染带有线性渐变着色的二次贝塞尔曲线和带有径向渐变着色的三次贝塞尔曲线。
+清单 11.6 中的 HTML5 页面 `LRGradQCBezier1.html` 演示了如何渲染带有线性渐变着色的二次贝塞尔曲线和带有径向渐变着色的三次贝塞尔曲线。
 
-清单 11.6 中引用的 CSS3Background4.css 和 HoverAnimation1.css 的源代码可在 DVD 上找到。
+清单 11.6 中引用的 `CSS3Background4.css` 和 `HoverAnimation1.css` 的源代码可在 DVD 上找到。
 
-## 清单 11.6 LRGradQCBezier1.html
+### 清单 11.6 LRGradQCBezier1.html
 
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<title>Canvas 二次和三次贝塞尔曲线</title>
-<link href="CSS3Background6.css"
-rel="stylesheet" type="text/css">
-<link href="HoverAnimation1.css"
-rel="stylesheet" type="text/css">
-<style>
-    input {
-        width:300px;
-        font-size:24px;
-        background-color:#f00;
-    }
-</style>
-<script><!--
-    window.addEventListener('load', function () {
-        var elem = document.getElementById('myCanvas');
-        if (!elem || !elem.getContext) {
-            return;
+    <meta charset="utf-8">
+    <title>Canvas 二次和三次贝塞尔曲线</title>
+    <link href="CSS3Background6.css" rel="stylesheet" type="text/css">
+    <link href="HoverAnimation1.css" rel="stylesheet" type="text/css">
+    <style>
+        input {
+            width: 300px;
+            font-size: 24px;
+            background-color: #f00;
         }
+    </style>
+    <script><!--
+        window.addEventListener('load', function () {
+            var elem = document.getElementById('myCanvas');
+            if (!elem || !elem.getContext) {
+                return;
+            }
 
-        var context = elem.getContext('2d');
-        if (!context) {
-            return;
-        }
+            var context = elem.getContext('2d');
+            if (!context) {
+                return;
+            }
 
-        var basePointX    = 0;
-        var basePointY    = 250;
-        var currentX      = basePointX;
-        var currentY      = basePointY;
-        var currentX2     = currentX;
-        var currentY2     = currentY;
-        var lineWidth     = 8;
-        var rectWidth     = 50;
-        var rectHeight    = 40;
-        var clickCount    = 0;
-        var multiplier    = 5;
-        var gradient1;
+            var basePointX    = 0;
+            var basePointY    = 250;
+            var currentX      = basePointX;
+            var currentY      = basePointY;
+            var currentX2     = currentX;
+            var currentY2     = currentY;
+            var lineWidth     = 8;
+            var rectWidth     = 50;
+            var rectHeight    = 40;
+            var clickCount    = 0;
+            var multiplier    = 5;
+            var gradient1;
 
-        redrawCanvas = function() {
-            // 绘制新矩形集前清除画布
-            //context.clearRect(0, 0, elem.width, elem.height);
+            redrawCanvas = function() {
+                // 绘制新矩形集前清除画布
+                //context.clearRect(0, 0, elem.width, elem.height);
 
-            // 绘制三次贝塞尔曲线
-            currentX = currentX2/2;
-            currentY = currentY2/2;
+                // 绘制三次贝塞尔曲线
+                currentX = currentX2 / 2;
+                currentY = currentY2 / 2;
 
-            gradient1 = context.createRadialGradient(
-                                currentX,
-                                currentY,
-                                0,
-```
+                gradient1 = context.createRadialGradient(
+                    currentX,
+                    currentY,
+                    0,
+                    currentX + multiplier * rectWidth,
+                    currentY + multiplier * rectHeight,
+                    3 * rectWidth);
 
-## HTML5 Canvas 简介
+                gradient1.addColorStop(0, '#f00');
+                gradient1.addColorStop(0.2, '#ff0');
+                gradient1.addColorStop(0.4, '#fff');
+                gradient1.addColorStop(0.6, '#f00');
+                gradient1.addColorStop(0.8, '#00f');
+                gradient1.addColorStop(1, '#f00');
 
-```javascript
-currentX+multiplier*rectWidth,
-currentY+multiplier*rectHeight,
-                3*rectWidth);
+                context.fillStyle = gradient1;
+                context.fill();
 
-gradient1.addColorStop(0, '#f00');
-gradient1.addColorStop(0.2,'#ff0');
-gradient1.addColorStop(0.4,'#fff');
-gradient1.addColorStop(0.6,'#f00');
-gradient1.addColorStop(0.8,'#00f');
-gradient1.addColorStop(1, '#f00');
+                context.beginPath();
+                context.lineWidth = lineWidth;
+                context.moveTo(currentX, currentY);
 
-context.fillStyle = gradient1;
-context.fill();
+                context.bezierCurveTo(
+                    currentX + 3 * multiplier * rectWidth,
+                    currentY + 2 * multiplier * rectHeight,
+                    currentX + 2 * multiplier * rectWidth,
+                    currentY - multiplier * rectHeight,
+                    currentX + 100, currentY + 300);
+                context.fill();
 
-context.beginPath();
-context.lineWidth = lineWidth;
-context.moveTo(currentX, currentY);
+                // 绘制二次贝塞尔曲线
+                currentX = currentX2 / 2;
+                currentY = currentY2 / 2;
 
-context.bezierCurveTo(
-  currentX+3*multiplier*rectWidth,
-  currentY+2*multiplier*rectHeight,
-  currentX+2*multiplier*rectWidth,
-  currentY-multiplier*rectHeight,
-  currentX+100, currentY+300);
-context.fill();
+                gradient1 = context.createLinearGradient(
+                    currentX,
+                    currentY,
+                    currentX + multiplier / 2 * rectWidth,
+                    currentY + multiplier / 2 * rectHeight);
 
-// 绘制二次贝塞尔曲线
-currentX = currentX2/2;
-currentY = currentY2/2;
+                gradient1.addColorStop(0, '#f00');
+                gradient1.addColorStop(0.3, '#ff0');
+                gradient1.addColorStop(0.6, '#00f');
+                gradient1.addColorStop(0.9, '#0f0');
+                gradient1.addColorStop(1, '#f00');
 
-gradient1 = context.createLinearGradient(
-                      currentX,
-                      currentY,
-                      currentX+multiplier/2*rectWidth,
-                      currentY+multiplier/2*rectHeight);
+                context.fillStyle = gradient1;
 
-gradient1.addColorStop(0, '#f00');
-gradient1.addColorStop(0.3,'#ff0');
-gradient1.addColorStop(0.6,'#00f');
-gradient1.addColorStop(0.9,'#0f0');
-gradient1.addColorStop(1, '#f00');
+                context.beginPath();
+                context.lineWidth = lineWidth;
+                context.moveTo(currentX, currentY);
+                context.quadraticCurveTo(
+                    currentX + 3 * multiplier * rectWidth,
+                    currentY + 1 * multiplier * rectHeight,
+                    currentX + 2 * multiplier * rectWidth,
+                    currentY - multiplier * rectHeight);
 
-context.fillStyle = gradient1;
+                context.fill();
 
-context.beginPath();
-context.lineWidth = lineWidth;
-context.moveTo(currentX, currentY);
-context.quadraticCurveTo(
-    currentX+3*multiplier*rectWidth,
-    currentY+1*multiplier*rectHeight,
-    currentX+2*multiplier*rectWidth,
-    currentY-multiplier*rectHeight);
+                ++clickCount;
+                currentX2 += 10;
+                ++currentY2;
+            }
 
-context.fill();
-
-++clickCount;
-currentX2 += 10;
-++currentY2;
-}
-
-// 渲染贝塞尔曲线
-redrawCanvas();
-}, false);
-// --></script>
+            // 渲染贝塞尔曲线
+            redrawCanvas();
+        }, false);
+    // --></script>
 </head>
 <body>
-<div>
-    <canvas id="myCanvas" width="800" height="500">不支持 Canvas
-        alt="渲染贝塞尔曲线。">
-    </canvas>
-</div>
+    <div>
+        <canvas id="myCanvas" width="800" height="500">不支持 Canvas
+            alt="渲染贝塞尔曲线。">
+        </canvas>
+    </div>
 
-<div>
-    <input type="button" onclick="redrawCanvas();return false"
-           value="重新绘制贝塞尔曲线"/>
-</div>
+    <div>
+        <input type="button" onclick="redrawCanvas();return false" value="重新绘制贝塞尔曲线"/>
+    </div>
 </body>
 </html>
 ```
@@ -16618,11 +15555,11 @@ redrawCanvas();
 
 ```javascript
 context.bezierCurveTo(
-    currentX+3*multiplier*rectWidth,
-    currentY+2*multiplier*rectHeight,
-    currentX+2*multiplier*rectWidth,
-    currentY-multiplier*rectHeight,
-    currentX+100, currentY+300);
+    currentX + 3 * multiplier * rectWidth,
+    currentY + 2 * multiplier * rectHeight,
+    currentX + 2 * multiplier * rectWidth,
+    currentY - multiplier * rectHeight,
+    currentX + 100, currentY + 300);
 ```
 
 尝试使用贝塞尔曲线的不同点值，你可能会找到创建悦目视觉效果的其他方法。清单 11.6 的下一部分使用包含五个颜色停止点的线性渐变渲染一条二次贝塞尔曲线。
@@ -16634,13 +15571,13 @@ context.bezierCurveTo(
 //context.clearRect(0, 0, elem.width, elem.height);
 ```
 
-图 11.5 在 iPad 3 的横屏模式下渲染了清单 11.6 中 LRGradQCBezier1.html 定义的二次和三次贝塞尔曲线。
+图 11.5 在 iPad 3 的横屏模式下渲染了清单 11.6 中 `LRGradQCBezier1.html` 定义的二次和三次贝塞尔曲线。
 
 ![](img/6f06c2ff7e29452e50d03258ed9c6b4f_534_0.png)
 
-## 使用 CSS3 选择器在 Canvas 上渲染图像
+## 在 Canvas 上渲染图像
 
-HTML5 Canvas 支持渲染 JPG 文件，你也可以将 CSS 选择器应用于 HTML5 `<canvas>` 元素。清单 11.7 显示了 Image1.html 的内容，清单 11.8 显示了 Image1.css 的内容，其选择器应用于清单 11.7 中的 HTML5 `<canvas>` 元素。
+HTML5 Canvas 支持渲染 JPG 文件，你也可以将 CSS 选择器应用于 HTML5 `<canvas>` 元素。清单 11.7 显示了 `Image1.html` 的内容，清单 11.8 显示了 `Image1.css` 的内容，其选择器应用于清单 11.7 中的 HTML5 `<canvas>` 元素。
 
 ### 清单 11.7 Image1.html
 
@@ -16648,76 +15585,76 @@ HTML5 Canvas 支持渲染 JPG 文件，你也可以将 CSS 选择器应用于 HT
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8"/>
-  <title>在 HTML5 Canvas 中渲染 JPG 文件</title>
+    <meta charset="utf-8"/>
+    <title>在 HTML5 Canvas 中渲染 JPG 文件</title>
 
-  <link href="Image1.css" rel="stylesheet" type="text/css">
-  <link href="HoverAnimation1.css" rel="stylesheet" type="text/css">
+    <link href="Image1.css" rel="stylesheet" type="text/css">
+    <link href="HoverAnimation1.css" rel="stylesheet" type="text/css">
 
-  <script>
-    function renderJPG() {
-      // 获取 canvas 元素
-      var elem = document.getElementById('myCanvas');
-      if (!elem || !elem.getContext) {
-        return;
-      }
+    <script>
+        function renderJPG() {
+            // 获取 canvas 元素
+            var elem = document.getElementById('myCanvas');
+            if (!elem || !elem.getContext) {
+                return;
+            }
 
-      // 获取 canvas 2d 上下文
-      var context = elem.getContext('2d');
-      if (!context) {
-        return;
-      }
+            // 获取 canvas 2d 上下文
+            var context = elem.getContext('2d');
+            if (!context) {
+                return;
+            }
 
-      var basePointX  = 30;
-      var basePointY  = 30;
-      var rectWidth   = 150;
-      var rectHeight  = 200;
-      var borderX     = rectWidth/2;
-      var borderY     = rectHeight/2;
-      var offsetX     = 20;
-      var offsetY     = 20;
-      var gradientR   = 60;
+            var basePointX  = 30;
+            var basePointY  = 30;
+            var rectWidth   = 150;
+            var rectHeight  = 200;
+            var borderX     = rectWidth / 2;
+            var borderY     = rectHeight / 2;
+            var offsetX     = 20;
+            var offsetY     = 20;
+            var gradientR   = 60;
 
-      // 创建一个径向渐变：
-      var rGradient = context.createRadialGradient(
-                            basePointX+rectWidth/2,
-basePointY+rectWidth/2,
-            gradientR,
-            basePointX+rectWidth/2,
-            basePointY+rectWidth/2,
-            3*gradientR);
+            // 创建一个径向渐变：
+            var rGradient = context.createRadialGradient(
+                basePointX + rectWidth / 2,
+                basePointY + rectWidth / 2,
+                gradientR,
+                basePointX + rectWidth / 2,
+                basePointY + rectWidth / 2,
+                3 * gradientR);
 
-rGradient.addColorStop(0,   '#FF0000');
-rGradient.addColorStop(0.5, '#FFFF00');
-rGradient.addColorStop(1,   '#000044');
+            rGradient.addColorStop(0,   '#FF0000');
+            rGradient.addColorStop(0.5, '#FFFF00');
+            rGradient.addColorStop(1,   '#000044');
 
-// 使用径向渐变绘制矩形背景：
-context.fillStyle = rGradient;
-context.fillRect(basePointX-offsetX,
-                 basePointY-offsetY,
-                 rectWidth+borderX+2*offsetX,
-                 rectHeight+borderY+2*offsetY);
+            // 使用径向渐变绘制矩形背景：
+            context.fillStyle = rGradient;
+            context.fillRect(basePointX - offsetX,
+                basePointY - offsetY,
+                rectWidth + borderX + 2 * offsetX,
+                rectHeight + borderY + 2 * offsetY);
 
-// 加载 JPG
-var myImage = new Image();
-myImage.onload = function() {
-    context.drawImage(myImage,
-                      basePointX,
-                      basePointY,
-                      rectWidth,
-                      rectHeight);
-}
+            // 加载 JPG
+            var myImage = new Image();
+            myImage.onload = function() {
+                context.drawImage(myImage,
+                    basePointX,
+                    basePointY,
+                    rectWidth,
+                    rectHeight);
+            }
 
-myImage.src = "Laurie1.jpeg";
-}
-</script>
+            myImage.src = "Laurie1.jpeg";
+        }
+    </script>
 
-<style type="text/css">
-    canvas {
-        border: 0px solid #888;
-        background: #FFF;
-    }
-</style>
+    <style type="text/css">
+        canvas {
+            border: 0px solid #888;
+            background: #FFF;
+        }
+    </style>
 </head>
 
 <body onload="renderJPG();">
@@ -16725,57 +15662,53 @@ myImage.src = "Laurie1.jpeg";
         <h1>将鼠标悬停在图像上</h1>
     </header>
 
-<div>
-    <canvas id="myCanvas" width="500" height="300">不支持
-    Canvas</canvas>
-</div>
-
-</canvas>
-</div>
+    <div>
+        <canvas id="myCanvas" width="500" height="300">不支持 Canvas</canvas>
+    </div>
 </body>
 </html>
 ```
 
-清单 11.7 包含 JavaScript 代码，该代码创建了一个包含三个颜色停止点的径向渐变 `rGradient`。接着，使用变量 `rGradient` 引用的径向渐变渲染了一个矩形，随后是一段渲染 JPG 文件 Laurie1.jpeg 的代码。`<style>` 元素中的内联 CSS 代码渲染了一个白色背景和零宽度边框（因此不可见），但你可以修改此 CSS 代码以产生额外效果。`<body>` 元素包含 `onload` 属性，其值为 `renderJPG()`，这是一个在 HTML5 `<canvas>` 元素内渲染 JPG 文件的 JavaScript 函数。
+清单 11.7 包含 JavaScript 代码，该代码创建了一个包含三个颜色停止点的径向渐变 `rGradient`。接着，使用变量 `rGradient` 引用的径向渐变渲染了一个矩形，随后是一段渲染 JPG 文件 `Laurie1.jpeg` 的代码。`<style>` 元素中的内联 CSS 代码渲染了一个白色背景和零宽度边框（因此不可见），但你可以修改此 CSS 代码以产生额外效果。`<body>` 元素包含 `onload` 属性，其值为 `renderJPG()`，这是一个在 HTML5 `<canvas>` 元素内渲染 JPG 文件的 JavaScript 函数。
 
 ### 清单 11.8 Image1.css
 
 ```css
 #myCanvas:hover {
-width: 500px;
-height: 300px;
-position: relative; top: 0px; left: 0px;
+    width: 500px;
+    height: 300px;
+    position: relative; top: 0px; left: 0px;
 
-background-color:white;
-background-image:
--webkit-radial-gradient(red 4px, transparent 24px),
--webkit-repeating-radial-gradient(red 1px, green 4px, yellow 8px,
-blue 12px, transparent 16px,
-red 20px, blue 24px,
-transparent 28px,
-transparent 32px);
+    background-color: white;
+    background-image:
+        -webkit-radial-gradient(red 4px, transparent 24px),
+        -webkit-repeating-radial-gradient(red 1px, green 4px, yellow 8px,
+            blue 12px, transparent 16px,
+            red 20px, blue 24px,
+            transparent 28px,
+            transparent 32px);
 
-background-size: 30px 30px, 40px 40px;
-background-position: 0 0;
+    background-size: 30px 30px, 40px 40px;
+    background-position: 0 0;
 }
 
 #myCanvas {
-width: 500px;
-height: 300px;
-position: relative; top: 0px; left: 0px;
+    width: 500px;
+    height: 300px;
+    position: relative; top: 0px; left: 0px;
 
-background-color:white;
-background-image:
-  -webkit-radial-gradient(black 4px, transparent 20px),
-  -webkit-repeating-radial-gradient(blue 1px, yellow 4px,
-blue 8px,
-                                        red 12px, transparent 16px,
-                                        red 20px, blue 24px,
-                                        transparent 28px,
-                                        transparent 32px);
+    background-color: white;
+    background-image:
+        -webkit-radial-gradient(black 4px, transparent 20px),
+        -webkit-repeating-radial-gradient(blue 1px, yellow 4px,
+            blue 8px,
+            red 12px, transparent 16px,
+            red 20px, blue 24px,
+            transparent 28px,
+            transparent 32px);
 
-background-size: 30px 30px, 40px 40px;
-background-position: 0 0;
+    background-size: 30px 30px, 40px 40px;
+    background-position: 0 0;
 }
 ```
 
@@ -16787,23 +15720,21 @@ background-position: 0 0;
 
 ![](img/6f06c2ff7e29452e50d03258ed9c6b4f_538_0.png)
 
-图 11.6 在运行 Android Jelly Bean 的 Nexus 7 平板电脑上的 Canvas 径向 JPG。
-
-
+**图 11.6** 在运行 Android Jelly Bean 的 Nexus 7 平板电脑上的 Canvas 径向 JPG。
 
 ## 在画布上使用图案重复图像
 
 HTML5 Canvas 提供了 `createPattern(image, type)` 方法，使您能够根据图案类型渲染一组图像，其值可以是 `repeat`、`repeat-x`、`repeat-y` 和 `no-repeat`。语法示例（以及如何使用）如下所示：
 
 ```javascript
-var pattern = canvas.createPattern(img,"repeat");
+var pattern = canvas.createPattern(img, "repeat");
 canvas.fillStyle = pattern;
-canvas.fillRect(0,0,500,300);
+canvas.fillRect(0, 0, 500, 300);
 ```
 
-清单 11.8 展示了 `RepeatingImage1.html` 的内容，该示例说明了如何在 HTML5 `<canvas>` 元素上重复一张 JPG 图像。
+清单 11.9 展示了 `RepeatingImage1.html` 的内容，该示例说明了如何在 HTML5 `<canvas>` 元素上重复一张 JPG 图像。
 
-**清单 11.8** `RepeatingImage1.html`
+### 清单 11.9 RepeatingImage1.html
 
 ```html
 <!DOCTYPE html>
@@ -16825,32 +15756,32 @@ canvas.fillRect(0,0,500,300);
 
         function modImage(e) {
             img = e.target;
-            var pattern = canvas.createPattern(img,"repeat");
+            var pattern = canvas.createPattern(img, "repeat");
 
             canvas.fillStyle = pattern;
-            canvas.fillRect(0,0,500,300);
+            canvas.fillRect(0, 0, 500, 300);
         }
 
         window.addEventListener("load", init, false);
     </script>
 </head>
 <body>
-<div>
-  <canvas id="myCanvas" width="500" height="300">No support for Canvas</canvas>
-</div>
+    <div>
+        <canvas id="myCanvas" width="500" height="300">No support for Canvas</canvas>
+    </div>
 </body>
 </html>
 ```
 
-清单 11.8 包含以下代码行，当该网页加载到浏览器时，它会调用 JavaScript 的 init() 方法：
+清单 11.9 包含以下代码行，当该网页加载到浏览器时，它会调用 JavaScript 的 `init()` 方法：
 
 ```javascript
 window.addEventListener("load", init, false);
 ```
 
-init() 方法在网页中查找一个 HTML5 <canvas> 元素，为简单起见，未执行错误检查（可以使用前面示例中的代码来处理）。
+`init()` 方法在网页中查找一个 HTML5 `<canvas>` 元素，为简单起见，未执行错误检查（可以使用前面示例中的代码来处理）。
 
-init() 方法还初始化了一个名为 img 的 JavaScript 变量，该变量引用一个 JPG 文件，然后添加一个事件监听器，当图像加载完成时执行 JavaScript 函数 modImage()，如下所示：
+`init()` 方法还初始化了一个名为 `img` 的 JavaScript 变量，该变量引用一个 JPG 文件，然后添加一个事件监听器，当图像加载完成时执行 JavaScript 函数 `modImage()`，如下所示：
 
 ```javascript
 var img = new Image();
@@ -16858,7 +15789,7 @@ img.src = filename;
 img.addEventListener("load", modImage, false);
 ```
 
-最后，modImage() 方法使用参数 repeat 调用 Canvas 的 createPattern() 方法，以基于一个 PNG 文件（在此示例中为 BlueBall1.png）创建一个矩形图像网格，如下所示：
+最后，`modImage()` 方法使用参数 `repeat` 调用 Canvas 的 `createPattern()` 方法，以基于一个 PNG 文件（在此示例中为 `BlueBall1.png`）创建一个矩形图像网格，如下所示：
 
 ```javascript
 var pattern = canvas.createPattern(img, "repeat");
@@ -16866,7 +15797,7 @@ canvas.fillStyle = pattern;
 canvas.fillRect(0, 0, 500, 300);
 ```
 
-图 11.7 显示了在 Macbook 上以横屏模式运行 Chrome 浏览器时，清单 11.8 中 `RepeatingImage1.html` 的效果。
+图 11.7 显示了在 Macbook 上以横屏模式运行 Chrome 浏览器时，清单 11.9 中 `RepeatingImage1.html` 的效果。
 
 ![图 11.7 在 Macbook 的 Chrome 浏览器上重复 JPG 图像。](img/6f06c2ff7e29452e50d03258ed9c6b4f_540_0.png)
 
@@ -16883,22 +15814,22 @@ translate(x, y)
 
 需要记住的一点是，您需要在 HTML5 网页中实际渲染图形形状之前，指定要应用的变换（并设置属性值）。
 
-以下代码片段展示了可以在上述 Canvas 方法中使用的示例值，其中 context 是一个引用 HTML5 <canvas> 元素上下文的 JavaScript 变量：
+以下代码片段展示了可以在上述 Canvas 方法中使用的示例值，其中 `context` 是一个引用 HTML5 `<canvas>` 元素上下文的 JavaScript 变量：
 
 ```javascript
-context.rotate(30*Math.PI/180);
+context.rotate(30 * Math.PI / 180);
 context.scale(0.8, 0.4);
 context.translate(100, 200);
 context.transform(1, 0, 0.5, 1, 0, 0);
 ```
 
-上面代码块中的 rotate() 方法引用了 JavaScript 常量 Math.PI，其值等于 PI 弧度。以防您忘记，PI 弧度等于 180 度，因此 2*PI 弧度是 360 度，PI/2 弧度是 90 度。所以，Math.PI/6 弧度（或 30*Math.PI/180）等同于 30 度。您不需要了解关于弧度的更多知识，但如果您想阅读提供更多示例的教程，可以随意进行互联网搜索。
+上面代码块中的 `rotate()` 方法引用了 JavaScript 常量 `Math.PI`，其值等于 PI 弧度。以防您忘记，PI 弧度等于 180 度，因此 `2 * PI` 弧度是 360 度，`PI / 2` 弧度是 90 度。所以，`Math.PI / 6` 弧度（或 `30 * Math.PI / 180`）等同于 30 度。您不需要了解关于弧度的更多知识，但如果您想阅读提供更多示例的教程，可以随意进行互联网搜索。
 
-HTML5 Canvas 中还有两个额外的 API：save() 和 restore()，它们使您能够保存画布的当前状态，进行一些更改，然后恢复画布的原始状态。您可以在应用本节列出的任何变换后，以及在指定与阴影相关的属性值（以及其他属性）后，保存（并在之后恢复）画布状态。您可以多次在画布状态上调用 save() 和 restore() 方法，这使得这两个方法对与游戏相关的网页非常有用。我们不会在本章的任何代码示例中使用这两个方法，但您可以进行互联网搜索以阅读教程并找到代码示例。
+HTML5 Canvas 中还有两个额外的 API：`save()` 和 `restore()`，它们使您能够保存画布的当前状态，进行一些更改，然后恢复画布的原始状态。您可以在应用本节列出的任何变换后，以及在指定与阴影相关的属性值（以及其他属性）后，保存（并在之后恢复）画布状态。您可以多次在画布状态上调用 `save()` 和 `restore()` 方法，这使得这两个方法对与游戏相关的网页非常有用。我们不会在本章的任何代码示例中使用这两个方法，但您可以进行互联网搜索以阅读教程并找到代码示例。
 
-清单 11.9 展示了 JQMCanvasTransforms1.html 的内容，该示例说明了如何将四种 HTML5 Canvas 变换应用于文本字符串。
+清单 11.10 展示了 `JQMCanvasTransforms1.html` 的内容，该示例说明了如何将四种 HTML5 Canvas 变换应用于文本字符串。
 
-**清单 11.9** `JQMCanvasTransforms1.html`
+### 清单 11.10 JQMCanvasTransforms1.html
 
 ```html
 <!DOCTYPE html>
@@ -16908,77 +15839,77 @@ HTML5 Canvas 中还有两个额外的 API：save() 和 restore()，它们使您�
     <title>Canvas Transforms on Text Strings</title>
     <style>
         input {
-            width:300px;
-            font-size:24px;
-            background-color:#f00;
+            width: 300px;
+            font-size: 24px;
+            background-color: #f00;
         }
     </style>
 </head>
 <body>
     <script>
-    window.addEventListener('load', function () {
-        var elem = document.getElementById('myCanvas');
+        window.addEventListener('load', function () {
+            var elem = document.getElementById('myCanvas');
 
-        if (!elem || !elem.getContext) {
-            return;
-        }
+            if (!elem || !elem.getContext) {
+                return;
+            }
 
-        var context = elem.getContext('2d');
-        if (!context) {
-            return;
-        }
+            var context = elem.getContext('2d');
+            if (!context) {
+                return;
+            }
 
-        context.shadowColor = "rgba(0,0,128,0.5)";
-        context.shadowOffsetX = 5;
-        context.shadowOffsetY = 5;
-        context.shadowBlur = 10;
-        context.lineWidth = 2;
-        context.font = "Bold 60pt Helvetica";
+            context.shadowColor = "rgba(0,0,128,0.5)";
+            context.shadowOffsetX = 5;
+            context.shadowOffsetY = 5;
+            context.shadowBlur = 10;
+            context.lineWidth = 2;
+            context.font = "Bold 60pt Helvetica";
 
-        redrawCanvas = function() {
-            // 渲染文本...
-            context.fillStyle = "#f00";
-            context.strokeStyle = "#00f"
-            context.fillText("Hello World", 40, 150);
-            context.fill();
+            redrawCanvas = function() {
+                // 渲染文本...
+                context.fillStyle = "#f00";
+                context.strokeStyle = "#00f"
+                context.fillText("Hello World", 40, 150);
+                context.fill();
 
-            // 渲染缩放后的文本...
-            context.scale(0.3, 0.3);
-            context.fillStyle    = "#ff0";
-            context.fillText("Hello World", 40, 100);
-            context.fill();
+                // 渲染缩放后的文本...
+                context.scale(0.3, 0.3);
+                context.fillStyle    = "#ff0";
+                context.fillText("Hello World", 40, 100);
+                context.fill();
 
-            // 渲染错切后的文本...
-            context.transform(1, 10*Math.PI/180, 20*Math.PI/180, 1,0,0);
-            context.fillStyle    = "#0f0";
-            context.fillText("Hello World", 0, 700);
-            context.fill();
+                // 渲染错切后的文本...
+                context.transform(1, 10 * Math.PI / 180, 20 * Math.PI / 180, 1, 0, 0);
+                context.fillStyle    = "#0f0";
+                context.fillText("Hello World", 0, 700);
+                context.fill();
 
-            // 渲染旋转后的文本...
-            context.transform(1, -10*Math.PI/180, -20*Math.PI/180, 1,0,0);
-            context.rotate(-Math.PI/8);
-            context.scale(3, 1);
+                // 渲染旋转后的文本...
+                context.transform(1, -10 * Math.PI / 180, -20 * Math.PI / 180, 1, 0, 0);
+                context.rotate(-Math.PI / 8);
+                context.scale(3, 1);
 
-            context.fillStyle    = "#00f";
-            context.fillText("Hello World", 0, 1400);
-            context.fill();
-        }
+                context.fillStyle    = "#00f";
+                context.fillText("Hello World", 0, 1400);
+                context.fill();
+            }
 
-        redrawCanvas();
-    }, false);
+            redrawCanvas();
+        }, false);
     // --></script>
 </head>
 <body>
-<div>
-  <canvas id="myCanvas" width="800" height="450">No support for Canvas
-  alt="Rendering transformed objects">
-  </canvas>
-</div>
+    <div>
+        <canvas id="myCanvas" width="800" height="450">No support for Canvas
+            alt="Rendering transformed objects">
+        </canvas>
+    </div>
 </body>
 </html>
 ```
 
-清单 11.9 包含了本章其他示例中您已见过的常规初始化代码，并且用于渲染文本字符串的属性在此代码块中设置：
+清单 11.10 包含了本章其他示例中您已见过的常规初始化代码，并且用于渲染文本字符串的属性在此代码块中设置：
 
 ```javascript
 context.shadowColor    = "rgba(0,0,128,0.5)";
@@ -16993,95 +15924,90 @@ context.font          = "Bold 60pt Helvetica";
 
 `redraw()` JavaScript 函数渲染字符串 "Hello World"，然后在此文本字符串上应用变换后再重复渲染三次。
 
-图 11.8 显示了在 iPad 3 上以横屏模式渲染清单 11.9 中 `JQMCanvasTransforms1.html` 的结果，其中展示了四个文本字符串。
+图 11.8 显示了在 iPad 3 上以横屏模式渲染清单 11.10 中 `JQMCanvasTransforms1.html` 的结果，其中展示了四个文本字符串。
 
 ![图 11.8 在 iPad 3 上使用变换渲染文本。](img/6f06c2ff7e29452e50d03258ed9c6b4f_544_0.png)
 
 尝试将本节中的变换应用于本章前面代码示例中的 2D 图形，以进行实验。
 
-## JCANVAS：用于 HTML5 Canvas 的 JQUERY 插件
+## jCanvas：用于 HTML5 Canvas 的 jQuery 插件
 
 `jCanvas` jQuery 插件使您能够使用 jQuery 语法来指定在 HTML5 `<canvas>` 元素中渲染的 2D 图形，其主页在这里：
 
 http://calebevans.me/projects/jcanvas/
 
+清单 11.11 展示了 `JCanvasSamples1.html` 的内容，该示例演示了如何使用 jCanvas 渲染多个二维图形。
 
+### 清单 11.11 JCanvasSamples1.html
 
-清单 11.10 展示了 JCanvasSamples1.html 的内容，该示例演示了如何使用 jCanvas 渲染多个二维图形。
-
-```
-清单 11.10 JCanvasSamples1.html
+```html
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="utf-8"/>
     <title>JCanvas Graphics</title>
-    <link rel="stylesheet"
-      href="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.css"/>
-    <script
-      src="http://code.jquery.com/jquery-1.7.1.min.js">
-    </script>
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.css"/>
+    <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
     <script src="jcanvas.js"></script>
     <style>
-      #canvas { width:100%; height:90%; }
+        #canvas { width: 100%; height: 90%; }
     </style>
     <script>
-      $(document).ready(function() {
-        $("canvas").drawEllipse({
-          fillStyle: "#f00",
-          x: 100, y: 50,
-          width: 160, height: 60,
-          fromCenter: true
-        })
-        $("canvas").drawRect({
-          strokeStyle: "#f00",
-          fillStyle: "#f08",
-          strokeWidth: 3,
-          x: 100, y: 120,
-          width: 150,
-          height: 50,
-          cornerRadius: 10
-        })
-        $("canvas").drawPolygon({
-          fillStyle: "#00f",
-          x: 220, y: 80,
-          radius: 50,
-          sides: 5,
-          angle: 25
-        })
-        $("canvas").drawQuad({
-          strokeStyle: "#ff0",
-          strokeWidth: 3,
-          x1: 20, y1: 20,
-          cx1: 200, cy1: 50,
-          x2: 200, y2: 300
-        })
-        $("canvas").drawBezier({
-          strokeStyle: "#404",
-          strokeWidth: 8,
-          x1: 50, y1: 50,
-          cx1: 200, cy1: 50,
-          cx2: 50, cy2: 150,
-          x2: 200, y2: 150,
-          cx3: 300, cy3: 150,
-          cx4: 150, cy4: 1,
-          x3: 320, y3: 50
-        })
-      });
+        $(document).ready(function() {
+            $("canvas").drawEllipse({
+                fillStyle: "#f00",
+                x: 100, y: 50,
+                width: 160, height: 60,
+                fromCenter: true
+            });
+            $("canvas").drawRect({
+                strokeStyle: "#f00",
+                fillStyle: "#f08",
+                strokeWidth: 3,
+                x: 100, y: 120,
+                width: 150,
+                height: 50,
+                cornerRadius: 10
+            });
+            $("canvas").drawPolygon({
+                fillStyle: "#00f",
+                x: 220, y: 80,
+                radius: 50,
+                sides: 5,
+                angle: 25
+            });
+            $("canvas").drawQuad({
+                strokeStyle: "#ff0",
+                strokeWidth: 3,
+                x1: 20, y1: 20,
+                cx1: 200, cy1: 50,
+                x2: 200, y2: 300
+            });
+            $("canvas").drawBezier({
+                strokeStyle: "#404",
+                strokeWidth: 8,
+                x1: 50, y1: 50,
+                cx1: 200, cy1: 50,
+                cx2: 50, cy2: 150,
+                x2: 200, y2: 150,
+                cx3: 300, cy3: 150,
+                cx4: 150, cy4: 1,
+                x3: 320, y3: 50
+            });
+        });
     </script>
-  </head>
-  <body>
+</head>
+<body>
     <div id="CanvasParent" name="CanvasParent">
-        <canvas name="canvas" id="canvas">
-        </canvas>
+        <canvas name="canvas" id="canvas"></canvas>
     </div>
-  </body>
+</body>
 </html>
 ```
 
-清单 11.10 中的代码直观易懂，因此我们仅对其内容进行概括。渲染椭圆和矩形的代码与你在本章前面示例中看到的对应 HTML5 Canvas 代码几乎直接对应。渲染多边形的代码块简洁直观，相比在 HTML5 Canvas 中渲染多边形所需的一系列 `lineTo()` 方法，这无疑更省力。最后，渲染二次或三次贝塞尔曲线的代码使用了一种区分端点和控制点的表示法，这与 HTML5 Canvas 中对应的代码具有可比性。
+清单 11.11 中的代码直观易懂，因此我们仅对其内容进行概括。渲染椭圆和矩形的代码与你在本章前面示例中看到的对应 HTML5 Canvas 代码几乎直接对应。渲染多边形的代码块简洁直观，相比在 HTML5 Canvas 中渲染多边形所需的一系列 `lineTo()` 方法，这无疑更省力。最后，渲染二次或三次贝塞尔曲线的代码使用了一种区分端点和控制点的表示法，这与 HTML5 Canvas 中对应的代码具有可比性。
 
-图 11.9 展示了在 iPad 3 上以横屏模式渲染清单 11.10（JCanvasSamples1.html）的结果。
+图 11.9 展示了在 iPad 3 上以横屏模式渲染清单 11.11（`JCanvasSamples1.html`）的结果。
 
 ![](img/6f06c2ff7e29452e50d03258ed9c6b4f_547_0.png)
 
@@ -17089,173 +16015,164 @@ http://calebevans.me/projects/jcanvas/
 
 你也可以在 HTML5 Canvas 中结合使用 jQuery Mobile，如下一节的代码示例所示。
 
-## HTML5 CANVAS 结合 CSS3 和 JQUERY MOBILE
+## HTML5 Canvas 结合 CSS3 和 jQuery Mobile
 
 既然你已经了解了如何在 HTML5 Canvas 中渲染二维图形，本节包含一个代码示例，向你展示如何结合 jQuery Mobile、HTML5 Canvas，以及当用户点击此网页内的 HTML5 `<canvas>` 元素时动态创建 HTML `<div>` 元素。
 
 请记住，尽管图形效果不一定符合你的需求，但此代码示例确实说明了如何在 jQuery Mobile 中处理元素的动态创建以及点击事件，这些事件的处理方式与 jQuery 中的点击事件不同。
 
-清单 11.11 展示了 HTML5 网页 `JQMCanvas1.html` 的内容，随后是清单 11.12，展示了 CSS 样式表 `JQMCanvas1.css` 的内容，其 CSS3 选择器应用于 HTML5 网页 `JQMCanvas1.html` 中的元素。
+清单 11.12 展示了 HTML5 网页 `JQMCanvas1.html` 的内容，随后是清单 11.13，展示了 CSS 样式表 `JQMCanvas1.css` 的内容，其 CSS3 选择器应用于 HTML5 网页 `JQMCanvas1.html` 中的元素。
 
-### 清单 11.11 JQMCanvas1.html
+### 清单 11.12 JQMCanvas1.html
 
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8"/>
-  <title>jQueryMobile and Canvas Graphics</title>
+    <meta charset="utf-8"/>
+    <title>jQueryMobile and Canvas Graphics</title>
 
-  <link rel="stylesheet" href="JQMCanvas1.css"/>
+    <link rel="stylesheet" href="JQMCanvas1.css"/>
 
-  <link rel="stylesheet"
-        href="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.css"/>
-  <script
-      src="http://code.jquery.com/jquery-1.7.1.min.js">
-  </script>
-  <script src="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.js">
-  </script>
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.css"/>
+    <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.js"></script>
 
-  <script>
-    var tapCount = 0;
-    var xCoord = 0, yCoord = 0;
-    var rectWidth = 20, rectHeight = 20;
-    var rectColors = new Array('#ff0', '#0f0', '#00f');
-    var elem, context;
+    <script>
+        var tapCount = 0;
+        var xCoord = 0, yCoord = 0;
+        var rectWidth = 20, rectHeight = 20;
+        var rectColors = new Array('#ff0', '#0f0', '#00f');
+        var elem, context;
 
-    var gradient1 = `-webkit-gradient(radial, 5 25%, 5, 10 50%, 20, from(red), color-stop(0.05, orange), color-stop(0.4, yellow), color-stop(0.6, red), color-stop(0.9, blue), to(#fff))`;
+        var gradient1 = `-webkit-gradient(radial, 5 25%, 5, 10 50%, 20, from(red), color-stop(0.05, orange), color-stop(0.4, yellow), color-stop(0.6, red), color-stop(0.9, blue), to(#fff))`;
 
-    var gradient2 = `-webkit-gradient(radial, 5 25%, 5, 10 50%, 20, from(blue), color-stop(0.05, orange), color-stop(0.4, red),
-    color-stop(0.6, black), color-stop(0.9, blue), to(#f00))`;
+        var gradient2 = `-webkit-gradient(radial, 5 25%, 5, 10 50%, 20, from(blue), color-stop(0.05, orange), color-stop(0.4, red), color-stop(0.6, black), color-stop(0.9, blue), to(#f00))`;
 
-    var gradient3 = '-webkit-gradient(radial, 5 25%, 5, 10 50%, 20, from(blue), color-stop(0.05, yellow), color-stop(0.4, green), color-stop(0.6, red), color-stop(0.9, blue), to(#fff))';
+        var gradient3 = `-webkit-gradient(radial, 5 25%, 5, 10 50%, 20, from(blue), color-stop(0.05, yellow), color-stop(0.4, green), color-stop(0.6, red), color-stop(0.9, blue), to(#fff))`;
 
-    var gradient4 = '-webkit-gradient(radial, 5 25%, 5, 10 50%, 20, from(blue), color-stop(0.05, yellow), color-stop(0.2, green), color-stop(0.6, blue), color-stop(0.8, red), to(#fff))';
+        var gradient4 = `-webkit-gradient(radial, 5 25%, 5, 10 50%, 20, from(blue), color-stop(0.05, yellow), color-stop(0.2, green), color-stop(0.6, blue), color-stop(0.8, red), to(#fff))`;
 
-    var currentBG;
+        var currentBG;
 
-    $("#page1").live('pageinit', (function(event){
-      // 获取 canvas 元素
-      elem = document.getElementById('MyCanvas');
-      if (!elem || !elem.getContext) {
-        return;
-      }
+        $("#page1").live('pageinit', (function(event) {
+            // 获取 canvas 元素
+            elem = document.getElementById('MyCanvas');
+            if (!elem || !elem.getContext) {
+                return;
+            }
 
-      // 获取 canvas 2d 上下文
-      context = elem.getContext('2d');
-      if (!context) {
-        return;
-      }
+            // 获取 canvas 2d 上下文
+            context = elem.getContext('2d');
+            if (!context) {
+                return;
+            }
 
-      // 用户点击了 MyCanvas...
-      $("#MyCanvas").live('vmousedown', function(event) {
-        xCoord = 0.40*(event.clientX)*window.devicePixelRatio;
-        yCoord = 0.40*(event.clientY)*window.devicePixelRatio;
+            // 用户点击了 MyCanvas...
+            $("#MyCanvas").live('vmousedown', function(event) {
+                xCoord = 0.40 * (event.clientX) * window.devicePixelRatio;
+                yCoord = 0.40 * (event.clientY) * window.devicePixelRatio;
 
-        context.fillStyle = rectColors[++tapCount%rectColors.length];
-        context.fillRect(xCoord, yCoord, rectWidth, rectHeight);
+                context.fillStyle = rectColors[++tapCount % rectColors.length];
+                context.fillRect(xCoord, yCoord, rectWidth, rectHeight);
 
-        $("#MyCanvas").hide("slow");
-      });
+                $("#MyCanvas").hide("slow");
+            });
 
-      // 这会使 MyCanvas 重新可见
-      $("#tapInside").live('tap', function(event) {
-        $("#MyCanvas").show("slow");
-      });
+            // 这会使 MyCanvas 重新可见
+            $("#tapInside").live('tap', function(event) {
+                $("#MyCanvas").show("slow");
+            });
 
-      $("#CanvasParent").live('vmousedown', function(event) {
-        if(tapCount % 4 == 0) {
-          currentBG = gradient1;
-        } else if(tapCount % 4 == 1) {
-          currentBG = gradient2;
-        } else if(tapCount % 4 == 2) {
-          currentBG = gradient3;
-        } else {
-          currentBG = gradient4;
-        }
+            $("#CanvasParent").live('vmousedown', function(event) {
+                if (tapCount % 4 == 0) {
+                    currentBG = gradient1;
+                } else if (tapCount % 4 == 1) {
+                    currentBG = gradient2;
+                } else if (tapCount % 4 == 2) {
+                    currentBG = gradient3;
+                } else {
+                    currentBG = gradient4;
+                }
 
-        newNode = $('<div>').css({'position':'absolute',
-            'background': currentBG,
-            'width':rectWidth+'px',
-            'height':rectHeight+'px',
-            top: event.clientY,
-            left: event.clientX
-        });
+                newNode = $('<div>').css({
+                    'position': 'absolute',
+                    'background': currentBG,
+                    'width': rectWidth + 'px',
+                    'height': rectHeight + 'px',
+                    top: event.clientY,
+                    left: event.clientX
+                });
 
-        // 将新的矩形追加到 CanvasParent
-        $("#CanvasParent").append(newNode);
-      })
-    }));
-  </script>
+                // 将新的矩形追加到 CanvasParent
+                $("#CanvasParent").append(newNode);
+            });
+        }));
+    </script>
 
-  <style>
-    #tapInside { color: #f00; }
-    #MyCanvas { width: 80%; height: 30%; }
-  </style>
+    <style>
+        #tapInside { color: #f00; }
+        #MyCanvas { width: 80%; height: 30%; }
+    </style>
 </head>
 
 <body>
-  <div data-role="page" id="page1" data-theme="b">
-    <div data-role="header">
-      <h2>JQuery Mobile and Canvas Graphics</h2>
-    </div>
-    <div data-role="content">
-      <div id="tapInside">
-        <p>Tap Inside the Red Rectangle to Hide and Tap Here to Show:</p>
-      </div>
-      <div id="CanvasParent" name="CanvasParent">
-        <canvas name="MyCanvas" id="MyCanvas"
-            style="background:#f00;width=80%;height=200px">
-        </canvas>
-        <div id="outer">
-          <div id="radial3">Text3</div>
-          <div id="radial2">Text2</div>
-          <div id="radial4">Text4</div>
-          <div id="radial1">Text1</div>
+    <div data-role="page" id="page1" data-theme="b">
+        <div data-role="header">
+            <h2>JQuery Mobile and Canvas Graphics</h2>
         </div>
+        <div data-role="content">
+            <div id="tapInside">
+                <p>Tap Inside the Red Rectangle to Hide and Tap Here to Show:</p>
+            </div>
+            <div id="CanvasParent" name="CanvasParent">
+                <canvas name="MyCanvas" id="MyCanvas" style="background:#f00;width=80%;height=200px"></canvas>
+                <div id="outer">
+                    <div id="radial3">Text3</div>
+                    <div id="radial2">Text2</div>
+                    <div id="radial4">Text4</div>
+                    <div id="radial1">Text1</div>
+                </div>
 
-        <!-- jQuery 切换处理代码 -->
-        <script>
-          $(document).ready(function() {
-            $("#outer").toggle(function(){
-              $("#radial1").show("slow");
-              $("#radial2").hide("slow");
-              $("#radial3").hide("slow");
-              $("#radial4").show("slow");
-            },function(){
-              $("#radial1").hide("slow");
-              $("#radial2").show("slow");
-              $("#radial3").show("slow");
-              $("#radial4").hide("slow");
-            });
-          });
-        </script>
-      </div>
+                <!-- jQuery 切换处理代码 -->
+                <script>
+                    $(document).ready(function() {
+                        $("#outer").toggle(function() {
+                            $("#radial1").show("slow");
+                            $("#radial2").hide("slow");
+                            $("#radial3").hide("slow");
+                            $("#radial4").show("slow");
+                        }, function() {
+                            $("#radial1").hide("slow");
+                            $("#radial2").show("slow");
+                            $("#radial3").show("slow");
+                            $("#radial4").hide("slow");
+                        });
+                    });
+                </script>
+            </div>
+        </div>
+        <div data-role="footer">
+            <h3>JQuery Mobile and Canvas Graphics</h3>
+        </div>
     </div>
-    <div data-role="footer">
-      <h3>JQuery Mobile and Canvas Graphics</h3>
-    </div>
-  </div>
 </body>
 </html>
 ```
 
-清单 11.11 是一个 HTML5 网页，包含一个 jQuery Mobile 页面视图。在初始化一些 JavaScript 变量后，清单 11.11 包含 JavaScript 变量 `gradient1`、`gradient2`、`gradient3` 和 `gradient4` 的定义，每个变量都包含一个基于 WebKit 的径向渐变的定义。
+清单 11.12 是一个 HTML5 网页，包含一个 jQuery Mobile 页面视图。在初始化一些 JavaScript 变量后，清单 11.12 包含 JavaScript 变量 `gradient1`、`gradient2`、`gradient3` 和 `gradient4` 的定义，每个变量都包含一个基于 WebKit 的径向渐变的定义。
 
 当用户点击 id 值为 `MyCanvas` 的 `<canvas>` 元素时，代码会在点击事件的位置添加一个新的矩形，然后 `<canvas>` 元素会慢慢消失，如下所示：
 
-```
+```javascript
 $("#MyCanvas").live("vmousedown", function(event) {
-  xCoord = 0.40*(event.clientX)*window.devicePixelRatio;
-  yCoord = 0.40*(event.clientY)*window.devicePixelRatio;
+    xCoord = 0.40 * (event.clientX) * window.devicePixelRatio;
+    yCoord = 0.40 * (event.clientY) * window.devicePixelRatio;
 
-  context.fillStyle = rectColors[++tapCount%rectColors.length];
-```
+    context.fillStyle = rectColors[++tapCount % rectColors.length];
+    context.fillRect(xCoord, yCoord, rectWidth, rectHeight);
 
-```
-context.fillRect(xCoord, yCoord, rectWidth, rectHeight);
-
-$("#MyCanvas").hide("slow");
+    $("#MyCanvas").hide("slow");
 });
 ```
 
@@ -17267,97 +16184,86 @@ $("#MyCanvas").hide("slow");
 
 接下来，在点击事件的位置动态创建一个新的 HTML `<div>` 元素，然后将其附加到 `CanvasParent` 元素中，如下所示：
 
-```
-newNode = $('<div>').css({'position':'absolute',
+```javascript
+newNode = $('<div>').css({
+    'position': 'absolute',
     'background': currentBG,
-    'width':'35px',
-    'height':'35px',
+    'width': '35px',
+    'height': '35px',
     top: event.pageY,
     left: event.pageX
 });
-```
 
-```
-//append the new rectangle to CanvasParent
+// append the new rectangle to CanvasParent
 $("#CanvasParent").append(newNode);
 ```
 
 请注意，前面的代码块中 `position` 属性被设置为 `absolute`，这意味着当 `MyCanvas` 元素逐渐淡出视图时，这个动态创建的 `<div>` 元素将保持可见，而所有使用 `fillRect()` 方法渲染的矩形也会逐渐消失。
 
-最后，每当用户点击底部四个使用径向渐变的 `<div>` 元素中的任何一个时，代码会使它们"非顺序"地消失，其余可见元素将相应调整位置。
+最后，每当用户点击底部四个使用径向渐变的 `<div>` 元素中的任何一个时，代码会使它们“非顺序”地消失，其余可见元素将相应调整位置。
 
-**清单 11.12** `JQMCanvas1.css`
+### 清单 11.13 JQMCanvas1.css
 
-```
+```css
 #outer {
     position: relative; top: 10px; left: 0px;
 }
-```
 
-528 • jQuery、CSS3 和 HTML5 在移动和桌面设备中的应用
-
-```
 #radial1 {
-color: red;
-font-size: 24px;
-height: 100px;
-width: 300px;
-position: relative; top: 0px; left: 0px;
+    color: red;
+    font-size: 24px;
+    height: 100px;
+    width: 300px;
+    position: relative; top: 0px; left: 0px;
 
-background: -webkit-gradient(
-    radial, 100 25%, 20, 100 25%, 40, from(blue), to(#fff)
+    background: -webkit-gradient(
+        radial, 100 25%, 20, 100 25%, 40, from(blue), to(#fff)
     );
 }
-```
 
-```
 #radial2 {
-color: red;
-font-size: 24px;
-width: 300px;
-height: 100px;
-position: absolute; top: 0px; left: 300px;
+    color: red;
+    font-size: 24px;
+    width: 300px;
+    height: 100px;
+    position: absolute; top: 0px; left: 300px;
 
-background: -webkit-gradient(
-    radial, 100 25%, 20, 150 25%, 40, from(red), to(#fff)
+    background: -webkit-gradient(
+        radial, 100 25%, 20, 150 25%, 40, from(red), to(#fff)
     );
 }
-```
 
-```
 #radial3 {
-color: blue;
-font-size: 24px;
-width: 300px;
-height: 100px;
-position: relative; top: 0px; left: 0px;
-background: -webkit-gradient(
-    radial, 100 25%, 30, 100 25%, 20, from(yellow), to(#fff)
+    color: blue;
+    font-size: 24px;
+    width: 300px;
+    height: 100px;
+    position: relative; top: 0px; left: 0px;
+    background: -webkit-gradient(
+        radial, 100 25%, 30, 100 25%, 20, from(yellow), to(#fff)
     );
--webkit-box-shadow: 0px 0px 8px #000;
+    -webkit-box-shadow: 0px 0px 8px #000;
 }
-```
 
-```
 #radial4 {
-color: red;
-font-size: 24px;
-width: 300px;
-height: 100px;
-position: absolute; top: 100px; left: 300px;
+    color: red;
+    font-size: 24px;
+    width: 300px;
+    height: 100px;
+    position: absolute; top: 100px; left: 300px;
 
-background: -webkit-gradient(
-    radial, 100 25%, 20, 100 25%, 40, from(green),
-color-stop(0.2, orange), color-stop(0.4, yellow),
-color-stop(0.6, green), color-stop(0.8, blue),
-to(#fff)
-);
+    background: -webkit-gradient(
+        radial, 100 25%, 20, 100 25%, 40, from(green),
+        color-stop(0.2, orange), color-stop(0.4, yellow),
+        color-stop(0.6, green), color-stop(0.8, blue),
+        to(#fff)
+    );
 }
 ```
 
-清单 11.11 包含四个选择器，分别对应 `JQM-Canvas1.html` 中 id 值为 `radial1`、`radial2`、`radial3` 和 `radial4` 的 HTML `<div>` 元素。由于这些选择器各自定义了基于 WebKit 的径向渐变，而这些渐变在本书前面的示例中已经见过，因此我们不再讨论这些渐变的细节。
+清单 11.13 包含四个选择器，分别对应 `JQMCanvas1.html` 中 id 值为 `radial1`、`radial2`、`radial3` 和 `radial4` 的 HTML `<div>` 元素。由于这些选择器各自定义了基于 WebKit 的径向渐变，而这些渐变在本书前面的示例中已经见过，因此我们不再讨论这些渐变的细节。
 
-图 11.10 显示了在 Nexus 7 平板电脑（运行 Android Jelly Bean 系统）的横屏模式下渲染清单 11.11 中 `JQMCanvas1.html` 的结果。
+图 11.10 显示了在 Nexus 7 平板电脑（运行 Android Jelly Bean 系统）的横屏模式下渲染清单 11.12 中 `JQMCanvas1.html` 的结果。
 
 ![](img/6f06c2ff7e29452e50d03258ed9c6b4f_554_0.png)
 
@@ -17371,45 +16277,43 @@ https://launchpad.net/canvask3d/+download
 
 这里展示了一些有趣的演示：http://kevs3d.co.uk/dev/canvask3d/k3d_test.html
 
-Canvas3D 是另一个在 HTML5 Canvas 中渲染 3D 形状的工具包，其主页在这里：http://www.cs.cornell.edu/zeno/projects/Canvas3D/
 
-附录 D 讨论了 JavaScript 工具包 Three.js，它为 WebGL 提供了一个抽象层。由于 Three.js 支持三种渲染器，其中一种是 Canvas 渲染器，因此它也与本章相关：https://github.com/mrdoob/three.js/
 
-你可以在这里找到更多带有可下载代码的 3D 效果：http://msdn.microsoft.com/en-us/library/hh535759(v=vs.85).aspx
+# HTML5 Canvas 图表与图形
 
-你可以将音频文件转换为 HTML5 Canvas 图形，以下网站上的代码示例（仅在 Firefox 中有效）基于各种音频文件创建了一些有趣的图形效果：http://js.do/
+## 相关资源
 
-关于 HTML5 Canvas 拖放（以及其他效果）的优秀教程在这里：http://www.html5canvastutorials.com/labs/html5-canvas-drag-and-drop-resize-and-invert-images/
-
-使用 HTML5 Canvas 创建缩略图的示例在这里：https://hacks.mozilla.org/2012/02/creating-thumbnails-with-drag-and-drop-and-html5-canvas/
-
-如果你对在 HTML Canvas 中制作动画精灵感兴趣，这里有一篇不错的文章：http://www.codeproject.com/Articles/271509/HTML5-Gaming-How-to-Animate-Sprites-in-Canvas-with
+- **Canvas3D**：在 HTML5 Canvas 中渲染 3D 形状的工具包，主页：<http://www.cs.cornell.edu/zeno/projects/Canvas3D/>
+- **Three.js**：为 WebGL 提供抽象层的 JavaScript 工具包，支持 Canvas 渲染器，GitHub：<https://github.com/mrdoob/three.js/>
+- **更多 3D 效果代码**：<http://msdn.microsoft.com/en-us/library/hh535759(v=vs.85).aspx>
+- **音频转 Canvas 图形**：<http://js.do/>（仅 Firefox 支持）
+- **拖放教程**：<http://www.html5canvastutorials.com/labs/html5-canvas-drag-and-drop-resize-and-invert-images/>
+- **创建缩略图**：<https://hacks.mozilla.org/2012/02/creating-thumbnails-with-drag-and-drop-and-html5-canvas/>
+- **动画精灵文章**：<http://www.codeproject.com/Articles/271509/HTML5-Gaming-How-to-Animate-Sprites-in-Canvas-with>
 
 ## 其他 HTML5 Canvas 工具包
 
-有几个非常优秀的 JavaScript 工具包，为 HTML5 Canvas 提供了一个抽象层。DVD 上的附录 C 讨论了其中一些 JavaScript 工具包，包括 Easel.js、Fabric.js 和 Paper.js。
+有几个优秀的 JavaScript 工具包为 HTML5 Canvas 提供抽象层。附录 C 讨论了其中一些，包括 `Easel.js`、`Fabric.js` 和 `Paper.js`。
 
-除了这些工具包各自主页上提供的代码示例外，你可能还会对以下使用 Easel.js 创建图形代码示例的开源项目感兴趣：
+除了各工具包主页的代码示例外，你可能还对以下使用 `Easel.js` 创建图形代码示例的开源项目感兴趣：
 
-http://code.google.com/p/easeljs-graphics
+<http://code.google.com/p/easeljs-graphics>
 
 ## 总结
 
-本章向你介绍了 HTML5 Canvas，并展示了使用 HTML5 `<canvas>` 元素创建二维图形的示例。你还学习了如何将 HTML5 Canvas 与 jQuery 自定义代码结合，以便操作基于 Canvas 二维图形的 HTML5 网页。具体来说，你学习了如何在 HTML5 Canvas 中完成以下任务：
+本章介绍了 HTML5 Canvas，并展示了使用 `<canvas>` 元素创建二维图形的示例。你还学习了如何将 HTML5 Canvas 与 jQuery 自定义代码结合，以操作基于 Canvas 二维图形的 HTML5 网页。具体来说，你学习了如何在 HTML5 Canvas 中完成以下任务：
 
 - 渲染线段、矩形和圆形
 - 创建线性渐变和径向渐变
 - 创建贝塞尔曲线
 - 显示 JPG 文件
-- 使用 jCanvas（一个用于 Canvas 的 jQuery 插件）
+- 使用 `jCanvas`（一个用于 Canvas 的 jQuery 插件）
 - 将 HTML5 Canvas 与 CSS3 结合
 - 将 HTML5 Canvas 与 jQuery Mobile 结合
 
 既然你已经了解了如何使用各种 HTML5 Canvas API，就可以准备进入下一章了。下一章将运用本章中的许多概念，使用 HTML5 Canvas 渲染各种图表和图形。
 
-# 第 12 章
-
-## HTML5 Canvas 中的图表和图形
+# 第 12 章：HTML5 Canvas 中的图表和图形
 
 HTML5 Canvas 使你能够使用第 11 章中见过的一些 Canvas API（包括基于 Canvas 的线性渐变和径向渐变，以及具有渐变效果的 CSS3 样式表）来创建图表和图形。本章中的代码示例展示了如何为图表和图形编写自定义代码，它们很大程度上依赖于第 11 章中介绍的概念，因此当你遇到不熟悉的 HTML5 Canvas API 时，可以参考那一章。
 
@@ -17417,21 +16321,23 @@ HTML5 Canvas 使你能够使用第 11 章中见过的一些 Canvas API（包括�
 
 在阅读代码示例时，有几个有用的要点需要记住。首先，本章中的示例篇幅在两到四页不等，但所有示例的复杂度水平都非常相似。其次，代码示例通常包含一个用于渲染柱状图或折线图（或饼图）的代码块，一个用于渲染水平轴和垂直轴的代码块，以及一个用于渲染文本或处理鼠标相关事件的代码块。第三，执行图表渲染的代码块几乎总是代码示例中最短的部分；此外，这也是在不同代码清单之间变化最大的代码部分。
 
-
-
 一个简单的建议：你总是可以将渲染坐标轴和标签的代码“注释掉”，这样你就能专注于渲染图表或图形的代码（但显然这样做会使视觉效果吸引力降低）。
+
 虽然从概念上理解图表和图形很容易，但渲染它们的代码可能很长而且有些乏味（“细节决定成败”）。因此，你可能会决定使用开源项目，而不是创建自己的自定义图表和图形。然而，在你读完本章后，你将能更好地理解第三方工具包，你也可能具备修改外部代码示例以满足特定需求的能力。
-最后一点，你可能会惊讶地发现，本章只需要三个HTML5 Canvas API：`fillRect()` 方法渲染柱状图中的矩形；`lineTo()` 方法渲染折线图中的线段以及面积图中的梯形；以及 `arc()` 方法渲染饼图中的每个扇形。此外，大约一半的代码示例使用了CSS3样式表，其选择器与第2章和第3章讨论的代码示例类似。
+
+最后一点，你可能会惊讶地发现，本章只需要三个 HTML5 Canvas API：`fillRect()` 方法渲染柱状图中的矩形；`lineTo()` 方法渲染折线图中的线段以及面积图中的梯形；以及 `arc()` 方法渲染饼图中的每个扇形。此外，大约一半的代码示例使用了 CSS3 样式表，其选择器与第 2 章和第 3 章讨论的代码示例类似。
 
 ## 渲染渐变柱状图
 
-你可以通过添加线性渐变或径向渐变（你在第11章学过的语法）在HTML5 Canvas中渲染带有渐变效果的柱状图，这可以创建比使用标准颜色填充柱状图更丰富的视觉效果。
-清单12.1中的HTML页面 BarChart2LG1.html 演示了如何渲染带有线性渐变填充的柱状图。清单12.1中引用的CSS3样式表 CSS32Background2.css 的完整源代码可在DVD中找到。
+你可以通过添加线性渐变或径向渐变（你在第 11 章学过的语法）在 HTML5 Canvas 中渲染带有渐变效果的柱状图，这可以创建比使用标准颜色填充柱状图更丰富的视觉效果。
 
-![](img/6f06c2ff7e29452e50d03258ed9c6b4f_559_0.png)
+清单 12.1 中的 HTML 页面 `BarChart2LG1.html` 演示了如何渲染带有线性渐变填充的柱状图。清单 12.1 中引用的 CSS3 样式表 `CSS32Background2.css` 的完整源代码可在 DVD 中找到。
 
-```
-清单 12.1 BarChart2LG1.html
+![图 12.1](img/6f06c2ff7e29452e50d03258ed9c6b4f_559_0.png)
+
+### 清单 12.1 BarChart2LG1.html
+
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17651,20 +16557,22 @@ HTML5 Canvas 使你能够使用第 11 章中见过的一些 Canvas API（包括�
 </body>
 </html>
 ```
-清单12.1包含一个用于初始化柱状图元素随机生成高度的循环，随后是另一个循环，该循环使用由四个颜色停靠点组成的线性渐变来渲染这些柱状图元素。
-变量 `barHeight` 用于每个矩形的高度，并被赋予一个基于随机生成数字的整数值。一个简单的条件语句确保柱高始终至少等于一个最小值。当前柱元素的左上顶点的x坐标被赋给变量 `currentX`，而变量 `currentY` 被赋予一个将在计算该顶点的y坐标时使用的值。
+
+清单 12.1 包含一个用于初始化柱状图元素随机生成高度的循环，随后是另一个循环，该循环使用由四个颜色停靠点组成的线性渐变来渲染这些柱状图元素。
+
+变量 `barHeight` 用于每个矩形的高度，并被赋予一个基于随机生成数字的整数值。一个简单的条件语句确保柱高始终至少等于一个最小值。当前柱元素的左上顶点的 x 坐标被赋给变量 `currentX`，而变量 `currentY` 被赋予一个将在计算该顶点的 y 坐标时使用的值。
+
 每个矩形的宽度和高度分别被赋予 `barWidth` 和 `barHeight` 的值，并且每个矩形都使用线性渐变进行渲染。由于柱高是基于随机生成的数字，图表会在你每次刷新显示时发生变化。你可以将本例中的代码作为起点，从中添加更多细节，例如水平和垂直轴的标签。
-图12.1渲染了一个带有线性渐变填充的柱状图，截图取自运行Android ICS系统的华硕Prime平板电脑的横屏模式。
 
+图 12.1 渲染了一个带有线性渐变填充的柱状图，截图取自运行 Android ICS 系统的华硕 Prime 平板电脑的横屏模式。
 
-
-# 支持鼠标操作的柱状图
+## 支持鼠标操作的柱状图
 
 HTML5 Canvas 支持早期 HTML 版本中所有与鼠标相关的事件，这些鼠标事件可以通过 JavaScript 函数进行处理。
 
 代码清单 12.2 展示了 HTML 页面 `MouseBarChart2LG1.html` 的内容，该示例演示了如何在 HTML5 `<canvas>` 元素中处理鼠标点击事件。
 
-代码清单 12.2 MouseBarChart2LG1.html
+### 清单 12.2 MouseBarChart2LG1.html
 
 ```html
 <!DOCTYPE html>
@@ -17854,13 +16762,13 @@ if((currentBar >= 0) && (currentBar < barCount)) {
 
 ![图 12.2 华硕 Prime Android ICS 10 英寸平板电脑上的支持鼠标操作的柱状图。](img/6f06c2ff7e29452e50d03258ed9c6b4f_570_0.png)
 
-# 渲染 3D 柱状图
+## 渲染 3D 柱状图
 
 在第 4 章中，你学习了如何通过渲染立方体的顶面（一个平行四边形）、前面（一个矩形）和右面（一个平行四边形）在 HTML5 Canvas 中渲染一个立方体。本节使用相同的技术来渲染柱状图中的每个“柱状元素”。
 
 代码清单 12.3 中的 HTML 页面 `BarChart13D1Mouse.html` 演示了如何渲染一个具有三维效果且支持鼠标操作的柱状图。
 
-代码清单 12.3 BarChart13D1Mouse.html
+### 清单 12.3 BarChart13D1Mouse.html
 
 ```html
 <!DOCTYPE html>
@@ -17920,125 +16828,119 @@ if((currentBar >= 0) && (currentBar < barCount)) {
                 barHeights[i] = barHeight;
             }
         }
-```
 
+        function drawBarChart() {
+            // 在绘制新一组矩形前清除画布
+            context.clearRect(0, 0, elem.width, elem.height);
 
+            drawAndLabelAxes();
+            randomBarValues();
+            drawElements();
+        }
 
-function drawBarChart() {
-    // 在绘制新一组矩形前清除画布
-    context.clearRect(0, 0, elem.width, elem.height);
+        function drawElements() {
+            for(var i=0; i<barCount; i++) {
+                currentX = leftBorder+i*barWidth;
+                currentY = maxHeight-barHeights[i];
 
-    drawAndLabelAxes();
-    randomBarValues();
-    drawElements();
-}
-
-function drawElements() {
-    for(var i=0; i<barCount; i++) {
-        currentX = leftBorder+i*barWidth;
-        currentY = maxHeight-barHeights[i];
-
-        // 前脸（矩形）
-        gradient1 = context.createLinearGradient(
+                // 前脸（矩形）
+                gradient1 = context.createLinearGradient(
                                         currentX,
                                         currentY,
                                         currentX+barWidth,
                                         currentY+barHeights[i]);
 
-        gradient1.addColorStop(0, '#f00');
-        gradient1.addColorStop(0.3,'#000');
-        gradient1.addColorStop(0.6,'#ff0');
-        gradient1.addColorStop(1, '#00f');
+                gradient1.addColorStop(0, '#f00');
+                gradient1.addColorStop(0.3,'#000');
+                gradient1.addColorStop(0.6,'#ff0');
+                gradient1.addColorStop(1, '#00f');
 
-        context.fillStyle = gradient1;
+                context.fillStyle = gradient1;
 
-        context.shadowColor = "rgba(100,100,100,.5)";
-        context.shadowOffsetX = 3;
-        context.shadowOffsetY = 3;
-        context.shadowBlur = 5;
+                context.shadowColor = "rgba(100,100,100,.5)";
+                context.shadowOffsetX = 3;
+                context.shadowOffsetY = 3;
+                context.shadowBlur = 5;
 
-        context.fillRect(currentX,
-                        currentY,
-                        barWidth,
-                        barHeights[i]);
+                context.fillRect(currentX,
+                                currentY,
+                                barWidth,
+                                barHeights[i]);
 
-        // 顶脸（平行四边形）
-        // 从左下角顶点逆时针绘制
-        context.beginPath();
-        context.fillStyle = topShading;
-        context.shadowColor = "rgba(100,100,100,.5)";
-        context.shadowOffsetX = 3;
-        context.shadowOffsetY = 3;
-        context.shadowBlur = 5;
+                // 顶脸（平行四边形）
+                // 从左下角顶点逆时针绘制
+                context.beginPath();
+                context.fillStyle = topShading;
+                context.shadowColor = "rgba(100,100,100,.5)";
+                context.shadowOffsetX = 3;
+                context.shadowOffsetY = 3;
+                context.shadowBlur = 5;
+                context.moveTo(currentX, currentY);
+                context.lineTo(currentX+barWidth, currentY);
+                context.lineTo(currentX+barWidth+slantX,
+                         currentY-slantY);
+                context.lineTo(currentX+slantX,
+                         currentY-slantY);
+                context.closePath();
+                context.fill();
 
-        context.moveTo(currentX, currentY);
-        context.lineTo(currentX+barWidth, currentY);
-        context.lineTo(currentX+barWidth+slantX,
-                 currentY-slantY);
-        context.lineTo(currentX+slantX,
-                 currentY-slantY);
-        closePath();
-        context.fill();
+                // 右脸（平行四边形）
+                // 从左上角顶点顺时针绘制
+                context.beginPath();
+                context.fillStyle = rightShading;
+                context.shadowColor = "rgba(100,100,100,.5)";
+                context.shadowOffsetX = 3;
+                context.shadowOffsetY = 3;
+                context.shadowBlur = 5;
+                context.moveTo(currentX+barWidth, currentY);
+                context.lineTo(currentX+barWidth+slantX,
+                         currentY-slantY);
+                context.lineTo(currentX+barWidth+slantX,
+                         currentY+barHeights[i]-slantY);
+                context.lineTo(currentX+barWidth,
+                         currentY+barHeights[i]);
+                context.closePath();
+                context.fill();
+            }
 
-        // 右脸（平行四边形）
-        // 从左上角顶点顺时针绘制
-        context.beginPath();
-        context.fillStyle = rightShading;
+            drawBarText();
+        }
 
-        context.shadowColor = "rgba(100,100,100,.5)";
-        context.shadowOffsetX = 3;
-        context.shadowOffsetY = 3;
-        context.shadowBlur = 5;
+        function drawBarText() {
+            // 定义一些绘制属性
+            context.font = "bold "+fontSize+"pt New Times Roman";
+            context.lineWidth = 2;
+            context.strokeStyle = "#000";
 
-        context.moveTo(currentX+barWidth, currentY);
-        context.lineTo(currentX+barWidth+slantX,
-                 currentY-slantY);
-        context.lineTo(currentX+barWidth+slantX,
-                 currentY+barHeights[i]-slantY);
-        context.lineTo(currentX+barWidth,
-                 currentY+barHeights[i]);
-        closePath();
-        context.fill();
-    }
+            for(var i=0; i<barCount; i++) {
+                context.beginPath();
+                currentX = leftBorder+i*barWidth;
+                currentY = maxHeight-barHeights[i]+fontSize/4;
+                //context.fillStyle = fillColors[i%4];
+                context.fillStyle = "#000";
 
-    drawBarText();
-}
+                barHeight = Math.floor(barHeights[i]);
 
-function drawBarText() {
-    // 定义一些绘制属性
-    context.font = "bold "+fontSize+"pt New Times Roman";
-    context.lineWidth = 2;
-    context.strokeStyle = "#000";
+                // 描边一个文本字符串
+                context.strokeText(""+barHeight,
+                           currentX+shadowX,
+                           currentY+shadowY);
 
-    for(var i=0; i<barCount; i++) {
-        context.beginPath();
-        currentX = leftBorder+i*barWidth;
-        currentY = maxHeight-barHeights[i]+fontSize/4;
-        //context.fillStyle = fillColors[i%4];
-        context.fillStyle = "#000";
+                // 填充一个文本字符串
+                context.fillStyle = "#F00";
+                context.fillText(""+barHeight,
+                           currentX,
+                           currentY);
+            }
+        }
+    </script>
 
-        barHeight = Math.floor(barHeights[i]);
-
-        // 描边一个文本字符串
-        context.strokeText(""+barHeight,
-                       currentX+shadowX,
-                       currentY+shadowY);
-
-        // 填充一个文本字符串
-        context.fillStyle = "#F00";
-        context.fillText(""+barHeight,
-                       currentX,
-                       currentY);
-    }
-}
-</script>
-
-<style type="text/css">
-    canvas {
-        border: 5px solid #888;
-        background: #CCC;
-    }
-</style>
+    <style type="text/css">
+        canvas {
+            border: 5px solid #888;
+            background: #CCC;
+        }
+    </style>
 </head>
 
 <body onload="drawGraph();">
@@ -18054,23 +16956,25 @@ function drawBarText() {
          value="更新图表数值"/>
 </body>
 </html>
+```
 
 清单 12.3 扩展了清单 12.2 中代码的功能，为柱状图中的每个柱形元素添加了两个平行四边形：一个位于柱形元素（即矩形）的上方，另一个位于柱形元素的右侧，从而创建出三维效果。清单 12.3 包含了创建柱形元素的正面“面”以及渲染水平轴和垂直轴的代码，这些代码与清单 12.2 中的代码相同。
 
 清单 12.3 中的主循环创建了一个线性渐变（包含四种停止颜色），该渐变用于渲染柱状图中每个柱形元素的顶面、正面和右面。
+
 图 12.3 展示了一个三维柱状图，当用户将鼠标悬停在柱形元素上时，各个柱形元素的高度会高亮显示。这是一个在 Nexus 7 平板电脑（搭载 Android Jelly Bean 系统）上横屏模式下的截图。
 
-![](img/6f06c2ff7e29452e50d03258ed9c6b4f_575_0.png)
-
-*图 12.3* 在 Nexus 7 平板电脑（搭载 Android Jelly Bean 系统）上具有鼠标交互功能的 3D 柱状图。
+![图 12.3 在 Nexus 7 平板电脑（搭载 Android Jelly Bean 系统）上具有鼠标交互功能的 3D 柱状图。](img/6f06c2ff7e29452e50d03258ed9c6b4f_575_0.png)
 
 ## 渲染多条折线图
 
 在上一节中，你学习了如何渲染简单的折线图，在本节中，你将看到如何在同一个 HTML 页面中渲染多条折线图。
+
 清单 12.4 展示了 HTML 页面 `MultiLineGraphs2.html` 的内容，该示例说明了如何渲染一组折线图。
 
-```
-清单 12.4 MultiLineGraphs2.html
+### 清单 12.4 MultiLineGraphs2.html
+
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18219,21 +17123,19 @@ function drawBarText() {
             currentX = leftBorder+i*barWidth;
 ```
 
-
-
-清单12.4中的JavaScript函数`drawGraph()`在HTML5网页加载时被调用，该函数包含三个不同的循环。第一个循环计算三条不同折线图的顶点，并将计算出的值分别存储在数组`barHeights`、`barHeights2`和`barHeights3`中。
+清单 12.4 中的 JavaScript 函数 `drawGraph()` 在 HTML5 网页加载时被调用，该函数包含三个不同的循环。第一个循环计算三条不同折线图的顶点，并将计算出的值分别存储在数组 `barHeights`、`barHeights2` 和 `barHeights3` 中。
 
 接下来，创建一个新数组，使用以下代码引用三条折线图的顶点：
 
-```
+```javascript
 multiLines[0] = barHeights;
 multiLines[1] = barHeights2;
 multiLines[2] = barHeights3;
 ```
 
-现在折线图数组已经初始化完毕，我们可以继续渲染三条折线图。这是通过嵌套循环实现的，其中外层循环遍历数组`multiLines`的元素，内层循环渲染一条折线图，如下所示的高级形式：
+现在折线图数组已经初始化完毕，我们可以继续渲染三条折线图。这是通过嵌套循环实现的，其中外层循环遍历数组 `multiLines` 的元素，内层循环渲染一条折线图，如下所示的高级形式：
 
-```
+```javascript
 for(var h=0; h<multiLines.length; h++) {
     currHeights = multiLines[h];
     // code omitted
@@ -18250,23 +17152,21 @@ for(var h=0; h<multiLines.length; h++) {
 }
 ```
 
-图12.4基于清单12.5中的代码和数据值渲染了一组折线图，是在运行Android Jelly Bean系统的Nexus 7平板电脑上的横屏模式截图。
+图 12.4 基于清单 12.5 中的代码和数据值渲染了一组折线图，是在运行 Android Jelly Bean 系统的 Nexus 7 平板电脑上的横屏模式截图。
 
-![](img/6f06c2ff7e29452e50d03258ed9c6b4f_580_0.png)
-
-图12.4 在运行Android Jelly Bean系统的Nexus 7平板电脑上的Canvas多条折线图。
+![图 12.4 在运行 Android Jelly Bean 系统的 Nexus 7 平板电脑上的 Canvas 多条折线图。](img/6f06c2ff7e29452e50d03258ed9c6b4f_580_0.png)
 
 ## 渲染面积图
 
-条形图由相邻的矩形组成，而面积图则由一组相邻的梯形“坐”在同一水平线段上（通常是图形的水平轴）构成。由于矩形有两对平行边，而梯形只有一对平行边，因此条形图和面积图在程序实现上是相似的。然而，我们将通过使用`moveTo()`方法渲染线段来渲染面积图。
+条形图由相邻的矩形组成，而面积图则由一组相邻的梯形“坐”在同一水平线段上（通常是图形的水平轴）构成。由于矩形有两对平行边，而梯形只有一对平行边，因此条形图和面积图在程序实现上是相似的。然而，我们将通过使用 `moveTo()` 方法渲染线段来渲染面积图。
 
-HTML页面`AreaGraph2.html`包含四页代码，与你在HTML5页面`MultiLineGraphs2.html`中看到的代码类似。因此，清单12.5只显示了包含新代码段的函数`drawElements()`。你可以在DVD上找到完整的代码清单。
+HTML 页面 `AreaGraph2.html` 包含四页代码，与你在 HTML5 页面 `MultiLineGraphs2.html` 中看到的代码类似。因此，清单 12.5 只显示了包含新代码段的函数 `drawElements()`。你可以在 DVD 上找到完整的代码清单。
 
-![](img/6f06c2ff7e29452e50d03258ed9c6b4f_581_0.png)
+![图示](img/6f06c2ff7e29452e50d03258ed9c6b4f_581_0.png)
 
-清单12.5 AreaGraph2.html
+### 清单 12.5 AreaGraph2.html
 
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18337,23 +17237,21 @@ HTML页面`AreaGraph2.html`包含四页代码，与你在HTML5页面`MultiLineGr
 </html>
 ```
 
-清单12.5中的JavaScript函数`drawGraph()`在HTML5页面加载时被调用，该函数包含三个不同的循环（与本章前面的示例类似）。第一个循环计算代表相邻梯形“顶部”的线段顶点。第二个循环使用这些顶点值来构建每个梯形。最后一个循环在线段的端点上渲染一组圆形。
+清单 12.5 中的 JavaScript 函数 `drawGraph()` 在 HTML5 页面加载时被调用，该函数包含三个不同的循环（与本章前面的示例类似）。第一个循环计算代表相邻梯形“顶部”的线段顶点。第二个循环使用这些顶点值来构建每个梯形。最后一个循环在线段的端点上渲染一组圆形。
 
-图12.5基于清单12.5中的代码和数据值渲染了一个面积图，是在运行Android Jelly Bean系统的Nexus 7平板电脑上的横屏模式截图。
+图 12.5 基于清单 12.5 中的代码和数据值渲染了一个面积图，是在运行 Android Jelly Bean 系统的 Nexus 7 平板电脑上的横屏模式截图。
 
-![](img/6f06c2ff7e29452e50d03258ed9c6b4f_583_0.png)
-
-**图12.5** 在运行Android Jelly Bean系统的Nexus 7平板电脑上的Canvas面积图。
+![图 12.5 在运行 Android Jelly Bean 系统的 Nexus 7 平板电脑上的 Canvas 面积图。](img/6f06c2ff7e29452e50d03258ed9c6b4f_583_0.png)
 
 ## 渲染饼图
 
 饼图在图形化表示数据方面非常流行，你经常可以看到演示文稿中同时使用饼图和条形图来呈现一组数据。
 
-清单12.6中的HTML5页面`PieChart1.html`包含渲染饼图的代码。
+清单 12.6 中的 HTML5 页面 `PieChart1.html` 包含渲染饼图的代码。
 
-**清单12.6** PieChart1.html
+### 清单 12.6 PieChart1.html
 
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18452,9 +17350,7 @@ HTML页面`AreaGraph2.html`包含四页代码，与你在HTML5页面`MultiLineGr
             }
 ```
 
-560 • 适用于移动设备和桌面设备的jQuery、CSS3和HTML5
-
-
+560 • 适用于移动设备和桌面设备的 jQuery、CSS3 和 HTML5
 
 ```html
 </canvas>
@@ -18466,9 +17362,9 @@ HTML页面`AreaGraph2.html`包含四页代码，与你在HTML5页面`MultiLineGr
 </html>
 ```
 
-清单12.6中的JavaScript函数`drawGraph()`会在HTML5网页加载到浏览器时执行。此函数使用`random()`函数来初始化数组`wedgeAngles`，为其赋一组角度值（以度为单位）。
+清单 12.6 中的 JavaScript 函数 `drawGraph()` 会在 HTML5 网页加载到浏览器时执行。此函数使用 `random()` 函数来初始化数组 `wedgeAngles`，为其赋一组角度值（以度为单位）。
 
-第二个循环使用HTML5 Canvas的`arc()`方法，并利用`wedgeAngles`数组中的值来渲染饼图。请注意，每当用户重新加载此HTML网页时，"楔形"的角度跨度会以随机方式变化。第二个循环将循环变量作为数组`fillColors`的索引，为饼图的每个楔形选择一种标准颜色进行渲染。
+第二个循环使用 HTML5 Canvas 的 `arc()` 方法，并利用 `wedgeAngles` 数组中的值来渲染饼图。请注意，每当用户重新加载此 HTML 网页时，“楔形”的角度跨度会以随机方式变化。第二个循环将循环变量作为数组 `fillColors` 的索引，为饼图的每个楔形选择一种标准颜色进行渲染。
 
 此外，每个楔形都使用以下代码块添加了阴影效果进行渲染：
 
@@ -18479,28 +17375,36 @@ context.shadowOffsetY = 3;
 context.shadowBlur    = 5;
 ```
 
-图12.6展示了基于代码和清单12.6中数据值的饼图，这是在华硕Prime平板电脑（运行Android ICS系统）上以横屏模式截取的。
+图 12.6 展示了基于代码和清单 12.6 中数据值的饼图，这是在华硕 Prime 平板电脑（运行 Android ICS 系统）上以横屏模式截取的。
 
-![](img/6f06c2ff7e29452e50d03258ed9c6b4f_588_0.png)
-
-**图12.6** 在华硕Prime平板电脑（运行Android ICS）上显示的Canvas饼图。
+![图 12.6 在华硕 Prime 平板电脑（运行 Android ICS）上显示的 Canvas 饼图。](img/6f06c2ff7e29452e50d03258ed9c6b4f_588_0.png)
 
 ## 渲染多种图表和图形
 
-既然你已经完成了本章的学习，你便了解了可用于创建多种图表和图形的技术，以及如何进行自定义修改。本节的示例基于你在前面示例中见过的条形图、折线图和饼图的代码。由于代码几乎相同，因此不再赘述，你可以在DVD中找到完整的代码清单。
+既然你已经完成了本章的学习，你便了解了可用于创建多种图表和图形的技术，以及如何进行自定义修改。本节的示例基于你在前面示例中见过的条形图、折线图和饼图的代码。由于代码几乎相同，因此不再赘述，你可以在 DVD 中找到完整的代码清单。
 
-图12.7展示了基于HTML5页面`BarChart2LG1Line1Pie1.html`和CSS3样式表`BarChart2LG1Line1Pie1.css`（两者均在DVD上）的代码的条形图、折线图和饼图，这是在华硕Prime平板电脑（运行Android ICS）上运行的Android应用程序以横屏模式截取的。
+图 12.7 展示了基于 HTML5 页面 `BarChart2LG1Line1Pie1.html` 和 CSS3 样式表 `BarChart2LG1Line1Pie1.css`（两者均在 DVD 上）的代码的条形图、折线图和饼图，这是在华硕 Prime 平板电脑（运行 Android ICS）上运行的 Android 应用程序以横屏模式截取的。
 
-![](img/6f06c2ff7e29452e50d03258ed9c6b4f_589_0.png)
+![图 12.7](img/6f06c2ff7e29452e50d03258ed9c6b4f_589_0.png)
 
-## 使用HTML5 Canvas和jQuery Mobile创建条形图
+## 使用 HTML5 Canvas 和 jQuery Mobile 创建条形图
 
-前面的示例向你展示了如何使用HTML5 Canvas渲染条形图、折线图和饼图，而本节将向你展示如何使用jQuery Mobile渲染条形图。
-清单12.7展示了HTML5页面`JQMBarChart1.html`的内容，CSS样式表`JQMCanvas1.css`可在DVD上找到。
+前面的示例向你展示了如何使用 HTML5 Canvas 渲染条形图、折线图和饼图，而本节将向你展示如何使用 jQuery Mobile 渲染条形图。
 
-HTML5 Canvas中的图表与图形 • 565
+清单 12.7 展示了 HTML5 页面 `JQMBarChart1.html` 的内容，CSS 样式表 `JQMCanvas1.css` 可在 DVD 上找到。
 
-### 清单12.7 JQMBarChart1.html
+### 清单 12.7 JQMBarChart1.html
+
+
+
+# HTML5/CSS3 和 Android 应用
+
+## 示例 1：jQuery Mobile 条形图
+
+以下代码展示了一个结合 jQuery Mobile 和 HTML5 Canvas 的条形图示例。
+
+### HTML 结构
+
 ```html
 <!DOCTYPE html>
 <html lang="en">
@@ -18622,8 +17526,10 @@ $('#mainCanvas').bind('tap', function(event){
 ```
 
 清单12.7中的几乎所有代码你都已经熟悉：条形图的代码与第11章中的一个代码示例几乎相同，而jQuery Mobile代码则包含一个页面视图，其中包含了“header”、“content”和“footer” `<div>` 元素。
-条形图在一个HTML `<div>` 元素（其父元素是jQuery Mobile的“content” `<div>` 元素）中渲染，其id值为chartholder。
-一个id值为mainCanvas的HTML5 `<canvas>` 元素是通过动态构造一个字符串来创建的，该字符串指定一个带有其id值、宽度和高度的HTML5 `<canvas>` 元素，如下所示：
+
+条形图在一个HTML `<div>` 元素（其父元素是jQuery Mobile的“content” `<div>` 元素）中渲染，其`id`值为`chartholder`。
+
+一个`id`值为`mainCanvas`的HTML5 `<canvas>` 元素是通过动态构造一个字符串来创建的，该字符串指定一个带有其`id`值、宽度和高度的HTML5 `<canvas>` 元素，如下所示：
 
 ```javascript
 canvasString = '<canvas id="mainCanvas" width="' + cWidth +
@@ -18631,17 +17537,14 @@ canvasString = '<canvas id="mainCanvas" width="' + cWidth +
     '">Canvas is not supported</canvas>';
 ```
 
-然后使用以下代码片段将HTML5 `<canvas>` 元素附加到chartholder元素：
+然后使用以下代码片段将HTML5 `<canvas>` 元素附加到`chartholder`元素：
 
 ```javascript
 $('#chartholder').empty();
-```
-
-
-
 $(canvasString).appendTo('#chartholder');
 ctx = $('#mainCanvas').get(0).getContext('2d');
 canvas = document.getElementById("mainCanvas");
+```
 
 当用户调整浏览器窗口大小时，会在 `resize` 事件期间调用 `resizeCanvas()` 函数来调整 `chartholder` 元素的大小，如下所示：
 
@@ -18662,7 +17565,7 @@ http://www.elated.com/articles/snazzy-animated-pie-chart-html5-jquery/
 
 图 12.8 展示了在一台搭载 Android ICS 系统的华硕 Prime 平板电脑上，以横屏模式运行的带有 jQuery Mobile 的条形图。
 
-![](img/6f06c2ff7e29452e50d03258ed9c6b4f_593_0.png)
+![图 12.8](img/6f06c2ff7e29452e50d03258ed9c6b4f_593_0.png)
 
 ## 使用 WEBSOCKET 服务器更新 HTML5 CANVAS 条形图
 
@@ -18672,7 +17575,7 @@ http://www.elated.com/articles/snazzy-animated-pie-chart-html5-jquery/
 
 清单 12.8 展示了 `JQWSBarChart1.html` 的部分内容，说明了如何从 WebSockets 服务器接收数据，并使用该数据在 HTML5 Canvas 中刷新条形图。请注意，为简洁起见，条形图的代码已被省略，但完整的清单可在 DVD 中找到。
 
-**清单 12.8 JQWSBarChart1.html**
+### 清单 12.8 JQWSBarChart1.html
 
 ```html
 <!DOCTYPE HTML>
@@ -18861,19 +17764,18 @@ function getWebSocketData() {
 function setupBarChart(dataStr) {
     // populate the barHeights array
     barHeights = dataStr.split(" ");
-```
 
+    barCount = barHeights.length;
 
-
-barCount = barHeights.length;
-drawGraph2();
+    drawGraph2();
 }
+```
 
 柱状图的渲染由 JavaScript 函数 `drawGraph2()` 处理，该函数未在清单 12.8 中展示。
 
 另一个需要考虑的部分是 WebSockets 服务器上返回柱状图数据值的代码。数据通过以下代码片段获取，该代码片段包含在 `getWebSocketData()` 函数中，如下所示：
 
-```
+```javascript
 // Open a web socket
 var ws = new WebSocket("ws://localhost:9998/echo");
 ```
@@ -18884,7 +17786,7 @@ var ws = new WebSocket("ws://localhost:9998/echo");
 
 现在，让我们检查 Python 脚本 `echo_wsh.py` 中发送数据从 WebSockets 服务器到客户端（通过端口 9998）的相关部分，其内容显示在清单 12.9 中。
 
-## 清单 12.9 `echo_wsh.py`
+### 清单 12.9 `echo_wsh.py`
 
 ```
 # Copyright 2011, Google Inc.
@@ -18976,7 +17878,7 @@ request.ws_stream.send_message(randomValues, binary=False)
 
 我们需要的第三个文件是一个简单的 Bourne shell 脚本 `run.sh`，用于在端口 9998 上启动 WebSockets 服务器。
 
-## 清单 12.10 `run.sh`
+### 清单 12.10 `run.sh`
 
 ```
 CURDIR=`pwd`
@@ -19006,9 +17908,7 @@ request.ws_stream.send_message(randomValues, binary=False)
 
 图 12.9 展示了一个色彩非常丰富的柱状图，以及从服务器返回的数据，该数据指定了图表中每个柱元素的高度。
 
-![一个使用 HTML5 WebSockets 的柱状图。](img/6f06c2ff7e29452e50d03258ed9c6b4f_602_0.png)
-
-**图 12.9** 一个使用 HTML5 WebSockets 的柱状图。
+![图 12.9 一个使用 HTML5 WebSockets 的柱状图。](img/6f06c2ff7e29452e50d03258ed9c6b4f_602_0.png)
 
 如果你更喜欢使用开源工具包来处理多种浏览器的各种 WebSocket 细节，也有一些 jQuery 插件可用，它们将 jQuery 作为 WebSockets 之上的抽象层（并提供对多种浏览器的支持，例如此处的这个）：
 
@@ -19024,15 +17924,15 @@ https://code.google.com/p/jquery-graceful-websocket/
 
 本节中的代码示例包含以下文件：
 
-- MouseCSS3SVGCanvas1.html
-- MouseCSS3SVGCanvas1.css
-- MouseCSS3SVGCanvas1.svg
-- MouseCSS3EllipticPieChart1.svg
-- CSS3Background1.css
+- `MouseCSS3SVGCanvas1.html`
+- `MouseCSS3SVGCanvas1.css`
+- `MouseCSS3SVGCanvas1.svg`
+- `MouseCSS3EllipticPieChart1.svg`
+- `CSS3Background1.css`
 
-## 清单 12.11 MouseCSS3SVGCanvas1.html
+### 清单 12.11 `MouseCSS3SVGCanvas1.html`
 
-```
+```javascript
 //--------------------------------------------------
 // call JS function in MouseCSS3EllipticPieChart1.svg
 var svgDoc = null, svgWin = null;
@@ -19055,14 +17955,16 @@ function renderSVGPieChartMain() {
 // pass the pieAngles array
 function renderSVGPieChartAngles() {
   svgWin.renderSVGEllipticPieChartAngles(pieAngles);
+}
 ```
 
 清单 12.11 包含 JavaScript 函数 `renderSVGPieChartInit()`，该函数获取清单 12.11 中 SVG 文档的引用，以便可以将数据发送到相应的 JavaScript 函数，以更新其饼图中“切片”的值。饼图切片的数据包含在 JavaScript 数组 `pieAngles` 中，其值在代码其他位置的 JavaScript 函数 `randomPieValues()` 中计算得出。
+
 柱状图和饼图的渲染使用你之前在代码示例中已经见过的代码执行，因此此处省略了该代码。
 
-## 清单 12.12 MouseCSS3EllipticPieChartSVG1.svg
+### 清单 12.12 `MouseCSS3EllipticPieChartSVG1.svg`
 
-```
+```javascript
 function init(evt) {
     svgDocument = evt.target.ownerDocument;
     gcNode = svgDocument.getElementById("gc");
@@ -19096,9 +17998,7 @@ function updateLocalPieAngles() {
     }
 ```
 
-
-
-## 代码清单 12.12
+### 代码清单 12.12
 
 ```javascript
 // 较短数组的顶点数量
@@ -19112,7 +18012,7 @@ for(var v=0; v<vertexCount; v++) {
 
 代码清单 12.12 展示了如何获取对 `id` 属性值为...的元素的引用，即图表被渲染的位置。由于这段 JavaScript 代码与本章前面的示例基本相同，因此被省略了。
 
-## 代码清单 12.13 MouseOverSVGCanvas1.svg
+### 代码清单 12.13 `MouseOverSVGCanvas1.svg`
 
 ```xml
 <?xml version="1.0" encoding="iso-8859-1"?>
@@ -19151,7 +18051,7 @@ for(var v=0; v<vertexCount; v++) {
 
 代码清单 12.13 包含一个带有“静态”数据的 SVG 文档，这意味着无论用户何时渲染 HTML 网页，都会呈现相同的条形图。如你所见，代码清单 12.13 不包含任何 JavaScript 代码，包含此功能是为了让你了解如何渲染在 SVG 文档中指定的只读数据。
 
-## 代码清单 12.14 CSS3Background1.css
+### 代码清单 12.14 `CSS3Background1.css`
 
 ```css
 #myCanvas {
@@ -19182,7 +18082,7 @@ for(var v=0; v<vertexCount; v++) {
 
 代码清单 12.14 包含了一些简单的 CSS 选择器定义，这些定义你在之前的示例以及本书的 CSS3 相关章节中已经见过。
 
-## 代码清单 12.15 MouseCSS3SVGCanvas1.css
+### 代码清单 12.15 `MouseCSS3SVGCanvas1.css`
 
 ```css
 #columns {
@@ -19229,9 +18129,7 @@ for(var v=0; v<vertexCount; v++) {
 
 图 12.10 展示了在 Safari 浏览器中启动代码清单 12.11 时渲染的条形图、折线图和饼图。
 
-![](img/6f06c2ff7e29452e50d03258ed9c6b4f_608_0.png)
-
-图 12.10 使用 HTML5 Canvas、CSS3 和 SVG 创建的图表。
+![图 12.10 使用 HTML5 Canvas、CSS3 和 SVG 创建的图表。](img/6f06c2ff7e29452e50d03258ed9c6b4f_608_0.png)
 
 ## 第三方图表库
 
@@ -19265,7 +18163,7 @@ jQuery Visualize 插件使用渐进增强（并提供 ARIA 支持）来渲染图
 - 面积图
 - 饼图
 
-![](img/6f06c2ff7e29452e50d03258ed9c6b4f_609_0.png)
+![总结图](img/6f06c2ff7e29452e50d03258ed9c6b4f_609_0.png)
 
 下一章将向你展示如何创建在 Android、iOS 和 Tizen 上运行的 HTML5 混合移动应用程序。代码示例包含 HTML5 以及 HTML5、CSS3、SVG 和 jQuery 或 jQuery Mobile 的各种组合。
 
@@ -19273,9 +18171,7 @@ jQuery Visualize 插件使用渐进增强（并提供 ARIA 支持）来渲染图
 
 本章的第二部分包含基于 Android 的代码示例，向你展示了如何将原生 Android 应用程序与 CSS3、SVG、HTML5 Canvas 和 jQuery Mobile 结合起来。本节包含一个示例，渲染了一个鼠标交互式的多线图，当用户点击折线图下方渲染的按钮时，可以更新其值。请记住，代码示例之后的讨论进展很快，因为 HTML 网页包含简单的标记，CSS3 选择器包含你在前面章节中见过的代码，并且 SVG 形状在附录 A 中有详细讨论。
 
-本章的第三部分快速概述了 Apache Cordova（以前称为 PhoneGap），这是一个用于开发移动应用程序的流行跨平台工具包。2011 年，Adobe 收购了创建 PhoneGap 的公司 Nitobi，此后不久 Adobe 将 PhoneGap 开源。本节解释了 PhoneGap 能做什么，以及一些可以与 PhoneGap 一起使用的工具包。你将学习如何创建
-
-一个基于PhoneGap的Android应用程序，用于渲染基于CSS3的动画效果，您可以将此移动应用部署到支持Android ICS或更高版本的基于Android的移动设备上。
+本章的第三部分快速概述了 Apache Cordova（以前称为 PhoneGap），这是一个用于开发移动应用程序的流行跨平台工具包。2011 年，Adobe 收购了创建 PhoneGap 的公司 Nitobi，此后不久 Adobe 将 PhoneGap 开源。本节解释了 PhoneGap 能做什么，以及一些可以与 PhoneGap 一起使用的工具包。你将学习如何创建一个基于PhoneGap的Android应用程序，用于渲染基于CSS3的动画效果，您可以将此移动应用部署到支持Android ICS或更高版本的基于Android的移动设备上。
 
 本章最后部分将向您展示Xcode 4.3的部分功能，您将看到为iOS设备创建"Hello World"移动应用的步骤。您还将学习如何使用Xcode的PhoneGap插件创建基于iOS的混合移动应用。
 
@@ -19297,11 +18193,11 @@ jQuery Visualize 插件使用渐进增强（并提供 ARIA 支持）来渲染图
 
 在上面的第3步中，您可能会创建一个包含相同类型文件（HTML、CSS或JavaScript）的层级目录集，这与在Web应用程序中组织文件的方式非常相似。
 
-现在启动Eclipse并创建一个名为AndroidCSS3的Android项目，确保选择Android版本3.1或更高版本，这是渲染基于CSS3的效果所必需的。
+现在启动Eclipse并创建一个名为`AndroidCSS3`的Android项目，确保选择Android版本3.1或更高版本，这是渲染基于CSS3的效果所必需的。
 
-创建项目后，让我们看看四个包含此Android移动应用自定义代码的文件。清单13.1、13.2、13.3和13.4展示了项目文件main.xml、AndroidCSS3.html、AndroidCSS3.css和AndroidCSS3Activity.java的内容。
+创建项目后，让我们看看四个包含此Android移动应用自定义代码的文件。清单13.1、13.2、13.3和13.4展示了项目文件`main.xml`、`AndroidCSS3.html`、`AndroidCSS3.css`和`AndroidCSS3Activity.java`的内容。
 
-### 清单 13.1    main.xml
+### 清单 13.1 `main.xml`
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -19318,7 +18214,7 @@ jQuery Visualize 插件使用渐进增强（并提供 ARIA 支持）来渲染图
 
 清单13.1指定了一个LinearLayout，其中包含一个Android WebView，它将占据移动设备的整个屏幕。这是我们想要看到的行为，因为Android默认浏览器是在Android WebView中渲染的。
 
-### 清单 13.2    AndroidCSS3.html
+### 清单 13.2 `AndroidCSS3.html`
 
 ```html
 <!doctype html>
@@ -19338,9 +18234,9 @@ jQuery Visualize 插件使用渐进增强（并提供 ARIA 支持）来渲染图
 </html>
 ```
 
-清单13.2是一个简单的HTML网页，引用了一个CSS样式表（在清单13.3中显示），以及一个HTML `<div>`元素（其id属性值为`outer`），该元素作为另外四个HTML `<div>`元素的"容器"。
+清单13.2是一个简单的HTML网页，引用了一个CSS样式表（在清单13.3中显示），以及一个HTML `<div>`元素（其`id`属性值为`outer`），该元素作为另外四个HTML `<div>`元素的"容器"。
 
-### 清单 13.3 AndroidCSS3.css
+### 清单 13.3 `AndroidCSS3.css`
 
 ```css
 #outer {
@@ -19418,9 +18314,9 @@ jQuery Visualize 插件使用渐进增强（并提供 ARIA 支持）来渲染图
 }
 ```
 
-清单13.3包含一个用于设置id值为`outer`的HTML `<div>`元素样式的CSS选择器，以及四个应用于清单13.2中相应HTML `<div>`元素的CSS选择器`radial1`、`radial2`、`radial3`和`radial4`。这些选择器的内容应该非常熟悉（您可以回顾前面章节中关于CSS3渐变的内容），因此本节将不再介绍它们的内容。
+清单13.3包含一个用于设置`id`值为`outer`的HTML `<div>`元素样式的CSS选择器，以及四个应用于清单13.2中相应HTML `<div>`元素的CSS选择器`radial1`、`radial2`、`radial3`和`radial4`。这些选择器的内容应该非常熟悉（您可以回顾前面章节中关于CSS3渐变的内容），因此本节将不再介绍它们的内容。
 
-### 清单 13.4    AndroidCSS3Activity.java
+### 清单 13.4 `AndroidCSS3Activity.java`
 
 ```java
 package com.iquarkt.css3;
@@ -19466,13 +18362,13 @@ public class AndroidCSS3Activity extends Activity
 }
 ```
 
-清单13.4定义了一个Java类AndroidCSS3Activity，它扩展了标准的Android Activity类。该类包含onCreate()方法，该方法"指向"XML文档main.xml（在清单13.2中显示），以便我们可以通过R.id.webview（这是对清单13.2中WebView元素的引用）获得对其WebView子元素的引用，如下所示：
+清单13.4定义了一个Java类`AndroidCSS3Activity`，它扩展了标准的Android `Activity`类。该类包含`onCreate()`方法，该方法"指向"XML文档`main.xml`（在清单13.2中显示），以便我们可以通过`R.id.webview`（这是对清单13.2中WebView元素的引用）获得对其WebView子元素的引用，如下所示：
 
 ```java
 WebView webview = (WebView) this.findViewById(R.id.webview);
 ```
 
-接下来，WebSettings类的webSettings实例使我们能够设置各种属性，如清单13.4中注释行所示。最后一行代码加载HTML网页AndroidCSS3.html（位于assets/www子目录中）的内容，如下所示：
+接下来，`WebSettings`类的`webSettings`实例使我们能够设置各种属性，如清单13.4中注释行所示。最后一行代码加载HTML网页`AndroidCSS3.html`（位于`assets/www`子目录中）的内容，如下所示：
 
 ```java
 webview.loadUrl("file:///android_asset/AndroidCSS3.html");
@@ -19480,15 +18376,13 @@ webview.loadUrl("file:///android_asset/AndroidCSS3.html");
 
 图13.1展示了一个基于CSS3的Android应用程序在搭载Android ICS的华硕Prime平板电脑上的运行效果。
 
-
-
 ## SVG 与 Android 应用程序
 
 本节中的示例将向您展示如何创建一个Android移动应用程序，该程序能够渲染嵌入在**HTML5网页**中的SVG代码。现在启动Eclipse并创建一个名为 `AndroidSVG1` 的Android项目，确保选择Android版本3.1或更高版本，这是渲染SVG元素所必需的。
 
 上一节的示例包含四个自定义文件，而本节中的Android/SVG示例包含两个包含自定义代码的文件：**HTML5网页** `AndroidSVG1.html` 和Java类 `AndroidSVG1.java`，它们分别显示在代码清单13.5和代码清单13.6中。
 
-**代码清单13.5 AndroidSVG1.html**
+### 代码清单13.5 `AndroidSVG1.html`
 
 ```html
 <!DOCTYPE html>
@@ -19525,9 +18419,9 @@ webview.loadUrl("file:///android_asset/AndroidCSS3.html");
 
 代码清单13.5是一个HTML网页，其中包含一个SVG文档，定义了一个椭圆、一条线段和两条三次贝塞尔曲线。附录A包含这些二维形状（以及其他形状）的示例，如果您需要复习相关材料，可以参考相应内容。
 
-代码清单13.6显示了Java类AndroidSVG1Activity.java的内容，该类负责启动HTML5网页AndroidSVG1.html。
+代码清单13.6显示了Java类`AndroidSVG1Activity.java`的内容，该类负责启动HTML5网页`AndroidSVG1.html`。
 
-## 代码清单13.6 AndroidSVG1Activity.java
+### 代码清单13.6 `AndroidSVG1Activity.java`
 
 ```java
 package com.iquarkt.svg;
@@ -19574,7 +18468,7 @@ public class AndroidSVG1Activity extends Activity
 }
 ```
 
-代码清单13.6与代码清单13.4的内容几乎相同（Java类名不同），同样，最后一行代码加载HTML网页AndroidSVG1.html的内容（该文件位于assets/www子目录中），如下所示：
+代码清单13.6与代码清单13.4的内容几乎相同（Java类名不同），同样，最后一行代码加载HTML网页`AndroidSVG1.html`的内容（该文件位于`assets/www`子目录中），如下所示：
 
 ```java
 webView.loadUrl("file:///android_asset/AndroidSVG1.html");
@@ -19584,11 +18478,11 @@ webView.loadUrl("file:///android_asset/AndroidSVG1.html");
 
 ## HTML5 Canvas与Android应用程序
 
-除了渲染基于CSS3的效果和SVG文档外，您还可以在Android应用程序中渲染基于Canvas的二维形状。启动Eclipse并创建一个名为AndroidCanvas1的Android项目，确保选择Android版本3.1或更高版本，这是渲染SVG元素所必需的。
+除了渲染基于CSS3的效果和SVG文档外，您还可以在Android应用程序中渲染基于Canvas的二维形状。启动Eclipse并创建一个名为`AndroidCanvas1`的Android项目，确保选择Android版本3.1或更高版本，这是渲染SVG元素所必需的。
 
-本节中的示例包含一个名为AndroidCanvas1.html的自定义文件，该文件显示在代码清单13.7中。
+本节中的示例包含一个名为`AndroidCanvas1.html`的自定义文件，该文件显示在代码清单13.7中。
 
-## 代码清单13.7 AndroidCanvas1.html
+### 代码清单13.7 `AndroidCanvas1.html`
 
 ```html
 <!DOCTYPE html>
@@ -19679,9 +18573,11 @@ function draw() {
 
 尽管Android没有内置支持来渲染图表和图形，但您可以使用与前一节中非常相似的基于Canvas的代码来创建它们。
 
-启动Eclipse并创建一个名为AndroidCanvasMultiLine2的Android项目，确保选择Android版本3.1或更高版本。代码清单13.8显示了HTML5网页AndroidCanvasMultiLine2.html的内容，该页面包含使用HTML5 Canvas渲染多折线图的JavaScript代码。
+启动Eclipse并创建一个名为`AndroidCanvasMultiLine2`的Android项目，确保选择Android版本3.1或更高版本。代码清单13.8显示了HTML5网页`AndroidCanvasMultiLine2.html`的内容，该页面包含使用HTML5 Canvas渲染多折线图的JavaScript代码。
 
-**代码清单13.8 AndroidCanvasMultiLine2.html**
+### 代码清单13.8 `AndroidCanvasMultiLine2.html`
+
+
 
 ```html
 <!DOCTYPE html>
@@ -19742,13 +18638,11 @@ function drawGraph() {
     drawGraph2();
 ```
 
-
-
 ## 安卓与 HTML5 Canvas 动画
 
 本节将向你展示如何创建一个在 HTML5 Canvas 中渲染弹跳球效果的 Android 移动应用。
 
-启动 Eclipse 并创建一个名为 HTML5CanvasBBall2 的 Android 项目，确保你选择了 Android 3.1 或更高版本。清单 13.9 展示了包含用于创建弹跳球效果的 JavaScript 代码的 HTML5 网页 HTML5CanvasBBall2.html 的内容。
+启动 Eclipse 并创建一个名为 `HTML5CanvasBBall2` 的 Android 项目，确保你选择了 Android 3.1 或更高版本。清单 13.9 展示了包含用于创建弹跳球效果的 JavaScript 代码的 HTML5 网页 `HTML5CanvasBBall2.html` 的内容。
 
 ### 清单 13.9 HTML5CanvasBBall2.html
 
@@ -19756,7 +18650,7 @@ function drawGraph() {
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset=utf-8"/>
+<meta charset=utf-8/>
 <title>HTML5 Bouncing Ball</title>
 
 <script>
@@ -19833,11 +18727,12 @@ if(currentX < leftX+ballRadius || currentX > rightX-ballRadius) {
 
 图 13.4 在安卓智能手机上显示的基于 Canvas 的多折线图。
 
-
-
+```javascript
 if(currentY < topY+ballRadius || currentY > bottomY-ballRadius) {
     dirY *= -1;
 }
+```
+
 弹跳球的位置通过以下两行代码进行更新：
 
 ```
@@ -19863,11 +18758,11 @@ setInterval(draw, shortPause);
 
 608 • jQuery、CSS3 与 HTML5 移动及桌面设备应用
 
-清单 13.10 展示了 JQMTravel1Tabs1Activity.java 的内容，该文件用于启动 HTML5 网页 JQMTravel1Tabs1.html。
+清单 13.10 展示了 `JQMTravel1Tabs1Activity.java` 的内容，该文件用于启动 HTML5 网页 `JQMTravel1Tabs1.html`。
 
 **清单 13.10** JQMTravel1Tabs1Activity.java
 
-```
+```java
 package com.iquarkt.jqmandroid;
 
 import android.app.Activity;
@@ -19980,19 +18875,20 @@ PhoneGap 常见问题解答（FAQ）在此：
 
 ## 使用 PHONEGAP 插件创建 ANDROID 应用
 
-在 Eclipse 中创建一个 Android 项目，方法是点击 PhoneGap 插件图标，然后（为本例目的）将项目名称指定为 PGJQM1，勾选包含 jQuery Mobile 文件的复选框，选择你的 Android 设备支持的 Android 版本，然后输入 com.iquarkt.phonegap 作为包名。
+在 Eclipse 中创建一个 Android 项目，方法是点击 PhoneGap 插件图标，然后（为本例目的）将项目名称指定为 `PGJQM1`，勾选包含 jQuery Mobile 文件的复选框，选择你的 Android 设备支持的 Android 版本，然后输入 `com.iquarkt.phonegap` 作为包名。
 
-点击“完成”按钮，项目创建完成后，导航到新创建的 Android 项目的 assets/www 子目录，你将找到以下文件（本书付印时版本号可能不同）：
+点击“完成”按钮，项目创建完成后，导航到新创建的 Android 项目的 `assets/www` 子目录，你将找到以下文件（本书付印时版本号可能不同）：
 
 ```
 index.html
 phonegap-1.3.0.js
 ```
 
-还有一个生成的 Java 文件 PhoneGap1Activity.java，其内容显示在清单 13.11 中。
+还有一个生成的 Java 文件 `PhoneGap1Activity.java`，其内容显示在清单 13.11 中。
 
-```
-Listing 13.11 PhoneGap1Activity.java
+**清单 13.11** PhoneGap1Activity.java
+
+```java
 package com.iquarkt.phonegap;
 
 import com.phonegap.*;
@@ -20010,13 +18906,11 @@ public class PhoneGap1Activity extends Activity
 }
 ```
 
-清单 13.11 包含一个 `onCreate()` 方法，该方法启动 HTML 页面 index.html，如下所示：
+清单 13.11 包含一个 `onCreate()` 方法，该方法启动 HTML 页面 `index.html`，如下所示：
 
 ```
 super.loadUrl("file:///android_asset/www/index.html");
 ```
-
-
 
 ## 清单 13.12 index.html
 
@@ -20123,7 +19017,7 @@ function show_pic() {
 <!DOCTYPE HTML>
 <html>
 <head>
-<meta charset=utf-8"/>
+<meta charset=utf-8/>
 <title>PhoneGap</title>
 
 <meta name="viewport" content="width=320; user-scalable=no"/>
@@ -20233,13 +19127,11 @@ http://wiki.phonegap.com/w/page/39991939/Getting%20Started%20with%20PhoneGap%20i
 
 # 使用 PHONEGAP 在 IOS 上创建 CSS3 立方体
 
-通过选择 PhoneGap 插件，创建一个名为 ThreeDCube1 的 Xcode 应用程序（确保您的文件名以字母字符开头，否则在尝试编译和部署应用程序时会出现错误）。
+通过选择 PhoneGap 插件，创建一个名为 `ThreeDCube1` 的 Xcode 应用程序（确保您的文件名以字母字符开头，否则在尝试编译和部署应用程序时会出现错误）。
 
 请注意，如果您使用的是 Xcode 4.3.1，则需要将生成的 `www` 子目录手动复制到当前 Xcode 应用程序的项目主目录中。正确执行此步骤后，当您在模拟器或 iOS 设备上启动移动应用程序时，将不再看到错误消息。
 
 CSS 样式表 `ThreeDCube1.css` 与第 3 章中的 CSS 文件 `3DCube1.css` 相同，因此我们不在这里显示其内容。清单 13.15 展示了由 XCode 中的 PhoneGap 插件生成的 HTML 网页 `index.html` 的内容。
-
-
 
 620 • 适用于移动和桌面设备的jQuery、CSS3与HTML5
 
@@ -20298,7 +19190,7 @@ CSS 样式表 `ThreeDCube1.css` 与第 3 章中的 CSS 文件 `3DCube1.css` 相�
 </html>
 ```
 
-清单 13.15 是将第3章的HTML网页 3DCube1.html（本质上是一组HTML <div> 元素）与使用PhoneGap插件在Xcode中创建移动应用时PhoneGap自动生成的HTML网页 index.html 结合的结果。
+清单 13.15 是将第3章的HTML网页 `3DCube1.html`（本质上是一组HTML `<div>` 元素）与使用PhoneGap插件在Xcode中创建移动应用时PhoneGap自动生成的HTML网页 `index.html` 结合的结果。
 
 现在，无论是在Xcode模拟器还是在你的移动设备上运行这个移动应用，你都会看到一个类似于图13.9的图形图像。
 
@@ -20331,6 +19223,7 @@ Tizen隶属于Linux基金会，并在Tizen协会的支持下运营。Tizen协会
 -   沃达丰
 
 有关Tizen协会的更多信息，请访问：
+
 http://www.tizenassociation.org
 
 Tizen将支持广泛的设备类别，包括智能手机、平板电脑、上网本、智能电视、车载工具和娱乐设备等。凭借HTML5强大的能力和跨平台灵活性，它作为移动应用和服务的开发环境正日益受到重视。Tizen SDK和API允许开发者使用HTML5及相关Web技术编写可在多个设备领域运行的应用。Tizen 2.0将支持原生Tizen应用以及利用HTML5和原生Tizen组件的混合应用。原生Tizen应用将使用C++开发。
@@ -20395,8 +19288,6 @@ Tizen Core Service部分提供多项服务，将在以下小节中讨论。
 
 多媒体基于GStreamer。它提供对媒体的支持，包括视频、音频、图像和VoIP。它还提供用于管理媒体文件元数据信息的媒体内容管理。
 
-
-
 ## PIM（个人信息管理）
 
 PIM 能够在设备上管理用户数据，包括管理日历、联系人、任务，以及检索关于设备环境的数据（例如设备位置、线缆状态）。
@@ -20408,6 +19299,7 @@ PIM 能够在设备上管理用户数据，包括管理日历、联系人、任�
 ## 系统
 
 系统由系统和设备管理功能组成，包括：
+
 - 访问设备（如传感器、显示屏或振动器）的接口。
 - 电源管理，例如 LCD 显示屏背光调光/关闭以及应用处理器休眠。
 - 监控设备和处理事件，例如 USB、MMC、充电器和耳机插孔事件。
@@ -20417,6 +19309,7 @@ PIM 能够在设备上管理用户数据，包括管理日历、联系人、任�
 ## 电话
 
 电话由与调制解调器通信的蜂窝功能组成：
+
 - 管理 UMTS 和 CDMA 的呼叫相关信息和服务。
 - 管理 UMTS 和 CDMA 的分组服务和网络状态信息。
 - 管理 UMTS 和 CDMA 的 SMS 相关服务。
@@ -20442,6 +19335,7 @@ HTML 基于标准 HTML5。它支持丰富的 JavaScript 并带有原生扩展。
 ### 示例 Web 应用程序
 
 示例 Web 应用程序可以在此处找到：
+
 https://developer.tizen.org/resources/sample-web-applications
 
 ### 原生和混合应用程序支持
@@ -20451,8 +19345,11 @@ https://developer.tizen.org/resources/sample-web-applications
 ### 更多信息链接
 
 你可以通过访问以下网站找到关于 Tizen 的最新信息：
+
 https://tizen.org
+
 访问以下网站获取有关 Tizen 和 Tizen 应用程序开发的文档：
+
 https://developer.tizen.org/documentation
 
 ## ANDROID 和 JQUERY MOBILE 用于机器人控制
@@ -20469,9 +19366,9 @@ http://www.RobotAppStore.com
 
 代码清单 13.16 显示了 `JQMRobots.html` 的内容，它展示了可以控制机器人的 jQuery Mobile 代码类型。
 
-```
-代码清单 13.16 JQMRobots.html
+**代码清单 13.16** JQMRobots.html
 
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -20572,7 +19469,6 @@ nh=140&amp;tbnw=158&amp;start=0&amp;ndsp=19&amp;ved=1t:429,r:4,s:0
 </script>
 ```
 
-```markdown
 清单 13.16 的第一部分包含 HTML 标记和常见的 jQuery 文件引用，以及一个 HTML `<style>` 元素，其中包含一个选择器，该选择器将在代码后面用于为 HTML `<div>` 元素设置样式。请注意对 jQuery UI（在第 7 章讨论过）的引用，我们需要它来将 JPG “转换”为可拖动的小部件。
 
 清单 13.16 的第二部分包含一些用于单页视图 HTML 网页的标准 jQuery Mobile 代码，还包含一个指向 Robot App Store 的链接。HTML `<img>` 元素（以粗体显示）引用了一个 JPG 文件，该文件将被清单 13.16 末尾的代码片段设置为“可拖动”。
@@ -20589,7 +19485,7 @@ nh=140&amp;tbnw=158&amp;start=0&amp;ndsp=19&amp;ved=1t:429,r:4,s:0
 
 ## 总结
 
-本章向你展示了如何创建包含 HTML5、CSS3、SVG 和 jQuery Mobile 的混合 Android 移动应用程序。你手动创建了此类移动应用程序，这涉及在 Eclipse 中创建 Android 项目，然后修改 Android *Activity* 类的内容，并用 HTML 相关文件填充 assets 子目录。
+本章向你展示了如何创建包含 HTML5、CSS3、SVG 和 jQuery Mobile 的混合 Android 移动应用程序。你手动创建了此类移动应用程序，这涉及在 Eclipse 中创建 Android 项目，然后修改 Android `Activity` 类的内容，并用 HTML 相关文件填充 assets 子目录。
 
 接下来，你学习了如何使用 PhoneGap Eclipse 插件，它简化了创建 Android 项目的过程。你还了解了 PhoneGap 插件如何创建一个默认页面，允许你使用 Android 设备的“实时”功能。
 
@@ -20650,19 +19546,16 @@ nh=140&amp;tbnw=158&amp;start=0&amp;ndsp=19&amp;ved=1t:429,r:4,s:0
 确实有很多！我认为这是 Web 开发者社区极具活力和创造力的标志，我认为这是一件好事。而且，不同的工具包解决不同的问题。例如，有用于 UI 组件的工具包，如 Twitter 的 Bootstrap，或者用于数据可视化的 Michael Bostock 的 D3.js。很难说其中一个工具包是多余的：它们解决不同的问题，并且可以协同使用。
 
 话虽如此，对于给定问题选择合适的框架确实可能很困难，如果有资源可以帮助开发人员进行选择，那将是有益的。
-```
-
-
 
 ## 636 • 面向移动与桌面设备的 jQuery、CSS3 与 HTML5
 
-基于云的移动开发是否会成为事实上的标准？
+> *基于云的移动开发是否会成为事实上的标准？*
 
 我认为我们将看到越来越多的服务来帮助开发者完成他们的工作，无论是移动开发还是桌面开发。像 Github 这样的简单服务已经成为常态，这还是一个相对新近的现象。
 
 我期待看到更多服务，帮助开发者更轻松地入门，并更轻松地部署他们的工作成果，我相信这些事情将在云端发生。
 
-CSS3 的发展方向是什么？
+> *CSS3 的发展方向是什么？*
 
 CSS3 的方向由 W3C 中的 CSS 工作组共同决定，该工作组决定关注哪些规范和领域。Adobe 与其他公司一起参与了该工作组的工作。
 
@@ -20670,15 +19563,15 @@ CSS3 的方向由 W3C 中的 CSS 工作组共同决定，该工作组决定关�
 
 CSS 工作组还在进行一项长期努力，以模块化该语言。虽然这是一项艰巨的任务，但我相信这是一项值得的工作，从长远来看有助于 Web 更可靠和互操作。
 
-你认为 WebGL 何时会在平板电脑等设备上普及？
+> *你认为 WebGL 何时会在平板电脑等设备上普及？*
 
 WebGL Khronos 工作组已经做了大量工作来解决安全问题，这些问题迄今为止阻碍了更广泛的采用。这项工作深入而广泛，涉及浏览器公司和硬件制造商。现在，很难预测新一代硬件广泛部署并使 WebGL 无处不在所需的时间。但它已经在桌面端可用（尽管有时需要在“启用”菜单中开启），并且在多个浏览器（Safari、Chrome、Firefox）中可用，并且开始出现在移动端（例如，在一些诺基亚和黑莓手机或平板电脑上）。
 
-ECMA5 对 Web 开发将产生怎样的即时和长期影响？
+> *ECMA5 对 Web 开发将产生怎样的即时和长期影响？*
 
 ECMAScript 5 带来了几个重要特性。严格模式有助于在程序早期发现错误（在这些方法之前，程序的任何部分或库都可以修改任何对象属性）。这提高了封装性和安全性。此外，对 Array、String 和 Function 的有用增补是很好的渐进式改进。所有这些都有助于减少代码大小（精简库和/或用户脚本），并使代码更健壮，有时更易读。Object 上的一些额外功能，如 `Object.defineProperties` 和 `Object.getPrototypeOf`，提供了更多灵活性，但也引入了更多复杂性，我认为应该谨慎使用。
 
-> 尽管 SVG 是 HTML5 的一部分，你认为它会被像 CSS3 那样广泛使用吗？
+> *尽管 SVG 是 HTML5 的一部分，你认为它会被像 CSS3 那样广泛使用吗？*
 
 我认为 SVG 提供的矢量图形是 Web 的核心需求。矢量图形需要支持与创作环境（例如 Illustrator 和 InkScape 等工具）的交换，并且需要与 Web 技术栈的其余部分良好集成。我真的很喜欢目前 CSS 和 SVG 工作组（在 FX 任务组中）共同努力将适用的 SVG 功能作为 CSS 核心的工作。例如，使 SVG 和 CSS 变换保持一致对于构建统一的 Web 技术栈至关重要。同样，以一致的方式将混合模式和合成引入 SVG 和 CSS 也很重要。最后，SVG 与 HTML5 的其余部分有许多集成方式。例如，可以在 HTML5 2D Canvas 上下文中绘制 SVG 资源。也可以使用 2D Canvas 上下文并在 SVG 图像中绘制其内容。最后，可以在 HTML 中内联 SVG，这非常强大。
 
@@ -20686,19 +19579,19 @@ ECMAScript 5 带来了几个重要特性。严格模式有助于在程序早期�
 
 话虽如此，重要的是要记住，CSS 的范围比 SVG 广泛得多，即使我们尝试在 CSS 中提供一些 SVG 功能，SVG 也是 CSS 的极佳伴侣特性，而不是替代品或重叠技术。
 
-> 移动开发者现在必须掌握的技能是什么？
+> *移动开发者现在必须掌握的技能是什么？*
 
 我认为，首先，移动开发者必须清晰理解响应式设计，以及他们的内容如何适应多种屏幕尺寸和分辨率。我们不再只有两三种尺寸或形态因子。随着平板电脑和手机数量和类型的爆炸式增长，使用媒体查询和布局来设计内容至关重要，这些布局需要适用于一系列尺寸和分辨率，并在内容切换到新设计的地方设置“断点”。此外，开发者必须非常小心地牢记高分辨率显示屏，因为一个小的高分辨率屏幕与一个更大的低分辨率屏幕非常不同，即使两者可能拥有完全相同的像素数量！
 
 其次，我认为移动开发者应该思考如何最好地部署他们的应用程序。在某些情况下，可能最好简单地拥有一个移动就绪的网站。在其他情况下（例如，当需要比浏览器提供的更多 API 时，如摄像头捕获），将移动 HTML 内容打包为 PhoneGap/Cordova 应用程序是一个很好的解决方案。它保留了开发者在 HTML/JS/CSS 方面的投入，同时提供了丰富的应用程序环境以及在最流行的应用商店上打包和部署应用程序的能力。
 
-*你认为 Web 开发者在未来几年需要掌握哪些新技能？*
+> *你认为 Web 开发者在未来几年需要掌握哪些新技能？*
 
 我相信 Web 将变得越来越图形化，我们刚刚开始通过圆角、渐变、不透明度以及对背景的更好支持等特性看到这种情况。Canvas API 很不错（并且对于某些特定用例如游戏是必需的），但我认为下一波浪潮将是 CSS 中的声明式图形特性，如 CSS Filter Effects、HTML 中更好的 SVG 集成，以及 CSS Shaders 等高级功能。
 
 我也认为开发者与图形设计师之间的距离正在拉近，许多开发者正在变得（并且将需要变得）对图形设计和视觉质量更加敏感，而图形艺术家在编程和 Web 格式方面变得更加熟练。Web 格式在这方面帮助很大，因为图形设计师现在可以在用于部署的格式中创作和共享他们的作品。虽然在格式、特性和工具方面还有很多工作要做，但我认为这是我们前进的方向。
 
-*你认为移动开发工具领域下一个重大突破会是什么？是还没人想到的东西，还是已经有人在研究了？*
+> *你认为移动开发工具领域下一个重大突破会是什么？是还没人想到的东西，还是已经有人在研究了？*
 
 与前面的问题相关，我相信移动开发的下一个前沿是进一步降低开发者的门槛，让创建、构建、调试和部署移动应用程序及移动内容变得尽可能简单。诸如 PhoneGap build 之类的努力显然正朝着这个方向发展。另一个例子是 Adobe Shadow，它是一个实用工具，极大地简化了开发者的调试和测试过程（他们可以在多个设备上同时显示相同的 Web 内容并进行调试）。我认为我们将看到越来越多的这类工具，它们极大地简化了为移动设备创建、测试和部署内容与应用程序的过程。
 
@@ -20721,8 +19614,6 @@ Brian LeRoux 领导着 Adobe 的开源 PhoneGap 项目团队（目前正作为 A
 ### *你首选的开发环境是什么（工具、编辑器等）？*
 
 就我而言，我只需要一个 Posix shell 和现代的 Web 浏览器。我用 vim 编辑文本，不过最近我的思想被一个 Emacs 演示震撼了，所以我想我可能会尝试切换一段时间。（看看这个 http://emacsrocks.com。）鉴于如今浏览器开发工具的强大，我的工作流程中基本上不再需要一大堆其他工具了。
-
-
 
 ## 托尼·帕里斯
 
@@ -20774,977 +19665,964 @@ ECMA5 对 Web 开发的直接影响与长期影响分别是什么？JavaScript �
 
 所有技术随着时间的推移都会在某种程度上过时。因此，基于这个理解，我们知道所有技术在某个时候都会步履蹒跚。诀窍在于能够与你所热衷的任何技术栈保持足够的距离，以便在事情发生之前就能预见到它并相应地做出回应。防止你的技术过时的最佳方法，就是成为那个让它过时的人。
 
+
+
+# 访谈：Web 开发的现状与未来
+
+## 关于厂商平台与 Web 的未来
+
 当人们崇拜某个厂商平台时，真的让我感到精疲力竭。这些组织很了不起，推动了技术发展，但它们最终要对股东负责，而这往往并不总是对整个社会有益。请时刻谨记这一点。我们正在使用人类历史上最大的可访问网络，其影响是惊人的。我们不要出卖它。
 
-*您认为 Web 开发者在未来几年需要掌握哪些新技能？*
+### 您认为 Web 开发者在未来几年需要掌握哪些新技能？
 
 耐心。同理心。掌握命令行。自动化。单元测试。
 
-您认为移动开发工具领域的下一个大事件会是什么？
+### 您认为移动开发工具领域的下一个大事件会是什么？
 
 嗯，几乎每个浏览器要么已经有了远程调试器，要么正在内置。（Opera Dragonfly、Chrome 开发工具/Web Inspector、Firebug，我想还有他们 IE 上叫什么的那个。）
 
 虽然掌握这些新的浏览器工具对于高效工作至关重要，但我也想强调，这并不是放弃单元测试的借口！
 
-这是不是一件还没人想到过的事情，还是已经有人在做了？
+### 这是不是一件还没人想到过的事情，还是已经有人在做了？
 
 当我看到开发者们今天的协作时，我认为最大的问题是如何恰当地组合你的技术栈。我们倾向于为了当前的问题，随意使用那些几乎满足需求的开源东西。这带来了巨大的构建时复杂性。虚拟机和/或将这些系统置于 Web API 之后会让生活轻松一点，但本地开发环境的构建是棘手的黑魔法。
 
 我不确定我们该如何解决这个问题，但我认为未来我们的更多工具会将自身与其运行时环境打包在一起，使分布式协作变得更容易。基本上，这又回到了让浏览器变得更强大。
 
-您还有其他想分享的意见或建议吗？
+### 您还有其他想分享的意见或建议吗？
 
 请始终善待自己和与你共事的人。网络非常庞大，是一段分布式书写的历史。删除你的行为记录是不可能的，所以请思考一下，你在每一条信息、每一行代码中，想要留下什么样的遗产。
 
-
+---
 
 ## 644 • 面向移动与桌面设备的 jQuery、CSS3 和 HTML5
 
-*你最感兴趣学习哪些技术？*
+### 你最感兴趣学习哪些技术？
 
-我对云计算着迷。免费开源的应用开发技术与低成本托管相结合，有望降低各种创新的门槛。我正投入大量时间研究云计算解决方案，例如 Amazon Web Services，以了解如何从中获得最大价值，并可能将其作为我正打算创建的新产品和服务的支柱。
+我对云计算着迷。免费开源的应用开发技术与低成本托管相结合，有望降低各种创新的门槛。我正投入大量时间研究云计算解决方案，例如 `Amazon Web Services`，以了解如何从中获得最大价值，并可能将其作为我正打算创建的新产品和服务的支柱。
 
-此外，与我在 WebGL 方面的游戏工作直接相关，我想看看其他与游戏相关的技术如何在浏览器中发展。WebGL 已经涵盖了渲染和合成，但游戏开发还有更多方面。JavaScript 虚拟机需要变得更快，并在内存管理方面做得更好。Google 在这方面处于领先地位，我们看到了巨大的进步。同时，我想紧跟输入技术（如鼠标锁定和游戏手柄支持）以及 Web 音频/视频 API 在未来几年标准化的进展。
+此外，与我在 `WebGL` 方面的游戏工作直接相关，我想看看其他与游戏相关的技术如何在浏览器中发展。`WebGL` 已经涵盖了渲染和合成，但游戏开发还有更多方面。`JavaScript` 虚拟机需要变得更快，并在内存管理方面做得更好。`Google` 在这方面处于领先地位，我们看到了巨大的进步。同时，我想紧跟输入技术（如鼠标锁定和游戏手柄支持）以及 `Web Audio/Video API` 在未来几年标准化的进展。
 
-*你首选的开发环境是什么（工具、编辑器等）？*
+### 你首选的开发环境是什么（工具、编辑器等）？
 
-我最初是来自旧时代的 C/C++ 选手，但我逐渐爱上了 JavaScript 语言。最近我迷上了 `Node.js`，这样我也可以用 JavaScript 编写服务器端代码。大多数日子我在 Eclipse 中编写代码，在 Chrome 中调试。我发现它内置了最好的调试功能。
+我最初是来自旧时代的 `C/C++` 选手，但我逐渐爱上了 `JavaScript` 语言。最近我迷上了 `Node.js`，这样我也可以用 `JavaScript` 编写服务器端代码。大多数日子我在 `Eclipse` 中编写代码，在 `Chrome` 中调试。我发现它内置了最好的调试功能。
 
-对于库，我是 jQuery 的忠实粉丝，不仅因为它的简洁，也因为它的强大。对于我的 WebGL 开发，我主要使用 `Three.js` 工具包，并辅以一些 `Tween.js`；但我也在开发自己的游戏引擎，目前基于 `Three.js`，但有一天可能会转向自己的底层渲染。
+对于库，我是 `jQuery` 的忠实粉丝，不仅因为它的简洁，也因为它的强大。对于我的 `WebGL` 开发，我主要使用 `Three.js` 工具包，并辅以一些 `Tween.js`；但我也在开发自己的游戏引擎，目前基于 `Three.js`，但有一天可能会转向自己的底层渲染。
 
-*Web 开发的 JavaScript 工具包是不是“太多了”？*
+### Web 开发的 JavaScript 工具包是不是“太多了”？
 
 永远不会太多。萝卜青菜，各有所爱。
 
-*你认为仅针对移动设备的 JavaScript 工具包会变得普遍吗？*
+### 你认为仅针对移动设备的 JavaScript 工具包会变得普遍吗？
 
-它们可能会；这真的取决于移动平台在 JavaScript 性能方面改进的速度。目前仍然相当慢，并且存在内存问题。记住，这些是 CPU 比桌面设备慢、内存更少的小型设备。但如果它们发展到 JavaScript 成为移动设备事实上的开发语言（我希望我能活着看到这一天），那么我确信我们会看到仅针对移动设备的工具激增。
+它们可能会；这真的取决于移动平台在 `JavaScript` 性能方面改进的速度。目前仍然相当慢，并且存在内存问题。记住，这些是 `CPU` 比桌面设备慢、内存更少的小型设备。但如果它们发展到 `JavaScript` 成为移动设备事实上的开发语言（我希望我能活着看到这一天），那么我确信我们会看到仅针对移动设备的工具激增。
 
-*基于云的移动开发会成为事实上的标准吗？*
+### 基于云的移动开发会成为事实上的标准吗？
 
-如果你所说的基于云的移动开发是指“在云端进行渲染和游戏操作，只传输视频帧并回传点击操作”，类似于 Gakai、OnLive 和 OTOY 等流媒体服务，那么我非常怀疑。我个人认为这是一种有缺陷的方法。利用手头设备的计算能力。如果游戏在桌面或笔记本电脑上交付，就利用用户面前的计算能力。如果游戏运行在移动设备上，就为该平台设计游戏，并让本地性能达到最佳。否则，你就是在云端消耗周期和资金，而没有分担负载。
+如果你所说的基于云的移动开发是指“在云端进行渲染和游戏操作，只传输视频帧并回传点击操作”，类似于 `Gakai`、`OnLive` 和 `OTOY` 等流媒体服务，那么我非常怀疑。我个人认为这是一种有缺陷的方法。利用手头设备的计算能力。如果游戏在桌面或笔记本电脑上交付，就利用用户面前的计算能力。如果游戏运行在移动设备上，就为该平台设计游戏，并让本地性能达到最佳。否则，你就是在云端消耗周期和资金，而没有分担负载。
 
 另一方面，如果你所说的基于云是指游戏和交易逻辑，以及任何多人游戏支持，转移到云端，那么我要说我们已经做到了。
 
-*你认为 WebGL 何时会在平板电脑等设备上普及？*
+### 你认为 WebGL 何时会在平板电脑等设备上普及？
 
-我不是市场研究人员，所以手头没有最新的数据。在此前提下……WebGL 似乎在平板电脑上取得了巨大进展：我看到过运行它的三星 Android 设备、RIM Playbook、新款 ChromeBook 上网本，所有这些设备售价都在 500 美元左右。这太棒了。
+我不是市场研究人员，所以手头没有最新的数据。在此前提下……`WebGL` 似乎在平板电脑上取得了巨大进展：我看到过运行它的三星 `Android` 设备、`RIM Playbook`、新款 `ChromeBook` 上网本，所有这些设备售价都在 500 美元左右。这太棒了。
 
-*你认为将 Node.js 与 HTML5 结合使用会成为移动应用程序的一个主要趋势吗？*
+### 你认为将 Node.js 与 HTML5 结合使用会成为移动应用程序的一个主要趋势吗？
 
-我认为现在判断还为时过早。我当然喜欢用 JavaScript 编写一切的想法。然而，目前 HTML5 在移动客户端上的性能还不达标。简单的应用程序运行良好，但如果你有一个 CPU 或内存密集型应用程序（比如，一个需要快速反应的游戏），你就会遇到麻烦。我在过去一年开发过的应用程序中就遇到过这种情况。在其中一个案例中，我们有一个架构优美、完全可移植的基于 HTML5 的游戏（仅使用 2D Canvas 渲染，没有 WebGL），但最终不得不将其移植到原生 iOS 代码，因为它消耗了太多内存，并且会在动画过渡期间进行垃圾回收。
+我认为现在判断还为时过早。我当然喜欢用 `JavaScript` 编写一切的想法。然而，目前 `HTML5` 在移动客户端上的性能还不达标。简单的应用程序运行良好，但如果你有一个 `CPU` 或内存密集型应用程序（比如，一个需要快速反应的游戏），你就会遇到麻烦。我在过去一年开发过的应用程序中就遇到过这种情况。在其中一个案例中，我们有一个架构优美、完全可移植的基于 `HTML5` 的游戏（仅使用 `2D Canvas` 渲染，没有 `WebGL`），但最终不得不将其移植到原生 `iOS` 代码，因为它消耗了太多内存，并且会在动画过渡期间进行垃圾回收。
 
-随着移动硬件平台整合更快的 CPU 和更多内存，以及 JavaScript 虚拟机进一步优化，开发者们学习到更多管理应用程序内存的技巧，我们将看到这种情况发生改变，HTML5 有望实现其作为移动开发平台的潜力。
+随着移动硬件平台整合更快的 `CPU` 和更多内存，以及 `JavaScript` 虚拟机进一步优化，开发者们学习到更多管理应用程序内存的技巧，我们将看到这种情况发生改变，`HTML5` 有望实现其作为移动开发平台的潜力。
 
-*HTML5 的哪些方面在未来五年会发生重大变化？*
+### HTML5 的哪些方面在未来五年会发生重大变化？
 
-我没有水晶球，但我希望看到音频和视频 API 的统一。从一个自私的、面向游戏开发者的角度来看，我还希望看到更多的输入支持，例如游戏手柄和鼠标锁定。
+我没有水晶球，但我希望看到音频和视频 `API` 的统一。从一个自私的、面向游戏开发者的角度来看，我还希望看到更多的输入支持，例如游戏手柄和鼠标锁定。
 
-另一个潜在有趣的发展是 Google 的新语言 Dart，用于编程结构化的 Web 应用程序。它是一种类似 Java 和 C# 的类型化语言，旨在提供比 JavaScript 更好的性能和可靠性。Dart 更像是一种硬核编程语言，我不会把它放在今天的普通 Web 客户端开发者面前；但拥有计算机科学背景的严肃工程师将能够利用它来构建工业级的 Web 应用程序。目前 Dart 仅在 Chromium 的开发版本中；希望有一天它能进入正式版的 Chrome 和所有其他浏览器。
+另一个潜在有趣的发展是 `Google` 的新语言 `Dart`，用于编程结构化的 `Web` 应用程序。它是一种类似 `Java` 和 `C#` 的类型化语言，旨在提供比 `JavaScript` 更好的性能和可靠性。`Dart` 更像是一种硬核编程语言，我不会把它放在今天的普通 `Web` 客户端开发者面前；但拥有计算机科学背景的严肃工程师将能够利用它来构建工业级的 `Web` 应用程序。目前 `Dart` 仅在 `Chromium` 的开发版本中；希望有一天它能进入正式版的 `Chrome` 和所有其他浏览器。
 
-对于 WebGL，我当然希望看到标准化的文件格式出现。WebGL 只是一个 API，这是一个巨大的优势，但也是阿喀琉斯之踵。没有内容的标准格式，工具链的状况确实混乱不堪，互操作性也将非常困难。当然，这可能是我旧有的 VRML 偏见在作祟。
+对于 `WebGL`，我当然希望看到标准化的文件格式出现。`WebGL` 只是一个 `API`，这是一个巨大的优势，但也是阿喀琉斯之踵。没有内容的标准格式，工具链的状况确实混乱不堪，互操作性也将非常困难。当然，这可能是我旧有的 `VRML` 偏见在作祟。
 
-*移动开发者现在必须具备哪些技能？*
+### 移动开发者现在必须具备哪些技能？
 
 耐心、灵活性，以及厚脸皮（抗压能力）。
 
-*对于原生开发，你更倾向于 Android 还是 iOS？*
+### 对于原生开发，你更倾向于 Android 还是 iOS？
 
-我只为 iOS 做过生产开发，所以我的视野有限。我并不迷恋 Objective-C 和 Cocoa；另一方面，我也不讨厌它们，我能在那个环境中高效工作。总有一天我希望涉足 Android 开发。第一步是克服我对编写 Java 代码的非理性犹豫。这是十年来一直在我脑海中的事情……毫无道理。
+我只为 `iOS` 做过生产开发，所以我的视野有限。我并不迷恋 `Objective-C` 和 `Cocoa`；另一方面，我也不讨厌它们，我能在那个环境中高效工作。总有一天我希望涉足 `Android` 开发。第一步是克服我对编写 `Java` 代码的非理性犹豫。这是十年来一直在我脑海中的事情……毫无道理。
 
-*一些专家声称 Android 会栽跟头，你认为这在多大程度上是真的？*
+### 一些专家声称 Android 会栽跟头，你认为这在多大程度上是真的？
 
-我认为 Android 未来几年将保持强健。围绕 Android 的活动太多，有如此多的开发者为它构建应用，众多制造商的支持，以及 Google 的坚定支持。所有这些，加上每个人都对 Apple 足够敬畏，他们希望确保在相当长一段时间内有一个可行的替代方案。
+我认为 `Android` 未来几年将保持强健。围绕 `Android` 的活动太多，有如此多的开发者为它构建应用，众多制造商的支持，以及 `Google` 的坚定支持。所有这些，加上每个人都对 `Apple` 足够敬畏，他们希望确保在相当长一段时间内有一个可行的替代方案。
 
-*你认为 Web 开发者在未来几年需要掌握哪些新技能？*
+### 你认为 Web 开发者在未来几年需要掌握哪些新技能？
 
-首先，多媒体编程。Flash 失去其主导地位将重写规则。新世界将是 HTML5、CSS3、WebGL、Canvas。SVG 的命运不确定；也许它会复兴。动画并非这些标准中的一等公民，因此我们将看到用于开发动画和更高层次行为的工具包；程序员首先需要在那里评估和探索替代方案，也许有一天会出现一个明确的赢家（就像 jQuery 在文档操作方面做到的那样）。
+首先，多媒体编程。`Flash` 失去其主导地位将重写规则。新世界将是 `HTML5`、`CSS3`、`WebGL`、`Canvas`。`SVG` 的命运不确定；也许它会复兴。动画并非这些标准中的一等公民，因此我们将看到用于开发动画和更高层次行为的工具包；程序员首先需要在那里评估和探索替代方案，也许有一天会出现一个明确的赢家（就像 `jQuery` 在文档操作方面做到的那样）。
 
-其次，异步、事件驱动的服务器编程。Node.js 正在为一种新的思维方式铺平道路。一切都关于事件和监听器。这从可扩展性的角度来看非常棒，但对于习惯了像 PHP 和 Python 那样更经典的命令式方法的人来说，这相当噩梦般。但对这种学习方法进行投资，将在服务器端应用程序的可扩展性、性能和模块化方面产生回报。
+其次，异步、事件驱动的服务器编程。`Node.js` 正在为一种新的思维方式铺平道路。一切都关于事件和监听器。这从可扩展性的角度来看非常棒，但对于习惯了像 `PHP` 和 `Python` 那样更经典的命令式方法的人来说，这相当噩梦般。但对这种学习方法进行投资，将在服务器端应用程序的可扩展性、性能和模块化方面产生回报。
 
 最后，云服务。很明显，对于除大公司之外的所有人来说，集中式数据中心的时代已经结束。
 
 本章访谈到此结束。也许这些访谈中的一些答案能为您提供宝贵的见解，帮助您进行技术开发和选择技术。
 
-最后，Web 领域正处于激动人心的时代，新工具包和框架的创建速度既令人惊叹，也给那些想要跟上最新酷炫技术的人带来了挑战。希望本书中的信息能帮助您拓展知识，并助您实现技术目标。
+最后，`Web` 领域正处于激动人心的时代，新工具包和框架的创建速度既令人惊叹，也给那些想要跟上最新酷炫技术的人带来了挑战。希望本书中的信息能帮助您拓展知识，并助您实现技术目标。
 
+---
 
+# 附录 A-E
 
-## 附录 A-E
+附录 A-E（标题如下）位于随附的 `DVD` 中。
 
-附录 A-E（标题如下）位于随附的 DVD 中。
-附录 A：SVG 概述
-附录 B：Android 简介
-附录 C：HTML 5 和 JavaScript 工具包
-附录 D：Roomba 机器人编程
-附录 E：SPA 简介
+- 附录 A：`SVG` 概述
+- 附录 B：`Android` 简介
+- 附录 C：`HTML 5` 和 `JavaScript` 工具包
+- 附录 D：`Roomba` 机器人编程
+- 附录 E：`SPA` 简介
 
-## 索引
+---
 
-A
+# 索引
 
--   addClass() 函数，254
--   addClass() 方法，205
--   addWord()，41
--   Adobe Edge，146，182–184
--   Adobe Shadow，53
--   AjaxForm.html，448–449
--   AliceJS，184
--   Android 应用程序
-    -   HTML5 与，586-591
-    -   HTML5 Canvas 与，595–607
-    -   使用现有库绘制图表，583–584
-    -   使用 jQuery Mobile，607–610
-    -   使用 PhoneGap 插件，612–615
-    -   用于机器人控制，628–631
-    -   SVG（可缩放矢量图形）与，592–594
--   AndroidCanvas1.html，595–597
--   AndroidCanvasMultiLine2.html，598–604
--   AndroidCSS3Activity.java，590–591
--   AndroidCSS3.css，588–590
--   AndroidCSS3.html，587-588
--   AndroidSVG1Activity.java，593-594
--   AndroidSVG1.html，592–593
--   jQuery 中的动画效果，254-255
--   CSS3 的动画效果，108–116
-    -   “弹跳”效果，114–116
-    -   3D，122–126
-    -   “发光”效果，109–111
-    -   glow @keyframes 规则，111
-    -   图像淡入淡出和旋转效果，111–113
-    -   @keyframes，109
-    -   使用 CSS3 实现滑动面板，127–133
-    -   精灵图与，126–127
--   使用 jQuery Mobile 的动画效果
-    -   加速度计数值，421–425
-    -   “弹跳球”，421
-    -   使用 CSS3，401–404
-    -   使用点击事件实现 CSS3 3D 动画，415
-    -   使用 jQuery Mobile 实现 CSS3 2D/3D 动画效果，411–414
-    -   3D 立方体，418–420
-    -   与动态动画效果，415–418
-    -   淡入淡出相关方法，393–396
-    -   处理用户手势和事件，384–393
-    -   翻页效果，405–411
-    -   滑动相关方法，396–398
-    -   过渡效果，399–401
-    -   “虚拟”鼠标事件，405
--   Anim240Flicker3DLGrad4.css，123–126
--   Anim240Flicker3DLGrad4.html，123，126
--   appendAfter() 方法，215
--   append() 方法，215
--   appendTo() 方法，214–215
--   应用程序编程接口（API），1
--   AreaGraph2.html，556–558
--   attr() 方法，205
+## A
 
-B
+- `addClass()` 函数，254
+- `addClass()` 方法，205
+- `addWord()`，41
+- `Adobe Edge`，146，182–184
+- `Adobe Shadow`，53
+- `AjaxForm.html`，448–449
+- `AliceJS`，184
+- `Android` 应用程序
+  - `HTML5` 与，586-591
+  - `HTML5 Canvas` 与，595–607
+  - 使用现有库绘制图表，583–584
+  - 使用 `jQuery Mobile`，607–610
+  - 使用 `PhoneGap` 插件，612–615
+  - 用于机器人控制，628–631
+  - `SVG`（可缩放矢量图形）与，592–594
+- `AndroidCanvas1.html`，595–597
+- `AndroidCanvasMultiLine2.html`，598–604
+- `AndroidCSS3Activity.java`，590–591
+- `AndroidCSS3.css`，588–590
+- `AndroidCSS3.html`，587-588
+- `AndroidSVG1Activity.java`，593-594
+- `AndroidSVG1.html`，592–593
+- `jQuery` 中的动画效果，254-255
+- `CSS3` 的动画效果，108–116
+  - “弹跳”效果，114–116
+  - `3D`，122–126
+  - “发光”效果，109–111
+  - `glow @keyframes` 规则，111
+  - 图像淡入淡出和旋转效果，111–113
+  - `@keyframes`，109
+  - 使用 `CSS3` 实现滑动面板，127–133
+  - 精灵图与，126–127
+- 使用 `jQuery Mobile` 的动画效果
+  - 加速度计数值，421–425
+  - “弹跳球”，421
+  - 使用 `CSS3`，401–404
+  - 使用点击事件实现 `CSS3 3D` 动画，415
+  - 使用 `jQuery Mobile` 实现 `CSS3 2D/3D` 动画效果，411–414
+  - `3D` 立方体，418–420
+  - 与动态动画效果，415–418
+  - 淡入淡出相关方法，393–396
+  - 处理用户手势和事件，384–393
+  - 翻页效果，405–411
+  - 滑动相关方法，396–398
+  - 过渡效果，399–401
+  - “虚拟”鼠标事件，405
+- `Anim240Flicker3DLGrad4.css`，123–126
+- `Anim240Flicker3DLGrad4.html`，123，126
+- `appendAfter()` 方法，215
+- `append()` 方法，215
+- `appendTo()` 方法，214–215
+- 应用程序编程接口（`API`），1
+- `AreaGraph2.html`，556–558
+- `attr()` 方法，205
 
--   backButtonClicked() 函数，131
--   background-image 属性，106
--   BarChart13D1Mouse1.html，545–550
--   BarChart2LG1.html，534–539
--   BasicAjax1.html，444–445
--   Battery.html，430–431
--   beforeSend() 函数，447
--   Berners-Lee, Tim，2
--   贝塞尔曲线，504–509
-    -   使用线性和径向渐变，505–509
--   bind() 方法，288
--   Blaze，51
--   Blue3DCircle1.css，173
--   Blue3DCircle1.html，174
--   Blueprint CSS 框架，137–138
--   border-radius 属性，285
--   Bounce2.css，115
--   Bounce2.html，114–116
+## B
 
-# C
+- `backButtonClicked()` 函数，131
+- `background-image` 属性，106
+- `BarChart13D1Mouse1.html`，545–550
+- `BarChart2LG1.html`，534–539
+- `BasicAjax1.html`，444–445
+- `Battery.html`，430–431
+- `beforeSend()` 函数，447
+- `Berners-Lee, Tim`，2
+- 贝塞尔曲线，504–509
+  - 使用线性和径向渐变，505–509
+- `bind()` 方法，288
+- `Blaze`，51
+- `Blue3DCircle1.css`，173
+- `Blue3DCircle1.html`，174
+- `Blueprint CSS` 框架，137–138
+- `border-radius` 属性，285
+- `Bounce2.css`，115
+- `Bounce2.html`，114–116
 
--   缓存 jQuery 调用，222
--   Caniuse，10
--   canPlayType() 方法，26
--   canvas 背景，147–149
--   Canvas1.html，457–488
--   .children() 方法，219
--   Chrome Speed Tracer，51
--   clearFields() 函数，41
--   clearLocalStorage() 函数，42
--   clickElements() 函数，191
--   click() 函数，223
--   clone() 方法，211，213
--   Compass/Sass CSS 框架，135–137
--   Contacts API，450–452
--   CouchDB Mobile，49
--   createTestData() 函数，42
+## C
 
-# CSS3
+- 缓存 `jQuery` 调用，222
+- `Caniuse`，10
+- `canPlayType()` 方法，26
+- `canvas` 背景，147–149
+- `Canvas1.html`，457–488
+- `.children()` 方法，219
+- `Chrome Speed Tracer`，51
+- `clearFields()` 函数，41
+- `clearLocalStorage()` 函数，42
+- `clickElements()` 函数，191
+- `click()` 函数，223
+- `clone()` 方法，211，213
+- `Compass/Sass CSS` 框架，135–137
+- `Contacts API`，450–452
+- `CouchDB Mobile`，49
+- `createTestData()` 函数，42
 
--   动画效果，108–116，270–276
--   属性选择器，59–60
--   布尔选择器与，58
--   盒子阴影效果与，65–67
--   浏览器支持情况，56–57
--   使用 RGB 和 HSL 的颜色，61
--   使用 CSS3 实现圆角和阴影效果，58
--   CSS3 中的 3D 效果，119–122
--   2D 变换，78–90
--   IDE，182–184
--   线性渐变，70–74
--   媒体查询，55，90–96
--   使用的元字符，58
--   新特性，146–147
--   用于渐变的在线工具，78
--   概述，57–58
--   性能，141
--   表示工具，98–99
--   伪类，58–59
--   径向渐变，74–78
--   关系符号，60–61
--   渲染文本字符串，116–119
--   圆角与，67–70
--   阴影效果和圆角，61–70
--   文本阴影效果与，61–65
--   工具包，182–184
--   过渡，107–108
--   有用链接，141–143
--   Web 字体，96–98
--   WebKit 特定前缀，57
--   960.css，10
--   CSS3Background1.css，357，581–582
--   CSS3Background2.css，363–364，492–493
--   CSS3Background3.css，372
--   CSS3Background4.css，374
--   CSSCanvasBackground2.html，148
--   CSS 框架，134–140
-    -   Blueprint，137–138
-    -   Compass/Sass，135–137
-    -   LESS，138–140
--   css() 函数，209，244–246，404
--   CSS3 功能，1
--   css() 方法，205，228
--   CSS 相关 IDE，146
--   CSS 样式表 wide.css，215
--   CSS3SVGBarChart1.css，177
--   CSS3SVGBarChart1.html，175–176
--   CSS3SVGBarChart1.svg，178–179
--   使用 CSS3 制作立方体，102–106
--   CustomAttributes1.html，18–19
+### CSS3
 
-# D
+- 动画效果，108–116，270–276
+- 属性选择器，59–60
+- 布尔选择器与，58
+- 盒子阴影效果与，65–67
+- 浏览器支持情况，56–57
+- 使用 `RGB` 和 `HSL` 的颜色，61
+- 使用 `CSS3` 实现圆角和阴影效果，58
+- `CSS3` 中的 `3D` 效果，119–122
+- `2D` 变换，78–90
+- `IDE`，182–184
+- 线性渐变，70–74
+- 媒体查询，55，90–96
+- 使用的元字符，58
+- 新特性，146–147
+- 用于渐变的在线工具，78
+- 概述，57–58
+- 性能，141
+- 表示工具，98–99
+- 伪类，58–59
+- 径向渐变，74–78
+- 关系符号，60–61
+- 渲染文本字符串，116–119
+- 圆角与，67–70
+- 阴影效果和圆角，61–70
+- 文本阴影效果与，61–65
+- 工具包，182–184
+- 过渡，107–108
+- 有用链接，141–143
+- `Web` 字体，96–98
+- `WebKit` 特定前缀，57
+- `960.css`，10
+- `CSS3Background1.css`，357，581–582
+- `CSS3Background2.css`，363–364，492–493
+- `CSS3Background3.css`，372
+- `CSS3Background4.css`，374
+- `CSSCanvasBackground2.html`，148
+- `CSS` 框架，134–140
+  - `Blueprint`，137–138
+  - `Compass/Sass`，135–137
+  - `LESS`，138–140
+- `css()` 函数，209，244–246，404
+- `CSS3` 功能，1
+- `css()` 方法，205，228
+- `CSS` 相关 `IDE`，146
+- `CSS` 样式表 `wide.css`，215
+- `CSS3SVGBarChart1.css`，177
+- `CSS3SVGBarChart1.html`，175–176
+- `CSS3SVGBarChart1.svg`，178–179
+- 使用 `CSS3` 制作立方体，102–106
+- `CustomAttributes1.html`，18–19
 
--   DAP（设备 API 工作组），2–3
--   .data() 方法，206
--   data-transition 属性，399
--   dblclick() 函数，224
--   3DCSS1.css，103
--   3DCube1.css，103
--   3DCube1CSSShaders1.html，161–162
--   3DCube1.html，106
--   3DCube1SVAnimation1.html，165–166
--   调试工具，50
-    -   Adobe Shadow，53
-    -   Blaze，51
-    -   Chrome Speed Tracer，51
-    -   Firebug，52
-    -   jsconsole，52–53
-    -   PageSpeed，51–52
-    -   Socketbug，53
-    -   Weinre，52
--   CSS3 中的 3D 效果，119–122
--   DetachedTiles.css，168–169
--   DetachedTiles.html，167–168
--   DetachedTiles.vs，169–170
--   设备适配 CSS，149–150
--   devicemotion 事件，238
--   displayItem() 函数，41
--   Dolphin 浏览器，5
--   done() 函数，447
--   拖放，452–456
--   draw() 函数，149
--   drawGraphics() JavaScript 函数，148
--   CSS3 的 2D 变换，78–90
-    -   旋转效果，82–84
-    -   倾斜效果，84–87
-    -   translate() 函数，87–90
-    -   放大/缩小效果，79–81
--   2D translate() 函数，121
--   着色器，160
--   顶点 CSS 着色器，161–165
+## D
 
-# F
+- `DAP`（设备 `API` 工作组），2–3
+- `.data()` 方法，206
+- `data-transition` 属性，399
+- `dblclick()` 函数，224
+- `3DCSS1.css`，103
+- `3DCube1.css`，103
+- `3DCube1CSSShaders1.html`，161–162
+- `3DCube1.html`，106
+- `3DCube1SVAnimation1.html`，165–166
+- 调试工具，50
+  - `Adobe Shadow`，53
+  - `Blaze`，51
+  - `Chrome Speed Tracer`，51
+  - `Firebug`，52
+  - `jsconsole`，52–53
+  - `PageSpeed`，51–52
+  - `Socketbug`，53
+  - `Weinre`，52
+- `CSS3` 中的 `3D` 效果，119–122
+- `DetachedTiles.css`，168–169
+- `DetachedTiles.html`，167–168
+- `DetachedTiles.vs`，169–170
+- 设备适配 `CSS`，149–150
+- `devicemotion` 事件，238
+- `displayItem()` 函数，41
+- `Dolphin` 浏览器，5
+- `done()` 函数，447
+- 拖放，452–456
+- `draw()` 函数，149
+- `drawGraphics()` `JavaScript` 函数，148
+- `CSS3` 的 `2D` 变换，78–90
+  - 旋转效果，82–84
+  - 倾斜效果，84–87
+  - `translate()` 函数，87–90
+  - 放大/缩小效果，79–81
+- `2D translate()` 函数，121
+- 着色器，160
+- 顶点 `CSS` 着色器，161–165
 
--   fadeClass() 函数，255
--   .fadeIn() 和 .fadeOut() 方法，394–396
--   .fadeIn() 函数，256
--   FadeInOut.html，256–257
--   .fadeOut() 函数，256
--   .fadeToggle() 函数，256
--   FadingImages1.css，112–113
--   FadingImages1.html，111–112
--   文件 API，470–472
--   fillRect() 方法，488
--   filter() 方法，211
--   filter 属性，166
--   find() 方法，228
--   findUserLocation() 函数，234
--   Firebug，52
--   Firefox 浏览器，173
--   first-child() 函数，209
--   float 属性，91
--   focus() 函数，224
--   @font-face 选择器，96
--   font-family 属性，96
--   font-size 属性，204
+## E
 
-# E
+- 缓动函数参数，263
+- `effect()` 函数，321–323
+- `hgroup` 元素，18
+- `img` 元素，60，80–81
+- `e.preventDefault()`，384
+- `errorCallback()` 函数，234
+- `error()` 函数，447
+- 错误处理 `JavaScript` 代码，21–22
+- `e.stopPropagation()`，385
+- `EventSource1.html`，461–462
+- `CSS` 排除
+  - 使用着色器实现动画效果，165–167
+  - `CSSExclusions1.html`，150–153
+  - 使用着色器实现幕帘效果，171–173
+  - 使用着色器实现分离的图块，167–171
+  - 滤镜效果，154
+  - 弹性盒子（`Flexbox`），155
+  - 网格（`Grid`），156
+  - 区域（`Regions`），157–160
+- `HTML5` 的 `Form` 元素，29–35
+  - 属性，30
+  - 示例，30–34
+  - `FormData` 对象，34–35
+  - 新的 `HTML5` 表单输入类型，29–30
+- `fr`（“分数”），156
+- `function testWebSocket()`，438
 
--   缓动函数参数，263
--   effect() 函数，321–323
--   hgroup 元素，18
--   img 元素，60，80–81
--   e.preventDefault()，384
--   errorCallback() 函数，234
--   error() 函数，447
--   错误处理 JavaScript 代码，21–22
--   e.stopPropagation()，385
--   EventSource1.html，461–462
--   CSS 排除
-    -   使用着色器实现动画效果，165–167
-    -   CSSExclusions1.html，150–153
-    -   使用着色器实现幕帘效果，171–173
-    -   使用着色器实现分离的图块，167–171
-    -   滤镜效果，154
-    -   弹性盒子（Flexbox），155
-    -   网格（Grid），156
-    -   区域（Regions），157–160
--   HTML5 的 Form 元素，29–35
-    -   属性，30
-    -   示例，30–34
-    -   FormData 对象，34–35
-    -   新的 HTML5 表单输入类型，29–30
--   fr（“分数”），156
--   function testWebSocket()，438
+## F
 
-# G
+- `fadeClass()` 函数，255
+- `.fadeIn()` 和 `.fadeOut()` 方法，394–396
+- `.fadeIn()` 函数，256
+- `FadeInOut.html`，256–257
+- `.fadeOut()` 函数，256
+- `.fadeToggle()` 函数，256
+- `FadingImages1.css`，112–113
+- `FadingImages1.html`，111–112
+- 文件 `API`，470–472
+- `fillRect()` 方法，488
+- `filter()` 方法，211
+- `filter` 属性，166
+- `find()` 方法，228
+- `findUserLocation()` 函数，234
+- `Firebug`，52
+- `Firefox` 浏览器，173
+- `first-child()` 函数，209
+- `float` 属性，91
+- `focus()` 函数，224
+- `@font-face` 选择器，96
+- `font-family` 属性，96
+- `font-size` 属性，204
 
--   getCSSCanvasContext() 方法，149
--   getCurrentPosition() 函数，234
--   getUserMedia()，28
--   GotData() 函数，447
--   CSS3 的渐变
-    -   线性渐变，70–74
-    -   在线工具，78
-    -   径向渐变，74–78
+## G
 
-# H
+- `getCSSCanvasContext()` 方法，149
+- `getCurrentPosition()` 函数，234
+- `getUserMedia()`，28
+- `GotData()` 函数，447
+- `CSS3` 的渐变
+  - 线性渐变，70–74
+  - 在线工具，78
+  - 径向渐变，74–78
 
--   Hardy, Vincent，633–639
--   HelloWorld1.html，193–195
--   hide() 函数，254–255
--   与 history 相关的 API，478
--   HTML5
-    -   在 Android 应用程序中，586–591
-    -   BoilerPlate，10–11
-    -   浏览器支持情况，5–6
-    -   CanIuse，10
-    -   HTML5 中的自定义属性，18–19
-    -   数据库，1
-    -   定义，4–5
-    -   网页设计，11
-    -   拖放 API，1
-    -   hgroup 元素，18
-    -   用于“语义标记”的元素，13–17
-    -   电子邮件输入字段，54
-    -   Form 元素，1，29–35
-    -   优雅降级，11
-    -   localStorage，1，37–44
-    -   在移动设备上，10
-    -   Modernizr，8–9
-    -   渐进增强，11
-    -   特定元素，1
-    -   相关技术，1，6–7
-    -   工具和网站，7–8
-    -   Video1.html，23
-    -   与 HTML4 标签的对比，7–8
-    -   Web 数据库，44–45
-    -   网页，1，12–13
-    -   Web 存储，35–37
-    -   yepnope.js，9
--   HTML5 Canvas
-    -   Android 应用程序与，595–607
-    -   面积图，556–558
-    -   在 Canvas 中绘制柱状图，534–540
-    -   使用 jQuery Mobile 绘制柱状图，564–569
-    -   使用 WebSocket 服务器绘制柱状图，570–577
-    -   贝塞尔曲线，504–509
-    -   笛卡尔坐标系，486–487
-    -   使用现有库绘制图表，583–584
-    -   使用 CSS3 和 jQuery Mobile，522–529
-    -   在 Canvas 中绘制 3D 柱状图，545–550
-    -   定义，484–485
-    -   图形效果示例，578–582
-    -   JavaScript 工具包，531
-    -   jCanvas jQuery 插件，519–522
-    -   K3D 工具包，529–530
-    -   线性渐变，494–499
-    -   线段、矩形、圆和阴影效果，488–494
-    -   在 Canvas 中绘制与鼠标交互的柱状图，540–545
-    -   多个图表和图形，564
-    -   在 Canvas 中绘制多个折线图，550–555
-    -   饼图，558–563
-    -   径向颜色渐变，499–504
-    -   使用 CSS 选择器渲染图像，510–513
-    -   使用图案重复图像，514–515
-    -   变换和保存状态，516–519
-    -   与 SVG 的对比，485–488
--   HTML5CanvasBBall2.html，605–607
--   HTML5 草案建议，54
--   与 HTML5 相关的技术
-    -   候选推荐状态的 API，430–431
-    -   实验性状态的 API，480–481
-    -   W3C 最终征求意见状态（LC）的 API，450
-    -   W3C 推荐状态的 API，429
-    -   Contacts API，450–452
-    -   跨源资源共享（CORS），448
-    -   检测在线和离线状态，480
-    -   拖放，452–453
-    -   文件 API，470–472
-    -   Geolocation API，431–434
-    -   getCurrentPosition() 方法，432–433
-    -   与 history 相关的 API，478
-    -   localStorage 的库，458–459
-    -   微数据（Microdata），473–474
-    -   迁移到 WebSockets，440–441
-    -   Notifications API，474–475
-    -   离线 Web 应用程序，479–480
-    -   使用 WebSockets 的项目，441–442
-    -   服务器发送事件（SSE），461–465
-    -   侧边栏，439–440
-    -   SPDY 与，439
+## H
 
+- `Hardy, Vincent`，633–639
+- `HelloWorld1.html`，193–195
+- `hide()` 函数，254–255
+- 与 `history` 相关的 `API`，478
+- `HTML5`
+  - 在 `Android` 应用程序中，586–591
+  - `BoilerPlate`，10–11
+  - 浏览器支持情况，5–6
+  - `CanIuse`，10
+  - `HTML5` 中的自定义属性，18–19
+  - 数据库，1
+  - 定义，4–5
+  - 网页设计，11
+  - 拖放 `API`，1
+  - `hgroup` 元素，18
+  - 用于“语义标记”的元素，13–17
+  - 电子邮件输入字段，54
+  - `Form` 元素，1，29–35
+  - 优雅降级，11
+  - `localStorage`，1，37–44
+  - 在移动设备上，10
+  - `Modernizr`，8–9
+  - 渐进增强，11
+  - 特定元素，1
+  - 相关技术，1，6–7
+  - 工具和网站，7–8
+  - `Video1.html`，23
+  - 与 `HTML4` 标签的对比，7–8
+  - `Web` 数据库，44–45
+  - 网页，1，12–13
+  - `Web` 存储，35–37
+  - `yepnope.js`，9
+- `HTML5 Canvas`
+  - `Android` 应用程序与，595–607
+  - 面积图，556–558
+  - 在 `Canvas` 中绘制柱状图，534–540
+  - 使用 `jQuery Mobile` 绘制柱状图，564–569
+  - 使用 `WebSocket` 服务器绘制柱状图，570–577
+  - 贝塞尔曲线，504–509
+  - 笛卡尔坐标系，486–487
+  - 使用现有库绘制图表，583–584
+  - 使用 `CSS3` 和 `jQuery Mobile`，522–529
+  - 在 `Canvas` 中绘制 `3D` 柱状图，545–550
+  - 定义，484–485
+  - 图形效果示例，578–582
+  - `JavaScript` 工具包，531
+  - `jCanvas jQuery` 插件，519–522
+  - `K3D` 工具包，529–530
+  - 线性渐变，494–499
+  - 线段、矩形、圆和阴影效果，488–494
+  - 在 `Canvas` 中绘制与鼠标交互的柱状图，540–545
+  - 多个图表和图形，564
+  - 在 `Canvas` 中绘制多个折线图，550–555
+  - 饼图，558–563
+  - 径向颜色渐变，499–504
+  - 使用 `CSS` 选择器渲染图像，510–513
+  - 使用图案重复图像，514–515
+  - 变换和保存状态，516–519
+  - 与 `SVG` 的对比，485–488
+- `HTML5CanvasBBall2.html`，605–607
+- `HTML5` 草案建议，54
+- 与 `HTML5` 相关的技术
+  - 候选推荐状态的 `API`，430–431
+  - 实验性状态的 `API`，480–481
+  - `W3C` 最终征求意见状态（`LC`）的 `API`，450
+  - `W3C` 推荐状态的 `API`，429
+  - `Contacts API`，450–452
+  - 跨源资源共享（`CORS`），448
+  - 检测在线和离线状态，480
+  - 拖放，452–453
+  - 文件 `API`，470–472
+  - `Geolocation API`，431–434
+  - `getCurrentPosition()` 方法，432–433
+  - 与 `history` 相关的 `API`，478
+  - `localStorage` 的库，458–459
+  - 微数据（`Microdata`），473–474
+  - 迁移到 `WebSockets`，440–441
+  - `Notifications API`，474–475
+  - 离线 `Web` 应用程序，479–480
+  - 使用 `WebSockets` 的项目，441–442
+  - 服务器发送事件（`SSE`），461–465
+  - 侧边栏，439–440
+  - `SPDY` 与，439
+- `HTML5SSE1.html`，462–464
 
+### HTML 规范
 
-## HTML 规范
-
--   W3C 表单，3–4，7，53
--   WHATWG 表单，4
-
-HTML5SSE1.html，462–464
+- `W3C` 表单，3–4，7，53
+- `WHATWG` 表单，4
 
 ## I
 
-Ice Cream Sandwich (ICS)，6
-IE10 浏览器，5
-if/then/else 构造，91
-Image1.css，512–513
-Image1.html，510–512
-IndexedDB 数据库，36，44–48
-index.html，613–614，619–621
-init() 函数，131
-init() 方法，25，515
-innerDiv 属性，91
-#input 选择器，111，116
-insertAfter() 方法，215
-insertBefore() 方法，215
-insert() 方法，215
+- `Ice Cream Sandwich (ICS)`，6
+- `IE10` 浏览器，5
+- `if/then/else` 构造，91
+- `Image1.css`，512–513
+- `Image1.html`，510–512
+- `IndexedDB` 数据库，36，44–48
+- `index.html`，613–614，619–621
+- `init()` 函数，131
+- `init()` 方法，25，515
+- `innerDiv` 属性，91
+- `#input` 选择器，111，116
+- `insertAfter()` 方法，215
+- `insertBefore()` 方法，215
+- `insert()` 方法，215
 
 ## J
 
-Jaffe, Jeffrey，2
-Japanese1.mp3，20
-Japanese1.mp3 音频文件，22
-JavaScript，10
-JavaScript 回调函数，29
-JavaScript 库，27
-JavaScript 工具包，531
-jCanvas jQuery 插件，519–522
-JCanvasSamples1.html，520–521
-Jelly Bean (JB)，6
-JQAccelerometer1.css，239
-JQAccelerometer1.html，236–238
-JQAnimate1.html，263–264
-JQAnimate3.html，265–266
-JQArchTripleShadowSkewEllipsesGrad3.css，252–253
-JQArchTripleShadowSkewEllipsesGrad3.html，249–251
-JQBouncingBalls1.html，280–283
-JQButtonAnimation1.html，270–272
-JQChaining1.html，230–231
-JQClickDivs1.html，224–225
-JQCreatingElements1.html，212–213
-JQCssDivElements1.html，244–246
-JQDragAndDrop1.html，454–455
-JQFileUpload2.html，471–472
-JQFindAndUpdate1.html，227–228
-JQFindByClassOrId1.html，203–204
-JQFindByCSS3StyleExpressions.html，209
-JQFindByCSS3StyleExpressions1.html，207–208
-JQFindByEvenOrOdd1.html，200–201
-JQGeoLocation1.html，232–234
-JQJStorage1.html，457–458
-JQLoginLS.html，196–198
-JQMAccelerometer1.css，423–425
-JQMAccelerometer1.html，421–423
-JQMAjax1.html，375–377
-JQMBarChart1.html，565–567
-JQMButtons1.html，354–356
-JQMCanvas1.css，527–529
-JQMCanvas1.html，523–526
-JQMCanvasTransforms1.html，517–518
-JQM2DAnimationRGrad4Reflect1.css，412–414
-JQM2DAnimationRGrad4Reflect1.html，412–413
-jqmData() 选择器，346
-JQM3DCube1.html，418–420
-JQMFadeInOut1.html，394–395
-JQMFixed1.html，350–351
-JQMForm1.html，360–363
-JQMGeoLocation1.html，378–381
-JQMHelloWorld1Enhanced.html，337–338
-JQMHelloWorld1.html，334–335
-JQMMenu1.html，373–374
-JQMMultiPageViews1.html，346–347
-JQMNavigationBar1.html，370–371
-JQMNestedListViews1.html，366–367
-JQModifyElements1.html，198–199
-JQMOrientation1.html，391–392
-JQMPageEvents1.html，341–342
-JQMPageTurn1.html，406–410
-JQMRenderJPG1.html，402–403
-JQMRotots.html，628–631
-JQMScrollEvents1.html，388–390
-JQMSimpleListView1.html，365
-JQMSketchSolidDynamicDOM1.html，416–418
-JQMSlideUpDown1.html，397–398
-JQMSwipeEvents1.html，387
-JQMSwipeTapEvents1.html，385–386
-JQMTransition1.html，399–400
-JQMTravel1Tab1Activity1.java，608–609
-JQRemovingElements1.html，209–211
-JQRoundedCorners1.html，247–248
-JQSiblingsChildren1.html，220–221
-JQSketchFollowMouse1.html，276–277
-JQSketchSolid1.html，278–279
-JQSlideShow1.html，268–269
-JQSlideUpDown.html，259–260
-JQTransforms2D1.css，273
-JQTransforms2D1.html，273–275
-jquery（另见 jQuery Mobile；UI 控件，jQuery）
-
--   加速度计值与，236–238
--   1.7 及更高版本，287–288
--   animate() 函数，262–268
--   中的动画效果，254–255
--   遍历元素的 API，226–229
--   调用缓存，222
--   命令链式调用，229–231
--   方法链式调用，192
--   代码块，215–216
--   创建图片幻灯片，268–270
--   css() 函数，209，244–246
--   中的 CSS3 选择器，244–253
--   定义，188–189
--   拖放，453–456
--   缓动函数，260–262
--   淡入淡出和滑动相关效果，256–262
--   filter() 方法，211
--   在网页中查找元素，192–198
--   查找元素的属性，205–206
--   使用 :eq(), :lt(), 和 :gt() 查找匹配元素，202–203
--   使用 :even 和 :odd 限定符查找元素，200–202
--   查找表单元素及其属性，206–207
--   “跟随鼠标”效果，276–278
--   未来版本，328–329
--   使用渐变和阴影效果，249–253
--   处理点击事件，223–226
--   HTML5 地理位置与，232–236
--   在 HTML5 网页中，189
--   id 值，254
--   用于插入 DOM 元素，214–215
--   在 iPad3 上，214
--   jQuery 限定符与 jQuery 方法，195–196
--   键盘事件，289
--   鼠标事件与，286–287
--   导航方法，216–221
--   nth-child() 运算符，207–209
--   插件，240
--   properties 参数，262–263
--   使用查询和修改 DOM，198–216
--   移除元素，209–211
--   渲染一组弹跳球，280–286
--   用于 3D 动画的 rotate3di 插件，280
--   圆角与，246–248
--   选择器，209
--   滑动相关函数，258–259
--   有用链接，329–330
--   使用回调函数，255
--   使用 Web 存储，196–198
--   与 jQuery Mobile 对比，338–339
-
-JQueryAjax1.html，446
-jQuery.ajax() 方法，447
+- `Jaffe, Jeffrey`，2
+- `Japanese1.mp3`，20
+- `Japanese1.mp3` 音频文件，22
+- `JavaScript`，10
+- `JavaScript` 回调函数，29
+- `JavaScript` 库，27
+- `JavaScript` 工具包，531
+- `jCanvas jQuery` 插件，519–522
+- `JCanvasSamples1.html`，520–521
+- `Jelly Bean (JB)`，6
+- `JQAccelerometer1.css`，239
+- `JQAccelerometer1.html`，236–238
+- `JQAnimate1.html`，263–264
+- `JQAnimate3.html`，265–266
+- `JQArchTripleShadowSkewEllipsesGrad3.css`，252–253
+- `JQArchTripleShadowSkewEllipsesGrad3.html`，249–251
+- `JQBouncingBalls1.html`，280–283
+- `JQButtonAnimation1.html`，270–272
+- `JQChaining1.html`，230–231
+- `JQClickDivs1.html`，224–225
+- `JQCreatingElements1.html`，212–213
+- `JQCssDivElements1.html`，244–246
+- `JQDragAndDrop1.html`，454–455
+- `JQFileUpload2.html`，471–472
+- `JQFindAndUpdate1.html`，227–228
+- `JQFindByClassOrId1.html`，203–204
+- `JQFindByCSS3StyleExpressions.html`，209
+- `JQFindByCSS3StyleExpressions1.html`，207–208
+- `JQFindByEvenOrOdd1.html`，200–201
+- `JQGeoLocation1.html`，232–234
+- `JQJStorage1.html`，457–458
+- `JQLoginLS.html`，196–198
+- `JQMAccelerometer1.css`，423–425
+- `JQMAccelerometer1.html`，421–423
+- `JQMAjax1.html`，375–377
+- `JQMBarChart1.html`，565–567
+- `JQMButtons1.html`，354–356
+- `JQMCanvas1.css`，527–529
+- `JQMCanvas1.html`，523–526
+- `JQMCanvasTransforms1.html`，517–518
+- `JQM2DAnimationRGrad4Reflect1.css`，412–414
+- `JQM2DAnimationRGrad4Reflect1.html`，412–413
+- `jqmData()` 选择器，346
+- `JQM3DCube1.html`，418–420
+- `JQMFadeInOut1.html`，394–395
+- `JQMFixed1.html`，350–351
+- `JQMForm1.html`，360–363
+- `JQMGeoLocation1.html`，378–381
+- `JQMHelloWorld1Enhanced.html`，337–338
+- `JQMHelloWorld1.html`，334–335
+- `JQMMenu1.html`，373–374
+- `JQMMultiPageViews1.html`，346–347
+- `JQMNavigationBar1.html`，370–371
+- `JQMNestedListViews1.html`，366–367
+- `JQModifyElements1.html`，198–199
+- `JQMOrientation1.html`，391–392
+- `JQMPageEvents1.html`，341–342
+- `JQMPageTurn1.html`，406–410
+- `JQMRenderJPG1.html`，402–403
+- `JQMRotots.html`，628–631
+- `JQMScrollEvents1.html`，388–390
+- `JQMSimpleListView1.html`，365
+- `JQMSketchSolidDynamicDOM1.html`，416–418
+- `JQMSlideUpDown1.html`，397–398
+- `JQMSwipeEvents1.html`，387
+- `JQMSwipeTapEvents1.html`，385–386
+- `JQMTransition1.html`，399–400
+- `JQMTravel1Tab1Activity1.java`，608–609
+- `JQRemovingElements1.html`，209–211
+- `JQRoundedCorners1.html`，247–248
+- `JQSiblingsChildren1.html`，220–221
+- `JQSketchFollowMouse1.html`，276–277
+- `JQSketchSolid1.html`，278–279
+- `JQSlideShow1.html`，268–269
+- `JQSlideUpDown.html`，259–260
+- `JQTransforms2D1.css`，273
+- `JQTransforms2D1.html`，273–275
+- `jquery`（另见 `jQuery Mobile`；`UI` 控件，`jQuery`）
+  - 加速度计值与，236–238
+  - 1.7 及更高版本，287–288
+  - `animate()` 函数，262–268
+  - 中的动画效果，254–255
+  - 遍历元素的 `API`，226–229
+  - 调用缓存，222
+  - 命令链式调用，229–231
+  - 方法链式调用，192
+  - 代码块，215–216
+  - 创建图片幻灯片，268–270
+  - `css()` 函数，209，244–246
+  - 中的 `CSS3` 选择器，244–253
+  - 定义，188–189
+  - 拖放，453–456
+  - 缓动函数，260–262
+  - 淡入淡出和滑动相关效果，256–262
+  - `filter()` 方法，211
+  - 在网页中查找元素，192–198
+  - 查找元素的属性，205–206
+  - 使用 `:eq()`、`:lt()` 和 `:gt()` 查找匹配元素，202–203
+  - 使用 `:even` 和 `:odd` 限定符查找元素，200–202
+  - 查找表单元素及其属性，206–207
+  - “跟随鼠标”效果，276–278
+  - 未来版本，328–329
+  - 使用渐变和阴影效果，249–253
+  - 处理点击事件，223–226
+  - `HTML5` 地理位置与，232–236
+  - 在 `HTML5` 网页中，189
+  - `id` 值，254
+  - 用于插入 `DOM` 元素，214–215
+  - 在 `iPad3` 上，214
+  - `jQuery` 限定符与 `jQuery` 方法，195–196
+  - 键盘事件，289
+  - 鼠标事件与，286–287
+  - 导航方法，216–221
+  - `nth-child()` 运算符，207–209
+  - 插件，240
+  - `properties` 参数，262–263
+  - 使用查询和修改 `DOM`，198–216
+  - 移除元素，209–211
+  - 渲染一组弹跳球，280–286
+  - 用于 `3D` 动画的 `rotate3di` 插件，280
+  - 圆角与，246–248
+  - 选择器，209
+  - 滑动相关函数，258–259
+  - 有用链接，329–330
+  - 使用回调函数，255
+  - 使用 `Web` 存储，196–198
+  - 与 `jQuery Mobile` 对比，338–339
+- `JQueryAjax1.html`，446
+- `jQuery.ajax()` 方法，447
 
 ### jQuery Mobile
 
--   Ajax 与，375–378
--   在 Android 应用程序中，607–610
--   按钮标记选项，351–358
--   自定义属性，339
--   功能和组件，334
--   表单和表单元素，360–364
--   地理位置信息与，378–381
--   HTML5 localStorage 与，457–458
--   图标，359
--   jqmData() 选择器，346
--   JQMHelloWorld1Enhanced.html，337–338
--   JQMHelloWorld1.html，334–337
--   列表视图，364–369
--   mobileinit 事件，343–344
--   单个 HTML5 网页中的多页面视图，346–348
--   导航栏，370–372
--   嵌套列表，366–369
--   选项和自定义，344–345
--   概述，332–334
--   页面导航和页面切换，345–346
--   页面过渡，339–342
--   页面视图，338
--   定位页眉和页脚工具栏，349–351
--   滚动事件，388–390
--   选择菜单，373–378
--   分割按钮，368
--   Sprint Nexus S 4G，369
--   与 jQuery 对比，338–339
-
-jQuery Mobile 页面，19
-jQuery 网站，187
-JQUIAccordion1.css，294
-JQUIAccordion1.html，292–294
-JQUIAnimSlider1.html，312–313
-JQUIButtons1.html，296–297
-JQUICheckBoxRadio1.html，298–300
-JQUIComboBox1.html，301–302
-JQUIDatePicker1.html，303–305
-JQUIEffects1.html，321–322
-JQUISlider1.html，308–312
-JQUITabs.html，314–317
-JQUIThemes1.html，318–320
-JQUITravel1.html，323–327
-JQWSBarChart1.html，569–572
-jsconsole，52–53
-jScrollPane 插件，308
+- `Ajax` 与，375–378
+- 在 `Android` 应用程序中，607–610
+- 按钮标记选项，351–358
+- 自定义属性，339
+- 功能和组件，334
+- 表单和表单元素，360–364
+- 地理位置信息与，378–381
+- `HTML5 localStorage` 与，457–458
+- 图标，359
+- `jqmData()` 选择器，346
+- `JQMHelloWorld1Enhanced.html`，337–338
+- `JQMHelloWorld1.html`，334–337
+- 列表视图，364–369
+- `mobileinit` 事件，343–344
+- 单个 `HTML5` 网页中的多页面视图，346–348
+- 导航栏，370–372
+- 嵌套列表，366–369
+- 选项和自定义，344–345
+- 概述，332–334
+- 页面导航和页面切换，345–346
+- 页面过渡，339–342
+- 页面视图，338
+- 定位页眉和页脚工具栏，349–351
+- 滚动事件，388–390
+- 选择菜单，373–378
+- 分割按钮，368
+- `Sprint Nexus S 4G`，369
+- 与 `jQuery` 对比，338–339
+- `jQuery Mobile` 页面，19
+- `jQuery` 网站，187
+- `JQUIAccordion1.css`，294
+- `JQUIAccordion1.html`，292–294
+- `JQUIAnimSlider1.html`，312–313
+- `JQUIButtons1.html`，296–297
+- `JQUICheckBoxRadio1.html`，298–300
+- `JQUIComboBox1.html`，301–302
+- `JQUIDatePicker1.html`，303–305
+- `JQUIEffects1.html`，321–322
+- `JQUISlider1.html`，308–312
+- `JQUITabs.html`，314–317
+- `JQUIThemes1.html`，318–320
+- `JQUITravel1.html`，323–327
+- `JQWSBarChart1.html`，569–572
+- `jsconsole`，52–53
+- `jScrollPane` 插件，308
 
 ## K
 
-K3D 工具包，529–530
+- `K3D` 工具包，529–530
 
 ## L
 
-横屏模式截图，83
-last-child() 函数，209
-Laurie1.jpeg，80
-Laurie2.jpeg，80
-#left:hover 选择器，106
-LeRoux, Brian，639–642
-LESS CSS 框架，138–140
-LGradRectangles1.html，495–499
-用于 localStorage 的库，458–459
-#linear 选择器，125
-localStorage，37–44
-
--   与 iOS 5.1，44
--   存储图像和文件，44
-
-localstorage.length，35
-LGradQCBezier1.html，505–509
+- 横屏模式截图，83
+- `last-child()` 函数，209
+- `Laurie1.jpeg`，80
+- `Laurie2.jpeg`，80
+- `#left:hover` 选择器，106
+- `LeRoux, Brian`，639–642
+- `LESS CSS` 框架，138–140
+- `LGradRectangles1.html`，495–499
+- 用于 `localStorage` 的库，458–459
+- `#linear` 选择器，125
+- `localStorage`，37–44
+  - 与 `iOS 5.1`，44
+  - 存储图像和文件，44
+- `localstorage.length`，35
+- `LGradQCBezier1.html`，505–509
 
 ## M
 
-main.js，614–615
-main.xml，587
-CSS3 媒体查询，90–96
-
--   中的布尔表达式，91
--   使用检测方向，92–94
--   内联样式标签，92
--   媒体类型测试，91–92
-
-menuItemClicked() 函数，131
-元字符 ^, $, 和 \*，58
-Microdata，473–474
-milliseconds 参数，263
-Modernizr，8–9
-MouseBarChart2LG1.html，540–545
-MouseCSS3EllipticPieChartSVG1.svg，579–580
-MouseCSS3SVGCanvas1.html，578–579
-MouseCSS3SVGCanvas1.svg，580–581
-Mozilla Firefox，5
-Mozilla Popcorn 项目，27
-MP4 文件，23
-MultiLineGraphs2.html，550–555
-MultiLingualForm2.html，37–41，43
-MyApp.appcache，479–480
-myphone.css，92
+- `main.js`，614–615
+- `main.xml`，587
+- `CSS3` 媒体查询，90–96
+  - 中的布尔表达式，91
+  - 使用检测方向，92–94
+  - 内联样式标签，92
+  - 媒体类型测试，91–92
+- `menuItemClicked()` 函数，131
+- 元字符 `^`、`$` 和 `\*`，58
+- `Microdata`，473–474
+- `milliseconds` 参数，263
+- `Modernizr`，8–9
+- `MouseBarChart2LG1.html`，540–545
+- `MouseCSS3EllipticPieChartSVG1.svg`，579–580
+- `MouseCSS3SVGCanvas1.html`，578–579
+- `MouseCSS3SVGCanvas1.svg`，580–581
+- `Mozilla Firefox`，5
+- `Mozilla Popcorn` 项目，27
+- `MP4` 文件，23
+- `MultiLineGraphs2.html`，550–555
+- `MultiLingualForm2.html`，37–41，43
+- `MyApp.appcache`，479–480
+- `myphone.css`，92
 
 ## N
 
-非 jQuery 的 JavaScript 方法，190–192
-Notifications API，474–475
-nth-child() 伪类，58–59
+- 非 `jQuery` 的 `JavaScript` 方法，190–192
+- `Notifications API`，474–475
+- `nth-child()` 伪类，58–59
 
 ## O
 
-离线 Web 应用程序，479–480
-Ogg 文件，23
-onerror() 函数，46–47
-open() 函数，47
-Opera，5
-#outer 选择器，121
+- 离线 `Web` 应用程序，479–480
+- `Ogg` 文件，23
+- `onerror()` 函数，46–47
+- `open()` 函数，47
+- `Opera`，5
+- `#outer` 选择器，121
 
 ## P
 
-pageLoading() 方法，344
-PageSpeed，51–52
-parent() 函数，209
-Parisi, Tony，642–647
-移动网站的性能，50
-PhoneGap，610–612
-PhoneGap1Activity.java，612–613
-PhoneGapForm1.html，616–618
-PieChart1.html，558–563
-插件，jQuery，240
-Popcorn.js，27
-populateDropDownList() 函数，42
-prepend() 方法，215
-prependTo() 函数，213
-用于 CSS3 的演示工具，98–99
-“prompt”（去掉符号），49
+- `pageLoading()` 方法，344
+- `PageSpeed`，51–52
+- `parent()` 函数，209
+- `Parisi, Tony`，642–647
+- 移动网站的性能，50
+- `PhoneGap`，610–612
+- `PhoneGap1Activity.java`，612–613
+- `PhoneGapForm1.html`，616–618
+- `PieChart1.html`，558–563
+- 插件，`jQuery`，240
+- `Popcorn.js`，27
+- `populateDropDownList()` 函数，42
+- `prepend()` 方法，215
+- `prependTo()` 函数，213
+- 用于 `CSS3` 的演示工具，98–99
+- “prompt”（去掉符号），49
 
 ## Q
 
-querySelectorAll 方法，190
-QuerySelectors1.html，190–191
+- `querySelectorAll` 方法，190
+- `QuerySelectors1.html`，190–191
 
 ## R
 
-#radial1:hover 选择器，121
-#radial2:hover 选择器，122
-#radial11:hover 选择器，121
-RandRectanglesShadow.html，489–491
-removeClass() 函数，254
-removeClass() 方法，205
-removeItemsFromDropDownList() 函数，42
-RepeatingImage1.html，514–515
-ReportError() 函数，22
-响应式 Web 设计，12
-RGradRectangles1.html，500–503
-#right:hover 选择器，105–106
-rotate3d() 函数，121–122
-rotate() 函数，82，102，106
-rotate() 方法，55，516
-#rounded-corners，139
+- `#radial1:hover` 选择器，121
+- `#radial2:hover` 选择器，122
+- `#radial11:hover` 选择器，121
+- `RandRectanglesShadow.html`，489–491
+- `removeClass()` 函数，254
+- `removeClass()` 方法，205
+- `removeItemsFromDropDownList()` 函数，42
+- `RepeatingImage1.html`，514–515
+- `ReportError()` 函数，22
+- 响应式 `Web` 设计，12
+- `RGradRectangles1.html`，500–503
+- `#right:hover` 选择器，105–106
+- `rotate3d()` 函数，121–122
+- `rotate()` 函数，82，102，106
+- `rotate()` 方法，55，516
+- `#rounded-corners`，139
 
 ## S
 
-基于 Sass 的代码示例，135–137
-scale3d() 函数，122
-scale() 函数，79–81，102，106
-scale() 方法，55
-语义化标记 HTML5 元素，13–17
-分号 (";")，41
-Sencha Animator，146，182–183
-服务器发送事件 (SSE)，461–465
-setTimeout() 函数，269
+- 基于 `Sass` 的代码示例，135–137
+- `scale3d()` 函数，122
+- `scale()` 函数，79–81，102，106
+- `scale()` 方法，55
+- 语义化标记 `HTML5` 元素，13–17
+- 分号 (`;`)，41
+- `Sencha Animator`，146，182–183
+- 服务器发送事件 (`SSE`)，461–465
+- `setTimeout()` 函数，269
+- 即将推出的功能，481–482
+- `Vibration API`，443
+- `WAI-ARIA` (`Web Accessibility Initiative: Accessible Rich Internet Applications`)，475–476
+- `watchPosition()` 方法，433–434
+- `W3C` 音频处理 `API`，465–470
+- `W3C` 审查流程，429
+- `Web Intents`，472–473
+- `Web Messaging`，459–461
+- `WebSockets`，435–439
+- `Web Workers`，476–477
+- `Working Draft` 状态，465
+- `XMLHttpRequest Level 2` 规范，444–450
 
-即将推出的功能，481–482
-Vibration API，443
-WAI-ARIA (Web Accessibility Initiative: Accessible Rich Internet Applications)，475–476
-watchPosition() 方法，433–434
-W3C 音频处理 API，465–470
-W3C 审查流程，429
-Web Intents，472–473
-Web Messaging，459–461
-WebSockets，435–439
-Web Workers，476–477
-"Working Draft" 状态，465
-XMLHttpRequest Level 2 规范，444–450
+## T
 
-
-
-# 索引 • 799
-
-- show() 函数，254–255
-- .siblings() 方法，219
-- 简单的 JavaScript 代码，用于检测方向，94–96
-- skew() 函数，84–87，102，106，119
-- skew() 方法，55
-- slideDown() 方法，258
-- slideshow() 函数，269
-- slideToggle() 方法，258
-- .slideUp() 和 .slideDown() 方法，396–398，402
-- slideUp() 方法，258
-- SlidingPanels.css，131–133
-- SlidingPanels.html，128–130
-- Socketbug，53
-- someValue() 函数，82
-- SpriteMe，127
-- SQLITE 语法，45
-- src 属性，23，60，205
-- successCallback() 函数，234
-- SVG（可缩放矢量图形），145–146，173–180
-  - 在 Android 应用程序上，592–594
-  - 条形图，175–180
-  - 渲染 3D 表面，180–181
-  - translate () 和 scale () 函数，179
-  - 与 CSS3 的比较，181–182
-- “.” 符号，203
-- “#” 符号，203
-- CSS 选择器的语法，203
-
-# T
-
-- TaffyDB 数据库，45
+- `TaffyDB` 数据库，45
 - 音频标签，19–22
 - 视频标签，22–27
   - 用于实时摄像头支持，28–29
-- TextShadow1.css，62–64
-- JavaScript 中的 this 关键字，222–223
-- Threed2.css，120–122
-- Tizen，622–628
-- toggleClass() 方法，252
-- toggle() 函数，255
-- Transition1.css，110
-- Transition1.html，109–110
-- CSS3 的过渡，107–108
-- translate3d() 函数，122
-- translate() 函数，87–90
-- translate() 方法，55
-- try/catch 块，41
-- tweet.js 文件，49
-- Twitter Bootstrap，10
-- Twitter 推文，48–49
+- `TextShadow1.css`，62–64
+- `JavaScript` 中的 `this` 关键字，222–223
+- `Threed2.css`，120–122
+- `Tizen`，622–628
+- `toggleClass()` 方法，252
+- `toggle()` 函数，255
+- `Transition1.css`，110
+- `Transition1.html`，109–110
+- `CSS3` 的过渡，107–108
+- `translate3d()` 函数，122
+- `translate()` 函数，87–90
+- `translate()` 方法，55
+- `try/catch` 块，41
+- `tweet.js` 文件，49
+- `Twitter Bootstrap`，10
+- `Twitter` 推文，48–49
 
-# U
+## U
 
-- jQuery 的 UI 控件
+- `jQuery` 的 `UI` 控件
   - 折叠效果，292–295
   - 按钮，295–298
   - 复选框和单选按钮，298–300
   - “日期选择器”功能，303–305
-  - effect() 函数，321–323
-  - 用于 HTML 组合框，301–303
+  - `effect()` 函数，321–323
+  - 用于 `HTML` 组合框，301–303
   - 进度条，305–307
   - 示例页面，323–328
   - 滚动窗格部件，308
   - 滑块部件，308–314
   - 选项卡，314–317
   - 主题，318–321
-- UIProgressBar1.html，305–307
-- updatePosition() 函数，284–285
-- upperLeft 关键帧，125
-- url() 函数，145，173
+- `UIProgressBar1.html`，305–307
+- `updatePosition()` 函数，284–285
+- `upperLeft` 关键帧，125
+- `SpriteMe`，127
+- `SQLITE` 语法，45
+- `src` 属性，23，60，205
+- `successCallback()` 函数，234
+- `SVG`（可缩放矢量图形），145–146，173–180
+  - 在 `Android` 应用程序上，592–594
+  - 条形图，175–180
+  - 渲染 `3D` 表面，180–181
+  - `translate()` 和 `scale()` 函数，179
+  - 与 `CSS3` 的比较，181–182
+- `.` 符号，203
+- `#` 符号，203
+- `CSS` 选择器的语法，203
 
-# V
+## V
 
-- val() 函数，197
-- viewport meta 元素，150
-- VP8，23
+- `val()` 函数，197
+- `viewport meta` 元素，150
+- `VP8`，23
 
-# W
+## W
 
-- WAI-ARIA（Web 无障碍倡议：无障碍富互联网应用程序），475–476
-- W3C 音频处理 API，465–470
-- W3C（万维网联盟），3
-- WebAudio1.html，466–468
-- WebCamera1.html，28
-- Web 数据库，44–45
+- `WAI-ARIA`（`Web` 无障碍倡议：无障碍富互联网应用程序），475–476
+- `W3C` 音频处理 `API`，465–470
+- `W3C`（万维网联盟），3
+- `WebAudio1.html`，466–468
+- `WebCamera1.html`，28
+- `Web` 数据库，44–45
   - 移动设备和，49
-- WebFonts1.css，97
-- WebFonts1.html，96–97
-- CSS3 的 Web 字体，96–98
+- `WebFonts1.css`，97
+- `WebFonts1.html`，96–97
+- `CSS3` 的 `Web` 字体，96–98
   - 在线资源，97–98
-- Web Intents，472–473
-- -webkit-animation-duration 属性，125
-- 基于 Webkit 的浏览器，6，173，243
-- WebKit 远程调试，53
-- -webkit-transform 属性，121–122
-- Web Messaging，459–461
-- .WebM 扩展名，23
-- WebSocket 服务器，442–443
-- WebSockets2.html，435–437
-- WebSQL 数据库，44
-- Web 标准，W3C 推荐标准，3
-- Web Storage，35–37
+- `Web Intents`，472–473
+- `-webkit-animation-duration` 属性，125
+- 基于 `Webkit` 的浏览器，6，173，243
+- `WebKit` 远程调试，53
+- `-webkit-transform` 属性，121–122
+- `Web Messaging`，459–461
+- `.WebM` 扩展名，23
+- `WebSocket` 服务器，442–443
+- `WebSockets2.html`，435–437
+- `WebSQL` 数据库，44
+- `Web` 标准，`W3C` 推荐标准，3
+- `Web Storage`，35–37
   - 优缺点，36
-  - cookies 和，36
+  - `cookies` 和，36
   - 安全性和，37
-  - 与 IndexedDB 的比较，36
-- Web Workers，476–477
-- WEINRE，52–53
-- WHATWG（Web 超文本应用技术工作组），2–4
-- width 属性，149
+  - 与 `IndexedDB` 的比较，36
+- `Web Workers`，476–477
+- `WEINRE`，52–53
+- `WHATWG`（`Web` 超文本应用技术工作组），2–4
+- `width` 属性，149
 - “工作草案”状态，465
-- WSTestSupport2.html，437–438
+- `WSTestSupport2.html`，437–438
 
-# X
+## X
 
-- XMLHttpRequest Level 2 规范，444–450
+- `XMLHttpRequest Level 2` 规范，444–450
 
-# Y
+## Y
 
-- yepnope.js，9
+- `yepnope.js`，9
 
-# Z
+## Z
 
-- zoom 属性，149
+- `zoom` 属性，149
+
+---
 
 # jQuery，用于移动和桌面 Web 的 CSS3
 
-OSWALD CAMPESATO
+**OSWALD CAMPESATO**
 
 ## DVD 包含！
+
 - 所有源代码
 - 书中所有图像（包括四色）
 
-本书涵盖了 HTML5 和 jQuery Mobile 的功能，并展示了如何利用 SVG 扩展 CSS3 的能力。本书内容面向对 CSS/HTML/JavaScript 有一定了解的读者，但更高级的用户也能从众多图形技术中受益，这些技术在许多代码示例中都有演示。你将看到有助于学习的示例：使用 jQuery 和 jQuery Mobile 创建移动 Web 应用程序；在 Android 和 iOS 上渲染 HTML5/CSS3/SVG 网页；以及使用 CSS3 创建 2D/3D 图形和动画效果。本书附带一张包含源代码和图形的 DVD。
+本书涵盖了 `HTML5` 和 `jQuery Mobile` 的功能，并展示了如何利用 `SVG` 扩展 `CSS3` 的能力。本书内容面向对 `CSS`/`HTML`/`JavaScript` 有一定了解的读者，但更高级的用户也能从众多图形技术中受益，这些技术在许多代码示例中都有演示。你将看到有助于学习的示例：使用 `jQuery` 和 `jQuery Mobile` 创建移动 `Web` 应用程序；在 `Android` 和 `iOS` 上渲染 `HTML5/CSS3/SVG` 网页；以及使用 `CSS3` 创建 `2D/3D` 图形和动画效果。本书附带一张包含源代码和图形的 `DVD`。
 
 # 简要目录
 
-1. HTML5 的新功能。
-2. CSS3 简介。
-3. CSS3 2D/3D 动画和 CSS 框架。
-4. CSS3 和 SVG。
-5. jQuery 基础。
-6. 使用 CSS3 和 jQuery 的动画效果。
-7. jQuery UI 控件。
-8. jQuery Mobile 简介。
-9. jQuery Mobile 中的用户手势和动画效果。
-10. 其他 HTML5 技术。
-11. HTML5 Canvas 简介。
-12. HTML5 Canvas 中的图表和图形。
-13. Android、iOS 和 Tizen 上的 HTML5 移动应用。
+1. `HTML5` 的新功能。
+2. `CSS3` 简介。
+3. `CSS3 2D/3D` 动画和 `CSS` 框架。
+4. `CSS3` 和 `SVG`。
+5. `jQuery` 基础。
+6. 使用 `CSS3` 和 `jQuery` 的动画效果。
+7. `jQuery UI` 控件。
+8. `jQuery Mobile` 简介。
+9. `jQuery Mobile` 中的用户手势和动画效果。
+10. 其他 `HTML5` 技术。
+11. `HTML5 Canvas` 简介。
+12. `HTML5 Canvas` 中的图表和图形。
+13. `Android`、`iOS` 和 `Tizen` 上的 `HTML5` 移动应用。
 14. 展望未来。
-- 附录 A-E（在 DVD 上）。
+- 附录 A-E（在 `DVD` 上）。
 - 索引。
 
 # 特色
 
-- 学习如何使用 jQuery 和 jQuery Mobile 创建网页
-- 使用 HTML5/CSS3/SVG 在 Android 和 iOS 上创建移动应用
-- 使用 jQuery 和 CSS3 创建网页
-- 了解即将推出的 CSS3 功能，如 CSS3 Shaders 和 Regions
-- 使用 CSS3 创建 2D/3D 图形和动画效果
-- 在 HTML5 Canvas 中使用渐变渲染 2D 形状、图表和图形
-- 包含附带 DVD，提供源代码和四色图形
+- 学习如何使用 `jQuery` 和 `jQuery Mobile` 创建网页
+- 使用 `HTML5/CSS3/SVG` 在 `Android` 和 `iOS` 上创建移动应用
+- 使用 `jQuery` 和 `CSS3` 创建网页
+- 了解即将推出的 `CSS3` 功能，如 `CSS3 Shaders` 和 `Regions`
+- 使用 `CSS3` 创建 `2D/3D` 图形和动画效果
+- 在 `HTML5 Canvas` 中使用渐变渲染 `2D` 形状、图表和图形
+- 包含附带 `DVD`，提供源代码和四色图形
 
 ## 关于作者
 
-Oswald Campesato（加利福尼亚州旧金山）专攻 Java、Android、jQuery 和 CSS3/SVG 图形。他是六本书的作者/合著者，包括《HTML5 Canvas and CSS3 Primer》（Mercury Learning）。
+`Oswald Campesato`（加利福尼亚州旧金山）专攻 `Java`、`Android`、`jQuery` 和 `CSS3/SVG` 图形。他是六本书的作者/合著者，包括《`HTML5 Canvas and CSS3 Primer`》（`Mercury Learning`）。
 
-MERCURY LEARNING AND INFORMATION LLC
-22841 Quicksilver Drive | Dulles, VA 20166
-www.merclearning.com | 1-800-758-3756
+`MERCURY LEARNING AND INFORMATION LLC`
+
+`22841 Quicksilver Drive | Dulles, VA 20166`
+
+`www.merclearning.com | 1-800-758-3756`
+
 所有商标和服务标志均为其各自所有者的财产。
-封面设计：Stephanie Torta
+
+封面设计：`Stephanie Torta`
+
 印刷于美国
 
 美国 51.95 美元 加拿大 52.95 美元
-ISBN 978-1-93854-903-8
+
+`ISBN 978-1-93854-903-8`

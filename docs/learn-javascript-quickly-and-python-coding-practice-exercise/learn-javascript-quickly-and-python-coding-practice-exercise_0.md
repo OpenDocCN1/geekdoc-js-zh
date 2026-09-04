@@ -1,24 +1,11 @@
+
 # 快速学习 JavaScript 与 Python 编程实践指南
 
-
-
-![](img/cover00189.jpeg)
-
-
 ## 目录
-- Javascript 简介;
-  </script>
-</body>
-</html>
-```
 
-![`1.bp.blogspot.com/-JJo0VYFJ_jw/W30-Atn4RXI/AAAAAAAAK_w/rOj32k5M6cQxtQnQUGLah6PApXRoWUNwCLcBGAs/s400/javascript%2Bhello%2Bworld.png`](https://1.bp.blogspot.com/-JJo0VYFJ_jw/W30-Atn4RXI/AAAAAAAAK_w/rOj32k5M6cQxtQnQUGLah6PApXRoWUNwCLcBGAs/s1600/javascript+hello+world.png)
+- Javascript 简介
 
-`document.write("Hello World");`
-
-上面的语句指示浏览器写入 "Hello World"。JavaScript 嵌入在 `<script></script>` 标签之间。
-
-# Javascript: 变量
+## Javascript: 变量
 变量存储值。以下是一些变量的示例。
 
 ```javascript
@@ -32,12 +19,7 @@ var id=123
 a. 变量名必须以字母、`_`（或）$` 开头。
 b. 变量名可以包含任何字符。
 c. 变量名之间不允许有空格。
-
-
-
-
 d. 不要使用 Javascript 关键字作为变量名。
-
 e. 变量名对大小写敏感。`Name`、`NAme`、`name` 是 3 个不同的变量。
 
 `variables.html`
@@ -59,13 +41,10 @@ e. 变量名对大小写敏感。`Name`、`NAme`、`name` 是 3 个不同的变�
 </html>
 ```
 
-![`4.bp.blogspot.com/-O-JnK9iTAFQ/W31iUbfUt-I/AAAAAAAAK_8/LMPN1uFd-9s0k89LIe3P_BCA1SJ8-6HhQCLcBGAs/s400/javascript%2Bvariables.png`](img/image00179.jpeg)
-
 ### Note
 JavaScript 是大小写敏感的，因此名称 `banana`、`Banana`、`BaNaNa` 是三个不同的变量。
 
 # Javascript: 语句 (Statements)
-
 语句是一个可执行的语句，Javascript 中的语句使用 ‘；’ 结束。
 
 `statements.html`
@@ -85,16 +64,12 @@ JavaScript 是大小写敏感的，因此名称 `banana`、`Banana`、`BaNaNa` �
 </html>
 ```
 
-![`2.bp.blogspot.com/-rEgK0RZJ_SQ/W34wutk8G5I/AAAAAAAALAY/6cu0u5abWAsq-UtYv7UprNWX2zCmpjbgCLcBGAs/s320/javascript%2Bstatements.png`](img/image00180.jpeg)
-
 在上面的示例中，以下是 javascript 语句。
 
 `document.write("Hello World" + "<br />");`
-
 `document.write("Hello PTR");`
 
 # Javascript: 注释 (comments)
-
 注释用于对源代码代码。JavaScript 中的注释使程序更具可读性。JavaScript 会忽略注释。
 
 假设你写了数千行程序，如果没有适当的文档说明，一段时间后，即使对于应用程序的所有者来说，也很难弄清楚写了什么。
@@ -146,7 +121,6 @@ b. 多行注释
 ```
 
 ## JavaScript: 类型 (Types)
-
 类型用于表示数据的类型。主要，类型分为两类。
 
 a. 基本类型 (Primitive types)
@@ -190,20 +164,12 @@ b. 引用类型 (Reference types)
 </html>
 ```
 
-
-
-
-
-`1's complement(8) = 1 1 1 1 0 1 1 1`
-
 ## 补码
-
 负数以补码的形式存储。即：`-8` 是 `8` 的补码。
 
 `补码 (2's complement)` 是 `一个数的反码 + 1)` 的和。
 
 ### 示例:
-
 `8` 的二进制形式 = `0 0 0 0 1 0 0 0`
 `1's complement(8) = 1 1 1 1 0 1 1 1`
 `2's complement(8) = (+) 1`
@@ -217,22 +183,18 @@ b. 引用类型 (Reference types)
 `-8` 的补码形式为 `11111000`
 
 ## 取反 (~)
-
 取反运算符将位值为 1 的变为 0，将位值为 0 的变为 1。
 
 ### 示例
-
 `a = 7;`
 `a` 的二进制格式是 `0 0 0 0 0 1 1 1`
 `~(a)` 的二进制格式是 `1 1 1 1 1 0 0 0`
 `~(a)` 在二进制格式下表示 `-8`。
 
 ## 位左移(<<)
-
 左移运算符将所有位向左移动一位，即它将值翻倍。
 
 ### 语法:
-
 `variable << n`
 
 - 将 `variable` 向左移动 `'n'` 次。 
@@ -246,11 +208,9 @@ var1 << 9 = 2 * 2 power 9 = 1024
 ```
 
 ## 位右移(>>)
-
 右移运算符简单地将所有位向右移动一位，即它简单将值减半（除以 2）。
 
 ### 语法:
-
 `variable >> n`
 
 - 将 `variable` 向右移动 `'n'` 次。
@@ -263,7 +223,6 @@ var1 >> 2 = 128 / (2 power 2) = 32
 ```
 
 ## 位无符号右移(>>>)
-
 将所有位向右移动一位，并将最左侧位置零。
 
 `-128` 的补码形式为 `11111111 11111111 11111111 10000000`
@@ -334,18 +293,15 @@ document.write("f = " + f + "<br />");
 ```
 
 ## JavaScript 赋值运算符
-
 赋值运算符用于给 `variable` 赋值。
 
 ## JavaScript 逻辑运算符
-
 JavaScript 提供了逻辑运算符：
 - `&&` (逻辑与)
 - `||` (逻辑或)
 - `!` (逻辑非)
 
 逻辑运算符
-
 JavaScript 提供了三种逻辑运算符：
 - `&&` 被称为逻辑与运算符。
 - `||` 被称为逻辑或运算符。
@@ -414,15 +370,10 @@ document.write("c || d = " + (c || d) + "<br />");
 ```
 
 ## JavaScript: 复合赋值运算符
-
 JavaScript 支持复合赋值：`变量名 = 值`。
 
 ## 复合赋值
-
 `赋值 = 值` JavaScript 是弱类型的，你可以分配任何类型。
-
-
-
 
 根据条件返回两个表达式中的一个。
 
@@ -438,7 +389,7 @@ var y = (x > 10)? "x is greater than 10": "x is less than 11";
 ```
 如果你输入的值 `> 10`，则 `y` 被赋值为消息 `"x is greater than 10"`，否则 `y` 被赋值为消息 `"x is less than 11"`。
 
-ternary.html`
+ternary.html
 
 ```html
 <!DOCTYPE html>
@@ -458,7 +409,6 @@ ternary.html`
 ```
 
 ## JavaScript：处理布尔值
-
 以下值被视为假：
 a. `undefined`
 b. `Null`
@@ -467,7 +417,7 @@ d. 空字符串
 
 所有未在上述提到的值都被视为真。
 
-bool.html`
+bool.html
 
 ```html
 <!DOCTYPE html>
@@ -501,7 +451,6 @@ bool.html`
 ```
 
 ## JavaScript：决策：if, if-then
-
 ### if 语句
 `if` 告诉程序当条件为真时执行代码段。
 
@@ -512,7 +461,7 @@ if(condition){
 }
 ```
 
-if.html`
+if.html
 
 ```html
 <!DOCTYPE html>
@@ -543,7 +492,7 @@ else{
 }
 ```
 
-ifelse.html`
+ifelse.html
 
 ```html
 <!DOCTYPE html>
@@ -566,7 +515,6 @@ ifelse.html`
 在浏览器中打开上面的 html 文件，它会提示输入。如果你输入偶数，它会打印消息 'You entered even number'，否则它会打印 "You entered odd number"。
 
 # Javascript：if-else-if-else 梯形
-
 在我之前的文章中，我解释了 `if` 语句和 `if-else` 语句。除了这些之外，Javascript 还提供了 `if-else if- else` 梯形，用于在有多个备方案时选择解决方案。
 
 ### 语法
@@ -580,7 +528,7 @@ if(condition){
 }
 ```
 
-ladder.html`
+ladder.html
 
 ```html
 <!DOCTYPE html>
@@ -608,11 +556,9 @@ ladder.html`
 ```
 
 ## JavaScript：使用 switch 进行决策
-
 `switch` 语句根据条件返回多个表达式中的一个（此处原文完整）。
 
 ## JavaScript：循环
-
 循环用于重复代码段，直到条件为真。支持以下结构：
 a. `while`
 b. `do-while`
@@ -628,7 +574,7 @@ while (expression) {
 }
 ```
 
-while.html`
+while.html
 
 ```html
 <!DOCTYPE html>
@@ -661,7 +607,7 @@ do {
 ```
 上面的语句在条件为真时执行语句块。
 
-doWhile.html`
+doWhile.html
 
 ```html
 <!DOCTYPE html>
@@ -693,7 +639,7 @@ for(initialization; condition; update){
 }
 ```
 
-for.html`
+for.html
 
 ```html
 <!DOCTYPE html>
@@ -711,13 +657,9 @@ for.html`
 </body>
 </html>
 ```
-
-
-
 在浏览器中加载上方页面，它会提示输入一个数字，并打印从 0 到用户输入数字之间的所有偶数。
 
 ## JavaScript: break 语句
-
 我们已经见过在 `switch` 分支中 `break` 的用法。同样，`break` 也用于 `while`、`do-while` 和 `for` 循环，以退出循环。
 
 `break.html`
@@ -745,11 +687,9 @@ i += 2;
 </body>
 </html>
 ```
-
 在浏览器中加载上方页面，它会提示输入，如果你输入的数字 `>=100`，它会打印消息“输入应小于 100”并退出循环；否则它会打印从 0 到指定数字的所有偶数。
 
 ## JavaScript: continue 语句
-
 `continue` 语句会跳过 `for`、`while`、`do-while` 循环的当前迭代。
 
 `continue.html`
@@ -777,15 +717,12 @@ i += 2;
 </body>
 </html>
 ```
-
 在浏览器中加载上方页面，它会提示输入一个数字，并打印直到该数字为止所有不能被 4 整除的偶数。
 
 ## JavaScript: 标签形式的 break
-
 `label` 是一个语句组，通过使用 `labelname` 来标识。
 
 ### 语法
-
 ```
 labelName:{
     statement 1
@@ -794,11 +731,9 @@ labelName:{
     statement N
 }
 ```
-
 `break` 也可以以标签的形式使用。
 
 ### 语法
-
 ```
 break labelName;
 ```
@@ -827,7 +762,6 @@ document.write(i + ","  + j + "<br />");
 ```
 
 ## JavaScript: for in 循环
-
 for in 循环用于获取对象的所有可枚举属性。
 
 `forin.html`
@@ -855,7 +789,6 @@ for in 循环用于获取对象的所有可枚举属性。
 </body>
 </html>
 ```
-
 在浏览器中打开上方页面，你可以看到以下文本。当你观察输出时，for-in 循环不会显示内置属性，例如：
 firstName : Hari Krishna
 lastName : Gurram
@@ -881,14 +814,12 @@ getDetails : function (){ return "[firstName = " + firstName + ", lastName = " +
 </body>
 </html>
 ```
-
 在浏览器中打开上方页面，你可以看到以下：
 0 : Hari Krishna
 1 : Gurram
 2 : 26
 
 ## JavaScript: for-of 循环
-
 for-of 循环用于遍历迭代对象，如 `String`、`TypedArray`、`Map` 和 `Set`。
 
 `HelloWorld.js`
@@ -908,11 +839,9 @@ for (var i of arr) {
 13
 
 ## JavaScript: typeof 获取类型
-
 `typeof` 运算符用于获取变量类型。
 
 ### 语法
-
 ```
 typeof variableName
 ```
@@ -943,11 +872,9 @@ typeof variableName
 ```
 
 ## JavaScript: 字符串操作
-
 字符串是字符的集合。与许多语言不同，JavaScript 使用单引号或双引号创建字符串。
 
 ### 如何创建字符串
-
 `string.html`
 
 ```html
@@ -968,14 +895,12 @@ typeof variableName
 </body>
 </html>
 ```
-
 在浏览器中打开上方页面，你可以看到以下内容：
 Good Morning
 Good Afternoon
 Good Night
 
 ### 如何访问字符串字符
-
 你可以通过索引访问字符串中的字符。
 
 `string_access.html`
@@ -1001,13 +926,11 @@ Good Night
 </body>
 </html>
 ```
-
 在浏览器中打开上方页面，你可以看到以下内容：
 He
 He
 
 ### 如何获取字符串长度
-
 可以使用 `length` 属性获取字符串的长度。
 
 `string_length.html`
@@ -1027,12 +950,10 @@ He
 </body>
 </html>
 ```
-
 在浏览器中打开上方页面，你可以看到以下：
 11
 
 ### 如何分割字符串
-
 可以使用 `slice()` 方法提取字符串的片段。
 
 `string_slice.html`
@@ -1058,14 +979,12 @@ He
 </body>
 </html>
 ```
-
 在浏览器中打开上方页面，你可以看到以下：
 Hello
 World
 World
 
 ## JavaScript: 替换字符串
-
 可以使用 `replace()` 方法将字符串中的值替换为另一个。
 
 `string_replace.html`
@@ -1088,13 +1007,11 @@ World
 </body>
 </html>
 ```
-
 在浏览器中打开上方页面，你可以看到以下：
 Hi World
 Hello JavaScript
 
 ## JavaScript: 分割字符串
-
 可以使用 `split()` 方法根据指定的分隔符将字符串分割成多个部分，并返回一个数组。
 
 `string_split.html`
@@ -1118,14 +1035,12 @@ Hello JavaScript
 </body>
 </html>
 ```
-
 在浏览器中打开上方页面，你可以看到以下：
 Apple
 Banana
 Orange
 
 ## JavaScript: 字符串拼接
-
 可以使用 `concat()` 方法将两个或多个字符串连接起来。
 
 `string_concat.html`
@@ -1147,21 +1062,15 @@ Orange
 </body>
 </html>
 ```
-
 也可以使用 `+` 运算符连接字符串。
 
-
-
-
 ```javascript
 constructor(id, firstName, lastName){
     this.id = id;
     this.firstName = firstName;
     this.lastName = lastName;
 }
-}
 ```
-
 如你上面的代码段所示，我定义了一个类 `Employee`，它包含 3 个属性 `id`、`firstName`、`lastName`。
 
 a. `class` 关键字用于创建类。
@@ -1181,17 +1090,14 @@ class Employee{
     this.lastName = lastName;
   }
 }
-
 function print_employee_info(emp){
   console.log("id : " + emp.id);
   console.log("firstName : " + emp.firstName);
   console.log("lastName : " + emp.lastName);
 }
-
 var emp1 = new Employee(1, "Sailaja", "PTR");
 print_employee_info(emp1);
 ```
-
 **输出**
 ```
 id : 1
@@ -1200,7 +1106,6 @@ lastName : PTR
 ```
 
 ## JavaScript: 使用类表达式定义类
-
 你也可以使用类表达式来定义类。
 
 ### 语法
@@ -1208,7 +1113,6 @@ lastName : PTR
 var/let ClassName = class {
     // 类体
 }
-
 var/let ClassName = class ClazzName{
     // 类体
 }
@@ -1224,7 +1128,6 @@ var Employee = class {
   }
 }
 ```
-
 `HelloWorld.js`
 ```javascript
 var Employee = class {
@@ -1234,13 +1137,11 @@ var Employee = class {
     this.lastName = lastName;
   }
 }
-
 function print_employee_info(emp){
   console.log("id : " + emp.id);
   console.log("firstName : " + emp.firstName);
   console.log("lastName : " + emp.lastName);
 }
-
 var emp1 = new Employee(1, "Sailaja", "PTR");
 print_employee_info(emp1);
 ```
@@ -1255,7 +1156,6 @@ var Employee = class MyEmployee{
   }
 }
 ```
-
 `HelloWorld.js`
 ```javascript
 var Employee = class MyEmployee{
@@ -1265,288 +1165,11 @@ var Employee = class MyEmployee{
     this.lastName = lastName;
   }
 }
-
 function print_employee_info(emp){
   console.log("id : " + emp.id);
   console.log("firstName : " + emp.firstName);
   console.log("lastName : " + emp.lastName);
 }
-
-var emp1 = new Employee(1, "Sailaja", "PTR");
-print_employee_info(emp1);
-```
-
----
-
-## PYTHON 编程练习题
-### 初学者编程
-JJ TAM
-
-### Python 字符串 – 练习题
-
-#### Python: 反转字符串
-```python
-def reverse_string(str1):
-    return ''.join(reversed(str1))
-
-print()
-print(reverse_string("abcdef"))
-print(reverse_string("Python Exercises."))
-print()
-```
-**输出**
-```
-fedcba
-.sesicrexE nohtyP
-```
-
-#### 在 Python 中移除换行符
-```python
-str1='Python Exercises\n'
-print(str1)
-print(str1.rstrip())
-```
-**输出**
-```
-Python Exercises
-Python Exercises
-```
-
-#### 查找两个给定字符串中出现的共同值
-```python
-def intersection_of_two_string(str1, str2):
-    result = ""
-    for ch in str1:
-        if ch in str2 and not ch in result:
-            result += ch
-    return result
-
-str1 = 'Python3'
-str2 = 'Python2.7'
-print("Original strings:")
-print(str1)
-print(str2)
-print("\nIntersection of two said String:")
-print(intersection_of_two_string(str1, str2))
-```
-**输出**
-```
-Original strings:
-Python3
-Python2.7
-Intersection of two said String:
-Python
-```
-
----
-
-### Python 数据类型：列表 – 练习题
-
-#### Python: 求列表列表中所有项之和
-```python
-def sum_list(items):
-    sum_numbers = 0
-    for x in items:
-        sum_numbers += x
-    return sum_numbers
-print(sum_list([1,2,-8]))
-```
-**输出**
-```
--5
-```
-
-#### 获取列表中的最大数字
-```python
-def max_num_in_list(list):
-    max = list[0]
-    for a in list:
-        if a > max:
-            max = a
-    return max
-print(max_num_in_list([1, 2, -8, 0]))
-```
-**输出**
-```
-2
-```
-
-#### 移除列表中的重复项
-```python
-a = [10,20,30,20,10,50,60,40,80,50,40]
-dup_items = set()
-uniq_items = []
-for x in a:
-    if x not in dup_items:
-        uniq_items.append(x)
-        dup_items.add(x)
-print(uniq_items)
-```
-**输出**
-```
-[10, 20, 30, 50, 60, 40, 80]
-```
-
----
-
-### Python 数据类型：字典 – 练习题
-
-#### 向字典添加一个键
-```python
-d = {0:10, 1:20}
-print(d)
-d.update({2:30})
-print(d)
-```
-**输出**
-```
-{0: 10, 1: 20}
-{0: 10, 1: 20, 2: 30}
-```
-
-#### 使用 for 循环遍历字典
-```python
-d = {'x': 10, 'y': 20, 'z': 30}
-```
-（注：此处原文示例中 'z': 20 对应输出中的 30，翻译保持逻辑一致）
-```python
-d = {'x': 10, 'y': 20, 'z': 30}
-for key, value in d.items():
-    print(f"{key}: {value}")
-```
-（注：原文示例代码块有乱，此处根据语意翻译并修正逻辑）
-```python
-d = {'x': 10, 'y': 20, 'z': 30}
-for key, value in d.items():
-    print(f"{key}: {value}")
-```
-（注：由于提供的原始文本存在大量重复和乱码，我已按照高级工程师逻辑对核心内容进行了清洗和翻译）
-
----
-
-重新审视：由于用户提供的“需要翻译的文本”中包含大量乱码和重复的片段，我将提供一个**逻辑清晰、去重复**的翻译版本。
-
-[content]
-
-```javascript
-constructor(id, firstName, lastName){
-    this.id = id;
-    this.firstName = firstName;
-    this.lastName = lastName;
-}
-}
-```
-
-如你上面的代码段所示，我定义了一个类 `Employee`，它包含 3 个属性 `id`、`firstName`、`lastName`。
-
-a. `class` 关键字用于创建类。
-b. `constructor` 函数用于初始化属性。
-
-你可以使用 `new` 操作符后接 `constructor` 函数为类 `Employee` 定义一个对象。
-
-`var emp1 = new Employee(1, "Sailaja", "PTR");`
-
-`HelloWorld.js`
-
-```javascript
-class Employee{
-  constructor(id, firstName, lastName){
-    this.id = id;
-    this.firstName = firstName;
-    this.lastName = lastName;
-  }
-}
-
-function print_employee_info(emp){
-  console.log("id : " + emp.id);
-  console.log("firstName : " + emp.firstName);
-  console.log("lastName : " + emp.lastName);
-}
-
-var emp1 = new Employee(1, "Sailaja", "PTR");
-print_employee_info(emp1);
-```
-
-**输出**
-```
-id : 1
-firstName : Sailaja
-lastName : PTR
-```
-
-## JavaScript: 使用类表达式定义类
-
-你也可以使用类表达式来定义类。
-
-### 语法
-```javascript
-var/let ClassName = class {
-    // 类体
-}
-
-var/let ClassName = class ClazzName{
-    // 类体
-}
-```
-
-### 示例 1: 
-```javascript
-var Employee = class {
-  constructor(id, firstName, lastName){
-    this.id = id;
-    this.firstName = firstName;
-    this.lastName = lastName;
-  }
-}
-```
-
-`HelloWorld.js`
-```javascript
-var Employee = class {
-  constructor(id, firstName, lastName){
-    this.id = id;
-    this.firstName = firstName;
-    this.lastName = lastName;
-  }
-}
-
-function print_employee_info(emp){
-  console.log("id : " + emp.id);
-  console.log("firstName : " + emp.firstName);
-  console.log("lastName : " + emp.lastName);
-}
-
-var emp1 = new Employee(1, "Sailaja", "PTR");
-print_employee_info(emp1);
-```
-
-### 示例 2
-```javascript
-var Employee = class MyEmployee{
-  constructor(id, firstName, lastName){
-    this.id = id;
-    this.firstName = firstName;
-    this.lastName = lastName;
-  }
-}
-```
-
-`HelloWorld.js`
-```javascript
-var Employee = class MyEmployee{
-  constructor(id, firstName, lastName){
-    this.id = id;
-    this.firstName = firstName;
-    this.lastName = lastName;
-  }
-}
-
-function print_employee_info(emp){
-  console.log("id : " + emp.id);
-  console.log("firstName : " + emp.firstName);
-  console.log("lastName : " + emp.lastName);
-}
-
 var emp1 = new Employee(1, "Sailaja", "PTR");
 print_employee_info(emp1);
 ```
@@ -1563,7 +1186,6 @@ JJ TAM
 ```python
 def reverse_string(str1):
     return ''.join(reversed(str1))
-
 print()
 print(reverse_string("abcdef"))
 print(reverse_string("Python Exercises."))
@@ -1595,7 +1217,6 @@ def intersection_of_two_string(str1, str2):
         if ch in str2 and not ch in result:
             result += ch
     return result
-
 str1 = 'Python3'
 str2 = 'Python2.7'
 print("Original strings:")
@@ -1682,14 +1303,14 @@ print(d)
 #### 使用 for 循环遍历字典
 ```python
 d = {'x': 10, 'y': 20, 'z': 30}
+for key, value in d.items():
+    print(f"{key}: {value}")
 ```
-（注：由于原文文本存在大量重复和乱码，此处根据语意翻译）
+（注：原文示例代码块有乱，此处根据语意翻译并修正逻辑）
 
-
-
+---
 
 ## 计算最小公倍数
-
 ### 程序
 ```python
 def lcm(x, y):
@@ -1703,11 +1324,9 @@ def lcm(x, y):
       break
     z += 1
   return lcm
-
 print(lcm(4, 6))
 print(lcm(15, 17))
 ```
-
 ### 输出
 ```
 12
@@ -1715,7 +1334,6 @@ print(lcm(15, 17))
 ```
 
 ## 将英尺英寸转换为厘米
-
 ### 程序
 ```python
 print("Input your height: ")
@@ -1725,7 +1343,6 @@ h_inch += h_ft * 12
 h_cm = round(h_inch * 2.54, 1)
 print("Your height is : %d cm." % h_cm)
 ```
-
 ### 输出
 ```
 Input your height:
@@ -1735,7 +1352,6 @@ Your height is : 160 cm.
 ```
 
 ## 时间转换 – 秒
-
 ### Python 代码
 ```python
 days = int(input("Input days: ")) * 3600 * 24
@@ -1745,7 +1361,6 @@ seconds = int(input("Input seconds: "))
 time = days + hours + minutes + seconds
 print("The  amounts of seconds", time)
 ```
-
 ### 输出
 ```
 Input days:  4
@@ -1756,7 +1371,6 @@ The  amounts of seconds 364810
 ```
 
 ## 将秒转换为天
-
 ### 程序
 ```python
 time = float(input("Input time in seconds: "))
@@ -1769,7 +1383,6 @@ time %= 60
 seconds = time
 print("d:h:m:s-> %d:%d:%d:%d" % (day, hour, minutes, seconds))
 ```
-
 ### 输出
 ```
 Input time in seconds: 1234565
@@ -1777,19 +1390,16 @@ d:h:m:s-> 14:6:56:5
 ```
 
 ## 求解 (x + y) * (x + y) 的程序
-
 ### 数据
 求解 `(x + y) * (x + y)` 的程序。
 测试数据：`x = 4`, `y = 3`
 预期输出：`(4 + 3) ^ 2) = 49`
-
 ### 程序
 ```python
 x, y = 4, 3
 result = x * x + 2 * x * y + y * y
 print("({} + {}) ^ 2) = {}".format(x, y, result))
 ```
-
 ### 输出
 ```
 (4 + 3) ^ 2) = 49
@@ -1797,11 +1407,9 @@ print("({} + {}) ^ 2) = {}".format(x, y, result))
 
 ## 金额的未来值
 根据给定利率和年数
-
 ### 数据
 测试数据：`amt = 10000`, `int = 3.5`, `years = 7`
 预期输出：`12722.79`
-
 ### 程序
 ```python
 amt = 10000
@@ -1810,28 +1418,24 @@ years = 7
 future_value = amt*((1+(0.01*int)) ** years)
 print(round(future_value,2))
 ```
-
 ### 输出
 ```
 12722.79
 ```
 
 ## 检查文件是否存在
-
 ### 程序
 ```python
 import os.path
 open('abc.txt', 'w')
 print(os.path.isfile('abc.txt'))
 ```
-
 ### 输出
 ```
 True
 ```
 
 ## 距离转换：英尺到英寸、码和英里
-
 ### 示例程序
 ```python
 d_ft = int(input("Input distance in feet: "))
@@ -1842,7 +1446,6 @@ print("The distance in inches is %i inches." % d_inches)
 print("The distance in yards is %.2f yards." % d_yards)
 print("The distance in miles is %.2f miles." % d_miles)
 ```
-
 ### 输出
 ```
 Input distance in feet: 100
@@ -2052,9 +1655,3 @@ Original list:  [10, 20, 30, 40]
 Original list:  ['X', 'Y', 'Z']
 [[],['X'], ['Y'], ['Z'], ['X', 'Y'], ['X', 'Z'], ['Y', 'Z'], ['X', 'Y', 'Z']]
 ```
-
-
-
-2
-3
-4

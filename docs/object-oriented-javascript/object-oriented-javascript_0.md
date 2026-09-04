@@ -1,115 +1,110 @@
+
 # 面向对象的 JavaScript
 
-
-
 ![](img/00031.jpeg)
-![](img/00001.jpeg)1
 
+![](img/00001.jpeg)
 
-# 第 1 章：奠定基础：类型](#part0000.html_link22) 9
+# 第 1 章：奠定基础：类型
 
-## JavaScript 如何处理类型](#part0000.html_link24) 9
+## JavaScript 如何处理类型
 
-### `typeof` 运算符指示来自 JavaScript 解释器的类型](#part0000.html_link25) 11
+### `typeof` 运算符指示来自 JavaScript 解释器的类型
 
-### 在 Plunker 上运行看看](#part0000.html_link26) 11
+### 在 Plunker 上运行看看
 
-### 运行代码示例的简单方法：`RunAnyJS`](part0000.html_link27) 12
+### 运行代码示例的简单方法：`RunAnyJS`
 
-### 仔细观察你的数字变量](#part0000.html_link28) 13
+### 仔细观察你的数字变量
 
-### 你编写 JavaScript，你控制内存芯片](#part0000.html_link29) 13
+### 你编写 JavaScript，你控制内存芯片
 
-## JavaScript 解释器做了什么](#part0000.html_link30) 13
+## JavaScript 解释器做了什么
 
-### 第一步：寻找内存](#part0000.html_link31) 14
+### 第一步：寻找内存
 
-#### JavaScript 解释器的架构师](#part0000.html_link32) 14
+#### JavaScript 解释器的架构师
 
-#### JavaScript 原始数字：64 位（8 字节）。](#part0000.html_link33) 14
+#### JavaScript 原始数字：64 位（8 字节）
 
-#### 读取和写入该内存](#part0000.html_link34) 17
+#### 读取和写入该内存
 
-#### 地址处存储的值发生了变化](#part0000.html_link35) 18
+#### 地址处存储的值发生了变化
 
-#### `undefined` 现在会更有意义了](#part0000.html_link36) 19
+#### `undefined` 现在会更有意义了
 
-#### 我对 `undefined`定义的猜测](#part0000.html_link37) 20
+#### 我对 `undefined` 定义的猜测
 
-#### 布尔值很简单，但记住 `true`/`false` 的大小](#part0000.html_link38) 21
+#### 布尔值很简单，但记住 `true`/`false` 的大小
 
-#### 布尔值可能存储在一个字节中](#part0000.html_link39) 22
+#### 布尔值可能存储在一个字节中
 
-### 字符串类型](#part0000.html_link40) 23
+### 字符串类型
 
-#### 终止符](#part0000.html_link41) 25
+#### 终止符
 
-#### 如果字符串增长了怎么办？](#part0000.html_link42) 25
+#### 如果字符串增长了怎么办？
 
-#### 字符串可能是通过引用实现的](#part0000.html_link43) 26
+#### 字符串可能是通过引用实现的
 
-#### 引用类型和原始类型之间的主要区别](#part0000.html_link44) 26
+#### 引用类型和原始类型之间的主要区别
 
-#### 大蓝条：内存墙](#part0000.html_link45) 27
+#### 大蓝条：内存墙
 
-#### 为什么他们存储地址而不是值？](#part0000.html_link46) 28
+#### 为什么他们存储地址而不是值？
 
-#### 让子系统处理问题](#part0000.html_link47) 28
+#### 让子系统处理问题
 
-#### 当字符串改变时会发生什么？](#part0000.html_link48) 28
+#### 当字符串改变时会发生什么？
 
-### 最后，对象](#part0000.html_link49) 29
+### 最后，对象
 
-#### 对象占据的字节数不相同](#part0000.html_link50) 29
+#### 对象占据的字节数不相同
 
-#### 空对象，存储在内存中](#part0000.html_link51) 29
+#### 空对象，存储在内存中
 
-#### 对象由其他类型组成](#part0000.html_link52) 30
+#### 对象由其他类型组成
 
-### JavaScript 数组是引用类型](#part0000.html_link53) 31
+### JavaScript 数组是引用类型
 
-## 了解所有这些对 JavaScript 程序员重要吗？](#part0000.html_link54) 32
+## 了解所有这些对 JavaScript 程序员重要吗？
 
-### 原始类型与引用类型如何影响 JavaScript？](#part0000.html_link55) 33
+### 原始类型与引用类型如何影响 JavaScript？
 
-#### 首先简单的，复制时会发生什么？](#part0000.html_link56) 33
+#### 首先简单的，复制时会发生什么？
 
-##### 类型复制的逐步说明](#part0000.html_link57) 36
+##### 类型复制的逐步说明
 
-- 第一步](#part0000.html_link58) 36
-- 第二步](#part0000.html_link59) 38
-- 第三步](#part0000.html_link60) 38
-- 第四步 40
-- 第五步 41
-- 第六步 42
-- 原始值由引用持有 42
-- 引用类型：在内存中是可扩展的 43
-- 第七步 43
-- 创建引用类型的副本 44
-- 第八步 44
-- 我的示例中内存（空间）不足 44
-- 第九步 45
-- 你的两个引用指向同一个东西 45
+- 第一步
+- 第二步
+- 第三步
+- 第四步
+- 第五步
+- 第六步
+- 原始值由引用持有
+- 引用类型：在内存中是可扩展的
+- 第七步
+- 创建引用类型的副本
+- 第八步
+- 我的示例中内存（空间）不足
+- 第九步
+- 你的两个引用指向同一个东西
 
-# 侧边栏 汇编语言？我以为这是 JavaScript 47
+# 侧边栏：汇编语言？我以为这是 JavaScript
 
-# 第 2 章：函数：它们也是对象。 51
+# 第 2 章：函数：它们也是对象
 
-## JavaScript 的新运算符 53
+## JavaScript 的 new 运算符
 
-### 对象拥有自己的内存 53
+### 对象拥有自己的内存
 
-### 对象是内存包装器 53
+### 对象是内存包装器
 
-### 仔细观察内存中的对象 55
+### 仔细观察内存中的对象
 
-### 另一种表述 JavaScript 的方式 56
+### 另一种表述 JavaScript 的方式
 
-### 包装器也是作用域 56
-
-
-
-
+### 包装器也是作用域
 
 # 引言
 
@@ -126,13 +121,7 @@
 但是，如果理解 JavaScript 中面向对象编程的工作原理以及 JavaScript 解释器究竟如何处理这些代码让你感到兴奋，那么我相信你会发现这本书是对你时间非常有价值的投资。为了进一步定义“高级初学者”，我会说她也是那些写过几个使用数组、对象甚至可能进行过事件处理的脚本的人。高级初学者绝对写过自己的函数，并且知道编写这些函数的语法：
 
 ```javascript
-function <functionName>(<params>) { code;
-
-code;
-
-more code;
-
-}
+function <functionName>(<params>) { code; code; more code; }
 ```
 
 ## 使用本书你需要了解什么？
@@ -193,7 +182,8 @@ HTML 和 JavaScript 分在不同的文件中，所以当你点击一个 Plunker 
 
 示例默认显示 HTML，但要查看相关的 JavaScript 代码，请点击 `script.js`（如插图中红色箭头所示）。
 
-![](img/00002.jpeg)*图 1：Plunker 示例*
+![](img/00002.jpeg)
+*图 1：Plunker 示例*
 
 http://NewtonSaber.com/OOJavaScript/Images/Illus1.png
 
@@ -206,9 +196,6 @@ http://NewtonSaber.com/OOJavaScript/Images/Illus1.png
 我决定写这本书有几个原因：
 
 1. 我是一个老牌 C++ 开发者，因此在过去开发软件时，我比硬件比 JavaScript 强制执行的“安全”距离更接近底层。然而，我发现理解对象（引用类型）如何在内存中被创建和存储，与原始类型（内建类型，如 Number）如何存储，可以开启 JavaScript 开发者对整个 JavaScript 解释器以及真实发生情况的理解。我发现这一切非常迷人（这也是我想写这本书的另一个原因）。
-
-
-
 
 2. 凭借我的背景，我对事物的看法与我在许多其他书中看到的解释略有不同，因此我非常想给出自己的解释，为正在发生的情况提供一个不同的视角。
 
@@ -250,16 +237,17 @@ http://NewtonSaber.com/OOJavaScript/Images/Illus1.png
 
 ### 剥洋葱
 
-我并不极端聪明。相反，我只是努力。你懂我的意思吗？我可能不是抽屉里最利的刀，但我能切开洋葱。老天，我曾曾在没有桨的情况下被困在河上，必须把自己从木头堵塞中救出来。我曾因为没有*快速*开发出软件解决方案，而被脸红脖脖的经理对我大吼大叫并威胁我的工作。我曾工作到凌晨 3 点来解决棘手的问题。我曾让自己置于风险之中，用尽我的一切来让程序运行起来。
+我并不极端聪明。相反，我只是努力。你懂我的意思吗？我可能不是抽屉里最利的刀，但我能切开洋葱。老天，我曾曾在没有桨的情况下被困在河上，必须把自己从木头堵塞中救出来。我曾因为没有*快速*开发出软件解决方案，而被脸红脖子粗的经理对我大吼大叫并威胁我的工作。我曾工作到凌晨 3 点来解决棘手的问题。我曾让自己置于风险之中，用尽我的一切来让程序运行起来。
 
 你可以访问我的网站：http://www.NewtonSaber.com
+
 你可以访问书籍的网站：http://NewtonSaber.com/OOJavascript
 
 你可以通过 newton@newtonsaber.com 联系我。
 
 现在，让我们开始吧。
 
-# 第一章
+# 第 1 章
 
 ### 奠定基础：类型
 
@@ -272,21 +260,19 @@ http://NewtonSaber.com/OOJavaScript/Images/Illus1.png
 1. 原始类型（Primitive types）——内存地址指示数据（或值）的存储位置。
 2. 引用类型（Reference types）——内存地址指示对象存储的位置。
 
-* 这一陈可能会让人困惑。我稍后就会为你解释它。
+* 这一陈述可能会让人困惑。我稍后就会为你解释它。
 
 首先，让我们看看原始类型。
 
 `JavaScript` 中只有五种原始类型，它们是：
+
 1. `Number`
 2. `Boolean`
 3. `String`
 4. `undefined`
 5. `null`
 
-最后两个对你来说可能有点奇怪，我们会提到它们，但首先让我们看看前三个，并了解为什么理解它们都是原始类型是非常重要的。然后，我们将深入研究引用类型以及它们的不同之处。这两种类型对比的知识实际上有助于你理解运行你所有 `JavaScript` 代码的 `JavaScript 器` 是如何工作的，以及为什么创建 `Objects`（引用类型）与创建其他是如此不同。
-
-
-
+最后两个对你来说可能有点奇怪，我们会提到它们，但首先让我们看看前三个，并了解为什么理解它们都是原始类型是非常重要的。然后，我们将深入研究引用类型以及它们的不同之处。这两种类型对比的知识实际上有助于你理解运行你所有 `JavaScript` 代码的 `JavaScript 解释器` 是如何工作的，以及为什么创建 `Objects`（引用类型）与创建其他类型是如此不同。
 
 现在让我回到我之前关于原始类型（primitives）的那个有点奇怪的陈述，当时我提到：
 
@@ -318,6 +304,7 @@ JavaScript 解释器注意到你将值设置为了数值，并决定该类型将
 解释器必须知道它是什么类型，是因为在后台——即计算的底层——实际上发生了某些事情。当你仅仅创建一个 `Number` 变量（`var counter = 5;`）时，JavaScript 解释器必须做一些事情，以便计算机的处理器知道你想做什么。
 
 以下是解释器做的一些工作：
+
 1. 找到一个具有足够连续槽来存储 `Number` 类型的内存位置。
 2. 在内部查找表中创建一个条目，存储你的变量名以及该变量名——这样当你使用定义的名称引用变量时，它就知道你的变量存储在内存的什么位置。
 
@@ -345,7 +332,8 @@ var counter = 27;
 
 解释器将 `27` 存储在地址 `0x00FFC0`。
 
-![](img/00004.gif)*图 2：存储在内存中的值 27*
+![](img/00004.gif)
+*图 2：存储在内存中的值 27*
 
 http://NewtonSaber.com/OOJavaScript/Images/Figure2.png
 
@@ -363,17 +351,18 @@ counter++; // 计数器加 1
 
 它就可以检索存储在那的值（`27`），将该值加 1，并再次存储在相同的位置，这样内存现在看起来就像图 3 所示：存储在某处的值 28。
 
-![](img/00005.gif)*图 3：存储在某处的值 28*
+![](img/00005.gif)
+*图 3：存储在某处的值 28*
 
 http://NewtonSaber.com/OOJavaScript/Images/Figure3.png
 
 ## 地址存储的值已更改
 
-这里的点是，存储在内存地址上的**值**已经了。而且，现在解释器已经存储了该数据所在的地址，你不能在此程序内更改该地址。它是被锁定的。这意味着你可以通过更改变量的值来更新地址的值，但你永远无法更改变量所指向的地址。噢，事实上，在其他语言（C, C++）中，存在指针变量允许你更改变量所指向的地址。
+这里的点是，存储在内存地址上的**值**已经改变了。而且，现在解释器已经存储了该数据所在的地址，你不能在此程序内更改该地址。它是被锁定的。这意味着你可以通过更改变量的值来更新地址的值，但你永远无法更改变量所指向的地址。噢，事实上，在其他语言（C, C++）中，存在指针变量允许你更改变量所指向的地址。
 
 稍后我们将此与引用类型（Reference type）改变时发生的情况对比，这对于你理解 JavaScript 如何工作至关重要。
 
-## 现在 现在更有意义了
+## 现在 `undefined` 更有意义了
 
 现在我解释了这些，我就可以向你解释 `undefined` 原始值了。记得我告诉过你当你给变量设置一个值时，JavaScript 解释器决定它是什么类型吗？
 
@@ -392,13 +381,14 @@ console.log("x is " + typeof x + " type");
 
 在这种情况下，变量还没有被分配任何内存。它不能被分配，因为解释器不知道这个东西在内存中将占据多少空间。
 
-## 对对 如何定义的猜想
+## 我对 `undefined` 如何定义的猜想
 
 这是我对 JavaScript 做的猜想。
 
 在内存深处的某处，有一个孤独的地址，坐着一个 `undefined` 类型的值。它看起来可能像图 4 所示：地址空间中唯一的一个 undefined 对象。
 
-![](img/00006.gif)*图 4：地址空间中唯一的一个 undefined 对象*
+![](img/00006.gif)
+*图 4：地址空间中唯一的一个 undefined 对象*
 
 http://NewtonSaber.com/OOJavaScript/Images/Figure4.png
 
@@ -416,10 +406,6 @@ http://NewtonSaber.com/OOJavaScript/Images/Figure4.png
 var isConfigured = false;
 console.log("isConfigured is a " + typeof isConfigured);
 ```
-
-
-
-
 
 (http://uncoveryourlife.com/learnJs/runanyjs.htm) 你将看到图 5 所示的结果：创建布尔值的结果。
 
@@ -442,11 +428,12 @@ console.log("isConfigured is a " + typeof isConfigured);
 
 布尔值可能存储一个字节，因为你字面上可以将其存储在一个位中（1 或 0）。布尔值看起来可能与图 6 所示相似：存储在内存中的布尔值 true (1)。
 
-![](img/00007.gif)*图 6：存储在内存中的布尔值 true (1)**
+![](img/00007.gif)
+*图 6：存储在内存中的布尔值 true (1)*
 
 http://NewtonSaber.com/OOJavaScript/Images/Figure6.png
 
-如果值为 `false`，那么可能所有位都是 0，最终值为 `0\`。然而，再次注意，它存储的是该内存地址处变量的值。
+如果值为 `false`，那么可能所有位都是 0，最终值为 `0`。然而，再次注意，它存储的是该内存地址处变量的值。
 
 ## 字符串类型 (String Type)
 
@@ -481,7 +468,8 @@ var companyName = "Big House";
 
 看图 8：内存中的字符串。
 
-![](img/00008.gif)*图 8：内存中的字符串*
+![](img/00008.gif)
+*图 8：内存中的字符串*
 
 http://NewtonSaber.com/OOJavaScript/Images/Figure8.png
 
@@ -511,7 +499,8 @@ companyName = "Big House Crafts";
 
 想想我目前为止向你展示的那些内存图片，并将其与图 9 进行比较：存储引用类型，这是我们存储一个引用类型时内存的样子。
 
-![](img/00009.gif)*图 9：存储引用类型*
+![](img/00009.gif)
+*图 9：存储引用类型*
 
 http://NewtonSaber.com/OOJavaScript/Images/Figure9.png
 
@@ -521,7 +510,7 @@ http://NewtonSaber.com/OOJavaScript/Images/Figure9.png
 
 大蓝条简单代表左侧内存与右侧内存的分隔，以便向你展示引用类型存储了一个内存地址，该地址指向另一部分内存，那里是字符串实际数据的存储处。
 
-它指向的内存地址是 `0x00AA01\`。这是存储变长字符串（在此情况下为 16 字节 + 1 字节终止符）的基地址。
+它指向的内存地址是 `0x00AA01`。这是存储变长字符串（在此情况下为 16 字节 + 1 字节终止符）的基地址。
 
 ### 为什么它们要存储地址而不是值？
 
@@ -549,11 +538,12 @@ http://NewtonSaber.com/OOJavaScript/Images/Figure9.png
 
 ```javascript
 var firstObj = {};
-console.log("firstObj is an " + typeof first););``````
+console.log("firstObj is an " + typeof firstObj);
+```
 
 运行代码时，你的浏览器中会显示以下内容：
 
-first is Empty Object, St Object Empty Memory
+firstObj is Empty Object, Stored in Memory
 
 该对象基本上是空的，因为我们还没有向它添加任何属性。我不知道它在内存中占用多少字节，因为取决于 JavaScript 解释器架构如何实现基础 JavaScript 对象。对于我们而言，只知道解释器请求子系统在内存中创建一个对象，并请求该对象的基地址并将其存储以便以后再次访问。
 
@@ -567,14 +557,11 @@ first is Empty Object, St Object Empty Memory
 
 ```javascript
 firstObj.name = "builder";
-firstObj.counter = "0";
+firstObj.counter = 0;
 firstObj.isConfigured = false;
 ```
 
-
-
-
-此时，我们至少需要 17 字节来存储所有内容：7 字节字符串 + 1 字节字符串终止符 + 8 字节数字 +  1 字节布尔值。然而，`Object` 是引用类型，所以这并不重要。相反发生的是分配了新内存并将基地址报告给后台并由解释器存储。
+此时，我们至少需要 17 字节来存储所有内容：7 字节字符串 + 1 字节字符串终止符 + 8 字节数字 + 1 字节布尔值。然而，`Object` 是引用类型，所以这并不重要。相反发生的是分配了新内存并将基地址报告给后台并由解释器存储。
 
 # JavaScript 数组是引用类型
 
@@ -583,7 +570,7 @@ firstObj.isConfigured = false;
 你可以创建一个数组并对其进行推送和弹出操作（动态更改其大小）。这是一个向数组中添加了大量内容的高级脚本。运行它或查看图 11 中的输出：数组包含对象及更多，因为这应该让你思考数组中的项在内存中是动态增长的这一事实。这非常重要。
 
 ```javascript
-var allItems=[];
+var allItems = [];
 
 allItems.push({});
 
@@ -593,10 +580,12 @@ console.log("There are " + allItems.length + " items in allItems.");
 
 allItems[0].x = 55;
 
-allItems[0].today = new Date(); console.log(allItems[0]);
+allItems[0].today = new Date();
+console.log(allItems[0]);
 ```
 
-![](img/00011.jpeg)*图 11: 数组包含对象及更多*
+![](img/00011.jpeg)
+*图 11: 数组包含对象及更多*
 
 http://NewtonSaber.com/OOJavaScript/Images/Figure11.png
 
@@ -625,110 +614,120 @@ http://NewtonSaber.com/OOJavaScript/Images/Figure11.png
 ```javascript
 // ### 创建基本类型并将其复制到另一个基本类型中 ###
 
-var numberOfChildren = 1; // 步骤 1 console.log("numberOfChildren is : " + numberOfChildren + " - STEP 1"); numberOfChildren = 3; // 步骤 2 console.log("Changed numberOfChildren to : " + numberOfChildren + " - STEP 2");
+var numberOfChildren = 1; // 步骤 1
+console.log("numberOfChildren is : " + numberOfChildren + " - STEP 1");
+numberOfChildren = 3; // 步骤 2
+console.log("Changed numberOfChildren to : " + numberOfChildren + " - STEP 2");
 
-var numberOfGrandkids =
+var numberOfGrandkids = numberOfChildren; // 步骤 3
 
-numberOfChildren; // 步骤 3
+console.log("numberOfGrandkids is : " + numberOfGrandkids + " - STEP 3");
+console.log("changing numberOfGrandkids to 5...");
 
-console.log("numberOfGrandkids is : " + numberOfGrandkids + " - STEP 3"); console.log("changing
-
-numberOfGrandkids to 5...");
-
-numberOfGrandKids = 5; // 步骤 4 console.log("numberOfChildren is still : " + numberOfChildren + " STEP 4");
+numberOfGrandkids = 5; // 步骤 4
+console.log("numberOfChildren is still : " + numberOfChildren + " STEP 4");
 
 // ### 创建引用并将其复制到另一个引用类型中 ####
 
 var infoOrig = {} // 步骤 5
 
-infoOrig.children = 2; // 步骤 6 console.log("infoOrig.children is : " + infoOrig.children + " - STEP 5 & 6");
+infoOrig.children = 2; // 步骤 6
+console.log("infoOrig.children is : " + infoOrig.children + " - STEP 5 & 6");
 
-infoOrig.children = 4; // 步骤 7 console.log("Changed
+infoOrig.children = 4; // 步骤 7
+console.log("Changed infoOrig.children to : " + infoOrig.children + " - STEP 7");
 
-infoOrig.children to : " +
+var infoCopy = infoOrig; // 步骤 8
+console.log("infoCopy.children : " + infoCopy.children + " - STEP 8");
 
-infoOrig.children + " - STEP 7");
-
-var infoCopy = infoOrig; // 步骤 8 console.log("infoCopy.children : " + infoCopy.children + " - STEP 8");
-
-infoCopy.children = 7; // 步骤 9 console.log("infoOrig.children HAS CHANGED!!: " + infoOrig.children + "
-
-- STEP 9");
+infoCopy.children = 7; // 步骤 9
+console.log("infoOrig.children HAS CHANGED!!: " + infoOrig.children + " - STEP 9");
 ```
 
 你可以在 Plunker 上更仔细地检查脚本：http://plnkr.co/edit/IDbJAGTEfvdAh3fyOj5Z?p=preview
 
 看看图 12：基本类型的复制与引用类型的复制以查看输出。接下来我将带你通过每一个步骤，并展示内存中实际发生了什么，以及为什么引用类型的复制看起来行为很异。
 
-![](img/00012.jpeg)*图 12: 基本类型的复制与引用类型的复制* http://NewtonSaber.com/OOJavaScript/Images/Figure12.png
+![](img/00012.jpeg)
+*图 12: 基本类型的复制与引用类型的复制*
+http://NewtonSaber.com/OOJavaScript/Images/Figure12.png
 
 ## 复制类型的逐步说明
 
 现在，将以下步骤与脚本中看到的步骤相对应，你就会发现为什么引用类型的复制似乎在做错，尽管它的行为完全符合 JavaScript 解释器架构师的设计。
 
-***步骤 1***
+### 步骤 1
 
 创建一个基本类型（`numberOfChildren`）并将其值设为 1（它是一个 `Number` 类型）。
 
-![](img/00013.gif)*图 13: 步骤 1 - 创建数字基本类型*
+![](img/00013.gif)
+*图 13: 步骤 1 - 创建数字基本类型*
 
 http://NewtonSaber.com/OOJavaScript/Images/Figure13.png
 
-注意，我们有一个基内存地址 `0x00CCF0`，值为 1。我将所有字节都设为 `numberOfChildren`，只是为了让你看到这些字节在程序的生命周期内被分配给该基本类型。更改 `numberOfChildren` 的值。由于这是一个基本类型，解释器知道基内存地址并将该内存设置为值 3。`00000011` 是二进制 3。*
+注意，我们有一个基内存地址 `0x00CCF0`，值为 1。我将所有字节都设为 `numberOfChildren`，只是为了让你看到这些字节在程序的生命周期内被分配给该基本类型。
 
-![](img/00014.gif)*图 14: 步骤 2 - 更改 numberOfChildren 的值*
+### 步骤 2
+
+更改 `numberOfChildren` 的值。由于这是一个基本类型，解释器知道基内存地址并将该内存设置为值 3。`00000011` 是二进制 3。
+
+![](img/00014.gif)
+*图 14: 步骤 2 - 更改 numberOfChildren 的值*
 
 http://NewtonSaber.com/OOJavaScript/Images/Figure14.png
 
-***步骤 3***
+### 步骤 3
 
 创建一个名为 `numberOfGrandkids` 的新基本类型（`Number` 类型），并将 `numberOfChildren` 的值复制进去。当新基本类型创建时，它获得了基地址 `0x00CCF9`，值 3 被复制到该内存地址。
 
-![](img/00015.gif)*图 15: 步骤 3 - 创建基本类型并将其复制到其中*
+![](img/00015.gif)
+*图 15: 步骤 3 - 创建基本类型并将其复制到其中*
 
 http://NewtonSaber.com/OOJavaScript/Images/Figure15.png
 
+### 步骤 4
+
 将 `numberOfGrandkids` 的值设为 5；
 
-![](img/00016.gif)*图 16: 设置 numberOfGrandkids = 5*
+![](img/00016.gif)
+*图 16: 设置 numberOfGrandkids = 5*
 
 http://NewtonSaber.com/OOJavaScript/Images/Figure16.png
 
 仔细查看图 16：设置 numberOfGrandkids = 5 并识别两点：
 
 1. `numberOfGrandkids` 的值现在是 5（二进制 `00000101`）
-2. `numberOfChildren` 的值**没有** way。它仍然是 3。脚本打印了这个值以显示。
+2. `numberOfChildren` 的值**没有**改变。它仍然是 3。脚本打印了这个值以显示。
 
-***步骤 5***
+### 步骤 5
 
 现在我们创建一个名为 `infoOrig` 的引用类型（`Object`）。记得可以使用 `{}` 括号初始化空对象。
 
-![](img/00017.gif)*图 17: 创建引用类型（Object)*
+![](img/00017.gif)
+*图 17: 创建引用类型（Object)*
 
 http://NewtonSaber.com/OOJavaScript/Images/Figure17.png
 
 正如我们之前学过的，我们看到解释器为内存中的对象获取了基地址（`0x00AA01`），并将该基地址存储在它的地址空间（`0x00CCF8` 处），而不是值。
 
-***步骤 6***
+### 步骤 6
 
 现在，我们为刚刚创建的对象（`infoOrig`）添加名为 `children` 的新基本类型（`Number`），然后将基本类型的值设为 2。
 
-![](img/00018.gif)*图 18: 添加基本类型到引用类型中
+![](img/00018.gif)
+*图 18: 添加基本类型到引用类型中*
 
 http://NewtonSaber.com/OOJavaScript/Images/Figure18.png
 
 你可以从图 18：添加基本类型到引用类型中看到基本类型已被创建并存储在内存中（黄色高亮部分）。
 
-***基本类型由引用类型拥有***
-
-
-
+### 原始值由引用持有
 
 请记住，名为 `children` 的原始类型现在由 `Reference` 类型（`infoOrig`）拥有，因此由它管理该特定项目的内存。这意味着该引用项占据了新原始类型的全部内存空间，加上引用对象本身占用的任何内存——例如地址 `0x00AA01` 处的内存。
 
 ## 引用类型：内存中可扩展的
 
-这是 `Object` 成为 `Reference` 类型的主要原因之一：因为它是一个`User Defined Type`（自定义类型），因此它在内存中的大小是无法预定的。在这种情况下，我们的 UDT 仅由一个 `Number` 组成，但在其他情况下，对象可能包含任意数量的原始类型和/或其他引用类型。
+这是 `Object` 成为 `Reference` 类型的主要原因之一：因为它是一个 `User Defined Type`（自定义类型），因此它在内存中的大小是无法预定的。在这种情况下，我们的 UDT 仅由一个 `Number` 组成，但在其他情况下，对象可能包含任意数量的原始类型和/或其他引用类型。
 
 ### 第 7 步
 
@@ -736,7 +735,9 @@ http://NewtonSaber.com/OOJavaScript/Images/Figure18.png
 
 内存现在看起来就像图 19 所示：修改由引用类型拥有的原始类型的值——现在 `children` 的值为 4（二进制 00000100）。
 
-![](img/00019.gif)**图 19：修改由引用类型拥有的原始类型的值* http://NewtonSaber.com/OOJavaScript/Images/Figure19.png
+![](img/00019.gif)
+**图 19：修改由引用类型拥有的原始类型的值**
+http://NewtonSaber.com/OOJavaScript/Images/Figure19.png
 
 ## 创建引用类型的拷贝
 
@@ -746,9 +747,9 @@ http://NewtonSaber.com/OOJavaScript/Images/Figure18.png
 
 理解这一个概念将让你在所有语言中成为一名更好的程序员，因为你将理解编写代码时真正发生了什么。
 
-创建一个拷贝简单意味着创建一个新的变量名，并将之前创建的值赋值给该变量名。我们已经在原始类型上这样做过，现在我们对通过这一行代码执行同样的事情：
+创建一个拷贝简单意味着创建一个新的变量名，并将之前创建的值赋值给该变量名。我们已经在原始类型上这样做过，现在我们通过这一行代码执行同样的事情：
 
-```
+```javascript
 var infoCopy = infoOrig;
 ```
 
@@ -763,11 +764,13 @@ var infoCopy = infoOrig;
 当 JavaScript `Interpreter` 看到这行代码时，它执行以下操作：
 
 1. 在其内部表中创建一个新的 `Reference object` (`infoCopy`）。
-2. 将 `infoOrig` 的地址 (`0x00AA01`）保存到它引用 `infoCopy` 的地址 (`0x00AA01`) 处。
+2. 将 `infoOrig` 的地址 (`0x00AA01`) 保存到它引用 `infoCopy` 的地址 (`0x00CCEE`) 处。
 
 这看起来就像图 20 所示：创建了 `infoCopy` 引用类型。注意，现在你有两个指向内存中同一位置的变量。这两个变量*引用*内存中的同一个对象——地址为 `0x00AA01` 的那个对象。
 
-![](img/00020.gif)**图 20：创建了 infoCopy 引用类型* http://NewtonSaber.com/OOJavaScript/Images/Figure20.png
+![](img/00020.gif)
+**图 20：创建了 infoCopy 引用类型**
+http://NewtonSaber.com/OOJavaScript/Images/Figure20.png
 
 ### 第 9 步：你的两个引用都指向同一个东西
 
@@ -779,7 +782,9 @@ var infoCopy = infoOrig;
 
 现在内存看起来就像图 21 所示：`infoCopy` 和 `infoOrig` 都指向同一个地址。
 
-![](img/00021.gif)**图 21：infoCopy 和 infoOrig 都指向同一个地址* http://NewtonSaber.com/OOJavaScript/Images/Figure21.png
+![](img/00021.gif)
+**图 21：infoCopy 和 infoOrig 都指向同一个地址**
+http://NewtonSaber.com/OOJavaScript/Images/Figure21.png
 
 你看到现在创建一个对象的拷贝（也称为新引用）有多快了吗？
 
@@ -787,7 +792,7 @@ var infoCopy = infoOrig;
 
 在我们阅读这本书的过程中，我们将进一步研究 `Reference types` 的影响，但现在你已经知道了这一点，你将能够更好地理解这本书的剩余部分。我在本章留下了关于 `Assembly Language`（汇编语言）的侧栏，我们将在下一章再次讨论 JavaScript `Functions`（它们也是引用类型）。
 
-## 侧栏 - 汇编语言？我以为这是 JavaScript
+## 侧边栏 - 汇编语言？我以为这是 JavaScript
 
 在过去，程序员没有我们现在这样好的 GUI（图形用户界面），他们必须知道如何直接与计算机的 `CPU`（主处理器）通信，并告诉它将数据存储在特定的内存位置（地址）。
 
@@ -811,9 +816,9 @@ var infoCopy = infoOrig;
 
 ### JavaScript 解释器为你工作
 
-在我们案例中，做这些工作的是 JavaScript `Interpreter`，它运行在浏览器内部。这意味着我们开发者现在可以编写更容易学习的代码。不需要理解处理器 `Op Codes`（操作码）和内存地址，要在内存位置存储一个值，只需输入以下有效的 JavaScript
+在我们案例中，做这些工作的是 JavaScript `Interpreter`，它运行在浏览器内部。这意味着我们开发者现在可以编写更容易学习的代码。不需要理解处理器 `Op Codes`（操作码）和内存地址，要在内存位置存储一个值，只需输入以下有效的 JavaScript：
 
-```
+```javascript
 var x = 15;
 ```
 
@@ -823,7 +828,7 @@ var x = 15;
 
 我们在上一章学习了许多关于幕后发生了什么的知识，本章将继续讨论。上次我们学习了可以通过以下方式创建一个对象：
 
-```
+```javascript
 var person = {};
 person.firstName = "frank";
 person.lastName = "smith";
@@ -831,7 +836,7 @@ person.lastName = "smith";
 
 但是，现在假设你想创建另一个人。你想这样做，是因为你不想再次输入添加这些属性（lastName 和 firstName）的代码。你可能会想：“好吧，我会这样做：”
 
-```
+```javascript
 var person2 = person;
 ```
 
@@ -860,49 +865,56 @@ ted.firstName = "ted";
 ted.lastName = "jones";
 ```
 
+## 定义
 
-
-
-# 定义
-实例化（Inst）意味着在物理内存中分配内存并构造对象。这意味着该对象是存在于内存中的一个有效结构，并且（取决于访问权限）对你的程序是可访问且可。
+实例化（Instantiation）意味着在物理内存中分配内存并构造对象。这意味着该对象是存在于内存中的一个有效结构，并且（取决于访问权限）对你的程序是可访问且可用的。
 
 在 C++、Java、C# 中，你拥有 `new` 关键字，它允许你创建一个存在新内存地址的新对象。每当你需要一个新对象时，只需告诉编译器：`person variableName = new person()` 即可得到一个。
 
 ## JavaScript 的 new 运算符
+
 JavaScript 确实有一个 `new` 运算符，但它没有类模板的概念。幸运的是，在 JavaScript 中，我们可以通过函数来模拟我在上面的 C# 示例中展示的内容。
 
 这是因为函数实际上也是对象。既然函数是对象，让我们来简单聊一下对象的另一个方面。
 
 ## 对象拥有自己的内存
+
 记住，对象拥有自己的内存空间。另一种说法是，对象可能包含其他原始类型（`Number`、`Boolean` 等）和其他引用类型（`Objects`、`Arrays` 等），无法在不通过实例化对象的情况下获取这些内容。
 
 在代码中，它看起来如下：
 
-```
+```javascript
 person.firstName = "Wilma";
 ```
 
 JavaScript 没有提供其他获取 `firstName` 的方法，除非通过实例化的 `person` 对象。对象的内存是隔离的。
 
 ## 对象是内存包装器
+
 另一种说法可能是，对象是内存包装器。让我们再次看一眼内存的图。这次我们将创建一个更高级的对象，它包含一个 `Number`、`String`、`Boolean` 和一个 `Array`（引用类型）。
 
 以下是 JavaScript 代码：
 
 ```javascript
 var person = {};
-person.firstName = "Ted"; person.age = 53;
-person.hasChildren = true; person.children = [];
-person.children.push("sam"); person.children.push("sara"); person.children.push("sandy");
+person.firstName = "Ted";
+person.age = 53;
+person.hasChildren = true;
+person.children = [];
+person.children.push("sam");
+person.children.push("sara");
+person.children.push("sandy");
 ```
 
 通过检查图 22：内存中的 person 对象，你可以看到 `person` 对象在内存中可能的样子。
 
-![](img/00022.gif)*图 22：内存中的 person 对象*
+![](img/00022.gif)
+*图 22：内存中的 person 对象*
 
 http://NewtonSaber.com/OOJavaScript/Images/Figure22.png
 
 ### 深入观察内存中的 person 对象
+
 在图 22 中，你可以看到：
 
 1. `person` 对象的基地址是 `0x00AA01` – 该地址指向内存中实际 person 对象（图 22 中的浅橙色区域）所在的位置。
@@ -926,21 +938,25 @@ console.log(person.age);
 ```
 
 ### JavaScript 的另一种表述方式
+
 那种 JavaScript 语法就像是在说：
 
-进入 `person` 对象并查看内部（`. `），找到一个名为 `age` 的属性，并告诉我存储在那里的值。
+进入 `person` 对象并查看内部（`.`），找到一个名为 `age` 的属性，并告诉我存储在那里的值。
 
 ### 等同于 JavaScript 的自然语言表述
+
 这基本上是另一种说法：
 
 在内部 JavaScript 表格中查找 `person` 对象的地址。它是 `0x00AA01`，所以去该地址查找 `age` `Number`（原始类型）的地址。该地址是 `0x00AA05`，因此查看内存并确定存储在那里的值。
 
 ### 包装器也是作用域
+
 这些对象包装器的有趣之处在于它们创建了作用域。它们限制了你查看其内部包含的值的范围。
 
 事实上，Java、C++ 和 C# 使用了一些关键字来指示属性是否在对象外部可见。你在之前的示例代码中就看到了这一点，当时我有一些以 `public` 单词开头的语句。
 
 ## 错误指示作用域
+
 你可以看到作用域是受限的，因为如果你在脚本中添加以下行：
 
 ```javascript
@@ -949,21 +965,24 @@ console.log(age);
 
 在 Google Chrome 中，你将收到一条显示“age is not defined”的错误。
 
-这是因为你查看的是应用程序作用域，而不是你的 `personobject` 作用域。
+这是因为你查看的是应用程序作用域，而不是你的 `person` 对象作用域。
 
 我向你展示了这一切，让你现在能更好地理解函数。在 JavaScript 中，函数是对象，并且拥有作用域。
 
 ## 函数是对象，它们拥有作用域
+
 作用域在编程世界非常重要。在 JavaScript 世界中，它可能会非常令人困惑。
 
 我们在代码中使用函数的主要原因之一是将它们拆分为我们可以处理的小部分。每个函数都有自己的作用域，并允许我们管理它们所使用的变量。这种作用域如何帮助我们程序员。函数在 JavaScript 中也是类型。
 
 ## 什么是一等类型？
+
 仅仅是函数被视为类型。如果你阅读关于 JavaScript 的内容，可能会有人说“函数是一等对象”或“函数是一等类型”。
 
 这仅仅意味着函数实际上变成了类型。就像有 `Number` 原始类型或 `Object` 引用类型一样，函数也是引用类型。
 
 ## 使用 JavaScript typeof
+
 通过 `typeof` 运算符我们可以看到这种新类型（`function`）。
 
 首先，我们需要定义一个可以测试的函数。这是一个简单的函数，计算传入字符串长度：
@@ -993,6 +1012,7 @@ element2.innerHTML = "charCounter 是 " + typeof charCounter;
 当然，一旦你运行该代码，你会发现显示：charCounter 是 function JavaScript 解释器知道这是一个函数对象。
 
 ## 函数与作用域
+
 正如我们学过的对象拥有作用域，我们也了解到函数拥有作用域。
 
 看以下函数：
@@ -1005,6 +1025,7 @@ function getRandomInteger()
 ```
 
 // 调用函数生成随机数
+
 getRandomInteger();
 
 尽管上面的函数生成了随机数，但你只能在函数内部访问该值。显然，我们可以向函数添加以下行，以便我们能够获取该值：
@@ -1015,6 +1036,7 @@ return randomVal;
 
 这里的点是函数有自己的作用域，这对 JavaScript 程序员很有帮助，可以让你保持值清晰。
 
+```javascript
 // 创建应用程序作用域的变量
 var randomVal = 55;
 
@@ -1029,27 +1051,16 @@ function getRandomInteger()
   el2.innerHTML = "在 getRandomInteger 内部 randomVal 是 " + randomVal;
 }
 
-var el3 =
-
-
-
-
-
-```javascript
-document.getElementById("third");
-
-el3.innerHTML = "back outside
-
-getRandomInteger, randomVal is " +
-
-randomVal;
+var el3 = document.getElementById("third");
+el3.innerHTML = "back outside getRandomInteger, randomVal is " + randomVal;
 ```
 
 如果你运行这段代码，你会发现修改函数内部的 `randomVal` 对应用程序作用范围内的 `randomVal` 没有任何影响。
 
 输出结果如下所示：
 
-![](img/00023.jpeg)**图 23: 函数作用域与变量*
+![](img/00023.jpeg)
+**图 23: 函数作用域与变量**
 
 http://NewtonSaber.com/OOJavaScript/Images/Figure23.png
 
@@ -1059,18 +1070,16 @@ http://NewtonSaber.com/OOJavaScript/Images/Figure23.png
 
 函数是一种 `Reference`（引用）类型，其存储方式与对象相同——它们本身就是对象——因此内存结构与我们之前看到的非常相似。请查看图 24 所示的最后一个程序的内存视图：内存中的函数对象。
 
-![](img/00024.gif)**图 24: 内存中的函数对象*
+![](img/00024.gif)
+**图 24: 内存中的函数对象**
 
 http://NewtonSaber.com/OOJavaScript/Images/Figure24.png
 
 在你查看图 24 时，有许多需要仔细观察的地方。
 
 1. 左侧的 `randomVal`（橙色）是全局变量，它与右侧的 `randomVal`（绿色）不是同一个，后者是作用域于 `getRandomInteger` 函数的。如你所见，它们具有不同的基内存地址，设置其中一个不会影响另一个。
-
 2. 内存中的函数（右侧绿色）看起来与我们之前关于其他 `Reference` 类型的示例完全一样。这是因为它是一个 `Reference` 类型，并继承自 JavaScript 的基础 `Object` 类型。
-
 3. 应用程序作用域包含两个指向 `HtmlDivElements` 的 `Reference` 类型（`el1` 和 `el3`）。函数作用域包含一个指向 `HtmlDivElement` 的引用。这些仅用于输出字符串以便你看到，因此我没有显示这些额外的内存占用。只需注意，这三项也变成了引用，因为它们是 HTML 元素的引用。
-
 4. 此处需要注意的另一点：在我们的示例中，函数内部的 `randomVal` 得到了值 897，这无法放入 8 位（一个字节）中，因此你会发现设置二进制值时，它溢出到了第二个字节（地址 `0x00AA03`），因为我们需要更多位来存储那么大的值。整个值看起来像如下：`00000011 10000001`。只是想指出这一点，因为它与我们之前的示例不同。
 
 ## 向函数传递对象和原始类型
@@ -1084,7 +1093,7 @@ http://NewtonSaber.com/OOJavaScript/Images/Figure24.png
 ```javascript
 function double(inNumber)
 {
-inNumber = inNumber * 2;
+  inNumber = inNumber * 2;
 }
 ```
 
@@ -1103,8 +1112,8 @@ var el3 = document.getElementById("third");
 var paramVal = 17;
 
 function double(inNumber) {
-inNumber = inNumber * 2;
-el2.innerHTML = "inNumber, inside double(), is " + inNumber;
+  inNumber = inNumber * 2;
+  el2.innerHTML = "inNumber, inside double(), is " + inNumber;
 }
 
 el.innerHTML = "paramVal, BEFORE being passed to double(), is " + paramVal;
@@ -1124,7 +1133,8 @@ el3.innerHTML = "paramVal, AFTER being passed to double(), is " + paramVal;
 
 让我们查看之前代码的内存模型，以了解实际发生了什么。检查图 25：向函数传递原始类型，我将在下方解释正在发生的情况。
 
-![](img/00025.gif)**图 25: 向函数传递原始类型*
+![](img/00025.gif)
+**图 25: 向函数传递原始类型**
 
 http://NewtonSaber.com/OOJavaScript/Images/Figure25.png
 
@@ -1133,9 +1143,7 @@ http://NewtonSaber.com/OOJavaScript/Images/Figure25.png
 在检查内存模型后，你可以看到：
 
 1. `paramVal` 被创建为全局变量——（橙色）`paramVal` 的基地址位于 `0x000CCF0`。
-
 2. 参数被创建为原始类型，其作用域于函数对象 `double()`。换句话说，`inNumber` 获得了一个基地址（`0x00AA03`）。
-
 3. `paramVal` 没有受到影响，因为它是值传递。
 
 ## 向函数传递引用类型
@@ -1167,8 +1175,8 @@ var container = {};
 container.paramVal = 17;
 
 function double(inNumber) {
-inNumber.paramVal = inNumber.paramVal * 2;
-el2.innerHTML = "inNumber, inside double(), is " + inNumber.paramVal;
+  inNumber.paramVal = inNumber.paramVal * 2;
+  el2.innerHTML = "inNumber, inside double(), is " + inNumber.paramVal;
 }
 
 el.innerHTML = "paramVal, BEFORE being passed to double(), is " + container.paramVal;
@@ -1182,15 +1190,12 @@ el3.innerHTML = "paramVal, AFTER being passed to double(), is " + container.para
 
 由于我们已经在内存中过过这一切，你可能理解为什么对象类型被修改了。图 26：传递引用类型：部分 1 在内存中展示了这一点。注意在调用 `double()` 函数之前，`container.paramVal` 的值为 17。
 
-![](img/00026.gif)**图 26: 传递引用类型：部分 1*
+![](img/00026.gif)
+**图 26: 传递引用类型：部分 1**
 
 http://NewtonSaber.com/OOJavaScript/Images/Figure26.png
 
 这意味着 `inNumber` 参数指向可以找到对象的内存地址，从而能够获取存储在内部的原始值。
-
-
-
-
 
 ## 值发生了变化，因为内存地址相同
 
@@ -1200,7 +1205,8 @@ http://NewtonSaber.com/OOJavaScript/Images/Figure26.png
 
 显示了该过程的第 2 步——在函数更改容器对象内部的 `paramVal` 之后。
 
-![](img/00027.gif) *图 27：传递引用类型：部分 2*
+![](img/00027.gif)
+*图 27：传递引用类型：部分 2*
 
 http://NewtonSaber.com/OOJavaScript/Images/Figure27.png
 
@@ -1232,7 +1238,7 @@ JavaScript 中的全局 `window` 对象有一个 `setTimeout()` 函数，你可�
 
 `setTimeout` 接受两个参数。第一个是函数，第二个是在调用函数之前等待的毫秒数。你传递给 `setTimeout` 的函数代表了在 N 毫秒后计时器触发时想要运行的命令。
 
-```
+```javascript
 setTimeout(functionName, millis);
 ```
 
@@ -1273,7 +1279,10 @@ function displayData(item) {
 
 function mainWork(targetFunc) {
     var allThings = [];
-    allThings.push("thing1"); allThings.push("thing2"); allThings.push("thing3"); allThings.push("thing4");
+    allThings.push("thing1");
+    allThings.push("thing2");
+    allThings.push("thing3");
+    allThings.push("thing4");
     for (x in allThings) {
         targetFunc(allThings[x]);
     }
@@ -1323,7 +1332,10 @@ function displayDataDiv(item) {
 
 function mainWork(targetFunc) {
     var allThings = [];
-    allThings.push("thing1"); allThings.push("thing2"); allThings.push("thing3"); allThings.push("thing4");
+    allThings.push("thing1");
+    allThings.push("thing2");
+    allThings.push("thing3");
+    allThings.push("thing4");
     for (x in allThings) {
         targetFunc(allThings[x]);
     }
@@ -1335,18 +1347,16 @@ mainWork(displayDataDiv);
 关于这个新脚本有几点需要注意：
 
 1. 旧的 `displayData` 函数不需要删除或修改。这意味着旧的功能可以像以前一样运行。现在，我们只需实现新功能即可。这对于持续开发非常好，因为我们不会破坏旧代码。
+
 2. 我们仍然需要保持函数的公共接口不变。这意味着该函数仍然接收一个 item，在这种情况下该 item 是一个字符串。如果我们真的想将其分离出来，那么该类型可以是基类型（继承链的顶端），并且该类型实现一个特定的、始终不变的接口。我们将在查看依赖注入时学习更多更多内容，但我想在这里简单提一下。
 
 现在，在结束本章之前，我想回到那个老短语，*函数是一类等公民类型*。
-
-
-
 
 在其他语言中，函数既不是对象，也没有真正的独立类型。因此，在这些语言中，函数不被视为一等类型。它们是未被正式承认的“二等公民”。
 
 事实上，在 C++、Java 和 C# 中，它们并不是类型，因此将函数作为参数传递给另一个函数是困难甚至是不可能的。
 
-C++（同 C 语言）实现了指针，使得你可以将函数传递给函数。C++ 中的指针简单来说就是一个你可以传递的地址。该地址可以`point to`任何类型（整数、字符串或函数）。然而，这种语法非常丑陋。例如，如果你有一个名为 `getDouble` 的函数，它不返回内容（`void`）并接受一个整数，那么你的函数指针看起来像如下：
+C++（同 C 语言）实现了指针，使得你可以将函数传递给函数。C++ 中的指针简单来说就是一个你可以传递的地址。该地址可以 `point to` 任何类型（整数、字符串或函数）。然而，这种语法非常丑陋。例如，如果你有一个名为 `getDouble` 的函数，它不返回内容（`void`）并接受一个整数，那么你的函数指针看起来像如下：
 
 ```cpp
 void(*ptrName)(int*); // 这创建了 ptrName 变量
@@ -1372,13 +1382,13 @@ ptrName = &getDouble;
 
 ```javascript
 function Person(firstName, lastName, startDate, workTitle) {
-    this.firstName = firstName; 
-    this.lastName = lastName; 
-    this.startDate = startDate; 
-    this.workTitle = workTitle; 
-    this.empId = getEmployeeId(); 
+    this.firstName = firstName;
+    this.lastName = lastName;
+    this.startDate = startDate;
+    this.workTitle = workTitle;
+    this.empId = getEmployeeId();
     function getEmployeeId() {
-        return Math.ceil(Math.random() * 5000000); 
+        return Math.ceil(Math.random() * 5000000);
     }
 }
 ```
@@ -1386,7 +1396,7 @@ function Person(firstName, lastName, startDate, workTitle) {
 要使用我们刚刚创建的模板，我们使用 JavaScript 的 `new` 运算符。代码如下：
 
 ```javascript
-var employee = new Person("elmer", "fudd","2012-03-14","manager");
+var employee = new Person("elmer", "fudd", "2012-03-14", "manager");
 ```
 
 你可以在此处看到一个使用了该模板对象的简单脚本：http://plnkr.co/edit/GWAq6VGkOyUOulVT8uys?p=preview
@@ -1400,18 +1410,19 @@ var employee = new Person("elmer", "fudd","2012-03-14","manager");
 
 好了，让我们来看看内存中的模板对象。它看起来就像图 28 所示：函数作为对象的模板。
 
-![](img/00028.gif) *图 28: 函数作为对象的模板*
+![](img/00028.gif)
+*图 28: 函数作为对象的模板*
 
 http://NewtonSaber.com/OOJavaScript/Images/Figure28.png
 
-图 28 中有很多许多需要仔细检查的地方。1. `Person` 包含五个属性和 1 个函数（用橙色显示）。
+图 28 中有很多许多需要仔细检查的地方。
 
+1. `Person` 包含五个属性和 1 个函数（用橙色显示）。
 2. 我将字符串类型显示为引用，因为它们很可能是以这种方式实现的，因为它们在内存中的大小是波动的。（你将在下一张图中看到这些从空值变为地址。）
 3. 我将 `empId` 初始化为 0，并将每个引用初始化为 `null`，尽管我不确定网络浏览器/JavaScript 究竟将它们初始化为什么值。请记住，这是一个为了增加我们理解而设计的简化模型，而不是为了让我们变成计算机科学家。
-
 4. 这是在我们根据此模板 `new` 出另一个对象之前 `Person` 函数的视图。
 
-现在，让我们看看在使用 `new` 运算符实例化 `employeeobject` 后，内存中发生了什么。
+现在，让我们看看在使用 `new` 运算符实例化 `employee` 对象后，内存中发生了什么。
 
 ## JavaScript new 运算符
 
@@ -1422,8 +1433,10 @@ http://NewtonSaber.com/OOJavaScript/Images/Figure28.png
 当 JavaScript 解释器遇到以下代码行时，它知道不是将 `Person` 对象复制到新变量中，而是在新的内存地址处创建一个全新的 `Person Object`。
 
 ```javascript
-var employee = new Person("elmer", "fudd","2012-03-14","manager");
+var employee = new Person("elmer", "fudd", "2012-03-14", "manager");
 ```
+
+
 
 解释器现在不会将 `Person` 函数的地址复制到我们的 `employee` 变量中，而是获取 `Person` 对象并在另一个内存位置创建一个新对象，并返回该地址。这意味着，内存现在看起来就像你在图 29 中所示：新对象意味着新内存。
 
@@ -1437,11 +1450,11 @@ http://NewtonSaber.com/OOJavaScript/Images/Figure29.png
 
 你需要 `this` 运算符，因为没有其他方法可以引用你当前所在的内部的对象。在对象外部我们将其称为 `employee` 对象，但在对象内部我们将其称为 `this`。
 
-## 关于 this 如何？
+### 关于 this 如何？
 
 `this` 运算符在初始化阶段起作用。现在内存已经为该对象预留，它可以表示一个真实世界中的事物，例如带有 `empId` 的员工。
 
-## 构造：自动执行代码
+### 构造：自动执行代码
 
 当创建新对象时，会发生一次构造过程，代码封装在另一个函数中。
 
@@ -1459,11 +1472,11 @@ this.empId = getEmployeeId();
 
 此外，考虑另一点：在对象实例化后，没有办法再次运行上述代码。
 
-### 构造函数每个应用程序运行一次
+#### 构造函数每个应用程序运行一次
 
 你明白为什么了吗？答案是因为没有办法再次访问这些行。你无法在程序的任何地方特指这些行。这构成了我们基于模板对象构建的新对象的构造代码。
 
-相比之下，注意你可以通过编写编写 JavaScript 代码随时运行 `getEmployeeId()` 函数：
+相比之下，注意你可以通过编写 JavaScript 代码随时运行 `getEmployeeId()` 函数：
 
 ```javascript
 employee.getEmployeeId(); // 返回随机数
@@ -1477,12 +1490,9 @@ http://NewtonSaber.com/OOJavaScript/Images/Figure30.png
 
 我将 `empId` 的设置为 7 仅作为我们的示例。设置该值的函数简单地生成 1 到 5,000,000 之间的随机值。
 
-
-
-
 这意味着你对该对象所做的任何操作，都是在对对象本身进行操作。
 
-### 关于 getEmployeeId 函数的地址如何？
+#### 关于 getEmployeeId 函数的地址如何？
 
 你可能已经注意到，在模板对象（`Person`）和新对象（`employee`）中，我将指向 `getEmployeeId` 函数的地址都设置为同一个值（`0x2CFC01`）。我这样做是因为我认为解释器应该足够聪明，能够看出这些是相同的函数（因为它们执行的工作相同），并且解释器会进行这种优化以节省内存。否则，同一个函数将以不同的地址被加载到内存中，然后由每个对象（`Person` 和 `employee`）分别引用。在我看来这似乎是浪费内存。
 

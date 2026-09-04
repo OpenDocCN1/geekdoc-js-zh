@@ -1,13 +1,7 @@
+
 # 12.3 jQuery 插件开发
 
 所谓“插件”，就是用户自己新增的 jQuery 实例对象的方法。由于该方法要被所有实例共享，所以只能定义在 jQuery 构造函数的原型对象（prototype）之上。对于用户来说，把一些常用的操作封装成插件（plugin），使用起来会非常方便。
-
-*   插件的编写
-    *   原理
-    *   侦测环境
-    *   实例
-    *   插件的发布
-    *   参考链接
 
 ## 插件的编写
 
@@ -190,4 +184,5 @@ git push origin --tags
 ## 参考链接
 
 *   jquery-boilerplate, [How did we get here?](https://github.com/jquery-boilerplate/jquery-boilerplate/wiki/How-did-we-get-here%3F)
+
 *   jquery-boilerplate, [How to publish a plugin in jQuery Plugin Registry](https://github.com/jquery-boilerplate/jquery-boilerplate/wiki/How-to-publish-a-plugin-in-jQuery-Plugin-Registry)

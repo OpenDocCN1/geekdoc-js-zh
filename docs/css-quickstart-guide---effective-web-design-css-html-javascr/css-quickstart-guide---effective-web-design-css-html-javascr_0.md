@@ -1,9 +1,7 @@
-# CSS：快速启动指南 - 高效网页设计（CSS、HTML、JavaScript、编程）
 
+# CSS：快速启动指南——高效网页设计（CSS、HTML、JavaScript、编程）
 
-
-
-# 引言
+## 引言
 
 CSS，即层叠样式表（Cascading Style Sheets）的缩写，是所有设计语言中最简单的一种，也是实现最高效网页设计所必需的语言。CSS 将处理网页的外观和感觉；你可以设置文本颜色、字体样式、段落间距、网页列的布局和大小、背景所需的颜色和图像，以及所有其他布局和设计变化，以使你的网站在不同屏幕尺寸和设备上正常工作。
 
@@ -11,73 +9,62 @@ CSS 非常容易理解和学习，它让你能够强有力地控制 HTML 文档�
 
 本书将带你了解 CSS 可以控制的网页设计的所有主要方面，并附有示例代码。我希望，在阅读完本书后，你能对 CSS 的易用性以及它能产生的惊人效果有所了解。
 
-# 第 1 章：使用 CSS 的优势
+## 第 1 章：使用 CSS 的优势
 
 CSS 相比其他类似程序有许多优势，包括：
 
-节省时间——使用 CSS，你可以编写一次样式表，然后在多个不同的 HTML 页面中使用完全相同的样式表。每个 HTML 元素都可以拥有自己独立的样式，并可应用于多个网页。
-
-更快的页面加载速度——使用 CSS 时，无需每次都编写 HTML 标签属性。相反，你可以为某个标签编写一条规则，然后将其应用于该标签的每次出现。更少的代码意味着更快的加载速度。
-
-易于维护——当你想要进行全局更改时，只需更改样式；所有使用该样式的网页中与该样式相关的每个元素都将被更改。
-
-在样式上优于 HTML——CSS 提供了比 HTML 更广泛的属性访问范围，因此你的 HTML 页面看起来会比使用 HTML 属性更好。
-
-兼容多种设备——你的样式表允许内容针对多种设备类型进行优化。例如，使用相同的 HTML 文档，你可以为打印、PDA 或移动设备生成不同的网站版本。
-
-全球网络标准——越来越多地推荐使用 CSS 而非 HTML，所以现在是开始学习并将其应用于所有 HTML 页面的好时机。这样，它们将与未来的浏览器兼容。
-
-离线浏览——CSS 能够通过离线缓存本地存储应用程序。这意味着你将更容易查看离线网站，并且由于缓存，它们加载速度更快，网站性能更好。
+- **节省时间**——使用 CSS，你可以编写一次样式表，然后在多个不同的 HTML 页面中使用完全相同的样式表。每个 HTML 元素都可以拥有自己独立的样式，并可应用于多个网页。
+- **更快的页面加载速度**——使用 CSS 时，无需每次都编写 HTML 标签属性。相反，你可以为某个标签编写一条规则，然后将其应用于该标签的每次出现。更少的代码意味着更快的加载速度。
+- **易于维护**——当你想要进行全局更改时，只需更改样式；所有使用该样式的网页中与该样式相关的每个元素都将被更改。
+- **在样式上优于 HTML**——CSS 提供了比 HTML 更广泛的属性访问范围，因此你的 HTML 页面看起来会比使用 HTML 属性更好。
+- **兼容多种设备**——你的样式表允许内容针对多种设备类型进行优化。例如，使用相同的 HTML 文档，你可以为打印、PDA 或移动设备生成不同的网站版本。
+- **全球网络标准**——越来越多地推荐使用 CSS 而非 HTML，所以现在是开始学习并将其应用于所有 HTML 页面的好时机。这样，它们将与未来的浏览器兼容。
+- **离线浏览**——CSS 能够通过离线缓存本地存储应用程序。这意味着你将更容易查看离线网站，并且由于缓存，它们加载速度更快，网站性能更好。
 
 如你所见，CSS 相比 HTML 提供了大量优势，尤其是它现在已成为公认的标准。随着 CSS 越来越流行，现在正是开始学习的最佳时机。
 
 闲话少说，让我们深入探讨用于网页设计的 CSS 元素。
 
-在进一步讲解之前，我必须说明，本书中使用的一些示例代码归功于 www.tutorialspoint.com。
+在进一步讲解之前，我必须说明，本书中使用的一些示例代码归功于 `www.tutorialspoint.com`。
 
-# 第 2 章：CSS 模块
+## 第 2 章：CSS 模块
 
 CSS 模块采用了现有的 CSS 规范以及一些扩展功能，包括：
 
-*   选择器
-*   盒模型
-*   图像值
-*   背景和边框
-*   替换内容
-*   文本效果
-*   2D 和 3D 变换
-*   动画
-*   多列布局
-*   用户界面
+- 选择器
+- 盒模型
+- 图像值
+- 背景和边框
+- 替换内容
+- 文本效果
+- 2D 和 3D 变换
+- 动画
+- 多列布局
+- 用户界面
 
 CSS 由一系列样式规则组成，这些规则由浏览器解释后应用于文档的正确元素。样式规则分为三部分：
 
-选择器——这是应用样式的 HTML 标签。这些标签的示例有`<h1>`或`<table>`。
-
-*   属性——属性是 HTML 标签属性的类型。简单来说，所有 HTML 属性都转换为 CSS 属性，例如`color`、`border`等。
-
-*   值——每个属性被赋予一个或多个值。例如，颜色属性的值可以是红色或`#F2F2F2`等。
+- **选择器**——这是应用样式的 HTML 标签。这些标签的示例有 `<h1>` 或 `<table>`。
+- **属性**——属性是 HTML 标签属性的类型。简单来说，所有 HTML 属性都转换为 CSS 属性，例如 `color`、`border` 等。
+- **值**——每个属性被赋予一个或多个值。例如，颜色属性的值可以是红色或 `#F2F2F2` 等。
 
 CSS 样式规则的语法为：
 
-```
+```css
 selector { property: value }
 ```
 
 例如，你可以为表格定义边框：
 
-```
+```css
 table{ border :1px solid #C00; }
 ```
 
-
-
-
 在这个例子中，`table` 是一个选择器，`border` 是一个属性。它被赋予了 `1px solid #C00` 的值。
 
-选择器可以通过多种方式定义，下面我们逐一介绍：
+选择器可以通过多种方式定义，下面我们逐一介绍。
 
-## 类型选择器
+### 类型选择器
 
 上面你已经看到了类型选择器的例子，但让我们再看一个——为所有一级标题添加颜色的方法：
 
@@ -87,7 +74,7 @@ h1 {
 }
 ```
 
-## 通用选择器
+### 通用选择器
 
 这个选择器不是选择与特定类型相关的元素，而是直接匹配元素类型的名称。例如：
 
@@ -99,7 +86,7 @@ h1 {
 
 在这个例子中，所有元素的内容都变成了黑色。
 
-## 后代选择器
+### 后代选择器
 
 假设你想给某个特定元素设置样式，但仅当它位于另一个特定元素内部时。在下面的例子中，我们将样式规则应用于 `<em>` 元素，但仅当它位于 `<ul>` 标签之外时：
 
@@ -109,7 +96,7 @@ ul em {
 }
 ```
 
-## 类选择器
+### 类选择器
 
 类选择器允许你使用元素的 `class` 属性来定义样式规则。所有属于该特定类的元素都会按照定义的规则进行格式化：
 
@@ -137,7 +124,7 @@ h1.black {
 </p>
 ```
 
-## ID 选择器
+### ID 选择器
 
 样式规则可以定义在元素的 `id` 属性上，一旦定义了规则，它将格式化所有具有指定 `id` 属性的元素：
 
@@ -167,7 +154,7 @@ ID 选择器的真正威力在于它们作为后代选择器的基础时体现�
 
 这里可以看到，所有二级标题只有在位于 `id` 属性设置为 `black` 的标签内部时，才会变为黑色。
 
-## 子选择器
+### 子选择器
 
 子选择器与后代选择器类似，但功能不同。请看这个例子：
 
@@ -179,7 +166,7 @@ body > p {
 
 这将使段落变为黑色，但仅当它们是 `<body>` 元素的直接子元素时。其他位于其他元素（如 `<td>` 或 `<div>`）内部的段落不会改变。
 
-## 属性选择器
+### 属性选择器
 
 样式也可以应用于具有特定属性的 HTML 元素。请看下面的例子；你可以看到样式规则将匹配所有 `type` 属性值为 `text` 的 `input` 元素：
 
@@ -193,12 +180,12 @@ input[type="text"] {
 
 以下是属性选择器的规则：
 
-*   `p[lang]` - 选择所有具有 `lang` 属性的段落元素
-*   `p[lang="fr"]` – 选择所有 `lang` 属性精确值为 `"fr"` 的段落元素
-*   `p[lang~="fr"]` – 选择所有 `lang` 属性包含 `"fr"` 的段落元素
-*   `p[lang|="en"]` – 选择所有 `lang` 属性精确值为 `"en"` 或以 `"en-"` 开头的段落元素
+- `p[lang]` - 选择所有具有 `lang` 属性的段落元素
+- `p[lang="fr"]` – 选择所有 `lang` 属性精确值为 `"fr"` 的段落元素
+- `p[lang~="fr"]` – 选择所有 `lang` 属性包含 `"fr"` 的段落元素
+- `p[lang|="en"]` – 选择所有 `lang` 属性精确值为 `"en"` 或以 `"en-"` 开头的段落元素
 
-## 多重样式规则
+### 多重样式规则
 
 可以为单个元素定义多条样式规则，这些规则应组合成一个块，包含多个属性及其对应的值，如下例所示：
 
@@ -214,7 +201,7 @@ h1 {
 
 在这个例子中，你可以看到每对属性和值之间用分号（`;`）分隔。它们可以放在一行，也可以分散在多行，但为了便于阅读，我们将其放在单独的行上。
 
-## 分组选择器
+### 分组选择器
 
 样式可以应用于多个选择器。你只需记住用逗号分隔每个选择器，如下例所示：
 
@@ -238,11 +225,11 @@ h1, h2, h3 {
 }
 ```
 
-# 第 3 章：包含方式
+## 第 3 章：包含方式
 
 你有四种方法将样式与 HTML 文档关联起来，其中最常用的是内联 CSS 和外部 CSS 方法。
 
-## 嵌入式 CSS
+### 嵌入式 CSS
 
 CSS 规则可以通过使用 `<style>` 元素放入 HTML 文档中。该标签位于 `<head>…</head>` 标签内，使用此语法定义的规则适用于所有可用元素。下面的例子展示了一个嵌入式 CSS 样式元素：
 
@@ -267,7 +254,7 @@ CSS 规则可以通过使用 `<style>` 元素放入 HTML 文档中。该标签�
 </html>
 ```
 
-### 属性
+#### 属性
 
 与 `<style>` 元素相关的常见属性如下表所示：
 
@@ -276,7 +263,7 @@ CSS 规则可以通过使用 `<style>` 元素放入 HTML 文档中。该标签�
 | `type` | `text/css` | 该属性将样式表的语言指定为 MIME 内容类型，是必需属性 |
 | `media` | `screen` `tty` `tv` `projection` `handheld` `print` `braille` `aural` `all` | 指定文档将在哪种设备上显示。默认值为 `all`，属于可选属性 |
 
-## 内联 CSS
+### 内联 CSS
 
 你也可以使用任何 HTML 元素的 `style` 属性来定义规则。这些特定规则仅应用于该特定元素。通用语法为：
 
@@ -284,7 +271,7 @@ CSS 规则可以通过使用 `<style>` 元素放入 HTML 文档中。该标签�
 <element style="...样式规则....">
 ```
 
-### 属性
+#### 属性
 
 `style` 属性的值由不同的样式声明混合而成，每个声明之间用分号分隔。以下示例基于通用语法：
 
@@ -298,7 +285,7 @@ CSS 规则可以通过使用 `<style>` 元素放入 HTML 文档中。该标签�
 </html>
 ```
 
-## 外部 CSS - `<link>` 元素
+### 外部 CSS——`<link>` 元素
 
 你可以使用 `<link>` 元素将外部样式表包含到 HTML 文档中。外部样式表是独立的文本文件，扩展名为 `.css`。你将在该文件中定义所有样式规则，然后可以通过 `<link>` 元素将其添加到任何 HTML 文档中。通用语法为：
 
@@ -308,7 +295,7 @@ CSS 规则可以通过使用 `<style>` 元素放入 HTML 文档中。该标签�
 </head>
 ```
 
-### 属性
+#### 属性
 
 与 `<style>` 元素相关的属性如下：
 
@@ -320,10 +307,7 @@ CSS 规则可以通过使用 `<style>` 元素放入 HTML 文档中。该标签�
 
 例如，考虑一个名为 `mystyle.css` 的样式表，其中包含以下规则：
 
-
-
-
-```
+```css
 h1, h2, h3 {
    color: #36C;
    font-weight: normal;
@@ -335,17 +319,17 @@ h1, h2, h3 {
 
 现在，使用以下代码，你可以将这个文件添加到任何 HTML 文档中：
 
-```
+```html
 <head>
    <link type = "text/css" href = "mystyle.css" media = " all" />
 </head>
 ```
 
-## 导入 CSS - @import 规则
+### 导入 CSS——`@import` 规则
 
 `@import` 规则用于导入外部样式表，其方式与 `<link>` 元素类似。通用语法如下：
 
-```
+```html
 <head>
    <@import "URL";
 </head>
@@ -353,7 +337,7 @@ h1, h2, h3 {
 
 在此语法中，`URL` 用作包含样式规则的特定样式表的 URL。另一种写法是：
 
-```
+```html
 <head>
    <@import url("URL");
 </head>
@@ -361,25 +345,25 @@ h1, h2, h3 {
 
 以下示例展示了如何将样式表导入 HTML 文档：
 
-```
+```html
 <head>
    @import "mystyle.css";
 </head>
 ```
 
-## 覆盖 CSS 规则
+### 覆盖 CSS 规则
 
 到目前为止，我们已经了解了在 HTML 文档中包含样式表的四种不同方式。现在我们来看看如何覆盖任何样式表规则：
 
-*   内联样式表拥有最高优先级，包括覆盖外部样式表或 `<style> … </style>` 标签中定义的任何规则。
-*   任何 `<style> … </style>` 标签都会覆盖外部样式表文件。
-*   外部样式表规则的优先级最低，仅当内联样式或 `<style> … </style>` 标签未应用时才会生效。
+- 内联样式表拥有最高优先级，包括覆盖外部样式表或 `<style> … </style>` 标签中定义的任何规则。
+- 任何 `<style> … </style>` 标签都会覆盖外部样式表文件。
+- 外部样式表规则的优先级最低，仅当内联样式或 `<style> … </style>` 标签未应用时才会生效。
 
-## 如何处理旧版浏览器
+### 如何处理旧版浏览器
 
 有不少较旧的浏览器不支持 CSS，因此当你在 HTML 文档中编写嵌入式 CSS 时，请务必小心。以下示例展示了如何使用注释标签来对旧版浏览器隐藏 CSS：
 
-```
+```html
 <style type="text/css">
    <!--
       body, td {
@@ -389,7 +373,7 @@ h1, h2, h3 {
 </style>
 ```
 
-## CSS 注释
+### CSS 注释
 
 有时你需要在样式表块中添加额外的注释，但注释样式表的任何部分都非常容易。你只需将注释放在 `/*…. 这是样式表中的注释 …. */` 中即可。
 
@@ -397,7 +381,7 @@ h1, h2, h3 {
 
 例如：
 
-```
+```html
 <!DOCTYPE html>
 <html>
    <head>
@@ -418,7 +402,7 @@ h1, h2, h3 {
 
 这将在屏幕上显示“Hello, World!”。
 
-# 第 4 章：度量单位
+## 第 4 章：度量单位
 
 CSS 支持多种不同的度量单位，包括相对度量（如百分比）和绝对单位（如厘米、英寸、点等）。当你在样式规则中指定度量值时，需要使用这些值，例如 `border = “1px solid red”`。
 
@@ -426,18 +410,21 @@ CSS 支持多种不同的度量单位，包括相对度量（如百分比）和�
 
 | 单位 | 描述 | 示例 |
 | --- | --- | --- |
-| % | 将度量定义为相对于其他值的百分比。典型情况是相对于包含元素。 | `p {font-size: 16pt; line-height: 125%;}` |
-| cm | 以厘米为单位定义度量 | `div {margin-bottom: 2cm;}` |
-| em | 以 em 空格为单位的字体高度相对度量。一个 em 单位相当于任何给定字体的大小，因此如果你为字体分配 12 pt，每个 em 单位就是 12 pt。这意味着 2em 等于 24 pt。 | `p {letter-spacing: 7em;}` |
-| ex | 定义相对于字体 x 高度的度量。x 高度由指定字体中小写字母 x 的高度决定。 | `p {font-size: 24pt; line-height: 3ex;}` |
-| in | 以英寸为单位定义度量 | `p {word-spacing: .15in;}` |
-| mm | 以毫米为单位定义度量 | `p {word-spacing: 15mm;}` |
-| pc | 以派卡为单位定义度量，1 派卡等于 12 点。这意味着 1 英寸等于 6 派卡。 | `p {font-size: 20pc;}` |
-| pt | 以点为单位定义度量，1 点定义为 1/72 英寸 | `body {font-size: 18pt;}` |
-| px | 以屏幕像素为单位定义度量 | `p {padding: 25px;}` |
-| vh | 视口高度的 1% | `h2 { font-size: 3.0vh; }` |
-| vw | 视口宽度的 1% | `h1 { font-size: 5.9vw; }` |
-| vmin | 1vw 或 1vh 中的较小值 | `p { font-size: 2vmin;}` |
+| `%` | 将度量定义为相对于其他值的百分比。典型情况是相对于包含元素。 | `p {font-size: 16pt; line-height: 125%;}` |
+| `cm` | 以厘米为单位定义度量 | `div {margin-bottom: 2cm;}` |
+| `em` | 以 em 空格为单位的字体高度相对度量。一个 em 单位相当于任何给定字体的大小，因此如果你为字体分配 12 pt，每个 em 单位就是 12 pt。这意味着 2em 等于 24 pt。 | `p {letter-spacing: 7em;}` |
+| `ex` | 定义相对于字体 x 高度的度量。x 高度由指定字体中小写字母 x 的高度决定。 | `p {font-size: 24pt; line-height: 3ex;}` |
+| `in` | 以英寸为单位定义度量 | `p {word-spacing: .15in;}` |
+| `mm` | 以毫米为单位定义度量 | `p {word-spacing: 15mm;}` |
+| `pc` | 以派卡为单位定义度量，1 派卡等于 12 点。这意味着 1 英寸等于 6 派卡。 | `p {font-size: 20pc;}` |
+| `pt` | 以点为单位定义度量，1 点定义为 1/72 英寸 | `body {font-size: 18pt;}` |
+| `px` | 以屏幕像素为单位定义度量 | `p {padding: 25px;}` |
+| `vh` | 视口高度的 1% | `h2 { font-size: 3.0vh; }` |
+| `vw` | 视口宽度的 1% | `h1 { font-size: 5.9vw; }` |
+
+
+
+| `vmin` | `1vw` 或 `1vh` 中的较小值 | `p { font-size: 2vmin;}` |
 
 # 第 5 章：颜色
 
@@ -451,7 +438,7 @@ CSS 支持多种不同的度量单位，包括相对度量（如百分比）和�
 | 短十六进制代码 | `#RGB` | `p{color:#6A7;}` |
 | RGB 百分比 | `rgb(rrr%,ggg%,bbb%)` | `p{color:rgb(50%,50%,50%);}` |
 | RGB 绝对值 | `rgb(rrr,ggg,bbb)` | `p{color:rgb(0,0,255);}` |
-| 关键字 | `aqua, black, 等` | `p{color:teal;}` |
+| 关键字 | `aqua`, `black`, 等 | `p{color:teal;}` |
 
 让我们更详细地了解这些格式：
 
@@ -459,7 +446,7 @@ CSS 支持多种不同的度量单位，包括相对度量（如百分比）和�
 
 十六进制是 6 位颜色表示。第一位 `RR` 表示红色值，`GG` 表示绿色值，`BB` 表示蓝色值。
 
-这些值可以从图形软件（如 JASC Paintshop Pro、Adobe Photoshop、Advanced Paintbrush 等）中获取。每个十六进制代码前面都有一个 # 或 £ 符号，以下是十六进制表示法的示例：
+这些值可以从图形软件（如 JASC Paintshop Pro、Adobe Photoshop、Advanced Paintbrush 等）中获取。每个十六进制代码前面都有一个 `#` 或 `£` 符号，以下是十六进制表示法的示例：
 
 | 颜色 | 颜色十六进制 |
 | --- | --- |
@@ -475,7 +462,7 @@ CSS 支持多种不同的度量单位，包括相对度量（如百分比）和�
 
 ## 短十六进制代码
 
-这只是十六进制代码的较短版本，每个数字会被复制，从而得到等效的 6 位值。这些值也可以从图形软件中获取，并且前面也有 # 或 £ 符号：
+这只是十六进制代码的较短版本，每个数字会被复制，从而得到等效的 6 位值。这些值也可以从图形软件中获取，并且前面也有 `#` 或 `£` 符号：
 
 | 颜色 | 颜色十六进制 |
 | --- | --- |
@@ -533,28 +520,23 @@ CSS 支持多种不同的度量单位，包括相对度量（如百分比）和�
 | `66CC00` | `66CC33` | `66CC66` | `66CC99` | `66CCCC` | `66CCFF` |
 | `66FF00` | `66FF33` | `66FF66` | `66FF99` | `66FFCC` | `66FFFF` |
 | `990000` | `990033` | `990066` | `990099` | `9900CC` | `9900FF` |
-
-
-
-
-
-| 993300 | 993333 | 993366 | 993399 | 9933CC | 9933FF |
-| 996600 | 996633 | 996666 | 996699 | 9966CC | 9966FF |
-| 999900 | 999933 | 999966 | 999999 | 9999CC | 9999FF |
-| 99CC00 | 99CC33 | 99CC66 | 99CC99 | 99CCCC | 99CCFF |
-| 99FF00 | 99FF33 | 99FF66 | 99FF99 | 99FFCC | 99FFFF |
-| CC0000 | CC0033 | CC0066 | CC0099 | CC00CC | CC00FF |
-| CC3300 | CC3333 | CC3366 | CC3399 | CC33CC | CC33FF |
-| CC6600 | CC6633 | CC6666 | CC6699 | CC66CC | CC66FF |
-| CC9900 | CC9933 | CC9966 | CC9999 | CC99CC | CC99FF |
-| CCCC00 | CCCC33 | CCCC66 | CCCC99 | CCCCCC | CCCCFF |
-| CCFF00 | CCFF33 | CCFF66 | CCFF99 | CCFFCC | CCFFFF |
-| FF0000 | FF0033 | FF0066 | FF0099 | FF00CC | FF00FF |
-| FF3300 | FF3333 | FF3366 | FF3399 | FF33CC | FF33FF |
-| FF6600 | FF6633 | FF6666 | FF6699 | FF66CC | FF66FF |
-| FF9900 | FF9933 | FF9966 | FF9999 | FF99CC | FF99FF |
-| FFCC00 | FFCC33 | FFCC66 | FFCC99 | FFCCCC | FFCCFF |
-| FFFF00 | FFFF33 | FFFF66 | FFFF99 | FFFFCC | FFFFFF |
+| `993300` | `993333` | `993366` | `993399` | `9933CC` | `9933FF` |
+| `996600` | `996633` | `996666` | `996699` | `9966CC` | `9966FF` |
+| `999900` | `999933` | `999966` | `999999` | `9999CC` | `9999FF` |
+| `99CC00` | `99CC33` | `99CC66` | `99CC99` | `99CCCC` | `99CCFF` |
+| `99FF00` | `99FF33` | `99FF66` | `99FF99` | `99FFCC` | `99FFFF` |
+| `CC0000` | `CC0033` | `CC0066` | `CC0099` | `CC00CC` | `CC00FF` |
+| `CC3300` | `CC3333` | `CC3366` | `CC3399` | `CC33CC` | `CC33FF` |
+| `CC6600` | `CC6633` | `CC6666` | `CC6699` | `CC66CC` | `CC66FF` |
+| `CC9900` | `CC9933` | `CC9966` | `CC9999` | `CC99CC` | `CC99FF` |
+| `CCCC00` | `CCCC33` | `CCCC66` | `CCCC99` | `CCCCCC` | `CCCCFF` |
+| `CCFF00` | `CCFF33` | `CCFF66` | `CCFF99` | `CCFFCC` | `CCFFFF` |
+| `FF0000` | `FF0033` | `FF0066` | `FF0099` | `FF00CC` | `FF00FF` |
+| `FF3300` | `FF3333` | `FF3366` | `FF3399` | `FF33CC` | `FF33FF` |
+| `FF6600` | `FF6633` | `FF6666` | `FF6699` | `FF66CC` | `FF66FF` |
+| `FF9900` | `FF9933` | `FF9966` | `FF9999` | `FF99CC` | `FF99FF` |
+| `FFCC00` | `FFCC33` | `FFCC66` | `FFCC99` | `FFCCCC` | `FFCCFF` |
+| `FFFF00` | `FFFF33` | `FFFF66` | `FFFF99` | `FFFFCC` | `FFFFFF` |
 
 # 第 6 章：背景
 
@@ -750,6 +732,8 @@ CSS 支持多种不同的度量单位，包括相对度量（如百分比）和�
 
 接下来，我们来看设置滚动背景：
 
+
+
 ```html
 <!DOCTYPE html>
 <html>
@@ -787,7 +771,7 @@ CSS 支持多种不同的度量单位，包括相对度量（如百分比）和�
 
 ## 如何使用简写属性
 
-最后一个示例展示了如何通过简写 `background` 属性同时设置所有背景属性：
+最后一个示例展示了如何通过简写`background`属性同时设置所有背景属性：
 
 ```html
 <p style="background:url(/images/pattern1.gif) repeat fixed;">
@@ -805,11 +789,7 @@ CSS 支持多种不同的度量单位，包括相对度量（如百分比）和�
 *   `font-variant` – 用于使字体呈现小型大写字母效果
 *   `font-size` – 用于放大或缩小字体
 
-
-
-
-
-## font – 用于指定各种字体属性的简写属性
+## `font` – 用于指定各种字体属性的简写属性
 
 ### 如何设置字体系列
 
@@ -830,11 +810,11 @@ CSS 支持多种不同的度量单位，包括相对度量（如百分比）和�
 
 它将产生以下结果——
 
-此文本将根据您系统中存在的字体，以 georgia、garamond 或默认衬线字体呈现。
+此文本将根据您系统中存在的字体，以`georgia`、`garamond`或默认衬线字体呈现。
 
 ### 如何设置字体样式
 
-以下示例展示了如何设置元素的样式。值可以是 `italic`、`normal`、`oblique` 等。
+以下示例展示了如何设置元素的样式。值可以是`italic`、`normal`、`oblique`等。
 
 ```html
 <html>
@@ -854,7 +834,7 @@ CSS 支持多种不同的度量单位，包括相对度量（如百分比）和�
 
 ### 如何设置字体变体
 
-此示例展示了如何设置字体变体，可能的值有 `small-caps`、`normal` 等。
+此示例展示了如何设置字体变体，可能的值有`small-caps`、`normal`等。
 
 ```html
 <html>
@@ -874,7 +854,7 @@ THE TEXT IS GOING TO BE RENDERED AS SMALL CAPS
 
 ### 如何设置字体粗细
 
-下一个示例展示了如何设置元素的字体粗细。此属性将指定字体的粗体级别，可能的值包括 – `normal`、`lighter`、`bold`、`bolder`、`100`、`200`、`300`、`400`、`500`、`600`、`700`、`800`、`900` 等。
+下一个示例展示了如何设置元素的字体粗细。此属性将指定字体的粗体级别，可能的值包括 – `normal`、`lighter`、`bold`、`bolder`、`100`、`200`、`300`、`400`、`500`、`600`、`700`、`800`、`900`等。
 
 ```html
 <html>
@@ -898,7 +878,7 @@ The font is 500 weight.
 
 ### 如何设置字体大小
 
-此示例展示了如何设置元素的字体大小。这用于控制字体大小，可能的值有 – `small`、`x-small`、`xx-small`、`xx-large`、`x-large`、`large`、`smaller`、`larger`、`%` 或像素大小：
+此示例展示了如何设置元素的字体大小。这用于控制字体大小，可能的值有 – `small`、`x-small`、`xx-small`、`xx-large`、`x-large`、`large`、`smaller`、`larger`、`%`或像素大小：
 
 ```html
 <html>
@@ -962,7 +942,7 @@ If this doesn't look like it works, most likely your computer does not have a co
 
 ### 如何设置简写属性
 
-最后一个示例展示了如何使用 `font` 属性同时设置所有字体属性：
+最后一个示例展示了如何使用`font`属性同时设置所有字体属性：
 
 ```html
 <html>
@@ -989,7 +969,7 @@ THIS WILL APPLY ALL OF THE PROPERTIES ON THE TEXT AT THE SAME TIME.
 * `letter-spacing` – 用于在单词的字母之间添加或删除空格
 * `text-indent` – 用于缩进文本段落的第一行
 * `text-align` – 用于对齐整个文档中的文本
-* `text-decoration` – 用于为文本添加装饰，例如 `underline`、`overline` 和 `strikethrough`
+* `text-decoration` – 用于为文本添加装饰，例如`underline`、`overline`和`strikethrough`
 * `text-transform` – 用于将文本大写或在大小写字母之间转换
 * `white-space` – 用于控制文本流和格式
 * `text-shadow` – 用于在文本周围设置阴影
@@ -1016,7 +996,7 @@ This text is shown in red.
 
 ## 如何设置文本方向
 
-下一个示例展示了如何设置文本方向，使用 `ltr` 或 `rtl` 作为值。
+下一个示例展示了如何设置文本方向，使用`ltr`或`rtl`作为值。
 
 ```html
 <html>
@@ -1036,7 +1016,7 @@ This text is going to be rendered from right to left
 
 ## 如何设置字符间距
 
-此示例展示了如何设置字符之间的间距，使用 `normal` 或指定间距的数字作为值。
+此示例展示了如何设置字符之间的间距，使用`normal`或指定间距的数字作为值。
 
 ```html
 <html>
@@ -1056,7 +1036,7 @@ This text will have spaces between letters.
 
 ## 如何设置单词间距
 
-下一个示例展示了如何设置单词之间的间距，使用 `normal` 或指定间距的数字作为值。
+下一个示例展示了如何设置单词之间的间距，使用`normal`或指定间距的数字作为值。
 
 ```html
 <html>
@@ -1076,7 +1056,7 @@ This text has spaces between words.
 
 ## 如何设置文本缩进
 
-下一个示例展示了如何缩进新段落的第一行，使用指定缩进空间的数字或 `%` 作为值。
+下一个示例展示了如何缩进新段落的第一行，使用指定缩进空间的数字或`%`作为值。
 
 ```html
 <html>
@@ -1097,7 +1077,7 @@ The text has the first line indented by 1cm and it will remain at this position.
 
 ## 如何设置文本对齐
 
-此示例展示了如何对齐文本，使用 `justify`、`left`、`right` 和 `center` 作为值。
+此示例展示了如何对齐文本，使用`justify`、`left`、`right`和`center`作为值。
 
 ```html
 <html>
@@ -1127,7 +1107,7 @@ The text will be left aligned.
 
 ## 如何装饰文本
 
-现在我们来看一个示例，展示如何装饰文本，使用 `none`、`overline`、`underline`、`blink` 和 `strikethrough` 作为值。
+现在我们来看一个示例，展示如何装饰文本，使用`none`、`overline`、`underline`、`blink`和`strikethrough`作为值。
 
 ```html
 <html>
@@ -1136,10 +1116,6 @@ The text will be left aligned.
    <body>
       <p style="text-decoration:underline;">
 ```
-
-
-
-
 
 # 第 9 章：使用图像
 
@@ -1152,7 +1128,7 @@ The text will be left aligned.
 
 ## 图像边框
 
-该属性用于设置图像边框的宽度，可以使用长度值或 `%`。例如：
+该属性用于设置图像边框的宽度，可以使用长度值或`%`。例如：
 
 ```
 <html>
@@ -1170,9 +1146,11 @@ The text will be left aligned.
 
 ## 图像高度
 
-该属性用于设置图像的高度，可以使用长度值或 `%`。当使用 `%` 时，该值应用于图像所在的盒子：
+该属性用于设置图像的高度，可以使用长度值或`%`。当使用`%`时，该值应用于图像所在的盒子：
 
-```
+
+
+```html
 <html>
    <head>
    </head>
@@ -1188,9 +1166,9 @@ The text will be left aligned.
 
 ## 图像宽度
 
-该属性用于使用 `%` 或长度值设置图像的宽度。与高度类似，使用百分比时应用于图像所在的盒子：
+该属性用于使用`%`或长度值设置图像的宽度。与高度类似，使用百分比时应用于图像所在的盒子：
 
-```
+```html
 <html>
    <head>
    </head>
@@ -1206,11 +1184,11 @@ The text will be left aligned.
 
 ## `-moz-opacity`
 
-最后一个属性用于设置图像的不透明度，适用于 Mozilla Firefox。对于 Internet Explorer，我们使用 `filter:alpha(opacity=x)` 来实现透明图像。
+最后一个属性用于设置图像的不透明度，适用于 Mozilla Firefox。对于 Internet Explorer，我们使用`filter:alpha(opacity=x)`来实现透明图像。
 
-在 Mozilla Firefox 中，属性 `-moz-opacity:x` 中的 `x` 可以取 `0.0` 到 `1.0` 之间的任意值。值越低，图像越透明。同样，在 Internet Explorer 中，`filter:alpha(opacity=x)` 的 `x` 值可以在 `0` 到 `100` 之间。同样，值越低，图像越透明。
+在 Mozilla Firefox 中，属性`-moz-opacity:x`中的`x`可以取`0.0`到`1.0`之间的任意值。值越低，图像越透明。同样，在 Internet Explorer 中，`filter:alpha(opacity=x)`的`x`值可以在`0`到`100`之间。同样，值越低，图像越透明。
 
-```
+```html
 <html>
    <head>
    </head>
@@ -1226,17 +1204,17 @@ The text will be left aligned.
 
 在本章中，我们将了解如何使用 CSS 设置超链接的属性。可以设置以下属性：
 
-*   `:link` 用于表示未访问的超链接。
-*   `:visited` 用于表示已访问的超链接。
-*   `:hover` 用于表示鼠标指针悬停在其上的元素。
-*   `:active` 用于表示当前正在被点击的元素。
+- `:link` 用于表示未访问的超链接。
+- `:visited` 用于表示已访问的超链接。
+- `:hover` 用于表示鼠标指针悬停在其上的元素。
+- `:active` 用于表示当前正在被点击的元素。
 
 通常，这些属性存储在 HTML 文档的头部。请记住以下有效使用的规则：
 
-*   在 CSS 定义中，`a:hover` 位于 `a:link` 和 `a:visited` 之后
-*   `a:active` 位于 `a:hover` 之后，如下例所示：
+- 在 CSS 定义中，`a:hover` 位于 `a:link` 和 `a:visited` 之后。
+- `a:active` 位于 `a:hover` 之后，如下例所示：
 
-```
+```html
 <style type="text/css">
    a:link {color: #000000}
    a:visited {color: #006600}
@@ -1251,12 +1229,12 @@ The text will be left aligned.
 
 此示例展示了如何使用任何有效格式的颜色名称值来设置链接的颜色：
 
-```
+```html
 <html>
    <head>
       <style type="text/css">
          a:link {color:#000000}
-     </style>
+      </style>
    </head>
    <body>
       <a href="">Link</a>
@@ -1272,7 +1250,7 @@ The text will be left aligned.
 
 此示例展示了如何设置已访问链接的颜色，同样使用任何有效格式的颜色名称值：
 
-```
+```html
 <html>
    <head>
       <style type="text/css">
@@ -1293,7 +1271,7 @@ The text will be left aligned.
 
 此示例展示了当鼠标指针悬停在链接上时如何改变其颜色：
 
-```
+```html
 <html>
    <head>
       <style type="text/css">
@@ -1314,7 +1292,7 @@ The text will be left aligned.
 
 此示例展示了如何改变活动链接的颜色：
 
-```
+```html
 <html>
    <head>
       <style type="text/css">
@@ -1335,21 +1313,17 @@ The text will be left aligned.
 
 在本章中，我们将了解可以为 HTML 表格设置的属性。可以设置以下属性：
 
-*   `Border-collapse` – 指定表格的单元格是保持各自的外观，还是由浏览器控制相邻的边框
-*   `Border-spacing` – 指定表格单元格之间的间距宽度
-*   `Caption-side` 标题 – 这些标题位于 `<caption>` 元素中，默认情况下渲染在表格上方。它们可用于设置表格标题的位置
-
-
-
-
-*   `Empty-cells` – 指定是否应在空单元格上显示边框
-*   `Table-layout` – 允许浏览器通过使用它为列找到的第一个宽度属性来加速表格布局，而无需加载表格后再渲染
+- `Border-collapse` – 指定表格的单元格是保持各自的外观，还是由浏览器控制相邻的边框。
+- `Border-spacing` – 指定表格单元格之间的间距宽度。
+- `Caption-side` 标题 – 这些标题位于`<caption>`元素中，默认情况下渲染在表格上方。它们可用于设置表格标题的位置。
+- `Empty-cells` – 指定是否应在空单元格上显示边框。
+- `Table-layout` – 允许浏览器通过使用它为列找到的第一个宽度属性来加速表格布局，而无需加载表格后再渲染。
 
 接下来我们通过示例来了解这些属性。
 
 ## `Border-Collapse`
 
-该属性可以有两个值 – `collapse` 和 `separate`。以下示例同时使用了这两个值：
+该属性可以有两个值 – `collapse`和`separate`。以下示例同时使用了这两个值：
 
 ```html
 <html>
@@ -1390,6 +1364,7 @@ The text will be left aligned.
 这将产生以下结果：
 
 | 折叠边框： |
+|---|
 | 单元格 1 折叠示例 |
 | 单元格 2 折叠示例 |
 | 分离边框： |
@@ -1445,7 +1420,7 @@ The text will be left aligned.
 
 ## `Caption-Side` 属性
 
-该属性允许你指定 `<caption>` 元素内容相对于表格的位置。它可以接受以下四个值 – `top`、`left`、`bottom`、`right`。以下示例使用了所有四个值：
+该属性允许你指定`<caption>`元素内容相对于表格的位置。它可以接受以下四个值 – `top`、`left`、`bottom`、`right`。以下示例使用了所有四个值：
 
 ```html
 <html>
@@ -1495,7 +1470,7 @@ The text will be left aligned.
 
 ## `Empty-Cells`
 
-该属性用于指示空单元格是否应显示边框。它可以取以下三个值之一 – `hide`、`show`、`inherit`。以下示例展示了如何使用该属性隐藏 `<table>` 元素中空单元格的边框：
+该属性用于指示空单元格是否应显示边框。它可以取以下三个值之一 – `hide`、`show`、`inherit`。以下示例展示了如何使用该属性隐藏`<table>`元素中空单元格的边框：
 
 ```html
 <html>
@@ -1538,7 +1513,7 @@ The text will be left aligned.
 
 ## `Table-Layout`
 
-该属性旨在帮助你控制浏览器如何布局或渲染表格。它可以取以下三个值之一 – `inherit`、`auto` 或 `fixed`。下一个示例展示了
+该属性旨在帮助你控制浏览器如何布局或渲染表格。它可以取以下三个值之一 – `inherit`、`auto`或`fixed`。下一个示例展示了：
 
 ```html
 <html>
@@ -1576,18 +1551,22 @@ The text will be left aligned.
 
 边框属性允许你指定元素框的边框外观。以下是你可以控制的三个属性：
 
-*   `Border-color` – 允许你指定边框的颜色
-*   `Border-style` – 允许你从一系列值中选择样式，包括实线、虚线、双线等
-*   `Border-width` – 允许你指定边框的宽度
+
+
+`Border-color` – 允许你指定边框的颜色
+
+`Border-style` – 允许你从一系列值中选择样式，包括实线、虚线、双线等
+
+`Border-width` – 允许你指定边框的宽度
 
 ## `Border-Color`
 
 该属性允许你更改元素周围边框的颜色。你可以使用以下属性单独更改边框的每一侧：
 
-*   `Border-bottom-color`
-*   `Border-top-color`
-*   `Border-left-color`
-*   `Border-right-color`
+- `Border-bottom-color`
+- `Border-top-color`
+- `Border-left-color`
+- `Border-right-color`
 
 以下示例展示了所有四个属性的使用：
 
@@ -1619,117 +1598,79 @@ The text will be left aligned.
 </html>
 ```
 
-
-
-结果将是
+结果将是：
 
 此示例展示了所有边框以不同颜色显示。
 
 此示例展示了所有边框仅以绿色显示。
 
-## 边框样式（Border-style）
+## 边框样式（`Border-style`）
 
 此属性允许你选择以下样式之一：
 
-*   None（无） – 完全没有边框
-*   Solid（实线） – 边框为实线
-*   Dotted（点线） – 边框由点组成
-*   Dashed（虚线） – 边框由短线段组成
-*   Double（双线） – 两条实线
-*   Groove（凹槽） – 使边框看起来像刻入页面
-*   Ridge（脊状） – 与凹槽效果相反
-*   Inset（内嵌） – 盒子看起来嵌入页面
-*   Outset（外凸） – 盒子看起来从页面凸出
-*   Hidden（隐藏） – 与 None 完全相同，但针对表格元素的边框冲突解决有例外
+- `None`（无） – 完全没有边框
+- `Solid`（实线） – 边框为实线
+- `Dotted`（点线） – 边框由点组成
+- `Dashed`（虚线） – 边框由短线段组成
+- `Double`（双线） – 两条实线
+- `Groove`（凹槽） – 使边框看起来像刻入页面
+- `Ridge`（脊状） – 与凹槽效果相反
+- `Inset`（内嵌） – 盒子看起来嵌入页面
+- `Outset`（外凸） – 盒子看起来从页面凸出
+- `Hidden`（隐藏） – 与 `None` 完全相同，但针对表格元素的边框冲突解决有例外
 
 与颜色一样，你可以使用以下属性单独更改边框每一侧的样式：
 
-*   `Border-bottom-style`
-*   `Border-top-style`
-*   `Border-left-style`
-*   `Border-right-style`
+- `Border-bottom-style`
+- `Border-top-style`
+- `Border-left-style`
+- `Border-right-style`
 
 此示例使用了所有这四种样式：
 
 ```html
 <html>
-
    <head>
-
    </head>
-
-   <body>.
-
+   <body>
       <p style="border-width:4px; border-style:none;">
-
       This is a border with a width of none.
-
       </p>
-
       <p style="border-width:4px; border-style:solid;">
-
       This is a solid border.
-
       </p>
-
       <p style="border-width:4px; border-style:dashed;">
-
       This is a dashed border.
-
       </p>
-
       <p style="border-width:4px; border-style:double;">
-
       This is a double border.
-
       </p>
-
       <p style="border-width:4px; border-style:groove;">
-
       This is a groove border.
-
       </p>
-
       <p style="border-width:4px; border-style:ridge">
-
       This is a ridge border.
-
       </p>
-
       <p style="border-width:4px; border-style:inset;">
-
       This is an inset border.
-
       </p>
-
       <p style="border-width:4px; border-style:outset;">
-
       This is an outset border.
-
       </p>
-
       <p style="border-width:4px; border-style:hidden;">
-
       This is a hidden border.
-
       </p>
-
       <p style="border-width:4px;border-top-style:solid;
-
       border-bottom-style:dashed; border-left-style:groove; border-right-style:double;">
-
       This is a border with four different styles.
-
       </p>
-
    </body>
-
 </html>
 ```
 
-结果将是 -
+结果将是：
 
-这是一个宽度为 none 的边框。
+这是一个宽度为 `none` 的边框。
 
 这是一个实线边框。
 
@@ -1749,248 +1690,173 @@ The text will be left aligned.
 
 这是一个具有四种不同样式的边框。
 
-## 边框宽度（Border-Width）
+## 边框宽度（`Border-Width`）
 
-这允许你设置边框的宽度，使用 pt、px 或 cm 的长度值，或者你可以将其设置为 thick（粗）、medium（中）或 thin（细）。你可以使用以下属性单独更改边框的每一侧：
+这允许你设置边框的宽度，使用 `pt`、`px` 或 `cm` 的长度值，或者你可以将其设置为 `thick`（粗）、`medium`（中）或 `thin`（细）。你可以使用以下属性单独更改边框的每一侧：
 
-*   `border-bottom-width`
-*   `border-top-width`
-*   `border-left-width`
-*   `border-right-width`
+- `border-bottom-width`
+- `border-top-width`
+- `border-left-width`
+- `border-right-width`
 
 此示例使用了所有这些属性：
 
 ```html
 <html>
-
    <head>
-
    </head>
-
    <body>
-
       <p style="border-width:4px; border-style:solid;">
-
       This is a solid border with a width of 4px.
-
       </p>
-
       <p style="border-width:4pt; border-style:solid;">
-
       This is a solid border whose width is 4pt.
-
       </p>
-
       <p style="border-width:thin; border-style:solid;">
-
       This is a solid border whose width is thin.
-
       </p>
-
       <p style="border-width:medium; border-style:solid;">
-
       This is a solid border whose width is medium;
-
       </p>
-
       <p style="border-width:thick; border-style:solid;">
-
       This is a solid border whose width is thick.
-
       </p>
-
       <p style="border-bottom-width:4px;border-top-width:10px;
-
       border-left-width: 2px;border-right-width:15px;border-style:solid;">
-
       This is a border with four different widths.
-
       </p>
-
    </body>
-
 </html>
 ```
 
 结果将是：
 
-这是一个宽度为 4px 的实线边框。
+这是一个宽度为 `4px` 的实线边框。
 
-这是一个宽度为 4pt 的实线边框。
+这是一个宽度为 `4pt` 的实线边框。
 
-这是一个宽度为 thin（细）的实线边框。
+这是一个宽度为 `thin`（细）的实线边框。
 
-这是一个宽度为 medium（中）的实线边框；
+这是一个宽度为 `medium`（中）的实线边框；
 
-这是一个宽度为 thick（粗）的实线边框。
+这是一个宽度为 `thick`（粗）的实线边框。
 
 这是一个具有四种不同宽度的边框。
 
 ## 边框简写属性（Shorthand Border Properties）
 
-使用简写边框属性，你可以仅用一个属性而不是三个来指定线条的样式、颜色和宽度。以下示例使用 border 属性将三者合并，你会发现这是为元素设置边框最常用的方法：
+使用简写边框属性，你可以仅用一个属性而不是三个来指定线条的样式、颜色和宽度。以下示例使用 `border` 属性将三者合并，你会发现这是为元素设置边框最常用的方法：
 
 ```html
 <html>
-
    <head>
-
    </head>
-
    <body>
-
       <p style="border:4px solid red;">
-
-Another example:
-
+      Another example:
       </p>
-
    </body>
-
 </html>
 ```
 
 # 第 13 章：边距（Margins）
 
-最后一章讨论 margin 属性，即 HTML 元素周围的空间。Margin 属性值不会被子元素继承，并且你也可以使用负值来重叠内容。
+最后一章讨论 `margin` 属性，即 HTML 元素周围的空间。`Margin` 属性值不会被子元素继承，并且你也可以使用负值来重叠内容。
 
 请记住——相邻的垂直边距（即上边距和下边距）会相互折叠，因此每个块之间的距离**不是**边距之和；而是取较大的边距，如果两者大小相同，则等于其中一个边距。
 
 可以使用以下属性：
 
-*   `Margin` – 指定在一个声明中设置所有边距属性的简写
-*   `Margin-bottom` – 指定下边距
-*   `Margin-top` – 指定上边距
-*   `Margin-left` – 指定左边距
-*   `Margin-right` – 指定右边距
+- `Margin` – 指定在一个声明中设置所有边距属性的简写
+- `Margin-bottom` – 指定下边距
+- `Margin-top` – 指定上边距
+- `Margin-left` – 指定左边距
+- `Margin-right` – 指定右边距
 
 现在我们将看看这些属性是如何使用的。
 
-## 边距属性（Margin Property）
+## 边距属性（`Margin` Property）
 
 这是一个简写属性，允许你通过单个声明设置所有四个边距的属性。以下示例展示了如何为段落设置边距：
 
 ```html
 <html>
-
    <head>
-
    </head>
-
    <body>
-
       <p style="margin: 15px; border:1px solid black;">
-
       all four margins will be 15px
-
       </p>
-
       <p style="margin:10px 2%; border:1px solid black;">
-
       top and bottom margin will be 10px, left and right margin will be 2% of the total width of the document.
-
       </p>
-
       <p style="margin: 10px 2% -10px; border:1px solid black;">
-
       top margin will be 10px, left and right margin will be 2% of the total width of the document, bottom margin will be -10px
-
       </p>
-
       <p style="margin: 10px 2% -10px auto; border:1px solid black;">
-
       top margin will be 10px, right margin will be 2% of the total width of the document, bottom margin will be -10px, left margin will be set by the browser
-
       </p>
-
    </body>
-
 </html>
 ```
 
-你将看到以下结果 -
+你将看到以下结果：
 
-所有四个边距均为 15px
+所有四个边距均为 `15px`
 
-上边距和下边距为 10px，左边距和右边距为文档总宽度的 2%。
+上边距和下边距为 `10px`，左边距和右边距为文档总宽度的 `2%`。
 
-上边距为 10px，左边距和右边距为文档总宽度的 2%，下边距为 -10px
+上边距为 `10px`，左边距和右边距为文档总宽度的 `2%`，下边距为 `-10px`
 
-上边距为 10px，右边距为文档总宽度的 2%，下边距为 -10px，左边距由浏览器设置
+上边距为 `10px`，右边距为文档总宽度的 `2%`，下边距为 `-10px`，左边距由浏览器设置
 
-## 下边距（Margin-Bottom）
+## 下边距（`Margin-Bottom`）
 
-这允许你使用 auto、长度或百分比值设置下边距：
+这允许你使用 `auto`、长度或百分比值设置下边距：
 
 ```html
 <html>
-
    <head>
-
    </head>
-
    <body>
-
       <p style="margin-bottom: 15px; border:1px solid black;">
-
       This is a paragraph with a specified bottom margin.
-
       </p>
-
       <p style="margin-bottom: 5%; border:1px solid black;">
-
       This is another paragraph with a specified bottom margin in percent
-
       </p>
-
    </body>
-
 </html>
 ```
 
-结果将是 -
+结果将是：
 
 这是一个指定了下边距的段落。
 
 这是另一个以百分比指定了下边距的段落。
 
-## 上边距（Margin-Top）
+## 上边距（`Margin-Top`）
 
-这允许你指定上边距，并使用 auto、长度或百分比值：
+这允许你指定上边距，并使用 `auto`、长度或百分比值：
 
 ```html
 <html>
-
    <head>
-
    </head>
-
    <body>
-
       <p style="margin-top: 15px; border:1px solid black;">
-
       This is a paragraph with a specified top margin
-
       </p>
-
       <p style="margin-top: 5%; border:1px solid black;">
-
       This is another paragraph with a specified top margin in percent
-
       </p>
-
    </body>
-
 </html>
 ```
 
-结果如下 -
+结果如下：
 
 这是一个指定了上边距的段落。
-
-
-
-
 
 这是另一个段落，指定了百分比形式的上外边距。
 
@@ -2013,7 +1879,7 @@ Another example:
 </html>
 ```
 
-结果如下所示——
+结果如下所示：
 
 这是一个指定了左外边距的段落
 
@@ -2038,7 +1904,7 @@ Another example:
 </html>
 ```
 
-结果将如下所示——
+结果将如下所示：
 
 这是一个指定了右外边距的段落
 
@@ -2053,4 +1919,3 @@ Another example:
 CSS 是一种您需要学习、理解并融入日常生活的程序。请允许我向您提一个小请求——您能在 Amazon.com 上为我写一篇评论吗？这不仅对我有帮助，对可能决定购买我书的其他人也有帮助。
 
 如前所述，在此重申，我在本书中使用的一些示例代码归功于 www.tutorialspoint.com。
-

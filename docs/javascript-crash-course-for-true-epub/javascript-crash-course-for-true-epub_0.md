@@ -1,9 +1,7 @@
+
 # JavaScript 入门指南
 
-
-
 ![](img/9781718502277.jpg)
-
 
 # 《JavaScript 快速入门》好评
 
@@ -55,15 +53,11 @@ JavaScript 是一门非常宽容的语言——有时宽容得过头——这对
 
 本书的目标是让你尽可能快地编写真实的 JavaScript 代码，教授所有要点，而不陷入语言的复杂细节中。我不指望你有任何先前的编程经验。如果你习惯于使用计算机完成浏览和编辑文档等日常任务，你就拥有了入门所需的一切。
 
-
-
-
-
 `JavaScript Crash Course` 是为所有年龄段的人士编写的，旨在让他们通过实战示例和项目独立学习 JavaScript。你可能想转行计算机编程领域，或者想将编码作为一种爱好。也许你已经使用过其他编程语言，现在需要快速上手 JavaScript。如果你是一名老师，正在寻找一种简单的方法向学生介绍编程，那么 `JavaScript Crash Course` 对你来说也是一个很好的选择。
 
 # 为什么选择 JavaScript？
 
-有数百种编程语言可以选择，但有几点让 JavaScript 特别于众。最重要的是它与网页浏览器（如 Google Chrome、Safari、Microsoft Edge 和 Firefox）的关系。几乎每个网页浏览器都能运行 JavaScript，这意味着你用 JavaScript 编写的代码可以在任何带有网页浏览器的计算机上运行。无需安装任何额外的特殊软件。几乎所有的智能手机浏览器也可以运行 JavaScript，所以你现在口袋或包里可能就有一个支持 JavaScript 的浏览器。
+有数百种编程语言可以选择，但有几点让 JavaScript 特别于众。最重要的是它与网页浏览器（如 Google Chrome、Safari、Microsoft Edge 和 Firefox）的关系。几乎每个网页浏览器都能运 JavaScript，这意味着你用 JavaScript 编写的代码可以在任何带有网页浏览器的计算机上运行。无需安装任何额外的特殊软件。几乎所有的智能手机浏览器也可以运行 JavaScript，所以你现在口袋或包里可能就有一个支持 JavaScript 的浏览器。
 
 由于其与网页浏览的关系，JavaScript 是 Web 开发中至关重要的一部分。如果一个网站包含动态、交互式的功能，它很可能是用 JavaScript 创建的。例如，YouTube 使用 JavaScript 在你悬停在缩略图上时显示视频预览；Threads 使用 JavaScript 在你向下滚动页面时加载更多帖子；Amazon 使用 JavaScript 驱动其“内部查看”（Look Inside）功能。
 
@@ -82,50 +76,32 @@ JavaScript 是一门非常宽容的语言——有时宽容得过头——这对
 本书的`第一部分` 概述了语言的基础。我对语言概念和特征的顺序安排非常有目的，确保每个新概念都建立在之前的概念之上，并且绝不引入任何没有坚实基础的内容。以下是你在书中这一部分发现的内容：
 
 - `第 1 章：入门`：向你展示如何在网页浏览器和文本编辑器中编写第一行 JavaScript 代码。
+
 - `第 2 章：基础`：介绍 JavaScript 程序的要素元素，如表达式、语句和变量，并解释如何使用简单数据类型表示数字、文本和真/假值。
+
 - `第 3 章：复合数据类型`：讨论数组和对象，它们让你将多个数据项组合成更有意义的集合。
+
 - `第 4 章：条件判断和循环`：教你使用控制结构为程序添加逻辑，这些结构可以做出决策并重复代码段。
+
 - `第 5 章：函数`：向你展示如何用函数创建可重用的代码块。
+
 - `第 6 章：类`：帮助你通过类和面向对象的编程原则为代码添加更多结构。
 
 本书的`第二部分` 讨论了如何使用 JavaScript 与网页浏览器交互。这一部分探索了创建交互式 Web 应用的重要技术：
 
 - `第 7 章：HTML、DOM 和 CSS`：解释如何使用超文本标记语言 (HTML) 编写网页，并使用文档对象模型 (DOM) 通过 JavaScript 修改其内容。你还将学习如何使用层叠样式表 (CSS) 为网页应用基础样式。
+
 - `第 8 章：基于事件的编程`：展示如何响应鼠标点击和按键等用户行为触发 JavaScript 代码。
+
 - `第 9 章：Canvas 元素`：教你如何使用 `Canvas API` 在浏览器中绘制图形和动画。
 
 本书的`第三部分`让你通过一系列项目将你在`第一部分`和`第二部分`中学到的技能付实践。项目之间没有依赖，因此你可以按任何顺序处理它们，或者只研究你觉得感兴趣的项目。我建议完成所有项目，因为它们都介绍了一些非常有用的通用概念。每个项目跨两个章节：
 
 - `项目 1：创建一个游戏`：引导你制作自己版本的经典雅达 *Pong*（乒球）。这个项目将运用你对 `Canvas API` 的技能，并将学到的关于数据结构、条件判断和函数整合在一起。在`第 10 章`开发游戏后，`第 11 章`将向你展示如何使用类和面向的设计原则重构代码。
+
 - `项目 2：制作音乐`：探索如何使用 JavaScript 制作音乐。`第 12 章`解释了如何使用 `Web Audio API` 和一个名为 `Tone.js` 的库来生成声音。然后`第 13 章`将你所学的内容整合起来创作一首歌曲。
+
 - `项目 3：数据可视化`：使用流行的 `D3` 库向你介绍数据可视化的世界。`第 14 章`教授了 `D3` 和可缩矢量图形 (SVG) 的基础知识，SVG 是浏览器中绘图 `Canvas API` 的替代方案。随后在`第 15 章`中，你将构建一个应用程序来动态可视化从互联网加载的数据。这个项目说明了如何通过第三方 `API` 请求数据。
-
-
-
-
-本书包含许多实操练习，以便你练习所学到的内容。我鼓励你亲自尝试所有的练习，但如果你遇到困难或只是想检查答案，可以在 `https://codepen.io/collection/ZMjYLO` 在线查看解决方案。在那个页面上，你还可以找到书中项目的完整、可下载代码文件。
-
-有关本书的更新和其他相关信息，请参阅 No Starch Press 网站：`https://nostarch.com/javascript-crash-course`。
-
-# 第一部分 语言
-
-本书的这一部分介绍了 JavaScript 语言的基础知识。你将学习任何 JavaScript 程序的各种基础构建块，包括许多与任何编程语言都相关的核心概念。
-
-首先，我们将查看两种编写和执行 JavaScript 代码的方法：在浏览器的控制台中，或者在文本编辑器中（第 1 章）。然后，你将学习如何使用变量和常量来表示单个数据，以及如何通过语句和表达式操作这些数据（第 2 章）。接下来，你将看到如何使用 JavaScript 的复合数据类型——数组和对象，将单个值组合成更有意义的结构（第 3 章）。
-
-第一部分的后续章节将向你展示如何为代码添加结构。首先，你将通过条件判断和循环将逻辑引入程序，它们共同使你能够做出决策并控制代码执行的流程（第 4 章）。然后，你将学习使用函数（第 5 章）和类（第 6 章）来复用和组织代码的技术。
-
-## 1 开始
-
-![](img/opener.png)
-
-在本章中，你将开始编写第一个 JavaScript 代码。首先，你将学习如何将代码直接输入网络浏览器，而无需安装任何专用软件。这种方法非常适合快速测试简单的代码序列。接下来，你将看到如何在单独的文本编辑器程序中编写 JavaScript，随着代码变得复杂，这种方法更为合适。在整本书中，我们将使用这两种技术来编写和执行 JavaScript 代码，因此本章将为你接下来的所有内容做好准备。
-
-### 使用 JavaScript 控制台
-
-运行 JavaScript 代码最快的方法是通过 `JavaScript` 控制台。运行 JavaScript 代码最快的方法是通过 `JavaScript` 控制台。运行 JavaScript 代码最快的方法是通过 `JavaScript` 控制台。运行 JavaScript 代码最快的方法是通过 `JavaScript` 控制台。运行 JavaScript 代码最快的方法是通过 `JavaScript` 控制台。运行 JavaScript 代码最快的方法是通过 `JavaScript` 控制台。运行 JavaScript 代码最快的方法是通过 `JavaScript` 控制台。运行 JavaScript 代码最快的方法是通过 `JavaScript` 控制台。运行 JavaScript 代码最快的方法是通过 `JavaScript` 控制台。运行 JavaScript 代码最快的方法是通过 `JavaScript` 控制台。运行 JavaScript 代码最快的方法是通过 `JavaScript` 控制台。运行 JavaScript 代码最快的方法是通过 `JavaScript` 控制台。运行 JavaScript 代码最快的方法是通过 `JavaScript` 控制台。运行 JavaScript 代码最快的方法是通过 `JavaScript` 控制台。运行 JavaScript 代码最快的方法是通过 `JavaScript` 控制台。运行 JavaScript 代码最快的方法是通过 `JavaScript` 控制台。运行 JavaScript 代码最快的方法是通过 `JavaScript` 控制台。
-
-抱歉，我将重新为你提供准确的翻译：
 
 本书包含许多实操练习，以便你练习所学到的内容。我鼓励你亲自尝试所有的练习，但如果你遇到困难或只是想检查答案，可以在 `https://codepen.io/collection/ZMjYLO` 在线查看解决方案。在那个页面上，你还可以找到书中项目的完整、可下载代码文件。
 
@@ -152,7 +128,9 @@ JavaScript 是一门非常宽容的语言——有时宽容得过头——这对
 安装 Chrome 后，按照以下步骤操作：
 
 1. 打开 Chrome，在地址栏输入 `about:blank`。
+
 2. 在 Windows 上按下 `F12` 或在 macOS 上按下 `Option+Command+J`。
+
 3. 你将看到控制台，正如图 1 所示。
 
 ![](img/1.png)
@@ -174,9 +152,13 @@ JavaScript 控制台适合测试几行代码，但对于我们之后要处理的
 安装好 VS Code 后，在电脑上创建一个名为 `javascript_work` 的目录，用于存放书中的文件。然后按照以下步骤准备编写代码：
 
 1. 打开 VS Code。
+
 2. 通过 `文件` -> `新建文件` 创建新文件。
+
 3. 系统会提示命名文件，输入 `hello.html`。
+
 4. 接下来，系统会提示选择位置。选择你创建的 `javascript_work` 目录并点击`创建文件`。
+
 5. 现在你应该处于编辑新文件的界面了。
 
 文件名中的 `.html` 后缀表示这是一个 HTML 文件。HTML 是一种用于描述网页内容的标记语言。运行 JavaScript 代码的一种方法将其包含在 HTML 文件中，然后用浏览器打开该文件。这就是我们要做的。将列表 1-1 中的内容输入你的新文件：
@@ -191,10 +173,6 @@ alert("Hello from hello.html!");
 
 当你开始打字时，你可能会注意到 VS Code 会尝试预测你输入的内容。这起初可能会让你感到困惑，但一旦习惯之后，你可能会发现它很有帮助。有些预测会自动插入，而另一些则需要你按下 `TAB` 键来插入。
 
-
-
-
-
 Listing 1-1 的第一行和最后一行是 HTML 代码，是将 JavaScript 嵌入 HTML 文件所需的最少代码。我们将在第 7 章中详细探讨 HTML。现在，你只需要知道它涉及到用于标识网页不同组件的 `tags`。对于我们的目的而言，最重要的是第一行末尾的起始 `<script>` 标签和第三行开头的结束 `</script>` 标签。当你在浏览器中加载此文件时，这些标签之间的所有内容（Listing 1-1 中的第二行）都将被解释为 JavaScript。
 
 文件的 JavaScript 部分是：
@@ -208,12 +186,15 @@ alert("Hello from hello.html!");
 当你完成代码输入后，保存该文件。现在你准备好在 Chrome 中打开文件并查看 JavaScript 代码的运行了。按照以下步骤操作：
 
 1. 在 Chrome 中打开一个新标签页。
+
 2. 在 Windows 或 Linux 上按下 `CTRL-O`，或在 macOS 上按下 `COMMAND-O` 打开打开对话框。
+
 3. 找到你的 `hello.html` 文件，选择它并点击`打开`。
 
 你现在应该能看到一个包含 `"Hello from hello.html!"` 消息的对话框弹出，如图 1-3 所示。
 
 ![](img/Figure_3.png)
+
 图 1-3：你好！浏览器识别了 HTML 文件中 `<script>` 和 `</script>` 标签之间的代码为 JavaScript 并执行了该代码，导致对话框出现。如果你没有看到对话框弹出，请双检查 `hello.html` 文件中的代码，确保它与 Listing 1-1 完全一致。
 
 ### 总结
@@ -223,6 +204,7 @@ alert("Hello from hello.html!");
 ## 2 基础
 
 ![](img/opener.png)
+
 在本章中，我将介绍构成任何 JavaScript 程序的某些基础。你将学习 JavaScript 代码的基本单元，这些单元允许你表示值并向计算机发出指令。你还将学到如何为值分配名称，以便以后在代码中引用它。
 
 本章还展示了 JavaScript 如何根据值所代表的信息类型将值分类为不同的数据类型。我们将重点关注表示单个值的原始数据类型，例如单个数字或单个文本。你将在 JavaScript 控制台中练习处理不同的数据类型，并探索你可以应用应用于它们的一些操作。
@@ -285,9 +267,6 @@ JavaScript 使用 `number` 数据类型来存储数值。你已经在上一节�
 
 ### 浮点数
 
-
-
-
 到目前为止，我们仅局限于整数，但 JavaScript 的数字数据类型也支持小数，在编程术语中被称为 `floating-point numbers`（浮点数）。这里是一个产生浮点数的表达式：
 
 ```
@@ -302,7 +281,7 @@ JavaScript 使用 `number` 数据类型来存储数值。你已经在上一节�
 3.3333333333333335
 ```
 
-你可能会注意到浮点数运算中一些奇怪的特性，结果并不与你预期的完全一致。例如，`0.1 + 0.2` 的结果并不精确等于 `0.3`。相反，我们得到了几个额外的小数位：
+你可能会注意到浮点数运算中一些奇怪的特性，结果并不与你预期的完全一致。例如，`0.1 + 0.2` 的结果并不精确等于 `0.3`。相反，我们得到了几个额极的小数位：
 
 ```
 0.1 + 0.2;
@@ -313,7 +292,7 @@ JavaScript 使用 `number` 数据类型来存储数值。你已经在上一节�
 
 ### 绑定 (Bindings)
 
-在 JavaScript 中，你可以将一个名称与一个值关联，以便以后在代码中方便地引用该值。这种关联被称为 `binding`（绑定）。绑定是强大的工具，因为它们提供了一个存储表达式所生成的值的地方。没有它们，你的程序将无法记住它们已经完成的工作。
+在 JavaScript 中，你可以将一个名称与一个值关联，以便以后在代码中方便地引用该值。这种关联被称为 `binding`（绑定）。绑ning是强大的工具，因为它们提供了一个存储表达式所生成的值的地方。没有它们，你的程序将无法记住它们已经完成的工作。
 
 一种绑定是 `variable`（变量），允许你根据需要更新与特定名称关联的值。它们之所以被称为变量，是因为它们的值可以改变或变化。另一种绑定是 `constant`（常量），一旦给名称分配了值，你就无法更新该与之关联的值。该值保持固定，或称为常量。
 
@@ -323,7 +302,7 @@ JavaScript 使用 `number` 数据类型来存储数值。你已经在上一节�
 
 #### 变量 (Variables)
 
-JavaScript 有两个两个用于声明变量的关键字：`var` 和 `let`。`keyword`（关键字）是 JavaScript 语言内置的、保留用于特定用途的单词。最初，`var` 关键字是唯一的选择，但后来添加了 `let` 来修复 `var` 的某些缺点。如今，`let` 是声明变量的首选关键字，因此我们将在本书中使用它，但如果你在查看旧代码时遇到 `var`，也不要感到意外。
+JavaScript 有两个两个用于声声明变量的关键字：`var` 和 `let`。`keyword`（关键字）是 JavaScript 语言内置的、保留用于特定用途的单词。最初，`var` 关键字是唯一的选择，但后来添加了 `let` 来修复 `var` 的某些缺点。如今，`let` 是声明变量的首选关键字，因此我们将在本书中使用它，但如果你在查看旧代码时遇到 `var`，也不要感到意外。
 
 这里有一个使用 `let` 声明变量的示例：
 
@@ -399,6 +378,7 @@ circumference;
 在这里我们创建了一个名为 `diameter` 的变量并将其赋值为 `3`。然后我们创建了另一个变量 `circumference`，并将其赋值 `diameter * PI`。注意，我们正在使用由变量（`diameter`）、常量（`PI`）和数学运算（`*`）组成的复合表达式来设置变量的值。很多编程工作都是创建常量和变量，然后操作它们来创建其他常量和变量。
 
 > **注意**
+
 > *此后，为了防止书籍的代码列表过于混乱，我将不再显示控制台在变量或常量声明后打印的 undefined。*
 
 与变量不同，一旦创建常量你就无法更改它的值。例如，如果你尝试更新 `PI` 的值，JavaScript 会给出一个错误：
@@ -421,9 +401,6 @@ Uncaught SyntaxError: Missing initializer in const declaration
 此错误信息告诉我们常量声明缺少初始化器，意味着常量应该被赋予一个值。
 
 #### 命名规范 (Naming Conventions)
-
-
-
 
 你应该为变量和常量起具有描述性的名称，这样当你或其他人阅读你的代码时，就能清楚地知道你的变量和常量代表什么。例如，如果你正在编写用于控制汽车的代码，你可能需要一个变量来存储汽车以每英里为单位的速度。`speedInMilesPerHour` 这个名字有点太长，但考虑到 `MPH` 是每英里广为人熟知的缩写，一个较好的变量名应该是 `speedInMPH`。一个更短的名字如 `speed` 可能也可以，但只有当每个阅读你代码的人都能看出 `speed` 始终是以每英里为单位时才。（想象一下，如果一个来自德国的人读你的代码，并认为你是在说每小时公里的话。）这个变量的一个糟糕名称是 `s`，它没有向阅读者提供任何信息。
 
@@ -448,9 +425,6 @@ money = money + 1;
 ```
 
 在这里，我们声明了一个名为 `money` 的新变量并将其初始化为 100。然后我们通过在其现有值上加 1 为 `money` 赋一个新值。看到像 `money = money + 1;` 这样的表达式可能看起来很矛盾，但这实际上是一种非常正常的编程模式。当 JavaScript 遇到这样的赋值表达式时，它首先计算赋值运算符右侧表达式的值，在本例中是 `money + 1`。因为 `money` 当前是 100，`money + 1` 的值为 101。然后 JavaScript 更新赋值运算符左侧变量的值，在本例中是同一个变量 `money`。
-
-
-
 
 `string literal`（字符串字面量）是字符串值的直接表示。要创建一个字符串字面量，只需用双引号将某些文本括起来。引号之间的每一个字符都是字符串的一部分。例如，在这里我们将字符串字面量 `"Hello!"` 赋值给变量 `greeting` 的值。然后我们检查该变量的值：
 
@@ -494,8 +468,11 @@ first + " " + second;
 ```
 
 在这个示例中，我们连接了三个字符串字面量：
+
 1. `"First string"`
+
 2. `" "`（由单个空格组成的字符串）
+
 3. `"Second string"`
 
 结果是，我们在 string 和 Second 之间得到了一个空格。
@@ -546,7 +523,7 @@ undefined
 
 ### 从字符串中获取多个字符
 
-要从字符串中获取一个多个字符的序列（也称为 `slice` 切片），而不仅仅是单个字符，请使用 `slice` 方法。`method`（方法）是附加到特定值或数据类型的特殊函数。（正如我们在第 1 章中讨论过的样，函数是一段执行任务的命名代码。）
+要从字符串中获取一个多个字符的序列（也称为 `slice` 切片），而不仅仅是单个字符，请使用 `slice` 方法。`method`（方法）是附加到特特定值或数据类型的特殊函数。（正如我们在第 1 章中讨论过的样，函数是一段执行任务的命名代码。）
 
 使用或“调用”（`calling`）方法的语法是：紧跟值或变量之后，写上方法名，然后是一组括号。在括号内部，你编写方法所需的任何值，并用逗号隔开。与其他函数一样，这些值被称为 `arguments`（参数）。方法还可以产生一个值，称为 `return value`（返回值）。
 
@@ -577,10 +554,6 @@ inputText;
 存储在变量 `inputText` 中的字符串在单词 之前有一个空格，在 input 之后有三个额外的空格。当我们通过编写 `inputText.trim()` 调用 trim 方法时，得到了去除了这些空格的新字符串。请注意，单词之间的空格不受影响；只有字符串开头和结尾的空白会被修剪。`trim` 方法不需要任何参数，因此我们只需在方法名后写一组空括号即可。
 
 由于 `trim` 方法返回的是新字符串，存储在 `inputText` 中的原始字符串保持不变。当我们在代码列表最后请求 `inputText` 的值时，可以看到这一点：输出仍然包含字符串开头和结尾的空格 ❶。
-
-
-
-
 
 ## 其他常用的字符串方法
 
@@ -616,12 +589,19 @@ World
 [Table 2-1] 列出了你最经常使用的一些转义序列。
 
 | 表 2-1: 常见转义序列 |
+
 | --- |
+
 | 转义序列 | 输出 |
+
 | `\'` | 单引号 |
+
 | `\"` | 双引号 |
+
 | `\\` | 反斜杠 |
+
 | `\n` | 换行 |
+
 | `\t` | 制表符 |
 
 如表所示，如果你想在字符串中包含实际的反斜杠字符，需要使用 `\\`。同样，如果你想在双引号字符串中包含一个双引号字符，需要使用 `\"`。例如：
@@ -647,24 +627,35 @@ You don't need to escape single quotes
 模板字符串字量被反引号（`` ```）包围，而不是引号。你使用`占位符语法`来引入代码，其格式如下：`${}`。占位符括号内的文本被视为一个表达式，并在最终字符串评估之前进行评估，如下所示：
 
 ```
+
 let name = "Nick";
+
 `Hello, ${name}!`;
+
 'Hello, Nick!'
+
 ```
 
 在这里，变量 `name` 的值被插入字符串中代替 `${name}` 占位符，导致字符串 "Hello Nick!"。如果我们更改了 `name` 的值，同一个模板字符串字量将产生不同的字符串：
 
 ```
+
 name = "Dolly";
+
 `Hello, ${name}!`;
+
 'Hello, Dolly!'
+
 ```
 
 你可以在占位符括号中放置任何表达式，而不仅仅是简单的变量。表达式将被评估，结果将插入到字符串中。例如：
 
 ```
+
 `There are ${60 * 60 * 24} seconds in a day`;
+
 'There are 86400 seconds in a day'
+
 ```
 
 在这种情况下，JavaScript 计算 `60 * 60 * 24` 的值，将其转换为字符串，并将其整合到评估后的字符串中。
@@ -672,23 +663,33 @@ name = "Dolly";
 模板字符串字量有许多应用，例如从用户处获取文本输入并将其插入新字符串中。当你需要根据几个变量创建字符串时，它们特别有用用。例如，假设你正在构建一个 Mad Libs 类型的 Web 应用，它接收不同词性的单词并将它们组合成句子。用户输入了以下三个单词，你将它们存储在不同的变量中：
 
 ```
+
 let noun = "moon";
+
 let adverb = "strangely";
+
 let adjective = "red";
+
 ```
 
 如果没有模板字符串字量，你必须通过反复使用 `+` 运算符将变量组合成字符串：
 
 ```
+
 "The " + noun + " was " + adverb + " " + adjective + ".";
+
 'The moon was strangely red.'
+
 ```
 
 这段代码写起来相当繁琐，尤其是当你想要在每个单词之间包含空格并在句末添加句号时。使用模板字符串字量要简单得多：
 
 ```
+
 `The ${noun} was ${adverb} ${adjective}.`;
+
 'The moon was strangely red.'
+
 ```
 
 除了让代码更容易编写之外，模板字符串字量还让代码更容易读。可以明显看出这段代码正在向句子中插入自定义的名词、副词和形容词。
@@ -698,24 +699,35 @@ let adjective = "red";
 在 JavaScript 中，值 `undefined` 和 `null` 有特殊的含义：它们代表*无*。当 JavaScript 对某些内容没有值时，它默认返回 `undefined`。例如，正如你在本章前面的部分所看到的，如果你创建一个变量而不给它赋值，JavaScript 会自动为该变量赋值为 `undefined`：
 
 ```
+
 let nothing;
+
 nothing;
+
 undefined
+
 ```
 
 当你在控制台中执行一个没有无用的返回值的函数时，你也会得到 `undefined`，例如我们在第 1 章中用于在浏览器中弹出对话框的 `alert` 函数：
 
 ```
+
 alert("I have no value.");
+
 undefined 
+
 ```
 
 虽然 JavaScript 在某物没有值时会自动使用 `undefined`，但程序员通常使用 `null` 来显式地标记某些内容为空。例如，如果你正在编写一些接收地址作为用户输入的代码，而用户没有提供地址，你可以将地址变量设置为 `null`：
 
 ```
+
 let address = null;
+
 address;
+
 null
+
 ```
 
 从功能上来说，将 address 设置为 `null` 与保持变量为 `undefined` 并没有区别，但它让你的意图更加清晰。阅读你代码的人会看到你特意将 address 标记为空值，而不是它只是还没有定义。
@@ -725,14 +737,14 @@ null
 我们将考虑的最后一个原始数据类型是 `Boolean` 类型，它表示真/假值。只有两个布尔字面量：`true` 和 `false`。在这里，我们使用字面量创建一个布尔变量并确认其值：
 
 ```
+
 let playing = true;
+
 playing;
+
 true
+
 ```
-
-
-
-
 
 在这个示例中，我们声明了一个名为 `playing` 的新变量，并用布尔字面量 `true` 对其进行了初始化。你可以想象这是游戏中的某些代码，`playing` 变量告诉我们游戏当前是激活状态（`true`）还是暂停状态（`false`）。
 
@@ -744,26 +756,39 @@ true
 三个布尔逻辑运算符：`and`、`or` 和 `not`。`and` 运算符（`&&`）接收两个值，称为“操作数”（operands），只有当两个操作数都为 `true`时才返回 `true`。这对于任何需要两个条件同时成立才能发生的情况都非常有用。让我们继续游戏的例子，假设我们正在为一个平台跳游戏编写逻辑。在这个游戏中，你可以发射火球，但只有在你拥有道具 `and` 且正在跳跃时才可以。以下是代码中的这种表达方式：
 
 ```
+
 let powerup = true;
+
 let jumping = true;
+
 powerup && jumping;
+
 true
+
 ```
 
 在这种情况下，`powerup` 是 `true` 且 `jumping` 是 `true`，所以 `powerup && jumping` 也是 `true`。然而，如果你将这两个变量中的一个（或两个）设置为 `false`，`powerup && jumping` 也将 `false`：
 
 ```
+
 jumping = false;
+
 powerup && jumping;
+
 false
+
 ```
 
 `or` 运算符（`||`）在其中一个操作数远 `true` 时返回 `true`。如果只需要满足几个条件中的其中一个成立就能触发某种行为，那么它就很有用。在我们的游戏中例如，假设如果你被火球命中 `or` 或者触碰到怪物，你就会死：
 
 ```
+
 let hitByFireball = false;
+
 let touchedMonster = true;
+
 hitByFireball || touchedMonster;
+
 true
 ```
 
@@ -772,17 +797,24 @@ true
 `not` 运算符（`!`）只接收一个操作数并返回其值的反反，因此 `!true` 是 `false` 而 `!false` 是 `true`。如果你希望在条件不为 `true` 时发生某些情况，这特别有用。在我们的游戏中例如，我们可能有一个名为 `alive` 的变量，告诉我们玩家是否存活。当玩家死亡时游戏应该结束——即当 `!alive` 为 `true` 时（意味着 `alive` 本身为 `false`）：
 
 ```
+
 let alive = false;
+
 !alive;
+
 true
 ```
 
 不同的逻辑运算符经常组合在一起形成更复杂的逻辑表达式。例如，假设在我们的游戏中，只有在你没有提着箱子且没有在游泳时才能跳跃。在这种情况下，我们会使用两个布尔变量来表示提箱子和游泳，使用 `!` 反转这些每个变量的值，并使用 `&&` 同时检查这两个反转后的变量，如下：
 
 ```
+
 let carryingBox = true;
+
 let swimming = false;
+
 !carryingBox && !swimming;
+
 false
 ```
 
@@ -791,12 +823,14 @@ false
 有时阅读复杂的逻辑表达式可能会困难，所以让我们看看 JavaScript 在评估 `!carryingBox && !swimming` 表达式时采取的步骤。首先，为了简化问题，将变量名替换为它们当前设置的布尔值：
 
 ```
+
 !true && !false
 ```
 
 接下来，将表达式 `!true` 和 `!false` 替换为它们的等值值，移除 `!` 运算符：
 
 ```
+
 false && true
 ```
 
@@ -808,85 +842,135 @@ false && true
 JavaScript 的比较运算符比较值并根据比较结果返回布尔值。例如，`===` 或“三等”运算符检查两个值是否相等。如果相等，则返回 `true`，如果不相等则返回 `false`。以下是 `===` 运算符运行的一些示例：
 
 ```
+
 5 === 5;
+
 true
+
 6 === 7;
+
 false
+
 2 + 2 === 4;
+
 true
+
 "hello" === "goodbye";
+
 false
+
 "hello" === "hel" + "lo";
+
 true
+
 false === false;
+
 true
+
 true === false;
+
 false
 ```
 
 注意 `===` 检查两个值是否相等。`===` 的相反数是 `!==`。该运算符检查值是否不等。例如：
 
 ```
+
 8 !== 8;
+
 false
+
 "apples" !== "oranges";
+
 true
 ```
 
 使用 `!==` 等同于使用 `===`，然后对结果应用 `!`：
 
 ```
+
 !(8 === 8);
 ```
 
 JavaScript 的比较运算符比较值并根据比较结果返回布尔值。例如，`===` 或“三等”运算符检查两个值是否相等。如果相等，则返回 `true`，如果不相等则返回 `false`。以下是 `===` 运算符运行的一些示例：
 
 ```
+
 5 === 5;
+
 true
+
 6 === 7;
+
 false
+
 2 + 2 === 4;
+
 true
+
 "hello" === "goodbye";
+
 false
+
 "hello" === "hel" + "lo";
+
 true
+
 false === false;
+
 true
+
 true === false;
+
 false
 ```
 
 注意 `===` 检查两个值是否相等。`===` 的相反数是 `!==`。该运算符检查值是否不等。例如：
 
 ```
+
 8 !== 8;
+
 false
+
 "apples" !== "oranges";
+
 true
 ```
 
 使用 `!==` 等同于使用 `===`，然后对结果应用 `!`：
 
 ```
+
 !(8 === 8);
 ```
 
 JavaScript 的其他比较运算符检查一个值是否大于或小于另一个值。这些包括标准的大于（`>`）、小于（`<`）、大于等于（`>=`）和小于等于（`<=`）。考虑这些示例：
 
 ```
+
 1 > -1;
+
 true
+
 10 > 10;
+
 false
+
 10 >= 10;
+
 true
+
 -1 < 1;
+
 true
+
 10 < 10;
+
 false
+
 10 <= 10;
+
 true
 ```
 
@@ -895,9 +979,13 @@ true
 这些比较运算符也可以用于字符串。如果一个字符串在字典中出现在另一个字符串之后，则被认为“大于”另一个字符串。例如：
 
 ```
+
 "cat" < "dog";
+
 true
+
 "abc" > "abbcdef";
+
 true
 ```
 
@@ -907,51 +995,65 @@ true
 *类型转换*（Coercion）是指将一种数据类型的值转换为另一种数据类型的值的行为。JavaScript 在某些不同类型的值出现在同一个表达式的情况下会使用类型转换。例如，如果你在 `+` 运算符的一侧使用字符串，而在另一侧使用数字，JavaScript 会将数字转换为字符串，然后将这两个字符串连接起来：
 
 ```
+
 "Current score: " + 10;
+
 "Current score: 10"
 ```
 
 注意 10 在输出中出现在引号内，这意味着它变成了一个字符串而不是数字。在某些上下文中，布尔值会被转换为数字，其中 `false` 变成 0，`true` 变成 1。例如：
 
 ```
+
 100 + true;
+
 101
 ```
 
-
-
-
-
-在这里，我们在数学表达式中使用布尔字面量 `true` 与一个数字一起，因此 JavaScript 将其强制转换为 1，然后加上 100 和 1，产生 101。
+在这里，我们在数学表达式中使用布尔字面量 `true` 与一个数字一起，因此 JavaScript 将其强制转换为 1，然后加上 100和 1，产生 101。
 
 ## 带有强制类型转换的相等性
 
 之前我们使用三等运算符（======）来检查相等性。另一个运算符是双等运算符（====），它在检查相等性之前会对其操作数应用强制类型转换。例如，如果你使用 `==` 比较数字和布尔值，布尔值将首先强制转换为数字：
 
 ```
+
 0 == false;
+
 true
 ```
 
 这个比较结果为 `true`，因为布尔值 `false` 首先被强制转换为 `0`。然而，如果你使用三等运算符进行相同的比较，结果将为 `false`，因为 `===` 不允许类型强制转换：
 
 ```
+
 0 === false;
+
 false
 ```
 
 当使用 `==` 运算符时，可能很难猜测什么会被强制转换为什么。以下是一些其他示例：
 
 ```
+
 "1" == 1;
+
 true
+
 undefined == null;
+
 true
+
 undefined == false;
+
 false
+
 "" == 0;
+
 true
+
 "" == false;
+
 true
 ```
 
@@ -960,9 +1062,13 @@ true
 `==` 的反面是 `!=` 运算符。它在经过任何适当类型转换后判断两个操作数是否不等。某些在使用严格 `!==` 运算符时为真的不等式，在使用强制转换的 `!=` 运算符时会变为为假。例如：
 
 ```
+
 0 !== false;
+
 true
+
 0 != false;
+
 false
 ```
 
@@ -977,14 +1083,18 @@ false
 检查一个值是真值还是假值的简单方法是使用 `!!` 对其应用两次非操作，意味着“非非”，即双重否定。这之所以有效，是因为 `!` 运算符无论其应用于值的数据类型是什么，总是返回一个布尔值。例如，假设你想验证数字 `0` 是假值。单次 `!` 操作会将数字强制转换为布尔值，然后反转该布尔值，因此 `!0` 结果为 `true`：
 
 ```
+
 !0;
+
 true
 ```
 
 添加第二个 `!` 会再次反转布尔值，给出原始值的布尔等效值：
 
 ```
+
 !!0;
+
 false
 ```
 
@@ -993,15 +1103,25 @@ false
 你可以使用相同的 `!!` 技巧来检查我之前提到的其他真值规则：
 
 ```
+
 !!1;
+
 true
+
 !!"hi";
+
 true
+
 !!"";
+
 false
+
 !!undefined
+
 false
+
 !!null;
+
 false
 ```
 
@@ -1010,11 +1130,17 @@ false
 当 `&&` 和 `||` 运算符应用于非布尔值时，它们不会返回 `true` 或 `false` 值。相反，它们返回原始操作数之一。在 `&&` 运算符的情况下，如果第一个操作数是真值，则返回第二个操作数；如果第一个操作数是假值，则返回第一个操作数。以下是一些示例：
 
 ```
+
 15 && 17;
+
 17
+
 0 && 20;
+
 0
+
 undefined && null;
+
 undefined
 ```
 
@@ -1023,9 +1149,13 @@ undefined
 `||` 运算符的工作方式相反。如果第一个操作数是假值，它返回第二个操作数；如果第一个操作数是真值，它返回第一个操作数，如下：
 
 ```
+
 "" || "hello";
+
 'hello'
+
 "hello" || "goodbye";
+
 'hello'
 ```
 
@@ -1036,24 +1166,33 @@ undefined
 你可以多种方式利用 `&&` 和 `||` 在真值和假值上的行为。例如，`||` 运算符可以在未提供值时给变量赋一个默认值。在下面的示例的开始处，`name` 被创建但没有赋值：
 
 ```javascript
+
 let name;
+
 name = name || "No provided";
+
 'No provided'
 ```
 
 由于第一个操作数是假值，返回了第二个操作数。另一方面，如果提供了 name，它会被视为真值，并且会保留其值：
 
 ```javascript
+
 let name = "Nick";
+
 name = name || "No provided";
+
 'Nick'
 ```
 
 同样，你可以使用 `&&` 或 `||` 来短路（或跳过）一个表达式。对于 `&&`，如果第一个操作数是假值，则该操作数会被计算并返回，这意味着 JavaScript 会忽略第二个。当操作数只是简单值时，我们并不在乎它们是否被计算；我们关心的是返回哪个值。例如，在表达式 `1 || 2 + 2` 中，JavaScript 是否计算 `2 + 2` 的结果并不重要，因为我们知道第一个操作数 `1` 将被返回。但如果表达式具有某种副作用，那么计算它是有意义的，这意味着它会产生除返回值以外的结果。例如，`alert` 函数返回 `undefined`，但更重要的是具有显示对话框的副作用。但如果我们只想在某些情况下显示对话框呢？例如，假设我们想在游戏中使用 `alert` 显示玩家的分数，但只有在分数不为零时显示。我们可以让 `score` 变量和 `alert` 函数成为 `&&` 表达式的操作数：
 
 ```javascript
+
 let score = 0;
+
 score && alert(`Your score is ${score}!`);
+
 0
 ```
 
@@ -1062,14 +1201,17 @@ score && alert(`Your score is ${score}!`);
 现在考虑分数增加会发生什么：
 
 ```javascript
+
 ++score;
+
 1
+
 score && alert(`Your score is ${score}!`);
+
 undefined
 ```
 
 在这里我们使用 `++` 增加 `score`，将其改为 `1`。这使得 `score` 变为真值，因此 `&&` 表达式中的第二个操作数被计算，执行了 `alert` 函数。函数返回 `undefined`，但也具有（预期的）副作用，即显示带有玩家分数的对话框（参见图 2-1）。
-
 
 
 
@@ -1098,8 +1240,11 @@ JavaScript `array` 是一种复合数据类型，存储一个有序的值列表�
 要创建一个数组，在方括号内列出它的元素并用逗号隔开：
 
 ```
+
 let primes = [2, 3, 5, 7, 11, 13, 17, 19];
+
 primes;
+
 ```
 
 此数组包含前八个质数，并存储在变量 `primes` 中。当你输入 `primes;` 时，Chrome 控制台应该打印数组的长度 (8)，然后是它的元素。
@@ -1107,44 +1252,58 @@ primes;
 数组中的每个元素都有一个与其相关的索引数字。和字符串一样，数组是从零开始索引的，所以第一个元素位于索引 0，第二个元素位于索引 1，以此此类推。要访问数组的单个元素，在数组名称后的方括号中放入其索引数字。在这里，我们访问 `primes` 数组的第一个元素：
 
 ```
+
 primes[0];
+
 2
 ```
 
 由于数组是从零开始索引的，数组最后一个元素的索引比数组的长度少 1。因此，我们的八元素数组 `primes` 数组的最后一个元素位于索引 7：
 
 ```
+
 primes[7];
+
 19
 ```
 
 如果你不知道数组有多长并想获取它的最后一个元素，可以先使用点符号访问它的 `length` 属性并查找数组的长度，正如我们在第 2 章中对字符串做的那样：
 
 ```
+
 primes.length;
+
 8
+
 primes[7];
+
 19
 ```
 
 或者，为了在一个语句中完成此操作，你可以简单地从长度减 1 以得到最后一个索引处的元素，如下所示：
 
 ```
+
 primes[primes.length - 1];
+
 19
 ```
 
 如果你使用了数组范围之外的索引，JavaScript 将返回 `undefined`：
 
 ```
+
 primes[10];
+
 undefined
 ```
 
 要替换数组中的元素，使用索引语法为元素分配一个新值：
 
 ```
+
 primes[2] = 1;
+
 primes;
 ```
 
@@ -1155,10 +1314,15 @@ primes;
 数组可以包含其他数组。这些*多维数组*通常用于表示二维点网格或表格。为了说明这一点，让我们做一个简单的井字棋游戏。我们将创建一个数组（我们称之为*外层*数组），其中包含三个元素，每个元素都是另一个数组（我们称之为*内层*数组），代表井字棋棋盘的某一行。
 
 ```
+
 let ticTacToe = [
+
   ["", "", ""],
+
   ["", "", ""],
+
   ["", "", ""]
+
 ];
 ```
 
@@ -1169,13 +1333,16 @@ let ticTacToe = [
 我可以将此数组写在一行，如下所示，但这样很难看出它的二维特性：
 
 ```
+
 let ticTacToeOneLine = [["", "", ""], ["", "", ""], ["", "", ""]];
 ```
 
 现在让我们看看向控制台请求 `ticTacToe` 变量的值时会发生什么：
 
 ```
+
 ticTacToe;
+
 (3) [Array(3), Array(3), Array(3)]
 ```
 
@@ -1184,11 +1351,17 @@ ticTacToe;
 要展开视图并查看内部数组中的内容，点击左侧的箭头：
 
 ```
+
 (3) [Array(3), Array(3), Array(3)]
+
   0: (3) ['', '', '']
+
   1: (3) ['', '', '']
+
   2: (3) ['', '', '']
+
    length: 3
+
   [[Prototype]]: Array(0)
 ```
 
@@ -1199,18 +1372,26 @@ ticTacToe;
 我们已经创建了井字棋盘，但它是是空的。让我们在右上角设置一个 X。第一个内部数组代表顶行；我们通过 `ticTacToe[0]` 访问它。右上角是该行的第三个元素，即内部数组中索引为 2 的元素。由于 `ticTacToe[0]` 返回的是一个数组，我们只需要在末尾加上 `[2]` 即可访问  访问我们想要的元素：`ticTacToe[0][2]`。通过此方法，我们可以按照如下方式将该元素设置为 "X"：
 
 ```
+
 ticTacToe[0][2] = "X";
 ```
 
 现在让我们再次查看 `ticTacToe` 的值，点击箭头展开外部数组：
 
 ```
+
 ticTacToe;
+
 (3) [Array(3), Array(3), Array(3)]
+
   0: (3) ['', '', 'X']
+
   1: (3) ['', '', '']
+
   2: (3) ['', '', '']
+
    length: 3
+
   [[Prototype]]: Array(0)
 ```
 
@@ -1219,13 +1400,21 @@ ticTacToe;
 接下来，让我们在左下角设置一个 O。底行是外部数组的索引 2，该行最左侧的方格是内部数组的索引 0，因此我们输入如下：
 
 ```
+
 ticTacToe[2][0] = "O";
+
 ticTacToe;
+
 (3) [Array(3), Array(3), Array(3)]
+
   0: (3) ['', '', 'X']
+
   1: (3) ['', '', '']
+
   2: (3) ['O', '', '']
+
    length: 3
+
   [[Prototype]]: Array(0)
 ```
 
@@ -1244,24 +1433,37 @@ JavaScript 具有许多处理数组的有用方法。在本节中，我们将查
 `push` 方法通过将提供的元素添加到数组末尾来变异数组。`push` 方法的返回值是数组的新长度。例如，让我们用 `push` 来构建一个编程语言数组：
 
 ```
+
 let languages = [];
+
 languages.push("Python");
+
 1
+
 languages.push("Haskell");
+
 2
+
 languages.push("JavaScript");
+
 3
+
 languages.push("Rust");
+
 4
+
 languages;
+
 (4) ['Python', 'Haskell', 'JavaScript', 'Rust']
-```
+
+
+
 
 首先，我们创建一个名为 `languages` 的新数组并将其初始化为 `[]`（一个空数组）。第一次调用 `push` 方法时，我们传递了值 `"Python"`。该方法返回 `1`，意味着数组现在有一个元素。我们又重复了三次，最后通过输入 `languages;` 获取 `languages` 的值。这返回了我们添加到数组中的四种语言，顺序与我们添加的顺序相同。
 
 将元素添加到数组开头而不是末尾，请使用 `unshift` 方法，如下：
 
-```
+```javascript
 languages.unshift("Erlang");
 5
 languages.unshift("C");
@@ -1278,7 +1480,7 @@ languages;
 
 要通过删除最后一个元素来变异数组，请使用 `pop` 方法。在这里我们对 `languages` 数组调用 `pop` 方法，删除它的最后一个元素：
 
-```
+```javascript
 languages.pop();
 'Rust'
 languages;
@@ -1289,7 +1491,7 @@ languages;
 
 由于 `pop` 方法返回被删除的元素，如果你想对该元素进行某些操作，这将特别有用。例如，在这里从 `languages` 数组中删除另一个元素并将其用于消息：
 
-```
+```javascript
 let bestLanguage = languages.pop();
 let message = `favorite language is ${bestLanguage}.`;
 message;
@@ -1302,7 +1504,7 @@ languages;
 
 要从数组中删除第一个元素而不是最后一个，请使用 `shift` 方法。与 `pop` 类似，`shift` 方法返回被删除的元素：
 
-```
+```javascript
 let worstLanguage = languages.shift();
 message = `least favorite language is ${worstLanguage}.`;
 message;
@@ -1317,7 +1519,7 @@ languages;
 
 `concat` 方法（concatenate 的缩写）将两个数组相加。在这里，例如，我们从两个数组 `fish` 和 `mammals` 开始，并将它们合并为一个新数组，保存到 `animals` 变量中：
 
-```
+```javascript
 let fish = ["Salmon", "Cod", "Trout"];
 let mammals = ["Sheep", "Cat", "Tiger"];
 let animals = fish.concat(mammals);
@@ -1325,14 +1527,11 @@ animals;
 aos(6) ['Salmon', 'Cod', 'Trout', 'Sheep', 'Cat', 'Tiger']
 ```
 
-
-
-
 当你在数组上调用 `concat` 时，会创建一个新数组，其中包含第一个数组（即调用 `concat` 的数组）的所有元素，紧接着是第二个数组的所有元素（即作为 `concat` 参数传递的数组）。原始数组保持不变，因为与我们目前看到的其他方法不同，`concat` 不是一个变异方法（mutating method）。这在这里非常有用，因为我们不希望我们的鱼类数组突然包含哺乳动物的元素！
 
 要合并三个或更多个数组，可以将多个数组作为参数传递给 `concat`，如下例所示：
 
-```
+```javascript
 let originals = ["Hope", "Empire", "Jedi"];
 let prequels = ["Phantom", "Clones", "Sith"];
 let sequels = ["Awakens", "Last", "Rise"];
@@ -1347,7 +1546,7 @@ starWars;
 
 要查找特定元素在数组中的位置，请使用 `indexOf` 方法。该方法返回指定元素首次出现的索引。如果数组中未找到该元素，`indexOf` 将返回 -1：
 
-```
+```javascript
 let sizes = ["Small", "Medium", "Large"];
 sizes.indexOf("Medium");
 1
@@ -1359,7 +1558,7 @@ sizes.indexOf("Huge");
 
 如果数组中包含多个给定值的实例，`indexOf` 仅返回第一个匹配元素的索引。例如，这里有一个包含阿根廷国旗颜色颜色的数组：
 
-```
+```javascript
 let flagOfArgentina = ["Blue", "White", "Blue"];
 flagOfArgentina.indexOf("Blue");
 0
@@ -1371,7 +1570,7 @@ flagOfArgentina.indexOf("Blue");
 
 `join` 方法将数组转换为单个字符串，将所有元素连接在一起，如下例所示：
 
-```
+```javascript
 let beatles = ["John", "Paul", "George", "Ringo"];
 beatles.join();
 'John,Paul,George,Ringo'
@@ -1379,14 +1578,14 @@ beatles.join();
 
 注意 `beatles` 数组中独立的字符串是如何合并成一个字符串的。默认情况下，`join` 在每个元素之间放置一个逗号以形成返回的字符串。要更改这一点，你可以将自己的分隔符作为 `join` 的参数。例如，如果你希望每个元素之间没有任何内容，请传递一个空字符串作为参数：
 
-```
+```javascript
 beatles.join("");
 'JohnPaulGeorgeRingo'
 ```
 
 你可以传递任何有效字符串作为分隔符。在下一个示例中，我们传递了一个空格、一个和符号和一个换行转义字符，以便每个元素单独占一行。正如你在第二章中学到的，我们必须使用 `console.log` 才能让换行在 Chrome 中正确显示：
 
-```
+```javascript
 console.log(beatles.join("&\n"));
 John&
 Paul&
@@ -1398,7 +1597,7 @@ Ringo
 
 如果你在包含非字符串值的数组上使用 `join`，这些值将被转换为字符串，如下例所示：
 
-```
+```javascript
 [100, true, false, "hi"].join(" - ");
 '100 - true - false - hi'
 ```
@@ -1423,7 +1622,7 @@ Ringo
 
 创建对象的方法之一是使用*对象字面量*（object literal），它由一对括号（`{` 和 `}`）包围一系列由逗号隔开的键值对组成。每个键值对的键和值之间必须有一个冒号。例如，这里有一个 `casablanca` 对象字面量，包含了一些关于该电影的信息：
 
-```
+```javascript
 let casablanca = {
   "title": "Casablanca",
   "released": 1942,
@@ -1437,14 +1636,11 @@ casablanca;
 
 所有对象的键都是字符串，但如果你的键是一个有效标识符（valid identifier），通常会省略引号。*有效标识符*是任何可以作为 JavaScript 变量名的字符序列。标识符可以由字母、数字以及 `_` 和 `$` 字符组成，但不能以数字开头。它不能包含其他符号，如 `*`、`(` 或 `#`，也不能包含空白字符（如空格和换行符）。这些其他字符*允许*出现在对象的键中，但前提是键被引号括围。例如：
 
-```
+```javascript
 let obj = { key1: 1, key_2: 2, "key 3": 3, "key#4": 4 };
 obj;
 // {key1: 1, key_2: 2, key 3: 3, key#4: 4}
 ```
-
-
-
 
 这里的 `key1` 和 `key_2` 是有效的标识符，因此它们不需要引号。然而，`key 3` 包含空格，`key#4` 包含哈号，使得它们成为无效的标识符。它们必须括在引号中才能作为对象的键。
 
@@ -1452,7 +1648,7 @@ obj;
 
 要获取与键关联的值，请在方括号中使用字符串键来调用对象名：
 
-```
+```javascript
 obj["key 3"];
 3
 casablanca["title"];
@@ -1463,7 +1659,7 @@ casablanca["title"];
 
 对于有效标识符的键，你可以使用点符号表示（dot notation）代替方括号，键名位于点符号之后：
 
-```
+```javascript
 obj.key_2;
 2
 ```
@@ -1476,7 +1672,7 @@ obj.key_2;
 
 要向对象添加新的键值对，请使用与查找值时相同的括号或点符号表示法。例如，我们设置了一个空的字典对象，然后添加了两个定义：
 
-```
+```javascript
 let dictionary = {};
 dictionary.mouse = "A small rodent";
 dictionary["computer mouse"] = "A pointing device for computers";
@@ -1488,7 +1684,7 @@ dictionary;
 
 更改已存在键的关联值遵循相同的语法：
 
-```
+```javascript
 dictionary.mouse = "A furry rodent";
 dictionary;
 {mouse: 'A furry rodent', computer mouse: 'A pointing device for computers'}
@@ -1504,7 +1700,7 @@ JavaScript 许多许多处理对象的方法；我们在这里检查其中几个
 
 要获取对象所有键的数组，请使用静态方法 `Object.keys`。例如，以下是获取我猫的名字的方法：
 
-```
+```javascript
 let cats = { "Kiki": "black and white", "Mei": "tabby", "Moona": "gray" };
 Object.keys(cats);
 (3) ['Kiki', 'Mei', 'Moona']
@@ -1516,7 +1712,7 @@ Object.keys(cats);
 
 你可能在奇怪为什么 `keys` 是一个静态方法——也就是说，为什么我们需要通过 `Object.keys(cats)` 调用它，而不是 `cats.keys()`。为了理解为什么如此，请考虑这个钢琴对象：
 
-```
+```javascript
 let piano = {
   make: "Steinway",
   color: "black",
@@ -1532,7 +1728,7 @@ let piano = {
 
 要获取对象键*和*值的数组，请使用 `Object.entries`。此静态方法返回一个包含双元素数组的数组，每个内部数组的第一个元素是键，第二个元素是它的值。它的工作原理如下：
 
-```
+```javascript
 let chromosomes = {
   koala: 16,
   snail: 24,
@@ -1545,7 +1741,7 @@ Object.entries(chromosomes);
 
 我们创建了一个具有四个键值对的对象，显示了各种动物有多少条染色体。`Object.entries(chromosomes)` 返回一个包含四个元素的数组，每个元素都是一个双元素数组。要展开外部数组并查看其完整内容，请点击箭头：
 
-```
+```javascript
 (4) [Array(2), Array(2), Array(2), Array(2)]
   0: (2) ['koala', 16]
   1: (2) ['snail', 24]
@@ -1561,31 +1757,28 @@ Object.entries(chromosomes);
 
 `Object.assign` 方法允许你将多个对象合并为一个。例如，假设你有两个对象，一个提供书籍的物理属性，另一个描述它的内容：
 
-```
+```javascript
 let physical = { pages: 208, binding: "Hardcover" };
 let contents = { genre: "Fiction", subgenre: "Mystery" };
 ```
 
 通过 `Object.assign`，你可以将这些分离的对象合并为一个总的书籍对象：
 
-```
+```javascript
 let book = {};
 Object.assign(book, physical, contents);
 book;
 {pages: 208, binding: 'Hardcover', genre: 'Fiction', subgenre: 'Mystery'}
 ```
 
-
-
-
 `Object.assign` 的第一个参数是 `target`（目标），即其他对象的键将被赋值到的那个对象。在这种情况下，我们使用一个名为 `book` 的空对象作为目标。剩余的参数是 `sources`（源对象），即那些键值对将被复制到目标中的对象。你可以根据需要在初始目标参数之后传递任意数量的源对象——我们在这里使用了两个。该方法会修改并返回目标对象，该对象对象包含了从源对象复制而来的键值对。源对象本身保持不变。
 
 你并不非要创建一个新的空对象作为 `Object.assign` 的目标，但如果你不这样做，你最终会修改了你的其中一个源对象。例如，我们可以从之前的调用中移除第一个参数 `book`，仍然可以得到一个具有相同四个键值对的对象：
 
-```
+```javascript
 Object.assign(physical, contents);
 physical;
-{pages: 208, binding: 'Hardcover', genre: 'Fiction', subgenre: 'Mystery'} 
+{pages: 208, binding: 'Hardcover', genre: 'Fiction', subgenre: 'Mystery'}
 ```
 
 这里的问题是，`physical` 现在变成了目标对象，因此它被修改了，获得了来自 `contents` 的所有键值对。这通常不是你想要的，因为原始的独立对象通常对应用程序的其他部分很重要。出于这个原因，使用一个空对象作为 `Object.assign` 的第一个参数是一种常见的做法。
@@ -1598,14 +1791,14 @@ physical;
 
 首先，让我们使用字面量构建一个嵌套结构。我们将创建一个表示不同书籍三部曲的对象的数组：
 
-```
+```javascript
 let trilogies = [
- ❶ {
+  {
     title: "His Dark Materials",
     author: "Philip Pullman",
     books: ["Northern Lights", "The Subtle Knife", "The Amber Spyglass"]
   },
- ❷ {
+  {
     title: "Broken Earth",
     author: "N. K. Jemisin",
     books: ["The Fifth Season", "The Obelisk Gate", "The Stone Sky"]
@@ -1615,7 +1808,7 @@ let trilogies = [
 
 变量 `trilogies` 包含一个拥有两个元素的数组，❶ 和 ❷，每个都是一个包含特定三部曲信息的对象。注意，每个对象都有相同的键，因为我们想为每个三部曲存储相同的信息。这些键中的一个键 `books` 本身包含一个字符串数组，代表该三部曲中的书名。因此，我们拥有一个嵌套在对象中的数组，而对象又嵌套在数组之中。访问这些内部数组中的元素需要结合数组索引和对象点表示法：
 
-```
+```javascript
 trilogies[1].books[0];
 'The Fifth Season'
 ```
@@ -1626,7 +1819,7 @@ trilogies[1].books[0];
 
 创建嵌套结构的另一种技术是创建包含内部元素的对象，将这些对象分配给变量，然后使用这些变量构建外部结构。例如，假设我们想要创建一个模拟口袋零钱变化的数据结构。我们创建了四个代表分币、镍币、角币和季币的对象，并将每个分配给它自己的变量：
 
-```
+```javascript
 let penny = { name: "Penny", value: 1, weight: 2.5 };
 let nickel = { name: "Nickel", value: 5, weight: 5 };
 let dime = { name: "Dime", value: 10, weight: 2.268 };
@@ -1635,7 +1828,7 @@ let quarter = { name: "Quarter", value: 25, weight: 5.67 };
 
 接下来，我们使用这些变量来创建一个代表口袋中特定硬币组合的数组。例如：
 
-```
+```javascript
 let change = [quarter, quarter, dime, penny, penny, penny];
 ```
 
@@ -1643,7 +1836,7 @@ let change = [quarter, quarter, dime, penny, penny, penny];
 
 再次访问其中一个内部对象的值同样需要结合数组索引和对象点表示法：
 
-```
+```javascript
 change[0].value;
 25
 ```
@@ -1652,7 +1845,7 @@ change[0].value;
 
 这样从变量构建数组的一个有趣结果是，重复元素共享相同的身份。例如，`change[3]` 和 `change[4]` 指向同一个分币对象。如果美国政府决定更新分币的重量，我们可以更新分币对象的重量，该更新将反映在所有的 `change` 数组中：
 
-```
+```javascript
 penny.weight = 2.49;
 change[3].weight;
 2.49
@@ -1668,7 +1861,7 @@ change[5].weight;
 
 Chrome 控制台可以轻松地探索嵌套对象，就像我们在在本章稍之前使用嵌套数组所做的那样。为了说明，我们将创建一个深度嵌套的对象并尝试查看其内部：
 
-```
+```javascript
 let nested = {
   name: "Outer",
   content: {
@@ -1683,7 +1876,7 @@ let nested = {
 
 我们的嵌套对象包含三层对象，每层都有一个 `name` 和 `content` 属性。外层和中间层 `content` 的值是另一个对象。获取最内部对象的 `content` 属性的值需要长长的点表示法链：
 
-```
+```javascript
 nested.content.content.content;
 'Whoa…'
 ```
@@ -1692,14 +1885,14 @@ nested.content.content.content;
 
 现在尝试查看 `nested` 的整体：
 
-```
+```javascript
 nested;
 {name: 'Outer', content: {…}}
 ```
 
 控制台仅给了一个简写版本，外部对象 `content` 属性的值显示为 `{…}`，暗示这里有一个对象，但没有空间显示它。点击箭头展开外部对象的视图。现在，下一个嵌套对象（名为 "Middle"）以简写形式显示。再次点击箭头展开此对象，再点击一次展开名为 "Inner" 的对象。现在你应该可以在控制台中看到对象的完整内容：
 
-```
+```javascript
 {name: 'Outer', content: {
   content: {
     content: "Whoa…"
@@ -1714,24 +1907,20 @@ nested;
 
 `[[Prototype]]` 属性引用 `Object` 构造函数，我们之前曾用它来调用 `Object.keys` 和 `Object.assign` 等对象方法。我们将在第 6 章 中详细讨论原型。
 
-
-
-
-
-像这样使用控制台（console）来查看复杂对象是一个非常有用的调试工具。你经常会处理来自不同 JavaScript 库的对象，或者包含你从服务器获取的数据，而你并不一定知道数据的“形状”——即对象包含哪些属性、它们有多少层嵌套等等。通过控制台，你可以交互式地探索对象并查看它们的内容。
+像这样使用控制台（console）来查看复杂对象是一个非常有用的调试工具。你经常会处理来自不同 JavaScript 库的对象，或者包含你从服务器获取的数据，而你并不一定知道数据的“形状”——即对象包含哪些属性、它们有多少层嵌套等等。通过控制台，你可以交互式探索对象并查看它们的内容。
 
 ### 使用 JSON.stringify 打印嵌套对象
 
 查看嵌套对象的另一种方法是将其转换为 JSON 字符串。`JSON`（或 `JavaScript Object Notation`，即“JavaScript 对象表示法”）是一种基于 JavaScript 对象和数组字面量的文本数据格式，被广泛应用于网络及其他领域，用于存储和交换信息。`JSON.stringify` 方法将 JavaScript 对象转换为 JSON 字符串。让我们把嵌套对象作为示例传递给它：
 
-```
+```javascript
 JSON.stringify(nested);
 '{"name":"Outer","content":{"name":"Middle","content":{"name":"Inner","content":"Whoa…"}}}'
 ```
 
 结果是一个字符串（被包含在单引号中），包含了嵌套对象的 JSON 表示形式。从本质上说，它等同于我们用于创建 `nested` 时使用的原始对象字面量。就像 JavaScript 一样，JSON 使用大括号包围对象，使用冒号分隔键和值，使用逗号分隔不同的键值对。这种表示形式中缺失的是我们为了清晰对象字面量嵌套结构而使用的原始换行和缩进。为了重新创建这些内容，我们可以向 `JSON.stringify` 传递另一个参数，表示每个新嵌套对象的缩进空格数：
 
-```
+```javascript
 nestedJSON = JSON.stringify(nested, null, 2);
 console.log(nestedJSON);
 {
@@ -1793,10 +1982,6 @@ Your current speed is 30 mph.
 Slow down!
 ```
 
-
-
-
-
 我们的条件通过了，因此 `Slow down!` 信息被记录到了控制台中。然而，如果条件为假，`if` 语句体中的代码将不会执行。要亲手验证，请尝试更新 `if.html`，将 `speed` 初始化为 20 而不是 30。然后保存文件并重新加载页面。这一次，你应该只会看到以下输出：
 
 ```
@@ -1814,16 +1999,16 @@ Your current speed is 20 mph.
 let speed = 20;
 console.log(`Your current speed is ${speed} mph.`);
 if (speed > 25) {
-❶ console.log("Slow down!");
+  ❶ console.log("Slow down!");
 } else {
-❷ console.log("You're obeying the speed limit.");
+  ❷ console.log("You're obeying the speed limit.");
 }
 </script></body></html>
 ```
 
 列表 4-2：一个 if…else 语句
 
-这段代码使用 `if…else` 语句来检查 `speed` 是否大于 25。正如列表 4-1 所示，条件以 `if` 关键字开头，后跟着括号中的条件。然而，与列表 4-1 不同，`if…else` 语句有两个体而不是只有一个，它们之间有 `else` 关键字。如果条件为真，则运行第一个体 ❶；如果条件为假，则运行第二个体 ❷。每个体都包含在自己的大括号对中。在这种情况下，由于 `speed` 为 20，条件求值为为假，因此运行第二个体。当你在 Chrome 中打开该文件时，你应该看到以下输出：
+这段代使用 `if…else` 语句来检查 `speed` 是否大于 25。正如列表 4-1 所示，条件以 `if` 关键字开头，后跟着括号中的条件。然而，与列表 4-1 不同，`if…else` 语句有两个体而不是只有一个，它们之间有 `else` 关键字。如果条件为真，则运行第一个体 ❶；如果条件为假，则运行第二个体 ❷。每个体都包含在自己的大括号对中。在这种情况下，由于 `speed` 为 20，条件求值为为假，因此运行第二个体。当你在 Chrome 中打开该文件时，你应该看到以下输出：
 
 ```
 Your current speed is 20 mph.
@@ -1834,17 +2019,17 @@ You're obeying the speed limit.
 
 ### 更复杂的条件
 
-通过引入逻辑运算符，可以使用更复杂的布尔表达式作为条件。例如，假设你只想在学校期间检查驾驶员的速度。假设你有一个包含当前小时（使用 24 小时制）的 `hour` 变量，你可以这样做：
+通过引入逻辑运算符，可以使用更复杂的布尔表达式作为条件。例如，假设你只想在学校期间检查驾驣的速度。假设你有一个包含当前小时（使用 24 小时制）的 `hour` 变量，你可以这样做：
 
-```
+```javascript
 if (speed > 25 && hour > 7 && hour < 16) {
 ```
 
 只有当 `speed` 大于 25 且 `hour` 大于 7 但小于 16 时，该 `if` 语句的体才会运行。换句话说，如果不在学校期间，速度超过 25 将不会导致 `if` 语句体执行。
 
-如果你的条件变得太复杂，读你的 `if` 语句可能会变得很困难。在这种情况下，最好的方法通常是单独编写布尔表达式并将其赋值给新变量。然后你可以使用该变量作为 `if` 语句的条件。例如，之前的条件可以重写为：
+如果你的条件变得太复杂，读你的 `if` 语句可能会变得很困难。在这种情况下，最好的方法通常是单独编写布尔表达并将其赋值给新变量。然后你可以使用该变量作为 `if` 语句的条件。例如，之前的条件可以重写为：
 
-```
+```javascript
 let tooFastForSchool = speed > 25 && hour > 7 && hour < 16;
 if (tooFastForSchool) {
 ```
@@ -1853,7 +2038,7 @@ if (tooFastForSchool) {
 
 如果将速度和小时测试合并到一个布尔变量中看起来很奇怪，那么折中方案可以是仅将小时检查放入变量中，如下所示：
 
-```
+```javascript
 let schoolHours = hour > 7 && hour < 16;
 if (speed > 25 && schoolHours) {
 ```
@@ -1895,7 +2080,7 @@ You're driving at a good speed.
 
 你可以在初始的 `if` 和最后的 `else` 之间链联任意数量的 `else if` 子句，如列表 4-4 所示，从而在你的条件结构中创建任意数量的可能分支。
 
-```
+```javascript
 if (speed > 25) {
   console.log("Slow down!");
 } else if (speed > 20) {
@@ -1915,11 +2100,6 @@ if (speed > 25) {
 
 | 表 4-1：列表 4-4 每个分支的完整条件和输出 |
 | --- |
-
-
-
-
-
 | 条件 | 输出 |
 | :--- | :--- |
 | speed > 25 | 慢点！ |
@@ -1934,7 +2114,7 @@ if (speed > 25) {
 
 循环是 JavaScript 中另一种控制结构，允许你根据需要重复运行相同的代码。例如，你可以使用循环来打印购物列表上的每个项目。如果没有循环，这是无法实现的，因为你并不一定预先知道列表中有多少项目。当你想要持续运行某段代码直到某个条件变为真时，循环也非常有用；例如，反复要求用户输入出生日期，直到他们提供有效日期。
 
-你将在本章中学习四种循环：`while` 循环、`for` 循环、`for…in` 循环和 `for…of` 循环。让我们从 `while` 循环开始。
+你将在本章中学习四种循环：`while` 循、`for` 循环、`for…in` 循环和 `for…of` 循环。让我们从 `while` 循环开始。
 
 ### while Loops
 
@@ -1942,7 +2122,7 @@ if (speed > 25) {
 
 要查看 `while` 循环是如何工作的，请创建一个名为 `while.html` 的新文件并输入[Listing 4-5]中的内容。
 
-```
+```html
 <html><body><script>
 let speed = 30;
 ❶ while (speed > 25) {
@@ -1952,6 +2132,7 @@ let speed = 30;
 ❷ console.log(`Now your speed is ${speed} mph.`);
 </script></body></html>
 ```
+
 Listing 4-5: 一个 while 循环*
 
 此脚本将 `speed` 设置为 30，然后使用 `while` 循环 ❶ 将速度降至范围内。我们使用 `while` 关键字编写 `while` 循环，后面跟着括号中的条件和花括号中的体，就像 `if` 语句一样。在这里，我们的条件检查 `speed` 是否大于 25。我们的体将 `speed` 的值打印到控制台，然后使用递减运算符（----）将 `speed` 减 1。这为我们下一次循环测试提供了一个新的 `speed` 值。`while` 循环将不断重复体，直到条件为假，产生以下输出：
@@ -1975,18 +2156,19 @@ Now your speed is 25 mph.
 
 `for` 循环只是编写这种模式的一种更方便的方法。通过 `for` 循环，我们将设置和更新循环变量的代码移动到循环的第一行，位于与编写循环条件相同的括号内。为了说明这一点，让我们重写之前的示例，使用 `for` 循环代替 `while` 循环。将[Listing 4-6]的内容保存为 `for.html`。
 
-```
+```html
 <html><body><script>
 for (let speed = 30; speed > 25; speed--) {
   console.log(`Your current speed is ${speed} mph.`);
 }
 </script></body></html>
 ```
+
 Listing 4-6: 一个 for 循环*
 
 我们使用 `for` 关键字声明 `for` 循环，后面跟着包含三个组件的括号，每个组件都有自己的循环管理：
 1. 初始化循环变量（`let speed = 30`）。
-2. 设置循环条件（`speed > 25`）。
+2. 设置循条件（`speed > 25`）。
 3. 更新循环变量（`speed--`）。更新将在每次循环重复后发生。
 
 这三个组件由分号分隔。
@@ -2005,17 +2187,15 @@ Your current speed is 26 mph.
 
 唯一的区别是我们无法在循环结束后像在 `while` 循环中那样记录最终速度。这是因为 `speed` 变量被声明为循环本身代码的一部分，而不是在循环之前。因此，`speed` 被限制在循环的*作用域*内，这意味着循环外部的代码无法访问它。这实际上是 `for` 循环的优势之一：循环变量仅为循环存在，而不会在代码的其他部分被意外使用或更改。
 
-
-
+### for…of 循环
 
 `for…of` 循环会遍历数组中的项。`while` 循环或 `for` 循环在某些条件为真时会持续循环，而 `for…of` 循环则会逐个地遍历数组中的每个项，并在用完所有项后停止。这非常有用，因为我们通常需要对数组中的每个成员执行相同的操作。例如，如果你有一个数字数组，可以通过遍历这些数字并为每个数字在屏幕上绘制一个矩形（使用该数字设置矩形的高度，像素）来创建一个条形图。同样，如果你有一个关于电影的对象数组，你可以遍历这些电影并打印它们的标题。
 
 让我们来看 `for…of` 循环的实际运行。创建一个名为 `forOf.html` 的新文件，包含列表 4-7 的内容。
 
-```
+```html
 <html><body><script>
 let colors = ["Red", "Green", "Blue"];
-
 for (let color of colors) {
   console.log(`${color} is a color.`);
 }
@@ -2034,7 +2214,7 @@ Blue is a color.
 
 也可以使用普通的 `for` 循环来遍历数组中的项，如列表 4-8 所示。
 
-```
+```javascript
 for (let index = 0; index < colors.length; index++) {
   console.log(`${colors[index]} is a color.`);
 }
@@ -2046,7 +2226,7 @@ for (let index = 0; index < colors.length; index++) {
 
 长期以来，这种 `for` 循环样式是 JavaScript 中遍历数组的唯一方法。识别这种样式是值得的，因为你可能会在很多旧代码中看到它。如今，`for…of` 样式更为常见。然而，旧 `for` 循环技术的一个优点是它可以让你访问数组索引。这很有帮助，因为有时知道你当前正在处理数组的哪个元素是很重要的。例如，你可能想对偶数元素和奇数元素执行不同的操作，或者只想连同值一起打印索引形成编号列表。你也可以通过 `for…of` 循环来实现这一点，只需使用数组的 `entries` 方法。要查看它是如何工作的，创建一个新的 `forOfEntries.html` 文件并输入列表 4-9 的内容。
 
-```
+```html
 <html><body><script>
 let colors = ["Red", "Green", "Blue"];
 for (let [index, item] of colors.entries()) {
@@ -2067,7 +2247,7 @@ for (let [index, item] of colors.entries()) {
 
 注意，在普通的赋值语句中（`for…of` 循环之外）也可以使用解构赋值将数组拆分成单独的变量。例如，你可以将表示 RGB 颜色值的三个数字数组转换为单个 `r`、`g` 和 `b` 变量，如下：
 
-```
+```javascript
 let rgbcolor = [125, 100, 0];
 let [r, g, b] = rgbcolor;
 ```
@@ -2078,14 +2258,13 @@ let [r, g, b] = rgbcolor;
 
 `for…in` 循环遍历对象的键。它与 `for…of` 循环相似，会逐个取出键并在没有更多键时停止。区别在于 `for…in` 循环应用于对象，遍历的是键。将列表 4-10 的内容保存为 `forIn.html` 以进行尝试。
 
-```
+```html
 <html><body><script>
 let me = {
   "first name": "Nick",
   "last name": "Morgan",
   "age": 39
 };
-
 for (let key in me) {
   console.log(`My ${key} is ${me[key]}`);
 }
@@ -2112,17 +2291,15 @@ My age is 39.
 
 ![](img/opener.png)
 
-正如你在第 1 章中所学习的，*函数*是执行特定任务的自包含代码块。我们已经使用了 JavaScript 的一些内置函数，例如 `alert` 和 `console.log`，但你也可以创建自定义函数来执行特定于应用程序的任务。然后你可以*调用*这些函数来运行关联的代码。通过这种方式将代码封装成函数可以让你的编程更高效，因为你每次需要使用它时不需要重复代码。
-
-
+正如你在第 1 章中所学习的，*函数*是执行特定任务的自包含代码块。我们已经使用了 JavaScript 的一些内置函数，例如 `alert` 和 `console.log`，但你也可以创建自定�函数来执行特定于应用程序的任务。然后你可以*调用*这些函数来运行关联的代码。通过这种方式将代码封装成函数可以让你的编程更高效，因为你每次需要使用它时不需要重复代码。
 
 在本章中，你将学习编写自定义函数的各种技术。你将看到如何向函数提供输入并从它们那里接收输出。你还将看到函数如何像数字或字符串一样，被视为普通的值。特别，我们将探索函数如何作为其他高阶函数的输入或输出。
 
-## 声明声明和调用函数
+### 声明声明和调用函数
 
 在使用自定义函数之前，你必须先确定该函数的名称以及它的功能。一种方法是使用 `function declaration`（函数声明），这是一种定义函数的代码块。为了说明这一点，我们将声明一个名为 `sayHello` 的简单函数，它接收一个人的名字作为输入，并向控制台中为该人员打印一条自定义的问候语。请在 Chrome 中打开 JavaScript 控制台并输入以下内容：
 
-```
+```javascript
 function sayHello(name) {
   console.log(`Hello, ${name}!`);
 }
@@ -2132,10 +2309,11 @@ function sayHello(name) {
 
 现在我们已经声明了 `sayHello` 函数，可以在任何需要问候某人的时候调用它。每次调用函数时，我们都需要为 `name` 参数提供一个值。该值被称为 `argument`（实参），并在调用函数时在括号中指定。通过向函数传递不同的参数，我们可以创建不同的自定义问候语。例如：
 
-```
+```javascript
 sayHello("Nick");
 Hello, Nick!
 undefined
+
 sayHello("Mei");
 Hello, Mei!
 undefined
@@ -2151,7 +2329,7 @@ undefined
 
 `return value`（返回值）是函数产生的、供代码中其他地方使用的值。在很多情况下，你可能希望函数使用参数接收一些输入，以某种方式处理这些输入，并输出结果。该输出就是返回值。例如，让我们声明一个接收两个数字并返回它们的和的函数：
 
-```
+```javascript
 function add(x, y) {
   return x + y;
 }
@@ -2159,7 +2337,7 @@ function add(x, y) {
 
 这个 `add` 函数有两个参数 `x` 和 `y`。函数体由 `return` 关键字以及后面的表达式 `x + y` 组成。当函数被调用时，JavaScript 将评估这个表达式，将 `x` 和 `y` 相加并返回结果，如下所示：
 
-```
+```javascript
 add(1, 2);
 3
 ```
@@ -2168,11 +2346,9 @@ add(1, 2);
 
 当我们在 Chrome 控制台中调用函数时，它的返回值会自动打印出来——但重要的是要区分函数显式向控制台打印文本（正如我们之前看到的 `sayHello` 所做的）与函数返回值（正如这里的 `add` 正在做的）。当函数使用 `console.log` 打印一个值时，该值唯一存在的地方是在日志中；我们无法在之后再次使用它。相反，当函数返回一个值时，我们可以在稍后的代码中使用该值。返回值也显示在控制台中这一事实在很大程度上无关紧要。
 
-
-
 举例来说，到目前为止一直在使用 `add` 函数来将数字相加，但没有什么能阻止我们用它来拼接两个字符串：
 
-```
+```javascript
 add("Hello, ", "world!");
 'Hello, world!'
 ```
@@ -2181,7 +2357,7 @@ add("Hello, ", "world!");
 
 扩展来说，我们还可以传递其他类型的参数，甚至在同一次函数调用中混合数据类型：
 
-```
+```javascript
 add(true, false);
 1
 add(1, '1');
@@ -2194,13 +2370,12 @@ add(1, '1');
 
 ### 副作用
 
-*副作用*（side effect）是指函数除了返回值之外所做的任何对函数外部产生影响的操作。副作用可以是故意的，也可以是无意的，包括更新在函数外部定义的变量值、修改在函数外部定义的数组或对象，或向控制台输出字符串。
+*副作用*（side effect）是指函数除了返回值之所所做的任何对函数外部产生影响的操作。副作用可以是故意的，也可以是无意的，包括更新在函数外部定义的变量值、修改在函数外部定义的数组或对象，或向控制台输出字符串。
 
 某些函数（如我们的 `add` 函数）没有副作用，仅为了其返回值而被调用。其他函数（如 `sayHello`）没有返回值，仅为了其副作用而被调用。也可以编写既有有返回值*又*有副作用的函数。例如，我们可以重新定义 `add`，使其在返回参数之和的同时，还能向控制台记录一些信息并更新一个变量：
 
-```
+```javascript
 let addCalls = 0;
-
 function add(x, y) {
   addCalls++;
   console.log(`x was ${x} and y was ${y}`);
@@ -2208,11 +2383,11 @@ function add(x, y) {
 }
 ```
 
-在这里，我们声明了变量 `addCalls`，用它来跟踪 `add` 函数调用的次数。然后我们写了更新后的 `add` 函数声明。该函数现在增加 `addCalls`并将参数的值记录到控制台，然后像以前一样返回参数的和。
+在这里，我们声明了变量 `addCalls`，用它来跟踪 `add` 函数调用的次数。然后我们写了更新后的 `add` 函数声明。该函数现在增加 `addCalls` 并将参数的值记录到控制台，然后像以前一样返回参数的和。
 
 让我们尝试调用修改后的函数：
 
-```
+```javascript
 let sum = add(Math.PI, Math.E);
 x was 3.141592653589793 and y was 2.718281828459045
 addCalls;
@@ -2227,11 +2402,11 @@ sum;
 
 ### 将函数作为参数传递
 
-在 JavaScript 中，函数是*一等公民*（first-class citizens），这意味着它们可以像任何其他值（如数字或字符串）一样使用。例如，你可以将函数存储在变量中，或将函数作为参数传递另一个函数。后者特别常见，因为有很多函数会将工作委托给其他函数。当函数作为参数传递时，它通常被称为*回调*（callback），因为接收它的函数被认为通过执行它来“回掉”它。
+在 JavaScript 中，函数是*一等公民*（first-class citizens），这意味着它们可以像任何其他值（如数字或字符串）一样使用。例如，你可以将函数存储在变量中，或将函�数作为参数传递另一个函数。后者特别常见，因为有很多函数会将工作委托给其他函数。当函数作为参数传递时，它通常被称为*回调*（callback），因为接收它的函数被认为通过执行它来“回掉”它。
 
 我们将用 JavaScript 内置的 `setTimeout` 函数来说明这一点，它允许你延迟调用另一个函数。它接受两个参数：要调用的函数，以及在调用该函数之前等待的毫秒数（ms）。它的工作原理如下：
 
-```
+```javascript
 function sayHi() {
   console.log("Hi!");
 }
@@ -2243,17 +2418,15 @@ Hi!
 首先，我们创建一个没有参数的简单函数 `sayHi`，它只调用 `console.log`。然后我们调用 `setTimeout`，将 `sayHi` 函数和数字 `2000`（表示 2000 毫秒，即 2 秒）作为参数传递。一旦按下回车键，`setTimeout` 应该立即返回一个*超时 ID*——在这种情况下为 1——你可以根据需要取消延迟函数调用的唯一标识。然后两秒后，`sayHi` 函数被调用，控制台输出字符串 "Hi!"。
 
 > **注意**
-
 > 要取消使用 `setTimeout` 延迟的函数调用，请调用 `clearTimeout` 函数并将超时 ID 作为参数。
 
 注意，当我们把函数作为参数传递时，不带括号写它的名称：在这种是 `sayHi` 而不是 `sayHi()`。不带括号的函数名只是*引用*该函数，而带括号的函数名实际上是在*调用*函数。我们可以在 JavaScript 控制台中看到这种区别：
 
-```
+```javascript
 ❶ sayHi;
 f sayHi() {
   console.log("Hi!");
 }
-
 ❷ sayHi();
 Hi!
 undefined
@@ -2267,35 +2440,32 @@ undefined
 
 ### 函数表达式
 
-*函数表达式*（function expression），也称为*函数字面量*（function literal），其值为函数的代码字面量，就像 `123` 是值为数字 `123` 的字面量一样。函数声明创建一个函数并将其绑定到一个名称，而函数表达式是一个求值为（返回）函数的表达式，你可以随心所欲使用它。
+*函数表达式*（function expression），也称为*函数字面量*（function literal），其值为函数的代码字面量，就像 `123` 是值为数字 `123` 的字面量一样。函数声明创建一个函�并将其绑定到一个名称，而函数表达式是一个求值为（返回）函�的表达式，你可以随心所欲使用它。
 
-在语法上，函数表达式看起来与函数声明非常相似，有两个主要区别。第一，函数表达式不必包含名称，尽管你也可以可以包含一个。没有名称的函数表达式也被称为*匿名函数*（anonymous functions）。第二，函数表达式不能写在代码行的开头，否则 JavaScript 会认为它是函数声明；在 `function` 关键字之前必须有一些代码。这就是为什么函数表达式经常用于需要将函数视为值处理的语境。
+在语法上，函数表达式看起来与函数声明非常相似，有两个主要区别。第一，函数表达式不必包含名称，尽管你也可以可以包含一个。没有名称的函数表达式也被称为*匿名函数*（anonymous functions）。第二，函数表达式不能写在代码行的开头，否则 JavaScript 会认为它是函�声明；在 `function` 关键字之前必须有一些代码。这就是为什么函数表达式经常用于需要将函�视为值处理的语境。
 
-例如，你可以在一个语句中定义一个函数表达式并将其赋值为变量的值，如下所示：
+例如，你可以在一个语句中定义一个函�表达式并将其赋值为变量的值，如下所示：
 
-```
+```javascript
 let addExpression = function (x, y) {
   return x + y;
 };
 ```
 
+`function` 关键字出现在赋值语句的右侧，而不是行的开头，因此 JavaScript 将其视为一个函�表达式（function expression）。在这种情况下，我们将该函�表达式赋值给 `addExpression` 变量。该函�本身是匿名的，因为我们没有在 `function` 关键字后面提供名称（你将在下一页的“命名函�表达式”框中看到一个我们这样做的示例）。它有两个参数，`x` 和 `y`，并在括号中指定，就就像我们最初的 `add` 函数一样。函�体返回参数之和，并被括在大括号中，这与函�声明的函�体相似，但请注意，我们需要在右大括号后加一个分号，以表示将函�赋值给变量的语句结束。
 
+虽然函�本身在技术上是匿名的，但它现在已经绑定到 `addExpression` 变量上了。因此，我们可以在变量名后加上一对包含必要参数的括号来调用该函�，就像调用任何命名函�一样：
 
-
-`function` 关键字出现在赋值语句的右侧，而不是行的开头，因此 JavaScript 将其视为一个函数表达式（function expression）。在这种情况下，我们将该函数表达式赋值给 `addExpression` 变量。该函数本身是匿名的，因为我们没有在 `function` 关键字后面提供名称（你将在下一页的“命名函数表达式”框中看到一个我们这样做的示例）。它有两个参数，`x` 和 `y`，并在括号中指定，就就像我们最初的 `add` 函数一样。函数体返回参数之和，并被括在大括号中，这与函数声明的函数体相似，但请注意，我们需要在右大括号后加一个分号，以表示将函数赋值给变量的语句结束。
-
-虽然函数本身在技术上是匿名的，但它现在已经绑定到 `addExpression` 变量上了。因此，我们可以在变量名后加上一对包含必要参数的括号来调用该函数，就像调用任何命名函数一样：
-
-```
+```javascript
 addExpression(1, 2);
 3
 ```
 
-输入 `addExpression(1, 2)` 会调用该函数，并返回两个参数之和。
+输入 `addExpression(1, 2)` 会调用该函�，并返回两个参数之和。
 
-在许多方面，函数表达式和函数声明（function declarations）是可以互换的，因此在这两种方法之间进行选择通常只是风格问题。例如，我们将两个两个数字的函数定义为函数表达式并赋值给变量，这与我们最初使用函数声明定义它是大体相同的。然而，在将函数作为参数传递时，函数表达式具有某些优势。例如，之前我们声明了 `sayHi` 函数，然后将其名称作为参数传递给 `setTimeout`。更常见的方法是直接在 `setTimeout` 函数的参数列表中编写等效函数表达式，而无需将其赋值给变量：
+在许多方面，函�表达式和函�声明（function declarations）是可以互换的，因此在这两种方法之间进行选择通常只是风格问题。例如，我们将两个两个数字的函�定义为函�表达式并赋值给变量，这与我们最初使用函�声明定义它是大体相同的。然而，在将函�作为参数传递时，函�表达式具有某些优势。例如，之前我们声明了 `sayHi` 函数，然后将其名称作为参数传递给 `setTimeout`。更常见的方法是直接在 `setTimeout` 函数的参数列表中编写等效函�表达式，而无需将其赋值给变量：
 
-```
+```javascript
 setTimeout(function () {
   console.log("Hi!");
 }, 2000);
@@ -2303,15 +2473,15 @@ setTimeout(function () {
 Hi!
 ```
 
-之前我们调用了 `setTimeout(sayHi, 2000)`，将函数名作为第一个参数传递，但这次我们传递的是一个函数表达式。该函数表达式定义了一个匿名函数，向控制台打印 "Hi!"（等同我们之前声明的 `sayHi` 函数）。注意，`function` 关键字并不是代码行中的第一个内容（这是函数表达式的要求），并且右大括号后面跟着逗号，因为该函数表达式是参数列表的一部分。
+之前我们调用了 `setTimeout(sayHi, 2000)`，将函�名作为第一个参数传递，但这次我们传递的是一个函�表达式。该函�表达式定义了一个匿名函�，向控制台打印 "Hi!"（等同我们之前声明的 `sayHi` 函数）。注意，`function` 关键字并不是代码行中的第一个内容（这是函�表达式的要求），并且右大括号后面跟着逗号，因为该函�表达式是参数列表的一部分。
 
-像一样，调用 `setTimeout` 返回一个超时 ID，这次是 2。然后，当我们的匿名函数两秒后被调用时，Hi! 出现在控制台中。在这种情况下，使用函数表达式更加简洁，因为我们不需要在传递给 `setTimeout` 之前单独定义延迟函数。
+像一样，调用 `setTimeout` 返回一个超时 ID，这次是 2。然后，当我们的匿名函�两秒后被调用时，Hi! 出现在控制台中。在这种情况下，使用函�表达式更加简洁，因为我们不需要在传递给 `setTimeout` 之前单独定义延迟函�。
 
 ### 箭头函数
 
 JavaScript 还有另一种定义函数的语法，称为箭头函数表达式（arrow function expressions），简称箭头函数。箭头函数是函数表达式的紧凑版本，在大多数情况下，两者之间的选择纯粹是风格上的。你可以在任何普通函数表达式有效的地方使用箭头函数，并在过程中节省一些输入时间。例如，这里是使用箭头函数语法创建一个相两个数字的函数：
 
-```
+```javascript
 let addArrow = (x, y) => {
   return x + y;
 };
@@ -2319,22 +2489,22 @@ let addArrow = (x, y) => {
 
 箭头函数不使用 `function` 关键字。相反，它从参数列表开始——在这种情况下是 `(x, y)`——后面跟着一个箭头（`=>`）和函数体。在这里，我们将箭头函数赋值给 `addArrow` 变量，这让我们像调用其他函数一样调用它：
 
-```
+```javascript
 addArrow(2, 2);
 4
 ```
 
 我们使用块体语法（block body syntax）定义了 `addArrow`，其中体放在大括号之间，体内的每个语句都写在自己的缩进行上。然而，如果体只包含一条语句，则有一种更简单的语法，称为简洁体（concise body）：
 
-```
+```javascript
 let addArrowConcise = (x, y) => x + y;
 ```
 
 在这里，体与语句的其余部分写在同一行，并且没有被大括号包围。此外，`return` 关键字是隐含的，这意味着体中的表达式（在这种情况下为 `x + y`）被自动理解为函数的返回值。这种简洁体语法非常适合编写简单函数，但如果你的函数体涉及多个语句，你将必须使用块体语法（并且如果函数有显式的返回值，则包含 `return` 关键字）。
 
-如果箭头函数恰好有一个参数，你可以通过省略参数名周围的括号来进一步简化语法：
+如果箭头函数恰好有一个参数，你可以通过省略参数名周围的括号来进一简化语法：
 
-```
+```javascript
 let squared = x => x * x;
 squared(3);
 9
@@ -2342,9 +2512,9 @@ squared(3);
 
 这个箭头函数接收一个数字 `x`，并返回它的平方（`x * x`）。由于 `x` 是函数的唯一参数，我们不需要把它放在括号里。这对于块体和简洁体语法都有效。
 
-与函数表达式一样，箭头函数提供了一种定义作为参数传递函数的有效方法。为了说明，我们将考虑 JavaScript 内置的 `setInterval` 函数。像 `setTimeout` 一样，它接受另一个函数和毫秒时间作为参数，但与 `setTimeout` 不同，它会重复调用提供的函数，在每次调用之间等待指定的时间。在这里，我们向 `setInterval` 传递了一个箭头函数，该函数向控制台打印字符串 "Beep"：
+与函数表达式一样，箭头函数提供了一种定义作为参数传递函数的有效方法。为了说明，我们将考虑 JavaScript 内置的 `setInterval` 函数。像 `setTimeout` 一样，它接受另一个函数和毫秒时间作为参数，但与 `setTimeout` 不同，它会重复调用提供的函�，在每次调用之间等待指定的时间。在这里，我们向 `setInterval` 传递了一个箭头函�，该函�向控制台打印字符串 "Beep"：
 
-```
+```javascript
 setInterval(() => {
   console.log("Beep");
 }, 1000);
@@ -2352,7 +2522,7 @@ setInterval(() => {
 Beep
 ```
 
-我们的箭头函数不接受参数，因此它从一个空参数列表开始。体结尾的大括号后面跟着逗号，以分隔箭头函数和下一个参数 `setInterval`，后者指定了重复之间的一秒暂停（1000 ms）。
+我们的箭头函数不接受参数，因此它从一个空参数列表开始。体结尾的大括号后面跟着逗号，以分隔箭头函�和下一个参数 `setInterval`，后者指定了重复之间的一秒暂停（1000 ms）。
 
 当我们执行这段代码时，它首先返回一个取消重复的间隔 ID——在这种情况下是 3。然后，在一秒延迟后记录第一个 "Beep"。之后，控制台输出的左侧会出现一个数字，每秒递增一次，显示 `console.log("Beep")` 被调用了多少次。Chrome 使用这种技巧防止控制台被重复的输出行填充。当你准备好让代码停止 Beep 时，刷新浏览器页面或调用 `clearInterval` 函数并传递间隔 ID。在我们的示例中，将是 `clearInterval(3)`。
 
@@ -2362,7 +2532,7 @@ Beep
 
 剩余参数适用于任何风格的函数定义。在这里我们使用它创建一个列出用户喜欢的颜色的箭头函数：
 
-```
+```javascript
 let myColors = (name, ...favoriteColors) => {
   let colorString = favoriteColors.join(", ");
   console.log(`My name is ${name} and my favorite colors are ${colorString}.`);
@@ -2374,15 +2544,17 @@ My name is Nick and my favorite colors are blue, green, orange.
 
 
 
-
 剩余参数（rest parameter）看起来像普通参数，但前面有三个点，并且它必须是函数定义中的最后一个参数。当调用函数时，首先列出的任何普通参数将按顺序与提供的参数进行匹配。然后，剩余参数将剩余参数封装成一个数组。在我们的示例中，`name` 是一个普通参数，而 `favoriteColors` 是剩余参数。当我们调用该函数时，参数 `"Nick"` 被赋值给 `name` 参数。剩余的参数 `"blue"`、`"green"` 和 `"orange"` 被收集到一个数组中，并赋值给 `favoriteColors` 参数。由于 `favoriteColors` 是一个数组，我们可以使用 `join` 方法将其转换为字符串，用逗号和空格分隔每个颜色。然后，我们使用模板字面量（template literal）将颜色字符串整合更大的字符串中，并使用 `console.log` 将其打印。
 
 由于 `favoriteColors` 是剩余参数，我们可以根据需要使用一个或多个颜色调用该函数：
 
 ```
 myColors("Boring", "gray");
+
 My name is Boring and my favorite colors are gray.
+
 myColors("Indecisive", "red", "orange", "yellow", "green", "blue", "indigo", "violet");
+
 My name is Indecisive and my favorite colors are red, orange, yellow, green, blue, indigo, violet.
 ```
 
@@ -2391,20 +2563,22 @@ My name is Indecisive and my favorite colors are red, orange, yellow, green, blu
 这里另一个使用剩余参数的示例，这次是为了求和作为参数提供的所有数字：
 
 ```
-function sum(…numbers) {
+function sum(...numbers) {
   let total = 0;
   for (let number of numbers) {
     total += number;
   }
   return total;
 }
+
 sum(1, 2, 3, 4, 5);
 15
+
 sum(6, 7, 8, 9, 10, 11, 12, 13);
 76
 ```
 
-这次我们使用了函数声明而不是箭头函数，并且函数的唯一参数就是剩余参数。由于没有其他参数，所有参数都被收集到一个数组中并赋值给剩余参数 `numbers`。然后，我们使用 `for…of` 循环将这些数字相加。
+这次我们使用了函数声明而不是箭头函数，并且函数的唯一参数就是剩余参数。由于没有其他参数，所有参数都被收集到一个数组中并赋值给剩余参数 `numbers`。然后，我们使用 `for...of` 循环将这些数字相加。
 
 ### 高阶函数（Higher-Order Functions）
 
@@ -2451,7 +2625,7 @@ shoppingList.filter(item => item.length > 6);
 
 ##### 转换数组的每个元素
 
-有时你想转换数组中的每个元素，并将结果存储在一个新数组中。例如，你可能有一组都需要以相同方式处理的数字。你可以使用我们在第 4 章中讨论过的 `for…of` 循环来实现此，但更简洁的技巧是使用 `map` 数组方法。它对数组的每个元素应用相同的回调函数，并返回一个包含结果的新数组。在这里，我们使用 `map` 接收一个数字数组并产生一个这些数字的立方数组：
+有时你想转换数组中的每个元素，并将结果存储在一个新数组中。例如，你可能有一组都需要以相同方式处理的数字。你可以使用我们在第 4 章中讨论过的 `for...of` 循环来实现此，但更简洁的技巧是使用 `map` 数组方法。它对数组的每个元素应用相同的回调函数，并返回一个包含结果的新数组。在这里，我们使用 `map` 接收一个数字数组并产生一个这些数字的立方数组：
 
 ```
 let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
@@ -2460,7 +2634,7 @@ cubes;
 (10) [1, 8, 27, 64, 125, 216, 343, 512, 729, 1000]
 ```
 
-我们的回调函数 `x => x * x` 接收数组元素并对其进行立方。`map` 方法对 `numbers` 数组中的每个元素应用此回调，返回一个新的数组的同时保持原始数组不变。比较向 `map` 箭头函数的简洁语法与使用 `for…of` 循环的等效代码：
+我们的回调函数 `x => x * x` 接收数组元素并对其进行立方。`map` 方法对 `numbers` 数组中的每个元素应用此回调，返回一个新的数组的同时保持原始数组不变。比较向 `map` 箭头函数的简洁语法与使用 `for...of` 循环的等效代码：
 
 ```
 let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
@@ -2472,9 +2646,10 @@ cubes;
 (10) [1, 8, 27, 64, 125, 216, 343, 512, 729, 1000]
 ```
 
-结果是相同的，但通过 `map`，我们可以在一行代码中声明并填充 `cubes` 数组，而不是先声明一个空数组 `cubes`，然后在 `for…of` 循环的体中填充它。
+结果是相同的，但通过 `map`，我们可以在一行代码中声明并填充 `cubes` 数组，而不是先声明一个空数组 `cubes`，然后在 `for...of` 循环的体中填充它。
 
-如果你有一个相似对象的数组，并且想从每个对象中提取相同的信息，那么 `map` 方法也非常有用。例如，假设你有一组表示商店物品的对象数组，每个对象都有 `name` 和 `price` 属性，你想获取仅包含价格的数组。你可以向 `map` 传递一个访问每个对象 `price` 属性的回调函数，如下：
+如果你有一个相似对象的数组，并且想从每个对象中提取相同的信息，那么 `map` 方法也非常有用。例如，假设你有一组表示商店物品的对象数组，每个对象都有 `name` 和 `price` 属性，你想获取仅包含价格的数组。你</think>[content]
+可以向 `map` 传递一个访问每个对象 `price` 属性的回调函数，如下：
 
 ```
 let stockList = [
@@ -2489,10 +2664,6 @@ prices;
 
 在这里，回调函数是 `item => item.price`，它接收一个项并返回该项 `price` 属性的值。`map` 函数依次对原始数组中的每个对象应用回调函数，并创建一个包含所有价格的新数组。
 
-
-
-
-
 通常情况下，只要可能，尽可能使用 `map` 而不是等价的循环，既是为了 `map` 方法的简洁性，也是为了代码的`自解释性`（self-documenting）特质（`map` 方法名意味着你正在创建一个新数组，它复制并修改来自另一个数组的元素，而无需额外的注释）。当你的需求更具定制性时，循环更为合适，例如如果输出数组的元素数量与原始数组的数量不匹配。
 
 ### 接收回调函数的自定义函数
@@ -2503,7 +2674,7 @@ prices;
 function doubler(callback) {
   callback();
   callback();
-} 
+}
 doubler(() => console.log("Hi there!"));
 Hi there!
 Hi there!
@@ -2532,7 +2703,7 @@ function callMultipleTimes(times, callback) {
 }
 ```
 
-我们声明 `callMultipleTimes` 函数有两个参数：一个要调用的函数（`callback`）和一个调用次数（`times`）。（注意，与回调作为第一个参数的 `setTimeout` 和 `setInterval` 不同，我们的函数遵循更常见的 JavaScript 惯例，即将回调作为最后一个参数。）函数体由一个 `for` 循环组成，我们在其中调用 `callback(i)`，将循环变量 `i` 作为参数传递给回调。
+我们声明 `callMultipleTimes` 函数有两个参数：一个要调用的函数（`callback`）和一个调用次数（`times`）。（注意，与回调作为第一个参数的 `setTimeout` 和 `setInterval` 不同，我们的函数遵循更常见的 JavaScript 惯例，即将回调作为最后一个参数。）函数体由一个 `for` 循环组成，我们在其中调用 `callback(i)`，将循变量 `i` 作为参数传递给回调。
 
 由于回调函数接收一个单一参数，我们知道传递给 `callMultipleTimes` 的回调函数应该有一个单一参数。例如：
 
@@ -2593,12 +2764,9 @@ exciting("Goodbye");
 
 注意，我们从 `makeAppender` 返回的每个函数都记得我们传递的 `suffix` 值，这就是它能够持续附加相同后缀的原因。这些函数每一个都定义在 `makeAppender` 的作用域内，因此即使对 `makeAppender` 的调用已经完成，它返回的内部函数能够保留该作用域中的其他值，包括 `suffix`。
 
-我们在第四章中讨论过作用域，例如定义在 `while` 或 `for` 循环内的变量无法在循环外访问。同样，在函数内部定义的变量作用域仅限于该函数，因此它们通常在函数调用结束时消失。然而，作用域在嵌套函数中变得更有趣，就像本例一样。你可能认为外部 `makeAppender` 函数的作用域在我们调用它后会“消失”，但只要我们保留对内部函数的引用（我们通过变量 `exciting`、`puzzling` 和 `winking` 实现了这一点），内部函数就能保留访问该作用域变量和参数的能力。保留其闭包作用域变量和参数的函数被称为*闭包*（closures），因为它们“封闭”了它们的环境。（想象内部函数上方覆盖有一个穹顶，保留了其作用域内所有的变量。）
+我们在第四章中讨论过作用域，例如定义在 `while` 或 `for` 循内的变量无法在循环外访问。同样，在函数内部定义的变量作用域仅限于该函数，因此它们通常在函数调用结束时消失。然而，作用域在嵌套函数中变得更有趣，就像本例一样。你可能认为外部 `makeAppender` 函数的作用域在我们调用它后会“消失”，但只要我们保留对内部函数的引用（我们通过变量 `exciting`、`puzzling` 和 `winking` 实现了这一点），内部函数就能保留访问该作用域变量和参数的能力。保留其闭包作用域变量和参数的函数被称为*闭包*（closures），因为它们“封闭”了它们的环境。（想象内部函数上方覆盖有一个穹顶，保留了其作用域内所有的变量。）
 
-
-
-
-在本章中，你学习了如何通过创建和使用自定义函数来使代码更易读、更简洁。你学习了定义函数的种主要样式——函数声明、函数表达式和箭头函数，并尝试了块级体和简洁体体语法。你学习了如何通过向参数传递值作为参数来向函数提供输入，并学习了如何通过函数的返回值、副作用或这两者来利用函数的工作结果。你还了解了如何将函数作为值赋值给变量，以及它们如何被传递给高阶函数或从高阶函数返回。
+在本章中，你学习了如何通过创建和使用自定函数来使代码更易读、更简洁。你学习了定义函数的种主要样式——函数声明、函数表达式和箭头函数，并尝试了块级体和简洁体体语法。你学习了如何通过向参数传递值作为参数来向函数提供输入，并学习了如何通过函数的返回值、副作用或这两者来利用函数的工作结果。你还了解了如何将函数作为值赋值给变量，以及它们如何被传递给高阶函数或从高阶函数返回。
 
 ## 6 类
 
@@ -2629,7 +2797,6 @@ class Player {
     this.x = startX;
     this.y = startY;
   }
-
   move(dx, dy) {
     this.x += dx;
     this.y += dy;
@@ -2639,7 +2806,7 @@ class Player {
 
 我们以 `class` 关键字开头，表示正在声明一个新类，随后是类名 `Player`。类名习惯上大写字母开头。接下来是类体，封装在括号中，就像函数体一样。在体内部，我们定义了两个方法：`constructor` ❶ 和 `move` ❷。声明类方法类似于声明函数，但我们不使用 `function` 关键字。
 
-如果类有一个名为 `constructor` 的方法（如我们的 `Player` 类），那么每当你创建该类的实例时，该方法都会被自动调用。`constructor` 会为正在创建的对象执行任何必要的设置，包括接收定义实例的任何参数并规定对象应该拥有哪些属性。在这种情况下，我们 `Player` 类的 `constructor` 接收两个参数 `startX` 和 `startY`并将并将赋值给新实例的 `x` 和 `y` 属性，这两个属性共同跟踪玩家在 2D 游戏中的位置。`this` 关键字指向正在创建的实例，因此 `this.x = startX` 意味着“取 `startX` 的值并赋值给新 `Player` 对象的 `x` 属性”。注意，我们使用了与在其他地方相同的点符号来访问对象的属性；这里的区别在于它用作新对象名称的占位符。
+如果类有一个名为 `constructor` 的方法（如我们的 `Player` 类），那么每当你创建该类的实例时，该方法都会被自动调用。`constructor` 会为正在创建的对象执行任何必要的设置，包括接收定义实例的任何参数并规定对象应该拥有哪些属性。在这种情况下，我们 `Player` 类的 `constructor` 接收两个参数 `startX` 和 `startY` 并将并将赋值给新实例的 `x` 和 `y` 属性，这两个属性共同跟踪玩家在 2D 游戏中的位置。`this` 关键指向正在创建的实例，因此 `this.x = startX` 意味着“取 `startX` 的值并赋值给新 `Player` 对象的 `x` 属性”。注意，我们使用了与在其他地方相同的点符号来访问对象的属性；这里的区别在于它用作新对象名称的占位符。
 
 `move` 方法通过根据提供的 `dx` 和 `dy` 参数更改 `x` 和 `y` 属性来更新玩家的位置。`dx` 和 `dy` 中的 `d` 是希腊字母 `delta` 的缩写，它通常指的是某物的变化量，例如“x 值的变化”和“y 值的变化”。
 
@@ -2671,9 +2838,6 @@ player1.y;
 
 我们使用 `player1.x` 和 `player1.y` 分别访问对象的 `x` 和 `y` 属性。它们都显示 0，因为这是我们传递给 `constructor` 的值。接下来，我们调用 `move` 方法，这是我们在 `Player` 类中定义的。因为实例与创建它的类有隐藏链接，所以它们能够调用类定义的方法。我们使用点符号来调用方法，就像调用与字符串或数组关联的内置方法一样。
 
-
-
-
 当你在对象上调用方法时，方法定义内部的 `this` 关键字会被设置为当前对象（接收者）。例如，当我们调用 `player1.move(3, 4)` 时，`move` 方法体内部的 `this` 将绑定到 `player1` 对象。这就是为什么一个方法能够被多个对象共享：`this` 会变成在任何时刻接收方法调用的那个对象。
 
 `move` 方法通过在其属性的当前值上加上 `dx` 和 `dy` 来更新对象的 `x` 和 `y` 属性。例如，当我们调用 `player1.move(3, 4)` 时，我们将 `x` 设置为 `0 + 3` 并将 `y` 设置为 `0 + 4`。当我们再次查看对象的 `x` 和 `y` 属性时，我们可以发现这起作用了：`player1.x` 已经变成了 `3`，`player1.y` 已经变成了 `4`。如果我们再次对 `move` 进行调用，例如 `player1.move(2, 2)`，`x` 将变为 `5`，`y` 将变为 `6`。
@@ -2694,12 +2858,10 @@ class Actor {
     this.x = startX;
     this.y = startY;
   }
-
   move(dx, dy) {
     this.x += dx;
     this.y += dy;
   }
-
   distanceTo(otherActor) {
     let dx = otherActor.x - this.x;
     let dy = otherActor.y - this.y;
@@ -2743,12 +2905,10 @@ class Actor {
     this.x = startX;
     this.y = startY;
   }
-
   move(dx, dy) {
     this.x += dx;
     this.y += dy;
   }
-
   distanceTo(otherActor) {
     let dx = otherActor.x - this.x;
     let dy = otherActor.y - this.y;
@@ -2776,12 +2936,9 @@ class Player extends Actor {
 
 `move` 方法通过在其属性的当前值上加上 `dx` 和 `dy` 来更新对象的 `x` 和 `y` 属性。例如，当我们调用 `player1.move(3, 4)` 时，我们将 `x` 设置为 `0 + 3` 并将 `y` 设置为 `0 + 4`。当我们再次查看对象的 `x` 和 `y` 属性时，我们可以发现这起作用了：`player1.x` 已经变成了 `3`，`player1.y` 已经变成了 `4`。如果我们再次对 `move` 进行调用，例如 `player1.move(2, 2)`，`x` 将变为 `5`，`y` 将变为 `6`。
 
-
-
-
 首先，我们在位置 (1, 2) 和 (3, 4) 分创建了每个类的实例。`Player` 对象初始时是满血状态，如 `player.hp` 所示。这两个对象之间的距离约为 2.8 个单位，我们通过调用 `enemy.distanceTo(player)` 确认了这一点。此时，敌人的距离足够成功攻击玩家，因此我们使用 `enemy.attack(player)` 调用了它的攻击方法。该方法返回 `true`，表示命中，检查 `player.hp` 显示攻击将玩家的生命值降低到了 90。接下来，我们在 x 和 y 方向上移动了玩家 5 个单位。这次移动让玩家超出了敌人的范围，因此敌人的第二次攻击未成功，返回 `false`。最后检查 `player.hp`，显示玩家的生命值仍保持在 90。
 
-注意这段代码，我们在 `Enemy` 对象上调用了 `distanceTo` 方法，在 `Player` 对象上调用了 `move` 方法。这些方法都是在 `Actor` 类中定义的，但在 `Enemy` 和 `Player` 类中同样可用，这证明了子类成功继承了它们的父类。我们也可以使用 `instanceof` 关键字来验证这一点，它用于测试一个对象是否是特定类的实例。在这里，我们对 `player` 对象进行了尝试：
+注意这段代码，我们在 `Enemy` 对象上调用了 `distanceTo` 方法，在 `Player` 对象上调用了 `move` 方法。这些方法都是在 `Actor` 类中定义的，但在 `Enemy` 和 `Player` 类中同样可用，这证明了子类成功继承了它们的父类。我们也可以使用 `instanceof` 关键字来验证这一点，它用于测试一个对象是否是特特定类的实例。在这里，我们对 `player` 对象进行了尝试：
 
 ```
 player instanceof Player;
@@ -2839,8 +2996,6 @@ undefined
 
 在这里，我们通过使用 `new` 关键字调用 `Cat` 构造函数来创建一个新对象，并将 `"Kiki"` 作为参数传递给构造函数的 `name` 参数。我们将结果对象存储在变量 `kiki` 中。请注意，如果我们将 `Cat` 为一个类而不是构造函数，创建对象的语法将完全相同：`new Cat("Kiki")`。唯一的区别在于我们是将 `Cat` 视为函数的名称还是类的名称。
 
-
-
 接下来，我们在新实例上调用 `sayHello` 方法。由于 `kiki` 是使用 `Cat` 构造函数创建的，它有一个指向 `Cat.prototype` 的隐藏链接，JavaScript 使用该链接来定位 `sayHello` 的定义。由于 `sayHello` 是作为 `kiki` 对象的方法被调用的，`sayHello` 的 `this` 关键字被设置为 `kiki`。
 
 尽管我将实例与原型之间的链接称为“隐藏”的，但 Chrome 控制台允许你通过特殊的 `[[Prototype]]` 属性来检查它。让我们看看能发现 `kiki` 的什么信息。在控制台中输入 `kiki;` 并点击侧边的箭头进行检查：
@@ -2874,7 +3029,6 @@ class Dog {
   constructor(name) {
     this.name = name;
   }
-
   sayHello() {
     console.log(`Woof! My name is ${this.name}.`);
   }
@@ -2901,7 +3055,7 @@ kiki;
     [[Prototype]]: Object
 ```
 
-如你所示，在两种情况下，`sayHello` 方法都是通过 `[[Prototype]]` 链接找到的。只是一些细微的。例如，对于 `kiki`，构造函数指向一个函数，而对于 `felix`，它指向一个类。此外，`felix` 的 `sayHello` 方法有一个名称，而 `kiki` 没有（因为我们使用匿名函数定义了 `sayHello`）。
+如你所示，在两种情况下，`sayHello` 方法都是通过 `[[Prototype]]` 链接找到的。只是一些细微的。例如，对于 `kiki`，构造函指向一个函数，而对于 `felix`，它指向一个类。此外，`felix` 的 `sayHello` 方法有一个名称，而 `kiki` 没有（因为我们使用匿名函数定义了 `sayHello`）。
 
 注意，如果你想在代码中直接访问对象的 `[[Prototype]]` 属性，可以通过 `__proto__` 名称来访问它：
 
@@ -2934,11 +3088,11 @@ kiki.__proto__;
       --snip--
 ```
 
-值得注意的是，这个内部原型对象有一个 `constructor` 属性，其值为 `Object` 函数 ❶，显示它是 JavaScript 内置 `Object` 构造函数的原型属性。其余属性对应于所有对象继承的许多默认方法。例如，`hasOwnProperty` 是一个检查对象是否在自身上定义了属性（而不是在原型上）的方法，而 `toString` 是一个返回对象字符串表示的方法。
+值得注意的是，这个内部原型对象有一个 `constructor` 属性，其值为 `Object` 函数 ❶，显示它是 JavaScript 内置 `Object` 构造函数的原型属性。其余属性对应于所有对象继承的许多默认方法。例如，`hasOwnProperty` 是一个检查对象是否在自身上定了属性（而不是在原型上）的方法，而 `toString` 是一个返回对象字符串表示的方法。
 
 当你使用对象字面量创建对象时，你并不是用显式构造函数创建它的，因此它也是隐式地用 `Object` 构造函数创建的，并获得 `Object.prototype` 作为其原型。当我们第 3 章在控制台中检查对象并看到它们具有 `[[Prototype]]` 属性时，我们看到的就是这个。现在让我们再看一眼：
 
-```javascript
+```
 let person = {name: "Nick", age: 39};
 person;
 {name: 'Nick', age: 39}
@@ -2961,20 +3115,17 @@ person;
 当你从对象请求属性或方法时，JavaScript 首先在对象本身查找。如果在那里找不到，会在对象的原型上查找。如果 JavaScript 仍然找不到，它将继续检查原型的原型，以此此类推，直到遇到 `Object.prototype`。这个过程被称为*遍历原型链*。让我们查找一些会遍历 `kiki` 对象原型链的属性和方法：
 
 ```
-kiki.name; 
+kiki.name;
 'Kiki'
-kiki.sayHello(); 
+kiki.sayHello();
 Miaow! My name is Kiki.
 undefined
-kiki.hasOwnProperty("name"); 
+kiki.hasOwnProperty("name");
 true
-kiki.madeUpMethodName(); 
+kiki.madeUpMethodName();
 Uncaught TypeError: kiki.madeUpMethodName is not a function
     at <anonymous>:1:6
 ```
-
-
-
 
 首先，我们访问 `name` 属性，它是直接设置在 `kiki` 上的。其次，我们调用 `sayHello` 方法，该方法位于 `kiki` 对象的原型上。为了调用此方法，JavaScript 首先检查 `kiki`，在未找到后，再检查它的原型。第三，我们调用了 `hasOwnProperty`，这是来自 `Object.prototype` 的方法，它是 `kiki` 对象的原型的原型。（该方法返回 true，因为 `name` 属性是直接设置在 `kiki` 上的。）最后，我们调用了 `madeUpMethodName`，这是一个不存在的方法。在遍历了整个原型链后（从 `kiki` 到 `Cat.prototype` 再到 `Object.prototype`），JavaScript 确定无法找到该方法并抛出错误。
 
@@ -2984,7 +3135,7 @@ kiki.madeUpMethodName();
 
 <samp class="SANS_Futura_Std_Book_Oblique_I_11">图 6-1：kiki 的原型链</samp>
 
-图中的每个框代表一个对象，以对象的名称作为标题。每个框的左侧列显示对象的属性名称，右侧列显示这些属性的值。例如，`kiki` 对象的 `name` 属性值为 "Kiki"，而 `Cat.prototype` 对象的 `sayHello` 属性是一个函数，用 `f()` 表示（记住，方法只是作为对象属性的函数）。
+图中的每个框代表一个对象，以对象的名称作为标题。每个框的左侧列显示对象的属性名称，右侧列显示这些属的值。例如，`kiki` 对象的 `name` 属性值为 "Kiki"，而 `Cat.prototype` 对象的 `sayHello` 属性是一个函数，用 `f()` 表示（记住，方法只是作为对象属性的函数）。
 
 某些属性值指向或引用其他对象。例如，所有构造函数都有一个 `prototype` 字段，指向将用作该构造函数创建的实例的原型的对象。因此，`Cat` 构造函数的 `prototype` 字段指向 `Cat.prototype`。同样，对象通过它们的 `[[Prototype]]` 属性链接到原型。例如，`kiki` 的 `[[Prototype]]` 属性链接到 `Cat.prototype`，因为 `kiki` 是用 `Cat` 构造函数创建的。所有的原型对象都有一个 `constructor` 字段，链接回它们所属的构造函数。如你所见，`Cat.prototype` 的 `constructor` 字段连接回 `Cat`，而 `Object.prototype` 的 `constructor` 字段连接到 `Object`。像 `kiki` 这样的实例并没有直接在其上定义 `constructor` 字段。相反，通过遍历原型链在实例的原型上查找 `constructor`。
 
@@ -3023,16 +3174,13 @@ kiki.sayHello();
 
 ![](img/opener.png)
 
-为了开发你自己的交互式 Web 应用程序，你需要学习一些 HTML 和 CSS，这些是用于创建网页和改变其外观的语言。对这些语言的全面介绍出了本书的范围，但本章将教你足够入门的知识。我们还将讨论文档对象模型 (DOM) 及其应用程序接口 (API)，它们为我们提供了使用 JavaScript 修改网页的方法。
+为了开发你自己的交互式 Web 应用程序，你需要学习一些 HTML 和 CSS，这些是用于创建网页和改变其外观的语言。对这些语言的全面介绍出了本书的范囿，但本章将教你足够入门的知识。我们还将讨论文档对象模型 (DOM) 及其应用程序接口 (API)，它们为我们提供了使用 JavaScript 修改网页的方法。
 
 ### HTML
 
 HTML 代表 *HyperText Markup Language*（超文本标记语言）。*Hypertext*（超文本）是链接到其他文本或文档的文本，而*markup*（标记）是一种对文档文本进行注释的系统。因此，HTML 是一种用于注释相互链接的文档文本的语言。在第 1 章中，我简要将其介绍为描述网页的语言。从这个角度来看，网页是相互链接的文档，而注释是告诉浏览器如何显示页的指令。
 
 HTML 注释以标签的形式存在。简单来说，HTML 标签是封装在角括号中的名称。例如，定义文档主体的标签（它识别网页的所有可见内容）看起来如下所示：`<body>`。大多数标签都是成对出现的，包含一个开始标签和一个结束标签：例如 `<body>` 和 `</body>`。结束标签看起来和开始标签一样，但在起始角括号后有一个斜杠。
-
-
-
 
 每一对标签都定义了一个 `element`（元素）。每个 HTML 元素代表网页的某个方面，例如标题、图像或段落。一个 HTML 文档包含一组嵌套的元素，用于描述文档的结构。在这种语境下，`nesting`（嵌套）意味着元素包含在其他元素之中，而这些元素又可能包含在其他元素之中，就像俄罗斯娃娃一样。
 
@@ -3065,11 +3213,9 @@ HTML 注释以标签的形式存在。简单来说，HTML 标签是封装在角�
 
 第一行，即 `doctype` ❶，说明这是一个 HTML 文档。为了让浏览器能够正确显示这些文档，这一行是必不可少的（尽管我们在第 1 章中编写最简单的 HTML 骨架时跳过了它）。之后是起始 `<html>` 标签 ❷。文件中的其他所有内容都包含在该标签和结束 `</html>` 标签之间。每个 HTML 文档都应该有一组 `<html>` 和 `</html>` 标签，定义一个总的 html 元素。所有其他元素都嵌套在 `html` 元素内部。
 
-在我们的 `html` 元素内部有一个 `head` 元素 ❸ 和 `body` 元素 ❹。注意，我们的文档遵循通用约定，使用缩进来表示元素在元素元素嵌套。由于 `head` 和 `body` 嵌套在 `html` 元素中，它们的标签被缩进了。VS Code 和许多其他文本编辑器会自动应用这种缩进；就像在 JavaScript 中一样，这不是强制要求的，但它有助于可读性。
+在我们的 `html` 元素内部有一个 `head` 元素 ❸ 和 `body` 元素 ❹。注意，我们的文档遵循通用约定，使用缩进来表示元素在元素元素嵌套。由于 `head` 和 `body` 嵌套在 `html` 元素中，它们的标标签被缩进了。VS Code 和许多其他文本编辑器会自动应用这种缩进；就像在 JavaScript 中一样，这不是强制要求的，但它有助于可读性。
 
 `head` 元素包含 `metadata`（元数据），或关于页的信息。在本例中，它包含一个元素 `title`。由于它嵌套在 `head` 内部，按照惯例，它获得了额外一层的缩进。`title` 元素的文本内容 Hello, World! 是网页的名称。该名称不会
-
-
 
 DOM 并不真正关心起始标签和结束标签，这些仅仅是 HTML 以文本格式描述文档结构的方式。从浏览器的角度来看，重要的细节是元素以及它们的父、子、兄弟关系。图 7-3 展示了这种更抽象的文档结构视视图。你可以一眼看出 `h1` 和 `p` 元素嵌套在 `body` 元素中，而 `body` 元素又嵌套在 `html` 元素中。
 
@@ -3127,7 +3273,7 @@ let heading = document.getElementById("main-heading");
 
 现在让我们询问控制台 `heading` 的值：
 
-```javascript
+```
 heading;
   <h1 id="main-heading">Hello!</h1>
 ```
@@ -3155,22 +3301,18 @@ heading.innerText = "Hi there…";
 
 如果你要在 HTML 文档中包含 JavaScript，必须使用 `script` 元素。使用 script 元素有两种技术：要么在起始和结束标签之间包含 JavaScript 代码，要么将代码保存在单独的 JavaScript 文件并将文件名作为 script 元素的属性引入。将 JavaScript 直接包含在 HTML 文件中的优点是它可以将所有内容放在一起。相反，将 JavaScript 放在单独文件中意味着你可以在多个页面使用同一个 JavaScript 文件。当项目包含大量 HTML 和 JavaScript 时，维护单独的文件可能更易管理。
 
-你已经见过一个带有内容的 script 元素：我在第 1 章 中介绍过它作为在 HTML 文件中编写 JavaScript 的方法。现在来看第二种技术。我们将创建一个包含 script 元素的 HTML 页面，并让该元素指向一个 JavaScript 文件。在 JavaScript 文件中，我们将编写代码向控制台打印消息，以证明脚本已包含在网页中。
+你已经见过一个带有内容的 script 元素：我在第 1 章 中介绍过它作为在 HTML 文件中编写 JavaScript 的方法。现在来看第二种技术。我们将创建一个包含 script 元素的 HTML 页面，并让该元指向一个 JavaScript 文件。在 JavaScript 文件中，我们将编写代码向控制台打印消息，以证明脚本已包含在网页中。
 
 由于我们的 HTML 和 JavaScript 将位于不同的文件中，如果将它们放在一个新的目录（Windows 中称为文件夹）中将更容易跟踪这两个文件。创建一个名为 *chapter7* 的新目录，在该目录下创建一个名为 *index.html* 的新 HTML 文件。这是目录中主 HTML 文件的习惯命名。
 
 将列表 7-4 所示的代码输入到 *index.html*。
-
-
-
-
 
 ```html
 <!DOCTYPE html>
 <html
   <head>
     <title>Hello, JavaScript!</title>
- ❶ <script src="script.js"></script>
+❶ <script src="script.js"></script>
   </head>
   <body>
     <h1 id="main-heading">Hello, JavaScript!</h1>
@@ -3218,7 +3360,7 @@ console.log("Hello, HTML!");
 
 <samp class="SANS_Futura_Std_Book_Oblique_I_11">列表 7-6：使用 link 元素添加 CSS 文件</samp>
 
-我们在 `link` 元素上设置了两个属性：`href`（`hypertext reference` 的缩写）和 `rel`（`relationship` 的缩写）。`href` 属性的工作方式与 `script` 元素上的 `src` 属性相同：你将链接的文件指定为属性的值。`rel` 属性指定你所链接的文件类型以及它与文档的关系。在这里我们提供了字符串 `"stylesheet"`，这意味着链接的文件应该被解释为页面的样式表，其中包含元素应该如何显示的信息。
+我们在 `link` 元素上设置了两个属性：`href`（`hypertext reference` 的缩写）和 `rel`（`relationship` 的缩写）。`href` 属性的工作方式与 `script` 元素上的 `src` 属性相同：你将链接的文件指定为属性的值。`rel` 属性指指定你所链接的文件类型以及它与文档的关系。在这里我们提供了字符串 `"stylesheet"`，这意味着链接的文件应该被解释为页面的样式表，其中包含元素应该如何显示的信息。
 
 注意，与我们目前看到的 HTML 元素不同，`link` 元素不需要闭合标签 `</link>`。这是因为虽然其他元素可能包含内容，但 `link` 元素永远不会包含。因此，不需要闭合标签来标记内容的结束。
 
@@ -3236,7 +3378,7 @@ h1 {
 
 >
 
-这段 CSS 代码说明 h1 元素应该是红色的。在浏览器中刷新 `index.html`，你应该看到样式。一个规则集具有两个部分：一个 `selector`（选择器，在本例中 h1）和一系列 `declarations`（声明）。选择器告诉浏览器要操作哪些元素，而声明告诉它对这些元素做什么。也就是说，选择器是一种模式，浏览器匹配这些元素。在这种情况下，h1 是匹配所有 h1 元素的选择器。每个声明由一个属性名、一个冒号和一个属性值组成。例如，color 是属性名，而 red 是该属性的值。
+这段 CSS 代码说明 h1 元素应该是红色的。在浏览器中刷新 `index.html`，你应该看到样式。一个规则集具有两个部分：一个 `selector`（选择器，在本例中 h1）和一系列 `declarations`（声明）。选择器告诉浏览器要操作哪些元器，而声明告诉它对这些元素做什么。也就是说，选择器是一种模式，浏览器匹配这些元素。在这种情况下，h1 是匹配所有 h1 元素的选择器。每个声明由一个属性名、一个冒号和一个属性值组成。例如，color 是属性名，而 red 是该属性的值。
 
 #### Selectors <samp class="SANS_Futura_Std_Bold_Condensed_Oblique_BI_11">选择器</samp>
 
@@ -3270,10 +3412,6 @@ h1 {
 
 刷新页面，你应该看到新的文本。标题中的单词 *JavaScript* 看起来没有任何不同，因为 `h1` 元素默认已经设置了加粗样式，但三个 *paragraph* 单词都会因为 `strong` 元素而加粗。
 
-
-
-
-
 我们添加类属性尚未产生任何影响，但一旦我们针对 `highlight` 类添加一些 CSS，情况就会发生变化。现在就来这样做。将列表 7-9 所示的新代码添加到 `style.css` 中，指定一些新的 CSS 规则集，使用不同类型的选择器来定位新的 HTML。
 
 ```
@@ -3281,26 +3419,33 @@ h1 {
   color: red;
   font-style: italic;
 }
-
 #main-heading {
   font-size: 48px;
 }
-
 strong {
   color: blue;
 }
 
+
+
 p strong {
+
   font-size: 24px;
+
 }
 
 .highlight {
+
   background-color: yellow;
+
 }
 
 .highlight strong {
+
   background-color: orange;
+
 }
+
 ```
 
 <samp class="SANS_Futura_Std_Book_Oblique_I_11">列表 7-9：向</samp> <samp class="SANS_Futura_Std_Book_11">`style.css`</samp> 添加更多规则集
@@ -3321,10 +3466,6 @@ p strong {
 
 我们不会因为这个页面获得任何设计奖，但它帮助我们看到各种 CSS 选择器是如何工作的。例如，注意所有的 `strong` 元素（通过 `strong` 选择）都被染成了蓝色，但只有 `p` 元素内部的 `strong` 元素（通过 `p strong` 选择）尺寸被设置为 24 像素。如果这种尺寸应用到*所有* `strong` 元素，顶部标题中的 `JavaScript` 单词将会变小。同时，被分配给 highlight 类的第一和第三段具有橙色背景。
 
-
-
-
-
 事件是浏览器告诉 JavaScript DOM 中发生了某些情况的方式。这就像是每当鼠标移动过窗口或按下某个按键时，浏览器都在大喊：“嘿，鼠标移动了！按键被按下了！”这些大喊一直在发生，但只有当你显式告诉 JavaScript 代码去监听它们时，它才能对它们做出响应。你通过编写一个 JavaScript 事件处理器来实现这一点，该处理器会在特定类型的事件发生时执行某些操作。
 
 `event handler`（事件处理器）是一个由特定元素上的特定事件类型触发的函数。例如，你可以为某个特定的 `h1` 元素附加一个处理器，用于处理该元素的点击事件。让我们现在来试一下。我们将创建一个带有标题的简单网页，并使用事件处理器在点击标题时向控制台记录一条消息。
@@ -3333,16 +3474,27 @@ p strong {
 首先，你需要一个 HTML 文件。创建一个名为 `chapter8` 的新目录，并在该目录下创建一个名为 `index.html` 的新文件。输入 Listing 8-1 所示的内容。
 
 ```
+
 <!DOCTYPE html>
-<html
+
+<html>
+
   <head>
+
     <title>Event Handlers</title>
+
   </head>
+
   <body>
+
     <h1 id="main-heading">Hello <em>World!</em></h1>
+
     <script src="script.js"></script>
+
   </body>
+
 </html>
+
 ```
 <samp class="SANS_Futura_Std_Book_Oblique_I_11">Listing 8-1: 用于探索事件处理器的</samp> <samp class="SANS_Futura_Std_Book_11">index.html</samp> <samp class="SANS_Futura_Std_Book_Oblique_I_11">文件</samp>
 
@@ -3354,11 +3506,15 @@ p strong {
 现在，在 HTML 代码相同的目录下创建一个名为 `script.js` 的文件，并输入 Listing 8-2 所示的脚本。该脚本为用户点击 `h1` 元素的情况添加了一个事件处理器。
 
 ```
+
 let heading = document.querySelector("#main-heading");
 
 heading.addEventListener("click", () => {
+
   console.log("You clicked the heading!");
+
 });
+
 ```
 <samp class="SANS_Futura_Std_Book_Oblique_I_11">Listing 8-2: 在 script.js 中创建</samp> <samp class="SANS_Futura_Std_Book_11">事件处理器</samp>
 
@@ -3377,21 +3533,28 @@ heading.addEventListener("click", () => {
 #### Event Bubbling
 #### <samp class="SANS_Futura_Std_Bold_Condensed_Oblique_11">Event Bubbling</samp>
 
-当事件在元素上被触发时，它也会在所有祖先元素上触发（即元素的父元素、父元素的父元素等等）。例如，当你点击上一个例子中的 `h1` 元素时，你也点击了 `body` 元素。这直觉上是合理的；如果你点击盒子中的某些文本，你也点击了盒子。这种从子元素到祖先元素的事件传播被称为 *event bubbling*（事件冒泡）。
+当事件在元素上被触发时，它也会在所有祖先元素上触发（即元素的父元父元素、父元素的父元素等等）。例如，当你点击上一个例子中的 `h1` 元素时，你也点击了 `body` 元素。这直觉上是合理的；如果你点击盒子中的某些文本，你也点击了盒子。这种从子元素到祖先元素的事件传播被称为 *event bubbling*（事件冒泡）。
 
 让我们通过向网页中的 `em` 和 `body` 元素添加事件处理器来利用冒泡。与我们的 `h1` 事件处理器一样，这些新处理器会在它们的元素被点击时向控制台记录一条消息。由于 `em` 是 `h1` 的子元素，而 `h1` 是 `body` 的子元素，点击 `em` 应该触发所有三个处理器。
 
 将 Listing 8-3 中的代码添加到 `script.js` 的末尾。
 
 ```
+
 --snip--
+
 document.querySelector("em").addEventListener("click", () => {
+
   console.log("You clicked the em element!");
+
 });
 
 document.querySelector("body").addEventListener("click", () => {
+
   console.log("You clicked the body element!");
+
 });
+
 ```
 <samp class="SANS_Futura_Std_Book_Oblique_I_11">Listing 8-3: 向 script.js 添加更多</samp> <samp class="SANS_Futura_Std_Book_11">处理器</samp>
 
@@ -3400,12 +3563,14 @@ document.querySelector("body").addEventListener("click", () => {
 重新加载 `index.html` 并打开控制台。当你点击 *World!* 单词时，你应该看到以下输出：
 
 ```
+
 You clicked the em element!
+
 You clicked the heading!
+
 You clicked the body element!
+
 ```
-
-
 
 
 
@@ -3415,37 +3580,56 @@ You clicked the body element!
 
 事件冒泡较常用的用途之一是`事件委托`（event delegation），这是一种允许你使用单个处理函数来响应多个子元素或其他后代元素事件的技术。例如，假设你有一个单词列表，其中每个列表项都是独立的 HTML 元素，并且你想以相同的方式处理每个项的点击事件。通过在列表项的父元素上添加单个处理函数，你只需要几行代码就能捕获每个项的事件。
 
-为了说明事件委托，我们将编写一个简单的应用程序，它将根据你在列表中点击的单词来构建并显示一个句子。首先，我们将更新 HTML 文件，包含一个单词列表和一个空的 `p` 元素，我们将动态地用你选择的单词填充该元素。然后，我们将使用 JavaScript 编写必要的事件处理函数，获取点击的单词并将其添加到 `p` 元素中显示。最后，我们将添加一些 CSS 规则，使应用程序更容易交互。
+为了说明事件委托，我们将编写一个简单的应用程序，它将根据你在列列表中点击的单词来构建并显示一个句子。首先，我们将更新 HTML 文件，包含一个单词列表和一个空的 `p` 元素，我们将动态地用你选择的单词填充该元素。然后，我们将使用 JavaScript 编写必要的事件处理函数，获取点击的单词并将其添加到 `p` 元素中显示。最后，我们将添加一些 CSS 规则，使应用程序更容易交互。
 
 HTML 中有两种类型的列表：有序列表（编号列表）和无序列表（符号列表）。我们将使用用 `ul` 元素创建的无序列表。列表中的每个单独项目都封装在 `li` 元素中。因此，点击任何 `li` 元素产生的事件都将冒泡到父元素 `ul` 元素。
 
 如 Listing 8-4 所示更新 `index.html`。
 
 ```html
+
 <!DOCTYPE html>
+
 <html>
+
   <head>
+
     <title>Event Handlers</title>
+
   </head>
+
   <body>
+
     <h1 id="main-heading">Hello <em>World!</em></h1>
 
     <ul id="word-list">
+
       <li>The</li>
+
       <li>Dog</li>
+
       <li>Cat</li>
+
       <li>Is</li>
+
       <li>Was</li>
+
       <li>And</li>
+
       <li>Hungry</li>
+
       <li>Green</li>
+
     </ul>
 
     <p id="sentence"></p>
 
     <script src="script.js"></script>
+
   </body>
+
 </html>
+
 ```
 Listing 8-4: 在 `index.html` 中添加列表
 
@@ -3454,14 +3638,21 @@ Listing 8-4: 在 `index.html` 中添加列表
 接下来，我们将为 `ul` 元素编写一个事件处理函数，以处理对任何列表项的点击。该处理函数将获取被点击的单词并将其添加到 `p` 元素中，允许你逐单词地构建句子。删除 `script.js` 中的所有代码，并将其替换为 Listing 8-5。
 
 ```javascript
+
 let wordList = document.querySelector("#word-list");
+
 let sentence = document.querySelector("#sentence");
 
 wordList.addEventListener("click", event => {
+
   let word = event.target.textContent;
+
   sentence.textContent += word;
+
   sentence.textContent += " ";
+
 });
+
 ```
 
 Listing 8-5: 事件委托
@@ -3479,13 +3670,19 @@ Listing 8-5: 事件委托
 创建一个名为 `style.css` 的新 CSS 文件，并添加 Listing 8-6 所示的两个 CSS 声明。
 
 ```css
+
 li {
+
   cursor: pointer;
+
 }
 
 li:hover {
+
   text-decoration: underline;
+
 }
+
 ```
 Listing 8-6: 在 `style.css` 中添加样式
 
@@ -3494,14 +3691,23 @@ Listing 8-6: 在 `style.css` 中添加样式
 要在页面上包含此 CSS，在 `index.html` 文件的头部添加一个 `link` 元素，如 Listing 8-7 所示。
 
 ```html
+
 <!DOCTYPE html>
+
 <html>
+
   <head>
+
     <title>Event Handlers</title>
+
     <link rel="stylesheet" href="style.css">
+
   </head>
+
   <body>
+
 --snip--
+
 ```
 Listing 8-7: 在 `index.html` 中引入 `style.css`
 
@@ -3518,15 +3724,20 @@ Listing 8-7: 在 `index.html` 中引入 `style.css`
 
 ### 鼠标移动事件
 
-当鼠标移动时，DOM 会产生事件，事件名为 `mousemove`。这些 `mousemove` 事件会在鼠标移动过某个元素时在该元素上触发，我们可以像处理鼠标点击那样使用 `addEventListener` 方法来监听它们。让我们设置一个简单的 `mousemove` 处理器来查看它的运行效果。该处理器会在鼠标在网页上移动时，将鼠标的位置记录到控制台中。
+当鼠标移动时，DOM 会产生事件，事件名为 `mousemove`。这些 `mousemove` 事件会在鼠标移动过某个元素时在该元素上触发，我们可以像处理鼠标点击那样使用 `addEventListener` 方法来监听它们。让我们设置一个简单的 `mousemove` 处理器来查看它的运行效果。该处理器会在鼠率在网页上移动时，将鼠标的位置记录到控制台中。
 
 在你的 `chapter8` 项目文件夹中，将列表 8-8 代码代码添加到 `script.js` 的末尾。
 
 ```
+
 --snip--
+
 document.querySelector("html").addEventListener("mousemove", e => {
+
   console.log(`mousemove x: ${e.clientX}, y: ${e.clientY}`);
+
 });
+
 ```
 
 列表 8-8：mousemove 事件处理器
@@ -3536,13 +3747,21 @@ document.querySelector("html").addEventListener("mousemove", e => {
 在浏览器中刷新 `index.html`，并将鼠标指针移动到页面上。你应该能看到控制台中打印了类似下所示的消息：
 
 ```
+
 mousemove x: 434, y: 47
+
 mousemove x: 429, y: 47
+
 mousemove x: 425, y: 48
+
 mousemove x: 421, y: 51
+
 mousemove x: 416, y: 51
+
 mousemove x: 413, y: 54
+
 mousemove x: 408, y: 55
+
 ```
 
 在观察控制台时，有两重要的点需要注意。首先，坐标从浏览器窗口左上角的 0 开始，随着你向右和向下移动而增加。x 坐标随着向右移动而增加，y 坐标随着向下移动而增加。这符合计算机图形的标准规范。
@@ -3552,14 +3771,19 @@ mousemove x: 408, y: 55
 现在你已经见证了 `mousemove` 事件的运行效果，我们可以尝试用它们做一些稍微有趣一点的操作。在接下来的示例中，我们将让一个框在页面上移动并跟随你的光标。为了这一点，我们需要修改 HTML、CSS 和 JavaScript 文件。HTML 的更改非常简单。将列表 8-9 中的新行添加到 `index.html`。
 
 ```
+
 --snip--
+
     <p id="sentence"></p>
 
     <div id="box"></</div>
 
     <script src="script.js"></script>
+
   </body>
+
 </html
+
 ```
 
 列表 8-9：在 index.html 中添加 div
@@ -3567,15 +3791,25 @@ mousemove x: 408, y: 55
 在这里我们使用了一个名为 `div` 的新 HTML 元素，它是 *content division*（内容分区）的缩写。它将成为我们页面上移动的框。`div` 元素是 HTML 的通用容器元素。这意味着它可以包含其他元素，但默认没有外观，也没有特定的含义（不像表示列表的 `ul` 或表示标题的 `h1`）。接下来，我们将使用 CSS 为 `div` 元素赋予一种外观。将列表 8-10 的内容添加到 `style.css` 的末尾。
 
 ```css
+
 --snip--
+
 #box {
+
   position: fixed;
+
   left: 0px;
+
   top: 0px;
+
   width: 10px;
+
   height: 10px;
+
   background-color: hotpink;
+
 }
+
 ```
 
 列表 8-10：使用 CSS 为 div 设置样式
@@ -3585,21 +3819,29 @@ mousemove x: 408, y: 55
 现在刷新页面，你会看到左上角出现了一个小粉色正方形。现在是时候编写一个事件处理器，以便你用鼠标移动这个正方形了。按照列表 8-11 所示修改 `script.js`。
 
 ```javascript
+
 let wordList = document.querySelector("#word-list");
+
 let sentence = document.querySelector("#sentence");
 
 wordList.addEventListener("click", event => {
+
   let word = event.target.textContent;
+
   sentence.textContent += word;
+
   sentence.textContent += " ";
+
 });
 
 let box = document.querySelector("#box");
 
 document.querySelector("html").addEventListener("mousemove", e => {
+
   box.style.left = e.clientX + "px";
-  box.style.top = e.clientY + "px";
-});
+
+  box.style.top = e.clientY + "px");
+
 ```
 
 列表 8-11：使用 JavaScript 移动 div
@@ -3613,10 +3855,15 @@ document.querySelector("html").addEventListener("mousemove", e => {
 我们将为我们的网页添加一个处理器，在 `keydown` 事件发生时简单地记录到控制台中。将列表 8-12 中的代码添加到 `script.js` 的末尾。
 
 ```javascript
+
 --snip--
+
 document.querySelector("html").addEventListener("keydown", e => {
+
   console.log(e);
+
 });
+
 ```
 
 列表 8-12：记录 keydown 事件
@@ -3627,11 +3874,17 @@ document.querySelector("html").addEventListener("keydown", e => {
 尝试重新加载以查看处理器的运行效果。你需要打开控制台，然后点击文档内部使其获得 `focus`（焦点）。这意味着按键将将发送到你的网页，而不是控制台的文本输入框。只要设置正确，你应该会在打字时看到事件被记录在控制台中，如下所示：
 
 ```
+
 KeyboardEvent {isTrusted: true, key: "h", code: "KeyH", location: 0, ctrlKey: false, …}
+
 KeyboardEvent {isTrusted: true, key: "e", code: "KeyE", location: 0, ctrlKey: false, …}
+
 KeyboardEvent {isTrusted: true, key: "l", code: "KeyL", location: 0, ctrlKey: false, …}
+
 KeyboardEvent {isTrusted: true, key: "l", code: "KeyL", location: 0, ctrlKey: false, …}
+
 KeyboardEvent {isTrusted: true, key: "o", code: "KeyO", location: 0, ctrlKey: false, …}
+
 ```
 
 点击其中一个事件旁边的箭头，查看每个事件拥有的属性。如你所见，属性非常多，但我们主要关心的是按了哪个键，我们可以通过 `key` 属性找到它。接下来我们将使用此信息通过键盘移动粉色方框。
@@ -3639,34 +3892,53 @@ document.querySelector("html").addEventListener("keydown", e => {
 为了移动方框，我们将创建两个新变量来跟踪它的 x 和 y 位置。然后，当按下特定按键时，我们将使用事件处理器更新这些变量。按照代码列表 8-13 所示更新 `script.js`。（注意，在此列表中移除了 `mousemove` 处理器。）
 
 ```javascript
+
 let wordList = document.querySelector("#word-list");
+
 let sentence = document.querySelector("#sentence");
 
 wordList.addEventListener("click", event => {
+
   let word = event.target.textContent;
+
   sentence.textContent += word;
+
   sentence.textContent += " ";
+
 });
 
-let box = document.querySelector("#box");
+let box = document.queryctor("#box");
 
 let currentX = 0
+
 let currentY = 0
 
 document.querySelector("html").addEventListener("keydown", e => {
+
   if (e.key == "w") {
+
     currentY -= 5;
+
   } else if (e.key == "a") {
+
     currentX -= 5;
+
   } else if (e.key == "s") {
+
     currentY += 5;
+
   } else if (e.key == "d") {
+
     currentX += 5;
+
   }
 
   box.style.left = currentX + "px";
+
   box.style.top = currentY + "px";
+
 });
+
 ```
 
 代码列表 8-13: 使用 keydown 事件移动方框
@@ -3677,7 +3949,7 @@ document.querySelector("html").addEventListener("keydown", e => {
 
 ### 总结
 
-在本章中，你学习了 DOM 事件和事件处理的基础知识。DOM 事件是浏览器告诉你的代码页面上发生了某些的方式。你可以使用事件处理器来响应这些事件，事件处理器是当特定事件发生在特定 DOM 元素上时执行的 JavaScript 函数。事件处理器允许你创建对用户操作做出交互式响应的网页。特别是，你学习了如何编写由点击、鼠标移动和按键触发的事件处理器。
+在本章中，你学习了 DOM 事件和事件处理的基础知识。DOM 事件是浏览器告诉你的代码页面上发生了某些的方式。你可以使用事件处理器来响应这些事件，事件处理器是当特定事件发生在特�定 DOM 元素上时执行的 JavaScript 函数。事件处理器允许你创建对用户操作做出交互式响应的网页。特别是，你学习了如何编写由点击、鼠标移动和按键触发的事件处理器。
 
 ## 9. CANVAS 元素
 
@@ -3694,16 +3966,27 @@ HTML 中交互性较强的元素之一是 canvas 元素。该元素就像画家�
 让我们创建一个包含 canvas 元素的 HTML 文件。我们还将包含一个链接到 JavaScript 文件的 `script` 元素，其中我们将编写代码在画布上生成图像。我们将在整个章节中使用同一个 HTML 文件来绘制各种类型的图像。创建一个名为 `chapter9` 的新目录，在该目录下创建一个名为 `index.html` 的新文件。输入代码列表 9-1 所示的内容。
 
 ```html
+
 <!DOCTYPE html>
+
 <html>
+
   <head>
+
     <title>Canvas</title>
+
   </head>
+
   <body>
+
     <canvas id="canvas" width="300" height="300"></canvas>
+
     <script src="script.js"></script>
+
   </body>
+
 </html>
+
 ```
 
 代码列表 9-1: 包含 canvas 元素的 index.html 文件
@@ -3715,10 +3998,15 @@ HTML 中交互性较强的元素之一是 canvas 元素。该元素就像画家�
 现在我们有了一个 canvas 元素，准备好使用 JavaScript 和 Canvas API 在上面绘制了。我们将从绘制一个实心矩形开始。然后我们将如何创建其他静态图形。在 `chapter9` 目录中创建一个名为 `script.js` 的新文件，并输入代码列表 9-2 所示的代码。
 
 ```javascript
+
 let canvas = document.querySelector("#canvas");
+
 let ctx = canvas.getContext("2d");
+
 ctx.fillStyle = "blue";
+
 ctx.fillRect(10, 10, 200, 100);
+
 ```
 
 代码列表 9-2: 在 script.js 中绘制矩形
@@ -3727,7 +4015,7 @@ ctx.fillRect(10, 10, 200, 100);
 
 
 
-首先，我们使用 `document.querySelector` 方法获取 canvas 元素的引用。canvas 元素有一个名为 `getContext` 的方法，我们用它来获取画布的*绘制上下文*（drawing context）。绘制上下文是一个对象，它将整个 Canvas API 作为一组方法和属性提供出来（例如 `fillRect` 和 `fillStyle`，这两者在代码清单 9-2 中均有使用）。这些方法和属性正是我们将用来在画布上绘制图像。在这种情况下，我们向 `getContext` 方法传递字符串 `"2d"`，以请求二维绘制上下文。
+首先，我们使用 `document.querySelector` 方法获取 canvas 元素的引用。canvas 元素有一个名为 `getContext` 的方法，我们用它来获取画布的*绘制上下文*（drawing context）。绘制上context 是一个对象，它将整个 Canvas API 作为一组方法和属性提供出来（例如 `fillRect` 和 `fillStyle`，这两者在代码清单 9-2 中均有使用）。这些方法和属性正是我们将用来在画布上绘制图像。在这种情况下，我们向 `getContext` 方法传递字符串 `"2d"`，以请求二维绘制上下文。
 
 > <samp class="SANS_Dogma_OT_Bold_B_21">注意</samp>
 
@@ -3748,11 +4036,17 @@ ctx.fillRect(10, 10, 200, 100);
 除了使用 `fillRect` 创建填充颜色的矩形外，Canvas API 还提供了 `strokeRect` 方法来绘制矩形的轮廓（*描边*）。若要尝试一下，请按照代码清单 9-3 所示修改 `script.js`。
 
 ```javascript
+
 let canvas = document.querySelector("#canvas");
+
 let ctx = canvas.getContext("2d");
+
 ctx.lineWidth = 2;
+
 ctx.strokeStyle = "red";
+
 ctx.strokeRect(10, 10, 200, 100);
+
 ```
 
 <samp class="SANS_Futura_Std_Bold_Condensed_Oblique_BI_11">代码清单 9-3：使用</samp> <samp class="SANS_Futura_Std_Book_Oblique_I_11">strokeRect 绘制矩形轮廓</samp>
@@ -3768,18 +4062,25 @@ ctx.strokeRect(10, 10, 200, 100);
 当你在绘制上下文上设置样式（例如线宽或线色）时，这些设置仅适用于后续添加到画布的内容。也就是说，它们不会追溯地影响已经绘制的内容。从这个意义上说，画布确实非常像物理画布，当前样式由你正在使用的颜料颜色和画笔类型决定。为了演示这一点，我们将绘制几个不同颜色的矩形。将代码清单 9-4 中的代码添加到 `script.js` 的末尾，位于绘制红色矩形的代码之后。
 
 ```javascript
+
 --snip--
+
 ctx.strokeStyle = "orange";
+
 ctx.strokeRect(20, 20, 180, 80);
 
 ctx.strokeStyle = "yellow";
+
 ctx.strokeRect(30, 30, 160, 60);
 
 ctx.strokeStyle = "green";
+
 ctx.strokeRect(40, 40, 140, 40);
 
 ctx.strokeStyle = "blue";
+
 ctx.strokeRect(50, 50, 120, 20);
+
 ```
 
 <samp class="SANS_Futura_Std_Book_Oblique_I_11">代码清单 9-4：绘制更多矩形</samp>
@@ -3799,15 +4100,25 @@ ctx.strokeRect(50, 50, 120, 20);
 矩形之外的所有其他形状都是作为*路径*（paths）绘制在画布上的。路径是一系列由直线或曲线连接的点，然后对其进行轮廓描边或用颜色填充。作为例如，我们将在三个不同的点之间绘制一条路径，然后填充它以制作一个红色三角形。将 `script.js` 的内容替换为代码清单 9-5 中的代码。
 
 ```javascript
+
 let canvas = document.querySelector("#canvas");
+
 let ctx = canvas.getContext("2d");
+
 ctx.fillStyle = "red";
+
 ctx.beginPath();
+
 ctx.moveTo(100, 100);
+
 ctx.lineTo(150, 15);
+
 ctx.lineTo(200, 100);
+
 ctx.lineTo(100, 100);
+
 ctx.fill();
+
 ```
 
 <samp class="SANS_Futura_Std_Book_Oblique_I_11">代码清单 9-5：使用路径方法绘制三角形</samp>
@@ -3825,12 +4136,19 @@ ctx.fill();
 使用代码清单 9-6 中的代码更新 `script.js`。路径绘制代码的第一和第三步相同，但我们将第二步替换为绘制圆而非三角形的代码。
 
 ```javascript
+
 let canvas = document.querySelector("#canvas");
+
 let ctx = canvas.getContext("2d");
+
 ctx.fillStyle = "red";
+
 ctx.beginPath();
+
 ctx.arc(150, 100, 50, 0, Math.PI * 2, false);
+
 ctx.fill();
+
 ```
 
 <samp class="SANS_Futura_Std_Book_Oblique_I_11">代码清单 9-6：使用路径方法绘制圆形</samp>
@@ -3860,21 +4178,37 @@ ctx.fill();
 首先，让我们添加必要的 HTML 元素来创建一个滑块和一个按钮。对 `index.html` 进行如列表 9-7 所示的修改。
 
 ```html
+
 <!DOCTYPE html>
+
 <html>
+
   <head>
+
     <title>Canvas</title>
+
   </head>
+
   <body>
+
     <canvas id="canvas" width="300" height="300"></canvas>
+
     <div>
+
       <button id="clear">Clear</button>
+
       <input id="opacity" type="range" min="0" max="1" value="1" step="0.1">
+
       <label for="opacity">Opacity</label>
+
     </div>
+
     <script src="script.js"></script>
+
   </body>
+
 </html>
+
 ```
 
 列表 9-7: 在 `index.html` 中添加一些额外的元素
@@ -3883,7 +4217,7 @@ ctx.fill();
 
 `div` 内部的第一个元素是 `button` 元素。它创建了一个可点击的按钮。起始和结束标签之间的任何内容将作为文本显示在按钮上，因此我们的按钮将显示 `Clear` 文字。稍后我们将编写一个 JavaScript 函数，当用户点击按钮时清除画布上的任何圆。
 
-接下来 `div` 内部是 `input` 元素，用于从用户那里获取值。`input` 元素不允许任何子元素，因此不需要结束标签。在这种情况下，输入元素的类型是 `range`，这意味着它将显示为滑块。此滑块将用于设置在画布上绘制的新圆的透明度。它有几个属性定义了其功能：`min` 定义了滑块产生的最小值，`max` 定义了最大值，`value` 定义了滑块的初始值，`step` 是每次移动的大小（允许你控制允许的值的数量）。此滑块设置的范围从 0 到 1，步长为 0.1，并且起始值为 1，这对应于完全不透明。
+接下来 `div` 内部是 `input` 元素，用于从用户那里获取值。`input` 元素不允许任何子元素，因此不需要结束标签。在这种情况下，输入元素的类型是 `range`，这意味着它将显示为滑块。此滑块将用于设置在画布上绘制的新圆的透明度。它有几个属性定义了其功能：`min` 定义了滑块产生的最小值，`max` 定义了最大值，`value` 定义了滑块的初始值，`step` 是每次移动的大小（允许你控制允的值的数量）。此滑块设置的范围从 0 到 1，步长为 0.1，并且起始值为 1，这对应于完全不透明。
 
 `div` 中的最后一个元素是 `label` 元素，它为另一个元素应用标签。`label` 的 `for` 属性决定了标签应应用于哪个元素；其值必须与另一个元素的 `id` 匹配。在这种情况下，我们通过指定 `opacity` 为目标 id 将标签分配给滑块。这将导致滑块标记为 `Opacity`，这是 `label` 元素的文本内容。得益于 `label` 元素的 `for` 属性，浏览器理解标签和 `input` 元素是相关的，在标签上执行的某些操作将应用于输入。例如，如果你悬停在标签上，input 将显示为悬停状态；如果你点击标签，input 将获得键盘焦点（在这种情况下，按左或右箭头键将分别减少或增加滑块的值）。
 
@@ -3896,24 +4230,35 @@ ctx.fill();
 现在我们已经有了 HTML 元素，可以编写 JavaScript 使此应用程序具有交互性。首先，我们将添加一些通用声明以及当用户点击画布时绘制圆的代码。使用如列表 9-8 所示的代码更新 `script.js`。
 
 ```javascript
+
 let canvas = document.querySelector("#canvas");
+
 let ctx = canvas.getContext("2d");
 
 let width = canvas.width;
+
 let height = canvas.height;
 
 let opacity = 1;
 
 function drawCircle(x, y) {
+
   ctx.fillStyle = `rgba(0, 255, 0, ${opacity})`;
+
   ctx.beginPath();
+
   ctx.arc(x, y, 10, 0, Math.PI * 2, false);
+
   ctx.fill();
+
 }
 
 canvas.addEventListener("click", e => {
+
   drawCircle(e.offsetX, e.offsetY);
+
 });
+
 ```
 
 列表 9-8: 点击时绘制圆
@@ -3934,14 +4279,21 @@ canvas.addEventListener("click", e => {
 为了完成此绘图应用程序，我们需要连接清除（Clear）按钮和不透明度滑动块。将代码列表 9-9 中的代码添加到 `script.js` 的末尾。
 
 ```
+
 --snip--
+
 document.querySelector("#clear").addEventListener("click", () => {
+
   ctx.clearRect(0, 0, width, height);
+
 });
 
 document.querySelector("#opacity").addEventListener("change", e => {
+
   opacity = e.target.value;
+
 });
+
 ```
 
 代码列表 9-9：连接清除和不透明度控件
@@ -3969,36 +4321,55 @@ document.querySelector("#opacity").addEventListener("change", e => {
 我们可以继续使用相同的 HTML 和 JavaScript 文件。对 `index.html` 的唯一更改是移除我们在代码列表 9-7 中添加的 `div` 及其嵌套元素，因为它们不再需要了。移除这些元素后，根据代码列表 9-10 中的代码更新 `script.js`。
 
 ```
+
 let canvas = document.querySelector("#canvas");
+
 let ctx = canvas.getContext("2d");
 
 let width = canvas.width;
+
 let height = canvas.height;
 
 let x = 0;
+
 let y = 0;
 
 function drawCircle(x, y) {
+
   ctx.fillStyle = "rgb(0, 128, 255)";
+
   ctx.beginPath();
+
   ctx.arc(x, y, 10, 0, Math.PI * 2, false);
+
   ctx.fill();
+
 }
 
 function update() {
+
   x += 1;
+
   y += 1;
+
 }
 
 function draw() {
+
   ctx.clearRect(0, 0, width, height);
+
   drawCircle(x, y);
+
 }
 
 setInterval(() => {
+
   update();
+
   draw();
+
 }, 100);
+
 ```
 
 代码列表 9-10：创建一个动画
@@ -4044,19 +4415,30 @@ setInterval(() => {
 
 ### 设置
 
-我们将从设置项目的文件结构开始，并创建一个用于显示游戏的画布。像往常一样，该项目需要一个 HTML 文件和一个 JavaScript 文件。我们从 HTML 文件开始。创建一个名为 `tennjs` 的目录，并在该目录下创建一个名为 `index.html` 的文件。然后输入列表 10-1 所示的内容。
+我们将从设置项目的文件结构开始，并创建一个用于显示游戏的画布。像往常一样，该项目需要一个 HTML 文件和一个 JavaScript 文件。我们从 HTML 文件开始。创建一个名为 `tennjs` 的目录，并在该目率下创建一个名为 `index.html` 的文件。然后输入列表 10-1 所示的内容。
 
 ```
+
 <!DOCTYPE html>
+
 <html>
+
   <head>
+
     <title>Tennjs</title>
+
   </head>
+
   <body>
+
     <canvas id="canvas" width="300" height="300"></canvas>
+
     <script src="script.js"></script>
+
   </body>
+
 </html>
+
 ```
 
 列表 10-1：我们游戏的 index.html 文件
@@ -4066,13 +4448,19 @@ setInterval(() => {
 接下来，我们将编写一些 JavaScript 来设置画布。创建 `script.js` 文件，并输入列表 10-2 所示的代码。
 
 ```
+
 let canvas = document.querySelector("#canvas");
+
 let ctx = canvas.getContext("2d");
+
 let width = canvas.width;
+
 let height = canvas.height;
 
 ctx.fillStyle = "black";
+
 ctx.fillRect(0, 0, width, height);
+
 ```
 
 列表 10-2：在 script.js 中设置画布
@@ -4092,15 +4480,21 @@ ctx.fillRect(0, 0, width, height);
 接下来，我们将画球。将列表 10-3 中的代码添加到 `script.js` 的末尾。
 
 ```
+
 --snip--
+
 ctx.fillStyle = "black";
+
 ctx.fillRect(0, 0, width, height);
 
 const BALL_SIZE = 5;
+
 let ballPosition = {x: 20, y: 30};
 
 ctx.fillStyle = "white";
+
 ctx.fillRect(ballPosition.x, ballPosition.y, BALL_SIZE, BALL_SIZE);
+
 ```
 
 列表 10-3：绘制球
@@ -4129,23 +4523,33 @@ ctx.fillRect(ballPosition.x, ballPosition.y, BALL_SIZE, BALL_SIZE);
 使用 Listing 10-4 中所示的更改来更新 `script.js`。
 
 ```
+
 let canvas = document.querySelector("#canvas");
+
 let ctx = canvas.getContext("2d");
+
 let width = canvas.width;
+
 let height = canvas.height;
 
 const BALL_SIZE = 5;
+
 let ballPosition = {x: 20, y: 30};
 
 ❶ function draw() {
+
   ctx.fillStyle = "black";
+
   ctx.fillRect(0, 0, width, height);
 
   ctx.fillStyle = "white";
+
   ctx.fillRect(ballPosition.x, ballPosition.y, BALL_SIZE, BALL_SIZE);
+
 }
 
 ❷ draw();
+
 ```
 
 <samp class="SANS_Futura_Std_Book_Oblique_I_11">Listing 10-4：重构绘制代码</samp>
@@ -4169,35 +4573,51 @@ let ballPosition = {x: 20, y: 30};
 我们不会尝试一次性编写整个游戏循环，而是逐步构建它。使用 Listing 10-5 中的内容更新 `script.js`，这将是我们游戏中游戏循环的开始。这段代码移动球（即更新球的状态），重新绘制画布，暂停并重复。
 
 ```
+
 --snip--
+
 const BALL_SIZE = 5;
+
 let ballPosition = {x: 20, y: 30};
 
 ❶ let xSpeed = 4;
+
 let ySpeed = 2;
 
 function draw() {
+
   ctx.fillStyle = "black";
+
   ctx.fillRect(0, 0, width, height);
 
   ctx.fillStyle = "white";
+
   ctx.fillRect(ballPosition.x, ballPosition.y, BALL_SIZE, BALL_SIZE);
+
 }
 
 ❷ function update() {
+
   ballPosition.x += xSpeed;
+
   ballPosition.y += ySpeed;
+
 }
 
 ❸ function gameLoop() {
+
   draw();
+
   update();
 
     // 在后再次调用此函数
+
   setTimeout(gameLoop, 30);
+
 }
 
 ❹ gameLoop();
+
 ```
 
 <samp class="SANS_Futura_Std_Book_Oblique_I_11">Listing 10-5：游戏循环</samp>
@@ -4213,38 +4633,61 @@ function draw() {
 在上一节中，你让球动了起来，但它直接飞出了边缘。接下来你将学习如何让它从画布边缘反弹。使用 Listing 10-6 中的代码更新 `script.js`，这为我们的游戏添加了 `checkCollision` 函数。
 
 ```
+
 --snip--
+
 function update() {
+
   ballPosition.x += xSpeed;
+
   ballPosition.y += ySpeed;
+
 }
 
 function checkCollision() {
+
 ❶ let ball = {
+
     left: ballPosition.x,
+
     right: ballPosition.x + BALL_SIZE,
+
     top: ballPosition.y,
+
     bottom: ballPosition.y + BALL_SIZE
+
   }
 
 ❷ if (ball.left < 0 || ball.right > width) {
+
     xSpeed = -xSpeed;
+
   }
+
 ❸ if (ball.top < 0 || ball.bottom > height) {
+
     ySpeed = -ySpeed;
+
   }
+
 }
 
 function gameLoop() {
+
   draw();
+
   update();
+
 ❹ checkCollision();
 
   // 在后再次调用此函数
+
   setTimeout(gameLoop, 30);
+
 }
 
 gameLoop();
+
 ```
 
 <samp class="SANS_Futura_Std_Book_Oblique_I_11">Listing 10-6：墙碰撞检测</samp>
@@ -4262,18 +4705,25 @@ gameLoop();
 我们的下一个任务是绘制两个挡板。为了实现，，我们将引入一些常量来建立挡板的尺寸以及它们相对于画布侧边的水平位置，以及一些定义它们垂直位置的变量（挡板只能上下移动不能左右移动，因此只有它们的垂直位置需要是变量）。根据列表 10-7 中的更改更新 `script.js`。
 
 ```
+
 let xSpeed = 4;
+
 let ySpeed = 2;
 
 const PADDLE_WIDTH = 5;
+
 const PADDLE_HEIGHT = 20;
+
 const PADDLE_OFFSET = 10;
 
 let leftPaddleTop = 10;
+
 let rightPaddleTop = 30;
 
 function draw() {
+
 --snip--
+
 ```
 
 ### 列表 10-7：定义挡板
@@ -4285,34 +4735,692 @@ function draw() {
 接下来，我们更新 `draw` 函数，使用我们刚刚定义的信息来显示挡板。我还在代码中添加了注释，以澄清 `draw` 函数中每一步发生的情况。请按照列表 10-8 所示修改代码。
 
 ```
+
 function draw() {
+
   // 用黑色填充画布
+
   ctx.fillStyle = "black";
+
   ctx.fillRect(0, 0, width, height);
 
   // 其他所有内容将是白色
+
   ctx.fillStyle = "white";
 
   // 绘制球
+
   ctx.fillRect(ballPosition.x, ballPosition.y, BALL_SIZE, BALL_SIZE);
 
   // 绘制挡板
+
   ctx.fillRect(
+
     PADDLE_OFFSET,
+
     leftPaddleTop,
+
     PADDLE_WIDTH,
+
     PADDLE_HEIGHT
+
   );
+
   ctx.fillRect(
+
     width - PADDLE_WIDTH - PADDLE_OFFSET,
+
     rightPaddleTop,
+
     PADDLE_WIDTH,
+
     PADDLE_HEIGHT
+
   );
+
+}
+
+```
+
+<samp class="SANS_Futura_Std_Book_Oblique_I_11">Listing 10-8：绘制挡板</samp>
+
+现在刷新 `index.html`，你应该能看到类似图 10-3 的内容。
+
+![](img/Figure_10-3.png)
+
+图 10-3：挡板
+
+我们现在有了一个带有球和挡板的游戏。接下来，我们将添加玩家输入，使右侧挡板能够响应鼠标移动。使用 Listing 10-9 中的代码更新 `script.js`。
+
+```
+
+--snip--
+
+function update() {
+
+  ballPosition.x += xSpeed;
+
+  ballPosition.y += ySpeed;
+
+}
+
+function checkCollision() {
+
+  let ball = {
+
+    left: ballPosition.x,
+
+    right: ballPosition.x + BALL_SIZE,
+
+    top: ballPosition.y,
+
+    bottom: ballPosition.y + BALL_SIZE
+
+  }
+
+  if (ball.left < 0 || ball.right > width) {
+
+    xSpeed = -xSpeed;
+
+  }
+
+  if (ball.top < 0 || ball.bottom > height) {
+
+    ySpeed = -ySpeed;
+
+  }
+
+}
+
+function gameLoop() {
+
+  draw();
+
+  update();
+
+  checkCollision();
+
+  // 在后再次调用此函数
+
+  setTimeout(gameLoop, 30);
+
+}
+
+gameLoop();
+
+```
+
+<samp class="SANS_Futura_Std_Book_Oblique_I_11">Listing 10-9：玩家输入</samp>
+
+这里的唯一变化是在 `update` 函数中添加一行代码，用于更新右侧挡板的位置。我们将 `rightPaddleTop` 设置为鼠标的 y 坐标减去挡板高度的一半，以使挡板居中于鼠标位置。由于我们使用的是 `clientY`（相对于浏览器窗口的坐标），我们需要减去挡板高度的一半来补偿。我们还需要确保挡板不会超出画布边界，因此我们使用 `Math.max` 和 `Math.min` 来限制其位置。
+
+现在，当你刷新 `index.html` 并移动鼠标时，你应该看到右侧挡板随着鼠标移动而上下移动。左侧挡板仍然由电脑控制，保持静止。
+
+### <samp class="SANS_Futura_Std_Bold_B_11">电脑对手</samp>
+
+为了使游戏更具挑战性，我们将为左侧挡板添加一个简单的电脑对手。电脑不会尝试预测球将反弹到哪里，而只会尝试始终匹配球的垂直位置。为了给人类玩家一个机会，我们将为电脑移动挡板的速度设置上限。使用 Listing 10-10 中的代码更新 `script.js`。
+
+```
+
+--snip--
+
+function update() {
+
+  ballPosition.x += xSpeed;
+
+  ballPosition.y += ySpeed;
+
+  // 电脑对手：左侧挡板跟随球的垂直位置
+
+  leftPaddleTop = ballPosition.y - PADDLE_HEIGHT / 2;
+
+  // 限制电脑挡板的移动速度
+
+  if (leftPaddleTop < 0) {
+
+    leftPaddleTop = 0;
+
+  } else if (leftPaddleTop > height - PADDLE_HEIGHT) {
+
+    leftPaddleTop = height - PADDLE_HEIGHT;
+
+  }
+
+}
+
+function checkCollision() {
+
+  let ball = {
+
+    left: ballPosition.x,
+
+    right: ballPosition.x + BALL_SIZE,
+
+    top: ballPosition.y,
+
+    bottom: ballPosition.y + BALL_SIZE
+
+  }
+
+  if (ball.left < 0 || ball.right > width) {
+
+    xSpeed = -xSpeed;
+
+  }
+
+  if (ball.top < 0 || ball.bottom > height) {
+
+    ySpeed = -ySpeed;
+
+  }
+
+}
+
+function gameLoop() {
+
+  draw();
+
+  update();
+
+  checkCollision();
+
+  // 在后再次调用此函数
+
+  setTimeout(gameLoop, 30);
+
+}
+
+gameLoop();
+
+```
+
+<samp class="SANS_Futura_Std_Book_Oblique_I_11">Listing 10-10：电脑对手</samp>
+
+这里的唯一变化是在 `update` 函数中添加了两行代码。第一行计算左侧挡板的理想位置，使其与球的垂直位置匹配。第二行和第三行限制挡板的位置，确保它不会超出画布边界。
+
+现在，当你刷新 `index.html` 并玩游戏时，你应该看到左侧挡板会尝试跟随球的垂直位置，但受到速度限制。这使得游戏更具挑战性，因为人类玩家需要更精确地控制挡板才能击中球。
+
+### <samp class="SANS_Futura_Std_Bold_B_11">碰撞检测</samp>
+
+到目前为止，我们的碰撞检测仅检查球是否击中了画布边缘。然而，为了使游戏真正可玩，我们需要检查球是否击中了挡板。使用 Listing 10-11 中的代码更新 `script.js`，这将为我们的游戏添加挡板碰撞检测。
+
+```
+
+--snip--
+
+function update() {
+
+  ballPosition.x += xSpeed;
+
+  ballPosition.y += ySpeed;
+
+  // 电脑对手：左侧挡板跟随球的垂直位置
+
+  leftPaddleTop = ballPosition.y - PADDLE_HEIGHT / 2;
+
+  // 限制电脑挡板的移动速度
+
+  if (leftPaddleTop < 0) {
+
+    leftPaddleTop = 0;
+
+  } else if (leftPaddleTop > height - PADDLE_HEIGHT) {
+
+    leftPaddleTop = height - PADDLE_HEIGHT;
+
+  }
+
+}
+
+function checkCollision() {
+
+  let ball = {
+
+    left: ballPosition.x,
+
+    right: ballPosition.x + BALL_SIZE,
+
+    top: ballPosition.y,
+
+    bottom: ballPosition.y + BALL_SIZE
+
+  }
+
+  // 检查球是否击中左侧或右侧墙壁
+
+  if (ball.left < 0 || ball.right > width) {
+
+    xSpeed = -xSpeed;
+
+  }
+
+  // 检查球是否击中顶部或底部墙壁
+
+  if (ball.top < 0 || ball.bottom > height) {
+
+    ySpeed = -ySpeed;
+
+  }
+
+  // 检查球是否击中左侧挡板
+
+  if (
+
+    ball.left < PADDLE_OFFSET + PADDLE_WIDTH &&
+
+    ball.right > PADDLE_OFFSET &&
+
+    ball.top < leftPaddleTop + PADDLE_HEIGHT &&
+
+    ball.bottom > leftPaddleTop
+
+  ) {
+
+    xSpeed = -xSpeed;
+
+  }
+
+  // 检查球是否击中右侧挡板
+
+  if (
+
+    ball.right > width - PADDLE_OFFSET - PADDLE_WIDTH &&
+
+    ball.left < width - PADDLE_OFFSET &&
+
+    ball.top < rightPaddleTop + PADDLE_HEIGHT &&
+
+    ball.bottom > rightPaddleTop
+
+  ) {
+
+    xSpeed = -xSpeed;
+
+  }
+
+}
+
+function gameLoop() {
+
+  draw();
+
+  update();
+
+  checkCollision();
+
+  // 在后再次调用此函数
+
+  setTimeout(gameLoop, 30);
+
+}
+
+gameLoop();
+
+```
+
+<samp class="SANS_Futura_Std_Book_Oblique_I_11">Listing 10-11：挡板碰撞检测</samp>
+
+这里的唯一变化是在 `checkCollision` 函数中添加了两个新的条件块。第一个条件块检查球是否击中左侧挡板。它检查球的左边缘是否小于左侧挡板的右边缘（`PADDLE_OFFSET + PADDLE_WIDTH`），球的右边缘是否大于左侧挡板的左边缘（`PADDLE_OFFSET`），球的顶部是否小于左侧挡板的底部（`leftPaddleTop + PADDLE_HEIGHT`），以及球的底部是否大于左侧挡板的顶部（`leftPaddleTop`）。如果所有这些条件都满足，则球击中了左侧挡板，我们将 `xSpeed` 取反。
+
+第二个条件块检查球是否击中右侧挡板。它检查球的右边缘是否大于右侧挡板的左边缘（`width - PADDLE_OFFSET - PADDLE_WIDTH`），球的左边缘是否小于右侧挡板的右边缘（`width - PADDLE_OFFSET`），球的顶部是否小于右侧挡板的底部（`rightPaddleTop + PADDLE_HEIGHT`），以及球的底部是否大于右侧挡板的顶部（`rightPaddleTop`）。如果所有这些条件都满足，则球击中了右侧挡板，我们将 `xSpeed` 取反。
+
+现在，当你刷新 `index.html` 并玩游戏时，你应该看到球会从挡板上反弹。如果球击中了挡板靠近顶部或底部边缘，反弹角度会改变，使游戏更具趣味性。
+
+### <samp class="SANS_Futura_Std_Bold_B_11">计分</samp>
+
+为了使游戏更完整，我们将添加一个简单的计分系统。每当球击中左侧或右侧边缘时，对面的玩家就会得分。使用 Listing 10-12 中的代码更新 `script.js`。
+
+```
+
+--snip--
+
+let leftScore = 0;
+
+let rightScore = 0;
+
+function update() {
+
+  ballPosition.x += xSpeed;
+
+  ballPosition.y += ySpeed;
+
+  // 电脑对手：左侧挡板跟随球的垂直位置
+
+  leftPaddleTop = ballPosition.y - PADDLE_HEIGHT / 2;
+
+  // 限制电脑挡板的移动速度
+
+  if (leftPaddleTop < 0) {
+
+    leftPaddleTop = 0;
+
+  } else if (leftPaddleTop > height - PADDLE_HEIGHT) {
+
+    leftPaddleTop = height - PADDLE_HEIGHT;
+
+  }
+
+}
+
+function checkCollision() {
+
+  let ball = {
+
+    left: ballPosition.x,
+
+    right: ballPosition.x + BALL_SIZE,
+
+    top: ballPosition.y,
+
+    bottom: ballPosition.y + BALL_SIZE
+
+  }
+
+  // 检查球是否击中左侧或右侧墙壁
+
+  if (ball.left < 0 || ball.right > width) {
+
+    // 右侧玩家得分
+
+    rightScore++;
+
+    // 重置球的位置
+
+    ballPosition.x = width / 2;
+
+    ballPosition.y = height / 2;
+
+    // 重置球的速度
+
+    xSpeed = 4;
+
+    ySpeed = 2;
+
+  }
+
+  // 检查球是否击中顶部或底部墙壁
+
+  if (ball.top < 0 || ball.bottom > height) {
+
+    ySpeed = -ySpeed;
+
+  }
+
+  // 检查球是否击中左侧挡板
+
+  if (
+
+    ball.left < PADDLE_OFFSET + PADDLE_WIDTH &&
+
+    ball.right > PADDLE_OFFSET &&
+
+    ball.top < leftPaddleTop + PADDLE_HEIGHT &&
+
+    ball.bottom > leftPaddleTop
+
+  ) {
+
+    xSpeed = -xSpeed;
+
+  }
+
+  // 检查球是否击中右侧挡板
+
+  if (
+
+    ball.right > width - PADDLE_OFFSET - PADDLE_WIDTH &&
+
+    ball.left < width - PADDLE_OFFSET &&
+
+    ball.top < rightPaddleTop + PADDLE_HEIGHT &&
+
+    ball.bottom > rightPaddleTop
+
+  ) {
+
+    xSpeed = -xSpeed;
+
+  }
+
+}
+
+function gameLoop() {
+
+  draw();
+
+  update();
+
+  checkCollision();
+
+  // 在后再次调用此函数
+
+  setTimeout(gameLoop, 30);
+
+}
+
+gameLoop();
+
+```
+
+<samp class="SANS_Futura_Std_Book_Oblique_I_11">Listing 10-12：计分</samp>
+
+这里的唯一变化是在 `checkCollision` 函数中添加了两个新的变量 `leftScore` 和 `rightScore`，以及在球击中左侧或右侧边缘时增加对应玩家的得分。我们还重置了球的位置和速度，以便游戏可以继续进行。
+
+现在，当你刷新 `index.html` 并玩游戏时，你应该能看到得分在变化。每当球击中左侧边缘时，右侧玩家得分；每当球击中右侧边缘时，左侧玩家得分。
+
+### <samp class="SANS_Futura_Std_Bold_B_11">显示得分</samp>
+
+为了让玩家能够看到得分，我们将在画布上绘制得分。使用 Listing 10-13 中的代码更新 `script.js`。
+
+```
+
+--snip--
+
+let leftScore = 0;
+
+let rightScore = 0;
+
+function draw() {
+
+  // 用黑色填充画布
+
+  ctx.fillStyle = "black";
+
+  ctx.fillRect(0, 0, width, height);
+
+  // 其他所有内容将是白色
+
+  ctx.fillStyle = "white";
+
+  // 绘制球
+
+  ctx.fillRect(ballPosition.x, ballPosition.y, BALL_SIZE, BALL_SIZE);
+
+  // 绘制挡板
+
+  ctx.fillRect(
+
+    PADDLE_OFFSET,
+
+    leftPaddleTop,
+
+    PADDLE_WIDTH,
+
+    PADDLE_HEIGHT
+
+  );
+
+  ctx.fillRect(
+
+    width - PADDLE_WIDTH - PADDLE_OFFSET,
+
+    rightPaddleTop,
+
+    PADDLE_WIDTH,
+
+    PADDLE_HEIGHT
+
+  );
+
+  // 绘制得分
+
+  ctx.font = "20px Arial";
+
+  ctx.fillText(leftScore, width / 4, 30);
+
+  ctx.fillText(rightScore, width * 3 / 4, 30);
+
 }
 
 function update() {
+
+  ballPosition.x += xSpeed;
+
+  ballPosition.y += ySpeed;
+
+  // 电脑对手：左侧挡板跟随球的垂直位置
+
+  leftPaddleTop = ballPosition.y - PADDLE_HEIGHT / 2;
+
+  // 限制电脑挡板的移动速度
+
+  if (leftPaddleTop < 0) {
+
+    leftPaddleTop = 0;
+
+  } else if (leftPaddleTop > height - PADDLE_HEIGHT) {
+
+    leftPaddleTop = height - PADDLE_HEIGHT;
+
+  }
+
+}
+
+function checkCollision() {
+
+  let ball = {
+
+    left: ballPosition.x,
+
+    right: ballPosition.x + BALL_SIZE,
+
+    top: ballPosition.y,
+
+    bottom: ballPosition.y + BALL_SIZE
+
+  }
+
+  // 检查球是否击中左侧或右侧墙壁
+
+  if (ball.left < 0 || ball.right > width) {
+
+    // 右侧玩家得分
+
+    rightScore++;
+
+    // 重置球的位置
+
+    ballPosition.x = width / 2;
+
+    ballPosition.y = height / 2;
+
+    // 重置球的速度
+
+    xSpeed = 4;
+
+    ySpeed = 2;
+
+  }
+
+  // 检查球是否击中顶部或底部墙壁
+
+  if (ball.top < 0 || ball.bottom > height) {
+
+    ySpeed = -ySpeed;
+
+  }
+
+  // 检查球是否击中左侧挡板
+
+  if (
+
+    ball.left < PADDLE_OFFSET + PADDLE_WIDTH &&
+
+    ball.right > PADDLE_OFFSET &&
+
+    ball.top < leftPaddleTop + PADDLE_HEIGHT &&
+
+    ball.bottom > leftPaddleTop
+
+  ) {
+
+    xSpeed = -xSpeed;
+
+  }
+
+  // 检查球是否击中右侧挡板
+
+  if (
+
+    ball.right > width - PADDLE_OFFSET - PADDLE_WIDTH &&
+
+    ball.left < width - PADDLE_OFFSET &&
+
+    ball.top < rightPaddleTop + PADDLE_HEIGHT &&
+
+    ball.bottom > rightPaddleTop
+
+  ) {
+
+    xSpeed = -xSpeed;
+
+  }
+
+}
+
+function gameLoop() {
+
+  draw();
+
+  update();
+
+  checkCollision();
+
+  // 在后再次调用此函数
+
+  setTimeout(gameLoop, 30);
+
+}
+
+gameLoop();
+
+```
+
+<samp class="SANS_Futura_Std_Book_Oblique_I_11">Listing 10-13：显示得分</samp>
+
+这里的唯一变化是在 `draw` 函数中添加了两行代码，用于在画布上绘制得分。我们使用 `ctx.font` 设置字体和大小，然后使用 `ctx.fillText` 绘制得分。左侧得分绘制在画布宽度的四分之一处，右侧得分绘制在画布宽度的四分之三处，两者都位于 y 坐标 30 处。
+
+现在，当你刷新 `index.html` 并玩游戏时，你应该能看到得分在画布上实时显示。
+
+### <samp class="SANS_Futura_Std_Bold_B_11">总结</samp>
+
+在本章中，你学习了如何使用 JavaScript 创建一个简单的 `Pong` 游戏。你学习了游戏循环、玩家输入、碰撞检测和计分。你还学习了如何使用 Canvas API 在画布上绘制图形，以及如何使用事件处理器响应用户输入。通过这些技术，你可以创建更复杂的游戏和交互式应用程序。
+
+
+
+
+PADDLE_WIDTH,
+
+PADDLE_HEIGHT
+
+);
+
+}
+
+function update() {
+
 --snip--
+
 ```
 
 ### 列表 10-8：绘制挡板
@@ -4334,20 +5442,26 @@ function update() {
 为了让玩家控制右挡板，我们将在 `script.js` 中添加一个监听 `mousemove` 事件的事件处理器。列表 10-9 显示了如何实现。
 
 ```
+
 let leftPaddleTop = 10;
+
 let rightPaddleTop = 30;
 
 document.addEventListener("mousemove", e => {
+
   rightPaddleTop = e.y - canvas.offsetTop;
+
 });
 
 function draw() {
+
 --snip--
+
 ```
 
 ### 列表 10-9：添加事件处理器移动右挡板
 
-此代码遵循了你在第 8 章首次看到的事件处理模式。我们使用 `document.addEventListener` 来检查鼠标移动。当检测到移动时，事件处理器会根据 `mousemove` 事件的 y 坐标（`e.y`）更新 `rightPaddleTop` 的值。y 坐标相对于页面顶部，而不是画布顶部，因此我们从 y 坐标中减去 `canvas.offsetTop`（画布顶部到页面顶部的距离）。这样，分配的 `rightPaddleTop` 值将基于鼠标距离画布顶部的距离，挡板就能准确地跟随鼠标。
+此代码遵循了你在第 8 章首次看到的事件处理模式。我们使用 `document.addEventListener` 来检查鼠标移动。当检浨到移动时，事件处理器会根据 `mousemove` 事件的 y 坐标（`e.y`）更新 `rightPaddleTop` 的值。y 坐标相对于页面顶部，而不是画布顶部，因此我们从 y 坐标中减去 `canvas.offsetTop`（画布顶部到页面顶部的距离）。这样，分配的 `rightPaddleTop` 值将基于鼠标距离画布顶部的距离，挡板就能准确地跟随鼠标。
 
 刷新 `index.html`，你应该看到右挡板随着鼠标的上下移动而垂直移动。图 10-4 显示了它应该有的样子。
 
@@ -4355,33 +5469,52 @@ function draw() {
 
 
 
-
 ```javascript
+
 --snip--
+
 function checkCollision() {
+
   let ball = {
+
     left: ballPosition.x,
+
     right: ballPosition.x + BALL_SIZE,
+
     top: ballPosition.y,
+
     bottom: ballPosition.y + BALL_SIZE
+
   }
 
   let leftPaddle = {
+
     left: PADDLE_OFFSET,
+
     right: PADDLE_OFFSET + PADDLE_WIDTH,
+
     top: leftPaddleTop,
+
     bottom: leftPaddleTop + PADDLE_HEIGHT
+
   };
 
    let rightPaddle = {
+
     left: width - PADDLE_WIDTH - PADDLE_OFFSET,
+
     right: width - PADDLE_OFFSET,
+
     top: rightPaddleTop,
+
     bottom: rightPaddleTop + PADDLE_HEIGHT
+
   };
 
   if (ball.left < 0 || ball.right > width) {
+
 --snip--
+
 ```
 
 <samp class="SANS_Futura_Std_Book_Oblique_I_11">列表 10-10: 定义挡板的边缘</samp>
@@ -4391,24 +5524,39 @@ function checkCollision() {
 接下来我们需要一个函数，我们称之为 `checkPaddleCollision`，它接收 `ball` 对象其中一个挡板对象，如果球与该挡板交叉，则返回 `true`。函数定义如列表 10-11 所示。
 
 ```javascript
+
 --snip--
+
 function update() {
+
   ballPosition.x += xSpeed;
+
   ballPosition.y += ySpeed;
+
 }
 
 function checkPaddleCollision(ball, paddle) {
+
   // 检查挡板和球在垂直和水平方向上是否重叠
+
   return (
+
     ball.left   < paddle.right &&
+
     ball.right  > paddle.left &&
+
     ball.top    < paddle.bottom &&
+
     ball.bottom > paddle.top
+
   );
+
 }
 
 function checkCollision() {
+
 --snip--
+
 ```
 
 <samp class="SANS_Futura_Std_Book_Oblique_I_11">列表 10-11: checkPaddleCollision 函数</samp>
@@ -4439,32 +5587,53 @@ function checkCollision() {
 现在是在 `checkCollision` 函数内部实际调用 `checkPaddleCollision` 函数了，每个挡板调用一次，并处理函数返回 `true` 的情况。你可以在列表 10-12 中找到这些代码。
 
 ```javascript
+
 --snip--
+
   let rightPaddle = {
+
     left: width - PADDLE_WIDTH - PADDLE_OFFSET,
+
     right: width - PADDLE_OFFSET,
+
     top: rightPaddleTop,
+
     bottom: rightPaddleTop + PADDLE_HEIGHT
+
   };
 
   if (checkPaddleCollision(ball, leftPaddle)) {
+
     // 左挡板发生碰撞
+
   ❶ xSpeed = Math.abs(xSpeed);
+
   }
 
   if (checkPaddleCollision(ball, rightPaddle)) {
+
     // 右挡板发生碰撞
+
   ❷ xSpeed = -Math.abs(xSpeed);
+
   }
 
   if (ball.left < 0 || ball.right > width) {
+
     xSpeed = -xSpeed;
+
   }
+
   if (ball.top < 0 || ball.bottom > height) {
+
     ySpeed = -ySpeed;
+
   }
+
 }
+
 --snip--
+
 ```
 
 <samp class="SANS_Futura_Std_Book_Oblique_I_11">列表 10-12: 检查挡板碰撞</samp>
@@ -4476,19 +5645,31 @@ function checkCollision() {
 我在本章开头提到过，在 *Pong* 中，你可以通过击中挡板的顶部或底部来改变球的反弹角度。我们现在来实现该功能。首先，我们在 `checkCollision` 之前添加一个名为 `adjustAngle` 的新函数。它检查球是否位于挡板的顶部或底部，如果是，则更新 `ySpeed`。代码参见列表 10-13。
 
 ```javascript
+
 --snip--
+
 function adjustAngle(distanceFromTop, distanceFromBottom) {
+
 ❶ if (distanceFromTop < 0) {
+
     // 如果球击中挡板顶部，减小 ySpeed
+
     ySpeed -= 0.5;
+
 ❷ else if (distanceFromBottom < 0) {
+
     // 如果球击中挡板底部，增加 ySpeed
+
     ySpeed += 0.5;
+
   }
+
 }
 
 function checkCollision() {
+
 --snip--
+
 ```
 
 <samp class="SANS_Futura_Std_Book_Oblique_I_11">列表 10-13: 调整反弹角度</samp>
@@ -4504,30 +5685,51 @@ function checkCollision() {
 接下来，我们需要更新 `checkCollision` 函数，在两个挡板的碰撞检测逻辑中调用新的 `adjustAngle` 函数。Listing 10-14 显示了这些更改。
 
 ```
+
 --snip--
+
   let rightPaddle = {
+
     left: width - PADDLE_WIDTH - PADDLE_OFFSET,
+
     right: width - PADDLE_OFFSET,
+
     top: rightPaddleTop,
+
     bottom: rightPaddleTop + PADDLE_HEIGHT
+
   };
 
   if (checkPaddleCollision(ball, leftPaddle)) {
+
     // 左侧挡板发生碰撞
+
     let distanceFromTop = ball.top - leftPaddle.top;
+
     let distanceFromBottom = leftPaddle.bottom - ball.bottom;
+
     adjustAngle(distanceFromTop, distanceFromBottom);
+
     xSpeed = Math.abs(xSpeed);
+
   }
 
   if (checkPaddleCollision(ball, rightPaddle)) {
+
     // 右侧挡板发生碰撞
+
     let distanceFromTop = ball.top - rightPaddle.top;
+
     let distanceFromBottom = rightPaddle.bottom - ball.bottom;
+
     adjustAngle(distanceFromTop, distanceFromBottom);
+
     xSpeed = -Math.abs(xSpeed);
+
   }
+
 --snip--
+
 ```
 Listing 10-14: 调用 adjustAngle
 
@@ -4540,17 +5742,25 @@ Listing 10-14: 调用 adjustAngle
 当你可以赢或输时，游戏通常更有趣。在 *Pong* 中，如果你击中了对手挡板背后的墙壁，就会得分。当这种情况发生时，球将重置为它的起始位置和速度，以进行下一回合游戏。我们将在节中也会处理这部分，但首先，为了跟踪分数，我们需要创建一些新变量。使用 Listing 10-15 中的代码更新 `script.js`。
 
 ```
+
 --snip--
+
 let leftPaddleTop = 10;
+
 let rightPaddleTop = 30;
 
 let leftScore = 0;
+
 let rightScore = 0;
 
 document.addEventListener("mousemove", e => {
+
   rightPaddleTop = e.y - canvas.offsetTop;
+
 });
+
 --snip--
+
 ```
 Listing 10-15: 用于跟踪分数的变量
 
@@ -4559,24 +5769,39 @@ Listing 10-15: 用于跟踪分数的变量
 接下来，我们将显示分数的的代码添加到 `draw` 函数的末尾。如 Listing 10-16 所示更新函数。
 
 ```
+
 --snip--
+
   ctx.fillRect(
+
     width - PADDLE_WIDTH - PADDLE_OFFSET,
+
     rightPaddleTop,
+
     PADDLE_WIDTH,
+
     PADDLE_HEIGHT
+
   );
 
   // 绘制分数
+
   ctx.font = "30px monospace";
+
   ctx.textAlign = "left";
+
   ctx.fillText(leftScore.toString(), 50, 50);
+
   ctx.textAlign = "right";
+
   ctx.fillText(rightScore.toString(), width - 50, 50);
+
 }
 
 function update() {
+
 --snip--
+
 ```
 Listing 10-16: 绘制分数
 
@@ -4598,21 +5823,31 @@ Figure 10-6: 显示分数
 现在我们需要处理球击中侧壁的情况。而不是反弹，应该增加相应的分数，并将球重置为原始速度和位置。首先我们将再次进行重构并编写一个重置球的函数。这还需要对球的速度和位置变量的处理方式进行一些更改。Listing 10-17 显示了这些更改。
 
 ```
+
 --snip--
+
 const BALL_SIZE = 5;
+
 ❶ let ballPosition;
 
 let xSpeed;
+
 let ySpeed;
 
 function initBall() {
+
 ❷ ballPosition = {x: 20, y: 30};
+
   xSpeed = 4;
+
   ySpeed = 2;
+
 }
 
 const PADDLE_WIDTH = 5;
+
 --snip--
+
 ```
 Listing 10-17: initBall 函数
 
@@ -4627,29 +5862,49 @@ Listing 10-17: initBall 函数
 接下来，我们必须修改 `checkCollision` 函数中的碰撞检测代码，以便在碰到左墙或右墙时增加分数并重置小球。Listing 10-18 显示了如何实现。
 
 ```
+
 --snip--
+
   if (checkPaddleCollision(ball, rightPaddle)) {
+
     // 右球板碰撞发生
+
     let distanceFromTop = ball.top - rightPaddle.top;
+
     let distanceFromBottom = rightPaddle.bottom - ball.bottom;
+
     adjustAngle(distanceFromTop, distanceFromBottom);
+
     xSpeed = -Math.abs(xSpeed);
+
   }
 
 ❶ if (ball.left < 0) {
+
     rightScore++;
+
     initBall();
+
   }
+
 ❷ if (ball.right > width) {
+
     leftScore++;
+
     initBall();
+
   }
 
   if (ball.top < 0 || ball.bottom > height) {
+
     ySpeed = -ySpeed;
+
   }
+
 }
+
 --snip--
+
 ```
 
 <samp class="SANS_Futura_Std_Book_Oblique_I_11">Listing 10-18: 墙壁碰撞时得分</samp>
@@ -4659,18 +5914,27 @@ Listing 10-17: initBall 函数
 最后，由于我们把小球状态变量的初始化移动到了 `initBall` 函数中，我们需要在游戏循环开始之前调用该函数，以便首次设置小球。滚动到 `script.js` 的底部，并按照 Listing 10-19 所示更新代码，在调用 `gameLoop` 之前添加对 `initBall` 的调用。
 
 ```
+
 --snip--
+
 function gameLoop() {
+
   draw();
+
   update();
+
   checkCollision();
 
   // 在超时后再次调用此函数
+
   setTimeout(gameLoop, 30);
+
 }
 
 initBall();
+
 gameLoop();
+
 ```
 
 <samp class="SANS_Futura_Std_Book_Oblique_I_11">Listing 10-19: 首次调用 initBall</samp>
@@ -4688,15 +5952,21 @@ gameLoop();
 使用这种方法，如果计算机可以以任何速度移动，它将永远不会错过。由于这对我们人类来说没好玩，我们将为计算机设置一个速度限制。Listing 10-20 显示了如何实现。
 
 ```
+
 let canvas = document.querySelector("#canvas");
+
 let ctx = canvas.getContext("2d");
+
 let width = canvas.width;
+
 let height = canvas.height;
 
 const MAX_COMPUTER_SPEED = 2;
 
 const BALL_SIZE = 5;
+
 --snip--
+
 ```
 
 <samp class="SANS_Futura_Std_Book_Oblique_I_11">Listing 10-20: 限制计算机的速度</samp>
@@ -4706,30 +5976,51 @@ const BALL_SIZE = 5;
 接下来，我们将定义一个名为 `followBall` 的函数，应用一些非常基础的人工智能来移动计算机的球板。新函数在 Listing 10-21 所示。将将其添加到代码中 `draw` 函数和 `update` 函数之间。
 
 ```
+
 --snip--
+
 function followBall() {
+
 ❶ let ball = {
+
     top: ballPosition.y,
+
     bottom: ballPosition.y + BALL_SIZE
+
   };
+
 ❷ let leftPaddle = {
+
     top: leftPaddleTop,
+
     bottom: leftPaddleTop + PADDLE_HEIGHT
+
   };
 
 ❸ if (ball.top < leftPaddle.top) {
+
     leftPaddleTop -= MAX_COMPUTER_SPEED;
+
 ❹ else if (ball.bottom > leftPaddle.bottom) {
+
     leftPaddleTop += MAX_COMPUTER_SPEED;
+
   }
+
 }
 
 function update() {
+
   ballPosition.x += xSpeed;
+
   ballPosition.y += ySpeed;
+
 ❺ followBall();
+
 }
+
 --snip--
+
 ```
 
 <samp class="SANS_Futura_Std_Book_Oblique_I_11">Listing 10-21: 计算机控制球板</samp>
@@ -4747,28 +6038,47 @@ function update() {
 首先，我们需要声明一个变量来跟踪游戏是否结束。我们将使用该变量来决定是否重复 `gameLoop` 函数。Listing 10-22 显示了需要做的更改。
 
 ```
+
 --snip--
+
 let leftScore = 0;
+
 let rightScore = 0;
+
 ❶ let gameOver = false;
 
 document.addEventListener("mousemove", e => {
+
 --snip--
 
 function checkCollision() {
+
 --snip--
+
   if (ball.right > width) {
+
     leftScore++;
+
     initBall();
+
   }
+
 ❷ if (leftScore > 9 || rightScore > 9) {
+
     gameOver = true;
+
   }
+
   if (ball.top < 0 || ball.bottom > height) {
+
     ySpeed = -ySpeed;
+
   }
+
 }
+
 --snip--
+
 ```
 
 <samp class="SANS_Futura_Std_Book_Oblique_I_11">Listing 10-22: 添加 gameOver 变量</samp>
@@ -4781,31 +6091,53 @@ function checkCollision() {
 接下来，我们将添加一个用于写入“GAME OVER”文本的函数，并修改游戏循环，使其在 `gameOver` 为 `true` 时结束。列表 10-23 展示了具体实现方法。
 
 ```javascript
+
 --snip--
+
   if (ball.top < 0 || ball.bottom > height) {
+
     ySpeed = -ySpeed;
+
   }
+
 }
 
 function drawGameOver() {
+
   ctx.fillStyle = "white";
+
   ctx.font = "30px monospace";
+
   ctx.textAlign = "center";
+
   ctx.fillText("GAME OVER", width / 2, height / 2);
+
 }
 
 function gameLoop() {
+
   draw();
+
   update();
+
   checkCollision();
+
 if (gameOver) {
+
     draw();
+
     drawGameOver();
+
   } else {
+
     // Call this function again after a timeout
+
     setTimeout(gameLoop, 30);
+
   }
+
 }
+
 ```
 
 <samp class="SANS_Futura_Std_Book_Oblique_I_11">列表 10-23: 结束游戏</samp>
@@ -4835,12 +6167,17 @@ if (gameOver) {
 为了方便起见，列表 10-24](#chapter10.xhtml_Lis10-24) 显示了整个 `script.js` 文件。
 
 ```javascript
+
 let canvas = document.querySelector("#canvas");
+
 let ctx = canvas.getContext("2d");
+
 let width = canvas.width;
+
 let height = canvas.height;
 
 // ... (其余逻辑)
+
 ```
 
 
@@ -4853,7 +6190,7 @@ let height = canvas.height;
 
 在上一章中，我们构建了自己版本的`Pong`（乒乓球）游戏。之前的第 6 章中，你学习了 JavaScript 中的类和面向对象编程。你可能会奇怪，为什么我们在实现 `Pong` 时没有使用任何类。主要原因是我想让游戏代码尽可能简单，不包含任何不必要的概念，以便更容易看出游戏实际在做什么。然而，随着程序变得越来越大复杂，为它们提供更多的结构会有帮助，而实现的一种常用方法就是使用面向对象编程。
 
-为了帮助你更好地理解如何以面向对象的风格设计软件，在本章中，我们将介绍面向对象版本的 `Pong`。游戏的逻辑不会发生任何变化，但代码的结构和组织方式将不同。例如，处理球的代码将全部存储在一个名为 `Ball` 的类中。我们将使用这个类来跟踪球的位置，并确定球在撞击墙或拍板时应该如何反弹。同样，所有处理拍板的代码将存储在一个名为 `Paddle` 的类中。通过让 `Ball` 和 `Paddle` 类继承自一个共享的父类，我们可以轻松地共享适用于球和拍板的通用代码。
+为了帮助你更好地理解如何以面向对象的风格设计软件，在本章中，我们将介绍面向对象版本的 `Pong`。游戏的逻辑不会发生任何变化，但代码的结构和组织方式将不同。例如，处理球的代码将全部存储在一个名为 `Ball` 的类中。我们将使用这个类来跟踪球的位置，并确定球在撞击墙或拍板时应该如何反弹。同样，所有处理拍板的代码将存储在一个名为 `Paddle` 的类中。通过让 `Ball` 和 `Paddle` 类继承自一个共享的父类，我们可以轻松共享适用于球和拍板的通用代码。
 
 本章将探索面向对象的 `Pong` 程序的通用结构，但我们不会进入代码的每一个细节；根据上一章的内容，你应该对它的工作原理有了很好的了解。考虑到这一点，在本章中，我们不会增量地构建游戏，而是将逐节遍历完整代码。因此，在你输入所有代码之前，代码将无法正确运行或执行任何操作。但在进入代码本身之前，让我们先更广泛地观察如何设计面向对象的计算机程序。
 
@@ -4870,7 +6207,7 @@ let height = canvas.height;
 
 面向对象编程的终极关键方面是`多态`，这种想法是：如果一个方法预期接收特定类的对象，那么它也可以接收该类的子类的实例对象。例如，在本章中，你会看到一个拥有 `draw` 方法的 `Entity` 类以及它的两个子类：`Paddle` 和 `Ball`。根据多态性，任何使用 `draw` 方法的代码都应该接收任何类型的 `Entity` 作为参数，而无需担心我们传递的是一个 `Ball` 还是一个 `Paddle`。
 
-最后，面向对象设计与其说是一门科学，不如说有很多不同的实现方法。你应该将本章中的设计视为解决问题的一种可能方法，而不是处理事情的“正确方法”。考虑到这一点，让我们深入研究面向对象的 `Pong` 代码。
+最后，面向对象设计与其说是一门科学，不如说有很多不同的实实现方法。你应该将本章中的设计视为解决问题的一种可能方法，而不是处理事情的“正确方法”。考虑到这一点，让我们深入研究面向对象的 `Pong` 代码。
 
 ### 文件结构
 
@@ -4880,44 +6217,66 @@ let height = canvas.height;
 
 我们将声明的第一个类是 `GameView`。这个类负责玩家的游戏视图，或者说游戏如何显示。由于游戏使用画布进行渲染，`GameView` 类负责画布和绘图上下文环境。该类还负责在画布上绘制物体（例如球和拍板）以及显示“GAME OVER”文本。代码请参见列表 11-1。
 
-
-
-
-
 ```
+
 class GameView {
+
   ❶ constructor() {
+
     let canvas = document.querySelector("#canvas");
+
     this.ctx = canvas.getContext("2d");
+
     this.width = canvas.width;
+
     this.height = canvas.height;
+
     this.offsetTop = canvas.offsetTop;
+
   }
 
   ❷ draw(…entities) {
+
     // Fill the canvas with black
+
     this.ctx.fillStyle = "black";
+
     this.ctx.fillRect(0, 0, this.width, this.height);
 
   ❸ entities.forEach(entity => entity.draw(this.ctx));
+
     }
 
   ❹ drawScores(scores) {
+
     this.ctx.fillStyle = "white";
+
     this.ctx.font = "30px monospace";
+
     this.ctx.textAlign = "left";
+
     this.ctx.fillText(scores.leftScore.toString(), 50, 50);
+
     this.ctx.textAlign = "right";
+
     this.ctx.fillText(scores.rightScore.toString(), this.width - 50, 50);
+
   }
 
   ❺ drawGameOver() {
+
     this.ctx.fillStyle = "white";
+
     this.ctx.font = "30px monospace";
+
     this.ctx.textAlign = "center";
+
     this.ctx.fillText("GAME OVER", this.width / 2, this.height / 2);
+
   }
+
 }
+
 ```
 
 列表 11-1：GameView 类
@@ -4937,48 +6296,75 @@ class GameView {
 列表 11-2 包含了 `Entity` 类的代码。
 
 ```
+
 class Entity {
+
   ❶ constructor(x, y, width, height) {
+
     this.x = x;
+
     this.y = y;
+
     this.width = width;
+
     this.height = height;
+
   }
 
   ❷ boundingBox() {
+
     return {
+
       left: this.x,
+
       right: this.x + this.width,
+
       top: this.y,
+
       bottom: this.y + this.height
+
     };
+
   }
 
   ❸ draw(ctx) {
+
     ctx.fillStyle = "white";
+
     ctx.fillRect(this.x, this.y, this.width, this.height);
+
   }
+
 }
+
 ```
 
 列表 11-2：Entity 类
 
-`Entity` 的 `constructor` ❶ 接收 `x`、`y`、`width` 和 `height`，即实体左上角的坐标以及尺寸的 `width` 和 `height`。这些被保存为属性。`boundingBox` 方法 ❷ 返回一个包含实体 `left`、`right`、`top` 和 `bottom` 边界的对象。在上一章中，我们在 `checkCollision` 函数中手动创建了这些对象。`Entity` 超类为球和挡板提供了一种通用的计算方式。`draw` 方法 ❸ 接收绘图上下文并使用构造函数中定义的属性绘制一个白色矩形。`GameView` 上的 `draw` 方法将调用每个项（`Entity` 的子类）。
+`Entity` 的 `constructor` ❶ 接收 `x`、`y`、`width` 和 `height`，即实体左上角的坐标以及尺寸的 `width`和 `height`。这些被保存为属性。`boundingBox` 方法 ❷ 返回一个包含实体 `left`、`right`、`top` 和 `bottom` 边界的对象。在上一章中，我们在 `checkCollision` 函数中手动创建了这些对象。`Entity` 超类为球和挡板提供了一种通用的计算方式。`draw` 方法 ❸ 接收绘图上下文并使用构造函数中定义的属性绘制一个白色矩形。`GameView` 上的 `draw` 方法将调用每个项（`Entity` 的子类）。
 
 ### 挡板
 
 `Paddle` 类继承 `Entity` 类。它在列表 11-3 中定义。
 
 ```
+
 class Paddle extends Entity {
+
   ❶ static WIDTH = 5;
+
   static HEIGHT = 20;
+
   static OFFSET = 10;
 
   ❷ constructor(x, y) {
+
     super(x, y, Paddle.WIDTH, Paddle.HEIGHT);
+
   }
+
 }
+
 ```
 
 列表 11-3：Paddle 类
@@ -4995,41 +6381,60 @@ class Paddle extends Entity {
 
 接下来是 `Ball` 类。它与 `Paddle` 类相似，都自自 `Entity`，但 `Ball` 有自己的根据速度更新位置以及进行碰撞检测的逻辑。列表 11-4 显示了该类的部分代码。
 
-
-
-
-
 ```javascript
+
 class Ball extends Entity {
+
 ❶ static SIZE = 5;
 
 ❷ constructor() {
+
     super(0, 0, Ball.SIZE, Ball.SIZE);
+
   ❸ this.init();
+
   }
 
 ❹ init() {
+
     this.x = 20;
+
     this.y = 30;
+
     this.xSpeed = 4;
+
     this.ySpeed = 2;
+
   }
 
 ❺ update() {
+
     this.x += this.xSpeed;
+
     this.y += this.ySpeed;
+
     }
 
 ❻ adjustAngle(distanceFromTop, distanceFromBottom) {
+
     if (distanceFromTop < 0) {
+
       // 如果球击中挡板顶部附近，减少 ySpeed
+
       this.ySpeed -= 0.5;
+
     } else if (distanceFromBottom < 0) {
+
       // 如果球击中挡板底部附近，增加 ySpeed
+
       this.ySpeed += 0.5;
+
     }
+
   }
+
 }
+
 ```
 
 <samp class="SANS_Futura_Std_Book_Oblique_I_11">示例 11-4：Ball 类的开头</samp>
@@ -5041,47 +6446,81 @@ class Ball extends Entity {
 `Ball` 类的定义在 示例 11-5 中继续，包含了碰撞检测的方法。
 
 ```javascript
+
 class Ball extends Entity {
+
 --snip--
+
   checkPaddleCollision(paddle, xSpeedAfterBounce) {
+
   ❶ let ballBox = this.boundingBox();
+
     let paddleBox = paddle.boundingBox();
 
     // 检查球和挡板在垂直和水平方向上重叠
+
   ❷ let collisionOccurred = (
+
       ballBox.left   < paddleBox.right &&
+
       ballBox.right  > paddleBox.left &&
+
       ballBox.top    < paddleBox.bottom &&
+
       ballBox.bottom > paddleBox.top
+
     );
 
     if (collisionOccurred) {
+
       let distanceFromTop = ballBox.top - paddleBox.top;
+
       let distanceFromBottom = ballBox.bottom - paddleBox.bottom;
+
     ❸ this.adjustAngle(distanceFromTop, distanceFromBottom);
+
     ❹ this.xSpeed = xSpeedAfterBounce;
+
     }
+
   }
 
   checkWallCollision(width, height, scores) {
+
     let ballBox = this.boundingBox();
 
     // 击中左墙
+
   ❺ if (ballBox.left < 0) {
+
       scores.rightScore++;
+
       this.init();
+
     }
+
     // 击中右墙
+
   ❻ if (ballBox.right > width) {
+
       scores.leftScore++;
+
       this.init();
+
     }
+
     // 击中顶部或底部墙
+
     if (ballBox.top < 0 || ballBox.bottom > height) {
+
     ❼ this.ySpeed = -this.ySpeed;
+
     }
+
   }
+
 }
+
 ```
 
 <samp class="SANS_Futura_Std_Book_Oblique_I_11">示例 11-5：Ball 类的其余部分</samp>
@@ -5108,44 +6547,73 @@ class Ball extends Entity {
 `Game` 类继续在 Listing 11-8 中提供了其余方法。
 
 ```javascript
+
 class Game {
+
 --snip--
+
   checkCollision() {
+
     this.ball.checkPaddleCollision(this.leftPaddle,
+
                                  ❶ Math.abs(this.ball.xSpeed));
+
     this.ball.checkPaddleCollision(this.rightPaddle,
+
                                  ❷ -Math.abs(this.ball.xSpeed));
 
   ❸ this.ball.checkWallCollision(
+
       this.gameView.width,
+
       this.gameView.height,
+
       this.scores
+
     );
 
   ❹ if (this.scores.leftScore > 9 || this.scores.rightScore > 9) {
+
       this.gameOver = true;
+
     }
+
   }
 
 ❺ update() {
+
     this.ball.update();
+
     Computer.followBall(this.leftPaddle, this.ball);
+
   }
 
 ❻ loop() {
+
     this.draw();
+
     this.update();
+
     this.checkCollision();
 
   ❼ if (this.gameOver) {
+
       this.draw();
+
       this.gameView.drawGameOver();
+
     } else {
+
       // 在超时后再次调用此方法
+
     ❽ setTimeout(() => this.loop(), 30);
+
     }
+
   }
+
 }
+
 ```
 
 Listing 11-8: Game 类的剩余
@@ -5163,11 +6631,15 @@ Listing 11-8: Game 类的剩余
 最后要做的一件事是通过实例化 `Game` 类来启动游戏，如 Listing 11-9 所示。
 
 ```javascript
+
 let game = new Game();
+
 game.loop();
+
 ```
 
 Listing 11-9: 启动游戏
+
 
 
 
@@ -5183,17 +6655,29 @@ Listing 11-9: 启动游戏
 一如既往，我们从一个简单的 HTML 文件开始。该文件将赋予用户播放由 Web Audio API 生成的声音的能力。创建一个名为 `music` 的新目录，并将列表 12-1 中的内容输入名为 `index.html` 的新文件中。
 
 ```
+
 <!DOCTYPE html>
+
 <html>
+
   <head>
+
     <title>Music</title>
+
   </head>
+
   <body>
+
   ❶ <button id="play">Play</button>
+
   ❷ <p id="playing" style="display: none">Playing</p>
+
     <script src="script.js"></script>
+
   </body>
+
 </html>
+
 ```
 
 列表 12-1：用于探索 Web Audio API 的 `index.html` 文件
@@ -5205,13 +6689,21 @@ Listing 11-9: 启动游戏
 在与 HTML 文件相同的目录下创建 `script.js`，并添加列表 12-2 所示的内容。这段代码在用户点击按钮时会隐藏播放按钮并显示“Playing”文本。注意，我们现在还没有编写任何 Web Audio API 代码——这只是在设置按钮。
 
 ```
+
 ❶ let play = document.querySelector("#play");
+
 let playing = document.querySelector("#playing");
+
 ❷ play.addEventListener("click", () => {
+
   // Hide this button
+
   play.style = "display: none";
+
   playing.style = " ";
+
 });
+
 ```
 
 列表 12-2：在鼠标点击时切换元素的可见性
@@ -5220,29 +6712,40 @@ let playing = document.querySelector("#playing");
 
 ### 使用 Web Audio API 生成音色
 
-完成设置后，我们现在可以编写一些 Web Audio API 代码了。为了开始，我们将生成一个单音，即音频版的“Hello, world!”。生成音色的代码如列表 12-3 所示。正如我之前提到的，除非由用户事件（如鼠标点击）触发，否则音频将不会播放，因此所有的音频代码都位于点击处理程序内部。
+完成设置后，我们现在可以编写一些 Web Audio API 代码了。为了开始，我们将生成一个单音，即音频版的“Hello, world!”。生成音色的代码如列表 12-3 所示。正如我之前提到的，除非由用户事件（如鼠标点击）触发，否则音音频将不会播放，因此所有的音频代码都位于点击处理程序内部。
 
 ```
+
 --snip--
+
 play.addEventListener("click", () => {
+
   // Hide this button
+
   play.style = "display: none";
+
   playing.style = " ";
 
 ❶ let audioCtx = new AudioContext();
 
 ❷ let oscNode = audioCtx.createOscillator();
+
   oscNode.frequency.value = 440;
 
 ❸ let gainNode = audioCtx.createGain();
+
   gainNode.gain.value = 0.5;
 
 ❹ oscNode.connect(gainNode);
+
   gainNode.connect(audioCtx.destination);
 
 ❺ oscNode.start(audioCtx.currentTime);
+
   oscNode.stop(audioCtx.currentTime + 2);
+
 });
+
 ```
 
 列表 12-3：使用 Web Audio API 播放单音
@@ -5277,12 +6780,19 @@ Tone.js 网站 `https://tonejs.github.io` 提供了安装和使用该库的详�
 让我们改用 Tone.js 库重新创建我们的 Web Audio API “Hello, world!”示例。除了为库添加新的 `<script>` 标签外，我们可以保持所有 HTML 均不变，如列表 12-4 所示。
 
 ```
+
 --snip--
+
     <p id="playing" style="display: none">Playing</p>
+
     <script src="https://unpkg.com/tone@14.7.77/build/Tone.js"></script>
+
     <script src="script.js"></script>
+
   </body
+
 </html
+
 ```
 
 <samp class="SANS_Futura_Std_Book_Oblique_I_11">列表 12-4：在</samp> <samp class="SANS_Futura_Std_Book_11">index.html</samp> <samp class="SANS_Futura_Std_Book_Oblique_I_11">文件中引入 Tone.js</samp>
@@ -5292,25 +6802,36 @@ Tone.js 网站 `https://tonejs.github.io` 提供了安装和使用该库的详�
 接下来，我们将编写 JavaScript。由于 Tone.js 底层使用 Web Audio API，我们仍然面临需要用户输入才能开始播放音频的限制。因此，我们仍然需要点击事件处理器，但 `script.js` 中的其他内容都将改变。列表 12-5。
 
 ```
+
 --snip--
+
 play.addEventListener("click", () => {
+
   // 隐藏此按钮
+
   play.style = "display: none";
+
   playing.style = " ";
 
   Tone.start();
 
   let synth = new Tone.Synth({
+
     oscillator: {type: "sine"},
+
     envelope: {attack: 0, decay: 0, sustain: 1, release: 0},
+
     volume: -6 
+
  }).toDestination();
 
   synth.triggerAttackRelease("A4", 2, 0);
-});
-```
 
-<samp class="SANS_Futura_Std_Book_Oblique_I_11">列表 12-5：使用 Tone.js 播放单音</samp>
+});
+
+
+
+列表 12-5：使用 Tone.js 播放单音
 
 我们需要做的的第一件事是调用 `Tone.start`。这触发 Tone.js 库在点击处理器内部启动，确保浏览器允许播放音频。接下来，我们创建一个新的 `Tone.Synth` 对象。`Synth` 是 `synthesizer`（合成器）的缩写，是一种电子乐器，通常带有键盘，可以生成（合成）各种声音。`Tone.Synth` 是这种乐器的简单代码版本。
 
@@ -5324,13 +6845,11 @@ play.addEventListener("click", () => {
 
 让我们仔细观察一下在列表 12-5 中传递给 `Tone.Synth` 构造函数的对象。第一个属性 `oscillator` 定义了生成信号的振荡器的选项。在这种情况下，我们只是使用 `type` 属性将振荡器类型设置为正弦波。
 
-
-
 下一个属性定义了 `amplitude envelope`（幅度包络）的选项，它决定了音符音量在其持续时间内的变化。大多数硬件和软件合成器都允许你配置幅度包络。最常见的包络类型是 `ADSR envelope`，`attack, decay, sustain, release`（起始、衰减、维持、释放）的缩写。`attack`（起始）是从音符触发（例如当你按下合成器上的键时）到音符达到最大音量之间的时间。`decay`（衰减）是从起始结束到音符维持部分之间的时间。`sustain`（维持）是一个增益值，定义了在按键期间音符在起始和衰减后保持的音量。通常这是包络起始部分实现的全音量的一个比例。`release`（释放）定义了在释放按键后，音符幅度恢复到零所需的时间。图 12-4 以图形形式展示了这些不同的值。
 
 ![](img/Figure_12-4.png)
 
-<samp class="SANS_Futura_Std_Book_Oblique_I_11">图 12-4：ADSR 包络的组成部分</samp>
+图 12-4：ADSR 包络的组成部分
 
 ADSR 包络是许多乐器工作方式的近似。例如，当你拉小提琴时，音符需要一些时间才能达到最大音量——也就是说它的很长的起始时间。相比之下，当你按下钢琴键时，起始时间非常短。同样，当你停止拉奏小提琴音符时，琴弦需要一点时间才能停止振动，而钢琴音符的释放则更为直接。合成的 ADSR 包络仍然非常简单——它们并不是现实乐器的完美模拟——但它们为原本无聊的音色增了许多表现力。
 
@@ -5342,7 +6861,7 @@ ADSR 包络是许多乐器工作方式的近似。例如，当你拉小提琴时
 
 ![](img/Figure_12-5.png)
 
-<samp class="SANS_Futura_Std_Book_Oblique_I_11">图 12-5：方波</samp>
+图 12-5：方波
 
 注意，方波在幅度值之间有突然的过渡，而不是正弦波的平滑曲线。切换到方波振荡器的代码更改如 代码列表 12-6 所示。
 
@@ -5351,18 +6870,18 @@ ADSR 包络是许多乐器工作方式的近似。例如，当你拉小提琴时
   let synth = new Tone.Synth({
     oscillator: {type: "square"},
     envelope: {attack: 0, decay: 0, sustain: 1, release: 0},
-    volume: -6 
+    volume: -6
   }).toDestination();
 --snip--
 ```
 
-<samp class="SANS_Futura_Std_Book_Oblique_I_11">代码列表 12-6：将振荡器类型更改为方波</samp>
+代码列表 12-6：将振荡器类型更改为方波
 
-当你重新在浏览器中加载代码时，你应该听到一种非常不同的音色。方波比正弦波更响、更亮。你可以尝试的振荡器类型其他值还有“triangle”（三角波）和“sawtooth”（锯齿波）。图 12-6](#chapter12.xhtml_fig12-6) 显示了这者的波形。
+当你重新在浏览器中加载代时，你应该听到一种非常不同的音色。方波比正弦波更响、更亮。你可以尝试的振荡器类型其他值还有“triangle”（三角波）和“sawtooth”（锯齿波）。图 12-6 显示了这者的波形。
 
 ![](img/Figure_12-6.png)
 
-<samp class="SANS_Futura_Std_Book_Oblique_I_11">图 12-6：锯齿波和三角波</samp>
+图 12-6：锯齿波和三角波
 
 想想这些其他振荡器类型与“sine”和“square”有什么不同。每个振荡器的独特声音被称为它的 `color`（颜色）或 `timbre`（音色）。
 
@@ -5373,12 +6892,12 @@ ADSR 包络是许多乐器工作方式的近似。例如，当你拉小提琴时
   let synth = new Tone.Synth({
     oscillator: { type: "square" },
     envelope: {attack: 0.8, decay: 0.3, sustain: 0.8, release: 1},
-    volume: -6 
+    volume: -6
   }).toDestination();
 --snip--
 ```
 
-<samp class="SANS_Futura_Std_Book_Oblique_I_11">代码列表 12-7：将振荡器类型更改为方波</samp>
+代码列表 12-7：将振荡器类型更改为方波
 
 起始、衰减和释放的值均以秒为单位，而维持是 0 到 1 之间的一个数字，代表要保持的幅度电平。在这里，我们将起始设置为 0.8 秒，衰减设置为 0.3 秒，维持设为 0.8，释放设置为 1 整秒。当你重新加载页面并播放声音时，你应该听到音符缓慢淡入到最大音量，然后略微减少。两秒后，音符被释放并在一秒内淡出。
 
@@ -5386,28 +6905,24 @@ ADSR 包络是许多乐器工作方式的近似。例如，当你拉小提琴时
 
 ### 顺序播放更多音符
 
-我们的合成器目前只播放单个音符，但我们可以轻松播放更多音符。Tone.js 中的音符频率可以用 Hz 或音符名称（如 A4）给出，就像我们在代码列表 12-5](#chapter12.xhtml_Lis12-5) 中做的那样。这些音符名称对应于键盘上的键，如图 12-7](#chapter12.xhtml_fig12-7)所示。
+我们的合成器目前只播放单个音符，但我们可以轻松播放更多音符。Tone.js 中的音符频率可以用 Hz 或音符名称（如 A4）给出，就像我们在代码列表 12-5 中做的那样。这些音符名称对应于键盘上的键，如图 12-7 所示。
 
 ![](img/Figure_12-7.png)
 
-<samp class="SANS_Futura_Std_Book_Oblique_I_11">图 12-7：键盘上的音符名称</samp>
+图 12-7：键盘上的音符名称
 
-C4 被称为 `middle C`（中音），位于大多数钢琴键盘的中间。键盘上从每个 C 到上方的 B 的每个八度都被赋予了一个数字。例如，图 12-7](#chapter12.xhtml_fig12-7) 最左侧的键是 C3，上面的一个八度是 C4。如之前提到的，440 Hz 对应 A4，即 C4 之上的 A。黑键被称为 `accidentals`（变音符号），它们比左边的键高一个半音，或者比右边的键低一个半音。例如，C4 右侧的黑键可以称为 C♯4 或 D♭4（♯ 是升号 `sharp`，意味着高一个半音，而 ♭ 是降号 `flat`，意味着低一个半音）。在 Tone.js 中编写音符名称时，我们使用井号 (#) 表示升，使用字母 b 表示降。
+C4 被称为 `middle C`（中音），位于大多数钢琴键盘的中间。键盘上从每个 C 到上方的 B 的每个八度都被赋予了一个数字。例如，图 12-7 最左侧的键是 C3，上面的一个八度是 C4。如之前提到的，440 Hz 对应 A4，即 C4 之上的 A。黑键被称为 `accidentals`（变音符号），它们比左边的键高一个半音，或者比右边的键低一个半音。例如，C4 右侧的黑键可以称为 C♯4 或 D♭4（♯ 是升号 `sharp`，意味着高一个半音，而 ♭ 是降号 `flat`，意味着低一个半音）。在 Tone.js 中编写音符名称时，我们使用井号 (#) 表示升，使用字母 b 表示降。
 
 > <samp class="SANS_Dogma_OT_Bold_B_21">注意</samp>
+> *B 和 C 之间以及 E 和 F 之间没有黑键，因为这些音符只差一个半音。*
 
-*B 和 C 之间以及 E 和 F 之间没有黑键，因为这些音符只差一个半音。*
-
-我们将播放从 A3 到 A4 的大调，它由音符 A3、B3、C♯4、D4、E4、F♯4、G♯4 和 A4 组成。更新你的 *script.js* 以包含代码列表 12-8](#chapter12.xhtml_Lis12-8) 中的代码以实现此音阶。
-
-
-
+我们将播放从 A3 到 A4 的大调，它由音符 A3、B3、C♯4、D4、E4、F♯4、G♯4 和 A4 组成。更新你的 *script.js* 以包含代码列表 12-8 中的代码以实现此音阶。
 
 ```
 --snip--
   let synth = new Tone.Synth({
     oscillator: {type: "square"},
-  ❶ envelope: { attack: 0.1, decay: 0.3, sustain: 0.8, release: 0.1 },
+    envelope: { attack: 0.1, decay: 0.3, sustain: 0.8, release: 0.1 },
     volume: -6
   }).toDestination();
 
@@ -5419,12 +6934,12 @@ C4 被称为 `middle C`（中音），位于大多数钢琴键盘的中间。键
   synth.triggerAttackRelease("F#4", 0.9, 5);
   synth.triggerAttackRelease("G#4", 0.9, 6);
   synth.triggerAttackRelease("A4", 0.9, 7);
-});
+--snip--
 ```
 
 列表 12-8: 播放音阶
 
-这与 列表 12-5 非常相似，不同在于我们一个接一个触发多个音符。注意我们更新了 `envelope`，使其具有更短的攻击（attack）和释放（release）时间❶。特别是释放时间需要更短，这样每个音符的结束才与下一个音符的开始重叠。
+这与 列表 12-5 非常相似，不同在于我们一个接一个触发多个音符。注意我们更新了 `envelope`，使其具有更短的攻击（attack）和释放（release）时间。特别是释放时间需要更短，这样每个音符的结束才与下一个音符的开始重叠。
 
 正如我之前提到的，`triggerAttackRelease` 的第二个参数是音符的持续时间（秒），第三个参数是播放该音符的时间（同样是秒）。第一个音符 `A3` 播放 `0.9` 秒，从时间零开始（即立即）。`0.1` 秒的释放发生在 `0.9` 秒持续时间之后，因此每个音符总共将播放 1 秒。下一个音符 `B3` 有相同的持续时间，但第三个参数 `1` 意味着它比第一个音符晚一秒开始。第三个音符设置为比第一个音符晚两秒，以此类推。在浏览器中运行它，你应该听到一个八度的 A 大调音阶。
 
@@ -5435,7 +6950,6 @@ C4 被称为 `middle C`（中音），位于大多数钢琴键盘的中间。键
 ```
 --snip--
   Tone.start();
-
   let synth = new Tone.PolySynth(
     Tone.Synth,
     {
@@ -5453,51 +6967,46 @@ C4 被称为 `middle C`（中音），位于大多数钢琴键盘的中间。键
   synth.triggerAttackRelease(["F#4", "A4"], 0.9, 5);
   synth.triggerAttackRelease(["G#4", "B4"], 0.9, 6);
   synth.triggerAttackRelease(["E4", "A4", "C#5"], 1.9, 7);
-});
+--snip--
 ```
 
 列表 12-9: 创建并播放多音合成器
 
-在这里我们调用 `new Tone.PolySynth` 而不是 `new Tone.Synth` 来创建一个多音合成器对象。`Tone.PolySynth` 构造函数接受两个参数：一个单音合成器（在此例中为 `Tone.Synth`）和一个包含通常传递给该单音合成器构造函数的选项的对象（在此例中，我们在列表 12-8 中传递给 `Tone.Synth` 构造函数的相同合成器选项）。在这里我们调用 `new Tone.PolySynth` 而不是 `new Tone.Synth` 来创建一个多音合成器对象。`Tone.PolySynth` 构造函数接受两个参数：一个单音合成器（在此例中为 `Tone.Synth`）和一个包含通常传递给该单音合成器构造函数的选项的对象（在此例中，我们在列表 12-8 中传递给 `Tone.Synth` 构造函数的相同合成器选项）。在这里我们调用 `new Tone.PolySynth` 而不是 `new Tone.Synth` 来创建一个多音合成器对象。`Tone.PolySynth` 构造函数接受两个参数：一个单音合成器（在此例中为 `Tone.Synth`）和一个包含通常传递给该单音合成器构造函数的选项的对象（在此例中，我们在列表 12-8 中传递给 `Tone.Synth` 构造函数的相同合成器选项）。在这里我们调用 `new Tone.PolySynth` 而不是 `new Tone.Synth` 来创建一个多音合成器对象。`Tone.PolySynth` 构造函数接受两个参数：一个单音合成器（在此例中为 `Tone.Synth`）和一个包含通常传递给该单音合成器构造函数的选项的对象（在此例中，我们在列表 12-8 中传递给 `Tone.Synth` 构造函数的相同合成器选项）。在这里我们调用 `new Tone.PolySynth` 而不是 `new Tone.Synth` 来创建一个多音合成器对象。`Tone.PolySynth` 构造函数接受两个参数：一个单音合成器（在此例中为 `Tone.Synth`）和一个包含通常传递给该单音合成器构造函数的选项的对象（在此例中，我们在列表 12-8 中传递给 `Tone.Synth` 构造函数的相同合成器选项）。在这里我们调用 `new Tone.PolySynth` 而不是 `new Tone.Synth` 来创建一个多音合成器对象。`Tone.PolySynth` 构造函数接受两个参数：一个单音合成器（在此例中为 `Tone.Synth`）和一个包含通常传递给该单音合成器构造函数的选项的对象（在此例中，我们在列表 12-8 中传递给 `Tone.Synth` 构造函数的相同合成器选项）。在这里我们调用 `new Tone.PolySynth` 而不是 `new Tone.Synth` 来创建一个多音合成器对象。`Tone.PolySynth` 构造函数接受两个参数：一个单音合成器（在此例中为 `Tone.Synth`）和一个包含通常传递给该单音合成器构造函数的选项的对象（在此例中，我们在列表 12-8 中传递给 `Tone.Synth` 构造函数的相同合成器选项）。在这里我们调用 `new Tone.PolySynth` 而不是 `new Tone.Synth` 来创建一个多音合成器对象。`Tone.PolySynth` 构造函数接受两个参数：一个单音合成器（在此例中为 `Tone.Synth`）和一个包含通常传递给该单音合成器构造函数的选项的对象（在此例中，我们在列表 12-8 中传递给 `Tone.Synth` 构造函数的相同合成器选项）。在这里我们调用 `new Tone.PolySynth` 而不是 `new Tone.Synth` 来创建一个多音合成器对象。`Tone.PolySynth` 构造函数接受两个参数：一个单音合成器（在此例中为 `Tone.Synth`）和一个包含通常传递给该单音合成器构造函数的选项的对象（在此例中，我们在列表 12-8 中传递给 `Tone.Synth` 构造函数的相同合成器选项）。在这里我们调用 `new Tone.PolySynth` 而不是 `new Tone.Synth` 来创建一个多音合成器对象。`Tone.PolySynth` 构造函数接受两个参数：一个单音合成器（在此例中为 `Tone.Synth`）和一个包含通常传递给该单音合成器构造函数的选项的对象（在此例中，我们在列表 12-8 中传递给 `Tone.Synth` 构造函数的相同合成器选项）。在这里我们调用 `new Tone.PolySynth` 而不是 `new Tone.Synth` 来创建一个多音合成器对象。`Tone.PolySynth` 构造函数接受两个参数：一个单音合成器（在此例中为 `Tone.Synth`）和一个包含通常传递给该单音合成器构造函数的选项的对象（在此例中，我们在列表 12-8 中传递给 `Tone.Synth` 构造函数的相同合成器选项）。在这里我们调用 `new Tone.PolySynth` 而不是 `new Tone.Synth` 来创建一个多音合成器对象。`Tone.PolySynth` 构造函数接受两个参数：一个单音合成器（在此例中为 `Tone.Synth`）和一个包含通常传递给该单音合成器构造函数的选项的对象（在此例中，我们在列表 12-8 中传递给 `Tone.Synth` 构造函数的相同合成器选项）。在这里我们调用 `new Tone.PolySynth` 而不是 `new Tone.Synth` 来创建一个多音合成器对象。`Tone.PolySynth` 构造函数接受两个参数：一个单音合成器（在此例中为 `Tone.Synth`）和一个包含通常传递给该单音合成器构造函数的选项的对象（在此例中，我们在列表 12-8 中传递给 `Tone.Synth` 构造函数的相同合成器选项）。在这里我们调用 `new Tone.PolySynth` 而不是 `new Tone.Synth` 来创建一个多音合成器对象。`Tone.PolySynth` 构造函数接受两个参数：一个单音合成器（在此例中为 `Tone.Synth`）和一个包含通常传递给该单音合成器构造函数的选项的对象（在此例中，我们在列表 12-8 中传递给 `Tone.Synth` 构造函数的相同合成器选项）。在这里我们调用 `new Tone.PolySynth` 而不是 `new Tone.Synth` 来创建一个多音合成器对象。`Tone.PolySynth` 构造函数接受两个参数：一个单音合成器（在此例中为 `Tone.Synth`）和一个包含通常传递给该单音合成器构造函数的选项的对象（在此例中，我们在列表 12-8 中传递给 `Tone.Synth` 构造函数的相同合成器选项）。在这里我们调用 `new Tone.PolySynth` 而不是 `new Tone.Synth` 来创建一个多音合成器对象。`Tone.PolySynth` 构造函数接受两个参数：一个单音合成器（在此例中为 `Tone.Synth`）和一个包含通常传递给该单音合成器构造函数的选项的对象（在此例中，我们在列表 12-8 中传递给 `Tone.Synth` 构造函数的相同合成器选项）。在这里我们调用 `new Tone.PolySynth` 而不是 `new Tone.Synth` 来创建一个多音合成器对象。`Tone.PolySynth` 构造函数接受两个参数：一个单音合成器（在此例中为 `Tone.Synth`）和一个包含通常传递给该单音合成器构造函数的选项的对象（在此例中，我们在列表 12-8 中传递给 `Tone.Synth` 构造函数的相同合成器选项）。在这里我们调用 `new Tone.PolySynth` 而不是 `new Tone.Synth` 来创建一个多音合成器对象。`Tone.PolySynth` 构造函数接受两个参数：一个单音合成器（在此例中为 `Tone.Synth`）和一个包含通常传递给该单音合成器构造函数的选项的对象（在此例中，我们在列表 12-8 中传递给 `Tone.Synth` 构造函数的相同合成器选项）。在这里我们调用 `new Tone.PolySynth` 而不是 `new Tone.Synth` 来创建一个多音合成器对象。`Tone.PolySynth` 构造函数接受两个参数：一个单音合成器（在此例中为 `Tone.Synth`）和一个包含通常传递给该单音合成器构造函数的选项的对象（在此例中，我们在列表 12-8 中传递给 `Tone.Synth` 构造函数的相同合成器选项）。在这里我们调用 `new Tone.PolySynth` 而不是 `new Tone.Synth` 来创建一个多音合成器对象。`Tone.PolySynth` 构造函数接受两个参数：一个单音合成器（在此例中为 `Tone.Synth`）和一个包含通常传递给该单音合成器构造函数的选项的对象（在此例中，我们在列表 12-8 中传递给 `Tone.Synth` 构造函数的相同合成器选项）。在这里我们调用 `new Tone.PolySynth` 而不是 `new Tone.Synth` 来创建一个多音合成器对象。`Tone.PolySynth` 构造函数接受两个参数：一个单音合成器（在此例中为 `Tone.Synth`）和一个包含通常传递给该单音合成器构造函数的选项的对象（在此例中，我们在列表 12-8 中传递给 `Tone.Synth` 构造函数的相同合成器选项）。在这里我们调用 `new Tone.PolySynth` 而不是 `new Tone.Synth` 来创建一个多音合成器对象。`Tone.PolySynth` 构造函数接受两个参数：一个单音合成器（在此例中为 `Tone.Synth`）和一个包含通常传递给该单音合成器构造函数的选项的对象（在此例中，我们在列表 12-8 中传递给 `Tone.Synth` 构造函数的相同合成器选项）。在这里我们调用 `new Tone.PolySynth` 而不是 `new Tone.Synth` 来创建一个多音合成器对象。`Tone.PolySynth` 构造函数接受两个参数：一个单音合成器（在此例中为 `Tone.Synth`）和一个包含通常传递给该单音合成器构造函数的选项的对象（在此例中，我们在列表 12-8 中传递给 `Tone.Synth` 构造函数的相同合成器选项）。在这里，我们调用 `new Tone.PolySynth` 而不是 `new Tone.Synth` 来创建一个多音合成器对象。`Tone.PolySynth` 构造函数接受两个参数：一个单音合成器（在此例中为 `Tone.Synth`）和一个包含通常传递给该单音合成器构造函数的选项的对象（在此例中，我们在列表 12-8 中传递给 `Tone.Synth` 构造函数的相同合成器选项）。在这里，我们调用 `new Tone.PolySynth` 而不是 `new Tone.Synth` 来创建一个多音合成器对象。`Tone.PolySynth` 构造函数接受两个参数：一个单音合成器（在此例中为 `Tone.Synth`）和一个包含通常传递给该单音合成器构造函数的选项的对象（在此例中，我们在列表 12-8 中传递给 `Tone.Synth` 构造函数的相同合成器选项）。在这里，我们调用 `new Tone.PolySynth` 而不是 `new Tone.Synth` 来创建一个多音合成器对象。`Tone.PolySynth` 构造函数接受两个参数：一个单音合成器（在此例中为 `Tone.Synth`）和一个包含通常传递给该单音合成器构造函数的选项的对象（在此例中，我们在列表 12-8 中传递给 `Tone.Synth` 构造函数的相同合成器选项）。在这里，我们调用 `new Tone.PolySynth` 而不是 `new Tone.Synth` 来创建一个多音合成器对象。`Tone.PolySynth` 构造函数接受两个参数：一个单音合成器（在此例中为 `Tone.Synth`）和一个包含通常传递给该单音合成器构造函数的选项的对象（在此例中，我们在列表 12-8 中传递给 `Tone.Synth` 构造函数的相同合成器选项）。在这里，我们调用 `new Tone.PolySynth` 而不是 `new Tone.Synth` 来创建一个多音合成器对象。`Tone.PolySynth` 构造函数接受两个参数：一个单音合成器（在此例中为 `Tone.Synth`）和一个包含通常传递给该单音合成器构造函数的选项的对象（在此例中，我们在列表 12-8 中传递给 `Tone.Synth` 构造函数的相同合成器选项）。在这里，我们调用 `new Tone.PolySynth` 而不是 `new Tone.Synth` 来创建一个多音合成器对象。`Tone.PolySynth` 构造函数接受两个参数：一个单音合成器（在此例中为 `Tone.Synth`）和一个包含通常传递给该单音合成器构造函数的选项的对象（在此例中，我们在列表 12-8 中传递给 `Tone.Synth` 构造函数的相同合成器选项）。在这里，我们调用 `new Tone.PolySynth` 而不是 `new Tone.Synth` 来创建一个多音合成器对象。`Tone.PolySynth` 构造函数接受两个参数：一个单音合成器（在此例中为 `Tone.Synth`）和一个包含通常传递给该单音合成器构造函数的选项的对象（在此例中，我们在列表 12-8 中传递给 `Tone.Synth` 构造函数的相同合成器选项）。在这里，我们调用 `new Tone.PolySynth` 而不是 `new Tone.Synth` 来创建一个多音合成器对象。`Tone.PolySynth` 构造函数接受两个参数：一个单音合成器（在此例中为 `Tone.Synth`）和一个包含通常传递给该单音合成器构造函数的选项的对象（在此例中，我们在列表 12-8 中传递给 `Tone.Synth` 构造函数的相同合成器选项）。在这里，我们调用 `new Tone.PolySynth` 而不是 `new Tone.Synth` 来创建一个多音合成器对象。`Tone.PolySynth` 构造函数接受两个参数：一个单音合成器（在此例中为 `Tone.Synth`）和一个包含通常传递给该单音合成器构造函数的选项的对象（在此例中，我们在列表 12-8 中传递给 `Tone.Synth` 构造函数的相同合成器选项）。在这里，我们调用 `new Tone.PolySynth` 而不是 `new Tone.Synth` 来创建一个多音合成器对象。`Tone.PolySynth` 构造函数接受两个参数：一个单音合成器（在此例中为 `Tone.Synth`）和一个包含通常传递给该单音合成器构造函数的选项的对象（在此例中，我们在列表 12-8 中传递给 `Tone.Synth` 构造函数的相同合成器选项）。在这里，我们调用 `new Tone.PolySynth` 而不是 `new Tone.Synth` 来创建一个多音合成器对象。`Tone.PolySynth` 构造函数接受两个参数：一个单音合成器（在此例中为 `Tone.Synth`）和一个包含通常传递给该单音合成器构造函数的选项的对象（在此例中，我们在列表 12-8 中传递给 `Tone.Synth` 构造函数的相同合成器选项）。在这里，我们调用 `new Tone.PolySynth` 而不是 `new Tone.Synth` 来创建一个多音合成器对象。`Tone.PolySynth` 构造函数接受两个参数：一个单音合成器（在此例中为 `Tone.Synth`）和一个包含通常传递给该单音合成器构造函数的选项的对象（在此例中，我们在列表 12-8 中传递给 `Tone.Synth` 构造函数的相同合成器选项）。在这里，我们调用 `new Tone.PolySynth` 而不是 `new Tone.Synth` 来创建一个多音合成器对象。`Tone.PolySynth` 构造函数接受两个参数：一个单音合成器（在此例中为 `Tone.Synth`）和一个包含通常传递给该单音合成器构造函数的选项的对象（在此例中，我们在列表 12-8 中传递给 `Tone.Synth` 构造函数的相同合成器选项）。在这里，我们调用 `new Tone.PolySynth` 而不是 `new Tone.Synth` 来创建一个多音合成器对象。`Tone.PolySynth` 构造函数接受两个参数：一个单音合成器（在此例中为 `Tone.Synth`）和一个包含通常传递给该单音合成器构造函数的选项的对象（在此例中，我们在列表 12-8 中传递给 `Tone.Synth` 构造函数的相同合成器选项）。在这里，我们调用 `new Tone.PolySynth` 而不是 `new Tone.Synth` 来创建一个多音合成器对象。`Tone.PolySynth` 构造函数接受两个参数：一个单音合成器（在此例中为 `Tone.Synth`）和一个包含通常传递给该单音合成器构造函数的选项的对象（在此例中，我们在列表 12-8 中传递给 `Tone.Synth` 构造函数的相同合成器选项）。在这里，我们调用 `new Tone.PolySynth` 而不是 `new Tone.Synth` 来创建一个多音合成器对象。`Tone.PolySynth` 构造函数接受两个参数：一个单音合成器（在此例中为 `Tone.Synth`）和一个包含通常传递给该单音合成器构造函数的选项的对象（在此例中，我们在列表 12-8 中传递给 `Tone.Synth` 构造函数的相同合成器选项）。在这里，我们调用 `new Tone.PolySynth` 而不是 `new Tone.Synth` 来创建一个多音合成器对象。`Tone.PolySynth` 构造函数接受两个参数：一个单音合成器（在此例中为 `Tone.Synth`）和一个包含通常传递给该单音合成器构造函数的选项的对象（在此例中，我们在列表 12-8 中传递给 `Tone.Synth` 构造函数的相同合成器选项）。在这里，我们调用 `new Tone.PolySynth` 而不是 `new Tone.Synth` 来创建一个多音合成器对象。`Tone.PolySynth` 构造函数接受两个参数：一个单音合成器（在此例中为 `Tone.Synth`）和一个包含通常传递给该单音合成器构造函数的选项的对象（在此例中，我们在列表 12-8 中传递给 `Tone.Synth` 构造函数的相同合成器选项）。在这里，我们调用 `new Tone.PolySynth` 而不是 `new Tone.Synth` 来创建一个多音合成器对象。`Tone.PolySynth` 构造函数接受两个参数：一个单音合成器（在此例中为 `Tone.Synth`）和一个包含通常传递给该单音合成器构造函数的选项的对象（在此例中，我们在列表 12-8 中传递给 `Tone.Synth` 构造函数的相同合成器选项）。在这里，我们调用 `new Tone.PolySynth` 而不是 `new Tone.Synth` 来创建一个多音合成器对象。`Tone.PolySynth` 构造函数接受两个参数：一个单音合成器（在此例中为 `Tone.Synth`）和一个包含通常传递给该单音合成器构造函数的选项的对象（在此例中，我们在列表 12-8 中传递给 `Tone.Synth` 构造函数的相同合成器选项）。在这里，我们调用 `new Tone.PolySynth` 而不是 `new Tone.Synth` 来创建一个多音合成器对象。`Tone.PolySynth` 构造函数接受两个参数：一个单音合成器（在此例中为 `Tone.Synth`）和一个包含通常传递给该单音合成器构造函数的选项的对象（在此例中，我们在列表 12-8 中传递给 `Tone.Synth` 构造函数的相同合成器选项）。在这里，我们调用 `new Tone.PolySynth` 而不是 `new Tone.Synth` 来创建一个多音合成器对象。`Tone.PolySynth` 构造函数接受两个参数：一个单音合成器（在此例中为 `Tone.Synth`）和一个包含通常传递给该单音合成器构造函数的选项的对象（在此例中，我们在列表 12-8 中传递给 `Tone.Synth` 构造函数的相同合成器选项）。在这里，我们调用 `new Tone.PolySynth` 而不是 `new Tone.Synth` 来创建一个多音合成器对象。`Tone.PolySynth` 构造函数接受两个参数：一个单音合成器（在此例中为 `Tone.Synth`）和一个包含通常传递给该单音合成器构造函数的选项的对象（在此例中，我们在列表 12-8 中传递给 `Tone.Synth` 构造函数的相同合成器选项）。在这里，我们调用 `new Tone.PolySynth` 而不是 `new Tone.Synth` 来创建一个多音合成器对象。`Tone.PolySynth` 构造函数接受两个参数：一个单音合成器（在此例中为 `Tone.Synth`）和一个包含通常传递给该单音合成器构造函数的选项的对象（在此例中，我们在列表 12-8 中传递给 `Tone.Synth` 构造函数的相同合成器选项）。在这里，我们调用 `new Tone.PolySynth` 而不是 `new Tone.Synth` 来创建一个多音合成器对象。`Tone.PolySynth` 构造函数接受两个参数：一个单音合成器（在此例中为 `Tone.Synth`）和一个包含通常传递给该单音合成器构造函数的选项的对象（在此例中，我们在列表 12-8 中传递给 `Tone.Synth` 构造函数的相同合成器选项）。在这里，我们调用 `new Tone.PolySynth` 而不是 `new Tone.Synth` 来创建一个多音合成器对象。`Tone.PolySynth` 构造函数接受两个参数：一个单音合成器（在此例中为 `Tone.Synth`）和一个包含通常传递给该单音合成器构造函数的选项的对象（在此例中，我们在列表 12-8 中传递给 `Tone.Synth` 构造函数的相同合成器选项）。在这里，我们调用 `new Tone.PolySynth` 而不是 `new Tone.Synth` 来创建一个多音合成器对象。`Tone.PolySynth` 构造函数接受两个参数：一个单音合成器（在此例中为 `Tone.Synth`）和一个包含通常传递给该单音合成器构造函数的选项的对象（在此例中，我们在列表 12-8 中传递给 `Tone.Synth` 构造函数的相同合成器选项）。在这里，我们调用 `new Tone.PolySynth` 而不是 `new Tone.Synth` 来创建一个多音合成器对象。`Tone.PolySynth` 构造函数接受两个参数：一个单音合成器（在此例中为 `Tone.Synth`）和一个包含通常传递给该单音合成器构造函数的选项的对象（在此例中，我们在列表 12-8 中传递给 `Tone.Synth` 构造函数的相同合成器选项）。在这里，我们调用 `new Tone.PolySynth` 而不是 `new Tone.Synth` 来创建一个多音合成器对象。`Tone.PolySynth` 构造函数接受两个参数：一个单音合成器（在此例中为 `Tone.Synth`）和一个包含通常传递给该单音合成器构造函数的选项的对象（在此例中，我们在列表 12-8）。
+在这里我们调用 `new Tone.PolySynth` 而不是 `new Tone.Synth` 来创建一个多音合成器对象。`Tone.PolySynth` 构造函数接受两个参数：一个单音合成器（在此例中为 `Tone.Synth`）和一个包含通常传递给该单音合成器构造函数的选项的对象（在此例中，我们在列表 12-8 中传递给 `Tone.Synth` 构造函数的相同合成器选项）。
 
 ### Tone.js 传输器
 
 Tone.js transport 为我们提供了一种简单定义音乐循环的方法，包括它们何时开始和何时结束。最简单的 `Tone.Loop` 定义了一种持续产生音符的方法。让我们通过每隔四分音符播放一个单音符来尝试。修改 `script.js` 以使用列表 12-10 中的代码。
 
 ```
-, time);
-  }, "4n");
-
-❹ loop.start("0:0:0");
+--snip--
+  let synth = new Tone.Synth().toDestination();
+  new Tone.Loop((time) => {
+    synth.triggerAttackRelease("C4", "16n", time);
+  }, "4n").start("0:0:0");
   loop.stop("4:0:0");
-
   Tone.Transport.start();
-});
+--snip--
 ```
 
 列表 12-10: 循环
 
 *在我们之前的列表中，我们使用的是数字作为持续时间，这些是以秒为单位的持续时间。使用“4n”（四分音符）或“16n”（十六分音符）等音符长度持续时间的优势在于，当我们更改 BPM 时，它们会自动调整。例如，将 BPM 加倍将使每个四分音符的持续时间减半。*
 
+我们传递给 `Tone.Loop` 的回调函数体调用了 `synth` 上的 `triggerAttackRelease` 方法，播放一个持续时间为十六分音符的 C4 音符。`triggerAttackRelease` 方法的第三个参数 `time` 代表播放音符的时间。`Tone.Loop` 对象每次调用回调函数时都会提供一个新的 `time` 值，并将其填充为传输控制器（transport）上相应的位置。
 
-
-
-我们传递给 `Tone.Loop` 的回调函数体调用了 `synth` 上的 `triggerAttackRelease` 方法，播放一个持续时间为十六分音符的 C4 音符❸。`triggerAttackRelease` 方法的第三个参数 `time` 代表播放音符的时间。`Tone.Loop` 对象每次调用回调函数时都会提供一个新的 `time` 值，并将其填充为传输控制器（transport）上相应的位置。
-
-最后，我们对 `Tone.Loop` 构造函数返回的循环对象调用 `start` 和 `stop` 方法 ❹，传入我们希望该循环开始和停止的 `time`，随后调用 `Tone.Transport.start` 启动传输器从头开始播放。我们从“0:0:0”（第一小节的开头）开始，在“4:0:0”（第五小节的开头）停止，这意味着这段代码将持续四个完整的小节，每个小节四拍。我们的循环在每个节拍上重复一次，每次播放一个音符，因此总共将播放 16 个音符。尝试重新加载页面看看！你可以像音乐家那样这样数数小节和节拍：“*one* 二二三四，*two* 二二三四，*three* 二二三四，*four* 二二三四”。注意 `Tone.js` 不会在时间点“4:0:0”处播放第十七分音符，因为循环的结束点是不包含在内的。
+最后，我们对 `Tone.Loop` 构造函数返回的循环对象调用 `start` 和 `stop` 方法，传入我们希望该循环开始和停止的 `time`，随后调用 `Tone.Transport.start` 启动传输器从头开始播放。我们从“0:0:0”（第一小节的开头）开始，在“4:0:0”（第五小节的开头）停止，这意味着这段代码将持续四个完整的小节，每个小节四拍。我们的循环在每个节拍上重复一次，每次播放一个音符，因此总共将播放 16 个音符。尝试重新加载页面看看！你可以像音乐家那样这样数数小节和节拍：“*one* 二二三四，*two* 二二三四，*three* 二二三四，*four* 二二三四”。注意 `Tone.js` 不会在时间点“4:0:0”处播放第十七分音符，因为循环的结束点是不包含在内的。
 
 Listing 12-11 显示了创建我们在 Listing 12-10 中编写相同循环的另一种方法。这次我们把 `start` 和 `stop` 方法直接链式到 `Tone.Loop` 构造函数上。
 
 ```
 --snip--
   let synth = new Tone.Synth().toDestination();
-
   new Tone.Loop(time => {
     synth.triggerAttackRelease("C4", "16n", time);
   }, "4n").start("0:0:0").stop("4:0:0");
-
   Tone.Transport.start();
-});
+--snip--
 ```
 
 <samp class="SANS_Futura_Std_Book_Oblique_I_11">Listing 12-11: 使用更少的代码进行循环</samp>
@@ -5509,33 +7018,29 @@ Listing 12-11 显示了创建我们在 Listing 12-10 中编写相同循环的另
 ```
 --snip--
   Tone.start();
-
-❶ let synth = new Tone.PolySynth(
+  let synth = new Tone.PolySynth(
     Tone.Synth,
     {
       oscillator: { type: "triangle" },
       volume: -9
     }
   ).toDestination();
-
-❷ let notes = ["C4", "D4", "E4", "G4", "A4", "C5"];
-
+  let notes = ["C4", "D4", "E4", "G4", "A4", "C5"];
   new Tone.Loop(time => {
     for (let i = 0; i < 3; i++) {
-    ❸ if (Math.random() < 0.5) {
-      ❹ let note = notes[Math.floor(Math.random() * notes.length)];
-         synth.triggerAttackRelease(note, "32n", time);
+      if (Math.random() < 0.5) {
+        let note = notes[Math.floor(Math.random() * notes.length)];
+        synth.triggerAttackRelease(note, "32n", time);
       }
     }
   }, "8n").start("0:0:0").stop("8:0:0");
-
   Tone.Transport.start();
-});
+--snip--
 ```
 
 <samp class="SANS_Futura_Std_Book_Oblique_I_11">Listing 12-12: 使用 Tone.Loop 生成随机音乐</samp>
 
-在这个示例中，我们切换到了多音合成器 ❶，这样我们可以同时播放多个音符。`notes` 数组包含一个大调五音阶的八度，包括来自下一个八度的 C 音 ❷。在 `Tone.Loop` 回调内部，我们使用 `for` 循环运行某些代码三次。每次循环，我们调用 `Math.random()` ❸，它返回一个 0 到 1 之间的随机数，用来决定是否播放音符。如果值小于 0.5，我们就播放一个音符；否则，跳过该音符。音符名称通过在 `notes` 数组中选取随机索引来确定，使用代码 `Math.floor(Math.random() * notes.length)` ❹。
+在这个示例中，我们切换到了多音合成器，这样我们可以同时播放多个音符。`notes` 数组包含一个大调五音阶的八度，包括来自下一个八度的 C 音。在 `Tone.Loop` 回调内部，我们使用 `for` 循环运行某些代码三次。每次循环，我们调用 `Math.random()`，它返回一个 0 到 1 之间的随机数，用来决定是否播放音符。如果值小于 0.5，我们就播放一个音符；否则，跳过该音符。音符名称通过在 `notes` 数组中选取随机索引来确定，使用代码 `Math.floor(Math.random() * notes.length)`。
 
 `Tone.Loop` 对象每隔八分音符（"8n"）调用一次此代码，持续八小节（"0:0:0"到"8:0:0"）。这一切的效果是，每个八分音符都会播放来自数组的最多三个音符（不保证唯一性，所以同一个音符可能会同时播放两次或三次，导致该音符声音更大）。对于三个音符中的每一个，都有二分之一的概率播放，因此总来说，在任何给定的八分音符上没有任何音符的概率是八分之一。
 
@@ -5546,20 +7051,17 @@ Listing 12-11 显示了创建我们在 Listing 12-10 中编写相同循环的另
 ```
 --snip--
   Tone.start();
-
   let synth = new Tone.Synth().toDestination();
-
-  new Tone.Sequence(❶ (time, note) => {
+  new Tone.Sequence((time, note) => {
     synth.triggerAttackRelease(note, "16n", time);
-  }, ❷ ["G4", "C4", "C4", "C4"], ❸ "4n").start("0:0:0").stop("4:0:0");
-
+  }, ["G4", "C4", "C4", "C4"], "4n").start("0:0:0").stop("4:0:0");
   Tone.Transport.start();
-});
+--snip--
 ```
 
 <samp class="SANS_Futura_Std_Book_Oblique_I_11">Listing 12-13: 使用 Tone.Sequence 创建序列</samp>
 
-这与我们的 12-10 示例非常相似，但有两个不同：首先，回调函数接受两个参数 ❶ 而不是一个 `time`。其次，回调后面有一个额外的参数 ❷，它包含一个音符列表。`Tone.Sequence` 的第三个参数 ❸ 给出了回调之间的持续时间。在这种情况下，我们使用了 "4n"，意味着每四拍播放一个音符。如果我们手动写出所有的 `synth.triggerAttackRelease` 调用而不是依赖 `Tone.Sequence`，它们看起来是这样的：
+这与我们的 12-10 示例非常相似，但有两个不同：首先，回调函数接受两个参数而不是一个 `time`。其次，回调后面有一个额外的参数，它包含一个音符列表。`Tone.Sequence` 的第三个参数给出了回调之间的持续时间。在这种情况下，我们使用了 "4n"，意味着每四拍播放一个音符。如果我们手动写出所有的 `synth.triggerAttackRelease` 调用而不是依赖 `Tone.Sequence`，它们看起来是这样的：
 
 ```
 .triggerAttackRelease("G4", "16n", "0:0:0");
@@ -5580,7 +7082,7 @@ synth.triggerAttackRelease("C4", "16n", "3:2:0");
 synth.triggerAttackRelease("C4", "16n", "3:3:0");
 ```
 
-注意小节分音符表示法中的第二个数字是如何增加的，是因为我们使用了 "4n。（但在实际操作中，`Tone.Sequence` 传递的是秒数而不是小节分音符表示法。）如果你想要一个带有某些间隙（音乐术语中的*休止符*）的序列，你可以在音符数组中使用 `null` 代替音符名称。使用 Listing 12-14 中的代码修改 *script.js* 以查看效果。
+注意小节分音符表示法中的第二个数字是如何增加的，是因为我们使用了 "4n"（但在实际操作中，`Tone.Sequence` 传递的是秒数而不是小节分音符表示法。）如果你想要一个带有某些间隙（音乐术语中的*休止符*）的序列，你可以在音符数组中使用 `null` 代替音符名称。使用 Listing 12-14 中的代码修改 *script.js* 以查看效果。
 
 ```
 --snip--
@@ -5589,29 +7091,24 @@ synth.triggerAttackRelease("C4", "16n", "3:3:0");
   }, ["C4", null, "B3", "C4", "G3", "A3", null, "B3"], "8n")
     .start("0:0:0")
     .stop("4:0:0");
-
   Tone.Transport.start();
-});
+--snip--
 ```
 
 <samp class="SANS_Futura_Std_Book_Oblique_I_11">Listing 12-14: 使用 null 添加休止符</samp>
 
 现在我们有一个更长的音符序列，其中穿插了一些 `null` 以在序列中插入暂停。我们将持续时间从 "4n" 改为了 "8n"，这意味着音符播放的速度比之前快了一倍。当你运行这个更新后的示例时，你应该能听到更有有趣的音符序列，其中包括休止符。
 
-
-
-
 我们将最后查看的传输辅助工具是 `Tone.Part`。它是所有辅助工具中最灵活的一个，因为它允许我们指定每个播放音符的精确时机。通过 `Tone.Part`，我们不再传递一个音名数组，而是传递一个时间/音符对数组。例如，`[["0:0:0", "C4"], ["0:1:0", "D4"], ["0:1:2", "E4"]]` 将在指定的三个时间播放三个音符 `C4`、`D4` 和 `E4`。这样一来，与 `Tone.Loop` 和 `Tone.Sequence` 不同，音符不需要以等的时间间隔进行播放。此外，默认情况下 `Tone.Part` 不循环循环，因此数组中的音符序列只会播放一次。请参考 Listing 12-15 中的代码查看示例。
 
 ```
 --snip--
   Tone.start();
-❶ let synth = new Tone.PolySynth(Tone.Synth).toDestination();
-
+  let synth = new Tone.PolySynth(Tone.Synth).toDestination();
   new Tone.Part((time, note) => {
-  synth.triggerAttackRelease(note, "16n", time);
+    synth.triggerAttackRelease(note, "16n", time);
   }, [
-    ["0:0:0", ❷ ["C3", "E4"]],
+    ["0:0:0", ["C3", "E4"]],
     ["0:0:3", "D4"],
     ["0:1:0", "C4"],
     ["0:1:2", "D4"],
@@ -5624,17 +7121,16 @@ synth.triggerAttackRelease("C4", "16n", "3:3:0");
     ["1:2:0", ["E3", "E4"]],
     ["1:2:2", "G4"],
     ["1:3:0", "G4"]
-❸]).start("0:0:0");
-
+  ]).start("0:0:0");
   Tone.Transport.start();
-});
+--snip--
 ```
 
 Listing 12-15: 使用 Tone.Part 播放旋律
 
-我们在这里做的第一个更改是针对 `synth` ❶。这次我们回到了使用多音合成器，因此我们可以同时播放多个音符。除了合成器有所不同外，回调函数的主体是相同的。我们仍然在调用 `synth.triggerAttackRelease` 并传递 `note` 和 `time` 参数，`Tone.Part` 会自动填充这些参数。接下来是时间/音符对的数组。你可能会注意到，其中某些音符本身就是数组；例如，列表中的第一个“音符”是 `["C3", "E4"]` ❷。这对音符将保持原封不动地传递给 `triggerAttackRelease` 方法，其效果是同时播放两个音符，就像我们其他的多音合成器示例一一样。
+我们在这里做的第一个更改是针对 `synth`。这次我们回到了使用多音合成器，因此我们可以同时播放多个音符。除了合成器有所不同外，回调函数的主体是相同的。我们仍然在调用 `synth.triggerAttackRelease` 并传递 `note` 和 `time` 参数，`Tone.Part` 会自动填充这些参数。接下来是时间/音符对的数组。你可能会注意到，其中某些音符本身就是数组；例如，列表中的第一个“音符”是 `["C3", "E4"]`。这对音符将保持原封不动地传递给 `triggerAttackRelease` 方法，其效果是同时播放两个音符，就像我们其他的多音合成器示例一样。
 
-最后，我们调用了 `.start("0:0:0")` ❸，它的效果是立即播放此部分。例如，如果我们改用 `.start("1:0:0")`，那么旋律将在一个小节的停顿后开始。为每个时间/音符对给的时间是相对于传递给 `start` 方法的时间。
+最后，我们调用了 `.start("0:0:0")`，它的效果是立即播放此部分。例如，如果我们改用 `.start("1:0:0")`，那么旋律将在一个小节的停顿后开始。为每个时间/音符对给的时间是相对于传递给 `start` 方法的时间。
 
 当你运行这个示例时，你应该能听到“玛丽有一只小羊”的开头。
 
@@ -5653,77 +7149,66 @@ Listing 12-15: 使用 Tone.Part 播放旋律
 ```
 --snip--
   Tone.start();
-
-❶ let hiHat = new Tone.NoiseSynth({
+  let hiHat = new Tone.NoiseSynth({
     envelope: {
       attack: 0.001, decay: 0.1, sustain: 0, release: 0
     },
     volume: -6
   }).toDestination();
-
-❷ new Tone.Loop(time => {
+  new Tone.Loop(time => {
     hiHat.triggerAttackRelease("16n", time);
   }, "8n").start("0:0");
-
   Tone.Transport.start();
-});
+--snip--
 ```
 
 Listing 12-16: 镲片声的开始
 
-我们首先设置 `NoiseSynth` 和包络，并在循环中播放镲片声。我们首先创建一个新的 `NoiseSynth` ❶，带有一个包络和 -6 分贝的音量。由于 sustain 和 release 都被设置为 0，声音在初始攻击（0.001 秒）和衰减（0.1 秒）后会立即结束。接下来，我们使用 `Tone.Loop` 播放八分音符 ❷。注意 `Noise` 的 `triggerAttackRelease` 不接受音名，因为噪声没有音高。它在“0:0”处开始。
+我们首先设置 `NoiseSynth` 和包络，并在循环中播放镲片声。我们首先创建一个新的 `NoiseSynth`，带有一个包络和 -6 分贝的音量。由于 sustain 和 release 都被设置为 0，声音在初始攻击（0.001 秒）和衰减（0.1 秒）后会立即结束。接下来，我们使用 `Tone.Loop` 播放八分音符。注意 `Noise` 的 `triggerAttackRelease` 不接受音名，因为噪声没有音高。它在“0:0”处开始。
 
 当你运行这个示例时，你应该听到一段镲片声。它听起来还不完美，因为我们还没有添加滤波器。我们将在[Listing 12-17]中完成这一点。
 
 ```
 --snip--
   Tone.start();
-
-❶ let hiHatFilter = new Tone.Filter(15000, "bandpass").toDestination();
-
+  let hiHatFilter = new Tone.Filter(15000, "bandpass").toDestination();
   let hiHat = new Tone.NoiseSynth({
     envelope: {
       attack: 0.001, decay: 0.1, sustain: 0, release: 0
     },
     volume: -6
   }).connect(hiHatFilter);
-
   new Tone.Loop(time => {
     hiHat.triggerAttackRelease("16n", time);
   }, "8n").start("0:0");
+--snip--
 ```
 
 Listing 12-17: 为镲片应用滤波器
 
-首先，我们使用 `Tone.Filter` 创建了一个带通滤波器 ❶。这种滤波器只允许特定频率周围的频率通过。在这种情况下，我们告诉滤波器通过 15000 Hz（即 15 kHz）周围的频带，同时消除其他频率。人类的听觉范围大约是 20 Hz 到 20 kHz，因此我们的滤波器允许噪声的高频部分通过。
+首先，我们使用 `Tone.Filter` 创建了一个带通滤波器。这种滤波器只允特定频率周围的频率通过。在这种情况下，我们告诉滤波器通过 15000 Hz（即 15 kHz）周围的频带，同时消除其他频率。人类的听觉范围大约是 20 Hz 到 20 kHz，因此我们的滤波器允许噪声的高频部分通过。
 
-在[Listing 12-16]中，我们对 `NoiseSynth` 使用 `toDestination()` 直接连接到输出。在[Listing 12-17]中，我们改为将滤波器连接到输出 ❶，然后将合成器连接到滤波器 ❷。这意味着合成器的声音在通过扬声器或耳机输出之前经过了滤波。
+在[Listing 12-16]中，我们对 `NoiseSynth` 使用 `toDestination()` 直接连接到输出。在[Listing 12-17]中，我们改为将滤波器连接到输出，然后将合成器连接到滤波器。这意味着合成器的声音在通过扬声器或耳机输出之前经过了滤波。
 
 #### 小军鼓合成
 
 在本节中，我们将合成小军鼓。小军鼓有一组靠在底部鼓面的金属丝（称为 *snare*），在击打鼓面时它们会对着鼓面响动。这使其产生了一个相对复杂的声音，由一些噪音一些更具音色的声音组成。为了模拟这一点，我们将使用两个独立的声源：一个噪声合成器和一个固定频率的普通合成器。两者都将具有短促的幅度包络以营造打击感，我们还将通过带通滤波器处理声音的噪声部分，使小军鼓听起来比镲片低。我们将创建一个新的 `Snare` 类来封装这些细节，如 Listing 12-18 所示。
-
-
-
-
 
 ```
 --snip--
   new Tone.Loop(time => {
     hiHat.triggerAttackRelease("16n", time);
   }, "8n").start("0:0:0").stop("4:0:0");
-
   class Snare {
     constructor() {
-    ❶ this.noiseFilter = new Tone.Filter(5000, "bandpass").toDestination();
-    ❷ this.noiseSynth = new Tone.NoiseSynth({
+      this.noiseFilter = new Tone.Filter(5000, "bandpass").toDestination();
+      this.noiseSynth = new Tone.NoiseSynth({
         envelope: {
           attack: 0.001, decay: 0.1, sustain: 0, release: 0
         },
         volume: -12
       }).connect(this.noiseFilter);
-
-    ❸ this.synth = new Tone.Synth({
+      this.synth = new Tone.Synth({
         envelope: {
           attack: 0.0001, decay: 0.1, sustain: 0, release: 0
         },
@@ -5731,32 +7216,28 @@ Listing 12-17: 为镲片应用滤波器
         volume: -12
       }).toDestination();
     }
-
-    ❹ triggerAttackRelease(duration, when) {
+    triggerAttackRelease(duration, when) {
       this.noiseSynth.triggerAttackRelease(duration, when);
       this.synth.triggerAttackRelease("G3", duration, when);
-     }
     }
-
-❺ let snare = new Snare();
-
-❻ new Tone.Loop(time => {
+  }
+  let snare = new Snare();
+  new Tone.Loop(time => {
     snare.triggerAttackRelease("16n", time);
   }, "2n").start("0:1:0").stop("4:0:0");
-
   Tone.Transport.start();
-});
+--snip--
 ```
 
 Listing 12-18：合成小军鼓
 
 从高层级来看，`Snare` 类有两个方法：`constructor` 和 `triggerAttackRelease`。`constructor` 创建了一个滤波器和两个合成器。`triggerAttackRelease` 方法调用这两个合成器的 `triggerAttackRelease` 方法以让它们同时播放。
 
-在 `constructor` 中，我们首先创建了滤波器 ❶ 和 `noiseSynth` ❷。这与我们创建 `hi-hat`（镲片）的方式非常相似，只是我们对 `bandpass` 滤波器使用了 `5,000` Hz 的频率，以反映小军鼓较低的声音。接下来，我们创建了带音高的合成器 ❸，它使用的幅度包络与 `noiseSynth` 类似，但攻击时间更短，以模拟小军鼓的声音（在真实的小军鼓中，军鼓弦是由鼓皮的震动触发的，因此它们会略后于鼓声）。`synth` 配置了一个 `sine` 正弦波振荡器。由于我们要同时播放这两个合成器，我们给每个合成器设置了 `–12` 的音量，产生的整体音量与 `hi-hat` 相似。
+在 `constructor` 中，我们首先创建了滤波器和 `noiseSynth`。这与我们创建 `hi-hat`（镲片）的方式非常相似，只是我们对 `bandpass` 滤波器使用了 `5,000` Hz 的频率，以反映小军鼓较低的声音。接下来，我们创建了带音高的合成器，它使用的幅度包络与 `noiseSynth` 类似，但攻击时间更短，以模拟小军鼓的声音（在真实的小军鼓中，军鼓弦是由鼓皮的震动触发的，因此它们会略后于鼓声）。`synth` 配置了一个 `sine` 正弦波振荡器。由于我们要同时播放这两个合成器，我们给每个合成器设置了 `–12` 的音量，产生的整体音量与 `hi-hat` 相似。
 
-`triggerAttackRelease` 方法 ❹ 只需要一个 `duration`（时长）和一个 `when` 参数。这些参数被传递给底层合成器的 `triggerAttackRelease` 方法。当我们触发音高合成器时，我们给它一个音名 `"G3"`，这是我为小军鼓调定的音高。音高合成器的加入虽然微妙，但它让鼓声听起来更真实。
+`triggerAttackRelease` 方法只需要一个 `duration`（时长）和一个 `when` 参数。这些参数被传递给底层合成器的 `triggerAttackRelease` 方法。当我们触发音高合成器时，我们给它一个音名 `"G3"`，这是我为小军鼓调定的音高。音高合成器的加入虽然微妙，但它让鼓声听起来更真实。
 
-接下来，我们实例化该类 ❺，最后创建了一个新的 `Tone.Loop` 对象 ❻。这个循环的长度是 `hi-hat` 循环的四倍（使用 `"2n"` 而不是 `"8n"`，或者说用二分符代替八分符），并且在四分音符后开始。这意味着每个小节的第二拍和第四拍都会有一个小军鼓击声。当你运行这个示例时，你应该每隔八分音符听到一次 `hi-hat`，每两个四分音符听到一次小军鼓。
+接下来，我们实例化该类，最后创建了一个新的 `Tone.Loop` 对象。这个循环的长度是 `hi-hat` 循环的四倍（使用 `"2n"` 而不是 `"8n"`，或者说用二分符代替八分符），并且在四分音符后开始。这意味着每个小节的第二拍和第四拍都会有一个小军鼓击声。当你运行这个示例时，你应该每隔八分音符听到一次 `hi-hat`，每两个四分音符听到一次小军鼓。
 
 ### 底鼓合成
 
@@ -5767,24 +7248,21 @@ Listing 12-18：合成小军鼓
   new Tone.Loop(time => {
     snare.triggerAttackRelease("16n", time);
   }, "2n").start("0:1:0").stop("4:0:0");
-
   let kick = new Tone.MembraneSynth({
-  ❶ pitchDecay: 0.02,
+    pitchDecay: 0.02,
     octaves: 6,
     volume: -9
   }).toDestination();
-
-❷ new Tone.Loop(time => {
+  new Tone.Loop(time => {
     kick.triggerAttackRelease(50, "16n", time);
   }, "2n").start("0:0:0").stop("4:0:0");
-
   Tone.Transport.start();
-});
+--snip--
 ```
 
 Listing 12-19：合成底鼓
 
-`MembraneSynth` 的选项包括 `pitchDecay`（音高衰减）❶，它以秒为单位指定频率变化的速度；以及 `octaves`（八度），它指定了在该时间内频率下降的几个八度。在我们的循环 ❷ 中，我们以 `50` Hz 的频率触发合成器。这个循环与小军鼓循环具有相同的 `"2n"` 时长，但从时间零开始，这意味着底鼓声和小军鼓声将每隔四分音符交替出现，产生经典的摇滚鼓点。当你运行这个示例时，你可能会识别出它是许多歌曲的基础鼓点模式。
+`MembraneSynth` 的选项包括 `pitchDecay`（音高衰减）❶，它以秒为单位指定频率变化的速度；以及 `octaves`（八度），它指定了在该时间内频率下降的几个八度。在我们的循环中，我们以 `50` Hz 的频率触发合成器。这个循环与小军鼓循环具有相同的 `"2n"` 时长，但从时间零开始，这意味着底鼓声和小军鼓声将每隔四分音符交替出现，产生经典的摇滚鼓点。当你运行这个示例时，你可能会识别出它是许多歌曲的基础鼓点模式。
 
 ### 回混
 
@@ -5793,25 +7271,20 @@ Listing 12-19：合成底鼓
 ```
 --snip--
   Tone.start();
-
   let reverb = new Tone.Reverb({
     decay: 1,
     wet: 0.3
   }).toDestination();
-
   let hiHatFilter = new Tone.Filter(15000, "bandpass").connect(reverb);
-
   let hiHat = new Tone.NoiseSynth({
     envelope: {
       attack: 0.001, decay: 0.1, sustain: 0, release: 0
     },
     volume: -6
   }).connect(hiHatFilter);
-
   new Tone.Loop(time => {
     hiHat.triggerAttackRelease("16n", time);
   }, "8n").start("0:0:0").stop("4:0:0");
-
   class Snare {
     constructor() {
       this.noiseFilter = new Tone.Filter(5000, "bandpass").toDestination();
@@ -5821,7 +7294,6 @@ Listing 12-19：合成底鼓
         },
         volume: -12
       }).connect(this.noiseFilter);
-
       this.synth = new Tone.Synth({
         envelope: {
           attack: 0.0001, decay: 0.1, sustain: 0, release: 0
@@ -5830,31 +7302,25 @@ Listing 12-19：合成底鼓
         volume: -12
       }).toDestination();
     }
-
     triggerAttackRelease(duration, when) {
       this.noiseSynth.triggerAttackRelease(duration, when);
       this.synth.triggerAttackRelease("G3", duration, when);
     }
   }
-
   let snare = new Snare();
-
   new Tone.Loop(time => {
     snare.triggerAttackRelease("16n", time);
   }, "2n").start("0:1:0").stop("4:0:0");
-
   let kick = new Tone.MembraneSynth({
     pitchDecay: 0.02,
     octaves: 6,
     volume: -9
   }).toDestination();
-
   new Tone.Loop(time => {
     kick.triggerAttackRelease(50, "16n", time);
   }, "2n").start("0:0:0").stop("4:0:0");
-
   Tone.Transport.start();
-});
+--snip--
 ```
 
 Listing 12-20：添加混响
@@ -5867,10 +7333,6 @@ Listing 12-20：添加混响
 
 现在我们已经设置好了鼓声，如果能有一个更简单的方法来触发它们就好了。理想情况下，我们希望通过编写类似下面的代码来创建一个鼓点：
 
-
-
-
-
 ```
 kick:  x…x…
 snare: ..x…x.
@@ -5882,15 +7344,13 @@ hiHat: xxxxxxxx
 为了实现这一点，我们将创建一个辅助函数，将由 `x` 和点组成的字符串转换为 `Tone.Sequence` 传输辅助函数可以使用的值数组。回想一下，`Tone.Sequence` 接收音符名称数组并按顺序重复播放它们，其中 `null` 用于表示止符。我们的函数应该将点转换为 `null`，而保持 `x` 不变。
 
 > <samp class="SANS_Dogma_OT_Bold_B_21">NOTE</samp>
-
-*由于鼓声没有音符名称，任何字符串实际上对 `Tone.Sequence` 来说都可以代表一次鼓击打击（我们只是为了方便而使用 `x`）。唯一重要的是它不是 `null`。*
+> *由于鼓声没有音符名称，任何字符串实际上对 `Tone.Sequence` 来说都可以代表一次鼓击打击（我们只是为了方便而使用 `x`）。唯一重要的是它不是 `null`。*
 
 列表 12-21 显示了该函数的定义。将其添加到你的 `script.js` 文件中，放在现有的鼓点代码之前。
 
 ```
 --snip--
   Tone.start();
-
   // 将字符串转换为音符或 null 的数组。
   // 字符串中的点变成数组中的 null 并保持静音。
   function mkSequence(pattern) {
@@ -5902,7 +7362,6 @@ hiHat: xxxxxxxx
       }
     });
   }
-
   let reverb = new Tone.Reverb({
 --snip--
 ```
@@ -5916,13 +7375,11 @@ hiHat: xxxxxxxx
 ```
 --snip--
   }
-
   let drumPattern = {
     kick:  "x…x…",
     snare: "..x…x.",
     hiHat: "xxxxxxxx",
   };
-
   let reverb = new Tone.Reverb({
 --snip--
 ```
@@ -5936,31 +7393,25 @@ hiHat: xxxxxxxx
 ```
 --snip--
   }).connect(hiHatFilter);
-
   new Tone.Sequence(time => {
     hiHat.triggerAttackRelease("16n", time);
   }, mkSequence(drumPattern.hiHat), "8n").start("0:0:0").stop("4:0:0");
-
   class Snare {
 --snip--
   let snare = new Snare();
-
    new Tone.Sequence(time => {
     snare.triggerAttackRelease("16n", time);
   }, mkSequence(drumPattern.snare), "8n").start("0:0:0").stop("4:0:0");
-
   let kick = new Tone.MembraneSynth({
     pitchDecay: 0.02,
     octaves: 6,
     volume: -9
   }).connect(reverb);
-
    new Tone.Sequence(time => {
     kick.triggerAttackRelease(50, "16n", time);
   }, mkSequence(drumPattern.kick), "8n").start("0:0:0").stop("4:0:0");
-
   Tone.Transport.start();
-});
+--snip--
 ```
 
 <samp class="SANS_Futura_Std_Book_Oblique_I_11">列表 12-23: 在 Tone.Sequence 中使用 mkSequence</samp> <samp class="SANS_Futura_Std_Book_Oblique_I_11">替代 Tone.Loop</samp>
@@ -5973,9 +7424,27 @@ hiHat: xxxxxxxx
 
 电子音乐的重要部分是*采样*（sampling）：使用现有音频片段来构建一首新作品。一种常用技术是修改采样的播放速度来改变其音高，这样单个采样就可以用于多个音符。如果你曾经加速过某人声音的录音让它听起来像松鼠一样高频，或者减慢速度让它听起来低沉...
 
-
-
-
+```
+--snip--
+  Tone.start();
+  let sampler = new Tone.Sampler({
+    urls: {
+      C5: "trumpet-c5.mp3",
+      D5: "trumpet-d5.mp3",
+      E5: "trumpet-e5.mp3",
+      F5: "trumpet-f5.mp3",
+      G5: "trumpet-g5.mp3"
+    },
+    baseUrl: "https://example.com/samples/",
+    attack: 0,
+    release: 1,
+    volume: -24,
+    onload: () => {
+      sampler.triggerAttackRelease(["C5", "E5", "G5"], "4n", 0);
+    }
+  }).toDestination();
+--snip--
+```
 
 列表 12-24：创建一个采样器
 
@@ -6010,19 +7479,18 @@ hiHat: xxxxxxxx
 /////////////////
 // Instruments //
 /////////////////
-
 ////////////////
 // Sequencing //
 ////////////////
-
 //////////
 // Song //
 //////////
-
 ////////////////////
 // Event Handling //
 ////////////////////
 ```
+
+
 
 列表 13-1：界定 script.js 主要部分的注释
 
@@ -6034,23 +7502,33 @@ hiHat: xxxxxxxx
 
 ```
 ////////////////////
+
 // Event Handling //
+
 ////////////////////
 
 let play = document.querySelector("#play");
+
 let playing = document.querySelector("#playing");
 
 play.addEventListener("click", () => {
+
   // 隐藏此按钮
+
   play.style = "display: none";
+
   playing.style = " ";
 
   Tone.start();
 
   // 修改此处以从歌曲的不同部分开始播放
+
   Tone.Transport.position = "0:0:0";
+
   Tone.Transport.start();
+
 });
+
 ```
 
 列表 13-2：事件处理代码
@@ -6061,69 +7539,101 @@ play.addEventListener("click", () => {
 
 ### 制作鼓点（Making the Drumbeat）
 
-现在让我们创建一个作为歌曲背景的鼓点。我们将使用在上章中创建的同样的��片、军鼓和底鼓声。首先我们声明这些乐器，如列表 13-3 所示。将此代码添加到 `script.js` 的 Instruments 部分。
-
-
-
-
+现在让我们创建一个作为歌曲背景的鼓点。我们将使用在上章中创建的同样的镲片、军鼓和底鼓声。首先我们声明这些乐器，如列表 13-3 所示。将此代码添加到 `script.js` 的 Instruments 部分。
 
 ```
 /////////////////
+
 // Instruments //
+
 /////////////////
 
 function mkDrums() {
+
   let reverb = new Tone.Reverb({
+
     decay: 1,
+
     wet: 0.3
+
   }).toDestination();
 
   let hiHatFilter = new Tone.Filter(15000, "bandpass").connect(reverb);
 
   let hiHat = new Tone.NoiseSynth({
+
     envelope: {
+
       attack: 0.001, decay: 0.1, sustain: 0, release: 0
+
     },
+
     volume: -6
+
   }).connect(hiHatFilter);
 
   class Snare {
+
     constructor() {
+
       this.noiseFilter = new Tone.Filter(5000, "bandpass").connect(reverb);
+
       this.noiseSynth = new Tone.NoiseSynth({
+
         envelope: {
+
           attack: 0.001, decay: 0.1, sustain: 0, release: 0
+
         },
+
         volume: -12
+
       }).connect(this.noiseFilter);
 
       this.synth = new Tone.Synth({
+
         envelope: {
+
           attack: 0.0001, decay: 0.1, sustain: 0, release: 0
+
         },
+
         oscillator: {type: "sine"},
+
         volume: -12
+
       }).connect(reverb);
+
     }
 
     triggerAttackRelease(duration, when) {
+
       this.noiseSynth.triggerAttackRelease(duration, when);
+
       this.synth.triggerAttackRelease("G3", duration, when);
+
     }
+
   }
 
   let snare = new Snare();
 
   let kick = new Tone.MembraneSynth({
+
     pitchDecay: 0.02,
+
     octaves: 6,
+
     volume: -9
+
   }).connect(reverb);
 
   return {hiHat, snare, kick};
+
 }
 
 let drums = mkDrums();
+
 --snip--
 ```
 
@@ -6135,57 +7645,87 @@ let drums = mkDrums();
 
 ```
 --snip--
+
 ////////////////
+
 // Sequencing //
+
 ////////////////
 
 // 将字符串转换为音符或 null 数组。
+
 // 字符串中的点会变成数组中的 null 并是静音的。
+
 ❶ function mkSequence(pattern) {
+
   return pattern.split(" ").map(value => {
+
     if (value == ".") {
+
       return null;
+
     } else {
+
       return value;
+
     }
+
   });
+
 }
 
 ❷ let drumPattern = {
+
   kick:  "x…x…",
+
   snare: "..x…x.",
+
   hiHat: "xxxxxxxx",
+
 };
 
 let hiHatSequence = new Tone.Sequence(time => {
+
   drums.hiHat.triggerAttackRelease("16n", time);
+
 }, mkSequence(drumPattern.hiHat), "8n");
 
 let snareSequence = new Tone.Sequence(time => {
+
   drums.snare.triggerAttackRelease("16n", time);
+
 }, mkSequence(drumPattern.snare), "8n");
 
 let kickSequence = new Tone.Sequence(time => {
+
     drums.kick.triggerAttackRelease(50, "16n", time);
+
 }, mkSequence(drumPattern.kick), "8n");
+
 --snip--
 ```
 
 <samp class="SANS_Futura_Std_Book_Oblique_I_11">示例 13-4: 鼓点序列</samp>
 
-再次，这与我们在 第 12 章 中编写的代码相同。我们从一个辅助函数 `mkSequence` ❶ 开始，它接收一个由 x 和点组成的模式，并转换为 `Tone.Sequence` 可以使用的音符信息。然后，我们将需要的模式存储在 `drumPattern` 对象 ❷ 中，并使用 `Tone.Sequence` 为每个乐器生成序列。
+再次，这与我们在第 12 章中编写的代码相同。我们从一个辅助函数 `mkSequence` ❶ 开始，它接收一个由 x 和点组成的模式，并转换为 `Tone.Sequence` 可以使用的音符信息。然后，我们将需要的模式存储在 `drumPattern` 对象 ❷ 中，并使用 `Tone.Sequence` 为每个乐器生成序列。
 
 创建鼓点剩下的要做的工作是调度序列在歌曲的大部分时间内循环播放，如 示例 13-5 所示。将此代码添加到 `script.js` 文件的 Song 部分。
 
 ```
 --snip--
+
 //////////
+
 // Song //
+
 //////////
 
 hiHatSequence.start("0:0:0").stop("44:0:0");
+
 snareSequence.start("0:0:0").stop("44:0:0");
+
 kickSequence.start("0:0:0").stop("44:0:0");
+
 --snip--
 ```
 
@@ -6199,25 +7739,43 @@ kickSequence.start("0:0:0").stop("44:0:0");
 
 ```
 --snip--
+
 let lowBass = new Tone.FMSynth({
+
   oscillator: {
+
   ❶ type: "triangle"
+
   },
+
   envelope: {
+
     attack: 0.0001, decay: 0.5, sustain: 0, release: 0
+
   },
+
   volume: -3
+
 }).toDestination();
 
 let highBass = new Tone.FMSynth({
+
   oscillator: {
+
   ❷ type: "square"
+
   },
+
   envelope: {
+
     attack: 0.0001, decay: 0.5, sustain: 0, release: 0
+
   },
+
   volume: -9
+
 }).toDestination();
+
 --snip--
 ```
 
@@ -6228,7 +7786,9 @@ let highBass = new Tone.FMSynth({
 为了生成贝斯序列，我们将使用一种与我们目前的 `mkSequence` 辅助函数稍不同的技术。该辅助函数非常适合鼓组，因为你只需要一个字符来判断是否播放音符，但它对于需要提供音符名称的贝斯线（音符至少有两个字符，如 `C3` 或 `F#4`）来说并不适用。我们可能选择的一种符号类似于：
 
 ```
+
 "C3|  |  |C3|  |  |G2|B2"
+
 ```
 
 竖线用于分隔，每对管道之间我们要播放的音符或代表静音的空格。（这里的序列是《Stand by Me》贝斯线的开头。）
@@ -6237,24 +7797,33 @@ let highBass = new Tone.FMSynth({
 
 ```
 --snip--
+
 // 将字符串转换为音符或 null 数组。
+
 // 字符串中管道之间的空格会变成数组中的 null 并是静音的。
+
 function mkPipeSequence(pattern) {
+
   return pattern.split("|").map(value => {
+
     if (value.trim() == " ") {
+
       return null;
+
     } else {
+
       return value;
+
     }
+
   });
+
 }
+
 --snip--
 ```
 
 <samp class="SANS_Futura_Std_Book_Oblique_I_11">示例 13-7: mkPipeSequence 函数</samp>
-
-
-
 
 此函数使用 `split("|")` 通过管道符来分割字符串。以“Stand by Me”为例，这将得到数组 `["C3", " ", " ", "C3", " ", " ", "G2", "B2"]`。然后我们对这些每个值进行映射（map）。`trim` 方法 ❶ 会移除字符串开头或结尾的任何空白字符，因此 `" ".trim()` 的结果是 `" "`，一个空字符串。我们将返回数组中的任何空字符串替换为 `null`，并将音名原样传递，最终得到的返回值为 `["C3", null, null, "C3", null, null, "G2", "B2"]`。
 
@@ -6262,13 +7831,19 @@ function mkPipeSequence(pattern) {
 
 ```
 --snip--
+
 let lowBassSequence = new Tone.Sequence((time, note) => {
+
   lowBass.triggerAttackRelease(note, "16n", time, 0.6);
+
 }, mkPipeSequence("G2|  |G2|  |  "), "8n");
 
 let highBassSequence = new Tone.Sequence((time, note) => {
+
   highBass.triggerAttackRelease(note, "16n", time, 0.3);
+
 }, mkPipeSequence("G3|F3|D3|G2|D3|D3"), "8n");
+
 --snip--
 ```
 
@@ -6280,8 +7855,11 @@ Listing 13-8: 低音序列
 
 ```
 --snip--
+
 lowBassSequence.start("0:0:0").stop("47:3:0");
+
 highBassSequence.start("4:0:0").stop("47:3:0");
+
 --snip--
 ```
 
@@ -6297,12 +7875,19 @@ Listing 13-9: 调度低音序列
 
 ```
 --snip--
+
 let chordSynth = new Tone.PolySynth(Tone.Synth, {
+
   oscillator: {
+
     type: "triangle"
+
   },
+
   volume: -12
+
 }).toDestination();
+
 --snip--
 ```
 
@@ -6314,25 +7899,39 @@ Listing 13-10: 和弦合成器
 
 ```
 --snip--
+
 let chords = {
+
   1: ["D4", "G4"],
+
   2: ["E4", "G4"],
+
   3: ["C4", "E4", "G4"],
+
   4: ["B3", "F4", "G4"],
+
 };
 
 function playChord(time, chordName) {
+
   let notes = chords[chordName];
+
   chordSynth.triggerAttackRelease(notes, "16n", time, 0.6);
+
 }
 
 let chordSequence1 = new Tone.Sequence((time, chordName) => {
+
   playChord(time, chordName);
+
 }, mkSequence("1…2…3..4…3…2…3..4"), "8n");
 
 let chordSequence2 = new Tone.Sequence((time, chordName) => {
+
   playChord(time, chordName);
+
 }, mkSequence("3…2…4..1"), "8n");
+
 --snip--
 ```
 
@@ -6348,34 +7947,51 @@ Listing 13-11: 和弦序列化
 
 ```
 --snip--
+
 chordSequence1.start("8:0:0").stop("24:0:0");
+
 chordSequence2.start("24:0:0").stop("32:0:0");
+
 chordSequence1.start("32:0:0").stop("40:0:0");
+
 --snip--
 ```
 
 Listing 13-12: 调度和弦序列
 
-
-
-
 ```
 --snip--
+
 // Samples from freesound.org:
+
 // https://freesound.org/people/MTG/sounds/357432/
+
 // https://freesound.org/people/MTG/sounds/357336/
+
 // https://freesound.org/people/MTG/sounds/357546/
+
 let sampler = new Tone.Sampler({
+
   urls: {
+
     "C5": "trumpet-c5.mp3", 
+
     "D5": "trumpet-d5.mp3", 
+
     "F5": "trumpet-f5.mp3" 
+
   },
+
   baseUrl: "https://skilldrick-jscc.s3.us-west-2.amazonaws.com/",
+
   attack: 0,
+
   release: 1,
+
   volume: -24
+
 }).toDestination();
+
 --snip--
 ```
 
@@ -6387,44 +8003,69 @@ let sampler = new Tone.Sampler({
 
 ```
 --snip--
+
 let trumpetPart = new Tone.Part((time, note) => {
+
   sampler.triggerAttackRelease(note, "1n", time);
+
 }, [
+
   ["0:0:0", "G5"],
+
   ["0:2:0", "C5"],
+
   ["1:0:0", "G5"],
 
   ["2:0:0", "D5"],
+
   ["2:2:0", "C5"],
+
   ["3:0:0", "B4"],
 
   ["4:0:0", "G5"],
+
   ["4:2:0", "C5"],
+
   ["5:0:0", "G5"],
 
   ["6:0:0", "D5"],
+
   ["6:2:0", "C5"],
+
   ["7:0:0", "B4"],
+
   ["7:2:0", "D5"],
 
   ["8:0:0", "C5"],
+
   ["8:2:0", "E5"],
+
   ["9:0:0", "F5"],
+
   ["9:2:0", "D5"],
 
   ["10:0:0", "C5"],
+
   ["10:2:0", "E5"],
+
   ["11:0:0", "D5"],
 
   ["12:0:0", "C5"],
+
   ["12:2:0", "E5"],
+
   ["13:0:0", "F5"],
+
   ["13:2:0", "D5"],
 
   ["14:0:0", "C5"],
+
   ["14:2:0", "E5"],
+
   ["15:0:0", ["B4", "G5"]]
+
 ]);
+
 --snip--
 ```
 
@@ -6436,7 +8077,9 @@ let trumpetPart = new Tone.Part((time, note) => {
 
 ```
 --snip--
+
 trumpetPart.start("16:0:0");
+
 --snip--
 ```
 
@@ -6450,249 +8093,399 @@ trumpetPart.start("16:0:0");
 
 我们在整个文件中都添加了代码，以防你弄混了，或者你只是想看看它最终应该是什么样子，列表 13-16 提供了 `script.js` 的全部内容。
 
-
-
-
-
 ```
 /////////////////
+
 // 器 //
+
 /////////////////
 
 function mkDrums() {
+
   let reverb = new Tone.Reverb({
+
     decay: 1,
+
     wet: 0.3
+
   }).toDestination();
 
   let hiHatFilter = new Tone.Filter(15000, "bandpass").connect(reverb);
 
   let hiHat = new Tone.NoiseSynth({
+
     envelope: {
+
       attack: 0.001, decay: 0.1, sustain: 0, release: 0
+
     },
+
     volume: -6
+
   }).connect(hiHatFilter);
 
   class Snare {
+
     constructor() {
+
       this.noiseFilter = new Tone.Filter(5000, "bandpass").connect(reverb);
+
       this.noiseSynth = new Tone.NoiseSynth({
+
         envelope: {
+
           attack: 0.001, decay: 0.1, sustain: 0, release: 0
+
         },
+
         volume: -12
+
       }).connect(this.noiseFilter);
 
       this.synth = new Tone.Synth({
+
         envelope: {
+
           attack: 0.0001, decay: 0.1, sustain: 0, release: 0
+
         },
+
         oscillator: {type: "sine"},
+
         volume: -12
+
       }).connect(reverb);
+
     }
 
     triggerAttackRelease(duration, when) {
+
       this.noiseSynth.triggerAttackRelease(duration, when);
+
       this.synth.triggerAttackRelease("G3", duration, when);
+
     }
+
   }
 
   let snare = new Snare();
 
   let kick = new Tone.MembraneSynth({
+
     pitchDecay: 0.02,
+
     octaves: 6,
+
     volume: -9
+
   }).connect(reverb);
 
   return {hiHat, snare, kick};
+
 }
 
 let drums = mkDrums();
 
 let lowBass = new Tone.FMSynth({
+
   oscillator: {
+
     type: "triangle"
+
   },
+
   envelope: {
+
     attack: 0.0001, decay: 0.5, sustain: 0.3, release: 0.1
+
   },
+
   volume: -3
+
 }).toDestination();
 
 let highBass = new Tone.FMSynth({
+
   oscillator: {
+
     type: "square"
+
   },
+
   envelope: {
+
     attack: 0.0001, decay: 0.1, sustain: 0.3, release: 0.1
+
   },
+
   volume: -9
+
 }).toDestination();
 
 let chordSynth = new Tone.PolySynth(Tone.Synth, {
+
   oscillator: {
+
     type: "triangle"
+
   },
+
   volume: -12
+
 }).toDestination();
 
 // Samples 来自 freesound.org:
+
 // https://freesound.org/people/MTG/sounds/357432/
+
 // https://freesound.org/people/MTG/sounds/357336/
+
 // https://freesound.org/people/MTG/sounds/357546/
+
 let sampler = new Tone.Sampler({
+
   urls: {
+
     "C5": "trumpet-c5.mp3", 
+
     "D5": "trumpet-d5.mp3", 
+
     "F5": "trumpet-f5.mp3" 
+
   },
+
   baseUrl: "https://skilldrick-jscc.s3.us-west-2.amazonaws.com/",
+
   attack: 0,
+
   release: 1,
+
   volume: -24
+
 }).toDestination();
 
-////////////////
+//////////
+
 // 序列化 //
-////////////////
+
+//////////
 
 // 将字符串转换为音符或 null 的数组。
+
 // 字符串中的点变成数组中的 null 并保持静音。
+
 function mkSequence(pattern) {
+
   return pattern.split(" ").map(value => {
+
     if (value == ".") {
+
       return null;
+
     } else {
+
       return value;
+
     }
+
   });
+
 }
 
 // 将字符串转换为音符或 null 的数组。
+
 // 字符串中管道符之间的空格会变成数组中的 null 并保持静音。
+
 function mkPipeSequence(pattern) {
+
   return pattern.split("|").map(value => {
+
     if (value.trim() == " ") {
+
       return null;
+
     } else {
+
       return value;
+
     }
+
   });
+
 }
 
 let drumPattern = {
+
   kick:  "x…x…",
+
   snare: "..x…x.",
+
   hiHat: "xxxxxxxx",
+
 };
 
 let hiHatSequence = new Tone.Sequence(time => {
+
   drums.hiHat.triggerAttackRelease("16n", time);
+
 }, mkSequence(drumPattern.hiHat), "8n");
 
 let snareSequence = new Tone.Sequence(time => {
+
   drums.snare.triggerAttackRelease("16n", time);
+
 }, mkSequence(drumPattern.snare), "8n");
 
 let kickSequence = new Tone.Sequence(time => {
+
   drums.kick.triggerAttackRelease(50, "16n", time);
+
 }, mkSequence(drumPattern.kick), "8n");
 
 let lowBassSequence = new Tone.Sequence((time, note) => {
+
   lowBass.triggerAttackRelease(note, "16n", time, 0.6);
+
 }, mkPipeSequence("G2|  |  |G2|G2|  |  |  "), "8n");
 
 let highBassSequence = new Tone.Sequence((time, note) => {
+
   highBass.triggerAttackRelease(note, "16n", time, 0.3);
+
 }, mkPipeSequence("G3|F3|E3|D3|G2|D3|G3|D3"), "8n");
 
 let chords = {
+
   1: ["D4", "G4"],
+
   2: ["E4", "G4"],
+
   3: ["C4", "E4", "G4"],
+
   4: ["B3", "F4", "G4"],
+
 };
 
 function playChord(time, chordName) {
+
   let notes = chords[chordName];
+
   chordSynth.triggerAttackRelease(notes, "16n", time, 0.6);
+
 }
 
 let chordSequence1 = new Tone.Sequence((time, chordName) => {
+
   playChord(time, chordName);
+
 }, mkSequence("1…2…3..4…31…2…3..4.343"), "8n");
 
 let chordSequence2 = new Tone.Sequence((time, chordName) => {
+
   playChord(time, chordName);
+
 }, mkSequence("3…2…4..1.213"), "8n");
 
 let trumpetPart = new Tone.Part((time, note) => {
+
   sampler.triggerAttackRelease(note, "1n", time);
+
 }, [
+
   ["0:0:0", "G5"],
+
   ["0:2:0", "C5"],
+
   ["1:0:0", "G5"],
 
   ["2:0:0", "D5"],
+
   ["2:2:0", "C5"],
+
   ["3:0:0", "B4"],
 
   ["4:0:0", "G5"],
+
   ["4:2:0", "C5"],
+
   ["5:0:0", "G5"],
 
   ["6:0:0", "D5"],
+
   ["6:2:0", "C5"],
+
   ["7:0:0", "B4"],
+
   ["7:2:0", "D5"],
 
   ["8:0:0", "C5"],
+
   ["8:2:0", "C5"],
+
   ["9:0:0", "F5"],
+
   ["9:2:0", "D5"],
 
   ["10:0:0", "C5"],
+
   ["10:2:0", "E5"],
+
   ["11:0:0", "D5"],
 
   ["12:0:0", "C5"],
+
   ["12:2:0", "E5"],
+
   ["13:0:0", "F5"],
+
   ["13:2:0", "D5"],
 
   ["14:0:0", "C5"],
+
   ["14:2:0", "E5"],
+
   ["15:0:0", ["B4", "G5"]]
+
 ]);
 
 //////////
+
 // 歌曲 //
+
 //////////
 
 hiHatSequence.start("0:0:0").stop("44:0:0");
+
 snareSequence.start("0:0:0").stop("44:0:0");
+
 kickSequence.start("0:0:0").stop("44:0:0");
 
 ////////////////////
+
 // 事件处理 //
+
 ////////////////////
 
 let play = document.querySelector("#play");
+
 let playing = document.querySelector("#playing");
 
 play.addEventListener("click", () => {
+
   // 隐藏此按钮
+
   play.style = "none";
+
   playing.style = " ";
 
   Tone.start();
 
   // 修改此处从歌曲的不同部分开始播放
+
   Tone.Transport.position = "0:0:0";
+
   Tone.start();
+
 });
 ```
 
@@ -6701,10 +8494,6 @@ play.addEventListener("click", () => {
 ### 总结
 
 在本章中，你用 JavaScript 编写了一首歌曲！现在你已经熟悉了 Tone.js，可以使用它来创作你自己的歌曲。另一个有趣的尝试是算法音乐，即不是编写固定的歌曲，而是编写代码让每次运行时随机产生新的音乐。尝试这种方法的简单方法是列出一组好听的和弦，然后在任何给节拍上随机选择一个进行播放。
-
-
-
-
 
 本章将向你介绍 D3 的基础知识，为下一章做好准备。在下一章中，你将通过从外部 API 加载数据创建一个交互可视化。D3 主要使用一种名为可缩矢量图形（SVG）的 Web 图形技术，因此在深入 D3 之前，我们将先对 SVG 进行快速上手。
 
@@ -6720,16 +8509,25 @@ SVG 基于可扩展标记语言（XML），这是一种用于存储数据的语�
 
 ```
 <!DOCTYPE html>
+
 <html>
+
   <head>
+
     <title>SVG</title>
+
     <link rel="stylesheet" href="style.css">
+
   </head>
+
   <body>
+
   ❶ <svg width="600" height="600"></svg>
 
     <script src="script.js"></script>
+
   </body>
+
 </html>
 ```
 
@@ -6741,14 +8539,21 @@ Listing 14-1：用于探索 SVG 的 `index.html` 文件
 
 ```
 --snip--
+
   <body>
+
     <svg width="600" height="600">
+
     ❶ <rect width="95" height="20" x="5" y="5"
+
         stroke="red" fill="none"></rect>
+
     ❷ <text x="10" y="20" font-family="sans-serif">Hello, SVG!</text>
+
     </svg>
 
     <script src="script.js"></script>
+
 --snip--
 ```
 
@@ -6772,13 +8577,21 @@ Figure 14-1：我们的第一个 SVG 图
 
 ```
 --snip--
+
 <svg width="600" height="600">
+
 ❶ <g font-family="sans-serif" fill="blue">
+
     <text x="0" y="20">Always</text>
+
     <text x="0" y="40">Be</text>
+
     <text x="0" y="60">Coding</text>
+
   </g>
+
 </svg>
+
 --snip--
 ```
 
@@ -6790,7 +8603,9 @@ Listing 14-3：使用 `g` 元素分组
 
 ```
 --snip--
+
   <g transform="translate(100, 50)" font-family="sans-serif" fill="blue">
+
 --snip--
 ```
 
@@ -6800,7 +8615,9 @@ Listing 14-3：使用 `g` 元素分组
 
 ```
 --snip--
+
   <g transform="translate(100, 50) scale(2, 3)" font-family="sans-serif" fill="blue">
+
 --snip--
 ```
 
@@ -6812,32 +8629,37 @@ Figure 14-2：对分组元素的变换
 
 所有的变换都相对于原点 (0, 0)，除非之前的平移移动了原点。这意味着缩放会影响元素的位置，也会影响它们的尺寸。例如，当你缩放一个左上角为 (10, 10)、右下角为 (30, 30) 的正方形 2 倍时，新的角点将位于 (20, 20) 和 (60, 60)。相对于原点的 x 和 y 坐标都翻了一倍。
 
-
-
-
-
 ### 绘制圆形
 
 你可以使用 `circle` 元素绘制 SVG 圆形。属性 `cx` 和 `cy` 设置圆心的中心坐标，而 `r` 设置半径。要尝试一下，请将 `svg` 元素的内容替换为代码列表 14-4 中的代码。
 
 ```
 --snip--
+
 <svg width="600" height="600">
+
 ❶ <circle fill="#faa0a0" r="100" cx="124" cy="130"></circle>
 
 ❷ <g stroke="#944e30" stroke-width="3">
+
     <rect width="8" height="100" x="120" y="90" fill="#e1704d"></rect>
+
     <circle fill="#acd270" r="18" cx="124" cy="150"></circle>
+
     <circle fill="#fdfce2" r="18" cx="124" cy="120"></circle>
+
     <circle fill="#f8c9dc" r="18" cx="124" cy="90"></circle>
+
   </g>
+
 </svg>
+
 --snip--
 ```
 
 <samp class="SANS_Futura_Std_Book_Oblique_I_11">代码列表 14-4：绘制圆形</samp>
 
-在这个示例中，我们使用了新的 `circle` 元素，以及 `g` 和 `rect` 元素。第一个圆形 ❶ 的填充颜色为 `#faa0a0`（三文肉粉），半径为 100 像素，中心坐标为 (124, 130)。注意，我们在这里使用了十六进制颜色——请查看下一页的“十六进制颜色”框以获取更多信息。接下来，我们使用一个组 ❷ 为矩形和三个较小的圆形应用标准的边框颜色（栗子色）和宽度（3 像素），它们的填充颜色分别为绿色、黄色和玫瑰色。所有这些效果共同构成了一幅日本樱花团子（hanami dango，一种在日本樱樱花季节流行的甜点）的可爱插图，如图图 14-3 所示。
+在这个示例中，我们使用了新的 `circle` 元素，以及 `g` 和 `rect` 元器。第一个圆形 ❶ 的填充颜色为 `#faa0a0`（三文肉粉），半径为 100 像素，中心坐标为 (124, 130)。注意，我们在这里使用了十六进制颜色——请查看下一页的“十六进制颜色”框以获取更多信息。接下来，我们使用一个组 ❷ 为矩形和三个较小的圆形应用标准的边框颜色（栗子色）和宽度（3 像素），它们的填充颜色分别为绿色、黄色和玫瑰色。所有这些效果共同构成了一幅日本樱花团子（hanami dango，一种在日本樱樱花季节流行的甜点）的可爱插图，如图图 14-3 所示。
 
 ![](img/Figure_14-3.png)
 
@@ -6847,16 +8669,21 @@ Figure 14-2：对分组元素的变换
 
 ### 定义路径
 
-`path` 元素是所有 SVG 元素中最强大的，它允许你通过在不同点之间绘制直线或曲线（即“路径”）来创建自定义形状。`path` 元素的 `d` 属性（data 的缩写）是一个包含路径定义的字符串，该字符串是路径命令列表。此字符串的语法经过优化，尽可能紧凑，因此可以使用较短的字符串表示复杂的路径。这对于计算机来说是有利的，但对人类来说并不友好；不要期望这些字符串是易读的。
+`path` 元素是所有 SVG 元素中最强大的，它允许你通过在不同点之间绘制直线或曲线（即“路径”）来创建自定�形状。`path` 元素的 `d` 属性（data 的缩写）是一个包含路径定义的字符串，该字符串是路径命令列表。此字符串的语法经过优化，尽可能紧凑，因此可以使用较短的字符串表示复杂的路径。这对于计算机来说是有利的，但对人类来说并不友好；不要期望这些字符串是易读的。
 
 在下一个示例中，我们将使用 `path` 元素重新创建 HTML5 标志，从外层盾牌形状开始。将 `index.html` 中 `svg` 元素的内容替换为代码列表 14-5 中的代码。
 
 ```
 --snip--
+
 <svg width="600" height="600">
+
   <path fill="#e44d26" d="M 0 0 H 182 L 165 185 L 90 206 L 17 185 Z"/>
+
   <path fill="#f16529" d="M 91 15 H 165 L 151 173 L 91 190 Z"/>
+
 </svg>
+
 --snip--
 ```
 
@@ -6871,7 +8698,9 @@ Figure 14-2：对分组元素的变换
 此设计由两个路径组成，一个用于深色的主盾牌形状，另一个用于盾牌形状右半部分较浅的高亮部分。让我们来看深色部分的路径定义：
 
 ```
+
 M 0 0 H 182 L 165 185 L 90 206 L 17 185 Z
+
 ```
 
 这里有六条指令：
@@ -6885,10 +8714,12 @@ M 0 0 H 182 L 165 185 L 90 206 L 17 185 Z
 
 将这些命令想象成在屏幕上移动虚拟画笔：`M 0 0` 移动到 (0,0)；`H 182` 水平移动到 182；`L 165 185` 连到 (165, 185)；`L 90 206` 连到 (90, 206)；`L 17 185` 连到 (17, 185)；`Z` 结束路径。`M` 命令接收一个 (x, y) 坐标对但不绘制任何内容。`H` 命令接收一个 x 坐标并从当前位置画一条水平线。`L` 命令接收一个 (x, y) 坐标对并从当前位置画到该位置。最后，`Z` 命令关闭路径，将画笔回到起点。在英语中，这些命令的意思是：“移动到 (0,0)，画一条水平线到 182，连到 (165,185)，连到 (90,206)，连到 (17,185)，然后关闭路径”。
 
-由于我们可以使用相对坐标，`path` 元素也可以相对于当前位置进行绘制。例如，使用小写字母 `m`、`h`、`l` 表示相对于当前位置的移动或绘制。而大写字母 `M`、`H`、`L` 则使用绝对坐标。事实上，这个路径定义可以写得更紧凑：
+由于我们可以使用相对坐标，`path` 元素也可以相对于当前位置进行绘制。例如，使用小写字符 `m`、`h`、`l` 表示相对于当前位置的移动或绘制。而大写字母 `M`、`H`、`L` 则使用绝对坐标。事实上，这个路径定义可以写得更紧凑：
 
 ```
+
 m0 0h182l-17 185l-75 21l-73
+
 ```
 
 空格是为了避免歧义，但在其他情况下是可选的。得益于负数，我们能够移除大部分数字。此外，如果连续多次使用相同的命令，可以只包含一次。例如，`l-17 185-75 21` 是 `l` 的紧凑版本。**注意**：[SvgEditor](https://yqnn.io/svg-editor) 是一个非常有用的工具，用于实验路径以及转换绝对和相对命令。将这些命令想象成在屏幕上移动虚拟画笔：`m` 命令接收一个 (x, y) 坐标对但不绘制任何内容。`h` 命令接收一个 x 坐标并从当前位置画一条水平线。`l` 命令接收一个 (x, y) 坐标对并从当前位置画到该位置。最后，`z` 命令关闭路径，将画笔回到起点。在英语中，这些命令的意思是：“移动到 (0,0)，向右画线 182 单位，连到 (-17,185)，连到 (-75,21)，然后关闭路径”。SVG 还有几个额外的路径命令，主要用于绘制各种曲线。我们在这里不深入介绍，但你可以在 MDN 上找到完整列表：[developer.mozilla.org/SVG](https://developer.mozilla.org/SVG)。
@@ -6897,19 +8728,25 @@ m0 0h182l-17 185l-75 21l-73
 
 ```
 --snip--
+
 <svg width="600" height="600">
+
   <path fill="#e44d26" d="M 0 0 H 182 L 165 185 L 90 206 L 17 185 Z"/>
+
   <path fill="#f16529" d="M 91 15 H 165 L 151 173 L 91 190 Z"/>
+
   <path fill="#ebebeb" d="m 34 38 h 57 v 23 h-32 l 2 24 h 30 v 23 h-51 z"/>
+
   <path fill="#ebebeb" d="m 41 118 h 23 l 2 18 l 25 7 v 24 l-47 -13 z"/>
+
   <path fill="#fff" d="m 148 38 h-57 v 23 h 55 z"/>
+
   <path fill="#fff" d="m 143 85 h-52 v 23 h 28 l-3 30 l-25 5 v 24 l 47 -13 z"/>
+
 </svg>
+
 --snip--
 ```
-
-
-
 
 我在这里使用相对路径命令，部分是为了增加多样性，部分是因为相对数字较小，可以使代码行变得更短。当你重新加载页面时，你应该能看到完整的 HTML5 标志，如图 14-5 所示。填充颜色为 `#ebebeb`（浅灰色）的两个路径绘制了数字“5”左侧两个部分，而填充颜色为 `#fff`（白色）的两个路径绘制了数字“5”右侧两个部分。
 
@@ -6925,15 +8762,23 @@ m0 0h182l-17 185l-75 21l-73
 
 ```
 --snip--
+
 <svg width="600" height="600">
+
   <circle class="boring" r="40" cx="50" cy="50"></circle>
+
   <rect class="boring" x="120" y="10" width="80" height="80"></rect>
+
   <path class="boring" d="M 230 90 l 40 -80 l 40 80 z"></path>"
 
   <circle class="fun" r="40" cx="50" cy="180"></circle>
+
   <rect class="fun" x="120" y="140" width="80" height="80"></rect>
+
   <path class="fun" d="M 230 220 l 40 -80 l 40 80 z"></path>"
+
 </svg>
+
 --snip--
 ```
 
@@ -6949,18 +8794,29 @@ m0 0h182l-17 185l-75 21l-73
 
 ```
 .boring {
+
   fill: none;
+
   stroke: black;
+
   stroke-width: 3px;
+
 }
 
 .fun {
+
   fill: hotpink;
+
   stroke: greenyellow;
+
   stroke-width: 5px;
+
   stroke-dasharray: 10,5;
+
   stroke-linejoin: round;
+
 }
+
 ```
 
 <samp class="SANS_Futura_Std_Book_Oblique_I_11">列表 14-8：形状的样式</samp>
@@ -6973,10 +8829,15 @@ m0 0h182l-17 185l-75 21l-73
 
 ```
 --snip--
+
 .fun:hover {
+
   fill: greenyellow;
+
   stroke: hotpink;
+
 }
+
 ```
 
 <samp class="SANS_Futura_Std_Book_Oblique_I_11">列表 14-9：悬停效果</samp>
@@ -6988,9 +8849,13 @@ m0 0h182l-17 185l-75 21l-73
 我们可以使用 JavaScript 为我们的 SVG 元素添加交互性，就像可以使用 CSS 设置它们的样式一样。再次，这是因为每个 SVG 元素都是 DOM 的一部分。首先，我们将编写一个选择元素并将它们打印到控制台的脚本。将列表 14-10 中的代码添加到 `style.css`。
 
 ```javascript
+
 document.querySelectorAll(".fun").forEach(element => {
+
   console.log(element);
+
 });
+
 ```
 
 <samp class="SANS_Futura_Std_Book_Oblique_I_11">列表 14-10：选择元素</samp>
@@ -6998,28 +8863,36 @@ document.querySelectorAll(".fun").forEach(element => {
 在这个列表中，我们使用 `querySelectorAll` 方法选择所有类名为 `fun` 的元素。然后我们使用 `forEach` 方法遍历元素并将它们打印到控制台。当你运行这段代码时，你应该会在控制台中看到这些元素。
 
 ```javascript
+
 document.querySelectorAll(".fun").forEach(element => {
+
   element.setAttribute("data-offset", 0);
 
   element.addEventListener("click", event => {
+
     let offset = Number(event.target.getAttribute("data-offset"));
 
     if (event.shiftKey) {
+
       offset -= 5;
+
     } else {
+
       offset += 5;
+
     }
 
     event.target.setAttribute("data-offset", offset);
+
     event.target.setAttribute("transform", `translate(${offset}, 0)`);
+
   });
+
 });
+
 ```
 
 <samp class="SANS_Futura_Std_Book_Oblique_I_11">列表 14-11：点击移动 SVG 元素</samp>
-
-
-
 
 我们使用事件上的 `shiftKey` 属性来判断在点击鼠标时是否按下了 `SHIFT` 键。如果是，我们就从 `offset` 中减 5；否则，我们就给 `offset` 加 5。然后，我们使用 `setAttribute` ❹ 将更新后的值赋值给 `data-offset` 属性。最后，我们再次使用 `setAttribute` 方法，但这次是为了设置 `transform` SVG 属性 ❺。正如你在本章早期看到的，我们可以使用字符串 `translate(x, y)` 通过 `transform` 将元素平移一段距离。在这里，我们将平移的 `x` 值设置为 `offset` 的值，将平移的 `y` 值设置为 `0`。这意味着如果 `offset` 是正值，元素将向右移动；如果是负值，元素将向左移动。
 
@@ -7035,20 +8908,33 @@ document.querySelectorAll(".fun").forEach(element => {
 
 ```
 <!DOCTYPE html>
+
 <html>
+
   <head>
+
     <title>Data</title>
+
   </head>
+
   <body>
+
   ❶ <svg width="600" height="600">
+
       <circle cx="50" cy="50" r="10"></circle>
+
       <circle cx="100" cy="50" r="10"></circle>
+
       <circle cx="150" cy="50" r="10"></circle>
+
     </svg>
 
   ❷ <script src="https://unpkg.com/d3@7.4.4/dist/d3.js"></script>
+
     <script src="script.js"></script>
+
   </body>
+
 </html>
 ```
 
@@ -7072,8 +8958,11 @@ Listing 14-13: 选择圆
 
 ```
 d3
+
   .selectAll("circle")
+
   .attr("fill", "hotpink")
+
 ❶ .attr("r", (d, i) => 10 + i * 5);
 ```
 
@@ -7087,10 +8976,15 @@ Listing 14-14: 使用函数计算值
 
 ```
 --snip--
+
 d3
+
   .select("body")
+
   .insert("h1", "svg")
+
   .text("Hello, D3!");
+
 ```
 
 Listing 14-15: 使用 select 选择单个元素
@@ -7107,14 +9001,15 @@ D3 最重要的特性或许是它的数据绑定概念。在基于 D3 的应用�
 let numbers = [3, 2, 1];
 
 d3
+
   .selectAll("circle")
+
 ❶ .data(numbers)
+
   .attr("r", (d, i) => d * 5);
 ```
 
 Listing 14-16: 将数据绑定到我们的圆
-
-
 
 我们首先创建一个数字数组作为数据。然后，我们创建所有圆形元素的集合。`data` 方法 ❶ 将数字数组逐个绑定到圆形集合上，因此第一个圆形元素绑定了值 3，第二个绑定了 2，第三个绑定了 1。最后，我们使用 `attr` 方法根据绑定的数据将每个圆形的半径设置为一个计算出的值。正如你在上一节中看到的，如果你使用函数而不是值来设置属性，则会调用该函数来计算集合中每个元素的值。函数的 `d` 参数对应绑定到当前元素的数据。
 
@@ -7130,6 +9025,7 @@ Listing 14-16: 将数据绑定到我们的圆
 
 ```
 $0
+
 <circle cx="50" cy="50" r="15"></circle>
 ```
 
@@ -7137,6 +9033,7 @@ $0
 
 ```
 $0.__data__
+
 3
 ```
 
@@ -7152,10 +9049,15 @@ $0.__data__
 ❶ let numbers = [3, 2, 1, 2, 3];
 
 d3
+
 ❷ .select("svg")
+
   .selectAll("circle")
+
   .data(numbers)
+
 ❸ .join("circle")
+
   .attr("r", (d, i) => d * 5);
 ```
 
@@ -7169,12 +9071,19 @@ d3
 let numbers = [3, 2, 1, 2, 3];
 
 d3
+
   .select("svg")
+
   .selectAll("circle")
+
   .data(numbers)
+
   .join("circle")
+
   .attr("cx", (d, i) => (i + 1) * 50)
+
   .attr("cy", 50)
+
   .attr("r", (d, i) => d * 5);
 ```
 
@@ -7187,13 +9096,19 @@ d3
 既然我们现在使用 D3 的 `join` 方法根据数据需要创建新的 SVG 元素，就没有理由在 HTML 文件中创建它们了。如列表 14-19 所示修改 `index.html`，移除所有圆形元素，然后重新加载页面。
 
 ```html
+
 --snip--
+
   <body>
+
     <svg width="600" height="600"></svg>
 
     <script src="https://unpkg.com/d3@7.4.4/dist/d3.js"></script>
+
     <script src="script.js"></script>
+
   </body>
+
 ```
 
 列表 14-19：移除圆形元素
@@ -7205,15 +9120,23 @@ d3
 如果底层数据发生变化，我们需要再次执行连接以更新可视化。为了实现这一点，我们将数据和连接代码移动。我们可以通过在页面上添加一些按钮来向 `numbers` 数组的开头或结尾添加随机值，或者从数组中删除数字。如列表 14-20 所示更新 `index.html`。
 
 ```html
+
 --snip--
+
   <body>
+
     <div>
+
       <button id="prepend">Prepend</button>
+
       <button id="append">Append</button>
+
       <button id="drop">Drop</button>
+
     </div>
 
     <svg width="600" height="600"></svg>
+
 --snip--
 ```
 
@@ -7222,17 +9145,27 @@ d3
 刷新页面，你应该会在顶部看到三个按钮。接下来，我们将更新可视化的代码移动到一个单独函数中。用列表 14-21 中的内容替换 `script.js` 中的代码。
 
 ```javascript
+
 let numbers = [3, 2, 1];
 
 ❶ function update(data) {
+
   d3
+
     .select("svg")
+
     .selectAll("circle")
+
 ❷ .data(data)
+
     .join("circle")
+
     .attr("cx", (d, i) => (i + 1) * 50)
+
     .attr("cy", 50)
+
     .attr("r", (d, i) => d * 5);
+
 }
 
 ❸ update(numbers);
@@ -7242,34 +9175,45 @@ let numbers = [3, 2, 1];
 
 这里没有功能上的变化——我们只是创建了一个更新函数来为我们处理 SVG 更新 ❶，然后调用它 ❸。注意我们将函数参数 `data` 传递给 `.data` 方法 ❷，而不是直接传递 `numbers` 数组。
 
-
-
-
-
 接下来，我们将添加处理按钮点击的代码，这段代码会将一个 1 到 5 之间的随机浮点数插入到 `numbers` 数组的开头或结尾，或者删除数组中的最后一个元素。将列表 14-22 中的代码添加到 `script.js` 的末尾。
 
 ```
 --snip--
+
 update(numbers);
 
 ❶ function getRandomNumber() {
+
   return 1 + Math.random() * 4;
+
 }
 
 ❷ d3.select("#append").on("click", () => {
+
   numbers.push(getRandomNumber());
+
   update(numbers);
+
 });
 
 ❸ d3.select("#prepend").on("click", () => {
+
   numbers.unshift(getRandomNumber());
+
   update(numbers);
+
 });
 
 ❹ d3.select("#drop").on("click", () => {
+
   numbers.pop();
-  update(numbers);
+
+
+
+update(numbers);
+
 });
+
 ```
 
 列表 14-22：点击按钮时更新
@@ -7285,20 +9229,35 @@ update(numbers);
 与其在每次数据变化时突然地更新 D3 可视化图形，你可以使用*过渡（transitions）*来允许元素在属性改变时执行动画效果。过渡是 D3 中一个非常有用的功能，因为如果处理得当，它们能让你看到数据是如何演变的。让我们给 `update` 函数添加一个过渡，来看看它是如何工作的。按照列表 14-23 所示所示进行更改。
 
 ```
+
 --snip--
+
 function update(data) {
+
   d3
+
     .select("svg")
+
     .selectAll("circle")
+
     .data(data)
+
     .join("circle")
+
     .transition()
+
     .duration(500)
+
     .attr("cx", (d, i) => (i + 1) * 50)
+
     .attr("cy", 50)
+
     .attr("r", (d, i) => d * 5);
+
 }
+
 --snip--
+
 ```
 
 列表 14-23：添加过渡
@@ -7313,15 +9272,25 @@ function update(data) {
 你可以通过传递三个函数来定制 `join` 方法，这三个函数会在这三种可能的元素变化中的每一种被调用一次。通过这种方式，你可以指定三种不同的行为：一种用于进入元素，一种用于正在更新的元素，另一种用于退出的元素。要测试此功能，请如列表 14-25 所示修改你的更新函数。首先，这些更改产生的结果与我们在上一个列表中通过简单 join 方法获得相同。
 
 ```
+
 --snip--
+
   .data(data, d => d)
+
   .join(
+
     enter => enter.append("circle"),
+
     update => update,
+
     exit => exit.remove()
+
   )
+
   .transition()
+
 --snip--
+
 ```
 列表 14-25：带有 enter、update 和 exit 函数的 join 方法。
 
@@ -7334,34 +9303,61 @@ function update(data) {
 当你重新加载页面时，你应该看到与之前相同的行为；到目前为止，此更改没有任何任何功能上的影响。不过，既然我们已经让它运行起来，就可以改进动画以添加一些精致感。目前更新选取集中元素的向右移动动画是没问题的，但进入的元素目前从左上角飞入，而退出的元素直接消失了。让我们让进入的元素从它们的正确位置生长到到位，而退出的元素在当前位置收缩至消失。实现该行为的更改如列表 14-26 所示。
 
 ```
+
 --snip--
+
 function update(data) {
+
   d3
+
     .select("svg")
+
     .selectAll("circle")
+
     .data(data, d => d)
+
     .join(
+
       enter => enter
+
       ❶ .append("circle")
+
         .attr("cx", (d, i) => (i + 1) * 50)
+
         .attr("cy", 50)
+
         .transition()
+
         .duration(500)
+
       ❷ .attr("r", (d, i) => d * 5),
+
       update => update
+
         .transition()
+
         .duration(500)
+
       ❸ .attr("cx", (d, i) => (i + 1) * 50),
+
       exit => exit
+
         .transition()
+
         .duration(500)
+
       ❹ .attr("r", 0)
+
       ❺ .remove()
+
     );
+
 }
 
 update(numbers); 
+
 --snip--
+
 ```
 列表 14-26：精修动画。
 
@@ -7380,20 +9376,35 @@ update(numbers);
 要开始，创建一个名为 `frequency` 的新目录，并添加空的 `script.js` 和 `style.css` 文件。然后创建一个 `index.html` 文件，并将列表 14-27 中的代码加入。
 
 ```html
+
 <!DOCTYPE html>
+
 <html>
+
   <head>
+
     <title>Character Frequency</title>
+
     <link rel="stylesheet" href="style.css">
+
   </head>
+
   <body>
+
     <div>
+
     ❶ <textarea rows="5" cols="70"></textarea>
+
     </div>
+
     <script src="https://unpkg.com/d3@7.4.4/dist/d3.js"></script>
+
     <script src="script.js"></script>
+
   </body>
+
 </html>
+
 ```
 列表 14-27：用于字符频率项目的 index.html 文件。
 
@@ -7402,15 +9413,23 @@ update(numbers);
 注意，文档不包含 `svg` 元素。我们将使用 JavaScript 创建它。这是因为我们需要多次引用 `svg` 元素的宽度和高度，以确定可视化中元素的放置位置，因此在 JavaScript 中定义这些参数比在 HTML 文件中更有意义。而且既然我们将在 JavaScript 中定义宽度和高度，我们也可以在 JavaScript 中创建 `svg` 元素本身。我们现在就这么做。将列表 14-28 中的代码添加到 `script.js`。
 
 ```javascript
+
 const width = 600;
+
 const height = 600;
 
 // 向页面添加 svg 元素
+
 let svg = d3
+
   .select("body")
+
   .append("svg")
+
   .attr("width", width)
+
   .attr("height", height);
+
 ```
 列表 14-28：使用 JavaScript 创建 svg 元素。
 
@@ -7424,17 +9443,25 @@ let svg = d3
 接下来，我们将添加从文本区域读取文本并统计每个字符出现次数的代码。这为可视化生成了底层数据。每当文本发生变化时，我们需要更新数据并重绘图表。不过，目前我们只需要读取文本，计算字符频率，并将输出记录到控制台。请将 列表 14-29 中的代码代码添加到 `script.js` 的末尾。
 
 ```javascript
+
 --snip--
+
 d3.select("textarea").on(❶ "input", e => {
+
 ❷ let frequencies = {};
 
 ❸ e.target.value.split(" ").forEach(char => {
+
     let currentCount = frequencies[char] || 0;
+
     frequencies[char] = currentCount + 1;
+
   });
 
   console.log(frequencies);
+
 });
+
 ```
 
 **列表 14-29：计算字符频率**
@@ -7444,40 +9471,56 @@ d3.select("textarea").on(❶ "input", e => {
 加载页面，你应该能看到文本区域（`svg` 元素是不可见的，但如果你想检查它是否存在，可以在“元素”面板中看到它）。当你向文本区域输入文本时，你应该会在每次击键时看到控制台中都记录了对象，每次都包含文本区域中字符的频率。例如，如果你输入单词 *hello*，在输入完最后一个 *o* 后，你将得到这个对象：
 
 ```json
+
 {"h": 1, "e": 1, "l": 2, "o": 1}
+
 ```
 
 一个包含所有字符及其频率的单个对象对于记录到控制台效果良好，但我们使用 D3 渲染时，我们需要一个对象数组，每个对象描述单个字符及其相关的频率。这样，数组中的每个条目将绑定到我们柱状图中每个条形的数据（datum）。为了让图表更易读，数组应该按字符的字母顺序排序。继续以单词 *hello* 为，而不是之前显示的对象，我们需要类似这样的内容：
 
 ```json
+
 [
+
   {"char": "e", "count": 1},
+
   {"char": "h", "count": 1},
+
   {"char": "l", "count": 2},
+
   {"char": "o", "count": 1}
+
 ]
+
 ```
 
 要将数据放入此数组格式，请按照 列表 14-30 所示修改 `script.js` 的末尾。
 
 ```javascript
+
 --snip--
+
     frequencies[char] = currentCount + 1;
+
   });
 
 ❶ let data = Object.entries(frequencies).map(pair => {
+
     return {char: pair[0], count: pair[1]};
+
   });
 
 ❷ data.sort((a, b) => d3.ascending(a.char, b.char));
 
   console.log(data);
+
 });
+
 ```
 
 **列表 14-30：将频率数据转换为数组**
 
-首先，我们使用 `Object.entries` 将 `frequencies` 对象转换为一个由双元素数组组成的数组 ❶，其中第一个元素是键，第二个元素是值。我们将该数组映射为一个对象数组，其中键存储在属性 `char` 下，而值存储在属性 `count` 下。接下来，我们想要按字符对数据进行排序。`sort` 方法 ❷ 通过对每对元素 `a` 和 `b` 应用比较函数对数组中的元素进行排序，决定 `a` 应该排在 `b` 之后还是反之。这里我们使用 `d3.ascending` 比较函数，传递 `a.char` 和 `b.char`，这意味着数组将根据每个对象的 `char` 属性按字母升序排序。
+首先，我们使用 `Object.entries` 将 `frequencies` 对象转换为一个由双元素数组组成的数组 ❶，其中第一个元是键，第二个元素是值。我们将该数组映射为一个对象数组，其中键存储在属性 `char` 下，而值存储在属性 `count` 下。接下来，我们想要按字符对数据进行排序。`sort` 方法 ❷ 通过对每对元素 `a` 和 `b` 应用比较函数对数组中的元素进行排序，决定 `a` 应该排在 `b` 之后还是反之。这里我们使用 `d3.ascending` 比较函数，传递 `a.char` 和 `b.char`，这意味着数组将根据每个对象的 `char` 属性按字母升序排序。
 
 重新加载页面，现在你应该能看到当文本区域中的文本变化时，这个新的数据数组会被记录。
 
@@ -7486,32 +9529,51 @@ d3.select("textarea").on(❶ "input", e => {
 现在我们已经有了所需格式的数据，可以将其渲染为柱状图。我们目前将从一个基础、原始的渲染开始，即简单的创建宽度与字符频率成比例的 `svg rect` 元素。我们将在此基础上逐步构建出一个包含更多信息的可视化结果。按照 列表 14-31 所示修改 `script.js`。
 
 ```javascript
+
 --snip--
+
 // 向页面添加一个 svg 元素
+
 let svg = d3
+
   .select("body")
+
   .append("svg")
+
   .attr("width", width)
+
   .attr("height", height);
 
 ❶ function update(data) {
+
   svg
+
     .selectAll("rect")
+
     .data(data)
+
   ❷ .join("rect")
+
     .attr("width", (d, i) => d.count * 5)
+
     .attr("height", 10)
+
     .attr("x", 20)
+
     .attr("y", (d, i) => i * 20);
+
 }
 
 d3.select("textarea").on("input", e => {
+
 --snip--
 
   data.sort((a, b) => d3.ascending(a.char, b.char));
 
 ❸ update(data);
+
 });
+
 ```
 
 **列表 14-31：定义更新函数**
@@ -7545,11 +9607,17 @@ D3 中的 `scale`（比例尺）是将某些数据值转换为视觉值的一种
 D3 缩放的精妙之处在于，缩放因子可以根据 `domain` 的变化而动态改变。这样，即使最大数据值发生变化，当前的最大数据值也可以始终映射到整个视觉范围。为了为我们的条形图实现这种动态缩放，我们需要跟踪所有数据中的最大计数值，并将其用作 `domain` 的上边界。结果是，如果最大计数增加，未达到最大计数的条形都将相应缩小，而达到最大计数的条形将继续占据整个水平范围。例如，假设我们条形形的视觉范围为 `[0, 500]`，我们有以下数据：
 
 ```
+
 [
+
   {"char": "a", "count": 1},
+
   {"char": "b", "count": 1},
+
   {"char": "c", "count": 2}
+
 ]
+
 ```
 
 我们数据的 `domain` 将是 `[0, 2]`。"c" 条形宽为 500 个单位，而 "a" 和 "b" 条形每个宽 250 个单位。如果我们再添加两个 c，“c" 条形仍为 500 个单位宽，但现在 "a" 和 "b" 条形每个将变为 125 个单位宽。
@@ -7557,31 +9625,51 @@ D3 缩放的精妙之处在于，缩放因子可以根据 `domain` 的变化而�
 现在让我们来实现这种动态水平缩放。请使用列表 14-32 所示的代码修改你的脚本。
 
 ```
+
 --snip--
+
 // 在页面上添加 svg 元素
+
 let svg = d3
+
   .select("body")
+
   .append("svg")
+
   .attr("width", width)
+
   .attr("height", height);
 
 let margin = {top: 20, right: 10, bottom: 20, left: 50};
 
 function update(data) {
+
 ❶ let xScale = d3.scaleLinear()
+
     .domain([0, d3.max(data, d => d.count)])
+
     .range([margin.left, width - margin.right]);
 
   svg
+
     .selectAll("rect")
+
     .data(data)
+
     .join("rect")
+
   ❷ .attr("width", (d, i) => xScale(d.count) - xScale(0))
+
     .attr("height", 10)
+
   ❸ .attr("x", xScale(0))
+
     .attr("y", (d, i) => i * 20);
+
 }
+
 --snip--
+
 ```
 
 <samp class="SANS_Futura_Std_Book_Oblique_I_11">列表 14-32: 为条形宽度创建比例尺</samp>
@@ -7621,23 +9709,35 @@ function update(data) {
 我们的图表将有两个轴：一个用于显示计数值的顶部轴，以及一个用于显示字符值的左侧轴。首先，我们将添加 `g` 元素，如代码列表 14-34 所示。
 
 ```
+
 --snip--
+
 let margin = {top: 20, right: 10, bottom: 20, left: 50};
 
 // Top axis container
+
 ❶ let topContainer = svg
+
   .append("g")
+
   .attr("id", "top")
+
   .attr("transform", ❷ `translate(0, ${margin.top})`);
 
 // Left axis container
+
 ❸ let leftContainer = svg
+
   .append("g")
+
   .attr("id", "left")
+
   .attr("transform", ❹ `translate(${margin.left}, 0)`);
 
 function update(data) {
+
 --snip--
+
 ```
 
 代码列表 14-34：添加包含顶部和左侧轴的 g 元素
@@ -7647,10 +9747,15 @@ function update(data) {
 现在我们已经有了容器，就可以绘制轴了。对 `update` 函数进行如代码列表 14-35 所示的修改。
 
 ```
+
 --snip--
+
   let yScale = d3.scaleBand()
+
     .domain(data.map(d => d.char))
+
     .range([margin.top, height - margin.bottom])
+
     .padding(0.5);
 
   let topAxis = d3.axisTop(xScale);
@@ -7658,16 +9763,23 @@ function update(data) {
   let leftAxis = d3.axisLeft(yScale);
 
   topContainer
+
     .call(topAxis);
 
   leftContainer
+
     .call(leftAxis);
 
   svg
+
     .selectAll("rect")
+
     .data(data)
+
     .join("rect")
+
 --snip--
+
 ```
 
 代码列表 14-35：绘制轴
@@ -7691,12 +9803,19 @@ function update(data) {
 我们在这里更希望域扩展到 16，以便给出一个更好好看的轴。幸运的是，第二个问题很容易修复。`D3` 比例尺有一个很好的方法，可以将它们的域扩展到下一个“圆整”数字，在这种情况下，这意味着下一个会绘制刻度的数字。代码列表 14-36 显示了如何引入这种方法。
 
 ```
+
 --snip--
+
   let xScale = d3.scaleLinear()
+
     .domain([0, d3.max(data, d => d.count)])
+
     .range([margin.left, width - margin.right])
+
     .nice();
+
 --snip--
+
 ```
 
 代码列表 14-36：让我们的 x 比例尺“nice”
@@ -7704,21 +9823,31 @@ function update(data) {
 当你刷新页面并再次输入 15 个相同的字符时，你会发现轴现在扩展到了 16。只渲染整数需要更多的努力。这里的基本方法是获取刻度值，过滤它们只保留整数，然后在轴上设置这些刻度值。此外，我们还希望更改数字渲染以排除小数点，因此我们渲染 1 而不是 1.0。这些更改在代码列表 14-37 所示。
 
 ```
+
 --snip--
+
   let yScale = d3.scaleBand()
+
   .domain(data.map(d => d.char))
+
   .range([margin.top, height - margin.bottom])
+
   .padding(0.5);
 
 ❶ let topAxisTicks = xScale.ticks()
+
     .filter(tick => Number.isInteger(tick));
 
   let topAxis = d3.axisTop(xScale)
+
   ❷ .tickValues(topAxisTicks)
+
   ❸ .tickFormat(d3.format("d"));
 
   let leftAxis = d3.axisLeft(yScale); 
+
 --snip--
+
 ```
 
 代码列表 14-37：在顶部轴上渲染整数刻度
@@ -7732,7 +9861,7 @@ function update(data) {
 
 ### 使用 CSS 和正则表达式进行样式设计
 
-接下来，我们将使用一些 CSS 样式改进图表的外观。为了更好地区分不同类型的字符，我们将根据条形是否是小写字母、大写字母、数字还是其他字符，为它们赋予不同的颜色。为了实现这一点，我们需要一个能够区分这些类型字符的函数。该函数将使用`正则表达式`（regular expressions），这是一种在文本字符串中指定模式并然后判断其他字符串是否匹配这些模式的方法。
+接下来，我们将使用一些 CSS 样式改进图表的外观。为了更好地区分不同类型的字符，我们将根据条形是否是小写字母、大写字母、数字还是其他字符，为它们赋予不同的颜色。为了实现这一点，我们需要一个能够区分这些类型字符的函数。该函数将使用`正则表达式`（regular expressions），这是一种在文本字符串中指定模式并然后判断其他字符串是否匹��这些模式的方法。
 
 > **注意**
 
@@ -7743,10 +9872,15 @@ JavaScript 拥有一种正则表达式字面量语法，由正斜杠分隔。例
 你可以使用正则表达式的 `test` 方法来查看特定字符串是否匹配。以下是 JavaScript 控制台中的示例：
 
 ```
+
 /^hi/.test("hi there");
+
 true
+
 /^hi/.test("Chicken");
+
 false
+
 ```
 
 字符串 "hi there" 通过了测试，因为 `hi` 出现在字符串的开头，而 "Chicken" 则没有通过。
@@ -7754,65 +9888,107 @@ false
 你可以结合使用 `^` 和 `$` 创建一个必须匹配整个字符串的正则表达式。例如，`/^hi$/` 将仅匹配字符串 "hi" 而不匹配其他任何内容，如下所示：
 
 ```
+
 /^hi$/.test("hi");
+
 true
+
 /^hi$/.test("him");
+
 false
+
 ```
 
 要匹配字符范围而不是单个字符，请使用方括号和连字符描述该范围。例如，`/[a-z]/` 匹配从 `a` 到 `z` 的任何小写字母。正则表达式 `/^[A-Z][a-z]$/` 匹配包含一个大写字母后跟一个小写字母且没有有其他字符的字符串。在你的控制台中尝试一下：
 
 ```
+
 /^[A-Z][a-z]$/.test("Hi");
+
 true
+
 /^[A-Z][a-z]$/.test("iH");
+
 false
+
 /^[A-Z][a-z]$/.test("Hip");
+
 false
+
 ```
 
 对于此项目，我们需要三个正则表达式：`/^[a-z]$/`（匹配单个小写字母）、`/^[A-Z]$/`（匹配单个大写字母）和 `/^[0-9]$/`（匹配单个数字）。如果一个字符不匹配其中任何一个表达式，我们就知道它是其他类型的字符，比如空格或标点符号。查看列表 14-38 中新的 `getClass` 函数，它使用这些正则表达式为给定字符的条形选择 CSS 类名。将此函数添加到 `script.js` 中，紧邻更新函数之前。
 
 ```
+
 --snip--
+
 // 左侧轴容器
+
 let leftContainer = svg
+
   .append("g")
+
   .attr("id", "left")
+
   .attr("transform", `translate(${margin.left}, 0)`);
 
 function getClass(char) {
+
   if (/^[a-z]$/.test(char)) {
+
     return "lower";
+
   } else if (/^[A-Z]$/.test(char)) {
+
     return "upper";
+
   } else if (/^[0-9]$/.test(char)) {
+
     return "number";
+
   } else {
+
     return "other";
+
   }
+
 }
 
 function update(data) {
+
 --snip--
+
 ```
 
 **列表 14-38: getClass 函数**
 
-该函数根据提供的正则表达式对字符进行测试，并返回相应的类名："lower"、upper"、number" 或 "other"。接下来，我们将更新渲染代码，使用此函数为每个 `rect` 元素设置类名，如列表 14-39 所示。
+该函数根据提供的正则表达对字符进行测试，并返回相应的类名："lower"、upper"、number" 或 "other"。接下来，我们将更新渲染代码，使用此函数为每个 `rect` 元素设置类名，如列表 14-39 所示。
 
 ```
+
 --snip--
+
   svg
+
     .selectAll("rect")
+
     .data(data)
+
     .join("rect")
+
     .attr("width", (d) => xScale(d.count))
+
     .attr("height", yScale.bandwidth())
+
     .attr("x", (d) => xScale(d.char))
+
     .attr("y", (d) => yScale(d.char))
+
     .attr("class", (d) => getClass(d.char));
+
 --snip--
+
 ```
 
 **列表 14-39: 根据字符应用类名**
@@ -7820,20 +9996,31 @@ function update(data) {
 现在每个 `rect` 元素都将根据字符拥有一个类名。最后一步是编写 CSS，为每个类名设置不同的填充颜色。将列表 14-40 中的 CSS 代码添加到 `style.css` 中。
 
 ```css
+
 .lower {
+
   fill: purple;
+
 }
+
 .upper {
+
   fill: orangered;
+
 }
 
 .number {
+
   fill: green;
+
 }
 
 .other {
+
   fill: #555;
+
 }
+
 ```
 
 **列表 14-40: 定义不同的样式**
@@ -7851,24 +10038,39 @@ function update(data) {
 通常需要通过修复数据包含的错误或不规则之处来清洗数据集。例如，我们目前条形图方法的一个问题是，不同的空白字符显示为不同的条形，且每个标签都是不可见的（因为标签的内容只是空白）。这些空白字符包括空格、换行符、制表符以及通过不同组合组合输入的各种其他空格（例如不换行空格，在 macOS 上使用 OPTION-space，在 Windows 上使用 CTRL-SHIFT-space）。为了修复这个问题，我们在字符计数之前将所有空白字符转换为相同的 `"<space>"` 字符串，这样所有空白将由一个具有可读标签的条形可视化。如列表 14-41 所示更新你的 `script.js` 文件。这些更新位于文件末尾。
 
 ```
+
 --snip--
+
 function standardizeSpace(char) {
+
 ❶ if (char.trim() == " ") {
+
     return "<space>";
+
   } else {
+
     return char;
+
   }
+
 }
 
 d3.select("textarea").on("input", e => {
+
   let frequencies = {};
 
   e.target.value.split(" ").forEach(char => {
+
   ❷ let standardized = standardizeSpace(char);
+
     let currentCount = frequencies[standardized] || 0;
+
     frequencies[standardized] = currentCount + 1;
+
   });
+
 --snip--
+
 ```
 
 **列表 14-41: 标准化空白字符**
@@ -7885,17 +10087,25 @@ d3.select("textarea").on("input", e => {
 我们的最后一个任务是为轴和柱状图添加动画。这将更容易看到新元素的添加以及现有元素计数的变化。要为轴添加动画，我们只需要在 `update` 函数内部的 `topContainer` 和 `leftContainer` 选择中添加对 `transition` 的调用，如 Listing 14-42 所示。
 
 ```
+
 --snip--
+
 let leftAxis = d3.axisLeft(yScale);
 
 topContainer
+
   .transition()
+
   .call(topAxis);
 
 leftContainer
+
   .transition()
+
   .call(leftAxis);
+
 --snip--
+
 ```
 
 Listing 14-42：为轴添加动画
@@ -7905,36 +10115,65 @@ Listing 14-42：为轴添加动画
 我们为柱状图添加过渡效果有两种选择：我们可以保留现有的 join 代码并仅添加单个 `transition` 调用，或者我们可以使用之前描述的高级 join 技术，这允许我们根据元素是进入（entering）、更新（updating）还是退出（exiting）来定制过渡。正如你可能猜到的，我们将采用高级版本！你可以在 Listing 14-43 中找到更新后的 update 代码。
 
 ```
+
 --snip--
+
   leftContainer
+
     .transition()
+
     .call(leftAxis);
 
   svg
+
     .selectAll("rect")
+
   ❶ .data(data, d => d.char)
+
     .join(
+
     ❷ enter => enter
+
         .append("rect")
+
         .attr("x", xScale(0))
+
         .attr("y", (d, i) => yScale(d.char))
+
         .attr("class", d => getClass(d.char))
+
         .transition()
+
         .attr("width", d => xScale(d.count) - xScale(0))
+
         .attr("height", yScale.bandwidth()),
+
     ❸ update => update
+
         .transition()
+
         .attr("width", d => xScale(d.count) - xScale(0))
+
         .attr("height", yScale.bandwidth())
+
         .attr("y", (d, i) => yScale(d.char)),
+
     ❹ exit => exit
+
         .transition()
+
         .attr("width", 0)
+
         .attr("height", 0)
+
         .remove()
+
     );
+
 }
+
 --snip--
+
 ```
 
 Listing 14-43：为柱状图添加动画
@@ -7966,17 +10205,29 @@ Listing 14-43：为柱状图添加动画
 开始之前，创建一个名为 `github` 的新目录，并添加空的 `style.css` 和 `script.js` 文件。然后创建一个 `index.html` 文件并添加 Listing 15-1 中的代码。
 
 ```
+
 <!DOCTYPE html>
-<html
+
+<html>
+
   <head>
+
     <title>GitHub</title>
+
     <link rel="stylesheet" href="style.css">
+
   </head>
+
   <body>
+
     <script src="https://unpkg.com/d3@7.4.4/dist/d3.js"></script>
+
     <script src="script.js"></script>
+
   </body>
+
 </</html>
+
 ```
 
 Listing 15-1：用于我们的 GitHub Search API 可视化的 index.html 文件
@@ -7985,11 +10236,14 @@ Listing 15-1：用于我们的 GitHub Search API 可视化的 index.html 文件
 
 ### 获取数据
 
-现在让我们尝试从 GitHub Search API 获取一些数据。为了做到，我们需要将数据请求格式化为 URL 的一部分。访问该 URL 即可获取数据。整个 URL（包括我们将使用的搜索查询）如下（注意为了适应页面，它被分成了两行）：
+现在让我们尝试从 GitHub Search API 获取一些数据。为了做到，我们需要将数据请求格式化为 URL 的一部分。访该 URL 即可获取数据。整个 URL（包括我们将使用的搜索查询）如下（注意为了适应页面，它被分成了两行）：
 
 ```
+
 https://api.github.com/search/repositories?q=language%3Ajavascript%20stars%3A
+
 %3E10000&per_page=20&sort=stars
+
 ```
 
 
@@ -8001,25 +10255,35 @@ URL 包含两个部分：基础 URL（base URL），它让我们访问 API；以
 为了简化操作，我们将编写一个函数，它接收一个包含未编码查询字符串参数的对象，并将其转换为格式正确且编码后的 URL。将 Listing 15-2 中的代码添加到 `script.js`。
 
 ```javascript
+
 function getUrl() {
+
 ❶ let baseUrl = "https://api.github.com/search/repositories";
 
 ❷ let params = {
+
     q: "language:javascript stars:>10000",
+
     per_page: 20,
+
     sort: "stars"
+
   };
 
 ❸ let queryString = Object.entries(params).map(pair => {
+
     return `${pair[0]}=${encodeURIComponent(pair[1])}`;
+
   }).join("&");
 
 ❹ return `${baseUrl}?${queryString}`;
+
 }
 
 let url = getUrl();
 
 console.log(url);
+
 ```
 
 <samp class="SANS_Futura_Std_Book_Oblique_I_11">Listing 15-2: 创建 URL</samp>
@@ -8033,12 +10297,17 @@ console.log(url);
 要将 JSON 数据引入你的应用程序，你可以使用 D3 的 `json` 辅助方法，它可以从指定的 URL 获取 JSON。如 Listing 15-3 所示更新 `script.js` 的末尾。
 
 ```javascript
+
 --snip--
+
 let url = getUrl();
 
 d3.json(url).then(data => {
+
   console.log(data);
+
 });
+
 ```
 
 <samp class="SANS_Futura_Std_Book_Oblique_I_11">Listing 15-3: 获取 JSON 数据</samp>
@@ -8062,32 +10331,49 @@ d3.json(url).then(data => {
 为了创建图表，我们首先必须创建一个包含它的 `svg` 元素以及两个轴的 `g` 元素。在这种情况下，轴位于底部和左侧。将 Listing 15-4 中的代码添加到 `script.js` 的开头，位于 `getUrl` 函数之前。
 
 ```javascript
+
 const width = 600;
+
 const height = 400;
 
 let svg = d3
+
   .select("body")
+
 ❶ .append("svg")
+
   .attr("width", width)
+
   .attr("height", height);
 
 ❷ let margin = {top: 20, right: 10, bottom: 20, left: 50};
 
 // 底部轴容器
+
 let bottomContainer = svg
+
 ❸ .append("g")
+
   .attr("id", "bottom")
+
   .attr("transform", `translate(0, ${height - margin.bottom})`);
 
 // 左侧轴容器
+
 let leftContainer = svg
+
 ❹ .append("g")
+
   .attr("id", "left")
+
   .attr("transform", `translate(${margin.left}, 0)`);
 
 function getUrl() {
+
 --snip--
+
 }
+
 ```
 
 
@@ -8101,37 +10387,57 @@ function getUrl() {
 创建好元素后，我们就可以开始编写更新函数，该函数将绘制可视化图形。首先，我们将根据数据创建比例尺并绘制坐标轴。按照代码列表 15-5 所示对 `script.js` 进行修改。
 
 ```javascript
+
 --snip--
+
 // Left axis container
+
 let leftContainer = svg
+
   .append("g")
+
   .attr("id", "left")
+
   .attr("transform", `translate(${margin.left}, 0)`);
 
 function update(items) {
+
 ❶ let xScale = d3.scaleBand()
+
     .domain(items.map(d => d.full_name))
+
     .range([margin.left, width - margin.right])
+
     .padding(0.3);
 
   let yScale = d3.scaleLinear()
+
   ❷ .domain([0, d3.max(items, d => d.stargazers_count)])
+
     .range([height - margin.bottom, margin.top])
+
     .nice();
 
 ❸ let bottomAxis = d3.axisBottom(xScale);
+
   let leftAxis = d3.axisLeft(yScale);
 
 ❹ bottomContainer.call(bottomAxis);
+
   leftContainer.call(leftAxis);
+
 }
 
 function getUrl() {
+
 --snip--
 
 d3.json(url).then(data => {
+
 ❺ update(data.items);
+
 });
+
 ```
 
 代码列表 15-5: 绘制坐标轴
@@ -8149,23 +10455,35 @@ d3.json(url).then(data => {
 鉴于我们在这里处理如此巨大的数字（而且每天都在增大），可以使用 SI 前缀（如用 `k` 表示 1,000）来提高可读性。在 D3 中通过正确的数字格式可以轻松实现。在进行此更改的同时，我们还将移除底部轴的刻度。请参代码列表 15-6 查看这些更改。
 
 ```javascript
+
 --snip--
+
   let yScale = d3.scaleLinear()
+
     .domain([0, d3.max(items, d => d.stargazers_count)])
+
     .range([height - margin.bottom, margin.top])
+
     .nice();
 
   let bottomAxis = d3
+
     .axisBottom(xScale)
+
   ❶ .tickValues([]);
 
   let leftAxis = d3
+
     .axisLeft(yScale)
+
   ❷ .tickFormat(d3.format("~s"));
 
   bottomContainer.call(bottomAxis);
+
   leftContainer.call(leftAxis);
+
 --snip--
+
 ```
 
 代码列表 15-6: 清理比例尺
@@ -8183,22 +10501,35 @@ d3.json(url).then(data => {
 现在坐标轴已经绘制完毕，我们需要绘制条形本身。将代码列表 15-7 中的代码添加到更新函数的末尾。
 
 ```javascript
+
 --snip--
+
   bottomContainer.call(bottomAxis);
+
   leftContainer.call(leftAxis);
 
   svg
+
     .selectAll("rect")
+
     .data(items, ❶ d => d.full_name)
+
     .join("rect")
+
     .attr("x", d => xScale(d.full_name))
+
   ❷ .attr("y", d => yScale(d.stargazers_count))
+
     .attr("width", xScale.bandwidth())
+
   ❸ .attr("height", d => yScale(0) - yScale(d.stargazers_count));
+
 }
 
 function getUrl() {
+
 --snip--
+
 ```
 
 代码列表 15-7: 绘制条形
@@ -8220,29 +10551,51 @@ function getUrl() {
 目前的图表没有提供任何识别每个条形代表哪个仓库的方法。解决这个问题有多种方法（例如，垂直或倾斜方向的刻度标签，或者某种类型的 `tooltip`，即悬停在条形上时弹出的文本字段），但对于本项目，我们将添加一个永久的侧边栏，当你悬停在条形上时它会显示该条形的更多信息。首先，我们将在 `index.html` 中添加侧边栏的 HTML，如列表 15-8 所示。
 
 ```
+
 --snip--
+
   <body><body>
+
     <div id="sidebar">
+
       <div id="info" class="box">
+
         <p class="repo">
+
           <span class="label">Repository（仓库）</span>
+
         ❶ <span class="value"><a target="_blank"></a></span></span>
+
         </p>
+
         <p class="license">
+
           <span class="label">License（许可证）</span>
+
           <span class="value"></span>
+
         </p>
+
         <p class="stars">
+
           <span class="label">Stars（星数）</span>
+
           <span class="value"></span>
+
         </p>
+
       </div>
+
     </div>
 
     <script src="https://unpkg.com/d3@7.4.4/dist/d3.js"></script>
+
     <script src="script.js"></script>
+
   </body></body>
+
 --snip--
+
 ```
 
 ### 列表 15-8：向 index.html 添加侧边栏 HTML
@@ -8251,55 +10604,80 @@ function getUrl() {
 
 `info` `div` 将显示仓库名称、许可证类型和星数。我们使用 `span` 元素来包裹文本的部分。`span` 是一个像 `div` 一样的容器元素，但与创建新块的 `div` 元素不同，`span` 是一个内联元素，因此它可以包含行文本的一部分而不产生新行。稍后，当你在悬停在条形上时，我们将更新 `value` spans 的内容，以显示与该条形相关的信息。
 
-其中一个 `span` 元素包含一个 `a` 元素 ❶，它创建指向另一个页面或网站的超链接。链接的 URL 通过 `href` 属性指定，我们将稍后动态地设置它。`target="_blank"` 属性指示浏览器在新标签页或窗口中打开链接。
+其中一个 `span` 元素包含一个 `a` 元素 ❶，它创建指向另一个页面或网站的超链接。链的 URL 通过 `href` 属性指定，我们将稍后动态地设置它。`target="_blank"` 属性指示浏览器在新标签页或窗口中打开链接。
 
 侧边栏在现阶段看起来有点丑，所以让我们添加一些 CSS。将列表 15-9 中的代码添加到 `style.css` 中。
 
 ```
+
 body {
+
 ❶ display: flex;
+
   align-items: flex-start;
+
   font-family: Arial, Helvetica, sans-serif;
+
 }
 
 .box {
+
   padding: 0px 15px 0px 15px;
+
   border: 1px solid #888;
+
   margin-bottom: 15px;
+
 }
 
 #info .label {
+
   font-weight: bold;
+
   display: block;
+
 }
 
 #info a {
+
   text-decoration: none;
+
 }
 
 #info a:hover {
+
   text-decoration: underline;
+
 }
+
 ```
 
 ### 列表 15-9：侧边栏样式设置
 
-对于本项目，我们使用一种名为 `flexbox` ❶ 的 CSS 技术，这是 CSS 规范中较新的添加。Flexbox 使定义布局变得容易得多，特别是那些可以在各种屏幕和视口大小上灵活工作的布局。Flexbox 布局有两个主要组件：`flex container`（弹性容器）和 `flex items`（弹性项目）。`flex container` 是父元素，定义了它的子弹性项目（容器的直接子元素的大小以及它们的流向方式。在我们的情况下，`flex container` 是 `body` 元素，而 `flex items` 是 `svg` 元素和 `#sidebar` 元素。默认情况下，项目从左到右排列（这意味着 `#sidebar` 元素将出现在屏幕左侧，其右侧是 `svg` 元素）。声明 `align-items: flex-start;` 表示项目将对齐到父容器的顶部。
+对于本项目，我们使用一种名为 `flexbox` ❶ 的 CSS 技术，这是 CSS 规范中较新的添加。Flexbox 使定义布局变得容易得多，特别是那些可以在各种屏幕和视口大小上灵活工作的布局。Flexbox 布局有两个主要组件：`flex container`（弹性容器）和 `flex items`（弹性项目）。`flex container` 是父元素，定义了它的子弹性项目（容器的直接子元�的大小以及它们的流向方式。在我们的情况下，`flex container` 是 `body` 元素，而 `flex items` 是 `svg` 元素和 `#sidebar` 元素。默认情况下，项目从左到右排列（这意味着 `#sidebar` 元素将出现在屏幕左侧，其右侧是 `svg` 元素）。声明 `align-items: flex-start;` 表示项目将对齐到父容器的顶部。
 
 > **注意**
 
 > 如果你想学习更多关于 flexbox 的知识，请查看 [`css-tricks.com/snippets/css/a-guide-to-flexbox/`](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)。
 
-目前 `svg` 元素被追加到 body 元素，这意味着它位于侧边栏之后，由于布局原因，我们希望它在之前。为了实现这一点，我们在创建 `svg` 元素时需要从 `append` 方法切换到 `insert` 方法，因为后者允许我们指定插入到某个元素之前。`script.js` 的相应更改如列表 15-10 所示。
+目前 `svg` 元素被追加到 body 元素，这意味着它位于侧边栏之后，由于布局原因，我们希望它在之前。为了实现这一点，我们在创建 `svg` 元素时需要从 `append` 方法切换到 `insert` 方法，因为后者允许我们指指定插入到某个元素之前。`script.js` 的相应更改如列表 15-10 所示。
 
 ```
+
 --snip--
+
 let svg = d3
+
   .select("body")
+
   .insert("svg", "#sidebar")
+
   .attr("width", width)
+
   .attr("height", height);
+
 --snip--
+
 ```
 
 ### 列表 15-10：在侧边栏之前插入 svg 元素
@@ -8309,25 +10687,39 @@ let svg = d3
 在我们编写在侧边栏显示仓库详情的代码之前，我们需要一个函数来获取仓库的许可证。访问其他信息将非常简单，但并不是所有仓库都有许可证，因此我们的函数必须处理没有可用数据的情况。在 `script.js` 中 `update` 函数之前插入以下代码。
 
 ```
+
 --snip--
+
 // 左轴
+
 let leftContainer = svg
+
   .append("g")
+
   .attr("id", "left")
+
   .attr("transform", `translate(${margin.left}, 0)`);
 
 function getLicense(d) {
+
 ❶ let license = d.license?.name;
 
 ❷ if (!license) {
+
     return "No License";
+
   } else {
+
     return license;
+
   }
+
 }
 
 function update(items) {
+
 --snip--
+
 ```
 
 ### 列表 15-11：getLicense 函数
@@ -8337,19 +10729,31 @@ function update(items) {
 现在我们可以添加在悬停在条形上时更新侧边栏的代码。我们将通过向 `rect` 元素添加 `mouseover` 事件处理程序来实现。使用列表 15-12 中的代码更新 `script.js`。这段代码位于 `update` 函数的末尾。
 
 ```
+
 --snip--
+
     .attr("width", xScale.bandwidth())
+
     .attr("height", d => yScale(0) - yScale(d.stargazers_count))
+
     .on("mouseover", (e, d) => {
+
       let info = d3.select("#info");
+
       info.select(".repo .value a").text(d.full_name).attr("href", d.html_url); 1
+
       info.select(".license .value").text(getLicense(d));
+
       info.select(".stars .value").text(d.stargazers_count);
+
     });
+
 }
 
 function getUrl() {
+
 --snip--
+
 ```
 
 
@@ -8358,7 +10762,7 @@ function getUrl() {
 
 # 列表 15-12: 悬停时更新侧边栏
 
-D3 事件处理器在调用时带有两个参数：事件对象（`e`）和绑定到触发事件元素上的数据（`d`）。我们在处理器中执行的第一件事是选择 `#info` 元素，因为我们想要修改的所有元素都是该元素的子元素。然后，我们更新 `.repo` 元素内部 `.value` 元素内部的 `a` 元素❶（参考列表 15-8 或查看 `index.html` 以回想 HTML 结构）。我们正在同时设置该元素的文本内容和 `href` 属性。这样做的效果是创建一个指向仓库的链接，并将仓库的完整名称作为链接文本。类似地，我们将 `.value .license` 元素的文本设置为 `getLicense` 函数针对该数据项返回的任何内容，并将 `.stars .value` 元素的文本设置为星数数量。
+D3 事件处理器在调用时带有两个参数：事件对象（`e`）和绑定到触发事件元素上的数据（`d`）。我们在处理器中执行的第一件事是选择 `#info` 元素，因为我们想要修改的所有元素都是该元素的子元素。然后，我们更新 `.repo` 元素内部 `.value` 元素内部的 `a` 元素❶（参考列表 15-8 或查看 `index.html` 以回想 HTML 结构）。我们正在同时设置该元素的文本内容和 `href` 属性。这样做的效果是创建一个指向仓库的链接，并将仓库的完整名称作为链接文本。类似的，我们将 `.value .license` 元素的文本设置为 `getLicense` 函数针对该数据项返回的任何内容，并将 `.stars .value` 元素的文本设置为星数数量。
 
 重新加载页面并尝试悬停在一些条形图上。你应该能看到类似图 15-4 的效果。
 
@@ -8373,19 +10777,26 @@ D3 事件处理器在调用时带有两个参数：事件对象（`e`）和绑�
 为了在视觉上传递额外信息，我们将根据许可证类型对条形进行颜色编码。D3 允许你创建标尺，其输入（域）是值，输出（范围）是颜色。你将在列表 15-13 中看到如何实现这一点。
 
 ```javascript
+
 --snip--
+
 function update(items) {
+
 ❶ let licenses = new Set(items.map(d => getLicense(d)));
 
 ❷ let colorScale = d3.scaleOrdinal()
+
     .domain(licenses)
+
     .range(d3.schemeCategory10);
 
   let xScale = d3.scaleBand()
---snip--
-```
 
-<samp class="SANS_Futura_Std_Book_Oblique_I_11">列表 15-13：为许可证创建颜色标尺</samp>
+--snip--
+
+
+
+列表 15-13：为许可证创建颜色标尺
 
 首先，我们需要收集所有唯一的许可证名称。为了做到这一点，我们对 `items` 进行 `map` 操作，并为每一项调用我们的 `getLicense` 函数❶。这产生了一个许可证名称数组。在同一行中，我们将结果数组传递给 `Set` 构造函数。在编程术语中，`set` 是唯一项目的集合，因此 `Set` 构造函数可以接收项数组并过滤掉任何重复项。在 JavaScript 中，集合会像数组一样维护顺序。
 
@@ -8393,8 +10804,11 @@ function update(items) {
 
 ```javascript
 d3.schemeCategory10;
-(10) ['#1f77b4', '#ff7f0e', '#2ca02c', '#d62728', '#9467bd', '#8c564b', 
- '#e377c2', '#7f7f7f', '#bcbd22', '#17becf']
+```
+
+输出：
+```
+(10) ['#1f77b4', '#ff7f0e', '#2ca02c', '#d62728', '#9467bd', '#8c564b', '#e377c2', '#7f7f7f', '#bcbd22', '#17becf']
 ```
 
 集合中的每个许可证将根据索引映射到这些颜色中的一种。如果许可证超过 10 个，颜色将循环回到开头（第 11 和第 12 个许可证将使用与第一个和第二个相同的颜色）。
@@ -8415,7 +10829,7 @@ d3.schemeCategory10;
 --snip--
 ```
 
-<samp class="SANS_Futura_Std_Book_Oblique_I_11">列表 15-14：设置 rect 的填充颜色</samp>
+列表 15-14：设置 rect 的填充颜色
 
 在将许可证名称传递给 `colorScale` 之前，我们必须在 `d` 上调用 `getLicense` 函数来获取许可证名称（因为可能是 "No License"）。这为我们设置 `rect` 的 `fill` 属性提供了颜色值。
 
@@ -8428,7 +10842,6 @@ d3.schemeCategory10;
           <span class="value"></span>
         </p>
       </div>
-
       <div id="key" class="box">
         <h1>Key</h1>
       </div>
@@ -8436,7 +10849,7 @@ d3.schemeCategory10;
 --snip--
 ```
 
-<samp class="SANS_Futura_Std_Book_Oblique_I_11">列表 15-15：为许可证图例添加 div 和标题</samp>
+列表 15-15：为许可证图例添加 div 和标题
 
 在这里我们在侧边栏 `div` 内部创建了名为 `key` 的另一个 `div` 并给它一个 `h1`。我们将使用 JavaScript 创建 `key` 的其他元素。
 
@@ -8447,11 +10860,9 @@ d3.schemeCategory10;
 #info a:hover {
   text-decoration: underline;
 }
-
 #key h1 {
   font-size: 1.5em;
 }
-
 #key .color {
   display: inline-block;
   width: 10px;
@@ -8460,7 +10871,7 @@ d3.schemeCategory10;
 }
 ```
 
-<samp class="SANS_Futura_Std_Book_Oblique_I_11">列表 15-16：设置图例样式</samp>
+列表 15-16：设置图例样式
 
 此处 `h1` 元素的字体大小设置为 `1.5em`，这意味着父元素字体大小的 1.5 倍。这确保了此标题将比其他文本大 1.5 倍。`#key .color` 规则集用于设置作为图例一部分的颜色块。这些将是 `div` 元素，但 `display: inline-block` 意味着它们将表现像内联元素（如 `span`）那样不会强制换行，又像块级元素（如 `div`）那样可以具有固定尺寸。（内联元素无法设置宽度和高度，因为它们根据内容调整大小，而在这种情况下颜色块没有内容。）
 
@@ -8474,36 +10885,26 @@ d3.schemeCategory10;
       info.select(".license .value").text(getLicense(d));
       info.select(".stars .value").text(d.stargazers_count);
     });
-
   d3.select("#key")
     .selectAll("p")
     .data(licenses)
     .join(
       enter => {
       ❶ let p = enter.append("p");
-
       ❷ p.append("div")
           .attr("class", "color")
         ❸ .style("background-color", d => colorScale(d));
-
       ❹ p.append("span")
           .text(d => d)
-
         return p;
       }
     ); 
 }
-
 function getUrl() {
 --snip--
 ```
 
-```
-
-<samp class="SANS_Futura_Std_Book_Oblique_I_11">列表 15-17：生成图例</samp>
-
-
-
+列表 15-17：生成图例
 
 在这里，我们使用 `#key` 元素作为新加入项的容器，并加入了一系列 `p` 元素以绑定到每个许可数据（datum）。我们使用了高级的 join 技巧，但仅带了一个 `enter` 函数；我们不需要为更新或退出项定义自定义行为。（在这里我们不能使用常规的 join 技术，因为那样每当调用 `update` 时都会发生元素添加操作。）首先，我们为每条新数据创建一个 `p` 元素 ❶，然后向 `p` 元素中添加一个 `div` 元素，我们将在该处显示颜色的方块 ❷。为 `div` 添加 `color` 类意味着它将具有来自列表 15-16 的样式。为了给它设置正确的颜色，我们使用 `style` 方法 ❸，它会在元素上设置一个内联 CSS 样式。我们使用 `colorScale` 为该数据设置相应的颜色值。最后，我们为 `p` 元素添加一个 `span` 元素来存放许可的实际名称 ❹。
 
@@ -8511,7 +10912,7 @@ function getUrl() {
 
 ![](img/Figure_15-5.png)
 
-<samp class="SANS_Futura_Std_Book_Oblique_I_11">图 15-5：带有键的颜色编码条形</samp>
+图 15-5：带有键的颜色编码条形
 
 我们的可视化结果现在有一个完整的键，显示每种颜色映射的许可，这使得颜色意义大得多。
 
@@ -8541,7 +10942,7 @@ function getLicense(d) {
 --snip--
 ```
 
-<samp class="SANS_Futura_Std_Book_Oblique_I_11">列表 15-18：添加左轴标签</samp>
+列表 15-18：添加左轴标签
 
 首先，我们需要计算在何绘制标签。它的垂直位置应该在图表的中间。我们根据总高度和两个边距计算图表的高度，然后通过加上顶部边距和图表高度一半来计算中点。
 
@@ -8577,7 +10978,7 @@ function getLicense(d) {
 --snip--
 ```
 
-<samp class="SANS_Futura_Std_Book_Oblique_I_11">列表 15-19：添加复选框</samp>
+列表 15-19：添加复选框
 
 在 HTML 中，复选框是一个 `type` 属性值为 `checkbox` 的 `input` 元素。在代码中，我们在键中每个 `p` 元素的开头添加一个这样的元素。`checked` 属性决定复选框是否被选中；我们默认将其设置为选中，因此当可视化首次加载时将显示所有仓库。`title` 属性会在悬停在元素上时提供带有辅助文本的工具提示。
 
@@ -8599,12 +11000,9 @@ function getLicense(d) {
 
 function update(items) {
   let licenses = new Set(items.map(d => getLicense(d))); 
-
 --snip--
-
         p.append("span")
          .text(d => d)
-
         return p;
       }
     );
@@ -8620,15 +11018,11 @@ function update(items) {
   ❺ update(items);
   });
 }
-
 function getUrl() {
 --snip--
 ```
 
-<samp class="SANS_Futura_Std_Book_Oblique_I_11">列表 15-20：跟踪隐藏的许可</samp>
-
-
-
+列表 15-20：跟踪隐藏的许可
 
 ## 列表 15-21：确定具有隐藏许可证的仓库
 
@@ -8649,7 +11043,6 @@ function getUrl() {
     .nice();
 
 --snip--
-
   svg
     .selectAll("rect")
   ❸ .data(filtered, d => d.full_name)
@@ -8731,10 +11124,7 @@ function getUrl() {
 
 如果你想查看完整的 `script.js` 文件应该什么样，可以在 列表 15-24 中找到完整代码。
 
-
-
-
-```
+```javascript
 const width = 600;
 const height = 400;
 
@@ -8925,10 +11315,6 @@ d3.json(url).then(data => {
 
 本书仅解释了如何编写在浏览器中运行的 JavaScript，但通过 Node.js，你也可以在后端 Web 服务器上运行 JavaScript。访问 https://nodejs.dev/en/learn/ 可以获取学习 Node.js 的绝佳指南。一旦你的应用有了了后端，你就可以开始做更有趣的事情，例如代表用户存储数据、使用密钥访问经过身份验证的第三方 HTTP API 等等等。
 
-
-
-
-
 有很多种类型的工具可以在你继续编程之旅的过程中为你提供帮助。本节介绍了其中一些工具，但绝非涵盖所有内容。
 
 ### Git
@@ -8998,10 +11384,7 @@ GitHub 还让你能够访问数百万个开源仓库，你可以对其进行 `fo
 
 人们对 `JavaScript` 产生的问题之一是它的弱类型、动态类型，这允许值根据周围的代码隐式转换为不同的数据类型。例如，如果另一个操作数是字符串，`+` 运算符会将数字操作数转换为字符串；而如果另一个操作数是数字，`-` 运算符会将字符串操作数转换为数字。
 
-
-
-
-TypeScript 语言正尝试为 JavaScript 添加静态类型。`Static typing` 意味着某个特定类型的变量只能包含该类型的值，且类型之间的转换必须是显式的。TypeScript 在语法上是 JavaScript 的超集，这意味着一个有效的 JavaScript 程序也是一个有效的 TypeScript 程序。可以使用 TypeScript 编译器将 TypeScript 代码转换为 JavaScript。
+TypeScript 语言正尝试为 JavaScript 添加静态类型。`Static typing` 意味着某个特定类型的变量只能包含该类型的值，且类型之间的转换必须是显式的。TypeScript 在语法上是 JavaScript 的超集，这意味着一个有效的 JavaScript 程序也是一个有效的 TypeScript 程序。可以使用 TypeScript 编译器将 TypeScript 代转换为 JavaScript。
 
 使用静态类型使得编写出带有某些特定 bug 的代码变得不再可能。例如，在 JavaScript 中，你可能会从文本框中获取一个值，假设它是一个数字，并将其与另一个数字相加。遗憾的是，文本框中的任何值都被视为字符串，因此另一个数字也会被隐式地转换为字符串，你最终将得到两个字符串的拼接结果。TypeScript 不允许这样做。它知道来自文本框的值是字符串，并强迫你决定是想将两个操作数都转换为字符串进行拼接，还是将两个操作数都转换为数字进行相加。
 
@@ -9094,986 +11477,985 @@ Rust 还被用作编译为 WebAssembly 的源语言，这是一个在浏览器�
 *   `animating`
 *   `bar graphs`,296–297, 322–324
 *   `canvas elements`,152–153
-
-
-
-
-* 匿名函数, 80, 153
-* APIs (应用编程接口), 115
-* 身份验证过的 APIs, 302–303
-* Canvas API, 144, 256
-* DOM API, 115–116, 129
-* GitHub Search API, 299–328
-* JSON API, 300
-* Web Audio API, 206–209
-* 追加的元素, 275
-* arc 方法, 146–147
-* 参数, 21
-* 定义, 5
-* 参数对比, 75
-* 将函数作为传递, 74, 78–79
-* 数组, 38–47
-* 二维数组, 39–41
-* 创建和索引, 38–39
-* 方法, 41–47
-* 向数组添加元素, 42
-* 合并数组, 44–45
-* 查找数组中元素的索引, 45
-* 从数组中删除元素, 43–44
-* 将数组转换为字符串, 45–46
-* 嵌套
-* 在控制台中中探索嵌套对象, 54–55
-* 使用字面量, 52–53
-* 使用 `JSON.stringify` 打印嵌套对象, 55–56
-* 使用变量, 53–54
-* 接收回调函数, 85–87
-* `arr.includes(elem)` 方法, 46
-* 箭头函数, 82–83
-* `arr.reverse()` 方法, 46
-* `arr.slice(start, end)` 方法, 46–47
-* `arr.sort()` 方法, 46
-* `arr.splice(index, count)` 方法, 47
-* 人工智能 (AI), 181
-* 赋值运算符 (`=`), 13
-* 攻击, ADSR, 211–212, 234
-* 属性, 116–118
-* `attr` 方法, 269
-* 音频上下文, 207–208
-* 身份验证过的 APIs, 302–303
-* 轴
-* 绘制, 305–307
-* 标记, 288–291
-* 左侧标记, 318–319
-
+*   匿名函数, 80, 153
+*   APIs (应用编程接口), 115
+*   身份验证过的 APIs, 302–303
+*   Canvas API, 144, 256
+*   DOM API, 115–116, 129
+*   GitHub Search API, 299–328
+*   JSON API, 300
+*   Web Audio API, 206–209
+*   追加的元素, 275
+*   arc 方法, 146–147
+*   参数, 21
+*   定义, 5
+*   参数对比, 75
+*   将函数作为传递, 74, 78–79
+*   数组, 38–47
+*   二维数组, 39–41
+*   创建和索引, 38–39
+*   方法, 41–47
+*   向数组添加元素, 42
+*   合并数组, 44–45
+*   查找数组中元素的索引, 45
+*   从数组中删除元素, 43–44
+*   将数组转换为字符串, 45–46
+*   嵌套
+*   在控制台中中探索嵌套对象, 54–55
+*   使用字面量, 52–53
+*   使用 `JSON.stringify` 打印嵌套对象, 55–56
+*   使用变量, 53–54
+*   接收回调函数, 85–87
+*   `arr.includes(elem)` 方法, 46
+*   箭头函数, 82–83
+*   `arr.reverse()` 方法, 46
+*   `arr.slice(start, end)` 方法, 46–47
+*   `arr.sort()` 方法, 46
+*   `arr.splice(index, count)` 方法, 47
+*   人工智能 (AI), 181
+*   赋值运算符 (`=`), 13
+*   攻击, ADSR, 211–212, 234
+*   属性, 116–118
+*   `attr` 方法, 269
+*   音频上下文, 207–208
+*   身份验证过的 APIs, 302–303
+*   轴
+*   绘制, 305–307
+*   标记, 288–291
+*   左侧标记, 318–319
 ## B
-
-* 后端代码, 303
-* 反斜杠 (`\`), 23
-* 反引号 (``), 24
-* 球, Pong, 161–162, 195–197
-* 带通滤波器, 226
-* 带宽方法, 287
-* 柱状图, 279–297, 304–319
-* 动画变化, 296–297
-* 计算字符频率, 280–282
-* 清理数据, 295
-* 柱子上编码, 314–318
-* 创建元素, 304–305
-* 绘制, 282–291
-* 轴, 305–307
-* 柱子, 308–309
-* 标记的轴, 288–291
-* 缩放柱子, 284–288
-* 标记左轴, 318–319
-* 设置, 279–280
-* 显示仓库信息, 310–314
-* 使用 CSS 和正则表达式进行样式化, 292–295
-* 基线, 257
-* 基础 URL, 301
-* 低音线, 240–242
-* 每分钟拍数 (BPM), 217
-* `bezierCurveTo` 方法, 147
-* 绑定, 12–16
-* 常量, 14–15
-* 命名规范, 15–16
-* 变量, 13–14
-* 块体, 82–83
-* 结构的主体, 59
-* 函数, 74
-* body 元素, 113
-* 布尔值, 26–30
-* 比较运算符, 29–30
-* 作为条件, 60–60
-* 逻辑运算符, 27–28
-* 使用表达式, 171
-* 靠近末端, 174–175
-* 概述, 165–166
-* BPM (每分钟拍数), 217
-* 大括号, 63
-* 冒泡事件, 130
-
+*   后端代码, 303
+*   反斜杠 (`\`), 23
+*   反引号 (``), 24
+*   球, Pong, 161–162, 195–197
+*   带通滤波器, 226
+*   带宽方法, 287
+*   柱状图, 279–297, 304–319
+*   动画变化, 296–297
+*   计算字符频率, 280–282
+*   清理数据, 295
+*   柱子上编码, 314–318
+*   创建元素, 304–305
+*   绘制, 282–291
+*   轴, 305–307
+*   柱子, 308–309
+*   标记的轴, 288–291
+*   缩放柱子, 284–288
+*   标记左轴, 318–319
+*   设置, 279–280
+*   显示仓库信息, 310–314
+*   使用 CSS 和正则表达式进行样式化, 292–295
+*   基线, 257
+*   低音线, 240–242
+*   每分钟拍数 (BPM), 217
+*   `bezierCurveTo` 方法, 147
+*   绑定, 12–16
+*   常量, 14–15
+*   命名规范, 15–16
+*   变量, 13–14
+*   块体, 82–83
+*   结构的主体, 59
+*   函数, 74
+*   body 元素, 113
+*   布尔值, 26–30
+*   比较运算符, 29–30
+*   作为条件, 60–60
+*   逻辑运算符, 27–28
+*   使用表面, 171
+*   靠近末端, 174–175
+*   概述, 165–166
+*   BPM (每分钟拍数), 217
+*   大括号, 63
+*   冒泡事件, 130
 ## C
-
-* 回调函数, 85–87** 自定义函数, 88–89
-* 定义, 78
-* 事件处理器, 129
-* 调用函数, 74
-* 参数类型, 75
-* 返回值, 76–77
-* 副作用, 77–78
-* 调用, 21
-* `call` 方法, 289
-* 驼峰命名法, 15
-* C 和 C++, 334
-* Canvas API, 144, 256
-* Canvas 元素, 141–144
-* 动画, 152–153
-* 创建, 144–145
-* 绘制 Pong, 160–161
-* 交互, 147–151
-* 绘制静态图形, 142–147
-* 使用路径绘制形状, 145–147
-* 绘制矩形, 144–145
-* 插入符号 (caret/caret) 符号 (`^`), 292
-* 级联样式表. 参见 CSS
-* 大小写敏感, 15
-* CDN (内容分发网络), 210
-* 链式...else 语句, 61–63
-* 链式方法, 130, 269
-* 变化事件处理器, 151–152
-* 字符, 280–282
-* 来自字符串, 21–22
-* `checkCollision` 函数, 165–166
-* 子元素, 114
-* 和弦, 240–242
-
-* Chrome
-* 访问 JavaScript 控制台, 4
-* 在控制台中调用函数, 75–76
-* 在控制台中探索嵌套对象, 54–55
-* 缩进, 40
-* Web Audio API, 206
-* 圆形元素, 260–261
-* 高级连接, 276–279
-* 数据绑定, 270–271
-* 数据连接, 271–273
-* 类属性, 122
-* 类, 93–108
-* 创建实例和, 94–97
-* 继承, 97–101
-* 基于原型的继承, 101–108
-* 比较构造函数和类, 104–105
-
-
-
-
-
-* 探索 `Object.prototype`, 105–106
-* 覆盖方法，107–108
-* 使用构造函数和原型，102–104
-* 遍历原型链，106–107
-* 类选择器，123
-* 清理数据，295
-* `clearInterval` 函数，83
-* `clearRect` 方法，151
-* 点击处理器，148
-* 时钟, JavaScript, 220–221
-* 闭包，90
-* CodePen, 331
-* 强制转换，30–35, 77
-* 相等于，31–32
-* 真值，32–35
-* 碰撞检测
-* 弹跳，165–166
-* 定义，163–164
-* 在面向对象的乒乓球游戏中，195–197
-* 用于挡板，170–173
-* 颜色
-* 颜色编码条形，314–318
-* RGBA 颜色，150
-* RGB 颜色，261
-* 振荡器声音作为，213
-* 合并数组，44–45
-* 合并对象，51–52
-* 注释，165
-* 比较运算符，29–30
-* 完整代码
-* GitHub Search API，325–328
-* 乒乓球，185–188
-* 歌曲创作，247–252
-* 组合，199
-* 复合数据类型，37–56
-* 数组，38–47
-* 数组的数组，39–41
-* 创建和索引，38–39
-* 方法，41–47
-* 嵌套对象和数组，52–56
-* 在控制台中探索嵌套对象，54–55
-* 使用字面量，52–53
-* 使用 `JSON.stringify` 打印嵌套对象，55–56
-* 使用变量，53–54
-* 对象，47–52
-* 在...访问访问，48
-* 创建，47–48
-* 为...赋值，49
-* 使用，49–52
-* 复合表达式，10
-* `Computer` 类，197–198
-* 计算机控制，180–182
-* `concat` 方法，44
-* 简洁体语法，82–83
-* 具象类，98
-* 控制结构中的条件，58
-* 条件语句，57–63
-* 链式 if…else 语句，61–63
-* 复杂条件，60–61
-* if…else 语句，59–60
-* `if` 语句，58–59
-* `console.log` 方法，23
-* 常量
-* 命名规范，15–16
-* 概述，14–15
-* 静态，194
-* `const` 关键字，13, 16
-* 构造函数，49, 95, 102–104
-* 比较类与，104–105
-* 定义，101
-* 内容，元素，112
-* 内容交付网络 (CDN),210
-* 控制结构
-* 条件语句，57–63
-* 链式 if…else 语句，61–63
-* 复杂条件，60–61
-* if…else 语句，59–60
-* `if` 语句，58–59
-* 循环，63–71
-* `for…in` 循环，70–71
-* `for` 循环，65–66
-* `for…of` 循环，67–69
-* `while` 循环，63–64
-* CSS (层叠样式表),120–124
-* flexbox 布局，311–312
-* link 元素，120
-* 规则，121
-* 选择器
-* 概述，121–124
-* 在 JavaScript 中使用，124–125
-* 为条形图设置样式，292–295
-* 为元素设置样式，264–266
-* D3 库，255–297
-* 高级，276–279
-* 条形图，279–297
-* 数据绑定，270–271
-* 数据连接，271–273
-* 实时更新，273–275
-* 选择器，269–270
-* 设置，268
-* SVG 格式，256–268
-* 在 JavaScript 中使用，266–268
-* 路径，261–264
-* 绘制圆，260–261
-* 分组，259–261
-* 属性，267–268
-* 转换，275–276
-* 数据驱动文档。*See* D3 库
-* D3 库，255–297
-* 高级，276–279
-* 条形图，279–297
-* 数据绑定，270–271
-* 数据连接，271–273
-* 实时更新，273–275
-* 选择器，269–270
-* 设置，268
-* SVG 格式，256–268
-* 在 JavaScript 中使用，266–268
-* 路径，261–264
-* 绘制圆，260–261
-* 分组，259–261
-* 属性，267–268
-* 转换，275–276
-* GitHub Search API，299–328
-* 添加交互性，319–324
-* 基础可视化，304–309
-* 完整代码，325–328
-* 获取数据，300–304
-* 改进可视化，310–319
-* 设置，300
-* 衰减、ADSR，211–212
-* 分贝 (dB),212
-* 声明
-* 定义，13
-* 在规则集中，121
-* 与初始化分离，178–179
-* 声明函数，74–78
-* 参数类型，77
-* 返回值，75–76
-* 侧效应，77–78
-* 递减，16–19
-* 加和减法赋值，18
-
-
-
-
-
-* 乘法和赋值，18
-* 递减运算符 (`--`), 17, 64
-* 事件委托, 131–134
-* 德·摩根律，28
-* descendants, 114
-* 后代选择器, 123
-* 解构赋值, 69
-* distanceTo 方法, 98–100
-* div 元素, 135, 148
-* 除法赋值运算符 (`/=`), 18
-* doctype, 113
-* document 对象, 115
-* 文对象模型 (DOM), 114–118
-* DOM API, 115–116
-* 元素标识符, 116–118
-* document.querySelectorAll 方法, 124
-* document.querySelector 方法, 160–161
-* 美元符号 (`$`), 292
-* 域, 284
-* DOM API, 115–116, 129
-* 点表示法, 48–49
-* 双等号 (`==`) 运算符, 31
-* 双引号 (`"`), 19
-* doubler 函数, 88
-* drawCircle 函数, 149–150
-* draw 函数, 163
-* 绘图上下文, 143
-* draw 方法, 192
-* 鼓声, 224–232
-* 鼓点循环, 230–232
-* 镲片合成, 224–226
-* 底鼓合成, 228
-* 制作鼓点, 237–240
-* 混响, 228–230
-* 军鼓合成, 226–227
-* 动态类型编程语言, 77
-* 动态可视化, 256
-
+*   回调函数, 85–87** 自定义函数, 88–89
+*   定义, 78
+*   事件处理器, 129
+*   调用函数, 74
+*   参数类型, 75
+*   返回值, 76–77
+*   副作用, 77–78
+*   调用, 21
+*   `call` 方法, 289
+*   驼峰命名法, 15
+*   C 和 C++, 334
+*   Canvas API, 144, 256
+*   Canvas 元素, 141–144
+*   动画, 152–153
+*   创建, 144–145
+*   绘制 Pong, 160–161
+*   交互, 147–151
+*   绘制静态图形, 142–147
+*   使用路径绘制形状, 145–147
+*   绘制矩形, 144–145
+*   插入符号 (caret/caret) 符号 (`^`), 292
+*   级联样式表. 参见 CSS
+*   大小写敏感, 15
+*   CDN (内容分发网络), 210
+*   链式...else 语句, 61–63
+*   链式方法, 130, 269
+*   变化事件处理器, 151–152
+*   字符, 280–282
+*   来自字符串, 21–22
+*   `checkCollision` 函数, 165–166
+*   子元素, 114
+*   和弦, 240–242
+*   Chrome
+*   访问 JavaScript 控制台, 4
+*   在控制台中调用函数, 75–76
+*   在控制台中探索嵌套对象, 54–55
+*   缩进, 40
+*   Web Audio API, 206
+*   圆形元素, 260–261
+*   高级连接, 276–279
+*   数据绑ning, 270–271
+*   数据连接, 271–273
+*   类属性, 122
+*   类, 93–108
+*   创建实例和, 94–97
+*   继承, 97–101
+*   基于原型的继承, 101–108
+*   比较构造函数和类, 104–105
+*   探索 `Object.prototype`, 105–106
+*   覆盖方法，107–108
+*   使用构造函数和原型，102–104
+*   遍历原型链，106–107
+*   类选择器，123
+*   清理数据，295
+*   `clearInterval` 函数，83
+*   `clearRect` 方法，151
+*   点击处理器，148
+*   时钟, JavaScript, 220–221
+*   闭包，90
+*   CodePen, 331
+*   强制转换，30–35, 77
+*   相等于，31–32
+*   真值，32–35
+*   碰撞检测
+*   弹跳，165–166
+*   定义，163–164
+*   在面向对象的乒乓球游戏中，195–197
+*   用于挡板，170–173
+*   颜色
+*   颜色编码条形，314–318
+*   RGBA 颜色，150
+*   RGB 颜色，261
+*   振荡器声音作为，213
+*   合并数组，44–45
+*   合并对象，51–52
+*   注释，165
+*   比较运算符，29–30
+*   完整代码
+*   GitHub Search API，325–328
+*   乒乓球，185–188
+*   歌曲创作，247–252
+*   组合，199
+*   复合数据类型，37–56
+*   数组，38–47
+*   数组的数组，39–41
+*   创建和索引，38–39
+*   方法，41–47
+*   嵌套对象和数组，52–56
+*   在控制台中探索嵌套对象，54–55
+*   使用字面量，52–53
+*   使用 `JSON.stringify` 打印嵌套对象，55–56
+*   使用变量，53–54
+*   对象，47–52
+*   在...访问访问，48
+*   创建，47–48
+*   为...赋值，49
+*   使用，49–52
+*   复合表达式，10
+*   `Computer` 类，197–198
+*   计算机控制，180–182
+*   `concat` 方法，44
+*   简洁体语法，82–83
+*   具象类，98
+*   控制结构中的条件，58
+*   条件语句，57–63
+*   链式 if…else 语句，61–63
+*   复杂条件，60–61
+*   if…else 语句，59–60
+*   `if` 语句，58–59
+*   `console.log` 方法，23
+*   常量
+*   命名规范，15–16
+*   概述，14–15
+*   静态，194
+*   `const` 关键字，13, 16
+*   构造函数，49, 95, 102–104
+*   比较类与，104–105
+*   定义，101
+*   内容，元素，112
+*   内容交付网络 (CDN),210
+*   控制结构
+*   条件语句，57–63
+*   链式 if…else 语句，61–63
+*   复杂条件，60–61
+*   if…else 语句，59–60
+*   `if` 语句，58–59
+*   循环，63–71
+*   `for…in` 循环，70–71
+*   `for` 循环，65–66
+*   `for…of` 循环，67–69
+*   `while` 循环，63–64
+*   CSS (层叠样式表),120–124
+*   flexbox 布局，311–312
+*   link 元素，120
+*   规则，121
+*   选择器
+*   概述，121–124
+*   在 JavaScript 中使用，124–125
+*   为条形图设置样式，292–295
+*   为元素设置样式，264–266
+*   D3 库，255–297
+*   高级，276–279
+*   条形图，279–297
+*   数据绑定，270–271
+*   数据连接，271–273
+*   实时更新，273–275
+*   选择器，269–270
+*   设置，268
+*   SVG 格式，256–268
+*   在 JavaScript 中使用，266–268
+*   路径，261–264
+*   绘制圆，260–261
+*   分组，259–261
+*   属性，267–268
+*   转换，275–276
+*   数据驱动文档。*See* D3 库
+*   D3 库，255–297
+*   高级，276–279
+*   条形图，279–297
+*   数据绑定，270–271
+*   数据连接，271–273
+*   实时更新，273–275
+*   选择器，269–270
+*   设置，268
+*   SVG 格式，256–268
+*   在 JavaScript 中使用，266–268
+*   路径，261–264
+*   绘制圆，260–261
+*   分组，259–261
+*   属性，267–268
+*   转换，275–276
+*   GitHub Search API，299–328
+*   添加交互性，319–324
+*   基础可视化，304–309
+*   完整代码，325–328
+*   获取数据，300–304
+*   改进可视化，310–319
+*   设置，300
+*   衰减、ADSR，211–212
+*   分贝 (dB),212
+*   声明
+*   定义，13
+*   在规则集中，121
+*   与初始化分离，178–179
+*   声明函数，74–78
+*   参数类型，77
+*   返回值，75–76
+*   侧效应，77–78
+*   递减，16–19
+*   加和减法赋值，18
+*   乘法和赋值，18
+*   递减运算符 (`--`), 17, 64
+*   事件委托, 131–134
+*   德·摩根律，28
+*   descendants, 114
+*   后代选择器, 123
+*   解构赋值, 69
+*   distanceTo 方法, 98–100
+*   div 元素, 135, 148
+*   除法赋值运算符 (`/=`), 18
+*   doctype, 113
+*   document 对象, 115
+*   文对象模型 (DOM), 114–118
+*   DOM API, 115–116
+*   元素标识符, 116–118
+*   document.querySelectorAll 方法, 124
+*   document.querySelector 方法, 160–161
+*   美元符号 (`$`), 292
+*   域, 284
+*   DOM API, 115–116, 129
+*   点表示法, 48–49
+*   双等号 (`==`) 运算符, 31
+*   双引号 (`"`), 19
+*   doubler 函数, 88
+*   drawCircle 函数, 149–150
+*   draw 函数, 163
+*   绘图上下文, 143
+*   draw 方法, 192
+*   鼓声, 224–232
+*   鼓点循环, 230–232
+*   镲片合成, 224–226
+*   底鼓合成, 228
+*   制作鼓点, 237–240
+*   混响, 228–230
+*   军鼓合成, 226–227
+*   动态类型编程语言, 77
+*   动态可视化, 256
 ## E
-
-* 八分音符, 217
-* 元素
-* 这里的基础可视化, 304–305
-* 定义, 112
-* 游戏, 193–197
-* 球, 195–197
-* 挡板, 194
-* else if 子句, 61–62
-* em 元素, 128
-* 空字符串, 31–32
-* 封装, 190–191
-* enter 元素, 277
-* 实体超类, 194
-* 带有类型转换的相等性, 31–32
-* 错误消息, 14–15
-* 转义序列, 23–24
-* 求值, 10
-* 基于事件编程, 127–139
-* 事件处理器, 128–134
-* 事件冒泡, 130
-* 事件委托, 131–134
-* 键盘事件, 137–138
-* 鼠标移动事件, 134–136
-* exit 元素, 277
-* 表达式, 10
-* 可扩展标记语言 (XML), 256
-
+*   八分音符, 217
+*   元素
+*   这里的基础可视化, 304–305
+*   定义, 112
+*   游戏, 193–197
+*   球, 195–197
+*   挡板, 194
+*   else if 子句, 61–62
+*   em 元素, 128
+*   空字符串, 31–32
+*   封装, 190–191
+*   enter 元素, 277
+*   实体超类, 194
+*   带有类型转换的相等性, 31–32
+*   错误消息, 14–15
+*   转义序列, 23–24
+*   求值, 10
+*   基于事件编程, 127–139
+*   事件处理器, 128–134
+*   事件冒泡, 130
+*   事件委托, 131–134
+*   键盘事件, 137–138
+*   鼠标移动事件, 134–136
+*   exit 元素, 277
+*   表达式, 10
+*   可扩展标记语言 (XML), 256
 ## F
-
-* 假值, 32–33
-* 获取数据, 300–304
-* fillRect 方法, 143, 161–162
-* fillStyle 属性, 143
-* 通过许可证过滤数据, 319–322
-* filter 方法, 86
-* find 数组方法, 85–86
-* 一等公民, 78
-* flat, 215
-* flexbox 布局, 311–312
-* 浮点数, 11–12
-* FM (频率调制), 240
-* FM 合成, 240–241
-* 焦点, 137
-* for...in 循环, 70
-* for 循环, 65–66
-* for...of 循环, 67–69
-* 正向斜杠 (`/`), 165–166, 292
-* 频率, 280–282
-* 频率调制, 240
-* 前端代码, 303–304
-* 函数声明, 74–79
-* 函数表达式 (字面量), 80–82
-* 函数关键字, 74
-* 箭头函数, 73–81
-* 这里的, 77–78
-* 返回值, 75–76
-* 侧效应, 70
-* 定义的,
-* 高阶函数, 85–90
-* 接收回调函数, 85–87
-* 接收回调的函数, 88–89
-* 接收回调的函数, 89–90
-* 这里的,
-* 传递, 84
-* 基础, 214
-
+*   假值, 32–33
+*   获取数据, 300–304
+*   fillRect 方法, 143, 161–162
+*   fillStyle 属性, 143
+*   通过许可证过滤数据, 319–322
+*   filter 方法, 86
+*   find 数组方法, 85–86
+*   一等公民, 78
+*   flat, 215
+*   flexbox 布局, 311–312
+*   浮点数, 11–12
+*   FM (频率调制), 240
+*   FM 合成, 240–241
+*   焦点, 137
+*   for...in 循环, 70
+*   for 循环, 65–66
+*   for...of 循环, 67–69
+*   正向斜杠 (`/`), 165–166, 292
+*   频率, 280–282
+*   频率调制, 240
+*   前端代码, 303–304
+*   函数声 declaration, 74–79
+*   函数表达式 (字面量), 80–82
+*   函数关键字, 74
+*   箭头函数, 73–81
+*   这里的, 77–78
+*   返回值, 75–76
+*   侧效应, 70
+*   定义的,
+*   高阶函数, 85–90
+*   接收回调函数, 85–87
+*   接收回调的自定义函数, 88–89
+*   接收回调的函数, 89–90
+*   这里的,
+*   传递, 84
+*   基础, 214
 ## G
-
-* 节点, 208–214
-* 游戏类, 198–201
-* 面向对象, 189–190
-* 设计, 190–191
-* 文件结构, 191
-* 游戏类, 193–197
-* 游戏元素, 195–197
-* 挡板类, 194
-* 这里的游戏, 198–201
-* 碰撞, 159–162
-* 完整代码, 185–188
-* 控制, 180–182
-* 绘图球, 161–162
-* 游戏循环, 163–165
-* 游戏结束, 182–184
-* 概述, 159–160
-* 挡板, 166–175
-* 重构, 162–163
-* 评分, 176–180
-* 设置, 160–161
-* 游戏循环, 163–165
-* 游戏结束, 182–184
-* 游戏视图类, 191–193
-* g 元素, 258–259
-* 获取上下文, 143
-* 按 ID 获取元素, 117
-* Git, 330
-* GitHub, 331
-* GitHub 搜索 API, 299–328
-* 添加交互性, 319–324
-* 动画化变化, 322–324
-
-
-
-
-
-* 绘制轴，305–307
-* 绘制柱图，308–309
-* 完整代码，325–328
-* 获取数据，300–304
-* 改进可视化，310–319
-* 柱状图颜色编码，314–318
-* 给左轴标记标签，318–319
-* 显示仓库信息，310–314
-* 设置，300
-* Glitch，331
-* Google Chrome。查看 Chrome
-* 大于 (`>`)，30
-* 大于等于 (`>=`)，30
-* 元素分组，258–259
-
+*   节点, 208–214
+*   游戏类, 198–201
+*   面向对象, 189–190
+*   设计, 190–191
+*   文件结构, 191
+*   游戏类, 193–197
+*   游戏元素, 195–197
+*   挡板类, 194
+*   这里的游戏, 198–201
+*   碰撞, 159–162
+*   完整代码, 185–188
+*   控制, 180–182
+*   绘图球, 161–162
+*   游戏循环, 163–165
+*   游戏结束, 182–184
+*   概述, 159–160
+*   挡板, 166–175
+*   重构, 162–163
+*   评分, 176–180
+*   设置, 160–161
+*   游戏循循环, 163–165
+*   游戏结束, 182–184
+*   游戏视图类, 191–193
+*   g 元素, 258–259
+*   获取上下文, 143
+*   按 ID 获取元素, 117
+*   Git, 330
+*   GitHub, 331
+*   GitHub 搜索 API, 299–328
+*   添加交互性, 319–324
+*   动画化变化, 322–324
+*   绘制轴，305–307
+*   绘制柱图，308–309
+*   完整代码，325–328
+*   获取数据，300–304
+*   改进可视化，310–319
+*   柱状图颜色编码，314–318
+*   给左轴标记标签，318–319
+*   显示仓库信息，310–314
+*   设置，300
+*   Glitch，331
+*   Google Chrome。查看 Chrome
+*   大于 (`>`)，30
+*   大于等于 (`>=`)，30
+*   元素分组，258–259
 ## H
-* 处理器，事件，128–134
-* 事件冒泡，130
-* 事件委托，131–134
-* 歌曲创作，236–237
-* 和声，214
-* 井号标记 (`#`)，122–123, 215
-* `hasOwnProperty` 方法，105
-* head 元素，113, 119
-* 进制颜色（十六进制颜色语法），260–261
-* 隐藏许可证，319–322
-* 高阶函数，85–90
-* 接收回调的数组方法，85–87
-* 接收回调的自定义函数，88–89
-* 返回函数的函数，89–90
-* 镲帽合成，224–226
-* `:hover` 伪类，133
-* `href` 属性，119
-* HTML（超文本标记语言），111–125, 332
-* 创建 HTML 文档，112–113
-* CSS，120–124
-* 链接元素，120
-* 规则集，121
-* 选择器，121–124
-* 定义，5–6
-* DOM，114–118
-* DOM API，115–116
-* 元素标识符，116–118
-* 嵌套关系，114
-* script 元素，118–119
-* 在 JavaScript 中使用 CSS 选择器，124–125
-
+*   处理器，事件，128–134
+*   事件冒泡，130
+*   事件委托，131–134
+*   歌曲创作，236–237
+*   和声，214
+*   井号标记 (`#`)，122–123, 215
+*   `hasOwnProperty` 方法，105
+*   head 元素，113, 119
+*   进制颜色（十六进制颜色语法），260–261
+*   隐藏许可证，319–322
+*   高阶函数，85–90
+*   接收回调的数组方法，85–87
+*   接收回调的自定�函数，88–89
+*   返回函数的函数，89–90
+*   镲帽合成，224–226
+*   `:hover` 伪类，133
+*   `href` 属性，119
+*   HTML（超文本标记语言），111–125, 332
+*   创建 HTML 文档，112–113
+*   CSS，120–124
+*   链接元素，120
+*   规则集，121
+*   选择器，121–124
+*   定义，5–6
+*   DOM，114–118
+*   DOM API，115–116
+*   元素标识符，116–118
+*   嵌套关系，114
+*   script 元素，118–119
+*   在 JavaScript 中使用 CSS 选择器，124–125
 ## I
-* `id` 属性，116
-* 标识符，13
-* `ID` 选择器，122
-* if…else 语句
-* 链式，61–63
-* 包括 keydown 处理器，138
-* 概述，59–60
-* if 语句，58–59, 179–180
-* 递增，16–19
-* 加/减法赋值，18
-* 乘/除法赋值，18
-* 递增运算符 (`++`)，17
-* 缩进，40, 113
-* 数组中的索引，38–39
-* 在数组中查找元素的索引，45
-* 字符串中，21–22
-* `indexOf` 方法，45
-* 无限循环，65
-* 继承，97–101
-* 初始化，13, 178–179
-* 内联元素，122
-* `innerText` 属性，117
-* 输入元素，148
-* `instanceof` 关键字，100
-* 实例，创建，94–97
-* 交互性，319–324
-* 动画变化，322–324
-* 使用 canvas 元素，147–151
-* 过滤数据，319–322
-* 可视化，256
-
+*   `id` 属性，116
+*   标识符，13
+*   `ID` 选择器，122
+*   if…else 语句
+*   链式，61–63
+*   包括 keydown 处理器，138
+*   概述，59–60
+*   if 语句，58–59, 179–180
+*   递增，16–19
+*   加/减法赋值，18
+*   乘/除法赋值，18
+*   递增运算符 (`++`)，17
+*   缩进，40, 113
+*   数组中的索引，38–39
+*   在数组中查找元素的索引，45
+*   字符串中，21–22
+*   `indexOf` 方法，45
+*   无限循环，65
+*   继承，97–101
+*   初始化，13, 178–179
+*   内联元素，122
+*   `innerText` 属性，117
+*   输入元素，148
+*   `instanceof` 关键字，100
+*   实例，创建，94–97
+*   交互性，319–324
+*   动画变化，322–324
+*   使用 canvas 元素，147–151
+*   过滤数据，319–322
+*   可视化，256
 ## J
-* 为 SVG 添加交互性，266–268
-* 绑定，12–16
-* 常量，13–14
-* 命名规范，15–16
-* 变量，14
-* 布尔值，26–30
-* 比较运算符，27–29
-* 逻辑运算符，29–30
-* 类，93
-* 创建实例，94–97
-* 继承，97–101
-* 基于原型的继承，101–108
-* 类型转换，30–35
-* 复合类型，37–56
-* 数组，38–47
-* 嵌套对象数组，52–56
-* 对象，47–52
-* 条件判断，57–63
-* 转义序列，23–24
-* 表达式和语句，10
-* 框架和库，332
-* 函数，73–91
-* 箭头函数，82–83
-* 声明与调用，74–78
-* 函数表达式，80–82
-* 高阶函数，85–90
-* 传递参数，78–79
-* 剩余参数，84–85
-* 递增和递减，16–19
-* 加/减法赋值，18
-* 乘/除法赋值，18
-* 循环，63–71
-* 数字和运算符，10–12
-* 浮点数，11–12
-* 运算顺序，11
-* 字符串，19–23
-* 获取长度，20–21
-* 获取字符，21
-* 获取多个字符，21–22
-* 合并，20
-* 去除空白，22
-* 模板字符串量，24–26
-* 未定义和空，26
-* 在使用 CSS 选择器时，124–125
-
+*   为 SVG 添加交互性，266–268
+*   绑定，12–16
+*   常量，13–14
+*   命名规范，15–16
+*   变量，14
+*   布尔值，26–30
+*   比较运算符，27–29
+*   逻辑运算符，29–30
+*   类，93
+*   创建实例，94–97
+*   继承，97–101
+*   基于原型的继承，101–108
+*   类型转换，30–35
+*   复合类型，37–56
+*   数组，38–47
+*   嵌套对象数组，52–56
+*   对象，47–52
+*   条件判断，57–63
+*   转义序列，23–24
+*   表达式和语句，10
+*   框架和库，332
+*   函数，73–91
+*   箭头函数，82–83
+*   声明与调用，74–78
+*   函数表达式，80–82
+*   高阶函数，85–90
+*   传递参数，78–79
+*   剩余参数，84–85
+*   递增和递减，16–19
+*   加/减法赋值，18
+*   乘/除法赋值，18
+*   循环，63–71
+*   数字和运算符，10–12
+*   浮点数，11–12
+*   运算顺序，11
+*   字符串，19–23
+*   获取长度，20–21
+*   获取字符，21
+*   获取多个字符，21–22
+*   合并，20
+*   去除空白，22
+*   模板字符串量，24–26
+*   未定义和空，26
+*   在使用 CSS 选择器时，124–125
 ## K
-* 键盘事件，137–138
-* keydown 事件，137–138
-* key 函数，275–276
-* 键，对象
-
-
-
-
-
-* 定义, 47
-* 获取, 49–50
-* 获取值和, 50–51
-* 键值对, 47
-* 关键字, 13
-* 踢鼓合成, 228
-
+*   键盘事件，137–138
+*   keydown 事件，137–138
+*   key 函数，275–276
+*   键，对象
+*   定义, 47
+*   获取, 49–50
+*   获取值和, 50–51
+*   键值对, 47
+*   关键字, 13
+*   踢鼓合成, 228
 ## L
-* 有标签轴, 288–291
-* 标签 元素, 148–149
-* 左对齐文本, 177
-* length 属性, 20–21
-* 小于 (<), 30
-* 小于等于 (<=), 30
-* let 关键字, 13, 16
-* 许可证
-* 通过过滤数据, 319–322
-* 名称, 315–318
-* li 元素, 131
-* lineTo 方法, 146
-* link 元素, 120
-* 监听器, 事件, 129
-* 字面量
-* 定义, 10
-* 与...嵌套, 52–53
-* 逻辑运算符, 27–28
-* 前瞻时间, 221
-* 循环变量, 65–66
-* 循环, 63–71
-* for…in 循环, 70–71
-* for 循环, 65–66
-* for…of 循环, 67–69
-* while 循环, 63–64
-
+*   有标签轴, 288–291
+*   标签 元素, 148–149
+*   左对齐文本, 177
+*   length 属性, 20–21
+*   小于 (<), 30
+*   小于等于 (<=), 30
+*   let 关键字, 13, 16
+*   许可证
+*   通过过滤数据, 319–322
+*   名称, 315–318
+*   li 元素, 131
+*   lineTo 方法, 146
+*   link 元素, 120
+*   监听器, 事件, 129
+*   字面量
+*   定义, 10
+*   与...嵌套, 52–53
+*   逻辑运算符, 27–28
+*   前瞻时间, 221
+*   循环变量, 65–66
+*   循环, 63–71
+*   for…in 循环, 70–71
+*   for 循环, 65–66
+*   for…of 循环, 67–69
+*   while 循环, 63–64
 ## M
-* makeAppender 函数, 90
-* map 数组方法, 86–87
-* 匹配元素, 121
-* Math.hypot 方法, 98
-* MDN (Mozilla Developer Network) Web Docs, 147, 263, 292
-* 元数据, 113
-* 方法
-* 数组的, 41–47
-* 向数组添加元素, 42
-* 合并数组, 44–45
-* 在数组中查找元素索引, 45
-* 从数组中移除元素, 43–44
-* 将数组转换为字符串, 45–46
-* 链式调用, 130, 269
-* 定义, 21
-* 函数对比, 94
-* 覆盖, 107–108
-* 中音 C, 215
-* 单音合成器, 216
-* 等宽字体, 177
-* 鼠标移动事件, 134–136, 169
-* move 方法, 95–97
-* moveTo 方法, 146
-* Mozilla Developer Network (MDN) Web Docs, 147, 263, 292
-* 多维数组, 39
-* 乘法赋值运算符 (*=), 18
-* 音乐项目, 205–252
-* 制作声音, 224–232
-* 鼓点循环, 230–232
-* 镲合成, 224–226
-* 踢鼓合成, 228
-* 回响, 228–230
-* 小军鼓合成, 226
-* 采样, 232–234
-* 歌曲创作, 235–252
-* 添加低斯线, 240–242
-* 添加和弦, 242
-* 完整代码, 247–252
-* 事件处理, 236–237
-* 组织, 235–236
-* 制作鼓点, 237–240
-* 播放旋律, 244–246
-* Tone.js 库, 210–217
-* 使用...生成音色, 210
-* 在序列中播放更多音符, 215–216
-* 同时播放多个音符, 216–217
-* Tone.Synth 参数, 211–215
-* Tone.js 传输, 217–224
-* Tone.Loop, 218–220
-* Tone.Part, 223–224
-* Tone.Sequence, 211–222
-* Web Audio API, 206–209
-* 使用...生成音色, 210–210
-* 设置, 206–207
-* 变异, 41
-
+*   makeAppender 函数, 90
+*   map 数组方法, 86–87
+*   匹配元素, 121
+*   Math.hypot 方法, 98
+*   MDN (Mozilla Developer Network) Web Docs, 147, 263, 292
+*   元数据, 113
+*   方法
+*   数组的, 41–47
+*   向数组添加元素, 42
+*   合并数组, 44–45
+*   在数组中查找元素索引, 45
+*   从数组中移除元素, 43–44
+*   将数组转换为字符串, 45–46
+*   链式调用, 130, 269
+*   定义, 21
+*   函数对比, 94
+*   覆盖, 107–108
+*   中音 C, 215
+*   单音合成器, 216
+*   等宽字体, 177
+*   鼠标移动事件, 134–136, 169
+*   move 方法, 95–97
+*   moveTo 方法, 146
+*   Mozilla Developer Network (MDN) Web Docs, 147, 263, 292
+*   多维数组, 39
+*   乘法赋值运算符 (*=), 18
+*   音乐项目, 205–252
+*   制作声音, 224–232
+*   鼓点循环, 230–232
+*   镲合成, 224–226
+*   踢鼓合成, 228
+*   回响, 228–230
+*   小军鼓合成, 226
+*   采样, 232–234
+*   歌曲创作, 235–252
+*   添加低斯线, 240–242
+*   添加和弦, 242
+*   完整代码, 247–252
+*   事件处理, 236–237
+*   组织, 235–236
+*   制作鼓点, 237–240
+*   播放旋律, 244–246
+*   Tone.js 库, 210–217
+*   使用...生成音色, 210
+*   在序列中播放更多音符, 215–216
+*   同时播放多个音符, 216–217
+*   Tone.Synth 参数, 211–215
+*   Tone.js 传输, 217–224
+*   Tone.Loop, 218–220
+*   Tone.Part, 223–224
+*   Tone.Sequence, 211–222
+*   Web Audio API, 206–209
+*   使用...生成音色, 210–210
+*   设置, 206–207
+*   变异, 41
 ## N
-* 命名函数, 81
-* 命名规范, 15–16
-* 类, 95
-* 构造函数, 102
-* 关系, 114
-* 嵌套, 52–56
-* 元素, 112
-* 在控制台中中对象, 54–55
-* 使用字面量, 52–53
-* 使用 `JSON.stringify` 打印嵌套对象, 55–56
-* 变量, 53–54
-* new, 96
-* 方法, 291
-* Node.js, 303
-* NodeList, 124–125
-* 节点, 206
-* 在序列中播放, 215–216
-* 同时播放多个音符, 216–217
-* `!` 运算符, 28
-* null 值, 26
-* 字面量, 10–12
-* 浮点数, 11–12
-* 顺序, 11
-
+*   命名函数, 81
+*   命名规范，15–16
+*   类, 95
+*   构造函数, 102
+*   关系, 114
+*   嵌套, 52–56
+*   元素, 112
+*   在控制台中中对象, 54–55
+*   使用字面量, 52–53
+*   使用 `JSON.stringify` 打印嵌套对象, 55–56
+*   变量, 53–54
+*   new, 96
+*   方法, 291
+*   Node.js, 303
+*   NodeList, 124–125
+*   节点, 206
+*   在序列中播放, 215–216
+*   同时播放多个音符, 216–217
+*   `!` 运算符, 28
+*   null 值, 26
+*   字面量, 10–12
+*   浮点数, 11–12
+*   顺序, 11
 ## O
-* `Object.assign` 方法, 51–52
-* `Object` 构造函数, 105
-* `Object.entries` 方法, 71
-* `Object.keys` 方法, 49–50
-* 对象字面量, 47
-* 字面量简写语法, 238
-* 面向对象 Pong, 189–202
-* 设计, 190–191
-* 文件结构, 191
-* `Game` 类, 198–201
-* 游戏元素, 193–197
-* 球, 195–197
-* 挡板, 194
-* `GameView` 类, 191–193
-* 分数和电脑类, 197–198
-* 开始游戏, 201
-* 面向对象编程, 93
-* `Object.prototype`, 105–106
-* 对象, 47–52
-* 在...中值, 48
-* 创建, 47–48
-
-
-
-
-
-* 获取对象的键和值，50–51
-* `offsetX` 和 `offsetY` 属性，150
-* 开源代码所有者，304
-* 开源仓库，299
-* 操作数，27
-* 运算符，10–12
-* 定义，10
-* 浮点数，11–12
-* 运算符优先级，11
-* 可选链运算符，313
-* 运算符优先级，11
-* 或运算符 (`||`)，27–28, 33–34
-* 振荡器，208
-* 轮廓矩形，绘制，144–145
-* 方法重写，107–108
-* 泛音，214
-
+*   `Object.assign` 方法, 51–52
+*   `Object` 构造函数, 105
+*   `Object.entries` 方法, 71
+*   `Object.keys` 方法, 49–50
+*   对象字面量, 47
+*   字面量简写语法, 238
+*   面向对象 Pong, 189–202
+*   设计, 190–191
+*   文件结构, 191
+*   `Game` 类, 198–201
+*   游戏元素, 193–197
+*   球, 195–197
+*   挡板, 194
+*   `GameView` 类, 191–193
+*   分数和电脑类, 197–198
+*   开始游戏, 201
+*   面向对象编程, 93
+*   `Object.prototype`, 105–106
+*   对象, 47–52
+*   在...中值, 48
+*   创建, 47–48
+*   获取对象的键和值，50–51
+*   `offsetX` 和 `offsetY` 属性，150
+*   开源代码所有者，304
+*   开源仓库，299
+*   操作数，27
+*   运算符，10–12
+*   定义，10
+*   浮点数，11–12
+*   运算符优先级，11
+*   可选链运算符，313
+*   运算符优先级，11
+*   或运算符 (`||`），27–28, 33–34
+*   振荡器，208
+*   轮廓矩形，绘制，144–145
+*   方法重写，107–108
+*   泛音，214
 ## P
-
-* 挡挡板，Pong 游戏，166–175
-* 在边缘附近反弹，174–175
-* 碰撞检测，170–173
-* 元素，194
-* 随输入移动，169–170
-* 参数，74
-* 参数与参数，75
-* 函数，77
-* 剩余参数，84–85
-* 父元素，114
-* 括号 `()`，79
-* 路径元素 (path)，261–264
-* 使用路径绘制形状，145–147
-* p 元素，112
-* PEMDAS 规则，11
-* 五声音阶，219
-* 百分比 (`%`) 字符，301
-* 周期 (`.`),123
-* 管道字符 (`|`)，241–242
-* 占位符语法 (`${}`),24–25
-* 玩家输入，移动挡板，169–170
-* 多态，191
-* 多音节合成器，216–217
-* Pong 游戏，159–202
-* 反弹，165–166
-* 完整代码，185–188
-* 计算机控制，180–182
-* 绘制球，161–162
-* 游戏循环，163–165
-* 游戏结束，182–184
-* 面向对象的 Pong 游戏，189–202
-* 设计，190–191
-* 文件结构，191
-* `Game` 类，198–201
-* 游戏元素，193–197
-* `GameView` 类，191–193
-* `Scores` 和 `Computer` 类，197–198
-* 启动游戏，201
-* 概述，159–160
-* 挡挡板，166–175
-* 在边缘附近反弹，174–175
-* 碰撞检测，170–173
-* 随输入移动，169–170
-* 重构，162–163
-* 评分，176–180
-* 设置，160–161
-* `pop` 方法，43
-* 后置自增与自减，17
-* 前置自增与自减，17
-* 前置元素，275
-* 打印嵌套对象，55–56
-* 项目
-* 数据可视化
-* D3 库，255–297
-* GitHub Search API，299–328
-* 游戏创建
-* 面向对象的 Pong 游戏，189–202
-* Pong 游戏，159–188
-* 制作音乐
-* 生成声音，205–252
-* 歌曲创作，235–252
-* 属性，定义，20
-* 基于原型的继承，101–108
-* 比较构造函数和类，104–105
-* 探索 `Object.prototype`，105–106
-* 方法重写，107–108
-* 使用构造函数和原型，102–104
-* 遍历原型链，106–107
-* `Prototype` 属性，55
-* 伪类，133, 266
-* `push` 方法，42
-* Python 语言，334
-
+*   挡挡板，Pong 游戏，166–175
+*   在边缘附近反弹，174–175
+*   碰撞检测，170–173
+*   元素，194
+*   随输入移动，169–170
+*   参数，74
+*   参数与参数，75
+*   函数，77
+*   剩余参数，84–85
+*   父元素，114
+*   括号 `()`，79
+*   路径元素 (path)，261–264
+*   使用路径绘制形状，145–147
+*   p 元素，112
+*   PEMDAS 规则，11
+*   五声音阶，219
+*   百分比 (`%`) 字符，301
+*   周期 (`.`),123
+*   管道字符 (`|`)，241–242
+*   占位符语法 (`${}`),24–25
+*   玩家输入，移动挡板，169–170
+*   多态，191
+*   多音节合成器，216–217
+*   Pong 游戏，159–202
+*   反弹，165–166
+*   完整代码，185–188
+*   计算机控制，180–182
+*   绘制球，161–162
+*   游戏循环，163–165
+*   游戏结束，182–184
+*   面向对象的 Pong 游戏，189–202
+*   设计，190–191
+*   文件结构，191
+*   `Game` 类，198–201
+*   游戏元素，193–197
+*   `GameView` 类，191–193
+*   `Scores` 和 `Computer` 类，197–198
+*   启动游戏，201
+*   概述，159–160
+*   挡挡板，166–175
+*   在边缘附近反弹，174–175
+*   碰撞检测，170–173
+*   随输入移动，169–170
+*   重构，162–163
+*   评分，176–180
+*   设置，160–161
+*   `pop` 方法，43
+*   后置自增与自减，17
+*   前置自增与自减，17
+*   前置元素，275
+*   打印嵌套对象，55–56
+*   项目
+*   数据可视化
+*   D3 库，255–297
+*   GitHub Search API，299–328
+*   游戏创建
+*   面向对象的 Pong 游戏，189–202
+*   Pong 游戏，159–188
+*   制作音乐
+*   生成声音，205–252
+*   歌曲创作，235–252
+*   属性，定义，20
+*   基于原型的继承，101–108
+*   比较构造函数和类，104–105
+*   探索 `Object.prototype`，105–106
+*   方法重写，107–108
+*   使用构造函数和原型，102–104
+*   遍历原型链，106–107
+*   `Prototype` 属性，55
+*   伪类，133, 266
+*   `push` 方法，42
+*   Python 语言，334
 ## Q
-
-* `quadratic` 方法，147
-* `querySelectorAll` 方法，124
-* 问号 (?)，301
-
+*   `quadratic` 方法，147
+*   `querySelectorAll` 方法，124
+*   问号 (?)，301
 ## R
-
-* 范围，284
-* 频率限制，78
-* React 语言，332
-* 实时更新，273
-* 接收，94
-* 矩形，绘制，144–145
-* 重构，162–163
-* 正则表达式，292–295
-* 关系，97
-* 相对位置，262–263
-* 返回，119
-* 释放，211–212
-* 剩余参数，84–85
-* 剩余，228–230
-* `return` 关键字，89
-* 返回值，75–76
-* 副作用，77–78
-* `RGBA` 颜色，150
-* `RGB` 颜色，261
-* 旋转，177
-* 规则，121–124
-
+*   范围，284
+*   频率限制，78
+*   React 语言，332
+*   实时更新，273
+*   接收，94
+*   矩形，绘制，144–145
+*   重构，162–163
+*   正则表达式，292–295
+*   关系，97
+*   相对位置，262–263
+*   返回，119
+*   释放，211–212
+*   剩余参数，84–85
+*   剩余，228–230
+*   `return` 关键字，89
+*   返回值，75–76
+*   副作用，77–78
+*   `RGBA` 颜色，150
+*   `RGB` 颜色，261
+*   旋转，177
+*   规则，121–124
 ## S
+*   采样，232–234
+*   D3 中的条形图，284–288
+*   SVG 支持，258
+*   作用域，67–79
+*   `Scores` 类，197–198
+*   评分，176–180
+*   脚本元素，6–118
+*   选择，269–270
+*   概述，121–124
+*   在 JavaScript 中使用，124–125
+*   自文档化，87
+*   分号 (;),10
+*   `Set` 构造函数，315
+*   `setInterval` 函数，83
+*   `setTimeout` 函数，79–82
+*   阴影，108
+*   使用路径绘制形状，145–147
+*   锐利，215
+*   `shiftKey` 属性，267
+*   `shift` 方法，43–44
+*   短路, 34
+*   兄弟节点, 114
+*   侧边栏, 310–314
+*   侧效应, 77–78
+*   简单存储服务 (Amazon S3), 233
+*   正弦波, 208
+*   单引号 ('), 19
+*   十六六音符, 217
+*   倾斜, 258
+*   `slice method`, 21–22
+*   滑块, 148
+*   snake_case, 15
+*   军军器合成, 226–227
+*   歌曲创作, 235–252
+*   添加贝斯线, 240–242
+*   添加和弦, 242–244
+*   完整代码, 247–252
+*   事件处理, 236–237
+*   整理思路, 235–236
+*   制作鼓点, 237–240
+*   演奏曲律, 244–246
+*   span 元素, 310–311
+*   方括号 ([]), 21, 48–49
+*   src 属性, 119
+*   开始游戏, 201
+*   状态, 152
+*   语句, 10
+*   静态类型语言, 77
+*   静态绘制, 142–147
+*   轮廓矩形, 144–145
+*   使用路径, 145–147
+*   静态方法, 49, 198
+*   静态属性, 194
+*   严格不等于运算符 (!==), 32
 
-* 采样，232–234
-* D3 中的条形图，284–288
-* SVG 支持，258
-* 作用域，67–79
-* `Scores` 类，197–198
-* 评分，176–180
-* 脚本元素，6–118
-* 选择，269–270
-* 概述，121–124
-* 在 JavaScript 中使用，124–125
-* 自文档化，87
-* 分号 (;),10
-* `Set` 构造函数，315
-* `setInterval` 函数，83
-* `setTimeout` 函数，79–82
-* 阴影，108
-* 使用路径绘制形状，145–147
-* 锐利，215
-* `shiftKey` 属性，267
-* `shift` 方法，43–44
 
 
-
-
-
--   短路, 34
--   兄弟节点, 114
--   侧边栏, 310–314
--   侧效应, 77–78
--   简单存储服务 (Amazon S3), 233
--   正弦波, 208
--   单引号 ('), 19
--   十六六音符, 217
--   倾斜, 258
--   `slice method`, 21–22
--   滑块, 148
--   snake_case, 15
--   军军器合成, 226–227
--   歌曲创作, 235–252
--   添加贝斯线, 240–242
--   添加和弦, 242–244
--   完整代码, 247–252
--   事件处理, 236–237
--   整理思路, 235–236
--   制作鼓点, 237–240
--   演奏曲律, 244–246
--   span 元素, 310–311
--   方括号 ([]), 21, 48–49
--   src 属性, 119
--   开始游戏, 201
--   状态, 152
--   语句, 10
--   静态类型语言, 77
--   静态绘制, 142–147
--   轮廓矩形, 144–145
--   使用路径, 145–147
--   静态方法, 49, 198
--   静态属性, 194
--   严格不等于运算符 (!==), 32
 -   `str.includes(otherStr)` 方法, 23
+
 -   字符串字面量, 19
+
 -   字符串, 19–23
+
 -   从...获取字符, 21
+
 -   从...获取多个字符, 21–22
+
 -   合并, 20
+
 -   去除空白符, 22
+
 -   将数组转换为, 45–46
+
 -   `strokeRect` 方法, 144
+
 -   strong 元素, 122–123
+
 -   `str.padStart(num, char)` 方法, 23
+
 -   `str.repeat(count)` 方法, 23
+
 -   `str.toLowerCase()` 方法, 23
+
 -   子类, 97
+
 -   子表达式, 171
+
 -   减赋值运算符 (-=), 18
+
 -   父类, 97
+
 -   super 关键字, 99
+
 -   持续, ADSR, 211–212
+
 -   SVG (可缩放矢量图形)格式, 256–268
+
 -   使用 JavaScript 增加交互性, 266–268
+
 -   定义路径, 261–264
+
 -   绘制圆形, 260–261
+
 -   元素分组, 258–259
+
 -   使用 CSS 样式化元素, 264–266
+
 -   SvgPathEditor, 263
+
 -   语法糖, 101
 
 ## T
--   标签, 6, 112
+
+-   标筓, 6, 112
+
 -   模板字面量, 24–26
+
 -   测试, 332–333
+
 -   文本编辑器, 5–6
+
 -   this 关键字, 95–97
+
 -   井字棋游戏, 39–41
+
 -   音色, 213
+
 -   时间, Web Audio API, 220–221, 296–297, 29, [153–154](#chapter9.xhtml_pg_153
+
 -   URL 编码, [301–301](#chapter15.xhtml_pg_301
+
 -   URL, [300](#chapter15.xhtml_pg_30
 
 ## V
+
 -   有效标识符, [48–49](#chapter3.xhtml_pg_48
+
 -   访问, [48–49](#chapter3.xhtml_pg_48
+
 -   设置, [49](#chapter3.xhtml_pg_49
+
 -   命名规范, [15–16](#chapter2.xhtml_pg_15
+
 -   嵌套, [53–54](#chapter3.xhtml_pg_53
+
 -   变量, [13–14](#chapter2.xhtml_pg_13
+
 -   `var` 关键字, [13](#chapter2.xhtml_pg_13
+
 -   矢量图形, [256](#chapter14.xhtml_pg_256
+
 -   可视化, [304–309](#chapter15.xhtml_pg_304
+
 -   D3 库, [255–257](#chapter14.xhtml_pg_255
+
 -   高级连接, [276–277](#chapter14.xhtml_pg_276
+
 -   柱状图, [279–297](#chapter14.xhtml_pg_279
+
 -   数据绑定, [270–271](#chapter14.xhtml_pg_270
+
 -   数据连接, [271–273](#chapter14.xhtml_pg_271
+
 -   实时更新, [273–275](#chapter14.xhtml_pg_273
+
 -   选择器, [269–270](#chapter14.xhtml_pg_269
+
 -   设置, [268](#chapter14.xhtml_pg_268
-
-
-
-
 
 ## W
 
 * W3C (World Wide Web Consortium), 206
+
 * 遍历原型链, 106–107
+
 * Web Audio API, 206–209
+
 * 使用...生成音频, 207–209
+
 * 设置, 206–207
+
 * Web 开发, 332
+
 * while 循环, 63–64
+
 * 白噪声, 224
+
 * 空格, 22, 295
+
 * 世界维网联盟 (W3C), 206
 
 ## X
@@ -10083,4 +12465,3 @@ Rust 还被用作编译为 WebAssembly 的源语言，这是一个在浏览器�
 ## Z
 
 * 零基础索引, 21, 38, 218
-

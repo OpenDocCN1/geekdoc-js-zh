@@ -1,20 +1,22 @@
+
 # JSP 完全参考指南
 
 # JSP：完全参考手册
+
 ## 关于作者...
 
 # 献给玛丽
 
 此页有意留白。
 
-
-
 # 前言
 
 新技术的第一波浪潮往往被其产生的期望所超越。而乘着第二波浪潮的人则受益于前人的经验，真正的价值得以显现。Java 的发展历程正是如此。客户端浏览器应用程序（applet）在三个领域遇到了限制：
 
 - 浏览器的兼容性问题
+
 - 过度的安全限制
+
 - 因下载时间长而导致的性能问题
 
 服务器端 Java 的出现改变了这一切。Java Servlets 和 JavaServer Pages (JSP) 提供了一种安全、强大且平台无关的技术，将 Java 的强大功能带入电子商务和企业 Web 计算领域。正因如此，人们对 JSP 的兴趣日益浓厚，对 JSP 技能的需求高涨。几乎所有《财富》500 强公司现在拥有或即将部署服务器端 Java 应用程序。
@@ -67,7 +69,7 @@
 
 ### 第 9 章，“请求分发”
 
-本章讨论了 HTTP 请求如何由多个服务器端组件处理。它描述了包含其他文件的两种方法，并解释了为什么一种方法可能比另一种更可取。它涵盖了如何使用 `<jsp:forward>` 操作将请求传递给另一个 JSP 进行处理。
+本章讨论了 HTTP 请求如何由多个服务器端组件处理。它描述了包含其他文件的两种方法，并解释了为什么一种方法可能比另一种更可取。它涵盖了如何使用 `<jsp:forward>` 操作将请传递给另一个 JSP 进行处理。
 
 ### 第 10 章，“页面指令”
 
@@ -97,21 +99,19 @@ HTTP 是一种无状态协议，但 JavaServer Pages 可以使用 HTTP 会话来
 
 本章描述了 JavaBeans，并展示了它们如何与 JavaServer Pages 结合使用，将业务逻辑隔离为可重用的组件。
 
-
-
-## 第16章，“JSP与XML”
+### 第16章，“JSP与XML”
 
 XML正逐渐成为结构化数据存储和交换的通用语言。本章将探讨JSP如何利用XML进行数据的输入与输出。
 
-## 第17章，“JSP测试与调试”
+### 第17章，“JSP测试与调试”
 
 调试技术在编程教程中常被忽略，但却是不可或缺的知识。JavaServerPages面临着其自身的挑战。本章概述了一个可应用的基本方法论以及可用的工具。
 
-## 第18章，“部署Web应用”
+### 第18章，“部署Web应用”
 
 第18章描述了如何将JSP页面从开发环境迁移到生产Web环境。
 
-## 第19章，“案例研究：产品支持中心”
+### 第19章，“案例研究：产品支持中心”
 
 本章将全书讨论过的元素整合到一个基于Web的系统中，用于管理一个技术支持中心。
 
@@ -119,11 +119,11 @@ XML正逐渐成为结构化数据存储和交换的通用语言。本章将探�
 
 第四部分探讨了JavaServerPages在更广泛的背景下使用的情况——它们如何与servlet、applet、Perl脚本、FTP、CGI、ASP以及其他服务器端代理进行通信。
 
-## 第20章，“与其他客户端通信”
+### 第20章，“与其他客户端通信”
 
 尽管Web浏览器中的HTML表单是最常见的客户端环境，但JSP页面可用于支持任何能理解HTTP协议的客户端。第20章展示了如何实现这一点。
 
-## 第21章，“与其他服务器通信”
+### 第21章，“与其他服务器通信”
 
 本章在上一章的基础上进一步发展，描述了JSP组件如何访问其他协议。并讨论了JavaMail API。
 
@@ -181,15 +181,13 @@ XML正逐渐成为结构化数据存储和交换的通用语言。本章将探�
 
 ![](img/7a2f73369bb140583c7288b73456addb_32_0.png)
 
-
-
 # 第2章：Web应用的演进
 
 HTTP是一种简单的请求/响应协议，其中Web浏览器请求一个文档（通常使用GET命令），Web服务器则以HTML数据流的形式返回该文档，并附带一些描述性头部。第3章将更详细地探讨HTTP。
 
-很快变得明显的是，如果人类可以修改Web服务器处理的文档，那么像Perl脚本这样的文本处理程序也可以。Web浏览器对此并无察觉，因为HTTP请求的结果仍然是一个HTML数据流。此外，浏览器可以发送的不止是一个请求——它还可以通过将参数嵌入URL或随请求发送数据流来传递参数。这表明HTTP请求可以被解释为数据库查询，而查询结果可以用来动态构建HTML文档。随着NCSA HTTPd Web服务器的发展，出现了一个新的规范，称为*通用网关接口（CGI）*。
+很快变得明显的是，如果人类可以修改Web服务器处理的文档，那么像Perl脚本这样的文本处理程序也可以。Web浏览器对此并无察觉，因为HTTP请请求的结果仍然是一个HTML数据流。此外，浏览器可以发送的不止是一个请求——它还可以通过将参数嵌入URL或随请求发送数据流来传递参数。这表明HTTP请求可以被解释为数据库查询，而查询结果可以用来动态构建HTML文档。随着NCSA HTTPd Web服务器的发展，出现了一个新的规范，称为*通用网关接口（CGI）*。
 
-CGI程序由Web服务器调用，以响应某些类型的请求，通常是针对特定目录中的文档或具有特定扩展名的文件名（例如*.cgi*）的请求。请求参数作为键/值对传递，请求头作为环境变量传递。程序读取这些参数和头部，执行手头的应用任务（通常通过访问数据库来完成），然后生成HTTP响应。响应被发送回请求的Web浏览器，就像一个普通的静态文档一样。图2-2说明了这一流程。
+CGI程序由Web服务器调用，以响应某些类型的请务，通常是针对特定目录中的文档或具有特定扩展名的文件名（例如*.cgi*）的请求。请求参数作为键/值对传递，请求头作为环境变量传递。程序读取这些参数和头部，执行手头的应用任务（通常通过访问数据库来完成），然后生成HTTP响应。响应被发送回请求的Web浏览器，就像一个普通的静态文档一样。图2-2说明了这一流程。
 
 ![](img/7a2f73369bb140583c7288b73456addb_33_0.png)
 
@@ -213,16 +211,20 @@ JSP已被证明是一项成功的服务器端技术，也是开发Web应用程�
 
 ## 什么是HTTP？
 
-*超文本标记语言（HTML）*是用于描述Web文档内部结构的语言，而*超文本传输协议（HTTP）*是用于描述这些文档如何在互联网上传输的语言。理解Web编程的关键在于理解这个协议及其运行环境。
+*超文本标记语言（HTML）*是用用于描述Web文档内部结构的语言，而*超文本传输协议（HTTP）*是用于描述这些文档如何在互联网上传输的语言。理解Web编程的关键在于理解这个协议及其运行环境。
 
 ## 一种在互联网上请求文档的语言
 
-HTTP规定了浏览器发出请求和服务器提供响应的规则。这套规则，或称*协议*，包括以下方式：
+HTTP规定了浏览器发出请请求和服务器提供响应的规则。这套规则，或称*协议*，包括以下方式：
 
 - 按名称请求文档
+
 - 协商数据格式
+
 - 确定用户身份
+
 - 决定如何处理过时的资源
+
 - 指示请求的结果
 
 以及其他有用的功能。HTTP由一组以普通ASCII文本行编写的命令组成。当您使用Web浏览器时，您并不直接输入HTTP命令。相反，当您输入URL或点击超链接时，浏览器会将您的操作转换为HTTP命令，从URL指定的服务器请求文档。Web服务器找到该文档并将其发送回浏览器，在浏览器中连同其关联的图形和其他超链接一起显示。
@@ -234,7 +236,9 @@ HTTP规定了浏览器发出请求和服务器提供响应的规则。这套规�
 有几个RFC涉及HTTP：
 
 - RFC 1945：HTTP版本1.0的描述
+
 - RFC 2068：版本1.1的初始描述
+
 - RFC 2616：1.1规范的更新版本
 
 除非另有说明，本书使用RFC 2616中记录的HTTP 1.1标准。
@@ -244,9 +248,13 @@ HTTP规定了浏览器发出请求和服务器提供响应的规则。这套规�
 该规范将HTTP描述为一种无状态的请求/响应协议，其基本操作如下：
 
 1. 客户端应用程序（如Web浏览器）打开一个到Web服务器HTTP端口（默认为80）的套接字。
+
 2. 通过该连接，客户端写入一个ASCII文本请求行，后跟零个或多个HTTP头、一个空行以及伴随请求的任何数据。
+
 3. Web服务器解析请求并定位指定的资源。
+
 4. 服务器将资源的一个副本写入套接字，客户端读取该副本。
+
 5. 服务器关闭连接。
 
 图3-1说明了这一基本操作。
@@ -254,8 +262,6 @@ HTTP规定了浏览器发出请求和服务器提供响应的规则。这套规�
 一个关键考虑是这个模型是*无状态的*。这意味着在处理请求时，Web服务器不会记住来自同一客户端的任何先前请求的信息。该协议只是一个请求（“请给我这个文档”）和一个响应（“好的，给你”）。显然，这对应用程序编程施加了限制，
 
 ![](img/7a2f73369bb140583c7288b73456addb_39_0.png)
-
-
 
 ## 14 JSP：完全参考手册
 
@@ -308,14 +314,23 @@ HTTP 规范定义了八种可能的方法，如表 3-1 所示。在所有这些�
 请求行上的第二个标记是*请求统一资源标识符 (URI)*。这是被请求的文档或其他资源的 URI。出于所有实际目的，这对应于去掉前导 `http://` 和主机名的 URL。在 `http://www.mycompany.com/mypath.html` 的示例中，请求 URI 是 `/mypath.html`。
 
 | 方法 | 描述 |
+
 | :--- | :--- |
+
 | GET | 一个简单的请求，用于检索 URI 中标识的资源。 |
+
 | HEAD | 与 `GET` 相同，但服务器不返回请求的文档。服务器只返回状态行和头部。 |
+
 | POST | 请求服务器接受将要写入客户端输出流的数据。 |
-| PUT | 请求服务器将请求中的数据存储为指定 URI 的新内容。 |
+
+| PUT | 请请求服务器将请求中的数据存储为指定 URI 的新内容。 |
+
 | DELETE | 请求服务器删除 URI 中命名的资源。 |
+
 | OPTIONS | 请求有关服务器支持哪些请求方法的信息。 |
+
 | TRACE | 请求 Web 服务器回显 HTTP 请求及其头部。 |
+
 | CONNECT | 一个已记录但当前未实现的方法，保留用于隧道代理。 |
 
 表 3-1。HTTP 请求方法
@@ -327,8 +342,11 @@ HTTP 规范定义了八种可能的方法，如表 3-1 所示。在所有这些�
 请求头进一步告知服务器有关客户端的身份和能力。典型的请求头可能是：
 
 | User-Agent | 客户端的供应商和版本 |
+
 |---|---|
+
 | Accept | 客户端识别的内容类型列表 |
+
 | Content-Length | 附加到请求的数据字节数 |
 
 请求和响应头的完整列表可以在附录 C 中找到。
@@ -346,7 +364,9 @@ HTTP 规范定义了八种可能的方法，如表 3-1 所示。在所有这些�
 状态行最多由三个标记组成：
 
 -   HTTP 版本。正如客户端指示其能理解的最高版本一样，服务器也指示其能力。
+
 -   响应代码。这是一个三位数的数字代码，指示请求是否成功或失败，如果失败，则说明原因。HTTP 状态码列表可以在附录 C 中找到。
+
 -   一个可选的*响应描述*，这是响应代码的人类可读解释。
 
 一个典型的 HTTP 响应状态行如下所示：
@@ -356,7 +376,9 @@ HTTP/1.0 200 OK
 ```
 
 这表示根据 HTTP 规范的 1.0 级别成功检索了请求的文档。
+
 状态行之后是响应头，以空行作为分隔符。与请求头类似，它们表示服务器的能力并标识有关响应数据的详细信息。附录 C 列出了有效的 HTTP 响应头。
+
 响应的最后一部分是请求的数据本身，通常是 HTML 文档或图像流。数据发送完毕后，服务器关闭其端的连接。
 
 ## 示例
@@ -386,8 +408,6 @@ the best Internet source for
 <LI>books on musical topics
 ```
 
-
-
 ## 18 JSP：权威参考
 
 ```html
@@ -404,7 +424,7 @@ HTML 文档可能包含对其他资源的引用，这些资源需要在文档加
 
 ![](img/7a2f73369bb140583c7288b73456addb_44_0.png)
 
-**图 3-2.** 简单 HTTP 请求的结果
+**图 3-2.** 简单 HTTP 请请求的结果
 
 稍微扩展前面的例子，假设你打开 http://www.lyricnote.com/compound.html。浏览器再次打开到 www.lyricnote.com 端口 80 的 socket 连接，并请求 HTML 文档，
 
@@ -503,7 +523,7 @@ Content-Type: text/plain
 
 ## 总结
 
-本章介绍了 HTTP，即用于发出请求和返回响应的规则集。理解这些规则对于正确的开发和故障排除至关重要。需要理解的是 HTTP 是无状态的，这意味着 HTTP 本身不会保留从一个请求到下一个请求的知识。JSP 环境提供了强大的方法来弥补这一点。另一个关键考虑因素是浏览器和服务器都可以被功能类似的软件替换。应用程序、小程序和用其他语言编写的程序可以充当客户端，诊断工具可以扮演服务器的角色。因为它们需要做的就是提供与浏览器和 Web 服务器将使用的相同的 HTTP 请求和响应流，所以这些其他应用程序与真实的服务器是无法区分的。你将在后面的章节中利用这一能力。
+本章介绍了 HTTP，即用于发出请求和返回响应的规则集。理解这些规则对于正确的开发和故障排除至关重要。需要理解的是 HTTP 是无状态的，这意味着 HTTP 本身不会保留从一个请求到下一个请求的知识。JSP 环境提供了强大的方法来弥补这一点。另一个关键考虑因素是浏览器和服务器都可以被功能类似的软件替换。应用程序、小程序和用其他语言编写的程序可以充当客户端，诊断工具可以扮演服务器的角色。因为它们需要做的就是提供与浏览器和 Web 服务器将使用的相同的 HTTP 请求和响应流，所以这些其他应用程与真实的服务器是无法区分的。你将在后面的章节中利用这一能力。
 
 此页有意留白。
 
@@ -520,8 +540,11 @@ Content-Type: text/plain
 自 1997 年推出以来，servlet 已成为服务器端 Java 编程的主导环境，并成为进入应用服务器的广泛使用的门户。它们提供了几个关键优势：
 
 - **性能** 诸如 *通用网关接口（CGI）* 之类的较旧技术通常为处理每个传入请求启动一个新进程。在 Web 主要作为学术和科学研究仓库的时代，流量不是很大，这种方法运行良好。相比之下，servlet 在首次被请求时加载，并无限期地保留在内存中。servlet 引擎加载 servlet 类的单个实例，并使用可用线程池将请求分派给它。由此产生的性能提升是相当可观的。
-- **简洁性** 客户端 Java 小程序在 Web 浏览器提供的虚拟机中运行。这引入了兼容性问题，增加了复杂性并限制了小程序可以提供的功能。Servlet 大大简化了这种情况，因为它们在受控服务器环境中的虚拟机中运行，并且只需要基本的 HTTP 即可与客户端通信。即使使用较旧的浏览器，也不需要特殊的客户端软件。
+
+- **简洁性** 客户端 Java 小程序在 Web 浏览器提供的虚括机中运行。这引入了兼容性问题，增加了复杂性并限制了小程序可以提供的功能。Servlet 大大简化了这种情况，因为它们在受控服务器环境中的虚拟机中运行，并且只需要基本的 HTTP 即可与客户端通信。即使使用较旧的浏览器，也不需要特殊的客户端软件。
+
 - **HTTP 会话** 尽管 HTTP 服务器没有内置的功能来记住来自同一客户端的先前请求的详细信息，但 Servlet API 提供了一个 `HttpSession` 类来克服这一限制。
+
 - **访问 Java 技术** Servlet 作为 Java 应用程序，可以直接访问全套 Java 功能，例如线程、网络访问和数据库连接。
 
 JSP 页面会自动转换为 servlet，并继承所有这些优势。
@@ -537,8 +560,11 @@ JSP 页面会自动转换为 servlet，并继承所有这些优势。
 类似地，servlet 在由 servlet 引擎管理的请求和响应模型的上下文中运行。引擎执行以下操作：
 
 - 在首次被请求时加载 servlet
+
 - 调用 servlet 的 `init()` 方法
+
 - 通过调用 servlet 的 `service()` 方法处理任意数量的请求
+
 - 在关闭时，调用每个 servlet 的 `destroy()` 方法。
 
 与小程序一样，有标准基类 `javax.servlet.GenericServlet` 和 `javax.servlet.http.HttpServlet` 实现了 servlet 因此，servlet 编程包括子类化其中一个类并覆盖必要的方法以完成手头的特定任务。以下各节将介绍每个生命周期方法。
@@ -550,8 +576,6 @@ JSP 页面会自动转换为 servlet，并继承所有这些优势。
 ```java
 
 ```
-
-
 
 在 `init()` 方法内部，servlet 可以执行任何必要的启动任务，例如建立数据库连接。如果发生任何导致 servlet 无法处理请求的错误，它应该抛出一个 `UnavailableException`[^1]。这样可以防止请求被定向到该 servlet。
 
@@ -566,7 +590,7 @@ public void service(
 throws ServletException, IOException;
 ```
 
-`ServletRequest` 对象由 servlet 引擎构造，充当关于客户端和请求信息的包装器。这包括远程系统的身份、请求参数以及与请求关联的任何输入流。类似地，`ServletResponse` 对象为 servlet 提供了将其结果传回原始请求者的方式。它包括用于打开输出流和指定内容类型及长度的方法。尽管 `service()` 方法很重要，但很少直接使用它。原因在于大多数 servlet 被设计为在 HTTP 环境中运行，为此有一个专门的 `javax.servlet.http` 包。大多数 servlet 不直接扩展 `javax.servlet.GenericServlet`，而是扩展其子类 `javax.servlet.http.HttpServlet`。这个子类提供了与每个 HTTP 请求方法相对应的专用方法：GET 请求由 `doGet()` 处理，POST 请求由 `doPost()` 处理，依此类推。这些方法的签名使用特定于 HTTP 的请求和响应对象版本：
+`ServletRequest` 对象由 servlet 引擎构造，充当关于客户端和请求信息的包装器。这包括远程系统的身份、请求参数以及与请求关联的任何输入流。类似地，`ServletResponse` 对象为 servlet 提供了将其结果传回原始请求者的方式。它包括用于打开输出流和指定内容类型及长度的方法。尽管 `service()` 方法很重要，但很少直接使用它。原因在于大多数 servlet 被设计为在 HTTP 环境中运行，为此有一个专门的 `javax.servlet.http` 包。大多数 servlet 不直接扩展 `javax.servlet.GenericServlet`，而是扩展其子类 `javax.servlet.http.HttpServlet`。这个子类提供了与每个 HTTP 请求方法相对应的专用方法：GET 请请求由 `doGet()` 处理，POST 请求由 `doPost()` 处理，依此类推。这些方法的签名使用特定于 HTTP 的请求和响应对象版本：
 
 ```
 public void doGet(
@@ -650,7 +674,7 @@ public class K2MServlet extends HttpServlet
 
 ```
 import javax.servlet.*;
-import javax.servlet.http.*;
+import javax.servlet.http();
 ```
 
 这些语句向编译器表明我们将使用通用和特定于 HTTP 的 servlet 包中的类。导入语句并非严格必需，但它们使得无需指定完全限定名即可引用类成为可能。
@@ -726,8 +750,6 @@ http://<servername>/<webappname>/servlet/<servletname>
 
 此 servlet 的结果可以在图 4-1 中看到。
 
-
-
 ## Servlet 类
 
 本节概述了来自 `javax.servlet` 和 `javax.servlet.http` 包的几个重要类。关于 Servlet API 的详细信息，可以在附录 A 中找到。
@@ -736,37 +758,53 @@ http://<servername>/<webappname>/servlet/<servletname>
 
 基本的 Servlet 抽象是 `javax.servlet.Servlet` 接口，如表 4-1 所示。它规定了 Servlet 类必须实现的一组方法，以便被 Servlet 引擎识别和管理。其主要目的是提供生命周期方法 `init()`、`service()` 和 `destroy()`。
 
-Servlet API 提供了 `Servlet` 接口的一个具体实现，名为 `GenericServlet`，在表 4-2 中描述。该类提供了除 `service()` 之外的所有接口方法的默认实现。这意味着你只需扩展 `GenericServlet` 并编写自定义的 `service()` 方法，即可编写一个基本的 Servlet。
+Servlet API 提供了 `Servlet` 接口的一个具体实现，名为 `GenericServlet`，在表 4-2 中描述。该类提供了除 `service()` 之外的所有接口方法的默认实现。这意味着你只需扩展 `GenericServlet` 并编写自定�的 `service()` 方法，即可编写一个基本的 Servlet。
 
 **表 4-1。Servlet 接口中的方法**
 
 | 方法 | 描述 |
+
 |---|---|
+
 | `void init(ServletConfig config) throws ServletException` | Servlet 被加载后，Servlet 引擎会调用此方法一次，就在它投入使用之前。如果 `init()` 抛出 `UnavailableException`，则该 Servlet 将被停止服务。Servlet 应提供某种方式来存储 `config` 对象，以实现 `getServletConfig()` 方法（参见 `GenericServlet`）。 |
+
 | `ServletConfig getServletConfig()` | 返回传递给 Servlet 的 `init()` 方法的 `ServletConfig` 对象。 |
+
 | `void service(ServletRequest request, ServletResponse response) throws ServletException, IOException` | 处理 `request` 对象中描述的请求，并使用 `response` 对象将结果返回给请求者。 |
+
 | `String getServletInfo()` | 返回一个可以描述 Servlet 的字符串。用于需要提供人类可读描述的管理工具。 |
+
 | `void destroy()` | Servlet 即将被卸载时，由 Servlet 引擎调用。 |
 
 **表 4-2。GenericServlet 类中的方法**
 
 | 方法 | 描述 |
+
 | :--- | :--- |
+
 | `void destroy()` | 写入一条由单词 "destroy" 组成的日志条目。 |
+
 | `String getInitParameter(String name)` | 返回指定名称的初始化参数的值。通过调用 `config.getInitParameter(name)` 来实现。 |
+
 | `Enumeration getInitParameterNames()` | 返回一个 `Enumeration`，包含为该 Servlet 编码的所有初始化参数，通过调用 `config.getInitParameterNames()` 获取列表。如果没有提供初始化参数，则返回一个空的 `Enumeration`（而不是 null）。 |
+
 | `ServletConfig getServletConfig()` | 返回传递给 `init()` 方法的 `ServletConfig` 对象。 |
+
 | `ServletContext getServletContext()` | 返回 `config` 对象中引用的 `ServletContext`。 |
+
 | `String getServletInfo()` | 返回一个空字符串。 |
+
 | `void log(String msg, Throwable t)` | 将一条记录和堆栈跟踪写入 Servlet 日志。此方法也是对 `ServletContext` 中相应方法的委托调用。 |
+
 | `abstract void service(Request request, Response response) throws ServletException, IOException` | Servlet 引擎调用此方法来处理 `request` 对象描述的请求。这是 `GenericServlet` 中唯一的抽象方法，因此也是子类必须重写的方法。 |
+
 | `String getServletName()` | 返回在 Web 应用程序部署描述符（`web.xml`）中指定的 Servlet 名称。 |
 
 除了 `Servlet` 接口，`GenericServlet` 还实现了 `ServletConfig`，后者处理初始化参数和 Servlet 上下文，并提供便捷方法，这些方法委托给传递给 `init()` 的 `ServletConfig` 对象。
 
 尽管 Servlet API 允许扩展到其他协议，但当前版本仅支持协议无关的 Servlet 和 HTTP Servlet。因为几乎所有的 Servlet 都在 Web 服务器环境中运行，所以很少有 Servlet 直接扩展 `GenericServlet`。更常见的是 Servlet 扩展其特定于 HTTP 的子类 `HttpServlet`，在表 4-3 中描述。关于 HTTP 的介绍，请参见第 3 章。
 
-`HttpServlet` 通过调用特定于 HTTP 请求方法的方法来实现 `service()`。也就是说，对于 DELETE、HEAD、GET、OPTIONS、POST、PUT 和 TRACE，它分别调用 `doDelete()`、`doHead()`、`doGet()`、`doOptions()`、`doPost()`、`doPut()` 和 `doTrace()`。它还将这些方法使用的请求和响应对象强制转换为它们特定于 HTTP 的子类，这将在本节后面描述。
+`HttpServlet` 通过调用特定于 HTTP 请请求方法的方法来实现 `service()`。也就是说，对于 DELETE、HEAD、GET、OPTIONS、POST、PUT 和 TRACE，它分别调用 `doDelete()`、`doHead()`、`doGet()`、`doOptions()`、`doPost()`、`doPut()` 和 `doTrace()`。它还将这些方法使用的请求和响应对象强制转换为它们特定于 HTTP 的子类，这将在本节后面描述。
 
 > 什么是协议无关的 Servlet？也许是一个根本不服务请求的 Servlet，而只是从其 `init()` 方法启动后台线程，并在 `destroy()` 中终止它们。这可以用来模拟 Windows NT 服务或 Unix 守护进程。
 
@@ -777,14 +815,23 @@ Servlet API 提供了 `Servlet` 接口的一个具体实现，名为 `GenericSer
 **表 4-3。HttpServlet 类中的方法**
 
 | 方法 | 描述 |
+
 | :--- | :--- |
+
 | `void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException` | Servlet 引擎调用此方法来处理 HTTP `GET` 请求。可以从 `request` 对象获取输入参数、HTTP 头和输入流（如果有的话），从 `response` 对象获取响应头和输出流。 |
+
 | `void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException` | Servlet 引擎调用此方法来处理 HTTP `POST` 请求。从获取参数和输入数据或返回响应的角度来看，与 `doGet()` 没有区别。 |
+
 | `void doPut(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException` | Servlet 引擎调用此方法来处理 HTTP `PUT` 请求。在这种情况下，请求 URI 表示正在上传的文件的目标位置。 |
+
 | `void doDelete(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException` | Servlet 引擎调用此方法来处理 HTTP `DELETE` 请求。请求 URI 指示要删除的资源。 |
+
 | `void doOptions(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException` | Servlet 引擎调用此方法来处理 HTTP `OPTIONS` 请求。返回一个 `Allow` 响应头，指示此 Servlet 支持的 HTTP 方法。Servlet 很可能不需要重写此方法，因为 `HttpServlet` 方法已经实现了 HTTP 规范所需的功能。 |
+
 | `void doTrace(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException` | Servlet 引擎调用此方法来处理 HTTP `TRACE` 请求。导致请求头作为响应头回显。Servlet 很可能不需要重写此方法，因为 `HttpServlet` 方法已经实现了 HTTP 规范所需的功能。 |
+
 | `void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException` | 一个中间方法，由 `service(Request request, Response response)` 使用特定于 HTTP 的请求和响应对象调用。此方法实际上是将请求定向到 `doGet()`、`doPost()` 等。不需要重写此方法。 |
+
 | `void service(Request request, Response response) throws ServletException, IOException` | 将请求和响应对象强制转换为其特定于 HTTP 的子类，并调用特定于 HTTP 的 `service()` 方法。 |
 
 ## Servlet 请求
@@ -794,11 +841,12 @@ Servlet API 提供了 `Servlet` 接口的一个具体实现，名为 `GenericSer
 表 4-4 中显示的与协议无关的版本具有以下方法：
 
 -   查找客户端的主机名和 IP 地址
+
 -   检索请求参数
+
 -   获取和设置属性
+
 -   获取输入和输出流
-
-
 
 ## Servlet 响应
 
@@ -807,90 +855,153 @@ Servlet 响应对象的功能是将 Servlet 生成的结果传回发起请求的
 **表 4-4.** *`ServletRequest` 类中的方法*
 
 | 方法 | 描述 |
+
 | :--- | :--- |
+
 | `Object getAttribute(String name)` | 返回具有指定名称的请求属性，如果不存在则返回 null。属性可以是 Servlet 引擎设置的，也可以是通过 `setAttribute()` 显式添加的。后一种方法在与 `RequestDispatcher` 对象配合使用时很有用。 |
+
 | `Enumeration getAttributeNames()` | 返回此请求中所有属性名称的 `Enumeration`。如果没有属性存在，则返回一个空的 `Enumeration`。 |
+
 | `String getCharacterEncoding()` | 返回此请求使用的字符编码。 |
+
 | `int getContentLength()` | 指定输入流的长度（如果有的话）。如果未知，则返回 -1。 |
+
 | `ServletInputStream getInputStream() throws IOException` | 返回与此请求关联的（二进制）输入流（如果有的话）。可以调用 `getInputStream()` 或 `getReader()`，但不能同时调用两者。 |
+
 | `String getParameter(String name)` | 返回指定的输入参数，如果不存在则返回 null。 |
+
 | `Enumeration getParameterNames()` | 返回此请求中所有参数名称的可能为空的 `Enumeration`。 |
+
 | `String[] getParameterValues(String name)` | 返回指定输入参数名称的值数组，如果不存在值则返回 null。在参数可以有多个值的情况下很有用（例如 HTTP 复选框元素）。 |
+
 | `String getProtocol()` | 返回此请求使用的协议的名称和版本。 |
+
 | `String getScheme()` | 返回请求 URL 中直到第一个冒号（但不包括）的子字符串（例如 `http`）。 |
-| `String getServerName()` | 返回处理请求的服务器的主机名。 |
+
+| `String getServerName()` | 返回处理请请求的服务器的主机名。 |
+
 | `int getServerPort()` | 返回接收主机正在监听的端口号。 |
+
 | `BufferedReader getReader() throws IOException` | 返回用于与此请求关联的输入数据的字符读取器。可以调用此方法或 `getInputStream()`，但不能同时调用两者。 |
+
 | `String getRemoteAddr()` | 返回客户端主机的数字 IP 地址。 |
+
 | `String getRemoteHost()` | 返回客户端主机的名称（如果已知）。 |
+
 | `void setAttribute(String name, Object obj)` | 将对指定对象的引用存储在请求中，使用指定的名称。 |
+
 | `void removeAttribute(String name)` | 从请求中移除指定的属性。 |
+
 | `Locale getLocale()` | 返回客户端首选的语言环境（如果已知），否则返回 null。 |
+
 | `Enumeration getLocales()` | 返回客户端首选语言环境的 `Enumeration`（如果已知）；否则，返回服务器的首选语言环境。 |
+
 | `boolean isSecure()` | 如果请求是通过安全通道（如 HTTPS）发出的，则返回 `true`。 |
-| `RequestDispatcher getRequestDispatcher(String name)` | 返回指定资源名称的 `RequestDispatcher` 对象。有关请求分派的详细信息，请参见第 8 章。 |
+
+| `RequestDispatcher getRequestDispatcher(String name)` | 返回指定资源名称的 `RequestDispatcher`对象。有关请求分派的详细信息，请参见第 8 章。 |
 
 表 4-5 中的 `HttpServletRequest` 子接口添加了用于处理以下内容的方法：
 
 - 读取和写入 HTTP 头
+
 - 获取和设置 Cookie
+
 - 获取路径信息
+
 - 识别 HTTP 会话（如果存在）
 
 **表 4-5.** *`HttpServletRequest` 接口中的方法*
 
 | 方法 | 描述 |
+
 | :--- | :--- |
+
 | `String getAuthType()` | 如果 Servlet 受到身份验证方案（如 HTTP 基本身份验证）的保护，则返回该方案的名称。 |
+
 | `String getContextPath()` | 返回指定 Servlet 上下文（Web 应用程序）的 URI 前缀。 |
+
 | `Cookie[] getCookies()` | 返回与此请求关联的 Cookie 数组。 |
+
 | `long getDateHeader(String name)` | `getHeader()` 的便捷版本，将其输出转换为适合构造 `Date` 对象的 `long` 值。 |
+
 | `String getHeader(String name)` | 返回指定 HTTP 头的值（如果此请求中提供了该头）。名称不区分大小写。 |
+
 | `Enumeration getHeaderNames()` | 返回此请求中提供的所有 HTTP 头名称的 `Enumeration`。 |
+
 | `Enumeration getHeaders(String name)` | 返回此请求中提供的指定类型的所有 HTTP 头值的 `Enumeration`。对于可以有多个值的头很有用。 |
+
 | `int getIntHeader(String name)` | `getHeader()` 的便捷版本，将其输出转换为 `int` 值。 |
+
 | `String getMethod()` | 返回 HTTP 请求方法（例如 GET、POST 等）。 |
+
 | `String getPathInfo()` | 返回 URL 中指定的任何附加路径信息。 |
+
 | `String getPathTranslated()` | 返回 URL 中指定的任何附加路径信息，转换为实际路径。 |
+
 | `String getQueryString()` | 返回查询字符串——URL 中“?”之后的部分（如果有的话）。 |
+
 | `String getRemoteUser()` | 如果用户已通过身份验证，则返回远程用户的名称，否则返回 `null`。 |
+
 | `String getRequestedSessionId()` | 返回客户端返回的会话 ID。 |
+
 | `String getRequestURI()` | 返回 URL 中从“/”和上下文开始的部分，直到但不包括任何查询字符串。 |
+
 | `String getServletPath()` | 返回请求 URI 中跟在上下文之后的子字符串。 |
+
 | `HttpSession getSession()` | 调用 `getSession(true)` 的便捷方法。 |
+
 | `HttpSession getSession(boolean create)` | 返回当前 HTTP 会话，如果不存在且 `create` 参数为 `true`，则创建一个新会话。 |
+
 | `Principal getPrincipal()` | 如果用户已通过身份验证，则返回代表当前用户的 `java.security.Principal` 对象，否则返回 `null`。 |
+
 | `boolean isRequestedSessionIdFromCookie()` | 如果请求的会话 ID 由 Cookie 对象提供，则返回 true，否则返回 false。 |
+
 | `boolean isRequestedSessionIdFromURL()` | 如果请求的会话 ID 在请求 URL 中编码，则返回 true，否则返回 false。 |
+
 | `boolean isRequestedSessionIdValid()` | 如果客户端返回的会话 ID 仍然有效，则返回 true。 |
+
 | `boolean isUserInRole(String role)` | 如果当前通过身份验证的用户与指定角色关联，则返回 true。如果不关联或用户未通过身份验证，则返回 false。 |
 
 **表 4-6.** *`ServletResponse` 接口中的方法*
 
 | 方法 | 描述 |
+
 | :--- | :--- |
+
 | `void flushBuffer() throws IOException` | 将输出缓冲区的内容发送到客户端。因为 HTTP 要求在发送内容之前发送头，所以调用此方法会发送状态行和响应头，从而提交请求。 |
+
 | `int getBufferSize()` | 返回响应使用的缓冲区大小，如果缓冲未生效则返回 0。 |
+
 | `String getCharacterEncoding()` | 返回用于响应的字符编码的名称。除非明确设置为其他值，否则对应于 ISO-8859-1。 |
+
 | `Locale getLocale()` | 返回用于响应的语言环境。除非使用 `setLocale()` 修改，否则默认为服务器的语言环境。 |
+
 | `OutputStream getOutputStream() throws IOException` | 返回一个可用于写入要返回给客户端的二进制输出的流。可以调用此方法或 `getWriter()`，但不能同时调用两者。 |
+
 | `Writer getWriter() throws IOException` | 返回一个可用于写入要返回给客户端的文本输出的字符写入器。可以调用此方法或 `getOutputStream()`，但不能同时调用两者。 |
+
 | `boolean isCommitted()` | 如果状态和响应头已经发送回客户端，则返回 true。在响应提交后设置头没有效果。 |
+
 | `void reset()` | 清除输出缓冲区以及任何响应头。如果响应已经提交，则会导致 `IllegalStateException`。 |
+
 | `void setBufferSize(int nBytes)` | 设置响应的最小缓冲区大小。实际缓冲区大小可能更大，可以通过调用 `getBufferSize()` 获取。如果已经写入任何输出，则此方法会抛出 `IllegalStateException`。 |
-
-
 
 ## Servlet 上下文
 
 Servlet 上下文是由 Servlet 引擎提供的接口，用于向 Web 应用程序提供服务。Web 应用程序中的 Servlet 可以使用 Servlet 上下文来获取：
+
 - 在不同调用之间存储和检索属性，以及与其他 Servlet 共享这些属性的能力。
+
 - 读取 Web 应用程序中文件和其他静态资源内容的能力。
+
 - 相互分发请求的一种方式。
+
 - 记录错误和信息性消息的设施。
 
 Servlet 上下文具有一个名称（它所属的 Web 应用程序的名称），该名称唯一地映射到文件系统中的一个目录。
+
 Servlet 可以通过调用传递给 `init()` 的 `ServletConfig` 对象上的 `getServletContext()` 方法来获取对 Servlet 上下文的引用。如果 Servlet 直接或间接继承了 `GenericServlet`，它可以使用继承的便捷方法 `getServletContext()`。³
+
 表 4-8 概述了 `ServletContext` 提供的方法。
 
 ³ JSP 页面更加简单——对 Servlet 上下文的引用会自动存储在隐式变量 `application` 中。
@@ -898,25 +1009,41 @@ Servlet 可以通过调用传递给 `init()` 的 `ServletConfig` 对象上的 `g
 ## 表 4-8. ServletContext 接口中的方法
 
 | 方法 | 描述 |
+
 | :--- | :--- |
+
 | `ServletContext getContext(String uripath)` | 返回映射到同一服务器上另一个 URI 的 Servlet 上下文。URI 必须是以 "/" 开头的绝对路径。 |
+
 | `String getInitParameter(String name)` | 返回指定的、适用于整个上下文的初始化参数的值。这与 `ServletConfig` 中同名的方法不同，后者仅适用于编写它的特定 Servlet。相反，这是一个适用于上下文内所有 Servlet 的参数。 |
+
 | `Enumeration getInitParameterNames()` | 返回所有适用于整个上下文的初始化参数名称的（可能为空的）`Enumeration`。 |
+
 | `int getMajorVersion()`<br>`int getMinorVersion()` | 返回此上下文支持的 Servlet API 级别的主要和次要版本号。 |
+
 | `String getMimeType(String fileName)` | 返回指定文件名的 MIME 类型。通常基于文件扩展名，而非文件本身的内容（文件本身不一定存在）。如果 MIME 类型未知，可能返回 `null`。 |
+
 | `RequestDispatcher getNamedDispatcher(String name)`<br>`RequestDispatcher getRequestDispatcher(String path)` | 返回一个 `RequestDispatcher`，用于具有指定名称或路径的 Servlet 或 JSP 页面，如果无法创建 `RequestDispatcher` 则返回 `null`。如果指定了路径，则该路径必须以 "/" 开头，并且相对于 Servlet 上下文的根目录。 |
+
 | `String getRealPath(String path)` | 给定一个 URI，返回文件系统中该 URI 对应的绝对路径，如果无法进行映射则返回 `null`。 |
+
 | `URL getResource(String path)`<br>`InputStream getResourceAsStream(String path)` | 返回一个 URL，对应于相对于 Servlet 上下文的指定绝对路径，或者返回用于读取该 URL 的输入流。如果不存在这样的资源，则返回 `null`。 |
+
 | `String getServerInfo()` | 返回 Servlet 引擎的名称和版本号。 |
+
 | `void log(String message)`<br>`void log(String message, Throwable t)` | 将消息写入 Servlet 日志，如果提供了 `Throwable` 参数，则包括堆栈跟踪信息。 |
+
 | `void removeAttribute(String name)` | 从 Servlet 上下文中移除指定的属性。 |
 
 ## 表 4-6. ServletResponse 接口中的方法
 
 | 方法 | 描述 |
+
 |---|---|
+
 | `void setContentLength(int length)` | 设置内容体的长度。 |
+
 | `void setContentType(String type)` | 设置内容类型。在 HTTP Servlet 中，这将设置 `Content-Type` 头。 |
+
 | `void setLocale(Locale locale)` | 设置响应中要使用的语言环境。在 HTTP Servlet 中，这可能会影响 `Content-Type` 头的值。 |
 
 特定于 HTTP 的子接口 `HttpServletResponse` 添加了用于操作状态码、状态消息和响应头的方法。（附录 C 详细描述了 HTTP 响应头。）这使得它，例如，可用于发送 cookie 或将用户重定向到另一个 URL。它还提供了在写入网页的 URL 中编码 HTTP 会话 ID 的功能。表 4-7 描述了 `HttpServletResponse` 中的方法。
@@ -924,15 +1051,25 @@ Servlet 可以通过调用传递给 `init()` 的 `ServletConfig` 对象上的 `g
 ## 表 4-7. HttpServletResponse 接口中的方法
 
 | 方法 | 描述 |
+
 |---|---|
+
 | `void addCookie(Cookie cookie)` | 导致一个 `Set-Cookie` 头被添加到响应中。 |
+
 | `void addDateHeader(String name, long date)` | 便捷方法，使用指定的日期值添加一个具有指定名称的响应头（或替换所有同名的头）。这个 long 整型日期值应该是适合 `java.util.Date(long time)` 构造函数的值。 |
+
 | `void setDateHeader(String name, long date)` | 便捷方法，使用指定的日期值添加一个具有指定名称的响应头（或替换所有同名的头）。这个 long 整型日期值应该是适合 `java.util.Date(long time)` 构造函数的值。 |
+
 | `void setHeader(String name, String value)` | 设置一个具有指定名称和值的响应头。 |
+
 | `void addIntHeader(String name, int value)`<br>`void setIntHeader(String name, int value)` | 使用指定的整数值添加一个响应头（或替换所有同名的头）。 |
+
 | `boolean containsHeader(String name)` | 如果响应已经包含一个具有此名称的头，则返回 true。 |
+
 | `String encodeRedirectURL(String url)`<br>`String encodeURL(String url)` | 将会话 ID 添加到 URL 中，除非已知客户端接受 cookie。第一种形式应仅用于计划在 sendRedirect() 中使用的 URL。其他需要编码的 URL 应传递给 encodeURL()。 |
+
 | `void sendError(int status)`<br>`void sendError(int status, String msg)` | 将响应状态码设置为指定值（并可选地设置状态消息）。HttpServletResponse 定义了一套完整的整数常量，用于有效的状态值。 |
+
 | `void setStatus(int status)` | 将响应状态码设置为指定值。应仅用于不表示错误的响应。错误响应应使用 sendError() 代替。 |
 
 除了额外的方法，HttpServletResponse 还为每个可能的 HTTP 响应代码定义了整数常量。
@@ -983,9 +1120,9 @@ public class ColliderServlet extends HttpServlet
 
 ⁴ 这个特定问题可以通过使用一个私有类（本质上是一个数据结构）来容纳所有感兴趣的对象，然后将该类作为参数传递给辅助方法来解决。
 
-
-
 ## SingleThreadModel
+
+
 
 虽然单实例多线程模型是默认配置，但Servlet可以通过实现`SingleThreadModel`接口来改变此行为。这个没有任何方法的接口会告知Servlet引擎，它应该创建一个实例池，并将每个传入的请求分配给自己的实例和线程。这保证了没有两个*由同一实例处理*的请求会在执行service方法时重叠。因此，实例变量一次只能被一个请求影响，从而保证线程安全。但请注意，由于可能存在多个实例，因此无法阻止它们在不同的线程中并发执行。如果它们访问文件或数据库连接等外部资源，则仍然可能发生冲突。在很少的情况下，`SingleThreadModel`能解决其他方式无法更好处理的问题。
 
@@ -995,14 +1132,16 @@ public class ColliderServlet extends HttpServlet
 
 对于静态文档的基本下载来说，这已经足够了。但是，像购物车或迭代搜索引擎这样的应用程序需要在服务器上维护与特定客户端关联的活动对象。构建这些对象可能需要多个请求。在这种情况下，需要跟踪这些对象与哪个客户端绑定。
 
-有几种方法可以解决这个问题。其中大多数涉及在服务器上维护对象本身，并为其分配一个唯一密钥，要求客户端记住。在每个后续的相关请求中，客户端传回该密钥，从而使服务器能够重新建立上下文。
+有几种方法可以解决这个问题。其中大多数涉及在服务器上维护对象本身，并为其分配一个唯一密钥，要求客户端记住。在每个后续的相关请请求中，客户端传回该密钥，从而使服务器能够重新建立上下文。
 
 这类似于通过电话预订机票。票务代理要求客户提供她的姓名、地址和航班信息，将所有这些输入数据录入应用程序，该程序分配一个确认号码，并将其报告给客户。如果客户稍后需要回电更改任何内容，她提供确认号码，这允许票务代理访问并更新原始记录。
 
 如何引导客户端在需要时记住并提供密钥？有几种方法：
 
 - **Cookies** 服务器可以在其初始响应中发送一个`Set-Cookie`头，将会话ID作为cookie的值⁶。在后续请求中，客户端可以通过`Cookie`头返回该值。但是，单个用户可能会选择关闭其浏览器的cookie功能，因此此技术不能保证有效。
-- **将会话ID附加到URL** 对于动态过程创建的网页中的超链接，会话ID可以编码为URL中的请求参数。这不需要启用cookie，但它要求每个可点击的URL都被如此编码。如果有一个被遗漏了（这很容易发生），会话链接就会丢失。
+
+- **将会话ID附加到URL** 对于动态过程创建的网页中的超链接，会话ID可以编码为URL中的请请求参数。这不需要启用cookie，但它要求每个可点击的URL都被如此编码。如果有一个被遗漏了（这很容易发生），会话链接就会丢失。
+
 - **隐藏字段** 如果应用程序由一系列使用`submit`按钮进行导航的HTML表单组成，会话ID可以存储为隐藏字段，并通过`request.getParameter()`检索。显然，这仅在所有表单都是动态生成时才有效。
 
 ## HttpSession接口
@@ -1012,13 +1151,21 @@ Servlet API为这些各种技术提供了一个方便的包装器，称为*HTTP 
 表4-9. HttpSession接口中的方法
 
 | 方法 | 描述 |
+
 | :--- | :--- |
+
 | `Object getAttribute(String name)`<br>`void setAttribute(String name, Object value)`<br>`void removeAttribute(String name)` | 在会话中按指定名称存储对象，或按该名称返回或删除之前存储的对象。 |
+
 | `Enumeration getAttributeNames()` | 返回当前绑定到会话的所有属性名称的`Enumeration`。 |
+
 | `long getCreationTime()`<br>`long getLastAccessedTime()` | 返回一个长整数，表示会话创建或最后访问的日期和时间。该整数采用`java.util.Date()`构造函数使用的格式。 |
+
 | `String getId()` | 返回会话ID，这是由Servlet引擎分配的唯一密钥。 |
+
 | `int getMaxInactiveInterval()`<br>`void setMaxInactiveInterval(int seconds)` | 设置或返回如果与客户端没有交互，会话将保持活动的最大秒数。 |
+
 | `void invalidate()` | 使会话过期并解绑其中的任何对象。 |
+
 | `boolean isNew()` | 如果客户端尚未加入会话，则返回`true`。当会话首次创建并将会话ID传递给客户端，但客户端尚未发出包含会话ID的第二个请求时，此值为true。 |
 
 该API还提供了一个`HttpSessionBindingListener`接口。实现此接口的对象必须提供`valueBound()`和`valueUnbound()`方法，当对象被添加到或从HttpSession中移除时，这些方法会被调用。
@@ -1028,31 +1175,38 @@ Servlet API为这些各种技术提供了一个方便的包装器，称为*HTTP 
 Java Servlet是对Web服务器的扩展，允许根据客户端请求动态创建Web内容。它们由Servlet引擎管理，Servlet引擎加载并初始化它们，传递它们多个请求进行处理，然后卸载它们。Servlet比其他服务器端编程环境具有关键优势：
 
 - 性能更好，因为它们驻留在内存中，并且可以同时在多个线程中运行
+
 - 简单性，因为除了Web浏览器之外，不需要安装客户端软件
+
 - 会话跟踪
+
 - 访问Java技术，包括线程、网络和数据库连接
 
-Servlet在固定的生命周期中运行，向Servlet引擎提供用于初始化、处理请求和终止的回调方法。API提供两种线程模型：默认的是单实例运行多线程，另一种是单线程模型。
+Servlet在固定的生命周期中运行，向Servlet引擎提供用于初始化、处理请请求和终止的回调方法。API提供两种线程模型：默认的是单实例运行多线程，另一种是单线程模型。
 
 Servlet API中的主要类和接口是：
 
 - `Servlet`接口，它规定了必须实现的回调方法
+
 - `GenericServlet`，一个实现`Servlet`接口方法的基类
+
 - `HttpServlet`，`GenericServlet`的特定于HTTP的子类
+
 - `ServletRequest`，封装有关客户端请求的信息
+
 - `ServletResponse`，提供对输出流的访问以将结果返回给客户端
+
 - `ServletContext`接口，允许一组Servlet在Web应用程序中相互操作
 
 Servlet是JSP页面的基础技术。理解它们对于形成在JSP环境中进行开发和调试所需的思维模型至关重要。
 
 ---
+
 **脚注：**
 
 ⁵ HTTP 1.1确实提供了一种使连接持续几秒钟的方法，因此，例如，可以高效地下载HTML及相关图像。这需要客户端和服务器都了解该能力并明确请求。然而，请求/响应协议本身是相同的。
 
 ⁶ Cookies是由Web服务器发送的名称/值对，具有指定的生命周期。客户端浏览器存储cookie，并在每次浏览器从同一域请求页面时自动将其返回给服务器。有关cookie的更多详细信息，请参见RFC 2109规范。
-
-
 
 ## 第五章
 
@@ -1063,14 +1217,19 @@ JavaServer 页面（JSP）是一种用于生成动态 HTML 文档的网页模板
 因此，servlet 和 JSP 页面密切相关。一种技术能实现的功能，在很大程度上另一种也能实现，尽管每种技术都有其独特的优势。由于 JSP 页面本质上是 servlet，因此它们继承了 servlet 的所有优点：
 
 - 它们比 CGI 脚本具有更好的性能和可扩展性，因为它们在内存中持久存在且支持多线程。
+
 - 不需要特殊的客户端设置。
+
 - 它们内置支持 HTTP 会话，这使得应用程序编程成为可能。
+
 - 它们可以完全访问 Java 技术——网络感知、线程和数据库连接——而不受客户端小程序的限制。
 
 但是，此外，JSP 页面也有其自身的优势：
 
 - 它们会在必要时自动重新编译。
+
 - 由于它们存在于普通的 Web 服务器文档空间中，因此寻址 JSP 页面比寻址 servlet 更简单。
+
 - 由于 JSP 页面类似于 HTML，因此它们与 Web 开发工具具有更好的兼容性。
 
 本章概述了作为服务器端脚本环境的 JSP。它描述了 JSP 容器的操作，并逐步讲解了一个完整的示例。这里仅涵盖基础知识；第二部分的六章将深入探讨 JSP 页面。
@@ -1080,7 +1239,9 @@ JavaServer 页面（JSP）是一种用于生成动态 HTML 文档的网页模板
 JSP 页面以三种形式存在：
 
 - **JSP 源代码** 这是开发人员实际编写的代码形式。它存在于扩展名为 .jsp 的文本文件中，由 HTML 模板代码、Java 语言语句以及描述如何生成网页以服务特定请求的 JSP 指令和动作混合而成。
+
 - **Java 源代码** JSP 容器会根据需要将 JSP 源代码翻译为等效的 Java servlet 源代码。此源代码通常保存在工作区中，并且通常有助于调试。
+
 - **编译后的 Java 类** 与任何其他 Java 类一样，生成的 servlet 代码被编译为 .class 文件中的字节码，准备被加载和执行。
 
 JSP 容器根据每个文件的时间戳自动管理 JSP 页面的每种形式。为了响应 HTTP 请求，容器会检查 .jsp 源文件自上次编译 .java 源文件以来是否被修改过。如果是，容器会将 JSP 源代码重新翻译为 Java 源代码并重新编译它。图 5-1 说明了 JSP 容器使用的过程。当请求一个 JSP 页面时，容器首先确定与 .jsp 文件对应的类名。如果该类不存在，或者它比 .jsp 文件更旧（意味着 JSP 源代码自上次编译以来已更改），则容器会为等效的 servlet 创建 Java 源代码并编译它。如果 servlet 的实例尚未运行，容器会加载 servlet 类并创建一个实例。最后，容器分派一个线程在已加载的实例中处理当前的 HTTP 请求。
@@ -1214,8 +1375,6 @@ public int __getTranslationVersion()
 {
 ```
 
-
-
 ## 第二部分
 
 ## JSP 基础要素
@@ -1229,6 +1388,7 @@ JSP 语法与语义
 本章旨在概述 JavaServer Pages 中使用的基本组件，描述它们的编写方式，并解释它们的功能。本章将回顾 JSP 开发模型，然后介绍每个 JSP 元素，并探讨该元素在整体设计中的使用方式。最后，通过一个带注释的示例来说明每个元素的使用。在介绍这些内容时，我们主要关注以下方面：
 
 - 语法：用于表示元素的编码结构，以便 JSP 编译器能够识别它
+
 - 语义：元素对 JSP 容器的意义——当它被使用时会发生什么
 
 本章描述的每个 JSP 元素，都将在第二部分的剩余章节中进行更详细的介绍。
@@ -1238,7 +1398,9 @@ JSP 语法与语义
 回顾第 5 章，一个 JSP 页面以三种形式存在：
 
 1. 包含 HTML 语句和 JSP 元素的 .jsp 源文件
+
 2. 用于 servlet 程序的 Java 源代码
+
 3. 编译后的 Java 类
 
 为了理解 JSP 元素如何运作，建立一个关于这三种对象如何创建以及它们之间关系的思维模型非常重要。首先，JSP 开发者编写一个 .jsp 源文件，并将其存储在 Web 服务器或 Web 应用程序的文档文件系统中的某个位置。在这方面，.jsp 源文件与普通的 HTML 文件没有区别。它在网络上被识别的 URL 是相同的，只是其文件名以 .jsp 结尾，而不是 .html。接下来，当 .jsp URL 首次被调用时，JSP 容器读取 .jsp 文件，解析其内容，并生成等效 Java servlet 的源代码。然后它编译该 servlet 并创建一个 .class 文件。最后，JSP 容器加载 servlet 类，并使用它来处理 HTTP 请求。中间步骤（生成 servlet 源代码）只有在 .jsp 文件被更新后，才会为后续的请求重复执行。
@@ -1246,6 +1408,7 @@ JSP 语法与语义
 在这个设计中，JSP 元素可以在两个操作阶段影响 JSP 容器的操作：
 
 - 翻译时：从 .jsp 文件生成 Java servlet 源代码
+
 - 请求时：调用 servlet 处理 HTTP 请求
 
 记住这个模型有助于你理解 JSP 页面的语法单元及其可能的能力。
@@ -1257,7 +1420,9 @@ JSP 语法与语义
 JSP 元素有三种类型：
 
 - 指令
+
 - 脚本元素，包括表达式、脚本段和声明
+
 - 动作
 
 让我们更详细地探讨每一种元素。
@@ -1270,15 +1435,18 @@ JSP 元素有三种类型：
 <%@ directive-name [attribute="value" attribute="value" ...] %>
 ```
 
-在开头的 <%@ 和结尾的 %> 之后可以有零个或多个空格、制表符和换行符，并且在指令名以及属性/值对之间可以有一个或多个空白字符。唯一的限制是开头的 <%@ 标签必须与结尾的 %> 标签位于同一个物理文件中。
+在开头的 <%@ 和结尾的 %> 之后可以有零个或多个空格、制表符和换行符，并且在指令名以及属性/值对之间可以有一个或多个空白字符。唯一的限制是开头的 <%@ 标标签必须与结尾的 %> 标签位于同一个物理文件中。
 
 JSP 1.1 规范描述了在所有兼容的 JSP 环境中可用的三种标准指令：
 
 - page
+
 - include
+
 - taglib
 
-尽管规范声明在 JSP 1.1 环境中不能使用自定义指令，但这为在后续规范中包含用户自定义指令留下了可能性。
+尽管规范声明在 JSP 1.1 环境中不能使用自定指令，但这为在后续规范中包含用户自定义指令留下了可能性。
+
 接下来的三节将概述这些指令中的每一个。
 
 ## page 指令
@@ -1290,20 +1458,33 @@ JSP 1.1 规范描述了在所有兼容的 JSP 环境中可用的三种标准指�
 其中属性是表 6-1 中列出的任何属性。
 
 | 属性 | 值 |
+
 | :--- | :--- |
+
 | `language` | 脚本段、表达式和声明中使用的语言。在 JSP 1.1 中，此属性的唯一有效值是 java。 |
+
 | `extends` | 此 JSP 页面的超类的完全限定名。这必须是一个实现了 `HttpJspPage` 接口的类。JSP 规范警告，在不完全理解其含义的情况下使用此属性。 |
+
 | `import` | 以逗号分隔的一个或多个 `package.*` 名称和/或完全限定类名的列表。此列表用于在生成的 Java servlet 中创建相应的 import 语句。以下包是自动包含的，无需指定：<br>java.lang.*<br>java.servlet.*<br>java.servlet.jsp.*<br>java.servlet.http.* |
+
 | `session` | *true* 或 *false*，指示 JSP 页面是否需要 HTTP 会话。如果值为 true，则生成的 servlet 将包含创建（或访问，如果已存在）HTTP 会话的代码。默认值为 *true*。 |
+
 | `buffer` | 指定输出缓冲区的大小。有效条目是 *nnn*kb 或 *none*，其中 *nnn* 是为缓冲区分配的千字节数。默认值是 8kb。 |
+
 | `autoflush` | 如果缓冲区已满时应自动刷新，则为 *true*，否则如果应抛出缓冲区溢出异常，则为 *false*。默认值是 *true*。 |
+
 | `isThreadSafe` | 如果页面可以处理来自多个线程的并发请求，则为 *true*，否则为 *false*。如果为 *false*，则生成的 servlet 声明它实现了 SingleThreadModel 接口。 |
+
 | `info` | 页面的 getServletInfo() 方法将返回的字符串。 |
+
 | `isErrorPage` | 如果此页面打算用作另一个 JSP 的错误页面，则为 *true*。在这种情况下，可以在另一个页面的 page 指令中将此页面指定为 errorPage 属性的值。将此属性指定为 *true* 会使异常隐式变量在此页面中可用。默认值为 *false*。 |
+
 | `errorPage` | 指定另一个 JSP 页面的 URL，该页面将被调用以处理任何未捕获的异常。另一个 JSP 页面必须在其 page 指令中指定 isErrorPage="true"。 |
+
 | `contentType` | 指定在生成的 servlet 中使用的 MIME 类型，以及可选的字符编码。 |
 
 一个文件中可以有多个 page 指令，并且指定的属性集体应用于整个文件，但除了 *import* 属性外，任何属性都不能指定超过一次。
+
 第 10 章将更详细地介绍 page 指令。
 
 ## include 指令
@@ -1322,8 +1503,6 @@ JSP 1.1 规范描述了在所有兼容的 JSP 环境中可用的三种标准指�
 <%@ include file="sortmethod" %>
 ```
 
-
-
 include 指令与本章后面介绍的 `<jsp:include>` 动作形成对比，后者在请求时将另一个文件的输出合并到响应输出流中。这两种元素都可用于在 JSP 页面中包含标准页眉和页脚或其他通用文本。第 8 章将详细探讨这两种方法。
 
 ## taglib 指令
@@ -1337,8 +1516,11 @@ taglib 指令通过使用标签库，使自定义操作在当前页面中可用�
 其中属性如下所列：
 
 | 属性 | 值 |
+
 |---|---|
+
 | tagLibraryURI | 标签库描述符的 URL。 |
+
 | tagPrefix | 一个唯一前缀，用于标识页面中后面使用的自定义标签。 |
 
 例如，如果使用了以下指令，
@@ -1464,16 +1646,27 @@ for (int f = 32; f <= 212; f += 20) {
 这会产生以下输出：
 
 Degrees    Degrees
+
 Fahrenheit Celsius
+
 32         .000
+
 52         11.111
+
 72         22.222
+
 92         33.333
+
 112        44.444
+
 132        55.556
+
 152        66.667
+
 172        77.778
+
 192        88.889
+
 212        100.000
 
 第 7 章将详细探讨脚本段。
@@ -1566,8 +1759,6 @@ Fahrenheit Celsius
 
 第 8 章将更详细地讨论声明。
 
-
-
 ## 隐式对象
 
 虽然脚本段、表达式和HTML模板数据都会被合并到 `_jspService()` 方法中，但JSP容器会编写该方法本身的骨架，初始化页面上下文以及几个有用的变量。这些变量在脚本段和表达式（但不包括声明）中隐式可用。它们可以像任何其他变量一样被访问，但不必先进行声明。例如，传递给 `_jspService()` 的 `HttpServletRequest` 对象在名为 `request` 的变量下可用，如下面的脚本段所示：
@@ -1584,15 +1775,25 @@ Fahrenheit Celsius
 表6-2提供了隐式变量的完整列表。
 
 | 变量名 | 值 |
+
 | :--- | :--- |
+
 | `request` | 正在被处理的 `ServletRequest` 或 `HttpServletRequest`。 |
+
 | `response` | 将接收生成的HTML输出的 `ServletResponse` 或 `HttpServletResponse`。 |
+
 | `pageContext` | 此页面的 `PageContext` 对象。此对象是页面、请求、会话和应用程序的属性数据的中央存储库。 |
+
 | `session` | 如果JSP页面使用了 `HttpSession`，它在此处以 `session` 为名可用。 |
+
 | `application` | Servlet上下文对象。 |
+
 | `out` | 用于生成输出HTML的字符输出流。 |
+
 | `config` | 此Servlet上下文的 `ServletConfig` 对象。 |
+
 | `page` | 对JSP页面本身的引用。 |
+
 | `exception` | 导致错误页面被调用的未捕获异常。此变量仅对 `isErrorPage="true"` 的页面可用。 |
 
 **表6-2.** *隐式变量*
@@ -1616,19 +1817,29 @@ Fahrenheit Celsius
 XML语法要求如下：
 
 +   ■ 每个标签必须有匹配的结束标签，或使用前面所示的简写形式 `/>`。
+
 +   ■ 属性值必须放在引号内。
+
 +   ■ 标签必须正确嵌套：`<A><B> ... </B></A>` 是合法的，但 `<A><B> ... </A></B>` 是非法的。
 
 所有符合JSP 1.1的环境中都提供了七种标准动作。这些动作在第15章中有详细描述。表6-3概述了语法。
 
 | 标签名 | 描述 |
+
 | :--- | :--- |
+
 | `<jsp:useBean>` | 声明一个Java Bean实例并将其与变量名关联。语法是 `<jsp:useBean id="name" [ type="type" ] [ class="class" ] [ beanName="beanName" ] [ scope="page\|request\|session\|application" ]> ... </jsp:useBean>` |
-| `<jsp:setProperty>` | 设置之前通过 `<jsp:useBean>` 声明的Bean的一个或多个属性的值。语法是 `<jsp:setProperty name="id" prop-expression/>`，其中 *prop-expression* 是以下之一：`property="*"`，`property="propName"`，`property="propName" param="parameterName"`，`property="propName" value="value"`，`property="propName" value=<%= expression %>>` |
+
+| `<jsp:setProperty>` | 设置之前通过 `<jsp:useBean>` 声明的Bean的一个或多个属的值。语法是 `<jsp:setProperty name="id" prop-expression/>`，其中 *prop-expression* 是以下之一：`property="*"`，`property="propName"`，`property="propName" param="parameterName"`，`property="propName" value="value"`，`property="propName" value=<%= expression %>>` |
+
 | `<jsp:getProperty>` | 返回Bean的指定属性的值。语法是 `<jsp:getProperty name="id" property="name" />` |
+
 | `<jsp:include>` | 调用另一个资源并将其输出流与JSP页面输出流合并。语法是 `<jsp:include page="URL" flush="true" />`，或者，如果需要传递参数：`<jsp:include page="URL" flush="true"> <jsp:param ... /> <jsp:param ... /> ... <jsp:param ... /> </jsp:include>` |
+
 | `<jsp:forward>` | 将此HTTP请求转发给另一个JSP页面或Servlet进行处理。语法是 `<jsp:forward page="URL" />`，或者，如果需要传递参数：`<jsp:forward page="URL"> <jsp:param ... /> <jsp:param ... /> ... <jsp:param ... /> </jsp:forward>` |
+
 | `<jsp:param>` | 将一个值绑定到一个名称，并将此绑定传递给通过 `<jsp:include>` 或 `<jsp:forward>` 调用的另一个资源。语法是 `<jsp:param name="name" value="value" />` |
+
 | `<jsp:plugin>` | 用于为下载Java插件生成适当的HTML链接：`<jsp:plugin type="bean\|applet" code="objectCode" codebase="objectCodebase" { align="alignment" } { archive="archiveList" } { height="height" } { hspace="hspace" } { jreversion="jreversion" } { name="componentName" } { vspace="vspace" } { width="width" } { nspluginurl="url" } { iepluginurl="url" } > { <jsp:params> { <jsp:param name="name" value="value" /> }+ </jsp:params> } </jsp:plugin>` |
 
 **表6-3.** *标准动作*
@@ -1699,15 +1910,13 @@ import javax.servlet.jsp.*;
 import javax.servlet.jsp.tagext.*;
 import java.io.PrintWriter;
 import java.io.IOException;
-import java.io.FileInputStream;
-import java.io.ObjectInputStream;
-import java.util.Vector;
-import org.apache.jasper.runtime.*;
-import java.beans.*;
-import org.apache.jasper.JasperException;
-import java.util.*;
-
-
+            java.io.FileInputStream;
+            java.io.ObjectInputStream;
+            java.util.Vector;
+            org.apache.jasper.runtime.*;
+            java.beans.*;
+            org.apache.jasper.JasperException;
+            java.util.*;
 public class
     _0002fChap_00030_00035_0002fEcho_0002ejspEcho_jsp_5
     extends HttpJspBase
@@ -2033,8 +2242,6 @@ statement;
 <CENTER>
 ```
 
-
-
 ## ASCII 表
 
 ```html
@@ -2082,7 +2289,9 @@ statement;
 生成的 `_jspService()` 方法由多达三种类型的语句组成，具体取决于 JSP 页面的内容：
 
 -   处理 HTML 模板数据和表达式的代码
+
 -   任何脚本片段的内容
+
 -   容器生成的初始化和退出代码
 
 让我们逐一研究这些内容，并了解它们是如何被处理的。
@@ -2225,15 +2434,25 @@ public void _jspService(
 在 JSP 页面中编写的脚本片段和表达式并非独立的完整程序——它们需要一个运行环境。JSP 容器提供此环境，并通过所谓的 *隐式对象* 使其对页面作者可用。这些对象由容器生成的语句在 `_jspService()` 方法的开头创建，并被赋予在所有 JSP 页面中都相同的预定名称。共有九个这样的对象，如表 7-1 所列。
 
 | 对象 | 描述 |
+
 | :--- | :--- |
+
 | `request` | 传递给 `_jspService()` 的 `HttpServletRequest` 对象。 |
+
 | `response` | 传递给 `_jspService()` 的 `HttpServletResponse` 对象。 |
+
 | `pageContext` | 用于访问页面、请求、会话或应用程序属性的手段。 |
+
 | `session` | 当前的 `HttpSession` 对象（如果存在）。 |
+
 | `application` | Servlet 上下文对象。 |
+
 | `out` | `JspWriter` 响应输出流对象。 |
+
 | `config` | Servlet 配置对象。 |
+
 | `page` | 指向当前 JSP 类实例本身的引用。 |
+
 | `exception` | 未捕获的异常（仅在错误页面中有效）。 |
 
 **表 7-1.** 在脚本片段和表达式中可用的隐式对象
@@ -2271,11 +2490,17 @@ JSP 隐式对象提供了处理 HTTP 请求的上下文。以下各节将详细�
 **表 7-2.** `request` 对象的一些有用方法
 
 | 方法 | 描述 |
+
 | :--- | :--- |
-| `String getHeader(String name)` | 返回指定HTTP头部的值，如果请求中不存在该头部则返回 `null`。 |
+
+| `String getHeader(String name)` | 返回指定HTTP头部的值，如果请请求中不存在该头部则返回 `null`。 |
+
 | `Enumeration getHeaderNames()` | 返回请求中所有HTTP头部的名称枚举。 |
+
 | `String getParameter(String name)` | 给定单值表单参数的名称，返回其值。 |
+
 | `Enumeration getParameterNames()` | 返回传递给此请求的所有表单参数名称的枚举。 |
+
 | `HttpSession getSession(boolean create)` | 返回当前的 `HttpSession` 对象。如果不存在，则根据 `create` 标志创建一个新会话或返回 `null`。 |
 
 ³ javax.servlet.http.HttpServletRequest 以及 Servlet 2.2 API 中所有其他类的完整描述可在附录A中找到。
@@ -2283,20 +2508,29 @@ JSP 隐式对象提供了处理 HTTP 请求的上下文。以下各节将详细�
 **表 7-3.** `response` 对象的一些有用方法
 
 | 方法 | 描述 |
+
 |---|---|
+
 | boolean isCommitted() | 返回一个标志，指示HTTP响应是否已经返回给客户端。 |
+
 | void setHeader(String name, String value) | 设置具有指定名称和值的HTTP头部。 |
+
 | void setStatus(int sc) | 将HTTP状态设置为指定值。 |
 
 **100** JSP: The Complete Reference
 
 ## PageContext
 
+
+
 JSP代码在环境层次结构中运行，如图7-2所示。例如，单个HTTP请求可能由多个JSP页面提供服务：一个生成标题信息，另一个生成详细输出。同样，多个HTTP请求可能属于一个更大的HTTP会话，该会话从登录请求开始，经过一些用户选择请求，然后将工作提交给数据库。最后，servlet上下文中的所有HTTP会话可能共享一个连接池或其他公共对象。此层次结构中的每一层都可以拥有仅在该级别适用的属性。JSP规范提供了一个PageContext对象，用于跟踪四个级别的属性：
 
 - JSP页面
+
 - HTTP请求
+
 - HTTP会话
+
 - 整个应用程序
 
 `PageContext`对象在`_jspService()`方法开始时自动初始化并分配给名为`pageContext`的变量。此对象提供在四个级别中的每一个级别上搜索和更新属性的能力，如表7-4所述。它还提供将请求转发给其他资源和包含其他资源输出的方法。
@@ -2304,21 +2538,29 @@ JSP代码在环境层次结构中运行，如图7-2所示。例如，单个HTTP�
 **表 7-4.** `pageContext` 对象的一些有用方法
 
 | 方法 | 描述 |
+
 |---|---|
+
 | `Object findAttribute(String name)` | 按页面、请求、会话和应用程序的顺序，搜索具有指定名称的属性对象，返回找到的第一个对象，如果未找到则返回null。 |
+
 | `Object getAttribute(String name, int scope)` | 返回给定范围中具有指定名称的属性对象。`scope`参数值应从`PageContext`类中提供的`PAGE_CONTEXT`、`REQUEST_CONTEXT`、`SESSION_CONTEXT`和`APPLICATION_CONTEXT`常量中选择。 |
+
 | `void removeAttribute(String name, int scope)` | 移除给定范围中具有指定名称的属性对象。 |
+
 | `void setAttribute(String name, Object value, int scope)` | 在给定范围内将对象存储为命名属性。`scope`参数值应从`PageContext`类中定义的`PAGE_CONTEXT`、`REQUEST_CONTEXT`、`SESSION_CONTEXT`和`APPLICATION_CONTEXT`常量中选择。 |
 
 ## Session
 
-HTTP是一种无状态协议，这意味着它不会在从一个请求到下一个请求之间记住任何关于先前请求的信息。然而，Web应用程序经常涉及多个请求。例如，应用程序可能以某种用户身份识别和验证开始，这些信息必须传播到其他几个Web页面。这类应用程序所需的连续性必须由Web服务器以外的东西提供。
+HTTP是一种无状态协议，这意味着它不会在从一个请求到下一个请求之间记住任何关于先前请请求的信息。然而，Web应用程序经常涉及多个请求。例如，应用程序可能以某种用户身份识别和验证开始，这些信息必须传播到其他几个Web页面。这类应用程序所需的连续性必须由Web服务器以外的东西提供。
 
 可以采取几种方法来满足这一需求，具体取决于应用程序的要求。第14章详细探讨了多种替代方案，包括：
 
 - 隐藏字段
+
 - Cookies
+
 - URL重写
+
 - HTTP会话
 
 这里感兴趣的是最后一项。`HttpSession`是一个与单个Web浏览器会话关联的、类似`Hashtable`的对象。它在HTTP请求之间持续存在，可以存储任何类型的命名对象。默认情况下，JSP容器在`_jspService()`方法开始时创建一个`HttpSession`对象或访问当前活动的会话。此对象被分配给一个名为`session`的变量。
@@ -2330,12 +2572,19 @@ HTTP是一种无状态协议，这意味着它不会在从一个请求到下一�
 **表 7-5.** `session` 对象的一些有用方法
 
 | 方法 | 描述 |
+
 | :--- | :--- |
+
 | `Object getAttribute(String name)` | 如果会话中存在具有指定名称的对象，则返回该对象。 |
+
 | `Enumeration getAttributeNames()` | 返回存储在会话中的所有对象名称的枚举。 |
+
 | `String getId()` | 返回唯一的会话ID。客户端（Web浏览器）必须在请求之间存储此ID，并将其传回JSP容器以识别需要哪个会话。 |
+
 | int getMaxInactiveInterval() | 返回会话在用户请求之间保持活动的最大秒数。如果超过该时间长度没有活动，JSP容器将关闭会话。 |
+
 | void invalidate() | 关闭会话并解除其所有对象的绑定。 |
+
 | void setAttribute(String name, Object value) | 在会话中以指定名称存储一个对象。 |
 
 请记住，pageContext对象也可以像使用session.getAttribute()和session.setAttribute()方法一样，用于获取和设置会话中的属性。
@@ -2347,22 +2596,26 @@ application隐式对象封装了Web应用程序中所有servlet、JSP页面、HT
 **表 7-6.** `application` 对象的一些有用方法
 
 | 方法 | 描述 |
+
 | :--- | :--- |
+
 | Enumeration getAttributeNames() | 返回存储在servlet上下文中的所有对象名称的枚举。 |
+
 | Object getAttribute(String name) | 返回使用应用程序的setAttribute()方法存储的、具有指定名称的对象。 |
 
+| String getInitParameter(String name) | 返回指定应用程序范围初始化参数的值。 |
 
-
-| 方法 | 描述 |
-| :--- | :--- |
-| String getInitParameter(String *name*) | 返回指定应用程序范围初始化参数的值。 |
 | Enumeration getInitParameterNames() | 返回所有应用程序范围初始化参数名称的枚举。 |
-| String getRealPath(String *path*) | 在可能的情况下，将Web应用程序上下文中的路径转换为文件系统中的绝对路径。 |
-| URL getResource(String *path*) | 返回映射到应用程序中指定路径的URL（如果存在）。路径必须以"/"开头，并且是相对于应用程序根目录的。 |
-| InputStream getResourceAsStream(String *path*) | 操作类似于getResource()，但返回一个指向结果URL的打开的输入流。 |
-| void log(String *msg*) | 将消息写入与此应用程序关联的日志文件。 |
 
-**表 7-6.** *application对象的一些有用方法（续）*
+| String getRealPath(String path) | 在可能的情况下，将Web应用程序上下文中的路径转换为文件系统中的绝对路径。 |
+
+| URL getResource(String path) | 返回映射到应用程序中指定路径的URL（如果存在）。路径必须以"/"开头，并且是相对于应用程根目录的。 |
+
+| InputStream getResourceAsStream(String path) | 操作类似于getResource()，但返回一个指向结果URL的打开的输入流。 |
+
+| void log(String msg) | 将消息写入与此应用程序关联的日志文件。 |
+
+**表 7-6.** `application` 对象的一些有用方法（续）
 
 与`page`、`request`和`session`隐式对象一样，`application`对象的属性可以通过`pageContext`对象中的方法来操作。初始化参数将在本章的后面部分讨论。
 
@@ -2395,11 +2648,17 @@ for (int i = 0; i < colors.length; i++) {
 除了所有`java.io.Writer`对象共有的`write()`方法外，`out`对象还提供了用于查询和操作输出缓冲区的方法，如表7-7所示。
 
 | 方法 | 描述 |
+
 | :--- | :--- |
+
 | void flush() | 强制将缓冲数据写入输出流。 |
+
 | int getBufferSize() | 返回输出缓冲区的大小（以字节为单位），如果写入器是无缓冲的，则返回0。 |
+
 | int getRemaining() | 返回缓冲区溢出前剩余的字节数。 |
+
 | void print(type value) | 多种用于写入指定基本类型或对象类型值的方法。末尾不添加换行符。 |
+
 | void println(type value) | 类似于print()，但在末尾添加一个换行符。 |
 
 **表 7-7.** out对象的一些有用方法
@@ -2417,10 +2676,15 @@ for (int i = 0; i < colors.length; i++) {
 隐式`exception`变量所引用的对象是`java.lang.Throwable`的任何实例，它已被JSP页面中的`catch`块抛出但未被捕获。`exception`变量仅在`<%@ page %>`指令具有`isErrorPage="true"`属性时有效。此属性将在第10章中更详细地讨论。
 
 | 方法 | 描述 |
+
 | :--- | :--- |
-| String getInitParameter(String *name*) | 返回指定servlet初始化参数的值，如果命名参数不存在，则返回null。 |
+
+| String getInitParameter(String name) | 返回指定servlet初始化参数的值，如果命名参数不存在，则返回null。 |
+
 | Enumeration getInitParameterNames() | 返回此servlet所有初始化参数名称的列表。 |
+
 | ServletContext getServletContext() | 返回对servlet上下文的引用（与`application`隐式变量相同）。 |
+
 | String getServletName() | 返回生成的servlet的名称。 |
 
 **表 7-8.** `config`对象的一些有用方法
@@ -2474,13 +2738,21 @@ JSP页面提供了两种在处理请求时包含Java代码的方法：表达式�
 为了使其与JSP容器连接，JSP页面可以访问许多隐式对象。这些是自动初始化的对象，具有预定义的变量名。这些变量是：
 
 - request
+
 - response
+
 - pageContext
+
 - session
+
 - application
+
 - out
+
 - config
+
 - page
+
 - exception
 
 最后一个变量（exception）仅对在其页面指令中具有`isErrorPage="true"`属性的页面可用。
@@ -2496,8 +2768,6 @@ The Complete Reference
 # 声明
 
 版权所有 © 2001 The McGraw-Hill Companies, Inc. 点击此处查看使用条款。
-
-
 
 上一章介绍了 JSP 表达式和脚本片段。这两种元素类型与固定的 HTML 模板数据一样，共享一个公共环境——它们都存在于生成的 Java servlet 的 `_jspService()` 方法内。虽然这对于大多数请求处理来说已经足够，但它限制了 servlet 的某些功能。本章将介绍 JSP 声明，它允许 JSP 作者编写在 `_jspService()` 方法之外运行的 Java 代码。
 
@@ -2646,65 +2916,66 @@ import javax.servlet.jsp.*;
 import javax.servlet.jsp.tagext.*;
 import java.io.PrintWriter;
 import java.io.IOException;
-import java.io.FileInputStream;
-import java.io.ObjectInputStream;
-import java.util.Vector;
-import org.apache.jasper.runtime.*;
-import java.beans.*;
-import org.apache.jasper.JasperException;
-import java.text.*;
-import java.util.*;
+            java.io.FileInputStream;
+            java.io.ObjectInputStream;
+            java.util.Vector;
+            org.apache.jasper.runtime.*;
+            java.beans.*;
+            org.apache.jasper.JasperException;
+            java.text.*;
+            java.util.*;
 
-public class ShowTimeD extends HttpJspBase
-{
-    DateFormat fmt = new SimpleDateFormat("hh:mm:ss aa");
-    String now = fmt.format(new Date());
-
-    static
+    public class ShowTimeD extends HttpJspBase
     {
-    }
+        DateFormat fmt = new SimpleDateFormat("hh:mm:ss aa");
+        String now = fmt.format(new Date());
 
-    public ShowTimeD()
-    {
-    }
-
-    public void _jspService(
-            HttpServletRequest request,
-            HttpServletResponse  response)
-        throws IOException, ServletException
-    {
-        JspFactory _jspxFactory = null;
-        PageContext pageContext = null;
-        HttpSession session = null;
-        ServletContext application = null;
-        ServletConfig config = null;
-        JspWriter out = null;
-        Object page = this;
-        String  _value = null;
-        try {
-            _jspxFactory = JspFactory.getDefaultFactory();
-            response.setContentType("text/html;charset=8859_1");
-            pageContext = _jspxFactory.getPageContext
-                (this, request, response, "", true, 8192, true);
-
-            application = pageContext.getServletContext();
-            config = pageContext.getServletConfig();
-            session = pageContext.getSession();
-            out = pageContext.getOut();
-
-            out.write("\r\n");
-            out.write("\r\nThe time is ");
-            out.print( now );
-            out.write("\r\n");
+        static
+        {
         }
-        catch (Exception ex) {
-            if (out.getBufferSize() != 0)
-                out.clearBuffer();
-            pageContext.handlePageException(ex);
+
+        public ShowTimeD()
+        {
         }
-        finally {
-            out.flush();
-            _jspxFactory.releasePageContext(pageContext);
+
+        public void _jspService(
+                HttpServletRequest request,
+                HttpServletResponse  response)
+            throws IOException, ServletException
+        {
+            JspFactory _jspxFactory = null;
+            PageContext pageContext = null;
+            HttpSession session = null;
+            ServletContext application = null;
+            ServletConfig config = null;
+            JspWriter out = null;
+            Object page = this;
+            String  _value = null;
+            try {
+                _jspxFactory = JspFactory.getDefaultFactory();
+                response.setContentType("text/html;charset=8859_1");
+                pageContext = _jspxFactory.getPageContext
+                    (this, request, response, "", true, 8192, true);
+
+                application = pageContext.getServletContext();
+                config = pageContext.getServletConfig();
+                session = pageContext.getSession();
+                out = pageContext.getOut();
+
+                out.write("\r\n");
+                out.write("\r\nThe time is ");
+                out.print( now );
+                out.write("\r\n");
+            }
+            catch (Exception ex) {
+                if (out.getBufferSize() != 0)
+                    out.clearBuffer();
+                pageContext.handlePageException(ex);
+            }
+            finally {
+                out.flush();
+                _jspxFactory.releasePageContext(pageContext);
+            }
         }
     }
 }
@@ -2717,7 +2988,9 @@ public class ShowTimeD extends HttpJspBase
 声明可以包含任何有效的 Java 代码，但它们最常用于三种上下文：
 
 - **变量声明** 可以声明和初始化类变量和实例变量。
+
 - **方法定义** 可以将重复或过于复杂的脚本片段代码重构为一个调用其他方法的主程序。
+
 - **内部类** 可以定义额外的类，并使其对脚本片段、表达式和其他声明代码可用。
 
 本章剩余部分将详细讨论每种用途。
@@ -2730,8 +3003,6 @@ public class ShowTimeD extends HttpJspBase
 <%!
     static final String[] COLORS = {
 ```
-
-
 
 # 第8章：声明
 
@@ -2842,8 +3113,6 @@ JSP 声明中典型的方法定义是用于一个工具方法，该方法用于�
 
 这次，当显示相同的属性时，表格就适应了更合理的窗口大小（见图 8-5）。
 
-
-
 ## 重写 jspInit 和 jspDestroy
 
 在前面的例子中，字符串操作本可以在脚本片段中使用内联代码完成，而不必通过方法调用。在某些情况下，这是不可能的。例如，如果在加载 JSP 页面时需要获取资源或启动线程，这些操作应在 servlet 的 `init()` 和 `destroy()` 方法上下文中执行。
@@ -2896,7 +3165,9 @@ public void jspInit()
 与脚本片段和表达式不同，声明无法访问第 7 章中描述的隐式对象。原因很明显，因为声明中的方法定义在 `_jspService()` 方法之外。因此，如果声明方法需要访问其中一个或多个对象，则必须以某种方式从 `_jspService()` 传递这些对象。你可以通过几种方式做到这一点：
 
 - 将对象作为单独的参数传递。这很容易做到，但如果需要超过几个参数，会变得笨拙。
+
 - 将 `pageContext` 隐式对象作为参数传递。通过页面上下文，可以间接访问所有其他变量。
+
 - 将包含所有相关变量的结构作为单个参数传递。你将在下一节中看到如何做到这一点。
 
 第二种技术（传递页面上下文）在以下代码中进行了说明：
@@ -2918,7 +3189,7 @@ public void jspInit()
 %>
 ```
 
-`showSessionID()` 方法能够从页面上下文中提取 `JspWriter` 和 `HttpSession` 对象，并使用它们写入当前输出流。
+`showSessionID()` 方法能够从页面上下文中提取 `JspWriter`和`HttpSession`对象，并使用它们写入当前输出流。
 
 ## 内部类
 
@@ -2967,59 +3238,60 @@ import javax.servlet.jsp.*;
 import javax.servlet.jsp.tagext.*;
 import java.io.PrintWriter;
 import java.io.IOException;
-import java.io.FileInputStream;
-import java.io.ObjectInputStream;
-import java.util.Vector;
-import org.apache.jasper.runtime.*;
-import java.beans.*;
-import org.apache.jasper.JasperException;
-import java.io.*;
-import java.util.*;
+            java.io.FileInputStream;
+            java.io.ObjectInputStream;
+            java.util.Vector;
+            org.apache.jasper.runtime.*;
+            java.beans.*;
+            org.apache.jasper.JasperException;
+            java.io.*;
+            java.util.*;
 
-public class PassInnerClass extends HttpJspBase
-{
-    // begin [file="PassInnerClass.jsp";from=(1,3);to=(22,0)]
-
-    /**
-     * 用于在方法之间传递参数的内部类
-     */
-    class Parameters {
-        JspWriter out;
-        HttpSession session;
-        String url;
-    }
-
-    public void showSessionID(Parameters parms)
-    throws IOException
+    public class PassInnerClass extends HttpJspBase
     {
-        JspWriter out        = parms.out;
-        HttpSession session  = parms.session;
-        String url           = parms.url;
-        Date created = new Date(session.getCreationTime());
-        out.println("The session was created at " + created
-            + "<P>");
-        out.println("The url parameter was " + url);
-    }
-    // end
+        // begin [file="PassInnerClass.jsp";from=(1,3);to=(22,0)]
 
-    // ...
+        /**
+         * 用于在方法之间传递参数的内部类
+         */
+        class Parameters {
+            JspWriter out;
+            HttpSession session;
+            String url;
+        }
 
-    public void _jspService(
-        HttpServletRequest request,
-        HttpServletResponse response)
-        throws IOException, ServletException
-    {
+        public void showSessionID(Parameters parms)
+        throws IOException
+        {
+            JspWriter out        = parms.out;
+            HttpSession session  = parms.session;
+            String url           = parms.url;
+            Date created = new Date(session.getCreationTime());
+            out.println("The session was created at " + created
+                + "<P>");
+            out.println("The url parameter was " + url);
+        }
+        // end
+
         // ...
 
-        // begin [file="PassInnerClass.jsp";from=(23,2);to=(29,0)]
+        public void _jspService(
+            HttpServletRequest request,
+            HttpServletResponse response)
+            throws IOException, ServletException
+        {
+            // ...
 
-        Parameters parms = new Parameters();
-        parms.out = out;
-        parms.session = session;
-        parms.url = request.getParameter("url");
-        showSessionID(parms);
+            // begin [file="PassInnerClass.jsp";from=(23,2);to=(29,0)]
 
-        // end
+            Parameters parms = new Parameters();
+            parms.out = out;
+            parms.session = session;
+            parms.url = request.getParameter("url");
+            showSessionID(parms);
+
+            // end
+        }
     }
 }
 ```
@@ -3033,23 +3305,24 @@ public class PassInnerClass extends HttpJspBase
 声明有三个主要用途：
 
 - **变量声明** 可以定义类变量和实例变量，但必须注意确保对变量的写入访问是同步的，因为 servlet 默认是多线程的。变量声明最实际的用途是定义 `static final` 常量。
-- **方法定义** 可以通过 JSP 声明向生成的 servlet 添加额外方法。但是，由于生成的代码不在 `_jspService()` 方法内部，因此它无法访问隐式变量（`request`、`response`、`out` 等）。如果需要使用这些变量，必须显式地将它们传递给该方法。声明可用于重写 `jspInit()` 和 `jspDestroy()` 方法。
+
+- **方法定义** 可以通过 JSP 声明向生成的 servlet 添加额外方法。但是，由于生成的代码不在 `_jspService()` 方法内部，因此它无法访隐式变量（`request`、`response`、`out` 等）。如果需要使用这些变量，必须显式地将它们传递给该方法。声明可用于重写 `jspInit()` 和 `jspDestroy()` 方法。
+
 - **内部类** 声明提供了一种编写内部类的便捷方式。本章描述了使用内部类作为数据结构，在生成的 servlet 中的方法之间传递一组变量。
-
-
 
 ## 第九章：请求分发
 
 在大型Web开发项目中，让HTTP请求由多个服务器端组件处理通常是可取的。这样做有几个原因：
 
 - **消除冗余** 网站的许多功能对所有页面都是通用的，例如页眉和页脚、导航栏以及其他外观和风格元素。与其重复生成这些功能的HTML，不如编写一次并在多个地方使用，这更为实用。
+
 - **内容与表现分离** 由于Java可以在JSP的任何部分自由使用，你很容易编写出既生成信息又呈现信息的代码，可能涉及从数据库读取、执行计算以及生成HTML表格。日后可能需要同时更改逻辑和页面外观。这种代码很快会变得过于复杂。更有意义的是，将访问数据库和应用业务逻辑的纯Java代码与创建输出网页的JSP代码分离。
 
 本章探讨JSP环境中允许转发请求以及包含其他资源内容或输出的特性。本章还将讨论`RequestDispatcher`类的工作原理，并以比较两种JSP开发模型作为结尾。
 
 ## 请求处理剖析
 
-处理servlet和JSP请求的servlet引擎可以是Web服务器本身的一部分（称为*进程内*模型），也可以在单独的进程中运行。在后一种情况下，Web服务器包含一个称为连接器的组件。*连接器*拦截servlet请求，并通过与具体实现相关的协议将其传递给servlet引擎。其他请求则照常由Web服务器处理。图9-1说明了这种进程外模型。
+处理servlet和JSP请求的servlet引擎可以是Web服务器本身的一部分（称为*进程内*模型），也可以在单独的进程中运行。在后一种情况下，Web服务器包含一个称为连接器的组件。*连接器*拦截servlet请请求，并通过与具体实现相关的协议将其传递给servlet引擎。其他请求则照常由Web服务器处理。图9-1说明了这种进程外模型。
 
 当servlet引擎接收到一个请求时，它会将有关该请求的所有细节组装成一个`HttpServletRequest`对象。这些细节包括请求头、URI、查询字符串、发送的任何参数等等。同样，它会初始化一个`HttpServletResponse`对象，用于保存响应头和响应输出流。然后，它调用servlet的`service()`方法（如果servlet是JSP，则调用`_jspService()`方法），并传递这两个对象的引用，如图9-2所示。
 
@@ -3066,6 +3339,7 @@ public class PassInnerClass extends HttpJspBase
 HTML本身没有直接的方法在其输出中包含来自其他文件的数据。这很遗憾，因为在典型的网站中，大量的HTML标记在许多页面中是通用的——公司标志、版权声明、导航链接和其他功能。除了这些静态的文本和图像源之外，可能还需要包含动态内容。JSP提供了两种包含此类数据的方法：
 
 - `<%@ include %>`指令用于在将JSP源代码转换为Java servlet源代码并编译之前，将静态文本复制到其中。通常，这段文本是HTML代码，但它也可以是任何可以出现在JSP页面中的内容。
+
 - `<jsp:include>`操作会促使servlet引擎调用另一个URL，并将其输出与原始JSP页面的输出合并。
 
 构建心智模型时需要记住的一个关键点是，`<%@ include %>`指令在编译时执行一次，而`<jsp:include>`操作则在每次发出请求时执行。接下来的两节将分别描述这两种JSP组件及其操作方式。
@@ -3073,7 +3347,9 @@ HTML本身没有直接的方法在其输出中包含来自其他文件的数据�
 ### include 指令
 
 `include`指令的语法如下：
+
 `<%@ include file="filename" %>`
+
 包含的文件名必须是相对URL规范，这意味着它只包含路径信息，不包含协议或服务器信息。因此，只能通过此方法包含当前servlet上下文中的资源。
 
 如果文件名以“/”开头，则它被视为相对于servlet上下文顶部的绝对路径。否则，文件名被视为相对于当前JSP页面的相对路径。例如，如果一个Web应用程序有一个`products`子目录，并且`products/search.jsp`页面包含指令
@@ -3172,8 +3448,6 @@ private static final long[] __times__ = {
 
 需要记住的关键点是，包含的文件是编译时存在的文件，因为`<%@ include %>`指令在此时被处理。这就是为什么文件名不能是运行时表达式。这也意味着包含的文件必须在编译时存在。
 
-
-
 ## 使用 include 指令复制源代码
 
 除了用于复制 HTML 外，`include` 指令还可用于将 Java 源代码作为声明部分包含进来。例如，一个常用的实用函数可以存储在文件中，并通过 `include` 指令合并到 JSP 页面中。一个典型的例子是一个过滤掉 HTML 中具有特殊含义的字符，并将其替换为符号化可打印等效字符的函数：
@@ -3255,7 +3529,7 @@ public static final String webify(String s)
 
 ### 工作原理
 
-`<jsp:include>` 动作由 JSP 编译器解析，但它不是在编译时执行，而是被转换为在请求时调用命名资源的 Java 代码。该资源可以是静态数据源（如 HTML 文件），也可以是动态源（如 JSP 页面或 servlet）。回到我们的冰淇淋口味示例，`flavors.jsp` 可能包含：
+`<jsp:include>` 动作由 JSP 编译器解析，但它不是在编译时执行，而是被转换为在请务时调用命名资源的 Java 代码。该资源可以是静态数据源（如 HTML 文件），也可以是动态源（如 JSP 页面或 servlet）。回到我们的冰淇淋口味示例，`flavors.jsp` 可能包含：
 
 ```
 <H3>Flavors</H3>
@@ -3405,14 +3679,14 @@ JSP 并非包含口味的有序列表，而是调用 `pageContext.include()` 方
 <TABLE BORDER=0 CELLPADDING=3 CELLSPACING=0>
 ```
 
-
-
 # 第9章：请求分发 147
 
 +   - 请求头
+
 - 参数
 
 +   ■ ServletRequest 中的方法
+
 ■ HttpServletRequest 中的方法
 
 这个字符串数组提供了生成页面所需的所有信息。单选按钮包含在一个自引用的 HTML 表单中，并通过循环生成，使用两个字符的缩写作为 VALUE 属性，标签作为可见文本。当点击一个单选按钮时，表单会被提交，按钮的值将作为 which 参数的值。图 9-3 显示了初始显示，即请求头类别。当点击另一个单选按钮（例如，ServletRequest Method 按钮）时，表格主体中会出现不同的表格（见图 9-4）。
@@ -3464,7 +3738,7 @@ ShowRequest.jsp 确定哪个单选按钮被点击，并从字符串数组中选�
 </jsp:include>
 ```
 
-这些参数与普通的表单参数相同，传递给包含的 JSP，并且可以使用 `request.getParameter(name)` 检索。如果参数名与 JSP 已经使用的相同，两个值都会被传递，并且可以使用 `getParameterValues(name)` 作为字符串数组检索。
+这些参数与普通的表单参数相同，传递给包含的 JSP，并且可以使用 `request.getParameter(name)` 检索。如果参数名与 JSP 已已经使用的相同，两个值都会被传递，并且可以使用 `getParameterValues(name)` 作为字符串数组检索。
 
 下面的 JSP 展示了如何使用这种技术。它两次包含同一个页面，每次使用不同的参数。
 
@@ -3490,6 +3764,7 @@ ShowRequest.jsp 确定哪个单选按钮被点击，并从字符串数组中选�
 传递了两个参数：
 
 +   - **dist** 以公里为单位的距离。
+
 - **units** 如果需要公制单位则为 "SI"，否则为 "US"。
 
 ShowDiameter.jsp 页面检索公里距离，将其转换为整数，并找到英里等价值。然后，根据 units 参数传递的度量单位代码，以 SI 或美国单位显示距离。
@@ -3514,7 +3789,7 @@ ShowDiameter.jsp 页面检索公里距离，将其转换为整数，并找到英
 
 ## 检索原始 URI
 
-当页面在 `<jsp:include>` 动作中被调用时，它使用与包含页面相同的请求对象，这意味着 `request.getRequestURI()` 和 `request.servletPath()` 返回的是最初处理请求的页面的路径，而不是当前页面的路径。然而，包含页面的等效值可以作为请求的属性使用。这在 ShowPath1.jsp 中进行了说明：
+当页面在 `<jsp:include>` 动作中被调用时，它使用与包含页面相同的请请求对象，这意味着 `request.getRequestURI()` 和 `request.servletPath()` 返回的是最初处理请求的页面的路径，而不是当前页面的路径。然而，包含页面的等效值可以作为请求的属性使用。这在 ShowPath1.jsp 中进行了说明：
 
 ```
 <PRE>
@@ -3578,14 +3853,18 @@ In ShowPath2.jsp:
 
 可以通过这种方式检索的属性集列在表 9-1 中。
 
-
-
 | 属性名称 | 等效方法 |
+
 |---|---|
+
 | javax.servlet.include.request_uri | request.getRequestURI() |
+
 | javax.servlet.include.context_path | request.getContextPath() |
+
 | javax.servlet.include.servlet_path | request.getServletPath() |
+
 | javax.servlet.include.path_info | request.getPathInfo() |
+
 | javax.servlet.include.query_string | request.getQueryString() |
 
 表 9-1. 描述被包含JSP页面的请求属性
@@ -3595,9 +3874,13 @@ In ShowPath2.jsp:
 包含指令和 `<jsp:include>` 动作执行类似的功能，各有其优点。选择使用哪一种，应考虑包含操作是否需要在运行时进行。下表比较了两种选项：
 
 | 准则 | <%@ include %> | <jsp:include> |
+
 |---|---|---|
+
 | 编译时间 | 较慢——必须解析资源 | 稍快 |
+
 | 执行时间 | 稍快 | 较慢——每次都需要解析资源 |
+
 | 灵活性 | 较低——页面名称固定 | 较高——可在运行时选择页面 |
 
 ## 转发请求
@@ -3608,9 +3891,11 @@ In ShowPath2.jsp:
 <jsp:forward page="page" />
 ```
 
-其中，page是相对于当前页面的URI，或者是相对于servlet上下文根目录的绝对URI。与 `<jsp:include>` 类似，`<jsp:forward>` 动作可以使用运行时表达式来指定页面名称。类似地，它可以使用以下语法向新的JSP传递参数：
 
-```
+
+其中，`page` 是相对于当前页面的 URI，或者是相对于 servlet 上下文根目录的绝对 URI。与 `<jsp:include>` 类似，`<jsp:forward>` 动作可以使用运行时表达式来指定页面名称。类似地，它可以使用以下语法向新的 JSP 传递参数：
+
+```jsp
 <jsp:forward page="page">
     <jsp:param name="name_1" value="value_1" />
     <jsp:param name="name_2" value="value_2" />
@@ -3622,14 +3907,14 @@ In ShowPath2.jsp:
 当执行 `<jsp:forward>` 动作时，指定的页面会被加载，当前页面则终止。新页面可以访问请求和响应对象，并且需要创建所有输出，因为转发页面不能写入任何输出。下表描述了输出缓冲是否启用，以及缓冲区是否已满时的操作情况。
 
 | 缓冲启用 | 缓冲区已满 | 操作 |
-| :--- | :--- | :--- |
-| 否 | 不适用 | 如果已经写入了任何输出，将抛出IllegalStateException。 |
+|:---|:---|:---|
+| 否 | 不适用 | 如果已经写入了任何输出，将抛出 `IllegalStateException`。 |
 | 是 | 否 | 转发前会清除缓冲区。 |
-| 是 | 是 | 将抛出IllegalStateException。 |
+| 是 | 是 | 将抛出 `IllegalStateException`。 |
 
-以下代码展示了请求转发的典型用途——将内容与表示分离。第一个JSP页面是GetFoodGroups.jsp，它从USDA营养数据库中读取食物组列表：
+以下代码展示了请求转发的典型用途——将内容与表示分离。第一个 JSP 页面是 `GetFoodGroups.jsp`，它从 USDA 营养数据库中读取食物组列表：
 
-```
+```jsp
 <%@ page errorPage="/ErrorPage.jsp" %>
 <%@ page import="java.io.*" %>
 <%@ page import="java.sql.*" %>
@@ -3641,32 +3926,47 @@ In ShowPath2.jsp:
 // 加载驱动程序类并建立连接
 
 Class.forName
+
     ("sun.jdbc.odbc.JdbcOdbcDriver");
 
 Connection con = DriverManager.getConnection
+
     ("jdbc:odbc:usda");
 
 // 运行数据库查询以获取食物组列表
 
 Statement stmt = con.createStatement();
+
 String sql =
+
     " SELECT FdGp_Cd, FdGp_Desc"
+
     + " FROM fd_group"
+
     ;
+
 ResultSet rs = stmt.executeQuery(sql);
 
-// 将结果存储为FoodGroup对象列表
+// 将结果存储为 FoodGroup 对象列表
 
 List fglist = new ArrayList();
+
 while (rs.next()) {
+
     String code = rs.getString(1);
+
     String desc = rs.getString(2);
+
     FoodGroup fg = new FoodGroup(code, desc);
+
     fglist.add(fg);
+
 }
 
 rs.close();
+
 stmt.close();
+
 con.close();
 
 // 将列表存储为请求属性
@@ -3677,9 +3977,9 @@ request.setAttribute("jspcr.forward.FoodGroups", fglist);
 
 %><jsp:forward page="ShowFoodGroups.jsp" />
 
-随着食物组记录被读取，它们被存储在一个List结构中。该列表被保存为请求中的一个属性。当所有记录都已从数据库中提取出来时，请求被转发到ShowFoodGroups.jsp，后者检索该列表并将其写为HTML表格：
+随着食物组记录被读取，它们被存储在一个 List 结构中。该列表被保存为请求中的一个属性。当所有记录都已从数据库中提取出来时，请求被转发到 `ShowFoodGroups.jsp`，后者检索该列表并将其写为 HTML 表格：
 
-```
+```jsp
 <%@ page import="java.io.*,java.util.*,jspcr.forward.*" %>
 <HTML>
 <HEAD>
@@ -3695,7 +3995,7 @@ request.setAttribute("jspcr.forward.FoodGroups", fglist);
 <CENTER>
 <H3>Food Groups</H3>
 
-<%--  获取由数据库调用创建的FoodGroup对象列表 --%>
+<%--  获取由数据库调用创建的 FoodGroup 对象列表 --%>
 
 <%
     List fglist = (List) request.getAttribute
@@ -3725,13 +4025,13 @@ request.setAttribute("jspcr.forward.FoodGroups", fglist);
 </HTML>
 ```
 
-ShowFoodGroups.jsp的优点在于它可以独立测试，而无需连接到数据库。可以编写一个用于测试的存根JSP。只要它填充了List属性，ShowFoodGroups.jsp就不会意识到它并非在与数据库打交道。结果显示在图9-6中。
+`ShowFoodGroups.jsp` 的优点在于它可以独立测试，而无需连接到数据库。可以编写一个用于测试的存根 JSP。只要它填充了 List 属性，`ShowFoodGroups.jsp` 就不会意识到它并非在与数据库打交道。结果显示在图 9-6 中。
 
 ![](img/7a2f73369bb140583c7288b73456addb_183_0.png)
 
-`<jsp:include>` 和 `<jsp:forward>` 的底层机制都是 `javax.servlet.RequestDispatcher` 类。在上一节的食物组示例中，`<jsp:forward>` 动作被Tomcat翻译成以下代码：
+`<jsp:include>` 和 `<jsp:forward>` 的底层机制都是 `javax.servlet.RequestDispatcher` 类。在上一节的食物组示例中，`<jsp:forward>` 动作被 Tomcat 翻译成以下代码：
 
-```
+```java
 if (true) {
     out.clear();
     String _jspx_qfStr = "";
@@ -3740,9 +4040,9 @@ if (true) {
 }
 ```
 
-Tomcat对 `pageContext` 的实现，反过来调用一个 `RequestDispatcher` 来处理转发：
+Tomcat 对 `pageContext` 的实现，反过来调用一个 `RequestDispatcher` 来处理转发：
 
-```
+```java
 public void forward(String relativeUrlPath)
         throws ServletException, IOException
 {
@@ -3751,60 +4051,71 @@ public void forward(String relativeUrlPath)
 }
 ```
 
-你可以通过三种方式创建RequestDispatcher：
+你可以通过三种方式创建 `RequestDispatcher`：
 
 1. `ServletContext.getRequestDispatcher(String path)`
+
     - 路径必须是相对于上下文的绝对路径。
-    - 如果已知其上下文，可以为另一个servlet上下文中的资源创建dispatcher。该上下文可以通过 `context.getContext(otherContext)` 获取。
+
+    - 如果已知其上下文，可以为另一个 servlet 上下文中的资源创建 dispatcher。该上下文可以通过 `context.getContext(otherContext)` 获取。
+
 2. `ServletContext.getNamedDispatcher(String name)`
-    - *name* 参数指的是servlet别名，而不是物理路径名。
-    - servlet可以通过 `config.getServletName()` 获取其自身名称。
+
+    - `name` 参数指的是 servlet 别名，而不是物理路径名。
+
+    - servlet 可以通过 `config.getServletName()` 获取其自身名称。
+
 3. `ServletRequest.getRequestDispatcher(String name)`
+
     - 路径可以是相对于上下文的绝对路径，也可以是相对于页面的相对路径。这是此方法与第一种方法的主要区别。
 
 ### 请求分发与重定向
 
-请求分发器完成的大部分工作，也可以通过让JSP或servlet编写“临时移动”或“永久移动”状态码，并在Location头部写入下一个JSP或servlet的URL来实现。区别在于，重定向需要客户端的配合才能工作，而请求分发则完全在服务器端处理，无需客户端交互。
+请求分发器完成的大部分工作，也可以通过让 JSP 或 servlet 编写“临时移动”或“永久移动”状态码，并在 Location 头部写入下一个 JSP 或 servlet 的 URL 来实现。区别在于，重定向需要客户端的配合才能工作，而请求分发则完全在服务器端处理，无需客户端交互。
 
-### 模型1与模型2
+### 模型 1 与模型 2
 
-这些都是方便的功能，但如果仅仅随意地用于页眉和页脚，则未能充分发挥其作用。相反，它们可以成为协调良好的架构的一部分。如果你阅读JSP新闻组，经常会看到关于模型1和模型2架构的引用，这是在最初的JSP 0.92规范中引入的两种不同的Web应用结构方法。
+这些都是方便的功能，但如果仅仅随意地用于页眉和页脚，则未能充分发挥其作用。相反，它们可以成为协调良好的架构的一部分。如果你阅读 JSP 新闻组，经常会看到关于模型 1 和模型 2 架构的引用，这是在最初的 JSP 0.92 规范中引入的两种不同的 Web 应用结构方法。
 
-在模型1应用中，JSP包揽一切：
+在模型 1 应用中，JSP 包揽一切：
 
-- 用户请求一个JSP页面。
-- JSP执行计算、数据库访问等操作。
-- JSP页面用HTML呈现其输出。
+- 用户请求一个 JSP 页面。
 
-完成所有这些工作所需的Java代码可以直接以脚本片段的形式编写，也可以包含在JavaBeans中。
+- JSP 执行计算、数据库访问等操作。
 
-模型2应用遵循模型-视图-控制器（MVC）范式。MVC是一种面向对象的编程概念，在Smalltalk语言中尤为突出。它描述了将应用逻辑划分为三个部分：
+- JSP 页面用 HTML 呈现其输出。
 
-- **模型** 是逻辑上的“内部”表示。它没有可见的输出，也没有任何外部表示。因此，它可以在servlet、独立图形用户界面或批处理测试程序中同样良好地运行。例如，一个国际象棋游戏的模型可能包括一个表示棋盘的数组、表示每个棋子的数字以及对规则的一些编码。
+完成所有这些工作所需的 Java 代码可以直接以脚本片段的形式编写，也可以包含在 JavaBeans 中。
+
+模型 2 应用遵循模型-视图-控制器（MVC）范式。MVC 是一种面向对象的编程概念，在 Smalltalk 语言中尤为突出。它描述了将应用逻辑划分为三个部分：
+
+- **模型** 是逻辑上的“内部”表示。它没有可见的输出，也没有任何外部表示。因此，它可以在 servlet、独立图形用户界面或批处理测试程序中同样良好地运行。例如，一个国际象棋游戏的模型可能包括一个表示棋盘的数组、表示每个棋子的数字以及对规则的一些编码。
+
 - **视图** 是模型的表示层，几乎没有或完全没有编程逻辑。它从已填充的结构中读取并显示它们。在我们的国际象棋例子中，视图将是游戏的屏幕表示，可能有交替的颜色和雕刻精美的棋子。
+
 - **控制器** 提供用户输入和方向给模型。在国际象棋的例子中，控制器将是键盘。
 
+## Model 2 Web 应用
 
+在 Model 2 Web 应用中，所有用户请求都被引导到一个单一的 URL，一个有时被称为 *分发器*（即 **控制器**）的 servlet。这个 servlet 在请求的路径信息中查找它需要执行的操作指示。可能会有一个操作表和处理每个操作的 JSP 页面名称。这些操作处理程序构成了应用的 **模型**。它们可以访问数据库或执行其他计算，然后将结果填充到 JavaBeans 或其他类中。最后，它们调用 JSP 页面（即 **视图**）来呈现输出。
 
-## Model 2 Web应用
+哪种模型更好？Model 1 更容易快速搭建，但它的扩展性不好。太多的东西被捆绑在一起，随着应用的增长，它会变得难以控制。Model 2 的扩展性好得多，并且允许专家编写应用的不同部分：
 
-在Model 2 Web应用中，所有用户请求都被引导到一个单一的URL，一个有时被称为*分发器*（即**控制器**）的servlet。这个servlet在请求的路径信息中查找它需要执行的操作指示。可能会有一个操作表和处理每个操作的JSP页面名称。这些操作处理程序构成了应用的**模型**。它们可以访问数据库或执行其他计算，然后将结果填充到JavaBeans或其他类中。最后，它们调用JSP页面（即**视图**）来呈现输出。
+- Java 程序员可以编写模型和控制器。
 
-哪种模型更好？Model 1更容易快速搭建，但它的扩展性不好。太多的东西被捆绑在一起，随着应用的增长，它会变得难以控制。Model 2的扩展性好得多，并且允许专家编写应用的不同部分：
-
-- Java程序员可以编写模型和控制器。
-- 用户界面专家可以编写只负责显示输出的JSP页面。
+- 用户界面专家可以编写只负责显示输出的 JSP 页面。
 
 ## 总结
 
-将HTTP请求处理拆分成多种情况通常是很有利的。JSP提供了两种通用能力来支持这一点：
+将 HTTP 请求处理拆分成多种情况通常是很有利的。JSP 提供了两种通用能力来支持这一点：
 
-- 使用`<%@ include %>`或`<jsp:include>`包含其他资源。
-- 使用`<jsp:forward>`转发请求。
+- 使用 `<%@ include %>` 或 `<jsp:include>` 包含其他资源。
 
-包含的资源可以是静态的（如HTML）或动态的（如JSP或servlet）。转发请求的能力为表驱动应用提供了基础。
+- 使用 `<jsp:forward>` 转发请求。
 
-存在两种通用的开发架构，通常称为Model 1和Model 2。Model 1使用JSP页面来接受用户输入，根据需要访问数据库，并格式化其输出。Model 2遵循MVC范式，允许复杂项目根据需要在专注于不同层次的团队之间进行分离。
+包含的资源可以是静态的（如 HTML）或动态的（如 JSP 或 servlet）。转发请求的能力为表驱动应用提供了基础。
+
+存在两种通用的开发架构，通常称为 Model 1 和 Model 2。Model 1 使用 JSP 页面来接受用户输入，根据需要访问数据库，并格式化其输出。Model 2 遵循 MVC 范式，允许复杂项目根据需要在专注于不同层次的团队之间进行分离。
 
 # 完全参考
 
@@ -3820,36 +4131,47 @@ public void forward(String relativeUrlPath)
 
 **162 JSP：完全参考**
 
-JSP页面不仅包含处理请求和生成响应的代码，还包含给JSP编译器的指令。这些指令被称为本章涵盖的最常用的一种——页面指令。此指令提供了一种设置属性的方法，这些属性影响页面的解释和执行方式。语法如下：
+JSP 页面不仅包含处理请求和生成响应的代码，还包含给 JSP 编译器的指令。这些指令被称为本章涵盖的最常用的一种——页面指令。此指令提供了一种设置属性的方法，这些属性影响页面的解释和执行方式。语法如下：
 
 `<%@ page attribute="value" attribute="value" ... %>`
 
 其中属性可以是以下任何一个：
 
 - `language="scripting language"`
+
 - `extends="className"`
+
 - `import="importList"`
+
 - `session="true | false"`
+
 - `buffer="none | sizekb"`
+
 - `autoFlush="true | false"`
+
 - `isThreadSafe="true | false"`
+
 - `info="info_text"`
+
 - `contentType="ctinfo"`
+
 - `errorPage="error_url"`
+
 - `isErrorPage="true | false"`
 
-属性可以按任意顺序指定，并且可以在一个编译单元（JSP页面及其通过include指令包含的任何文件）中指定多个页面指令。但是，如果使用多个页面指令，则不能对同一属性指定多次，import属性除外。
+属性可以按任意顺序指定，并且可以在一个编译单元（JSP 页面及其通过 include 指令包含的任何文件）中指定多个页面指令。但是，如果使用多个页面指令，则不能对同一属性指定多次，`import` 属性除外。
+
 本章其余部分将详细讨论这些属性中的每一个。
 
 ### language
 
-JSP架构允许它被扩展为一个通用的服务器端脚本框架。为此，它在页面指令中支持language属性。指定的值（默认为java）适用于当前翻译单元中的所有声明、表达式和脚本小程序，包括include指令中指定的任何文件。所有符合JSP 1.1规范的容器都必须支持language属性的值java。JSP 1.1规范不支持其他语言，尽管个别JSP引擎可能会支持。
+JSP 架构允许它被扩展为一个通用的服务器端脚本框架。为此，它在页面指令中支持 `language` 属性。指定的值（默认为 `java`）适用于当前翻译单元中的所有声明、表达式和脚本小程序，包括 `include` 指令中指定的任何文件。所有符合 JSP 1.1 规范的容器都必须支持 `language` 属性的值 `java`。JSP 1.1 规范不支持其他语言，尽管个别 JSP 引擎可能会支持。
 
-虽然规范允许使用其他语言，但它施加了一些限制。该语言必须支持Java运行时环境，使其能够访问标准的隐式对象变量、JavaBeans的get和set方法以及Java类的公共方法。
+虽然规范允许使用其他语言，但它施加了一些限制。该语言必须支持 Java 运行时环境，使其能够访问标准的隐式对象变量、JavaBeans 的 `get` 和 `set` 方法以及 Java 类的公共方法。
 
-JRun 3.0支持将java和javascript作为language属性的值。当使用java作为语言时——无论是显式还是隐式——JSP页面中找到的脚本小程序、表达式和声明都会像往常一样被复制到生成的servlet中。当指定javascript时，仍然会生成一个Java servlet，但它不包含javascript代码。相反，该servlet初始化一个脚本引擎，该引擎读取并解释原始的JSP页面。例如，如果JSP页面如下所示：
+JRun 3.0 支持将 `java` 和 `javascript` 作为 `language` 属性的值。当使用 `java` 作为语言时——无论是显式还是隐式——JSP 页面中找到的脚本小程序、表达式和声明都会像往常一样被复制到生成的 servlet 中。当指定 `javascript` 时，仍然会生成一个 Java servlet，但它不包含 javascript 代码。相反，该 servlet 初始化一个脚本引擎，该引擎读取并解释原始的 JSP 页面。例如，如果 JSP 页面如下所示：
 
-```
+```jsp
 <%@ page language="java" %>
 <%
     int k = 10;
@@ -3857,9 +4179,9 @@ JRun 3.0支持将java和javascript作为language属性的值。当使用java作�
 k = <%= k %>
 ```
 
-那么生成的servlet包含以下语句：
+那么生成的 servlet 包含以下语句：
 
-```
+```java
 out.print("\r\n");
     int k = 10;
 out.print("\r\nk = ");
@@ -3867,9 +4189,9 @@ out.print(k);
 out.print("\r\n\r\n");
 ```
 
-它将k视为一个Java变量，为其赋值，并使用out JspWriter变量打印它。相比之下，如果相同的JSP页面将javascript作为language属性的值：
+它将 `k` 视为一个 Java 变量，为其赋值，并使用 `out` JspWriter 变量打印它。相比之下，如果相同的 JSP 页面将 `javascript` 作为 `language` 属性的值：
 
-```
+```jsp
 <%@ page language="javascript" %>
 <%
     var k = 10;
@@ -3877,9 +4199,9 @@ out.print("\r\n\r\n");
 k = <%= k %>
 ```
 
-那么生成的servlet会初始化一个JRun特定的脚本引擎并调用其evaluate方法，如下所示：
+那么生成的 servlet 会初始化一个 JRun 特定的脚本引擎并调用其 `evaluate` 方法，如下所示：
 
-```
+```java
 if (scriptEngine == null) {
     try {
         scriptEngine =
@@ -3891,7 +4213,7 @@ if (scriptEngine == null) {
     }
 ```
 
-```
+```java
 if (request.getAttribute(SCRIPT_KEY) != null) {
     scriptEngine.init(
         pageContext,
@@ -3901,38 +4223,38 @@ if (request.getAttribute(SCRIPT_KEY) != null) {
 scriptEngine.evaluate(pageContext);
 ```
 
-显然，任何用JSP规范未明确要求的语言编写的JSP页面很可能无法在不同供应商的JSP容器之间移植。
+显然，任何用 JSP 规范未明确要求的语言编写的 JSP 页面很可能无法在不同供应商的 JSP 容器之间移植。
 
 ### extends
 
-通常，JSP容器为其从JSP页面生成的servlet提供父类。但是，规范允许你通过在页面指令的extends属性中指定另一个父类的完全限定名来对其进行子类化。这样做可以让你为一系列JSP页面提供额外的行为，而无需在页面中显式编码该行为。
-JSP规范敦促在使用此功能时要谨慎，因为它可能会阻止JSP容器提供供应商特定的性能和可靠性增强。例如，JRun使用的标准JSP父类提供了确定依赖关系及其最后修改时间的方法。类似地，Tomcat实现了一个存储对专用类加载器引用的父类。如果你使用不同的父类，它应该提供比这些特性更重要的功能。
+通常，JSP 容器为其从 JSP 页面生成的 servlet 提供父类。但是，规范允许你通过在页面指令的 `extends` 属性中指定另一个父类的完全限定名来对其进行子类化。这样做可以让你为一系列 JSP 页面提供额外的行为，而无需在页面中显式编码该行为。
 
-### JSP超类所需的接口
+JSP 规范敦促在使用此功能时要谨慎，因为它可能会阻止 JSP 容器提供供应商特定的性能和可靠性增强。例如，JRun 使用的标准 JSP 父类提供了确定依赖关系及其最后修改时间的方法。类似地，Tomcat 实现了一个存储对专用类加载器引用的父类。如果你使用不同的父类，它应该提供比这些特性更重要的功能。
 
-要使一个类用作JSP页面的超类，它必须实现以下接口之一：
+### JSP 超类所需的接口
 
-- **javax.servlet.jsp.JspPage**：一个通用接口，不一定用于HTTP。很少有servlet直接实现此接口。
-- **javax.servlet.jsp.HttpJspPage**：用于在HTTP协议下运行的JSP页面，此接口是JspPage的扩展。
+要使一个类用作 JSP 页面的超类，它必须实现以下接口之一：
 
-这些接口定义了你必须实现的三个方法，如表10-1所述。
+- **javax.servlet.jsp.JspPage**：一个通用接口，不一定用于 HTTP。很少有 servlet 直接实现此接口。
 
-| 方法 | 描述 |
-| :--- | :--- |
-| `public void jspInit()` | 当JSP页面加载时，从servlet的`init()`方法自动调用此方法。虽然你必须实现此方法，但你的实现无需做任何事情。该方法被设计为一个占位符，由JSP页面子类覆盖以进行任何需要的初始化工作。 |
-| `public void jspDestroy()` | 作为`jspInit()`的对应方法，当JSP页面类被卸载时，此方法从servlet的`destroy()`方法自动调用。 |
-| `public void _jspService(request, response) throws ServletException, IOException` | 此方法是JSP请求处理逻辑的核心。它不能在JSP页面中显式定义，因为由JSP容器根据JSP的脚本小程序、表达式和指令生成该方法是JSP容器的工作。此方法在JSP父类中通常被声明为抽象方法。 |
+- **javax.servlet.jsp.HttpJspPage**：用于在 HTTP 协议下运行的 JSP 页面，此接口是 `JspPage` 的扩展。
 
-*表10-1. 在JSP超类中需要声明的方法*
-
-`_jspService`方法中请求和响应参数的确切类型由它们支持的协议决定。对于HTTP环境，这些类型是`javax.servlet.http.HttpServletRequest`和`javax.servlet.http.HttpServletResponse`。如果你正在实现不同的协议，则需要定义要在方法签名中使用的请求和响应类。
-
-HttpJspPage扩展JspPage以提供特定于HTTP的行为。JspPage又扩展`javax.servlet.Servlet`，该接口定义了表10-2中列出的方法。
-
-
+这些接口定义了你必须实现的三个方法，如表 10-1 所述。
 
 | 方法 | 描述 |
-| :--- | :--- |
+|:---|:---|
+| `public void jspInit()` | 当 JSP 页面加载时，从 servlet 的 `init()` 方法自动调用此方法。虽然你必须实现此方法，但你的实现无需做任何事情。该方法被设计为一个占位符，由 JSP 页面子类覆盖以进行任何需要的初始化工作。 |
+| `public void jspDestroy()` | 作为 `jspInit()` 的对应方法，当 JSP 页面类被卸载时，此方法从 servlet 的 `destroy()` 方法自动调用。 |
+| `public void _jspService(request, response) throws ServletException, IOException` | 此方法是 JSP 请求处理逻辑的核心。它不能在 JSP 页面中显式定义，因为由 JSP 容器根据 JSP 的脚本小程序、表达式和指令生成该方法是 JSP 容器的工作。此方法在 JSP 父类中通常被声明为抽象方法。 |
+
+*表 10-1. 在 JSP 超类中需要声明的方法*
+
+`_jspService` 方法中请求和响应参数的确切类型由它们支持的协议决定。对于 HTTP 环境，这些类型是 `javax.servlet.http.HttpServletRequest` 和 `javax.servlet.http.HttpServletResponse`。如果你正在实现不同的协议，则需要定义要在方法签名中使用的请求和响应类。
+
+`HttpJspPage` 扩展 `JspPage` 以提供特定于 HTTP 的行为。`JspPage` 又扩展 `javax.servlet.Servlet`，该接口定义了表 10-2 中列出的方法。
+
+| 方法 | 描述 |
+|:---|:---|
 | `public void init(ServletConfig config) throws ServletException` | Servlet 首次加载时由 Servlet 容器调用的方法。 |
 | `public ServletConfig getServletConfig()` | 返回 Servlet 的配置对象，该对象管理 Servlet 的初始化参数和 Servlet 上下文。 |
 | `public void service(ServletRequest request, ServletResponse response) throws ServletException, IOException` | 由 Servlet 引擎调用以服务一个请求。 |
@@ -3944,7 +4266,9 @@ HttpJspPage扩展JspPage以提供特定于HTTP的行为。JspPage又扩展`javax
 JSP 超类必须遵守并实现 JSP 协议。这要求：
 
 -   `init()` 方法必须调用 `jspInit()`。
+
 -   `destroy()` 方法必须调用 `jspDestroy()`。
+
 -   `service()` 方法必须将其请求和响应参数转换为特定于协议的类，并调用 `_jspService()`。
 
 这种实现可以是直接的，也可以是超类本身扩展了一个提供该实现的类，例如 `javax.servlet.http.HttpServlet`。
@@ -4147,10 +4471,13 @@ java.util.Vector names = new java.util.Vector();
 
 这仅影响 Java 编译器，而不影响运行时类映像。你可以导入成千上万的类，但只有实际引用的类才会在运行时被需要。默认的导入列表包含四个包：
 
--   java.lang
--   javax.servlet
--   javax.servlet.http
--   javax.servlet.jsp
+-   `java.lang`
+
+-   `javax.servlet`
+
+-   `javax.servlet.http`
+
+-   `javax.servlet.jsp`
 
 你不需要为这些包中的类提供 `import` 语句；也不需要用包名限定它们。
 
@@ -4161,6 +4488,7 @@ java.util.Vector names = new java.util.Vector();
 页面指令的 `session` 属性指示该页面是否需要一个 HTTP 会话。有两个可能的值：
 
 -   `session="true"`：如果页面需要 HTTP 会话。这是默认值。
+
 -   `session="false"`：如果不需要 HTTP 会话。如果指定了此值，`session` 隐式变量将是未定义的，如果使用它将导致翻译错误。
 
 如果你的 JSP 页面不需要会话，从性能角度考虑，指定 `session="false"` 是有价值的，这样就不会创建不必要的会话，从而节省内存和 CPU 周期。第 14 章详细介绍了 HTTP 会话和会话管理。
@@ -4170,34 +4498,32 @@ java.util.Vector names = new java.util.Vector();
 `buffer` 和 `autoFlush` 属性用于描述 JSP 将采用的输出缓冲模型。`buffer` 属性可以是值 `"none"`，表示所有输出将直接写入 Servlet 响应对象的输出流，也可以是一个带有 `"kb"` 后缀的整数值。在后一种情况下，输出存储在内存中一个指定大小的缓冲区中。根据 `autoFlush` 是 `"true"` 还是 `"false"`，当缓冲区满时，要么输出会被刷新，要么会抛出缓冲区溢出异常。默认缓冲区大小为 8kb。表 10-3 总结了这两个属性每种组合的结果：
 
 | 缓冲区 (Buffer) | 自动刷新 (AutoFlush) | 效果 |
-|---|---|---|
+|:---|:---|:---|
 | none | true | 字符在生成时立即写入 Servlet 响应输出流。 |
 | none | false | 非法的组合。如果未启用缓冲区，`autoFlush="false"` 毫无意义。 |
 
 **表 10-3.** *每种 Buffer 和 AutoFlush 组合的效果*
 
-
-
 ## 第10章：页面指令
 
 | Buffer | AutoFlush | 效果 |
-| :--- | :--- | :--- |
-| 8kb | true | 使用8,192字节的缓冲区。当此缓冲区填满时，它将被自动刷新。这是默认值。 |
-| 8kb | false | 使用8,192字节的缓冲区。当此缓冲区填满时，将抛出一个异常。 |
-| *size*kb | true | 使用 *size* 乘以1,024字节的缓冲区。当此缓冲区填满时，它将被自动刷新。 |
-| *size*kb | false | 使用 *size* 乘以1,024字节的缓冲区。当此缓冲区填满时，将抛出一个异常。 |
+|:---|:---|:---|
+| 8kb | true | 使用 8,192 字节的缓冲区。当此缓冲区填满时，它将被自动刷新。这是默认值。 |
+| 8kb | false | 使用 8,192 字节的缓冲区。当此缓冲区填满时，将抛出一个异常。 |
+| *size*kb | true | 使用 *size* 乘以 1,024 字节的缓冲区。当此缓冲区填满时，它将被自动刷新。 |
+| *size*kb | false | 使用 *size* 乘以 1,024 字节的缓冲区。当此缓冲区填满时，将抛出一个异常。 |
 
-**表10-3.** *每种Buffer和AutoFlush组合的效果*（续）
+**表 10-3.** *每种 Buffer 和 AutoFlush 组合的效果*（续）
 
-JSP的要素
+JSP 的要素
 
 ### # isThreadSafe
 
-默认情况下，servlet引擎会加载servlet的单个实例，并使用线程池来服务各个请求。这意味着两个或更多线程可以同时执行相同的servlet方法。如果servlet具有实例变量，并且没有采取措施来同步对变量的访问，那么线程可能会发生冲突，并干扰彼此对变量的访问。
+默认情况下，servlet 引擎会加载 servlet 的单个实例，并使用线程池来服务各个请请求。这意味着两个或更多线程可以同时执行相同的 servlet 方法。如果 servlet 具有实例变量，并且没有采取措施来同步对变量的访问，那么线程可能会发生冲突，并干扰彼此对变量的访问。
 
-servlet API提供了一种解决此问题的方法——SingleThreadModel接口。此接口没有方法；它只是将servlet标记为需要为每个servlet实例分配一个专用线程¹。`page`指令的`isThreadSafe`属性提供了一种将`SingleThreadModel`与JSP页面关联起来的方式。
+servlet API 提供了一种解决此问题的方法——SingleThreadModel 接口。此接口没有方法；它只是将 servlet 标记为需要为每个 servlet 实例分配一个专用线程¹。`page` 指令的 `isThreadSafe` 属性提供了一种将 `SingleThreadModel` 与 JSP 页面关联起来的方式。
 
-如果你指定`isThreadSafe="true"`，则你是在断言你已处理任何可能的线程冲突，因此JSP容器可以安全地同时将多个请求分派给servlet，
+如果你指定 `isThreadSafe="true"`，则你是在断言你已处理任何可能的线程冲突，因此 JSP 容器可以安全地同时将多个请求分派给 servlet，
 
 ```
 <%@ page isThreadSafe="true" %>
@@ -4211,7 +4537,7 @@ public class jrun__Chap10__examples__isThreadSafe__ex12ejsp25
     implements allaire.jrun.jsp.JRunJspPage
 ```
 
-如果值为"false"，则JSP容器会生成一个实现了SingleThreadModel的servlet，
+如果值为 `"false"`，则 JSP 容器会生成一个实现了 `SingleThreadModel` 的 servlet，
 
 ```
 <%@ page isThreadSafe="false" %>
@@ -4225,31 +4551,32 @@ public class jrun__Chap10__examples__isThreadSafe__ex22ejsp25
     implements allaire.jrun.jsp.JRunJspPage, SingleThreadModel
 ```
 
-如果未指定，`isThreadSafe`的值为"true"。
+如果未指定，`isThreadSafe` 的值为 `"true"`。
 
 > **注意**
-> SingleThreadModel的价值有限，因为它只防止servlet实例内部的线程冲突。没有任何方法可以防止JSP容器加载servlet的多个实例，每个实例都有一个专用线程。在这种情况下，对数据库和文件锁等外部资源的竞争显然仍然是不受管制的。仔细规划是唯一可靠的设计准则。
+
+> SingleThreadModel 的价值有限，因为它只防止 servlet 实例内部的线程冲突。没有任何方法可以防止 JSP 容器加载 servlet 的多个实例，每个实例都有一个专用线程。在这种情况下，对数据库和文件锁等外部资源的竞争显然仍然是不受管制的。仔细规划是唯一可靠的设计准则。
 
 ### # info
 
-`page`指令的`info`属性允许你指定关于JSP页面的描述性信息，例如：
+`page` 指令的 `info` 属性允许你指定关于 JSP 页面的描述性信息，例如：
 
 ```
 <%@ page info="Shopping Cart Checkout Page" %>
 ```
 
-此属性的值被编译到类中，并可通过servlet的`getServletInfo()`方法获取。这允许servlet引擎在管理界面中为其servlet提供有用的描述。
+此属性的值被编译到类中，并可通过 servlet 的 `getServletInfo()` 方法获取。这允许 servlet 引擎在管理界面中为其 servlet 提供有用的描述。
 
 ### # contentType
 
-JSP页面通常生成HTML输出，但也可以生成其他内容类型。通过在`page`指令中指定`contentType="value"`属性，你可以使HTTP Content-Type头返回给请求应用程序。考虑以下显示的简单JSP页面：
+JSP 页面通常生成 HTML 输出，但也可以生成其他内容类型。通过在 `page` 指令中指定 `contentType="value"` 属性，你可以使 HTTP Content-Type 头返回给请求应用程序。考虑以下显示的简单 JSP 页面：
 
 ```
 <%@ page contentType="text/plain" %>
 Hello, world!
 ```
 
-在JRun下，HTTP请求和响应可能如下所示：
+在 JRun 下，HTTP 请求和响应可能如下所示：
 
 ```
 GET /jspcr/Chap10/examples/contentType/ex1.jsp HTTP/1.0
@@ -4267,7 +4594,7 @@ Content-Type: text/plain
 Hello, world!
 ```
 
-如果未指定contentType属性，请求和响应将如下所示：
+如果未指定 `contentType` 属性，请求和响应将如下所示：
 
 ```
 GET /jspcr/Chap10/examples/contentType/ex2.jsp HTTP/1.0
@@ -4293,21 +4620,21 @@ Hello, world!
 
 ### # errorPage 和 isErrorPage
 
-如果在评估JSP页面时发生异常，servlet引擎通常会将堆栈跟踪信息转储到浏览器。这在开发期间可能对程序员有帮助，但在商业Web应用程序中是不可取的。JSP提供了一个简单便捷的解决方案，需要协调使用两个属性：errorPage和isErrorPage。
+如果在评估 JSP 页面时发生异常，servlet 引擎通常会将堆栈跟踪信息转储到浏览器。这在开发期间可能对程序员有帮助，但在商业 Web 应用程序中是不可取的。JSP 提供了一个简单便捷的解决方案，需要协调使用两个属性：`errorPage` 和 `isErrorPage`。
 
-一个JSP页面可以指示当抛出未捕获的异常时应显示特定的错误页面，
+一个 JSP 页面可以指示当抛出未捕获的异常时应显示特定的错误页面，
 
 ```
 <%@ page errorPage="error_url" %>
 ```
 
-其中error_url是同一servlet上下文中另一个JSP页面的URL。该JSP页面必须在其页面指令中使用以下属性：
+其中 `error_url` 是同一 servlet 上下文中另一个 JSP 页面的 URL。该 JSP 页面必须在其页面指令中使用以下属性：
 
 ```
 <%@ page isErrorPage="true" %>
 ```
 
-错误页面可以通过隐式变量`exception`<sup>2</sup>访问异常。它可以使用exception.getMessage()提取错误消息文本，并根据需要显示或记录它。它还可以使用exception.printStackTrace()生成堆栈跟踪。
+错误页面可以通过隐式变量 `exception`<sup>2</sup> 访问异常。它可以使用 `exception.getMessage()` 提取错误消息文本，并根据需要显示或记录它。它还可以使用 `exception.printStackTrace()` 生成堆栈跟踪。
 
 该页面无需精心设计。它可能只是报告异常：
 
@@ -4321,7 +4648,7 @@ Hello, world!
 <B><%= exception.getMessage() %></B>
 ```
 
-这可以作为占位符，在开发过程后期进行充实，例如添加公司徽标以及后续操作说明。因为错误页面本身就是一个JSP页面，它可以访问servlet上下文、会话（如果有）、请求和其他servlet对象。这使得该页面能够捕获诊断信息，可能将其转发给技术支持人员。以下是这样一个错误页面的示例：
+这可以作为占位符，在开发过程后期进行充实，例如添加公司徽标以及后续操作说明。因为错误页面本身就是一个 JSP 页面，它可以访问 servlet 上下文、会话（如果有）、请求和其他 servlet 对象。这使得该页面能够捕获诊断信息，可能将其转发给技术支持人员。以下是这样一个错误页面的示例：
 
 ```
 <%@ page isErrorPage="true" session="false"%>
@@ -4347,7 +4674,7 @@ Hello, world!
 我们的技术支持部门：
 <P>
 
-<%-- 提供日期、时间和servlet名称 --%>
+<%-- 提供日期、时间和 servlet 名称 --%>
 
 <%
     String dateTime      = new java.util.Date().toString();
@@ -4365,7 +4692,7 @@ Hello, world!
 </TD>
 </TR>
 <TR>
-    <TD><B>Web客户端：</B></TD>
+    <TD><B>Web 客户端：</B></TD>
     <TD><%= remoteAddr %>
     <INPUT TYPE="hidden"
            NAME="bug.remoteAddr"
@@ -4396,29 +4723,37 @@ exception.printStackTrace(pw);
 </HTML>
 ```
 
-这个名为`TrackingErrorPage.jsp`的页面显示与异常相关的错误消息，以及日期、时间、客户端的IP地址和Web应用程序名称。它提供了一个按钮，使用户能够将此信息连同堆栈跟踪一起转发给技术支持部门（使用其他未在此处显示的JSP页面）。此应用程序中的JSP页面随后应在其页面指令中包含对错误页面的引用：
+这个名为 `TrackingErrorPage.jsp` 的页面显示与异常相关的错误消息，以及日期、时间、客户端的 IP 地址和 Web 应用程序名称。它提供了一个按钮，使用户能够将此信息连同堆栈跟踪一起转发给技术支持部门（使用其他未在此处显示的 JSP 页面）。此应用程序中的 JSP 页面随后应在其页面指令中包含对错误页面的引用：
 
-¹ 第14章更详细地讨论了线程问题。
+¹ 第 14 章更详细地讨论了线程问题。
 
-² 这是JSP页面可以访问此变量的唯一情况。
-
-
+² 这是 JSP 页面可以访问此变量的唯一情况。
 
 ## 摘要
 
-页面指令允许页面作者向JSP容器提供指令。本章描述了可以指定的每个属性的操作方式：
+页面指令允许页面作者向 JSP 容器提供指令。本章描述了可以指定的每个属性的操作方式：
 
-- `language` 脚本语言（默认为java）
+- `language` 脚本语言（默认为 `java`）
+
 - `extends` 页面的专用超类
-- `import` 生成的servlet应可见的包和类
-- `session` 是否创建HTTP会话对象
+
+- `import` 生成的 servlet 应可见的包和类
+
+- `session` 是否创建 HTTP 会话对象
+
 - `buffer` 输出缓冲模型
+
 - `autoFlush` 缓冲区满时是刷新缓冲区还是抛出异常
-- `isThreadSafe` 是否实现SingleThreadModel
+
+- `isThreadSafe` 是否实现 `SingleThreadModel`
+
 - `info` 在开发工具中显示的页面描述
-- `contentType` JSP响应使用的字符编码
+
+- `contentType` JSP 响应使用的字符编码
+
 - `isErrorPage` 是否提供对隐式异常变量的访问
-- `errorPage` 处理未捕获异常的页面的URL
+
+- `errorPage` 处理未捕获异常的页面的 URL
 
 本页有意留白。
 
@@ -4426,21 +4761,21 @@ exception.printStackTrace(pw);
 
 ## 第11章
 
-## JSP标签扩展
+## JSP 标签扩展
 
-JavaServer Pages 1.1规范通过使扩展页面创作环境使用自定义标签成为可能，显著增强了JSP架构。*自定义标签*是类似XML的JSP页面语法和语义的扩展，由用户编写的标签处理器支持。标签集合被组织为*标签库*，可以打包为JAR文件，从而使其功能能够轻松地在任何符合JSP 1.1规范的servlet引擎上分发和安装。
+JavaServer Pages 1.1 规范通过使扩展页面创作环境使用自定义标签成为可能，显著增强了 JSP 架构。*自定义标签* 是类似 XML 的 JSP 页面语法和语义的扩展，由用户编写的标签处理器支持。标签集合被组织为*标签库*，可以打包为 JAR 文件，从而使其功能能够轻松地在任何符合 JSP 1.1 规范的 servlet 引擎上分发和安装。
 
-本章介绍自定义标签，概述其作用和优势。它提供了一个扩展的分步示例，说明如何编写和部署自定义标签，然后深入探讨标签库、标签库描述符、标签扩展API和标签处理器的细节。本章探讨了几个标签环境示例，并最终实现了第一个示例中给出的数据库查询标签。
+本章介绍自定义标签，概述其作用和优势。它提供了一个扩展的分步示例，说明如何编写和部署自定义标签，然后深入探讨标签库、标签库描述符、标签扩展 API 和标签处理器的细节。本章探讨了几个标签环境示例，并最终实现了第一个示例中给出的数据库查询标签。
 
 ## 为什么使用自定义标签？
 
-大多数程序员可以编写普通的HTML，大多数Web设计师可以学习编写简单的JSP页面。但真正优秀的、包含导航、浏览器检测、图像处理和表单交互的HTML需要知识丰富的作者——专家。<sup>1</sup> 同样，访问数据库、处理事务和与套接字通信的Java编程超出了HTML作者的能力范围。
+大多数程序员可以编写普通的 HTML，大多数 Web 设计师可以学习编写简单的 JSP 页面。但真正优秀的、包含导航、浏览器检测、图像处理和表单交互的 HTML 需要知识丰富的作者——专家。<sup>1</sup> 同样，访问数据库、处理事务和与套接字通信的 Java 编程超出了 HTML 作者的能力范围。
 
-自定义标签提供了一种弥合这两个专业之间鸿沟的方法。Java程序员可以提供方便的包，其中包含应用程序功能，Web设计师可以将其用作构建模块。虽然JavaBean也可以封装代码，但它们作为属性的仓库最为有用。迭代、嵌套或协作动作的概念很难用Bean来表达。自定义标签使得更高级别的、特定于应用程序的JSP开发方法成为可能。
+自定义标签提供了一种弥合这两个专业之间鸿沟的方法。Java 程序员可以提供方便的包，其中包含应用程序功能，Web 设计师可以将其用作构建模块。虽然 JavaBean 也可以封装代码，但它们作为属性的仓库最为有用。迭代、嵌套或协作动作的概念很难用 Bean 来表达。自定义标签使得更高级别的、特定于应用程序的 JSP 开发方法成为可能。
 
 例如，使用自定义标签编写的数据库查询可能如下所示，
 
-```
+```jsp
 <db:connect url="mydatabase">
     <db:runQuery>
         SELECT *
@@ -4460,45 +4795,51 @@ JavaServer Pages 1.1规范通过使扩展页面创作环境使用自定义标签
 </db:connect>
 ```
 
-其中connect、runQuery、forEachRow和getField是面向应用程序的自定义标签。
+其中 `connect`、`runQuery`、`forEachRow` 和 `getField` 是面向应用程序的自定义标签。
 
-<sup>1</sup> 访问http://www.cnn.com或http://www.msnbc.com并查看HTML源代码。你认为你能编写其中多少内容？
+<sup>1</sup> 访问 http://www.cnn.com 或 http://www.msnbc.com 并查看 HTML 源代码。你认为你能编写其中多少内容？
 
-前面示例中的所有逻辑本可以使用嵌入在JSP页面中的脚本片段来编写。例如，与`<db:connect>`标签等效的代码可能包括加载驱动程序类、打开与数据库的连接（可能从连接池获取现有连接）、设置Statement和ResultSet对象以及处理可能抛出的任何异常。另一种可能是将大部分逻辑包含在JavaBean中，尽管遍历结果集仍然需要脚本片段代码。这两种替代方案都不如将逻辑打包成一组类似HTML的标签方便，这些标签的功能对Web设计师和servlet开发人员都一目了然。
+前面示例中的所有逻辑本可以使用嵌入在 JSP 页面中的脚本片段来编写。例如，与 `<db:connect>` 标签等效的代码可能包括加载驱动程序类、打开与数据库的连接（可能从连接池获取现有连接）、设置 Statement 和 ResultSet 对象以及处理可能抛出的任何异常。另一种可能是将大部分逻辑包含在 JavaBean 中，尽管遍历结果集仍然需要脚本片段代码。这两种替代方案都不如将逻辑打包成一组类似 HTML 的标签方便，这些标筓的功能对 Web 设计师和 servlet 开发人员都一目了然。
 
 除了内容和表示的分离，自定义标签的其他优点包括：
 
-- **简单性** 将复杂任务表达为具有各自属性和控制流的协作子任务集，比将其编写为一个整体代码块要容易得多。这不仅编码更容易，而且理解也更容易。例如，在前面的数据库查询中，很容易正确猜测数据库连接的范围，`<db:runQuery>`块创建了一个隐式结果集，并且`<db:forEachRow>`遍历此结果集。
-- **代码重用的机会** Web应用程序中可能有数百个数据库查询。不借助`<%@ include %>`指令就很难共享脚本片段代码，这些指令会模糊逻辑并可能产生不良的副作用。标签库使得打包标准代码并在整个应用程序中共享它变得更容易。
-- **适合创作工具** *集成开发环境*（IDE）只能将脚本片段块视为ASCII文本块。然而，自定义标签由于具有标签库描述符，便于开发工具管理，开发工具可以显示其描述、验证其属性等。
+- **简单性** 将复杂任务表达为具有各自属性和控制流的协作子任务集，比将其编写为一个整体代码块要容易得多。这不仅编码更容易，而且理解也更容易。例如，在前面的数据库查询中，很容易正确猜测数据库连接的范围，`<db:runQuery>` 块创建了一个隐式结果集，并且 `<db:forEachRow>` 遍历此结果集。
+
+- **代码重用的机会** Web 应用程序中可能有数百个数据库查询。不借助 `<%@ include %>` 指令就很难共享脚本片段代码，这些指令会模糊逻辑并可能产生不良的副作用。标签库使得打包标准代码并在整个应用程序中共享它变得更容易。
+
+- **适合创作工具** *集成开发环境*（IDE）只能将脚本片段块视为 ASCII 文本块。然而，自定义标签由于具有标签库描述符，便于开发工具管理，开发工具可以显示其描述、验证其属性等。
 
 为了更好地理解如何开发自定义标签，让我们以一个简单的例子为例，逐步介绍其开发过程。
 
-## 开发你的第一个自定义标签
+## 开发你的第一个自定�标签
 
-我们抵制编写“Hello, World!”标签的诱惑，将开发一个略微有用的组件示例——一个检索Web服务器名称和版本的自定义标签。此标签以及我们开发的所有其他标签的实现将遵循以下四个基本步骤：
+我们抵制编写“Hello, World!”标签的诱惑，将开发一个略微有用的组件示例——一个检索 Web 服务器名称和版本的自定义标签。此标签以及我们开发的所有其他标签的实现将遵循以下四个基本步骤：
 
 1. 定义标签。
-2. 在标签库描述符中编写条目。
-3. 编写标签处理器。
-4. 在JSP页面中使用该标签。
 
-## 步骤1 — 定义标签
+2. 在标签库描述符中编写条目。
+
+3. 编写标签处理器。
+
+4. 在 JSP 页面中使用该标签。
+
+## 步骤 1 — 定义标签
 
 首先，我们需要清楚地定义标签的语法。这需要回答以下问题：
 
 - 标签的名称是什么？正如我们稍后将看到的，自定义标签始终与命名空间限定符一起使用，因此不需要使标签名称全局唯一。
-- 它有哪些属性？例如，HTML `<TABLE>`标签具有可选属性BORDER、CELLPADDING、CELLSPACING和WIDTH（以及其他）。自定义标签可以定义任意数量的必需或可选属性，这些属性在标签被求值时传递给标签处理器。
-- 标签是否会定义脚本变量？例如，标准操作`<jsp:useBean id="xyz" class="jspcr.beans.XYZBean">`会导致定义一个名为xyz、类型为`jspcr.beans.XYZBean`的变量。然后，此变量可用于`<jsp:getProperty>`和`<jsp:setProperty>`操作，以及后续任何脚本片段或表达式中的Java代码。自定义标签可以以相同的方式创建脚本变量。
-- 标签是否对其开始和结束标签之间包含的正文执行任何特殊操作？例如，HTML `<TABLE>`标签在其结束标记`</TABLE>`之前期望表格行和表格单元格。这些元素中的每一个都依赖于评估堆栈中上方相关元素提供的信息。自定义标签应用程序同样可以具有嵌套标签，协作执行某些功能。标签正文也可以包含非JSP数据（如SQL语句），这些数据由标签求值。
 
+- 它有哪些属性？例如，HTML `<TABLE>` 标签具有可选属性 BORDER、CELLPADDING、CELLSPACING 和 WIDTH（以及其他）。自定�标签可以定义任意数量的必需或可选属性，这些属性在标签被求值时传递给标签处理器。
 
+- 标签是否会定义脚本变量？例如，标准操作 `<jsp:useBean id="xyz" class="jspcr.beans.XYZBean">` 会导致定义一个名为 xyz、类型为 `jspcr.beans.XYZBean` 的变量。然后，此变量可用于 `<jsp:getProperty>` 和 `<jsp:setProperty>` 操作，以及后续任何脚本片段或表达式中的 Java 代码。自定义标签可以以相同的方式创建脚本变量。
 
-对于第一个示例标签，没有什么太多需要处理的。我们将这个标签命名为 `getWebServer`。它没有属性，因为它不需要在不同JSP页面中进行不同的配置。该标签没有定义脚本变量，只是返回包含Web服务器名称的字符串，以替代 `getWebServer` 标签。最后，该标签没有需要处理的主体，因为它的全部功能都包含在其开始标签中。
+- 标签是否对其开始和结束标签之间包含的正文执行任何特殊操作？例如，HTML `<TABLE>` 标签在其结束标记 `</TABLE>` 之前期望表格行和表格单元格。这些元素中的每一个都依赖于评估堆栈中上方相关元素提供的信息。自定义标签应用程序同样可以具有嵌套标签，协作执行某些功能。标签正文也可以包含非 JSP 数据（如 SQL 语句），这些数据由标签求值。
 
-## 第2步—创建TLD条目
+对于第一个示例标签，没有什么太多需要处理的。我们将这个标签命名为 `getWebServer`。它没有属性，因为它不需要在不同 JSP 页面中进行不同的配置。该标签没有定义脚本变量，只是返回包含 Web 服务器名称的字符串，以替代 `getWebServer` 标签。最后，该标签没有需要处理的主体，因为它的全部功能都包含在其开始标签中。
 
-*标签库描述符 (TLD)* 是一个XML文档，它定义了一组相关标签的名称和属性。下面是我们将与 `getWebServer` 示例标签一起使用的TLD：
+## 第 2 步 — 创建 TLD 条目
+
+*标签库描述符 (TLD)* 是一个 XML 文档，它定义了一组相关标签的名称和属性。下面是我们将与 `getWebServer` 示例标签一起使用的 TLD：
 
 ```xml
 <?xml version="1.0" ?>
@@ -4514,7 +4855,7 @@ JavaServer Pages 1.1规范通过使扩展页面创作环境使用自定义标签
 </taglib>
 ```
 
-在本章后面，我们将详细探讨TLD，但这里需要关注的关键点是，TLD将标签名称映射
+在本章后面，我们将详细探讨 TLD，但这里需要关注的关键点是，TLD 将标签名称映射
 
 ```xml
 <name>getWebServer</name>
@@ -4526,15 +4867,15 @@ JavaServer Pages 1.1规范通过使扩展页面创作环境使用自定义标签
 <tagclass>jspcr.taglib.diag.GetWebServerTag</tagclass>
 ```
 
-JSP容器在编译时评估自定义标签时，使用此映射来生成相应的servlet代码。
+JSP 容器在编译时评估自定义标签时，使用此映射来生成相应的 servlet 代码。
 
-我们将把这个文件命名为 `diagnostics.tld`。出于本示例的目的，我们唯一需要关心的是将文件复制到正确的位置。TLD可以放置在Web应用程序目录系统中的任何位置，但将其放在 `WEB-INF` 目录下是有意义的，因为它不会被设置为可直接公开访问。按照惯例，TLD通常安装在名为 `/WEB-INF/tlds` 的目录中。例如，如果有一个名为 `test` 的Web应用程序，那么 `diagnostics.tld` 将在 `/test/WEB-INF/tlds/` 中找到。相对于servlet上下文写成URI形式，就是 `/WEB-INF/tlds/diagnostics.tld`。
+我们将把这个文件命名为 `diagnostics.tld`。出于本示例的目的，我们唯一需要关心的是将文件复制到正确的位置。TLD 可以放置在 Web 应用程序目录系统中的任何位置，但将其放在 `WEB-INF` 目录下是有意义的，因为它不会被设置为可直接公开访问。按照惯例，TLD 通常安装在名为 `/WEB-INF/tlds` 的目录中。例如，如果有一个名为 `test` 的 Web 应用程序，那么 `diagnostics.tld` 将在 `/test/WEB-INF/tlds/` 中找到。相对于 servlet 上下文写成 URI 形式，就是 `/WEB-INF/tlds/diagnostics.tld`。
 
-## 第3步—编写标签处理器
+## 第 3 步 — 编写标签处理器
 
-标签的操作在一个称为 *标签处理器* 的Java类中实现。标签处理器的实例由JSP容器创建和维护，并且从JSP页面生成的servlet中直接调用这些类中的预定义方法。
+标签的操作在一个称为 *标签处理器* 的 Java 类中实现。标签处理器的实例由 JSP 容器创建和维护，并且从 JSP 页面生成的 servlet 中直接调用这些类中的预定义方法。
 
-在示例标签中，我们需要获取Web服务器的名称（例如，Apache、Microsoft IIS、Netscape Enterprise等）。Servlet API没有提供明显的方法来获取此信息。请求对象提供了很多关于Web客户端的信息，servlet上下文知道servlet引擎的情况，但这些对象似乎都不知道是哪个软件产品恰好在监听端口80。然而，当Web服务器将HTTP响应发送回Web客户端时，它本身会提供此信息。我们将采取的方法是在标签处理器中自己发起一个虚拟的HTTP请求，然后从返回的HTTP头中提取服务器信息。
+在示例标签中，我们需要获取 Web 服务器的名称（例如，Apache、Microsoft IIS、Netscape Enterprise 等）。Servlet API 没有提供明显的方法来获取此信息。请求对象提供了很多关于 Web 客户端的信息，servlet 上下文知道 servlet 引擎的情况，但这些对象似乎都不知道是哪个软件产品恰好在监听端口 80。然而，当 Web 服务器将 HTTP 响应发送回 Web 客户端时，它本身会提供此信息。我们将采取的方法是在标签处理器中自己发起一个虚拟的 HTTP 请求，然后从返回的 HTTP 头中提取服务器信息。
 
 以下是标签处理器的完整源代码：
 
@@ -4585,7 +4926,7 @@ public class GetWebServerTag extends TagSupport
 package jspcr.taglib.diag;
 ```
 
-第一行标识了包名。严格来说，将代码放入包中并非必须，但它有助于组织相关类，并使Javadoc文档更有意义。此外，一些JSP引擎不能正确为自定义标签生成导入语句，因此没有包名的类可能导致生成的servlet中出现编译错误。
+第一行标识了包名。严格来说，将代码放入包中并非必须，但它有助于组织相关类，并使 Javadoc 文档更有意义。此外，一些 JSP 引擎不能正确为自定义标签生成导入语句，因此没有包名的类可能导致生成的 servlet 中出现编译错误。
 
 ```java
 import javax.servlet.http.*;
@@ -4607,14 +4948,14 @@ public class GetWebServerTag extends TagSupport
 public int doStartTag() throws JspException
 ```
 
-当遇到开始标签时调用此方法，在为其指定的任何属性在标签处理器中设置之后，但在处理标签主体之前。在这种情况下，没有主体也没有属性，因此所有代码都将包含在 `doStartTag()` 方法中。请注意，如果代码遇到问题，此方法允许你抛出 `JspException`。因为我们将访问可能抛出 `java.io.IOException` 的网络类，所以我们将整个方法放在一个 `try ... catch` 块中，将其转换为 `JspException` 供JSP容器处理。同样，请注意，该方法返回一个整数返回代码（稍后详述）。
+当遇到开始标签时调用此方法，在为其指定的任何属性在标签处理器中设置之后，但在处理标签主体之前。在这种情况下，没有主体也没有属性，因此所有代码都将包含在 `doStartTag()` 方法中。请注意，如果代码遇到问题，此方法允许你抛出 `JspException`。因为我们将访问可能抛出 `java.io.IOException` 的网络类，所以我们将整个方法放在一个 `try ... catch` 块中，将其转换为 `JspException` 供 JSP 容器处理。同样，请注意，该方法返回一个整数返回代码（稍后详述）。
 
 ```java
 HttpServletRequest request =
     (HttpServletRequest) pageContext.getRequest();
 ```
 
-为了向Web服务器发送HTTP请求，我们需要知道我们收到的请求的主机名和端口号。此信息可以在 `request` 对象中找到，该对象可以从 `pageContext` 对象获取。细心的读者会注意到，`pageContext` 在此类中没有定义。原因是它在 `TagSupport` 超类中被定义为 `protected` 字段，这使得它对我们这样的子类可访问。此变量在调用 `doStartTag()` 之前设置，当调用 `TagSupport.setPageContext()` 方法时²。
+为了向 Web 服务器发送 HTTP 请求，我们需要知道我们收到的请求的主机名和端口号。此信息可以在 `request` 对象中找到，该对象可以从 `pageContext` 对象获取。细心的读者会注意到，`pageContext` 在此类中没有定义。原因是它在 `TagSupport` 超类中被定义为 `protected` 字段，这使得它对我们这样的子类可访问。此变量在调用 `doStartTag()` 之前设置，当调用 `TagSupport.setPageContext()` 方法时²。
 
 ```java
 URL url = new URL("http",
@@ -4628,24 +4969,24 @@ String webserver = con.getHeaderField("server");
 
 > ² 阅读 `TagSupport` 和 `BodyTagSupport` 的源代码会有所帮助。这些都是相当小的类，看看页面上下文和主体内容变量从哪里来，以及 `findAncestorWithClass` 如何工作是很有启发性的。源代码通常可以从获取 `servlet.jar` 类的地方获得。
 
-我们使用 `java.net.URL` 的4参数构造函数，它接受协议名称、服务器名称、端口号和路径，并由此我们获得一个 `URLConnection` 对象。因为我们实际上并不关心任何特定文件的内容，所以我们指定 OPTIONS 方法而不是 `GET` 或 `POST`。我们也可以使用 `HEAD`，它本质上与 `GET` 相同，但只返回头部。然而，有时Web服务器报告 `HEAD` 不是受支持的方法。对于任何符合 `HTTP/1.1` 的Web服务器，`OPTIONS` 都应该有效（毕竟，其目的是返回Web服务器确实支持的请求方法列表）。调用连接对象的 `getHeaderField()` 方法会导致请求被发送，并读取响应中适当的HTTP头。
+我们使用 `java.net.URL` 的 4 参数构造函数，它接受协议名称、服务器名称、端口号和路径，并由此我们获得一个 `URLConnection` 对象。因为我们实际上并不关心任何特定文件的内容，所以我们指定 OPTIONS 方法而不是 `GET` 或 `POST`。我们也可以使用 `HEAD`，它本质上与 `GET` 相同，但只返回头部。然而，有时 Web 服务器报告 `HEAD` 不是受支持的方法。对于任何符合 `HTTP/1.1` 的 Web 服务器，`OPTIONS` 都应该有效（毕竟，其目的是返回 Web 服务器确实支持的请求方法列表）。调用连接对象的 `getHeaderField()` 方法会导致请求被发送，并读取响应中适当的 HTTP 头。
 
 ```java
 JspWriter out = pageContext.getOut();
 out.print(webserver);
 ```
 
-在将所需信息捕获到 `webserver` 变量中后，我们可以简单地将其写入当前servlet输出流，该流可以从页面上下文获取。效果是，JSP页面中使用的 `getServer` 标签被从HTTP请求获取的服务器信息所替代。
+在将所需信息捕获到 `webserver` 变量中后，我们可以简单地将其写入当前 servlet 输出流，该流可以从页面上下文获取。效果是，JSP 页面中使用的 `getServer` 标签被从 HTTP 请求获取的服务器信息所替代。
 
 ```java
 return SKIP_BODY;
 ```
 
-最后，我们退出该方法，返回整数常量 `SKIP_BODY`，该常量在 `Tag` 接口中定义。因为我们已将此标签定义为没有主体，所以不需要评估它，并且如果指定了任何其他返回代码，JSP页面将抛出运行时异常。
+最后，我们退出该方法，返回整数常量 `SKIP_BODY`，该常量在 `Tag` 接口中定义。因为我们已将此标签定义为没有主体，所以不需要评估它，并且如果指定了任何其他返回代码，JSP 页面将抛出运行时异常。
 
 ## 编译示例代码
 
-这完成了标签处理器。源代码文件必须命名为 `GetWebServerTag.java`，其编译后的类必须具有完全限定名 `jspcr.taglib.diag.GetWebServerTag`。确保这一点的简单方法是在Web应用程序的 `/WEB-INF/classes` 目录下创建适当的目录集：
+这完成了标签处理器。源代码文件必须命名为 `GetWebServerTag.java`，其编译后的类必须具有完全限定名 `jspcr.taglib.diag.GetWebServerTag`。确保这一点的简单方法是在 Web 应用程序的 `/WEB-INF/classes` 目录下创建适当的目录集：
 
 ```
 /WEB-INF/classes/jspcr/taglib/diag
@@ -4659,13 +5000,11 @@ javac jspcr/taglib/diag/GetWebServerTag.java
 
 需要适当确保 `servlet.jar` 文件位于类路径中的某个位置。这应该会在与 `GetWebServerTag.java` 相同的目录中放置一个 `GetWebServerTag.class` 文件。如果情况并非如此，请确保 `package` 语句输入正确。
 
+## 第 4 步 — 将标签整合到 JSP 页面中
 
+至此，该标签已可使用。以下 JSP 页面（ShowServer.jsp）展示了如何实现这一点：
 
-## 第4步—将标签整合到JSP页面中
-
-至此，该标签已可使用。以下JSP页面（ShowServer.jsp）展示了如何实现这一点：
-
-```
+```jsp
 <%@ taglib prefix="diag" uri="/WEB-INF/tlds/diagnostics.tld" %>
 
 <HTML>
@@ -4682,27 +5021,27 @@ The web server is <diag:getWebServer/>
 </HTML>
 ```
 
-## taglib指令
+## taglib 指令
 
-第一行包含taglib指令：
+第一行包含 taglib 指令：
 
 ```
 <%@ taglib prefix="diag" uri="/WEB-INF/tlds/diagnostics.tld" %>
 ```
 
-该指令必须出现在JSP页面中引用的任何自定义标签之前。页面顶部是一个好位置。
+该指令必须出现在 JSP 页面中引用的任何自定义标签之前。页面顶部是一个好位置。
 
-## 如何在JSP页面中使用标签
+## 如何在 JSP 页面中使用标签
 
-网页的其余部分是传统的HTML，除了指定自定义标签的那一行：
+网页的其余部分是传统的 HTML，除了指定自定义标签的那一行：
 
 ```
 The Web server is <diag:getWebServer/>
 ```
 
-当ShowServer.jsp首次被调用时，JSP容器使用taglib指令中的信息来定位标签库描述符，并识别此页面上使用其标签的位置。当生成的servlet接收到请求时，它会产生以下HTML，
+当 ShowServer.jsp 首次被调用时，JSP 容器使用 taglib 指令中的信息来定位标签库描述符，并识别此页面上使用其标签的位置。当生成的 servlet 接收到请求时，它会产生以下 HTML，
 
-```
+```html
 <HTML>
 
 <HEAD>
@@ -4719,54 +5058,77 @@ The web server is Apache/1.3.12 (Win32)
 </HTML>
 ```
 
-当然，这取决于所涉及的实际Web服务器。结果如图11-1所示。
+当然，这取决于所涉及的实际 Web 服务器。结果如图 11-1 所示。
 
-值得注意的是，JSP页面中使用的自定义标签必须遵守严格的XML规则：
+值得注意的是，JSP 页面中使用的自定义标签必须遵守严格的 XML 规则：
 
 -   1. 所有标签必须完整闭合，要么通过匹配的结束标签，
-    <diag:name>
+
+    `<diag:name>`
+
     ...
-    </diag:name>
+
+    `</diag:name>`
+
 -   2. 要么通过简写形式（如果没有标签体）：
+
     `<diag:name/>`。
+
 -   3. 所有属性值必须用引号括起来，即使是数字属性：
+
     `<diag:for id="I" start="1" end="10">`
+
     ...
+
     `</diag:for>`
+
 -   4. 嵌套标签不能重叠；以下写法
+
     `<diag:A>`
+
     `<diag:B>`
+
     `</diag:A>`
+
     `</diag:B>`
+
     是非法的。
+
 -   5. 标签和属性名称区分大小写。
 
 ## JSP: 权威指南
 
 ## 标签处理器如何工作
 
-标签处理器是一个Java类，它通过实现一组JSP容器调用的预定义方法来执行自定义标签的动作。在本节中，我们将了解标签处理器的结构、它实现的接口、其生命周期，以及它如何与属性和脚本变量协同工作。我们还将探讨协作标签和嵌套标签，并展示它们如何交互。然而，首先让我们回顾一下JSP容器如何翻译和调用JSP页面。
+标签处理器是一个 Java 类，它通过实现一组 JSP 容器调用的预定义方法来执行自定义标签的动作。在本节中，我们将了解标签处理器的结构、它实现的接口、其生命周期，以及它如何与属性和脚本变量协同工作。我们还将探讨协作标签和嵌套标签，并展示它们如何交互。然而，首先让我们回顾一下 JSP 容器如何翻译和调用 JSP 页面。
 
-## JSP容器所做的工作
+## JSP 容器所做的工作
 
-回顾一下，JSP页面以三种形式存在：
+回顾一下，JSP 页面以三种形式存在：
 
--   ■ **.jsp文件**    页面作者编写的原始源文件，可能包含HTML、脚本片段、表达式、声明、动作标签和指令。
--   ■ **.java文件**    与.jsp文件等效的servlet的Java源代码。此servlet由JSP容器生成。
--   ■ **.class文件**    生成的Java servlet的编译形式。
+-   ■ **.jsp 文件**    页面作者编写的原始源文件，可能包含 HTML、脚本片段、表达式、声明、动作标签和指令。
 
-当HTTP客户端请求JSP页面时，JSP容器会检查.jsp和.java文件的修改日期。如果.java文件不存在，或者它比.jsp文件更旧（如果JSP页面被修改过，就会发生这种情况），JSP容器会重新创建Java servlet并进行编译。在此步骤中，会发生以下转换：
+-   ■ **.java 文件**    与 .jsp 文件等效的 servlet 的 Java 源代码。此 servlet 由 JSP 容器生成。
 
--   ■ `<%@ page %>`、`<%@ include %>` 和 `<%@ taglib %>` 指令向JSP容器提供翻译时信息。
--   JSP表达式和HTML行按其出现顺序被翻译成 `_jspService()` 方法中的 `out.print()` 语句。
+-   ■ **.class 文件**    生成的 Java servlet 的编译形式。
+
+当 HTTP 客户端请求 JSP 页面时，JSP 容器会检查 .jsp 和 .java 文件的修改日期。如果 .java 文件不存在，或者它比 .jsp 文件更旧（如果 JSP 页面被修改过，就会发生这种情况），JSP 容器会重新创建 Java servlet 并进行编译。在此步骤中，会发生以下转换：
+
+-   ■ `<%@ page %>`、`<%@ include %>` 和 `<%@ taglib %>` 指令向 JSP 容器提供翻译时信息。
+
+-   JSP 表达式和 HTML 行按其出现顺序被翻译成 `_jspService()` 方法中的 `out.print()` 语句。
+
 -   脚本片段被原样复制到 `_jspService()` 中。
+
 -   声明被原样复制到 `_jspService()` 之外的源代码中。
--   标准JSP动作（如 `<jsp:include>`、`<jsp:useBean>` 和 `<jsp:setProperty>`）被翻译成执行其功能的运行时逻辑。
--   自定义标签被展开为调用其相应标签处理器中方法的Java语句。
+
+-   标准 JSP 动作（如 `<jsp:include>`、`<jsp:useBean>` 和 `<jsp:setProperty>`）被翻译成执行其功能的运行时逻辑。
+
+-   自定义标签被展开为调用其相应标签处理器中方法的 Java 语句。
 
 ## 容器生成的标签相关代码
 
-容器使用taglib指令来定位标签库描述符（TLD），并根据使用的标签前缀将其与页面中使用的自定义标签匹配。例如，如果指令是
+容器使用 taglib 指令来定位标签库描述符（TLD），并根据使用的标签前缀将其与页面中使用的自定义标签匹配。例如，如果指令是
 
 ```
 <%@ taglib prefix="db"
@@ -4779,17 +5141,21 @@ The web server is Apache/1.3.12 (Win32)
 <db:connect url="mydatabase">
 ```
 
-它会查找与该前缀关联的标签库，该标签库包含具有指定名称的标签。容器使用它在TLD中找到的关于标签结构的信息，生成一系列实现该标签功能的Java语句。对于前面显示的 `db:connect` 标签，这将包括
+它会查找与该前缀关联的标签库，该标签库包含具有指定名称的标签。容器使用它在 TLD 中找到的关于标签结构的信息，生成一系列实现该标签功能的 Java 语句。对于前面显示的 `db:connect` 标签，这将包括
 
 -   1. 创建 `connect` 标签处理器实例或从池中获取实例的代码。
--   2. 将 `pageContext` 对象的引用传递给 `connect` 标签处理器的代码。这是一个有用的功能，因为它使标签处理器能够访问JSP页面的Request、Response、HttpSession、ServletContext和输出流对象。这也意味着标签处理器可以获取或设置页面上下文管理的任何级别的属性。
--   3. 如果 `db:connect` 嵌套在另一个自定义标签中，则传递父标签引用的代码。
+
+-   2. 将 `pageContext` 对象的引用传递给 `connect` 标签处理器的代码。这是一个有用的功能，因为它使标签处理器能够访问 JSP 页面的 Request、Response、HttpSession、ServletContext 和输出流对象。这也意味着标签处理器可以获取或设置页面上下文管理的任何级别的属性。
+
+-   3. 如果 `db:connect` 嵌套在另一个自定�标签中，则传递父标签引用的代码。
+
 -   4. 调用 `connect` 标签处理器的 `setUrl()` 方法，传递 "mydatabase" 值。
+
 -   5. 调用名为 `doStartTag()` 的方法，`connect` 标签处理器实现此方法以在遇到其开始标签时执行任何操作（稍后将详细介绍）。
 
 ## 标签处理器做什么
 
-在JSP页面的正文中，一个自定义标签可能看起来像这样：
+在 JSP 页面的正文中，一个自定义标签可能看起来像这样：
 
 ```
 <app:mail from="Accounting Manager" to="Staff" >
@@ -4803,17 +5169,20 @@ The web server is Apache/1.3.12 (Win32)
 此标签的组件包括：
 
 -   一个开始标签 <app:mail ...>，带有一个或多个属性
--   一个结束标签 </app:mail>
--   开始标签和结束标签之间的行，称为标签的*主体*，可能包含普通文本或其他JSP语句。
 
-在将标签转换为servlet代码时，容器为这些组件中的每一个调用标签处理器，并使用pageContext对象与处理器共享属性。这些方法的调用有时被称为标签处理器的*生命周期*。为此，标签处理器必须实现以下两个接口之一：
+-   一个结束标签 </app:mail>
+
+-   开始标签和结束标签之间的行，称为标签的*主体*，可能包含普通文本或其他 JSP 语句。
+
+在将标签转换为 servlet 代码时，容器为这些组件中的每一个调用标签处理器，并使用 pageContext 对象与处理器共享属性。这些方法的调用有时被称为标签处理器的*生命周期*。为此，标签处理器必须实现以下两个接口之一：
 
 -   javax.servlet.jsp.tagext.Tag，用于不操作其主体的标签。
--   javax.servlet.jsp.tagext.BodyTag，用于操作其主体的标签。BodyTag是Tag的子接口。
+
+-   javax.servlet.jsp.tagext.BodyTag，用于操作其主体的标签。BodyTag 是 Tag 的子接口。
 
 这些接口指定了标签处理器必须提供的生命周期方法。
 
-API还提供了两个支持类——TagSupport和BodyTagSupport——它们作为这两个接口的默认实现。大多数标签处理器扩展这些支持类，而不是直接实现接口，尽管这些接口并不特别复杂。使用支持类的一个好处是你只需要覆盖需要更改的方法，而让支持类处理其余部分。此外，支持类可以负责在受保护的变量中保存页面上下文和主体内容对象，因此子类可以简单地访问它们。
+API 还提供了两个支持类——TagSupport 和 BodyTagSupport——它们作为这两个接口的默认实现。大多数标签处理器扩展这些支持类，而不是直接实现接口，尽管这些接口并不特别复杂。使用支持类的一个好处是你只需要覆盖需要更改的方法，而让支持类处理其余部分。此外，支持类可以负责在受保护的变量中保存页面上下文和主体内容对象，因此子类可以简单地访问它们。
 
 > 3 一个标签不一定要有主体。标签可以简单地根据开始标签中指定的属性执行其功能。在这种情况下，使用简写 `<tag ... />` 表示法是很常见的。
 
@@ -4821,23 +5190,23 @@ API还提供了两个支持类——TagSupport和BodyTagSupport——它们作�
 
 自定义标签在一个称为*标签库*的结构中实现和分发，有时也称为*taglib*。标签库是一个类和元信息的集合，包括
 
--   **标签处理器** 实现自定义标签功能的Java类。
--   **标签附加信息** 为JSP容器提供验证标签属性和创建脚本变量的逻辑的类。
--   **标签库描述符（TLD）** 一个XML文档，描述各个标签的属性以及整个标签库的属性。
+-   **标签处理器** 实现自定义标签功能的 Java 类。
 
-标签库的组件可以安装在任何对JSP容器可访问的位置。标签处理器和标签附加信息类需要位于JSP容器类加载器可以找到的位置。标签库描述符可以位于任何可以通过URL定位的位置。然而，为了方便部署，JSP 1.1规范要求JSP容器必须接受打包为具有特定固定结构的JAR文件的标签库。在此类JAR文件中，类应位于从根目录开始、匹配其包结构的目录树中，并且TLD必须是 `/META-INF` 目录中名为 `taglib.tld` 的文件。这意味着标签库可以通过简单地将其JAR文件复制到 `/WEB-INF/lib` 目录来部署。或者，可以将类解压到 `/WEB-INF/classes` 目录，并将TLD放置在另一个Web可访问的位置。这通常是一个名为 `/WEB-INF/tlds` 的目录，尽管这只是约定，而非要求。
+-   **标签附加信息** 为 JSP 容器提供验证标签属性和创建脚本变量的逻辑的类。
+
+-   **标签库描述符（TLD）** 一个 XML 文档，描述各个标筓的属性以及整个标签库的属性。
+
+标签库的组件可以安装在任何对 JSP 容器可访问的位置。标签处理器和标签附加信息类需要位于 JSP 容器类加载器可以找到的位置。标签库描述符可以位于任何可以通过 URL 定位的位置。然而，为了方便部署，JSP 1.1 规范要求 JSP 容器必须接受打包为具有特定固定结构的 JAR 文件的标签库。在此类 JAR 文件中，类应位于从根目录开始、匹配其包结构的目录树中，并且 TLD 必须是 `/META-INF` 目录中名为 `taglib.tld` 的文件。这意味着标签库可以通过简单地将其 JAR 文件复制到 `/WEB-INF/lib` 目录来部署。或者，可以将类解压到 `/WEB-INF/classes` 目录，并将 TLD 放置在另一个 Web 可访问的位置。这通常是一个名为 `/WEB-INF/tlds` 的目录，尽管这只是约定，而非要求。
 
 ## 标签库描述符（TLD）
 
-JSP容器所需的标签库配置信息存储在*标签库描述符（TLD）*中。TLD是一个XML文档，描述库中的各个标签、它们的标签处理器和属性，以及整个库的版本和标识信息。
+JSP 容器所需的标签库配置信息存储在*标签库描述符（TLD）*中。TLD 是一个 XML 文档，描述库中的各个标签、它们的标签处理器和属性，以及整个库的版本和标识信息。
 
-## TLD元素
+## TLD 元素
 
-标签库描述符的*文档类型定义（DTD）*可以在http://java.sun.com/j2ee/dtds/web-jsptaglibrary_1_1.dtd找到。一个有效的TLD由一个单一的 `<taglib>` 元素组成，该元素按固定顺序包含某些子元素：
+标签库描述符的*文档类型定义（DTD）*可以在 http://java.sun.com/j2ee/dtds/web-jsptaglibrary_1_1.dtd 找到。一个有效的 TLD 由一个单一的 `<taglib>` 元素组成，该元素按固定顺序包含某些子元素：
 
 -   `tlibversion` 是一个必需的元素，包含标签库的版本号。这是一个由最多四组数字组成的点分十进制数，数字之间用小数点分隔，例如“1.0”或“1.3.045”。
-
-
 
 `jspversion` 是一个可选元素，用于标识支持该标签库所需的最低 JSP 规范级别。例如，对于 JSP 1.1 版本，该值应为 "1.1"。
 
@@ -4851,15 +5220,23 @@ JSP容器所需的标签库配置信息存储在*标签库描述符（TLD）*中
 
 一个 `tag` 元素本身最多包含六种类型的子元素：
 
-- `name`：将在 JSP 页面中使用的标签名称。与标识标签库的命名空间前缀一起使用时，该名称唯一标识了 JSP 容器中的一个标签。
-- `tagclass`：一个必需元素，包含实现该标签的标签处理程序的完全限定名。
-- `teiclass`：一个可选元素，包含此标签使用的 *标签额外信息* (TEI) 类的完全限定名（如果有的话）。TEI 类提供了关于标签处理程序创建的脚本变量以及可以对标签属性执行的任何验证的信息。
-- `bodycontent`：可选地描述标签处理程序如何使用其主体内容。可能的值有
-    - `empty`：标签主体必须为空
-    - `JSP`：标签主体由其他 JSP 元素组成
-    - `tagdependent`：标签主体由标签本身解释，不进行 JSP 转换
-- `info`：关于该标签的可选的、人类可读的描述性信息。
-- `attribute`：关于在 JSP 页面中使用该标签时可编码的属性的可选信息。此条目将在本章后面的“定义标签属性”部分中有更完整的描述。
+-   `name`：将在 JSP 页面中使用的标签名称。与识别标签库的命名空间前缀一起使用时，该名称唯一标识了 JSP 容器中的一个标签。
+
+-   `tagclass`：一个必需元素，包含实现该标签的标签处理程序的完全限定名。
+
+-   `teiclass`：一个可选元素，包含此标签使用的 *标签额外信息* (TEI) 类的完全限定名（如果有的话）。TEI 类提供了关于标签处理程序创建的脚本变量以及可以对标签属性执行的任何验证的信息。
+
+-   `bodycontent`：可选地描述标签处理程序如何使用其主体内容。可能的值有
+
+    -   `empty`：标签主体必须为空
+
+    -   `JSP`：标签主体由其他 JSP 元素组成
+
+    -   `tagdependent`：标签主体由标签本身解释，不进行 JSP 转换
+
+-   `info`：关于该标签的可选的、人类可读的描述性信息。
+
+-   `attribute`：关于在 JSP 页面中使用该标签时可编码的属性的可选信息。此条目将在本章后面的“定义标签属性”部分中有更完整的描述。
 
 ## taglib 指令
 
@@ -4897,7 +5274,9 @@ taglib 指令的目的是指定 TLD 的位置，并为其分配一个短别名�
 </taglib>
 ```
 
-其中 `uri` 可以是任何有效的 URI，可能是一个类似文件的助记名称，如 `/util-taglib`，或者是可以找到最新版本标签库的位置的 URL。这使得可以将 taglib 指令编码为
+
+
+其中`uri`可以是任何有效的URI，可能是一个类似文件的助记名称，如`/util-taglib`，或者是可以找到最新版本标签库的位置的URL。这使得可以将taglib指令编码为
 
 ```
 <%@ taglib
@@ -4906,53 +5285,67 @@ taglib 指令的目的是指定 TLD 的位置，并为其分配一个短别名�
 %>
 ```
 
-请注意，该 URI 不必指向实际文件。相反，它是一个唯一的标识符，使 JSP 容器能够在 `web.xml` 中搜索实际的文件位置。另请注意，此映射技术仅适用于按指定格式（TLD 位于 `/META-INF/taglib.tld`）编码的 JAR 文件，并且已知一些 JSP 容器实现在这方面存在错误。如有疑问，您总是可以将 JAR 文件放在 `/WEB-INF/lib` 中，将 TLD 放在 `/WEB-INF/tlds` 中，并在 JSP 页面中直接引用 `/WEB-INF/tlds/filename.tld`。
+请注意，该URI不必指向实际文件。相反，它是一个唯一的标识符，使JSP容器能够在`web.xml`中搜索实际的文件位置。另请注意，此映射技术仅适用于按指定格式（TLD位于`/META-INF/taglib.tld`）编码的JAR文件，并且已知一些JSP容器实现在这方面存在错误。如有疑问，您总是可以将JAR文件放在`/WEB-INF/lib`中，将TLD放在`/WEB-INF/tlds`中，并在JSP页面中直接引用`/WEB-INF/tlds/filename.tld`。
 
-## 标签处理程序 API
+## 标签处理程序API
 
-以下部分描述了与 `Tag` 接口和 `TagSupport` 类相关联的方法。
+以下部分描述了与`Tag`接口和`TagSupport`类相关联的方法。
 
-## Tag 接口
+## Tag接口
 
-表 11-1 列出了实现 `Tag` 接口的类必须支持的生命周期方法。该接口还包括四个常量，它们代表 `doStartTag()` 和 `doEndTag()` 方法可能的返回码：
+表11-1列出了实现`Tag`接口的类必须支持的生命周期方法。该接口还包括四个常量，它们代表`doStartTag()`和`doEndTag()`方法可能的返回码：
 
-- `EVAL_BODY_INCLUDE`：当 `doStartTag()` 返回此值时，表示页面实现 servlet 应评估标签主体。
-- `SKIP_BODY`：当 `doStartTag()` 返回此值时，表示 servlet 应忽略此标签的主体。
-- `EVAL_PAGE`：当 `doEndTag()` 返回此值时，表示页面的其余部分应照常评估。
-- `SKIP_PAGE`：当 `doEndTag()` 返回此值时，表示页面的其余部分应被跳过。
+- `EVAL_BODY_INCLUDE`：当`doStartTag()`返回此值时，表示页面实现servlet应评估标签主体。
 
-**表 11-1. Tag 接口中的方法**
+- `SKIP_BODY`：当`doStartTag()`返回此值时，表示servlet应忽略此标签的主体。
+
+- `EVAL_PAGE`：当`doEndTag()`返回此值时，表示页面的其余部分应照常评估。
+
+- `SKIP_PAGE`：当`doEndTag()`返回此值时，表示页面的其余部分应被跳过。
+
+**表11-1. Tag接口中的方法**
 
 | 方法 | 描述 |
+
 | :--- | :--- |
-| `public void setPageContext(PageContext ctx)` | 生成的 servlet 在要求处理程序执行任何其他操作之前首先调用此方法。实现类应保存上下文变量，以便在标签生命周期的任何时刻都可以使用它。通过页面上下文，标签处理程序可以访问所有 JSP 隐式对象，并可以在任何范围内获取和设置属性。 |
-| `public void setParent(Tag parent)` | 使标签能够在求值堆栈中找到其上方的标签。在 `setPageContext` 之后立即调用。 |
+
+| `public void setPageContext(PageContext ctx)` | 生成的servlet在要求处理程序执行任何其他操作之前首先调用此方法。实现类应保存上下文变量，以便在标签生命周期的任何时刻都可以使用它。通过页面上下文，标签处理程序可以访问所有JSP隐式对象，并可以在任何范围内获取和设置属性。 |
+
+| `public void setParent(Tag parent)` | 使标签能够在求值堆栈中找到其上方的标签。在`setPageContext`之后立即调用。 |
+
 | `public Tag getParent()` | 返回父标签。 |
-| `public int doStartTag() throws JspException` | 在设置了页面上下文、父标签和起始标签上编码的任何属性之后调用。返回码表示 JSP 实现 servlet 应评估标签主体 (`EVAL_BODY_INCLUDE`) 还是不评估 (`SKIP_BODY`)。该方法可以抛出 `JspException` 以指示致命错误。 |
-| `public int doEndTag() throws JspException` | 在遇到结束标签时调用。返回码表示 JSP 实现 servlet 应继续处理页面的其余部分 (`EVAL_PAGE`) 还是不继续 (`SKIP_PAGE`)。该方法可以抛出 `JspException` 以指示致命错误。 |
+
+| `public int doStartTag() throws JspException` | 在设置了页面上下文、父标签和起始标签上编码的任何属性之后调用。返回码表示JSP实现servlet应评估标签主体(`EVAL_BODY_INCLUDE`)还是不评估(`SKIP_BODY`)。该方法可以抛出`JspException`以指示致命错误。 |
+
+| `public int doEndTag() throws JspException` | 在遇到结束标签时调用。返回码表示JSP实现servlet应继续处理页面的其余部分(`EVAL_PAGE`)还是不继续(`SKIP_PAGE`)。该方法可以抛出`JspException`以指示致命错误。 |
+
 | `public void release()` | 保证在页面退出之前调用。允许标签处理程序释放其持有的任何资源并重置其状态，以便在必要时可以重用。 |
 
-## TagSupport 类
+## TagSupport类
 
-`javax.servlet.jsp.tagext.TagSupport` 是一个实现 `Tag` 接口的具体类。除了该接口外，`TagSupport` 类还提供了表 11-2 中列出的附加方法。
+`javax.servlet.jsp.tagext.TagSupport`是一个实现`Tag`接口的具体类。除了该接口外，`TagSupport`类还提供了表11-2中列出的附加方法。
 
-扩展此类而不是直接实现接口通常是有利的。除了为所有必需方法提供默认实现并存储 `pageContext` 变量外，`TagSupport` 还提供了几个便捷方法。`findAncestorWithClass()` 对于支持嵌套标签特别有用。例如，一个 *外部标签* 可以将一组对象作为实例变量进行管理，并提供公共访问器，使 *内部标签* 可以访问这些对象。本章后面的数据库标签示例说明了此技术。
+扩展此类而不是直接实现接口通常是有利的。除了为所有必需方法提供默认实现并存储`pageContext`变量外，`TagSupport`还提供了几个便捷方法。`findAncestorWithClass()`对于支持嵌套标签特别有用。例如，一个*外部标签*可以将一组对象作为实例变量进行管理，并提供公共访问器，使*内部标签*可以访问这些对象。本章后面的数据库标签示例说明了此技术。
 
-**表 11-2. TagSupport 类中的附加方法**
+**表11-2. TagSupport类中的附加方法**
 
 | 方法 | 描述 |
+
 | :--- | :--- |
+
 | `public static Tag findAncestorWithTag(Tag thisTag, Class cls)` | 在运行时标签堆栈中查找所需的父标签处理程序。标签处理程序可以提供其作用域内的子标签可以调用的方法。 |
-| `public void setId(String id)`<br>`public String getId()` | 存储或检索 `id` 属性中指定的名称。 |
+
+| `public void setId(String id)`<br>`public String getId()` | 存储或检索`id`属性中指定的名称。 |
+
 | `public void setValue(String name, Object o)`<br>`public Object getValue(String name)` | 在本地哈希表中存储或检索给定名称下的值。 |
+
 | `public void removeValue(String name)` | 从本地哈希表中移除指定名称的值。 |
-| `public Enumeration getValues()` | 返回哈希表中键的 `java.util.Enumeration`。 |
+
+| `public Enumeration getValues()` | 返回哈希表中键的`java.util.Enumeration`。 |
 
 ## 标签处理程序生命周期
 
-图 11-2 中的流程图描述了标签处理程序生命中的事件。流程图中显示的过程对应于当 JSP 页面被翻译成 servlet 时，JSP 容器为标签生成的 Java 代码。了解您的每个...
-
-
+图11-2中的流程图描述了标签处理程序生命中的事件。流程图中显示的过程对应于当JSP页面被翻译成servlet时，JSP容器为标签生成的Java代码。了解您的每个...
 
 ## 第11章：JSP标签扩展
 
@@ -4973,6 +5366,7 @@ taglib 指令的目的是指定 TLD 的位置，并为其分配一个短别名�
 接下来，标签处理器实例被初始化，并获知其所在Servlet的状态。Servlet通过在标签处理器中调用两个方法来实现这一点：
 
 - `setPageContext(PageContext ctx)`
+
 - `setParent(Tag parent)`
 
 如果标签支持属性，这些属性的运行时值将通过setter方法传递给标签处理器，处理器必须提供这些方法。例如，本章开头的数据库连接标签
@@ -5035,6 +5429,7 @@ public void setUrl(String value)
 ```
 
 `name`属性被定义为必填字段，其值可以通过请求时表达式提供（如果需要），而不是编码为字面量。
+
 毫不奇怪，标签处理器与`getWebServer`的处理器几乎相同。以下是`getWebServerHeader`标签处理器的源代码：
 
 ```java
@@ -5105,7 +5500,8 @@ String header = con.getHeaderField(name);
 ```
 
 其中name是在JSP标签中编码的值。
-在JSP页面中，我们将使用旧标签获取Web服务器产品名称，使用新标签获取Allow头。由于标签处理器使用OPTIONS方法发出HTTP请求，服务器应返回一个Allow头，列出它将接受的请求方法。以下是更新后的页面，名为ShowServerHeader.jsp：
+
+在JSP页面中，我们将使用旧标签获取Web服务器产品名称，使用新标签获取Allow头。由于标签处理器使用OPTIONS方法发出HTTP请请求，服务器应返回一个Allow头，列出它将接受的请求方法。以下是更新后的页面，名为ShowServerHeader.jsp：
 
 ```jsp
 <%@ taglib prefix="diag" uri="/WEB-INF/tlds/diagnostics.tld" %>
@@ -5128,6 +5524,7 @@ String header = con.getHeaderField(name);
 ```
 
 当ShowServerHeader.jsp运行时，它会产生如图11-3所示的输出。
+
 让我们检查一下JSP容器（在此示例中是JRun 3.0）为ShowServerHeader.jsp生成的Servlet的`_jspService()`方法的一部分。源代码
 
 ![](img/7a2f73369bb140583c7288b73456addb_235_0.png)
@@ -5151,38 +5548,52 @@ try {
         + "\r\n");
 ```
 
-
-
 GetWebServerTag tag1 = (GetWebServerTag)
+
     JRunJSPStaticHelpers.createTagHandler
+
         (pageContext, "GetWebServerTag");
 
 tag1.setPageContext(pageContext);
+
 tag1.setParent(null);
+
 tag1.doStartTag();
 
 if (tag1.doEndTag() == Tag.SKIP_PAGE) {
+
     return;
+
 }
 
 out.print("\r\n"
+
     + "are\r\n"
+
     + "<H4>");
 
 GetWebServerHeaderTag tag2 = (GetWebServerHeaderTag)
+
     JRunJSPStaticHelpers.createTagHandler
+
         (pageContext, "GetWebServerHeaderTag");
 
 tag2.setPageContext(pageContext);
+
 tag2.setParent(null);
+
 tag2.setName("allow");
+
 tag2.doStartTag();
 
 if (tag2.doEndTag() == Tag.SKIP_PAGE) {
+
     return;
+
 }
 
 out.print("</H4>\r\n\r\n</BODY>\r\n\r\n</HTML>\r\n");
+
 }
 
 在_jspService()方法的开头附近，servlet会创建并初始化其页面上下文：
@@ -5253,11 +5664,12 @@ tag2.doStartTag();
             description="a bird-catcher"/>
 ```
 
-有三个属性：*name*、*range*和*description*。属性可以是必需的或可选的，并且它们的值可以编码为字符串字面量，也可以在请求时使用JSP表达式提供（如果标签允许这样做）。
+有三个属性：*name、*range*和*description*。属性可以是必需的或可选的，并且它们的值可以编码为字符串字面量，也可以在请求时使用JSP表达式提供（如果标签允许这样做）。
 
 对于标签支持的每个属性，其标签处理器必须提供两样东西：
 
 - 一个存储属性的实例变量
+
 - 一个或多个setAttrname()方法，其中*Attrname*是属性名称，首字母大写。
 
 对于前面的示例标签，标签处理器可能如下所示：
@@ -5393,16 +5805,15 @@ date="<%= new java.util.Date() %>"
 tag.setDate(new java.util.Date());
 ```
 
+这将导致标签处理器的`public void setDate(Date date)`方法被调用，而不是`public void setDate(String date)`方法。
 
-
-这将导致标签处理器的 `public void setDate(Date date)` 方法被调用，而不是 `public void setDate(String date)` 方法。
 下面是一个包含两个可选属性的自定义标签示例，每个属性都可以使用请求时表达式指定。
 
 ```
 <x:formattedDate date="date" format="format"/>
 ```
 
-`date` 属性应在请求时表达式中指定为一个 `java.util.Date` 对象，而 `format` 属性可以是 `java.text.SimpleDateFormat` 对象，也可以是 `SimpleDateFormat` 使用的格式字符串。TLD 文件应如下所示：
+`date`属性应在请求时表达式中指定为一个`java.util.Date`对象，而`format`属性可以是`java.text.SimpleDateFormat`对象，也可以是`SimpleDateFormat`使用的格式字符串。TLD文件应如下所示：
 
 ```xml
 <?xml version="1.0" ?>
@@ -5419,7 +5830,7 @@ tag.setDate(new java.util.Date());
         <info>
             使用指定格式返回格式化后的日期。
             如果未指定日期，则使用当前日期。
-            默认日期格式为 MM/dd/yyyy
+            默认日期格式为MM/dd/yyyy
         </info>
 
         <attribute>
@@ -5454,7 +5865,7 @@ import java.util.*;
  */
 public class FormattedDateTag extends TagSupport
 {
-    // date 属性
+    // date属性
 
     private Date date;
     public void setDate(Date date)
@@ -5462,7 +5873,7 @@ public class FormattedDateTag extends TagSupport
         this.date = date;
     }
 
-    // format 属性
+    // format属性
 
     private SimpleDateFormat format;
     public void setFormat(String fmtstr)
@@ -5479,7 +5890,7 @@ public class FormattedDateTag extends TagSupport
      */
     public int doStartTag() throws JspException
     {
-        // 获取 date 属性，默认为当前日期
+        // 获取date属性，默认为当前日期
         Date date = this.date;
         if (date == null)
             date = new Date();
@@ -5504,7 +5915,7 @@ public class FormattedDateTag extends TagSupport
 }
 ```
 
-注意这里存在两个 `setFormat()` 方法：一个接受 `java.text.SimpleDateFormat` 对象；另一个接受字符串并从中创建一个 `SimpleDateFormat` 对象。JSP 容器为哪个方法生成 servlet 代码，取决于标签是使用请求时表达式编码还是其他方式。以下是该标签使用方式的一个示例：
+注意这里存在两个`setFormat()`方法：一个接受`java.text.SimpleDateFormat`对象；另一个接受字符串并从中创建一个`SimpleDateFormat`对象。JSP容器为哪个方法生成servlet代码，取决于标签是使用请求时表达式编码还是其他方式。以下是该标签使用方式的一个示例：
 
 ```jsp
 <%@ page session="false" %>
@@ -5523,38 +5934,47 @@ public class FormattedDateTag extends TagSupport
 
 `<x:formattedDate date="<%= then %>" format="<%= fmt %>" />.`
 
-在上述 JSP 页面中使用时，该标签的输出是：
+在上述JSP页面中使用时，该标签的输出是：
 
-> 日期是 1931 年 7 月 25 日。
+> 日期是1931年7月25日。
 
-## Body 标签处理器 API
+## Body标签处理器API
 
 简单标签是有用的组件，它们的功能完全在其开始标签内实现。然而，自定义标签的真正威力源于它们与其标签体交互的能力。这使得自定义标签可以：
 
-*   后处理其标签体文本，例如排序、将其转换为 HTML 表格，或者过滤掉像 `<` 和 `>` 这样的字符，并用它们在 HTML 中安全的等价字符 `&lt;` 和 `&gt;` 替换。
+*   后处理其标签体文本，例如排序、将其转换为HTML表格，或者过滤掉像`<`和`>`这样的字符，并用它们在HTML中安全的等价字符`&lt;`和`&gt;`替换。
+
 *   定义新的隐式对象并为其创建脚本变量。
+
 *   与嵌套标签协作执行复杂操作。
 
-处理其标签体的标签是本章目前讨论的标签的扩展。它们实现了 `javax.servlet.jsp.tagext.Tag` 的一个子接口，称为 `javax.servlet.jsp.tagext.BodyTag`。与 `TagSupport` 类的情况类似，`BodyTag` 也存在一个基类实现，名为 `BodyTagSupport`。
+处理其标签体的标签是本章目前讨论的标签的扩展。它们实现了`javax.servlet.jsp.tagext.Tag`的一个子接口，称为`javax.servlet.jsp.tagext.BodyTag`。与`TagSupport`类的情况类似，`BodyTag`也存在一个基类实现，名为`BodyTagSupport`。
 
 ## BodyContent
 
-当 JSP 容器为具有标签体的标签生成代码时，它会保存并恢复表示当前 servlet 输出写入器的对象。在处理标签的标签体之前，会创建一个新的输出写入器——这次是一个 `BodyContent` 类的实例。在评估标签体期间，`out` 脚本变量以及 `pageContext.getOut()` 返回的值都指向这个新的写入器对象。如果存在多级嵌套，写入器会被保存在栈上，因此每一级都有自己的写入器。
+当JSP容器为具有标签体的标签生成代码时，它会保存并恢复表示当前servlet输出写入器的对象。在处理标签的标签体之前，会创建一个新的输出写入器——这次是一个`BodyContent`类的实例。在评估标签体期间，`out`脚本变量以及`pageContext.getOut()`返回的值都指向这个新的写入器对象。如果存在多级嵌套，写入器会被保存在栈上，因此每一级都有自己的写入器。
 
-`BodyContent` 是 `javax.servlet.jsp.JspWriter` 的子类，但与其父类不同，其内容不会自动写入 servlet 输出流。相反，它们会累积在一个相当于字符串缓冲区的地方。在标签体完成后，原始的 `JspWriter` 会被恢复，但 `BodyContent` 对象在 `doEndTag()` 方法中的 `bodyContent` 变量中仍然可用。可以通过其 `getString()` 或 `getReader()` 方法检索其内容，根据需要进行修改，然后写入已恢复的 `JspWriter` 输出流以与页面输出合并。表 11-3 列出了 `BodyContent` 提供的附加方法。
+`BodyContent`是`javax.servlet.jsp.JspWriter`的子类，但与其父类不同，其内容不会自动写入servlet输出流。相反，它们会累积在一个相当于字符串缓冲区的地方。在标签体完成后，原始的`JspWriter`会被恢复，但`BodyContent`对象在`doEndTag()`方法中的`bodyContent`变量中仍然可用。可以通过其`getString()`或`getReader()`方法检索其内容，根据需要进行修改，然后写入已恢复的`JspWriter`输出流以与页面输出合并。表11-3列出了`BodyContent`提供的附加方法。
 
 | 方法 | 描述 |
+
 |---|---|
-| `public void flush() throws IOException` | 重写 `JspWriter.flush()` 方法，使其总是抛出异常。刷新 `BodyContent` 写入器是无效的，因为它没有连接到可以写入的实际输出流。 |
-| `public void clearBody()` | 将 `BodyContent` 缓冲区重置为空。如果在 `doAfterBody()` 中将标签体写入外层写入器，这会很有用。 |
-| `public Reader getReader()` | 在标签体内容被评估后返回一个用于读取它的 `Reader`。此 `Reader` 可以传递给其他能够处理 `java.io.Reader` 的类，例如 `StreamTokenizer`、`FilterReader` 或 XML 解析器。 |
+
+| `public void flush() throws IOException` | 重写`JspWriter.flush()`方法，使其总是抛出异常。刷新`BodyContent`写入器是无效的，因为它没有连接到可以写入的实际输出流。 |
+
+| `public void clearBody()` | 将`BodyContent`缓冲区重置为空。如果在`doAfterBody()`中将标签体写入外层写入器，这会很有用。 |
+
+| `public Reader getReader()` | 在标签体内容被评估后返回一个用于读取它的`Reader`。此`Reader`可以传递给其他能够处理`java.io.Reader`的类，例如`StreamTokenizer`、`FilterReader`或XML解析器。 |
+
 | `public String getString()` | 返回一个包含评估后标签体内容的字符串。 |
+
 | `public void writeOut(Writer w)` | 将标签体内容写入指定的输出写入器。 |
-| `public JspWriter getEnclosingWriter()` | 返回栈中上一层的写入器对象（可能是另一个 `BodyContent`）。 |
 
-表 11-3. BodyContent 类中的附加方法
+| `public JspWriter getEnclosingWriter()` | 返回栈中上一层的写入器对象（可能是另一个`BodyContent`）。 |
 
-为什么 JSP 容器为自定义标签输出创建这样复杂的结构？我们已经知道 JSP 容器允许输出被后处理和过滤，但这也是因为并非所有的标签体内容都旨在产生输出。例如，在前面的数据库查询示例中：
+表11-3. BodyContent类中的附加方法
+
+为什么JSP容器为自定义标签输出创建这样复杂的结构？我们已经知道JSP容器允许输出被后处理和过滤，但这也是因为并非所有的标签体内容都旨在产生输出。例如，在前面的数据库查询示例中：
 
 ```jsp
 <db:runQuery>
@@ -5565,79 +5985,95 @@ public class FormattedDateTag extends TagSupport
 </db:runQuery>
 ```
 
-标签体根本不是 HTML，而是代表 SQL 语句的字符串。大概会使用 `BodyContent.getString()` 方法读取它，并将其传递给一个 JDBC 语句对象，然后该对象的输出会被写入 Web 页面。这之所以自动成为可能，是因为 `BodyContent` 对象将其输出存储在缓冲区中，而不是直接写入。
+标签体根本不是HTML，而是代表SQL语句的字符串。大概会使用`BodyContent.getString()`方法读取它，并将其传递给一个JDBC语句对象，然后该对象的输出会被写入Web页面。这之所以自动成为可能，是因为`BodyContent`对象将其输出存储在缓冲区中，而不是直接写入。
 
-## BodyTag 接口
+## BodyTag接口
 
-与其标签体内容交互的标签具有稍微更复杂的生命周期，因此它们的标签处理器需要更多的方法。为此，存在一个名为 `BodyTag` 的 `Tag` 接口扩展，它继承了 `Tag` 要求的所有方法，但增加了三个与标签体处理相关的新方法。表 11-4 描述了该接口。
+与其标签体内容交互的标签具有稍微更复杂的生命周期，因此它们的标签处理器需要更多的方法。为此，存在一个名为`BodyTag`的`Tag`接口扩展，它继承了`Tag`要求的所有方法，但增加了三个与标签体处理相关的新方法。表11-4描述了该接口。
 
-除了三个新方法外，`BodyTag` 接口还定义了一个新的整型常量：
+除了三个新方法外，`BodyTag`接口还定义了一个新的整型常量：
 
-*   `EVAL_BODY_TAG` - 当被 `doStartTag()` 返回时，会导致创建一个新的 `BodyContent` 对象并与该标签处理器关联。当被 `doAfterBody()` 返回时，会导致 JSP servlet 在更新此标签控制的任何脚本变量后再次评估标签体。这使得标签处理器可以循环遍历元素列表，为每个元素评估标签体。
+*   `EVAL_BODY_TAG` - 当被`doStartTag()`返回时，会导致创建一个新的`BodyContent`对象并与该标签处理器关联。当被`doAfterBody()`返回时，会导致JSPservlet在更新此标签控制的任何脚本变量后再次评估标签体。这使得标签处理器可以循环遍历元素列表，为每个元素评估标签体。
 
 | 方法 | 描述 |
+
 |---|---|
-| `public void setBodyContent(BodyContent out)` | 在当前 `JspWriter` 被压栈且创建了新的 `BodyContent` 写入器后，由 JSP servlet 调用。这发生在 `doStartTag()` 之后。 |
-| `public void doInitBody() throws JspException` | 在 `setBodyContent()` 之后但在标签体被评估之前调用的生命周期方法。如果标签体被多次评估，此方法只被调用一次。 |
-| `public int doAfterBody() throws JspException` | 在标签体已被评估之后，但 `BodyContent` 写入器仍然活动时调用的生命周期方法。此方法必须返回 `EVAL_BODY_TAG` 或 `SKIP_BODY`。如果返回码是 `EVAL_BODY_TAG`，则标签体将被再次评估，并且 `doAfterBody()` 也会被再次调用。 |
 
-表 11-4. BodyTag 接口中的方法
+| `public void setBodyContent(BodyContent out)` | 在当前`JspWriter`被压栈且创建了新的`BodyContent`写入器后，由JSPservlet调用。这发生在`doStartTag()`之后。 |
 
+| `public void doInitBody() throws JspException` | 在`setBodyContent()`之后但在标签体被评估之前调用的生命周期方法。如果标签体被多次评估，此方法只被调用一次。 |
 
+| `public int doAfterBody() throws JspException` | 在标签体已被评估之后，但`BodyContent`写入器仍然活动时调用的生命周期方法。此方法必须返回`EVAL_BODY_TAG`或`SKIP_BODY`。如果返回码是`EVAL_BODY_TAG`，则标签体将被再次评估，并且`doAfterBody()`也会被再次调用。 |
 
-> **注意** 除了 `SKIP_BODY`，`doStartTag()` 还可以返回 `EVAL_BODY_INCLUDE` 或 `EVAL_BODY_TAG`，两者都表示应处理标签体。但是，实现了 `BodyTag` 接口的标签处理器不能返回 `EVAL_BODY_INCLUDE`，而未实现 `BodyTag` 的标签处理器则不能返回 `EVAL_BODY_TAG`。这两种操作都会导致运行时异常。
+表11-4. BodyTag接口中的方法
 
-## BodyTagSupport 类
+> **注意** 除了`SKIP_BODY`，`doStartTag()`还可以返回`EVAL_BODY_INCLUDE`或`EVAL_BODY_TAG`，两者都表示应处理标签体。但是，实现了`BodyTag`接口的标签处理器不能返回`EVAL_BODY_INCLUDE`，而未实现`BodyTag`的标签处理器则不能返回`EVAL_BODY_TAG`。这两种操作都会导致运行时异常。
 
-与 Tag 接口的情况类似，BodyTag 也有一个默认的实现类，名为 `javax.servlet.jsp.tagext.BodyTagSupport`。这个类扩展了 TagSupport，但进行了一些微妙的改动。表 11-5 描述了 BodyTagSupport 实现的公共方法。
+## BodyTagSupport类
 
-Body 标签处理器可以直接实现 BodyTag 接口，但 BodyTagSupport 通常是一个更方便的基类。
+与Tag接口的情况类似，BodyTag也有一个默认的实现类，名为`javax.servlet.jsp.tagext.BodyTagSupport`。这个类扩展了TagSupport，但进行了一些微妙的改动。表11-5描述了BodyTagSupport实现的公共方法。
 
-表 11-5. BodyTagSupport 中的方法
+Body标签处理器可以直接实现BodyTag接口，但BodyTagSupport通常是一个更方便的基类。
+
+表11-5. BodyTagSupport中的方法
+
 | 方法 | 描述 |
+
 |---|---|
-| `public int doStartTag()`<br>`throws JspException` | 重写 TagSupport 中的 `doStartTag()`，默认返回 `EVAL_BODY_TAG` 而不是 `SKIP_BODY`。 |
-| `public int doEndTag()`<br>`throws JspException` | 调用 TagSupport 中的 `doEndTag()`，并返回其结果。 |
-| `public void setBodyContent`<br>`(BodyContent out)` | 将新的 body 内容对象存储在名为 `bodyContent` 的 protected 变量中。子类可以直接访问此变量。 |
-| `public void doInitBody()`<br>`throws JspException` | 默认情况下不做任何事情。旨在被需要在评估 body 之前执行初始化的子类重写。 |
-| `public int doAfterBody()`<br>`throws JspException` | 在每次评估完 body 后由 JSP servlet 调用。此时 body 内容对象仍然有效。此方法必须返回 `SKIP_BODY` 或 `EVAL_BODY_TAG`，后者将导致 body 再次被评估并再次调用 `doAfterBody()`。 |
-| `public void release()` | 将 `bodyContent` 变量设置为 `null`，然后调用 `super.release()`。重写的方法也必须调用 `super.release()`，否则 `bodyContent` 可能无法被垃圾回收。 |
-| `public BodyContent getBodyContent()` | 返回 `bodyContent` 变量。子类已经可以访问这个 protected 变量，但此方法允许不相关的标签处理器类向此 body 内容发送输出。 |
-| `public JspWriter getPreviousOut()` | 一个便捷方法，调用 `bodyContent` 变量上的 `getEnclosingWriter()` 并返回结果。 |
 
-## Body 标签处理器生命周期
+| `public int doStartTag()`<br>`throws JspException` | 重写TagSupport中的`doStartTag()`，默认返回`EVAL_BODY_TAG`而不是`SKIP_BODY`。 |
 
-图 11-4 描述了与其 body 交互的标签处理器的稍微复杂一些的生命周期。
+| `public int doEndTag()`<br>`throws JspException` | 调用TagSupport中的`doEndTag()`，并返回其结果。 |
+
+| `public void setBodyContent`<br>`(BodyContent out)` | 将新的body内容对象存储在名为`bodyContent`的protected变量中。子类可以直接访问此变量。 |
+
+| `public void doInitBody()`<br>`throws JspException` | 默认情况下不做任何事情。旨在被需要在评估body之前执行初始化的子类重写。 |
+
+| `public int doAfterBody()`<br>`throws JspException` | 在每次评估完body后由JSPservlet调用。此时body内容对象仍然有效。此方法必须返回`SKIP_BODY`或`EVAL_BODY_TAG`，后者将导致body再次被评估并再次调用`doAfterBody()`。 |
+
+| `public void release()` | 将`bodyContent`变量设置为`null`，然后调用`super.release()`。重写的方法也必须调用`super.release()`，否则`bodyContent`可能无法被垃圾回收。 |
+
+| `public BodyContent getBodyContent()` | 返回`bodyContent`变量。子类已经可以访问这个protected变量，但此方法允许不相关的标签处理器类向此body内容发送输出。 |
+
+| `public JspWriter getPreviousOut()` | 一个便捷方法，调用`bodyContent`变量上的`getEnclosingWriter()`并返回结果。 |
+
+## Body标签处理器生命周期
+
+图11-4描述了与其body交互的标签处理器的稍微复杂一些的生命周期。
+
 以下部分描述了生命周期流程图中的每个事件。
 
 ## 流程图
 
-前几个步骤直到 `doStartTag()` 与图 11-2 中没有不同。第一个不同之处在于对此方法返回代码的处理。Body 标签处理器中的 `doStartTag()` 可以返回 `SKIP_BODY`（导致立即分支到 `doEndTag()`）或 `EVAL_BODY_TAG`（启动处理标签体的事件链）。
+前几个步骤直到`doStartTag()`与图11-2中没有不同。第一个不同之处在于对此方法返回代码的处理。Body标签处理器中的`doStartTag()`可以返回`SKIP_BODY`（导致立即分支到`doEndTag()`）或`EVAL_BODY_TAG`（启动处理标签体的事件链）。
 
-当从 `doStartTag()` 返回 `EVAL_BODY_TAG` 时，JSP servlet⁶ 会调用页面上下文的 `pushBody()` 方法，该方法执行三件事：
+当从`doStartTag()`返回`EVAL_BODY_TAG`时，JSPservlet⁶会调用页面上下文的`pushBody()`方法，该方法执行三件事：
 
-1. 将当前的 `JspWriter` 保存到堆栈上。
+1. 将当前的`JspWriter`保存到堆栈上。
 
-6 本节中的术语 *JSP servlet* 指的是 JSP 容器根据 JSP 页面源代码生成的 servlet。
+6 本节中的术语*JSP servlet*指的是JSP容器根据JSP页面源代码生成的servlet。
 
-**图 11-4.** *Body 标签处理器生命周期流程图*
+**图11-4.** *Body标签处理器生命周期流程图*
 
-# 第 11 章：JSP 标签扩展
+# 第11章：JSP标签扩展
 
-2. 创建一个新的 BodyContent 对象，并将其存储在页面上下文的页面范围属性中，名为 out。
-3. 将新的 BodyContent 对象分配给 JSP 页面的隐式变量 out。
+2. 创建一个新的BodyContent对象，并将其存储在页面上下文的页面范围属性中，名为out。
 
-之后，JSP servlet 使用新的 writer 调用标签处理器的 setBodyContent() 方法。
+3. 将新的BodyContent对象分配给JSP页面的隐式变量out。
 
-接下来，调用标签处理器的 doInitBody() 方法，以在评估 body 之前处理任何必要的初始化。此初始化也可以在 doStartTag() 中完成，但此时新的 BodyContent 对象还不可用。如果标签中没有 body，则不会调用 doInitBody()，并且如果它检测到任何致命错误，可以抛出 JspException。
+之后，JSPservlet使用新的writer调用标签处理器的setBodyContent()方法。
 
-此时，servlet 像通常一样处理标签的 body，将其输出写入 BodyContent 对象。处理取决于 TLD 中标签的 <bodycontent> 元素的值。此元素有三种可能的值：
+接下来，调用标签处理器的doInitBody()方法，以在评估body之前处理任何必要的初始化。此初始化也可以在doStartTag()中完成，但此时新的BodyContent对象还不可用。如果标签中没有body，则不会调用doInitBody()，并且如果它检测到任何致命错误，可以抛出JspException。
+
+此时，servlet像通常一样处理标签的body，将其输出写入BodyContent对象。处理取决于TLD中标签的<bodycontent>元素的值。此元素有三种可能的值：
 
 - **empty** 标签体必须为空。
-- **JSP** 脚本小程序、表达式和模板 HTML 按常规进行评估。如果 body 作用域内有任何其他自定义标签，它们也会被评估，与在页面其他地方使用时相同。如果其中任何一个具有实现 BodyTag 的标签处理器，则该过程会递归执行——当前的 BodyContent 被推入堆栈，新的 BodyContent 被分配给内部标签，依此类推。
-- **tagdependent** body 的内容被逐字写入 BodyContent。脚本小程序和表达式以其原始的 JSP 源代码形式出现，而不是由 JSP 容器解释。
 
-处理完 body 后，servlet 调用标签处理器的 doAfterBody() 方法。如果标签处理器此时想将其 body 内容写入外层的 JspWriter，它可以这样做，如下所示
+- **JSP** 脚本小程序、表达式和模板HTML按常规进行评估。如果body作用域内有任何其他自定�标签，它们也会被评估，与在页面其他地方使用时相同。如果其中任何一个具有实现BodyTag的标签处理器，则该过程会递归执行——当前的BodyContent被推入堆栈，新的BodyContent被分配给内部标签，依此类推。
+
+- **tagdependent** body的内容被逐字写入BodyContent。脚本小程序和表达式以其原始的JSP源代码形式出现，而不是由JSP容器解释。
+
+处理完body后，servlet调用标签处理器的doAfterBody()方法。如果标签处理器此时想将其body内容写入外层的JspWriter，它可以这样做，如下所示
 
 ```
 JspWriter out = bodyContent.getEnclosingWriter();
@@ -5653,19 +6089,21 @@ bodyContent.writeOut(out);
 bodyContent.clear();
 ```
 
-如果 body 内容不是太大，等到 `doEndTag()` 再一次性写入 body 内容可能更容易。
+如果body内容不是太大，等到`doEndTag()`再一次性写入body内容可能更容易。
 
-`doAfterBody()` 方法可以返回两种可能的返回代码之一：
+`doAfterBody()`方法可以返回两种可能的返回代码之一：
 
 - `SKIP_BODY` 继续处理页面的其余部分。
-- `EVAL_BODY_TAG` 导致 body 被再次评估，然后再次调用 `doAfterBody()` 方法。这通常在处理数组或枚举时完成，在每次迭代中将数组或枚举中的下一个元素分配给一个脚本变量。
 
-当 `doAfterBody()` 最终返回 `SKIP_BODY` 时，循环（如果有）退出。此时 body 内容已完成，因此创建它的过程被反转：
+- `EVAL_BODY_TAG` 导致body被再次评估，然后再次调用`doAfterBody()`方法。这通常在处理数组或枚举时完成，在每次迭代中将数组或枚举中的下一个元素分配给一个脚本变量。
 
-1. 调用 `pageContext.popBody()` 检索紧邻的上一个 JspWriter。
-2. 将该 writer 重新分配回 `out` 脚本变量。
+当`doAfterBody()`最终返回`SKIP_BODY`时，循环（如果有）退出。此时body内容已完成，因此创建它的过程被反转：
 
-最后，调用 `doEndTag()` 方法，允许标签处理器将其内容发送回输出流。此时，`pageContext.getOut()` 指向原始的 writer，即在处理标签之前存在的那个 writer。但是，body 内容在 protected `bodyContent` 变量中仍然可用。可以如下将其写入 servlet 输出流
+1. 调用`pageContext.popBody()`检索紧邻的上一个JspWriter。
+
+2. 将该writer重新分配回`out`脚本变量。
+
+最后，调用`doEndTag()`方法，允许标签处理器将其内容发送回输出流。此时，`pageContext.getOut()`指向原始的writer，即在处理标签之前存在的那个writer。但是，body内容在protected`bodyContent`变量中仍然可用。可以如下将其写入servlet输出流
 
 ```
 JspWriter out = pageContext.getOut();
@@ -5678,41 +6116,42 @@ out.println(bodyContent.getString());
 bodyContent.writeOut(pageContext.getOut());
 ```
 
-`doEndTag()` 应返回 `SKIP_PAGE`（导致 JSP 页面的其余部分被忽略）或 `EVAL_PAGE`（导致页面按常规进行评估）。
+`doEndTag()`应返回`SKIP_PAGE`（导致JSP页面的其余部分被忽略）或`EVAL_PAGE`（导致页面按常规进行评估）。
 
-在我们可以给出一个 body 标签的生成代码详细示例之前，我们首先需要了解标签处理器如何与脚本变量交互。
+在我们可以给出一个body标签的生成代码详细示例之前，我们首先需要了解标签处理器如何与脚本变量交互。
 
 ## 定义脚本变量
 
-JSP 页面作者熟悉脚本变量——这些通常是在脚本小程序或 `<jsp:useBean>` 操作中定义的 Java 变量。例如，在以下代码开头的脚本小程序中，
+JSP页面作者熟悉脚本变量——这些通常是在脚本小程序或`<jsp:useBean>`操作中定义的Java变量。例如，在以下代码开头的脚本小程序中，
 
 ```
 <%
     String[] flavors = {"Chocolate", "Strawberry", "Vanilla"};
     for (int i = 0; i < flavors.length; i++) {
 %>
-<LI>Flavor <%= i %> is <%= flavors[i] %>
+<LI>Flavor<%=i%>is<%=flavors[i]%>
 <%
     }
 %>
 ```
 
-定义了整数变量 i 和字符串数组变量 flavors，它们随后可供页面上的其他脚本小程序和表达式使用。同样，在这个 JSP 页面中，
+定义了整数变量i和字符串数组变量flavors，它们随后可供页面上的其他脚本小程序和表达式使用。同样，在这个JSP页面中，
 
 ```
 <jsp:useBean id="m1" class="Meteor"/>
 <jsp:setProperty name="m1"
                  property="bane"
                  value="The atmosphere"/>
-Ahhhh! <%= m1.getBane() %>! Ahhhh!
+Ahhhh!<%=m1.getBane()%>!Ahhhh!
 ```
 
-`<jsp:useBean>` 操作导致定义一个名为 m1 的 Meteor 类变量。这被后续的 `<jsp:setProperty>` 操作使用，并可供最后一行的表达式使用。
-自定义标签也可以在其标签处理器中定义脚本变量，并且与前面的示例类似，这些变量随后可供同一页面上的脚本小程序、表达式和其他标签使用。定义此类变量的机制是 TagExtraInfo 类。
+`<jsp:useBean>`操作导致定义一个名为m1的Meteor类变量。这被后续的`<jsp:setProperty>`操作使用，并可供最后一行的表达式使用。
 
-## TagExtraInfo 类
+自定义标签也可以在其标签处理器中定义脚本变量，并且与前面的示例类似，这些变量随后可供同一页面上的脚本小程序、表达式和其他标签使用。定义此类变量的机制是TagExtraInfo类。
 
-需要定义变量或对其属性执行验证的标签需要定义一个扩展 TagExtraInfo 类的类。此子类在 TLD 中与自定义标签关联：
+## TagExtraInfo类
+
+需要定义变量或对其属性执行验证的标签需要定义一个扩展TagExtraInfo类的类。此子类在TLD中与自定义标签关联：
 
 ```
 <tag>
@@ -5723,37 +6162,45 @@ Ahhhh! <%= m1.getBane() %>! Ahhhh!
 </tag>
 ```
 
-TEI 在 JSP 翻译阶段发挥作用。当 JSP 解析器读取 taglib 指令时，它会从 TLD 加载每个标签的关联标签和 TEI 类名。然后，在解析标签时，会调用其 TEI 中的方法来获取信息。
+TEI在JSP翻译阶段发挥作用。当JSP解析器读取taglib指令时，它会从TLD加载每个标签的关联标签和TEI类名。然后，在解析标签时，会调用其TEI中的方法来获取信息。
 
+## 表11-6. TagExtraInfo类
 
+关于脚本变量和验证。通过在TEI子类中重写这些方法，标签作者可以创建变量并验证标签属性是否有效。表11-6列出了`TagExtraInfo`类中可用的方法。
 
-## 表11-6. TagExtraInfo 类
-
-关于脚本变量和验证。通过在TEI子类中重写这些方法，标签作者可以创建变量并验证标签属性是否有效。表11-6列出了 `TagExtraInfo` 类中可用的方法。
-
-主要关注的方法是 `getVariableInfo()`。此方法在页面翻译时由JSP解析器调用，预期返回一个 `VariableInfo` 对象数组。`VariableInfo` 本质上是一个只有四个字段的数据结构：
+主要关注的方法是`getVariableInfo()`。此方法在页面翻译时由JSP解析器调用，预期返回一个`VariableInfo`对象数组。`VariableInfo`本质上是一个只有四个字段的数据结构：
 
 - **varName**：要创建的变量的名称。
+
 - **className**：变量类的完全限定名。
+
 - **declare**：一个布尔变量，如果JSP解析器应该为该变量创建实际定义（而不是假设该类的变量已在servlet中预先定义），则为true。
+
 - **scope**：一个整数，指示变量应被定义（或视为活动）的时机点。
 
 | 方法 | 描述 |
+
 |---|---|
-| `public VariableInfo[] getVariableInfo(TagData data)` | 基于 `data` 参数中的属性名和值列表，构建一个 `VariableInfo` 对象数组，该数组描述了要创建的每个脚本变量的名称、类型、存在性和作用域。 |
-| `public boolean isValid(TagData data)` | 在页面翻译时由JSP解析器调用。给定属性名和值列表，该方法可以单独验证它们以及相互组合验证。如果属性有效则返回 `true`，否则返回 `false`。默认实现简单返回 `true`。 |
-| `public void setTagInfo(TagInfo info)` | 设置此类使用的 `TagInfo` 对象。 |
-| `public TagInfo getTagInfo()` | 返回此类使用的 `TagInfo` 对象。 |
 
-作用域有三个可能的值，每个值由 `VariableInfo` 中定义的一个常量表示：
+| `public VariableInfo[] getVariableInfo(TagData data)` | 基于`data`参数中的属性名和值列表，构建一个`VariableInfo`对象数组，该数组描述了要创建的每个脚本变量的名称、类型、存在性和作用域。 |
 
-- **AT_BEGIN** 变量在遇到开始标签时定义，并在页面剩余部分保持可见。例如，这是 `<jsp:useBean>` 定义的 `id` 变量的可见性。
+| `public boolean isValid(TagData data)` | 在页面翻译时由JSP解析器调用。给定属性名和值列表，该方法可以单独验证它们以及相互组合验证。如果属性有效则返回`true`，否则返回`false`。默认实现简单返回`true`。 |
+
+| `public void setTagInfo(TagInfo info)` | 设置此类使用的`TagInfo`对象。 |
+
+| `public TagInfo getTagInfo()` | 返回此类使用的`TagInfo`对象。 |
+
+作用域有三个可能的值，每个值由`VariableInfo`中定义的一个常量表示：
+
+- **AT_BEGIN** 变量在遇到开始标签时定义，并在页面剩余部分保持可见。例如，这是`<jsp:useBean>`定义的`id`变量的可见性。
+
 - **AT_END** 变量在结束标签之后定义，并在页面剩余部分保持可见。
+
 - **NESTED** 变量仅在标签主体的作用域内定义。
 
-## 示例：enumerate 标签
+## 示例：enumerate标签
 
-为了说明TEI类的用法，我们开发一个名为 `enumerate` 的标签，它遍历一个 `java.util.Enumeration`，使其中的每个元素依次在标签主体中作为脚本变量可用。以下是该标签的TLD定义：
+为了说明TEI类的用法，我们开发一个名为`enumerate`的标签，它遍历一个`java.util.Enumeration`，使其中的每个元素依次在标签主体中作为脚本变量可用。以下是该标签的TLD定义：
 
 ```
 <tag>
@@ -5772,7 +6219,7 @@ TEI 在 JSP 翻译阶段发挥作用。当 JSP 解析器读取 taglib 指令时�
 </tag>
 ```
 
-该标签接受一个名为 `enumeration` 的必需属性。此属性的类型是 `java.util.Enumeration`，因此其值必须通过请求时表达式提供。标签处理器使用 `Enumeration.hasMoreElements()` 和 `nextElement()` 方法处理实际的迭代：
+该标签接受一个名为`enumeration`的必需属性。此属性的类型是`java.util.Enumeration`，因此其值必须通过请求时表达式提供。标签处理器使用`Enumeration.hasMoreElements()`和`nextElement()`方法处理实际的迭代：
 
 ```
 package jspcr.taglib.util;
@@ -5787,7 +6234,7 @@ import java.util.*;
  */
 public class EnumerateTag extends BodyTagSupport
 {
-    // Enumeration attribute
+    // Enumeration属性
 
     private Enumeration list;
     public void setEnumeration(Enumeration list)
@@ -5847,7 +6294,7 @@ public class EnumerateTag extends BodyTagSupport
 }
 ```
 
-请注意，当枚举的每个元素被处理时，它以 `element` 作为名称存储在页面上下文中。
+请注意，当枚举的每个元素被处理时，它以`element`作为名称存储在页面上下文中。
 
 为了使当前元素作为脚本变量可用，我们使用一个TEI类：
 
@@ -5876,14 +6323,17 @@ public class EnumerateTEI extends TagExtraInfo
 }
 ```
 
-这种情况下，`getVariableInfo()` 方法返回一个长度为1的数组，其中包含一个用于所需脚本变量的 `VariableInfo` 对象。构造函数声明：
+这种情况下，`getVariableInfo()`方法返回一个长度为1的数组，其中包含一个用于所需脚本变量的`VariableInfo`对象。构造函数声明：
 
-- 变量名应为 `element`。
-- 它的类应为 `java.lang.Object`。
+- 变量名应为`element`。
+
+- 它的类应为`java.lang.Object`。
+
 - JSP解析器应该为该变量生成一个声明。
+
 - 变量应在主体评估期间对JSP页面可见，但之后不可见。
 
-以下 `EnumTest.jsp` 页面展示了该标签的实际使用：
+以下`EnumTest.jsp`页面展示了该标签的实际使用：
 
 ```
 <%@ page session="false" %>
@@ -5914,17 +6364,17 @@ public class EnumerateTEI extends TagExtraInfo
     String description = flavors.getProperty((String) element);
 %>
 <TR>
-    <TD><%= element %></TD>
-    <TD><%= description %></TD>
+    <TD><%=element%></TD>
+    <TD><%=description%></TD>
 </TR>
 </util:enumerate>
 
 </TABLE>
 ```
 
-`enumerate` 标签出现在文件末尾附近。其值从 `flavors.propertyNames()` 返回的 `java.util.Enumeration` 中赋值。请注意，`element` 变量没有可见的声明——它是一个具有固定名称的隐式变量，类似于JSP环境中随处定义的 `request`、`response`、`session` 等隐式变量。该页面使用了 `element` 两次：一次在脚本段中，用于获取属性值；一次在JSP表达式中，其字符串值在HTML表格中打印。
+`enumerate`标签出现在文件末尾附近。其值从`flavors.propertyNames()`返回的`java.util.Enumeration`中赋值。请注意，`element`变量没有可见的声明——它是一个具有固定名称的隐式变量，类似于JSP环境中随处定义的`request`、`response`、`session`等隐式变量。该页面使用了`element`两次：一次在脚本段中，用于获取属性值；一次在JSP表达式中，其字符串值在HTML表格中打印。
 
-让我们检查一下JRun为 `enumerate` 标签生成的servlet代码。将其与图11-4中所示的流程图进行比较会很有帮助。
+让我们检查一下JRun为`enumerate`标签生成的servlet代码。将其与图11-4中所示的流程图进行比较会很有帮助。
 
 ```
 EnumerateTag enumTag = (EnumerateTag)
@@ -5933,18 +6383,16 @@ EnumerateTag enumTag = (EnumerateTag)
 
 enumTag.setPageContext(pageContext);
 enumTag.setParent(null);
-enumTag.setEnumeration( flavors.propertyNames() );
+enumTag.setEnumeration(flavors.propertyNames());
 ```
 
-JSP页面通过以下方式指定了 `enumeration` 属性的值：
+JSP页面通过以下方式指定了`enumeration`属性的值：
 
 ```
-enumeration="<%= flavors.propertyNames() %>"
+enumeration="<%=flavors.propertyNames()%>"
 ```
 
-这通过调用其 `setEnumeration()` 方法传递给标签处理器。接下来，生成的servlet调用 `doStartTag()` 并检查其返回码。回想一下，`doStartTag()` 读取枚举的第一个元素，并通过 `setAttribute("element", list.nextElement())` 将其存储在页面上下文中。
-
-
+这通过调用其`setEnumeration()`方法传递给标签处理器。接下来，生成的servlet调用`doStartTag()`并检查其返回码。回想一下，`doStartTag()`读取枚举的第一个元素，并通过`setAttribute("element", list.nextElement())`将其存储在页面上下文中。
 
 ```
 int rc = enumTag.doStartTag();
@@ -6000,17 +6448,22 @@ if (enumTag.doEndTag() == Tag.SKIP_PAGE) {
 }
 ```
 
-最后，在枚举耗尽后，`doAfterBody()`返回`SKIP_BODY`，循环终止。先前的`JspWriter`从堆栈中弹出，`doEndTag()`输出如图11-5所示的结果。
+最后，在枚举耗尽后，`doAfterBody()`返回`SKIP_BODY`，循环终止。先前的JspWriter从堆栈中弹出，`doEndTag()`输出如图11-5所示的结果。
 
 ## 同步脚本变量
 
 当在TEI中定义脚本变量时，JSP容器不仅生成用于定义变量的servlet代码，还会生成用于在标签处理器内与其值同步的代码。回想一下，标签处理器使用`pageContext.setAttribute()`来分配期望的值。生成的servlet代码有对应的`pageContext.getAttribute()`语句，在标签生命周期的每个“do”方法之后将值赋给脚本变量。哪些变量以这种方式更新取决于它们在TEI中定义的范围。表11-7描述了赋值情况：
 
 | 方法 | 同步变量的范围 |
+
 |---|---|
+
 | `doStartTag()` | AT_BEGIN, NESTED |
+
 | `doInitBody()` | AT_BEGIN, NESTED |
+
 | `doAfterBody()` | AT_BEGIN, NESTED |
+
 | `doEndTag()` | AT_BEGIN, NESTED, AT_END |
 
 表11-7. 脚本变量的范围如何影响同步
@@ -6024,10 +6477,15 @@ if (enumTag.doEndTag() == Tag.SKIP_PAGE) {
 然而，`isValid()`方法的一个缺点是，没有明显的方法来发出有意义的错误消息。要么整个标签有效，要么无效。
 
 | 方法 | 描述 |
+
 | --- | --- |
+
 | `public String getId()` | 返回ID属性的名称（如果已指定）。 |
+
 | `public Object getAttribute(String name)` | 给定一个属性名，返回属性值作为对象。如果属性的值在转换时未知（即，它是通过请求时表达式指定的），此方法返回`TagData.REQUEST_TIME_VALUE`。 |
+
 | `public String getAttributeString(String name)` | 给定一个属性名，尽可能将属性值作为`java.lang.String`返回。 |
+
 | `public Enumeration getAttributes()` | 返回标签属性名的枚举。与`getAttribute()`结合使用，可以遍历所有属性/值对的列表。 |
 
 表11-8. TagData中的一些有用方法
@@ -6051,10 +6509,12 @@ if (ot == null)
 
 ### 示例：switch标签
 
-我们可以使用语法作用域来模拟Java语言的`switch` . . . `case`结构。我们需要三个标签：
+我们可以使用语法作用域来模拟Java语言的`switch`...`case`结构。我们需要三个标签：
 
 -   **switch** 外部标签，其正文定义了switch逻辑的范围。此标签有一个`value`属性，用于定义要测试的条件，并确定应执行哪个case块。
+
 -   **case** 代表一个可能的case块的标签。我们将给它两个属性：一个用于指定要匹配的确切值，另一个用于指定子字符串。第三个属性指定比较是否区分大小写。我们使用TEI类的`isValid()`方法来验证只指定了前两个属性中的一个。
+
 -   **default** 如果其他case块都不成功，则要执行的块。
 
 以下是我们需要的TLD条目：
@@ -6132,34 +6592,47 @@ public class SwitchTag extends TagSupport
 {
     // The value attribute.  This is the text that
     // case statements will compare to.
-```
+
+    private String value;
+
+    public void setValue(String value)
+        { this.value = value; }
+
+    public String getValue()
+        { return value; }
+
+    // 一个标志，用于指示switch语句
+    // 是否已完成。当某个case
+    // 语句匹配该值并被执行时，即为完成。
+
+    private boolean complete;
+
+    public void setComplete(boolean complete)
+        {this.complete = complete; }
+}
 
 
 
-private String value;
-public void setValue(String value)
-    { this.value = value; }
-public String getValue()
-    { return value; }
-
-// 一个标志，用于指示 switch 语句
-// 是否已完成。当某个 case
-// 语句匹配该值并被执行时，即为完成。
-
-private boolean complete;
-public void setComplete(boolean complete)
-    {this.complete = complete; }
 public boolean isComplete()
+
     { return complete; }
 
 /**
+
  * 不需要真正的设置。此方法
+
  * 只需要返回 EVAL_BODY_INCLUDE
+
  */
+
 public int doStartTag() throws JspException
+
 {
+
     return EVAL_BODY_INCLUDE;
+
 }
+
 }
 
 `case` 标签也相当简单。它通过 `findAncestorWithClass()` 查找其所属的 `switch` 标签。`case` 标签首先调用 `switch` 标签的 `isComplete()` 方法，查看是否其他 `case` 已经声明了该 `switch`。如果是，则返回 `SKIP_BODY`，使其主体不被执行。否则，它调用 `switch` 标签的 `getValue()` 方法来检索要匹配的字符串。如果匹配成功，`case` 标签通过 `setComplete(true)` 声明该 `switch`，并返回 `EVAL_BODY_INCLUDE`。以下是标签处理程序的代码清单：
@@ -6400,8 +6873,11 @@ if (value == null)
 存在四个协作标签：
 
 - **connect**：打开数据库连接并管理隐式的 Statement 和 ResultSet 对象
+
 - **runQuery**：在标签主体中读取 SQL 语句，并告诉 `connect` 标签执行它
+
 - **forEachRow**：ResultSet 的迭代器
+
 - **getField**：检索命名字段的当前值
 
 ## 标签库描述符
@@ -6425,7 +6901,7 @@ if (value == null)
 </tag>
 ```
 
-`connect` 标签打开一个连接并管理一个 Statement 和 ResultSet 对象。它们不会作为脚本变量暴露；只能通过此库中的其他标签访问。连接在遇到结束标签时关闭。语法是
+`connect` 标签打开一个连接并管理一个 Statement 和 ResultSet 对象。它们不会作为脚本变量暴露；只能通过此库中的其他标标签访问。连接在遇到结束标签时关闭。语法是
 
 ```
 <db:connect url="mydatabase">
@@ -6447,8 +6923,6 @@ if (value == null)
 ```
 <db:runQuery>sql statement</db:runQuery>
 ```
-
-
 
 ## 标签处理器
 
@@ -6612,7 +7086,9 @@ public int doEndTag() throws JspException
 runQuery 标签做三件事：
 
 - 从其主体中提取 SQL 语句。
+
 - 查找外层的 connect 标签。
+
 - 执行 `connect.runQuery()` 方法。
 
 源代码如下：
@@ -6791,8 +7267,6 @@ public class GetFieldTag extends TagSupport
     {
 ```
 
-
-
 ## 获取外围的 Connect 标签
 
 ```java
@@ -6860,14 +7334,19 @@ return SKIP_BODY;
 HTML 提供了一组基本的元素或输入控件，可以适应广泛的数据输入需求。这组元素包括：
 
 - **文本输入元素** - 用于单行或多行输入的矩形框。
+
 - **选择菜单** - 以下拉列表框形式显示的选项列表。这些列表可以有一个显示在屏幕上的外部形式，以及一个与所选项关联的内部代码值。
 
 ![图 12-1](img/7a2f73369bb140583c7288b73456addb_288_0.png)
 
 - **按钮** - 模拟控制面板上按钮的矩形控件。它们最常用于发起命令，例如提交表单或清除输入字段。
+
 - **复选框** - 可勾选或未勾选、开或关的小方块。复选框可用于指定具有是或否值的选项。
-- **单选按钮** - 与复选框类似，单选按钮也表示是或否的值。然而，它们通常以互斥组的形式出现，因此选择一个会导致其他所有按钮取消选择。
+
+- **单选按钮** - 与复选框类似，单选按钮也表示是或否的值。然而，它们通常以互斥组的形式出现，因此选择一个会导致其他所有按�取消选择。
+
 - **文件选择元素** - 允许用户指定要上传文件名的控件。通常，此控件包含一个浏览按钮，点击后会弹出一个文件选择对话框。
+
 - **隐藏元素** - 用于创建具有恒定值的参数的不可见元素。
 
 可在 HTML 表单中使用的元素集是标准化的，并在 HTML 规范中正式记载（可在 http://www.w3.org/TR/html4/ 获取）。该规范是*万维网联盟* (W3C) 的工作成果，随着新功能的出现定期更新。正如预期的那样，并非所有浏览器都实现了所有功能。本章以 HTML 4.01 为基础来描述表单的工作原理，但主要介绍那些得到广泛支持的元素和属性。
@@ -6879,10 +7358,12 @@ HTML 提供了一组基本的元素或输入控件，可以适应广泛的数据
 FORM 元素是 HTML 表单背后的基本结构，主要有三个目的：
 
 - 在语法上将输入元素分组在一起
+
 - 标识处理表单处理的服务器端程序
+
 - 指定要发送的数据值及其格式
 
-FORM 元素在 HTML 中用 `<FORM>` 标签描述。此元素的语法如下所示：
+FORM 元素在 HTML 用 `<FORM>` 标签描述。此元素的语法如下所示：
 
 ```
 <FORM
@@ -6904,7 +7385,7 @@ FORM 元素在 HTML 中用 `<FORM>` 标签描述。此元素的语法如下所�
 
 ## action 属性
 
-当表单填写完成且用户点击提交按钮时，Web 浏览器会创建一个 HTTP 请求，将所有表单数据打包并将其发送到某个 Web 服务器上的程序。此程序在 `action` 属性中指定。
+当表单填写完成且用户点击提交按钮时，Web 浏览器会创建一个 HTTP 请将所有表单数据打包并将其发送到某个 Web 服务器上的程序。此程序在 `action` 属性中指定。
 
 `action` 属性的值必须是一个 HTTP *统一资源标识符* (URI)。（有关 URI 的正式定义，请参阅 http://www.ietf.org/rfc/rfc2396.txt。）这意味着它具有以下形式：
 
@@ -6918,13 +7399,14 @@ FORM 元素在 HTML 中用 `<FORM>` 标签描述。此元素的语法如下所�
 
 ## method 属性
 
-HTTP 协议提供了多种请求类型，用于文件传输、下载、删除和诊断操作。其中，只有 GET 和 POST 适用于 HTML 表单。`method` 属性就是指定此内容的地方。
+HTTP 协议提供了多种请请类型，用于文件传输、下载、删除和诊断操作。其中，只有 GET 和 POST 适用于 HTML 表单。`method` 属性就是指定此内容的地方。
 
 HTTP GET 或 POST 请求通常被 Web 服务器解释为检索 URI 中命名的文档的请求。当 Web 服务器被配置为处理 servlet、CGI 程序或其他服务器端脚本环境时，它会将对这些资源的请求解释为调用它们作为程序的请求。此类程序产生的输出（通常是 HTML 文档）会像按名称请求的静态文档一样，被发送回请求者。
 
 在 HTML 表单中使用时，GET 和 POST 方法的区别在于它们向服务器进程提供输入数据的方式：
 
 - **GET** - 表单值作为查询字符串附加到 URI
+
 - **POST** - 表单值在输入流中提供
 
 虽然两种方法都可以使用，并且 servlet API 使选择变得相当透明，但应考虑几个特性。因为 GET 请求导致输入值附加到请求 URI，所以它们在浏览器地址栏和 Web 服务器日志中作为名称/值对可见。这使得 GET 不适合发送敏感数据，如密码。此外，某些服务器和浏览器可能对其可以处理的 URL 长度有限制。另外，HTTP 规范将 GET 请求描述为*幂等的*，这意味着它们可以安全地重复而不会产生不良副作用。在某些情况下，这意味着服务器可以告诉客户端重用其现有的资源副本，而不是发送新副本。这通常不是你想要的对表单输入的响应。出于这些原因，POST 通常是请求方法更好的选择。
@@ -6936,20 +7418,21 @@ method 属性是可选的。如果未指定，则默认使用 GET。该属性的
 表单输入值可以通过几种不同的方式传输到服务器。将值编码为数据流的方法称为*内容类型*，并在使用 POST 方法时在 enctype 属性中指定。存在两种常用的编码方式：
 
 - application/x-www-form-urlencoded
+
 - multipart/form-data
 
 **application/x-www-form-urlencoded** - 如果未指定（通常如此），enctype 属性的值是 application/x-www-form-urlencoded。（有关 URL 编码的完整讨论，请参阅 RFC 1738，可在 http://www.freesoft.org/CIE/RFC/1738/index.htm 获取。）此编码技术涉及以下步骤：
 
 1. 将输入元素名称或值中的所有非空白特殊字符<sup>1</sup>替换为 %xx，其中 xx 是相应 ASCII 字符代码的两位十六进制值。
-2. 将任何空格替换为加号 (+)。
+
+2. 将任何空格替换为加号 (+）。
 
 > <sup>1</sup> 关于这些字符是什么存在一些分歧。RFC 1738 将它们描述为除 "$-_.+!*'()," 之外的任何非字母数字字符。然而，Internet Explorer、Netscape Navigator 和 java.net.URLEncoder 将排除项限制为仅为 "-_.*"。无论如何，由于编码和解码都是由达成一致的程序完成的，所以这并不是一个真正的问题。
-
-
 
 ## 266 JSP：完整参考
 
 3. 将每个结果名称和值对用等号 (=) 连接。
+
 4. 按表单中出现的顺序连接结果字符串，并用与号 (&) 分隔。
 
 服务器端进程通过反向执行每个步骤来解码，恢复原始的参数名称和值。
@@ -7095,14 +7578,18 @@ value="Mozilla/4.0 (compatible; MSIE 5.0; Windows NT; DigExt)">
 ```
 
 我们将在本节的示例中使用此表单。
+
 四组 HTML 标签用于创建表单输入元素：
 
 - `<INPUT>` 用于多种特定元素类型的通用标签。
-- `<SELECT>` 和 `<OPTION>` 用于创建菜单或下拉列表框。
+
+- `<SELECT>` 和 `<OPTION>` 用于创建一个可滚动的菜单项列表。
+
 - `<TEXTAREA>` 用于多行文本输入。
+
 - `<BUTTON>` 用于创建提交、重置和通用按钮。此标签尚未得到广泛支持，因此此处不作介绍。
 
-## 使用 INPUT 标签创建的元素
+## 使用 INPUT 标签创建的元器
 
 HTML INPUT 标签用于多种元素类型。它有大量属性，其中许多仅适用于特定字段类型。以下语法图描述了大多数类型通用的属性：
 
@@ -7118,8 +7605,11 @@ HTML INPUT 标签用于多种元素类型。它有大量属性，其中许多仅
 其中属性定义如下：
 
 - **type="type"** 指示要使用的特定字段类型。如果未指定，则默认为 text。
+
 - **name="name"** 用于为字段分配一个标识符，以便可以通过脚本或样式表进行操作。这也是服务器程序检索该字段的名称。
+
 - **value="value"** 可用于为字段分配初始值。
+
 - **size="size"** 指示其可视宽度，以像素或字符为单位（对于文本字段）。
 
 除了这些属性之外，INPUT 标签还可以指定事件处理程序，当发生特定事件时在浏览器中调用脚本操作。事件的值
@@ -7127,8 +7617,11 @@ HTML INPUT 标签用于多种元素类型。它有大量属性，其中许多仅
 handler 属性是一段脚本代码，通常是 JavaScript。事件处理程序属性以其处理的事件命名，并带有“on”前缀：
 
 - **onfocus** 在用户使用 Tab 键切换到该字段或在该字段内点击鼠标，使其获得键盘焦点时触发。
+
 - **onblur** 在用户使用 Tab 键切换出或点击出该字段，使其失去键盘焦点时触发。
+
 - **onselect** 在选中文本时触发（Netscape Navigator 不支持此事件）。
+
 - **onchange** 在用户更改控件的值，然后通过 Tab 键切换出或点击出该字段来提交更改时触发。
 
 当表单提交时，浏览器会提取每个控件的名称和值，根据 `<FORM>` 标签上指定（或隐含）的编码类型进行转换，并将生成的数据流发送到服务器进程。以下部分将介绍每种 `<INPUT>` 类型：
@@ -7149,9 +7642,13 @@ handler 属性是一段脚本代码，通常是 JavaScript。事件处理程序�
 各属性含义如下：
 
 - **type="text"** 表示这是一个文本控件。
+
 - **name="name"** 指定一个脚本可以引用此控件的名称。这也是服务器程序可以用来检索文本的名称。
+
 - **value="value"** 可用于分配初始文本值。当表单与表单处理程序的输出位于同一页面时，此属性很有用。
+
 - **size="size"** 指定显示宽度。如果未指定，浏览器会选择一个默认大小，这可能并不合适。最好指定一个首选大小。
+
 - **maxlength="maxlength"** 设置可以输入到字段中的字符数限制。
 
 TEXT 输入元素通常显示为一个矩形框。例如，此处的 HTML 代码，
@@ -7210,8 +7707,11 @@ TEXT 输入元素通常显示为一个矩形框。例如，此处的 HTML 代码
 各属性定义如下：
 
 - **type="checkbox"** 表示这是一个复选框控件。
+
 - **name="name"** 指定一个脚本可以引用此复选框的名称。这也是服务器程序可以用来检索复选框值的名称。如果一组复选框代表同一字段的多个值，且这些值不是互斥的，那么它们可以拥有相同的名称。
+
 - **value="value"** 可用于指定当此框被选中时返回的值。如果未指定，则默认为两个字符的字符串 `on`。（是 `on`，而不是 `true`、`1`、`yes` 或 `checked`。）
+
 - **checked**，如果存在，表示复选框具有初始选中状态。
 
 复选框支持一个额外的事件处理程序属性：
@@ -7237,7 +7737,9 @@ TEXT 输入元素通常显示为一个矩形框。例如，此处的 HTML 代码
 可能看起来像这样：
 
 请勾选所有适用的选项：
+
 ☑ 仅评论，无需回复
+
 ☑ 请将我加入您的邮件列表
 
 ## Radio
@@ -7255,8 +7757,11 @@ TEXT 输入元素通常显示为一个矩形框。例如，此处的 HTML 代码
 各属性定义如下：
 
 - **type="radio"** 表示这是一个单选按钮控件。
+
 - **name="name"** 指定一个脚本可以引用此单选按钮的名称。这也是服务器程序可以用来检索单选按钮值的名称。如果一组单选按钮代表同一字段的互斥值，那么它们可以拥有相同的名称。
+
 - **value="value"** 指定当此按钮处于选中状态时，随表单返回的值。这是一个必需属性。
+
 - **checked**，如果存在，表示此单选按钮是该组中初始选中的那个。
 
 与复选框一样，单选按钮支持 onclick 事件，但不支持 onchange。单选按钮通常渲染为一个小圆圈，内部有点或没有点，反映控件的布尔值。例如，此处的 HTML 代码，
@@ -7290,7 +7795,9 @@ TEXT 输入元素通常显示为一个矩形框。例如，此处的 HTML 代码
 各属性定义如下：
 
 - **type="submit"** 表示这是一个提交控件。
+
 - **name="name"** 指定一个脚本或服务器程序可以引用此提交按钮的名称。从服务器的角度来看，这通常是不必要的，因为很明显，一定是点击了提交按钮，否则表单就不会被提交。但是，如果表单中有几个提交按钮，并且每个按钮都有不同的值，那么这个属性就很有用。
+
 - **value="value"** 指定按钮上显示的值（如果也存在 `name` 属性，则随表单返回）。如果未指定，在 Internet Explorer 5.x 和 Netscape Communicator 4.75 中默认为“Submit Query”。其他浏览器可能会提供不同的默认值。
 
 此控件支持 onclick 事件，但不支持 onchange。提交按钮通常渲染为一个矩形按钮，其文本由 `value` 属性指定。例如，如果提交按钮像这样编码，
@@ -7298,8 +7805,6 @@ TEXT 输入元素通常显示为一个矩形框。例如，此处的 HTML 代码
 ```
 <input type="submit" value="Send">
 ```
-
-
 
 ## 重置
 
@@ -7314,9 +7819,11 @@ value="value">
 其属性定义如下：
 
 -   **type="reset"** 表示这是一个重置控件。
+
 -   **value="value"** 指定显示在按钮上的值（如果也存在 `name` 属性，则会随表单一起返回）。如果未指定，则默认为 "Reset"（重置）。
 
 此控件支持 `onclick` 事件，但不支持 `onchange`。
+
 重置按钮通常呈现为一个矩形按钮，其文本由 `value` 属性指定。例如，如果一个提交按钮像这样编码：
 
 ```
@@ -7341,7 +7848,9 @@ size="size">
 其属性定义如下：
 
 -   `type="file"` 表示这是一个文件控件。
+
 -   `name="name"` 指定脚本可以引用此文件控件的名称。这也将是服务器程序已知该字段的名称，尽管格式不同，你很快就会看到。
+
 -   `size="size"` 指定文件名输入字段的可视宽度。
 
 文件控件通常呈现为一个文本字段和一个关联的“浏览”按钮。文件名可以直接在文本字段中输入，或者用户可以单击该按钮使用文件选择对话框：
@@ -7351,6 +7860,7 @@ size="size">
 表单要使用文件控件，必须进行两项更改：
 
 -   请求方法*必须*是 POST。
+
 -   编码类型（在 `<FORM>` 标签的 `enctype` 属性中指定）*必须*是 multipart/form-data。
 
 如果这些条件不满足，控件仍然会显示，但会被当作普通的文本输入字段处理——只有文件名会被发送到服务器。
@@ -7464,7 +7974,9 @@ MThd... (binary data not shown)
 其属性含义如下：
 
 -   **type="hidden"** 表示这是一个隐藏控件。
+
 -   **name="name"** 指定脚本可以引用此控件的名称。这也是服务器程序可以用来检索该文本的名称。
+
 -   **value="value"** 必须用于分配一个初始文本值。
 
 正如你可能猜到的，隐藏字段没有可视表示。其唯一目的是创建一个具有常量值的参数。这可能是某种事务代码，分派 servlet 会将其用作其他类表的键。但更常见的情况是，隐藏字段的值是由创建 HTML 的 servlet 或 JSP 页面动态生成的。例如，
@@ -7493,12 +8005,12 @@ MThd... (binary data not shown)
 其属性含义如下：
 
 -   **type="image"** 表示这是一个图像控件。
+
 -   **name="name"** 指定脚本可以引用此控件的名称。这也是服务器程序可以用来检索鼠标点击位置的名称。
+
 -   **src="imageurl"** 是图像文件的 URL。
 
 对于图像控件，数据流中会创建两个参数，分别对应点击的 *x* 和 *y* 坐标。坐标以像素为单位给出，相对于图像的左上角 (0, 0)。参数名由图像控件名称加上 ".x" 或 ".y" 组成。例如，
-
-
 
 ## 按钮
 
@@ -7514,14 +8026,16 @@ MThd... (binary data not shown)
 其属性定义如下：
 
 - **type="button"** 指示这是一个按钮控件。
+
 - **name="name"** 指定一个名称，脚本可以通过该名称引用此按钮。
+
 - **value="value"** 指定显示在此按钮上的值。
 
 为了使此控件有用，必须定义 `onclick` 事件处理程序属性。然后，JavaScript 函数就可以通过按钮的名称和值来引用它。
 
 ## 由 select 和 option 创建的元素
 
-`select` 和 `option` 标签可以一起使用，以创建一个可滚动的菜单项列表。参考图 12-1 中的客户反馈示例，用户从一个下拉列表中选择表单的目的地。用于创建此列表的 HTML 如下所示：
+`select` 和 `option` 标签可以一起使用，以创建一个可滚动的菜单项列表。参考图 12-1 中的客户反馈示例，用户从一个下拉列表中选择表单的目的地。用用于创建此列表的 HTML 如下所示：
 
 ```
 <select name="to" size=1>
@@ -7545,8 +8059,10 @@ MThd... (binary data not shown)
 
 其中属性含义如下：
 
-- **name="name"** 分配一个名称，服务器程序可以通过该名称引用该列表。
+- **name="name"** 分配一个名称，服务器程序可以通过该名称引用该列列表。
+
 - **size="number"** 指示一次可见的元素数量；即列表框的高度。如果数字为 1，则该列表是一个下拉菜单。
+
 - **multiple**，如果指定，则允许用户选择多个项目。
 
 请注意，`<select>` 标签必须用 `</select>` 关闭。
@@ -7560,6 +8076,7 @@ MThd... (binary data not shown)
 其中
 
 - **value="value"** 指定如果选中此项目，则随表单返回的值。如果未指定此属性，则返回 option 标签的主体内容。
+
 - **selected**，如果存在，则预选该项目。
 
 开始和结束标签之间的文本（称为 *主体*）是实际显示在列表框中的内容。结束 `</option>` 标签不是必需的，并且经常被省略。当表单提交时，所选项目的值是与 `select` 元素关联的值。在前面的示例中，如果用户选择了列表中的最后一项，则数据流中返回的值将是：
@@ -7587,7 +8104,9 @@ to=FI&to=MK&to=SP
 其中
 
 - **name="name"** 分配此字段在脚本和服务器程序中已知的名称。
+
 - **rows="number"** 指定文本区域可见高度的行数。这*不是*列表框中实际行数的限制，它只是列表滚动时一次显示的行数限制。
+
 - **cols="number"** 指定文本区域可见宽度的字符数。这*不是*列表框中实际列数的限制，只是其显示宽度。
 
 ## 表单验证
@@ -7620,6 +8139,8 @@ to=FI&to=MK&to=SP
 
 第三步是编写验证函数本身：
 
+
+
 ```
 function validate(frm) {
     if (!hasData(frm.from.value)) {
@@ -7650,16 +8171,15 @@ function hasData(s) {
 
 这里展示了两个函数：
 
-- **validate(frm)** 给定表单的引用，执行所有必要的验证，如果没有发现错误则返回 true。
-- **hasData(s)** 一个实用函数，如果指定的字符串至少有一个非空白字符，则返回 true。
+- `validate(frm)` 给定表单的引用，执行所有必要的验证，如果没有发现错误则返回 true。
+
+- `hasData(s)` 一个实用函数，如果指定的字符串至少有一个非空白字符，则返回 true。
 
 你唯一能真正验证的字段是用户名。在这个例子中，你只需验证它非空。如果用户没有在该字段中输入任何内容，结果将如图 12-3 所示。
 
 ## 表单处理的服务器端
 
 服务器端处理表单有多种模型。第 19 章中的案例研究将深入探讨这个问题。为了说明目的，你开发了一个简单的 JSP 页面，该页面仅收集请求参数并将其格式化为
-
-
 
 ## 概要
 
@@ -7671,9 +8191,9 @@ HTML 表单提供了一个易于用户操作且便于服务器程序处理的图
 
 ## JDBC 概述
 
-JDBC 是 Java 程序和数据库管理系统之间的应用程序编程接口。类似于 Oracle 的 *Oracle 调用接口 (OCI)* 或 Microsoft 的 *开放数据库连接 (ODBC)*，JDBC 是一个调用级接口。这意味着程序使用方法或函数调用来访问其功能，这与由预编译器转换的嵌入式 SQL 语句相反。
+JDBC 是 Java 程序和数据库管理系统之间的应用程序编程接口。类似于 Oracle 的 `Oracle 调用接口 (OCI)` 或 Microsoft 的 `开放数据库连接 (ODBC)`，JDBC 是一个调用级接口。这意味着程序使用方法或函数调用来访问其功能，这与由预编译器转换的嵌入式 SQL 语句相反。
 
-程序员使用称为 *JDBC 驱动程序* 的 Java 类连接到数据库。存在数百种 JDBC 驱动程序——对于每种广泛使用的数据库（无论是商业软件还是共享软件）至少有一个。一种特殊的 JDBC 驱动程序，称为 *JDBC-ODBC 桥接器*，使得使用 ODBC 作为中间件成为可能，从而使大量 ODBC 驱动程序可以从 JDBC 使用。
+程序员使用称为 `JDBC 驱动程序` 的 Java 类连接到数据库。存在数百种 JDBC 驱动程序——对于每种广泛使用的数据库（无论是商业软件还是共享软件）至少有一个。一种特殊的 JDBC 驱动程序，称为 `JDBC-ODBC 桥接器`，使得使用 ODBC 作为中间件成为可能，从而使大量 ODBC 驱动程序可以从 JDBC 使用。
 
 JDBC 的巨大优势在于它为所有数据库管理系统提供了标准接口。在 Oracle 数据库上运行的 JDBC 查询，只需很少或无需更改即可在 DB2、SQL Server 或任何其他数据库上工作。剩下的少数差异通常与数据类型名称和对某些操作类型的支持有关。通常，甚至这些差异也可以使用 JDBC 连接提供的元数据以编程方式解决。
 
@@ -7684,11 +8204,15 @@ JDBC 还简化了从旧系统到支持 Web 的应用程序的过渡。自 1980 �
 使用 JDBC 并不困难。根据要执行的任务，通常只需要四个步骤：
 
 1.  为你的 DBMS 加载一个 JDBC 驱动程序。这通常只需要一个指定驱动程序类名的 `Class.forName()` 语句。
+
 2.  使用该驱动程序打开到特定数据库的连接。这是通过调用 `DriverManager` 类的静态 `getConnection(url)` 方法完成的。`url` 参数采用特定形式，指示驱动程序类型和要使用的数据源。
+
 3.  通过连接发布 SQL 语句。一旦连接建立，就可以用它来创建 `Statement` 对象，通过这些对象可以发出 SQL 命令。
+
 4.  处理 SQL 操作返回的结果集。`ResultSet` 接口提供了逐步遍历每一行并获取每列值的方法。
 
 图 13-1 说明了这四个步骤。
+
 在 JDBC 2.0 中，灵活性更高了。使用 *Java 命名和目录接口 (JNDI)*，应用程序可以通过名称从命名服务中查找 `DataSource` 对象，而不是硬编码驱动程序类名和数据库 URL。此外，JDBC 2.0 的结果集具有更多功能。它们可以按随机顺序访问，而不是从头到尾顺序访问。它们可以被更新，并且更新可以传播回基础表。它们还可以动态链接到其基础表，以便其中的更改同时反映在结果集中。图 13-2 展示了 JDBC 2.0 数据库访问涉及的基本步骤。
 
 ## 基本的 JDBC 类
@@ -7697,29 +8221,33 @@ JDBC 接口包含在 `java.sql` 和 `javax.sql` 包中。它主要由接口而�
 
 - **Connection** 一个到数据库的活动链接，Java 程序可以通过它读写数据，以及探索数据库结构和功能。
 
-    Connection 对象通过调用 DriverManager.getConnection() 或 JDBC 2.0 中的 DataSource.getConnection() 创建。
+    Connection 对象通过调用 `DriverManager.getConnection()` 或 JDBC 2.0 中的 `DataSource.getConnection()` 创建。
 
 - **Statement** 一个允许通过连接发送 SQL 语句并检索它们产生的结果集和更新计数的对象。
+
     存在三种类型的语句，每种都是其前一种的特化：
-    - **Statement** 用于执行静态 SQL 字符串。使用 Connection.createStatement() 创建。
-    - **PreparedStatement** Statement 的扩展，使用预编译的 SQL，可能包含动态设置的输入参数。PreparedStatement 对象通常在循环中与 SQL 插入操作一起使用。使用 Connection.prepareStatement(sqlstring) 创建。
-    - **CallableStatement** 一个调用存储过程的 PreparedStatement。并非所有数据库管理系统都支持存储过程，但对于支持的系统，CallableStatement 提供了标准的调用语法。
 
+    - **Statement** 用于执行静态 SQL 字符串。使用 `Connection.createStatement()` 创建。
 
+    - **PreparedStatement** `Statement` 的扩展，使用预编译的 SQL，可能包含动态设置的输入参数。`PreparedStatement` 对象通常在循环中与 SQL 插入操作一起使用。使用 `Connection.prepareStatement(sqlstring)` 创建。
 
-# JSP：完整参考手册
+    - **CallableStatement** 一个调用存储过程的 `PreparedStatement`。并非所有数据库管理系统都支持存储过程，但对于支持的系统，`CallableStatement` 提供了标准的调用语法。
 
--   **ResultSet**：由SQL查询或调用某些元数据函数产生的有序表格行集合。`ResultSet`最常作为`Statement.executeQuery(sqlstring)`方法调用的返回值遇到。JDBC API提供了`next()`方法用于遍历`ResultSet`的行，以及`getXXX()`方法用于提取列值，其中`XXX`是Java数据类型。JDBC 2.0添加了许多用于随机访问和更新行的方法。
--   **DatabaseMetaData**：一个包含众多方法的接口，这些方法提供关于数据库结构和能力的信息。`DatabaseMetaData`对象由`Connection`对象的`getMetaData()`方法返回。
--   **ResultSetMetaData**：一个描述`ResultSet`列的接口。可以通过调用结果集的`getMetaData()`方法获得。它包含描述列数以及每列名称、显示大小、数据类型和类名的方法。
--   **DriverManager**：一个注册JDBC驱动程序并提供能够处理特定JDBC URL连接的接口。唯一常用的方法是静态的`DriverManager.getConnection()`，它有三种形式，返回一个绑定到指定JDBC URL的活动`Connection`对象。
--   **SQLException**：JDBC API使用的基础异常类。`SQLException`具有可以提供`SQLState`值和任何供应商特定错误代码的方法。如果发生多个异常，它还可以链接到另一个`SQLException`。
+- **ResultSet**：由 SQL 查询或调用某些元数据函数产生的有序表格行集合。`ResultSet` 最常作为 `Statement.executeQuery(sqlstring)` 方法调用的返回值遇到。JDBC API 提供了 `next()` 方法用于遍历 `ResultSet` 的行，以及 `getXXX()` 方法用于提取列值，其中 `XXX` 是 Java 数据类型。JDBC 2.0 添加了许多用于随机访问和更新行的方法。
 
-JDBC API的一个既定目标是它应该简单且易于掌握。学习这七个类及其三到四个主要方法可以在几天内轻松完成，这使得JDBC成为一项流行且广为接受的技术。
+- **DatabaseMetaData**：一个包含众多方法的接口，这些方法提供关于数据库结构和能力的信息。`DatabaseMetaData` 对象由 `Connection` 对象的 `getMetaData()` 方法返回。
 
-# 一个简单的JSP示例
+- **ResultSetMetaData**：一个描述 `ResultSet` 列的接口。可以通过调用结果集的 `getMetaData()` 方法获得。它包含描述列数以及每列名称、显示大小、数据类型和类名的方法。
 
-让我们考虑一个在JSP页面中使用JDBC的示例。我们假设的LyricNote公司维护着一个内部员工数据库，其中包含两个表：`departments`和`employees`。这些表是用以下SQL创建的：
+- **DriverManager**：一个注册 JDBC 驱动程序并提供能够处理特定 JDBC URL 连接的接口。唯一常用的方法是静态的 `DriverManager.getConnection()`，它有三种形式，返回一个绑定到指定 JDBC URL 的活动 `Connection` 对象。
+
+- **SQLException**：JDBC API 使用的基础异常类。`SQLException` 具有可以提供 `SQLState` 值和任何供应商特定错误代码的方法。如果发生多个异常，它还可以链接到另一个 `SQLException`。
+
+JDBC API 的一个既定目标是它应该简单且易于掌握。学习这七个类及其三到四个主要方法可以在几天内轻松完成，这使得 JDBC 成为一项流行且广为接受的技术。
+
+# 一个简单的 JSP 示例
+
+让我们考虑一个在 JSP 页面中使用 JDBC 的示例。我们假设的 LyricNote 公司维护着一个内部员工数据库，其中包含两个表：`departments` 和 `employees`。这些表是用以下 SQL 创建的：
 
 ```
 CREATE TABLE departments (
@@ -7746,7 +8274,7 @@ CREATE TABLE employees (
 )
 ```
 
-我们的示例JSP页面显示一个部门列表，标明其经理的姓名、职位、电话号码和电子邮件地址。用于组合此列表的SQL如下所示：
+我们的示例 JSP 页面显示一个部门列表，标明其经理的姓名、职位、电话号码和电子邮件地址。用于组合此列表的 SQL 如下所示：
 
 ```
 SELECT   D.deptname, E.fname, E.lname, E.title, E.email, E.phone
@@ -7755,9 +8283,9 @@ WHERE    D.deptmgr = E.empno
 ORDER BY D.deptname
 ```
 
-D和E前缀是用于限定列名的伪表名，以便DBMS可以区分哪个表提供了哪个列。
+D 和 E 前缀是用于限定列名的伪表名，以便 DBMS 可以区分哪个表提供了哪个列。
 
-完整的JSP源代码如下
+完整的 JSP 源代码如下
 
 ```
 <%@ page session="false" %>
@@ -7833,6 +8361,7 @@ finally {
 ```
 
 让我们逐一检查每个部分。
+
 首先，有三个页面指令
 
 ```
@@ -7841,17 +8370,18 @@ finally {
 <%@ page import="java.util.*" %>
 ```
 
-我们明确请求不创建HTTP会话。这应在所有不需要访问会话的JSP页面中完成，因为它节省了建立和维护会话所需的服务器资源。
-在创建页面标题的HTML之后，一个脚本段查询LyricNote内部数据库并显示结果。它以两个字符串常量的声明开始，定义JDBC驱动程序名称和数据库URL。为方便起见，将这些信息隔离在声明部分以便于修改：
+我们明确请求不创建 HTTP 会话。这应在所有不需要访问会话的 JSP 页面中完成，因为它节省了建立和维护会话所需的服务器资源。
+
+在创建页面标题的 HTML 之后，一个脚本段查询 LyricNote 内部数据库并显示结果。它以两个字符串常量的声明开始，定义 JDBC 驱动程序名称和数据库 URL。为方便起见，将这些信息隔离在声明部分以便于修改：
 
 ```
 String DRIVER = "org.enhydra.instantdb.jdbc.idbDriver";
 String URL = "jdbc:idb:d:/lyricnote/WEB-INF/database/internal/db.prp";
 ```
 
-此示例使用InstantDB<sup>4</sup>数据库并连接到LyricNote内部数据库，其属性文件为db.prp。
+此示例使用 InstantDB<sup>4</sup> 数据库并连接到 LyricNote 内部数据库，其属性文件为 db.prp。
 
-> 4 *InstantDB*是一个免费的、纯Java的关系型DBMS，可从http://instantdb.enhydra.org/index.html获取。InstantDB具有许多高级特性并支持JDBC 2.0。
+> 4 *InstantDB* 是一个免费的、纯 Java 的关系型 DBMS，可从 http://instantdb.enhydra.org/index.html 获取。InstantDB 具有许多高级特性并支持 JDBC 2.0。
 
 实际工作从下一条语句开始：
 
@@ -7862,9 +8392,9 @@ try {
     con = DriverManager.getConnection(URL);
 ```
 
-Class.forName()调用导致JDBC驱动程序类被加载。根据JDBC规范，驱动程序应包含一个静态初始化部分，该部分创建实例并注册到驱动程序管理器。一些较旧的驱动程序未能做到这一点，在这种情况下，需要调用驱动程序类的newInstance()方法。DriverManager类通过其静态getConnection()方法的调用提供实际的连接。
+Class.forName() 调用导致 JDBC 驱动程序类被加载。根据 JDBC 规范，驱动程序应包含一个静态初始化部分，该部分创建实例并注册到驱动程序管理器。一些较旧的驱动程序未能做到这一点，在这种情况下，需要调用驱动程序类的 newInstance() 方法。DriverManager 类通过其静态 getConnection() 方法的调用提供实际的连接。
 
-请注意，持有连接引用的con变量被声明并赋值为null值。然后页面的其余部分包含在try { ... }块中，后面跟着
+请注意，持有连接引用的 con 变量被声明并赋值为 null 值。然后页面的其余部分包含在 try { ... } 块中，后面跟着
 
 ```
 finally {
@@ -7874,9 +8404,9 @@ finally {
 }
 ```
 
-这样做的原因是，一旦打开，连接就需要关闭，无论是否发生任何错误或抛出异常。这可以通过finally { ... }块来保证。包含catch块是不必要的；在我们的例子中，默认的异常处理程序已经足够好。
+这样做的原因是，一旦打开，连接就需要关闭，无论是否发生任何错误或抛出异常。这可以通过 finally { ... } 块来保证。包含 catch 块是不必要的；在我们的例子中，默认的异常处理程序已经足够好。
 
-一旦连接建立，就可以运行SQL查询了。为此，我们调用Connection对象的createStatement()方法来获得Statement对象，然后可以调用它的executeQuery()方法。
+一旦连接建立，就可以运行 SQL 查询了。为此，我们调用 Connection 对象的 createStatement() 方法来获得 Statement 对象，然后可以调用它的 executeQuery() 方法。
 
 ```
 String sql = ""
@@ -7891,7 +8421,7 @@ Statement stmt = con.createStatement();
 ResultSet rs = stmt.executeQuery(sql);
 ```
 
-executeQuery()返回一个ResultSet。我们的代码通过在一个循环中调用其next()方法来简单读取此集合的每一行：
+executeQuery() 返回一个 ResultSet。我们的代码通过在一个循环中调用其 next() 方法来简单读取此集合的每一行：
 
 ```
 while (rs.next()) {
@@ -7912,8 +8442,9 @@ while (rs.next()) {
 }
 ```
 
-在循环内部，我们使用ResultSet.getString(columnNumber)方法提取每一列的值，然后格式化并打印部门名称、经理姓名、职位、电话号码和电子邮件行。
-最后，我们关闭所有创建的JDBC对象，并将它们的引用设置为null，以便它们可以被垃圾回收。
+在循环内部，我们使用 ResultSet.getString(columnNumber) 方法提取每一列的值，然后格式化并打印部门名称、经理姓名、职位、电话号码和电子邮件行。
+
+最后，我们关闭所有创建的 JDBC 对象，并将它们的引用设置为 null，以便它们可以被垃圾回收。
 
 ```
 rs.close();
@@ -7923,18 +8454,13 @@ stmt.close();
 stmt = null;
 ```
 
-Connection对象在前面讨论的finally { ... }块中关闭。
-最终成品如图13-3所示。
+Connection 对象在前面讨论的 finally { ... } 块中关闭。
 
-# JDBC驱动程序
+最终成品如图 13-3 所示。
 
-为了将程序与特定数据库协议的细节隔离开来，JDBC使用了一个由DriverManager类和一个或多个JDBC驱动程序组成的中间层。*驱动程序*是一个Java类，通常由数据库供应商提供，它实现了`java.sql.Driver`接口。驱动程序的主要功能是连接到数据库并返回一个`java.sql.Connection`对象。
+# JDBC 驱动程序
 
-
-
-![](img/7a2f73369bb140583c7288b73456addb_328_0.png)
-
-**图 13-3.** 简单的 JDBC 示例的输出
+为了将程序与特定数据库协议的细节隔离开来，JDBC 使用了一个由 DriverManager 类和一个或多个 JDBC 驱动程序组成的中间层。*驱动程序*是一个 Java 类，通常由数据库供应商提供，它实现了 `java.sql.Driver` 接口。驱动程序的主要功能是连接到数据库并返回一个 `java.sql.Connection` 对象。
 
 应用程序不会直接调用驱动程序。相反，它们会注册到驱动程序管理器中，由该管理器确定适用于特定连接请求的驱动程序，并通过它进行连接。目前有数百种 JDBC 驱动程序，几乎覆盖了所有的数据库管理系统。其中大多数都可以从供应商网站下载。一个可搜索的列表可以在 http://industry.java.sun.com/products/jdbc/drivers 找到。下一节将讨论四种 JDBC 驱动程序类型、JDBC-ODBC 桥接这一特殊情况，以及注册驱动程序的机制。
 
@@ -7943,8 +8469,11 @@ Connection对象在前面讨论的finally { ... }块中关闭。
 JDBC 规范根据驱动程序的架构将其分为四种类型。这些类型是：
 
 - **类型 1——JDBC-ODBC 桥接** 此类驱动程序通过中间 ODBC 驱动程序连接到数据库。这种方法涉及几个缺点，因此 Sun 将其描述为实验性的，仅在没有其他驱动程序可用时使用。Microsoft 和 Sun 都提供类型 1 驱动程序。
+
 - **类型 2——部分为 Java 的本机 API** 类似于 JDBC-ODBC 桥接，类型 2 驱动程序使用本机方法调用供应商特定的 API 函数。这些驱动程序也受到与 JDBC-ODBC 桥接相同的限制，即它们需要在客户端系统上安装本机库文件，并且必须进行配置才能使用。
-- **类型 3——纯 Java 到数据库中间件** 类型 3 驱动程序使用网络协议与中间件服务器通信，而中间件服务器又与一个或多个数据库管理系统通信。
+
+- **类型 3——纯 Java 到数据库中间件** 类型 3 驱动程序使用网络协议与中间件服务器通信，而中间件服务器又与一个或多个数据库管理系统通通信。
+
 - **类型 4——纯 Java 直接到数据库** 此类驱动程序直接调用数据库管理系统使用的本机协议。
 
 四种驱动程序类型的架构如图 13-4 所示。
@@ -7955,17 +8484,13 @@ JDBC 规范根据驱动程序的架构将其分为四种类型。这些类型是
 
 类型 1 的 JDBC-ODBC 桥接驱动程序需要特别考虑。正如我们所看到的，使用它涉及几个问题。首先，JDBC-ODBC 桥接驱动程序受限于底层 ODBC 驱动程序的功能，而后者是单线程的，因此在高负载下性能可能不佳。此外，它需要在客户端系统上安装本机代码库 `JdbcOdbc.dll`。最后，要发挥任何作用，JDBC-ODBC 桥接驱动程序都需要配置一个 ODBC 数据源。这些限制使其不适合用于外部互联网上的小程序。Sun 建议，只有在没有其他 JDBC 驱动程序可用的情况下，才应出于实验目的使用桥接。
 
-![](img/7a2f73369bb140583c7288b73456addb_330_0.png)
-
 另一方面，JDBC-ODBC 桥接提供了几个显著的优势。由于 JSP 页面不在小程序环境中运行，因此它们没有这些限制。ODBC 得到了广泛支持，因此使用桥接可以访问各种已配置数据源的现有系统。同样，支持 ODBC 的数据库产品，如 Microsoft Access 和 FoxBase，也广泛可用。这些特性使 JDBC-ODBC 桥接成为低流量 Web 应用程序的良好选择，并且是学习 JDBC 的有用工具。
 
 要在 Java 应用程序中使用 JDBC-ODBC 桥接，必须配置一个合适的 ODBC 数据源。在 Windows 系统上，这通过控制面板 ODBC 数据源应用程序完成。数据源应配置为系统 DSN，而不是用户 DSN，因为 JSP 引擎通常在系统用户配置文件下运行。如果使用的是 Sun JVM，则驱动程序类名为 `sun.jdbc.odbc.JdbcOdbcDriver`；如果使用的是 Microsoft 虚拟机，则为 `com.ms.jdbc.odbc.JdbcOdbcDriver`。在 `getConnection()` 语句中使用的数据库 URL 是 `jdbc:odbc:dsn`，其中 `dsn` 是数据源名称。
 
 Microsoft 为其 Access 数据库产品以及 dBase、Excel、FoxPro 和许多其他产品（包括一个可以将普通文本文件（.txt 和 .csv）用作简单数据库系统的文本驱动程序）提供 ODBC 驱动程序。
 
-## 注册驱动程序
-
-要使用 JDBC 驱动程序，必须首先将其注册到驱动程序管理器。你可以通过几种方式完成此操作，但每种方式都涉及调用 `DriverManager.registerDriver()`。最常见的方法是简单地加载驱动程序类：
+## 注册驱动程要使用 JDBC 驱动程序，必须首先将其注册到驱动程序管理器。你可以通过几种方式完成此操作，但每种方式都涉及调用 `DriverManager.registerDriver()`。最常见的方法是简单地加载驱动程序类：
 
 ```
 try {
@@ -7993,7 +8518,7 @@ static {
 }
 ```
 
-一些已知的旧驱动程序省略了此步骤，而是在其构造函数中进行注册。在这种情况下，需要使用以下方法创建驱动程序的实例[^5]：
+一些已知的旧驱动程序省略了此步骤，而是在其构造函数中进行注册。在这种情况下，需要使用以下方法创建驱动程序的实例：
 
 ```
 try {
@@ -8050,7 +8575,9 @@ finally {
 驱动程序加载并注册后，即可用于创建数据库连接。`DriverManager` 提供了三种方法来执行此操作：
 
 - getConnection(String *url*)
+
 - getConnection(String *url*, String *userID*, String *password*)
+
 - getConnection(String *url*, Properties *prop*)
 
 在内部，`DriverManager` 使用相同的私有工作方法来处理这些方法中的每一个。
@@ -8060,8 +8587,6 @@ finally {
 如前所述，JDBC 2.0 允许使用 `DataSource` 而不是 `DriverManager` 来建立连接。在这种情况下，不使用 URL 参数，因为它存储在命名服务中。
 
 [^5]: 这是一个繁琐的解决方法，不是吗？你可以简单地捕获 `Exception` 本身，但这总是会让你面临对未预料到的异常应用错误逻辑的风险。
-
-
 
 # JDBC 数据库 URL
 
@@ -8074,7 +8599,9 @@ finally {
 其中
 
 - `protocol` 始终为 jdbc。
+
 - `subprotocol` 是一个特定于供应商的字符串，用于标识要使用的驱动程序。驱动程序在被驱动程序管理器询问时，会表明它是否能够处理该子协议。例如，JDBC-ODBC 桥接驱动程序使用保留值 `odbc` 作为其子协议。此值在所有驱动程序供应商中应是唯一的。Sun Microsystems 作为 JDBC 子协议的非正式注册管理机构。
+
 - `subname` 标识要连接到的具体数据库。此字符串包含驱动程序识别数据库所需的任何信息。它也可能包含数据库所需的连接参数。
 
 JDBC URL 的示例如下：
@@ -8104,7 +8631,9 @@ jdbc:oracle:thin:@(DESCRIPTION=(ADDRESS=(HOST=u25nv)(PROTOCOL=tcp)(PORT=4311))(C
 SQL 语言由创建、操作和从关系数据库中提取数据的语句组成。JDBC 为这些 SQL 语句提供了一个面向对象的表示，封装了它们的文本、执行状态和结果。毫不奇怪，这种表示被称为 `java.sql.Statement` 接口。Statement 对象将 SQL 命令发送到数据库，这些命令可以是以下任何类型：
 
 - 数据定义命令，如 CREATE TABLE 或 CREATE INDEX
+
 - 数据操作命令，如 INSERT 或 UPDATE
+
 - 用于执行查询的 SELECT 语句
 
 数据操作命令返回受影响的行数，而 SELECT 语句返回一组行，称为结果集。
@@ -8129,13 +8658,16 @@ finally {
 }
 ```
 
-JDBC 2.0 引入了一种额外的 `createStatement()` 形式，它接受参数来指示其结果集是否应该是可滚动的，以及是否反映底层表的并发更改。本章后面关于结果集的部分将更详细地描述这些功能。
+JDBC 2.0 引入了一种额外的 `createStatement()` 形式，它接受参数来指示其结果集是否应该是可滚动的，以及是否反映底层表的并发更改。本章后面关于结果集的部分将更详细描述这些功能。
 
 一旦创建了语句，就可以用它来执行命令。有四种方法可以做到这一点：`executeUpdate`、`executeQuery`、`execute` 和 `executeBatch`。选择使用哪种方法取决于预期的结果：
 
 - `executeUpdate` 旨在与 SQL `INSERT`、`UPDATE` 或 `DELETE` 语句一起使用，或与数据定义语句（如 `CREATE TABLE`）一起使用。它返回更新的行数。
+
 - `executeQuery` 用于执行 SQL `SELECT` 语句并返回结果集。
+
 - `execute` 可用于任一目的，但它专为那些可能返回更新计数、多个结果集或某些组合的语句而设计。它返回一个布尔标志，指示其结果是更新计数还是结果集。还有其他方法可用于遍历结果。
+
 - `executeBatch` 允许以批处理方式执行多个更新语句。更新计数以数组形式返回。
 
 以下示例说明了每种方法。
@@ -8292,8 +8824,6 @@ public class ExecuteExample
             stmt.close();
 ```
 
-
-
 ## JSP：完整参考指南
 
 ```java
@@ -8314,7 +8844,9 @@ public class ExecuteExample
 JDBC 2.0 引入了将一组更新语句作为批处理提交执行的能力。在某些情况下，这可以显著提升性能。与批处理更新相关的方法如下：
 
 - `clearBatch` 将批处理重置为空状态。
+
 - `addBatch` 将一条更新语句添加到批处理中。
+
 - `executeBatch` 提交批处理并收集更新计数。
 
 并非所有驱动程序都支持批处理更新。支持批处理更新的驱动程序会通过其 `DatabaseMetaData.supportsBatchUpdates()` 方法返回 `true` 来表明这一点。一个实现了此功能的驱动程序是用于 Microsoft Access 的 JDBC-ODBC 桥接驱动。在以下示例中，使用批处理更新了 LyricNote 产品数据库中的一个表，该表存储了至少活到 90 岁的作曲家信息。
@@ -8570,8 +9102,6 @@ ResultSet rs = stmt.executeQuery(
 
 但是，如果您专门搜索斯特拉文斯基的《士兵的故事》（*L'Histoire du Soldat*），则会遇到如图 13-6 所示的严重错误屏幕。
 
-
-
 ## 第十三章：数据库访问
 
 发生了什么？错误信息中可以找到解释：
@@ -8623,7 +9153,7 @@ CallableStatement cstmt = con.prepareCall(escapeString) ;
 {? = call procedureName(?, ?, ..., ?)}
 ```
 
-如果过程没有返回值，则应省略"? ="。类似地，如果没有输入参数，则不使用"(?, ?, ..., ?)"。
+如果过程没有返回值，则应省略"? ="。类似的，如果没有输入参数，则不使用"(?, ?, ..., ?)"。
 
 因为CallableStatement扩展了PreparedStatement，所以它使用相同的方法来设置替换参数值：
 
@@ -8646,10 +9176,15 @@ Microsoft Access支持使用SQL编写的查询或使用其自身设计向导开�
 此查询可以使用`CallableStatement`从JSP页面运行，如以下清单所示。JSP页面执行的步骤如下：
 
 -   1. 在HTML表单中提示输入起始年份和结束年份。
+
 -   2. 通过JDBC-ODBC桥连接到Access数据库。
+
 -   3. 创建一个调用查询的`CallableStatement`。
+
 -   4. 从表单值设置起始年份和结束年份参数。
+
 -   5. 执行查询。
+
 -   6. 在HTML表格中显示结果。
 
 ```
@@ -8715,10 +9250,13 @@ Microsoft Access支持使用SQL编写的查询或使用其自身设计向导开�
 ```
 
 结果如图13-10所示。
+
 当然，由于查询本身是基于SQL的，难道不能在JSP页面中使用普通的Statement执行等效的SQL语句吗？也许可以，但有几个充分的理由说明你可能选择不这样做：
 
 -   - 该查询已在本地Microsoft Access环境中编写和测试。可能已经开发了数百个查询，转换它们的必要性不大。
+
 -   - 如果在其原始形式中修改了查询，更改将自动反映在基于Web的版本中。
+
 -   - 该查询可能使用在Access中有效，但通过ODBC和JDBC-ODBC桥层不支持的数据库功能。
 
 ## 结果集
@@ -8726,6 +9264,7 @@ Microsoft Access支持使用SQL编写的查询或使用其自身设计向导开�
 *结果集*是一个有序的表行列表，在JDBC中用java.sql.ResultSet接口表示。结果集由executeQuery()或某些元数据方法调用产生。一旦创建，结果集中的数据可以按如下方式提取：
 
 -   1. 通过调用ResultSet.next()方法或JDBC 2.0提供的更丰富的方法集之一——absolute()、relative()、next()、previous()、first()、last()、beforeFirst()或afterLast()——移动到所需的行。
+
 -   2. 使用ResultSet.getXXX(columnNumber)或ResultSet.getXXX(columnName)检索所需的列值，其中XXX是JDBC数据类型。
 
 以下是一个简单的示例，使用一个JSP页面在LyricNote作曲家数据库中搜索出生于爱尔兰的作曲家：
@@ -8779,8 +9318,6 @@ Microsoft Access支持使用SQL编写的查询或使用其自身设计向导开�
             // 整数值
 ```
 
-
-
 ## 可滚动结果集
 
 当 Statement 执行查询时，会创建一个 ResultSet 对象。JSP 页面使用 `next()` 方法逐行读取数据，然后通过 `getString()` 或 `getInt()` 提取每列的值。结果显示在图 13-11 中。
@@ -8788,27 +9325,49 @@ Microsoft Access支持使用SQL编写的查询或使用其自身设计向导开�
 可以对 `ResultSet` 对象调用多个 `getXXX()` 方法。表 13-1 列出了完整清单。每个 `getXXX()` 方法都有两个版本：一个接受整数列号（1，2，...），另一个接受列名字符串。通过列号访问列的效率可能略高，尽管当字段顺序发生变化时，使用列名更易于维护。
 
 | 方法 | 描述 |
+
 |---|---|
+
 | `getArray` | 返回一个 SQL 数组。 |
+
 | `getAsciiStream` | 返回一个已打开的 ASCII 字符 `java.io.InputStream`。向 ASCII 的转换（如有必要）由 JDBC 驱动程序处理。 |
+
 | `getBigDecimal` | 返回一个 `java.math.BigDecimal`。 |
+
 | `getBinaryStream` | 返回一个已打开的 `java.io.InputStream`。不对流进行任何转换。 |
+
 | `getBlob` | 返回一个 `java.sql.Blob`（*二进制大对象*）。 |
+
 | `getBoolean` | 返回一个布尔值。 |
+
 | `getByte` | 返回一个单字节。 |
+
 | `getBytes` | 返回一个字节数组。 |
+
 | `getCharacterStream` | 返回一个 `java.io.Reader` 字符流。 |
+
 | `getClob` | 返回一个 `java.sql.Clob`（*字符大对象*）。 |
+
 | `getDate` | 返回一个 `java.sql.Date`。注意，这是 `java.util.Date` 的子类。 |
+
 | `getDouble` | 返回一个双精度浮点值。 |
+
 | `getFloat` | 返回一个单精度浮点值。 |
+
 | `getInt` | 返回一个整数值。 |
+
 | `getLong` | 返回一个长整数值。 |
+
 | `getObject` | 返回一个 `java.lang.Object`。 |
+
 | `getRef` | 返回一个 `java.sql.Ref`，它是对 SQL 结构化类型值的引用。 |
+
 | `getShort` | 返回一个短整数值。 |
+
 | `getString` | 返回一个字符串。 |
+
 | `getTime` | 返回一个 `java.sql.Time` 值。 |
+
 | `getTimestamp` | 返回一个 `java.sql.Timestamp` 值，其中包含纳秒级时间。 |
 
 **表 13-1.** *ResultSet 提供的 getXXX() 方法*
@@ -8820,23 +9379,36 @@ JDBC 2.0 在结果集中引入了重要的新特性，这将在接下来的三�
 最初，结果集只能单向（向前）导航，且只能从一个点（第一行）开始。有了 JDBC 2.0，程序员有了更大的灵活性。游标（行指针）可以像操作数组索引一样进行操控。存在用于向前和向后读取、从任意行开始以及测试当前游标位置的方法。表 13-2 列出了可用的导航方法。
 
 | 方法 | 描述 |
+
 | :--- | :--- |
+
 | `boolean next()` | 将游标移动到下一行。 |
+
 | `boolean previous()` | 将游标向后移动一行。 |
+
 | `boolean first()` | 将游标移动到第一行。 |
+
 | `boolean last()` | 将游标移动到最后一行。 |
+
 | `void beforeFirst()` | 将游标移动到第一行之前，通常为调用 `next()` 做准备。 |
+
 | `void afterLast()` | 将游标移动到最后一行之后，通常为调用 `previous()` 做准备。 |
+
 | `boolean absolute(int row)` | 将游标移动到指定行。指定负数可相对于结果集末尾移动游标；`absolute(-1)` 等同于 `last()`。 |
+
 | `boolean relative(int row)` | 将游标向前或向后移动指定的行数。 |
+
 | `boolean isBeforeFirst()` | 如果游标在第一行之前，则为真。 |
+
 | `boolean isAfterLast()` | 如果游标在最后一行之后，则为真。 |
+
 | `boolean isFirst()` | 如果游标位于第一行上，则为真。 |
+
 | `boolean isLast()` | 如果游标位于最后一行上，则为真。 |
 
 **表 13-2.** JDBC 2.0 可滚动结果集导航方法
 
-要使用可滚动结果集，`Statement` 对象必须使用指示所请求特定能力的参数来创建。因此，`Connection.createStatement()` 方法存在一种新形式
+要使用可滚动结果集，`Statement` 对象必须使用指示所请求特特能力的参数来创建。因此，`Connection.createStatement()` 方法存在一种新形式
 
 ```java
 public Statement createStatement
@@ -8847,16 +9419,24 @@ public Statement createStatement
 其中 `resultSetType` 是要使用的滚动类型，`resultSetConcurrency` 指示结果集是否可更新。两个参数的值都取自 `ResultSet` 中的常量，如表 13-3 所示。
 
 | 常量 | 含义 |
+
 |---|---|
+
 | `TYPE_FORWARD_ONLY` | JDBC 1.0 风格的导航，游标从第一行开始且只能向前移动。 |
+
 | `TYPE_SCROLL_INSENSITIVE` | 启用所有游标定位方法；结果集不反映其他人对底层表所做的更改。 |
+
 | `TYPE_SCROLL_SENSITIVE` | 启用所有游标定位方法；结果集反映其他人对底层表所做的更改。 |
+
 | `CONCUR_READ_ONLY` | 结果集不可更新。 |
+
 | `CONCUR_UPDATABLE` | 可以添加和删除行，并且可以更新列。 |
 
 **表 13-3.** ResultSet 中可用于描述可滚动结果集的常量
 
 以下 JSP 页面是一个使用可滚动结果集仅显示可能很长的查询最后一页的示例。
+
+
 
 ```jsp
 <%@ page import="java.sql.*" %>
@@ -8955,8 +9535,6 @@ Statement 对象被打开，以便其创建的结果集是可滚动的，但不�
 
 通过 JDBC 2.0，可以更新结果集中的列，包括添加新行和删除现有行。在这两种情况下，底层表中的相应行也会随之更新。
 
-
-
 要更新结果集，它必须由使用并发类型 `ResultSet.CONCUR_UPDATABLE` 创建的 `Statement` 对象生成。JDBC 2.0 提供了 `updateXXX()` 方法，其中 `XXX` 是 JDBC 数据类型，类似于现有的 `getXXX()` 方法。这些方法接受一个列号或列名参数，以及一个值参数，如下例所示：
 
 ```java
@@ -8992,7 +9570,9 @@ rs.deleteRow();
 `javax.sql` 包包含一个 `RowSet` 接口，它扩展并泛化了 `java.sql.ResultSet`，使其可以从数据库连接中分离。这对于不容易保持连接且内存有限的 *个人数字助理* (*PDA*) 应用程序很有用。目前，RowSets 仍处于起步阶段。Sun Microsystems 提供了该接口的三个早期访问实现，可用于探索其功能：
 
 - **CachedRowSet**：一个可序列化、可断开连接的 RowSet，可以从 JDBC 结果集填充。
+
 - **JdbcRowSet**：一个连接的 RowSet，同样从 JDBC 结果集填充，其行为遵循 JavaBeans 模型。
+
 - **WebRowSet**：`CachedRowSet` 的一个子类，可以将内容写为 XML 文档。
 
 ## 使用元数据
@@ -9178,126 +9758,193 @@ finally {
 
 当使用 JDBC-ODBC 桥接针对 Microsoft Access 数据库运行时，MetadataExplorer 生成的输出部分如图 13-14 所示。完整列表包含在表 13-4 中。
 
-
-
 ## 344 JSP：完全参考手册
 
 | 方法 | 值 |
+
 |---|---|
+
 | allProceduresAreCallable | True |
+
 | allTablesAreSelectable | True |
+
 | dataDefinitionCausesTransactionCommit | True |
+
 | dataDefinitionIgnoredInTransactions | False |
+
 | doesMaxRowSizeIncludeBlobs | False |
+
 | getCatalogSeparator | . |
+
 | getCatalogTerm | DATABASE |
+
 | getDatabaseProductName | ACCESS |
+
 | getDatabaseProductVersion | 3.5 Jet |
+
 | getDriverName | JDBC-ODBC Bridge (odbcjt32.dll) |
+
 | getDriverVersion | 2.0001 (03.51.1713.00) |
+
 | getExtraNameCharacters | ~@#$%^&*_-+=\}{\";:?><, |
+
 | getIdentifierQuoteString | ` |
+
 | getNumericFunctions | ABS, ATAN, CEILING, COS, EXP, FLOOR, LOG, MOD, POWER, RAND, SIGN, SIN, SQRT, TAN |
+
 | getProcedureTerm | QUERY |
+
 | getSQLKeywords | ALPHANUMERIC, AUTOINCREMENT, BINARY, BYTE, COUNTER, CURRENCY, DATABASE, DATABASENAME, DATETIME, DISALLOW, DISTINCTROW, DOUBLEFLOAT, FLOAT4, FLOAT8, GENERAL, IEEEDOUBLE, IEEESINGLE, IGNORE, INT, INTEGER1, INTEGER2, INTEGER4, LEVEL, LOGICAL, LOGICAL1, LONG, LONGBINARY, LONGCHAR, LONGTEXT, MEMO, MONEY, NOTE, NUMBER, OLEOBJECT, OPTION, OWNERACCESS, PARAMETERS, PERCENT, PIVOT, SHORT, SINGLE, SINGLEFLOAT, SMALLINT, STDEV, STDEVP, STRING, TABLEID, TEXT, TOP, TRANSFORM, UNSIGNEDBYTE, VALUES, VAR, VARBINARY, VARP, YESNO |
+
 | getSchemaTerm | \ |
-| getStringFunctions | ASCII, CHAR, CONCAT, LCASE, LEFT, LENGTH, LOCATE, LOCATE_2, LTRIM, RIGHT, RTRIM, SPACE, SUBSTRING, UCASE |
 
-表 13-4. Microsoft Access 数据库的元数据（续）
-
-| 方法 | 值 |
-| :--- | :--- |
 | getSystemFunctions | CURDATE, CURTIME, DAYOFMONTH, DAYOFWEEK, DAYOFYEAR, HOUR, MINUTE, MONTH, NOW, SECOND, WEEK, YEAR |
+
 | getURL | jdbc:odbc:Composers |
+
 | getUserName | admin |
+
 | isCatalogAtStart | True |
+
 | isReadOnly | False |
+
 | nullPlusNonNullIsNull | False |
+
 | nullsAreSortedAtEnd | False |
+
 | nullsAreSortedAtStart | False |
+
 | nullsAreSortedHigh | False |
+
 | nullsAreSortedLow | True |
+
 | storesLowerCaseIdentifiers | False |
+
 | storesLowerCaseQuoted Identifiers | False |
+
 | storesMixedCaseIdentifiers | False |
+
 | storesMixedCaseQuoted Identifiers | True |
+
 | storesUpperCaseIdentifiers | False |
+
 | storesUpperCaseQuoted Identifiers | False |
+
 | supportsANSI92EntryLevelSQL | True |
+
 | supportsANSI92FullSQL | False |
+
 | supportsANSI92IntermediateSQL | False |
+
 | supportsAlterTableWith AddColumn | True |
+
 | supportsAlterTableWith DropColumn | True |
+
 | supportsBatchUpdates | True |
+
 | supportsCatalogsInData Manipulation | True |
 
-表 13-4. Microsoft Access 数据库的元数据（续）
-
-| 方法 | 值 |
-|---|---|
 | supportsCatalogsInIndex Definitions | True |
+
 | supportsCatalogsInPrivilege Definitions | False |
+
 | supportsCatalogsInProcedure Calls | False |
+
 | supportsCatalogsInTable Definitions | True |
+
 | supportsColumnAliasing | True |
+
 | supportsConvert | True |
+
 | supportsCoreSQLGrammar | False |
+
 | supportsCorrelatedSubqueries | True |
+
 | supportsDataDefinitionAndData ManipulationTransactions | True |
+
 | supportsDataManipulation TransactionsOnly | False |
+
 | supportsDifferentTable CorrelationNames | False |
+
 | supportsExpressionsInOrderBy | True |
+
 | supportsExtendedSQLGrammar | False |
+
 | supportsFullOuterJoins | False |
+
 | supportsGroupBy | True |
+
 | supportsGroupByBeyondSelect | True |
+
 | supportsGroupByUnrelated | False |
+
 | supportsIntegrity EnhancementFacility | False |
+
 | supportsLikeEscapeClause | False |
+
 | supportsLimitedOuterJoins | False |
+
 | supportsMinimumSQLGrammar | True |
+
 | supportsMixedCaseIdentifiers | True |
+
 | supportsMixedCaseQuoted Identifiers | False |
 
-表 13-4. Microsoft Access 数据库的元数据（续）
-
-| 方法 | 值 |
-| :--- | :--- |
 | supportsMultipleResultSets | False |
+
 | supportsMultipleTransactions | True |
+
 | supportsNonNullableColumns | False |
+
 | supportsOpenCursorsAcrossCommit | False |
+
 | supportsOpenCursorsAcrossRollback | False |
+
 | supportsOpenStatementsAcrossCommit | True |
+
 | supportsOpenStatementsAcrossRollback | True |
+
 | supportsOrderByUnrelated | False |
+
 | supportsOuterJoins | True |
+
 | supportsPositionedDelete | False |
+
 | supportsPositionedUpdate | False |
+
 | supportsSchemasInDataManipulation | False |
+
 | supportsSchemasInIndexDefinitions | False |
+
 | supportsSchemasInPrivilegeDefinitions | False |
+
 | supportsSchemasInProcedureCalls | False |
+
 | supportsSchemasInTableDefinitions | False |
+
 | supportsSelectForUpdate | False |
+
 | supportsStoredProcedures | True |
+
 | supportsSubqueriesInComparisons | True |
+
 | supportsSubqueriesInExists | True |
+
 | supportsSubqueriesInIns | True |
 
-表 13-4. Microsoft Access 数据库的元数据（续）
-
-| 方法 | 值 |
-| --- | --- |
 | supportsSubqueriesIn Quantifieds | True |
-| supportsTableCorrelationNames | True |
-| supportsTransactions | True |
-| supportsUnion | True |
-| supportsUnionAll | True |
-| usesLocalFilePerTable | False |
-| usesLocalFiles | True |
 
-表 13-4. Microsoft Access 数据库的元数据（续）
+| supportsTableCorrelationNames | True |
+
+| supportsTransactions | True |
+
+| supportsUnion | True |
+
+| supportsUnionAll | True |
+
+| usesLocalFilePerTable | False |
+
+| usesLocalFiles | True |
 
 ## ResultSetMetaData
 
@@ -9308,61 +9955,80 @@ finally {
 表 13-5 描述了 ResultSetMetaData 中可用的方法。
 
 | 方法 | 描述 |
+
 | --- | --- |
+
 | getColumnCount() | 返回结果集中每一行的列数。 |
+
 | getCatalogName(int col) | 返回指定列所属表的目录名称。 |
+
 | getColumnClassName(int col) | 返回指定列的完全限定 Java 类型名称。 |
 
-表 13-5. ResultSetMetaData 中可用的方法
-
-| 方法 | 描述 |
-|---|---|
 | `getColumnDisplaySize(int col)` | 返回指定列的最大显示宽度。 |
-| `getColumnLabel(int col)` | 返回指定列的标签。 |
-| `getColumnName(int col)` | 返回指定列的名称。 |
-| `getColumnType(int col)` | 返回与 java.sql.Types 对应的形式中指定列的类型。 |
-| `getColumnTypeName(int col)` | 以字符串形式返回列数据类型。 |
-| `getPrecision(int col)` | 返回小数位数。 |
-| `getScale(int col)` | 返回小数点右边的数字位数。 |
-| `getSchemaName(int col)` | 返回列所属表的模式名称。 |
-| `getTableName(int col)` | 返回列所属表的名称。 |
-| `isAutoIncrement(int col)` | 如果列是自动编号的，则返回 True。 |
-| `isCaseSensitive(int col)` | 如果列的大小写重要，则返回 True。 |
-| `isCurrency(int col)` | 如果列是现金值，则返回 True。 |
-| `isDefinitelyWritable(int col)` | 如果对指定列的写入肯定会成功，则返回 True。 |
-| `isNullable(int col)` | 返回一个指示列是否可以具有空值的常量。 |
-| `isReadOnly(int col)` | 如果结果集是只读的，则返回 True。 |
-| `isSearchable(int col)` | 如果此列可用于 where 子句，则返回 True。 |
-| `isSigned(int col)` | 如果列值是有符号数字，则返回 True。 |
-| `isWritable(int col)` | 如果对指定列的写入可能成功，则返回 True。 |
 
-表 13-5. ResultSetMetaData 中可用的方法（续）
+| `getColumnLabel(int col)` | 返回指定列的标签。 |
+
+| `getColumnName(int col)` | 返回指定列的名称。 |
+
+| `getColumnType(int col)` | 返回与 java.sql.Types 对应的形式中指定列的类型。 |
+
+| `getColumnTypeName(int col)` | 以字符串形式返回列数据类型。 |
+
+| `getPrecision(int col)` | 返回小数位数。 |
+
+| `getScale(int col)` | 返回小数点右边的数字位数。 |
+
+| `getSchemaName(int col)` | 返回列所属表的模式名称。 |
+
+| `getTableName(int col)` | 返回列所属表的名称。 |
+
+| `isAutoIncrement(int col)` | 如果列是自动编号的，则返回 True。 |
+
+| `isCaseSensitive(int col)` | 如果列的大小写重要，则返回 True。 |
+
+| `isCurrency(int col)` | 如果列是现金值，则返回 True。 |
+
+| `isDefinitelyWritable(int col)` | 如果对指定列的写入肯定会成功，则返回 True。 |
+
+| `isNullable(int col)` | 返回一个指示列是否可以具有空值的常量。 |
+
+| `isReadOnly(int col)` | 如果结果集是只读的，则返回 True。 |
+
+| `isSearchable(int col)` | 如果此列可用于 where 子句，则返回 True。 |
+
+| `isSigned(int col)` | 如果列值是有符号数字，则返回 True。 |
+
+| `isWritable(int col)` | 如果对指定列的写入可能成功，则返回 True。 |
 
 ## JDBC 2.0 及更高版本中的新功能
 
 JDBC 2.0 最初被称为 JDBC 2.0 标准扩展 API，现已更名为 JDBC 2.0 可选包 API。它包含在与 Java 2 标准版一起发行的 JDBC 2.1 核心 API 包中。本章中讨论了其许多新功能，包括：
 
 - **DataSource** JDBC 驱动程序名称和 URL 可以存储在名称服务中，并使用 JNDI 检索。
-- **连接池** 数据源提供商可以提供连接池，允许连接被激活和回收，通常可以显著提高性能。此功能完全在命名服务中配置，无需对应用程序进行任何更改。
+
+- **连接池** 数据源提供商可以提供连接池，允许连接被激活和回收，通常可以显著提高性能。此功能完全在命名服务中配置，无需对应用程进行任何更改。
+
 - **可滚动结果集** JDBC 1.0 仅允许从第一条记录开始向前导航结果集。JDBC 2.0 提供了向前和向后导航以及相对和绝对游标定位的方法。
+
 - **RowSets** 断开连接的结果集可以被设计成符合 JavaBeans 模型。
+
 - **BatchUpdates** 事务可以分组并作为一个单元发送到数据库。
 
 JDBC 3.0 的第一个公开草案于 2000 年 9 月发布供公众审查。其新功能包括：
 
 - 增强了对提交/回滚事务边界的控制
+
 - 连接池的可配置性
+
 - 对预处理和可调用语句中参数的更好接口
 
 ## 总结
 
-几乎所有非平凡的 JSP 应用程序都需要访问数据库。Java 提供了一个名为 JDBC 的标准 API。JDBC 允许在面向对象的框架中使用标准 SQL 语句访问各种各样的数据库系统。要使用 JDBC，必须为数据库提供相应的驱动程序。几乎所有商业数据库都有相应的驱动程序，还有一个用于使用 ODBC 数据源的 JDBC-ODBC 桥接驱动程序。
+几乎所有非平凡的 JSP 应用程序都需要访问数据库。Java 提供了一个名为 JDBC 的标标准 API。JDBC 允许在面向对象的框架中使用标准 SQL 语句访问各种各样的数据库系统。要使用 JDBC，必须为数据库提供相应的驱动程序。几乎所有商业数据库都有相应的驱动程序，还有一个用于使用 ODBC 数据源的 JDBC-ODBC 桥接驱动程序。
 
 JDBC 中仅存在少数几个关键对象，这使其易于学习。`Connection` 对象维护与数据库的活动连接。三种类型的 `Statement` 对象允许通过连接执行 SQL 语句，并将结果捕获到 `ResultSet` 对象中。可以从 `DatabaseMetaData` 和 `ResultSetMetaData` 对象获取大量关于连接和结果集的信息。
 
 JDBC 在多个版本中不断发展，功能不断增强，并有望继续成为 Java 编程的主导数据库访问技术。
-
-
 
 ## 完全参考
 
@@ -9370,7 +10036,7 @@ JDBC 在多个版本中不断发展，功能不断增强，并有望继续成为
 
 ## 会话与线程管理
 
-超文本传输协议（HTTP）最初是为在万维网（WWW）上分发文档和图像而设计的。因此，它采用了一种相当简单的通信模型。客户端发出文档请求，服务器以文档或某些错误代码作为响应，然后事务即告完成。服务器不会保留任何关于该请求的知识。下次客户端发出请求时，服务器无法将其与其他任何客户端区分开来。因此，HTTP被称为无状态协议。
+超文本传输协议（HTTP）最初是为在万维网（WWW）上分发文档和图像而设计的。因此，它采用了一种相当简单的通信模型。客户端发出文档请请求，服务器以文档或某些错误代码作为响应，然后事务即告完成。服务器不会保留任何关于该请求的知识。下次客户端发出请求时，服务器无法将其与其他任何客户端区分开来。因此，HTTP被称为无状态协议。
 
 不幸的是，很少有应用程序能完全适应这种单次请求/响应模型。在大多数情况下，要完成任何有意义的工作，都需要多次请求。例如，一个应用程序可能有一个用于输入用户ID和密码的网页，接着是一个请求输入搜索关键字以查询产品数据库的搜索页面，然后是匹配产品的列表页面、详细的产品信息页面、购物车结算页面和订单摘要页面。这些页面中的每一个都依赖于前面的页面，并且也依赖于服务器在特定时间了解该客户端的应用程序状态。更糟糕的是，客户端应用程序的用户可能会在页面间前进或后退，或者完全转到另一个网页，却从不告诉服务器会话已结束或如何处理任何未完成的工作。一个相关的问题是，一些服务器处理过程需要很长时间——如果Web服务器要保持合理的性能，它可能等不起这么长的时间。
 
@@ -9383,6 +10049,7 @@ JDBC 在多个版本中不断发展，功能不断增强，并有望继续成为
 由于Web服务器不会从一个请求到下一个请求记住客户端，因此维护会话的唯一方法是让客户端自己跟踪它。您可以通过两种基本方式来实现：
 
 - 让客户端记住所有会话相关数据，并根据需要将其发送回服务器。
+
 - 让服务器维护所有数据，为其分配一个标识符，并让客户端记住该标识符。
 
 第一种方法实现简单，不需要服务器具备特殊功能。然而，这种方法可能涉及来回传输大量数据，从而可能降低性能。另一个问题是，服务器端对象，如数据库和网络连接，必须在每次请求时重新初始化。因此，这种方法最适合长期持久化少量数据，例如用户偏好设置或账户号码。
@@ -9392,8 +10059,11 @@ JDBC 在多个版本中不断发展，功能不断增强，并有望继续成为
 那么，我们如何让客户端记住数据并将其返回给Web服务器呢？通常使用四种技术：
 
 - 隐藏字段
+
 - URL重写
+
 - Cookie
+
 - HTTP会话API
 
 以下各节将详细描述每种技术。
@@ -9532,12 +10202,12 @@ My next guess is <%= guess %>. How did I do?<P>
 <%
 ```
 
-
-
 JSP 页面使用一个名为 `state` 的隐藏字段来跟踪游戏中的状态变化。根据状态的不同，它会显示相应的表单：
 
 -   **状态 0** 初始表单解释游戏规则并设置要使用的变量。这些变量包括状态、猜测次数、已知太低的最高值，以及已知太高的最低值。所有变量都作为表单中的隐藏字段存储。
--   **状态 1** 用户点击确认按钮后，程序会获取“太低”和“太高”的参数，并将两者的平均值作为下一次猜测。表单会提供三个单选按钮供用户指示猜测是太低、太高还是完全正确。新的“低”值和“高”值、用户选择的结果以及递增的猜测次数会再次作为隐藏字段存储。
+
+-   **状态 1** 用户点击确认按钮后，程序会获取“太低”和“太高”的参数，并将两者的平均值作为下一次猜测。表单会提供三个单选按�供用户指示猜测是太低、太高还是完全正确。新的“低”值和“高”值、用户选择的结果以及递增的猜测次数会再次作为隐藏字段存储。
+
 -   **状态 2** 根据用户在单选按钮中的选择，程序会使用新的上限或下限更新“太低”或“太高”的值。如果猜测完全正确，程序会祝贺自己并提示是否再玩一次。否则，它将显示已知的上下限及其下一次猜测，如图 14-1 所示。
 
 隐藏字段的问题在于它们只能在 HTML 表单中使用。如果用户点击超链接离开页面，隐藏字段就会丢失，除非同时采用下一节描述的技术——URL 重写。
@@ -9609,11 +10279,14 @@ String value2 = request.getParameter("name2");
 最广泛使用的持久化客户端数据存储技术涉及 HTTP cookie。`cookie` 是一个小型的、命名的数据元素，服务器通过 `Set-Cookie` 头将其作为 HTTP 响应的一部分传递给客户端。客户端应存储该 cookie，并在后续对同一服务器的请求中通过 `Cookie` 头将其返回给服务器。除了名称和值外，cookie 还可能包含：
 
 -   一个过期日期，此后客户端将不再保留该 cookie。如果未指定日期，cookie 将在浏览器会话结束时立即过期。
+
 -   一个域名，例如 `servername.com`，它限制了 cookie 有效的 URL 子集。如果未指定，cookie 将随所有对原始 Web 服务器的请求一起返回。
+
 -   一个路径名，进一步限制 URL 子集。
+
 -   一个 `secure` 属性，如果存在，表示仅当连接使用安全通道（如 SSL）时才应返回 cookie。
 
-原始 cookie 规范的详细信息可以在 http://home.netscape.com/newsref/std/cookie_spec.html 找到。图 14-2 说明了如何通过 HTTP 请求和响应设置和检索 cookie。首先，Web 浏览器向 Web 服务器请求一个页面。此时不涉及 cookie。当服务器用请求的文档响应时，它会发送一个 `Set-Cookie` 头，将值 `fr` 分配给名为 `language` 的 cookie。该 cookie 设置为一年后过期。浏览器读取此头，提取 cookie 信息，并将名称/值对与 Web 服务器的域和默认路径一起存储在其 cookie 缓存中。稍后，当用户再次访问该页面时，浏览器识别出它之前从该服务器接收过一个 cookie，并且该 cookie 尚未过期，因此会将 cookie 发送回服务器。Cookie 相对于其他持久化方案的一个优点是，即使在客户端计算机重新启动后，它们也能在浏览器会话结束后保留其值。这使得 cookie 非常适合维护用户的偏好，例如语言。下面显示的应用程序允许用户通过点击超链接选择所需语言。选择会导致两个 cookie 发送到客户端：一个用于语言，一个用于国家/地区。下次用户访问该站点时，浏览器会自动将 cookie 发送回服务器，并且页面中会使用用户的首选语言。
+原始 cookie 规范的详细信息可以在 http://home.netscape.com/newsref/std/cookie_spec.html 找到。图 14-2 说明了如何通过 HTTP 请求和响应设置和检索 cookie。首先，Web 浏览器向 Web 服务器请求一个页面。此时不涉及 cookie。当服务器用请求的文档响应时，它会发送一个 `Set-Cookie` 头，将值 `fr` 分配给名为 `language` 的 cookie。该 cookie 设置为一年后过期。浏览器读取此头，提取 cookie 信息，并将名称/值对与 Web 服务器的域和默认路径一起存储在其 cookie 缓存中。稍后，当用户再次访问该页面时，浏览器识别出它之前从该服务器接收过一个 cookie，并且该 cookie 尚未过期，因此会将 cookie 发送回服务器。Cookie 相对于其他持久化方案的一个优点是，即使在客户端计算机重新启动后，它们也能在浏览器会话结束后保留其值。这使得 cookie 非常适合维护用户的偏好，例如语言。下面显示的应用程序允用户通过点击超链接选择所需语言。选择会导致两个 cookie 发送到客户端：一个用于语言，一个用于国家/地区。下次用户访问该站点时，浏览器会自动将 cookie 发送回服务器，并且页面中会使用用户的首选语言。
 
 ![](img/7a2f73369bb140583c728b73456addb_390_0.png)
 
@@ -9668,21 +10341,22 @@ Locale locale = null;
 
 <sup>2</sup> `java.util.ResourceBundle` 对象是程序以不同语言检索消息和其他字符串的一种方式，因此程序可以在多个区域设置中使用，而无需进行任何更改。`ResourceBundle` 有多种实现，其中最常见的是使用普通的 `.properties` 文件来存储消息文本。
 
-
-
 ## 会话API
 
 到目前为止，我们已经探讨了两种会话跟踪的基本方法，这两种方法都涉及到客户端对状态的记录：
 
 - 让客户端存储所有会话数据，并在每次请求时将其返回给服务器。
+
 - 让客户端存储一个会话标识符，其余工作由服务器处理。
 
 虽然第一种方法可能更容易实现，但第二种方法通常能提供更好的灵活性和可扩展性。我们已经看到，隐藏字段、URL重写和Cookie在一定程度上都可以用来支持这两种方法。但是，大多数需要使用会话的Servlet和JSP页面都可以利用一种更高层次的方法：*HttpSession* API。
 
 `javax.servlet.http` 包中有三个类构成了会话API：
 
-- **HttpSession** 一个类似于Map或Hashtable的接口，能够按名称存储和检索对象。会话通过调用 `HttpServletRequest.getSession()` 创建，并一直持续到它超时或被参与该会话的Servlet关闭。携带会话标识符的传入HTTP请求会自动与该会话关联。
+- **HttpSession** 一个类似于Map或Hashtable的接口，能够按名称存储和检索对象。会话通过调用 `HttpServletRequest.getSession()` 创建，并一直持续到它超时或被参与该会话的Servlet关闭。携带会话标识符的传入HTTP请请求会自动与该会话关联。
+
 - **HttpSessionBindingListener** 一个接口，允许对象知晓自己何时被存储到会话中或从会话中移除。该接口有两个回调方法：`valueBound()` 和 `valueUnbound()`，对象必须实现这两个方法才能接收到绑定通知。
+
 - **HttpSessionBindingEvent** 一个传递给 HttpSessionBindingListener 的 `valueBound()` 和 `valueUnbound()` 方法的事件对象。该事件具有返回会话和监听器绑定到会话时所用名称的方法。
 
 ## 创建会话
@@ -9693,7 +10367,7 @@ Servlet通过调用HttpServletRequest中的 `getSession()` 或 `getSession(boole
 HttpSession session = request.getSession(true);
 ```
 
-无参数的 `getSession()` 方法是一个便捷方法，它简单地调用 `getSession(true)`。`create` 参数指示Servlet引擎在尚不存在会话时是否应创建一个新会话。如果参数为 `false`，Servlet只能对现有会话进行操作。在任何一种情况下，都会检查请求是否包含有效的会话ID。如果是，Servlet容器会返回一个会话对象的引用，然后就可以使用它来存储和检索会话属性。
+无参数的 `getSession()` 方法是一个便捷方法，它简单地调用 `getSession(true)`。`create` 参数指示Servlet引擎在尚不存在会话时是否应创建一个新会话。如果参数为 `false`，Servlet只能对现有会话进行操作。在任何一种情况下，都会检查请请求是否包含有效的会话ID。如果是，Servlet容器会返回一个会话对象的引用，然后就可以使用它来存储和检索会话属性。
 
 在JSP页面中，会话是自动创建的，除非在页面指令中将其禁用。在生成的Servlet的 `_jspService()` 方法开头，会创建并初始化PageContext对象。作为初始化的一部分，JspFactory.getPageContext() 方法调用 `request.getSession(true)`。当生成的Servlet调用 `pageContext.getSession()` 时，新创建或访问的会话会返回给它。然后，会话作为隐式变量 `session` 对JSP页面的其余部分可用，如下所示：
 
@@ -9832,6 +10506,7 @@ response.sendRedirect(cameFrom);
 ```
 
 index.jsp页面最初以默认区域设置显示，如图14-3所示。如果用户点击法语超链接，setPreferences.jsp页面将被调用，它将浏览器重定向回index.jsp，这次带有Cookie。结果显示为该页面的法语版本，如图14-4所示。如果用户第二天再次访问该站点，语言偏好设置会被记住并应用。
+
 Cookie的主要问题是用户能够并且确实会关闭浏览器的Cookie支持，通常是为了隐私原因。这意味着应用程序必须准备好在无法使用Cookie时以其他方式完成其工作。
 
 ![](img/7a2f73369bb140583c7288b73456addb_394_0.png)
@@ -9839,8 +10514,6 @@ Cookie的主要问题是用户能够并且确实会关闭浏览器的Cookie支�
 图14-3. LyricNote主页细节，显示语言选择栏
 
 ![](img/7a2f73369bb140583c7288b73456addb_395_0.png)
-
-
 
 # 从会话中存储和检索对象
 
@@ -9945,1435 +10618,30 @@ session.invalidate();
 
 在隐藏字段部分开发的数字猜测者可以通过将所有隐藏字段移动到一个存储在 HTTP 会话中的对象来简化。本示例中的对象是一个名为 `Parameters` 的内部类，它在 JSP 页面顶部附近定义，但它也可以是一个外部定义的类。
 
-```jsp
-<%@ page session="true" %>
-<H3>Number Guess Guesser</H3>
-<%!
-public static final int WAY_LO = 0;
-public static final int WAY_HI = 101;
-public static final String PARMSKEY
-    = "jspcr.sessions.numguess.parameters";
 
-// Inner class containing state variables
 
-public class Parameters {
-    int lo;
-    int hi;
-    int numGuesses;
-    int state;
-}
-%>
-<%
-    Parameters parms=(Parameters) session.getAttribute(PARMSKEY);
-    if (parms == null) {
-        parms = new Parameters();
-        parms.state = 0;
-        session.setAttribute(PARMSKEY, parms);
-    }
+进入`/path/to/xxx`目录，找到`xxx.json`。
 
-    switch (parms.state) {
-        case 0: {   // Initial screen
-%>
-<FORM>
-Think of a number between
-<%= WAY_LO + 1 %> and <%= WAY_HI - 1 %>,
-and I'll try to guess it.<P>
-Click OK when ready.<P>
-<INPUT TYPE="submit" VALUE="OK">
-</FORM>
-<%
-            parms.lo = WAY_LO;
-            parms.hi = WAY_HI;
-            parms.numGuesses = 0;
-            parms.state = 1;
-            break;
-        }
-        case 1: {   // First guess
-            parms.numGuesses++;
-            int guess = (parms.hi + parms.lo)/2;
-%>
-<FORM>
-My first guess is <%= guess %>. How did I do?<P>
-<INPUT TYPE="radio"
-    NAME="result"
-    VALUE="-1" onClick="submit()"> Too low
-<INPUT TYPE="radio"
-    NAME="result"
-    VALUE="0" onClick="submit()"> Exactly right
-<INPUT TYPE="radio"
-    NAME="result"
-    VALUE="1" onClick="submit()"> Too high
-</FORM>
-<P>
-<%
-    parms.state = 2;
-    break;
-}
-case 2: {   // After first guess
-    parms.numGuesses++;
-    int result =
-        Integer.parseInt(request.getParameter("result"));
-    int guess = (parms.hi + parms.lo)/2;
+在表达式`cvar = avar + bvar`中，加法运算符（`+`）将`avar`与`bvar`相加，得到它们的和`cvar`
 
-    if (result < 0) {
-        parms.lo = guess;
-        guess = (parms.hi + parms.lo)/2;
-    }
-    else if (result > 0) {
-        parms.hi = guess;
-        guess = (parms.hi + parms.lo)/2;
-    }
+在`List.of(arg0, arg1, arg2)`中，`List`接口的工厂方法`of()`接受一系列的元素，返回包含它们的只读列表。
 
-    if (result != 0) {
-%>
-<FORM>
-<%
-    if (parms.lo > WAY_LO)
-        out.println(parms.lo + " is too low.<BR>");
-    if (parms.hi < WAY_HI)
-        out.println(parms.hi + " is too high.<BR>");
-    if ((parms.hi - parms.lo) > 1) {
-%>
-My next guess is <%= guess %>. How did I do?<P>
-<INPUT TYPE="radio"
-       NAME="result"
-       VALUE="-1" onClick="submit()"> Too low
-<INPUT TYPE="radio"
-       NAME="result"
-       VALUE="0" onClick="submit()"> Exactly right
-<INPUT TYPE="radio"
-       NAME="result"
-       VALUE="1" onClick="submit()"> Too high
-</FORM>
-<%
-}
-else {
-    String[] text = {
-        "Are we cheating?",
-        "Did we forget our number?",
-        "Perhaps we clicked the wrong button?",
-        "What happened?",
-        "What gives?",
-    };
-    String message = text[(int) (Math.random() * text.length)];
-    session.removeAttribute(PARMSKEY);
-%>
-<FORM>
-<%= message %><P>
-<INPUT TYPE="SUBMIT" VALUE="Start Over">
-</FORM>
-<%
-}
-    }
-    else {
-        parms.numGuesses--;
-%>
-<FORM>
-I win, and after only <%= parms.numGuesses %> guesses!<P>
-Do you want to try again?<P>
-<INPUT TYPE="SUBMIT" VALUE="Start Over">
-</FORM>
-<%
-        session.removeAttribute(PARMSKEY);
-    }
-    }
-%>
+之后我们这样调用`cmd`命令：`cmd arg0 arg1 arg2`。
+
+```
+if (condVar > someVal) {console.log("xxx")}
 ```
 
 
-
-逻辑保持不变，但原本写入HTML表单的隐藏字段，其值现在存储在与会话绑定的**Parameter**对象中。
-
-## URL重写示例—页面计数器
-
-同样，URL重写部分开发的页面计数器可以使用HTTP会话来存储计数变量。因为`int`是基本类型，所以使用`Integer`对象包装器，并调用其`intValue()`方法来获取实际值。
-
-```
-<%@ page session="true" %>
-<HTML>
-<HEAD>
-<TITLE>Page Counter Using HTTP Session</TITLE>
-</HEAD>
-<BODY>
-<H3>Page Counter Using HTTP Session</H3>
-<%
-    if (session.getAttribute("count") == null)
-        session.setAttribute("count", new Integer(0));
-
-    int count=((Integer) session.getAttribute("count")).intValue();
-
-    switch (count) {
-        case 0:
-%> This is the first time you have accessed this page. <%
-            break;
-        case 1:
-%> You have accessed the page once before.<%
-            break;
-        default:
-%> You have accessed the page <%= count %> times before.<%
-            break;
-    }
-
-    session.setAttribute("count", new Integer(count+1));
-%>
-<P>
-Click
-<A HREF="<%= response.encodeURL("Counter.jsp") %>">here</A>
-to visit the page again.
-</BODY>
-</HTML>
-```
-
-每次刷新页面时，计数都会递增，并以新的`Integer`包装器形式存储在会话中。请注意，用户点击以重新显示页面的超链接使用了`response.encodeURL()`，以确保无论用户是否接受Cookie，会话跟踪都能正常工作。
-
-## Cookies示例—语言偏好
-
-在Cookies部分，你了解了应用程序如何允许用户指定其语言偏好，以便在该会话的其余网页中以该语言显示。该应用程序使用了Cookie，以便该偏好设置即使在会话之间也能保持。如果不需要这种持久性，使用会话API也可以完成同样的事情。
-主要的`index.jsp`页面变化不大。它仍然使用资源包来获取消息文本，但现在是将其作为会话属性获取，而不是请求属性。另外，请注意页面指令现在是`session="true"`。
-
-```
-<%@ page session="true" %>
-<%@ page import="java.util.*" %>
-
-<%-- Get the appropriate resource bundle from the session --%>
-
-<jsp:include page="getLocale.jsp" flush="true"/>
-<%
-    ResourceBundle RB = (ResourceBundle)
-        session.getAttribute("RB");
-%>
-
-<HTML>
-<HEAD>
-<TITLE>Using Session API to Store Language Preference</TITLE>
-</HEAD>
-<BODY>
-<IMG SRC="images/lyric_note.png"><P>
-<HR>
-<%-- Show a row of hyperlinks with language choices --%>
-
-<jsp:include page="languageBar.jsp" flush="true"/>
-
-<%-- Display greeting in appropriate language --%>
-
-<H3><%= RB.getString("greeting") %></H3>
-
-</BODY>
-</HTML>
-```
-
-包含的模块—`getLocale.jsp`和`setPreferences.jsp`—是实际发生变化的地方。`setPreferences`现在可以根据接收到的语言和国家参数，实际加载相应的资源包。
-
-```
-<%@ page session="true" %>
-<%@ page import="java.util.*" %>
-<%
-    // Get parameters for language and country
-
-    String language = request.getParameter("language");
-    String country = request.getParameter("country");
-
-    // Get locale-specific resources
-
-    Locale locale = null;
-    if (language != null && country != null)
-        locale = new Locale(language, country);
-    if (locale == null)
-        locale = Locale.getDefault();
-
-    ResourceBundle RB = ResourceBundle.getBundle
-        ("jspcr.sessions.welcome", locale);
-
-    // Store the resource bundle as an attribute in the session
-
-    session.setAttribute("RB", RB);
-
-    // Redirect back to the calling JSP
-
-    String cameFrom = request.getParameter("cameFrom");
-
-    if (cameFrom == null)
-        cameFrom = request.getContextPath();
-
-    cameFrom = response.encodeRedirectURL(cameFrom);
-
-    response.sendRedirect(cameFrom);
-%>
-```
-
-资源包作为会话属性存储，用户被重定向回原始页面。请注意，“cameFrom” URL通过了`encodeRedirectURL()`方法处理，以防Cookie被关闭。
-`getLocale` JSP页面现在可以简单地在会话中查找资源包，如果找不到则使用默认资源包。
-
-```
-<%@ page session="true" %>
-<%@ page import="java.util.*" %>
-<%
-    // Get the existing resource bundle from the session,
-    // if one exists
-
-    ResourceBundle RB = (ResourceBundle)
-        session.getAttribute("RB");
-
-    // If not, use the default resource bundle
-
-    if (RB == null) {
-        RB = ResourceBundle.getBundle("jspcr.sessions.welcome");
-        session.setAttribute("RB", RB);
-    }
-%>
-```
-
-`languageBar.jsp`页面只需要在两处做一个改动。因为它为主页面和`setPreferences.jsp`编写URL，所以需要将这些URL通过`response.encodeURL()`处理，以便即使Cookie被关闭，会话跟踪也能工作：
-
-```
-<%@ page session="true" %>
-<%@ page import="java.util.*" %>
-<%
-    String thisURL = HttpUtils.getRequestURL(request).toString();
-    // Encode the session ID into the URL, if necessary
-    thisURL = response.encodeURL(thisURL);
-    thisURL = java.net.URLEncoder.encode(thisURL);
-
-    Object[][] locales = {
-        {new Locale("en", "US"), "English"},
-        {new Locale("de", "DE"), "Deutsch"},
-        {new Locale("es", "ES"), "Español"},
-        {new Locale("fr", "FR"), "Français"},
-        {new Locale("it", "IT"), "Italiano"},
-    };
-
-    for (int i = 0; i < locales.length; i++) {
-
-        Locale locale = (Locale) locales[i][0];
-        String name   = (String) locales[i][1];
-
-        StringBuffer sb = new StringBuffer();
-        if (i > 0)
-            sb.append(" | ");
-        sb.append("<A HREF=\"" );
-
-        // Encode the session ID into the generated URL
-
-        StringBuffer sb2 = new StringBuffer();
-        sb2.append("setPreferences.jsp?cameFrom=");
-        sb2.append(thisURL);
-        sb2.append("&language=");
-        sb2.append(locale.getLanguage());
-        sb2.append("&country=");
-        sb2.append(locale.getCountry());
-        String url = sb2.toString();
-        url = response.encodeURL(url);
-
-        sb.append(url);
-        sb.append("\"" );
-        sb.append(">");
-        sb.append(name);
-        sb.append("</A>");
-        out.println(sb);
-    }
-%>
-```
-
-## 会话绑定监听器
-
-会话API提供了一种机制，让对象可以跟踪它们何时被添加到会话或从会话中移除。希望接收这些事件通知的对象可以实现`HttpSessionBindingListener`接口。实现类必须提供两个方法：
-
--   public void valueBound(HttpSessionBindingEvent event)
--   public void valueUnbound(HttpSessionBindingEvent event)
-
-在这两种情况下，都会将一个`HttpSessionBindingEvent`实例传递给这些方法。`event`参数具有检索会话以及确定对象绑定到会话所用名称的方法。
-会话绑定监听器的主要优势在于，无论客户端是显式关闭应用程序还是会话超时，它们都能释放所获取的资源。这使得该接口在管理数据库连接时非常有用。JDBC 2.0提供了连接池功能，但许多驱动程序尚未实现。在这种情况下，一个驻留在会话中、知道在合适时机断开自身的连接是一个可行的替代方案。
-以下示例说明了这种技术。`BoundConnection`是`java.sql.Connection`对象的包装器，并实现了`HttpSessionBindingListener`，因此它可以在连接不再使用后关闭连接。
-
-```
-package jspcr.jdbc;
-
-import java.io.*;
-import java.sql.*;
-import java.text.*;
-import java.util.*;
-import javax.servlet.*;
-import javax.servlet.http.*;
-
-/**
- * A wrapper for a <CODE>Connection</CODE>
- * object that is aware it is in an HTTP session.
- * This enables it to shut down the connection
- * when the session is destroyed.
- */
-public class BoundConnection
-    implements HttpSessionBindingListener, Serializable
-{
-```
-
-
-
-private transient Connection connection;
-
-/**
- * 创建一个新的 <CODE>BoundConnection</CODE> 对象，
- * 用于指定的连接。
- * @param con 连接对象
- */
-public BoundConnection(Connection con)
-{
-    this.connection = con;
-}
-
-/**
- * 返回底层的连接对象
- */
-public Connection getConnection()
-{
-    return connection;
-}
-
-/**
- * 当 <CODE>BoundConnection</CODE>
- * 被存储到 HTTP 会话中时调用
- * @param event 绑定事件
- */
-public void valueBound(HttpSessionBindingEvent event)
-{
-    trace("bound", event);
-}
-
-/**
- * 当 <CODE>BoundConnection</CODE>
- * 从 HTTP 会话中移除时调用
- * @param event 解绑事件
- */
-public void valueUnbound(HttpSessionBindingEvent event)
-{
-    if (connection != null)
-        try {
-            connection.close();
-            connection = null;
-        }
-        catch (SQLException e) {
-            e.printStackTrace();
-        }
-    trace("unbound", event);
-}
-
-/**
- * 打印跟踪消息
- */
-private void trace(String s, HttpSessionBindingEvent event)
-{
-    HttpSession session = event.getSession();
-
-    java.util.Date now = 
-        new java.util.Date(System.currentTimeMillis());
-    java.util.Date last = 
-        new java.util.Date(session.getLastAccessedTime());
-
-    SimpleDateFormat fmt = new SimpleDateFormat("hh:mm:ss");
-    StringBuffer sb;
-
-    sb = new StringBuffer();
-    sb.append("TRACE: ");
-    sb.append(fmt.format(now));
-    sb.append(" session ");
-    sb.append(session.getId());
-    sb.append(" last accessed time ");
-    sb.append(fmt.format(last));
-    System.err.println(sb.toString());
-
-    sb = new StringBuffer();
-    sb.append("TRACE: ");
-    sb.append(fmt.format(now));
-    sb.append(" session ");
-    sb.append(session.getId());
-    sb.append(" connection ");
-    sb.append(s);
-    System.err.println(sb.toString());
-}
-}
-
-`BoundConnection` 构造函数将一个 `Connection` 对象存储为私有实例变量，并通过 `getConnection()` 方法使其可访问。`BoundConnection` 实现了 `HttpSessionBindingListener` 的两个方法：
-
-### 386 JSP: 完全参考手册
-
-`valueBound()` 和 `valueUnbound()`。在每个方法中，它都会写入一条跟踪消息，因此存在一条记录，显示连接是何时绑定或解绑的。关键特性是 `valueUnbound()` 方法，它关闭底层的连接。
-
-> **注意** `BoundConnection` 对象实现了 `Serializable`，因为会话可能被序列化，特别是在可分布式应用程序中。这使得将 `Connection` 实例变量标记为 `transient` 成为必要，这样 servlet 容器就不会尝试对其进行序列化。因此，`getConnection()` 的调用者需要检查返回值是否为 `null`，并在必要时创建一个新的 `BoundConnection`。
-
-因此，一个使用 `BoundConnection` 的 JSP 页面可以在会话开始时调用它，为其提供一个新打开的数据库连接。当一个 `BoundConnection` 被存储到会话中时，它的 `valueBound()` 方法会被触发。同一会话中的后续请求可以简单地从会话中检索 `BoundConnection` 并调用其 `getConnection()` 方法来获取底层的 `java.sql.Connection`。以下所示的可重用 `connect.jsp` 模块实现了此逻辑。
-
-```
-<%@ page import="java.sql.*" %>
-<%@ page import="jspcr.jdbc.*" %>
-<%
-    // 如果当前会话尚未绑定连接，则创建一个
-
-    if (session.getAttribute("bcon") == null) {
-
-        String driver =
-            application.getInitParameter("jdbc.driver");
-        String url =
-            application.getInitParameter("jdbc.url.internal");
-
-        Class.forName(driver);
-        Connection con = DriverManager.getConnection(url);
-
-        // 将连接绑定到此会话
-
-        BoundConnection bcon = new BoundConnection(con);
-        session.setAttribute("bcon", bcon);
-
-        // 设置超时间隔为三分钟
-
-        session.setMaxInactiveInterval(180);
-    }
-%>
-```
-
-## 第14章：会话与线程管理
-
-除了在必要时创建 `BoundConnection`，`connect.jsp` 还将会话超时间隔设置为三分钟。
-
-以下所示的应用程序使用 `BoundConnection` 为重复的数据库查询提供快速访问。`ComposerSearch.jsp` 提示输入国籍和世纪，然后搜索 LyricNote 作曲家数据库并显示结果。它包含 `connect.jsp` 以执行实际的连接和会话绑定工作。
-
-```
-<%@ page session="true" %>
-<%@ page import="jspcr.jdbc.*" %>
-<%@ page import="java.sql.*" %>
-<%
-  // 获取表单参数或使用默认值
-
-  String nationality = request.getParameter("nationality");
-  if (nationality == null)
-    nationality = "";
-
-  String yearRange = request.getParameter("yearRange");
-  if (yearRange == null)
-    yearRange = "1901-2000";
-%>
-<HTML>
-<HEAD>
-<TITLE>Composer Search</TITLE>
-</HEAD>
-<BODY>
-<CENTER>
-<H3>Composer Search</H3>
-<FORM METHOD="POST">
-<B>Nationality:</B>
-<INPUT TYPE="TEXT" NAME="nationality" VALUE="<%= nationality %>">
-<B>Century:</B>
-<SELECT NAME="yearRange">
-<%
-  // 创建世纪选项列表
-
-  for (int century = 16; century <= 20; century++) {
-    int fromYear = (century - 1) * 100 + 1;
-    int toYear = century * 100;
-    StringBuffer sb = new StringBuffer();
-    sb.append("<OPTION");
-    if (yearRange.startsWith("" + fromYear))
-      sb.append(" SELECTED");
-    sb.append(" VALUE='");
-    sb.append(fromYear);
-    sb.append("-");
-    sb.append(toYear);
-    sb.append("'>");
-    sb.append(century);
-    sb.append("th Century</OPTION>");
-    out.println(sb);
-}
-%>
-</SELECT>
-<INPUT TYPE="SUBMIT" VALUE="Search">
-</FORM>
-<%
-// 如果在表单中输入了值，则显示结果
-
-if (!nationality.equals("")) {
-%>
-
-<%-- 获取绑定的连接 --%>
-
-<jsp:include page="connect.jsp" flush="true"/>
-
-<TABLE BORDER=0 CELLPADDING=1 CELLSPACING=1>
-<%
-    BoundConnection bcon = (BoundConnection)
-        session.getAttribute("bcon");
-    Connection con = bcon.getConnection();
-    String sql = ""
-        + " SELECT   lname, fname, born, died"
-        + " FROM     composers"
-        + " WHERE    nationality = ?"
-        + " AND      ((born between ? and ?)"
-        + " OR       (died between ? and ?))"
-        + " ORDER BY born, lname"
-        ;
-    PreparedStatement pstmt = con.prepareStatement(sql);
-
-    int fromYear = Integer.parseInt(yearRange.substring(0, 4));
-    int toYear = Integer.parseInt(yearRange.substring(5));
-
-    pstmt.setString(1, nationality);
-    pstmt.setInt(2, fromYear);
-    pstmt.setInt(3, toYear);
-    pstmt.setInt(4, fromYear);
-    pstmt.setInt(5, toYear);
-    ResultSet rs = pstmt.executeQuery();
-    while (rs.next()) {
-        String lname = rs.getString(1);
-        String fname = rs.getString(2);
-        int born = rs.getInt(3);
-        int died = rs.getInt(4);
-%>
-<TR>
-    <TD><%= fname %> <%= lname %></TD>
-    <TD><%= born %>-<%= died %></TD>
-</TR>
-<%
-}
-rs.close();
-pstmt.close();
-%>
-</TABLE>
-<%
-}
-%>
-</CENTER>
-</BODY>
-</HTML>
-```
-
-要访问驻留在会话中的连接，应用程序只需检索 `bcon` 会话属性，将其转换为 `BoundConnection`，并调用其 `getConnection()` 方法即可。注意，没有必要显式关闭连接。当客户机在三分钟内没有进一步请求时，连接会自动关闭。生成的 Web 页面（如图 14-5 所示）可用于重复查询，仅首次查询需要新的连接。`System.err` 日志中的跟踪条目显示了 `BoundConnection` 在 HTTP 会话中的生命周期：
-
-```
-TRACE: 07:55:00 session 8720188469 last accessed time 07:55:00
-TRACE: 07:55:00 session 8720188469 connection bound
-TRACE: 07:59:38 session 8720188469 last accessed time 07:56:38
-TRACE: 07:59:38 session 8720188469 connection unbound
-```
-
-连接在 07:55:00 绑定到会话，并被使用了一次或多次，最后一次使用是在 07:56:38。三分钟后，在 07:59:38，会话超时，解绑了 `BoundConnection` 对象。这又导致 `valueUnbound()` 方法被调用，该方法关闭了底层的连接。
-
-### 线程管理
-
-Servlet 和 JSP 页面相对于旧的服务器端技术有一个显著优势，因为它们被加载到内存中，并在多线程环境中作为单个实例运行。然而，这种好处伴随着一个权衡。多线程模型
-
-引入了在更简单的应用模型中不存在的困难。例如，如果一个servlet有实例变量，它们可能会同时被不同的请求访问。如果两个请求都对这些变量进行写操作，它们的值可能是不可预测的。
-
-幸运的是，由于servlet引擎是用Java编写的，它可以利用Java内置的多线程应用程序支持。在本节中，你将学习一些基本的线程概念，研究两种servlet线程模型，并考虑一个高效的多线程应用程序。
-
-## 线程概念
-
-*线程*是具有自己的栈和程序计数器的单一顺序控制流。使用多个线程的程序看起来像是在同时做不止一件事。一个线程能够在同一进程中独立于其他线程操作，同时共享所有进程对象。
-
-Web服务器本身是线程可以发挥效用的一个例子。一个简单的Web服务器操作如下：
-
-1.  创建一个`ServerSocket`并调用其`accept()`方法来等待HTTP客户端请求。
-2.  获取`accept()`方法返回的客户端`Socket`对象，并启动一个单独的线程来处理其请求。
-3.  返回步骤1以在另一个线程处理最后一个请求的同时接受更多请求。
-
-Java（不仅限于JSP页面）通常使得创建和使用多个线程变得容易。语言和类库都是从底层开始就考虑到线程来构建的。`java.lang.Object`，所有对象的最终基类，具有用于同步线程操作的方法，这些方法被每个Java对象继承。
-
-一个线程由`java.lang.Thread`类的实例表示。一个新的`Thread`对象实际上在调用其`start()`方法之前并不与底层操作系统线程关联，这允许在其启动之前设置其属性（名称、优先级等）。`start()`方法被调用后，Java虚拟机创建一个操作系统线程，该线程开始执行线程的`run()`方法。一个`Thread`持续运行直到其`run()`方法返回或其`interrupt()`方法被调用。
-
-## 创建和启动线程
-
-有三种启动新线程的技术可用。第一种是子类化`Thread`并重写其`run()`方法。然后可以创建并单独启动该类的对象。下面的`Example1.java`演示了这种技术。它使用一个名为`CounterThread`的`Thread`子类来计数到八，在每次迭代时打印线程名称和时间，并在迭代之间等待随机的时间长度。
-
-```java
-import java.text.*;
-import java.util.*;
-
-/**
- * 一个演示简单多线程的类
- */
-public class Example1
-{
-    public static void main(String[] args)
-    {
-        /**
-         * 创建、命名并启动两个计数线程
-         */
-        Thread t1 = new CounterThread();
-        t1.setName("A");
-        t1.start();
-
-        Thread t2 = new CounterThread();
-        t2.setName("B");
-        t2.start();
-    }
-}
-
-/**
- * 一个计数到八的线程，在迭代之间
- * 等待随机的时间长度。
- */
-class CounterThread extends Thread
-{
-    /**
-     * 消息中使用的日期格式。包含毫秒。
-     */
-    public static final SimpleDateFormat FMT
-            = new SimpleDateFormat("hh:mm:ss.SSS aa");
-
-    /**
-     * 在新线程中启动run方法
-     */
-    public void start()
-    {
-        System.out.println("Starting " + getName());
-        super.start();
-    }
-
-    /**
-     * 计数器循环发生的地方。
-     */
-    public void run()
-    {
-        for (int i = 0; i < 8; i++) {
-            try {
-                sleep((long) (Math.random() * 500 + 100));
-            }
-            catch (InterruptedException e) {
-                break;
-            }
-            System.out.println
-                (FMT.format(new Date())
-                 + " Thread " + getName()
-                 + ": Count = " + i);
-        }
-        System.out.println("Leaving " + getName());
-    }
-}
-```
-
-主程序启动两个名为A和B的CounterThread实例。以下程序输出显示两个线程同时执行，并且它们的迭代偶尔重叠：
-
-```
-Starting A
-Starting B
-09:55:40.465 PM Thread B: Count = 0
-09:55:40.545 PM Thread A: Count = 0
-09:55:40.615 PM Thread B: Count = 1
-09:55:40.846 PM Thread A: Count = 1
-09:55:41.056 PM Thread B: Count = 2
-09:55:41.346 PM Thread B: Count = 3
-09:55:41.366 PM Thread A: Count = 2
-09:55:41.687 PM Thread A: Count = 3
-09:55:41.717 PM Thread B: Count = 4
-09:55:41.847 PM Thread B: Count = 5
-09:55:41.967 PM Thread B: Count = 6
-09:55:42.017 PM Thread A: Count = 4
-09:55:42.137 PM Thread B: Count = 7
-Leaving B
-09:55:42.268 PM Thread A: Count = 5
-09:55:42.428 PM Thread A: Count = 6
-09:55:42.848 PM Thread A: Count = 7
-Leaving A
-```
-
-第二种技术是让一个类实现`Runnable`接口。在这种情况下，该类必须提供自己的`run()`方法，并创建一个`Thread`对象来执行实际工作。该类必须在`Thread`构造函数中传递对其自身的引用（使用`this`变量）。下面的`Example2.java`展示了这种技术的实际应用。它紧密模仿`Example1`，创建两个线程并将每个线程的`this`变量传递给它。注意，两个线程可以同时运行相同的`run()`方法。
-
-```java
-import java.text.*;
-import java.util.*;
-
-/**
- * 一个演示使用Runnable接口的
- * 简单多线程的类。
- */
-public class Example2 implements Runnable
-{
-    public static void main(String[] args)
-    {
-        new Example2();
-    }
-
-    public Example2()
-    {
-        /**
-         * 启动两个使用此run方法的Runnable线程。
-         */
-
-        Thread t1 = new Thread(this);
-        t1.setName("A");
-        t1.start();
-
-        Thread t2 = new Thread(this);
-        t2.setName("B");
-        t2.start();
-    }
-
-    /**
-     * 消息中使用的日期格式。包含毫秒。
-     */
-
-    public static final SimpleDateFormat FMT
-        = new SimpleDateFormat("hh:mm:ss.SSS aa");
-
-    /**
-     * 计数器循环发生的地方。
-     */
-    public void run()
-    {
-        Thread t = Thread.currentThread();
-        System.out.println("Starting " + t.getName());
-        for (int i = 0; i < 8; i++) {
-            try {
-                t.sleep((long) (Math.random() * 500 + 100));
-            }
-            catch (InterruptedException e) {
-                break;
-            }
-            System.out.println
-                (FMT.format(new Date())
-                 + " Thread " + t.getName()
-                 + ": Count = " + i);
-        }
-        System.out.println("Leaving " + t.getName());
-    }
-}
-```
-
-Example2的输出与Example1的输出类似：
-
-```
-Starting main
-Starting A
-10:10:54.269 PM Thread A: Count = 0
-10:10:54.299 PM Thread main: Count = 0
-10:10:54.620 PM Thread main: Count = 1
-10:10:54.690 PM Thread A: Count = 1
-10:10:54.980 PM Thread main: Count = 2
-10:10:55.180 PM Thread A: Count = 2
-10:10:55.351 PM Thread A: Count = 3
-10:10:55.461 PM Thread main: Count = 3
-10:10:55.671 PM Thread A: Count = 4
-10:10:55.811 PM Thread A: Count = 5
-10:10:56.042 PM Thread main: Count = 4
-10:10:56.272 PM Thread main: Count = 5
-10:10:56.382 PM Thread A: Count = 6
-10:10:56.753 PM Thread main: Count = 6
-10:10:56.773 PM Thread A: Count = 7
-Leaving A
-10:10:56.943 PM Thread main: Count = 7
-Leaving main
-```
-
-使用`Runnable`接口的一个缺点是，它是一个只有一个`run()`方法的类，因此无论创建多少线程，它只能执行一种后台操作。例如，一个既要执行动画又要监听套接字或输入流的应用程序，无法通过实现`Runnable`来完成。
-
-Java 2引入了第三种启动线程的技术，即`java.util.Timer`和`java.util.TimerTask`类。`Timer`类充当延迟或重复任务的调度器。这些任务必须扩展`TimerTask`类并提供`run()`方法。任务通过`Timer.scheduleTask()`方法的几种形式之一安排执行。与另外两种方法不同，`TimerTask`的`run()`方法通常不包含执行循环，因为`Timer`可以自动调度重复任务的执行。下面的`Example3.java`展示了使用`Timer`和`TimerTask`完成的计数器示例。
-
-```java
-import java.text.*;
-import java.util.*;
-
-/**
- * 一个演示使用java.util.Timer的
- * 简单多线程的类
- */
-public class Example3
-{
-    public static void main(String[] args)
-    {
-        /**
-```
-
-
-
-## 第14章：会话与线程管理
-
-```java
-/*
- * 创建一个计时器来控制计时任务
- */
-Timer timer = new Timer();
-
-/**
- * 创建两个计时任务并调度
- * 它们以半秒为间隔执行，
- * 将第二个任务的开始延迟250毫秒
- */
-TimerTask t1 = new CounterTimerTask("A");
-timer.schedule(t1, 0, 500);
-
-TimerTask t2 = new CounterTimerTask("B");
-timer.schedule(t2, 250, 500);
-}
-}
-
-/**
- * 一个计数到八的TimerTask
- */
-class CounterTimerTask extends TimerTask
-{
-    /**
-     * 消息中使用的日期格式。包含毫秒。
-     */
-    public static final SimpleDateFormat FMT
-            = new SimpleDateFormat("hh:mm:ss.SSS aa");
-
-    private String name;
-    private int counter;
-
-    public CounterTimerTask(String name)
-    {
-        this.name = name;
-        this.counter = 0;
-    }
-
-    /**
-     * 计数循环发生的地方。
-     */
-    public void run()
-    {
-        if (counter == 0)
-            System.out.println("Starting " + name);
-
-        System.out.println
-            (FMT.format(new Date())
-            + " Thread " + name
-            + ": Count = " + counter);
-
-        counter++;
-        if (counter >= 8) {
-            System.out.println("Leaving " + name);
-            cancel();
-        }
-    }
-}
-```
-
-`CounterTimerTask` 对象跟踪其被调用的次数，并在达到迭代限制时调用自己的 `cancel()` 方法。由于 `Example3` 对每个任务使用了固定的时间表，计数消息大约每隔四分之一秒交替出现：
-
-```
-Starting A
-10:57:44.209 PM Thread A: Count = 0
-Starting B
-10:57:44.460 PM Thread B: Count = 0
-10:57:44.710 PM Thread A: Count = 1
-10:57:44.961 PM Thread B: Count = 1
-10:57:45.211 PM Thread A: Count = 2
-10:57:45.461 PM Thread B: Count = 2
-10:57:45.712 PM Thread A: Count = 3
-10:57:45.962 PM Thread B: Count = 3
-10:57:46.212 PM Thread A: Count = 4
-10:57:46.463 PM Thread B: Count = 4
-10:57:46.713 PM Thread A: Count = 5
-10:57:46.963 PM Thread B: Count = 5
-10:57:47.214 PM Thread A: Count = 6
-10:57:47.464 PM Thread B: Count = 6
-10:57:47.715 PM Thread A: Count = 7
-Leaving A
-10:57:47.965 PM Thread B: Count = 7
-Leaving B
-```
-
-## 同步线程
-
-多线程应用程序通常包含必须由单个线程执行的操作，或者需要多个线程协作执行的操作。为了实现这一点，必须存在一种保护代码临界区的方法，这样两个线程就不会同时执行它们。
-
-为了说明为什么这是必要的，请看以下程序示例。该程序为一个计费应用发布发票号码。最后使用的发票号码存储在一个文本文件中。一个新发票号码是在一个读取文件、将发票号码加一并写回磁盘的方法中分配的。该程序启动五个线程来模拟多个在线用户在随机时间访问发票编号例程。这个演示中的发票处理只是打印线程的名称和分配给它的发票号码。看看你能否发现这个漏洞：
-
-```java
-import java.io.*;
-import java.net.*;
-import java.util.*;
-
-/**
- * 一个线程同步问题的插图
- */
-public class SynchTest implements Runnable
-{
-    public static void main(String args[])
-    {
-        new SynchTest();
-    }
-
-    /**
-     * 创建一个新的SynchTest对象，该对象启动
-     * 五个发票处理线程。
-     */
-    public SynchTest()
-    {
-        Thread[] threads = {
-            new Thread(this, "A"),
-            new Thread(this, "B"),
-            new Thread(this, "C"),
-            new Thread(this, "D"),
-            new Thread(this, "E"),
-        };
-        for (int i = 0; i < threads.length; i++)
-            threads[i].start();
-    }
-
-    /**
-     * 模拟处理十张发票。这个方法将由
-     * 五个线程中的每一个运行。
-     */
-    public void run()
-    {
-        try {
-            for (int i = 0; i < 10; i++) {
-                handleInvoice();
-                Thread.sleep((long) (Math.random()*500));
-            }
-        }
-        catch (InterruptedException ignore) {
-        }
-        catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
-
-    /**
-     * 发票处理方法（有一个微妙的漏洞）
-     */
-    public void handleInvoice()
-        throws IOException
-    {
-        Thread t = Thread.currentThread();
-
-        // 从invoice.dat获取最后使用的发票号码
-        BufferedReader in =
-            new BufferedReader(
-                new FileReader("invoice.dat"));
-        int invoiceNumber = Integer.parseInt(in.readLine());
-        in.close();
-
-        // 加1得到当前发票号码
-        invoiceNumber++;
-        System.out.println
-            (t.getName() + " handles invoice " + invoiceNumber);
-
-        // 更新发票号码
-        PrintWriter out =
-            new PrintWriter(
-                new FileWriter("invoice.dat"));
-        out.println(invoiceNumber);
-        out.flush();
-        out.close();
-    }
-}
-```
-
-程序可能运行多次都没有任何问题，为每个线程分配连续的发票号码。但过一段时间后，会出现如下输出：
-
-```
-A handles invoice 68401
-B handles invoice 68402
-C handles invoice 68403
-D handles invoice 68404
-E handles invoice 68405
-E handles invoice 68406
-D handles invoice 68407
-A handles invoice 68408
-D handles invoice 68409
-B handles invoice 68410
-B handles invoice 68411
-E handles invoice 68412
-C handles invoice 68412
-B handles invoice 68413
-D handles invoice 68414
-E handles invoice 68415
-B handles invoice 68416
-B handles invoice 68417
-A handles invoice 68418
-```
-
-发票号码68412在列表中出现了两次，被分配给了线程E和线程C。发生了什么？
-
-问题在于：从读取发票号码到将其重写到 `invoice.dat` 文件的这个时间间隔内，另一个执行相同方法的线程可能正在读取该文件并获取旧号码。这个线程然后可以递增它并更新文件，但这样就可能导致发票号码重复。
-
-为了防止这种情况，Java提供了一种获取所有线程都尊重的对象的排他锁的方法。这种锁定机制称为 *同步*，由 `synchronized` 关键字触发。可以使用以下语法对单个代码块进行同步：
-
-```java
-synchronized (object) {
-    // 需要同步的代码
-}
-```
-
-其中 *object* 是对任何对象的引用。可以通过使用 `synchronized` 关键字作为方法修饰符来对整个方法进行同步，例如，
-
-```java
-public synchronized void myMethod() {
-    // 需要同步的代码
-}
-```
-
-这在功能上等同于以下内容：
-
-```java
-public void myMethod() {
-    synchronized(this) {
-        // 需要同步的代码
-    }
-}
-```
-
-当一个线程遇到同步块时，它首先尝试获取指定对象的锁。如果线程成功，它执行该块并释放锁。如果线程无法获取锁，它会等待锁可用，为自己获取锁，执行该块，然后释放锁。Java虚拟机确保这些操作一次只由一个线程执行。
-
-在发票处理示例中，可以通过同步 `handleInvoice()` 方法来消除重复发票问题⁵：
-
-```java
-public synchronized void handleInvoice() throws IOException
-{
-    // 读取文件，递增发票号码，
-    // 并更新文件。
-    ...
-}
-```
-
-> ⁵ 当然，同步无法防止某些其他Java类或某些在Java虚拟机之外运行的进程更新 `invoice.dat` 文件。该示例假设您对该文件拥有排他控制权。
-
-出于性能考虑，不要同步比必要更多的代码非常重要，因为这会强制线程在同步部分单线通行。整个 `handleInvoice()` 方法不需要同步，只需要同步从打开文件读取到关闭文件写入的代码。
-
-## Servlet线程模型
-
-Servlet API利用Java内置的多线程支持，以确保响应式请求处理和良好的吞吐量。在这样做的同时，它在如何使用线程方面提供了一些灵活性。将请求分派到一个或多个线程的过程称为 *servlet线程模型*。您可以选择两种模型：
-
-- 多个线程运行单个servlet实例，这是 *默认线程模型*。
-- 多个实例，每个实例在自己的线程中运行。这被称为 *单线程模型*。
-
-让我们考虑一下在每种模型中操作的含义。
-
-## 默认线程模型
-
-在默认模型中，只加载servlet（或JSP）的单个实例。<sup>6</sup> Servlet引擎维护一个线程池，并在请求到达时将它们分配给请求。每个线程运行适当的服务方法，通常是 `doGet()` 或 `doPost()`。在活动高峰期，许多请求可能同时通过相同的servlet方法运行，但是，由于每个线程有自己的指令指针和局部变量堆栈，因此请求之间不会发生冲突。图14-6说明了默认模型，显示三个请求由三个线程处理。
-
-默认模型提供了良好的吞吐量，但存在一些限制。因为只有一个servlet实例，所以任何实例变量只存在一份副本。如果不采取预防措施并且代码允许写入变量，一个线程可能会覆盖另一个线程需要的值。例如，在图14-6中，请求2与请求1和请求3同时运行。如果它们都在 `doGet()` 方法中写入实例变量，并且之后读取它，它们的写入和读取可能会重叠。此外，如果 `doGet()` 或 `doPost()` 方法调用子例程，它必须将所有必要的对象作为参数传递，因为它不能依赖实例变量在写入和读取之间保持其值。
-
-因此，避免使用实例变量，除非它们是只读的。这听起来可能像是一种限制，但这只是不同的观点。真正的工作单元，
-
-> ⁶ 技术上，每个servlet名称一个实例。多个servlet名称可能与web.xml部署描述符中的同一个servlet类关联。详情参见第18章。
-
-
-
-## **404** JSP：完全参考手册
-
-毕竟，是请求本身，而不是 servlet 实例。任何类型的对象都可以作为请求属性以完全线程安全的方式存储：
-
-```java
-public void doGet(
-    HttpServletRequest request,
-    HttpServletResponse response)
-    throws ServletException, IOException
-{
-    ...
-    openConnection(request);
-    runQuery(request);
-    ...
-}
-
-public void openConnection(HttpServletRequest request)
-    throws SQLException
-{
-    request.setAttribute
-        ("connection", DriverManager.getConnection(...));
-}
-```
-
-```java
-public void runQuery(HttpServletRequest request) throws SQLException
-{
-    Connection con = (Connection)
-        request.getAttribute("connection");
-    Statement stmt = con.createStatement();
-    ResultSet rs = stmt.executeQuery("SELECT ...");
-    request.setAttribute("resultSet", rs);
-}
-```
-
-同样，你可以同步 servlet 方法中的关键代码段，但必须小心避免过度同步，从而对性能产生不利影响。
-
-## 单线程模型
-
-默认模型的替代方案是单线程模型。在此环境中，servlet 引擎保证同一时间只有一个请求在运行 servlet 实例的 service 方法。要使用此模型，servlet 必须实现 `SingleThreadModel` 接口。此接口不包含任何方法；它仅仅标记该 servlet 需要这种线程处理。在 JSP 页面中，通过页面指令选择此模型：
-
-```jsp
-<%@ page isThreadSafe="false" %>
-```
-
-这会导致生成的 servlet 指明它实现了 `SingleThreadModel`。
-
-对于单线程 servlet，同一时间只能有一个线程执行其 `doGet()` 或 `doPost()` 方法，因此这意味着实例变量是线程安全的。但是，servlet 引擎可以自由创建尽可能多的 servlet 实例，以维持足够的性能。图 14-7 展示了这种操作模式，其中请求 3 等待请求 1 完全完成后才运行，而请求 2 则在与其它请求同一时间的不同实例中运行。
-
-`SingleThreadModel` 是许多混淆的根源。你会在 Java 新闻组中发现抱怨网络或数据库连接未被妥善隔离的帖子，尽管这些连接是在实现了 `SingleThreadModel` 的 servlet 中使用的。原因很容易理解：唯一被设为线程安全的是 servlet 实例本身。但是，由于存在多个实例，外部资源并未受到保护免受并发访问。
-
-很难找到单线程模型所带来的任何显著优势。只需稍加规划和明智的同步，默认模型通常是更好的选择。
-
-## 多线程应用程序
-
-在许多服务器端环境中，多线程特别有用。一种场景是运行自动启动的后台进程，它不与任何特定请求相关联，类似于 Unix 守护进程或 Windows NT 服务。这在 servlet 环境中可以轻松实现，使用以下技术：
-
-1.  让 `init()` 方法启动一个执行所需任务的线程。这可以包括打开一个套接字来处理请求，或者定期读取一个网页以获取动态更新的数据，例如股票报价或新闻头条。在 servlet 上下文中维护对该线程的引用。
-2.  严格将 `doGet()` 方法用于命令、管理任务和状态报告。提供一个可以关闭或重启后台线程的命令通常是理想的。
-3.  在 `destroy()` 方法中，在释放其使用的任何资源后关闭该线程。
-
-可以在部署描述符中将 servlet（或 JSP）指定为 `load-on-startup`，这样它在 servlet 引擎运行时就会运行，无需用户登录。由于 servlet 引擎本身通常可以作为守护进程或服务运行，这等同于能够将此类进程编写为 Java servlet。
-
-## 带状态消息的长时间运行请求
-
-多线程的另一个有益用途是处理长时间运行的请求，例如复杂的数据分析或其他项目式的请求。如果客户端请求一个需要相当长时间的服务器进程，客户端和 servlet 引擎都只能等待其完成。不过，情况并非必须如此。
-
-想想打印后台处理的工作原理。用户可以在文字处理应用程序中单击“打印”按钮，仅在打印请求排队时经历短暂的停顿。通常会出现一些消息，指明哪个打印机接收了请求，并可能提供一个标识打印任务的任务 ID。后台处理的输出随后在队列中等待打印机空闲，但用户可以自由地继续编写文档或执行任何其他任务。这些其他任务可能包括监控打印队列状态、暂停和释放任务、更改其优先级、取消任务等等。
-
-JSP 页面可以以类似的方式运行。它可以通过启动一个后台线程来执行复杂任务，而不是在当前线程中运行，并将对该线程的引用作为会话属性保存。用户可以收到通知，表明请求已排队并正在处理中。JSP 页面还可以提供显示请求状态的界面，并允许用户暂停、释放或取消它。当请求完成时，JSP 页面可以提供一个超链接来查看结果。由极其智能的 JSP 页面处理的极长时间运行的请求，甚至可能会将其结果通过电子邮件发送给用户。
-
-这种技术的一个变体可用于向用户提供一个状态屏幕，表明请求正在处理中，当请求完成时，该屏幕会被结果替换。该技术的关键在于使用一个后台会话作用域的线程来执行工作，并使用 `<META HTTP-EQUIV="REFRESH">` HTML 标签让 Web 浏览器自动监控状态。
-
-在以下示例中，用户正在登录并通过耗时的模拟数据库操作请求身份验证。在处理身份验证请求时，用户会看到一条“正在验证，请稍候...”的消息。当请求完成时，此消息会被身份验证结果替换。与此同时，servlet 引擎可以自由处理其他请求，而无需等待身份验证请求完成。
-
-此会话中客户端与服务器之间的基本对话如下：
-
-- **客户端**：请验证我的身份。UserID=MyUserID，密码=MyPassword
-- **服务器**：好的，两秒钟后回电获取状态。
-- **客户端**：*（两秒后）* 你完成了吗？
-- **服务器**：没有，两秒钟后回电获取状态
-- **客户端**：*（两秒后）* 你完成了吗？
-- **服务器**：没有，两秒钟后回电获取状态
-- **客户端**：*（两秒后）* 你完成了吗？
-- **服务器**：是的，您已通过身份验证 *（或未通过）*。
-
-用户无需手动请求更新的状态。HTML 提供了一种客户端自动方式来定期刷新页面：
-
-```html
-<META HTTP-EQUIV="REFRESH" CONTENT="seconds; URL=url">
-```
-
-HTML 文档中存在此 `<META>` 标签会使浏览器等待指定的秒数，然后重定向到指定的 URL。此功能通常用于指示网站已迁移，用户将被自动转发到新地址。
-
-以下 JSP 使用一个模拟数据库身份验证延迟的后台工作线程来实现此协议。
-
-```jsp
-<%--
-Authenticator.jsp
-
-    一个在长时间运行的请求期间显示状态消息的 JSP 页面，
-    不会占用服务器资源等待请求完成。
---%>
-<%
-
-    // 检查是否有一个身份验证工作线程正在运行
-
-    WorkerThread worker = (WorkerThread)
-        session.getAttribute("worker");
-
-    // 如果没有，则创建一个新的并开始身份验证
-
-    if (worker == null) {
-        String userID = request.getParameter("userID");
-        String password = request.getParameter("password");
-        worker = new WorkerThread(userID, password);
-        session.setAttribute("worker", worker);
-    }
-
-    // 现在显示“请稍候”屏幕或“用户已验证”屏幕
-
-    if (!worker.isDone()) {
-        String url = HttpUtils.getRequestURL(request).toString();
-        url = response.encodeURL(url);
-%>
-```
-
-
-
-## 第14章：会话与线程管理
-
-```html
-<HTML>
-<HEAD>
-<TITLE>Please Wait</TITLE>
-<META HTTP-EQUIV="REFRESH" CONTENT="2; URL=<%= url %>">
-</HEAD>
-<BODY>
-Authenticating, please wait...
-</BODY>
-</HTML>
-<%
-    }
-    else {
-%>
-<HTML>
-<HEAD><TITLE>Done</TITLE></HEAD>
-<BODY>
-Authentication complete.
-<%= worker.isAuthenticated() ? " You pass!" : " You fail!" %>
-</BODY>
-</HTML>
-<%
-    // Done with worker
-    session.invalidate();
-    }
-%>
-<%!
-/**
-* A background thread that performs a potentially
-* long-running task (authentication from a database).
-*/
-public class WorkerThread implements Runnable
-{
-    private boolean done;
-    private boolean authenticated;
-    private Thread kicker;
-
-    public WorkerThread(String userID, String password)
-    {
-        done = false;
-        authenticated = false;
-        kicker = new Thread(this);
-        kicker.start();
-    }
-
-    public boolean isDone()
-    {
-        return done;
-    }
-
-    public boolean isAuthenticated()
-    {
-        return authenticated;
-    }
-
-    public void run()
-    {
-        // Do the work here
-
-        try {
-
-            // Pretend to do something that takes five seconds
-
-            for (int i = 0; i < 5; i++)
-                Thread.sleep(1000);
-
-            // Randomly authenticate 80% of all users
-
-            authenticated = (Math.random() > 0.2);
-
-            // We are done
-
-            done = true;
-        }
-        catch (InterruptedException ignore) {}
-        finally {
-            kicker = null;
-        }
-    }
-}
-%>
-```
-
-# 410 JSP：权威参考
-
-## 应用考量
-
-JSP环境提供了一系列丰富的选择，用于将应用特性映射到HTTP环境。主要的考量是对象作用域，即一个属性有效的时间段。页面上下文定义了四种作用域：
-
-- page
-- request
-- session
-- application
-
-每种作用域都有自己的生命周期，属性可以存储在任何一种作用域中。特定作用域中的对象可以被同一Servlet上下文中的JSP页面和Servlet访问。开发者的任务是根据对象的使用需求选择匹配的对象作用域。
-
-页面作用域等同于单个JSP页面中`_jspService()`方法的生命周期。例如，可以将一个用户ID字符串赋予此页面作用域，如下所示：
-
-```jsp
-pageContext.setAttribute
-    ("userID", userID, PageContext.PAGE_SCOPE);
-```
-
-或者简单地：
-
-```jsp
-pageContext.setAttribute("userID", userID);
-```
-
-相应的`getAttribute()`方法可用于检索对象。
-
-既然对象已经可以作为Java变量访问，为什么还要费心将它们存储在具有页面作用域的页面上下文中呢？主要的背景是JSP自定义标签，它们使用页面上下文在标签处理器和JSP页面之间进行通信。有关JSP自定义标签的详细信息，请参见第11章。
-
-请求作用域与页面作用域几乎相同，但它还包括通过`<jsp:include>`或`<jsp:forward>`调用的其他JSP页面或Servlet。可以直接在请求中设置属性：
-
-```java
-request.setAttribute("userID", userID);
-```
-
-或者通过页面上下文：
-
-```java
-pageContext.setAttribute
-    ("userID", userID, PageContext.REQUEST_SCOPE);
-```
-
-两种方法调用的效果是相同的；`pageContext.setAttribute()`方法只是调用`request.setAttribute()`。请求作用域适用于与单个请求相关的对象，这些对象可能在Servlet中设置，然后在`RequestDispatcher`将请求转发到的JSP页面中使用。
-
-*会话作用域*用于多个请求，这些请求使用相同的会话ID进行自我标识，并与该ID的活动`HttpSession`相关联。可以直接在`session`对象中设置属性：
-
-```java
-session.setAttribute("userID", userID);
-```
-
-或者通过页面上下文：
-
-```java
-pageContext.setAttribute
-	("userID", userID, PageContext.SESSION_SCOPE);
-```
-
-当同时满足以下三个要求时，会话作用域是合适的：
-
-- 应用需要多个HTTP请求。
-- 数据需要在请求之间持久化。
-- 一个或多个服务器端对象必须在请求之间保持特定的状态。
-
-正如本章所考虑的，当不需要HTTP会话时，也存在替代方案，如隐藏字段、URL重写和Cookie。
-
-*应用作用域*是Web应用中所有Servlet和JSP页面的公共命名空间。它在请求之间自动持久化，不需要会话。可以通过在`web.xml`部署描述符中使用`<context-param>`在应用作用域中设置静态初始化参数：
-
-```xml
-<context-param>
-    <param-name>jdbc.driver</param-name>
-    <param-value>sun.jdbc.odbc.JdbcOdbcDriver</param-value>
-</context-param>
-
-<context-param>
-    <param-name>jdbc.url</param-name>
-    <param-value>jdbc:odbc:composers</param-value>
-</context-param>
-```
-
-这些静态参数可以在Servlet或JSP页面中通过Servlet上下文`getInitParameter()`方法检索：
-
-```java
-String driver = application.getInitParameter("jdbc.driver");
-String url = application.getInitParameter("jdbc.url");
-```
-
-可以使用与其他三种作用域相同的方法在应用作用域中存储和检索对象：
-
-```java
-pageContext.setAttribute("userID", userID, PageContext.APPLICATION_SCOPE);
-```
-
-或者：
-
-```java
-application.setAttribute("userID", userID);
-```
-
-应用作用域最适用于需要在请求之间持久化的对象、必须对应用的所有用户可见的对象，或需要在其他Servlet和JSP页面之间共享的对象。
-
-## 总结
-
-Web应用模型并不会自动映射到HTTP协议。HTTP是无状态的，不会记住客户端在一次请求与下一次请求之间的任何信息。Web浏览器环境也带来了复杂性——在一个应用中，每个页面都依赖于其前序页面，但用户可能乱序浏览页面，并在没有发出完成信号的情况下离开应用。
 
 这个问题的解决方案是让客户端（浏览器）记住某些细节，并在每次发出请求时提醒服务器。这可以涉及客户端管理所有数据，但实际上更常见的是客户端只记住某种标识符，服务器使用该标识符从数据库中检索其余数据。这种虚拟会话（虚拟是因为不涉及持久连接）通常被称为会话。
 
 本章讨论了四种会话管理技术：
 
 - **HTML表单中的隐藏字段** 这些字段使用简单，但只能通过HTML表单传输。如果用户单击超链接，隐藏字段（因此会话）就会丢失。
+
 - **URL重写** 这涉及将会话标识符附加到JSP页面生成的所有URL。从性能角度来看，这种技术可能代价高昂。
+
 - **Cookies** 小型命名数据元素被发送到客户端，并在页面再次访问时返回给服务器。Cookies的优点是它们可以持续任意长的时间，甚至在客户端计算机关闭后也是如此。缺点是由于隐私方面的担忧，一些用户会关闭Cookie支持。
 
 - **会话API** Servlet引擎可以创建一个`HttpSession`对象，该对象充当持久化对象的仓库，这些对象在来自同一客户端在同一应用中的请求之间持久存在。客户端使用Cookie或URL重写来记住会话的ID。Servlet引擎确定客户端接受哪种技术并相应地进行调整。
@@ -11383,8 +10651,6 @@ Web应用模型并不会自动映射到HTTP协议。HTTP是无状态的，不会
 JSP页面由于运行在纯Java环境中，可以完全访问Java对多线程应用的支持。本章讨论了基本的线程概念，如如何创建、启动和同步线程，然后考虑了两种Servlet线程模型。并给出了两个使用多线程的Web应用示例。
 
 尽管原始HTTP协议并未计划用于动态内容，但该协议已被证明具有相当强的扩展能力。在此灵活性的基础上，会话API为在Web应用环境中实现HTTP工作提供了框架。
-
-
 
 # 第15章
 
@@ -11401,6 +10667,7 @@ JSP页面由于运行在纯Java环境中，可以完全访问Java对多线程应
 对bean的定义被刻意设得很宽泛。一个*bean*就是一个满足两个要求的Java类：
 
 - 它有一个无参构造函数。
+
 - 它实现了`Serializable`或`Externalizable`接口以使其具有持久性。
 
 根据这个定义，大多数类已经是bean，或者只需稍加改动就能转换为bean。除了Java虚拟机之外，运行bean不存在其他必需的上下文。这使得构造正确的bean可以在任何Java环境中使用——无论是applet、servlet、JSP页面，还是独立的Java应用程序。
@@ -11506,8 +10773,11 @@ public class Mortgage implements Serializable
 Mortgage bean有四个属性：
 
 - **principal** 借款金额。
+
 - **rate** 以百分比表示的年利率。例如，6%应输入为6.0。
+
 - **term** 还款的月数。
+
 - **payment** 一个只读属性。
 
 请注意，前三个属性都有对应的私有数据字段，而第四个没有，它是按需计算的。这强调了关键在于`get`和`set`方法的存在。这些方法是bean向外部世界展示的唯一接口。
@@ -11565,83 +10835,138 @@ private void readObject(ObjectInputStream in)
 import java.io.*;
 ```
 
-
-
 public class CounterBean 实现了 Runnable 和 Serializable 接口
+
 {
+
     private transient Thread thread;
+
     private int count;
 
     /**
+
      * 创建一个新的 CounterBean，将其计数
+
      * 初始化为零，并启动计数线程
+
      */
+
     public CounterBean()
+
     {
+
         count = 0;
+
         start();
+
     }
 
     /**
+
      * 从对象流中恢复此 CounterBean
+
      * 并重新启动线程
+
      */
+
     private void readObject(ObjectInputStream in)
+
         throws IOException
+
     {
+
         try {
 
             // 首先调用此方法以恢复所有
+
             // 非 transient 字段
 
             in.defaultReadObject();
+
         }
+
         catch (ClassNotFoundException e) {
+
             throw new IOException(e.getMessage());
+
         }
 
         // 重新启动线程
 
         start();
+
     }
 
     /**
+
      * 提供一种关闭线程的方法
+
      */
+
     public void interrupt()
+
     {
+
         if (thread != null)
+
             thread.interrupt();
+
     }
 
     /**
+
      * 启动计数线程。此方法
+
      * 在对象首次创建时由构造函数调用，
+
      * 也在对象反序列化时由 readObject 方法调用。
+
      */
+
     private void start()
+
     {
+
         if (thread == null) {
+
             thread = new Thread(this);
+
             thread.setPriority(Thread.MIN_PRIORITY);
+
             thread.start();
+
         }
+
     }
 
     /**
+
      * 每秒递增并打印计数器的值。
+
      */
+
     public void run()
+
     {
+
         try {
+
             for (;;) {
+
                 Thread.sleep(1000);
+
                 count++;
+
                 System.out.println(count);
+
             }
+
         }
+
         catch (InterruptedException e) {}
+
     }
+
 }
 
 JSP：完整参考手册
@@ -11714,7 +11039,9 @@ public class CBTest
 正如你所看到的，JavaBeans 也是 Java 类，因此可以在 JSP 页面中使用脚本段、声明和表达式进行创建和操作。然而，JSP 规范为 bean 提供了特殊支持，使其能够在更高层次上进行脚本化。这种支持包括三个标准动作：
 
 - `<jsp:useBean>` 用于声明、实例化和初始化 bean
+
 - `<jsp:setProperty>` 用于设置 bean 属性
+
 - `<jsp:getProperty>` 用于检索 bean 属性值
 
 以下各节将讨论这些动作中的每一个。
@@ -11746,8 +11073,11 @@ public class CBTest
 *scope* 指定 bean 存在的命名空间。这些与 *PageContext* 对象维护的范围相同。可能的值是：
 
 - **PAGE** 在此 JSP 页面的持续时间内有效。这是默认范围。
-- **REQUEST** 在此 JSP 页面的剩余部分以及通过 `<jsp:forward>` 或 `<jsp:include>` 动作提供此请求的任何其他资源中有效。
+
+- **REQUEST** 在此 JSP 页面的剩余部分以及通过 `<jsp:forward>` 或 `<jsp:include>` 动作提供此请务的任何其他资源中有效。
+
 - **SESSION** 在此 HTTP 会话中执行的任何 JSP 页面或 servlet 期间有效。
+
 - **APPLICATION** 在此 Web 应用程序（servlet 上下文）的任何 JSP 页面或 servlet 中有效。
 
 任何这些范围中的 bean 都可以通过 `pageContext` 变量的 `getAttribute()` 和 `setAttribute()` 方法进行访问。`request`、`session` 或 `application` 命名空间中的 bean 可以分别在 servlet 中通过 `ServletRequest`、`HttpSession` 和 `ServletContext` 类的 `getAttribute()` 和 `setAttribute()` 方法进行访问。
@@ -11757,8 +11087,11 @@ public class CBTest
 类型规范由 `class`、`type` 和 `beanName` 属性的某种组合组成。这些属性的组合允许 useBean 动作在做什么方面具有灵活性。必须至少指定 `class` 和 `type` 之一，并且如果指定了 `class`，则不能使用 `beanName`。这意味着有效的组合是：
 
 - 仅 type
+
 - 仅 class
+
 - type 和 class
+
 - type 和 beanName
 
 类型规范允许创建新的 bean、重用已序列化的 bean，或将现有 bean 集成到 JSP bean 框架中。进一步的功能源于 `<jsp:useBean>` 可以包含一个 JSP 代码体。`<jsp:useBean>` 标签体中的代码（通常是一个或多个 `<jsp:setProperty>` 动作和脚本段）仅在 bean 在当前请求中被新实例化时才执行。
@@ -11767,15 +11100,13 @@ public class CBTest
 
 **仅指定 type 属性** 一个 bean 可能实现多个接口，其中只有一个接口对于 bean 在给定 JSP 页面中的操作是重要的。所需的接口可以在 `type` 属性中输入。当仅指定 `type` 时，JSP 引擎定义一个该类型的脚本变量，然后在指定的范围中查找名称与给定 id 匹配的属性。如果 JSP 引擎找到匹配的对象，它会将该对象转换为指定的类型并将其分配给该变量。否则，如果找不到该对象，JSP 引擎将抛出 `InstantiationException`。此过程如图 15-1 所示。
 
-
-
 ## <jsp:useBean>
 
 **仅指定类型** 当只提供 `type` 属性时，JSP 引擎会声明该类型的一个变量，并在指定的范围中查找具有匹配名称的属性。如果找到了，JSP 引擎会将该对象转换为指定的类型并赋值给该变量。否则，JSP 引擎会创建该指定类的一个新对象，将其赋值给变量，并将其设置为该范围内的一个属性。如果 `<jsp:useBean>` 标签有标签体，则随后会计算标签体。此过程如图 15-1 所示。
 
 ![图 15-1. 仅给出类型时 <jsp:useBean> 处理的流程图](img/7a2f73369bb140583c7288b73456addb_453_0.png)
 
-**仅指定 class 属性** 如果需要特定的 bean 类，则应指定 `class` 属性。同样，JSP 引擎会声明该类的一个变量，并在指定的范围中查找具有匹配名称的属性。如果找到了，JSP 引擎会将该对象转换为指定的类并赋值给该变量。否则，JSP 引擎会创建该指定类的一个新对象，将其赋值给变量，并将其设置为该范围内的一个属性。如果 `<jsp:useBean>` 标签有标签体，则随后会计算标签体。此过程如图 15-2 所示。
+**仅指定 class 属性** 如果需要特定的 bean 类，则应指定 `class` 属性。同样，JSP 引擎会声明该类的一个变量，并在指定的范围中查找具有匹名称的属性。如果找到了，JSP 引擎会将该对象转换为指定的类并赋值给该变量。否则，JSP 引擎会创建该指定类的一个新对象，将其赋值给变量，并将其设置为该范围内的一个属性。如果 `<jsp:useBean>` 标签有标签体，则随后会计算标签体。此过程如图 15-2 所示。
 
 ![图 15-2. 仅给出 class 时 <jsp:useBean> 处理的流程图](img/7a2f73369bb140583c7288b73456addb_454_0.png)
 
@@ -11784,6 +11115,7 @@ public class CBTest
 **指定类型和 beanName** 当需要将已序列化的 bean 导入到 JSP 环境中（例如本章前面描述的 `Mortgage` 或 `CounterBean` bean）时，应使用 `type` 和 `beanName` 属性。`beanName` 必须采用 `Beans.instantiate(ClassLoader loader, String name)` 所使用的格式。该名称首先按如下方式转换为文件名：
 
 - 句点被转换为“/”
+
 - 在末尾追加 `.ser`
 
 因此，例如，`jspcr.beans.mortgage.Mortgage` 会被转换为 `jspcr/beans/mortgage/Mortgage.ser`。如果类加载器可以找到该名称的文件，它将被反序列化以获取对象。否则，原始名称被视为类名，类加载器尝试创建该命名类的实例。在任何一种情况下，新的 bean 都会被分配给指定 `id` 的脚本变量，并存储在相应范围内的属性中。此过程如图 15-4 所示。
@@ -11824,7 +11156,7 @@ public class CBTest
 
 ### <jsp:setProperty> 的 property 属性
 
-一旦确定了特定的 bean，就必须指定要设置的属性名称。这就是 `property` 属性的作用。该属性可以是一个属性名，也可以是特殊值 `*`。如果此属性是一个名称，则该 bean 必须具有该属性的相应 set 方法。例如，在我们的 `Mortgage` bean 中，存在 `setPrincipal()`、`setRate()` 和 `setTerm()` 方法，它们分别用于设置 `principal`、`rate` 和 `term` 属性。
+一旦确定了特定的 bean，就必须指要设置的属性名称。这就是 `property` 属性的作用。该属性可以是一个属性名，也可以是特殊值 `*`。如果此属性是一个名称，则该 bean 必须具有该属性的相应 set 方法。例如，在我们的 `Mortgage` bean 中，存在 `setPrincipal()`、`setRate()` 和 `setTerm()` 方法，它们分别用于设置 `principal`、`rate` 和 `term` 属性。
 
 如果 `property` 属性是 `*`，则会将 bean 的可设置属性列表与当前请求中的参数列表进行比较。无论在哪里匹配，都会使用相应的请求参数调用 `set` 方法。因此，例如，如果 HTML 表单包含以下字段：
 
@@ -11923,8 +11255,6 @@ Bean 属性值可以通过 `<jsp:getProperty>` 操作来检索。此操作的形
 
 让我们将所有这些元素整合起来，考虑一个完整的示例。许多门户网站根据用户的偏好定制页面的内容和呈现方式。这种个性化可能表现为指向与用户之前表达过的兴趣相关的产品和信息的超链接。例如，MSNBC 显示用户选择的本地天气和股票价格。其背后的理念是，如果这些信息始终在主页上，用户就不太可能离开网站去寻找这些信息。
 
-
-
 # 从网络获取天气数据
 
 我们（LyricNote 网站设计师）已决定在主页添加此类信息。首先将添加一行本地天气信息，该信息可根据用户自定义，报告用户所在区域的天气状况。
@@ -11938,11 +11268,17 @@ Bean 属性值可以通过 `<jsp:getProperty>` 操作来检索。此操作的形
 根据机场代码，bean 构建出包含该机场天气读数的特定网页的 URL。然后它打开 URL 输入流，并解析快速掠过的 HTML，以提取它需要的特定属性：位置、时间和温度。
 
 | 属性 | 访问权限 | 描述 |
+
 | :--- | :--- | :--- |
+
 | airportCode | 可读/可写 | 进行天气测量的机场的三字母代码。设置此属性会指示 bean 访问天气网站以获取最新读数。 |
+
 | URL | 只读 | 包含该机场读数的美国国家气象局网页的 URL。 |
+
 | location | 只读 | 机场名称。 |
+
 | time | 只读 | 观测的日期和时间。 |
+
 | temperature | 只读 | 摄氏温度。 |
 
 表 15-1. 天气观测 Bean 的属性
@@ -12221,6 +11557,7 @@ public class Observation implements Serializable
 Raleigh-Durham International Airport, NC,
 United States </TITLE>
 ```
+
 （在HTML中标题是完整的一行；这里为了可读性进行了换行）。`parseLocation()`方法会检查当前行是否包含`<TITLE>`和`</TITLE>`标记。如果包含，则提取标记之间的文本，并使用以第二个逗号分隔的字段作为地点名称。
 
 `time`属性位于文档中唯一的一对`<OPTION SELECTED>`和`<OPTION>`标签之间：
@@ -12236,6 +11573,7 @@ United States </TITLE>
 </SELECT><BR> 2000.11.06 0251 UTC
 </FORM></FONT></TD>
 ```
+
 （同样，HTML已经为了可读性进行了换行。原始HTML是完整的一行。）我们使用`SimpleDateFormat`中的`parse()`方法将日期和时间转换为`java.util.Date`对象。
 
 `temperature`属性在网页中以这种形式出现：
@@ -12248,6 +11586,7 @@ United States </TITLE>
 </FONT></TD>
 </TR>
 ```
+
 这个属性稍难分离，因为关键词`Temperature`出现在前一行。我们采用更简单的方法，查找第一个以`(...C)`结尾的行，并解析括号内的字符串以获取摄氏度。
 
 该类的其余部分主要由各个属性的适当get和set方法组成。
@@ -12312,11 +11651,13 @@ United States </TITLE>
 </BODY>
 </HTML>
 ```
+
 HTTP请求返回的Cookie数组会被扫描，以查找名为`airportCode`的Cookie。如果该Cookie存在，其值将替代默认的机场代码（RDU，代表北卡罗来纳州罗利/达勒姆）。接下来，声明`Observation` Bean：
 
 ```
 <jsp:useBean id="wobs" class="jspcr.beans.weather.Observation">
 ```
+
 并用选定的机场代码进行初始化：
 
 ```
@@ -12325,6 +11666,7 @@ HTTP请求返回的Cookie数组会被扫描，以查找名为`airportCode`的Coo
     property="airportCode"
     value="<%= airportCode %>"/>
 ```
+
 剩下的就是提取Bean的属性并将其写入输出流：
 
 ```
@@ -12332,6 +11674,7 @@ HTTP请求返回的Cookie数组会被扫描，以查找名为`airportCode`的Coo
 <jsp:getProperty name="wobs" property="time"/>
 <jsp:getProperty name="wobs" property="temperature"/> C&deg;
 ```
+
 图15-6展示了最终显示结果。
 
 如果用户点击“Select City”超链接，将会展示一个已知有天气数据可用的机场列表，如图15-7所示。这不是一个JSP页面，只是一个简单的HTML表单，用于调用设置Cookie的JSP。表单的action属性指向`SetAirportCode.jsp`，这是一个非可视化的JSP页面，它会向用户发送新的机场代码Cookie，并重定向回门户页面，如下所示。
@@ -12349,20 +11692,24 @@ HTTP请求返回的Cookie数组会被扫描，以查找名为`airportCode`的Coo
     response.sendRedirect("Portal.jsp");
 %>
 ```
+
 如果Web用户恰好位于新墨西哥州罗斯威尔（或对在那里降落的天气状况感兴趣），并在机场选择框中选择了相应的行，那么机场代码Cookie的值将被设置为ROW。所有后续通过LyricNote门户的请求都将导致`Observation` Bean检索罗斯威尔工业航空中心机场的天气状况（见图15-8）。
 
 ## 总结
+
 Java架构中的基于组件的编程使用JavaBeans。Bean编程模型使用公共的get和set方法来访问私有的Bean属性，使用事件监听器将其他类与Bean的状态链接起来，并使用序列化使Bean持久化。JSP编程环境提供了用于声明和访问Bean的标准标签：
 
 - `<jsp:useBean>`
+
 - `<jsp:setProperty>`
+
 - `<jsp:getProperty>`
 
 `useBean`标签可以声明、实例化和初始化一个Bean。该标签具有多种属性组合，使Bean可以从现有命名空间中提取、作为新实例创建，或从序列化对象中恢复。支持的命名空间包括页面作用域、请求作用域、会话作用域或应用作用域。
 
 `setProperty`和`getProperty`用于存储和检索Bean的属性。除了字面字符串值外，属性也可以从表单参数和请求时表达式设置。
 
-JavaBeans在JSP环境中提供了显著的优势。它们可以被单独编写和测试，然后在applet、servlet和独立应用程序上下文中重用。JavaBeans还减少了JSP脚本段和声明中暴露的Java代码量。结合Cookie、自定义标签和其他高级JSP技术，JavaBeans为开发有用的Web应用程序提供了可靠、高效的基础。
+JavaBeans在JSP环境中提供了显著的优势。它们可以被单独编写和测试，然后在applet、servlet和独立应用程序上下文中重用。JavaBeans还减少了JSP脚本段和声明中暴露的Java代码量。结合Cookie、自定�标签和其他高级JSP技术，JavaBeans为开发有用的Web应用程序提供了可靠、高效的基础。
 
 此页有意留白。
 
@@ -12372,15 +11719,13 @@ JavaBeans在JSP环境中提供了显著的优势。它们可以被单独编写�
 
 版权所有 © 2001 McGraw-Hill Companies, Inc. 点击此处查看使用条款。
 
-
-
 自1996年在万维网联盟（W3C）诞生并于1998年被采纳为W3C推荐标准以来，*可扩展标记语言（XML）*已确立了其作为结构化数据存储和交换的通用语言的地位。XML被用于网站内容管理、企业间数据交换，以及从建筑、财务报告到音乐等多样化的应用场景。除了应用本身，XML工具和扩展也正渗透到编程的各个方面。
 
 本章探讨了将XML整合到Web应用中的一些方式。在概述部分之后，将讨论两种XML解析器模型，然后介绍XSL转换。这三项技术都将在解决同一HTML创建任务的三个方案中得到演示。
 
 ## XML概述
 
-XML是一套使用用户自定义的标记标签集来描述结构化数据的系统。XML本身不是一种语言，而是一种定义专用语言的系统。它表面上看起来像HTML，HTML使用预定义的`<UL>`、`<LI>`、`<TABLE>`等标签来标记Web文档的各个部分。区别在于HTML有一组固定的标签，而XML允许你设计任何必要的标签集来描述你的数据。
+XML是一套使用用户自定义的标记标签集来描述结结构化数据的系统。XML本身不是一种语言，而是一种定义专用语言的系统。它表面上看起来像HTML，HTML使用预定义的`<UL>`、`<LI>`、`<TABLE>`等标�来标记Web文档的各个部分。区别在于HTML有一组固定的标签，而XML允许你设计任何必要的标签集来描述你的数据。
 
 例如，一首为声乐和钢琴创作的歌曲，其部分表示可能如下所示：
 
@@ -12474,7 +11819,7 @@ XML中的属性*必须*用单引号或双引号括起来。
 
 然而，XML不仅仅是一组自由形式的标签。显然，使用XML文档作为输入的应用程序需要知道它可以包含哪些元素，这些元素如何嵌套或重复，允许哪些属性，等等。同样，生成XML文档的应用程序（以及使用文本编辑器编写文档的人）也需要知道相同的结构信息。这就是*文档类型定义*（DTD）的作用。
 
-DTD是特定文档类型中允许的标签和属性的定义。例如，备忘录文档的DTD可能会定义`<memo>`、`<from>`、`<to>`、`<subject>`、`<text>`和`<paragraph>`标签，指明`<paragraph>`元素只能出现在`<text>`元素内部，`<from>`和`<to>`是必需的，而其余是可选的。然后，生成备忘录文档的应用程序可以确保它们只生成语法正确的版本。同样，验证工具可以读取人工编写的备忘录文档并确定它们是否符合语法。这意味着接收端的应用程序可以依赖于理解文档并正确处理它。
+DTD是特定文档类型中允的标签和属性的定义。例如，备忘录文档的DTD可能会定义`<memo>`、`<from>`、`<to>`、`<subject>`、`<text>`和`<paragraph>`标签，指明`<paragraph>`元素只能出现在`<text>`元素内部，`<from>`和`<to>`是必需的，而其余是可选的。然后，生成备忘录文档的应用程序可以确保它们只生成语法正确的版本。同样，验证工具可以读取人工编写的备忘录文档并确定它们是否符合语法。这意味着接收端的应用程序可以依赖于理解文档并正确处理它。
 
 XML文档通过在文档元素之前立即使用`<!DOCTYPE>`标签来指示它使用的DTD及其位置：
 
@@ -12536,9 +11881,13 @@ DTD不是必需的，但如果存在，文档必须遵守它。用XML规范的�
 DTD由元素和属性的列表组成。每个元素定义给出元素名称，然后是对其可以包含的元素、它们的顺序、是否必需以及是否可以重复的严格描述。此描述可能采用以下几种形式：
 
 - 普通文本表示为`(#PCDATA)`，即*已解析的字符数据*。
-- 允许的子元素按顺序列出，用逗号分隔。
+
+- 允的子元素按顺序列出，用逗号分隔。
+
 - 互斥的元素用逻辑或符号`|`分隔。
+
 - 子元素和加括号的子元素列表后面可以跟重复计数：`?`表示零次或一次出现，`*`表示零次或多次，`+`表示一次或多次。
+
 - 不能包含主体的元素描述为`EMPTY`。
 
 例如，`<song>`元素允许包含可选的`<title>`、`<words-by>`和`<music-by>`元素，后跟一个或多个`<track>`元素：
@@ -12548,8 +11897,6 @@ DTD由元素和属性的列表组成。每个元素定义给出元素名称，�
 ```
 
 请注意，子元素（如果存在）必须仅按指定的顺序出现。`<measure>`元素被定义为包含至少一个`<note>`或`<rest>`元素，后跟任意数量的`<note>`或`<rest>`重复：
-
-
 
 ## 文档对象模型（DOM）
 
@@ -12562,13 +11909,17 @@ DOM不仅是一个标准，也是一种*应用程序编程接口（API）*。W3C
 DOM API由四类类和接口组成：
 
 - 节点
+
 - 节点集合
+
 - 元数据
+
 - 异常
 
 要在应用程序中使用XML文档，您需要对其进行解析。XML解析器读取文档并将其分离为起始标签、属性、主体内容和结束标签。解析器提供应用程序编程接口，使您无需自己解释输入流的复杂性即可提取所需的元素。存在两种被广泛接受的XML解析器模型：
 
-- **DOM** 文档对象模型
+- **DOM** 文档对象模模型
+
 - **SAX** XML简单API
 
 以下各节将分别介绍这些模型。
@@ -12582,8 +11933,11 @@ DOM不仅是一个标准，也是一种*应用程序编程接口（API）*。W3C
 DOM API由四类类和接口组成：
 
 - 节点
+
 - 节点集合
+
 - 元数据
+
 - 异常
 
 ### 节点接口
@@ -12591,25 +11945,46 @@ DOM API由四类类和接口组成：
 DOM中关注的基本单元是*节点*。XML文档中的所有内容——单个元素、起始标签中的属性、注释、元素文本以及整个文档——都是节点。表16-1列出了Node接口中的方法。
 
 | 方法 | 描述 |
+
 |---|---|
+
 | `Node appendChild(Node newChild) throws DOMException` | 将新子节点添加到当前节点。 |
+
 | `Node cloneNode(boolean deep)` | 复制节点。如果deep为true，则递归克隆此节点下的所有子树。否则，仅克隆当前节点。 |
+
 | `NamedNodeMap getAttributes()` | 如果节点是`Element`，则返回该节点的命名属性。否则，返回`null`。 |
+
 | `NodeList getChildNodes()` | 返回所有直接子节点的列表。 |
+
 | `Node getFirstChild()` | 返回第一个子节点，或者如果此节点不是Element，则返回null。 |
+
 | `Node getLastChild()` | 返回最后一个子节点，或者如果此节点不是Element，则返回null。 |
+
 | `Node getNextSibling()` | 返回同一父节点的下一个子节点，或者如果父节点不是Element，则返回null。 |
+
 | `String getNodeName()` | 返回节点的名称，适用于Element、Attr和Entity等命名节点类型。对于Text、CDATAsection和Comment等未命名类型，分别返回#text、#cdata-section和#comment。 |
+
 | `int getNodeType()` | 返回一个整数常量，指示此节点的具体类型。返回的值是Node接口中定义的以下常量之一：ATTRIBUTE_NODE, CDATA_SECTION_NODE, COMMENT_NODE, DOCUMENT_FRAGMENT_NODE, DOCUMENT_NODE, DOCUMENT_TYPE_NODE, ELEMENT_NODE, ENTITY_NODE, ENTITY_REFERENCE_NODE, NOTATION_NODE, PROCESSING_INSTRUCTION_NODE, TEXT_NODE。 |
+
 | `String getNodeValue()` | 对于属性和文本类型节点，返回文本，否则返回`null`。 |
+
 | `Document getOwnerDocument()` | 返回此节点所属文档的`Document`节点。 |
+
 | `Node getParentNode()` | 返回直接父节点，或者如果这是`Document`、`DocumentFragment`或`Attr`节点，则返回`null`。尚未添加到文档的新节点也可能有`null`父节点。 |
+
 | `Node getPreviousSibling()` | 返回同一父节点的上一个子节点，或者如果父节点不是`Element`，则返回`null`。 |
+
 | `boolean hasChildNodes()` | 如果此节点具有非空的子节点列表，则返回`true`。 |
-| `Node insertBefore(Node child, Node beforeNode)` | 在指定节点之前插入新的子节点。`beforeNode`可以是`null`，在这种情况下，子节点将附加到列表末尾。 |
+
+| `Node insertBefore(Node child, Node beforeNode)` | 在指节点之前插入新的子节点。`beforeNode`可以是`null`，在这种情况下，子节点将附加到列表末尾。 |
+
 | `Node removeChild(Node child) throws DOMException` | 从子节点列表中移除指定节点。如果该节点不是当前节点的子节点，则抛出异常。 |
+
 | `Node replaceChild(Node newChild, Node oldChild) throws DOMException` | 移除`oldChild`并用`newChild`替换它。如果该节点不是当前节点的子节点，则抛出异常。 |
+
 | `void setNodeValue(String value) throws DOMException` | 设置当前节点的值。 |
+
+
 
 在DOM Level 2中，`Node`有两个新方法——`isSupported()`和`hasAttributes()`——现在还包含`normalize()`方法，该方法以前是`Element`接口的一部分。
 
@@ -12634,8 +12009,6 @@ DOM中关注的基本单元是*节点*。XML文档中的所有内容——单个
 ### 节点集合接口
 
 各种DOM API方法返回节点集合，可以是有序列表或名称到节点的映射。两个接口表示这些集合：表16-3所示的`NodeList`，以及表16-4所示的`NamedNodeMap`。
-
-
 
 ## 表 16-3。NodeList 接口定义的方法
 
@@ -12831,8 +12204,6 @@ public class Product
     // "instruments.xml" in the same directory as this JSP
 ```
 
-
-
 # 第16章：JSP与XML
 
 ```java
@@ -12960,13 +12331,18 @@ DOM作为解析模型的主要优点在于它提供了对文档结构的随机�
 SAX提供了另一种解析方法。SAX解析器不是从XML文档创建树，而是读取文件，并在发生特定解析事件时通知注册的监听器。这些事件包括：
 
 - 文档开始
+
 - 在新元素的开头读取开始标签
+
 - 在元素的结尾读取结束标签
+
 - 读取元素正文中的文本
+
 - 读取注释
+
 - 到达文档末尾
 
-SAX接口为所有这些事件定义了方法。希望处理特定事件的应用程序可以实现一个或多个方法，然后注册为文档的处理器。当事件发生时，处理器的方法将使用当前正在解析的元素的值进行调用。这使得SAX非常适合需要很少或不需要文档上下文的过滤类应用程序。
+SAX接口为所有这些事件定了方法。希望处理特定事件的应用程序可以实现一个或多个方法，然后注册为文档的处理器。当事件发生时，处理器的方法将使用当前正在解析的元素的值进行调用。这使得SAX非常适合需要很少或不需要文档上下文的过滤类应用程序。
 
 与DOM一样，SAX API也在持续发展。SAX 1.0于1998年5月从XML-DEV邮件列表的设计讨论中诞生。SAX 2.0规范于2000年5月发布。虽然SAX不是W3C的官方规范，但它被广泛接受，并且在大多数解析器中通常与DOM一起提供。事实上，DOM解析器通常构建在SAX解析器之上，而用于DOM的JAXP `DocumentBuilder`接口也使用了几个SAX类。
 
@@ -12981,7 +12357,7 @@ SAX接口为所有这些事件定义了方法。希望处理特定事件的应�
 | `void setDocumentHandler(DocumentHandler handler)` | 为此解析器注册一个文档处理器。 |
 | `void setDTDHandler(DTDHandler handler)` | 为此解析器注册一个DTD处理器。 |
 | `void setEntityResolver(EntityResolver resolver)` | 为此解析器注册一个实体解析器。`EntityResolver`可用于以自定义方式定位外部实体。 |
-| `void setErrorHandler(ErrorHandler handler)` | 注册一个用于自定义错误处理的错误处理器。 |
+| `void setErrorHandler(ErrorHandler handler)` | 注册一个用于自定错误处理的错误处理器。 |
 | `void setLocale(Locale locale) throws SAXException` | 指定用于错误和警告的区域设置。 |
 
 **表16-5.** *SAX解析器接口中的方法*
@@ -12991,20 +12367,21 @@ SAX接口为所有这些事件定义了方法。希望处理特定事件的应�
 四个接口处理解析事件：
 
 - `DocumentHandler`定义了文档开始和结束、每个XML元素开始和结束、文档文本以及空白、注释和处理指令的回调方法。
+
 - `ErrorHandler`定义了致命错误、可恢复错误和警告错误的回调。
+
 - `EntityResolver`允许对文档类型定义等外部实体进行自定义处理。
+
 - `DTDHandler`接收文档类型定义中符号声明和未解析实体声明的通知。
 
 其中，最常用的是第一个`DocumentHandler`。应用程序可以实现此接口，然后使用`setDocumentHandler()`方法将其自身注册到解析器，以开始接收回调。`DocumentHandler`中的方法如表16-6所述。
 
 除了这四个处理器接口外，SAX API还为它们全部提供了一个默认实现——名为`HandlerBase`。应用程序通常会继承`HandlerBase`，并且只实现那些必要的方法。通常，这仅包括`startElement()`、`characters()`和`endElement()`方法。
 
-
-
 ## 表 16-6. DocumentHandler 定义的方法
 
 | 方法 | 描述 |
-| --- | --- |
+|---|---|
 | void characters(char [] ch, int start, int len) throws SAXException | 此方法被 XML 解析器调用，用于读取元素文本中的字符数据。字符数据从 `ch` 数组的 `start` 位置开始，长度为 `len`。方便的是，`java.lang.String` 构造函数也使用这三个字段。 |
 | void endDocument() throws SAXException | 当解析器完成文档解析时调用。 |
 | void endElement(String name) throws SAXException | 当解析到当前元素的结束标签时调用。标签名作为参数传递。 |
@@ -13164,7 +12541,9 @@ class ProductParser extends HandlerBase
 `ProductParser` 类关注三个事件：
 
 - **startElement**：在新的 `<product>` 元素开始时，你需要创建一个 `Product` 对象并将 `code` 属性存储其中。
+
 - **characters**：当文本数据流经时，你需要将其累积到 `StringBuffer` 中。
+
 - **endElement**：在元素结束时，如果它是产品字段之一，你需要从 `StringBuffer` 中分配其值。如果这是 `<product>` 元素的结束，你可以在 HTML 表格中打印产品信息，清除缓冲区，并等待解析下一个产品。
 
 生成的 HTML 表格如图 16-2 所示。注意与图 16-1 中的 DOM 版本相比，耗时有所不同。
@@ -13173,7 +12552,7 @@ class ProductParser extends HandlerBase
 
 ### SAX 2.0
 
-SAX 规范的更新版本于 1998 年 5 月通过。SAX 2.0 的主要改进是对命名空间的支持。*命名空间* 是具有共同前缀的标签组，用于区分那些可能具有相同名称但无此前缀的其他标签。这允许定义 XML 标签包，而无需担心与同名标签发生冲突。
+SAX 规范的更新版本于 1998 年 5 月通过。SAX 2.0 的主要改进是对命名空间的支持。*命名空间* 是具有共同前缀的标签组，用于区分那些可能具有相同名称但无此前缀的其他标签。这允定义 XML 标签包，而无需担心与同名标签发生冲突。
 
 从 API 角度看，SAX 2.0 弃用了 `Parser`、`DocumentHandler` 和 `AttributeList` 接口，分别替换为支持命名空间的 `XMLReader`、`ContentHandler` 和 `Attributes` 接口。
 
@@ -13217,8 +12596,6 @@ SAX 规范的更新版本于 1998 年 5 月通过。SAX 2.0 的主要改进是�
 
     // 定义输入源为名为
 ```
-
-
 
 ## 482 JSP：完整参考
 
@@ -13461,8 +12838,6 @@ XSLT 使用一个称为 XSL 样式表的 XML 文档来描述它修改的内容�
 <%@ page import="java.io.*" %>
 ```
 
-
-
 # 490 JSP 完全参考
 
 ```jsp
@@ -13523,9 +12898,11 @@ XSLT 使用一个称为 XSL 样式表的 XML 文档来描述它修改的内容�
 XML 正在成为结构化数据存储和交换的通用语言。通过使用人类可读的文本文件和简单的语法规则，XML 不仅捕获数据，还捕获关于数据结构的元数据。数百个应用程序正在被编写或转换为以 XML 作为其输入和/或输出。XML 规范及其相关技术由万维网联盟（通常称为 W3C）管理。要读取 XML，你需要一个解析器。两种主要的解析器模型被普遍使用：
 
 - **文档对象模型 (DOM)**：将 XML 文档建模为节点树。DOM API 提供了以任意顺序遍历 DOM 树的方法：向前、向后、遍历兄弟节点。
+
 - **简单 Java API (SAX)**：事件驱动的解析器模型，在注册的处理程序中调用回调方法。
 
 XML 可以使用 XSLT 处理器和 XSL 样式表进行转换。
+
 毫无疑问，XML 应用程序在未来将大幅增加。JSP 可以成为这些应用程序的赋能技术。
 
 此页有意留白。
@@ -13533,25 +12910,29 @@ XML 可以使用 XSLT 处理器和 XSL 样式表进行转换。
 ![](img/7a2f73369bb140583c7288b73456addb_519_0.png)
 
 ## 第 17 章
+
 ### JSP 测试与调试
+
 493
 
 调试技术在编程教程中经常被轻描淡写，但在应用程序开发中却是不可或缺的。虽然编程可以是系统化的，并且代码很容易从其他程序中借鉴，但调试通常被视为一个随机试错修改的过程，这些修改可能修复也可能无法修复问题。
 
-Web 应用程序环境带来了其独特的困难。由于应用程序被划分为服务器和客户端组件，请求处理涉及多个协作进程。因此，错误难以重现，尤其是当它们间歇性发生时。
+Web 应用程环境带来了其独特的困难。由于应用程序被划分为服务器和客户端组件，请求处理涉及多个协作进程。因此，错误难以重现，尤其是当它们间歇性发生时。
 
 在本章中，你将看到测试和调试可以与开发一样系统化。本章概述了可以应用的基本测试和调试技术，并开发了一些可能有所帮助的工具。
 
 ### 构建心智模型
 
-系统化调试的关键是理解应用程序设计的运行方式。这意味着要知道涉及哪些组件、它们如何交互以及它们的预期行为是什么。这使得隔离故障组件并确定可能导致错误的原因成为可能。
+系统化调试的关�是理解应用程序设计的运行方式。这意味着要知道涉及哪些组件、它们如何交互以及它们的预期行为是什么。这使得隔离故障组件并确定可能导致错误的原因成为可能。
 
 ### 翻译与编译
 
 例如，你知道一个 JSP 页面以三种形式存在，如图 17-1 所示：
 
-1.  **JSP 源代码**：这是开发者创建的内容——一个包含脚本片段、表达式、指令和 HTML 模板代码的 .jsp 文件。
-2.  **生成的 Servlet 源代码**：当 JSP 页面首次被请求或在其 .jsp 文件发生任何更改后被请求时，JSP 容器将其转换为等效的 Java servlet。
+1.  **JSP 源代码**：这是开发者创建的内容——一个包含脚本片段、表达式、指令以及 HTML 模板代码的 .jsp 文件。
+
+2.  **生成的 Servlet 源代码**：当 JSP 页面首次被请求或在其 .jsp 文件发生任何更改后被请请求时，JSP 容器将其转换为等效的 Java servlet。
+
 3.  **编译后的 Servlet 类**：在 JSP 页面被转换为 servlet 源代码后，它被编译以生成一个 Java .class 文件。
 
 在此过程中的任何点都可能发生错误。仔细检查错误消息并了解中间形式存在的位置可以帮助我们准确定位原因。
@@ -13559,11 +12940,12 @@ Web 应用程序环境带来了其独特的困难。由于应用程序被划分�
 ![](img/7a2f73369bb140583c7288b73456addb_520_0.png)
 
 ### 第 17 章：JSP 测试与调试
+
 495
 
 > 注意：仔细阅读错误消息至关重要，但如果错误消息不存在，你就无法阅读它们。Internet Explorer 5.x 在发生 500 级（内部 servlet）错误时，默认会替换为自己的错误页面。据推测，这是为了保护最终用户免受可怕的堆栈跟踪信息的影响，但这给开发者带来了困难。你可以通过选择“工具 | Internet 选项”菜单项，然后选择“高级”选项卡来关闭此功能。在树状结构的“浏览”部分下有一个名为“显示友好的 HTTP 错误消息”的复选框。如果你取消选择此选项，你可以看到完整的堆栈跟踪和 servlet 异常发送的任何其他数据。
 
-例如，假设你有一个名为 `timer` 的自定义标签，用于跟踪其主体执行所需的时间。标签处理程序是一个名为 `TimerTag` 的类，它在 `doStartTag()` 和 `doEndTag()` 方法中获取当前系统时间的快照，并创建一个包含结果的脚本变量。
+例如，假设你有一个名为 `timer` 的自定�标签，用于跟踪其主体执行所需的时间。标签处理程序是一个名为 `TimerTag` 的类，它在 `doStartTag()` 和 `doEndTag()` 方法中获取当前系统时间的快照，并创建一个包含结果的脚本变量。
 
 ```java
 import javax.servlet.jsp.*;
@@ -13644,8 +13026,6 @@ Class Chap_00031_00037.examples.TimerTag not found.
             ^
 ```
 
-
-
 ## 498 JSP 权威指南
 
 仔细查看错误信息，你可以发现关于错误性质的几个线索。首先，它报告了 JSP 页面的位置。这告诉你 Tomcat 能够找到 JSP 源代码。接下来，消息文本显示 *Jasper*（Tomcat 的 JSP 翻译器）无法编译 JSP servlet 类，并给出了生成的 .java 源文件的名称。这意味着从 .jsp 到 .java 的翻译已完成，并且 Java 编译器已被调用，但编译失败。所以你知道这不是一个运行时错误。这不是由 JDBC-ODBC 驱动程序的问题引起的，因此它一定是生成的 servlet 源代码的编译错误。
@@ -13676,6 +13056,7 @@ public class ... extends HttpJspBase {
 但这留下了两个问题：
 
 - 为什么这在 JRun 中可以工作？
+
 - 你如何修复这个问题？
 
 如果你查看 JRun 版本的生成 servlet，第一个问题就很容易回答了：
@@ -13724,6 +13105,7 @@ jspcr.debug.TimerTag _jspx_th_debug_timer_0
 这样就不会有歧义了。
 
 > **注意**
+
 > 一个区分编译时和运行时错误的有用方法是预编译 JSP 页面。JSP 1.1 规范要求合规的 JSP 容器在使用名为 "jsp_precompile" 的请求参数调用页面时执行此操作。JSP 容器将 JSP 页面翻译成 servlet 源代码并编译 servlet，但不会让它处理请求。这不必从浏览器进行；可以从一个简单的 Java 批处理应用程序来完成，该应用程序只需为请求（包括 "jsp_precompile" 参数）创建一个 URL 并调用其 openStream() 方法。
 
 ## 隔离测试
@@ -13733,7 +13115,9 @@ jspcr.debug.TimerTag _jspx_th_debug_timer_0
 要做到这一点，你需要从一个已知状态开始。如果你更改了多个代码段、重新编译了一些 bean 并修改了部署描述符，你可能会找到解决方案，但由于部分初始化和残留的类，你可能看不到不同的结果。为避免这种情况，你可以执行以下操作：
 
 - **删除已翻译的 JSP servlet 和类的旧副本。** JSP 文件只有在其比对应的 servlet 和类文件更新时才会被翻译，但它所依赖的模块可能在不触发其重新翻译的情况下发生变化。例如，对使用 `<%@ include %>` 指令包含的文件的更改，不能保证会导致包含该指令的 JSP 页面被重新翻译。一些 JSP 容器会这样做，但规范并没有要求。
+
 - **删除序列化的会话。** 一些 JSP 容器在关闭时会将会话保存到持久存储中，然后在 JSP 容器再次启动时恢复它们。例如，JRun 将序列化的会话写入 `/WEB-INF/sessions` 目录。如果你更改了类并重新编译了它们，当 servlet 引擎重新启动时，你可能会反序列化该类的旧版本。
+
 - **重新启动 Web 服务器和 servlet 引擎。** 虽然在所有情况下这可能并非绝对必要，但此步骤可以让你确信所有初始化都已正确完成。例如，对 `web.xml` 和标签库描述符的更改可能仅在启动时才能被检测到。
 
 一旦你确定了应用程序状态，你就可以为其提供已知的输入并跟踪其处理过程。Servlet 日志为来自 servlet 引擎以及各个 servlet 和 JSP 页面的消息提供了集中收集点。你可以使用 `log()` 方法[^1]将消息写入日志，就像使用 `System.out.println()` 一样。特别是在 JSP 页面中，很容易添加几条日志消息，进行测试，根据测试结果再添加几条，依此类推。将消息写入 servlet 日志比尝试写入 servlet 输出流提供了更好的执行跟踪，因为后者可能已损坏，并在你分析之前就消失了。
@@ -13744,7 +13128,7 @@ jspcr.debug.TimerTag _jspx_th_debug_timer_0
 
 大多数商业*集成开发环境*（IDE）都提供某种调试器，使你能够单步执行 Java 类的执行，检查变量的值，并可能更改变量的值。JDK 包含一个名为 `jdb` 的命令行调试器，它或多或少执行相同的功能。虽然这些工具很有用，但用于调试 JSP 代码时有几个缺点。
 
-首先，JSP 页面与其字节码对应物并不紧密对应。它们可能由脚本段、指令、表达式、HTML 和自定义标签组成。如果你真的对逐行执行跟踪感兴趣，你需要使用生成的 servlet 源代码进行调试，而不是 `.jsp` 文件。
+首先，JSP 页面与其字节码对应物并不紧密对应。它们可能由脚本段、指令、表达、HTML 和自定义标签组成。如果你真的对逐行执行跟踪感兴趣，你需要使用生成的 servlet 源代码进行调试，而不是 `.jsp` 文件。
 
 此外，JSP 类是在 servlet 引擎控制的单独虚拟机中加载和运行的，可能还链接到一个 Web 服务器。要调试单个类，需要以调试模式启动整个 servlet 引擎。你需要验证所有相同的类路径条目都是活动的，使用相同的端口等等。即使你能弄清楚如何做到这一点，这也往往会使调试环境变得非常复杂。
 
@@ -13758,9 +13142,10 @@ jspcr.debug.TimerTag _jspx_th_debug_timer_0
 
 当HTML表单用于向JSP或servlet发送请求参数时，一个明显的测试要求是能够知道它发送了哪些参数以及它们的值是什么。这并不总是显而易见的。如果一个`<SELECT>`元素允许多选，请求参数的值是什么？如果一个TEXT输入元素未填写，它会作为空字符串还是null传递？那些未指定VALUE属性的复选框呢？
 
-一个简单的方法是使用一个调试JSP页面，该页面捕获请求参数并以表格形式显示为名称/值对。下面的JSP页面（Echo.jsp）展示了如何实现：
+一个简单的方法是使用一个调试JSP页面，该页面捕获请请求参数并以表格形式显示为名称/值对。下面的JSP页面（Echo.jsp）展示了如何实现：
 
-```
+
+
 <%@ page session="false" %>
 <%@ page import="java.util.*" %>
 <HTML>
@@ -13785,19 +13170,8 @@ jspcr.debug.TimerTag _jspx_th_debug_timer_0
 </TABLE>
 </BODY>
 </HTML>
-```
 
 ### 502 JSP: 完全参考
-
-```
-    }
-  }
-}
-%>
-</TABLE>
-</BODY>
-</HTML>
-```
 
 Echo.jsp从请求对象获取所有参数名称的列表，然后遍历该列表并打印每个参数的名称和值。唯一需要注意的是一个参数可能有多个值。例如，一组复选框可能有相同的name但不同的value属性。然而，servlet API通过在request对象中提供`getParameterValues()`方法来处理这个问题，该方法返回一个值数组。
 
@@ -13960,8 +13334,6 @@ public WebClient(String host, int port)
 {
 ```
 
-
-
 int contentLength = 0;
 
 // 向 Web 主机打开一个 socket 连接
@@ -13971,15 +13343,19 @@ Socket socket = new Socket(host, port);
 // 从用户读取输入并将其回显到 Web 主机
 
 BufferedReader in =
+
     new BufferedReader(
+
     new InputStreamReader(System.in));
 
 PrintWriter out =
+
     new PrintWriter(socket.getOutputStream());
 
 // 第一行 - 请求
 
 String line = in.readLine();
+
 out.println(line);
 
 // 头部行
@@ -13989,84 +13365,129 @@ for (;;) {
     // 读取并回显该行
 
     line = in.readLine();
+
     if (line == null)
+
         throw new IOException("Unexpected EOF");
+
     line = line.trim();
+
     out.println(line);
 
     // 头部结束
 
     if (line.equals(""))
+
         break;
 
     // 否则，这是一个头部
 
     int p = line.indexOf(": ");
+
     if (p == -1)
+
         throw new IOException
+
             (line + " is not a valid header line");
 
     String name = line.substring(0, p).trim();
+
     String value = line.substring(p + 1).trim();
 
     if (name.equalsIgnoreCase("Content-Length")) {
+
         try {
+
             contentLength = Integer.parseInt(value);
+
         }
+
         catch (NumberFormatException e) {
+
             throw new IOException
+
                 ("Invalid content length " + value);
+
         }
+
     }
+
 }
 
 // 读取 <contentLength> 字节的内容
 
 if (contentLength > 0) {
+
     StringBuffer sb = new StringBuffer();
+
     for (;;) {
+
         line = in.readLine();
+
         if (line == null)
+
             break;
+
         sb.append(line);
+
         int len = sb.length();
+
         if (len < contentLength)
+
             continue;
+
         if (len > contentLength)
+
             sb.setLength(contentLength);
+
         break;
+
     }
 
     // 将数据写入输出流
 
     out.print(sb.toString());
+
 }
 
 out.flush();
 
 // 服务器现在正在处理该请求。
+
 // 读取其输出并输出到标准输出
 
 in =
+
     new BufferedReader(
+
         new InputStreamReader(
+
             socket.getInputStream()));
 
 out = new PrintWriter(System.out);
 
 for (;;) {
+
     line = in.readLine();
+
     if (line == null)
+
         break;
+
     out.println(line);
+
 }
 
 // 关闭文件
 
 in.close();
+
 out.close();
+
 socket.close();
+
 }
+
 }
 
 WebClient 的调用语法为：
@@ -14123,7 +13544,8 @@ Content-Type: text/html; charset=ISO-8859-1
 
 该工具由两个主要组件组成：
 
-- 一个监听 HTTP 请求的 Web 服务器代理。
+- 一个监听 HTTP 请请求的 Web 服务器代理。
+
 - 一个请求处理器，它将客户端请求复制到服务器，并将响应复制回客户端，并在两个方向记录头部信息。
 
 以下列出了第一个组件（Tracer.java）。
@@ -14289,8 +13711,6 @@ public static final void showUsage()
         "usage: java http.Tracer [options]",
 ```
 
-
-
 ## 第17章：JSP测试与调试
 
 ```
@@ -14453,8 +13873,11 @@ public void setLogWriter(Writer logWriter)
 Tracer 主程序解析命令行，支持以下四个选项：
 
 - `-host <主机名>` 目标 Web 服务器主机的名称。如果未指定，默认为 localhost。
+
 - `-port <端口号>` 目标 Web 服务器上的端口号。默认为 80，即默认的 HTTP 端口号。
+
 - `-tracerPort <端口号>` Tracer 自身运行的本地端口号。默认为 8601。此端口号必须包含在需要被跟踪的 URL 中。例如，如果一个 HTML 表单的 ACTION 属性为 `http://www.lyricnote.com/search/ProductSearch.jsp`，则应更改为 `http://www.lyricnote.com:8601/search/ProductSearch.jsp`。这是将 Tracer 连接到任何应用程序所需进行的唯一更改。
+
 - `-log <文件名>` 用于写入 HTTP 头的文件名。如果未指定此选项，日志消息将输出到 System.out。
 
 验证命令行选项后，主程序创建一个 `Tracer` 对象，设置其属性并启动它。
@@ -14473,7 +13896,7 @@ import java.net.*;
 import java.util.*;
 
 /**
- * 处理单个请求的代理 HTTP 服务器
+ * 处理单个请请求的代理 HTTP 服务器
  */
 public class RequestHandler extends Thread
 {
@@ -14617,7 +14040,9 @@ public class RequestHandler extends Thread
 // 如果遇到换行符，则处理该行
 
 if (c == '\n') {
+
     String line = sb.toString();
+
     sb = new StringBuffer();
 
     // 记录该行
@@ -14627,119 +14052,195 @@ if (c == '\n') {
     // 如果这是空行，则表示没有更多头部信息
 
     if (line.length() == 0)
+
         break;
+
 }
 
 // 否则，将字符追加到字符串缓冲区
 
 else
+
     sb.append((char) c);
+
 }
+
 cout.flush();
 
 // 将剩余字节复制到客户端
 
 int bytesCopied = 0;
+
 for (;;) {
+
     int c = sin.read();
+
     if (c == -1)
+
         break;
+
     cout.write(c);
+
     bytesCopied++;
+
 }
+
 if (bytesCopied > 0)
+
     cout.flush();
 
 // 关闭流和套接字
 
 cin.close();
+
 cout.close();
+
 client.close();
 
 sin.close();
+
 sout.close();
+
 server.close();
+
 }
+
 catch (IOException e) {
+
     e.printStackTrace();
+
 }
+
 }
 
 // ==================================
+
 //    访问器方法
+
 // ==================================
 
 /**
+
  * 返回客户端套接字。
+
  */
+
 public Socket getClient()
+
 {
+
     return client;
+
 }
 
 /**
+
  * 返回日志记录器。
+
  */
+
 public Logger getLogger()
+
 {
+
     return logger;
+
 }
 
 /**
+
  * 设置日志记录器。
+
  * @param logger 日志记录器。
+
  */
+
 public void setLogger(Logger logger)
+
 {
+
     this.logger = logger;
+
 }
 
 /**
+
  * 返回主机。
+
  */
+
 public String getHost()
+
 {
+
     return host;
+
 }
 
 /**
+
  * 设置主机。
+
  * @param host 主机。
+
  */
+
 public void setHost(String host)
+
 {
+
     this.host = host;
+
 }
 
 /**
+
  * 返回端口。
+
  */
+
 public int getPort()
+
 {
+
     return port;
+
 }
 
 /**
+
  * 设置端口。
+
  * @param port 端口。
+
  */
+
 public void setPort(int port)
+
 {
+
     this.port = port;
-}
+
 }
 
-`RequestHandler` 的核心是其 `run()` 方法，该方法打开一个到 Web 服务器的客户端套接字，然后打开该套接字的输入和输出流。同样，它为 Web 客户端打开输入和输出流。`run()` 方法随后读取请求行和请求头，寻找表示头部结束的空行。每读取一个头部，它都会被记录并传递给 Web 服务器。如果找到 Content-Length 头部，其值会被记下。在头部结束的空行之后，如果内容长度非零，请求处理器会从客户端输入流中读取相应数量的字节并将其复制到服务器。然后对服务器的响应重复相同的过程（方向相反），只是忽略 Content-Length 头部，并读取和复制服务器的输出直到文件结束。
+}
+
+`RequestHandler` 的核心是其 `run()` 方法，该方法打开一个到 Web 服务器的客户端套接字，然后打开该套接字的输入和输出流。同样，它为 Web 客户端打开输入和输出流。`run()` 方法随后读取请请求行和请求头，寻找表示头部结束的空行。每读取一个头部，它都会被记录并传递给 Web 服务器。如果找到 Content-Length 头部，其值会被记下。在头部结束的空行之后，如果内容长度非零，请求处理器会从客户端输入流中读取相应数量的字节并将其复制到服务器。然后对服务器的响应重复相同的过程（方向相反），只是忽略 Content-Length 头部，并读取和复制服务器的输出直到文件结束。
 
 Tracer 工具可以派上用场的一个例子是 HTTP 认证。许多实现这一点的工作都发生在浏览器和 Web 服务器的底层。检查 HTTP 头部可以使其变得清晰。
 
 HTTP 基本认证的工作原理如下：
 
 - ■ Web 用户请求一个受 HTTP 基本认证保护的文档。
-- ■ Web 浏览器格式化一个 HTTP 请求并将其发送到 Web 服务器。
+
+- ■ Web 浏览器格式化一个 HTTP 请并将其发送到 Web 服务器。
+
 - ■ 服务器拒绝该请求，将状态码设置为 401（需要授权），并发送一个 WWW-Authenticate 头部，指定认证类型和域。
+
 - ■ 浏览器收到 401 响应码并搜索其缓存，查看用户是否在此会话期间已登录到此域。如果用户未登录，浏览器会提示输入用户 ID 和密码。
+
 - ■ 从提示或浏览器会话缓存中获得的凭据被 Base64 编码²，原始请求被重新发送，这次带有 Authorization 头部。
+
 - ■ 服务器看到 Authorization 头部，验证用户是否有权检索文档，然后返回文档或另一个 401 响应行。
 
 以下是 Tracer 对此过程的报告³：
@@ -14754,7 +14255,9 @@ M: Waiting for connections
 ```
 
 > 2 Base64 编码将字节流转换为可读的 ASCII 字符，这样字节中的控制字符就不会干扰服务器操作。RFC 2068 描述了该算法。但请注意，这不是加密，只是一种可以轻松逆转的字符转换。因此，HTTP 基本认证并不特别安全，只应用于安全风险可接受的内部应用程序。
+
 >
+
 > 3 日志已为可读性稍作重新格式化。
 
 Tracer 服务器通过在 8601 端口上打开一个服务器套接字来启动。它在服务器套接字的 accept() 方法上阻塞，等待客户端连接。一旦收到连接，就会启动一个请求处理器，Tracer 服务器恢复监听其他客户端请求。
@@ -14819,12 +14322,15 @@ S:
 测试和调试是应用程序开发不可或缺的部分。虽然编程是系统性的，并且适用于设计模式，但调试通常是随意的，并通过反复试错来进行。本章强调了系统调试方法的两个关键方面：
 
 - 为组件及其交互建立心智模型
+
 - 隔离故障组件
 
 介绍了三种可以辅助此方法的工具：
 
 - `Echo.jsp`：一个捕获 HTML 表单产生的参数的 JSP 页面
+
 - `WebClient`：一个模拟 Web 浏览器的独立应用程序
+
 - `Tracer`：一个拦截和记录 HTTP 请求的独立应用程序
 
 通过充分的事前考虑和为可测试性而设计的规划，调试可以像应用程序开发一样系统化。
@@ -14833,7 +14339,7 @@ S:
 
 ## 部署 Web 应用程序
 
-历史上，安装和配置 Web 应用程序一直是完全特定于供应商的任务。例如，Apache JServ 使用 .properties 文件和包含 Apache 指令扩展的文件来配置其 servlet 区域及其属性。JRun 的早期版本附带了一堆 .properties 文件，用于指示存在多少服务器、它们使用哪些端口、它们的类路径、它们识别哪些 servlet 别名、哪些 servlet 应该预加载等等。JSWDK 参考实现使用自定义 XML 格式来实现此目的。
+历史上，安装和配置 Web 应用程序一直是完全特定于供应商的任务。例如，Apache JServ 使用 .properties 文件和包含 Apache 指令扩展的文件来配置其 servlet 区域及其属性。JRun 的早期版本附带了一堆 .properties 文件，用于指示存在多少服务器、它们使用哪些端口、它们的类路径、它们识别哪些 servlet 别名、哪些 servlet 应该预加载等等。JSWDK 参考实现使用自定 XML 格式来实现此目的。
 
 由于 servlet 引擎毕竟是具有各自特定功能的不同实现，因此一定程度的多样性是不可避免的。但配置任务的这一部分是有限的。描述与 servlet 本身交互的那部分则是相当规范的，并且可以通过标准化带来巨大好处。这正是 Servlet 2.2 API 中引入 Web 应用程序时所发生的情况。
 
@@ -14846,19 +14352,23 @@ Servlet 2.2 和 JSP 1.1 API 规范将一组映射到 Web 服务器命名空间�
 例如，LyricNote 网站可能包含几个 Web 应用程序：
 
 - **products**：这将包括产品目录数据库、图像、搜索引擎、用于客户订单的购物车应用程序，以及描述产品类别的网页。
+
 - **support**：此应用程序将为客户提供报告问题和提问的 JSP 页面、缺陷跟踪 servlet、用于生成电子邮件的 servlet，以及与知识库交互的类。
+
 - **internal**：MIS 应用程序（如会议室预订、职位发布和公司简报）将放在这里，混合使用 servlet、JSP 页面和普通 HTML。
 
 ## 目录结构
 
-Web 应用程序有一个所有兼容的 servlet 引擎都能理解的规范目录结构。该结构如图 18-1 所示。顶层，或应用程序根目录，包含 HTML 文档、JSP 页面、图像以及构成应用程序内容的任何其他资源。任意数量的子目录，这些子目录也
+Web 应用程序有一个所有兼容的 servlet 引擎都能理解的规范目录结构。该结构如图 18-1 所示。顶层，或应用程根目录，包含 HTML 文档、JSP 页面、图像以及构成应用程序内容的任何其他资源。任意数量的子目录，这些子目录也
 
 包含应用程序内容，可以位于根目录下，类似于 Web 服务器文档树中的文件夹。
 
 根目录还包含一个名为 `WEB-INF` 的特殊目录。此目录及其子目录对应用程序用户不可见。相反，它们包含构成应用程序操作部分的 servlet、类、`.jar` 文件和配置数据。`WEB-INF` 中有三个值得注意的条目：
 
 -   `classes` 此目录包含 servlet 和其他类。这些类由 servlet 类加载器自动查找，就好像它们位于应用程序的类路径中一样。`classes` 可以有与包结构相对应的子目录，与类路径中的任何其他目录相同。
+
 -   `lib` 与 `classes` 类似，但包含 `.jar` 文件。此目录中任何 `.jar` 文件中的类都会自动提供给类加载器，而无需在某个类路径中显式列出。
+
 -   `web.xml` 这是一个 XML 文档，称为*部署描述符*。它具有严格定义的与供应商无关的结构，用于配置构成 Web 应用程序的 servlet 和其他资源。你将在本章后面更详细地研究 `web.xml`。
 
 `WEB-INF` 中可能还有其他文件和子目录，尽管 Servlet API 规范并未定义任何特定的。一个常用的子目录是 `tlds`，它包含用于 JSP 自定义标签的标签库描述符。由于此子目录中的条目对应用程序类可见，但对 Web 用户不可见，因此 `WEB-INF` 通常用于特定供应商的目的。例如，JRun 创建一个名为 **jsp** 的子目录，其中包含从 JSP 页面生成的 servlet 的 Java 源代码和编译后的类。JRun 还创建一个名为 **sessions** 的子目录，其中保存在 servlet 引擎关闭时处于活动状态的任何 HTTP 会话的序列化版本。通常，`WEB-INF` 适用于你想在 Web 应用程序中使用但又希望对用户隐藏、防止直接访问的任何数据。
@@ -14871,7 +14381,7 @@ Web 服务器有一个文档根目录，主要包含 HTML 文件。例如，在 
 http://www.lyricnote.com/products/index.html
 ```
 
-浏览器会向 `www.lyricnote.com` 主机打开一个 HTTP 连接，并发送一个以以下行开头的请求
+浏览器会向 `www.lyricnote.com` 主机打开一个 HTTP 连接，并发送一个以以下行开头的请请求
 
 ```
 GET /products/index.html HTTP/1.0
@@ -14917,12 +14427,14 @@ http://www.lyricnote.com/products/servlet/Counter
 
 这同样适用于 `<jsp:include>`、`<%@ include %>` 指令、`<%@ taglib %>` 指令以及创建 `RequestDispatcher` 对象的方法所使用的 URL。解释这些相对 URL 的规则是：
 
--   如果 URL 以 `/` 开头，则解释为相对于应用程序根目录。
+-   如果 URL 以 `/` 开头，则解释为相对于应用程根目录。
+
 -   如果不以 `/` 开头，则解释为相对于当前 JSP 页面。
 
-然而，这带来了一个微妙的难题。在 JSP 页面中用作超链接、表单操作、样式表链接或图像源的 URL 由浏览器解释，而不是服务器。如果 LyricNote 主页是一个 JSP 页面，其中包含一个指向 `/products/contest/rules.jsp` 的链接，则该链接不能硬编码 `products` 应用程序名称。为什么不能？因为应用程序名称不一定是 `products`。这完全取决于系统管理员选择安装 Web 应用程序的位置。它可能被挂载为 `product_test`、`staging_area` 或其他任何名称。只有在应用程序实际运行时，JSP 页面才能知道该名称，可以通过 `request.getContextPath()` 方法获取。
+然而，这带来了一个微妙的难题。在 JSP 页面中用作超链接、表单操作、样式表链接或图像源的 URL 由浏览器解释，而不是服务器。如果 LyricNote 主页是一个 JSP 页面，其中包含一个指向 `/products/contest/rules.jsp` 的链接，则该链接不能硬编码 `products` 应用程序名称。为什么不能？因为应用程名称不一定是 `products`。这完全取决于系统管理员选择安装 Web 应用程序的位置。它可能被挂载为 `product_test`、`staging_area` 或其他任何名称。只有在应用程序实际运行时，JSP 页面才能知道该名称，可以通过 `request.getContextPath()` 方法获取。
 
 1.  严格来说，构成 Web 应用程序名称的 URL 部分可以是像 `/products/test/Wednesday` 这样的多级字符串，但更常见的是使用单个令牌。
+
 2.  部署描述符的 `<servlet-mapping>` 元素可用于将任何 URL 子字符串映射到特定的 servlet。此处显示的是默认映射。
 
 你可以通过几种方式解决这个问题。JSP 页面可以将每个 URL 写为一个 JSP 表达式，将 `request.getContextPath()` 与 URL 的其余部分拼接起来，但这会变得乏味并使代码不必要地混乱。更优雅的方法是使用 HTML `<BASE>` 元素为页面分配一个上下文：
@@ -14939,6 +14451,7 @@ http://www.lyricnote.com/products/servlet/Counter
 ```
 
 使用 `<BASE>` 语句，Web 浏览器可以将任何非绝对 URL 相对于 HREF 属性进行解释。因此，`contest/rules.jsp` 变成了 `http://www.lyricnote.com/products/contest/rules.jsp`。
+
 当然，你还没有完成。你仍然需要在运行时确定 `BASE HREF`。HREF 属性需要是一个完整的 URL，而不仅仅是从服务器开始的绝对路径，因此你需要许多细节。如果连接使用 SSL，URL 可能以 `https` 开头。可能存在端口号，而不仅仅是默认端口 80。幸运的是，`request` 对象可以提供所有这些信息。以下脚本段以通用方式解决了这个问题。
 
 ```
@@ -14972,28 +14485,35 @@ String baseURL = sb.toString();
 在 Web 应用程序中，servlet 和 JSP 页面可以通过一个称为 *servlet 上下文* 的公共对象共享数据和功能。这是一个实现了 `javax.servlet.ServletContext` 接口的对象。servlet 上下文具有许多有用的用途：
 
 -   ■ **对象共享** servlet 和 JSP 页面都可以按名称在 servlet 上下文中存储对象，以便其他 servlet 和 JSP 页面可以检索它们。只要应用程序处于活动状态，这些绑定就会持续存在。
+
 -   ■ **初始化参数** 应用程序中使用的常量可以在部署描述符中指定，并通过 servlet 上下文中的方法访问。这允许配置详细信息（如数据库 URL 和驱动程序类名称）在任何编译后的 Java 代码之外指定。
+
 -   ■ **请求分派** servlet 可以将请求转发给其他 servlet 和 JSP 页面，或将其输出包含在当前输出流中。servlet 上下文提供使用路径或 servlet 名称创建请求分派器的方法。
+
 -   ■ **消息日志** servlet 上下文可以访问 servlet 日志，并可用于以与供应商无关的方式写入消息。
 
 有关 servlet 上下文提供的方法的完整描述，请参见表 4-8。
+
 在 JSP 页面中，servlet 上下文对象在 `application` 隐式变量中自动可用。在 servlet 中，可以通过 `getServletContext()` 方法获取它。
 
 ## Web 存档 (war) 文件
 
 到目前为止描述的是 Web 应用程序的运行时结构。对于部署，此结构必须折叠成一个称为 *Web 存档 (war)* 文件的单个文件。这只不过是一个具有不同扩展名（`.war`）的 `.jar` 文件，其顶层对应于 Web 应用程序的根目录。
+
 以一个具体的例子来考虑，考虑 `products` Web 应用程序，如图 18-2 所示。其根目录包含一个 `index.jsp` 文件和四个内容
-
-
 
 ## 部署描述符——web.xml
 
 `WEB-INF` 目录中的 `web.xml` 文件被称为 *部署描述符*。这是一个具有严格定义格式的 XML 文档，用于指定 Web 应用程序的配置。除了其他用途外，它可用于描述
 
 - Servlet 别名、映射和初始化参数
+
 - 会话超时限制
+
 - 在整个应用程序中可用的全局参数
+
 - 安全配置
+
 - Mime 类型
 
 因为此文件是 XML 文档，所以其格式由 *文档类型定义*（DTD）描述。DTD 名为 `web-app_x.y.dtd`，其中 `x.y` 是 Servlet API 规范版本，例如 2.2。它由 Sun Microsystems 发布，可从 http://java.sun.com/j2ee/dtds/web-app_2_2.dtd 下载。
@@ -15016,33 +14536,61 @@ String baseURL = sb.toString();
 ### 表 18-1. web.xml 部署描述符的内容
 
 | 元素 | 内容 |
+
 | :--- | :--- |
+
 | `<web-app>` | 这是顶级元素。它可能包含以下任何子元素，顺序如下：<br>`<icon>`（可选）<br>`<display-name>`（可选）<br>`<description>`（可选）<br>`<distributable>`（可选）<br>`<context-param>`（零个或多个）<br>`<servlet>`（零个或多个）<br>`<servlet-mapping>`（零个或多个）<br>`<session-config>`（可选）<br>`<mime-mapping>`（零个或多个）<br>`<welcome-file-list>`（可选）<br>`<error-page>`（零个或多个）<br>`<taglib>`（零个或多个）<br>`<resource-ref>`（零个或多个）<br>`<security-constraint>`（零个或多个）<br>`<login-config>`（可选）<br>`<security-role>`（零个或多个）<br>`<env-entry>`（零个或多个）<br>`<ejb-ref>`（零个或多个） |
+
 | `<icon>` | 允许开发人员指定应用程序内图标的相对位置，图标可以是 JPEG 或 GIF 格式。这些图标可被 GUI 管理工具用来表示该应用程序。它可能包含以下任一元素，或两者都包含：<br>`<small-icon>`（可选）<br>`<large-icon>`（可选） |
+
 | `<small-icon>` | 16 × 16 图标的图像文件名。 |
+
 | `<large-icon>` | 32 × 32 图标的图像文件名。 |
+
 | `<display-name>` | 父元素（`<web-app>` 或 `<servlet>`）的简短名称，可被管理工具使用。 |
+
 | `<description>` | 父元素的描述，可被管理工具使用。此元素可在此文件中的多个不同上下文中出现。 |
+
 | `<distributable>` | 如果指定，表示此应用程序设计为在多个分布式 Servlet 容器中运行。 |
+
 | `<context-param>` | 定义一个应用程序范围的初始化参数。包含以下子元素：`<param-name>`（必需）`<param-value>`（必需）`<description>`（可选） |
+
 | `<param-name>` | 参数名称。 |
+
 | `<param-value>` | 参数值。 |
+
 | `<servlet>` | 定义一个 Servlet 及其所有相关配置。可能包含以下子元素，顺序如下：`<icon>`（可选）`<servlet-name>`（必需）`<display-name>`（可选）`<description>`（可选）`<servlet-class>` 或 `<jsp-file>`（必须指定其中一个）`<init-param>`（零个或多个）`<load-on-startup>`（可选）`<security-role-ref>`（零个或多个） |
+
 | `<servlet-name>` | Servlet 容器所知的 Servlet 名称。注意，具有不同 Servlet 名称的多个 `<servlet>` 元素可以指定相同的 Servlet 类。在这种情况下，Servlet 引擎会创建该 Servlet 的多个实例。Servlet 可以调用 GenericServlet 或 ServletConfig 中的 `getServletName()` 方法来确定其名称。 |
+
 | `<servlet-class>` | Servlet 类的完全限定名。 |
-| `<jsp-file>` | 相对于 Web 应用程序根目录的 JSP 文件的完整路径。 |
+
+| `<jsp-file>` | 相对于 Web 应用程根目录的 JSP 文件的完整路径。 |
+
 | `<init-param>` | 定义 Servlet 初始化参数。包含以下子元素：`<param-name>`（必需）、`<param-value>`（必需）、`<description>`（可选） |
-| `<load-on-startup>` | 如果指定，此元素表示当 Servlet 引擎启动时应预加载此 Servlet。这意味着将调用 Servlet 的 `init()` 方法，随后该 Servlet 将可用于处理请求。此元素的值（如果有）可以是一个整数，用于指定如果存在多个 Servlet 时此 Servlet 应启动的相对顺序。 |
+
+| `<load-on-startup>` | 如果指定，此元素表示当 Servlet 引擎启动时应预加载此 Servlet。这意味着将调用 Servlet 的 `init()` 方法，随后该 Servlet 将可用于处理请请求。此元素的值（如果有）可以是一个整数，用于指定如果存在多个 Servlet 时此 Servlet 应启动的相对顺序。 |
+
 | `<servlet-mapping>` | 指定哪些 URL 模式应映射到哪些 Servlet 名称。必须包含以下子元素：`<servlet-name>`（必需）、`<url-pattern>`（必需）。 |
+
 | `<url-pattern>` | 指示一个模式，必须与 URL 的子字符串匹配才能调用此 Servlet。该模式可以包含通配符 `*`。 |
+
 | `<session-config>` | 定义会话配置参数。可能包含 `<session-timeout>` 子元素。 |
+
 | `<session-timeout>` | 在终止 HTTP 会话之前，Servlet 引擎允许的无活动默认分钟数。 |
+
 | `<mime-mapping>` | 定义由文件扩展名隐含的 MIME 类型。必须包含以下元素：`<extension>`（必需）`<mime-type>`（必需）。 |
+
 | `<extension>` | 指示文件类型的文件名后缀。例如，`png` 用于表示可移植网络图形文件。 |
+
 | `<mime-type>` | 与特定文件扩展名关联的 MIME 类型。例如，`image/png` 用于表示可移植网络图形文件。 |
+
 | `<welcome-file-list>` | 零个或多个 `<welcome-file>` 元素的列表。当请求的 URL 是一个目录时，Servlet 引擎会依次尝试每个欢迎文件。 |
+
 | `<welcome-file>` | 如果 URL 中未指定文件名，则用于处理目录中请求的默认文件。例如 `index.html` 或 `index.jsp`。 |
+
 | `<taglib>` | 用于定义 JSP 标签库的 URL 映射。必须包含以下子元素：`<taglib-uri>`（必需）`<taglib-location>`（必需） |
+
 | `<taglib-uri>` | 旨在用于 `<%@ taglib %>` 指令的 uri 属性中的字符串。虽然此处通常指定 URL 或路径，但它不必指向实际的 Web 资源。它仅作为唯一标识符，JSP 页面可用于将标签库指令映射到标签库描述符（TLD）。 |
 
 子目录：contest、debug、images 和 sounds。此外，它包含一个 WEB-INF 目录，其中有必需的 classes 和 lib 子目录，以及 web.xml 部署描述符。
@@ -15075,19 +14623,29 @@ adding: WEB-INF/web.xml(in = 46)  (out= 37) (deflated 19%)
 
 生成的文件 products.war 已准备好部署。所有兼容 Servlet 2.2 的 Servlet 引擎都必须直接接受 .war 文件并构建相应的 Web 应用程序。正如您可能预料的那样，安装文件的具体方式因供应商而异。作为参考实现的 Tomcat 允许将 .war 文件直接放入 `<tomcat_home>/webapps` 目录。当 Tomcat 重启时，.war 文件将被解包和验证，新的应用程序即可使用。商业 Servlet 引擎通常提供 GUI 管理工具来完成此工作。JRun 在其管理控制台中提供了一个部署向导（如图 18-3 所示），用于从 .war 文件部署应用程序。
 
-
-
 | 元素 | 内容 |
+
 | :--- | :--- |
-| `<taglib-location>` | 相对于 Web 应用程序根目录的 URI，在该位置可以找到标签库描述符 (TLD)。例如：/WEB-INF/tlds/mytags.tld。 |
+
+| `<taglib-location>` | 相对于 Web 应用程根目录的 URI，在该位置可以找到标签库描述符 (TLD)。例如：/WEB-INF/tlds/mytags.tld。 |
+
 | `<error-page>` | 将 HTTP 响应代码或异常类型映射到一个 servlet、JSP 页面或 HTML 文件，当发生错误时将默认调用该文件。包含以下子元素：`<error-code>` 或 `<exception-type>`（两者必选其一）`<location>`（必需） |
+
 | `<error-code>` | 要映射到错误页面的 HTTP 响应代码。 |
+
 | `<exception-type>` | 完全限定的 Java 异常类名。 |
+
 | `<location>` | 用作错误页面的 servlet、JSP 页面或 HTML 文件的 URI。 |
+
 | `<resource-ref>` | 包含用于设置 J2EE 资源工厂的信息。可能包含以下子元素：`<description>`（可选）`<res-ref-name>`（必需）`<res-type>`（必需）`<res-auth>`（必需）。 |
+
 | `<res-ref-name>` | 指定资源工厂引用的名称。 |
+
 | `<res-type>` | 指定与资源工厂关联的数据源的 Java 类名。 |
-| `<res-auth>` | 指示提供给资源工厂的凭据来源。存在两个可能的值：SERVLET—Web 应用程序以编程方式提供该值。CONTAINER—由容器提供凭据。 |
+
+
+
+`<res-auth>` 指示提供给资源工厂的凭据来源。存在两个可能的值：SERVLET—Web 应用程序以编程方式提供该值。CONTAINER—由容器提供凭据。
 
 **表 18-1.** web.xml 部署描述符的内容（续）
 
@@ -15142,61 +14700,46 @@ adding: WEB-INF/web.xml(in = 46)  (out= 37) (deflated 19%)
 
 ```xml
 <?xml version="1.0"?>
-
 <!DOCTYPE web-app PUBLIC
     "-//Sun Microsystems, Inc.//DTD Web Application 2.2//EN"
     "http://java.sun.com/j2ee/dtds/web-app_2_2.dtd">
-
 <web-app>
-
     <context-param>
         <param-name>JDBC.DRIVER</param-name>
-        <param-value>
-        org.enhydra.instantdb.jdbc.idbDriver
-      </param-value>
+        <param-value>org.enhydra.instantdb.jdbc.idbDriver</param-value>
     </context-param>
-
     <context-param>
-      <param-name>JDBC.URL</param-name>
-      <param-value>
-        jdbc:idb:d:/lyricnote/WEB-INF/db.prp
-      </param-value>
+        <param-name>JDBC.URL</param-name>
+        <param-value>jdbc:idb:d:/lyricnote/WEB-INF/db.prp</param-value>
     </context-param>
-
     <servlet>
-      <servlet-name>Sample</servlet-name>
-      <servlet-class>
-        jspcr.servlets.SampleServlet
-      </servlet-class>
-      <init-param>
-        <param-name>message</param-name>
-        <param-value>Hello, world</param-value>
-      </init-param>
+        <servlet-name>Sample</servlet-name>
+        <servlet-class>jspcr.servlets.SampleServlet</servlet-class>
+        <init-param>
+            <param-name>message</param-name>
+            <param-value>Hello, world</param-value>
+        </init-param>
     </servlet>
-
     <servlet>
-      <servlet-name>daytime</servlet-name>
-      <servlet-class>
-        jspcr.services.daytime
-      </servlet-class>
-      <load-on-startup>1</load-on-startup>
+        <servlet-name>daytime</servlet-name>
+        <servlet-class>jspcr.services.daytime</servlet-class>
+        <load-on-startup>1</load-on-startup>
     </servlet>
-
-  </web-app>
+</web-app>
 ```
 
-此部署描述符包含四个元素：两个上下文参数和两个 servlet 声明。上下文参数定义了可在 Web 应用程序中所有 servlet 和 JSP 页面中使用的常量。在此例中，它们定义了一个 JDBC 驱动程序类和一个数据库 URL。servlet 和 JSP 页面可以通过 servlet 上下文的 `getInitParameter()` 方法检索这些值。由于这类信息经常变化，并且在不同的安装环境中通常有所不同，因此能够在此处描述它，而不是将其硬编码在 Java 类中，会更加方便。
-
-
+此部署描述符包含四个元素：两个上下文参数和两个 servlet 声明。上下参数定义了可在 Web 应用程序中所有 servlet 和 JSP 页面中使用的常量。在此例中，它们定义了一个 JDBC 驱动程序类和一个数据库 URL。servlet 和 JSP 页面可以通过 servlet 上下文的 `getInitParameter()` 方法检索这些值。由于这类信息经常变化，并且在不同的安装环境中通常有所不同，因此能够在此处描述它，而不是将其硬编码在 Java 类中，会更加方便。
 
 ## 总结
 
 随着 Servlet 2.2 规范的推出，Web 应用程序的部署变得标准化且与供应商无关。该规范描述了一个标准的目录结构，用于存放 Web 内容、配置信息以及类目录。配置信息在一个名为 `web.xml` 的 XML 文档中指定，该文档即 *部署描述符*。目录结构在 `Web 归档文件 (.war)` 格式中得以镜像体现。部署 Web 应用程序并将其从一个 Servlet 引擎迁移到另一个，通常只需安装 `.war` 文件并调用 Servlet 引擎的部署工具即可。
 
 ## 第 19 章
+
 ## 案例研究：产品支持中心
 
 我们假设的互联网音乐商店 LyricNote.com 销售各类音乐产品：乐谱、乐器、音乐主题书籍、礼品以及音乐软件。对这些产品的支持包括接听电话订单、查询订单状态、处理账单问题以及提供软件技术支持。最后一项是本章的重点。
+
 在这个案例研究中，你将开发一个基于 Web 的系统来管理产品支持中心。该系统的用户可以报告和跟踪产品缺陷，记录相关评论，并将问题转交给合适的人员。
 
 为清晰起见，该应用程序并未包含一个真实生产系统可能具备的所有验证、用户控制或管理报告功能。但是，它确实阐述了本书中描述的许多技术，并为进一步开发提供了一个模型。
@@ -15204,6 +14747,7 @@ adding: WEB-INF/web.xml(in = 46)  (out= 37) (deflated 19%)
 ### 流程
 
 首先，让我们考虑一下系统将运行的环境。流程如图 19-1 所示。
+
 当客户致电报告软件问题时，第一位空闲的呼叫中心坐席会接听电话。如果问题与软件无关，这位 *呼叫中心坐席* 可能会将电话转接给销售或客户服务部门。否则，坐席会核实客户是否有权获得支持，即客户是指定产品的合法购买者。坐席创建一份问题报告，并告知客户等待产品支持部门的回电。
 
 问题报告会被路由到负责报告缺陷产品的 *产品支持专员*。每位产品支持专员都有一个待处理问题报告队列，当收到新问题时，专员会致电客户获取更多详情，试图确定这是客户问题还是代码问题。客户问题可能涉及缺少必需的硬件或软件，或未能正确安装产品。在这些情况下，产品支持人员会尽可能帮助客户解决问题，然后关闭问题报告。
@@ -15263,8 +14807,6 @@ adding: WEB-INF/web.xml(in = 46)  (out= 37) (deflated 19%)
 
 JSP 是一个便捷的开发环境。页面在需要时会自动编译，URL 可以轻松映射到目录位置。在 JSP 页面内，你可以自由混合使用 HTML 和 Java，这提供了极大的灵活性。
 
-
-
 不幸的是，这些优点也意味着普通的JSP应用程序无法良好扩展。随着越来越多的Java代码嵌入到JSP页面中，跟踪这些代码变得越来越困难。与可以被编译和进行单元测试的Java类不同，JSP脚本代码不易与其容器分离。在大段嵌入Java代码的HTML中保持一致性也很困难。你可能一开始使用bean来完成大部分工作，但后来发现它们不能完全满足你的需求，于是不得不在HTML中嵌入一些额外的Java代码。如果应用程序大量使用`<%@ include %>`指令，这些问题会变得更加严重。
 
 在更大的应用程序中，需要一种更好的方法将代码分离成具有清晰职责的组件。对于你的产品支持系统，你使用了*模型-视图-控制器*（MVC）设计模式。
@@ -15281,11 +14823,11 @@ MVC背后的理念是，系统的可视化方面应与其内部工作方式隔�
 
 例如，在一个国际象棋游戏中，模型可能由一组表示棋子的对象和一个用于存放它们的简单的8×8数组组成。模型可以有一些方法，用于指示轮到谁走棋、评估一个给定的走法是否合法，以及将棋子从一个数组元素移动到另一个数组元素。模型*不会*包含提供棋盘任何可视化表示的代码。
 
-*视图*是系统的表示层。它不进行数据库访问，也不包含业务逻辑。视图中少量的非可视化代码仅限于表示逻辑，例如循环遍历要显示的对象数组。根据设计，一个模型可以与多个视图关联，也许是一个*图形用户界面*（GUI）和一个打印报告。例如，一个基于Web的两人游戏可以为每个玩家提供一个视图，两者都连接到同一个模型。这不需要对模型进行任何更改，因为模型不知道它是如何被显示的。
+*视图*是系统的表示层。它不进行数据库访问，也不包含业务逻辑。视图中少量的非可视化代码仅限于表示逻辑，例如循环遍历要显示的对象数组。根据设计，一个模型可以与多个视频关联，也许是一个*图形用户界面*（GUI）和一个打印报告。例如，一个基于Web的两人游戏可以为每个玩家提供一个视图，两者都连接到同一个模型。这不需要对模型进行任何更改，因为模型不知道它是如何被显示的。
 
 在国际象棋游戏的情况下，视图将包含绘制棋盘和棋子、列出走法和显示时钟的代码。它不会了解国际象棋的规则、轮到谁走棋，甚至不知道棋子的位置。视图会调用模型中的方法来跟踪所有这些信息。尽管GUI代码通常很复杂，但视图只需要担心它的可视化方面。测试和调试很简单，因为可以使用一个模型的桩版本来测试视图的所有部分。
 
-*控制器*是根据用户输入操作模型的部分。基于当前视图、模型的状态以及用户采取的操作，控制器调用模型API来更新模型状态并选择下一个视图。粗略地说，控制器处理来自用户的*输入*，而视图处理输出给用户的*输出*。国际象棋游戏可能有两个控制器——一个负责传达人类玩家的走法，另一个负责选择计算机的走法。
+*控制器*是根据用户输入操作模型的部分。基于当前视视图、模型的状态以及用户采取的操作，控制器调用模型API来更新模型状态并选择下一个视图。粗略地说，控制器处理来自用户的*输入*，而视图处理输出给用户的*输出*。国际象棋游戏可能有两个控制器——一个负责传达人类玩家的走法，另一个负责选择计算机的走法。
 
 在这个产品支持系统中，模型由普通的Java类（不是servlet，也不是面向网络的）组成。简单的JSP页面用作视图，控制器是一个带有支持类的单个servlet。
 
@@ -15294,7 +14836,9 @@ MVC背后的理念是，系统的可视化方面应与其内部工作方式隔�
 让我们首先检查产品支持系统的模型。它由三组类组成：
 
 - 表示业务对象的类，大致对应于数据库中的表
+
 - 应用程序容器和接口类
+
 - 一个测试框架
 
 这些类共同构成了`com.lyricnote.support.model`包。除了维护应用程序状态外，模型还包含所有访问数据库的代码，使用一个会话感知的包装类来确保数据库资源得到正确管理。
@@ -15304,10 +14848,15 @@ MVC背后的理念是，系统的可视化方面应与其内部工作方式隔�
 六个类封装了数据模型中使用的业务实体：
 
 - com.lyricnote.support.model.Customer
+
 - com.lyricnote.support.model.Product
+
 - com.lyricnote.support.model.CustomerProduct
+
 - com.lyricnote.support.model.Employee
+
 - com.lyricnote.support.model.Problem
+
 - com.lyricnote.support.model.ProblemLog
 
 以下部分列出了每个类的源代码并描述了它们的操作。
@@ -15455,11 +15004,9 @@ import java.util.*;
 public class Product implements Serializable
 ```
 
-
-
 ## 566 JSP：权威参考指南
 
-与 `Customer` 类类似，`Product` 类也为其每个属性提供了 getter 和 setter 方法，以及自定义的 `toString()` 方法和用于从结果集行加载 `Product` 对象的工厂方法。
+与 `Customer` 类类似，`Product` 类也为其每个属性提供了 getter 和 setter 方法，以及自定的 `toString()` 方法和用于从结果集行加载 `Product` 对象的工厂方法。
 
 ### CustomerProduct 类
 
@@ -15628,191 +15175,188 @@ public class Employee implements Serializable
     public String toString()
     {
         StringBuffer sb = new StringBuffer();
+        sb.append(getEmployeeID());
+        sb.append(",");
+        sb.append(Util.quote(getName()));
+        sb.append(",");
+        sb.append(Util.dateFormat(getDateHired()));
+        sb.append(",");
+        sb.append(getIsManager());
+        sb.append(",");
+        sb.append(getDepartmentID());
+        sb.append(",");
+        sb.append(Util.quote(getTitle()));
+        sb.append(",");
+        sb.append(getEmail());
+        sb.append(",");
+        sb.append(getPhone());
+
+        return sb.toString();
     }
-}
-```
 
+    // ============================================================
+    //    属性访问器方法
+    // ============================================================
 
+    /**
+    * 返回员工ID。
+    */
+    public String getEmployeeID()
+    {
+        return employeeID;
+    }
 
-## 570 JSP：完全参考手册
+    /**
+    * 设置员工ID。
+    * @param employeeID 员工ID。
+    */
+    public void setEmployeeID(String employeeID)
+    {
+        this.employeeID = employeeID;
+    }
 
-```
-sb.append(getEmployeeID());
-sb.append(",");
-sb.append(Util.quote(getName()));
-sb.append(",");
-sb.append(Util.dateFormat(getDateHired()));
-sb.append(",");
-sb.append(getIsManager());
-sb.append(",");
-sb.append(getDepartmentID());
-sb.append(",");
-sb.append(Util.quote(getTitle()));
-sb.append(",");
-sb.append(getEmail());
-sb.append(",");
-sb.append(getPhone());
+    /**
+    * 返回员工姓名。
+    */
+    public String getName()
+    {
+        return name;
+    }
 
-return sb.toString();
-}
-```
+    /**
+    * 设置员工姓名。
+    * @param name 员工姓名。
+    */
+    public void setName(String name)
+    {
+        this.name = name;
+    }
 
-```
-// ============================================================
-//    属性访问器方法
-// ============================================================
+    /**
+    * 返回入职日期。
+    */
+    public Date getDateHired()
+    {
+        return dateHired;
+    }
 
-/**
-* 返回员工ID。
-*/
-public String getEmployeeID()
-{
-    return employeeID;
-}
+    /**
+    * 设置入职日期。
+    * @param dateHired 入职日期。
+    */
+    public void setDateHired(Date dateHired)
+    {
+        this.dateHired = dateHired;
+    }
 
-/**
-* 设置员工ID。
-* @param employeeID 员工ID。
-*/
-public void setEmployeeID(String employeeID)
-{
-    this.employeeID = employeeID;
-}
+    /**
+    * 返回是否为经理的标志。
+    */
+    public boolean getIsManager()
+    {
+        return isManager;
+    }
 
-/**
-* 返回员工姓名。
-*/
-public String getName()
-{
-    return name;
-}
+    /**
+    * 设置是否为经理的标志。
+    * @param isManager 是否为经理的标志。
+    */
+    public void setIsManager(boolean isManager)
+    {
+        this.isManager = isManager;
+    }
 
-/**
-* 设置员工姓名。
-* @param name 员工姓名。
-*/
-public void setName(String name)
-{
-    this.name = name;
-}
+    /**
+    * 返回部门ID。
+    */
+    public String getDepartmentID()
+    {
+        return departmentID;
+    }
 
-/**
-* 返回入职日期。
-*/
-public Date getDateHired()
-{
-    return dateHired;
-}
+    /**
+    * 设置部门ID。
+    * @param departmentID 部门ID。
+    */
+    public void setDepartmentID(String departmentID)
+    {
+        this.departmentID = departmentID;
+    }
 
-/**
-* 设置入职日期。
-* @param dateHired 入职日期。
-*/
-public void setDateHired(Date dateHired)
-{
-    this.dateHired = dateHired;
-}
+    /**
+    * 返回职位头衔。
+    */
+    public String getTitle()
+    {
+        return title;
+    }
 
-/**
-* 返回是否为经理的标志。
-*/
-public boolean getIsManager()
-{
-    return isManager;
-}
+    /**
+    * 设置职位头衔。
+    * @param title 职位头衔。
+    */
+    public void setTitle(String title)
+    {
+        this.title = title;
+    }
 
-/**
-* 设置是否为经理的标志。
-* @param isManager 是否为经理的标志。
-*/
-public void setIsManager(boolean isManager)
-{
-    this.isManager = isManager;
-}
+    /**
+    * 返回电子邮件。
+    */
+    public String getEmail()
+    {
+        return email;
+    }
 
-/**
-* 返回部门ID。
-*/
-public String getDepartmentID()
-{
-    return departmentID;
-}
+    /**
+    * 设置电子邮件。
+    * @param email 电子邮件。
+    */
+    public void setEmail(String email)
+    {
+        this.email = email;
+    }
 
-/**
-* 设置部门ID。
-* @param departmentID 部门ID。
-*/
-public void setDepartmentID(String departmentID)
-{
-    this.departmentID = departmentID;
-}
+    /**
+    * 返回电话。
+    */
+    public String getPhone()
+    {
+        return phone;
+    }
 
-/**
-* 返回职位头衔。
-*/
-public String getTitle()
-{
-    return title;
-}
-
-/**
-* 设置职位头衔。
-* @param title 职位头衔。
-*/
-public void setTitle(String title)
-{
-    this.title = title;
-}
-
-/**
-* 返回电子邮件。
-*/
-public String getEmail()
-{
-    return email;
-}
-
-/**
-* 设置电子邮件。
-* @param email 电子邮件。
-*/
-public void setEmail(String email)
-{
-    this.email = email;
-}
-
-/**
-* 返回电话。
-*/
-public String getPhone()
-{
-    return phone;
-}
-
-/**
-* 设置电话。
-* @param phone 电话。
-*/
-public void setPhone(String phone)
-{
-    this.phone = phone;
+    /**
+    * 设置电话。
+    * @param phone 电话。
+    */
+    public void setPhone(String phone)
+    {
+        this.phone = phone;
+    }
 }
 ```
 
 与其他一些表不同，员工表不仅用于产品支持系统。因此，它包含了比产品支持系统实际使用的更多字段，如下所示：
 
 -   employeeID 唯一的四位数员工编号
+
 -   name 员工姓名
+
 -   dateHired 员工的入职日期
+
 -   isManager 一个布尔变量，如果员工是经理则为真
+
 -   departmentID 员工所属部门的代码
+
 -   title 职位头衔
+
 -   email 电子邮件地址
+
 -   phone 电话分机号
 
 Employee 类（在以下代码清单中展示）封装了员工表中的一行。
 
-```
+```java
 package com.lyricnote.support.model;
 
 import java.io.*;
@@ -16034,7 +15578,7 @@ Employee 类具有前面描述的 `toString()` 和 `load()` 方法。
 
 系统的核心是报告的问题集合。在数据库中，每个问题由两种类型的记录组成：一种代表整个问题，另一种代表问题从报告到关闭整个生命周期中的每个事件。静态问题数据包含在下面列出的 Problem 类中。
 
-```
+```java
 package com.lyricnote.support.model;
 
 import java.io.*;
@@ -16271,31 +15815,46 @@ public void setProductID(String productID)
 一个 Problem 对象包含以下字段：
 
 - problemID：由系统分配的唯一问题标识符。
+
 - description：用于在图形用户界面显示的简要问题描述。
+
 - severity：客服代表对问题关键程度的评估，其中 1=高，2=中，3=低。
+
 - dateReported：问题报告给客服中心的日期和时间。
+
 - dateResolved：如果问题已关闭，则包含关闭的日期和时间。否则值为 null。
+
 - customerID：八字符的客户标识符。
+
 - productID：唯一的产品标识符。
 
-ProblemLog 类
+### ProblemLog 类
+
 问题生命周期中的事件由 `problog` 表中的行来建模，该表包含以下列：
 
 - problemID：问题标识符，用于连接 `problog` 和 `problem` 表。
+
 - logtime：由数据库系统生成的时间戳。此字段与问题 ID 一起构成了此问题日志条目的唯一键。
+
 - eventID：一个三字符的代码，表示问题日志事件的性质。事件 ID 代码取自以下列表：
+
   - COM--评论
+
   - RPS--路由至产品支持
+
   - RPD--路由至产品研发
+
   - RQA--路由至质量保证
+
   - CNB--关闭--非缺陷
+
   - CCP--关闭--客户问题
+
   - CFX--关闭--已修复
+
 - comments：输入此日志条目的人员所做的评论。
 
 系统使用 `ProblemLog` 类（如以下列表所示）来表示 `problog` 表中的一行。
-
-# 第19章：案例研究：产品支持中心
 
 ```java
 package com.lyricnote.support.model;
@@ -16425,17 +15984,19 @@ public class ProblemLog implements Serializable
 }
 ```
 
-# 应用程序对象
+## 应用程序对象
 
 业务对象代表系统所知的单个实体。从模型的角度来看，其他对象代表整个应用程序。此类别的类包括以下：
 
 - com.lyricnote.support.model.Model
+
 - com.lyricnote.support.model.WebModel
+
 - com.lyricnote.support.model.Util
 
 以下部分列出了这些类的源代码并描述了它们的操作。
 
-**Model 类** 在系统运行期间，业务对象驻留在一个名为 `Model` 的应用程序容器类中。此类公开了一个 API，允许控制器操作它，并允许视图从中提取数据。每个用户会话存在一个 `Model` 对象，因此模型状态是线程安全的。`Model` 是一个相当大的类。让我们一次列出一部分，以便您详细检查它。
+**Model 类** 在系统运行期间，业务对象驻留在一个名为 `Model` 的应用程容器类中。此类公开了一个 API，允许控制器操作它，并允许视图从中提取数据。每个用户会话存在一个 `Model` 对象，因此模型状态是线程安全的。`Model` 是一个相当大的类。让我们一次列出一部分，以便您详细检查它。
 
 ```java
 package com.lyricnote.support.model;
@@ -16482,9 +16043,13 @@ public class Model implements Serializable
 `Model` 包含表示应用程序状态的实例变量。这些变量分为以下几类：
 
 - **配置字段** 这些包括包含下一个可用问题 ID 号的文件名、用于访问数据库的 JDBC 驱动程序名称、数据库 URL 和数据库连接对象。
+
 - **客户字段** 模型支持按字母顺序搜索客户名称。最近一次搜索的结果存储在 `Customer` 对象的 `java.util.List` 中。此列表作为属性公开，并通过 `getCustomers()` 方法提供。此外，模型有一个 `customerID` 属性，为需要它的多个方法提供隐式 ID。
+
 - **产品字段** 与客户字段一样，存在用于当前产品搜索结果和当前产品 ID 的实例变量。
+
 - **问题字段** 模型有用于当前 `Problem` 对象列表和当前选定问题的实例变量。
+
 - **问题日志字段** 同样，有一个 `java.util.List` 用于与当前问题关联的 `ProblemLog` 对象列表。
 
 ```
@@ -16496,8 +16061,6 @@ public class Model implements Serializable
  * 分配一个全局唯一的问题 ID
  */
 ```
-
-
 
 ```java
 public static synchronized String assignProblemID
@@ -16654,7 +16217,9 @@ public void setProblemIDFile(String problemIDFile)
 数据库连接通过三个方法进行管理：
 
 - `void connect()`
+
 - `void disconnect()`
+
 - `boolean isConnected()`
 
 `connect()` 方法使用模型的 `jdbcDriver` 和 `databaseURL` 属性打开到数据库的 JDBC 连接。这些属性从 `web.xml` 部署描述符中指定的上下文参数设置。`disconnect()` 方法关闭连接，而 `isConnected()` 方法提供了一种测试数据库连接是否存在的方法。
@@ -16662,9 +16227,16 @@ public void setProblemIDFile(String problemIDFile)
 > 2 文件名存储为实例变量，但使用它的方法是一个类方法。这就是为什么它必须作为参数传递。原因是该模型可以从 Web 或命令行测试外壳运行。在这两种情况下，文件的位置可能不同。
 
 > **注意**
+
 > `connect()` 和 `disconnect()` 方法提供了连接到数据库的能力，但它们不选择何时以及如何执行此操作。事实上，模型本身没有处理此任务的逻辑。正如你将看到的，这是控制器对象的任务。
 
 ### 19.4.1 客户方法
+
+
+
+# 第19章：案例研究：产品支持中心
+
+## 客户方法
 
 ```java
 /**
@@ -16675,12 +16247,10 @@ public Customer getCustomer()
     throws SQLException
 {
     // 验证连接是否存在
-
     if (!isConnected())
         throw new SQLException("No connection");
 
     // 验证是否存在当前客户 ID
-
     if (customerID == null)
         throw new SQLException("No customer ID");
 
@@ -16689,15 +16259,12 @@ public Customer getCustomer()
     Customer customer = null;
 
     try {
-
         // 准备查询 SQL
-
-        pstmt = con.prepareStatement
-        ("select * from customers where customerID = ?");
+        pstmt = con.prepareStatement(
+            "select * from customers where customerID = ?");
         pstmt.setString(1, customerID);
 
         // 执行查询
-
         rs = pstmt.executeQuery();
         if (rs.next())
             customer = Customer.load(rs);
@@ -16710,29 +16277,27 @@ public Customer getCustomer()
     }
 
     // 返回客户
-
     return customer;
 }
 
 /**
-* 返回当前客户搜索结果
-*/
+ * 返回当前客户搜索结果
+ */
 public List getCustomers()
 {
     return customers;
 }
 
 /**
-* 使用指定的客户搜索参数查询数据库以查找匹配的客户。
-* 创建客户对象列表。
-* @param searchArgument 搜索参数
-* @exception SQLException 如果发生数据库错误
-*/
+ * 使用指定的客户搜索参数查询数据库以查找匹配的客户。
+ * 创建客户对象列表。
+ * @param searchArgument 搜索参数
+ * @exception SQLException 如果发生数据库错误
+ */
 public void customerSearch(String searchArgument)
     throws SQLException
 {
     // 验证连接是否存在以及搜索参数是否已指定
-
     if (!isConnected())
         throw new SQLException("No connection");
 
@@ -16741,9 +16306,7 @@ public void customerSearch(String searchArgument)
     customers = null;
 
     try {
-
         // 准备查询 SQL
-
         pstmt = con.prepareStatement(
             "select *"
             + " from customers"
@@ -16755,7 +16318,6 @@ public void customerSearch(String searchArgument)
         pstmt.setString(1, searchArgument);
 
         // 执行查询并将结果复制到 List
-
         rs = pstmt.executeQuery();
         customers = new LinkedList();
         while (rs.next()) {
@@ -16790,23 +16352,21 @@ public void setCustomerID(String customerID)
 
 存在当前客户 ID 的获取和设置方法，以及一个用于从数据库中检索具有该 ID 的 `Customer` 对象的方法。`getCustomer()` 方法说明了 `Customer.load()` 方法从结果集中提取 `Customer` 对象的功能。`customerSearch()` 方法从 `customer` 表中选择 `name` 字段匹配指定搜索参数的 `Customer` 对象。生成的 `java.util.List` 存储为实例变量，可以通过 `getCustomers()` 检索。
 
-### 19.4.2 产品方法
+## 产品方法
 
 ```java
 /**
-* 返回与当前产品 ID 对应的产品对象
-* @exception SQLException 如果发生数据库错误
-*/
+ * 返回与当前产品 ID 对应的产品对象
+ * @exception SQLException 如果发生数据库错误
+ */
 public Product getProduct()
     throws SQLException
 {
     // 验证连接是否存在
-
     if (!isConnected())
         throw new SQLException("No connection");
 
     // 验证当前产品 ID 是否存在
-
     if (productID == null)
         throw new SQLException("No product ID");
 
@@ -16815,28 +16375,25 @@ public Product getProduct()
     Product product = null;
 
     try {
-```
+        // 准备查询 SQL
+        pstmt = con.prepareStatement(
+            "select * from products where productID = ?");
+        pstmt.setString(1, productID);
 
-598 JSP：完整参考
+        // 执行查询
+        rs = pstmt.executeQuery();
+        if (rs.next())
+            product = Product.load(rs);
+    }
+    finally {
+        if (rs != null)
+            rs.close();
+        if (pstmt != null)
+            pstmt.close();
+    }
 
-// 准备查询 SQL
-pstmt = con.prepareStatement("select * from products where productID = ?");
-pstmt.setString(1, productID);
-
-// 执行查询
-rs = pstmt.executeQuery();
-if (rs.next())
-    product = Product.load(rs);
-}
-finally {
-    if (rs != null)
-        rs.close();
-    if (pstmt != null)
-        pstmt.close();
-}
-
-// 返回产品
-return product;
+    // 返回产品
+    return product;
 }
 
 /**
@@ -16905,13 +16462,13 @@ public void setProductID(String productID)
 {
     this.productID = productID;
 }
+```
 
 与客户方法完全对应，产品方法用于获取和设置当前产品 ID，检索相应的 `Product` 对象，选择与搜索字符串匹配的产品，并检索所选结果。
 
-// ====================================
-//     客户/产品方法
-// ====================================
+## 客户/产品方法
 
+```java
 /**
  * 返回当前客户的 CustomerProduct 对象列表。
  * @exception SQLException 如果发生数据库错误
@@ -16956,13 +16513,13 @@ public List getCustomerProducts() throws SQLException
     // 返回列表
     return list;
 }
+```
 
-当选择了客户 ID 并将其存储在模型中后，就可以在 `custprod` 表中搜索该客户购买的产品。得到的 `CustomerProblem` 对象列表按购买日期降序排序并返回给调用者。
+当选择了客户 ID 并将其存储在模型中后，就可以在 `custprod` 表中搜索该客户购买的产品。得到的 `CustomerProduct` 对象列表按购买日期降序排序并返回给调用者。
 
-// ========================================
-//   员工方法
-// ========================================
+## 员工方法
 
+```java
 /**
  * 返回与指定员工 ID 对应的员工对象
  * @param employeeID 员工 ID
@@ -16980,7 +16537,8 @@ public Employee getEmployee(String employeeID) throws SQLException
 
     try {
         // 准备查询 SQL
-        pstmt = con.prepareStatement("select * from employees where employeeID = ?");
+        pstmt = con.prepareStatement(
+            "select * from employees where employeeID = ?");
         pstmt.setString(1, employeeID);
 
         // 执行查询
@@ -16998,13 +16556,13 @@ public Employee getEmployee(String employeeID) throws SQLException
     // 返回员工
     return employee;
 }
+```
 
 可以通过调用 `getEmployee()` 并传入员工 ID 来从数据库中检索员工对象。这主要用于显示 `Product` 对象中三个支持 ID 的员工姓名。
 
-// ========================================
-//     问题方法
-// ========================================
+## 问题方法
 
+```java
 /**
  * 工厂方法，用于创建新的问题记录并将其添加到数据库
  */
@@ -17012,12 +16570,10 @@ public void newProblem() throws SQLException
 {
     if (getCustomerID() == null)
         throw new SQLException("No customer ID");
-
     if (getProductID() == null)
         throw new SQLException("No product ID");
 
     Problem problem = new Problem();
-
     String fileName = getProblemIDFile();
     problemID = assignProblemID(fileName);
     problem.setProblemID(problemID);
@@ -17030,7 +16586,8 @@ public void newProblem() throws SQLException
     // 添加到数据库
     PreparedStatement pstmt = null;
     try {
-        pstmt = con.prepareStatement("insert into problems values(?, ?, ?, ?, ?, ?, ?)");
+        pstmt = con.prepareStatement(
+            "insert into problems values(?, ?, ?, ?, ?, ?, ?)");
         pstmt.setString(1, problemID);
         pstmt.setString(2, problem.getDescription());
         pstmt.setInt(3, problem.getSeverity());
@@ -17083,8 +16640,6 @@ public void updateProblem(Problem problem) throws SQLException
     }
 }
 
-# 第19章：案例研究：产品支持中心
-
 /**
  * 返回与当前问题 ID 对应的问题对象
  * @exception SQLException 如果发生数据库错误
@@ -17105,30 +16660,24 @@ public Problem getProblem() throws SQLException
 
     try {
         // 准备查询 SQL
-        pstmt = con.prepareStatement("select * from problems where problemID = ?");
+        pstmt = con.prepareStatement(
+            "select * from problems where problemID = ?");
         pstmt.setString(1, problemID);
+
+        // 执行查询
+        rs = pstmt.executeQuery();
+        if (rs.next())
+            problem = Problem.load(rs);
     }
-}
+    finally {
+        if (rs != null)
+            rs.close();
+        if (pstmt != null)
+            pstmt.close();
+    }
 
-
-
-**606 JSP：完全参考手册**
-
-```java
-// 执行查询
-rs = pstmt.executeQuery();
-if (rs.next())
-    problem = Problem.load(rs);
-}
-finally {
-    if (rs != null)
-        rs.close();
-    if (pstmt != null)
-        pstmt.close();
-}
-
-// 返回问题
-return problem;
+    // 返回问题
+    return problem;
 }
 
 /**
@@ -17157,16 +16706,12 @@ public void customerProblemsSearch(String customerID)
     problems = null;
 
     try {
-
         // 准备查询SQL
-
-        pstmt = con.prepareStatement
-            ("select * from problems where customerID = ?");
+        pstmt = con.prepareStatement(
+            "select * from problems where customerID = ?");
         pstmt.setString(1, customerID);
 
-        // 执行查询并将结果
-        // 复制到列表
-
+        // 执行查询并将结果复制到列表
         rs = pstmt.executeQuery();
         problems = new LinkedList();
         while (rs.next())
@@ -17190,7 +16735,6 @@ public void productProblemsSearch(String productID)
     throws SQLException
 {
     // 验证连接是否存在
-
     if (!isConnected())
         throw new SQLException("无连接");
 
@@ -17200,14 +16744,11 @@ public void productProblemsSearch(String productID)
 
     try {
         // 准备查询SQL
-
-        pstmt = con.prepareStatement
-        ("select * from problems where productID = ?");
+        pstmt = con.prepareStatement(
+            "select * from problems where productID = ?");
         pstmt.setString(1, productID);
 
-        // 执行查询并将结果
-        // 复制到列表
-
+        // 执行查询并将结果复制到列表
         rs = pstmt.executeQuery();
         problems = new LinkedList();
         while (rs.next())
@@ -17239,7 +16780,7 @@ public void setProblemID(String problemID)
 }
 ```
 
-newProblem() 方法为当前客户和产品创建一个新的问题记录，初始化它，并将其添加到数据库中，而 updateProblem() 方法则修改它。提供了按客户和产品检索问题的方法，它们将结果存储在 java.util.List 中，可以通过 getProblems() 检索。
+`newProblem()` 方法为当前客户和产品创建一个新的问题记录，初始化它，并将其添加到数据库中，而 `updateProblem()` 方法则修改它。提供了按客户和产品检索问题的方法，它们将结果存储在 `java.util.List` 中，可以通过 `getProblems()` 检索。
 
 ## ProblemLog 方法
 
@@ -17253,25 +16794,21 @@ public void addProblemLog(ProblemLog log)
     throws SQLException
 {
     // 验证连接是否存在
-
     if (!isConnected())
         throw new SQLException("无连接");
 
     PreparedStatement pstmt = null;
 
     try {
-
         // 准备插入SQL
-
-        pstmt = con.prepareStatement
-        ("insert into problog values(?, ?, ?, ?)");
+        pstmt = con.prepareStatement(
+            "insert into problog values(?, ?, ?, ?)");
         pstmt.setString(1, log.getProblemID());
         pstmt.setTimestamp(2, Util.toTimestamp(log.getLogTime()));
         pstmt.setString(3, log.getEventID());
         pstmt.setString(4, log.getComments());
 
         // 执行语句
-
         pstmt.executeUpdate();
     }
     finally {
@@ -17290,7 +16827,6 @@ public void problemLogSearch(String problemID)
     throws SQLException
 {
     // 验证连接是否存在
-
     if (!isConnected())
         throw new SQLException("无连接");
 
@@ -17299,16 +16835,12 @@ public void problemLogSearch(String problemID)
     problemLogs = null;
 
     try {
-
         // 准备查询SQL
-
-        pstmt = con.prepareStatement
-            ("select * from problog where problemID = ?");
+        pstmt = con.prepareStatement(
+            "select * from problog where problemID = ?");
         pstmt.setString(1, problemID);
 
-        // 执行查询并将结果
-        // 复制到列表
-
+        // 执行查询并将结果复制到列表
         rs = pstmt.executeQuery();
         problemLogs = new LinkedList();
         while (rs.next())
@@ -17335,15 +16867,15 @@ public List getProblemLogs()
 
 ## WebModel 类
 
-如果你仔细阅读了 Model 类，会注意到它不包含任何 Web 感知方法。这是有意为之。出于测试目的，你希望能够使用简单的命令行视图运行模型，因此不希望在模型的任何地方使用 javax.servlet 或 javax.servlet.http 类。但是，当从 Web 运行时，你希望模型能利用更多关于其环境的知识。因此，你使用了一个具有这种感知能力的 Model 子类。
+如果你仔细阅读了 Model 类，会注意到它不包含任何 Web 感知方法。这是有意为之。出于测试目的，你希望能够使用简单的命令行视图运行模型，因此不希望在模型的任何地方使用 `javax.servlet` 或 `javax.servlet.http` 类。但是，当从 Web 运行时，你希望模型能利用更多关于其环境的知识。因此，你使用了一个具有这种感知能力的 Model 子类。
 
-WebModel 实现了三个方法：
+`WebModel` 实现了三个方法：
 
-- `void init(ServletContext context)` 从 web.xml 部署描述符中提取应用程序参数。这些参数包括 JDBC 驱动程序名称、数据库 URL 以及包含下一个可用产品 ID 的文件名。使用 web.xml 来指定这些值使得为不同环境配置产品支持应用程序变得容易。
-- `void valueBound(HttpSessionBindingEvent event)` 是构成 HttpSessionBindingListener 接口的两个方法之一。在这种情况下，这个方法中无需执行任何操作，但为了满足编译器要求，必须实现它。
-- `void valueUnbound(HttpSessionBindingEvent event)` 是另一个 HttpSessionBindingListener 方法。这是你在会话超时或失效时执行关闭数据库连接这一重要功能的地方。
+- `void init(ServletContext context)` 从 `web.xml` 部署描述符中提取应用程序参数。这些参数包括 JDBC 驱动程序名称、数据库 URL 以及包含下一个可用产品 ID 的文件名。使用 `web.xml` 来指定这些值使得为不同环境配置产品支持应用程序变得容易。
+- `void valueBound(HttpSessionBindingEvent event)` 是构成 `HttpSessionBindingListener` 接口的两个方法之一。在这种情况下，这个方法中无需执行任何操作，但为了满足编译器要求，必须实现它。
+- `void valueUnbound(HttpSessionBindingEvent event)` 是另一个 `HttpSessionBindingListener` 方法。这是你在会话超时或失效时执行关闭数据库连接这一重要功能的地方。
 
-WebModel 类如下所示：
+`WebModel` 类如下所示：
 
 ```java
 package com.lyricnote.support.model;
@@ -17368,7 +16900,6 @@ public class WebModel
     {
         // 从 web.xml 中的应用程序范围值
         // 设置模型的 JDBC 驱动程序属性
-
         String jdbcDriver =
             context.getInitParameter("jdbcDriver");
         if (jdbcDriver == null)
@@ -17377,7 +16908,6 @@ public class WebModel
         setJdbcDriver(jdbcDriver);
 
         // 对数据库URL执行同样操作
-
         String databaseURL =
             context.getInitParameter("databaseURL");
         if (databaseURL == null)
@@ -17386,55 +16916,50 @@ public class WebModel
         setDatabaseURL(databaseURL);
 
         // 以及问题 ID 分配文件
-
         String problemIDFile =
             context.getInitParameter("problemIDFile");
         if (problemIDFile == null)
             throw new ServletException
+                ("未指定 problemIDFile 属性");
+        setProblemIDFile(problemIDFile);
+
+        // 连接到数据库
+        try {
+            connect();
+        }
+        catch (SQLException e) {
+            throw new ServletException(e.getMessage());
+        }
+    }
+
+    /**
+     * 当模型绑定到会话时调用
+     */
+    public void valueBound(HttpSessionBindingEvent event)
+    {
+    }
+
+    /**
+     * 当模型从会话中移除时调用
+     */
+    public void valueUnbound(HttpSessionBindingEvent event)
+    {
+        disconnect();
+    }
+}
 ```
-
-
-
-("未指定problemIDFile属性");
-    setProblemIDFile(problemIDFile);
-
-    // 连接到数据库
-
-    try {
-        connect();
-    }
-    catch (SQLException e) {
-        throw new ServletException(e.getMessage());
-    }
-}
-
-/**
- * 当模型绑定到会话时调用
- */
-public void valueBound(HttpSessionBindingEvent event)
-{
-}
-
-/**
- * 当模型从会话中移除时调用
- */
-public void valueUnbound(HttpSessionBindingEvent event)
-{
-    disconnect();
-}
-}
 
 ## 工具类
 
 应用程序对象类中的最后一个类是 `Util`，这是一个提供各种辅助方法的实用工具类。这些方法包括：
 
-- `dateFormat()` 将Date对象转换为格式化的日期字符串
-- `dateTimeFormat()` 将Date对象转换为格式化的日期和时间字符串
-- `toTimestamp()` 将Date对象转换为 `java.sql.Timestamp`，以便可以在 `PreparedStatement.setTimestamp()` 方法中使用。
-- `quote()` 如果字符串包含嵌入的逗号，则用引号将其括起来。这被 `Customer`、`Product` 和其他业务对象类中的 `toString()` 方法使用，以使值对于逗号分隔值格式是安全的。
-- `isClosingEvent()` 如果指定的事件ID表示问题已关闭，则返回 `true`。
+- `dateFormat()` 将 `Date` 对象转换为格式化的日期字符串
+- `dateTimeFormat()` 将 `Date` 对象转换为格式化的日期和时间字符串
+- `toTimestamp()` 将 `Date` 对象转换为 `java.sql.Timestamp`，以便可以在 `PreparedStatement.setTimestamp()` 方法中使用
+- `quote()` 如果字符串包含嵌入的逗号，则用引号将其括起来。这被 `Customer`、`Product` 和其他业务对象类中的 `toString()` 方法使用，以使值对于逗号分隔值格式是安全的
+- `isClosingEvent()` 如果指定的事件 ID 表示问题已关闭，则返回 `true`
 
-以下是Util类的代码清单：
+以下是 `Util` 类的代码清单：
 
 ```java
 package com.lyricnote.support.model;
@@ -17518,7 +17043,7 @@ MVC架构的一大优势在于每个组件都可以独立进行测试。在开�
 
 ## Shell类
 
-test.Shell类是一个独立的Java应用程序，它充当com.lyricnote.support.model.Model的控制器和视图。就像Unix Shell或Windows命令提示符一样，Shell类会提示输入命令、执行它们并显示结果。这些命令的语法是简单的调用模型上方法的Java语法，以及一些用于列出可用方法、显示帮助文本和类似控制功能的命令。Shell提供了一种简单的方法来测试模型的每个部分，而无需在Web环境中引入GUI的额外复杂性。与Model类一样，Shell类代码相当长，因此让我们分部分进行讨论。
+`test.Shell` 类是一个独立的 Java 应用程序，它充当 `com.lyricnote.support.model.Model` 的控制器和视图。就像 Unix Shell 或 Windows 命令提示符一样，`Shell` 类会提示输入命令、执行它们并显示结果。这些命令的语法是简单的调用模型上方法的 Java 语法，以及一些用于列出可用方法、显示帮助文本和类似控制功能的命令。`Shell` 提供了一种简单的方法来测试模型的每个部分，而无需在 Web 环境中引入 GUI 的额外复杂性。与 `Model` 类一样，`Shell` 类代码相当长，因此让我们分部分进行讨论。
 
 ```java
 package test;
@@ -17615,12 +17140,7 @@ public class Shell
         this.stream = stream;
         this.interactive = (stream == System.in);
     }
-}
-```
 
-Shell使用一个简单的main()方法来创建模型和shell的实例，然后调用该shell的run()方法。命令输入的源最初是System.in，但如你所见，它也可以是一组存储在文件中并通过include命令处理的命令。
-
-```java
     // =========================================
     //    主读取/执行循环
     // =========================================
@@ -17631,15 +17151,12 @@ Shell使用一个简单的main()方法来创建模型和shell的实例，然后�
     public void run() throws Exception
     {
         // 在输入流上打开一个行读取器
-
         BufferedReader in =
             new BufferedReader(
                 new InputStreamReader(stream));
 
         // 读取并执行每一行
-
         while (true) {
-
             if (interactive)
                 System.out.print(PROMPT);
 
@@ -17648,7 +17165,6 @@ Shell使用一个简单的main()方法来创建模型和shell的实例，然后�
                 break;
 
             // 解析并执行命令
-
             try {
                 if (line.equals("quit"))
                     break;
@@ -17675,13 +17191,21 @@ Shell使用一个简单的main()方法来创建模型和shell的实例，然后�
                 else if (line.startsWith("is"))
                     doGet(line);
                 else if (line.startsWith("connect"))
+                    doConnect();
+                else if (line.startsWith("disconnect"))
+                    doDisconnect();
+                else if (line.startsWith("newProblem"))
+                    doNewProblem();
+            }
+            catch (Exception e) {
+                System.out.println(e.getMessage());
+            }
+        }
+    }
+}
 ```
 
-
-
-## 第19章：案例研究：产品支持中心
-
-`run()` 方法在输入流上打开一个字符行读取器，并开始提示和执行命令。解析器是一个简单的 if 语句列表，用于检查特定的方法名称并调用执行它们的包装方法。对于以 `get`、`is` 或 `set` 开头的命令，Shell 使用反射在模型中查找相应的 getter 或 setter 方法并调用它们。如果遇到任何错误，它们会被写入 `System.out`。以下是该类的其余部分，包含可以从主循环调用的方法（按字母顺序列出）：
+`run()` 方法在输入流上打开一个字符行读取器，并开始提示和执行命令。解析器是一个简单的 `if` 语句列表，用于检查特定的方法名称并调用执行它们的包装方法。对于以 `get`、`is` 或 `set` 开头的命令，`Shell` 使用反射在模型中查找相应的 getter 或 setter 方法并调用它们。如果遇到任何错误，它们会被写入 `System.out`。以下是该类的其余部分，包含可以从主循环调用的方法（按字母顺序列出）：
 
 ```java
 /**
@@ -17690,7 +17214,7 @@ Shell使用一个简单的main()方法来创建模型和shell的实例，然后�
 protected void customerProblemsSearch(String line)
     throws Exception
 {
-    String arg = getArguments(line);
+    String arg = getArgument(line);
     model.customerProblemsSearch(arg);
 }
 
@@ -17700,7 +17224,7 @@ protected void customerProblemsSearch(String line)
 protected void customerSearch(String line)
     throws SQLException
 {
-    String arg = getArguments(line);
+    String arg = getArgument(line);
     model.customerSearch(arg);
 }
 
@@ -17788,9 +17312,7 @@ protected void doSet(String line) throws Exception
         System.out.println(line);
 
     // 行应如下所示：
-    //
     //    setSearchArgument("value")
-
     int p = line.indexOf("(");
     if (p == -1)
         throw new IllegalArgumentException
@@ -17925,7 +17447,8 @@ protected void productProblemsSearch(String line)
 /**
  * 调用 productSearch 方法
  */
-protected void productSearch(String line) throws Exception
+protected void productSearch(String line)
+    throws Exception
 {
     String arg = getArgument(line);
     model.productSearch(arg);
@@ -17979,21 +17502,17 @@ SHELL> methods
     getProductID()
     getProducts()
     isConnected()
+    problemLogSearch(java.lang.String)
+    setCustomerID(java.lang.String)
+    setDatabaseURL(java.lang.String)
+    setJdbcDriver(java.lang.String)
+    setProblemID(java.lang.String)
+    setProblemIDFile(java.lang.String)
+    setProductID(java.lang.String)
+    updateProblem(com.lyricnote.support.model.Problem)
+
+SHELL>
 ```
-
-
-
-## 第十九章：案例研究：产品支持中心
-
-`problemLogSearch(java.lang.String)`
-`setCustomerID(java.lang.String)`
-`setDatabaseURL(java.lang.String)`
-`setJdbcDriver(java.lang.String)`
-`setProblemID(java.lang.String)`
-`setProblemIDFile(java.lang.String)`
-`setProductID(java.lang.String)`
-`updateProblem(com.lyricnote.support.model.Problem)`
-`SHELL>`
 
 这些信息是如何出现的？查看实现 `methods` 命令的 `Shell` 方法，你会发现它对 `Model` 类调用了 `getDeclaredMethods()` 方法，然后打印结果数组。这显示了可以从 shell 内部调用的所有方法列表。
 
@@ -18083,17 +17602,15 @@ Disconnected
 P:\classes\test>
 ```
 
-调用 `productSearch()` 方法，然后调用 `getProducts()`，你可以看到与搜索参数匹配的产品列表（在这种情况下，是一个包含一个元素的列表）。该对象由一个逗号分隔值的字符串表示，列出了产品 ID、其名称，以及产品支持人员、首席开发人员和首席测试人员的员工 ID。然后，`productProblemsSearch()` 方法找到为 ScoreWriter 报告的问题列表（在这种情况下，也只有一个元素的列表）。最后，`problemLogSearch()` 和 `getProblemLogs()` 方法获取所选问题的日志条目。³
+调用 `productSearch()` 方法，然后调用 `getProducts()`，你可以看到与搜索参数匹配的产品列表（在这种情况下，是一个包含一个元素的列表）。该对象由一个逗号分隔值的字符串表示，列出了产品 ID、其名称，以及产品支持人员、首席开发人员和首席测试人员的员工 ID。然后，`productProblemsSearch()` 方法找到为 ScoreWriter 报告的问题列表（在这种情况下，也只有一个元素的列表）。最后，`problemLogSearch()` 和 `getProblemLogs()` 方法获取所选问题的日志条目。
 
 ## 使用模型
 
 这完成了模型组件的开发。在开发的早期阶段，你需要同时编写 `Model` 和 `Shell` 类，以便可以独立测试模型的每个部分。当发现错误时，你可以返回到 shell 来重现它们，而无需启动和停止 Web 服务器或在 servlet 日志中搜索调试条目。这为应用程序的其余部分提供了一个更可靠的基础。
 
-> ³ 列出的结果已稍作重新格式化以适应行宽。
-
 当然，设计模型的方法不止一种。你不必使用像 `Model` 类这样的应用容器；你可以直接在 `HttpSession` 中以 JavaBeans 的形式处理业务对象。然而，你在本节中看到的是一个可行的设计，它适应了各种应用需求，而不会在视图和控制器中产生不必要的复杂性。
 
-## 视图类
+# 视图类
 
 模型可以附加到一个独立的 Java 应用程序。然而，产品支持系统至少由四种角色的用户访问：呼叫中心代理、产品支持专家、开发人员和测试人员。此外，管理层可能希望衡量质量统计数据，例如问题在队列中等待的平均时间、解决一个客户回电所需的平均次数，以及特定产品未解决的缺陷数量。因此，最佳的系统操作环境可能是公司的内网，表示层由 JSP 页面组成。在本节中，你将了解如何将 JSP 页面用作附加模型的视图。
 
@@ -18107,15 +17624,15 @@ P:\classes\test>
 
 图 19-3 图示了此应用程序流程。每个矩形框代表一个特定的 JSP 页面。圆圈代表控制器操作，你稍后会了解到。现在，请记住，控制器操作是导致模型更改并显示下一个视图的操作。从 JSP 视图到控制器操作的箭头标有用户对视图采取的操作类型：从列表中选择、输入搜索参数或单击提交按钮。
 
+## 支持页面
 
+所有 JSP 视图页面都有两段通用的代码段。为了避免在每个 JSP 文件中重复这些代码，你可以将它们存储在单独的文本文件中，并通过 `<%@ include %>` 指令引入。
 
-# 支持页面
+### InitModel.jsp
 
-所有JSP视图页面都有两段通用的代码段。为了避免在每个JSP文件中重复这些代码，你可以将它们存储在单独的文本文件中，并通过`<%@ include %>`指令引入。
+每个 JSP 视图页面都需要将模型声明为一个会话 Bean，并确保数据库连接可用。这个通用功能是通过让视图页面包含以下代码来实现的：
 
-**InitModel.jsp** 每个JSP视图页面都需要将模型声明为一个会话 Bean，并确保数据库连接可用。这个通用功能是通过让视图页面包含以下代码来实现的：
-
-```
+```jsp
 <%-- Define and initialize the model --%>
 
 <jsp:useBean
@@ -18133,17 +17650,20 @@ P:\classes\test>
 %>
 ```
 
-`initModel.jsp` 中的这段代码完成了三件事：
+`InitModel.jsp` 中的这段代码完成了三件事：
 
-- 声明了一个名为`model`、具有会话作用域的JavaBean，并用一个`com.lyricnote.support.model.WebModel`对象进行初始化。
-- 调用模型的`init()`方法，从`web.xml`中提取应用程序变量并建立一个会话感知的数据库连接。该方法仅在模型首次绑定到会话时调用一次。
-- 初始化指定应用程序基础URL和控制器 Servlet 名称的常量。这些常量在视图的其他地方用于URL和表单action属性。
+- 声明了一个名为 `model`、具有会话作用域的 JavaBean，并用一个 `com.lyricnote.support.model.WebModel` 对象进行初始化。
+- 调用模型的 `init()` 方法，从 `web.xml` 中提取应用程序变量并建立一个会话感知的数据库连接。该方法仅在模型首次绑定到会话时调用一次。
+- 初始化指定应用程序基础 URL 和控制器 Servlet 名称的常量。这些常量在视图的其他地方用于 URL 和表单 action 属性。
 
 > 为什么使用 include 指令而不是 `<jsp:include>`？因为被包含的代码段定义并使用了需要对包含模块和被包含模块都通用的常量。
 
-**Banner.jsp** 为了在所有JSP视图页面中保持统一的外观和风格，使用了标准页眉。这个页眉存储在名为 Banner.jsp 的文件中，包含一个HTML表格，其中包含公司Logo和标准导航链接。
+### Banner.jsp
 
-```
+为了在所有 JSP 视图页面中保持统一的外观和风格，使用了标准页眉。这个页眉存储在名为 `Banner.jsp` 的文件中，包含一个 HTML 表格，其中包含公司 Logo 和标准导航链接。
+
+
+
 <TABLE BORDER=0 CELLSPACING=3 CELLPADDING=3 WIDTH=500>
 <TR>
     <TD><IMG SRC="<%= BASEURL %>/images/logo.jpg"></TD>
@@ -18164,13 +17684,12 @@ P:\classes\test>
         HREF="<%= BASEURL %>/Customers.jsp">客户</A>
 </TR>
 </TABLE>
-```
 
-InitModel.jsp 和 Banner.jsp 都不设计为由用户直接调用。为防止这种情况，它们被存储在 /WEB-INF 文件夹中。这使得它们对应用程序本身可见，但对Web上的用户不可见。
+`InitModel.jsp` 和 `Banner.jsp` 都不设计为由用户直接调用。为防止这种情况，它们被存储在 `/WEB-INF` 文件夹中。这使得它们对应用程序本身可见，但对 Web 上的用户不可见。
 
 **ErrorPage.jsp** 最后一个支持模块是错误页面，如下所列：
 
-```
+```jsp
 <%@ page session="false" %>
 <%@ page import="java.io.PrintWriter" %>
 <%@ page isErrorPage="true" %>
@@ -18193,25 +17712,27 @@ InitModel.jsp 和 Banner.jsp 都不设计为由用户直接调用。为防止这
 </HTML>
 ```
 
-ErrorPage.jsp 几乎只是显示任何未捕获异常的堆栈跟踪。这在系统开发期间很有用，但在生产环境中可能应该替换为更用户友好的方式。
+`ErrorPage.jsp` 几乎只是显示任何未捕获异常的堆栈跟踪。这在系统开发期间很有用，但在生产环境中可能应该替换为更用户友好的方式。
 
 # JSP 视图页面
 
-以图19-3为路线图，让我们来看九个单独的JSP视图页面：
+以图19-3为路线图，让我们来看九个单独的 JSP 视图页面：
 
-- Customers.jsp 提示输入客户搜索参数
-- CustomersList.jsp 客户搜索结果的选择列表
-- Customer.jsp 单个客户记录的详细视图
-- Problem.jsp 单个问题记录的详细视图
-- Confirm.jsp 问题更新后显示的确认屏幕
-- Products.jsp 提示输入产品搜索参数
-- ProductsList.jsp 产品搜索结果的选择列表
-- ProductProblems.jsp 产品的问题选择列表
-- Problems.jsp 提示输入产品ID
+- `Customers.jsp` 提示输入客户搜索参数
+- `CustomersList.jsp` 客户搜索结果的选择列表
+- `Customer.jsp` 单个客户记录的详细视图
+- `Problem.jsp` 单个问题记录的详细视图
+- `Confirm.jsp` 问题更新后显示的确认屏幕
+- `Products.jsp` 提示输入产品搜索参数
+- `ProductsList.jsp` 产品搜索结果的选择列表
+- `ProductProblems.jsp` 产品的问题选择列表
+- `Problems.jsp` 提示输入产品ID
 
-Customers.jsp 呼叫中心坐席的初始入口点通常是客户搜索视图，如下所列：
+## Customers.jsp
 
-```
+呼叫中心坐席的初始入口点通常是客户搜索视图，如下所列：
+
+```jsp
 <%@ page session="true" %>
 <%@ page errorPage="/ErrorPage.jsp" %>
 <%@ page import="com.lyricnote.support.model.*" %>
@@ -18239,15 +17760,17 @@ Customers.jsp 呼叫中心坐席的初始入口点通常是客户搜索视图，
 </HTML>
 ```
 
-包含模型初始化和页眉代码后，此JSP页面使用HTML表单提示输入客户姓名搜索字符串。例如，如果呼叫中心坐席正在与一位名为 Eleanor Wagner 的客户通话，坐席可以搜索包含字母 W 的姓名，如图19-4所示。当坐席点击搜索按钮时，表单随后被提交到执行搜索的 Servlet（本章稍后在控制器类部分讨论）。
+包含模型初始化和页眉代码后，此 JSP 页面使用 HTML 表单提示输入客户姓名搜索字符串。例如，如果呼叫中心坐席正在与一位名为 Eleanor Wagner 的客户通话，坐席可以搜索包含字母 W 的姓名，如图19-4所示。当坐席点击搜索按钮时，表单随后被提交到执行搜索的 Servlet（本章稍后在控制器类部分讨论）。
 
 ![](img/7a2f73369bb140583c7288b73456addb_662_0.png)
 
 **图19-4. 客户搜索页面**
 
-**CustomersList.jsp** 按客户姓名搜索的结果存储在模型中的 java.util.List 中。CustomerList.jsp 页面提取该列表并显示它，其中客户ID列是超链接。JSP源代码如下：
+## CustomersList.jsp
 
-```
+按客户姓名搜索的结果存储在模型中的 `java.util.List` 中。`CustomerList.jsp` 页面提取该列表并显示它，其中客户ID列是超链接。JSP 源代码如下：
+
+```jsp
 <%@ page session="true" %>
 <%@ page errorPage="/ErrorPage.jsp" %>
 <%@ page import="java.util.*" %>
@@ -18298,22 +17821,21 @@ Customers.jsp 呼叫中心坐席的初始入口点通常是客户搜索视图，
 </HTML>
 ```
 
-包含姓名中含有字母W的客户的列表的网页如图19-5所示。
+包含姓名中含有字母 W 的客户的列表的网页如图19-5所示。
 
-**Customer.jsp** 从列表中选择 Eleanor Wagner 后，呼叫中心坐席会看到客户详细信息页面，如图19-6所示。此页面有三个部分：
+## Customer.jsp
+
+从列表中选择 Eleanor Wagner 后，呼叫中心坐席会看到客户详细信息页面，如图19-6所示。此页面有三个部分：
 
 - **左上角** 包含客户ID、姓名和电话号码。
 - **右上角** 有客户已购买产品的列表。该列表按采购订单日期降序排列，产品名称是一个用于报告新问题的超链接。
-
-![](img/7a2f73369bb140583c7288b73456addb_664_0.png)
-
 - 底部是客户报告的问题历史记录。在这种情况下，你会看到一个问题，一个已经解决的问题。
 
 产品列表使呼叫中心坐席能够确定 Wagner 女士有权获得支持的产品。
 
-Customer.jsp 的源代码如下：
+`Customer.jsp` 的源代码如下：
 
-```
+```jsp
 <%@ page session="true" %>
 <%@ page errorPage="/ErrorPage.jsp" %>
 <%@ page import="java.util.*" %>
@@ -18329,23 +17851,21 @@ Customer.jsp 的源代码如下：
 
 ![](img/7a2f73369bb140583c7288b73456addb_665_0.png)
 
+JSP 源码主要由 HTML 构成，仅在脚本小程序和表达式中包含少量 Java 用于与模型交互。当前的 `Customer` 对象通过模型的 `getCustomer()` 方法检索。这使得 JSP 表达式能够填充客户 ID、姓名和电话字段。对于右侧的产品列表，JSP 调用模型的 `getCustomerProducts()` 方法，该方法返回一个 `CustomerProduct` 对象列表。模型依次用于获取每个产品的名称和购买日期。页面底部显示的先前客户问题列表也采用了类似的技术。
 
+## Problem.jsp
 
-## 第19章：案例研究：产品支持中心
-
-JSP 源码主要由 HTML 构成，仅在脚本小程序和表达式中包含少量 Java 用于与模型交互。当前的 Customer 对象通过模型的 `getCustomer()` 方法检索。这使得 JSP 表达式能够填充客户 ID、姓名和电话字段。对于右侧的产品列表，JSP 调用模型的 `getCustomerProducts()` 方法，该方法返回一个 CustomerProduct 对象列表。模型依次用于获取每个产品的名称和购买日期。页面底部显示的先前客户问题列表也采用了类似的技术。
-
-**Problem.jsp** 瓦格纳女士报告她在使用 ScoreWriter 产品时遇到了问题。当她尝试输入一个 Db 时，软件却替换成了 C#。呼叫中心代理点击 ScoreWriter 超链接，这将打开图 19-7 所示的 JSP 视图页面。
+瓦格纳女士报告她在使用 ScoreWriter 产品时遇到了问题。当她尝试输入一个 Db 时，软件却替换成了 C#。呼叫中心代理点击 ScoreWriter 超链接，这将打开图 19-7 所示的 JSP 视图页面。
 
 在输入问题描述、严重级别以及客户的评论后，代理点击提交按钮以创建问题记录。
 
 ![图 19-7. 问题详情页](img/7a2f73369bb140583c7288b73456addb_669_0.png)
 
-## JSP：完整参考
+### JSP：完整参考
 
-以下是 Problem.jsp 的源代码：
+以下是 `Problem.jsp` 的源代码：
 
-```
+```jsp
 <%@ page session="true" %>
 <%@ page errorPage="/ErrorPage.jsp" %>
 <%@ page import="java.util.*" %>
@@ -18478,51 +17998,67 @@ JSP 源码主要由 HTML 构成，仅在脚本小程序和表达式中包含少�
 ### 问题历史记录
 
 <TABLE BORDER="1" CELLPADDING="3" CELLSPACING="0">
+
 <TR>
+
 <TH>时间</TH>
+
 <TH>事件代码</TH>
+
 <TH>评论</TH>
+
 </TR>
+
 <%
+
     Iterator it = problemLogs.iterator();
+
     while (it.hasNext()) {
+
         ProblemLog log = (ProblemLog) it.next();
+
 %>
+
 <TR>
+
 <TD><%= Util.dateTimeFormat(log.getLogTime()) %></TD>
+
 <TD><%= log.getEventID() %></TD>
+
 <TD><%= log.getComments() %></TD>
+
 </TR>
+
 <%
+
     }
+
 %>
+
 </TABLE>
+
 <%
+
 }
+
 %>
 
 </BODY>
+
 </HTML>
 ```
 
-同样，JSP 主要由 HTML 组成，包含一些 Java 代码用于访问 Problem 对象及其客户 ID、产品 ID、描述和严重级别。该问题的日志条目列表来自模型的 `problemLogSearch()` 方法。
+同样，JSP 主要由 HTML 组成，包含一些 Java 代码用于访问 `Problem` 对象及其客户 ID、产品 ID、描述和严重级别。该问题的日志条目列表来自模型的 `problemLogSearch()` 方法。
 
-**Confirm.jsp** 代理提交问题记录后，会生成一个确认页面（见图 19-8），列出分配的问题 ID、描述、严重级别、客户评论以及问题路由。代理将问题 ID 告知电话中的客户，并告知她 ScoreWriter 产品支持团队会回电给她。确认页面的源代码如下：
-```
+## Confirm.jsp
+
+代理提交问题记录后，会生成一个确认页面（见图 19-8），列出分配的问题 ID、描述、严重级别、客户评论以及问题路由。代理将问题 ID 告知电话中的客户，并告知她 ScoreWriter 产品支持团队会回电给她。确认页面的源代码如下：
+
+```jsp
 <%@ page session="true" %>
 <%@ page errorPage="/ErrorPage.jsp" %>
 <%@ page import="com.lyricnote.support.model.*" %>
-```
 
-
-
-## 第19章：案例研究：产品支持中心 649
-
-![](img/7a2f73369bb140583c7288b73456addb_675_0.png)
-
-图19-8. 确认页面
-
-```jsp
 <%@ include file="/WEB-INF/InitModel.jsp" %>
 
 <HTML>
@@ -18531,9 +18067,7 @@ JSP 源码主要由 HTML 构成，仅在脚本小程序和表达式中包含少�
 <LINK REL="stylesheet" HREF="<%= BASEURL %>/style.css">
 </HEAD>
 <BODY>
-
 <%@ include file="/WEB-INF/Banner.jsp" %>
-
 <H3>Confirmation</H3>
 <TABLE BORDER=0 CELLPADDING=3 CELLSPACING=0>
 <TR>
@@ -18557,14 +18091,15 @@ JSP 源码主要由 HTML 构成，仅在脚本小程序和表达式中包含少�
     <TD><%= request.getParameter("eventID") %></TD>
 </TR>
 </TABLE>
-
 </BODY>
 </HTML>
 ```
 
 > 对该系统一个有用的改进是，向问题被转交给的员工发送电子邮件通知。第21章将探讨实现此功能的方法。
 
-Products.jsp 其他用户，例如产品支持人员、开发人员或测试人员，可能会通过查找特定产品来启动应用程序。与客户搜索页面一样，这里有一个用于产品搜索的JSP视图页面，如下所列：
+## Products.jsp
+
+其他用户，例如产品支持人员、开发人员或测试人员，可能会通过查找特定产品来启动应用程序。与客户搜索页面一样，这里有一个用于产品搜索的 JSP 视图页面，如下所列：
 
 ```jsp
 <%@ page session="true" %>
@@ -18579,9 +18114,7 @@ Products.jsp 其他用户，例如产品支持人员、开发人员或测试人�
 <LINK REL="stylesheet" HREF="<%= BASEURL %>/style.css">
 </HEAD>
 <BODY>
-
 <%@ include file="/WEB-INF/Banner.jsp" %>
-
 <H3>Product Search</H3>
 <FORM
     METHOD="POST"
@@ -18590,14 +18123,15 @@ Products.jsp 其他用户，例如产品支持人员、开发人员或测试人�
     <INPUT TYPE="TEXT" NAME="productSearchArgument" SIZE="20">
     <INPUT TYPE="SUBMIT" VALUE="Search">
 </FORM>
-
 </BODY>
 </HTML>
 ```
 
-与客户搜索页面类似，`Products.jsp` 使用HTML表单来提示输入搜索字符串。图19-9展示了一个搜索产品名称中包含字母S的示例。
+与客户搜索页面类似，`Products.jsp` 使用 HTML 表单来提示输入搜索字符串。图19-9展示了一个搜索产品名称中包含字母 S 的示例。
 
-**ProductsList.jsp** 如图19-10所示，有两个产品名称包含字母S：Music Teacher Studio 和 ScoreWriter。`ProductsList.jsp` 页面显示这两个产品的ID、产品名称以及分配的支持人员姓名。接下来列出 `ProductsList.jsp`。
+## ProductsList.jsp
+
+如图19-10所示，有两个产品名称包含字母 S：Music Teacher Studio 和 ScoreWriter。`ProductsList.jsp` 页面显示这两个产品的 ID、产品名称以及分配的支持人员姓名。接下来列出 `ProductsList.jsp`。
 
 ![](img/7a2f73369bb140583c7288b73456addb_676_0.png)
 
@@ -18615,9 +18149,7 @@ Products.jsp 其他用户，例如产品支持人员、开发人员或测试人�
 <LINK REL="stylesheet" HREF="<%= BASEURL %>/style.css">
 </HEAD>
 <BODY>
-
 <%@ include file="/WEB-INF/Banner.jsp" %>
-
 <H3>Products List</H3>
 <TABLE BORDER=0 CELLSPACING=5 CELLPADDING=0>
     <TR>
@@ -18641,7 +18173,6 @@ Products.jsp 其他用户，例如产品支持人员、开发人员或测试人�
             String selectURL = CONTROLLER +
                 "/ProductsList/Select?productID="
                 + productID;
-
             String productName = product.getName();
 
             // Get the names of the product support,
@@ -18671,18 +18202,19 @@ Products.jsp 其他用户，例如产品支持人员、开发人员或测试人�
 }
 %>
 </TABLE>
-
 </BODY>
 </HTML>
 ```
 
-对于 `Product` 对象中的三个员工ID，JSP会显示对应的员工姓名。它从模型的 `getEmployee()` 方法获取 `Employee` 对象，然后调用 `Employee.getName()` 方法来获取姓名。
+对于 `Product` 对象中的三个员工 ID，JSP 会显示对应的员工姓名。它从模型的 `getEmployee()` 方法获取 `Employee` 对象，然后调用 `Employee.getName()` 方法来获取姓名。
 
 ![](img/7a2f73369bb140583c7288b73456addb_679_0.png)
 
 图19-10. 产品列表页面
 
-**ProductProblems.jsp** 如果选择了 ScoreWriter 链接，则会显示该产品的问题列表，如图19-11所示。
+## ProductProblems.jsp
+
+如果选择了 ScoreWriter 链接，则会显示该产品的问题列表，如图19-11所示。
 
 ```jsp
 <%@ page session="true" %>
@@ -18698,16 +18230,17 @@ Products.jsp 其他用户，例如产品支持人员、开发人员或测试人�
 <LINK REL="stylesheet" HREF="<%= BASEURL %>/style.css">
 </HEAD>
 <BODY>
-
 <%@ include file="/WEB-INF/Banner.jsp" %>
-
 <H3>Problems by Product</H3>
+
 <%
     Product product = model.getProduct();
     String productID = product.getProductID();
     String productName = product.getName();
 %>
+
 <B>Product:</B> <%= productID %> - <%= productName %>
+
 <TABLE BORDER=0 CELLSPACING=5 CELLPADDING=0>
     <TR>
         <TH ALIGN=LEFT>Problem ID</TH>
@@ -18715,6 +18248,7 @@ Products.jsp 其他用户，例如产品支持人员、开发人员或测试人�
         <TH ALIGN=LEFT>Date Reported</TH>
         <TH ALIGN=LEFT>Date Resolved</TH>
     </TR>
+
 <%
     List list = model.getProblems();
     if (list != null) {
@@ -18723,14 +18257,15 @@ Products.jsp 其他用户，例如产品支持人员、开发人员或测试人�
             Problem problem = (Problem) it.next();
 
             // Create the problem select URL
+
             String problemID = problem.getProblemID();
             String selectURL = CONTROLLER +
                 "/Problems/Select?problemID="
                 + problemID;
-
             String problemDescription = problem.getDescription();
 
             // Get the reported and resolution dates
+
             String dateReported =
                 Util.dateFormat(problem.getDateReported());
             String dateResolved =
@@ -18747,14 +18282,13 @@ Products.jsp 其他用户，例如产品支持人员、开发人员或测试人�
 }
 %>
 </TABLE>
-
 </BODY>
 </HTML>
 ```
 
 ![](img/7a2f73369bb140583c7288b73456addb_681_0.png)
 
-如 ProductProblems.jsp 的清单所示，可以从模型获取当前的 Product 对象，以及该产品的问题列表。当 ScoreWriter 的产品支持人员 Fred Albright 致电客户以获取更多问题细节时，他通过点击超链接从列表中选择问题编号。然后他会看到一个更新后的问题详情（见图19-12）。他在评论部分输入客户访谈的结果，并提交问题更新。新的确认页面如图19-13所示。
+如 `ProductProblems.jsp` 的清单所示，可以从模型获取当前的 `Product` 对象，以及该产品的问题列表。当 ScoreWriter 的产品支持人员 Fred Albright 致电客户以获取更多问题细节时，他通过点击超链接从列表中选择问题编号。然后他会看到一个更新后的问题详情（见图19-12）。他在评论部分输入客户访谈的结果，并提交问题更新。新的确认页面如图19-13所示。
 
 ![](img/7a2f73369bb140583c7288b73456addb_682_0.png)
 
@@ -18762,7 +18296,9 @@ Products.jsp 其他用户，例如产品支持人员、开发人员或测试人�
 
 ![](img/7a2f73369bb140583c7288b73456addb_683_0.png)
 
-**Problems.jsp** 如果已知问题ID，用户可以直接选择问题，使用图19-14所示的JSP视图。
+## Problems.jsp
+
+如果已知问题 ID，用户可以直接选择问题，使用图19-14所示的 JSP 视图。
 
 ![](img/7a2f73369bb140583c7288b73456addb_683_1.png)
 
@@ -18781,9 +18317,7 @@ Products.jsp 其他用户，例如产品支持人员、开发人员或测试人�
 <LINK REL="stylesheet" HREF="<%= BASEURL %>/style.css">
 </HEAD>
 <BODY>
-
 <%@ include file="/WEB-INF/Banner.jsp" %>
-
 <H3>Problem Selection</H3>
 <FORM
     METHOD="POST"
@@ -18792,31 +18326,28 @@ Products.jsp 其他用户，例如产品支持人员、开发人员或测试人�
 <INPUT TYPE="TEXT" NAME="problemID" SIZE="8">
 <INPUT TYPE="SUBMIT" VALUE="select">
 </FORM>
-
 </BODY>
 </HTML>
 ```
 
 在进一步调查该问题后，Fred Albright 确定这是由于用户输入错误造成的。他输入了一条相关评论（见图19-15）并关闭了该问题。确认页面如图19-16所示。
 
-## 控制器类
+# 控制器类
 
-最后一个需要开发的组件是控制器，即系统根据用户输入对模型进行操作并选择下一个视图的部分。在产品支持系统中，此功能由一个名为 `ControllerServlet` 的单一servlet执行。
+最后一个需要开发的组件是控制器，即系统根据用户输入对模型进行操作并选择下一个视图的部分。在产品支持系统中，此功能由一个名为 `ControllerServlet` 的单一 Servlet 执行。
 
-控制器功能可以逐块构建，通过使用小型、定制化的action类来处理每个状态转换，而不是将每个操作硬编码到servlet中。接下来将解释控制器用于委托给action类的机制。
-
-
+控制器功能可以逐块构建，通过使用小型、定制化的 Action 类来处理每个状态转换，而不是将每个操作硬编码到 Servlet 中。接下来将解释控制器用于委托给 Action 类的机制。
 
 每次调用控制器 Servlet 时，它都需要了解两件事：
 
 - 当前视图是什么？
 - 用户在此视图中选择了什么操作？
 
-您可能已经注意到，所有 JSP 视图页面在调用控制器 Servlet 时，URL 中都包含额外的路径信息。此路径信息包含当前视图的名称和一个描述用户所选操作的关键词。例如，从 Customers.jsp 页面，当用户输入搜索字符串并点击搜索按钮时，表单会提交到控制器 Servlet，路径信息为 /Customers/Search。某些视图页面支持多种用户操作。从 Customer.jsp 页面，用户可以点击产品名称报告新问题，也可以选择现有问题进行更新。无论哪种情况，控制器都会获取视图名称和操作关键词，将它们连接起来，并附加单词 Action。结果就是处理状态转换的类的名称。
+您可能已经注意到，所有 JSP 视图页面在调用控制器 Servlet 时，URL 中都包含额外的路径信息。此路径信息包含当前视图的名称和一个描述用户所选操作的关键词。例如，从 `Customers.jsp` 页面，当用户输入搜索字符串并点击搜索按钮时，表单会提交到控制器 Servlet，路径信息为 `/Customers/Search`。某些视图页面支持多种用户操作。从 `Customer.jsp` 页面，用户可以点击产品名称报告新问题，也可以选择现有问题进行更新。无论哪种情况，控制器都会获取视图名称和操作关键词，将它们连接起来，并附加单词 `Action`。结果就是处理状态转换的类的名称。
 
 ## Action 基类
 
-以下是抽象 Action 类的代码列表：
+以下是抽象 `Action` 类的代码列表：
 
 ```java
 package com.lyricnote.support.controller;
@@ -18881,13 +18412,13 @@ public abstract class Action
 }
 ```
 
-Action 包含了 Servlet 请求和响应、Servlet 上下文以及模型本身的实例变量。除了这些变量的 getter 和 setter 方法外，还有一个名为 run() 的抽象方法。这是各个操作处理器必须实现的唯一方法。run() 方法调用模型方法以实现状态转换，然后创建一个请求分发器并将请求转发到下一个视图。
+`Action` 包含了 Servlet 请求和响应、Servlet 上下文以及模型本身的实例变量。除了这些变量的 getter 和 setter 方法外，还有一个名为 `run()` 的抽象方法。这是各个操作处理器必须实现的唯一方法。`run()` 方法调用模型方法以实现状态转换，然后创建一个请求分发器并将请求转发到下一个视图。
 
 ## 控制器 Servlet
 
-控制器 Servlet 是所有状态转换的驱动器。它在每个会话中维护一个已调用操作类的缓存。当请求发生时，Servlet 会检查会话操作映射，以查看该类的实例是否已经加载。如果没有，它会从路径信息中提取视图名称和操作关键词，将它们连接起来，并在结果后附加 Action，以获取操作类名。然后，它加载该类并创建一个实例，将其存储在会话操作映射中。确保模型已存在后，Servlet 接着在操作对象中设置请求、响应、上下文和模型属性，并调用其 run() 方法。
+控制器 Servlet 是所有状态转换的驱动器。它在每个会话中维护一个已调用操作类的缓存。当请求发生时，Servlet 会检查会话操作映射，以查看该类的实例是否已经加载。如果没有，它会从路径信息中提取视图名称和操作关键词，将它们连接起来，并在结果后附加 `Action`，以获取操作类名。然后，它加载该类并创建一个实例，将其存储在会话操作映射中。确保模型已存在后，Servlet 接着在操作对象中设置请求、响应、上下文和模型属性，并调用其 `run()` 方法。
 
-ControllerServlet 的代码如下所示：
+`ControllerServlet` 的代码如下所示：
 
 ```java
 package com.lyricnote.support.controller;
@@ -18930,27 +18461,22 @@ public class ControllerServlet extends HttpServlet
             actionMap = new HashMap();
             session.setAttribute("actionMap", actionMap);
         }
+
         ServletContext context = getServletContext();
         try {
-
             // 从路径信息中获取状态和事件
-
             String pathInfo = request.getPathInfo();
             if (pathInfo == null)
                 throw new ServletException
                     ("无效的内部状态 - 没有路径信息");
 
             // 加载处理此状态和事件的操作对象
-
             Action action = (Action) actionMap.get(pathInfo);
             if (action == null) {
-
                 // 这是 Servlet 第一次看到此操作。
                 // 从 pathInfo 获取状态和事件名称。
-
                 StringTokenizer st =
                     new StringTokenizer(pathInfo, "/");
-
                 if (st.countTokens() != 2)
                     throw new ServletException
                     ("无效的内部状态 - 无效的路径信息 ["
@@ -18960,13 +18486,11 @@ public class ControllerServlet extends HttpServlet
                 String event = st.nextToken();
 
                 // 根据状态和事件形成类名
-
                 String className =
                     "com.lyricnote.support.controller."
                     + state + event + "Action";
 
                 // 加载类并创建实例
-
                 try {
                     Class actionClass = Class.forName(className);
                     action = (Action) actionClass.newInstance();
@@ -18987,12 +18511,10 @@ public class ControllerServlet extends HttpServlet
                 }
 
                 // 将实例缓存到操作映射中
-
                 actionMap.put(pathInfo, action);
             }
 
             // 确保会话中存在模型。
-
             Model model = (Model) session.getAttribute("model");
             if (model == null)
                 throw new ServletException
@@ -19000,7 +18522,6 @@ public class ControllerServlet extends HttpServlet
 
             // 现在执行操作。操作应在完成时执行
             // RequestDispatcher.forward()
-
             action.setRequest(request);
             action.setResponse(response);
             action.setApplication(context);
@@ -19008,13 +18529,10 @@ public class ControllerServlet extends HttpServlet
             action.run();
         }
         catch (ServletException e) {
-
             // 所有 Servlet 错误均使用 JSP 错误页面
-
             request.setAttribute("javax.servlet.jsp.jspException", e);
             RequestDispatcher rd =
                 context.getRequestDispatcher("/ErrorPage.jsp");
-
             if (response.isCommitted())
                 rd.include(request, response);
             else
@@ -19030,17 +18548,17 @@ public class ControllerServlet extends HttpServlet
 
 回顾图 19-3 可以看到，从一个视图到另一个视图发生了七次状态转换。这些转换对应以下操作类：
 
-- CustomersSearchAction
-- CustomersListSelectAction
-- CustomersNewProblemAction
-- ProductsSearchAction
-- ProductsListSelectAction
-- ProblemsSelectAction
-- ProblemSubmitAction
+- `CustomersSearchAction`
+- `CustomersListSelectAction`
+- `CustomersNewProblemAction`
+- `ProductsSearchAction`
+- `ProductsListSelectAction`
+- `ProblemsSelectAction`
+- `ProblemSubmitAction`
 
 ### CustomersSearchAction 类
 
-此类中的 run() 方法被调用，以从 Customers.jsp 视图接收客户搜索参数，并调用模型中的 customerSearch() 方法。然后，它将请求转发到显示搜索结果的 JSP 视图页面。以下是 CustomersSearchAction 的代码列表：
+此类中的 `run()` 方法被调用，以从 `Customers.jsp` 视图接收客户搜索参数，并调用模型中的 `customerSearch()` 方法。然后，它将请求转发到显示搜索结果的 JSP 视图页面。以下是 `CustomersSearchAction` 的代码列表：
 
 ```java
 package com.lyricnote.support.controller;
@@ -19051,51 +18569,44 @@ import javax.servlet.*;
 import javax.servlet.http.*;
 
 /**
-* 在数据库中搜索与客户搜索参数匹配的客户
-*/
+ * 在数据库中搜索与客户搜索参数匹配的客户
+ */
 public class CustomersSearchAction extends Action
 {
     /**
-    * 执行操作
-    */
+     * 执行操作
+     */
     public void run() throws ServletException, IOException
     {
         // 执行搜索
+        String arg = request.getParameter("customerSearchArgument");
+        if (arg != null) {
+            arg = arg.trim();
+            if (!arg.equals("")) {
+                try {
+                    model.customerSearch(arg);
+                }
+                catch (SQLException e) {
+                    throw new ServletException(e.getMessage());
+                }
+            }
+        }
+
+        // 转发到客户列表 JSP
+        final String next = "/CustomersList.jsp";
+        RequestDispatcher rd =
+            application.getRequestDispatcher(next);
+        if (rd == null)
+            throw new ServletException
+            ("Could not find " + next);
+        rd.forward(request, response);
     }
 }
 ```
 
+### CustomersListSelectAction 类
 
-
-```java
-String arg = request.getParameter("customerSearchArgument");
-if (arg != null) {
-    arg = arg.trim();
-    if (!arg.equals("")) {
-        try {
-            model.customerSearch(arg);
-        }
-        catch (SQLException e) {
-            throw new ServletException(e.getMessage());
-        }
-    }
-}
-
-// 转发到客户列表 JSP
-
-final String next = "/CustomersList.jsp";
-RequestDispatcher rd =
-    application.getRequestDispatcher(next);
-if (rd == null)
-    throw new ServletException
-    ("Could not find " + next);
-rd.forward(request, response);
-}
-```
-
-## CustomersListSelectAction 类
-
-用户通过点击一个超链接从列表中选择一个客户，该链接指向控制器，其中包含 CustomerList 视图名称和 Select 操作关键字。此外，超链接 URL 中还附加了客户 ID 作为查询字符串。根据这些信息，CustomersListSelectAction 类执行以下操作：
+用户通过点击一个超链接从列表中选择一个客户，该链接指向控制器，其中包含 `CustomerList` 视图名称和 `Select` 操作关键字。此外，超链接 URL 中还附加了客户 ID 作为查询字符串。根据这些信息，`CustomersListSelectAction` 类执行以下操作：
 
 - 从 URL 中提取客户 ID 参数，并将其存储在模型中
 - 调用模型的客户问题搜索方法
@@ -19103,7 +18614,7 @@ rd.forward(request, response);
 
 以下是该操作类的代码：
 
-```
+```java
 package com.lyricnote.support.controller;
 
 import java.io.*;
@@ -19122,15 +18633,14 @@ public class CustomersListSelectAction extends Action
     public void run() throws ServletException, IOException
     {
         // 获取客户 ID 并将其存储在模型中
-
         String customerID = request.getParameter("customerID");
         if (customerID == null)
             throw new ServletException
                 ("No customer ID specified");
+
         model.setCustomerID(customerID);
 
         // 获取此客户的问题列表
-
         try {
             model.customerProblemsSearch(customerID);
         }
@@ -19139,7 +18649,6 @@ public class CustomersListSelectAction extends Action
         }
 
         // 转发到客户详情 JSP
-
         final String next = "/Customer.jsp";
         RequestDispatcher rd =
             application.getRequestDispatcher(next);
@@ -19151,13 +18660,11 @@ public class CustomersListSelectAction extends Action
 }
 ```
 
-668 JSP: 完全参考手册
-
-## CustomerNewProblemAction 类
+### CustomerNewProblemAction 类
 
 如前所述，客户视图有两个可能的操作：创建新问题或更新现有问题。新问题操作由以下操作类处理：
 
-```
+```java
 package com.lyricnote.support.controller;
 
 import java.io.*;
@@ -19173,19 +18680,16 @@ public class CustomerNewProblemAction extends Action
     public void run() throws ServletException, IOException
     {
         // 获取客户 ID 和产品 ID
-
         String customerID = request.getParameter("customerID");
         if (customerID == null)
             throw new ServletException
                 ("No customer ID");
-
         String productID = request.getParameter("productID");
         if (productID == null)
             throw new ServletException
                 ("No product ID");
 
         // 创建新问题
-
         try {
             model.setCustomerID(customerID);
             model.setProductID(productID);
@@ -19213,11 +18717,11 @@ public class CustomerNewProblemAction extends Action
 - 创建并初始化一个新的 `Problem` 对象。这是通过调用模型中的 `newProblem()` 工厂方法来完成的，该方法会分配一个唯一的问题 ID 并在数据库中写入初始记录。
 - 将请求转发到问题详情视图。
 
-## ProductsSearchAction 类
+### ProductsSearchAction 类
 
 与客户搜索操作类似，产品搜索操作从请求中获取搜索字符串，调用模型中的搜索方法，然后将请求转发到 `ProductsList.jsp` 视图。
 
-```
+```java
 package com.lyricnote.support.controller;
 
 import java.io.*;
@@ -19236,7 +18740,6 @@ public class ProductsSearchAction extends Action
     public void run() throws ServletException, IOException
     {
         // 执行搜索
-
         String arg = request.getParameter("productSearchArgument");
         if (arg != null) {
             arg = arg.trim();
@@ -19251,7 +18754,6 @@ public class ProductsSearchAction extends Action
         }
 
         // 转发到产品列表 JSP
-
         final String next = "/ProductsList.jsp";
         RequestDispatcher rd =
             application.getRequestDispatcher(next);
@@ -19263,11 +18765,11 @@ public class ProductsSearchAction extends Action
 }
 ```
 
-## ProductsListSelectAction 类
+### ProductsListSelectAction 类
 
 当选择一个产品 ID 时，此操作类将其存储在模型中，并调用模型的产品问题搜索。然后，请求被转发到 `ProductProblems.jsp` 视图，该视图显示结果。
 
-```
+```java
 package com.lyricnote.support.controller;
 
 import java.io.*;
@@ -19286,15 +18788,14 @@ public class ProductsListSelectAction extends Action
     public void run() throws ServletException, IOException
     {
         // 获取产品 ID 并将其存储在模型中
-
         String productID = request.getParameter("productID");
         if (productID == null)
             throw new ServletException
                 ("No product ID specified");
+
         model.setProductID(productID);
 
         // 获取此产品的问题列表
-
         try {
             model.productProblemsSearch(productID);
         }
@@ -19303,7 +18804,6 @@ public class ProductsListSelectAction extends Action
         }
 
         // 转发到产品问题 JSP
-
         final String next = "/ProductProblems.jsp";
         RequestDispatcher rd =
             application.getRequestDispatcher(next);
@@ -19315,11 +18815,11 @@ public class ProductsListSelectAction extends Action
 }
 ```
 
-## ProblemsSelectAction 类
+### ProblemsSelectAction 类
 
 所有三个应用程序入口点——客户、产品和问题——都使用一个通用的问题选择操作，如下所列：
 
-```
+```java
 package com.lyricnote.support.controller;
 
 import java.io.*;
@@ -19346,7 +18846,6 @@ public class ProblemsSelectAction extends Action
         }
 
         // 转发到问题 JSP
-
         final String next = "/Problem.jsp";
         RequestDispatcher rd =
             application.getRequestDispatcher(next);
@@ -19360,14 +18859,12 @@ public class ProblemsSelectAction extends Action
 
 该操作类只是将问题 ID 存储在模型中，并将请求转发到问题详情页面。
 
+### ProblemSubmitAction 类
 
-
-## 第19章：案例研究：产品支持中心
-
-**ProblemSubmitAction类** 最后一个需要的动作类是用于从问题详情页面接收问题更新的类。该类
+最后一个需要的动作类是用于从问题详情页面接收问题更新的类。该类：
 
 - 从请求中检索数据输入字段。
-- 从模型中检索当前的`Problem`对象并更新其属性。如果事件ID表示应关闭问题，则调用`Problem`对象的`close()`方法。
+- 从模型中检索当前的 `Problem` 对象并更新其属性。如果事件 ID 表示应关闭问题，则调用 `Problem` 对象的 `close()` 方法。
 - 更新问题的数据库记录。
 - 添加一条问题日志条目。
 - 将请求转发到下一个视图——确认页面。
@@ -19392,7 +18889,6 @@ public class ProblemSubmitAction extends Action
     public void run() throws ServletException, IOException
     {
         // Get the parameters
-        
         String problemID = request.getParameter("problemID");
         String description = request.getParameter("description");
         String severity = request.getParameter("severity");
@@ -19400,14 +18896,11 @@ public class ProblemSubmitAction extends Action
         String eventID = request.getParameter("eventID");
 
         try {
-
             // Get the problem object from the model
-
             model.setProblemID(problemID);
             Problem problem = model.getProblem();
 
             // Update the problem object
-
             problem.setDescription(description);
             problem.setSeverity(Integer.parseInt(severity));
             if (Util.isClosingEvent(eventID))
@@ -19415,7 +18908,6 @@ public class ProblemSubmitAction extends Action
             model.updateProblem(problem);
 
             // Add a problem log record
-
             ProblemLog log = new ProblemLog();
             log.setProblemID(problemID);
             log.setLogTime(new java.util.Date());
@@ -19428,7 +18920,6 @@ public class ProblemSubmitAction extends Action
         }
 
         // Forward to confirmation JSP
-
         final String next = "/Confirm.jsp";
         RequestDispatcher rd =
             application.getRequestDispatcher(next);
@@ -19440,9 +18931,9 @@ public class ProblemSubmitAction extends Action
 }
 ```
 
-## 总结
+# 总结
 
-本章汇集了本书中讨论的元素，构建了一个基于Web的产品支持中心管理系统。该系统支持以下流程：
+本章汇集了本书中讨论的元素，构建了一个基于 Web 的产品支持中心管理系统。该系统支持以下流程：
 
 - 有问题的客户拨打免费电话与呼叫中心客服人员通话。
 - 客服人员验证客户是否有权获得特定产品的支持，输入问题报告，将确认号提供给客户，并将问题转给产品支持部门。
@@ -19460,47 +18951,47 @@ public class ProblemSubmitAction extends Action
 
 最终的系统通过划分代码来提供可以隔离测试的组件，从而将复杂性降至最低。这产生了一个健壮、功能齐全且易于扩展的应用程序。
 
-## 第四部分：JSP与其他Web组件
+# 第四部分：JSP 与其他 Web 组件
 
-JavaServer页面不仅仅是Web应用程序的表示层；它们还可以充当其他应用程序的客户端或服务器。接下来的两章将讨论JavaServer页面使用的更大背景——它们如何与Java应用程序、小程序、Perl脚本、邮件服务器和其他服务器端代理进行通信。
+JavaServer 页面不仅仅是 Web 应用程序的表示层；它们还可以充当其他应用程序的客户端或服务器。接下来的两章将讨论 JavaServer 页面使用的更大背景——它们如何与 Java 应用程序、小程序、Perl 脚本、邮件服务器和其他服务器端代理进行通信。
 
 # 第20章：与其他客户端通信
 
-Web浏览器是最常见的JSP客户端，但它们并非唯一的选择。随着越来越多的应用程序实现Web化，网络资源成为各类系统中的重要组成部分。互联网可以作为通信链路，通过它可以在不规定呈现方式的情况下传递原始数据。例如，最新的货币汇率可以用于批处理计算。交互式旅行预订可以成为高管信息系统的一部分。当前的天气状况、新闻头条和股价可以嵌入到其他应用程序的小信息窗口中——甚至可能嵌入到消费电子产品中。
+Web 浏览器是最常见的 JSP 客户端，但它们并非唯一的选择。随着越来越多的应用程序实现 Web 化，网络资源成为各类系统中的重要组成部分。互联网可以作为通信链路，通过它可以在不规定呈现方式的情况下传递原始数据。例如，最新的货币汇率可以用于批处理计算。交互式旅行预订可以成为高管信息系统的一部分。当前的天气状况、新闻头条和股价可以嵌入到其他应用程序的小信息窗口中——甚至可能嵌入到消费电子产品中。
 
-这是可能的，因为任何可以使用HTTP协议的程序都可以充当JSP客户端。使用`java.net`包中的基本类，应用程序可以发出HTTP请求并读取结果，就像它们只是文件内容一样。更重要的是，文件内容是动态的，可以由请求参数控制。
+这是可能的，因为任何可以使用 HTTP 协议的程序都可以充当 JSP 客户端。使用 `java.net` 包中的基本类，应用程序可以发出 HTTP 请求并读取结果，就像它们只是文件内容一样。重要的是，文件内容是动态的，可以由请求参数控制。
 
-在本章中，你将了解三种非浏览器JSP客户端的开发过程：
+在本章中，你将了解三种非浏览器 JSP 客户端的开发过程：
 
-- 一个Java应用程序
-- 一个Java小程序
-- 一个Perl脚本
+- 一个 Java 应用程序
+- 一个 Java 小程序
+- 一个 Perl 脚本
 
-每个示例都包含一个JSP服务器和一个可以利用它的客户端。但首先，让我们检查一下基本技术。
+每个示例都包含一个 JSP 服务器和一个可以利用它的客户端。但首先，让我们检查一下基本技术。
 
-## URL连接
+## URL 连接
 
-成为服务器的关键在于表现为一个输入流。Java类库提供了三个类来实现这一点：
+成为服务器的关键在于表现为一个输入流。Java 类库提供了三个类来实现这一点：
 
 - `java.net.URL`
 - `java.net.URLConnection`
 - `java.net.HttpURLConnection`
 
-## URL类
+## URL 类
 
-统一资源定位符（URL）是网络上可用对象的唯一地址，也是必须用于操作该对象的协议的指示。¹ 这些协议包括`ftp`、`http`、`gopher`、`mailto`、`news`以及在专门应用中使用的其他协议。本章中我们考虑的URL使用*超文本传输协议（HTTP）*。
+统一资源定位符（URL）是网络上可用对象的唯一地址，也是必须用于操作该对象的协议的指示。¹ 这些协议包括 `ftp`、`http`、`gopher`、`mailto`、`news` 以及在专门应用中使用的其他协议。本章中我们考虑的 URL 使用*超文本传输协议（HTTP）*。
 
-¹ 完整的URL规范在RFC 1738中，可以在 http://www.freesoft.org/CIE/RFC/1738/index.htm 找到。
+¹ 完整的 URL 规范在 RFC 1738 中，可以在 http://www.freesoft.org/CIE/RFC/1738/index.htm 找到。
 
-一个HTTP URL由五部分组成：
+一个 HTTP URL 由五部分组成：
 
 ```
 <scheme>://<host>[:<port>]/<path>[?<query string>]
 ```
 
-方案是`http`（用于未加密传输）或`https`（用于使用加密技术（如*安全套接字层（SSL）*）的传输）。主机部分是网络主机的完全限定域名，可能表示为点分十进制IP地址。端口号是可选的，如果未指定则默认为80。路径是主机HTTP服务器文档空间中的一个地址，通常组织为目录树。URL还可以包含在查询字符串中编码的请求参数。
+方案是 `http`（用于未加密传输）或 `https`（用于使用加密技术（如*安全套接字层（SSL）*）的传输）。主机部分是网络主机的完全限定域名，可能表示为点分十进制 IP 地址。端口号是可选的，如果未指定则默认为 80。路径是主机 HTTP 服务器文档空间中的一个地址，通常组织为目录树。URL 还可以包含在查询字符串中编码的请求参数。
 
-`java.net.URL`类是URL的面向对象包装器。它提供了从字符串构建URL以及访问前面描述的各个部分的方法。此外，`java.net.URL`类有两个重要的方法，允许访问URL所指向资源的内容，并在某些情况下修改它们。这些方法列在表20-1中。
+`java.net.URL` 类是 URL 的面向对象包装器。它提供了从字符串构建 URL 以及访问前面描述的各个部分的方法。此外，`java.net.URL` 类有两个重要的方法，允许访问 URL 所指向资源的内容，并在某些情况下修改它们。这些方法列在表20-1中。
 
 在许多情况下，从远程网络资源读取数据就像这样简单：
 
@@ -19515,10 +19006,8 @@ while ((c = in.read()) != -1) {
 
 | 方法 | 描述 |
 | :--- | :--- |
-| `public URLConnection openConnection()` | 与URL所表示的远程对象建立连接。 |
-| `public final InputStream openStream()` | 打开一个URLConnection并创建一个InputStream来读取其内容。这是一个便捷方法，调用`openConnection().getInputStream()`。 |
-
-
+| `public URLConnection openConnection()` | 与 URL 所表示的远程对象建立连接。 |
+| `public final InputStream openStream()` | 打开一个 `URLConnection` 并创建一个 `InputStream` 来读取其内容。这是一个便捷方法，调用 `openConnection().getInputStream()`。 |
 
 ## URLConnection 类
 
@@ -19537,13 +19026,13 @@ while ((c = in.read()) != -1) {
 | `public OutputStream getOutputStream()` | 返回一个用于向连接写入数据的输出流，例如在 HTTP POST 请求中的表单参数。 |
 | `public InputStream getInputStream()` | 返回一个用于从连接读取数据的输入流。出于性能原因，调用此方法的程序通常将结果包装在某种缓冲流中。 |
 
-表 20-2。java.net.URLConnection 中的一些有用方法
+表 20-2。`java.net.URLConnection` 中的一些有用方法
 
 ## HttpURLConnection 类
 
-URLConnection 是一个抽象的、与协议无关的类。因此，它没有公共构造函数。它只能通过调用 URL 的 `openConnection()` 方法来创建。此调用返回的实际对象是一个处理该 URL 协议的特定协议子类。在本章的示例中，这个子类是 `java.net.HttpURLConnection`。
+`URLConnection` 是一个抽象的、与协议无关的类。因此，它没有公共构造函数。它只能通过调用 URL 的 `openConnection()` 方法来创建。此调用返回的实际对象是一个处理该 URL 协议的特定协议子类。在本章的示例中，这个子类是 `java.net.HttpURLConnection`。
 
-嗯，几乎是。HttpURLConnection 本身也是抽象的。Java 虚拟机的供应商提供了一个实际的实现类。你可以通过调用 `openConnection()` 返回的对象的 `getClass()` 方法来查看那个类是什么：
+嗯，几乎是。`HttpURLConnection` 本身也是抽象的。Java 虚拟机的供应商提供了一个实际的实现类。你可以通过调用 `openConnection()` 返回的对象的 `getClass()` 方法来查看那个类是什么：
 
 ```java
 import java.io.*;
@@ -19558,10 +19047,9 @@ public class ShowConnectionClass
         URLConnection con = url.openConnection();
         Class conClass = con.getClass();
         System.out.println
-            ("Connection class is " + conClass.getName());
-    }
-}
 ```
+
+
 
 在 Sun JVM 上，该程序的输出是：
 
@@ -19569,7 +19057,7 @@ public class ShowConnectionClass
 Connection class is sun.net.www.protocol.http.HttpURLConnection
 ```
 
-除了 URLConnection 提供的功能外，HttpURLConnection 还提供了三项额外的能力：
+除了 `URLConnection` 提供的功能外，`HttpURLConnection` 还提供了三项额外的能力：
 
 - 一种指定请求方法的方式
 - 直接访问 HTTP 响应码
@@ -19584,7 +19072,7 @@ Connection class is sun.net.www.protocol.http.HttpURLConnection
 | `public static void setFollowRedirects(boolean set)` | 如果设置为 `true`，则当响应码为 301（永久重定向）或 302（临时重定向）时，会自动生成另一个请求发送到转发地址。 |
 | `public void setRequestMethod(String method)` | 指定要使用的 HTTP 请求方法：`GET`、`POST`、`HEAD`、`OPTIONS`、`PUT`、`DELETE` 或 `TRACE`。 |
 
-**表 20-3。** *java.net.HttpURLConnection 中的有用方法*
+**表 20-3。** `java.net.HttpURLConnection` 中的有用方法
 
 ## Java 应用程序作为客户端
 
@@ -19596,91 +19084,63 @@ Connection class is sun.net.www.protocol.http.HttpURLConnection
 
 ```jsp
 <%@ page session="false" import="java.sql.*,java.text.*" contentType="text/xml" %>
+
 <%
     // Define constants for JDBC driver name and
     // database URL
-
     String DRIVER = "org.enhydra.instantdb.jdbc.idbDriver";
-    String DB_URL = "jdbc:idb:"
-        + "D:/lyricnote/WEB-INF/database/products/db.prp";
-
+    String DB_URL = "jdbc:idb:" + "D:/lyricnote/WEB-INF/database/products/db.prp";
     // Get the product search argument and desired quantity
-
     String product = request.getParameter("product");
     if (product == null)
         throw new ServletException("No product specified");
-
     String qstring = request.getParameter("quantity");
     if (qstring == null)
         throw new ServletException("No quantity specified");
-
     int quantity = 0;
     try {
         quantity = Integer.parseInt(qstring);
-    }
-    catch (NumberFormatException e) {
+    } catch (NumberFormatException e) {
         throw new ServletException("Quantity not numeric");
     }
-
     // Load the driver
-
     Class.forName(DRIVER);
-
     // Create a connection
-
     Connection con = null;
     try {
         con = DriverManager.getConnection(DB_URL);
-
         // Create a select statement
-
-        PreparedStatement pstmt = con.prepareStatement
-```
-
-```jsp
-(
-  " select itemcode, price, description"
-+ " from products"
-+ " where prodtype = 'IN'"
-+ " and description like ?"
-+ " and onhand >= ?"
-);
-
-// Supply values for substitution parameters
-
-pstmt.setString(1, "%" + product + "%");
-pstmt.setInt(2, quantity);
-
-// Execute the query
-
-ResultSet rs = pstmt.executeQuery();
-
-// Create the XML
-
-%><?xml version="1.0"?>
-<price-quote>
-  <supplier>LyricNote.com</supplier>
-  <date><%=
-    new SimpleDateFormat("yyyy-MM-dd")
-    .format(new java.util.Date())
-  %></date>
-<%
-  while (rs.next()) {
-    String itemCode    = rs.getString(1);
-    double price       = rs.getDouble(2) / 100;
-    String description = rs.getString(3);
-%>  <item
-    code="<%= itemCode %>"
-    price="<%= new DecimalFormat("###.00").format(price) %>"
-    description="<%= description %>"/>
-<%
-  }
-%></price-quote><%
-}
-finally {
-  if (con != null)
-    con.close();
-}
+        PreparedStatement pstmt = con.prepareStatement(
+            " select itemcode, price, description"
+            + " from products"
+            + " where prodtype = 'IN'"
+            + " and description like ?"
+            + " and onhand >= ?");
+        // Supply values for substitution parameters
+        pstmt.setString(1, "%" + product + "%");
+        pstmt.setInt(2, quantity);
+        // Execute the query
+        ResultSet rs = pstmt.executeQuery();
+        // Create the XML
+    }%><?xml version="1.0"?>
+    <price-quote>
+        <supplier>LyricNote.com</supplier>
+        <date><%= new SimpleDateFormat("yyyy-MM-dd").format(new java.util.Date()) %></date>
+        <%
+            while (rs.next()) {
+                String itemCode = rs.getString(1);
+                double price = rs.getDouble(2) / 100;
+                String description = rs.getString(3);
+        %>
+        <item code="<%= itemCode %>" price="<%= new DecimalFormat("###.00").format(price) %>" description="<%= description %>"/>
+        <%
+            }
+        %>
+    </price-quote><%
+    } finally {
+        if (con != null)
+            con.close();
+    }
 %>
 ```
 
@@ -19696,63 +19156,40 @@ finally {
 import java.io.*;
 import java.net.*;
 
-/**
- * 一个作为 JSP 客户端的 Java 应用程序示例。
- */
-public class PriceQuoteReader
-{
-    public static void main(String[] args)
-    {
+public class PriceQuoteReader {
+    public static void main(String[] args) {
         // Define the supplier URL and the two search arguments.
         // These are hard-coded for the purposes of this example.
-
-        String supplier =
-            "http://www.lyricnote.com/PriceQuote.jsp";
+        String supplier = "http://www.lyricnote.com/PriceQuote.jsp";
         String product = "Clarinet";
         int quantity = 3;
-
-        // Append the search arguments to the URL so that
-        // they will be recognized as parameters to an
-        // HTTP GET request
-
+        // Append the search arguments to the URL so that they will be recognized as parameters to an HTTP GET request
         StringBuffer sb = new StringBuffer();
         sb.append(supplier);
         sb.append("?product=");
-```
-
-
-
-## 688 JSP：权威指南
-
-```
-sb.append(URLEncoder.encode(product));
-sb.append("&quantity=");
-sb.append(URLEncoder.encode(String.valueOf(quantity)));
-String supplierURL = sb.toString();
-
-try {
-    // 现在创建 URL 实例
-    URL url = new URL(supplierURL);
-    // 并打开其输入流
-    InputStream stream = url.openStream();
-
-    // 读取返回的 XML 的每一行。
-    // 本示例仅打印结果；
-    // 实际应用会执行更有用的操作
-    BufferedReader in =
-        new BufferedReader(
-            new InputStreamReader(stream));
-
-    while (true) {
-        String line = in.readLine();
-        if (line == null)
-            break;
-        System.out.println(line);
+        sb.append(URLEncoder.encode(product));
+        sb.append("&quantity=");
+        sb.append(URLEncoder.encode(String.valueOf(quantity)));
+        String supplierURL = sb.toString();
+        try {
+            // 现在创建 URL 实例
+            URL url = new URL(supplierURL);
+            // 并打开其输入流
+            InputStream stream = url.openStream();
+            // 读取返回的 XML 的每一行。
+            // 本示例仅打印结果；实际应用会执行更有用的操作
+            BufferedReader in = new BufferedReader(new InputStreamReader(stream));
+            while (true) {
+                String line = in.readLine();
+                if (line == null)
+                    break;
+                System.out.println(line);
+            }
+            in.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
-    in.close();
-} catch (IOException e) {
-    e.printStackTrace();
-}
 }
 ```
 
@@ -19775,8 +19212,7 @@ XML 包含了供应商名称和请求日期，其后是每个匹配产品的元�
 
 ## 一个 Java Applet 客户端
 
-购买服务的主应用程序能够实时搜索特定站点。为此，它使用了一个 Java applet。
-在继续之前，有必要介绍一些背景知识。*Applet*（小程序）是 Java 技术的第一波浪潮，是将小型交互式 GUI 应用程序嵌入网页的一种方式。它们迅速引起了极大的关注，尽管这项技术当时还不够成熟，不足以支撑其热度。部分问题在于不同的浏览器提供了不同程度的支持，而且这种差异随时间推移而加剧。Sun Microsystems 提出了一个可行的解决方案，即 Java 插件。
+购买服务的主应用程序能够实时搜索特定站点。为此，它使用了一个 Java applet。在继续之前，有必要介绍一些背景知识。*Applet*（小程序）是 Java 技术的第一波浪潮，是将小型交互式 GUI 应用程序嵌入网页的一种方式。它们迅速引起了极大的关注，尽管这项技术当时还不够成熟，不足以支撑其热度。部分问题在于不同的浏览器提供了不同程度的支持，而且这种差异随时间推移而加剧。Sun Microsystems 提出了一个可行的解决方案，即 Java 插件。
 
 ## Java 插件
 
@@ -19816,8 +19252,7 @@ JSP 规范通过“如 HTML 规范所定义”来描述大多数属性，以下�
 -   **nspluginurl** 如果需要，将从中下载 Netscape 版本插件的 URL。
 -   **iepluginurl** 如果需要，将从中下载 Internet Explorer 版本插件的 URL。
 
-`<jsp:params>` 部分指定要使用的 applet 参数，而 `<jsp-fallback>` 包含在 applet 无法启动时将显示的文本。
-幸运的是，只有少数几个属性是必需的，即 `type`、`code`、`codebase`、`height` 和 `width`。
+`<jsp:params>` 部分指定要使用的 applet 参数，而 `<jsp-fallback>` 包含在 applet 无法启动时将显示的文本。幸运的是，只有少数几个属性是必需的，即 `type`、`code`、`codebase`、`height` 和 `width`。
 
 使用插件运行 applet 的优势在于，它使得拥有一个支持 Java 2 的稳定、可预测的 JVM 成为可能。特别是，这意味着 applet 可以使用 Java 基础类（Swing）来构建其图形用户界面。
 
@@ -19832,8 +19267,7 @@ import javax.swing.*;
 import java.io.*;
 import java.net.*;
 
-public class PriceQuoteApplet extends JApplet
-{
+public class PriceQuoteApplet extends JApplet {
     private JTextField txtProduct;
     private JTextField txtQuantity;
     private JButton btnPost;
@@ -19842,12 +19276,10 @@ public class PriceQuoteApplet extends JApplet
     /**
      * 创建 GUI 组件
      */
-    public void init()
-    {
+    public void init() {
         Container content = getContentPane();
         content.setLayout(new BorderLayout());
         JPanel pnl;
-
         // 顶行
         pnl = new JPanel();
         pnl.add(new JLabel("Product:"));
@@ -19856,16 +19288,13 @@ public class PriceQuoteApplet extends JApplet
         pnl.add(txtQuantity = new JTextField(4));
         pnl.add(btnPost = new JButton("POST"));
         content.add(pnl, BorderLayout.NORTH);
-
         // 结果面板
         pnl = new JPanel();
         pnl.add(txtOutput = new JTextArea(12, 40));
         content.add(pnl, BorderLayout.CENTER);
-
         // 开始监听按钮点击
         btnPost.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent event)
-            {
+            public void actionPerformed(ActionEvent event) {
                 try {
                     doPost();
                 } catch (IOException e) {
@@ -19876,15 +19305,12 @@ public class PriceQuoteApplet extends JApplet
     }
 
     /**
-     * 发送请求并将 XML 结果
-     * 写入输出文本区域
+     * 发送请求并将 XML 结果写入输出文本区域
      */
-    public void doPost() throws IOException
-    {
+    public void doPost() throws IOException {
         // 从 GUI 中提取参数
         String product = txtProduct.getText().trim();
         String quantity = txtQuantity.getText().trim();
-
         // 使用搜索参数作为请求参数创建 POST 数据
         StringBuffer sb = new StringBuffer();
         sb.append("product=");
@@ -19892,42 +19318,24 @@ public class PriceQuoteApplet extends JApplet
         sb.append("&quantity=");
         sb.append(URLEncoder.encode(String.valueOf(quantity)));
         String postData = sb.toString();
-
         // 创建用于读取报价的 URL
         URL supplierURL = new URL(getCodeBase(), "PriceQuote.jsp");
-
         // 打开一个 URLConnection 实例
-        HttpURLConnection con = (HttpURLConnection)
-            supplierURL.openConnection();
-
+        HttpURLConnection con = (HttpURLConnection) supplierURL.openConnection();
         // 设置读写模式
         con.setDoOutput(true);
         con.setDoInput(true);
         con.setUseCaches(false);
-
         // 告诉服务器输入流包含 POST 数据并提供其长度
-        con.setRequestProperty(
-            "Content-type",
-            "application/x-www-form-urlencoded");
-
-        con.setRequestProperty(
-            "Content-length",
-            String.valueOf(postData.length()));
-
+        con.setRequestProperty("Content-type", "application/x-www-form-urlencoded");
+        con.setRequestProperty("Content-length", String.valueOf(postData.length()));
         // 打开连接的输出流并写入 POST 数据
         OutputStream out = con.getOutputStream();
         out.write(postData.getBytes());
         out.flush();
-
-        // 打开输入流并将结果
-        // 复制到输出文本区域
-        BufferedReader in =
-            new BufferedReader(
-                new InputStreamReader(
-                    con.getInputStream()));
-
+        // 打开输入流并将结果复制到输出文本区域
+        BufferedReader in = new BufferedReader(new InputStreamReader(con.getInputStream()));
         txtOutput.setText("");
-
         while (true) {
             String line = in.readLine();
             if (line == null)
@@ -19935,7 +19343,6 @@ public class PriceQuoteApplet extends JApplet
             txtOutput.append(line);
             txtOutput.append("\n");
         }
-
         // 关闭输出流和输入流
         in.close();
         out.close();
@@ -19952,8 +19359,7 @@ POST 与 GET 的不同之处在于，请求参数是通过请求体提供的，�
 
 包含该 applet 的 JSP 页面列在下面。图 20-1 显示了相应的输出。
 
-
-
+```jsp
 <%@ page session="false" %>
 <jsp:plugin
     type="applet"
@@ -19962,8 +19368,9 @@ POST 与 GET 的不同之处在于，请求参数是通过请求体提供的，�
     width="500"
     height="300"
     jreversion="1.2"
-    >
+>
 </jsp:plugin>
+```
 
 ![](img/7a2f73369bb140583c7288b73456addb_721_0.png)
 
@@ -19985,101 +19392,69 @@ JSP 能够扩展 Perl 的一个领域是提供更好的数据库支持。因为�
 
 > **注意** 此 JSP 页面说明了另一种防止 JSP 元素引入的多余空白干扰严格输出格式的技术。这是通过在写入第一行真实文本之前调用 `response.reset()` 来清除输出缓冲区实现的。请注意，`reset()` 也会清除已写入的任何标头和状态码。因此，Servlet 2.3 规范添加了 `resetBuffer()` 方法。
 
-```
+```jsp
 <%@ page session="false" %>
 <%@ page import="java.io.*" %>
 <%@ page import="java.sql.*" %>
 <%
     Connection con = null;
     try {
-
         // Get the driver name and database URL parameters
-
         String driver = request.getParameter("DRIVER");
         if (driver == null)
-            throw new ServletException
-                ("No DRIVER parameter specified");
-
+            throw new ServletException("No DRIVER parameter specified");
         String url = request.getParameter("URL");
         if (url == null)
-            throw new ServletException
-                ("No url class name specified");
-
+            throw new ServletException("No url class name specified");
         // Get the SELECT statement to be executed
-
         String query = request.getParameter("QUERY");
         if (query == null)
-            throw new ServletException
-                ("No QUERY parameter specified");
-
+            throw new ServletException("No QUERY parameter specified");
         // Verify that it is a SELECT statement
-
         query = query.trim();
         if (!query.toUpperCase().startsWith("SELECT"))
-            throw new ServletException
-                ("Only SELECT statements are valid");
-
+            throw new ServletException("Only SELECT statements are valid");
         // Make sure the driver is loaded
-
         Class.forName(driver);
-
         // Open the connection
-
         con = DriverManager.getConnection(url);
-
-        // Compile the query statement. If it is invalid,
-        // a SQLException will be thrown.
-
+        // Compile the query statement. If it is invalid, a SQLException will be thrown.
         PreparedStatement stmt = con.prepareStatement(query);
-
         // Execute the query
-
         ResultSet rs = stmt.executeQuery();
-
-        // Reset the response buffer to eliminate
-        // any nonsignificant whitespace
-
+        // Reset the response buffer to eliminate any nonsignificant whitespace
         response.reset();
-
         // Write the column headings
-
         response.setContentType("text/tab-separated-values");
-
         ResultSetMetaData rmd = rs.getMetaData();
         int nColumns = rmd.getColumnCount();
         StringBuffer buffer = new StringBuffer();
         for (int i = 0; i < nColumns; i++) {
-            int col = i+1;
+            int col = i + 1;
             if (i > 0)
                 buffer.append("\t");
             buffer.append(rmd.getColumnName(col));
         }
         out.println(buffer.toString());
-
         // Write the data from the result set
-
         while (rs.next()) {
             buffer = new StringBuffer();
             for (int i = 0; i < nColumns; i++) {
-                int col = i+1;
+                int col = i + 1;
                 if (i > 0)
                     buffer.append("\t");
                 buffer.append(rs.getString(col));
             }
             out.println(buffer.toString());
         }
-
         // Done
-
         rs.close();
         stmt.close();
-    }
-    finally {
+    } finally {
         if (con != null) {
             try {
                 con.close();
-            }
-            catch (SQLException ignore){}
+            } catch (SQLException ignore) {}
         }
     }
 %>
@@ -20089,16 +19464,14 @@ JSP 能够扩展 Perl 的一个领域是提供更好的数据库支持。因为�
 
 Perl 的非官方格言是“不止一种方法可以做到这一点”。既然如此，任何 Perl 脚本都只是完成相同任务的众多可能实现之一。我们用来访问 JSP 数据库服务器的脚本是 `GetBooks.pl`。该脚本打开一个到 LyricNote Web 服务器（端口 80）的 socket，然后发送一个包含三个必需参数（包括要执行的 SQL 查询）的 HTTP GET 请求。
 
-```
+```perl
 #! perl -w
-
 # ==========================================
 # Program: GetBooks
 #
 # Description:
 #
-#   Sample Perl script that sends a database
-#   query to the SQLSelect.jsp
+#   Sample Perl script that sends a database query to the SQLSelect.jsp
 # ==========================================
 
 use strict;
@@ -20108,21 +19481,18 @@ my $hostName = "u25nv";
 my $hostPort = "80";
 
 # Open a socket to the host
-
 my $socket = new IO::Socket::INET(
     PeerAddr => $hostName,
     PeerPort => $hostPort,
     Proto    => "tcp"
-    );
+);
 
 # Set autoflush on
-
 my $saveSelect = select $socket;
 $| = 1;
 select $saveSelect;
 
 # Create the command
-
 my $cmd = "";
 $cmd .= "DRIVER=" . encode("org.enhydra.instantdb.jdbc.idbDriver");
 $cmd .= "&URL=" . encode("jdbc:idb:D:/lyricnote/WEB-INF/database/products/db.prp");
@@ -20135,38 +19505,28 @@ EOF
 my $cmdLength = length($cmd);
 
 # Send the HTTP request
-
 print $socket (<<EOF);
 POST /jspcr/Chap20/examples/SQLSelect.jsp HTTP/1.0
 Content-Type: application/x-www-form-urlencoded
 Content-Length: $cmdLength
-
 $cmd
 EOF
 
 # Read back the status code
-
 my $line = <$socket>;
 my ($httpVersion, $status) = split(/\s+/, $line);
 if ($status != 200) {
-
     # Handle the error ...
-
-}
-else {
-
+} else {
     # Skip the rest of the headers and display the results.
     # End of headers is signaled by a blank line.
-
     my $inData = 0;
     while (<$socket>) {
         chomp;
-
         ($inData == 0) && do {
             $inData = 1 unless (/\S/);
             next;
         };
-
         ($inData == 1) && do {
             print "$_\n";
             next;
@@ -20175,11 +19535,9 @@ else {
 }
 
 # Done
-
 $socket->close();
 
 # Subroutine to URL-encode a parameter string
-
 sub encode {
     my $s = shift;
     $s =~ s/([^A-Za-z0-9 ])/"%" . sprintf("%02X", ord($1))/eg;
@@ -20239,8 +19597,6 @@ JSP 和 servlet 在互联网上提供动态内容，但许多其他技术也能�
 
 出现互操作性需求的一种情况是相关公司的联合活动。一家集团可能由一家母公司拥有，该母公司使用统一的会计系统。子公司可能需要提交预算数据、销售信息和工资数据。并且它们可能需要从母公司下载价格、折扣率和公司费用。这些公司可能没有使用相同的应用程序系统，特别是如果它们是在合并或收购中组合起来的。
 
-
-
 ## 从远程网络资源读取数据
 
 你可能还记得第20章的内容，`java.net.URL` 和 `java.net.URLConnection` 都提供了读取远程网络资源生成的输入流的方法。进行GET请求的基本技术如下：
@@ -20260,39 +19616,27 @@ InputStream in = url.openStream();
 
 如果你需要在打开输入流之前进一步配置连接（例如需要发送请求头或使用HTTP POST方法），则首选第一种方法。下文将对此进行说明：
 
-```
+```java
 import java.io.*;
 import java.net.*;
 import java.util.*;
 
-public class PostRateRequest
-{
-    public static void main(String[] args)
-        throws Exception
-    {
+public class PostRateRequest {
+    public static void main(String[] args) throws Exception {
         // Set up the two request parameters
         String postData = "c1=USD&c2=CAD";
-
         // Open the URL connection for reading and writing
-        URL url = new URL(
-            "http://u25nv/cgi-bin/currency/GetRate.cgi");
+        URL url = new URL("http://u25nv/cgi-bin/currency/GetRate.cgi");
         URLConnection con = url.openConnection();
         con.setDoOutput(true);
         con.setDoInput(true);
-
         // Set request headers for content type and length
-        con.setRequestProperty(
-            "Content-type",
-            "application/x-www-form-urlencoded");
-        con.setRequestProperty(
-            "Content-length",
-            String.valueOf(postData.length()));
-
+        con.setRequestProperty("Content-type", "application/x-www-form-urlencoded");
+        con.setRequestProperty("Content-length", String.valueOf(postData.length()));
         // Issue the POST request
         OutputStream out = con.getOutputStream();
         out.write(postData.getBytes());
         out.flush();
-
         // Read the response
         InputStream in = con.getInputStream();
         while (true) {
@@ -20302,7 +19646,6 @@ public class PostRateRequest
             System.out.print((char) c);
         }
         System.out.flush();
-
         // Done
         in.close();
         out.close();
@@ -20314,9 +19657,9 @@ LyricNote.com 使用此技术从其母公司的网站读取美元兑加拿大元
 
 ![](img/7a2f73369bb140583c7288b73456addb_733_0.png)
 
-在 `jspInit()` 中，JSP页面使用HTTP GET请求获取母公司提供的USD-CAD汇率。它读取单行结果并将其转换为double类型。稍后，从数据库中读取价格（以整数分表示），并转换为保留两位小数的美元。然后应用汇率计算出等值的加元，结果四舍五入到最接近的五分钱。
+在 `jspInit()` 中，JSP页面使用HTTP GET请获取母公司提供的USD-CAD汇率。它读取单行结果并将其转换为double类型。稍后，从数据库中读取价格（以整数分表示），并转换为保留两位小数的美元。然后应用汇率计算出等值的加元，结果四舍五入到最接近的五分钱。
 
-```
+```jsp
 <%@ page session="false" %>
 <%@ page import="java.io.*" %>
 <%@ page import="java.net.*" %>
@@ -20324,55 +19667,43 @@ LyricNote.com 使用此技术从其母公司的网站读取美元兑加拿大元
 <%@ page import="java.text.*" %>
 <%!
   private static double EXCHANGE_RATE;
-
   // Get the US to Canadian dollar exchange rate
-  public void jspInit()
-  {
+  public void jspInit() {
     try {
-        URL url = new URL(
-            "http://u25nv/cgi-bin/currency/GetRate.cgi"
-            + "?c1=USD"
-            + "&c2=CAD");
-        BufferedReader in =
-            new BufferedReader(
-                new InputStreamReader(
-                    url.openStream()));
+        URL url = new URL("http://u25nv/cgi-bin/currency/GetRate.cgi" + "?c1=USD" + "&c2=CAD");
+        BufferedReader in = new BufferedReader(new InputStreamReader(url.openStream()));
         String line = in.readLine();
         in.close();
         EXCHANGE_RATE = Double.parseDouble(line);
-    }
-    catch (IOException e) {
+    } catch (IOException e) {
         e.printStackTrace();
     }
   }
 %>
+
 <%
     // Get search string
     String search = request.getParameter("search");
     if (search == null)
         search = "";
     search = search.trim();
-
     // Connect to database
     String DRIVER = "org.enhydra.instantdb.jdbc.idbDriver";
-    String DB_URL = "jdbc:idb:" +
-        "D:/lyricnote/WEB-INF/database/products/db.prp";
-
+    String DB_URL = "jdbc:idb:" + "D:/lyricnote/WEB-INF/database/products/db.prp";
     Class.forName(DRIVER);
     Connection con = null;
     try {
         con = DriverManager.getConnection(DB_URL);
-
         // Create a query using the search string
-        PreparedStatement stmt = con.prepareStatement
-            ("select itemcode, price, description"
+        PreparedStatement stmt = con.prepareStatement(
+            "select itemcode, price, description"
             + " from products"
             + " where description like ?");
         stmt.setString(1, "%" + search + "%");
-
         // Run the query and display the results
         ResultSet rs = stmt.executeQuery();
 %>
+
 <HTML>
 <HEAD>
 <TITLE>Catalog Search</TITLE>
@@ -20397,13 +19728,11 @@ NumberFormat fmt = NumberFormat.getCurrencyInstance();
 while (rs.next()) {
     String itemCode = rs.getString(1);
     double price = rs.getDouble(2) / 100;
-    double price_c =
-        ((long)(price * EXCHANGE_RATE * 20 + 0.5)) / 20.0;
+    double price_c = ((long)(price * EXCHANGE_RATE * 20 + 0.5)) / 20.0;
     String description = rs.getString(3);
 %>
 <TR>
-<TD><A HREF="productDetail.jsp?itemCode=<%= itemCode %>"
-><%= itemCode %></A></TD>
+<TD><A HREF="productDetail.jsp?itemCode=<%= itemCode %>"><%= itemCode %></A></TD>
 <TD ALIGN="RIGHT"><%= fmt.format(price) %></TD>
 <TD ALIGN="RIGHT"><%= fmt.format(price_c) %></TD>
 <TD><%= description %></TD>
@@ -20415,8 +19744,7 @@ while (rs.next()) {
 </BODY>
 </HTML>
 <%
-    }
-    finally {
+    } finally {
         if (con != null)
             con.close();
     }
@@ -20453,8 +19781,7 @@ while (rs.next()) {
 220 pluto.lyricnote.com ESMTP Sendmail 8.9.3/8.9.3;
   Mon, 29 Jan 2001 06:58:24 -0500 (EST)
 HELO lyricnote.com
-250 pluto.lyricnote.com Hello dialup.rdu.lyricnote.com
- [209.170.132.190], pleased to meet you
+250 pluto.lyricnote.com Hello dialup.rdu.lyricnote.com [209.170.132.190], pleased to meet you
 MAIL FROM: phanna@lyricnote.com
 250 phanna@lyricnote.com... Sender ok
 RCPT TO: phanna@lyricnote.com
@@ -20474,8 +19801,6 @@ QUIT
 
 完整的SMTP协议规范在RFC 821中，可在 http://www.freesoft.org/CIE/RFC/821/index.htm 找到。
 
-
-
 SMTP邮件可以通过向邮件主机打开一个`java.net.Socket`并使用其输入输出流来简单发送，如示例所示。这种基于套接字的方法优点在于易于实现，但当添加附件等功能时会变得复杂。因此，很少有应用直接使用此方法。
 
 ## sun.net.smtp.SmtpClient 类
@@ -20487,16 +19812,11 @@ import java.io.*;
 import sun.net.*;
 import sun.net.smtp.*;
 
-public class MailTest
-{
-    public static void main(String[] args)
-        throws Exception
-    {
+public class MailTest {
+    public static void main(String[] args) throws Exception {
         SmtpClient client = new SmtpClient("mail.lyricnote.com");
-
         client.from("phanna@lyricnote.com");
         client.to("phanna@lyricnote.com");
-
         PrintStream out = client.startMessage();
         out.println("SUBJECT: Mail test");
         out.println("This is a test of the mail system");
@@ -20523,26 +19843,16 @@ import java.util.*;
 import javax.mail.*;
 import javax.mail.internet.*;
 
-public class JavaMailTest
-{
-    public static void main(String[] args)
-        throws Exception
-    {
+public class JavaMailTest {
+    public static void main(String[] args) throws Exception {
         // Create a session with the LyricNote mail host
-
         Properties props = new Properties();
         props.put("mail.host", "mail.lyricnote.com");
         Session mailSession = Session.getInstance(props, null);
-
         // Create address objects for the sender and receiver
-
-        Address fromUser =
-            new InternetAddress("phanna@lyricnote.com");
-        Address toUser =
-            new InternetAddress("phanna@lyricnote.com");
-
+        Address fromUser = new InternetAddress("phanna@lyricnote.com");
+        Address toUser = new InternetAddress("phanna@lyricnote.com");
         // Create the message body
-
         Message body = new MimeMessage(mailSession);
         body.setFrom(fromUser);
         body.setRecipient(Message.RecipientType.TO, toUser);
@@ -20553,9 +19863,7 @@ public class JavaMailTest
             + "Beeeeeeeeeeeeeeeeeeeeeeeeeeeeep\n"
             + "This concludes the test of the mail system",
             "text/plain");
-
         // Send the message
-
         Transport.send(body);
     }
 }
@@ -20601,91 +19909,63 @@ public class JavaMailTest
 /**
  * Sends email to the appropriate support person
  */
-public void notifySupport(ProblemLog log)
-    throws SQLException, IOException
-{
+public void notifySupport(ProblemLog log) throws SQLException, IOException {
     // Get the problem object
-
     String problemID = log.getProblemID();
     setProblemID(problemID);
     Problem problem = getProblem();
-
-    // Create the subject line from the problem ID
-    // and problem description
-
+    // Create the subject line from the problem ID and problem description
     StringBuffer sb = new StringBuffer();
     sb.append("Problem ID: ");
     sb.append(problemID);
     sb.append(" ");
     sb.append(problem.getDescription());
     String subject = sb.toString();
-
-    // Get the product object. We need this to find out
-    // the support ID's and the corresponding e-mail
-    // addresses
-
+    // Get the product object. We need this to find out the support ID's and the corresponding e-mail addresses
     String productID = problem.getProductID();
     setProductID(productID);
     Product product = getProduct();
-
     // Determine the appropriate party to receive the mail
-
     String employeeID = null;
     String eventDescription = null;
     String eventID = log.getEventID();
     if (eventID.equals("RPS")) {
         employeeID = product.getProductSupport();
         eventDescription = "ROUTED TO PRODUCT SUPPORT";
-    }
-    else
-    if (eventID.equals("RPD")) {
+    } else if (eventID.equals("RPD")) {
         employeeID = product.getDeveloper();
         eventDescription = "ROUTED TO DEVELOPMENT";
-    }
-    else
-    if (eventID.equals("RQA")) {
+    } else if (eventID.equals("RQA")) {
         employeeID = product.getTester();
         eventDescription = "ROUTED TO TEST";
-    }
-    else
+    } else {
         return;
-
+    }
     eventDescription += "\r\n";
     eventDescription += log.getComments();
-
     // Lookup that person's email address
-
     Employee employee = getEmployee(employeeID);
     String email = employee.getEmail();
-
     // Send mail to the party
-
-    Address fromUser = new InternetAddress
-        ("support@lyricnote.com", "Product Support System");
-    Address toUser = new InternetAddress
-        (email, employee.getName());
-
+    Address fromUser = new InternetAddress("support@lyricnote.com", "Product Support System");
+    Address toUser = new InternetAddress(email, employee.getName());
     Properties props = new Properties();
     props.put("mail.host", "mail.lyricnote.com");
     Session mailSession = Session.getInstance(props, null);
     Message body = new MimeMessage(mailSession);
-
     try {
         body.setFrom(fromUser);
         body.setRecipient(Message.RecipientType.TO, toUser);
         body.setSubject(subject);
         body.setContent(eventDescription, "text/plain");
         Transport.send(body);
-    }
-    catch (MessagingException e) {
+    } catch (MessagingException e) {
         throw new IOException(e.getMessage());
     }
 }
 ```
 
 JSP及其他WEB组件
-
-
 
 图 21-2 展示了此新功能的实际应用。针对 MIDI Transposer 产品报告了一个问题。呼叫中心坐席填写了问题报告，并选择“转交产品支持”作为处理操作。当坐席点击提交按钮时，问题被添加到数据库中，并且调用了模型的 `addProblemLog()` 方法。由于事件类型是 RPS，`notifySupport()` 方法被调用，导致图 21-3 中所示的消息被发送给产品支持代表。
 
@@ -20794,7 +20074,7 @@ public void doFilter(
     throws IOException, ServletException
 ```
 
-调用链中的下一个过滤器或链末尾的资源。
+调用铲中的下一个过滤器或链末尾的资源。
 
 ## FilterConfig
 
@@ -20848,7 +20128,7 @@ public ServletContext getServletContext()
 用于不依赖于 HTTP 协议特定功能的 servlet 的基类。`GenericServlet` 实现了所有 servlet 的基本功能：
 
 -   初始化
--   请求处理
+-   请务处理
 -   终止
 
 唯一必须被重写的方法是 `service()`，它实际处理请求。
@@ -20936,8 +20216,7 @@ public void init() throws ServletException
 ### init
 
 ```
-public void init(ServletConfig config)
-    throws ServletException
+public void init(ServletConfig config) throws ServletException
 ```
 
 由 servlet 容器调用，以指示 servlet 正在被投入使用。
@@ -20956,11 +20235,13 @@ public void log(String msg)
 public void log(String message, Throwable t)
 ```
 
+
+
 将指定消息写入 servlet 日志文件。`Throwable` 中的消息也会写入日志。
 
 ### service
 
-```
+```java
 public abstract void service(
     ServletRequest req,
     ServletResponse res)
@@ -20978,9 +20259,9 @@ public abstract void service(
 
 ### 方法
 
-### forward
+#### forward
 
-```
+```java
 public void forward(
     ServletRequest request,
     ServletResponse response)
@@ -20989,9 +20270,9 @@ public void forward(
 
 将请求从一个 servlet 转发到另一个 servlet、JSP 页面或 HTML 文档。`forward` 只能在响应被提交之前调用。
 
-### include
+#### include
 
-```
+```java
 public void include(
     ServletRequest request,
     ServletResponse response)
@@ -21010,41 +20291,39 @@ public void include(
 
 ### 方法
 
-### destroy
+#### destroy
 
-```
-    public void destroy()
+```java
+public void destroy()
 ```
 
 当 servlet 被停止服务时，由 servlet 容器调用。
 
-### getServletConfig
+#### getServletConfig
 
-```
-    public ServletConfig getServletConfig()
+```java
+public ServletConfig getServletConfig()
 ```
 
 返回与此 servlet 关联的 `ServletConfig` 对象。
 
-### getServletInfo
+#### getServletInfo
 
-```
-    public String getServletInfo()
+```java
+public String getServletInfo()
 ```
 
 返回关于 servlet 的标识信息。
 
-### init
+#### init
 
+```java
+public void init(ServletConfig config) throws ServletException
 ```
-    public void init(ServletConfig config) throws ServletException
-```
 
+#### service
 
-
-## service
-
-```
+```java
 public void service(
     ServletRequest req,
     ServletResponse res)
@@ -21055,40 +20334,40 @@ public void service(
 
 ## ServletConfig
 
-**全名：** javax.servlet.ServletConfig
+**全名：** `javax.servlet.ServletConfig`
 **类型：** 接口
 
 由 Servlet 引擎使用，用于在初始化期间向 Servlet 传递信息。
 
 ### 方法
 
-### getInitParameter
+#### getInitParameter
 
-```
+```java
 public String getInitParameter(String name)
 ```
 
 返回指定初始化参数的值，如果该参数不存在则返回 null。
 
-### getInitParameterNames
+#### getInitParameterNames
 
-```
+```java
 public Enumeration getInitParameterNames()
 ```
 
 返回 Servlet 初始化参数名称的枚举，如果不存在任何参数则返回一个空枚举。
 
-### getServletContext
+#### getServletContext
 
-```
+```java
 public ServletContext getServletContext()
 ```
 
 返回与该 Servlet 关联的 ServletContext。
 
-### getServletName
+#### getServletName
 
-```
+```java
 public String getServletName()
 ```
 
@@ -21096,128 +20375,128 @@ public String getServletName()
 
 ## ServletContext
 
-**全名：** javax.servlet.ServletContext
+**全名：** `javax.servlet.ServletContext`
 **类型：** 接口
 
 定义了一组方法，Servlet 可用这些方法与其 Servlet 容器进行通信。Servlet 上下文可以存储对应用程序中所有 Servlet 都可用的属性。
 
 ### 方法
 
-### getAttribute
+#### getAttribute
 
-```
+```java
 public Object getAttribute(String name)
 ```
 
 返回具有指定名称的应用程序级属性，如果该属性不存在则返回 `null`。该对象必须转换为适当的类型。
 
-### getAttributeNames
+#### getAttributeNames
 
-```
+```java
 public Enumeration getAttributeNames()
 ```
 
 返回 Servlet 上下文中属性名称的枚举。
 
-### getContext
+#### getContext
 
-```
+```java
 public ServletContext getContext(String uripath)
 ```
 
 返回同一服务器上另一个 URL 的 `ServletContext` 对象。路径必须以 "/" 开头，并将被解释为相对于 Web 服务器文档根目录的路径。
 
-### getInitParameter
+#### getInitParameter
 
-```
+```java
 public String getInitParameter(String name)
 ```
 
 返回指定的初始化参数。
 
-### getInitParameterNames
+#### getInitParameterNames
 
-```
+```java
 public Enumeration getInitParameterNames()
 ```
 
 返回 Servlet 上下文初始化参数名称的枚举，如果不存在任何参数则返回一个空枚举。
 
-### getMajorVersion
+#### getMajorVersion
 
-```
+```java
 public int getMajorVersion()
 ```
 
 返回 Servlet API 版本号中十进制点左侧的整数。
 
-### getMimeType
+#### getMimeType
 
-```
+```java
 public String getMimeType(String file)
 ```
 
 返回指定文件的 MIME 类型，如果 MIME 类型未知则返回 null。
 
-### getMinorVersion
+#### getMinorVersion
 
-```
+```java
 public int getMinorVersion()
 ```
 
 返回 Servlet API 版本号中十进制点右侧的数字。
 
-### getNamedDispatcher
+#### getNamedDispatcher
 
-```
+```java
 public RequestDispatcher getNamedDispatcher(String name)
 ```
 
 返回为指定 Servlet 准备的 RequestDispatcher，如果无法返回 RequestDispatcher 则返回 null。
 
-### getRealPath
+#### getRealPath
 
-```
+```java
 public String getRealPath(String path)
 ```
 
 给定当前 Servlet 上下文中的 URI 路径，将该路径转换为其引用的绝对文件名。
 
-### getRequestDispatcher
+#### getRequestDispatcher
 
-```
+```java
 public RequestDispatcher getRequestDispatcher(String path)
 ```
 
 返回为指定资源准备的 `RequestDispatcher`，如果无法创建则返回 `null`。路径名必须以 "/" 开头，并被解释为相对于 Servlet 上下文根目录的路径。
 
-### getResource
+#### getResource
 
-```
+```java
 public URL getResource(String path) throws MalformedURLException
 ```
 
 返回指定资源的 URL，如果无法创建则返回 `null`。路径名必须以 "/" 开头，并被解释为相对于 Servlet 上下文根目录的路径。
 
-### getResourceAsStream
+#### getResourceAsStream
 
-```
+```java
 public InputStream getResourceAsStream(String path)
 ```
 
 返回指定资源的 `InputStream`，如果无法创建则返回 `null`。路径名必须以 "/" 开头，并被解释为相对于 Servlet 上下文根目录的路径。
 
-### getResourcePaths
+#### getResourcePaths
 
-```
+```java
 public Set getResourcePaths()
 ```
 
 返回一个 `Set` 字符串集合，代表 Web 应用程序中资源的路径。路径以领先的 / 开头，并相对于 Servlet 上下文的根目录。
 
-### getServerInfo
+#### getServerInfo
 
-```
+```java
 public String getServerInfo()
 ```
 
@@ -21227,7 +20506,7 @@ public String getServerInfo()
 
 ### [已弃用] getServlet
 
-```
+```java
 public Servlet getServlet(String name) throws ServletException
 ```
 
@@ -21235,7 +20514,7 @@ public Servlet getServlet(String name) throws ServletException
 
 ### getServletContextName
 
-```
+```java
 public String getServletContextName()
 ```
 
@@ -21243,7 +20522,7 @@ public String getServletContextName()
 
 ### [已弃用] getServletNames
 
-```
+```java
 public Enumeration getServletNames()
 ```
 
@@ -21251,13 +20530,13 @@ public Enumeration getServletNames()
 
 ### [已弃用] getServlets
 
-```
+```java
 public Enumeration getServlets()
 ```
 
 ### [已弃用] log
 
-```
+```java
 public void log(Exception exception, String msg)
 ```
 
@@ -21265,7 +20544,7 @@ public void log(Exception exception, String msg)
 
 ### log
 
-```
+```java
 public void log(String msg)
 ```
 
@@ -21273,7 +20552,7 @@ public void log(String msg)
 
 ### log
 
-```
+```java
 public void log(String message, Throwable throwable)
 ```
 
@@ -21281,7 +20560,7 @@ public void log(String message, Throwable throwable)
 
 ### removeAttribute
 
-```
+```java
 public void removeAttribute(String name)
 ```
 
@@ -21289,7 +20568,7 @@ public void removeAttribute(String name)
 
 ### setAttribute
 
-```
+```java
 public void setAttribute(String name, Object object)
 ```
 
@@ -21297,15 +20576,15 @@ public void setAttribute(String name, Object object)
 
 ## ServletContextAttributeEvent
 
-**全名：** javax.servlet.ServletContextAttributeEvent
+**全名：** `javax.servlet.ServletContextAttributeEvent`
 **类型：** 类
-**继承自：** javax.servlet.ServletContextEvent
+**继承自：** `javax.servlet.ServletContextEvent`
 
 用于 Web 应用程序 Servlet 上下文属性变更的通知。
 
 ### 构造方法
 
-```
+```java
 public ServletContextAttributeEvent(
     ServletContext source,
     String name,
@@ -21316,17 +20595,17 @@ public ServletContextAttributeEvent(
 
 ### 方法
 
-### getName
+#### getName
 
-```
+```java
 public String getName()
 ```
 
 返回已更改属性的名称。
 
-### getValue
+#### getValue
 
-```
+```java
 public Object getValue()
 ```
 
@@ -21334,33 +20613,33 @@ public Object getValue()
 
 ## ServletContextAttributesListener
 
-**全名：** javax.servlet.ServletContextAttributesListener
+**全名：** `javax.servlet.ServletContextAttributesListener`
 **类型：** 接口
-**父接口：** java.util.EventListener
+**父接口：** `java.util.EventListener`
 
 实现此接口的类将收到 Servlet 上下文属性列表变更的通知。
 
 ### 方法
 
-### attributeAdded
+#### attributeAdded
 
-```
+```java
 public void attributeAdded(ServletContextAttributeEvent scab)
 ```
 
 当新属性添加到 Servlet 上下文时被调用。
 
-### attributeRemoved
+#### attributeRemoved
 
-```
+```java
 public void attributeRemoved(ServletContextAttributeEvent scab)
 ```
 
 当现有属性从 Servlet 上下文中移除时被调用。
 
-### attributeReplaced
+#### attributeReplaced
 
-```
+```java
 public void attributeReplaced(ServletContextAttributeEvent scab)
 ```
 
@@ -21368,17 +20647,17 @@ public void attributeReplaced(ServletContextAttributeEvent scab)
 
 ## ServletContextEvent
 
-**全名：** javax.servlet.ServletContextEvent
+**全名：** `javax.servlet.ServletContextEvent`
 **类型：** 类
-**继承自：** java.util.EventObject
+**继承自：** `java.util.EventObject`
 
 用于 Servlet 上下文变更通知的事件类。
 
 ### 构造方法
 
-**ServletContextEvent**
+#### ServletContextEvent
 
-```
+```java
 public ServletContextEvent(ServletContext source)
 ```
 
@@ -21386,9 +20665,9 @@ public ServletContextEvent(ServletContext source)
 
 ### 方法
 
-**getServletContext**
+#### getServletContext
 
-```
+```java
 public ServletContext getServletContext()
 ```
 
@@ -21396,23 +20675,23 @@ public ServletContext getServletContext()
 
 ## ServletContextListener
 
-**全名：** javax.servlet.ServletContextListener
+**全名：** `javax.servlet.ServletContextListener`
 **类型：** 接口
-**父接口：** java.util.EventListener
+**父接口：** `java.util.EventListener`
 
 实现此接口的类将收到关于 Servlet 上下文变更的通知。
 
 ### 方法
 
-**contextDestroyed**
+#### contextDestroyed
 
-```
+```java
 public void contextDestroyed(ServletContextEvent sce)
 ```
 
 当 Servlet 上下文即将关闭时被调用。
 
-contextInitialized
+#### contextInitialized
 
 ```java
 public void contextInitialized(ServletContextEvent sce)
@@ -21466,7 +20745,7 @@ public ServletException(Throwable rootCause)
 
 ### 方法
 
-**getRootCause**
+#### getRootCause
 
 ```java
 public Throwable getRootCause()
@@ -21486,7 +20765,7 @@ servlet可以使用它从客户端请求中读取二进制数据的输入流。�
 
 ### 方法
 
-**readLine**
+#### readLine
 
 ```java
 public int readLine(byte[] b, int off, int len)
@@ -21507,7 +20786,7 @@ public int readLine(byte[] b, int off, int len)
 
 ### 方法
 
-**print**
+#### print
 
 ```java
 public void print(boolean b) throws IOException
@@ -21515,7 +20794,7 @@ public void print(boolean b) throws IOException
 
 将布尔值写入客户端，但末尾不添加回车换行符。
 
-**print**
+#### print
 
 ```java
 public void print(char c) throws IOException
@@ -21523,7 +20802,7 @@ public void print(char c) throws IOException
 
 将字符写入客户端，但末尾不添加回车换行符。
 
-**print**
+#### print
 
 ```java
 public void print(double d) throws IOException
@@ -21531,7 +20810,7 @@ public void print(double d) throws IOException
 
 将双精度值写入客户端，但末尾不添加回车换行符。
 
-**print**
+#### print
 
 ```java
 public void print(float f) throws IOException
@@ -21539,7 +20818,7 @@ public void print(float f) throws IOException
 
 将单精度浮点值写入客户端，但末尾不添加回车换行符。
 
-**print**
+#### print
 
 ```java
 public void print(int i) throws IOException
@@ -21547,7 +20826,7 @@ public void print(int i) throws IOException
 
 将整数写入客户端，但末尾不添加回车换行符。
 
-**print**
+#### print
 
 ```java
 public void print(long l) throws IOException
@@ -21555,7 +20834,7 @@ public void print(long l) throws IOException
 
 将长整型值写入客户端，但末尾不添加回车换行符。
 
-**print**
+#### print
 
 ```java
 public void print(String s) throws IOException
@@ -21563,7 +20842,7 @@ public void print(String s) throws IOException
 
 将字符串写入客户端，但末尾不添加回车换行符。
 
-**println**
+#### println
 
 ```java
 public void println() throws IOException
@@ -21571,7 +20850,7 @@ public void println() throws IOException
 
 向客户端写入一个回车换行符。
 
-**println**
+#### println
 
 ```java
 public void println(boolean b) throws IOException
@@ -21579,7 +20858,7 @@ public void println(boolean b) throws IOException
 
 将布尔值写入客户端，后跟一个回车换行符。
 
-**println**
+#### println
 
 ```java
 public void println(char c) throws IOException
@@ -21587,7 +20866,7 @@ public void println(char c) throws IOException
 
 将字符写入客户端，后跟一个回车换行符。
 
-**println**
+#### println
 
 ```java
 public void println(double d) throws IOException
@@ -21595,7 +20874,7 @@ public void println(double d) throws IOException
 
 将双精度值写入客户端，后跟一个回车换行符。
 
-**println**
+#### println
 
 ```java
 public void println(float f) throws IOException
@@ -21603,7 +20882,7 @@ public void println(float f) throws IOException
 
 将单精度浮点值写入客户端，后跟一个回车换行符。
 
-**println**
+#### println
 
 ```java
 public void println(int i) throws IOException
@@ -21611,7 +20890,7 @@ public void println(int i) throws IOException
 
 将整数写入客户端，后跟一个回车换行符。
 
-**println**
+#### println
 
 ```java
 public void println(long l) throws IOException
@@ -21619,7 +20898,7 @@ public void println(long l) throws IOException
 
 将长整型值写入客户端，后跟一个回车换行符。
 
-**println**
+#### println
 
 ```java
 public void println(String s) throws IOException
@@ -21638,7 +20917,7 @@ public void println(String s) throws IOException
 
 ### 方法
 
-**getAttribute**
+#### getAttribute
 
 ```java
 public Object getAttribute(String name)
@@ -21646,7 +20925,7 @@ public Object getAttribute(String name)
 
 返回指定属性的值，如果不存在指定名称的属性则返回null。
 
-**getAttributeNames**
+#### getAttributeNames
 
 ```java
 public Enumeration getAttributeNames()
@@ -21654,7 +20933,7 @@ public Enumeration getAttributeNames()
 
 返回此请求可用属性名称的枚举，如果请求没有属性则返回空枚举。
 
-**getCharacterEncoding**
+#### getCharacterEncoding
 
 ```java
 public String getCharacterEncoding()
@@ -21662,7 +20941,7 @@ public String getCharacterEncoding()
 
 返回此请求正文中使用的字符编码名称，如果请求未指定字符编码则返回null。
 
-**getContentLength**
+#### getContentLength
 
 ```java
 public int getContentLength()
@@ -21670,7 +20949,7 @@ public int getContentLength()
 
 返回请求正文的长度，如果长度未知则返回-1。在HTTP servlet中，这与CGI变量CONTENT_LENGTH的值相同。
 
-**getContentType**
+#### getContentType
 
 ```java
 public String getContentType()
@@ -21678,7 +20957,7 @@ public String getContentType()
 
 返回请求正文的MIME类型，如果未知则返回null。在HTTP servlet中，与CGI变量CONTENT_TYPE的值相同。
 
-**getInputStream**
+#### getInputStream
 
 ```java
 public ServletInputStream getInputStream() throws IOException
@@ -21686,7 +20965,7 @@ public ServletInputStream getInputStream() throws IOException
 
 以二进制数据形式检索请求正文。可以调用`getInputStream()`或`getReader()`来读取正文，但不能同时调用两者。
 
-**getLocale**
+#### getLocale
 
 ```java
 public Locale getLocale()
@@ -21694,15 +20973,15 @@ public Locale getLocale()
 
 返回客户端将接受内容的首选`Locale`（如果已指定）。否则，返回服务器的默认区域设置。
 
-**getLocales**
+#### getLocales
 
 ```java
-public Locale getLocale()
+public Enumeration getLocales()
 ```
 
 返回按用户偏好顺序排列的`Locale`对象的`Enumeration`，如果客户端未指示首选区域设置，则返回包含一个`Locale`（服务器的默认区域设置）的`Enumeration`。
 
-**getParameter**
+#### getParameter
 
 ```java
 public String getParameter(String name)
@@ -21710,7 +20989,7 @@ public String getParameter(String name)
 
 以字符串形式返回请求参数的值，如果参数不存在则返回null。
 
-**getParameterMap**
+#### getParameterMap
 
 ```java
 public Map getParameterMap()
@@ -21718,7 +20997,7 @@ public Map getParameterMap()
 
 返回此请求参数的java.util.Map。
 
-**getParameterNames**
+#### getParameterNames
 
 ```java
 public Enumeration getParameterNames()
@@ -21726,7 +21005,7 @@ public Enumeration getParameterNames()
 
 返回此请求参数名称的java.util.Enumeration，如果请求没有参数则返回空枚举。
 
-**getParameterValues**
+#### getParameterValues
 
 ```java
 public String[] getParameterValues(String name)
@@ -21734,7 +21013,7 @@ public String[] getParameterValues(String name)
 
 返回包含给定请求参数所有值的String对象数组，如果参数不存在则返回null。
 
-**getProtocol**
+#### getProtocol
 
 ```java
 public String getProtocol()
@@ -21742,7 +21021,7 @@ public String getProtocol()
 
 返回请求使用的协议的名称和版本。返回的值格式为protocol/majorVersion.minorVersion。在HTTP servlet中，这与CGI变量SERVER_PROTOCOL的值相同。
 
-**getReader**
+#### getReader
 
 ```java
 public BufferedReader getReader() throws IOException
@@ -21750,7 +21029,7 @@ public BufferedReader getReader() throws IOException
 
 以字符数据形式检索请求正文。可以调用getInputStream()或getReader()，但不能同时调用两者。
 
-**[已弃用] getRealPath**
+#### [已弃用] getRealPath
 
 ```java
 public String getRealPath(String path)
@@ -21758,7 +21037,7 @@ public String getRealPath(String path)
 
 不再支持。
 
-**getRemoteAddr**
+#### getRemoteAddr
 
 ```java
 public String getRemoteAddr()
@@ -21766,7 +21045,7 @@ public String getRemoteAddr()
 
 返回发送请求的客户端的互联网协议（IP）地址。对于HTTP servlet，与CGI变量REMOTE_ADDR相同。
 
-**getRemoteHost**
+#### getRemoteHost
 
 ```java
 public String getRemoteHost()
@@ -21774,7 +21053,7 @@ public String getRemoteHost()
 
 返回发送请求的客户端的名称，如果无法确定名称则返回客户端的IP地址。对于HTTP servlet，与CGI变量REMOTE_HOST相同。
 
-**getRequestDispatcher**
+#### getRequestDispatcher
 
 ```java
 public RequestDispatcher getRequestDispatcher(String path)
@@ -21782,7 +21061,7 @@ public RequestDispatcher getRequestDispatcher(String path)
 
 返回位于指定路径的资源的RequestDispatcher对象。此方法与ServletContext.getRequestDispatcher()的区别在于此方法可以接受相对路径。
 
-**getScheme**
+#### getScheme
 
 ```java
 public String getScheme()
@@ -21790,7 +21069,7 @@ public String getScheme()
 
 返回用于发出请求的协议方案。
 
-**getServerName**
+#### getServerName
 
 ```java
 public String getServerName()
@@ -21798,7 +21077,7 @@ public String getServerName()
 
 返回接收请求的服务器主机名。在HTTP servlet中，这与CGI变量SERVER_NAME相同。
 
-**getServerPort**
+#### getServerPort
 
 ```java
 public int getServerPort()
@@ -21806,43 +21085,33 @@ public int getServerPort()
 
 返回接收请求的服务器端口号。
 
+#### isSecure
 
-
-## getServerPort
-
-```
-public int getServerPort()
-```
-
-返回此请求被发送到的端口号。在 HTTP Servlet 中，这与 CGI 变量 SERVER_PORT 相同。
-
-## isSecure
-
-```
+```java
 public boolean isSecure()
 ```
 
 如果此请求是通过安全通道（例如 `https`）发出的，则返回 `true`。
 
-## removeAttribute
+#### removeAttribute
 
-```
+```java
 public void removeAttribute(String name)
 ```
 
 从此请求中移除指定名称的属性。
 
-## setAttribute
+#### setAttribute
 
-```
+```java
 public void setAttribute(String name, Object o)
 ```
 
 将属性绑定到此请求，并使用给定的名称。
 
-## setCharacterEncoding
+#### setCharacterEncoding
 
-```
+```java
 public void setCharacterEncoding(String env)
     throws UnsupportedEncodingException
 ```
@@ -21860,9 +21129,9 @@ public void setCharacterEncoding(String env)
 
 ### 构造函数
 
-**ServletRequestWrapper**
+#### ServletRequestWrapper
 
-```
+```java
 public ServletRequestWrapper(ServletRequest request)
 ```
 
@@ -21870,217 +21139,217 @@ public ServletRequestWrapper(ServletRequest request)
 
 ### 方法
 
-**getAttribute**
+#### getAttribute
 
-```
+```java
 public Object getAttribute(String name)
 ```
 
 返回指定属性的值，如果不存在指定名称的属性，则返回 null。
 
-**getAttributeNames**
+#### getAttributeNames
 
-```
+```java
 public Enumeration getAttributeNames()
 ```
 
 返回一个枚举，其中包含此请求可用的属性名称，如果请求没有属性，则返回一个空的枚举。
 
-**getCharacterEncoding**
+#### getCharacterEncoding
 
-```
+```java
 public String getCharacterEncoding()
 ```
 
 返回此请求正文中使用的字符编码名称，如果请求未指定字符编码，则返回 null。
 
-**getContentLength**
+#### getContentLength
 
-```
+```java
 public int getContentLength()
 ```
 
 返回请求正文的长度，如果长度未知，则返回 -1。在 HTTP Servlet 中，这与 CGI 变量 CONTENT_LENGTH 的值相同。
 
-**getContentType**
+#### getContentType
 
-```
+```java
 public String getContentType()
 ```
 
 返回请求正文的 MIME 类型，如果未知，则返回 null。在 HTTP Servlet 中，与 CGI 变量 CONTENT_TYPE 的值相同。
 
-## getInputStream
+#### getInputStream
 
-```
+```java
 public ServletInputStream getInputStream() throws IOException
 ```
 
 以二进制数据形式检索请求的正文。可以调用 `getInputStream()` 或 `getReader()` 来读取正文，但不能同时调用两者。
 
-## getLocale
+#### getLocale
 
-```
+```java
 public Locale getLocale()
 ```
 
 返回客户端接受内容的首选语言环境（如果指定）。否则，返回服务器的默认语言环境。
 
-## getLocales
+#### getLocales
 
-```
+```java
 public Enumeration getLocales()
 ```
 
 返回一个按用户偏好顺序排列的语言环境对象枚举，如果客户端未指示首选语言环境，则返回一个包含服务器默认语言环境的枚举。
 
-## getParameter
+#### getParameter
 
-```
+```java
 public String getParameter(String name)
 ```
 
 以字符串形式返回请求参数的值，如果参数不存在，则返回 null。
 
-## getParameterMap
+#### getParameterMap
 
-```
+```java
 public Map getParameterMap()
 ```
 
 返回此请求参数的 `java.util.Map` 映射。
 
-## getParameterNames
+#### getParameterNames
 
-```
+```java
 public Enumeration getParameterNames()
 ```
 
 返回此请求中参数名称的 `java.util.Enumeration` 枚举，如果请求没有参数，则返回一个空的 `Enumeration` 枚举。
 
-## getParameterValues
+#### getParameterValues
 
-```
-public String getParameterValues(String name)
+```java
+public String[] getParameterValues(String name)
 ```
 
 返回包含给定请求参数所有值的 `String` 对象数组，如果参数不存在，则返回 `null`。
 
-## getProtocol
+#### getProtocol
 
-```
+```java
 public String getProtocol()
 ```
 
 返回请求使用的协议的名称和版本。返回的值采用 `protocol/majorVersion.minorVersion` 格式。在 HTTP Servlet 中，这与 CGI 变量 SERVER_PROTOCOL 相同。
 
-## getReader
+#### getReader
 
-```
+```java
 public BufferedReader getReader() throws IOException
 ```
 
 以字符数据形式检索请求的正文。可以调用 `getInputStream()` 或 `getReader()`，但不能同时调用两者。
 
-## getRealPath
+#### getRealPath
 
-```
+```java
 public String getRealPath(String path)
 ```
 
 返回 `getRealPath(String path)`。
 
-## getRemoteAddr
+#### getRemoteAddr
 
-```
+```java
 public String getRemoteAddr()
 ```
 
 返回发送请求的客户端的 Internet 协议（IP）地址。对于 HTTP Servlet，与 CGI 变量 REMOTE_ADDR 相同。
 
-## getRemoteHost
+#### getRemoteHost
 
-```
+```java
 public String getRemoteHost()
 ```
 
 返回发送请求的客户端的名称，如果无法确定名称，则返回客户端的 IP 地址。对于 HTTP Servlet，与 CGI 变量 REMOTE_HOST 相同。
 
-## getRequest
+#### getRequest
 
-```
+```java
 public ServletRequest getRequest()
 ```
 
 返回被包装的请求对象。
 
-## getRequestDispatcher
+#### getRequestDispatcher
 
-```
+```java
 public RequestDispatcher getRequestDispatcher(String path)
 ```
 
 返回一个 `RequestDispatcher` 对象，该对象作为位于指定路径的资源的包装器。此方法与 `ServletContext.getRequestDispatcher()` 的区别在于，此方法可以接受相对路径。
 
-## getScheme
+#### getScheme
 
-```
+```java
 public String getScheme()
 ```
 
 返回用于发出请求的方案。
 
-## getServerName
+#### getServerName
 
-```
+```java
 public String getServerName()
 ```
 
 返回接收请求的服务器的主机名。在 HTTP Servlet 中，这与 CGI 变量 SERVER_NAME 相同。
 
-## getServerPort
+#### getServerPort
 
-```
+```java
 public int getServerPort()
 ```
 
 返回此请求被发送到的端口号。在 HTTP Servlet 中，这与 CGI 变量 SERVER_PORT 相同。
 
-## isSecure
+#### isSecure
 
-```
+```java
 public boolean isSecure()
 ```
 
 如果此请求是通过安全通道（例如 https）发出的，则返回 `true`。
 
-## removeAttribute
+#### removeAttribute
 
-```
+```java
 public void removeAttribute(String name)
 ```
 
 从此请求中移除指定名称的属性。
 
-## setAttribute
+#### setAttribute
 
-```
+```java
 public void setAttribute(String name, Object o)
 ```
 
 将属性绑定到此请求，并使用给定的名称。
 
-## setCharacterEncoding
+#### setCharacterEncoding
 
-```
+```java
 public void setCharacterEncoding(String enc) throws UnsupportedEncodingException
 ```
 
 指定此请求正文中使用的字符编码。必须在读取请求参数或输入数据之前调用。
 
-## setRequest
+#### setRequest
 
-```
+```java
 public void setRequest(ServletRequest request)
 ```
 
@@ -22088,7 +21357,7 @@ public void setRequest(ServletRequest request)
 
 ## ServletResponse
 
-**全名：** javax.servlet.ServletResponse
+**全名：** `javax.servlet.ServletResponse`
 **类型：** 接口
 
 封装有关为请求生成的响应的所有信息，包括响应头、状态码和输出流。HttpServletResponse 扩展了此接口以支持 HTTP 特定的功能。
@@ -22097,7 +21366,7 @@ public void setRequest(ServletRequest request)
 
 #### flushBuffer
 
-```
+```java
 public void flushBuffer() throws IOException
 ```
 
@@ -22105,7 +21374,7 @@ public void flushBuffer() throws IOException
 
 #### getBufferSize
 
-```
+```java
 public int getBufferSize()
 ```
 
@@ -22113,7 +21382,7 @@ public int getBufferSize()
 
 #### getCharacterEncoding
 
-```
+```java
 public String getCharacterEncoding()
 ```
 
@@ -22121,7 +21390,7 @@ public String getCharacterEncoding()
 
 #### getLocale
 
-```
+```java
 public Locale getLocale()
 ```
 
@@ -22129,7 +21398,7 @@ public Locale getLocale()
 
 #### getOutputStream
 
-```
+```java
 public ServletOutputStream getOutputStream() throws IOException
 ```
 
@@ -22137,7 +21406,7 @@ public ServletOutputStream getOutputStream() throws IOException
 
 #### getWriter
 
-```
+```java
 public PrintWriter getWriter() throws IOException
 ```
 
@@ -22145,7 +21414,7 @@ public PrintWriter getWriter() throws IOException
 
 #### isCommitted
 
-```
+```java
 public boolean isCommitted()
 ```
 
@@ -22153,7 +21422,7 @@ public boolean isCommitted()
 
 #### reset
 
-```
+```java
 public void reset()
 ```
 
@@ -22161,7 +21430,7 @@ public void reset()
 
 #### resetBuffer
 
-```
+```java
 public void resetBuffer()
 ```
 
@@ -22169,7 +21438,7 @@ public void resetBuffer()
 
 #### setBufferSize
 
-```
+```java
 public void setBufferSize(int size)
 ```
 
@@ -22177,7 +21446,7 @@ public void setBufferSize(int size)
 
 #### setContentLength
 
-```
+```java
 public void setContentLength(int len)
 ```
 
@@ -22185,7 +21454,7 @@ public void setContentLength(int len)
 
 #### setContentType
 
-```
+```java
 public void setContentType(String type)
 ```
 
@@ -22193,150 +21462,148 @@ public void setContentType(String type)
 
 #### setLocale
 
-```
+```java
 public void setLocale(Locale loc)
 ```
-
-
 
 设置响应的区域设置。必须在调用 getWriter() 之前调用。默认区域设置是服务器使用的那个。
 
 ## ServletResponseWrapper
 
-| 全名： | javax.servlet.ServletResponseWrapper |
+| 全名： | `javax.servlet.ServletResponseWrapper` |
 | 类型： | 类 |
-| 实现： | javax.servlet.ServletResponse |
+| 实现： | `javax.servlet.ServletResponse` |
 
 一个用于实现 ServletResponse 的子类的基类。其默认行为是调用 Servlet 引擎的 ServletResponse 实现类中的相应方法。
 
-## 构造方法
+### 构造方法
 
-### ServletResponseWrapper
+#### ServletResponseWrapper
 
-```
+```java
 public ServletResponseWrapper(ServletResponse response)
 ```
 
 为指定的响应对象创建一个 ServletResponseWrapper。
 
-## 方法
+### 方法
 
-### flushBuffer
+#### flushBuffer
 
-```
+```java
 public void flushBuffer() throws IOException
 ```
 
 将缓冲区的内容写入客户端，从而提交响应。
 
-### getBufferSize
+#### getBufferSize
 
-```
+```java
 public int getBufferSize()
 ```
 
 返回响应中使用的实际缓冲区大小。如果禁用了缓冲，则返回零。
 
-### getCharacterEncoding
+#### getCharacterEncoding
 
-```
+```java
 public String getCharacterEncoding()
 ```
 
 返回此响应的字符集编码名称。
 
-### getLocale
+#### getLocale
 
-```
+```java
 public Locale getLocale()
 ```
 
 返回响应使用的区域设置。
 
-### getOutputStream
+#### getOutputStream
 
-```
+```java
 public ServletOutputStream getOutputStream()
     throws IOException
 ```
 
 返回此响应的 `ServletOutputStream`。如果已为此响应调用过 `getWriter()`，则不能调用此方法。
 
-### getResponse
+#### getResponse
 
-```
+```java
 public ServletResponse getResponse()
 ```
 
 返回被包装的 `ServletResponse` 对象。
 
-### getWriter
+#### getWriter
 
-```
+```java
 public PrintWriter getWriter() throws IOException
 ```
 
 返回此响应的 `PrintWriter`。如果已为此响应调用过 `getOutputStream()`，则不能调用此方法。
 
-### isCommitted
+#### isCommitted
 
-```
+```java
 public boolean isCommitted()
 ```
 
 如果响应已经被提交，则返回 `true`，这意味着响应已经写入了其状态码和头信息。
 
-### reset
+#### reset
 
-```
+```java
 public void reset()
 ```
 
 清除响应缓冲区中的任何现有数据以及状态码和头信息。如果响应已被提交，则抛出 `IllegalStateException`。
 
-### resetBuffer
+#### resetBuffer
 
-```
+```java
 public void resetBuffer()
 ```
 
 清除响应缓冲区中的任何现有数据。此方法与 `reset()` 的不同之处在于它不清除状态码和头信息。如果响应已被提交，则抛出 `IllegalStateException`。
 
-### setBufferSize
+#### setBufferSize
 
-```
+```java
 public void setBufferSize(int size)
 ```
 
 设置响应正文的首选缓冲区大小。Servlet 引擎将使用至少与请求大小一样大的缓冲区。实际缓冲区大小可以通过 `getBufferSize()` 检索。必须在写入任何正文内容之前调用，否则将抛出 `IllegalStateException`。
 
-### setContentLength
+#### setContentLength
 
-```
+```java
 public void setContentLength(int len)
 ```
 
 向客户端指示写入响应的内容长度。
 
-### setContentType
+#### setContentType
 
-```
+```java
 public void setContentType(String type)
 ```
 
 设置内容类型。
 
-### setLocale
+#### setLocale
 
-```
+```java
 public void setLocale(Locale loc)
 ```
 
 设置响应的区域设置。必须在调用 `getWriter()` 之前调用。默认区域设置是服务器使用的那个。
 
-### setResponse
+#### setResponse
 
-```
+```java
 public void setResponse(ServletResponse response)
 ```
 
@@ -22351,7 +21618,7 @@ public void setResponse(ServletResponse response)
 
 > **注意** 虽然这使得 Servlet 的单个实例在其自身的 `service()` 方法内是线程安全的，但它并不能防止多个实例同时访问外部资源。
 
-## 方法
+### 方法
 
 `SingleThreadModel` 没有定义任何方法；它仅仅是一个标记接口。
 
@@ -22363,61 +21630,61 @@ public void setResponse(ServletResponse response)
 
 `ServletException` 的一个子类，当 Servlet 无法再处理请求（无论是暂时还是永久）时由 Servlet 抛出。
 
-## 构造方法
+### 构造方法
 
-### [已弃用] UnavailableException
+#### [已弃用] UnavailableException
 
-```
+```java
 public UnavailableException(int seconds, Servlet servlet, String msg)
 ```
 
 不再支持。
 
-### [已弃用] UnavailableException
+#### [已弃用] UnavailableException
 
-```
+```java
 public UnavailableException(Servlet servlet, String msg)
 ```
 
 不再支持。
 
-### UnavailableException
+#### UnavailableException
 
-```
+```java
 public UnavailableException(String msg)
 ```
 
 创建一个新的异常，其消息指定 Servlet 永久不可用。
 
-### UnavailableException
+#### UnavailableException
 
-```
+```java
 public UnavailableException(String msg, int seconds)
 ```
 
 为 Servlet 创建一个新的异常，其指定的错误消息表明 Servlet 暂时不可用。接受一个整数，表示预计 Servlet 将不可用的秒数。如果该数字为零或负数，则表示没有可用的估计值。
 
-## 方法
+### 方法
 
-### [已弃用] getServlet
+#### [已弃用] getServlet
 
-```
+```java
 public Servlet getServlet()
 ```
 
 不再支持。
 
-### getUnavailableSeconds
+#### getUnavailableSeconds
 
-```
+```java
 public int getUnavailableSeconds()
 ```
 
 返回 Servlet 预计不可用的时间长度（以秒为单位），或者如果不可用是永久性的或时间不确定，则返回负数。
 
-### isPermanent
+#### isPermanent
 
-```
+```java
 public boolean isPermanent()
 ```
 
@@ -22436,85 +21703,85 @@ Servlet 引擎可以使用 Cookie 来存储特定客户端唯一的会话信息�
 
 > **注意** 用户可以拒绝接受 Cookie，因此你的应用程序应处理这种情况。
 
-## 构造方法
+### 构造方法
 
-### Cookie
+#### Cookie
 
-```
+```java
 public Cookie(String name, String value)
 ```
 
 创建一个具有指定名称和值的新 Cookie。
 
-## 方法
+### 方法
 
-### clone
+#### clone
 
-```
+```java
 public Object clone()
 ```
 
 返回此 Cookie 的一个副本。
 
-### getComment
+#### getComment
 
-```
+```java
 public String getComment()
 ```
 
 返回 Cookie 的注释。
 
-### getDomain
+#### getDomain
 
-```
+```java
 public String getDomain()
 ```
 
 返回 Cookie 的域名。
 
-### getMaxAge
+#### getMaxAge
 
-```
+```java
 public int getMaxAge()
 ```
 
 返回在 Cookie 被删除之前应存储的最大秒数。请注意，这是相对于调用 `setMaxAge()` 的时间，而不是当前时间。
 
-### getName
+#### getName
 
-```
+```java
 public String getName()
 ```
 
 返回 Cookie 的名称。请注意，没有 `setName` 方法；你必须在构造方法中设置 Cookie 的名称。
 
-### getPath
+#### getPath
 
-```
+```java
 public String getPath()
 ```
 
 返回 Cookie 可见的路径。对该路径或其任何子目录中的任何 URL 的请求都会导致该 Cookie 被返回。有关 Cookie 路径的更多信息，请参阅 RFC 2109。
 
-### getSecure
+#### getSecure
 
-```
+```java
 public boolean getSecure()
 ```
 
 如果用户代理（浏览器）将使用安全协议返回 Cookie，则返回 true。
 
-### getValue
+#### getValue
 
-```
+```java
 public String getValue()
 ```
 
 返回 Cookie 的值。
 
-### getVersion
+#### getVersion
 
-```
+```java
 public int getVersion()
 ```
 
@@ -22523,57 +21790,57 @@ public int getVersion()
 - 0 原始 Netscape 规范
 - 1 RFC 2109 规范
 
-### setComment
+#### setComment
 
-```
+```java
 public void setComment(String purpose)
 ```
 
 将 Cookie 的注释字段设置为指定的字符串。
 
-### setDomain
+#### setDomain
 
-```
+```java
 public void setDomain(String pattern)
 ```
 
 设置 Cookie 的域名。域名可用于将 Cookie 的可见性限制在特定寻址方案中服务器的一个子集。域名在存储前会转换为小写。如果未指定域名，则 Cookie 仅返回给发送它的服务器。详情请参阅 RFC 2109。
 
-### setMaxAge
+#### setMaxAge
 
-```
+```java
 public void setMaxAge(int expiry)
 ```
 
 指定 Cookie 应持久化的时间长度（以秒为单位）。正数或零值请求浏览器在指定时间间隔后删除 Cookie。负数值请求浏览器仅在当前浏览器实例的持续时间内保持 Cookie 有效。
 
-### setPath
+#### setPath
 
-```
+```java
 public void setPath(String uri)
 ```
 
 指定 Cookie 应可见的路径。例如，如果指定了路径 `/servlet/abc`，则该 Cookie 将随任何包含该路径的 URL 请求一起返回，例如 `/servlet/abc/def`。如果未指定路径，则默认为 `/`。路径必须包含设置 Cookie 的 Servlet。有关 Cookie 路径的更多详细信息，请参阅 RFC 2109。
 
-# setSecure
+#### setSecure
 
-```
+```java
 public void setSecure(boolean flag)
 ```
 
 告知用户代理（浏览器）是否应使用安全协议返回该 Cookie。
 
-# setValue
+#### setValue
 
-```
+```java
 public void setValue(String newValue)
 ```
 
 将 Cookie 的值设置为指定的字符串。
 
-# setVersion
+#### setVersion
 
-```
+```java
 public void setVersion(int v)
 ```
 
@@ -22582,31 +21849,31 @@ public void setVersion(int v)
 - 0 原始 Netscape 规范
 - 1 RFC 2109 规范
 
-# HttpServlet
+## HttpServlet
 
-| 全名： | javax.servlet.http.HttpServlet |
+| 全名： | `javax.servlet.http.HttpServlet` |
 | 类型： | 抽象类 |
-| 继承自： | javax.servlet.GenericServlet |
-| 实现接口： | java.io.Serializable |
+| 继承自： | `javax.servlet.GenericServlet` |
+| 实现接口： | `java.io.Serializable` |
 
 一个为在 HTTP 环境中操作的 Servlet 提供的抽象基类。HttpServlet 是 GenericServlet 的一个轻量级扩展，它为 HTTP GET、POST、PUT、DELETE、HEAD、OPTIONS 和 TRACE 请求提供了特定的方法。service() 方法用于确定 HTTP 请求类型并调用相应的方法。
 一个典型的 HttpServlet 子类会重写 doGet()、doPost() 或两者，但通常不重写 service()。
 
-# 构造方法
+### 构造方法
 
-## HttpServlet
+#### HttpServlet
 
-```
+```java
 public HttpServlet()
 ```
 
 默认（空）构造方法。不执行任何操作。所有 Servlet 初始化工作都应在继承自 GenericServlet 的 init() 方法中完成。
 
-# 方法
+### 方法
 
-## doDelete
+#### doDelete
 
-```
+```java
 protected void doDelete(
     HttpServletRequest req,
     HttpServletResponse resp)
@@ -22615,9 +21882,9 @@ protected void doDelete(
 
 处理 HTTP DELETE 请求。与 doPut() 类似，这种类型的请求通常不是由 Web 浏览器直接发起的。
 
-## doGet
+#### doGet
 
-```
+```java
 protected void doGet(
     HttpServletRequest req,
     HttpServletResponse resp)
@@ -22631,9 +21898,9 @@ protected void doGet(
 3. 在响应对象中设置 `Content-Type` 头。
 4. 写入输出 HTML 页面。
 
-## doHead
+#### doHead
 
-```
+```java
 protected void doHead(
     HttpServletRequest req,
     HttpServletResponse resp)
@@ -22642,9 +21909,9 @@ protected void doHead(
 
 处理 HTTP `HEAD` 请求。这在功能上与 `GET` 请求类似，只是不会返回响应体，只返回状态和头信息。
 
-## doOptions
+#### doOptions
 
-```
+```java
 protected void doOptions(
     HttpServletRequest req,
     HttpServletResponse resp)
@@ -22653,9 +21920,9 @@ protected void doOptions(
 
 处理 HTTP `OPTIONS` 请求，并返回 HTTP 服务器支持的方法列表。此方法通常不被重写。
 
-## doPost
+#### doPost
 
-```
+```java
 protected void doPost(
     HttpServletRequest req,
     HttpServletResponse resp)
@@ -22669,9 +21936,9 @@ protected void doPost(
 3. 在响应对象中设置 `Content-Type` 头。
 4. 写入输出 HTML 页面。
 
-## doPut
+#### doPut
 
-```
+```java
 protected void doPut(
     HttpServletRequest req,
     HttpServletResponse resp)
@@ -22680,9 +21947,9 @@ protected void doPut(
 
 处理 HTTP PUT 请求。要写入的资源名称可以通过调用请求对象的 `getRequestURI()` 方法找到，资源数据本身可以从请求对象的输入流中读取。HTML 表单不支持 PUT 方法；这种类型的请求通常不是由 Web 浏览器直接发起的。
 
-## doTrace
+#### doTrace
 
-```
+```java
 protected void doTrace(
     HttpServletRequest req,
     HttpServletResponse resp)
@@ -22691,17 +21958,17 @@ protected void doTrace(
 
 处理 HTTP TRACE 请求并回显请求头。此方法通常不被重写。
 
-## getLastModified
+#### getLastModified
 
-```
+```java
 protected long getLastModified(HttpServletRequest req)
 ```
 
 返回请求对象最后被修改的时间（以毫秒为单位，从1970年1月1日开始计算），如果时间未知则返回 -1。默认实现总是返回 -1。
 
-## service
+#### service
 
-```
+```java
 protected void service(
     HttpServletRequest req,
     HttpServletResponse resp)
@@ -22710,9 +21977,9 @@ protected void service(
 
 HTTP 请求的主要入口点。此方法确定请求方法（GET、POST 等）并将请求分派给适当的处理方法（doGet()、doPost() 等）。对于 GET 方法，它会尝试确定自上次请求以来资源是否已被修改。如果没有修改，则只返回一个 HTTP NOT_MODIFIED 状态行。此方法通常不被重写。
 
-## service
+#### service
 
-```
+```java
 public void service(
     ServletRequest req,
     ServletResponse res)
@@ -22721,135 +21988,129 @@ public void service(
 
 一个便利方法，它将协议无关的请求转换为 HTTP 请求（如果可能），然后调用特定于 HTTP 的 service() 方法。
 
-# HttpServletRequest
+## HttpServletRequest
 
-**全名：** javax.servlet.http.HttpServletRequest
+**全名：** `javax.servlet.http.HttpServletRequest`
 **类型：** 接口
-**父接口：** javax.servlet.ServletRequest
+**父接口：** `javax.servlet.ServletRequest`
 
 封装了关于 HTTP 请求的所有信息：其参数、属性、头信息和输入数据。
 
-# 方法
+### 方法
 
-## getAuthType
+#### getAuthType
 
-```
+```java
 public String getAuthType()
 ```
 
 如果服务器使用像 BASIC 或 SSL 这样的认证方案，则返回此方案的名称，否则返回 null。
 
-## getContextPath
+#### getContextPath
 
-```
+```java
 public String getContextPath()
 ```
 
 返回请求 URI 中指定 Servlet 上下文（应用程序）的部分。该路径以 "/" 字符开头，但不以 "/" 字符结尾。
 
-## getCookies
+#### getCookies
 
-```
+```java
 public Cookie[] getCookies()
 ```
 
 返回一个数组，包含客户端随此请求发送的所有 Cookie 对象。如果没有发送 Cookie，则返回 null。
 
-## getDateHeader
+#### getDateHeader
 
-```
+```java
 public long getDateHeader(String name)
 ```
 
 给定一个请求头名称，将对应的头值转换为一个 Date 对象，并作为 long 值返回（毫秒数，从1970年1月1日开始计算）。如果指定的请求头不存在，则返回 -1。
 
-## getHeader
+#### getHeader
 
-```
+```java
 public String getHeader(String name)
 ```
 
 返回指定请求头的字符串值，如果请求中未找到指定名称的头，则返回 null。
 
-## getHeaderNames
+#### getHeaderNames
 
-```
+```java
 public Enumeration getHeaderNames()
 ```
 
 返回在此请求中找到的所有头名称的枚举。如果没有头，则根据 Servlet 引擎的实现返回 null 或一个空枚举。
 
-## getHeaders
+#### getHeaders
 
-```
+```java
 public Enumeration getHeaders(String name)
 ```
 
 对于可以在请求中出现多次的头，此方法将返回头值的枚举。
 
-## getIntHeader
+#### getIntHeader
 
-```
+```java
 public int getIntHeader(String name)
 ```
 
 给定一个请求头名称，将对应的头值转换为整数并返回整数值。如果指定的请求头不存在，则返回 -1。
 
-## getMethod
+#### getMethod
 
-```
+```java
 public String getMethod()
 ```
 
 返回请求第一行中包含的 HTTP 方法，例如 GET 或 POST。
 
-## getPathInfo
+#### getPathInfo
 
-```
+```java
 public String getPathInfo()
 ```
 
 返回请求 URL 中紧跟在 Servlet 名称之后的部分，如果没有额外的路径信息，则返回 null。与 CGI 变量 PATH_INFO 相同。
 
-## getPathTranslated
+#### getPathTranslated
 
-```
+```java
 public String getPathTranslated()
 ```
 
 返回请求 URL 中紧跟在 Servlet 名称之后的部分，并将其转换为真实的文件系统路径，如果没有额外的路径信息，则返回 null。与 CGI 变量 PATH_TRANSLATED 相同。
 
-## getQueryString
+#### getQueryString
 
-```
+```java
 public String getQueryString()
 ```
 
 返回请求 URL 中跟在 "?" 之后的部分，如果没有查询字符串，则返回 null。通常只在 GET 请求中出现。与 CGI 变量 QUERY_STRING 相同。
 
-## getRemoteUser
+#### getRemoteUser
 
-```
+```java
 public String getRemoteUser()
 ```
 
 如果 HTTP 认证处于活动状态并且用户已登录，则返回用户名。否则返回 null。与 CGI 变量 REMOTE_USER 相同。
 
-## getRequestedSessionId
+#### getRequestedSessionId
 
-```
+```java
 public String getRequestedSessionId()
 ```
 
 返回客户端请求的会话 ID。注意：这不一定是当前有效的会话 ID。
 
-
-
-# JSP：完整参考
-
-返回客户端返回的会话ID值。通常与当前会话相同，但可能指代一个旧的已过期会话。如果请求未指定会话ID，则返回 `null`。
-
-# getRequestURI
+#### getRequestURI
 
 ```java
 public String getRequestURI()
@@ -22857,7 +22118,7 @@ public String getRequestURI()
 
 返回请求URL的子字符串，从协议名称（例如，`http://`）开始（如果存在），并延伸至但不包括查询字符串（查询字符串以 `"?"` 开头）。
 
-# getRequestURL
+#### getRequestURL
 
 ```java
 public StringBuffer getRequestURL()
@@ -22865,7 +22126,7 @@ public StringBuffer getRequestURL()
 
 重建用于请求的完整URL。包括协议、服务器名称、端口号（如果与默认值不同）和文件名。不包括查询字符串。
 
-# getServletPath
+#### getServletPath
 
 ```java
 public String getServletPath()
@@ -22873,7 +22134,7 @@ public String getServletPath()
 
 返回调用Servlet的该请求URL的部分。这包括Servlet名称或指向Servlet的路径，但不包括任何额外的路径信息或查询字符串。与CGI变量 `SCRIPT_NAME` 的值相同。
 
-# getSession
+#### getSession
 
 ```java
 public HttpSession getSession()
@@ -22881,7 +22142,7 @@ public HttpSession getSession()
 
 一个便捷方法，返回 `HttpSession.getSession(true)` 的值。
 
-# getSession
+#### getSession
 
 ```java
 public HttpSession getSession(boolean create)
@@ -22896,7 +22157,7 @@ public HttpSession getSession(boolean create)
 | true | false | existing session |
 | true | true | existing session |
 
-# getUserPrincipal
+#### getUserPrincipal
 
 ```java
 public Principal getUserPrincipal()
@@ -22904,7 +22165,7 @@ public Principal getUserPrincipal()
 
 如果用户已被认证，则返回该用户的 `java.security.Principal` 对象。否则，该方法返回 `null`。
 
-# isRequestedSessionIdFromCookie
+#### isRequestedSessionIdFromCookie
 
 ```java
 public boolean isRequestedSessionIdFromCookie()
@@ -22912,7 +22173,7 @@ public boolean isRequestedSessionIdFromCookie()
 
 如果请求会话ID是从Cookie接收到的，而不是作为请求URL的一部分发送的，则返回 `true`。
 
-# isRequestedSessionIdFromUrl
+#### isRequestedSessionIdFromUrl
 
 ```java
 public boolean isRequestedSessionIdFromUrl()
@@ -22920,7 +22181,7 @@ public boolean isRequestedSessionIdFromUrl()
 
 不再支持。请改用 `isRequestedSessionIdFromURL()`。
 
-# isRequestedSessionIdFromURL
+#### isRequestedSessionIdFromURL
 
 ```java
 public boolean isRequestedSessionIdFromURL()
@@ -22928,7 +22189,7 @@ public boolean isRequestedSessionIdFromURL()
 
 如果请求的会话ID作为请求URL的一部分传入，而不是从Cookie发送的，则返回 `true`。
 
-# isRequestedSessionIdValid
+#### isRequestedSessionIdValid
 
 ```java
 public boolean isRequestedSessionIdValid()
@@ -22936,7 +22197,7 @@ public boolean isRequestedSessionIdValid()
 
 如果请求指定了一个有效、活动会话的ID，则返回 `true`。
 
-# isUserInRole
+#### isUserInRole
 
 ```java
 public boolean isUserInRole(String role)
@@ -22944,7 +22205,7 @@ public boolean isUserInRole(String role)
 
 如果认证用户包含在部署描述符中的指定逻辑“角色”中，则返回 `true`。
 
-# HttpServletRequestWrapper
+## HttpServletRequestWrapper
 
 | **Full Name:** | `javax.servlet.http.HttpServletRequestWrapper` |
 | :--- | :--- |
@@ -22954,9 +22215,9 @@ public boolean isUserInRole(String role)
 
 此类是 `HttpServletRequest` 的一个具体实现，可以以Servlet引擎无关的方式进行覆盖，为请求对象提供额外功能。默认情况下，会直接查看对应的特定于Servlet引擎的方法。
 
-## 构造函数
+### 构造函数
 
-### HttpServletRequestWrapper
+#### HttpServletRequestWrapper
 
 ```java
 public HttpServletRequestWrapper(HttpServletRequest request)
@@ -22964,9 +22225,9 @@ public HttpServletRequestWrapper(HttpServletRequest request)
 
 创建一个包装给定请求的请求对象。
 
-## 方法
+### 方法
 
-### getAuthType
+#### getAuthType
 
 ```java
 public String getAuthType()
@@ -22974,7 +22235,7 @@ public String getAuthType()
 
 如果服务器使用像 `BASIC` 或 `SSL` 这样的身份验证方案，则返回此方案的名称，否则返回 `null`。
 
-### getContextPath
+#### getContextPath
 
 ```java
 public String getContextPath()
@@ -22982,15 +22243,15 @@ public String getContextPath()
 
 返回指定Servlet上下文（应用程序）的请求URI部分。路径以 "/" 字符开头，但不以此结尾。
 
-### getCookies
+#### getCookies
 
 ```java
-public Cookie getCookies()
+public Cookie[] getCookies()
 ```
 
 返回一个数组，包含客户端随此请求发送的所有 `Cookie` 对象。如果未发送任何Cookie，则返回 `null`。
 
-### getDateHeader
+#### getDateHeader
 
 ```java
 public long getDateHeader(String name)
@@ -22998,7 +22259,7 @@ public long getDateHeader(String name)
 
 给定一个请求头名称，将相应的头值转换为 `Date` 对象，该对象以 `long` 值（自1970年1月1日以来的毫秒数）返回。如果指定的请求头不存在，则返回 -1。
 
-### getHeader
+#### getHeader
 
 ```java
 public String getHeader(String name)
@@ -23006,7 +22267,7 @@ public String getHeader(String name)
 
 返回指定请求头的字符串值，如果在请求中找不到该名称的头，则返回 `null`。
 
-### getHeaderNames
+#### getHeaderNames
 
 ```java
 public Enumeration getHeaderNames()
@@ -23014,7 +22275,7 @@ public Enumeration getHeaderNames()
 
 返回在此请求中找到的所有头名称的 `Enumeration`。如果没有头，则根据Servlet引擎的不同，返回 `null` 或一个空的 `Enumeration`。
 
-### getHeaders
+#### getHeaders
 
 ```java
 public Enumeration getHeaders(String name)
@@ -23022,7 +22283,7 @@ public Enumeration getHeaders(String name)
 
 对于在请求中可能出现多次的头，此方法将返回头值的 `Enumeration`。
 
-### getIntHeader
+#### getIntHeader
 
 ```java
 public int getIntHeader(String name)
@@ -23030,7 +22291,7 @@ public int getIntHeader(String name)
 
 给定一个请求头名称，将相应的头值转换为整数并返回整数值。如果指定的请求头不存在，则返回 -1。
 
-### getMethod
+#### getMethod
 
 ```java
 public String getMethod()
@@ -23038,7 +22299,7 @@ public String getMethod()
 
 返回请求第一行中包含的HTTP方法，例如 GET 或 POST。
 
-### getPathInfo
+#### getPathInfo
 
 ```java
 public String getPathInfo()
@@ -23046,7 +22307,7 @@ public String getPathInfo()
 
 返回请求URL中跟在Servlet名称后面的子字符串，如果没有额外的路径信息，则返回 `null`。与CGI变量 `PATH_INFO` 相同。
 
-### getPathTranslated
+#### getPathTranslated
 
 ```java
 public String getPathTranslated()
@@ -23054,7 +22315,7 @@ public String getPathTranslated()
 
 返回请求URL中跟在Servlet名称后面的部分，该部分已转换为真实的文件系统路径，如果没有额外的路径信息，则返回 `null`。与CGI变量 `PATH_TRANSLATED` 相同。
 
-### getQueryString
+#### getQueryString
 
 ```java
 public String getQueryString()
@@ -23062,7 +22323,7 @@ public String getQueryString()
 
 返回请求URL中跟在 "?" 后面的子字符串，如果没有查询字符串，则返回 `null`。通常仅在GET请求中找到。与CGI变量 `QUERY_STRING` 相同。
 
-### getRemoteUser
+#### getRemoteUser
 
 ```java
 public String getRemoteUser()
@@ -23070,7 +22331,7 @@ public String getRemoteUser()
 
 如果HTTP身份验证处于活动状态且用户已登录，则返回用户名。否则返回 `null`。与CGI变量 `REMOTE_USER` 相同。
 
-### getRequestedSessionId
+#### getRequestedSessionId
 
 ```java
 public String getRequestedSessionId()
@@ -23078,7 +22339,7 @@ public String getRequestedSessionId()
 
 返回客户端返回的会话ID值。通常与当前会话相同，但可能指代一个旧的已过期会话。如果请求未指定会话ID，则返回 `null`。
 
-### getRequestURI
+#### getRequestURI
 
 ```java
 public String getRequestURI()
@@ -23086,7 +22347,7 @@ public String getRequestURI()
 
 返回请求URL的子字符串，从协议名称（例如，`http://`）开始（如果存在），并延伸至但不包括查询字符串（查询字符串以 `"?"` 开头）。
 
-### getRequestURL
+#### getRequestURL
 
 ```java
 public StringBuffer getRequestURL()
@@ -23094,7 +22355,7 @@ public StringBuffer getRequestURL()
 
 重建用于请求的完整URL。包括协议、服务器名称、端口号（如果与默认值不同）和文件名。不包括查询字符串。
 
-### getServletPath
+#### getServletPath
 
 ```java
 public String getServletPath()
@@ -23102,7 +22363,7 @@ public String getServletPath()
 
 返回调用Servlet的该请求URL的部分。这包括Servlet名称或指向Servlet的路径，但不包括任何额外的路径信息或查询字符串。与CGI变量 `SCRIPT_NAME` 的值相同。
 
-### getSession
+#### getSession
 
 ```java
 public HttpSession getSession()
@@ -23110,7 +22371,7 @@ public HttpSession getSession()
 
 一个便捷方法，返回 `HttpSession.getSession(true)` 的值。
 
-### getSession
+#### getSession
 
 ```java
 public HttpSession getSession(boolean create)
@@ -23125,7 +22386,7 @@ public HttpSession getSession(boolean create)
 | true | false | existing session |
 | true | true | existing session |
 
-### getUserPrincipal
+#### getUserPrincipal
 
 ```java
 public Principal getUserPrincipal()
@@ -23133,7 +22394,7 @@ public Principal getUserPrincipal()
 
 如果用户已被认证，则返回该用户的 `java.security.Principal` 对象。否则，该方法返回 `null`。
 
-### isRequestedSessionIdFromCookie
+#### isRequestedSessionIdFromCookie
 
 ```java
 public boolean isRequestedSessionIdFromCookie()
@@ -23141,7 +22402,7 @@ public boolean isRequestedSessionIdFromCookie()
 
 如果请求会话ID是从Cookie接收到的，而不是作为请求URL的一部分发送的，则返回 `true`。
 
-### isRequestedSessionIdFromUrl
+#### isRequestedSessionIdFromUrl
 
 ```java
 public boolean isRequestedSessionIdFromUrl()
@@ -23149,7 +22410,7 @@ public boolean isRequestedSessionIdFromUrl()
 
 返回包装请求对象上已弃用的 `isRequestedSessionIdFromUrl()` 方法的值。
 
-### isRequestedSessionIdFromURL
+#### isRequestedSessionIdFromURL
 
 ```java
 public boolean isRequestedSessionIdFromURL()
@@ -23157,7 +22418,7 @@ public boolean isRequestedSessionIdFromURL()
 
 如果请求的会话ID作为请求URL的一部分传入，而不是从Cookie发送的，则返回 `true`。
 
-### isRequestedSessionIdValid
+#### isRequestedSessionIdValid
 
 ```java
 public boolean isRequestedSessionIdValid()
@@ -23165,9 +22426,7 @@ public boolean isRequestedSessionIdValid()
 
 如果请求指定了一个有效、活动会话的ID，则返回 `true`。
 
-
-
-## isUserInRole
+#### isUserInRole
 
 ```java
 public boolean isUserInRole(String role)
@@ -23177,16 +22436,16 @@ public boolean isUserInRole(String role)
 
 ## HttpServletResponse
 
-| 全名： | javax.servlet.http.HttpServletResponse |
+| 全名： | `javax.servlet.http.HttpServletResponse` |
 | :--- | :--- |
 | 类型： | 接口 |
-| 超级接口： | javax.servlet.ServletResponse |
+| 超级接口： | `javax.servlet.ServletResponse` |
 
 封装了为HTTP请求生成的所有响应信息，包括响应头、状态码和输出流。
 
 ### 方法
 
-### addCookie
+#### addCookie
 
 ```java
 public void addCookie(Cookie cookie)
@@ -23194,7 +22453,7 @@ public void addCookie(Cookie cookie)
 
 为指定的Cookie写入一个Set-Cookie头。
 
-### addDateHeader
+#### addDateHeader
 
 ```java
 public void addDateHeader(String name, long date)
@@ -23202,13 +22461,21 @@ public void addDateHeader(String name, long date)
 
 为一个可以有多个值的HTTP头写入一个日期头。
 
-### addHeader
+#### addHeader
 
 ```java
 public void addHeader(String name, String value)
 ```
 
+为一个可以有多个值的HTTP头写入一个头。
+
+
+
+public void addHeader(String name, String value)
+
+```
 为一个可以有多个值的HTTP头写入一个通用头。
+```
 
 ### addIntHeader
 
@@ -23324,17 +22591,17 @@ public void setStatus(int sc, String sm)
 
 ## HttpServletResponseWrapper
 
-| 全名： | javax.servlet.http.HttpServletResponseWrapper |
+| 全名 | `javax.servlet.http.HttpServletResponseWrapper` |
 | :--- | :--- |
-| 类型： | 类 |
-| 继承自： | javax.servlet.ServletResponseWrapper |
-| 实现接口： | javax.servlet.http.HttpServletResponse |
+| 类型 | 类 |
+| 继承自 | `javax.servlet.ServletResponseWrapper` |
+| 实现接口 | `javax.servlet.http.HttpServletResponse` |
 
-HttpServletResponse的一个具体实现，可以被扩展以允许自定义响应对象。默认情况下，此类中的方法会查看Servlet引擎实现类中的对应方法。
+`HttpServletResponse` 的一个具体实现，可以被扩展以允许自定义响应对象。默认情况下，此类中的方法会查看Servlet引擎实现类中的对应方法。
 
 ### 构造方法
 
-### HttpServletResponseWrapper
+#### HttpServletResponseWrapper
 
 ```java
 public HttpServletResponseWrapper(HttpServletResponse response)
@@ -23344,7 +22611,7 @@ public HttpServletResponseWrapper(HttpServletResponse response)
 
 ### 方法
 
-### addCookie
+#### addCookie
 
 ```java
 public void addCookie(Cookie cookie)
@@ -23352,7 +22619,7 @@ public void addCookie(Cookie cookie)
 
 为指定的Cookie写入一个Set-Cookie头。
 
-### addDateHeader
+#### addDateHeader
 
 ```java
 public void addDateHeader(String name, long date)
@@ -23360,7 +22627,7 @@ public void addDateHeader(String name, long date)
 
 为一个可以有多个值的HTTP头写入一个日期头。
 
-### addHeader
+#### addHeader
 
 ```java
 public void addHeader(String name, String value)
@@ -23368,7 +22635,7 @@ public void addHeader(String name, String value)
 
 为一个可以有多个值的HTTP头写入一个通用头。
 
-### addIntHeader
+#### addIntHeader
 
 ```java
 public void addIntHeader(String name, int value)
@@ -23376,7 +22643,7 @@ public void addIntHeader(String name, int value)
 
 为一个可以有多个值的HTTP头写入一个整数头。
 
-### containsHeader
+#### containsHeader
 
 ```java
 public boolean containsHeader(String name)
@@ -23384,7 +22651,7 @@ public boolean containsHeader(String name)
 
 如果响应已经包含指定名称的头，则返回 `true`。
 
-### encodeRedirectUrl
+#### encodeRedirectUrl
 
 ```java
 public String encodeRedirectUrl(String url)
@@ -23392,7 +22659,7 @@ public String encodeRedirectUrl(String url)
 
 调用Servlet引擎特定类中已弃用的 `encodeRedirectUrl()` 方法。
 
-### encodeRedirectURL
+#### encodeRedirectURL
 
 ```java
 public String encodeRedirectURL(String url)
@@ -23400,7 +22667,7 @@ public String encodeRedirectURL(String url)
 
 支持会话跟踪，方法是可选地将编码后的会话ID作为参数附加到旨在与 `sendRedirect()` 一起使用的URL中。如果客户端支持Cookie，则不需要这样做。Servlet引擎会做出这个判断；通过此方法过滤要写入的URL总是安全的。
 
-### encodeUrl
+#### encodeUrl
 
 ```java
 public String encodeUrl(String url)
@@ -23408,7 +22675,7 @@ public String encodeUrl(String url)
 
 调用Servlet引擎特定类中已弃用的 `encodeUrl(String url)` 方法。
 
-### encodeURL
+#### encodeURL
 
 ```java
 public String encodeURL(String url)
@@ -23416,7 +22683,7 @@ public String encodeURL(String url)
 
 支持会话跟踪，方法是在必要时将编码后的会话ID作为参数附加到指定的URL中。如果客户端支持Cookie，则不需要这样做。Servlet引擎会做出这个判断；通过此方法过滤要写入的URL总是安全的。
 
-### sendError
+#### sendError
 
 ```java
 public void sendError(int sc) throws IOException
@@ -23424,7 +22691,7 @@ public void sendError(int sc) throws IOException
 
 将HTTP状态码设置为指定的值。调用此方法后，响应对象将被提交；任何进一步的写入操作都将无效。
 
-### sendError
+#### sendError
 
 ```java
 public void sendError(int sc, String msg) throws IOException
@@ -23432,7 +22699,7 @@ public void sendError(int sc, String msg) throws IOException
 
 将HTTP状态码设置为指定的值并设置状态消息。调用此方法后，响应对象将被提交；任何进一步的写入操作都将无效。
 
-### sendRedirect
+#### sendRedirect
 
 ```java
 public void sendRedirect(String location) throws IOException
@@ -23440,7 +22707,7 @@ public void sendRedirect(String location) throws IOException
 
 将HTTP状态码设置为302（临时重定向），并写入一个带有指定值的Location头。用户代理（Web浏览器）通常会解释此响应并自动请求新的URL。
 
-### setDateHeader
+#### setDateHeader
 
 ```java
 public void setDateHeader(String name, long date)
@@ -23448,7 +22715,7 @@ public void setDateHeader(String name, long date)
 
 写入一个具有指定名称和正确格式化日期值的响应头。
 
-### setHeader
+#### setHeader
 
 ```java
 public void setHeader(String name, String value)
@@ -23456,7 +22723,7 @@ public void setHeader(String name, String value)
 
 写入一个具有指定名称和值的响应头。
 
-### setIntHeader
+#### setIntHeader
 
 ```java
 public void setIntHeader(String name, int value)
@@ -23464,7 +22731,7 @@ public void setIntHeader(String name, int value)
 
 写入一个具有指定名称和字符串格式整数值的响应头。
 
-### setStatus
+#### setStatus
 
 ```java
 public void setStatus(int sc)
@@ -23472,7 +22739,7 @@ public void setStatus(int sc)
 
 设置此响应的状态码。
 
-### setStatus
+#### setStatus
 
 ```java
 public void setStatus(int sc, String sm)
@@ -23483,7 +22750,6 @@ public void setStatus(int sc, String sm)
 ## HttpSession
 
 **全名：** `javax.servlet.http.HttpSession`
-
 **类型：** 接口
 
 `HttpSession` 是一个存储库，用于存放属于用户浏览器会话的对象的命名引用。该存储库在用户请求之间在服务器上保持活动状态。会话有一个由服务器分配的唯一会话ID，客户端会跟踪并在每个后续请求中传回此ID。
@@ -23492,11 +22758,9 @@ public void setStatus(int sc, String sm)
 
 使用 `setAttribute()` 方法将对象存储在会话中，可以使用 `getAttribute()` 方法检索对象。如果会话中的对象实现了 `HttpSessionBindingListener` 接口，那么在它被绑定到会话或从会话解除绑定时，它将收到通知。
 
+### 方法
 
-
-## 方法
-
-### getAttribute
+#### getAttribute
 
 ```java
 public Object getAttribute(String name)
@@ -23504,7 +22768,7 @@ public Object getAttribute(String name)
 
 如果会话中存在指定名称的对象，则返回该对象；如果不存在，则返回 `null`。
 
-### getAttributeNames
+#### getAttributeNames
 
 ```java
 public Enumeration getAttributeNames()
@@ -23512,7 +22776,7 @@ public Enumeration getAttributeNames()
 
 返回一个 `Enumeration`，包含绑定到此会话的所有对象的名称。
 
-### getCreationTime
+#### getCreationTime
 
 ```java
 public long getCreationTime()
@@ -23520,7 +22784,7 @@ public long getCreationTime()
 
 返回会话创建时间，以毫秒为单位，自 1970 年 1 月 1 日起算。
 
-### getId
+#### getId
 
 ```java
 public String getId()
@@ -23528,7 +22792,7 @@ public String getId()
 
 返回会话标识符。
 
-### getLastAccessedTime
+#### getLastAccessedTime
 
 ```java
 public long getLastAccessedTime()
@@ -23536,7 +22800,7 @@ public long getLastAccessedTime()
 
 返回会话最后被访问的时间，以毫秒为单位，自 1970 年 1 月 1 日起算。
 
-### getMaxInactiveInterval
+#### getMaxInactiveInterval
 
 ```java
 public int getMaxInactiveInterval()
@@ -23544,9 +22808,9 @@ public int getMaxInactiveInterval()
 
 返回此会话在请求之间可保持活动状态的最大秒数。如果超过此时间间隔，servlet 引擎有权终止该会话。
 
-**注意** 某些 servlet 引擎错误地将此值视为毫秒或分钟。如果依赖此方法的正确性，应验证其行为。
+> **注意** 某些 servlet 引擎错误地将此值视为毫秒或分钟。如果依赖此方法的正确性，应验证其行为。
 
-### [已弃用] *getSessionContext*
+#### [已弃用] getSessionContext
 
 ```java
 public HttpSessionContext getSessionContext()
@@ -23554,31 +22818,31 @@ public HttpSessionContext getSessionContext()
 
 不再支持。
 
-### [已弃用] *getValue*
+#### [已弃用] getValue
 
 ```java
 public Object getValue(String name)
 ```
 
-不再支持。请改用 getAttribute(String name)。
+不再支持。请改用 `getAttribute(String name)`。
 
-### [已弃用] *getValueNames*
+#### [已弃用] getValueNames
 
 ```java
-public String getValueNames()
+public String[] getValueNames()
 ```
 
-不再支持。请改用 getAttributeNames()。
+不再支持。请改用 `getAttributeNames()`。
 
-### *invalidate*
+#### invalidate
 
 ```java
 public void invalidate()
 ```
 
-关闭会话，并为绑定到该会话的所有 HttpSessionBindingListener 对象调用 `valueUnbound()` 方法。
+关闭会话，并为绑定到该会话的所有 `HttpSessionBindingListener` 对象调用 `valueUnbound()` 方法。
 
-### *isNew*
+#### isNew
 
 ```java
 public boolean isNew()
@@ -23586,39 +22850,39 @@ public boolean isNew()
 
 如果会话已创建但客户端尚未使用该会话 ID 发出请求，则返回 true。
 
-### [已弃用] *putValue*
+#### [已弃用] putValue
 
 ```java
 public void putValue(String name, Object value)
 ```
 
-不再支持。请改用 setAttribute(String name, Object value)。
+不再支持。请改用 `setAttribute(String name, Object value)`。
 
-### removeAttribute
+#### removeAttribute
 
 ```java
 public void removeAttribute(String name)
 ```
 
-移除会话中具有指定名称的对象引用。如果该对象实现了 HttpSessionBindingListener 接口，servlet 引擎会调用其 valueUnbound() 方法。如果指定的值在会话中不存在，则忽略该操作。
+移除会话中具有指定名称的对象引用。如果该对象实现了 `HttpSessionBindingListener` 接口，servlet 引擎会调用其 `valueUnbound()` 方法。如果指定的值在会话中不存在，则忽略该操作。
 
-### [已弃用] removeValue
+#### [已弃用] removeValue
 
 ```java
 public void removeValue(String name)
 ```
 
-不再支持。请改用 removeAttribute(String name)。
+不再支持。请改用 `removeAttribute(String name)`。
 
-### setAttribute
+#### setAttribute
 
 ```java
 public void setAttribute(String name, Object value)
 ```
 
-将对象引用以指定名称存储在会话中。如果该对象实现了 HttpSessionBindingListener 接口，servlet 引擎会调用其 valueBound() 方法。
+将对象引用以指定名称存储在会话中。如果该对象实现了 `HttpSessionBindingListener` 接口，servlet 引擎会调用其 `valueBound()` 方法。
 
-### setMaxInactiveInterval
+#### setMaxInactiveInterval
 
 ```java
 public void setMaxInactiveInterval(int interval)
@@ -23630,7 +22894,7 @@ public void setMaxInactiveInterval(int interval)
 
 ## HttpSessionActivationListener
 
-- 全名：javax.servlet.http.HttpSessionActivationListener
+- 全名：`javax.servlet.http.HttpSessionActivationListener`
 - 类型：接口
 
 通过实现此接口，对象可以注册以接收会话激活和钝化事件的通知。
@@ -23655,9 +22919,9 @@ public void sessionWillPassivate(HttpSessionEvent se)
 
 ## HttpSessionAttributesListener
 
-- 全名：javax.servlet.http.HttpSessionAttributesListener
+- 全名：`javax.servlet.http.HttpSessionAttributesListener`
 - 类型：接口
-- 父接口：java.util.EventListener
+- 父接口：`java.util.EventListener`
 
 通过实现此接口，对象可以注册以接收属性添加/移除事件的通知。
 
@@ -23689,11 +22953,11 @@ public void attributeReplaced(HttpSessionBindingEvent se)
 
 ## HttpSessionBindingEvent
 
-- 全名：javax.servlet.http.HttpSessionBindingEvent
+- 全名：`javax.servlet.http.HttpSessionBindingEvent`
 - 类型：类
-- 继承自：javax.servlet.http.HttpSessionEvent
+- 继承自：`javax.servlet.http.HttpSessionEvent`
 
-作为参数传递给 HttpSessionBindingListener 的 valueBound() 和 valueUnbound() 方法的事件对象。通过使用事件对象中的方法，HttpSessionBindingListener 可以获取其绑定的名称以及对 HttpSession 本身的引用。
+作为参数传递给 `HttpSessionBindingListener` 的 `valueBound()` 和 `valueUnbound()` 方法的事件对象。通过使用事件对象中的方法，`HttpSessionBindingListener` 可以获取其绑定的名称以及对 `HttpSession` 本身的引用。
 
 ### 构造函数
 
@@ -23703,7 +22967,7 @@ public void attributeReplaced(HttpSessionBindingEvent se)
 public HttpSessionBindingEvent(HttpSession session, String name)
 ```
 
-为指定会话创建一个新的 HttpSessionBindingEvent 对象。参数 name 指示监听对象绑定到会话时所用的名称。
+为指定会话创建一个新的 `HttpSessionBindingEvent` 对象。参数 name 指示监听对象绑定到会话时所用的名称。
 
 #### HttpSessionBindingEvent
 
@@ -23711,7 +22975,7 @@ public HttpSessionBindingEvent(HttpSession session, String name)
 public HttpSessionBindingEvent(HttpSession session, String name, Object value)
 ```
 
-为指定会话创建一个新的 HttpSessionBindingEvent 对象。参数 name 指示监听对象绑定到会话时所用的名称，参数 value 包含其值。
+为指定会话创建一个新的 `HttpSessionBindingEvent` 对象。参数 name 指示监听对象绑定到会话时所用的名称，参数 value 包含其值。
 
 ### 方法
 
@@ -23723,7 +22987,7 @@ public String getName()
 
 返回对象在会话中已知的名称。
 
-#### **getSession**
+#### getSession
 
 ```java
 public HttpSession getSession()
@@ -23731,7 +22995,7 @@ public HttpSession getSession()
 
 返回监听对象绑定到或从中解除绑定的会话。
 
-#### **getValue**
+#### getValue
 
 ```java
 public Object getValue()
@@ -23741,15 +23005,15 @@ public Object getValue()
 
 ## HttpSessionBindingListener
 
-- 全名：javax.servlet.http.HttpSessionBindingListener
+- 全名：`javax.servlet.http.HttpSessionBindingListener`
 - 类型：接口
-- 父接口：java.util.EventListener
+- 父接口：`java.util.EventListener`
 
-实现此接口的对象会在绑定到 HttpSession 或从其解除绑定时收到通知。对象必须提供 valueBound() 和 valueUnbound() 方法，每个方法都有一个 HttpSessionBindingEvent 参数，允许对象确定其名称及其所属的会话。
+实现此接口的对象会在绑定到 `HttpSession` 或从其解除绑定时收到通知。对象必须提供 `valueBound()` 和 `valueUnbound()` 方法，每个方法都有一个 `HttpSessionBindingEvent` 参数，允许对象确定其名称及其所属的会话。
 
 ### 方法
 
-#### **valueBound**
+#### valueBound
 
 ```java
 public void valueBound(HttpSessionBindingEvent event)
@@ -23757,7 +23021,7 @@ public void valueBound(HttpSessionBindingEvent event)
 
 在对象绑定到会话时调用。
 
-#### **valueUnbound**
+#### valueUnbound
 
 ```java
 public void valueUnbound(HttpSessionBindingEvent event)
@@ -23767,14 +23031,14 @@ public void valueUnbound(HttpSessionBindingEvent event)
 
 ## HttpSessionContext
 
-- 全名：javax.servlet.http.HttpSessionContext
+- 全名：`javax.servlet.http.HttpSessionContext`
 - 类型：接口
 
 以前用于允许直接 servlet 间通信，此类现已弃用。
 
 ### 方法
 
-#### **[已弃用] *getIds***
+#### [已弃用] getIds
 
 ```java
 public Enumeration getIds()
@@ -23782,7 +23046,7 @@ public Enumeration getIds()
 
 不再支持。
 
-#### **[已弃用] *getSession***
+#### [已弃用] getSession
 
 ```java
 public HttpSession getSession(String sessionId)
@@ -23792,15 +23056,15 @@ public HttpSession getSession(String sessionId)
 
 ## HttpSessionEvent
 
-- 全名：javax.servlet.http.HttpSessionEvent
+- 全名：`javax.servlet.http.HttpSessionEvent`
 - 类型：类
-- 继承自：java.util.EventObject
+- 继承自：`java.util.EventObject`
 
 表示 Web 应用程序中会话更改的事件通知。
 
 ### 构造函数
 
-#### **HttpSessionEvent**
+#### HttpSessionEvent
 
 ```java
 public HttpSessionEvent(HttpSession source)
@@ -23810,7 +23074,7 @@ public HttpSessionEvent(HttpSession source)
 
 ### 方法
 
-#### **getSession**
+#### getSession
 
 ```java
 public HttpSession getSession()
@@ -23820,14 +23084,14 @@ public HttpSession getSession()
 
 ## HttpSessionListener
 
-- 全名：javax.servlet.http.HttpSessionListener
+- 全名：`javax.servlet.http.HttpSessionListener`
 - 类型：接口
 
-实现 HttpSessionListener 的类在会话被创建或失效时接收通知。
+实现 `HttpSessionListener` 的类在会话被创建或失效时接收通知。
 
 ### 方法
 
-#### **sessionCreated**
+#### sessionCreated
 
 ```java
 public void sessionCreated(HttpSessionEvent se)
@@ -23835,7 +23099,7 @@ public void sessionCreated(HttpSessionEvent se)
 
 在新会话被创建时调用。
 
-#### **sessionDestroyed**
+#### sessionDestroyed
 
 ```java
 public void sessionDestroyed(HttpSessionEvent se)
@@ -23845,26 +23109,24 @@ public void sessionDestroyed(HttpSessionEvent se)
 
 ## HttpUtils
 
-- 全名：javax.servlet.http.HttpUtils
+- 全名：`javax.servlet.http.HttpUtils`
 - 类型：类
 
 一个提供在 HTTP servlet 中常用方法的实用工具类。
 
+### 构造方法
 
-
-## 构造方法
-
-### HttpUtils
+#### HttpUtils
 
 ```java
 public HttpUtils()
 ```
 
-创建一个新的 HttpUtils 对象。
+创建一个新的 `HttpUtils` 对象。
 
-## 方法
+### 方法
 
-### getRequestURL
+#### getRequestURL
 
 ```java
 public static StringBuffer getRequestURL(HttpServletRequest req)
@@ -23872,21 +23134,21 @@ public static StringBuffer getRequestURL(HttpServletRequest req)
 
 返回指定请求所使用的完整 URL。包括协议、服务器名称、端口号（如果非默认端口）和文件名。不包括查询字符串。
 
-### parsePostData
+#### parsePostData
 
 ```java
 public static Hashtable parsePostData(int len, ServletInputStream in)
 ```
 
-从 Servlet 请求的输入流中读取指定长度的数据，并通过调用 parseQueryString() 将其解析为键/值对。
+从 Servlet 请求的输入流中读取指定长度的数据，并通过调用 `parseQueryString()` 将其解析为键/值对。
 
-### parseQueryString
+#### parseQueryString
 
 ```java
 public static Hashtable parseQueryString(String s)
 ```
 
-给定一个包含 URL 编码参数和值的查询字符串，返回一个包含已解析名称和值的 Hashtable。在 Hashtable 中，参数名称是键，对应的值是一个字符串数组。如果参数只出现一次，则数组长度为一；否则，数组中会有多个条目。有关解码的具体细节，请参阅 java.net.URLEncoder。
+给定一个包含 URL 编码参数和值的查询字符串，返回一个包含已解析名称和值的 Hashtable。在 Hashtable 中，参数名称是键，对应的值是一个字符串数组。如果参数只出现一次，则数组长度为一；否则，数组中会有多个条目。有关解码的具体细节，请参阅 `java.net.URLEncoder`。
 
 ## 附录 B
 
@@ -23912,9 +23174,9 @@ public static Hashtable parseQueryString(String s)
 
 | 属性 | 值 |
 | :--- | :--- |
-| 全名： | `javax.servlet.jsp.HttpJspPage` |
-| 类型： | 接口 |
-| 父接口： | `javax.servlet.jsp.JspPage` |
+| 全名 | `javax.servlet.jsp.HttpJspPage` |
+| 类型 | 接口 |
+| 父接口 | `javax.servlet.jsp.JspPage` |
 
 一个由 JSP 引擎生成的 HTTP 特定类实现的 `JspPage` 子接口。JSP 引擎将自动创建一个包含页面中定义的所有脚本代码的 `_jspService()` 方法。JSP 作者不应重写此方法。
 
@@ -23935,8 +23197,8 @@ JSP 页面的主体。JSP 作者*不应*定义此方法，因为它将由 JSP �
 
 | 属性 | 值 |
 | :--- | :--- |
-| **全名：** | `javax.servlet.jsp.JspEngineInfo` |
-| **类型：** | 抽象类 |
+| 全名 | `javax.servlet.jsp.JspEngineInfo` |
+| 类型 | 抽象类 |
 
 一个提供有关 JSP 引擎信息的类。此类的实例由 `JspFactory.getEngineInfo()` 方法返回。
 
@@ -23962,9 +23224,9 @@ public abstract String getSpecificationVersion()
 
 | 属性 | 值 |
 | :--- | :--- |
-| **全名：** | `javax.servlet.jsp.JspException` |
-| **类型：** | 类 |
-| **继承自：** | `java.lang.Exception` |
+| 全名 | `javax.servlet.jsp.JspException` |
+| 类型 | 类 |
+| 继承自 | `java.lang.Exception` |
 
 JSP 异常的通用基类。自定义标签类中的许多方法会抛出此异常。
 
@@ -24016,8 +23278,8 @@ public Throwable getRootCause()
 
 | 属性 | 值 |
 | :--- | :--- |
-| 全名： | `javax.servlet.jsp.JspFactory` |
-| 类型： | 抽象类 |
+| 全名 | `javax.servlet.jsp.JspFactory` |
+| 类型 | 抽象类 |
 
 一个提供用于创建支持 JSP 环境所必需对象的工厂方法的类。包括一个用于分配默认 `JspFactory` 的静态方法。
 
@@ -24127,11 +23389,11 @@ public void jspInit()
 
 | 属性 | 值 |
 | :--- | :--- |
-| 全名： | `javax.servlet.jsp.JspTagException` |
-| 类型： | 类 |
-| 继承自： | `javax.servlet.jsp.JspException` |
+| 全名 | `javax.servlet.jsp.JspTagException` |
+| 类型 | 类 |
+| 继承自 | `javax.servlet.jsp.JspException` |
 
-用于标签处理器中以表示致命错误的 `JspException` 子接口。
+用于标签处理器中以表示致命错误的 `JspException` 子类。
 
 #### 构造方法
 
@@ -24155,9 +23417,9 @@ public JspTagException(String msg)
 
 | 属性 | 值 |
 | :--- | :--- |
-| 全名： | `javax.servlet.jsp.JspWriter` |
-| 类型： | 抽象类 |
-| 继承自： | `java.io.Writer` |
+| 全名 | `javax.servlet.jsp.JspWriter` |
+| 类型 | 抽象类 |
+| 继承自 | `java.io.Writer` |
 
 用于写入 JSP 输出的 `java.io.Writer` 子类。其作用主要与 `java.io.PrintWriter` 相同。此类由生成的 `_jspService()` 通过调用底层 Servlet 的 `getWriter()` 方法实例化，这使得之后调用 `getOutputStream()` 非法。隐式变量 `out` 是此类的一个实例。
 
@@ -24195,365 +23457,358 @@ public abstract void flush() throws IOException
 
 刷新输出流。
 
+##### getBufferSize
 
-
-## getBufferSize
-
-```
+```java
 public int getBufferSize()
 ```
 
 返回实际使用的缓冲区大小。
 
-## getRemaining
+##### getRemaining
 
-```
+```java
 public abstract int getRemaining()
 ```
 
 返回缓冲区中未使用的剩余字节数。
 
-## isAutoFlush
+##### isAutoFlush
 
-```
+```java
 public boolean isAutoFlush()
 ```
 
 返回一个指示，表明是否设置了 JSP 的 autoFlush 标志。
 
-## newLine
+##### newLine
 
-```
+```java
 public abstract void newLine() throws IOException
 ```
 
 写入系统的换行符字符串。
 
-## print
+##### print
 
-```
+```java
 public abstract void print(boolean b) throws IOException
 ```
 
 打印一个布尔值。
 
-## print
+##### print
 
-```
+```java
 public abstract void print(char c) throws IOException
 ```
 
 打印一个字符值。
 
-## print
+##### print
 
-```
+```java
 public abstract void print(char[] s) throws IOException
 ```
 
 打印一个字符数组。
 
-# JSP：完整参考
+##### print
 
-## print
-
-```
+```java
 public abstract void print(double d) throws IOException
 ```
 
 打印一个双精度浮点数。
 
-## print
+##### print
 
-```
+```java
 public abstract void print(float f) throws IOException
 ```
 
 打印一个单精度浮点数。
 
-## print
+##### print
 
-```
+```java
 public abstract void print(int i) throws IOException
 ```
 
 打印一个整数值。
 
-## print
+##### print
 
-```
+```java
 public abstract void print(long l) throws IOException
 ```
 
 打印一个长整数值。
 
-## print
+##### print
 
-```
+```java
 public abstract void print(Object obj) throws IOException
 ```
 
 使用对象的 `toString()` 方法打印一个对象。
 
-## print
+##### print
 
-```
+```java
 public abstract void print(String s) throws IOException
 ```
 
 打印一个字符串。
 
-## println
+##### println
 
-```
+```java
 public abstract void println() throws IOException
 ```
 
 打印系统的换行符字符。
 
-## println
+##### println
 
-```
+```java
 public abstract void println(boolean x) throws IOException
 ```
 
 打印一个布尔值，后跟一个换行符。
 
-## println
+##### println
 
-```
+```java
 public abstract void println(char x) throws IOException
 ```
 
 打印一个字符值，后跟一个换行符。
 
-## println
+##### println
 
-```
+```java
 public abstract void println(char[] x) throws IOException
 ```
 
 打印一个字符数组，后跟一个换行符。
 
-## println
+##### println
 
-```
+```java
 public abstract void println(double x) throws IOException
 ```
 
 打印一个双精度浮点数，后跟一个换行符。
 
-## println
+##### println
 
-```
+```java
 public abstract void println(float x) throws IOException
 ```
 
 打印一个单精度浮点数，后跟一个换行符。
 
-## println
+##### println
 
-```
+```java
 public abstract void println(int x) throws IOException
 ```
 
 打印一个整数，后跟一个换行符。
 
-## println
+##### println
 
-```
+```java
 public abstract void println(long x) throws IOException
 ```
 
 打印一个长整数，后跟一个换行符。
 
-## println
+##### println
 
-```
+```java
 public abstract void println(Object x) throws IOException
 ```
 
 打印一个对象，后跟一个换行符。
 
-## println
+##### println
 
-```
+```java
 public abstract void println(String x) throws IOException
 ```
 
 打印一个字符串，后跟一个换行符。
 
-# PageContext
+### PageContext
 
 **全名：** `javax.servlet.jsp.PageContext`
 **类型：** 抽象类
 
 PageContext 是一个包装对象，它封装了处理单个请求的 JSP 的所有细节。它包含用于初始化和释放会话、写入器、请求和响应对象的方法。它还提供了在 JSP 可访问的各种命名空间中设置和检索属性的方法。
 
-PageContext 对象由 JSPFactory 创建和初始化，当其 `getPageContext()` 方法被调用时创建，当其 `releasePageContext()` 方法被调用时释放。这两个方法调用由 JSP 引擎生成的代码自动执行。
+PageContext 对象由 JspFactory 创建和初始化，当其 `getPageContext()` 方法被调用时创建，当其 `releasePageContext()` 方法被调用时释放。这两个方法调用由 JSP 引擎生成的代码自动执行。
 
-## 构造函数
+#### 构造函数
 
-### PageContext
+##### PageContext
 
-```
+```java
 public PageContext()
 ```
 
 创建一个新的 PageContext 对象。
 
-## 方法
+#### 方法
 
-### findAttribute
+##### findAttribute
 
-```
+```java
 public abstract Object findAttribute(String name)
 ```
 
 按顺序在页面、请求、会话和应用程序作用域中搜索指定的属性，返回第一个匹配项的值。如果在任何作用域中都不存在该属性，则返回 null。
 
-### forward
+##### forward
 
-```
+```java
 public abstract void forward(String relativeUrlPath)
     throws ServletException, IOException
 ```
 
 调用与此 servlet 关联的 `RequestDispatcher` 的 `forward()` 方法。详情请参见 `javax.servlet.RequestDispatcher`。
 
-### getAttribute
+##### getAttribute
 
-```
+```java
 public abstract Object getAttribute(String name)
 ```
 
 返回页面作用域中指定的属性，如果属性不存在，则返回 null。
 
-### getAttribute
+##### getAttribute
 
-```
+```java
 public abstract Object getAttribute(String name, int scope)
 ```
 
 返回指定作用域中指定的属性，如果属性不存在，则返回 null。作用域选择由以下常量指示：
 
-- PageContext.PAGE_SCOPE
-- PageContext.REQUEST_SCOPE
-- PageContext.SESSION_SCOPE
-- PageContext.APPLICATION_SCOPE
+- `PageContext.PAGE_SCOPE`
+- `PageContext.REQUEST_SCOPE`
+- `PageContext.SESSION_SCOPE`
+- `PageContext.APPLICATION_SCOPE`
 
-### getAttributeNamesInScope
+##### getAttributeNamesInScope
 
-```
-public abstract Enumeration
-    getAttributeNamesInScope(int scope)
+```java
+public abstract Enumeration getAttributeNamesInScope(int scope)
 ```
 
 返回指定作用域中属性名称的 `Enumeration`。作用域值列表请参见 `getAttribute(String name, int scope)`。
 
-### getAttributesScope
+##### getAttributesScope
 
-```
+```java
 public abstract int getAttributesScope(String name)
 ```
 
 返回具有指定名称的第一个属性的作用域。作用域值列表请参见 `getAttribute(String name, int scope)`。
 
-### getException
+##### getException
 
-```
+```java
 public abstract Exception getException()
 ```
 
 返回传递给 ErrorPage 的 Exception 对象。
 
-### getOut
+##### getOut
 
-```
+```java
 public abstract JspWriter getOut()
 ```
 
 返回此响应的 JspWriter。
 
-### getPage
+##### getPage
 
-```
+```java
 public abstract Object getPage()
 ```
 
 返回与此 PageContext 关联的 servlet。
 
-### getRequest
+##### getRequest
 
-```
+```java
 public abstract ServletRequest getRequest()
 ```
 
 返回与此 PageContext 关联的 ServletRequest。
 
-### getResponse
+##### getResponse
 
-```
+```java
 public abstract ServletResponse getResponse()
 ```
 
 返回与此 PageContext 关联的 ServletResponse。
 
-### getServletConfig
+##### getServletConfig
 
-```
+```java
 public abstract ServletConfig getServletConfig()
 ```
 
 返回与此 PageContext 关联的 ServletConfig。
 
-### getServletContext
+##### getServletContext
 
-```
+```java
 public abstract ServletContext getServletContext()
 ```
 
 返回与此 `PageContext` 关联的 `ServletContext`。
 
-### getSession
+##### getSession
 
-```
+```java
 public abstract HttpSession getSession()
 ```
 
 返回此请求的 `HttpSession`，如果不存在会话，则返回 null。
 
-### handlePageException
+##### handlePageException
 
-```
-public abstract void handlePageException(Exception e) throws ServletException, IOException;
+```java
+public abstract void handlePageException(Exception e) throws ServletException, IOException
 ```
 
 用于处理当前页面抛出的未处理异常。如果存在活动的 `ErrorPage`，则调用它。
 
 > **注意** 虽然此方法未被弃用，但 `handlePageException(Throwable t)` 更通用，应使用此方法代替该方法。
 
-### handlePageException
+##### handlePageException
 
-```
+```java
 public abstract void handlePageException(Throwable t) throws ServletException, IOException
 ```
 
 用于处理当前页面抛出的未处理异常。如果存在活动的 `ErrorPage`，则调用它。
 
-### include
+##### include
 
-```
+```java
 public abstract void include(String relativeUrlPath) throws ServletException, IOException
 ```
 
 调用与此 servlet 关联的 `RequestDispatcher` 的 `include()` 方法。详情请参见 `javax.servlet.RequestDispatcher`。
 
-# JSP：完整参考
+##### initialize
 
-## initialize
-
-```
+```java
 public abstract void initialize(
     Servlet servlet,
     ServletRequest request,
@@ -24562,39 +23817,36 @@ public abstract void initialize(
     boolean needsSession,
     int bufferSize,
     boolean autoFlush)
-  throws IOException, IllegalStateException,
-    IllegalArgumentException
+  throws IOException, IllegalStateException, IllegalArgumentException
 ```
 
 存储 `servlet`、`request`、`response`、`errorPageURL`、`needsSession`、`bufferSize` 和 `autoFlush` 属性，并使相应的隐式变量对 JSP 可用。此方法由 `getPageContext()` 方法调用，不应由 JSP 作者直接调用。
 
-## popBody
+##### popBody
 
-```
+```java
 public JspWriter popBody()
 ```
 
 恢复由先前的 `pushBody()` 保存的 `JspWriter`，并更新 `out` 隐式变量和 PageContext "out" 属性的值。
 
-## pushBody
+##### pushBody
 
-```
+```java
 public BodyContent pushBody()
 ```
 
 保存当前的 `JspWriter` 并创建一个新的 `BodyContent` 对象，使其成为 PageContext "out" 属性和 `out` 隐式变量的值。
 
-## release
+##### release
 
-```
+```java
 public abstract void release()
 ```
 
 执行 `initialize` 的反向操作，释放 PageContext 及其获取的资源。此方法由 `releasePageContext()` 方法调用，不应由 JSP 作者直接调用。
 
-
-
-## removeAttribute
+##### removeAttribute
 
 ```java
 public abstract void removeAttribute(String name)
@@ -24602,7 +23854,7 @@ public abstract void removeAttribute(String name)
 
 按页面、请求、会话和应用程序作用域（按此顺序）搜索指定属性，并移除第一个匹配的属性。
 
-## removeAttribute
+##### removeAttribute
 
 ```java
 public abstract void removeAttribute(String name, int scope)
@@ -24615,7 +23867,7 @@ public abstract void removeAttribute(String name, int scope)
 - `PageContext.SESSION_SCOPE`
 - `PageContext.APPLICATION_SCOPE`
 
-## setAttribute
+##### setAttribute
 
 ```java
 public abstract void setAttribute(String name, Object attribute)
@@ -24623,7 +23875,7 @@ public abstract void setAttribute(String name, Object attribute)
 
 设置具有页面作用域的指定属性。`setAttribute(String name, Object o, int scope)` 可用于在其他作用域中设置属性。
 
-## setAttribute
+##### setAttribute
 
 ```java
 public abstract void setAttribute(String name, Object o, int scope)
@@ -24917,11 +24169,9 @@ public void setParent(Tag t)
 
 一个描述标签属性信息的类，在翻译时可用。
 
+#### 构造方法
 
-
-## 构造方法
-
-## TagAttributeInfo
+##### TagAttributeInfo
 
 ```java
 public TagAttributeInfo(
@@ -24933,9 +24183,9 @@ public TagAttributeInfo(
 
 创建一个新的 TagAttributeInfo 实例。旨在仅从 TagLibrary 对象中的代码调用。
 
-## 方法
+#### 方法
 
-## canBeRequestTime
+##### canBeRequestTime
 
 ```java
 public boolean canBeRequestTime()
@@ -24943,7 +24193,7 @@ public boolean canBeRequestTime()
 
 如果此属性可以持有请求时值，则返回 true。
 
-## getIdAttribute
+##### getIdAttribute
 
 ```java
 public static TagAttributeInfo getIdAttribute(TagAttributeInfo[] a)
@@ -24951,7 +24201,7 @@ public static TagAttributeInfo getIdAttribute(TagAttributeInfo[] a)
 
 一个工具方法，用于在 TagAttributeInfo 对象数组中搜索名为 "id" 的属性。
 
-## getName
+##### getName
 
 ```java
 public String getName()
@@ -24959,7 +24209,7 @@ public String getName()
 
 返回属性名称。
 
-## getTypeName
+##### getTypeName
 
 ```java
 public String getTypeName()
@@ -24967,7 +24217,7 @@ public String getTypeName()
 
 以字符串形式返回属性类型。
 
-## isRequired
+##### isRequired
 
 ```java
 public boolean isRequired()
@@ -24975,7 +24225,7 @@ public boolean isRequired()
 
 如果属性是必需的，则返回 true。
 
-## toString
+##### toString
 
 ```java
 public String toString()
@@ -24983,18 +24233,18 @@ public String toString()
 
 返回格式化为字符串的对象表示。
 
-## TagData
+### TagData
 
-| 全名： | `javax.servlet.jsp.tagext.TagData` |
+| 全名 | `javax.servlet.jsp.tagext.TagData` |
 | :--- | :--- |
-| 类型： | 类 |
-| 实现接口： | `java.lang.Cloneable` |
+| 类型 | 类 |
+| 实现接口 | `java.lang.Cloneable` |
 
 包含关于标签属性的翻译时信息。仅供 JSP 容器使用。
 
-## 构造方法
+#### 构造方法
 
-### TagData
+##### TagData
 
 ```java
 public TagData(Hashtable attrs)
@@ -25002,7 +24252,7 @@ public TagData(Hashtable attrs)
 
 从哈希表创建一个新的 TagData 对象。
 
-### TagData
+##### TagData
 
 ```java
 public TagData(Object[][] atts)
@@ -25010,17 +24260,17 @@ public TagData(Object[][] atts)
 
 从属性/值对的二维数组创建一个新的 TagData 对象。
 
-## 方法
+#### 方法
 
-### getAttribute
+##### getAttribute
 
 ```java
 public Object getAttribute(String attName)
 ```
 
-返回具有指定名称的属性。如果值必须在请求时指定，也可以返回 REQUEST_TIME_VALUE，如果标签中未指定该属性，则返回 null。
+返回具有指定名称的属性。如果值必须在请求时指定，也可以返回 `REQUEST_TIME_VALUE`，如果标签中未指定该属性，则返回 null。
 
-### getAttributes
+##### getAttributes
 
 ```java
 public Enumeration getAttributes()
@@ -25028,7 +24278,7 @@ public Enumeration getAttributes()
 
 返回属性的枚举。
 
-### getAttributeString
+##### getAttributeString
 
 ```java
 public String getAttributeString(String attName)
@@ -25036,7 +24286,7 @@ public String getAttributeString(String attName)
 
 以字符串形式返回属性的值对象。
 
-### getId
+##### getId
 
 ```java
 public String getId()
@@ -25044,7 +24294,7 @@ public String getId()
 
 如果已指定，返回 id 属性的值。
 
-### setAttribute
+##### setAttribute
 
 ```java
 public void setAttribute(String attName, Object value)
@@ -25052,17 +24302,16 @@ public void setAttribute(String attName, Object value)
 
 将属性设置为指定的值。
 
-## TagExtraInfo
+### TagExtraInfo
 
 **全名：** `javax.servlet.jsp.tagext.TagExtraInfo`
-
 **类型：** 抽象类
 
 需要定义变量或对其属性执行验证的标签，必须定义一个继承自 TagExtraInfo 类的类。此子类在标签库描述符中与自定义标签关联。
 
-## 构造方法
+#### 构造方法
 
-### TagExtraInfo
+##### TagExtraInfo
 
 ```java
 public TagExtraInfo()
@@ -25070,9 +24319,9 @@ public TagExtraInfo()
 
 创建一个新的 TagExtraInfo 对象。
 
-## 方法
+#### 方法
 
-### getTagInfo
+##### getTagInfo
 
 ```java
 public final TagInfo getTagInfo()
@@ -25080,7 +24329,7 @@ public final TagInfo getTagInfo()
 
 返回此类的 TagInfo。
 
-### getVariableInfo
+##### getVariableInfo
 
 ```java
 public VariableInfo getVariableInfo(TagData data)
@@ -25088,7 +24337,7 @@ public VariableInfo getVariableInfo(TagData data)
 
 基于 data 参数中的属性名和值列表，构建一个 VariableInfo 对象数组，描述每个要创建的脚本变量的名称、类型、存在性和作用域。
 
-### isValid
+##### isValid
 
 ```java
 public boolean isValid(TagData data)
@@ -25096,7 +24345,7 @@ public boolean isValid(TagData data)
 
 如果 TagData 参数中引用的属性有效，则返回 true。
 
-### setTagInfo
+##### setTagInfo
 
 ```java
 public final void setTagInfo(TagInfo tagInfo)
@@ -25104,17 +24353,16 @@ public final void setTagInfo(TagInfo tagInfo)
 
 设置此类的 TagInfo。
 
-## TagInfo
+### TagInfo
 
 **全名：** `javax.servlet.jsp.tagext.TagInfo`
-
 **类型：** 类
 
 标签库描述符中标签元素的对象表示。
 
-## 构造方法
+#### 构造方法
 
-### TagInfo
+##### TagInfo
 
 ```java
 public TagInfo(
@@ -25129,7 +24377,7 @@ public TagInfo(
 
 从 JSP 1.1 格式的标签库描述符创建一个新的 TagInfo 对象。
 
-### TagInfo
+##### TagInfo
 
 ```java
 public TagInfo(
@@ -25148,9 +24396,9 @@ public TagInfo(
 
 从 JSP 1.2 格式的标签库描述符创建一个新的 TagInfo 对象。
 
-## 方法
+#### 方法
 
-### getAttributes
+##### getAttributes
 
 ```java
 public TagAttributeInfo[] getAttributes()
@@ -25158,7 +24406,7 @@ public TagAttributeInfo[] getAttributes()
 
 返回描述此标签属性的数组，如果没有属性，则返回 `null`。
 
-### getBodyContent
+##### getBodyContent
 
 ```java
 public String getBodyContent()
@@ -25166,7 +24414,7 @@ public String getBodyContent()
 
 返回标签库描述符中指定的此标签的 `bodycontent` 属性。
 
-### getDisplayName
+##### getDisplayName
 
 ```java
 public String getDisplayName()
@@ -25174,7 +24422,7 @@ public String getDisplayName()
 
 返回标签库描述符中指定的此标签的 `displayName` 属性。
 
-### getInfoString
+##### getInfoString
 
 ```java
 public String getInfoString()
@@ -25182,7 +24430,7 @@ public String getInfoString()
 
 返回标签库描述符中指定的此标签的 `info` 元素。
 
-### getLargeIcon
+##### getLargeIcon
 
 ```java
 public String getLargeIcon()
@@ -25190,7 +24438,7 @@ public String getLargeIcon()
 
 返回标签库描述符中指定的此标签的大图标路径。
 
-### getSmallIcon
+##### getSmallIcon
 
 ```java
 public String getSmallIcon()
@@ -25198,7 +24446,7 @@ public String getSmallIcon()
 
 返回标签库描述符中指定的此标签的小图标路径。
 
-### getTagClassName
+##### getTagClassName
 
 ```java
 public String getTagClassName()
@@ -25206,7 +24454,7 @@ public String getTagClassName()
 
 返回标签处理程序类的名称。
 
-### getTagExtraInfo
+##### getTagExtraInfo
 
 ```java
 public TagExtraInfo getTagExtraInfo()
@@ -25214,7 +24462,7 @@ public TagExtraInfo getTagExtraInfo()
 
 返回标签额外信息类的名称。
 
-### getTagLibrary
+##### getTagLibrary
 
 ```java
 public TagLibraryInfo getTagLibrary()
@@ -25222,7 +24470,7 @@ public TagLibraryInfo getTagLibrary()
 
 返回此标签的 TagLibraryInfo 对象的引用。
 
-### getTagName
+##### getTagName
 
 ```java
 public String getTagName()
@@ -25230,7 +24478,7 @@ public String getTagName()
 
 返回标签名称。
 
-### getTagVariableInfos
+##### getTagVariableInfos
 
 ```java
 public TagVariableInfo getTagVariableInfos()
@@ -25238,7 +24486,7 @@ public TagVariableInfo getTagVariableInfos()
 
 返回与此 TagInfo 关联的 TagVariableInfo 对象。
 
-### getVariableInfo
+##### getVariableInfo
 
 ```java
 public VariableInfo getVariableInfo(TagData data)
@@ -25246,7 +24494,7 @@ public VariableInfo getVariableInfo(TagData data)
 
 返回此标签的 VariableInfo 对象的引用。
 
-### isValid
+##### isValid
 
 ```java
 public boolean isValid(TagData data)
@@ -25254,7 +24502,7 @@ public boolean isValid(TagData data)
 
 返回关联的 `TagExtraInfo` 类的 `isValid()` 方法的求值结果。
 
-### setTagExtraInfo
+##### setTagExtraInfo
 
 ```java
 public void setTagExtraInfo(TagExtraInfo tei)
@@ -25262,7 +24510,7 @@ public void setTagExtraInfo(TagExtraInfo tei)
 
 存储对此标签的 `TagExtraInfo` 的引用。
 
-### setTagLibrary
+##### setTagLibrary
 
 ```java
 public void setTagLibrary(TagLibraryInfo tl)
@@ -25270,7 +24518,7 @@ public void setTagLibrary(TagLibraryInfo tl)
 
 设置 `TagLibraryInfo` 属性。
 
-### toString
+##### toString
 
 ```java
 public String toString()
@@ -25278,17 +24526,16 @@ public String toString()
 
 返回用于调试的对象字符串表示。
 
-## TagLibraryInfo
+### TagLibraryInfo
 
 **全名：** `javax.servlet.jsp.tagext.TagLibraryInfo`
-
 **类型：** 抽象类
 
 封装与 taglib 指令及其底层标签库描述符（TLD）关联信息的类。
 
-## 方法
+#### 方法
 
-### getInfoString
+##### getInfoString
 
 ```java
 public String getInfoString()
@@ -25296,7 +24543,7 @@ public String getInfoString()
 
 从 TLD 返回 `info` 属性。
 
-### getPrefixString
+##### getPrefixString
 
 ```java
 public String getPrefixString()
@@ -25304,7 +24551,7 @@ public String getPrefixString()
 
 返回在 taglib 指令中分配的前缀。
 
-### getReliableURN
+##### getReliableURN
 
 ```java
 public String getReliableURN()
@@ -25312,7 +24559,7 @@ public String getReliableURN()
 
 从 TLD 返回 reliableURL 属性。
 
-### getRequiredVersion
+##### getRequiredVersion
 
 ```java
 public String getRequiredVersion()
@@ -25320,7 +24567,7 @@ public String getRequiredVersion()
 
 返回所需的 JSP 容器版本。
 
-### getShortName
+##### getShortName
 
 ```java
 public String getShortName()
@@ -25328,7 +24575,7 @@ public String getShortName()
 
 从 TLD 返回 short name 属性。
 
-### getTag
+##### getTag
 
 ```java
 public TagInfo getTag(String shortname)
@@ -25336,7 +24583,7 @@ public TagInfo getTag(String shortname)
 
 返回与给定标签名称关联的 TagInfo 对象。
 
-### getTags
+##### getTags
 
 ```java
 public TagInfo[] getTags()
@@ -25344,7 +24591,7 @@ public TagInfo[] getTags()
 
 返回此标签库中定义的所有标签的 TagInfo 对象数组。
 
-### getURI
+##### getURI
 
 ```java
 public String getURI()
@@ -25352,19 +24599,16 @@ public String getURI()
 
 返回 taglib 指令中 uri 属性的值。
 
-## 附录 B：JSP API 版本 1.2
-
-## TagLibraryValidator
+### TagLibraryValidator
 
 **全名：** `javax.servlet.jsp.tagext.TagLibraryValidator`
-
 **类型：** 抽象类
 
 一个验证器类，可以在 TLD 中与 JSP 页面关联。验证器对 JSP 页面的 XML 文档表示进行操作。
 
-## 构造方法
+#### 构造方法
 
-### TagLibraryValidator
+##### TagLibraryValidator
 
 ```java
 public TagLibraryValidator()
@@ -25372,9 +24616,9 @@ public TagLibraryValidator()
 
 创建一个新的 TagLibraryValidator。
 
-## 方法
+#### 方法
 
-### getInitParameters
+##### getInitParameters
 
 ```java
 public Map getInitParameters()
@@ -25382,7 +24626,7 @@ public Map getInitParameters()
 
 返回初始化参数。
 
-### release
+##### release
 
 ```java
 public void release()
@@ -25390,7 +24634,7 @@ public void release()
 
 释放此验证器使用的验证数据。
 
-### setInitParameters
+##### setInitParameters
 
 ```java
 public void setInitParameters(Map map)
@@ -25398,7 +24642,7 @@ public void setInitParameters(Map map)
 
 向验证器提供初始化键/值参数。
 
-### validate
+##### validate
 
 ```java
 public String validate(String prefix, String uri, PageData page)
@@ -25406,20 +24650,17 @@ public String validate(String prefix, String uri, PageData page)
 
 验证 JSP 页面。如果页面有效，则返回 null。
 
+### TagSupport
 
-
-## TagSupport
-
-**全名：** javax.servlet.jsp.tagext.TagSupport
+**全名：** `javax.servlet.jsp.tagext.TagSupport`
 **类型：** 类
-**实现接口：** javax.servlet.jsp.tagext.IterationTag
-    java.io.Serializable
+**实现接口：** `javax.servlet.jsp.tagext.IterationTag`, `java.io.Serializable`
 
 Tag 接口的具体实现。标签处理器可以继承此类，并仅需实现那些需要修改的方法。
 
-## 构造函数
+#### 构造函数
 
-### TagSupport
+##### TagSupport
 
 ```java
 public TagSupport()
@@ -25427,9 +24668,9 @@ public TagSupport()
 
 创建一个新的 TagSupport 对象。
 
-## 方法
+#### 方法
 
-### doAfterBody
+##### doAfterBody
 
 ```java
 public int doAfterBody() throws JspException
@@ -25437,32 +24678,31 @@ public int doAfterBody() throws JspException
 
 在标签体被求值后调用。
 
-### doEndTag
+##### doEndTag
 
 ```java
 public int doEndTag() throws JspException
 ```
 
-当遇到结束标签时调用。返回码指示 JSP 实现 servlet 是应该继续处理页面的其余部分（EVAL_PAGE）还是不继续（SKIP_PAGE）。该方法可以抛出 JspException 以指示致命错误。TagSupport 的实现返回 EVAL_PAGE。
+当遇到结束标签时调用。返回码指示 JSP 实现 servlet 是应该继续处理页面的其余部分（`EVAL_PAGE`）还是不继续（`SKIP_PAGE`）。该方法可以抛出 `JspException` 以指示致命错误。TagSupport 的实现返回 `EVAL_PAGE`。
 
-### doStartTag
+##### doStartTag
 
 ```java
 public int doStartTag() throws JspException
 ```
 
-在页面上下文、父标签以及起始标签上编码的任何属性都已设置后调用。返回码指示 JSP 实现 servlet 是应该对标签体求值（EVAL_BODY_INCLUDE 或 BodyTag.EVAL_BODY_BUFFERED）还是不对标签体求值（SKIP_BODY）。该方法可以抛出 JspException 以指示致命错误。BodyTag.EVAL_BODY_BUFFERED 仅在标签处理器实现了 BodyTag 时才有效。TagSupport 的实现返回 SKIP_BODY。
+在页面上下文、父标签以及起始标签上编码的任何属性都已设置后调用。返回码指示 JSP 实现 servlet 是应该对标签体求值（`EVAL_BODY_INCLUDE` 或 `BodyTag.EVAL_BODY_BUFFERED`）还是不对标签体求值（`SKIP_BODY`）。该方法可以抛出 `JspException` 以指示致命错误。`BodyTag.EVAL_BODY_BUFFERED` 仅在标签处理器实现了 `BodyTag` 时才有效。TagSupport 的实现返回 `SKIP_BODY`。
 
-### findAncestorWithClass
+##### findAncestorWithClass
 
 ```java
-public static final Tag findAncestorWithClass
-(Tag from, Class klass)
+public static final Tag findAncestorWithClass(Tag from, Class klass)
 ```
 
 在父标签栈中搜索指定类的最近标签处理器。这使得“内部”标签能够访问其外层标签中的信息。
 
-### getId
+##### getId
 
 ```java
 public String getId()
@@ -25470,7 +24710,7 @@ public String getId()
 
 返回此标签的 id 属性值。
 
-### getParent
+##### getParent
 
 ```java
 public Tag getParent()
@@ -25478,7 +24718,7 @@ public Tag getParent()
 
 返回此标签处理器实例的直接父标签。
 
-### getValue
+##### getValue
 
 ```java
 public Object getValue(String k)
@@ -25486,7 +24726,7 @@ public Object getValue(String k)
 
 返回在此标签处理器下按给定名称存储的对象。
 
-### getValues
+##### getValues
 
 ```java
 public Enumeration getValues()
@@ -25494,11 +24734,13 @@ public Enumeration getValues()
 
 返回在此标签处理器中存储的值的名称的枚举。
 
-### release
+##### release
 
 ```java
 public void release()
 ```
+
+
 
 保证在页面退出前被调用。使标签处理器能够释放其持有的任何资源并重置其状态，以便在必要时可以重用。
 
@@ -25516,7 +24758,7 @@ public void removeValue(String k)
 public void setId(String id)
 ```
 
-设置此标签的 `id` 属性。
+设置此标签的`id`属性。
 
 ### setPageContext
 
@@ -25532,7 +24774,7 @@ public void setPageContext(PageContext pageContext)
 public void setParent(Tag t)
 ```
 
-设置父标签。使标签处理器能够找到求值栈中其上方的标签。在 `setPageContext` 之后立即调用。
+设置父标签。使标签处理器能够找到求值栈中其上方的标签。在`setPageContext`之后立即调用。
 
 ### setValue
 
@@ -25544,7 +24786,7 @@ public void setValue(String k, Object o)
 
 ## TagVariableInfo
 
-| 全名 | javax.servlet.jsp.tagext.TagVariableInfo |
+| 全名 | `javax.servlet.jsp.tagext.TagVariableInfo` |
 | :--- | :--- |
 | 类型 | 类 |
 
@@ -25563,7 +24805,7 @@ public TagVariableInfo(
     int scope)
 ```
 
-创建一个新的 TagVariableInfo 对象。
+创建一个新的`TagVariableInfo`对象。
 
 ## 方法
 
@@ -25573,7 +24815,7 @@ public TagVariableInfo(
 public String getClassName()
 ```
 
-返回 TLD 中 `<variable-class>` 元素的值。
+返回 TLD 中`<variable-class>`元素的值。
 
 ### getDeclare
 
@@ -25581,7 +24823,7 @@ public String getClassName()
 public boolean getDeclare()
 ```
 
-返回 TLD 中 `<declare>` 元素的值。
+返回 TLD 中`<declare>`元素的值。
 
 ### getNameFromAttribute
 
@@ -25589,7 +24831,7 @@ public boolean getDeclare()
 public String getNameFromAttribute()
 ```
 
-返回 TLD 中 `<name-from-attribute>` 元素的值。
+返回 TLD 中`<name-from-attribute>`元素的值。
 
 ### getNameGiven
 
@@ -25597,7 +24839,7 @@ public String getNameFromAttribute()
 public String getNameGiven()
 ```
 
-返回 TLD 中 `<name-given>` 元素的值。
+返回 TLD 中`<name-given>`元素的值。
 
 ### getScope
 
@@ -25605,14 +24847,14 @@ public String getNameGiven()
 public int getScope()
 ```
 
-返回 TLD 中 `<scope>` 元素的值。
+返回 TLD 中`<scope>`元素的值。
 
 ## TryCatchFinally
 
-**全名：** javax.servlet.jsp.tagext.TryCatchFinally
+**全名：**`javax.servlet.jsp.tagext.TryCatchFinally`
 **类型：** 接口
 
-一个可由标签处理器实现的额外接口，使其能够在标签调用的 `catch` 和 `finally` 块中被调用。
+一个可由标签处理器实现的额外接口，使其能够在标签调用的`catch`和`finally`块中被调用。
 
 ## 方法
 
@@ -25622,7 +24864,7 @@ public int getScope()
 public void doCatch(Throwable t) throws Throwable
 ```
 
-如果在对标签体求值时发生异常，则在 `catch` 块中调用此方法。
+如果在对标签体求值时发生异常，则在`catch`块中调用此方法。
 
 ### doFinally
 
@@ -25630,14 +24872,14 @@ public void doCatch(Throwable t) throws Throwable
 public void doFinally()
 ```
 
-如果在对标签体求值时发生异常，则在 `finally` 块中调用此方法。
+如果在对标签体求值时发生异常，则在`finally`块中调用此方法。
 
 ## VariableInfo
 
-**全名：** javax.servlet.jsp.tagext.VariableInfo
+**全名：**`javax.servlet.jsp.tagext.VariableInfo`
 **类型：** 类
 
-一个提供有关自定义标签创建的脚本变量的配置信息的数据结构。主要在 TagExtraInfo 子类的 `getVariableInfo()` 方法中使用。
+一个提供有关自定义标签创建的脚本变量的配置信息的数据结构。主要在`TagExtraInfo`子类的`getVariableInfo()`方法中使用。
 
 ## 构造函数
 
@@ -25651,12 +24893,12 @@ public VariableInfo(
     int scope)
 ```
 
-创建一个新的 `VariableInfo` 对象。参数如下：
+创建一个新的`VariableInfo`对象。参数如下：
 
-- **varName**：要创建的变量的名称
-- **className**：变量类的完全限定名
-- **declare**：一个布尔值，如果生成的 servlet 应包含该变量的声明，则为 `true`
-- **scope**：一个表示变量作用域的整数。可以是 `AT_BEGIN`、`AT_END` 或 `NESTED`。
+- `varName`：要创建的变量的名称
+- `className`：变量类的完全限定名
+- `declare`：一个布尔值，如果生成的 servlet 应包含该变量的声明，则为`true`
+- `scope`：一个表示变量作用域的整数。可以是`AT_BEGIN`、`AT_END`或`NESTED`。
 
 ## 方法
 
@@ -25757,8 +24999,6 @@ public String getVarName()
 | 504 | 网关超时 |
 | 505 | 不支持 HTTP 版本 |
 
-
-
 ## HTTP 头部
 
 头部是描述客户端或服务器属性、传输资源以及连接操作方式的键值对。存在四种不同类型的头部：
@@ -25774,11 +25014,15 @@ public String getVarName()
 <name>: <value><CRLF>
 ```
 
-其中
 
-name 是头部名称，不区分大小写；
-value 是头部值；
-CRLF 是回车符/换行符。
+
+# HTTP 头部参考
+
+其中：
+
+- `name` 是头部名称，不区分大小写；
+- `value` 是头部值；
+- `CRLF` 是回车符/换行符。
 
 注意，名称和值之间用冒号和一个或多个空格分隔。JSP 页面可以使用其 `request` 对象的 `getHeader()` 方法读取 HTTP 头部，并使用 `response.setHeader()` 写入头部。`java.net.URLConnection` 提供了类似的方法来访问 URL 流中的头部。
 
@@ -25821,195 +25065,129 @@ CRLF 是回车符/换行符。
 | Proxy-Authenticate | 类似于 WWW-Authenticate，但设计为仅从请求链中的下一个服务器（代理）请求身份验证。示例：`Proxy-Authenticate: Basic realm=Admin` |
 | Proxy-Authorization | 类似于 Authorization，但并非设计用于传递到直接服务器链中的代理服务器之外。示例：`Proxy-Authorization: Basic YXV0aG9yOnBoaWw=` |
 | Public | 列出服务器支持的方法集。示例：`Public: OPTIONS, MGET, MHEAD, GET, HEAD` |
-
-
-
-# 842 JSP：完整参考手册
-
-| 头字段 | 描述 |
-| :--- | :--- |
 | Range | 指定一个度量单位和一个偏移范围，用于请求部分资源。示例：`Range: bytes=206-5513` |
 | Referer | 一个（拼写错误的）请求头字段，指示发起请求的原始资源。对于 HTML 表单，它是包含该表单的网页地址。示例：`Referer: http://www.lyricnote.com/product/search.html` |
 | Retry-After | 一个由服务器在 503（服务不可用）状态码时发送的响应头字段，用于指示在再次请求资源之前需要等待多长时间。时间可以是日期或秒数。示例：`Retry-After: 18` `Retry-After: Thu, 09 Mar 2014 16:45:15 GMT` |
 | Server | 一个响应头，指示 Web 服务器软件的标识和版本号。示例：`Server: Apache/1.3.12 (Win32)` |
 | Transfer-Encoding | 一个通用头字段，指示对消息体执行的转换类型，接收方应将其逆转。示例：`Transfer-Encoding: chunked` |
 | Upgrade | 允许服务器指定新协议或协议版本。与 101（切换协议）响应码结合使用。示例：`Upgrade: HTTP/2.0` |
-
-# 附录 C：HTTP 参考
-
-843
-
-| 头字段 | 描述 |
-| :--- | :--- |
 | User-Agent | 指定用于发起请求的软件类型（通常是 Web 浏览器）。示例：`User-Agent: Mozilla/4.0 (compatible; MSIE 5.5; Windows NT; DigExt)` `User-Agent: Mozilla/4.7 [en] (WinNT; I)` |
 | Vary | 一个响应头字段，用于指示响应实体是从可用的响应表示中通过服务器驱动协商选择的。示例：`Vary: *` |
 | Via | 一个通用头字段，包含用于满足请求的所有中间主机和协议的列表。示例：`Via: 1.0 fred.com, 1.1 wilma.com` |
 | Warning | 一个响应头字段，用于提供关于响应状态的附加信息。示例：`Warning: 99 www.lyricnote.com Piano needs tuning` |
 | WWW-Authenticate | 一个响应头字段，向用户代理提出质询，要求提供用户 ID 和密码。与 401（未授权）状态码结合使用。期望在回复中包含一个 Authorization 头字段。示例：`WWW-Authenticate: Basic realm=lyricnote_mgmt` |
 
-此页有意留白。
+# 附录 C：HTTP 参考
 
 # 索引
 
 ## 符号
 
-`<%@include%>` 指令。*参见* include 指令
-
-`<%` 和 `%>` 标记，90, 91
+- `<%@include%>` 指令。*参见* include 指令
+- `<%` 和 `%>` 标记，90, 91
 
 ## A
 
-accept 属性，267
-
-accept-charset 属性，267
-
-action 属性，263, 264
-
-action 类，660–662
-
-- CustomerNewProblemAction，669–670
-- CustomersListSelectAction，667–668
-- CustomersSearchAction，666–667
-- ProblemSubmitAction，674–675
-- ProductsListSelectAction，671–672
-- ProductsSearchAction，670–671
-- ProductsSelectAction，672–673
-
-动作
-
-- `<jsp:include>`，83–84
-- 标准动作的语法，75–77, 83–84
-
-Active Server Pages (ASP)，704
-
-addCookie 方法，777, 780
-
-addDateHeader 方法，777, 780
-
-addHeader 方法，777, 781
-
-addIntHeader 方法，777, 781
-
-用于天气信息的机场选择，444–448
-
-小程序
-
-- 作为客户端，689–695
-- 演变，689
-
-应用程序对象
-
-- application 隐式对象，98, 103–104
-- 在案例研究的 Model 类中，588–615
-- 产品支持应用中的 Util 类，613–615
-- 产品支持应用中的 WebModel 类，611–613
-
-Web 应用的应用程序根目录，530, 531
-
-应用程序作用域，412–413
-
-application/x-www-form-urlencoded 编码技术，265–266
-
-应用程序
-
-- Web 应用程序的定义，530
-- Web 应用程序的目录结构，530-532
-- Web 编程模型的演变，6-9
-- 流程与视图/控制器交互，631-633
-- 多线程应用程序中的身份验证请求处理，407-410
-- Java 应用程序作为客户端，684-689
-- 将特性映射到 HTTP 环境，411-413
-- Number Guess Guesser，360, 374-378
-- 从应用程序发送电子邮件的选项，710
-- 用于 Price Quote 客户端，687-689
-- 从客户端到服务器端的转变，9
-- 另请参见 LyricNote.com 示例应用程序；产品支持应用程序
-
-架构
-
-- JDBC 驱动程序类型，304
-- Model 1 与 Model 2 开发，159-160
-- 另请参见 MVC 系统架构
-
-ASCII_markersTable JSP，93
-
-ASP (Active Server Pages)，704
-
-attributeAdded 方法，737, 787
-
-attributeRemoved 方法，737, 787
-
-attributeReplaced 方法，737, 788
-
-属性
-
-- 为自定义标签定义，186
-- 定义标签属性，212-219
-- 在 DTD 中，456, 457
-- FORM 元素的属性，264-268
-- `<jsp:setProperty>` 标签的属性，430, 432-434
-- `<jsp:useBean>` 标签的属性，425-430
-- page 指令的属性，66-67, 162, 171, 181
-- 验证标签属性，236
+- accept 属性，267
+- accept-charset 属性，267
+- action 属性，263, 264
+- action 类，660–662
+    - CustomerNewProblemAction，669–670
+    - CustomersListSelectAction，667–668
+    - CustomersSearchAction，666–667
+    - ProblemSubmitAction，674–675
+    - ProductsListSelectAction，671–672
+    - ProductsSearchAction，670–671
+    - ProductsSelectAction，672–673
+- 动作
+    - `<jsp:include>`，83–84
+    - 标准动作的语法，75–77, 83–84
+- Active Server Pages (ASP)，704
+- addCookie 方法，777, 780
+- addDateHeader 方法，777, 780
+- addHeader 方法，777, 781
+- addIntHeader 方法，777, 781
+- 用于天气信息的机场选择，444–448
+- 小程序
+    - 作为客户端，689–695
+    - 演变，689
+- 应用程序对象
+    - application 隐式对象，98, 103–104
+    - 在案例研究的 Model 类中，588–615
+    - 产品支持应用中的 Util 类，613–615
+    - 产品支持应用中的 WebModel 类，611–613
+- Web 应用的应用程序根目录，530, 531
+- 应用程序作用域，412–413
+- application/x-www-form-urlencoded 编码技术，265–266
+- 应用程序
+    - Web 应用程序的定义，530
+    - Web 应用程序的目录结构，530-532
+    - Web 编程模型的演变，6-9
+    - 流程与视图/控制器交互，631-633
+    - 多线程应用程序中的身份验证请求处理，407-410
+    - Java 应用程序作为客户端，684-689
+    - 将特性映射到 HTTP 环境，411-413
+    - Number Guess Guesser，360, 374-378
+    - 从应用程序发送电子邮件的选项，710
+    - 用于 Price Quote 客户端，687-689
+    - 从客户端到服务器端的转变，9
+    - *另请参见* LyricNote.com 示例应用程序；产品支持应用程序
+- 架构
+    - JDBC 驱动程序类型，304
+    - Model 1 与 Model 2 开发，159-160
+    - *另请参见* MVC 系统架构
+- ASCII_markersTable JSP，93
+- ASP (Active Server Pages)，704
+- attributeAdded 方法，737, 787
+- attributeRemoved 方法，737, 787
+- attributeReplaced 方法，737, 788
+- 属性
+    - 为自定义标签定义，186
+    - 定义标签属性，212-219
+    - 在 DTD 中，456, 457
+    - FORM 元素的属性，264-268
+    - `<jsp:setProperty>` 标签的属性，430, 432-434
+    - `<jsp:useBean>` 标签的属性，425-430
+    - page 指令的属性，66-67, 162, 171, 181
+    - 验证标签属性，236
 
 ## B
 
-Banner.jsp，634
-
-Base64 编码，526
-
-JavaBean
-
-- bean 属性，416-419
-- 使用 bean 自定义天气信息，434-444
-- 将视图页面模型声明为会话 bean，633
-- 持久化和序列化，416, 419-424
-- 抵押贷款的示例代码，416-419
-- 支持事件监听器，419
-- 天气 Observation bean，435
-
-Berners-Lee, Tim，6
-
-主体标签处理器 API，219-223
-
-- 生命周期，223-226
-- BodyTagSupport 类中的方法，222-223
-- BodyContent 类的方法，219-221
-- BodyTag 接口的方法，221-222
-
-BodyContent 类，219-221, 810-811
-
-BodyTag 类，221-222, 811-812
-
-BodyTagSupport 类，190, 222-223, 812-813
-
-BornBetween 查询示例，324-328
-
-BoundConnection 构造函数，385-390
-
-浏览器。参见 Web 浏览器
-
-page 指令的 buffer 属性，172-173, 181
-
-业务对象，558-587
-
-- Customer 类中的，558-561
-- CustomerProduct 类中的，565-568
-- Employee 类中的，568-579
-- Problem 类中的，579-584
-- ProblemLog 类中的，584-587
-- Product 类中的，561-565
-- 与产品支持应用对象对比，588
-- 驻留在 Model 应用程序容器中，588
-
-按钮
-
-- 定义，263
-- 作为输入元素，282
-
-# 846 JSP：完整参考手册
-
-# 索引
+- Banner.jsp，634
+- Base64 编码，526
+- JavaBean
+    - bean 属性，416-419
+    - 使用 bean 自定义天气信息，434-444
+    - 将视图页面模型声明为会话 bean，633
+    - 持久化和序列化，416, 419-424
+    - 抵押贷款的示例代码，416-419
+    - 支持事件监听器，419
+    - 天气 Observation bean，435
+- Berners-Lee, Tim，6
+- 主体标签处理器 API，219-223
+    - 生命周期，223-226
+    - BodyTagSupport 类中的方法，222-223
+    - BodyContent 类的方法，219-221
+    - BodyTag 接口的方法，221-222
+- BodyContent 类，219-221, 810-811
+- BodyTag 类，221-222, 811-812
+- BodyTagSupport 类，190, 222-223, 812-813
+- BornBetween 查询示例，324-328
+- BoundConnection 构造函数，385-390
+- 浏览器。*参见* Web 浏览器
+- page 指令的 buffer 属性，172-173, 181
+- 业务对象，558-587
+    - Customer 类中的，558-561
+    - CustomerProduct 类中的，565-568
+    - Employee 类中的，568-579
+    - Problem 类中的，579-584
+    - ProblemLog 类中的，584-587
+    - Product 类中的，561-565
+    - 与产品支持应用对象对比，588
+    - 驻留在 Model 应用程序容器中，588
+- 按钮
+    - 定义，263
+    - 作为输入元素，282
 
 ## C
 
@@ -26051,1152 +25229,839 @@ page 指令的 buffer 属性，172-173, 181
     - 声明写入封闭类，112
     - 声明和初始化变量，117–122, 131–132
     - Employee，568–579
-- 封装业务实体
-    - 在数据模型中，558
-- Filter，724–725
-- FilterChain，725
-- FilterConfig，725–726
-- GenericServlet，33–34, 726–729
-- HttpJspPage，794–795
-- HttpServlet，763–767
-- HttpServletRequest，767–772
-- HttpServletRequestWrapper，772–777
-- HttpServletResponse，777–780
-- HttpServletResponseWrapper，780–783
-- HttpSession，783–786
-- HttpSessionActivationListener，786–787
-- HttpSessionAttributesListener，787–788
-- HttpSessionBindingEvent，788–789
-- HttpSessionBindingListener，789
-- HttpSessionListener，791
-- HttpUtils，791
-- IterationTag，814
-- java.net.HttpURLConnection 类，683–684
-- java.net.URLConnection，682
-- JavaBean 作为 Java 类，424–425
-- javax.servlet.http 包的类，760–792
-- javax.servlet 包的类，724–759
-- JDBC 类，293–296
-- JspEngineInfo，795
-- JspException，795–796
-- JspFactory，796–798
-- JspPage，798–799
-- JspWriter，800–804
-- 案例研究的模型类，557–631
-- PageContext，804–809
-- PageData，814–815
-- Problem，579–584
-- ProblemLog，584–587
-- ProblemSubmitAction，674–675
-- Product，561–565
-- ProductParser，479
-- ProductsListSelectAction，671–672
-- ProductsSearchAction，670–671
-
-
-
-ProductsSelectAction, 672–673
-RequestDispatcher, 158, 729–730
-servlet, 31–47
-Servlet API version 2.3 deprecated, 724
-ServletRequestWrapper, 747–752
-ServletResponse, 752–755
-ServletResponseWrapper, 755–757
-Shell, 616–630
-SingleThreadModel, 758
-Tag, 815–816
-TagAttributeInfo, 816–818
-TagData, 818–819
-TagExtraInfo, 227–235, 820–821
-TagInfo, 821–824
-TagLibraryInfo, 824–825
-TagLibraryValidator, 826
-TagSupport, 202, 827–829
-TagVariableInfo, 829–831
-TryCatchFinally, 831
-UnavailableException, 758–759
-Util, 613–615
-VariableInfo, 831–832
-view, 631–658
-in Web application directory structure, 531
-WebModel, 611–613
-另请参阅 Shell 类；超类；以及按名称排列的具体类
-clear 方法, 800
-clearBody 方法, 810
-clearBuffer 方法, 800
-clients（客户端）, 680–702
-Java applets（Java小应用程序）作为客户端, 689–695
-Java applications（Java应用程序）作为客户端, 684–689
-Perl, 696–701
-非浏览器客户端的类型, 680
-URL connections（URL连接）, 680–684
-Web browsers（Web浏览器）作为客户端, 164
-client-side applications（客户端应用程序）, 9
-clone 方法, 760
-close 方法, 800
-Cold Fusion, 704
-JDBC 结果集中的列, 336–338
-comments（注释）
-语法, 68–69
-使用 TagSupport 类进行, 205
-Common Gateway Interface（通用网关接口）。参见 CGI
-compilation（编译）
-为标签处理器编译源代码, 191
-检测编译错误, 494–499
-区分编译时错误和运行时错误, 499
-compiled servlet class（已编译的 servlet 类）, 494
-config 隐式对象, 98, 106
-Confirm.jsp 视图页面, 647–649
-产品支持应用程序的确认页面, 649, 657, 660
-connect() 方法, 593, 594
-connect 标签
-为开发其标签处理器, 250–252
-功能, 247, 248, 249
-连接到数据库
-使用 RowSet 接口连接到 PDA 数据库, 338
-从 Shell 类建立连接, 628–630
-连接 JDBC 数据库, 307–308
-JDBC URL 参数与连接, 308
-连接方法, 594
-打开连接, 294, 295
-用于进程外 servlet 引擎模型的连接器, 134, 135
-constants（常量）
-描述可滚动结果集, 334
-EVAL_BODY_INCLUDE, 222
-EVAL_BODY_TAG, 221, 222
-constructors（构造函数）
-BodyTagSupport 的构造函数, 812
-BoundConnection 的构造函数, 385–390
-Cookie 类的构造函数, 760–763
-GenericServlet 的构造函数, 727
-HttpServlet 的构造函数, 764
-HttpServletRequestWrapper 的构造函数, 772
-HttpServletResponseWrapper 的构造函数, 780
-HttpSessionBindingEvent 的构造函数, 788
-HttpSessionEvent 类的构造函数, 790–791
-HttpUtils 的构造函数, 791, 792
-JspEngineInfo 的构造函数, 795
-JspException 类的构造函数, 796
-JspFactory 的构造函数, 797
-JspTagException 的构造函数, 799
-PageContext 的构造函数, 804
-PageData 类的构造函数, 814
-ServletContextAttributeEvent 的构造函数, 736
-ServletContextEvent 的构造函数, 738
-ServletException 类的构造函数, 739
-ServletRequestWrapper 的构造函数, 748
-ServletResponseWrapper 的构造函数, 755–757
-Shell 类的构造函数, 567–568
-TagAttributeInfo 类的构造函数, 817
-TagData 的构造函数, 818
-TagExtraInfo 的构造函数, 820
-TagInfo 的构造函数, 821–822
-TagLibraryValidator 类的构造函数, 826
-TagSupport 的构造函数, 827–829
-TagVariableInfo 的构造函数, 830
-UnavailableException 的构造函数, 758–759
-VariableInfo 的构造函数, 831–832
-- 联系我们表单, 285–287
-  - 在 HTML 表单中添加脚本块, 285
-  - 从中提取的数据, 290
-  - 其服务器程序, 288–289, 290
-  - 为其验证设置触发器, 285
-  - 编写验证函数, 286–287
+    - 封装业务实体
+        - 在数据模型中，558
+    - Filter，724–725
+    - FilterChain，725
+    - FilterConfig，725–726
+    - GenericServlet，33–34, 726–729
+    - HttpJspPage，794–795
+    - HttpServlet，763–767
+    - HttpServletRequest，767–772
+    - HttpServletRequestWrapper，772–777
+    - HttpServletResponse，777–780
+    - HttpServletResponseWrapper，780–783
+    - HttpSession，783–786
+    - HttpSessionActivationListener，786–787
+    - HttpSessionAttributesListener，787–788
+    - HttpSessionBindingEvent，788–789
+    - HttpSessionBindingListener，789
+    - HttpSessionListener，791
+    - HttpUtils，791
+    - IterationTag，814
+    - java.net.HttpURLConnection 类，683–684
+    - java.net.URLConnection，682
+    - JavaBean 作为 Java 类，424–425
+    - javax.servlet.http 包的类，760–792
+    - javax.servlet 包的类，724–759
+    - JDBC 类，293–296
+    - JspEngineInfo，795
+    - JspException，795–796
+    - JspFactory，796–798
+    - JspPage，798–799
+    - JspWriter，800–804
+    - 案例研究的模型类，557–631
+    - PageContext，804–809
+    - PageData，814–815
+    - Problem，579–584
+    - ProblemLog，584–587
+    - ProblemSubmitAction，674–675
+    - Product，561–565
+    - ProductParser，479
+    - ProductsListSelectAction，671–672
+    - ProductsSearchAction，670–671
+    - ProductsSelectAction，672–673
+    - RequestDispatcher，158, 729–730
+    - servlet，31–47
+    - Servlet API version 2.3 deprecated，724
+    - ServletRequestWrapper，747–752
+    - ServletResponse，752–755
+    - ServletResponseWrapper，755–757
+    - Shell，616–630
+    - SingleThreadModel，758
+    - Tag，815–816
+    - TagAttributeInfo，816–818
+    - TagData，818–819
+    - TagExtraInfo，227–235, 820–821
+    - TagInfo，821–824
+    - TagLibraryInfo，824–825
+    - TagLibraryValidator，826
+    - TagSupport，202, 827–829
+    - TagVariableInfo，829–831
+    - TryCatchFinally，831
+    - UnavailableException，758–759
+    - Util，613–615
+    - VariableInfo，831–832
+    - view，631–658
+    - 在 Web application directory structure 中，531
+    - WebModel，611–613
+    - *另请参阅* Shell 类；超类；以及按名称排列的具体类
+- clear 方法，800
+- clearBody 方法，810
+- clearBuffer 方法，800
+- clients（客户端），680–702
+    - Java applets（Java小应用程序）作为客户端，689–695
+    - Java applications（Java应用程序）作为客户端，684–689
+    - Perl，696–701
+    - 非浏览器客户端的类型，680
+    - URL connections（URL连接），680–684
+    - Web browsers（Web浏览器）作为客户端，164
+- client-side applications（客户端应用程序），9
+- clone 方法，760
+- close 方法，800
+- Cold Fusion，704
+- JDBC 结果集中的列，336–338
+- comments（注释）
+    - 语法，68–69
+    - 使用 TagSupport 类进行，205
+- Common Gateway Interface（通用网关接口）。*参见* CGI
+- compilation（编译）
+    - 为标签处理器编译源代码，191
+    - 检测编译错误，494–499
+    - 区分编译时错误和运行时错误，499
+- compiled servlet class（已编译的 servlet 类），494
+- config 隐式对象，98, 106
+- Confirm.jsp 视图页面，647–649
+- 产品支持应用程序的确认页面，649, 657, 660
+- connect() 方法，593, 594
+- connect 标签
+    - 为开发其标签处理器，250–252
+    - 功能，247, 248, 249
+- 连接到数据库
+    - 使用 RowSet 接口连接到 PDA 数据库，338
+    - 从 Shell 类建立连接，628–630
+    - 连接 JDBC 数据库，307–308
+    - JDBC URL 参数与连接，308
+    - 连接方法，594
+    - 打开连接，294, 295
+    - 用于进程外 servlet 引擎模型的连接器，134, 135
+- constants（常量）
+    - 描述可滚动结果集，334
+    - EVAL_BODY_INCLUDE，222
+    - EVAL_BODY_TAG，221, 222
+- constructors（构造函数）
+    - BodyTagSupport 的构造函数，812
+    - BoundConnection 的构造函数，385–390
+    - Cookie 类的构造函数，760–763
+    - GenericServlet 的构造函数，727
+    - HttpServlet 的构造函数，764
+    - HttpServletRequestWrapper 的构造函数，772
+    - HttpServletResponseWrapper 的构造函数，780
+    - HttpSessionBindingEvent 的构造函数，788
+    - HttpSessionEvent 类的构造函数，790–791
+    - HttpUtils 的构造函数，791, 792
+    - JspEngineInfo 的构造函数，795
+    - JspException 类的构造函数，796
+    - JspFactory 的构造函数，797
+    - JspTagException 的构造函数，799
+    - PageContext 的构造函数，804
+    - PageData 类的构造函数，814
+    - ServletContextAttributeEvent 的构造函数，736
+    - ServletContextEvent 的构造函数，738
+    - ServletException 类的构造函数，739
+    - ServletRequestWrapper 的构造函数，748
+    - ServletResponseWrapper 的构造函数，755–757
+    - Shell 类的构造函数，567–568
+    - TagAttributeInfo 类的构造函数，817
+    - TagData 的构造函数，818
+    - TagExtraInfo 的构造函数，820
+    - TagInfo 的构造函数，821–822
+    - TagLibraryValidator 类的构造函数，826
+    - TagSupport 的构造函数，827–829
+    - TagVariableInfo 的构造函数，830
+    - UnavailableException 的构造函数，758–759
+    - VariableInfo 的构造函数，831–832
+- 联系我们表单，285–287
+    - 在 HTML 表单中添加脚本块，285
+    - 从中提取的数据，290
+    - 其服务器程序，288–289, 290
+    - 为其验证设置触发器，285
+    - 编写验证函数，286–287
 - 容器
-  - JSP 中的表达式和脚本片段, 65–66
-  - 生成的初始化和退出代码, 96–97
-  - JSP 容器转换 JSP 页面, 55, 194–195
-  - JSP 中的 out.write() 语句, 94
-  - 使用 JSP 翻译和调用 JSP 页面, 194–195
-containsHeader 方法, 778, 781
+    - JSP 中的表达式和脚本片段，65–66
+    - 生成的初始化和退出代码，96–97
+    - JSP 容器转换 JSP 页面，55, 194–195
+    - JSP 中的 out.write() 语句，94
+    - 使用 JSP 翻译和调用 JSP 页面，194–195
+- containsHeader 方法，778, 781
 - 内容
-  - 合并动态内容, 136
-  - 与表示层分离, 134, 154–157
-  - Web 应用程序的内容, 530–531
-  - 分离表示层和内容的 XML 解决方案, 453
-HTML 表单的内容类型, 267
-页面指令的 contentType 属性, 174, 181
+    - 合并动态内容，136
+    - 与表示层分离，134, 154–157
+    - Web 应用程序的内容，530–531
+    - 分离表示层和内容的 XML 解决方案，453
+- HTML 表单的内容类型，267
+- 页面指令的 contentType 属性，174, 181
 - 上下文
-  - servlet 上下文的功能, 535
-  - PageContext 类, 804–809
-  - pageContext 隐式对象, 98, 100–101, 128
-  - 存储对 servlet 的引用, 45
+    - servlet 上下文的功能，535
+    - PageContext 类，804–809
+    - pageContext 隐式对象，98, 100–101, 128
+    - 存储对 servlet 的引用，45
 - 上下文层次结构
-  - 图示, 100
-  - pageContext 隐式对象与上下文层次结构, 100–101
-contextDestroyed 方法, 738
-contextInitialized 方法, 739
+    - 图示，100
+    - pageContext 隐式对象与上下文层次结构，100–101
+- contextDestroyed 方法，738
+- contextInitialized 方法，739
 - 控制器
-  - 使用控制器接受并响应用户输入, 557
-  - 案例研究的控制器类, 658–675
-  - 定义, 557
-  - 功能, 658–660
-  - *另请参阅* 控制器类；ControllerServlet
-- 控制器类, 658–675
-  - controller servlet, 662–666
-  - CustomerNewProblemAction 类, 669–670
-  - CustomersListSelectAction 类, 667–668
-  - CustomersSearchAction 类, 666–667
-  - 控制器的功能, 658–660
-  - Action 基类的代码清单, 660–662
-  - ProblemSubmitAction 类, 674–675
-  - ProductsListSelectAction 类, 671–672
-  - ProductsSearchAction 类, 670–671
-  - ProductsSelectAction 类, 672–673
+    - 使用控制器接受并响应用户输入，557
+    - 案例研究的控制器类，658–675
+    - 定义，557
+    - 功能，658–660
+    - *另请参阅* 控制器类；ControllerServlet
+- 控制器类，658–675
+    - controller servlet，662–666
+    - CustomerNewProblemAction 类，669–670
+    - CustomersListSelectAction 类，667–668
+    - CustomersSearchAction 类，666–667
+    - 控制器的功能，658–660
+    - Action 基类的代码清单，660–662
+    - ProblemSubmitAction 类，674–675
+    - ProductsListSelectAction 类，671–672
+    - ProductsSearchAction 类，670–671
+    - ProductsSelectAction 类，672–673
 - ControllerServlet
-  - 功能, 658
-  - 代码清单, 662–666
+    - 功能，658
+    - 代码清单，662–666
 - 转换表
-  - 燃油效率, 27–31, 56–60
-  - 美元兑换加拿大元, 705–710
+    - 燃油效率，27–31, 56–60
+    - 美元兑换加拿大元，705–710
 - cookies（Cookie）
-  - 浏览器支持已关闭, 368
-  - 构造函数和方法, 760–763
-使用 Cookie 自定义天气信息, 445–446
-在 HTTP 会话中提供 Cookie, 50
-使用 Cookie 进行会话跟踪, 363–369, 371–372, 413–414
-通过 HTTP 头设置和检索 Cookie, 364
-使用 include 指令复制源代码, 139–140
-counter.jsp 页面, 361, 362
-CounterBean 类, 423–424
-创建
-会话, 370–372
-创建并启动线程, 391–398
-自定义标签
-关于, 184, 258
-为其定义的属性, 212–219
-优点, 184–186
-主体标签处理器 API 与自定义标签, 219–223
-在标签库描述符中创建条目, 187–188
-定义, 186–187
-定义脚本变量, 186, 226–227
-标签处理器的功能, 196
-合并自定义标签的图示, 193
-合并到 JSP 页面中, 192–194
-为自定义标签编写标签处理器, 188–191
-另请参阅 tags（标签）
-客户
-详细信息页面, 639
-产品支持应用程序中的搜索页面, 636
-作为产品支持应用程序的系统入口点, 631, 632
-Customer 类, 558–561
-Customer.jsp 视图页面, 638–643
-CustomerList.jsp 视图页面, 637–638
-CustomerNewProblemAction 类, 669–670
-CustomerProduct 类, 565–568
-Customers.jsp 视图页面, 635–636
-CustomersListSelectAction 类, 667–668
-CustomersSearchAction 类, 666–667
-在门户网页上自定义天气信息, 444–448
-data（数据）
-从“联系我们”表单提取, 290
-从结果集中提取, 328–332
-另请参阅 metadata（元数据）
-产品支持应用程序的数据模型
-概述, 554–555
-业务对象, 558–587
-另请参阅 models（模型）
-数据库查询示例
-其中的 connect 标签, 247, 248, 249
-其中的 forEachRow 标签功能, 247, 248
-其中的 getField 标签, 247, 249
-使用自定义标签实现, 247–258
-其中的 runQuery 标签, 247, 248
-标签库描述符, 248–249
-databases（数据库）
-MVC 架构中的数据库访问, 556
-使用 JDBC 2.0 和 JNDI 访问, 293, 295
-连接到 JDBC 数据库, 307–308
-数据库元数据, 339–343
-产品支持应用程序中的数据库表, 554–555
-从 Shell 类建立连接, 628–630
-使用自定义标签实现查询, 247–258
-在 JDBC 中发出 SQL 语句, 294, 295
-加载驱动程序类, 294, 295
-连接方法, 594
-在带有 JDBC 连接的 JSP 页面中命名数据源, 307
-打开连接, 294, 295
-PDA 数据库连接中的 RowSet 接口, 338
-另请参阅 database query example（数据库查询示例）；JDBC
-调试工具, 500–528
-概述, 500–501
-使用 Echo.jsp 捕获表单参数, 501–504
-使用 Tracer 追踪 HTTP 请求, 510–528
+    - 浏览器支持已关闭，368
+    - 构造函数和方法，760–763
+    - 使用 Cookie 自定义天气信息，445–446
+    - 在 HTTP 会话中提供 Cookie，50
+    - 使用 Cookie 进行会话跟踪，363–369, 371–372, 413–414
+    - 通过 HTTP 头设置和检索 Cookie，364
+- 使用 include 指令复制源代码，139–140
+- counter.jsp 页面，361, 362
+- CounterBean 类，423–424
+- 创建
+    - 会话，370–372
+    - 创建并启动线程，391–398
+- 自定义标签
+    - 关于，184, 258
+    - 为其定义的属性，212–219
+    - 优点，184–186
+    - 主体标签处理器 API 与自定义标签，219–223
+    - 在标签库描述符中创建条目，187–188
+    - 定义，186–187
+    - 定义脚本变量，186, 226–227
+    - 标签处理器的功能，196
+    - 合并自定义标签的图示，193
+    - 合并到 JSP 页面中，192–194
+    - 为自定义标签编写标签处理器，188–191
+    - *另请参阅* tags（标签）
+- 客户
+    - 详细信息页面，639
+    - 产品支持应用程序中的搜索页面，636
+    - 作为产品支持应用程序的系统入口点，631, 632
+- Customer 类，558–561
+- Customer.jsp 视图页面，638–643
+- CustomerList.jsp 视图页面，637–638
+- CustomerNewProblemAction 类，669–670
+- CustomerProduct 类，565–568
+- Customers.jsp 视图页面，635–636
+- CustomersListSelectAction 类，667–668
+- CustomersSearchAction 类，666–667
+- 在门户网页上自定义天气信息，444–448
+- data（数据）
+    - 从“联系我们”表单提取，290
+    - 从结果集中提取，328–332
+    - *另请参阅* metadata（元数据）
+- 产品支持应用程序的数据模型
+    - 概述，554–555
+    - 业务对象，558–587
+    - *另请参阅* models（模型）
+- 数据库查询示例
+    - 其中的 connect 标签，247, 248, 249
+    - 其中的 forEachRow 标签功能，247, 248
+    - 其中的 getField 标签，247, 249
+    - 使用自定义标签实现，247–258
+    - 其中的 runQuery 标签，247, 248
+    - 标签库描述符，248–249
+- databases（数据库）
+    - MVC 架构中的数据库访问，556
+    - 使用 JDBC 2.0 和 JNDI 访问，293, 295
+    - 连接到 JDBC 数据库，307–308
+    - 数据库元数据，339–343
+    - 产品支持应用程序中的数据库表，554–555
+    - 从 Shell 类建立连接，628–630
+    - 使用自定义标签实现查询，247–258
+    - 在 JDBC 中发出 SQL 语句，294, 295
+    - 加载驱动程序类，294, 295
+    - 连接方法，594
+    - 在带有 JDBC 连接的 JSP 页面中命名数据源，307
+    - 打开连接，294, 295
+    - PDA 数据库连接中的 RowSet 接口，338
+    - *另请参阅* database query example（数据库查询示例）；JDBC
+- 调试工具，500–528
+    - 概述，500–501
+    - 使用 Echo.jsp 捕获表单参数，501–504
+    - 使用 Tracer 追踪 HTTP 请求，510–528
+    - WebClient，504–510
+    - *另请参阅* testing and debugging（测试和调试）
 
-# D
+## D
 
-## 850 JSP：完全参考手册
-
-## 索引
-
-851
-
-- WebClient, 504–510
-另请参阅 testing and debugging（测试和调试）
-declarations（声明）, 112–132
-访问隐式对象, 128
-定义, 112, 131
-定义内部类, 128–131, 132
-示例, 86–87
-生成声明的代码, 112–117
-在方法定义中, 122–128, 132
-重写 jspInit() 和 jspDestroy() 方法, 126–127
-语法, 71–73, 112
-用途, 117
-变量声明, 117–122, 131–132
-default 标签, 243–244
-default 线程模型, 403–405
-定义脚本变量, 186, 226–236
-概述, 227
-同步脚本变量, 235–236
-使用 TagExtraInfo 类, 227–235
-验证标签属性, 236
-delimiters（分隔符）
-表达式的分隔符, 90, 91
-声明和脚本片段开始语法中的分隔符, 112
-部署 Web 应用程序, 530–549
-Web 应用程序的定义, 530
-部署描述符, 538–547
-Web 应用程序的目录结构, 530–532
-servlet 上下文的功能, 535
-资源映射, 532–535
-示例部署描述符, 547–549
-通过 Servlet 2.2 规范进行标准化, 530, 549
-Web 归档（.war）文件, 535–537, 549
-部署描述符
-在部署 Web 应用程序中, 538–547
-示例代码, 547–549
-反序列化, 419
-destroy 方法, 27, 727, 730
-销毁会话, 373–374
-- 开发者在流程中的角色, 552, 553, 554
-开发产品支持应用程序
-创建支持模块, 633–635
-开发 JSP 页面, 555–556
-编写 Model 和 Shell 类, 630–631
-directives（指令）, 65–68, 83
-概述, 65
-include 指令, 67–68, 136–140
-page 指令, 66–67
-taglib 指令, 68, 192
-另请参阅 include directive（include 指令）；taglib directive（taglib 指令）
-Web 应用程序的目录结构, 530–532
-disconnect() 方法, 594
-doAfterBody 方法, 812, 814, 827
-doCatch 方法, 831
-document element（文档元素）, 454
-Document Object Model 解析器。参见 DOM parser
-document type definition（文档类型定义）。参见 DTD
-DocumentHandler 接口
-定义, 474
-其定义的方法, 475
-documents（文档）
-DOM 表示, 458
-从 JSP 页面生成 XML 文档, 684–689
-使用 URL 定位文档, 532–535
-doDelete 方法, 764
-doEndTag 方法, 812–813, 815, 827
-doFilter 方法, 724–725
-doFinally 方法, 831
-doGet 方法, 764
-doHead 方法, 765
-doInitBody 方法, 811, 813
-DOM（文档对象模型）解析器, 457, 458–472, 491
-JSP 页面中的示例, 464–472
-例外情况, 464
-层次结构, 458, 461
-节点集合接口, 462–463
-节点接口, 458–461
-
-
-
-节点元数据，463
-
-SAX 与……对比，485
-
-节点子接口，461–466
-
-DOMImplementation 接口，463
-
-doOptions 方法，765
-
-doPost 方法，765
-
-doPut 方法，766
-
-doStartTag 方法，813、815、827
-
-doTrace 方法，766
-
-DriverManager 类，296、307
-
-驱动程序，301–307
-- 使用其创建数据库连接，307
-- JDBC-ODBC 桥接，292、303、305
-- 加载驱动程序类，294、295
-- JDBC 概述，292、301–303
-- 注册 JDBC，305–307
-- JDBC 类型，303、304
-
-DTD（文档类型定义），454–457
-- 其中的属性，456、457
-- 其中的元素，456–457
-- 为 TLD 查找 DTD，197
-- 部署描述符的格式，538
-- DTD 的作用，455–456
-
-DTDHandler 接口，474
-
-动态内容
-- 使用预处理语句避免动态语法错误，320–322
-- 在 JSP 页面中引入动态内容，136
-- 提供动态内容的技术，704
-
-JSP 类型，65
-
-用于部署描述符，538–547
-
-*另请参阅* FORM 元素；表单输入元素；INPUT 标签元素
-
-电子邮件
-- 从应用程序发送电子邮件的选项，710
-- 产品支持问题反馈的电子邮件，715–719
-- 从 JSP 页面发送电子邮件，710–719
-- 使用 JavaMail 发送电子邮件，713–715
-- 使用 TCP/IP 套接字上的 SMTP 发送电子邮件，711–712
-- sun.net.smtp.SmtpClient 类选项，712
-
-Employee 类，568–579
-
-encodeRedirectUrl 方法，778、781
-
-encodeRedirectURL 方法，778、781
-
-encodeUrl 方法，778、781
-
-encodeURL 方法，778、782
-
-enctype 属性，263、265–267
-- 关于 enctype，265
-- application/x-www-form-urlencoded 类型，265–266
-- multipart/form-data 类型，266–267
-
-实体头，836
-
-EntityResolver 接口，474
-
-enumerate 标签
-- 图解输出，235
-- 示例代码，229–235
-
-异常的错误页面，179、180
-
-ErrorHandler 接口，474
-
-页面指令的 errorPage 属性，176–180、181
-
-ErrorPage.jsp，634–635
-
-错误
-- 使用预处理语句避免动态语法错误，320–322
-- 为视图页面创建错误模块，634–635
-- 编译时错误检测，494–499
-- 区分编译时错误和运行时错误，499
-- 页面指令的 errorPage 和 isErrorPage 属性，176–180、181
+- deploy（部署）Web 应用程序，530–549
+    - Web 应用程序的定义，530
+    - 部署描述符，538–547
+    - Web 应用程序的目录结构，530–532
+    - servlet 上下文的功能，535
+    - 资源映射，532–535
+    - 示例部署描述符，547–549
+    - 通过 Servlet 2.2 规范进行标准化，530, 549
+    - Web 归档（.war）文件，535–537, 549
+- 部署描述符
+    - 在部署 Web 应用程序中，538–547
+    - 示例代码，547–549
+- 反序列化，419
+- destroy 方法，27, 727, 730
+- 销毁会话，373–374
+- 开发者在流程中的角色，552, 553, 554
+- 开发产品支持应用程序
+    - 创建支持模块，633–635
+    - 开发 JSP 页面，555–556
+    - 编写 Model 和 Shell 类，630–631
+- directives（指令），65–68, 83
+    - 概述，65
+    - include 指令，67–68, 136–140
+    - page 指令，66–67
+    - taglib 指令，68, 192
+    - *另请参阅* include directive（include 指令）；taglib directive（taglib 指令）
+- Web 应用程序的目录结构，530–532
+- disconnect() 方法，594
+- doAfterBody 方法，812, 814, 827
+- doCatch 方法，831
+- default 标签，243–244
+- default 线程模型，403–405
+- 定义脚本变量，186, 226–236
+    - 概述，227
+    - 同步脚本变量，235–236
+    - 使用 TagExtraInfo 类，227–235
+    - 验证标签属性，236
+- delimiters（分隔符）
+    - 表达式的分隔符，90, 91
+    - 声明和脚本片段开始语法中的分隔符，112
 
 ## E
 
-Echo.jsp，501–504
-
-元素
-- 注释，68–69
-- 声明，71–73、86–87
-- 指令，65–68、83
-- DTD 中的元素，456–457
-- 表达式，69–70、85
-- 表单输入元素，268–285
-- 隐式对象，74–75
-- 脚本小程序，70–71、84
-- 在 <web-app> 体内指定元素顺序，538
-
-索引 853
-
-在调试环境中启动，500–501
-
-隔离故障组件，499–500
-
-诊断错误页面的示例代码，179、180
-
-用 Servlet 错误消息替代浏览器错误消息，495
-
-开启/关闭消息，495
-
-EVAL_BODY_INCLUDE 常量，222
-
-EVAL_BODY_TAG 常量，221、222
-
-事件监听器，Bean 对事件监听器的支持，419
-
-exception 隐式对象，98、106
-
-异常
-- 使用 Servlet 显示异常，179
-- DOM 解析器的异常，464
+- Echo.jsp，501–504
+- 元素
+    - 注释，68–69
+    - 声明，71–73、86–87
+    - 指令，65–68、83
+    - DTD 中的元素，456–457
+    - 表达式，69–70、85
+    - 表单输入元素，268–285
+    - 隐式对象，74–75
+    - 脚本小程序，70–71、84
+    - 在 `<web-app>` 体内指定元素顺序，538
+- 在调试环境中启动，500–501
+- 隔离故障组件，499–500
+- 诊断错误页面的示例代码，179、180
+- 用 Servlet 错误消息替代浏览器错误消息，495
+- 开启/关闭消息，495
+- EVAL_BODY_INCLUDE 常量，222
+- EVAL_BODY_TAG 常量，221、222
 - 异常的错误页面，179、180
-- 实现 BodyTag 接口的运行时异常，222
-
-execute 方法，312–314
-
-executeBatch 方法，314–316
-
-executeQuery 方法，311–312
-
-executeUpdate 方法，310–311
-
-表达式和脚本小程序，90–109
-- application 隐式对象，98、103–104
-- config 隐式对象，98、106
-- 容器生成的初始化和退出代码，96–97
-- 上下文层和 pageContext 隐式对象，100–101
-- 表达式的分隔符，90、91
+- ErrorHandler 接口，474
+- 页面指令的 errorPage 属性，176–180、181
+- ErrorPage.jsp，634–635
+- 错误
+    - 使用预处理语句避免动态语法错误，320–322
+    - 为视图页面创建错误模块，634–635
+    - 编译时错误检测，494–499
+    - 区分编译时错误和运行时错误，499
+    - 页面指令的 errorPage 和 isErrorPage 属性，176–180、181
 - exception 隐式对象，98、106
-- 表达式定义，90–91
-- JSP 容器的处理方式，65–66
-- HTML 模板数据和表达式，94
-- 可用的隐式对象，97–106
-- 初始化参数，107–109
-- out 隐式对象，98、104–105
-- page 隐式对象，106
-- request 隐式对象，97、98–100
-- response 隐式对象，97、99–100
-- 脚本小程序的示例代码，94–96
-- 脚本小程序定义，91–93
-- 表达式内的分号，70、91
-- session 隐式对象，98、102–103
-- 表达式的语法，69–70、85
-
-页面指令的 extends 属性，164–170、181
-- JSP 超类的示例，166–170
-- 概述，164、181
-- JSP 超类所需的接口，164–166
-
-可扩展标记语言。参见 XML
-
-Externalizable 接口，416、424
-
-从结果集中提取数据，328–332
-
-# F
-
-文件选择元素，263
-
-文件上传输入字段，276–280
-
-文件名
-- 问题 ID 的获取和设置方法，593
-- 包含指令中的文件名，136–138
-- <jsp:include> 动作中的文件名，140
-
-文件
-- .class 文件，194
-- 使用 Echo.jsp 调试文件，501–504
-- 所包含文件更改的影响，138
-- .jar 文件，535
-- .java 文件，194
-- .jsp 文件，64、194
-- 上传文件的大小限制，277
-- 将标签库映射到 web.xml，199–200
-- JSP 页面的三种形式的文件，54–56、64、194
-- .war 文件，535–537、549
-- web.xml 文件，199–200、531、538–547
-
-*另请参阅* 文件名
-
-FilterChain 类，725
-
-FilterConfig 类，725–726
-
-findAncestorWithClass 方法，828
-
-findAttribute 方法，804–805
-
-流程图
-- 体标签处理器生命周期流程图，223–226
-- <jsp:useBean> 处理流程图，427、428、429、431
-- 标签处理器生命周期流程图，203–205
-
-# 854 JSP: 完全参考手册
-
-flush 方法，800、810
-
-flushBuffer 方法，752–753、755
-
-forEachRow 标签
-- 为 forEachRow 开发标签处理器，254–256
-- 数据库查询示例中的 forEachRow 函数，247、248
-
-FORM 元素
-- accept 属性，267
-- accept-charset 属性，267
-- action 属性，264
-- 属性，264–268
-- enctype 属性，263、265–267
-- 功能和语法，263–264
-- method 属性，264–265
-- name 属性，267–268
-
-表单输入元素，268–285
-- 使用 INPUT 标签创建，270–282
-- 使用 select 和 option 标签创建，283–284
-- 说明性示例代码，268–270
-- textarea 元素，284
-
-捕获表单参数
-- 使用调试工具，501–504
-
-forward 方法，729、805
-
-请求转发，154–158
-
-燃油效率转换表，27–31、56–60
-
-互联网的未来，4
-
-getAttributes 方法，819、822
-
-getAttributesScope 方法，805–806
-
-getAttributeString 方法，747、819
-
-getAuthType 方法，767、772
-
-getBodyContent 方法，813、822
-
-getBufferSize 方法，753、755、801
-
-getCharacterEncoding 方法，743–744、748、753、755–756
-
-getClassName 方法，830、832
-
-getComment 方法，760
-
-getContentLength 方法，744、748
-
-getContentType 方法，744、748–749
-
-getContext 方法，732
-
-getContextPath 方法，767、772–773
-
-getCookies 方法，767–768、773
-
-getCreationTime 方法，784
-
-getDateHeader 方法，768、773
-
-getDeclare 方法，830、832
-
-getDefaultFactory 方法，797
-
-getDisplayName 方法，822
-
-getDomain 方法，761
-
-getEnclosingWriter 方法，810
-
-getEngineInfo 方法，797
-
-getException 方法，806
-
-getField 标签
-- 为 getField 开发标签处理器，256–257
-- 数据库查询示例中的 getField 函数，247、249
-
-getFilterConfig 方法，725
-
-getFilterName 方法，726
-
-getHeader 方法，768、773
-
-getHeaderNames 方法，768、773
-
-getHeaders 方法，768、773
-
-getId 方法，784、819、828
-
-getIdAttribute 方法，817
-
-getIds 方法，790
-
-getInfoString 方法，822、824
-
-getInitParameter 方法，726、727、731、733
-
-getInitParameterNames 方法，726、727、731、733
-
-getInitParameters 方法，826
-
-getInputStream 方法，744、749、815
-
-getIntHeader 方法，768、774
-
-getLargeIcon 方法，822
-
-getLastAccessedTime 方法，784
-
-getLastModified 方法，766
-
-getLocale 方法，744、749、753、756
-
-# G
-
-通用头，836
-
-生成的 Servlet 源代码
-- 生成的 Servlet 源代码调试，500
-- 将 .jsp 文件转换为生成的 Servlet 源代码，494
-
-通用数据库选择服务器，696–698、702
-
-GenericServlet 类，33–34、726–729
-
-GET 请求
-- GET 请求的基本技术，705
-- 从远程网络资源读取 GET 请求，705–710
-
-getAttribute 方法，732、743、748、784、805、819
-
-getAttributeNames 方法，732、743、748、784
-
-getAttributeNamesInScope 方法，805
-
-# 索引 855
-
-getLocales 方法，744、749
-
-getMajorVersion 方法，733
-
-getMaxAge 方法，761
-
-getMaxInactiveInterval 方法，784–785
-
-getMethod 方法，769、774
-
-getMimeType 方法，733
-
-getMinorVersion 方法，733
-
-getName 方法，736–737、761、788–789、817
-
-getNamedDispatcher 方法，733
-
-getNameFromAttribute 方法，830
-
-getNameGiven 方法，830
-
-getOut 方法，806
-
-getOutputStream 方法，753、755、756
-
-getPage 方法，806
-
-getPageContext 方法，797–798
-
-getParameter 方法，744–745、749
-
-getParameterMap 方法，745、749
-
-getParameterNames 方法，745、749–750
-
-getParameterValues 方法，745、750
-
-getParent 方法，816、828
-
-getPath 方法，761、774
-
-getPathInfo 方法，769、774
-
-getPathTranslated 方法，769、774
-
-getPrefixString 方法，825
-
-getPreviousOut 方法，813
-
-getProtocol 方法，745、750
-
-getQueryString 方法，769、774
-
-getReader 方法，745、750、811
-
-getRealPath 方法，733–734、745、750
-
-getReliableURN 方法，825
-
-getRemaining 方法，801
-
-getRemoteAddr 方法，746、750
-
-getRemoteHost 方法，746、750–751
-
-getRemoteUser 方法，769、774–775
-
-getRequest 方法，751、806
-
-getRequestDispatcher 方法，734、746、751
-
-getRequestedSessionId 方法，769–770、775
-
-getRequestURI 方法，770、775
-
-getRequestURL 方法，770、775、792
-
-getRequiredVersion 方法，825
-
-getResource 方法，734
-
-getResourceAsStream 方法，734
-
-getResourcePaths 方法，734
-
-getResponse 方法，756、806
-
-getRootCause 方法，796
-
-getScheme 方法，746、751
-
-getScope 方法，831、832
-
-getSecure 方法，761
-
-getServerName 方法，746、751
-
-getServerPath 方法，770
-
-getServerPort 方法，746–747、751
-
-getServlet 方法，735、759
-
-getServletConfig 方法，728、730、806
-
-getServletContext 方法，726、728、731、738、807
-
-getServletContextName 方法，735
-
-getServletInfo 方法，728、730、734
-
-getServletName 方法，728、732
-
-getServletNames 方法，735
-
-getServletPath 方法，770、775
-
-getServlets 方法，735
-
-getSession 方法，770–771、775–776、789、790、791、807
-
-getSessionContext 方法，785
-
-getShortName 方法，825
-
-getSmallIcon 方法，823
-
-getSpecificationVersion 方法，795
-
-getString 方法，811
-
-getTag 方法，825
-
-getTagClassName 方法，823
-
-getTagExtraInfo 方法，823
-
-getTagInfo 方法，820
-
-getTagLibrary 方法，823
-
-getTagName 方法，823
-
-getTags 方法，825
-
-getTagVariableInfos 方法，823
-
-getTypeName 方法，817
-
-getUnavailableSeconds 方法，759
-
-getURI 方法，825
-
-getUserPrincipal 方法，771、776
-
-getValue 方法，737、761、785、789、828
-
-getValueNames 方法，785
-
-getValues 方法，828
-
-getVariableInfo 方法，228–229、820、823
-
-getVarName 方法，832
-
-getVersion 方法，762
-
-getWebServerHeader 标签处理器，206–212
-
-getWriter 方法，753、756
-
-getXXX() 方法，331–332
-
-
+- 异常
+    - 使用 Servlet 显示异常，179
+    - DOM 解析器的异常，464
+    - 异常的错误页面，179、180
+    - 实现 BodyTag 接口的运行时异常，222
+- execute 方法，312–314
+- executeBatch 方法，314–316
+- executeQuery 方法，311–312
+- executeUpdate 方法，310–311
+- 表达式和脚本小程序，90–109
+    - application 隐式对象，98、103–104
+    - config 隐式对象，98、106
+    - 容器生成的初始化和退出代码，96–97
+    - 上下文层和 pageContext 隐式对象，100–101
+    - 表达式的分隔符，90、91
+    - exception 隐式对象，98、106
+    - 表达式定义，90–91
+    - JSP 容器的处理方式，65–66
+    - HTML 模板数据和表达式，94
+    - 可用的隐式对象，97–106
+    - 初始化参数，107–109
+    - out 隐式对象，98、104–105
+    - page 隐式对象，106
+    - request 隐式对象，97、98–100
+    - response 隐式对象，97、99–100
+    - 脚本小程序的示例代码，94–96
+    - 脚本小程序定义，91–93
+    - 表达式内的分号，70、91
+    - session 隐式对象，98、102–103
+    - 表达式的语法，69–70、85
+- 页面指令的 extends 属性，164–170、181
+    - JSP 超类的示例，166–170
+    - 概述，164、181
+    - JSP 超类所需的接口，164–166
+- 可扩展标记语言。*参见* XML
+- Externalizable 接口，416、424
+- 从结果集中提取数据，328–332
+
+## F
+
+- 文件选择元素，263
+- 文件上传输入字段，276–280
+- 文件名
+    - 问题 ID 的获取和设置方法，593
+    - 包含指令中的文件名，136–138
+    - `<jsp:include>` 动作中的文件名，140
+- 文件
+    - .class 文件，194
+    - 使用 Echo.jsp 调试文件，501–504
+    - 所包含文件更改的影响，138
+    - .jar 文件，535
+    - .java 文件，194
+    - .jsp 文件，64、194
+    - 上传文件的大小限制，277
+    - 将标签库映射到 web.xml，199–200
+    - JSP 页面的三种形式的文件，54–56、64、194
+    - .war 文件，535–537、549
+    - web.xml 文件，199–200、531、538–547
+    - *另请参阅* 文件名
+- FilterChain 类，725
+- FilterConfig 类，725–726
+- findAncestorWithClass 方法，828
+- findAttribute 方法，804–805
+- 流程图
+    - 体标签处理器生命周期流程图，223–226
+    - `<jsp:useBean>` 处理流程图，427、428、429、431
+    - 标签处理器生命周期流程图，203–205
+- flush 方法，800、810
+- flushBuffer 方法，752–753、755
+- forEachRow 标签
+    - 为 forEachRow 开发标签处理器，254–256
+    - 数据库查询示例中的 forEachRow 函数，247、248
+- FORM 元素
+    - accept 属性，267
+    - accept-charset 属性，267
+    - action 属性，264
+    - 属性，264–268
+    - enctype 属性，263、265–267
+    - 功能和语法，263–264
+    - method 属性，264–265
+    - name 属性，267–268
+- 表单输入元素，268–285
+    - 使用 INPUT 标签创建，270–282
+    - 使用 select 和 option 标签创建，283–284
+    - 说明性示例代码，268–270
+    - textarea 元素，284
+- 捕获表单参数
+    - 使用调试工具，501–504
+- forward 方法，729、805
+- 请求转发，154–158
+- 燃油效率转换表，27–31、56–60
+- 互联网的未来，4
+- getAttributes 方法，819、822
+- getAttributesScope 方法，805–806
+- getAttributeString 方法，747、819
+- getAuthType 方法，767、772
+- getBodyContent 方法，813、822
+- getBufferSize 方法，753、755、801
+- getCharacterEncoding 方法，743–744、748、753、755–756
+- getClassName 方法，830、832
+- getComment 方法，760
+- getContentLength 方法，744、748
+- getContentType 方法，744、748–749
+- getContext 方法，732
+- getContextPath 方法，767、772–773
+- getCookies 方法，767–768、773
+- getCreationTime 方法，784
+- getDateHeader 方法，768、773
+- getDeclare 方法，830、832
+- getDefaultFactory 方法，797
+- getDisplayName 方法，822
+- getDomain 方法，761
+- getEnclosingWriter 方法，810
+- getEngineInfo 方法，797
+- getException 方法，806
+- getField 标签
+    - 为 getField 开发标签处理器，256–257
+    - 数据库查询示例中的 getField 函数，247、249
+- getFilterConfig 方法，725
+- getFilterName 方法，726
+- getHeader 方法，768、773
+- getHeaderNames 方法，768、773
+- getHeaders 方法，768、773
+- getId 方法，784、819、828
+- getIdAttribute 方法，817
+- getIds 方法，790
+- getInfoString 方法，822、824
+- getInitParameter 方法，726、727、731、733
+- getInitParameterNames 方法，726、727、731、733
+- getInitParameters 方法，826
+- getInputStream 方法，744、749、815
+- getIntHeader 方法，768、774
+- getLargeIcon 方法，822
+- getLastAccessedTime 方法，784
+- getLastModified 方法，766
+- getLocale 方法，744、749、753、756
+
+## G
+
+- 通用头，836
+- 生成的 Servlet 源代码
+    - 生成的 Servlet 源代码调试，500
+    - 将 .jsp 文件转换为生成的 Servlet 源代码，494
+- 通用数据库选择服务器，696–698、702
+- GenericServlet 类，33–34、726–729
+- GET 请求
+    - GET 请求的基本技术，705
+    - 从远程网络资源读取 GET 请求，705–710
+- getAttribute 方法，732、743、748、784、805、819
+- getAttributeNames 方法，732、743、748、784
+- getAttributeNamesInScope 方法，805
+- getLocales 方法，744、749
+- getMajorVersion 方法，733
+- getMaxAge 方法，761
+- getMaxInactiveInterval 方法，784–785
+- getMethod 方法，769、774
+- getMimeType 方法，733
+- getMinorVersion 方法，733
+- getName 方法，736–737、761、788–789、817
+- getNamedDispatcher 方法，733
+- getNameFromAttribute 方法，830
+- getNameGiven 方法，830
+- getOut 方法，806
+- getOutputStream 方法，753、755、756
+- getPage 方法，806
+- getPageContext 方法，797–798
+- getParameter 方法，744–745、749
+- getParameterMap 方法，745、749
+- getParameterNames 方法，745、749–750
+- getParameterValues 方法，745、750
+- getParent 方法，816、828
+- getPath 方法，761、774
+- getPathInfo 方法，769、774
+- getPathTranslated 方法，769、774
+- getPrefixString 方法，825
+- getPreviousOut 方法，813
+- getProtocol 方法，745、750
+- getQueryString 方法，769、774
+- getReader 方法，745、750、811
+- getRealPath 方法，733–734、745、750
+- getReliableURN 方法，825
+- getRemaining 方法，801
+- getRemoteAddr 方法，746、750
+- getRemoteHost 方法，746、750–751
+- getRemoteUser 方法，769、774–775
+- getRequest 方法，751、806
+- getRequestDispatcher 方法，734、746、751
+- getRequestedSessionId 方法，769–770、775
+- getRequestURI 方法，770、775
+- getRequestURL 方法，770、775、792
+- getRequiredVersion 方法，825
+- getResource 方法，734
+- getResourceAsStream 方法，734
+- getResourcePaths 方法，734
+- getResponse 方法，756、806
+- getRootCause 方法，796
+- getScheme 方法，746、751
+- getScope 方法，831、832
+- getSecure 方法，761
+- getServerName 方法，746、751
+- getServerPath 方法，770
+- getServerPort 方法，746–747、751
+- getServlet 方法，735、759
+- getServletConfig 方法，728、730、806
+- getServletContext 方法，726、728、731、738、807
+- getServletContextName 方法，735
+- getServletInfo 方法，728、730、734
+- getServletName 方法，728、732
+- getServletNames 方法，735
+- getServletPath 方法，770、775
+- getServlets 方法，735
+- getSession 方法，770–771、775–776、789、790、791、807
+- getSessionContext 方法，785
+- getShortName 方法，825
+- getSmallIcon 方法，823
+- getSpecificationVersion 方法，795
+- getString 方法，811
+- getTag 方法，825
+- getTagClassName 方法，823
+- getTagExtraInfo 方法，823
+- getTagInfo 方法，820
+- getTagLibrary 方法，823
+- getTagName 方法，823
+- getTags 方法，825
+- getTagVariableInfos 方法，823
+- getTypeName 方法，817
+- getUnavailableSeconds 方法，759
+- getURI 方法，825
+- getUserPrincipal 方法，771、776
+- getValue 方法，737、761、785、789、828
+- getValueNames 方法，785
+- getValues 方法，828
+- getVariableInfo 方法，228–229、820、823
+- getVarName 方法，832
+- getVersion 方法，762
+- getWebServerHeader 标签处理器，206–212
+- getWriter 方法，753、756
+- getXXX() 方法，331–332
 
 ## H
 
-- `handlePageException` 方法，807
+- handlePageException 方法，807
 - 处理程序
-  - 用于SAX解析事件，474–475
-  - *另见* 主体标签处理程序API；标签处理程序API；标签处理程序
+    - 用于 SAX 解析事件，474–475
+    - *另见* 主体标签处理程序 API；标签处理程序 API；标签处理程序
 - 头部
-  - 使用Banner.jsp创建标准化头部，634
-  - 使用HTTP设置和检索Cookie，364
-  - HTTP头部语法，836
-  - HTTP头部表格，836–843
-  - 类型，836
-  - *另见* 响应头部
-- Shell类的帮助，626–627
+    - 使用 Banner.jsp 创建标准化头部，634
+    - 使用 HTTP 设置和检索 Cookie，364
+    - HTTP 头部语法，836
+    - HTTP 头部表格，836–843
+    - 类型，836
+    - *另见* 响应头部
+- Shell 类的帮助，626–627
 - 隐藏元素，263
 - 隐藏字段，280–281
-  - 使用会话API处理会话跟踪任务，374–378
-  - 使用隐藏字段进行会话跟踪，355–360
-  - 在隐藏字段中存储会话ID，50
+    - 使用会话 API 处理会话跟踪任务，374–378
+    - 使用隐藏字段进行会话跟踪，355–360
+    - 在隐藏字段中存储会话 ID，50
 - HTML（超文本标记语言）
-  - 模板中的数据和表达式，94
-  - 使用INPUT标签创建的表单输入元素，270–282
-  - 在JSP页面中整合动态内容，136
-  - XML与HTML对比，452–453
-- HTML表单，262–290
-  - 概述，262–263
-  - 向其中添加JavaScript脚本块，285
-  - FORM元素的属性，264–268
-  - 使用Echo.jsp进行调试，501–504
-  - 表单输入元素，268–285
-  - FORM元素的功能和语法，263–264
-  - 其中的隐藏字段，413
-  - 概览，289–290
-  - 服务器端表单处理，287–289
-  - 验证，285–287
-  - *另见* FORM元素；表单输入元素
+    - 模板中的数据和表达式，94
+    - 使用 INPUT 标签创建的表单输入元素，270–282
+    - 在 JSP 页面中整合动态内容，136
+    - XML 与 HTML 对比，452–453
+- HTML 表单，262–290
+    - 概述，262–263
+    - 向其中添加 JavaScript 脚本块，285
+    - FORM 元素的属性，264–268
+    - 使用 Echo.jsp 进行调试，501–504
+    - 表单输入元素，268–285
+    - FORM 元素的功能和语法，263–264
+    - 其中的隐藏字段，413
+    - 概览，289–290
+    - 服务器端表单处理，287–289
+    - 验证，285–287
+    - *另见* FORM 元素；表单输入元素
 - HTTP（超文本传输协议），12–21
-  - 概述，12
-  - 使用Tracer进行身份验证，526–528
-  - 连接到Web服务器，14
-  - 发展历程，6
-  - 请求示例，17–21
-  - 头部，836–843
-  - HTTP请求模型，13–14
-  - 服务器的HTTP响应，16–17
-  - 目的，354
-  - 服务器接收HTTP请求，16
-  - 带CGI脚本的请求，7
-  - 响应代码，834–835
-  - RFC规范，12–13
-  - 发送HTTP请求，15–16
-  - Servlet与HTTP会话，49–51
-  - 使用HTTP头部设置和检索Cookie，364
-  - 使用HTTP向客户端传递内容的技术，719
-  - 使用Tracer跟踪HTTP请求，510–528
-  - 头部类型，836
-  - 在会话中使用HttpSession接口，50–51
-- HTTP GET请求
-  - 基本技术，705
-  - 从远程网络资源读取，705–710
-- HTTP POST方法，694，702
-- `HttpJspPage`类，794–795
-- `HttpServlet`类，34–36，763–767
-- `HttpServletRequest`类，767–772
-- `HttpServletRequest`对象，内容，134
-- `HttpServletRequest`子接口，方法，39–41
-- `HttpServletRequestWrapper`类，772–777
-- `HttpServletResponse`类，43–44，777–780
-- `HttpServletResponseWrapper`类，780–783
-- `HttpSession`类，50–51，369，783–786
-- `HttpSessionActivationListener`类，786–787
-- `HttpSessionAttributesListener`类，787–788
-- `HttpSessionBindingEvent`类，370，788–789
-- `HttpSessionBindingListener`类，370，383–385，789
-- `HttpSessionContext`类，790
-- `HttpSessionEvent`类，790–791
-- `HttpSessionListener`类，791
-- `HttpURLConnection`类，683–684
-- `HttpUtils`类，791
+    - 概述，12
+    - 使用 Tracer 进行身份验证，526–528
+    - 连接到 Web 服务器，14
+    - 发展历程，6
+    - 请求示例，17–21
+    - 头部，836–843
+    - HTTP 请求模型，13–14
+    - 服务器的 HTTP 响应，16–17
+    - 目的，354
+    - 服务器接收 HTTP 请求，16
+    - 带 CGI 脚本的请求，7
+    - 响应代码，834–835
+    - RFC 规范，12–13
+    - 发送 HTTP 请求，15–16
+    - Servlet 与 HTTP 会话，49–51
+    - 使用 HTTP 头部设置和检索 Cookie，364
+    - 使用 HTTP 向客户端传递内容的技术，719
+    - 使用 Tracer 跟踪 HTTP 请求，510–528
+    - 头部类型，836
+    - 在会话中使用 HttpSession 接口，50–51
+- HTTP GET 请求
+    - 基本技术，705
+    - 从远程网络资源读取，705–710
+- HTTP POST 方法，694，702
+- `HttpJspPage` 类，794–795
+- `HttpServlet` 类，34–36，763–767
+- `HttpServletRequest` 类，767–772
+- `HttpServletRequest` 对象，内容，134
+- `HttpServletRequest` 子接口，方法，39–41
+- `HttpServletRequestWrapper` 类，772–777
+- `HttpServletResponse` 类，43–44，777–780
+- `HttpServletResponseWrapper` 类，780–783
+- `HttpSession` 类，50–51，369，783–786
+- `HttpSessionActivationListener` 类，786–787
+- `HttpSessionAttributesListener` 类，787–788
+- `HttpSessionBindingEvent` 类，370，788–789
+- `HttpSessionBindingListener` 类，370，383–385，789
+- `HttpSessionContext` 类，790
+- `HttpSessionEvent` 类，790–791
+- `HttpSessionListener` 类，791
+- `HttpURLConnection` 类，683–684
+- `HttpUtils` 类，791
 - 超文本标记语言。*参见* HTML
 - 超文本传输协议。*参见* HTTP
 
 ## I
 
-- `<jsp:useBean>`标签的`id`属性，425
+- `<jsp:useBean>` 标签的 `id` 属性，425
 - IDE（集成开发环境）
-  - 自定义标签与IDE对比，185
-  - 调试器，500
+    - 自定义标签与 IDE 对比，185
+    - 调试器，500
 - IETF（互联网工程任务组），12
 - 图像作为输入字段，281–282
 - 隐式对象
-  - 声明对隐式对象的访问，128
-  - application，98，103–104
-  - 在表达式和脚本片段中可用，97–106
-  - config，98，106
-  - exception，98，106
-  - out，98，104–105
-  - page，98，106
-  - pageContext，98，100–101
-  - request，97，98–100
-  - response，97，99–100
-  - session，102–103
-  - 语法，74–75
-  - *另见* 对象
-- 页面指令的`import`属性，170–171，181
-- `include`指令，136–140
-  - 使用注意事项，140
-  - 使用其复制源代码，139–140
-  - 使用`<jsp:include>`动作或`include`指令的标准，153，633
-  - 定义，67–68
-  - 所包含文件更改的影响，138
-  - 工作原理，137–138
-  - 语法，67，136
-- `include`方法，729–730，807
-- 页面指令的`info`属性，174，181
-- `init`方法，25–26，728，730–731
+    - 声明对隐式对象的访问，128
+    - application，98，103–104
+    - 在表达式和脚本片段中可用，97–106
+    - config，98，106
+    - exception，98，106
+    - out，98，104–105
+    - page，98，106
+    - pageContext，98，100–101
+    - request，97，98–100
+    - response，97，99–100
+    - session，102–103
+    - 语法，74–75
+    - *另见* 对象
+- 页面指令的 `import` 属性，170–171，181
+- `include` 指令，136–140
+    - 使用注意事项，140
+    - 使用其复制源代码，139–140
+    - 使用 `<jsp:include>` 动作或 `include` 指令的标准，153，633
+    - 定义，67–68
+    - 所包含文件更改的影响，138
+    - 工作原理，137–138
+    - 语法，67，136
+- `include` 方法，729–730，807
+- 页面指令的 `info` 属性，174，181
+- `init` 方法，25–26，728，730–731
 - 初始化参数
-  - 用于表达式和脚本片段，107–109
-  - 在编译的Java代码外指定，535
-- `initialize`方法，808
+    - 用于表达式和脚本片段，107–109
+    - 在编译的 Java 代码外指定，535
+- `initialize` 方法，808
 - `InitModel.jsp`，633
 - 内部类
-  - 定义，128
-  - 声明示例，129–130
-  - 功能，132
-  - 使用声明，128–131，132
+    - 定义，128
+    - 声明示例，129–130
+    - 功能，132
+    - 使用声明，128–131，132
 - 进程内模型，134
-- INPUT标签元素，270–282
-  - 按钮，282
-  - 复选框，273
-  - 文件上传输入字段，276–280
-  - 隐藏字段，280–281
-  - 图像输入字段，281–282
-  - 密码，272–273
-  - 单选按钮，274–275
-  - 重置控件，276
-  - 提交按钮，275–276
-  - 语法和属性，270–271
-  - 文本输入，271–272
+- INPUT 标签元素，270–282
+    - 按钮，282
+    - 复选框，273
+    - 文件上传输入字段，276–280
+    - 隐藏字段，280–281
+    - 图像输入字段，281–282
+    - 密码，272–273
+    - 单选按钮，274–275
+    - 重置控件，276
+    - 提交按钮，275–276
+    - 语法和属性，270–271
+    - 文本输入，271–272
 - 实例变量
-  - 声明和初始化，117–122，131–132
-  - 线程安全与实例变量，118–122
+    - 声明和初始化，117–122，131–132
+    - 线程安全与实例变量，118–122
 - `InstantDB`，299
 - 集成开发环境。*参见* IDE
 - 互联网
-  - 万维网的发展，6
-  - Web应用程序编程模型的演进，6–9
-  - 未来，4
-  - 关于HTTP规范的在线资源，12
+    - 万维网的发展，6
+    - Web 应用程序编程模型的演进，6–9
+    - 未来，4
+    - 关于 HTTP 规范的在线资源，12
 - 互联网工程任务组（IETF），12
 - 服务器端脚本技术的互操作性，704–705
-- `invalidate`方法，785
+- `invalidate` 方法，785
 - 调用存储过程，295，322–328
-- `isAutoFlush`方法，801
-- `isCommitted`方法，753，756
-- 页面指令的`isErrorPage`属性，176–180，181
-- `isNew`方法，785
+- `isAutoFlush` 方法，801
+- `isCommitted` 方法，753，756
+- 页面指令的 `isErrorPage` 属性，176–180，181
+- `isNew` 方法，785
 - 隔离故障组件，499–500
-- `isPermanent`方法，759
-- `isRequestedSessionIdFromCookie`方法，771，776
-- `isRequestedSessionIdFromURL`方法，771，776
-- `isRequestedSessionIdFromUrl`方法，771，776
-- `isRequestedSessionIdValid`方法，771，776
-- `isRequired`方法，818
-- `isSecure`方法，747，751–752
-- 页面指令的`isThreadSafe`属性，173–174，181
-- `isUserInRole`方法，772，777
-- `isValid`方法，820，824
-- `IterationTag`类，814
+- `isPermanent` 方法，759
+- `isRequestedSessionIdFromCookie` 方法，771，776
+- `isRequestedSessionIdFromURL` 方法，771，776
+- `isRequestedSessionIdFromUrl` 方法，771，776
+- `isRequestedSessionIdValid` 方法，771，776
+- `isRequired` 方法，818
+- `isSecure` 方法，747，751–752
+- 页面指令的 `isThreadSafe` 属性，173–174，181
+- `isUserInRole` 方法，772，777
+- `isValid` 方法，820、824
+- `IterationTag` 类，814
 
 ## J
 
-- J2EE（Java 2企业版），8，9
-- `.jar`文件，535
+- J2EE（Java 2 企业版），8，9
+- `.jar` 文件，535
 - Java
-  - 作为客户端的Applet，689–695
-  - 作为客户端的应用程序，684–689
-  - 将Servlet源代码编译为Java类，494
-  - Applet的演进，689
-  - JNDI带来的灵活性，293，295
-  - J2EE版本，8，9
-  - JavaBeans作为Java中的类，424–425
-  - 插件，690–691
-  - 将代码与JSP代码分离，134
-  - 为编译代码指定初始化参数，535
-  - *另见* JavaBeans；JAXP
-- Java 2企业版（J2EE），8，9
-- `.java`文件，194
-- 用于XML的Java API（JAXP）
-  - 对SAX 2.0的支持，481
-  - 用途，464
-- `java.net.HttpURLConnection`类，683–684
-- `java.net.URL`类，680–681
-- `java.net.URLConnection`类，682
-- Java运行时环境（JRE），712
-- `java.sql.CallableStatement`接口，322–328
-- `java.sql.PreparedStatement`子接口，317–322
-  - 使用其避免动态语法错误，320–322
-  - 批量更新示例，317–320
-  - 概述，317
-- `java.sql.Statement`接口
-  - `execute`方法，312–314
-  - `executeBatch`方法，314–316
-  - `executeQuery`方法，311–312
-  - `executeUpdate`方法，310–311
-  - 概述，309–310
-  - `PreparedStatement`子接口，317–322
-- `java.util.ResourceBundle`对象，365
+    - 作为客户端的 Applet，689–695
+    - 作为客户端的应用程序，684–689
+    - 将 Servlet 源代码编译为 Java 类，494
+    - Applet 的演进，689
+    - JNDI 带来的灵活性，293，295
+    - J2EE 版本，8，9
+    - JavaBeans 作为 Java 中的类，424–425
+    - 插件，690–691
+    - 将代码与 JSP 代码分离，134
+    - 为编译代码指定初始化参数，535
+    - *另见* JavaBeans；JAXP
+- Java 2 企业版（J2EE），8，9
+- `.java` 文件，194
+- 用于 XML 的 Java API（JAXP）
+    - 对 SAX 2.0 的支持，481
+    - 用途，464
+- `java.net.HttpURLConnection` 类，683–684
+- `java.net.URL` 类，680–681
+- `java.net.URLConnection` 类，682
+- Java 运行时环境（JRE），712
+- `java.sql.CallableStatement` 接口，322–328
+- `java.sql.PreparedStatement` 子接口，317–322
+    - 使用其避免动态语法错误，320–322
+    - 批量更新示例，317–320
+    - 概述，317
+- `java.sql.Statement` 接口
+    - `execute` 方法，312–314
+    - `executeBatch` 方法，314–316
+    - `executeQuery` 方法，311–312
+    - `executeUpdate` 方法，310–311
+    - 概述，309–310
+    - `PreparedStatement` 子接口，317–322
+- `java.util.ResourceBundle` 对象，365
 - JavaBeans，416–449
-  - 向门户网站网页添加自定义天气信息，444–448
-  - Bean属性，416–419
-  - 使用Bean自定义天气信息，434–444
-  - 定义，416
-  - 作为Java类，424–425
-  - `<jsp:getProperty>`标签，434，448，449
-  - `<jsp:setProperty>`标签，430–434，448，449
-  - `<jsp:useBean>`标签，425–430，448
-  - 概述，416，448–449
-  - Bean的持久化和序列化，416，419–424
-  - *另见* Java
+    - 向门户网站网页添加自定义天气信息，444–448
+    - Bean 属性，416–419
+    - 使用 Bean 自定义天气信息，434–444
+    - 定义，416
+    - 作为 Java 类，424–425
+    - `<jsp:getProperty>` 标签，434，448，449
+    - `<jsp:setProperty>` 标签，430–434，448，449
+    - `<jsp:useBean>` 标签，425–430，448
+    - 概述，416，448–449
+    - Bean 的持久化和序列化，416，419–424
+    - *另见* Java
 - JavaMail API
-  - 概述，719
-  - 文档资源，713
-  - 电子邮件选项，713–715
+    - 概述，719
+    - 文档资源，713
+    - 电子邮件选项，713–715
 - JavaServer Pages，54–60
-  - 带注释的示例，78–87
-  - 作为其他服务器的客户端，704，719
-  - 在其中创建支持模块，633–635
-  - 调试工具，500–501
-  - 为产品支持应用程序开发，555–556
-  - 发展历程，8
-  - DOM解析器示例，464–472
-  - 燃油效率转换表示例，56–60
-  - 形式，54–56，64，194
-  - 为声明生成代码，112–117
-  - JSP容器如何转换JSP页面，55，194–195
-  - 将自定义标签整合到JSP页面，192–194
-  - 对JDBC可访问数据库执行SQL SELECT查询，696–698
-  - 概述，54
-  - 向被包含页面传递参数，149–150，151
-  - 在JSP页面中使用Perl脚本和数据库选择服务器，696–698，702
-  - 插件，690–691
-  - 描述被包含页面的请求属性，152，153
-  - 范围，4
-  - 从JSP页面发送邮件，710–719
-  - 翻译和编译，494–499
-  - *另见* 测试和调试
+    - 带注释的示例，78–87
+    - 作为其他服务器的客户端，704，719
+    - 在其中创建支持模块，633–635
+    - 调试工具，500–501
+    - 为产品支持应用程序开发，555–556
+    - 发展历程，8
+    - DOM 解析器示例，464–472
+    - 燃油效率转换表示例，56–60
+    - 形式，54–56，64，194
+    - 为声明生成代码，112–117
+    - JSP 容器如何转换 JSP 页面，55，194–195
+    - 将自定义标签整合到 JSP 页面，192–194
+    - 对 JDBC 可访问数据库执行 SQL SELECT 查询，696–698
+    - 概述，54
+    - 向被包含页面传递参数，149–150，151
+    - 在 JSP 页面中使用 Perl 脚本和数据库选择服务器，696–698，702
+    - 插件，690–691
+    - 描述被包含页面的请求属性，152，153
+    - 范围，4
+    - 从 JSP 页面发送邮件，710–719
+    - 翻译和编译，494–499
+    - *另见* 测试和调试
 
-## JavaServer Pages元素，65–78
+### JavaServer Pages 元素，65–78
 
 - 注释，68–69
 - 声明，71–73，86–87
@@ -27206,14 +26071,14 @@ getXXX() 方法，331–332
 - 脚本片段，70–71，84
 - 类型，65
 
-## javax.servlet类，724–759
+### javax.servlet 类，724–759
 
-- `Filter`类，724–725
+- `Filter` 类，724–725
 - `FilterChain`，725
 - `FilterConfig`，725–726
 - `GenericServlet`，726–729
 - `RequestDispatcher`，729–730
-- `Servlet`类，730–731
+- `Servlet` 类，730–731
 - `ServletConfig`，731–732
 - `ServletContext`，732–736
 - `ServletContextAttributeEvent`，736–737
@@ -27230,7 +26095,7 @@ getXXX() 方法，331–332
 - `SingleThreadModel`，758
 - `UnavailableException`，758–759
 
-## javax.servlet.http类，760–792
+### javax.servlet.http 类，760–792
 
 - `Cookie`，760–763
 - `HttpServlet`，763–767
@@ -27248,7 +26113,7 @@ getXXX() 方法，331–332
 - `HttpSessionListener`，791
 - `HttpUtils`，791
 
-## javax.servlet.jsp类，794–810
+### javax.servlet.jsp 类，794–810
 
 - `HttpJspPage`，794–795
 - `JspEngineInfo`，795
@@ -27259,13 +26124,10 @@ getXXX() 方法，331–332
 - `JspWriter`，800–804
 - `PageContext`，804–809
 
+### javax.servlet.jsp.HttpJspPage 接口，164
+### javax.servlet.jsp.JspPage 接口，164
+### javax.servlet.jsp.tagext 类，810-832
 
-
-## javax.servlet.jsp
-
-`javax.servlet.jsp.HttpJspPage` 接口，164
-`javax.servlet.jsp.JspPage` 接口，164
-`javax.servlet.jsp.tagext` 类，810-832
 - `BodyContent`，810-811
 - `BodyTag`，811-812
 - `BodyTagSupport`，812-813
@@ -27283,8 +26145,8 @@ getXXX() 方法，331–332
 - `TryCatchFinally`，831
 - `VariableInfo`，831-832
 
-`javax.servlet.Servlet` 接口，32, 166, 730-731
-`javax.sql` 包，核心 API，293
+### javax.servlet.Servlet 接口，32, 166, 730-731
+### javax.sql 包，核心 API，293
 
 ## JAXP (Java API for XML)
 
@@ -27334,32 +26196,32 @@ getXXX() 方法，331–332
 
 ## JSP 动作和标签
 
-`<jsp:forward>` 动作，154-157
-`<jsp:getProperty>` 标签，434, 448, 449
-`<jsp:include>` 动作，140-153
-- 使用 include 指令或此动作的标准，153, 633
-- 示例，83-84
-- 功能，136, 141-143
-- 向被包含的 JSP 页面传递参数，149-150, 151
-- 限制，144
-- 检索原始 URI，150-153
-- 运行时特性，144-149
-- 语法，140
-`<jsp:setProperty>` 标签，430-434, 448, 449
-- `name` 属性，430
-- `param` 属性，433
-- `property` 属性，432-433
-- 语法，430
-- `value` 属性，433-434
-`<jsp:useBean>` 标签，425-430, 448
-- 仅指定 class，427-428
-- `id` 属性，425
-- `scope` 属性，425-426
-- 语法，425
-- 指定 type 和 beanName，429-430, 431
-- 指定 type 和 class，428-429
-- 仅指定 type，426-427
-- type 指定的有效组合，426
+- `<jsp:forward>` 动作，154-157
+- `<jsp:getProperty>` 标签，434, 448, 449
+- `<jsp:include>` 动作，140-153
+    - 使用 include 指令或此动作的标准，153, 633
+    - 示例，83-84
+    - 功能，136, 141-143
+    - 向被包含的 JSP 页面传递参数，149-150, 151
+    - 限制，144
+    - 检索原始 URI，150-153
+    - 运行时特性，144-149
+    - 语法，140
+- `<jsp:setProperty>` 标签，430-434, 448, 449
+    - `name` 属性，430
+    - `param` 属性，433
+    - `property` 属性，432-433
+    - 语法，430
+    - `value` 属性，433-434
+- `<jsp:useBean>` 标签，425-430, 448
+    - 仅指定 class，427-428
+    - `id` 属性，425
+    - `scope` 属性，425-426
+    - 语法，425
+    - 指定 type 和 beanName，429-430, 431
+    - 指定 type 和 class，428-429
+    - 仅指定 type，426-427
+    - type 指定的有效组合，426
 
 ## JSP 1.1 规范
 
@@ -27377,12 +26239,12 @@ getXXX() 方法，331–332
 
 794–832
 - 类和方法
-  - `javax.servlet.jsp`，794–810
-  - `javax.servlet.jsp.tagext` 类和方法，810–832
+    - `javax.servlet.jsp`，794–810
+    - `javax.servlet.jsp.tagext` 类和方法，810–832
 
 ## JSP 页面
 
-参见 JavaServer Pages；JSP API 1.2
+*参见* JavaServer Pages；JSP API 1.2
 
 ## JSP Price Quote 服务器
 
@@ -27642,7 +26504,7 @@ getXXX() 方法，331–332
 
 ### 模型-视图-控制器系统架构
 
-参见 MVC 系统架构
+*参见* MVC 系统架构
 
 ### 鼠标点击图像
 
@@ -27688,140 +26550,112 @@ getXXX() 方法，331–332
 
 ### 名称
 
-参见文件名
+*参见* 文件名
 
-
-
-## 864 JSP 完全参考
-
-- SAX 2.0 中的命名空间支持，480
-- JDBC 可滚动结果集的导航方法，333
-- 嵌套标签，236-237
-- newLine 方法，801
-- node 接口
-  - DOM 解析器的 node 接口，458-461
-  - 返回节点集合，462-463
-  - 其子接口，461-466
-- NodeList 接口，462，463
-- 非浏览器客户端，680
-- 猜数字游戏，360，374-378
-- ServletContextAttributesListener 类，737
-- ServletContextEvent 类，738
-- ServletContextListener 类，738-739
-- ServletException 类，739-740
-- ServletInputStream 类，740
-- ServletOutputStream 类，740-743
-- ServletRequest 类，743-747
-- ServletRequestWrapper 类，747-752
-- ServletResponse 类，752-755
-- ServletResponseWrapper 类，755-757
-- SingleThreadModel 类，758
-- UnavailableException 类，758-759
-
-**O**
+## O
 
 - 对象
-  - 序列化，420
-  - 在会话中存储和检索，372-373
-  - 与 servlet 上下文一起存储和共享，535
-  - *另见* 应用程序对象；业务对象；隐式对象
+    - 序列化，420
+    - 在会话中存储和检索，372-373
+    - 与 servlet 上下文一起存储和共享，535
+    - *另见* 应用程序对象；业务对象；隐式对象
 - 在线职位申请
-  - 表单参数，504
-  - 用于调试的示例代码，501-504
+    - 表单参数，504
+    - 用于调试的示例代码，501-504
 - 打开数据库连接，294，295
 - 可选的响应描述，17
 - out 隐式对象，98，104-105
 - 覆盖 jspInit() 和 jspDestroy() 方法，126-127
 - 包 javax.servlet.http，760-792
-  - Cookie 类，760-763
-  - HttpServlet 类，763-767
-  - HttpServletRequest 类，767-772
-  - HttpServletRequestWrapper 类，772-777
-  - HttpServletResponse 类，777-780
-  - HttpServletResponseWrapper 类，780-783
-  - HttpSession 类，783-786
-  - HttpSessionActivationListener 类，786-787
-  - HttpSessionAttributeListener 类，787-788
-  - HttpSessionBindingEvent 类，788-789
-  - HttpSessionBindingListener 类，789
-  - HttpSessionContext 类，790
-  - HttpSessionEvent 类，790-791
-  - HttpSessionListener 类，791
-  - HttpUtils 类，791
+    - Cookie 类，760-763
+    - HttpServlet 类，763-767
+    - HttpServletRequest 类，767-772
+    - HttpServletRequestWrapper 类，772-777
+    - HttpServletResponse 类，777-780
+    - HttpServletResponseWrapper 类，780-783
+    - HttpSession 类，783-786
+    - HttpSessionActivationListener 类，786-787
+    - HttpSessionAttributeListener 类，787-788
+    - HttpSessionBindingEvent 类，788-789
+    - HttpSessionBindingListener 类，789
+    - HttpSessionContext 类，790
+    - HttpSessionEvent 类，790-791
+    - HttpSessionListener 类，791
+    - HttpUtils 类，791
 
-**P**
+## P
 
 - 包 javax.servlet，724-759
-  - Filter 类，724-725
-  - FilterChain 类，725
-  - FilterConfig 类，725-726
-  - GenericServlet 类，726-729
-  - RequestDispatcher 类，729-730
-  - Servlet 类，730-731
-  - ServletConfig 类，731-732
-  - ServletContext 类，732-736
-  - ServletContextAttributeEvent 类，736-737
+    - Filter 类，724-725
+    - FilterChain 类，725
+    - FilterConfig 类，725-726
+    - GenericServlet 类，726-729
+    - RequestDispatcher 类，729-730
+    - Servlet 类，730-731
+    - ServletConfig 类，731-732
+    - ServletContext 类，732-736
+    - ServletContextAttributeEvent 类，736-737
 - 包 javax.servlet.jsp，794-810
-  - HttpJspPage 类，794-795
-  - JspEngineInfo 类，795
-  - JspException 类，795-796
-  - JspFactory 类，796-798
-  - JspPage 类，798-799
-  - JspTagException 类，799-800
-  - JspWriter 类，800-804
-  - PageContext 类，804-809
+    - HttpJspPage 类，794-795
+    - JspEngineInfo 类，795
+    - JspException 类，795-796
+    - JspFactory 类，796-798
+    - JspPage 类，798-799
+    - JspTagException 类，799-800
+    - JspWriter 类，800-804
+    - PageContext 类，804-809
 - 包 javax.servlet.jsp.tagext，810-832
-  - BodyContent 类，810-811
-  - BodyTag 类，811-812
-  - BodyTagSupport 类，812-813
-  - IterationTag 类，814
-  - PageData 类，814-815
-  - TagAttributeInfo 类，816-818
-  - TagData 类，818-819
-  - TagLibraryInfo 类，824-825
-  - TagLibraryValidator 类，826
-  - TagSupport 类，827-829
-  - TryCatchFinally 类，831
-  - VariableInfo 类，831-832
+    - BodyContent 类，810-811
+    - BodyTag 类，811-812
+    - BodyTagSupport 类，812-813
+    - IterationTag 类，814
+    - PageData 类，814-815
+    - TagAttributeInfo 类，816-818
+    - TagData 类，818-819
+    - TagLibraryInfo 类，824-825
+    - TagLibraryValidator 类，826
+    - TagSupport 类，827-829
+    - TryCatchFinally 类，831
+    - VariableInfo 类，831-832
 - 包 javax.sql，293
 - 页面计数器，360-363，378-379
 - 页面指令，162-181
-  - 其属性，66-67，162，181
-  - 其 buffer 和 autoFlush 属性，172-173，181
-  - 其 contentType 属性，174，181
-  - 其 errorPage 和 isErrorPage 属性，176-180，181
-  - 其 extends 属性，164-170，181
-  - 其 import 属性，170-171，181
-  - 其 info 属性，174，181
-  - 其 isThreadSafe 属性，173-174，181
-  - 其 language 属性，162-164，181
-  - 其 session 属性，172，181
-  - 指定属性，171
-  - 语法，162
+    - 其属性，66-67，162，181
+    - 其 buffer 和 autoFlush 属性，172-173，181
+    - 其 contentType 属性，174，181
+    - 其 errorPage 和 isErrorPage 属性，176-180，181
+    - 其 extends 属性，164-170，181
+    - 其 import 属性，170-171，181
+    - 其 info 属性，174，181
+    - 其 isThreadSafe 属性，173-174，181
+    - 其 language 属性，162-164，181
+    - 其 session 属性，172，181
+    - 指定属性，171
+    - 语法，162
 - page 隐式对象，98，106
 - 页面作用域，411
 - PageContext 类，804-809
 - pageContext 隐式对象，100-101
-  - 定义，98
-  - 作为参数从 _jspService() 传递，128
+    - 定义，98
+    - 作为参数从 _jspService() 传递，128
 - PageData 类，814-815
-- <jsp:setProperty> 标签的 param 属性，433
+- `<jsp:setProperty>` 标签的 param 属性，433
 - 参数
-  - 通过捕获表单进行调试，501-504
-  - 在编译后的 Java 代码外部指定初始化参数，535
+    - 通过捕获表单进行调试，501-504
+    - 在编译后的 Java 代码外部指定初始化参数，535
 - parsePostData 方法，792
 - parseQueryString 方法，792
 - Parser 接口，473-474
 - 解析器，457-485
-  - DOM，457，458-472，491
-  - SAX，472-473
-  - *另见* DOM 解析器；SAX 解析器
+    - DOM，457，458-472，491
+    - SAX，472-473
+    - *另见* DOM 解析器；SAX 解析器
 - 密码，作为输入元素，272-273
 - PDA（个人数字助理），数据库连接，338
 - 性能
-  - 使用 <jsp:include> 动作或 include 指令的标准，153
-  - 通过请求分派消除冗余，134
-  - servlet 及其改进，24
+    - 使用 `<jsp:include>` 动作或 include 指令的标准，153
+    - 通过请求分派消除冗余，134
+    - servlet 及其改进，24
 - Perl 客户端，696-701
 - Perl 数据库搜索脚本，699-701
 - PHP，704
@@ -27830,8 +26664,8 @@ getXXX() 方法，331–332
 - 预编译 JSP 页面，499
 - PreparedStatement 接口，295，317-322
 - 防止
-  - 多余的空白符，696
-  - 换行符，687
+    - 多余的空白符，696
+    - 换行符，687
 - 报价客户端应用程序，687-689
 - PriceQuoteApplet，691-696
 - print 方法，741-742，801-802
@@ -27840,53 +26674,52 @@ getXXX() 方法，331–332
 - Problem.jsp 视图页面，643-647
 - ProblemLog 类，584-587
 - 问题
-  - 问题详情页面，643，656
-  - 问题选择页面，657
-  - 问题更新页面，659
-  - 按产品分类的问题页面，655
-  - 作为产品支持应用程序的系统入口点，631，632
+    - 问题详情页面，643，656
+    - 问题选择页面，657
+    - 问题更新页面，659
+    - 按产品分类的问题页面，655
+    - 作为产品支持应用程序的系统入口点，631，632
 - Problems.jsp 视图页面，657-658
 - ProblemSubmitAction 类，674-675
 - 处理流程
-  - 呼叫中心代理的角色，552，553，554
-  - 开发人员的角色，552，553，554
-  - 产品支持专员的角色，552，553，554
+    - 呼叫中心代理的角色，552，553，554
+    - 开发人员的角色，552，553，554
+    - 产品支持专员的角色，552，553，554
 - 处理结果集，294，295
 - 产品目录示例
-  - 由 XSLT 生成，487-491
-  - 使用 XML DOM 解析器搜索，464-472
-  - XML SAX 1.0 解析器搜索，476-480
-  - XML SAX 2.0 解析器搜索，480-485
+    - 由 XSLT 生成，487-491
+    - 使用 XML DOM 解析器搜索，464-472
+    - XML SAX 1.0 解析器搜索，476-480
+    - XML SAX 2.0 解析器搜索，480-485
 - Product 类，561-565
 - 产品支持应用程序，552-676
-  - 其确认页面，649，657，660
-  - 其控制器类，658-675
-  - 其客户详情页面，639
-  - 其客户搜索页面，636
-  - 其数据模型，554-555
-  - 为其开发 JSP 页面，555-556
-  - 其中的电子邮件通知，715-719
-  - 其模型类，557-631
-  - 其中的 MVC 系统架构，556-676
-  - 概述，552，676
-  - 其问题详情页面，643，656
-  - 其问题选择页面，657
-  - 其问题更新页面，659
-  - 其按产品分类的问题页面，655
-  - 其处理流程，552-554，676
-  - 产品搜索页面，650
-  - 系统入口点，631，632
-  - 模型测试框架，615-630
-  - 其视图类，631-658
-  - *另见* MVC 系统架构；视图页面
+    - 其确认页面，649，657，660
+    - 其控制器类，658-675
+    - 其客户详情页面，639
+    - 其客户搜索页面，636
+    - 其数据模型，554-555
+    - 为其开发 JSP 页面，555-556
+    - 其中的电子邮件通知，715-719
+    - 其模型类，557-631
+    - 其中的 MVC 系统架构，556-676
+    - 概述，552，676
+    - 其问题详情页面，643，656
+    - 其问题选择页面，657
+    - 其问题更新页面，659
+    - 其按产品分类的问题页面，655
+    - 产品搜索页面，650
+    - 系统入口点，631，632
+    - 模型测试框架，615-630
+    - 其视图类，631-658
+    - *另见* MVC 系统架构；视图页面
 - 产品支持专员在处理流程中，552，553，554
 - ProductParser 类，479
 - ProductProblems.jsp 视图页面，653-657
 - 产品
-  - 按产品分类的问题页面，655
-  - 产品搜索页面，650
-  - 产品列表页面，653
-  - 作为产品支持应用程序的系统入口点，631，632
+    - 按产品分类的问题页面，655
+    - 产品搜索页面，650
+    - 产品列表页面，653
+    - 作为产品支持应用程序的系统入口点，631，632
 - Products.jsp 视图页面，649-650
 - products Web 应用程序，536
 - ProductsList.jsp 视图页面，650-653
@@ -27895,9 +26728,9 @@ getXXX() 方法，331–332
 - ProductsSelectAction 类，672-673
 - Web 应用程序的编程模型，6-9
 - 属性
-  - bean，416-419
-  - weather Observation bean 的属性，435
-- <jsp:setProperty> 标签的 property 属性，432-433
+    - bean，416-419
+    - weather Observation bean 的属性，435
+- `<jsp:setProperty>` 标签的 property 属性，432-433
 - 协议无关的 servlet，34
 - 协议，12
 - pushBody 方法，808
@@ -27911,8 +26744,8 @@ getXXX() 方法，331–332
 ## R
 
 - 单选按钮
-  - 定义，263
-  - 作为输入字段，274-275
+    - 定义，263
+    - 作为输入字段，274-275
 - 从远程网络资源读取输入流，705-710
 - readLine 方法，740
 - 只读变量，在变量声明中，122
@@ -27924,377 +26757,498 @@ getXXX() 方法，331–332
 - removeValue 方法，786，829
 - 描述被包含 JSP 页面的请求属性，152，153
 - 请求分派，134-160
-  - 关于，134，160
-  - 用于包含其他资源的组件，136
-  - 创建 RequestDispatcher 对象，158
-  - 转发请求，154-158
-  - include 指令，136-140，153
-  - 在 JSP 页面中合并动态内容，136
-  - <jsp:include> 动作，83-84，136，140-153
-  - 模型 1 与模型 2，159-160
-  - 进程外 servlet 引擎模型，134-135
-  - 重定向与请求分派，159
-  - 选择 include 指令或 <jsp:include> 动作，153
-  - servlet 上下文在其中的作用，535
-  - 将内容从表示中分离，134，154-157
+    - 关于，134，160
+    - 用于包含其他资源的组件，136
+    - 创建 RequestDispatcher 对象，158
+    - 转发请求，154-158
+    - include 指令，136-140，153
+    - 在 JSP 页面中合并动态内容，136
+    - `<jsp:include>` 动作，83-84，136，140-153
+    - 模型 1 与模型 2，159-160
+    - 进程外 servlet 引擎模型，134-135
+    - 重定向与请求分派，159
+    - 选择 include 指令或 `<jsp:include>` 动作，153
+    - servlet 上下文在其中的作用，535
+    - 将内容从表示中分离，134，154-157
 - 征求意见稿（RFC），定义，12
 - 请求处理函数
-  - 在 HTTP 跟踪工具中，511
-  - 在 Tracer 调试工具中，519-525
+    - 在 HTTP 跟踪工具中，511
+    - 在 Tracer 调试工具中，519-525
 - 请求头，836
 - 请求隐式对象，97，98-100
 - 请求行，15
 - 请求作用域，411-412
 - RequestDispatcher 类，729-730
 - 请求
-  - HTTP 请求示例，17-21
-  - HTTP 请求模型，13-14
-  - 发送 HTTP 请求，15-16
+    - HTTP 请求示例，17-21
+    - HTTP 请求模型，13-14
+    - 发送 HTTP 请求，15-16
 - 重置控件，276
 - reset 方法，754，756
 - resetBuffer 方法，754，757
 - 资源映射，532-535
 - ResourceBundle 对象，365
 - 响应代码
-  - 定义，16
-  - 服务器的 HTTP 响应，16-17
-  - 服务器接收 HTTP 请求，16
-  - HTTP 响应代码表，834-835
+    - 定义，16
+    - 服务器的 HTTP 响应，16-17
+    - 服务器接收 HTTP 请求，16
+    - HTTP 响应代码表，834-835
 - 响应头
-  - 定义，836
-  - 从静态字符串数组显示，146，147
-  - <jsp:include> 动作无法设置，144
-  - 使用 HTTP 设置和检索 cookie，364
+    - 定义，836
+    - 从静态字符串数组显示，146，147
+    - `<jsp:include>` 动作无法设置，144
+    - 使用 HTTP 设置和检索 cookie，364
 - 响应隐式对象，97，99-100
 - 表达式和脚本片段中的 response 变量，99-100
 - 结果集，328-338
-  - 定义，328
-  - 从中提取数据，328-332
-  - ResultSet 对象提供的 getXXX() 方法，331-332
-  - RowSet 接口，338
-  - 可滚动，332-336，337
-  - 可更新，336-338
+    - 定义，328
+    - 从中提取数据，328-332
+    - ResultSet 对象提供的 getXXX() 方法，331-332
+    - RowSet 接口，338
+    - 可滚动，332-336，337
+    - 可更新，336-338
 - ResultSetMetaData 方法，296，349-350
 - 标签库中的可重用代码，185
 - URL 重写，378-379，413
 - RFC（征求意见稿）
-  - 定义，12
-  - HTTP 规范，12-13
+    - 定义，12
+    - HTTP 规范，12-13
 - RowSet 接口，338
 - run 方法，620-626
 - runQuery 标签
-  - 为其开发标签处理器，252-253
-  - 在数据库查询示例中的功能，247，248
+    - 为其开发标签处理器，252-253
+    - 在数据库查询示例中的功能，247，248
 - 运行时处理
-  - 区分编译和错误，499
-  - 在运行时执行 BodyTag 接口时的异常，222
-  - <jsp:include> 动作在运行时的特性，144-149
-  - products Web 应用程序在运行时的结构，536
+    - 区分编译和错误，499
+    - 在运行时执行 BodyTag 接口时的异常，222
+    - `<jsp:include>` 动作在运行时的特性，144-149
+    - products Web 应用程序在运行时的结构，536
 - 示例代码
-  - Action 类的代码，660-662
-  - 向门户网站网页添加自定义天气信息，444-448
-  - BornBetween 查询示例，324-328
-  - “联系我们”表单的代码，285-287
-  - 将美元转换为加元的代码，705-710
-
-
-
-## 索引
-
-+   应用程序发送电子邮件的选项，710
-    从远程网络资源读取，705-710
-    从JSP页面发送邮件，710-719
-    通过TCP/IP套接字使用SMTP发送邮件，711-712
-    sun.net.smtp.SmtpClient类
-    - 电子邮件选项，712
-    提供动态内容的技术，704
-service方法，26-27、729、731、766-767
-<servlet>标签，30
-用于Web应用程序部署的Servlet 2.2规范，530、549
-Servlet API 2.3版，724-792
-- 关于已弃用的类和方法，724
-- javax.servlet类，724-759
-- javax.servlet.http类，760-792
-- 另请参阅 javax.servlet类；javax.servlet.http类
-servlet上下文，44-47
-- 功能，535
-- ServletContext接口中的方法，45-47
-- 存储引用，45
-servlet引擎
-- 调用destroy()方法，27
-- 定义，24
-- 功能，25
-- 使用<jsp:include>操作调用URL，136
-- 进程外模型，135
-- 在隔离测试期间重启，500
-- 另请参阅 servlets
-Servlet接口，32、166、730-731
-servlet请求对象，在进程外servlet引擎模型中，135
-servlet响应对象
-- 功能，41
-- 在进程外servlet引擎模型中，135
-servlet线程模型，47-49、403-406
-- 默认线程模型，403-405
-+   单线程模型，405-406
-- 类型，403
-- 另请参阅 单线程模型
-ServletConfig类，731-732
-ServletContext类，732-736
-ServletContextAttributeEvent类，736-737
-ServletContextAttributesListener类，737
-ServletContextEvent类，738
-ServletContextListener类，738-739
-ServletException类，739-740
-ServletInputStream类，740
-部署描述符的<servlet-mapping>元素，533
-ServletOutputStream类，740-743
-ServletRequest类
-- 使用静态String数组显示属性，146-147、148
-- 方法，36-38、743-747
-ServletRequestWrapper类，747-752
-ServletResponse接口，41-43
-ServletResponseWrapper类，755-757
-servlets，24-52
-- 类，31-47
-- 将servlet源代码编译为Java类文件，494
-- 控制器，662-666
-- 创建燃油效率转换表，27-31、56-60
-- 为隔离测试删除旧副本，499-500
-- destroy方法，27
-- 使用servlet显示错误消息和异常，179
-- GenericServlet类，33-34
-- HTTP会话，49-51
-- HttpServlet类方法，34-36
-- HttpServletResponse接口方法，43-44
-- init方法，25-26
-- javax.servlet.Servlet接口，32、166、730-731
-- 生命周期，24-27
-- 在servlet内复制方法定义，123
-- 使用的方法，25
-覆盖jspInit和jspDestroy方法，126-127
-概述，24、52
-标签处理器与servlet交互的示例代码，206-212
-service方法，26-27
-Servlet Context接口方法，45-47
-ServletRequest接口，36-38
-ServletResponse接口方法，41-43
-将.jsp文件翻译为生成的servlet源代码，494
-使用servlet的Web应用程序，6
-*另请参阅* servlet引擎
-
-会话和线程管理，354-414
-应用程序注意事项，411-413
-多线程应用程序，406-410
-概述，354、413-414
-servlet线程模型，403-406
-
-会话API，369-390
-
-会话跟踪，354-369
-
-线程管理，390-403
+    - Action 类的代码，660-662
+    - 向门户网站网页添加自定义天气信息，444-448
+    - BornBetween 查询示例，324-328
+    - “联系我们”表单的代码，285-287
+    - 将美元转换为加元的代码，705-710
+    - 应用程序发送电子邮件的选项，710
+    - 从远程网络资源读取，705-710
+    - 从 JSP 页面发送邮件，710-719
+    - 通过 TCP/IP 套接字使用 SMTP 发送邮件，711-712
+    - sun.net.smtp.SmtpClient 类
+        - 电子邮件选项，712
+    - 提供动态内容的技术，704
+- service 方法，26-27、729、731、766-767
+- `<servlet>` 标签，30
+- 用于 Web 应用程序部署的 Servlet 2.2 规范，530、549
+- Servlet API 2.3 版，724-792
+    - 关于已弃用的类和方法，724
+    - javax.servlet 类，724-759
+    - javax.servlet.http 类，760-792
+    - *另请参阅* javax.servlet 类；javax.servlet.http 类
+- servlet 上下文，44-47
+    - 功能，535
+    - ServletContext 接口中的方法，45-47
+    - 存储引用，45
+- servlet 引擎
+    - 调用 destroy() 方法，27
+    - 定义，24
+    - 功能，25
+    - 使用 `<jsp:include>` 操作调用 URL，136
+    - 进程外模型，135
+    - 在隔离测试期间重启，500
+    - *另请参阅* servlets
+- Servlet 接口，32、166、730-731
+- servlet 请求对象，在进程外 servlet 引擎模型中，135
+- servlet 响应对象
+    - 功能，41
+    - 在进程外 servlet 引擎模型中，135
+- servlet 线程模型，47-49、403-406
+    - 默认线程模型，403-405
+    - 单线程模型，405-406
+    - 类型，403
+    - *另请参阅* 单线程模型
+- ServletConfig 类，731-732
+- ServletContext 类，732-736
+- ServletContextAttributeEvent 类，736-737
+- ServletContextAttributesListener 类，737
+- ServletContextEvent 类，738
+- ServletContextListener 类，738-739
+- ServletException 类，739-740
+- ServletInputStream 类，740
+- 部署描述符的 `<servlet-mapping>` 元素，533
+- ServletOutputStream 类，740-743
+- ServletRequest 类
+    - 使用静态 String 数组显示属性，146-147、148
+    - 方法，36-38、743-747
+- ServletRequestWrapper 类，747-752
+- ServletResponse 接口，41-43
+- ServletResponseWrapper 类，755-757
+- servlets，24-52
+    - 类，31-47
+    - 将 servlet 源代码编译为 Java 类文件，494
+    - 控制器，662-666
+    - 创建燃油效率转换表，27-31、56-60
+    - 为隔离测试删除旧副本，499-500
+    - destroy 方法，27
+    - 使用 servlet 显示错误消息和异常，179
+    - GenericServlet 类，33-34
+    - HTTP 会话，49-51
+    - HttpServlet 类方法，34-36
+    - HttpServletResponse 接口方法，43-44
+    - init 方法，25-26
+    - javax.servlet.Servlet 接口，32、166、730-731
+    - 生命周期，24-27
+    - 在 servlet 内复制方法定义，123
+    - 使用的方法，25
+    - 覆盖 jspInit 和 jspDestroy 方法，126-127
+    - 概述，24、52
+    - 标签处理器与 servlet 交互的示例代码，206-212
+    - service 方法，26-27
+    - Servlet Context 接口方法，45-47
+    - ServletRequest 接口，36-38
+    - ServletResponse 接口方法，41-43
+    - 将 .jsp 文件翻译为生成的 servlet 源代码，494
+    - 使用 servlet 的 Web 应用程序，6
+    - *另请参阅* servlet 引擎
+
+## 会话和线程管理
+
+354-414
+- 应用程序注意事项，411-413
+- 多线程应用程序，406-410
+- 概述，354、413-414
+- servlet 线程模型，403-406
+
+## 会话 API
+
+369-390
+
+## 会话跟踪
+
+354-369
 
-会话API，369-390
-包含的类，369
-创建会话，370-372
-销毁会话，373-374
-使用会话API处理隐藏字段跟踪任务，374-378
-使用会话API重写URL，378-379
-会话绑定监听器，383-390
-通过会话API管理会话，369、414
-会话跟踪机制，371-372
-使用会话API设置会话语言首选项，379-382
-从会话存储和检索对象，372-373
-*另请参阅* 会话
+## 线程管理
 
-页面指令的session属性，172、181
+390-403
 
-会话绑定监听器，383-390
+### 会话 API
 
-会话隐式对象，98、102-103
+369-390
+- 包含的类，369
+- 创建会话，370-372
+- 销毁会话，373-374
+- 使用会话 API 处理隐藏字段跟踪任务，374-378
+- 使用会话 API 重写 URL，378-379
+- 会话绑定监听器，383-390
+- 通过会话 API 管理会话，369、414
+- 会话跟踪机制，371-372
+- 使用会话 API 设置会话语言首选项，379-382
+- 从会话存储和检索对象，372-373
+- *另请参阅* 会话
 
-会话作用域，412
+### 页面指令的 session 属性
 
-会话跟踪，354-369
-使用cookies，363-369、371-372、413-414
+172、181
 
-使用隐藏字段，355-360
-通过会话API管理，369、414
-使用URL重写，360-363
-使用会话API，369
+### 会话绑定监听器
 
-sessionCreated方法，791
+383-390
 
-sessionDestroyed方法，791
+### 会话隐式对象
 
-sessionDidActivate方法，787
+98、102-103
 
-会话
-将会话ID附加到URL，50
-创建会话，370-372
-将视图页面模型声明为会话bean，633
-为隔离测试删除会话，500
-销毁会话，373-374
-使用会话API管理，369、371-372、414
-设置会话语言首选项，379-382
-从会话存储和检索对象，372-373
-*另请参阅* 会话API
+### 会话作用域
 
-sessionWillPassivate方法，787
+412
 
-setAttribute方法，736、747、752、786、809、819
+### 会话跟踪
 
-setBodyContent方法，812、813
+354-369
+- 使用 cookies，363-369、371-372、413-414
+- 使用隐藏字段，355-360
+- 通过会话 API 管理，369、414
+- 使用 URL 重写，360-363
+- 使用会话 API，369
 
-setBufferSize方法，754
+### sessionCreated 方法
 
-setCharacterEncoding方法，747、752
+791
 
-setComment方法，762
+### sessionDestroyed 方法
 
-setContentLength方法，754、757
+791
 
-setContentType方法，754、757
+### sessionDidActivate 方法
 
-setDateHeader方法，779、782
+787
 
-setDefaultFactory方法，798
+### 会话
 
-setDomain方法，762
+- 将会话 ID 附加到 URL，50
+- 创建会话，370-372
+- 将视图页面模型声明为会话 bean，633
+- 为隔离测试删除会话，500
+- 销毁会话，373-374
+- 使用会话 API 管理，369、371-372、414
+- 设置会话语言首选项，379-382
+- 从会话存储和检索对象，372-373
+- *另请参阅* 会话 API
 
-setFilterConfig方法，725
+### sessionWillPassivate 方法
 
-setHeader方法，779、783
+787
 
-setId方法，829
+### setAttribute 方法
 
-setInitParameters方法，826
+736、747、752、786、809、819
 
-setIntHeader方法，779、783
+### setBodyContent 方法
 
-setLocale方法，754-755、757
+812、813
 
-setMaxAge方法，762
+### setBufferSize 方法
 
-setMaxInactiveInterval方法，786
+754
 
-setPageContext方法，816、829
+### setCharacterEncoding 方法
 
-setParent方法，816、829
+747、752
 
-setPath方法，762
+### setComment 方法
 
-setRequest方法，752
+762
 
-setResponse方法，757
+### setContentLength 方法
 
-setSecure方法，763
+754、757
 
-setStatus方法，779、780、783
+### setContentType 方法
 
-setTagExtraInfo方法，824
+754、757
 
-setTagInfo方法，821
+### setDateHeader 方法
 
-setTagLibrary方法，824
+779、782
 
-setValue方法，763、829
+### setDefaultFactory 方法
 
-setVersion方法，763
+798
 
-+   Shell类，616-630
-    类方法，616-617
-    构造函数，567-568
-    建立数据库连接，628-630
-    列出可用方法，627-628
-    主读/执行循环，618-620
-    概述，616
-    打开字符行读取器的run()方法，620-626
-    输入help命令，626-627
-    与Model类协同编写，630-631
+### setDomain 方法
 
-用于XML解析器的简单API。
-    参见SAX解析器
+762
 
-+   单线程模型
-    避免线程冲突，49、173
-    定义，403、405-406
-    图示，406
-    局限性，174
+### setFilterConfig 方法
 
-SingleThreadModel类，758
+725
 
-SKIP_BODY返回码，205
+### setHeader 方法
 
-+   SMTP（简单邮件传输协议），
-    使用SMTP发送邮件，711-712
+779、783
 
-+   源代码
-    为标签处理器编译，191
-    使用include指令复制，139-140
-    调试生成的servlet，500
-    开发并翻译为servlet，494
-    ControllerServlet源代码清单，662-666
-    Model类源代码，588-615
+### setId 方法
 
-特殊字符，非空白字符，265
+829
 
-+   SQL语句
-    在JDBC数据库中执行，294、295
+### setInitParameters 方法
 
-+   JDBC中的SQL语句接口，309-328
-    另请参阅 Statement接口
+826
 
-使用Banner.jsp标准化头部，634
+### setIntHeader 方法
 
-状态隐藏字段，359
+779、783
 
-+   Statement接口，309-328
-    定义，294-295
-    execute方法，312-314
-    executeBatch方法，314-316
-    executeQuery方法，311-312
-    executeUpdate方法，310-311
-    使用CallableStatement接口调用存储过程，295、322-328
-    基本概述，309-310
-    PreparedStatement子接口，317-322
+### setLocale 方法
 
-静态文档服务器模型，6
+754-755、757
 
-HTTP中的状态行标记，16-17
+### setMaxAge 方法
 
-+   使用CallableStatement接口调用的存储过程，295、322-328
+762
 
-+   String数组
-    从数组显示响应头，146、147
-    用于显示属性的ServletRequest方法，146-147、148
+### setMaxInactiveInterval 方法
 
-节点接口的子接口，461-466
+786
 
-提交按钮，275-276
+### setPageContext 方法
 
-sun.net.smtp.SmtpClient类，712
+816、829
 
-+   超类
-    JSP超类示例，166-170
-    声明中要求的方法，165
-    JSP要求的接口，164-166
-    另请参阅 类；以及按名称列出的具体超类
+### setParent 方法
 
-视图页面的支持页面，633-635
+816、829
 
-switch... case构造，237-240
+### setPath 方法
 
-+   switch标签
-    在switch... case构造中的示例，237-240
-    使用switch标签测试所需文本块的执行，245-246
+762
 
+### setRequest 方法
 
+752
+
+### setResponse 方法
+
+757
+
+### setSecure 方法
+
+763
+
+### setStatus 方法
+
+779、780、783
+
+### setTagExtraInfo 方法
+
+824
+
+### setTagInfo 方法
+
+821
+
+### setTagLibrary 方法
+
+824
+
+### setValue 方法
+
+763、829
+
+### setVersion 方法
+
+763
+
+### Shell 类
+
+616-630
+- 类方法，616-617
+- 构造函数，567-568
+- 建立数据库连接，628-630
+- 列出可用方法，627-628
+- 主读/执行循环，618-620
+- 概述，616
+- 打开字符行读取器的 run() 方法，620-626
+- 输入 help 命令，626-627
+- 与 Model 类协同编写，630-631
+
+### 用于 XML 解析器的简单 API
+
+*参见* SAX 解析器
+
+### 单线程模型
+
+- 避免线程冲突，49、173
+- 定义，403、405-406
+- 图示，406
+- 局限性，174
+
+### SingleThreadModel 类
+
+758
+
+### SKIP_BODY 返回码
+
+205
+
+### SMTP（简单邮件传输协议）
+
+- 使用 SMTP 发送邮件，711-712
+
+### 源代码
+
+- 为标签处理器编译，191
+- 使用 include 指令复制，139-140
+- 调试生成的 servlet，500
+- 开发并翻译为 servlet，494
+- ControllerServlet 源代码清单，662-666
+- Model 类源代码，588-615
+
+### 特殊字符
+
+非空白字符，265
+
+### SQL 语句
+
+- 在 JDBC 数据库中执行，294、295
+
+### JDBC 中的 SQL 语句接口
+
+309-328
+- *另请参阅* Statement 接口
+
+### 使用 Banner.jsp 标准化头部
+
+634
+
+### 状态隐藏字段
+
+359
+
+### Statement 接口
+
+309-328
+- 定义，294-295
+- execute 方法，312-314
+- executeBatch 方法，314-316
+- executeQuery 方法，311-312
+- executeUpdate 方法，310-311
+- 使用 CallableStatement 接口调用存储过程，295、322-328
+- 基本概述，309-310
+- PreparedStatement 子接口，317-322
+
+### 静态文档服务器模型
+
+6
+
+### HTTP 中的状态行标记
+
+16-17
+
+### 使用 CallableStatement 接口调用的存储过程
+
+295、322-328
+
+### String 数组
+
+- 从数组显示响应头，146、147
+- 用于显示属性的 ServletRequest 方法，146-147、148
+
+### 节点接口的子接口
+
+461-466
+
+### 提交按钮
+
+275-276
+
+### sun.net.smtp.SmtpClient 类
+
+712
+
+### 超类
+
+- JSP 超类示例，166-170
+- 声明中要求的方法，165
+- JSP 要求的接口，164-166
+- *另请参阅* 类；以及按名称列出的具体超类
+
+### 视图页面的支持页面
+
+633-635
+
+### switch... case 构造
+
+237-240
+
+### switch 标签
+
+- 在 switch... case 构造中的示例，237-240
+- 使用 switch 标签测试所需文本块的执行，245-246
 
 ## 同步
 
--   脚本变量，235–236
--   线程，399–403
+- 脚本变量，235–236
+- 线程，399–403
 
 ## 词法作用域
 
@@ -28303,37 +27257,36 @@ switch... case构造，237-240
 ## 语法与语义
 
 64–87
-
--   使用预处理语句避免动态语法错误，320–322
--   WebClient 的调用语法，509
--   注释，68–69
--   声明，71–73，86–87，112
--   定义，64
--   自定义标签的语法定义，186–187
--   指令，65–68，83
--   JSP 页面示例，78–87
--   表达式，69–70，85
--   FORM 元素的语法，263–264
--   JSP 页面的形式，54–56，64，194
--   HTTP 头部语法，836
--   隐式对象，74–75
--   页面指令的 `import` 属性语法，170–171
--   `include` 指令语法，136–138
--   INPUT 标签的语法，270–271
--   JDBC URL 参数语法，308
--   `<jsp:setProperty>` 标签语法，430
--   `<jsp:useBean>` 标签语法，425–430，448
--   声明的方法定义语法，122
--   在调试中的必要性，87
--   脚本小程序，70–71，84，112
--   select 和 option 标签的语法，283
--   页面指令的属性设置，162
--   标准操作，75–77，83–84
--   转发表示的语法，154
--   标签扩展的语法，78
--   `taglib` 指令的语法和属性，199
--   URL 参数语法，360
--   XML 语法，75，453–454
+- 使用预处理语句避免动态语法错误，320–322
+- WebClient 的调用语法，509
+- 注释，68–69
+- 声明，71–73，86–87，112
+- 定义，64
+- 自定义标签的语法定义，186–187
+- 指令，65–68，83
+- JSP 页面示例，78–87
+- 表达式，69–70，85
+- FORM 元素的语法，263–264
+- JSP 页面的形式，54–56，64，194
+- HTTP 头部语法，836
+- 隐式对象，74–75
+- 页面指令的 `import` 属性语法，170–171
+- `include` 指令语法，136–138
+- INPUT 标签的语法，270–271
+- JDBC URL 参数语法，308
+- `<jsp:setProperty>` 标签语法，430
+- `<jsp:useBean>` 标签语法，425–430，448
+- 声明的方法定义语法，122
+- 在调试中的必要性，87
+- 脚本小程序，70–71，84，112
+- select 和 option 标签的语法，283
+- 页面指令的属性设置，162
+- 标准操作，75–77，83–84
+- 转发表示的语法，154
+- 标签扩展的语法，78
+- `taglib` 指令的语法和属性，199
+- URL 参数语法，360
+- XML 语法，75，453–454
 
 ## 案例研究的系统入口点
 
@@ -28345,7 +27298,7 @@ switch... case构造，237-240
 
 ## 表格
 
-规范宽单元格，124–126
+- 规范宽单元格，124–126
 
 ## 标签类
 
@@ -28354,66 +27307,65 @@ switch... case构造，237-240
 ## 标签扩展
 
 184–258
-
--   标签处理器的动作，194–196
--   自定义标签的好处，184–186
--   标签无需体内容，196
--   体标签处理器 API，219–223
--   体标签处理器生命周期，223–226
--   协作标签，236–246
--   在标签库描述符中创建自定义标签条目，187–188
--   定义自定义标签，186–187
--   定义脚本变量，186，226–236
--   数据库查询示例的实现，247–258
--   在 JSP 页面中引入自定义标签，192–194
--   标签处理器的生命周期，196，202–212
--   概述，184
--   语法，78
--   标签属性定义，212–219
--   标签处理器 API，200–202
--   标签库，197–200
--   为自定义标签编写标签处理器，188–191
--   *另请参阅* 自定义标签；标签处理器；标签库
+- 标签处理器的动作，194–196
+- 自定义标签的好处，184–186
+- 标签无需体内容，196
+- 体标签处理器 API，219–223
+- 体标签处理器生命周期，223–226
+- 协作标签，236–246
+- 在标签库描述符中创建自定义标签条目，187–188
+- 定义自定义标签，186–187
+- 定义脚本变量，186，226–236
+- 数据库查询示例的实现，247–258
+- 在 JSP 页面中引入自定义标签，192–194
+- 标签处理器的生命周期，196，202–212
+- 概述，184
+- 语法，78
+- 标签属性定义，212–219
+- 标签处理器 API，200–202
+- 标签库，197–200
+- 为自定义标签编写标签处理器，188–191
+- *另请参阅* 自定义标签；标签处理器；标签库
 
 ## 标签处理器 API
 
 200–202
-
--   Tag 接口的生命周期方法，200–201
--   TagSupport 类，202
+- Tag 接口的生命周期方法，200–201
+- TagSupport 类，202
 
 ## 标签处理器
 
--   体标签处理器 API，219–223
--   体标签处理器生命周期，223–226
--   编译其源代码，191
--   用于 connect 标签，250–252
--   用于数据库查询示例，249–258
--   定义，258
--   定义标签属性，212–219
--   用于 forEachRow 标签，254–256
--   功能，196
--   用于 getField 标签，256–257
--   JSP 容器如何转换 JSP 页面，55，194–195
--   生命周期，196，202–205
--   作为标签库的一部分，197
--   用于 runQuery 标签，252–253
--   实现 BodyTag 接口时的运行时异常，222
--   getWebServerHeader 的示例代码，206–212
--   容器生成的标签相关代码，195
--   为自定义标签编写，188–191
--   *另请参阅* 体标签处理器 API；标签扩展；标签处理器 API
+- 体标签处理器 API，219–223
+- 体标签处理器生命周期，223–226
+- 编译其源代码，191
+- 用于 connect 标签，250–252
+- 用于数据库查询示例，249–258
+- 定义，258
+- 定义标签属性，212–219
+- 用于 forEachRow 标签，254–256
+- 功能，196
+- 用于 getField 标签，256–257
+- JSP 容器如何转换 JSP 页面，55，194–195
+- 生命周期，196，202–205
+- 作为标签库的一部分，197
+- 用于 runQuery 标签，252–253
+- 实现 BodyTag 接口时的运行时异常，222
+- getWebServerHeader 的示例代码，206–212
+- 容器生成的标签相关代码，195
+- 为自定义标签编写，188–191
+- *另请参阅* 体标签处理器 API；标签扩展；标签处理器 API
 
 ## 标签库
 
 197–200
+- 定义，184，197，258
+- 映射到 web.xml 文件，199–200
+- 作为可重用代码的来源，185
+- TLD 元素，197–198
 
--   定义，184，197，258
--   映射到 web.xml 文件，199–200
--   作为可重用代码的来源，185
--   TLD 元素，197–198
+## 标签库描述符
 
-标签库描述符。*参见* TLDs
+*参见* TLDs
 
 ## TagAttributeInfo 类
 
@@ -28421,30 +27373,31 @@ switch... case构造，237-240
 
 ## TagData 类
 
--   方法，818–819
--   传递参数，236，237
+- 方法，818–819
+- 传递参数，236，237
 
 ## TagExtraInfo (TEI) 类
 
 227–235
-
--   关于，227–229
--   方法，228，820–821
--   使用示例代码，229–235
--   验证标签属性，236
+- 关于，227–229
+- 方法，228，820–821
+- 使用示例代码，229–235
+- 验证标签属性，236
 
 ## TagInfo 类
 
 821–824
 
-taglib。*参见* 标签库
+## taglib
+
+*参见* 标签库
 
 ## Taglib 指令
 
--   定义，68，192
--   使用其定位 TLDs，195
--   将标签库映射到 web.xml 文件，199–200
--   语法和属性，199
+- 定义，68，192
+- 使用其定位 TLDs，195
+- 将标签库映射到 web.xml 文件，199–200
+- 语法和属性，199
 
 ## TagLibraryInfo 类
 
@@ -28456,18 +27409,18 @@ taglib。*参见* 标签库
 
 ## 标签
 
--   编码 `<servlet>`，30
--   DTD 的作用，455
--   XML 开始和结束标签的语法，453–455
--   XML 标签，452
--   *另请参阅* 自定义标签；标签扩展
+- 编码 `<servlet>`，30
+- DTD 的作用，455
+- XML 开始和结束标签的语法，453–455
+- XML 标签，452
+- *另请参阅* 自定义标签；标签扩展
 
 ## TagSupport 类
 
--   关于，202
--   构造函数和方法，827–829
--   阅读用于页面上下文和体上下文变量信息的源代码，190
--   用作注释代码的标签处理器，205
+- 关于，202
+- 构造函数和方法，827–829
+- 阅读用于页面上下文和体上下文变量信息的源代码，190
+- 用作注释代码的标签处理器，205
 
 ## TagSupport 父类
 
@@ -28477,46 +27430,48 @@ taglib。*参见* 标签库
 
 829–831
 
-TEI。*参见* TagExtraInfo 类
+## TEI
+
+*参见* TagExtraInfo 类
 
 ## 测试与调试
 
 494–528
-
--   构建心智模型，494
--   调试工具，500–528
--   隔离故障组件，499–500
--   在 MVC 架构中，615
--   概述，494
--   预编译以区分编译时和运行时错误，499
--   产品支持应用的 Shell 类，616–630
--   使用 switch 标签测试文本块执行，245–248
--   JSP 页面形式的翻译和编译，494–499
--   开启/关闭错误消息，495
--   *另请参阅* 调试工具；Shell 类
+- 构建心智模型，494
+- 调试工具，500–528
+- 隔离故障组件，499–500
+- 在 MVC 架构中，615
+- 概述，494
+- 预编译以区分编译时和运行时错误，499
+- 产品支持应用的 Shell 类，616–630
+- 使用 switch 标签测试文本块执行，245–248
+- JSP 页面形式的翻译和编译，494–499
+- 开启/关闭错误消息，495
+- *另请参阅* 调试工具；Shell 类
 
 ## 文本
 
--   作为输入元素，271–272
--   文本条目元素，262
--   Textarea 元素，284
+- 作为输入元素，271–272
+- 文本条目元素，262
+- Textarea 元素，284
 
-线程模型。*参见* Servlet 线程模型
+## 线程模型
+
+*参见* Servlet 线程模型
 
 ## 线程
 
 390–403
-
--   避免与 SingleThreadModel 接口冲突，49，173
--   创建和启动，391–398
--   实例变量及其安全性，118–122
--   SingleThreadModel 接口的限制，174
--   管理，390–391
--   在后台打印计数器值，423–424
--   同步，399–403
--   线程概念，391
--   线程模型，47–49
--   Servlet 线程模型的类型，47–49，403–406
+- 避免与 SingleThreadModel 接口冲突，49，173
+- 创建和启动，391–398
+- 实例变量及其安全性，118–122
+- SingleThreadModel 接口的限制，174
+- 管理，390–391
+- 在后台打印计数器值，423–424
+- 同步，399–403
+- 线程概念，391
+- 线程模型，47–49
+- Servlet 线程模型的类型，47–49，403–406
 
 ## 超时
 
@@ -28528,18 +27483,18 @@ TEI。*参见* TagExtraInfo 类
 
 ## TLDs（标签库描述符）
 
--   常用子目录，531–532
--   作为 web.xml 部署描述符的内容，542
--   在其中创建自定义标签条目，187–188
--   用于数据库查询示例，248–249
--   元素，197–198
--   使用 `taglib` 指令定位，195
--   作为标签库的一部分，197
+- 常用子目录，531–532
+- 作为 web.xml 部署描述符的内容，542
+- 在其中创建自定义标签条目，187–188
+- 用于数据库查询示例，248–249
+- 元素，197–198
+- 使用 `taglib` 指令定位，195
+- 作为标签库的一部分，197
 
 ## Tomcat
 
--   检测和修复其中生成的编译错误，496–499
--   在其中运行 .war 文件，537
+- 检测和修复其中生成的编译错误，496–499
+- 在其中运行 .war 文件，537
 
 ## toString 方法
 
@@ -28548,12 +27503,11 @@ TEI。*参见* TagExtraInfo 类
 ## Tracer
 
 510–528
-
--   配置以监控 Web 客户端和服务器，510–511
--   解析选项，518
--   RequestHandler，519–525
--   设置 Web 服务器代理，511–519
--   在 HTTP 认证中的用途，526–528
+- 配置以监控 Web 客户端和服务器，510–511
+- 解析选项，518
+- RequestHandler，519–525
+- 设置 Web 服务器代理，511–519
+- 在 HTTP 认证中的用途，526–528
 
 ## JSP 页面形式中的翻译和编译
 
@@ -28573,11 +27527,11 @@ TEI。*参见* TagExtraInfo 类
 
 ## `<jsp:useBean>` 标签的类型规范
 
--   仅指定 class，427–428
--   指定 type 和 beanName，429–430，431
--   指定 type 和 class，428–429
--   仅指定 type，426–427
--   有效组合，426
+- 仅指定 class，427–428
+- 指定 type 和 beanName，429–430，431
+- 指定 type 和 class，428–429
+- 仅指定 type，426–427
+- 有效组合，426
 
 ## UnavailableException 类
 
@@ -28593,8 +27547,8 @@ TEI。*参见* TagExtraInfo 类
 
 ## URI（统一资源标识符）
 
--   定义，15
--   检索原始 URI，150–153
+- 定义，15
+- 检索原始 URI，150–153
 
 ## URLConnection 类
 
@@ -28602,16 +27556,16 @@ TEI。*参见* TagExtraInfo 类
 
 ## URLs（统一资源定位符）
 
--   关于 URL 类，680–681
--   附加会话 ID，50
--   浏览器解释 URL 中的应用程序名称，533–534
--   java.net.URL 类的方法，681
--   使用其进行资源映射和文档定位，532–535
--   重写，378–379，413
--   通过重写进行会话跟踪，360–363
--   Web 应用程序名称的标准形式引用，533
--   参数语法，360
--   URL 连接的类型，680–684
+- 关于 URL 类，680–681
+- 附加会话 ID，50
+- 浏览器解释 URL 中的应用程序名称，533–534
+- java.net.URL 类的方法，681
+- 使用其进行资源映射和文档定位，532–535
+- 重写，378–379，413
+- 通过重写进行会话跟踪，360–363
+- Web 应用程序名称的标准形式引用，533
+- 参数语法，360
+- URL 连接的类型，680–684
 
 ## Util 类
 
@@ -28623,8 +27577,8 @@ TEI。*参见* TagExtraInfo 类
 
 ## 验证
 
--   HTML 表单，285–287
--   标签属性，236
+- HTML 表单，285–287
+- 标签属性，236
 
 ## `<jsp:setProperty>` 标签的 value 属性
 
@@ -28638,7 +27592,9 @@ TEI。*参见* TagExtraInfo 类
 
 789
 
-变量声明。*参见* 变量
+## 变量声明
+
+*参见* 变量
 
 ## VariableInfo 类
 
@@ -28646,53 +27602,51 @@ TEI。*参见* TagExtraInfo 类
 
 ## 变量
 
--   只读变量的优势，122
--   声明和初始化类和实例变量，117–122，131–132
--   定义脚本变量，186，226–236
--   隐式变量，74–75
--   线程安全与实例变量，118–122
+- 只读变量的优势，122
+- 声明和初始化类和实例变量，117–122，131–132
+- 定义脚本变量，186，226–236
+- 隐式变量，74–75
+- 线程安全与实例变量，118–122
 
 ## 版本
 
--   Java J2EE，8，9
--   SAX 解析器接口，473
+- Java J2EE，8，9
+- SAX 解析器接口，473
 
 ## 视图页面
 
 631–658
-
--   应用程序流程和视图/控制器交互，631–633
--   Confirm.jsp，647–649
--   为其创建错误模块，634–635
--   使用 Banner.jsp 创建标准化页头，634
--   CustomerList.jsp，635，637–638
--   Customers.jsp，635–636
--   在 InitModel.jsp 中将模型声明为会话 Bean，633
--   作为系统的表示层，557
--   Problem.jsp，635，643–647
--   Problems.jsp，635，657–658
--   ProductProblems.jsp，653–657
--   支持页面，633–635
--   *另请参阅* MVC 系统架构
+- 应用程序流程和视图/控制器交互，631–633
+- Confirm.jsp，647–649
+- 为其创建错误模块，634–635
+- 使用 Banner.jsp 创建标准化页头，634
+- CustomerList.jsp，635，637–638
+- Customers.jsp，635–636
+- 在 InitModel.jsp 中将模型声明为会话 Bean，633
+- 作为系统的表示层，557
+- Problem.jsp，635，643–647
+- Problems.jsp，635，657–658
+- ProductProblems.jsp，653–657
+- 支持页面，633–635
+- *另请参阅* MVC 系统架构
 
 ## Web 应用程序
 
 6–9，530–549
-
--   定义，530
--   其中的部署描述符，538–547
--   JavaServer Pages 的开发，8
--   目录结构，530–532
--   编程模型的演进，6–9
--   Servlet 上下文的功能，535
--   万维网的历史发展，6
--   调试中对语法的必要了解，87
--   资源映射，532–535
--   部署描述符示例，547–549
--   从客户端应用转向服务器端应用，9
--   在其中分离内容与表示，134，154–157
--   使用 Servlet 2.2 规范标准化部署，530，549
--   Web 归档（.war）文件，535–537，549
+- 定义，530
+- 其中的部署描述符，538–547
+- JavaServer Pages 的开发，8
+- 目录结构，530–532
+- 编程模型的演进，6–9
+- Servlet 上下文的功能，535
+- 万维网的历史发展，6
+- 调试中对语法的必要了解，87
+- 资源映射，532–535
+- 部署描述符示例，547–549
+- 从客户端应用转向服务器端应用，9
+- 在其中分离内容与表示，134，154–157
+- 使用 Servlet 2.2 规范标准化部署，530，549
+- Web 归档（.war）文件，535–537，549
 
 ## Web 归档（.war）文件
 
@@ -28700,13 +27654,13 @@ TEI。*参见* TagExtraInfo 类
 
 ## Web 浏览器
 
--   作为客户端，680
--   解释 URL 中的应用程序名称，533–534
--   插件，690–691
--   在 CGI 脚本响应中的作用，7
--   模拟以进行调试，504–510
--   用错误消息替代 Servlet 错误，495
--   *另请参阅* cookies
+- 作为客户端，680
+- 解释 URL 中的应用程序名称，533–534
+- 插件，690–691
+- 在 CGI 脚本响应中的作用，7
+- 模拟以进行调试，504–510
+- 用错误消息替代 Servlet 错误，495
+- *另请参阅* cookies
 
 ## .war 文件
 
@@ -28714,10 +27668,10 @@ TEI。*参见* TagExtraInfo 类
 
 ## 天气信息
 
--   为门户网站网页自定义，444–448
--   使用 Bean 自定义，434–444
--   为美国国家气象局本地化网页，442
--   天气观测 Bean 的属性，435
+- 为门户网站网页自定义，444–448
+- 使用 Bean 自定义，434–444
+- 为美国国家气象局本地化网页，442
+- 天气观测 Bean 的属性，435
 
 ## 天气观测 Bean
 
@@ -28725,45 +27679,66 @@ TEI。*参见* TagExtraInfo 类
 
 ## 网页
 
--   向门户网站添加自定义天气信息，444–448
--   用于美国国家气象局显示本地化条件，442
--   从外部源检索数据的可靠性，436
--   Servlet 与网页，24
+- 向门户网站添加自定义天气信息，444–448
+- 用于美国国家气象局显示本地化条件，442
+- 从外部源检索数据的可靠性，436
+- Servlet 与网页，24
 
 ## Web 服务器
 
--   配置 HTTP tracer 进行监控，510–511
--   连接的 HTTP 协议，14
--   其中的进程外 Servlet 引擎模型，135
--   资源映射和文档根目录，532
--   重启以进行隔离测试，500
--   线程操作，391
+- 配置 HTTP tracer 进行监控，510–511
+- 连接的 HTTP 协议，14
+- 其中的进程外 Servlet 引擎模型，135
+- 资源映射和文档根目录，532
+- 重启以进行隔离测试，500
+- 线程操作，391
 
 ## web.xml 文件
 
--   作为 Web 应用程序中的部署描述符，457，538–547
--   将标签库映射到其中，199–200
--   在 Web 应用程序目录结构中，531
+- 作为 Web 应用程序中的部署描述符，457，538–547
+- 将标签库映射到其中，199–200
+- 在 Web 应用程序目录结构中，531
 
+## `<web-app>` 元素
 
-
-## 876 JSP 完全参考手册
-
-`<web-app>` 元素
 - 其内容，539
 - 在其中指定元素的顺序，538
-WebClient，504-510
+
+## WebClient
+
+504-510
 - 从命令行调用，505
 - 用于监控的 HTTP tracer 配置，510-511
 - 调用语法，509
 - 与服务器的典型交换，509-510
-WEB-INF 根目录，531
-WebModel 类，611-613
-脚本小程序中的空白符，91
-writeOut 方法，811
-为 HTML 表单编写验证函数，286-287
-WWW（万维网），6
 
+## WEB-INF 根目录
+
+531
+
+## WebModel 类
+
+611-613
+
+## 脚本小程序中的空白符
+
+91
+
+## writeOut 方法
+
+811
+
+## 为 HTML 表单编写验证函数
+
+286-287
+
+## WWW（万维网）
+
+6
+
+## XML（可扩展标记语言）
+
+452-491
 - 区分其中的内容与表示，453
 - 文档类型定义（DTD），454-457
 - DOM 解析器，457，458-472，491
@@ -28774,17 +27749,26 @@ WWW（万维网），6
 - SAX 解析器，472-485，491
 - 语法，75，453-454
 - XML 解析器的类型，457
-- 另请参阅 DOM 解析器；解析器；SAX 解析器
+- *另请参阅* DOM 解析器；解析器；SAX 解析器
 
 ## X
 
-Xerces-J 1.2.1 对 SAX 2.0 的支持，481
-XML（可扩展标记语言），452-491
+### Xerces-J 1.2.1 对 SAX 2.0 的支持
+
+481
+
+### XML（可扩展标记语言）
+
+452-491
 - 使用 XSLT 添加样式信息，486-491
 
 ### XSL（可扩展样式表语言）
+
 - 样式表，486
-### XSLT（XSL 转换），486-491
+
+### XSLT（XSL 转换）
+
+486-491
 - 关于，486
 - 关键指令，486-487
 - 生成产品目录的示例代码，487-491

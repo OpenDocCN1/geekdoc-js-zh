@@ -1,3 +1,4 @@
+
 # 现代 JavaScript 入门指南
 
 ## 前言
@@ -24,9 +25,9 @@
 
 ## 联系方式
 
-如果你需要帮助，可以通过 nathan@codewithnathan.com 联系我。
+如果你需要帮助，可以通过 `nathan@codewithnathan.com` 联系我。
 
-你也可以订阅我的免费 7 天电子邮件课程《成功软件开发者的心态》，网址是 [`sebhastian.gumroad.com/l/mindset`](https://sebhastian.gumroad.com/l/mindset)
+你也可以订阅我的免费 7 天电子邮件课程《成功软件开发者的心态》，网址是 [`sebhastian.gumroad.com/l/mindset`](https://sebhastian.gumroad.com/l/mindset)。
 
 该电子邮件课程将帮助你找到作为软件开发者的正确前进方向。
 
@@ -37,9 +38,6 @@
 JavaScript 大约在 1995 年 4 月由一位名叫 Brendan Eich 的开发者创建。当时，他正在为一家名为 Netscape 的公司开发浏览器。他被告知只有 10 天时间来设计和编写一种能在浏览器上运行的编程语言的工作原型。
 
 他需要创建一种能吸引非专业程序员的语言，这些人希望从头开始构建一个网站。之所以只给他 10 天时间，是因为 Netscape 需要发布其浏览器，而当时它正在与微软竞争。
-
-
-
 
 起初，JavaScript 并不像今天这样强大，但活跃的 JavaScript 开发者社区不断为这门语言添加新功能。
 
@@ -53,10 +51,10 @@ JavaScript 大约在 1995 年 4 月由一位名叫 Brendan Eich 的开发者创�
 
 你需要学习 JavaScript 的 4 个充分理由：
 
-1.  JavaScript 是唯一能在浏览器中运行的语言
-2.  它相当容易学习（但难以精通）
-3.  它是制作 Web 应用程序的必备语言
-4.  掌握 JavaScript 后，会有很多职业机会
+1. JavaScript 是唯一能在浏览器中运行的语言。
+2. 它相当容易学习（但难以精通）。
+3. 它是制作 Web 应用程序的必备语言。
+4. 掌握 JavaScript 后，会有很多职业机会。
 
 无论你想在科技行业担任什么角色，学习 JavaScript 都会带来巨大的机遇。通过掌握 JavaScript，你可以成为前端、后端、移动端或全栈开发者。
 
@@ -64,8 +62,8 @@ JavaScript 大约在 1995 年 4 月由一位名叫 Brendan Eich 的开发者创�
 
 要开始使用 JavaScript 编程，你只需要两样东西：
 
-1.  一个网页浏览器
-2.  一个代码编辑器
+1. 一个网页浏览器。
+2. 一个代码编辑器。
 
 我们将使用 Chrome 浏览器来运行 JavaScript 代码，如果你还没有，可以在这里下载：
 
@@ -101,13 +99,13 @@ Visual Studio Code（简称 VSCode）是一款为编写代码而创建的代码�
 
 接下来，打开 Visual Studio Code，从菜单栏中选择“文件”>“打开文件夹...”。选择你刚刚创建的文件夹。
 
-VSCode 将加载该文件夹，并在资源管理器侧边栏中显示其内容，由于我们还没有创建任何文件，它应该是空的。
+VSCode 将加载该文件夹，并在资源管理器侧边栏中显示其内容。由于我们还没有创建任何文件，它应该是空的。
 
 要创建文件，请在 VSCode 窗口内的任意位置右键单击，然后从菜单中选择“新建文本文件”或“新建文件...”。创建文件后，按 Ctrl+S 或 Command+S 保存文件。将该文件命名为 `index.html`。
 
 下一步是在 HTML 文件中放入一些内容。你可以编写以下内容：
 
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -148,9 +146,9 @@ VSCode 扩展是为增强 VSCode 功能而创建的小程序。一个非常有�
 
 上图说明：
 
-1.  单击活动栏中的扩展图标
-2.  搜索 `live server` 并选择由 Ritwick Dey 创建的那个
-3.  安装扩展
+1. 单击活动栏中的扩展图标。
+2. 搜索 `live server` 并选择由 Ritwick Dey 创建的那个。
+3. 安装扩展。
 
 安装完成后，通过单击活动栏顶部的文件图标返回到资源管理器选项卡。
 
@@ -172,7 +170,7 @@ Live Server 应该会启动一个本地服务器，并自动打开你的浏览�
 
 在该文件中，编写以下代码：
 
-```
+```javascript
 console.log('Learning JavaScript!');
 ```
 
@@ -198,7 +196,7 @@ Live Server 在检测到文件有任何更改时会自动重新加载浏览器�
 
 要在 JavaScript 中编写注释，你需要在注释前添加两个正斜杠 `//`，如下所示：
 
-```
+```javascript
 // This is a comment
 // This is also a comment
 // Below print two lines of statements
@@ -206,13 +204,11 @@ console.log("Hello World!");
 console.log("I'm learning JavaScript");
 ```
 
-
-
 注释会被语言处理器忽略，因此你可以使用注释来禁用某些代码，而无需删除这些代码。
 
 下面的代码展示了如何禁用第二条打印语句：
 
-```
+```javascript
 console.log("Hello World!");
 
 // console.log("I'm learning JavaScript");
@@ -230,7 +226,7 @@ console.log("Hello World!");
 
 将该文件中的代码修改如下：
 
-```
+```javascript
 let message = "Learning JavaScript!"
 
 console.log(message)
@@ -246,7 +242,7 @@ console.log(message)
 
 代码中的第一行告诉 JavaScript 将 `message` 变量与值 `'Learning JavaScript!'` 关联起来：
 
-```
+```javascript
 let message = "Learning JavaScript!"
 ```
 
@@ -254,7 +250,7 @@ let message = "Learning JavaScript!"
 
 你可以通过重新赋值来改变变量的值，如下所示：
 
-```
+```javascript
 let message = "Learning JavaScript!"
 
 print(message)
@@ -266,7 +262,7 @@ print(message)
 
 运行该文件，你会看到输出两行内容：
 
-```
+```text
 Learning JavaScript!
 
 Nice weather!
@@ -290,19 +286,18 @@ JavaScript 有一些命名规则，你需要了解以避免命名错误。
 
 有时，你需要用多个单词来声明变量名。JavaScript 有两种全球通用的命名约定：
 
-1.  `camelCase`（驼峰命名法）
-
-2.  `snake_case`（蛇形命名法）
+1. `camelCase`（驼峰命名法）
+2. `snake_case`（蛇形命名法）
 
 驼峰命名法是一种将后续单词的首字母大写的命名约定。示例如下：
 
-```
+```javascript
 let myAwesomeVariable
 ```
 
 蛇形命名法使用下划线来分隔单词。示例如下：
 
-```
+```javascript
 let my_awesome_variable
 ```
 
@@ -316,7 +311,7 @@ let my_awesome_variable
 
 下面展示了如何在 JavaScript 中声明两个常量：
 
-```
+```javascript
 const FILE_SIZE_LIMIT = 2000
 
 const MAX_SPEED = 300
@@ -324,7 +319,7 @@ const MAX_SPEED = 300
 
 如果你尝试重新赋值一个常量变量，将会得到错误：
 
-```
+```javascript
 const FILE_SIZE_LIMIT = 2000
 
 FILE_SIZE_LIMIT = 3000 // 错误！
@@ -350,7 +345,7 @@ FILE_SIZE_LIMIT = 3000 // 错误！
 
 嗯，JavaScript 也同意这一点：
 
-```
+```javascript
 console.log(2 + 2);
 
 // 输出：4
@@ -358,13 +353,13 @@ console.log(2 + 2);
 
 但是，如果你尝试将数字与字母相加，如下所示会发生什么？
 
-```
+```javascript
 console.log(2 + "ABC");
 ```
 
 输出：
 
-```
+```text
 2ABC
 ```
 
@@ -372,11 +367,11 @@ console.log(2 + "ABC");
 
 在本节中，你将学习 JavaScript 拥有的基本数据类型：
 
-| ▪ |
-| ▪ |
-| ▪ |
-| ▪ |
-| ▪ |
+- ▪
+- ▪
+- ▪
+- ▪
+- ▪
 
 你还会看到这些不同类型如何对像上面所示的 `+` 运算符做出反应。
 
@@ -388,7 +383,7 @@ console.log(2 + "ABC");
 
 之前你在调用 `console.log()` 函数打印消息时已经见过字符串的例子：
 
-```
+```javascript
 let message = "Hello, Sunshine!";
 
 console.log(message); // Hello, Sunshine!
@@ -398,14 +393,14 @@ console.log(message); // Hello, Sunshine!
 
 如果你使用不同的引号，就会得到错误：
 
-```
+```javascript
 // 无效或意外的标记
 let message = "Hello';
 ```
 
 你可以使用加号 `+` 将两个或多个字符串连接成一个。别忘了在下一个字符串前添加空格，否则你会得到一个没有空格的字符串！
 
-```
+```javascript
 let message = "Hello " + "and " + "Goodbye!";
 
 console.log(message);
@@ -413,9 +408,11 @@ console.log(message);
 // 输出：Hello and Goodbye!
 ```
 
-打印变量值时，你也可以直接在 `console.log()` 函数中添加字符串，如下所示：
 
-```
+
+打印变量值时，你也可以直接在`console.log()`函数中添加字符串，如下所示：
+
+```javascript
 let message = "Hello, Dave!";
 
 console.log("The message is: " + message);
@@ -425,7 +422,7 @@ console.log("The message is: " + message);
 
 当你需要在一个句子中打印多个字符串时，这特别有用，如下所示：
 
-```
+```javascript
 let name = "John";
 
 let topic = "JavaScript";
@@ -437,7 +434,7 @@ console.log(name + " is learning " + topic + " today");
 
 或者你也可以使用模板字符串格式，它允许你将变量直接嵌入到字符串中，如下所示：
 
-```
+```javascript
 let name = "John";
 
 let topic = "JavaScript";
@@ -449,7 +446,7 @@ console.log(`${name} is learning ${topic} today`);
 
 要使用模板字符串格式，你需要使用反引号（`` ` ``）字符来包裹字符串，而不是引号。
 
-变量通过美元符号和花括号嵌入到字符串中，如 `${variable}`。
+变量通过美元符号和花括号嵌入到字符串中，如`${variable}`。
 
 这样，JavaScript 就知道你在字符串中引用了一个变量。
 
@@ -457,7 +454,7 @@ console.log(`${name} is learning ${topic} today`);
 
 接下来，字符串也可以表示数字。你可以将数字用引号括起来，如下所示：
 
-```
+```javascript
 let score = "10" + "30";
 
 console.log(score);
@@ -465,24 +462,20 @@ console.log(score);
 // 输出：1030
 ```
 
-当你用 `+` 符号连接两个字符串数字时，JavaScript 会将两个数字连接起来，而不是执行算术加法。
+当你用`+`符号连接两个字符串数字时，JavaScript 会将两个数字连接起来，而不是执行算术加法。
 
 这就是字符串在 JavaScript 中的工作方式。接下来我们看看数字。
 
 ## JavaScript 中的数字（整数和浮点数）
-
-
-
-
 
 数字数据类型表示不同类型的数字。JavaScript 中有两种数字类型：
 
 - ▪
 - ▪
 
-整数是不带小数和分数的完整数字。下面，你会看到两个整数 `x` 和 `y` 的示例：
+整数是不带小数和分数的完整数字。下面，你会看到两个整数`x`和`y`的示例：
 
-```
+```javascript
 let x = 1;
 let y = 2;
 console.log(x + y);
@@ -491,20 +484,20 @@ console.log(x + y);
 
 另一方面，浮点数指的是带有小数点的数字，如下所示：
 
-```
+```javascript
 let f = 1.2;
 let z = 2.35;
 console.log(f + z);
 // 输出: 3.55
 ```
 
-要创建一个浮点数，你需要写一个数字并使用 `.` 来定义小数部分。
+要创建一个浮点数，你需要写一个数字并使用`.`来定义小数部分。
 
-使用数字类型，你可以执行算术运算，例如加法 `+`、减法 `-`、除法 `/` 和乘法 `*`，就像使用计算器一样。
+使用数字类型，你可以执行算术运算，例如加法`+`、减法`-`、除法`/`和乘法`*`，就像使用计算器一样。
 
 ## JavaScript 中的布尔值
 
-布尔值是一种表示 `true` 和 `false` 值的数据类型。
+布尔值是一种表示`true`和`false`值的数据类型。
 
 你可以把布尔值想象成一个只能处于两种位置之一的电灯开关：开或关。
 
@@ -512,7 +505,7 @@ console.log(f + z);
 
 以下是在 JavaScript 中创建布尔值的方法：
 
-```
+```javascript
 let on = true;
 let off = false;
 ```
@@ -521,40 +514,40 @@ let off = false;
 
 ## Undefined
 
-`Undefined` 是 JavaScript 中的一种数据类型，用于表示尚未被赋予任何值的变量。
+`Undefined`是 JavaScript 中的一种数据类型，用于表示尚未被赋予任何值的变量。
 
-每当你声明一个变量但没有赋值时，`undefined` 值就会被赋给该变量。例如：
+每当你声明一个变量但没有赋值时，`undefined`值就会被赋给该变量。例如：
 
-```
+```javascript
 let first_name;
 console.log(first_name); // undefined
 ```
 
-你也可以显式地将 `undefined` 赋给一个变量，如下所示：
+你也可以显式地将`undefined`赋给一个变量，如下所示：
 
-```
+```javascript
 let last_name = undefined;
 ```
 
-但这通常不推荐，因为 JavaScript 还有另一个值 `null`，用于将变量标记为空。
+但这通常不推荐，因为 JavaScript 还有另一个值`null`，用于将变量标记为空。
 
 ## Null
 
-`null` 值是一种特殊的数据类型，表示空值或未知值。以下是将变量赋值为 `null` 的方法：
+`null`值是一种特殊的数据类型，表示空值或未知值。以下是将变量赋值为`null`的方法：
 
-```
+```javascript
 let first_name = null;
 ```
 
-上面的代码意味着 `first_name` 的值是空的或未知的。
+上面的代码意味着`first_name`的值是空的或未知的。
 
-此时，你可能会想 `undefined` 和 `null` 有什么区别？它们似乎有类似的作用。
+此时，你可能会想`undefined`和`null`有什么区别？它们似乎有类似的作用。
 
-你说得对。`undefined` 和 `null` 都是表示“无”的值，其他编程语言通常只有一个，那就是 `null`。
+你说得对。`undefined`和`null`都是表示“无”的值，其他编程语言通常只有一个，那就是`null`。
 
-在 JavaScript 中，`undefined` 值被保留为变量声明时的默认值，而 `null` 意味着你故意为变量赋予了一个“空”值。
+在 JavaScript 中，`undefined`值被保留为变量声明时的默认值，而`null`意味着你故意为变量赋予了一个“空”值。
 
-总结一下，JavaScript 将 `undefined` 视为“默认”的空值，将 `null` 视为“有意”的空值。
+总结一下，JavaScript 将`undefined`视为“默认”的空值，将`null`视为“有意”的空值。
 
 ## 类型转换
 
@@ -564,13 +557,13 @@ let first_name = null;
 
 如果其中一个数字是字符串，JavaScript 会将它们拼接在一起而不是相加：
 
-```
+```javascript
 let x = "7";
 let y = 5;
 console.log(x + y); // 75
 ```
 
-要正确地将两个数字相加，你需要将变量 `x` 转换为整数。
+要正确地将两个数字相加，你需要将变量`x`转换为整数。
 
 将数据从一种类型更改为另一种类型也称为类型转换或类型强制转换。有 3 个函数经常用于类型转换：
 
@@ -580,9 +573,9 @@ console.log(x + y); // 75
 
 顾名思义，这些类型转换函数会尝试将括号内指定的任何值转换为同名的类型。
 
-要将字符串转换为整数，你可以使用 `int()` 函数：
+要将字符串转换为整数，你可以使用`int()`函数：
 
-```
+```javascript
 let x = "7";
 let y = 5;
 // 将 x 转换为整数
@@ -590,7 +583,7 @@ x = Number(x);
 console.log(x + y); // 12
 ```
 
-另一方面，`String()` 函数将另一种类型的值转换为字符串。如果你输入 `String(true)`，你会得到 `'true'`。
+另一方面，`String()`函数将另一种类型的值转换为字符串。如果你输入`String(true)`，你会得到`'true'`。
 
 传递与函数相同类型的值没有效果。它只会返回相同的值。
 
@@ -602,17 +595,17 @@ console.log(x + y); // 12
 
 让我们考虑一下在 JavaScript 中对数字和字符串执行加法时会发生什么：
 
-```
+```javascript
 console.log(1 + "1");
 ```
 
-正如你在上一节中看到的，JavaScript 会将数字视为字符串，并将两个字符拼接成 `11`，而不是相加（`1 + 1 = 2`）。
+正如你在上一节中看到的，JavaScript 会将数字视为字符串，并将两个字符拼接成`11`，而不是相加（`1 + 1 = 2`）。
 
 但你需要知道，其他编程语言不会以同样的方式响应。
 
 像 Ruby 或 Python 这样的编程语言会通过停止程序并给出错误反馈来响应。它会返回类似“无法在数字和字符串之间执行加法”的信息。
 
-但 JavaScript 会看到这一点并说：“我无法按原样执行你请求的操作，但如果将数字 `1` 转换为字符串，我就可以执行，所以我将这样做。”
+但 JavaScript 会看到这一点并说：“我无法按原样执行你请求的操作，但如果将数字`1`转换为字符串，我就可以执行，所以我将这样做。”
 
 这正是类型强制转换的含义。JavaScript 注意到它不知道如何执行你的代码，但它不会停止程序并返回错误。
 
@@ -626,24 +619,24 @@ console.log(1 + "1");
 
 似乎当 JavaScript 发现不同的数据类型时，它会首先将数据类型转换为字符串：
 
-```
+```javascript
 1 + "1" // "11"
 [1 ,2] + "1" // "1,21"
 true + "1" // "true1"
 ```
 
-但是当你有对象时，值的顺序很重要。先写对象总是返回数字 `1`：
+但是当你有对象时，值的顺序很重要。先写对象总是返回数字`1`：
 
-```
+```javascript
 { a: 1 } + "1" // 1
 "1" + { a: 1 } // "1[object Object]"
 true + { a: 1 } // "true[object Object]"
 { a: 1 } + 1 // 1
 ```
 
-JavaScript 可以在布尔类型和数字类型之间进行计算，因为布尔值 `true` 和 `false` 隐式地具有数字值 `1` 和 `0`：
+JavaScript 可以在布尔类型和数字类型之间进行计算，因为布尔值`true`和`false`隐式地具有数字值`1`和`0`：
 
-```
+```javascript
 true + 1 // 1+1 = 1
 false + 1 // 0+1 = 1
 [1,2] + 1 // "1,21"
@@ -651,7 +644,7 @@ false + 1 // 0+1 = 1
 
 类型强制转换总是隐式执行的。当你将值赋给变量时，变量类型在操作之外永远不会改变：
 
-```
+```javascript
 let myNumber = 1;
 console.log(myNumber + "1"); // 打印 11
 console.log(myNumber); // 仍然打印数字 1，而不是字符串
@@ -670,14 +663,14 @@ console.log(myNumber); // 仍然打印数字 1，而不是字符串
 
 原因是我从未发现过需要类型强制转换才能解决的问题，而且当我需要将一种类型转换为另一种类型时，显式地进行转换总是更好的：
 
-```
+```javascript
 let price = "50";
 let tax = 5;
 let totalPrice = Number(price) + Number(tax);
 console.log(totalPrice);
 ```
 
-使用显式类型转换函数（如 `Number()` 和 `String()`）会使你的代码清晰透明。你不需要猜测程序中所需的数据类型。
+使用显式类型转换函数（如`Number()`和`String()`）会使你的代码清晰透明。你不需要猜测程序中所需的数据类型。
 
 类型强制转换是 JavaScript 中可能让初学者感到困惑的独特特性之一，所以尽早弄清楚它是件好事。
 
@@ -691,13 +684,9 @@ JavaScript 提供了五种基本数据类型，你可以用它们来创建有用
 
 顾名思义，运算符是你可以用来对数据执行操作的符号。
 
-你已经看到了一些使用加号 `+` 运算符连接多个字符串和将两个数字相加的示例。当然，JavaScript 不止一个运算符，你将在本节中发现更多。
+你已经看到了一些使用加号`+`运算符连接多个字符串和将两个数字相加的示例。当然，JavaScript 不止一个运算符，你将在本节中发现更多。
 
 既然你已经了解了数据类型和转换，学习运算符应该相对容易。
-
-
-
-
 
 ## 算术运算符
 
@@ -705,14 +694,14 @@ JavaScript 提供了五种基本数据类型，你可以用它们来创建有用
 
 这些运算符经常与数字数据类型一起使用。下面是一个示例：
 
-```
+```javascript
 console.log(10 - 3); // 7
 console.log(2 + 4); // 6
 ```
 
 JavaScript 中共有 8 个算术运算符：
 
-```
+```javascript
 // 1. 加法（+）
 // 返回两个操作数的和
 console.log(5 + 2); // 7
@@ -738,31 +727,31 @@ console.log(5 / 2); // 4
 console.log(5 % 2); // 1
 ```
 
-这些运算符相当直观。正如你在上一节中看到的，`+` 运算符也可以用于字符串数据，将多个字符串合并为一个：
+这些运算符相当直观。正如你在上一节中看到的，`+`运算符也可以用于字符串数据，将多个字符串合并为一个：
 
-```
+```javascript
 let message = "Hello " + "human!";
 console.log(message); // Hello human!
 ```
 
 当你将一个数字和一个字符串相加时，JavaScript 会执行类型强制转换，并将数字值视为字符串值：
 
-```
+```javascript
 let sum = "Hi " + 89;
 console.log(sum); // Hi 89
 ```
 
-对字符串使用任何其他算术运算符都会导致 JavaScript 返回 `NaN` 值，它代表“非数字”（Not a Number）。`NaN` 是一种数字数据类型。
+对字符串使用任何其他算术运算符都会导致 JavaScript 返回`NaN`值，它代表“非数字”（Not a Number）。`NaN`是一种数字数据类型。
 
 ## 赋值运算符
 
-接下来要学习的运算符是赋值运算符及其变体，用等号 `=` 表示。
+接下来要学习的运算符是赋值运算符及其变体，用等号`=`表示。
 
 在 JavaScript 中，赋值运算符用于将数据或值赋给变量。
 
 你之前已经见过一些使用赋值运算符的例子，这里再提醒一下：
 
-```
+```javascript
 // 将字符串值 'Hello' 赋给 'message' 变量
 let message = "Hello";
 
@@ -774,7 +763,7 @@ let on = true;
 
 赋值运算符在编程中不用于比较一个数字是否等于另一个数字。
 
-如果你想进行这种比较，则需要使用等于 `==` 运算符。我们将在下一节中进一步了解比较。
+如果你想进行这种比较，则需要使用等于`==`运算符。我们将在下一节中进一步了解比较。
 
 赋值运算符还可以与算术运算符结合使用，这样你就可以对左操作数进行加或减操作。
 
@@ -784,7 +773,7 @@ JavaScript 中有 6 种赋值运算符。其中，只有标准赋值和加法赋
 
 赋值运算符用于将一个值赋给另一个值：
 
-```
+```javascript
 let x = 2
 let y = 1
 
@@ -798,7 +787,7 @@ console.log(x); // 1
 
 加法赋值用于对两个操作数执行加法，并将结果赋给左操作数：
 
-```
+```javascript
 let x = 2
 let y = 1
 
@@ -807,13 +796,13 @@ x += y
 console.log(x); // 3
 ```
 
-这是 `x = x + y` 的简写形式。
+这是`x = x + y`的简写形式。
 
 ### 减法赋值运算符
 
 减法赋值用于对两个操作数执行减法，并将结果赋给左操作数：
 
-```
+```javascript
 let x = 2
 let y = 1
 
@@ -822,13 +811,13 @@ x -= y
 console.log(x); // 1
 ```
 
-这是 `x = x - y` 的简写形式。
+这是`x = x - y`的简写形式。
 
 ### 乘法赋值运算符
 
 乘法赋值用于对两个操作数执行乘法，然后将结果赋给左操作数：
 
-```
+```javascript
 let x = 2
 let y = 2
 
@@ -837,13 +826,13 @@ x *= y
 console.log(x); // 4
 ```
 
-这是 `x = x * y` 的简写形式。
+这是`x = x * y`的简写形式。
 
 ### 除法赋值运算符
 
 除法赋值用于对两个操作数执行除法，然后将结果赋给左操作数：
 
-```
+```javascript
 let x = 5
 let y = 2
 
@@ -852,13 +841,13 @@ x /= y
 console.log(x); // 2.5
 ```
 
-这是 `x = x / y` 的简写形式。
+这是`x = x / y`的简写形式。
 
 ### 取余赋值运算符
 
 取余赋值用于对两个操作数执行取余运算，然后将结果赋给左操作数：
 
-```
+```javascript
 let x = 10
 let y = 3
 
@@ -867,13 +856,13 @@ x %= y
 console.log(x); // 1
 ```
 
-这是 `x = x % y` 的简写形式。
+这是`x = x % y`的简写形式。
 
 接下来，我们将看看比较运算符。
 
 ## 比较运算符
 
-比较运算符用于比较两个值。这类运算符会返回布尔值：`true` 或 `false`。
+比较运算符用于比较两个值。这类运算符会返回布尔值：`true`或`false`。
 
 下表列出了 JavaScript 中所有可用的比较运算符：
 
@@ -891,7 +880,7 @@ console.log(x); // 1
 
 以下是使用这些运算符的一些示例：
 
-```
+```javascript
 console.log(9 == 9); // true
 console.log(9 != 20); // true
 console.log(2 > 10); // false
@@ -902,7 +891,7 @@ console.log(10 <= 10); // true
 
 比较运算符也可以像这样用于比较字符串：
 
-```
+```javascript
 console.log("ABC" == "ABC"); // true
 console.log("ABC" == "abc"); // false
 console.log("Z" == "A"); // false
@@ -914,9 +903,9 @@ JavaScript 还有每个比较运算符的两个版本：宽松和严格。
 
 在严格模式下，JavaScript 会比较类型而不执行类型强制转换。
 
-你需要在比较中多加一个等号 `=`，如下所示：
+你需要在比较中多加一个等号`=`，如下所示：
 
-```
+```javascript
 console.log("9" == 9); // true
 console.log("9" === 9); // false
 console.log(true == 1); // true
@@ -927,23 +916,23 @@ console.log(true === 1); // false
 
 ## 逻辑运算符
 
-逻辑运算符用于检查一个或多个表达式的结果是 `true` 还是 `false`。
+逻辑运算符用于检查一个或多个表达式的结果是`true`还是`false`。
 
 JavaScript 有三种逻辑运算符：
 
-1. `&&` 与运算符——如果任何表达式返回 `false`，则结果为 `false`
-2. `||` 或运算符——如果任何表达式返回 `true`，则结果为 `true`
-3. `!` 非运算符——对表达式取反，返回相反的结果。
+1. `&&`与运算符——如果任何表达式返回`false`，则结果为`false`
+2. `||`或运算符——如果任何表达式返回`true`，则结果为`true`
+3. `!`非运算符——对表达式取反，返回相反的结果。
 
 这些运算符只能返回布尔值。例如，你可以判断“7 大于 2”且“5 大于 4”是否成立：
 
-```
+```javascript
 console.log(7 > 2 && 5 > 4); // true
 ```
 
 让我们做个小练习。试着在你的电脑上运行这些语句。你能猜出结果吗？
 
-```
+```javascript
 console.log(true && false);
 console.log(false || false);
 console.log(!true);
@@ -951,18 +940,20 @@ console.log(!true);
 
 当你需要在代码中断言某个特定条件是否满足时，这些逻辑运算符会派上用场。
 
-## typeof 运算符
+## `typeof`运算符
 
-JavaScript 允许你使用 `typeof` 运算符检查数据类型。要使用该运算符，你需要在指定数据之前调用它：
 
-```
+
+JavaScript 允许你使用`typeof`运算符检查数据类型。要使用该运算符，你需要在指定数据之前调用它：
+
+```javascript
 let x = 5;
 console.log(typeof x) //  'number'
 console.log(typeof "Nathan") // 'string'
 console.log(typeof true) // 'boolean'
 ```
 
-`typeof` 运算符以字符串形式返回数据的类型。`'number'` 类型表示整数和浮点数类型，`'string'` 和 `'boolean'` 分别表示各自的类型。
+`typeof`运算符以字符串形式返回数据的类型。`'number'`类型表示整数和浮点数类型，`'string'`和`'boolean'`分别表示各自的类型。
 
 ## 总结
 
@@ -975,9 +966,6 @@ console.log(typeof true) // 'boolean'
 到目前为止，你编写的 JavaScript 代码都是从上到下逐行执行的。但是，如果你只想在满足某个条件时运行某些代码行，该怎么办呢？
 
 计算机程序通常需要考虑程序执行过程中可能出现的许多不同条件。
-
-
-
 
 这与人类在生活中做决策的方式类似。例如，你有钱支付去日本的假期吗？如果有，就去。如果没有，那就多存点钱！
 
@@ -993,16 +981,16 @@ JavaScript 中常用的控制流有两种：条件语句和循环。
 
 有两种创建条件流的方式：
 
-1. `if…else` 语句
-2. `switch…case` 语句
+1. `if…else`语句
+2. `switch…case`语句
 
-## `if…else` 语句
+## `if…else`语句
 
-`if` 语句允许你创建一个仅在特定条件满足时运行的程序。
+`if`语句允许你创建一个仅在特定条件满足时运行的程序。
 
-`if` 语句的语法如下：
+`if`语句的语法如下：
 
-```
+```javascript
 if (condition) {
   // 条件为真时执行的代码
 }
@@ -1010,9 +998,9 @@ if (condition) {
 
 来看一个例子。假设你想去一个需要 5000 美元的假期。
 
-使用 `if` 语句，检查你是否有足够的余额：
+使用`if`语句，检查你是否有足够的余额：
 
-```
+```javascript
 let balance = 7000;
 if (balance > 5000) {
   console.log("你有足够的钱去这次旅行。我们走吧！");
@@ -1021,13 +1009,13 @@ if (balance > 5000) {
 
 运行上面的代码一次，你会看到终端上打印出该字符串。
 
-现在将 `balance` 的值改为 3000，你将得不到任何响应。
+现在将`balance`的值改为 3000，你将得不到任何响应。
 
-这是因为 `if` 语句内部的代码仅在条件为真时执行。
+这是因为`if`语句内部的代码仅在条件为真时执行。
 
-在 `if` 语句之后，你可以在其下方编写另一行代码，如下所示：
+在`if`语句之后，你可以在其下方编写另一行代码，如下所示：
 
-```
+```javascript
 let balance = 7000;
 if (balance > 5000) {
   console.log("你有足够的钱去这次旅行。我们走吧！");
@@ -1035,11 +1023,11 @@ if (balance > 5000) {
 console.log("结束！");
 ```
 
-无论你给 `balance` 变量赋什么值，上面的第二个 `console.log()` 调用都会执行。
+无论你给`balance`变量赋什么值，上面的第二个`console.log()`调用都会执行。
 
-如果你希望它仅在 `if` 条件满足时执行，那么也将该行放在花括号内：
+如果你希望它仅在`if`条件满足时执行，那么也将该行放在花括号内：
 
-```
+```javascript
 let balance = 7000;
 if (balance > 5000) {
   console.log("你有足够的钱去这次旅行。我们走吧！");
@@ -1047,11 +1035,11 @@ if (balance > 5000) {
 }
 ```
 
-接下来，假设你需要在 `if` 语句条件不满足时运行一些代码。
+接下来，假设你需要在`if`语句条件不满足时运行一些代码。
 
-这就是 `else` 语句的用武之地。请看下面的例子：
+这就是`else`语句的用武之地。请看下面的例子：
 
-```
+```javascript
 let balance = 7000;
 if (balance > 5000) {
   console.log("你有足够的钱去这次旅行。我们走吧！");
@@ -1061,13 +1049,13 @@ if (balance > 5000) {
 console.log("结束！");
 ```
 
-现在将 `balance` 的值改为小于 5000，你就会触发示例中的 `else` 块。
+现在将`balance`的值改为小于 5000，你就会触发示例中的`else`块。
 
-JavaScript 还有 `else if` 语句，它允许你在之前的 `if` 语句条件不满足时编写另一个条件进行检查。
+JavaScript 还有`else if`语句，它允许你在之前的`if`语句条件不满足时编写另一个条件进行检查。
 
 考虑下面的例子：
 
-```
+```javascript
 let balance = 7000;
 if (balance > 5000) {
   console.log("你有足够的钱去这次旅行。我们走吧！");
@@ -1079,21 +1067,21 @@ if (balance > 5000) {
 console.log("结束！");
 ```
 
-当 `balance` 金额小于 5000 时，`else if` 语句会检查 `balance` 是否大于 3000。如果是，那么程序会建议你进行居家度假。
+当`balance`金额小于 5000 时，`else if`语句会检查`balance`是否大于 3000。如果是，那么程序会建议你进行居家度假。
 
-你可以根据需要编写任意多个 `else if` 语句，每个语句仅在前一个条件不满足时执行。
+你可以根据需要编写任意多个`else if`语句，每个语句仅在前一个条件不满足时执行。
 
-总之，`if..else..else if` 语句允许你根据程序面临的条件执行不同的代码块。
+总之，`if..else..else if`语句允许你根据程序面临的条件执行不同的代码块。
 
-## `switch…case` 语句
+## `switch…case`语句
 
-`switch` 语句是核心 JavaScript 语法的一部分，允许你控制代码的执行流程。
+`switch`语句是核心 JavaScript 语法的一部分，允许你控制代码的执行流程。
 
-它通常被认为是 `if..else` 语句的替代方案，能提供更易读的代码，尤其是在需要评估许多不同条件时。
+它通常被认为是`if..else`语句的替代方案，能提供更易读的代码，尤其是在需要评估许多不同条件时。
 
-下面是一个可运行的 `switch` 语句示例。我将在代码下方进行解释：
+下面是一个可运行的`switch`语句示例。我将在代码下方进行解释：
 
-```
+```javascript
 let age = 15;
 switch (age) {
   case 10:
@@ -1107,17 +1095,17 @@ switch (age) {
 }
 ```
 
-首先，你需要将一个表达式传递给 `switch` 语句的括号中进行评估。在示例中，`age` 变量作为参数传递进行评估。
+首先，你需要将一个表达式传递给`switch`语句的括号中进行评估。在示例中，`age`变量作为参数传递进行评估。
 
-然后，你需要编写 `case` 值，`switch` 语句会尝试将这些值与你的表达式进行匹配。`case` 值后面紧跟一个冒号（`:`）来标记 case 块的开始：
+然后，你需要编写`case`值，`switch`语句会尝试将这些值与你的表达式进行匹配。`case`值后面紧跟一个冒号（`:`）来标记 case 块的开始：
 
-```
+```javascript
 case "apple":
 ```
 
-请记住要与表达式匹配的 `case` 值的数据类型。如果你想匹配字符串，那么你需要放入一个字符串。当参数是数字但 case 中放入字符串时，`switch` 语句不会执行类型强制转换：
+请记住要与表达式匹配的`case`值的数据类型。如果你想匹配字符串，那么你需要放入一个字符串。当参数是数字但`case`中放入字符串时，`switch`语句不会执行类型强制转换：
 
-```
+```javascript
 switch (1) {
   case "1":
     console.log("Hello World!");
@@ -1125,11 +1113,11 @@ switch (1) {
 }
 ```
 
-数字表达式与字符串 case 值不匹配，因此 JavaScript 不会在控制台输出任何内容。
+数字表达式与字符串`case`值不匹配，因此 JavaScript 不会在控制台输出任何内容。
 
-布尔值也是如此。数字 `1` 不会被强制转换为 `true`，数字 `0` 也不会被强制转换为 `false`：
+布尔值也是如此。数字`1`不会被强制转换为`true`，数字`0`也不会被强制转换为`false`：
 
-```
+```javascript
 switch (0) {
   case true:
     console.log("Hello True!");
@@ -1142,19 +1130,19 @@ switch (0) {
 }
 ```
 
-## `switch` 语句体
+## `switch`语句体
 
-`switch` 语句体由三个关键字组成：
+`switch`语句体由三个关键字组成：
 
-- ▪
-- ▪
-- ▪
+- `case`
+- `break`
+- `default`
 
-当你的表达式找到匹配的 case 时，JavaScript 会执行 `case` 语句后面的代码，直到遇到 `break` 关键字。如果你省略了 `break` 关键字，那么代码执行会继续到下一个块。
+当你的表达式找到匹配的`case`时，JavaScript 会执行`case`语句后面的代码，直到遇到`break`关键字。如果你省略了`break`关键字，那么代码执行会继续到下一个块。
 
 请看下面的例子：
 
-```
+```javascript
 switch (0) {
   case 1:
     console.log("值是 1");
@@ -1168,15 +1156,16 @@ switch (0) {
 当你执行上面的代码时，JavaScript 会打印以下日志：
 
 > "值是 0"
+
 > "没有匹配的 case"
 
-这是因为没有 `break` 关键字，即使已经找到匹配的 case，`switch` 也会继续对剩余 case 评估表达式。
+这是因为没有`break`关键字，即使已经找到匹配的 case，`switch`也会继续对剩余 case 评估表达式。
 
-你的 `switch` 评估可能匹配多个 case，因此通常使用 `break` 关键字在找到匹配后退出该过程。
+你的`switch`评估可能匹配多个 case，因此通常使用`break`关键字在找到匹配后退出该过程。
 
 最后，你也可以将表达式作为 case 值：
 
-```
+```javascript
 switch (20) {
   case 10 + 10:
     console.log("值是二十");
@@ -1184,13 +1173,13 @@ switch (20) {
 }
 ```
 
-但你需要记住，case 块的值必须与 `switch` 参数完全匹配。
+但你需要记住，case 块的值必须与`switch`参数完全匹配。
 
-使用 `switch` 语句时最常见的错误之一是人们认为 case 值会被评估为 `true` 或 `false`。
+使用`switch`语句时最常见的错误之一是人们认为 case 值会被评估为`true`或`false`。
 
 以下 case 块不会产生正确的结果：
 
-```
+```javascript
 let age = 5;
 switch (age) {
   case age < 10:
@@ -1204,22 +1193,22 @@ switch (age) {
 }
 ```
 
-你需要记住 `if` 和 `case` 评估之间的区别：
+你需要记住`if`和`case`评估之间的区别：
 
-- ▪
-- ▪
+- `if`语句会评估条件表达式，并根据结果执行代码。
+- `switch`语句会将表达式的值与`case`值进行匹配。
 
-## 何时使用 Switch？
+## 何时使用`switch`？
 
-在 `if` 和 `switch` 之间做选择时的经验法则是：
+在`if`和`switch`之间做选择时的经验法则是：
 
-只有当使用 `if` 编写代码很繁琐时，才使用 `switch`
+只有当使用`if`编写代码很繁琐时，才使用`switch`
 
 例如，假设你想根据星期几的数字来写出星期几的名称。
 
 你可以这样编写：
 
-```
+```javascript
 let weekdayNumber = 1;
 if (weekdayNumber === 0) {
   console.log("星期日");
@@ -1240,48 +1229,42 @@ if (weekdayNumber === 0) {
 }
 ```
 
-我不知道你怎么想，但上面的代码对我来说确实很繁琐！虽然上面的代码没有错，但你可以用 `switch` 让它更美观：
+我不知道你怎么想，但上面的代码对我来说确实很繁琐！虽然上面的代码没有错，但你可以用`switch`让它更美观：
 
-```
+```javascript
 let weekdayNumber = 1;
 switch (weekdayNumber) {
   case 0:
-```
-
-
-
-
-
-```javascript
-    console.log("Sunday");
-    break;
-  case 1:
-    console.log("Monday");
-    break;
-  case 2:
-    console.log("Tuesday");
-    break;
-  case 3:
-    console.log("Wednesday");
-    break;
-  case 4:
-    console.log("Thursday");
-    break;
-  case 5:
-    console.log("Friday");
-    break;
-  case 6:
-    console.log("Saturday");
-    break;
-  default:
-    console.log("The weekday number is invalid");
+    console.log("Sunday");
+    break;
+  case 1:
+    console.log("Monday");
+    break;
+  case 2:
+    console.log("Tuesday");
+    break;
+  case 3:
+    console.log("Wednesday");
+    break;
+  case 4:
+    console.log("Thursday");
+    break;
+  case 5:
+    console.log("Friday");
+    break;
+  case 6:
+    console.log("Saturday");
+    break;
+  default:
+    console.log("The weekday number is invalid");
+}
 ```
 
 ## 循环流程
 
 在用 JavaScript 编写应用程序时，你经常需要编写一段需要重复执行的代码。
 
-假设你想编写一个程序，在控制台中打印数字 1 到 10。你可以像这样调用 `console.log` 10 次：
+假设你想编写一个程序，在控制台中打印数字 1 到 10。你可以像这样调用`console.log`10 次：
 
 ```javascript
 console.log(1);
@@ -1298,37 +1281,37 @@ console.log(5);
 
 JavaScript 中有两种循环语句：
 
-- | ▪ |
-- | ▪ |
+- `for`
+- `while`
 
 让我们学习如何在实际中使用这些语句。
 
-## for 语句
+## `for`语句
 
-与其重复 10 次来打印数字 1 到 10，不如使用 for 语句，只需编写一行代码，如下所示：
+与其重复 10 次来打印数字 1 到 10，不如使用`for`语句，只需编写一行代码，如下所示：
 
 ```javascript
 for (let x = 0; x < 10; x++) {
-  console.log(x);
+  console.log(x);
 }
 ```
 
-就是这样！for 语句后面跟着一对圆括号 `()`，其中包含 3 个表达式：
+就是这样！`for`语句后面跟着一对圆括号`()`，其中包含 3 个表达式：
 
-- | ▪ |
-- | ▪ |
-- | ▪ |
+- 初始化表达式
+- 条件表达式
+- 算术表达式
 
-这些表达式用分号 `;` 分隔。
+这些表达式用分号`;`分隔。
 
-表达式之后，使用花括号 `{}` 创建一个代码块，只要 `condition` 表达式返回 true，JavaScript 就会执行该代码块。
+表达式之后，使用花括号`{}`创建一个代码块，只要`condition`表达式返回`true`，JavaScript 就会执行该代码块。
 
-你可以通过注意结束语句的分号 `;` 来识别哪个表达式是哪个。
+你可以通过注意结束语句的分号`;`来识别哪个表达式是哪个。
 
 ```javascript
-for ( [initialization]; [condition]; [arithmetic expression]) {
-  // 只要 condition 返回 true，
-  // 这个代码块就会重复执行
+for ([initialization]; [condition]; [arithmetic expression]) {
+  // 只要 condition 返回 true，
+  // 这个代码块就会重复执行
 }
 ```
 
@@ -1336,107 +1319,107 @@ for ( [initialization]; [condition]; [arithmetic expression]) {
 
 ```javascript
 for (let x = 10; x >= 1; x--) {
-  console.log(x);
+  console.log(x);
 }
 ```
 
-或者你也可以使用简写的算术运算符，比如 `+=` 和 `-=`，如下所示：
+或者你也可以使用简写的算术运算符，比如`+=`和`-=`，如下所示：
 
 ```javascript
 // 使用简写算术表达式的 for 语句
 for (let x = 1; x < 20; x += 3) {
-  console.log(x);
+  console.log(x);
 }
 ```
 
-这里，每次循环执行时，`x` 都会增加 3。
+这里，每次循环执行时，`x`都会增加 3。
 
-循环结束后，JavaScript 将继续执行 for 主体下方编写的任何代码：
+循环结束后，JavaScript 将继续执行`for`主体下方编写的任何代码：
 
 ```javascript
 for (let x = 1; x < 2; x++) {
-  console.log(x);
+  console.log(x);
 }
 console.log("The for loop has ended");
 console.log("Continue code execution");
 ```
 
-## 何时使用 for 循环
+## 何时使用`for`循环
 
-当你明确知道需要执行重复任务的次数时，for 循环非常有用。
+当你明确知道需要执行重复任务的次数时，`for`循环非常有用。
 
-例如，假设你正在编写一个抛硬币的程序。你需要找出抛 10 次硬币时，硬币正面朝上的次数。你可以使用 `Math.random` 方法来实现：
+例如，假设你正在编写一个抛硬币的程序。你需要找出抛 10 次硬币时，硬币正面朝上的次数。你可以使用`Math.random`方法来实现：
 
-- | ▪ |
-- | ▪ |
+- 生成随机数
+- 根据随机数判断硬币朝向
 
 ```javascript
 let heads = 0;
 let tails = 0;
 for (x = 1; x <= 10; x++) {
-  if (Math.random() < 0.5) {
-    tails++;
-  } else {
-    heads++;
-  }
+  if (Math.random() < 0.5) {
+    tails++;
+  } else {
+    heads++;
+  }
 }
 console.log("Tossed the coin ten times");
 console.log(`Number of heads: ${heads}`);
 console.log(`Number of tails: ${tails}`);
 ```
 
-上面的例子展示了 for 循环最有效的使用场景。
+上面的例子展示了`for`循环最有效的使用场景。
 
-现在让我们看一个关于抛硬币的替代练习，其中 for 循环并不有效：
+现在让我们看一个关于抛硬币的替代练习，其中`for`循环并不有效：
 
 找出需要抛多少次硬币，直到它正面朝上。
 
-这一次，你不知道需要抛多少次硬币。这时你需要使用 while 循环语句，接下来你将学习它。
+这一次，你不知道需要抛多少次硬币。这时你需要使用`while`循环语句，接下来你将学习它。
 
-## while 语句
+## `while`语句
 
-while 语句（或 while 循环）用于在条件求值为 true 时重复运行一段代码。
+`while`语句（或`while`循环）用于在条件求值为`true`时重复运行一段代码。
 
 你可以像这样定义循环的条件和语句：
 
 ```javascript
 while (condition) {
-  statement;
+  statement;
 }
 ```
 
-与 for 循环一样，while 循环用于反复执行一段代码，直到达到所需的条件。
+与`for`循环一样，`while`循环用于反复执行一段代码，直到达到所需的条件。
 
 请看下面的例子：
 
 ```javascript
 let i = 0;
 while (i < 6) {
-  console.log(`The value of i = ${i}`);
-  i++;
+  console.log(`The value of i = ${i}`);
+  i++;
 }
 ```
 
-这里，只要 `i` 小于 6，while 循环就会重复打印 `i` 的值。每次迭代中，`i` 的值增加 1，直到达到 6，循环终止。
+这里，只要`i`小于 6，`while`循环就会重复打印`i`的值。每次迭代中，`i`的值增加 1，直到达到 6，循环终止。
 
-请记住，你需要包含一段最终能使求值条件变为 false 的代码，否则 while 循环将永远执行下去。下面的例子会导致无限循环：
+请记住，你需要包含一段最终能使求值条件变为`false`的代码，否则`while`循环将永远执行下去。下面的例子会导致无限循环：
 
 ```javascript
 let i = 0;
 while (i < 6) {
-  console.log(`The value of i = ${i}`);
+  console.log(`The value of i = ${i}`);
 }
 ```
 
-因为 `i` 的值从未改变，while 循环将永远运行下去！
+因为`i`的值从未改变，`while`循环将永远运行下去！
 
-## 何时使用 while 循环
+## 何时使用`while`循环
 
-既然 while 和 for 都可以用于重复执行一段代码，那么什么时候应该使用 while 循环而不是 for 呢？
+既然`while`和`for`都可以用于重复执行一段代码，那么什么时候应该使用`while`循环而不是`for`呢？
 
-一个简单的判断方法是：当你不知道需要执行代码多少次时，就应该使用 while。
+一个简单的判断方法是：当你不知道需要执行代码多少次时，就应该使用`while`。
 
-回到抛硬币的例子，有一个场景非常适合使用 while 循环：
+回到抛硬币的例子，有一个场景非常适合使用`while`循环：
 
 找出需要抛多少次硬币，直到它正面朝上。
 
@@ -1446,31 +1429,33 @@ while (i < 6) {
 let flips = 0;
 let isHeads = false;
 while (!isHeads) {
-  flips++;
-  isHeads = Math.random() < 0.5;
+  flips++;
+  isHeads = Math.random() < 0.5;
 }
 console.log(`It took ${flips} flips to land on heads.`);
 ```
 
-这里，条件 `isHead = Math.random() < 0.5` 模拟了抛一枚公平硬币的过程。当结果为 true 时，表示硬币正面朝上，循环将退出。
 
-因为你无法知道需要循环多少次才能得到数字 8，所以你需要使用 while 循环而不是 for 循环。
+
+这里，条件`isHead = Math.random() < 0.5`模拟了抛一枚公平硬币的过程。当结果为`true`时，表示硬币正面朝上，循环将退出。
+
+因为你无法知道需要循环多少次才能得到数字 8，所以你需要使用`while`循环而不是`for`循环。
 
 ## 总结
 
 在本章中，你学习了 JavaScript 中可用的两种控制流：条件流和循环流。
 
-每种类型都有两种不同的控制流方式：条件流有 if-else 和 switch，循环流有 for 和 while 语句。
+每种类型都有两种不同的控制流方式：条件流有`if-else`和`switch`，循环流有`for`和`while`语句。
 
-通常，if 和 for 语句比 switch 和 while 语句更受青睐。你可以将 switch 和 while 视为当 if 和 for 不适用时使用的替代语法。
+通常，`if`和`for`语句比`switch`和`while`语句更受青睐。你可以将`switch`和`while`视为当`if`和`for`不适用时使用的替代语法。
 
 # 第 6 章：函数
 
 函数就是一段（或一个代码块）为执行特定任务而编写的代码。
 
-例如，类型转换函数 `String()` 用于将其他类型的数据转换为字符串。
+例如，类型转换函数`String()`用于将其他类型的数据转换为字符串。
 
-我们在前面章节中使用的 `console.log()` 中的 `log()` 方法也是一个函数，但由于 `log()` 附加在 `console` 对象上，因此它被称为方法。
+我们在前面章节中使用的`console.log()`中的`log()`方法也是一个函数，但由于`log()`附加在`console`对象上，因此它被称为方法。
 
 你将在本章中了解更多关于对象和方法的内容。现在，你只需要知道函数和方法本质上是相同的，只不过方法是从对象上调用的。
 
@@ -1478,14 +1463,14 @@ console.log(`It took ${flips} flips to land on heads.`);
 
 ## 如何创建自己的函数
 
-创建函数以输入 `function` 关键字开始，后面跟着函数名、一对圆括号，然后是一对花括号。
+创建函数以输入`function`关键字开始，后面跟着函数名、一对圆括号，然后是一对花括号。
 
 下面是一个例子：
 
 ```javascript
 function greet() {
-  // 函数体
-  console.log("Hello!");
+  // 函数体
+  console.log("Hello!");
 }
 ```
 
@@ -1503,35 +1488,32 @@ greet(); // Hello!
 
 你可以在函数头部的圆括号内指定参数。
 
-下面的例子展示了一个带有一个名为 `name` 的参数的函数：
+下面的例子展示了一个带有一个名为`name`的参数的函数：
 
 ```javascript
 function greet(name) {
-  // 函数体
+  // 函数体
 }
 ```
 
-如何在函数内部使用 `name` 参数取决于你。
+如何在函数内部使用`name`参数取决于你。
 
-你可以在 `print()` 函数内部使用该参数，如下所示：
+你可以在`print()`函数内部使用该参数，如下所示：
 
 ```javascript
 function greet(name) {
-  console.log(`Hello, ${name}!`);
-  console.log("Nice weather today, right?");
+  console.log(`Hello, ${name}!`);
+  console.log("Nice weather today, right?");
 }
 ```
 
-现在，每当你需要调用 `greet()` 函数时，你需要传入一个输入来填充 `name` 参数。
-
-
-
+现在，每当你需要调用`greet()`函数时，你需要传入一个输入来填充`name`参数。
 
 你传递给参数填充的输入称为实参，以下是具体做法：
 
 `greet("Peter");`
 
-调用 `greet()` 函数时，括号内的字符串 `'Peter'` 将作为 `name` 参数传递。
+调用`greet()`函数时，括号内的字符串`'Peter'`将作为`name`参数传递。
 
 运行代码将得到以下输出：
 
@@ -1542,7 +1524,7 @@ Nice weather today, right?
 
 定义函数时可以有多个参数，但需要用逗号分隔每个参数，如下所示：
 
-```
+```javascript
 function greet(name, weather) {
   console.log(`Hello, ${name}!`);
   console.log(`It's ${weather} today, right?`);
@@ -1558,34 +1540,34 @@ Hello, Nathan!
 It's rainy today, right?
 ```
 
-当你在函数头部指定两个参数时，需要传递两个实参。如果你调用函数时没有传递实参，那么值将是 `undefined`。
+当你在函数头部指定两个参数时，需要传递两个实参。如果你调用函数时没有传递实参，那么值将是`undefined`。
 
 在下一节中，你将学习如何创建带有默认值的参数，这样可以在不传递实参的情况下调用函数。
 
 但现在，我希望你能看到参数带来的便利。它们通过接受不同的输入值来覆盖函数可能遇到的各种场景，使函数更具适应性和可重用性。
 
-如示例所示，`name` 和 `weather` 参数允许你向不同天气下的不同人打招呼。
+如示例所示，`name`和`weather`参数允许你向不同天气下的不同人打招呼。
 
-无论是晴天、雨天还是阴天，当你想要向另一个人打招呼时，只需更改 `name` 和 `weather` 实参即可。
+无论是晴天、雨天还是阴天，当你想要向另一个人打招呼时，只需更改`name`和`weather`实参即可。
 
 ## 默认参数
 
 定义函数时，你可以为该函数中的任何参数设置默认值。
 
-例如，下面函数中的 `name` 参数就是一个默认参数：
+例如，下面函数中的`name`参数就是一个默认参数：
 
-```
+```javascript
 function greet(name = "Nathan") {
   console.log(`Hello, ${name}!`);
   console.log("Nice weather today, right?");
 }
 ```
 
-这里，当没有为 `name` 参数传递值或传递 `undefined` 时，将使用默认值 `'Nathan'`。
+这里，当没有为`name`参数传递值或传递`undefined`时，将使用默认值`'Nathan'`。
 
-你可以通过不带实参调用 `greet()` 函数来测试这一点，如下所示：
+你可以通过不带实参调用`greet()`函数来测试这一点，如下所示：
 
-```
+```javascript
 greet();
 greet("Jack");
 ```
@@ -1601,9 +1583,9 @@ Nice weather today, right?
 
 你定义的任何函数都可以混合使用默认参数和非默认参数。
 
-下面是另一个函数的示例，它有一个名为 `name` 的默认参数和一个名为 `weather` 的非默认参数：
+下面是另一个函数的示例，它有一个名为`name`的默认参数和一个名为`weather`的非默认参数：
 
-```
+```javascript
 function greet(weather, name = "Nathan") {
   console.log(`Hello, ${name}!`);
   console.log(`It's ${weather} today, right?`);
@@ -1619,13 +1601,13 @@ Hello, Nathan!
 It's sunny today, right?
 ```
 
-注意，`weather` 参数被放在了 `name` 参数前面。这样做是为了方便，这样你就不需要指定默认参数了。
+注意，`weather`参数被放在了`name`参数前面。这样做是为了方便，这样你就不需要指定默认参数了。
 
-如果你将非默认参数放在默认参数之后，那么你需要先为 `name` 参数传递一个值，才能到达 `weather` 参数。
+如果你将非默认参数放在默认参数之后，那么你需要先为`name`参数传递一个值，才能到达`weather`参数。
 
 考虑下面的例子：
 
-```
+```javascript
 function greet(name = "Nathan", weather) {
   console.log(`Hello, ${name}!`);
   console.log(`It's ${weather} today, right?`);
@@ -1634,17 +1616,17 @@ function greet(name = "Nathan", weather) {
 greet(undefined, "sunny");
 ```
 
-为了向 `weather` 参数传递实参，我们需要先为 `name` 参数传递 `undefined` 或任何值。
+为了向`weather`参数传递实参，我们需要先为`name`参数传递`undefined`或任何值。
 
 这就是为什么最好将非默认参数放在默认参数前面。
 
 ## 默认参数与 null
 
-回顾第 2 节，我们简要探讨了 `undefined` 作为“默认”空值与 `null` 作为“有意”空值之间的区别。
+回顾第 2 节，我们简要探讨了`undefined`作为“默认”空值与`null`作为“有意”空值之间的区别。
 
-当你向具有默认参数的函数传递 `undefined` 时，将使用默认参数：
+当你向具有默认参数的函数传递`undefined`时，将使用默认参数：
 
-```
+```javascript
 function greet(name = "John"){
   console.log(name);
 }
@@ -1652,11 +1634,11 @@ function greet(name = "John"){
 greet(undefined); // John
 ```
 
-如你所见，当你向函数传递 `undefined` 时，JavaScript 会打印默认参数值 `John`。
+如你所见，当你向函数传递`undefined`时，JavaScript 会打印默认参数值`John`。
 
-但是当你向函数传递 `null` 时，默认参数将被忽略：
+但是当你向函数传递`null`时，默认参数将被忽略：
 
-```
+```javascript
 function greet(name = "John"){
   console.log(name);
 }
@@ -1664,17 +1646,17 @@ function greet(name = "John"){
 greet(null); // null
 ```
 
-这是初学者在学习 JavaScript 时常犯的错误之一。当你使用值 `null` 时，JavaScript 会认为你想要该值为空，因此不会用默认参数替换该值。
+这是初学者在学习 JavaScript 时常犯的错误之一。当你使用值`null`时，JavaScript 会认为你想要该值为空，因此不会用默认参数替换该值。
 
-当你使用 `undefined` 时，JavaScript 会用默认参数替换它。在你的职业生涯中处理 JavaScript 代码时可能会遇到这个问题，所以请记住这一点。
+当你使用`undefined`时，JavaScript 会用默认参数替换它。在你的职业生涯中处理 JavaScript 代码时可能会遇到这个问题，所以请记住这一点。
 
 ## `return` 语句
 
-函数也可以在代码块中包含 `return` 语句。`return` 语句用于将值返回给调用者。
+函数也可以在代码块中包含`return`语句。`return`语句用于将值返回给调用者。
 
 例如，以下函数返回两个值的和：
 
-```
+```javascript
 function sum(a, b) {
   return a + b;
 }
@@ -1683,13 +1665,13 @@ let result = sum(3, 2);
 console.log(result); // 5
 ```
 
-函数返回的值可以赋值给变量，以便进一步操作。你可以在函数内部的任何位置添加 `return` 语句。
+函数返回的值可以赋值给变量，以便进一步操作。你可以在函数内部的任何位置添加`return`语句。
 
-当 JavaScript 遇到 `return` 语句时，它会跳过函数块中后续编写的代码，并返回到调用函数的位置。
+当 JavaScript 遇到`return`语句时，它会跳过函数块中后续编写的代码，并返回到调用函数的位置。
 
-以下函数包含两个 `return` 语句：
+以下函数包含两个`return`语句：
 
-```
+```javascript
 function checkAge(age) {
   if (age > 18) {
     return "You may get a car license";
@@ -1708,13 +1690,13 @@ You may get a car license
 You may not get a car license yet
 ```
 
-当我们第一次调用 `checkAge()` 函数时，`age` 实参的值大于 18，因此 JavaScript 执行了 `if` 块内的 `return` 语句。
+当我们第一次调用`checkAge()`函数时，`age`实参的值大于 18，因此 JavaScript 执行了`if`块内的`return`语句。
 
-第二次调用该函数时，`if` 条件不满足，因此 JavaScript 转而执行了 `if` 块下方的 `return` 语句。
+第二次调用该函数时，`if`条件不满足，因此 JavaScript 转而执行了`if`块下方的`return`语句。
 
-你也可以通过指定不带任何值的 `return` 语句来停止函数执行并返回调用者：
+你也可以通过指定不带任何值的`return`语句来停止函数执行并返回调用者：
 
-```
+```javascript
 function greet() {
   console.log("Hello!");
   return;
@@ -1730,9 +1712,9 @@ greet()
 Hello!
 ```
 
-这里，`return` 语句在两个 `console.log()` 调用之间被调用。
+这里，`return`语句在两个`console.log()`调用之间被调用。
 
-JavaScript 执行第一个 `console.log()` 调用，然后跳过其余代码。字符串 `'Good bye!'` 不会被打印。
+JavaScript 执行第一个`console.log()`调用，然后跳过其余代码。字符串`'Good bye!'`不会被打印。
 
 ## 变量作用域
 
@@ -1744,7 +1726,7 @@ JavaScript 执行第一个 `console.log()` 调用，然后跳过其余代码。�
 
 这两个作用域很重要，因为当你尝试在其作用域之外访问局部变量时，会收到错误。例如：
 
-```
+```javascript
 function greet() {
   let myString = "Hello World!";
 }
@@ -1759,11 +1741,11 @@ console.log(myString);
 ReferenceError: myString is not defined
 ```
 
-这是因为 `myString` 变量是在 `greet()` 函数内部声明的，所以你无法在函数外部访问它。即使你在访问变量之前调用了该函数，也无济于事。
+这是因为`myString`变量是在`greet()`函数内部声明的，所以你无法在函数外部访问它。即使你在访问变量之前调用了该函数，也无济于事。
 
 同时，全局变量可以从任何地方访问，甚至在函数内部：
 
-```
+```javascript
 let myString = "Hello World!";
 
 function greet() {
@@ -1773,15 +1755,15 @@ function greet() {
 greet(); // Hello World!
 ```
 
-这里，`greet()` 函数能够访问在其外部声明的 `myString` 变量。
+这里，`greet()`函数能够访问在其外部声明的`myString`变量。
 
-请记住，这仅适用于使用 `let` 和 `const` 声明的变量。
+请记住，这仅适用于使用`let`和`const`声明的变量。
 
 接下来，你还可以定义一个与全局变量同名的局部变量，而不会覆盖它。
 
 示例如下：
 
-```
+```javascript
 let myString = "Hello World!";
 
 function greet() {
@@ -1793,16 +1775,13 @@ greet();  // Morning!
 console.log(myString); // Hello World!
 ```
 
-当你调用 `greet()` 函数时，一个名为 `myString` 的局部变量被赋值为字符串 `'Morning!'`。
+当你调用`greet()`函数时，一个名为`myString`的局部变量被赋值为字符串`'Morning!'`。
 
-在函数外部，同样名为 `myString` 的全局变量仍然存在，并且值没有改变。
+在函数外部，同样名为`myString`的全局变量仍然存在，并且值没有改变。
 
 JavaScript 将局部作用域变量视为不同的变量。当你在函数内部声明同名变量时，函数内的任何代码都将始终引用局部变量。
 
 在实践中，你很少需要在不同的作用域中声明相同的变量。
-
-
-
 
 1. 任何在函数外部声明的变量，都不应在未作为参数传递的情况下在函数内部使用。
 
@@ -1814,19 +1793,19 @@ JavaScript 将局部作用域变量视为不同的变量。当你在函数内部
 
 剩余参数是一种可以接受任意数量数据作为其参数的参数。这些参数将以数组形式存储。
 
-你可以在函数头部通过在参数名称前添加三个点 `...` 来定义剩余参数。
+你可以在函数头部通过在参数名称前添加三个点`...`来定义剩余参数。
 
 下面是一个创建可变长度参数函数的示例：
 
-```
+```javascript
 function printArguments(...args){
     console.log(args);
 }
 ```
 
-调用上面的 `printArguments()` 函数时，你可以指定任意数量的参数：
+调用上面的`printArguments()`函数时，你可以指定任意数量的参数：
 
-```
+```javascript
 function printArguments(...args){
     console.log(args);
 }
@@ -1846,9 +1825,9 @@ printArguments(1, 2, 3, 4, 5);
 
 箭头函数语法允许你以更简短、更简洁的语法编写 JavaScript 函数。
 
-在 JavaScript 中创建函数时，主要方法是使用 `function` 关键字后跟函数名，如下所示：
+在 JavaScript 中创建函数时，主要方法是使用`function`关键字后跟函数名，如下所示：
 
-```
+```javascript
 function greetings(name) {
   console.log(`Hello, ${name}!`);
 }
@@ -1858,9 +1837,9 @@ greetings("John"); // Hello, John!
 
 箭头函数语法允许你创建一个函数表达式，其效果与上述代码相同。
 
-下面是使用箭头语法的 `greetings()` 函数：
+下面是使用箭头语法的`greetings()`函数：
 
-```
+```javascript
 const greetings = (name) => {
   console.log(`Hello, ${name}!`);
 };
@@ -1872,7 +1851,7 @@ greetings("John"); // Hello, John!
 
 基本上，箭头函数语法如下所示：
 
-```
+```javascript
 const fun = (param1, param2, ...) => {
   // 函数体
 }
@@ -1881,12 +1860,14 @@ const fun = (param1, param2, ...) => {
 在上面的代码中，
 
 | ▪ |
+
 | ▪ |
+
 | ▪ |
 
 上述代码等同于以下代码：
 
-```
+```javascript
 const fun = function(param1, param2, ...) {
   // 函数体
 }
@@ -1896,25 +1877,25 @@ const fun = function(param1, param2, ...) {
 
 相反，它改进了你在 JavaScript 中编写函数的方式。
 
-起初，由于你习惯了 `function` 关键字，它可能看起来有些奇怪。
+起初，由于你习惯了`function`关键字，它可能看起来有些奇怪。
 
 但当你开始使用箭头语法时，你会发现它非常方便且更易于编写。
 
 ## 单行与多行箭头函数
 
-箭头函数提供了一种编写单行函数的方式，其中箭头 `=>` 左侧的内容会被返回给右侧。
+箭头函数提供了一种编写单行函数的方式，其中箭头`=>`左侧的内容会被返回给右侧。
 
-当你使用 `function` 关键字时，需要使用花括号 `{}` 和 `return` 关键字，如下所示：
+当你使用`function`关键字时，需要使用花括号`{}`和`return`关键字，如下所示：
 
-```
+```javascript
 function plusTwo(num) {
   return num + 2;
 }
 ```
 
-使用箭头函数，你可以省略花括号和 `return` 关键字，创建一个单行函数，如下所示：
+使用箭头函数，你可以省略花括号和`return`关键字，创建一个单行函数，如下所示：
 
-```
+```javascript
 const plusTwo = (num) => num + 2;
 ```
 
@@ -1922,13 +1903,13 @@ const plusTwo = (num) => num + 2;
 
 箭头函数语法也适用于不返回值的函数，如下所示：
 
-```
+```javascript
 const greetings = () => console.log("Hello World!");
 ```
 
 使用箭头函数语法时，只有当函数体有多行时才需要花括号：
 
-```
+```javascript
 const greetings = () => {
   console.log("Hello World!");
   console.log("How are you?");
@@ -1937,11 +1918,11 @@ const greetings = () => {
 
 ## 不带圆括号的箭头函数
 
-圆括号 `()` 在 JavaScript 函数中用于表示函数可以接收的参数。
+圆括号`()`在 JavaScript 函数中用于表示函数可以接收的参数。
 
-当你使用 `function` 关键字时，圆括号总是必需的：
+当你使用`function`关键字时，圆括号总是必需的：
 
-```
+```javascript
 function plusThree(num) {
   return num + 3;
 }
@@ -1951,28 +1932,29 @@ function plusThree(num) {
 
 以下代码示例是一个有效的箭头函数表达式：
 
-```
+```javascript
 const plusThree = num => num + 3;
 ```
 
-如你所见，你可以去掉圆括号、花括号以及 `return` 关键字。
+如你所见，你可以去掉圆括号、花括号以及`return`关键字。
 
 但在两种情况下你仍然需要圆括号：
 
 | ▪ |
+
 | ▪ |
 
 当没有参数时，你需要在箭头前加上圆括号，如下所示：
 
-```
+```javascript
 const greetings = () => console.log("Hello World!");
 ```
 
 当有多个参数时也是如此。
 
-下面的函数有两个参数：`name` 和 `age`。
+下面的函数有两个参数：`name`和`age`。
 
-```
+```javascript
 const greetings = (name, age) => console.log("Hello World!");
 ```
 
@@ -1982,13 +1964,17 @@ const greetings = (name, age) => console.log("Hello World!");
 
 你可以按照以下三个简单步骤将普通函数转换为箭头函数：
 
-1. 将 `function` 关键字替换为变量关键字 `let` 或 `const`
-2. 在函数名之后、圆括号之前添加 `=` 符号
-3. 在圆括号之后添加 `=>` 符号
+1. 将`function`关键字替换为变量关键字`let`或`const`
+
+
+
+## 2. 在函数名之后、圆括号之前添加 `=` 符号
+
+## 3. 在圆括号之后添加 `=>` 符号
 
 下面的代码将帮助你直观地理解这些步骤：
 
-```
+```javascript
 function plusTwo(num) {
   return num + 2;
 }
@@ -2013,7 +1999,7 @@ const plusTwo = (num) => {
 
 当函数是单行函数时，还有第四个可选步骤，即去掉花括号和 `return` 关键字，如下所示：
 
-```
+```javascript
 // 从这样
 const plusTwo = num => {
   return num + 2;
@@ -2025,7 +2011,7 @@ const plusTwo = num => num + 2;
 
 当只有一个参数时，你还可以去掉圆括号：
 
-```
+```javascript
 // 从这样
 const plusTwo = (num) => num + 2;
 
@@ -2047,7 +2033,7 @@ const plusTwo = num => num + 2;
 
 如果你是 JavaScript 的完全初学者，你可以坚持使用 `function` 关键字，因为它仍然被广泛使用，并且不会引起任何问题。但随着你在开发道路上的深入，请尝试在你的项目中逐渐过渡到使用箭头函数语法。
 
-## 第 7 章：JavaScript 中的对象
+# 第 7 章：JavaScript 中的对象
 
 对象是一种特殊的数据类型，允许你存储多个值。每个对象以 `key:value` 键值对格式存储数据。
 
@@ -2055,16 +2041,16 @@ const plusTwo = num => num + 2;
 
 当你使用普通变量时，代码会像这样：
 
-```
+```javascript
 let bookTitle = "Beginning JavaScript";
 let bookAuthor = "Nathan Sebhastian";
 ```
 
 虽然这样也能工作，但这显然不是存储相关值的最佳方式。JavaScript 不知道这两个变量是相关的。只有你，作为人类，才知道这两个变量之间存在关联。
 
-这时对象就派上用场了。你可以声明一个单一的 book 对象，并以 `key:value` 格式存储数据：
+这时对象就派上用场了。你可以声明一个单一的 `book` 对象，并以 `key:value` 格式存储数据：
 
-```
+```javascript
 let myBook = {
   title: "Beginning JavaScript",
   author: "Nathan Sebhastian",
@@ -2073,20 +2059,17 @@ let myBook = {
 
 对象使用花括号 `{}` 声明，括号内的每个条目都以 `key:value` 格式编写。
 
-
-
-
 对象项也称为属性，其中键为属性名，值为属性值。你可以将键/值对视为在对象中声明的变量。
 
 当需要向对象添加多个项时，需要使用逗号分隔每个项。要访问属性，可以使用点号（`.`）表示法，如下所示：
 
-```
+```javascript
 console.log(myBook.title); // Beginning JavaScript
 ```
 
 你可以将字符串或数字指定为项的键，也可以将任何类型的数据指定为值，包括数字和函数：
 
-```
+```javascript
 let myBook = {
   title: "Beginning JavaScript",
   author: "Nathan Sebhastian",
@@ -2117,7 +2100,7 @@ myBook.describe();
 
 当你调用像 `String()` 这样的函数时，你是在不指定拥有该函数的对象的情况下调用它：
 
-```
+```javascript
 String(7)
 ```
 
@@ -2125,7 +2108,7 @@ String(7)
 
 例如，从 `myBook` 对象调用 `describe()` 方法时：
 
-```
+```javascript
 myBook.describe();
 ```
 
@@ -2139,7 +2122,7 @@ myBook.describe();
 
 以下是使用点号表示法访问对象属性的示例：
 
-```
+```javascript
 let myBook = {
   title: "Beginning JavaScript",
   author: "Nathan Sebhastian",
@@ -2151,7 +2134,7 @@ console.log(myBook.author);
 
 以下是使用方括号访问相同属性的方法：
 
-```
+```javascript
 let myBook = {
   title: "Beginning JavaScript",
   author: "Nathan Sebhastian",
@@ -2167,7 +2150,7 @@ console.log(myBook["author"]);
 
 你可以使用点号表示法或方括号向对象分配新属性，如下所示：
 
-```
+```javascript
 let myBook = {
   title: "Beginning JavaScript",
   author: "Nathan Sebhastian",
@@ -2184,7 +2167,7 @@ console.log(myBook);
 
 上面的 `console.log()` 将输出以下内容：
 
-```
+```javascript
 {
   title: 'Beginning JavaScript',
   author: 'Nathan Sebhastian',
@@ -2199,7 +2182,7 @@ console.log(myBook);
 
 要修改现有属性，你需要使用点号或方括号表示法指定一个现有的对象属性，后跟赋值运算符，如下所示：
 
-```
+```javascript
 let myBook = {
   title: "Beginning JavaScript",
   author: "Nathan Sebhastian",
@@ -2213,7 +2196,7 @@ console.log(myBook);
 
 输出：
 
-```
+```javascript
 {
   title: 'Beginning JavaScript',
   author: 'John Doe'
@@ -2226,7 +2209,7 @@ console.log(myBook);
 
 要从对象中删除属性，你需要使用 `delete` 运算符，如下所示：
 
-```
+```javascript
 let myBook = {
   title: "Beginning JavaScript",
   author: "Nathan Sebhastian",
@@ -2239,7 +2222,7 @@ console.log(myBook);
 
 输出：
 
-```
+```javascript
 { title: 'Beginning JavaScript' }
 ```
 
@@ -2249,7 +2232,7 @@ console.log(myBook);
 
 要检查某个属性是否存在于对象中，你可以使用 `in` 运算符，如下所示：
 
-```
+```javascript
 propertyName in myObject
 ```
 
@@ -2257,7 +2240,7 @@ propertyName in myObject
 
 请参见下面的示例：
 
-```
+```javascript
 let person = {
   firstName: "Nathan",
   lastName: "Sebhastian"
@@ -2278,7 +2261,7 @@ console.log('age' in person); // false
 
 你还学习了如何添加、访问、删除和编辑对象的属性和方法。
 
-# 第 8 章 - 数组
+# 第 8 章：数组
 
 数组是一种特殊的对象，可用于保存多个值。数组可以是字符串、数字、布尔值、对象或它们的混合列表。
 
@@ -2286,7 +2269,7 @@ console.log('age' in person); // false
 
 以下是创建字符串列表的方法：
 
-```
+```javascript
 let birds = ['Owl', 'Eagle', 'Parrot', 'Falcon'];
 ```
 
@@ -2298,13 +2281,13 @@ let birds = ['Owl', 'Eagle', 'Parrot', 'Falcon'];
 
 你也可以声明一个没有任何值的空数组：
 
-```
+```javascript
 let birds = [];
 ```
 
 数组也可以包含混合值，如下所示：
 
-```
+```javascript
 let mixedArray = ['Bird', true, 10, 5.17]
 ```
 
@@ -2322,7 +2305,7 @@ JavaScript 会记住数组中元素的位置。元素的位置也称为索引号
 
 要访问或更改数组的值，你需要在数组名后添加方括号表示法 `[x]`，其中 `x` 是该元素的索引号。示例如下：
 
-```
+```javascript
 // 访问数组中的第一个元素
 myArray[0];
 
@@ -2332,7 +2315,7 @@ myArray[1];
 
 假设你想从 `birds` 数组中打印字符串 `'Owl'`。你可以这样做：
 
-```
+```javascript
 let birds = ['Owl', 'Eagle', 'Parrot', 'Falcon'];
 
 console.log(birds[0]); // Owl
@@ -2345,7 +2328,7 @@ console.log(birds[1]); // Eagle
 
 让我们将 `'Parrot'` 替换为 `'Vulture'`：
 
-```
+```javascript
 let birds = ['Owl', 'Eagle', 'Parrot', 'Falcon'];
 
 birds[2] = 'Vulture';
@@ -2362,18 +2345,15 @@ console.log(birds);
 
 要获取数组的大小，你可以访问 `length` 属性：
 
-```
+```javascript
 let fishes = ['Salmon', 'Goldfish', 'Tuna'];
 
 console.log(fishes.length); // 3
 ```
 
-
-
-
 接下来，你可以使用 `push()` 方法向数组末尾添加一个元素：
 
-```
+```javascript
 let birds = ['Owl', 'Eagle'];
 birds.push('Sparrow');
 console.log(birds);
@@ -2382,7 +2362,7 @@ console.log(birds);
 
 另一种名为 `pop()` 的方法可用于从数组末尾移除一个元素：
 
-```
+```javascript
 let birds = ['Owl', 'Eagle', 'Sparrow'];
 birds.pop();
 console.log(birds);
@@ -2391,7 +2371,7 @@ console.log(birds);
 
 `unshift()` 方法可用于从索引 0 的前端添加一个元素：
 
-```
+```javascript
 let fishes = ['Salmon', 'Goldfish', 'Tuna'];
 fishes.unshift('Sardine');
 console.log(fishes);
@@ -2400,7 +2380,7 @@ console.log(fishes);
 
 另一方面，`shift()` 方法可用于从索引 0 移除一个元素：
 
-```
+```javascript
 let fishes = ['Salmon', 'Goldfish', 'Tuna'];
 fishes.shift();
 console.log(fishes);
@@ -2409,7 +2389,7 @@ console.log(fishes);
 
 `indexOf()` 方法可用于查找并返回数组中某个元素的索引。如果数组中找不到该元素，该方法将返回 `-1`：
 
-```
+```javascript
 let fishes = ['Salmon', 'Goldfish', 'Tuna'];
 let pos = fishes.indexOf('Tuna');
 console.log(pos); // 2
@@ -2417,7 +2397,7 @@ console.log(pos); // 2
 
 要遍历数组，你可以使用 `forEach()` 方法。该方法接受一个函数，该函数将对数组中的每个元素执行。该方法会将数组的元素和索引位置传递给该函数。以下是使用该方法的示例：
 
-```
+```javascript
 let fishes = ['Salmon', 'Goldfish', 'Tuna'];
 fishes.forEach(function (element, index) {
   console.log(`${index}: ${element}`);
@@ -2426,7 +2406,7 @@ fishes.forEach(function (element, index) {
 
 输出将是：
 
-```
+```text
 0: Salmon
 1: Goldfish
 2: Tuna
@@ -2438,7 +2418,7 @@ fishes.forEach(function (element, index) {
 
 在本章中，你学习了数组这种特殊数据类型，以及如何操作存储在数组中的值。通过使用数组，你可以像对象一样将不同类型的数据存储在一个变量下，但更简单，因为你无需为每个值添加键。
 
-# 第 9 章 - 文档对象模型（DOM）简介
+# 第 9 章：文档对象模型（DOM）简介
 
 在深入学习之前，让我们回顾一下关于网页浏览器和 HTML 文档的知识。当我们想要构建一个网页时，我们会创建一个包含 HTML、CSS 和 JavaScript 的 HTML 文档。这三种技术像团队一样协同工作，各自扮演不同的角色，构建出我们在浏览器中看到的内容。
 
@@ -2464,7 +2444,9 @@ JavaScript 是一种受浏览器支持的编程语言，它填补了 HTML 和 CS
 
 例如，假设你的文档中有以下 HTML 内容：
 
-```
+
+
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -2494,9 +2476,13 @@ DOM 看起来像一棵由一组相连节点组成的树状结构。这些节点�
 `window` 对象是 DOM 树的根，该对象用于指示浏览器执行以下任务：
 
 | ▪ |
+|---|
 | ▪ |
+|---|
 | ▪ |
+|---|
 | ▪ |
+|---|
 
 你可以通过在控制台中输入 `window` 并按回车来访问 `window` 对象。浏览器会响应并显示该对象的方法和属性，如下所示：
 
@@ -2506,7 +2492,7 @@ DOM 看起来像一棵由一组相连节点组成的树状结构。这些节点�
 
 `window` 对象提供了你将用于操作网页的子对象和方法。例如，`window` 拥有 `console` 对象，你可以用它向控制台输出消息。在控制台中输入以下代码并按回车：
 
-```
+```javascript
 window.console.log('Hello World!');
 ```
 
@@ -2514,7 +2500,7 @@ window.console.log('Hello World!');
 
 `window` 对象是一个全局对象，因此在调用其子对象时可以省略它。要访问 `console` 对象，只需像下面这样输入 `console`：
 
-```
+```javascript
 console.log('Hello World!');
 ```
 
@@ -2553,9 +2539,6 @@ console.log('Hello World!');
 DOM 是一种树状结构，由我们创建并加载到浏览器中的 HTML 文件生成。浏览器随后将这个 DOM 暴露为一组我们可以访问的 JavaScript 对象，例如 `window` 和 `document` 对象。这是一项重要的技术，它允许你编程控制网页浏览器执行特定任务。
 
 # 第 10 章：项目 1 - 创建向导表单应用程序
-
-
-
 
 我们将学习如何使用 JavaScript 来控制 Web 应用上显示的内容。
 
@@ -2605,8 +2588,8 @@ DOM 是一种树状结构，由我们创建并加载到浏览器中的 HTML 文�
 
 接下来，按如下方式更新 `<head>` 标签：
 
-1.  将标题改为 JS Wizard Form
-2.  添加样式和脚本文件的链接
+1. 将标题改为 JS Wizard Form。
+2. 添加样式和脚本文件的链接。
 
 结果应如下所示：
 
@@ -2733,7 +2716,7 @@ label {
 
 `id` 和 `class` 属性被添加到 HTML 元素中，以便在下一章中辅助样式化和 JavaScript 操作。
 
-如果你需要检查你的工作，可以获取本章使用的示例代码，地址为 [`github.com/nathansebhastian/js-wizard-form/tree/main/check-point-1`](https://github.com/nathansebhastian/js-wizard-form/tree/main/check-point-1)
+如果你需要检查你的工作，可以获取本章使用的示例代码，地址为 [`github.com/nathansebhastian/js-wizard-form/tree/main/check-point-1`](https://github.com/nathansebhastian/js-wizard-form/tree/main/check-point-1)。
 
 # 第 11 章：向导表单机制
 
@@ -2808,16 +2791,13 @@ document.querySelector('h1, h2');
 
 这就是 `querySelector()` 方法的工作原理。当你需要检索多个元素时，需要使用替代方法 `querySelectorAll()`。
 
-
-
-
 ## `querySelectorAll()` 方法
 
 `querySelectorAll()` 方法是 DOM API 中的一个 JavaScript 方法，它允许你检索所有与传入的 CSS 选择器匹配的元素。
 
 例如，下面展示了如何使用该方法检索所有具有 `box` 类属性的元素：
 
-```
+```javascript
 document.querySelectorAll('.box');
 ```
 
@@ -2827,7 +2807,7 @@ document.querySelectorAll('.box');
 
 假设页面上有以下 HTML 元素：
 
-```
+```html
 <body>
   <p id="opening" class="bold">Opening</p>
   <p id="middle">Middle</p>
@@ -2837,7 +2817,7 @@ document.querySelectorAll('.box');
 
 你可以通过传入 `"p"` 作为方法的参数来检索所有 `<p>` 元素：
 
-```
+```javascript
 let elements = document.querySelectorAll('p');
 console.log(elements);
 // NodeList(3) [p#opening.bold, p#middle, p#closing.bold]
@@ -2847,7 +2827,9 @@ console.log(elements[0]);
 
 或者，当你只需要开头和结尾的 `<p>` 元素时，你可以传入类或 `id` 作为参数：
 
-```
+
+
+```javascript
 document.querySelectorAll('.bold');
 // [p#opening.bold, p#closing.bold]
 document.querySelectorAll('#opening, #closing');
@@ -2856,7 +2838,7 @@ document.querySelectorAll('#opening, #closing');
 
 你还可以通过其他属性（如 `target` 或 `value`）来选择元素：
 
-```
+```javascript
 // 返回所有 target="_blank" 的元素
 document.querySelectorAll('[target=_blank]');
 // 返回所有 value="red" 的元素
@@ -2867,7 +2849,7 @@ document.querySelectorAll('[value=red]');
 
 要访问 `NodeList` 对象的元素，你可以使用索引位置。你也可以使用 `forEach()` 方法遍历这些元素：
 
-```
+```javascript
 let elements = document.querySelectorAll('p');
 // 1. 访问索引 0 处的元素
 console.log(element[0]);
@@ -2886,7 +2868,7 @@ elements.forEach(function (element) {
 
 回到向导表单应用，我们需要一种使用 CSS 和 JavaScript 显示和隐藏表单步骤的方法。在 `style.css` 中添加以下规则：
 
-```
+```css
 .step {
   display: none;
 }
@@ -2895,9 +2877,9 @@ elements.forEach(function (element) {
 }
 ```
 
-这将使所有带有 `step` 类的 `div` 标签在显示中被隐藏。要显示表单步骤，请将 `active` 类添加到 `step1` div 中，如下所示：
+这将使所有带有 `step` 类的 `div` 标签在显示中被隐藏。要显示表单步骤，请将 `active` 类添加到 `step1` `div` 中，如下所示：
 
-```
+```html
 <div id="step1" class="step active">
   <div class="form-group">...</div>
 </div>
@@ -2907,9 +2889,9 @@ elements.forEach(function (element) {
 
 ## 添加“下一步”按钮
 
-现在我们需要一些按钮来在表单步骤之间切换，因此在 `step1` div 中添加以下按钮：
+现在我们需要一些按钮来在表单步骤之间切换，因此在 `step1` `div` 中添加以下按钮：
 
-```
+```html
 <div id="step1" class="step active">
   <div class="form-group">...</div>
   <button
@@ -2926,7 +2908,7 @@ elements.forEach(function (element) {
 
 我们要调用的函数名是 `nextStep()`，所以让我们在 `script.js` 文件中创建这个函数。我们还需要一个 `showStep()` 函数，它将执行以下操作：
 
-```
+```javascript
 let currentStep = 1;
 
 function nextStep() {
@@ -2953,9 +2935,9 @@ function nextStep() {
 
 ## 添加“上一步”按钮
 
-现在我们需要另一个按钮来移动到上一步。在 `step2` 和 `step3` div 标签上，你可以添加以下按钮：
+现在我们需要另一个按钮来移动到上一步。在 `step2` 和 `step3` `div` 标签上，你可以添加以下按钮：
 
-```
+```html
 <div id='step2' class='step'>
   <div class='form-group'>...</div>
   <button type='button' class='btn btn-secondary' onclick='prevStep()'>
@@ -2976,7 +2958,7 @@ function nextStep() {
 
 接下来，我们需要在 `script.js` 文件中添加一个 `prevStep()` 函数：
 
-```
+```javascript
 function prevStep() {
   if (currentStep > 1) {
     currentStep--;
@@ -2995,7 +2977,7 @@ function prevStep() {
 
 你的 `script.js` 文件应该如下所示：
 
-```
+```javascript
 let currentStep = 1;
 
 function showStep() {
@@ -3023,7 +3005,7 @@ function prevStep() {
 
 回到浏览器，现在你可以使用按钮进入下一步和上一步。最后需要做的是为这些按钮添加样式。目前它们看起来相当糟糕：
 
-```
+```css
 .f-right {
   float: right !important;
 }
@@ -3063,12 +3045,9 @@ function prevStep() {
 
 ## 添加提交按钮
 
-
-
-
 回到项目，我们在向导表单上需要做的最后一项任务是在第三步添加一个提交按钮，那么我们就开始吧。
 
-按如下方式将提交按钮添加到 `step3` div 中：
+按如下方式将提交按钮添加到 `step3` `div` 中：
 
 ```html
 <div id="step3" class="step">
@@ -3105,11 +3084,11 @@ function prevStep() {
 
 ```html
 <button type='button' class='btn btn-secondary' onclick='prevStep()'>
-    上一步
-  </button>
-  <button type='button' class='btn btn-primary f-right' onclick='nextStep()'>
-    下一步
-  </button>
+  上一步
+</button>
+<button type='button' class='btn btn-primary f-right' onclick='nextStep()'>
+  下一步
+</button>
 ```
 
 `onclick` HTML 属性是监听 `click` 事件的快捷方式。当点击“上一步”按钮时，我们运行 `prevStep()` 函数。当点击“下一步”按钮时，我们运行 `nextStep()` 函数。
@@ -3173,7 +3152,7 @@ alert(`注册完成！您的详细信息：\n
   密码：${password}`);
 ```
 
-你可以在浏览器中测试向导表单。填写文本框，然后在点击提交按钮时会收到一个弹窗：
+你可以在浏览器中测试向导表单。填写文本框，然后在点击提交按钮时会收到一个弹窗。
 
 为了让应用程序更智能，我们可以在用户提交后重置表单：
 
@@ -3181,7 +3160,7 @@ alert(`注册完成！您的详细信息：\n
 const email = wizardForm.elements.email.value;
 const username = wizardForm.elements.username.value;
 const password = wizardForm.elements.password.value;
-//   alert(...);
+// alert(...);
 wizardForm.reset();
 currentStep = 1;
 showStep();
@@ -3193,7 +3172,9 @@ showStep();
 
 如果你仔细观察，可能会注意到步骤中的“下一步”和“上一步”按钮的代码是相同的。与其在 HTML 文件中编写它们，我们可以使用 JavaScript 动态添加它们。
 
-首先，使用 `querySelector()` 选择所有步骤 div，如下所示：
+首先，使用 `querySelector()` 选择所有步骤 `div`，如下所示：
+
+
 
 ```javascript
 const stepsDiv = document.querySelectorAll('.step');
@@ -3224,9 +3205,9 @@ const registerButton =
   '<button type="submit" class="btn btn-success f-right">注册</button>';
 ```
 
-现在，我们需要使用 `forEach()` 方法遍历这些元素。我们可以根据 `index` 值检查该元素是第一步还是最后一步。
+现在，我们需要使用`forEach()`方法遍历这些元素。我们可以根据`index`值检查该元素是第一步还是最后一步。
 
-对于 `index` 为 0 的第一个元素，我们只添加下一步按钮。对于最后一个元素，我们添加上一步和提交按钮，对于所有中间元素，我们添加上一步和下一步按钮：
+对于`index`为 0 的第一个元素，我们只添加下一步按钮。对于最后一个元素，我们添加上一步和提交按钮；对于所有中间元素，我们添加上一步和下一步按钮：
 
 ```javascript
 stepsDiv.forEach((element, index) => {
@@ -3242,13 +3223,13 @@ stepsDiv.forEach((element, index) => {
 });
 ```
 
-为了检查该元素是否是向导表单的最后一步，我们将 `index` 值与 `stepsDiv.length - 1` 值进行比较。
+为了检查该元素是否是向导表单的最后一步，我们将`index`值与`stepsDiv.length - 1`值进行比较。
 
-要向现有元素添加元素，我们使用 `+=` 赋值运算符。
+要向现有元素添加元素，我们使用`+=`赋值运算符。
 
-现在我们可以从 HTML 文件中删除所有 `<button>` 元素。再次在浏览器中运行向导表单，你会看到使用 JavaScript 添加的按钮。
+现在我们可以从 HTML 文件中删除所有`<button>`元素。再次在浏览器中运行向导表单，你会看到使用 JavaScript 添加的按钮。
 
-向导表单完成了。你可以在 [`github.com/nathansebhastian/js-wizard-form/tree/main/complete`](https://github.com/nathansebhastian/js-wizard-form/tree/main/complete) 查看完整的应用程序。
+向导表单完成了。你可以在[`github.com/nathansebhastian/js-wizard-form/tree/main/complete`](https://github.com/nathansebhastian/js-wizard-form/tree/main/complete)查看完整的应用程序。
 
 ## 总结
 
@@ -3258,13 +3239,13 @@ stepsDiv.forEach((element, index) => {
 
 让我们回顾一下在这个项目中学到的内容：
 
-1.  如何使用 `document.querySelector()` 和 `document.querySelectorAll()` 选择 HTML 元素
-2.  使用 CSS 和 JavaScript 显示和隐藏元素
-3.  使用变量、`if` 语句和函数有条件地显示 HTML 元素
-4.  浏览器事件简介
-5.  使用 `addEventListener()` 处理表单提交事件
-6.  使用事件对象检索、显示和重置表单数据
-7.  使用 `innerHTML` 属性向 HTML 文档的特定部分添加元素
+1. 如何使用`document.querySelector()`和`document.querySelectorAll()`选择 HTML 元素
+2. 使用 CSS 和 JavaScript 显示和隐藏元素
+3. 使用变量、`if`语句和函数有条件地显示 HTML 元素
+4. 浏览器事件简介
+5. 使用`addEventListener()`处理表单提交事件
+6. 使用事件对象检索、显示和重置表单数据
+7. 使用`innerHTML`属性向 HTML 文档的特定部分添加元素
 
 最重要的是，你已经看到了一个应用程序是如何逐步构建并逐渐变得复杂的。
 
@@ -3278,12 +3259,9 @@ JavaScript 是一种非阻塞的同步编程语言。
 
 同步意味着顺序执行，我们知道这一点是因为 JavaScript 从上到下逐行运行代码。
 
-
-
-
 为什么这很重要？让我给你看一个简单的例子。
 
-DOM 的 `window` 对象有一个名为 `setTimeout()` 的方法，你可以用它来在特定时间后运行一个函数。
+DOM 的`window`对象有一个名为`setTimeout()`的方法，你可以用它来在特定时间后运行一个函数。
 
 该方法接受两个参数：
 
@@ -3292,17 +3270,17 @@ DOM 的 `window` 对象有一个名为 `setTimeout()` 的方法，你可以用�
 
 例如，下面是如何等待 3 秒后执行一个控制台日志：
 
-```
+```javascript
 setTimeout(function () {
   console.log('Hello!');
 }, 3000);
 ```
 
-从控制台运行上面的代码，3 秒后，你应该会看到打印出 `'Hello!'` 字符串。
+从控制台运行上面的代码，3 秒后，你应该会看到打印出`'Hello!'`字符串。
 
-现在，让我们在 `setTimeout()` 方法前后添加一些控制台日志，如下所示：
+现在，让我们在`setTimeout()`方法前后添加一些控制台日志，如下所示：
 
-```
+```javascript
 console.log('Start');
 setTimeout(function () {
   console.log('Hello!');
@@ -3310,15 +3288,15 @@ setTimeout(function () {
 console.log('End');
 ```
 
-现在我们有了 `'Start'` 和 `'End'` 字符串，它们应该在 `setTimeout()` 方法执行完毕前后被打印出来。
+现在我们有了`'Start'`和`'End'`字符串，它们应该在`setTimeout()`方法执行完毕前后被打印出来。
 
 当你运行上面的代码时，你会看到以下输出：
 
-image::images/3-4-example-settimeout.png
+![setTimeout 示例](images/3-4-example-settimeout.png)
 
-惊喜！`'End'` 字符串竟然在 `'Hello!'` 字符串之前打印出来了。这是因为 JavaScript 的非阻塞特性。
+惊喜！`'End'`字符串竟然在`'Hello!'`字符串之前打印出来了。这是因为 JavaScript 的非阻塞特性。
 
-JavaScript 的同步特性使其从上到下逐行读取代码。但由于它是非阻塞的，JavaScript 会执行 `setTimeout()` 方法，然后继续执行下一行代码。
+JavaScript 的同步特性使其从上到下逐行读取代码。但由于它是非阻塞的，JavaScript 会执行`setTimeout()`方法，然后继续执行下一行代码。
 
 这不是一个 bug。这是 JavaScript 的预期行为，因为它的设计方式就是这样。
 
@@ -3330,11 +3308,11 @@ JavaScript 的同步特性使其从上到下逐行读取代码。但由于它是
 
 回调函数就是一个作为参数传递给另一个函数的函数。当条件合适时，该函数会使用这个回调函数。
 
-我们上面传递给 `setTimeout()` 方法的函数就是一个回调函数。同样，我们传递给 `addEventListener()` 方法的函数也是回调函数。
+我们上面传递给`setTimeout()`方法的函数就是一个回调函数。同样，我们传递给`addEventListener()`方法的函数也是回调函数。
 
-回到上面的例子，我们可以让 JavaScript 等待 `setTimeout()` 方法完成后再打印 `'End'` 字符串，方法是将控制台日志行移到 `'Hello!'` 下面，如下所示：
+回到上面的例子，我们可以让 JavaScript 等待`setTimeout()`方法完成后再打印`'End'`字符串，方法是将控制台日志行移到`'Hello!'`下面，如下所示：
 
-```
+```javascript
 console.log('Start');
 setTimeout(function () {
   console.log('Hello!');
@@ -3342,13 +3320,13 @@ setTimeout(function () {
 }, 3000);
 ```
 
-当然，我们可以这样做，因为我们是添加 `setTimeout()` 方法的人。
+当然，我们可以这样做，因为我们是添加`setTimeout()`方法的人。
 
-如果我们把 `setTimeout()` 方法想象成一段我们无法触碰的代码，比如 `addEventListener()` 方法，那么我们如何确保它在超时后执行某个指令呢？
+如果我们把`setTimeout()`方法想象成一段我们无法触碰的代码，比如`addEventListener()`方法，那么我们如何确保它在超时后执行某个指令呢？
 
-答案是使用回调，就像 `addEventListener()` 方法一样。在下面的例子中，假设你不能修改 `processData()` 函数的内容：
+答案是使用回调，就像`addEventListener()`方法一样。在下面的例子中，假设你不能修改`processData()`函数的内容：
 
-```
+```javascript
 function processData(data, callbackFn) {
   setTimeout(function () {
     console.log('Sending data back');
@@ -3360,16 +3338,16 @@ function processData(data, callbackFn) {
 }
 ```
 
-这里，`processData()` 函数接受两个参数：
+这里，`processData()`函数接受两个参数：
 
-1. 要处理的 `data` 参数
+1. 要处理的`data`参数
 2. 处理完成后要执行的回调函数
 
-要从上面的函数获取响应，我们需要调用该函数并同时传递 `data` 和一个回调函数。
+要从上面的函数获取响应，我们需要调用该函数并同时传递`data`和一个回调函数。
 
 具体做法如下：
 
-```
+```javascript
 processData('Nathan', function (response) {
   console.log(`Response given: ${response}`);
 });
@@ -3387,35 +3365,36 @@ processData('Nathan', function (response) {
 
 # 第 14 章：Promise
 
-`Promise` 是在运行异步操作时处理 JavaScript 非阻塞特性的另一种方式。它是 2015 年发布的一个现代特性（也就是 JavaScript 首次发布 20 年后）。
+`Promise`是在运行异步操作时处理 JavaScript 非阻塞特性的另一种方式。它是 2015 年发布的一个现代特性（也就是 JavaScript 首次发布 20 年后）。
 
-基本上，`Promise` 对象在最常见的意义上代表一个“待定状态”：这个承诺最终会在未来的某个时间点被兑现。
+基本上，`Promise`对象在最常见的意义上代表一个“待定状态”：这个承诺最终会在未来的某个时间点被兑现。
 
 为了给你一个直观的说明，假设你想买一部新手机来替换旧手机，于是你打开一个消息应用联系一家手机店。这类似于你访问一个返回 promise 的变量或函数：
 
-![14 access a promise](img/image_rsrc2EF.jpg)
+![访问 promise](img/image_rsrc2EF.jpg)
 
-在你发送一条消息说明你的需求后，你收到一条自动回复，说客服代表会很快回复你的消息。这类似于收到一个 `Promise` 对象：
+在你发送一条消息说明你的需求后，你收到一条自动回复，说客服代表会很快回复你的消息。这类似于收到一个`Promise`对象：
 
-![14 promise pending state](img/image_rsrc2EG.jpg)
+![Promise 待定状态](img/image_rsrc2EG.jpg)
 
-一分钟后，你收到一位真人客服代表的新消息，说你想买的手机型号有货。这时 `Promise` 被解决了（resolved）：
+一分钟后，你收到一位真人客服代表的新消息，说你想买的手机型号有货。这时`Promise`被解决了（resolved）：
 
-![14 promise resolved](img/image_rsrc2EH.jpg)
+![Promise 已解决](img/image_rsrc2EH.jpg)
 
-或者，在完全不同的场景下，客服代表告诉你这家店不卖手机，因为这是一家食品店而不是手机店。这意味着 `Promise` 被拒绝了（rejected）：
+或者，在完全不同的场景下，客服代表告诉你这家店不卖手机，因为这是一家食品店而不是手机店。这意味着`Promise`被拒绝了（rejected）：
 
-![14 promise rejected](img/image_rsrc2EJ.jpg)
+![Promise 被拒绝](img/image_rsrc2EJ.jpg)
 
-这个说明展示了 JavaScript 中 `Promise` 对象的工作原理：
+这个说明展示了 JavaScript 中`Promise`对象的工作原理：
 
 | ▪ |
+| --- |
 | ▪ |
 | ▪ |
 
 一个典型的 promise 实现如下所示：
 
-```
+```javascript
 let p = new Promise((resolve, reject) => {
   let isTrue = true;
   if (isTrue) {
@@ -3426,13 +3405,13 @@ let p = new Promise((resolve, reject) => {
 });
 ```
 
-当创建一个新的 `Promise` 对象时，我们需要传递一个回调函数，该函数会立即被调用，并带有两个参数：`resolve()` 和 `reject()` 函数。
+当创建一个新的`Promise`对象时，我们需要传递一个回调函数，该函数会立即被调用，并带有两个参数：`resolve()`和`reject()`函数。
 
-根据 `Promise` 的结果，会调用 `resolve()` 或 `reject()` 函数来结束待定状态。
+根据`Promise`的结果，会调用`resolve()`或`reject()`函数来结束待定状态。
 
-要处理 `Promise` 对象，你需要将函数调用与 `then()` 和 `catch()` 函数链式连接，如下所示：
+要处理`Promise`对象，你需要将函数调用与`then()`和`catch()`函数链式连接，如下所示：
 
-```
+```javascript
 let p = new Promise((resolve, reject) => {
   let isTrue = true;
   if (isTrue) {
@@ -3443,32 +3422,32 @@ let p = new Promise((resolve, reject) => {
 });
 
 p
-.then(message => console.log(`Promise resolved: ${message}`))
-.catch(message => console.log(`Promise rejected: ${message}`));
+  .then(message => console.log(`Promise resolved: ${message}`))
+  .catch(message => console.log(`Promise rejected: ${message}`));
 ```
 
-`resolve()` 函数对应 `then()` 函数，而 `reject()` 对应 `catch()` 函数。你可以将 `isTrue` 的值改为 `false` 来测试这一点。
+`resolve()`函数对应`then()`函数，而`reject()`对应`catch()`函数。你可以将`isTrue`的值改为`false`来测试这一点。
 
 下面是 promise 过程的图示：
 
-![14 promise object](img/image_rsrc2EK.jpg)
+![Promise 对象](img/image_rsrc2EK.jpg)
 
-使用 promise 模式，你可以通过将下一个过程放在 `then()` 方法中来顺序调用你的函数。
+使用 promise 模式，你可以通过将下一个过程放在`then()`方法中来顺序调用你的函数。
 
 ## 回调 vs Promise
 
 Promise 模式是为了取代回调的使用而创建的。通过使用 promise，我们编写的代码会更加直观且易于维护。
 
-回到消息说明的例子，让我们创建一个使用回调处理这种情况的示例。首先，我们声明这种情况所需的两个变量，称为 `isPhoneStore` 和 `isPhoneAvailable`：
+回到消息说明的例子，让我们创建一个使用回调处理这种情况的示例。首先，我们声明这种情况所需的两个变量，称为`isPhoneStore`和`isPhoneAvailable`：
 
-```
+```javascript
 const isPhoneStore = true;
 const isPhoneAvailable = true;
 ```
 
-接下来，我们编写一个处理传入消息的函数。这个函数将模拟 promise 模式，并且只有当 `isPhoneStore` 和 `isPhoneAvailable` 都为 true 时才会解决：
+接下来，我们编写一个处理传入消息的函数。这个函数将模拟 promise 模式，并且只有当`isPhoneStore`和`isPhoneAvailable`都为`true`时才会解决：
 
-```
+```javascript
 function processMessage(resolveCallback, rejectCallback) {
   if (!isPhoneStore) {
     rejectCallback({
@@ -3489,10 +3468,7 @@ function processMessage(resolveCallback, rejectCallback) {
 }
 ```
 
-
-
-
-```
+```javascript
     });
 
   }
@@ -3500,24 +3476,24 @@ function processMessage(resolveCallback, rejectCallback) {
 }
 ```
 
-在这里，你可以看到函数 `processMessage` 接受两个回调函数：`resolveCallback` 和 `rejectCallback`。
+在这里，你可以看到函数`processMessage`接受两个回调函数：`resolveCallback`和`rejectCallback`。
 
-当我们调用该函数时，需要提供回调函数，就像访问 promise 时需要链式调用 `then()` 和 `catch()` 方法一样：
+当我们调用该函数时，需要提供回调函数，就像访问 promise 时需要链式调用`then()`和`catch()`方法一样：
 
-```
+```javascript
 processMessage(
   value => console.log(value),
   reason => console.log(reason)
 );
 ```
 
-在上述对 `processMessage` 的调用中，第一个参数是 `resolveCallback()` 函数，第二个参数是 `rejectCallback()` 函数。
+在上述对`processMessage`的调用中，第一个参数是`resolveCallback()`函数，第二个参数是`rejectCallback()`函数。
 
-如果你运行上述代码，那么 `resolveCallback()` 函数将被调用。你可以将两个变量之一改为 `false` 来触发 `rejectCallback()` 函数。
+如果你运行上述代码，那么`resolveCallback()`函数将被调用。你可以将两个变量之一改为`false`来触发`rejectCallback()`函数。
 
 现在我们有了一个可用的回调示例，接下来使用 promise 重写代码如下：
 
-```
+```javascript
 const isPhoneStore = true;
 const isPhoneAvailable = true;
 
@@ -3547,11 +3523,13 @@ processMessage()
   .catch(error => console.log(error));
 ```
 
-在这里，你可以看到 `processMessage()` 函数返回一个 `Promise` 对象，该对象仅在 `isPhoneStore` 和 `isPhoneAvailable` 都为 `true` 时才会被解决（resolved）。
+在这里，你可以看到`processMessage()`函数返回一个`Promise`对象，该对象仅在`isPhoneStore`和`isPhoneAvailable`都为`true`时才会被解决（resolved）。
 
-当两个变量中有一个为 `false` 时，`Promise` 对象将被拒绝（rejected）。
 
-这里你可以看到，你不需要为了回调而向 `processMessage()` 函数添加两个额外的参数，并且在调用该函数时，你同样使用 `then()` 和 `catch()` 方法来处理 promise 的结果。
+
+当两个变量中有一个为`false`时，`Promise`对象将被拒绝（rejected）。
+
+这里你可以看到，你不需要为了回调而向`processMessage()`函数添加两个额外的参数，并且在调用该函数时，你同样使用`then()`和`catch()`方法来处理 promise 的结果。
 
 使用 promise 使代码更易于理解。下面是两者的对比：
 
@@ -3559,9 +3537,9 @@ processMessage()
 
 ## 总结
 
-在本章中，你学习了 `Promise` 对象在 JavaScript 中的工作原理。当你意识到 promise 可以产生三种状态（待定、已解决和已拒绝）时，promise 就很容易理解了。
+在本章中，你学习了`Promise`对象在 JavaScript 中的工作原理。当你意识到 promise 可以产生三种状态（待定、已解决和已拒绝）时，promise 就很容易理解了。
 
-面对一个 promise 时，你需要在 `.then()` 和 `.catch()` 方法中定义接下来要发生的事情。
+面对一个 promise 时，你需要在`.then()`和`.catch()`方法中定义接下来要发生的事情。
 
 你还学习了如何使用 promise 来替代回调。
 
@@ -3591,7 +3569,7 @@ Web API 是通过暴露某些端点（endpoints）来创建的，你可以访问
 
 库 API 是由其他人编写的一段代码。这段代码通常包含一组对象、方法和属性，你可以访问它们来做一些事情。你不需要知道它们在底层是如何工作的。
 
-浏览器暴露的 `document` 对象就是库 API 的一个例子，也称为 DOM API。你不需要从头编写 `document` 对象，当你调用 `querySelector()` 方法时，你并不知道该方法中具体编写了什么代码。
+浏览器暴露的`document`对象就是库 API 的一个例子，也称为 DOM API。你不需要从头编写`document`对象，当你调用`querySelector()`方法时，你并不知道该方法中具体编写了什么代码。
 
 我们接下来要学习的 Fetch API 也是一个库 API。
 
@@ -3599,24 +3577,24 @@ Web API 是通过暴露某些端点（endpoints）来创建的，你可以访问
 
 Fetch API 是一个函数，你可以用它向任何 Web API URL 发送请求并获取一些响应。
 
-要发送类似于 HTML 表单的 GET 请求，你只需要将你想要发送数据的 URL 作为参数传递给 `fetch()` 函数：
+要发送类似于 HTML 表单的 GET 请求，你只需要将你想要发送数据的 URL 作为参数传递给`fetch()`函数：
 
-```
+```javascript
 fetch('<Your URL>');
 ```
 
-`fetch()` 函数接受两个参数：
+`fetch()`函数接受两个参数：
 
-1.  要发送请求的 URL
-2.  要在请求中设置的选项。你可以在此处将请求方法设置为 GET 或 POST。
+1. 要发送请求的 URL。
+2. 要在请求中设置的选项。你可以在此处将请求方法设置为 GET 或 POST。
 
-在底层，`fetch()` 函数返回一个 promise，因此你需要添加 `.then()` 和 `.catch()` 方法。
+在底层，`fetch()`函数返回一个 promise，因此你需要添加`.then()`和`.catch()`方法。
 
-当请求返回响应时，`then()` 方法将被调用。如果请求返回错误，则执行 `catch()` 方法。
+当请求返回响应时，`then()`方法将被调用。如果请求返回错误，则执行`catch()`方法。
 
-在 `.then()` 和 `.catch()` 方法内部，你传递一个回调函数，当相应的方法被调用时执行该回调函数。在下面的示例中，我们将访问位于 `jsonplaceholder.typicode.com` 的一个虚拟 URL：
+在`.then()`和`.catch()`方法内部，你传递一个回调函数，当相应的方法被调用时执行该回调函数。在下面的示例中，我们将访问位于`jsonplaceholder.typicode.com`的一个虚拟 URL：
 
-```
+```javascript
 fetch('https://jsonplaceholder.typicode.com/todos/1')
   .then(response => console.log(response))
   .catch(error => console.log(error));
@@ -3626,17 +3604,17 @@ fetch('https://jsonplaceholder.typicode.com/todos/1')
 
 ![15 fetch response](img/image_rsrc2EP.jpg)
 
-在这里，你可以看到 `body` 属性包含一个 `ReadableStream`。要在我们的 JavaScript 应用程序中使用 `ReadableStream`，我们需要先将其转换为 JSON 格式，所以让我们这样做：
+在这里，你可以看到`body`属性包含一个`ReadableStream`。要在我们的 JavaScript 应用程序中使用`ReadableStream`，我们需要先将其转换为 JSON 格式，所以让我们这样做：
 
-```
+```javascript
 fetch('https://jsonplaceholder.typicode.com/todos/1')
   .then(response => response.json())
   .then(data => console.log(data))
 ```
 
-`json()` 方法将 `ReadableStream` 转换为 JavaScript 对象。上面的 `data` 变量将打印如下：
+`json()`方法将`ReadableStream`转换为 JavaScript 对象。上面的`data`变量将打印如下：
 
-```
+```javascript
 {
   userId: 1,
   id: 1,
@@ -3645,9 +3623,9 @@ fetch('https://jsonplaceholder.typicode.com/todos/1')
 }
 ```
 
-如果你想发送 POST 请求而不是 GET 请求，请传递一个包含 `method` 属性的对象，如下所示：
+如果你想发送 POST 请求而不是 GET 请求，请传递一个包含`method`属性的对象，如下所示：
 
-```
+```javascript
 fetch('https://jsonplaceholder.typicode.com/todos', {
   method: 'POST',
 }).then(response => response.json())
@@ -3656,9 +3634,9 @@ fetch('https://jsonplaceholder.typicode.com/todos', {
 
 当你发送 POST 方法时，需要设置请求头和请求体属性以确保流程顺畅。
 
-对于请求头，你需要添加 `Content-Type` 属性并将其设置为 `application/json`。你想要发送的数据应以 JSON 格式放在 `body` 属性中。请参见下面的示例：
+对于请求头，你需要添加`Content-Type`属性并将其设置为`application/json`。你想要发送的数据应以 JSON 格式放在`body`属性中。请参见下面的示例：
 
-```
+```javascript
 fetch('https://jsonplaceholder.typicode.com/todos', {
   method: 'POST',
   headers: {
@@ -3669,9 +3647,9 @@ fetch('https://jsonplaceholder.typicode.com/todos', {
   .then(data => console.log(data))
 ```
 
-在上面的示例中，我们发送了一个 POST 请求来创建一个新的待办任务。任务的标题是 `Learn JavaScript`。来自 typicode API 的响应类似于以下内容：
+在上面的示例中，我们发送了一个 POST 请求来创建一个新的待办任务。任务的标题是`Learn JavaScript`。来自 typicode API 的响应类似于以下内容：
 
-```
+```javascript
 {
   title: 'Learn JavaScript',
   id: 201
@@ -3682,7 +3660,7 @@ fetch('https://jsonplaceholder.typicode.com/todos', {
 
 Fetch API 允许你访问 API 并使用标准请求方法（如 GET、POST、PUT、PATCH 和 DELETE）执行网络请求。
 
-Fetch API 返回一个 promise，因此你需要像前一章所示的那样，将函数调用与 `.then()` 和 `.catch()` 方法链式连接。
+Fetch API 返回一个 promise，因此你需要像前一章所示的那样，将函数调用与`.then()`和`.catch()`方法链式连接。
 
 这里我们只看到了 GET 和 POST 方法的实际应用，但不用担心，因为我们将在接下来的项目中使用其余的方法。
 
@@ -3694,10 +3672,6 @@ Fetch API 返回一个 promise，因此你需要像前一章所示的那样，�
 
 完成的应用程序如下所示：
 
-
-
-
-
 ![16 待办事项列表](img/image_rsrc2ER.jpg)
 
 要开始构建这个应用程序，我们需要创建一个简单的服务器来存储任务数据。为此，我们需要安装 Node.js。
@@ -3706,11 +3680,11 @@ Fetch API 返回一个 promise，因此你需要像前一章所示的那样，�
 
 Node.js 是一个 JavaScript 运行时应用程序，它让你能够在浏览器之外运行 JavaScript。我们需要在计算机上安装这个应用程序来创建一个简单的服务器。
 
-你可以从 [`nodejs.org`](https://nodejs.org) 下载并安装 Node.js。选择推荐的 LTS 版本，因为它具有长期支持。
+你可以从[`nodejs.org`](https://nodejs.org)下载并安装 Node.js。选择推荐的 LTS 版本，因为它具有长期支持。
 
 ## 创建服务器和数据库
 
-为了设置这个项目，我们创建一个名为 `todo-list` 的新文件夹。在 VSCode 中打开这个文件夹，然后创建一个名为 `db.json` 的新文件，并将以下内容放入其中：
+为了设置这个项目，我们创建一个名为`todo-list`的新文件夹。在 VSCode 中打开这个文件夹，然后创建一个名为`db.json`的新文件，并将以下内容放入其中：
 
 ```json
 { "tasks":  [ { "title":  "Learn Swimming", "completed":  true, "id":  1 }, { "title":  "Learn Cooking", "completed":  false, "id":  2 } ]  }
@@ -3720,15 +3694,15 @@ Node.js 是一个 JavaScript 运行时应用程序，它让你能够在浏览器
 
 下一步是将这个 JSON 文件作为服务器运行。为此，你需要使用 Node Package Manager（简称 NPM）来安装一个 json 服务器。
 
-首先，右键单击 `todo-list` 文件夹，然后选择 **在集成终端中打开** 选项。这将打开一个终端，你可以在其中运行一些命令。
+首先，右键单击`todo-list`文件夹，然后选择**在集成终端中打开**选项。这将打开一个终端，你可以在其中运行一些命令。
 
-我希望你运行的命令是 `npm install -g json-server`。这个命令会在你的计算机上全局安装 `json-server` 包。
+我希望你运行的命令是`npm install -g json-server`。这个命令会在你的计算机上全局安装`json-server`包。
 
 安装完成后，你应该会看到以下输出：
 
 ![16 安装 json 服务器](img/image_rsrc2ES.jpg)
 
-下一步是运行 `json-server` 包。在终端中运行以下命令：
+下一步是运行`json-server`包。在终端中运行以下命令：
 
 ```bash
 json-server db.json
@@ -3738,7 +3712,7 @@ json-server db.json
 
 ![16 运行 json 服务器](img/image_rsrc2ET.jpg)
 
-你可以打开浏览器，访问 [`localhost:3000/tasks`](http://localhost:3000/tasks) 这个 URL，查看我们之前创建的 JSON 数据。
+你可以打开浏览器，访问[`localhost:3000/tasks`](http://localhost:3000/tasks)这个 URL，查看我们之前创建的 JSON 数据。
 
 我们将要创建的待办事项列表应用程序将访问这个 API 端点，用于获取、添加、删除和更新任务。
 
@@ -3746,26 +3720,26 @@ json-server db.json
 
 ## 让我们开始项目：先处理 HTML 和 CSS
 
-下一步是编写项目的前端部分。在 VSCode 中打开 `client` 文件夹，然后创建两个文件：`index.html` 和 `script.js`。
+下一步是编写项目的前端部分。在 VSCode 中打开`client`文件夹，然后创建两个文件：`index.html`和`script.js`。
 
-打开 `index.html` 文件，编写标准的 HTML 文档结构，就像我们创建向导表单时那样：
+打开`index.html`文件，编写标准的 HTML 文档结构，就像我们创建向导表单时那样：
 
 ```html
 <!DOCTYPE html>
 
 <html lang="en">
 
-  <head>
+  <head>
 
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8" />
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>To-do List</title>
+    <title>To-do List</title>
 
-  </head>
+  </head>
 
-  <body></body>
+  <body></body>
 
 </html>
 ```
@@ -3778,17 +3752,14 @@ json-server db.json
 <title>To-do List</title>
 
 <link
-
-  rel="stylesheet"
-
-  href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
-
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
 />
 ```
 
 CDN 代表内容分发网络，它是一个允许你获取流行库的服务器。通过使用 CDN，你无需将 Bootstrap CSS 文件下载到本地并加载。
 
-最后一步是将 `script.js` 文件添加到 HTML 文件中。和往常一样，添加 `defer` 属性，以便浏览器在 HTML 文档渲染完成后加载脚本：
+最后一步是将`script.js`文件添加到 HTML 文件中。和往常一样，添加`defer`属性，以便浏览器在 HTML 文档渲染完成后加载脚本：
 
 ```html
 <script src="script.js" defer></script>
@@ -3796,76 +3767,71 @@ CDN 代表内容分发网络，它是一个允许你获取流行库的服务器�
 </head>
 ```
 
-现在我们需要在 `<body>` 标签中添加一些 HTML。首先，编写一个容器，它将包含我们所有的 HTML 内容。我会添加一些注释来帮助你正确放置 HTML：
+现在我们需要在`<body>`标签中添加一些 HTML。首先，编写一个容器，它将包含我们所有的 HTML 内容。我会添加一些注释来帮助你正确放置 HTML：
 
 ```html
 <body>
 
-  <div class="container m-5 rounded mx-auto bg-light shadow">
+  <div class="container m-5 rounded mx-auto bg-light shadow">
 
-    <!-- 应用标题部分 开始-->
+    <!-- 应用标题部分 开始-->
 
-    <div class="row p-4">
+    <div class="row p-4">
 
-      <div class="col">
+      <div class="col">
 
-        <h1 class="text-center">
+        <h1 class="text-center">
 
-          <u>我的待办事项列表 ✅</u>
+          <u>我的待办事项列表 ✅</u>
 
-        </h1>
+        </h1>
 
-      </div>
+      </div>
 
-    </div>
+    </div>
 
-    <!-- 应用标题部分 结束 -->
+    <!-- 应用标题部分 结束 -->
 
-  </div>
+  </div>
 
 </body>
 ```
 
-在“应用标题部分 结束”注释下方，添加一个输入框和一个按钮，我们将用它们来创建任务。输入框和按钮周围的 div 仅用于应用 Bootstrap 样式：
+在“应用标题部分 结束”注释下方，添加一个输入框和一个按钮，我们将用它们来创建任务。输入框和按钮周围的`div`仅用于应用 Bootstrap 样式：
 
 ```html
 <!-- 创建任务部分 开始 -->
 
 <div class="row p-3">
 
-  <div class="col col-11 mx-auto">
+  <div class="col col-11 mx-auto">
 
-    <div class="row bg-white rounded shadow-sm p-2">
+    <div class="row bg-white rounded shadow-sm p-2">
 
-      <div class="col">
+      <div class="col">
 
-        <input
+        <input
+          type="text"
+          id="task-title"
+          class="form-control border-0 rounded"
+          placeholder="在此输入任务.."
+        />
 
-          type="text"
+      </div>
 
-          id="task-title"
+      <div class="col-auto">
 
-          class="form-control border-0 rounded"
+        <button type="button" class="btn btn-primary" onClick="addTask()">
 
-          placeholder="在此输入任务.."
+          添加任务
 
-        />
+        </button>
 
-      </div>
+      </div>
 
-      <div class="col-auto">
+    </div>
 
-        <button type="button" class="btn btn-primary" onClick="addTask()">
-
-          添加任务
-
-        </button>
-
-      </div>
-
-    </div>
-
-  </div>
+  </div>
 
 </div>
 
@@ -3881,21 +3847,21 @@ CDN 代表内容分发网络，它是一个允许你获取流行库的服务器�
 
 <div class="row p-3 justify-content-end">
 
-  <div class="col-auto d-flex align-items-center">
+  <div class="col-auto d-flex align-items-center">
 
-    <label class="text-secondary my-2 me-2">筛选</label>
+    <label class="text-secondary my-2 me-2">筛选</label>
 
-    <select class="form-select form-select-sm" onChange="filterTasks(event)">
+    <select class="form-select form-select-sm" onChange="filterTasks(event)">
 
-      <option value="all" selected>全部</option>
+      <option value="all" selected>全部</option>
 
-      <option value="completed">已完成</option>
+      <option value="completed">已完成</option>
 
-      <option value="active">进行中</option>
+      <option value="active">进行中</option>
 
-    </select>
+    </select>
 
-  </div>
+  </div>
 
 </div>
 
@@ -3904,79 +3870,50 @@ CDN 代表内容分发网络，它是一个允许你获取流行库的服务器�
 
 最后一步是显示任务。这里我们将使用表格元素：
 
+
+
 ```html
 <!-- 任务列表部分 开始 -->
-
 <div class="row px-5">
-
-  <div class="col">
-
-    <div class="table-responsive">
-
-      <table class="table table-striped table-bordered table-hover">
-
-        <tbody id="tbody-tasks">
-
-          <tr>
-
-            <td><input class="form-check-input" type="checkbox" checked /></td>
-
-            <td>Learn JavaScript</td>
-
-            <td>
-
-              <button type="button" class="btn btn-link">编辑</button>
-
-            </td>
-
-            <td>
-
-              <button type="button" class="btn btn-link">删除</button>
-
-            </td>
-
-          </tr>
-
-          <tr>
-
-            <td><input class="form-check-input" type="checkbox" /></td>
-
-            <td>Learn HTML</td>
-
-            <td>
-
-              <button type="button" class="btn btn-link">编辑</button>
-
-            </td>
-
-            <td>
-
-              <button type="button" class="btn btn-link">删除</button>
-
-            </td>
-
-          </tr>
-
-        </tbody>
-
-      </table>
-
-    </div>
-
-  </div>
-
+  <div class="col">
+    <div class="table-responsive">
+      <table class="table table-striped table-bordered table-hover">
+        <tbody id="tbody-tasks">
+          <tr>
+            <td><input class="form-check-input" type="checkbox" checked /></td>
+            <td>Learn JavaScript</td>
+            <td>
+              <button type="button" class="btn btn-link">编辑</button>
+            </td>
+            <td>
+              <button type="button" class="btn btn-link">删除</button>
+            </td>
+          </tr>
+          <tr>
+            <td><input class="form-check-input" type="checkbox" /></td>
+            <td>Learn HTML</td>
+            <td>
+              <button type="button" class="btn btn-link">编辑</button>
+            </td>
+            <td>
+              <button type="button" class="btn btn-link">删除</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
 </div>
-
 <!-- 任务列表部分 结束 -->
 ```
 
-现在 HTML 部分完成了。右键单击 `index.html` 文件，选择 **用 Live Server 打开** 来查看结果。
+现在 HTML 部分完成了。右键单击`index.html`文件，选择**用 Live Server 打开**来查看结果。
 
-如果你需要检查代码，可以获取本章使用的代码，地址为 [`github.com/nathansebhastian/js-todo-list/tree/main/check-point-1`](https://github.com/nathansebhastian/js-todo-list/tree/main/check-point-1)
+如果你需要检查代码，可以获取本章使用的代码，地址为[`github.com/nathansebhastian/js-todo-list/tree/main/check-point-1`](https://github.com/nathansebhastian/js-todo-list/tree/main/check-point-1)。
 
 ## 总结
 
-在本章中，我们安装了 Node.js，并使用 `json-server` 包创建了一个简单的服务器。我们在这个项目中使用的数据库是一个名为 `db.json` 的简单 JSON 文件。
+在本章中，我们安装了 Node.js，并使用`json-server`包创建了一个简单的服务器。我们在这个项目中使用的数据库是一个名为`db.json`的简单 JSON 文件。
 
 我们还为待办事项应用程序创建了 HTML 文件，并使用 Bootstrap 为元素添加了样式。
 
@@ -3984,19 +3921,15 @@ CDN 代表内容分发网络，它是一个允许你获取流行库的服务器�
 
 创建、读取、更新和删除（CRUD）是构成 Web 应用程序核心的四个基本功能。在本章中，我们将学习如何使用 JavaScript 实现它们。
 
-在开始为待办事项列表创建功能之前，我们需要编辑 Live Server 设置，防止在 `db.json` 文件发生变化时服务器重新加载。
+在开始为待办事项列表创建功能之前，我们需要编辑 Live Server 设置，防止在`db.json`文件发生变化时服务器重新加载。
 
 如果不这样做，当我们添加、编辑或删除任务时，应用程序将会中断。
 
-
-
-
-
-按下 `Ctrl + ,` 或 `Command + ,` 打开 VSCode 设置菜单，搜索 `'live server ignore'`。你应该会看到以下输出：
+按下`Ctrl + ,`或`Command + ,`打开 VSCode 设置菜单，搜索`'live server ignore'`。你应该会看到以下输出：
 
 ![17 liveserver settings](img/image_rsrc2EU.jpg)
 
-点击 `Edit in settings.json` 链接，然后将 `db.json` 添加到 Live Server 忽略文件设置中，如下所示：
+点击`Edit in settings.json`链接，然后将`db.json`添加到 Live Server 忽略文件设置中，如下所示：
 
 ```json
 "liveServer.settings.ignoreFiles": [
@@ -4008,13 +3941,13 @@ CDN 代表内容分发网络，它是一个允许你获取流行库的服务器�
 ]
 ```
 
-保存更改。现在，当 `db.json` 文件发生更改时，Live Server 将不会重新加载。
+保存更改。现在，当`db.json`文件发生更改时，Live Server 将不会重新加载。
 
 ## 使用 Fetch 从 API 获取并显示任务
 
 现在我们已经准备好了数据库和界面，下一步是使用 JavaScript 获取任务数据并将其显示在表格中。我们将使用 Fetch API 来实现。
 
-打开 `script.js` 文件，编写以下 `getTask()` 函数：
+打开`script.js`文件，编写以下`getTask()`函数：
 
 ```javascript
 const BASE_API_URL = 'http://localhost:3000/tasks';
@@ -4033,15 +3966,15 @@ getTasks();
 
 在上面的代码中，我们声明了一个常量变量来存储我们将要请求的 API URL。
 
-在该常量下方，我们创建了一个名为 `getTasks()` 的函数，该函数将使用 `fetch()` 执行网络请求。为了检查是否成功获取了数据，我们将任务打印到了控制台。
+在该常量下方，我们创建了一个名为`getTasks()`的函数，该函数将使用`fetch()`执行网络请求。为了检查是否成功获取了数据，我们将任务打印到了控制台。
 
 如果你打开浏览器控制台，应该会看到以下输出：
 
 ![17 get tasks output](img/image_rsrc2EV.jpg)
 
-这意味着我们成功获取了任务数据。下一步是将这些数据显示在待办事项列表中。我们需要查询 HTML 页面中的 `<tbody>` 元素，并将任务作为行放入其中。
+这意味着我们成功获取了任务数据。下一步是将这些数据显示在待办事项列表中。我们需要查询 HTML 页面中的`<tbody>`元素，并将任务作为行放入其中。
 
-回想一下，在上一章中，我们为 `<tbody>` 标签添加了 `id` 属性，如下所示：
+回想一下，在上一章中，我们为`<tbody>`标签添加了`id`属性，如下所示：
 
 ```html
 <tbody id="tbody-tasks">
@@ -4056,7 +3989,7 @@ const BASE_API_URL = 'http://localhost:3000/tasks';
 const tableElement = document.querySelector('#tbody-tasks');
 ```
 
-然后我们回到 `getTasks()` 函数中，移除 `console.log()` 方法，并根据任务数据创建表格行。
+然后我们回到`getTasks()`函数中，移除`console.log()`方法，并根据任务数据创建表格行。
 
 下面你可以看到，创建元素的代码相当长，但本质上与我们在向导表单中创建按钮的代码相同：
 
@@ -4085,19 +4018,19 @@ function getTasks() {
 }
 ```
 
-在上面的代码中，我们创建了一个名为 `tableRows` 的变量，初始值为空字符串。接下来，我们使用 `forEach()` 方法遍历 `tasks` 数组，并为每个任务数据创建一个 `element` 变量。
+在上面的代码中，我们创建了一个名为`tableRows`的变量，初始值为空字符串。接下来，我们使用`forEach()`方法遍历`tasks`数组，并为每个任务数据创建一个`element`变量。
 
-这个 `element` 变量利用数组中的数据动态调整 HTML 输出。如果任务标记为已完成，则向 `<tr>` 标签添加 `table-success` 类，并向复选框添加 `checked` 属性。
+这个`element`变量利用数组中的数据动态调整 HTML 输出。如果任务标记为已完成，则向`<tr>`标签添加`table-success`类，并向复选框添加`checked`属性。
 
-当复选框被点击时，将调用 `toggleTask()` 函数。当编辑按钮被点击时，将调用 `editTask()` 函数，当删除按钮被点击时，将调用 `deleteTask()` 函数。
+当复选框被点击时，将调用`toggleTask()`函数。当编辑按钮被点击时，将调用`editTask()`函数，当删除按钮被点击时，将调用`deleteTask()`函数。
 
-这些元素存储在 `tableRows` 变量中，当 `forEach()` 过程完成后，我们将 `tableElement` 的 `innerHTML` 值设置为 `tableRows` 的值。
+这些元素存储在`tableRows`变量中，当`forEach()`过程完成后，我们将`tableElement`的`innerHTML`值设置为`tableRows`的值。
 
 如果你打开浏览器，应该会看到任务出现在表格中，如下所示：
 
 ![17 get data](img/image_rsrc2EW.jpg)
 
-既然我们能够显示数据，就可以移除 `index.html` 文件中硬编码的 `<tr>` 元素。移除下面高亮显示的行：
+既然我们能够显示数据，就可以移除`index.html`文件中硬编码的`<tr>`元素。移除下面高亮显示的行：
 
 ```html
 <!-- 从 index.html 中移除以下内容 -->
@@ -4113,7 +4046,7 @@ function getTasks() {
 
 ## 添加新任务
 
-要向数据库添加新任务，我们需要定义 `addTask()` 函数，该函数已在上一章中为“添加任务”按钮定义：
+要向数据库添加新任务，我们需要定义`addTask()`函数，该函数已在上一章中为“添加任务”按钮定义：
 
 ```html
 <button type="button" class="btn btn-primary" onClick="addTask()">
@@ -4121,7 +4054,7 @@ function getTasks() {
 </button>
 ```
 
-回到 `script.js` 文件，创建一个名为 `addTask()` 的新函数，并将以下代码写入其中：
+回到`script.js`文件，创建一个名为`addTask()`的新函数，并将以下代码写入其中：
 
 ```javascript
 function addTask() {
@@ -4146,17 +4079,17 @@ function addTask() {
 }
 ```
 
-首先，我们查询 id 为 `task-title` 的输入文本，然后创建一个名为 `data` 的对象，用于存储任务的 `title` 和 `completed` 状态。
+首先，我们查询 id 为`task-title`的输入文本，然后创建一个名为`data`的对象，用于存储任务的`title`和`completed`状态。
 
-之后，我们使用 `fetch()` 发送 POST 请求，并添加所需的选项。当收到响应时，我们调用 `alert()` 函数通知用户任务已添加到数据库。
+之后，我们使用`fetch()`发送 POST 请求，并添加所需的选项。当收到响应时，我们调用`alert()`函数通知用户任务已添加到数据库。
 
-由于数据库中有了新任务，我们调用 `getTasks()` 数据来重新加载任务列表并显示给用户。然后我们清空输入文本，使其更直观。
+由于数据库中有了新任务，我们调用`getTasks()`数据来重新加载任务列表并显示给用户。然后我们清空输入文本，使其更直观。
 
 现在你可以从浏览器测试添加新任务。下一步是添加删除功能。
 
 ## 删除任务
 
-要从数据库中删除任务，我们需要在 `script.js` 文件中定义 `deleteTask()` 函数。以下是完整的函数：
+要从数据库中删除任务，我们需要在`script.js`文件中定义`deleteTask()`函数。以下是完整的函数：
 
 ```javascript
 function deleteTask(id) {
@@ -4174,17 +4107,17 @@ function deleteTask(id) {
 }
 ```
 
-首先，我们使用 `confirm()` 函数（属于浏览器 API）与用户确认删除决定。
+首先，我们使用`confirm()`函数（属于浏览器 API）与用户确认删除决定。
 
-当用户确认后，我们使用 `fetch()` 函数发送 DELETE 请求，并将要删除的任务的 `id` 值放入 API URL 中（`BASE_API_URL + '/' + id`）。
+当用户确认后，我们使用`fetch()`函数发送 DELETE 请求，并将要删除的任务的`id`值放入 API URL 中（`BASE_API_URL + '/' + id`）。
 
-收到响应后，我们只需调用 `alert()` 函数通知用户，然后使用 `getTasks()` 刷新任务列表。
+收到响应后，我们只需调用`alert()`函数通知用户，然后使用`getTasks()`刷新任务列表。
 
 现在你可以从浏览器测试删除按钮。它应该可以正常工作。
 
 ## 编辑任务
 
-要编辑任务，我们需要在 `script.js` 文件中声明 `editTask()` 函数，如下所示：
+要编辑任务，我们需要在`script.js`文件中声明`editTask()`函数，如下所示：
 
 ```javascript
 function editTask(id) {
@@ -4207,70 +4140,50 @@ function editTask(id) {
 }
 ```
 
-要编辑任务，我们需要调用 `prompt()` 函数向用户询问新的任务标题。收到新标题后，我们将标题作为对象放入 `data` 变量中。
+要编辑任务，我们需要调用`prompt()`函数向用户询问新的任务标题。收到新标题后，我们将标题作为对象放入`data`变量中。
 
-下一步是使用 `fetch()` 执行网络请求，将任务的 `id` 添加到 URL，并将方法设置为 `PATCH`。
+下一步是使用`fetch()`执行网络请求，将任务的`id`添加到 URL，并将方法设置为`PATCH`。
 
 收到响应后，我们通知用户并刷新列表。
 
 ## 将任务标记为已完成
 
-要将任务标记为已完成或未完成，我们需要检查复选框输入是否具有 `checked` 属性。
+要将任务标记为已完成或未完成，我们需要检查复选框输入是否具有`checked`属性。
 
+为此，我们需要在点击输入框时访问`event`属性。这就是为什么我们在复选框的`onclick`属性中传递`event`属性的原因：
 
-
-
-为此，我们需要在点击输入框时访问 `event` 属性。这就是为什么我们在复选框的 `onclick` 属性中传递 `event` 属性的原因：
-
-```
+```html
 <input ... type="checkbox" onclick="toggleTask(event, id)">
 ```
 
-在 `script.js` 文件中创建一个 `toggleTask()` 函数，如下所示：
+在`script.js`文件中创建一个`toggleTask()`函数，如下所示：
 
-```
+```javascript
 function toggleTask(event, id) {
-
-  const checked = event.target.checked;
-
-  const data = {
-
-    completed: checked,
-
-  };
-
-  fetch(BASE_API_URL + '/' + id, {
-
-    method: 'PATCH',
-
-    headers: {
-
-      'Content-Type': 'application/json',
-
-    },
-
-    body: JSON.stringify(data),
-
-  }).then(response => {
-
-    if (response.ok && checked) {
-
-      alert('Hurray! You finished the task');
-
-    }
-
-    getTasks();
-
-  });
-
+  const checked = event.target.checked;
+  const data = {
+    completed: checked,
+  };
+  fetch(BASE_API_URL + '/' + id, {
+    method: 'PATCH',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify(data),
+  }).then(response => {
+    if (response.ok && checked) {
+      alert('Hurray! You finished the task');
+    }
+    getTasks();
+  });
 }
 ```
 
-当复选框被选中时，`checked` 属性返回 `true`，否则返回 `false`。
+当复选框被选中时，`checked`属性返回`true`，否则返回`false`。
 
-我们将这个值封装在一个 `data` 对象中，然后使用 `fetch()` 发送一个 `PATCH` 请求，类似于我们之前创建的 `editTask()` 函数。
+我们将这个值封装在一个`data`对象中，然后使用`fetch()`发送一个`PATCH`请求，类似于我们之前创建的`editTask()`函数。
 
-当任务被标记为已完成时，我们通过调用 `alert()` 通知用户。为了刷新列表，我们调用 `getTasks()` 函数。
+当任务被标记为已完成时，我们通过调用`alert()`通知用户。为了刷新列表，我们调用`getTasks()`函数。
 
 现在我们已经使用 JavaScript 创建了所有核心功能。最后一步是启用筛选功能。
 
@@ -4278,81 +4191,69 @@ function toggleTask(event, id) {
 
 我们创建的选择输入将用作筛选功能。我们可以刷新列表，只查看已完成或活跃的任务。
 
-在 JSON 服务器中，你可以通过添加查询参数来筛选返回的数据。要按 `completed` 属性值进行筛选，URL 为 [`localhost:3000/tasks?completed=true`](http://localhost:3000/tasks?completed=true) 或 [`localhost:3000/tasks?completed=false`](http://localhost:3000/tasks?completed=false)。
+在 JSON 服务器中，你可以通过添加查询参数来筛选返回的数据。要按`completed`属性值进行筛选，URL 为[`localhost:3000/tasks?completed=true`](http://localhost:3000/tasks?completed=true)或[`localhost:3000/tasks?completed=false`](http://localhost:3000/tasks?completed=false)。
 
 你可以通过在浏览器中打开该 URL 来测试。
 
-由于我们已经有了一个 `getTasks()` 函数，我们可以创建一个 `filterTasks()` 函数，它只需调用 `getTasks()`：
+由于我们已经有了一个`getTasks()`函数，我们可以创建一个`filterTasks()`函数，它只需调用`getTasks()`。
 
-```
+
+
+```javascript
 function filterTasks(event) {
+  const filterValue = event.target.value;
 
-  const filterValue = event.target.value;
-
-  if (filterValue === 'all') {
-
-    getTasks();
-
-  } else if (filterValue === 'completed') {
-
-    getTasks('completed');
-
-  } else {
-
-    getTasks('active');
-
-  }
-
+  if (filterValue === 'all') {
+    getTasks();
+  } else if (filterValue === 'completed') {
+    getTasks('completed');
+  } else {
+    getTasks('active');
+  }
 }
 ```
 
-这里，我们再次使用 `event` 属性来获取选择输入的值。
+这里，我们再次使用`event`属性来获取选择输入的值。
 
-接下来，我们检查 `filterValue` 的值，并在调用 `getTasks()` 函数时添加相应的参数。
+接下来，我们检查`filterValue`的值，并在调用`getTasks()`函数时添加相应的参数。
 
-如果我们只想查看已完成的任务，那么我们将 `'completed'` 值传递给 `getTasks()` 函数。
+如果我们只想查看已完成的任务，那么我们将`'completed'`值传递给`getTasks()`函数。
 
-为了适应筛选参数，我们需要给 `getTasks()` 函数添加一个参数。让我们按如下方式更新该函数：
+为了适应筛选参数，我们需要给`getTasks()`函数添加一个参数。让我们按如下方式更新该函数：
 
-```
+```javascript
 function getTasks(filter) {
+  let parameter = '';
 
-  let parameter = '';
+  if (filter === 'completed') {
+    parameter = '?completed=true';
+  } else if (filter === 'active') {
+    parameter = '?completed=false';
+  }
 
-  if (filter === 'completed') {
+  const API_URL = BASE_API_URL + parameter;
 
-    parameter = '?completed=true';
+  fetch(API_URL);
 
-  } else if (filter === 'active') {
-
-    parameter = '?completed=false';
-
-  }
-
-  const API_URL = BASE_API_URL + parameter;
-
-  fetch(API_URL)
-
-  ...
-
+  ...
 }
 ```
 
-这里，我们给 `getTasks()` 函数添加了 `filter` 参数。然后，我们使用 `if-else` 检查为 URL 创建一个查询参数。
+这里，我们给`getTasks()`函数添加了`filter`参数。然后，我们使用`if-else`检查为 URL 创建一个查询参数。
 
-接下来，我们将 `parameter` 添加到 `BASE_API_URL` 中，并在调用 `fetch()` 函数时使用它。
+接下来，我们将`parameter`添加到`BASE_API_URL`中，并在调用`fetch()`函数时使用它。
 
 这样，GET 请求就与你选择的筛选值相对应了。
 
 现在应用程序就完成了！你可以在浏览器中尝试所有功能。
 
-如果你遇到错误并需要帮助，可以将你的代码与我的代码进行比较，地址是 [`github.com/nathansebhastian/js-todo-list/tree/main/check-point-2`](https://github.com/nathansebhastian/js-todo-list/tree/main/check-point-2)，或者给我发邮件到 nathan@codewithnathan.com
+如果你遇到错误并需要帮助，可以将你的代码与我的代码进行比较，地址是[`github.com/nathansebhastian/js-todo-list/tree/main/check-point-2`](https://github.com/nathansebhastian/js-todo-list/tree/main/check-point-2)，或者给我发邮件到`nathan@codewithnathan.com`。
 
 ## 总结
 
 干得好！你刚刚完成了第二个 JavaScript 项目。希望这个项目向你展示了 JavaScript 是如何成为让 Web 应用程序具有交互性的秘密配方的。
 
-在 JavaScript 中，我们定义响应于用户操作的函数，然后将这些函数插入到 HTML 的 `onclick` 属性中。
+在 JavaScript 中，我们定义响应于用户操作的函数，然后将这些函数插入到 HTML 的`onclick`属性中。
 
 当用户执行某个操作时，JavaScript 会通过运行相关流程来响应。CRUD 操作是 Web 应用程序的核心功能，无论你使用什么应用程序，你都会看到它们。
 
@@ -4364,9 +4265,9 @@ function getTasks(filter) {
 
 现在你明白了，在网站的 HTML 和 CSS 部分渲染完成后，JavaScript 如何被用来操作浏览器窗口中显示的内容。
 
-浏览器 API 包含一组你可以使用 JavaScript 访问的对象和方法，允许你操作网站的内容。`Document` 对象允许你使用 `querySelector()` 方法选择特定元素。
+浏览器 API 包含一组你可以使用 JavaScript 访问的对象和方法，允许你操作网站的内容。`Document`对象允许你使用`querySelector()`方法选择特定元素。
 
-浏览器还会发出称为事件的信号，你可以监听这些信号。这样，你就可以执行一些代码来响应事件，例如 `'click'` 和 `'submit'` 事件。
+浏览器还会发出称为事件的信号，你可以监听这些信号。这样，你就可以执行一些代码来响应事件，例如`'click'`和`'submit'`事件。
 
 ## 下一步
 
@@ -4376,15 +4277,15 @@ function getTasks(filter) {
 
 你也可以接下来学习流行的 JavaScript 库，如 React、Vue 或 Svelte，因为你已经掌握了 JavaScript 如何工作的基础知识。我也计划写一本关于这些库的书。
 
-如果你喜欢这本书，你可以考虑订阅我的新闻通讯，以便在我发布新书时得到通知，地址是 [`codewithnathan.com/newsletter`](https://codewithnathan.com/newsletter)
+如果你喜欢这本书，你可以考虑订阅我的新闻通讯，以便在我发布新书时得到通知，地址是[`codewithnathan.com/newsletter`](https://codewithnathan.com/newsletter)。
 
-我还有一个为期 7 天的免费电子邮件课程，主题是《成功软件开发者的心态》，免费地址是 [`sebhastian.gumroad.com/l/mindset`](https://sebhastian.gumroad.com/l/mindset)
+我还有一个为期 7 天的免费电子邮件课程，主题是《成功软件开发者的心态》，免费地址是[`sebhastian.gumroad.com/l/mindset`](https://sebhastian.gumroad.com/l/mindset)。
 
 每封邮件都会分享我在科技行业（从初创公司到大型企业）担任 Web 开发人员和程序员 8 年多后获得的一点智慧。它提供了一个关于成为成功软件开发者的全新视角。
 
 如果你喜欢这本书，如果你能在亚马逊上给我留个评论，我将不胜感激，因为这将帮助其他人找到这本书。
 
-如有任何问题，请随时给我发邮件到 nathan@codewithnathan.com。
+如有任何问题，请随时给我发邮件到`nathan@codewithnathan.com`。
 
 如果你不喜欢这本书，或者觉得我应该涵盖某些额外的主题，请通过邮件告诉我。多亏了像你这样的读者，这本书才能变得更好。
 

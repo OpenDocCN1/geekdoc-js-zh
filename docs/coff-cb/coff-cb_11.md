@@ -1,3 +1,4 @@
+
 # 十一、正则表达式
 
 ## 使用 Heregexes
@@ -28,7 +29,7 @@ pattern = ///
 
 空白字符在 heregexes 中是被忽视的——所以如果要为 ASCII 空格匹配字符，你应该怎么做呢？
 
-我们的解决方案是使用 @\s@ 字符组，它能够匹配空格，制表符和换行符。假如你只想匹配一个空格，你需要使用 \X20 来表示字面上的 ASCII 空格。
+我们的解决方案是使用`\s`字符组，它能够匹配空格，制表符和换行符。假如你只想匹配一个空格，你需要使用`\X20`来表示字面上的 ASCII 空格。
 
 ## 使用 HTML 命名实体替换 HTML 标签
 
@@ -61,7 +62,7 @@ htmlEncode('<a href="http://bn.com">Barnes & Noble</a>')
 
 ### 解决方案
 
-使用 JavaScript 的 **replace** 方法。它与给定字符串匹配，并返回已编辑的字符串。
+使用 JavaScript 的`replace`方法。它与给定字符串匹配，并返回已编辑的字符串。
 
 第一个版本需要 2 个参数：*模式*和*字符串替换*
 
@@ -102,7 +103,7 @@ htmlEncode('<a href="http://bn.com">Barnes & Noble</a>')
 
 #### RegExp 对象
 
-第一种方式是在 RegExp 模式或对象中调用 test 方法。test 方法返回一个布尔值：
+第一种方式是在 RegExp 模式或对象中调用`test`方法。`test`方法返回一个布尔值：
 
 ```js
 match = /sample/.test("Sample text")
@@ -112,7 +113,7 @@ match = /sample/i.test("Sample text")
  # => true
 ```
 
-下一种方式是在 RegExp 模式或对象中调用 exec 方法。exec 方法返回一个匹配信息的数组或空值：
+下一种方式是在 RegExp 模式或对象中调用`exec`方法。`exec`方法返回一个匹配信息的数组或空值：
 
 ```js
 match = /s(amp)le/i.exec "Sample text"
@@ -124,7 +125,7 @@ match = /s(amp)le/.exec "Sample text"
 
 #### String 对象
 
-match 方法使给定的字符串与表达式对象匹配。有 “g” 标识的返回一个包含匹配项的数组，没有 “g” 标识的仅返回第一个匹配项或如果没有找到匹配项则返回 null 。
+`match`方法使给定的字符串与表达式对象匹配。有 “g” 标识的返回一个包含匹配项的数组，没有 “g” 标识的仅返回第一个匹配项或如果没有找到匹配项则返回 null 。
 
 ```js
 "Watch out for the rock!".match(/r?or?/g)
@@ -137,7 +138,7 @@ match 方法使给定的字符串与表达式对象匹配。有 “g” 标识�
  # => null
 ```
 
-search 方法以字符串匹配正则表达式，且如果找到的话返回匹配的起始位置，未找到的话则返回 -1 。
+`search`方法以字符串匹配正则表达式，且如果找到的话返回匹配的起始位置，未找到的话则返回 -1 。
 
 ```js
 "Watch out for the rock!".search /for/

@@ -1,42 +1,24 @@
+
 # 初学者 Web 开发与设计：学习并应用 HTML5、CSS3、JavaScript、jQuery、Bootstrap、DOM、UNIX 命令和 GitHub 基础 - 构建响应式网站工具指南
-
-
-
-
-
 
 ## 初学者
 
-学习并应用 HTML5、CSS3、JavaScript、JQuery、Bootstrap、DOM、UNIX 命令和 GitHub 基础 - 构建响应式网站的工具
-
-
-
-学习并应用 HTML5、CSS3、JavaScript、JQuery、Bootstrap、DOM、UNIX 命令和 GitHub 基础 - 构建响应式网站的工具
-
-
-
-
-
-
-
-
-
-
-
-
-
+学习并应用 HTML5、CSS3、JavaScript、jQuery、Bootstrap、DOM、UNIX 命令和 GitHub 基础 - 构建响应式网站的工具
 
 > “设计与艺术的区别在于，设计是为了功能性。”
-— CAMERON MOLL
+> — CAMERON MOLL
 
 ## 专为你准备！
 
 ![](img/6dfe767126857d06708c3e3f536f3e6c_6_0.png)
 
 送给读者的免费礼物
+
 23 个关于学习和掌握你的网页设计开发技能的秘诀与技巧
-www.jameswebbbdesigns.com 或
-邮箱：james@jameswebbbdesigns.com
+
+`www.jameswebbbdesigns.com` 或
+
+邮箱：`james@jameswebbbdesigns.com`
 
 ## 引言
 
@@ -50,7 +32,7 @@ www.jameswebbbdesigns.com 或
 
 如果真那么简单就好了……
 
-# 初学者 Web 开发与设计：学习并应用 HTML5、CSS3、JavaScript、JQuery、Bootstrap、DOM、UNIX 命令和 GitHub 基础 - 构建响应式网站的工具
+# 初学者 Web 开发与设计：学习并应用 HTML5、CSS3、JavaScript、jQuery、Bootstrap、DOM、UNIX 命令和 GitHub 基础 - 构建响应式网站的工具
 
 将用“纯正英语”教你关于互联网世界运作所需的知识。
 
@@ -62,19 +44,20 @@ www.jameswebbbdesigns.com 或
 
 这本书是为初学者写的。
 
-
-
 > “设计与艺术的区别在于，设计是为了功能性。”
-— CAMERON MOLL
+> — CAMERON MOLL
 
 ## 专为你准备！
 
 ![](img/6dfe767126857d06708c3e3f536f3e6c_6_0.png)
 
 送给读者的免费礼物
+
 23 个关于学习和掌握你的网页设计开发技能的秘诀与技巧
-www.jameswebbbdesigns.com 或
-邮箱：james@jameswebbbdesigns.com
+
+`www.jameswebbbdesigns.com` 或
+
+邮箱：`james@jameswebbbdesigns.com`
 
 ## 引言
 
@@ -88,13 +71,9 @@ www.jameswebbbdesigns.com 或
 
 如果真那么简单就好了……
 
-
-
-
-
 ## 本书结构及你的学习之旅
 
-初学者 Web 开发与设计：学习 HTML5、CSS3、Javascript、JQuery、Bootstrap、DOM、UNIX 命令和 GitHub 基础 - 构建响应式网站：
+初学者 Web 开发与设计：学习 HTML5、CSS3、JavaScript、jQuery、Bootstrap、DOM、UNIX 命令和 GitHub 基础 - 构建响应式网站：
 
 **第一章：** 熟悉虚拟空间帮助你理解网站是如何运作的，以及 HTML、CSS 和 JavaScript 是如何贡献的。
 
@@ -110,7 +89,7 @@ www.jameswebbbdesigns.com 或
 
 **第七章：** 文档对象模型（DOM）帮助你学习基于 HTML 的网站树结构，并教你如何利用对 DOM 的理解来操作和更改 HTML 元素。
 
-**第八章：** 使用 JQuery 简化网站构建。你将学习 jQuery 的功能、使用 jQuery 操作文本、样式和属性、使用 jQuery 创建动画和自定义等。
+**第八章：** 使用 jQuery 简化网站构建。你将学习 jQuery 的功能、使用 jQuery 操作文本、样式和属性、使用 jQuery 创建动画和自定义等。
 
 **第九章：** UNIX 命令。Unix 命令行将带你了解如何在 Unix/Linux 终端中使用基础 bash 命令。
 
@@ -160,22 +139,23 @@ JavaScript 长期以来被开发者视为至关重要的前端语言。然而，
 
 运行 macOS、Windows 和 Linux（尤其是 Ubuntu 和 Debian）的电脑其安装步骤非常相似。在所有系统上使用 Visual Studio Code 都是一样的。
 
-- 1. 访问 Visual Code 网站下载最新版本的 Visual Studio Code。
-- 2. 将显示你的电脑操作系统，但如果显示的不正确，点击向下箭头，从下拉菜单中为你的操作系统选择相应的选项，并点击“Stable.”下的向下箭头图标。
+1. 访问 Visual Code 网站下载最新版本的 Visual Studio Code。
 
-**Windows 用户：** 你将获得作为 .exe 文件格式的最新版 Visual Studio Code。
-**Mac 用户：** 最新版 Mac 版 Visual Studio Code 将以 .zip 文件格式下载。
-**Linux 用户：** .deb 和 rpm 是不同类型的数据存储文件。我们建议下载 .deb 文件，按照 Visual Studio Code 文档建议自动更新工作。
+2. 将显示你的电脑操作系统，但如果显示的不正确，点击向下箭头，从下拉菜单中为你的操作系统选择相应的选项，并点击“Stable.”下的向下箭头图标。
 
-- 3. 在 Visual Studio code 文件下载完成后，你需要安装它。在你的文件管理器中找到 Visual Studio code 文件。该程序允许你查看 PC 上的文件和文件夹。
+**Windows 用户：** 你将获得作为 `.exe` 文件格式的最新版 Visual Studio Code。
 
-Windows 用户：点击 .exe 文件启动安装程序。继续点击“Next”（下一步），最后点击“Finish”（完成）。
-Mac 用户：你下载的 .zip 文件应该在“下载”文件夹中。打开文件。如果看到消息，选择“Open”（打开）。
+**Mac 用户：** 最新版 Mac 版 Visual Studio Code 将以 `.zip` 文件格式下载。
+
+**Linux 用户：** `.deb` 和 `rpm` 是不同类型的数据存储文件。我们建议下载 `.deb` 文件，按照 Visual Studio Code 文档建议自动更新工作。
+
+3. 在 Visual Studio Code 文件下载完成后，你需要安装它。在你的文件管理器中找到 Visual Studio Code 文件。该程序允许你查看 PC 上的文件和文件夹。
+
+Windows 用户：点击 `.exe` 文件启动安装程序。继续点击“Next”（下一步），最后点击“Finish”（完成）。
+
+Mac 用户：你下载的 `.zip` 文件应该在“下载”文件夹中。打开文件。如果看到消息，选择“Open”（打开）。
+
 Linux 用户：你下载的文件应该在“下载”文件夹中。在文件管理器中找到它，双击并在中央 GUI 软件中选择“Install”（安装），或运行以下命令之一。
-
-
-
-
 
 通过终端执行：
 
@@ -184,7 +164,7 @@ sudo dpkg -i downloaded_filename.deb
 sudo apt-get install -f
 ```
 
-**4. 确保你的 Visual Studio Code 应用保存在你已知可以轻松找到的地方。**
+4. 确保你的 Visual Studio Code 应用保存在你已知可以轻松找到的地方。
 
 **Windows 用户：** 你可以在开始菜单中找到它。
 
@@ -199,10 +179,15 @@ sudo apt-get install -f
 让 Visual Studio Code 独特的主要特性是侧边栏，它汇集了你进行编码和重构时交互的主要功能。你需要的可能只是安装一个扩展。
 
 - **IntelliSense**：这是一个非常实用的自动补全和语法高亮功能，可根据导入的变量类型、函数和模块定义提供智能补全。
+
 - **调试**：内置调试器允许你通过添加监视器和断点来加速编辑、编译和调试。默认情况下，它支持 NodeJS。因此，它可以调试所有转译 JavaScript 的内容。尽管如此，对于 C++ 或 Python 等其他运行时，它需要安装扩展。
+
 - **内置 Git**：针对最常用的命令内置了 Git 图形界面（GUI），让你能够立即看到项目所做的更改。
+
 - **颜色主题实时预览**：当你更改主题颜色时，VS Code 允许你在选择一个时进行实时预览。
+
 - **终端**：它可以配合完全集成的终端进行工作，允许你执行通常在其他首选终端中执行的所有操作。
+
 - **图标**：VS Code 提供了图标主题，你可以像更改代码主题一样在图标主题之间切换。
 
 ### 设置你的工作空间
@@ -217,7 +202,7 @@ sudo apt-get install -f
 
 点击 VS Code IDE 底部状态栏中的“Setup Workspace”（设置工作空间）。
 
-你也可以使用快捷键，Windows 上的 Ctrl + Shift + P 或 macOS 上的 Command + Shift + P 打开命令面板，并从列表中选择 Now: Setup Now Workspace（现在：立即设置工作空间）。
+你也可以使用快捷键，Windows 上的 `Ctrl + Shift + P` 或 macOS 上的 `Command + Shift + P` 打开命令面板，并从列表中选择 `Now: Setup Now Workspace`（现在：立即设置工作空间）。
 
 ![](img/6dfe767126857d06708c3e3f536f3e6c_27_0.png)
 
@@ -226,12 +211,15 @@ sudo apt-get install -f
 从新文件夹设置工作空间
 
 - 点击“New Folder”（新建文件夹）。
+
 - 在“New Folder Name”窗口中输入文件夹名称。
+
 - 点击“Create”（创建）。
 
 从现有文件夹设置工作空间
 
 - 选择你系统上需要的的文件夹。
+
 - 点击“Select Project Folder”（选择项目文件夹）。
 
 现在，你已经从所选文件夹创建了工作空间。
@@ -250,14 +238,11 @@ sudo apt-get install -f
 
 除了能帮助你决定这本书是否值得读之外，预览还能让你熟悉书籍的结构。这使你理解书籍的宏观框架，从而使你之后读到的所有内容都能放在正确的语境中。
 
-## 决定你的阅读深度和目标。
+## 决定你的阅读深度和目标
 
 如果你认为阅读这本书将让你受益匪浅，你必须决定你的阅读目的。
 
 你的目的决定了你期望从这本书中获得的具体想法。例如，是否有某个你需要解决的问题？
-
-
-
 
 然而，在我们开始之前，让我们快速了解一下 Web 设计与开发之间的区别。
 
@@ -271,9 +256,10 @@ Web 设计是指在互联网上显示的网站的设计。它指的是网站设�
 
 Web 开发通常指的是与为内网或互联网提供托管的网站进行创建、构建和维护相关的活动。它涉及 Web 设计、Web 编程、Web 发布和数据库管理等方面。
 
-为了总结它们的区别，让我们来看看 Web设计师和 Web 开发人员的角色。
+为了总结它们的区别，让我们来看看 Web 设计师和 Web 开发人员的角色。
 
 - Web 设计师使用 Photoshop、Illustrator、Sketch、Experience Design 等软件工具来设计一个包含所有基本信息且易于导航和使用的网站。相反，Web 开发人员使用 HTML、JavaScript、PHP 等编程语言将这些项目转换为运行的网站。
+
 - 在上面的 Google 首页示例中，当你将光标悬停在麦克风符号上，会出现一个显示“通过语音搜索”的对话框。点击它会显示“现在说话”的消息。在整个过程中，显示消息、颜色、字体、对齐方式以及文本、搜索栏和麦克风大小的决定构成了 Web 设计。同时，编程使 Web 设计得以实现。用户可以看到文本并点击构成 Web 开发的图标。
 
 ## 网页是如何运作的
@@ -287,7 +273,9 @@ Web 开发通常指的是与为内网或互联网提供托管的网站进行创�
 这里是一些帮助你入门的基础术语：
 
 - **网站**仅仅是 Web 代码页的集合——这些代码描述了页面的布局、格式和内容。
+
 - **Web 服务器**是连接到互联网的计算机，接收由浏览器发送的 Web 页面请求。
+
 - **浏览器**通过 IP 将你的地址连接到服务器。IP 地址是通过翻译域名获取的。（别担心，你的浏览器会自动完成这部分，所以你不需要自己查找 IP 地址。）
 
 换句话说，要在互联网上查看你的网站，需要以下内容：网站、你的域名和服务器。
@@ -314,12 +302,11 @@ Web 页是在互联网上显示信息的一种。它由文本、图像、链接�
 
 这意味着如果信息没有存储在你的计算机上，它就会存储在其他地方另一台计算机上。
 
+
+
 因此，你的 Facebook 照片并不是存在于真空中的。相反，这些数据存储在一个或多个设施的物理计算机上，等待你或你的祖父访问它们。
 
 同样，网站并不生活在“互联网上”。所有网站的 HTML 代码存储在某处的计算机上，等待带有互联网浏览器的计算机访问这些信息。
-
-
-
 
 不劳而获。所以，除非你有资金来购买并运行自己的服务器，否则你可能需要付费来托管你的业务网站。
 
@@ -327,15 +314,15 @@ Web 页是在互联网上显示信息的一种。它由文本、图像、链接�
 
 ## 域名
 
-域名是你在网页浏览器地址栏中输入的、用于访问网站的地址。域名的示例是 www.example.com。域名对于网站来说是独有的。换句话说，两个网站不能拥有相同的域名。绝不可能！！
+域名是你在网页浏览器地址栏中输入的、用于访问网站的地址。域名的示例是 `www.example.com`。域名对于网站来说是独有的。换句话说，两个网站不能拥有相同的域名。绝不可能！！
 
-虽然你的网站并不一定需要自定义域名，但许多网站构建器都提供附带免费网站地址的免费计划。然而，这些免费网站地址是以子域名的形式存在的。例如，如果你的网站构建器是“sample.com”，你的免费网站地址可能是：
+虽然你的网站并不一定需要自定义域名，但许多网站构建器都提供附带免费网站地址的免费计划。然而，这些免费网站地址是以子域名的形式存在的。例如，如果你的网站构建器是`sample.com`，你的免费网站地址可能是：
 
-http://yourname.sample.com。
+`http://yourname.sample.com`。
 
 这种类型的网页地址存在许多问题：
 
-- 你的网站会变成“人质”：因为你并不拥有 example.com，所以你甚至没有该域名的子域名或子文件夹。网站构建器有权根据意愿创建或删除任意子域名和/或子文件夹，无论是否通知。
+- 你的网站会变成“人质”：因为你并不拥有`example.com`，所以你甚至没有该域名的子域名或子文件夹。网站构建器有权根据意愿创建或删除任意子域名和/或子文件夹，无论是否通知。
 
 - 许多客户不想与一家没有自己域名的公司做生意。个性化的域名（以及个性化的域名邮箱地址）可以带给你和你你的业务所需的专业性、信誉和信心。
 
@@ -353,7 +340,7 @@ http://yourname.sample.com。
 
 同样地，你的网站也需要一个地址。注册的标识允许用户请求信息以读取存储在你的服务器上的 HTML 代码。
 
-这就是域名大显身场的地方。我们经常看到域名。www.anything.com。域名是一种特殊的标识，你通过付费注册它，以便访问者可以找到你。
+这就是域名大显身场的地方。我们经常看到域名。`www.anything.com`。域名是一种特殊的标识，你通过付费注册它，以便访问者可以找到你。
 
 网站新手经常犯的一个常见错误是将域名注册与托管服务混淆。这部分源于对我们刚刚涵盖的关于信息在互联网上如何存在的误解：认为信息似乎是存在于某处，漂浮在“网络”周围。
 
@@ -387,10 +374,7 @@ DNS 的工作与你手机上的联系人应用非常相似：打开联系人应�
 
 虽然网站构建器不需要这些，但对于许多开始网站的人来说，未来最令他们感到恐惧的是必须编程。
 
-
-
-
-一旦标签被打开，所有后续内容都会被视为该标签的一部分，直到你“关闭”该标签为止。当一个段落结束时，我在段落上放置一个结束标签：</p>。注意，结束标签与开启标签相似，区别在于左尖角括号后有一个斜杠。这是一个示例：
+一旦标签被打开，所有后续内容都会被视为该标签的一部分，直到你“关闭”该标签为止。当一个段落结束时，我在段落上放置一个结束标签：`</p>`。注意，结束标签与开启标签相似，区别在于左尖角括号后有一个斜杠。这是一个示例：
 
 ```
 <p> This is a paragraph. < / p>
@@ -434,12 +418,11 @@ function updateLastname() {
 }
 ```
 
-然后，当网站访客输入了他们的姓——以及落地页上请求的所有其他信息——并提交表单时，此操作将更新你代码中最初未定义的“Lastname”元素的标识。以下是在 JavaScript 中通过姓名感谢你的网站访客的方法：
+然后，当网站访客输入了他们的姓——以及落地页上请求的所有其他信息——并提交表单时，此操作将更新你代码中最初未定义的`Lastname`元素的标识。以下是在 JavaScript 中通过姓名感谢你的网站访客的方法：
 
 ```
 para.textContent = 'Thanks ' + Lastname + '!';
 ```
-
 
 你可以通过在 `<head>` 标签中添加 `<meta name="viewport" content="width =device-width">` 来实现这一点。这会将视口的宽度设置为设备的宽度。由于 IE10 决定忽略此元数据，你还需要在你的 CSS 中添加以下视口规则：
 
@@ -464,22 +447,6 @@ para.textContent = 'Thanks ' + Lastname + '!';
 ## 使用 BALSAMIQ 创建原型和线框图
 
 线框图（Wireframing）可以描述为显示特定屏幕（移动端或网页）布局的活动。最近，人们对对屏幕/页面进行线框以评估其充分性的兴趣日益增加。
-
-### 为什么需要线框图？
-
-线框图对于节省理解软件需求时投入的时间是必要的。正如俗话所说，一图胜千言。线框图提供了任何功能/页面需求的视图，有效地显示了屏幕的布局和元素。最终，它还帮助开发团队朝着共同的终目标前进。
-
-### Balsamiq 作为线框图工具
-
-Balsamiq 是一个优秀的工具，满足了线框图、协作和创造性的所有需求。它的独特功能允许团队成员快速绘制线框图，并对要开发的功能达成共识。这最终使团队与布局资源保持一致。
-
-它还允许不同团队之间的协作，以便团队成员可以与其他同地或远程的团队进行协作。最后，它将线框图导出为 PDF/PNG 格式的能力为共享线框图提供了灵活性。
-
-我们现在知道 Balsamiq 在创建实时线框图方面是多么有效。假设我们在软件开发开始时利用这段时间来定义利益相关者的预期。在这种情况下，将会……（此处原文不完整，翻译至此）。
-
-# 使用 BALSAMIQ 创建原型和线框图（重复段落，按要求翻译）
-
-线框图可以被为为显示特定屏幕（移动端或网页）布局的活动。最近，人们对对屏幕/页面进行线框以评估其充分性的兴趣日益增加。
 
 ### 为什么需要线框图？
 
@@ -540,57 +507,13 @@ Balsamiq 是一个优秀的工具，满足了线框图、协作和创造性的�
 *纠正：由于用户提供的文本中存在多处完全相同的英文，为了严格遵守“一定不要重复输出原文”的指令，我将仅提供不重复部分的中文译文。*
 
 ---
+
 *(重新审视：用户提供的文本确实存在大量段落重复。根据指令“一定不要重复输出原文”，我将跳过重复的段落进行翻译。)*
 
 **由于输入文本存在大量重复，以下为去重复后的翻译：**
 
 [content]
-你可以通过在 `<head>` 标签中添加 `<meta name="viewport" content="width =device-width">` 来实现这一点。这会将视口的宽度设置为设备的宽度。由于 IE10 决定忽略此元数据，你还需要在你的 CSS 中添加以下视口规则：
 
-```
-@viewport{ zoom: 1.0; width: device-width; }
-```
-
-## 使其兼容移动设备
-
-变为响应式并不意味着你的网站自动就是移动端友好的。它可以适应较小的屏幕，但良好的用户体验不仅仅是移动元素的位置。
-
-关于响应式设计（RWD），需要记住的一个重要点是：你的网站在最小断点处的宽度不应超过一列宽。请记住，在手机屏幕上点击所需的平均空间为 44 像素。因此，将所有元素放在一个长长的单页上供用户浏览，比尝试强迫他们使用微小的链接和按钮进行导航容易得多。
-
-当你考虑移动用户时，请记住响应式设计允许你通过 CSS 中的条件加载，在减少列数时消除元素。当屏幕空间开始收缩时，隐藏所有非本质内容。
-
-## 测试，并在测试后再次测试
-
-如果你已经设计了网站，你应该注意到当你调整浏览器窗口时，它是如何轻松调整大小的。然而， 这种测试是不够的。请使用你的编辑器中提供的不同测试工具以及各种不同的自动化测试工具。你同样应该在你接触的每一个设备上对网站进行测试。
-
-每个网站的目标是为访客提供理想的体验，让他们能够精确地找到他们正在寻找的内容。当人们无法访问你网站上的页面时，他们会感到困并离开。与其将你的移动端体验塑造成一个可以在所有设备上看起来都良好的特定框框，不如，为什么不采用移动 Web 设计方法，确保你的网站完美适配访客的屏幕，无论设备尺寸有多大。这样，你就不需要担心访客仅仅因为响应式设计导致网站内容看起来不正常或无法运行而离开了。
-
-## 使用 BALSAMIQ 创建原型和线框图
-
-线框图（Wireframing）可以描述为显示特定屏幕（移动端或网页）布局的活动。最近，人们对对屏幕/页面进行线框以评估其充分性的兴趣日益增加。
-
-### 为什么需要线框图？
-
-线框图对于节省理解软件需求时投入的时间是必要的。正如俗话所说，一图胜千言。线框图提供了任何功能/页面需求的视图，有效地显示了屏幕的布局和元素。最终，它还帮助开发团队朝着共同的终目标前进。
-
-### Balsamiq 作为线框图工具
-
-Balsamiq 是一个优秀的工具，满足了线框图、协作和创造性的所有需求。它的独特功能允许团队成员快速绘制线框图，并对要开发的功能达成共识。这最终使团队与布局资源保持一致。
-
-它还允许不同团队之间的协作，以便团队成员可以与其他同地或远程的团队进行协作。最后，它将线框图导出为 PDF/PNG 格式的能力为共享线框图提供了灵活性。
-
-我们现在知道 Balsamiq 在创建实时线框图方面是多么有效。假设我们在软件开发开始时利用这段时间来定义利益相关者的预期。在这种情况下，将会……
-
-## 使用 HTML 结构化页面
-（此处省略重复内容）
-[/content]
-```
-
-*(注：由于原始文本中存在大量重复，为了遵循“一定不要重复输出原文”的指令，译文已剔除重复段落。)* 
-
-**等等，作为高级工程师，我理解用户可能指的是“不要在输出中重复英文原文”，而不是“不要翻译重复的英文段落”。以下是完整翻译（不含英文）的中文译文：**
-
-[content]
 你可以通过在 `<head>` 标签中添加 `<meta name="viewport" content="width =device-width">` 来实现这一点。这会将视口的宽度设置为设备的宽度。由于 IE10 决定忽略此元数据，你还需要在你的 CSS 中添加以下视口规则：
 
 ```
@@ -609,6 +532,8 @@ Balsamiq 是一个优秀的工具，满足了线框图、协作和创造性的�
 
 如果你已经设计了网站，你应该注意到当你调整浏览器窗口时，它是如何轻松调整大小的。然而，这种测试是不够的。请使用你的编辑器中提供的不同测试工具以及各种不同的自动化测试工具。你同样应该在你接触的每一个设备上对网站进行测试。
 
+
+
 每个网站的目标是为访客提供理想的体验，让他们能够精确地找到他们正在寻找的内容。当人们无法访问你网站上的页面时，他们会感到困并离开。与其将你的移动端体验塑造成一个可以在所有设备上看起来都良好的特定框框，不如，为什么不采用移动 Web 设计方法，确保你的网站完美适配访客的屏幕，无论设备尺寸有多大。这样，你就不需要担心访客仅仅因为响应式设计导致网站内容看起来不正常或无法运行而离开了。
 
 ## 使用 BALSAMIQ 创建原型和线框图
@@ -621,29 +546,39 @@ Balsamiq 是一个优秀的工具，满足了线框图、协作和创造性的�
 
 ### Balsamiq 作为线框图工具
 
-Balsamiq 是一个优秀的工具，满足了线框图、协作和创造性的所有需求。它的独特功能允许团队成员快速绘制线框图，并对要开发的功能达成共识。这最终使团队与布局资源保持一致。
+`Balsamiq` 是一个优秀的工具，满足了线框图、协作和创造性的所有需求。它的独特功能允许团队成员快速绘制线框图，并对要开发的功能达成共识。这最终使团队与布局资源保持一致。
 
 它还允许不同团队之间的协作，以便团队成员可以与其他同地或远程的团队进行协作。最后，它将线框图导出为 PDF/PNG 格式的能力为共享线框图提供了灵活性。
 
-我们现在知道 Balsamiq 在创建实时线框图方面是多么有效。假设我们在软件开发开始时利用这段时间来定义利益相关者的预期。在这种情况下，将会……
+我们现在知道 `Balsamiq` 在创建实时线框图方面是多么有效。假设我们在软件开发开始时利用这段时间来定义利益相关者的预期。在这种情况下，将会……
 
 ## 使用 HTML 结构化页面
 
-（此处为重复的 HTML 结构化页面段落，根据指令不重复输出，此处略过）
+你可以通过在 `<head>` 标签中添加 `<meta name="viewport" content="width =device-width">` 来实现这一点。这会将视口的宽度设置为设备的宽度。由于 IE10 决定忽略此元数据，你还需要在你的 CSS 中添加以下视口规则：
+
+```
+@viewport{ zoom: 1.0; width: device-width; }
+```
+
+## 使其兼容移动设备
+
+变为响应式并不意味着你的网站自动就是移动端友好的。它可以适应较小的屏幕，但良好的用户体验不仅仅是移动元素的位置。
+
+关于响应式设计（RWD），需要记住的一个重要点是：你的网站在最小断点处的宽度不应超过一列宽。请记住，在手机屏幕上点击所需的平均空间为 44 像素。因此，将所有元素放在一个长长的单页上供用户浏览，比尝试强迫他们使用微小的链接和按钮进行导航容易得多。
+
+当你考虑移动用户时，请记住响应式设计允许你通过 CSS 中的条件加载，在减少列数时消除元素。当屏幕空间开始收缩时，隐藏所有非本质内容。
+
+## 测试，并在测试后再次测试
+
+如果你已经设计了网站，你应该注意到当你调整浏览器窗口时，它是如何轻松调整大小的。然而，这种测试是不够的。请使用你的编辑器中提供的不同测试工具以及各种不同的自动化测试工具。你同样应该在你接触的每一个设备上对网站进行测试。
 
 ### HTML 语法解剖
-（此处为重复的 HTML 语法解剖段落，此处略过）
 
-（此处省略后续所有完全重复的翻译内容）
-
-
-
-
-### 第 3 行
+#### 第 3 行
 
 `<head>` 元素代表文档的元数据。
 
-### 第 4 行
+#### 第 4 行
 
 ```
 <meta charset="UTF-8">
@@ -651,7 +586,7 @@ Balsamiq 是一个优秀的工具，满足了线框图、协作和创造性的�
 
 这指定了 HTML 文档的字符编码。
 
-### 第 5 行
+#### 第 5 行
 
 ```
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -667,9 +602,9 @@ Balsamiq 是一个优秀的工具，满足了线框图、协作和创造性的�
 }
 ```
 
-窗口大小由 width 和 height 属性控制，而缩放级别由 initial-scale 属性决定。
+窗口大小由 `width` 和 `height` 属性控制，而缩放级别由 `initial-scale` 属性决定。
 
-### 第 6 行
+#### 第 6 行
 
 ```
 <meta http-equiv="X-UA-Compatible" content="ie=edge" />
@@ -677,7 +612,7 @@ Balsamiq 是一个优秀的工具，满足了线框图、协作和创造性的�
 
 这允许网页作者选择显示页面时使用的 Internet Explorer 版本。`ie= "edge"` 模式指示 Internet Explorer 以最高可用模式显示内容。
 
-### 第 7 行
+#### 第 7 行
 
 ```
 <title>新文档 </title>
@@ -689,24 +624,24 @@ Balsamiq 是一个优秀的工具，满足了线框图、协作和创造性的�
 - 搜索服务的结果列表
 - 书签列表
 
-### 第 8 行
+#### 第 8 行
 
 ```
 <body> 代表文档的内容。
-<<body>
+<body>
 ...
-</</body>>
+</body>
 ```
 
 ### 在 HTML 中声明 Doctype
 
-HTML 文档类型声明（也称为 DOCTYPE）是任何 HTML 或 XHTML 文档所需的的第一行代码。DOCTYPE 声明是告诉网络浏览器该页面所编写 HTML 版本的声明。这确保了不同的浏览器以相同的方式爬取网页。
+HTML 文档类型声明（也称为 DOCTYPE）是任何 HTML 或 XHTML 文档所需的第一行代码。DOCTYPE 声明是告诉网络浏览器该页面所编写 HTML 版本的声明。这确保了不同的浏览器以相同的方式爬取网页。
 
 在 HTML 4.01 中，文档类型声明引用文档类型定义 (DTD)。DTD 定义了 XML 文档的结构和合法元素。由于 HTML 4.01 是基于标准通用标记语言 (SGML)，因此在 DOCTYPE 声明中必须提到 DTD。
 
 此外，HTML 4.01 的 doctype 要求声明严格（strict）、过渡（transitional）或框架集（frameset）DTD，每种都有不同的用例，如下所示：
 
--  Strict DTD - 用于排除了 W3C 计划随着 CSS 支持增加而移除的属性和元素的网页。
+- Strict DTD - 用于排除了 W3C 计划随着 CSS 支持增加而移除的属性和元素的网页。
 - Transitional DTD - 用于包含 W3C 计划随着 CSS 支持增加而消除的属性和元素的网页。
 - Frameset DTD - 用于带有框架的网页。
 
@@ -743,7 +678,7 @@ HTML 列表用于以良好且符合语义的方式显示信息列表。HTML 中�
 
 在这里，我们将逐一介绍三种类型的列表：
 
-### 无序列表
+#### 无序列表
 
 使用 `<ul>` 元素构建的无序列表，每个项目以 `<li>` 开头。无序列表用项目符号标记。这里是一个示例：
 
@@ -761,7 +696,7 @@ HTML 列表用于以良好且符合语义的方式显示信息列表。HTML 中�
 - 中间名
 - 姓
 
-### 有序列表
+#### 有序列表
 
 使用 `<ol>` 元素创建有序列表，每个项目以 `<li>` 开头。有序列表用数字标记。这里是一个示例：
 
@@ -779,7 +714,7 @@ HTML 列表用于以良好且符合语义的方式显示信息列表。HTML 中�
 2. 中间名
 3. 姓
 
-### 描述列表
+#### 描述列表
 
 使用 `<dl>` 元素创建描述列表。术语是 `<dt>`，定义是 `<dd>`。浏览器通常通过将术语和定义放在不同的行来显示列表。这里是一个示例：
 
@@ -804,13 +739,13 @@ HTML 列表用于以良好且符合语义的方式显示信息列表。HTML 中�
 
 使用 HTML 轻松地向博客文章或网页插入图像。实际上，如果你了解基础，这并不困难。这里有一个帮助你的指南。
 
-### 使用 HTML 嵌入图像
+#### 使用 HTML 嵌入图像
 
 用户有多种路径可以完成此步骤，因此如果你的方法与众不同，请不要惊讶。
 
 1. 上传你的图像：可以通过图像托管服务、FTP 或博客托管服务来实现。选择最适合你的。
 2. 打开你的 HTML 文档：自言，只需确保这是你想放置图像的 HTML 文档。
-3. 在 IMG 标签中复制并粘贴图像 URL：首先，在 HTML 代码中确定放置图像的位置并输入图像标签 `<img>`。然后获取下载的图像的 URL，并将其放在 src 参数中。
+3. 在 IMG 标签中复制并粘贴图像 URL：首先，在 HTML 代码中确定放置图像的位置并输入图像标签 `<img>`。然后获取下载的图像的 URL，并将其放在 `src` 参数中。
 
 此阶段的最终结果如下：
 
@@ -818,24 +753,21 @@ HTML 列表用于以良好且符合语义的方式显示信息列表。HTML 中�
 <img src="(在此处图像 URL)">
 ```
 
-4. 添加 alt 属性并完善：这有助于识别图像。例如，如果是海滩上的伞，编写 alt 标签包含关于该伞的内容。
+4. 添加 `alt` 属性并完善：这有助于识别图像。例如，如果是海滩上的伞，编写 `alt` 标签包含关于该伞的内容。
 
-### 在 HTML 目录放置图像
+#### 在 HTML 目录放置图像
 
 如果你有一个网站并想向目录发布图像，该过程相对简单。通过以下三个简单的步骤：
 
 - 复制你想插入的图像的 URL。
-- 然后，打开你的 `index.html` 文件并将其插入 img 代码中。示例：`<img src="(在此处图像 URL)">`
+- 然后，打开你的 `index.html` 文件并将其插入 `img` 代码中。示例：`<img src="(在此处图像 URL)">`
 - 保存 HTML 文件。下次打开时，你将看到带有新添加图像的网页。
 
 ### 使用 HTML 锚点标签创建超链接
 
-通过 HTML 可以轻松地为任何 HTML 页面添加超链接。通过创建超链接链接到团队页面、页面甚至测试。你还可以创建指向外部网站的超链接。在 HTML 中创建
+通过 HTML 可以轻松地为任何 HTML 页面添加超链接。通过创建超链接链接到团队页面、页面甚至测试。你还可以创建指向外部网站的超链接。在 HTML 中创建页面，请使用 `<a>` 和 `</a>` 标签，这些是用于定义链接的标签。
 
-
-页面，请使用 `<a>` 和 `</a>` 标签，这些是用于定义链接的标签。
-
-`<a>` 标签表示超链接的开始，`</a>` 标签表示它的结束。在这些标签中添加的任何文本都将作为超链接。在 `<a href="">` 中添加链接的 URL。注意，你必须在 `<<body>>... </body>` 标签内使用 `<a>...</a>` 标签。
+`<a>` 标签表示超链接的开始，`</a>` 标签表示它的结束。在这些标签中添加的任何文本都将作为超链接。在 `<a href="">` 中添加链接的 URL。注意，你必须在 `<body>... </body>` 标签内使用 `<a>...</a>` 标签。
 
 你可以尝试运行以下代码来在 HTML 页面中插入超链接：
 
@@ -956,26 +888,53 @@ HTML 表格的结构由以下标签组成：
 <h1>This is Sample Web Page</h1>
 </tr>
 <tr valign="top">
-<td bgcolor="#aaa" width="50">
-<b>Main Menu</b><br />
-HTML<br />
-JavaScript<br />
-CSS...
-</td>
-<td bgcolor="#eee" width="100" height="200">
-Web design and Development
-</td>
-</tr>
-<tr>
-<td colspan="2" bgcolor="#b5cb3">
-<center>
-Copyright © 2021
-</center>
-</td>
-</tr>
 </table>
 </body>
 </html>
+```
+
+
+
+<td bgcolor="#aaa" width="50">
+
+<b>Main Menu</b><br />
+
+HTML<br />
+
+JavaScript<br />
+
+CSS...
+
+</td>
+
+<td bgcolor="#eee" width="100" height="200">
+
+Web design and Development
+
+</td>
+
+</tr>
+
+<tr>
+
+<td colspan="2" bgcolor="#b5cb3">
+
+<center>
+
+Copyright © 2021
+
+</center>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>
+
 ```
 
 运行上面的 HTML 代码查看结果。
@@ -1006,11 +965,17 @@ IMAGE
 `<form>` 标签用于创建 HTML 表单。这是一个登录表单的示例（图 3.8）：
 
 ```html
+
 <form>
+
 <label>Username: <input type="text"></label>
+
 <label>Password: <input type="password"></label>
+
 <input type="submit" value="Submit">
+
 </form>
+
 ```
 
 ![](img/6dfe767126857d06708c3e3f536f3e6c_106_0.png)
@@ -1024,9 +989,13 @@ HTML `<div>` 元素是内容的通用容器。在用 CSS 进行样式处理之�
 ### 简单示例
 
 ```html
+
 <div>
+
 <p>You may insert any content</p>
+
 </div>
+
 ```
 
 ### 样式化示例
@@ -1036,34 +1005,46 @@ HTML `<div>` 元素是内容的通用容器。在用 CSS 进行样式处理之�
 ## HTML
 
 ```html
+
 <div class="shadowbox">
+
 <p>Here's a very interesting note
+
 displayed in a
+
 lovely shadowed box.</p>
+
 </div>
+
 ```
 
 ## CSS
 
 ```css
+
 .shadowbox {
+
 width: 15em;
+
 border: 1px solid #333;
+
 box-shadow: 8px 8px 5px #444;
+
 padding: 8px 12px;
+
 background-image: linear-
+
 gradient(180deg, #fff, #ddd 40%,
+
 #ccc);
+
 }
+
 ```
 
 ## 实践练习
 
 这些问题是为那些学习了 HTML 但尚未学习 CSS 的人准备的。涉及 CSS 的更高级问题将在下一节提供。
-
-
-
-
 
 ### 1. 创建以下网页（仅限 HTML）：图 3.9
 
@@ -1085,42 +1066,57 @@ CSS 是 Cascading Style Sheets 的缩写，重点在于“样式（Style）”�
 
 元素是网页的单个 HTML 组件，例如段落，它在 HTML 中可能看起来像这样：
 
-```
+```html
+
 <p>This is my paragraph!</p>
+
 ```
 
 如果你想让这个段落在浏览器查看网页的人眼中显示为粉色且**加粗**，可以使用如下的 CSS 代码：
 
-```
+```css
+
 p { color:pink; font-weight:bold;
+
 }
+
 ```
 
 在这种情况下，“p”（段落）被称为“选择器（selector）”：这是 CSS 代码中指定 CSS 样式将影响哪个 HTML 元素的部分。在 CSS 中，选择器写在第一个键的左侧。大括号中的信息被称为“声明（declaration）”。它包含了应用到选择器的属性（properties）和值（values）。属性是指字体大小、颜色和边距等内容，而值则是这些属性的设置值。在上面的示例中，“color”和“font-weight”是属性，而“pink”和“bold”是值。括号内的完整集合：
 
-```
+```css
+
 { color:pink; font-weight:bold; }
+
 ```
 
 是声明，再次，“p”（代表 HTML 段落）是选择器。同样的原理也可以应用于更改字体大小、背景颜色、边距缩进等。例如：
 
-```
+```css
+
 body { background-color: light blue; would make the background of the page light blue or
+
 p { font-size:20px; color:red; }
+
 ```
+
 将创建一个红色字母的 20 点字号段落。
 
 ### CSS 语法和结构的剖析
 
 那么，在上一章中，我们已经体验了使用 CSS 为 HTML 元素设置样式有多简单。那么，为什么它看起来是那样呢？在这里，我们将解释 CSS 的结构和语法，以更好地理解它是如何工作的。让我们来看看这些针对 H1 元素的 CSS 代码示例：
 
-```
+```css
+
 h1 {
+
 color: Blue;
+
 }
+
 ```
 
-这是一个带有属性和值的选择器——这些是 CSS 的核心概念，你应该在阅读本节时尝试记住它们的名称。因此在这个示例中，h1 是选择器的名称，color 是属性，Blue 是值。
+这是一个带有属性和值的选择器——这些是 CSS 的核心概念，你应该在阅读本节时尝试记住它们的名称。因此在这个示例中，`h1` 是选择器的名称，`color` 是属性，`Blue` 是值。
 
 在这三个概念中，你可以看到各种特殊字符。属性和值周围有大括号，有一个冒号分隔属性和值，值后面有一个分号。每种字符都让浏览器更容易分析和理解你的 CSS 代码：
 
@@ -1140,41 +1136,58 @@ CSS 选择器用于选择 HTML 页面上匹配选择器中描述模式的元素�
 
 通用选择器由符号 `*` 表示。它影响文档树中的所有元素。
 
-```
+```css
+
 * {
+
   color: purple;
+
 }
-```
-
-这会更改 HTML 文档中所有元素的颜色，无论是段落、h1、h4 还是列表。`*` 也用于定位特定元素的所有值。
 
 ```
+
+这会更改 HTML 文档中所有元素的颜色，无论是段落、`h1`、`h4` 还是列表。`*` 也用于定位特定元素的所有值。
+
+```css
+
 *h1 {
+
   text-transform: uppercase;
+
 }
+
 ```
 
-这将仅将 h1 元素的值更改为大写。其他元素不会受到影响。
+这将仅将 `h1` 元素的值更改为大写。其他元素不会受到影响。
 
 ### 元素选择器
 
 这是最常见的选择器，涉及在定义特定元素时定位其成员。
 
-```
+```css
+
 p{
+
   font-style: italic;
+
 }
+
 ```
+
 这把它们变为*斜体*。
 
 ### 后代选择器
 
 后代选择器是另一个元素的子。
 
-```
+```css
+
 nav > li {
+
 list-style: none;
+
 }
+
 ```
 
 ### CSS 属性
@@ -1190,41 +1203,58 @@ CSS 属性是应用到选择器的样式。它们写在冒号之前。这里是�
 
 通用选择器由符号 `*` 表示。影响文档树的所有元素。
 
-```
+```css
+
 * {
+
   color: purple;
+
 }
-```
-
-更改 HTML 文档中所有元素的颜色，无论是段落、h1、h4 还是列表。`*` 也用于定位特定元素的所有值。
 
 ```
+
+更改 HTML 文档中所有元素的颜色，无论是段落、`h1`、`h4` 还是列表。`*` 也用于定位特定元素的所有值。
+
+```css
+
 *h1 {
+
   text-transform: uppercase;
+
 }
+
 ```
 
-这将将 h1 元素的值更改为大写。其他元素不会受到影响。
+这将将 `h1` 元素的值更改为大写。其他元素不会受到影响。
 
 ### 元素选择器
 
 这是最常见的选择器，涉及在定义特定元素时定位其成员。
 
-```
+```css
+
 p{
+
   font-style: italic;
+
 }
+
 ```
+
 这把它们变为*斜体*。
 
 ### 后代选择器
 
 后代选择器是另一个元素的子。
 
-```
+```css
+
 nav > li {
+
 list-style: none;
+
 }
+
 ```
 
 ### CSS 属性
@@ -1240,40 +1270,37 @@ CSS 属性是应用到选择器的样式。它们写在冒号之前。这里有�
 
 | 属性 | 值 | 描述 |
 | --- | --- | --- |
-| font | font-style, font-variant, font-weight, font-size/line-height, font-family, caption, icon, message-box, small-caption, status-bar, inherit | 设置字体的简写 |
-| font-weight | normal, bold, lighter, 100, 200, 300, 400, 500, 600, 700, 800, 900, inherit | 设置字体粗重 |
-| font-style | normal, italic, oblique, inherit | 设置字体的样式 |
+| `font` | `font-style`, `font-variant`, `font-weight`, `font-size/line-height`, `font-family`, `caption`, `icon`, `message-box`, `small-caption`, `status-bar`, `inherit` | 设置字体的简写 |
+| `font-weight` | `normal`, `bold`, `lighter`, `100`, `200`, `300`, `400`, `500`, `600`, `700`, `800`, `900`, `inherit` | 设置字体粗重 |
+| `font-style` | `normal`, `italic`, `oblique`, `inherit` | 设置字体的样式 |
 
 ### 列表属性
 
 | 属性 | 值 | 描述 |
 | --- | --- | --- |
-| list-style | list-style-type, list-style-position, list-style-image, inherit | list-style-type, list-style-position 和 list-style-image 的简写组合 |
-| list-image | none, url, inherit | 将图像设置为列表标记 |
-| list-style-type | none, disc, circle, square, decimal-leading-zero, armenian, georgian, lower-alpha, upper-alpha, lower-greek, lower-latin, upper-latin, lower-roman, upper-roman, inherit | 设置列表标记类型 |
+| `list-style` | `list-style-type`, `list-style-position`, `list-style-image`, `inherit` | `list-style-type`, `list-style-position` 和 `list-style-image` 的简写组合 |
+| `list-image` | `none`, `url`, `inherit` | 将图像设置为列表标记 |
+| `list-style-type` | `none`, `disc`, `circle`, `square`, `decimal-leading-zero`, `armenian`, `georgian`, `lower-alpha`, `upper-alpha`, `lower-greek`, `lower-latin`, `upper-latin`, `lower-roman`, `upper-roman`, `inherit` | 设置列表标记类型 |
 
 ### 文本属性
 
 | 属性 | 值 | 描述 |
 | --- | --- | --- |
-| color | Hex, RGB, keyword | 设置文本颜色 |
-| text-transform | uppercase, lowercase, capitalize, none | 设置文本的大小写形式 |
-| text-align | right, left, center, justify | 设置屏幕上的文本对齐 |
-| letter-spacing | normal, length | 设置字符间的间距 |
-| text-decoration | none, underline, line-through, overline | 设置添加到文本的装饰 |
+| `color` | `Hex`, `RGB`, `keyword` | 设置文本颜色 |
+| `text-transform` | `uppercase`, `lowercase`, `capitalize`, `none` | 设置文本的大小写形式 |
+| `text-align` | `right`, `left`, `center`, `justify` | 设置屏幕上的文本对齐 |
+| `letter-spacing` | `normal`, `length` | 设置字符间的间距 |
+| `text-decoration` | `none`, `underline`, `line-through`, `overline` | 设置添加到文本的装饰 |
 
 ## 边框属性
 
-
-
-
 | 属性 | 值 | 描述 |
 | --- | --- | --- |
-| border | border-width, border-style, border-color | 设置 border-width、border-style 和 border-color 的简写组合 |
-| border-color | 关键字, RGB, Hex, transparent, inherit | 设置边框颜色 |
-| border-radius | length, percentage, initial, inherit | 设置元素边框四个角的圆半径 |
-| border-style | none, hidden, dotted, solid, dashed, double, groove, inset, outset, ridge, initial, inherit | 设置元素边框样式 |
-| border-image | border-image-source, border-image-width, border-image-slice, border-image-repeat, border-image-outset, initial, inherit | 将图像作为元素的边框 |
+| `border` | `border-width`, `border-style`, `border-color` | 设置 `border-width`、`border-style` 和 `border-color` 的简写组合 |
+| `border-color` | 关键字, `RGB`, `Hex`, `transparent`, `inherit` | 设置边框颜色 |
+| `border-radius` | `length`, `percentage`, `initial`, `inherit` | 设置元素边框四个角的圆半径 |
+| `border-style` | `none`, `hidden`, `dotted`, `solid`, `dashed`, `double`, `groove`, `inset`, `outset`, `ridge`, `initial`, `inherit` | 设置元素边框样式 |
+| `border-image` | `border-image-source`, `border-image-width`, `border-image-slice`, `border-image-repeat`, `border-image-outset`, `initial`, `inherit` | 将图像作为元素的边框 |
 
 ### 使用内联、内部和外部 CSS
 
@@ -1290,12 +1317,19 @@ CSS 属性是应用到选择器的样式。它们写在冒号之前。这里有�
 让我们来看一个例子。在这里，为 `<p>` 和 `<h1>` 标签添加内联 CSS：（图 4.1）
 
 ```html
+
 <html
+
 <body style="background-color:black;">
+
 <h1 style="color:white;padding:30px;">Inline CSS</h1>
+
 <p style="color:white;">这里有一些有用的内容。</p>
+
 </body>
+
 </html>
+
 ```
 
 ![](img/6dfe767126857d06708c3e3f536f3e6c_124_0.png)
@@ -1314,13 +1348,21 @@ CSS 属性是应用到选择器的样式。它们写在冒号之前。这里有�
 - 在新行添加 CSS 规则。这里有一个示例：
 
 ```css
+
 body {
+
   background-color: blue;
+
 }
+
 h1 {
+
   color: red;
+
   padding: 60px;
+
 }
+
 ```
 
 - 输入闭合标签：
@@ -1337,26 +1379,36 @@ h1 {
 - 使用文本编辑器创建一个新的 `.css` 并添加样式规则。例如：
 
 ```css
+
 xleftcol {
+
   float: left;
+
   width: 33%;
+
   background:#809900;
+
 }
+
 ```
 
 ```css
+
 xmiddlecol {
+
   float: left;
+
   width: 34%;
+
   background:#eff2df;
+
 }
-```
 
-- 在你的 HTML 表格的 `<head>` 部分，在 `<title>` 标签之后添加添加你的文件 `.css` ：
-- `<link rel="stylesheet" type="text/css" href="style.css" />`
-- 不要忘记将 `style.css` 替换为你的 `name.css` 文件
 
-### 类 (Class) 与 ID
+
+在你的 HTML 表格的`<head>`部分，在`<title>`标签之后添加你的`.css`文件：`<link rel="stylesheet" type="text/css" href="style.css" />`。不要忘记将`style.css`替换为你的`name.css`文件。
+
+### 类（Class）与 ID
 
 在比较 CSS 类和 ID 时，区别在于类可以将样式应用于多个元素。相反，ID 将样式应用于单个元素。ID 也是唯一的，因为特定的 URL 可以直接链接到 JavaScript 使用的元素。
 
@@ -1370,78 +1422,73 @@ xmiddlecol {
 
 ### CSS 选择器
 
-在设计网页时，某些样式应该应用于页面的特定元素。例如，你可以将所有 `<p>` 标签的文本设置为绿色，或更改标题的字体大小。
+在设计网页时，某些样式应该应用于页面的特定元素。例如，你可以将所有`<p>`标签的文本设置为绿色，或更改标题的字体大小。
 
 选择器允许你定位网页上的特定元素，并对这些元素应用样式。如前所述，CSS 中有许多选择器，如通用选择器、后代选择器、子选择器和分组选择器。
 
 两种选择器，ID 和类被用于修饰元素。（注：原文中此处存在大量重复段落，译文已根据逻辑流处理）。
 
-
-
-
-
-在此代码中，我们为包含文本 "Section 3" 的 `<h3>` 标签分配了一个 ID。现在我们可以向访问者发送直接链接，将他们引导到网页上的该元素。这是通过以下 URL 实现的：
+在此代码中，我们为包含文本 "Section 3" 的`<h3>`标签分配了一个 ID。现在我们可以向访问者发送直接链接，将他们引导到网页上的该元素。这是通过以下 URL 实现的：
 
 ```
 https://domain.com/index.html#section
 ```
 
-用户访问此 URL（其中 domain.com 是您网站的 URL）时，他们会滚动到 ID 为 `section` 的标题。此行为不适用于类（classes）。
+用户访问此 URL（其中`domain.com`是您网站的 URL）时，他们会滚动到 ID 为`section`的标题。此行为不适用于类（classes）。
 
 ### ID 被 JavaScript 使用
 
-如果你对 JavaScript 比较熟悉，就会知道标识符在这一编程语言中非常常用。例如，`getElementById` 函数允许你选择网页上的某个元素。它的依据是这样一个事实：页面中只有一个项目可以共享相同的 ID。
+如果你对 JavaScript 比较熟悉，就会知道标识符在这一编程语言中非常常用。例如，`getElementById`函数允许你选择网页上的某个元素。它的依据是这样一个事实：页面中只有一个项目可以共享相同的 ID。
 
-相反，类（classes）可以反映网页上的多个元素。如果你想在 JavaScript 中处理某个特定的元素，类将无于事。
+相反，类（classes）可以反映网页上的多个元素。如果你想在 JavaScript 中处理某个特定的元素，类将无济于事。
 
 ### 你可以同时利用 ID 和 CSS 类选择器
 
 HTML 中没有规则阻止你为一个元素分配 ID 和类。
 
-假设我们想对 `<div>` 标签应用与名为 `backgroundOrange` 的相关的样式。然而，你还想给该 `<div>` 应用唯一的样式。你可以使用以下代码实现：
+假设我们想对`<div>`标签应用与名为`backgroundOrange`的相关的样式。然而，你还想给该`<div>`应用唯一的样式。你可以使用以下代码实现：
 
 ```
 <div class="backgroundOrange" id="customDiv"></div>
 ```
 
-此 `<div>` 标签受 `backgroundOrange` 类样式的约束。它还将利用 ID 选择器应用到 `customDiv` ID 的样式。
+此`<div>`标签受`backgroundOrange`类样式的约束。它还将利用 ID 选择器应用到`customDiv` ID 的样式。
 
 ## CSS display 属性
 
-CSS `display` 属性控制 HTML 元素在网页上的呈现方式。
+CSS`display`属性控制 HTML 元素在网页上的呈现方式。
 
 ### 行内元素与块级元素
 
 HTML 元素分为两大类：块级元素（block elements）和行内元素（inline elements）。
 
-块元素（`<div>`, `<p>`, `<h1>` 等）始终尽可能向两侧延伸并在新行开始。
+块元素（`<div>`, `<p>`, `<h1>`等）始终尽可能向两侧延伸并在新行开始。
 
-行内元素（`<span>`, `<img>`, `<a>` 等）只占据它们所需的空间。它们不需要在新行上开始。
+行内元素（`<span>`, `<img>`, `<a>`等）只占据它们所需的空间。它们不需要在新行上开始。
 
 ### 使用 display 属性
 
-使用 CSS `display` 属性，你可以手动指定元素应该使用的容器类型：
+使用 CSS`display`属性，你可以手动指定元素应该使用的容器类型：
 
 ```css
 p.inline {
-display: inline;
+  display: inline;
 }
 ```
-语法非常直观；
-display: value;
-```
+
+语法非常直观；`display: value;`
 
 ### inline
 
-以下是设为 `display:inline` 元素的一些特征：
+以下是设为`display:inline`元素的一些特征：
 
 - 元素只占据必要的空间。
 - 它们在同一行上并排出现。
 - 缺点是，无法控制行内元素的高度和宽度属性。
-- `display: inline` 忽略内边距（padding）和外边距（margin）设置。
+- `display: inline`忽略内边距（padding）和外边距（margin）设置。
 - 只能包含内置元素。
 
-此示例显示了同一行上的多个 `<span>` 元素的样式：
+此示例显示了同一行上的多个`<span>`元素的样式：
 
 ```html
 <span style="background-color:red;">我是一个元素。</span>
@@ -1450,7 +1497,7 @@ display: value;
 <span>我们都在同一行内！</span>
 ```
 
-通过配置 `display:inline`，也可以将块级元素显示在同一行内。此示例覆盖了默认的 `<li>` 标签设置，并将它们显示在单行内：（图 4.3）
+通过配置`display:inline`，也可以将块级元素显示在同一行内。此示例覆盖了默认的`<li>`标签设置，并将它们显示在单行内：（图 4.3）
 
 ```css
 li {
@@ -1458,7 +1505,7 @@ li {
 }
 ```
 
-对此 `<span>` 元素也发生了相同的默认设置覆盖：
+对此`<span>`元素也发生了相同的默认设置覆盖：
 
 ```css
 span {
@@ -1486,7 +1533,7 @@ span {
 
 ### inline-block
 
-CSS `inline-block` 是行内和块级功能的结合。主要区别是行内块对宽度和高度属性有响应。
+CSS`inline-block`是行内和块级功能的结合。主要区别是行内块对宽度和高度属性有响应。
 
 ```css
 div {
@@ -1500,11 +1547,11 @@ div {
 }
 ```
 
-这一特性使得 CSS `display: inline-block` 更适合创建布局。使用 `inline-block` 元素最流行的方法之一是创建水平导航菜单。
+这一特性使得 CSS`display: inline-block`更适合创建布局。使用`inline-block`元素最流行的方法之一是创建水平导航菜单。
 
 ### 隐藏元素：display 或 visibility
 
-`display: none` 和 `visibility: hidden` 在使用上有一个区别。在下面的示例中，我们使用 `display: none` 隐藏了一个元素。
+`display: none`和`visibility: hidden`在使用上有一个区别。在下面的示例中，我们使用`display: none`隐藏了一个元素。
 
 ```css
 div {
@@ -1522,7 +1569,7 @@ div {
 }
 ```
 
-设为 `display: none` 的 `<div>` 消失了。设置为 `visibility: hidden` 的 `<div>` 保留了空间。这是 `visibility: hidden` 和 `display: none` 的主要区别。
+设为`display: none`的`<div>`消失了。设置为`visibility: hidden`的`<div>`保留了空间。这是`visibility: hidden`和`display: none`的主要区别。
 
 ```css
 div {
@@ -1540,13 +1587,13 @@ div {
 
 ## CSS position 属性
 
-CSS `position` 属性定义了元素在页面上的放置方式。
+CSS`position`属性定义了元素在页面上的放置方式。
 
 ### 值
 
 ### static
 
-元素在标准流中放置。`top`, `right`, `bottom`, `left` 属性无效。这是默认值。
+元素在标准流中放置。`top`, `right`, `bottom`, `left`属性无效。这是默认值。
 
 ```css
 position: static;
@@ -1554,12 +1601,12 @@ position: static;
 
 ### relative
 
-元素根据 `top`, `right`, `bottom`, `left` 值相对于自身移动。当 `z-index` 为自动时，此值创建一个新的上下文。
+元素根据`top`, `right`, `bottom`, `left`值相对于自身移动。当`z-index`为自动时，此值创建一个新的上下文。
 
 ```css
 position: relative;
-  top: 20px;
-  left: 20px;
+top: 20px;
+left: 20px;
 }
 ```
 
@@ -1577,24 +1624,22 @@ positioned {
 
 ### CSS font-style
 
-CSS `font-style` 属性定义了字体是否应该使用字体族中的普通、斜体或倾斜字体。斜体通常是斜体字，使用的水平空间通常较少。相比之下，倾斜字体是常规字体的倾斜版本。
+CSS`font-style`属性定义了字体是否应该使用字体族中的普通、斜体或倾斜字体。斜体通常是斜体字，使用的水平空间通常较少。相比之下，倾斜字体是常规字体的倾斜版本。
 
 当指定的样式不可用时，通过人工扭曲常规字形来模拟斜体和倾斜字体（使用字符合成来控制此行为）。
 
-`font-style` 属性表示为从下方值列表中选择的单个关键字，在不对称的情况下整合一个角度。
+`font-style`属性表示为从下方值列表中选择的单个关键字，在不对称的情况下整合一个角度。
 
 ### 值
 
-- Normal: 从字体族中选择分类为普通的字体。
-- Italics: 选择分类为斜体的字体。如果没有斜体版本的字体，则使用分类为倾斜的版本。如果一个都不存在，则人工模拟该样式。
-- Oblique: 选择分类为倾斜的字符。如果没有倾斜版本的字体，则使用斜体版本。如果一个都不存在，则人工模拟该样式。
-- oblique <angle>: 选择一个倾斜字符并为文本倾斜指定角度。然而，如果所选字体族中至少有一个倾斜字体，则选择最接近指定角度的一个。
+- **Normal**: 从字体族中选择分类为普通的字体。
+- **Italics**: 选择分类为斜体的字体。如果没有斜体版本的字体，则使用分类为倾斜的版本。如果一个都不存在，则人工模拟该样式。
+- **Oblique**: 选择分类为倾斜的字符。如果没有倾斜版本的字体，则使用斜体版本。如果一个都不存在，则人工模拟该样式。
+- **oblique <angle>**: 选择一个倾斜字符并为文本倾斜指定角度。然而，如果所选字体族中至少有一个倾斜字体，则选择最接近指定角度的一个。
 
-如果没有可用的倾斜字体，浏览器将通过按指定的量倾斜常规字体来合成一个倾斜版本。有效值是在 -90deg 到 90deg 之间的角度值。如果没有选择角度，将使用 14 度。
+如果没有可用的倾斜字体，浏览器将通过按指定的量倾斜常规字体来合成一个倾斜版本。有效值是在`-90deg`到`90deg`之间的角度值。如果没有选择角度，将使用`14`度。
 
-
-
-对于 14 度或更大的要求的角度，优选择较大的角度；否则，则优选择较小的角度。
+对于`14`度或更大的要求的角度，优选择较大的角度；否则，则优选择较小的角度。
 
 ## CSS 网络安全字体
 
@@ -1604,11 +1649,11 @@ CSS `font-style` 属性定义了字体是否应该使用字体族中的普通、
 
 有时，你尝试在网页上使用的字体可能无法按预期显示，因为并不是所有的字体在每台计算机上都可用。
 
-为了确保你的文本在大多数浏览器或操作系统上准确渲染，你必须仔细设置字体。`font-family` 的 CSS 属性可以包含多个字体名称作为备用系统。从你想要的字体开始，然后如果该字体不可用，可以使用你可能想要填充的字体。
+为了确保你的文本在大多数浏览器或操作系统上准确渲染，你必须仔细设置字体。`font-family`的 CSS 属性可以包含多个字体名称作为备用系统。从你想要的字体开始，然后如果该字体不可用，可以使用你可能想要填充的字体。
 
-你始终应该以通用字体族结束列表，共有五种：serif（衬线体）、sans-serif（无衬线体）、monospace（等宽字体）、cursive（草书）和 fantasy（装饰字体）。通用字体族允许浏览器在你定义的所有字体不可用时选择类似的字体。
+你始终应该以通用字体族结束列表，共有五种：`serif`（衬线体）、`sans-serif`（无衬线体）、`monospace`（等宽字体）、`cursive`（草书）和`fantasy`（装饰字体）。通用字体族允许浏览器在你定义的所有字体不可用时选择类似的字体。
 
-以下示例显示了如何正确设置 `font-family` 属性。（图 4.4）
+以下示例显示了如何正确设置`font-family`属性。（图 4.4）
 
 ```html
 <!DOCTYPE html>
@@ -1618,13 +1663,13 @@ CSS `font-style` 属性定义了字体是否应该使用字体族中的普通、
 <title>Example of CSS Web Fonts</title>
 <style>
 .sans-serif-font {
-font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
 .serif-font {
-font-family: "Times New Roman", Times, serif;
+  font-family: "Times New Roman", Times, serif;
 }
 .monospace-font {
-font-family: "Courier New", Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
 }
 </style>
 </head>
@@ -1651,22 +1696,22 @@ font-family: "Courier New", Courier, monospace;
 
 ## CSS浮动与清除
 
-CSS `float` 属性规定了元素如何浮动，而 CSS `clear` 属性指定了哪些元素可以浮在被浮动元素旁边以及在何一侧。
+CSS`float`属性规定了元素如何浮动，而 CSS`clear`属性指定了哪些元素可以浮在被浮动元素旁边以及在何一侧。
 
 ### float 属性
 
-`float` 属性用于定位和格式化内容；例如，它允许图像浮在容器内文本的左侧。
+`float`属性用于定位和格式化内容；例如，它允许图像浮在容器内文本的左侧。
 
-`float` 属性具有以下值之一：
+`float`属性具有以下值之一：
 
 - **left** - 元素浮动在其容器的左侧。
 - **right** - 元素浮动在其容器的右侧。
 - **none** - 元素不浮动（它将完全显示在文本中）。这是默认值。
-- **inherit** - 元素继承其父元素的 float 值。
+- **inherit** - 元素继承其父元素的`float`值。
 
-`float` 属性可以简单地用于让文本环绕图像。
+`float`属性可以简单地用于让文本环绕图像。
 
-示例：float left
+示例：`float left`
 
 ```css
 img {
@@ -1676,45 +1721,45 @@ img {
 
 ### clear 属性
 
-当我们使用 `float` 属性并希望下一个元素向下移动（而不是向右或向左）时，我们需要使用 `clear` 属性。
+当我们使用`float`属性并希望下一个元素向下移动（而不是向右或向左）时，我们需要使用`clear`属性。
 
-`clear` 属性指定了浮动元素旁边的元素应该发生什么。
+`clear`属性指定了浮动元素旁边的元素应该发生什么。
 
-`clear` 属性由以下值之一组成：
+`clear`属性由以下值之一组成：
 
 - **none** - 元素不放在左或右浮动元素下方。这是默认值。
 - **left** - 元素放置在左浮动元素下方。
 - **right** - 元素放置在右浮动元素下方。
 - **both** - 元素放置在左、右浮动元素下方。
-- **inherit** - 元素继承其父元素的 clear 值。
+- **inherit** - 元素继承其父元素的`clear`值。
 
-清除浮动时，你需要将 `clear` 与 `float` 匹配：如果一个项目浮动在左侧，你需要清除左侧。你的浮动项目将继续浮动，但被清除的项目将出现在网页的下方。
+清除浮动时，你需要将`clear`与`float`匹配：如果一个项目浮动在左侧，你需要清除左侧。你的浮动项目将继续浮动，但被清除的项目将出现在网页的下方。
 
-此示例清除了左侧的浮动。在这里这意味着 `<div>` 元素被放置在左浮动元素 `<div>1` 下方：（图 4.5）
+此示例清除了左侧的浮动。在这里这意味着`<div>`元素被放置在左浮动元素`<div>1`下方：（图 4.5）
 
 ```css
 div1
-d2 - 这里，clear: left; 将 div2 移动到浮动的 div1 下方。值 "left" 清除左侧浮动的元素。你也可以清除 "right" 和 "both"。
+d2 - 这里，`clear: left;` 将`div2`移动到浮动的`div1`下方。值 "left" 清除左侧浮动的元素。你也可以清除 "right" 和 "both"。
 ```
 
 ![](img/6dfe767126857d06708c3e3f536f3e6c_153_0.png)
 
 ```css
 div1 {
-float: left;
+  float: left;
 }
 div2 {
-clear: left;
+  clear: left;
 }
 ```
 
-## 清除浮技巧 (Clearfix Hack)
+## 清除浮动技巧 (Clearfix Hack)
 
 如果浮动元素比容器元素大，它将“溢出”其容器。我们可以添加一个 clearfix 技巧来解决这个问题：
 
 ```css
 .clearfix {
-overflow: auto;
+  overflow: auto;
 }
 ```
 
@@ -1722,9 +1767,9 @@ overflow: auto;
 
 ```css
 .clearfix::after {
-content: "";
-clear: both;
-display: table;
+  content: "";
+  clear: both;
+  display: table;
 }
 ```
 
@@ -1733,15 +1778,14 @@ display: table;
 本节包含测试你的 HTML 和 CSS 知识的编码练习。如果你只想测试其中一个主题而不是另一个，你也可以那样做。
 
 - 1. 改变（图 4.6）的颜色
+
 ![](img/6dfe767126857d06708c3e3f536f3e6c_155_0.png)
 
 - 2. (图 4.7)
+
 ![](img/6dfe767126857d06708c3e3f536f3e6c_156_0.png)
+
 ![](img/6dfe767126857d06708c3e3f536f3e6c_157_0.png)
-
-
-
-
 
 ```html
 src="js/jquery.js"></script>
@@ -1749,7 +1793,7 @@ src="js/jquery.js"></script>
 </html>
 ```
 
-**第 12 步:** 编写代码后，你需要将它们保存到 Bootstrap 文件中，例如 index.html。
+**第 12 步:** 编写代码后，你需要将它们保存到 Bootstrap 文件中，例如`index.html`。
 
 **第 13 步:** 保存文件后，双击该文件，HTML 将在浏览器中运行。
 
@@ -1779,30 +1823,38 @@ Bootstrap 网格系统利用一系列容器（containers）、行（rows）和�
 </div>
 ```
 
-上面的示例使用 `CSS grid content-centered` 类，在小、中、大和大超大设备上生成三个等宽的列。这些列与父容器保持内容居中。
+上面的示例使用`CSS grid content-centered`类，在小、中、大和大超大设备上生成三个等宽的列。这些列与父容器保持内容居中。
 
 简而言之，其工作原理如下：
 
-- 容器（Containers）提供了一种实例化并在水平方向填充你网站内容的方式。使用 `.container` 用于响应式像素宽度，或使用 `.container-fluid` 在所有窗口和设备尺寸下实现 100% 的宽度。
+- 容器（Containers）提供了一种实例化并在水平方向填充你网站内容的方式。使用`.container`用于响应式像素宽度，或使用`.container-fluid`在所有窗口和设备尺寸下实现 100% 的宽度。
 - 行（Rows）是列的外壳。每个列都有水平内边距，以控制它们之间的空间。这种填充在具有负边距的行上会被抵消。这样，你列中的所有内容在视觉上都会左侧对齐。
 - 在网格布局中，内容必须放在列内部，且只有列可以是行的直接子元素。
-- 得益于 flexbox，未指定宽度的网格列将自动排列成等宽列。例如，四个 `.col-sm` 示例从从小断点开始自动变为 25% 宽。
-- 列类表示了与每行 12 列的潜力相比，你想要使用多少列。因此，如果你需要三个等宽的列，可以使用 `.col-4`。
+- 得益于 flexbox，未指定宽度的网格列将自动排列成等宽列。例如，四个`.col-sm`示例从从小断点开始自动变为 25% 宽。
+
+
+
+- 列类表示了与每行 12 列的潜力相比，你想要使用多少列。因此，如果你需要三个等宽的列，可以使用`.col-4`。
+
 - 列宽以百分比设置，相对于父元素进行平滑缩放。
+
 - 列被水平填充以创建各个列之间的间距；然而，你可以通过以下方式移除行边距和列内边距
 
 - 为了使网格具有响应性，存在五个网格断点（breakpoints），每个对应一个响应式断点：所有断点（极小）、小、中、大、和大超大。
-- 断点网格点基于最小宽度媒体查询，这些适用于该断点以及所有上方断点。例如，`col-sm-4` 适用于小、中、大和大超大设备，但不可适用于第一个 `xs` 断点。
-- 你可以使用预定义的网格类（如 `.col-4`）或 Sass mixin 来实现更具语义化的标记。
+
+- 断点网格点基于最小宽度媒体查询，这些适用于该断点以及所有上方断点。例如，`col-sm-4`适用于小、中、大和大超大设备，但不可适用于第一个`xs`断点。
+
+- 你可以使用预定义的网格类（如`.col-4`）或 Sass mixin 来实现更具语义化的标记。
 
 ## Bootstrap 容器
 
-在 Bootstrap 中，容器（container）根据响应式布局的行为设置内容边距。它由行元素组成，而行元素是列的容器（称为网格系统）。此外，`container` 类用于创建箱式内容。
+在 Bootstrap 中，容器（container）根据响应式布局的行为设置内容边距。它由行元素组成，而行元素是列的容器（称为网格系统）。此外，`container`类用于创建箱式内容。
 
 Bootstrap 中有两类容器：
 
-- container
-- container-fluid
+- `container`
+
+- `container-fluid`
 
 注意容器的基础布局：
 
@@ -1859,7 +1911,7 @@ Font Awesome 是一个非常有用的图标库。这些图标可以是存储在 
 
 ### 用法
 
-要在你的应用中包含 Font Awesome，请在 `<head>` 中添加以下：
+要在你的应用中包含 Font Awesome，请在`<head>`中添加以下：
 
 ```html
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -1885,7 +1937,7 @@ JavaScript 提供了几个内置函数用于显示不同目的弹出消息。例
 
 ### alert
 
-使用 `alert( )` 函数为用户显示弹出消息。此弹出窗口将有一个确定按钮来关闭它。这我们已经看过了。显示消息并等待用户按下“确定”。图 6.1）
+使用`alert()`函数为用户显示弹出消息。此弹出窗口将有一个确定按钮来关闭它。这我们已经看过了。显示消息并等待用户按下“确定”。图 6.1）
 
 例如：
 
@@ -1899,36 +1951,31 @@ alert("Hello");
 
 ![](img/6dfe767126857d06708c3e3f536f3e6c_174_0.png)
 
-
-
-
-
 ### prompt
 
-有时候可能需要获取用户输入以在网页上执行其他操作。例如，你想根据用户偏好的贷款期限计算 EMI（等额额）。在这种情况下，使用内置的 JavaScript 函数 `prompt()`。
+有时候可能需要获取用户输入以在网页上执行其他操作。例如，你想根据用户偏好的贷款期限计算 EMI（等额额）。在这种情况下，使用内置的 JavaScript 函数`prompt()`。
 
-`prompt` 函数接受两个字符串参数。第一个参数是要显示的消息。第二个参数是消息显示时文本输入框中的默认值。
+`prompt`函数接受两个字符串参数。第一个参数是要显示的消息。第二个参数是消息显示时文本输入框中的默认值。
 
-result = prompt(title, [default]);
+`result = prompt(title, [default]);`
 
 显示一个模态窗口，其中包含文本消息、访问者的输入字段以及 OK/取消按钮。（见图 6.2）
 
-```
+```html
 <!DOCTYPE html>
 <script>
 "use strict";
 let age = prompt('How old are you?', 40);
 alert(`You are ${age} years old!`); // You are 40 years old!
-```
-
-```
 </script>
 ```
 
 此页面显示：
+
 你多大了？
 
 | | 40 |
+
 | OK 取消 |
 
 ![](img/6dfe767126857d06708c3e3f536f3e6c_176_0.png)
@@ -1941,24 +1988,21 @@ alert(`You are ${age} years old!`); // You are 40 years old!
 result = confirm(question);
 ```
 
-`confirm` 函数会显示一个模态窗口，其中包含一个问题两个按钮（OK 和 取消）。如果点击 OK 则输出 true，否则输出 false。
+`confirm`函数会显示一个模态窗口，其中包含一个问题两个按钮（OK 和 取消）。如果点击 OK 则输出 true，否则输出 false。
 
 例如：（见图 6.3）
 
-```
+```html
 <!DOCTYPE html>
 <script>
 "use strict";
-let isBoss = confirm("Are you the
-```
-
-```
-boss?");
+let isBoss = confirm("Are you the boss?");
 alert( isBoss ); // true if OK is pressed
 </script>
 ```
 
 此页面显示：
+
 你是老板吗？
 
 ![](img/6dfe767126857d06708c3e3f536f3e6c_0.png)
@@ -1969,7 +2013,7 @@ alert( isBoss ); // true if OK is pressed
 
 变量是所有编程语言的基础。变量用于存储数据，例如字符串、数字等。变量的数据可以被配置、更新和检索。通常，变量是值的符号。
 
-你可以使用 `var` 关键字来决定变量，而赋值运算符 (=) 用于给变量赋值。
+你可以使用`var`关键字来决定变量，而赋值运算符 (=) 用于给变量赋值。
 
 示例
 
@@ -1985,7 +2029,7 @@ var isLoggedIn = true;
 
 示例
 
-```
+```javascript
 // 如何声明变量
 var userName;
 userName = "Clark";
@@ -2005,16 +2049,20 @@ var name = "James", age = 40, isMarried = false;
 以下是命名规则：
 
 - 变量名不能以数字开头。
+
 - 变量名必须以字母、下划线 (_) 或美元符号 ($) 开头。
+
 - 变量名只能包含字母 (A-z, 0-9) 和下划线。
+
 - 变量名不能是 JavaScript 关键字或保留字。
+
 - 变量名不能包含空格。
 
 # let 和 const 关键字
 
-ES6 引入了两个关键字 `let` 和 `const` 来声明变量。`const` 关键字的工作方式与 `let` 完全相同，区别在于使用 `const` 声明的变量不能被重新赋值。这是一个示例：
+ES6 引入了两个关键字`let`和`const`来声明变量。`const`关键字的工作方式与`let`完全相同，区别在于使用`const`声明的变量不能被重新赋值。这是一个示例：
 
-```
+```javascript
 // 声明变量
 let name = "Harry Potter";
 let age = 11;
@@ -2026,7 +2074,7 @@ console.log(PI); // 3.14
 PI = 10; // error
 ```
 
-与声明函数作用域的 `var` 不同，`let` 和 `const` 声明块作用域变量 ({})。块作用域意味着在大括号之间创建一个范围。
+与声明函数作用域的`var`不同，`let`和`const`声明块作用域变量 ({})。块作用域意味着在大括号之间创建一个范围。
 
 数据类型指定程序中可以存储和处理的数据类型。六种基础 JavaScript 数据类型分为三大类：原始（基本）、复合（引用）和唯一类型。Number、String 和 Boolean 是原始类型。Array、object 和 function（都是对象类型）是复合类型。
 
@@ -2042,7 +2090,7 @@ let name = 'World';
 let message = `${greeting}, ${name}`;
 ```
 
-字符串可以使用 `+` 运算符或模板字符串进行拼接。
+字符串可以使用`+`运算符或模板字符串进行拼接。
 
 ```javascript
 let fullName = "John" + " " + "Doe";
@@ -2082,7 +2130,9 @@ let remainder = 10 % 3; // 1
 JavaScript 还有特殊的数值值：
 
 - Infinity：除以零的结果。
+
 - -Infinity：负数除以零的结果。
+
 - NaN (Not-a-Number)：无效数学运算的结果。
 
 ```javascript
@@ -2106,8 +2156,6 @@ console.log(a > b); // false
 console.log(a < b); // true
 console.log(a === b); // false
 ```
-
-
 
 下面的示例将向你展示如何在 JavaScript 中创建对象的最简单方法。
 
@@ -2135,7 +2183,7 @@ door: 4
 
 ## 数组数据类型
 
-数组是一种对象类型，用于在一个变量中存储多个值。数组中的每个值（也称为元素）都有一个数字位置，称为索引（index），可以存储任何类型的数据：数字、字符串、布尔值、函数、对象甚至其他数组。数组索引从零开始，因此数组的第一个元素是 `arr[0]`，而不是 `arr[1]`。
+数组是一种对象类型，用于在一个变量中存储多个值。数组中的每个值（也称为元素）都有一个数字位置，称为索引（index），可以存储任何类型的数据：数字、字符串、布尔值、函数、对象甚至其他数组。数组索引从零开始，因此数组的第一个元素是`arr[0]`，而不是`arr[1]`。
 
 创建数组的最佳方法是将数组元素指定为逗号分隔的列表，并封装在方括号中，如下例所示所示：
 
@@ -2184,17 +2232,21 @@ Peter
 
 当你需要重复执行同一代码块时，只要满足特定条件就会使用循环。循环背的思想是自动化计划内的重复任务，以节省时间和精力。JavaScript 现在允许五种类型的循环：
 
-- while - 循环代码块，直到指定的条件评估为真（true）。
-- do... while - 执行一次代码块；然后评估条件。如果条件为真，则只要指定的条件为真，语句就会重复执行。
-- for - 迭代代码块，直到计数器达到指定的数字。
-- for... in - 遍历对象的属性。
-- for ... of - 运行可迭代对象（如数组、字符串等）的循环。
+- `while` - 循环代码块，直到指定的条件评估为真（true）。
+
+- `do... while` - 执行一次代码块；然后评估条件。如果条件为真，则只要指定的条件为真，语句就会重复执行。
+
+- `for` - 迭代代码块，直到计数器达到指定的数字。
+
+- `for... in` - 遍历对象的属性。
+
+- `for ... of` - 运行可迭代对象（如数组、字符串等）的循环。
 
 ### while 循环
 
 这是 JavaScript 提供的最简单的循环语句。它循环一段代码，直到指定的条件评估为真。一旦条件失败，循环就会停止。
 
-while 循环的语法是：
+`while`循环的语法是：
 
 ```javascript
 while (condition) {
@@ -2202,7 +2254,7 @@ while (condition) {
 }
 ```
 
-下面的示例定义了一个循环，只要变量 `a` 小于或等于 6，循环就会继续运行。变量 `a` 在每次循环运行时增加 1：
+下面的示例定义了一个循环，只要变量`a`小于或等于 6，循环就会继续运行。变量`a`在每次循环运行时增加 1：
 
 ```javascript
 var a = 1;
@@ -2217,21 +2269,23 @@ while(a <= 5) {
 
 The number is 1
 
+
+
 ![](img/6dfe767126857d06708c3e3f536f3e6c_193_0.png)
 
-The number is 2
+`The number is 2`
 
-The number is 3
+`The number is 3`
 
-The number is 4
+`The number is 4`
 
-The number is 5
+`The number is 5`
 
-**注意：** 确保循环中指定的条件最终变为假。否则，循环将永远停止迭代，这被称为无限循环。一个常见的错误是忘记增加计数器变量（在我们例中是变量 `i`）。
+**注意：** 确保循环中指定的条件最终变为假。否则，循环将永远停止迭代，这被称为无限循环。一个常见的错误是忘记增加计数器变量（在我们例中是变量`i`）。
 
-**do ... while 循环**
+## do ... while 循环
 
-do-while 循环与 while 循环有所不同。它在循环每次迭代结束后评估条件。使用 do-while 循环，代码块执行一次，然后评估条件。如果条件为真，语句将重复执行，直到指定的条件评估为真。do-while 循环的通用语法为：
+`do-while`循环与`while`循环有所不同。它在循环每次迭代结束后评估条件。使用`do-while`循环，代码块执行一次，然后评估条件。如果条件为真，语句将重复执行，直到指定的条件评估为真。`do-while`循环的通用语法为：
 
 ```javascript
 do {
@@ -2240,7 +2294,7 @@ do {
 while(condition);
 ```
 
-下面的示例中的 JavaScript 代码定义了一个从 `a = 1` 开始的循环。它将打印输出并将变量 `a` 的值加 1。评估条件后，循环将继续运行，直到变量 `a` 小于 5。
+下面的示例中的 JavaScript 代码定义了一个从`a = 1`开始的循环。它将打印输出并将变量`a`的值加 1。评估条件后，循环将继续运行，直到变量`a`小于 5。
 
 ```javascript
 var a = 1;
@@ -2253,11 +2307,11 @@ do {
 
 ## while 和 do...while 循环的区别
 
-while 循环和 do...while 循环之间有一个重要的区别。while 循环在每次迭代开始时评估条件。如果条件为假，循环不会执行。do-while 循环在每次迭代结束后评估条件。使用 do-while 循环，代码块执行一次，即使条件为假。
+`while`循环和`do...while`循环之间有一个重要的区别。`while`循环在每次迭代开始时评估条件。如果条件为假，循环不会执行。`do-while`循环在每次迭代结束后评估条件。使用`do-while`循环，代码块执行一次，即使条件为假。
 
 ### for 循环
 
-for 循环多次重复一段代码。它特别适用于遍历数组。它的通用语法为：
+`for`循环多次重复一段代码。它特别适用于遍历数组。它的通用语法为：
 
 ```javascript
 for(initialization; condition; increment) {
@@ -2267,9 +2321,11 @@ for(initialization; condition; increment) {
 
 含义如下：
 
-- initialization（初始化）：在第一次执行前初始化计数器变量。
-- condition（条件）：在开始时评估。如果返回假，循环结束。
-- increment（递增）：每次循环执行时更新计数器的值。
+- `initialization`（初始化）：在第一次执行前初始化计数器变量。
+
+- `condition`（条件）：在开始时评估。如果返回假，循环结束。
+
+- `increment`（递增）：每次循环执行时更新计数器的值。
 
 下面的示例教你如何打印数组的每个元素或项目：
 
@@ -2286,9 +2342,9 @@ for(var a=0; a<fruits.length; a++) {
 
 ![](img/6dfe767126857d06708c3e3f536f3e6c_198_0.png)
 
-## for循环
+## for...in 循环
 
-这是一种特殊的循环类型，用于遍历对象的属性或数组的元素。for...in 循环的通用语法为：
+这是一种特殊的循环类型，用于遍历对象的属性或数组的元素。`for...in`循环的通用语法为：
 
 ```javascript
 for(variable in object) {
@@ -2296,7 +2352,7 @@ for(variable in object) {
 }
 ```
 
-for...in 循环中的计数器（变量）是一个字符串，而不是数字。它包含当前属性的名称或当前元素的元素索引。
+`for...in`循环中的计数器（`variable`）是一个字符串，而不是数字。它包含当前属性的名称或当前元素的元素索引。
 
 下面的示例让你了解如何遍历 JavaScript 对象的所有属性：
 
@@ -2323,15 +2379,11 @@ for(var a in fruits) {
 }
 ```
 
+**注意：** 不应使用`for-in`循环来遍历索引顺序重要的数组。最好使用带有数字索引的`for`循环。
 
-}
-```
+## for...of 循环
 
-**注意：** 不应使用 for-in 循环来遍历索引顺序重要的数组。最好使用带有数字索引的 for 循环。
-
-# for for ... of 循环
-
-ES6 引入了一种新的 for-of 循环，允许我们轻松地遍历数组或其他循环对象（例如字符串）。此外，循环内部的代码会针对迭代对象的每个项目执行一次。
+ES6 引入了一种新的`for-of`循环，允许我们轻松地遍历数组或其他循环对象（例如字符串）。此外，循环内部的代码会针对迭代对象的每个项目执行一次。
 
 下面的示例将让你了解如何使用此种循环来遍历数组和字符串（图 6.5）。
 
@@ -2339,8 +2391,9 @@ ES6 引入了一种新的 for-of 循环，允许我们轻松地遍历数组或�
 // looping over array
 let alphabet = ["u", "v", "w",
 "x", "y", "z"];
+
 for(let letter of alphabets) {
-console.log(alphabet); // u,v,w,x,y,z
+  console.log(alphabet); // u,v,w,x,y,z
 }
 ```
 
@@ -2366,9 +2419,9 @@ for(let character of greetings) {
 
 JavaScript 有三种主要类型的条件语句。
 
-- If 语句
-- If...Else 语句
-- If...Else If...Else 语句
+- `If`语句
+- `If...Else`语句
+- `If...Else If...Else`语句
 
 ### If 语句
 
@@ -2381,12 +2434,12 @@ if (condition)
 }
 ```
 
-如果你只想检查一个特定条件，可以使用 If 语句。
+如果你只想检查一个特定条件，可以使用`If`语句。
 
 请自己尝试一下（图 6.6）：
 
 ```html
-<html
+<html>
 <head>
 <title>IF Statements!!!</title>
 <script type="text/javascript">
@@ -2406,7 +2459,7 @@ adult <br />");
 ```
 
 此页面上的嵌入页面显示：
-Please enter your age
+`Please enter your age`
 
 ![](img/6dfe767126857d06708c3e3f536f3e6c_204_0.png)
 
@@ -2425,12 +2478,12 @@ else
 }
 ```
 
-如果必须发生两个条件并执行不同的代码set，则可以使用 If...Else 语句。
+如果必须发生两个条件并执行不同的代码集，则可以使用`If...Else`语句。
 
 请自己尝试一下：
 
 ```html
-<html
+<html>
 <head>
 <title>If...Else Statements!!!</title>
 <script type="text/javascript">
@@ -2447,7 +2500,7 @@ else
 </html>
 ```
 
-# If...Else If...Else 语句
+## If...Else If...Else 语句
 
 语法：
 
@@ -2466,12 +2519,12 @@ else
 }
 ```
 
-如果你想检查两个以上的条件，则可以使用 If...Else If...Else 语句。
+如果你想检查两个以上的条件，则可以使用`If...Else If...Else`语句。
 
 请自己尝试一下（图 6.7）：
 
 ```html
-<html
+<html>
 <head>
 <script type="text/javascript">
 var one = prompt("Enter the first number");
@@ -2479,11 +2532,11 @@ var two = prompt("Enter the second number");
 one = parseInt(one);
 two = parseInt(two);
 if (one == two)
-document.write(one + " is equal to " + two + " ".");
+document.write(one + " is equal to " + two + ".");
 else if (one<two)
-document.write(one + " is less than " + two + " ".");
+document.write(one + " is less than " + two + ".");
 else
-document.write(one + " is greater than " + two + " ".");
+document.write(one + " is greater than " + two + ".");
 </script>
 </head>
 <body>
@@ -2492,8 +2545,7 @@ document.write(one + " is greater than " + two + " ".");
 ```
 
 此页面显示：
-
-Enter the first number
+`Enter the first number`
 
 ![](img/6dfe767126857d06708c3e3f536f3e6c_208_0.png)
 
@@ -2507,15 +2559,15 @@ ECMA 代表欧洲计算机制造商协会（European Computer Manufacturers Asso
 
 - 算术表达式，返回一个数字。
 - 字符串表达式，返回字符串。
-- 布尔表达式，返回 true 或 false。
+- 布尔表达式，返回`true`或`false`。
 - 原始表达式，是最简单的表达式，可以是字面量、保留关键字或变量的引用。
 - 左值表达式，包括函数调用、属性访问和参数列表。
 
-为了构建更复杂的表达式，你可以使用运算符。算术运算符接受任何数值（字面量或变量）作为操作数，并返回单个数值。标准的算术运算符包括减法 (-)、加法 (+)、乘法 (*) 和除法 (/)。
+为了构建更复杂的表达式，你可以使用运算符。算术运算符接受任何数值（字面量或变量）作为操作数，并返回单个数值。标准的算术运算符包括减法（`-`）、加法（`+`）、乘法（`*`）和除法（`/`）。
 
 ### 字符串表达式
 
-这些表达式返回字符串，并通常使用连接运算符 + 来组合两个字符串值。
+这些表达式返回字符串，并通常使用连接运算符`+`来组合两个字符串值。
 
 ```javascript
 // 使用连接 '+' 号的字符串表达式
@@ -2523,48 +2575,45 @@ ECMA 代表欧洲计算机制造商协会（European Computer Manufacturers Asso
 // Hello World!
 ```
 
-注意，当值中至少有一个是字符串类型时，连接运算符 + 会隐式地将操作中的所有值转换为字符串。然后，将它们连接，返回另一个作为操作数并集的字符串。
+注意，当值中至少有一个是字符串类型时，连接运算符`+`会隐式地将操作中的所有值转换为字符串。然后，将它们连接，返回另一个作为操作数并集的字符串。
 
 ### 布尔表达式
 
-这些表达式返回 true 或 false，但通常使用逻辑运算符来生成更复杂的表达式。逻辑运算符 ||、&& 和 ! 执行布尔代数，并通常与
+这些表达式返回`true`或`false`，但通常使用逻辑运算符来生成更复杂的表达式。逻辑运算符`||`、`&&`和`!`执行布尔代数，并通常与关系运算符`<>`、`=>`、`<`、`==`、`===`配合使用。
 
+关系表达式始终求值为`true`或`false`，因此当这样使用时，`&&`运算符本身返回`true`或`false`。
 
-配合关系运算符 `<>`, `=>`, `<`, `==`, `===`。
-
-关系表达式始终求值为 `true` 或 `false`，因此当这样使用时，`&&` 运算符本身返回 `true` 或 `false`。
-
-```
+```javascript
 (9 > 2) && (2 + 4 === 6) // true
 false || (2 + 4 === 6) // true
 !true // false
 false && 'Heya' // false
 ```
 
-注意，`&&` 不需要其操作数为布尔值，因为所有的 JavaScript 值不是真即假。因此，产生假值的操作（false、null、undefined、0、-0、NaN 和 ""）返回 `false`。相比之下，所有其他值以及所有对象都是 `true`，并被求值为 `true`。
+注意，`&&`不需要其操作数为布尔值，因为所有的 JavaScript 值不是真即假。因此，产生假值的操作（`false`、`null`、`undefined`、`0`、`-0`、`NaN`和`""`）返回`false`。相比之下，所有其他值以及所有对象都是`true`，并被求值为`true`。
 
 ### 左侧表达式
 
 这些是赋值操作产生的左侧值。记住给左操作数赋值一个值，并且右操作数必须以某种方式解析为一个值。
 
-```
+```javascript
 let sum = 20 + 30;
 sum // 50
 ```
 
-此赋值是左侧表达式的典型示例，其中变量 `sum` 指向数值运算 `20 + 30` 返回的值，结果返回数字 `50`。
+此赋值是左侧表达式的典型示例，其中变量`sum`指向数值运算`20 + 30`返回的值，结果返回数字`50`。
 
 ### 如何识别表达式？
 
-了解代码中什么是表达式可以让你获得至关重要的信息。它告诉你哪些代码单元可以赋值给变量，并/或用在 JavaScript 期望需要值的地方。在 JavaScript 中，表达式（包括变量引用、函数调用和属性访问器）可以用任何任何需要值的地方。检查某个内容是否为表达式的一种方法是将该代码单元放置在期望值的地方，并检查是否显示任何错误。
+了解代码中什么是表达式可以让你获得至关重要的信息。它告诉你哪些代码单元可以赋值给变量，并/或用在 JavaScript 期望需要值的地方。在 JavaScript 中，表达式（包括变量引用、函数调用和属性访问器）可以用在任何需要值的地方。检查某个内容是否为表达式的一种方法是将该代码单元放置在期望值的地方，并检查是否显示任何错误。
 
-例如，`console.log()` 方法向控制台打印一个值并返回 `undefined`。这个预期的值可以被你正在测试的“代码单元”替换。如果该片段确实是一个表达式，它将在控制台上打印出结果值。否则，它将生成一个“Uncaught SyntaxError”错误。
+例如，`console.log()`方法向控制台打印一个值并返回`undefined`。这个预期的值可以被你正在测试的“代码单元”替换。如果该片段确实是一个表达式，它将在控制台上打印出结果值。否则，它将生成一个“Uncaught SyntaxError”错误。
 
-```
+```javascript
 console.log('Hello World!'); // 向控制台打印 'Hello World!' 并返回 undefined
 ```
 
-注意，`Hello World` 和 `console.log()` 都是表达式。然而，第一个，即字面量 `Hello World!` —— 仅仅求值并解析出一个字符串类型的值，然后被分类为字符串表达式。而后者，即 `console.log()` 方法，具有副作用（在屏幕上打印某些内容）并返回 `undefined` 值。具有副作用的表达式被称为**表达式语句**。
+注意，`Hello World`和`console.log()`都是表达式。然而，第一个，即字面量`Hello World!`——仅仅求值并解析出一个字符串类型的值，然后被分类为字符串表达式。而后者，即`console.log()`方法，具有副作用（在屏幕上打印某些内容）并返回`undefined`值。具有副作用的表达式被称为**表达式语句**。
 
 我有一个问题，表达式可以是语句的一部分吗？是的，它们可以，而且通常也是。所有作为语句的表达式被称为表达式语句。但在我们查看表达式语句之前，让我们先讨论 JavaScript 语句。
 
@@ -2572,7 +2621,7 @@ console.log('Hello World!'); // 向控制台打印 'Hello World!' 并返回 unde
 
 语句是排序任务的代码行。每个程序都由指令序列组成。
 
-这个定义意味着语句是任何表示要执行的操作的代码单元。因此，就像一本书有很多语句来讲述故事一样，每个程序也有一组语句来执行特定任务。这些指令通常以关键字开头，以分号 `;` 结束，或者包含在块语句 `{}` 中。
+这个定义意味着语句是任何表示要执行的操作的代码单元。因此，就像一本书有很多语句来讲述故事一样，每个程序也有一组语句来执行特定任务。这些指令通常以关键字开头，以分号`;`结束，或者包含在块语句`{}`中。
 
 此时，我们可以在表达式和语句之间做出一个重要的区分：表达式是针对值进行求值的，而语句是执行以发生某些事的。在 JavaScript 中，有三种方法“发生某事”：
 
@@ -2582,15 +2631,16 @@ console.log('Hello World!'); // 向控制台打印 'Hello World!' 并返回 unde
 
 ## 表达式语句
 
-“发生某事”的一种常见方法是求值具有副作用的表达式。我们在之前的示例中看到，具有副作用的表达式（如赋值和某些函数调用，如 `console.log("Hello world!")`）可以是语句，当它们成为语句时，被称为语句表达式。
+“发生某事”的一种常见方法是求值具有副作用的表达式。我们在之前的示例中看到，具有副作用的表达式（如赋值和某些函数调用，如`console.log("Hello world!")`）可以是语句，当它们成为语句时，被称为语句表达式。
 
 ### 赋值
 
 赋值是具有改变变量值副作用的表达式。
 
-```
+```javascript
 // 赋值表达式的示例。
 welcomeMessage = 'Hello' + name;
+
 // 递增 '++' 和递减 '--' 运算符。
 let counter = 0;
 counter++;
@@ -2601,13 +2651,13 @@ counter--;
 
 函数调用主要是表达式，但由于它们具有副作用，它们会改变程序或主机环境的状态。它们的行为也像语句，因此是另一种类型的表达式语句。使用没有副作用的函数没有意义，除非它们是更广泛的表达式或赋值表达式的一部分。例如，调用一个函数并简单丢弃其结果意义不大：
 
-```
+```javascript
 Math.pow (x, 2);
 ```
 
 更好的做法将其赋值给变量并在程序稍后复用它：
 
-```
+```javascript
 powerOfTwo = Math.pow (x, 2);
 ```
 
@@ -2615,22 +2665,16 @@ powerOfTwo = Math.pow (x, 2);
 
 正如名称所示，声明语句仅仅是定义新值（新变量、新函数以及新类和导入或导出声明）并为其命名。
 
-变量声明（如 `var`、`let` 和 `const`）以及用 `function` 关键字后跟名称函数声明（例如示例中的 `getValue`）属于这一类。它们没有发生太多事情，但它们为程序提供了结构，并在代码运行之前就已经被处理了。
+变量声明（如`var`、`let`和`const`）以及用`function`关键字后跟名称函数声明（例如示例中的`getValue`）属于这一类。它们没有发生太多事情，但它们为程序提供了结构，并在代码运行之前就已经被处理了。
 
-```
+```javascript
 // 变量声明示例
-```
-
-```
 let sum = 4 + 5 + 6;
 const sum = y + z;
 ```
 
-```
+```javascript
 // 命名函数示例
-```
-
-```
 function getValue(<expression>)
 {...}
 ```
@@ -2649,29 +2693,35 @@ JavaScript 是一种动态语言。你可以随时向对象绑定新属性，如
 <!DOCTYPE html>
 <html>
 <body>
-<h1>Demo: 将属性绑定到对象</h1>
+```
+
+
+
+# Demo: 将属性绑定到对象
+
+```html
 <script>
 function Student() {
-this.name = 'John';
-this.gender = 'M';
+  this.name = 'John';
+  this.gender = 'M';
 }
+
 var studObj1 = new Student();
 studObj1.age = 15;
 alert(studObj1.age);
+
 var studObj2 = new Student();
 alert(studObj2.age);
 </script>
-</body>
-</html>
 ```
 
 此页面显示：
 
-15
+`15`
 
 ![15](img/6dfe767126857d06703e3f536f3e6c_223_0.png)
 
-如上面的示例所示，age 属性链接到 `studObj1` 实例。然而，`studObj2` 实例没有 age 属性，因为它只定义在 `studObj1` 实例上。
+如上面的示例所示，`age` 属性链接到 `studObj1` 实例。然而，`studObj2` 实例没有 `age` 属性，因为它只定义在 `studObj1` 实例上。
 
 因此，假设我们想在后期阶段为特定函数添加新属性以便跨所有实例共享，我们应该做什么？
 
@@ -2681,7 +2731,7 @@ alert(studObj2.age);
 
 原型对象是一个特殊的枚举对象，关联了额外的属性，这些属性将在所有实例之间共享。
 
-然后，使用示例函数的原型属性让所有对象具有 age 属性，如下。（图 6.9）
+然后，使用示例函数的原型属性让所有对象具有 `age` 属性，如下。（图 6.9）
 
 ```html
 <!DOCTYPE html>
@@ -2690,12 +2740,15 @@ alert(studObj2.age);
 <h1>Demo: 原型</h1>
 <script>
 function Student() {
-this.name = 'John';
-this.gender = 'M';
+  this.name = 'John';
+  this.gender = 'M';
 }
+
 Student.prototype.age = 15;
+
 var studObj1 = new Student();
 alert(studObj1.age);
+
 var studObj2 = new Student();
 alert(studObj2.age);
 </script>
@@ -2703,12 +2756,9 @@ alert(studObj2.age);
 </html>
 ```
 
-
-
-
 任何使用字面量语法或构造函数语法创建的对象，都包含一个新的 `__proto__` 属性，该属性指向创建该对象的函数的原型对象。
 
-你可以在 Chrome 或 Firefox 的开发者开发者工具中调试并查看对象或特性的 `prototype` 属性。考虑以下示例。
+你可以在 Chrome 或 Firefox 的开发者工具中调试并查看对象或特性的 `prototype` 属性。考虑以下示例。
 
 ```html
 <!DOCTYPE html>
@@ -2721,7 +2771,9 @@ function Student() {
   this.name = 'John';
   this.gender = 'M';
 }
+
 var studObj = new Student();
+
 console.log(Student.prototype);
 console.log(studObj.prototype);
 console.log(studObj.__proto__);
@@ -2739,8 +2791,8 @@ console.log(Student.prototype === studObj.__proto__);
 
 ## 实际练习
 
-- 1. 编写 JavaScript 代码使所有段落变为红色（如果它们具有 `red` 类）。此代码必须在点击按钮时执行。（图 6.10）
-- 2. 创建一个简单的网页，包含一个带有 "Hello," 字样的 `h2`、一个文本框和一个按钮。当用户在框内输入任何单词或短语并点击按钮时，应用用户的内容替换旧的 `h2`。使用动画让该单词旋转起来。
+1. 编写 JavaScript 代码使所有段落变为红色（如果它们具有 `red` 类）。此代码必须在点击按钮时执行。（图 6.10）
+2. 创建一个简单的网页，包含一个带有 "Hello," 字样的 `h2`、一个文本框和一个按钮。当用户在框内输入任何单词或短语并点击按钮时，应用用户的内容替换旧的 `h2`。使用动画让该单词旋转起来。
 
 ## 文档对象模型 (DOM)
 
@@ -2772,7 +2824,7 @@ SGML 文档结构传统上由抽象数据模型表示，而不是对象模型。
 
 起初，JavaScript 和 DOM 紧密结合，但最终演变成了不同的实体。页面内容保存在 DOM 中，可以通过 JavaScript 进行访问和操作，因此我们可以写出这个公式：
 
-API = JavaScript + DOM
+`API = JavaScript + DOM`
 
 DOM 的设计目的是独立于特定的编程语言，通过单一一致的 API 提供文档表示。
 
@@ -2780,7 +2832,7 @@ DOM 的设计目的是独立于特定的编程语言，通过单一一致的 API
 
 开始使用 DOM 不需要特殊操作。不同的浏览器有不同的 DOM 实现，这些实现对实际 DOM 的遵循程度各不相同。但是，每个浏览器都使用文档对象模型通过 JavaScript 访问网页。
 
-当你创建一个脚本时（无论是内联在 `<script>` 元素中还是通过脚本加载步骤嵌入网页），你都可以立即使用窗口或文档元素的 API 进入该文档的节点，即网页的各种元素。你的 DOM 编程可以像下面一样，使用窗口对象的 `alert( )` 函数显示警告消息，你可以使用更复杂的 DOM 方法创建新内容，如扩展示例所示。
+当你创建一个脚本时（无论是内联在 `<script>` 元素中还是通过脚本加载步骤嵌入网页），你都可以立即使用窗口或文档元素的 API 进入该文档的节点，即网页的各种元素。你的 DOM 编程可以像下面一样，使用窗口对象的 `alert()` 函数显示警告消息，你可以使用更复杂的 DOM 方法创建新内容，如扩展示例所示。
 
 以下 JavaScript 在文档加载时（当整个 DOM 可用时）将显示警告：
 
@@ -2788,7 +2840,7 @@ DOM 的设计目的是独立于特定的编程语言，通过单一一致的 API
 <body onload="window.alert('This is my home page!');">
 ```
 
-下面的示例显示了如何创建一个新的 H1 元素，向该元素添加一些文本，然后将 H1 添加到文档的树中：（图 7.1）
+下面的示例显示了如何创建一个新的 `H1` 元素，向该元素添加一些文本，然后将 `H1` 添加到文档的树中：（图 7.1）
 
 ```html
 <html>
@@ -2796,22 +2848,16 @@ DOM 的设计目的是独立于特定的编程语言，通过单一一致的 API
 <script>
 // 在加载文档后执行此函数
 window.onload = function() {
-// 在原本为空的 HTML 页面中创建几个元素
-const heading =
-document.createElement("h1");
-const heading_text =
-document.createTextNode("Big Head!");
-heading.appendChild(heading_text);
-document.body.appendChild(heading);
+  // 在原本为空的 HTML 页面中创建几个元素
+  const heading = document.createElement("h1");
+  const heading_text = document.createTextNode("Big Head!");
+  heading.appendChild(heading_text);
+  document.body.appendChild(heading);
 }
 </script>
 </head>
 </html>
 ```
-
-
-
-
 
 ### DOM 接口
 
@@ -2821,15 +2867,16 @@ document.body.appendChild(heading);
 
 ### 接口与对象
 
-许多对象借用了不同的接口。例如，表格（table）对象实现了一个特殊的 `HTMLTableElement` 接口，包括 `createCaption` 和 `insertRow`。
+许多对象借用了不同的接口。例如，表格（`table`）对象实现了一个特殊的 `HTMLTableElement` 接口，包括 `createCaption` 和 `insertRow`。
 
-最后，由于从 DOM 的角度来看，HTML 元素也是构成 HTML 或 XML 页面对象模型的节点树中的一个节点，因此表格对象还实现了最基本的 `Node` 接口，元素（element）正是派生自此。
+最后，由于从 DOM 的角度来看，HTML 元素也是构成 HTML 或 XML 页面对象模型的节点树中的一个节点，因此表格对象还实现了最基本的 `Node` 接口，元素（`element`）正是派生自此。
 
 当你引用表格对象时（如下例所示），你通常会在该对象上互交替使用这三个接口，可能你并没有意识到这一点。
 
 ```javascript
 const table = document.getElementById("table");
 const tableAttrs = table.attributes; // Node/Element
+
 for (let i = 0; i < tableAttrs.length; i++) {
   // HTMLTableElement interface: border attribute
   if(tableAttrs[i].nodeName.toLowerCase() == "border") {
@@ -2842,7 +2889,7 @@ for (let i = 0; i < tableAttrs.length; i++) {
 
 ### DOM 中的主要接口
 
-本节展示了 DOM 中一些最常用的接口。这里的目的不是描述这些 API 的作用，而是让你对在使用 DOM 时会经常看到的某些方法和属性有一个有一个大致的了解。
+本节展示了 DOM 中一些最常用的接口。这里的目的不是描述这些 API 的作用，而是让你对在使用 DOM 时会经常看到的某些方法和属性有一个大致的了解。
 
 `window` 和 `document` 对象是 DOM 编程中接口通常使用最频繁的对象。简单来说，`window` 对象代表类似浏览器这样的东西，而 `document` 对象是文档本身的根。元素继承自 `Node` 通用接口，这两个接口共同提供了你在单个元素上经常使用的许多属性和方法。
 
@@ -2850,18 +2897,18 @@ for (let i = 0; i < tableAttrs.length; i++) {
 
 以下是使用 DOM 的常用 XML API 和网页脚本的短列表。
 
-- document.querySelectorAll(name)
-- document.querySelector(selector)
-- document.createElement(name)
-- element.innerHTML
-- parentNode.appendChild(node)
-- element.style.left
-- element.getAttribute()
-- element.setAttribute()
-- element.addEventListener()
-- GlobalEventHandlers/onload
-- window.content
-- window.scrollTo()
+- `document.querySelectorAll(name)`
+- `document.querySelector(selector)`
+- `document.createElement(name)`
+- `element.innerHTML`
+- `parentNode.appendChild(node)`
+- `element.style.left`
+- `element.getAttribute()`
+- `element.setAttribute()`
+- `element.addEventListener()`
+- `GlobalEventHandlers/onload`
+- `window.content`
+- `window.scrollTo()`
 
 ## 测试 DOM API
 
@@ -2878,13 +2925,9 @@ for (let i = 0; i < tableAttrs.length; i++) {
 </head>
 ```
 
+`"myImage"`
 
-
-
-
-"myImage"
-
-+   JavaScript 将该元素的 `src` 属性从 "smiley.gif" 修改为 "landscape.jpg。"
+- JavaScript 将该元素的 `src` 属性从 `"smiley.gif"` 修改为 `"landscape.jpg"`。
 
 ## 动态 HTML 内容
 
@@ -2895,13 +2938,15 @@ JavaScript 可以创建动态 HTML 内容：
 <html>
 <body>
 <script>
-document.getElementById("demo").innerHTML = "Date :" + Date(); </script>
+document.getElementById("demo").innerHTML = "Date :" + Date();
+</script>
 </body>
 </html>
-document.write()
 ```
 
-`document.write ()` 用于在 JavaScript 中直接向 HTML 输出流写入内容：
+`document.write()`
+
+`document.write()` 用于在 JavaScript 中直接向 HTML 输出流写入内容：
 
 ```html
 <!DOCTYPE html>
@@ -2910,9 +2955,6 @@ document.write()
 <p>hi hi hi</p>
 <script>
 document.write(Date());
-```
-
-```html
 </script>
 <p>hi hi </p>
 </body>
@@ -2925,7 +2967,7 @@ jQuery 是一个开源的 JavaScript 库，它帮助简化 JavaScript 与 HTML/C
 
 通过创建事实上的术语，jQuery 简化了 HTML 文档的导航和操作、浏览器事件处理、DOM 动画、Ajax 交互以及跨浏览器 JavaScript 开发。
 
-注意：目前唯一同时满足设计师和程序员类型需求的的库就是 jQuery。
+注意：目前唯一同时满足设计师和程序员类型需求的库就是 jQuery。
 
 jQuery 以其“写得少，做得多”的哲学而闻名。这种哲学可以进一步发展为三个概念：
 
@@ -2950,7 +2992,7 @@ $(selector).action()
 
 - `$` 符号用于定义/访问 jQuery
 - `(selector)` 用于在 html 页面中“查询（或搜索）”HTML 元素
-- `jquery ()` 操作表示要在所选项目上执行的操作
+- `jquery()` 操作表示要在所选项目上执行的操作
 
 示例：（图 8.1）
 
@@ -2969,17 +3011,14 @@ $(document).ready(function () {
 </head>
 <body>
 <center>
-<h2 style="color: green;">jQueryFunction</h2>
-</center>
-</body>
-</html>
-```
 
-输出：
+
+
+# jQueryFunction
 
 ![](img/6dfe767126857d06708c3e3f536f3e6c_256_0.png)
 
-### 为什么选择 jQuery？
+## 为什么选择 jQuery？
 
 支持“为什么使用 jQuery”答案的一些关键点：
 
@@ -3004,66 +3043,64 @@ $(document).ready(function () {
 - 现代浏览器现在支持许多 jQuery 曾经提供的功能。
 - 对于初学者来说，语法存在学习曲线。
 
-
-
-
-
-此函数的作用与 `hide` 函数相反。它可以显示任何 HTML 元素。但在调用此函数之前，我们需要在同一个元素上先使用 `hide` 函数。因为我们不能对已经显示的元素使用 `show` 函数。示例清楚地展示了如何在同一个元素上同时使用这两个函数。
+此函数的作用与`hide`函数相反。它可以显示任何 HTML 元素。但在调用此函数之前，我们需要在同一个元素上先使用`hide`函数。因为我们不能对已经显示的元素使用`show`函数。示例清楚地展示了如何在同一个元素上同时使用这两个函数。
 
 ```html
 <script>
-// 必须也使用 hide 函数
-来隐藏该元素。
+// 必须也使用 hide 函数来隐藏该元素。
 $('#hide_elem').click(function(){
   $('#elem').hide();
 });
+
 // 这是演示如何调用 show 函数的实际函数
 $('#show_elem').click(function(){
   $('#elem').show();
 });
 </script>
+
 <div id="hide_elem"></div>
 <div id="show_elem"></div>
-<div id="elem"></</div>
+<div id="elem"></div>
 ```
 
-下方显示的第一个 `div` 标签是我们需要点击以隐藏元素的地方。
+下方显示的第一个`div`标签是我们需要点击以隐藏元素的地方。
+```html
 <div id="hide_elem"></div>
+```
 
-第二个 `div` 标签调用下方所示 `show` 函数，它会显示我们隐藏的元素。
+第二个`div`标签调用下方所示`show`函数，它会显示我们隐藏的元素。
+```html
 <div id="show_elem"></div>
+```
 
-第三个 `div` 标签是根元素，当你点击 `show_elem` 时它会显示，当你点击 `hide_elem` 时它会隐藏。
+第三个`div`标签是根元素，当你点击`show_elem`时它会显示，当你点击`hide_elem`时它会隐藏。
 
 ### 3.) Toggle 函数
 
-`toggle` 函数用于隐藏或显示特定的选中项目。此函数可以在单个元素上执行 `hide` 函数和 `show` 函数两个功能。当我们希望用户为所选项目同时提供显示和隐藏的控件时，它将是一个完美的选择。
+`toggle`函数用于隐藏或显示特定的选中项目。此函数可以在单个元素上执行`hide`函数和`show`函数两个功能。当我们希望用户为所选项目同时提供显示和隐藏的控件时，它将是一个完美的选择。
 
 ```html
 <script>
-// toggle 函数可以显示和
-隐藏特定的元素。
+// toggle 函数可以显示和隐藏特定的元素。
 $('#toggle_elem').click(function() {
   $('#elem').toggle();
 });
 </script>
+
 <div id="toggle_elem"></div>
 <div id="elem"></div>
 ```
 
-在上面的示例中，我们刚刚创建了一个具有 `toggle` 功能的程序。
-
-如果用户想要显示
+在上面的示例中，我们刚刚创建了一个具有`toggle`功能的程序。如果用户想要显示
+```html
 <div id="elem"></div>
-
+```
 那么你需要点击
-
 ```html
 <div id="toggle_elem"></div>
 ```
 
 如果用户需要隐藏该项目，他们只需要再次点击它，如果之前是显示状态，它就会被隐藏。
-
 ```html
 <div id="toggle_elem"></div>
 ```
@@ -3079,48 +3116,43 @@ $('#slideUp_elem').click(function() {
   $('#elem').slideUp();
 });
 </script>
+
 <div id="slideUp_elem"></div>
 <div id="elem"></div>
 ```
 
 在上面的示例中，我们刚刚创建了一个可以隐藏选中 HTML 元素的程序。
-
 ```javascript
 $('#elem').slideUp();
 ```
 
-每当调用此函数时，选中的项目
-
-```javascript
-'#elem will slide up 'slideUp()'
-```
+每当调用此函数时，选中的项目`#elem`将向上滑动`slideUp()`。
 
 ### 5.) slideDown 函数
 
-`slideDown` 函数可以显示选中的项目。它的工作方式与 `show` 函数相同，但显示选中的项目更高效。在选中的项目上向下滑动以显示它。
+`slideDown`函数可以显示选中的项目。它的工作方式与`show`函数相同，但显示选中的项目更高效。在选中的项目上向下滑动以显示它。
 
 ```html
 <script>
-// slideDown 函数将以一种酷炫且缓慢的方式
-显示选中的元素。
+// slideDown 函数将以一种酷炫且缓慢的方式显示选中的元素。
 $('slideDown_elem').click(function() {
   $('#elem').slideDown();
 });
 </script>
+
 <div id="slideDown_elem"></div>
 ```
 
 在上面的示例中，我们刚刚创建了一个可以显示选中 HTML 元素的程序。
-
 ```javascript
 $('#elem').slideDown();
 ```
 
-每当调用此函数时，选中的项目 '#elem' 都会随着 'slideDown() 函数' 向滑动。
+每当调用此函数时，选中的项目`#elem`都会随着`slideDown()`函数向下滑动。
 
 ### 6.) slideToggle 函数
 
-`slideToggle` 函数将选中的元素在 `slideUp` 或 `slideDown` 之间切换。`slideToggle` 函数可以执行隐藏和滑动选中的 HTML 元素等两种操作。
+`slideToggle`函数将选中的元素在`slideUp`或`slideDown`之间切换。`slideToggle`函数可以执行隐藏和滑动选中的 HTML 元素等两种操作。
 
 ```html
 <script>
@@ -3129,34 +3161,34 @@ $('#slideToggle_elem').click(function {
   $('#elem').slideToggle();
 });
 </script>
+
 <div id="example slideToggle_elem"></div>
 ```
 
 在上面的示例中，我们创建了一个可以激活或停用选中 HTML 元素上向上或向下滑动函数的程序。
-
 ```javascript
 $('#elem').slideToggle();
 ```
 
-每当调用此函数时，选中的项目 '#elem' 仅仅因为这个 'slideToggle()' 函数就会向上或向下滑动。
+每当调用此函数时，选中的项目`#elem`仅仅因为这个`slideToggle()`函数就会向上或向下滑动。
 
 ### 7.) fadeOut 函数
 
-`fadeOut` 函数会像动画一样缓慢淡出 HTML 元素。
+`fadeOut`函数会像动画一样缓慢淡出 HTML 元素。
 
 ```html
 <script>
 // fadeOut 函数将以一种酷炫且缓慢的方式隐藏选中的元素。
 $('#fadeOut_elem').click(function() {
-$('#elem').fadeOut();
+  $('#elem').fadeOut();
 });
 </script>
+
 <div id="fadeOut_elem"></div>
 <div id="elem"></div>
 ```
 
 在上面的示例中，我们编写了一个可以隐藏选中的 HTML 元素的脚本。
-
 ```javascript
 $('#elem').fadeOut();
 ```
@@ -3165,7 +3197,7 @@ $('#elem').fadeOut();
 
 ### 8.) fadeIn 函数
 
-`fadeIn` 函数的作用与 `fadeOut` 相，它通过像动画一样缓慢淡入来显示选中的 HTML 元素。
+`fadeIn`函数的作用与`fadeOut`相反，它通过像动画一样缓慢淡入来显示选中的 HTML 元素。
 
 ```html
 <script>
@@ -3174,45 +3206,44 @@ $('#fadeIn_elem').click(function() {
   $('#elem').fadeIn();
 });
 </script>
+
 <div id="fadeIn_elem"></div>
 <div id="elem"></div>
 ```
 
-在上面的示例中，我们编写了一个可以隐藏选中的 HTML 元素的脚本（注：此处原文可能为误，逻辑应为显示）。
-
+在上面的示例中，我们编写了一个可以显示选中的 HTML 元素的脚本。
 ```javascript
 $('#elem').fadeIn();
 ```
 
-每当调用此函数时，选中的 HTML 元素都会消失。
+每当调用此函数时，选中的 HTML 元素都会显示。
 
 ### 9.) fadeToggle 函数
 
-`fadeToggle` 函数可以从 `fadeOut` 切换到 `fadeIn`。它的工作方式与其他函数相同。
+`fadeToggle`函数可以从`fadeOut`切换到`fadeIn`。它的工作方式与其他函数相同。
 
 ```html
 <script>
-// fadeToggle 函数将以一种酷炫且缓慢的方式
-显示选中的元素。
+// fadeToggle 函数将以一种酷炫且缓慢的方式显示选中的元素。
 $('#fadeToggle_elem').click(function() {
   $('#elem').fadeToggle();
 });
 </script>
+
 <div id="fadeToggle_elem"></div>
 <div id="elem"></div>
 ```
 
 这个示例展示了如何创建一个可以显示选中元素的程序。
-
 ```javascript
 $('#elem').fadeIn();
 ```
 
-每当调用此函数时，选中的项目 '#elem' 将向上滑动（此处）或淡入。
+每当调用此函数时，选中的项目`#elem`将淡入。
 
 ### 10.) Animate 函数
 
-`animate` 函数是 jQuery 中一个非常优秀的函数，因为我们可以使用这个函数来动画任意元素。例如，我们可以在选中的元素中实现 CSS。
+`animate`函数是 jQuery 中一个非常优秀的函数，因为我们可以使用这个函数来动画任意元素。例如，我们可以在选中的元素中实现 CSS。
 
 ```html
 <script>
@@ -3221,24 +3252,21 @@ $('#animate_elem').click(function() {
   $('#elem').animate({color: green, opacity: 0.6}, 1000);
 });
 </script>
+
 <div id="animate_elem"></div>
 <div id="elem"></div>
 ```
 
-在这个示例中，一个简单的 `div` 标签变成了一个颜色鲜艳且具有透明透明度的标签。
-
-
-
+在这个示例中，一个简单的`div`标签变成了一个颜色鲜艳且具有透明透明度的标签。
 
 此用于获取或设置 DOM 元素指定属性的值。
 
 语法：
-
 ```
 $('selector expression').attr('name','value');
 ```
 
-首先，它指定一个选择器来获取元素的引用，并带有属性名参数调用 `attr()` 方法。要设置属性值，请在名称参数的同时传递值参数。
+首先，它指定一个选择器来获取元素的引用，并带有属性名参数调用`attr()`方法。要设置属性值，请在名称参数的同时传递值参数。
 
 # 示例：(图 8.2)
 
@@ -3252,16 +3280,19 @@ $(document).ready(function () {
   $('#btnDivStyle').click(function() {
     alert($('div').attr('class'));
   });
+
   $('#btnDivStyle').click(function(){
     alert($('p').attr('style'));
   });
+
   $('div').attr('class','yellowDiv');
   // 为每个 div 元素添加 class='yellowDiv'
 });
 </script>
+
 <style>
 .yellowDiv{
-Background-color:yellow;
+  Background-color:yellow;
 }
 </style>
 </head>
@@ -3269,15 +3300,19 @@ Background-color:yellow;
 <h1>Demo: jQuery attr() 方法</h1>
 <button id="btnDivStyle">Get div class</button>
 <button id="btnStyle">Get p Style</button> </br></br>
+
 <div>
 这是 div。
 </div>
+
 <p style="font-size:16px;font-weight:bold">
 这是段落。
 </p>
+
 <div>
 这是 div。
 </div>
+
 <p style="color:red">
 这是段落。
 </p>
@@ -3289,19 +3324,18 @@ Background-color:yellow;
 
 ![](img/6dfe767126857d06708c3e3f536f3e6c_281_0.png)
 
-在上面的示例中，`$('p').attr ('style')` 获取 html 页面中第一个 <p> 元素的 style 属性。它不会返回所有 <p> 元素的 style 属性。
+在上面的示例中，`$('p').attr ('style')`获取 html 页面中第一个`<p>`元素的 style 属性。它不会返回所有`<p>`元素的 style 属性。
 
 # jQuery prop() 方法
 
 此方法用于设置或获取 DOM 元素中指定属性的值。
 
 语法：
-
 ```
 $('selector expression').prop('name','value');
 ```
 
-首先，它指定一个选择器来引用一个或多个元素，并调用 `prop ( )` 方法。然后，提供 "name" 参数来获取该属性的值。要设置属性值，请在名称参数的同时指定值参数。
+首先，它指定一个选择器来引用一个或多个元素，并调用`prop()`方法。然后，提供 "name" 参数来获取该属性的值。要设置属性值，请在名称参数的同时指定值参数。
 
 # 示例：(图 8.3)
 
@@ -3315,14 +3349,17 @@ $(document).ready(function () {
   $('#btnDivStyle').click(function() {
     alert($('div').attr('class'));
   });
+
   $('#btnDivStyle').click(function(){
     var style = $('p').prop('style');
     alert(style.fontWeight); // 返回 "bold"
   });
+
   $('div').prop('class', 'blueDiv');
   // 为所有 div 元素添加 class="blueDiv"
 });
 </script>
+
 <style>
 .blueDiv{
   Background-color:blue;
@@ -3338,15 +3375,19 @@ $(document).ready(function () {
 ```html
 <button id="btnDivStyle">Get div class</button>
 <button id="btnStyle">Get p Style</button>
+
 <div>
 这是 div。
 </div>
+
 <p style="font-size:16px;font-weight:bold">
 这是段落。
 </p>
+
 <div>
 这是 div。
 </div>
+
 <p style="color:red">
 这是段落。
 </p>
@@ -3362,19 +3403,18 @@ $(document).ready(function () {
 |---|---|
 | 这是段落。 | 这是 div。 | 这是段落。 |
 
-在上面的示例中，`$('p').prop('style')` 返回一个对象。你可以使用对象约定（如 `style.fontWeight`）获取多个样式属性。不要在属性名中包含 '-'。
+在上面的示例中，`$('p').prop('style')`返回一个对象。你可以使用对象约定（如`style.fontWeight`）获取多个样式属性。不要在属性名中包含 '-'。
 
 # jQuery html() 方法
 
-jQuery html ( ) 方法获取或设置指定 DOM 元素中的 html 内容。
+jQuery `html()`方法获取或设置指定 DOM 元素中的 html 内容。
 
 语法：
-
 ```
 $('selector').html('content');
 ```
 
-首先，它指定一个选择器来获取元素的引用，并在不传递任何参数的情况下调用 html ( ) 方法来获取内部内容。要设置 html 内容，请指定 html 字符串作为参数。
+首先，它指定一个选择器来获取元素的引用，并在不传递任何参数的情况下调用`html()`方法来获取内部内容。要设置 html 内容，请指定 html 字符串作为参数。
 
 # 示例：(图 8.4)
 
@@ -3389,46 +3429,51 @@ $(document).ready(function () {
     alert($('#myDiv').html()); // 返回 #myDiv 的 innerHtml
     //为 #emptyDiv 添加 <p>This is another paragraph.</p>
     $('#emptyDiv').html('<p>This is another paragraph.</p>');
+  });
 });
 </script>
+
 <style>
 .yellowDiv{
-Background-color:yellow;
-margin:5px 0 0;
+  Background-color:yellow;
+  margin:5px 0 0;
 }
 </style>
 </head>
 <body>
 <h1>Demo: jQuery html()</h1>
 <button id="btnDiv">Get div html</button>
+
 <div id="myDiv" class="yellowDiv">
 <p style="font-size:16px;font-weight:bold">
 这是段落。
 </p>
 </div>
+
 <div id="emptyDiv"></div>
 </body>
 </html>
 ```
 
-# Demo: jQuery html() 方法
+
+
+# Demo: jQuery `html()` 方法
 
 ![](img/6dfe767126857d06708c3e3f536f3e6c_287_0.png)
 
-获取 div html
-这是一个段落。这是另一个段落。
+获取 `div` 的 `html`。这是一个段落。这是另一个段落。
 
-# jQuery text() 方法
+# jQuery `text()` 方法
 
 此方法设置或获取指定 DOM 元素中的文本内容。
 
 语法：
 
-```
+```javascript
 $('selector expression').text('content');
 ```
 
-首先，它指定一个选择器来调用元素的 text ( ) 方法以获取元素的文本内容。要设置文本内容，请将内容字符串作为参数。
+首先，它指定一个选择器来调用元素的`text()`方法以获取元素的文本内容。要设置文本内容，请将内容字符串作为参数。
 
 示例：(图 8.5)
 
@@ -3442,6 +3487,7 @@ $(document).ready(function () {
   $('#btnDiv').click(function(){
     alert($('#myDiv').text());
   });
+
   $('#btnP').click(function(){
     alert($('p').text()); // 移除 #emptyDiv 中的所有内容并向 #emptyDiv 插入 "This is some text."
     $('#emptyDiv').text('This is some text.');
@@ -3468,26 +3514,25 @@ margin:5px 0 0;
 </html>
 ```
 
-# Demo: jQuery text() 方法
+# Demo: jQuery `text()` 方法
 
 ![](img/6dfe767126857d06708c3e3f536f3e6c_290_0.png)
 
-这是段落。
-这是某些文本。
+这是段落。这是某些文本。
 
-注意 text ( ) 方法只返回元素内的文本内容，而不是 innerHtml。
+注意，`text()`方法只返回元素内的文本内容，而不是`innerHTML`。
 
-# jQuery val() 方法
+# jQuery `val()` 方法
 
-jquery val ( ) 方法获取或设置指定 DOM 元素上的 value 属性。
+jQuery `val()`方法获取或设置指定 DOM 元素上的`value`属性。
 
 语法：
 
-```
+```javascript
 $('selector expression').val('value');
 ```
 
-首先，它指定一个选择器来获取元素的引用，并调用 val() 方法获取 value 属性的值。例如，要设置文本内容，请将内容字符串作为参数。
+首先，它指定一个选择器来获取元素的引用，并调用`val()`方法获取`value`属性的值。例如，要设置文本内容，请将内容字符串作为参数。
 
 示例：(图 8.6)
 
@@ -3501,9 +3546,11 @@ $(document).ready(function () {
   $('#btnVal').click(function() {
     alert($('#input:Submit').val()); // 显示按钮的值
   });
+
   $('#btnTxtVal').click(function() {
     alert($('#input:text').val()); // 显示文本框的值
   });
+
   //将文本框设置为 "Jaime"
   $('#input:text').val('Jaime');
 });
@@ -3516,8 +3563,6 @@ margin:10px 0 0 0;
 </head>
 <body>
 <h1>Demo: jQuery val() 方法</h1>
-
-```html
 <button id="btnVal">Get button value</button>
 <button id="btnTxtVal">Get textbox value</button>
 <div>
@@ -3530,25 +3575,25 @@ margin:10px 0 0 0;
 </html>
 ```
 
-# Demo: jQuery val() 方法
+# Demo: jQuery `val()` 方法
 
 ![](img/6dfe767126857d06708c3e3f536f3e6c_292_0.png)
 
 ## 创建自定义动画
 
-除了预定义的效果方法，jQuery 还提供了强大的 .animate() 方法来创建自定义动画。
+除了预定义的效果方法，jQuery 还提供了强大的`animate()`方法来创建自定义动画。
 
 ### 语法：
 
-```
+```javascript
 $(selector).animate({params}, speed, callback);
 ```
 
-必要的 params 参数描述要动画的 CSS 属性。可选的 speed 参数给出效果持续时间。它可以取以下值：毫秒、“slow"或"fast."
+必要的`params`参数描述要动画的 CSS 属性。可选的`speed`参数给出效果持续时间。它可以取以下值：毫秒、“slow”或“fast”。
 
-可选的 callback 参数是在动画完成后执行的函数。
+可选的`callback`参数是在动画完成后执行的函数。
 
-下面的示例展示了 animate ( ) 方法的简单用法；将 <div> 元素向右移动，直到它达到左侧 250px 的位置：(图 8.7)
+下面的示例展示了`animate()`方法的简单用法；将`<div>`元素向右移动，直到它达到左侧 250px 的位置：(图 8.7)
 
 ```html
 <!DOCTYPE html>
@@ -3558,36 +3603,26 @@ $(selector).animate({params}, speed, callback);
 <script>
 $(document).ready(function() {
 $("button").click(function() {
-```
-
-
-
-
-```html
 $("div").animate({left: '250px'});
-};
-};
+});
+});
 </script>
 </head>
 <body>
 <button>Start Animation</button>
-```
-
-<p>默认情况下，所有的 HTML 元素无法移动，因为它们具有静态位置。要操作位置，请先将元素的 CSS position 属性设置为 relative（相对）、fixed（固定）或 absolute（绝对）。</p>
-
-```html
-<div style="background:#98bf21;height:100px;position:absolute;"></div
+<p>默认情况下，所有的 HTML 元素无法移动，因为它们具有静态位置。要操作位置，请先将元素的 CSS `position`属性设置为`relative`（相对）、`fixed`（固定）或`absolute`（绝对）。</p>
+<div style="background:#98bf21;height:100px;position:absolute;"></div>
 </body>
 </html>
 ```
 
 ![](img/6dfe767126857d06708c3e3f536f3e6c_294_0.png)
 
-默认情况下，所有的 HTML 元素无法移动，因为它们具有静态位置。要操作位置，请先将元素的 CSS position 属性设置为 relative（相对）、fixed（固定）或 absolute（绝对）！
+默认情况下，所有的 HTML 元素无法移动，因为它们具有静态位置。要操作位置，请先将元素的 CSS `position`属性设置为`relative`（相对）、`fixed`（固定）或`absolute`（绝对）！
 
 ![](img/6dfe767126857d06708c3e3f536f3e6c_294_1.png)
 
-### jQuery animate() - 操作多个属性
+### jQuery `animate()` - 操作多个属性
 
 注意，多个属性可以同时进行动画：
 
@@ -3602,29 +3637,27 @@ $("button").click(function() {
 });
 ```
 
-我有一个问题。我们可以用 `animate()` 方法操作所有的 CSS 属性吗？是的，几乎可以！但有一点重要的需要记住：当与 `animate()` 方法一起使用时，所有属性名必须使用驼峰命名：你必须写 `paddingLeft` 而不是 `padding-left`，写 `marginLeft` 而不是 `margin-right`，以此此类推。
+我有一个问题。我们可以用`animate()`方法操作所有的 CSS 属性吗？是的，几乎可以！但有一点重要的需要记住：当与`animate()`方法一起使用时，所有属性名必须使用驼峰命名：你必须写`paddingLeft`而不是`padding-left`，写`marginLeft`而不是`margin-right`，以此类推。
 
-此外，颜色动画没有包含在 jQuery 核心库中。
+此外，颜色动画没有包含在 jQuery 核心库中。如果你想动画颜色，必须从 jQuery.com 下载 Color Animations 插件。
 
-如果你想动画颜色，必须从 jQuery.com 下载 Color Animations 插件。
+### jQuery `animate()` - 使用相对值
 
-### jQuery animate() - 使用相对值
-
-也可能定义相对值（因此，该值相对于元素的当前值）。这是通过在值前面插入 `+=` 或 `=` 实现的：
+也可能定义相对值（因此，该值相对于元素的当前值）。这是通过在值前面插入`+=`或`-=`实现的：
 
 示例
 
 ```javascript
 $("button").click(function() {
   $("div").animate({
-    left: '+250px',
+    left: '+=250px',
     height: '+=150px',
     width: '+=150px'
   });
 });
 ```
 
-### jQuery animate(): 使用默认值
+### jQuery `animate()`：使用默认值
 
 你也可以指定属性的动画值，如“show”（显示）、“hide”（隐藏）或“toggle”（切换）：
 
@@ -3638,13 +3671,11 @@ $("button").click(function(){
 });
 ```
 
-### jQuery animate() - 使用队列功能
+### jQuery `animate()` - 使用队列功能
 
-默认情况下，jQuery 内置了动画的队列功能。
+默认情况下，jQuery 内置了动画的队列功能。这意味着，如果你连续编写多个`animate()`的调用，jQuery 会为这些方法调用创建一个“内部”队列。然后一个接一个地执行这些动画调用。
 
-这意味着，如果你连续编写多个 `animate()` 的调用，jQuery 会为这些方法调用创建一个“内部”队列。然后一个接一个地执行这些动画调用。
-
-所以，如果你想一个接地运行几个动画，让我们利用队列功能吧：
+所以，如果你想一个接一个地运行几个动画，让我们利用队列功能吧：
 
 ### 示例 1
 
@@ -3662,17 +3693,17 @@ $("button").click(function(){
 });
 ```
 
-下面的示例首先将 `<div>` 元素向右移动，然后增大文本的字体大小：
+下面的示例首先将`<div>`元素向右移动，然后增大文本的字体大小：
 
 ### 示例 2
 
 ```javascript
 $("button").click(function(){
   var div = $("div");
-  div.animate({left: '100px',
-    "slow"});
-  div.animate({fontSize: '3em',
-    "slow"});
+  div.animate({left: '100px'},
+    "slow");
+  div.animate({fontSize: '3em'},
+    "slow");
 });
 ```
 
@@ -3688,7 +3719,7 @@ UNIX 系统也有类似于 Microsoft Windows 的图形用户界面 (GUI)，提�
 
 ### UNIX 类型
 
-UNIX 有许多多个版本，尽管它们都有共同的相似之处。最流行的 UNIX 版本是 MacOS X、Sun Solaris 和 GNU/Linux。
+UNIX 有许多个版本，尽管它们都有共同的相似之处。最流行的 UNIX 版本是 MacOS X、Sun Solaris 和 GNU/Linux。
 
 ### UNIX 操作系统
 
@@ -3709,185 +3740,192 @@ shell 充当了用户与内核之间的接口界面。它是一个命令行解�
 UNIX 中的一切都是文件或进程。进程是一个由唯一 PID 标识的运行程序。文件是数据的集合。用户通过编辑器创建文件。文件示例：
 
 - 一份文档（论文、文章等）
-- 用高级级语言编写的程序
+- 用高级语言编写的程序
 - 机器直接可理解但偶尔使用的用户无法理解的指令
 - 包含子目录和普通文件信息的目录
 
 ### 基础 UNIX 命令
 
-注意，并非所有这些命令都是 UNIX 本身的一部分，你可能在所有机器上都找不到它们。但它们基本上都可以以相同的方式使用，只需输入命令并按回车键。请注意，这些某些命令在非 Unix 机器上是不相同的。
+注意，并非所有这些命令都是 UNIX 本身的一部分，你可能在所有机器上都找不到它们。但它们基本上都可以以相同的方式使用，只需输入命令并按回车键。请注意，某些命令在非 Unix 机器上是不相同的。
 
 ### File (文件)
 
-- ls 列出你的文件
-- ls -l 以“长格式”列出你的文件，包含许多信息，如文件的精确大小、文件所有者、谁有权查看，以及最后修改时间。
-- ls -a 列出所有文件，包括以点开头的、你不总是想看到的文件。还有更多选项，例如按大小、日期、递归列出等。
-
-- more filename 显示文件的第一部分，直到填满屏幕。只需按空格键查看更多，或按 q 退出。你可以使用 /pattern 来搜索模式。
-- emacs filename 是一个允许你创建和编辑文件的编辑器。
-- mv filename1 filename2 移动文件（即：重命名或将其移动到不同的目录）。
-- cp filename1 filename2 复制文件
-- rm filename 删除文件。建议使用 rm -i 选项，它会在删除任何内容之前询问你。你可以通过 .cshrc 中创建别名将其设置为默认。
-- diff filename1 filename2 比较文件并显示它们的差异。
-- wc filename 让你知道有多少行、字符和单词。
-- chmod options filename 允许更改读取、写入和执行权限。
-
-
-
-对你的文件执行权限。默认情况下，只有你可以查看和更改它们，但有时你可能想更改这些权限。例如，`chmod +r filename` 会让所有人都能读取，而 `chmod r filename` 会让其他人无法访问。注意，要让某人看到文件，你需要的目录至少具有执行权限。
+- `ls` 列出你的文件
+- `ls -l` 以“长格式”列出你的文件，包含许多信息，如文件的精确大小、文件所有者、谁有权查看，以及最后修改时间。
+- `ls -a` 列出所有文件，包括以点开头的、你不总是想看到的文件。还有更多选项，例如按大小、日期、递归列出等。
+- `more filename` 显示文件的第一部分，直到填满屏幕。只需按空格键查看更多，或按 `q` 退出。你可以使用 `/pattern` 来搜索模式。
+- `emacs filename` 是一个允许你创建和编辑文件的编辑器。
+- `mv filename1 filename2` 移动文件（即：重命名或将其移动到不同的目录）。
+- `cp filename1 filename2` 复制文件
+- `rm filename` 删除文件。建议使用 `rm -i` 选项，它会在删除任何内容之前询问你。你可以通过`.cshrc`中创建别名将其设置为默认。
+- `diff filename1 filename2` 比较文件并显示它们的差异。
+- `wc filename` 让你知道有多少行、字符和单词。
+- `chmod options filename` 允许更改读取、写入和执行权限。对你的文件执行权限。默认情况下，只有你可以查看和更改它们，但有时你可能想更改这些权限。例如，`chmod +r filename` 会让所有人都能读取，而 `chmod -r filename` 会让其他人无法访问。注意，要让某人看到文件，你需要的目录至少具有执行权限。
 
 ### 文件压缩
 
-- gzip filename --- 压缩文件以占用更少的空间。文本文件通常会被压缩到原始大小的一半左右，但这很大取决于文件的大小和内容的性质。还有其他用途的工具（例如 `compress`），但 gzip 通常提供最高的压缩率。Gzip 生成的文件会在原始文件名末尾添加 '.gz'。
-
-- gunzip filename --- 解压缩用 gzip 压缩的文件。
-
-- gzcat filename --- 让你无需使用 gunzip（如 gunzip -c）即可查看用 gzip 压缩的文件。你也可以通过使用 `gzcat filename` 直接打印它。
+- `gzip filename` --- 压缩文件以占用更少的空间。文本文件通常会被压缩到原始大小的一半左右，但这很大取决于文件的大小和内容的性质。还有其他用途的工具（例如`compress`），但 `gzip` 通常提供最高的压缩率。`gzip`生成的文件会在原始文件名末尾添加`.gz`。
+- `gunzip filename` --- 解压缩用 `gzip` 压缩的文件。
+- `gzcat filename` --- 让你无需使用 `gunzip`（如 `gunzip -c`）即可查看用 `gzip` 压缩的文件。你也可以通过使用`gzcat filename`直接打印它。
 
 ### 打印
 
-- lpr filename --- 打印。如果你想使用默认打印机以外的打印机，可以使用 -P 选项指定打印机名称。例如，如果你要双面打印，使用 'lpr -Pvalkyr -d'；或者如果你在 CCLI 中，你可以使用 'lpr -Pcord115 -d'。
-
-- lpq --- 检查打印机队列，例如获取删除所需的数字，或查看在你的文件打印之前会有多少个文件打印。
-
-- lprm jobnumber --- 从打印队列中删除项目。你可以使用 lpq 查找作业号。理论上，你也应该指定打印机名称，但只要你使用部门的默认打印机，这不是强制性的。
-
-- genscript --- 将纯文本文件转换为 postscript 用于打印，并提供一些格式选项。考虑创建一个别名，如 `alias 'ecop genscript -2 -r * | lpr -h -Pvalkyr'` 以在一张纸上打印两页。
-
-- dvips filename --- 打印 .dvi 文件（即由 LaTeX 生成的文件）。你可以利用 dviselect 只打印选定的页面。
+- `lpr filename` --- 打印。如果你想使用默认打印机以外的打印机，可以使用`-P`选项指定打印机名称。例如，如果你要双面打印，使用`lpr -Pvalkyr -d`；或者如果你在 CCLI 中，你可以使用`lpr -Pcord115 -d`。
+- `lpq` --- 检查打印机队列，例如获取删除所需的数字，或查看在你的文件打印之前会有多少个文件打印。
+- `lprm jobnumber` --- 从打印队列中删除项目。你可以使用`lpq`查找作业号。理论上，你也应该指定打印机名称，但只要你使用部门的默认打印机，这不是强制性的。
+- `genscript` --- 将纯文本文件转换为 postscript 用于打印，并提供一些格式选项。考虑创建一个别名，如`alias 'ecop genscript -2 -r * | lpr -h -Pvalkyr'` 以在一张纸上打印两页。
+- `dvips filename` --- 打印`.dvi`文件（即由 LaTeX 生成的文件）。你可以利用`dviselect`只打印选定的页面。
 
 ### 目录
 
-目录类似于 Mac 上的文件夹，用于按分级结构对文件。
+目录类似于 Mac 上的文件夹，用于按分级结构组织文件。
 
-- mkdir dirname --- 创建新目录
-
-- cd dirname --- 切换目录。基本上是“进入”一个不同的目录，当你执行 "ls" 时，你会看到该目录下的文件。它总是从你的“家目录”开始，你可以通过输入没有任何参数的 "cd" 返回那里。'cd ..' 将允许你从当前位置向上移动一级。你不需要一步一个地移动；可以通过指定路径名称进行大跨度跳转或移动。
-
-- **pwd** --- 告诉你当前所在的位置。
+- `mkdir dirname` --- 创建新目录
+- `cd dirname` --- 切换目录。基本上是“进入”一个不同的目录，当你执行`ls`时，你会看到该目录下的文件。它总是从你的“家目录”开始，你可以通过输入没有任何参数的`cd`返回那里。`cd ..`将允许你从当前位置向上移动一级。你不需要一步一步地移动；可以通过指定路径名称进行大跨度跳转或移动。
+- `pwd` --- 告诉你当前所在的位置。
 
 ### 查找内容
 
-- **ff** --- 在系统的任何地方搜索文件。如果你忘记了把文件放在哪个目录里但还记得名字，这非常有帮助。如果你使用 `ff -p`，你不需要全名，只需要开头即可。这对于查找系统的其他信息（如文档）也很有帮助。
+- `ff` --- 在系统的任何地方搜索文件。如果你忘记了把文件放在哪个目录里但还记得名字，这非常有帮助。如果你使用`ff -p`，你不需要全名，只需要开头即可。这对于查找系统的其他信息（如文档）也很有帮助。
+- `grep string filename(s)` --- 在文件中搜索字符串。这对于许多用途都有益，例如从许多文件中找到正确的文件、确定某物品的正确版本，甚至进行一些严肃的语料库工作。`grep`有多种变体（`grep`、`egrep`和`fgrep`），并有很多灵活的选项。
 
-- grep string filename (s) --- 在文件中搜索字符串。这对于许多用途都有益，例如从许多文件中找到正确的文件、确定某物品的正确版本，甚至进行一些严肃的语料库工作。grep 有多种变（grep、egrep 和 fgrep），并有很多灵活的选项。
+### 关于其他人
 
-## 关于其他人
+- `w` --- 告诉谁登录了以及他们正在做什么。特别有用的是：“inactive”（空闲）部分。这让你看到他们现在是否正坐在那里在键盘上打字。
+- `who` --- 告诉谁在线以及来自哪里。如果你正在寻找与你物理上在同一栋楼或某个特定位置的人，这很有帮助。
 
-- **w** --- 告诉谁登录了以及他们正在做什么。特别有用的是：“inactive”（空闲）部分。这让你看到他们现在是否正坐在那里在键盘上打字。
-- **who** --- 告诉谁在线以及来自哪里。如果你正在寻找与你物理上在同一栋楼或某个特定位置的人，这很有帮助。
-- finger username --- 给你关于该用户的大量信息，例如，他们上次阅读邮件的时间以及他们是否已登录。人们经常会将其他实用信息（如电话号码和地址）放在名为 .plan 的文件中。这些信息也会由 "finger" 显示。
 
-- last -1 username --- 让你知道用户上次登录的时间和从哪里。在不使用任何选项的情况下，last 将提供所有人的访问列表。
 
-- talk username --- 允许你与其他用户进行（书面）对话。
+- `finger username`：提供关于该用户的大量信息，例如他们上次阅读邮件的时间以及是否已登录。人们经常会将其他实用信息（如电话号码和地址）放在名为`.plan`的文件中，这些信息也会由`finger`显示。
 
-- write username --- 允许你与另一个用户交换单行消息。
+- `last -1 username`：显示用户上次登录的时间和来源地。在不使用任何选项的情况下，`last`将提供所有人的访问列表。
 
-- elm --- 允许你向世界各地发送电子邮件（当然，也可以阅读它们）。它不是你可以使用的电子邮件，但是我们推荐的。
+- `talk username`：允许你与其他用户进行（书面）对话。
+
+- `write username`：允许你与另一个用户交换单行消息。
+
+- `elm`：允许你向世界各地发送电子邮件（当然，也可以阅读它们）。它不是你可以使用的唯一电子邮件程序，但它是我们推荐的。
 
 ## 与外界连接
 
-- **nn** --- 允许你阅读新闻。首先，它允许你阅读本地新闻，然后是远程新闻。如果你只想读取本地或远程新闻，可以使用 nnl 或 nnr。
+- `nn`：允许你阅读新闻。首先，它允许你阅读本地新闻，然后是远程新闻。如果你只想读取本地或远程新闻，可以使用`nnl`或`nnr`。
 
-- rlogin hostname --- 让你连接到
+- `rlogin hostname`：让你连接到远程主机。
 
-- telnet hostname --- 同样让你连接到远程主机。尽可能使用 rlogin。
+- `telnet hostname`：同样让你连接到远程主机。尽可能使用`rlogin`。
 
-- ftp hostname --- 让你从某处下载文件
+- `ftp hostname`：让你从某处下载文件。
 
 ## 其他工具
 
-- webster word --- 在电子字典中检查单词并返回定义（s）
-- date --- 显示当前日期和时间。
-- cal --- 显示当前月的日历。例如，使用 "cal 10 1995" 获取1995年10月9日的日历，或使用 "cal 1995" 获取整年。
+- `webster word`：在电子字典中检查单词并返回定义。
 
-你可以参考 man 页（帮助页）获取更多关于这些命令的信息：
+- `date`：显示当前日期和时间。
 
-man commandname --- 显示对应的帮助页
+- `cal`：显示当前月的日历。例如，使用`cal 10 1995`获取1995年10月的日历，或使用`cal 1995`获取整年。
+
+你可以参考`man`页（帮助页）获取更多关于这些命令的信息：
+
+- `man commandname`：显示对应的帮助页。
 
 ## 通过 Git 和 GitHub 协作并扩展你的 Web 开发资源
 
-当你达到可以与其他开发者一起从事更大项目的技能水平时；或者当你的 Web 开发文件扩展到你需要一种适当的方法来管理时，你就需要像 git 这样的系统和像 GitHub 这样的服务。这些系统允许你轻松地存储、维护和共享资源。到本书结束，你将对这两个系统了如指掌。
+当你达到可以与其他开发者一起从事更大项目的技能水平时；或者当你的 Web 开发文件扩展到你需要一种适当的方法来管理时，你就需要像`git`这样的系统和像`GitHub`这样的服务。这些系统允许你轻松地存储、维护和共享资源。到本书结束，你将对这两个系统了如指掌。
 
-本章将讨论如何开始使用 Git。我们将先解释版本控制工具的一些基本信息，然后介绍如何在你的系统上运行 Git，最后介绍如何设置以开始使用。完成本章后，你应该理解 Git 为什么存在，为什么你应该使用它，然后就可以了。
+本章将讨论如何开始使用`Git`。我们将先解释版本控制工具的一些基本信息，然后介绍如何在你的系统上运行`Git`，最后介绍如何设置以开始使用。完成本章后，你应该理解`Git`为什么存在，为什么你应该使用它，然后就可以开始了。
 
 ### 什么是版本控制？
 
-版本控制让你跟踪自己的工作，并帮助你轻松探索你所做的更改，无论是数据、代码脚本、笔记等等。如果你保存了多个文件，你可能已经在进行某种检查了。然而，这种方法会给你留下几十或数百个相似的文件，使得比较不同版本变得相当复杂，并且不容易在合作者之间直接共享。使用像 Git 这样的版本控制软件，版本控制的实现将变得更加简单流畅。此外，使用像 GitHub 这样的在线平台保存文件意味着你有一份工作的在线备份，这是
-
-对你和你的员工都有益。
+版本控制让你跟踪自己的工作，并帮助你轻松探索你所做的更改，无论是数据、代码脚本、笔记等等。如果你保存了多个文件，你可能已经在进行某种管理了。然而，这种方法会给你留下几十或数百个相似的文件，使得比较不同版本变得相当复杂，并且不容易在合作者之间直接共享。使用像`Git`这样的版本控制软件，版本控制的实现将变得更加简单流畅。此外，使用像`GitHub`这样的在线平台保存文件意味着你有一份工作的在线备份，这对你和你的团队都有益。
 
 ### 使用版本控制有什么优势？
 
-拥有 GitHub 仓库可以轻松跟踪协作项目和个人项目 - 某些分析所需的所有文件都可以存储在一起。随着项目的开发，人们可以添加代码、图形等。GitHub 上的每个文件都有历史记录，方便探索在不同时间发生的更改。你可以评估他人的代码，在某些行添加注释，或者在通用文档中建议修改。GitHub 允许为多个用户分配任务，明确谁负责哪个部分。你还可以要求用户审查代码。对于个人项目，版本控制允许你跟踪工作并轻松导航多个版本，同时进行在线备份。
+拥有`GitHub`仓库可以轻松跟踪协作项目和个人项目——某些分析所需的所有文件都可以存储在一起。随着项目的开发，人们可以添加代码、图形等。`GitHub`上的每个文件都有历史记录，方便探索在不同时间发生的更改。你可以评估他人的代码，在某些行添加注释，或者在通用文档中建议修改。`GitHub`允许为多个用户分配任务，明确谁负责哪个部分。你还可以要求用户审查代码。对于个人项目，版本控制允许你跟踪工作并轻松导航多个版本，同时进行在线备份。
 
 ### 如何开始
 
-在 GitHub 网站注册。
+在`GitHub`网站注册。
 
-如果你使用的是 Windows 电脑，下载并安装 Git。以下是一些推荐的安装说明，让操作变得简单。或者，如果你了解这些选项并根据需要修改它们，继续：
+如果你使用的是 Windows 电脑，下载并安装`Git`。以下是一些推荐的安装说明，让操作变得简单。或者，如果你了解这些选项并根据需要修改它们，继续：
 
 1. 对于“组件”，检查：
-- "Git Bash"
-- "Git GUI"
-- "Git LFS（大文件支持）"
-- "git*"
-- ".sh"
 
-2. 当被要求选择默认编辑器时，如果可用，选择 Notepad++。
+- `Git Bash`
 
-3. 对于“调整初始分支名称”，选择 "main"。
+- `Git GUI`
+
+- `Git LFS`（大文件支持）
+
+- `git*`
+
+- `.sh`
+
+2. 当被要求选择默认编辑器时，如果可用，选择`Notepad++`。
+
+3. 对于“调整初始分支名称”，选择`main`。
 
 4. 对于“调整 PATH”，选择从命令行以及...
 
-5. 对于“选择 HTTPS 传输”，使用 OpenSSL 库。
+5. 对于“选择 HTTPS 传输”，使用`OpenSSL`库。
 
 6. 对于“配置行转换”，选择 Windows 风格...
 
 7. 对于“选择默认 pull 行为”，选择（快进或合并）。
 
-8. 在“选择凭据助手”下 Git Credential Manager。
+8. 在“选择凭据助手”下选择`Git Credential Manager`。
 
-9. 对于“配置终端模拟器”，使用 MinTTY...
+9. 对于“配置终端模拟器”，使用`MinTTY`...
 
 10. 对于“配置附加选项”，启用文件系统缓存。
 
 11. 对于未列出的设置，选择默认选项。
 
-如果你在 Mac 上，通过 Homebrew 安装 Git，这是一个命令行包管理器。首先，打开终端，可以在 ~/Application / Terminal.app 找到它。现在将此行代码粘贴到终端并按回车：
+如果你在 Mac 上，通过`Homebrew`安装`Git`，这是一个命令行包管理器。首先，打开终端，可以在`~/Application/Terminal.app`找到它。现在将此行代码粘贴到终端并按回车：
 
 ```
-/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Home
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ```
 
-现在输入以下内容安装 Git：
+现在输入以下内容安装`Git`：
 
-在终端窗口中遵循说明，你可能需要输入密码或输入 yes。放置在 GitHub 上的文件将是公开的（即所有人都可以看到并建议更改，但只有拥有访问权限的人可以编辑和删除文件）。你甚至可以在 GitHub 上拥有私有仓库，这意味着只有你可以看到你的文件。GitHub 仓库现在提供标准化的三个贡献者。他们还提供软件访问和其他优势。你可以使用此链接。
+```
+brew install git
+```
+
+在终端窗口中遵循说明，你可能需要输入密码或输入`yes`。放置在`GitHub`上的文件将是公开的（即所有人都可以看到并建议更改，但只有拥有访问权限的人可以编辑和删除文件）。你甚至可以在`GitHub`上拥有私有仓库，这意味着只有你可以看到你的文件。`GitHub`仓库现在提供标准化的三个贡献者。他们还提供软件访问和其他优势。你可以使用此链接。
 
 ### 克隆（Cloning）与分叉（Forking）
 
-克隆和分叉在许多方面是非常相似的操作。它们都有效地从仓库复制所有源代码。它们的区别在于你决定是分叉还是克隆一个仓库。分叉项目意味着创建一个该仓库的副本，对其进行重命名，并将该副本作为新项目的依据。分叉后的项目很少合并到原始（master）仓库。分叉项目是为了让你以后能够贡献主项目。相反，克隆一个项目是一个技术性操作，目标是创建一个项目的副本以便进行更改并直接贡献。克隆对于开源贡献至关重要。对于使用 Git 版本控制系统的项目，GitHub 或其他可用选项（如 BitBucket）通过克隆创建项目代码库的精确副本，你可以在其中进行任何更改或添加。
+克隆和分叉在许多方面是非常相似的操作。它们都有效地从仓库复制所有源代码。它们的区别在于你决定是分叉还是克隆一个仓库。分叉项目意味着创建一个该仓库的副本，对其进行重命名，并将该副本作为新项目的依据。分叉后的项目很少合并到原始（master）仓库。分叉项目是为了让你以后能够贡献主项目。相反，克隆一个项目是一个技术性操作，目标是创建一个项目的副本以便进行更改并直接贡献。克隆对于开源贡献至关重要。对于使用`Git`版本控制系统的项目，`GitHub`或其他可用选项（如`BitBucket`）通过克隆创建项目代码库的精确副本，你可以在其中进行任何更改或添加。
 
 ### 分叉（Forking Off）
 
-现在我们已经理解了克隆和分叉之间的区别，很显然你将一直进行克隆。然而，如果出现这种情况，以下是在 GitHub 上分叉仓库的方法。虽然影响可能是巨大的，但分叉过程本身非常简单：
+现在我们已经理解了克隆和分叉之间的区别，很显然你将一直进行克隆。然而，如果出现这种情况，以下是在`GitHub`上分叉仓库的方法。虽然影响可能是巨大的，但分叉过程本身非常简单：
 
-- 登录你的 GitHub 账号。
+- 登录你的`GitHub`账号。
+
 - 进入你感兴趣的贡献的项目仓库。
+
 - 进入仓库后，寻找界面右上角的“Fork”按钮。
+
 - 点击此按钮开始自动分支过程。
-- 一个优雅的“Fork in Progress!”动画打开：
-- 几秒钟后，分叉将出现在自己的仓库中，因此返回 GitHub 主页找到它。
+
+- 一个优雅的“Fork in Progress!”动画打开。
+
+- 几秒钟后，分叉将出现在自己的仓库中，因此返回`GitHub`主页找到它。
+
 - 此时，分叉已就绪。在这里，你可以将其克隆到本地工作环境。
 
 ### 克隆（Clone home）
 
 克隆项目创建一个副本，你可以在其中提交、更改并直接贡献项目。
 
-- 现在克隆到你的文件夹：这是通过输入 `git clone` 并粘贴链接实现的。
+- 现在克隆到你的文件夹：这是通过输入`git clone`并粘贴链接实现的。
+
 - 命令完成后，你将有一个包含仓库的新文件夹。
-- 切换到该文件夹：这是许多学者忘记的一步，所以请在克隆后立即执行 `cd`。
+
+- 切换到该文件夹：这是许多学者忘记的一步，所以请在克隆后立即执行`cd`。
+
 - 最后一步是设置指向主仓库的远程端点。
 
 ## 结论
@@ -3895,19 +3933,19 @@ man commandname --- 显示对应的帮助页
 现在你应该熟悉 HTML 以及这种标记语言允许开发者和内容创建者创建和构建网页的方式。总之，你应该能够：
 
 1. 使用 HTML 组织网页的组件。
+
 2. 使用 CSS 自定义你网站的外观和感受。
+
 3. 使用 JavaScript 为你的网站添加交互元素使其极具功能性。
+
 4. 在整个过程中，记住响应式设计的原则，这些原则可以使用最新的标准（HTML5、CSS3 等）很好地实现。
-5. 通过 JQuery、Bootstrap 和 Github 让你的工作更高效、准确、方便且具有协作性。
+
+5. 通过`JQuery`、`Bootstrap`和`Github`让你的工作更高效、准确、方便且具有协作性。
 
 创建现代响应式网站可能是具有挑战性的，但通过掌握相关的工具和技术，你可以学习如何简化并加速你的工作——甚至让这种体验变得愉快。
 
 我鼓励并挑战你开始创建健壮的网站，以支持动态互联网和不断扩展的万维网。
 
-记住对自己保持耐心，理解你学到的新信息，并开始创建自己的网页。学习一种新的编程语言可以是具有挑战性的。成为一名网页设计师或开发者是。
+记住对自己保持耐心，理解你学到的新信息，并开始创建自己的网页。学习一种新的编程语言可以是具有挑战性的。成为一名网页设计师或开发者不仅仅是浏览器中的工作。Web 开发者会编写应用程序，而你正处于这条道路上。我恳请你继续学习 HTML、CSS 和 JavaScript。但当你觉得已经游刃有余时，请尝试其他语言和平台。你对其他语言和平台的经验和接触越丰富，作为一名开发者你就会越出色。
 
-
-
-不仅仅是在浏览器中工作。Web 开发者会编写应用程序，而你正处于这条道路上。我恳请你继续学习 HTML、CSS 和 JavaScript。但当你觉得已经游刃有余时，请尝试其他语言和平台。你对其他语言和平台的经验和接触越丰富，作为一名开发者你就会越出色。
-
-现在你已经掌握了所有的知识和工具，去实践实践并使用它们吧。
+现在你已经掌握了所有的知识和工具，快去实践并大胆使用它们吧。

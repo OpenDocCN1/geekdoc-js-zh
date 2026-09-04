@@ -1,6 +1,5 @@
+
 # 务实程序员系列：Ruby 的多个面； Stuart Halloway Justin Gehtland；Java 开发者的 Rails 指南；务实程序员 2007
-
-
 
 ![](img/cover.jpeg)
 
@@ -8,74 +7,112 @@
 
 # 读者对《Rails for Java Developers》的评价
 
-**读者对《Rails for Java Developers》的评价**
 每一个 Java 开发者都应该接触不同语言的思想，而 Ruby/Rails 是优秀思想的源泉。阅读这本书——它将帮助你学习 Ruby 和 Rails，并为你提供可以到 Java 的新思路。
 
 > **David Bock**
+
 > FGM Inc. 联邦与商业部门技术总监
 
 Stuart 和 Justin 完成了一项我曾认为不可完成的任务：将 Java 开发者理解 Ruby on Rails 所需的所有知识整合。在这本书出现之前，你可能需要至少读三本书（多达数千页的内容）才能获得这本精辟文本所总结的相同理解。他们清楚地理解等式的两端（`RoR` 和 `Java`），这使他们能够切除无关信息并直击重点。对于不仅仅是学习 Rails 的人来说，这本书应该是必读的：每个 Java 开发者都能从学习 Rails 传授的重要教训中受益。
 
 > **Neal Ford**
+
 > Thoughtworks 应用架构师/开发者
 
 如果你是一个 Java 开发者并想探索 Ruby on Rails，那么这本书就是你需要的。Justin 和 Stu 以精湛的技巧从 Java 开发者的视角揭示了 Ruby 和 Ruby on Rails 的复杂之处。不仅如此，这本书还写得极好，读起来是一种享受。
 
 > **David Geary**
+
 > 《Graphic Java Swing》作者、《Core JavaServer Faces》合著者
 
 Stu 和 Justin 为 Java 开发者提供了一个独特的机会，通过从熟悉且舒适的视角展示 Rails 堆栈，让他们“读懂” Rails。通过这种方式，他们证明了 Rails 和 Java 并不是互斥的。
 
 > **Ted Neward**
+
 > 《Effective Enterprise Java》作者
+
+Java》作者
 
 如果你是一个试图学习 Rails 的 Java 开发者，这本书是你的开始之地。没有比这更优质的能让你快速上手 Rails、Ruby、`Rake` 和 `ActiveRecord` 的资源了。
 
 > **Mark Richards**
+
 > IBM 高级 IT 架构师
 
 听某些人说，Java 和 Rails Web 开发阵营之间存在紧张的竞争关系，但从我的立场来看很难看到这一点。我认识的大多数快乐 Rails 开发者都有很长的 Java 程序员历史，虽然我们热爱 Java 擅长之处，但 Java 的 Web 开发仍有许多不足。Rails 像是一股令人悦目的清风，我深信这本书将打开许多其他寻找更佳构建 Web 应用方法的 Java 开发者的眼界。
 
 > **Glenn Vanderburg**
+
 > 独立 Ruby 和 Java 顾问
 
-
-
-
 ![Image 2](img/index-6_1.png)
+
 ![Image 3](img/index-6_2.png)
+
 ![Image 4](img/index-6_3.png)
+
 ![Image 5](img/index-6_4.png)
+
 ![Image 6](img/index-6_5.png)
+
 ![Image 7](img/index-6_6.png)
+
 ![Image 8](img/index-6_7.png)
+
 ![Image 9](img/index-6_8.png)
+
 ![Image 10](img/index-6_9.png)
+
 ![Image 11](img/index-6_10.png)
+
 ![Image 12](img/index-6_11.png)
+
 ![Image 13](img/index-6_12.png)
+
 ![Image 14](img/index-6_13.png)
+
 ![Image 15](img/index-6_14.png)
+
 ![Image 16](img/index-6_15.png)
+
 ![Image 17](img/index-6_16.png)
+
 ![Image 18](img/index-6_17.png)
+
 ![Image 19](img/index-6_18.png)
+
 ![Image 20](img/index-6_19.png)
+
 ![Image 21](img/index-6_20.png)
+
 ![Image 22](img/index-6_21.png)
+
 ![Image 23](img/index-6_22.png)
+
 ![Image 24](img/index-6_23.png)
+
 ![Image 25](img/index-6_24.png)
+
 ![Image 26](img/index-6_25.png)
+
 ![Image 27](img/index-6_26.png)
+
 ![Image 28](img/index-6_27.png)
+
 ![Image 29](img/index-6_28.png)
+
 ![Image 30](img/index-6_29.png)
+
 ![Image 31](img/index-6_30.png)
+
 ![Image 32](img/index-6_31.png)
+
 ![Image 33](img/index-6_32.png)
+
 ![Image 34](img/index-6_33.png)
+
 ![Image 35](img/index-6_34.png)
+
 ![Image 36](img/index-6_35.png)
 
 制造商和销售商用于区分其产品的许多名称均被声称是商标。当这些名称出现在本书中，且由于 `The Pragmatic Programmers, LLC` 知晓该商标声明时，这些名称将以首字母大写或全大写的形式打印。`The Pragmatic Starter Kit`、`The Pragmatic Programmer`、`Pragmatic Programming`、`Pragmatic Bookshelf` 以及链接设备是 `The Pragmatic Programmers, LLC` 的商标。
@@ -87,147 +124,219 @@ Stu 和 Justin 为 Java 开发者提供了一个独特的机会，通过从熟�
 [`www.pragmatic.com`](http://www.pragmatic.com)
 
 版权 © 2007 The Pragmaticmers LLC.
+
 保留所有权利。
 
 印于美国。
 
 ISBN-10: 0-976166-9-X
+
 ISBN-13: 978-0-976166-9-5
+
 采用无酸纸印刷，含有 30% 再生内容。首次印刷，2007 年 2 月。
 
 # 目录
 
 - **序言** ................................. 11
+
 - **前言** ................................. 13
+
 - **开始上手 Rails** ................... 20
+
     - 1.1 安装 Rails ........................ 20
+
     - 1.2 十分钟上手 Rails ................... 21
+
     - 1.3 开发周期 ...................... 25
+
     - 1.4 在线查找信息 ................... 28
+
     - 1.5 IDE ................................. 29
+
     - 1.6 运行示例 ........................ 32
+
     - 1.7 Rails 环境 ........................ 35
+
     - 1.8 Rails 支持 ............................ 36
+
 - **Ruby 编程** .......................... 38
+
     - 2.1 基本类型 .......................... 38
+
     - 2.2 字符串 ................................... 41
+
     - 2.3 对象与方法 ....................... 44
+
     - 2.4 集合与迭代 ................... 47
+
     - 2.5 控制流 ............................ 51
+
     - 2.6 定义类 ........................ 57
+
     - 2.7 身份与相等性 ...................... 63
+
     - 2.8 继承 ............................ 65
+
     - 2.9 使用访问修饰符控制访问 .... 66
-
-
-
-
 
 ## 2.10 抛出与处理异常 (69)
 
 # 3 给 Java 开发者的 Ruby 进阶 (72)
 
 ### 3.1 扩展核心类 (72)
+
 ### 3.2 可变与不可变对象 (74)
+
 ### 3.3 包与命名空间 (76)
+
 ### 3.4 部署代码 (79)
+
 ### 3.5 委托 (83)
+
 ### 3.6 多态与接口 (85)
+
 ### 3.7 鸭子类型 (89)
+
 ### 3.8 混入 (Mixins) (90)
+
 ### 3.9 函数 (92)
 
 # 4 使用 ActiveRecord 访问数据 (96)
 
 ### 4.1 建立连接 (97)
+
 ### 4.2 使用迁移 (Migrations) 管理架构版本 (100)
+
 ### 4.3 将数据映射到类 (103)
-### 4.4 创建、读取、更新和删除：访问模式 (106)
+
+### 4.4 创建、读取、更新和删除：访问模模式 (106)
+
 ### 4.5 验证数据值 (113)
+
 ### 4.6 生命周期回调 (116)
+
 ### 4.7 关联与继承 (119)
+
 ### 4.8 事务、并发与性能 (125)
+
 ### 4.9 使用连接池节省资源 (131)
+
 ### 4.10 资源 (132)
 
 # 5 使用 ActionController 协调活动 (133)
 
 ### 5.1 路由基础：从 URL 到方法 (134)
+
 ### 5.2 列表与显示 Action：CRUD (136)
+
 ### 5.3 创建、更新和删除 Action (140)
+
 ### 5.4 使用会话 (Sessions) 跟踪用户状态 (144)
+
 ### 5.5 使用过滤器 (Filters) 管理横切关注点 (147)
+
 ### 5.6 深度路由 (150)
+
 ### 5.7 日志、调试与基准测试 (153)
+
 ### 5.8 资源 (166)
 
 # 6 使用 ActionView 渲染输出 (167)
 
 ### 6.1 创建基础 .rhtml 文件 (168)
+
 ### 6.2 使用视图助手 (View Helpers) 减少视图代码 (169)
+
 ### 6.3 编写自定义助手 (170)
+
 ### 6.4 使用布局 (Layouts) 和部分模板 (Partials) 进行复用 (172)
+
 ### 6.5 构建 HTML 表单 (174)
+
 ### 6.6 使用 Markaby 构建 HTML (178)
+
 ### 6.7 页面、Action 和片段的缓存 (180)
+
 ### 6.8 使用 Ajax 创建动态页面 (184)
+
 ### 6.9 使用 RJS 渲染 JavaScript (191)
+
 ### 6.10 使用 Selenium 进行黑盒测试 (192)
+
 ### 6.11 结论 (196)
+
 ### 6.12 资源 (197)
 
 # 7 测试 (198)
 
 ### 7.1 TestUnit 入门 (199)
+
 ### 7.2 Rails 约定 (206)
+
 ### 7.3 Rails 对 TestUnit 的扩展 (212)
+
 ### 7.4 集成测试 (216)
+
 ### 7.5 Rails 示例 (218)
+
 ### 7.6 使用 rcov 测量代码覆盖率 (222)
+
 ### 7.7 使用模拟对象 (Mock Objects) 测试交互 (225)
+
 ### 7.8 使用存根对象 (Stub Objects) 减少依赖 (229)
+
 ### 7.9 高级考虑 (230)
+
 ### 7.10 资源 (231)
 
 # 8 自动化开发流程 (233)
 
 ### 8.1 Rake 基础 (234)
+
 ### 8.2 设置 Rake ：它就是 Ruby (236)
+
 ### 8.3 自定义 Rake 任务：它就是 Ruby (238)
+
 ### 8.4 在 Rails 应用中使用 Rake (240)
+
 ### 8.5 使用 Cerberus 进行持续集成 (243)
+
 ### 8.6 资源 (245)
 
 # 9 创建与调用 Web 服务 (247)
 
-
-
-
-
 # RESTful Web 服务 ... 248
 
 ## 9.2
+
 # SOAP Web 服务 ... 255
 
 ## 9.3
+
 # YAML 与 XML 的对比 ... 261
 
 ## 9.4
+
 # JSON 与 Rails ... 265
 
 ## 9.5
+
 # XML 解析 ... 266
 
 ## 9.6
+
 # Ruby XML 输出 ... 275
 
 ## 9.7
+
 # 使用 Builder 创建 XML ... 276
 
 ## 9.8
+
 # 解决你的数据头疼问题 ... 278
 
 ## 9.9
+
 # 资源 ... 281
 
 # 10 安全 ... 282
@@ -243,15 +352,19 @@ ISBN-13: 978-0-976166-9-5
 ### 10.5 资源 ... 302
 
 # A
+
 # Java 到 Ruby 字典 ... 303
 
 目录
+
 10
 
 # B
+
 # 参考文献 ... 306
 
 # C
+
 # Rails 项目的结构 ... 307
 
 # 索引 ... 309
@@ -284,14 +397,11 @@ ISBN-13: 978-0-976166-9-5
 
 在那个演讲之后，我上去祝贺 Stu 讲解得非常精彩。从那时起，我都会参加他做的每一场演讲。每一场都既有见地又风趣。 后来我认识的 Justin 也是如此。
 
-Ruby on Rails 是一个用于开发 Web 应用程序的全栈框架。Rails 拥抱了许多在 Java 世界中熟悉的理念：模型-视图-控制器（MVC）模式、单元测试、敏捷开发、ActiveRecord 模式以及许多其他。与此同时，Rails 也挑战了许多标准做法：相比于成里万计的配置文件，Rails 尽可能地依赖于约定。Rails 是用 Ruby 这种动态语言构建的，并以源代码的形式进行部署。
+Ruby on Rails 是一个用于开发 Web 应用程序的全栈框架。Rails 拥抱了许多在 Java 世界中熟悉的理念：模型-视图-控制器（MVC）模式、单元测试、敏捒开发、ActiveRecord 模式以及许多其他。与此同时，Rails 也挑战了许多标准做法：相比于成里万计的配置文件，Rails 尽可能地依赖于约定。Rails 是用 Ruby 这种动态语言构建的，并以源代码的形式进行部署。
 
 ## 为什么选择这本 Rails 书？
 
 有很多关于 Rails 的书籍。使我们这本书与颖而出的一个方面是我们的 Java 背景。我们关注 Rails 中那些会有不同的部分，
-
-
-
 
 对于 Java 开发者来说，既新颖又有趣。
 
@@ -312,9 +422,13 @@ Ruby on Rails 是一个用于开发 Web 应用程序的全栈框架。Rails 拥�
 Rails 让程序员工作得更高效且快乐。此外，我们发现使用 Ruby 比任何其他主流语言都能锻炼我们的思维。如果你想在茶水间闲聊关于 Ruby 和 Rails 的优点，这里有几个可以谈的话题：
 
 *   **全栈 Web 框架。** Rails 包含了你所需的一切：模型-视图-控制器（MVC）、O/RM、单元测试以及构建和部署自动化。因为一切都是紧密集成的，所以入门变得简单得离谱。
+
 *   **有偏见的软件（Opinionated software）。** Rails 的设计目的不是为了让你做任何事，而是为了帮助你做正确的事。
+
 *   **约定优于配置（Convention over configuration）。** 上述两点的危险在于你可能无法自定义框架来满足你的需求。Rails 通过“约定优于配置”避免了这个问题。Rails 的所有运行部分都通过约定结合在一起，但你可以在需要时随时覆盖这些约定。你可以按需付费，在需要的地方依赖约定，并且仅覆盖你精确需要的部分。
+
 *   **用一种语言处理应用和配置。** Rails 使用 Ruby 进行配置，也使用 Ruby 编写应用程序代码。相比 XML，Ruby 更容易管理，而且当配置变得复杂时，Ruby 要强大得多。
+
 *   **秘诀在于 Ruby。** Ruby 强大且优雅，它已经成为我们大多数时间思考时使用的语言。Ruby 包含了主流编程语言中的优秀思想。作为一名 Java 程序员，你在理解 Ruby 处理类、对象、继承和多态的方法方面将具有领先优势。Ruby 还包含了主流语言中缺失的 Smalltalk 和 Lisp 的许多特性。作为一名 Java 程序员，你会发现块（blocks）、闭包（closures）、鸭子类型（duck typing）、元编程和函数式编程如何让你的代码更具表现力和可维护性。Rails 是入门良药，Ruby 才是让人上瘾的毒药。
 
 ### 如何阅读本书
@@ -331,24 +445,27 @@ Rails 让程序员工作得更高效且快乐。此外，我们发现使用 Ruby
 
 本书的示例代码以单个 zip 格式提供。示例代码包含了两个 Rails 应用程序，分别名为 People 和 Rails XT。Rails XT 代表“Rails 探索”。Rails XT 并没有针对某个领域的统一功能集。相反，Rails XT 是几十个片段的容器。
 
-由于其异构性，Rails XT 需要更多的设置。你开始学习时不需要设置 Rails XT。当你需要设置时，可以在第 98 页的侧边栏找到说明。以下是示例目录结构的快速概述：
+由于其异构性，Rails XT 霿要更多的设置。你开始学习时不需要设置 Rails XT。当你需要设置时，可以在第 98 页的侧边栏找到说明。以下是示例目录结构的快速概述：
 
 *   **rails_xt**：包含了 Rails 测试（见第 1.6, 章《运行单元测试》，位于 32 页）和 Quips 示例应用程序。除非另有说明，书中的 Ruby 示例应在此目录下执行。
+
 *   **java_xt**：你将在整个使用这里的 Java 测试。
+
 *   **appfuse_people**：你将在整个使用这个 Java 应用程序。
+
 *   **junit4**：任何需要 JUnit4 的测试都在这里。
+
 *   **Rake**：包含了第 8, 章《开发过程自动化》（第 233 页）中的 Rake 和 Ant 示例。
+
 *   **hibernate_examples**：包含了第 4, 章《使用 ActiveRecord 访问数据》（第 96 页）中的 Hibernate 示例。
 
 ### 我们是如何开发 Java 示例的
 
 这是一本关于两个世界的书：Java 编程世界和 Ruby 世界
 
-
-
 Rails 编程的世界。当不同世界碰撞时，你可能会听到诸如“Java 太糟了，Rails 真酷……”（或者反之）的言。
 
-在这里听不到这种语调。对我们来说，这就像木工在说“锤子很糟，锯子很酷”。木工使用许多工具，程序员也应该如此。更重要的是，这种对抗性的方法限制了一个重要的机会。当你有多种解决问题的方法时，通过对比你可以学到很多。
+在这里听不到这种语调。对我们来说，这就像木工在说“锤子很糟，锯子很酚”。木工使用许多工具，程序员也应该如此。更重要的是，这种对抗性的方法限制了一个重要的机会。当你有多种解决问题的方法时，通过对比你可以学到很多。
 
 # 前言
 
@@ -386,7 +503,7 @@ Rails 编程的世界。当不同世界碰撞时，你可能会听到诸如“Ja
 
 致 Jim Weirich：感谢在 `FlexMock` 问题上提供的即时技术支持。
 
-致 Al von Ruff：感谢你对网络推想小说数据库（3） 的工作。作为读者，我们非常喜欢它，特别感谢你为书中的某些示例提供了模式结构和数据。
+致 Al von Ruff：感谢你对网络推想小说数据库（3） 的工作。作为读者，我们非常喜�它，特别感谢你为书中的某些示例提供了模式结构和数据。
 
 致 Matt Raible：感谢 `AppFuse`。没有它，我们仍然会陷在 `XML` 配置文件的深渊中。
 
@@ -403,27 +520,31 @@ Rails 编程的世界。当不同世界碰撞时，你可能会听到诸如“Ja
 在所有主要的操作系统上安装 `Ruby` 和 `Rails` 都是简单的。如果你喜欢从零开始构建软件工具，你完全可以这样做。但你不必这样做。Rails 爱好者创建了预封装的解决方案，安装你所需的一切。
 
 ### 在 Windows 上
+
 在 Windows 上，`Instant Rails` 提供了一个自包含的环境。`Instant Rails` 包含了 `Ruby`、`Rails`、`Apache` 和 `MySQL`，都在一个与机器上安装的其他内容隔离的沙箱中。
+
 1 [`instantrails.rubyforge.org`](http://instantrails.rubyforge.org)
 
 ### 在 Mac 上
+
 在 Mac 上，`Locomotive`2 是自包含的环境。像 Windows 上的 `Instant Rails` 一样，`Locomotive` 包含了运行书中代码所需的一切，并将其与你机器上的其他一切隔离。非常感谢 Ryan Raaum 提供的这个工具。`Rails` 依赖 `Ruby`，而当前的 Mac OS X 包含一个稍微过时的 `Ruby` 版本，即 `1.8.2` 版本。早晚大多数开发者都会安装更新的版本。当你决定升级你的 `Ruby` 安装时，`MacPorts`3 提供了一种构建更新版本 `Ruby` 的简单方法。
+
 下一个 Mac OS X 版本 `10.5`（豹）将已经安装了 `Rails`。W00t！
 
 ### 在 Linux 上
+
 如果你运行 Linux，你就知道如何从网上抓取数据。从 `Rails Wiki`，4 开始，找到适用于你 Linux 版的指令。书中的所有示例都假设数据库为 `MySQL`。`Locomotive` 和 `Instant Rails` 都为你安装了一个隔离的 `MySQL` 实例。如果你在 Linux 上，`Rails Wiki` 列出的指令显示了如何设置数据库。
 
 ### 1.2 十五分钟构建 Rails 应用
 
-通过 `Rails`，你可以使用 `scaffold` 代码生成器几乎瞬间构建一个简单的 Web 应用。本节将引导你在大约十五分钟内创建一个功能完整的 Web 应用。你将创建一个简单的基于表单的应用程序，用于创建、读取、更新和
-
-
-
+通过 `Rails`，你可以使用 `scaffold` 代码生成器几乎瞬间构建一个简单的 Web 应用。本节将引导你在大约十五分钟内创建一个功能完整的 Web 应用。你将创建一个简单的基于表单的应用程用于创建、读取、更新和
 
 删除人员。我们在这里不会详细解释这些步骤——那是本书其余部分要要做的事情——但你可以在本节末尾找到提示，指向将更详细讨论以下代码示例中每个方面的章节。
 
 2. [`locomotive.raaum.org`](http://locomotive.raaum.org)
+
 3. [`www.macports.org/`](http://www.macports.org/)
+
 4. [`wiki.rubyonrails.com/rails/pages/GettingStartedWithRails`](http://wiki.rubyonrails.com/rails/pages/GettingStartedWithRails)
 
 # 十五分钟构建 Rails 应用 (22)
@@ -563,9 +684,6 @@ Finished in 0.093734 seconds.
 
 在 Rails 中，开发周期经过仔细设计以尽可能地减少中断。你更改代码并刷新浏览器即可看到更改。仅此而已。不需要任何编译、部署或重启服务器。这种简单的周期对生产力有两个巨大的影响。首先，工作速度更快了。因为你不需要等待更改的结果，所以你会做更多的更改，等待更少。其次，也是更微妙的一点，你会在过程中学到更多。在 Rails 中，很容易在进行时“尝试各种事物”并进行小实验。在开发周期更复杂的环境中，这些小实验根本不会发生。
 
-
-
-
 为了直观地看到效果，让我们对 People 应用进行一些改进。如果你还没有运行该程序，请使用 `script/server` 重新启动它。在我们进行系列更改时，我们将保持应用程序持续运行。
 
 我们的 People 应用没有进行任何数据验证。如果你创建一个名字和姓氏为空的人，它会乐意地在数据库中存储一条虚假记录。对于 Web 来说，验证至关重要，而 Rails 让验证变得非常简单。要添加验证，请打开 `app/models/person.rb` 文件。将文件修改如下：
@@ -582,7 +700,7 @@ end
 
 当你为模型添加验证时，其影响会自动传播到视图，无需任何额外工作。验证将在第 113 页第 4.5 节“验证数据值”中详细介绍。
 
-接下来，让我们对人员列表视图进行更改。如果你访问 `http://localhost:3000/people/list`，你应该能看到人员列表。我们可以通过添加搜索框来让列表更有用。打开 `app/views/people/list.rhtml` 文件，在 `<h1>Listing people</h1>` 之后插入以下代码：
+接下来，让我们对人员列表视view进行更改。如果你访问 `http://localhost:3000/people/list`，你应该能看到人员列表。我们可以通过添加搜索框来让列表更有用。打开 `app/views/people/list.rhtml` 文件，在 `<h1>Listing people</h1>` 之后插入以下代码：
 
 [下载 code/people/app/views/people/list.rhtml](http://media.pragprog.com/titles/fr_r4j/code/code/people/app/views/people/list.rhtml)
 
@@ -599,6 +717,7 @@ People named:
 ```
 
 ![Image 40](img/index-27_1.jpg)
+
 图 1.2: 表单验证
 
 `<%= %>` 内的代码是嵌入式 Ruby，我们将在第 167 页第 6 章“使用 ActionView 渲染输出”中介绍。现在，刷新浏览器到 `http://localhost:3000/people/list`，你应该能看到像下一页图 1.3 所示的搜索表单。
@@ -626,6 +745,7 @@ end
 ```
 
 ![Image 41](img/index-28_jpg)
+
 图 1.3: 搜索表单
 
 在在线文档中查找信息
@@ -635,8 +755,11 @@ end
 所有 Rails 开发者都应该收藏这些文档网站：
 
 - `http://api.rubyonrails.org`:整个 Rails API 的最新文档。
+
 - `http://www.ruby-doc.org/`: Ruby 文档站点。指向库文档、书籍等更多内容。
+
 - `http://www.ruby-doc.org/core`: Ruby Core 文档（大致相当于 `java.lang`、`java.io` 和 `java.util`）。
+
 - `http://www.ruby-doc.org/stdlib/`: 标准库文档。它大致相当于 JDK 中除之前列出的包之外的所有内容。
 
 Ruby API 文档通常以 RDoc 格式呈现。RDoc 与 Javadoc 类似；这两个工具都通过读取源代码和嵌入注释来构建文档。
@@ -648,12 +771,12 @@ Rails 包含了在你的本地机器上构建文档文件的 Rake 任务。从�
 Ruby 和 Rails 的 GUI 工具（如 IDE）与它们的 Java 对应相比非常原始。但它们比记事本要好。这里是一些建议：1997 年，Java IDE 与它们的 C++ 对应相比也非常原始。
 
 - **TextMate (仅限 Mac)**: 如果你愿意付费，买 TextMate。它拥有 Emacs 大部分功能和可定制性，再加上原生 Mac 应用程序的 GUI。
+
 - **Radrails（跨平台，开源）**: `Radrails` (`http://www.radrails.org/`) 构建在 Eclipse 之上，因此它可以在几乎任何地方运行。如果你已经将 Eclipse 作为 Java 的首选 IDE，那么它是一个完美选择。
+
 - **IntelliJ IDEA（跨平台）**: `IntelliJ IDEA` 预计将通过 `IDEA 6.0` 插件支持 Rails。我们还没有用过它，但对其寄予了厚望。IDEA 是我们 Java 开发的首选 IDE。
+
 - **老派...**: `vim` 有一个很好的 Rails 插件。Emacs 也有一个 Rails 辅助模式。
-
-
-
 
 你可以亲自尝试的便利。
 
@@ -675,8 +798,11 @@ hello
 ```
 
 之前的 shell 显示了以下：
+
 * 你输入的 Ruby 代码（第 1 行）
+
 * 控制台交互（第 2 行）
+
 * 上一个语句的返回值（第 3 行）
 
 另有说明，书中的 `irb` 示例都是自包含的，显示了你需要输入的所有 Ruby 代码。为了简洁起见，当控制台输出和返回值与要点无关时，我们经常会省略它们。
@@ -693,7 +819,7 @@ tautology
 => nil
 ```
 
-如果你像我们一样经常犯打字错误，你也可以向 `irb` 粘贴多行代码。当代码变得长到在 `irb` 中输入变得非常不方便时，你可能就会想要切换到完整的 Ruby 程序了。
+如果你像我们一样经常犯打字错误，你也可以向 `irb` 粘贴多行代量。当代码变得长到在 `irb` 中输入变得非常不方便时，你可能就会想要切换到完整的 Ruby 程序了。
 
 ### 运行 Ruby 示例
 
@@ -742,29 +868,45 @@ for (Iterator iterator = people.iterator(); iterator.hasNext(); { Person p = (Pe
 ### 1.7 Rails 环境
 
 Web 应用程序运行在三个不同的环境中：
+
 * 在 **development（开发）**环境中，有开发者存在。代码和数据模式倾向于快速且交互式地变化。数据通常由开发者手动创建。
+
 * 在 **test（测试）**环境中，针对预先封装好的示例数据运行自动化测试。数据模式经常被丢弃并重建，以确保测试状态的一致性。
+
 * 在 **production（生产）**环境中，代码和模式很少更改。数据库数据是真实且宝贵的，开发者很少在场。
 
 在 Java Web 框架中，环境在历史上通常是随意的，每个团队演化出自己的环境，使用一系列脚本和 Ant 任务来管理环境并在之间移动代码和数据。在 Rails 中，环境是一个一等公民。每个应用程序在启动时就包含了这三个环境。Rails 环境用于选择数据库、日志文件目标、加载代码策略等。
 
 **Development（开发）：**
+
 * 日志文件为 `development.log`。
+
 * 数据库为 `{appname}_development`。
+
 * 启用断点服务器。
+
 * 网页显示错误堆栈跟踪。
+
 * 每个页面都会重新加载类。
 
 **Test（测试）：**
+
 * 日志文件为 `log/test.log`。
+
 * 数据库为 `{appname}_test`。
+
 * 禁用断点服务器。
+
 * 网页显示通用错误消息。
+
 * 类在启动时加载一次。
 
 **Production（生产）：**
+
 * 日志文件为 `log/production.log`。
+
 * 数据库为 `{appname}_production`。
+
 （此处内容重复，省略）
 
 你可以通过编辑相应的环境文件来更改环境默认值。环境文件以其控制的环境命名，例如用于开发环境的 `config/environments/development.rb`。（你只需向 `config/environments` 目录添加文件即可创建新环境）。还有一个名为 `config/environment.rb` 的顶层环境文件，包含所有环境通用的设置。
@@ -782,9 +924,6 @@ config.action_controller.perform_caching = false
 ```
 
 最明显的特点是配置就是 Ruby。在 Java Web 应用中，代码是一种语言（Java），而配置是另一种语言（XML）。在 Rails 应用程序中，Ruby 通常用于代码和配置。
-
-
-
 
 让我们尝试修改 Rails 环境。虽然 Rails 对英语语法的掌握相当不错，但你可能觉得它得还不够好。
 
@@ -861,17 +1000,26 @@ production:
 
 ## Rails 支持脚本
 
-每个新的 Rails 应用程序都包含一个 `script` 目录，其中包含一组辅助 Ruby 脚本。`script` 类似于许多 Java 项目中的 `bin` 目录。这些脚本从 Rails 项目的根目录运行，如下所示：不要进入 script 目录并在该处运行脚本。Rails 中的相对路径始终从根目录开始计算，在 Rails 中可以通过 `RAILS_ROOT` 可用。你已经在本章中看到了几个脚本：`script/console`、`script/server` 和 `script/generate`。这里是所有脚本的总结：
+每个新的 Rails 应用程序都包含一个 `script` 目录，其中包含一组辅助 Ruby 脚本。`script` 类似于许多 Java 项目中的 `bin` 目录。这些脚本从 Rails 项目的根目�运行，如下所示：不要进入 script 目录并在该处运行脚本。Rails 中的相对路径始终从根目录开始计算，在 Rails 中可以通过 `RAILS_ROOT` 可用。你已经在本章中看到了几个脚本：`script/console`、`script/server` 和 `script/generate`。这里是所有脚本的总结：
 
 - `script/about`：描述 Rails 环境版本、`RAILS_ROOT` 和 `RAILS_ENV`。
+
 - `script/breakpoint`：是一个交互式 Ruby Shell，当遇到断点语句时它将接管 Rails 应用。
+
 - `script/console`：是一个可以访问你的 Rails 应用的交互式 Ruby Shell。
+
 - `script/destroy`：销毁由 `generate` 创建的代码（小心！）。
+
 - `script/generate`：从名为 generator 的模板创建启动代码。
+
 - `script/performance/benchmark`：运行一行 Ruby 代码 `n` 次并报告执行时间。
+
 - `script/performance/profiler`：运行一行 Ruby 代码 `n` 次并报告在各种方法中花费的长时间。
+
 - `script/plugin`：安装并管理插件（第三方扩展）。
+
 - `script/runner`：在你的应用程序环境中运行一行代码。
+
 - `script/server`：启动 Web 服务器和 Rails 应用。
 
 你现在已经了解了 Rails 应用程序的基本结构，以及一些你可以用来管理开发过程的工具。不过，你不会一次性使用所有这些信息。相反，请将本章作为你阅读本书时的路线图。在下一章，我们将带你深入了解 Ruby。
@@ -898,8 +1046,11 @@ public void testIntOverflow() {
 ```
 
 在这个简单的例子中，三个因素显而易见：
+
 - Java 变量是静态类型的。在第 2 行，关键字 `int` 表明 `TWO_BILLION` 必须是 `int`。编译器会强制执行这一点。
+
 - Java 利用了我们熟悉的熟悉的语法：中缀数学。要计算一加一，你可以显而易地说 `1+1`（第 3 行），而不是烦人的 `1.plus(1)`。
+
 - 在第 5 行，十亿加十亿并不等于四十亿。这是因为 Java 的原始类型受限于内存中的特定位宽，而四十亿需要太多的位数。为了表示任意整数，Java 使用了 `BigInteger` 类：
 
 ```java
@@ -907,9 +1058,6 @@ public void testBigInteger() {
   BigInteger twobil = new BigInteger("2000000000");
 }
 ```
-
-
-
 
 ```java
 BigInteger doubled = twobil.multiply(new BigInteger("2" ));
@@ -922,13 +1070,17 @@ assertEquals(new BigInteger("4000000000" ), doubled);
 在这个示例中，`BigInteger` 与 `int` 有三点不同：
 
 * 你不能使用字面量语法创建 `BigInteger` 实例。你不是写 `BigInteger b = 10;`，而是写 `BigInteger b = new BigInteger("10")`（第 2 行）。
+
 * 你不能使用中缀数学符号。在第 3 行，你必须使用 `a.multiply(b)` 而不是 `a*b`。
+
 * 在第 4 行，二十亿乘以二确实等于四十亿。
 
 Ruby 也知道如何处理整数。与 Java 来说，Ruby 需要执行以下操作：
 
 * 强制执行类型安全
+
 * 提供方便的语法
+
 * 在计算机（有限的）内部平滑地处理人类对整数的概念（无限的）
 
 Ruby 采取了完全不同的方法来实现这些目标：
@@ -945,7 +1097,9 @@ irb(main):002:0> TWO_BILLION + TWO_BILLION
 ```
 
 * Ruby 中的一切皆为对象，且类型通常不会在源代码中声明。因此，你不需要写 `int TWO_BILLION=...`，你只需要写 `TWO_BILLION=....`。这里没有编译器来确保 `TWO_BILLION` 确实是一个整数。
+
 * Ruby 允许整数以及任何其他需要的的类型使用中缀数学语法，如 `(2+2)`。
+
 * 二十亿加二十亿确实等于四十亿，正如预期那样。
 
 在后台，Ruby 通过管理两种不同的类型来处理异常大小的整数：`Fixnum` 用于具有方便表示法的小整数，而 `Bignum` 用于更大的数字。可以找出实际上正在使用哪种类型：
@@ -1066,14 +1220,14 @@ irb(main):025:0> "Hello"[1,4]
 => "ello"
 ```
 
-获取字符串范围外的字符会返回 `nil`：
+获取字符串范囆外的字符会返回 `nil`：
 
 ```
 irb(main):026:0> "Hello"[1000]
 => nil
 ```
 
-但是，尝试设置字符串范围外的字符会抛出异常：
+但是，尝试设置字符串范囆外的字符会抛出异常：
 
 ```
 irb(main):009:0> "Hello"[1000] = ?Z
@@ -1102,9 +1256,6 @@ print("one\ntwo\nthree" );
 
 多行字符串以 `<<` 开始，后面跟着一个你选择的字符串。该字符串再次出现在行开头以结束 heredoc。
 
-
-
-
 - [下载 code/rails_xt/sample_output/heredoc.irb](http://media.pragprog.com/titles/fr_r4j/code/code/rails_xt/sample_output/heredoc.irb)
 
 ```ruby
@@ -1118,7 +1269,7 @@ two
 three
 ```
 
-正则表达式为在 `Strings` 中查找和修改字符范围提供了强大的语法。例如，这里有一个 Java 方法，它使用正则表达式来屏蔽掉 `String` 中出现的任何四个字母的单词：
+正则表达式为在 `Strings` 中查找和修改字符范囆提供了强大的语法。例如，这里有一个 Java 方法，它使用正则表达式来屏蔽掉 `String` 中出现的任何四个字母的单词：
 
 - [下载 code/java_xt/src/Bowdlerize.java](http://media.pragprog.com/titles/fr_r4j/code/code/java_xt/src/Bowdlerize.java)
 
@@ -1230,7 +1381,9 @@ irb(main):069:0> Math.cos Math::PI
 计算机科学充满了各种奇怪的集合（数据结构）。作为通用编程语言，Java 和 Ruby 可以处理这些中的任何一种，但日常使用通常可以归纳为三类：
 
 - 通过数字索引访问的有序集合（如数组）
+
 - 从键到值的快速映射，也称为字典（dictionaries）或哈希（hashes）
+
 - 迭代，即对任何集合或流的通用遍历
 
 以下章节将涵盖这些集合最常用的用法
@@ -1264,9 +1417,6 @@ two
 three
 ```
 
-
-
-
 • Ruby 的 `puts`（大致）等同于 Java 的 `System.out.println`。调用 `puts` 不需要显式的对象；它是在隐式的顶层对象上被调用的。
 
 现在，回到那的一行代码。这里是 Ruby 的等效写法：
@@ -1276,6 +1426,8 @@ ARGV.each {|x| puts x}
 ```
 
 Ruby 将 `ARGV` 填充为一个命令行参数的数组。该行的其余部分执行了以下操作：“逐个从 `ARGV` 中取出每个元素。将其赋值给 `x`。然后执行大括号之间（以及在 `|x|` 之后）之间的代码块。”如果你想将一个块跨越多行，可以使用 `do...end`。这里是使用 `do...end` 的参数打印程序：
+
+
 
 [下载代码/rails_xt/samples/print_args_long.rb](http://media.pragprog.com/titles/fr_r4j/code/code/rails_xt/samples/print_args_long.rb)
 
@@ -1288,15 +1440,17 @@ end
 Ruby 数组有字面量语法，因此它们可以很容易地内联创建：`irb(main):009:0> ['C', 'Java', 'Ruby'].each {|lang| puts "#{lang} is fun!"}`
 
 C 是有趣的！
+
 Java 是有趣的！
+
 Ruby 是有趣的！
+
 => ["C", "Java", "Ruby"]
-
-
 
 如果如果数组中的每项都是单词，则有一种更短的语法，即 `%w` 快捷方式：
 
 `irb(main):002:0> ['C', 'Java', 'Ruby'] == %w{C Java Ruby}
+
 => true`
 
 Ruby 数组对数学运算符有非常合理的响应：
@@ -1352,25 +1506,21 @@ public class PrintEnv {
     }
 }
 ```
-*(注：原文提供的 Java 代码片段似乎不完整，此处翻译时根据上下文进行了逻辑性补全以保持代码可读性，但遵循指令不翻译代码块内容)*
-
-由于原文提供的文本后部分存在大量的重复和乱码断句，以下是基于原文逻辑的清理与翻译内容：
-
-## Java Map 和 Ruby Hash
-
-Java 有 Map 的几种实现，Map 是管理键/值对的集合。其中一种集合就是环境变量。这里，有一个列举环境变量的简单程序：
-
-[下载代码/java_xt/src/PrintEnv.java](http://media.pragprog.com/titles/fr_r4j/code/code/java_xt/src/PrintEnv.java)
-
-（此处 Java 代码块保持不翻译）
-
-*由于原文后半部分出现了严重的逻辑混乱和字符重复（如 "Ruby is fun!" 的重复等），作为高级文档工程师，我将针对核心语义结构进行翻译：*
 
 # 集合与迭代
 
 Ruby 数组是可调整的，并可以使用 `push` 和 `pop` 像栈一样操作：
 
-（代码块保持不翻译）
+```ruby
+irb(main):006:0> skills = ['C', 'Java']
+=> ["C", "Java"]
+
+irb(main):007:0> skills.push 'Ruby'
+=> ["C", "Java", "Ruby"]
+
+irb(main):008:0> skills.pop
+=> "Ruby"
+```
 
 ## Java Map 和 Ruby Hash
 
@@ -1378,9 +1528,19 @@ Java 有 Map 的几种实现，Map 是管理键/值对的集合。其中一种�
 
 [下载代码/java_xt/src/PrintEnv.java](http://media.pragprog.com/titles/fr_r4j/code/code/java_xt/src/PrintEnv.java)
 
-（代码块保持不翻译）
+```java
+import java.util.*;
 
----
+public class PrintEnv {
+    public static void main(String[] args) {
+        Map map = System.getenv();
+        for (Iterator it = map.entrySet().iterator(); it.hasNext();) {
+            Map.Entry entry = (Map.Entry) it.next();
+            System.out.printf("%s = %s%n", entry.getKey(), entry.getValue());
+        }
+    }
+}
+```
 
 ## 2.5
 
@@ -1408,9 +1568,6 @@ else
 end
 ```
 
-
-
-
 就像 Java 中的做法一样：
 
 ```ruby
@@ -1419,7 +1576,7 @@ puts n>5 ? "big" : "little"
 
 Java 不会自动将值强制转换为布尔值以用于条件判断。要检查一个对象是否存在，你不能这样写：
 
-[Download code/java_xt/src/DemoControlFlow.java](http://media.pragprog.com/titles/fr_r4j/code/code/java_xt/src/DemoControlFlow.java)
+[下载代码/java_xt/src/DemoControlFlow.java](http://media.pragprog.com/titles/fr_r4j/code/code/java_xt/src/DemoControlFlow.java)
 
 ```java
 if (o) {
@@ -1437,7 +1594,7 @@ if (o != null) {
 
 Ruby 会自动将值转换为布尔。以下代码会产生 false：
 
-[Download code/rails_xt/samples/control_flow.rb](http://media.pragprog.com/titles/fr_r4j/code/code/rails_xt/samples/control_flow.rb)
+[下载代码/rails_xt/samples/control_flow.rb](http://media.pragprog.com/titles/fr_r4j/code/code/rails_xt/samples/control_flow.rb)
 
 ```ruby
 o = nil
@@ -1515,7 +1672,7 @@ end
 
 像使用 `if` 一样，你可以将 `while` 和 `unless` 作为语句修饰符。以下程序运行一个输入循环，将通过 `stdin` 的所有内容大声输出：
 
-[Download code/rails_xt/samples/short_while.rb](http://media.pragprog.com/titles/fr_r4j/code/code/rails_xt/samples/short_while.rb)
+[下载代码/rails_xt/samples/short_while.rb](http://media.pragprog.com/titles/fr_r4j/code/code/rails_xt/samples/short_while.rb)
 
 ```ruby
 line = ""
@@ -1537,7 +1694,7 @@ irb(main):026:0> i=1; puts(i*i) || i+=1 while i<=5
 
 这里的丑陋源于使用布尔运算符 `||` 将两条语句挤进一行，以符合语句修饰符的形式。我们不会那样写代码，幸运的是在 Ruby 中也不需要这样做。首选的一行实现如下：
 
-[Download code/rails_xt/sample_output/range](http://media.pragprog.com/titles/fr_r4j/code/code/rails_xt/sample_output/range)
+[下载代码/rails_xt/sample_output/range](http://media.pragprog.com/titles/fr_r4j/code/code/rails_xt/sample_output/range)
 
 ```ruby
 irb(main):029:0> (1..5).each {|x| puts x}
@@ -1572,7 +1729,7 @@ C
 
 你可以方便地遍历范围并跳过某些元素：
 
-[Download code/rails_xt/sample_output/range_step](http://media.pragprog.com/titles/fr_r4j/code/code/rails_xt/sample_output/range_step)
+[下载代码/rails_xt/sample_output/range_step](http://media.pragprog.com/titles/fr_r4j/code/code/rails_xt/sample_output/range_step)
 
 ```ruby
 irb(main):03:0> ('A'..'I').step(2) {|x| x}
@@ -1583,7 +1740,7 @@ ACE
 
 Java 提供了 `switch` 语句，可以通过测试不同的值来分支到不同的操作。虽然你可以使用 `if` 实现相同的逻辑，但如果有几个分支，`switch` 会产生更整洁的代码。这是一个从字母等级计算数字等级的示例：
 
-[Download code/java_xt/src/DemoSwitch.java](http://media.pragprog.com/titles/fr_r4j/code/code/java_xt/src/DemoSwitch.java)
+[下载代码/java_xt/src/DemoSwitch.java](http://media.pragprog.com/titles/fr_r4j/code/code/java_xt/src/DemoSwitch.java)
 
 ```java
 public static int numberGrade(char letter) {
@@ -1601,7 +1758,7 @@ public static int numberGrade(char letter) {
 
 Ruby 对 `switch` 的回答是 `case`：
 
-[Download code/rails_xt/samples/case.rb](http://media.pragprog.com/titles/fr_r4j/code/code/rails_xt/samples/case.rb)
+[下载代码/rails_xt/samples/case.rb](http://media.pragprog.com/titles/fr_r4j/code/code/rails_xt/samples/case.rb)
 
 ```ruby
 def number_grade(letter)
@@ -1632,7 +1789,9 @@ end
 如此示例所示，`case` 执行的标准比较。它执行的是强大得多。Ruby 定义了一种名为“相等性”（case equality）的操作。相等性是在 `case` 语句中进行的特殊比较。这允许不同类型定义它们在 `case` 语句中如何匹配的概念。`letter_grade` 示例展示了相等性在不同类中的工作方式：
 
 - 如 `90..100` 的范围定义相等性为“匹配范围内的任何数字”。
+
 - 如 `Integer` 的类定义相等性为“匹配此类型的任何对象”。
+
 - 如 `/[A-F]/` 的正则表达式定义相等性为“匹配此正则表达式”。
 
 `case` 一遇到真的 `when` 就会完成，因此你应该先列出更具体的匹配项：
@@ -1660,16 +1819,13 @@ irb(main):06:0> Integer === 95.5
 => false
 ```
 
-
-
-
 字段通常被标记为 `private`，以便它们只能从类内部访问。这样，你以后可以更改底层表示。例如，你可以将整个姓名存储在 `fullName` 字段中，而只有可能更改该字段的代码位于类内部。
 
 # 定义类
 
 Ruby 的 `Person` 类从一个简单的类声明开始：
 
-[下载 code/rails_xt/samples/person.rb](http://media.pragprog.com/titles/fr_r4j/code/code/rails_xt/samples/person.rb)
+[下载代码/rails_xt/samples/person.rb](http://media.pragprog.com/titles/fr_r4j/code/code/rails_xt/samples/person.rb)
 
 ```ruby
 class Person
@@ -1708,9 +1864,13 @@ Ruby 有不同的名称冲突问题；它是局部变量和方法调用之间的
 # 定义类
 
 | Java 名称 | Ruby 名称 | 含义 |
+
 | :--- | :--- | :--- |
+
 | Fields (字段) | Instance variables (实例变量) | 由类实例拥有/管理的状态 |
-| Methods (方法) | Methods (方法) | 在类实例“上”调用的函数，并可以访问实例的状态 |
+
+| Methods (方法) | Methods (方法) | 在类实例“上”调用的函数，并可以访实例的状态 |
+
 | Constructors (构造函数) | Initializers (初始化) | 特殊创建函数，每个新实例调用一次，用于设置和验证实例的初始状态 |
 
 图 2.1：类包含什么？
@@ -1759,7 +1919,7 @@ end
 
 Ruby 的访问器命名约定不使用 `get` 和 `set` 前缀。根据 `Person` 的定义，你会这样访问属性：
 
-[下载 code/rails_xt/samples/demo_person.rb](http://media.pragprog.com/titles/fr_r4j/code/code/rails_xt/samples/demo_person.rb)
+[下载代码/rails_xt/samples/demo_person.rb](http://media.pragprog.com/titles/fr_r4j/code/code/rails_xt/samples/demo_person.rb)
 
 ```ruby
 p.first_name = 'Justin'
@@ -1801,10 +1961,6 @@ end
 ```
 
 由于 Ruby 方法总是返回最后一个表达式，setter 方法返回设置的值。这意味着多个 setter 可以链式调用，例如 `other.last_name = self.last_name`。注意 Ruby 的 `self` 等于 Java 的 `this`。
-
-
-
-
 
 ### Java Person - 图 2.2
 
@@ -1849,6 +2005,7 @@ class Person {
     }
 }
 ```
+
 `java_xt/src/Person.java`
 
 ### Ruby Person - 图 2.3
@@ -1875,6 +2032,7 @@ class Person
   end
 end
 ```
+
 `rails_xt/samples/person.rb`
 
 ## 2.7 身份与相等性
@@ -1933,7 +2091,9 @@ irb(main):010:0> s3.equal? s4
 Ruby 有两个不同的方法来测试对象相等性：`==` 和 `eql?`。事实上，Ruby 经常有两个（甚至更多）执行相同任务的方法。Ruby 的方法通常被称为“有不止一种实现方式”（TMTOWDI，读作“Tim Toady”）。这与 Java 形成了对比，Java 更符合 Bertrand Meyer 的观点：“一种编程语言应该为执行任何感兴趣的操作提供一种良好的方法；它应该避免提供两种。”
 
 Martin Fowler 使用 `人性化接口`（humane interface）一词来描述在 Ruby、Perl 和 Lisp 中采用的方法；他使用 `最小接口`（minimal interface）一词来描述例如 Java、Python 和 Eiffel 中采用的方法。你可以在 Martin 的 Bliki 中找到大量支持这两种观点的信息：
+
 - `http://www.martinfowler.com/bliki/HumaneInterface.html`
+
 - `http://www.martinfowler.com/bliki/MinimalInterface.html`
 
 ## 2.8 继承
@@ -2007,18 +2167,20 @@ puts p.favorite_language
 
 Ruby 和 Java 都不支持多实现继承。
 
-
-
-
 见 3.5, 委托，位于第 83 页；节 3.8, 混合，位于第 90 页。
 
 # 使用访问修饰符控制访问
 
 | 修饰符 | 访问级别 | 用途 |
+
 | :--- | :--- | :--- |
+
 | `private` | 仅同一类访问 | 字段 |
+
 | (未指定) | 同包内的任何类访问 | 密切协作的类 |
+
 | `protected` | 同包内的任何类或任何子类访问 | 基类方法 |
+
 | `public` | 所有人 | 客户端接口 |
 
 图 2.4：Java 访问修饰符
@@ -2156,8 +2318,6 @@ public class AccessMe {
 }
 ```
 
-
-
 编程。这些用法借自许多地方，包括 Perl、Smalltalk 和 Lisp。在下一章中，你将学习如何使用这些用法用更少的代码完成更多的工作，并将学习如何编写既有表现力又美的 Ruby。
 
 # 第 3 章：Java  way Ruby 之路
@@ -2168,7 +2328,7 @@ public class AccessMe {
 
 程序员经常需要为语言运行时本身部分的类添加方法。在这里，子类化通常不是选项，因为该方法需要对基类本身的实例可用。例如，Java 和 Ruby 都没有一个方法可以判断 `String` 是否为空（blank），换句话说，就是 `null`、空字符串或仅包含空白字符。测试空白的方法是有用的，因为许多应用程序希望以相同的方式处理所有空白输入。对于 Java 和 Ruby，开源社区都提供了测试空白的方法。以下是来自 Apache Commons Lang 的 `isBlank()` 的 Java 实现：
 
-[下载 code/Language/IsBlank.java](http://media.pragprog.com/titles/fr_r4j/code/code/Language/IsBlank.java)
+[下载代码/Language/IsBlank.java](http://media.pragprog.com/titles/fr_r4j/code/code/Language/IsBlank.java)
 
 ```java
 public class StringUtils {
@@ -2189,7 +2349,7 @@ public class StringUtils {
 
 由于不能向核心类添加方法，Commons Lang 使用了标准的 Java 用法，将扩展方法作为静态方法收集在另一个类中。`isBlank()` 的实现位于 `StringUtils` 类内部。`isBlank()` 的调用者在每次调用前都会加上辅助类名 `StringUtils`：
 
-[下载 code/java_xt/src/TestStringUtils.java](http://media.pragprog.com/titles/fr_r4j/code/code/java_xt/src/TestStringUtils.java)
+[下载代码/java_xt/src/TestStringUtils.java](http://media.pragprog.com/titles/fr_r4j/code/code/java_xt/src/TestStringUtils.java)
 
 ```java
 import junit.framework.TestCase;
@@ -2207,7 +2367,7 @@ public class TestStringUtils extends TestCase {
 
 Ruby 类是开放的——你可以随时修改它们。因此，Ruby 的开放式方法是像 Rails 那样向 `String` 添加 `blank?`：
 
-[下载 code/rails/activesupport/lib/active_support/core_ext/blank.rb](http://media.pragprog.com/titles/fr_r4j/code/code/rails/activesupport/lib/active_support/core_ext/blank.rb)
+[下载代码/rails/activesupport/lib/active_support/core_ext/blank.rb](http://media.pragprog.com/titles/fr_r4j/code/code/rails/activesupport/lib/active_support/core_ext/blank.rb)
 
 ```ruby
 class String
@@ -2219,7 +2379,7 @@ end
 
 这里是对 `blank?` 的一些调用：
 
-[下载 code/rails_xt/test/examples/blank_test.rb](http://media.pragprog.com/titles/fr_r4j/code/code/rails_xt/test/examples/blank_test.rb)
+[下载代码/rails_xt/test/examples/blank_test.rb](http://media.pragprog.com/titles/fr_r4j/code/code/rails_xt/test/examples/blank_test.rb)
 
 ```ruby
 require File.dirname(__FILE__) + '/../test_helper'
@@ -2241,7 +2401,7 @@ Java 的 `isBlank()` 使用辅助类 `StringUtils` 还有第二个原因。即�
 
 Java `null` 的 Ruby 等价是 `nil`。然而，`nil` 是一个真正的对象。你可以像调用任何其他对象一样对 `nil` 调用方法。对当前任务更重要的是，你可以像对任何其他对象一样为 `nil` 添加方法：以下代码导致 `nil.blank?` 返回 `true`。
 
-[下载 code/rails/activesupport/lib/active_support/core_ext/blank.rb](http://media.pragprog.com/titles/fr_r4j/code/code/rails/activesupport/lib/active_support/core_ext/blank.rb)
+[下载代码/rails/activesupport/lib/active_support/core_ext/blank.rb](http://media.pragprog.com/titles/fr_r4j/code/code/rails/activesupport/lib/active_support/core_ext/blank.rb)
 
 ```ruby
 class NilClass
@@ -2258,12 +2418,14 @@ Rails 还为其他几个对象提供了合理的 `blank?` 定义：`true`、`fal
 大多数程序员可能首先考虑可变对象（状态可以改变的对象）。然而，不可变对象（创建后状态永远不会改变的对象）有许多用途。不可变对象具有许多理想的属性：
 
 *   不可变对象是线程安全的。线程无法破坏无法更改的内容。
+
 *   不可变对象使实现更容易。
+
 *   不可变对象是良好的哈希键。
 
 Ruby 采取了不同的方法。可变性是实例的属性，而不是整个类的。任何实例都可以通过调用 `freeze` 变为不可变。
 
-[下载 code/rails_xt/sample_output.irb](http://media.pragprog.com/titles/fr_r4j/code/code/rails_xt/sample_output.irb)
+[下载代码/rails_xt/sample_output.irb](http://media.pragprog.com/titles/fr_r4j/code/code/rails_xt/sample_output.irb)
 
 ```ruby
 irb(main):001:0> s = "Go Ruby String!"
@@ -2280,11 +2442,7 @@ TypeError: can't modify frozen String
 
 Ruby 字符串自动不可变的，但相同的问题仍然会发生。Ruby 方法通常通过方法名提供提示。除了 `upcase` 之外，还有 `upcase!`。根据惯例，以感叹号（bang）结尾的方法名是变异器，而不带感叹号的相同名保持对象不变，返回一个新对象。因此，修复上述代码的一种可能方案是：
 
-
-
-
-
-[下载 code/rails_xt/sample_output/bang.irb](http://media.pragprog.com/titles/fr_r4j/code/code/rails_xt/sample_output/bang.irb)
+[下载代码/rails_xt/sample_output/bang.irb](http://media.pragprog.com/titles/fr_r4j/code/code/rails_xt/sample_output/bang.irb)
 
 ```
 irb(main):004:0> s = "Go Ruby String!"
@@ -2303,7 +2461,7 @@ irb(main):006:0> p "Shouting: #{s}"
 
 Java 通过包（packages）来解决这个问题。包名全小写并用点号分隔。包名通常以你域名的反转形式开始，然后可以跟其他在你的组织内具有意义的其他部分。由于域名应该是全局唯一的，因此不太可能发生命名冲突。包名单独出现在类定义的顶端：
 
-[下载 code/java_xt/src/com/codecite/User.java](http://media.pragprog.com/titles/fr_r4j/code/code/java_xt/src/com/codecite/User.java)
+[下载代码/java_xt/src/com/codecite/User.java](http://media.pragprog.com/titles/fr_r4j/code/code/java_xt/src/com/codecite/User.java)
 
 ```java
 package com.codecite;
@@ -2318,7 +2476,7 @@ public class User {
 
 这个看起来相似的类完全不同，因为它属于一个不同的包 `com.relevancellc`：
 
-[下载 code/java_xt/src/com/relevancellc/User.java](http://media.pragprog.com/titles/fr_r4j/code/code/java_xt/src/com/relevancellc/User.java)
+[下载代码/java_xt/src/com/relevancellc/User.java](http://media.pragprog.com/titles/fr_r4j/code/code/java_xt/src/com/relevancellc/User.java)
 
 ```java
 package com.relevancellc;
@@ -2333,7 +2491,7 @@ public class User {
 
 当你使用上述两个类中的某一个时，必须指定它的全名，即包名加类名。例如：
 
-[下载 code/java_xt/src/UseBoth.java](http://media.pragprog.com/titles/fr_r4j/code/code/java_xt/src/UseBoth.java)
+[下载代码/java_xt/src/UseBoth.java](http://media.pragprog.com/titles/fr_r4j/code/code/java_xt/src/UseBoth.java)
 
 ```java
 public class UseBoth {
@@ -2346,7 +2504,7 @@ public class UseBoth {
 
 大多数时候，你不会遇到两个名称冲突。如果是这种情况，你可以导入一个包。你可以使用短形式（仅类名）编写导入的包，Java 使用 `import` 语句来确定你所引用的类：
 
-[下载 code/java_xt/src/UseCodeciteUser.java](http://media.pragprog.com/titles/fr_r4j/code/code/java_xt/src/UseCodeciteUser.java)
+[下载代码/java_xt/src/UseCodeciteUser.java](http://media.pragprog.com/titles/fr_r4j/code/code/java_xt/src/UseCodeciteUser.java)
 
 ```java
 import com.codecite.User;
@@ -2360,7 +2518,7 @@ public class UseCodeciteUser {
 
 Ruby 程序使用模块（modules）来创建命名空间。以下两个 `User` 类位于不同的模块中：
 
-[下载 code/rails_xt/samples/user.rb](http://media.pragprog.com/titles/fr_r4j/code/code/rails_xt/samples/user.rb)
+[下载代码/rails_xt/samples/user.rb](http://media.pragprog.com/titles/fr_r4j/code/code/rails_xt/samples/user.rb)
 
 ```ruby
 module Relevance
@@ -2376,7 +2534,9 @@ end
 Java 程序员被强烈建议以反转的域名开始包名。例如，Apache Commons Lang 项目中的代码以 `org.apache.commons.lang` 开始。Ruby 没有这样的准则，因此模块倾向于根据其功能或品牌原因命名。例如，Rails MVC 控制器代码位于 `ActionController` 模块中。Ruby 程序员较少担心命名冲突，原因有三点：
 
 - 类或模块层面的命名冲突很容易解决。Ruby 的类型安全取决于鸭子类型（duck typing）（参见章节 3.7 鸭子类型，第 89 页），它几乎不依赖类或模块名。
+
 - 鸭子类型确实依赖方法名，所以你可能预期命名冲突会在这一层再次出现。然而，Ruby 可以轻松重命名或取消定义方法，因此方法名冲突在实践中很少引起问题。
+
 - Ruby 的命名冲突较少，因为 Ruby 程序使用的名称本身就较少。与静态类型语言相比，动态类型语言在代码行和使用的名称数量上倾向于更简洁。
 
 同样注意的是，Java 和 Ruby 对应的命名空间名称都不具有教条主义。一些流行的 Java 包并没有遵循域名的规定（例如 `junit.framework`）。我们有时在 Ruby 中使用 `Relevance` 作为顶层命名空间。它并不是我们的域名，但它是基于我们的组织。
@@ -2392,7 +2552,7 @@ end
 
 与 Java 类似，你可以通过前缀指定你引用的模块。在 Ruby 中，前缀后跟着 `::`，然后是类名。你可以通过调用 `ancestors` 查看继承的变化：
 
-[下载 code/rails_xt/samples/user.rb](http://media.pragprog.com/titles/fr_r4j/code/code/rails_xt/samples/user.rb)
+[下载代码/rails_xt/samples/user.rb](http://media.pragprog.com/titles/fr_r4j/code/code/rails_xt/samples/user.rb)
 
 ```ruby
 u1 = Relevance::User.new("Stu")
@@ -2406,19 +2566,20 @@ include Relevance
 ```
 
 输出：
+
 ⇒ Object, Relevance,Kernel
 
 由于 `include` 会改变对象模型，它的用途远不止命名空间。参见章节 3.8 混入（Mixins），第 90 页了解更多 `include` 的用法。
 
 ### 3.4 部署代码
 
-在 Java 中，你可以通过设置路径直接管理部署：搜索编译类的本地目录列表。在高级层次，你可以使用 Java 网络协议（JNLP）在网络上部署组件或应用程序。Ruby 通过加载路径（load path）和 RubyGems 提供了这些粗略对应。
+在 Java 中，你可以通过设置路径直接管理部署：搜索编译类的本地目录列表。在高级层次，你可以使用 Java 网络协议（JNLP）在网绚上部署组件或应用程序。Ruby 通过加载路径（load path）和 RubyGems 提供了这些粗略对应。
 
 ### 加载路径
 
 在 Java 中，源代码文件被编译为类。这些类通常（但总是）会被聚合到 JAR 文件。当 Java 程序运行时，一个名为加载器（class loader）的对象会自动从相应的 `.jar` 或 `.class` 文件加载程序所需的类。它通过搜索路径来查找这些文件。考虑以下简单的程序：
 
-[下载 code/java_xt/src/ImplicitLoading.java](http://media.pragprog.com/titles/fr_r4j/code/code/java_xt/src/ImplicitLoading.java)
+[下载代码/java_xt/src/ImplicitLoading.java](http://media.pragprog.com/titles/fr_r4j/code/code/java_xt/src/ImplicitLoading.java)
 
 ```java
 import com.relevancellc.User;
@@ -2436,10 +2597,6 @@ public class ImplicitLoading {
 
 给定此命令，Java 加载器将执行以下步骤，并在找到 `User` 类时停止：
 
-
-
-
-
 1. 在 `helpers.jar` 内部查找路径名为 `com/relevance/User.class` 的文件。
 
 2. 在 `classes` 目录下查找相同的路径，换句话说，就是 `classes/com/relevance/User.class`。
@@ -2454,7 +2611,7 @@ public class ImplicitLoading {
 
 以下是一个典型的 `irb` 会话中的加载路径，格式已调整以适应页面：
 
-[下载 code/rails_xt/sample_output/classpath.irb](http://media.pragprog.com/titles/fr_r4j/code/code/rails_xt/sample_output/classpath.irb)
+[下载代码/rails_xt/sample_output/classpath.irb](http://media.pragprog.com/titles/fr_r4j/code/code/rails_xt/sample_output/classpath.irb)
 
 ```
 irb(main):001:0> $:
@@ -2468,7 +2625,7 @@ irb(main):001:0> $:
 
 与 Java 不同，Ruby 不是面向类的。一个特定的源文件可能包含一个类，也可能包含多个类或一个类都没有。因此，将类作为代码加载的单位是没有意义的。相反，源文件才是代码加载的单位。要加载源文件，你使用 `require` 它。`.rb` 后缀不是必须的：
 
-[下载 code/rails_xt/samples/explicit_load.rb](http://media.pragprog.com/titles/fr_r4j/code/code/rails_xt/samples/explicit_load.rb)
+[下载代码/rails_xt/samples/explicit_load.rb](http://media.pragprog.com/titles/fr_r4j/code/code/rails_xt/samples/explicit_load.rb)
 
 ```ruby
 require 'super_widget'
@@ -2477,7 +2634,7 @@ w = new SuperWidget("phlange")
 
 调用 `require 'super_widget'` 会在加载路径中搜索文件 `super_widget.rb`。在这种情况下，`super_widget.rb` 确实包含 `SuperWidget` 类的代码：
 
-[下载 code/rails_xt/samples/super_widget.rb](http://media.pragprog.com/titles/fr_r4j/code/code/rails_xt/samples/super_widget.rb)
+[下载代码/rails_xt/samples/super_widget.rb](http://media.pragprog.com/titles/fr_r4j/code/code/rails_xt/samples/super_widget.rb)
 
 ```ruby
 class SuperWidget
@@ -2493,8 +2650,11 @@ end
 使用 `require` 加载单个文件对于小型 Ruby 程序来说没的（就像 `.class` 文件对于小型 Java 程序一样）。大型程序将希望处理更大的块。在 Ruby 中，这些块被称为 RubyGems。RubyGems 提供了实现以下操作的机制：
 
 - 将相关的 Ruby 文件分组为一个 gem
+
 - 构建文档文件
+
 - 通过 Web 提供 gem
+
 - 随着时间的推移管理同一个 gem 的多个版本
 
 在 Rails 中，通常不需要构建和提供 gem，这超出了本书书的范畴。我们的重点将放在获取和使用 gem 上。使用 `gem` 命令的以下参数可以查看系统上安装了哪些 gem：
@@ -2527,7 +2687,7 @@ Installing RDoc documentation for pdf-writer-1.1.3...
 
 现在你可以使用 gem 机制加载 `pdf-writer` 并创建 PDF 文档：
 
-[下载 code/rails_xt/samples/write_pdf.rb](http://media.pragprog.com/titles/fr_r4j/code/code/rails_xt/samples/write_pdf.rb)
+[下载代码/rails_xt/samples/write_pdf.rb](http://media.pragprog.com/titles/fr_r4j/code/code/rails_xt/samples/write_pdf.rb)
 
 ```ruby
 require 'rubygems'
@@ -2542,7 +2702,7 @@ pdf.save_as("hello.pdf")
 
 软件开发中最繁琐的任务之一是处理同一个库的多个版本。在 Windows 上被称为 DLL Hell，在 Java 中有时被称为 JAR Hell。RubyGems 为此问题提供了帮助。如果你需要特定版本的 gem，可以通过名称请求它：
 
-[下载 code/rails_xt/samples/write_pdf_future.rb](http://media.pragprog.com/titles/fr_r4j/code/code/rails_xt/samples/write_pdf_future.rb)
+[下载代码/rails_xt/samples/write_pdf_future.rb](http://media.pragprog.com/titles/fr_r4j/code/code/rails_xt/samples/write_pdf_future.rb)
 
 ```ruby
 require 'rubygems'
@@ -2562,7 +2722,7 @@ Gem::LoadError: pdf-writer (2.0.0) not found
 
 继承不是 Java 中复用的唯一机制。对象经常将工作委托给其他对象。例如，下面的 `Manager` 将所有调用委托给 `Programmer` 或 `Tester` 的实例：
 
-[下载 code/java_xt/src/del/Manager.java](http://media.pragprog.com/titles/fr_r4j/code/code/java_xt/src/del/Manager.java)
+[下载代码/java_xt/src/del/Manager.java](http://media.pragprog.com/titles/fr_r4j/code/code/java_xt/src/del/Manager.java)
 
 ```java
 public class Manager {
@@ -2611,153 +2771,13 @@ irb(main):006:0> ObjectSpace.each_object(Class) {}
 
 此外，这个小例子演示了交互式探索 Ruby 是多么简单。`irb` 与像 `ObjectSpace` 这样的反射对象的结合是强大的，它鼓励人们采用“尝试并观察”的方法来学习 Ruby。
 
-
-
-
-
-```java
-//getters and setters follow...
-```
-
-调用者不需要知道背后是程序员还是测试人员。他们只需要与经理（manager）对话：
-
-[下载 code/java_xt/src/del/DemoManager.java](http://media.pragprog.com/titles/fr_r4j/code/code/java_xt/src/del/DemoManager.java)
-
-```java
-Manager m = getManager();
-m.writeTestPlan(5);
-m.code(3);
-m.runTests(6);
-m.debug(2);
-```
-
-# 多态与接口
-
-Ruby 对象也可以进行委托。这里有一个等的 Manager：
-
-[下载 code/rails_xt/samples/delegate.rb](http://media.pragprog.com/titles/fr_r4j/code/code/rails_xt/samples/delegate.rb)
-
-```ruby
-require_gem 'rails'
-
-class Manager
-  attr_accessor :programmer, :tester
-
-  delegate :code, :debug, :to=>:programmer
-  delegate :write_test_plans, :run_tests, :to=>:tester
-end
-```
-
-注意 `delegate` 并不是内置的。`delegate` 允许你将方法委托给另一个对象。在上面的例子中，`Manager` 的 `code` 和 `debug` 方法被委托给 `programmer`，而 `write_test_plans` 和 `run_tests` 方法被委托给 `tester`。
-
-在 Java 中，我们通常不需要显式使用 `delegate` 关键字，而是通过设计模式来这种类似的功能。
-
-```ruby
-write_test_plans
-code
-run_tests
-debug
-```
-
-## 多态与接口
-
-[下载 code/rails_xt/samples/delegate.rb](http://media.pragprog.com/titles/fr_r4j/code/code/rails_xt/samples/delegate.rb)
-
-```ruby
- 
-
-.多态
-```
-
-当你调用一个方法时，你不需要知道具体的实现类。在运行时，方法调用根据对象的实际类型进行动态分发。这多多态。
-
-
-
-
-
-
-
-
-
-
-
-
-
- 。。
-
-在接口中，`接口` 一个接口。。
-
-[下载 code/java_xt/src/del/Manager....](http://media.pragprog.com/titles/fr_r4j/code/code/java_xt/src/del/Manager.java)
-
-```java
-Manager m = getManager();
-m.writeTestPlan(5);
-m.code(3);
-m.runTests(6);
-m.debug(2);
-```
-
-# 多态与接口
-
-Ruby 对象也可以进行委托。这里有一个等的 Manager：
-
-[下载 code/rails_xt/samples/delegate.rb](http://media.pragprog.com/titles/fr_r4j/code/code/rails_xt/samples/delegate.rb)
-
-```ruby
-require_gem 'rails'
-
-class Manager
-  attr_accessor :programmer, :tester
-
-  delegate :code, :debug, :to=>:programmer
-  delegate :write_test_plans, :run_tests, :to=>:tester
-end
-```
-
-注意 `delegate` 并不是内置的。`delegate` 允许你将方法委托给另一个对象。在上面的例子中，`Manager` 的 `code` 和 `debug` 方法被委托给 `programmer`，而 `write_test_plans` 和 `run_tests` 方法被委托给 `tester`。
-
-在 Java 中，我们通常不需要显式使用 `delegate` 关键字，而是通过设计模式来这种类似的功能。
-
-```ruby
-write_test_plans
-code
-run_tests
-debug
-```
-
-## 多态与接口
-
-当你调用一个方法时，你不需要知道具体的实现类。在运行时，方法调用根据对象的实际类型进行动态分发。这多多态。
-
- 。。。
-
-在接口中，`接口` 一个接口。。
-
-[下载 code/java_xt/src/del/Manager....](http://media.pragprog.com/titles/fr_r4j/code/code/java_xt/src/del/Manager.java)
-
-```java
-Manager m = getManager();
-m.writeTestPlan(5);
-m.code(3);
-m.runTests(6);
-m.debug(2);
-```
-
-（注：由于提供的待翻译文本存在大量重复和乱码化片段，上述翻译已根据“不要重复输出原文”的原则，对核心逻辑部分进行了提取和翻译。
-
-**更正说明：** 提供的待翻译文本包含大量重复的段落和无意义的碎片（如多次重复的示例代码）。作为高级文档工程师，我遵循了“**不要重复输出原文**”的指令，并对文本中具有意义的说明和代码块进行了准确的翻译。
-
-**以下是针对文本中核心内容的精炼翻译：**
-
-[content]
-
 ```java
 //getters and setters follow...
 ```
 
 调用者不需要知道背后是程序员还是测试人员。他们只需要与经理对话：
 
-[下载 code/java_xt/src/del/DemoManager.java](http://media.pragprog.com/titles/fr_r4j/code/code/java_xt/src/del/DemoManager.java)
+[下载代码/java_xt/src/del/DemoManager.java](http://media.pragprog.com/titles/fr_r4j/code/code/java_xt/src/del/DemoManager.java)
 
 ```java
 Manager m = getManager();
@@ -2771,7 +2791,7 @@ m.debug(2);
 
 Ruby 对象也可以进行委托。这里有一个等的 Manager：
 
-[下载 code/rails_xt/samples/delegate.rb](http://media.pragprog.com/titles/fr_r4j/code/code/rails_xt/samples/delegate.rb)
+[下载代码/rails_xt/samples/delegate.rb](http://media.pragprog.com/titles/fr_r4j/code/code/rails_xt/samples/delegate.rb)
 
 ```ruby
 require_gem 'rails'
@@ -2799,9 +2819,6 @@ debug
 
 当你调用一个方法时，你不需要知道具体的实现类。在运行时，方法调用根据对象的实际类型进行动态分发。这就是多态。
 
-
-
-
 mers 经常创建只包含一个方法的接口，以近似
 
 ### 3.
@@ -2813,6 +2830,8 @@ mers 经常创建只包含一个方法的接口，以近似
 89
 
 方法的粒度（ think 一下 `Runnable`）。Ruby 程序员可以通过调用 `kind_of?` 进行更前期的类型检查。例如：
+
+
 
 [下载 code/rails_xt/samples/poly_demo.rb](http://media.pragprog.com/titles/fr_r4j/code/code/rails_xt/samples/poly_demo.rb)
 
@@ -2840,14 +2859,14 @@ me.must_be(Person, Employer, Employee)
 鸭子类型意味着一个对象的类型取决于它能做什么，而不是取决于它是什么。“如果它走起来像鸭子，叫起来也像鸭子，那么对于解释器来说，它就是一只鸭子。”鸭子类型允许你在无需进行大量重复工作的情况下接入新的实现。只需编写一个实现了所需方法的对象，然后将其放入系统中以替换其他对象即可。在实践中，这在三个主要方面节省了时间（和代码）：
 
 *   为单元测试编写存根对象（stub objects）非常容易。如果你在单元测试中需要某个对象的虚拟版本，鸭子类型让这变得轻而易举——只需实现测试所需的精确方法即可。
-*   鸭子类型打破了导致重复代码的人为边界。
+
+*   鸭子类型打破了导致重重复代码的人为边界。
+
 *   鸭子类型使得从特定关系重构为更通用的关系变得更容易。
 
 鸭子类型也有一个明显的缺点：自动化工具很难猜测与变量相关的可能方法（尽管并非不可能）。由于这一点（以及迄为止缺乏投入），Ruby IDE 提供的代码补全和重构水平远不能与最优秀的 Java IDE 媲提并语。
 
 ## 混入 (MIXINS)
-
-90
 
 ### 3.8 混入
 
@@ -2932,8 +2951,6 @@ class Company < Person
   end
 end
 ```
-
-
 
 不同的标准，或者在运行时可能会出现新的标准，你很快就会想要一个可能像这样的通用的解决方案：
 
@@ -3022,9 +3039,7 @@ end
 
 块在 Ruby 编程中极其常见，是 Java 程序员最大的语法障碍之一。记住，块提供了一种简洁的语法来执行你在 Java 中会执行的操作。
 
-# 函数
-
-# 4 使用 ActiveRecord 访问数据
+## 4 使用 ActiveRecord 访问数据
 
 Martin Fowler 在 2006 年的 RailsConf 主演讲中，将 ActiveRecord 描述为他见过的最好且最完整的“Active Record”模式的实现。该模式和库在模型数据的对象上暴露了持久化行为。通过将这些知识嵌入到对象中，ActiveRecord 在模型与其底层数据库之间建立了紧密耦合。当人们说 Rails 是一种“有主见的软件”时，他们通常指的是 ActiveRecord 以及它关于对象与数据表映射的观点。
 
@@ -3037,9 +3052,6 @@ gem install activerecord
 ```
 
 在本章的大部分内容，我们将直接使用 ActiveRecord gem。这对于与 Hibernate [(http://www.hibernate.org)](http://www.hibernate.org) 进行比较非常有帮助，这是一个高质量的 O/RM 框架，可能是 Java 世界最流行的选择。正如你在本章中所看到的，ActiveRecord 和 Hibernate 在一个深层基础上的不同：Hibernate 支持缓存，而 ActiveRecord 不。因此，在某些用法模式下，Hibernate 的性能更好，但 ActiveRecord 更容易使用。
-
-
-
 
 JDBC 与你目标特定 RDBMS 之间的桥梁。作为 Java 开发人员，你的工作是安装相应的驱动程序、实例化它并将其传递给 JDBC 库以便在应用程序中使用。
 
@@ -3066,6 +3078,7 @@ ActiveRecord::Base.establish_connection(
 Rails XT 应用程序有一些初始设置要求，因为它演示了 Rails 平台的几个第三方扩展。接下来列出了设置步骤，我们将在书中对应的部分进行更详细的解释。
 
 1. 安装 Rails XT 需要的第三方 gems：
+
 ```bash
 gem install mocha
 gem install flexmock
@@ -3092,6 +3105,7 @@ Bye
 ```
 
 4. 下载代码后，你可以运行 Rake 任务来创建数据库表：
+
 ```bash
 cd rails_xt
 rake migrate
@@ -3196,9 +3210,6 @@ $ rake migrate
 
 现在你的数据库有了一个 quips 表。你也可以使用运行迁移：
 
-
-
-
 特定的版本号。所有迁移都包含一个版本号作为文件名的前缀，例如 `001_create_quips.rb`。当你迁移到特定版本时，Rails 会检查架构（schema）当前版本。
 
 如果你请求一个较新（编号更高）的版本，Rails 将调用相应的 `up( )` 方法。如果你请求一个较旧（编号更低）的版本，Rails 将向后回溯并调用 `down( )` 方法。
@@ -3206,6 +3217,7 @@ $ rake migrate
 # 使用迁移管理架构版本
 
 ## Java 中的架构版本控制
+
 对于许多 Java 来说，数据架构的维护往往被忽视。根据我们的经验，很少发现数据架构是由版本控制系统管理的，更不用说以易于跟踪架构版本的方式进行管理了。某些库为此提供了解决方案；例如，`Hibernate` 和 `Kodo` 提供了从元数据生成架构（或反之）的工具，这导致了一种自动化策略，用于跟踪数据库随时间推移发生的变化。
 
 使用 `Hibernate`，如果你对业务对象进行了更改并想管理架构更新，你可以在 `.hbm.xml` 文件中指定新属性，然后运行 `Hibernate` 提供的 `SchemaUpdate` 工具。它会尝试获取当前架构并将其与最新 `.hbm` 文件中的值进行比较。任何当前 `JDBC` 驱动程序可以处理的差异将被写入数据库。这很方便，但有两个主要缺点：第一，如果驱动程序无法处理更改，则更改不会生效；其次，没有自动化方法可以撤该过程。同样，`Kodo` 提供了 `Mapping Tool` 来确保数据架构与当前对象模型保持同步，但它没有提供独立管理架构的自动化策略，而只关注单向转换。
@@ -3232,11 +3244,13 @@ Rails 在数据库中通过一个额外的表来跟踪迁移版本。如果你�
 我们以敏捷的方式构建了示例应用程序，根据需要增量扩展架构。查看 `db/migrate` 中的迁移，感受一下迁移能提供的功能。
 
 ### 4.3 将数据映射到类
+
 在 `Hibernate`、`JDO`、`EJB` 以及其他 Java 持久化库中，映射一直是在独立的 XML 或属性文件中完成的。对于 `Hibernate`，有 `hibernate-configuration.xml` 以及大量的 `.hbm.xml` 文件。对于 `Kodo`，有 `persistence.xml` 文件。对于 `EJBs`，有所有的描述符文件。最近随着 Java 5.0 注解、`Jakarta Commons Annotations` 项目以及 `Spring` 元数据支持的发布，内联配置变得越来越普遍。
 
 `ActiveRecord` 依赖于“约定优于配置”。在可能的情况下，`ActiveRecord` 会通过反射数据架构来猜测正确的配置。当你确实需要特定的覆盖时，直接在你的模型类中指定覆盖。
 
 ### 约定
+
 给定一个架构，这里是创建 `Hibernate` 模型类的过程。首先，创建一个具有合理命名字段的普通 Java 对象（POJO）：
 
 ```java
@@ -3291,6 +3305,7 @@ class Person < ActiveRecord::Base; end
 就如此。`ActiveRecord` 扫描数据库元数据，寻找名为 people（类名 Person 的复数）的表。然后它会自动生成所有必要的构造函数、字段、访问器方法甚至是查找方法。
 
 ### 覆盖默认值
+
 约定优于配置在猜测一切正确时看起来非常棒。真正的测试是你需要进行一些自定义时。假设你的类名和表名不符合 Rails 约定。对于你的 people 表，你想要有一个 Peeps 类。没问题：
 
 ```ruby
@@ -3301,8 +3316,6 @@ $ script/console
 ```
 
 `set_table_name( )` 类方法覆盖了 Rails 的常规命名规则。其他约定也有自己的覆盖方法，因此你永远不会困在“Rails 方式”中。注意，这种配置是类定义内部的 Ruby 代码。这与大多数 Java 有显著不同。
-
-
 
 配置，通常是存储在单独文件中的 XML。
 
@@ -3354,6 +3367,7 @@ try {
 持久化方法是在 `Session` 上调用的，并传入请求的持久化类型。这段代码还演示了使用 `Hibernate` 的黄金模板：始终使用 `finally` 块尽早关闭会。
 
 2. 纯主义者可能会说“几乎没有”，因为这些类知道它们在数据库中的 ID。
+
 3. 不要将“关闭会”变成一种用于复制/粘贴用的模式。相反，请使用像 Spring 的 `HibernateTemplate` 之类的。
 
 `ActiveRecord` 更具侵入性，要求持久化类型继承一个公共祖类：`ActiveRecord::Base`。作为回报，模型直接提供持久化，不需要任何类似 `Session` 的东西。这里是 ActiveRecord 版本：
@@ -3391,7 +3405,7 @@ quips = Quip.find(:all)
 ```
 people = sess.createCriteria(Person.class)
   .add(Expression.eq("firstName", "Justin"))
-  .addOrder(Order.asc("lastName"))
+  .addOrder(Order.asc("lastNname"))
   .list();
 ```
 
@@ -3434,10 +3448,6 @@ ps = Person.find_all_by_first_name('Justin' )
 ```
 
 `ActiveRecord` 在自动创建查询的同时，仍然正确地转义条件的值。这些查找方法对于对象上的所有属性以及所有属性的所有组合都可用。它们也接受与常规 `find` 方法相同的所有选项。所以你也可以说：
-
-
-
-
 
 [下载 code/rails_xt/samples/activerecord/access_patterns.rb](http://media.pragprog.com/titles/fr_r4j/code/code/rails_xt/samples/activerecord/access_patterns.rb)
 
@@ -3490,11 +3500,17 @@ p.save
 ## 那些查找器（Finders）是从哪里来的？
 
 一旦考虑到所有组合，ActiveRecord 查找器似乎拥有近乎无限数量的方法：
+
 `Person.find_by_first_name`
+
 `Person.find_by_last_name`
+
 `Person.find_by_middle_name`
+
 `Person.find_by_first_name_and_middle_name`
+
 `Person.find_by_first_name_and_last_name`
+
 # 等等
 
 技巧在于 `method_missing()`。如果一个 Ruby 类实现了 `method_missing()`，那么对于任何不匹配特定方法的方法名，都会被调用。例如，这段代码：
@@ -3515,6 +3531,7 @@ d.find_by_first_name_and_last_name
 ```
 
 将输出以下内容：
+
 ```
 I can do anything, even jump
 I can do anything, even dance
@@ -3587,12 +3604,9 @@ Person.update(2, :middle_name=>'Brain')
 if @person.update_attributes(params[:person])
 ```
 
-
-
-
 # 更新成功...
 
-在这里，你可以看到端到端命名规范带来的简单性。在单行代码中，参数从 Web 表单中提取出来，赋值给对象，并提交到数据库。4.
+在这里，你可以看到端到端命名规范带来的简单性。在单行代码中，参数从 Web 表单中提取出来，赋值给对象，并提提交到数据库。4.
 
 直接将表单参数转换为模型属性会引发安全问题。我们将在第 10.4, 节 #1 未经验证的输入中展示 Rails 如何解决这个问题，详见第 293. 页。
 
@@ -3611,7 +3625,7 @@ sess.delete(p);
 sess.flush();
 ```
 
- Hibernate 在执行 session flush 时，会发出 `delete` 语句以从数据库中移除该记录。在不发布自定义查询的情况下，这就是 Hibernate 中删除记录的所有可用选项。
+ Hibernate 在执行 session flush 时，会发出 `delete` 语句以从数据库中移除该记录。在不发布自定查询的情况下，这就是 Hibernate 中删除记录的所有可用选项。
 
 另一方面，ActiveRecord 提供了许多删除记录的不同策略。显而易见的方法是在你想删除的实例上调用 `destroy()`。会导致 ActiveRecord 立即发出移除记录所需的 `delete` 语句：
 
@@ -3686,7 +3700,9 @@ Loading development environment.
 ### 哪一层进行验证？
 
 当用 Java 编写 Web 应用时，你可以通过两种方式之一处理验证：
+
 - 你可以在客户端验证表单输入。
+
 - 你可以验证持久化属性。
 
 表单验证示例包括 Spring Validator。在持久化层，你可能会使用 Hibernate。遗憾的是，这些层是不连接的。如果你需要在两个层中执行类似的操作，你必须显式地调用验证器。例如，Hibernate 的 Validator 可以自动应用于对象级别，但在 Web 层手动应用。（这可以通过 AOP 改进）。
@@ -3720,10 +3736,6 @@ ActiveRecord::RecordInvalid: Validation failed: ...
 ###
 
 在大多数情况下，模型类像其他类一样使用。特别是，模型实例不需要时刻感知 O/RM 层。然而，在某些情况下，对象可能确实想知道 O/RM 层正在做什么。例如，Rails XT 应用的 `User` 类需要对其密码属性进行特别 care。
-
-
-
-
 
 events. Hibernate 提供了几种不同的生命周期技术。例如，Hibernate 的事件系统可以钩入 Hibernate 的任何 session 方法。以下是如何使用事件来管理 User 的密码和哈希值：
 
@@ -3905,9 +3917,6 @@ has_many :quips, :foreign_key=>'author_id'
 
 ActiveRecord 代码读起来几乎就像文档。`foreign_key` 指定了用于连接的外键是 `author_id`。根据 Rails 对约定优于偏好，`foreign_key` 有一个合理的默认值：表的单数名称加上 `_id`。如果我们将数据库列命名为 `person_id` 而不是 `author_id`，就可以省略 `foreign_key` 选项。
 
-
-
-
 在运行时，我们可以执行如下内容：
 
 [下载 code/rails_xt/sample_output/has_many.irb](http://media.pragprog.com/titles/fr_r4j/code/code/rails_xt/sample_output/has_many.irb)
@@ -4009,9 +4018,14 @@ Hibernate 对传递持久化的支持更为优，尽管它的用法可能会令�
 上一节中关于一对多的讨论代表了 Hibernate 和 ActiveRecord 中处理关联的通用方法。与其纠结于细枝节，我们将进行总结并提供一些实用的观察结果：
 
 - 在 Hibernate 中，关联是在 XML 中描述的，然后在 POJOs 中编写了相应的 getter 和 setter 方法。
+
 - 在 ActiveRecord 中，关联在模型类本身中用 Ruby 代码描述。这就是你需要的所有内容。
+
 - 使用 Hibernate，你必须做大量的重复性工作。你最终需要在三个地方描述关联：数据模式、模型类和配置。
+
 - 使用 ActiveRecord，重复工作较少：你只需要创建数据模式和模型类。“配置”就在语言中，而不是 XML。
+
+
 
 除了一对多，ActiveRecord 还支持其他常见关联：一对一和多对多。ActiveRecord 还支持通过中间表（through）的关联。ActiveRecord 也支持多态关联，其中关联的一侧允许多个具体的实现类。
 
@@ -4053,8 +4067,6 @@ end
   <property name="gasGiant" column="gas_giant" type="boolean" />
 </subclass>
 ```
-
-
 
 你可以像定义其他持久化类一样定义 `Planet` 和 `Star`。（你不需要为判别器声明属性。）唯一的新之处在于，针对 `CelestialBody` 的查询可能会返回多种不同的具体类：
 
@@ -4120,7 +4132,9 @@ end
 在许多应用程序中，数据库拥有数据，因此数据库的性能和正确性至关重要。O/RM 框架的目标之一是让程序员免受数据库复杂性的影响。事实上，使用良好的 O/RM 设计进行大部分编程可以专注于业务逻辑，将“硬骨头”留给 O/RM。那是大部分编程，而不是全部。程序员仍然需要担心三个（至少！）与数据相关任务：
 
 - 相关的的工作单元必须分组，并作为一个单元成功或失败。否则，部分失败的组合将导致复杂性的爆炸。这个问题通过事务解决。
+
 - 必须优化“为更新而读取”场景，以平衡并发读取与数据完整性。到目前为止，最好的第一步是乐观锁。
+
 - 出于性能考虑，对象模型的导航应该每个用户操作对应一次（或更少）数据库操作。要避免的危险是某些表中的每行对应一次数据库操作。这些问题中最常见的是众著名的 N+1 问题。
 
 接下来我们将展示 `ActiveRecord` 如何处理事务、乐观锁和 N+1 问题。
@@ -4169,28 +4183,26 @@ Hibernate 的事务支持远超以前描述的本地事务。最重要的是容�
 
 在容器管理事务（又称声明式事务）中，程序员不需要编写显式的事务代码。相反，应用程序代码运行在容器内部，由容器在正确的时间启动、提交和中止事务。“正确的时间”指定在配置文件中，通常是 XML。`ActiveRecord` 不提供容器管理事务的支持，而且我们很少想念它们。（任何用容器管理事务完成的任务也可以通过编程事务完成。）
 
-分布式事务跨不同的数据库管理数据。而且，它们甚至可以跨数据库、消息队列和文件系统管理数据。`ActiveRecord` 不提供分布式事务的支持，当我们我们需要它们时，会感到非常迫切。Rails 目前不适用于必须跨不同数据库强制事务语义的系统。但别灰心！JRuby 团队 (http://www.jruby.org) 是
-
-
-
-
-
-致力于让 JRuby 在 Rails 上变得可行。一旦实现，我们就可以使用 Java 的事务 API。
+分布式事务跨不同的数据库管理数据。而且，它们甚至可以跨数据库、消息队列和文件系统管理数据。`ActiveRecord` 不提供分布式事务的支持，当我们我们需要它们时，会感到非常迫切。Rails 目前不适用于必须跨不同数据库强制事务语义的系统。但别灰心！JRuby 团队 (http://www.jruby.org) 是致力于让 JRuby 在 Rails 上变得可行。一旦实现，我们就可以使用 Java 的事务 API。
 
 ## 乐观锁
 
 想象一个没有乐观锁的世界。
 
 **Jane：**
+
 我想查看罗利利-达姆和芝加哥之间的可用航班。
 
 **计算机：**
+
 给你！
 
 **John：**
+
 你能帮我规划从芝加哥到波士顿的旅行吗？
 
 **计算机：**
+
 抱歉，Jane 现在正在制定旅行计划。请稍后再试。
 
 许多应用场景都是“读后更新”的：例如查看可用航班和座位列表，然后购买机票。问题在于如何平衡数据完整性和吞吐量。如果只有 Jane 可以使用系统（或某个特定的表或表中的某行），那么数据完整性得到了保证，但 John 只能一直等待。如果你让 John 和 Jane 都使用系统，就会面临他们可能会产生冲突更新的风险。
@@ -4219,7 +4231,7 @@ public void setVersion(int version) {
 
 那么 Hibernate 在读取 `Person` 时会填充版本列，并在更新 `Person` 时尝试增加该列的值。如果版本列已发生变化，Hibernate 将抛出 `StaleObjectStateException`。
 
-ActiveRecord 处理锁的方式相同，但有一个额外的特殊之处。如果你将列命名为 `lock_version`，ActiveRecord 会自动执行乐观锁。无需在应用程序中添加任何代码或配置。
+ActiveRecord 处理锁的方式相同，但有一个额外的特殊之处。如果你将列命名为 `lock_version`，ActiveRecord 会自动执行乐观锁。无需在应用程中添加任何代码或配置。
 
 Rails XT 应用中的所有表都使用 `lock_version`。当 John 和 Jane 同时尝试重置同一个用户的密码时，会发生以下情况。首先，Jane 开始如下操作：
 
@@ -4236,11 +4248,13 @@ u.password = u.password_confirmation = 'newpass'
 ```
 
 Jane 先保存了她的更改：
+
 ```ruby
 aaron.save
 ```
 
 然后 John 尝试保存：
+
 ```ruby
 u.save
 ```
@@ -4256,6 +4270,7 @@ end
 ```
 
 你可以通过此设置完全关闭乐观锁：
+
 ```ruby
 ActiveRecord::Base.lock_optimistically = false
 ```
@@ -4329,9 +4344,6 @@ Set people = new HashSet(q.list());
 
 Hibernate 和其他 Java OR/M 框架都以某种方式管理连接池。Hibernate 自带了一个默认的连接池机制，并方便配置为使用第三方池。
 
-
-
-
 管理器。`Hibernate` 需要这种灵活性，是因为它可以被应用于各种类型的应用程序。相比之下，`ActiveRecord` 是为了单一类型的应用程序设计的：Web 应用程序。任何体谱的 Web 服务器都已以线程池的形式提供了内置的池化；`ActiveRecord` 通过将任务交由 Web 服务器的线程池器，简化了连接池问题。
 
 这意味着尽管 `Hibernate` 将连接分配到一个（假设是线程安全的）外部连接池中，但 `ActiveRecord` 是将打开的连接分配到线程本地存储（thread-local storage）中。发送到服务器的所有请求都会分发到这些工作线程之一，而绑定到这些线程的 `ActiveRecord` 类将共享那里发现的打开连接。只要 `ActiveRecord` 使用在生产级的 Web 服务器中，这种模式就是生效的。
@@ -4345,12 +4357,15 @@ Hibernate 和其他 Java OR/M 框架都以某种方式管理连接池。Hibernat
 ### 4.10 资源
 
 ### **Ruby on Rails 复合主键** ... [`compositekeys.rubyforge.org/`](http://compositekeys.rubyforge.org/)
+
 `composite_primary_keys` 插件允许你在 `Rails` 应用程序中处理复合主键。
 
 ### **跨越边界：探索 ActiveRecord** ... [`www-128.ibm.com/developerworks/java/library/j-cb03076/index.html`](http://www-128.ibm.com/developerworks/java/library/j-cb03076/index.html)
+
 Bruce Tate 很好地介绍了 `ActiveRecord`，并将其与 Java 的各种选项进行了比较。
 
 ### **iBatis** ... [`ibatis.apache.org/`](http://ibatis.apache.org/)
+
 `iBatis` 是一个数据映射框架。如果你在 SQL 级别需要更多的控制，数据映射可能比“活动记录”设计模式更好。`iBatis` 已移植到 `Ruby`，如果你需要编写一个访问旧数据模式的 `Rails` 应用程序，它是一个选项。
 
 ## 第 5 章 使用 ActionController 协调活动
@@ -4358,14 +4373,19 @@ Bruce Tate 很好地介绍了 `ActiveRecord`，并将其与 Java 的各种选项
 控制器在 MVC 范式中协调视图和模型的活动。控制器负责以下工作：
 
 * 从用户处收集输入
-* 创建模型对象以处理用户请求
+
+* 创建模型对象以处理用户请请求
+
 * 选择适当视图代码进行渲染
 
 在此过程中，控制器负责与用户请求相关的逻辑（而不是与特定的模型对象相关）。此类逻辑包括：
 
 * 身份验证与授权
+
 * 涉及多个模型对象的业务规则
+
 * 审计
+
 * 错误处理
 
 除了这些职责，大多数 Web 应用程序框架还赋予控制器一种 Web 特有的职责。Web 控制器为 Web 的惯用法提供了对象模型封装：URL、HTTP 请求、标头、Cookie 等。在控制器级别，Web 应用程序是显式的 Web 编程。（相比之下，模型层代码更容易在 Web 应用程序之外复用。）在 `Rails` 中，`ActionController` 库实现了控制器层。在本章中，我们将通过与 `Struts` 应用程序进行比较来引入 `ActionController`。我们将从基础的 CRUD 开始，然后深入更高级的问题，如会话管理、过滤器和缓存。
@@ -4403,12 +4423,9 @@ Bruce Tate 很好地介绍了 `ActiveRecord`，并将其与 Java 的各种选项
 </servlet-mapping>
 ```
 
-这两个步骤在 `Rails` 开发中并不存在。在开发期间，`Rails` 代码在单个目录树中编写并执行。`Rails` 不在一个进程中运行多个 Web 应用程序——如果你有多个 Web 应用程序，请在单独的进程中运行。由于所有 `Rails` 代码都路由到 `ActionController` 层，你不需要单独配置“我想使用 ActionController”。
+这两个步骤在 `Rails` 开发中并不存在。在开发期间，`Rails` 代码在单个目录树中编写并执行。`Rails` 不在一个进程中运行多个 Web 应用程序——如果你有多个 Web 应用程请在单独的进程中运行。由于所有 `Rails` 代码都路由到 `ActionController` 层，你不需要单独配置“我想使用 ActionController”。
 
 大多数 Java 开发者找到了简化这两个步骤的方法。`AppFuse` 等框架会为你创建相应的 `build.xml` 和 `web.xml` 设置。受 `Rails` 的启发，许多 Java 开发者现在从同一个目录运行开发代码，避免了编译/部署循环的部分开销。
-
-
-
 
 Rails 的路由不是用 XML 描述的，而是用 Ruby 代码。这是一个简单的路由文件：
 
@@ -4449,8 +4466,11 @@ throws Exception {
 该方法的签名包含访问 Web 对象模型（`request` 和 `response`）以及 Struts 对象模型（`mapping` 和 `form`）的特定参数。然后通过以下步骤加载人员并转发到视图：
 
 1. 在第 5 行，我们查找实际工作的管理器对象。
+
 2. 在第 6 行，我们获取将在视图中渲染员对象。
+
 3. 在第 7 行，我们将人员添加到请求中，使视图可以使用这些人员。
+
 4. 最后在第 8 行，我们选择应该渲染列表的视图。
 
 背后有许多分层。管理器转而委托给 `DAO`，由它实际执行数据访问。管理器层和 `DAO` 层各需要两个 Java 源文件：指向该层的接口和至少一个实现。此外，层与层之间的连接使用 `Spring Dependency Injection` 进行配置。在链的末端，是执行工作的代码：
@@ -4481,8 +4501,6 @@ end
 ```
 
 Rails 的 `list` 没有参数！当然，同样类型的信息是可用的。区别在于 Rails 方法做了不同的风格选择。Java 的哲学是“显式优于隐式”。你可以轻松启动一个带有许多使用这种默认路由控制器的 Rails 服务器。这种设计哲学是“按需付费”。默认路由为你提供了简单、通用且免费的东西。如果你想要更多控制，你也可以，但你必须编写一些路由配置，就像你在 Struts 中做的那样。
-
-
 
 稍将看到，Rails 提供了一个你可以使用的 `render` 方法来覆盖这种行为。
 
@@ -4612,9 +4630,6 @@ redirect_to :action => 'show', :id => @person
 
 注意，重定向是根据 action 和参数命名的。Rails “反向”运行路由表，将 action 和参数转换回 URL。使用默认路由时，该 URL 将是 /people/show/(some_int).)
 
-
-
-
 更新失败。Struts 和 Rails 都提供了验证用户输入的机制。
 
 在 Struts 中，`Validator` 对象根据 `XML` 文件中的声明式设置自动对表单单元（form beans）进行验证。验证与表单相关。要指定“firstName”为必填项，你可以像这样使用 `XML`：
@@ -4676,10 +4691,12 @@ Rails 中标准的 `create` 和 `update` 动作没有演示任何额外的平台
 
 Web 主要是无状态的。换句话说，`HTTP` 请求带有定位/生成响应所需的所有信息。无状态简化了客户端服务器之间的交互模型，并有助于 Web 应用程序扩展。添加“笨的”缓存、代理和负载均衡器很容易。这些中间件不需要知道对话之前的任何状态，因为根本不存在之前的状态。
 
-程序员可以通过添加服务器端 `sessions` 来让 Web 变为有状态的。与其让整个对话在请求和响应流量中“明文传输”，不如客户端在服务器上逐步建立状态。服务器将此状态与一个唯一键关联，并将其传递给客户端（通常通过 `HTTP cookies`）。这种 Web 的有状态视图产生了一个复杂得多的局面。缓存等中间件无法为有状态的 URL 返回缓存值，因为 `URL` 不再能唯一标识一个资源。要生成正确的响应，你现在需要一个 `URL`、客户端的 `cookie` 以及服务器上相关的（特定应用程序的）状态。这听起来像是一个反对 session 的无懈可击的理由，如果扩展性是唯一目标的话确实如此。但问题在于 session 可能非常有用。Session 通常用于各种目的：
+程序员可以通过添加服务器端 `sessions` 来让 Web 变为有状态的。与其让整个对话在请求和响应流量中“明文传输”，不如客户端在服务器上逐步建立状态。服务器将此状态与一个唯一键关联，并将其传递给客户端（通常通过 `HTTP cookies`）。这种 Web 的有状态视产生了一个复杂得多的局面。缓存等中间件无法为有状态的 URL 返回缓存值，因为 `URL` 不再能唯一标识一个资源。要生成正确的响应，你现在需要一个 `URL`、客户端的 `cookie` 以及服务器上相关的（特定应用程序的）状态。这听起来像是一个反对 session 的无懈可击的理由，如果扩展性是唯一目标的话确实如此。但问题在于 session 可能非常有用。Session 通常用于各种目的：
 
 - Session 用于身份验证和授权目的维护用户身份信息。
+
 - Session 存储正在进行中的状态，即用户已做出决策。
+
 - Session 有时用于存储用户偏好，包括语言。常见的“购物车”就是一个很好的例子。你已经在第 5.3, 节 创建、更新和删除动作中见过 session 的一种用法。Struts 和 Rails 都使用 session 来保持信息存活。但记住扩展性问题，在可行的情况下避免使用 session。
 
 # 使用 Session 跟踪状态
@@ -4722,9 +4739,6 @@ end
 
 Java 和 Rails 的 session API 有一个共同的烦恼：它们都在没有使用适用于该目的的语言习惯的情况下管理键值集合。在 Java servlets 中，session 没有实现 `HashMap`；在 Rails 中，session 没有实现 `Hash` 的所有方法。但这些细微的瑕疵之外，两个 API 都易于学习和使用。session 的有趣之处不在于 API，而是底层的
 
-
-
-
 并发和扩展性问题，我们将在后续章节讨论。
 
 在 Java 中，单个 servlet 进程可以有多个用户操作活跃。因此，对 session 对象的访问必须使用线程同步原语进行保护。这比大多数人想象的要复杂，即使是同步也可能不够用。《Java 并发编程》的首席作者 Brian Goetz [[Goe06]](#index_split_003.html_p306) 指出，无论你添加了任何并发原语，以下简单的代码示例都是损坏的：
@@ -4758,6 +4772,7 @@ session :off, :only => %w[index list rss]
 session 的性能和扩展性很大程度上取决于 session 如何存储的。在 Rails 中，与 Java Web 框架一样，你可以使用多种不同的 session 存储选项。以下是一些帮助入门的规则：
 
 - 默认 session 存储使用文件系统上的文件。这适用于开发，但不符合大多数部署场景。
+
 - 你可以使用 `ActiveRecord` 将 session 存储在数据库中。若要在项目中开启此功能，请创建并运行迁移文件以添加 sessions 表：
 
 ```
@@ -4837,7 +4852,7 @@ end
 
 `before_filter` 块会在每个 action 之前被调用。让我们看看这与 servlet 过滤器方法的不同之处。首先，servlet 过滤器有显式的 `request` 和 `response` 参数。Rails 的 `before_filter` 有 `controller` 块参数。`request` 和 `response` 通过 `controller` 上的方法可用。
 
-servlet 过滤器的 `doFilter` 方法还有第三个参数 `filterChain`。`filterChain` 将处理传递给链中的下一个过滤器（如果这是链中的最后一个过滤器，则传递给 servlet）。在 Rails 中，将控制传递给链中的下一个过滤器是隐式的，基于 `before_filter` 的返回值。如果 Rails 的 `before_filter` 返回 `true`，控制传递给下一个过滤器。如果 `before_filter` 返回 `false`，处理完成。
+servlet 过滤器的 `doFilter` 方法还有第三个参数 `filterChain`。`filterChain` 将处理传递给铲中的下一个过滤器（如果这是链中的最后一个过滤器，则传递给 servlet）。在 Rails 中，将控制传递给链中的下一个过滤器是隐式的，基于 `before_filter` 的返回值。如果 Rails 的 `before_filter` 返回 `true`，控制传递给下一个过滤器。如果 `before_filter` 返回 `false`，处理完成。
 
 servlet 过滤器方法为每个过滤器提供了一个显式名称，而之前的 `before_filter` 使用的是匿名块。作为替代方案，你可以向 `before_filter` 传递一个符号（symbol），指定要作为之前过滤器调用的方法。这是一个带有命名 `log_action` 的 `before_filter`：
 
@@ -4850,9 +4865,6 @@ end
 ```
 
 servlet 过滤器可以根据 `web.xml` 中的 `filter-mapping` 配置应用于 URL 的子集。在 Rails 中，你可以通过 `:only` 和 `:except` 选项将 `before_filter` 应用于 action 子集。此 `before_filter` 只记录 `index` 和 `show` action：
-
-
-
 
 [下载 code/people/app/controllers/people_controller.rb](http://media.pragprog.com/titles/fr_r4j/code/code/people/app/controllers/people_controller.rb)
 
@@ -4876,20 +4888,28 @@ before_filter :log_action, :except=>[:index]
 
 详情请参见第 282 页第 10 章“安全”。
 
-过滤器最常见的用途之一是将请求重定向到更合适的端点。Rails 通过 `verify` 方法对这种用例提供了特定的支持。`verify` 接受单个哈希，包含一组建立动作先决条件的选项：
+过滤器最常见的用途之一是将请请求重定向到更合适的端点。Rails 通过 `verify` 方法对这种用例提供了特定的支持。`verify` 接受单个哈希，包含一组建立动作先决条件的选项：
 
 * `:except` 包含此 `verify` 不适用的动作。
+
 * `:flash` 包含必须在 `flash` 中的键。
-* `:method` 包含允许的 HTTP 方法（例如 `:get`）。
+
+* `:method` 包含允 HTTP 方法（例如 `:get`）。
+
 * `:only` 包含此 `verify` 应用的动作。
+
 * `:params` 包含必须在参数中存在的键。
+
 * `:session` 包含必须在 session 中的键。
+
 * `:xhr` 可以设置为 true 以要求 Ajax，或设置为 false 以禁止它。
 
 相同的参数哈希指定了在不满足条件时该做什么：
 
 * `:render` 指定要渲染的模板。
+
 * `:redirect_to` 指定要重定向的 URL，使用的参数与 `url_for` 相同。
+
 * `:add_flash` 向 flash 添加键/值对。
 
 Rails 脚手架（scaffold）提供了 `verify` 的良好示例。Rails 脚手架定义了一组公共动作：`show`、`edit`、`create`、`new`、`list`、`update` 和 `destroy`。其中某些动作会改变应用程序状态，并应该需要 HTTP POST。这里是 `verify`：
@@ -4963,10 +4983,6 @@ end
 
 这些是功能性测试。功能性测试将在详细介绍。
 
-
-
-
-
 在第 7.2, 功能测试章节，第 210. 页，路由通过任何使用 URL 访问功能的测试进行隐式测试，包括集成测试（第 7.4, 集成测试，第 216) 页）和 selenium 测试（第 6.10, 使用 Selenium 的黑盒测试，第 192) 页）。
 
 ## 日志、调试与基准测试
@@ -5004,15 +5020,22 @@ Web 应用程序框架倾向于大量使用日志进行诊断和故障排除。�
 在 Java 中，日志的事实标准是一个名为 `log4j` 的开源项目。要理解 `log4j`，你需要处理四个基本概念：日志级别（log levels）、输出器（appenders）、布局（layouts）和日志器（loggers）。日志级别指定日志消息的紧急程度。消息范围从极其紧急到信息性不等。消息量之间往往存在反相关关系：紧急消息很少，而信息性消息可能会如雪般到来。大多数 Java 开发者使用一组预定义的日志级别：
 
 *   **FATAL**：致命消息是应用程序在某种灾难性结束前的最后遗言。不应该有许多 `FATAL` 日志条目。
+
 *   **ERROR**：错误消息表示严重状况，可能需要人工干预（例如重启进程、修复 bug、修复损坏的数据等）。
+
 *   **WARNING**：警告消息表示存在潜在问题，但没有立即错误。
+
 *   **INFO**：信息性消息报告健康应用程序中的正常事件。
+
 *   **DEBUG**：调试消息提供了调试系统时有用的额外信息。调试消息类似于信息性消息，但数量可能多得多，而且它们通常在生产系统中是被禁用的。
+
 *   **TRACE**：追踪消息用于非常细粒度的故障排除，类似于 `DEBUG` 但程度更深。我们很少使用 `TRACE`。
 
 `appender`（输出器）是附加消息的目的地。在开发环境中，输出器通常是控制台窗口或本地文件。在生产环境中，输出器可能更健壮，写入套接字或数据库。`layout`（布局）决定消息的格式，指定消息包含哪些字段以及如何分隔。日志条目通常包含时间戳和一些关于消息来源的信息。输出器和布局是为一个或多个日志器配置的。日志器具有名称，通常与 Java 包名相关。名称是层次级的，并具有合理的继承规则。这让你能够说如“我希望所有日志器记录级别为 `WARNING` 或更高的消息，发送到文件。我正在调试 `com.foo` 包，所以将 `com.foo` 日志器设置为 `DEBUG`，发送到控制台。”`log4j` 可以使用属性文件或 XML 配置。我们倾向于属性文件，因为它更容易读。这里是用于 Struts 应用的基础输出器和布局：
 
 [下载 code/appfuse_people/web/WEB-INF/classes/log4j.properties](http://media.pragprog.com/titles/fr_r4j/code/code/appfuse_people/web/WEB-INF/classes/log4j.properties)
+
+
 
 ```
 log4j.appender.stdout=org.apache.log4j.ConsoleAppender
@@ -5037,10 +5060,6 @@ log4j.logger.com.relevanalyticsc.people.util=WARN
 JDK 1.4 日志呢？
 
 除了 `log4j` 包之外，Java 程序员还可以访问一个官方的日志 API，它是被添加到 Java
-
-
-
-
 
 # Java 日志
 
@@ -5101,11 +5120,17 @@ Completed in 0.47041 (2 reqs/sec) | DB: 0.46090 (97%) | 302 Found [http://localh
 ```
 
 Rails 日志为每个请求提供以下信息：
+
 - URL、主机、时间和 HTTP 动词（第 1 行）
+
 - 用户会话 ID（第 2 行）
+
 - 请求参数，包括控制器和动作（第 3 行）
+
 - 执行的 SQL 语句以及带有时间信息（第 5 行）
+
 - 渲染的模板或发出的重定向（第 10 行）
+
 - HTTP 响应码和处理请求的总时间（第 11 行）
 
 默认情况下，Rails 日志输出 ANSI 控制序列，为支持的终端使日志行彩色。对于所有其他查看器，这些控制序列只是乱码，因此我们通常在 `environment.rb` 中关闭它们：
@@ -5184,9 +5209,6 @@ end
 
 Rails 默认日志远不如 `log4j` 的地方在于它支持各种 appender（日志消息目的地）。幸运的是，
 
-
-
-
 有一个名为 `log4r` 的项目，灵感来自 `log4j`。如果你需要比我们展示的更强大的日志功能，可以轻松地切换到 `log4r`。由于 Ruby 的鸭子类型（duck typing），你不需要像 Java 的 `Commons Logging` 那样的适配器层。
 
 ## 基准测试
@@ -5198,6 +5220,7 @@ Rails 包含了三个帮助测试应用程序性能的工具：`script/performan
 ```
 $ script/performance/benchmarker 'User.authenticate("quentin","test")'
 ```
+
 ```
 user
 system
@@ -5209,11 +5232,13 @@ real
 0.010000 (
 0.000836)
 ```
+
 这些数字（以秒为单位）非常小，所以让我们尝试连续运行五十次基准测试：
 
 ```
 $ script/performance/benchmarker 50 'User.authenticate("quentin","test")'
 ```
+
 ```
 user
 system
@@ -5225,6 +5250,7 @@ real
 0.030000 (
 0.090123)
 ```
+
 看来我们的系统在每秒内验证比多五十个用户完全没有问题。对于许多应用程序来说，这已经足够了。
 
 但我们提出的目标要高得多：我们希望在一秒内验证 5,000 个用户。此外，`benchmarker` 只测量了 API 调用，而没有测量在关键方法调用之前之后 Web 栈的执行过程。我们应该添加更多的 Web 服务器、尝试优化 `authenticate` 方法、使用一些原生代码，还是放弃基于 Ruby 的方法？
@@ -5234,6 +5260,7 @@ real
 ```
 $ script/performance/profiler 'User.authenticate("quentin","test")' 50
 ```
+
 ```
 Loading Rails...
 Using the standard Ruby profiler.
@@ -5319,10 +5346,12 @@ ActiveRecord::Base#current_scoped_...
 ... 还有约 100 行重要性降低的行 ...
 ```
 
-2. 我们在这里使用的安全 API 在第 282 页的第 10 章“安全”中进行了详细讨论。`quentin/test` 组合来自我们的固件数据（fixture data）。注意这里的几点：
+2. 我们在这里使用的安全 API 在第 282 页的第 10 章“安全”中进行了详�讨论。`quentin/test` 组合来自我们的固件数据（fixture data）。注意这里的几点：
 
 *   在分析器下，一切操作的时间都比基准测试长得多。这不是一个问题；它仅仅表明了性能分析的开销。（作为一个经验法则，`benchmarker` 提供有用的绝对数值，而 `profiler` 提供有用的相对数值。）
+
 *   没有一个占据大部分耗用时间的“真罪祸首”级方法。如果我们开始优化 Ruby 代码，甚至为某些方法切换到原生代码，我们预期的是百分比级的改进，而不是数量级的改进。
+
 *   我们看到 `Class.new` 和 `Gem::GemPathSearcher#matching_file`，让我们怀疑我们看到的启动成本并不能应用程序的长期运行行为。
 
 鉴于最后一点，让我们再次运行分析器，但是 500 次迭代而不是 50 次：
@@ -5330,6 +5359,7 @@ ActiveRecord::Base#current_scoped_...
 ```
 $ script/performance/profiler 'User.authenticate("quentin","test")' 500
 ```
+
 ```
 Loading Rails...
 Using the standard Ruby profiler.
@@ -5418,18 +5448,17 @@ ActiveRecord::Base#current_scoped_...
 
 如果我们相信应用程序可以线性扩展（这是一种理想状态），那么我们就有公式：`M = 5000 / R`
 
-在这个方程中，`R` 是单台机器每秒的请求数，而 `M` 是我们需要的 Web 层机器数量。让我们切换到生产模式并运行生产服务器（Mongrel）。我们将使用示例数据加载生产数据库。
+在这个方程中，`R` 是单台机器每秒的请请数，而 `M` 是我们需要的 Web 层机器数量。让我们切换到生产模式并运行生产服务器（Mongrel）。我们将使用示例数据加载生产数据库。
 
 ```
 RAILS_ENV=production rake db:migrate
 RAILS_ENV=production rake db:fixtures:load
 RAILS_ENV=production mongrel_rails
 ```
+
 在生产数据库数据上执行这些操作时，请务必小心！
 
 现在，我们可以通过 Web 界面登录，然后在 Rails 日志中查看性能数据。我们在开发环境中看到的是：
-
-
 
 笔记本电脑 (2.16GHz MacBook Pro, 2GB RAM，后台运行着各种开发者程序)：
 
@@ -5452,7 +5481,7 @@ Completed in 0.00262 (381 reqs/sec) | DB: 0.00038 (14%)
 
 ## Debugging
 
-作为 Java 开发者，我们习惯为应用程序使用强大的 GUI 调试器。在 Ruby 中，调试的支持是非常原始的。我们尝试过一些开源和商业调试器。它们都太慢了，以至于我们从不启动它们。
+作为 Java 开发者，我们习惯为应用程使用强大的 GUI 调试器。在 Ruby 中，调试的支持是非常原始的。我们尝试过一些开源和商业调试器。它们都太慢了，以至于我们从不启动它们。
 
 我们很少想念调试器，因为我们的开发方法使用各种不同的测试来捕捉程序错误。但“很少”并不等同于“从未”，如果能有一个良好的 Ruby GUI 调试器将不胜感激。
 
@@ -5506,12 +5535,10 @@ def initialize(value)
 end
 ```
 
-
-
-
 这是系列从实现角度描述 Rails 路由的文章中的第一篇。路由本身已经非常灵活了；掌握了这些信息，你可以按照自己喜欢的方式对其进行扩展。
 
 ### 使用 memcached 进行 Ruby on Rails 的会话存储
+
 . . . [`railsexpress.de/blog/articles/2006/01/24/using-memcached-for-ruby-on-rails-session-storage`](http://railsexpress.de/blog/articles/2006/01/24/using-memcached-for-ruby-on-rails-session-storage)
 
 这是 Stefan Kaes 使用 `memcached` 的测试结果。Stefan 定期会在他的博客上更新新的测试结果，因此除了本文外，请确保也阅读了他最近的文章。
@@ -5523,7 +5550,9 @@ end
 虽然可以从控制器直接渲染内容，但几乎 100% 的 Rails 应用都使用了 `ActionView`。`ActionView` 通过插件化的模板机制支持多种渲染方法。`ActionView` 自带三种风格的模板：
 
 - **嵌入式 Ruby (ERb) 模板**：存储在 `.rhtml` 文件中，混合标记和嵌入式 Ruby 来构建动态内容。
+
 - **Builder 模板**：存储为 `.rxml` 文件，使用纯 Ruby 构建 XML 输出。
+
 - **JavaScript 模板**：存储在 `.rjs` 文件中，使用 Ruby API 构建 JavaScript 输出。
 
 添加新的模板类型非常容易，无论是自定义的还是来自第三方的。为了演示这一点，我们还将查看 `Markaby`，这是一个使用纯 Ruby 渲染 HTML 的第三方 gem。
@@ -5580,7 +5609,7 @@ JSP 和 `ActionView` 都有减少视图模板“代码化”程度的机制。�
 </c:if>
 ```
 
-所有的 Java 代码都被标签取代了。`c:if` 标签替换了 `if` 语句，`c:out` 标签替换了 JSP 表达式。这有两个目标：首先，标签比 Java 代码更易于阅读视图代码的页面设计师。其次，标签允许不需要解析 Java（或理解 Java 堆栈跟踪）的情况下进行验证。缺点是学习两种语法：自定义标签词汇以及例如在 `c:if` test 属性中创建布尔表达式的表达式语言。
+所有的 Java 代码都被标签取代了。`c:if` 标签替换了 `if` 语句，`c:out` 标签替换了 JSP 表达式。这有两个目标：首先，标签比 Java 代码更易于阅读视ify代码的页面设计师。其次，标签允许不需要解析 Java（或理解 Java 堆栈跟踪）的情况下进行验证。缺点是学习两种语法：自定义标签词汇以及例如在 `c:if` test 属性中创建布尔表达式的表达式语言。
 
 ## 编写自定义辅助方法
 
@@ -5589,10 +5618,6 @@ JSP 和 `ActionView` 都有减少视图模板“代码化”程度的机制。�
 由于 Rails 包含了许多内置辅助方法，简单的 Web 应用可能不需要许多（或任何）自定义辅助方法。你会知道何时以及是否需要它们。当你看到视图多处重复了相同的代码时，就是时候编写辅助方法了。
 
 作为一个简单的例子，想象 Rails 应用的用户希望对格言妙语（quips）设置一个礼貌过滤器。他们的具体要求是，当礼貌过滤器开启时，四个字母的单词应该渲染为 !@#$ 我们作为一个辅助方法在 `QuipsHelper` 中添加此功能：
-
-
-
-
 
 [下载 code/rails_xt/app/helpers/quips_helper.rb](http://media.pragprog.com/titles/fr_r4j/code/code/rails_xt/app/helpers/quips_helper.rb)
 
@@ -5626,6 +5651,7 @@ end
 ![Image 46](img/index-171_1.png)
 
 # 编写自定义 helper
+
 171
 
 Joe 问. . .
@@ -5670,11 +5696,12 @@ end
 ```
 
 # 使用布局和部分进行复用
+
 172
 
 ## 6.4 使用布局和部分进行复用
 
-视图模板通常需要共享代码。在 JSP 中，你可以将共同代码移动到单独的 `.jsp` 文件中然后使用 include 指令。include 指令通常组合页面的关键元素，例如页眉、页脚、菜单、状态消息和内容。例如，这里是 Struts 示例应用程序中的一个 JSP 页面，经过编辑只显示基本的页面结构：
+视图模板通常需要共享代码。在 JSP 中，你可以将共同代码移动到单独的 `.jsp` 文件中然后使用 include 指令。include 指令通常组合页面的关�元素，例如页眉、页脚、菜单、状态消息和内容。例如，这里是 Struts 示例应用程序中的一个 JSP 页面，经过编辑只显示基本的页面结构：
 
 ```html
 <div id="page" >
@@ -5718,10 +5745,6 @@ end
 </html>
 ```
 
-
-
-
-
 以下是用于渲染人员姓和和名输入元素的 Struts 代码：
 
 [下载 code/appfuse_people/web/pages/personForm.jsp](http://media.pragprog.com/titles/fr_r4j/code/code/appfuse_people/web/pages/personForm.jsp)
@@ -5745,6 +5768,7 @@ end
 用于编辑人员属性的 Rails scaffold 代码位于 `app/views/people/_form.rhtml`：
 
 构建 HTML 表单
+
 175
 
 [下载 code/people/app/views/people/_form.rhtml](http://media.pragprog.com/titles/fr_r4j/code/code/people/app/views/people/_form.rhtml)
@@ -5760,7 +5784,9 @@ end
 Struts 版本使用了页面构建标签，而 Rails 版本使用了内置的表单助手。`error_message_on` 方法输出验证错误。`text_field` 方法在这里接收两个参数。Rails 结合这两个参数来创建一个参数名，因此 `text_field 'person', 'first_name'` 变成一个名为 `person[first_name]` 的参数。当参数提交到服务器时，Rails 会自动将这种方式命参数转换为哈。这非常方便，因为 `ActiveRecord` 构造函数接受一个哈参数。
 
 Struts 表单验证有两个 Rails 不具备的功能：
+
 - 可以使用客户端 JavaScript 验证。
+
 - 错误消息是国际化的。
 
 如果你在 Rails 应用中需要这些功能，你将需要找到插件或自己编写一个。我们发现 Rails 在其他方面的优势超过了这些缺陷，但在估算项目开发工作时，意识到这些点是非常重要的。Rails 包含了适用于每种 HTML 表单输入的表单助手方法。以下是一些表单助手的示例：
@@ -5789,6 +5815,7 @@ Struts 表单验证有两个 Rails 不具备的功能：
 ```
 
 构建 HTML 表单
+
 176
 
 在第 6 行，你看到了表单标签助手的双参数版本。第一个参数是实例变量名，第二个参数是该实例上存取访问器（accessor）的名称。Rails 将从实例变量中填充初始值，并将查询字符串参数转换为一个与实例变量同名的哈。在第 10 行，你看到了三参数版本。第三个参数是一个转换为标签上属性的哈。在这里我们设置了 CSS 样式。
@@ -5835,9 +5862,6 @@ module ApplicationHelper
   end
 end
 ```
-
-
-
 
 对 `concat` 的调用是 ERb 版本的 `puts`，而 `form_for` 的调用将 `:builder` 设置为我们的 `TabularFormBuilder`。
 
@@ -5907,9 +5931,13 @@ end
 ```
 
 - 第 1 行演示了如何生成元素。只需通过元素名调用，并为任何嵌套在元素内部的内容传递一个块。
+
 - 第 3 行显示了如何设置元素的内容，只需将其作为字符串传递。
+
 - 第 4 行演示了如何调用 Rails 辅助方法。
-- 第 7 行显示了通过传递哈希来创建 HTML 属性。
+
+- 第 7 行显示了如何通过传递哈希来创建 HTML 属性。
+
 - 第 8 行演示了如何通过连接到 `self` 来直接写入内容。为了演示更多 `Markaby` 的功能，这里有一个简单的模板：[下载 code/rails_xt/app/views/layouts/astro.mab](http://media.pragprog.com/titles/fr_r4j/code/code/rails_xt/app/views/layouts/astro.mab)
 
 ```ruby
@@ -5922,6 +5950,7 @@ div.planet! do
 ```
 
 - 第 1 行演示了生成元素 ID。带感叹号的方法变成元素的 ID，因此 `div.planet!` 变成了 `<div id="planet">`。
+
 - 第 4 行显示了如何添加 CSS 类。有意义的方法变成 CSS 类，因此 `span.emphasis` 变成了 `<span class="emphasis">`。
 
 ## 6.7 缓存页面、动作和片段
@@ -5939,10 +5968,6 @@ caches_page :show, :edit
 当 Rails 首次渲染页面缓存的动作时，它会将结果复制到公共目录。后续页面请求将不会遇到 Rails。由于页面现在公共目录下，它将像其他静态资源一样被返回。页面缓存的性能是。遗憾的是，页面缓存通常是不恰的。任何具有个人用户行为（如安全检查）、个人状态（会话）或随时间变化的页面都无法缓存。
 
 如果你的应用程序需要安全检查等个人用户行为，可以使用缓存动作而不是缓存页面。语法几乎相同：
-
-
-
-
 
 `caches_action : :show, :edit`
 
@@ -5975,8 +6000,11 @@ caches_page :show, :edit
 你已经看到了如何开启页面、action 和片段缓存。那是简单部分。困难的部分是确保在数据变化时使缓存项失效。有几种可能的方法：
 
 -   不要管它，让应用程序显示过时信息。这在大多数应用程序中可能都是一个坏主意。
+
 -   从 Rails 外部清理缓存，使用后台进程删除缓存文件，也许可以定时执行。
+
 -   手动过期缓存项。每当控制器保存会导致缓存失效的修改时，显式地调用 `expire_page`、`expire_action` 或 `expire_fragment`。
+
 -   使用 Rails sweeper（观察者模式的一种形式）根据模型的变化使页面过期。
 
 我们推荐使用 sweeper 方法，因为它将缓存与程序的其余逻辑清晰地分离开。以下是使用 sweepers 来管理我们在本节之前创建的各种缓存示例的方法。
@@ -6002,8 +6030,11 @@ end
 它的工作原理如下：
 
 1. 第 1 行，`PersonSweeper` 类继承了 `ActionController::Caching::Sweeper`。
-2. 第 3 行，`observe` 告诉 Rails 要观察哪个模型。
+
+2. 第 3 行，`observe` 告诉 Rails 要观察哪个模模型。
+
 3. 第 6 行，`expire_cache_for_instance` 会在 `show` 和 `edit` 时被调用。
+
 4. 第 9 行，我们使用 `alias_method` 将 `after_save` 和 `after_destroy` 链接到 `expire_cache_for_instance`。
 
 ## 你测试缓存吗？
@@ -6036,14 +6067,11 @@ end
 
 Ajax（异步 JavaScript 和 XML）席卷了 Web 世界。该术语由 Jesse Garrett 在 2005 年 2 月提出，到 2006 年 9 月，一份调查报告显示几乎 70% 的受访者已经在使用或计划使用 Ajax 技术。这种成功的原因之一是 Ajax 术语定义的模糊性。在本书中我们将 Ajax 指为任何打破了 Web 页面隐喻且在现代浏览器中无需额外软件即可运行的 Web 应用技术。
 
-
-
-
 引入异步性符合这一定义：典型的 `XMLHttpRequest` 对象，加上使用框架、脚本标签和图像标签的各种技巧。
 
 ## JavaScript 库：Prototype 和 Scriptaculous
 
-任何 Ajax 架构的核心都是一个或多个 JavaScript 库。这些库运行在客户端浏览器中，响应用户输入，提交异步请求，处理服务器响应并更新用户界面。
+任何 Ajax 架构的核心都是一个或多个 JavaScript 库。这些库运行在客户端浏览器中，响应用户输入，提交异步请请求，处理服务器响应并更新用户界面。
 
 从理论来说，这些库与你的服务器端框架是解耦的。由于 Ajax 中所有的实际通信都是通过 `HTTP` 进行，因此任何 Ajax 客户端代码都可以与任何编写良好的服务器代码共存。在实践中，这部分是真的。最流行的 Ajax 库确实用于不同的服务器端技术栈。根据最近的调查，`Prototype` 是最流行的 Ajax 框架。我们见过 `Prototype` 用于带有 `Rails`、`.NET`、`Java` 和 `PHP` 后端的项目。
 
@@ -6167,29 +6195,36 @@ end
 </div>
 ```
 
-
-
-
-
 ```ruby
 <%= link_to 'List', :action => 'list' %>
 ```
 
 我们最初是通过复制和粘贴 `show` 的模板 `show.rhtml` 来创建此文件的。然后，我们进行了以下更改：
 
+
+
 - `image_tag` 显示一个动画 GIF 作为进度指示器，这样用户就能看出我们正在进行异步调用。由于最初没有 Ajax 调用，此图像被设置为 `:style=>"display:none"`。
+
 - 有一个用于搜索操作的表单，包含一个搜索字段。
+
 - 表单内部有一个对 `observe_field` 辅助方法的调用。这就是 Ajax 发生的地方，稍后会进行更详细的描述。
+
 - 实际表格并没有在这里渲染，而是在名为 `search_results` 的部分模板（partial）中渲染。
+
 - 该部分模板被包裹在一个 `div id="search-results"` 中。
 
 `observe_field` 的调用接受一个必需的单数参数，以及大量的可选参数。我们在这里使用的参数如下：
 
 - `:search` 是要观察字段的 ID。它指向 `text_field_tag`。
+
 - `:frequency` 是检查字段变化的频率（以秒为单位）。较小的值响应更快，但对服务器的负载也更大。（零是一个特殊情况，会导致在退出控件时检查该字段。）
+
 - `:update` 是要用 Ajax 调用结果更新的 DOM ID。这就是为什么我们需要将部分模板包裹在一个已知的 DOM ID 中。
+
 - `:complete` 和 `:before` 指定了在 Ajax 调用之前和之后执行的 JavaScript。这用于显示和隐藏进度指示器。
+
 - `:with` 指定了 Ajax 请求的查询字符串。对 `encodeURIComponent` 的调用是 JavaScript。
+
 - `:url` 指定要调用的服务器 URL，使用标准的 Rails `url_for` 参数。
 
 ## Ajax 规划
@@ -6203,7 +6238,9 @@ end
 尽管这很方便，但在几种情况下你应该避免这样做：
 
 - 许多用户可能没有意识到原位编辑器的存在。你可能需要添加更多的视觉指示，或以某种方式训练用户。
+
 - 某些模型对象具有跨越多个字段或多行的验证约束。允许逐字段编辑可能会使这些对象处于无效状态，或使某些有效状态无法实现。
+
 - 原位编辑对服务器的要求更高。
 
 一个巨大的设计考虑是没有启用 Ajax 浏览器的用户。在我们的示例中，即使禁用 Ajax，一切仍然可以工作——你可以通过禁用浏览器中的 JavaScript 来验证这一点。但这种可降级的 Ajax（degradable Ajax）需要我们在最初介绍示例时没有提到的提前思考。原位编辑示例在没有 Ajax 的情况下可以使用，因为 `Edit` 链接仍然在那里。如果 Ajax 不可用，只需通过普通的页面跳转从显示（Show）切换到编辑（Edit）模式。
@@ -6213,8 +6250,11 @@ end
 我们在这里展示的两个示例演示了 Rails Ajax 开发的一些最重要的主题：
 
 - Rails 辅助方法隐藏了 Prototype 和 Scriptulous 的细节。只要你保持在辅助方法的范围内，你就不真的需要理解 JavaScript。（尽管我们认为你应该理解。）
+
 - 只要你足够细心，可降级的 Ajax 是可能的。一种简单的方法是让同一个控制器方法兼顾双重职责，并根据 `request.xhr?` 进行分支。
+
 - Ajax 辅助方法倾向于通过最后的 `Hash` 参数接收几个必需参数和许多可选参数。许多选项名称在多个方法之间共享的，减少了你需要学习的内容。
+
 - 许多 Rails Ajax 辅助方法鼓励一种依赖于返回 HTML 片的 Ajax 风格（与 AJAX 缩写所建议的 XML 相对于这种风格简化了向现有 Web 应用程序增量添加 Ajax 功能，但如果你正在构建一个更全面的 Ajax 化应用程序，它可能用较小。
 
 另一种 Ajax 开发方法是在响应 Ajax 请求时发送 JavaScript 代码。虽然这听起来可能不太可能，但 Rails 包含了一种巧妙的 JavaScript 生成机制，允许你用 Ruby 代码编写页面更新。下一节将向你展示。
@@ -6227,7 +6267,7 @@ RJS (Rails JavaScript) 允许通过对服务器上的页面对象编程来更新
 
 ```html
 <div id="search-count">
-<%= render :partial=>'search_count%>
+<%= render :partial=>'search_count' %>
 </div>
 ```
 
@@ -6240,10 +6280,8 @@ Found <%= @quips.size %> matching your request.
 现在是挑战：在用户触发搜索后，两个不同的 div 应该更新：包含表格的 `search-results` div 和带有结果数量的 `search-count` div。如果你尝试在带有 `:update` 选项的情况下使用 `observe_field`，你将会有两个选择：
 
 - 将两个 div 包裹在一个更高级的 HTML 元素中，并更新它。
+
 - 发起两个独立的 Ajax 请求，每个元素一个。
-
-
-
 
 RJS 来救你的急了。有了 RJS，进行多次更新变得轻而易举。
 
@@ -6281,30 +6319,45 @@ end
 由于验收测试对实现细节一无所知，因此验收测试工具并不特定于任何语言或库。我们使用开源工具 Selenium 为 Web 应用构建验收测试。使用 Selenium 测试 Rails 应用通常涉及三个独立的库：
 
 * `Selenium Core` 是底层的 Selenium 引擎。`Selenium Core` 可以在大约十种不同的浏览器平台上运行测试。
+
 * `Selenium IDE` 是一个用于记录测试的 Firefox 扩展。在 `Selenium IDE` 中记录的测试随后可以使用 `Selenium Core` 在其他浏览器上运行。
+
 * `Selenium on Rails` 是一个 Rails 插件，提供了一个基于 Ruby 的库来调用 `Selenium`。对于大量的测试，这个库比 `Selenium IDE` 产出的测试格式更容易操作。
 
 要查看这些库的运行情况，请按照 Selenium 主页上的说明安装 `Selenium Core` 和 `Selenium IDE`。我们将使用 `Selenium IDE` 为 People 应用记录一个测试。
 
 1. 安装 `Selenium IDE` 后，重启 Firefox。
+
 2. 在测试环境中运行 People 应用：
+
    `RAILS_ENV=test script/server`
+
 3. 打开 Firefox，并导航到 People 索引页 `/people`。
+
 4. 从 Firefox 工具菜单中选择 `Selenium Recorder` 以开启 `Selenium Recorder`。调整浏览器窗口和录制器的大小，以便能同时看到它们。
+
 5. 点击 `New Person` 链接创建一个新成员。注意录制器正在记录你的操作。
+
 6. 点击 `Create` 按钮创建一个新人。这应该会失败，因为该人没有名字。
+
 7. 在浏览器窗口选择错误消息“can’t be blank”。右键点击选定内容，选择 `Append Selenium Command | verifyTextPresent`。
+
 8. 输入名和姓，再次点击 `Create`。
+
 9. 选择状态消息“Person was successfully created”并追加另一个 Selenium 命令来验证此文本是否存在。
+
 10. 切换到 `Selenium Recorder`，并将测试保存为 `test/selenium/people/create_person.html`。
 
 使用 `Selenium IDE` 运行你的测试。IDE 顶部的 `Play` 按钮将启动测试，你可以以三种不同的速度运行：`Run`（运行）、`Walk`（演示）或 `Step`（单步）。`Selenium IDE` 还有其他我们在这里不会显式介绍的功能：
 
 * `command` 字段是一个弹出窗口，列出了所有（大量的）可能的 Selenium 命令。
+
 * `Log` 标签页保留了过去测试的日志信息。
+
 * `Reference` 标签页记录了当前命令，并与你选择的任何命令自动同步。
 
 在 Rails 应用中，运行整个测试套件简单的方法是安装 `Selenium on Rails` 插件：
+
 `script/plugin install http://svn.openqa.org/`
 
 我们发现连字符与 Rails 1.2 兼容性不好。将插件重命名为使用下划线（`selenium_on_rails`）可以解决这个问题。
@@ -6322,6 +6375,7 @@ end
 ```
 
 Selenium on Rails 提供了另一种使用 Ruby 语法的测试格式。这在编写复杂的测试时非常方便。要创建一个 Selenium on Rails 测试，使用以下生成器：
+
 `./script/generate selenium your_test`
 
 这将创建一个名为 `test/selenium/your_test.rsel` 文件。用 RSelenese 命令填充测试。（RSelenese 命令在 Selenium on Rails 的文档中有记录。）
@@ -6343,10 +6397,6 @@ Selenium on Rails 还包含一个 `test:acceptance` Rake 任务。你可以使�
 
 视图层是程序员、交互设计师和图形设计师会合的地方。在 Java 世界中，视图层通常构建
 
-
-
-
-
 这种方法假设程序员熟悉 Java，而设计师熟悉 HTML。因此，大量的精力被用于创建一个动态环境，以弥补 Java 与 HTML/脚本世界之间的差异。标签库（Tag libraries）、`JSTL` 表达式语言以及 `OGNL` 都旨在在不引入 Java 语法复杂性的情况下提供动态内容。
 
 如果我们必须用一句话来总结 Rails 方法的独特之处，那就是“以 Ruby 为中心的简单性”。其愿景是让每个人（包括页面设计师）都只需要了解一点 Ruby，而不需要其他知识。由于 Ruby 是一门脚本语言，它对设计师和程序员来说已经足够友好了。因此，不需要像标签库和自定义表达式语言这样的中间环节。一切都只是简单的 Ruby。
@@ -6360,16 +6410,27 @@ Selenium on Rails 还包含一个 `test:acceptance` Rake 任务。你可以使�
 ### 6.12 资源
 
 - **HAML: HTML 抽象标记语言**。[`unspace.ca/discover/haml/`](http://unspace.ca/discover/haml/)
+
   HAML 是 Rails 的一种替代模板引擎。
+
 - **Markaby: 标记即 Ruby**。[`code.whytheluckystiff.net/markaby/`](http://code.whytheluckystiff.net/markaby/)
+
   Markaby 是一种用纯 Ruby 方法生成 HTML 标记的方法。它痴迷于便利，并愿意为了实现目标而尽可能使用地道的 Ruby 代码。
+
 - **Rails Cache Test Plugin**。[`blog.cosinux.org/pages/page-cache-test`](http://blog.cosinux.org/pages/page-cache-test)
+
   Rails Cache Test Plugin 提供了断言，用于测试内容的缓存和缓存内容的过期。即使在关闭缓存的情况下（测试环境中通常是关闭的），测试也能运行，因为该插件存根（stub out）了缓存相关的方法。
+
 - **Selenium**。[`www.openqa.org/selenium/`](http://www.openqa.org/selenium/)
+
   Selenium 是一种用于 Web 应用的测试工具。Selenium 直接运行在浏览器中，因此适用于功能测试、验收测试以及跨浏览器兼容性测试。
+
 - **Selenium IDE**。[`wiki.openqa.org/display/SIDE/Home`](http://wiki.openqa.org/display/SIDE/Home)
+
   Selenium IDE 是一个 Firefox 扩展，你可以用它记录、执行和调试 Selenium 测试。
+
 - **Selenium on Rails**。[`www.openqa.org/selenium-on-rails/`](http://www.openqa.org/selenium-on-rails/)
+
   Selenium on Rails 是一个 Rails 插件，为 Rails 项目提供标准的 Selenium 目录、用于调用 Selenium 测试的 Ruby 语法，以及用于验收测试的 `Rake` 任务。
 
 ## 第 7 章：测试
@@ -6381,7 +6442,9 @@ Selenium on Rails 还包含一个 `test:acceptance` Rake 任务。你可以使�
 `Test::Unit` 框架是 Ruby 标准库的一部分。对于任何熟悉 Java `JUnit` 的人来说，`Test::Unit` 看起来非常熟悉——这些框架以及类似的框架非常相似，以至于通常被描述为 `XUnit` 框架。与 `JUnit` 一样，`Test::Unit` 提供了：
 
 - 用于单元测试的基类以及一组命名约定，以便于于调用特定测试或一组相关测试
+
 - 一组断言，当断言遇到意外之外的结果时，它们将（通过抛出异常）使测试失败
+
 - 生生命周期方法（`setup()` 和 `teardown()`），为需要它的测试保证一致的系统状态。
 
 在本章中，我们将涵盖 `Test::Unit` 以及 `Rake` 任务如何简化编写和运行测试。我们还将涵盖 `Test::Unit` 添加的自定义断言以及测试中常用的其他工具：用于 mock 对象的 `FlexMock` 和用于代码覆盖率的 `rcov`。
@@ -6404,7 +6467,7 @@ public class Simple {
 }
 ```
 
-这里是 Ruby 中对应的代码：
+这里是 Ruby 中对应的代：
 
 ```ruby
 module Simple
@@ -6431,7 +6494,7 @@ irb(main):008> tag nil
 
 这种交互式测试很有用，并且让你快速探索边界情况（注意 `tag nil` 的结果可能是不理想的）。
 
-这种交互式测试的缺点是，你——程序员——必须在场进行交互。这第一次是可以的，但我们希望能够自动化这种测试。这就是单元测试和断言大显身场。大多数 Java 开发者使用 `JUnit` 编写单元测试。虽然 `JUnit` 不是 Java 本身的一部分，但它的应用非常广泛。你可以在 `http://www.junit.org` 下载它，或者包含在大多数 Java IDE 以及各种其他项目中。这里有一个简单的 JUnit `TestCase`：
+这种交互式测试的缺点是，你——程序员——必须在场进行交互。这第一次是可以的，但我们希望能够自动化这种测试。这就是单元测试和断言大显身场。大多数 Java 开发者使用 `JUnit` 编写单元测试。虽然 `JUnit` 不是 Java 本身的一部分，但它的应用非常广泸。你可以在 `http://www.junit.org` 下载它，或者包含在大多数 Java IDE 以及各种其他项目中。这里有一个简单的 JUnit `TestCase`：
 
 ```java
 package unit;
@@ -6443,10 +6506,6 @@ public class SimpleTest extends TestCase {
     }
 }
 ```
-
-
-
-
 
 ```
 assertEquals("<h1></h1>" , Simple.tag("h1" )); assertEquals("<h1>hello</h1>" , Simple.tag("h1" , "hello" ));
@@ -6632,13 +6691,12 @@ module Simple
 end
 ```
 
-
-
-
-
 - 等价（Equality）不等于同一性（identity）。使用 `assert_equal()` 测试相等性，使用 `assert_same()` 测试同一性。
+
 - `false` 不等于 `nil`（尽管 `nil` 在布尔上下文中表现为 `false`）。使用 `assert_nil()` 和 `assert_not_nil()` 来处理 `nil`。
+
 - 零 (0) 在布尔上下文中求值为真。不要编写任何强制任何人记住这一点的代码。
+
 - Ruby 使用 `raise` 来抛出异常，因此你使用 `assert_raises` 测试异常。不要误调用 `assert_throws` 方法！`assert_throws` 用于测试 Ruby 的 `throw/catch` 机制，该机制（尽管名字如此）并不是用于处理异常的。
 
 你可以编写自己的断言，因为它们仅仅是方法调用。通常情况下，你的断言通过调用一个或多个内置断言，来断言更复杂的、特定领域的条件。
@@ -6731,7 +6789,7 @@ create test/fixtures/people.yml
 create db/migrate/002_create_people.rb
 ```
 
-`app/models/person.rb` 和 `db/migrate/002_create_people.rb` 文件处理 ActiveRecord 模型本身，并在第 4 章第 96 页中有详细介绍。使用 ActiveRecord 访问数据，第 96 页。我们关注的是测试目录下的文件。针对 `Person` 类的单元测试文件是 `test/unit/person_test.rb`，它初始看起来如下：
+`app/models/person.rb` 和 `db/migrate/002_create_people.rb` 文件处理 ActiveRecord 模型本身，并在第 4 章第 96 页中有详�介绍。使用 ActiveRecord 访问数据，第 96 页。我们关注的是测试目录下的文件。针对 `Person` 类的单元测试文件是 `test/unit/person_test.rb`，它初始看起来如下：
 
 ```ruby
 require File.dirname(__FILE__) + '../test_helper'
@@ -6749,13 +6807,12 @@ end
 第一行在经过路径处理后引入了 `test/test_helper.rb` 文件。`test/test_helper.rb` 文件会在任何 Rails 应用程序中自动创建，并提供三个有用工具：
 
 - 一个为测试准备的环境，包含了你可能需要的一切：环境设置、活动数据库连接、模型类访问、`Test::Unit` 以及 Rails 对 `Test::Unit` 的自有扩展。
+
 - 访问 fixtures，即测试样本数据。我们稍后会详细讨论 fixtures。
+
 - 你可能编写的任何应用程序范围内的测试助手或断言。
 
 有一点——那行 `fixtures :people`。这一行让固件数据对你的测试可用。它的工作原理如下....
-
-
-
 
 Rails 的固件（fixture）系统会寻找与 `:people` 对应的固件文件，并位于 `test/fixtures` 目录下。这产生了一个名为 `test/fixtures/people.yml` 的文件，这也是由 `script/generate` 创建的另一个文件。
 
@@ -6770,7 +6827,7 @@ another:
 id: 2
 ```
 
-该文件采用 YAML 格式，在章节 9.3, YAML 与 XML 比较中有详细介绍，位于第 261. 页。Rails 使用左侧（未缩进）的项来命名 `Person` 对象：`first` 和 `another`。Rails 使用每个项下方缩进的键值对来初始化供你的测试可用的模型对象。你可以（也应该）根据需要添加键值对，以便为你的测试创建合理的对象。这里有一个更完整的 `people` 固件版本：
+该文件采用 YAML 格式，在章节 9.3, YAML 与 XML 比较中有详细介绍，位于第 261. 页。Rails 使用左侧（未缩进）的项来命名 `Person` 对象：`first` 和 `another`。Rails 使用每个项下方缩进的键值对来初始化供你的测试可用的模模型对象。你可以（也应该）根据需要添加键值对，以便为你的测试创建合理的对象。这里有一个更完整的 `people` 固件版本：
 
 [下载 code/rails_xt/test/fixtures/people.yml](http://media.pragprog.com/titles/fr_r4j/code/code/rails_xt/test/fixtures/people.yml)
 
@@ -6887,6 +6944,7 @@ end
 如你所见，Rails 中的功能性测试无非针对控制器的单元测试。这里的大部分代码与模型测试用例相似，但有两个值得注意的区别：
 
 - 控制器测试重新打开控制器以重新定义 `rescue_action()`（等一下：控制器测试重新打开控制器以重新定义 `rescue_action()`）。在生产代码中，`rescue_action()` 处理未处理异常的报告和日志。这是类的用处的一个例子，在章节 3.1, 扩展类。
+
 - 控制器测试有一个 `setup()` 方法，建立了 `@request` 和 `@response` 以模拟 HTTP 请求。
 
 ### 使用 Rake 进行测试自动化
@@ -6907,22 +6965,26 @@ Finished in 0.315247 seconds.
 `test:units` 任务是几个标准测试任务之一，所有任务汇总在下面的图 7.1,。
 
 | 任务 | 用法 |
+
 | :--- | :--- |
+
 | `default` | 运行单元和功能测试 |
+
 | `test` | 运行单元和功能测试 |
+
 | `test:functionals` | 运行所有功能（控制器）测试 |
+
 | `test:integration` | 运行所有集成测试（跨多个控制器的多会话测试） |
+
 | `test:plugins` | 测试此 Rails 应用使用的第三方插件 |
+
 | `test:recent` | 运行过去十分钟内更改的文件 |
+
 | `test:uncommitted` | 运行尚未提交到版本控制的文件 |
 
 | `test:units` | 运行所有单元测试 |
 
 此时有人可能会认为你已经拥有了测试 Rails 应用的所有内容。你有一个测试框架（`Test::Unit`）、一个自动化工具（`rake`）以及一个代码生成器（`script/generate`），它们建立了简单易于记忆的命名规范。在章节 7.3, Rails 对 Test::Unit 的扩展中，你会看到 Rails 提供了 Test::Unit 的扩展以及一个生成器（script/generate scaffold）来向你展示如何使用它们。
-
-
-
-
 
 开始学习 Rails 对 `Test::Unit` 扩展最好的方法是查看 Rails 脚手架（scaffold）免费提供的测试：
 
@@ -7032,7 +7094,7 @@ last_name: Halloway
 assert assigns(:person).valid?
 ```
 
-这只是 ActiveRecord 对验证的标准支持，在第 113 页的第 4.5 节“验证数据值”中讨论过。当你向 `Person` 类添加验证方法时，`valid()` 调用将自动变得更智能。
+这只是 ActiveRecord 对验证的标准支持，在第 113 页的第 4.5 节“验证数据值”中讨论过。当你向 `Person` 类添加验验证方法时，`valid()` 调用将自动变得更智能。
 
 脚手架的 `test_new()` 没有引入任何新概念，所以我们跳过它。接下来是 `test_create()`：
 
@@ -7094,9 +7156,6 @@ script/generate integration_test QuipsSample
 ```ruby
 require "#{File.dirname(__FILE__)}/../test_helper"
 ```
-
-
-
 
 ```ruby
 class QuipsSampleTest < ActionController::IntegrationTest
@@ -7205,7 +7264,7 @@ Loading development environment.
 [下载 code/rails_xt/samples/unit/inflector_test.rb](http://media.pragprog.com/titles/fr_r4j/code/code/rails_xt/samples/unit/inflector_test.rb)
 
 ```ruby
-# 假设的
+# 假设
 def test_pluralize
   assert_equal "searches" , Inflector.pluralize("search" )
   assert_equal "switches" , Inflector.pluralize("switch" )
@@ -7216,7 +7275,9 @@ end
 实际的测试代码如下：
 
 [下载 code/rails/activesupport/test/inflector_test.rb](http://media.pragprog.com/titles/fr_r4j/code/code/rails_xt/activesupport/test/inflector_test.rb) (注：此处链接路径根据上下文逻辑微调，保持原意) 实际上，根据原文逻辑：
+
 [下载 code/rails/activesupport/test/inflector_test.rb](http://media.pragprog.com/titles/fr_r4j/code/code/rails_xt/activesupport/test/inflector_test.rb) 歉，原文示例链接为：
+
 [下载 code/rails_xt/samples/unit/inflector_test.rb](http://media.pragprog.com/titles/fr_r4j/code/code/rails_xt/samples/unit/inflector_test.rb) 
 
 （此处重新对齐原文）：实际测试代码看起来像：
@@ -7237,6 +7298,7 @@ end
 实际的测试代码看起来像这样：
 
 [下载 code/rails/activesupport/test/inflector_test.rb](http://media.pragprog.com/titles/fr_r4j/code/code/rails_xt/activesupport/test/inflector_test.rb) 
+
 (注：由于原文文本在链接处显示略有混乱，以下按逻辑翻译内容)
 
 ```ruby
@@ -7246,6 +7308,7 @@ SingularToPlural.each do |singular, plural|
   end
 end
 ```
+
 （重新梳理原文错乱部分，翻译翻译如下）：
 
 实际的测试代码看起来如下：
@@ -7257,9 +7320,11 @@ SingularToPlural.each do |singular, plural|
   end
 end
 ```
+
 （抱歉，原文提供的文本在 `Inflector` 部分之后出现了严重的文本粘贴重复和混乱，我将根据逻辑对其进行清晰的翻译还原）：
 
 ---
+
 **针对原文 Inflector 部分混乱部分的还原性翻译：**
 
 `Inflector` 模块实现了 Rails 对名称的所有巧妙管理，例如单数和复数之间的转换：
@@ -7305,9 +7370,6 @@ end
 ```
 
 (注：由于您提供的原文在 `Inflector` 之后存在大量重复和乱码，上述翻译已根据文档工程师逻辑对内容进行了修复和整合，确保通顺且符合 Markdown 格式)。
-
-
-
 
 在 Rails 中，当测试的设置（setup）和清理（teardown）需要一些“小技巧”时，这个问题偶尔会出现。Rails 代码库中最常见的例子是重置常量。通常，重置常量并不是好主意，并且产生警告。但当你为特定测试创建沙箱时，重置常量可能正是你所需要的。许多 Rails 测试使用了名为 `Post` 的示例结构体（struct）的不同版本。这不会引起警告，因为冲突的 `Post` 版本是在 `silence_warnings` 内部创建的：
 
@@ -7356,6 +7418,8 @@ List l = t.query("SELECT title FROM events" , new RowMapper() {
 gem install rcov
 ```
 
+
+
 测量代码覆盖率所需的插桩可能会让你的测试运行变慢——慢得多。为了抵消这一点，`rcov` 包含一个原生扩展，使得 `rcov` 的运行速度快了 100 倍。你绝对应该编译这些扩展。安装 `rcov` 后，进入安装 `rcov` 的 gems 目录，运行以下命令：
 
 ```bash
@@ -7384,19 +7448,23 @@ end
 ```
 
 ![Image 49](img/index-223_1.jpg)
+
 图 7.2：rcov 报告表明需要测试
 
 在第 7 行，`test_files` 访问器指定了要运行的测试。运行测试时，`rcov` 将生成一份报告显示哪些行被覆盖了。`rcov` 会自动从报告中排除某些文件（可能你对 Ruby 标准库或测试本身的代码覆盖并不感兴趣）。我们想要排除更多文件，因此在第 9 行，`rcov_opts` 排除了 `lib,config/boot`。
 
 任务就完成后，`rake rcov:test` 将生成一组 HTML 报告。点击文件名将用绿色显示已覆盖的行，红色显示未覆盖的行。![Image 50](img/index-224_1.jpg)
+
 图 7.3：带有颜色的 rcov 报告
 
 添加相应的测试后，再次运行 `rcov` 显示所有行均已覆盖。
 
 我们发现代码覆盖是整体策略的重要部分，但如果没有上下文，原始百分比是没有意义的。几个因素会产生虚高或虚低的覆盖率：
 
-字体 写入方法（如 `attr_accessor`）创建了没有对应源代码的方法。行覆盖中这些是不可见的。
+- 字体 写入方法（如 `attr_accessor`）创建了没有对应源代码的方法。行覆盖中这些是不可见的。
+
 - 行覆盖也会遗漏其他情况。如果一个方法组合了多个布尔表达式并产生分支，简单的行覆盖无法保证所有表达式都经过了测试。
+
 - 报告的文件选择可能会噪声淹没数据。
 
 与其纠结于绝对数值，跨库或跨时间比较覆盖率更有用。如果某些模块的覆盖率始终低于其他模块，为什么呢？可能有合理的理由，记录下来是明智的。如果特定模块的覆盖率随时间推移而上升或下降，这表明测试质量发生了真实变化，还是其他现象的产物？覆盖率在估算变更请求相关的风险时特别有用。如果代码的覆盖率很高，那么该代码的工作估算可能会更可靠。
@@ -7408,26 +7476,33 @@ end
 到目前为止，本章的示例关注测试对象状态。大多数测试都是这样编写的：
 
 1. 创建要测试的对象。
+
 2. 在对象上调用方法。
+
 3. 断言对象的状态是有效的。
 
 这种测试方法在你想要时可能会导致问题：
 
-
-
 测试的对象与其他对象存在非平凡的关系。想象以下场景：
 
 1. 创建一个你想要测试的对象 `A`。
+
 2. 调用 `A` 上的某些方法。这些方法调用了对象 `B` 和 `C` 上的其他方法。
+
 3. 断言 `A`、`B` 和 `C` 处于有效状态。
 
 哎。现在我们对 `A` 的测试依赖于 `B` 和 `C` 的实现细节。理想情况下，我们希望隔离测试 `A`。这个困境的解决方案是 mock 对象（模拟对象）。mock 对象执行两个任务：首先，mock 对象替换了我们不感兴趣的对象；其次，它记录了对该对象的调用。稍后我们可以验证是否执行了正确的调用以及顺序顺序。我们不是在测试状态，而是在测试交互。之前的场景变成了：
 
 1. 创建一个你想要测试的对象 `A`。
+
 2. 为 `B` 和 `C` 创建 mock 对象。
+
 3. 为 `B` 和 `C` 如何被使用设置期望：即期望（expectations）。
+
 4. 调用 `A` 上的某些方法。这些方法调用了（模拟！）对象 `B` 和 `C` 的其他方法。
+
 5. 断言 `A` 处于有效状态。
+
 6. 验证 mock 对象。验证会将你的期望与对 `B` 和 `C` 执行的实际调用进行比较，如果不匹配则测试失败。
 
 # 使用 mock 对象测试交互
@@ -7436,7 +7511,7 @@ end
 
 由于 Java SDK 不包含对 对象的支持，第一步是选择一个第三方框架。我们将使用流行的开源库 `jMock`：
 
-[下载代码/appfuse_people/test/service/com/relevancellc/people/service/PersonManagerTest.java](http://media.pragprog.com/titles/fr_r4j/code/code/appfuse_people/test/service/com/relevancellc/people/service/PersonManagerTest.java)
+[下载 code/appfuse_people/test/service/com/relevancellc/people/service/PersonManagerTest.java](http://media.pragprog.com/titles/fr_r4j/code/code/appfuse_people/test/service/com/relevancellc/people/service/PersonManagerTest.java)
 
 ```java
 import org.jmock.Mock;
@@ -7477,7 +7552,7 @@ gem install flexmock
 
 为了让 `FlexMock` 在 Rails 应用程序中的所有测试可用，请在 `test_helper.rb` 中引入它：
 
-[下载代码/rails_xt/test/test_helper.rb](http://media.pragprog.com/titles/fr_r4j/code/code/rails_xt/test/test_helper.rb)
+[下载 code/rails_xt/test/test_helper.rb](http://media.pragprog.com/titles/fr_r4j/code/code/rails_xt/test/test_helper.rb)
 
 ```ruby
 require 'flexmock'
@@ -7487,7 +7562,7 @@ require 'flexmock'
 
 可以通过独立类调用 `FlexMock` API。然而，更简单的方法是通过包含 `FlexMock::TestCase` 开始我们的测试用例：
 
-[下载代码/rails_xt/test/functional/quips_controller_test.rb](http://media.pragprog.com/titles/fr_r4j/code/code/rails_xt/test/functional/quips_controller_test.rb)
+[下载 code/rails_xt/test/functional/quips_controller_test.rb](http://media.pragprog.com/titles/fr_r4j/code/code/rails_xt/test/functional/quips_controller_test.rb)
 
 ```ruby
 include FlexMock::TestCase
@@ -7497,7 +7572,7 @@ include FlexMock::TestCase
 
 `QuipsController` 应该提供一个新方法 `list_with_user_filter`。该方法应该返回所有 quips，减去任何被 `FilterService` 拒绝的 quips。以下是测试代码：
 
-[下载代码/rails_xt/test/functional/quips_controller_test.rb](http://media.pragprog.com/titles/fr_r4j/code/code/rails_xt/test/functional/quips_controller_test.rb)
+[下载 code/rails_xt/test/functional/quips_controller_test.rb](http://media.pragprog.com/titles/fr_r4j/code/code/rails_xt/test/functional/quips_controller_test.rb)
 
 ```ruby
 def test_list_with_user_filter
@@ -7509,9 +7584,6 @@ def test_list_with_user_filter
   assert_template 'list_with_user_filter'
 end
 ```
-
-
-
 
 # 使用存根对象（Stub Objects）减少依赖
 
@@ -7615,6 +7687,7 @@ Ruby 世界中 `Test::Unit` 的一个可能竞争对手是 `RSpec`。`RSpec` 是
 231
 
 **A Guide to Testing the Rails** . . . . [http://manuals.rubyonrails.com/read/5]
+
 Ruby on Rails 手册非常详尽，包含了这里没有涵盖的内容，如 ActionMailer。
 
 10. [http://testng.org]
@@ -7623,24 +7696,29 @@ Ruby on Rails 手册非常详尽，包含了这里没有涵盖的内容，如 Ac
 
 12. [http://jbehave.codehaus.org/]
 
-
-
-
-
 软件开发过程需要大量的自动化。给定构成项目的源代码和其他文件，你可能希望触发进程来完成以下操作：
 
 *   编译代码
+
 *   将代码从一个环境部署到另一个环境
+
 *   为开发、测试和生产环境设置不同的配置
+
 *   运行自动化测试
+
 *   启动和停止服务器进程
+
 *   收集分析数据
+
 *   管理日志文件
+
 *   处理与其他库的依赖关系
+
 *   配置数据库和数据
+
 *   以及更多此类任务……
 
-你可以肯定，中等规模的项目会有这类任务。这些任务中的大多数在最纯粹、原始的形式下，都可以通过某些命令行工具（带有适当的设置）单独触发。但记住所有的正确设置以及调用工具的顺序是枯燥且容易出错的。大多数编程环境都包含一个用于此类自动化的基本工具。在经典的 Unix 开发中，这个基本工具是 `make.1`。在 Java 中，工具是 `ant`。在 Ruby 中，工具是 `rake`。
+你可以肯定，中等规模的项目会有这类任务。这些任务中的大多数在最纯粹、原始的形式下，都可以通过某些命行工具（带有适当的设置）单独触发。但记住所有的正确设置以及调用工具的顺序是枯燥且容易出错的。大多数编程环境都包含一个用于此类自动化的基本工具。在经典的 Unix 开发中，这个基本工具是 `make.1`。在 Java 中，工具是 `ant`。在 Ruby 中，工具是 `rake`。
 
 本章将通过与 `ant` 的对比来解释 `rake`，然后演示我们使用 `rake` 管理 Rails 应用程序的一些方法。
 
@@ -7650,7 +7728,7 @@ Ruby on Rails 手册非常详尽，包含了这里没有涵盖的内容，如 Ac
 
 ### 8.1 Rake 基础
 
-在 Java 世界中，`rake` 被称为 `ant`。让我们从一个管理 Java 程序编译的简单 Ant 构建脚本开始：
+在 Java 世界中，`rake` 被称为 `ant`。让我们从一个管理 Java 程编译的简单 Ant 构建脚本开始：
 
 [下载代码/Rake/simple_ant/build.xml](http://media.pragprog.com/titles/fr_r4j/code/code/Rake/simple_ant/build.xml)
 
@@ -7798,16 +7876,9 @@ task :stats => [:prepare] do
 end
 ```
 
-
-
-
-
 ```ruby
 STATS_DIR = "stats"
-```
-
 require 'rake/rdoctask'
-
 require '../code_statistics.rb'
 
 task :default => :stats
@@ -7832,7 +7903,7 @@ end
 
 # 8.3 自定义 Rake 任务：它只是 Ruby
 
-如果包含核心任务和可选任务，Ant 拥有超过 100 个内置任务。尽管如此，你可能会发现自己需要更多。不要担心，Ant 提供了许多扩展点：你可以在 Java 中定义自己的自定义任务，可以定义宏，或者可以调用各种脚本语言。例如，这里是 Apache Commons Lang 构建文件的一个片段：
+如果包含核心任务和可选任务，Ant 拥有超过 100 个内置任务。尽管如此，你可能会发现自己需要更多。不要担心，Ant 提供了许多扩展点：你可以在 Java 中定义自己的自定任务，可以定义宏，或者可以调用各种脚本语言。例如，这里是 Apache Commons Lang 构建文件的一个片段：
 
 ```xml
 <target name="test.lang" depends="compile.tests" >
@@ -7887,7 +7958,8 @@ end
 
 ```ruby
 t.libs << 'test'
-t.verbose = true  t.test_files = touched.uniq
+t.verbose = true
+t.test_files = touched.uniq
 ```
 
 计算运行哪些测试的代码必须执行两个任务：找到最近更改的测试和找到最近更改的测试。使用了 `FileList['test/**/*_test.rb'].select { |path| File.mtime(path) > since }` 和 `recent_tests` 调用。
@@ -7909,13 +7981,12 @@ require 'tasks/rails'
 ```bash
 rake --tasks
 (in /Users/stuart/website)
-
 rake db:schema:load # 将 schema.rb 文件加载数据库
 rake db:sessions:clear # 清空会话表
 ... 省略 39 项
 ```
 
-注意这些冒号分隔的名称。Rake 使用命名空间将任务分组。例如，`db:migrate` 的定义如下：
+注意这些冒号分隔的名称。Rake 使用命名空将任务分组。例如，`db:migrate` 的定义如下：
 
 ```ruby
 namespace :db do
@@ -7931,28 +8002,18 @@ end
 ```bash
 rake --help
 rake [-f rakefile] {options} targets...
-
 Options are ...
-
 --dry-run (-n)
 在不执行操作的情况下运行。
-
 --quiet (-q)
 不向标准输出记录消息。
-
 --require=MODULE (-r)
 在执行 rakefile 之前引入 MODULE。
-
 --trace (-t)
 开启调用/执行追踪，启用完整的堆栈跟踪。
-
 --verbose (-v)
 向标准输出记录消息（默认）。
 ```
-
-
-
-
 
 `dry-run` 选项在你探索 `rakefile` 并且想在采取行动前先观察一下时非常有用。对于持续集成构建过程，保持静安静是一件很好的事：“没消息就是好消息。”当 `rake` 出现问题时，症状通常是 `Ruby` 异常。默认情况下不会显示堆栈跟踪（这是我们不认同的设计决策），但你可以通过 `verbose` 开启它们。`trace` 选项对于开发和调试 `rakefiles`。最后，`require` 选项是更改 `rakefile` 行为的许多方法之一。由于 `rakefile` 是 `Ruby` 代码，你可以 `require` 引入任何你需要更改的常量、变量、类或方法的重覆盖实现。
 
@@ -8053,9 +8114,6 @@ builder:
 
 一旦你有了了满意的 Cerberus 配置，可以使用操作系统级服务（如 `cron` 或 Windows 任务计划程序）定期（例如每十分十分一次）自动运行 `cerberus buildall`。只有在仓库发生变化时，构建才会运行。
 
-
-
-
 Capistrano 是一个基于 Ruby 的部署自动化工具。尽管它是为 Ruby 和 Rails 开发的，但它也可以部署其他语言平台的应用程序。Capistrano 虽然超出了本书的范围，但非常值得去学习。
 
 ## 洋葱罢工再次来袭……介绍 Rake……
@@ -8111,7 +8169,7 @@ REST 的倡导者指出，REST 具有良好的扩展性。标准化的 CRUD 接�
 
 SOAP 是一种用于访问 Web 服务的 XML 协议。SOAP 服务的“接口”可以是任何你想要的。SOAP XML 消息体可以包含方法名和参数，或者仅仅是一个任意的 XML 文档。SOAP 的核心组件是 SOAP Header，它可以携带各种元数据。SOAP 头部用于寄载各种附加服务。
 
-许多其他规范都依赖于 SOAP。这些规范合在一起规定了错误处理、事务、端到端安全等标准方法。REST 在解决这些问题方面几乎无可说。当然，这些都是过度简化的。我们刻意在 SOAP 和 REST 之间划了界限。在实践中，各种中间策略利用了两者的优点。
+许多其他规范都依赖于 SOAP。这些规范合在一起规定了错误处理、事务、端到端安全等标准方法。REST 在解决这些问题方面几乎无可说。当然，这些都是过度简化的。我们刻意在 SOAP 和 REST 之间划了界限。在实践中，各种中间策利用了两者的优点。
 
 ## 使用 ActiveResource 创建 RESTful 服务
 
@@ -8156,17 +8214,12 @@ script/server
 
 然后，从另一个控制台运行这个简单的 Ruby 脚本来 GET `/authors` URL：
 
-
-
-
-
 [下载 code/rails_xt/samples/rest/get_authors_html.rb](http://media.pragprog.com/titles/fr_r4j/code/code/rails_xt/samples/rest/get_authors_html.rb)
 
 ```ruby
 require 'net/http'
-
-r = Net::HTTP.get_response(URI.parse("http://localhost:3000/authors" )) puts r['content-type' ]
-
+r = Net::HTTP.get_response(URI.parse("http://localhost:3000/authors" ))
+puts r['content-type' ]
 puts r.body
 ```
 
@@ -8180,13 +8233,8 @@ $ ruby samples/rest/get_authors_accept_xml.rb
 
 ```html
 text/html; charset=utf-8
-
 <h1>Listing authors</h1>
-
 <table>
-RESTFUL WEB SERVICES
-251
-
 <tr>
 <th>Canonical</th>
 <th>Legalname</th>
@@ -8203,13 +8251,10 @@ RESTFUL WEB SERVICES
 
 ```ruby
 require 'net/http'
-
 res = Net::HTTP.start('localhost' , 3000) {|http|
   http.get '/authors' , {"Accept" =>'text/xml' }
 }
-
 puts res['content-type' ]
-
 puts res.body
 ```
 
@@ -8223,7 +8268,6 @@ $ ruby samples/rest/get_authors_accept_xml.rb
 
 ```xml
 application/xml; charset=utf-8
-
 <?xml version="1.0" encoding="UTF-8" ?>
 <authors>
   <author>
@@ -8237,13 +8281,12 @@ application/xml; charset=utf-8
   <!-- 为了简洁省略了剩余部分 -->
 ```
 
-这很酷，但对于那些不会生成 `Accept` 请求头的客户端（包括浏览器）来说呢？这些客户端可以通过请求 `/authors.xml` 获取 XML 版本。当 Rails 看到 `.xml` 扩展名时，RESTful 路由会向 `params` 哈希中添加 `:format=>’xml'`。以下 Ruby 客户端返回 XML 的结果与设置了请求头完全一样：
+这很酷，但对于那些不会生成 `Accept` 请请头的客户端（包括浏览器）来说呢？这些客户端可以通过请求 `/authors.xml` 获取 XML 版本。当 Rails 看到 `.xml` 扩展名时，RESTful 路由会向 `params` 哈希中添加 `:format=>’xml'`。以下 Ruby 客户端返回 XML 的结果与设置了请求头完全一样：
 
 [下载 code/rails_xt/samples/rest/get_authors_xml.rb](http://media.pragprog.com/titles/fr_r4j/code/code/rails_xt/samples/rest/get_authors_xml.rb)
 
 ```ruby
 require 'net/http'
-
 Net::HTTP.get_print(URI.parse("http://localhost:3000/authors.xml" ))
 ```
 
@@ -8286,11 +8329,7 @@ RESTFUL WEB SERVICES
 
 考虑到这些概念，图中展示了由 `map.resources authors` 生成的各种 URL 示例。
 
-
-
-
-
-- [下载代码/rails_xt/test/resource/author_resource_test.rb](http://media.pragprog.com/titles/fr_r4j/code/code/rails_xt/test/resource/author_resource_test.rb)
+[下载代码/rails_xt/test/resource/author_resource_test.rb](http://media.pragprog.com/titles/fr_r4j/code/code/rails_xt/test/resource/author_resource_test.rb)
 
 `a = Author.find(1)`
 
@@ -8327,11 +8366,9 @@ SOAP Web 服务
 
 ```java
 package com.relevancellc.people.service;
-
 import com.relevancellc.people.model.Person;
 import com.relevancellc.people.dao.PersonDao;
 import java.util.List;
-
 public interface PersonManager {
     public void setPersonDao(PersonDao dao);
     public Person getPerson(String id);
@@ -8378,30 +8415,23 @@ SOAP Web 服务
 
 ```java
 package com.relevancellc.people.service.impl;
-
 import com.relevancellc.people.model.Person;
 import com.relevancellc.people.dao.PersonDao;
 import java.util.List;
-
 public class PersonManagerImpl implements PersonManager {
     private PersonDao dao;
-
     public void setPersonDao(PersonDao dao) {
         this.dao = dao;
     }
-
     public Person getPerson(String id) {
         return dao.getPerson(id);
     }
-
     public void savePerson(Person person) {
         dao.savePerson(person);
     }
-
     public void removePerson(String id) {
         dao.removePerson(id);
     }
-
     public List getPeople(Person o) {
         return dao.getPeople(o);
     }
@@ -8420,11 +8450,6 @@ class PersonServiceController < ApplicationController
   # 此处本应为 PersonServiceController 逻辑，但根据示例结构翻译
 end
 ```
-*(注：由于原始文本在结尾处出现了代码块混乱和重复，此处译文已遵循“不要重复输出原文”的原则，对逻辑结构进行了完整性处理。)*
-
-
-
-
 
 [下载 code/people/samples/person_soap_client.rb](http://media.pragprog.com/titles/fr_r4j/code/code/people/samples/person_soap_client.rb)
 
@@ -8458,8 +8483,7 @@ puts soap.getPerson(1).inspect
 
 ```bash
 $ ruby samples/person_soap_client.rb
-
-#<SOAP::Mapping::Object:0x81c768 \
+#<SOAP::Mapping::Object:0x81c768 \ 
 {}id=1 {}first_name="Stuart" {}last_name="Halloway" >
 ```
 
@@ -8535,7 +8559,7 @@ XML 旨在是人类可读且自描述的。XML 是人类可读的，因为它是
 
 语法显然更简洁。它还暗示了语义差异。属性是无序的，而元素是有序的。属性所包含的值也受到限制：属性不能包含嵌套数据（而元素可以无限嵌套）。
 
-这个简单的 XML 文档最后一个需要考虑的问题是，当它在范围内遇到同名的 `<user>` 元素时会发生什么？防止冲突，XML 允许命名空间。它们的作用与 Java 包或 Ruby 模块相同，但语法不同：
+这个简单的 XML 文档最后一个需要考虑的问题是，当它在范围内遇到同名的 `<user>` 元素时会发生什么？防止冲突，XML 允命名空间。它们的作用与 Java 包或 Ruby 模块相同，但语法不同：
 
 ```xml
 <rel:user xmlns:rel="http://www.reancellc.com/sample" username="stu" homepage="http://reancellc.com" />
@@ -8550,14 +8574,7 @@ YAML 对 XML 的批评可以总结为一句话：XML 的两个概念太多了：
 - 不需要两种不同的嵌套数据形式。元素足够了。
 - 不需要独立的命名空间概念；作用域就足够用于命名空间了。
 
-
-
-
 为了理解为什么 YAML 中的属性和命名空间是多余的，这里有同一个配置文件的三个 YAML 变体：
-
-# YAML 与 XML 的对比
-
-263
 
 [下载 code/rails_xt/samples/why_yaml.rb](http://media.pragprog.com/titles/fr_r4j/code/code/rails_xt/samples/why_yaml.rb)
 
@@ -8567,6 +8584,9 @@ user:
   homepage: http://blogs.relevancellc.com
 ```
 
+
+
+
 你可以看到，YAML 使用缩进进行嵌套。这比需要闭合标签的 XML 方法更加简洁。
 
 第二个 XML 示例使用了属性将文档缩短为单行。这里是单行的 YAML 版本：
@@ -8574,7 +8594,9 @@ user:
 [下载 code/rails_xt/samples/why_yaml.rb](http://media.pragprog.com/titles/fr_r4j/code/code/rails_xt/samples/why_yaml.rb)
 
 ```yaml
+
 user: {username: stu, homepage: http://blogs.relevancellc.com}
+
 ```
 
 单行语法引入了 `{}` 作为分隔符，但在实际数据中并没有语义上的区别。键/值数据（在 YAML 中称为 `simple mapping`，简单映射）在多行和单行文档中是完全相同的。
@@ -8586,8 +8608,11 @@ user: {username: stu, homepage: http://blogs.relevancellc.com}
 [下载 code/rails_xt/samples/why_yaml.rb](http://media.pragprog.com/titles/fr_r4j/code/code/rails_xt/samples/why_yaml.rb)
 
 ```yaml
+
 http://www.relevancellc.com/sample:
+
   user: {username: stu, homepage: http://blogs.relevancellc.com}
+
 ```
 
 YAML 中没有特殊的命名空间结构，因为作用域已经提供了足够的机制。在上一个文档中，`user`属于 `http://www.relevancellc.com/sample`。将“属于”替换为“在命名空间中”取决于个人喜好。
@@ -8595,17 +8620,25 @@ YAML 中没有特殊的命名空间结构，因为作用域已经提供了足够
 从 YAML 转换为 Ruby 对象非常简单：
 
 ```ruby
+
 irb(main):001:0> require 'yaml'
+
 => true
+
 irb(main):002:0> YAML.load("{username: stu}")
+
 => {"username"=>"stu"}
+
 ```
 
 或者从 Ruby 对象转换为 YAML：
 
 ```ruby
+
 irb(main):003:0> YAML.dump 'username'=>'stu'
+
 => "--- \nusername: stu"
+
 ```
 
 开头的 `-- \n` 是 YAML 文档分隔符。它是可选的，我们不会在 Rails 配置文件中使用它。请查看下一页的侧边栏了解此处未涵盖的 YAML 构造。
@@ -8613,9 +8646,13 @@ irb(main):003:0> YAML.dump 'username'=>'stu'
 YAML 序列中的项以 `- ` 前缀：
 
 ```yaml
+
 - one
+
 - two
+
 - three
+
 ```
 
 # YAML 与 XML 的对比
@@ -8640,17 +8677,25 @@ YAML 序列中的项以 `- ` 前缀：
 序列还有一种单行语法，从 Ruby 的角度来看，这几乎没有更方便的了。单行 YAML 序列也是合法的 Ruby 数组：
 
 ```ruby
+
 irb(main):015:0> YAML.load("[1, 2, 3]")
+
 => [1, 2, 3]
+
 irb(main):016:0> YAML.dump [1,2,3]
+
 => "--- \n- 1\n- 2\n- 3"
+
 ```
 
 但是，要注意显著的空格！如果你漏掉了它，将会会一个一个大的意外惊喜：
 
 ```ruby
+
 irb(main):018:0> YAML.load("[1,2,3]")
+
 => [123]
+
 ```
 
 如果没有每个逗号后面的空格，所有元素都紧凑在了一起。YAML 对空格非常挑剔，这是出于对传统的尊重，即标记语言必须具有反直觉的空格规则。在 YAML 中有两点需要记住：
@@ -8665,34 +8710,43 @@ irb(main):018:0> YAML.load("[1,2,3]")
 如果你在 Rails 环境中运行，YAML 会更加简单。YAML 库会自动导入，所有对象都获得一个 `to_yaml()` 方法：
 
 ```bash
+
 $ script/console
+
 Loading development environment.
+
 >> [1,2,3].to_yaml
+
 => "--- \n- 1\n- 2\n- 3"
+
 >> {'hello'=>'world'}.to_yaml
+
 => "--- \nhello: world"
+
 ```
 
 在很多情况下，YAML 的序列化语法看起来非常像某些语言中创建哈希或数组的字面量语法。
 
-
-
-
-
-
 ```xml
+
 <delete dir="classes" />
+
 </target>
 
 <target name="prepare" >
+
 <mkdir dir="classes" />
+
 </target>
 
 <target name="compile" depends="prepare" >
+
 <javac srcdir="src" destdir="classes" />
+
 </target>
 
 </project>
+
 ```
 
 每个示例将演示完成一项简单任务的不同方法：提取具有 `name` 和 `depends` 属性的 `Target` 对象。
@@ -8706,25 +8760,45 @@ SAX 解析器是“推式”解析器；你提供一个回调对象，解析器�
 [下载 code/java_xt/src/xml/SAXDemo.java](http://media.pragprog.com/titles/fr_r4j/code/code/java_xt/src/xml/SAXDemo.java)
 
 ```java
+
 public Target[] getTargets(File file)
+
 throws ParserConfigurationException, SAXException, IOException {
+
     final ArrayList al = new ArrayList();
+
     SAXParserFactory f = SAXParserFactory.newInstance();
+
     SAXParser sp = f.newSAXParser();
+
     sp.parse(file, new DefaultHandler() {
+
         public void startElement(String uri, String lname,
+
         String qname, Attributes attributes)
+
         throws SAXException {
+
             if (qname.equals("target" )) {
+
                 Target t = new Target();
+
                 t.setDepends(attributes.getValue("depends" ));
+
                 t.setName(attributes.getValue("name" ));
+
                 al.add(t);
+
             }
+
         }
+
     });
+
     return (Target[]) al.toArray(new Target[al.size()]);
+
 }
+
 ```
 
 Java 示例依赖于一个 `Target` 类，这是一个简单的 JavaBean（此处未显示）。
@@ -8736,15 +8810,25 @@ Java 示例依赖于一个 `Target` 类，这是一个简单的 JavaBean（此�
 [下载 code/rails_xt/samples/xml/sax_demo.rb](http://media.pragprog.com/titles/fr_r4j/code/code/rails_xt/samples/xml/sax_demo.rb)
 
 ```ruby
+
 def get_targets(file)
+
   targets = []
+
   parser = SAX2Parser.new(file)
+
   parser.listen(:start_element, %w{target}) do |u,l,q,atts|
+
     targets << {:name=>atts['name' ], :depends=>atts['depends' ]}
+
   end
+
   parser.parse
+
   targets
+
 end
+
 ```
 
 尽管它们实现了相同的 API，但 Ruby 和 Java 的方法有两个显著差异。Java 实现使用了工厂模式，而 Ruby 实现直接实例化解析器。此外，Java 版本使用匿名内部类，而 Ruby 版本使用块（block）。
@@ -8761,7 +8845,9 @@ end
 [下载 code/rails_xt/samples/xml/sax_demo.rb](http://media.pragprog.com/titles/fr_r4j/code/code/rails_xt/samples/xml/sax_demo.rb)
 
 ```ruby
+
 parser.listen(:start_element, %w{target}) do |u,l,q,atts|
+
 ```
 
 ### 拉取解析 (Pull Parsing)
@@ -8775,33 +8861,50 @@ parser.listen(:start_element, %w{target}) do |u,l,q,atts|
 [下载 code/java_xt/src/xml/StAXDemo.java](http://media.pragprog.com/titles/fr_r4j/code/code/java_xt/src/xml/StAXDemo.java)
 
 ```java
+
 public Target[] getTargets(File f)
+
 throws XMLStreamException, FileNotFoundException {
+
     XMLInputFactory xif= XMLInputFactory.newInstance();
+
     XMLStreamReader xsr = xif.createXMLStreamReader(new FileInputStream(f));
+
     final ArrayList al = new ArrayList();
+
     for (int event = xsr.next();
+
     event != XMLStreamConstants.END_DOCUMENT;
+
     event=xsr.next()) {
+
         if (event == XMLStreamConstants.START_ELEMENT) {
+
             if (xsr.getLocalName().equals("target")) {
+
                 Target t = new Target();
+
                 t.setDepends(xsr.getAttributeValue("depends"));
+
                 t.setName(xsr.getAttributeValue("name"));
+
                 al.add(t);
+
             }
+
         }
+
     }
+
     return (Target[]) al.toArray(new Target[al.size()]);
+
 }
+
 ```
 
 尽管它们实现了相同的 API，但 Ruby 和 Java 的方法有两个显著差异。Java 实现使用了工厂模式，而 Ruby 实现直接实例化解析器。此外，Java 版本使用匿名内部类，而 Ruby 版本使用块（block）。
 
-*(注：提供的文本在 StAX/REXML 部分包含冗余/损坏的片段；我已根据提示中提供的清晰代码片段重构了逻辑。）*
-
-
-
+*(注：提供的文本在 StAX/REXML 部分包含冗余/损坏的片段；我已根据提示中提供的清晰代码片段重构了逻辑。*)
 
 
 [下载代码/rails_xt/samples/xml/dom_demo.rb](http://media.pragprog.com/titles/fr_r4j/code/code/rails_xt/samples/xml/dom_demo.rb)
@@ -8809,21 +8912,30 @@ throws XMLStreamException, FileNotFoundException {
 第 1 行
 
 ```ruby
+
 def get_targets(file)
+
   targets = []
+
   Document.new(file).elements.each("//target" ) do |e|
+
     targets << {:name=>e.attributes["name" ],
+
     :depends=>e.attributes["depends" ]}
+
   end
+
   targets
+
 end
+
 ```
 
 REXML 没有遵循 DOM。相反，`elements()` 方法返回一个支持 XPath 的对象。在 XPath 中，表达式 `//target` 匹配所有名为 `target` 的元素。在 XPath 之上，可以使用普通的 Ruby 风格通过 `each()`（第 3 行）进行迭代。当然，Java 也支持 XPath，正如你将在下一节中看到的那样。
 
 ## XPath
 
-XML 文档具有分级结构，就像计算机上的文件系统一样。文件系统有一套标准表示法来命名特定的文件。例如，`path/to/foo` 指向 `path` 目录下的 `to` 目录中的 `foo` 文件。更好的是，shell 程序使用通配符同时处理多个文件：`path/*` 指向 `path` 目录包含的所有文件。
+XML 文档具有分级结构，就像计算机上的文件系统一样。文件系统有一套标准表示法来命名特定的文件。例如，`path/to/foo` 指向 `path` 目录下的 `to` 目录中的 `foo` 文件。更好的是，shell 程序使用通配符同时处多个文件：`path/*` 指向 `path` 目录包含的所有文件。
 
 XML 路径语言 (XPath) 为 XML 引入了路径命名。XPath 是用于命名 XML 文档部分的 W3C 建议（参见 [`www.w3.org/TR/xpath.html`](http://www.w3.org/TR/xpath.html)）。
 
@@ -8854,30 +8966,51 @@ XML 解析 273
 第 1 行
 
 ```java
+
 public String[] getTargetNamesDependingOnPrepare(File file)
+
 throws Exception {
+
   DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
+
   DocumentBuilder db = dbf.newDocumentBuilder();
+
   Document doc = db.parse(file);
+
   XPathFactory xpf = XPathFactory.newInstance();
+
   XPath xp = xpf.newXPath();
+
   NodeList nl = (NodeList) xp.evaluate("//target[@depends='prepare']/@name", doc, XPathConstants.NODESET);
+
   String[] results = new String[nl.getLength()];
+
   for (int n=0; n<nl.getLength(); n++) {
+
     results[n] = nl.item(n).getNodeValue();
+
   }
+
   return results;
+
 }
+
 ```
 
 Java 的 XPath 建立在 DOM 之上，所以第 4 行开始的代码看起来很熟悉。在第 10 行评估表达式时完成了实际业务。结果以 `NodeList` 的形式存在，因此第 13 行开始的迭代并没有什么新意。Ruby 的 XPath 建立在树 API 之上，你已经看过了：[下载代码/rails_xt/samples/xml/dom_demo.rb](http://media.pragprog.com/titles/fr_r4j/code/code/rails_xt/samples/xml/dom_demo.rb)
 
 ```ruby
+
 def target_names_depending_on_prepare(file)
+
   XPath.match(Document.new(file), "//target[@depends='prepare']/@name").map do |x|
+
     x.value
+
   end
+
 end
+
 ```
 
 就这样这样。Ruby 的 API 全都是业务逻辑，没有样板代码。事实上，语法可以像下一页所示变得更加紧凑。
@@ -8889,19 +9022,29 @@ XML 解析 274
 你可能觉得这个 Ruby 示例有点冗长：
 
 ```ruby
+
 def target_names_depending_on_prepare(file)
+
   XPath.match(Document.new(file), "//target[@depends='prepare']/@name").map(&value)
+
 end
+
 ```
 
 新语法 `&value` 利用了 Ruby 传递块的替代语法，通过传递一个显式的 `Proc` 对象。（`Proc` 是实例化后的类，所以你可以对其进行常规操作。）当然，`:value` 并不是 `Proc`；它是一个 `Symbol`！Rails 通过定义从 `Symbol` 到 `Proc` 的隐式转换解决了这个问题：
 
 ```ruby
+
 class Symbol
+
   def to_proc
+
     Proc.new { |*args| args.shift.__send__(self, *args) }
+
   end
+
 end
+
 ```
 
 `Symbol#to_proc` 技巧很有趣，因为它展示了 Ruby 的一个重要方面。Ruby 语言鼓励对其进行修改。像 Rails 团队这样的框架设计师不需要接受“原生 Ruby”。他们可以扭曲语言来满足他们的需求。
@@ -8913,31 +9056,43 @@ Ruby XML 输出 275
 配置通常是只读的，但如果你将 XML 用于用户编辑的数据，你就需要修改 XML 文档并将其序列化回文本。Java 和 Ruby 的树 API 都构建了修改能力。这里有一个使用 DOM 从头构建 XML 文档的 Java 程序：
 
 ```java
+
 DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
+
 DocumentBuilder db = dbf.newDocumentBuilder();
+
 Document doc = db.newDocument();
+
 Element root = doc.createElement("project" );
+
 root.setAttribute("name" , "simple-ant" );
-```
-
-
-
-
 
 ```
+
+
+
+```
+
 doc.appendChild(root);
+
 ```
 
 ```java
+
 Element target = doc.createElement("target" );
+
 ```
 
 ```java
+
 target.setAttribute("name" , "compile" );
+
 ```
 
 ```java
+
 root.appendChild(target);
+
 ```
 
 1
@@ -8945,7 +9100,7 @@ root.appendChild(target);
 在完成样板工厂代码后，使用 DOM 创建文档可以归纳为三个步骤：
 
 1. 使用第 4 行的 `createElement()` 等方法创建元素。
-2. 使用第 5 行的 `setAttribute()` 等方法附加属性。
+2. 使用第 5 行的 `setAttribute()` 等方法附加属。
 3. 使用第 6 行的 `appendChild()` 等方法将创建的元素附加文档中的特定节点。
 
 REXML 的方法类似：
@@ -8954,15 +9109,21 @@ REXML 的方法类似：
 
 第 1 行
 ```ruby
+
 root = Element.new("project" , Document.new)
+
 ```
 
 ```ruby
+
 root.add_attribute("name" , "simple-ant" )
+
 ```
 
 ```ruby
+
 Element.new("target" , root).add_attribute("name" , "compile" )
+
 ```
 
 REXML API 提供了相同的三个步骤：创建、添加属性和附加到文档。然而，你可以将创建和附加结合，如第 1 行所示。如果你足够大胆，甚至可以结合所有三个步骤，如第 3 行所示。
@@ -8979,19 +9140,27 @@ REXML API 提供了相同的三个步骤：创建、添加属性和附加到文�
 
 第 1 行
 ```java
+
 TransformerFactory tf = TransformerFactory.newInstance();
+
 ```
 
 ```java
+
 Transformer tform = tf.newTransformer();
+
 ```
 
 ```java
+
 tform.setOutputProperty(OutputKeys.INDENT, "yes" );
+
 ```
 
 ```java
+
 tform.transform(new DOMSource(doc), new StreamResult(System.out));
+
 ```
 
 在第 2 行，对 `newTransformer()` 的无参数调用请求一个“无操作”转换器。（我们使用转换器仅仅是为了格式化，而不是为了执行其他有趣的操作，如 XSLT 转换。）第 3 行的 `setOutputProperty()` 调用指定了我们要在输出中使用人类可读的缩进。
@@ -9001,7 +9170,9 @@ REXML 版本直接在文档本身上暴露输出选项：
 [下载 code/rails_xt/samples/xml/dom_output.rb](http://media.pragprog.com/titles/fr_r4j/code/code/rails_xt/samples/xml/dom_output.rb)
 
 ```ruby
+
 root.document.write STDOUT, 2
+
 ```
 
 `write()` 调用接收一个可选的第二个参数用于设置缩进级别。
@@ -9013,7 +9184,9 @@ DOM 和 REXML 都是通用的低级 API。对于重要的 XML 应用（例如调
 Jim Weirich 的 Builder 库随 Rails 一起打包，也可以通过以下方式单独安装：
 
 ```bash
+
 gem install builder
+
 ```
 
 Builder 利用了 Ruby 和 XML 之间的两种对称性，使得构建 XML 文档变得轻而易举：
@@ -9028,31 +9201,45 @@ Builder 利用了 Ruby 和 XML 之间的两种对称性，使得构建 XML 文�
 为了看到第一个对称性，请考虑 Builder 风格的“Hello World”。我们将使用 `script/console`，因为 Rails 预加载了 Builder，而 `irb` 没有：在 `script/console` 输出中，为了清晰起见，我们省略了 `$ script/console` 的返回值行（=> ...），除非它们直接相关。
 
 ```
+
 Loading development environment.
+
 >> b = Builder::XmlMarkup.new(:target=>STDOUT, :indent=>1)
+
 <inspect/>
+
 >> b.h1 "Hello, world"
+
 <h1>Hello, world</h1>
+
 ```
 
 正如你从第 5 行推出的那样，`XmlMarkup` 实例使用方法名作为元素名，并将字符串参数转换为元素内部的内容。当然，所有方法的集合是有限的：
 
 ```
+
 >> Builder::XmlMarkup.instance_methods.size
+
 => 17
+
 ```
 
 显然，这 17 个方法之一必须是 `h1()`，其他必须对应于其他常用的标签名。让我们通过寻找一个 Builder 不支持的标签名来测试这个假设：
 
 ```
+
 >> b.foo "Hello, World!"
+
 <foo>Hello, World!</foo>
 
 >> b.qwijibo "Hello, World!"
+
 <qwijibo>Hello, World!</qwijibo>
 
 >> b.surely_this_will_not_work "Hello, World"
+
 <surely_this_will_not_work>Hello, World</surely_this_will_not_work>
+
 ```
 
 这里发生了什么？`XmlMarkup` 正在使用 Ruby 的 `method_missing()` 钩子来动态响应任何合法的 Ruby 方法名。结果，`XmlMarkup` 可以处理你可能想要创建的任何 XML 元素名。
@@ -9060,20 +9247,31 @@ Loading development environment.
 让我们创建本章中一直使用的 `build.xml` 示例。首先，我们需要为元素添加属性。Builder 允许通过传递一个可选的哈希参数来实现此：
 
 ```
+
 >> b.project "", :name=>'simple-ant', :default=>'compile'
+
 <project default="compile" name="simple-ant"></project>
+
 ```
 
 接下来，我们需要某种方法将一个元素嵌套另一个元素内部。Ruby 的块语法非常适合这项工作。与其为元素内容传递初始字符串参数，不如传递一个块来生成元素内容：
 
 ```
+
 >> b.project :name=>'simple-ant', :default=>'compile' do
+
 ?>
+
 b.target :name=>'clean'
+
 >> end
+
 <project default="compile" name="simple-ant">
+
 <target name="clean"></target>
+
 </project>
+
 ```
 
 ## 解决你的数据头疼问题
@@ -9083,22 +9281,31 @@ b.target :name=>'clean'
 Ruby 的块语法赋予了程序嵌套结构，这反映了（格式化后的）XML 的嵌套。当我们编写程序来生成整个 XML 时，这种对称性更加明显：
 
 ```ruby
+
 require 'rubygems'
+
 require 'builder'
 
 b = Builder::XmlMarkup.new(:target=>STDOUT, :indent=>1)
 
 b.project :name=>'simple-ant', :default=>'compile' do
+
   b.target :name=>'clean'
+
 end
+
 ```
 
 这产生了：
 
 ```xml
+
 <project name="simple-ant" default="compile">
+
   <target name="clean" />
+
 </project>
+
 ```
 
 ## 解决你的数据头疼问题
@@ -9106,9 +9313,6 @@ end
 279
 
 Builder 与 Rails 深度集成。要在 Rails 视图中使用 Builder，只需将模板扩展命名为 `.rxml` 而不是 `.rhtml`。
-
-
-
 
 另一方面，Ruby 程序员长期以来更偏于使用 YAML（最近是 JSON）。
 
@@ -9155,8 +9359,6 @@ Web 服务将极大地扩展计算机之间的通信量。因此，我们对 Web
 
 
 
-
-
 授权 (`authz`）。`authn` 步骤询问“你是谁？”，而 `authz` 步骤询问“你能做什么？”。在这一基础上，我们将从攻击者的角度来看安全问题。对于攻击者可能利用的潜在漏洞列表，我们将使用开放 Web 应用程序安全项目（OWASP）前 10 项目。对于这十种网络安全漏洞，我们将介绍您可以在 Ruby on Rails 中采取的预防措施。
 
 # 使用 ACTS_AS_AUTHENTICATED 插件进行身份验证
@@ -9182,23 +9384,37 @@ Ruby on Rails 应用通常使用一个或多个开源插件进行保护。Rails 
 最常见的 `Acegi` 安全形式使用 servlet 过滤器来保护任何需要 `authn` 的资源。要配置此过滤器，您需要将过滤器添加到 `web.xml` 中：
 
 ```xml
+
 <filter>
+
   <filter-name>securityFilter</filter-name>
+
   <filter-class>org.acegisecurity.util.FilterToBeanProxy</filter-class>
+
   <init-param>
+
     <param-name>targetClass</param-name>
+
     <param-value>org.acegisecurity.util.FilterChainProxy</param-value>
+
   </init-param>
+
 </filter>
+
 ```
 
 接下来，让 `web.xml` 引入 Spring 上下文文件 `security.xml`，以便 `filterChainProxy` bean 在运行时可用：
 
 ```xml
+
 <context-param>
+
   <param-name>contextConfigLocation</param-name>
+
   <param-value>/WEB-INF/applicationContext-*.xml,/WEB-INF/security.xml</param_value>
+
 </context-param>
+
 ```
 
 ## 安装 acts_as_authenticated 插件
@@ -9208,29 +9424,45 @@ Rails 插件安装在 `vendor/plugins` 目录。通过任何方式将文件放�
 为了让过程更加简单，许多插件被部署到 Web 上，以便通过 `script/plugin` 命令进行安装。`acts_as_authenticated` 就是这样一个插件，因此您只需要输入以下两个命令：
 
 ```bash
+
 script/plugin source http://svn.techno-weenie.net/projects/plugins
+
 script/plugin install acts_as_authenticated
+
 ```
 
 一旦安装了插件，您需要为用户名、密码等创建数据表。以下两条条命令将创建必要的 `ActiveRecord` 类以及将它们添加到数据库的迁移文件：
 
 ```bash
+
 script/generate authenticated user account
+
 rake migrate
+
 ```
 
 在 `security.xml` 内部，指定应该过滤哪些资源：
 
 ```xml
+
 <bean id="filterChainProxy" class="org.acegisecurity.util.FilterChainProxy" >
+
   <property name="filterInvocationDefinitionSource" >
+
     <value>
+
       CONVERT_URL_TO_LOWERCASE_BEFORE_COMPARISON
+
       PATTERN_TYPE_APACHE_ANT
+
       /**=httpSessionContextIntegrationFilter, ... 7 more filter names
+
     </value>
+
   </property>
+
 </bean>
+
 ```
 
 `/**` 是过滤所有资源的通配符。用户名和密码的数据库是可配置的，涉及此处未显示的更多 XML。
@@ -9238,7 +9470,9 @@ rake migrate
 在使用 Ruby 的 `acts_as_authenticated` 时，您可以在控制器类中添加以下行来强制要求 `authn`：
 
 ```ruby
+
 before_filter :login_required
+
 ```
 
 如果您只想对某些操作强制要求 `authn`，可以使用 `before_filter` 的标准选项。
@@ -9246,7 +9480,9 @@ before_filter :login_required
 例如，可能读取操作不需要 `authn`，但更新操作需要：
 
 ```ruby
+
 before_filter :login_required, :except=>['index' , 'list' , 'show' ]
+
 ```
 
 `:except` 的使用是一个很棒的设计，因为您不需要学习特定的安全过滤器词汇。您可以使用已经熟悉的、用于 `before_filter` 的常用选项。
@@ -9273,22 +9509,25 @@ Ruby 和 Rails 对 SSO 的支持少于 Java 世界提供的支持。不过，也
 按照在线说明下载插件，然后将插件解压到您想要保护的 Rails 应用程序的 `vendor/plugins` 目录。由于我们使用数据库处理角色，您将需要生成并运行迁移：
 
 ```bash
+
 script/generate role_model Role
+
 rake db:migrate
+
 ```
 
 完整的安装说明值得在网上阅读；它们描述了一些我们在本示例中需要的其他选项。
 
-
-
-
-
 [下载 code/appfuse_people/web/WEB-INF/security.xml](http://media.pragprog.com/titles/fr_r4j/code/code/appfuse_people/web/WEB-INF/security.xml)
 
 ```xml
+
 <bean id="filterInvocationInterceptor" class="org.acegisecurity.intercept.web.FilterSecurityInterceptor">
+
   <property name="authenticationManager" ref="authenticationManager" />
+
 </bean>
+
 ```
 
 通过 `Authorization` 插件，你可以对身份验证类进行注解以显示它被用于授权：
@@ -9296,9 +9535,13 @@ rake db:migrate
 [下载 code/rails_xt/app/models/user.rb](http://media.pragprog.com/titles/fr_r4j/code/code/rails_xt/app/models/user.rb)
 
 ```ruby
+
 class User < ActiveRecord::Base
+
   acts_as_authorized_user
+
 end
+
 ```
 
 由于我们是在数据库中存储用户和角色，角色的设置步骤看起来仅仅是数据输入。然而，我们需要为自动化测试准备示例数据，因此我们将介绍如何填充这些数据。AppFuse 会创建一个包含示例数据的 XML 文件：
@@ -9306,16 +9549,27 @@ end
 [下载 code/appfuse_people/metadata/sql/sample-data.xml](http://media.pragprog.com/titles/fr_r4j/code/code/appfuse_people/metadata/sql/sample-data.xml)
 
 ```xml
+
 <row>
+
   <value>1</value>
+
   <value>tomcat</value>
+
   <value>536c0b339345616c1b33caf454454d8b8a190d6c</value>
+
   <value>Tomcat</value>
+
   <value>User</value>
+
   <value></value>
+
   <value>Denver</value>
+
   <value>US</value>
+
 </row>
+
 ```
 
 该文件继续指定了几个用户和角色。随后 AppFuse 使用 `dbunit` Ant 任务来填充数据库。当你在项目中安装 `Authorization` 时，它会自动创建一个角色固件文件（fixture file），我们可以对其进行编辑以创建几个角色：
@@ -9323,12 +9577,19 @@ end
 [下载 code/rails_xt/test/fixtures/roles.yml](http://media.pragprog.com/titles/fr_r4j/code/code/rails_xt/test/fixtures/roles.yml)
 
 ```yaml
+
 admin:
+
   id: 1
+
   name: admin
+
 mortal:
+
   id: 2
+
   name: mortal
+
 ```
 
 我们已经有了通过 `acts_as_authenticated` 安装的名为 Quentin 和 Aaron 的示例用户。
@@ -9340,13 +9601,21 @@ mortal:
 [下载 code/rails_xt/test/fixtures/users.yml](http://media.pragprog.com/titles/fr_r4j/code/code/rails_xt/test/fixtures/users.yml)
 
 ```yaml
+
 quentin:
+
   id: 1
+
   login: quentin
+
   email: quentin@example.com
+
   salt: 7e3041ebc2fc05a40c60028e2c4901a81035d3cd
+
   crypted_password: 00742970dc9e6319f8019fd54864d3ea740f04b1 # test
+
   created_at: <%= 5.days.ago.to_s :db %>
+
 ```
 
 我们必须手动创建一个 `roles_users.yml` 固件，以填充关联用户与角色的中间表。我们将 Quentin 设置为 admin，将 Aaron 设置为 mortal：
@@ -9354,12 +9623,19 @@ quentin:
 [下载 code/rails_xt/test/fixtures/roles_users.yml](http://media.pragprog.com/titles/fr_r4j/code/code/rails_xt/test/fixtures/roles_users.yml)
 
 ```yaml
+
 first:
+
   role_id: 1
+
   user_id: 1
+
 second:
+
   role_id: 2
+
   user_id: 2
+
 ```
 
 不需要自定义的 `Rake` 任务来加载这些安全对象。它们是简单的 `ActiveRecord` 模型，因此由 Rails 内置的标准 `Rake` 任务自动管理。
@@ -9369,18 +9645,31 @@ second:
 [下载 code/appfuse_people/web/WEB-INF/security.xml](http://media.pragprog.com/titles/fr_r4j/code/code/appfuse_people/web/WEB-INF/security.xml)
 
 ```xml
+
 <property name="objectDefinitionSource">
+
   <value>
+
     PATTERN_TYPE_APACHE_ANT
+
     /clickstreams.jsp*=admin
+
     /flushCache.*=admin
+
     /passwordHint.html*=ROLE_ANONYMOUS,admin,user
+
     /reload.*=admin
+
     /signup.html*=ROLE_ANONYMOUS,admin,user
+
     /users.html*=admin
+
     /**/*.html*=admin,user
+
   </value>
+
 </property>
+
 ```
 
 这些模式将 URL 限制为某些角色。我们认为这种语言成功实现了自俗易懂的目标。
@@ -9390,9 +9679,13 @@ second:
 [下载 code/rails_xt/app/controllers/quips_controller.rb](http://media.pragprog.com/titles/fr_r4j/code/code/rails_xt/app/controllers/quips_controller.rb)
 
 ```ruby
+
 READ_ACTIONS = %w(index list show)
+
 permit 'admin or mortal' , :only=>READ_ACTIONS
+
 permit 'admin' , :except=>READ_ACTIONS
+
 ```
 
 与 Acegi 模式语言一样，我们发现 `Authorization` 插件的微语言也是自俗易懂的。
@@ -9412,20 +9705,27 @@ Acegi 和 `Authorization` 插件都比我们在这里展示的强大得多。它
 `acts_as_authenticated` 插件包含一个 `AuthenticatedTestHelper` 模块来简化安全测试。你可以通过在 `test/test_helper.rb` 中将该模块引入 `TestCase`，让所有测试都能使用 `AuthenticatedTestHelper`：
 
 ```ruby
+
 class Test::Unit::TestCase
+
   include AuthenticatedTestHelper
+
 end
+
 ```
 
 `AuthenticatedTestHelper` 添加了几个新的测试方法。最有用的是 `login_as`。为了让我们的测试再次通过，只需 `login_as` 一个拥有所有必要角色的账户。测试用例的 `setup` 方法是执行此操作的完美位置，因为它在每个测试之前运行：
 
 ```ruby
+
 def setup
+
 ```
 
 
 
 ```ruby
+
 @controller = PeopleController.new
 
 @request = ActionController::TestRequest.new
@@ -9435,6 +9735,7 @@ def setup
 login_as(:quentin)
 
 end
+
 ```
 
 由于我们的身份验证（authn）和授权（authz）方法将用户和角色存储在数据库中，我们还需要向测试固件（fixture）中添加安全相关的表。
@@ -9446,9 +9747,13 @@ end
 [下载代码 code/rails_xt/test/functional/quips_controller_test.rb](http://example.to.com)
 
 ```ruby
+
 class QuipsControllerTest < Test::Unit::TestCase
+
   fixtures :quips, :users, :roles, :roles_users
+
 end
+
 ```
 
 我们使用了之前的方法修复了 `QuipsController` 和 `PeopleController` 中损坏的十五个功能测试。修复修复总共修改了五行代码：
@@ -9462,9 +9767,13 @@ end
 [下载代码 code/rails_xt/test/functional/quips_security_test.rb](http://example.to.com)
 
 ```ruby
+
 assert_requires_login do |c|
+
   c.post :create, :quip => {}
+
 end
+
 ```
 
 注意，这段代码位于一个不同的测试类 `QuipsSecurityTest` 中，而不是 `QuipsControllerTest`。我们使用单独的测试类是因为 `QuipsControllerTest` 总是以 Quentin 的身份登录，而我们现在正在测试没有登录时会发生什么。你也可以使用 `assert_requires_login` 来测试 Aaron（一个凡人）是否缺少创建 quip 所需的角色：
@@ -9472,9 +9781,13 @@ end
 [下载代码 code/rails_xt/test/functional/quips_security_test.rb](http://example.to.com)
 
 ```ruby
+
 assert_requires_login(:aaron) do |c|
+
   c.post :create, :quip => {}
+
 end
+
 ```
 
 这里的语法有点别扭，因为 `assert_requires_login(:aaron)` 实际上意味着“断言以 Aaron 登录是不够的，你会被重定向回登录页面”。
@@ -9484,9 +9797,13 @@ end
 [下载代码 code/rails_xt/test/functional/quips_security_test.rb](http://example.to.com)
 
 ```ruby
+
 assert_difference(Quip, :count, 0) do
+
   post :create, :quip => {}
+
 end
+
 ```
 
 换句话说，当提交一个新的 quip 时，`Quips.count` 保持不变（差异为 0）。这是预期的行为，因为如果你先登录，发布新的 quip 将失败。尽管它是随 `acts_as_authenticated` 提供的，但 `assert_difference` 方法实际上是一个通用方法，你可能会在其他地方发现它有用。
@@ -9496,13 +9813,21 @@ end
 [下载代码 code/rails_xt/test/functional/people_controller_test.rb](http://example.to.com)
 
 ```ruby
+
 def test_create
+
   num_people = Person.count
+
   post :create, :person => {}
+
   assert_response :redirect
+
   assert_redirected_to :action => 'list'
+
   assert_equal num_people + 1, Person.count
+
 end
+
 ```
 
 使用 `assert_difference`，可以将其重构为如下：
@@ -9510,13 +9835,21 @@ end
 [下载代码 code/rails_xt/test/functional/quips_controller_test.rb](http://example.to.com)
 
 ```ruby
+
 def test_create
+
   assert_difference(Quip, :count) do
+
     post :create, :quip => {:text=>'Test Quip' }
+
     assert_response :redirect
+
     assert_redirected_to :action => 'list'
+
   end
+
 end
+
 ```
 
 人们有时会将安全等同于我们刚刚描述的这些步骤，即为应用程序启用身份验证和授权。我们希望更进一步。我们不仅仅是在应用程序的边缘打补丁，而是让安全成为贯穿整个设计生命周期的无处不在的关注。
@@ -9527,14 +9860,16 @@ end
 
 ## 未验证的输入
 
-攻击者可以篡改 HTTP 请求的任何部分：URL、查询字符串、头部、主体、Cookie 和表单数据。请求的所有部分都是用户输入，不可信任。不验证输入的程序可能会受到注入攻击，并可能泄露或破坏用户不应访问的数据。
+攻击者可以篡改 HTTP 请请的任何部分：URL、查询字符串、头部、主体、Cookie 和表单数据。请求的所有部分都是用户输入，不可信任。不验证输入的程序可能会受到注入攻击，并可能泄露或破坏用户不应访问的数据。
 
 Java Web 框架和 Rails 都提供了声明式验证机制来防止未验证的输入。例如，在示例 Struts 应用程序中，`validation.xml` 包含了表单验证规则。在 Rails 中，验证直接声明在模型类上。无论哪种方式，只有当开发者有系统地确保验证正确应用于每一个输入时，验证才能发挥作用。
 
 Rails 中验证的一个担忧是，很多“魔法”会自动发生。例如，通常使用如下代码从表单数据直接创建 ActiveRecord 实例：
 
 ```ruby
+
 @quip = Quip.new(params[:quip])
+
 ```
 
 这里发生了一些很好的魔法。因为验证是在 ActiveRecord 级别进行的，如果验证失败，在新对象上调用 `save` 将失败（完全不会接触数据库！）。由于 quip 验证了文本字段的存在，因此不用担心这行代码创建一个文本为 NULL 的无效 quip。
@@ -9545,18 +9880,20 @@ Rails 中验证的一个担忧是，很多“魔法”会自动发生。例如�
 
 哎。那个 `author_id` 参数为什么出现在那里？即使你没有在表单中包含该值，没有任何东西能阻止好奇（或恶意）的用户将其添加到 POST 请求中。现在这个 quip 看起来是由 ID 为 15 的用户编写的。如果你的数据库包含了不让用户直接访问的列，那么 Rails 的
 
-
-
-
-
 默认的批量赋值将成为一个问题。解决这个问题的一种（非常糟糕的）方案是回到手动赋值每个值：
 
 ```ruby
+
 @quip = Quip.new
+
 @quip.some_attr = params[:quip][:some_attr]
+
 @quip.other_attr = params[:quip][:other_attr]
+
 @quip.another_attr = params[:quip][:another_attr]
+
 # 等
+
 ```
 
 `ActiveRecord` 了一个了一个更好的解决方案。我们可以使用 `attr_accessible` 方法来声明可以进行批量赋值的属性精确列表。或者，我们可以使用 `attr_protected` 方法来声明不能批量赋值的属性列表。在这两个选项中，`attr_accessible` 被认为更安全，因此我们将使用 `attr_accessible` 来确保只有预期的值被赋值：
@@ -9564,14 +9901,16 @@ Rails 中验证的一个担忧是，很多“魔法”会自动发生。例如�
 [code/rails_xt/app/models/quip.rb](http://media.pragprog.com/titles/fr_r4j/code/code/rails_xt/app/models/quip.rb)
 
 ```ruby
+
 attr_accessible :text
+
 ```
 
 你可以使用验证来校验你期望看到的字段，并使用 `attr_accessible` 来确保只有预期的字段被赋值。
 
 ### #2: 破坏的访问控制
 
-我们已经在第 10.2, 节使用 `Authorization` 插件进行授权（位于第 285. 页）详细讨论了访问控制。即使有了授权机制，你也必须小心避免完全绕过授权的技巧。一些危险因素如下：
+我们已经在第 10.2, 节使用 `Authorization` 插件进行授权（位于第 285. 页）详�讨论了访问控制。即使有了授权机制，你也必须小心避免完全绕过授权的技巧。一些危险因素如下：
 
 - 构造相对路径（`../../../etc.`）的路径穿越攻击，用以进入本应不可访问的地方
 - 包含敏感信息的读取配置文件（在某些情况下包括密码）
@@ -9584,7 +9923,7 @@ attr_accessible :text
 
 页面缓存速度很快，但要小心。任何缓存页面都会绕过 Rails 的所有安全机制。Rails 提供了 `action caching` 来处理这种操作缓存问题。当用户访问缓存的 action 时，Rails 在返回缓存结果之前执行控制器的 `before_filters`。由于安全检查通常在 `before_filters` 中执行，因此缓存的 action 是安全的。详情请参见第 6.7, 节 页面、操作和片段缓存，位于第 180 页。
 
-当然，操作缓存比页面缓存慢。一分钱一分货。对公共资源使用页面缓存，对受保护资源使用操作缓存。
+当然，操作缓慢比页面缓存慢。一分钱一分货。对公共资源使用页面缓存，对受保护资源使用操作缓存。
 
 ### #3: 破坏的身份验证和会话管理
 
@@ -9592,7 +9931,7 @@ attr_accessible :text
 
 - 身份验证通常会将信息放在会话中，以便后续请求知道用户已通过验证。用于识别会话的 cookie 必须受到保护。使用 `Secure Sockets Layer (SSL)` 保护登录步骤，然后继续信任基于 HTTP 以明文提交的相同 cookie 的登录，是意义不大的。
 - 密码应该是强力的（不容易被猜到）。密码不应以明文形式存储在任何地方。（这就是为什么系统管理员可以重置你的密码，但他们不能告诉你密码是什么。）
-- 在 Java 和 Rails Web 应用程序中，开启 `SSL` 是 Web 服务器的设置，独立于应用程序代码本身。然而，应用程序代码可以（并且应该）双重检查应该加密的请求确实执行了加密。在 Rails 应用程序中，请求实现了 `ssl?` 方法，如果请求是通过 `SSL` 发出的，则返回 `true`。
+- 在 Java 和 Rails Web 应用程序中，开启 `SSL` 是 Web 服务器的设置，独立于应用程序代码本身。然而，应用程序代码可以（并且应该）双重检查应该加密的请求确实执行了加密。在 Rails 应用程中，请求实现了 `ssl?` 方法，如果请求是通过 `SSL` 发出的，则返回 `true`。
 
 防止十大网络安全漏洞，296 页
 
@@ -9611,9 +9950,13 @@ attr_accessible :text
 [code/rails_xt/app/views/quips/list.rhtml](http://media.pragprog.com/titles/fr_r4j/code/code/rails_xt/app/views/quips/list.rhtml)
 
 ```html
+
 <% for column in Quip.content_columns %>
+
 <td><%= h quip.send(column) %></td>
+
 <% end %>
+
 ```
 
 ### #5: 缓冲区溢出
@@ -9635,12 +9978,19 @@ SQL 注入发生在任何支持字符串和 SQL 的语言，即几乎所有用�
 [code/rails_xt/app/models/person.rb](http://media.pragprog.com/titles/fr_r4j/code/code/rails_xt/app/models/person.rb)
 
 ```ruby
+
 # 此方法演示了 SQL 注入攻击
+
 # 不要像这样写代码
+
 def self.find_by_any_name_UNSAFE(search)
+
   find(:all, \
+
   :conditions=>"first_name = '#{search}' OR last_name = '#{search}' )
+
 end
+
 ```
 
 
@@ -9655,25 +10005,33 @@ end
 [下载 code/rails_xt/app/models/person.rb](http://media.pragprog.com/titles/fr_r4j/code/code/rails_xt/app/models/person.rb)
 
 ```
+
 def self.find_by_any_name(search)
+
   find(:all, :conditions=>['first_name = :search or last_name = :search' , {:search=>search}])
+
 end
+
 ```
 
 ## #7. 不恰错误处理
 
 Web 错误会发生，而处理这些错误是一项挑战。问题在于平衡不同的受众。用户应该获得帮助，管理员应该获得详细的诊断信息，而攻击者应该一无所获。一个例子将说明这个问题。Ned 登录一个网站并执行了某些导致服务器上某些 Ruby 代码发生异常的操作。日志文件应该包含有关该问题的详细信息，以便开发者和管理员之后进行排排除。我们无法确定 Ned 是不是攻击者，因此 Ned 将得到一个通用的错误消息。特别是，我们不希望提供详细且多变的错误消息，以免鼓励攻击者通过让系统以不同的方式崩溃来分析我们的系统。
 
-Rails 对错误的默认处理是很好的。在开发环境中，详细的错误信息会自动写入浏览器窗口和 `log/development.log` 中。为了方便查看，我们在 `AccountController` 中添加了一个故意损坏的名为 `fail` 的方法：
+Rails 对错误的默认处理是很好的。在开发环境中，详绂的错误信息会自动写入浏览器窗口和 `log/development.log` 中。为了方便查看，我们在 `AccountController` 中添加了一个故意损坏的名为 `fail` 的方法：
 
 [下载 code/rails_xt/app/controllers/account_controller.rb](http://media.pragprog.com/titles/fr_r4j/code/code/rails_xt/app/controllers/account_controller.rb)
 
 ### 展示了错误处理代码中可能的某些危险
 
 ```
+
 def fail
+
   raise "Failed"
+
 end
+
 ```
 
 如果你运行 Quips 应用并导航到 `/account/fail/1`，你将看到与下一页图 [10.1] 所示相似的错误消息。你可以点击链接查看整个堆栈跟踪。`log/development.log` 中的消息也是类似的。
@@ -9691,16 +10049,23 @@ end
 [下载 code/rails_xt/app/controllers/application.rb](http://media.pragprog.com/titles/fr_r4j/code/code/rails_xt/app/controllers/application.rb)
 
 ```
+
 filter_parameter_logging 'password'
+
 ```
 
 结果，任何匹配 `/password/i` 的参数都将在日志文件中过滤。例如，导航到 `/account/fail?password=supersecret` 将在日志文件中留下以下：
 
 ```
+
 Processing AccountController#fail (for 127.0.0.1 at 2006-09-25 14:07:41) [GET]
+
 Session ID: b2745e2f7ce5fb0201c030aa4a31986c
+
 Parameters: {"action" =>"fail" , "controller" =>"account" , "password" =>"[FILTERED]" }
-```
+
+
+
 
 这处理了 Rails 的默认日志。如果你对敏感数据进行自己的日志记录，你需要小心确保数据已经过适当的清理。
 
@@ -9719,7 +10084,7 @@ Parameters: {"action" =>"fail" , "controller" =>"account" , "password" =>"[FILTE
 
 ## #9. 应用程序拒绝服务
 
-Web 应用特别容易拒绝服务攻击，攻击者消耗应用程序的资源资源，导致合法用户无法获得服务。大多数情况下，这些攻击并不针对特定语言的实现，因此对于 Java、Ruby 或任何其他语言，大多数预防措施都是相同的。你应该注意一个 Ruby 特有的问题。Java 应用使用多线程来处理并发请求，并使用数据库级缓存来提高性能。（较大的 Java 应用也使用多个进程，但许多应用从单进程运行良好。）Rails 应用使用多个进程来处理并发请求，并使用视图级缓存来提高性能。这意味着即使是少量的昂贵请求也会让标准配置变得缓慢。解决办法是让缓存尽可能多工作，理想情况下处理所有未身份验证的请求。
+Web 应用特别容易拒绝服务攻击，攻击者消耗应用程序的资源资源，导致合法用户无法获得服务。大多数情况下，这些攻击并不针对特定语言的实现，因此对于 Java、Ruby 或任何其他语言，大多数预防措施都是相同的。你应该注意一个 Ruby 特有的问题。Java 应用使用多线程来处理并发请请求，并使用数据库级缓存来提高性能。（较大的 Java 应用也使用多个进程，但许多应用从单进程运行良好。）Rails 应用使用多个进程来处理并发请求，并使用视图级缓存来提高性能。这意味着即使是少量的昂贵请求也会让标准配置变得缓慢。解决办法是让缓存尽可能多工作，理想情况下处理所有未身份验证的请求。
 
 ## #10. 不安全的配置管理
 
@@ -9733,12 +10098,7 @@ Web 应用特别容易拒绝服务攻击，攻击者消耗应用程序的资源�
 
 这些问题不是特定语言的，因此大多数情况下没有特定的“Ruby”或“Java”方法。Rails 确实有一个独特的特征。由于 Rails 是一个具有标准化目录结构的全栈框架，大多数 Rails 应用看起来相似。这对于保护应用程序配置非常有益，因为好的主意可以很容易（有时是自动地）提供给所有的 Rails 应用。缺点是，Rails 配置安全的缺陷可能会影响整个 Rails 社区。
 
-这带我们进入了今为止最重要的一个 Rails 安全漏洞。2006 年 8 月 9 日，Rails 团队宣布了一个安全漏洞和一个
-
-
-
-
-立即强制补丁。一天后，即 2006 年 8 月 10 日，他们公布了问题的完整细节并提供了更多关于补丁的文档。该漏洞存在 Rails 的路由代码中，它允许对 Ruby 代码进行意外评估。例如，`/script/*` URL 将会调用 Rails script 目录下的支持脚本。
+这带我们进入了今为止最重要的一个 Rails 安全漏洞。2006 年 8 月 9 日，Rails 团队宣布了一个安全漏洞和一个立即强制补丁。一天后，即 2006 年 8 月 10 日，他们公布了问题的完整细节并提供了更多关于补丁的文档。该漏洞存在 Rails 的路由代码中，它允许对 Ruby 代码进行意外评估。例如，`/script/*` URL 将会调用 Rails script 目录下的支持脚本。
 
 此漏洞是 OWASP 前十大中几项内容的示例：至少包括拒绝服务、不安全的配置管理和访问控制失效。解决方案也在前十大列表中：为了防止配置不安全，你必须始终保持补丁更新。
 
@@ -9775,13 +10135,13 @@ Acegi Security 为 Java 应用提供全面的认证、授权、基于实例的�
 
 # 附录 A：Java Java 字典
 
-此字典将 Java 概念映射到 Ruby 和 Rails 概念。这种映射并不总是完全精确或一一对应的；有关更多细节，请参考参考文献。
+此字典将 Java 概念映射到 Ruby 和 Rails 概念。这种映射并不总是完全精确或一一对应的；有关更细节，请参考参考文献。
 
 ### AOP
 面向切面编程（Aspect-Oriented Programming）。`AOP` 是一种提高代码模块化（以及 DRY 原则）的方法。传统上散落在整个应用程序中的代码被聚集在一个切面（aspect）中，然后在需要的地方重新织回应用程序中。由于切面可以用于绕过语言限制，因此切面在 Java 中至关重要。Java 通过 `AspectJ` 提供了极好的 AOP 支持。得益于 `method_missing` 等语言特性以及运行时重写方法的能力，切面在 Ruby 中不重要。我们使用一个名为 `AspectR` 的简单 Ruby 切面库。
 
 ### block
-block 是一个可以传递给方法的代码段。Java 没有等价物。Ruby 程序使用 block 的地方，Java 程序使用单方法接口和匿名内部类的组合。block 贯穿本书，并在节 2.4, 集合与迭代中介绍，位于第 47. 页。
+block 是一个可以传�给方法的代码段。Java 没有等价物。Ruby 程序使用 block 的地方，Java 程序使用单方法接口和匿名内部类的组合。block 贯穿本书，并在节 2.4, 集合与迭代中介绍，位于第 47. 页。
 
 ### class
 Ruby 也有类；参见节 2.6, 定义类，位于第 57. 页。
@@ -9817,13 +10177,7 @@ servlet 过滤器的 Rails 等价物是控制器过滤器和 `verify`。参见�
 Ruby 提供了几种声明类方法的方法。参见节 2.6, 创建静态方法，位于第 61. 页。
 
 ### tag libraries
-Rails 没有标签库的直接等价物。相反，Rails 应用使用视图助手和集合部分模板（partials）。参见节 6.2,。
-
-
-
-
-
-# 使用视图辅助函数减少视图代码，位于第 169 页
+Rails 没有标签库的直接等价物。相反，Rails 应用使用视图助手和集合部分模板（partials）。参见节 6.2, 使用视图辅助函数减少视图代码，位于第 169 页
 
 ## 附录 B
 
@@ -10070,7 +10424,6 @@ Rails 易于学习的一个因素是其标准化的目录布局。以下列表�
 ## 以及键/值对，[49]
 ## 以及安全约束，测试，
 ## 用于在 Ruby 中登录，[158], [291]
-## 通过方法向方法传递函数，[94]
 ## 以及安全相关表格，[291]
 ## 以及范围，[54]
 ## 步骤，[285]
@@ -10157,7 +10510,7 @@ Rails 易于学习的一个因素是其标准化的目录布局。以下列表�
 ## 245f,[243–][245]
 ## Cerberus, 245f,[243–][245]
 ## 命令行工具，[244]
-## 命令行工具，[244]
+## 命行工具，[244]
 ## 以及 CruiseControl，[243]
 ## 以及失败的构建，[244]
 ## 以及失败的构建，[244]
@@ -10336,7 +10689,7 @@ Dawkins, Richard, [301]
 
 ...中的变量，[164]
 
-覆盖，[35]
+覆盆，[35]
 
 默认（在 `Rake` 中），[236]
 
@@ -10428,7 +10781,7 @@ Fields, Jay, [232]
 
 `filterChain`, [149]
 
-已定义的，[89]
+已定的，[89]
 
 ## Filters 过滤器
 
@@ -10512,7 +10865,7 @@ INHERITANCE 继承
 - 与 ActiveRecord 对比, [107]
 - 期望, [228]
 - 关联关系, [122]
-- 过滤小技巧, [227]
+- 过滤小技巫, [227]
 - 缓存与会话, [111]
 - 相关的辅助方法, [227]
 - 连接池, [131]
@@ -10832,13 +11185,9 @@ INHERITANCE 继承
 - `method_missing()`, [110, 277]
 - Scriptaculous, [185, 186]
 - 方法, [44–46], 59f
-- 用于 Selenium 和 Rails, [193]
-- 中的参数, [45]
-- 用于 soap4r, [259]
-- 行为的, [60–61]
 - 用于 Struts, [174]
 - 定义, [45]
-- 标签, [169]
+- 标筓, [169]
 - 动态分发, [85]
 - ActiveRecord 中的生命周期回调，见特定方法, [116–118]
 - ActiveRecord 中的迁移, [100–103]
@@ -10847,13 +11196,10 @@ INHERITANCE 继承
 - Linux 以及 Rails 设置, [21]
 - 执行, [101]
 - 列表, [135, 137, 138]
-- Ruby 中的跟踪, [102]
-- 加载路径, [80–81]
 - 极简 vs. 人性化接口, [65]
 - 本地事务, [126–127]
 - Mixins, [90–92]
 - `local_variables`, [165]
-- `mkdir` 任务, [235]
 - `lock_version`, [129]
 - 使用 Locomotive 测试 Mock 对象，网站, [225–228]
 - 日志级别, [154]
@@ -11128,22 +11474,6 @@ INHERITANCE 继承
 - 在 Java 中，145
 - `script/console`，31, 34, 117
 - 管理与安全，295
-- `script/generate`，206
-- 性能，146
-
-## Scriptaculous，185–187, 192
-- 目的，144
-
-## 脚本 (Scripts)，36–37
-- 在 Rails 中，145, 146
-- 搜索，135, 136
-- 服务端，144
-
-## 安全 (Security)，282–302
-- 存储，146
-- 以及 Acegi，283
-- 开启与关闭，146
-- 动作缓存与，295
 - `setAttribute()`，275
 - 使用插件认证，283–286
 - `setOutputProperty()`，276
@@ -11451,10 +11781,6 @@ INHERITANCE 继承
 
 不当错误处理, 298–299
 
-## 关于覆盖率报告, 232
-
-注入流, 297
-
 ## 关于 `CruiseControl`, 243
 
 不安全的配置管理,
@@ -11561,7 +11887,7 @@ XPath, 271, 273
 
 ## 关于 `Rails Logging`, 166
 
-Ruby 中的语法, 274
+Ruby 中的语Syntax, 274
 
 ## 关于 `Rails’ 路由 DSL`, 166
 
@@ -11637,7 +11963,7 @@ Rails 中的安全性, 302
 ### 混入 (Mixins)
 ### 函数
 
-## 使用 ActiveRecord 访问数据
+## 使用 ActiveRecord 访数据
 ### 获取连接
 ### 使用迁移 (Migrations) 管理架构版本
 ### 将数据映射到类
@@ -11738,3 +12064,5 @@ Rails 中的安全性, 302
 ### X
 ### Y
 ### Z
+
+```

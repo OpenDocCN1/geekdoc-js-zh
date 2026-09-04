@@ -1,39 +1,54 @@
+
 # Java：快速学习 Java 编程入门指南（编程、数据库、Java 学者指南、编程书籍、Java 编程）（HTML、Javascript、编程、开发者、编码、CSS、PHP 书籍 2）
 
-
-
 ![](img/cover.jpeg)
-
-
 
 认为你可能对以下书籍感兴趣：
 
 - [C++](https://www.amazon.com/Ultimate-Programming-beginners-database-computer-ebook/dp/B01DED6QNO?ie=UTF8&keywords=C%2B%2B%20robert%20hoffman&qid=1463743006&ref_=sr_1_1&s=digital-text&sr=1-1)
+
 ![C++3](img/00001.jpeg)
+
 - [Javascript](http://www.amazon.com/Javascript-javascript-programming-development-Developers-ebook/dp/B017YZ6CYG/ref=sr_1_7?s=digital-text&ie=UTF8&qid=1447666305&sr=1-7&keywords=javascript)
+
 ![D:\Физические книги\Covers\Javascript.cover.jpg](img/00002.jpeg)
+
 - [计算机黑客](http://www.amazon.com/Computer-Hacking-Essential-Beginners-internet-ebook/dp/B010965F36/ref=sr_1_fkmr1_3?s=digital-text&ie=UTF8&qid=1444557942&sr=1-3-fkmr1&keywords=Computer+Hacking%3A+The+Essential+Hacking+Guide+for+Beginners+%28+Hacking%2C+How+to+Hack%2C)
+
 ![computerhacking](img/00003.jpeg)
+
 - [小白黑客教程](http://www.amazon.com/Computer-Hacking-beginners-computer-security-ebook/dp/B015T8FZYI/ref=sr_1_1?s=digital-text&ie=UTF8&qid=1446193044&sr=1-1&keywords=hacking+for+dummies+matt+benton)
+
 ![HACKING2](img/00004.jpeg)
+
 - [Python](http://www.amazon.com/Python-Ultimate-Learning-Programming-Hands--ebook/dp/B014MV238Y/ref=sr_1_1?s=digital-text&ie=UTF8&qid=1442836729&sr=1-1&keywords=Python%3A+Learn+Python+FAST+-+The+Ultimate+Crash+Course+to+Learning+the+Basics+of+the+Python+Programming+)
+
 ![D:\Физические книги\Covers\Python.jpg](img/00005.jpeg)
+
 - [SQL](http://www.amazon.com/SQL-Beginners-database-programming-Programming-ebook/dp/B019A7VQD8/ref=sr_1_25?ie=UTF8&qid=1451913155&sr=8-25&keywords=sql)
+
 ![SQL](img/00006.jpeg)
 
 # 介绍
+
 最重要的是，运用常识。当找不到规则或指南时。当规则明显不适用时。当其他所有方法都失败时：请利用常识，检查 Java 和编码的基本原理。这条规则优于所有其他规则。常识是一项要求。
 
 1. 为人编写程序，而不是为机器。使用命名规范。为你的代码编写注释。分段。如果没人能看懂，那么它就没用。
+
 2. 先设计，后编码。在开始编写代码之前，花时间考虑代码将如何编写，你绝对会花费更少编写时间。通过先考虑未来的变化，你可以减少这些变化对代码的影响。
+
 3. 小步子开发。测试和修复 10 行代码比 1000 行要容易且快速得多；人们可以在一半的时间内，以每次 10 行的增量，编写、测试并修复 100 行代码，而直接写一个执行相同工作的 100 行代码块要花费更多时间。
+
 4. 保持代码简单。以后需要重写的代码是不值得自豪的，所以遵循 KISS 原则：保持简单，愚蠢（Keep It Simple, Stupid）。
+
 5. 学习常见的模式、反模式和惯用法。有大量的分析可以指导你提高开发生产力、设计和流程模式与反模式，以及编程惯用法。
 
 # 第 1 章 – 通用编程指南
+
 我们将从本教程开始，讨论良好编程风格的通用原则，以及定义 Java 健壮设计的原则。这些原则中的大部分在《Java 编程入门》中已经过，但本章将引入许多新建议，以提高你作为 Java 开发者的技能。
 
 ## 变量作用域
+
 在 Java 语言中，每个局部变量一旦声明，就有一个确定的作用域。该变量从声明处到它当前所在的方法或块的结束都是可见的。因此，只需要遵循一条规则：尽可能靠近使用局部变量的地方声明它。以下是一些示例：
 
 ```java
@@ -47,6 +62,7 @@ try (InputStream in = new FileInputStream("file.txt")) {
 ```
 
 ## 类成员字段与局部变量
+
 Java 中的每个方法都属于某个类（在某些情况下是接口，如 Java 8 中声明为默认的方法）。局部变量与类成员之间存在命名冲突的概率，Java 编译器会选择作用域内的正确变量，但可能不是开发者想要使用的那个。许多 Java IDE 在此类冲突发生时会进行大量工作（红色高亮和警告），然而，在开发过程中主动处理更好。以下是一个示例：
 
 ```java
@@ -63,6 +79,7 @@ public class LocalVariableAndClassMember {
     }
 }
 ```
+
 这个示例看起来非常简单，但有一个陷阱：`calculateValue` 方法引入了一个名为 `value` 的局部变量，并隐藏了同名的类成员。第 8 行代码应该是类成员加上局部变量，但在应用中执行的是不同的操作。修正后的版本应该是这样的（使用 `this` 关键字）：
 
 ```java
@@ -79,9 +96,11 @@ public class LocalVariableAndClassMember {
     }
 }
 ```
+
 这种简单的实现凸显了一个重要问题，在某些情况下，需要花费几个小时来排故障和调试。
 
 ## 方法参数与局部变量
+
 许多初学者经常陷入的另一种场景是将方法参数作为局部变量。Java 允许对非 `final` 方法参数重新赋值替代值（但对原始值没有影响）。例如：
 
 ```java
@@ -94,6 +113,7 @@ public String sanitize(String str) {
     return str;
 }
 ```
+
 使用 Lambda 表达式对上述 `forEach` 循环重写：
 
 ```java
@@ -101,11 +121,8 @@ Arrays.stream(locales()).forEach(locale -> {
     // 实现
 });
 ```
+
 注意，局部变量变成了 `forEach` 的参数。
-
-
-
-
 
 这段代码并不是最整洁的，但它突出了问题：方法参数 `str` 被重新赋值了一个不同的值（并被用作局部变量）。在这些情况下（无例外地），应该避免这种编码模式，可以通过将方法参数声明为 `final` 来避免。
 
@@ -126,9 +143,9 @@ public String sanitize(final String str) {
 
 ### 装箱与拆箱（Boxing and unboxing）
 
-装箱和拆箱是 Java 技术，允许在原始类型（`int`, `long`, `double`）与相应的原始类型包装类（`Integer`, `Long`, `Double`）之间进行转换。
+装箱和拆箱是 Java 技术，允许在原始类型（`int`、`long`、`double`）与相应的原始类型包装类（`Integer`、`Long`、`Double`）之间进行转换。
 
-尽管 Java 编译器试图图通过执行自动装箱（autoboxing）来隐藏这些转换，但这可能会让情况变得糟糕，有时会导致产生随机的结果。
+尽管 Java 编译器试图通过执行自动装箱（autoboxing）来隐藏这些转换，但这可能会让情况变得糟糕，有时会导致产生随机的结果。
 
 以下是一个示例：
 
@@ -159,7 +176,7 @@ public class TimezoneServiceImpl implements TimezoneService {
     @Override
     public TimeZone getTimeZone(final double lat, final double lon) throws IOException {
         final URL url = new URL(String.format(
-            "[`api.geonames.org/timezone?lat=%.2f&lng=%.2f&username=demo`](http://api.geonames.org/timezone?lat=%25.2f&lng=%25.2f&username=demo)",
+            "http://api.geonames.org/timezone?lat=%.2f&lng=%.2f&username=demo",
             lat, lon
         ));
         final HttpURLConnection connection = (HttpURLConnection)url.openConnection();
@@ -190,9 +207,9 @@ public class TimezoneServiceTestImpl implements TimezoneService {
 }
 ```
 
-上述实现可以用任何需要 `TimezoneService` 接口的地方，这使得测试场景与其对外部组件的依赖隔离离开。
+上述实现可以用在任何需要 `TimezoneService` 接口的地方，这使得测试场景与其对外部组件的依赖隔离开。
 
-Java 标准集合库内部包含了适当使用接口示例。`Collection`、`List`、`Set`，所有这些接口都有多个更多的实现支持，当首选使用接口时，这些实现可以互换且无缝地替换。
+Java 标准集合库内部包含了适当使用接口示例。`Collection`、`List`、`Set`，所有这些接口都有多个实现支持，当首选使用接口时，这些实现可以互换且无缝地替换。
 
 以下是此点的示例：
 
@@ -207,15 +224,15 @@ print(new ArrayList<Integer>(/* ... */));
 print(new TreeSet<String>(/* ... */));
 ```
 
-String 在 Java 中是不可变的。每次执行任何操作时，都会创建一个新实例。标准库提供了两个非常有帮助的类来方便字符串操作：`StringBuilder` 和 `StringBuffer`（主要区别在于 `StringBuffer` 是线程安全的，而 `StringBuilder` 不是）。
+`String` 在 Java 中是不可变的。每次执行任何操作时，都会创建一个新实例。标准库提供了两个非常有帮助的类来方便字符串操作：`StringBuilder` 和 `StringBuffer`（主要区别在于 `StringBuffer` 是线程安全的，而 `StringBuilder` 不是）。
 
 ```java
-final sb = new StringBuilder();
+final StringBuilder sb = new StringBuilder();
 for(int i = 1; i <= 10; ++i) {
     sb.append(" ");
     sb.append(i);
 }
-sb.delete(0);
+sb.delete(0, 1);
 sb.insert(0, "[");
 sb.replace(sb.length() - 3, sb.length(), "]");
 ```
@@ -242,25 +259,27 @@ String.format("%d%%", 22); // 22%
 
 `String.format` 方法是一种构建来自不同数据类型的字符串的简单且整洁的方法。某些现代 Java IDE 可以分析格式规范与传递给 `String.format` 方法的参数，并在检测到任何不匹配时警告开发者。
 
-
-
-
 在 Java 中没有理由严格遵守任何特定的命名规范，但有一套易于遵循的规则，使得 Java 代码在标准库或任何其他外部 Java 项目中看起来风格统一。
 
 - 局部变量和方法参数名使用驼峰命名法（camel case）：`str`、`newLength`、`minimumCapacity`
-- static final 字段或枚举常量使用大写，并用下划线 `_` 分隔：`LOG`、`MIN_RADIX`、`INSTANCE`
+
+- `static final` 字段或枚举常量使用大写，并用下划线 `_` 分隔：`LOG`、`MIN_RADIX`、`INSTANCE`
+
 - 类、`enum`、`interface` 或注解名称使用首字母大写：`StringBuilder`、`Runnable`、`@Override`
+
 - 泛型类型参数名通常表示为大写的字母：`T`、`U`、`E`
+
 - 方法或字段名（`static final` 除外）使用驼峰命名法：`isEmpty`、`format`、`addAll`
+
 - 包名为小写：`org.junit`、`com.fasterxml.jackson`、`javax.json`
 
 通过这些简单的约定，代码看起来非常简洁，且与其他库或框架无异。
 
 ### 标准库
 
-Java 标准库存在一些粗糙的边缘和奇怪的设计决策，但 99% 是由编码专家编写的高质量代码。熟悉这些资源是非常值得。
+Java 标准库存在一些粗糙的边缘和奇怪的设计决策，但 99% 是由编码专家编写的高质量代码。熟悉这些资源是非常值得的。
 
-每个新的 Java 版本都包含现有库的许多新功能（并可能弃用旧版本）以及新库的添加。Java 5 引入了一个新的并发库，位于 `java.util.concurrent` 包中。Java 6 发布了脚本支持 `javax.script` 包和 Java 编译器 API `javax.tools` 包。Java 7 包含了对 `java.util.concurrent` 的改进，引入了 `java.nio.file` 包下的新 I/O 库，以及通过 `java.lang.invoke` 包对动态语言的支持。目前，Java 8 提供了期待已日期时间 API，托管在 `java.time` 包中。
+每个新的 Java 版本都包含现有库的许多新功能（并可能弃用旧版本）以及新库的添加。Java 5 引入了一个新的并发库，位于 `java.util.concurrent` 包中。Java 6 发布了脚本支持 `javax.script` 包和 Java 编译器 API `javax.tools` 包。Java 7 包含了对 `java.util.concurrent` 的改进，引入了 `java.nio.file` 包下的新 I/O 库，以及通过 `java.lang.invoke` 包对动态语言的支持。目前，Java 8 提供了期待已久的日期时间 API，托管在 `java.time` 包中。
 
 Java 平台正在增长和演进；保持这种演变的认知极其重要。每当项目中引入第三方库或框架时，请确保所需的功能在 Java 标准库中尚未提供。
 
@@ -301,19 +320,19 @@ public class StringFormatTestCase {
 
 这些测试具有可读性且执行速度快。一个 Java 项目包含数百个测试用例，以便对回归或开发中的功能提供快速反馈。
 
-## 第 2 章 - 何时以及如何使用异常
+# 第 2 章 - 何时以及如何使用异常
 
-### 引言
+## 引言
 
 Java 中的异常表示程序流中的异常或特殊情况，这些情况可能会阻止程序继续运行。这些异常情况可能是致命的；程序无法继续运行并应该终止；或者这些情况是可以恢复的；程序继续运行但某些功能可能会丢失。
 
 在这里我们将遍历使用 Java 异常的典型场景，解释检查异常（checked exceptions）和未检查异常（unchecked exceptions），并涉及一些边界情况和实用的用法。
 
-### 异常：何时使用
+## 异常：何时使用
 
 简单来说，异常是程序执行期间发生并中断正常执行流的事件或信号。异常是早期使用的错误代码和状态技术的替代方案。现在，异常已被接受为包括 Java 在内的多种语言的标准。
 
-异常处理只有一个重要的规则：不要忽略它们。每个异常都应该被记录但绝不能被忽略。在极少数情况下，由于对异常能做不了什么，异常可以被忽略。
+异常处理只有一个重要的规则：不要忽略它们。每个异常都应该被记录但绝不能被忽略。在极少数情况下，由于对异常做不了什么，异常可以被忽略。
 
 Java 中的异常管理是独特的。异常分为两个不同的类：检查异常和未检查异常。
 
@@ -363,14 +382,11 @@ try {
 }
 ```
 
-
-
-
 精心设计的异常层级结构可以减少所需的样板代码。
 
 Java 中继承自 `Error` 类的其他异常类包括 `OutOfMemoryError` 或 `StackOverflowError`。这些异常表示致命的执行失败，会导致程序立即终止且无法恢复。
 
-### 使用 try-with-resources
+## 使用 try-with-resources
 
 栈回溯（Stack unwinding）通常是由抛出异常引起的。程序执行流的变化通常也以这种方式发生。例如，直接与未关闭的本地资源、网络套接字和文件句柄相关的资源泄漏，就是这些抛出异常的结果。
 
@@ -412,7 +428,7 @@ public void readFile( final File file ) {
 
 资源需要实现 `AutoCloseable` 接口才能在 `try-with-resources` 块中使用。Java 编译器会在后台将此结构扩展为更复杂的代码，而开发者的代码看起来非常易读且简洁。在适当的情况下，这是一种非常方便的技术。
 
-### 异常与 lambda
+## 异常与 lambda
 
 未检查的异常（Unchecked exceptions）将按预期工作，但 Java Lambda 函数的语法不允许指定受检查异常（Checked exceptions）；除非这些异常是由 `@FunctionalInterface` 本身定义的且该异常可能被抛出。
 
@@ -446,7 +462,7 @@ public void readFile() {
 
 许多函数式接口已经声明，并能够从其实现中抛出任何 `Exception`，但如果不能（如 `Runnable`），则包装或在未检查异常内部捕获受检查异常是正确的做法。
 
-### 标准异常
+## 标准异常
 
 Java 标准库提供了大量关于异常类的信息。这些类被专门设计用于涵盖过程执行过程中可能发生的大多数通用错误。下表显示了经常使用的异常类，在定义自己的异常之前，请务必考虑这些。
 
@@ -464,7 +480,7 @@ Java 标准库提供了大量关于异常类的信息。这些类被专门设计
 | `StringIndexOutOfBoundsException` | 索引为负或大于字符串的大小。 |
 | `IOException` | 发生了某种 I/O 异常。该类是失败或中断的 I/O 操作产生的异常的通用类。 |
 
-### 定义你自己的异常
+## 定义你自己的异常
 
 在 Java 语言中定义异常类非常容易。为了详细的错误条件管理和报告，精心设计的异常层级允许进行详细的实现。实现正确的平衡至关重要；特别是当异常类过多时，可能会使开发复杂化，并增加捕获异常或将其向下层传递的代码量。
 
@@ -493,21 +509,18 @@ public class NotAuthenticatedException extends RuntimeException {
 ```java
 public void signin( final String username, final String password ) {
     if( !exists( username, password ) ) {
-        throw new NotAuthenticatedException("用户名 / 密码组合不被识别") );
+        throw new NotAuthenticatedException( "用户名 / 密码组合不被识别" );
     }
 }
 ```
 
 随异常传递信息性消息有助于排查生产系统的故障。如果异常是由于另一种异常情况而重新抛出的，则必须使用原因构造函数参数保留初始异常。这将有助于追踪问题来源。
 
-### 文档异常
+## 文档异常
 
 下一个主题将讨论如何让异常也成为文档的一部分。
 
-
-
-
-作为实现的一部分，可能会抛出检查异常（checked exception）的方法应当作为方法签名的一部分。这是通过 `throws` 声明来实现的。`@throws` 标签用于在 Java 文档工具中描述这些异常
+作为实现的一部分，可能会抛出检查异常（checked exception）的方法应当作为方法签名的一部分。这是通过 `throws` 声明来实现的。`@throws` 标签用于在 Java 文档工具中描述这些异常。
 
 以下是一个示例：
 
@@ -545,13 +558,16 @@ public void parse(final String str) {
 
 ## 结论
 
-异常是 Java 语言的一重要特性。异常是 Java 错误管理的基础。异常使处理和信号错误状态变得简单；与错误码、标志和状态相反，异常一旦发生就无法被忽略。
+异常是 Java 语言的一个重要特性。异常是 Java 错误管理的基础。异常使处理和信号错误状态变得简单；与错误码、标志和状态相反，异常一旦发生就无法被忽略。
 
 这些建议将帮助你更有效地理解书中描述的 Java 编码标准和指南。在使用大多数语言进行编码或编程时也可以使用这些工具。Python、C++、CSS 和 JavaScript 等语言都使用通用格式、规则、异常和标准来确保信息易于理解、编辑和添加，从而开发程序和应用程序的改进和新版本。
 
 1. **理解标准。** 花时间理解每种标准和指南如何提高生产力。不要仅仅因为被告知就将每个局部变量单独写一行。这样做是因为你理解到这可以提高对代码的理解。
+
 2. **相信它们。** 遵循标准应该是始终如一做的事，因为它是最好的编码方式。
-3. **在编码时遵循它们，而不是事后补救。** 洁洁的代码更容易，无论是在开发还是维护期间都是如此。遵循标准将提高开发时的生产力，并使代码更易维护。如果从一开始就产生洁洁的代码，你就能在创建过程中从中受益。
+
+3. **在编码时遵循它们，而不是事后补救。** 整洁的代码更容易，无论是在开发还是维护期间都是如此。遵循标准将提高开发时的生产力，并使代码更易维护。如果从一开始就产生整洁的代码，你就能在创建过程中从中受益。
+
 4. **将它们成为你质量保证流程的一部分。** 确保源代码遵循工作对象所采纳的标准。标准应作为培训和指导开发人员变得更高效的基础。
 
 Java 是一门动态且实用的编码语言，希望这本书能帮助你更深入地理解 Java 编码的某些高级方面。

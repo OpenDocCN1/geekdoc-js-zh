@@ -1,21 +1,14 @@
+
 # 学习 ECMAScript 6：掌握所有 ES6 新特性，成为最杰出的 JavaScript 开发者之一，能够按照最新标准编写高效的 JS 程序
-
-
-
-
----
-
----
-
-
----
 
 ## 致谢
 
 **作者**
+
 纳拉扬·普拉斯特
 
 **审稿人**
+
 - 安德烈亚·基亚雷利
 - 菲利普·勒内维尔·戈宁
 - 多梅尼科·卢恰尼
@@ -24,33 +17,40 @@
 - 尤里·斯特伦普弗勒纳
 
 **策划编辑**
+
 维娜·帕加雷
 
 **内容开发编辑**
+
 施韦塔·潘特
 
 **技术编辑**
+
 罗希特·拉詹
 
 **文案编辑**
+
 耶莎·甘加尼
 
 **项目协调员**
+
 希普拉·查汉
 
 **校对**
+
 Safis Editing
 
 **索引编制**
+
 泰贾尔·索尼
 
 **制作协调员**
+
 马努·约瑟夫
 
 **封面设计**
-马努·约瑟夫
 
----
+马努·约瑟夫
 
 ## 序言
 
@@ -65,11 +65,12 @@ ES6不仅是一门伟大的语言，也是对ES5的惊人升级，而且社区�
 这个由JavaScript、客户端应用程序、框架等组成的勇敢新世界正由ES6驱动，本书将帮助你迈出走向它的第一步。我希望你读完本书时能像我一样兴奋。
 
 **杰克·富兰克林**
-GoCardless公司JavaScript开发者
-@Jack_Franklin
-http://www.jackfranklin.co.uk
 
----
+GoCardless公司JavaScript开发者
+
+@Jack_Franklin
+
+http://www.jackfranklin.co.uk
 
 ## 关于作者
 
@@ -81,8 +82,6 @@ http://www.jackfranklin.co.uk
 
 > 首先要感谢网络社区。没有他们共同的智慧和在记录与分享解决方案方面的慷慨，我无法完成这本书。最后，感谢我的家人如此支持。
 
----
-
 ## 关于审稿人
 
 **安德烈亚·基亚雷利**拥有超过20年的软件工程师和技术撰稿人经验。在他的职业生涯中，他在参与的项目中使用了各种技术，从C#到JavaScript，ASP.NET到AngularJS，REST到PhoneGap/Cordova。
@@ -92,6 +91,7 @@ http://www.jackfranklin.co.uk
 目前，他是在意大利的Apparound Inc.（一家成立于硅谷腹地的移动软件公司）担任高级软件工程师，并且是专注于Web技术的意大利在线杂志HTML.it的定期撰稿人。
 
 **菲利普·勒内维尔·戈宁**自2005年起在法国尼斯大学索菲亚·安提波利斯分校担任助理教授。他教授Web技术、软件工程（架构和开发）以及HCI（人机交互）。
+
 从研究的角度来看，菲利普研究以用户为中心的设计（例如，用户和任务模型）与软件工程（例如，组件架构和UI开发）之间的联系。在他的项目中，他经常使用Javascript、HTML、CSS和Java（Android）开发软件和工具。
 
 **多梅尼科·卢恰尼**是一位22岁、充满激情的程序员。他目前在一些公司担任软件工程师，并在巴勒莫大学攻读计算机科学学位。
@@ -111,8 +111,6 @@ http://www.jackfranklin.co.uk
 他也是一位狂热的JavaScript粉丝，曾审阅过几本关于jQuery和JavaScript的书籍。他是Linux爱好者，也是开源软件运动的坚定支持者。他相信软件应该始终是免费的，以实现其真正的潜力。
 
 一个真正的极客，他花了一些空闲时间编写代码，希望它能对大众有所帮助。你可以在 `http://mihirmone.apphb.com` 上找到更多关于他的信息。
-
-
 
 **Takeharu Oshida** (https://github.com/georgeOsdDev) 在一家名为 Mobilus (http://mobilus.co.jp/) 的小型初创公司工作。Mobilus 提供一个实时通信平台和一个名为 Konnect 的 SDK。
 
@@ -154,7 +152,6 @@ https://www2.packtpub.com/books/subscription/packtlib
 
 如果您在 www.PacktPub.com 拥有 Packt 账户，您可以使用该账户立即访问 PacktLib 并查看 9 本完全免费的书籍。只需使用您的登录凭据即可立即访问。
 
-
 # 前言
 
 ECMAScript是一种由Ecma国际在ECMA-262规范和ISO/IEC 16262标准中标准化的脚本语言。JavaScript、JScript和ActionScript等脚本语言是ECMAScript的超集。尽管JavaScript、JScript和ActionScript的功能比ECMAScript更丰富，通过定义更多的对象和方法，但这些语言的核心特性与ECMAScript是相同的。
@@ -173,7 +170,7 @@ ES6的特性继承自其他流行且高度抽象的语言，例如CoffeeScript�
 
 第2章，《了解你的库》，介绍了现有对象基于原型的新方法。
 
-第3章，《使用迭代器》，展示了ES6中可用的不同类型的迭代器，以及如何创建自定义迭代器。本章还讨论了ES6中的尾调用优化。
+第3章，《使用迭代器》，展示了ES6中可用的不同类型的迭代器，以及如何创建自定�迭代器。本章还讨论了ES6中的尾调用优化。
 
 第4章，《异步编程》，阐述了Promise如何使编写异步执行的代码变得更加容易。
 
@@ -242,8 +239,6 @@ ES6转译器接收ES6源代码并输出ES5源代码，后者与所有JavaScript�
 
 代码文本、数据库表名、文件夹名、文件名、文件扩展名、路径名、虚拟URL、用户输入和Twitter账号名的显示方式如下：“我们可以通过 `include` 指令包含其他上下文。”
 
-
-
 ## 读者反馈
 
 我们始终欢迎来自读者的反馈。请告诉我们您对本书的看法——喜欢或不喜欢哪些部分。读者反馈对我们开发您能真正受益的书籍至关重要。
@@ -258,7 +253,7 @@ ES6转译器接收ES6源代码并输出ES5源代码，后者与所有JavaScript�
 
 ## 下载示例代码
 
-您可以从您的账户 http://www.packtpub.com 下载所有已购买 Packt 图书的示例代码文件。如果您在其他地方购买了本书，可以访问 http://www.packtpub.com/support 并注册，文件将通过电子邮件直接发送给您。
+您可以从您的账户 http://www.packtpub.com 下载所有已购买 Packt 图书的示例代码文件。如果您在其他地方购买了本书，可以访 http://www.packtpub.com/support 并注册，文件将通过电子邮件直接发送给您。
 
 ## 勘误
 
@@ -266,7 +261,7 @@ ES6转译器接收ES6源代码并输出ES5源代码，后者与所有JavaScript�
 
 ## 盗版
 
-互联网上的版权材料盗版是所有媒体持续存在的问题。在 Packt，我们非常重视保护我们的版权和许可。如果您在互联网上以任何形式遇到我们作品的任何非法副本，请立即提供其位置地址或网站名称，以便我们采取补救措施。
+互联网上的版权材料盗版是所有媒体持续存在的问题。在 Packt，我们非常重视保护我们的版权和许�。如果您在互联网上以任何形式遇到我们作品的任何非法副本，请立即提供其位置地址或网站名称，以便我们采取补救措施。
 
 请通过 copyright@packtpub.com 联系我们，并提供疑似盗版材料的链接。
 
@@ -278,7 +273,7 @@ ES6转译器接收ES6源代码并输出ES5源代码，后者与所有JavaScript�
 
 ## 玩转语法
 
-与其他编程语言相比，**JavaScript** 在某些语法形式上曾经落后，例如声明常量变量、声明块作用域变量、从数组提取数据、更简洁的函数声明语法等。**ES6** 为 JavaScript 添加了许多基于语法的新特性，帮助开发者编写更少的代码，完成更多的事情。ES6 还阻止程序员使用各种变通方法来实现目标，这些方法会对性能产生负面影响，并使代码更难阅读。在本章中，我们将探讨 ES6 引入的新语法特性。
+与其他编程语言相比，**JavaScript** 在某些语法形式上曾经落后，例如声明常量变量、声明块作用域变量、从数组提取数据、更简洁的函数声明语法等。**ES6** 为 JavaScript 添了许多基于语法的新特性，帮助开发者编写更少的代码，完成更多的事情。ES6 还阻止程序员使用各种变通方法来实现目标，这些方法会对性能产生负面影响，并使代码更难阅读。在本章中，我们将探讨 ES6 引入的新语法特性。
 
 本章我们将涵盖：
 
@@ -295,7 +290,7 @@ ES6 的 `let` 关键字用于声明一个块作用域变量，并可选择将其
 
 ### 声明函数作用域变量
 
-使用 `var` 关键字声明的 JavaScript 变量称为**函数作用域**变量。如果在函数外部声明，函数作用域变量在脚本中全局可访问，即在整个脚本中均可访问。类似地，如果在函数内部声明函数作用域变量，则它们在整个函数中可访问，但在函数外部不可访问。
+使用 `var` 关键字声明的 JavaScript 变量称为**函数作用域**变量。如果在函数外部声明，函数作用域变量在脚本中全局可访问，即在整个脚本中均可访问。类似的，如果在函数内部声明函数作用域变量，则它们在整个函数中可访问，但在函数外部不可访问。
 
 以下是一个示例，展示如何创建函数作用域变量：
 
@@ -353,7 +348,7 @@ function myFunction()
 
     if(true)
     {
-        let c = 14; //在整个"if"语句中可访问
+        let c = 14; //在整个"if"语句中可访
         console.log(b);
     }
 
@@ -418,8 +413,6 @@ function myFunction()
     {
         let c = 4;
 ```
-
-
 
 ## `const` 关键字
 
@@ -657,8 +650,6 @@ Array.prototype.push.apply(array2, array1);
 console.log(array2); //输出 "1, 2, 3, 4"
 ```
 
-
-
 玩转语法
 
 但在 ES6 中，我们有一种更简洁的方式来实现，如下所示：
@@ -742,6 +733,7 @@ myFunction(1, 2, 3, 4, 5);
 `arguments` 对象不是数组对象。因此，要对 `arguments` 对象进行数组操作，需要先将其转换为数组。由于 ES6 的剩余参数是数组类型，因此更容易处理。
 
 > 问：“...”标记被称为什么？
+>
 > 答：“...”标记根据使用的位置和方式，被称为**展开运算符**或**剩余参数**。
 
 ## 解构赋值
@@ -899,7 +891,7 @@ myFunction(undefined);
 
 ## 对象解构赋值
 
-对象解构赋值用于提取对象的属性值并将其赋给变量。
+对象解构赋值用提取对象的属性值并将其赋给变量。
 
 在 ES6 之前，程序员通常这样将对象属性的值赋给变量：
 
@@ -946,11 +938,9 @@ let {a, b, c = 3} = {a: "1", b: "2"};
 console.log(c); //输出 "3"
 ```
 
-
-
 ## 解构计算属性名
 
-有些属性名是通过表达式动态构建的。在这种情况下，要提取属性值，我们可以使用 [ ] 标记来为属性名提供一个表达式。以下是示例：
+有些属性名是通过表达式动态构建的。在这种情况下，要提取属值，我们可以使用 [ ] 标记来为属性名提供一个表达式。以下是示例：
 
 ```
 let {["first"+"Name"]: x} = { firstName: "Eden" };
@@ -1001,6 +991,7 @@ console.log(result); //Output "28.26"
 ```
 
 这里，circleArea 是一个变量，引用匿名的箭头函数。
+
 前面的代码与 ES5 中的以下代码类似：
 
 ```
@@ -1053,6 +1044,7 @@ Window
 ```
 
 这里，`f1` 函数内部的 `this` 指向 `object`，因为 `f1` 是它的属性。`f2` 函数内部的 `this` 指向 `window` 对象，因为 `f2` 是 `window` 对象的属性。
+
 但是 `this` 在箭头函数中的行为有所不同。让我们将前面代码中的传统函数替换为箭头函数，看看 `this` 的值：
 
 ```
@@ -1226,8 +1218,6 @@ true
 15
 ```
 
-
-
 ## Number.isInteger(number) 方法
 
 JavaScript 中的数字以 64 位浮点数形式存储。因此，JavaScript 中的整数是没有小数部分的浮点数，或者小数部分全为 0 的浮点数。
@@ -1399,7 +1389,7 @@ true
 true
 ```
 
-这里，`epsilonEqual()` 是我们构建的用于比较两个值是否相等的自定义函数。现在，输出符合预期。
+这里，`epsilonEqual()` 是我们构建的用于比较两个值是否相等的自定函数。现在，输出符合预期。
 
 > 要了解更多关于 JavaScript 这一行为以及浮点运算的信息，请访问 http://floating-point-gui.de/。
 
@@ -1498,8 +1488,6 @@ console.log(Math.clz32(2950000000));
 22
 3
 ```
-
-
 
 ## Math.sign(number) 函数
 
@@ -1751,8 +1739,6 @@ for(let i = 0; i<b.length; i++)
 }
 ```
 
-
-
 ## 了解你的库
 
 输出结果如下：
@@ -1854,6 +1840,7 @@ console.log(str);
 ```
 
 输出结果如下：
+
 ```
 My age is 30 and I love JavaScript
 ```
@@ -1865,11 +1852,13 @@ My age is 30 and I love JavaScript
 模板字符串提供了一种创建包含多行文本的字符串的新方法。
 
 在 ES5 中，我们需要使用 `\n` 换行符来添加换行。以下是演示此内容的示例：
+
 ```
 console.log("1\n2\n3");
 ```
 
 输出结果如下：
+
 ```
 1
 2
@@ -1937,9 +1926,11 @@ ES6 向全局 `Array` 对象及其实例添加了新属性，以使处理数组�
 
 ### `Array.from(iterable, mapFunc, this)` 方法
 
-`Array.from()` 方法从可迭代对象创建一个新的数组实例。第一个参数是对可迭代对象的引用。第二个参数是可选的，是一个回调函数（称为 **Map 函数**），它为可迭代对象的每个元素调用。第三个参数也是可选的，是 Map 函数中 `this` 的值。
+`Array.from()` 方法从可迭对象创建一个新的数组实例。第一个参数是对可迭对象的引用。第二个参数是可选的，是一个回调函数（称为 **Map 函数**），它为可迭对象的每个元素调用。第三个参数也是可选的，是 Map 函数中 `this` 的值。
 
 以下是演示此内容的示例：
+
+
 
 ```
 let str = "0123";
@@ -1965,7 +1956,7 @@ console.log(arr);
 
 ```
 let arr1 = new Array(2);
-let arr2 = new Array.of(2);
+let arr2 = Array.of(2);
 
 console.log(arr1[0], arr1.length);
 console.log(arr2[0], arr2.length);
@@ -2043,9 +2034,7 @@ var result = arr.find(function(value, index, array){
 console.log(result); //输出 "12"
 ```
 
-
-
-## findIndex(testingFunc, this) 方法
+### `findIndex(testingFunc, this)` 方法
 
 `findIndex()` 方法类似于 `find()` 方法。`findIndex()` 方法返回满足条件的数组元素的索引，而不是元素本身。
 
@@ -2059,10 +2048,10 @@ let result = arr.findIndex(function(value, index, array){
     }
 }, x);
 
-console.log(result); 输出 "1"
+console.log(result); //输出 "1"
 ```
 
-## copyWithin(targetIndex, startIndex, endIndex) 函数
+### `copyWithin(targetIndex, startIndex, endIndex)` 方法
 
 数组的 `copyWithin()` 方法用于将数组的值序列复制到数组内的不同位置。
 
@@ -2098,7 +2087,7 @@ console.log(arr4);
 1,4,3,4,5
 ```
 
-## entries()、keys() 和 values() 方法
+### `entries()`、`keys()` 和 `values()` 方法
 
 数组的 `entries()` 方法返回一个可迭代对象，该对象包含数组每个索引的键/值对。类似地，数组的 `keys()` 方法返回一个可迭代对象，该对象包含数组每个索引的键。同样，数组的 `values()` 方法返回一个可迭代对象，该对象包含数组的值。
 
@@ -2160,7 +2149,7 @@ var number = view.getInt32(8,false);
 console.log(number); //输出 "22"
 ```
 
-## 了解你的库
+### 了解你的库
 
 这里我们使用 `DataView` 构造函数创建了一个 DataView 对象。DataView 对象提供了多种方法来向数组缓冲区 `object` 读取和写入数字。这里我们使用了 `setInt32()` 方法，该方法使用 32 位来存储提供的数字。
 
@@ -2170,25 +2159,25 @@ DataView 对象用于向数组缓冲区对象写入数据的所有方法都接�
 
 以下是 DataView 对象提供的用于存储数字的其他函数：
 
--   **setInt8**：使用 8 位存储一个数字。它接受一个有符号整数（负数或正数）。
--   **setUint8**：使用 8 位存储一个数字。它接受一个无符号整数（正数）。
--   **setInt16**：使用 16 位存储一个数字。它接受一个有符号整数。
--   **setUint16**：使用 16 位存储一个数字。它接受一个无符号整数。
--   **setInt32**：使用 32 位存储一个数字。它接受一个有符号整数。
--   **setUint32**：使用 32 位存储一个数字。它接受一个无符号整数。
--   **setFloat32**：使用 32 位存储一个数字。它接受一个有符号的十进制数字。
--   **setFloat64**：使用 64 位存储一个数字。它接受一个有符号的十进制数字。
+- `setInt8`：使用 8 位存储一个数字。它接受一个有符号整数（负数或正数）。
+- `setUint8`：使用 8 位存储一个数字。它接受一个无符号整数（正数）。
+- `setInt16`：使用 16 位存储一个数字。它接受一个有符号整数。
+- `setUint16`：使用 16 位存储一个数字。它接受一个无符号整数。
+- `setInt32`：使用 32 位存储一个数字。它接受一个有符号整数。
+- `setUint32`：使用 32 位存储一个数字。它接受一个无符号整数。
+- `setFloat32`：使用 32 位存储一个数字。它接受一个有符号的十进制数字。
+- `setFloat64`：使用 64 位存储一个数字。它接受一个有符号的十进制数字。
 
 以下是 DataView 对象用于检索已存储数字的其他函数：
 
--   **getInt8**：读取 8 位。返回有符号整数。
--   **getUint8**：读取 8 位。返回无符号整数。
--   **getInt16**：读取 16 位。返回有符号整数。
--   **getUint16**：读取 16 位。返回无符号整数。
--   **getInt32**：读取 32 位。返回有符号整数。
--   **getUint32**：读取 32 位。返回无符号整数。
--   **getFloat32**：读取 32 位。返回有符号的十进制数字。
--   **getFloat64**：读取 64 位。返回有符号的十进制数字。
+- `getInt8`：读取 8 位。返回有符号整数。
+- `getUint8`：读取 8 位。返回无符号整数。
+- `getInt16`：读取 16 位。返回有符号整数。
+- `getUint16`：读取 16 位。返回无符号整数。
+- `getInt32`：读取 32 位。返回有符号整数。
+- `getUint32`：读取 32 位。返回无符号整数。
+- `getFloat32`：读取 32 位。返回有符号的十进制数字。
+- `getFloat64`：读取 64 位。返回有符号的十进制数字。
 
 ## 类型化数组
 
@@ -2218,14 +2207,14 @@ console.log(typed_array[4]);
 
 类似地，还有其他类型化数组构造函数，用于将数组缓冲区中的数据表示为不同位数的数字序列。以下是列表：
 
--   **Int8Array：** 视为 8 位有符号整数
--   **Uint8Array：** 视为 8 位无符号整数
--   **Int16Array：** 视为 16 位有符号整数
--   **Uint16Array：** 视为 16 位无符号整数
--   **Int32Array：** 视为 32 位有符号整数
--   **Uint32Array：** 视为 32 位无符号整数
--   **Float32Array：** 视为 32 位有符号十进制数字
--   **Float64Array：** 视为 64 位有符号十进制数字
+- `Int8Array`：视为 8 位有符号整数
+- `Uint8Array`：视为 8 位无符号整数
+- `Int16Array`：视为 16 位有符号整数
+- `Uint16Array`：视为 16 位无符号整数
+- `Int32Array`：视为 32 位有符号整数
+- `Uint32Array`：视为 32 位无符号整数
+- `Float32Array`：视为 32 位有符号十进制数字
+- `Float64Array`：视为 64 位有符号十进制数字
 
 ## 集合 (Set)
 
@@ -2264,8 +2253,6 @@ H e l o !
 ```
 
 这里我们向 `set` 对象添加了九个项目，但 `size` 只有六，因为集合会自动删除重复的值。字符 l 和 ! 重复了多次。
-
-
 
 Set 对象也实现了可迭代协议，因此可以作为可迭代对象使用。
 
@@ -2401,7 +2388,7 @@ console.log(a.a); //输出 "12"
 console.log(a.b); //输出 "13"
 ```
 
-### Object.is(value1, value2) 方法
+### `Object.is(value1, value2)` 方法
 
 `Object.is()` 方法用于确定两个值是否相等。它类似于 `===` 运算符，但 `Object.is()` 方法有一些特殊情况。以下示例演示了这些特殊情况：
 
@@ -2425,9 +2412,9 @@ true
 false
 ```
 
-### Object.setPrototypeOf(object, prototype) 方法
+### `Object.setPrototypeOf(object, prototype)` 方法
 
-Object.setPrototypeOf() 方法只是分配对象的 [[prototype]] 属性的另一种方式。以下是演示此内容的示例：
+`Object.setPrototypeOf()` 方法只是分配对象的 `[[prototype]]` 属性的另一种方式。以下是演示此内容的示例：
 
 ```
 let x = {x: 12};
@@ -2439,9 +2426,9 @@ console.log(y.x); //输出 "12"
 console.log(y.y); //输出 "13"
 ```
 
-### Object.assign(targetObj, sourceObjs...) 方法
+### `Object.assign(targetObj, sourceObjs...)` 方法
 
-Object.assign() 方法用于将一个或多个源对象的所有可枚举自有属性的值复制到目标对象。此方法将返回 targetObj。
+`Object.assign()` 方法用于将一个或多个源对象的所有可枚举自有属性的值复制到目标对象。此方法将返回 `targetObj`。
 
 以下是演示此内容的示例：
 
@@ -2498,7 +2485,7 @@ ES6 引入了新的对象接口和循环用于迭代。新的迭代协议的添�
 - 使用 Symbol 作为对象属性键
 - 在对象中实现迭代协议
 - 创建和使用生成器对象
-- 使用 for...of 循环进行迭代
+- 使用 `for...of` 循环进行迭代
 - 尾调用优化
 
 ## ES6 Symbol
@@ -2509,11 +2496,9 @@ ES6 Symbol 是 ES6 中引入的新原始类型。Symbol 是一个唯一的、不
 var s = Symbol();
 ```
 
-Symbol 没有字面量形式；因此，我们需要使用 Symbol() 函数来创建 Symbol。Symbol() 函数每次调用都会返回一个唯一的 Symbol。
+Symbol 没有字面量形式；因此，我们需要使用 `Symbol()` 函数来创建 Symbol。`Symbol()` 函数每次调用都会返回一个唯一的 Symbol。
 
-
-
-## 使用迭代器
+### 使用迭代器
 
 `Symbol()` 函数接受一个可选的字符串参数，该参数表示符号的描述。符号的描述可用于调试，但不能用于访问符号本身。具有相同描述的两个符号是完全不相等的。下面是一个演示此内容的示例：
 
@@ -2526,7 +2511,7 @@ console.log(s1 === s2); //Output is "false"
 
 从前面的示例中，我们也可以说符号是一种*类似字符串*的值，它不会与任何其他值冲突。
 
-## “typeof”运算符
+### `typeof` 运算符
 
 当 `typeof` 运算符作用于一个保存符号的变量时，它会输出 `"symbol"`。下面是一个演示此内容的示例：
 
@@ -2537,7 +2522,7 @@ console.log(typeof s); //Output "symbol"
 
 使用 `typeof` 运算符是识别一个变量是否保存符号的唯一方法。
 
-## “new”运算符
+### `new` 运算符
 
 你不能对 `Symbol()` 函数使用 `new` 运算符。`Symbol()` 函数会检测它是否被用作构造函数，如果是，它会抛出一个异常。下面是一个演示此内容的示例：
 
@@ -2552,11 +2537,11 @@ catch(e)
 }
 ```
 
-但是 JavaScript 引擎可以在内部将 Symbol() 函数用作构造函数，将符号包装在一个对象中。因此，“s” 将等于 Object(s)。
+但是 JavaScript 引擎可以在内部将 `Symbol()` 函数用作构造函数，将符号包装在一个对象中。因此，“s” 将等于 `Object(s)`。
 
 > 从 ES6 引入的所有原始类型都不允许手动调用其构造函数。
 
-## 将符号用作属性键
+### 将符号用作属性键
 
 在 ES5 之前，JavaScript 对象的属性键必须是字符串类型。但在 ES6 中，JavaScript 对象的属性键可以是字符串或符号。下面是一个演示如何将符号用作对象属性键的示例：
 
@@ -2589,7 +2574,7 @@ mySymbol
 
 > 在 ES6 中引入符号的主要原因是，它可以被用作对象属性的键，并防止属性键的意外冲突。
 
-## Object.getOwnPropertySymbols() 方法
+### `Object.getOwnPropertySymbols()` 方法
 
 `Object.getOwnPropertyNames()` 方法无法检索符号属性。因此，ES6 引入了 `Object.getOwnPropertySymbols()` 来检索对象的符号属性数组。下面是一个演示此内容的示例：
 
@@ -2617,7 +2602,7 @@ Symbol(mySymbol) ,Symbol(mySymbol)
 
 > 为了向后兼容，`in` 运算符可以在对象中找到符号属性，而 `for...in` 循环和 `Object.getOwnPropertyNames()` 则不能在对象中找到符号属性。
 
-## Symbol.for(string) 方法
+### `Symbol.for(string)` 方法
 
 `Symbol` 对象维护一个键/值对的注册表，其中键是符号描述，值是符号。每当我们使用 `Symbol.for()` 方法创建符号时，它会被添加到注册表中，并且该方法返回该符号。如果我们尝试创建一个具有已存在描述的符号，那么将检索到现有的符号。
 
@@ -2641,25 +2626,25 @@ let obj = {};
 console.log(obj[Symbol.for("age")]); //Output "27"
 ```
 
-## 内置符号
+### 内置符号
 
 除了你自己定义的符号外，ES6 还带来了一组内置符号，称为 **内置** 符号。以下是引用一些重要内置符号的属性列表：
 
-- Symbol.iterator
-- Symbol.match
-- Symbol.search
-- Symbol.replace
-- Symbol.split
-- Symbol.hasInstance
-- Symbol.species
-- Symbol.unscopables
-- Symbol.isConcatSpreadable
-- Symbol.toPrimitive
-- Symbol.toStringTag
+- `Symbol.iterator`
+- `Symbol.match`
+- `Symbol.search`
+- `Symbol.replace`
+- `Symbol.split`
+- `Symbol.hasInstance`
+- `Symbol.species`
+- `Symbol.unscopables`
+- `Symbol.isConcatSpreadable`
+- `Symbol.toPrimitive`
+- `Symbol.toStringTag`
 
 你将在本书的各个章节中遇到这些符号的使用。
 
-> 在文本中引用内置符号时，我们通常使用 @@ 符号作为前缀。例如，Symbol.iterator 符号被称为 @@iterator 方法。这样做是为了在文本中更容易引用内置符号。
+> 在文本中引用内置符号时，我们通常使用 `@@` 符号作为前缀。例如，`Symbol.iterator` 符号被称为 `@@iterator` 方法。这样做是为了在文本中更容易引用内置符号。
 
 ## 迭代协议
 
@@ -2667,7 +2652,7 @@ console.log(obj[Symbol.for("age")]); //Output "27"
 
 ES6 引入了两个新的迭代协议，称为 **可迭代协议** 和 **迭代器协议**。
 
-## 迭代器协议
+### 迭代器协议
 
 任何实现迭代器协议的对象都称为迭代器。根据迭代器协议，对象需要提供一个 `next()` 方法，该方法返回一组项目序列中的下一个项目。
 
@@ -2708,7 +2693,7 @@ true
 - `done` 属性：如果迭代器已完成对值集合的迭代，则返回 `true`。否则，返回 `false`。
 - `value` 属性：这包含集合中当前项目的值。当 `done` 属性为 `true` 时，它会被省略。
 
-## 可迭代协议
+### 可迭代协议
 
 任何实现可迭代协议的对象都称为可迭代对象。根据可迭代协议，对象需要提供 `@@iterator` 方法；即，它必须具有 `Symbol.iterator` 符号作为属性键。`@@iterator` 方法必须返回一个迭代器对象。
 
@@ -2773,9 +2758,7 @@ function* generator_function()
 let generator = generator_function();
 ```
 
-
-
-## `return(value)` 方法
+### `return(value)` 方法
 
 你可以随时使用生成器对象的 `return()` 方法，在生成器函数产出所有值之前结束它。`return()` 方法接受一个可选参数，表示要返回的最终值。
 
@@ -2804,7 +2787,7 @@ console.log(generator.next().done);
 true
 ```
 
-## `throw(exception)` 方法
+### `throw(exception)` 方法
 
 你可以使用生成器对象的 `throw()` 方法，在生成器函数内部手动触发一个异常。你必须将想要抛出的异常传递给 `throw()` 方法。以下是演示此方法的示例：
 
@@ -2849,7 +2832,7 @@ true
 
 在上面的示例中，你可以看到异常是在函数上次暂停的地方被抛出的。异常被处理后，`throw()` 方法继续执行，并返回下一个产出的值。
 
-## `yield*` 关键字
+### `yield*` 关键字
 
 生成器函数内部的 `yield*` 关键字接受一个可迭代对象作为表达式，并对其进行迭代以产出其值。以下是演示此方法的示例：
 
@@ -2971,11 +2954,13 @@ console.log(add2(1, '2')); //3
 ```
 
 这里，`add1()` 函数中的 `_add()` 调用是一个尾调用，因为它是 `add1()` 函数的最后一个操作。但 `add2()` 函数中的 `_add()` 调用不是尾调用，因为它不是最后一个操作，最后一个操作是将 0 与 `_add()` 的结果相加。
+
 `add1()` 中的 `_add()` 调用不会创建新的执行栈。相反，它重用 `add1()` 函数的执行栈；换句话说，发生了尾调用优化。
 
-## 将非尾调用转换为尾调用
+### 将非尾调用转换为尾调用
 
 由于尾调用会被优化，你应该尽可能使用尾调用，而不是非尾调用。你可以通过将非尾调用转换为尾调用来优化你的代码。
+
 让我们看一个将非尾调用转换为尾调用的示例，这与之前的示例类似：
 
 ```javascript
@@ -3018,9 +3003,7 @@ function add(x, y)
 
 在下一章中，我们将学习什么是 Promise，以及如何使用 Promise 编写更好的异步代码。
 
-
-
-## 4 异步编程
+# 4 异步编程
 
 ES6 引入了对一种众所周知的编程模式的原生支持。其中一种模式就是 Promise 模式，它使得异步代码的读写变得更加容易。在本章中，我们将学习如何使用 ES6 Promise API 来编写异步代码。新的 JavaScript 和 **HTML5** 异步 API 现在都采用 Promise 来实现，以促进编写更少、更干净的代码。因此，深入学习 Promise 非常重要。我们还将看到一些通过 Promise 暴露的示例 API，例如 **Web Cryptography API** 和 **Battery Status API**。
 
@@ -3281,8 +3264,6 @@ Promise 在 JavaScript 中是新的概念，但已经存在于许多其他编程
 
 ES6 提供了 Promise API，通过它我们可以创建和使用 Promise。让我们来探索 ES6 Promise API。
 
-
-
 ## `Promise` 构造函数
 
 `Promise` 构造函数用于创建新的 Promise 实例。Promise 对象代表一个异步操作。
@@ -3369,7 +3350,7 @@ Promise 对象的 `then()` 方法接受两个参数，即 `onFulfilled` 和 `onR
 
 `onFulfilled` 回调接受一个参数，即 Promise 的兑现值。类似地，`onRejected` 回调接受一个参数，即拒绝的原因。
 
-## 异步编程
+### 异步编程
 
 传递给 `then()` 方法的回调是异步执行的。
 
@@ -3480,19 +3461,7 @@ function ajax()
 }
 ```
 
-
-
-## 异步编程
-
-```
-}, false);
-
-request.send();
-});
-}
-```
-
-```
+```javascript
 ajax().then(function(value){
   value = JSON.parse(value);
   return value;
@@ -3520,7 +3489,7 @@ ajax().then(function(value){
 
 让我们继续向这个链中添加一个事件驱动的异步操作，即验证显示的数据是否正确。我们可以这样扩展代码来实现：
 
-```
+```javascript
 function ajax()
 {
     return new Promise(function(resolve, reject){
@@ -3581,7 +3550,7 @@ ajax().then(function(value){
 
 现在我们可以看到，用 Promise 封装 AJAX 操作如何使代码更易于阅读和编写。现在，代码一目了然，更容易理解。
 
-## catch(onRejected) 方法
+## `catch(onRejected)` 方法
 
 当 `then()` 方法仅用于处理错误和异常时，我们可以使用 `promise` 对象的 `catch()` 方法来代替它。`catch()` 方法的工作原理并无特别之处，它只是让代码更易读，因为 "catch" 这个词使其语义更清晰。
 
@@ -3613,86 +3582,83 @@ promise.catch(function(reason){
 
 让我们重写 AJAX 代码示例，将最后一个链式 `then()` 方法替换为 `catch()` 方法：
 
-```
-function ajax(){
-  return new Promise(function(resolve, reject){
+
+
+```javascript
+function ajax() {
+  return new Promise(function(resolve, reject) {
     var request = new XMLHttpRequest();
     var url = "data.json";
     request.open("GET", url);
-    request.addEventListener("load", function(){
-      if(request.status === 200){
+    request.addEventListener("load", function() {
+      if (request.status === 200) {
         resolve(request.responseText);
-      }
-      else{
+      } else {
         reject("Server Error: " + request.status);
       }
     }, false);
-    request.addEventListener("error", function(){
+    request.addEventListener("error", function() {
       reject("Cannot Make AJAX Request");
     }, false);
     request.send();
   });
 }
 
-function verify(value)
-{
-    return new Promise(function(resolve, reject){
-        if(value == true)
-        {
-            //发起 AJAX 请求将数据发送到服务器
-        }
-        else
-        {
-            //发起 AJAX 请求将数据发送到服务器
-        }
-    });
+function verify(value) {
+  return new Promise(function(resolve, reject) {
+    if (value == true) {
+      // 发起 AJAX 请求将数据发送到服务器
+    } else {
+      // 发起 AJAX 请求将数据发送到服务器
+    }
+  });
 }
 
-ajax().then(function(value){
-    value = JSON.parse(value);
-    return value;
-}).then(function(value){
-    console.log(value.Name);
-    return value;
-}).then(function(value){
-    console.log(value.Profession);
-    return value;
-}).then(function(value){
-    console.log(value.Age);
-    return value;
-}).then(function(value){
-    var result = confirm("Is the data correct?");
-    return result;
+ajax().then(function(value) {
+  value = JSON.parse(value);
+  return value;
+}).then(function(value) {
+  console.log(value.Name);
+  return value;
+}).then(function(value) {
+  console.log(value.Profession);
+  return value;
+}).then(function(value) {
+  console.log(value.Age);
+  return value;
+}).then(function(value) {
+  var result = confirm("Is the data correct?");
+  return result;
 }).then(verify)
-.catch(function(reason){
-    console.log(reason);
+.catch(function(reason) {
+  console.log(reason);
 });
 ```
 
 现在代码更加一目了然，易于阅读。
 
-## 异步编程
+# 异步编程
 
-## Promise.resolve(value) 方法
+## `Promise.resolve(value)` 方法
 
-`Promise` 对象的 `resolve()` 方法接受一个值，并返回一个已解析（resolved）该传入值的 promise 对象。
+`Promise` 对象的 `resolve()` 方法接受一个值，并返回一个已解析该传入值的 `Promise` 对象。
 
-`resolve()` 方法主要用于将一个值转换为 `promise` 对象。当你遇到一个可能不是 Promise 的值，但你想把它当作 Promise 来使用时，它就很有用。例如，jQuery 的 Promise 与 ES6 Promise 的接口不同。因此，你可以使用 `resolve()` 方法将 jQuery 的 Promise 转换为 ES6 Promise。
+`resolve()` 方法主要用于将一个值转换为 `Promise` 对象。当你遇到一个可能不是 `Promise` 的值，但你想把它当作 `Promise` 来使用时，它就很有用。例如，jQuery 的 `Promise` 与 ES6 `Promise` 的接口不同。因此，你可以使用 `resolve()` 方法将 jQuery 的 `Promise` 转换为 ES6 `Promise`。
 
 以下是如何使用 `resolve()` 方法的代码示例：
 
-```
+```javascript
 var p1 = Promise.resolve(4);
-p1.then(function(value){
+p1.then(function(value) {
   console.log(value);
 });
 
-//传入一个 promise 对象
-Promise.resolve(p1).then(function(value){
+// 传入一个 Promise 对象
+Promise.resolve(p1).then(function(value) {
   console.log(value);
 });
 
-Promise.resolve({name: "Eden"}).then(function(value){
+Promise.resolve({name: "Eden"}).then(function(value) {
   console.log(value.name);
 });
 ```
@@ -3705,22 +3671,22 @@ Promise.resolve({name: "Eden"}).then(function(value){
 Eden
 ```
 
-## Promise.reject(value) 方法
+## `Promise.reject(value)` 方法
 
-`Promise` 对象的 `reject()` 方法接受一个值，并返回一个被拒绝（rejected）的 promise 对象，该值作为拒绝的原因。
+`Promise` 对象的 `reject()` 方法接受一个值，并返回一个被拒绝的 `Promise` 对象，该值作为拒绝的原因。
 
-与 `Promise.resolve()` 方法不同，`reject()` 方法主要用于调试，而不是将值转换为 Promise。
+与 `Promise.resolve()` 方法不同，`reject()` 方法主要用于调试，而不是将值转换为 `Promise`。
 
 以下是如何使用 `reject()` 方法的代码示例：
 
-```
+```javascript
 var p1 = Promise.reject(4);
-p1.then(null, function(value){
+p1.then(null, function(value) {
   console.log(value);
 });
 
-Promise.reject({name: "Eden"}).then(null, function(value){
-    console.log(value.name);
+Promise.reject({name: "Eden"}).then(null, function(value) {
+  console.log(value.name);
 });
 ```
 
@@ -3731,113 +3697,109 @@ Promise.reject({name: "Eden"}).then(null, function(value){
 Eden
 ```
 
-## Promise.all(iterable) 方法
+## `Promise.all(iterable)` 方法
 
-`Promise` 对象的 `all()` 方法接受一个可迭代对象作为参数，并返回一个 Promise。当可迭代对象中的所有 Promise 都 fulfilled 时，该 Promise 才会 fulfilled。
+`Promise` 对象的 `all()` 方法接受一个可迭代对象作为参数，并返回一个 `Promise`。当可迭代对象中的所有 `Promise` 都 fulfilled 时，该 `Promise` 才会 fulfilled。
 
 当我们想在一些异步操作完成后执行某些任务时，这非常有用。
 
 以下是演示如何使用 `Promise.all()` 方法的代码示例：
 
-```
-var p1 = new Promise(function(resolve, reject){
-    setTimeout(function(){
-        resolve();
-    }, 1000);
-});
-
-var p2 = new Promise(function(resolve, reject){
-    setTimeout(function(){
-        resolve();
-    }, 2000);
-});
-
-var arr = [p1, p2];
-
-Promise.all(arr).then(function(){
-    console.log("Done"); // 2秒后打印 "Done"
-});
-```
-
-如果可迭代对象中包含一个不是 `promise` 对象的值，那么它会使用 `Promise.resolve()` 方法被转换为 Promise 对象。
-
-
-
-## 异步编程
-
-如果传入的任何一个 Promise 被拒绝，那么 `Promise.all()` 方法会立即返回一个新的被拒绝的 Promise，其拒绝原因与那个被拒绝的传入 Promise 相同。这里有一个例子来演示这一点：
-
 ```javascript
-var p1 = new Promise(function(resolve, reject){
-  setTimeout(function(){
-    reject("Error");
+var p1 = new Promise(function(resolve, reject) {
+  setTimeout(function() {
+    resolve();
   }, 1000);
 });
 
-var p2 = new Promise(function(resolve, reject){
-  setTimeout(function(){
+var p2 = new Promise(function(resolve, reject) {
+  setTimeout(function() {
     resolve();
   }, 2000);
 });
 
 var arr = [p1, p2];
 
-Promise.all(arr).then(null, function(reason){
-  console.log(reason); //1秒后输出 "Error"
+Promise.all(arr).then(function() {
+  console.log("Done"); // 2秒后打印 "Done"
+});
+```
+
+如果可迭代对象中包含一个不是 `Promise` 对象的值，那么它会使用 `Promise.resolve()` 方法被转换为 `Promise` 对象。
+
+如果传入的任何一个 `Promise` 被拒绝，那么 `Promise.all()` 方法会立即返回一个新的被拒绝的 `Promise`，其拒绝原因与那个被拒绝的传入 `Promise` 相同。这里有一个例子来演示这一点：
+
+```javascript
+var p1 = new Promise(function(resolve, reject) {
+  setTimeout(function() {
+    reject("Error");
+  }, 1000);
+});
+
+var p2 = new Promise(function(resolve, reject) {
+  setTimeout(function() {
+    resolve();
+  }, 2000);
+});
+
+var arr = [p1, p2];
+
+Promise.all(arr).then(null, function(reason) {
+  console.log(reason); // 1秒后输出 "Error"
 });
 ```
 
 ## `Promise.race(iterable)` 方法
 
-`Promise` 对象的 `race()` 方法接受一个可迭代对象作为参数，并返回一个 Promise，该 Promise 的状态会随着可迭代对象中任何一个 Promise 的解决或拒绝而随之解决或拒绝，其值或原因来自那个 Promise。
+`Promise` 对象的 `race()` 方法接受一个可迭代对象作为参数，并返回一个 `Promise`，该 `Promise` 的状态会随着可迭代对象中任何一个 `Promise` 的解决或拒绝而随之解决或拒绝，其值或原因来自那个 `Promise`。
 
-顾名思义，`race()` 方法用于在 Promise 之间进行竞争，看哪个先完成。
+顾名思义，`race()` 方法用于在 `Promise` 之间进行竞争，看哪个先完成。
 
 这里有一个展示如何使用 `race()` 方法的代码示例：
 
 ```javascript
-var p1 = new Promise(function(resolve, reject){
-  setTimeout(function(){
+var p1 = new Promise(function(resolve, reject) {
+  setTimeout(function() {
     resolve("Fulfillment Value 1");
   }, 1000);
 });
 
-var p2 = new Promise(function(resolve, reject){
-  setTimeout(function(){
+var p2 = new Promise(function(resolve, reject) {
+  setTimeout(function() {
     resolve("Fulfillment Value 2");
   }, 2000);
 });
 
 var arr = [p1, p2];
 
-Promise.race(arr).then(function(value){
-  console.log(value); //输出 "Fulfillment value 1"
-}, function(reason){
+Promise.race(arr).then(function(value) {
+  console.log(value); // 输出 "Fulfillment Value 1"
+}, function(reason) {
   console.log(reason);
 });
 ```
 
-## 基于 Promise 的 JavaScript API
+# 基于 Promise 的 JavaScript API
 
-新的异步 JavaScript API 现在基于 Promise 模式，而不是事件和回调。而旧的 JavaScript API 的新版本现在也基于 Promise。
+新的异步 JavaScript API 现在基于 `Promise` 模式，而不是事件和回调。而旧的 JavaScript API 的新版本现在也基于 `Promise`。
 
-例如，旧版的 Battery Status API 和 Web Cryptography API 基于事件，但这些 API 的新版本纯粹使用 Promise 实现。让我们来看看这些 API 的概览。
+例如，旧版的 Battery Status API 和 Web Cryptography API 基于事件，但这些 API 的新版本纯粹使用 `Promise` 实现。让我们来看看这些 API 的概览。
 
 ## Battery Status API
 
 Battery Status API 为我们提供了电池的当前电量水平和充电状态。这里有一个新版 Battery Status API 的代码示例：
 
 ```javascript
-navigator.getBattery().then(function(value){
+navigator.getBattery().then(function(value) {
   console.log("Battery Level: " + (value.level * 100));
-}, function(reason){
+}, function(reason) {
   console.log("Error: " + reason);
 });
 ```
 
-`navigator` 对象的 `getBattery()` 方法在成功获取电池信息时返回一个已解决的 Promise。否则，它返回一个被拒绝的 Promise。
+`navigator` 对象的 `getBattery()` 方法在成功获取电池信息时返回一个已解决的 `Promise`。否则，它返回一个被拒绝的 `Promise`。
 
-如果 Promise 被解决，那么其解决值是一个持有电池信息的对象。该解决值的 `level` 属性代表剩余的电量水平。
+如果 `Promise` 被解决，那么其解决值是一个持有电池信息的对象。该解决值的 `level` 属性代表剩余的电量水平。
 
 ## Web Cryptography API
 
@@ -3846,53 +3808,45 @@ Web Cryptography API 让我们能够进行哈希计算、签名生成与验证�
 这里有一个新版 Web Cryptography API 的代码示例：
 
 ```javascript
-function convertStringToArrayBufferView(str)
-{
-    var bytes = new Uint8Array(str.length);
-    for (var iii = 0; iii < str.length; iii++)
-    {
-        bytes[iii] = str.charCodeAt(iii);
-    }
-
-    return bytes;
+function convertStringToArrayBufferView(str) {
+  var bytes = new Uint8Array(str.length);
+  for (var iii = 0; iii < str.length; iii++) {
+    bytes[iii] = str.charCodeAt(iii);
+  }
+  return bytes;
 }
 
-function convertArrayBufferToHexaDecimal(buffer)
-{
-    var data_view = new DataView(buffer)
-    var iii, len, hex = '', c;
+function convertArrayBufferToHexaDecimal(buffer) {
+  var data_view = new DataView(buffer);
+  var iii, len, hex = '', c;
 
-    for(iii = 0, len = data_view.byteLength; iii < len; iii++)
-    {
-        c = data_view.getUint8(iii).toString(16);
-        if(c.length < 2)
-        {
-            c = '0' + c;
-        }
-
-        hex += c;
+  for (iii = 0, len = data_view.byteLength; iii < len; iii++) {
+    c = data_view.getUint8(iii).toString(16);
+    if (c.length < 2) {
+      c = '0' + c;
     }
-
-    return hex;
+    hex += c;
+  }
+  return hex;
 }
 
-window.crypto.subtle.digest({name: "SHA-256"}, convertStringToArrayBufferView("ECMAScript 6")).then(function(result){
-    var hash_value = convertArrayBufferToHexaDecimal(result);
-    console.log(hash_value);
+window.crypto.subtle.digest({name: "SHA-256"}, convertStringToArrayBufferView("ECMAScript 6")).then(function(result) {
+  var hash_value = convertArrayBufferToHexaDecimal(result);
+  console.log(hash_value);
 });
 ```
 
 在这个代码示例中，我们将找到一个字符串的 SHA-256 哈希值。
 
-`window.crypto.subtle.digest` 方法接受一个字符串的数组缓冲区和哈希算法名称，并返回一个 Promise 对象。如果它成功生成了哈希值，那么它返回一个已解决的 Promise，其解决值是一个表示哈希值的数组缓冲区。
+`window.crypto.subtle.digest` 方法接受一个字符串的数组缓冲区和哈希算法名称，并返回一个 `Promise` 对象。如果它成功生成了哈希值，那么它返回一个已解决的 `Promise`，其解决值是一个表示哈希值的数组缓冲区。
 
-## 总结
+# 总结
 
-在本章中，我们学习了 JavaScript 如何执行异步代码。我们了解了编写异步代码的不同模式。我们看到了 Promise 如何使读写异步代码变得更加容易，以及如何使用 ES6 Promise API。我们还看到了一些基于 Promise 的 JavaScript API。总的来说，本章旨在解释 Promise、它们的优点以及如何使用基于它们的 API。
+在本章中，我们学习了 JavaScript 如何执行异步代码。我们了解了编写异步代码的不同模式。我们看到了 `Promise` 如何使读写异步代码变得更加容易，以及如何使用 ES6 `Promise` API。我们还看到了一些基于 `Promise` 的 JavaScript API。总的来说，本章旨在解释 `Promise`、它们的优点以及如何使用基于它们的 API。
 
 在下一章中，我们将学习 ES6 Reflect API 及其用途。
 
-## 实现 Reflect API
+# 实现 Reflect API
 
 ES6 引入了一个新的 API，即用于对象反射（即检查和操作对象属性）的 **Reflect API**。尽管 ES5 已经有了用于对象反射的 API，但这些 API 组织得不够好，并且在失败时，它们会抛出异常。ES6 Reflect API 组织良好，使代码更易于阅读和编写，因为它在失败时不会抛出异常。相反，它返回一个布尔值，表示操作是否成功。由于开发者正在适应使用 Reflect API 进行对象反射，因此深入学习此 API 很重要。
 
@@ -3905,7 +3859,7 @@ ES6 引入了一个新的 API，即用于对象反射（即检查和操作对象
 - 检索和设置对象的内部 `[[prototype]]` 属性
 - 以及其他许多与检查和操作对象方法和属性相关的操作。
 
-## Reflect 对象
+## `Reflect` 对象
 
 ES6 全局 `Reflect` 对象公开了所有用于对象反射的新方法。`Reflect` 不是一个函数对象，因此你不能调用 `Reflect` 对象。同时，你也不能将它与 `new` 运算符一起使用。
 
@@ -3930,15 +3884,13 @@ ES6 Reflect API 的所有方法都封装在 `Reflect` 对象中，使其看起�
 这里有一个代码示例，展示如何使用 `Reflect.apply()` 方法：
 
 ```javascript
-function function_name(a, b, c)
-{
-    return this.value + a + b + c;
+function function_name(a, b, c) {
+  return this.value + a + b + c;
 }
 
-var returned_value = Reflect.apply(function_name, {value: 100},
-[10, 20, 30]);
+var returned_value = Reflect.apply(function_name, {value: 100}, [10, 20, 30]);
 
-console.log(returned_value); //输出 "160"
+console.log(returned_value); // 输出 "160"
 ```
 
 ## `Reflect.construct(constructor, args, prototype)` 方法
@@ -3958,22 +3910,20 @@ console.log(returned_value); //输出 "160"
 这里有一个代码示例，展示如何使用 `Reflect.construct()` 方法：
 
 ```javascript
-function constructor1(a, b)
-{
-    this.a = a;
-    this.b = b;
-
-    this.f = function(){
-        return this.a + this.b + this.c;
-    }
+function constructor1(a, b) {
+  this.a = a;
+  this.b = b;
+  this.f = function() {
+    return this.a + this.b + this.c;
+  }
 }
 
-function constructor2(){}
+function constructor2() {}
 constructor2.prototype.c = 100;
 
-var myObject = Reflect.construct(constructor1, [1,2], constructor2);
+var myObject = Reflect.construct(constructor1, [1, 2], constructor2);
 
-console.log(myObject.f()); //输出 "103"
+console.log(myObject.f()); // 输出 "103"
 ```
 
 在前面的例子中，我们在调用 `constructor1` 时使用了 `constructor2` 的 `prototype` 作为 `constructor1` 的 `prototype`。
@@ -3982,17 +3932,13 @@ console.log(myObject.f()); //输出 "103"
 
 `Reflect.defineProperty()` 方法直接在对象上定义一个新属性，或修改对象上的现有属性。它返回一个布尔值，指示操作是否成功。
 
-
-
-## 实现 Reflect API
-
 它与 `Object.defineProperty()` 方法类似。区别在于 `Reflect.defineProperty()` 方法返回一个布尔值，而 `Object.defineProperty()` 返回被修改的对象。如果 `Object.defineProperty()` 方法未能修改或定义对象属性，则会抛出异常，而 `Reflect.defineProperty()` 方法则返回 `false` 结果。
 
 `Reflect.defineProperty()` 方法接受三个参数：
 
--   第一个参数是要用于定义或修改属性的对象。
--   第二个参数是要定义或修改的属性的符号或名称。
--   第三个参数是要定义或修改的属性的描述符。
+- 第一个参数是要用于定义或修改属性的对象。
+- 第二个参数是要定义或修改的属性的符号或名称。
+- 第三个参数是要定义或修改的属性的描述符。
 
 ## 理解数据属性和访问器属性
 
@@ -4004,17 +3950,17 @@ console.log(myObject.f()); //输出 "103"
 
 数据属性的描述符对象具有以下属性：
 
--   **Value**：这是与属性关联的值。默认值为 `undefined`。
--   **Writable**：如果此值为 `true`，则属性值可以通过赋值运算符进行更改。默认值为 `false`。
--   **Configurable**：如果此值为 `true`，则属性特性可以更改，并且该属性可以被删除。默认值为 `false`。请记住，当 `configurable` 特性为 `false` 而 `writable` 为 `true` 时，`value` 和 `writable` 特性可以被更改。
--   **Enumerable**：如果此值为 `true`，则该属性会出现在 `for...in` 循环和 `Object.keys()` 方法中。默认值为 `false`。
+- **Value**：这是与属性关联的值。默认值为 `undefined`。
+- **Writable**：如果此值为 `true`，则属性值可以通过赋值运算符进行更改。默认值为 `false`。
+- **Configurable**：如果此值为 `true`，则属性特性可以更改，并且该属性可以被删除。默认值为 `false`。请记住，当 `configurable` 特性为 `false` 而 `writable` 为 `true` 时，`value` 和 `writable` 特性可以被更改。
+- **Enumerable**：如果此值为 `true`，则该属性会出现在 `for...in` 循环和 `Object.keys()` 方法中。默认值为 `false`。
 
 访问器属性的描述符具有以下属性：
 
--   **Get**：这是一个返回属性值的函数。该函数没有参数，默认值为 `undefined`。
--   **Set**：这是一个设置属性值的函数。该函数将接收分配给属性的新值。
--   **Configurable**：如果此值为 `true`，则属性描述符可以更改，并且该属性可以被删除。默认值为 `false`。
--   **Enumerable**：如果此值为 `true`，则该属性会出现在 `for...in` 循环和 `Object.keys()` 方法中。默认值为 `false`。
+- **Get**：这是一个返回属性值的函数。该函数没有参数，默认值为 `undefined`。
+- **Set**：这是一个设置属性值的函数。该函数将接收分配给属性的新值。
+- **Configurable**：如果此值为 `true`，则属性描述符可以更改，并且该属性可以被删除。默认值为 `false`。
+- **Enumerable**：如果此值为 `true`，则该属性会出现在 `for...in` 循环和 `Object.keys()` 方法中。默认值为 `false`。
 
 根据描述符对象的属性，JavaScript 会决定该属性是数据属性还是访问器属性。
 
@@ -4030,38 +3976,38 @@ console.log(myObject.f()); //输出 "103"
 var obj = {};
 
 Reflect.defineProperty(obj, "name", {
-    value: "Eden",
-    writable: true,
-    configurable: true,
-    enumerable: true
+  value: "Eden",
+  writable: true,
+  configurable: true,
+  enumerable: true
 });
 
-console.log(obj.name); //输出 "Eden"
+console.log(obj.name); // 输出 "Eden"
 ```
 
 以下是另一个示例代码，演示如何使用 `Reflect.defineProperty()` 方法创建一个访问器属性：
 
 ```javascript
 var obj = {
-    __name__: "Eden"
+  __name__: "Eden"
 }
 
 Reflect.defineProperty(obj, "name", {
-    get: function(){
-        return this.__name__;
-    },
-    set: function(newName){
-        this.__name__ = newName;
-    },
-    configurable: true,
-    enumerable: true
+  get: function() {
+    return this.__name__;
+  },
+  set: function(newName) {
+    this.__name__ = newName;
+  },
+  configurable: true,
+  enumerable: true
 });
 
 obj.name = "John";
-console.log(obj.name);     //输出 "John"
+console.log(obj.name);     // 输出 "John"
 ```
 
-## Reflect.deleteProperty(object, property) 方法
+## `Reflect.deleteProperty(object, property)` 方法
 
 `Reflect.deleteProperty()` 方法用于删除对象的属性。它与 `delete` 运算符的作用相同。
 
@@ -4071,17 +4017,17 @@ console.log(obj.name);     //输出 "John"
 
 ```javascript
 var obj = {
-    name: "Eden"
+  name: "Eden"
 }
 
-console.log(obj.name);     //输出 "Eden"
+console.log(obj.name);     // 输出 "Eden"
 
 Reflect.deleteProperty(obj, "name");
 
-console.log(obj.name);     //输出 "undefined"
+console.log(obj.name);     // 输出 "undefined"
 ```
 
-## Reflect.enumerate(object) 方法
+## `Reflect.enumerate(object)` 方法
 
 `Reflect.enumerate()` 方法接受一个对象作为参数，并返回一个迭代器对象，该对象表示对象的可枚举属性。它还返回对象可枚举的继承属性。
 
@@ -4091,9 +4037,9 @@ console.log(obj.name);     //输出 "undefined"
 
 ```javascript
 var obj = {
-    a: 1,
-    b: 2,
-    c: 3
+  a: 1,
+  b: 2,
+  c: 3
 };
 
 var iterator = Reflect.enumerate(obj);
@@ -4113,33 +4059,35 @@ c
 true
 ```
 
-## Reflect.get(object, property, this) 方法
+## `Reflect.get(object, property, this)` 方法
 
 `Reflect.get()` 方法用于检索对象属性的值。
+
 第一个参数是对象，第二个参数是属性名称。
+
 如果该属性是访问器属性，那么我们可以提供第三个参数，它将是 get 函数内部的 `this` 值。
 
 以下是演示如何使用 `Reflect.get()` 方法的代码示例：
 
 ```javascript
 var obj = {
-    __name__: "Eden"
+  __name__: "Eden"
 };
 
 Reflect.defineProperty(obj, "name", {
-  get: function(){
+  get: function() {
     return this.__name__;
   }
 });
 
-console.log(obj.name);      //输出 "Eden"
+console.log(obj.name);      // 输出 "Eden"
 
 var name = Reflect.get(obj, "name", {__name__: "John"});
 
-console.log(name);          //输出 "John"
+console.log(name);          // 输出 "John"
 ```
 
-## Reflect.set(object, property, value, this) 方法
+## `Reflect.set(object, property, value, this)` 方法
 
 `Reflect.set()` 方法用于设置对象属性的值。第一个参数是对象，第二个参数是属性名称，第三个参数是属性值。如果该属性是访问器属性，那么我们可以提供第四个参数，它将是 set 函数内部的 `this` 值。
 
@@ -4153,11 +4101,10 @@ var obj1 = {
 };
 
 Reflect.defineProperty(obj1, "name", {
-  set: function(newName){
+  set: function(newName) {
     this.__name__ = newName;
   },
-
-  get: function(){
+  get: function() {
     return this.__name__;
   }
 });
@@ -4168,11 +4115,11 @@ var obj2 = {
 
 Reflect.set(obj1, "name", "Eden", obj2);
 
-console.log(obj1.name); //输出 "Eden"
-console.log(obj2.__name__); //输出 "Eden"
+console.log(obj1.name); // 输出 "Eden"
+console.log(obj2.__name__); // 输出 "Eden"
 ```
 
-## Reflect.getOwnPropertyDescriptor(object, property) 方法
+## `Reflect.getOwnPropertyDescriptor(object, property)` 方法
 
 `Reflect.getOwnPropertyDescriptor()` 方法用于检索对象属性的描述符。
 
@@ -4182,7 +4129,7 @@ console.log(obj2.__name__); //输出 "Eden"
 
 ```javascript
 var obj = {
-    name: "Eden"
+  name: "Eden"
 };
 
 var descriptor = Reflect.getOwnPropertyDescriptor(obj, "name");
@@ -4202,31 +4149,27 @@ true
 true
 ```
 
-## Reflect.getPrototypeOf(object) 方法
+## `Reflect.getPrototypeOf(object)` 方法
 
 `Reflect.getPrototypeOf()` 方法用于检索对象的原型，即对象内部 `[[prototype]]` 属性的值。
 
 `Reflect.getPrototypeOf()` 方法与 `Object.getPrototypeOf()` 方法相同。
 
-
-
-实现 Reflect API
-
 以下是演示如何使用 `Reflect.getPrototypeOf()` 方法的代码示例：
 
 ```javascript
 var obj1 = {
-    __proto__: {
-        name: "Eden"
-    }
+  __proto__: {
+    name: "Eden"
+  }
 };
 
 var obj2 = Reflect.getPrototypeOf(obj1);
 
-console.log(obj2.name); //Output "Eden"
+console.log(obj2.name); // Output "Eden"
 ```
 
-## Reflect.setPrototypeOf(object, prototype) 方法
+## `Reflect.setPrototypeOf(object, prototype)` 方法
 
 `Reflect.setPrototypeOf()` 用于设置对象内部 `[[prototype]]` 属性的值。如果内部 `[[prototype]]` 属性的值设置成功，`Reflect.setPrototypeOf()` 方法将返回 `true`。否则，它将返回 `false`。
 
@@ -4236,13 +4179,13 @@ console.log(obj2.name); //Output "Eden"
 var obj = {};
 
 Reflect.setPrototypeOf(obj, {
-    name: "Eden"
+  name: "Eden"
 });
 
-console.log(obj.name); //Output "Eden"
+console.log(obj.name); // Output "Eden"
 ```
 
-## Reflect.has(object, property) 方法
+## `Reflect.has(object, property)` 方法
 
 `Reflect.has()` 用于检查对象中是否存在某个属性。它也会检查继承的属性。如果属性存在，则返回 `true`。否则，它将返回 `false`。
 
@@ -4252,17 +4195,17 @@ console.log(obj.name); //Output "Eden"
 
 ```javascript
 var obj = {
-    __proto__: {
-        name: "Eden"
-    },
-    age: 12
+  __proto__: {
+    name: "Eden"
+  },
+  age: 12
 };
 
-console.log(Reflect.has(obj, "name")); //Output "true"
-console.log(Reflect.has(obj, "age")); //Output "true"
+console.log(Reflect.has(obj, "name")); // Output "true"
+console.log(Reflect.has(obj, "age")); // Output "true"
 ```
 
-## Reflect.isExtensible(object) 方法
+## `Reflect.isExtensible(object)` 方法
 
 `Reflect.isExtensible()` 方法用于检查一个对象是否是可扩展的，也就是说，我们是否可以向对象添加新的属性。
 
@@ -4274,17 +4217,17 @@ console.log(Reflect.has(obj, "age")); //Output "true"
 
 ```javascript
 var obj = {
-    name: "Eden"
+  name: "Eden"
 };
 
-console.log(Reflect.isExtensible(obj)); //Output "true"
+console.log(Reflect.isExtensible(obj)); // Output "true"
 
 Object.preventExtensions(obj);
 
-console.log(Reflect.isExtensible(obj)); //Output "false"
+console.log(Reflect.isExtensible(obj)); // Output "false"
 ```
 
-## Reflect.preventExtensions(object) 方法
+## `Reflect.preventExtensions(object)` 方法
 
 `Reflect.preventExtensions()` 用于将一个对象标记为不可扩展。它返回一个布尔值，指示操作是否成功。
 
@@ -4292,17 +4235,17 @@ console.log(Reflect.isExtensible(obj)); //Output "false"
 
 ```javascript
 var obj = {
-    name: "Eden"
+  name: "Eden"
 };
 
-console.log(Reflect.isExtensible(obj)); //Output "true"
+console.log(Reflect.isExtensible(obj)); // Output "true"
 
-console.log(Reflect.preventExtensions(obj)); //Output "true"
+console.log(Reflect.preventExtensions(obj)); // Output "true"
 
-console.log(Reflect.isExtensible(obj)); //Output "false"
+console.log(Reflect.isExtensible(obj)); // Output "false"
 ```
 
-## Reflect.ownKeys(object) 方法
+## `Reflect.ownKeys(object)` 方法
 
 `Reflect.ownKeys()` 方法返回一个数组，其值表示提供对象的属性的键。它忽略继承的属性。
 
@@ -4310,37 +4253,37 @@ console.log(Reflect.isExtensible(obj)); //Output "false"
 
 ```javascript
 var obj = {
-    a: 1,
-    b: 2,
-    __proto__: {
-        c: 3
-    }
+  a: 1,
+  b: 2,
+  __proto__: {
+    c: 3
+  }
 };
 
 var keys = Reflect.ownKeys(obj);
 
-console.log(keys.length); //Output "2"
-console.log(keys[0]); //Output "a"
-console.log(keys[1]); //Output "b"
+console.log(keys.length); // Output "2"
+console.log(keys[0]); // Output "a"
+console.log(keys[1]); // Output "b"
 ```
 
-## 总结
+# 总结
 
 在本章中，我们学习了什么是对象反射，以及如何使用 ES6 Reflect API 进行对象反射。我们通过示例看到了 `Reflect` 对象的各种方法。总的来说，本章介绍了 ES6 Reflect API，用于检查和操作对象的属性。
 
 在下一章中，我们将学习 ES6 代理及其用途。
 
-## 6 使用代理
+# 6 使用代理
 
 代理用于为对象上的基本操作定义自定义行为。代理已经在 C#、C++ 和 Java 等编程语言中存在，但 JavaScript 从未有过代理。ES6 引入了 Proxy API，它让我们能够创建代理。在本章中，我们将探讨代理、它们的用法以及代理陷阱。由于代理的好处，开发者正越来越多地使用代理，因此通过示例深入学习代理非常重要，我们将在本章中进行。
 
 在本章中，我们将涵盖：
 
--   使用 Proxy API 创建代理
--   理解代理是什么以及如何使用它们
--   使用陷阱拦截对象上的各种操作
--   不同类型的可用陷阱
--   代理的一些用例
+- 使用 Proxy API 创建代理
+- 理解代理是什么以及如何使用它们
+- 使用陷阱拦截对象上的各种操作
+- 不同类型的可用陷阱
+- 代理的一些用例
 
 ## 代理简述
 
@@ -4352,16 +4295,16 @@ console.log(keys[1]); //Output "b"
 
 以下是学习代理时使用的一些重要术语：
 
--   **目标 (Target)**：这是被代理包装的对象。
--   **陷阱 (Traps)**：这些是拦截目标对象上各种操作并为这些操作定义自定义行为的函数。
--   **处理程序 (Handler)**：这是一个包含陷阱的对象。处理程序附加到代理对象。
+- **目标 (Target)**：这是被代理包装的对象。
+- **陷阱 (Traps)**：这些是拦截目标对象上各种操作并为这些操作定义自定义行为的函数。
+- **处理程序 (Handler)**：这是一个包含陷阱的对象。处理程序附加到代理对象。
 
 ## Proxy API
 
 ES6 Proxy API 提供了 `Proxy` 构造函数来创建代理。`Proxy` 构造函数接受两个参数，分别是：
 
--   **目标 (Target)**：这是将被代理包装的对象。
--   **处理程序 (Handler)**：这是一个包含目标对象陷阱的对象。
+- **目标 (Target)**：这是将被代理包装的对象。
+- **处理程序 (Handler)**：这是一个包含目标对象陷阱的对象。
 
 可以为目标对象上的每个可能操作定义陷阱。如果未定义陷阱，则目标上的默认操作将发生。
 
@@ -4369,7 +4312,7 @@ ES6 Proxy API 提供了 `Proxy` 构造函数来创建代理。`Proxy` 构造函�
 
 ```javascript
 var target = {
-    age: 12
+  age: 12
 };
 var handler = {};
 var proxy = new Proxy(target, handler);
@@ -4401,7 +4344,7 @@ Eden
 
 ```javascript
 var proxy = new Proxy({
-    age: 12
+  age: 12
 }, {});
 
 proxy.name = "Eden";
@@ -4415,7 +4358,7 @@ proxy.name = "Eden";
 
 让我们来看看各种类型的陷阱。
 
-### get(target, property, receiver) 方法
+### `get(target, property, receiver)` 方法
 
 当我们使用点表示法或括号表示法，或者 `Reflect.get()` 方法检索属性值时，`get` 陷阱会被执行。它接受三个参数，即目标对象、属性名和接收者。
 
@@ -4425,18 +4368,15 @@ proxy.name = "Eden";
 
 ```javascript
 var proxy = new Proxy({
-    age: 12
+  age: 12
 }, {
-    get: function(target, property, receiver){
-        if(property in target)
-        {
-            return target[property];
-        }
-        else
-        {
-            return "Not Found";
-        }
+  get: function(target, property, receiver) {
+    if (property in target) {
+      return target[property];
+    } else {
+      return "Not Found";
     }
+  }
 });
 
 console.log(Reflect.get(proxy, "age"));
@@ -4456,19 +4396,15 @@ Not found
 
 ```javascript
 var proxy = new Proxy({age: 13}, {
-    get: function(target, property, receiver){
-        console.log(receiver);
-
-        if(property in target)
-        {
-            console.log(receiver);
-            return target[property];
-        }
+  get: function(target, property, receiver) {
+    console.log(receiver);
+    if (property in target) {
+      console.log(receiver);
+      return target[property];
     }
+  }
 });
 ```
-
-
 
 ## `set(target, property, value, receiver)` 方法
 
@@ -4478,16 +4414,16 @@ var proxy = new Proxy({age: 13}, {
 
 以下是一个代码示例，演示了如何使用 `set` 陷阱：
 
-```
+```javascript
 var proxy = new Proxy({}, {
-    set: function(target, property, value, receiver){
-        target[property] = value;
-        return true;
-    }
+  set: function(target, property, value, receiver) {
+    target[property] = value;
+    return true;
+  }
 });
 
 Reflect.set(proxy, "name", "Eden");
-console.log(proxy.name); //输出 "Eden"
+console.log(proxy.name); // 输出 "Eden"
 ```
 
 ## 规则
@@ -4503,18 +4439,15 @@ console.log(proxy.name); //输出 "Eden"
 
 以下是一个代码示例，演示了如何使用 `has` 陷阱：
 
-```
+```javascript
 var proxy = new Proxy({age: 12}, {
-    has: function(target, property){
-        if(property in target)
-        {
-            return true;
-        }
-        else
-        {
-            return false;
-        }
+  has: function(target, property) {
+    if (property in target) {
+      return true;
+    } else {
+      return false;
     }
+  }
 });
 
 console.log(Reflect.has(proxy, "name"));
@@ -4541,14 +4474,14 @@ true
 
 以下是一个代码示例，演示了如何使用 `isExtensible` 陷阱：
 
-```
+```javascript
 var proxy = new Proxy({age: 12}, {
-    isExtensible: function(target){
-        return Object.isExtensible(target);
-    }
+  isExtensible: function(target) {
+    return Object.isExtensible(target);
+  }
 });
 
-console.log(Reflect.isExtensible(proxy)); //输出 "true"
+console.log(Reflect.isExtensible(proxy)); // 输出 "true"
 ```
 
 ## 规则
@@ -4565,14 +4498,14 @@ console.log(Reflect.isExtensible(proxy)); //输出 "true"
 
 以下是一个代码示例，演示了如何使用 `getPrototypeOf` 陷阱：
 
-```
+```javascript
 var proxy = new Proxy({age: 12, __proto__: {name: "Eden"}}, {
-  getPrototypeOf: function(target){
+  getPrototypeOf: function(target) {
     return Object.getPrototypeOf(target);
   }
 });
 
-console.log(Reflect.getPrototypeOf(proxy).name); //输出 "Eden"
+console.log(Reflect.getPrototypeOf(proxy).name); // 输出 "Eden"
 ```
 
 ## 规则
@@ -4590,17 +4523,17 @@ console.log(Reflect.getPrototypeOf(proxy).name); //输出 "Eden"
 
 以下是一个代码示例，演示了如何使用 `setPrototypeOf` 陷阱：
 
-```
+```javascript
 var proxy = new Proxy({}, {
-    setPrototypeOf: function(target, value){
-        Reflect.setPrototypeOf(target, value);
-        return true;
-    }
+  setPrototypeOf: function(target, value) {
+    Reflect.setPrototypeOf(target, value);
+    return true;
+  }
 });
 
 Reflect.setPrototypeOf(proxy, {name: "Eden"});
 
-console.log(Reflect.getPrototypeOf(proxy).name); //输出 "Eden"
+console.log(Reflect.getPrototypeOf(proxy).name); // 输出 "Eden"
 ```
 
 ## 规则
@@ -4617,18 +4550,18 @@ console.log(Reflect.getPrototypeOf(proxy).name); //输出 "Eden"
 
 以下是一个代码示例，演示了如何使用 `preventExtensions` 陷阱：
 
-```
+```javascript
 var proxy = new Proxy({}, {
-    preventExtensions: function(target){
-        Object.preventExtensions(target);
-        return true;
-    }
+  preventExtensions: function(target) {
+    Object.preventExtensions(target);
+    return true;
+  }
 });
 
 Reflect.preventExtensions(proxy);
 
 proxy.a = 12;
-console.log(proxy.a); //输出 "undefined"
+console.log(proxy.a); // 输出 "undefined"
 ```
 
 ## 规则
@@ -4645,9 +4578,9 @@ console.log(proxy.a); //输出 "undefined"
 
 以下是一个代码示例，演示了如何使用 `getOwnPropertyDescriptor` 陷阱：
 
-```
+```javascript
 var proxy = new Proxy({age: 12}, {
-  getOwnPropertyDescriptor: function(target, property){
+  getOwnPropertyDescriptor: function(target, property) {
     return Object.getOwnPropertyDescriptor(target, property);
   }
 });
@@ -4687,28 +4620,26 @@ Value: 12
 
 以下是一个代码示例，演示了如何使用 `defineProperty` 陷阱：
 
-```
+```javascript
 var proxy = new Proxy({}, {
-    defineProperty: function(target, property, descriptor){
-        Object.defineProperty(target, property, descriptor);
-        return true;
-    }
+  defineProperty: function(target, property, descriptor) {
+    Object.defineProperty(target, property, descriptor);
+    return true;
+  }
 });
 
 Reflect.defineProperty(proxy, "name", {value: "Eden"});
 
-console.log(proxy.name); //输出 "Eden"
+console.log(proxy.name); // 输出 "Eden"
 ```
-
-
 
 ## 规则
 
 在使用 `defineProperty` 陷阱时，不应违反以下规则：
 
-*   如果 `target` 对象不可扩展，且属性尚不存在，则必须返回 `false`。
+- 如果 `target` 对象不可扩展，且属性尚不存在，则必须返回 `false`。
 
-## deleteProperty(target, property) 方法
+## `deleteProperty(target, property)` 方法
 
 `deleteProperty` 陷阱在使用 `delete` 运算符或 `Reflect.deleteProperty()` 方法删除属性时执行。它接收两个参数，即 `target` 对象和 `property` 名称。
 
@@ -4718,22 +4649,22 @@ console.log(proxy.name); //输出 "Eden"
 
 ```javascript
 var proxy = new Proxy({age: 12}, {
-    deleteProperty: function(target, property){
-        return delete target[property];
-    }
+  deleteProperty: function(target, property) {
+    return delete target[property];
+  }
 });
 
 Reflect.deleteProperty(proxy, "age");
-console.log(proxy.age); //Output "undefined"
+console.log(proxy.age); // Output "undefined"
 ```
 
 ## 规则
 
 在使用 `deleteProperty` 陷阱时，不应违反以下规则：
 
-*   如果该属性作为 `target` 对象的不可配置自有属性存在，则此陷阱必须返回 `false`。
+- 如果该属性作为 `target` 对象的不可配置自有属性存在，则此陷阱必须返回 `false`。
 
-## enumerate(target) 方法
+## `enumerate(target)` 方法
 
 `enumerate` 陷阱在使用 `for...in` 循环或 `Reflect.enumerate()` 方法遍历属性键时执行。它接收一个参数，即 `target` 对象。
 
@@ -4743,16 +4674,13 @@ console.log(proxy.age); //Output "undefined"
 
 ```javascript
 var proxy = new Proxy({age: 12, name: "Eden"}, {
-    enumerate: function(target){
-        var arr = [];
-
-        for(var p in target)
-        {
-            arr[arr.length] = p;
-        }
-
-        return arr[Symbol.iterator]();
+  enumerate: function(target) {
+    var arr = [];
+    for (var p in target) {
+      arr[arr.length] = p;
     }
+    return arr[Symbol.iterator]();
+  }
 });
 
 var iterator = Reflect.enumerate(proxy);
@@ -4763,17 +4691,20 @@ console.log(iterator.next().done);
 ```
 
 输出为：
+
+```
 age
 name
 true
+```
 
 ## 规则
 
 在使用 enumerate 陷阱时，不应违反以下规则：
 
--   此陷阱必须返回一个对象。
+- 此陷阱必须返回一个对象。
 
-## ownKeys(target) 方法
+## `ownKeys(target)` 方法
 
 `ownKeys` 陷阱在使用 `Reflect.ownKeys()`、`Object.getOwnPropertyNames()`、`Object.getOwnPropertySymbols()` 和 `Object.keys()` 方法检索自有属性键时执行。它仅接收一个参数，即目标对象。
 
@@ -4800,7 +4731,7 @@ Object.defineProperty(object, "profession", {
 })
 
 var proxy = new Proxy(object, {
-  ownKeys: function(target){
+  ownKeys: function(target) {
     return Object.getOwnPropertyNames(target).concat(Object.getOwnPropertySymbols(target));
   }
 });
@@ -4826,13 +4757,14 @@ console.log(Object.getOwnPropertySymbols(proxy));
 
 在使用 `ownKeys` 陷阱时，不应违反以下规则：
 
--   返回数组的元素必须是字符串或符号
--   返回的数组必须包含 `target` 对象所有不可配置自有属性的键
--   如果 `target` 对象不可扩展，则返回的数组必须包含 `target` 对象所有自有属性的键，且不能包含其他值
+- 返回数组的元素必须是字符串或符号
+- 返回的数组必须包含 `target` 对象所有不可配置自有属性的键
+- 如果 `target` 对象不可扩展，则返回的数组必须包含 `target` 对象所有自有属性的键，且不能包含其他值
 
-## apply(target, thisValue, arguments) 方法
+## `apply(target, thisValue, arguments)` 方法
 
 如果目标是函数，则调用代理将执行 `apply` 陷阱。
+
 `apply` 陷阱也会为函数的 `apply()` 和 `call()` 方法以及 `Reflect.apply()` 方法执行。
 
 `apply` 陷阱接收三个参数。第一个参数是 `target` 对象，第三个参数是一个数组，表示函数调用的参数。第二个参数与目标函数的 `this` 值相同，即如果目标函数在没有代理的情况下被调用，其 `this` 值是多少。
@@ -4840,8 +4772,8 @@ console.log(Object.getOwnPropertySymbols(proxy));
 以下是代码示例，演示了如何使用 `apply` 陷阱：
 
 ```javascript
-var proxy = new Proxy(function(){}, {
-  apply: function(target, thisValue, arguments){
+var proxy = new Proxy(function() {}, {
+  apply: function(target, thisValue, arguments) {
     console.log(thisValue.name);
     return arguments[0] + arguments[1] + arguments[2];
   }
@@ -4852,7 +4784,7 @@ var obj = {
   f: proxy
 }
 
-var sum = obj.f(1,2,3);
+var sum = obj.f(1, 2, 3);
 
 console.log(sum);
 ```
@@ -4864,7 +4796,7 @@ Eden
 6
 ```
 
-## construct(target, arguments) 方法
+## `construct(target, arguments)` 方法
 
 如果目标是函数，则使用 `new` 运算符或 `Reflect.construct()` 方法将目标作为构造函数调用将执行 `construct` 陷阱。
 
@@ -4875,24 +4807,24 @@ Eden
 以下是代码示例，演示了如何使用 `construct` 陷阱：
 
 ```javascript
-var proxy = new Proxy(function(){}, {
-    construct: function(target, arguments){
-        return {name: arguments[0]};
-    }
+var proxy = new Proxy(function() {}, {
+  construct: function(target, arguments) {
+    return {name: arguments[0]};
+  }
 });
 
 var obj = new proxy("Eden");
-console.log(obj.name); //Output "Eden"
+console.log(obj.name); // Output "Eden"
 ```
 
-## Proxy.revocable(target, handler) 方法
+## `Proxy.revocable(target, handler)` 方法
 
 可撤销代理是一个可以被撤销（即禁用）的代理。
 
 要创建可撤销代理，我们必须使用 `Proxy.revocable()` 方法。`Proxy.revocable()` 方法不是构造函数。此方法也接收与 `Proxy` 构造函数相同的参数，但它不是直接返回可撤销代理实例，而是返回一个包含两个属性的对象，如下所示：
 
--   proxy: 这是可撤销代理对象
--   revoke: 当调用此函数时，它会撤销 `proxy`
+- `proxy`: 这是可撤销代理对象
+- `revoke`: 当调用此函数时，它会撤销 `proxy`
 
 一旦可撤销代理被撤销，任何使用它的尝试都会抛出 `TypeError` 异常。
 
@@ -4900,18 +4832,15 @@ console.log(obj.name); //Output "Eden"
 
 ```javascript
 var revocableProxy = Proxy.revocable({
-    age: 12
+  age: 12
 }, {
-    get: function(target, property, receiver){
-        if(property in target)
-        {
-            return target[property];
-        }
-        else
-        {
-            return "Not Found";
-        }
+  get: function(target, property, receiver) {
+    if (property in target) {
+      return target[property];
+    } else {
+      return "Not Found";
     }
+  }
 });
 
 console.log(revocableProxy.proxy.age);
@@ -4936,112 +4865,109 @@ TypeError: proxy is revoked
 
 代理有多种用途。以下是一些主要用例：
 
--   创建虚拟化对象，例如远程对象、持久对象等
--   对象的延迟创建
--   透明的日志记录、跟踪、性能分析等
--   嵌入特定领域语言
--   通过泛型拦截抽象来强制执行访问控制
+- 创建虚拟化对象，例如远程对象、持久对象等
+- 对象的延迟创建
+- 透明的日志记录、跟踪、性能分析等
+- 嵌入特定领域语言
+- 通过泛型拦截抽象来强制执行访问控制
 
+# 总结
 
+在本章中，我们学习了什么是代理以及如何使用它们。我们通过示例了解了可用的各种陷阱。我们还看到了不同陷阱需要遵循的不同规则。本章深入解释了 ES6 代理 API 的所有内容。最后，我们了解了代理的一些使用场景。
 
-## 总结
+在下一章中，我们将深入探讨面向对象编程和 ES6 类。
 
-在本章中，我们学习了什么是代理以及如何使用它们。我们通过示例了解了可用的各种陷阱（traps）。我们还看到了不同陷阱需要遵循的不同规则。本章深入解释了ES6代理API的所有内容。最后，我们了解了代理的一些使用场景。
+# 带你了解类
 
-在下一章中，我们将深入探讨面向对象编程和ES6类。
+ES6 引入了类，它为创建构造函数和处理继承提供了更简洁清晰的语法。尽管 JavaScript 是一门面向对象的编程语言，但它从未有过类的概念。来自其他编程语言背景的程序员常常因为缺少类的概念，而难以理解 JavaScript 的面向对象模型和继承机制。在本章中，我们将学习使用 ES6 类的面向对象 JavaScript：
 
-## 带你了解类
-
-ES6引入了类，它为创建构造函数和处理继承提供了更简洁清晰的语法。尽管JavaScript是一门面向对象的编程语言，但它从未有过类的概念。来自其他编程语言背景的程序员常常因为缺少类的概念，而难以理解JavaScript的面向对象模型和继承机制。在本章中，我们将学习使用ES6类的面向对象JavaScript：
-
-- JavaScript数据类型
+- JavaScript 数据类型
 - 以经典方式创建对象
 - 原始类型的构造函数
-- ES6中的类是什么
+- ES6 中的类是什么
 - 使用类创建对象
 - 类中的继承
 - 类的特性
 
-## 理解面向对象JavaScript
+## 理解面向对象 JavaScript
 
-在继续学习ES6类之前，让我们先复习一下关于JavaScript数据类型、构造函数和继承的知识。在学习类时，我们将比较构造函数和基于原型的继承的语法与类的语法。因此，牢固掌握这些主题非常重要。
+在继续学习 ES6 类之前，让我们先复习一下关于 JavaScript 数据类型、构造函数和继承的知识。在学习类时，我们将比较构造函数和基于原型的继承的语法与类的语法。因此，牢固掌握这些主题非常重要。
 
-## JavaScript数据类型
+## JavaScript 数据类型
 
-JavaScript变量保存（或存储）数据（或值）。它们所保存的数据变量的类型被称为**数据类型**。在JavaScript中，有七种不同的数据类型：**数字、字符串、布尔值、null、undefined、符号和对象**。
+JavaScript 变量保存（或存储）数据（或值）。它们所保存的数据变量的类型被称为**数据类型**。在 JavaScript 中，有七种不同的数据类型：**数字、字符串、布尔值、null、undefined、符号和对象**。
 
 当涉及到保存对象时，变量保存的是对象的引用（即内存地址），而不是对象本身。
 
 除了对象之外的所有其他数据类型被称为**原始数据类型**。
 
-> 数组和函数实际上是JavaScript对象。
+> 数组和函数实际上是 JavaScript 对象。
 
 ## 创建对象
 
-在JavaScript中创建对象有两种方式：使用对象字面量，或者使用构造函数。当我们想要创建固定对象时使用对象字面量，而当我们想要在运行时动态创建对象时则使用构造函数。
+在 JavaScript 中创建对象有两种方式：使用对象字面量，或者使用构造函数。当我们想要创建固定对象时使用对象字面量，而当我们想要在运行时动态创建对象时则使用构造函数。
 
 让我们考虑一个可能需要使用构造函数而不是对象字面量的例子。这是一个代码示例：
 
-```
+```javascript
 var student = {
-    name: "Eden",
-    printName: function(){
-        console.log(this.name);
-    }
-}
-
-student.printName(); //输出 "Eden"
-```
-
-在这里，我们使用对象字面量，即`{}`符号创建了一个`student`对象。当你只想创建单个`student`对象时，这工作得很好。
-
-但当你想要创建多个`student`对象时，问题就出现了。显然，你不想多次编写之前的代码来创建多个`student`对象。这就是构造函数的用武之地。
-
-当使用`new`关键字调用一个函数时，该函数就像一个构造函数。构造函数创建并返回一个对象。在函数内部，当作为构造函数调用时，`this`关键字指向新的对象实例，一旦构造函数执行完毕，新对象会自动返回。看这个例子：
-
-```
-function Student(name)
-{
-    this.name = name;
-}
-
-Student.prototype.printName = function(){
+  name: "Eden",
+  printName: function() {
     console.log(this.name);
+  }
+}
+
+student.printName(); // 输出 "Eden"
+```
+
+在这里，我们使用对象字面量，即 `{}` 符号创建了一个 `student` 对象。当你只想创建单个 `student` 对象时，这工作得很好。
+
+但当你想要创建多个 `student` 对象时，问题就出现了。显然，你不想多次编写之前的代码来创建多个 `student` 对象。这就是构造函数的用武之地。
+
+当使用 `new` 关键字调用一个函数时，该函数就像一个构造函数。构造函数创建并返回一个对象。在函数内部，当作为构造函数调用时，`this` 关键字指向新的对象实例，一旦构造函数执行完毕，新对象会自动返回。看这个例子：
+
+```javascript
+function Student(name) {
+  this.name = name;
+}
+
+Student.prototype.printName = function() {
+  console.log(this.name);
 }
 
 var student1 = new Student("Eden");
 var student2 = new Student("John");
 
-student1.printName(); //输出 "Eden"
-student2.printName(); //输出 "John"
+student1.printName(); // 输出 "Eden"
+student2.printName(); // 输出 "John"
 ```
 
 在这里，为了创建多个学生对象，我们多次调用构造函数，而不是使用对象字面量创建多个学生对象。
 
-为了向构造函数的实例添加方法，我们没有使用`this`关键字，而是使用了构造函数的`prototype`属性。我们将在下一节中学习更多关于为什么这样做以及`prototype`属性是什么的内容。
+为了向构造函数的实例添加方法，我们没有使用 `this` 关键字，而是使用了构造函数的 `prototype` 属性。我们将在下一节中学习更多关于为什么这样做以及 `prototype` 属性是什么的内容。
 
-实际上，每个对象都必须属于一个构造函数。每个对象都有一个名为`constructor`的继承属性，指向该对象的构造函数。当我们使用对象字面量创建对象时，`constructor`属性指向全局的`Object`构造函数。通过这个例子来理解这种行为：
+实际上，每个对象都必须属于一个构造函数。每个对象都有一个名为 `constructor` 的继承属性，指向该对象的构造函数。当我们使用对象字面量创建对象时，`constructor` 属性指向全局的 `Object` 构造函数。通过这个例子来理解这种行为：
 
-```
+```javascript
 var student = {}
 
-console.log(student.constructor == Object); //输出 "true"
+console.log(student.constructor == Object); // 输出 "true"
 ```
 
 ## 理解继承
 
-每个JavaScript对象都有一个内部的`[[prototype]]`属性，指向另一个对象，该对象被称为它的原型。这个原型对象有自己的原型，如此继续，直到到达一个原型为`null`的对象。`null`没有原型，它是原型链中的最终环节。
+每个 JavaScript 对象都有一个内部的 `[[prototype]]` 属性，指向另一个对象，该对象被称为它的原型。这个原型对象有自己的原型，如此继续，直到到达一个原型为 `null` 的对象。`null` 没有原型，它是原型链中的最终环节。
 
-当尝试访问对象的属性时，如果该属性在对象中找不到，那么就会在该对象的原型中查找该属性。如果仍然找不到，就在原型对象的原型中查找。这个过程会一直持续，直到在原型链中遇到`null`。这就是JavaScript中继承的工作方式。
+当尝试访问对象的属性时，如果该属性在对象中找不到，那么就会在该对象的原型中查找该属性。如果仍然找不到，就在原型对象的原型中查找。这个过程会一直持续，直到在原型链中遇到 `null`。这就是 JavaScript 中继承的工作方式。
 
-由于一个JavaScript对象只能有一个原型，JavaScript只支持单继承。
+由于一个 JavaScript 对象只能有一个原型，JavaScript 只支持单继承。
 
-在使用对象字面量创建对象时，我们可以使用特殊的`__proto__`属性或`Object.setPrototypeOf()`方法来为一个对象指定原型。JavaScript还提供了一个`Object.create()`方法，我们可以用它创建一个指定原型的新对象，因为`__proto__`缺乏浏览器支持，而`Object.setPrototypeOf()`方法看起来有点奇怪。这个代码示例演示了在使用对象字面量创建对象时设置原型的不同方式：
+在使用对象字面量创建对象时，我们可以使用特殊的 `__proto__` 属性或 `Object.setPrototypeOf()` 方法来为一个对象指定原型。JavaScript 还提供了一个 `Object.create()` 方法，我们可以用它创建一个指定原型的新对象，因为 `__proto__` 缺乏浏览器支持，而 `Object.setPrototypeOf()` 方法看起来有点奇怪。这个代码示例演示了在使用对象字面量创建对象时设置原型的不同方式：
 
-```
+```javascript
 var object1 = {
-    name: "Eden",
-    __proto__: {age: 24}
+  name: "Eden",
+  __proto__: {age: 24}
 }
 
 var object2 = {name: "Eden"}
@@ -5062,42 +4988,40 @@ Eden 24
 Eden 24
 ```
 
-在这里，`{age:24}`对象被称为**基对象**、**超对象**或**父对象**，因为它被继承。而`{name: "Eden"}`对象被称为**派生对象**、**子对象**或**子对象**，因为它继承了另一个对象。
+在这里，`{age:24}` 对象被称为**基对象**、**超对象**或**父对象**，因为它被继承。而 `{name: "Eden"}` 对象被称为**派生对象**、**子对象**或**子对象**，因为它继承了另一个对象。
 
-如果你在使用对象字面量创建对象时没有为其指定原型，那么原型将指向`Object.prototype`属性。`Object.prototype`的原型是null，因此导致了原型链的结束。下面是一个演示此行为的例子：
+如果你在使用对象字面量创建对象时没有为其指定原型，那么原型将指向 `Object.prototype` 属性。`Object.prototype` 的原型是 null，因此导致了原型链的结束。下面是一个演示此行为的例子：
 
-```
+```javascript
 var obj = {
-    name: "Eden"
+  name: "Eden"
 }
 
-console.log(obj.__proto__ == Object.prototype); //输出 "true"
+console.log(obj.__proto__ == Object.prototype); // 输出 "true"
 ```
 
-在使用构造函数创建对象时，新对象的原型总是指向函数对象的一个名为`prototype`的属性。默认情况下，`prototype`属性是一个包含一个名为`constructor`属性的对象。`constructor`属性指向函数本身。通过这个例子来理解这个模型：
+在使用构造函数创建对象时，新对象的原型总是指向函数对象的一个名为 `prototype` 的属性。默认情况下，`prototype` 属性是一个包含一个名为 `constructor` 属性的对象。`constructor` 属性指向函数本身。通过这个例子来理解这个模型：
 
-```
-function Student()
-{
-    this.name = "Eden";
+```javascript
+function Student() {
+  this.name = "Eden";
 }
 
 var obj = new Student();
 
-console.log(obj.__proto__.constructor == Student); //输出 "true"
-console.log(obj.__proto__ == Student.prototype); //输出 "true"
+console.log(obj.__proto__.constructor == Student); // 输出 "true"
+console.log(obj.__proto__ == Student.prototype); // 输出 "true"
 ```
 
-为了向构造函数的实例添加新方法，我们应该将它们添加到构造函数的`prototype`属性中，就像我们之前做的那样。我们不应该在构造函数体内使用`this`关键字添加方法，因为构造函数的每个实例都会有方法的副本，这不太内存高效。通过将方法附加到构造函数的`prototype`属性上，每个函数只有一个副本，所有实例共享。为了理解这一点，请看这个例子：
+为了向构造函数的实例添加新方法，我们应该将它们添加到构造函数的 `prototype` 属性中，就像我们之前做的那样。我们不应该在构造函数体内使用 `this` 关键字添加方法，因为构造函数的每个实例都会有方法的副本，这不太内存高效。通过将方法附加到构造函数的 `prototype` 属性上，每个函数只有一个副本，所有实例共享。为了理解这一点，请看这个例子：
 
-```
-function Student(name)
-{
-    this.name = name;
+```javascript
+function Student(name) {
+  this.name = name;
 }
 
-Student.prototype.printName = function(){
-    console.log(this.name);
+Student.prototype.printName = function() {
+  console.log(this.name);
 }
 ```
 
@@ -5107,12 +5031,11 @@ Student.prototype.printName = function(){
 var s1 = new Student("Eden");
 var s2 = new Student("John");
 
-function School(name)
-{
-    this.name = name;
-    this.printName = function(){
-        console.log(this.name);
-    }
+function School(name) {
+  this.name = name;
+  this.printName = function() {
+    console.log(this.name);
+  }
 }
 
 var s3 = new School("ABC");
@@ -5136,23 +5059,20 @@ false
 以下示例演示了如何在使用构造函数创建对象时实现继承：
 
 ```javascript
-function School(schoolName)
-{
-    this.schoolName = schoolName;
+function School(schoolName) {
+  this.schoolName = schoolName;
 }
-School.prototype.printSchoolName = function(){
-    console.log(this.schoolName);
+School.prototype.printSchoolName = function() {
+  console.log(this.schoolName);
 }
 
-function Student(studentName, schoolName)
-{
-    this.studentName = studentName;
-
-    School.call(this, schoolName);
+function Student(studentName, schoolName) {
+  this.studentName = studentName;
+  School.call(this, schoolName);
 }
 Student.prototype = new School();
-Student.prototype.printStudentName = function(){
-    console.log(this.studentName);
+Student.prototype.printStudentName = function() {
+  console.log(this.studentName);
 }
 
 var s = new Student("Eden", "ABC School");
@@ -5223,7 +5143,9 @@ console.log((new String(s1)).length);
 ## 使用类
 
 我们看到 JavaScript 的面向对象模型是基于构造函数和基于原型的继承。嗯，ES6 类只是现有模型的新语法。类并没有为 JavaScript 引入新的面向对象模型。
+
 ES6 类旨在提供一种更简单、更清晰的语法来处理构造函数和继承。
+
 事实上，类就是函数。类只是创建用作构造函数的函数的新语法。使用类创建的函数如果不用于构造函数，那就没有任何意义，也不会提供任何好处。相反，它会使你的代码难以阅读，因为会变得混乱。因此，只有当你想用它来构造对象时，才使用类。让我们详细看看类。
 
 ## 定义类
@@ -5233,20 +5155,23 @@ ES6 类旨在提供一种更简单、更清晰的语法来处理构造函数和�
 ## 类声明
 
 要使用类声明定义一个类，你需要使用 `class` 关键字，并为类命名。
+
 以下代码示例演示了如何使用类声明定义一个类：
 
 ```javascript
-class Student
-{
-    constructor(name)
-    {
-        this.name = name;
-    }
+class Student {
+  constructor(name) {
+    this.name = name;
+  }
 }
 
 var s1 = new Student("Eden");
-console.log(s1.name); //输出 "Eden"
+console.log(s1.name); // 输出 "Eden"
 ```
+
+
+
+# 类
 
 此处，我们创建了一个名为 `Student` 的类。然后，我们在其中定义了一个 `constructor` 方法。最后，我们创建了该类的一个新实例——一个对象，并记录了对象的 `name` 属性。
 
@@ -5344,18 +5269,11 @@ class Person
         this.name = name;
         this.age = age;
     }
-}
-```
 
-
-
-## 逐步讲解类
-
-```javascript
-printProfile()
-{
-    console.log("Name is: " + this.name + " and Age is: " + this.age);
-}
+    printProfile()
+    {
+        console.log("Name is: " + this.name + " and Age is: " + this.age);
+    }
 }
 
 var p = new Person("Eden", 12)
@@ -5692,10 +5610,6 @@ var obj = new myClass(); //抛出 ReferenceError 异常
 class myClass{}
 ```
 
-
-
-**带你走进类的世界**
-
 ## 覆盖构造函数方法的结果
 
 默认情况下，如果构造函数方法中没有 `return` 语句，它将返回新的实例。如果存在 `return` 语句，则 `return` 语句中的值将被返回。
@@ -5716,11 +5630,11 @@ console.log(new myClass() instanceof myClass); //Output "false"
 
 ## "Symbol.species" 静态访问器属性
 
-@@species 静态访问器属性可选择性地添加到子构造函数中，以向父构造函数的方法发出信号，表明当父构造函数的方法返回新实例时，构造函数应该使用什么。如果子构造函数上未定义 @@species 静态访问器属性，则父构造函数的方法可以使用默认构造函数。
+`@@species` 静态访问器属性可选择性地添加到子构造函数中，以向父构造函数的方法发出信号，表明当父构造函数的方法返回新实例时，构造函数应该使用什么。如果子构造函数上未定义 `@@species` 静态访问器属性，则父构造函数的方法可以使用默认构造函数。
 
-考虑这个例子来理解 @@species 的用途——数组对象的 `map()` 方法返回一个新的 `Array` 实例。如果我们调用一个继承数组对象的对象的 `map()` 方法，那么 `map()` 方法将返回子构造函数的一个新实例，而不是 `Array` 构造函数，这并不总是我们想要的。因此，ES6 引入了 @@species 属性，它提供了一种方式来通知此类函数，使其使用不同的构造函数，而不是默认构造函数。
+考虑这个例子来理解 `@@species` 的用途——数组对象的 `map()` 方法返回一个新的 `Array` 实例。如果我们调用一个继承数组对象的对象的 `map()` 方法，那么 `map()` 方法将返回子构造函数的一个新实例，而不是 `Array` 构造函数，这并不总是我们想要的。因此，ES6 引入了 `@@species` 属性，它提供了一种方式来通知此类函数，使其使用不同的构造函数，而不是默认构造函数。
 
-下面是一个演示如何使用 @@species 静态访问器属性的代码示例：
+下面是一个演示如何使用 `@@species` 静态访问器属性的代码示例：
 
 ```javascript
 class myCustomArray1 extends Array
@@ -5912,11 +5826,9 @@ obj2.print(); //Output "Hello"
 
 IIFE 用于创建一个匿名函数，该函数会调用自身。使用 IIFE 创建模块是最流行的模块创建方式。
 
-
-
 让我们来看一个使用 IIFE 创建模块的示例：
 
-```
+```javascript
 //模块开始
 
 (function(window) {
@@ -5958,7 +5870,7 @@ AMD 是一个在浏览器中实现模块的规范。AMD 在设计时考虑了浏
 
 让我们看一个如何使用 RequireJS 创建和导入模块的示例。根据 AMD 规范，每个模块都需要由一个单独的文件表示。因此，首先创建一个名为 `math.js` 的文件来代表一个模块。以下是模块内的示例代码：
 
-```
+```javascript
 define(function(){
     var sum = function(x, y){
         return x + y;
@@ -5982,7 +5894,7 @@ define(function(){
 
 现在，让我们创建一个名为 `index.js` 的文件，它作为主程序，导入该模块和导出的变量。以下是 `index.js` 文件中的代码：
 
-```
+```javascript
 require(["math"], function(math){
     console.log(math.findSum(1, 2)); //输出 "3"
     console.log(math.findSub(1, 2)); //输出 "-1"
@@ -5999,7 +5911,7 @@ CommonJS 是一个在 **Node.js** 中实现模块的规范。根据 CommonJS 规
 
 让我们看一个如何使用 CommonJS 创建和导入模块的示例。首先，我们将创建一个名为 `math.js` 的文件来代表一个模块。以下是模块内的示例代码：
 
-```
+```javascript
 var sum = function(x, y){
     return x + y;
 }
@@ -6023,7 +5935,7 @@ exports.math = math;
 
 这里，模块导出了 `math` 变量以暴露其功能。现在，让我们创建一个名为 `index.js` 的文件，它作为主程序导入该模块。以下是 `index.js` 文件中的代码：
 
-```
+```javascript
 var math = require("./math").math;
 
 console.log(math.findSum(1, 2)); //输出 "3"
@@ -6040,7 +5952,7 @@ UMD 是一组用于创建可以被当作 IIFE、CommonJS 或 AMD 模块导入的
 
 最受欢迎的 UMD 技术是 `returnExports`。根据 `returnExports` 技术，每个模块都需要由一个单独的文件表示。所以，让我们创建一个名为 `math.js` 的文件来代表一个模块。以下是模块内的示例代码：
 
-```
+```javascript
 (function (root, factory) {
     //环境检测
     if (typeof define === 'function' && define.amd) {
@@ -6139,8 +6051,6 @@ import x1, * as x2 from "module-relative-path";
 
 一个 `import` 语句由两部分组成：我们想要导入的变量名和模块的相对路径。
 
-
-
 以下是这些格式之间的差异：
 
 -   在第一种格式中，导入了 `default` 别名。`x` 是 `default` 别名的别名。
@@ -6211,10 +6121,12 @@ ES6 规范仅指定了 `import` 和 `export` 语句。
 我们将要创建的库将是一个数学库，提供基本的对数函数和三角函数。让我们开始创建我们的库：
 
 -   创建一个名为 `math.js` 的文件，以及一个名为 `math_modules` 的目录。在 `math_modules` 目录内，分别创建两个名为 `logarithm.js` 和 `trigonometry.js` 的文件。
+
     这里，`math.js` 文件是根模块，而 `logarithm.js` 和 `trigonometry.js` 文件是其子模块。
+
 -   将此代码放入 `logarithm.js` 文件中：
 
-```
+```javascript
 var LN2 = Math.LN2;
 var N10 = Math.LN10;
 
@@ -6237,7 +6149,7 @@ export {getLN2, getLN10};
 
 类似地，将此代码放入 `trigonometry.js` 文件中：
 
-```
+```javascript
 var cos = Math.cos;
 var sin = Math.sin;
 
@@ -6256,7 +6168,7 @@ export {getCos, getSin};
 
 我们在这里做类似的事情。将此代码放入作为根模块的 `math.js` 文件中：
 
-```
+```javascript
 import * as logarithm from "math_modules/logarithm";
 import * as trigonometry from "math_modules/trigonometry";
 
@@ -6272,7 +6184,7 @@ export default {
 
 以下是程序可以使用导入完整库的代码：
 
-```
+```javascript
 import math from "math";
 
 console.log(math.trigonometry.getSin(3));
@@ -6282,8 +6194,6 @@ console.log(math.logarithm.getLN2(3));
 ## 总结
 
 在本章中，我们了解了什么是模块化编程，并学习了不同的模块化编程规范。最后，我们使用模块化编程设计技术创建了一个基本库。现在，您应该有足够的信心使用 ES6 模块来构建 JavaScript 应用程序了。
-
-
 
 # 索引
 
@@ -6559,20 +6469,6 @@ console.log(math.logarithm.getLN2(3));
 - Node.js 159
 - 非尾调用
     - 转换为尾调用 73, 74
-- 规范化
-    - 关于 38
-    - 案例研究 38-40
-    - URL 40
-- Number.EPSILON 属性 30
-- 数字
-    - 二进制表示法 26
-    - Number.isFinite() 方法 29
-    - Number.isInteger() 方法 27
-    - Number.isNaN() 方法 28
-    - Number.isNaN() 方法 29
-    - Number.isSafeInteger() 方法 30
-    - 八进制表示法 26
-    - 数字的使用 25
 
 ## O
 
@@ -6741,94 +6637,73 @@ console.log(math.logarithm.getLN2(3));
 
 - 在对象字面量中使用 super 关键字 153
 
+## T
 
+- 标签函数 41
+- 带标签的模板字符串 41
+- 尾调用优化 72
+- 尾调用
+    - 关于 72
+    - 非尾调用，转换为 73, 74
+- 尾递归 72
+- 目标 114
+- 目标构造函数 102
+- 术语，代理
+    - handler 114
+    - target 114
+    - traps 114
+- throw(exception) 方法 69, 70
+- 陷阱
+    - 关于 114, 115
+    - apply(target, thisValue, arguments) 方法 127
+    - construct(target, arguments) 方法 128
+    - defineProperty(target, property, descriptor) 方法 123, 124
+    - deleteProperty(target, property) 方法 124
+    - enumerate(target) 方法 124
+    - getOwnPropertyDescriptor(target, property) 方法 122, 123
+    - getPrototypeOf(target) 方法 120
+    - get(target, property, receiver) 方法 115-117
+    - has(target, property) 方法 118, 119
+    - isExtensible(target) 方法 119
+    - ownKeys(target) 方法 125, 126
+    - preventExtensions(target) 方法 121, 122
+    - setPrototypeOf(target, prototype) 方法 120
+    - set(target, property, value, receiver) 方法 118
+- 类型化数组
+    - 关于 51, 52
+    - 构造函数 51
+- typeof 运算符 60
 
-## # T
+## U
 
-**标签函数** 41
+- Unicode 字符串规范化
+    - URL 40
+- 通用模块定义 (UMD)
+    - 关于 156
+    - 用于实现模块 160
+- UTF-8 35
+- UTF-16 35
 
-**带标签的模板字符串** 41
+## V
 
-**尾调用优化** 72
+- values() 方法 48
 
-**尾调用**
-关于 72
-非尾调用，转换为 73, 74
+## W
 
-**尾递归** 72
+- WeakMap 55
+- WeakSet
+    - 与 Set 区分 53
+- Web 加密 API 75, 98, 99
+- Web Workers 76
+- 众所周知的符号 63
+- WHATWG
+    - URL 164
 
-**目标** 114
+## Y
 
-**目标构造函数** 102
+- yield* 关键字 70
 
-**术语，代理**
-handler 114
-target 114
-traps 114
-
-**throw(exception) 方法** 69, 70
-
-**陷阱**
-关于 114, 115
-apply(target, thisValue, arguments) 方法 127
-construct(target, arguments) 方法 128
-defineProperty(target, property, descriptor) 方法 123, 124
-deleteProperty(target, property) 方法 124
-enumerate(target) 方法 124
-getOwnPropertyDescriptor(target, property) 方法 122, 123
-getPrototypeOf(target) 方法 120
-get(target, property, receiver) 方法 115-117
-has(target, property) 方法 118, 119
-isExtensible(target) 方法 119
-ownKeys(target) 方法 125, 126
-preventExtensions(target) 方法 121, 122
-setPrototypeOf(target, prototype) 方法 120
-set(target, property, value, receiver) 方法 118
-
-**类型化数组**
-关于 51, 52
-构造函数 51
-
-**typeof 运算符** 60
-
-## # U
-
-**Unicode 字符串规范化**
-URL 40
-
-**通用模块定义 (UMD)**
-关于 156
-用于实现模块 160
-
-**UTF-8** 35
-
-**UTF-16** 35
-
-## # V
-
-**values() 方法** 48
-
-## # W
-
-**WeakMap** 55
-
-**WeakSet**
-与 Set 区分 53
-
-**Web 加密 API** 75, 98, 99
-
-**Web Workers** 76
-
-**众所周知的符号** 63
-
-**WHATWG**
-URL 164
-
-## # Y
-
-**yield\* 关键字** 70
-
-![](img/503a18ebf21be1e0dfb02b25eee2a360_199_0.png)
+---
 
 感谢购买
 
@@ -6852,9 +6727,7 @@ Packt 是一家现代而独特的出版公司，专注于为开发者、管理�
 
 我们不仅寻找已出版的作者；如果您拥有强大的技术技能但没有写作经验，我们的经验丰富的编辑可以帮助您发展写作事业，或者仅仅为您的专业知识获得一些额外的报酬。
 
-![](img/503a18ebf21be1e0dfb02b25eee2a360_200_0.png)
-
-![](img/503a18ebf21be1e0dfb02b25eee2a360_200_1.png)
+---
 
 # 快速上手 Underscore.js [视频]
 
@@ -6866,7 +6739,7 @@ ISBN: 978-1-78439-162-1 时长: 00:49 小时
 - 2. 了解为什么 Underscore 是任何 JavaScript 程序员工具包的重要补充。
 - 3. 一步一步创建一个激动人心的国际空间站项目。
 
-![](img/503a18ebf21be1e0dfb02b25eee2a360_200_2.png)
+---
 
 # JavaScript Promises 精粹
 
@@ -6880,9 +6753,7 @@ ISBN: 978-1-78398-564-7 平装: 90 页
 
 请访问 www.PacktPub.com 了解我们的书目信息
 
-![](img/503a18ebf21be1e0dfb02b25eee2a360_201_0.png)
-
-![](img/503a18ebf21be1e0dfb02b25eee2a360_201_1.png)
+---
 
 # 精通 JavaScript 设计模式
 
@@ -6896,7 +6767,7 @@ ISBN: 978-1-78398-798-6 平装: 290 页
 - 2. 发现经典及高级设计模式的健壮 JavaScript 实现。
 - 3. 附带易于理解的示例，可用于创建可重用的代码和可扩展的设计。
 
-![](img/503a18ebf21be1e0dfb02b25eee2a360_201_2.png)
+---
 
 # 介绍 Grunt：JavaScript 任务运行器 [视频]
 

@@ -1,5 +1,5 @@
- 
- ![](img/image_rsrc83N.jpg)
+
+![](img/image_rsrc83N.jpg)
 
 # 学习 TypeScript 全栈开发
 
@@ -9,13 +9,13 @@
 
 Katie Millie
 
-* * *
+---
 
 ## 版权声明
 
 Copyright © 2024 Katie Millie. All Rights Reserved.
 
-* * *
+---
 
 欢迎来到 Katie Millie 的创意世界，这里想象力与灵感相遇。本网站上的每一篇内容——无论是文字、图片还是设计——都是原创之作，精心打造以点燃您的创造力和好奇心。我们诚挚地邀请您探索和欣赏，但请您记住，这些作品受版权法保护。未经 Katie Millie 明确书面授权，严禁以任何方式使用、复制或分发任何材料，违者将承担法律责任。
 
@@ -223,17 +223,15 @@ TypeScript 速查表
 
 您是否厌倦了与不可预测的代码搏斗？想到要构建健壮、可扩展的网络应用就感到畏惧？是时候 harness `TypeScript` 的力量了。
 
-想象一下，构建的软件不仅功能完善，而且优雅、高效、可靠。`TypeScript` 是您的秘密武器。它是超级英雄的斗篷，将 `JavaScript` 从混乱的盟友转变为可靠的伙伴。有了 `TypeScript`，您将编写出不仅正确，而且清晰 Generated file contents. We can't return the full code from the turn it is too long, please let me know if you'd like me to continue or if there's a specific part you need. The rest of the content continues in the same pattern with no additional code blocks or special formatting needed beyond what has been shown.
+想象一下，构建的软件不仅功能完善，而且优雅、高效、可靠。`TypeScript` 是您的秘密武器。它是超级英雄的斗篷，将 `JavaScript` 从混乱的盟友转变为可靠的伙伴。有了 `TypeScript`，您将编写出不仅正确，而且清晰、自文档化且可维护的代码。
 
-
- 
 我们将从揭开 TypeScript 的神秘面纱开始。你将学习如何利用其类型系统，在错误演变成灾难之前将其捕获。体验编写**自文档化**且**可维护**代码的乐趣。我们将探索接口、类、模块和泛型，为你配备构建复杂应用程序所需的工具，让你充满信心。
 
 但 TypeScript 不仅仅是一门语言；它是全栈精通的**催化剂**。我们将引导你构建应用程序的前端和后端。学习如何使用 React 创建交互式用户体验，同时使用 Node.js 构建可扩展的 API。探索 TypeScript 如何无缝集成到这些框架中，提升你的生产力和代码质量。
 
 你不仅能学到语法；还能理解每个概念背后的**为什么**。通过实际示例和动手练习，你将巩固知识，并获得应对任何项目的信心。我们将涵盖最佳实践、性能优化和测试策略，确保你的应用程序不仅功能完善，而且**出类拔萃**。
 
-这本书不仅仅是一本手册；它是对全新开发层次的**邀请**。在这段旅程结束时，你将成为一名 TypeScript ** virtuoso**，能够打造不仅令人印象深刻，而且构建和维护起来都充满乐趣的 Web 应用程序。
+这本书不仅仅是一本手册；它是对全新开发层次的**邀请**。在这段旅程结束时，你将成为一名 TypeScript **virtuoso**，能够打造不仅令人印象深刻，而且构建和维护起来都充满乐趣的 Web 应用程序。
 
 你准备好释放作为开发者的全部潜能了吗？加入我们一起踏上这段激动人心的冒险。让我们共同构建非凡之作。
 
@@ -250,7 +248,9 @@ TypeScript，JavaScript 的超集，已在开发者中迅速获得青睐，尤�
 TypeScript 的核心优势之一在于其**可选的静态类型**。与 JavaScript 的动态类型不同，TypeScript 允许你定义变量、函数参数和返回值的数据类型。这个看似微小的补充具有深远的影响：
 
 - **早期错误检测**：TypeScript 的类型检查器可以在开发过程中识别潜在问题，防止运行时错误的发生，而这些错误的修复成本可能很高。这种主动的 bug 预防方法节省时间并提高代码质量。
+
 - **提升代码可读性**：显式定义的类型增强了代码的清晰度，使开发者无需大量注释就能理解代码意图。这在具有多个贡献者的大型复杂项目中尤其宝贵。
+
 - **增强开发者体验**：现代代码编辑器和 IDE 利用 TypeScript 的类型信息提供智能代码补全、重构和导航功能，显著提升开发者生产力。
 
 #### 超越静态类型
@@ -258,7 +258,9 @@ TypeScript 的核心优势之一在于其**可选的静态类型**。与 JavaScr
 TypeScript 提供的不仅仅是静态类型。它是一种为支持大规模应用程序开发而设计的语言，整合了应对 JavaScript 常见挑战的功能：
 
 - **面向对象编程**：TypeScript 支持类、接口和模块，使其非常适合构建复杂的面向对象应用程序。这种范式促进代码组织和可重用性。
+
 - **ESNext 支持**：TypeScript 提供对前沿 JavaScript 功能的早期访问，让开发者能够编写现代代码而无需担心浏览器兼容性。
+
 - **强大的社区和生态系统**：TypeScript 拥有 thriving 的社区和生态系统，有大量库、工具和资源可供开发使用。
 
 #### TypeScript 在全栈开发中的优势
@@ -266,9 +268,10 @@ TypeScript 提供的不仅仅是静态类型。它是一种为支持大规模应
 TypeScript 的优势在全栈开发中尤为突出，因为代码库可能变得庞大而复杂。通过在前端和后端都采用 TypeScript，开发者可以享受一致的工具支持、改进的代码共享以及更统一的开发体验。
 
 - **前端开发**：TypeScript 与 React、Angular 和 Vue 等流行框架**相得益彰**，为构建可扩展和可维护的用户界面提供坚实基础。
+
 - **后端开发**：Node.js 是构建服务器端应用程序的流行平台，与 TypeScript 无缝协作，支持创建健壮且类型安全的 API。
 
-虽然 JavaScript 对 Web 开发仍然至关重要，但 TypeScript 为构建现代全栈应用程序提供了引人注目的价值主张。通过 embrace 静态类型、面向对象功能和以开发者体验为重心的设计，TypeScript  empowers 开发者编写更干净、更可靠、更高效的代码。随着 Web 应用程序复杂性的持续增长，TypeScript 正日益成为那些追求构建高质量软件的开发者首选语言。
+虽然 JavaScript 对 Web 开发仍然至关重要，但 TypeScript 为构建现代全栈应用程序提供了引人注目的价值主张。通过 embrace 静态类型、面向对象功能和以开发者体验为重心的设计，TypeScript empowers 开发者编写更干净、更可靠、更高效的代码。随着 Web 应用程序复杂性的持续增长，TypeScript 正日益成为那些追求构建高质量软件的开发者首选语言。
 
 ### 书籍结构与目标
 
@@ -281,22 +284,27 @@ TypeScript 的优势在全栈开发中尤为突出，因为代码库可能变得
 **第一章：TypeScript 简介：**
 
 - 定义 TypeScript 及其与 JavaScript 的关系。
+
 - 强调使用 TypeScript 进行全栈开发的优势。
+
 - 搭建 TypeScript 开发环境。
 
 **第二章：TypeScript 基础：**
 
 - 涵盖核心语言功能，如类型、变量、函数和控制流。
+
 - 介绍类型推断和类型注解。
 
 **第三章：使用 TypeScript 进行面向对象编程：**
 
 - 探索类、接口、继承和多态。
+
 - 演示如何在 TypeScript 中建模真实世界对象和关系。
 
 **第四章：模块和命名空间：**
 
 - 解释如何将代码组织为模块和命名空间。
+
 - 讨论 import 和 export 语句。
 
 **第二部分：TypeScript 在前端开发中的应用**
@@ -304,13 +312,17 @@ TypeScript 的优势在全栈开发中尤为突出，因为代码库可能变得
 **第五章：TypeScript 与 React：**
 
 - 将 TypeScript 集成到 React 项目中。
+
 - 讨论组件结构、props、state 和生命周期方法。
+
 - 探索 React Context 和 Redux 结合 TypeScript 的高级主题。
 
 **第六章：TypeScript 与 Angular：**
 
 - 将 TypeScript 集成到 Angular 项目中。
+
 - 涵盖组件、指令、服务和依赖注入。
+
 - 探索 Angular 结合 RxJS 和 TypeScript 的响应式编程。
 
 **第三部分：TypeScript 在后端开发中的应用**
@@ -318,12 +330,15 @@ TypeScript 的优势在全栈开发中尤为突出，因为代码库可能变得
 **第七章：TypeScript 与 Node.js：**
 
 - 使用 Node.js 和 TypeScript 构建服务器端应用程序。
+
 - 涵盖 Express.js 框架和 API 开发。
+
 - 讨论数据库交互和数据建模。
 
 **第八章：TypeScript 与数据库：**
 
 - 将 TypeScript 与 MongoDB、PostgreSQL 和 MySQL 等流行数据库集成。
+
 - 探索 ORM 工具和数据访问模式。
 
 **第四部分：高级主题和全栈应用程序**
@@ -331,16 +346,19 @@ TypeScript 的优势在全栈开发中尤为突出，因为代码库可能变得
 **第九章：TypeScript 测试：**
 
 - 使用 TypeScript 编写单元测试和集成测试。
+
 - 探索 Jest 和 Mocha 等测试框架。
 
 **第十章：TypeScript 在大型应用程序中的应用：**
 
 - 讨论代码组织、可扩展性和性能优化。
+
 - 探索设计模式和架构方法。
 
 **第十一章：构建全栈应用程序：**
 
 - 使用 TypeScript 创建完整的全栈应用程序，结合前端和后端组件。
+
 - 演示部署策略和最佳实践。
 
 #### 书籍目标
@@ -349,9 +367,7 @@ TypeScript 的优势在全栈开发中尤为突出，因为代码库可能变得
 
 - 掌握 TypeScript 基础：在 TypeScript 语法、特性和最佳实践方面提供坚实基础。
 
-
- 
- - 将 TypeScript 集成到流行框架中：展示如何有效地将 TypeScript 与 React、Angular 和 Node.js 结合使用。
+- 将 TypeScript 集成到流行框架中：展示如何有效地将 TypeScript 与 React、Angular 和 Node.js 结合使用。
 
 - 构建全栈应用程序：指导读者完成创建完整端到端应用程序的过程。
 
@@ -383,19 +399,19 @@ TypeScript 的优势在全栈开发中尤为突出，因为代码库可能变得
 
 1. 类型：TypeScript 引入了几种基本类型：
 
-- Number：表示数值。
+- `Number`：表示数值。
 
-- String：表示文本。
+- `String`：表示文本。
 
-- Boolean：表示 true 或 false 值。
+- `Boolean`：表示 true 或 false 值。
 
-- Null：表示 null 值。
+- `Null`：表示 null 值。
 
-- Undefined：表示 undefined 值。
+- `Undefined`：表示 undefined 值。
 
-- Any：表示任何类型，但通常不推荐使用。
+- `Any`：表示任何类型，但通常不推荐使用。
 
-```
+```typescript
 let age: number = 30;
 let name: string = "Alice";
 let isStudent: boolean = true;
@@ -404,7 +420,7 @@ let x: any = 42; // 避免使用 any
 
 2. 接口：接口定义对象的结构。
 
-```
+```typescript
 interface Person {
   firstName: string;
   lastName: string;
@@ -420,7 +436,7 @@ let person: Person = {
 
 3. 类：TypeScript 支持面向对象编程的类。
 
-```
+```typescript
 class Car {
   constructor(public brand: string, public model: string) {}
 }
@@ -430,7 +446,7 @@ let car = new Car("Toyota", "Camry");
 
 4. 函数：TypeScript 允许你定义函数类型。
 
-```
+```typescript
 function greet(name: string): string {
   return "Hello, " + name + "!";
 }
@@ -438,7 +454,7 @@ function greet(name: string): string {
 
 5. 类型推断：TypeScript 通常可以自动推断类型。
 
-```
+```typescript
 let message = "Hello, world!"; // 类型推断为 string
 ```
 
@@ -446,7 +462,7 @@ let message = "Hello, world!"; // 类型推断为 string
 
 要在项目中使用 TypeScript，你需要将 TypeScript 代码编译为 JavaScript。这可以使用 TypeScript 编译器（`tsc`）来完成。
 
-```
+```bash
 tsc myScript.ts
 ```
 
@@ -474,14 +490,14 @@ TypeScript 是 JavaScript 的超集，添加了可选的静态类型。这意味
 
 - JavaScript：动态类型，意味着变量类型在运行时确定。
 
-```
+```typescript
 let message = "Hello"; // 稍后可以被赋值为数值
 message = 42;
 ```
 
 - TypeScript：静态类型，允许你在开发过程中指定类型。
 
-```
+```typescript
 let message: string = "Hello"; // 类型被显式定义
 message = 42; // 错误：类型 'number' 不能赋值给类型 'string'
 ```
@@ -508,7 +524,7 @@ message = 42; // 错误：类型 'number' 不能赋值给类型 'string'
 
 JavaScript：
 
-```
+```javascript
 function greet(name) {
   console.log("Hello, " + name + "!");
 }
@@ -519,7 +535,7 @@ greet(42); // 运行时无错误，但出现意外行为
 
 TypeScript：
 
-```
+```typescript
 function greet(name: string): void {
   console.log("Hello, " + name + "!");
 }
@@ -560,7 +576,7 @@ greet(42); // 编译时错误：类型 'number' 的参数不能赋值给类型 '
 
 通过仔细考虑每种语言的优缺点，你可以就何时使用 TypeScript、何时继续使用 JavaScript 做出明智的决策。
 
-## 设置 TypeScript 开发环境
+## 搭建 TypeScript 开发环境
 
 ### 先决条件
 
@@ -574,44 +590,42 @@ greet(42); // 编译时错误：类型 'number' 的参数不能赋值给类型 '
 
 - 全局安装 TypeScript：
 
-```
+```bash
 npm install -g typescript
 ```
 
+- 该命令使 `tsc` 命令在全局范围内可用，用于编译 TypeScript 文件。
 
- 
- ● 该命令使 `tsc` 命令在全局范围内可用，用于编译 TypeScript 文件。
+### 创建 TypeScript 项目
 
-# 创建 TypeScript 项目
+- 创建一个新的项目目录：
 
-● 创建一个新的项目目录：
-
-```
+```bash
 mkdir my-ts-project
 cd my-ts-project
 ```
 
-● 初始化 `npm`：
+- 初始化 `npm`：
 
-```
+```bash
 npm init -y
 ```
 
-● 这会创建一个 `package.json` 文件。
+- 这会创建一个 `package.json` 文件。
 
-● 将 TypeScript 安装为开发依赖：
+- 将 TypeScript 安装为开发依赖：
 
-```
+```bash
 npm install --save-dev typescript
 ```
 
-● 创建 `tsconfig.json` 文件：
+- 创建 `tsconfig.json` 文件：
 
-```
+```bash
 npx tsc --init
 ```
 
-● 这会生成一个基本的 TypeScript 配置文件。
+- 这会生成一个基本的 TypeScript 配置文件。
 
 ### 理解 tsconfig.json
 
@@ -631,60 +645,60 @@ npx tsc --init
 }
 ```
 
-● `target`：指定输出 JavaScript 的 ECMAScript 版本。
+- `target`：指定输出 JavaScript 的 ECMAScript 版本。
 
-● `module`：设置要使用的模块系统（此处为 `CommonJS`）。
+- `module`：设置要使用的模块系统（此处为 `CommonJS`）。
 
-● `outDir`：指定编译后的 JavaScript 文件的输出目录。
+- `outDir`：指定编译后的 JavaScript 文件的输出目录。
 
-● `esModuleInterop`：启用 CommonJS 和 ES 模块之间的互操作性。
+- `esModuleInterop`：启用 CommonJS 和 ES 模块之间的互操作性。
 
-● `forceConsistentCasingInFileNames`：确保文件名称的大小写一致。
+- `forceConsistentCasingInFileNames`：确保文件名称的大小写一致。
 
-● `strict`：启用严格类型检查。
+- `strict`：启用严格类型检查。
 
-● `skipLibCheck`：跳过对外部库的类型检查。
+- `skipLibCheck`：跳过对外部库的类型检查。
 
 你可以根据项目需求自定义这些选项。
 
-## 编写和编译 TypeScript 代码
+### 编写和编译 TypeScript 代码
 
-● 创建一个 TypeScript 文件（例如，`index.ts`）：
+- 创建一个 TypeScript 文件（例如，`index.ts`）：
 
 ```typescript
 let message: string = "Hello, TypeScript!";
 console.log(message);
 ```
 
-● 将 TypeScript 编译为 JavaScript：
+- 将 TypeScript 编译为 JavaScript：
 
-```
+```bash
 tsc index.ts
 ```
 
-● 这会创建一个 `dist` 目录（如 `tsconfig.json` 中所指定）并生成一个 `index.js` 文件。
+- 这会创建一个 `dist` 目录（如 `tsconfig.json` 中所指定）并生成一个 `index.js` 文件。
 
-## 使用代码编辑器
+### 使用代码编辑器
 
 为了获得更好的开发体验，请使用支持 TypeScript 的代码编辑器，例如：
 
-● Visual Studio Code
+- Visual Studio Code
 
-● WebStorm
+- WebStorm
 
-● Sublime Text（需安装 TypeScript 插件）
+- Sublime Text（需安装 TypeScript 插件）
 
 这些编辑器提供 IntelliSense、代码补全和调试等功能。
 
 #### 额外提示
 
-● **利用 TypeScript 特性**：探索接口、类、模块和类型注解，以提高代码质量。
+- **利用 TypeScript 特性**：探索接口、类、模块和类型注解，以提高代码质量。
 
-● **使用代码检查工具**：像 ESLint 这样的代码检查工具可以帮助维护代码风格并发现潜在错误。
+- **使用代码检查工具**：像 ESLint 这样的代码检查工具可以帮助维护代码风格并发现潜在错误。
 
-● **考虑使用构建系统**：webpack 或 Parcel 等工具可以简化开发和生产构建。
+- **考虑使用构建系统**：webpack 或 Parcel 等工具可以简化开发和生产构建。
 
-● **利用 TypeScript 生态系统**：探索使用 TypeScript 构建的库和框架。
+- **利用 TypeScript 生态系统**：探索使用 TypeScript 构建的库和框架。
 
 通过遵循这些步骤并探索 TypeScript 生态系统，你将为构建健壮且可扩展的应用程序奠定坚实的基础。
 
@@ -696,17 +710,17 @@ TypeScript 是 JavaScript 的超集，这意味着所有有效的 JavaScript 代
 
 TypeScript 引入了若干基本类型：
 
-● `Number`：表示数值。
+- `Number`：表示数值。
 
-● `String`：表示文本。
+- `String`：表示文本。
 
-● `Boolean`：表示真或假的值。
+- `Boolean`：表示真或假的值。
 
-● `Null`：表示 null 值。
+- `Null`：表示 null 值。
 
-● `Undefined`：表示 undefined 值。
+- `Undefined`：表示 undefined 值。
 
-● `Any`：表示任意类型，但通常不鼓励使用。
+- `Any`：表示任意类型，但通常不鼓励使用。
 
 ```typescript
 let age: number = 30;
@@ -866,9 +880,9 @@ console.log("Hello, world!");
 
 ## 练习 1：变量和类型
 
-● 创建不同类型的变量（number、string、boolean）并打印它们的值。
+- 创建不同类型的变量（number、string、boolean）并打印它们的值。
 
-● 尝试将一个类型的值赋给另一个类型的变量，并观察错误。
+- 尝试将一个类型的值赋给另一个类型的变量，并观察错误。
 
 ```typescript
 let age: number = 30;
@@ -885,13 +899,13 @@ console.log("Is Student:", isStudent);
 
 ## 练习 2：数组
 
-● 创建数字、字符串和布尔值的数组。
+- 创建数字、字符串和布尔值的数组。
 
-● 使用索引访问元素。
+- 使用索引访问元素。
 
-● 修改数组中的元素。
+- 修改数组中的元素。
 
-● 获取数组的长度。
+- 获取数组的长度。
 
 ```typescript
 let numbers: number[] = [1, 2, 3, 4, 5];
@@ -909,9 +923,9 @@ console.log("Length of numbers array:", numbers.length);
 
 ## 练习 3：接口
 
-● 创建一个接口来表示一个人，包含 name、age 和 city 等属性。
+- 创建一个接口来表示一个人，包含 name、age 和 city 等属性。
 
-● 创建实现该接口的对象。
+- 创建实现该接口的对象。
 
 ```typescript
 interface Person {
@@ -938,17 +952,13 @@ console.log(person2.name, person2.age, person2.city);
 
 ## 练习 4：函数
 
-● 创建具有不同参数类型和返回类型的函数。
+- 创建具有不同参数类型和返回类型的函数。
 
-● 使用不同的参数调用函数。
+- 使用不同的参数调用函数。
 
+- 使用可选参数和默认参数。
 
- 
- ● 使用可选参数和默认参数。
-
-TypeScript
-
-```
+```typescript
 function greet(name: string, greeting?: string): string {
   return (greeting || "Hello") + ", " + name + "!";
 }
@@ -964,13 +974,13 @@ console.log(add(5, 3));
 
 ## 练习 5：类
 
-● 创建一个汽车类，包含`brand`（品牌）、`model`（型号）和`year`（年份）等属性。
-● 创建汽车类的实例。
-● 为类添加方法。
+- 创建一个汽车类，包含 `brand`（品牌）、`model`（型号）和 `year`（年份）等属性。
 
-TypeScript
+- 创建汽车类的实例。
 
-```
+- 为类添加方法。
+
+```typescript
 class Car {
   brand: string;
   model: string;
@@ -996,12 +1006,11 @@ console.log(car2.model);
 
 ## 练习 6：枚举
 
-● 创建一个表示星期几的枚举。
-● 访问枚举成员。
+- 创建一个表示星期几的枚举。
 
-TypeScript
+- 访问枚举成员。
 
-```
+```typescript
 enum DaysOfWeek {
   Monday,
   Tuesday,
@@ -1018,12 +1027,11 @@ console.log(DaysOfWeek[3]); // Output: Wednesday
 
 ## 练习 7：类型断言
 
-● 使用类型断言将值转换为特定类型。
-● 使用类型断言时要小心，因为如果使用不当，可能会导致运行时错误。
+- 使用类型断言将值转换为特定类型。
 
-TypeScript
+- 使用类型断言时要小心，因为如果使用不当，可能会导致运行时错误。
 
-```
+```typescript
 let value: any = "123";
 let numberValue: number = parseInt(value as string); // 类型断言
 
@@ -1034,10 +1042,13 @@ console.log(numberValue);
 
 ### 附加练习
 
-● 创建一个函数，接收一个数字数组并返回所有偶数的和。
-● 创建一个接口，表示具有`name`（名称）、`price`（价格）和`quantity`（数量）属性的产品。
-● 创建一个购物车类，包含添加和移除产品的方法。
-● 使用函数实现一个简单的计算器。
+- 创建一个函数，接收一个数字数组并返回所有偶数的和。
+
+- 创建一个接口，表示具有 `name`（名称）、`price`（价格）和 `quantity`（数量）属性的产品。
+
+- 创建一个购物车类，包含添加和移除产品的方法。
+
+- 使用函数实现一个简单的计算器。
 
 这些练习将帮助你巩固对基本 TypeScript 概念的理解，并为更复杂的项目做好准备。
 
@@ -1045,15 +1056,13 @@ console.log(numberValue);
 
 ## 类型系统——核心类型：数字、字符串、布尔值
 
-TypeScript 作为 JavaScript 的超集，继承了基本的数据类型：`number`（数字）、`string`（字符串）和`boolean`（布尔值）。这些是构建更复杂数据结构的基石。
+TypeScript 作为 JavaScript 的超集，继承了基本的数据类型：`number`（数字）、`string`（字符串）和 `boolean`（布尔值）。这些是构建更复杂数据结构的基石。
 
 ### 数字类型
 
-TypeScript 中的`number`类型表示数值，包括整数、浮点数以及`Infinity`（正无穷）、`-Infinity`（负无穷）和`NaN`等特殊值。
+TypeScript 中的 `number` 类型表示数值，包括整数、浮点数以及 `Infinity`（正无穷）、`-Infinity`（负无穷）和 `NaN` 等特殊值。
 
-TypeScript
-
-```
+```typescript
 let age: number = 30;
 let price: number = 9.99;
 let largeNumber: number = 1e6; // 科学计数法
@@ -1061,30 +1070,24 @@ let negativeNumber: number = -10;
 let notANumber: number = NaN; // 非数字
 ```
 
-**算术运算：** TypeScript 支持标准的算术运算符，如`+`、`-`、`*`、`/`、`%`。
+**算术运算：** TypeScript 支持标准的算术运算符，如 `+`、`-`、`*`、`/`、`%`。
 
-TypeScript
-
-```
+```typescript
 let result: number = age + 5; // 加法
 let divisionResult: number = price / 2; // 除法
 ```
 
-**类型推断：** TypeScript 通常可以在不显式声明的情况下推断出`number`类型：
+**类型推断：** TypeScript 通常可以在不显式声明的情况下推断出 `number` 类型：
 
-TypeScript
-
-```
+```typescript
 let inferredNumber = 42; // 推断为 number
 ```
 
 ### 字符串类型
 
-`string`类型表示字符序列。
+`string` 类型表示字符序列。
 
-TypeScript
-
-```
+```typescript
 let firstName: string = "Alice";
 let greeting: string = "Hello, world!";
 let emptyString: string = "";
@@ -1092,9 +1095,7 @@ let emptyString: string = "";
 
 **字符串操作：** TypeScript 提供了多种字符串操作方法：
 
-TypeScript
-
-```
+```typescript
 let upperCaseName: string = firstName.toUpperCase();
 let length: number = greeting.length;
 let substring: string = greeting.substring(7);
@@ -1102,28 +1103,22 @@ let substring: string = greeting.substring(7);
 
 **模板字面量：** TypeScript 支持模板字面量，用于创建多行字符串和嵌入表达式：
 
-TypeScript
-
-```
+```typescript
 let message: string = `Hello, ${firstName}!`;
 ```
 
 ### 布尔类型
 
-`boolean`类型表示逻辑值：`true`（真）或`false`（假）。
+`boolean` 类型表示逻辑值：`true`（真）或 `false`（假）。
 
-TypeScript
-
-```
+```typescript
 let isStudent: boolean = true;
 let hasCar: boolean = false;
 ```
 
-**逻辑运算符：** TypeScript 支持逻辑运算符，如`&&`（与）、`||`（或）和`!`（非）。
+**逻辑运算符：** TypeScript 支持逻辑运算符，如 `&&`（与）、`||`（或）和 `!`（非）。
 
-TypeScript
-
-```
+```typescript
 let canDrive: boolean = isStudent && hasCar;
 ```
 
@@ -1131,9 +1126,7 @@ let canDrive: boolean = isStudent && hasCar;
 
 TypeScript 的类型系统通过在编译时强制执行类型检查来防止运行时错误。
 
-TypeScript
-
-```
+```typescript
 let value: number | string = 42;
 
 if (typeof value === 'number') {
@@ -1149,31 +1142,35 @@ if (typeof value === 'number') {
 
 TypeScript 提供了数字和字符串操作的附加功能：
 
-● `Number`方法：用于三角函数、对数和其他数学函数的`Math`对象。
-● `String`方法：丰富的搜索、替换、分割和格式化字符串的方法。
-● 正则表达式：用于模式匹配和文本处理。
+- `Number` 方法：用于三角函数、对数和其他数学函数的 `Math` 对象。
+
+- `String` 方法：丰富的搜索、替换、分割和格式化字符串的方法。
+
+- 正则表达式：用于模式匹配和文本处理。
 
 ### 最佳实践
 
-● 使用清晰且描述性强的变量名。
-● 优先使用显式类型注解以提高代码可读性。
-● 在适当的时候利用 TypeScript 的类型推断。
-● 考虑使用字符串模板来改善字符串格式化。
-● 彻底测试代码以确保行为正确。
+- 使用清晰且描述性强的变量名。
+
+- 优先使用显式类型注解以提高代码可读性。
+
+- 在适当的时候利用 TypeScript 的类型推断。
+
+- 考虑使用字符串模板来改善字符串格式化。
+
+- 彻底测试代码以确保行为正确。
 
 通过理解这些核心类型及其功能，你将为 TypeScript 开发打下坚实的基础。
 
 ## TypeScript 中的 Any 和 Unknown 类型
 
-TypeScript 的`any`和`unknown`类型是特殊类型，表示任何类型的值。虽然它们乍一看很相似，但具有不同的行为和对类型安全的影响。
+TypeScript 的 `any` 和 `unknown` 类型是特殊类型，表示任何类型的值。虽然它们乍一看很相似，但具有不同的行为和对类型安全的影响。
 
-### `any`类型
+### `any` 类型
 
-`any`类型本质上是一种类型擦除，允许你完全绕过 TypeScript 的类型系统。任何值都可以赋值给`any`类型的变量，你可以在不进行类型检查的情况下访问其任何属性或方法。
+`any` 类型本质上是一种类型擦除，允许你完全绕过 TypeScript 的类型系统。任何值都可以赋值给 `any` 类型的变量，你可以在不进行类型检查的情况下访问其任何属性或方法。
 
-TypeScript
-
-```
+```typescript
 let value: any = 42;
 value = "hello";
 value = true;
@@ -1186,15 +1183,13 @@ function doSomething(value: any) {
 }
 ```
 
-虽然`any`提供了灵活性，但它违背了 TypeScript 类型安全的目的。大量使用`any`可能导致运行时错误，并使代码更难维护。通常建议除非绝对必要，否则避免使用`any`。
+虽然 `any` 提供了灵活性，但它违背了 TypeScript 类型安全的目的。大量使用 `any` 可能导致运行时错误，并使代码更难维护。通常建议除非绝对必要，否则避免使用 `any`。
 
-### `unknown`类型
+### `unknown` 类型
 
-`unknown`是在 TypeScript 3.0 中引入的，是`any`的更安全的替代方案。它表示任何类型的值，但与`any`不同，当你尝试使用`unknown`值时，TypeScript 会强制执行类型检查。
+`unknown` 是在 TypeScript 3.0 中引入的，是 `any` 的更安全的替代方案。它表示任何类型的值，但与 `any` 不同，当你尝试使用 `unknown` 值时，TypeScript 会强制执行类型检查。
 
-TypeScript
-
-```
+```typescript
 let value: unknown = 42;
 
 // value = "hello"; // 错误：类型 'string' 不能赋值给类型 'unknown'
@@ -1208,57 +1203,45 @@ if (typeof value === 'string') {
 }
 ```
 
-`unknown`迫使你在使用值之前显式检查其类型。这有助于防止运行时错误并促进类型安全。
+`unknown` 迫使你在使用值之前显式检查其类型。这有助于防止运行时错误并促进类型安全。
 
-### 何时使用`any`和`unknown`
+### 何时使用 `any` 和 `unknown`
 
 `any`：
 
-● 当你将现有的 JavaScript 代码迁移到 TypeScript 并希望逐步引入类型安全时。
-● 在极少数情况下，你知道值的运行时类型但 TypeScript 无法推断时。
+- 当你将现有的 JavaScript 代码迁移到 TypeScript 并希望逐步引入类型安全时。
+
+- 在极少数情况下，你知道值的运行时类型但 TypeScript 无法推断时。
 
 `unknown`：
 
-● 当你处理来自外部来源的未知类型值时（例如，用户输入、API 响应）。
-● 在处理可能无类型的数据时确保类型安全。
+- 当你处理来自外部来源的未知类型值时（例如，用户输入、API 响应）。
+
+- 在处理可能无类型的数据时确保类型安全。
 
 ### 类型断言
 
-`any`和`unknown`都可以与类型断言一起使用，以显式告诉编译器值的类型：
+`any` 和 `unknown` 都可以与类型断言一起使用，以显式告诉编译器值的类型：
 
-TypeScript
-
-```
+```typescript
 let value: unknown = "hello";
 let strLength: number = (value as string).length; // 类型断言
 
 let anyValue: any = { a: 1 };
-let obj: { b: number } = anyValue as { b: number }; // 有风险的类型断言 nts` employs strict mutable borrow rules to ensure memory safety. It can also be used to create multiple aliases to the same data by using `&`, and with lifetimes, mutability can be restricted further.
-```
-
-TypeScript
-
-```
-let value: unknown = "hello";
-let strLength: number = (value as string).length; // Type assertion
-
-let anyValue: any = { a: 1 };
-let obj: { b: number } = anyValue as { b: number }; // Risky type assertion
+let obj: { b: number } = anyValue as { b: number }; // 有风险的类型断言
 ```
 
 类型断言绕过类型检查，如果使用不当可能导致运行时错误。请谨慎使用，仅在绝对确定值的类型时使用。
 
 ### 最佳实践
 
-● 尽可能优先使用具体类型而非`any`和`unknown`。
+- 尽可能优先使用具体类型而非 `any` 和 `unknown`。
 
+- 当你需要表示任意类型的值但希望强制执行类型检查时，请使用 `unknown`。
 
- 
-● 当你需要表示任意类型的值但希望强制执行类型检查时，请使用 `unknown`。
+- 谨慎使用类型断言，仅在必要时使用。
 
-● 谨慎使用类型断言，仅在必要时使用。
-
-● 考虑使用类型守卫或 `typeof` 检查来安全地缩小 `unknown` 值的类型范围。
+- 考虑使用类型守卫或 `typeof` 检查来安全地缩小 `unknown` 值的类型范围。
 
 通过理解 `any` 和 `unknown` 之间的区别，你可以编写更安全、更可靠的 TypeScript 代码。
 
@@ -1270,7 +1253,7 @@ TypeScript 的类型推断是一项强大的功能，它可以根据变量的初
 
 当变量被初始化赋值时，TypeScript 会根据该值推断其类型：
 
-```
+```typescript
 let message = "Hello, world!"; // 推断为 string
 
 let count = 42; // 推断为 number
@@ -1282,7 +1265,7 @@ let isDone = false; // 推断为 boolean
 
 TypeScript 可以在更复杂的表达式中推断类型：
 
-```
+```typescript
 let result = 1 + 2; // 推断为 number
 
 let anotherResult = "Hello" + " world"; // 推断为 string
@@ -1292,17 +1275,17 @@ let anotherResult = "Hello" + " world"; // 推断为 string
 
 TypeScript 根据数组包含的元素来推断其元素类型：
 
-```
+```typescript
 let numbers = [1, 2, 3]; // 推断为 number[]
 
-let strings = ["apple", "banana"]; // 推断为 string inference with Arrays
+let strings = ["apple", "banana"]; // 推断为 string[]
 ```
 
 ### 对象的类型推断
 
 TypeScript 根据对象的属性来推断其形状：
 
-```
+```typescript
 let person = { name: "Alice", age: 30 }; // 推断为 { name: string; age: number; }
 ```
 
@@ -1310,10 +1293,10 @@ let person = { name: "Alice", age: 30 }; // 推断为 { name: string; age: numbe
 
 TypeScript 可以根据 return 语句推断函数的返回类型：
 
-```
-function greet(name: string): string
-
-return "Hello, " + name +
+```typescript
+function greet(name: string): string {
+  return "Hello, " + name;
+}
 ```
 
 在这种情况下，返回类型被显式指定为 `string`，但 TypeScript 也可以根据 return 语句推断出来。
@@ -1322,31 +1305,29 @@ return "Hello, " + name +
 
 虽然类型推断是一个强大的工具，但它也有一些局限性：
 
-● **上下文类型**：TypeScript 依赖上下文信息来推断类型。如果上下文不明确，你可能需要提供显式类型注解。
+- **上下文类型**：TypeScript 依赖上下文信息来推断类型。如果上下文不明确，你可能需要提供显式类型注解。
 
-● **复杂表达式**：对于复杂表达式，类型推断可能变得不够精确。
+- **复杂表达式**：对于复杂表达式，类型推断可能变得不够精确。
 
-● **可选参数**：使用可选参数时，推断的类型可能是 `any`，除非你提供默认值。
+- **可选参数**：使用可选参数时，推断的类型可能是 `any`，除非你提供默认值。
 
 ### 最佳实践
 
-● 当类型推断能提高代码可读性时使用它。
+- 当类型推断能提高代码可读性时使用它。
 
-● 在复杂情况下提供显式类型注解以增强清晰度。
+- 在复杂情况下提供显式类型注解以增强清晰度。
 
-● 考虑对函数返回类型使用类型推断以简化代码。
+- 考虑对函数返回类型使用类型推断以简化代码。
 
-● 注意类型推断的局限性，并审慎使用。
+- 注意类型推断的局限性，并审慎使用。
 
 ### 示例：结合类型推断与显式类型
 
-```
-function createPerson(name: string, age: number): { name: string; age: number }
+```typescript
+function createPerson(name: string, age: number): { name: string; age: number } {
+  return { name, age };
+}
 
-return { name, age };
-```
-
-```
 let person1 = createPerson("Bob", 35); // 从返回类型推断类型
 ```
 
@@ -1362,11 +1343,9 @@ let person1 = createPerson("Bob", 35); // 从返回类型推断类型
 
 TypeScript 使用上下文信息来推断类型，通常超越了初始赋值。
 
-```
-function identity<T>(arg: T): T
-
-return arg;
-
+```typescript
+function identity<T>(arg: T): T {
+  return arg;
 }
 
 let output = identity<string>("myString"); // 推断为 string
@@ -1378,17 +1357,14 @@ let output = identity<string>("myString"); // 推断为 string
 
 使用泛型时，TypeScript 可以根据约束来推断类型参数：
 
-```
-interface Lengthwise
+```typescript
+interface Lengthwise {
+  length: number;
+}
 
-length: number;
-
-function loggingIdentity<T extends Lengthwise>(arg: T): T
-
-console.log(arg.length);    // 无错误
-
-return arg;  
-
+function loggingIdentity<T extends Lengthwise>(arg: T): T {
+  console.log(arg.length);    // 无错误
+  return arg;  
 }
 
 const myArray = [1, 2, 3];
@@ -1402,12 +1378,12 @@ loggingIdentity(myArray);
 
 条件类型允许你基于条件创建类型：
 
-```
+```typescript
 type TypeName<T> = T extends string ? "string" : T extends number ? "number" : "object";
 
-function typeOf<T>(arg: T): TypeName<T>
-
-return typeof arg as TypeName<T>;
+function typeOf<T>(arg: T): TypeName<T> {
+  return typeof arg as TypeName<T>;
+}
 ```
 
 `TypeName` 类型使用条件类型根据参数的类型来推断类型名称。
@@ -1416,12 +1392,12 @@ return typeof arg as TypeName<T>;
 
 `infer` 关键字在条件类型中用于提取类型：
 
-```
+```typescript
 type ReturnType<T> = T extends (...args: any[]) => infer R ? R : any;
 
-function getReturnType<T>(func sexual: T): ReturnType<T>
-
-return null as any; // 占位符，实际实现将返回返回类型
+function getReturnType<T>(func: T): ReturnType<T> {
+  return null as any; // 占位符，实际实现将返回返回类型
+}
 ```
 
 `ReturnType` 类型使用 `infer` 来提取函数的返回类型。
@@ -1430,7 +1406,7 @@ return null as any; // 占位符，实际实现将返回返回类型
 
 TypeScript 可以推断数组的元素类型和对象的属性类型：
 
-```
+```typescript
 let numbers = [1, 2, 3]; // 推断为 number[]
 
 let person = { name: "Alice", age: 30 }; // 推断为 { name: string; age: number; }
@@ -1440,13 +1416,13 @@ let person = { name: "Alice", age: 30 }; // 推断为 { name: string; age: numbe
 
 虽然类型推断很强大，但它并非没有局限性。复杂表达式或模糊的上下文可能需要显式类型注解。
 
-● 审慎使用类型推断，在简洁性和清晰度之间取得平衡。
+- 审慎使用类型推断，在简洁性和清晰度之间取得平衡。
 
-● 对重要的变量或函数参数考虑使用显式类型注解。
+- 对重要的变量或函数参数考虑使用显式类型注解。
 
-● 利用泛型类型和条件类型的类型推断进行高级类型操作。
+- 利用泛型类型和条件类型的类型推断进行高级类型操作。
 
-● 彻底测试你的代码，确保类型推断行为正确。
+- 彻底测试你的代码，确保类型推断行为正确。
 
 通过理解这些高级类型推断概念，你可以编写更具表达力、类型安全和可维护性的 TypeScript 代码。
 
@@ -1458,41 +1434,38 @@ let person = { name: "Alice", age: 30 }; // 推断为 { name: string; age: numbe
 
 类型注解放在变量、函数参数或返回类型之后，用冒号（`:`）分隔。
 
-```
+```typescript
 let message: string = "Hello, world!";
 
 let age: number = 30;
 
 let isDone: boolean = false;
 
-function greet(name: string): string
-
-return "Hello, " + name + "!";
+function greet(name: string): string {
+  return "Hello, " + name + "!";
+}
 ```
 
 ### 为什么使用类型注解？
 
-● **清晰度**：显式声明类型可提高代码可读性，尤其是在大型项目中。
+- **清晰度**：显式声明类型可提高代码可读性，尤其是在大型项目中。
 
-● **文档**：类型注解作为活文档，描述预期的数据类型。
+- **文档**：类型注解作为活文档，描述预期的数据类型。
 
-● **错误预防**：TypeScript 的编译器在开发期间捕获潜在的类型错误。
+- **错误预防**：TypeScript 的编译器在开发期间捕获潜在的类型错误。
 
-● **工具支持**：IDE 可以利用类型信息提供更好的代码补全、重构和导航。
+- **工具支持**：IDE 可以利用类型信息提供更好的代码补全、重构和导航。
 
 ### 数组和对象的类型注解
 
-```
+```typescript
 let numbers: number[] = [1, 2, 3];
 
 let names: string[] = ["Alice", "Bob", "Charlie"];
 
-interface Person
-
-name: string;
-
-age: number;
-
+interface Person {
+  name: string;
+  age: number;
 }
 
 let person: Person = { name: "John Doe", age: 30 };
@@ -1502,60 +1475,47 @@ let person: Person = { name: "John Doe", age: 30 };
 
 类型注解可用于函数参数和返回类型：
 
-```
-function add(x: number, y: number): number
-
-return x + y;
-
+```typescript
+function add(x: number, y: number): number {
+  return x + y;
 }
 
-function greet(user: { name: string; age: number }): string
-
-return `Hello, ${user.name}! You are ${user.age} years old.`;
+function greet(user: { name: string; age: number }): string {
+  return `Hello, ${user.name}! You are ${user.age} years old.`;
+}
 ```
 
 ### 可选参数和默认参数
 
 类型注解可与可选参数和默认参数一起使用：
 
-```
-function greet(name: string, greeting?: string): string
+```typescript
+function greet(name: string, greeting?: string): string {
+  return (greeting || "Hello") + ", " + name + "!";
+}
 
-return (greeting || "Hello") + ", " + name + "!";
-
-
- 
- ```
-function divide(numerator: number, denominator: number = 1): number
-
-return numerator / denominator;
+function divide(numerator: number, denominator: number = 1): number {
+  return numerator / denominator;
+}
 ```
 
-## 类型断言
+### 类型断言
 
 类型断言用于告诉编译器某个值具有特定的类型。但应谨慎使用，因为它们可能绕过类型检查：
 
-TypeScript
-
-```
+```typescript
 let value: any = "hello";
-
 let strLength: number = (value as string).length;
 ```
 
-## 接口与类型注解
+### 接口与类型注解
 
 接口可用作对象的类型注解：
 
-TypeScript
-
-```
-interface Product
-
-name: string;
-
-price: number;
-
+```typescript
+interface Product {
+  name: string;
+  price: number;
 }
 
 let product: Product = { name: "Laptop", price: 999 };
@@ -1564,15 +1524,21 @@ let product: Product = { name: "Laptop", price: 999 };
 ### 最佳实践
 
 - 始终使用类型注解，以提高代码的可维护性。
+
 - 考虑为复杂的对象类型使用接口。
+
 - 避免不必要的类型断言。
+
 - 尽可能利用 TypeScript 的类型推断功能。
 
-## 何时使用类型注解
+### 何时使用类型注解
 
 - 当类型推断不明确时。
+
 - 当你想要清晰地文档化预期类型时。
+
 - 当处理复杂的数据结构时。
+
 - 当与其他开发者在项目中协作时。
 
 通过有效使用类型注解，你可以提升 TypeScript 项目的代码质量、防止错误，并增强开发体验。
@@ -1581,83 +1547,61 @@ let product: Product = { name: "Laptop", price: 999 };
 
 TypeScript 中的**接口**定义了对象的契约，指定其属性和方法。它们用于强制对象具备特定结构，确保其拥有某些属性和方法。
 
-TypeScript
-
-```
-interface Person
-
-firstName: string;
-
-lastName: string;
-
-age: number;
-
-greet(message: string): void;
+```typescript
+interface Person {
+  firstName: string;
+  lastName: string;
+  age: number;
+  greet(message: string): void;
+}
 ```
 
 在此示例中，`Person` 接口定义了任何符合该接口的对象必须具有 `firstName`、`lastName` 和 `age` 属性，以及一个接受字符串并返回 void 的 `greet` 方法。
 
-TypeScript
-
-```
-let person: Person
-
-firstName: "John",
-
-lastName: "Doe",
-
-age: 30,
-
-greet(message: string)
-
-console.log(message + ", " + this.firstName + " " + this.lastName);
+```typescript
+let person: Person = {
+  firstName: "John",
+  lastName: "Doe",
+  age: 30,
+  greet(message: string) {
+    console.log(message + ", " + this.firstName + " " + this.lastName);
+  }
+};
 ```
 
 接口也可以扩展：
 
-TypeScript
-
-```
-interface Employee extends Person
-
-salary: number;
-
-department: string;
+```typescript
+interface Employee extends Person {
+  salary: number;
+  department: string;
+}
 ```
 
 ## 类
 
 类是创建对象的蓝图。它们封装数据（属性）和行为（方法）。
 
-TypeScript
+```typescript
+class Car {
+  colour: string;
+  model: string;
 
-```
-class Car
+  constructor(colour: string, model: string) {
+    this.color = colour;
+    this.model = model;
+  }
 
-colour: string;
-
-model: string;
-
-constructor(colour: string, model: string)
-
-this.color = colour;
-
-this.model = model;
-
+  startEngine() {
+    console.log("Engine started");
+  }
 }
-
-startEngine()
-
-console.log("Engine started");
 ```
 
 在此示例中，`Car` 类具有 `colour` 和 `model` 属性、用于初始化这些属性的构造函数，以及 `startEngine` 方法。
 
-TypeScript
-
-```
+```typescript
 let car = new Car("red", "Corolla");
-
 car.startEngine();
 ```
 
@@ -1665,111 +1609,90 @@ car.startEngine();
 
 类可以实现接口，以确保其遵循接口的契约：
 
-TypeScript
+```typescript
+class Employee implements Person {
+  firstName: string;
+  lastName: string;
+  age: number;
+  salary: number;
+  department: string;
 
-```
-class Employee implements Person
+  constructor(firstName: string, lastName: string, age: number, salary: number, department: string) {
+    this.firstName = firstName;
+    this.lastName = lastName;
+    this.age = age;
+    this.salary = salary;
+    this.department = department;
+  }
 
-firstName: string;
-
-lastName: string;
-
-age: number;
-
-salary: number;
-
-department: string;
-
-constructor(firstName: string, lastName: string, age: number, salary: number, department: string)
-
-this.firstName = firstName;
-
-this.lastName = lastName;
-
-this.age = age;
-
-this.salary = salary;
-
-this.department = department;
-
+  greet(message: string) {
+    console.log(message + ", " + this.firstName + " " + this.lastName + " from " + this.department);
+  }
 }
-
-greet(message: string)
-
-console.log(message + ", " + this.firstName + " " + this.lastName + " from " + this.department);
 ```
 
 ## 继承
 
 类可以使用 `extends` 关键字继承其他类：
 
-TypeScript
+```typescript
+class ElectricCar extends Car {
+  batteryCapacity: number;
 
-```
-class ElectricCar extends Car
+  constructor(colour: string, model: string, batteryCapacity: number) {
+    super(colour, model);
+    this.batteryCapacity = batteryCapacity;
+  }
 
-batteryCapacity: number;
-
-constructor(colour: string, model: string, batteryCapacity: number)
-
-super(colour, model);
-
-this.batteryCapacity = batteryCapacity;
-
+  charge() {
+    console.log("Charging");
+  }
 }
-
-charge()
-
-console.log("Charging");
 ```
 
 `ElectricCar` 类继承了 `Car` 类的属性和方法，并添加了自己的属性和方法。
 
 ## 抽象类
 
-抽象类是不能直接实例化的类。它们用作其他类的基类。  
+抽象类是不能直接实例化的类。它们用作其他类的基类。
 
-TypeScript
-
-```
-abstract class Shape
-
-abstract getArea(): number;
-
+```typescript
+abstract class Shape {
+  abstract getArea(): number;
 }
 
-class Rectangle extends Shape
+class Rectangle extends Shape {
+  width: number;
+  height: number;
 
-width: number;
+  constructor(width: number, height: number) {
+    super();
+    this.width = width;
+    this.height = height;
+  }
 
-height: number;
-
-constructor(width: number, height: number)
-
-super();
-
-this.width   = width;
-
-this.height = height;
-
+  getArea(): number {
+    return this.width * this.height;
+  }
 }
-
-getArea(): number
-
-return this.width  this.height;  
 ```
 
 ## 接口与类的比较
 
 - **接口**：定义契约，关注结构，不能实例化。
+
 - **类**：定义对象的蓝图，封装数据和行为，可以实例化。
 
 ### 最佳实践
 
 - 使用接口为对象定义清晰的契约。
+
 - 使用类来实现面向对象原则。
+
 - 考虑将抽象类用于具有共享功能的基类。
+
 - 尽可能优先使用组合而非继承。
+
 - 使用接口来实现多态。
 
 通过有效使用接口和类，你可以创建结构良好、可维护和可扩展的 TypeScript 应用程序。
@@ -1779,12 +1702,12 @@ return this.width  this.height;
 ## 练习 1：基本类型与推断
 
 - 创建不同类型的变量（`number`、`string`、`boolean`），不显式指定其类型。
+
 - 在各种场景中尝试类型推断，包括数组、对象和函数。
+
 - 尝试为变量分配不兼容的类型，并观察编译器错误。
 
-TypeScript
-
-```
+```typescript
 let message = "Hello, TypeScript!"; // 推断为 string
 
 let count = 42; // 推断为 number
@@ -1796,147 +1719,112 @@ let numbers = [1, 2, 3]; // 推断为 number[]
 let person = { name: "Alice", age: 30 }; // 推断为 { name: string; age: number; }
 
 function greet(name) { // 推断返回类型
-
-return "Hello, " + name;
+  return "Hello, " + name;
+}
 ```
 
 ## 练习 2：接口与类
 
 - 创建一个表示 `Product` 的接口，包含 `name`、`price` 和 `availability` 属性。
+
 - 创建一个实现 `Product` 接口的类 `ProductImpl`。
+
 - 创建多个 `ProductImpl` 实例并填充其属性。
 
-TypeScript
-
-```
-interface Product
-
-name: string;
-
-price: number;
-
-availability: boolean;
-
+```typescript
+interface Product {
+  name: string;
+  price: number;
+  availability: boolean;
 }
 
-class ProductImpl implements Product
+class ProductImpl implements Product {
+  name: string;
+  price: number;
+  availability: boolean;
 
-name: string;
-
-price: number;
-
-availability: boolean;
-
-constructor(name: string, price: number, availability: boolean)
-
-this.name = name;
-
-this.price = price;
-
-this.availability = availability;  
-
+  constructor(name: string, price: number, availability: boolean) {
+    this.name = name;
+    this.price = price;
+    this.availability = availability;
+  }
 }
 
 let product1: ProductImpl = new ProductImpl("Laptop", 999, true);
-
 let product2: ProductImpl = new ProductImpl("Smartphone", 699, false);
 ```
 
 ## 练习 3：泛型
 
 - 创建一个泛型函数来交换任意类型的两个值。
+
 - 创建一个泛型类来表示可以容纳任何类型元素的容器。
 
-TypeScript
-
-```
-function swap<T>(a: T, b: T): [T, T]
-
-return [b, a];
-
+```typescript
+function swap<T>(a: T, b: T): [T, T] {
+  return [b, a];
 }
 
-class Container<T>
+class Container<T> {
+  value: T;
 
-value: T;
-
-constructor(value: T)
-
-this.value = value;
+  constructor(value: T) {
+    this.value = value;
+  }
+}
 ```
 
 ## 练习 4：高级类型
 
 - 使用**交叉类型**来组合多个接口。
+
 - 使用**联合类型**来表示可能是多种类型的值。
+
 - 使用**字面量类型**将值限制为特定的常量。
 
-TypeScript
-
-```
-interface Person
-
-name: string;
-
-age: number;
-
+```typescript
+interface Person {
+  name: string;
+  age: number;
 }
 
-interface Employee
-
-salary: number;
-
-department: string;
-
+interface Employee {
+  salary: number;
+  department: string;
 }
 
 type PersonAndEmployee = Person & Employee;
 
-let employee: PersonAndEmployee
-
-name: "John Doe",
-
-age: 30,
-
-salary: 50000,
-
-department: "IT"
-
+let employee: PersonAndEmployee = {
+  name: "John Doe",
+  age: 30,
+  salary: 50000,
+  department: "IT"
 };
 
 let value: string | number = "hello";
-
 value = 42;
 
 type Status = "pending" | "approved" | "rejected";
-
 let orderStatus: Status = "pending";
 ```
 
 ## 练习 5：类型兼容性
 
 - 探索 TypeScript 中的类型兼容性规则，包括结构类型和名义类型。
+
 - 尝试不同的场景，以理解何时类型兼容，何时不兼容。
 
-TypeScript
-
-```
-interface Point2D
-
-x: number;
-
-y: number;
-
+```typescript
+interface Point2D {
+  x: number;
+  y: number;
 }
 
-interface Point3D
-
-x: number;
-
-y: number;
-
-z: number;
-
+interface Point3D {
+  x: number;
+  y: number;
+  z: number;
 }
 
 let point2d: Point2D = { x: 1, y: 2 };
@@ -1947,37 +1835,33 @@ let point2d: Point2D = { x: 1, y: 2 };
 ## 练习 6：错误处理
 
 - 使用 `try...catch` 块来处理潜在错误。
+
 - 抛出带有特定错误消息的自定义错误对象。
 
-TypeScript
-
-```
-function divide(numerator: number, denominator: number): number
-
-if (denominator === 0)
-```
-
-
- 
- ```
-throw new Error("Division by zero");
+```typescript
+function divide(numerator: number, denominator: number): number {
+  if (denominator === 0) {
+    throw new Error("Division by zero");
+  }
+  return numerator / denominator;
 }
 
-return numerator / denominator;
+try {
+  let result = divide(10, 0);
+  console.log(result);
+} catch (error) {
+  console.error(error.message);
 }
-
-try
-let result = divide(10, 0);
-console.log(result);
-catch (error)
-console.error(error.message);
 ```
 
 ## 额外挑战
 
 - 创建一个泛型函数，用于根据谓词从数组中过滤元素。
+
 - 实现一个简单的类层次结构，包含继承和多态。
+
 - 探索高级类型概念，如映射类型（mapped types）和条件类型（conditional types）。
+
 - 构建一个小型 TypeScript 应用程序，练习应用类型系统概念。
 
 通过练习这些习题，你将更深入地理解 TypeScript 的类型系统及其在构建健壮且可维护的应用程序方面的优势。
@@ -1994,9 +1878,9 @@ console.error(error.message);
 
 考虑一个简单的恒等函数，它返回接收到的相同值：
 
-```
-function identity<T>(arg: T): T
-return arg;
+```typescript
+function identity<T>(arg: T): T {
+  return arg;
 }
 
 let output1 = identity<string>("myString");  // output1 的类型是 'string'
@@ -2009,16 +1893,16 @@ let output2 = identity<number>(10);          // output2 的类型是 'number'
 
 你也可以定义泛型接口：
 
-```
-interface GenericIdentityFn<T>
-(arg: T): T;
+```typescript
+interface GenericIdentityFn<T> {
+  (arg: T): T;
 }
 
-function identity<T>(arg: T): T
-return arg;
+function identity<T>(arg: T): T {
+  return arg;
 }
 
-let myIdentity: GenericIdentityFn<number> = identity;  
+let myIdentity: GenericIdentityFn<number> = identity;
 ```
 
 这确保了分配给 `myIdentity` 的函数必须遵守泛型接口的类型约束。
@@ -2027,15 +1911,15 @@ let myIdentity: GenericIdentityFn<number> = identity;
 
 泛型也可以用于类：
 
-```
-class GenericNumber<T>
-zeroValue: T;
-add: (x: T, y: T) => T;
+```typescript
+class GenericNumber<T> {
+  zeroValue: T;
+  add: (x: T, y: T) => T;
 }
 
 let myGenericNumber = new GenericNumber<number>();
 myGenericNumber.zeroValue = 0;
-myGenericNumber.add = function(x, y) { return x + y;  };
+myGenericNumber.add = function(x, y) { return x + y; };
 ```
 
 `GenericNumber` 类可以与任何支持 `+` 运算符的类型一起工作。
@@ -2044,14 +1928,14 @@ myGenericNumber.add = function(x, y) { return x + y;  };
 
 有时，你可能希望限制可以与泛型一起使用的类型：
 
-```
-interface Lengthwise
-length: number;
+```typescript
+interface Lengthwise {
+  length: number;
 }
 
-function loggingIdentity<T extends Lengthwise>(arg: T): T
-console.log(arg.length);  // 现在我们知道它有一个 length 属性
-return arg;
+function loggingIdentity<T extends Lengthwise>(arg: T): T {
+  console.log(arg.length);  // 现在我们知道它有一个 length 属性
+  return arg;
 }
 
 loggingIdentity([1, 2, 3]);  // OK
@@ -2064,33 +1948,37 @@ loggingIdentity([1, 2, 3]);  // OK
 TypeScript 提供了内置的泛型工具类型：
 
 - `Partial<T>`：使 `T` 的所有属性变为可选。
-- `Readonly<T>`：使 `T` 的所有属性变为只读。
-- `Record<K, T>`：创建一个对象类型，其键的类型为 `K`，值的 restriced. 值为 `T`。
 
-```
-interface Person
-name: string;
-age: number;
+- `Readonly<T>`：使 `T` 的所有属性变为只读。
+
+- `Record<K, T>`：创建一个对象类型，其键的类型为 `K`，值的类型为 `T`。
+
+```typescript
+interface Person {
+  name: string;
+  age: number;
 }
 
-let partialPerson: Partial<Person>
-age: 25
+let partialPerson: Partial<Person> = {
+  age: 25
 };
 
 let readonlyPerson: Readonly<Person> = { name: "John", age: 30 };
-let nameAgeMap: Record<string, number>
-john: 30,
-jane: 25
+
+let nameAgeMap: Record<string, number> = {
+  john: 30,
+  jane: 25
+};
 ```
 
 ### 泛型类型在数组中的应用
 
 你可以创建泛型类型的数组：
 
-```
-function identity<T>(arg: T[]): T
-console.log(arg.length);  // Length 现在可用
-return arg;
+```typescript
+function identity<T>(arg: T[]): T[] {
+  console.log(arg.length);  // Length 现在可用
+  return arg;
 }
 
 let myIdentity: <T>(arg: T[]) => T[] = identity;
@@ -2099,8 +1987,11 @@ let myIdentity: <T>(arg: T[]) => T[] = identity;
 ### 要点
 
 - 泛型引入类型参数，使代码更加灵活和可复用。
+
 - 类型推断有助于在使用泛型时确定具体类型。
+
 - 泛型约束限制可以与泛型一起使用的类型。
+
 - TypeScript 提供了内置的泛型工具类型，用于常见用例。
 
 ### 实际应用案例
@@ -2108,7 +1999,9 @@ let myIdentity: <T>(arg: T[]) => T[] = identity;
 泛型在库和框架中被广泛用于创建类型安全的组件。例如：
 
 - React 组件可以设为泛型，以接受不同类型的 props。
+
 - Redux 操作可以使用泛型类型来定义 action payload。
+
 - HTTP 客户端库可以将泛型用于请求和响应类型。
 
 通过理解和有效使用泛型，你可以编写更健壮、更可维护且类型安全的 TypeScript 代码。
@@ -2116,7 +2009,9 @@ let myIdentity: <T>(arg: T[]) => T[] = identity;
 ### 其他注意事项
 
 - **泛型约束**：虽然有用，但过度使用约束会降低代码的灵活性。
+
 - **泛型推断**：TypeScript 的类型推断功能强大，但有时你可能需要显式的类型注解来增强清晰度。
+
 - **性能**：泛型通常具有最小的性能开销，但在关键性能场景中，请考虑权衡取舍。
 
 希望这份关于 TypeScript 泛型的全面解释，以及代码示例，能为你的全栈开发之旅提供坚实的基础。
@@ -2129,50 +2024,57 @@ let myIdentity: <T>(arg: T[]) => T[] = identity;
 
 数字枚举默认从 0 开始，为每个成员分配数字。
 
-```
-enum Direction
-Up = 1,
-Down,
-Left,
-Right
+```typescript
+enum Direction {
+  Up = 1,
+  Down,
+  Left,
+  Right
+}
 ```
 
 在此示例中：
 
 - `Direction.Up` 的值为 `1`。
+
 - `Direction.Down` 的值为 `2`。
+
 - `Direction.Left` 的值为 `3`。
+
 - `Direction.Right` 的值为 `4`。
 
 你可以显式地为枚举成员赋值：
 
-```
-enum ResponseCode
-Success = 200,
-NotFound = 404,
-InternalServerError = 500
+```typescript
+enum ResponseCode {
+  Success = 200,
+  NotFound = 404,
+  InternalServerError = 500
+}
 ```
 
 ### 字符串枚举
 
 字符串枚举为每个成员分配字符串值。
 
-```
-enum Colour
-Red = "Red",
-Green = "Green",
-Blue = "Blue"
+```typescript
+enum Colour {
+  Red = "Red",
+  Green = "Green",
+  Blue = "Blue"
+}
 ```
 
 ### 异构枚举
 
 TypeScript 还支持异构枚举，即混合数字和字符串成员：
 
-```
-enum Mixed
-A = 1,
-B = "two",
-C = 3
+```typescript
+enum Mixed {
+  A = 1,
+  B = "two",
+  C = 3
+}
 ```
 
 然而，通常建议避免使用异构枚举，以提高代码可读性。
@@ -2181,43 +2083,47 @@ C = 3
 
 你可以在枚举中使用计算成员，但它们必须被初始化：
 
-```
-enum FileAccess
-// 计算成员
-Read = 1 << 1,
-Write = 1 << 2,
-ReadWrite = Read | Write
+```typescript
+enum FileAccess {
+  // 计算成员
+  Read = 1 << 1,
+  Write = 1 << 2,
+  ReadWrite = Read | Write
+}
 ```
 
 ### 枚举成员作为类型
 
 枚举成员可以作为类型使用：
 
-```
+```typescript
 enum Size { Small, Medium, Large }
 
-function getDescription(size: Size): string
-switch (size)
-case Size.Small:
-return "Small size";
-case Size.Medium:
-return "Medium size";
-case Size.Large:
-return "Large size";
-default:
-return "Unknown size";
+function getDescription(size: Size): string {
+  switch (size) {
+    case Size.Small:
+      return "Small size";
+    case Size.Medium:
+      return "Medium size";
+    case Size.Large:
+      return "Large size";
+    default:
+      return "Unknown size";
+  }
+}
 ```
 
 ### 常量枚举
 
 常量枚举是一种特殊的枚举，在编译时会被内联，从而提高性能。它们使用 `const` 关键字声明：
 
-```
-const enum Direction
-Up,
-Down,
-Left,
-Right
+```typescript
+const enum Direction {
+  Up,
+  Down,
+  Left,
+  Right
+}
 ```
 
 常量枚举只能包含数字或字符串字面量成员。
@@ -2226,10 +2132,10 @@ Right
 
 你可以使用方括号表示法通过值来访问枚举成员：
 
-```
-enum ResponseCode
-Success = 200,
-NotFound = 404
+```typescript
+enum ResponseCode {
+  Success = 200,
+  NotFound = 404
 }
 
 let code: ResponseCode = ResponseCode.Success;
@@ -2239,49 +2145,69 @@ let nameOfCode = ResponseCode[code]; // "Success"
 ### 何时使用枚举
 
 - 当你有一组固定的相关值时。
+
 - 当你希望提高代码可读性和可维护性时。
+
 - 当你需要为一组值提供类型安全时。
+
 - 当你希望通过常量枚举优化性能时。
 
 ### 示例：在 Web 应用程序中使用枚举
 
+```typescript
+enum OrderStatus {
+  Pending,
+  Confirmed,
+  Shipped,
+  Delivered
+}
+
+interface Order {
+  id: number;
 ```
-enum OrderStatus
-Pending,
-Confirmed,
-Shipped,
-Delivered
+
+
+
+# TypeScript 高级类型与模块系统
+
+## TypeScript 中的枚举
+
+```ts
+enum OrderStatus {
+  Pending,
+  Confirmed,
+  Shipped,
+  Delivered
 }
 
-interface Order
-id: number;
-status: OrderStatus;
+interface Order {
+  id: number;
+  status: OrderStatus;
 }
 
-function getOrderStatusText(status: OrderStatus): string
-switch (status)
-case OrderStatus.Pending:
-return "Pending";
-case OrderStatus.Confirmed:
-return "Confirmed";
-case OrderStatus.Shipped:
-return "Shipped";
-case OrderStatus.Delivered:
-return "Delivered";
-default:
-return "Unknown";
+function getOrderStatusText(status: OrderStatus): string {
+  switch (status) {
+    case OrderStatus.Pending:
+      return "Pending";
+    case OrderStatus.Confirmed:
+      return "Confirmed";
+    case OrderStatus.Shipped:
+      return "Shipped";
+    case OrderStatus.Delivered:
+      return "Delivered";
+    default:
+      return "Unknown";
+  }
 }
 
-const order: Order
-id: 123,
-status: OrderStatus.Shipped
+const order: Order = {
+  id: 123,
+  status: OrderStatus.Shipped
 };
 
-console.log(`Order status: ${getOrderStatusText(order.status)}`
+console.log(`Order status: ${getOrderStatusText(order.status)}`);
 ```
 
-
- 
 枚举是 TypeScript 中组织和管理相关值的宝贵工具。通过了解不同类型的枚举及其使用场景，你可以编写出更高效、更易维护的代码。
 
 ## TypeScript 中的类型别名
@@ -2294,9 +2220,7 @@ TypeScript 中的类型别名为现有类型提供了一种创建新名称的方
 
 ```ts
 type UserId = number;
-
 type UserName = string;
-
 type User = {
   id: UserId;
   name: UserName;
@@ -2326,7 +2250,6 @@ type ComplexObject = {
 
 ```ts
 type GreetFunction = (name: string) => string;
-
 const greet: GreetFunction = (name) => `Hello, ${name}!`;
 ```
 
@@ -2569,26 +2492,23 @@ version = 1.0; // 有效
 version = 1.5; // 错误：类型 '1.5' 不能赋值给类型 '1.0 | 2.0 | 3.0'
 ```
 
-
- 
- ## 布尔字面量类型
+### 布尔字面量类型
 
 - 指定严格的布尔值（`true` 或 `false`）。
 - 由于可选值有限，实际使用中较少见。
 
-```typescript
+```ts
 let isLoading: true | false;
 
 isLoading = true; // 有效
-
 isLoading = 'loading'; // 错误：类型'"loading"'不能赋值给类型'true | false'
 ```
 
-## 字面量类型与联合类型
+### 字面量类型与联合类型
 
 字面量类型通常与联合类型结合使用，以创建更灵活、更具表现力的类型定义。
 
-```typescript
+```ts
 type SuccessState = {
   status: 'success';
   data: any;
@@ -2602,11 +2522,11 @@ type ErrorState = {
 type ApiResponse = SuccessState | ErrorState;
 ```
 
-## 字面量类型与函数
+### 字面量类型与函数
 
 字面量类型可以用作函数的参数类型和返回类型，以增强类型安全性和代码清晰度。
 
-```typescript
+```ts
 function createElement(tag: 'h1' | 'p' | 'div', content: string): HTMLElement {
   const element = document.createElement(tag);
   element.textContent = content;
@@ -2614,14 +2534,13 @@ function createElement(tag: 'h1' | 'p' | 'div', content: string): HTMLElement {
 }
 ```
 
-## 模板字面量类型
+### 模板字面量类型
 
 TypeScript 还支持模板字面量类型，允许你通过连接其他字符串字面量类型来创建新的字符串字面量类型。
 
-```typescript
+```ts
 type Prefix = 'app-' | 'user-';
 type Name = 'home' | 'settings';
-
 type ComponentId = `${Prefix}${Name}`;
 
 let myComponentId: ComponentId = 'app-home'; // 有效
@@ -2653,13 +2572,13 @@ let myComponentId: ComponentId = 'app-home'; // 有效
 
 **问题**：创建一个类型 `If<C, T, F>`，模拟三元运算符的行为。如果 `C` 为 `true`，返回 `T`，否则返回 `F`。
 
-```typescript
+```ts
 type If<C extends boolean, T, F> = C extends true ? T : F;
 ```
 
 示例用法：
 
-```typescript
+```ts
 type Result = If<true, string, number>; // Result 为 string
 ```
 
@@ -2667,13 +2586,13 @@ type Result = If<true, string, number>; // Result 为 string
 
 **问题**：创建一个工具类型 `ReturnType<T>`，推断函数类型 `T` 的返回类型。
 
-```typescript
+```ts
 type ReturnType<T extends (...args: any[]) => any> = T extends (...args: any[]) => infer R ? R : any;
 ```
 
 示例用法：
 
-```typescript
+```ts
 function greet(name: string): string {
   return `Hello, ${name}!`;
 }
@@ -2685,15 +2604,15 @@ type GreetReturnType = ReturnType<typeof greet>; // GreetReturnType 为 string
 
 **问题**：创建一个工具类型 `MapToPromise<T>`，将 `T` 中的所有属性映射为 Promise。
 
-```
-typescript socialismtype MapToPromise<T> = {
+```ts
+type MapToPromise<T> = {
   [K in keyof T]: Promise<T[K]>;
 };
 ```
 
 示例用法：
 
-```typescript
+```ts
 interface User {
   name: string;
   age: number;
@@ -2706,13 +2625,13 @@ type UserPromise = MapToPromise<User>; // { name: Promise<string>, age: Promise<
 
 **问题**：创建一个工具类型 `Exclude<T, U>`，从类型 `T` 中排除类型 `U`。
 
-```typescript
+```ts
 type Exclude<T, U> = T extends U ? never : T;
 ```
 
 示例用法：
 
-```typescript
+```ts
 type T0 = Exclude<string | number | boolean, string | number>; // T0 为 boolean
 ```
 
@@ -2720,7 +2639,7 @@ type T0 = Exclude<string | number | boolean, string | number>; // T0 为 boolean
 
 **问题**：创建一个类型 `DeepReadonly<T>`，递归地将 `T` 的所有属性设为只读。
 
-```typescript
+```ts
 type DeepReadonly<T> = {
   readonly [P in keyof T]: T[P] extends object ? DeepReadonly<T[P]> : T[P];
 };
@@ -2728,11 +2647,9 @@ type DeepReadonly<T> = {
 
 示例用法：
 
-```typescript
+```ts
 type X = { a: { b: { c: number } } };
-
 type Expected = { readonly a: { readonly b: { readonly c: number } } };
-
 type Todo = DeepReadonly<X>; // 应与 Expected 相同
 ```
 
@@ -2740,15 +2657,14 @@ type Todo = DeepReadonly<X>; // 应与 Expected 相同
 
 **问题**：创建一个工具类型 `IfEquals<X, Y>`，如果类型 `X` 和 `Y` 相等则计算为 `true`，否则为 `false`。
 
-```typescript
-type Equal<X, Y> = (<T>() => T extends X 客人的 ? 1 : 2) extends (<T>() => T extends Y ? 1 : 2) ? true : false;
-
+```ts
+type Equal<X, Y> = (<T>() => T extends X ? 1 : 2) extends (<T>() => T extends Y ? 1 : 2) ? true : false;
 type IfEquals<X, Y, Then, Else> = Equal<X, Y> extends true ? Then : Else;
 ```
 
 示例用法：
 
-```typescript
+```ts
 type R1 = IfEquals<string, number, 'equal', 'not equal'>; // 'not equal'
 ```
 
@@ -2777,20 +2693,18 @@ type R1 = IfEquals<string, number, 'equal', 'not equal'>; // 'not equal'
 
 - **默认导出**：每个模块只允许一个默认导出。通常用于模块的主要导出。
 
-```typescript
+```ts
 // mathUtils.ts
 export default function add(a: number, b: number): number {
-this content is generated by an AI, and may be incorrect.  queue
   return a + b;
 }
 ```
 
 - **命名导出**：可以使用命名导出导出多个元素。
 
-```typescript
+```ts
 // geometry.ts
 export function calculateArea(shape: string, dimensions: any): number;
-
 export interface Shape {
   name: string;
   area: number;
@@ -2803,19 +2717,17 @@ export interface Shape {
 
 - **导入默认导出**：
 
-```typescript
+```ts
 // main.ts
 import add from './mathUtils';
-
 console.log(add(2, 3)); // 输出: 5
 ```
 
 - **导入命名导出**：
 
-```typescript
+```ts
 // main.ts
 import { calculateArea, Shape } from './geometry';
-
 const circle: Shape = {
   name: 'circle',
   area: calculateArea('circle', { radius: 5 })
@@ -2826,10 +2738,9 @@ const circle: Shape = {
 
 可以使用别名来重命名导入的元素，以提高清晰度或避免命名冲突。
 
-```typescript
+```ts
 // main.ts
 import { calculateArea as areaCalculator } from './geometry';
-
 const circleArea = areaCalculator('circle', { radius: 5 });
 ```
 
@@ -2837,7 +2748,7 @@ const circleArea = areaCalculator('circle', { radius: 5 });
 
 你可以从另一个模块重新导出元素，使它们可以通过不同的名称或路径访问。
 
-```typescript
+```ts
 // utils.ts
 export * from './mathUtils';
 export * as geometry from './geometry';
@@ -2847,7 +2758,7 @@ export * as geometry from './geometry';
 
 动态导入允许你在运行时按需导入模块，从而提高性能。
 
-```typescript
+```ts
 // main.ts
 import(/* webpackChunkName: "mathUtils" */ './mathUtils')
   .then(mathUtils => {
@@ -2871,9 +2782,7 @@ import(/* webpackChunkName: "mathUtils" */ './mathUtils')
 - 必要时使用别名。
 - 对懒加载使用动态导入。
 
-
- 
- # 其他注意事项
+### 其他注意事项
 
 - **模块解析**：TypeScript 使用模块解析策略来定位导入的模块。默认策略是 `node` 解析。
 - **模块格式**：TypeScript 支持多种模块格式，包括 `CommonJS`、`ES` 模块和 `AMD`。
@@ -2888,7 +2797,7 @@ import(/* webpackChunkName: "mathUtils" */ './mathUtils')
 在 TypeScript 中，默认导出提供了一种从模块导出单个实体的便捷方式。该实体可以是函数、类、接口，甚至是值。
 
 **语法：**
-```typescript
+```ts
 export default <entity>;
 ```
 
@@ -2901,9 +2810,8 @@ export default <entity>;
 
 #### 示例：默认导出一个函数
 
-```typescript
+```ts
 // mathUtils.ts
-
 export default function add(a: number, b: number): number {
   return a + b;
 }
@@ -2913,11 +2821,9 @@ export default function add(a: number, b: number): number {
 
 导入默认导出时，您无需指定导出实体的名称：
 
-```typescript
+```ts
 // main.ts
-
 import add from './mathUtils';
-
 console.log(add(2, 3)); // 输出：5
 ```
 
@@ -2925,22 +2831,18 @@ console.log(add(2, 3)); // 输出：5
 
 导入默认导出时可以使用别名：
 
-```typescript
+```ts
 // main.ts
-
 import sum from './mathUtils';
-
 console.log(sum(2, 3)); // 输出：5
 ```
 
 #### 默认导出一个类
 
-```typescript
+```ts
 // person.ts
-
 export default class Person {
   constructor(public name: string, public age: number) {}
-
   greet() {
     console.log(`Hello, my name is ${this.name} and I am ${this.age} years old.`);
   }
@@ -2949,9 +2851,8 @@ export default class Person {
 
 #### 默认导出一个接口
 
-```typescript
+```ts
 // shape.ts
-
 export default interface Shape {
   area(): number;
 }
@@ -2959,11 +2860,9 @@ export default interface Shape {
 
 #### 默认导出一个值
 
-```typescript
+```ts
 // config.ts
-
 const baseUrl = 'https://api.example.com';
-
 export default baseUrl;
 ```
 
@@ -2971,13 +2870,11 @@ export default baseUrl;
 
 虽然一个模块只能有一个默认导出，但可以有多个命名导出：
 
-```typescript
+```ts
 // utils.ts
-
 export default function add(a: number, b: number): number {
   return a + b;
 }
-
 export function subtract(a: number, b: number): number {
   return a - b;
 }
@@ -2985,11 +2882,9 @@ export function subtract(a: number, b: number): number {
 
 #### 同时导入默认导出和命名导出
 
-```typescript
+```ts
 // main.ts
-
 import add, { subtract } from './utils';
-
 console.log(add(2, 3)); // 输出：5
 console.log(subtract(5, 2)); // 输出：3
 ```
@@ -3012,7 +2907,7 @@ console.log(subtract(5, 2)); // 输出：3
 
 - **模块解析**：TypeScript 使用模块解析策略来定位导入的模块。默认策略是 `node` 解析。
 - **模块格式**：TypeScript 支持多种模块格式，包括 `CommonJS`、`ES` 模块和 `AMD`。
-- **命名空间**：虽然在现代 TypeScriptEr 中不太常见，但命名空间可用于在单个文件中组织代码。
+- **命名空间**：虽然在现代 TypeScript 中不太常见，但命名空间可用于在单个文件中组织代码。
 
 通过理解和有效使用默认导出，您可以创建结构良好、可维护且高效的 TypeScript 代码。
 
@@ -3023,7 +2918,7 @@ console.log(subtract(5, 2)); // 输出：3
 在 TypeScript 中，命名空间提供了一种将代码组织为逻辑组的方式。它们与模块相似，但有一些关键区别。与模块不同，命名空间不是独立的编译单元。它们本质上是代码块，有助于防止命名冲突并改善代码组织。
 
 **语法：**
-```typescript
+```ts
 namespace NamespaceName {
   // 代码写在这里
 }
@@ -3037,14 +2932,12 @@ namespace NamespaceName {
 
 ### 创建和使用命名空间
 
-```typescript
+```ts
 // geometry.ts
-
 namespace Geometry {
   export function calculateArea(shape: string, dimensions: any): number {
     // ...
   }
-
   export interface Shape {
     name: string;
     area: number;
@@ -3054,9 +2947,8 @@ namespace Geometry {
 
 要访问命名空间的成员，请使用命名空间名称后跟一个点：
 
-```typescript
+```ts
 // main.ts
-
 let circleArea = Geometry.calculateArea('circle', { radius: 5 });
 ```
 
@@ -3064,7 +2956,7 @@ let circleArea = Geometry.calculateArea('circle', { radius: 5 });
 
 您可以创建嵌套命名空间以进一步组织：
 
-```typescript
+```ts
 namespace Math {
   export namespace Geometry {
     export function calculateArea(shape: string, dimensions: any): number {
@@ -3076,7 +2968,7 @@ namespace Math {
 
 使用点号表示法访问嵌套命名空间的成员：
 
-```typescript
+```ts
 let circleArea = Math.Geometry.calculateArea('circle', { radius: 5 });
 ```
 
@@ -3097,9 +2989,8 @@ let circleArea = Math.Geometry.calculateArea('circle', { radius: 5 });
 - **内部访问**：同一命名空间内的成员可以直接相互访问。
 - **外部访问**：要从命名空间外部访问成员，您需要将它们导出。
 
-```typescript
+```ts
 // utils.ts
-
 namespace Utils {
   export function add(a: number, b: number): number {
     return a + b;
@@ -3107,7 +2998,6 @@ namespace Utils {
 }
 
 // main.ts
-
 let result = Utils.add(2, 3);
 ```
 
@@ -3141,24 +3031,20 @@ let result = Utils.add(2, 3);
 
 #### 示例：使用命名空间构建几何库
 
-```typescript
+```ts
 namespace Geometry {
   export class Point {
     constructor(public x: number, public y: number) {}
   }
-
   export namespace Shapes {
     export class Circle {
       constructor(public centre: Point, public radius: number) {}
-
       area(): number {
         return Math.PI * this.radius * this.radius;
       }
     }
-
     export class Rectangle {
       constructor(public width: number, public height: number) {}
-
       area(): number {
         return this.width * this.height;
       }
@@ -3183,29 +3069,25 @@ namespace Geometry {
 
 ### 导入和导出
 
-
- 
- # 导出
+#### 导出
 
 要使元素能被其他模块访问，请使用 `export` 关键字。
 
-```TypeScript
+```ts
 // mathUtils.ts
 export function add(a: number, b: number): number {
   return a + b;
 }
-
 export const PI = 3.14159;
 ```
 
-## 导入
+#### 导入
 
 要使用来自其他模块的元素，请使用 `import` 关键字。
 
-```TypeScript
+```ts
 // main.ts
 import { add, PI } from './mathUtils';
-
 console.log(add(2, 3)); // Output: 5
 console.log(PI); // Output: 3.14159
 ```
@@ -3214,7 +3096,7 @@ console.log(PI); // Output: 3.14159
 
 一个模块只能有一个默认导出。
 
-```TypeScript
+```ts
 // logger.ts
 export default function log(message: string): void {
   console.log(message);
@@ -3223,10 +3105,9 @@ export default function log(message: string): void {
 
 导入默认导出时无需使用花括号：
 
-```TypeScript
+```ts
 // main.ts
 import logger from './logger';
-
 logger('Hello, world!');
 ```
 
@@ -3234,7 +3115,7 @@ logger('Hello, world!');
 
 你可以为导入或导出的元素使用别名：
 
-```TypeScript
+```ts
 // mathUtils.ts
 export function add(a: number, b: number): number {
   return a + b;
@@ -3242,7 +3123,6 @@ export function add(a: number, b: number): number {
 
 // main.ts
 import { add as sum } from './mathUtils';
-
 console.log(sum(2, 3)); // Output: 5
 ```
 
@@ -3250,7 +3130,7 @@ console.log(sum(2, 3)); // Output: 5
 
 你可以从另一个模块重新导出元素：
 
-```TypeScript
+```ts
 // utils.ts
 export * from './mathUtils';
 ```
@@ -3259,7 +3139,7 @@ export * from './mathUtils';
 
 使用 `import()` 在运行时惰性导入模块：
 
-```TypeScript
+```ts
 // main.ts
 import('lodash').then(lodash => {
   console.log(lodash.default.isEmpty({})); // Output: true
@@ -3285,36 +3165,30 @@ TypeScript 同时支持 CommonJS 和 ES 模块。默认是 ES 模块。你可以
 
 ## 示例：创建可复用的库
 
-```TypeScript
+```ts
 // shapes.ts
 export interface Shape {
   area(): number;
 }
-
 export class Circle implements Shape {
   constructor(public radius: number) {}
-  
   area(): number {
     return Math.PI * this.radius * this.radius;
   }
 }
-
 export class Rectangle implements Shape {
   constructor(public width: number, public height: number) {}
-  
   area(): number {
     return this.width * this.height;  
   }
 }
 ```
 
-```TypeScript
+```ts
 // main.ts
 import { Circle, Rectangle } from './shapes';
-
 const circle = new Circle(5);
 const rectangle = new Rectangle(4, 3);
-
 console.log(circle.area()); // Output: 78.53981633974483
 console.log(rectangle.area()); // Output: 12
 ```
@@ -3335,7 +3209,7 @@ console.log(rectangle.area()); // Output: 12
 
 ### 基本语法
 
-```TypeScript
+```ts
 declare module ModuleName {
   // Augmentation code here
 }
@@ -3343,9 +3217,8 @@ declare module ModuleName {
 
 ### 扩展接口
 
-```TypeScript
+```ts
 // Assuming a third-party library defines an interface Person
-
 declare module 'third-party-library' {
   interface Person {
     age: number;
@@ -3354,7 +3227,6 @@ declare module 'third-party-library' {
 
 // Now you can use the augmented Person interface
 import { Person } from 'third-party-library';
-
 const person: Person = {
   name: 'John Doe',
   age: 30
@@ -3363,9 +3235,8 @@ const person: Person = {
 
 ### 扩展类
 
-```TypeScript
+```ts
 // Assuming a third-party library defines a class Car
-
 declare module 'third-party-library' {
   interface Car {
     colour: string;
@@ -3374,7 +3245,6 @@ declare module 'third-party-library' {
 
 // Now you can use the augmented Car interface
 import { Car } from 'third-party-library';
-
 const car: Car = {
   make: 'Toyota',
   model: 'Camry',
@@ -3386,7 +3256,7 @@ const car: Car = {
 
 你可以扩展整个模块：
 
-```TypeScript
+```ts
 declare module 'lodash' {
   function myCustomFunction(): void;
 }
@@ -3396,7 +3266,7 @@ declare module 'lodash' {
 
 你可以扩展 `Array` 或 `String` 等全局对象：
 
-```TypeScript
+```ts
 declare global {
   interface Array<T> {
     first(): T | undefined;
@@ -3430,40 +3300,35 @@ if (Array.prototype.first === undefined) {
 
 ### 示例：扩展自定义模块
 
-```TypeScript
+```ts
 // shapes.ts
 export interface Shape {
   area(): number;
 }
-
 export class Circle implements Shape {
   constructor(public radius: number) {}
-  
   area(): number {
     return Math.PI * this.radius * this.radius;
   }
 }
 ```
 
-```TypeScript
+```ts
 // shapes.d.ts (augmentation file)
 declare module './shapes' {
   interface Shape {
     perimeter(): number;
   }
-  
   interface Circle {
     diameter(): number;
   }
 }
 ```
 
-```TypeScript
+```ts
 // main.ts
 import { Circle } from './shapes';
-
 const circle = new Circle(5);
-
 console.log(circle.area()); // Output: 78.53981633974483
 console.log(circle.perimeter()); // Output: 31.41592653589793
 console.log(circle.diameter()); // Output: 10
@@ -3499,11 +3364,10 @@ my-project
 
 `math.ts`：
 
-```TypeScript
+```ts
 export function add(x: number, y: number): number {
   return x + y;
 }
-
 export function subtract(x: number, y: number): number {
   return x - y;
 }
@@ -3511,9 +3375,8 @@ export function subtract(x: number, y: number): number {
 
 `index.ts`：
 
-```TypeScript
+```ts
 import { add, subtract } from './math';
-
 console.log(add(5, 3)); // Output: 8
 console.log(subtract(7, 2)); // Output: 5
 ```
@@ -3527,7 +3390,7 @@ console.log(subtract(7, 2)); // Output: 5
 
 修改 `math.ts`：
 
-```TypeScript
+```ts
 export default function multiply(x: number, y: number): number {
   return x * y;
 }
@@ -3535,9 +3398,8 @@ export default function multiply(x: number, y: number): number {
 
 修改 `index.ts`：
 
-```TypeScript
+```ts
 import multiply from './math';
-
 console.log(multiply(4, 6)); // Output: 24
 ```
 
@@ -3550,16 +3412,10 @@ console.log(multiply(4, 6)); // Output: 24
 
 修改 `math.ts`：
 
-```TypeScript
-```
-
-
- 
- ```typescript
+```ts
 export default function multiply(x: number, y: number): number {
   return x * y;
 }
-
 export function divide(x: number, y: number): number {
   return x / y;
 }
@@ -3567,11 +3423,9 @@ export function divide(x: number, y: number): number {
 
 修改 `index.ts`：
 
-```typescript
+```ts
 import multiply, { divide } from './math';
-
 console.log(multiply(3, 5)); // 输出: 15
-
 console.log(divide(10, 2)); // 输出: 5
 ```
 
@@ -3584,7 +3438,7 @@ console.log(divide(10, 2)); // 输出: 5
 
 在 `src` 目录中创建一个新文件 `utils.ts`：
 
-```typescript
+```ts
 export function greet(name: string): string {
   return `Hello, ${name}!`;
 }
@@ -3592,14 +3446,11 @@ export function greet(name: string): string {
 
 修改 `index.ts`:
 
-```typescript
+```ts
 import multiply, { divide } from './math';
 import { greet } from './utils';
-
 console.log(multiply(3, 5)); // 输出: 15
-
 console.log(divide(10, 2)); // 输出: 5
-
 console.log(greet('Alice')); // 输出: Hello, Alice!
 ```
 
@@ -3625,7 +3476,7 @@ my-project
 
 `greeting.ts`：
 
-```typescript
+```ts
 export function displayGreeting(name: string): void {
   console.log(`Welcome, ${name}!`);
 }
@@ -3633,9 +3484,8 @@ export function displayGreeting(name: string): void {
 
 修改 `index.ts`：
 
-```typescript
+```ts
 import { displayGreeting } from './components/greeting';
-
 displayGreeting('Bob'); // 输出: Welcome, Bob!
 ```
 
@@ -3665,7 +3515,7 @@ displayGreeting('Bob'); // 输出: Welcome, Bob!
 
 函数声明是在 TypeScript 中定义函数的传统方式。它由 `function` 关键字、函数名、参数（可选类型）和返回类型组成。
 
-```typescript
+```ts
 function greet(name: string): string {
   return `Hello, ${name}!`;
 }
@@ -3683,7 +3533,7 @@ function greet(name: string): string {
 
 函数表达式是一个求值为函数值的表达式。它可以赋值给变量，或用作另一个函数的参数。
 
-```typescript
+```ts
 const add = function (x: number, y: number): number {
   return x + y;
 };
@@ -3700,7 +3550,7 @@ const add = function (x: number, y: number): number {
 
 TypeScript 支持箭头函数，这是一种简洁的函数书写语法。
 
-```typescript
+```ts
 const multiply = (x: number, y: number): number => x * y;
 ```
 
@@ -3710,7 +3560,7 @@ const multiply = (x: number, y: number): number => x * y;
 
 TypeScript 允许函数重载，即可以定义多个同名但参数类型不同的函数。编译器根据传入的参数来决定调用哪个函数。
 
-```typescript
+```ts
 function greet(name: string): string;
 function greet(name: number): string;
 function greet(name: any): string {
@@ -3724,7 +3574,7 @@ function greet(name: any): string {
 
 你可以使用 `?` 符号使函数参数变为可选。你也可以为参数提供默认值。
 
-```typescript
+```ts
 function greet(name?: string): string {
   return `Hello, ${name || 'world'}!`;
 }
@@ -3734,7 +3584,7 @@ function greet(name?: string): string {
 
 剩余参数允许你将不确定数量的参数表示为一个数组。
 
-```typescript
+```ts
 function sum(...numbers: number[]): number {
   return numbers.reduce((total, num) => total + num, 0);
 }
@@ -3744,9 +3594,8 @@ function sum(...numbers: number[]): number {
 
 TypeScript 提供了一种定义函数类型的方式，可用于指定函数变量或参数的类型。
 
-```typescript
+```ts
 type GreetFunction = (name: string) => string;
-
 const greet: GreetFunction = (name) => `Hello, ${name}!`;
 ```
 
@@ -3754,7 +3603,7 @@ const greet: GreetFunction = (name) => `Hello, ${name}!`;
 
 回调函数是作为参数传递给其他函数的函数。TypeScript 支持为回调函数添加类型注解。
 
-```typescript
+```ts
 function processArray(array: number[], callback: (num: number) => void) {
   array.forEach(callback);
 }
@@ -3774,7 +3623,7 @@ function processArray(array: number[], callback: (num: number) => void) {
 - 一个箭头（`=>`）
 - 函数体
 
-```typescript
+```ts
 const greet = (name: string): string => {
   return `Hello, ${name}!`;
 };
@@ -3784,7 +3633,7 @@ const greet = (name: string): string => {
 
 如果函数体由单个表达式组成，你可以省略大括号和 `return` 关键字：
 
-```typescript
+```ts
 const square = (x: number): number => x * x;
 ```
 
@@ -3792,7 +3641,7 @@ const square = (x: number): number => x * x;
 
 如果函数不接受任何参数，你可以省略括号：
 
-```typescript
+```ts
 const logMessage = (): void => console.log("Hello");
 ```
 
@@ -3800,14 +3649,12 @@ const logMessage = (): void => console.log("Hello");
 
 箭头函数的主要优势之一是其词法 `this` 绑定。这意味着箭头函数内部的 `this` 关键字指向外部作用域的 `this`。
 
-```typescript
+```ts
 class Person {
   name: string;
-
   constructor(name: string) {
     this.name = name;
   }
-
   greet = () => {
     console.log(`Hello, my name is ${this.name}`);
   };
@@ -3820,15 +3667,12 @@ class Person {
 
 箭头函数通常用作数组方法（如 `map`、`filter` 和 `reduce`）的回调：
 
-```typescript
+```ts
 const numbers = [1, 2, 3, 4, 5];
-
 // 使用 map 将每个数字翻倍
 const doubledNumbers = numbers.map(num => num * 2);
-
 // 过滤偶数
 const evenNumbers = numbers.filter(num => num % 2 === 0);
-
 // 计算数字之和
 const sum = numbers.reduce((total, num) => total + num, 0);
 ```
@@ -3837,28 +3681,23 @@ const sum = numbers.reduce((total, num) => total + num, 0);
 
 你可以将箭头函数用作接口的属性：
 
-```typescript
+```ts
 interface MathOperations {
   add: (x: number, y: number) => number;
   subtract: (x: number, y: number) => number;
 }
+
+const calculator: MathOperations = {
+  add: (x, y) => x + y,
+  subtract: (x, y) => x - y
+};
 ```
 
-
- 
- ```
-const calculator: MathOperations
-
-add: (x, y) => x + y,
-
-subtract: (x, y) => x - y
-```
-
-## 箭头函数与泛型
+### 箭头函数与泛型
 
 箭头函数可以与泛型类型一起使用：
 
-```TypeScript
+```ts
 const identity = <T>(arg: T): T => arg;
 ```
 
@@ -3893,7 +3732,7 @@ TypeScript 作为 JavaScript 的超集，引入了可选参数和默认参数，
 
 TypeScript 中的可选参数是指在调用函数时可以省略的参数。它通过在参数名后添加问号（`?`）来表示。
 
-```TypeScript
+```ts
 function greet(name: string, lastName?: string): string {
   if (lastName) {
     return `Hello, ${name} ${lastName}!`;
@@ -3917,7 +3756,7 @@ console.log(greet("John", "Doe")); // 输出：Hello, John Doe!
 
 TypeScript 中的默认参数为参数指定一个值，当未提供实参时将使用该值。
 
-```TypeScript
+```ts
 function greet(name: string, greeting: string = "Hello"): string {
   return `${greeting}, ${name}!`;
 }
@@ -3933,7 +3772,7 @@ console.log(greet("Bob", "Hi")); // 输出：Hi, Bob!
 - 默认参数可以放在参数列表的任何位置。
 - 如果想显式地向默认参数传递 `undefined` 以使用默认值，需要使用 `undefined` 关键字。
 
-```TypeScript
+```ts
 function greet(greeting: string = "Hello", name: string) {
   console.log(`${greeting}, ${name}!`);
 }
@@ -3945,7 +3784,7 @@ greet(undefined, "Charlie"); // 输出：Hello, Charlie!
 
 你可以在函数中结合使用可选参数和默认参数：
 
-```TypeScript
+```ts
 function greet(name: string, lastName?: string, greeting: string = "Hello"): string {
   if (lastName) {
     return `${greeting}, ${name} ${lastName}!`;
@@ -3982,7 +3821,7 @@ TypeScript 中的剩余参数允许你将不定数量的参数表示为数组。
 
 剩余参数通过在参数名前添加三个点（`...`）来定义。它必须是函数参数列表中的最后一个参数。
 
-```TypeScript
+```ts
 function sum(...numbers: number[]): number {
   return numbers.reduce((total, num) => total + num, 0);
 }
@@ -3994,7 +3833,7 @@ function sum(...numbers: number[]): number {
 
 当使用多个参数调用函数时，已定义参数之后的额外参数将被收集到数组中，并赋值给剩余参数。
 
-```TypeScript
+```ts
 function logNumbers(...numbers: number[]): void {
   console.log(numbers);
 }
@@ -4006,7 +3845,7 @@ logNumbers(1, 2, 3, 4, 5); // 输出：[1, 2, 3, 4, 5]
 
 你可以将剩余参数与普通参数结合使用：
 
-```TypeScript
+```ts
 function greet(greeting: string, ...names: string[]): void {
   console.log(`${greeting}, ${names.join(", ")}`);
 }
@@ -4020,7 +3859,7 @@ greet('Hello', 'Alice', 'Bob', 'Charlie'); // 输出：Hello, Alice, Bob, Charli
 
 你可以解构剩余参数来提取特定元素或属性：
 
-```TypeScript
+```ts
 function processNumbers(first: number, ...rest: number[]) {
   console.log(first); // 访问第一个数字
   console.log(rest);  // 将其余数字作为数组访问
@@ -4033,7 +3872,7 @@ processNumbers(1, 2, 3, 4);
 
 剩余参数的类型是指定元素类型的数组。可以使用类型注解来确保类型安全：
 
-```TypeScript
+```ts
 function processStrings(...strings: string[]): void;
 ```
 
@@ -4041,7 +3880,7 @@ function processStrings(...strings: string[]): void;
 
 展开运算符（`...`）可用于将数组作为单独参数传递给接受剩余参数的函数：
 
-```TypeScript
+```ts
 const numbers = [1, 2, 3];
 sum(...numbers); // 等价于 sum(1, 2, 3)
 ```
@@ -4056,17 +3895,14 @@ sum(...numbers); // 等价于 sum(1, 2, 3)
 ### 最佳实践
 
 - 当需要处理未定义数量的参数时，使用剩余参数。
-
-
- 
- - 将剩余参数放在函数参数列表的最后。
+- 将剩余参数放在函数参数列表的最后。
 - 为剩余参数使用类型注解，以确保类型安全。
 - 考虑使用解构来从剩余参数中提取特定元素。
 - 在使用剩余参数处理大量参数时，注意潜在的性能影响。
 
 剩余参数是 TypeScript 中一个强大的特性，它为处理可变数量参数的函数提供了给出了灵活性和便利性。通过了解如何有效使用剩余参数，你可以编写出更加通用且更具表现力的代码。
 
-## 补充说明
+### 补充说明
 
 - 剩余参数可以与可选参数和默认参数一起使用。
 - 剩余参数必须始终是函数参数列表中的最后一个参数。
@@ -4083,7 +3919,7 @@ TypeScript 中的重载允许你定义多个同名但参数类型不同的函数
 
 要定义重载函数，你需要声明多个函数签名而不提供实现。实际的实现是在一个具有更通用签名的单一函数中提供的：
 
-```typescript
+```ts
 function add(x: number, y: number): number;
 function add(x: string, y: string): string;
 function add(x: any, y: any): any {
@@ -4104,7 +3940,7 @@ function add(x: any, y: any): any {
 
 你可以在重载函数中使用可选参数：
 
-```typescript
+```ts
 function greet(name: string, lastName?: string): string;
 function greet(name: string, greeting: string): string;
 function greet(name: string, lastNameOrGreeting?: string | undefined): string {
@@ -4127,7 +3963,7 @@ function greet(name: string, lastNameOrGreeting?: string | undefined): string {
 
 你也可以在重载函数中使用剩余参数：
 
-```typescript
+```ts
 function sum(...numbers: number[]): number;
 function sum(x: number, ...numbers: number[]): number;
 function sum(x?: number, ...numbers: number[]): number {
@@ -4146,7 +3982,7 @@ function sum(x?: number, ...numbers: number[]): number {
 
 你可以使用接口来定义用于重载的函数签名：
 
-```typescript
+```ts
 interface Addable {
   add(x: number, y: number): number;
 }
@@ -4183,7 +4019,7 @@ const adder: Addable = add;
 
 **1.1** 创建一个函数，接受两个数字作为参数，并返回它们的和。
 
-```typescript
+```ts
 function add(num1: number, num2: number): number {
   return num1 + num2;
 }
@@ -4191,7 +4027,7 @@ function add(num1: number, num2: number): number {
 
 **1.2** 创建一个函数，接受一个字符串作为参数，并返回它的长度。
 
-```typescript
+```ts
 function calculateStringLength(str: string): number {
   return str.length;
 }
@@ -4199,7 +4035,7 @@ function calculateStringLength(str: string): number {
 
 **1.3** 创建一个函数，接受一个数字数组作为参数，并返回平均值。
 
-```typescript
+```ts
 function calculateAverage(numbers: number[]): number {
   const sum = numbers.reduce((total, num) => total + num, 0);
   return sum / numbers.length;
@@ -4210,7 +4046,7 @@ function calculateAverage(numbers: number[]): number {
 
 **2.1** 创建一个函数，接受一个名字和一个可选的姓氏，并返回全名。
 
-```typescript
+```ts
 function getFullName(firstName: string, lastName?: string): string {
   return lastName ? `${firstName} ${lastName}` : firstName;
 }
@@ -4218,7 +4054,7 @@ function getFullName(firstName: string, lastName?: string): string {
 
 **2.2** 创建一个函数，接受一个基数和一个可选的指数，并返回基数 raised to the exponent 的结果（默认指数为 `2`）。
 
-```typescript
+```ts
 function power(base: number, exponent: number = 2): number {
   return Math.pow(base, exponent);
 }
@@ -4228,7 +4064,7 @@ function power(base: number, exponent: number = 2): number {
 
 **3.1** 创建一个函数，接受可变数量的数字，并返回它们的和。
 
-```typescript
+```ts
 function sum(...numbers: number[]): number {
   return numbers.reduce((total, num) => total + num, 0);
 }
@@ -4236,7 +4072,7 @@ function sum(...numbers: number[]): number {
 
 **3.2** 创建一个函数，接受可变数量的字符串，并将它们连接成单个字符串。
 
-```typescript
+```ts
 function concatenateStrings(...strings: string[]): string {
   return strings.join('');
 }
@@ -4246,7 +4082,7 @@ function concatenateStrings(...strings: string[]): string {
 
 **4.1** 创建一个重载函数，计算矩形或圆形的面积。
 
-```typescript
+```ts
 function calculateArea(width: number, height: number): number;
 function calculateArea(radius: number): number;
 function calculateArea(shape: number | { width: number; height: number }): number {
@@ -4257,6 +4093,8 @@ function calculateArea(shape: number | { width: number; height: number }): numbe
   }
 }
 ```
+
+
 
 ### 练习 5：箭头函数
 
@@ -4291,11 +4129,6 @@ type MathOperation = (x: number, y: number) => number;
 **6.2** 创建一个函数，接受一个函数类型作为参数，并将其应用于两个数字。
 
 ```typescript
-```
-
-
- 
- ```
 function applyOperation(operation: MathOperation, x: number, y: number): number {
   return operation(x, y);
 }
@@ -4332,7 +4165,7 @@ function applyOperation(operation: MathOperation, x: number, y: number): number 
 
 #### 创建类
 
-```
+```typescript
 class Person {
   firstName: string;
   lastName: string;
@@ -4359,7 +4192,7 @@ class Person {
 
 #### 创建对象
 
-```
+```typescript
 const person1 = new Person("John", "Doe", 30);
 const person2 = new Person("Jane", "Smith", 25);
 
@@ -4371,10 +4204,9 @@ person2.greet(); // Output: Hello, my name is Jane Smith and I am 25 years old.
 
 #### 访问属性和方法
 
-```
+```typescript
 console.log(person1.firstName); // Output: John
 console.log(person2.age); // Output: 25
-
 person1.greet(); // Output: Hello, my name is John Doe and I am 30 years old.
 ```
 
@@ -4384,7 +4216,7 @@ person1.greet(); // Output: Hello, my name is John Doe and I am 30 years old.
 
 TypeScript 支持继承，这允许你基于现有类创建新类。
 
-```
+```typescript
 class Employee extends Person {
   salary: number;
 
@@ -4410,7 +4242,7 @@ class Employee extends Person {
 
 TypeScript 支持访问修饰符来控制类成员的可见性。
 
-```
+```typescript
 class Car {
   private color: string;
   protected model: string;
@@ -4438,7 +4270,7 @@ class Car {
 
 静态成员属于类本身，而不是单独的对象。
 
-```
+```typescript
 class MathUtils {
   static PI = 3.14159;
 
@@ -4454,7 +4286,7 @@ class MathUtils {
 
 接口可用于定义对象的形状，而类可以实现接口。
 
-```
+```typescript
 interface Shape {
   getArea(): number;
 }
@@ -4484,7 +4316,7 @@ TypeScript 还提供了许多与类相关的其他特性，例如抽象类、 ge
 
 抽象类是其他类的蓝图。它们不能直接实例化。它们通常包含抽象方法，即没有实现的方法声明。子类必须为这些抽象方法提供实现。
 
-```
+```typescript
 abstract class Shape {
   abstract getArea(): number;
 }
@@ -4509,7 +4341,7 @@ class Rectangle extends Shape {
 
 接口定义了类必须遵守的契约。它们指定了类必须实现的方法和属性。
 
-```
+```typescript
 interface Printable {
   print(): void;
 }
@@ -4533,7 +4365,7 @@ class Book implements Printable {
 
 Getter 和 setter 提供对对象属性的受控访问。
 
-```
+```typescript
 class Person {
   private _age: number;
 
@@ -4555,7 +4387,7 @@ class Person {
 
 静态成员属于类本身，而不是类的实例。
 
-```
+```typescript
 class MathUtils {
   static PI = 3.14159;
 
@@ -4574,7 +4406,7 @@ class MathUtils {
 
 ### 示例：一个简单的银行系统
 
-```
+```typescript
 abstract class Account {
   protected balance: number;
 
@@ -4617,35 +4449,34 @@ class SavingsAccount extends Account {
 
 ### TypeScript 中的继承
 
-
- 
 继承是面向对象编程（OOP）中的一个核心概念，它允许你基于现有类（基类或父类）创建新的类（派生类或子类）。这促进了代码的可重用性、模块化以及类之间的层次关系。
 
 ## 理解继承
 
 在 TypeScript 中，你使用 `extends` 关键字来建立类之间的继承关系。子类继承父类的属性和方法，同时也可以引入新成员或覆盖现有成员。
 
-```
-class Animal
+```typescript
+class Animal {
   name: string;
-  constructor(name: string)
+
+  constructor(name: string) {
     this.name = name;
   }
 
-  makeSound(): void
+  makeSound(): void {
     console.log('Generic animal sound');
   }
 }
 
-class Dog extends Animal
+class Dog extends Animal {
   breed: string;
 
-  constructor(name: string, breed: string)
+  constructor(name: string, breed: string) {
     super(name); // Call the parent constructor
     this.breed = breed;
   }
 
-  makeSound(): void
+  makeSound(): void {
     console.log('Woof!');
   }
 }
@@ -4668,19 +4499,19 @@ class Dog extends Animal
 - `protected`：在类内部及其子类中可以访问。
 - `private`：仅在类内部可以访问。
 
-```
-class Animal
+```typescript
+class Animal {
   protected age: number; // Accessible within Animal and its subclasses
 
-  constructor(protected name: string, age: number)
+  constructor(protected name: string, age: number) {
     this.name = name;
     this.age = age;
   }
 }
 
-class Dog extends Animal
+class Dog extends Animal {
   // Can access protected members of Animal
-  getInfo()
+  getInfo() {
     console.log(`Name: ${this.name}, Age: ${this.age}`);
   }
 }
@@ -4690,20 +4521,20 @@ class Dog extends Animal
 
 当子类对从父类继承的方法提供不同的实现时，这被称为方法覆盖。
 
-```
-class Shape
-  area(): number
+```typescript
+class Shape {
+  area(): number {
     return 0; // Default implementation
   }
 }
 
-class Rectangle extends Shape
-  constructor(private width: number, private height: number)
+class Rectangle extends Shape {
+  constructor(private width: number, private height: number) {
     super();
   }
 
-  area(): number
-    return this.width * this.height;  
+  area(): number {
+    return this.width * this.height;
   }
 }
 ```
@@ -4712,9 +4543,9 @@ class Rectangle extends Shape
 
 继承实现了多态性，使得不同类的对象可以被当作同一类型来处理。
 
-```
-function printAnimalSound(animal: Animal)
-  animal.makeSound.basicEmailTemplate();
+```typescript
+function printAnimalSound(animal: Animal) {
+  animal.makeSound();
 }
 
 let dog = new Dog("Buddy", "Golden Retriever");
@@ -4728,12 +4559,12 @@ printAnimalSound(cat); // Output: Generic animal sound
 
 TypeScript 也支持使用 `extends` 关键字进行接口继承。接口可以继承其他接口以创建更具体的契约。
 
-```
-interface Shape
+```typescript
+interface Shape {
   area(): number;
 }
 
-interface ColoredShape extends Shape
+interface ColoredShape extends Shape {
   colour: string;
 }
 ```
@@ -4764,15 +4595,15 @@ interface ColoredShape extends Shape
 
 ### 1. 编译时多态性（重载）
 
-重载是指在类中定义多个同名但参数不同的方法的能力。编译器根据提供的参数 Salvador 确定要调用的适当方法。
+重载是指在类中定义多个同名但参数不同的方法的能力。编译器根据提供的参数确定要调用的适当方法。
 
-```
-class Shape
-  area(shape: number): number
+```typescript
+class Shape {
+  area(shape: number): number {
     return Math.PI * shape * shape; // Assuming a circle
   }
 
-  area(shape: { width: number; height: number }): number
+  area(shape: { width: number; height: number }): number {
     return shape.width * shape.height; // Assuming a rectangle
   }
 }
@@ -4784,24 +4615,24 @@ class Shape
 
 覆盖发生在子类为从父类继承的方法提供特定实现时。这允许不同类型的对象在运行时被当作同一类型来处理。
 
-```
-abstract class Animal
+```typescript
+abstract class Animal {
   abstract makeSound(): void;
 }
 
-class Dog extends Animal
-  makeSound(): void
+class Dog extends Animal {
+  makeSound(): void {
     console.log("Woof!");
   }
 }
 
-class Cat extends Animal
-  makeSound(): void
-    console.log("Meow!");  
+class Cat extends Animal {
+  makeSound(): void {
+    console.log("Meow!");
   }
 }
 
-function animalSound(animal: Animal)
+function animalSound(animal: Animal) {
   animal.makeSound();
 }
 ```
@@ -4812,28 +4643,28 @@ function animalSound(animal: Animal)
 
 接口在实现 TypeScript 的多态性方面起着关键作用。通过定义通用契约，接口允许不同类型的对象被当作同一类型来处理。
 
-```
-interface Shape
+```typescript
+interface Shape {
   area(): number;
 }
 
-class Circle implements Shape
+class Circle implements Shape {
   constructor(public radius: number) {}
 
-  area(): number
-    return Math.PI * this.radius * this.radius;  
+  area(): number {
+    return Math.PI * this.radius * this.radius;
   }
 }
 
-class Rectangle implements Shape
+class Rectangle implements Shape {
   constructor(public width: number, public height: number) {}
 
-  area(): number
-    return this.width * this.height;  
+  area(): number {
+    return this.width * this.height;
   }
 }
 
-function printArea(shape: Shape)
+function printArea(shape: Shape) {
   console.log(shape.area());
 }
 ```
@@ -4856,12 +4687,10 @@ function printArea(shape: Shape)
 
 ### 其他考虑因素
 
-- TypeScript 支持隐式和显 crowed 类型断言来实现多态性。
+- TypeScript 支持隐式和显式类型断言来实现多态性。
 - 多态性可以与其他 OOP 概念如继承和封装结合使用。
 - 理解里氏替换原则（LSP）对于有效使用多态性至关重要。
 
-
- 
 多态性是一个强大的概念，它能增强 TypeScript 代码的**灵活性**、**可复用性**和**可维护性**。掌握多态性，你就能创建出更加健壮、适应性更强的软件系统。
 
 ## TypeScript 中的里氏替换原则（LSP）
@@ -5079,312 +4908,175 @@ abstract class Shape {
     // 其他成员
 }
 
-class Rectangle extends Shape
-```
+class Rectangle extends Shape {
+    constructor(public width: number, public height: number) {
+        super();
+    }
 
+    getArea(): number {
+        return this.width * this.height;
+    }
 
- ```typescript
-super();
-
-}
-```
-
-```typescript
-getArea(): number
-```
-
-```typescript
-return this.width * this.height;
-
-}
-```
-
-```typescript
-getPerimeter(): number
-```
-
-```typescript
-return 2 * (this.width + this.height);
-
+    getPerimeter(): number {
+        return 2 * (this.width + this.height);
+    }
 }
 
-class Circle extends Shape
+class Circle extends Shape {
+    constructor(private radius: number) {
+        super();
+    }
 
-constructor(private radius: number)
-```
+    getArea(): number {
+        return Math.PI * this.radius * this.radius;
+    }
 
-```typescript
-super();
-
-}
-```
-
-```typescript
-getArea(): number
-```
-
-```typescript
-return Math.PI * this.radius * this.radius;
-
-}
-```
-
-```typescript
-getPerimeter(): number
-```
-
-```typescript
-return 2 * Math.PI * this.radius;
-
+    getPerimeter(): number {
+        return 2 * Math.PI * this.radius;
+    }
 }
 
-class Triangle extends Shape
+class Triangle extends Shape {
+    constructor(private base: number, private height: number, private side1: number, private side2: number) {
+        super();
+    }
 
-constructor(private base: number, private height: number, private side1: number, private side2: number)
-```
+    getArea(): number {
+        return 0.5 * this.base * this.height;
+    }
 
-```typescript
-super();
-
+    getPerimeter(): number {
+        return this.side1 + this.side2 + this.base;
+    }
 }
-```
-
-```typescript
-getArea(): number
-```
-
-```typescript
-return 0.5 * this.base * this.height;
-
-}
-```
-
-```typescript
-getPerimeter(): number
-```
-
-```typescript
-return this.side1 + this.side2 + this.base;
 ```
 
 ### 练习 2：员工层次结构
 
 **问题**：创建一个抽象类 `Employee`，包含属性 `name` 和 `salary`。从 `Employee` 派生出 `Manager`、`Developer` 和 `Salesperson` 类。为每个派生类添加特定的属性和方法。
 
-TypeScript
-
 ```typescript
-abstract class Employee
-
-constructor(public name: string, public salary: number)
-
+abstract class Employee {
+    constructor(public name: string, public salary: number) {}
 }
 
-class Manager extends Employee
+class Manager extends Employee {
+    constructor(name: string, salary: number, public department: string) {
+        super(name, salary);
+    }
 
-constructor(name: string, salary: number, public department: string)
-```
-
-```typescript
-super(name, salary);
-
-}
-```
-
-```typescript
-getBonus(bonusPercentage: number): number
-```
-
-```typescript
-return this.salary * bonusPercentage / 100;
-
+    getBonus(bonusPercentage: number): number {
+        return this.salary * bonusPercentage / 100;
+    }
 }
 
-class Developer extends Employee
+class Developer extends Employee {
+    constructor(name: string, salary: number, public programmingLanguage: string) {
+        super(name, salary);
+    }
 
-constructor(name: string, salary: number, public programmingLanguage: string)
-```
-
-```typescript
-super(name, salary);
-
-}
-```
-
-```typescript
-getProjectsCompleted(): number
-```
-
-```typescript
-// Implement logic to get projects completed
-```
-
-```typescript
-return 10; // Placeholder
-
+    getProjectsCompleted(): number {
+        // Implement logic to get projects completed
+        return 10; // Placeholder
+    }
 }
 
-class Salesperson extends Employee
+class Salesperson extends Employee {
+    constructor(name: string, salary: number, public salesTarget: number) {
+        super(name, salary);
+    }
 
-constructor(name: string, salary: number, public salesTarget: number)
-```
-
-```typescript
-super(name, salary);
-
+    getCommission(salesAmount: number, commissionRate: number): number {
+        return salesAmount * commissionRate / 100;
+    }
 }
-```
-
-```typescript
-getCommission(salesAmount: number, commissionRate: number): number {
-
-return salesAmount * commissionRate / 100;
 ```
 
 ### 练习 3：动物层次结构
 
 **问题**：创建一个抽象类 `Animal`，包含方法 `makeSound()` 和 `eat()`。从 `Animal` 派生出 `Dog`、`Cat` 和 `Bird` 类。为每种动物实现特定的行为。
 
-TypeScript
-
 ```typescript
-abstract class Animal
-
-abstract makeSound(): void;
-
-abstract eat(): void;
-
-class Dog extends Animal
-
-makeSound(): void
-```
-
-```typescript
-(void)console.log("Woof!");
-
-}
-```
-
-```typescript
-eat(): void
-```
-
-```typescript
-(void)console.log("Eating dog food");
-
+abstract class Animal {
+    abstract makeSound(): void;
+    abstract eat(): void;
 }
 
-class Cat extends Animal
+class Dog extends Animal {
+    makeSound(): void {
+        console.log("Woof!");
+    }
 
-makeSound(): void
-```
-
-```typescript
-(void)console.log("Meow!");
-
-}
-```
-
-```typescript
-eat(): void
-```
-
-```typescript
-(void)console.log("Eating cat food");
-
+    eat(): void {
+        console.log("Eating dog food");
+    }
 }
 
-class Bird extends Animal
+class Cat extends Animal {
+    makeSound(): void {
+        console.log("Meow!");
+    }
 
-makeSound(): void
-```
-
-```typescript
-(void)console.log("Chirp!");
-
+    eat(): void {
+        console.log("Eating cat food");
+    }
 }
-```
 
-```typescript
-eat(): void
-```
+class Bird extends Animal {
+    makeSound(): void {
+        console.log("Chirp!");
+    }
 
-```typescript
-(void)console.log("Eating worms");
+    eat(): void {
+        console.log("Eating worms");
+    }
+}
 ```
 
 ### 练习 4：车辆层次结构
 
 **问题**：创建一个抽象类 `Vehicle`，包含属性 `color` 和 `model`。从 `Vehicle` 派生出 `Car`、`Motorcycle` 和 `Truck` 类。为每种车辆添加特定的属性和方法。
 
-TypeScript
-
 ```typescript
-abstract class Vehicle
-
-constructor(public colour: string, public model: string)
-
+abstract class Vehicle {
+    constructor(public colour: string, public model: string) {}
 }
 
-class Car extends Vehicle
-
-constructor(colour: string, model: string, public numberOfDoors: number)
-```
-
-```typescript
-super(colour, model);
-
+class Car extends Vehicle {
+    constructor(colour: string, model: string, public numberOfDoors: number) {
+        super(colour, model);
+    }
 }
 
-class Motorcycle extends Vehicle
-
-constructor(colour: string, model: string, public engineCapacity: number)
-```
-
-```typescript
-super(colour, model);
-
+class Motorcycle extends Vehicle {
+    constructor(colour: string, model: string, public engineCapacity: number) {
+        super(colour, model);
+    }
 }
 
-class Truck extends Vehicle
-
-constructor(colour: string, model: string, public loadCapacity: number)
-```
-
-```typescript
-super(colour, model);
+class Truck extends Vehicle {
+    constructor(colour: string, model: string, public loadCapacity: number) {
+        super(colour, model);
+    }
+}
 ```
 
 ### 练习 5：图形计算器
 
 **问题**：创建一个类 `ShapeCalculator`，包含用于计算不同图形（矩形、圆形、三角形）面积和周长的静态方法。
 
-TypeScript
-
 ```typescript
-class ShapeCalculator
+class ShapeCalculator {
+    static calculateRectangleArea(width: number, height: number): number {
+        return width * height;
+    }
 
-static calculateRectangleArea(width: number, height: number): number
-```
+    static calculateCircleArea(radius: number): number {
+        return Math.PI * radius * radius;
+    }
 
-```typescript
-return width * height;
-
+    // other methods for other shapes
 }
-```
-
-```typescript
-static calculateCircleArea(radius: number): number
-```
-
-```typescript
-return Math.PI * radius * radius;
-
-}
-```
-
-```typescript
-// other methods for other shapes
 ```
 
 ## 额外挑战：
@@ -5413,60 +5105,29 @@ Try-catch 语句包含两个基本块：
 
 #### 基本语法：
 
-TypeScript
-
 ```typescript
-try
-```
-
-```typescript
-// Code that might throw an exception
-```
-
-```typescript
-catch (error)
-```
-
-```typescript
-// Handle the error
+try {
+    // Code that might throw an exception
+} catch (error) {
+    // Handle the error
+}
 ```
 
 ### 示例：
 
-TypeScript
-
 ```typescript
-function divide(x: number, y: number): number
+function divide(x: number, y: number): number {
+    try {
+        if (y === 0) {
+            throw new Error("Division by zero");
+        }
+        return x / y;
+    } catch (error) {
+        console.error("An error occurred:", error);
+        return 0; // 或者以不同方式处理错误
+    }
+}
 ```
-
-```typescript
-try
-```
-
-```typescript
-if (y === 0)
-```
-
-```typescript
-throw new Error("Division by zero");
-```
-
-```typescript
-return x / y;
-```
-
-```typescript
-catch (error)
-```
-
-```typescript
-console.error("An error occurred:", error);
-```
-
-
- 
- ```markdown
-`return 0;` // 或者以不同方式处理错误
 
 在此示例中，`divide` 函数尝试将 `x` 除以 `y`。如果 `y` 为零，则会抛出一个自定义错误，catch 代码块通过记录错误消息并返回 `0` 来处理它。
 
@@ -5474,13 +5135,14 @@ console.error("An error occurred:", error);
 
 可以向 `try-catch` 语句添加一个可选的 `finally` 代码块。此代码块中的代码始终执行，无论是否抛出异常。它对于清理操作很有用，例如关闭文件或数据库连接。
 
-```
-try
-  // 可能抛出异常的代码
-catch (error)
-  // 处理错误
-finally
-  // 始终执行的代码
+```typescript
+try {
+    // 可能抛出异常的代码
+} catch (error) {
+    // 处理错误
+} finally {
+    // 始终执行的代码
+}
 ```
 
 ## TypeScript 中的错误类型
@@ -5499,11 +5161,13 @@ TypeScript 提供了多种内置错误类型，包括：
 
 你可以创建自定义错误类以提供更具体的错误信息：
 
-```
-class DivisionByZeroError extends Error
-  constructor()
-    super("Division by zero");
-    this.name = "DivisionByZeroError";
+```typescript
+class DivisionByZeroError extends Error {
+    constructor() {
+        super("Division by zero");
+        this.name = "DivisionByZeroError";
+    }
+}
 ```
 
 ## 错误处理最佳实践
@@ -5551,34 +5215,34 @@ class DivisionByZeroError extends Error
 
 要创建自定义错误类，我们扩展内置的 `Error` 类，并根据需要添加自定义属性和方法。
 
-```
-class CustomError extends Error
-  constructor(message: string)
-    super(message);
-    this.name = this.constructor.name;
+```typescript
+class CustomError extends Error {
+    constructor(message: string) {
+        super(message);
+        this.name = this.constructor.name;
+    }
+}
 ```
 
 这种基本结构为创建更具体的错误类型提供了基础。
 
 #### 示例：用于用户输入验证的自定义错误
 
-```
-class InvalidEmailError extends CustomError
-  constructor(email: string)
-    super(`Invalid email: ${email}`);
-    this.email = email;
-  }
-
-  email: string;
+```typescript
+class InvalidEmailError extends CustomError {
+    constructor(email: string) {
+        super(`Invalid email: ${email}`);
+        this.email = email;
+    }
+    email: string;
 }
 
-class PasswordTooShortError extends CustomError
-  constructor(passwordLength: number)
-    super(`Password too short: minimum length is 8 characters`);
-    this.passwordLength = passwordLength;
-  }
-
-  passwordLength: number;
+class PasswordTooShortError extends CustomError {
+    constructor(passwordLength: number) {
+        super(`Password too short: minimum length is 8 characters`);
+        this.passwordLength = passwordLength;
+    }
+    passwordLength: number;
 }
 ```
 
@@ -5588,36 +5252,38 @@ class PasswordTooShortError extends CustomError
 
 要抛出自定义错误，只需创建错误类的实例并使用 `throw` 关键字。
 
-```
-function validateEmail(email: string): void
-  if (!isValidEmail(email))
-    throw new InvalidEmailError(email);
+```typescript
+function validateEmail(email: string): void {
+    if (!isValidEmail(email)) {
+        throw new InvalidEmailError(email);
+    }
+}
 ```
 
 #### 处理自定义错误
 
 你可以使用 `try-catch` 代码块来处理自定义错误，然后使用 `instanceof` 运算符来区分不同的错误类型。
 
-```
-try
-  validateEmail("invalid_email");
-catch (error)
-  if (error instanceof InvalidEmailError)
-    console.error("Invalid email:", error.email);
-  else
-    console.error("Unexpected error:", error);
+```typescript
+try {
+    validateEmail("invalid_email");
+} catch (error) {
+    if (error instanceof InvalidEmailError) {
+        console.error("Invalid email:", error.email);
+    } else {
+        console.error("Unexpected error:", error);
+    }
+}
 ```
 
 #### 错误层次结构
 
 对于更复杂的错误处理场景，你可以创建错误类的层次结构。
 
-```
-class AuthenticationError extends CustomError
-
-class UnauthorizedError extends AuthenticationError
-
-class InvalidCredentialsError extends AuthenticationError
+```typescript
+class AuthenticationError extends CustomError {}
+class UnauthorizedError extends AuthenticationError {}
+class InvalidCredentialsError extends AuthenticationError {}
 ```
 
 这种结构允许更细粒度的错误处理，并可以提高代码可读性。
@@ -5626,14 +5292,13 @@ class InvalidCredentialsError extends AuthenticationError
 
 你可以向错误类添加自定义属性以存储额外信息。
 
-```
-class DatabaseError extends CustomError
-  constructor(message: string, errorCode: number)
-    super(message);
-    this.errorCode = errorCode;
-  }
-
-  errorCode: number;
+```typescript
+class DatabaseError extends CustomError {
+    constructor(message: string, errorCode: number) {
+        super(message);
+        this.errorCode = errorCode;
+    }
+    errorCode: number;
 }
 ```
 
@@ -5647,37 +5312,37 @@ class DatabaseError extends CustomError
 
 #### 示例：全栈应用程序中的自定义错误
 
-```
+```typescript
 // 后端 (Node.js)
 import express, { Request, Response, NextFunction } from 'express';
 
-class UserNotFoundError extends Error
-  constructor(userId: string)
-    super(`User with ID ${userId} not found`);
-    this.userId = userId;
-  }
-
-  userId: string;
+class UserNotFoundError extends Error {
+    constructor(userId: string) {
+        super(`User with ID ${userId} not found`);
+        this.userId = userId;
+    }
+    userId: string;
 }
 
 const app = express();
 
-app.get('/users/:id', (req: Request, res: Response, next: NextFunction)
-  const userId = req.params.id;
-  // 查找用户的逻辑
-  if (!user)
-    return next(new UserNotFoundError(userId));
-  }
-
-  res.json(user);
+app.get('/users/:id', (req: Request, res: Response, next: NextFunction) => {
+    const userId = req.params.id;
+    // 查找用户的逻辑
+    if (!user) {
+        return next(new UserNotFoundError(userId));
+    }
+    res.json(user);
 });
 
-app.use((err: Error, req: Request, res: Response, next: NextFunction)
-  if (err instanceof UserNotFoundError)
-    res.status(404).json({ error: err.message });
-  else
-    console.error(err);
-    res.status(500).json({ error: 'Internal server error' });
+app.use((err: Error, req: Request, res: Response, next: NextFunction) => {
+    if (err instanceof UserNotFoundError) {
+        res.status(404).json({ error: err.message });
+    } else {
+        console.error(err);
+        res.status(500).json({ error: 'Internal server error' });
+    }
+});
 ```
 
 通过有效使用自定义错误类型，你可以显著增强 TypeScript 代码的错误处理能力。这会带来更健壮、信息更丰富且更易于维护的应用程序。
@@ -5691,22 +5356,22 @@ app.use((err: Error, req: Request, res: Response, next: NextFunction)
 在深入探讨具体技术之前，理解一般的调试过程至关重要：
 
 1. **复现问题**：一致地重现问题以将其隔离。
-2. **识别问题**： pinpoint 问题的确切原因。
+2. **识别问题**：pinpoint 问题的确切原因。
 3. **隔离问题**：将代码分解为更小的部分，以专注于受影响的区域。
 4. **修复问题**：实施必要的更改以纠正问题。
-5. **测试修复**：验证更改一直坚持到。验证更改为验证更改为验证更改为验证更改为验证更改为验证更改为
+5. **测试修复**：验证更改解决了问题且未引入新问题。
 
- 
- TypeScript 编译器是你抵御错误的第一道防线。它在运行之前执行静态类型检查，以捕获潜在问题。
+#### TypeScript 编译器
 
-## TypeScript
+TypeScript 编译器是你抵御错误的第一道防线。它在运行之前执行静态类型检查，以捕获潜在问题。
 
+```typescript
+function greet(person: string) {
+    return "Hello, " + person; // Type safety ensures 'person' is a string
+}
 ```
-function greet(person: string)
-return "Hello, " + person; // Type safety ensures 'person' is a string
-```
 
-## 利用调试器
+#### 利用调试器
 
 Visual Studio Code、WebStorm 和 IntelliJ IDEA 等现代 IDE 提供了强大的调试功能。
 
@@ -5728,9 +5393,9 @@ Visual Studio Code、WebStorm 和 IntelliJ IDEA 等现代 IDE 提供了强大的
 
 ### 示例：
 
-```
-function add(x: number, y: number): number
-return x + y;
+```typescript
+function add(x: number, y: number): number {
+    return x + y;
 }
 
 console.log(add(5, "3")); // This will cause a runtime error
@@ -5742,7 +5407,7 @@ console.log(add(5, "3")); // This will cause a runtime error
 
 调试 Node.js 应用程序时，可以使用内置的 Node.js 调试器或利用 IDE 特定的功能。
 
-```
+```bash
 node --inspect myScript.js
 ```
 
@@ -5760,15 +5425,15 @@ node --inspect myScript.js
 
 编写全面的单元测试有助于预防错误并使调试更容易。通过隔离代码单元，你可以快速识别问题并确定根本原因。
 
-```
+```typescript
 import { expect } from 'chai';
 import { add } from './math';
 
-describe('math',
-
-it('should add two numbers',
-
-expect(add(2, 3)).to.equal(5);
+describe('math', () => {
+    it('should add two numbers', () => {
+        expect(add(2, 3)).to.equal(5);
+    });
+});
 ```
 
 ## 其他提示
@@ -5798,7 +5463,7 @@ TypeScript 编译器执行几项关键任务：
 
 要编译 TypeScript 文件，请使用以下命令：
 
-```
+```bash
 tsc filename.ts
 ```
 
@@ -5808,25 +5473,26 @@ tsc filename.ts
 
 要管理多个 TypeScript 文件并配置编译器选项，请在项目根目录创建 `tsconfig.json` 文件。以下是一个基本示例：
 
-```
+```json
 {
-"compilerOptions":
-"target": "es5",
-"module": "commonjs",
-"outDir": "./dist",
-"strict": true
-},
-"include":
-"./src"
+  "compilerOptions": {
+    "target": "es5",
+    "module": "commonjs",
+    "outDir": "./dist",
+    "strict": true
+  },
+  "include": [
+    "./src"
+  ]
+}
 ```
 
-`compilerOptions`：定义编译器设置。
-- `target`：指定 ECMAScript 目标版本。
-- `module`：设置模块系统。
-- `outDir`：指定编译后的 JavaScript 文件的输出目录。
-- `strict`：启用严格类型检查。
-
-`include`：指定要在编译中包含的根目录或文件。
+- `compilerOptions`：定义编译器设置。
+  - `target`：指定 ECMAScript 目标版本。
+  - `module`：设置模块系统。
+  - `outDir`：指定编译后的 JavaScript 文件的输出目录。
+  - `strict`：启用严格类型检查。
+- `include`：指定要在编译中包含的根目录或文件。
 
 ## 使用 tsconfig.json 编译
 
@@ -5850,19 +5516,19 @@ TypeScript 编译器提供多种选项以自定义编译过程。一些常用选
 
 对于高级场景，你可以使用 TypeScript 编译器 API 以编程方式控制编译过程。这对于自定义构建工具或代码生成任务非常有用。
 
-```
+```typescript
 import * as ts from 'typescript';
 
-const compilerOptions: ts.CompilerOptions
-// compiler options
+const compilerOptions: ts.CompilerOptions = {
+    // compiler options
 };
 
 const program = ts.createProgram(["index.ts"], compilerOptions);
-
 const emitResult = program.emit();
 
-if (emitResult.diagnostics.length)
-// Handle compilation errors
+if (emitResult.diagnostics.length) {
+    // Handle compilation errors
+}
 ```
 
 ## 利用 IDE 集成
@@ -5886,146 +5552,140 @@ if (emitResult.diagnostics.length)
 
 # 练习：TypeScript 中的错误处理场景
 
-## 练习  Title 1：基本错误处理
+## 练习 1：基本错误处理
 
 **场景**：编写一个函数来除以两个数。处理除数为零的情况，通过抛出自定义错误。
 
-```
-class DivisionByZeroError extends Error
-constructor()
-super("Division by zero");
+```typescript
+class DivisionByZeroError extends Error {
+    constructor() {
+        super("Division by zero");
+    }
 }
 
-function divide(dividend: number, divisor: number): number
-if (divisor === 0)
-throw new DivisionByZeroError();
+function divide(dividend: number, divisor: number): number {
+    if (divisor === 0) {
+        throw new DivisionByZeroError();
+    }
+    return dividend / divisor;
 }
 
-return dividend / divisor;
+try {
+    const result = divide(10, 2);
+    console.log(result);
+} catch (error) {
+    if (error instanceof DivisionByZeroError) {
+        console.error("Error:", error.message);
+    } else {
+        console.error("Unexpected error:", error);
+    }
 }
-
-try
-const result = divide(10, 2);
-console.log(result);
-
-catch (error)
-if (error instanceof DivisionByZeroError)
-console.error("Error:", error.message);
-else
-console.error("Unexpected error:", error);
 ```
 
 ## 练习 2：错误传播
 
 **场景**：创建一个计算数字阶乘的函数。如果数字为负数，则抛出错误。将错误传播到调用函数。
 
-```
-class NegativeFactorialError extends Error
-constructor(number: number)
-super(`Factorial of negative number ${number} is not defined`);
+```typescript
+class NegativeFactorialError extends Error {
+    constructor(number: number) {
+        super(`Factorial of negative number ${number} is not defined`);
+    }
 }
 
-function factorial(n: number): number
-if (n < 0)
-throw new NegativeFactorialError(n);
+function factorial(n: number): number {
+    if (n < 0) {
+        throw new NegativeFactorialError(n);
+    }
+    if (n === 0 || n === 1) {
+        return 1;
+    }
+    return n * factorial(n - 1);
 }
 
-if (n === 0 || n === 1)
-return 1;
-}
-
-return n * factorial(n - 1);
-}
-
-function calculateFactorial(n: number): void
-try
-const result = factorial(n);
-console.log(`Factorial of ${n} is ${result}`);
-
-catch (error)
-console.error("Error:", error.message);
+function calculateFactorial(n: number): void {
+    try {
+        const result = factorial(n);
+        console.log(`Factorial of ${n} is ${result}`);
+    } catch (error) {
+        console.error("Error:", error.message);
+    }
 }
 
 calculateFactorial(5);
 calculateFactorial(-3);
 ```
 
+## 练习 3：使用 Async/Await 进行错误处理
 
- 
-练习 3：使用 Async/Await 进行错误处理
-
-**场景：** 编写一个异步函数，从 API 获取数据。处理潜在的网络错误和解析错误。
-
-`TypeScript`
+**场景**：编写一个异步函数，从 API 获取数据。处理潜在的网络错误和解析错误。
 
 ```typescript
 async function fetchData(url: string): Promise<any> {
-  try {
- <|error|> catch (error) {
-    console.error("Error fetching data:", error);
-    throw error; // Re-throw error for outer catch block
-  }
+    try {
+        const response = await fetch(url);
+        if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        return await response.json();
+    } catch (error) {
+        console.error("Error fetching data:", error);
+        throw error; // Re-throw error for outer catch block
+    }
 }
 
 async function main() {
-  try {
-    const data = await fetchData('https://api.example.com/data');
-    console.log(data);
-  } catch (error) {
-    console.error("Error:", error);
-  }
+    try {
+        const data = await fetchData('https://api.example.com/data');
+        console.log(data);
+    } catch (error) {
+        console.error("Error:", error);
+    }
 }
 
 main();
 ```
 
-练习 4：自定义错误层次结构
+## 练习 4：自定义错误层次结构
 
-**场景：** 为身份验证错误创建自定义错误层次结构。
-
-`TypeScript`
+**场景**：为身份验证错误创建自定义错误层次结构。
 
 ```typescript
 class AuthenticationError extends Error {}
-
 class InvalidCredentialsError extends AuthenticationError {}
-
 class UnauthorizedError extends AuthenticationError {}
 
 function authenticateUser(credentials: any): void {
-  // authentication logic
-  if (credentials.username === 'invalid') {
-    throw new InvalidCredentialsError();
-  }
-
-  if (!isAuthenticated) {
-    throw new UnauthorizedError();
-  }
+    // authentication logic
+    if (credentials.username === 'invalid') {
+        throw new InvalidCredentialsError();
+    }
+    if (!isAuthenticated) {
+        throw new UnauthorizedError();
+    }
 }
 ```
 
-练习 5：Node.js 中的错误处理
+## 练习 5：Node.js 中的错误处理
 
-**场景：** 编写一个读取文件的 Node.js 程序。处理潜在的文件找不到错误和权限错误。
-
-`TypeScript`
+**场景**：编写一个读取文件的 Node.js 程序。处理潜在的文件找不到错误和权限错误。
 
 ```typescript
 import * as fs from 'fs';
 
 function readFile(filename: string): void {
-  try {
-    const data = fs.readFileSync(filename, 'utf8');
-    console.log(data);
-  } catch (error) {
-    if (error.code === 'ENOENT') {
-      console.error(`File not found: ${filename}`);
-    } else if (error.code === 'EACCES') {
-      console.error(`Permission denied: ${filename}`);
-    } else {
-      console.error(`Unexpected error: ${error}`);
+    try {
+        const data = fs.readFileSync(filename, 'utf8');
+        console.log(data);
+    } catch (error: any) {
+        if (error.code === 'ENOENT') {
+            console.error(`File not found: ${filename}`);
+        } else if (error.code === 'EACCES') {
+            console.error(`Permission denied: ${filename}`);
+        } else {
+            console.error(`Unexpected error: ${error}`);
+        }
     }
-  }
 }
 
 readFile('data.txt');
@@ -6061,8 +5721,6 @@ readFile('data.txt');
 ### 使用 TypeScript 创建新的 React 项目
 
 我们将使用 Create React App (`CRA`) 快速搭建我们的项目：
-
-`Bash`
 
 ```bash
 npx create-react-app my-app --template typescript
@@ -6115,11 +5773,8 @@ my-app
 
 让我们创建一个简单的组件：
 
-`TypeScript`
-
 ```typescript
 // src/App.tsx
-
 import React from 'react';
 
 const App: React.FC = () => {
@@ -6139,8 +5794,6 @@ export default App;
 
 `TypeScript` 为 `JavaScript` 添加了类型注解。这提高了代码可读性，并有助于及早发现错误：
 
-`TypeScript`
-
 ```typescript
 const message: string = 'Hello';
 const age: number = 30;
@@ -6150,8 +5803,6 @@ const isLoggedIn: boolean = true;
 ### 使用接口
 
 接口定义对象的形状：
-
-`TypeScript`
 
 ```typescript
 interface Person {
@@ -6169,8 +5820,6 @@ const person: Person = {
 
 泛型使组件可复用且类型安全：
 
-`TypeScript`
-
 ```typescript
 function getArray<T>(items: T[]): T[] {
   return items;
@@ -6183,8 +5832,6 @@ const strings = getArray<string>(['a', 'b', 'c']);
 ### 使用 Props 和 State
 
 `TypeScript` 为 props 和 state 提供类型安全：
-
-`TypeScript`
 
 ```typescript
 interface Props {
@@ -6207,8 +5854,6 @@ const MyComponent: React.FC<Props> = ({ title }) => {
 ### 处理事件
 
 事件处理器也可以被类型化：
-
-`TypeScript`
 
 ```typescript
 const handleClick = (event: React.MouseEvent<HTMLButtonElement>) => {
@@ -6233,15 +5878,11 @@ const handleClick = (event: React.MouseEvent<HTMLButtonElement>) => {
 
 `JSX` 是 `JavaScript` 的语法扩展，类似于 `HTML`。它广泛用于 `React` 中构建用户界面。虽然它看起来像 `HTML`，但在浏览器运行之前，它实际上会被转换为 `JavaScript` 函数调用。
 
-`JavaScript`
-
 ```javascript
 const element = <h1>Hello, world!</h1>;
 ```
 
 这段 `JSX` 代码会被编译为类似如下的代码：
-
-`JavaScript`
 
 ```javascript
 const element = React.createElement('h1', null, 'Hello, world!');
@@ -6250,8 +5891,6 @@ const element = React.createElement('h1', null, 'Hello, world!');
 #### 引入 TypeScript
 
 `TypeScript` 是 `JavaScript` 的超集，添加了可选的静态类型。当与 `JSX` 结合时，它提供了增强的类型安全性和更优秀的开发体验。
-
-`TypeScript`
 
 ```typescript
 import React from 'react';
@@ -6270,8 +5909,6 @@ const Greeting: React.FC = ({ name }: { name: string }) => {
 
 `TypeScript` 和 `JSX` 的一个强大特性是能够将 `JSX` 元素作为类型处理。这使你可以创建更具体的类型安全组件。
 
-`TypeScript`
-
 ```typescript
 interface ButtonProps {
   label: string;
@@ -6287,7 +5924,10 @@ const Button: React.FC<ButtonProps> = ({ label, onClick }) => {
 
 `TypeScript` 为 `JSX` 属性提供类型检查，确保你向组件传递正确的类型。
 
-`TypeScript`
+```typescript
+```
+
+
 
 ```typescript
 interface InputProps {
@@ -6302,13 +5942,10 @@ const Input: React.FC<InputProps> = ({ value, onChange }) => {
 
 #### 使用 JSX 进行条件渲染
 
-
- 
- ```markdown
 你可以在 JSX 中使用条件逻辑，根据条件渲染不同的元素：
 
 ```TypeScript
-const Greeting = ({ user }) => (
+const Greeting = ({ user }) => {
   return user ? (
     <div>
       <h1>Welcome, {user.name}!</h1>
@@ -6317,7 +5954,7 @@ const Greeting = ({ user }) => (
   ) : (
     <p>Please log in</p>
   );
-);
+};
 ```
 
 ## 列表与键
@@ -6331,7 +5968,7 @@ const items = [
   { id: 3, name: 'Item 3' },
 ];
 
-const ItemList = () => (
+const ItemList = () => {
   return (
     <ul>
       {items.map((item) => (
@@ -6339,7 +5976,7 @@ const ItemList = () => (
       ))}
     </ul>
   );
-);
+};
 ```
 
 ## 片段
@@ -6347,14 +5984,14 @@ const ItemList = () => (
 有时你需要对元素进行分组，但又不想引入额外的父元素。这时片段（fragment）就派上用场了：
 
 ```TypeScript
-const MyComponent = () => (
+const MyComponent = () => {
   return (
     <React.Fragment>
       <h1>Heading</h1>
       <p>Paragraph</p>
     </React.Fragment>
   );
-);
+};
 ```
 
 ## JSX 展开属性
@@ -6363,7 +6000,6 @@ const MyComponent = () => (
 
 ```TypeScript
 const props = { className: 'my-button', onClick: () => console.log('clicked') };
-
 const MyButton = () => <button {...props}>Click me</button>;
 ```
 
@@ -6394,9 +6030,9 @@ interface GreetingProps {
   name: string;
 }
 
-const Greeting: React.FC<GreetingProps> = ({ name }) => (
+const Greeting: React.FC<GreetingProps> = ({ name }) => {
   return <h1>Hello, {name}!</h1>;
-);
+};
 ```
 
 在本例中：
@@ -6415,9 +6051,9 @@ interface ButtonProps {
   onClick?: () => void; // 可选 prop
 }
 
-const Button: React.FC<ButtonProps> = ({ label, onClick }) => (
+const Button: React.FC<ButtonProps> = ({ label, onClick }) => {
   return <button onClick={onClick}>{label}</button>;
-);
+};
 ```
 
 - `ButtonProps` 接口定义了两个 props：`label`（必需）和 `onClick`（可选）。
@@ -6433,9 +6069,9 @@ interface InputProps {
   onChange?: (event: React.ChangeEvent<HTMLInputElement>) => void;
 }
 
-const Input: React.FC<InputProps> = ({ value = '', onChange }) => (
-  return <input type="text" value={value} onChange={onChange} />
-);
+const Input: React.FC<InputProps> = ({ value = '', onChange }) => {
+  return <input type="text" value={value} onChange={onChange} />;
+};
 ```
 
 - `value` prop 的默认值为空字符串。
@@ -6450,23 +6086,23 @@ interface CardProps {
   content: string;
 }
 
-const Card: React.FC<CardProps> = ({ title, content }) => (
+const Card: React.FC<CardProps> = ({ title, content }) => {
   return (
     <div className="card">
       <h2>{title}</h2>
       <p>{content}</p>
     </div>
   );
-);
+};
 
-const App: React.FC = () => (
+const App: React.FC = () => {
   return (
     <div>
       <Card title="Card 1" content="This is the content of card 1" />
       <Card title="Card 2" content="This is the content of card 2" />
     </div>
   );
-);
+};
 ```
 
 #### Prop 透传
@@ -6579,11 +6215,8 @@ const withLogging = <P>(WrappedComponent: React.ComponentType<P>) => {
 
 - **Context API**：对于跨多个组件共享数据而不进行 prop drilling，可以考虑使用 Context API。
 - **状态管理库**：Redux 或 Zustand 等库可用于复杂的状态管理场景。
-```
 
-
- 
- ● Hooks：React Hooks 提供了一种更现代、更声明式的方式来管理状态和副作用。
+#### Hooks：React Hooks 提供了一种更现代、更声明式的方式来管理状态和副作用。
 
 通过理解 HOC、render props 和 TypeScript，你可以在 React 应用中创建更灵活、更可复用的组件。
 
@@ -6602,7 +6235,7 @@ const withLogging = <P>(WrappedComponent: React.ComponentType<P>) => {
 1. 当前的状态值。
 2. 用于更新状态的函数。
 
-```
+```TypeScript
 import React, { useState } from 'react';
 
 function Counter() {
@@ -6621,10 +6254,10 @@ function Counter() {
 
 关于状态的要点：
 
-● 状态是可变的。
-● 状态更新是异步的。
-● 状态变化会触发重新渲染。
-● 对于随时间变化或依赖用户交互的数据，使用状态。
+- 状态是可变的。
+- 状态更新是异步的。
+- 状态变化会触发重新渲染。
+- 对于随时间变化或依赖用户交互的数据，使用状态。
 
 ### 生命周期
 
@@ -6638,26 +6271,26 @@ React 提供了生命周期方法（现在大多已被 Hook 替代），允许�
 
 #### 挂载阶段
 
-● `constructor()`：在组件挂载之前调用。用于初始设置。
-● `getDerivedStateFromProps()`：很少使用，用于从 props 派生状态。
-● `render()`：返回组件的 JSX 表示。
-● `componentDidMount()`：在组件挂载并插入 DOM 后调用。用于获取数据、设置订阅等。
+- `constructor()`：在组件挂载之前调用。用于初始设置。
+- `getDerivedStateFromProps()`：很少使用，用于从 props 派生状态。
+- `render()`：返回组件的 JSX 表示。
+- `componentDidMount()`：在组件挂载并插入 DOM 后调用。用于获取数据、设置订阅等。
 
 #### 更新阶段
 
-● `getDerivedStateFromProps()`：很少使用，用于从 props 派生状态。
-● `shouldComponentUpdate()`：决定组件是否应该重新渲染。
-● `render()`：返回组件的 JSX 表示。
-● `getSnapshotBeforeUpdate()`：在更改提交到 DOM 之前立即调用。
-● `componentDidUpdate()`：在组件更新后调用。
+- `getDerivedStateFromProps()`：很少使用，用于从 props 派生状态。
+- `shouldComponentUpdate()`：决定组件是否应该重新渲染。
+- `render()`：返回组件的 JSX 表示。
+- `getSnapshotBeforeUpdate()`：在更改提交到 DOM 之前立即调用。
+- `componentDidUpdate()`：在组件更新后调用。
 
 #### 卸载阶段
 
-● `componentWillUnmount()`：在组件卸载之前调用。用于清理，例如取消计时器或订阅。
+- `componentWillUnmount()`：在组件卸载之前调用。用于清理，例如取消计时器或订阅。
 
 使用生命周期方法的示例（类组件）：
 
-```
+```TypeScript
 import React, { Component } from 'react';
 
 class Counter extends Component {
@@ -6691,7 +6324,7 @@ class Counter extends Component {
 
 使用 Hook 的现代方式：
 
-```
+```TypeScript
 import React, { useState, useEffect } from 'react';
 
 function Counter() {
@@ -6719,9 +6352,9 @@ function Counter() {
 
 补充说明：
 
-● 对于更复杂的状态管理，可以考虑使用 Redux 或 Zustand 等库。
-● 通过使用 `shouldComponentUpdate` 或 `React.memo` 来优化性能，避免不必要的重新渲染。
-● 谨慎处理异步操作和潜在的竞态条件。
+- 对于更复杂的状态管理，可以考虑使用 Redux 或 Zustand 等库。
+- 通过使用 `shouldComponentUpdate` 或 `React.memo` 来优化性能，避免不必要的重新渲染。
+- 谨慎处理异步操作和潜在的竞态条件。
 
 掌握了状态和生命周期的概念，你将有能力构建健壮且可扩展的 React 应用。
 
@@ -6733,7 +6366,7 @@ function Counter() {
 
 创建一个名为 `Greeting` 的 React 组件，显示简单的问候消息。
 
-```
+```TypeScript
 import React from 'react';
 
 interface GreetingProps {
@@ -6755,7 +6388,7 @@ export default Greeting;
 
 创建一个名为 `Person` 的组件，显示一个人的姓名和年龄。将这些详情作为 props 传递给组件。
 
-```
+```TypeScript
 import React from 'react';
 
 interface PersonProps {
@@ -6779,7 +6412,7 @@ export default Person;
 
 创建一个名为 `PeopleList` 的组件，使用上面创建的 `Person` 组件渲染人员列表。
 
-```
+```TypeScript
 import React from 'react';
 import Person from './Person';
 
@@ -6806,7 +6439,7 @@ export default PeopleList;
 
 创建一个名为 `Address` 的组件，显示一个人的地址。将此组件嵌套在 `Person` 组件内。
 
-```
+```TypeScript
 import React from 'react';
 
 interface AddressProps {
@@ -6832,7 +6465,7 @@ export default Address;
 
 创建一个名为 `Product` 的组件，显示产品详情。如果产品缺货，显示不同的消息。
 
-```
+```TypeScript
 import React from 'react';
 
 interface ProductProps {
@@ -6860,7 +6493,7 @@ export default Product;
 
 创建一个从 API 获取数据并显示的组件。使用 `useEffect` 在组件挂载时获取数据。
 
-```
+```TypeScript
 import React, { useState, useEffect } from 'react';
 
 interface Data {
@@ -6900,13 +6533,9 @@ export default MyComponent;
 
 ### 附加练习
 
-● 创建一个显示倒计时计时器的组件。
-
-
- 
- ● 创建一个模拟简单待办事项列表的组件。
-
-● 创建一个显示用户资料并支持信息编辑的组件。
+- 创建一个显示倒计时计时器的组件。
+- 创建一个模拟简单待办事项列表的组件。
+- 创建一个显示用户资料并支持信息编辑的组件。
 
 通过完成这些练习，你将打下扎实的 React 组件基础，并为构建更复杂的应用做好准备。
 
@@ -6924,17 +6553,15 @@ export default MyComponent;
 
 典型的 `React` 组件通常包含：
 
-● `Props`：从父组件传入的输入数据。
-
-● `State`：由组件自身首创的内部数据。
-
-● `Methods`：用于处理事件或执行逻辑的函数。
+- `Props`：从父组件传入的输入数据。
+- `State`：由组件自身首创的内部数据。
+- `Methods`：用于处理事件或执行逻辑的函数。
 
 ### 为 Props 添加类型
 
 在 `TypeScript` 中，我们使用接口（interface）来为 props 添加类型。接口定义了对象的形状，指定属性名称及其类型。
 
-```
+```TypeScript
 interface PropsType {
   name: string;
   age: number;
@@ -6949,7 +6576,7 @@ interface PropsType {
 
 要创建带类型的组件，我们使用 `React` 中的 `FC`（Functional Component，函数式组件）类型。
 
-```
+```TypeScript
 import React from 'react';
 
 const MyComponent: React.FC<PropsType> = ({ name, age, isAdult, children }) => {
@@ -6970,19 +6597,16 @@ export default MyComponent;
 
 ### Props 类型化的优势
 
-● **及早发现错误**：`TypeScript` 在开发过程中捕获类型不匹配，防止运行时错误。
-
-● **提高代码可读性**：显式定义的 prop 类型使代码更易于理解。
-
-● **更好的自动补全**：IDE 基于 prop 类型提供更优的 auditory 自动补全建议。
-
-● **增强文档性**：prop 类型可作为组件使用的文档。
+- **及早发现错误**：`TypeScript` 在开发过程中捕获类型不匹配，防止运行时错误。
+- **提高代码可读性**：显式定义的 prop 类型使代码更易于理解。
+- **更好的自动补全**：IDE 基于 prop 类型提供更优的 auditory 自动补全建议。
+- **增强文档性**：prop 类型可作为组件使用的文档。
 
 ### 高级 Props 类型化
 
 #### 默认 Prop 值
 
-```
+```TypeScript
 interface PropsType {
   name: string;
   age?: number; // 可选，带有默认值
@@ -6993,7 +6617,7 @@ const MyComponent: React.FC<PropsType> = ({ name, age = 18 }) => {
 
 #### 必需的 Props
 
-```
+```TypeScript
 interface PropsType {
   name: string;
   age: number;
@@ -7004,11 +6628,11 @@ const MyComponent: React.FC<Required<PropsType>> = ({ name, age }) => {
 
 `Required` 工具类型使接口中的所有属性变为必需。
 
-#### 自定义 Prop 类型
+#### 自定 Prop 类型
 
 你可以使用接口或类型来创建自定义 prop 类型：
 
-```
+```TypeScript
 interface Person {
   name: string;
   age: number;
@@ -7023,7 +6647,7 @@ interface PropsType {
 
 使用交叉类型组合多个接口：
 
-```
+```TypeScript
 interface BaseProps {
   className?: string;
 }
@@ -7040,7 +6664,7 @@ interface PropsType extends BaseProps, SpecificProps {
 
 与 props 类似，你可以使用接口为组件 state 添加类型。
 
-```
+```TypeScript
 interface StateType {
   count: number;
 }
@@ -7057,7 +6681,7 @@ const MyComponent: React.FC = () => {
 
 `TypeScript` 中的接口是创建对象的蓝图。它们定义了对象的结构，指定其属性和方法。接口对于强制类型安全和提高代码可读性至关重要。
 
-```
+```TypeScript
 interface Person {
   firstName: string;
   lastName: string;
@@ -7077,7 +6701,7 @@ const person: Person = {
 
 接口可用于定义函数参数和返回类型的形状。
 
-```
+```TypeScript
 function greet(person: Person) {
   console.log(`Hello, ${person.firstName} ${person.lastName}`);
 }
@@ -7089,7 +6713,7 @@ function greet(person: Person) {
 
 接口可以使用 `?` 语法包含可选属性。
 
-```
+```TypeScript
 interface Product {
   name: string;
   price: number;
@@ -7101,7 +6725,7 @@ interface Product {
 
 要使属性只读，使用 `readonly` 关键字。
 
-```
+```TypeScript
 interface Car {
   readonly model: string;
   year: number;
@@ -7112,7 +6736,7 @@ interface Car {
 
 接口可以继承其他接口。
 
-```
+```TypeScript
 interface Animal {
   name: string;
 }
@@ -7126,7 +6750,7 @@ interface Dog extends Animal {
 
 交叉类型将多个类型合并为单个类型。
 
-```
+```TypeScript
 interface Employee {
   id: number;
   name: string;
@@ -7145,7 +6769,7 @@ type ManagerEmployee = Employee & Manager;
 
 联合类型指定一个值可以是几种类型之一。
 
-```
+```TypeScript
 type Id = number | string;
 ```
 
@@ -7153,7 +6777,7 @@ type Id = number | string;
 
 类型别名为现有类型创建新名称。
 
-```
+```TypeScript
 type Name = string;
 type Age = number;
 
@@ -7167,7 +6791,7 @@ interface Person {
 
 泛型允许你创建可与不同数据类型协作的可复用组件。
 
-```
+```TypeScript
 interface GenericIdentityFn<T> {
   (arg: T): T;
 }
@@ -7179,15 +6803,14 @@ function identity<T>(arg: T): T {
 
 ### 接口与类型的区别
 
-虽然接口和类型都用于定义对象的形状，但存在关键差异：
+虽然接口和类型都用用于定义对象的形状，但存在关键差异：
 
-● **接口**：主要用于对象结构，可以被扩展，被类实现，并用于结构类型。
-
-● **类型**：更加灵活，可用于任何类型，包括原始类型、联合类型、交叉类型和元组。
+- **接口**：主要用于对象结构，可以被扩展，被类实现，并用于结构类型。
+- **类型**：更加灵活，可用于任何类型，包括原始类型、联合类型、交叉类型和元组。
 
 ### 实际示例：产品目录
 
-```
+```TypeScript
 interface Product {
   id: number;
   name: string;
@@ -7220,7 +6843,7 @@ const catalogue: ProductCatalog = {
 
 让我们创建一个简单的主题 context：
 
-```
+```TypeScript
 import React, { createContext, useContext, useState } from 'react';
 
 interface ThemeContextType {
@@ -7239,20 +6862,13 @@ const ThemeProvider = ({ children }: { children: React.ReactNode }) => {
   const toggleTheme = () => {
     setTheme((prev) => (prev === 'light' ? 'dark' : 'light'));
   };
-```
 
-
- 
- ```
-setTheme(theme === 'light' ? 'dark' : 'light');
+  return (
+    <ThemeContext.Provider value={{ theme, toggleTheme }}>
+      {children}
+    </ThemeContext.Provider>
+  );
 };
-
-return
-<ThemeContext.Provider value={{ theme, toggleTheme }}>
-{children}
-</ThemeContext.Provider>
-
-);
 
 const useTheme = () => useContext(ThemeContext);
 
@@ -7262,26 +6878,25 @@ export { ThemeContext, ThemeProvider, useTheme };
 ## 代码解析
 
 1. **接口定义**：我们定义了一个接口 `ThemeContextType` 来指定上下文值的结构。
-
 2. **创建上下文**：使用 `createContext` 来创建上下文对象。提供泛型类型 `ThemeContextType` 以确保类型安全。
-
 3. **Provider 组件**：`ThemeProvider` 是一个向其子组件提供上下文值的组件。它使用 `useState` 钩子来管理主题状态，并提供了一个 `toggleTheme` 函数。
-
 4. **自定义 Hook**：`useTheme` 是一个自定义钩子，用于简化上下文的消费。
 
 ## 消费上下文
 
-```
+```TypeScript
 import { useTheme } from './ThemeContext';
 
-function MyComponent()
-const { theme, toggleTheme } = useTheme();
+function MyComponent() {
+  const { theme, toggleTheme } = useTheme();
 
-return
-<div className={theme}>
-{/Component content /}
-<button onClick={toggleTheme}>Toggle Theme</button>
-</div>
+  return (
+    <div className={theme}>
+      {/* Component content */}
+      <button onClick={toggleTheme}>Toggle Theme</button>
+    </div>
+  );
+}
 ```
 
 ### 要点
@@ -7299,19 +6914,19 @@ return
 
 ### 示例：认证上下文
 
-```
+```TypeScript
 import React, { createContext, useContext, useState } from 'react';
 
-interface AuthContextType
-user: User | null;
-login: (user: User) => void;
-logout: () => void;
+interface AuthContextType {
+  user: User | null;
+  login: (user: User) => void;
+  logout: () => void;
 }
 
-const AuthContext = createContext<AuthContextType>
-user: null,
-login:
-logout:
+const AuthContext = createContext<AuthContextType>({
+  user: null,
+  login: () => {},
+  logout: () => {},
 });
 
 // (AuthProvider, useAuth hook)
@@ -7336,12 +6951,12 @@ Redux 是一个用于 JavaScript 应用的可预测状态管理库。它有助�
 
 ### 使用 TypeScript 设置 Redux Store
 
-```
+```TypeScript
 import { createStore, combineReducers } from 'redux';
 
 // 在此处定义你的归约器
-const rootReducer = combineReducers
-// your reducers
+const rootReducer = combineReducers({
+  // your reducers
 });
 
 const store = createStore(rootReducer);
@@ -7352,60 +6967,61 @@ export default store;
 
 Actions 是带有 type 属性的普通对象。Action creators 是返回 actions 的函数。
 
-```
+```TypeScript
 // Action types
 export const INCREMENT = 'INCREMENT';
 export const DECREMENT = 'DECREMENT';
 
 // Action interfaces
-interface IncrementAction
-type: typeof INCREMENT;
-payload: number;
+interface IncrementAction {
+  type: typeof INCREMENT;
+  payload: number;
 }
 
-interface DecrementAction
-type: typeof DECREMENT;
-payload: number;
+interface DecrementAction {
+  type: typeof DECREMENT;
+  payload: number;
 }
 
 export type CounterActions = IncrementAction | DecrementAction;
 
 // Action creators
-export const increment = (value: number): IncrementAction
-type: INCREMENT,
-payload: value,
+export const increment = (value: number): IncrementAction => ({
+  type: INCREMENT,
+  payload: value,
 });
 
-export const decrement = (value: number): DecrementAction
-type: DECREMENT,
-payload: value,
+export const decrement = (value: number): DecrementAction => ({
+  type: DECREMENT,
+  payload: value,
+});
 ```
 
 ### 定义 Reducers
 
 Reducers 是纯函数，接收先前的状态和动作，返回新的状态。
 
-```
+```TypeScript
 import { CounterActions, INCREMENT, DECREMENT } from './actions';
 
-interface CounterState
-count: number;
+interface CounterState {
+  count: number;
 }
 
-const initialState: CounterState
-count: 0,
+const initialState: CounterState = {
+  count: 0,
 };
 
-const counterReducer = (state = initialState, action: CounterActions): CounterState
-switch (action.type)
-case INCREMENT:
-return { count: state.count + action.payload };
-case DECREMENT:
-return { count: state.count - action.payload };
-default:
-return state;
-}
-}
+const counterReducer = (state = initialState, action: CounterActions): CounterState => {
+  switch (action.type) {
+    case INCREMENT:
+      return { count: state.count + action.payload };
+    case DECREMENT:
+      return { count: state.count - action.payload };
+    default:
+      return state;
+  }
+};
 
 export default counterReducer;
 ```
@@ -7414,34 +7030,36 @@ export default counterReducer;
 
 要将组件连接到 Redux store，你可以使用 react-redux。
 
-```
+```TypeScript
 import { useSelector, useDispatch } from 'react-redux';
 import { CounterActions, increment, decrement } from './actions';
 
-const Counter
-const count = useSelector((state: any) => state.counter.count);
-const dispatch = useDispatch();
+const Counter = () => {
+  const count = useSelector((state: any) => state.counter.count);
+  const dispatch = useDispatch();
 
-const handleIncrement
-dispatch(increment(1));
+  const handleIncrement = () => {
+    dispatch(increment(1));
+  };
+
+  const handleDecrement = () => {
+    dispatch(decrement(1));
+  };
+
+  return (
+    <div>
+      <p>Count: {count}</p>
+      <button onClick={handleIncrement}>Increment</button>
+      <button onClick={handleDecrement}>Decrement</button>
+    </div>
+  );
 };
-
-const handleDecrement
-dispatch(decrement(1));
-};
-
-return
-<div>
-<p>Count: {count}</p>
-<button onClick={handleIncrement}>Increment</button>
-<button onClick={handleDecrement}>Decrement</button>
-</div>
 ```
 
 ### 额外的 Redux 概念和最佳实践
 
 - **Middleware（中间件）**：可以拦截动作并在它们到达 reducer 之前对其进行修改的函数。
-- **异步 Actions**：使用 Redux Thunk 或 Redux Saga 等库来处理异步操作。
+- **异步 Actions**：使用 Redux Thunk 或 Redux Saga 等库来处理异步操。
 - **规范化状态**：构建你的状态以避免数据重复并提高性能。
 - **Selectors**：以纯粹且高效的方式从状态中提取数据的函数。
 - **测试**：为 reducers 和 action creators 编写单元测试以确保代码质量。
@@ -7462,28 +7080,28 @@ return
 
 **目标**：创建一个简单的 React 组件，显示一个人的姓名和年龄。允许使用按钮增加年龄。
 
-```
+```TypeScript
 import React, { useState } from 'react';
 
-interface PersonProps
-name: string;
+interface PersonProps {
+  name: string;
 }
 
-const Person: React.FC<PersonProps> = ({ name }
-const [age, setAge] = useState<number>(0);
+const Person: React.FC<PersonProps> = ({ name }) => {
+  const [age, setAge] = useState<number>(0);
 
-const handleIncrement
-setAge(age + 1);
+  const handleIncrement = () => {
+    setAge(age + 1);
+  };
+
+  return (
+    <div>
+      <h1>Hello, {name}!</h1>
+      <p>Age: {age}</p>
+      <button onClick={handleIncrement}>Increment Age</button>
+    </div>
+  );
 };
-
-return
-<div>
-<h1>Hello, {name}!</h1>
-<p>Age: {age}</p>
-<button onClick={handleIncrement}>Increment Age</button>
-</div>
-
-);
 
 export default Person;
 ```
@@ -7498,34 +7116,30 @@ export default Person;
 
 **目标**：创建一个显示项目列表的组件。使用接口来定义项目和 props 的结构。
 
-```
+```TypeScript
 import React from 'react';
 
-interface Item
-id: number;
-name: string;
+interface Item {
+  id: number;
+  name: string;
 }
 
-interface ItemsListProps
-items: Item[];
+interface ItemsListProps {
+  items: Item[];
 }
 
-const ItemsList: React.FC<ItemsListProps> = ({ items })
-return
-<ul>
-{items.map((item)
+const ItemsList: React.FC<ItemsListProps> = ({ items }) => {
+  return (
+    <ul>
+      {items.map((item) => (
+        <li key={item.id}>{item.name}</li>
+      ))}
+    </ul>
+  );
+};
 
-
- 
- `<li key={item.id}>{item.name}</li>`
-
-)
-
-`</ul>`
-
-);
-
-`export default ItemsList;`
+export default ItemsList;
+```
 
 ### 附加练习：
 
@@ -7537,7 +7151,7 @@ return
 
 **目标：** 创建一个可复用组件，能够使用泛型显示不同类型的数据。
 
-```typescript
+```TypeScript
 import React from 'react';
 
 interface GenericListProps<T> {
@@ -7566,7 +7180,7 @@ export default GenericList;
 
 **目标：** 创建一个自定义 Hook，用于从 API 获取数据并管理加载和错误状态。
 
-```typescript
+```TypeScript
 import { useState, useEffect } from 'react';
 
 interface UseFetchData<T> {
@@ -7611,7 +7225,7 @@ export default useFetchData;
 
 **目标：** 创建一个主题上下文，并向组件提供与主题相关的数据。
 
-```typescript
+```TypeScript
 import React, { createContext, useState, useContext } from 'react';
 
 interface ThemeContextType {
@@ -7626,7 +7240,6 @@ const ThemeContext = createContext<ThemeContextType>({
 
 const ThemeProvider: React.FC = ({ children }) => {
   const [theme, setTheme] = useState<'light' | 'dark'>('light');
-
   const toggleTheme = () => {
     setTheme(theme === 'light' ? 'dark' : 'light');
   };
@@ -7645,7 +7258,7 @@ export { ThemeProvider, useTheme };
 
 ### 附加练习：
 
-- 创建多个主题，并允许用户选择其首选主题。
+- 创建多个主题，并允用户选择其首选主题。
 - 实现一个切换深色模式的按钮。
 - 使用主题上下文根据当前主题为组件设置样式。
 
@@ -7689,14 +7302,12 @@ module.exports = {
 
 让我们创建一个简单的 TypeScript 函数并编写相应的测试用例：
 
-```typescript
+```TypeScript
 // src/math.ts
 export function add(a: number, b: number): number {
   return a + b;
 }
-```
 
-```typescript
 // src/math.test.ts
 import { add } from './math';
 
@@ -7718,11 +7329,11 @@ describe('add', () => {
 
 Jest 提供了丰富的功能集，用于编写高效的单元测试：
 
-**匹配器：** Jest 提供了多种匹配器用于比较值和对象：
+**匹配器：** Jest 提供了多种匹��器用于比较值和对象：
 
 - `toBe`：检查严格相等。
 - `toEqual`：检查深度相等。
-- `toMatch`：使用正则表达式检查字符串匹配。
+- `toMatch`：使用正则表面检查字符串匹配。
 - `toBeTruthy`：检查值是否为真值。
 - `toBeFalsy`：检查值是否为假值。
 - 以及更多……
@@ -7746,34 +7357,28 @@ Jest 提供了丰富的功能集，用于编写高效的单元测试：
 - **测试驱动开发（TDD)：** 在编写实际代码之前先编写测试。
 - **快照测试：** 捕获组件或函数的输出，并与存储的快照进行比较。
 - **异步测试：** 使用 `async/await` 或 Promise 来测试异步代码。
-- **自定义匹配器：** 创建自定义匹配器以满足特定的测试需求。
+- **自定义匹配器：** 创建自定匹配器以满足特定的测试需求。
 
 ### 示例：测试异步代码
 
-```typescript
+```TypeScript
 // src/api.ts
 import axios from 'axios';
-
 export async function fetchData(url: string): Promise<any> {
   const response = await axios.get(url);
   return response.data;
 }
-```
 
-```typescript
 // src/api.test.ts
 import { fetchData } from './api';
 import axios from 'axios';
-
 jest.mock('axios');
 
 describe('fetchData', () => {
   it('should fetch data from the API', async () => {
     const mockData = { data: 'test' };
     (axios.get as jest.Mock).mockResolvedValueOnce({ data: mockData });
-
     const result = await fetchData('https://example.com');
-
     expect(result).toEqual(mockData);
   });
 });
@@ -7797,8 +7402,6 @@ describe('fetchData', () => {
 
 **为什么要进行集成测试？**
 
-
- 
 集成测试位于单元测试和端到端测试之间。它们测试不同单元（组件、模块等）之间的交互，以确保它们能够协同工作。与专注于单个代码片段的单元测试不同，集成测试确保应用程序的多个部分组合在一起后的表现符合预期。
 
 ## 配置开发环境
@@ -7818,7 +7421,7 @@ cd my-app
 npm install @testing-library/react @testing-library/jest-dom
 ```
 
-3. 配置 TypeScript：确保你的 `tsconfig.json` 已正确配置以支持 React 和 TypeScript。Create React App 默认会处理这一配置。
+3. 配置 TypeScript：确保你的 `tsconfig.json` 已正确配置以支持 React和 TypeScript。Create React App 默认会处理这一配置。
 
 #### 编写集成测试
 
@@ -7828,7 +7431,7 @@ npm install @testing-library/react @testing-library/jest-dom
 
 首先，让我们创建一个包含表单和列表的简单组件。
 
-```tsx
+```TypeScript
 // src/components/TodoApp.tsx
 import React, { useState } from 'react';
 
@@ -7840,6 +7443,7 @@ type Todo = {
 const TodoApp: React.FC = () => {
   const [todos, setTodos] = useState<Todo[]>([]);
   const [inputValue, setInputValue] = useState<string>('');
+
   const addTodo = () => {
     if (inputValue.trim()) {
       setTodos([...todos, { id: Date.now(), text: inputValue }]);
@@ -7873,7 +7477,7 @@ export default TodoApp;
 
 现在，让我们编写集成测试以确保组件之间的交互正确。
 
-```tsx
+```TypeScript
 // src/components/TodoApp.test.tsx
 import React from 'react';
 import { render, screen, fireEvent } from '@testing-library/react';
@@ -7890,19 +7494,15 @@ describe('TodoApp Integration Tests', () => {
     render(<TodoApp />);
     const input = screen.getByPlaceholderText('Add a new todo');
     const addButton = screen.getByText('Add');
-
     fireEvent.change(input, { target: { value: 'Learn TypeScript' } });
     fireEvent.click(addButton);
-
     expect(screen.getByText('Learn TypeScript')).toBeInTheDocument();
   });
 
   test('does not add an empty todo', () => {
     render(<TodoApp />);
     const addButton = screen.getByText('Add');
-
     fireEvent.click(addButton);
-
     expect(screen.queryByText('')).not.toBeInTheDocument();
   });
 });
@@ -7911,21 +7511,18 @@ describe('TodoApp Integration Tests', () => {
 ## 使用 RTL 进行集成测试的关键概念
 
 1. 渲染组件：使用 RTL 的 `render` 函数来渲染你的组件。这会将组件设置到虚拟 DOM 中，以便进行交互。
-
 2. 查询 DOM：RTL 提供了多种函数来查询 DOM，例如 `getByText`、`getByPlaceholderText` 等。这些函数用于查找元素并断言其存在性或状态。
-
 3. 模拟用户交互：使用 RTL 的 `fireEvent` 来模拟用户交互，例如点击、输入和表单提交。这使你能够测试组件对用户操作的响应。
-
 4. 断言：使用 Jest 的 `expect` 来对 DOM 的状态进行断言。`@testing-library/jest-dom` 包为 Jest 扩展了实用的断言方法，如 `toBeInTheDocument`、`toHaveTextContent` 等。
 
 ### 最佳实践
 
-- 测试用户交互：专注于测试用户与你的应用程序交互的方式。这能确保你的测试与实际使用情况保持一致。
+- 测试用户交互：专注于测试用户与你的应用程交互的方式。这能确保你的测试与实际使用情况保持一致。
 - 避免实现细节：避免测试组件的内部状态或方法。相反，应该测试在 DOM 中可见的输出和副作用。
 - 编写可读的测试：使用描述性的测试名称和清晰的断言，使你的测试易于理解和维护。
 - 使用 TypeScript：利用 TypeScript 在开发过程中捕获类型错误。TypeScript 可以帮助你编写更健壮的测试，确保组件被正确使用。
 
-使用 React Testing Library 和 TypeScript 进行集成测试，可以确保 React 应用程序中的组件按预期协同工作。通过专注于用户交互和测试应用程序的行为，你可以构建可靠且可维护的应用程序。有了这里讨论的设置和实践，你已经具备了为 React 应用程序编写有效集成测试的能力。
+使用 React Testing Library和 TypeScript 进行集成测试，可以确保 React 应用程序中的组件按预期协同工作。通过专注于用户交互和测试应用程序的行为，你可以构建可靠且可维护的应用程序。有了这里讨论的设置和实践，你已经具备了为 React 应用程序编写有效集成测试的能力。
 
 ## TypeScript 全栈开发中的代码覆盖率
 
@@ -8016,7 +7613,7 @@ npm install --save-dev istanbul
 
 创建 `src` 目录并添加文件 `mathUtils.ts`：
 
-```typescript
+```TypeScript
 // src/mathUtils.ts
 export const add = (a: number, b: number): number => {
   return a + b;
@@ -8025,11 +7622,7 @@ export const add = (a: number, b: number): number => {
 export const subtract = (a: number, b: number): number => {
   return a - b;
 };
-```
 
-
- 
- ```typescript
 export const multiply = (a: number, b: number): number => {
   return a * b;
 };
@@ -8046,7 +7639,7 @@ export const divide = (a: number, b: number): number => {
 
 在 `src` 中创建目录 `__tests__`，并添加文件 `mathUtils.test.ts`：
 
-```typescript
+```TypeScript
 // src/__tests__/mathUtils.test.ts
 import { add, subtract, multiply, divide } from '../mathUtils';
 
@@ -8085,9 +7678,7 @@ describe('mathUtils', () => {
 
 运行测试脚本：
 
-
- 
- ```bash
+```bash
 npm test
 ```
 
@@ -8139,26 +7730,37 @@ Jest 将执行测试并生成覆盖率报告：
 
 ### 练习 1：字符串反转
 
-1. reusable 编写测试：
+1. 编写测试：
+
+```TypeScript
+
+
+
+# 使用 TypeScript 进行测试驱动开发 (TDD)
+
+## 练习 1：字符串反转
+
+### 1. 编写测试
 
 ```typescript
 import { reverseString } from './stringReversal';
 
-describe('reverseString',
-  it('should reverse an empty string',
+describe('reverseString', () => {
+  it('should reverse an empty string', () => {
     expect(reverseString('')).toBe('');
   });
 
-  it('should reverse a single character string',
+  it('should reverse a single character string', () => {
     expect(reverseString('a')).toBe('a');
   });
 
-  it('should reverse a multiple character string',
+  it('should reverse a multiple character string', () => {
     expect(reverseString('hello')).toBe('olleh');
   });
+});
 ```
 
-2. 编写实现（最简代码使测试通过）：
+### 2. 编写实现（最简代码使测试通过）
 
 ```typescript
 export function reverseString(str: string): string {
@@ -8166,35 +7768,37 @@ export function reverseString(str: string): string {
 }
 ```
 
-3. **重构**（可选）：你可以探索不同的字符串反转方法，如递归或迭代方案，并评估性能。
+### 3. **重构**（可选）
 
-### 练习 2：计算器
+你可以探索不同的字符串反转方法，如递归或迭代方案，并评估性能。
 
-1. 编写测试：
+## 练习 2：计算器
+
+### 1. 编写测试
 
 ```typescript
 import { Calculator } from './calculator';
 
-describe('Calculator',
+describe('Calculator', () => {
   let calculator: Calculator;
 
-  beforeEach(
+  beforeEach(() => {
     calculator = new Calculator();
   });
 
-  it('should add two numbers',
+  it('should add two numbers', () => {
     expect(calculator.add(2, 3)).toBe(5);
   });
 
-  it('should subtract two numbers',
+  it('should subtract two numbers', () => {
     expect(calculator.subtract(5, 3)).toBe(2);
   });
 
   // Add more test cases for multiplication, division, etc.
-);
+});
 ```
 
-2. 编写实现：
+### 2. 编写实现
 
 ```typescript
 export class Calculator {
@@ -8210,28 +7814,31 @@ export class Calculator {
 }
 ```
 
-3. **重构**（可选）：考虑为除以零添加错误处理，或实现更复杂的计算。
+### 3. **重构**（可选）
 
-### 练习 3：变位词检查器
+考虑为除以零添加错误处理，或实现更复杂的计算。
 
-1. 编写测试：
+## 练习 3：变位词检查器
+
+### 1. 编写测试
 
 ```typescript
 import { isAnagram } from './anagramChecker';
 
-describe('isAnagram',
-  it('should return true for anagrams',
+describe('isAnagram', () => {
+  it('should return true for anagrams', () => {
     expect(isAnagram('listen', 'silent')).toBe(true);
     expect(isAnagram('elbow', 'below')).toBe(true);
   });
 
-  it('should return false for non-anagrams',
+  it('should return false for non-anagrams', () => {
     expect(isAnagram('hello', 'world')).toBe(false);
     expect(isAnagram('abc', 'ab')).toBe(false);
   });
+});
 ```
 
-2. 编写实现：
+### 2. 编写实现
 
 ```typescript
 export function isAnagram(str1: string, str2: string): boolean {
@@ -8239,15 +7846,17 @@ export function isAnagram(str1: string, str2: string): boolean {
 }
 ```
 
-3. **重构**（可选）：优化变位词检查算法的性能。
+### 3. **重构**（可选）
 
-### 附加练习：
+优化变位词检查算法的性能。
+
+## 附加练习
 
 - 使用 TDD 创建一个简单的待办事项应用。
 - 使用 TDD 构建一个猜数字游戏。
 - 使用 TDD 实现基本排序算法（例如冒泡排序）。
 
-### 关键要点：
+## 关键要点
 
 - 编写小型、聚焦的测试。
 - 追求 **100% 测试覆盖率**。
@@ -8257,11 +7866,11 @@ export function isAnagram(str1: string, str2: string): boolean {
 
 通过定期练习 TDD，你将更深入地理解如何编写简洁、可维护和可靠的代码。
 
-*注意：将占位符注释替换为练习的实际实现。*
+> **注意**：将占位符注释替换为练习的实际实现。
 
 # 第 11 章
 
-### 使用 TypeScript 设置 Node.js 项目
+## 使用 TypeScript 设置 Node.js 项目
 
 TypeScript 是 JavaScript 的超集，为 JavaScript 开发带来了静态类型和其他高级特性，增强了代码的可靠性和可维护性。本指南将带你完成使用 TypeScript 设置 Node.js 项目的过程，涵盖基本工具和配置。
 
@@ -8320,19 +7929,19 @@ npm install --save-dev typescript
 
 TypeScript Node.js 项目的常见结构：
 
-```
+```text
 my-ts-project
-  package.json
-  tsconfig.json
-  src
-    index.ts
-    models
-      user.ts
-    controllers
-      userController.ts
-    routes
-      userRoutes.ts
-  dist/
+├── package.json
+├── tsconfig.json
+├── src
+│   ├── index.ts
+│   ├── models
+│   │   └── user.ts
+│   ├── controllers
+│   │   └── userController.ts
+│   └── routes
+│       └── userRoutes.ts
+└── dist/
 ```
 
 ### 创建 TypeScript 文件
@@ -8401,7 +8010,7 @@ Node.js 是一个基于 Chrome V8 引擎的强大 JavaScript 运行时，允许�
 
 ### 理解 Node.js 模块
 
-在 Node.js 中，模块就是包含 JavaScript 代码的文件。Node.js 模块被设计为自包含的功能单元，可以导入到其他文件中使用的。这种模块化的方法使开发者能够将应用分解为更小、更易管理的部分，使代码库更易于理解和维护。
+在 Node.js 中，模块就是包含 JavaScript 代码的文件。Node.js 模块被设计为自包含的功能单元，可以导入到其他文件中使用。这种模块化的方法使开发者能够将应用分解为更小、更易管理的部分，使代码库更易于理解和维护。
 
 ### Node.js 模块的类型
 
@@ -8416,11 +8025,6 @@ Node.js 中有三种主要类型的模块：
 要在 Node.js 中创建模块，你只需将所需功能写入 JavaScript 文件，并使用 `module.exports` 对象导出它。让我们创建一个执行基本算术运算的简单本地模块。
 
 ```javascript
-```
-
-
- 
- ```javascript
 // arithmetic.js
 function add(a, b) {
   return a + b;
@@ -8449,7 +8053,7 @@ console.log(`Sum: ${sum}`);
 console.log(`Difference: ${difference}`);
 ```
 
-## 核心模块
+### 核心模块
 
 `Node.js` 提供了丰富的核心模块，可用于执行各种任务。以下示例展示了如何使用 `fs`（文件系统）模块读取文件。
 
@@ -8466,7 +8070,7 @@ fs.readFile('example.txt', 'utf8', (err, data) => {
 });
 ```
 
-## 第三方模块
+### 第三方模块
 
 第三方模块可以通过 `NPM` 安装。例如，你可以使用 `express` 模块来创建 Web 服务器。首先，需要使用以下命令安装它：
 
@@ -8681,7 +8285,7 @@ fs.writeFile('output.txt', 'Hello, world!', (err) => {
 ```typescript
 import * as path from 'path';
 
-const filePath = path.join(__dirname,rocery. 'data', 'file.txt');
+const filePath = path.join(__dirname, 'data', 'file.txt');
 console.log(filePath); // 输出: /path/to/your/project/data/file.txt
 ```
 
@@ -8748,74 +8352,59 @@ user.save().then(() => console.log('User saved'));
 import fs from 'fs/promises';
 
 async function readFileAsync(filePath: string): Promise<string> {
-  // implementation
+  const data = await fs.readFile(filePath, 'utf8');
+  return data;
 }
+
+readFileAsync('data.txt')
+  .then(data => console.log(data))
+  .catch(err => console.error(err));
 ```
 
-
- 
- const data = await fs.readFile(filePath, 'utf8');
-
-return data;
-
-}
-
-`readFileAsync('data.txt')`
-
-.then(data => console.log(data))
-
-.catch(err => console.error(err));
-
-## Axios
+#### 7. Axios
 
 `Axios` 是一个基于 Promise 的 HTTP 客户端，适用于浏览器和 `Node.js`。
 
-```TypeScript
+```typescript
 import axios from 'axios';
 
 axios.get('https://api.example.com/data')
-
-.then(response
-
-console.log(response.data);
-
-})
-
-.catch(error
-
-console.error(error);
+  .then(response => {
+    console.log(response.data);
+  })
+  .catch(error => {
+    console.error(error);
+  });
 ```
 
-## Lodash
+#### 8. Lodash
 
 `Lodash` 提供了用于处理数组、对象、字符串、数字等的实用函数。
 
-```TypeScript
+```typescript
 import _ from 'lodash';
 
 const numbers = [1, 2, 3, 4, 5];
-
 const doubled = _.map(numbers, (num) => num * 2);
-
 console.log(doubled); // Output: [2, 4, 6, 8, 10]
 ```
 
-## Nodemon
+#### 9. Nodemon
 
 `Nodemon` 是一个工具，当检测到文件变化时会重新启动你的 `Node.js` 应用程序。
 
-```Bash
+```bash
 # 全局安装 nodemon
 npm install -g nodemon
 ```
 
 然后使用 `nodemon yourScript.js` 运行你的应用程序。
 
-## TypeScript
+#### 10. TypeScript
 
 虽然 `TypeScript` 不是 `Node.js` 模块，但它本身对于开发健壮的 `Node.js` 应用程序至关重要。它提供了类型安全、改进的代码可读性和更好的工具支持。
 
-**记住**：这只是庞大的 `Node.js` 生态系统的冰山一角。根据你的项目需求探索其他模块。始终参考官方文档以获取深入的使用方法和示例。
+> **记住**：这只是庞大的 `Node.js` 生态系统的冰山一角。根据你的项目需求探索其他模块。始终参考官方文档以获取深入的使用方法和示例。
 
 通过结合这些模块并利用 `TypeScript` 的类型系统，你可以构建高效、可扩展且可维护的 `Node.js` 应用程序。
 
@@ -8825,7 +8414,7 @@ npm install -g nodemon
 
 创建一个 `Node.js` 脚本，在控制台打印 `"Hello, World!"`。
 
-```TypeScript
+```typescript
 console.log("Hello, World!");
 ```
 
@@ -8833,7 +8422,7 @@ console.log("Hello, World!");
 
 创建一个 `Node.js` 脚本，对作为命令行参数提供的两个数字执行基本算术运算（加法、减法、乘法和除法）。
 
-```TypeScript
+```typescript
 const num1 = Number(process.argv[2]);
 const num2 = Number(process.argv[3]);
 
@@ -8852,9 +8441,9 @@ console.log("Division:", num1 / num2);
 - 向文件写入内容 `"Hello from Node.js"`
 - 读取文件内容并打印到控制台
 
-```TypeScript
+```typescript
 import * as fs from 'fs';
-import as path from 'path';
+import * as path from 'path';
 
 const dirPath = path.join(__dirname, 'myDirectory');
 const filePath = path.join(dirPath, 'myFile.txt');
@@ -8874,17 +8463,17 @@ console.log(data);
 
 创建一个自定义事件发射器，发射两个事件：`'message'` 和 `'error'`。监听这些事件并记录发射的数据。
 
-```TypeScript
-import events from 'events';
+```typescript
+import * as events from 'events';
 
 const emitter = new events.EventEmitter();
 
-emitter.on('message', (data)
-console.log'Message:', data);
+emitter.on('message', (data) => {
+  console.log('Message:', data);
 });
 
-emitter.on('error', (err)
-console.error('Error:', err);
+emitter.on('error', (err) => {
+  console.error('Error:', err);
 });
 
 emitter.emit('message', 'This is a message');
@@ -8895,28 +8484,30 @@ emitter.emit('error', new Error('Something went wrong'));
 
 创建一个基本的 HTTP 服务器，监听端口 `3000`，并对所有请求响应 `"Hello from Node.js server"`。
 
-```TypeScript
+```typescript
 import http from 'http';
 
-const server = http.createServer((req, res)
-res.writeHead(200, {'Content-Type': 'text/plain'});
-res.end('Hello from Node.js server\n');
+const server = http.createServer((req, res) => {
+  res.writeHead(200, {'Content-Type': 'text/plain'});
+  res.end('Hello from Node.js server\n');
 });
 
-server.listen(3000,
-console.log('Server running on port 3000');
+server.listen(3000, () => {
+  console.log('Server running on port 3000');
+});
 ```
 
 ## 练习 6：错误处理
 
 创建一个除法函数。处理可能的除以零错误，并返回适当的错误信息。
 
-```TypeScript
-function divide(a: number, b: number): number | string
-if (b === 0)
-return 'Division by zero';
-else
-return a / b;
+```typescript
+function divide(a: number, b: number): number | string {
+  if (b === 0) {
+    return 'Division by zero';
+  } else {
+    return a / b;
+  }
 }
 
 console.log(divide(10, 2)); // Output: 5
@@ -8927,15 +8518,16 @@ console.log(divide(10, 0)); // Output: Division by zero
 
 使用 `fs` 模块异步读取文件并记录内容。使用 `try...catch` 块处理可能的错误。
 
-```TypeScript
+```typescript
 import fs from 'fs/promises';
 
-async function readFileAsync(filePath: string): Promise<void>
-try
-const data = await fs.readFile(filePath, 'utf8');
-console.log(data);
-catch (err)
-console.error(err);
+async function readFileAsync(filePath: string): Promise<void> {
+  try {
+    const data = await fs.readFile(filePath, 'utf8');
+    console.log(data);
+  } catch (err) {
+    console.error(err);
+  }
 }
 
 readFileAsync('myFile.txt');
@@ -8947,17 +8539,19 @@ readFileAsync('myFile.txt');
 
 `factorial.ts`：
 
-```TypeScript
-export function factorial(n: number): number
-if (n === 0 || n === 1)
-return 1;
-else
-return n * factorial(n - 1);
+```typescript
+export function factorial(n: number): number {
+  if (n === 0 || n === 1) {
+    return 1;
+  } else {
+    return n * factorial(n - 1);
+  }
+}
 ```
 
 `main.ts`：
 
-```TypeScript
+```typescript
 import { factorial } from './factorial';
 
 console.log(factorial(5)); // Output: 120
@@ -8967,7 +8561,7 @@ console.log(factorial(5)); // Output: 120
 
 创建一个 `Node.js` 脚本，使用可读流分块读取大文件，并使用可写流将内容写入另一个文件。
 
-```TypeScript
+```typescript
 import fs from 'fs';
 
 const readStream = fs.createReadStream('largeFile.txt');
@@ -8980,21 +8574,24 @@ readStream.pipe(writeStream);
 
 在 `Node.js` 脚本中故意引入一个错误，并使用 `Node.js` 调试器查找并修复该问题。
 
-```TypeScript
+```typescript
 let x = 10;
 let y = 0;
+
 console.log(x / y); // 这将导致除以零错误
 ```
 
-使用 `node --inspect` 命令启动调试器并逐步执行代码由各场景你怎么看？ Note: 这些练习为学习 `Node.js` 提供了坚实的基础。随着你的进步，探索更复杂的主题，如创建 REST API、数据库交互和构建真实世界应用程序。
+使用 `node --inspect` 命令启动调试器并逐步执行代码。
 
-**记住**：始终彻底测试你的代码，并优雅地处理潜在错误。
+> **注意**：这些练习为学习 `Node.js` 提供了坚实的基础。随着你的进步，探索更复杂的主题，如创建 REST API、数据库交互和构建真实世界应用程序。
+
+> **记住**：始终彻底测试你的代码，并优雅地处理潜在错误。
 
 # 第 12 章
 
 ## 使用 TypeScript 和 Express 构建 REST API
 
-Express 与 TypeScript 全栈开发基础
+### Express 与 TypeScript 全栈开发基础
 
 `Express.js` 是一个极简且灵活的 `Node.js` Web 应用程序框架，为构建 Web 和 API 应用程序提供了强大的功能集。当与 `TypeScript` 结合时，它提供了一个强大且类型安全的开发环境，用于开发可扩展且可维护的后端应用程序。
 
@@ -9002,7 +8599,7 @@ Express 与 TypeScript 全栈开发基础
 
 在深入了解 Express 基础之前，让我们先设置一个基本的 `TypeScript` 项目：
 
-```Bash
+```bash
 mkdir express-ts-app
 cd express-ts-app
 npm init -y
@@ -9011,39 +8608,42 @@ npm install express @types/express typescript --save-dev
 
 创建一个 `tsconfig.json` 文件，配置如下：
 
-```JSON
+```json
 {
-"compilerOptions":
-"target": "es6",
-"module": "commonjs",
-"outDir": "./dist",
-"strict": true,
-"esModuleInterop": true,
-"skipLibCheck": true,
-"forceConsistentCasingInFileNames": true
+  "compilerOptions": {
+    "target": "es6",
+    "module": "commonjs",
+    "outDir": "./dist",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true
+  }
+}
 ```
 
 ### 基本 Express 应用程序
 
 让我们创建一个 `index.ts` 文件作为应用程序的入口点：
 
-```TypeScript
+```typescript
 import express from 'express';
 
 const app = express();
 const port = process.env.PORT || 3000;
 
-app.get('/', (req, res)
-res.send('Hello from Express with TypeScript!');
+app.get('/', (req, res) => {
+  res.send('Hello from Express with TypeScript!');
 });
 
-app.listen(port,
-console.log(`Server listening on port ${port}`);
+app.listen(port, () => {
+  console.log(`Server listening on port ${port}`);
+});
 ```
 
 要运行应用程序，使用以下命令：
 
-```Bash
+```bash
 npx tsc && node dist/index.js
 ```
 
@@ -9058,77 +8658,66 @@ npx tsc && node dist/index.js
 
 Express 提供了灵活的路由系统，用于处理不同的 HTTP 方法和 URL 模式。以下是一个示例：
 
-```TypeScript
+```typescript
 import express from 'express';
 
 const app = express();
 
-bunny.app.get('/users', (req, res)
-res.json({ users: ['Alice', 'Bob', 'Charlie'] });
+app.get('/users', (req, res) => {
+  res.json({ users: ['Alice', 'Bob', 'Charlie'] });
 });
 
-app.post('/users', (req, res)
-const newUser = req.body;
-// 处理新用户数据
-res.status(201).json(newUser);
-
-app.put('/users/:id', (req, res)
-const userId = req.params.id;
-const updatedUser = req.body; 
-```
-
-
-  ```
-// Update the user with the given ID
-
-res.json(updatedUser);
-
+app.post('/users', (req, res) => {
+  const newUser = req.body;
+  // 处理新用户数据
+  res.status(201).json(newUser);
 });
 
-app.delete('/users/:id', (req, res)
+app.put('/users/:id', (req, res) => {
+  const userId = req.params.id;
+  const updatedUser = req.body;
+  // Update the user with the given ID
+  res.json(updatedUser);
+});
 
-const userId = req.params.id;
-
-// Delete the user with the given ID
-
-res.sendStatus(204);
-
+app.delete('/users/:id', (req, res) => {
+  const userId = req.params.id;
+  // Delete the user with the given ID
+  res.sendStatus(204);
+});
 ```
 
-## 中间件
+### 中间件
 
 中间件函数可用于在传入请求到达路由处理器之前对其执行操作。以下是日志中间件的示例：
 
-```
+```typescript
 import express from 'express';
 
 const app = express();
 
-app.use((req, res, next)
-
-console.log(`${new Date()} ${req.method} ${req.url}`);
-
-next();
+app.use((req, res, next) => {
+  console.log(`${new Date()} ${req.method} ${req.url}`);
+  next();
+});
 ```
 
 ### 错误处理
 
 Express 提供了错误处理中间件来处理异常并发送适当的响应：
 
-```
+```typescript
 import express from 'express';
 
 const app = express();
 
-app.use((err, req, res, next)
-
-console.error(err.stack);
-
-res.status(500).send('Something went wrong!');
-
+app.use((err, req, res, next) => {
+  console.error(err.stack);
+  res.status(500).send('Something went wrong!');
+});
 ```
 
-## 其他功能
+### 其他功能
 
 Express 还提供了许多其他功能，包括：
 
@@ -9140,7 +8729,7 @@ Express 还提供了许多其他功能，包括：
 
 这只是使用 TypeScript 的 Express 基础的简要介绍。要构建健壮且可扩展的 Web 应用程序，你需要更深入地探索这些功能。
 
-请记得将占位注释替换为实际的实现逻辑。
+> 请记得将占位注释替换为实际的实现逻辑。
 
 通过结合 Express 和 TypeScript 的强大功能，你可以创建结构良好、可维护且类型安全的后端应用程序。
 
@@ -9154,155 +8743,112 @@ Express 还提供了许多其他功能，包括：
 
 让我们创建一个专门的路由文件夹来组织我们的路由：
 
-```
+```bash
 mkdir routes
 ```
 
 在 routes 文件夹内创建一个 `users.ts` 文件：
 
-```
+```typescript
 import express from 'express';
-
 import { UserController } from '../controllers/userController';
 
 const router = express.Router();
-
 const userController = new UserController();
 
 router.get('/', userController.getUsers);
-
 router.get('/:id', userController.getUserById);
-
 router.post('/', userController.createUser);
-
 router.put('/:id', userController.updateUser);
-
 router.delete('/:id', userController.deleteUser);
 
 export default router;
 ```
 
-## 控制器
+### 控制器
 
 控制器充当路由与底层逻辑之间的中介。它们处理请求数据，与模型交互（如适用），并返回适当的响应。
 
 创建一个 controllers 文件夹和一个 `userController.ts` 文件：
 
-```
+```typescript
 import { Request, Response } from 'express';
-
 import { User } from '../models/user'; // Assuming a User model
 
-export class UserController
+export class UserController {
+  async getUsers(req: Request, res: Response) {
+    try {
+      const users = await User.find(); // Replace with actual database query
+      res.json(users);
+    } catch (error) {
+      res.status(500).json({ message: 'Error fetching users' });
+    }
+  }
 
-async getUsers(req: Request, res: Response)
+  async getUserById(req: Request, res: Response) {
+    const { id } = req.params;
+    try {
+      const user = await User.findById(id); // Replace with actual database query
+      if (!user) {
+        return res.status(404).json({ message: 'User not found' });
+      }
+      res.json(user);
+    } catch (error) {
+      res.status(500).json({ message: 'Error fetching user' });
+    }
+  }
 
-try
+  async createUser(req: Request, res: Response) {
+    try {
+      const user = new User(req.body);
+      await user.save();
+      res.status(201).json(user);
+    } catch (error) {
+      res.status(400).json({ message: 'Error creating user' });
+    }
+  }
 
-const users = await User.find(); // Replace with actual database query
+  async updateUser(req: Request, res: Response) {
+    const { id } = req.params;
+    try {
+      const user = await User.findByIdAndUpdate(id, req.body, { new: true });
+      if (!user) {
+        return res.status(404).json({ message: 'User not found' });
+      }
+      res.json(user);
+    } catch (error) {
+      res.status(400).json({ message: 'Error updating user' });
+    }
+  }
 
-res.json(users);
-
-catch (error)
-
-res.status(500).json({ message: 'Error fetching users' });
-
+  async deleteUser(req: Request, res: Response) {
+    const { id } = req.params;
+    try {
+      await User.findByIdAndDelete(id);
+      res.sendStatus(204);
+    } catch (error) {
+      res.status(500).json({ message: 'Error deleting user' });
+    }
+  }
 }
-
-async getUserById(req: Request, res: Response)
-
-const { id } = req.params;
-
-try
-
-const user = await User.findById(id); // Replace with actual database query
-
-if (!user)
-
-return res.status(404).json({ message: 'User not found' });
-
-}
-
-res.json(user);
-
-catch (error)
-
-res.status(500).json({ message: 'Error fetching user' });
-
-}
-
-async createUser(req: Request, res: Response)
-
-try
-
-const user = new User(req.body);
-
-await user.save();
-
-res.status(201).json(user);
-
-catch (error)
-
-res.status(400).json({ message: 'Error creating user' });
-
-}
-
-async updateUser(req: Request, res: Response)
-
-const { id } = req.params;
-
-try
-
-const user = await User.findByIdAndUpdate(id, req.body, { new: true });
-
-if (!user)
-
-return res.status(404).json({ message: 'User not found' });
-
-}
-
-res.json(user);
-
-catch (error)
-
-res.status(400).json({ message: 'Error updating user' });
-
-}
-
-async deleteUser(req: Request, res: Response)
-
-const { id } = req.params;
-
-try
-
-await User.findByIdAndDelete(id);
-
-res.sendStatus(204);
-
-catch (error)
-
-res.status(500).json({ message: 'Error deleting user' });
 ```
 
-## 将路由集成到主应用程序
+### 将路由集成到主应用程序
 
 在你的 `index.ts` 文件中：
 
-```
+```typescript
 import express from 'express';
-
 import usersRouter from './routes/users';
 
 const app = express();
-
 const port = process.env.PORT || 3000;
 
 app.use('/api/users', usersRouter);
 
-app.listen(port,
-
-console.log(`Server listening on port ${port}`);
-
+app.listen(port, () => {
+  console.log(`Server listening on port ${port}`);
+});
 ```
 
 ### 说明
@@ -9353,27 +8899,22 @@ Express 中的中间件函数是可以访问请求和响应对象，以及应用
 
 ### 创建自定义中间件
 
-```
+```typescript
 import express from 'express';
 
 const app = express();
 
 // Logging middleware
-
-app.use((req, res, next)
-
-console.log(`${new Date()} ${req.method} ${req.path}`);
-
-next();
+app.use((req, res, next) => {
+  console.log(`${new Date()} ${req.method} ${req.path}`);
+  next();
+});
 
 // Error handling middleware
-
-app.use((err, req, res, next)
-
-console.error(err.stack);
-
-res.status(500).send('Something went wrong!');
-
+app.use((err, req, res, next) => {
+  console.error(err.stack);
+  res.status(500).send('Something went wrong!');
+});
 ```
 
 ### 内置中间件
@@ -9384,23 +8925,19 @@ Express 提供了几个内置的中间件函数：
 - `express.urlencoded()`：解析传入的 URL 编码请求体。
 - `express.static()`：从指定目录提供静态文件。
 
-```
+```typescript
 import express from 'express';
 
 const app = express();
 
-app.use(express.json();
+app.use(express.json());
 ```
 
-```
-
- 
-```markdown
-## 中间件顺序
+### 中间件顺序
 
 中间件的定义顺序很重要。中间件函数按顺序执行。
 
-```TypeScript
+```typescript
 app.use(loggerMiddleware);
 app.use(bodyParserMiddleware);
 app.use(authenticationMiddleware);
@@ -9408,10 +8945,11 @@ app.use(router);
 app.use(errorHandlerMiddleware);
 ```
 
-## 自定义中间件示例：请求日志
+### 自定义中间件示例：请求日志
 
-```TypeScript
+```typescript
 import express from 'express';
+
 const app = express();
 
 const requestLogger = (req: express.Request, res: express.Response, next: express.NextFunction) => {
@@ -9422,10 +8960,11 @@ const requestLogger = (req: express.Request, res: express.Response, next: expres
 app.use(requestLogger);
 ```
 
-## 自定义中间件示例：错误处理
+### 自定义中间件示例：错误处理
 
-```TypeScript
+```typescript
 import express from 'express';
+
 const app = express();
 
 const errorHandler = (err: Error, req: express.Request, res: express.Response, next: express.NextFunction) => {
@@ -9436,12 +8975,13 @@ const errorHandler = (err: Error, req: express.Request, res: express.Response, n
 app.use(errorHandler);
 ```
 
-## 使用 Async/Await 的中间件
+### 使用 Async/Await 的中间件
 
 中间件函数可以通过 `async`/`await` 实现异步。
 
-```TypeScript
+```typescript
 import express from 'express';
+
 const app = express();
 
 const asyncMiddleware = async (req: express.Request, res: express.Response, next: express.NextFunction) => {
@@ -9452,7 +8992,7 @@ const asyncMiddleware = async (req: express.Request, res: express.Response, next
   } catch (error) {
     next(error);
   }
-}
+};
 
 app.use(asyncMiddleware);
 ```
@@ -9492,8 +9032,9 @@ app.use(asyncMiddleware);
 
 ## 基本错误处理
 
-```TypeScript
+```typescript
 import express from 'express';
+
 const app = express();
 
 app.get('/users', (req, res, next) => {
@@ -9513,7 +9054,7 @@ app.use((err: Error, req: express.Request, res: express.Response, next: express.
 
 创建自定义错误类可以帮助你对不同类型的错误进行分类和更有效地处理。
 
-```TypeScript
+```typescript
 class NotFoundError extends Error {
   constructor(message: string) {
     super(message);
@@ -9533,7 +9074,7 @@ app.get('/users/:id', (req, res, next) => {
 
 当使用 `async`/`await` 时，你可以使用 `try`-`catch` 块来处理错误：
 
-```TypeScript
+```typescript
 app.get('/users', async (req, res, next) => {
   try {
     // ...
@@ -9547,7 +9088,7 @@ app.get('/users', async (req, res, next) => {
 
 将错误处理逻辑集中在专用的错误处理中间件中通常是有益的：
 
-```TypeScript
+```typescript
 import { isCelebrateError } from 'celebrate';
 
 const handleError = (err: Error, req: express.Request, res: express.Response, next: express.NextFunction) => {
@@ -9555,6 +9096,7 @@ const handleError = (err: Error, req: express.Request, res: express.Response, ne
     // 处理验证错误
     return res.status(400).json({ errors: err.details });
   }
+
   console.error(err.stack);
   res.status(500).json({ message: 'Internal Server Error' });
 };
@@ -9588,11 +9130,11 @@ app.use(handleError);
 
 **目标**：创建一个用于管理用户的 RESTful API，实现基本的 CRUD 操作（创建、读取、更新、删除）。
 
-### 步骤：
+### 步骤
 
 - **设置一个新的 TypeScript 项目**：
 
-```Bash
+```bash
 mkdir users-api
 cd users-api
 npm init -y
@@ -9601,7 +9143,7 @@ npm install express typescript @types/express
 
 - **创建 User 接口**：
 
-```TypeScript
+```typescript
 interface User {
   id: number;
   name: string;
@@ -9611,14 +9153,14 @@ interface User {
 
 - **创建一个 starter 内存数据库**：
 
-```TypeScript
-let users: User[];
+```typescript
+let users: User[] = [];
 let nextId = 1;
 ```
 
 - **实现 API 端点**：
 
-```TypeScript
+```typescript
 import express from 'express';
 import { User } from './user';
 
@@ -9677,11 +9219,11 @@ app.listen(port, () => {
 
 **目标**：通过添加错误处理和输入验证来改进之前的 API。
 
-### 步骤：
+### 步骤
 
 - **创建自定义错误类**：
 
-```TypeScript
+```typescript
 class NotFoundError extends Error {
   constructor(message: string) {
     super(message);
@@ -9692,7 +9234,7 @@ class NotFoundError extends Error {
 
 - **实现错误处理中间件**：
 
-```TypeScript
+```typescript
 app.use((err: Error, req: express.Request, res: express.Response, next: express.NextFunction) => {
   console.error(err.stack);
   res.status(500).json({ message: 'Internal Server Error' });
@@ -9701,28 +9243,24 @@ app.use((err: Error, req: express.Request, res: express.Response, next: express.
 
 - **验证用户数据**：
 
-```TypeScript
+```typescript
 import { celebrate, Joi } from 'celebrate';
 
 app.post('/users', celebrate({
   body: Joi.object({
     name: Joi.string().required(),
+    email: Joi.string().email().required()
   })
-}));
+}), (req, res) => {
+  // ...
+});
 ```
-```
-
-
- 
- email: `Joi.string().email().required()`,
-
-`(req, res)`
 
 ## 练习 3：数据库集成
 
-**目标：** 将内存数据库替换为真实数据库（例如 MongoDB、PostgreSQL）。
+**目标**：将内存数据库替换为真实数据库（例如 MongoDB、PostgreSQL）。
 
-**步骤：**
+### 步骤
 
 1. 安装必要的数据库驱动（例如，MongoDB 的 `mongoose`）。
 2. 创建数据库连接。
@@ -9731,15 +9269,15 @@ app.post('/users', celebrate({
 
 ## 练习 4：身份验证与授权
 
-**目标：** 使用 JWT 或其他机制实现用户身份验证和授权。
+**目标**：使用 JWT 或其他机制实现用户身份验证和授权。
 
-**步骤：**
+### 步骤
 
 1. 生成 JWT 令牌。
 2. 使用身份验证中间件保护 API 端点。
 3. 实现基于角色的授权。
 
-### 附加练习：
+### 附加练习
 
 - 分页
 - 速率限制
@@ -9747,7 +9285,7 @@ app.post('/users', celebrate({
 - 部署（Heroku、AWS 等）
 - API 文档（Swagger、OpenAPI）
 
-**注意：** 这些练习为 API 开发提供了基础。实际应用通常需要更复杂的逻辑、错误处理和安全措施。
+> **注意**：这些练习为 API 开发提供了基础。实际应用通常需要更复杂的逻辑、错误处理和安全措施。
 
 ---
 
@@ -9785,12 +9323,12 @@ const connectDB = async () => {
     console.error(`Error: ${error.message}`);
     process.exit(1);
   }
-}
+};
 
 export default connectDB;
 ```
 
-**记住** 将 `process.env.MONGO_URI` 替换为您的实际 MongoDB 连接字符串。
+> **记住** 将 `process.env.MONGO_URI` 替换为您的实际 MongoDB 连接字符串。
 
 ### 定义 Mongoose 架构
 
@@ -9834,7 +9372,7 @@ const createUser = async (userData: { name: string; email: string; password: str
   } catch (error) {
     throw error;
   }
-}
+};
 
 const getUserById = async (userId: string) => {
   try {
@@ -9843,7 +9381,7 @@ const getUserById = async (userId: string) => {
   } catch (error) {
     throw error;
   }
-}
+};
 ```
 
 ### 更新和删除文档
@@ -9858,7 +9396,7 @@ const updateUser = async (userId: string, userData: Partial<User>) => {
   } catch (error) {
     throw error;
   }
-}
+};
 
 const deleteUser = async (userId: string) => {
   try {
@@ -9866,17 +9404,17 @@ const deleteUser = async (userId: string) => {
   } catch (error) {
     throw error;
   }
-}
+};
 ```
 
-#### 附加功能
+### 附加功能
 
 Mongoose 还提供了许多其他功能，包括：
 
-- **填充（Population）：** 引用其他文档并进行填充。
-- **验证：** 为文档字段定义自定义验证规则。
-- **索引：** 创建索引以提高查询性能。
-- **中间件：** 在文档操作之前或之后执行代码。
+- **填充（Population）**：引用其他文档并进行填充。
+- **验证**：为文档字段定义自定义验证规则。
+- **索引**：创建索引以提高查询性能。
+- **中间件**：在文档操作之前或之后执行代码。
 
 ### API 端点示例
 
@@ -10013,7 +9551,7 @@ const connectDB = async () => {
     console.error('Error connecting to MongoDB:', error);
     process.exit(1);
   }
-}
+};
 
 export default connectDB;
 ```
@@ -10024,11 +9562,11 @@ export default connectDB;
 
 有了模型和数据库连接后，我们可以执行 CRUD 操作。让我们创建一个简单的脚本来演示这些操作。
 
-
- 
- 1. 创建 CRUD 操作脚本
+#### 1. 创建 CRUD 操作脚本
 
 创建一个新文件 `src/index.ts`，并编写以下代码：
+
+
 
 ```typescript
 import connectDB from './database/connection';
@@ -10299,22 +9837,20 @@ console.log(deleted);
 
 ## TypeScript 中的数据验证
 
-
- 
 数据验证是软件开发中至关重要的一环。它确保用户输入的数据正确、一致且安全。TypeScript 凭借其强大的类型系统和丰富的类型特性，为构建健壮的验证机制提供了坚实的基础。
 
-## 理解数据验证
+### 理解数据验证
 
 数据验证通常涉及两个主要步骤：
 
 1. **输入验证**：在数据输入时进行检查，防止无效数据被处理。
 2. **输出验证**：在数据展示给用户或存入数据库之前进行验证。
 
-## TypeScript 在数据验证中的作用
+### TypeScript 在数据验证中的作用
 
 TypeScript 的类型系统通过在编译时捕获潜在错误，显著增强了数据验证能力。通过定义精确的数据结构，你可以强制类型安全并防止出现意外值。
 
-## 使用 TypeScript 类型进行基本数据验证
+### 使用 TypeScript 类型进行基本数据验证
 
 让我们从一个简单的例子开始：
 
@@ -10337,7 +9873,7 @@ function validateUser(user: User): boolean {
 
 在这个例子中，`User` 接口定义了用户对象的预期结构。`validateUser` 函数对提供的数据执行基本检查。虽然这种方法很有用，但在复杂的验证场景下可能变得繁琐。
 
-## 使用自定义类型和接口进行高级验证
+### 使用自定义类型和接口进行高级验证
 
 TypeScript 允许你创建自定义类型和接口来定义复杂的验证规则：
 
@@ -10345,7 +9881,7 @@ TypeScript 允许你创建自定义类型和接口来定义复杂的验证规则
 
 这里，我们引入了一个用于验证电子邮件的正则表达式，并将其整合到 `validateUser` 函数中。
 
-## 利用 TypeScript 的类型保护
+### 利用 TypeScript 的类型保护
 
 类型保护对于条件检查和细化类型至关重要：
 
@@ -10361,7 +9897,7 @@ function canVote(user: User): boolean {
 
 `isAdult` 函数是一个类型保护，用于检查用户年龄是否大于或等于 18。`canVote` 函数使用这个类型保护来确定用户是否可以投票。
 
-## 使用第三方验证库
+### 使用第三方验证库
 
 对于更复杂的验证场景，可以考虑使用第三方库，例如：
 
@@ -10371,7 +9907,7 @@ function canVote(user: User): boolean {
 
 这些库可以处理广泛的验证规则，包括自定义验证逻辑、错误消息和异步验证。
 
-### 使用 Class-validator 的示例
+#### 使用 Class-validator 的示例
 
 ```typescript
 import { IsNotEmpty, IsEmail, MinLength, MaxLength, IsNumber, Min, Max } from 'class-validator';
@@ -10392,7 +9928,7 @@ class User {
 }
 ```
 
-## 数据验证的最佳实践
+### 数据验证的最佳实践
 
 - **尽早验证**：尽快验证数据，防止错误传播。
 - **清晰的错误消息**：提供信息丰富的错误消息来引导用户。
@@ -10400,7 +9936,7 @@ class User {
 - **在严格性与可用性之间取得平衡**：避免过于严格的验证影响用户体验。
 - **考虑性能**：对性能关键的应用程序优化验证逻辑。
 
-### 其他考虑因素
+#### 其他考虑因素
 
 - **数据清理**：除了验证之外，考虑对输入数据进行清理，以防止 SQL 注入或跨站脚本攻击（XSS）等安全漏洞。
 - **国际化**：考虑不同文化中的数据格式和验证规则差异。
@@ -10556,47 +10092,31 @@ updateUser(1, { firstName: 'Updated Name' }); // 将 1 替换为用户 ID
 
 **目标**：从数据库中删除用户。
 
-
- 
- ```
+```typescript
 import { getConnection, createConnection } from 'typeorm';
-
 import { User } from './user.entity';
 
-async function deleteUser(id: number)
-
-try
-
-await createConnection(); // Replace with your connection options
-
-const user = await getConnection().getRepository(User).findOneBy({ id });
-
-if (user)
-
-await getConnection().manager.remove(user);
-
-console.log('User deleted');
-
-else
-
-console.log('User not found');
-
+async function deleteUser(id: number) {
+  try {
+    await createConnection(); // 替换为你的连接选项
+    const user = await getConnection().getRepository(User).findOneBy({ id });
+    if (user) {
+      await getConnection().manager.remove(user);
+      console.log('User deleted');
+    } else {
+      console.log('User not found');
+    }
+  } catch (error) {
+    console.error('Error deleting user:', error);
+  } finally {
+    await getConnection().close();
+  }
 }
 
-catch (error)
-
-console.error('Error deleting user:', error);
-
-finally
-
-await getConnection().close();
-
-}
-
-deleteUser(1); // Replace 1 with the user ID
+deleteUser(1); // 将 1 替换为用户 ID
 ```
 
-**说明：**
+### 说明：
 
 - 导入必要的模块。
 - 定义 `deleteUser` 函数，接收用户 ID 作为参数。
@@ -10604,7 +10124,7 @@ deleteUser(1); // Replace 1 with the user ID
 - 使用 `getConnection().manager.remove()` 删除用户。
 - 处理可能的错误并关闭数据库连接。
 
-**附加练习**
+### 附加练习
 
 - 为用户查询实现分页功能。
 - 创建实体之间的关系（例如，一对多、多对多）。
@@ -10628,23 +10148,24 @@ deleteUser(1); // Replace 1 with the user ID
 
 在开始测试之前，确保你已设置好 TypeScript 项目。如果没有，请创建一个新项目：
 
-```
+```bash
 npx create-react-app my-app --template typescript
 ```
 
 安装 Jest 和 TypeScript 专用依赖：
 
-```
+```bash
 cd my-app
 npm install --save-dev jest @types/jest ts-jest
 ```
 
 在项目的根目录下创建 `jest.config.js` 文件，并添加以下配置：
 
-```
-module.exports
-preset: 'ts-jest',
-testEnvironment: 'node',
+```javascript
+module.exports = {
+  preset: 'ts-jest',
+  testEnvironment: 'node',
+};
 ```
 
 #### 编写你的第一个测试
@@ -10654,14 +10175,12 @@ testEnvironment: 'node',
 ```typescript
 // factorial.ts
 
-export function factorial(n: number): number
-
-if (n === 0 || n === 1)
-
-return 1;
+export function factorial(n: number): number {
+  if (n === 0 || n === 1) {
+    return 1;
+  }
+  return n * factorial(n - 1);
 }
-
-return n factorial(n - 1);
 ```
 
 现在，创建一个名为 `factorial.test.ts` 的测试文件：
@@ -10671,16 +10190,16 @@ return n factorial(n - 1);
 
 import { factorial } from './factorial';
 
-describe('factorial',
-
-it('should calculate factorial correctly',
-
-expect(factorial(5)).toBe(120);
+describe('factorial', () => {
+  it('should calculate factorial correctly', () => {
+    expect(factorial(5)).toBe(120);
+  });
+});
 ```
 
 要运行测试，请使用以下命令：
 
-```
+```bash
 npm test
 ```
 
@@ -10710,9 +10229,9 @@ Jest 提供了丰富的匹配器用于不同的断言：
 ```typescript
 // dependency.ts
 
-export function fetchData()
-
-return Promise.resolve('data');
+export function fetchData() {
+  return Promise.resolve('data');
+}
 ```
 
 ```typescript
@@ -10720,41 +10239,37 @@ return Promise.resolve('data');
 
 import { fetchData } from './dependency';
 
-export async function myFunction()
-
-const data = await fetchData();
-
-return data.toUpperCase();
+export async function myFunction() {
+  const data = await fetchData();
+  return data.toUpperCase();
+}
 ```
 
 ```typescript
 // myFunction.test.ts
 
 import { myFunction } from './myFunction';
-
-import as dependency from './dependency';
+import * as dependency from './dependency';
 
 jest.mock('./dependency');
 
-test('myFunction', async
-
-(dependency.fetchData as jest.Mock).mockResolvedValue('mocked data');
-
-const result = await myFunction();
-
-expect(result).toBe('MOCKED DATA');
+test('myFunction', async () => {
+  (dependency.fetchData as jest.Mock).mockResolvedValue('mocked data');
+  const result = await myFunction();
+  expect(result).toBe('MOCKED DATA');
+});
 ```
 
 #### 测试驱动开发（TDD）
 
 TDD 是一种开发方法，要求你在编写实际代码之前先编写测试。这有助于编写出简洁、可维护的代码。
 
-## 代码覆盖率
+### 代码覆盖率
 
 Jest 提供代码覆盖率报告，帮助你识别未测试的代码：
 
-```
-npm test --coverage
+```bash
+npm test -- --coverage
 ```
 
 #### 额外提示
@@ -10775,7 +10290,7 @@ npm test --coverage
 
 确保你已设置好 Node.js 和 TypeScript 项目。你需要以下依赖：
 
-```
+```bash
 npm install --save-dev supertest @types/supertest ts-node
 ```
 
@@ -10790,25 +10305,19 @@ import express from 'express';
 
 const app = express();
 
-app.get('/users', (req, res)
-
-const users
-
-{ id: 1, name: 'John Doe' },
-
-{ id: 2, name: 'Jane Smith' },
-
-];
-
-res.json(users);
-
+app.get('/users', (req, res) => {
+  const users = [
+    { id: 1, name: 'John Doe' },
+    { id: 2, name: 'Jane Smith' },
+  ];
+  res.json(users);
 });
 
 const port = process.env.PORT || 3000;
 
-app.listen(port,
-
-console.log(`Server listening on port ${port}`);
+app.listen(port, () => {
+  console.log(`Server listening on port ${port}`);
+});
 ```
 
 #### 编写集成测试
@@ -10817,26 +10326,22 @@ console.log(`Server listening on port ${port}`);
 
 ```typescript
 import supertest from 'supertest';
-
 import app from './server'; // 假设 server.ts 在同一目录下
 
 const request = supertest(app);
 
-describe('Users API',
-
-it('should return a list of users', async
-
-const response = await request.get('/users');
-
-expect(response.status).toBe(200);
-
-expect(response.body).toEqual
-
-expect.arrayContaining(
-
-expect.objectContaining({ id: 1, name: 'John Doe' }),
-
-expect.objectContaining({ id: 2, name: 'Jane Smith' }),
+describe('Users API', () => {
+  it('should return a list of users', async () => {
+    const response = await request.get('/users');
+    expect(response.status).toBe(200);
+    expect(response.body).toEqual(
+      expect.arrayContaining([
+        expect.objectContaining({ id: 1, name: 'John Doe' }),
+        expect.objectContaining({ id: 2, name: 'Jane Smith' }),
+      ])
+    );
+  });
+});
 ```
 
 ## 代码解析
@@ -10862,22 +10367,17 @@ Supertest 提供了丰富的 API，支持各种 HTTP 方法和断言：
 #### 测试错误处理
 
 ```typescript
-it('should handle errors', async
-
-// 在服务器中模拟错误条件
-
-const response = await request.get('/invalid-endpoint');
-
-expect(response.status).toBe(404);
-
-expect(response.body).toHaveProperty('message');
+it('should handle errors', async () => {
+  // 在服务器中模拟错误条件
+  const response = await request.get('/invalid-endpoint');
+  expect(response.status).toBe(404);
+  expect(response.body).toHaveProperty('message');
+});
 ```
 
 #### 模拟依赖
 
-
- 
-对于复杂的集成测试，你可能需要.mock 外部依赖。为此，你可以使用`Jest`或`Sinon`等库。
+对于复杂的集成测试，你可能需要 mock 外部依赖。为此，你可以使用 `Jest` 或 `Sinon` 等库。
 
 ### 最佳实践
 
@@ -10888,7 +10388,7 @@ expect(response.body).toHaveProperty('message');
 - 利用测试数据：创建可复用的测试数据集。
 - 考虑使用测试数据库：对于数据库驱动的应用，使用内存数据库或专用的测试数据库。
 
-使用`Supertest`进行集成测试对于确保 Web 应用的正确行为至关重要。通过遵循这些指导原则并利用`Supertest`的特性，你可以创建有效的集成测试，从而提高代码质量和可靠性。
+使用 `Supertest` 进行集成测试对于确保 Web 应用的正确行为至关重要。通过遵循这些指导原则并利用 `Supertest` 的特性，你可以创建有效的集成测试，从而提高代码质量和可靠性。
 
 ## 代码覆盖率
 
@@ -10914,7 +10414,7 @@ expect(response.body).toHaveProperty('message');
 对于 TypeScript 项目，有几种工具可以用来测量代码覆盖率：
 
 - `Jest`：一个流行的测试框架，内置覆盖率报告功能。
-- `Mocha`：与`nyc`结合使用以生成覆盖率报告。
+- `Mocha`：与 `nyc` 结合使用以生成覆盖率报告。
 - `Karma`：常用于 Angular 项目。
 - `Istanbul`：用于插桩和报告。
 
@@ -10930,7 +10430,7 @@ npm install --save-dev jest @types/jest ts-jest
 
 #### 步骤 2：配置 Jest
 
-创建`jest.config.js`文件来配置 Jest：
+创建 `jest.config.js` 文件来配置 Jest：
 
 ```javascript
 module.exports = {
@@ -10945,7 +10445,7 @@ module.exports = {
 
 #### 步骤 3：编写测试
 
-在`__tests__`目录中创建测试文件。例如，如果你在`src/math.ts`中有一个函数，可以编写：
+在 `__tests__` 目录中创建测试文件。例如，如果你在 `src/math.ts` 中有一个函数，可以编写：
 
 ```typescript
 // src/math.ts
@@ -10969,7 +10469,7 @@ describe('add function', () => {
 npx jest --coverage
 ```
 
-这将在`coverage`目录中生成覆盖率报告，显示哪些代码行被测试覆盖。
+这将在 `coverage` 目录中生成覆盖率报告，显示哪些代码行被测试覆盖。
 
 ### 分析覆盖率报告
 
@@ -10988,7 +10488,7 @@ Jest 生成的覆盖率报告包含有关代码哪些部分被覆盖的详细信
 
 ### 前端
 
-对于使用`Angular`、`React`或`Vue`等框架构建的前端应用，确保你的组件和逻辑经过充分测试。`Jest`结合`Enzyme`或`React Testing Library`等工具，可以为 React 应用提供出色的覆盖率。
+对于使用 `Angular`、`React` 或 `Vue` 等框架构建的前端应用，确保你的组件和逻辑经过充分测试。`Jest` 结合 `Enzyme` 或 `React Testing Library` 等工具，可以为 React 应用提供出色的覆盖率。
 
 React 组件的测试示例：
 
@@ -11027,9 +10527,9 @@ describe('Button component', () => {
 
 ### 后端
 
-对于使用`Node.js`构建的后端应用，测试你的业务逻辑、路由和中间件。使用`Jest`或`Mocha`等工具确保你的后端代码得到充分覆盖。
+对于使用 `Node.js` 构建的后端应用，测试你的业务逻辑、路由和中间件。使用 `Jest` 或 `Mocha` 等工具确保你的后端代码得到充分覆盖。
 
-`Node.js`函数的测试示例：
+`Node.js` 函数的测试示例：
 
 ```typescript
 // src/utils/calculate.ts
@@ -11052,7 +10552,7 @@ describe('multiply function', () => {
 3. 重构复杂函数：将复杂函数拆分为更小、可测试的单元。
 4. 使用 Mock 和 Stub：用模拟对象替换依赖以隔离测试。
 
-代码覆盖率是使用 TypeScript 的全栈开发人员的一个重要指标。通过将`Jest`等覆盖率工具集成到工作流程中，你可以识别代码中未测试的部分，并提高应用的整体质量和可靠性。虽然实现 100%的覆盖率通常不切实际，但努力通过有意义的测试实现高覆盖率是一种最佳实践，可以带来健壮且可维护的代码库。
+代码覆盖率是使用 TypeScript 的全栈开发人员的一个重要指标。通过将 `Jest` 等覆盖率工具集成到工作流程中，你可以识别代码中未测试的部分，并提高应用的整体质量和可靠性。虽然实现 100% 的覆盖率通常不切实际，但努力通过有意义的测试实现高覆盖率是一种最佳实践，可以带来健壮且可维护的代码库。
 
 ## 练习：测试驱动开发
 
@@ -11063,7 +10563,7 @@ describe('multiply function', () => {
 ### 先决条件
 
 - TypeScript 基础知识
-- 已安装`Node.js`和`npm`（或`yarn`）
+- 已安装 `Node.js` 和 `npm`（或 `yarn`）
 - 文本编辑器或 IDE
 
 ### 设置项目
@@ -11075,7 +10575,7 @@ mkdir tdd-example
 cd tdd-example
 ```
 
-- 初始化`npm`：
+- 初始化 `npm`：
 
 ```bash
 npm init -y
@@ -11087,7 +10587,7 @@ npm init -y
 npm install --save-dev typescript jest @types/jest ts-node
 ```
 
-- 创建`tsconfig.json`文件：
+- 创建 `tsconfig.json` 文件：
 
 ```json
 {
@@ -11103,7 +10603,7 @@ npm install --save-dev typescript jest @types/jest ts-node
 }
 ```
 
-- 创建`jest.config.js`文件：
+- 创建 `jest.config.js` 文件：
 
 ```javascript
 module.exports = {
@@ -11114,24 +10614,25 @@ module.exports = {
 
 ### TDD 示例：一个简单的计算器
 
+让我们使用 TDD 构建一个基础计算器。我们先为 `add` 函数编写测试。
 
- 
- 让我们使用 TDD 构建一个基础计算器。我们先为 `add` 函数编写测试。
-
-## 创建测试文件
+#### 创建测试文件
 
 ```typescript
 // calculator.test.ts
 
 import { add } from './calculator';
 
-describe('calculator',
-  describe('add',
-    it('should add two numbers',
+describe('calculator', () => {
+  describe('add', () => {
+    it('should add two numbers', () => {
       expect(add(2, 3)).toBe(5);
+    });
+  });
+});
 ```
 
-## 运行测试
+#### 运行测试
 
 ```bash
 npm test
@@ -11139,7 +10640,7 @@ npm test
 
 测试将会失败，因为 `add` 函数尚不存在。
 
-编写最少代码使测试通过：
+#### 编写最少代码使测试通过
 
 ```typescript
 // calculator.ts
@@ -11163,10 +10664,11 @@ export function add(a: number, b: number): number {
 // calculator.test.ts
 
 // 其他测试
-
-describe('subtract',
-  it('should subtract two numbers',
+describe('subtract', () => {
+  it('should subtract two numbers', () => {
     expect(subtract(5, 3)).toBe(2);
+  });
+});
 ```
 
 ### 编写实现
@@ -11174,11 +10676,12 @@ describe('subtract',
 ```typescript
 // calculator.ts
 
-export function subtract(a: number, b: number): number
+export function subtract(a: number, b: number): number {
   return a - b;
+}
 ```
 
-运行测试： fabricate  两个测试都应该通过。
+运行测试：两个测试都应该通过。
 
 ## 额外的 TDD 实践
 
@@ -11230,32 +10733,55 @@ npx create-react-app my-app --template typescript
 ```typescript
 import { useState, useEffect } from 'react';
 
-interface Post
+interface Post {
   id: number;
   title: string;
   body: string;
+}
 
-const MyComponent
-  const [posts, setPosts] = useState<Post[]>
+const MyComponent = () => {
+  const [posts, setPosts] = useState<Post[]>([]);
   const [isLoading, setIsLoading] = useState(false);
-  const [error, setError] = useState<string | null>(null);  
+  const [error, setError] = useState<string | null>(null);
 
-  useEffect
-    const fetchData = async
+  useEffect(() => {
+    const fetchData = async () => {
       setIsLoading(true);
-      try
+      try {
         const response = await fetch('https://jsonplaceholder.typicode.com/posts');
-        if (!response.ok)
-          throw new Error('Network    response was not ok');
+        if (!response.ok) {
+          throw new Error('Network response was not ok');
         }
         const data: Post[] = await response.json();
         setPosts(data);
-      catch (error)  
+      } catch (error) {
         setError(error.message);
-      finally
+      } finally {
         setIsLoading(false);
+      }
+    };
 
     fetchData();
+  }, []);
+
+  return (
+    <div>
+      {isLoading ? (
+        <p>Loading...</p>
+      ) : error ? (
+        <p>Error: {error}</p>
+      ) : (
+        <ul>
+          {posts.map((post) => (
+            <li key={post.id}>{post.title}</li>
+          ))}
+        </ul>
+      )}
+    </div>
+  );
+};
+
+export default MyComponent;
 ```
 
 **说明：**
@@ -11270,21 +10796,6 @@ const MyComponent
 
 在获取数据和处理错误时向用户提供反馈至关重要。你可以根据 `isLoading` 和 `error` 状态显示加载指示器或错误消息。
 
-```typescript
-return
-  <div>
-    {isLoading ?
-      <p>Loading...</p>
-    error ?
-      <p>Error: {error}</p>    
-    <ul>
-      {posts.map((post)
-        <li key={post.id}>{post.title}</li>
-    </ul>
-  )
-  </div>
-```
-
 ### 使用 Axios
 
 虽然 `fetch` 是内置的，但许多开发者更喜欢使用 Axios 等库，因为它方便且功能丰富。
@@ -11292,18 +10803,21 @@ return
 ```typescript
 import axios from 'axios';
 
-useEffect
-  const fetchData = async
+useEffect(() => {
+  const fetchData = async () => {
     setIsLoading(true);
-    try
-      const response = await axios.get('https://jsonplaceholder.typicode.com/posts');  
+    try {
+      const response = await axios.get('https://jsonplaceholder.typicode.com/posts');
       setPosts(response.data);
-    catch (error)
-      setError(error.message);  
-    finally
+    } catch (error) {
+      setError(error.message);
+    } finally {
       setIsLoading(false);
+    }
+  };
 
   fetchData();
+}, []);
 ```
 
 ### 额外考虑
@@ -11338,52 +10852,51 @@ useEffect
 ```typescript
 import React, { useState } from 'react';
 
-interface User
+interface User {
   username: string;
   password?: string; // 密码存储可选
+}
 
-const LoginForm
+const LoginForm = () => {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
 
-  const handleSubmit   = (e: React.FormEvent<HTMLFormElement>)
-    e.preventDefault();  
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
     // 基本身份验证逻辑（替换为实际 API 调用）
     const user: User = { username, password };
-    if (user.username === 'test' && user.password === 'test')
+    if (user.username === 'test' && user.password === 'test') {
       // 登录成功
       console.log('Login successful');
       // 将用户数据存储在本地存储或会话存储中
       localStorage.setItem('user', JSON.stringify(user));
-    else
+    } else {
       setError('Invalid username or password');
-  }
-```
+    }
+  };
 
-
- 
- ```
-return (
-  <form onSubmit={handleSubmit}>
-    <input type="text" placeholder="Username" value={username} onChange={(e) => setUsername(e.target.value)} />
-    <input type="password" placeholder="Password" value={password} onChange={(e) => setPassword(e.target.value)} />
-    <button type="submit">Login</button>
-    {error && <p>{error}</p>}
-  </form>
-);
+  return (
+    <form onSubmit={handleSubmit}>
+      <input type="text" placeholder="Username" value={username} onChange={(e) => setUsername(e.target.value)} />
+      <input type="password" placeholder="Password" value={password} onChange={(e) => setPassword(e.target.value)} />
+      <button type="submit">Login</button>
+      {error && <p>{error}</p>}
+    </form>
+  );
+};
 
 export default LoginForm;
 ```
 
-## 基于令牌的认证
+#### 基于令牌的认证
 
 基于令牌的认证是一种更安全、可扩展性更强的方案。以下是一个使用 JSON Web Tokens (JWT) 的基本示例：
 
-```TypeScript
+```typescript
 import axios from 'axios';
 
-const login = async (username, password) => {
+const login = async (username: string, password: string) => {
   try {
     const response = await axios.post('/api/login', { username, password });
     const token = response.data.token;
@@ -11397,7 +10910,7 @@ const login = async (username, password) => {
 };
 ```
 
-## 授权
+#### 授权
 
 用户通过认证后，我们需要确定他们能做什么。这就是授权的作用所在。
 
@@ -11405,7 +10918,7 @@ const login = async (username, password) => {
 
 RBAC 是一种常见的授权模型。用户被分配角色，而角色拥有权限。
 
-```TypeScript
+```typescript
 interface User {
   id: number;
   username: string;
@@ -11414,25 +10927,25 @@ interface User {
 
 const hasPermission = (user: User, permission: string): boolean => {
   return user.roles.includes(permission);
-}
+};
 ```
 
 ### 保护路由
 
 我们可以使用 React Router 基于用户角色来保护路由：
 
-```TypeScript
+```typescript
 import { Navigate, Outlet } from 'react-router-dom';
 
 const RequireAuth = ({ allowedRoles }: { allowedRoles: string[] }) => {
   const user = JSON.parse(localStorage.getItem('user') || '{}') as User;
   return hasPermission(user, allowedRoles[0]) ? <Outlet /> : <Navigate to="/login" />;
-}
+};
 ```
 
 ### 使用示例
 
-```TypeScript
+```typescript
 import { Routes, Route } from 'react-router-dom';
 
 const App = () => {
@@ -11445,7 +10958,7 @@ const App = () => {
       </Route>
     </Routes>
   );
-}
+};
 ```
 
 ### 其他注意事项
@@ -11475,7 +10988,7 @@ const App = () => {
 
 对于简单的状态管理，React 的 `useState` 钩子已经足够。
 
-```TypeScript
+```typescript
 import React, { useState } from 'react';
 
 interface CounterState {
@@ -11495,14 +11008,14 @@ const Counter = () => {
       <button onClick={increment}>Increment</button>
     </div>
   );
-}
+};
 ```
 
 ### Context API
 
 如需在多个组件之间共享状态而无需 prop drilling，Context API 非常有用。
 
-```TypeScript
+```typescript
 import React, { createContext, useContext, useState } from 'react';
 
 interface CounterContextType {
@@ -11538,14 +11051,14 @@ const useCounter = () => {
 const ComponentA = () => {
   const { count, increment } = useCounter();
   // ...
-}
+};
 ```
 
 ### Redux
 
 对于具有可预测数据流的复杂状态管理，Redux 是一个受欢迎的选择。
 
-```TypeScript
+```typescript
 import { createStore } from 'redux';
 
 interface CounterState {
@@ -11582,7 +11095,7 @@ store.dispatch({ type: 'INCREMENT' });
 
 Recoil 是一个较新的状态管理库，提供更简单的 API 和基于原子（atom）的状态管理。
 
-```TypeScript
+```typescript
 import { atom, useRecoilState } from 'recoil';
 
 const countState = atom({
@@ -11603,14 +11116,14 @@ const Counter = () => {
       <button onClick={increment}>Increment</button>
     </div>
   );
-}
+};
 ```
 
 ### Zustand
 
 Zustand 是另一个轻量级状态管理解决方案，专注于简洁性。
 
-```TypeScript
+```typescript
 import create from 'zustand';
 
 interface CounterStore {
@@ -11633,7 +11146,7 @@ const Counter = () => {
       <button onClick={increment}>Increment</button>
     </div>
   );
-}
+};
 ```
 
 ### 选择合适的解决方案
@@ -11657,11 +11170,9 @@ const Counter = () => {
 
 ## TypeScript React 应用的部署
 
-
- 
 部署是将你的应用程序提供给用户使用的过程。这包括构建应用、为生产环境做准备，以及将其托管到服务器上。
 
-## 生产环境构建
+### 生产环境构建
 
 在部署之前，必须将 React 应用程序构建为生产版本。这会对代码进行性能和体积优化。
 
@@ -11671,11 +11182,11 @@ npm run build
 
 该命令会在项目根目录下创建一个 `build` 文件夹。此文件夹包含你应用程序的生产就绪版本。
 
-## 部署平台
+### 部署平台
 
 有众多平台可用于部署 React 应用程序。以下是一些热门选项：
 
-### Netlify
+#### Netlify
 
 Netlify 是部署静态网站的流行平台，特别适合 React 应用程序。
 
@@ -11683,7 +11194,7 @@ Netlify 是部署静态网站的流行平台，特别适合 React 应用程序�
 2. 连接 Git 仓库：将项目的 Git 仓库连接到 Netlify。
 3. 部署：当你向仓库推送更改时，Netlify 会自动构建并部署你的应用程序。
 
-### Vercel
+#### Vercel
 
 Vercel 是部署 React 应用程序的另一个优秀选择，提供无服务器函数和全球 CDN 等功能。
 
@@ -11691,7 +11202,7 @@ Vercel 是部署 React 应用程序的另一个优秀选择，提供无服务器
 2. 导入项目：从 GitHub 导入项目或创建新项目。
 3. 部署：Vercel 会构建并部署你的应用程序。
 
-### AWS Amplify
+#### AWS Amplify
 
 对于更大规模的应用程序，AWS Amplify 提供了一个用于构建和部署全栈应用程序的综合平台。
 
@@ -11701,7 +11212,7 @@ Vercel 是部署 React 应用程序的另一个优秀选择，提供无服务器
 4. 添加托管：为你的 React 应用程序配置托管。
 5. 部署：使用 Amplify CLI 部署你的应用程序。
 
-### 使用 Node.js 和 Express 的自定义服务器
+#### 使用 Node.js 和 Express 的自定义服务器
 
 如果你希望对部署环境有更多控制，可以使用 Node.js 和 Express 设置自定义服务器。
 
@@ -11727,7 +11238,7 @@ app.listen(port, () => {
 
 要部署此配置，你需要一个服务器环境，如 Heroku、AWS EC2 或 VPS。
 
-## 部署注意事项
+### 部署注意事项
 
 - **性能**：为生产环境优化构建版本，使用 CDN，并考虑使用无服务器函数来提升性能。
 - **安全性**：遵循安全最佳实践，保护应用程序免受漏洞攻击。
@@ -11735,7 +11246,7 @@ app.listen(port, () => {
 - **成本**：考虑不同部署选项的成本影响。
 - **持续集成与持续部署（CI/CD）**：使用 Jenkins、Travis CI 或 GitLab CI/CD 等工具自动化构建、测试和部署流程。
 
-### 使用 GitHub Actions 的 CI/CD 流水线示例
+#### 使用 GitHub Actions 的 CI/CD 流水线示例
 
 ```yaml
 name: Deploy to Netlify
@@ -11858,6 +11369,8 @@ npx create-react-app blog-app --template typescript
 
 #### 2. 获取并显示文章
 
+
+
 ```typescript
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
@@ -11898,21 +11411,33 @@ export default App;
 ## 练习
 
 1. **实现 CRUD 操作**：添加用于创建、更新和删除文章的接口。
+
 2. **用户认证**：使用 JWT 实现用户注册、登录和认证。
+
 3. **文章评论**：允许用户对文章进行评论。
+
 4. **错误处理**：为 API 请求和用户交互实现适当的错误处理。
+
 5. **测试**：为前端和后端编写单元测试和集成测试。
+
 6. **部署**：将应用程序部署到 Heroku 或 Netlify 等云平台。
+
 7. **数据库集成**：将内存数据存储替换为 MongoDB 或 PostgreSQL 等数据库。
+
 8. **前端增强**：通过样式和交互元素改进用户界面。
+
 9. **代码优化**：优化代码以提升性能和可读性。
+
 10. **安全性**：实施安全措施以保护用户数据。
 
 ## 其他项目创意
 
 - **电子商务商店**：包括产品目录、购物车、结账和订单管理。
+
 - **社交媒体平台**：实现用户资料、帖子、点赞、评论和好友连接等功能。
+
 - **任务管理应用**：允许用户创建、编辑和删除任务，设置优先级和截止日期。
+
 - **个人作品集网站**：展示你的项目和技能。
 
 通过完成这些练习和项目，你将获得使用 TypeScript、React 和 Node.js 构建全栈应用程序的实践经验。请记住关注代码整洁、适当的测试和用户体验。
@@ -11925,8 +11450,6 @@ export default App;
 
 ### TypeScript 编译器选项：深入解析
 
-
- 
 TypeScript 编译器选项对于配置 TypeScript 代码如何编译成 JavaScript 至关重要。它们对编译过程的各个方面提供精细控制，从类型检查和代码生成，到模块解析和输出格式化。本文将探讨一些最常见且最重要的编译器选项，并提供基于全栈开发背景的代码示例和解释。
 
 ## 理解 `tsconfig.json`
@@ -12080,6 +11603,7 @@ TypeScript 编译器选项对于配置 TypeScript 代码如何编译成 JavaScri
 在**全栈项目**中，你可能会为应用程序的不同部分使用不同的编译器选项。例如：
 
 - **客户端**：目标设为 `ES6`，使用 `esModuleInterop` 以确保兼容性，并生成源映射以便调试。
+
 - **服务端**：目标设为 `Node.js`，使用 `CommonJS` 模块，并针对性能进行优化。
 
 TypeScript 编译器选项为自定义项目的编译过程提供了强大能力。通过仔细选择和配置这些选项，你可以提高代码质量、性能和可维护性。
@@ -12097,9 +11621,13 @@ TypeScript 编译器选项为自定义项目的编译过程提供了强大能力
 ## 装饰器类型
 
 1. **类装饰器**：应用于整个类。
+
 2. **方法装饰器**：应用于类方法。
+
 3. **属性装饰器**：应用于类属性。
+
 4. **访问器装饰器**：应用于属性访问器（getter 和 setter）。
+
 5. **参数装饰器**：应用于方法参数（目前为实验性）。
 
 ### 基本示例
@@ -12147,7 +11675,9 @@ class Calculator {
 `logMethod` 装饰器接收三个参数：
 
 - `target`：类的原型。
+
 - `methodName`：被装饰方法的名称。
+
 - `descriptor`：包含方法详细信息的对象。
 
 该装饰器将原始方法包装在一个新函数中，以记录参数和返回值。
@@ -12238,11 +11768,12 @@ class Greeter {
 
 - **日志记录**：记录方法调用、参数和返回值。
 
-
- 
  - 验证：在处理之前验证输入数据。
+
 - 依赖注入：将依赖注入到类中。
+
 - 性能优化：测量并优化代码性能。
+
 - AOP（面向切面编程）：处理安全、日志记录和事务管理等横切关注点。
 
 `TypeScript` 装饰器提供了一种强大的方式来扩展类行为，而无需修改原始代码。通过理解不同类型的装饰器及其参数，你可以有效利用这一特性来改进代码的结构和可维护性。
@@ -12339,14 +11870,19 @@ async function fetchUserData(userId: number): Promise<any> {
 ### 最佳实践
 
 - 谨慎使用 `async`/`await`。它对顺序异步操作最为有益。
+
 - 使用 `try...catch` 块优雅地处理错误。
+
 - 考虑对并行异步操作使用 `Promise.all`。
+
 - 编写清晰简洁的 `async` 函数。
 
 ### 其他考虑因素
 
-- **性能**：虽然 `async`/`await` 提高了可读性，但在某些场景下可能会引入性能开销。请明智使用，特别是在性能关键的代码中。
+- **性能**：虽然 `async`/`await` 提高了可读性，但在某些场景下可能会引入性能开销。请明智使用，特别是在性能关锠的代码中。
+
 - **错误处理**：始终正确处理错误，以防止意外行为。
+
 - **测试**：彻底测试异步代码，以确保正确性和可靠性。
 
 `TypeScript` 的 `async`/`await` 语法是处理异步操作的游戏规则改变者。它显著增强了代码的可读性、可维护性和错误处理能力。通过理解其核心概念和最佳实践，你可以在你的 `TypeScript` 项目中编写出更高效、更健壮的异步代码。
@@ -12483,8 +12019,6 @@ const Button: React.FC<ButtonProps> = ({ onClick, label }) => (
 export default Button;
 ```
 
-
- 
  ```typescript
 // client/App.tsx
 import React from 'react';
@@ -12525,7 +12059,9 @@ npm install --save-dev typescript @types/express
 ```
 
 - `express`: 用于构建服务器端应用程序的 Web 框架。
+
 - `typescript`: TypeScript 编译器。
+
 - `@types/express`: Express 的类型定义，提供 TypeScript 支持。
 
 ### 使用脚本
@@ -12543,7 +12079,9 @@ npm install --save-dev typescript @types/express
 ```
 
 - `build`: 将 TypeScript 文件编译为 JavaScript。
+
 - `start`: 使用 Node.js 运行编译后的服务器。
+
 - `dev`: 使用 `nodemon` 在开发模式下运行服务器，实现自动重启。
 
 ### 依赖管理
@@ -12551,6 +12089,7 @@ npm install --save-dev typescript @types/express
 `package.json` 中的依赖项可分为：
 
 - Dependencies（依赖项）：应用程序运行所必需的。
+
 - DevDependencies（开发依赖项）：仅在开发期间需要。
 
 示例：
@@ -12591,19 +12130,25 @@ npm install --save-dev typescript @types/express
 ```
 
 - `target`: 要编译到的 JavaScript 版本。
+
 - `module`: 要使用的模块系统（Node.js 使用 CommonJS）。
+
 - `outDir`: 编译后文件的输出目录。
+
 - `rootDir`: 源文件的根目录。
 
 ### 构建应用程序
 
 使用以下命令构建应用程序：
+
 ```
 
 
  
 ```bash
+
 npm run build
+
 ```
 
 该命令基于 `tsconfig.json` 配置运行 TypeScript 编译器，将 JavaScript 文件输出到 `build` 目录。
@@ -12644,30 +12189,47 @@ Chrome DevTools 性能标签页等分析工具可以帮助准确定位这些问�
 - 目标设为 ES6 或更高：允许使用现代 JavaScript 特性，浏览器可以对其进行优化。
 
 ```json
+
 // tsconfig.json
+
 {
+
   "compilerOptions": {
+
     "strict": true,
+
     "emitDecoratorMetadata": true,
+
     "removeUnusedLocals": true,
+
     "target": "es6"
+
   }
+
 }
+
 ```
 
 #### 2. 高效的数据结构与算法
 
 - 选择合适的数据结构：数组用于有序列表，Map 用于键值对，Set 用于唯一值。
 - 优化算法：选择算法时考虑时间和空间复杂度。
-- 记忆化：缓存昂贵的函数结果以避免重复计算。
+- 记忆化：缓存昂贵的函数结果以避重复计算。
 
 ```typescript
+
 function fibonacci(n: number, memo: Record<number, number> = {}): number {
+
   if (n <= 1) return n;
+
   if (memo[n]) return memo[n];
+
   memo[n] = fibonacci(n - 1, memo) + fibonacci(n - 2, memo);
+
   return memo[n];
+
 }
+
 ```
 
 #### 3. 渲染优化
@@ -12678,16 +12240,20 @@ function fibonacci(n: number, memo: Record<number, number> = {}): number {
 - 懒加载：仅在需要时加载组件或数据。
 
 ```javascript
+
 import React, { memo } from 'react';
 
 const MyComponent = memo(({ data }: Props) => {
+
   // ...
+
 });
+
 ```
 
 #### 4. 网络优化
 
-- 最小化 HTTP 请求：将多个请求合并为一个，使用 CDN，并启用浏览器缓存。
+- 最小化 HTTP 请请求：将多个请求合并为一个，使用 CDN，并启用浏览器缓存。
 - 优化数据传输：使用高效的数据格式（JSON、gzip），压缩图片，并减小载荷大小。
 - 代码分割：仅加载初始页面所需的代码。
 
@@ -12704,9 +12270,13 @@ const MyComponent = memo(({ data }: Props) => {
 - 接口：为对象定义契约，提高代码可读性和可维护性。
 
 ```typescript
+
 function isNumber(value: any): value is number {
+
   return typeof value === 'number';
+
 }
+
 ```
 
 ### 其他考虑因素
@@ -12731,15 +12301,21 @@ TypeScript 因其能够在 JavaScript 之上提供静态类型而广受欢迎，
 #### 示例：泛型函数
 
 ```typescript
+
 function identity<T>(arg: T): T {
+
   return arg;
+
 }
 
 let output1 = identity<string>("Hello TypeScript");
+
 let output2 = identity<number>(42);
 
 console.log(output1); // "Hello TypeScript"
+
 console.log(output2); // 42
+
 ```
 
 在上面的代码中，`identity` 函数使用泛型 `T`，使其能够接受任何类型的参数同时保持类型安全。
@@ -12747,20 +12323,31 @@ console.log(output2); // 42
 #### 示例：泛型接口
 
 ```typescript
+
 interface ApiResponse<T> {
+
   data: T;
+
   error: string | null;
+
 }
 
 function fetchUser(): ApiResponse<{ name: string, age: number }> {
+
   return {
+
     data: { name: "John", age: 30 },
+
     error: null
+
   };
+
 }
 
 const userResponse = fetchUser();
+
 console.log(userResponse.data.name); // "John"
+
 ```
 
 在这里，`ApiResponse` 接口是泛型的，可用于为各种 API 调用的响应添加类型，确保正确的数据结构。
@@ -12772,24 +12359,39 @@ console.log(userResponse.data.name); // "John"
 #### 示例：方法装饰器
 
 ```typescript
+
 function logMethod(target: any, propertyName: string, descriptor: PropertyDescriptor): PropertyDescriptor {
+
   const originalMethod = descriptor.value;
+
   descriptor.value = function (...args: any[]) {
+
     console.log(`Method ${propertyName} called with arguments: ${JSON.stringify(args)}`);
+
     return originalMethod.apply(this, args);
+
   };
+
   return descriptor;
+
 }
 
 class Calculator {
+
   @logMethod
+
   add(a: number, b: number): number {
+
     return a + b;
+
   }
+
 }
 
 const calc = new Calculator();
+
 console.log(calc.add(2, 3)); // 记录方法调用和结果
+
 ```
 
 
@@ -12799,23 +12401,35 @@ console.log(calc.add(2, 3)); // 记录方法调用和结果
 ## 示例：类装饰器
 
 ```typescript
+
 function sealed(constructor: Function) {
+
   Object.seal(constructor);
+
   Object.seal(constructor.prototype);
+
 }
 
 @sealed
+
 class Greeter {
+
   greeting: string;
 
   constructor(message: string) {
+
     this.greeting = message;
+
   }
 
   greet() {
+
     return "Hello, " + this.greeting;
+
   }
+
 }
+
 ```
 
 `sealed` 装饰器阻止 `Greeter` 类及其原型被扩展。
@@ -12829,29 +12443,43 @@ TypeScript 提供了多种高级类型，有助于为复杂的数据结构和操
 交叉类型将多个类型合并为一个。
 
 ```typescript
+
 interface Drivable {
+
   drive(): void;
+
 }
 
 interface Flyable {
+
   fly(): void;
+
 }
 
 type FlyingCar = Drivable & Flyable;
 
 class FutureCar implements FlyingCar {
+
   drive() {
+
     console.log("Driving on the road");
+
   }
 
   fly() {
+
     console.log("Flying in the sky");
+
   }
+
 }
 
 const car = new FutureCar();
+
 car.drive();
+
 car.fly();
+
 ```
 
 此处，`FlyingCar` 是 `Drivable` 和 `Flyable` 的交叉类型，而 `FutureCar` 同时实现了这两个接口。
@@ -12861,10 +12489,13 @@ car.fly();
 条件类型支持复杂的类型转换。
 
 ```typescript
+
 type IsString<T> = T extends string ? "Yes" : "No";
 
 type Test1 = IsString<string>;  // "Yes"
+
 type Test2 = IsString<number>;  // "No"
+
 ```
 
 条件类型使用 `extends` 关键字来测试一个类型是否继承自另一个类型，并根据测试返回不同的类型。
@@ -12878,17 +12509,25 @@ TypeScript 包含多种工具类型，可简化类型转换。
 `Partial` 工具类型使类型中的所有属性变为可选。
 
 ```typescript
+
 interface Product {
+
   id: number;
+
   name: string;
+
   price: number;
+
 }
 
 const updateProduct = (id: number, updates: Partial<Product>) => {
+
   // Update product logic
+
 };
 
 updateProduct(1, { price: 99.99 });  // Only updates price
+
 ```
 
 在此示例中，`Partial<Product>` 允许 `updateProduct` 接受包含 `Product` 任意子集属性的对象。
@@ -12898,17 +12537,25 @@ updateProduct(1, { price: 99.99 });  // Only updates price
 `Readonly` 工具类型使类型中的所有属性变为只读。
 
 ```typescript
+
 interface User {
+
   name: string;
+
   email: string;
+
 }
 
 const user: Readonly<User> = {
+
   name: "Alice",
+
   email: "alice@example.com"
+
 };
 
 // user.name = "Bob"; // Error: Cannot assign to 'name' because it is a read-only property.
+
 ```
 
 `Readonly` 类型阻止对 `User` 属性的修改，强制实现不可变性。
@@ -12920,19 +12567,27 @@ const user: Readonly<User> = {
 ### 示例：遍历属性
 
 ```typescript
+
 type Optional<T> = {
+
   [K in keyof T]?: T[K];
+
 };
 
 type RequiredProduct = {
+
   id: number;
+
   name: string;
+
   price: number;
+
 };
 
 type OptionalProduct = Optional<RequiredProduct>;
 
 const product: OptionalProduct = { id: 1 };  // Only `id` is provided, others are optional
+
 ```
 
 映射类型遍历类型中的每个属性并进行转换。在此例中，`Optional` 使所有属性变为可选。
@@ -12942,18 +12597,27 @@ const product: OptionalProduct = { id: 1 };  // Only `id` is provided, others ar
 
  
  ```typescript
+
 interface Car {
+
   make: string;
+
   model: string;
+
   year: number;
+
 }
 
 function getProperty<T, K extends keyof T>(obj: T, key: K): T[K] {
+
   return obj[key];
+
 }
 
 const myCar: Car = { make: "Toyota", model: "Corolla", year: 2020 };
+
 const carMake = getProperty(myCar, "make"); // "Toyota"
+
 ```
 
 `keyof` 关键字用于将类型的键表示为字符串字面量的联合类型，随后用于在 `getProperty()` 等函数中强制类型安全。
@@ -12999,20 +12663,27 @@ TypeScript 支持多种基本数据类型：
 - `any`：表示任意类型。谨慎使用！
 
 ```typescript
+
 let age: number = 30;
+
 let price: number = 9.99;
 
 let name: string = "Alice";
+
 let message: string = `Hello, ${name}!`;
 
 let isLoggedIn: boolean = true;
+
 let isAdult: boolean = age >= 18;
 
 let x: null = null;
+
 let y: undefined = undefined;
 
 let value: any = "Hello";
+
 value = 42;
+
 ```
 
 ### 类型推断
@@ -13020,128 +12691,193 @@ value = 42;
 TypeScript 通常可以自动推断类型：
 
 ```typescript
+
 let message = "Hello"; // 推断为 string
+
 let count = 10; // 推断为 number
+
 ```
 
 ### 数组
 
 ```typescript
+
 let numbers: number[] = [1, 2, 3];
+
 let strings: string[] = ["apple", "banana", "orange"];
+
 ```
 
 ### 对象
 
 ```typescript
+
 let person: { name: string; age: number } = {
+
   name: "Bob",
+
   age: 35
+
 };
+
 ```
 
 ### 接口
 
 ```typescript
+
 interface Person {
+
   name: string;
+
   age: number;
+
 }
 
 let person: Person = {
+
   name: "Charlie",
+
   age: 28
+
 };
+
 ```
 
 ### 函数
 
 ```typescript
+
 function greet(name: string): string {
+
   return "Hello, " + name + "!";
+
 }
 
 let result = greet("David");
+
 ```
 
-### 可选参数
+### 可选参参数
 
 ```typescript
+
 function greet(name: string, greeting?: string): string {
+
   return (greeting || "Hello") + ", " + name + "!";
+
 }
+
 ```
 
 ### 默认参数
 
 ```typescript
+
 function greet(name: string, greeting: string = "Hello"): string {
+
   return greeting + ", " + name + "!";
+
 }
+
 ```
 
 ### 剩余参数
 
 ```typescript
+
 function sum(...numbers: number[]): number {
+
   return numbers.reduce((total, num) => total + num, 0);
+
 }
+
 ```
 
 ### 类
 
 ```typescript
+
 class Car {
+
   color: string;
+
   model: string;
 
   constructor(color: string, model: string) {
+
     this.color = color;
+
     this.model = model;
+
   }
 
   drive(): void {
+
     console.log("Driving a " + this.color + " " + this.model);
+
   }
+
 }
+
 ```
 
 ### 泛型
 
 ```typescript
+
 function identity<T>(arg: T): T {
+
   return arg;
+
 }
+
 ```
 
 ### 枚举
 
 ```typescript
+
 enum Direction {
+
   Up,
+
   Down,
+
   Left,
+
   Right
+
 }
+
 ```
 
 ### 模块
 
 ```typescript
+
 // file1.ts
+
 export interface Person {
+
   name: string;
+
 }
 
 // file2.ts
+
 import { Person } from './file1';
+
 ```
 
 ### 类型断言
 
 ```typescript
+
 let value: any = "Hello";
+
 let strLength: number = (value as string).length;
+
 ```
 
 ### 接口与类型的区别
@@ -13152,34 +12888,49 @@ let strLength: number = (value as string).length;
 ### 常见类型别名
 
 ```typescript
+
 type StringArray = string[];
+
 type NumberOrString = number | string;
+
 ```
 
 ### 箭头函数
 
 ```typescript
+
 let greet = (name: string): string => {
+
   return "Hello, " + name + "!";
+
 };
+
 ```
 
 ### Async/Await
 
 ```typescript
+
 async function fetchData(): Promise<any> {
+
   // ...
+
 }
+
 ```
 
 ### 模块（ES6/CommonJS）
 
 ```typescript
+
 // ES6 模块
+
 import { Person } from './person';
 
 // CommonJS 模块
+
 const person = require('./person');
+
 ```
 
 ### TypeScript 编译器选项
@@ -13190,10 +12941,12 @@ const person = require('./person');
 
 - `--target`：指定 ECMAScript 目标版本
 - `--module`：指定模块系统（`commonjs`、`es6`、`amd`）
-- `--outDir`：指定输出目录
+- `--outDir`：指�输出目录
 - `--sourceMap`：生成源映射
 - `--declaration`：生成声明文件
 
 注意：本速查表提供基本概览。有关深入信息和示例，请参阅官方 TypeScript 文档。
 
 请记住用实际数据替换占位值，并根据特定项目需求调整代码。
+
+```

@@ -1,77 +1,61 @@
+
 # React.js开发优势：用户界面的JavaScript库 第二版
 
+## 前言
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-# 前言
-
-# 什么是 React，为什么要使用它？
+### 什么是 React，为什么要使用它？
 
 React 是 Facebook 内部开发并于 2013 年开源的一个 JavaScript 库，用于构建交互式 Web 用户界面。它引入了一种处理浏览器 DOM 的新方式。手动更新 DOM 并费力地跟踪每一块状态的日子已经一去不复返了，这种做法使得可扩展性和新功能开发充其量只是一项冒险的尝试。相反，React 以一种非常新颖的方式处理 DOM。你可以在任何时间点声明式地定义你的用户界面。React 消除了在数据变化时担心 DOM 的哪一部分需要更新的问题，并让你能够在任何时间点以最少的 DOM 更改重新渲染整个应用程序。
 
-# 本书如何提供帮助
+### 本书如何提供帮助
 
 React 引入了令人兴奋的新概念，挑战了当前的实践。本书将帮助你理解所有这些概念，并帮助你理解它们为何有益，以及如何帮助你构建可扩展的单页应用程序（SPA）。
 
 React 主要关注应用程序的“视图”部分，因此不规定服务器通信或代码组织方式。在本书中，我们将介绍当前的最佳实践和补充工具，以帮助你使用 React 构建完整的应用程序。
 
-# 阅读本书前需要了解什么？
+### 阅读本书前需要了解什么？
 
-为了充分利用本书，你需要具备 JavaScript 和 HTML 的经验。如果你有编写 SPA 的经验（无论使用 Backbone.js、AngularJS 还是 Ember.js 等框架），那会很有帮助，但并非必需。
+为了充分利用本书，你需要具备 JavaScript 和 HTML 的经验。如果你有编写 SPA 的经验（无论使用 `Backbone.js`、`AngularJS` 还是 `Ember.js` 等框架），那会很有帮助，但并非必需。
 
-# 源代码和示例应用程序
+### 源代码和示例应用程序
 
 在本书中，我们将引用示例应用程序的片段：reddit 克隆版。你可以在 [`git.io/vlcpa`](http://git.io/vlcpa) 阅读完整源代码，并在 [`git.io/vlCUI`](http://git.io/vlCUI) 查看在线演示。
 
-# 写作过程
+### 写作过程
 
 本书是在一两个月内以专注的虚拟书籍冲刺方式写成的。这个过程有助于创作新鲜且当前的内容，而传统书籍往往落后于前沿趋势和技术的报道。
 
 在第二版中，所有内容都已更新到 React 0.14，并创建了一个新的示例应用程序。
 
-# 作者
+### 作者
 
 本书由经验丰富且专注的 JavaScript 开发者团队编写：
 
 ![Richard Feldman](img/rtfeldman125.png)
 
-**Richard Feldman** 是 NoRedInk 的首席前端工程师，这是一家位于旧金山的教育科技公司。他是函数式编程爱好者、会议演讲者，以及 *seamless-immutable* 的作者，这是一个提供与普通 JavaScript 对象和数组向后兼容的不可变数据结构的开源库。他在 Twitter 和 GitHub 上的用户名都是 @rtfeldman。
+`Richard Feldman` 是 NoRedInk 的首席前端工程师，这是一家位于旧金山的教育科技公司。他是函数式编程爱好者、会议演讲者，以及 *seamless-immutable* 的作者，这是一个提供与普通 JavaScript 对象和数组向后兼容的不可变数据结构的开源库。他在 Twitter 和 GitHub 上的用户名都是 `@rtfeldman`。
 
-* * *
+---
 
 ![Frankie Bagnardi](img/fbagnardi125.png)
 
-**Frankie Bagnardi** 是一名高级前端开发人员，为各种客户创建用户体验。在空闲时间，他在 StackOverflow（FakeRainBrigand）和 IRC（GreenJello）上回答问题，并喜欢做一些小项目。你可以通过 f.bagnardi@gmail.com 联系他。
+`Frankie Bagnardi` 是一名高级前端开发人员，为各种客户创建用户体验。在空闲时间，他在 StackOverflow（`FakeRainBrigand`）和 IRC（`GreenJello`）上回答问题，并喜欢做一些小项目。你可以通过 `f.bagnardi@gmail.com` 联系他。
 
-* * *
+---
 
 ![Simon Højberg](img/hojberg125.png)
 
-**Simon Højberg** 是罗德岛州普罗维登斯 Swipely 公司的高级 UI 工程师。他是 Providence JS 聚会小组的联合组织者，曾任波士顿 Startup Institute 的 JavaScript 讲师。他致力于使用 JavaScript 构建功能性用户界面，并从事像 cssarrowplease.com 这样的副项目。Simon 的 Twitter 账号是 [@shojberg](https://twitter.com/shojberg)。
+`Simon Højberg` 是罗德岛州普罗维登斯 Swipely 公司的高级 UI 工程师。他是 Providence JS 聚会小组的联合组织者，曾任波士顿 Startup Institute 的 JavaScript 讲师。他致力于使用 JavaScript 构建功能性用户界面，并从事像 `cssarrowplease.com` 这样的副项目。Simon 的 Twitter 账号是 [@shojberg](https://twitter.com/shojberg)。
 
-* * *
+---
 
 ![Jeremiah Hall](img/HallPic125.jpg)
 
-**Jeremiah Hall** 目前是 OpenGov Inc. 的高级软件工程师/架构师。他还是 Aspect Apps 的创始人，正在构建一个使用 React Native 和 JavaScript 作为 UI 的日记应用程序。你可以在 Twitter 上找到他 [@jeremiahrhall](https://twitter.com/jeremiahrhall)。
+`Jeremiah Hall` 目前是 OpenGov Inc. 的高级软件工程师/架构师。他还是 Aspect Apps 的创始人，正在构建一个使用 React Native 和 JavaScript 作为 UI 的日记应用程序。你可以在 Twitter 上找到他 [@jeremiahrhall](https://twitter.com/jeremiahrhall)。
 
-# 第 1 章 React 简介
+## 第 1 章 React 简介
 
-## 背景
+### 背景
 
 在 Web 开发的早期，前端代码库很小，JavaScript 功能不足。得益于多年来浏览器在 JavaScript 性能上相互超越、不断突破极限，如今的 Web 应用能够提供与原生应用相媲美的用户体验。随着 Web 应用变得越来越丰富和雄心勃勃，在保持强大性能的同时扩展 JavaScript 代码库现在比以往任何时候都更具挑战性。
 
@@ -81,9 +65,8 @@ React 最初是 Facebook 的一个 PHP 框架 XHP 的移植版本。作为一个
 
 React 本质上是一个“状态机”，帮助你管理随时间变化的状态的复杂性。它通过拥有非常狭窄的范围来实现这一点。它只关心两件事：
 
-1.  更新 DOM
-
-2.  响应事件
+1. 更新 DOM
+2. 响应事件
 
 React 对 AJAX、路由、存储或如何组织数据没有意见。它不是一个模型-视图-控制器框架；如果非要这么说，它只是 MVC 中的 V。这种狭窄的范围让你可以自由地将 React 集成到各种系统中。事实上，它已被用于在几个流行的 MVC 框架中渲染视图。
 
@@ -95,10 +78,6 @@ React 对 AJAX、路由、存储或如何组织数据没有意见。它不是一
 
 这对性能有利的原因在于它最大限度地减少了回流和不必要的 DOM 突变，这两者都是性能不佳的常见原因。
 
-
-
-
-
 你的界面越大，就越有可能出现一个交互触发更新，进而触发另一个更新，再触发另一个更新的情况。当这些级联更新没有正确批处理时，性能就会大幅下降。更糟糕的是，有时 DOM 元素在到达最终状态之前会被多次更新。
 
 React 的虚拟表示差异比较不仅通过单次执行最小更新集来最大程度地减少这些问题，还简化了应用程序的维护。当世界状态因用户输入或外部更新而发生变化时，你只需通知 React 状态变化，它就会自动处理其余部分。无需微观管理整个过程。
@@ -107,115 +86,112 @@ React 为整个应用程序使用单个事件处理程序，并将所有事件�
 
 你可以在 [`git.io/vlcpa`](http://git.io/vlcpa) 阅读本书中使用的示例应用程序的完整源代码。
 
-## 书籍概览
+### 书籍概览
 
 本书将带你了解四个主要主题领域，帮助你掌握 React 的优势。
 
-### 创建与组合组件
+#### 创建与组合组件
 
 本书的前七章都是关于创建和组合 React 组件的。这些章节将帮助你理解如何使用 React。
 
-#### 1) React 简介
+##### 1) React 简介
 
 第一章介绍 React，涵盖背景知识和书籍概览。
 
-#### 2) 使用 JSX 和基本 React 组件
+##### 2) 使用 JSX 和基本 React 组件
 
 JSX（JavaScript XML）是一种在 JavaScript 中编写声明式 XML 风格语法的方式。你将学习如何将 JSX 与 React 结合使用，以及如何构建基本的 React 组件。虽然并非必须与 React 一起使用，但本书中的大多数示例以及示例应用程序都使用了 JSX，因为它是使用 React 的推荐方式。
 
-#### 3) React 组件生命周期
+##### 3) React 组件生命周期
 
 React 在渲染过程中经常创建和销毁组件。React 提供了许多可以在组件生命周期中挂钩的函数。你应该了解如何管理组件的生命周期，以确保不会在应用程序中造成内存泄漏。
 
-#### 4) React 中的数据流
+##### 4) React 中的数据流
 
-了解数据如何通过组件树向下传递以及哪些数据可以安全更改非常重要。React 对 `props` 和 `state` 有非常清晰的区分。本章将教你什么是 props 和 state，以及如何在 React 组件中正确使用它们。
+了解数据如何通过组件树向下传递以及哪些数据可以安全更改非常重要。React 对 `props` 和 `state` 有非常清晰的区分。本章将教你什么是 `props` 和 `state`，以及如何在 React 组件中正确使用它们。
 
-#### 5) 事件处理
+##### 5) 事件处理
 
 React 以声明方式实现事件处理。事件处理是任何动态 UI 的重要组成部分，掌握它至关重要。幸运的是，React 使事件处理变得非常简单。
 
-#### 6) 组合组件
+##### 6) 组合组件
 
 React 鼓励你制作小巧、精确、执行特定任务的组件。然后你需要在应用程序中创建编排层来组合这些组件。本章将教你如何在其他组件中使用你的组件。
 
-#### 7) 高阶组件与 Mixins
+##### 7) 高阶组件与 Mixins
 
-这是一种允许抽象数据依赖关系“如何”实现的模式。高阶组件包装其他组件，通过 props 提供数据或函数。本章还涵盖了 mixins，在某些情况下它们仍然有用。
+这是一种允许抽象数据依赖关系“如何”实现的模式。高阶组件包装其他组件，通过 `props` 提供数据或函数。本章还涵盖了 `mixins`，在某些情况下它们仍然有用。
 
-### 高级主题
+#### 高级主题
 
 一旦你掌握了 React 的基础知识，你将进入一些更高级的主题。接下来的六章将帮助你磨练 React 技能，并帮助你理解如何构建出色的 React 组件。
 
-#### 8) DOM 操作
+##### 8) DOM 操作
 
 即使 React 中拥有虚拟 DOM 的全部能力，有时你仍然需要访问应用程序中的原始 DOM 节点。这可能是为了让你能够使用现有的 JavaScript 库，或者为了对组件获得更多控制。本章将教你如何在 React 组件生命周期中安全地访问 DOM，以及何时释放对 DOM 的控制以避免内存泄漏。
 
-#### 9) 使用 React 构建表单
+##### 9) 使用 React 构建表单
 
 使用 HTML 表单元素是接收用户输入的最佳方式之一。然而，HTML 表单元素具有很强的状态性。React 提供了一种方法，可以将表单元素的大部分状态转移到 React 组件中。这让你对表单元素拥有不可思议的控制力。
 
-#### 10) 动画
+##### 10) 动画
 
 作为 Web 开发者，我们已经幸运地拥有一种非常声明式的方式来定义高性能动画：CSS。React 鼓励使用 CSS 进行动画处理。本章展示了 React 如何帮助你利用 CSS 为 React 组件添加动画效果。
 
-#### 11) 组件性能调优
+##### 11) 组件性能调优
 
 React 中的虚拟 DOM 开箱即用就能提供出色的性能，但总有改进的空间。React 提供了一种方法，如果你知道组件没有变化，可以告诉渲染引擎无需重新渲染组件。这样做可以大大提高应用程序的速度。
 
-#### 12) 服务端渲染
+##### 12) 服务端渲染
 
 许多应用程序需要 SEO，幸运的是，React 可以在非浏览器环境（如 Node.js）中渲染为字符串。服务端渲染还可以改善应用程序的首屏加载时间。然而，编写同时支持服务端渲染和客户端渲染的应用程序可能很困难。本章为你提供了一些同构渲染的策略，并强调了你在服务端渲染时会遇到的一些更具挑战性的考虑因素。
 
-### React 工具
+#### React 工具
 
 React 拥有一些出色的开发者工具和测试套件。学习使用它们将帮助你编写健壮的应用程序。本节分为两章，涵盖工具和测试。
 
-#### 13) 开发工具
+##### 13) 开发工具
 
 随着你编写更大的 React 应用程序，你将开始需要一种方法来自动化打包代码以进行部署，并且调试应用程序也变得越来越困难。在本章中，你将了解有哪些工具可以帮助你构建和打包 React 应用程序，以及如何使用可用的 Google Chrome 插件来可视化你的 React 组件，从而简化调试。
 
-#### 14) 为 React 编写测试
+##### 14) 为 React 编写测试
 
 编写测试是确保随着应用程序增长不会在现有工作代码中引入错误的重要部分。编写测试还能帮助你编写更好的代码，因为它鼓励你编写更模块化的代码。本章将指导你如何测试 React 组件的各个方面。
 
-### 使用 React
+#### 使用 React
 
 最后几章涵盖了使用 React 的重要方面以及你可能未曾考虑过的不同用例。
 
-#### 15) 架构模式
+##### 15) 架构模式
 
 React 只提供了“MVC”中的“V”，但它与其他框架和系统的插件非常灵活。本章将指导你如何使用 React 设计更大规模的应用程序。我们将探讨示例 React 应用程序的结构，以及这种结构如何帮助管理随着项目增长而增加的复杂性。
 
-#### 16) 不可变性
+##### 16) 不可变性
 
 React 与不可变数据结构（即永远不会改变且被实例化的数据结构）配合得很好。在本章中，我们将介绍不可变性的好处和代价，并研究三种不同的库，你可以将它们集成到 React 应用程序中。
 
-#### 17) React 的其他用途
+##### 17) React 的其他用途
 
 React 是一个强大的交互式 UI 渲染库，它提供了一种处理数据和用户输入的绝佳方式。在本章中，我们将探讨如何将 React 用于桌面应用、游戏、电子邮件和图表。
 
-# 第 2 章 JSX
+## 第 2 章 JSX
 
 在 React 中，组件用于分离关注点，而不是模板和显示逻辑。使用 React 时，你必须接受这样一个理念：标记及其生成代码本质上是紧密相连的。这让你在构建标记时能够拥有 JavaScript 的全部表达能力，而无需诉诸笨拙或繁琐的模板语言。
 
-
-
-
 React 与一种可选的标记语法配合良好，并且与 HTML 非常相似。但在继续之前，我们先澄清一点——对于那些因 JavaScript 中标记的明显笨拙而感到反感的人，以及那些不相信 JSX 有用性的人，请考虑一下 React 中这种方法的诸多好处：
 
-*   它允许使用熟悉的标记来定义元素树
-*   提供更具语义、更易于理解的标记
-*   更容易可视化应用程序的结构
-*   它抽象了 React 元素的创建
-*   它将标记和生成标记的代码紧密联系在一起
-*   它只是普通的 JavaScript
+* 它允许使用熟悉的标记来定义元素树
+* 提供更具语义、更易于理解的标记
+* 更容易可视化应用程序的结构
+* 它抽象了 React 元素的创建
+* 它将标记和生成标记的代码紧密联系在一起
+* 它只是普通的 JavaScript
 
 在本章中，我们将探讨 JSX 的诸多好处，以及如何使用它，同时还会介绍一些使其与 HTML 有所区别的注意事项。请记住，JSX 是可选的。如果你选择不使用 JSX，可以跳到本章末尾，了解不使用 JSX 时使用 React 的技巧。
 
 本书将使用最新版本的 JavaScript，即 ES6（或 ES2015）。你可以在这里找到很好的入门介绍：[`babeljs.io/docs/learn-es2015/`](https://babeljs.io/docs/learn-es2015/)。
 
-## 什么是 JSX？
+### 什么是 JSX？
 
 JSX 代表 JavaScript XML——一种用于在 React 组件中构建标记的类似 XML 的语法。React 可以在没有 JSX 的情况下工作，但使用它可以使你的组件更具可读性，因此推荐使用。
 
@@ -233,25 +209,25 @@ React.createElement('h1', {className: 'question'}, 'Questions');
 
 与过去尝试在 JavaScript 中嵌入标记的做法相比，JSX 有几个显著的特点：
 
-1.  JSX 是一种语法转换——每个 JSX 节点都映射到一个 JavaScript 函数。
-2.  JSX 既不提供也不需要运行时库。
-3.  JSX 不会改变或增加 JavaScript 的语义——它只是简单的函数调用。
+1. JSX 是一种语法转换——每个 JSX 节点都映射到一个 JavaScript 函数。
+2. JSX 既不提供也不需要运行时库。
+3. JSX 不会改变或增加 JavaScript 的语义——它只是简单的函数调用。
 
 JSX 与 HTML 的相似性使其在 React 中具有强大的表达能力。这里我们将讨论 JSX 的好处及其在应用程序中的用途，以及 JSX 与 HTML 之间的关键区别。
 
-## JSX 的好处
+### JSX 的好处
 
 许多人在考虑 JSX 时会问：为什么？既然有大量现有的模板语言，为什么还要使用它？为什么不直接使用纯 JavaScript？毕竟，JSX 只是映射到 JavaScript 函数。
 
 使用 JSX 有很多好处，而且随着代码库的增大和组件复杂度的提高，这些好处会变得更加明显。现在我们来讨论其中的一些好处。
 
-### 熟悉性
+#### 熟悉性
 
 许多开发团队包括非开发人员，从熟悉 HTML 的 UI 和 UX 设计师，到负责全面测试产品的质量保证团队。这些团队成员可以更容易地阅读 JSX 项目并为其贡献代码。任何熟悉基于 XML 语言的人都可以轻松采用 JSX。
 
 此外，由于 React 组件捕获了 DOM 的所有可能表示（稍后会详细介绍），JSX 提供了一种紧凑而简洁的方式来表现和可视化这种结构。
 
-### 语义性
+#### 语义性
 
 除了熟悉性之外，JSX 还将你的 JavaScript 代码转换为更具语义、更有意义的标记。这让你能够使用类似 HTML 的语法声明组件结构和信息流，同时知道它稍后会转换为纯 JavaScript。
 
@@ -271,13 +247,15 @@ JSX 允许你在应用程序的标记中使用所有预定义的 HTML5 标签名
 <Divider>Questions</Divider>
 ```
 
-### 易于可视化
+#### 易于可视化
 
 即使是像这样的小例子，JSX 也能使其更清晰、更简洁。然而，在拥有数百个组件和深层标记树的大型项目中，这种好处会更加明显。
 
 以下是上面提到的 `Divider` 组件。请注意，在 JavaScript 函数的上下文中，标记的意图比纯 JavaScript 版本更清晰、更易读。
 
 这是纯 JavaScript 版本：
+
+
 
 ```
 render: function () {
@@ -389,10 +367,6 @@ var text = ['hello', 'world'];
 ### 子节点
 
 在 HTML 中，你使用 `<h2>Questions</h2>` 渲染标题，其中文本 "Questions" 成为 `h2` 元素的子文本节点。因此，这里的目标是在 JSX 中表达分隔线，如下所示：
-
-
-
-
 
 `<Divider>Questions</Divider>`
 
@@ -649,9 +623,6 @@ JSX 是 JavaScript，因此你可以在 JSX 标记中添加普通的 JavaScript 
 
 **作为子节点**
 
-
-
-
 子节点注释只需用花括号包裹，并且可以跨越多行。
 
 ```
@@ -739,21 +710,23 @@ React.renderComponent(<div style={styles}>...</div>, node);
 
 ### 延伸阅读与参考资料
 
-即使你不喜欢在 JavaScript 中嵌入标记的想法，希望你现在也能理解 JSX 如何为 JavaScript 与其渲染的标记之间的紧密关系提供解决方案。JSX 日益增长的 popularity 使其拥有了自己的规范，提供了深入的技术定义。如果你仍然不确定或对其工作原理感到困惑，有一些工具可以帮助你进行实验。
 
-#### 官方 JSX 规范
 
-2014 年 9 月，Facebook 发布了 [JSX 官方规范](http://facebook.github.io/jsx/)，阐述了创建 JSX 的理由以及语法的技术细节。
+即使你不喜欢在 JavaScript 中嵌入标记的想法，希望你现在也能理解`JSX`如何为 JavaScript 与其渲染的标记之间的紧密关系提供解决方案。`JSX`日益增长的 popularity 使其拥有了自己的规范，提供了深入的技术定义。如果你仍然不确定或对其工作原理感到困惑，有一些工具可以帮助你进行实验。
 
-你可以在 [`facebook.github.io/jsx/`](http://facebook.github.io/jsx/) 阅读更多内容。
+### 官方 JSX 规范
 
-#### 浏览器内实验
+2014 年 9 月，Facebook 发布了 [JSX 官方规范](http://facebook.github.io/jsx/)，阐述了创建`JSX`的理由以及语法的技术细节。
 
-还有许多用于实验 JSX 的工具。React 文档的 [入门](http://facebook.github.io/react/docs/getting-started.html) 页面链接了使用和不使用 JSX 的 JSFiddle 游乐场。
+你可以在[`facebook.github.io/jsx/`](http://facebook.github.io/jsx/)阅读更多内容。
+
+### 浏览器内实验
+
+还有许多用于实验`JSX`的工具。React 文档的[入门](http://facebook.github.io/react/docs/getting-started.html)页面链接了使用和不使用`JSX`的 JSFiddle 游乐场。
 
 [`facebook.github.io/react/docs/getting-started.html`](http://facebook.github.io/react/docs/getting-started.html)
 
-对于实际项目，官方工具是 babel，它还提供了几乎完整的 ES6 支持。
+对于实际项目，官方工具是`babel`，它还提供了几乎完整的 ES6 支持。
 
 [`babeljs.io/`](https://babeljs.io/)
 
@@ -763,7 +736,7 @@ React.renderComponent(<div style={styles}>...</div>, node);
 
 # 第 3 章 组件生命周期
 
-在组件的生命周期中，随着其 props 或 state 的变化，其 DOM 表示也可能发生变化。组件是一个状态机；对于给定的输入，它总是返回相同的输出。
+在组件的生命周期中，随着其`props`或`state`的变化，其 DOM 表示也可能发生变化。组件是一个状态机；对于给定的输入，它总是返回相同的输出。
 
 React 提供了生命周期钩子，使组件能够响应不同的时刻——其创建、存在和销毁。我们将按照它们出现的顺序来介绍：首先是实例化，然后是组件的生命周期，最后是组件的销毁。
 
@@ -792,7 +765,7 @@ React 组件拥有一个极简的生命周期 API，只提供你所需的内容�
 
 **销毁与清理**
 
-最后，当你使用完组件时，会调用 `componentWillUnmount`，让你的实例有机会进行自我清理。
+最后，当你使用完组件时，会调用`componentWillUnmount`，让你的实例有机会进行自我清理。
 
 现在，我们将依次介绍这三个阶段：实例化、生命周期和清理。
 
@@ -805,149 +778,145 @@ React 组件拥有一个极简的生命周期 API，只提供你所需的内容�
 构造函数允许你为组件设置实例属性和状态。一个典型的构造函数如下所示：
 
 ```
- class Foo extends React.Component {
+class Foo extends React.Component {
   constructor(props){
-    super(); // 调用父类构造函数，必需
-    this.state = {x: 'y'};
-  }
-  render(){ ... }
+    super(); // 调用父类构造函数，必需
+    this.state = {x: 'y'};
+  }
+  render(){ ... }
 }
 ```
 
 ### `componentWillMount`
 
-在初始渲染之前立即调用。这是在 `render` 方法被调用之前影响组件状态的最后机会。这里提及它只是为了完整性；它是 `createClass` 的遗留产物，现在已被构造函数取代。
+在初始渲染之前立即调用。这是在`render`方法被调用之前影响组件状态的最后机会。这里提及它只是为了完整性；它是`createClass`的遗留产物，现在已被构造函数取代。
 
 ### `render`
 
-在这里构建代表组件输出的虚拟 DOM。Render 是组件唯一必需的方法，并且有特定的规则。`render` 方法的要求如下：
+在这里构建代表组件输出的虚拟 DOM。`render`是组件唯一必需的方法，并且有特定的规则。`render`方法的要求如下：
 
-*   它只能访问 `this.props` 和 `this.state` 中的数据。
-*   它可以返回 `null`、`false` 或任何 React 元素。
+*   它只能访问`this.props`和`this.state`中的数据。
+*   它可以返回`null`、`false`或任何 React 元素。
 *   只能有一个顶级元素（不能返回元素数组）。
 *   它必须是*纯函数*，意味着它不会改变状态或修改 DOM 输出。
 
-render 返回的结果并不是实际的 DOM，而是一个虚拟表示，React 稍后会将其与真实 DOM 进行差异比较，以确定是否需要做出任何更改。
+`render`返回的结果并不是实际的 DOM，而是一个虚拟表示，React 稍后会将其与真实 DOM 进行差异比较，以确定是否需要做出任何更改。
 
 ### `componentDidMount`
 
-在渲染成功且实际 DOM 已被渲染后，你可以通过 `act.findDOMNode(this)` 或使用 ref 在 `componentDidMount` 内部访问它。
+在渲染成功且实际 DOM 已被渲染后，你可以通过`act.findDOMNode(this)`或使用 ref 在`componentDidMount`内部访问它。
 
 这是你将用来访问原始 DOM 的生命周期钩子。例如，如果你需要测量渲染输出的高度、使用定时器操作它，或运行自定义的 jQuery 插件，这就是你接入的地方。
 
 例如，假设你想在 React 渲染的输入元素上使用 jQuery UI Autocomplete 插件。你可以像这样附加该插件：
 
-
-
-
-
 ```
- // 用于自动补全的字符串列表
+// 用于自动补全的字符串列表
 var datasource = [...];
 
 class MyComponent extends React.Component {
-  render() {
-    return (
-      <input ... />
-    );
-  }
+  render() {
+    return (
+      <input ... />
+    );
+  }
   componentDidMount() {
     $(React.findDOMNode(this)).autocomplete({
       sources: datasource
-    });
-  }
+    });
+  }
 });
 ```
 
-注意，在服务器端运行时，`componentDidMount` 方法不会被调用。
+注意，在服务器端运行时，`componentDidMount`方法不会被调用。
 
 ## 生命周期
 
 此时，你的组件已经渲染给用户，用户可以与之交互。通常，这涉及通过点击、触摸或按键事件触发某个事件处理程序。当用户改变组件或整个应用的状态时，新状态会流经组件树，你就有机会对其做出响应。
 
-### componentWillReceiveProps
+### `componentWillReceiveProps`
 
-组件的 props 随时可能通过父组件发生变化。当这种情况发生时，会调用 `componentWillReceiveProps`，你就有机会修改新的 props 对象并更新状态。
+组件的`props`随时可能通过父组件发生变化。当这种情况发生时，会调用`componentWillReceiveProps`，你就有机会修改新的`props`对象并更新状态。
 
 例如，在示例应用中，当用户在不同面板之间导航时，你可以通过从服务器获取相关数据来响应这一变化。
 
 ```
- componentWillReceiveProps(nextProps) {
-  var boardId = nextProps.params.boardId;
-  if(boardId !== this.props.params.boardId) {
-    Actions.State.changeBoard({type: 'board', name: boardId});
-  }
+componentWillReceiveProps(nextProps) {
+  var boardId = nextProps.params.boardId;
+  if(boardId !== this.props.params.boardId) {
+    Actions.State.changeBoard({type: 'board', name: boardId});
+  }
 }
 ```
 
-你可以在 [`git.io/vlcpa`](http://git.io/vlcpa) 查看我们示例应用（一个调查问卷构建器）的完整源代码。
+你可以在[`git.io/vlcpa`](http://git.io/vlcpa)查看我们示例应用（一个调查问卷构建器）的完整源代码。
 
-## shouldComponentUpdate
+### `shouldComponentUpdate`
 
-React 很快。但你可以通过使用 `shouldComponentUpdate` 来精确优化组件的渲染时机，使其更快。
+React 很快。但你可以通过使用`shouldComponentUpdate`来精确优化组件的渲染时机，使其更快。
 
-如果你确定新的 props 或 state 不需要你的组件或其任何子组件重新渲染，则返回 `false`。
+如果你确定新的`props`或`state`不需要你的组件或其任何子组件重新渲染，则返回`false`。
 
 *该方法在初始渲染或使用* `forceUpdate` *后不会被调用。*
 
-通过返回 `false`，你告诉 React 跳过调用 `render` 以及前后的钩子：`componentWillUpdate` 和 `componentDidUpdate`。
+通过返回`false`，你告诉 React 跳过调用`render`以及前后的钩子：`componentWillUpdate`和`componentDidUpdate`。
 
 这个方法不是必需的，在大多数情况下，你在开发过程中不需要使用它。过早使用此方法可能导致微妙的 bug，因此最好等到你能正确评估瓶颈后再决定在哪里进行优化。
 
-如果你小心地将 state 视为不可变的，并且只在 render 方法中读取 props 和 state，那么可以放心地重写 `shouldComponentUpdate` 来比较旧的 props 和 state 与新的替换值。
+如果你小心地将`state`视为不可变的，并且只在`render`方法中读取`props`和`state`，那么可以放心地重写`shouldComponentUpdate`来比较旧的`props`和`state`与新的替换值。
 
-另一个性能调优选项是 React 附加组件提供的 `PureRenderMixin`。如果你的组件是*纯的*，即对于相同的 props 和 state 总是渲染相同的 DOM，那么这个 mixin 会自动使用 `shouldComponentUpdate` 对 props 和 state 进行浅比较，如果它们匹配则返回 `false`。本书后面会介绍使用此 mixin 的示例。
+另一个性能调优选项是 React 附加组件提供的`PureRenderMixin`。如果你的组件是*纯的*，即对于相同的`props`和`state`总是渲染相同的 DOM，那么这个 mixin 会自动使用`shouldComponentUpdate`对`props`和`state`进行浅比较，如果它们匹配则返回`false`。本书后面会介绍使用此 mixin 的示例。
 
-### componentWillUpdate
+### `componentWillUpdate`
 
-与 `componentWillMount` 类似，当接收到新的 props 或 state 时，此方法会在渲染之前立即触发。
+与`componentWillMount`类似，当接收到新的`props`或`state`时，此方法会在渲染之前立即触发。
 
-注意，你*不能*在此方法中更新 state 或 props。你应该依赖 `componentWillReceiveProps` 在运行时更新 state。
+注意，你*不能*在此方法中更新`state`或`props`。你应该依赖`componentWillReceiveProps`在运行时更新`state`。
 
-### componentDidUpdate
+### `componentDidUpdate`
 
-与 `componentDidMount` 类似，此方法为你提供了更新已渲染 DOM 的机会。
+与`componentDidMount`类似，此方法为你提供了更新已渲染 DOM 的机会。
 
 ## 卸载与清理
 
 一旦 React 处理完一个组件，它必须从 DOM 中卸载并销毁。你有一个钩子来响应这一时刻，执行任何必要的清理和拆卸工作。
 
-### componentWillUnmount
+### `componentWillUnmount`
 
-最后，当组件从组件层级中移除时，我们迎来了组件生命的终结。此方法在组件即将被移除之前调用，让你有机会进行清理。你在 `componentDidMount` 中可能执行的任何自定义工作，例如创建定时器或添加事件监听器，都应在此处撤销。否则会导致错误（如果你在已卸载的组件上调用 `setState`）以及各种类型的泄漏（内存、监听器等）。
+最后，当组件从组件层级中移除时，我们迎来了组件生命的终结。此方法在组件即将被移除之前调用，让你有机会进行清理。你在`componentDidMount`中可能执行的任何自定义工作，例如创建定时器或添加事件监听器，都应在此处撤销。否则会导致错误（如果你在已卸载的组件上调用`setState`）以及各种类型的泄漏（内存、监听器等）。
 
 ## 反模式：将计算值作为状态
 
-考虑到可以在构造函数中从 `this.props` 创建状态，有必要指出这里的一种反模式。你应该非常关注维护单一数据源。React 的设计使得重复数据源更加明显，这是 React 的关键优势之一。
+考虑到可以在构造函数中从`this.props`创建状态，有必要指出这里的一种反模式。你应该非常关注维护单一数据源。React 的设计使得重复数据源更加明显，这是 React 的关键优势之一。
 
-当考虑从 props 派生的计算值时，将这些值存储为状态被认为是一种反模式。例如，组件可能在渲染前将日期转换为字符串表示，或将字符串转换为大写。这些不是状态，而应该在渲染时计算。
+当考虑从`props`派生的计算值时，将这些值存储为状态被认为是一种反模式。例如，组件可能在渲染前将日期转换为字符串表示，或将字符串转换为大写。这些不是状态，而应该在渲染时计算。
 
-当你在 render 函数中无法判断状态值是否与它所基于的 prop 同步时，就可以识别出这种反模式。
+当你在`render`函数中无法判断状态值是否与它所基于的`prop`同步时，就可以识别出这种反模式。
 
 ```
- class Day extends React.Component {
+class Day extends React.Component {
   constructor(props){
-    super();
+    super();
     // 反模式。计算值不应存储为状态。
-    this.state = {day: props.date.getDay()};
-  }
-  render(){
-    return (
-       <div>Day: {this.state.day}</div>
-    );
-  }
+    this.state = {day: props.date.getDay()};
+  }
+  render(){
+    return (
+      <div>Day: {this.state.day}</div>
+    );
+  }
 }
 ```
 
-正确的模式是在渲染时计算值。这保证了计算值永远不会与它所派生的 props 不同步。
+正确的模式是在渲染时计算值。这保证了计算值永远不会与它所派生的`props`不同步。
 
 ```
- class Day extends React.Component {
-  render(){
-    return (
-      <div>Day: {this.props.date.getDay()}</div>
-    );
-  }
+class Day extends React.Component {
+  render(){
+    return (
+      <div>Day: {this.props.date.getDay()}</div>
+    );
+  }
 }
 ```
 
@@ -955,64 +924,61 @@ React 很快。但你可以通过使用 `shouldComponentUpdate` 来精确优化�
 
 React 的生命周期方法为组件的生命周期提供了设计良好的钩子。作为状态机，每个组件都设计为在其整个生命周期中输出稳定、可预测的标记。
 
-没有组件是孤立存在的。当父组件将 props 推送给子组件，并且这些子组件渲染它们自己的子组件时，你必须仔细考虑数据如何在应用中流动。每个子组件*真正*需要知道多少？谁拥有应用状态？哪些组件（如果有）需要本地状态？这是我们下一章关于数据流的主题。
+没有组件是孤立存在的。当父组件将`props`推送给子组件，并且这些子组件渲染它们自己的子组件时，你必须仔细考虑数据如何在应用中流动。每个子组件*真正*需要知道多少？谁拥有应用状态？哪些组件（如果有）需要本地状态？这是我们下一章关于数据流的主题。
 
 # 第 4 章 数据流
 
-在 React 中，数据只朝一个方向流动——从父组件到子组件。这使得组件非常简单且可预测。它们从父组件获取 props 并渲染它们。如果顶层组件的 prop 发生变化，React 会将该变化一直传播到组件树，并重新渲染所有使用该属性的组件。
+在 React 中，数据只朝一个方向流动——从父组件到子组件。这使得组件非常简单且可预测。它们从父组件获取`props`并渲染它们。如果顶层组件的`prop`发生变化，React 会将该变化一直传播到组件树，并重新渲染所有使用该属性的组件。
 
-组件也可以拥有内部状态，这些状态只能在组件内部修改。React 组件本质上是简单的，你可以将它们视为一个函数，接收 `props` 和 `state`，并输出虚拟 DOM 表示。
+组件也可以拥有内部状态，这些状态只能在组件内部修改。React 组件本质上是简单的，你可以将它们视为一个函数，接收`props`和`state`，并输出虚拟 DOM 表示。
 
 在本章中，我们将探讨：
 
-*   什么是 props
-*   什么是 state
-*   何时使用 props，何时使用 state
+*   什么是`props`
+*   什么是`state`
+*   何时使用`props`，何时使用`state`
 
 ## Props
 
-`props` 是“属性”的缩写，被传递给组件，可以包含你想要的任何数据。
+`props`是“属性”的缩写，被传递给组件，可以包含你想要的任何数据。
 
-你可以在实例化时设置组件的 props：
-
-```
- var comments = [{ author: 'Example', body: 'Hey' }];
-<Comments comments={comments}/
-```
-
-你可以在 [`git.io/vlcpa`](http://git.io/vlcpa) 查看我们示例应用（一个调查问卷构建器）的完整源代码。
-
-你可以通过 `this.props` 访问 props，但绝不应该通过这种方式写入 props。组件永远不应该修改自己的 props。
-
-当与 JSX 一起使用时，props 可以设置为字符串：
+你可以在实例化时设置组件的`props`：
 
 ```
- <Link to="/user/example">Example</Link>
+var comments = [{ author: 'Example', body: 'Hey' }];
+<Comments comments={comments}/>
 ```
 
-也可以使用 `{}` 语法设置，这是一个常规的 JavaScript 表达式：
+你可以在[`git.io/vlcpa`](http://git.io/vlcpa)查看我们示例应用（一个调查问卷构建器）的完整源代码。
+
+你可以通过`this.props`访问`props`，但绝不应该通过这种方式写入`props`。组件永远不应该修改自己的`props`。
+
+当与`JSX`一起使用时，`props`可以设置为字符串：
 
 ```
- <Link to={'/user/' + comment.author}>{comment.author}</a>
+<Link to="/user/example">Example</Link>
 ```
 
-还可以使用 JSX 展开语法将对象用作 props：
+也可以使用`{}`语法设置，这是一个常规的 JavaScript 表达式：
 
 ```
- class Button extends React.Component {
+<Link to={'/user/' + comment.author}>{comment.author}</a>
+```
+
+还可以使用 JSX 展开语法将对象用作`props`：
+
+```
+class Button extends React.Component {
   render() {
-    // 这里我们展开所有传入的 props
-    // 但确保使用我们自己的 className 版本
-    var className = ['Button', this.props.className].join(' ');
+    // 这里我们展开所有传入的 props
+    // 但确保使用我们自己的 className 版本
+    var className = ['Button', this.props.className].join(' ');
     return <button {...this.props} className={className} />;
   }
 };
 ```
 
-Props 对于事件处理程序也很有用：
-
-
-
+`Props`对于事件处理程序也很有用：
 
 ```
 class SaveButton extends React.Component {
@@ -1031,7 +997,7 @@ class SaveButton extends React.Component {
 };
 ```
 
-这里我们向 `Button` 组件传递了 `onClick` 属性，其值为一个调用 `this.handleClick` 的函数。每当用户点击按钮时，`handleClick` 方法就会被调用。
+这里我们向`Button`组件传递了`onClick`属性，其值为一个调用`this.handleClick`的函数。每当用户点击按钮时，`handleClick`方法就会被调用。
 
 ## PropTypes
 
@@ -1052,15 +1018,15 @@ class Post extends React.Component
 };
 ```
 
-如果组件实例化时 `propTypes` 的要求未满足，则会记录一条 `console.error`。
+如果组件实例化时`propTypes`的要求未满足，则会记录一条`console.error`。
 
-对于可选属性，只需去掉 `.isRequired` 即可。
+对于可选属性，只需去掉`.isRequired`即可。
 
-你并非必须在应用中使用 `propTypes`，但它们提供了一种描述组件 API 的好方法。
+你并非必须在应用中使用`propTypes`，但它们提供了一种描述组件 API 的好方法。
 
 ## defaultProps
 
-在组件上提供 `defaultProps` 对象，以提供一组默认属性。这仅应对非必需的属性进行设置。
+在组件上提供`defaultProps`对象，以提供一组默认属性。这仅应对非必需的属性进行设置。
 
 ```
 var Button = React.createClass({
@@ -1076,9 +1042,11 @@ var Button = React.createClass({
 
 ## State
 
-React 中的每个组件都可以拥有状态。状态与 `props` 的不同之处在于它是组件内部的。
+React 中的每个组件都可以拥有状态。状态与`props`的不同之处在于它是组件内部的。
 
 状态对于决定元素上的视图状态非常有用。请注意，该组件包含了你需要了解的 React 的大部分内容，所以[×](https://atlas.oreilly.com/crudloff/reactjs-book/editor/master/04.data.flow.html#)不要期望现在就能完全理解。
+
+
 
 ```
 class SimpleSelect extends React.Component {
@@ -1137,9 +1105,9 @@ class SimpleSelect extends React.Component {
 
 在上面的例子中，`state` 用于跟踪是否显示下拉选项。
 
-我们在构造函数中将初始状态中的 open 设置为 false。当下拉按钮被点击时，切换 open 状态（`toggleOpen`）。当某个选项被点击时，将 open 状态设置为 false（`handleSelect`）。
+我们在构造函数中将初始状态中的 `open` 设置为 `false`。当下拉按钮被点击时，切换 `open` 状态（`toggleOpen`）。当某个选项被点击时，将 `open` 状态设置为 `false`（`handleSelect`）。
 
-我们可以快速浏览代码中的 `this.state.open`，并看到它在 `renderItems` 中被使用。如果 `this.state.open` 为 false，则选项不会被渲染。每次你调用 `setState` 或从父组件获取新的 `props` 时，`render`（以及 `renderItems`）都会重新运行。在 React 中引起变化是通过影响 `state` 或 `props` 来实现的，而不是直接修改。
+我们可以快速浏览代码中的 `this.state.open`，并看到它在 `renderItems` 中被使用。如果 `this.state.open` 为 `false`，则选项不会被渲染。每次你调用 `setState` 或从父组件获取新的 `props` 时，`render`（以及 `renderItems`）都会重新运行。在 React 中引起变化是通过影响 `state` 或 `props` 来实现的，而不是直接修改。
 
 **永远不要**通过 `this.state` 直接更新状态。相反，始终使用 `this.setState` 方法。
 
@@ -1147,15 +1115,15 @@ class SimpleSelect extends React.Component {
 
 ## 什么应该放在 state 中，什么应该放在 props 中？
 
-不要将计算后的值或组件存储在 `state` 中，而应专注于组件运行直接需要的简单数据，比如我们下拉菜单的 open 状态。没有它你就无法打开或关闭下拉菜单。这也可以是输入字段的值、用户的鼠标位置或 AJAX 请求的结果。
+不要将计算后的值或组件存储在 `state` 中，而应专注于组件运行直接需要的简单数据，比如我们下拉菜单的 `open` 状态。没有它你就无法打开或关闭下拉菜单。这也可以是输入字段的值、用户的鼠标位置或 AJAX 请求的结果。
 
-尽量不要将 prop 数据复制到 `state` 中。尽可能将 `props` 视为唯一数据源。
+尽量不要将 `prop` 数据复制到 `state` 中。尽可能将 `props` 视为唯一数据源。
 
 ## 无状态函数式组件
 
 你可以采用这种单一数据源的思想来简化你的组件。函数式组件（在 React 0.14 中引入）不是通过包含多个方法的类来定义，而是作为一个单一的函数。该函数接受 `props` 作为参数并返回所需的元素，很像传统组件中独立的 `render` 函数。
 
-下面是我们 Day 组件作为函数式组件的样子：
+下面是我们 `Day` 组件作为函数式组件的样子：
 
 ```
 function Day(props) {
@@ -1206,10 +1174,6 @@ React 处理事件的方法是将事件处理程序附加到组件，然后在�
 结合这些技术以及 React 的高效渲染，响应输入并根据这些输入的结果更新用户界面变得很容易。
 
 ## 附加事件处理程序
-
-
-
-
 
 在基本层面上，React 处理的事件与常规 JavaScript 中的相同：用于点击处理器的 `MouseEvents`、表单元素变化时的 `Change` 事件等。这些事件与常规 JavaScript 中的名称相同，并在相同条件下触发。
 
@@ -1280,7 +1244,7 @@ React 对处理多种事件类型提供了一流支持，这些事件类型在�
 
 ### 更新状态
 
-由于更新组件的内部 `state` 会导致组件重新渲染，因此 Markdown 预览始终是最新的。当我们调用 `setState` 时，`render` 将再次运行，但它会读取 `this.state` 的当前值。Markdown 组件也会更新，新内容将被刷新到 DOM 中。
+由于更新组件的内部 `state` 会导致组件重新渲染，因此 Markdown 预览始终是最新的。当我们调用 `setState` 时，`render` 将再次运行，但它会读取 `this.state` 的当前值。`Markdown` 组件也会更新，新内容将被刷新到 DOM 中。
 
 更新组件状态有两种方法：组件的 `setState` 方法和 `replaceState` 方法。`replaceState` 会用全新的状态对象覆盖整个状态对象，如果你使用不可变数据结构来保存状态，这会很有用，但其他情况下很少需要。更常见的是使用 `setState`，它只是将你提供的对象合并到现有状态对象中。
 
@@ -1301,7 +1265,7 @@ React 对处理多种事件类型提供了一流支持，这些事件类型在�
 
 ### 状态没有更新！
 
-还需要注意的是，`setState` 是异步的。因此，如果你的状态是 `{x: 1}`，并且运行以下代码，控制台将显示 1。
+还需要注意的是，`setState` 是异步的。因此，如果你的状态是 `{x: 1}`，并且运行以下代码，控制台将显示 `1`。
 
 ```
  this.setState({x: 2})
@@ -1356,7 +1320,7 @@ this.setState((state) => {
 
 React 的事件处理函数总是会接收到一个事件对象，这与原生 JavaScript 事件监听器的方式非常相似。在这里，事件处理器接收一个事件对象，并通过访问 `event.target.value` 从中提取输入的当前值。在事件处理器中使用 `event.target.value` 是从表单输入中获取值的常见方式，尤其是在 `onChange` 处理器中。
 
-React 不会将浏览器提供的原始 Event 对象直接传递给处理器，而是将原始事件包装在 `SyntheticEvent` 实例中。`SyntheticEvent` 的设计使其在外观和功能上与浏览器创建的原始事件相同，只是平滑处理了某些跨浏览器的不一致性。你应该能够像使用普通事件一样使用 `SyntheticEvent`，但如果需要浏览器发送的原始事件，可以通过 `SyntheticEvent` 的 `nativeEvent` 字段访问它。
+React 不会将浏览器提供的原始 `Event` 对象直接传递给处理器，而是将原始事件包装在 `SyntheticEvent` 实例中。`SyntheticEvent` 的设计使其在外观和功能上与浏览器创建的原始事件相同，只是平滑处理了某些跨浏览器的不一致性。你应该能够像使用普通事件一样使用 `SyntheticEvent`，但如果需要浏览器发送的原始事件，可以通过 `SyntheticEvent` 的 `nativeEvent` 字段访问它。
 
 ## 总结
 
@@ -1371,10 +1335,6 @@ React 不会将浏览器提供的原始 Event 对象直接传递给处理器，�
 到目前为止，你已经使用单个组件来响应用户交互。接下来，你将学习如何组合多个组件，以创建一个超越各部分之和的界面。
 
 # 第 6 章 组合组件
-
-
-
-
 
 在传统 HTML 中，每个页面的基本构建块是元素。而在 React 中，你通过组件来组装页面。你可以将 React 组件视为一个融合了 JavaScript 全部表现力的 HTML 元素。事实上，使用 React 时，你*唯一*要做的事情就是构建组件，就像 HTML 文档完全由元素构成一样。
 
@@ -1399,25 +1359,27 @@ React 拥抱可组合性，允许你将各种子组件混合搭配，形成一�
 让我们考虑一个表示多项选择题的组件。它有几个需求：
 
 * 接收一个选项列表作为输入
+
 * 将选项渲染给用户
+
 * 只允许用户选择一个选项
 
 我们知道 HTML 提供了一些基本元素来帮助实现，即单选类型的输入和输入组。从上到下思考，组件层次结构如下所示：
 
-```
- MultipleChoice → RadioInput → Input (type="radio")
-```
 
-你可以将这些箭头理解为表示“包含一个”的关系。`MultipleChoice` 组件*包含一个* `RadioInput`。`RadioInput` *包含一个* input。这是组合模式的一个识别特征。
+
+`MultipleChoice → RadioInput → Input (type="radio")`
+
+你可以将这些箭头理解为表示“包含一个”的关系。`MultipleChoice` 组件*包含一个* `RadioInput`。`RadioInput` *包含一个* `input`。这是组合模式的一个识别特征。
 
 ### 组装 HTML
 
 让我们从下到上开始组装组件。DOM 组件（以小写字母开头）由 React 提供。因此，你要做的第一件事就是将其包装在一个 `RadioInput` 组件中。这个组件将负责定制通用的 `input`，将其作用域缩小为像单选按钮一样工作。我们将其命名为 `AnswerRadioInput`。
 
-首先，创建脚手架，其中包括必需的 render 方法和描述所需输出的基本标记。当组件成为一种专门的输入类型时，你已经可以开始看到组合模式了。
+首先，创建脚手架，其中包括必需的 `render` 方法和描述所需输出的基本标记。当组件成为一种专门的输入类型时，你已经可以开始看到组合模式了。
 
 ```
- class AnswerRadioInput extends React.Component {
+class AnswerRadioInput extends React.Component {
   render() {
     return (
       <div className="radio">
@@ -1444,7 +1406,7 @@ React 拥抱可组合性，允许你将各种子组件混合搭配，形成一�
 根据这个列表，你现在可以为自定义输入定义属性类型。将这些添加到类定义的 `propTypes` 哈希中。
 
 ```
- class AnswerRadioInput extends React.Component {
+class AnswerRadioInput extends React.Component {
     ...
 }
 
@@ -1460,7 +1422,7 @@ AnswerRadioInput.propTypes = {
 对于每个可选属性，你需要定义默认值。将这些添加到 `defaultProps` 静态成员中。当父组件未提供这些值时，这些值将应用于每个新实例。
 
 ```
- class AnswerRadioInput extends React.Component {
+class AnswerRadioInput extends React.Component {
   ...
 }
 
@@ -1480,7 +1442,7 @@ AnswerRadioInput.defaultProps = {
 注意，我们还调用了 `super(props)` 以使用默认的 prop 行为。
 
 ```
- class AnswerRadioInput extends React.Component {
+class AnswerRadioInput extends React.Component {
   constructor(props) {
     super(props);
     var id = props.id ? props.id : uniqueId('radio-');
@@ -1501,7 +1463,7 @@ AnswerRadioInput.defaultProps = {...};
 现在你可以更新渲染的标记以访问新的动态状态和 props。
 
 ```
- class AnswerRadioInput = React.createClass({
+class AnswerRadioInput = React.createClass({
 
   constructor(props) {...}
 
@@ -1530,7 +1492,7 @@ AnswerRadioInput.defaultProps = {...};
 至此，你已经有了一个足够完整的组件，可以在父组件中使用它，因此你可以开始构建下一层，即 `AnswerMultipleChoiceQuestion`。它的主要职责是显示一个选项列表供用户选择。按照上面介绍的模式，让我们为这个组件铺设基本的 HTML 和默认 props。
 
 ```
- class AnswerMultipleChoiceQuestion extends React.Component {
+class AnswerMultipleChoiceQuestion extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -1559,39 +1521,36 @@ AnswerMultipleChoiceQuestion.propTypes = {
 };
 ```
 
-为了生成子单选输入组件的列表，你必须遍历 choices 数组，将每个选项转换为一个组件。这可以通过一个辅助函数轻松处理，如下所示。
-
-
-
+为了生成子单选输入组件的列表，你必须遍历 `choices` 数组，将每个选项转换为一个组件。这可以通过一个辅助函数轻松处理，如下所示。
 
 ```
 class AnswerMultipleChoiceQuestion = React.createClass({
 
   ...
-  renderChoices() {
-    return this.props.choices.map((choice, i) => {
-      return (
-         <AnswerRadioInput
-          id={"choice-" + i}
-          name={this.state.id}
-          label={choice}
-          value={choice}
-          checked={this.state.value === choice}
-         />
-      );
-    });
-  }
+  renderChoices() {
+    return this.props.choices.map((choice, i) => {
+      return (
+         <AnswerRadioInput
+           id={"choice-" + i}
+           name={this.state.id}
+           label={choice}
+           value={choice}
+           checked={this.state.value === choice}
+         />
+      );
+    });
+  }
 
-  render() {
-    return (
-      <div className="form-group">
-        <label className="survey-item-label" htmlFor={this.state.id}>{this.props.label}</label>
-        <div className="survey-item-content">
-            {this.renderChoices()}
-        </div>
-      </div>
-    );
-  }
+  render() {
+    return (
+      <div className="form-group">
+        <label className="survey-item-label" htmlFor={this.state.id}>{this.props.label}</label>
+        <div className="survey-item-content">
+            {this.renderChoices()}
+        </div>
+      </div>
+    );
+  }
 }
 ```
 
@@ -1615,32 +1574,32 @@ class AnswerMultipleChoiceQuestion = React.createClass({
 
 ```
 class AnswerMultipleChoiceQuestion extends React.Component {
-  constructor(props) {
-    ...
-    this.handleChanged = this.handleChanged.bind(this);
+  constructor(props) {
+    ...
+    this.handleChanged = this.handleChanged.bind(this);
   }
 
-  handleChanged(value) {
-    this.setState({value: value});
-    this.props.onCompleted(value);
-  }
+  handleChanged(value) {
+    this.setState({value: value});
+    this.props.onCompleted(value);
+  }
 
-  renderChoices() {
-    return this.props.choices.map((choice, i) => {
+  renderChoices() {
+    return this.props.choices.map((choice, i) => {
 
-       return (
-        <AnswerRadioInput
-          id={"choice-" + i}
-          name={this.state.id}
-            label={choice}
-          value={choice}
-         checked={this.state.value === choice}
-          onChanged={this.handleChanged}
-        />
-      );
-    });
-  }
-  ...
+       return (
+         <AnswerRadioInput
+           id={"choice-" + i}
+           name={this.state.id}
+           label={choice}
+           value={choice}
+           checked={this.state.value === choice}
+           onChanged={this.handleChanged}
+         />
+      );
+    });
+  }
+  ...
 }
 ```
 
@@ -1648,35 +1607,35 @@ class AnswerMultipleChoiceQuestion extends React.Component {
 
 ```
 class AnswerRadioInput extends React.Component {
-  constructor(props) {
-     ...
-    this.handleChanged = this.handleChanged.bind(this);
+  constructor(props) {
+     ...
+    this.handleChanged = this.handleChanged.bind(this);
   }
 
-  handleChanged(e) {
-    var checked = e.target.checked;
-    this.setState({checked: checked});
-    if (checked) {
-      this.props.onChanged(this.props.value);
-    }
-  }
+  handleChanged(e) {
+    var checked = e.target.checked;
+    this.setState({checked: checked});
+    if (checked) {
+      this.props.onChanged(this.props.value);
+    }
+  }
 
-  render() {
-    return (
-      <div className="radio">
-        <label htmlFor={this.state.id}>
-          <input type="radio"
-            ...
-            onChange={this.handleChanged} />
-          {this.props.label}
-        </label>
-      </div>
-    );
-  }
+  render() {
+    return (
+      <div className="radio">
+        <label htmlFor={this.state.id}>
+          <input type="radio"
+            ...
+            onChange={this.handleChanged} />
+          {this.props.label}
+        </label>
+      </div>
+    );
+  }
 }
 
 AnswerRadioInput.propTypes: {
-  ...
+  ...
   onChanged: React.PropTypes.func.isRequired
 };
 ```
@@ -1716,9 +1675,9 @@ React 有两种特殊的抽象方式。高阶组件是接受一个组件作为�
 ```
 function providesRandomNumber(Component) {
   return class RandomNumberProvider extends React.Component {
-    render(){
-      return <Component {...this.props} randomNumber={4} />;
-    }
+    render(){
+      return <Component {...this.props} randomNumber={4} />;
+    }
   }
 }
 ```
@@ -1728,14 +1687,14 @@ function providesRandomNumber(Component) {
 ```
 var MyComponent = providesRandomNumber(
   class MyComponent extends React.Component {
-    render(){
-      return (
-        <div>
-          The random number is {this.props.randomNumber}
-        </div>
-      );
-    }
-  }
+    render(){
+      return (
+        <div>
+          The random number is {this.props.randomNumber}
+        </div>
+      );
+    }
+  }
 );
 ```
 
@@ -1747,7 +1706,7 @@ class MyComponent extends React.Component {
   render(){
     return (
       <div>
-        The random number is {this.props.randomNumber}
+        The random number is {this.props.randomNumber}
       </div>
     );
   }
@@ -1761,13 +1720,15 @@ class MyComponent extends React.Component {
 ```
 function hoc(options, Component){
   if (typeof options === 'function') return hoc({}, options);
-  if (arguments.length < 2) return hoc.bind(null, options || {});
+  if (arguments.length < 2) return hoc.bind(null, options || {});
 
-  return class ...
+  return class ...
 }
 ```
 
 如果你有一个 mixin，你可以从 mixin 创建一个高阶组件，并将内容作为 props 传递下去。
+
+
 
 ```
 import {History} from 'react-router';
@@ -1800,7 +1761,7 @@ function providesFoo(Component){
 }
 ```
 
-#### 常见用例
+### 常见用例
 
 高阶组件通常用于全局事件、绑定到 flux 存储、定时器以及任何你想以声明方式使用的命令式 API。
 
@@ -1808,14 +1769,11 @@ function providesFoo(Component){
 
 高阶组件是消除代码重复、让组件专注于其独特之处的最强大工具之一。它们允许你使用强大的抽象，有些问题如果没有它们就无法优雅地解决。
 
-即使你只打算在单个组件中使用高阶组件，它也能让你描述某种行为或角色，并将其提供给组件。它们减少了你在理解组件之前需要阅读的代码量，并允许你做一些丑陋的事情（例如管理 `__intervals`），而不会让你的组件变得丑陋。
+即使你只打算在单个组件中使用高阶组件，它也能让你描述某种行为或角色，并将其提供给组件。它们减少了你在理解组件之前需要阅读的代码量，并允许你做一些丑陋的事情（例如管理`__intervals`），而不会让你的组件变得丑陋。
 
 在阅读下一章关于 DOM 的内容时，思考你可以从组件中提取哪些行为和角色，甚至自己尝试一下。
 
 # 第 8 章 DOM 操作
-
-
-
 
 大多数情况下，React 的虚拟 DOM 足以创建你想要的用户体验，而无需直接操作底层的实际 DOM。通过组合组件，你可以将复杂的交互编织成一个连贯的整体呈现给用户。
 
@@ -1825,7 +1783,7 @@ function providesFoo(Component){
 
 ## 访问受管理的 DOM 节点
 
-要访问由 React 管理的 DOM 节点，你首先需要能够访问负责管理这些节点的组件。向子组件添加 `ref` 属性即可实现这一点。
+要访问由 React 管理的 DOM 节点，你首先需要能够访问负责管理这些节点的组件。向子组件添加`ref`属性即可实现这一点。
 
 ```
  class DoodleArea extends React.Component
@@ -1835,11 +1793,11 @@ function providesFoo(Component){
 }
 ```
 
-这将使底层的 `<canvas>` DOM 节点可以通过 `this.refs.mainCanvas` 访问。可以想象，你给子组件的 `ref` 必须在所有子组件中唯一；给另一个子组件也设置 `ref` 为 `mainCanvas` 是行不通的。
+这将使底层的`<canvas>` DOM 节点可以通过`this.refs.mainCanvas`访问。可以想象，你给子组件的`ref`必须在所有子组件中唯一；给另一个子组件也设置`ref`为`mainCanvas`是行不通的。
 
-注意，你不能在 `render` 方法中可靠地直接访问 `<canvas>` 节点，因为底层的 DOM 节点可能尚未更新（甚至尚未创建！），直到 `render` 完成并且 React 执行其更新。
+注意，你不能在`render`方法中可靠地直接访问`<canvas>`节点，因为底层的 DOM 节点可能尚未更新（甚至尚未创建！），直到`render`完成并且 React 执行其更新。
 
-在组件挂载后，你可以可靠地访问 `<canvas>`，此时 `componentDidMount` 处理函数会运行。
+在组件挂载后，你可以可靠地访问`<canvas>`，此时`componentDidMount`处理函数会运行。
 
 ```
  var DoodleArea = React.createClass({
@@ -1858,7 +1816,7 @@ function providesFoo(Component){
 });
 ```
 
-请注意，`componentDidMount` 并不是唯一可以使用 `refs` 的地方。事件处理函数也会在组件挂载后触发，因此你可以像在 `componentDidMount` 处理函数中一样轻松地在事件处理函数中使用它。
+请注意，`componentDidMount`并不是唯一可以使用`refs`的地方。事件处理函数也会在组件挂载后触发，因此你可以像在`componentDidMount`处理函数中一样轻松地在事件处理函数中使用它。
 
 ```
  var RichText = React.createClass({
@@ -1875,15 +1833,15 @@ function providesFoo(Component){
 });
 ```
 
-上面的示例创建了一个启用了 `contentEditable` 的 `div`，允许用户在其中输入富文本。
+上面的示例创建了一个启用了`contentEditable`的`div`，允许用户在其中输入富文本。
 
-尽管 React 本身不提供访问组件原始 HTML 内容的方式，但 `keyDown` 处理函数可以访问该 div 的底层 DOM 节点，进而访问原始 HTML。由此，你可以保存用户已输入内容的副本、计算要显示的字数等。
+尽管 React 本身不提供访问组件原始 HTML 内容的方式，但`keyDown`处理函数可以访问该 div 的底层 DOM 节点，进而访问原始 HTML。由此，你可以保存用户已输入内容的副本、计算要显示的字数等。
 
 ## 通过组件查找 DOM 节点
 
 虽然 refs 是访问底层 DOM 节点的首选方式，但有时你可能希望编写一些 DOM 修改逻辑，使其适用于任何组件而无需关心其 refs，或者你可能需要查找某个导入的第三方组件（该组件未设置任何 refs）的底层 DOM 节点。
 
-在这种情况下，`ReactDOM.findDOMNode` 就是答案。
+在这种情况下，`ReactDOM.findDOMNode`就是答案。
 
 ```
  var RichText = React.createClass({
@@ -1901,9 +1859,9 @@ function providesFoo(Component){
 });
 ```
 
-请注意，上述做法并非首选方式。更好的做法是像上一节那样使用 ref，因为如果 `render` 函数被修改而引入了包装元素之类的结构，使用 ref 的逻辑不会中断。`findDOMNode` 只应在 ref 无法工作或引入 ref 过于繁琐时使用。
+请注意，上述做法并非首选方式。更好的做法是像上一节那样使用 ref，因为如果`render`函数被修改而引入了包装元素之类的结构，使用 ref 的逻辑不会中断。`findDOMNode`只应在 ref 无法工作或引入 ref 过于繁琐时使用。
 
-请记住，尽管 `refs` 和 `findDOMNode` 功能强大，但只有在没有其他方法实现所需功能时才应使用它们。使用它们会妨碍 React 优化性能的能力，并增加应用程序的复杂性，因此只有在传统技术无法满足需求时才应使用它们。
+请记住，尽管`refs`和`findDOMNode`功能强大，但只有在没有其他方法实现所需功能时才应使用它们。使用它们会妨碍 React 优化性能的能力，并增加应用程序的复杂性，因此只有在传统技术无法满足需求时才应使用它们。
 
 ## 集成非 React 库
 
@@ -1928,7 +1886,7 @@ function providesFoo(Component){
 });
 ```
 
-这个 `autocomplete` 函数需要一个目标 DOM 节点、一个用作数据的字符串列表以及一些事件处理函数。为了同时利用 React 和这个库的优势，你可以先构建一个提供这些内容的 React 组件。
+这个`autocomplete`函数需要一个目标 DOM 节点、一个用作数据的字符串列表以及一些事件处理函数。为了同时利用 React 和这个库的优势，你可以先构建一个提供这些内容的 React 组件。
 
 ```
  class AutocompleteCities extends React.Component {
@@ -1951,7 +1909,7 @@ function providesFoo(Component){
 });
 ```
 
-为了将这个库封装到 React 中，添加一个 `componentDidMount` 处理函数，通过 `autocompleteTarget` 子组件的底层 DOM 节点将两个实现连接起来。
+为了将这个库封装到 React 中，添加一个`componentDidMount`处理函数，通过`autocompleteTarget`子组件的底层 DOM 节点将两个实现连接起来。
 
 ```
  class AutocompleteCities extends React.Component {
@@ -1977,21 +1935,19 @@ function providesFoo(Component){
 };
 ```
 
-请注意，`componentDidMount` 在每个 DOM 节点上只会被调用一次。因此，你无需担心在同一节点上两次调用 `autocomplete`（在此示例中）会产生任何不良影响。
+请注意，`componentDidMount`在每个 DOM 节点上只会被调用一次。因此，你无需担心在同一节点上两次调用`autocomplete`（在此示例中）会产生任何不良影响。
 
-话虽如此，请记住该组件可能会被移除，并在之后重新渲染到不同的 DOM 节点。如果你的 `componentDidMount` 具有在 DOM 节点移除后仍然存在的副作用，这可能会导致内存泄漏或其他问题。如果这是一个问题，请确保指定一个 `componentWillUnmount` 处理函数，以便在 DOM 节点即将消失时让组件自行清理。
+话虽如此，请记住该组件可能会被移除，并在之后重新渲染到不同的 DOM 节点。如果你的`componentDidMount`具有在 DOM 节点移除后仍然存在的副作用，这可能会导致内存泄漏或其他问题。如果这是一个问题，请确保指定一个`componentWillUnmount`处理函数，以便在 DOM 节点即将消失时让组件自行清理。
 
 ## 越界的插件
 
-在我们的自动补全示例中，我们假设 `autocomplete` 是一个行为良好的插件，只修改其子元素。实际上，情况往往并非如此。
+在我们的自动补全示例中，我们假设`autocomplete`是一个行为良好的插件，只修改其子元素。实际上，情况往往并非如此。
 
 为了处理这些插件，你需要将它们对 React 隐藏，以避免因 DOM 被意外修改而引发错误。你可能还需要进行额外的清理。
 
 在这个示例中，我们处理的是一个虚构的 jQuery 插件，它会触发自定义事件并修改它所附加的元素。如果你遇到一个非常糟糕的插件，它修改了父元素，那么你无能为力，并且它与 React 不兼容。最好的做法是寻找另一个插件或修改其源代码。
 
-
-
-保护 React 免受这个越界插件影响的方法是完全由你自己管理它的 DOM 节点。React 认为该组件渲染了一个没有子节点或属性的单个 `div`。
+保护 React 免受这个越界插件影响的方法是完全由你自己管理它的 DOM 节点。React 认为该组件渲染了一个没有子节点或属性的单个`div`。
 
 ```
  class SuperSelect extends React.Component {
@@ -2001,7 +1957,7 @@ function providesFoo(Component){
 };
 ```
 
-让我们在 `componentDidMount` 中完成设置工作的“脏活”。
+让我们在`componentDidMount`中完成设置工作的“脏活”。
 
 ```
  class SuperSelect extends React.Component {
@@ -2022,7 +1978,7 @@ function providesFoo(Component){
 };
 ```
 
-现在，你在组件渲染的 div 内部有了一个由你管理的 `div`。这意味着你需要负责任地进行清理。
+现在，你在组件渲染的 div 内部有了一个由你管理的`div`。这意味着你需要负责任地进行清理。
 
 ```
  componentWillUnmount(){
@@ -2060,7 +2016,7 @@ function providesFoo(Component){
 
 ## 总结
 
-当仅使用虚拟 DOM 不够时，`ref` 属性允许你访问特定元素，并在 `componentDidMount` 运行后使用 `findDOMNode` 修改其底层 DOM 节点。
+当仅使用虚拟 DOM 不够时，`ref`属性允许你访问特定元素，并在`componentDidMount`运行后使用`findDOMNode`修改其底层 DOM 节点。
 
 这使你能够利用 React 本身不支持的功能，或者集成那些并非为与 React 互操作而设计的第三方库。
 
@@ -2077,27 +2033,34 @@ React 中有两种类型的表单组件：*受控组件* 和 *非受控组件*�
 本章还涵盖：
 
 *   如何在 React 中使用表单事件。
+
 *   使用受控表单组件控制数据输入。
+
 *   React 如何改变某些表单组件的接口。
+
 *   在 React 中命名表单组件的重要性。
+
 *   处理多个受控表单组件。
+
 *   创建自定义的可复用表单组件。
+
 *   在 React 中使用 AutoFocus。
+
 *   构建可用应用程序的技巧。
 
 在上一章中，你学习了如何访问 React 组件的 DOM。React 帮助你从 DOM 中提取状态并将其放入组件中。即使有了这种帮助，你仍然需要为某些复杂的表单组件访问 DOM。
 
-你可以在 [`git.io/vlcpa`](http://git.io/vlcpa) 阅读我们示例应用程序的完整源代码。
+你可以在[`git.io/vlcpa`](http://git.io/vlcpa)阅读我们示例应用程序的完整源代码。
 
 ## 非受控组件
 
 在大多数非简单的表单中，你*不会*想要使用非受控组件。然而，它们对于理解受控组件非常有用。非受控组件对于 React 中大多数其他组件的构建方式来说是一种反模式。
 
-在 HTML 中，表单的工作方式与 React 组件不同。当 HTML `<input/>` 被赋予一个值时，`<input/>` 可以改变该 `<input/>` 的值。这就是名称的由来，因为表单组件的值不受你的 React 组件控制。
+在 HTML 中，表单的工作方式与 React 组件不同。当 HTML `<input/>`被赋予一个值时，`<input/>`可以改变该`<input/>`的值。这就是名称的由来，因为表单组件的值不受你的 React 组件控制。
 
-在 React 中，这种行为类似于设置 `<input/>` 的 `defaultValue`。
+在 React 中，这种行为类似于设置`<input/>`的`defaultValue`。
 
-要在 React 中设置 `<input/>` 的默认值，你可以使用 `defaultValue` 属性。
+要在 React 中设置`<input/>`的默认值，你可以使用`defaultValue`属性。
 
 ```
  //http://jsfiddle.net/pmsy5y2u/
@@ -2113,16 +2076,18 @@ class MyForm extends React.Component {
 };
 ```
 
-上面的例子被称为非受控组件。`value` 不是由父组件设置的，而是允许 `<input/>` 控制自己的值。
+上面的例子被称为非受控组件。`value`不是由父组件设置的，而是允许`<input/>`控制自己的值。
 
-除非你能访问该值，否则非受控组件并不是很有用。为了访问该值，你需要为 `<input/>` 添加一个 `ref`，然后访问 DOM 节点的 `value`。
+除非你能访问该值，否则非受控组件并不是很有用。为了访问该值，你需要为`<input/>`添加一个`ref`，然后访问 DOM 节点的`value`。
 
-正如你在第 8 章中看到的，`ref` 是一个特殊的非 DOM 属性，用于在 `this` 上下文中标识组件。组件中的所有 ref 都会被添加到 `this.refs` 中以便于访问。
+
+
+正如你在第 8 章中看到的，`ref` 是一个特殊的非 DOM 属性，用于在 `this` 上下文中标识组件。组件中的所有 `ref` 都会被添加到 `this.refs` 中以便于访问。
 
 让我们也将 `<input/>` 添加到一个表单中，并在 `submit` 时读取该值。
 
 ```
- //http://jsfiddle.net/opfktus4/
+//http://jsfiddle.net/opfktus4/
 class MyForm extends React.Component {
   submitHandler(event) {
     event.preventDefault();
@@ -2132,7 +2097,7 @@ class MyForm extends React.Component {
   }
   render() {
     return (
-      <form onSubmit={(e) => this.submitHandler(e)}>
+      <form onSubmit={(e) => this.submitHandler(e)}>
         <input 
           ref="helloTo" 
           type="text" 
@@ -2140,7 +2105,7 @@ class MyForm extends React.Component {
         <br />
         <button type="submit">Speak</button>
       </form>
-    );
+    );
   }
 };
 ```
@@ -2149,7 +2114,7 @@ class MyForm extends React.Component {
 
 ## 受控组件
 
-受控组件遵循与其他 React 组件相同的模式。表单组件的状态由你的 React 组件控制，其值存储在你的 React 组件的 state 中。
+受控组件遵循与其他 React 组件相同的模式。表单组件的状态由你的 React 组件控制，其值存储在你的 React 组件的 `state` 中。
 
 如果你希望对表单组件有更多控制，你会想要使用受控组件。
 
@@ -2158,10 +2123,10 @@ class MyForm extends React.Component {
 让我们将上面的例子转换为使用受控组件。
 
 ```
- //http://jsfiddle.net/1a8xr2z6/
+//http://jsfiddle.net/1a8xr2z6/
 class MyForm extends React.Component {
   constructor() {
-    super();
+    super();
     this.state = {
       helloTo: "Hello World!"
     };
@@ -2177,7 +2142,7 @@ class MyForm extends React.Component {
   }
   render() {
     return (
-      <form onSubmit={(e) => this.submitHandler(e)}>
+      <form onSubmit={(e) => this.submitHandler(e)}>
         <input 
           type="text"
           value={this.state.helloTo}
@@ -2185,27 +2150,25 @@ class MyForm extends React.Component {
         <br />
         <button type="submit">Speak</button>
       </form>
-    );
+    );
   }
 };
 ```
 
-这里的主要变化是 `<input/>` 的值现在存储在父组件的 state 中。因此，数据流现在被清晰地定义了。
+这里的主要变化是 `<input/>` 的值现在存储在父组件的 `state` 中。因此，数据流现在被清晰地定义了。
 
-
-
-*   `constructor` 现在设置 `defaultValue`
-*   `<input/>` 的值在渲染时设置
-*   `<input/>` 的 `onChange` 会调用变更处理函数
-*   变更处理函数更新状态
-*   `<input/>` 的值在渲染时更新
+- `constructor` 现在设置 `defaultValue`
+- `<input/>` 的值在渲染时设置
+- `<input/>` 的 `onChange` 会调用变更处理函数
+- 变更处理函数更新状态
+- `<input/>` 的值在渲染时更新
 
 这段代码比非受控版本多得多。然而，这让你能够控制数据流，并在数据输入时修改状态。
 
 示例：你可能希望在输入时将所有字符转换为大写。
 
 ```
- handleChange(value) {
+handleChange(value) {
   this.setState({
     helloTo: value.toUpperCase()
   });
@@ -2220,10 +2183,10 @@ class MyForm extends React.Component {
 
 示例：
 
-*   显示大小受限输入框中剩余的字符数。
-*   显示正在输入的十六进制值的颜色。
-*   显示自动补全选项。
-*   用输入值更新其他 UI 元素。
+- 显示大小受限输入框中剩余的字符数。
+- 显示正在输入的十六进制值的颜色。
+- 显示自动补全选项。
+- 用输入值更新其他 UI 元素。
 
 ## 表单事件
 
@@ -2234,7 +2197,7 @@ React 支持 HTML 产生的所有事件。它们遵循驼峰命名约定，并�
 所有合成事件都允许你通过 `event.target` 访问触发事件的 DOM 节点。
 
 ```
- handleEvent: function (syntheticEvent) {
+handleEvent: function (syntheticEvent) {
   var node = syntheticEvent.target;
   var newValue = node.value;
 }
@@ -2253,7 +2216,7 @@ React 支持 HTML 产生的所有事件。它们遵循驼峰命名约定，并�
 在 React 中，就像 `class` 变成 `className` 一样，`for` 也变成了 `htmlFor`。
 
 ```
- //JSX
+//JSX
 <label htmlFor="name">Name:</label>
 
 //渲染后
@@ -2267,7 +2230,7 @@ React 对 `<textarea/>` 和 `<select/>` 的接口进行了一些更改，以提�
 `<textarea/>` 被修改得更接近 `<input/>`，允许你指定 `value` 和 `defaultValue`。
 
 ```
- //非受控
+//非受控
 <textarea defaultValue="Hello World" />
 
 //受控
@@ -2279,7 +2242,7 @@ React 对 `<textarea/>` 和 `<select/>` 的接口进行了一些更改，以提�
 `<select/>` 现在接受 `value` 和 `defaultValue` 来设置选中的选项。这使得值的操作更加容易。
 
 ```
- //非受控
+//非受控
 <select defaultValue="B">
   <option value="A">First Option</option>
   <option value="B">Second Option</option>
@@ -2297,7 +2260,7 @@ React 对 `<textarea/>` 和 `<select/>` 的接口进行了一些更改，以提�
 React 支持多选。要使用多选，你必须向 `value` 和 `defaultValue` 传递一个数组。
 
 ```
- //非受控
+//非受控
 <select multiple="true" defaultValue={["A","B"]}>
   <option value="A">First Option</option>
   <option value="B">Second Option</option>
@@ -2310,10 +2273,10 @@ React 支持多选。要使用多选，你必须向 `value` 和 `defaultValue` �
 在下面的示例中，`handleChange` 遍历 DOM 以找出当前选中的选项。
 
 ```
- //http://jsfiddle.net/yddy2ep0/
+//http://jsfiddle.net/yddy2ep0/
 class MyForm extends React.Component {
   constructor() {
-    super();
+    super();
     this.state = {
       options: ["B"]
     };
@@ -2337,11 +2300,11 @@ class MyForm extends React.Component {
   },
   render: function () {
     return (
-      <form onSubmit={(e) => this.submitHandler(e)}>
+      <form onSubmit={(e) => this.submitHandler(e)}>
         <select multiple="true"
             value={this.state.options}
             onChange={(e) => this.handleChange(e)}
-        >
+        >
           <option value="A">First Option</option>
           <option value="B">Second Option</option>
           <option value="C">Third Option</option>
@@ -2349,7 +2312,7 @@ class MyForm extends React.Component {
         <br />
         <button type="submit">Speak</button>
       </form>
-    );
+    );
   }
 };
 ```
@@ -2361,7 +2324,7 @@ class MyForm extends React.Component {
 就像在 HTML 中一样，类型为 `checkbox` 或 `radio` 的 `<input/>` 与类型为 `text` 的 `<input/>` 行为截然不同。通常，复选框或单选按钮的值不会改变。只有 `checked` 状态会改变。要控制复选框或单选按钮输入，你需要控制 `checked` 属性。你也可以在非受控的复选框或单选按钮输入中使用 `defaultChecked`。
 
 ```
- // 非受控
+// 非受控
 class MyForm extends React.Component {
   submitHandler(event) {
     event.preventDefault();
@@ -2369,7 +2332,7 @@ class MyForm extends React.Component {
   }
   render() {
     return (
-      <form onSubmit={(e) => this.submitHandler(e)}>
+      <form onSubmit={(e) => this.submitHandler(e)}>
         <input 
           ref="mycheckbox"
           type="checkbox"
@@ -2378,14 +2341,14 @@ class MyForm extends React.Component {
         <br />
         <button type="submit">Speak</button>
       </form>
-    );
+    );
   }
 };
 
 // 受控
 var MyForm = React.createClass({
   constructor() {
-    super();
+    super();
     this.state = {
       checked: true
     };
@@ -2407,11 +2370,11 @@ var MyForm = React.createClass({
           value="A"
           checked={this.state.checked}
           onChange={this.handleChange} 
-        />
+        />
         <br />
         <button type="submit">Speak</button>
       </form>
-    );
+    );
   }
 };
 ```
@@ -2420,25 +2383,21 @@ var MyForm = React.createClass({
 
 ### 表单元素上的名称
 
-在 React 中，当受控表单元素的值存储在状态中并且表单提交事件被拦截时，名称在表单元素上的重要性较低。访问表单值不需要名称。对于非受控表单元素，你可以使用 refs 直接访问表单元素。
+在 React 中，当受控表单元素的值存储在状态中并且表单提交事件被拦截时，名称在表单元素上的重要性较低。访问表单值不需要名称。对于非受控表单元素，你可以使用 `refs` 直接访问表单元素。
 
 然而，名称是表单组件的一个关键方面。
 
-*   名称允许第三方表单序列化器在 React 中仍然正常工作。
-*   如果表单要以原生方式提交，也需要名称。
-*   客户端浏览器使用名称来自动填充常见信息，例如用户的地址。
-*   名称对于非受控的单选按钮输入至关重要，因为通过名称对它们进行分组，可以确保表单中同一名称的单选按钮一次只能选中一个。使用受控的单选按钮输入，可以在没有名称的情况下复制相同的行为。
-
-
-
-
+- 名称允许第三方表单序列化器在 React 中仍然正常工作。
+- 如果表单要以原生方式提交，也需要名称。
+- 客户端浏览器使用名称来自动填充常见信息，例如用户的地址。
+- 名称对于非受控的单选按钮输入至关重要，因为通过名称对它们进行分组，可以确保表单中同一名称的单选按钮一次只能选中一个。使用受控的单选按钮输入，可以在没有名称的情况下复制相同的行为。
 
 以下示例通过将状态存储在 `MyForm` 组件中，复现了非受控单选按钮组的功能。你会注意到 `name` 并未被使用。
 
 ```
- class MyForm extends React.Component {
+class MyForm extends React.Component {
   constructor(){
-    super();
+    super();
     this.state = {
       radio: "B"
     };
@@ -2454,7 +2413,7 @@ var MyForm = React.createClass({
   }
   render() {
     return (
-      <form onSubmit={(e) => this.submitHandler(e)}>
+      <form onSubmit={(e) => this.submitHandler(e)}>
         <input
           type="radio"
           value="A"
@@ -2475,7 +2434,7 @@ var MyForm = React.createClass({
         <br />
         <button type="submit">Speak</button>
       </form>
-    );
+    );
   }
 };
 ```
@@ -2486,111 +2445,7 @@ var MyForm = React.createClass({
 
 一个示例：箭头函数。
 
-```
- class MyForm extends React.Component {
-  constructor() {
-    super();
-    this.state = {
-      given_name: "",
-      family_name: ""
-    };
-  }
-  handleChange(name, event) {
-    var newState = {};
-    newState[name] = event.target.value;
-    this.setState(newState);
 
-    // or the es6 version
-    this.setState({
-      [name]: event.target.value,
-    });
-  }
-  submitHandler(event) {
-    event.preventDefault();
-    var words = [
-      "Hi",
-      this.state.given_name,
-      this.state.family_name
-    ];
-    alert(words.join(" "));
-  }
-  render() {
-    return (
-      <form onSubmit={this.submitHandler}>
-        <label htmlFor="given_name">Given Name:</label>
-        <br />
-        <input
-          type="text"
-          name="given_name"
-          value={this.state.given_name}
-          onChange={(e) => this.handleChange('given_name', e)}/>
-        <br />
-        <label htmlFor="family_name">Family Name:</label>
-        <br />
-        <input
-          type="text"
-          name="family_name"
-          value={this.state.family_name}
-          onChange={(e) => this.handleChange('family_name', e)}/>
-        <br />
-        <button type="submit">Speak</button>
-      </form>
-    );
-  }
-};
-```
-
-另一个示例：使用 `DOMNode` 的 `name` 来识别要更改的状态。
-
-```
- //http://jsfiddle.net/q3g0sk84/
-class MyForm extends React.Component {
-  constructor() {
-    super();
-    this.state = {
-      givenName: "",
-      familyName: "",
-    };
-  }
-  handleChange(event) {
-    this.setState({
-      [event.target.name]: event.target.value
-    });
-  }
-  submitHandler(event) {
-    event.preventDefault();
-    var words = [
-      "Hi",
-      this.state.givenName,
-      this.state.familyName,
-    ];
-    alert(words.join(" "));
-  }
-  render() {
-    return (
-      <form onSubmit={this.submitHandler}>
-        <label htmlFor="givenName">Given Name:</label>
-        <br />
-        <input
-          type="text"
-          name="givenName"
-          value={this.state.givenName}
-          onChange={(e) => this.handleChange(e)}/>
-        <br />
-        <label htmlFor="familyName">Family Name:</label>
-        <br />
-        <input
-          type="text"
-          name="familyName"
-          value={this.state.familyName}
-          onChange={this.handleChange}/>
-        <br />
-        <button type="submit">Speak</button>
-      </form>
-    );
-  }
-};
-```
 
 ## 自定义表单组件
 
@@ -2598,16 +2453,16 @@ class MyForm extends React.Component {
 
 在编写自定义表单组件时，应尽量创建与其他表单组件相同的接口。这将提高代码的可预测性，使你在无需查看其实现的情况下就能更容易地理解组件的工作方式。
 
-让我们创建一个自定义单选按钮组件，使其具有与 React 的 select 组件相同的接口。我们不会实现多选功能，因为单选按钮组件不支持多选。
+让我们创建一个自定义单选按钮组件，使其具有与 React 的 `select` 组件相同的接口。我们不会实现多选功能，因为单选按钮组件不支持多选。
 
 ```
- class Radio extends React.Component {
+class Radio extends React.Component {
   static propTypes = {
     onChange: React.PropTypes.func
   };
 
   constructor(){
-    super();
+    super();
     this.state = {
       value: this.props.defaultValue
     };
@@ -2624,9 +2479,9 @@ class MyForm extends React.Component {
     var value = this.props.value || this.state.value;
 
     var children = React.Children
-      .map(this.props.children, (child, i) => {
+      .map(this.props.children, (child, i) => {
       return (
-        <label key={i}>
+        <label key={i}>
           <input
             type="radio"
             name={this.props.name}
@@ -2636,7 +2491,7 @@ class MyForm extends React.Component {
           {child.props.children}
           <br/>
         </label>
-      );
+      );
     });
 
     return this.transferPropsTo(<span>{children}</span>);
@@ -2653,7 +2508,7 @@ class MyForm extends React.Component {
 然后设置 `value`、`name` 和 `checked` 状态。附加你的 `onChange` 处理器，然后渲染新的子元素。
 
 ```
- //Uncontrolled
+//Uncontrolled
 //http://jsfiddle.net/moyfLkfv/
 var MyForm = React.createClass({
   submitHandler: function (event) {
@@ -2676,7 +2531,7 @@ var MyForm = React.createClass({
 当将值存储在组件的状态中时，你无需访问 `DOMNode` 就能知道当前值。你可以直接访问状态。
 
 ```
- //Controlled
+//Controlled
 //http://jsfiddle.net/cwabLksg/
 var MyForm = React.createClass({
   getInitialState: function () {
@@ -2706,22 +2561,18 @@ var MyForm = React.createClass({
 });
 ```
 
-作为一个受控组件，它的操作方式与 select 框完全相同。传递给 `onChange` 的事件是来自活动 `<input/>` 的事件，因此你可以用它来读取当前值。
+作为一个受控组件，它的操作方式与 `select` 框完全相同。传递给 `onChange` 的事件是来自活动 `<input/>` 的事件，因此你可以用它来读取当前值。
 
 作为练习，你可以尝试实现 `valueLink` 属性的支持，以便将此组件与 `React.addons.LinkedStateMixin` 一起使用。
 
 ## 焦点
-
-
-
-
 
 利用对表单组件焦点的控制，是引导用户了解表单中下一步逻辑操作的绝佳方式。这也有助于减少用户交互，提升可用性。其优点将在下一节中进一步讨论。
 
 由于 React 表单并非总是在浏览器加载时渲染，因此表单输入的自动聚焦需要以略有不同的方式运作。React 实现了 `autoFocus`，这样当组件首次挂载时，如果其他表单输入没有获得焦点，React 就会将焦点置于该输入上。这正是你期望的带有 `autoFocus` 的简单 HTML 表单的工作方式。
 
 ```
- //jsx
+//jsx
 <input type="text" name="given_name" autoFocus="true" />
 ```
 
@@ -2797,16 +2648,15 @@ HTML5 有一个可访问的富互联网应用程序（ARIA）规范，它提供�
 
 与**快速响应**一样，用户感知很重要。用户面对包含许多输入字段的大型表单会感到畏惧，因此他们的思维难以应对。将表单分解成更小、更易于管理的块，会给人一种用户输入更少的印象。这反过来使用户能够更专注于他们的数据输入。
 
-
-
-
 `Autofill` 是减少数据输入的另一种绝佳方式。利用用户的浏览器自动填充数据，可以避免用户重新输入常见信息，例如地址或付款详情。这可以通过在输入字段中使用标准名称来实现。
 
-`Autocomplete` 可以在用户输入信息时提供引导，这与持续反馈的理念相契合。例如，在搜索电影时，自动补全功能有助于缓解因电影名称拼写错误而导致的问题。
+
+
+`Autocomplete`可以在用户输入信息时提供引导，这与持续反馈的理念相契合。例如，在搜索电影时，自动补全功能有助于缓解因电影名称拼写错误而导致的问题。
 
 另一种减少输入的有效方法是根据先前输入的数据推导信息。例如，当用户输入信用卡详细信息时，你可以查看前四位数字，判断卡片类型，然后为用户自动选择卡片类型。这既减少了输入，又向用户提供了验证反馈，表明他们正在正确输入卡号。
 
-`Autofocus` 是一个虽小但非常有效的方法，可以提升表单的可用性。自动聚焦有助于引导用户找到数据输入的起点，从而避免他们自行摸索。这个小工具确实能对用户开始输入数据的速度产生巨大影响。
+`Autofocus`是一个虽小但非常有效的方法，可以提升表单的可用性。自动聚焦有助于引导用户找到数据输入的起点，从而避免他们自行摸索。这个小工具确实能对用户开始输入数据的速度产生巨大影响。
 
 ## 总结
 
@@ -2828,7 +2678,7 @@ Interval Rendering 提供了更大的灵活性和控制力，但会牺牲性能�
 
 ## CSS Transition Groups
 
-在本例中，我们将为示例应用的评论编辑面板添加进出动画。`editingPane` 要么是一个 React 元素，要么是 null。
+在本例中，我们将为示例应用的评论编辑面板添加进出动画。`editingPane`要么是一个 React 元素，要么是 `null`。
 
 ```
 <ReactCSSTransitionGroup 
@@ -2910,10 +2760,6 @@ Interval Rendering 提供了更大的灵活性和控制力，但会牺牲性能�
 由于这种方法涉及多次重新渲染，通常最好与 `requestAnimationFrame` 结合使用，以避免不必要的渲染。然而，在 `requestAnimationFrame` 不可用或不理想的环境中，退而使用不太可预测的 `setTimeout` 可能是唯一的选择。
 
 ### 使用 requestAnimationFrame 进行间隔渲染
-
-
-
-
 
 假设你想使用间隔渲染在屏幕上移动一个 `div`。你可以通过给它设置 `position: absolute`，然后随时间更新它的 `left` 或 `top` 样式属性来实现。在 `requestAnimationFrame` 上执行此操作，并根据经过的时间量来决定变化幅度，应该能实现平滑的动画。
 
@@ -3062,24 +2908,24 @@ React 提供了组件生命周期方法 `shouldComponentUpdate`，它让你能�
 
 
 
+对于始终根据相同 props 和 state 渲染的纯组件，你可以添加`react-addons-pure-render-mixin`。由于我们使用的是 ES6 类，我们需要一个名为`react-mixin`的库（[`github.com/brigand/react-mixin`](https://github.com/brigand/react-mixin)），它允许你使用 mixin。这是少数应该使用 mixin 而非高阶组件的场景之一。
 
+你可以在[`git.io/vlcpa`](http://git.io/vlcpa)阅读我们示例应用（一个 Reddit 克隆）的完整源代码。
 
-对于始终根据相同 props 和 state 渲染的纯组件，你可以添加 `react-addons-pure-render-mixin`。由于我们使用的是 ES6 类，我们需要一个名为 `react-mixin` 的库（[`github.com/brigand/react-mixin`](https://github.com/brigand/react-mixin)），它允许你使用 mixin。这是少数应该使用 mixin 而非高阶组件的场景之一。
+该 mixin 会覆盖`shouldComponentUpdate`，将新的 props 和 state 与旧的进行比较，如果它们相等则返回`false`，就像上面的例子一样。
 
-你可以在 [`git.io/vlcpa`](http://git.io/vlcpa) 阅读我们示例应用（一个 Reddit 克隆）的完整源代码。
+有几个组件非常简单，比如`EditEssayQuestion`，你可以将`React.addons.PureRenderMixin`与它一起使用：
 
-该 mixin 会覆盖 `shouldComponentUpdate`，将新的 props 和 state 与旧的进行比较，如果它们相等则返回 false，就像上面的例子一样。
-
-有几个组件非常简单，比如 `EditEssayQuestion`，你可以将 `React.addons.PureRenderMixin` 与它一起使用：
-
-```
+```js
 import reactMixin from 'react-mixin';
 import PureRenderMixin from 'react-addons-pure-render-mixin';
+
 class Foo extends React.Component {
   render(){
     ...
   }
 }
+
 reactMixin.onClass(Foo, PureRenderMixin);
 ```
 
@@ -3087,28 +2933,29 @@ reactMixin.onClass(Foo, PureRenderMixin);
 
 ## Key
 
-你通常会在列表中发现 key prop 的使用。它的目的是通过比组件类更多的信息来向 React 标识一个组件。例如，如果你有一个带有 `key="foo"` 的 div，后来它变成了 `"bar"`，React 将跳过 diff 并完全丢弃子元素，从头开始渲染。
+你通常会在列表中发现`key` prop 的使用。它的目的是通过比组件类更多的信息来向 React 标识一个组件。例如，如果你有一个带有`key="foo"`的 div，后来它变成了`"bar"`，React 将跳过 diff 并完全丢弃子元素，从头开始渲染。
 
-这在渲染大型子树以避免 diff 时非常有用，因为你知道 diff 是浪费时间。除了告诉 React 何时丢弃节点外，在许多情况下，它还可以在元素顺序发生变化时使用。例如，考虑以下基于排序函数显示项目的渲染。
+这在渲染大型子树以避免 diff 时非常有用，因为你知道 diff 是浪费时间。除了告诉 React 何时丢弃节点外，在许多情况下，它还可以在元素顺序发生变化时使用。例如，考虑以下基于排序函数显示项目的渲染：
 
-```
+```js
 var items = sortBy(this.state.sortingAlgorithm, this.props.items);
+
 return items.map(function (item) {
   return <img src={item.src} />;
 });
 ```
 
-如果顺序发生变化，React 会对这些进行 diff，并确定最有效的操作是更改某些 `img` 元素上的 `src` 属性。这非常低效，并且会导致浏览器查询其缓存，可能引发新的网络请求。
+如果顺序发生变化，React 会对这些进行 diff，并确定最有效的操作是更改某些`img`元素上的`src`属性。这非常低效，并且会导致浏览器查询其缓存，可能引发新的网络请求。
 
 为了解决这个问题，你可以简单地使用每个项目唯一的字符串（或数字）作为 key。
 
-```
+```jsx
 return <img src={item.src} key={item.id} />;
 ```
 
-现在 React 会查看这个，而不是更改 `src` 属性，它会意识到要执行的最小 `insertBefore` 操作，这是移动 DOM 节点最有效的方式。
+现在 React 会查看这个，而不是更改`src`属性，它会意识到要执行的最小`insertBefore`操作，这是移动 DOM 节点最有效的方式。
 
-除了顺序变化外，不在末尾的插入也适用。如果没有正确的 key 属性，在数组前面添加一个项目会导致所有后续 `<img>` 标签的 `src` 属性发生变化。
+除了顺序变化外，不在末尾的插入也适用。如果没有正确的 key 属性，在数组前面添加一个项目会导致所有后续`<img>`标签的`src`属性发生变化。
 
 同样值得注意的是，虽然你似乎将 key 作为 prop 传递，但它无法从组件内部以任何方式访问。
 
@@ -3116,9 +2963,8 @@ return <img src={item.src} key={item.id} />;
 
 在本章中，你学习了如何：
 
-1. 修改 `shouldComponentUpdate` 以返回 true/false 来提高性能。
-
-2. 使用 `key` 帮助 React 了解子组件列表的最小变化。
+1. 修改`shouldComponentUpdate`以返回`true`/`false`来提高性能。
+2. 使用`key`帮助 React 了解子组件列表的最小变化。
 
 到目前为止，我们专注于在浏览器中使用 React，接下来你将学习通用（也称为同构）应用：在服务器上使用 JavaScript 和 React。
 
@@ -3128,33 +2974,28 @@ return <img src={item.src} key={item.id} />;
 
 React 中的虚拟 DOM 是 React 能够用于服务器端渲染的核心。每个 React 组件首先渲染到虚拟 DOM，然后 React 获取虚拟 DOM 并用任何更改更新真实 DOM。虚拟 DOM 作为 DOM 的内存表示，使得 React 能够在非浏览器环境（如 Node.js）中工作。React 不是更新真实 DOM，而是从虚拟 DOM 生成一个字符串。这允许你在客户端和服务器上使用相同的 React 组件。
 
-React 提供了两个可用于在服务器端渲染组件的函数：`React.renderToString` 和 `React.renderToStaticMarkup`。
+React 提供了两个可用于在服务器端渲染组件的函数：`React.renderToString`和`React.renderToStaticMarkup`。
 
 在服务器端渲染组件需要在设计组件时具有前瞻性。你需要考虑：
 
-* 使用哪个渲染函数最好。
-
-* 如何支持组件的异步状态。
-
-* 如何将应用的初始状态传递给客户端。
-
-* 服务器端有哪些生命周期函数可用。
-
-* 如何支持应用的同构路由。
-
-* 你对单例、实例和上下文的使用。
+- 使用哪个渲染函数最好。
+- 如何支持组件的异步状态。
+- 如何将应用的初始状态传递给客户端。
+- 服务器端有哪些生命周期函数可用。
+- 如何支持应用的同构路由。
+- 你对单例、实例和上下文的使用。
 
 ## 渲染函数
 
-在服务器端渲染 React 组件时，你不能使用标准的 `React.render` 方法，因为在服务器端没有 DOM。React 通过提供两个支持标准 React 组件生命周期方法子集的渲染函数来实现服务器端渲染。
+在服务器端渲染 React 组件时，你不能使用标准的`React.render`方法，因为在服务器端没有 DOM。React 通过提供两个支持标准 React 组件生命周期方法子集的渲染函数来实现服务器端渲染。
 
 ### React.renderToString
 
-可以在服务器端使用的两个渲染函数中的第一个是 `React.renderToString`。这是你最常使用的函数。
+可以在服务器端使用的两个渲染函数中的第一个是`React.renderToString`。这是你最常使用的函数。
 
-与 `React.render` 不同，这个函数不接受渲染位置的参数，而是返回一个字符串。这是一个同步（阻塞）函数，速度非常快。
+与`React.render`不同，这个函数不接受渲染位置的参数，而是返回一个字符串。这是一个同步（阻塞）函数，速度非常快。
 
-```
+```js
 var MyComponent = React.createClass({
   render: function () {
     return <div>Hello World!</div>;
@@ -3170,19 +3011,19 @@ var world = React.renderToString(<MyComponent/>);
 >Hello World!</div>
 ```
 
-你会注意到 React 在 `<div>` 上添加了两个 data 属性。
+你会注意到 React 在`<div>`上添加了两个 data 属性。
 
-`data-reactid` 被 React 用于在浏览器环境中标识 DOM 节点。这就是它知道当 state 和 props 发生变化时要更新哪个 DOM 节点的方式。
+`data-reactid`被 React 用于在浏览器环境中标识 DOM 节点。这就是它知道当 state 和 props 发生变化时要更新哪个 DOM 节点的方式。
 
-`data-react-checksum` 仅在服务器端添加。顾名思义，它是所创建 DOM 的校验和。这允许 React 在客户端渲染相同组件时重用来自服务器的 DOM。这仅添加到根元素上。
+`data-react-checksum`仅在服务器端添加。顾名思义，它是所创建 DOM 的校验和。这允许 React 在客户端渲染相同组件时重用来自服务器的 DOM。这仅添加到根元素上。
 
 ### React.renderToStaticMarkup
 
-`React.renderToStaticMarkup` 是可以在服务器端使用的第二个渲染函数。
+`React.renderToStaticMarkup`是可以在服务器端使用的第二个渲染函数。
 
-它与 `React.renderToString` 相同，只是不包含 React 的 data 属性。
+它与`React.renderToString`相同，只是不包含 React 的 data 属性。
 
-```
+```js
 var MyComponent = React.createClass({
   render: function () {
     return <div>Hello World!</div>;
@@ -3199,33 +3040,27 @@ var world = React.renderToStaticMarkup(<MyComponent/>);
 
 每个渲染函数都有其用途，因此你需要根据需求来决定使用哪个渲染函数。
 
-仅当你*不*打算在客户端渲染相同的 React 组件时，才使用 `React.renderToStaticMarkup`。
+仅当你*不*打算在客户端渲染相同的 React 组件时，才使用`React.renderToStaticMarkup`。
 
 以下是一些示例：
 
-* 生成 HTML 邮件。
+- 生成 HTML 邮件。
+- 通过 HTML 转 PDF 生成 PDF。
+- 测试组件。
 
-* 通过 HTML 转 PDF 生成 PDF。
+在大多数情况下，你会希望使用`React.renderToString`。这将允许 React 使用`data-react-checksum`来使客户端上相同 React 组件的初始化更快。由于 React 可以重用服务器提供的 DOM，它可以跳过生成 DOM 节点并将其附加到文档的昂贵过程。对于复杂的网站，这可以显著减少加载时间，使用户能够更快地与你的网站交互。
 
-* 测试组件。
-
-在大多数情况下，你会希望使用 `React.renderToString`。这将允许 React 使用 `data-react-checksum` 来使客户端上相同 React 组件的初始化更快。由于 React 可以重用服务器提供的 DOM，它可以跳过生成 DOM 节点并将其附加到文档的昂贵过程。对于复杂的网站，这可以显著减少加载时间，使用户能够更快地与你的网站交互。
-
-你的 React 组件在服务器和客户端上渲染得*完全*相同非常重要。如果 `data-react-checksum` 不匹配，React 将销毁服务器提供的 DOM，生成新的 DOM 节点并将其附加到文档中。在这种情况下，你将失去服务器端渲染的大部分性能优势。
+你的 React 组件在服务器和客户端上渲染得*完全*相同非常重要。如果`data-react-checksum`不匹配，React 将销毁服务器提供的 DOM，生成新的 DOM 节点并将其附加到文档中。在这种情况下，你将失去服务器端渲染的大部分性能优势。
 
 ## 服务器端组件生命周期
 
-
-
-
-
-当渲染为字符串时，只有*在*渲染之前的生命周期方法会被调用。关键的是，`componentDidMount` 和 `componentWillUnmount` 在渲染过程中不会被调用，而 `componentWillMount` 在两端都会被调用。
+当渲染为字符串时，只有*在*渲染之前的生命周期方法会被调用。关键的是，`componentDidMount`和`componentWillUnmount`在渲染过程中不会被调用，而`componentWillMount`在两端都会被调用。
 
 在创建将在服务器和客户端上渲染的组件时，你需要牢记这一点。尤其是在创建事件监听器时，因为没有组件生命周期方法可以告知你 React 组件何时完成渲染。
 
-在 `componentWillMount` 中启动的任何事件监听器或定时器都可能导致服务器上的内存泄漏。
+在`componentWillMount`中启动的任何事件监听器或定时器都可能导致服务器上的内存泄漏。
 
-最佳实践是仅在 `componentDidMount` 中创建事件监听器和定时器，并在 `componentWillMount` 中停止它们。
+最佳实践是仅在`componentDidMount`中创建事件监听器和定时器，并在`componentWillMount`中停止它们。
 
 ### 设计组件
 
@@ -3235,8 +3070,8 @@ var world = React.renderToStaticMarkup(<MyComponent/>);
 
 假设你想要一个打印随机数的组件。这会带来问题，因为结果几乎总是不同的。如果这个组件先在服务器上渲染，然后在客户端上渲染，校验和将会失败。
 
-```
- var MyComponent = React.createClass({
+```js
+var MyComponent = React.createClass({
   render: function () {
     return <div>{Math.random()}</div>;
   }
@@ -3254,8 +3089,8 @@ var result2 = React.renderToStaticMarkup(<MyComponent/>);
 
 如果你修改组件，让它通过 props 接收随机数，那么你就可以将 props 传递给客户端用于渲染。
 
-```
- var MyComponent = React.createClass({
+```jsx
+var MyComponent = React.createClass({
   render: function () {
     return <div>{this.props.number}</div>;
   }
@@ -3274,8 +3109,8 @@ React.render(<MyComponent number={num}/>, document.body);
 
 最简单的方法之一是通过 JavaScript 对象将初始 props 传递给客户端。
 
-```
- <!DOCTYPE html>
+```html
+<!DOCTYPE html>
 <html>
 <head>
 <title>示例</title>
@@ -3317,12 +3152,12 @@ React.render(<MyComponent number={num}/>, document.body);
 
 你希望组件在客户端监听变化并重新渲染。
 
-**问题：** 你不能使用任何组件生命周期方法来获取异步数据，因为 `React.renderToString` 是同步的。
+**问题：**你不能使用任何组件生命周期方法来获取异步数据，因为`React.renderToString`是同步的。
 
-**解决方案：** 使用静态函数获取异步数据，然后将其传递给组件进行渲染。将 `initialState` 作为 props 传递给客户端。使用组件生命周期方法监听变化并更新状态，同时使用相同的 `statics` 函数。
+**解决方案：**使用静态函数获取异步数据，然后将其传递给组件进行渲染。将`initialState`作为 props 传递给客户端。使用组件生命周期方法监听变化并更新状态，同时使用相同的`statics`函数。
 
-```
- var Username = React.createClass({
+```js
+var Username = React.createClass({
   statics: {
     getAsyncState: function (props, setState) {
       User.findById(props.userId)
@@ -3334,48 +3169,55 @@ React.render(<MyComponent number={num}/>, document.body);
         });
     }
   },
+
   //客户端和服务器端
   componentWillMount: function () {
     if (this.props.initialState) {
       this.setState(this.props.initialState);
     }
   },
+
   //仅客户端
   componentDidMount: function () {
     //如果 props 中没有 initialState，则获取异步状态
     if (!this.props.initialState) {
       this.updateAsyncState();
     }
+
     //监听变化
     User.on('change', this.updateAsyncState);
   },
+
   //仅客户端
   componentWillUnmount: function () {
     //停止监听变化
     User.off('change', this.updateAsyncState);
   },
+
   updateAsyncState: function () {
     //从实例内部访问静态函数
     this.constructor.getAsyncState(this.props, this.setState);
   },
+
   render: function () {
     if (this.state.error) {
       return <div>{this.state.error.message}</div>;
     }
+
     if (!this.state.user) {
       return <div>加载中...</div>;
     }
+
     return <div>{this.state.user.username}</div>;
   }
 });
 
 //在服务器端渲染
-
 var props = {
   userId: 123 //也可以从路由派生
 };
 
-Username.getAsyncState(props, function(initialState){
+Username.getAsyncState(props, function (initialState) {
   props[initialState] = initialState;
   var result = React.renderToString(Username(props));
 
@@ -3383,23 +3225,21 @@ Username.getAsyncState(props, function(initialState){
 });
 ```
 
-使用上述解决方案，仅在服务器端需要预取异步数据。在客户端，初始渲染只需查找从服务器传递的 `initialState`。后续客户端路由变化（例如 HTML5 pushState 或片段变化）应忽略来自服务器的任何 `initialState`。你还需要在数据获取期间显示加载消息。
+使用上述解决方案，仅在服务器端需要预取异步数据。在客户端，初始渲染只需查找从服务器传递的`initialState`。后续客户端路由变化（例如 HTML5 pushState 或片段变化）应忽略来自服务器的任何`initialState`。你还需要在数据获取期间显示加载消息。
 
 ### 同构路由
 
 路由是任何非平凡应用程序的重要组成部分。要在服务器端使用路由器渲染 React 应用程序，你需要确保路由器支持在没有 DOM 的情况下进行渲染。
 
-异步数据的获取是路由器和其路由控制器的职责。假设一个深层嵌套的组件需要一些异步数据。如果这些数据是 SEO 所需的，那么获取数据的责任应上移至路由控制器，并将数据向下传递给深层嵌套的组件。如果不需要用于 SEO，那么只需在客户端的 `componentDidMount` 中获取数据即可。这类似于经典的 AJAX 加载数据。
+异步数据的获取是路由器和其路由控制器的职责。假设一个深层嵌套的组件需要一些异步数据。如果这些数据是 SEO 所需的，那么获取数据的责任应上移至路由控制器，并将数据向下传递给深层嵌套的组件。如果不需要用于 SEO，那么只需在客户端的`componentDidMount`中获取数据即可。这类似于经典的 AJAX 加载数据。
+
+
 
 在寻找 React 的同构路由解决方案时，请确保它支持异步状态，或者可以轻松修改以支持异步状态。理想情况下，你还希望路由器处理将 `initialState` 传递给客户端。
 
-### 单例、实例和上下文
+## 单例、实例和上下文
 
 在浏览器中，你的应用程序被封装在一个隔离的“气泡”中。应用程序的每个实例不能与其他实例混合状态，因为每个实例通常位于不同的计算机上，或者在同一台计算机上被沙箱隔离。这使得你可以轻松地在应用程序架构中使用单例。
-
-
-
-
 
 当你开始将代码迁移到服务器上运行时，需要格外小心，因为同一作用域内可能同时运行着应用的多个实例。这可能导致两个应用实例改变单例的状态，从而引发意外行为。
 
@@ -3513,8 +3353,11 @@ ReactDOM.render(<h1>Hello World</h1>, root);
 现在你的项目根目录下将包含以下文件和文件夹：
 
 *   `index.html`
+
 *   `index.js`
+
 *   `node_modules/`
+
 *   `package.json`
 
 如果你现在尝试加载 `index.html`，它将无法渲染 JavaScript，因为你还没有构建最终的包。运行 `npm run build` 并重新加载页面，即可看到你的 hello world 示例。
@@ -3552,15 +3395,16 @@ npm run-script build
 `Webpack` 还可以：
 
 *   将 CSS、图片和其他资源打包到同一个包中。
+
 *   在打包前预处理文件（less、coffee、jsx 等）。
+
 *   根据入口位置将你的包拆分成多个文件。
+
 *   支持开发环境的功能标志。
+
 *   执行“热”模块替换。
+
 *   支持异步加载。
-
-
-
-
 
 因此，`Webpack` 可以完成 `Browserify` 的工作，同时结合其他构建工具（如 `grunt` 或 `gulp`）的功能。
 
@@ -3728,39 +3572,38 @@ webpack --watch
 
 ### 测试的类型
 
-
-
-
 现在你已经确信自动化测试的重要性，让我们来了解一下测试的类型：单元测试。还有许多其他类型的自动化测试（集成测试、功能测试、性能测试、安全测试和视觉测试^(3)），但这些不在本书的讨论范围内。
 
-*   **单元测试**：一种测试，用于验证应用程序中最小的功能单元。通常，它会直接调用一个函数，传入特定的输入，并验证输出或副作用。
+
+
+**单元测试**：一种测试，用于验证应用程序中最小的功能单元。通常，它会直接调用一个函数，传入特定的输入，并验证输出或副作用。
 
 这听起来很多，但当你深入其中时，你会发现它不仅易于管理，而且看到测试第一次通过时非常有趣。
 
-### 工具
+## 工具
 
-幸运的是，JavaScript 社区拥有一个健康的测试工具生态系统，因此我们可以利用它们快速搭建测试套件。本书的测试使用了 `Jest` 和 `Enzyme`。`Jest` 使用 `Jasmine` 运行测试，所以如果你熟悉 `Jasmine`，你可能会觉得这些测试很熟悉。下面列出了一些流行的替代方案。
+幸运的是，JavaScript 社区拥有一个健康的测试工具生态系统，因此我们可以利用它们快速搭建测试套件。本书的测试使用了`Jest`和`Enzyme`。`Jest`使用`Jasmine`运行测试，所以如果你熟悉`Jasmine`，你可能会觉得这些测试很熟悉。下面列出了一些流行的替代方案。
 
-*   `Karma`
-*   `Mocha`
-*   `Chai`
-*   `Sinon`
-*   `Casper.js`
-*   `Qunit`
+- `Karma`
+- `Mocha`
+- `Chai`
+- `Sinon`
+- `Casper.js`
+- `Qunit`
 
 那么，让我们开始编码吧！
 
 ## 使用 Jest 和 Enzyme 对 React 组件进行单元测试
 
-在编写 React 组件时，唯一的要求是定义一个 `render` 函数。让我们开始为一个新的 `<Comment />` 组件编写测试，该测试将验证组件是否渲染出预期的输出。
+在编写 React 组件时，唯一的要求是定义一个`render`函数。让我们开始为一个新的`<Comment />`组件编写测试，该测试将验证组件是否渲染出预期的输出。
 
-`Jest` 会自动扫描名为 `__tests__` 的目录中的测试文件。按照惯例，这些测试目录放在被测试文件所在的文件夹中。
+`Jest`会自动扫描名为`__tests__`的目录中的测试文件。按照惯例，这些测试目录放在被测试文件所在的文件夹中。
 
 ### 对组件内容进行断言
 
-遵循这一惯例，在示例项目的 `/src/molecules/__tests__/Comment.test.js` 中为你的测试创建一个新文件。
+遵循这一惯例，在示例项目的`/src/molecules/__tests__/Comment.test.js`中为你的测试创建一个新文件。
 
-我们首先导入 `React`、从 `enzyme` 中导入几个辅助函数（随着测试的进行我们会逐步了解它们），以及 `Comment` 模块本身。
+我们首先导入`React`、从`enzyme`中导入几个辅助函数（随着测试的进行我们会逐步了解它们），以及`Comment`模块本身。
 
 ```javascript
 import React from 'react';
@@ -3770,11 +3613,11 @@ import Comment from '../Comment';
 jest.unmock('../Comment');
 ```
 
-导入 `Comment` 后，我们告诉 `Jest` 取消模拟它，因为我们想要测试它。这是 `Jest` 独特之处的一部分。`Jest` 会自动模拟你的代码所依赖的所有 JavaScript 模块。这使得测试单个模块或模块集合的行为变得简单，而无需手动创建模拟实现。
+导入`Comment`后，我们告诉`Jest`取消模拟它，因为我们想要测试它。这是`Jest`独特之处的一部分。`Jest`会自动模拟你的代码所依赖的所有 JavaScript 模块。这使得测试单个模块或模块集合的行为变得简单，而无需手动创建模拟实现。
 
 ## 配置 Jest
 
-`Jest` 在项目的 `package.json` 文件中进行配置。它被配置为不模拟许多支持应用程序的重要库，以便这些库在测试中仍能按预期工作，并预处理你的源代码以支持新的 ES6 语法。
+`Jest`在项目的`package.json`文件中进行配置。它被配置为不模拟许多支持应用程序的重要库，以便这些库在测试中仍能按预期工作，并预处理你的源代码以支持新的 ES6 语法。
 
 现在，让我们添加实际的测试。
 
@@ -3787,7 +3630,7 @@ describe('molecules/Comment', () => {
 });
 ```
 
-这个测试断言渲染 `Comment` 实际上返回了一个值。让我们看看它是否有效。保存文件，并在项目根目录的终端中输入以下命令来运行测试：
+这个测试断言渲染`Comment`实际上返回了一个值。让我们看看它是否有效。保存文件，并在项目根目录的终端中输入以下命令来运行测试：
 
 ```bash
 npm test
@@ -3808,13 +3651,13 @@ Error: Cannot find module '../Comment' from 'Comment.test.js'
 1 test failed, 7 tests passed (8 total in 3 test suites, run time 2.427s)
 ```
 
-测试失败了，因为我们还没有实现 `Comment` 组件。在继续修复之前，请在终端中运行以下命令，以 `watch` 模式启动 `Jest`。它将监视项目中的更改并自动重新运行测试，让你在编码时获得快速反馈！
+测试失败了，因为我们还没有实现`Comment`组件。在继续修复之前，请在终端中运行以下命令，以`watch`模式启动`Jest`。它将监视项目中的更改并自动重新运行测试，让你在编码时获得快速反馈！
 
 ```bash
 npm test -- --watch
 ```
 
-现在，让我们在 `/src/molecules/Comment.js` 中创建一个新文件，并添加以下初始实现：
+现在，让我们在`/src/molecules/Comment.js`中创建一个新文件，并添加以下初始实现：
 
 ```javascript
 import React, {PropTypes} from 'react';
@@ -3836,7 +3679,7 @@ class Comment extends React.Component {
 }
 ```
 
-这个不完整的实现只是渲染了一个带有静态文本的 `Box`。保存新的 `Comment` 组件后，返回终端，你应该会看到：
+这个不完整的实现只是渲染了一个带有静态文本的`Box`。保存新的`Comment`组件后，返回终端，你应该会看到：
 
 ```
  PASS  src/utils/__tests__/shallowCompareWithChildrenId.test.js (0.343s)
@@ -3845,7 +3688,7 @@ class Comment extends React.Component {
 8 tests passed (8 total in 3 test suites, run time 2.228s)
 ```
 
-你的测试通过了！但我们的 `Comment` 组件还不完整。`Comment` 组件的目标是提取 `Comments.js` 中 `map` 函数内部的逻辑，并从中创建一个组件。`map` 函数目前提供了一个 `comment` 对象，因此我们的 `Comment` 组件应该将其作为一个必需的属性。让我们修改现有的测试，使其渲染一个带有示例 `comment` 属性的 `Comment` 组件，并验证它包含该 `comment` 属性的一些内容：
+你的测试通过了！但我们的`Comment`组件还不完整。`Comment`组件的目标是提取`Comments.js`中`map`函数内部的逻辑，并从中创建一个组件。`map`函数目前提供了一个`comment`对象，因此我们的`Comment`组件应该将其作为一个必需的属性。让我们修改现有的测试，使其渲染一个带有示例`comment`属性的`Comment`组件，并验证它包含该`comment`属性的一些内容：
 
 ```javascript
 describe('molecules/Comment', () => {
@@ -3868,11 +3711,11 @@ describe('molecules/Comment', () => {
 
 让我们分析一下这个新测试：
 
-1.  首先，定义了一个示例 `comment` 对象。
-2.  然后，使用 `Enzyme` 的 `render` 函数渲染了一个带有一些示例属性的 `Comment` 组件。
-3.  接着，断言渲染后的评论文本包含评论的 `body` 和 `author`。
+1. 首先，定义了一个示例`comment`对象。
+2. 然后，使用`Enzyme`的`render`函数渲染了一个带有一些示例属性的`Comment`组件。
+3. 接着，断言渲染后的评论文本包含评论的`body`和`author`。
 
-`Enzyme` 的 `render` 函数返回的对象是一个包装器对象，包含许多有用的方法。你将在后续测试中使用另外两个函数。
+`Enzyme`的`render`函数返回的对象是一个包装器对象，包含许多有用的方法。你将在后续测试中使用另外两个函数。
 
 保存文件后，你应该会看到测试失败：
 
@@ -3900,12 +3743,9 @@ describe('molecules/Comment', () => {
 1 test failed, 7 tests passed (8 total in 3 test suites, run time 2.192s)
 ```
 
-让我们完成 `Comment` 组件。你需要添加一些导入并实现 `render` 方法：
+让我们完成`Comment`组件。你需要添加一些导入并实现`render`方法：
 
-
-
-
-```
+```javascript
 import React, {PropTypes} from 'react';
 import Box from '../atoms/Box';
 import Heading from '../atoms/Heading';
@@ -3965,7 +3805,7 @@ class Comment extends React.Component {
 }
 ```
 
-`Comment` 的 `render` 方法与传递给 `Comments` 组件中 `map` 调用的函数非常相似。当你保存 `Comment.js` 后返回终端时，Jest 应该会显示你的测试现在通过了：
+`Comment`的`render`方法与传递给`Comments`组件中`map`调用的函数非常相似。当你保存`Comment.js`后返回终端时，Jest 应该会显示你的测试现在通过了：
 
 ```
  PASS  src/utils/__tests__/shallowCompareWithChildrenId.test.js (0.366s)
@@ -3976,9 +3816,9 @@ PASS  src/molecules/__tests__/Comment.test.js (1.307s)
 
 ### 对函数和 DOM 事件进行断言
 
-让我们在 `Comment.test.js` 中添加一个新测试，断言当点击回复按钮时，应用的状态会被更新。这个测试应该第一次就能通过，无需修改。
+让我们在`Comment.test.js`中添加一个新测试，断言当点击回复按钮时，应用的状态会被更新。这个测试应该第一次就能通过，无需修改。
 
-```
+```javascript
 describe('molecules/Comment', () => {
   ...
   it('当点击回复按钮时，应调用 State.setEditing', () => {
@@ -3996,17 +3836,22 @@ describe('molecules/Comment', () => {
 
 这个测试中有一些新东西，让我们来仔细看看：
 
-1.  首先，使用 Enzyme 的 `mount` 将一个 `Comment` 组件渲染到 DOM 中。
-2.  使用返回的 Enzyme 包装器的 `find` 方法，选择 id 为 `replyBox` 的元素。
-3.  用 `jest.fn()` 创建一个模拟函数，并赋值给 `State.setEditing`。
-4.  使用包装器在 `replyBox` 元素上模拟一个 `click` 事件。
-5.  最后，断言 `State.setEditing` 应该被调用，并且传入提供的对象。
+1. 首先，使用 Enzyme 的`mount`将一个`Comment`组件渲染到 DOM 中。
+2. 使用返回的 Enzyme 包装器的`find`方法，选择 id 为`replyBox`的元素。
+
+
+
+3. 用`jest.fn()`创建一个模拟函数，并赋值给`State.setEditing`。
+
+4. 使用包装器在`replyBox`元素上模拟一个`click`事件。
+
+5. 最后，断言`State.setEditing`应该被调用，并且传入提供的对象。
 
 React 组件通常会根据用户交互或其他生命周期事件来执行函数。Jest 和 Enzyme 使得测试组件是否按预期工作变得简单。
 
 ### 对子组件进行断言
 
-现在我们已经实现了新的 `Comment` 组件，让我们编写一个测试来验证 `Comments` 组件会为其 `comments` 属性中的每个对象渲染一个 `Comment` 组件。
+现在我们已经实现了新的`Comment`组件，让我们编写一个测试来验证`Comments`组件会为其`comments`属性中的每个对象渲染一个`Comment`组件。
 
 ```
 import React from 'react';
@@ -4043,7 +3888,7 @@ describe('molecules/Comments', () => {
 });
 ```
 
-这个测试定义了一个包含两个评论对象的数组，并使用浅渲染渲染了一个 `Comments` 组件，并将该数组作为属性传入。然后它使用返回的包装器的 `find` 方法来搜索类型为 `Comment` 的子组件。你可以用这种方式搜索任何类型的 React 组件。Enzyme 支持使用 CSS 选择器（如 `.class-name` 或 `#replyBox`）、使用组件构造函数（如上例所示）、通过组件的显示名称或组件属性进行搜索。
+这个测试定义了一个包含两个评论对象的数组，并使用浅渲染渲染了一个`Comments`组件，并将该数组作为属性传入。然后它使用返回的包装器的`find`方法来搜索类型为`Comment`的子组件。你可以用这种方式搜索任何类型的 React 组件。Enzyme 支持使用 CSS 选择器（如`.class-name`或`#replyBox`）、使用组件构造函数（如上例所示）、通过组件的显示名称或组件属性进行搜索。
 
 你可以在 GitHub 上查看 Enzyme 的 API 文档：
 
@@ -4051,9 +3896,9 @@ describe('molecules/Comments', () => {
 
 ## Enzyme 中的浅渲染、挂载和渲染
 
-Enzyme 的 `shallow` 函数将其渲染的组件视为一个独立单元，这样你的测试就不会受到子组件的影响。`mount` 函数渲染到 DOM，并确保 `componentDidUpdate` 等组件生命周期方法在适当的时候被调用。`render` 函数更进一步，生成静态 HTML，你可以对其进行分析。
+Enzyme 的`shallow`函数将其渲染的组件视为一个独立单元，这样你的测试就不会受到子组件的影响。`mount`函数渲染到 DOM，并确保`componentDidUpdate`等组件生命周期方法在适当的时候被调用。`render`函数更进一步，生成静态 HTML，你可以对其进行分析。
 
-这个 Comments 测试最初会失败，因为我们需要修改组件以使用新的 `Comment`：
+这个 Comments 测试最初会失败，因为我们需要修改组件以使用新的`Comment`：
 
 ```
 ...
@@ -4075,9 +3920,9 @@ class Comments extends React.Component {
 }
 ```
 
-在文件顶部添加了 `Comment` 的导入语句，并修改了 `map` 函数，使其为属性中的每个评论返回一个 `Comment` 组件。
+在文件顶部添加了`Comment`的导入语句，并修改了`map`函数，使其为属性中的每个评论返回一个`Comment`组件。
 
-让我们扩展测试，验证子 `Comment` 组件是否接收到了正确的评论属性。
+让我们扩展测试，验证子`Comment`组件是否接收到了正确的评论属性。
 
 ```
 describe('molecules/Comments', () => {
@@ -4091,7 +3936,7 @@ describe('molecules/Comments', () => {
 });
 ```
 
-这两个新的断言从每个子组件中检索 `comment` 属性，并断言它们与示例评论数组中相同索引处的评论相等。
+这两个新的断言从每个子组件中检索`comment`属性，并断言它们与示例评论数组中相同索引处的评论相等。
 
 ## 总结
 
@@ -4106,9 +3951,6 @@ describe('molecules/Comments', () => {
 ^(3) https://www.youtube.com/watch?v=1wHr-O6gEfc
 
 # 第 15 章 架构模式
-
-
-
 
 有许多架构模式可以与 React 一起使用。从标准的 Flux 模式，到像 Reflux 这样的 Flux 变体，再到完全不同的语言和生态系统（如 Om 和 ClojureScript），React 已被证明具有相当强的适应性。在本章中，我们将探讨示例 React 应用的结构，以及这种结构如何帮助管理随着项目增长而增加的复杂性。我们还将探讨一些流行的替代方案。
 
@@ -4146,7 +3988,7 @@ class Reply extends React.Component {
 
 例如，如何处理更新其他可能需要知道这条新回复的组件？
 
-React 足够灵活，可以与许多 MVC 框架很好地配合使用。让我们从检查 `react-router` 开始。
+React 足够灵活，可以与许多 MVC 框架很好地配合使用。让我们从检查`react-router`开始。
 
 ## 路由
 
@@ -4154,17 +3996,17 @@ React 足够灵活，可以与许多 MVC 框架很好地配合使用。让我们
 
 路由器将单页应用中的 URL 定向到特定的视图或组件。
 
-你可以想象，对于 URL `/items`，你可能希望运行一个函数，从服务器加载项目并渲染一个 `<ItemsList />` 组件。
+你可以想象，对于 URL `/items`，你可能希望运行一个函数，从服务器加载项目并渲染一个`<ItemsList />`组件。
 
 有许多不同类型的路由器。它们也存在于服务器端。有些路由器同时在客户端和服务器端工作。
 
-React 只是一个渲染库，并不提供路由器。React 社区的爆炸式增长催生了大量路由解决方案。在本节中，我们将介绍 `react-router`，这是示例应用中使用的一种路由解决方案。
+React 只是一个渲染库，并不提供路由器。React 社区的爆炸式增长催生了大量路由解决方案。在本节中，我们将介绍`react-router`，这是示例应用中使用的一种路由解决方案。
 
 ### react-router
 
-本书的示例应用使用了 `react-router`。它与其他路由器的不同之处在于，路由器是由 JSX 元素组成的。
+本书的示例应用使用了`react-router`。它与其他路由器的不同之处在于，路由器是由 JSX 元素组成的。
 
-路由被定义为 `Route` 组件，每个路由都有一个 `component` 属性，该属性是一个 React 组件。
+路由被定义为`Route`组件，每个路由都有一个`component`属性，该属性是一个 React 组件。
 
 这是示例应用中的路由器：
 
@@ -4190,11 +4032,11 @@ ReactDOM.render(
 , root);
 ```
 
-与其他路由器一样，`react-router` 也有类似的参数概念。例如，路由 `'/user/:id'` 会将 `id` 属性传递给 `UserPage` 组件。
+与其他路由器一样，`react-router`也有类似的参数概念。例如，路由`'/user/:id'`会将`id`属性传递给`UserPage`组件。
 
-`react-router` 的一个很酷的特性是它提供了一个 `Link` 组件，你可以用它进行导航，它会将其映射到路由。在示例应用中，`react-router` 的 `Link` 组件被封装在文件 `src/atom/Link.js` 中，但属性基本上只是传递给 `react-router` 组件。
+`react-router`的一个很酷的特性是它提供了一个`Link`组件，你可以用它进行导航，它会将其映射到路由。在示例应用中，`react-router`的`Link`组件被封装在文件`src/atom/Link.js`中，但属性基本上只是传递给`react-router`组件。
 
-以下是我们的 `<MainNavigation/>` 组件使用 `Link` 组件的样子：
+以下是我们的`<MainNavigation/>`组件使用`Link`组件的样子：
 
 ```
 ...
@@ -4220,7 +4062,7 @@ class MainNavigation extends React.Component {
 }
 ```
 
-在此处阅读更多关于 `react-router` 的信息并下载：[`github.com/reactjs/react-router`](https://github.com/reactjs/react-router)
+在此处阅读更多关于`react-router`的信息并下载：[`github.com/reactjs/react-router`](https://github.com/reactjs/react-router)
 
 ## Flux
 
@@ -4284,9 +4126,6 @@ Dispatcher 负责在 stores 上注册回调，并管理它们之间的依赖关�
 
 从用户的角度来看，这是 Flux 的起点。他们通过 UI 执行的每个操作都会创建一个 action，该 action 被发送到 dispatcher。
 
-
-
-
 虽然动作并非 Flux 模式的正式组成部分，但它们构成了应用程序的领域特定语言。动作创建器将用户交互转化为有意义的调度器动作——即存储可以处理的语句。
 
 #### 存储
@@ -4296,10 +4135,12 @@ Dispatcher 负责在 stores 上注册回调，并管理它们之间的依赖关�
 保持存储的严格关注点分离非常重要。
 
 * 存储保存应用程序的*所有*数据。
+
 * 应用程序的其他部分不应知道如何与数据交互——存储是应用程序中唯一发生数据变更的地方。
+
 * 存储没有设置器——所有更新都通过调度器流入存储。新数据通过存储的变更事件流回应用程序。
 
-以下是一个存储向 `Dispatcher` 注册以接收帖子评论的示例。
+以下是一个存储向`Dispatcher`注册以接收帖子评论的示例。
 
 ```
  Dispatcher.register(function(payload) {
@@ -4321,9 +4162,11 @@ Dispatcher 负责在 stores 上注册回调，并管理它们之间的依赖关�
 }
 ```
 
+
+
 然后，React 视图处理此变更事件。新状态将流经 React 组件层级，组件将根据需要重新渲染。
 
-#### 视图控制器
+## 视图控制器
 
 应用程序的组件层级通常有一个负责与存储交互的高层组件。简单的应用程序可能只有一个。更复杂的应用程序可能有多个。
 
@@ -4336,107 +4179,104 @@ Dispatcher 负责在 stores 上注册回调，并管理它们之间的依赖关�
 以下是处理存储交互的示例。
 
 ```
- export default
+export default
 class App extends React.Component {
-  handleChange() {
-    PostStore.getPosts((posts) => {
+  handleChange() {
+    PostStore.getPosts((posts) => {
       this.setState({ posts: posts });
-    });
+    });
   }
-  componentDidMount() {
-    PostStore.addChangeListener(this.handleChange);
-  }
-  componentWillUnmount() {
-    PostStore.removeChangeListener(this.handleChange);
-  }
+  componentDidMount() {
+    PostStore.addChangeListener(this.handleChange);
+  }
+  componentWillUnmount() {
+    PostStore.removeChangeListener(this.handleChange);
+  }
   ...
 }
 ```
 
-### 管理多个存储
+## 管理多个存储
 
 不可避免地，应用程序会增长到需要多个存储。当一个存储依赖于另一个存储时，情况会变得棘手，因为第二个存储需要先完成其动作，第一个存储才能执行自己的动作。
 
 例如，我们可能创建一个单独的存储来维护调查结果摘要，统计所有调查受访者的结果。这个摘要存储需要主存储先完成其记录动作，然后我们才能安全地更新摘要存储。
 
-Facebook 的标准 Flux 实现包含一个名为 `waitFor` 的方法，它可以帮助我们指示存储等待其他存储完成事件处理后再继续。
+Facebook 的标准 Flux 实现包含一个名为`waitFor`的方法，它可以帮助我们指示存储等待其他存储完成事件处理后再继续。
 
-#### 注册依赖动作
+### 注册依赖动作
 
-假设我们有两个存储关注 `CREATE_COMMENT` 动作。
+假设我们有两个存储关注`CREATE_COMMENT`动作。
 
-* `CommentStore` 需要存储评论。
-* `PostStore` 需要重新统计帖子的评论总数。
+* `CommentStore`需要存储评论。
+* `PostStore`需要重新统计帖子的评论总数。
 
-这意味着 `PostStore` 依赖于 `CommentStore` 先完成 `CREATE_COMMENT` 动作，然后才能完成其工作。
+这意味着`PostStore`依赖于`CommentStore`先完成`CREATE_COMMENT`动作，然后才能完成其工作。
 
-当我们在应用程序顶部注册 `CommentStore` 时，我们存储了对调度器令牌的引用。
+当我们在应用程序顶部注册`CommentStore`时，我们存储了对调度器令牌的引用。
 
 ```
- // Wire up the CommentStore with the action dispatcher
+// Wire up the CommentStore with the action dispatcher
 CommentStore.dispatchToken = Dispatcher.register(function(payload) {
-  switch(payload.actionType) {
-    ...
-    case CommentConstants.CREATE_COMMENT:
-      CommentStore.saveComment(payload.comment, payload.parentPostId);
-      break;
-    ...
-  }
+  switch(payload.actionType) {
+    ...
+    case CommentConstants.CREATE_COMMENT:
+      CommentStore.saveComment(payload.comment, payload.parentPostId);
+      break;
+    ...
+  }
 });
 ```
 
-然后我们注册新的 `PostStore`，在访问 `CommentStore` 数据之前调用 `waitFor`。
+然后我们注册新的`PostStore`，在访问`CommentStore`数据之前调用`waitFor`。
 
 ```
- PostStore.dispatchToken = Dispatcher.register(function(payload) {
-  switch(payload.actionType) {
-    case CommentConstants.CREATE_COMMENT:
-      Dispatcher.waitFor(CommentStore.dispatchToken);
-      // At this point it's guaranteed the `CommentStore` callback has been run
-      // and we can safely access its data to summarize it.
-      var commentCount = CommentStore.getCommentsFor(payload.parentPostId);
-      PostStore.setCommentCount(commentCount, payload.parentPostId);
-      break;
-    }
-  }
+PostStore.dispatchToken = Dispatcher.register(function(payload) {
+  switch(payload.actionType) {
+    case CommentConstants.CREATE_COMMENT:
+      Dispatcher.waitFor(CommentStore.dispatchToken);
+      // At this point it's guaranteed the `CommentStore` callback has been run
+      // and we can safely access its data to summarize it.
+      var commentCount = CommentStore.getCommentsFor(payload.parentPostId);
+      PostStore.setCommentCount(commentCount, payload.parentPostId);
+      break;
+    }
+  }
 });
 ```
 
-### Reflux
+## Reflux
 
-示例应用使用了一个名为 Reflux 的流行 Flux 启发库。Reflux 与 Flux 的不同之处在于，存储直接订阅动作。这消除了检查动作类型的大型 switch 语句的需要。存储也可以类似地监听其他存储，从而消除了 Flux 部分中描述的 `waitFor` 调用。动作创建器被消除，因为 Reflux 动作只是将接收到的负载传递给监听器的函数。
+示例应用使用了一个名为 Reflux 的流行 Flux 启发库。Reflux 与 Flux 的不同之处在于，存储直接订阅动作。这消除了检查动作类型的大型 switch 语句的需要。存储也可以类似地监听其他存储，从而消除了 Flux 部分中描述的`waitFor`调用。动作创建器被消除，因为 Reflux 动作只是将接收到的负载传递给监听器的函数。
 
-示例应用在 `src/stores` 目录中定义了许多存储。应用的所有动作都定义在 `src/utils/actions.js` 中。
+示例应用在`src/stores`目录中定义了许多存储。应用的所有动作都定义在`src/utils/actions.js`中。
 
 你可以在这里了解更多关于 Reflux 的信息：[`github.com/reflux/refluxjs`](https://github.com/reflux/refluxjs)。
 
-### Redux
+## Redux
 
 受 ClojureScript 的 Om 和函数式响应式编程的影响，Redux 是另一个受 Flux 启发的 React 应用库。Redux 旨在帮助你编写易于推理的应用程序，并提供出色的开发者体验。
 
 与 Om 类似，Redux 将整个应用程序的状态收集到一个单一对象中，形成一个大型数据树。Redux 的设计使得所有代码（包括存储）都可以热加载，即在应用运行时更新。
 
-Redux 有一个单一的存储，由响应动作的 Reducer 更新。Redux Reducer 是纯函数，返回状态树的一个更新部分。Reducer 通常与存储向 `Dispatcher` 注册的函数非常相似。与 Flux 中使用存储的 getter 方法不同，Redux 有一个选择器的概念。选择器是从状态树中检索数据的函数。然后，组件使用一个名为 `connect` 的函数注册存储的更新，并使用选择器检索所需数据。这些选中的数据作为 props 传递给连接的组件。Redux 中的动作创建器与 Flux 中的类似，但可以通过中间件增强。
+Redux 有一个单一的存储，由响应动作的 Reducer 更新。Redux Reducer 是纯函数，返回状态树的一个更新部分。Reducer 通常与存储向`Dispatcher`注册的函数非常相似。与 Flux 中使用存储的 getter 方法不同，Redux 有一个选择器的概念。选择器是从状态树中检索数据的函数。然后，组件使用一个名为`connect`的函数注册存储的更新，并使用选择器检索所需数据。这些选中的数据作为 props 传递给连接的组件。Redux 中的动作创建器与 Flux 中的类似，但可以通过中间件增强。
 
 你可以在这里了解更多关于 Redux 的信息：[`redux.js.org`](http://redux.js.org)。
 
-### Relay
+## Relay
 
 Relay 是 Facebook 为 React 应用创建的数据驱动框架。Relay 使得在组件内部将组件所需的数据指定为 GraphQL 片段或查询成为可能。当 Relay 渲染你的 React 应用时，它会从所有要渲染的组件上的 GraphQL 片段构建一个大型复合查询，然后向服务器发出一个请求。将数据需求与组件放在一起，使得跟上不断变化的数据需求变得简单，而批处理网络请求则提高了性能。使用 Relay 需要你有一个支持响应 GraphQL 查询的服务器，但对于具有复杂数据需求或视图层级的应用程序来说，它可能是一个很好的选择。
 
 你可以在这里了解更多关于 Relay 的信息：[`facebook.github.io/relay/`](https://facebook.github.io/relay/)。
 
-### Om 和 Om Next（ClojureScript）
-
-
-
+## Om 和 Om Next（ClojureScript）
 
 Om 及其后继者 Om Next 是非常流行的 ClojureScript 接口，用于 React。ClojureScript 的持久化数据结构使得实现诸如撤销等原本复杂的功能变得非常简单。Om Next 融合了 Om 社区的经验，提供了更好的体验。与 Relay 类似，Om Next 允许你直接在组件上指定组件的数据需求。在 Om Next 中，这些查询使用 Datomic Pull 语法指定，这是一种用于 Datomic 的查询语法，Datomic 是一种常用于 ClojureScript 项目的数据库。
 
 下面是一个完整的 Om Next 应用！
 
 ```
- (ns om-tutorial.core
+(ns om-tutorial.core
   (:require [goog.dom :as gdom]
             [om.next :as om :refer-macros [defui]]
             [om.dom :as dom]
@@ -4489,7 +4329,7 @@ Om 及其后继者 Om Next 是非常流行的 ClojureScript 接口，用于 Reac
               AnimalsList (gdom/getElement "app"))
 ```
 
-这段代码渲染了一个无序列表，列出了文件顶部附近定义为 `app-state` 的动物名称。
+这段代码渲染了一个无序列表，列出了文件顶部附近定义为`app-state`的动物名称。
 
 你可以在这里了解更多关于 Om 和 ClojureScript 的信息：[`github.com/omcljs/om`](https://github.com/omcljs/om)。
 
@@ -4507,31 +4347,31 @@ Om 及其后继者 Om Next 是非常流行的 ClojureScript 接口，用于 Reac
 
 ## 性能优势
 
-在 React 应用中，不可变性最明显的好处在于它对 `shouldComponentUpdate` 的影响。虽然 `shouldComponentUpdate` 可以带来巨大的性能提升，但随着 `shouldComponentUpdate` 处理程序本身复杂性的增加，这些提升往往会减弱甚至消失。
+在 React 应用中，不可变性最明显的好处在于它对`shouldComponentUpdate`的影响。虽然`shouldComponentUpdate`可以带来巨大的性能提升，但随着`shouldComponentUpdate`处理程序本身复杂性的增加，这些提升往往会减弱甚至消失。
 
-假设你有一个 `shouldComponentUpdate`，它只需要检查 `props` 中的一个字段就能决定返回 `true` 还是 `false`。那会运行得很快！现在假设它需要检查十几个字段，其中一些字段包含需要多次比较的对象，因为所有这些检查会迅速累积起来。
+假设你有一个`shouldComponentUpdate`，它只需要检查`props`中的一个字段就能决定返回`true`还是`false`。那会运行得很快！现在假设它需要检查十几个字段，其中一些字段包含需要多次比较的对象，因为所有这些检查会迅速累积起来。
 
 问题的根源在于，判断两个可变对象是否代表相同的值是很耗时的。但如果这能变成一个快速检查呢？
 
-使用不可变的 `props` 和 `state`，确实有一个快速检查可以使用。当你的 `props` 被表示为不可变对象时，它们就不能再原地更新；要获得新的 props，你必须实例化一个新的不可变对象，并用新对象替换旧对象。因此，使用 `oldProps !== newProps` 作为你的 `shouldComponentUpdate` 检查，可以非常快速地告诉你是否确实需要更新。
+使用不可变的`props`和`state`，确实有一个快速检查可以使用。当你的`props`被表示为不可变对象时，它们就不能再原地更新；要获得新的 props，你必须实例化一个新的不可变对象，并用新对象替换旧对象。因此，使用`oldProps !== newProps`作为你的`shouldComponentUpdate`检查，可以非常快速地告诉你是否确实需要更新。
 
-值得注意的是，尽管这个检查非常快，但它可能会产生误报。例如，如果你的旧状态是 `{ username: "Don Jacko", active: true }`，并且你调用了 `replaceState` 传入一个新实例化的对象 `{ username: "Don Jacko", active: true }`，那么旧 `state` 显然与新 `state` 相同，但使用 `oldState !== newState` 作为测试的 `shouldComponentUpdate` 函数仍然会认为它们不同，并会进行不必要的重新渲染。
+值得注意的是，尽管这个检查非常快，但它可能会产生误报。例如，如果你的旧状态是`{ username: "Don Jacko", active: true }`，并且你调用了`replaceState`传入一个新实例化的对象`{ username: "Don Jacko", active: true }`，那么旧`state`显然与新`state`相同，但使用`oldState !== newState`作为测试的`shouldComponentUpdate`函数仍然会认为它们不同，并会进行不必要的重新渲染。
 
 在实践中，这种情况很少出现，即使出现，唯一的代价也只是不必要的重新渲染。漏报（组件实际上需要重新渲染但判断为不需要）会是更大的问题，但幸运的是，这种方法不会出现这个问题。
 
 ## 性能代价
 
-虽然不可变数据结构可以让你获得极其简单且闪电般快速的 `shouldComponentUpdate` 实现，从而节省大量的渲染性能，但它们并非没有性能代价。可变对象更新快但比较慢，而不可变对象比较快但更新慢。
+虽然不可变数据结构可以让你获得极其简单且闪电般快速的`shouldComponentUpdate`实现，从而节省大量的渲染性能，但它们并非没有性能代价。可变对象更新快但比较慢，而不可变对象比较快但更新慢。
 
 不可变库不是原地修改，而是必须实例化至少一个新对象，并根据需要修改它，直到它在除了更改的字段之外的所有方面都与旧对象匹配。这在更新过程中以及垃圾回收过程中都会消耗时间，因为额外的对象最终会被清理。
 
 对于绝大多数 React 应用来说，这是一个很好的权衡。请记住，一次更新通常会导致多次渲染函数的调用，而渲染函数在构建其返回值的过程中本身也会实例化不少对象。牺牲一点更新速度来节省大量的渲染函数调用，几乎总是性能上的胜利。
 
-除了性能之外，另一个需要考虑的代价是你失去了 `setState` 和 `setProp` 的便利性。由于这两者都依赖于能够分别修改你的 `state` 和 `props` 对象，当你将它们切换为不可变对象时，你唯一的选择就变成了 `replaceState` 和 `replaceProps`。
+除了性能之外，另一个需要考虑的代价是你失去了`setState`和`setProp`的便利性。由于这两者都依赖于能够分别修改你的`state`和`props`对象，当你将它们切换为不可变对象时，你唯一的选择就变成了`replaceState`和`replaceProps`。
 
 ## 架构优势
 
-除了性能优势之外，更多地使用不可变数据还会带来额外的架构优势。这些优势超越了 `props` 和 `state`，更广泛地适用于你的整个应用。
+除了性能优势之外，更多地使用不可变数据还会带来额外的架构优势。这些优势超越了`props`和`state`，更广泛地适用于你的整个应用。
 
 与可变数据相比，不可变数据通常更不容易出错。当将可变数据从一个函数传递到另一个函数，并期望它保持不变时，你有两个选择：一是提前克隆对象并传递克隆体，二是祈祷另一个函数不会修改它。（因为如果它修改了，你就得开始调试了！）
 
@@ -4541,17 +4381,16 @@ Om 及其后继者 Om Next 是非常流行的 ClojureScript 接口，用于 Reac
 
 ## 使用不可变性辅助插件
 
-
-
-
 向 React 应用引入不可变性的最简单方法是使用不可变辅助插件（Immutability Helpers Addon）。它让你能够继续使用现有的可变数据结构，就像它们是不可变的一样，通过轻松创建新的（也是可变的）对象，而不是就地更新。
 
-虽然这实际上并没有给你任何新的保证，但它允许你像上面描述的那样编写一个快速的 `shouldComponentUpdate` 函数。
+虽然这实际上并没有给你任何新的保证，但它允许你像上面描述的那样编写一个快速的`shouldComponentUpdate`函数。
 
 让我们更新示例，使用不可变辅助插件：
 
-```
- var update = React.addons.update;
+
+
+```javascript
+var update = React.addons.update;
 
 var SurveyEditor = React.createClass({
   // ...
@@ -4590,14 +4429,14 @@ var SurveyEditor = React.createClass({
 
 接下来，我们将尝试一个不同的库，这个库确实对不可变性做出了保证。
 
-## 使用 seamless-immutable
+## 使用 `seamless-immutable`
 
-seamless-immutable 库并非官方 React 家族的一部分，但它是为与 React 一起使用而设计的。它创建了常规对象和数组的不可变版本，这些版本可以像它们的可变对应物一样传递、访问和迭代，但会阻止任何会改变它们的操作。
+`seamless-immutable` 库并非官方 React 家族的一部分，但它是为与 React 一起使用而设计的。它创建了常规对象和数组的不可变版本，这些版本可以像它们的可变对应物一样传递、访问和迭代，但会阻止任何会改变它们的操作。
 
-与不可变辅助插件类似，seamless-immutable 提供了处理不可变数据的便捷函数。然而，在 seamless-immutable 中，这些函数是作为对象自身的方法实现的。例如，seamless-immutable 对象获得了一个 `.merge()` 方法，其作用类似于不可变辅助插件中的 `$merge` 选项。
+与不可变辅助插件类似，`seamless-immutable` 提供了处理不可变数据的便捷函数。然而，在 `seamless-immutable` 中，这些函数是作为对象自身的方法实现的。例如，`seamless-immutable` 对象获得了一个 `.merge()` 方法，其作用类似于不可变辅助插件中的 `$merge` 选项。
 
-```
- var update = React.addons.update;
+```javascript
+var update = React.addons.update;
 
 var SurveyEditor = React.createClass({
   // ...
@@ -4616,9 +4455,9 @@ var SurveyEditor = React.createClass({
 
   handleQuestionChange: function (key, newQuestion) {
     var questions = this.state.questions.map(
-        function(question, index) {
-            return index === key ? newQuestion : question;
-        }
+      function(question, index) {
+        return index === key ? newQuestion : question;
+      }
     );
 
     this.setState({ questions: questions });
@@ -4626,10 +4465,10 @@ var SurveyEditor = React.createClass({
 
   handleQuestionRemove: function (key) {
     var questions = this.state.questions.filter(
-        function(question, index) {
-            return index !== key;
-        }
-    );
+      function(question, index) {
+        return index !== key;
+      }
+    );
 
     this.setState({ questions: questions });
   }
@@ -4639,7 +4478,7 @@ var SurveyEditor = React.createClass({
 });
 ```
 
-## 使用 Immutable.js
+## 使用 `Immutable.js`
 
 前两个库提供了围绕常规 JavaScript 对象和数组的工具，而 `Immutable.js` 则采用了不同的方法：它提供了对象和数组的替代数据结构。
 
@@ -4647,8 +4486,8 @@ var SurveyEditor = React.createClass({
 
 ### `Immutable.Map`
 
-```
- var question = Immutable.Map({description: 'who is your favorite superhero?'});
+```javascript
+var question = Immutable.Map({description: 'who is your favorite superhero?'});
 // 使用 .get 从 Map 中获取值
 question.get('description');
 
@@ -4667,16 +4506,16 @@ question3.toObject(); // { title: 'Question #1', description: 'who is your favor
 
 使用 `Immutable.Vector` 处理数组：
 
-```
- var options = Immutable.Vector('Superman' , 'Batman');
+```javascript
+var options = Immutable.Vector('Superman' , 'Batman');
 var options2 = options.push('Spiderman');
 options2.toArray(); // ['Superman', 'Batman', 'Spiderman']
 ```
 
 你还可以嵌套这些数据结构：
 
-```
- var options = Immutable.Vector('Superman' , 'Batman');
+```javascript
+var options = Immutable.Vector('Superman' , 'Batman');
 var question = Immutable.Map({
   description: 'who is your favorite superhero?',
   options: options
@@ -4697,10 +4536,10 @@ React 是一个强大的交互式 UI 渲染库，但它也提供了一种处理�
 
 在本章中，我们将了解如何使用 React 进行：
 
-*   桌面应用
-*   游戏
-*   电子邮件
-*   图表
+- 桌面应用
+- 游戏
+- 电子邮件
+- 图表
 
 ## 桌面
 
@@ -4708,8 +4547,8 @@ React 是一个强大的交互式 UI 渲染库，但它也提供了一种处理�
 
 示例应用已经包含了 Electron，要启动它，请在示例应用的根目录下运行以下命令：
 
-```
- ./node_modules/.bin/electron desktop.html
+```bash
+./node_modules/.bin/electron desktop.html
 ```
 
 使用 `desktop.html` 运行 Electron 会在一个窗口中打开该应用。
@@ -4724,13 +4563,13 @@ React 是一个强大的交互式 UI 渲染库，但它也提供了一种处理�
 
 游戏通常需要高水平的用户交互，用户需要响应游戏不断变化的状态。这与大多数 Web 应用形成对比，在 Web 应用中，用户要么消费内容，要么生产内容。游戏本质上是一个状态机，具有两个基本角色：
 
-1.  更新视图
-2.  响应事件
+1. 更新视图
+2. 响应事件
 
 在本书的引言中，你了解到 React 的范围非常狭窄，只关注两件事：
 
-1.  更新 DOM
-2.  响应事件
+1. 更新 DOM
+2. 响应事件
 
 React 与游戏之间的相似之处并不仅限于此。React 的虚拟 DOM 架构在很大程度上归功于高性能的 3D 游戏引擎，在给定预期视图状态的情况下，渲染引擎确保视图/DOM 的高效更新。
 
@@ -4742,46 +4581,43 @@ React 与游戏之间的相似之处并不仅限于此。React 的虚拟 DOM 架
 
 源代码分为两部分。第一部分是游戏逻辑，作为全局命名空间中的函数实现；第二部分是 React 组件。你首先会看到棋盘的初始数据结构。
 
-
-
-
-```
+```javascript
 var initial_board = {
-    a1:null, a2:null, a3:null, a4:null,
-    b1:null, b2:null, b3:null, b4:null,
-    c1:null, c2:null, c3:null, c4:null,
-    d1:null, d2:null, d3:null, d4:null
+  a1:null, a2:null, a3:null, a4:null,
+  b1:null, b2:null, b3:null, b4:null,
+  c1:null, c2:null, c3:null, c4:null,
+  d1:null, d2:null, d3:null, d4:null
 };
 ```
 
-棋盘的数据结构是一个对象，其中的`keys`直接对应 CSS 中定义的视觉网格位置。在初始数据结构之后，你将看到一系列操作该给定数据结构的函数。所有这些函数都以不可变的方式运行，因此返回一个新棋盘，而不会改变输入。这为游戏逻辑提供了一些灵活性，因为它能够比较移动前后的棋盘，并在不改变游戏状态的情况下推测性地执行移动。
+棋盘的数据结构是一个对象，其中的 `keys` 直接对应 CSS 中定义的视觉网格位置。在初始数据结构之后，你将看到一系列操作该给定数据结构的函数。所有这些函数都以不可变的方式运行，因此返回一个新棋盘，而不会改变输入。这为游戏逻辑提供了一些灵活性，因为它能够比较移动前后的棋盘，并在不改变游戏状态的情况下推测性地执行移动。
 
 该数据结构的另一个有趣特性是棋盘的结构共享。所有棋盘共享对棋盘上未改变方块的引用。这使得创建新棋盘非常快速，并允许使用引用相等性来比较棋盘。
 
-游戏由两个 React 组件组成：`Tiles`和`GameBoard`。
+游戏由两个 React 组件组成：`Tiles` 和 `GameBoard`。
 
-```
+```javascript
 class Tiles extends React.Component {
-  render() {
-    var board = this.props.board;
-    //sort board keys first to stop re-ordering of DOM elements
-    var tiles = used_spaces(board).sort((a, b) => {
-      return board[a].id - board[b].id;
-    });
-    return <div className="board">{
-      tiles.map((key) => {
-        var tile = board[key];
-        var val = tile_value(tile);
-        return <span key={tile.id} className={key + " value" + val}>
-          {val}
-        </span>;
-      })}
-    </div>
-  }
+  render() {
+    var board = this.props.board;
+    // sort board keys first to stop re-ordering of DOM elements
+    var tiles = used_spaces(board).sort((a, b) => {
+      return board[a].id - board[b].id;
+    });
+    return <div className="board">{
+      tiles.map((key) => {
+        var tile = board[key];
+        var val = tile_value(tile);
+        return <span key={tile.id} className={key + " value" + val}>
+          {val}
+        </span>;
+      })
+    }</div>
+  }
 }
 ```
 
-```
+```html
 <!-- Tiles 组件渲染输出示例 -->
 <div class="board" data-reactid=".0.1">
   <span class="d2 value64" data-reactid=".0.1.$2">64</span>
@@ -4791,83 +4627,84 @@ class Tiles extends React.Component {
 </div>
 ```
 
-```
+```css
 /* 应用于方块动画的 CSS 过渡 */
-.board span{
+.board span {
   /* ... */
   transition: all 100ms linear;
 }
 ```
 
-`GameBoard`是状态机，它响应用户事件（`方向键`和`按钮点击`），并与游戏逻辑函数交互，然后用新棋盘更新状态。
+`GameBoard` 是状态机，它响应用户事件（`方向键` 和 `按钮点击`），并与游戏逻辑函数交互，然后用新棋盘更新状态。
 
-```
+```javascript
 class GameBoard extends React.Component {
-    constructor(props) {
-      super(props);
-      this.state = this.addTile(this.addTile(initial_board));
-    }
+  constructor(props) {
+    super(props);
+    this.state = this.addTile(this.addTile(initial_board));
+  }
 
-    keyHandler(e) {
-        var directions = {
-            37: left,
-            38: up,
-            39: right,
-            40: down
-        };
-        if (directions[e.keyCode]
-        && this.setBoard(fold_board(this.state, directions[e.keyCode]))
-        && Math.floor(Math.random() * 30, 0) > 0){
-            setTimeout(() => {
-                 this.setBoard(this.addTile(this.state));
-            }, 100);
-        }
-    }
+  keyHandler(e) {
+    var directions = {
+      37: left,
+      38: up,
+      39: right,
+      40: down
+    };
+    if (directions[e.keyCode]
+      && this.setBoard(fold_board(this.state, directions[e.keyCode]))
+      && Math.floor(Math.random() * 30, 0) > 0) {
+      setTimeout(() => {
+        this.setBoard(this.addTile(this.state));
+      }, 100);
+    }
+  }
 
-    setBoard(new_board) {
-        if (!same_board(this.state, new_board)){
-            this.setState(new_board);
-            return true;
-        }
-        return false;
-    }
+  setBoard(new_board) {
+    if (!same_board(this.state, new_board)) {
+      this.setState(new_board);
+      return true;
+    }
+    return false;
+  }
 
-    addTile(board) {
-        var location = available_spaces(board).sort(() => {
-          return .5 - Math.random();
-        }).pop();
-        if (location) {
-            var two_or_four = Math.floor(Math.random() * 2, 0) ? 2 : 4;
-            return set_tile(board, location, new_tile(two_or_four));
-        }
-        return board;
-    }
+  addTile(board) {
+    var location = available_spaces(board).sort(() => {
+      return .5 - Math.random();
+    }).pop();
+    if (location) {
+      var two_or_four = Math.floor(Math.random() * 2, 0) ? 2 : 4;
+      return set_tile(board, location, new_tile(two_or_four));
+    }
+    return board;
+  }
 
-    newGame() {
-        this.setState(this.addTile(this.addTile(initial_board)));
-    }
+  newGame() {
+    this.setState(this.addTile(this.addTile(initial_board)));
+  }
 
-    componentDidMount() {
-        window.addEventListener("keydown", this.keyHandler.bind(this), 
-          false);
-    }
+  componentDidMount() {
+    window.addEventListener("keydown", this.keyHandler.bind(this), false);
+  }
 
-    render() {
-        var status = !can_move(this.state)?" - Game Over!":"";
-        return <div className="app">
-            <span className="score">
-                Score: {score_board(this.state)}{status}
-            </span>
-            <Tiles board={this.state}/>
-            <button onClick={this.newGame.bind(this)}>New Game</button>
-        </div>
-    }
-} 
+  render() {
+    var status = !can_move(this.state) ? " - Game Over!" : "";
+    return <div className="app">
+      <span className="score">
+        Score: {score_board(this.state)}{status}
+      </span>
+      <Tiles board={this.state}/>
+      <button onClick={this.newGame.bind(this)}>New Game</button>
+    </div>
+  }
+}
 ```
 
-在`GameBoard`组件中，我们设置了用于与棋盘交互的键盘处理程序。每次按下方向键时，我们都会调用`setBoard`，传入从游戏逻辑中新创建的棋盘。如果新棋盘与旧棋盘不同，我们就更新`GameBoard`组件的状态。这避免了不必要的循环并提高了性能。
+在 `GameBoard` 组件中，我们设置了用于与棋盘交互的键盘处理程序。每次按下方向键时，我们都会调用 `setBoard`，传入从游戏逻辑中新创建的棋盘。如果新棋盘与旧棋盘不同，我们就更新 `GameBoard` 组件的状态。这避免了不必要的循环并提高了性能。
 
-在渲染函数中，你根据当前棋盘渲染`Tiles`组件，并渲染由游戏逻辑根据当前棋盘计算出的分数。
+在渲染函数中，你根据当前棋盘渲染 `Tiles` 组件，并渲染由游戏逻辑根据当前棋盘计算出的分数。
+
+
 
 `addTile`函数在你使用方向键时不断向棋盘添加新方块，使游戏持续进行，直到棋盘满且无法合并任何数字时游戏结束。
 
@@ -4891,7 +4728,7 @@ class GameBoard extends React.Component {
 
 为了渲染电子邮件，我们编写了一个小脚本，输出可用于发送电子邮件的 HTML：
 
-```
+```javascript
 // render_email.js
 var ReactDOMServer = require('react-dom/server');
 var SurveyEmail = require('survey_email');
@@ -4904,7 +4741,7 @@ console.log(
 
 让我们开始构建`SurveyEmail`的核心结构。首先，构建一个`Email`组件：
 
-```
+```javascript
 class Email extends React.Component {
   render() {
     return (
@@ -4920,7 +4757,7 @@ class Email extends React.Component {
 
 `<SurveyEmail/>`组件使用了`<Email/>`：
 
-```
+```javascript
 class SurveyEmail extends React.Component {
   render() {
     var survey = this.props.survey;
@@ -4939,7 +4776,7 @@ SurveyEmail.propTypes = {
 
 接下来，根据设计，在桌面客户端上并排渲染两个 KPI，在移动设备上则堆叠显示。每个 KPI 的结构相似，因此它们可以共享同一个组件：
 
-```
+```javascript
 class SurveyEmail extends React.Component {
   render() {
     return (
@@ -4956,13 +4793,10 @@ class SurveyEmail extends React.Component {
 }
 ```
 
+让我们将它们添加到`<SurveyEmail/>`组件中：
 
-
-
-让我们将它们添加到 `<SurveyEmail/>` 组件中：
-
-```
- class SurveyEmail extends React.Component {
+```javascript
+class SurveyEmail extends React.Component {
   render() {
     var survey = this.props.survey;
     var completions = survey.activity.reduce((memo, ac) => {
@@ -4987,10 +4821,11 @@ SurveyEmail.propTypes = {
 
 这样堆叠了我们的关键绩效指标（KPI），但设计上希望它们在桌面端并排显示。现在的挑战是让它在桌面端和移动端都能正常工作。要解决这个问题，我们首先需要了解一些注意事项。
 
-让我们为 `<Email/>` 增加一种添加 CSS 文件的方式：
+让我们为`<Email/>`增加一种添加 CSS 文件的方式：
 
-```
- var fs = require(‘fs’);
+```javascript
+var fs = require('fs');
+
 class Email extends React.Component {
   render() {
     var responsiveCSSFile = this.props.responsiveCSSFile;
@@ -5003,8 +4838,8 @@ class Email extends React.Component {
         <body>
           {styles}
           {this.prop.children}
-       </body>
-     </html>
+        </body>
+      </html>
     );
   }
 }
@@ -5014,10 +4849,10 @@ Email.propTypes = {
 };
 ```
 
-完整的 `<SurveyEmail/>` 如下所示：
+完整的`<SurveyEmail/>`如下所示：
 
-```
- class SurveyEmail extends React.Component {
+```javascript
+class SurveyEmail extends React.Component {
   render() {
     var survey = this.props.survey;
     var completions = survey.activity.reduce((memo, ac) => {
@@ -5053,7 +4888,7 @@ SurveyEmail.propTypes: {
 };
 ```
 
-我们将邮件内容分成了桌面端和移动端两组。遗憾的是，在邮件中不能使用类似 `float: left` 这样的属性，因为大多数浏览器不支持。而且 HTML 规范指出 `align` 和 `valign` 属性已过时，因此 React 也不支持这些属性。不过，它们本可以提供类似浮动两个 `div` 的实现方式。相反，我们只能保留两组内容，通过响应式样式表根据屏幕尺寸来隐藏或显示。
+我们将邮件内容分成了桌面端和移动端两组。遗憾的是，在邮件中不能使用类似`float: left`这样的属性，因为大多数浏览器不支持。而且 HTML 规范指出`align`和`valign`属性已过时，因此 React 也不支持这些属性。不过，它们本可以提供类似浮动两个`div`的实现方式。相反，我们只能保留两组内容，通过响应式样式表根据屏幕尺寸来隐藏或显示。
 
 尽管必须使用表格，但很明显，使用 React 渲染邮件能带来与为浏览器编写交互式 UI 相同的诸多好处：可复用、可组合且可测试的组件。
 
@@ -5061,12 +4896,12 @@ SurveyEmail.propTypes: {
 
 React 支持 SVG 标签，因此制作一个简单的 SVG 变得轻而易举。
 
-要渲染一个迷你走势图（Sparkline，以此为例），你只需要一个带有指令集的 `<Path/>`。
+要渲染一个迷你走势图（Sparkline，以此为例），你只需要一个带有指令集的`<Path/>`。
 
 完整的示例如下：
 
-```
- class Sparkline extends React.Component {
+```javascript
+class Sparkline extends React.Component {
   render() {
     var width = 200;
     var height = 20;
@@ -5104,16 +4939,16 @@ Sparkline.propTypes = {
 };
 ```
 
-上面的 Sparkline 组件需要一个表示数据点的数字数组。然后它会构建一个包含路径的简单 SVG。
+上面的`Sparkline`组件需要一个表示数据点的数字数组。然后它会构建一个包含路径的简单 SVG。
 
-有趣的部分在于 `generatePath` 函数，它计算每个点应该渲染的位置，并返回一个 SVG 路径描述。
+有趣的部分在于`generatePath`函数，它计算每个点应该渲染的位置，并返回一个 SVG 路径描述。
 
-它返回类似这样的字符串：`"M0,30 L10,20 L20,50"`。SVG 路径将其转换为绘图命令。每个命令由空格分隔。`"M0,30"` 表示将光标移动到 x0, y30。然后 `"L10,20"` 表示从当前光标位置画一条线到 x10, y20，以此类推。
+它返回类似这样的字符串：`"M0,30 L10,20 L20,50"`。SVG 路径将其转换为绘图命令。每个命令由空格分隔。`"M0,30"`表示将光标移动到 x0, y30。然后`"L10,20"`表示从当前光标位置画一条线到 x10, y20，以此类推。
 
 对于较大的图表，手动编写这样的缩放函数可能会很繁琐，但引入像 D3 这样的库并使用其提供的缩放函数，而不是手动创建路径，则非常简单：
 
-```
- class Sparkline extends React.Component {
+```javascript
+class Sparkline extends React.Component {
   render() {
     var width = 200;
     var height = 20;
@@ -5132,7 +4967,7 @@ Sparkline.propTypes = {
     var line = d3.svg.line()
       .x(function (d) { return xScale(d.x) })
       .y(function (d) { return yScale(d.y) })
-       .interpolate('linear');
+      .interpolate('linear');
 
     return (
       <svg width={width} height={height}>
@@ -5151,10 +4986,8 @@ Sparkline.propTypes = {
 
 在本章中，我们学到了：
 
-1.  React 不仅限于浏览器，还可以用于构建桌面应用程序和邮件。
-
-2.  如何使用 React 辅助游戏开发。
-
-3.  React 是图表绘制的绝佳选择，并且与 D3 等库配合得很好。
+1. React 不仅限于浏览器，还可以用于构建桌面应用程序和邮件。
+2. 如何使用 React 辅助游戏开发。
+3. React 是图表绘制的绝佳选择，并且与 D3 等库配合得很好。
 
 现在你已经完成了本书的学习，应该能够使用 React 创建各种有趣的应用程序了。

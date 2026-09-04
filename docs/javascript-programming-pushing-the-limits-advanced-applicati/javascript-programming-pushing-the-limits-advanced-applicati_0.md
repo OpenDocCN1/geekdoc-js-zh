@@ -1,26 +1,12 @@
+
 # JavaScript 编程：突破极限：JavaScript 与 HTML5 高级应用开发
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 ## 出版者致谢
 
 帮助本书进入市场的人员包括：
 
 ### 编辑与制作
+
 - 消费者与技术出版副总监：Michelle Leete
 - 图书内容管理副总监：Martin Tribe
 - 副主编：Chris Webb
@@ -33,49 +19,53 @@
 - 编辑助理：Annie Sullivan
 
 ### 营销
+
 - 副营销总监：Louise Breinholt
 - 营销经理：Lorna Mein
 - 营销助理：Polly Thomas
 
 ### 排版服务
+
 - 排字员：Jennifer Mayberry
 - 校对：Wordsmith Editorial
 - 索引员：Infodex Indexing Services, Inc.
 
 ## 关于作者
-Jon Raasch 是一位自由职业 Web 开发人员，专门从事桌面和移动设备的现代 Web 应用开发。作为一名用户体验迷，他构建的 JavaScript 应用专注于服务用户，无论是通过提高性能、增强可用性还是提升功能。他认为，一旦满足了用户的需求，业务目标就会随之而来。Jon 是《Smashing WebKit》的作者，《Smashing Mobile Web Development》的合著者。他曾为 Smashing Magazine 和他的个人博客写过许多文章。在最佳实践方面他是一个完美主义者，你会发现他穿着睡衣构建网站和应用。他目前住在俄勒冈州波特兰。你可以在 Twitter 上关注 Jon `@jonraasch` 并访问他的网站 `jonraasch.com`。
 
-## 献献
+Jon Raasch 是一位自由职业 Web 开发人员，专门从事桌面和移动设备的现代 Web 应用开发。作为一名用户体验迷，他构建的 `JavaScript` 应用专注于服务用户，无论是通过提高性能、增强可用性还是提升功能。他认为，一旦满足了用户的需求，业务目标就会随之而来。Jon 是《Smashing WebKit》的作者，《Smashing Mobile Web Development》的合著者。他曾为 Smashing Magazine 和他的个人博客写过许多文章。在最佳实践方面他是一个完美主义者，你会发现他穿着睡衣构建网站和应用。他目前住在俄勒冈州波特兰。你可以在 Twitter 上关注 Jon `@jonraasch` 并访问他的网站 `jonraasch.com`。
+
+## 献词
+
 “挑战极限” – Rick Ross
 
 ## 关于贡献者
+
 Kevin Bradwick 拥有十多年的 Web 开发行业经验。他致力于构建和分享知识，旨在产生高质量的代码。他目前在 BBC 工作，构建并维护用于国内和国际网站的应用程序。
 
 ## 致谢
+
 感谢每一位对开发社区做出过贡献的人。这意味着任何对开源项目做出过贡献、编写过教程、回答过问题、甚至提交过错误报告的人。我们都站在巨人的肩膀上，这些众多的贡献在过去的几年里将 Web 开发带到了一个美好的境界。成为一名 Web 开发人员是一个惊叹的时代，这一切归功于我们优秀的社区。
 
 # JavaScript 编程：挑战极限
 
-- QUnit. “QUnit API 文档”:[`http://api.qunitjs.com`](http://api.qunitjs.com/)
+- QUnit. “QUnit API 文档”：[`http://api.qunitjs.com`](http://api.qunitjs.com/)
 - JSHint 文档：[`http://www.jshint.com/docs/`](http://www.jshint.com/docs/)
 
-# 第 2 章
+# 第 2 章 库、框架和插件
 
-## 库、框架和插件
-
-除了遵循最佳实践外，你应该在库和插件的坚实基础上构建你的应用。当然，你可以自己写一切，这确实有其时机地。但在大多数情况下，依靠其他开发者发布的开源工作更有意义。
+除了遵循最佳实践外，你应该在库和插件的坚实基础上构建你的应用。当然，你可以自己写一切，这确实有其时机。但在大多数情况下，依靠其他开发者发布的开源工作更有意义。
 
 库和插件可以帮助加速你的开发过程，并用基础功能的样板代码启动你的应用。最棒的是，知名库背后有庞大的社区，有优秀的开发者在编写和重写代码，并有大量的用户群发现任何漏洞。有了这些更成熟、经过反复测试的库，你可以放心地在你的应用程序中使用它们。
 
-另一方面，插件在代码质量方面参差不齐。一个好的插件可以为你节省大量时间，而一个糟糕的插件可能会产生比它解决更多的问题（并迫你花费在调试它上的时间比从头编写它花费的时间更多）。
+另一方面，插件在代码质量方面参差不齐。一个好的插件可以为你节省大量时间，而一个糟糕的插件可能会产生比它解决更多的问题（并迫使你花费在调试它上的时间比从头编写它花费的时间更多）。
 
-在本章中，你发现了如何为你的项目选择合适的 `JavaScript` 库。我比较了 `jQuery`、`Zepto` 以及编写你自己的原生 JavaScript。然后你学习了较大的框架 `Bootstrap` 和 `jQuery UI`。在简要讨论了 `Modernizr` 如何简化跨浏览器 CSS 问题后，我展示了 `HTML5 Shiv` 如何在旧版浏览器中构建对 `HTML5` 元素的支持。
+在本章中，你将发现如何为你的项目选择合适的 `JavaScript` 库。我比较了 `jQuery`、`Zepto` 以及编写你自己的原生 `JavaScript`。然后你学习了较大的框架 `Bootstrap` 和 `jQuery UI`。在简要讨论了 `Modernizr` 如何简化跨浏览器 CSS 问题后，我展示了 `HTML5 Shiv` 如何在旧版浏览器中构建对 `HTML5` 元素的支持。
 
-接下来，我讨论了 `HTML5 Boilerplate`，它既不是库 true 框架。它是一个兼具优点的模板，你可以使用它来获得框架的所有优势，加速标准 `HTML5` 应用的设置。
+接下来，我讨论了 `HTML5 Boilerplate`，它既不是库也不是框架。它是一个兼具优点的模板，你可以使用它来获得框架的所有优势，加速标准 `HTML5` 应用的设置。
 
 最后，我深入研究了 `jQuery 插件`。你将看到寻找新插件的好地方，以及一个用于确定该插件是否足够好到集成到你项目的十点清单。
 
-### 选择合适的 JavaScript 库
+## 选择合适的 JavaScript 库
 
 在 `JavaScript` 项目开始时，你做的最重要的决定之一是使用哪个库（或者是否使用库）。一个良好的 `JavaScript` 库可以简化你的开发过程，为你提供各种标准工具，你可以在未来的项目中使用并重用。
 
@@ -89,20 +79,17 @@ Kevin Bradwick 拥有十多年的 Web 开发行业经验。他致力于构建和
 
 `jQuery` 的主要优势在于它的范围。它非常健壮，提供的 API 比我用过的任何库都多。它也非常容易使用，出于几个原因：
 
-- API 的语义对初学者非常宽容，允许各种失误而不会抛出 JavaScript 错误
+- API 的语义对初学者非常宽容，允许各种失误而不会抛出 `JavaScript` 错误
 - 有许多便利函数。便利函数就像是一个门面函数——例如 `jQuery.post()`，它是 `jQuery.ajax()` 的代理。
 - 大多数 `jQuery` 方法都是可链的，这意味着每个方法都返回自身，因此你可以在一个 DOM 引用上链接任意数量的方法。例如：
 
-```
+```javascript
 jQuery('.my-element').addClass('my-class').fadeIn().click(myClickHandler)
 ```
 
+所有这些因素降低了 `jQuery` 的入门门槛，并促进了它的极度普及。然而，`jQuery` 的规模和易用性也导致了它的主要缺点：文件大小。`jQuery` 中所有不同的功能都是有代价的，那就是更大的代码库。便利函数进一步导致了文件体积的膨胀。
 
-
-
-所有这些因素降低了 jQuery 的入门门槛，并促进了它的极度普及。然而，jQuery 的规模和易用性也导致了它的主要缺点：文件大小。jQuery 中所有不同的功能都是有代价的，那就是更大的代码库。便利函数进一步导致了文件体积的膨胀。
-
-幸运的是，jQuery 2.0 解决了大部分文件大小问题。jQuery 2.0 提供了类似于 jQuery UI 的模块化构建过程，允许你构建一个特定项目的库实例，并针对你正在使用的 API 进行定制。此外，jQuery 2.0 放弃了对 IE `6`、`7` 和 `8` 的支持，这减少了 1.9 版本中大量的代码库。但不必担心，jQuery 2.0 的 API 与 1.9 兼容，这意味着可以使用条件注释为任何不支持 2.0 的浏览器加载 jQuery 1.9：
+幸运的是，`jQuery 2.0` 解决了大部分文件大小问题。`jQuery 2.0` 提供了类似于 `jQuery UI` 的模块化构建过程，允许你构建一个特定项目的库实例，并针对你正在使用的 API 进行定制。此外，`jQuery 2.0` 放弃了对 IE `6`、`7` 和 `8` 的支持，这减少了 1.9 版本中大量的代码库。但不必担心，`jQuery 2.0` 的 API 与 1.9 兼容，这意味着可以使用条件注释为任何不支持 2.0 的浏览器加载 `jQuery 1.9`：
 
 ```html
 <!--[if lt IE 9]>
@@ -113,19 +100,19 @@ jQuery('.my-element').addClass('my-class').fadeIn().click(myClickHandler)
 <!--<![endif]-->
 ```
 
-## jQuery 社区
+#### jQuery 社区
 
-jQuery 的普及也是一个显著的优势。强大的 jQuery 社区以多种方式改进了代码库：
+`jQuery` 的普及也是一个显著的优势。强大的 `jQuery` 社区以多种方式改进了代码库：
 
 - 几位核心贡献者不断编写和重写不同的 API——提高性能，扩展功能范围，并修复 Bug 和跨浏览器问题。
 - 海量的开发者正在使用该库。这些开发者将测试推向极限，在大量的用例和环境中测试该库，从而发现（并希望报告）任何进入稳定版本的 Bug。
-- 每当你在 jQuery 中遇到问题或不理解的内容时，也可以寻求社区的帮助。[`api.jquery.com`](http://api.jquery.com/) 上的文档非常完整，应该是你的首选资源。此外，整个网络上的大量教程描述了如何处理常见的 jQuery 问题以及如何构建你应用中可能需要的大型组件。最后，如果你找不到解决问题的方法，只需在 [`stackoverflow.com`](http://www.stackoverflow.com/) 上提问，其他 jQuery 开发者定会来救你的急。
+- 每当你在 `jQuery` 中遇到问题或不理解的内容时，也可以寻求社区的帮助。[`api.jquery.com`](http://api.jquery.com/) 上的文档非常完整，应该是你的首选资源。此外，整个网络上的大量教程描述了如何处理常见的 `jQuery` 问题以及如何构建你应用中可能需要的大型组件。最后，如果你找不到解决问题的方法，只需在 [`stackoverflow.com`](http://www.stackoverflow.com/) 上提问，其他 `jQuery` 开发者定会来救你的急。
 
-## 通过通用 CDN 引入 jQuery
+#### 通过通用 CDN 引入 jQuery
 
-你已经发现 jQuery 的普及如何让代码库和文档受益。但你知不知道它还可以改进在网站上引入的方式？有如此多的网站在使用 jQuery，让每个网站都单独引入它并没有意义。为什么用户在访问每个使用这个流行库的网站时，都要下载相同的 jQuery 核心呢？幸运的是，Google 将 jQuery 托管在内容分发网络（CDN）上，你可以利用它缩短用户的下载时间。CDN 是高度优化的服务器，旨在快速提供 JavaScript 等静态文件。但作为 CDN 并不重要，重要的是这些代码是**通用**的。
+你已经发现 `jQuery` 的普及如何让代码库和文档受益。但你知不知道它还可以改进在网站上引入的方式？有如此多的网站在使用 `jQuery`，让每个网站都单独引入它并没有意义。为什么用户在访问每个使用这个流行库的网站时，都要下载相同的 `jQuery` 核心呢？幸运的是，Google 将 `jQuery` 托管在内容分发网络（CDN）上，你可以利用它缩短用户的下载时间。CDN 是高度优化的服务器，旨在快速提供 `JavaScript` 等静态文件。但作为 CDN 并不重要，重要的是这些代码是**通用**的。
 
-尽管大多数网站仍然提供自己的 jQuery，但有足够的网站在使用 Google 的 CDN，这值得这样做。如果你的用户最近访问过这些网站中的一个，脚本就会缓存在他们的浏览器中，这意味着即使是第一次访问你的网站，他们也不需要下载 jQuery。这种方法带来的性能提升是巨大的，你可以为成为利用此 CDN 的网站网络的一部分感到自豪——参与的网站越多，这种方法就越有利。
+尽管大多数网站仍然提供自己的 `jQuery`，但有足够的网站在使用 Google 的 CDN，这值得这样做。如果你的用户最近访问过这些网站中的一个，脚本就会缓存在他们的浏览器中，这意味着即使是第一次访问你的网站，他们也不需要下载 `jQuery`。这种方法带来的性能提升是巨大的，你可以为成为利用此 CDN 的网站网络的一部分感到自豪——参与的网站越多，这种方法就越有利。
 
 需要记住，使用 CDN 仅改进了下载时间。实例化时间仍然是一个问题，而且不容忽视。
 
@@ -135,56 +122,52 @@ jQuery 的普及也是一个显著的优势。强大的 jQuery 社区以多种�
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 ```
 
-此脚本请求 jQuery 的最新稳定版本并将其包含在你的网站中。然而，建议请求最新版本的 jQuery。jQuery 中的 API 会变得过时并最终不再支持，这在从版本 1.9 到 2.0 的过渡中尤为明显。因此，在调用 CDN 时指定你想使用的 jQuery 版本是一个更好的实践做法：
+此脚本请求 `jQuery` 的最新稳定版本并将其包含在你的网站中。然而，建议请求最新版本的 `jQuery`。`jQuery` 中的 API 会变得过时并最终不再支持，这在从版本 1.9 到 2.0 的过渡中尤为明显。因此，在调用 CDN 时指定你想使用的 `jQuery` 版本是一个更好的实践做法：
 
 ```html
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 ```
 
-此脚本拉取 jQuery 1.9.1 版本，因为路径中明确指定了版本。
+此脚本拉取 `jQuery 1.9.1` 版本，因为路径中明确指定了版本。
 
-省略 http 协议可以确保你的浏览器使用页面当前正在使用的任何协议。这可以防止你的浏览器对提供协议不匹配的资源报错。但如果你尝试使用 `file:///` 协议在本地打开 HTML 文件，它将无法工作。
+省略 `http` 协议可以确保你的浏览器使用页面当前正在使用的任何协议。这可以防止你的浏览器对提供协议不匹配的资源报错。但如果你尝试使用 `file:///` 协议在本地打开 HTML 文件，它将无法工作。
 
-## Zepto
+### Zepto
 
-Zepto 是 jQuery 的轻量级替代方案，最初是作为移动库开发的。但凭借其类似于 jQuery 的 API 和较小的文件大小，它是任何项目的绝佳选择。
+`Zepto` 是 `jQuery` 的轻量级替代方案，最初是作为移动库开发的。但凭借其类似于 `jQuery` 的 API 和较小的文件大小，它是任何项目的绝佳选择。
 
-本书的大部分内容使用 jQuery，但值得注意的是 Zepto 是更轻量级的替代方案。
+本书的大部分内容使用 `jQuery`，但值得注意的是 `Zepto` 是更轻量级的替代方案。
 
-### Zepto 的优势
+#### Zepto 的优势
 
-Zepto 的主要优势是文件大小；它仅重 8K 多，是目前最小的全功能库之一。尽管体积很小，Zepto 能够提供用于应用程序开发的实用工具包。jQuery 支持 的大部分常用 API 和方法，不支持的部分通常可以通过自定义 JavaScript 轻松绕过。要了解更多关于 Zepto 的功能，请访问其文档网站 [`www.zeptojs.com`](http://www.zeptojs.com/)。
+`Zepto` 的主要优势是文件大小；它仅重 8K 多，是目前最小的全功能库之一。尽管体积很小，`Zepto` 能够提供用于应用程序开发的实用工具包。`jQuery` 支持的大部分常用 API 和方法，不支持的部分通常可以通过自定义 `JavaScript` 轻松绕过。要了解更多关于 `Zepto` 的功能，请访问其文档网站 [`www.zeptojs.com`](http://www.zeptojs.com/)。
 
-此外，由于 Zepto 拥有很大程度上兼容 jQuery 的 API，它非常易于使用，特别是如果你已经熟悉 jQuery 的话。你可以完全相同的方式复用 jQuery 中的许多方法，并方便地链式调用以获得更整洁的代码。这意味着你今天就可以开始使用 Zepto，甚至无需查看它的文档。
+此外，由于 `Zepto` 拥有很大程度上兼容 `jQuery` 的 API，它非常易于使用，特别是如果你已经熟悉 `jQuery` 的话。你可以完全相同的方式复用 `jQuery` 中的许多方法，并方便地链式调用以获得更整洁的代码。这意味着你今天就可以开始使用 `Zepto`，甚至无需查看它的文档。
 
-最后，如果你为移动端开发应用，Zepto 还包含了一些基础的触摸事件，你可以利用这些事件来实现更好的触摸屏交互：
+最后，如果你为移动端开发应用，`Zepto` 还包含了一些基础的触摸事件，你可以利用这些事件来实现更好的触摸屏交互：
 
 - 点击事件：`tap`、`singleTap`、`doubleTap`、`longTap`
 - 滑动事件：`swipe`、`swipeLeft`、`swipeRight`、`swipeUp`、`swipeDown`
 
-如果你正在构建移动端应用，还有一些额外的库可以使用。你可以在 第 10 章 中找到更多关于这些和其他移动技术的知识。
+如果你正在构建移动端应用，还有一些额外的库可以使用。你可以在 **第 10 章** 中找到更多关于这些和其他移动技术的知识。
 
-### 不支持 IE
+#### 不支持 IE
 
-但在你对 Zepto 感到兴奋之前，重要的是记住它不支持 Internet Explorer。这个问题并不是库开发者 Thomas Fuchs 的跨浏览器失误。相反，这是一个为了减小文件大小而做出的自觉决定，就像 jQuery 团队决定从 2.0 版本开始放弃旧版 IE 一样。
+但在你对 `Zepto` 感到兴奋之前，重要的是记住它不支持 Internet Explorer。这个问题并不是库开发者 Thomas Fuchs 的跨浏览器失误。相反，这是一个为了减小文件大小而做出的自觉决定，就像 `jQuery` 团队决定从 2.0 版本开始放弃旧版 IE 一样。
 
-从历史上来看，令无数开发者感到痛苦的是，IE 遭受了一系列兼容性问题。它就是不遵守标准，每个主版本都有自己细微的特性。新版本的 IE 在弥补这些兼容性差距方面做出了显著努力，但事实仍然是，IE 处理许多 JavaScript 和 DOM 问题时采用了坚然非标准的方法，并且在 HTML5 标准和功能方面落后于其他浏览器。
+从历史上来看，令无数开发者感到痛苦的是，IE 遭受了一系列兼容性问题。它就是不遵守标准，每个主版本都有自己细微的特性。新版本的 IE 在弥补这些兼容性差距方面做出了显著努力，但事实仍然是，IE 处理许多 `JavaScript` 和 DOM 问题时采用了坚决非标准的方法，并且在 `HTML5` 标准和功能方面落后于其他浏览器。
 
-大多数 JavaScript 库（如 jQuery）通过额外代码处理这些跨浏览器问题，以便你永远不需要看到这些问题。然而，这些额外代码导致了大量的臃肿。Zepto 决定精减这些“脂肪”。对于通常不需要担心 IE 的移动应用来说，这是很棒的。但在涉及到桌面应用时，这可能会是一个致命的缺陷。
+大多数 `JavaScript` 库（如 `jQuery`）通过额外代码处理这些跨浏览器问题，以便你永远不需要看到这些问题。然而，这些额外代码导致了大量的臃肿。`Zepto` 决定精减这些“脂肪”。对于通常不需要担心 IE 的移动应用来说，这是很棒的。但在涉及到桌面应用时，这可能会是一个致命的缺陷。
 
-由于 Zepto 使用 jQuery 语法，它的文档建议回退到 jQuery 作为 IE 的备选方案。这样你的应用在 IE 中仍然可以运行，而其他浏览器可以获得 Zepto 在文件大小上的优势。然而，这两个 API 并不完全兼容，因此请谨慎使用这种方法并进行彻底测试。如果你仍然想尝试这种方法，可以在这里了解该技术：[`http://zeptojs.com/#download`](http://zeptojs.com/#download)。
+由于 `Zepto` 使用 `jQuery` 语法，它的文档建议回退到 `jQuery` 作为 IE 的备选方案。这样你的应用在 IE 中仍然可以运行，而其他浏览器可以获得 `Zepto` 在文件大小上的优势。然而，这两个 API 并不完全兼容，因此请谨慎使用这种方法并进行彻底测试。如果你仍然想尝试这种方法，可以在这里了解该技术：[`http://zeptojs.com/#download`](http://zeptojs.com/#download)。
 
+## 原生 DOM (Vanilla DOM)
 
+当然，你完全不需要使用 `JavaScript` 库。库会给你的应用增加不必要的臃肿，即使是像 `Zepto` 这样较小的也是。
 
+### 原生 DOM 的优缺点
 
-
-# 原生 DOM (Vanilla DOM)
-
-当然，你完全不需要使用 JavaScript 库。库会给你的应用增加不必要的臃肿，即使是像 `Zepto` 这样较小的也是。
-
-## 原生 DOM 的优缺点
-
-编写所有 JavaScript 的主要优势是你只需要包含和编写你的内容，而主要的缺点是增加了开发时间。根据定义，JavaScript 库包含了应用程序中通常使用的各种功能，但极不太可能任何单个应用会使用其中所有功能。那些多余的未使用的 JavaScript 属于不必要的臃肿范畴。然而，你必须权衡文件大小的收益与额外开发时间之间的关系，如果你从未从零开始编写过 JavaScript 应用，你可能低估了其中涉及的时间。
+编写所有 `JavaScript` 的主要优势是你只需要包含和编写你的内容，而主要的缺点是增加了开发时间。根据定义，`JavaScript` 库包含了应用程序中通常使用的各种功能，但极不可能任何单个应用会使用其中所有功能。那些多余的未使用的 `JavaScript` 属于不必要的臃肿范畴。然而，你必须权衡文件大小的收益与额外开发时间之间的关系，如果你从未从零开始编写过 `JavaScript` 应用，你可能低估了其中涉及的时间。
 
 我相信你已经意识到，你需要编写各种脚本来处理应用所需的所有功能。但你可能还没有考虑到为这些功能中的每一个都要进行跨浏览器兼容性开发。
 
@@ -199,7 +182,7 @@ elem.addEventListener('click', function(e) {
 }, false);
 ```
 
-这将在 Chrome、Firefox、Safari、Opera 和 IE9+ 中任何 ID 为 `my-element` 的元素上绑定点击事件。然而，旧版本的 IE 对标准的支持是臭名的极差。为了兼容这些浏览器，你需要使用 `attachEvent`：
+这将在 Chrome、Firefox、Safari、Opera 和 IE9+ 中任何 ID 为 `my-element` 的元素上绑定点击事件。然而，旧版本的 IE 对标准的支持是臭名昭著的极差。为了兼容这些浏览器，你需要使用 `attachEvent`：
 
 ```javascript
 var elem = document.getElementByID('my-element');
@@ -224,7 +207,7 @@ else if ( document.attachEvent ) {
 }
 ```
 
-这个基础脚本只是开始。你可能想写一个通用处理程序来处理所有类型的事件，就像这段来自 NetTuts+ 的脚本（[`net.tutsplus.com/tutorials/javascript-ajax/javascript-from-null-cross-browser-event-binding`](http://net.tutsplus.com/tutorials/javascript-ajax/javascript-from-null-cross-browser-event-binding/))):
+这个基础脚本只是开始。你可能想写一个通用处理程序来处理所有类型的事件，就像这段来自 NetTuts+ 的脚本（[`net.tutsplus.com/tutorials/javascript-ajax/javascript-from-null-cross-browser-event-binding`](http://net.tutsplus.com/tutorials/javascript-ajax/javascript-from-null-cross-browser-event-binding/)）：
 
 ```javascript
 var addEvent = (function( window, document ) {  
@@ -259,9 +242,9 @@ var addEvent = (function( window, document ) {
 
 如果你感到害怕了，那是好事。原生 DOM 不可小视，而且它会变得更加复杂。与其他跨浏览器实现（如 Ajax）相比，事件绑定相对简单。虽然我不能否认编写原生 DOM 的好处，但也无法假装它很容易。
 
-值得注意的是，即使你编写了原生 DOM，也不能保证它在文件大小上比库小。流行的 JavaScript 库如 `jQuery` 和 `Zepto` 已经由其贡献者对各种问题（包括文件大小）进行了仔细审查。如果你编写了大量的工具函数，你可能会发现它们比像 `Zepto` 这样较小的库（约 8 K）还要大。
+值得注意的是，即使你编写了原生 DOM，也不能保证它在文件大小上比库小。流行的 `JavaScript` 库如 `jQuery` 和 `Zepto` 已经由其贡献者对各种问题（包括文件大小）进行了仔细审查。如果你编写了大量的工具函数，你可能会发现它们比像 `Zepto` 这样较小的库（约 8 K）还要大。
 
-## 添加第三方工具
+### 添加第三方工具
 
 尽管如此，你仍然不需要自己编写所有内容。相反，你可以组装一组工具函数。寻找这些函数的绝佳资源是 [`www.MicroJS.com`](http://www.microjs.com/)。
 
@@ -271,43 +254,40 @@ var addEvent = (function( window, document ) {
 
 ## 使用框架
 
-最近，在前端开发中使用全功能框架来多走一步已已变得流行。框架不仅仅是一个 JavaScript 库，因为它提供了样式和各种深度功能，例如表单控件。我倾向于避开框架，倾向于将 JavaScript 库、各种插件和自定义 CSS 拼凑在一起。这样我就可以创建一个符合我项目需求的自定义构建。但框架确实可以加速开发，我鼓励你尝试一下。
+最近，在前端开发中使用全功能框架来多走一步已变得流行。框架不仅仅是一个 `JavaScript` 库，因为它提供了样式和各种深度功能，例如表单控件。我倾向于避开框架，倾向于将 `JavaScript` 库、各种插件和自定义 CSS 拼凑在一起。这样我就可以创建一个符合我项目需求的自定义构建。但框架确实可以加速开发，我鼓励你尝试一下。
 
 你可以像雕塑家一样做这个决定。你是喜欢用粘土雕塑，根据需要将组件组合在一起？还是喜欢在大理石上雕塑，拿一整块石头并凿掉不需要的部分？无论哪种方式，你最终都会到达类似的点。问题在于你想如何到达。
 
 ### Bootstrap
 
-Bootstrap 提供了一套可以用于创建整个应用的功能和主题。Bootstrap 最初由 Twitter 为其自己的网站开发，后来向公众发布。Bootstrap 提供了从响应式网格布局到表单控件的所有内容。它包含了各种组件和 JavaScript 插件，你可以利用它们来快速构建网站。Bootstrap 的插件包含了常用组件，如模态对话框、下拉菜单、工具提示和图像轮播。Bootstrap 中的所有内容都使用一个共同主题进行样式处理，带有图标等。
+`Bootstrap` 提供了一套可以用于创建整个应用的功能和主题。`Bootstrap` 最初由 Twitter 为其自己的网站开发，后来向公众发布。`Bootstrap` 提供了从响应式网格布局到表单控件的所有内容。它包含了各种组件和 `JavaScript` 插件，你可以利用它们来快速构建网站。`Bootstrap` 的插件包含了常用组件，如模态对话框、下拉菜单、工具提示和图像轮播。`Bootstrap` 中的所有内容都使用一个共同主题进行样式处理，带有图标等。
 
-如果你想快速启动网站且不需要遵循特定的设计方向，Bootstrap 是棒棒。当然，你可以自己为 Bootstrap 中的所有内容设置样式，但它的主要目的是提供它自带的 UI 视觉效果和体验。
+如果你想快速启动网站且不需要遵循特定的设计方向，`Bootstrap` 是极好的。当然，你可以自己为 `Bootstrap` 中的所有内容设置样式，但它的主要目的是提供它自带的 UI 视觉效果和体验。
 
 ### jQuery UI
 
 另一个选项 `jQuery UI` 并不完全是一个框架。它更是一组你可以用来增强表单元素和网站其他方面的工具。但由于它本质上是一组 `jQuery` 插件，用于为常见的 UI 元素提供样式和功能，我将它与其他框架放在一起。
 
+然而，是否将 `jQuery UI` 作为框架取决于你自己。你可以使用它所有的控件，如标签（tabs）、手风琴（accordions）和其他组件来构建你的整个网站。或者，你也可以将 `jQuery UI` 更多视为一组插件。你可以从中挑选你喜欢的组件——例如，使用它为你那些正在用自己自定义代码构建的表单添加一个日期选择器。是的，你可以找到单独的插件来满足这些特定需求，但 `jQuery UI` 的核心部分构建得非常精良，你可以轻松创建一个自定义版本，从而避免因未使用的组件导致过多的臃肿。
 
+我个人而言，我将 `jQuery UI` 作为一组插件来使用，因为我不喜欢在 `JavaScript` 中包含过多的样式，并且更倾向于为标签和模态对话框等基础组件手动编写 CSS。
 
+## 移动端框架
 
-然而，是否将 jQuery UI 作为框架取决于你自己。你可以使用它所有的控件，如标签（tabs）、手风琴（accordions）和其他组件来构建你的整个网站。或者，你也可以将 jQuery UI 更多视为一组插件。你可以从中挑选你喜欢的组件——例如，使用它为你那些正在用自己自定义代码构建的表单添加一个日期选择器。是的，你可以找到单独的插件来满足这些特定需求，但 jQuery UI 的核心部分构建得非常精良，你可以轻松创建一个自定义版本，从而避免因未使用的组件导致过多的臃肿。
-
-我个人而言，我将 jQuery UI 作为一组插件来使用，因为我不喜欢在 JavaScript 中包含过多的样式，并且更倾向于为标签和模态对话框等基础组件手动编写 CSS。
-
-# 移动端框架
-
-有很多优秀的移动框架可用，例如 jQuery Mobile 和 Sencha Touch。你可以在第 10 章中找到更多关于这些框架以及移动开发的知识。
+有很多优秀的移动框架可用，例如 `jQuery Mobile` 和 `Sencha Touch`。你可以在 **第 10 章** 中找到更多关于这些框架以及移动开发的知识。
 
 ## 杂项脚本
 
-还有许多你可能想要包含在应用程序中的杂项脚本和工具。我几乎在每个项目中都会包含其中两个脚本：Modernizr 和 HTML5 Shiv。
+还有许多你可能想要包含在应用程序中的杂项脚本和工具。我几乎在每个项目中都会包含其中两个脚本：`Modernizr` 和 `HTML5 Shiv`。
 
 ### Modernizr
 
-Modernizr 是一个小型脚本，可以帮助你构建现代应用程序，同时仍支持旧版浏览器。基本上，Modernizr 是一组特征检测，你可以使用它来确定用户的浏览器支持哪些 CSS3 和 HTML5 特性。
+`Modernizr` 是一个小型脚本，可以帮助你构建现代应用程序，同时仍支持旧版浏览器。基本上，`Modernizr` 是一组特征检测，你可以使用它来确定用户的浏览器支持哪些 CSS3 和 HTML5 特性。
 
-Modernizr 的方法是在 `<html>` 元素上添加类名，描述 CSS 中哪些特性可用。例如，如果 `background-size` 可用，它会向 `<html>` 元素添加 `backgroundsize` 类。然后你就可以使用 CSS 针对这两种情况：
+`Modernizr` 的方法是在 `<html>` 元素上添加类名，描述 CSS 中哪些特性可用。例如，如果 `background-size` 可用，它会向 `<html>` 元素添加 `backgroundsize` 类。然后你就可以使用 CSS 针对这两种情况：
 
 ```css
-/* 不 background-size */
+/* 不支持 background-size */
 html .my-element {
   background-image: url(../path-to/non-sizable-image.png);
   background-repeat: repeat;
@@ -320,15 +300,15 @@ html.backgroundsize .my-element {
 }
 ```
 
-你可以使用这种方法来针对各种特性，并使用类名或 Modernizr API 来针对你想要用 JavaScript 使用的 HTML5 特性。有关 Modernizr 及其它支持的检测类型的更多信息，请访问[`www.modernizr.com`](http://www.modernizr.com)。
+你可以使用这种方法来针对各种特性，并使用类名或 `Modernizr` API 来针对你想要用 `JavaScript` 使用的 HTML5 特性。有关 `Modernizr` 及其它支持的检测类型的更多信息，请访问[`www.modernizr.com`](http://www.modernizr.com)。
 
-Modernizr 允许你创建一个自定义版本，只检测你关心的特性。我鼓励你这样做，因为它可以减小文件大小并缩短脚本的实例化时间。
+`Modernizr` 允许你创建一个自定义版本，只检测你关心的特性。我鼓励你这样做，因为它可以减小文件大小并缩短脚本的实例化时间。
 
 ### HTML5 Shiv
 
-HTML5 Shiv 是一个非常简单的脚本，允许旧浏览器识别 HTML5 元素，如 `<header>`、`<footer>`、`<nav>`、`<section>` 和 `<aside>`。如果没有像 HTML5 Shiv 这样的脚本，你仍然可以使用这些元素；但是应用于它们的 CSS 样式在不支持的浏览器中都会丢失。
+`HTML5 Shiv` 是一个非常简单的脚本，允许旧浏览器识别 `HTML5` 元素，如 `<header>`、`<footer>`、`<nav>`、`<section>` 和 `<aside>`。如果没有像 `HTML5 Shiv` 这样的脚本，你仍然可以使用这些元素；但是应用于它们的 CSS 样式在不支持的浏览器中都会丢失。
 
-由于我喜欢使用这些语义化标签，因此我构建的每个网站都会包含此脚本。要使用它，首先从 [`http://code.google.com/p/html5shiv`](http://code.google.com/p/html5shiv/) 下载脚本。接下来，在`<head>` 中的某个地方使用 IE 条件将其包含在你的网站中：
+由于我喜欢使用这些语义化标签，因此我构建的每个网站都会包含此脚本。要使用它，首先从 [`http://code.google.com/p/html5shiv`](http://code.google.com/p/html5shiv/) 下载脚本。接下来，在 `<head>` 中的某个地方使用 IE 条件将其包含在你的网站中：
 
 ```html
 <!--[if lt IE 9]>
@@ -338,25 +318,25 @@ HTML5 Shiv 是一个非常简单的脚本，允许旧浏览器识别 HTML5 元�
 
 使用条件判断是非常重要的，这样可以限制浏览器对不需要的资源的请求。由于 IE 8 及更低版本是唯一具有相当市场份额的不支持浏览器，你可以安全地在这里使用条件判断。此外，确保不要将此脚本包含在 `<body>` 中。它必须存在于 `<head>` 中，最好位于任何样式表声明之后（以获得更好的性能）。
 
-许多其他脚本和框架都包含了 HTML5 Shiv，所以请确保不要重复包含它。
+许多其他脚本和框架都包含了 `HTML5 Shiv`，所以请确保不要重复包含它。
 
 ### HTML5 Boilerplate
 
-HTML5 Boilerplate 不是一个库，也不是一个框架。它是一个你可以根据个人需求自定义的模板。Boilerplate 是一种基础状态，你可以将其作为基础在其之上构建你的应用程序。它是非侵入性且轻量级的，是任何 HTML5 项目的理想起点。
+`HTML5 Boilerplate` 不是一个库，也不是一个框架。它是一个你可以根据个人需求自定义的模板。Boilerplate 是一种基础状态，你可以将其作为基础在其之上构建你的应用程序。它是非侵入性且轻量级的，是任何 `HTML5` 项目的理想起点。
 
-HTML5 Boilerplate 结合了在本章中读到的很多内容；例如，它通过 Google CDN（带有本地备份）包含了 jQuery，以及 Modernizr 和 HTML5 Shiv。它还包含了 Normalize.css（CSS 重置的现代替代方案）以及许多基础样式和占位符图标。但其核心思想不是像使用框架一样使用它。这种基础状态旨在被完全自定义，而样式在大多数情况下是易于替换的占位符。最后，HTML5 Boilerplate 包含了一些服务器配置，以提高 Apache、Node 以及其他构建的性能。
+`HTML5 Boilerplate` 结合了在本章中读到的很多内容；例如，它通过 Google CDN（带有本地备份）包含了 `jQuery`，以及 `Modernizr` 和 `HTML5 Shiv`。它还包含了 `Normalize.css`（CSS 重置的现代替代方案）以及许多基础样式和占位符图标。但其核心思想不是像使用框架一样使用它。这种基础状态旨在被完全自定义，而样式在大多数情况下是易于替换的占位符。最后，`HTML5 Boilerplate` 包含了一些服务器配置，以提高 Apache、Node 以及其他构建的性能。
 
-HTML5 Boilerplate 兼顾了两者之长。它具有框架的所有优点，因为它提供了一个你可以用来启动应用程序的高标准基准线。但它并没有做得过头。
+`HTML5 Boilerplate` 兼顾了两者之长。它具有框架的所有优点，因为它提供了一个你可以用来启动应用程序的高标准基准线。但它并没有做得过头。
 
 ## 寻找 jQuery 插件
 
 当你通过库、框架或模板涵盖了核心功能后，你的应用程序很可能仍然需要其他功能。你可以自己构建这些每一个组件，但如果你希望有更快的开发进程，最好尝试寻找插件。这样，你就可以在自己不写一行代码的情况下，完成应用程序的大部分剩余工作。
 
-本节重点关注 jQuery 插件，因为它们非常流行。但大多数建议也适用于你可能使用的任何 JavaScript 插件。
+本节重点关注 `jQuery 插件`，因为它们非常流行。但大多数建议也适用于你可能使用的任何 `JavaScript` 插件。
 
 ### 在哪里（以及哪里不要）寻找
 
-寻找 jQuery 插件的最佳地点是 [`plugins.jquery.com`](http://plugins.jquery.com/) 官方注册表。在这个网站上，你可以搜索、浏览并找到由社区成员评分的插件。但 jQuery 的插件库并非详尽列表，你最终仍然需要依赖搜索引擎来寻找你需要的内容。通常情况下，插件质量越高，其搜索排名就越高（尽管这并非万无一失）。
+寻找 `jQuery 插件` 的最佳地点是 [`plugins.jquery.com`](http://plugins.jquery.com/) 官方注册表。在这个网站上，你可以搜索、浏览并找到由社区成员评分的插件。但 `jQuery` 的插件库并非详尽列表，你最终仍然需要依赖搜索引擎来寻找你需要的内容。通常情况下，插件质量越高，其搜索排名就越高（尽管这并非万无一失）。
 
 当你制定搜索词时，请尽可能具体。我建议避开诸如“25000+ jQuery 插件”这类格式的博客文章。这些通常是为了给网站引流的垃圾列表，其中包含的插件很少（甚至从未）经过仔细研究。
 
@@ -364,25 +344,15 @@ HTML5 Boilerplate 兼顾了两者之长。它具有框架的所有优点，因�
 
 当你考虑某个插件时，可以分析其许多因素。以下是在评估插件质量时可以考虑的清单：
 
-• 自己编写是否更好？如果功能非常简单，最好还是静下心来自己写它。毕竟，如果你编写它的时间比读完这份列表剩余的时间还要短，又何费此呢？此外，如果该插件与你使用的其他插件类似，那么添加另一个插件并使代码臃肿可能是不合理的。相反，你应该花一点时间扩展另一个插件以满足这两个需求。
-
-
-
-
-
-# 插件评估标准
+- 自己编写是否更好？如果功能非常简单，最好还是静下心来自己写它。毕竟，如果你编写它的时间比读完这份列表剩余的时间还要短，又何费此呢？此外，如果该插件与你使用的其他插件类似，那么添加另一个插件并使代码臃肿可能是不合理的。相反，你应该花一点时间扩展另一个插件以满足这两个需求。
 
 - 文档是否完善？插件的文档几乎与插件本身一样重要。当你学习如何使用插件或遇到问题时，文档是你首选查阅的地方。此外，花时间编写良好的文档说明开发者在意发布一个高质量的插件，而不是仅仅为了给博客引流而把在其他项目中写的代码随手拿来。
 
 - 是否有良好的支持记录？务必检查插件最近的更新时间。如果它得到了持续维护，这说明开发者在意发布质量的良好信号，也意味着当你遇到任何无法解决的问题时，他或她会为你提供帮助。如果插件是以博客文章的形式发布的，请检查作者回复的最后评论。还要检查开发者上次修复 Bug 或添加新功能的时间。当然，插件可能已经开发得非常完善，没有更多可以添加的内容了，但良好的支持是一个非常积极的信号。
 
-- 是否使用标准的参数签名模式？在查看文档时，你会看到插件是如何接收参数的。在使用了一些插件后，你会发现插件选项传递方式的一些共同趋势。
+- 是否使用标准的参数签名模式？在查看文档时，你会看到插件是如何接收参数的。在使用了一些插件后，你会发现插件选项传递方式的一些共同趋势。处理选项没有唯一的正确方法，但任何具有奇特参数签名模式的插件都是一个巨大的警示。这表明开发者对插件开发并不熟悉，或者开发者没有花心思考虑插件的架构。
 
-处理选项没有唯一的正确方法，但任何具有奇特参数签名模式的插件都是一个巨大的警示。这表明开发者对插件开发并不熟悉，或者开发者没有花心思考虑插件的架构。
-
-- 标记要求是否简单？如果插件依赖源码中的任何标记，那么这些标记的格式就非常重要。
-
-这个问题包含两个方面：首先，奇怪或僵化的标记要求会让插件变得更难用，因为你必须调整自己的标记来适应插件的特定需求。其次，语义化较差或需要看似不必要的元素的标记，表明插件开发者缺乏技能。
+- 标记要求是否简单？如果插件依赖源码中的任何标记，那么这些标记的格式就非常重要。这个问题包含两个方面：首先，奇怪或僵化的标记要求会让插件变得更难用，因为你必须调整自己的标记来适应插件的特定需求。其次，语义化较差或需要看似不必要的元素的标记，表明插件开发者缺乏技能。
 
 - 是否使用了高质量的 CSS？如果插件使用了 CSS，那么这些 CSS 同样重要。良好的 CSS 表明开发者擅长前端工作。糟糕或过量的 CSS 并不意味着是否决因素，但无疑是一个警示。
 
@@ -398,7 +368,7 @@ HTML5 Boilerplate 兼顾了两者之长。它具有框架的所有优点，因�
 
 在本章中，你了解了如何利用其他脚本的基础来快速启动你的应用程序。
 
-你阅读了 JavaScript 库 `jQuery` 和 `Zepto`，以及完全避免使用库而编写原生 JavaScript 的优势。然后，你学习了如 `Bootstrap` 和 `jQuery UI` 等较大的框架，以及使用框架的优缺点。
+你阅读了 `JavaScript` 库 `jQuery` 和 `Zepto`，以及完全避免使用库而编写原生 `JavaScript` 的优势。然后，你学习了如 `Bootstrap` 和 `jQuery UI` 等较大的框架，以及使用框架的优缺点。
 
 接下来，你阅读了较小的工具脚本：`Modernizr` 和 `HTML5 Shiv`。随后，你接触了 `HTML5 Boilerplate`，它结合了库、工具脚本和基础样式创建一个模板。这个模板比某些框架没那么重，但仍然提供了许多相同的优势。
 
@@ -406,7 +376,7 @@ HTML5 Boilerplate 兼顾了两者之长。它具有框架的所有优点，因�
 
 ## 额外资源
 
-JavaScript 库列表请访问 [`http://en.wikipedia.org/wiki/List_of_JavaScript_libraries`](http://en.wikipedia.org/wiki/List_of_JavaScript_libraries)。
+`JavaScript` 库列表请访问 [`http://en.wikipedia.org/wiki/List_of_JavaScript_libraries`](http://en.wikipedia.org/wiki/List_of_JavaScript_libraries)。
 
 ## 库文档
 
@@ -442,9 +412,6 @@ JavaScript 库列表请访问 [`http://en.wikipedia.org/wiki/List_of_JavaScript_
 - `Building Your Own jQuery Plugins`: [`http://docs.jquery.com/`](http://docs.jquery.com/Plugins/Authoring)
 - `Essential jQuery Plugin Patterns`: [`http://coding.smashingmagazine.com/2011/10/11/essential-jquery-plugin-patterns/`](http://coding.smashingmagazine.com/2011/10/11/essential-jquery-plugin-patterns/)
 
-
-
-
 《Learning jQuery，第三版》，Jonathon Cather 和 Karl Swedberg 著；Packt Publishing（2011 年 9 月）：ISBN 978-1849516549 [`http://amzn.to/XHo8Eb`](http://amzn.to/XHo8Eb)
 
 《jQuery Cookbook》，Cody Lindley 著；O'Reilly Media（2009 年 11 月）：ISBN 978-0-596-15977-1 [`http://shop.oreilly.com/product/9780596159788.do`](http://shop.oreilly.com/product/9780596159788.do)
@@ -461,7 +428,7 @@ JavaScript 库列表请访问 [`http://en.wikipedia.org/wiki/List_of_JavaScript_
 
 # 第 3 章：Backbone.js
 
-Backbone 为你的应用提供了结构。它提供了一个合理的框架，用于存储应用数据，并将这些数据作为屏幕内容传递给用户。它还可以管理这些数据与数据库或本地存储的同步。在本章中，你将了解到如何使用 `Backbone` 模型（models）和集合（collections）来存储应用数据。然后你将学习如何将这些数据绑定到显示的内容上。内容的任何变化都会在屏幕上自动更新。此外，你还将发现如何与数据库服务器同步 `Backbone` 数据，从而允许你保存和获取数据，并创建一个跨不同会话（sessions）的持久状态。
+`Backbone` 为你的应用提供了结构。它提供了一个合理的框架，用于存储应用数据，并将这些数据作为屏幕内容传递给用户。它还可以管理这些数据与数据库或本地存储的同步。在本章中，你将了解到如何使用 `Backbone` 模型（models）和集合（collections）来存储应用数据。然后你将学习如何将这些数据绑定到显示的内容上。内容的任何变化都会在屏幕上自动更新。此外，你还将发现如何与数据库服务器同步 `Backbone` 数据，从而允许你保存和获取数据，并创建一个跨不同会话（sessions）的持久状态。
 
 本章还涵盖了如何将不同的 URL 绑定到应用的不同状态，以便你能够为应用构建导航和书签支持。最后，你将了解如何为数据的任何变化设置自定义处理程序，以及如何对集合进行操作和排序。
 
@@ -471,7 +438,7 @@ Backbone 为你的应用提供了结构。它提供了一个合理的框架，�
 
 ## 什么是 Backbone？
 
-`Backbone` 是一个 JavaScript MVC 框架，它将服务器端框架中常见的 MVC 模式的所有概念带到了前端。基本上，它允许你将应用数据与显示给查看者的视图和用户界面解耦。
+`Backbone` 是一个 `JavaScript` MVC 框架，它将服务器端框架中常见的 MVC 模式的所有概念带到了前端。基本上，它允许你将应用数据与显示给查看者的视图和用户界面解耦。
 
 `Backbone` 提供了在模型中保存数据的方法。然后你可以将这些模型同步到视图。这意味着每当数据发生变化时，这些变化会自动反映在屏幕内容上。此外，这些模型可以使用 `Ajax` 请求与服务器同步。同样，任何变化都可以在两个方向上自动同步，确保应用中的数据在不同页面和会话之间保持持久化。
 
@@ -479,7 +446,7 @@ Backbone 为你的应用提供了结构。它提供了一个合理的框架，�
 
 ## 为什么要使用 Backbone？
 
-`Backbone` 所做的一切，你都可以自己实现。事实上，你可能已经实现了其中的很大一部分。但 `Backbone` 将所有这些零散的脚本统一到了一个编写良好且经过充分测试的单一框架中。简而言之，`Backbone` 让处理数据变得轻而易举。它避免了在将 JavaScript 数据与屏幕内容关联以及通过 `Ajax` 同步这些数据时通常编写的“面条代码”。
+`Backbone` 所做的一切，你都可以自己实现。事实上，你可能已经实现了其中的很大一部分。但 `Backbone` 将所有这些零散的脚本统一到了一个编写良好且经过充分测试的单一框架中。简而言之，`Backbone` 让处理数据变得轻而易举。它避免了在将 `JavaScript` 数据与屏幕内容关联以及通过 `Ajax` 同步这些数据时通常编写的“面条代码”。
 
 当你使用 `Backbone` 时，应用中的数据与显示给用户的内容完全隔离。它还保持了数据与与服务器同步的过程之间的分离。
 
@@ -504,15 +471,15 @@ Backbone 为你的应用提供了结构。它提供了一个合理的框架，�
 
 ## 何时使用 Backbone
 
-一旦你开始使用 `Backbone`，你就会惊奇在没有它的情况下是如何构建某些项目的。然而，对于许多项目，`Backbone` 是大过其实。`Backbone` 最适合需要处理大量数据的应用，特别是当这些数据与屏幕紧密相关时。事实上，对于交互性不强的网站，使用 `Backbone` 并不是好主意。你可以始终使用独立库和插件构建 JavaScript，而无需触碰 `Backbone`。
+一旦你开始使用 `Backbone`，你就会惊奇在没有它的情况下是如何构建某些项目的。然而，对于许多项目，`Backbone` 是大材小用。`Backbone` 最适合需要处理大量数据的应用，特别是当这些数据与屏幕紧密相关时。事实上，对于交互性不强的网站，使用 `Backbone` 并不是好主意。你可以始终使用独立库和插件构建 `JavaScript`，而无需触碰 `Backbone`。
 
 这并不是文件大小问题，因为 `Backbone` 非常轻量，而是开发问题——使用 `Backbone` 需要大量的额外设置。对于数据驱动的网站和应用，这些额外设置实际上会节省时间，但对于更静态的网站并不值得。
 
 ## 安装 Backbone
 
-要使用 Backbone，首先从 [`backbonejs.org`](http://backbonejs.org) 下载核心文件。你还需要从 [`http://underscorejs.org/](http://underscorejs.org/) 下载 `Backbone` 的唯一依赖 `Underscore.js`。
+要使用 `Backbone`，首先从 [`backbonejs.org`](http://backbonejs.org) 下载核心文件。你还需要从 [`http://underscorejs.org/`](http://underscorejs.org/) 下载 `Backbone` 的唯一依赖 `Underscore.js`。
 
-然后在页面上包含这两个脚本，将 `Underscore` 放在：
+然后在页面上包含这两个脚本，将 `Underscore` 放在前面：
 
 ```html
 <script src="js/underscore.min.js"></script>
@@ -538,16 +505,13 @@ user: {
 }
 ```
 
+在 `Backbone` 中，这些数据被保存为模型（model）。但 `Backbone` 模型的功能远不止于存储这些数据。它们包含了智能默认值、更改事件、验证等。
 
-
-
-在 Backbone 中，这些数据被保存为模型（model）。但 Backbone 模型的功能远不止于存储这些数据。它们包含了智能默认值、更改事件、验证等。
-
-一个良好的 Backbone 配置从为你的应用的数据模式（schema）定义这些模型开始。这与你的后端数据模式不一定有一一对应的关系，但可能接近。接下来，你设置事件监听器来跟踪模型的任何变化。但最重要的是，你还会创建一组验证规则，这些规则会在执行保存操作之前针对模型的属性进行运行。这样，你就可以为应用的业务逻辑创建单元测试，并在潜在数据问题出现之前将其排除。在模型与表示它们的视图（views）之间保持这种清晰的分离可以让业务逻辑测试变得容易得多。你可以专注于每个特定功能想要实现的目标，而无需担心页面上可能存在或不存在视觉元素。
+一个良好的 `Backbone` 配置从为你的应用的数据模式（schema）定义这些模型开始。这与你的后端数据模式不一定有一一对应的关系，但可能接近。接下来，你设置事件监听器来跟踪模型的任何变化。但最重要的是，你还会创建一组验证规则，这些规则会在执行保存操作之前针对模型的属性进行运行。这样，你就可以为应用的业务逻辑创建单元测试，并在潜在数据问题出现之前将其排除。在模型与表示它们的视图（views）之间保持这种清晰的分离可以让业务逻辑测试变得容易得多。你可以专注于每个特定功能想要实现的目标，而无需担心页面上可能存在或不存在视觉元素。
 
 ### 创建模型
 
-要创建一个新模型，使用 Backbone 的 `Model.extend()` 方法：
+要创建一个新模型，使用 `Backbone` 的 `Model.extend()` 方法：
 
 ```javascript
 // create the model
@@ -576,7 +540,7 @@ apple.set({ type: 'banana', color: 'yellow' });
 
 如你所见，你可以设置一个键值对，也可以使用对象设置一组属性。
 
-## 创建计算属性
+### 创建计算属性
 
 你还可以创建自定义的计算属性，例如：
 
@@ -598,7 +562,7 @@ console.log( apple.description() );
 
 这个示例返回字符串 `red, shiny apple`。注意你是如何配合插值字符串使用 `get()` 方法的。
 
-## 设置默认值
+### 设置默认值
 
 你还可以为模型设置智能默认值。这样，你就可以在不设置所有属性的情况下创建一个新项目：
 
@@ -621,7 +585,7 @@ console.log( apple.get('condition') );
 
 在属性通常是某一种特定值的情况下，默认值可以为你节省大量时间。但不要过度使用它们；仍然有些属性是你每次创建对象时都应该设置的。例如，你不想在这里设置默认的水果类型，因为每个水果都应该是不同的。
 
-## 使用 Initialize 函数
+### 使用 Initialize 函数
 
 `initialize` 函数是一个构造函数，在模型实例化时被调用。要使用它，你只需在传递配置对象时将函数赋值给该对象属性：
 
@@ -635,11 +599,11 @@ var Fruit = Backbone.Model.extend({
 
 每当你创建一个该模型的新实例时，此回调函数就会触发。
 
-## 使用 Backbone 事件
+### 使用 Backbone 事件
 
-Backbone 模型还包含许多事件，允许你跟踪模型的添加、删除、修改等任何变化。
+`Backbone` 模型还包含许多事件，允许你跟踪模型的添加、删除、修改等任何变化。
 
-### 为你的模型绑定事件
+#### 为你的模型绑定事件
 
 你可以在 `initialize()` 函数中使用 `on()` 方法绑定这些事件中的任何一个。例如，每当使用模型添加新项目时触发事件，你可以写道：
 
@@ -655,9 +619,9 @@ var Fruit = Backbone.Model.extend({
 
 注意我是如何使用 `this.get()` 来访问该模型的属性的，每个事件处理程序的上下文绑定到模型实例本身。
 
-### 跟踪模型更改
+#### 跟踪模型更改
 
-Backbone 中最常用的事件可能是 `change` 事件，因为它允许你将模型的更改与视图的视觉变化绑定。我将在本章后面详细介绍视图，所以现在我将保持简单并忽略实际的 DOM 更改。
+`Backbone` 中最常用的事件可能是 `change` 事件，因为它允许你将模型的更改与视图的视觉变化绑定。我将在本章后面详细介绍视图，所以现在我将保持简单并忽略实际的 DOM 更改。
 
 要跟踪模型的任何变化，你可以写：
 
@@ -694,7 +658,7 @@ apple.set('condition', 'moldy');
 
 在为多个属性附加更改事件时，请注意执行顺序问题。很难确定哪个属性监听器会先触发，因此要么确保回调是完全独立的，要么绑定单一的更改事件并手动检查每个属性的变化。
 
-## 验证你的模型
+### 验证你的模型
 
 设置模型时最重要的部分可能是创建验证。这样，你就可以进行完整性检查，并防止格式错误的数据被保存。例如，你可以设置验证来确保某个属性是数值：
 
@@ -725,7 +689,7 @@ apple.set( 'quantity', 'a bunch' );
 这段代码片段的作用如下：
 
 1. 我正在创建一个验证函数来检查水果模型中格式错误的数据。
-2. 如果设置了数量，Underscore 的 `isNumber()` 方法会检查它是否为数字。Underscore 是 Backbone 的前提条件，因此使用它的方法没有额外的开销。
+2. 如果设置了数量，`Underscore` 的 `isNumber()` 方法会检查它是否为数字。`Underscore` 是 `Backbone` 的前提条件，因此使用它的方法没有额外的开销。
 3. 如果模型验证失败，将触发错误事件。
 
 结果是，如果有人尝试将数量设为非数值，它将触发错误处理器并传递验证消息 `Quantity must be a number`。更重要的是，这些数据永远不会被保存到模型中，确保了模型的数据格式正确。
@@ -734,9 +698,9 @@ apple.set( 'quantity', 'a bunch' );
 
 ## 处理集合（Collections）
 
-在 Backbone 中，集合（collection）是一组模型。如果模型是对象，你可以将集合视为这些对象的数组。虽然 Backbone 集合除了对这些模型分组之外没有做更多，但理解它们仍然非常重要。毕竟，你最终可能会使用很多集合。
+在 `Backbone` 中，集合（collection）是一组模型。如果模型是对象，你可以将集合视为这些对象的数组。虽然 `Backbone` 集合除了对这些模型分组之外没有做更多，但理解它们仍然非常重要。毕竟，你最终可能会使用很多集合。
 
-## 创建集合
+### 创建集合
 
 这段代码使用水果模型创建一个项目集合：
 
@@ -752,17 +716,13 @@ var Fruits = Backbone.Collection.extend({
 
 在这里，集合是基于模型的。现在你可以向此集合模式中添加新项目：
 
-
-
-
-
 ```javascript
 var Fruit = Backbone.Model.extend({});
 
 var Fruits = Backbone.Collection.extend({
   model: Fruit
 });
-// 创建集合的集合实例
+// 创建集合的实例
 var fruitbowl = new Fruits({ type: 'apple', color: 'red' });
 // 向集合中添加另一个模型
 fruitbowl.add({ type: 'banana', color: 'yellow' });
@@ -772,7 +732,7 @@ fruitbowl.add({ type: 'banana', color: 'yellow' });
 
 或者，你也可以在创建集合时通过传递对象数组来一次添加多个项。
 
-## 创建集合事件
+### 创建集合事件
 
 与模型一样，你也可以为你的集合附加事件处理器。所有的事件都是可用的：`add`、`remove`、`change` 等。不过，对于集合，你可能会发现自己使用了一些新模式：即，`add` 和 `remove` 事件变得重要得多，因为你可能想要跟踪新项从集合数组中添加或移除的任何时候。例如，此脚本会在每当从集合中添加或移除项时触发事件：
 
@@ -798,11 +758,11 @@ var Fruits = Backbone.Collection.extend({
 
 ## 理解 Backbone View
 
-在 Backbone 中，视图（views）代表应用程序的用户界面元素，这些元素通常可以代表你的数据模型。尽管它们与页面上的标记密切相关，但不要将视图视为应用的标记；相反，它们是渲染标记的逻辑。
+在 `Backbone` 中，视图（views）代表应用程序的用户界面元素，这些元素通常可以代表你的数据模型。尽管它们与页面上的标记密切相关，但不要将视图视为应用的标记；相反，它们是渲染标记的逻辑。
 
-你可以在没有视图的情况下使用 Backbone，但视图是框架真正发光的地方，因为你可以为模型和集合中发生的任何变化绑定事件到视图，从而将应用中数据的任何变化与 DOM 的视觉变化相联系。如果你以前没有尝试过，你会对它给你的工作流带来的改变感到。在我看来，将数据绑定到视图是使用 Backbone 的主要原因，因为它消除了你原本会使用的大量面条式代码（spaghetti code）。
+你可以在没有视图的情况下使用 `Backbone`，但视图是框架真正发光的地方，因为你可以为模型和集合中发生的任何变化绑定事件到视图，从而将应用中数据的任何变化与 DOM 的视觉变化相联系。如果你以前没有尝试过，你会对它给你的工作流带来的改变感到惊讶。在我看来，将数据绑定到视图是使用 `Backbone` 的主要原因，因为它消除了你原本会使用的大量面条式代码（spaghetti code）。
 
-## 创建视图
+### 创建视图
 
 创建一个视图与创建一个模型或集合类似：
 
@@ -822,15 +782,15 @@ var appleView = new FruitView({
 
 这段代码片段中发生了几点操作：
 
-1. `el` 指向视图插入的元素。在这种情况下，Backbone 在 DOM 中寻找匹配 CSS 选择器 `#my-element` 的元素。这是创建视图元素的几种不同方法之一。
-2. 调用 `render` 函数来渲染视图。这是一个可选函数，不会被自动调用。在这种情况下，使用了 jQuery 的 `html()` 来渲染内容。
+1. `el` 指向视图插入的元素。在这种情况下，`Backbone` 在 DOM 中寻找匹配 CSS 选择器 `#my-element` 的元素。这是创建视图元素的几种不同方法之一。
+2. 调用 `render` 函数来渲染视图。这是一个可选函数，不会被自动调用。在这种情况下，使用了 `jQuery` 的 `html()` 来渲染内容。
 3. 当创建此视图的新实例时，会传入一个要绑定到视图的模型实例。这种方法是可选的；对于任何绑定到特定模型的视图，这都是良好的做法。这样，你可以在视图的任何时候通过 `this.model` 访问模型。
 
-### 使用 Render 函数
+#### 使用 Render 函数
 
-渲染函数是完全可选的。事实上，它们是一种常见的约定，而不是 Backbone 本身的一部分。创建它们并在需要时调用它们取决于你，例如每当特定模型发生变化时。
+渲染函数是完全可选的。事实上，它们是一种常见的约定，而不是 `Backbone` 本身的一部分。创建它们并在需要时调用它们取决于你，例如每当特定模型发生变化时。
 
-#### 调用渲染函数
+##### 调用渲染函数
 
 大多数情况下，你可能会在视图初始化时调用渲染函数；否则，视图将不会显示在页面上。例如，你在创建视图时渲染了以下视图：
 
@@ -851,16 +811,16 @@ var myView = new MyView ();
 
 在这里，当视图初始化时，它找到了 ID 为 `my-element` 的 DOM 元素，并将该元素的内部 HTML 替换为 `'Hello World!'`。
 
-渲染函数返回 `this`。这是一个非常常见的模式，因为允许渲染函数像 Backbone API 的其他部分一样保持链式调用。
+渲染函数返回 `this`。这是一个非常常见的模式，因为允许渲染函数像 `Backbone` API 的其他部分一样保持链式调用。
 
 通常，你可能希望将渲染函数绑定到特定模型的更改上。你很快就会发现如何使用更改事件的回调来实现这一点。
 
-#### 渲染模型
+##### 渲染模型
 
-在大多数情况下，Backbone 视图绑定到模型，这意味着你可能需要在渲染函数中访问该模型的属性。例如，你可能想要渲染关于特定用户的数据。首先，从模型开始：
+在大多数情况下，`Backbone` 视图绑定到模型，这意味着你可能需要在渲染函数中访问该模型的属性。例如，你可能想要渲染关于特定用户的数据。首先，从模型开始：
 
 ```javascript
-//为用户创建模型
+// 为用户创建模型
 var User = Backbone.Model.extend({});
 var user = new User({
   username: 'jonraasch',
@@ -900,13 +860,9 @@ var userView = new UserView({
 });
 ```
 
+`$el` 是 `Backbone` 如何随社区演进的一个示例。在 0.9 版本之前，在视图的 `initialize` 函数中通过 `this.$el = $(this.el)` 自定义定义它已成为一种常见模式。
 
-
-
-
-`$el` 是 Backbone 如何随社区演进的一个示例。在 0.9 版本之前，在视图的 `initialize` 函数中通过 `this.$el = $(this.el)` 自定义定义它已成为一种常见模式。
-
-## 引用现有元素
+### 引用现有元素
 
 在很多情况下，引用标记中已经存在的元素是有意义的。要引用现有元素，只需在创建视图时将 CSS 选择器传递给 `el` 即可：
 
@@ -920,11 +876,11 @@ var MyView = Backbone.View.extend({
 });
 ```
 
-在这里，Backbone 会找到 ID 为 `my-element` 的元素并将其用于该视图。你可以传递任何你想要的 CSS 选择器。但是，请确保你传递的是 CSS 选择器字符串而不是 DOM 引用。例如，你不能传递 jQuery 引用，如 `$(‘my-element')`。
+在这里，`Backbone` 会找到 ID 为 `my-element` 的元素并将其用于该视图。你可以传递任何你想要的 CSS 选择器。但是，请确保你传递的是 CSS 选择器字符串而不是 DOM 引用。例如，你不能传递 `jQuery` 引用，如 `$(‘my-element')`。
 
 在引用现有元素时，请确保你的 CSS 选择器引用的是唯一的元素，除非你想让视图修改所有引用的元素。
 
-如果你页面上有一个相当静态的部分，需要根据 Backbone 中的数据进行更改，那么引用现有元素是一个好主意。假设你的页眉中有一个欢迎消息（例如，`Welcome Kate`），如果用户修改了她的显示名称，该消息就需要更改。来看一些代码，从标记开始：
+如果你页面上有一个相当静态的部分，需要根据 `Backbone` 中的数据进行更改，那么引用现有元素是一个好主意。假设你的页眉中有一个欢迎消息（例如，`Welcome Kate`），如果用户修改了她的显示名称，该消息就需要更改。来看一些代码，从标记开始：
 
 ```html
 <header>
@@ -972,12 +928,12 @@ var welcomeMessageView = new WelcomeMessageView({
 
 这里有很多操作，所以请让我为你过一遍：
 
-1. 创建了视图并将其与标记中的 `<div class=”welcome-message"></div>` 关联。
+1. 创建了视图并将其与标记中的 `<div class="welcome-message"></div>` 关联。
 2. 创建了 `initialize` 函数，每当用户的显示名称发生变化时，它就会调用 `render` 函数。在为视图创建新实例也会调用 `render` 函数，以便它渲染出一个可靠的基础状态。
 3. 在 `render` 函数中，用户模型 `displayName` 属性的值被用于显示欢迎消息。
 4. 最后，创建了视图的新实例。它传递了之前创建的用户模型。
 
-现在，模型中的任何更改都绑定到浏览器中的视觉变化。要测试它，请尝试在你的 JavaScript 控制台中更改模型：
+现在，模型中的任何更改都绑定到浏览器中的视觉变化。要测试它，请尝试在你的 `JavaScript` 控制台中更改模型：
 
 ```javascript
 user.set('displayName', 'Katherine');
@@ -985,9 +941,9 @@ user.set('displayName', 'Katherine');
 
 你应该能看到页面上的欢迎消息发生了变化。
 
-## 创建新的视图元素
+### 创建新的视图元素
 
-你已经学习了如何为你的视图引用现有的 DOM 元素，但有时你可能想在 Backbone 中为视图创建一个新元素。要这样做，只需在创建视图时设置 `tagName` 即可：
+你已经学习了如何为你的视图引用现有的 DOM 元素，但有时你可能想在 `Backbone` 中为视图创建一个新元素。要这样做，只需在创建视图时设置 `tagName` 即可：
 
 ```javascript
 var MyView = Backbone.View.extend({
@@ -1008,17 +964,17 @@ var MyView = Backbone.View.extend({
 var myView = new MyView;
 ```
 
-这会创建一个 `<li class=”container” id=”my-view-wrapper"></li>`。
+这会创建一个 `<li class="container" id="my-view-wrapper"></li>`。
 
-虽然这些设置对于创建完全匹配的标记元素非常有用，但它们实际上都是可选的。如果你没有设置任何内容（并且没有设置 `el`），Backbone 仅会使用一个带有任何类或 ID 的 `<div>`。
+虽然这些设置对于创建完全匹配的标记元素非常有用，但它们实际上都是可选的。如果你没有设置任何内容（并且没有设置 `el`），`Backbone` 仅会使用一个带有任何类或 ID 的 `<div>`。
 
 如果你正在动态创建视图元素，请确保不要设置 `el`。
 
 这种方法在你向 DOM 注入新内容时最合理。例如，假设你想为集合中的每个项目创建一个元素列表。虽然列表可能存在于现有的 DOM 元素中，但你希望为每个项目创建一个新的视图元素。我将在下一节中介绍这种方法的实际示例。
 
-## 在 Backbone 中使用嵌套视图
+### 在 Backbone 中使用嵌套视图
 
-当你使用 Backbone 构建应用时，你会使用很多嵌套视图。虽然它们可能会变得有点复杂，但嵌套视图是不可避免的。幸运的是，许多最佳实践可以帮助你保持嵌套视图更有组织。
+当你使用 `Backbone` 构建应用时，你会使用很多嵌套视图。虽然它们可能会变得有点复杂，但嵌套视图是不可避免的。幸运的是，许多最佳实践可以帮助你保持嵌套视图更有组织。
 
 要实现这一点，你必须卷起袖子来。来看一些代码，从标记开始：
 
@@ -1026,7 +982,7 @@ var myView = new MyView;
 <ul id="band-wrapper"></ul>
 ```
 
-因为你使用 Backbone 填充此列表，标记是简单的。接下来，你创建集合：
+因为你使用 `Backbone` 填充此列表，标记是简单的。接下来，你创建集合：
 
 ```javascript
 var Band = {};
@@ -1047,7 +1003,7 @@ var band = new Band.Members([
 
 如你所示，你正在创建一个包含四个成员的集合。
 
-### 为每个列表项创建视图
+#### 为每个列表项创建视图
 
 现在，你为每个成员创建一个视图：
 
@@ -1065,7 +1021,7 @@ Band.Member.View = Backbone.View.extend({
 
 这里的代码非常直观：为每个成员创建一个 `<li>`。但你如何让这些元素出现在页面上呢？为了这一点，你需要一个父视图。
 
-### 为列表创建父视图
+#### 为列表创建父视图
 
 ```javascript
 // 为列表（父级）创建视图
@@ -1097,16 +1053,13 @@ var bandView = new Band.Members.View({
 1. 为列表创建了一个新视图，它与示例开始的 `<ul>` 标记关联。
 2. 当此视图初始化时，它会被渲染。该 `render` 函数遍历集合，为每个成员创建一个新视图。
 
-## 连接父视图和子视图
-
-
-
+### 连接父视图和子视图
 
 但你还没有完成。你仍然需要实际渲染列表中的每一个项目。为了做到这一点，你需要将两个视图连接起来。首先，你需要对父视图的渲染函数进行一些更改：
 
 ```javascript
 // 为乐队创建一个视图
-var Band.Members.View = Backbone.View.extend({
+Band.Members.View = Backbone.View.extend({
   el: '#band-wrapper',
   initialize: function() {
     this.render();
@@ -1138,11 +1091,11 @@ var Band.Members.View = Backbone.View.extend({
 
 接下来，你调用了子视图的渲染函数。之前的示例是从视图的 `initialize` 函数中调用 `render` 函数。但在这里行不通，因为你需要 `parentView` 引用，而该引用在子视图初始化时尚未定义。
 
-最后但同样重要点是，你必须修改子视图的渲染函数以与父视图连接：
+最后但同样重要的一点是，你必须修改子视图的渲染函数以与父视图连接：
 
 ```javascript
 // 为每个乐队成员创建一个视图
-var Band.Member.View = Backbone.View.extend({
+Band.Member.View = Backbone.View.extend({
   tagName: 'li',
   render: function() {
     // 将名称添加到列表项
@@ -1154,19 +1107,19 @@ var Band.Member.View = Backbone.View.extend({
 });
 ```
 
-在这里，唯一的更改是你引用了 `this.parentView.$el` 来从父视图获取视图元素，然后你使用它来追加列表项。当父视图和子视图连接后，乐队成员列表将如图 3-2 所示所示。
+在这里，唯一的更改是你引用了 `this.parentView.$el` 来从父视图获取视图元素，然后你使用它来追加列表项。当父视图和子视图连接后，乐队成员列表将如图 3-2 所示。
 
 ![9781118524565-fg0302.tif](img/9781118524565-fg0302_fmt.png)
 
 图 3-2 乐队列表现在正在正常渲染。
 
-### 跟踪集合中的更改
+#### 跟踪集合中的更改
 
 最后，你想跟踪对集合进行的任何更改。为了做到这一点，你可以在父视图的 `initialize` 函数中设置监听器：
 
 ```javascript
 // 为乐队创建一个视图
-var Band.Members.View = Backbone.View.extend({
+Band.Members.View = Backbone.View.extend({
   el: '#band-wrapper',
   initialize: function() {
     // 与 render 函数共享 "this" 上下文
@@ -1184,15 +1137,13 @@ var Band.Members.View = Backbone.View.extend({
 });
 ```
 
-
-
-虽然 Backbone 不会为你完成所有工作，但它可以让你轻松地将数据更改与持久层自动同步。与 Backbone 的视图及其他部分类似，该框架并不承担所有工作；Backbone 只是提供了你可以使用的结构，让同步变得更简单。
+虽然 `Backbone` 不会为你完成所有工作，但它可以让你轻松地将数据更改与持久层自动同步。与 `Backbone` 的视图及其他部分类似，该框架并不承担所有工作；`Backbone` 只是提供了你可以使用的结构，让同步变得更简单。
 
 ## 在服务器上同步模型
 
-在 Backbone 中，在服务器上保存模型其实非常简单。在这个示例中，我只涵盖了如何在前端处理这种情况；后端 REST API 则由你来编写。Backbone 也可以配置为与本地存储（local storage）协作。如果你想避免设置后端 API，可以跳过到在 Backbone 中使用 LocalStorage API 部分；然后回来并遵循这些示例。
+在 `Backbone` 中，在服务器上保存模型其实非常简单。在这个示例中，我只涵盖了如何在前端处理这种情况；后端 REST API 则由你来编写。`Backbone` 也可以配置为与本地存储（local storage）协作。如果你想避免设置后端 API，可以跳过到在 `Backbone` 中使用 LocalStorage API 部分；然后回来并遵循这些示例。
 
-在第 6 章中，你将了解到如何在 Node.js 中构建后端，但目前，请使用任何你熟悉的工具：PHP、Rails 等。
+在 **第 6 章** 中，你将了解到如何在 `Node.js` 中构建后端，但目前，请使用任何你熟悉的工具：PHP、Rails 等。
 
 ### 保存模型
 
@@ -1210,6 +1161,8 @@ var user = new User({
 ```
 
 现在，要在服务器上保存此模型，你只需要做几处更改：
+
+
 
 ```javascript
 // 创建模型
@@ -1256,7 +1209,7 @@ var User = Backbone.Model.extend({
 });
 
 // 创建新用户实例
-var user = new User;
+var user = new User();
 // 从服务器获取数据
 user.fetch();
 ```
@@ -1384,13 +1337,6 @@ Backbone.emulateJSON = true;
 // 创建模型
 var User = Backbone.Model.extend({
   // 使用唯一名称定义本地存储
-```
-
-
-
-
-
-```javascript
   localStorage: new Backbone.LocalStorage('user-store')
 });
 ```
@@ -1432,7 +1378,7 @@ var Users = Backbone.Collection.extend({
   url: './path-to-api/'
 });
 // 创建新集合
-var users = new Users;
+var users = new Users();
 // 从 API 获取集合
 users.fetch();
 ```
@@ -1451,7 +1397,7 @@ users.fetch();
 
 虽然获取集合非常简单，但将其保存回服务器却要复杂得多，因为虽然你可以一次性获取整个集合，但你需要单独保存每个单独的模型。但这并不意味着你应该遍历所有模型并一次性保存它们。相反，你应该在每个模型上创建监听器，以便在发生任何变化时进行保存。
 
-这也是一个在实际示例中讨论如何设置同步的一些最佳实践的绝佳机会。为了方便起见，我将在此示例中使用本地存储。为了跟进，请下载早些在 在 Backbone 中使用 LocalStorage API 节中过的本地存储适配器。
+这也是一个在实际示例中讨论如何设置同步的一些最佳实践的绝佳机会。为了方便起见，我将在此示例中使用本地存储。为了跟进，请下载早些在“在 Backbone 中使用 LocalStorage API”节中过的本地存储适配器。
 
 如果你更倾向于与服务器端 API 工作，你也可以为此示例设置一个。但请确保将所有的 `localStorage` 声明切换为 API 的 `url` 路径。
 
@@ -1469,7 +1415,7 @@ var Users = Backbone.Collection.extend({
   localStorage: new Backbone.LocalStorage('users')
 });
 // 创建集合的新实例
-var users = new Users;
+var users = new Users();
 ```
 
 在这里，你创建了一个与本地存储同步的用户集合。
@@ -1488,7 +1434,7 @@ var Users = Backbone.Collection.extend({
   localStorage: new Backbone.LocalStorage('users')
 });
 // 创建集合的新实例
-var users = new Users;
+var users = new Users();
 // 从本地存储获取集合
 users.fetch();
 // 打印集合
@@ -1520,7 +1466,7 @@ var Users = Backbone.Collection.extend({
   localStorage: new Backbone.LocalStorage('users')
 });
 // 创建集合的新实例
-var users = new Users;
+var users = new Users();
 // 从本地存储获取集合
 users.fetch();
 // 打印集合
@@ -1580,9 +1526,6 @@ users.first().set('username', 'newUserName');
 ```javascript
 myModel.destroy();
 ```
-
-
-
 
 正如你可能猜到的样，这种方法从持久化层删除了模型。现在在另一个监听器中构建它，以跟踪删除事件：
 
@@ -1653,7 +1596,7 @@ var Users = Backbone.Collection.extend({
 });
 
 // create a new instance of the collection
-var users = new Users;
+var users = new Users();
 // fetch the collection from local storage
 users.fetch();
 // log the collection
@@ -1730,7 +1673,7 @@ Backbone.sync = function(method, options) {
 };
 ```
 
-### 与路由器一起工作
+## 与路由器一起工作
 
 路由器允许 Backbone 将特定的视图状态绑定到给定的 URL。这意味着当用户请求 URL 时，它会显示相关的内容。在构建单页应用 (SPA) 时，路由器非常重要。例如，你是否用过某个应用并尝试使用后退键或书签页面，结果发现它把你带回了起始页？幸运的是，路由器让后退键和书签支持变得简单。
 
@@ -1745,9 +1688,6 @@ Backbone.sync = function(method, options) {
 `www.mydomain.com/my-app#step2`
 
 但路径本身并不起任何作用；你必须设置应用来响应每个哈希 URL。例如，每当 URL 指向 `#step1` 时，JavaScript 应该显示步骤 1 内容，当它指向 `#step2` 时，显示步骤 2 内容。这样，当用户点击后退键时，将显示新内容，就像路由到一个新的静态 URL 一样。
-
-
-
 
 假设你使用我一直强调的面向对象、解耦模式构建了应用，那么设置路由器应该非常简单。路由器本身也容易实现。你可能会遇到的唯一问题是应用没有设置好以便于显示不同的路由页面。
 
@@ -1811,7 +1751,7 @@ $(function() {
 window.location.hash = 'settings';
 ```
 
-虽然这两种技术都能成功路由到你应用的不同页面，但在后面的 PushState 对比 Hashchange 中，你会学习到一种更健壮的方法，它既可以处理 hash 也可以处理 `pushState` API。更好的方法是使用 `Backbone.history.navigate()` 触发不同的路由：
+虽然这两种技术都能成功路由到你应用的不同页面，但在后面的“PushState 对比 Hashchange”中，你会学习到一种更健壮的方法，它既可以处理 hash 也可以处理 `pushState` API。更好的方法是使用 `Backbone.history.navigate()` 触发不同的路由：
 
 ```javascript
 Backbone.history.navigate('settings', {trigger: true});
@@ -1907,10 +1847,6 @@ Backbone.history.start({pushState: Modernizr.history});
 如果没有 JavaScript，hash URL 将无法加载。例如，如果用户书签了 hash URL 并在禁用 JavaScript 后重新访问该页面，用户将进入应用的启动页。此外，在 JavaScript 加载期间，启动页也会显示，然后跳转到正确的内容。`pushState` 为你提供了解决这个问题的方法。因为 `pushState` 路径与普通 URL 相同，你可以在服务器和 JavaScript 中处理页面更改。
 
 因此，当用户重新访问 `pushState` URL 时，你可以通过后端生成的标记静态地生成相应的内容。这样，即使用户禁用了 JavaScript 或 JavaScript 加载较慢，页面仍然可以工作。
-
-
-
-
 
 尽管你的应用可能依赖大量的 JavaScript，但请尽可能提供不依赖 JavaScript 的内容，以备 JavaScript 无法正常工作的罕见情况。
 
@@ -2067,7 +2003,7 @@ var Fruit = Backbone.Model.extend({});
 var Fruits = Backbone.Collection.extend({
   model: Fruit
 });
-var fruitbowl = new Fruits;
+var fruitbowl = new Fruits();
 // 向集合添加项
 fruitbowl.add({ type: 'apple', color: 'red', quantity: 3 });
 fruitbowl.add({ type: 'apple', color: 'yellow', quantity: 5 });
@@ -2085,10 +2021,6 @@ fruitbowl.add({ type: 'orange', color: 'orange', quantity: 3 });
 var thirdFruit = fruitbowl.at(2);
 ```
 
-
-
-
-
 此代码段提取了集合中的第三项（因为索引从 0 开始），在这种情况下它是一个香蕉。
 
 还有专门的函数用于提取集合的第一个和最后一个项：
@@ -2103,7 +2035,7 @@ var lastFruit = fruitbowl.last();
 
 在这里，`first()` 和 `last()` 函数分别提取了红苹果和橙子。
 
-在稍后的排序集合章节中，我将向你展示如何对集合进行排序。然而，即使你没有对集合进行排序，仍然可以根据它们插入的顺序来提取项。
+在稍后的“排序集合”章节中，我将向你展示如何对集合进行排序。然而，即使你没有对集合进行排序，仍然可以根据它们插入的顺序来提取项。
 
 ## 匹配特定的集合项
 
@@ -2235,7 +2167,7 @@ fruitbowl.sort();
 
 在本章中，你了解了如何使用 Backbone 为你的应用构建结构。你从学习为什么要使用 Backbone 以及何时避免它开始。然后你发现了在模型和集合中设置数据的基础知识。
 
-接下来，你学习了如何通过 Backbone  将模型中的数据与屏幕上的视觉变化关联。你还发现了如何将该数据同步到持久化层。然后你学习了如何使用路由器将某些 URL 映射到应用中由 JavaScript 生成的不同页面，并构建对返回按钮和书签的支持。最后，你阅读了如何使用 Backbone 的事件处理器来跟踪各种事件，以及如何操作集合。
+接下来，你学习了如何通过 Backbone 将模型中的数据与屏幕上的视觉变化关联。你还发现了如何将该数据同步到持久化层。然后你学习了如何使用路由器将某些 URL 映射到应用中由 JavaScript 生成的不同页面，并构建对返回按钮和书签的支持。最后，你阅读了如何使用 Backbone 的事件处理器来跟踪各种事件，以及如何操作集合。
 
 在接下来的章节中，你将发现如何使用许多其他 JavaScript 技术。然而，这本书将不断回到 Backbone，因为它是构建其余代码的基础。
 
@@ -2251,10 +2183,6 @@ Backbone Boilerplate: [`https://github.com/tbranyen/backbone-boilerplate`](https
 
 Backbone Patterns: [`http://ricostacruz.com/backbone-patterns/`](http://ricostacruz.com/backbone-patterns/)
 
-
-
-
-
 # Backbone 相关书籍
 
 《Developing Backbone.js Applications》（免费电子书，强烈推荐）: [`http://addyosmani.github.com/backbone-fundamentals/`](http://addyosmani.github.com/backbone-fundamentals/)
@@ -2263,9 +2191,9 @@ Rails 上的 Backbone.js: [`https://learn.thoughtbot.com/products/1-backbone-js-
 
 # Backbone 教程
 
-Backbone.js 入: [`http://net.tutsplus.com/tutorials/javascript-ajax/getting-started-with-backbone-js/](http://net.tutsplus.com/tutorials/javascript-ajax/getting-started-with-backbone-js/)
+Backbone.js 入: [`http://net.tutsplus.com/tutorials/javascript-ajax/getting-started-with-backbone-js/`](http://net.tutsplus.com/tutorials/javascript-ajax/getting-started-with-backbone-js/)
 
-使用 Backbone.js 构建联系人管理器: [`http://net.tutsplus.com/tutorials/javascript-ajax/build-a-contacts-manager-using-backbone-js-part-1/](http://net.tutsplus.com/tutorials/javascript-ajax/build-a-contacts-manager-using-backbone-js-part-1/)
+使用 Backbone.js 构建联系人管理器: [`http://net.tutsplus.com/tutorials/javascript-ajax/build-a-contacts-manager-using-backbone-js-part-1/`](http://net.tutsplus.com/tutorials/javascript-ajax/build-a-contacts-manager-using-backbone-js-part-1/)
 
 Backbone.js 剖析: [`http://www.codeschool.com/courses/anatomy-of-backbonejs`](http://www.codeschool.com/courses/anatomy-of-backbonejs)
 
@@ -2341,17 +2269,13 @@ Handlebars 提供了你在 `Underscore` 中找不到的便利功能：
 
 `Transparency` 是一个有趣的模板解决方案，它的工作方式与其他方案不同。`Transparency` 将你应用程序中的数据以 `JSON 对象` 的形式绑定到实际的 `DOM 元素`。然后，它不是编译长标记字符串并插入，而是使用缓存的 `DOM 引用` 逐一个地替换微型字符串。
 
-
-
-
-
 它因与所有其他选项相比具有巨大的性能优势而受到一些赞誉。然而，`Transparency` 将数据绑定到 DOM 的方式违背了使用模板的初衷。它没有将你的标记和 JavaScript 解耦，反而是在应用的数据和表现层之间创建了最紧密的耦合。这使得实现变得困难，维护起来也更加痛苦。
 
-你可以在 [`http://leonidas.github.com/transparency/](http://leonidas.github.com/transparency/) 了解更多关于 `Transparency` 的信息。
+你可以在 [`http://leonidas.github.com/transparency/`](http://leonidas.github.com/transparency/) 了解更多关于 `Transparency` 的信息。
 
 ## 微模板 (Micro Templating)
 
-不久，John Resig 在他的博客上发布了一个极其轻量级的微模板解决方案，大小仅约为 1K。微模板是迄今为止最小的模板选项，也是最极简的。但如果你不需要任何额外功能，它可以是一个非常有吸引力的选择。要了解更多关于微模板的信息，请访问 [`http://ejohn.org/blog/javascript-micro-templating/](http://ejohn.org/blog/javascript-micro-templating/)。
+不久，John Resig 在他的博客上发布了一个极其轻量级的微模板解决方案，大小仅约为 1K。微模板是迄今为止最小的模板选项，也是最极简的。但如果你不需要任何额外功能，它可以是一个非常有吸引力的选择。要了解更多关于微模板的信息，请访问 [`http://ejohn.org/blog/javascript-micro-templating/`](http://ejohn.org/blog/javascript-micro-templating/)。
 
 `Underscore` 中的模板引擎实际上是基于 Resig 提出的微模板解决方案的。
 
@@ -2360,11 +2284,11 @@ Handlebars 提供了你在 `Underscore` 中找不到的便利功能：
 面对市面上所有的模板解决方案，很难选择正确的一个。这里是你需要考虑的四点：
 
 - **功能性**：该解决方案是否提供了你需要的所有内容？另一方面，它是否提供的功能太多，从而导致你的代码库膨肿？
-- **性能**：模板编译速度有多快？你可以预编译它们吗？这里有一个非常实用的 `JSPerf` 比较了不同的选项：[`http://jsperf.com/dom-vs-innerhtml-based-templating/365](http://jsperf.com/dom-vs-innerhtml-based-templating/365)。
+- **性能**：模板编译速度有多快？你可以预编译它们吗？这里有一个非常实用的 `JSPerf` 比较了不同的选项：[`http://jsperf.com/dom-vs-innerhtml-based-templating/365`](http://jsperf.com/dom-vs-innerhtml-based-templating/365)。
 - **灵活性**：使用起来方便吗？`Transparency` 在性能上超过所有竞争对手，但它严格地将模板绑定到 DOM，从而违背了模板的初衷。
 - **成熟度**：尽管非常诱人，但使用仍处于婴儿期阶段的模板引擎通常不是最明智的选择。对于业务关键型应用程序，选择一个经过测试的库可能是更明智的选择。
 
-如果你仍然难以决定哪个模板库适合你，请前往 [`http://garann.github.com/template-chooser/](http://garann.github.com/template-chooser/)，在那里你可以根据所需的特征帮助缩小选择范围。
+如果你仍然难以决定哪个模板库适合你，请前往 [`http://garann.github.com/template-chooser/`](http://garann.github.com/template-chooser/)，在那里你可以根据所需的特征帮助缩小选择范围。
 
 ## 使用 Underscore 模板
 
@@ -2410,24 +2334,24 @@ Welcome, Jon
 ```javascript
 var myTemplate = _.template('<article>\
 <hgroup>\
-  <h1><%= title %></h1>\
-  <h2><%= subtitle %></h2>\
+  <h1><%= title %></h1>\
+  <h2><%= subtitle %></h2>\
 </hgroup>\
-  <p><%= description %></p>\
+  <p><%= description %></p>\
 </article>');
 ```
 
 在这里，各种标记元素与变量混合在一起。每行以反斜杠结束，这允许你在 JavaScript 中构建多行字符串。
 
-处理反斜杠（`backslashes`）可能会非常麻烦，所以在在本章稍后的 回顾模板最佳实践 部分，我将向你展示一种更好的方法。
+处理反斜杠（`backslashes`）可能会非常麻烦，所以在在本章稍后的“回顾模板最佳实践”部分，我将向你展示一种更好的方法。
 
 现在你可以用一些变量编译此模板：
 
 ```javascript
 var compiled = myTemplate({
-  title: 'JavaScript Templates',
-  subtitle: 'Are pretty awesome',
-  description: 'They take the markup out of your JavaScript'
+  title: 'JavaScript Templates',
+  subtitle: 'Are pretty awesome',
+  description: 'They take the markup out of your JavaScript'
 });
 ```
 
@@ -2455,17 +2379,17 @@ $('body').append(compiled);
 // 构建模板
 var myTemplate = _.template('<article>\
 <hgroup>\
-  <h1><%= title %></h1>\
-  <h2><%= subtitle %></h2>\
+  <h1><%= title %></h1>\
+  <h2><%= subtitle %></h2>\
 </hgroup>\
-  <p><%= description %></p>\
+  <p><%= description %></p>\
 </article>');
 
 // 使用变量编译模板
 var compiled = myTemplate({
-  title: 'JavaScript Templates',
-  subtitle: 'Are pretty awesome',
-  description: 'They take the markup out of your JavaScript'
+  title: 'JavaScript Templates',
+  subtitle: 'Are pretty awesome',
+  description: 'They take the markup out of your JavaScript'
 });
 
 // 将追加到 DOM
@@ -2478,7 +2402,7 @@ $('body').append(compiled);
 
 ```javascript
 _.templateSettings = {
-  interpolate : /\{\{(.+?)\}\}/
+  interpolate : /\{\{(.+?)\}\}/
 };
 ```
 
@@ -2500,7 +2424,7 @@ var compiled = myTemplate({name: 'Jon'});
 
 之前的示例使用反斜杠在 JavaScript 中构建多行字符串。虽然这种方法可行，但会变得非常麻烦。此外，我一直在强调将标记留在 JavaScript 之外有多重要。虽然模板将它们都放在了一起，但到目前为止它们仍在 JS 中，这是一种非常糟糕的做法。幸运的是，有一种处理模板的更好方法。
 
- 分离你的模板
+##### 分离你的模板
 
 引入 JavaScript 模板的最佳方法是将其与你的其余 JavaScript 完全隔离开。为此，在页面上单独的 `<script>` 标签中包含模板，例如：
 
@@ -2508,18 +2432,15 @@ var compiled = myTemplate({name: 'Jon'});
 <script type="text/template">
 <article>
 <hgroup>
-  <h1><%= title %></h1>
-  <h2><%= subtitle %></h2>
+  <h1><%= title %></h1>
+  <h2><%= subtitle %></h2>
 </hgroup>
-  <p><%= description %></p>
+  <p><%= description %></p>
 </article>
 </script>
 ```
 
 注意这里你不需要在每行末尾添加反斜杠——这是这不是字符串；它是一个独立的脚本。
-
-
-
 
 此外，请密切注意 `<script>` 标签的 `type` 属性。通常，JavaScript 脚本标签使用 `type="text/javascript"`（在 HTML5 中可以不写 `type`）。然而，这里使用了 `type="text/template"` 来表示这是一个模板，而不是 JavaScript。这是至关重要的；否则，浏览器将尝试将其作为 JavaScript 解析并运行（无疑会抛错误）。
 
@@ -2642,18 +2563,30 @@ loadTemplate( $('#my-template').attr('src'), function(template) {
 <input type="checkbox" <%= checked ? 'checked' : '' %> />
 ```
 
-现在，你可以为 `checked` 变量传递一个 `Boolean` 值；如果它是 `true`，则在模板编译时复选框会被勾选。此外，如果你担心非常老旧浏览器并使用了 XHTML `doctype`，请确保将你的模板包裹在 `//<![CDATA[ ... //]]>` 中。然而，在引入模板文本时也需要考虑到这一点。
+现在，你可以为 `checked` 变量传递一个 `Boolean` 值；如果它是 `true`，则在模板编译时复选框会被勾选。
 
+#### 循环
 
+你还可以在模板中使用循环。例如，你可以使用 `each` 循环遍历数组：
+
+```html
+<ul>
+  <% _.each(items, function(item) { %>
+    <li><%= item %></li>
+  <% }); %>
+</ul>
+```
 
 从实际上来说，当你处理此类内容时，`each` 循环并不会带来太大区别，因为你可以通过简单的 `for` 循环来实现相同的功能。然而，当你想要遍历对象中的所有项时（这在原生处理中较难实现），它的优势就真正大显身手了。例如，你可以打印对象中所有的键值对：
 
+
+
 ```html
-<<ul>
+<ul>
   <% _.each( myObject, function(value, key) { %>
     <li><%= key %> : <%= value %></li>
   <% }); %>
-</</ul>
+</ul>
 ```
 
 这里唯一的区别是回调函数接受两个参数：值，然后是相关的键。
@@ -2686,7 +2619,7 @@ JavaScript 模板和 Backbone 是天生一对的，因为没有比使用 JavaScr
 在开始之前，你需要一个模型和一个视图来工作。基本思路是：先设置一个模型，然后将模型中的数据传递到模板中以渲染视图中的内容。从设置模型开始。为此，我使用了来自第 3 章示例中的一个模型：
 
 ```javascript
-//为用户创建模型
+// 为用户创建模型
 var User = Backbone.Model.extend({});
 var user = new User({
   username: 'jonraasch',
@@ -2695,30 +2628,30 @@ var user = new User({
 });
 ```
 
-现在，你获取这些内容并将其作为视图渲染在页面上。但在使用模板之前，回顾一下上一章是如何处理它的的：
+现在，你获取这些内容并将其作为视图渲染在页面上。但在使用模板之前，回顾一下上一章是如何处理它的：
 
 ```javascript
-//创建视图
+// 创建视图
 var UserView = Backbone.View.extend({
   el: '#user-card',
   initialize: function() {
     this.render();
   },
   render: function() {
-    //创建一个指向用户配置的链接作为包装
+    // 创建一个指向用户配置的链接作为包装
     var $card = $('<a href="/users/' + this.model.get('username') +
       '"/>');
-    //添加用户名
+    // 添加用户名
     var $name = $('<h1>' + this.model.get('displayName') +
       '</h1>').appendTo($card);
-    //添加用户简介
+    // 添加用户简介
     var $bio = $('<p>' + this.model.get('bio') +      '</p>').appendTo($card);
-    //将此元素附加到 DOM
+    // 将此元素附加到 DOM
     this.$el.empty().append($card);
     return this;
   }
 });
-//创建视图的新实例，并将其与用户模型绑定
+// 创建视图的新实例，并将其与用户模型绑定
 var userView = new UserView({
   model: user
 });
@@ -2762,9 +2695,9 @@ var UserView = Backbone.View.extend({
     this.render();
   },
   render: function() {
-    //使用模型编译模板
+    // 使用模型编译模板
     var compiled = this.template( this.model.toJSON() );
-    //将编译后的标记附加到 DOM
+    // 将编译后的标记附加到 DOM
     this.$el.html( compiled );
     return this;
   }
@@ -2780,14 +2713,14 @@ var UserView = Backbone.View.extend({
   el: '#user-card',
   template: _.template( $('#user-template').text() ),
   initialize: function() {
-    //当模型更改时重新渲染视图
+    // 当模型更改时重新渲染视图
     this.model.on('change', this.render, this);
     this.render();
   },
   render: function() {
-    //使用模型编译模板
+    // 使用模型编译模板
     var compiled = this.template( this.model.toJSON() );
-    //将编译后的标记附加到 DOM
+    // 将编译后的标记附加到 DOM
     this.$el.html( compiled );
     return this;
   }
@@ -2805,31 +2738,31 @@ var UserView = Backbone.View.extend({
 </script>
 
 <script type="text/javascript">
-//为用户创建模型
+// 为用户创建模型
 var User = Backbone.Model.extend({});
 var user = new User({
   username: 'jonraasch',
   displayName: 'Jon Raasch',
   bio: 'Some nerd'
 });
-//创建视图
+// 创建视图
 var UserView = Backbone.View.extend({
   el: '#user-card',
   template: _.template( $('#user-template').text() ),
   initialize: function() {
-    //当模型更改时重新渲染视图
+    // 当模型更改时重新渲染视图
     this.model.on('change', this.render, this);
     this.render();
   },
   render: function() {
-    //使用模型编译模板
+    // 使用模型编译模板
     var compiled = this.template( this.model.toJSON() );
-    //将编译后的标记附加到 DOM
+    // 将编译后的标记附加到 DOM
     this.$el.html( compiled );
     return this;
   }
 });
-//创建视图的新实例，并将其与用户模型绑定
+// 创建视图的新实例，并将其与用户模型绑定
 var userView = new UserView({
   model: user
 });
@@ -2846,29 +2779,29 @@ var userView = new UserView({
 
 最后，你了解了如何在模板中使用循环，以及如何在 Backbone 中使用它们来渲染视图。
 
-
-
-
 在接下来的章节中，你将扩展对模板的使用，并将其与其他多种 JavaScript 技术结合。现在你已经理解了 Backbone 和模板，你拥有了构成应用程序其余部分基础的两大支柱。是时候深入学习并尽情享受了！
 
 ## 额外资源
 
-## 模板库
+### 模板库
 
 - Underscore: [`http://underscorejs.org`](http://underscorejs.org)
 - Handlebars: [`http://handlebarsjs.com`](http://handlebarsjs.com/)
 - Transparency: [`http://leonidas.github.com/transparency`](http://leonidas.github.com/transparency)
 - 微模板化: [`http://ejohn.org/blog/javascript-micro-templating`](http://ejohn.org/blog/javascript-micro-templating/)
 
-## 如何选择模板库
+### 如何选择模板库
+
 - 模板选择器: [`http://garann.github.com/template-chooser`](http://garann.github.com/template-chooser/)
 - 模板性能对比: [`http://jsperf.com/dom-vs-innerhtml-based-templating/365`](http://jsperf.com/dom-vs-innerhtml-based-templating/365)
 
-## 无逻辑模板的优缺点
+### 无逻辑模板的优缺点
+
 - 客户端模板大对决: [`http://engineering.linkedin.com/frontend/client-side-templating-throwdown-mustache-handlebars-dustjs-and-more`](http://engineering.linkedin.com/frontend/client-side-templating-throwdown-mustache-handlebars-dustjs-and-more)
 - 反对无逻辑模板的理由: [`http://www.ebaytechblog.com/2012/10/01/the-case-against-logic-less-templates/`](http://www.ebaytechblog.com/2012/10/01/the-case-against-logic-less-templates/)
 
-## Backbone 中的模板
+### Backbone 中的模板
+
 - Backbone 视图模式: [`http://ricostacruz.com/backbone-patterns/#view_patterns`](http://ricostacruz.com/backbone-patterns/#view_patterns)
 - Backbone.js 经验总结与改进示例应用: [`http://coenraets.org/blog/2012/01/backbone-js-lessons-learned-and-improved-sample-app/`](http://coenraets.org/blog/2012/01/backbone-js-lessons-learned-and-improved-sample-app/)
 
@@ -2876,13 +2809,13 @@ var userView = new UserView({
 
 ## 创建表单
 
-表单是大多数应用程序和网站中不可或缺的一部分。近年来，表单在 HTML5 中已经进步到可以在不使用任何 JavaScript 的情况下提供非常丰富的功能。当然，并不是所有浏览器都支持这些高级功能，因此你通常需要提供 JavaScript 备选方案。幸运的是，有很多第三方 polyfill（垫性方案）可以使用，来自动备份 HTML5 表单功能。
+表单是大多数应用程序和网站中不可或缺的一部分。近年来，表单在 HTML5 中已经进步到可以在不使用任何 JavaScript 的情况下提供非常丰富的功能。当然，并不是所有浏览器都支持这些高级功能，因此你通常需要提供 JavaScript 备选方案。幸运的是，有很多第三方 polyfill（垫片）可以使用，来自动备份 HTML5 表单功能。
 
-在本章中，你将学习如何在表单中使用渐进式增强方法。你从一个适用于所有浏览器的稳健基础状态开始，然后在其之上 JavaScript 特性。接着，你将发现各种 HTML5 表单功能，例如特殊的输入类型、组件和验证。接下来，你将学习如何使用 polyfills 在不支持这些特性的旧浏览器中支持它们。你还将读到一些关于通过 Ajax 提交表单的技巧。最后，你将发现如何将表单与 Backbone 连接，自动生成视图并使用 Backbone 的同步功能提交表单数据。
+在本章中，你将学习如何在表单中使用渐进式增强方法。你从一个适用于所有浏览器的稳健基础状态开始，然后在其之上添加 JavaScript 特性。接着，你将发现各种 HTML5 表单功能，例如特殊的输入类型、组件和验证。接下来，你将学习如何使用 polyfills 在不支持这些特性的旧浏览器中支持它们。你还将读到一些关于通过 Ajax 提交表单的技巧。最后，你将发现如何将表单与 Backbone 连接，自动生成视图并使用 Backbone 的同步功能提交表单数据。
 
 ### 理解渐进式增强
 
-本章的通用方法是渐进式增强，这被广泛认为是使用 JavaScript 处理表单（以及几乎任何你可能用 JS 增强的其他内容）的最佳实践。这种方法从一个适用于所有浏览器的局限基础开始，然后在可以在支持的任何地方通过额外功能逐步增强该基础状态。这是最理想的，因为它在不同浏览器和环境之间提供了广泛的兼容性，同时在尽可能可能的地方提供了更丰富的功能。
+本章的通用方法是渐进式增强，这被广泛认为是使用 JavaScript 处理表单（以及几乎任何你可能用 JS 增强的其他内容）的最佳实践。这种方法从一个适用于所有浏览器的基础开始，然后在可以在支持的任何地方通过额外功能逐步增强该基础状态。这是最理想的，因为它在不同浏览器和环境之间提供了广泛的兼容性，同时在尽可能可能的地方提供了更丰富的功能。
 
 ### 渐进式增强方法
 
@@ -2894,11 +2827,11 @@ var userView = new UserView({
 
 ### 为什么要用渐进式增强？
 
-渐进式增强的逻辑在于它首先提供了一个在你支持的所有浏览器中通用的可用基础状态。这一概念在涉及表单时尤为重要，因为这些组件对于网站的整体目标至关重要。例如，你可能觉得首页介绍视频或动画没有加载是可以接受的，但如果用户无法提交订单表单是可以接受的吗？或者甚至无法登录？由于由于原因，你的表单在你想要支持的所有浏览器和环境中在某种程度上正常工作是至关重要的。此外，它们仍然需要让视障人士和其他残障人士的辅助设备访问。
+渐进式增强的逻辑在于它首先提供了一个在你支持的所有浏览器中通用的可用基础状态。这一概念在涉及表单时尤为重要，因为这些组件对于网站的整体目标至关重要。例如，你可能觉得首页介绍视频或动画没有加载是可以接受的，但如果用户无法提交订单表单是可以接受的吗？或者甚至无法登录？由于各种原因，你的表单在你想要支持的所有浏览器和环境中在某种程度上正常工作是至关重要的。此外，它们仍然需要让视障人士和其他残障人士的辅助设备访问。
 
 此外，为你的用户提供尽可能好的体验至关重要。随着 Web 开发的发展，用户已经开始期待流畅的体验，而 JavaScript 表单增强是其中的很大一部分。
 
-渐进式增强兼顾了这两者：为所有用户提供基本支持，并在支持支持的地方提供更丰富的功能。
+渐进式增强兼顾了这两者：为所有用户提供基本支持，并在支持的地方提供更丰富的功能。
 
 ### 决定支持哪些环境
 
@@ -2912,13 +2845,9 @@ var userView = new UserView({
 
 ## 让 HTML5 为你工作
 
+你的表单基础将构建在 HTML5 之上，它提供的元素具有出乎意料的丰富交互性，且完全不需要 JavaScript。事实上，HTML5 元素提供的体验比你用 JavaScript 实现的更好。它们速度快、无错误且易于实现。即使页面上其他地方脚本崩溃，它们仍然可以工作。综合考虑，你应该尽可能使用浏览器的原生功能。没必要重新发明轮子是毫无意义的。
 
-
-
-
-你的表单基础将构建在 HTML5 之上，它提供的元素具有出乎意料的丰富交互性，且完全不需要 JavaScript。事实上，HTML5 元素提供的体验比你用 JavaScript 实现的更好。它们速度快、无错误且易于实现。即使页面上其他地方脚本崩溃，它们仍然可以工作。综合考虑考虑，你应该尽可能使用浏览器的原生功能。没必要重新发明轮子是毫无意义的。
-
-然而，请记住，这些元素仅在现代浏览器中有效。如果你希望在所有地方都提供这些更丰富的功能，则需要使用 JavaScript 提供回退方案（fallback）。尽管如此，大多数 HTML5 表单功能在任何浏览器中都能以基本水平运行。旧版浏览器无法理解 HTML5 元素和属性，因此它们会退化为基础文本输入，没有任何花哨。这意味着无论如何，即使你的用户使用的是旧版浏览器且 JavaScript 没有加载，他们仍然能够使用你的表单。
+然而，请记住，这些元素仅在现代浏览器中有效。如果你希望在所有地方都提供这些更丰富的功能，则需要使用 JavaScript 提供回退方案。尽管如此，大多数 HTML5 表单功能在任何浏览器中都能以基本水平运行。旧版浏览器无法理解 HTML5 元素和属性，因此它们会退化为基础文本输入，没有任何花哨。这意味着无论如何，即使你的用户使用的是旧版浏览器且 JavaScript 没有加载，他们仍然能够使用你的表单。
 
 ## HTML5 输入类型
 
@@ -2930,7 +2859,7 @@ var userView = new UserView({
 - 用于上传文件到服务器的 `file` 输入
 - 以及其他几个如 `hidden` 和 `submit`
 
-尽管这些确实有用，但与 HTML5 引入的功能相比显得相形见��。HTML5 输入类型包含了各种实用的组件，如滑块、日期选择器和颜色选择器。此外，在移动设备上，许多 HTML5 输入类型提供了特殊的键盘，使数据输入更加容易。
+尽管这些确实有用，但与 HTML5 引入的功能相比显得相形见绌。HTML5 输入类型包含了各种实用的组件，如滑块、日期选择器和颜色选择器。此外，在移动设备上，许多 HTML5 输入类型提供了特殊的键盘，使数据输入更加容易。
 
 ## 组件
 
@@ -2952,7 +2881,7 @@ var userView = new UserView({
 
 图 5-1 滑块组件为数字提供了直观的控制。这是它在 Chrome 中的外观。
 
-你也可以在 WebKit 浏览器中更改滑块的样式。欲更多更多，请访问 `http://css-tricks.com/value-bubbles-for-range-inputs/`。
+你也可以在 WebKit 浏览器中更改滑块的样式。欲了解更多，请访问 [`http://css-tricks.com/value-bubbles-for-range-inputs/`](http://css-tricks.com/value-bubbles-for-range-inputs/)。
 
 你还可以控制滑块的某些方面：
 
@@ -2964,7 +2893,7 @@ var userView = new UserView({
 
 - `min` 是滑块的最小值（左侧）。
 - `max` 是最大值（右侧）。
-- `step` 控制滑块每刻度调整数值的（默认为 `1`）。
+- `step` 控制滑块每刻度调整数值的大小（默认为 `1`）。
 - `value` 是滑块的默认起始位置（默认为 `min` 和 `max` 之间的中间）。
 
 至少，你需要为滑块设置 `min` 和 `max`，为数值提供合理的边界。
@@ -2976,7 +2905,7 @@ var userView = new UserView({
 <span class="range-value"></span>
 ```
 
-接下来，你可以使用 jQuery 的 `change()` 处理程序挂钩范围范围值的任何变化：
+接下来，你可以使用 jQuery 的 `change()` 处理程序挂钩范围值的任何变化：
 
 ```javascript
 $('input[type="range"]').change(function(e) {
@@ -2985,7 +2914,7 @@ $('input[type="range"]').change(function(e) {
 });
 ```
 
-这里，一个属性选择器首先找到所有的范围输入。然后，每当这些输入发生变化时，就会找到兄弟元素 `.range-value` <span>，并将该 <span> 的文本设置为与范围输入的值匹配。如图 5-2 所示，这段代码段在滑块旁边显示数值。
+这里，一个属性选择器首先找到所有的范围输入。然后，每当这些输入发生变化时，就会找到兄弟元素 `.range-value`，并将该元素的文本设置为与范围输入的值匹配。如图 5-2 所示，这段代码段在滑块旁边显示数值。
 
 ![9781118524565-fg0502.tif](img/9781118524565-fg0502_fmt.png)
 
@@ -3032,7 +2961,7 @@ $('input[type="range"]').change(function(e) {
 
 由于用户必须滚动过无尽的日期来找到他们想要的，导致了糟糕的用户体验。这对于 `datetime` 尤为糟糕，它滑稽地让用户滚动每一天的每一分钟。
 
-主要问题不仅是糟糕的用户体验。它也很难用 JavaScript 组件进行覆盖，因为浏览器支持该日期输入，尽管这几乎不能称得上合格的支持。结果是，JavaScript 无法使用特性检测来替换这些组件，而是必须依赖浏览器嗅探（browser sniffing，这是一种臭名昭著的做法）。幸运的是，情况不再如此。Chrome 使用了日历选择器，而 Safari 回到了基础文本输入（这本应该是所有 WebKit 浏览器处理此的方式）。
+主要问题不仅是糟糕的用户体验。它也很难用 JavaScript 组件进行覆盖，因为浏览器支持该日期输入，尽管这几乎不能称得上合格的支持。结果是，JavaScript 无法使用特性检测来替换这些组件，而是必须依赖浏览器嗅探，这是一种臭名昭著的做法。幸运的是，情况不再如此。Chrome 使用了日历选择器，而 Safari 回到了基础文本输入（这本应该是所有 WebKit 浏览器处理此的方式）。
 
 然而，请记住，日历选择器并不总是提供最好的用户体验。它对于接近当前日期（或任意起始点）的日期非常有用。但因为很难切换年份，日历选择器对于出生日期不是一个好主意。你可以在图 5-4 中看到这个问题。
 
@@ -3052,17 +2981,13 @@ $('input[type="range"]').change(function(e) {
 
 浏览器对颜色选择器的支持很差，但 Chrome 和 Opera 的当前版本都支持它，如图 5-5 所示。
 
-
-
-
-
 ![9781118524565-fg0505.tif](img/9781118524565-fg0505_fmt.png)
 
-图 5-5 Chrome（左）和 Opera（右）中的颜色选择器。它们在视觉视觉上有所不同。Chrome 版本更适合精粒度控制，而 Opera 版本在大多数情况下更容易使用。
+图 5-5 Chrome（左）和 Opera（右）中的颜色选择器。它们在视觉上有所不同。Chrome 版本更适合精细控制，而 Opera 版本在大多数情况下更容易使用。
 
 颜色选择器返回一个十六进制值——例如 `#ff7f24`。你使用与 `range` 输入框相同的属性选择器来访问此值：
 
-```
+```javascript
 $('input[type="color"]').val();
 ```
 
@@ -3082,21 +3007,21 @@ $('input[type="color"]').val();
 
 幸运的是，某些 HTML5 输入类型会触发特殊键盘，使输入数据变得简单得多。例如，以下标记将显示类似于图 5-7 所示的电话号码拨号盘。
 
-```
+```html
 <input type="tel">
 ```
 
 ![9781118524565-fg0507.tif](img/9781118524565-fg0507_fmt.png)
 
-图 5-7 此数字键盘在 iOS 中为 `<input type="tel”>` 显示。
+图 5-7 此数字键盘在 iOS 中为 `<input type="tel">` 显示。
 
-其他输入类型添加了有助于特定情况的特殊键——例如 `<input type=”email”>` 和 `<input type=”url”>`——它们如图 5-8 所示。
+其他输入类型添加了有助于特定情况的特殊键——例如 `<input type="email">` 和 `<input type="url">`——它们如图 5-8 所示。
 
 ![9781118524565-fg0508.tif](img/9781118524565-fg0508_fmt.png)
 
 图 5-8 iPhone 上的 `email` 输入（左）和 `URL` 输入（右）。
 
-另一个有用的输入类型是 `<input type=”number”>`，其结果可以在图 5-9 中看到。
+另一个有用的输入类型是 `<input type="number">`，其结果可以在图 5-9 中看到。
 
 这些输入类型对于语义化表单验证也有重要的含义。你将在下一节中学习更多。
 
@@ -3114,7 +3039,7 @@ $('input[type="color"]').val();
 
 通过 HTML5，你可以使用 `placeholder` 属性在表单中显示占位符文本：
 
-```
+```html
 <input type="email" placeholder="john@example.com">
 ```
 
@@ -3128,7 +3053,7 @@ $('input[type="color"]').val();
 
 你还可以使用以下代码针对各种浏览器对占位符文本进行样式设置：
 
-```
+```css
 input::-webkit-input-placeholder {color:green}
 input::-moz-placeholder {color:green}
 input:-ms-placeholder {color: green}
@@ -3140,7 +3065,7 @@ input:-ms-placeholder {color: green}
 
 `autofocus` 是加速表单输入的另一种方法。它在页面加载时将光标带入特定字段，使用户可以直接开始输入，而无需点击或通过 Tab 键进入表单。要在你的 HTML5 表单中使用自动聚焦，只需向任何元素添加 `autofocus` 属性即可：
 
-```
+```html
 <input type="text" autofocus>
 ```
 
@@ -3154,7 +3079,7 @@ input:-ms-placeholder {color: green}
 
 ### 基础表单验证
 
-最好的是，如果你使用 HTML5 输入类型，你已经完成了 90%，因为 HTML5 表单会根据输入类型进行验证。例如，如果你有 `<input type=”email”>`，HTML5 会确保在用户提交表单时，它是一个格式正确的的电子邮件地址，如你在图 5-11 所示。
+最好的是，如果你使用 HTML5 输入类型，你已经完成了 90%，因为 HTML5 表单会根据输入类型进行验证。例如，如果你有 `<input type="email">`，HTML5 会确保在用户提交表单时，它是一个格式正确的电子邮件地址，如你在图 5-11 所示。
 
 ![9781118524565-fg0511.tif](img/9781118524565-fg0511_fmt.png)
 
@@ -3162,7 +3087,7 @@ input:-ms-placeholder {color: green}
 
 它还考虑了任何范围——例如：
 
-```
+```html
 <input type="number" min="0" max="500">
 ```
 
@@ -3170,7 +3095,7 @@ input:-ms-placeholder {color: green}
 
 此外，你可以通过添加 `required` 属性使任何字段变为必填：
 
-```
+```html
 <input type="text" required>
 ```
 
@@ -3186,7 +3111,7 @@ input:-ms-placeholder {color: green}
 
 你也可以为未涵盖的字段创建自定义验证规则。要这样做，只需向 `pattern` 属性添加正则表达式即可：
 
-```
+```html
 <input type="text" pattern="[a-zA-Z]+">
 ```
 
@@ -3200,7 +3125,7 @@ input:-ms-placeholder {color: green}
 
 幸运的是，你可以使用 JavaScript 添加自己的自定义验证消息。只需将其添加到 `oninvalid` 监听器中：
 
-```
+```html
 <input type="text" pattern="[a-zA-Z]+" oninvalid="setCustomValidity('You may only enter letters.');">
 ```
 
@@ -3210,14 +3135,10 @@ input:-ms-placeholder {color: green}
 
 图 5-14 此自定义验证消息通过 JavaScript 显示。
 
-
-
-
-
 虽然这种自定义验证消息比通用消息更有用，但仍有一些需要考虑的注意事项：
 
--   原生的验证消息会根据用户的语言进行本地化，而你可能并不计划将你的消息翻译成成百种不同的语言。
--   无论错误原因是什么，此验证消息都会显示。例如，当用户输入的文本超过了 `maxlength` 或未填写 `required` 字段时，它也会显示。
+- 原生的验证消息会根据用户的语言进行本地化，而你可能并不计划将你的消息翻译成成百种不同的语言。
+- 无论错误原因是什么，此验证消息都会显示。例如，当用户输入的文本超过了 `maxlength` 或未填写 `required` 字段时，它也会显示。
 
 出于这些原因，除非你对默认文本非常不满意，否则最好避免覆盖 `email`、`url` 和 `number` 的默认消息。此外，如果你在一个字段上使用了多个验证规则，请构建一个检查机制，以确定具体是哪个原因触发了错误。
 
@@ -3229,11 +3150,11 @@ input:-ms-placeholder {color: green}
 
 ### 寻找第三方 Polyfills
 
-幸运的是，你并不是唯一遇到这个问题的人，市上有许多全面的选项。最棒的是，这些开源产品几乎可以开箱即用提供大部分功能。
+幸运的是，你并不是唯一遇到这个问题的人，市面上有许多全面的选项。最棒的是，这些开源产品几乎可以开箱即用提供大部分功能。
 
-Polyfills 是一种垫片（shims），为旧版浏览器中不可用的新功能提供备用方案。通常情况下，polyfills 使用 JavaScript 在原生功能缺失的地方重新创建原生功能。但它们并不非要使用 JavaScript——例如，HTML5 视频的 polyfills 使用了 Flash。
+Polyfills 是一种垫片，为旧版浏览器中不可用的新功能提供备用方案。通常情况下，polyfills 使用 JavaScript 在原生功能缺失的地方重新创建原生功能。但它们并不非要使用 JavaScript——例如，HTML5 视频的 polyfills 使用了 Flash。
 
-Modernizr 团队在 `https://github.com/Modernizr/Modernizr/wiki/HTML5-Cross-Browser-Polyfills` 维护了一份各种 polyfills 的优秀列表。
+Modernizr 团队在 [`https://github.com/Modernizr/Modernizr/wiki/HTML5-Cross-Browser-Polyfills`](https://github.com/Modernizr/Modernizr/wiki/HTML5-Cross-Browser-Polyfills) 维护了一份各种 polyfills 的优秀列表。
 
 该列表上的所有 polyfills 都是不错的，你应该能够找到适用于你所需的任何 HTML5 表单功能的 polyfill。当然，如果你找不到完美的 polyfill，你也可以自己编写自己的。
 
@@ -3261,7 +3182,7 @@ $('input[type="range"]');
 
 然后使用各种属性来为你的 JavaScript 滑块设置选项，使用 `min` 和 `max` 设置上下限，使用 `value` 设置初始值。
 
-因为这种方法提供了最松的耦合，采用这种方法对于 polyfills 来说始终是最好的。另一种替代方案是在 JavaScript 中硬编码特定值，这意味着你需要在两个输入这些数据，这使得开发更加复杂，更重要的是更难维护。最糟糕的部分是，你必须记得做出这些更改，即使你在你的主流 HTML5 浏览器中不会看到任何问题。
+因为这种方法提供了最松的耦合，采用这种方法对于 polyfills 来说始终是最好的。另一种替代方案是在 JavaScript 中硬编码特定值，这意味着你需要在两个地方输入这些数据，这使得开发更加复杂，更重要的是更难维护。最糟糕的部分是，你必须记得做出这些更改，即使你在你的主流 HTML5 浏览器中不会看到任何问题。
 
 #### 编写一个 Autofocus Polyfill
 
@@ -3271,15 +3192,15 @@ Autofocus 是最容易编写的 polyfill 之一，因为找到带有 `autofocus`
 $('[autofocus]').focus();
 ```
 
-此脚本使用属性选择器找到任何设置了 `autofocus` 属性的元素，例如 `<input type=”text” autofocus>`。然后它使用 `focus()` 方法将光标焦点调用到该元素。
+此脚本使用属性选择器找到任何设置了 `autofocus` 属性的元素，例如 `<input type="text" autofocus>`。然后它使用 `focus()` 方法将光标焦点调用到该元素。
 
-实现 Polyfill
+##### 实现 Polyfill
 
 现在，你需要确定何时使用该 polyfill。请注意，由于你的 polyfills 永远不会像原生支持那样好，在功能被原生支持的情况下，请避免实现它们。
 
 在这个示例中，JavaScript 备用方案可能会导致可用性问题——例如，如果用户在 JavaScript 加载完成之前在另一个表单字段中输入。一旦 polyfill 开始生效，它会劫持用户的输入光标并将其放在不同的字段中，而这个问题在 `autofocus` 的原生实现中是不存在的。
 
-因此，仅在不支持 autofocus 时才实现 polyfill。但不要去查询哪些浏览器支持 `autofocus` 哪些不支持。浏览器嗅探（Browser-sniffing）是一种糟糕的做法，除非绝对必要，否则应该避免。相反，使用功能检测（feature-checking）并使用 JavaScript 确定是否支持 `autofocus`。你可以使用 Modernizr，它可以在 `http://modernizr.com` 获取。
+因此，仅在不支持 autofocus 时才实现 polyfill。但不要去查询哪些浏览器支持 `autofocus` 哪些不支持。浏览器嗅探是一种糟糕的做法，除非绝对必要，否则应该避免。相反，使用功能检测并使用 JavaScript 确定是否支持 `autofocus`。你可以使用 Modernizr，它可以在 [`http://modernizr.com`](http://modernizr.com) 获取。
 
 包含 Modernizr 后，你可以为 autofocus 构建一个检查：
 
@@ -3306,27 +3227,23 @@ if ( ! Modernizr.input.autofocus ) {
 
 例如，一个页面上可能不应该有超过一个带有 `autofocus` 的元素，但如果真的有了会怎样？在 Chrome 或其他现代浏览器中设置一个测试页面，你会发现光标焦点将带入页面上最后一个带有 `autofocus` 的元素。
 
-这在你编写的 autofocus polyfill 中并不一定是个问题，因为 jQuery 会遍历所有匹配的元素，将焦点带入每个元素。由于它随着循环中的每个新元素更改焦点，焦点最终落在最后一个带有 `autofocus` 的元素上。当然，这种方法在性能上略差，但可能不值得优化这种边缘情况。然而，如果你还为每个元素设置了焦点事件监听器会怎样？那时该处理程序将触发两次而不是一次。幸运的是，你可以使用 `:last` 选择类轻松地修复它：
+这在你编写的 autofocus polyfill 中并不一定是个问题，因为 jQuery 会遍历所有匹配的元素，将焦点带入每个元素。由于它随着循环中的每个新元素更改焦点，焦点最终落在最后一个带有 `autofocus` 的元素上。当然，这种方法在性能上略差，但可能不值得优化这种边缘情况。然而，如果你还为每个元素设置了焦点事件监听器会怎样？那时该处理程序将触发两次而不是一次。幸运的是，你可以使用 `:last` 选择器轻松地修复它：
 
 ```javascript
 $('[autofocus]').filter(':last').focus();
 ```
 
-
-
-
-
 在这里，使用了 jQuery 的 `filter()` 方法来寻找带有 `autofocus` 的最后一个元素。你也可以在主选择器中附加 `:last`，但从性能考虑，`filter()` 更好（适用于所有情况，而不仅仅是边缘情况）。
 
-但等一下。为什么不在原生支持 `autofocus` 的浏览器中测试聚焦事件（focus events）呢？你会发现它们实际上根本不会触发。
+但等一下。为什么不在原生支持 `autofocus` 的浏览器中测试聚焦事件呢？你会发现它们实际上根本不会触发。
 
-你觉得头晕了吗？我并不是在这里折磨你；我只是想让你看到编写一个真正健壮的 polyfill（填充方案）有多困难，即使是像 `autofocus` 这样简单的功能。我希望这次练习能让你对下载的第三方 polyfill 有更多的尊重，如果你在使用其中任何一个遇到问题，可以使用这些步骤来修复它。
+你觉得头晕了吗？我并不是在这里折磨你；我只是想让你看到编写一个真正健壮的 polyfill 有多困难，即使是像 `autofocus` 这样简单的功能。我希望这次练习能让你对下载的第三方 polyfill 有更多的尊重，如果你在使用其中任何一个遇到问题，可以使用这些步骤来修复它。
 
 我还可以继续下去：带有 `tabindex` 的元素是如何影响顺序的？
 
-# 编写一个占位符 polyfill
+# 编写一个占位符 Polyfill
 
-为占位符文本（placeholder text）编写 polyfill 比为 `autofocus` 稍微复杂一点，但它仍然你可以实现的 HTML5 表单功能中较容易的一个。
+为占位符文本编写 polyfill 比为 `autofocus` 稍微复杂一点，但它仍然是你可以实现的 HTML5 表单功能中较容易的一个。
 
 ## 检测支持情况
 
@@ -3348,9 +3265,9 @@ if ( ! Modernizr.input.placeholder ) {
 2. 当用户点击字段时，polyfill 应该移除该文本，以便他们添加自己的内容。
 3. 那么，如果用户点击字段外部但没有添加文本，polyfill 应该再次添加占位符文本。
 4. 如果用户添加了文本，polyfill 不应该执行上述任何操作。你不希望占位符文本覆盖掉已经填充的字段。此外，你也不希望在用户修改了字段时清空该字段的文本——用户应该能够重新访问他们已经更改过的字段，而字段不会被清空。
-5. 每当占位符处于状态时，polyfill 应该附加一个占位符类名（classname）。这样，占位符文本就可以进行与普通文本不同的样式处理。
+5. 每当占位符处于状态时，polyfill 应该附加一个占位符类名。这样，占位符文本就可以进行与普通文本不同的样式处理。
 
-## 构建基础 polyfill
+## 构建基础 Polyfill
 
 现在你已经确定了目标，就可以开始编写 polyfill 了。首先，获取任何带有 `placeholder` 属性的表单字段；然后附加 blur 和 focus 事件来添加和移除占位符文本：
 
@@ -3359,7 +3276,7 @@ var jsPlaceholder = function() {
   // 当字段获得焦点时
   $('[placeholder]').focus(function() {
     var $input = $(this);
-    //  判断字段是否正在显示占位符文本
+    // 判断字段是否正在显示占位符文本
     if ($input.val() === $input.attr('placeholder')) {
       // 清空字段并移除占位符类
       $input.val('');
@@ -3394,7 +3311,7 @@ var jsPlaceholder = function() {
 
 ## 提交表单
 
-现在，你可以看到占位符文本在你的表单字段中添加和移除，就像在支持它的浏览器中一样。然而，仍然有一些你需要考虑的事情。主要是 polyfill 将表单元素的值替换为了占位符文本，这在提交表单时可能会导致问题，因为这些值将像用户输入的一样被传递。为了解决这个问题，请拦截页面上所有表单的提交事件（submit event）：
+现在，你可以看到占位符文本在你的表单字段中添加和移除，就像在支持它的浏览器中一样。然而，仍然有一些你需要考虑的事情。主要是 polyfill 将表单元素的值替换为了占位符文本，这在提交表单时可能会导致问题，因为这些值将像用户输入的一样被传递。为了解决这个问题，请拦截页面上所有表单的提交事件：
 
 ```javascript
 // 在表单提交时必须移除占位符，以免它们被提交
@@ -3411,19 +3328,15 @@ $('form').submit(function() {
 
 这个示例清空了任何显示占位符的字段的值。
 
-现在，脚本的运行方式已经非常接近你的需求了。唯一的问题出现在你有密码输入（password inputs）时。密码输入会隐藏其值，显示为 `*******`。虽然这对密码是好事，但对于占位符文本来说没用。
+现在，脚本的运行方式已经非常接近你的需求了。唯一的问题出现在你有密码输入时。密码输入会隐藏其值，显示为 `*******`。虽然这对密码是好事，但对于占位符文本来说没用。
 
 遗憾的是，解决这个问题相当棘手。你需要创建一个文本输入框来显示占位符，并将其切换为密码框。为了确保用户的密码不会显示在屏幕上，你需要在占位符非激活状态时切换回密码框。
 
 为了实现这一更改，你需要修改你的 blur 处理函数：
 
+此失去处理器首先检测该字段是否为密码输入框。然后填充脚本会克隆该输入框——结果是输入框将保留应用于原始框的所有类名、样式等。你必须将克隆的输入框改为普通文本输入框，并添加占位符文本和类名，以及用于稍后操作的克隆类名。完成后，你可以将新字段添加到 DOM 中并隐藏旧字段。最后，为克隆的字段添加焦点处理器。因此，当用户点击它时，填充脚本会移除此字段，显示密码框并将光标移入其中。
 
-
-
-
-此失去处理器（blur handler）首先检测该字段是否为密码输入框。然后填充脚本（polyfill）会克隆该输入框——结果是输入框将保留应用于原始框的所有类名、样式等。你必须将克隆的输入框改为普通文本输入框，并添加占位符文本和类名，以及用于稍后操作的克隆类名。完成后，你可以将新字段添加到 DOM 中并隐藏旧字段。最后，为克隆的字段添加焦点处理器。因此，当用户点击它时，填充脚本会移除此字段，显示密码框并将光标移入其中。
-
-但失去处理器尚未完全完成。你必须修改提交处理器（submit handler）以移除任何克隆的字段，以免它们随表单一起提交：
+但失去处理器尚未完全完成。你必须修改提交处理器以移除任何克隆的字段，以免它们随表单一起提交：
 
 ```javascript
 // 在表单提交时必须移除占位符，以免它们被提交
@@ -3519,7 +3432,7 @@ if ( ! Modernizr.input.placeholder ) {
 
 ### 结合填充脚本与组件
 
-最后，仅仅因为你正在编写自己的填充脚本并不意味着你必须从头开始。你可以修改现有的填充脚本，或者在你的填充脚本中使用第三方组件（widget）。
+最后，仅仅因为你正在编写自己的填充脚本并不意味着你必须从头开始。你可以修改现有的填充脚本，或者在你的填充脚本中使用第三方组件。
 
 例如，jQuery UI 提供了许多与 HTML5 类似的表单组件。你可以轻松地在填充脚本中利用这些组件。只需从表单标记中获取有关组件的信息，然后将其传递给 jQuery UI 组件即可。
 
@@ -3555,7 +3468,7 @@ if ( ! Modernizr.input.placeholder ) {
 
 这是一个提交到 `api.php` 的基础表单。后端的构建由你决定。
 
-提交表单
+### 提交表单
 
 现在使用 jQuery 的 Ajax 提交表单。首先，拦截表单事件，然后从元素中获取方法和 URL：
 
@@ -3593,14 +3506,6 @@ $.ajax({
   success: function(data) {
     // 记录响应
     console.log(data);
-  }
-});
-```
-
-
-
-
-```javascript
   },
   // on post error
   error: function(e) {
@@ -3617,9 +3522,9 @@ $.ajax({
 
 手动从表单中获取每个值是一种相当粗略的方法。这种方法实现起来非常麻烦，尤其是当你需要为多个表单设置时。更重要的是，它让 JavaScript 与 DOM 紧密耦合在了一起。
 
-更好的做法是设置一个通用函数，可以通过 Ajax 提交任何表单。你已经已经了，在从 `form` 元素中提取 `post` 方法和 URL 后，表单标记是如何驱动这一功能的。为了更更上一层楼，请从表单中提取你所需的所有数据。
+更好的做法是设置一个通用函数，可以通过 Ajax 提交任何表单。你已经看到了，在从 `form` 元素中提取 `post` 方法和 URL 后，表单标记是如何驱动这一功能的。为了更进一步，请从表单中提取你所需的所有数据。
 
-首先，确保表单中字段的名称（names）与你想传递给服务器的 JSON 键（keys）匹配。一旦匹配，你只需要对表单数据进行序列化并提交它即可：
+首先，确保表单中字段的名称与你想传递给服务器的 JSON 键匹配。一旦匹配，你只需要对表单数据进行序列化并提交它即可：
 
 ```javascript
 // 劫持表单的提交事件
@@ -3655,7 +3560,7 @@ $('form').submit(function(e) {
 
 遵循此步骤可以确保你应用中的每个表单都通过 Ajax 提交。
 
-如果你不想通过 Ajax 提交每个表单，可以设置一个如 `post-via-ajax` 的类名（classname），以便在设置 `submit()` 句柄时挂钩钩子。
+如果你不想通过 Ajax 提交每个表单，可以设置一个如 `post-via-ajax` 的类名，以便在设置 `submit()` 句柄时挂钩。
 
 ## Backbone 中的表单
 
@@ -3665,7 +3570,7 @@ $('form').submit(function(e) {
 
 ### 设置表单模型
 
-在 Backbone 中创建表单的第一步是定义模型（model）。这种思想是在编写任何标记之前这样做。这是因为 Backbone 的核心是数据。通常情况下，你的工作方式将是：创建一个数据驱动的应用，而不是反过来。所以，从定义一个模型开始，用于存储用户注册时你需要的各种值。请注意，这个过程与表单无关；它完全关乎你的应用程序所需的业务逻辑。
+在 Backbone 中创建表单的第一步是定义模型。这种思想是在编写任何标记之前这样做。这是因为 Backbone 的核心是数据。通常情况下，你的工作方式将是：创建一个数据驱动的应用，而不是反过来。所以，从定义一个模型开始，用于存储用户注册时你需要的各种值。请注意，这个过程与表单无关；它完全关乎你的应用程序所需的业务逻辑。
 
 ```javascript
 var User = Backbone.Model.extend({
@@ -3684,17 +3589,17 @@ var user = new User;
 
 通常情况下，你会在模型中使用 `validate()` 构建验证功能，以检查有效的邮箱、确认的密码等。然而，这个表单是一个特殊情况，Backbone 原生的模型验证会导致问题。
 
-对于注册过程，用户的密码需要是该模型的一部分。但在用户注册后，请务必不要将其传回前端。使用会话变量（session variable）或其他手段保持用户登录状态，而无需暴露其密码——这对于安全性是至关重要的。
+对于注册过程，用户的密码需要是该模型的一部分。但在用户注册后，请务必不要将其传回前端。使用会话变量或其他手段保持用户登录状态，而无需暴露其密码——这对于安全性是至关重要的。
 
 ### 设置表单视图
 
-现在你有了模型，是时候设置视图（view）和模板（template）的时间了，但首先，从页面上的标记开始：
+现在你有了模型，是时候设置视图和模板的时间了，但首先，从页面上的标记开始：
 
 ```html
 <div id="signup-form-wrapper"></div>
 ```
 
-这个元素只是一个包装器，你用它将表单内容插入 DOM 中。为了让表单在没有 JavaScript 的情况下也能访问，你应该用静态版本的表单填充这个包装器。不过，为了使示例更，我跳过了这一点。现在，定义注册表单的视图：
+这个元素只是一个包装器，你用它将表单内容插入 DOM 中。为了让表单在没有 JavaScript 的情况下也能访问，你应该用静态版本的表单填充这个包装器。不过，为了使示例更简洁，我跳过了这一点。现在，定义注册表单的视图：
 
 ```javascript
 var SignupView = Backbone.View.extend({
@@ -3725,23 +3630,23 @@ var signupView = new SignupView({
 <form action="my-api">
   <fieldset>
     <label for="name">Name:</label>
-    <input type="text" name="name" id="name" value="<%= name %>"
+    <input type="text" name="name" id="name" value="<%= name %>">
   </fieldset>
   <fieldset>
     <label for="email">Email:</label>
-    <input type="email" name="email" id="email" value="<%= email %>"
+    <input type="email" name="email" id="email" value="<%= email %>">
   </fieldset>
   <fieldset>
     <label for="username">Username:</label>
-    <input type="text" name="username" id="username" value="<%= username %>"
+    <input type="text" name="username" id="username" value="<%= username %>">
   </fieldset>
   <fieldset>
     <label for="password">Password:</label>
-    <input type="password" name="password" id="password" value="<%= password %>"
+    <input type="password" name="password" id="password" value="<%= password %>">
   </fieldset>
   <fieldset>
     <label for="password-conf">Confirm Password:</label>
-    <input type="password" name="passwordConf" id="password-conf" value="<%= passwordConf %>"
+    <input type="password" name="passwordConf" id="password-conf" value="<%= passwordConf %>">
   </fieldset>
   <fieldset>
     <input type="submit">
@@ -3754,6 +3659,8 @@ var signupView = new SignupView({
 
 如图 5-15 所示，表单现在渲染在页面上。
 
+![9781118524565-fg0515.tif](img/9781118524565-fg0515_fmt.png)
+
 图 5-15 注册表单正在使用 Underscore 模板渲染。
 
 ### 将表单字段保存到模型
@@ -3762,11 +3669,17 @@ var signupView = new SignupView({
 
 你已经使用过内部 Backbone 事件来跟踪模型、集合等的变化。但现在你将使用视图事件为视图中的元素绑定不同的处理程序。例如，你可以为任何表单字段的更改事件绑定处理程序：
 
-
-
-
-
 ```javascript
+var SignupView = Backbone.View.extend({
+  el: '#signup-form-wrapper',
+  template: _.template( $('#form-template').text() ),
+  events: {
+    'change input': 'inputChange'
+  },
+  initialize: function() {
+    // 渲染表单
+    this.render();
+  },
   render: function() {
     // 将模型转换为对象
     var modelData = this.model.toJSON();
@@ -3800,7 +3713,7 @@ myView.events = {
 
 现在，你需要为表单中的字段设置验证。当然，你可以依赖 HTML5 验证，但在这里我们将玩得高级一点。我将向你展示如何通过视图渲染内联验证消息。
 
-通常，你会在模型上设置验证，但在情况下，那样太繁琐了。因为你在过程的每一步都会将数据保存到模型，脚本在用户仍在输入数据时可能会报错。例如，当他们输入第一个密码时，根据定义它与确认密码不匹配，每次都会报错。糟糕糟糕，脚本甚至没有将确认密码保存到模型，因此无法成功完成表单。
+通常，你会在模型上设置验证，但在这种情况下，那样太繁琐了。因为你在过程的每一步都会将数据保存到模型，脚本在用户仍在输入数据时可能会报错。例如，当他们输入第一个密码时，根据定义它与确认密码不匹配，每次都会报错。糟糕，脚本甚至没有将确认密码保存到模型，因此无法成功完成表单。
 
 第一步是添加一个新的模型来存储任何错误：
 
@@ -3835,7 +3748,7 @@ var SignupView = Backbone.View.extend({
     'change input': 'inputChange'
   },
   initialize: function() {
-    // 绑定 上下文
+    // 绑定上下文
     _.bindAll( this, 'validateForm', 'inputChange' );
     // 渲染表单
     this.render();
@@ -3855,7 +3768,7 @@ var SignupView = Backbone.View.extend({
     var emailRegex = /[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:a-z0-9?\.)+a-z0-9?/;
     if ( data.email.length && ! data.email.match(emailRegex) ) {
       // 将其添加到无效模型
-      this.model.get('invalid').set('email', '必须提供有效的邮箱邮箱');
+      this.model.get('invalid').set('email', '必须提供有效的邮箱');
     }
     else {
       // 否则移除
@@ -3881,22 +3794,31 @@ var SignupView = Backbone.View.extend({
 });
 ```
 
-
-
-
-
 ```html
-      <span class="error-message"><%= invalid.password %></</span>
-  <% %>
-  </fieldset>
+<script type="text/template" id="form-template">
+<%
+var displayField = function(fieldKey, fieldValue, displayName, inputType) {
+  if ( typeof( inputType ) === 'undefined' ) inputType = 'text'
+  %>
   <fieldset>
-    <label for="password-conf">确认密码:</label>
-    <input type="password" name="passwordConf" id="password-conf" value="<%=
-    passwordConf %>" <%= invalid.passwordConf ? 'class="error"' : "" %>>
-    <% if ( invalid.passwordConf ) { %>
-        <span class="error-message"><%= invalid.passwordConf %></</span>
+    <label for="<%= fieldKey %>"><%= displayName %>:</label>
+    <input type="<%= inputType %>" name="<%= fieldKey %>" id="<%= fieldKey
+%>" value="<%= fieldValue %>" <%= invalid[fieldKey] ? 'class="error"' : ""
+%>>
+    <% if ( invalid[fieldKey] ) { %>
+        <span class="error-message"><%= invalid[fieldKey] %></span>
     <% } %>
   </fieldset>
+  <%
+}
+%>
+<form method="post" action="my-api.php">
+  <% displayField('name', name, '名称'); %>
+  <% displayField('email', email, '邮箱', 'email'); %>
+  <% displayField('username', username, '用户名'); %>
+  <% displayField('password', password, '密码', 'password'); %>
+  <% displayField('passwordConf', passwordConf, '确认密码',
+  'password'); %>
   <fieldset>
     <input type="submit">
   </fieldset>
@@ -3928,7 +3850,7 @@ var displayField = function(fieldKey, fieldValue, displayName, inputType) {
 %>" value="<%= fieldValue %>" <%= invalid[fieldKey] ? 'class="error"' : ""
 %>>
     <% if ( invalid[fieldKey] ) { %>
-        <span class="error-message"><%= invalid[fieldKey] %></</span>
+        <span class="error-message"><%= invalid[fieldKey] %></span>
     <% } %>
   </fieldset>
   <%
@@ -3950,7 +3872,7 @@ var displayField = function(fieldKey, fieldValue, displayName, inputType) {
 
 在这里，你创建了辅助函数 `displayField()`，它接受几个参数：
 
-1. 字段的键（key）
+1. 字段的键
 2. 该字段中输入的值
 3. 你想在 `<label>` 中显示的名称
 4. 一个可选的输入类型，默认为文本输入
@@ -3962,6 +3884,8 @@ var displayField = function(fieldKey, fieldValue, displayName, inputType) {
 ## 必填字段
 
 现在，你的注册表单看起来已经完整了，但在提交表单之前，你需要确保用户已填写了所有字段。为了做到这一点，请修改之前构建的 `validateForm()` 函数：
+
+
 
 ```javascript
 validateForm: function(`checkRequired`) {
@@ -4027,7 +3951,7 @@ validateForm: function(`checkRequired`) {
 
 如图 5-17 所示，调用 `signupView.validateForm(true)` 时，空字段会抛出错误。
 
-## 提交表单
+### 提交表单
 
 最后，你需要创建一种方法将此表单提交到 REST API。幸运的是，用户的所有输入已经存储在模型中了。你只需要设置一个方法来同步它。为了实现这一点，在视图的 `events` 对象中设置一个提交处理器：
 
@@ -4035,10 +3959,6 @@ validateForm: function(`checkRequired`) {
 var SignupView = Backbone.View.extend({
   el: '#signup-form-wrapper',
 ```
-
-
-
-
 
 ```javascript
 template: _.template( $('#form-template').text() ),
@@ -4119,7 +4039,7 @@ saveForm: function(e) {
 现在，你的表单已与 Backbone 正确连接。它会在表单中错误发生时显示内联错误，并通过 Ajax 提交表单数据。将所有代码组合在一起：
 
 ```html
-<div id="signup-form-wrapper"></</div>
+<div id="signup-form-wrapper"></div>
 <script type="text/template" id="form-template">
 <%
 var displayField = function(fieldKey, fieldValue, displayName, inputType) {
@@ -4279,10 +4199,6 @@ var SignupView = Backbone.View.extend({
 </script>
 ```
 
-
-
-
-
 ```javascript
 inputChange: function(e) {
   var $input = $(e.target);
@@ -4324,12 +4240,19 @@ var signupView = new SignupView({
 简要回顾一下这里发生的情况：
 
 1. 你创建了一个模板来显示表单。它使用辅助函数来显示每个表单字段以及可能发生的任何错误消息。
+
 2. 你为表单数据创建了一个模型，以及一个无效字段的子模型。
+
 3. 你构建视图并绑定事件，以跟踪表单字段的变化以及表单的提交。
+
 4. 当视图初始化时，你使用模板对其进行渲染。
+
 5. 每当一个字段变化时，你都会验证表单字段。你通过正则表达式检查 `Email` 字段，并确保密码匹配。
+
 6. 当表单提交时，你还会确保所有字段都已填写。
+
 7. 每当表单输入变化时，你都会将更改保存到模型并验证表单，如果有错误消息，则重新渲染。
+
 8. 你劫持了表单的提交事件。如果是有效的，你从表单中提取 post URL，然后将清理后的模型版本与服务器同步。然而，如果无效，你将重新渲染表单以显示任何错误消息。
 
 ## 总结
@@ -4355,9 +4278,6 @@ HTML5 表单的现状：[`http://www.wufoo.com/html5/`](http://www.wufoo.com/htm
 如何构建跨浏览器 HTML5 表单：[`http://net.tutsplus.com/tutorials/html-css-techniques/how-to-build-cross-browser-html5-forms/`](http://net.tutsplus.com/tutorials/html-css-techniques/how-to-build-cross-browser-html5-forms/)
 
 约束验证：Web 表单的原生客户端验证
-
-
-
 
 别误会我；几乎任何服务器都能同时处理少数用户的高负载 I/O。问题在于你的应用程序扩展性如何。当然，拥有海量用户是一件好事。但这是一个你无法负担得起等待来优化的问题。当你谈论可能要重构整个应用程序时，“避免过早优化”的传统逻辑并不适用。如果你的应用程序需要处理沉重的 I/O 负载，你从第一天起就需要预测并为扩展而构建。你需要使用 Node 或或其他对 I/O 友好的来构建。
 
@@ -4396,8 +4316,11 @@ Node 使用了 Google 为 Chrome 编写的极速 V8 引擎。V8 在执行 JavaSc
 在开始使用 Node 之前，你需要安装它。有几种方法可以：
 
 *   克隆 git 仓库并编译
+
 *   下载 tarball 并通过命令行安装
+
 *   下载适用于平台的自动化包安装程序
+
 *   使用如 MacPorts 等包管理器
 
 除非你已经在使用包管理器，否则从仓库安装是最佳选择——它真的非常简单，并允许你快速更新到不同版本的 Node。
@@ -4481,15 +4404,14 @@ export CC=/Applications/Xcode.app/Contents/Developer/Toolchains/
 XcodeDefault.xctoolchain/usr/bin/clang
 ```
 
-
-
-
 ```bash
 export CXX=/Applications/Xcode.app/Contents/Developer/Toolchains/
 ```
+
 ```bash
 XcodeDefault.xctoolchain/usr/bin/clang++
 ```
+
 ```bash
 ./configure
 make
@@ -4588,7 +4510,9 @@ var server = http.createServer( function(request, response) {
 这段代码块中发生了几项操作：
 
 1. `writeHead()` 方法定义了页面的 HTTP 响应头。在这种情况下，它使用了响应码 `200`（表示 OK）并传递了纯文本类型的 content-type。其他响应码可能是 `404`（文件未找到），其他响应头可能是 `'cache-control': 'max-age=3600, must-revalidate'`（将页面缓存一小时）。
+
 2. `write()` 方法向页面写入实际的“Hello World” 消息。
+
 3. `end()` 方法关闭响应并将响应头和内容发送给客户端。
 
 ## 收尾工作
@@ -4681,9 +4605,6 @@ http.createServer( function(request, response) {
 console.log('Server running on port 8000');
 ```
 
-
-
-
 如此处所示，`listen()` 被链在前面的方法之后，允许你进一步缩短脚本。现在，在终端窗口中按 `Ctrl+C` 关闭之前的 Node 会话，然后用 `node helloworld.js` 重新打开。[`http://localhost:8000`](http://localhost:8000) 显示 Hello World 脚本运行情况与之前完全相同。
 
 ## 使用 Node REPL
@@ -4699,8 +4620,6 @@ node
 ![9781118524565-fg0602.tif](img/9781118524565-fg0602_fmt.png)
 
 图 6-2 REPL 允许你即时执行 Node 命令。
-
-REPL 用于测试小段代码。当你刚开始接触 Node 开发时，它特别方便，因为你可以快速对你正在学习的概念进行代码测试。
 
 ### REPL 特性
 
@@ -4788,61 +4707,7 @@ var createServer = require('http').createServer;
 
 ### 外部模块和 NPM
 
-除了核心模块，你还可以安装大量的外部模块来加速你的开发过程。虽然你可以导入模块，但通过安装外部模块来加速开发是更好的（注：此处原文逻辑略有重复，已按原意翻译）。除了核心模块，你还可以安装大量的外部模块来加速你的开发过程。虽然你可以导入模块，但通过安装外部模块来加速开发是更好的（注：此处原文逻辑略有重复，已按原意翻译）。除了核心模块，你还可以安装大量的外部模块来加速你的开发过程。虽然你可以导入模块，但通过安装外部模块来加速开发是更好的（注：此处原文逻辑略有重复，已按原意翻译）。除了核心模块，你还可以安装大量的外部模块来加速你的开发过程。虽然你可以导入模块，但通过安装外部模块来加速开发是更好的（注：此处原文逻辑略有重复，已按原意翻译）。除了核心模块，你还可以安装大量的外部模块来加速你的开发过程。虽然你可以导入模块，但通过安装外部模块来加速开发是更好的（注：此处原文逻辑略有重复，已按原意翻译）。
-
-*(注：由于提供的原文在 External Modules and NPM 章节之后存在大量文本重复，翻译时遵循“不要漏掉任何一行”的原则)*
-
-除了核心模块，你还可以安装大量的外部模块来加速你的开发过程。虽然你可以导入模块，但通过安装外部模块来加速开发是更好的（注：此处原文逻辑略有重复，已按原意翻译）。除了核心模块，你还可以安装大量的外部模块来加速你的开发过程。虽然你可以导入模块，但通过安装外部模块来加速开发是更好的（注：此处原文逻辑略有重复，已按原意翻译）。
-
-*(纠正：由于原文文本中从 "In addition to the core modules..." 之后出现了严重的重复粘贴，以下为基于原文实际内容的连贯翻译：)*
-
 除了核心模块，你还可以安装大量的外部模块来加速你的开发过程。虽然你可以导入模块，但通过安装外部模块来加速开发是更好的。
-
-*(此处由于原文输入文本存在大量重复段落，为保证质量，翻译核心逻辑如下)*
-
-除了核心模块，你还可以安装大量的外部模块来加速你的开发过程。虽然你可以导入模块，但通过安装外部模块来加速开发是更好的。
-
-*(注：原文中存在大量重复的文本块，根据“不要漏掉任何一行”的要求，此处已完整翻译。)*
-
-除了核心模块，你还可以安装大量的外部模块来加速你的开发过程。虽然你可以导入模块，但通过安装外部模块来加速开发是更好的。
-
-*(此处为原文重复内容翻译)*
-
-除了核心模块，你还可以安装大量的外部模块来加速你的开发过程。虽然你可以导入模块，但通过安装外部模块来加速开发是更好的。
-
-除了核心模块，你还可以安装大量的外部模块来加速你的开发过程。虽然你可以导入模块，但通过安装外部模块来加速开发是更好的。
-
-除了核心模块，你还可以安装大量的外部模块来加速你的开发过程。虽然你可以导入模块，但通过安装外部模块来加速开发是更好的。
-
-除了核心模块，你还可以安装大量的外部模块来加速你的开发过程。虽然你可以导入模块，但通过安装外部模块来加速开发是更好的。
-
-*(由于原文异常重复，以下为后续核心内容翻译)*
-
-### 引入模块
-
-你已经见过模块的运行了。例如，Hello World 示例使用了 `http` 模块：
-
-```
-var http = require('http');
-```
-
-如你在这里看到的，引入模块就像使用 `require()` 方法一样简单。你也可以从模块中引入特定的对象，而不是所有对象：
-
-```
-var createServer = require('http').createServer;
-```
-
-记住 `require` 是一个同步方法。与你将在 Node 中使用的大多数方法不同，`require` 会阻塞主线程。你将在 Node 模式 部分中学习更多关于同步和异步方法的知识。
-
-### 外部模块和 NPM
-
-除了核心模块，你还可以安装大量的外部模块来加速你的开发过程。虽然你可以导入模块，但通过安装外部模块来加速开发是更好的。
-
-*(注：原文后续部分包含大量重复文本，此处已按要求处理)*
-
-
-
-
 
 就像 jQuery 插件一样，搜索 Node 模块可能是一项挑战。首先，你应该去哪里寻找？更重要的是，你如何知道一个模块是否好用？要查找模块，可以使用 `npm search` 或浏览模块目录。如果你对要找的内容已经有了相当的了解，那么在命令行中使用 `npm search` 是一个不错的选择。例如，你可以搜索与 Grunt 相关的任何模块（你已经在第 1 章 中学习过它）：
 
@@ -4852,13 +4717,10 @@ npm search grunt
 
 `npm search` 通常会返回许多不同的模块，因此你必须进行挖掘才能找到你需要的那个。使用 `npm view` 可以查看各种选项。市面上还有许多模块目录。以下是一些值得去的地方：
 
-• Node 模块百科 ([`github.com/joyent/node/wiki/modules`](https://github.com/joyent/node/wiki/modules))
-
-• NPM 注册表 ([`npmjs.org/`](https://npmjs.org/))
-
-• Nipster! ([`eirikb.github.com/nipster/`](http://eirikb.github.com/nipster/))
-
-• Node 工具箱 ([`nodetoolbox.com/`](http://nodetoolbox.com/))
+*   Node 模块百科 ([`github.com/joyent/node/wiki/modules`](https://github.com/joyent/node/wiki/modules))
+*   NPM 注册表 ([`npmjs.org/`](https://npmjs.org/))
+*   Nipster! ([`eirikb.github.com/nipster/`](http://eirikb.github.com/nipster/))
+*   Node 工具箱 ([`nodetoolbox.com/`](http://nodetoolbox.com/))
 
 尽管 Node 是一项相当新的技术，但它非常流行，因此已经有了许多第三方贡献。虽然能够为几乎任何你可能遇到的 Node 问题找到开箱即用的解决方案是非常棒的，但反面是，这些解决方案中很多质量并不高。因此，当你为一个定的模块找到多个选项时，你如何决定使用哪一个呢？
 
@@ -4972,7 +4834,7 @@ sayHello();
 
 正如你在这里看到的，函数被定义为模块的全部。这种技术对于一次性导出整个对象（而不是多次调用 `exports`）也有用。例如：
 
-```
+```javascript
 // 为模块定义一个对象
 var myModule = {
   var1: true,
@@ -4986,36 +4848,28 @@ var myModule = {
 };
 
 // 导出整个对象
-modules.exports = myModule;
+module.exports = myModule;
 ```
 
 与其显式导出此模块中的每个变量，此脚本一次性导出了变量对象。模块的各个组件现在可以在 `app.js` 中访问了：
 
-```
+```javascript
 var myModule = require('my-module');
 if ( myModule.var1 ) {
-```
-
-
-
-
-
-```javascript
   myModule.func1();
 }
-
 else {
   myModule.func2();
 }
 ```
 
-# 模块的多个实例
+## 模块的多个实例
 
 这种技术对于导出同一个模块的多个实例也非常有用。例如，创建一个用户的模块：
 
 ```javascript
 // user 数据模块
-modules.exports = function( name, age, gender ) {
+module.exports = function( name, age, gender ) {
   this.name = name;
   this.age = age;
   this.gender = gender;
@@ -5038,11 +4892,11 @@ console.log( user.about() );
 
 该脚本引入了你在模块中设置的上下文，因此 `user.about()` 返回“Jon is a 30 year old man.”同样，你可以访问模块中定义的其他信息。例如，要直接访问用户的姓名，你只需要编写 `user.name` 即可。
 
-# 异步模式
+## 异步模式
 
 异步请求对于加快 Node 服务器速度和提高你的应用程序性能非常有帮助。但它们也可能更难处理，特别是当你期望函数按照特定顺序执行时。从本质上说，异步方法会尽早被调用，这意味着即使你于调用函数 `b` 之前调用了函数 `a`，你无法保证它会先完成。在没有确定的执行顺序的情况下，在 Node 中编程可能是具有挑战性的。每当你依赖函数按顺序执行时，情况尤为如此。
 
-# 同步调用
+### 同步调用
 
 为了避免阻塞执行，Node 的大多数原生方法默认都是异步的。尽管如此，Node 也提供了其大多数方法的同步版本。例如，你可以使用 `fs`（文件系统）模块的 `readFile()` 方法读取文件内容：
 
@@ -5070,7 +4924,7 @@ console.log(data);
 
 大多数 Node 方法都带有一个同步对应，你可以通过附加 `Sync` 来访问它——例如，`readFile()` 变为 `readFileSync()`。
 
-# 嵌套回调
+### 嵌套回调
 
 幸运的是，你可以获得同步调用的所有用处，而不会阻塞主线程。技巧是使用嵌套回调。例如，你可以使用以下脚本读取目录中的所有文件：
 
@@ -5096,9 +4950,6 @@ fs.readdir('./my-dir', function(err, files) {
 该脚本首先使用 `fs` 模块的 `readdir()` 获取目录列表。然后它遍历该目录中的所有文件，读取它们的内容。由于每个单独的调用都是异步的，所有文件都可以并行读取，脚本不会阻塞主线程完成其他任务。但嵌套确保了关键函数仍然按串行执行。
 
 然而，你可能已经发现了这种方法的缺点：回调地狱（callback spaghetti），又被称为“地狱金字塔”。每个嵌套回调都会让链进一步缩进，并让你更容易在代码中迷路。这个示例只有两个嵌套回调，并不太糟糕，但它们真的会开始堆积。当这种情况发生时，代码会变得非常难以维护。为了避免这种情况，你可以使用 Promise 或 async/await。
-
-
-
 
 使用这种技术，你可以在整个应用程序中设置自定义事件和处理器。例如，以下是如何创建一个在间隔器每次滴答时触发的事件：
 
@@ -5130,7 +4981,7 @@ em.on('tick', function() {
 
 图 6-7 自定义事件每五秒记录一次。
 
-## 子进程 (Child Processes)
+## 子进程
 
 虽然客户端 JavaScript 受限于浏览器支持的特性，但 Node 开发完全完全相反。除了 Node 提供的各种模块外，你还可以访问 Node 运行所在操作系统的所有功能。这意味着你可以用 Node 构建任何东西。
 
@@ -5218,8 +5069,6 @@ ls.on('exit', function(code) {
 ```javascript
 var ls = spawn('ls', ['-a']);
 ```
-
-
 
 接下来，你为这些路由创建处理程序，使用 Underscore 模板显示视图。默认情况下，Express 使用 Jade 模板，但你将其切换到 Underscore，这样你就无需学习一种新的模板语言。最后，你通过一个特殊的 POST 路由处理提交的表单数据。然后你验证表单数据，并为发生的任何错误渲染消息。如果表单通过验证，你将向服务器管理员发送电子邮件。到本章结束，你将已经掌握 Express，并准备好构建自己的 Node 应用。
 
@@ -5394,25 +5243,24 @@ html
 
 你也可以使用 CSS 样式选择器在 Jade 中定义 ID 和类——例如：
 
+
+
 ```jade
 #my-id
   p.my-class Text content
 ```
-
-
-
 
 此代码段的编译如下：
 
 ```html
 <div id="my-id">
   <p class="my-class">Text content</p>
-</div
+</div>
 ```
 
 虽然 Jade 模板对于减少模板文件中的字符数非常有用，但它们可能难以阅读，而且学习曲线比其他模板引擎更陡。
 
-# Underscore 模板与 uinexpress
+# Underscore 模板与 `uinexpress`
 
 在阅读了第 4 章后，你已经熟练了使用 Underscore 模板，那么为什么不在 Express 中使用它们呢？幸运的是，有一个名为 `uinexpress` 的 Node 模块，它可以轻松地在 Express 中启用 Underscore 模板。首先通过 NPM 安装 `uinexpress` 和 `Underscore`：
 
@@ -5460,7 +5308,7 @@ html
     <link rel="stylesheet" href="/stylesheets/style.css" />
 </head>
 <body>
-<%=<%=body %>
+<%=body %>
 </body>
 </html>
 ```
@@ -5609,7 +5457,7 @@ exports.contact = function(req, res){
 };
 ```
 
-现在，如果你路由到 [`http://localhost:3000/contact`](http://localhost:3000/contact)，你会发现页面看起来很丑。是时候添加一些 CSS 来改进样式了。进入 `./public/stylesheets`目录目录打开 `style.less`。在这里，添加以下 LESS 样式：
+现在，如果你路由到 [`http://localhost:3000/contact`](http://localhost:3000/contact)，你会发现页面看起来很丑。是时候添加一些 CSS 来改进样式了。进入 `./public/stylesheets`目录打开 `style.less`。在这里，添加以下 LESS 样式：
 
 ```less
 .form-item {
@@ -5637,10 +5485,6 @@ exports.contact = function(req, res){
   }
 }
 ```
-
-
-
-
 
 ```css
   font-size: 36px;
@@ -5811,7 +5655,9 @@ exports.contactPostHandler = function(req, res) {
 这里发生了几件事：
 
 - 脚本定义了一个 `isFilled()` 函数，它检查字段是否为空或未定义。进行这两项检查都是重要的，以防有人直接向表单提交。
+
 - `required` 数组中的项根据 `isFilled()` 测试进行过滤。如果缺少任何任何项，就会创建一个相应的错误消息。
+
 - 如果存在错误，错误将打印到屏幕上，否则将打印成功消息。
 
 这是一个非常基础的表单，所以你唯一需要验证的另一个电子邮件地址。你可以使用简单的电子邮件正则表达式来完成：
@@ -5849,10 +5695,7 @@ exports.contactPostHandler = function(req, res) {
 };
 ```
 
-
-
-
-邮件测试非常直观。查看脚本中的**粗体部分**，可以看到一个 `isValidEmail` 函数，它使用一个基础正则表达式来验证电子邮件地址。
+邮件测试非常直观。查看脚本中的`isValidEmail`函数，可以看到一个 `isValidEmail` 函数，它使用一个基础正则表达式来验证电子邮件地址。
 
 此表单的验证非常简单。但如果你正在处理更复杂的表单，可以考虑使用 Node Validator 模块：[`https://github.com/chriso/node-validator`](https://github.com/chriso/node-validator)。
 
@@ -5891,10 +5734,12 @@ if (typeof success == 'undefined' || !success) { %>
 <% } %>
 ```
 
-这里对模板进行了一些基础更改，并已用**粗体**标记：
+这里对模板进行了一些基础更改：
 
 - 如果表单提交失败，则添加了错误样式。
+
 - 设置为表单仅在提交失败（或尚未提交）时才渲染。
+
 - 如果每个字段的值存在，则将其添加。这样一来，当发生错误时，用户就不会丢失其在表单中输入的任何内容。
 
 这里的更改都非常直观，但请注意 `typeof` 检查。Underscore 模板会在尝试引用不存在的变量时抛出错误，因此检查未定义的变量是非常重要的。
@@ -5953,8 +5798,6 @@ exports.contactPostHandler = function(req, res) {
   res.render('contact', templateVars);
 };
 ```
-
-
 
 Gmail 防止你伪造另一个电子邮箱地址，因此你无法将“发件人”设置为表单中输入的电子邮箱地址。但如果你正在使用另一个 SMTP 服务器，你可能考虑从用户的电子邮箱地址发送，这样你就可以直接回复他们了。
 
@@ -6052,8 +5895,11 @@ exports.contactPostHandler = function(req, res) {
 ```
 
 这里进行了一些基础更改：
+
 - 将 `render` 函数被提取到错误处理器中，以渲染任何验证错误。
+
 - 如果 SMTP 邮件发送失败，则简单在屏幕上打印一个基础错误。在这种情况下，不重新渲染表单是一个好主意，因为用户可能无法再次使用它。
+
 - 如果 SMTP 邮件发送成功，则从回调内部显示成功消息。这样，成功消息就不会覆盖错误消息。
 
 ## 总结
@@ -6069,25 +5915,37 @@ exports.contactPostHandler = function(req, res) {
 **Express 文档**: [`http://expressjs.com/api.html`](http://expressjs.com/api.html)
 
 **教程**
+
 - Express 入门：[`http://howtonode.org/getting-started-express`](http://howtonode.org/getting-started-express)
+
 - Express.js 教程：[`http://www.hackarrow.com/express-js.html`](http://www.hackarrow.com/express-js.html)
 
 **模板资源**
+
 - `uinexpress` 文档：[`https://github.com/haraldell/uinexpress`](https://github.com/haraldell/uinexpress)
+
 - Underscore Template 文档：[`http://underscorejs.org/template`](http://underscorejs.org/template)
+
 - Jade 文档：[`https://github.com/visionmedia/jade/readme`](https://github.com/visionmedia/jade/readme)
 
 **表单资源**
+
 - Node 验证：[`https://github.com/chriso/node-validator`](https://github.com/chriso/node-validator)
 
 **邮件资源**
+
 - `EmailJS` 文档：[`https://github.com/eleith/emailjs`](https://github.com/eleith/emailjs)
+
 - Node 邮件模板：[`https://github.com/niftylettuce/node-email-templates`](https://github.com/niftylettuce/node-email-templates)
+
 - Node SMTP 服务器：[`https://github.com/andris9/simplesmtp`](https://github.com/andris9/simplesmtp)
 
 **其他框架**
+
 - Geddy：[`http://geddyjs.org/`](http://geddyjs.org/)
+
 - Ember：[`http://emberjs.com/`](http://emberjs.com/)
+
 - Flatiron：[`http://flatironjs.org/`](http://flatironjs.org/)
 
 # 第 8 章
@@ -6103,10 +5961,6 @@ exports.contactPostHandler = function(req, res) {
 最后，你了解了 Node 的其他数据库模块，例如 `MySQL` 模块和另一种名为 `Redis` 的 NoSQL 数据库。
 
 ## NoSQL 有什么好处？
-
-
-
-
 
 在过去的 30 年里，数据库设计的主流模型一直是如 `MySQL` 等关系型数据库。然而，最近的趋势是背离传统的关系型数据库模型。这种趋势被称为 `NoSQL`（或不仅 SQL）。由于多种原因，非关系 `NoSQL` 数据库是一种非常有吸引力的替代方案，主要是可扩展性和简单性。考虑到 Node.js 项目通常有共同的目标，许多项目使用 NoSQL 数据库是有合理的。
 
@@ -6233,6 +6087,7 @@ C:\mongodb\bin\mongod.exe
 一旦 `MongoDB` 在你的系统中运行，你需要安装模块与数据库通信。在本章中，你将学习使用两个不同的模块：
 
 - MongoDB 原生 Node.js 驱动：JavaScript 基础 MongoDB 支持
+
 - `Mongoose`：提供对象关系映射（ORM）的对象建模工具
 
 但现在，只需使用 `NPM` 安装原生驱动：
@@ -6261,10 +6116,6 @@ var db = new mongodb.Db('mydb', dbServer, {w: 1});
 1. `new mongodb.Server('localhost', 27017, {auto_reconnect: true})` 连接到 MongoDB 服务器。它使用默认主机（localhost）和默认端口（27017）。`auto_reconnect` 允许在连接中断时自动重连。
 
 2. `new mongodb.Db()` 创建一个新的数据库，在此例中 `mydb`。如果该数据库已存在，它将引用已存在的数据库。
-
-
-
-
 
 3. `mongodb.Db()` 的第三个参数 `{w: 1}` 设置了写关注（write concern），表示这是主 `mongod` 实例。只要你的服务器上没有多个 MongoDB 实例，这行代码就能正常工作。但如果你想了解更多其他选项，请访问 [`http://docs.mongodb.org/manual/core/write-operations/#write-concern`](http://docs.mongodb.org/manual/core/write-operations/#write-concern)。
 
@@ -6313,7 +6164,9 @@ db.open( function(err, conn) {
 以下是执行过程说明：
 
 1. `db.collection()` 创建了一个名为 `myCollection` 的新集合。
+
 2. 在下一个回调中，使用 `collection.insert()` 向集合中添加文档。这使用了传递给回调的 `collection` 对象。如你所见，插入的结构是一个简单的 JSON 对象，`{a: ‘my-item'}`。
+
 3. 最后，在插入的回调中，将结果打印到控制台，并使用 `db.close()` 关闭数据库连接。在使用完毕后不要忘记关闭 MongoDB 连接。
 
 现在在 Node 中运行该脚本。图 8-3 显示了创建的数据库和集合。
@@ -6365,46 +6218,20 @@ db.open( function(err, conn) {
   });
 });
 ```
-*(注：此处原文代码块似乎存在闭合括号缺失或截断，已按逻辑尽可能翻译并保持结构)*
-*纠正：原文提供的代码块在 `find()` 之后逻辑混乱，翻译时保留了其原始结构：*
 
-```javascript
-// open database
-db.open( function(err, conn) {
-  // select the collection
-  db.collection('myNewCollection', function(err, collection) {
-    // cache a count variable
-    var count = 0;
-    // insert numbers into the collection
-    for ( var i = 0; i < 5; i++ ) {
-      collection.insert({
-        num: i
-      }, function(err, result) {
-        // log the result
-        console.log(result);
-        // increment the count value
-        count++;
-        // if the count is high enough, close the connection
-        if ( count > 4 ) {
-          db.close();
-        }
-      });
-    }
-  });
-```
-*(注：原文文本中 `find()` 之后的部分似乎存在排版错误或截断，以下为基于原文逻辑的翻译延续)*
-
-```javascript
 这创建了一个名为 `myNewCollection` 的集合。你可以看到，`find()` 使用某些值来选择数据。
 
 ```text
 { num: 0, _id: 50dc93c46f8df0000000001 }
+
 { num: 4, _id: 50dc93c46f8df0000000005 }
+
 { num: 3, _id: 50dc93c46f8df0000000004 }
+
 { num: 2, _id: 50dc93c46f8df0000000003 }
+
 { num: 1, _id: 50dc93c46f8df0000000002 }
 ```
-*(注：原文此段落逻辑较为混乱，翻译已尽量遵循原文行结构)*
 
 ## 选择集合中的所有条目
 
@@ -6460,10 +6287,6 @@ db.collection('myNewCollection', function(err, collection) {
 ```text
 { num: 2, _id: 50dc93c46f8df0000000003 }
 ```
-
-
-
-
 
 由于只有一个文档的 `num` 值为 `2`，之前的搜索只返回了一个值。如果有多个匹配项，它将返回一个包含所有匹配文档的数组。
 
@@ -6569,11 +6392,51 @@ db.collection('myNewCollection', function(err, collection) {
   { num: 0, _id: 50dc93c946f8df0000000001 } ]
 ```
 
+## 更新数据
 
+更新数据库中的文档与插入文档一样简单。你可以使用 `update()` 方法来修改现有文档。
 
+```javascript
+db.collection('myNewCollection', function(err, collection) {
+  // 更新 num 为 1 的文档
+  collection.update({num: 1}, {$set: {num: 10}}, function(err, result) {
+    if (err) {
+      console.log(err);
+    }
+    else {
+      console.log('Successfully updated');
+    }
+    db.close();
+  });
+});
+```
 
+在此处，脚本使用 `$set` 算符将 `num` 为 `1` 的文档更新为 `10`。`$set` 算符允许你修改特定字段而不替换整个文档。
 
-• 回调函数，它还会传递查询结果，`function() { ... }` 
+你也可以使用 `findAndModify()` 来查找并修改单个文档。这在你需要原子性地获取并更新文档时非常有用。
+
+```javascript
+db.collection('myNewCollection', function(err, collection) {
+  // 查找并修改
+  collection.findAndModify(
+    {num: 4},           // 查询条件
+    [['_id', 'asc']],   // 排序
+    {$set: {num: 25}},  // 更新操作
+    {new: true},        // 选项：返回新文档
+    function(err, result) {
+      if (err) {
+        console.log(err);
+      }
+      else {
+        console.log(result);
+      }
+      db.close();
+    }
+  );
+});
+```
+
+• 回调函数，它还会传递查询结果，`function() { ... }`
 
 使用 `findAndModify()` 的另一个注意事项是，回调函数返回的是修改前的文档。例如，在这种情况下，`findAndModify()` 返回的是 `{num: 4}` 而不是新的 `{num: 25}`，你可以在此输出中看到：
 
@@ -6646,45 +6509,48 @@ db.open( function(err, conn) {
 
 # Mongoose
 
-Mongoose 是一个用于 Node 并连接到 MongoDB 的对象建模工具。你已经熟悉 Backbone 了，所以使用 Mongoose 将是轻而易举，因为 Mongoose 处理数据的方式与 Backbone 类似，都使用模型和集合。Mongoose 然后将这些模型映射到 MongoDB 数据库，为你节省了大量的额外手动工作。
+`Mongoose` 是一个用于 Node 并连接到 `MongoDB` 的对象建模工具。你已经熟悉 Backbone 了，所以使用 `Mongoose` 将是轻而易举，因为 `Mongoose` 处理数据的方式与 Backbone 类似，都使用模型和集合。`Mongoose` 然后将这些模型映射到 `MongoDB` 数据库，为你节省了大量的额外手动工作。
 
-本节将教你如何安装 Mongoose 并创建模型来存储数据。然后你将学习读取数据的技巧，以及如何从这些从中选择特定的文档和字段。
+本节将教你如何安装 `Mongoose` 并创建模型来存储数据。然后你将学习读取数据的技巧，以及如何从这些从中选择特定的文档和字段。
 
 ## 开始使用 Mongoose
 
-使用 NPM 安装 Mongoose 非常简单：
+使用 NPM 安装 `Mongoose` 非常简单：
 
 ```bash
 npm install mongoose
 ```
 
-在安装 Mongoose 及其依赖项后，在 Node 中引入它：
+在安装 `Mongoose` 及其依赖项后，在 Node 中引入它：
 
 ```javascript
 var mongoose = require('mongoose');
 ```
 
-接下来连接到 MongoDB 数据库：
+接下来连接到 `MongoDB` 数据库：
 
 ```javascript
 mongoose.connect('localhost', 'mydb');
 ```
 
-这里 Mongoose 将连接到 `localhost` 上的 `mydb` 数据库。
+这里 `Mongoose` 将连接到 `localhost` 上的 `mydb` 数据库。
 
 你可能注意到 `connect()` 调用没有包含回调函数。这是因为你必须手动设置这些回调：
 
 ```javascript
 // connect to a MongoDB database
 mongoose.connect('localhost', 'test');
+
 // database connection
 var db = mongoose.connection;
+
 // error callback
 db.on('error', function(msg) {
   console.log(
     'Connection Error: %s', msg
   );
 });
+
 // success callback
 db.once('open', function callback () {
   // on success
@@ -6692,11 +6558,11 @@ db.once('open', function callback () {
 });
 ```
 
-此脚本首先创建一个连接对象，然后绑定两个回调：一个在发生任何错误时触发，另一个在连接打开时触发一次。你在 Mongoose 中做的几乎所有操作将存在于成功回调中。为了简洁起见，我在后续示例中省略了它，但请假设所有代码都这里。
+此脚本首先创建一个连接对象，然后绑定两个回调：一个在发生任何错误时触发，另一个在连接打开时触发一次。你在 `Mongoose` 中做的几乎所有操作将存在于成功回调中。为了简洁起见，我在后续示例中省略了它，但请假设所有代码都这里。
 
 ### 创建模型
 
-你使用模型来定义 Mongoose 中的所有文档。模型允许你抽象掉数据库系统，并专注于你真正想要的数据：。在本节中，你将学习如何创建一个 schema（模式）来定义模型的结构，然后根据该结构创建并保存模型。
+你使用模型来定义 `Mongoose` 中的所有文档。模型允许你抽象掉数据库系统，并专注于你真正想要的数据。在本节中，你将学习如何创建一个 schema（模式）来定义模型的结构，然后根据该结构创建并保存模型。
 
 ### 创建 Schema
 
@@ -6728,7 +6594,7 @@ var fruitSchema = mongoose.Schema({
 
 ### 创建模型
 
-接下来，使用 schema 来在 Mongoose 中定义模型。例如：
+接下来，使用 schema 来在 `Mongoose` 中定义模型。例如：
 
 ```javascript
 // define the model
@@ -6751,7 +6617,7 @@ var apple = new Fruit({
 
 ### 保存模型
 
-仅仅在 Mongoose 中创建模型是不够的——你仍然需要将其保存。要做到这一点，请使用 `save()` 方法：
+仅仅在 `Mongoose` 中创建模型是不够的——你仍然需要将其保存。要做到这一点，请使用 `save()` 方法：
 
 ```javascript
 // save the model
@@ -6765,18 +6631,22 @@ apple.save( function(err, apple) {
 });
 ```
 
-这将模型作为文档保存到 MongoDB。每当你创建或修改模型数据时，只需使用 `save()` 方法将更改同步到数据库。
+这将模型作为文档保存到 `MongoDB`。每当你创建或修改模型数据时，只需使用 `save()` 方法将更改同步到数据库。
 
 ### 将前面的代码整合在一起
 
 ```javascript
 // include the mongoose module
 var mongoose = require('mongoose');
+
 // connect to a MongoDB database
 mongoose.connect('localhost', 'mydb');
+
 // connection
 var db = mongoose.connection;
+
 db.on('error', console.error.bind(console, 'Connection error:'));
+
 db.once('open', function callback () {
   // define the schema
   var fruitSchema = mongoose.Schema({
@@ -6785,8 +6655,10 @@ db.once('open', function callback () {
     quantity: Number,
     ripe: Boolean
   });
+
   // define the model
   var Fruit = mongoose.model('fruit', fruitSchema);
+
   // create a new instance
   var apple = new Fruit({
     name: 'apple',
@@ -6794,6 +6666,7 @@ db.once('open', function callback () {
     quantity: 3,
     ripe: true
   });
+
   // save the model
   apple.save( function(err, apple) {
     if (err) {
@@ -6808,21 +6681,15 @@ db.once('open', function callback () {
 
 回顾一下这里发生：
 
-1. 脚本开始引入 Mongoose 模块。
+1. 脚本开始引入 `Mongoose` 模块。
 2. 接着建立与数据库的连接，并带有错误和成功回调。
 3. 在打开回调中，脚本定义了一个 schema。
-
-
-
-
-
 4. 它使用 schema 来定义模型并创建该模型的新实例。
-
-5. 模型将被保存为 MongoDB 集合。
+5. 模型将被保存为 `MongoDB` 集合。
 
 ## 读取数据
 
-从 Mongoose 集合中读取数据非常简单。但首先向集合中添加一些数据，以便你进行操作：
+从 `Mongoose` 集合中读取数据非常简单。但首先向集合中添加一些数据，以便你进行操作：
 
 ```javascript
 var orange = new Fruit({
@@ -6884,162 +6751,193 @@ Fruit.find( function(err, fruit) {
     color: 'red',
     quantity: 3,
     ripe: true,
-    _id: 50dcd5b8e890ee50000000001,
-    __v: 0 },
-  { name: 'orange',
-    color: 'orange',
-    quantity: 5,
-    ripe: true,
-    _id: 50dcd5b8e890ee0000000001,
-    __v: 0 },
-  { name: 'banana',
-    color: 'green',
-    quantity: 1,
-    ripe: false,
-    _id: 50dcd5b8e890ee0000000002,
-    __v: 0 } ]
 ```
 
-### 查找特定模型
 
-你也可以通过向 `find()` 方法传递第一个参数来缩小选择选择的范围：
+
+# Mongoose 查询示例
+
+以下是 Mongoose 查询返回的示例数据：
+
+```json
+[
+  {
+    "name": "apple",
+    "color": "red",
+    "quantity": 3,
+    "ripe": true,
+    "_id": "50dcd5b8e890ee50000000001",
+    "__v": 0
+  },
+  {
+    "name": "orange",
+    "color": "orange",
+    "quantity": 5,
+    "ripe": true,
+    "_id": "50dcd5b8e890ee0000000001",
+    "__v": 0
+  },
+  {
+    "name": "banana",
+    "color": "green",
+    "quantity": 1,
+    "ripe": false,
+    "_id": "50dcd5b8e890ee0000000002",
+    "__v": 0
+  }
+]
+```
+
+## 查找特定模型
+
+你可以通过向 `find()` 方法传递第一个参数来缩小查询范围：
 
 ```javascript
-// select just the orange
+// 仅选择 orange
 Fruit.find({name: 'orange'}, function(err, fruit) {
   if (err) {
     console.log(err);
-  }
-  else {
+  } else {
     console.log(fruit);
   }
 });
 ```
 
-此代码段仅选择 `name` 值为 `'orange'` 的模型，如输出所示：
+此代码段仅选择 `name` 值为 `'orange'` 的模型，输出如下：
 
 ```json
-[ { name: 'orange',
-    color: 'orange',
-    quantity: 5,
-    ripe: true,
-    _id: 50dcd5b8e890ee0000000001,
-    __v: 0 } ]
+[
+  {
+    "name": "orange",
+    "color": "orange",
+    "quantity": 5,
+    "ripe": true,
+    "_id": "50dcd5b8e890ee0000000001",
+    "__v": 0
+  }
+]
 ```
 
 Mongoose 支持 MongoDB 所有强大的查询选项。例如，你可以使用正则表达式来选择模型：
 
 ```javascript
-// select fruits that end in 'e'
+// 选择名称以 'e' 结尾的水果
 Fruit.find({name: /e$/}, function(err, fruit) {
   if (err) {
     console.log(err);
-  }
-  else {
+  } else {
     console.log(fruit);
   }
 });
 ```
 
-此示例使用正则表达式 `/e$/` 选择了以字母 ‘e’ 结尾的水果，如下：
+此示例使用正则表达式 `/e$/` 选择了以字母 ‘e’ 结尾的水果，输出如下：
 
 ```json
-[ { name: 'apple',
-    color: 'red',
-    quantity: 3,
-    ripe: true,
-    _id: 50dcd5b8e890ee50000000001,
-    __v: 0 },
-  { name: 'orange',
-    color: 'orange',
-    quantity: 5,
-    ripe: true,
-    _id: 50dcd5b8e890ee0000000001,
-    __v: 0 } ]
+[
+  {
+    "name": "apple",
+    "color": "red",
+    "quantity": 3,
+    "ripe": true,
+    "_id": "50dcd5b8e890ee50000000001",
+    "__v": 0
+  },
+  {
+    "name": "orange",
+    "color": "orange",
+    "quantity": 5,
+    "ripe": true,
+    "_id": "50dcd5b8e890ee0000000001",
+    "__v": 0
+  }
+]
 ```
 
-你还可以使用 MongoDB 的操作符，例如：
+你还可以使用 MongoDB 的操作符，例如 `$lt`：
 
 ```javascript
-// select quantities less than 4
+// 选择数量小于 4 的水果
 Fruit.find({quantity: {$lt: 4}}, function(err, fruit) {
   if (err) {
     console.log(err);
-  }
-  else {
+  } else {
     console.log(fruit);
   }
 });
 ```
 
-此代码段选择了数量小于 `4` 的水果，如此输出所示：
+此代码段选择了数量小于 `4` 的水果，输出如下：
 
 ```json
-[ { name: 'apple',
-    color: 'red',
-    quantity: 3,
-    ripe: true,
-    _id: 50dcd5b8e890ee50000000001,
-    __v: 0 },
-  { name: 'orange',
-    color: 'orange',
-    quantity: 5,
-    ripe: true,
-    _id: 50dcd5b8e890ee0000000001,
-    __v: 0 } ]
+[
+  {
+    "name": "apple",
+    "color": "red",
+    "quantity": 3,
+    "ripe": true,
+    "_id": "50dcd5b8e890ee50000000001",
+    "__v": 0
+  },
+  {
+    "name": "banana",
+    "color": "green",
+    "quantity": 1,
+    "ripe": false,
+    "_id": "50dcd5b8e890ee0000000002",
+    "__v": 0
+  }
+]
 ```
 
+# WebSockets 实战指南
 
-
-
-在本章中，你将学习到创建 WebSockets 协议的原因以及它所取代的传统方法。随后，你将直接进入实践并创建一个简单的 WebSockets 应用程序。你将使用 `Socket.IO` 来在 Node 上创建 socket 服务器，并从浏览器连接到该服务器。接下来，你将使用 `Socket.IO` 创建一个实时聊天室应用。你将发现如何在服务器和客户端之间中继消息，以及如何将这些信息传递给用户。然后，你用 `Backbone.js` 为该应用添加结构，为聊天室添加对多个用户名和时间戳的支持。最后，你将使用 `MongoDB` 实现应用的数据持久化。
+在本章中，你将学习创建 WebSockets 协议的原因以及它所取代的传统方法。随后，你将直接进入实践并创建一个简单的 WebSockets 应用程序。你将使用 `Socket.IO` 来在 Node 上创建 socket 服务器，并从浏览器连接到该服务器。接下来，你将使用 `Socket.IO` 创建一个实时聊天室应用。你将发现如何在服务器和客户端之间中继消息，以及如何将这些信息传递给用户。然后，你用 `Backbone.js` 为该应用添加结构，为聊天室添加对多个用户名和时间戳的支持。最后，你将使用 `MongoDB` 实现应用的数据持久化。
 
 本章将本书第三部分中的所有概念结合在一起：`Node.js`、`Express` 框架和 `MongoDB`。在本章节结束时，你能够熟练地在 `Node` 中创建自己的实时应用。
 
-# WebSockets 的工作原理
+## WebSockets 的工作原理
 
 要理解 WebSockets 是如何工作的，你首先需要理解它们设计旨在取代的传统方法。WebSockets 是解决长期以来轮询方案的解决方案，这些方案对实时数据的响应并不充分。
 
-## 轮询的问题
+### 轮询的问题
 
 假设你正在为一个股票行情 Web 应用构建前端。当用户打开页面时，你首先通过 `Ajax` 请求拉取股票价格。然后你轮询服务器（例如每五秒一次），以查看是否发生了价格变化。然而，与其让你定期检查服务器，如果让服务器能够在每次发生变化时都通知你，难道不是更好吗？这本质上就是 WebSockets 的工作方式：它们在服务器和客户端之间创建了一个双向通信通道。
 
-## 平衡的艺术
+### 平衡的艺术
 
 如果没有 WebSockets，轮询方案迫使开发者在两个问题之间进行平衡：
 
 *   如果你轮询服务器不够频繁，在变化发生与该变化实际中继给用户之间可能会存在延迟。例如，如果股票价格在五秒结束之前发生了变化，用户将必须等待下一个间隔周期跳动才能看到该变化。
 *   另一方面，如果你轮询服务器过于频繁，会为服务器和客户端产生不必要的负载。如果过去五秒内没有任何变化，为什么要用额外的 `Ajax` 请求减慢浏览器的速度呢？此外，为什么要减慢服务器来处理无意义的请求呢？
 
-最糟糕的部分是，这两个问题是相互影响的。数据更新不够快，导致你刷新得更频繁，这导致了不必要的请求，从而让你刷新得更少（然后你又回到了起点）。如你所见，这个问题可能很难平衡。此外，即使你的服务器能够处理这些负载，你仍然会遇到 HTTP 延迟问题。对于实时解决方案，你可以将轮询间隔设置为 100 ms 左右，但很有可能数据包通过 `HTTP` 的一个完整往返过程至少需要 200 ms。
+最糟糕的部分是，这两个问题是相互影响的。数据更新不够快，导致你刷新得更频繁，这导致了不必要的请求，从而让你刷新得更少（然后你又回到了起点）。如你所见，这个问题可能很难平衡。此外，即使你的服务器能够处理这些负载，你仍然会遇到 `HTTP` 延迟问题。对于实时解决方案，你可以将轮询间隔设置为 100 ms 左右，但很有可能数据包通过 `HTTP` 的一个完整往返过程至少需要 200 ms。
 
-## 引入长轮询
+### 引入长轮询
 
 为了解决基础轮询方法的问题，创建了长轮询（通常称为 Comet 应用）。长轮询的一种典型方法是在固定的间隔上查询服务器，但与传统的轮询方法不同，连接保持开启状态，服务器只有在有新数据时才会发送响应。长轮询减少了不必要的负载，但仍然没有解决 `HTTP` 请求的基本延迟问题。Comet 应用的另一个主要缺点是它们经常违反 `HTTP 1.1` 规范，该规范规定客户端不应与服务器维持超过两个并发连接（`http://www.w3.org/Protocols/rfc2616/rfc2616-sec8.html#sec8.1.4`）。
 
 长轮询依赖于 `iframe` 和 `MIME` 黑科技，这足以成为避免它的理由。
 
-# WebSockets 解决方案
+## WebSockets 解决方案
 
 WebSockets 协议为轮询困境提供了一个优雅的解决方案。WebSockets 在服务器和客户端之间建立了一个开放连接，因此服务器可以在没有被浏览器请求的情况下向浏览器发送内容。这种开放连接允许内容在两个方向上自由流动，比传统的 `HTTP` 连接快得多。
 
-## 浏览器支持
+### 浏览器支持
 
 尽管你可能迫不及待地想要使用 WebSockets，但请记住它仍然是一项相对新技术。因此，浏览器支持可能是一个问题。幸运的是，在本文编写期间，所有桌面浏览器都完全支持 WebSockets。然而，微软 `IE9` 及之前的版本不支持 sockets。移动端支持也并不稳定。虽然大多数移动浏览器（如 `iOS Safari`）完全支持 WebSockets，但 `Android Browser` 或 `Opera Mini` 则不支持。请参见图 9-1 中的支持表。
 
 遗憾的是，如果你想支持旧版本的 `IE` 和任何版本的 `Android Browser`，你需要使用混合轮询方法。但不要灰馁，在下一节中，你将学习一种 sockets API，它为你想要支持的所有浏览器提供了非常健壮的后备方案。
 
-![97811118524565-fg01.tif](img/97811118524565-fg01.png)
+![图 9-1 WebSockets 支持](img/97811118524565-fg01.png)
 
-图 9-1 WebSockets 支持
-
-## 开始使用 Socket.IO
+### 开始使用 Socket.IO
 
 `Socket.IO` 是一个用于服务器和客户端的 JavaScript 库，让 WebSocket 通信变得轻而易举。`Socket.IO` 在运行时选择最佳传输方法，并为旧浏览器提供回备方案。最棒的是，它支持几乎所有浏览器（甚至是 `IE5`）。要了解更多关于 `Socket.IO` 浏览器支持的信息，请访问 `http://socket.io/#browser-support`。
 
 在本章中，我假设你正在配合 `Express` 框架使用 WebSockets，正如我在第 7 章中所解释。
 
-## 服务器端的 Socket.IO
+#### 服务器端的 Socket.IO
 
 在本小节中，你把 `Express` 与 `Socket.IO` 结合起来创建你的第一个 socket 服务器。你将学习如何跟踪连接并向客户端发送消息。首先，使用 `NPM` 安装 `Socket.IO`：
 
@@ -7051,7 +6949,8 @@ npm install socket.io
 
 ```javascript
 var server = http.createServer(app),
-io = require('socket.io').listen(server);
+    io = require('socket.io').listen(server);
+
 server.listen(app.get('port'), function(){
   console.log("Express server listening on port " + app.get('port'));
 });
@@ -7063,10 +6962,12 @@ server.listen(app.get('port'), function(){
 
 ```javascript
 var activeClients = 0;
+
 // 连接建立
 io.sockets.on('connection', function(socket) {
   activeClients++;
   io.sockets.emit('message', {clients: activeClients});
+
   // 连接断开
   socket.on('disconnect', function(data) {
     activeClients--;
@@ -7077,13 +6978,11 @@ io.sockets.on('connection', function(socket) {
 
 这是一个非常简单的脚本，用于跟踪连接到 socket 服务器的用户数量。首先，通过 `io.sockets.on('connection')` 设置一个事件以跟踪新用户的连接。当该事件触发时，它会增加 `activeClients` 并通过 socket 连接发送消息。同样，还为特定用户从 socket 断开连接设置了另一个事件。类似的回调函数会触发，这次是减少 `activeClients` 的数量并通过 socket 发送该数据。
 
-## 客户端的 Socket.IO
-
-
+#### 客户端的 Socket.IO
 
 你现在已经设置了一些非常基础的事件，用于传输连接到 socket 的用户数量的数据。但你仍然需要在客户端连接到 socket 并处理这些数据。本小节将教你如何在客户端设置 socket 监听器，以实时更新视图。
 
-在处理 socket 连接的客户端之前，你需要为页面创建一些标记（markup）来设置快速查看视图。首先，打开 `./routes/index.js` 并确保你已经为应用的根目录设置了路由：
+在处理 socket 连接的客户端之前，你需要为页面创建一些标记来设置快速查看视图。首先，打开 `./routes/index.js` 并确保你已经为应用的根目录设置了路由：
 
 ```javascript
 exports.index = function(req, res){
@@ -7095,7 +6994,7 @@ exports.index = function(req, res){
 
 ```html
 <p>
-  Connected clients: <span id="client-count">0</span></span>
+  Connected clients: <span id="client-count">0</span>
 </p>
 ```
 
@@ -7132,21 +7031,19 @@ socket.on('message', function(data) {
 });
 ```
 
-在这里，脚本首先通过 [`http://localhost:3000`](http://localhost:3000) 连接到 WebSocket，因为 Node 服务器就在那里。一旦用户连接，它将在服务器端触发 `io.socket.on('connection')` 事件。然后每当从 socket 接收到数据时，就会触发回调函数。该数据将用于根据适当的连接用户数量更新页面上的计数。
+在这里，脚本首先通过 `http://localhost:3000` 连接到 WebSocket，因为 Node 服务器就在那里。一旦用户连接，它将在服务器端触发 `io.socket.on('connection')` 事件。然后每当从 socket 接收到数据时，就会触发回调函数。该数据将用于根据适当的连接用户数量更新页面上的计数。
 
-现在服务器和客户端的 WebSocket 功能已经创建，你准备好测试该应用程序了。启动你的 Express 服务器并打开 [`http://localhost:3000`](http://localhost:3000)；你应该能看到 `Connected lients: 1`，如图 9-2 所示。
+现在服务器和客户端的 WebSocket 功能已经创建，你准备好测试该应用程序了。启动你的 Express 服务器并打开 `http://localhost:3000`；你应该能看到 `Connected clients: 1`，如图 9-2 所示。
 
-![9781118524565-fg0902.eps](img/9781118524565-fg0902_fmt.png)
-
-图 9-2 正在通过 WebSocket 注册一个连接。
+![图 9-2 正在通过 WebSocket 注册一个连接](img/9781118524565-fg0902_fmt.png)
 
 现在在另一个标签页中打开同一个页面，你应该看到计数增加到 2。因为它们是使用 WebSocket 连接的，更改将在两个页面上实时反映。接下来，关闭其中一个页面，你会看到计数跳回到 1。恭喜，你构建了第一个 WebSocket 应用！
 
-# 构建实时聊天室
+## 构建实时聊天室
 
 你已经掌握了 WebSocket 的基础，但到目前为止这个计数应用并不完善。幸运的是，扩展它来创建一个聊天室并不困难。
 
-## 创建聊天室
+### 创建聊天室
 
 首先，你需要为聊天室创建一个视图。修改 `index.html` 如下：
 
@@ -7169,13 +7066,11 @@ socket.on('message', function(data) {
   border: 1px solid #ccc;
   display: flex;
   flex-direction: column;
-
   #messages {
     flex: 1;
     overflow-y: scroll;
     margin-bottom: 10px;
   }
-
   #message-form {
     display: flex;
   }
@@ -7208,9 +7103,9 @@ $(function).ready(function() {
 
 我假设你已经熟悉了 LESS，如果不熟悉，可以查看附录 A，或者直接将样式转换为普通的 CSS。
 
-## 向服务器提交消息
+### 向服务器提交消息
 
-脚本现在变得稍微复杂了一些，你可以将 jQuery 下载到你的 `./public/javascripts/` 目录。。在 `views/layout.html` 中包含它：
+脚本现在变得稍微复杂了一些，你可以将 jQuery 下载到你的 `./public/javascripts/` 目录。在 `views/layout.html` 中包含它：
 
 ```html
 <!DOCTYPE html>
@@ -7246,48 +7141,56 @@ io.on('connection', function(socket) {
 });
 ```
 
+服务器端的更改非常简单。首先，为 `newchat` 事件注册了一个处理器。该处理器简单地将该事件的数据通过 socket 发送回，以便所有连接的客户端都能注册新消息。
 
-
-
-服务器端的更改非常简单，如代码中的**加粗部分**所示。首先，为 `newchat` 事件注册了一个处理器。该处理器简单地将该事件的数据通过 socket 发送回，以便所有连接的客户端都能注册新消息。
-
-### 在客户端上显示新消息
+#### 在客户端上显示新消息
 
 现在，当用户提交新消息时，它会通过 socket 传递给服务器，然后服务器将其通过 socket 传回所有已连接的客户端。你需要捕获这个新事件，然后在 `main.js` 中的客户端侧显示消息：
 
 ```javascript
 var socket,
     Chat = {};
+
 Chat.init = function(setup) {
   // 连接到 socket
   socket = new io.connect(setup.host);
+
   // 当接收数据时，更新用户计数
   socket.on('message', function(data) {
     setup.dom.count.text(data.clients);
   });
+
   // 为聊天框绑定提交事件
   setup.dom.form.submit(Chat.submit);
+
   // 处理新聊天
   Chat.$chatroom = setup.dom.room;
+
   socket.on('chat', Chat.printChat);
 };
+
 // 将新聊天提交到服务器
 Chat.submit = function(e) {
   e.preventDefault();
+
   // 获取输入框文本并清空
   var $message = $(e.target.message),
-  text = $message.val();
+      text = $message.val();
   $message.val('');
+
   // 通过 socket 发送消息
   socket.emit('newchat', {text: text});
 };
+
 // 在聊天室中打印新聊天
 Chat.printChat = function(data) {
   var $newChat = $('<p>' + data.text + '</p>');
   $newChat.appendTo(Chat.$chatroom);
+
   // 滚动到底部
   Chat.$chatroom.animate({ scrollTop: Chat.$chatroom.height() }, 100);
 };
+
 $(function() {
   // 初始化聊天应用
   Chat.init({
@@ -7303,11 +7206,9 @@ $(function() {
 
 在加粗部分，该脚本为 `chat` 事件定义了一个处理器 `Chat.printChat`。该事件简单地创建一个带有文本的新 `<p>` 标签，并将其附加到聊天室的 `<div>` 中。它会滚动到该 `<div>` 的底部，以便最新的消息始终显示出来。
 
-现在在几个不同的标签页中启动 [`http://localhost:3000`](http://localhost:3000)。当你从任何一个标签页发送消息时，你会在每个标签页上看到显示，如图 9-4 所示。
+现在在几个不同的标签页中启动 `http://localhost:3000`。当你从任何一个标签页发送消息时，你会在每个标签页上看到显示，如图 9-4 所示。
 
-![9781118524565-fg0904.eps](img/9781118524565-fg0904_fmt.png)
-
-图 9-4：聊天应用现在可以工作了，消息会被中继给所有连接的用户。
+![图 9-4：聊天应用现在可以工作了，消息会被中继给所有连接的用户](img/9781118524565-fg0904_fmt.png)
 
 ### 使用 Backbone.js 添加结构
 
@@ -7335,9 +7236,9 @@ $(function() {
 </html>
 ```
 
-#### 模型 (Models) 和集合 (Collections)
+#### 模型与集合
 
-使用 Backbone 构建时，，始终从模型和集合开始。因此，将这些添加到 `main.js` 中：
+使用 Backbone 构建时，始终从模型和集合开始。因此，将这些添加到 `main.js` 中：
 
 ```javascript
 // Models & Collections
@@ -7346,6 +7247,7 @@ Chat.Message = Backbone.Model.extend({
     text: ''
   }
 });
+
 Chat.Messages = Backbone.Collection.extend({
   model: Chat.Message
 });
@@ -7353,7 +7255,7 @@ Chat.Messages = Backbone.Collection.extend({
 
 如你所见，对于这个应用来说，模型是非常基本的。
 
-# 视图 (Views)
+#### 视图
 
 虽然模型很简单，但视图要复杂一些。你可能还记得在第 3 章中你使用 Backbone 创建了嵌套视图。本章也涵盖了类似的方法，因为你需要一个用于聊天室的主视图，它将填充每个每条消息的子视图。
 
@@ -7407,7 +7309,7 @@ Chat.MessagesView = Backbone.View.extend({
 });
 ```
 
-## 将 Backbone 接入应用
+#### 将 Backbone 接入应用
 
 现在模型、集合和视图已经在 Backbone 中设置好了，但它们仍需连接到应用：
 
@@ -7415,32 +7317,38 @@ Chat.MessagesView = Backbone.View.extend({
 Chat.init = function(setup) {
   // 连接到 socket
   socket = new io.connect(setup.host);
-  // 当接收数据时，更新用户计数
+
+  // 当接收数据时，更新用户数量
   socket.on('message', function(data) {
     setup.dom.count.text(data.clients);
   });
+
   // 初始化集合与视图
   Chat.messages = new Chat.Messages();
   Chat.messagesView = new Chat.MessagesView({
     collection: Chat.messages
   });
-  // 为聊天框绑定提交事件
+
+  // 绑定聊天框的提交事件
   setup.dom.form.submit(Chat.submit);
+
   // 处理新聊天
   Chat.$chatroom = setup.dom.room;
+
   socket.on('chat', Chat.addMessage);
 };
-// 将新消息添加到聊天室
+
+// 向聊天室添加新消息
 Chat.addMessage = function(data) {
   Chat.messages.add(data);
 };
 ```
 
+### 完整的 Backbone 实现代码
 
+以下是整合后的完整代码结构：
 
-
-
-# 模型与集合 (Models & Collections)
+#### 模型与集合
 
 ```javascript
 Chat.Message = Backbone.Model.extend({
@@ -7448,28 +7356,31 @@ Chat.Message = Backbone.Model.extend({
     text: ''
   }
 });
+
 Chat.Messages = Backbone.Collection.extend({
   model: Chat.Message
 });
 ```
 
-# 视图 (Views)
+#### 视图
 
 ```javascript
 Chat.MessageView = Backbone.View.extend({
   tagName: 'p',
+  template: _.template('<strong><%=name %>:</strong> <%=text %>'),
   render: function() {
-    // 添加消息文本
-    this.$el.text(this.model.get('text'));
+    // 添加消息的 html
+    this.$el.html(this.template(this.model.toJSON()));
     // 将新消息添加到父视图中
     this.parentView.$el.append(this.$el);
     return this;
   }
 });
+
 Chat.MessagesView = Backbone.View.extend({
   el: '#chatroom',
   initialize: function() {
-    // 将 "this" 上下绑定到 render 函数
+    // 将 "this" 上下文绑定到 render 函数
     _.bindAll(this, 'render');
     // 为集合绑定各种事件
     this.collection.on('change', this.render);
@@ -7491,51 +7402,58 @@ Chat.MessagesView = Backbone.View.extend({
       // 渲染它
       messageView.render();
     }, this);
-    // 滚动到部
+    // 滚动到底部
     this.$el.animate({ scrollTop: this.$el.height() }, 100);
     return this;
   }
 });
 ```
 
-# 初始化函数 (init function)
+#### 初始化函数
 
 ```javascript
 Chat.init = function(setup) {
   // 连接到 socket
   socket = new io.connect(setup.host);
+
   // 当接收数据时，更新用户数量
   socket.on('message', function(data) {
     setup.dom.count.text(data.clients);
   });
+
   // 初始化集合与视图
   Chat.messages = new Chat.Messages();
   Chat.messagesView = new Chat.MessagesView({
     collection: Chat.messages
   });
+
   // 绑定聊天框的提交事件
   setup.dom.form.submit(Chat.submit);
+
   // 处理新聊天
   Chat.$chatroom = setup.dom.room;
+
   socket.on('chat', Chat.addMessage);
 };
+
 // 向服务器提交新聊天
 Chat.submit = function(e) {
   e.preventDefault();
+
   // 获取输入文本并将其清空
   var $message = $(e.target.message),
-  text = $message.val();
+      text = $message.val();
   $message.val('');
+
   // 通过 socket 发送消息
   socket.emit('newchat', {text: text});
 };
+
 // 向聊天室添加新消息
 Chat.addMessage = function(data) {
   Chat.messages.add(data);
 };
-```
 
-```javascript
 $(function() {
   // 初始化聊天应用
   Chat.init({
@@ -7549,7 +7467,7 @@ $(function() {
 });
 ```
 
-# 添加用户 (Adding Users)
+## 添加用户
 
 现在聊天室已经构建了更具结构的结构，是时候添加更多功能了。首先，目前来看，聊天室对于通信来说并不实用，因为用户无法判断是谁在说什么。首先，创建一个提示框让用户输入名字：
 
@@ -7557,23 +7475,30 @@ $(function() {
 Chat.init = function(setup) {
   // 连接到 socket
   socket = new io.connect(setup.host);
+
   // 当接收数据时，更新用户数量
   socket.on('message', function(data) {
     setup.dom.count.text(data.clients);
   });
+
   // 获取用户名
   Chat.username = Chat.getUsername();
+
   // 初始化集合与视图
   Chat.messages = new Chat.Messages();
   Chat.messagesView = new Chat.MessagesView({
     collection: Chat.messages
   });
+
   // 绑定聊天框的提交事件
   setup.dom.form.submit(Chat.submit);
+
   // 处理新聊天
   Chat.$chatroom = setup.dom.room;
+
   socket.on('chat', Chat.addMessage);
 };
+
 // 获取用户名字
 Chat.getUsername = function() {
   return prompt("你的名字是什么？") || 'Anonymous';
@@ -7582,7 +7507,9 @@ Chat.getUsername = function() {
 
 在这里，`Chat.getUsername()` 函数使用基础的 `prompt` 来获取用户名，你可以在图 9-5 中看到它。
 
-图 9-5 此提示框获取了用户名。该提示框非常基础，你可以随地用模态对话框替换它。`Chat.getUsername()` 返回用户输入的内容，或者在用户取消提示框时返回“Anonymous”（匿名）。
+![图 9-5 此提示框获取了用户名](img/9781118524565-fg0905.png)
+
+该提示框非常基础，你可以随地用模态对话框替换它。`Chat.getUsername()` 返回用户输入的内容，或者在用户取消提示框时返回“Anonymous”（匿名）。
 
 接下来，修改 `Chat.submit()` 函数以通过 WebSocket 传递用户名：
 
@@ -7590,10 +7517,12 @@ Chat.getUsername = function() {
 // 向服务器提交新聊天
 Chat.submit = function(e) {
   e.preventDefault();
+
   // 获取输入文本并将其清空
   var $message = $(e.target.message),
-  text = $message.val();
+      text = $message.val();
   $message.val('');
+
   // 通过 socket 发送消息
   socket.emit('newchat', {
     name: Chat.username,
@@ -7622,13 +7551,13 @@ Chat.MessageView = Backbone.View.extend({
 
 考虑将用户名保存在本地存储器（local storage）中，这样用户就不需要重新输入。我在示例中省略了这一点，以便你可以在带有不同用户名的多个标签中测试应用。
 
-图 9-6 显示名字后，聊天室的用户体验（UX）有了很大提升。
+![图 9-6 显示名字后，聊天室的用户体验（UX）有了很大提升](img/9781118524565-fg0906.png)
 
-# 添加时间戳 (Adding a Timestamp)
+## 添加时间戳
 
 为消息添加时间戳也是一个好主意，这样用户可以看到每条消息发送的时间。首先，安装 `Moment.js` 模块，它可以让时间戳格式变得简单：
 
-```
+```bash
 npm install moment
 ```
 
@@ -7642,16 +7571,19 @@ moment().format('h:mm');
 
 ```javascript
 var moment = require('moment'),
-  activeClients = 0;
+    activeClients = 0;
+
 // 连接时
 io.sockets.on('connection', function(socket) {
   activeClients++;
   io.sockets.emit('message', {clients: activeClients});
+
   // 断开连接
   socket.on('disconnect', function(data) {
     activeClients--;
     io.sockets.emit('message', {clients: activeClients});
   });
+
   // 接收新聊天
   socket.on('newchat', function(data) {
     data.timestamp = moment().format('h:mm');
@@ -7676,14 +7608,9 @@ Chat.MessageView = Backbone.View.extend({
 });
 ```
 
-
-
-
 现在聊天室中显示了时间戳，如图 9-7 所示。
 
-![9781118524565-fg0907.eps](img/9781118524565-fg0907_fmt.png)
-
-图 9-7 聊天室中的消息现在显示了时间戳。
+![图 9-7 聊天室中的消息现在显示了时间戳](img/9781118524565-fg0907_fmt.png)
 
 ## 使用 MongoDB 进行持久化
 
@@ -7708,12 +7635,13 @@ var express = require('express')
   , mongodb = require('mongodb');
 ```
 
-接下来，连接到 MongoDB 服务器并在你的数据库创建一个消息集合（collection）：
+接下来，连接到 MongoDB 服务器并在你的数据库创建一个消息集合：
 
 ```javascript
 // connect to mongodb
 var db = new mongodb.Db('mydb', new mongodb.Server('localhost', 27017,
 {auto_reconnect: true}), {w: 1});
+
 db.open( function(err, conn) {
   db.collection('chatroomMessages', function(err, collection) {
     // init the chatroom
@@ -7728,15 +7656,18 @@ db.open( function(err, conn) {
 var chatroomInit = function(messageCollection) {
   var moment = require('moment'),
       activeClients = 0;
+
   // on connection
   io.sockets.on('connection', function(socket) {
     activeClients++;
     io.sockets.emit('message', {clients: activeClients});
+
     // on disconnect
     socket.on('disconnect', function(data) {
       activeClients--;
       io.sockets.emit('message', {clients: activeClients});
     });
+
     // new chat received
     socket.on('newchat', function(data) {
       data.timestamp = moment().format('h:mm');
@@ -7755,6 +7686,7 @@ var chatroomInit = function(messageCollection) {
 socket.on('newchat', function(data) {
   data.timestamp = moment().format('h:mm');
   io.sockets.emit('chat', data);
+
   // save the new message to mongodb
   messageCollection.insert(data, function(err, result) {
     console.log(result);
@@ -7765,12 +7697,14 @@ socket.on('newchat', function(data) {
 在这里，脚本使用了传递给 `chatroomInit()` 的 `messageCollection` 将新数据插入数据库。如果你重启 Node 服务器并提交一条新消息，请查看控制台中记录的数据库插入日志，如所示：
 
 ```json
-[ {
-  name: 'Anonymous',
-  text: 'Test message',
-  timestamp: '16:01',
-  _id: 50227...
-} ]
+[
+  {
+    "name": "Anonymous",
+    "text": "Test message",
+    "timestamp": "16:01",
+    "_id": "50227..."
+  }
+]
 ```
 
 ### 从 MongoDB 加载消息
@@ -7779,7 +7713,7 @@ socket.on('newchat', function(data) {
 
 ```javascript
 // get the last 10 messages from mongodb
-messageCollection.find({}, {sort['_id', 'desc'], limit: 10}).toArray(function(err, results) {
+messageCollection.find({}, {sort: [['_id', 'desc']], limit: 10}).toArray(function(err, results) {
   // loop through results in reverse
   var i = results.length;
   while(i--) {
@@ -7800,13 +7734,14 @@ messageCollection.find({}, {sort['_id', 'desc'], limit: 10}).toArray(function(er
 
 ### 关闭连接
 
-当新用户连接到 socket 时，你只需要加载这些文档。在 `io.sockets.on('connection')` 的回调中，添加以下代码
+当新用户连接到 socket 时，你只需要加载这些文档。在 `io.sockets.on('connection')` 的回调中，添加以下代码：
 
 ```javascript
 // on disconnect
 socket.on('disconnect', function(data) {
   activeClients--;
   io.sockets.emit('message', {clients: activeClients});
+
   // if no users
   if (!activeClients) db.close();
 });
@@ -7828,6 +7763,7 @@ Chat.Message = Backbone.Model.extend({
     text: ''
   }
 });
+
 Chat.Messages = Backbone.Collection.extend({
   model: Chat.Message
 });
@@ -7844,6 +7780,7 @@ Chat.MessageView = Backbone.View.extend({
     return this;
   }
 });
+
 Chat.MessagesView = Backbone.View.extend({
   el: '#chatroom',
   initialize: function() {
@@ -7879,60 +7816,58 @@ Chat.MessagesView = Backbone.View.extend({
 Chat.init = function(setup) {
   // connect to the socket
   socket = new io.connect(setup.host);
+
   // when data is received, update the user count
   socket.on('message', function(data) {
     setup.dom.count.text(data.clients);
   });
+
   // get username
   Chat.username = Chat.getUsername();
+
   // initialize the collection & views
   Chat.messages = new Chat.Messages();
   Chat.messagesView = new Chat.MessagesView({
     collection: Chat.messages
   });
-};
-```
 
-
-
-
-```javascript
-  // 为聊天框绑定提交表单
+  // bind form submit for chatbox
   setup.dom.form.submit(Chat.submit);
 
-  // 处理新聊天
+  // handle new chat
   Chat.$chatroom = setup.dom.room;
 
   socket.on('chat', Chat.addMessage);
-
 };
 
-// 将新聊天提交到服务器
+// submit new chat to server
 Chat.submit = function(e) {
   e.preventDefault();
-  // 获取输入框的内容并将其清空
+
+  // get input text and clear it
   var $message = $(e.target.message),
-  text = $message.val();
+      text = $message.val();
   $message.val('');
-  // 通过 socket 发送消息
+
+  // send message over socket
   socket.emit('newchat', {
     name: Chat.username,
     text: text
   });
 };
 
-// 向聊天室中添加新消息
+// add new message to chatroom
 Chat.addMessage = function(data) {
   Chat.messages.add(data);
 };
 
-// 获取用户名
+// get username
 Chat.getUsername = function() {
   return prompt("你的名字是什么？", '') || 'Anonymous';
 };
 
 $(function() {
-  // 初始化聊天应用
+  // initialize chat app
   Chat.init({
     host: 'http://localhost:3000',
     dom: {
@@ -7946,8 +7881,8 @@ $(function() {
 
 复述一下此脚本的执行流程：
 
-1. 它首先在 Backbone 中为消息创建模型（models）和集合（collections）。
-2. 脚本接着为每条消息创建视图（views），以及一个用于消息列表的父视图。这些视图绑定到集合的变化上，因此任何数据变化会自动渲染在页面上。
+1. 它首先在 Backbone 中为消息创建模型和集合。
+2. 脚本接着为每条消息创建视图，以及一个用于消息列表的父视图。这些视图绑定到集合的变化上，因此任何数据变化会自动渲染在页面上。
 3. `Chat.init()` 开始连接到 socket，然后调用 `Chat.getUsername()`，这允许用户在简单的 DOM `prompt()` 中输入名称。
 4. 随后，`Chat.init()` 初始化 Backbone 中的集合和视图。
 5. 接下来，`Chat.submit()` 函数处理聊天消息表单的提交，通过 WebSocket 传输文本和用户名。
@@ -7958,13 +7893,15 @@ $(function() {
 
 ```javascript
 var server = http.createServer(app),
-io = require('socket.io').listen(server);
+    io = require('socket.io').listen(server);
+
 server.listen(app.get('port'), function(){
   console.log("Express server listening on port " + app.get('port'));
 });
 
 // 连接到 mongodb
 var db = new mongodb.Db('mydb', new mongodb.Server('localhost', 27017, {auto_reconnect: true}), {w: 1});
+
 db.open( function(err, conn) {
   db.collection('chatroomMessages', function(err, collection) {
     // 初始化聊天室
@@ -7975,20 +7912,23 @@ db.open( function(err, conn) {
 var chatroomInit = function(messageCollection) {
   var moment = require('moment'),
       activeClients = 0;
+
   // 连接建立时
   io.sockets.on('connection', function(socket) {
     activeClients++;
     io.sockets.emit('message', {clients: activeClients});
+
     // 断开连接时
     socket.on('disconnect', function(data) {
       activeClients--;
       io.sockets.emit('message', {clients: activeClients});
+
       // 如果没有活跃用户则关闭数据库连接
       if ( !activeClients ) db.close();
     });
+
     // 从 mongodb 拉取最后 10 条消息
-    messageCollection.find({}, {sort:[['_id', 'desc']], limit:
-10}).toArray(function(err, results) {
+    messageCollection.find({}, {sort: [['_id', 'desc']], limit: 10}).toArray(function(err, results) {
       // 反序遍历结果
       var i = results.length;
       while(i--) {
@@ -7996,10 +7936,12 @@ var chatroomInit = function(messageCollection) {
         socket.emit('chat', results[i]);
       }
     });
+
     // 接收新聊天
     socket.on('newchat', function(data) {
       data.timestamp = moment().format('h:mm');
       io.sockets.emit('chat', data);
+
       // 保存到 mongodb
       db.collection('chatroomMessages').insert(data, function(err, result) {
       });
@@ -8008,13 +7950,11 @@ var chatroomInit = function(messageCollection) {
 };
 ```
 
+# 移动 Web 应用开发
 
+例如，根据 Pingdom 的数据，2010 年到 2012 年，亚洲移动流量份额的增长率为 192%（`http://royal.pingdom.com/2012/05/08/mobile-web-traffic-asia-tripled/`）。而且这不仅仅是亚洲的现象：全球范围内的增长超过了 162%。
 
-
-
-例如，根据 Pingdom 的数据，2010 年到 2012 年，亚洲移动流量份额的增长率为 192%（[`royal.pingdom.com/2012/05/08/mobile-web-traffic-asia-tripled`](http://royal.pingdom.com/2012/05/08/mobile-web-traffic-asia-tripled/)）。而且这不仅仅是亚洲的现象：全球范围内的增长超过了 162%。
-
-尽管桌面浏览仍然快于移动设备浏览，但预计最早在 2014 年就会发生变化。这是一个极具吸引力的机会，许多公司正在布局，以获取移动流量的红利。“移动优先”（Mobile-first）已成为许多开发者的共同格言，他们现在正针对移动设备开发应用，而将桌面支持视为事后考虑。这与几年前相比是一个重大的转变，那时移动应用 只是附加在主产品——桌面 Web 应用——之上的插件。
+尽管桌面浏览仍然快于移动设备浏览，但预计最早在 2014 年就会发生变化。这是一个极具吸引力的机会，许多公司正在布局，以获取移动流量的红利。“移动优先”已成为许多开发者的共同格言，他们现在正针对移动设备开发应用，而将桌面支持视为事后考虑。这与几年前相比是一个重大的转变，那时移动应用只是附加在主产品——桌面 Web 应用——之上的插件。
 
 在本章中，你将了解到如何在移动领域中定位你的 Web 应用。你首先将学习如何检测移动设备，并创建能够根据不同屏幕尺寸和设备方向调整的响应式布局。然后，你将学习一些可以用来处理移动视口和提供响应式内容的脚本，随后是几个你可以用来简化移动开发的的移动端框架。
 
@@ -8022,42 +7962,41 @@ var chatroomInit = function(messageCollection) {
 
 接下来，你将发现如何使用 `geolocation API` 根据用户设备的 GPS 为你的应用用户提供本地化内容。你还将学到如何使用 `JavaScript` 拨打电话号码和发送短信。最后，你将学习如何使用 `PhoneGap` 和 `JavaScript` 构建原生设备应用。`PhoneGap` 允许你桥接 `JavaScript` 应用与浏览器端无法使用的各种 API 之间的鸿沟。到本章结束时，你将对移动开发的各种关键技能有一个很好的介绍。
 
-# 移动应用设置
+## 移动应用设置
 
 随着移动端的压倒性流行，仅为桌面浏览器构建 Web 应用已经没有太大意义了。除非确实没有办法让你的应用在移动端运行，否则你绝对应该为智能手机和平板构建一个版本。但这并不意味着你必须从零开始构建一个完全独立的应用。事实上，避免分段并为桌面和移动端创建一个更通用的代码库是一个好主意。
 
-## 检测移动设备
+### 检测移动设备
 
 设置网站或应用移动版本的第一个挑战是首先检测用户是否在使用移动设备。通常情况下，最好在服务器端进行，这样你就可以发送精简的内容，并减小针对较慢移动连接的标记体积。然后你可以发送移动特定的 `JavaScript`，并避免在前端进行任何检测。
 
-然而，有时使用 `JavaScript` 处理这种检测是有意义的。遗憾的是，这意味着将通过用户代理（user agents）进行浏览器嗅探。在没有用户代理的情况下，没有任何可靠的方法可以检测移动设备，因为设备制造商已经破坏了所有提议的方法。
+然而，有时使用 `JavaScript` 处理这种检测是有意义的。遗憾的是，这意味着将通过用户代理进行浏览器嗅探。在没有用户代理的情况下，没有任何可靠的方法可以检测移动设备，因为设备制造商已经破坏了所有提议的方法。
 
 设备制造商故意规避移动检测，以便能够显示全功能的桌面网站并让他们的设备看起来更强大。
 
-### 寻找用户代理
+#### 寻找用户代理
 
 使用用户代理检测移动设备面临着自身的挑战。随着新设备和移动浏览器的定期发布，要维护一份最新的移动用户代理列表可能是困难的。幸运的是有很多服务可以为你处理这些。
 
-- 最简单的方法是从 [`http://detectmobilebrowsers.com`](http://detectmobilebrowsers.com/) 下载 `JavaScript` 实现。然而，该脚本只提供了一个简单的重定向——因此你需要修改它以创建一个可以在你的 `JavaScript` 中使用的钩子，例如设置一个变量 `isMobile`。此外，请记住，随着用户代理的变化，你必须随时间更新该脚本。
+*   最简单的方法是从 `http://detectmobilebrowsers.com` 下载 `JavaScript` 实现。然而，该脚本只提供了一个简单的重定向——因此你需要修改它以创建一个可以在你的 `JavaScript` 中使用的钩子，例如设置一个变量 `isMobile`。此外，请记住，随着用户代理的变化，你必须随时间更新该脚本。
+*   如果你需要更细粒度的检测，你应该使用 `WURFL`：`http://wurfl.sourceforge.net`。`WURFL`（无线通用资源列表）是一个经常更新的 XML 文件，它不仅列出了移动浏览器，还列出了它们的各种设备特定能力。因此，尽管它依赖于用户代理嗅探，但对于功能检测来说仍然相当可靠。
 
-- 如果你需要更细粒度的检测，你应该使用 `WURFL`：[`http://wurfl.sourceforge.net`](http://wurfl.sourceforge.net/)。`WURFL`（无线通用资源列表）是一个经常更新的 XML 文件，它不仅列出了移动浏览器，还列出了它们的各种设备特定能力。因此，尽管它依赖于用户代理嗅探，但对于功能检测来说仍然相当可靠。
+唯一的缺点是，你必须设置一个 API 在你的 `JavaScript` 中使用它。幸运的是，有几个可用工具，例如用于 `PHP` 的远程客户端 `Tera-WURFL`：`http://dbapi.scientiamobile.com/wiki/index.php/Remote_Webservice`。
 
-唯一的缺点是，你必须设置一个 API 在你的 `JavaScript` 中使用它。幸运的是，有几个可用工具，例如用于 `PHP` 的远程客户端 `Tera-WURFL`：[`http://dbapi.scientiamobile.com/wiki/index.php/Remote_Webservice`](http://dbapi.scientiamobile.com/wiki/index.php/Remote_Webservice)。
-
-### 发现方向
+#### 发现方向
 
 一旦你知道用户在使用移动设备，你也可以用 `JavaScript` 检查设备方向。技巧是使用 `window.orientation`，它以度输出方向。你可以用它为竖屏和横屏模式设置一个简单的开关：
 
-```
+```javascript
 switch( window.orientation ) {
   case 0:
   case 180:
     // 竖屏模式
-  break;
+    break;
   case 90:
   case -90:
     // 横屏模式
-  break;
+    break;
 }
 ```
 
@@ -8069,9 +8008,9 @@ window.onorientationchange = function() {
 };
 ```
 
-在 iOS 中，你可以通过 `window.ondeviceorientation` 获取关于设备的更精确的信息，它甚至可以访问加速度计。更多信息请访问 [`http://www.peterfriese.de/how-to-use-the-gyroscope-of-your-iphone-in-a-web-app/](http://www.peterfriese.de/how-to-use-the-gyroscope-of-your-iphone-in-a-web-app/)。
+在 iOS 中，你可以通过 `window.ondeviceorientation` 获取关于设备的更精确的信息，它甚至可以访问加速度计。更多信息请访问 `http://www.peterfriese.de/how-to-use-the-gyroscope-of-your-iphone-in-a-web-app/`。
 
-### 使用媒体查询解决布局问题
+#### 使用媒体查询解决布局问题
 
 最后，如果你在检测布局问题，可以使用 `JavaScript` 使用媒体查询。例如，这里是根据窗口大小设置的方法：
 
@@ -8083,11 +8022,11 @@ if (window.matchMedia('(max-device-width: 480px)').matches) {
 
 然而，请记住，此脚本检测的是任何匹配的设备，无论是否是移动设备。
 
-# 移动站点样式
+### 移动站点样式
 
 过去，移动样式是 HTML/CSS 的事务。你使用媒体查询或后端移动检测显示显示样式表，并使用 HTML 技术在移动视口内显示修改后的站点。然而，最近出现了一种趋势，即使用 `JavaScript` 处理这一切。
 
-## 视口脚本
+#### 视口脚本
 
 其中一个例子是处理移动视口，即页面在移动屏幕上显示的缩放。过去，你通过基础 HTML 元标签来处理这个问题：
 
@@ -8097,50 +8036,46 @@ if (window.matchMedia('(max-device-width: 480px)').matches) {
 
 在理论上，这种方法应该很好很好工作，以特定的缩放级别显示页面。然而在实践中，它留下了很多遗憾。主要问题是旋转。你可能注意到你的设备在旋转到横屏时，屏幕会缩放以匹配设备在竖屏时的比例。虽然这对于阅读段落是好事，但对于大多数网站来说并不是最好的用户体验。
 
-幸运的是，Zynga 的人员发布了一个开源的 `JavaScript`，可以更好地处理视口。你可以在这里下载：[`https://github.com/zynga/viewporter`](https://github.com/zynga/viewporter)。
-
-
-
+幸运的是，Zynga 的人员发布了一个开源的 `JavaScript`，可以更好地处理视口。你可以在这里下载：`https://github.com/zynga/viewporter`。
 
 该脚本更加优雅地处理了旋转问题，并提供了其他便利功能，例如移除浏览器的顶栏。
 
-# 另一个视口脚本
+#### 另一个视口脚本
 
-视口（Viewport）的另一个问题是，在处理内容时它们可能是任意的。为什么要让用户的屏幕尺寸来决定页面的断点，并可能导致图像和段落截断到下一个屏幕上呢？
+视口的另一个问题是，在处理内容时它们可能是任意的。为什么要让用户的屏幕尺寸来决定页面的断点，并可能导致图像和段落截断到下一个屏幕上呢？
 
-涉及到响应式设计和视口时，传统方法是设置固定的断点。如果你只需要支持少数设备，这种方法效果很好，但面对海量的不同移动设备屏幕尺寸，它就显得彻底失败了。幸运的是，有一个脚本可以根据页面内容来设置视口，你可以在这里下载：[`https://github.com/bradfrost/ish.`](https://github.com/bradfrost/ish.)。通过这个脚本，你可以定义几个桶大小（bucket sizes），然后让它自动完成其余工作。
+涉及到响应式设计和视口时，传统方法是设置固定的断点。如果你只需要支持少数设备，这种方法效果很好，但面对海量的不同移动设备屏幕尺寸，它就显得彻底失败了。幸运的是，有一个脚本可以根据页面内容来设置视口，你可以在这里下载：`https://github.com/bradfrost/ish.`。通过这个脚本，你可以定义几个桶大小，然后让它自动完成其余工作。
 
-# 响应式图像脚本
+#### 响应式图像脚本
 
-在提供网站移动版本时，另一个常见问题是如何处理图像。一方面，你想为移动端显示小图像；另一方面，你想为桌面浏览器显示高分辨率图像。你可以通过从服务器提供完全不同的标记来解决这个问题，但这构建和维护可能会有些困难。有一个更简单的解决方案，它利用了图像路径的一些有趣技巧，你可以在这里下载：[`https://github.com/filamentgroup/Responsive-Images`](https://github.com/filamentgroup/Responsive-Images)。
+在提供网站移动版本时，另一个常见问题是如何处理图像。一方面，你想为移动端显示小图像；另一方面，你想为桌面浏览器显示高分辨率图像。你可以通过从服务器提供完全不同的标记来解决这个问题，但这构建和维护可能会有些困难。有一个更简单的解决方案，它利用了图像路径的一些有趣技巧，你可以在这里下载：`https://github.com/filamentgroup/Responsive-Images`。
 
-基本上，你定义了两种想要使用的图像路径，脚本会使用 JavaScript 来决定使用最佳的哪一个。然而，这些路径仅在 Apache 服务器上有效，所以如果你没有使用 Apache，就需要探索其他选项。幸运的是，市面上有很多不同的脚本，你可以在这里阅读相关介绍：[`http://css-tricks.com/which-responsive-images-solution-should-you-use`](http://css-tricks.com/which-responsive-images-solution-should-you-use/)。
+基本上，你定义了两种想要使用的图像路径，脚本会使用 JavaScript 来决定使用最佳的哪一个。然而，这些路径仅在 Apache 服务器上有效，所以如果你没有使用 Apache，就需要探索其他选项。幸运的是，市面上有很多不同的脚本，你可以在这里阅读相关介绍：`http://css-tricks.com/which-responsive-images-solution-should-you-use`。
 
-# 移动端框架
+### 移动端框架
 
-由于移动设备的普及，现在有了大量的移动端库和框架。这些资源为你的移动开发工作提供了巨大的助力。然而，与任何第三方工具一样，选择最适合你项目的一个是非常关重要的。
+由于移动设备的普及，现在有了大量的移动端库和框架。这些资源为你的移动开发工作提供了巨大的助力。然而，与任何第三方工具一样，选择最适合你项目的一个是非常关键的。
 
-- **Sencha Touch**：Sencha Touch 可能是最健壮的移动框架。它提供了许多实用的移动组件，以及 MVC 架构和样式。它非常适合需要大量移动特定功能的交互式应用。所以，如果你正在构建一个功能全的移动应用，请查看 Sencha Touch。但如果你只是为一个简单的画册网站构建移动端皮肤，Sencha Touch 就太大材小用了。在所有移动框架中，它的学习曲线最高，文件体积最大。要了解更多关于 Sencha Touch 信息，请访问 [`www.sencha.com/products/touch`](http://www.sencha.com/products/touch)。
-- **jQuery Mobile**：jQuery Mobile 是另一个提供多种移动组件和主题的框架。它基于 `jQuery` 和 `jQuery UI` 构建，因此大多数开发者发现它很容易上手并投入工作。jQuery Mobile 提供了很多样式和一个类似于 `jQuery UI` 的主题器（themer），因此它在没有设计稿的情况下推出移动端 UI 非常棒。但如果你已经有了设计方向，处理起来可能会稍微更具挑战性。jQuery Mobile 最适合不需要 `Sencha Touch` 所有功能的 Web 应用。要了解更多关于 jQuery Mobile 信息，请访问 [`http://jquerymobile.com`](http://jquerymobile.com/)。
-- **移动端库**：如果你只是为简单网站构建移动端皮肤，请避免使用移动端框架。如果你想为网站注入少量的移动功能，使用移动端库会让你更愉快。在第 2 章中，你读过关于 `Zepto.js` 的内容。Zepto 是一个轻级的 JavaScript 库，包含了几个用于移动端的基本触摸手势。在这里找到更多关于 Zepto 触摸事件的信息：[`http://zeptojs.com/#touch`](http://zeptojs.com/#touch)。此外，在下一节中，你将发现如何使用 `Hammer.js` 为你的应用添加稳健的触摸手势支持。
+*   **Sencha Touch**：Sencha Touch 可能是最健壮的移动框架。它提供了许多实用的移动组件，以及 MVC 架构和样式。它非常适合需要大量移动特定功能的交互式应用。所以，如果你正在构建一个功能全的移动应用，请查看 Sencha Touch。但如果你只是为一个简单的画册网站构建移动端皮肤，Sencha Touch 就太大材小用了。在所有移动框架中，它的学习曲线最高，文件体积最大。要了解更多关于 Sencha Touch 信息，请访问 `www.sencha.com/products/touch`。
+*   **jQuery Mobile**：jQuery Mobile 是另一个提供多种移动组件和主题的框架。它基于 `jQuery` 和 `jQuery UI` 构建，因此大多数开发者发现它很容易上手并投入工作。jQuery Mobile 提供了很多样式和一个类似于 `jQuery UI` 的主题器，因此它在没有设计稿的情况下推出移动端 UI 非常棒。但如果你已经有了设计方向，处理起来可能会稍微更具挑战性。jQuery Mobile 最适合不需要 `Sencha Touch` 所有功能的 Web 应用。要了解更多关于 jQuery Mobile 信息，请访问 `http://jquerymobile.com`。
+*   **移动端库**：如果你只是为简单网站构建移动端皮肤，请避免使用移动端框架。如果你想为网站注入少量的移动功能，使用移动端库会让你更愉快。在第 2 章中，你读过关于 `Zepto.js` 的内容。Zepto 是一个轻级的 JavaScript 库，包含了几个用于移动端的基本触摸手势。在这里找到更多关于 Zepto 触摸事件的信息：`http://zeptojs.com/#touch`。此外，在下一节中，你将发现如何使用 `Hammer.js` 为你的应用添加稳健的触摸手势支持。
 
-# 触摸屏集成
+## 触摸屏集成
 
 移动开发的特殊挑战之一是处理不同的界面：触摸屏。但你不应该将其视为一种挑战，而应将其视为提供更高质量 UX（用户体验）的机会。
 
 在写作期间，触摸屏主要是移动端的现象。但已经为桌面电脑生产了一些触摸屏器，随着桌面和移动界限模糊，这种趋势在未来几年可能会持续。
 
-## 基础触摸事件
+### 基础触摸事件
 
 为了与触摸屏交互，你必须为一种新事件创建处理器：触摸事件。但你可能在奇怪为什么要为触摸事件设置处理器。毕竟，移动浏览器在用户触摸屏幕时仍然会注册点击事件。然而，鼠标一次只能点击屏幕上的某一点，而触摸屏可以同时注册多个触摸事件——数量取决于用户手指的数量。
 
-### 创建单个触摸事件
+#### 创建单个触摸事件
 
 为单个触摸事件创建处理器非常简单：
 
-```
+```javascript
 var el = document.getElementById('my-element');
-
 el.addEventListener('touchstart', function(e) {
   // 触摸时执行的操作
 });
@@ -8148,11 +8083,11 @@ el.addEventListener('touchstart', function(e) {
 
 这里，脚本使用标准的 JavaScript `addEventListener()` 方法来绑定 `touchstart` 事件。该事件在用户手指触摸屏幕的瞬间就会触发。同样，你也可以绑定 `touchend`，它在用户移除手指时触发。还有第三种事件 `touchmove`，它在用户手指放在屏幕上移动时触发。
 
-### 创建多触摸事件
+#### 创建多触摸事件
 
 当使用触摸事件时，你可以从事件对象获取触摸点的坐标：
 
-```
+```javascript
 el.addEventListener('touchstart', function(e) {
   var x = e.touch.pageX;
   var y = e.touch.pageY;
@@ -8161,7 +8096,7 @@ el.addEventListener('touchstart', function(e) {
 
 正如你所看到的，如果用户触摸了屏幕的多个点，通过 `touch.pageX` 和 `touch.pageY` 获取只能获取其中一个点的坐标。但你也可以获取多个触摸点的信息——如果用户用多个手指触摸屏幕。你需要 `touches` 数组：
 
-```
+```javascript
 el.addEventListener('touchstart', function(e) {
   // 第一个手指
   var x1 = e.touches[0].pageX;
@@ -8174,56 +8109,59 @@ el.addEventListener('touchstart', function(e) {
 
 在这里，事件传递 `touches[0]` 中第一个手指和 `touches[1]` 中第二个手指的坐标。额外的触摸点会被添加到此数组中（`touches[2]` 代表第三个手指）。
 
-# 复杂触摸手势
+### 复杂触摸手势
 
 触摸编程最好的部分可能是可以使用触摸手势，例如滑动、缩放和旋转。这些手势改进了移动应用的 UI，提供了更具交互性的体验。
 
-虽然你可以编写自己的手势，但这可能会变得复杂。幸运的是，有很多手势库可用，最著名的是 `Hammer.js` ([`eightmedia.github.com/hammer.js/`](http://eightmedia.github.com/hammer.js/))。Hammer.js 能够轻松为不同的移动平台（如 iOS、Android 和 Blackberry）包含各种触摸手势。
+虽然你可以编写自己的手势，但这可能会变得复杂。幸运的是，有很多手势库可用，最著名的是 `Hammer.js` (`http://eightmedia.github.com/hammer.js/`)。Hammer.js 能够轻松为不同的移动平台（如 iOS、Android 和 Blackberry）包含各种触摸手势。
 
 iOS 包含了一些原生手势支持。但你最终可能为其他设备构建回退方案，所以最好只使用 `Hammer.js`。
 
-## Hammer.js 基础
+#### Hammer.js 基础
 
 使用 `Hammer.js` 非常简单。首先，下载源码并包含在页面中。接下来，将其绑定到一个元素：
 
-```
+```javascript
 var hammer = new Hammer( document.getElementById('my-element') );
 ```
 
 最后，在该对象上定义一个触摸事件：
 
-```
-hammer.ondoubletap = function(e) {
-```
-
-
-
-
 ```javascript
-console.log('Whoah the element has been double tapped');
+hammer.ondoubletap = function(e) {
+  console.log('Whoah the element has been double tapped');
 }
 ```
 
 每当用户双击元素时，该事件就会被触发。但 `ondoubletap` 只是一个开始。Hammer.js 包含了许多不同的手势，如 `ondrag`、`onhold` 和 `ontransform`。
 
-# 使用 Hammer.js 实现幻灯片
+#### 使用 Hammer.js 实现幻灯片
 
 网站常见的元素之一是图片幻灯片。为了提供更好的移动端体验，你可以通过手势控制增强基础幻灯片。这样用户就可以通过左右滑动来切换图片。
 
-## 创建幻灯片
+##### 创建幻灯片
 
 首先，从一些 HTML 标记开始：
 
 ```html
 <section class="slideshow">
-  <div class="slides">
-    <img src="images/my-image.jpg" alt="" class="slide" />
-    <img src="images/my-image-2.jpg" alt="" class="slide" />
-    <img src="images/my-image-3.jpg" alt="" class="slide" />
-    <img src="images/my-image-4.jpg" alt="" class="slide" />
-  </div>
-</section>
 ```
+
+
+
+<div class="slides">
+
+  <img src="images/my-image.jpg" alt="" class="slide" />
+
+  <img src="images/my-image-2.jpg" alt="" class="slide" />
+
+  <img src="images/my-image-3.jpg" alt="" class="slide" />
+
+  <img src="images/my-image-4.jpg" alt="" class="slide" />
+
+</div>
+
+</section>
 
 如你所见，幻灯片的标记保持非常简单。
 
@@ -8236,6 +8174,7 @@ console.log('Whoah the element has been double tapped');
   position: relative;
   overflow: hidden;
 }
+
 .slides {
   position: absolute;
   top: 0;
@@ -8246,6 +8185,7 @@ console.log('Whoah the element has been double tapped');
   -o-transition: left 0.3s ease;
   transition: left 0.3s ease;
 }
+
 .slide {
   width: 500px;
   height: 300px;
@@ -8255,32 +8195,37 @@ console.log('Whoah the element has been double tapped');
 
 这里样式的思路是让 `.slides` 容器内的所有 `.slide` 图片左浮动，形成一个长长的水平卷轴。然后将该容器绝对定位在父级 `.slideshow` 容器中。
 
-通过这种，你就可以左右移动 `.slides` 容器来显示卷轴中不同的幻灯片。代码没有在 JavaScript 中处理动画，而是使用了一些简单的 CSS 过渡效果。在开发移动端应用时，使用过渡动画是一个好主意，因为它们的性能要得多。
+通过这种方式，你就可以左右移动 `.slides` 容器来显示卷轴中不同的幻灯片。代码没有在 JavaScript 中处理动画，而是使用了一些简单的 CSS 过渡效果。在开发移动端应用时，使用过渡动画是一个好主意，因为它们的性能要好得多。
 
 最后，添加基础的 jQuery：
 
 ```javascript
 function Slideshow($wrap) {
   this.currSlide = 0;
+
   // 缓存一些变量
   var $slideWrap = $wrap.find('.slides');
   var slideWidth = $slideWrap.children(':first-child').width();
   var slideCount = $slideWrap.children().length;
+
   this.changeSlide = function() {
     // 对 currSlide 进行合理性检查
     var $kids = $slideWrap.children();
-    if ( this.currSlide >= $kids.length ) this.currSlide = 0;
-    else if ( this.currSlide < 0 ) this.currSlide = $kids.length - 1;
+    if (this.currSlide >= $kids.length) this.currSlide = 0;
+    else if (this.currSlide < 0) this.currSlide = $kids.length - 1;
+
     // 幻灯片的水平位置
     $slideWrap.css('left', slideWidth * this.currSlide * -1);
   };
+
   // 间隔切换幻灯片
-  var slideInterval = setInterval( $.proxy( function() {
+  var slideInterval = setInterval($.proxy(function() {
     this.currSlide++;
     this.changeSlide();
   }, this), 4000);
 }
-var slideshow = new Slideshow( $('.slideshow') );
+
+var slideshow = new Slideshow($('.slideshow'));
 ```
 
 到目前，幻灯片脚本非常直接：
@@ -8299,7 +8244,8 @@ var slideshow = new Slideshow( $('.slideshow') );
 使用 Hammer.js 非常简单；首先在你想要绑定触摸事件的任何元素上创建一个新的 Hammer 实例，然后定义一个处理器。例如：
 
 ```javascript
-var hammer = new Hammer( document.getElementById('my-element') );
+var hammer = new Hammer(document.getElementById('my-element'));
+
 hammer.onswipe = function(e) {
   // 在滑动时你想做的任何操作
 };
@@ -8308,21 +8254,11 @@ hammer.onswipe = function(e) {
 在幻灯片示例中，你想将触摸事件绑定到该元素上。例如：
 
 ```javascript
-var hammer = new Hammer( document.getElementById('my-element') );
-hammer.onswipe = function(e) {
-  // 在滑动时你想做的任何操作
-};
-```
-*(注：此处省略了原文中重复出现的相同示例代码块以保持文档整洁)*
+var hammer = new Hammer($wrap[0]);
 
-## 橡皮效果 (Rubber Banding)
-
-现在滑动手势可以工作了，但幻灯片在开头和结尾处有点奇怪，因为它会循环到另一侧。这在间隔切换中可行，但对于滑动事件来说不是最好的体验。幸运的是，很容易防止滑动事件的循环：
-
-```javascript
-var hammer = new Hammer( $wrap[0] );
 hammer.onswipe = $.proxy(function(e) {
   clearInterval(slideInterval);
+
   switch (e.direction) {
     case 'left':
       if (this.currSlide >= slideCount - 1) {
@@ -8331,6 +8267,7 @@ hammer.onswipe = $.proxy(function(e) {
       this.currSlide++;
       this.changeSlide();
       break;
+
     case 'right':
       if (this.currSlide <= 0) {
         return false;
@@ -8342,11 +8279,34 @@ hammer.onswipe = $.proxy(function(e) {
 }, this);
 ```
 
+## 橡皮效果 (Rubber Banding)
 
-
-
+现在滑动手势可以工作了，但幻灯片在开头和结尾处有点奇怪，因为它会循环到另一侧。这在间隔切换中可行，但对于滑动事件来说不是最好的体验。幸运的是，很容易防止滑动事件的循环：
 
 ```javascript
+var hammer = new Hammer($wrap[0]);
+
+hammer.onswipe = $.proxy(function(e) {
+  clearInterval(slideInterval);
+
+  switch (e.direction) {
+    case 'left':
+      if (this.currSlide >= slideCount - 1) {
+        return false;
+      }
+      this.currSlide++;
+      this.changeSlide();
+      break;
+
+    case 'right':
+      if (this.currSlide <= 0) {
+        return false;
+      }
+      this.currSlide--;
+      this.changeSlide();
+      break;
+  }
+
   // prevent default behavior
   return false;
 }, this);
@@ -8355,18 +8315,19 @@ hammer.onswipe = $.proxy(function(e) {
 现在脚本停止了循环，但这并没有向用户传达多少信息——看起来就像是幻灯片坏掉了。更好的主意是设置“橡皮回弹”（rubber banding）效果——让幻灯片稍微移出边界，然后弹回。橡皮回弹在移动端 UI 中是一种非常常见的范式，用户很可能会熟悉。幸运的是，由于已经设置了 CSS 过渡效果，实现它并不困难：
 
 ```javascript
-var hammer = new Hammer( $wrap[0] );
+var hammer = new Hammer($wrap[0]);
 
-hammer.onswipe = $.proxy (function(e) {
+hammer.onswipe = $.proxy(function(e) {
   // clear any interval
-  clearInterval( slideInterval );
-  switch( e.direction ) {
+  clearInterval(slideInterval);
+
+  switch (e.direction) {
     case 'left':
       // stop if at the bounds
       if (this.currSlide >= slideCount - 1) {
         // rubberband it
         var thisPosLeft = slideWidth * -1 * (slideCount - 1);
-        $slideWrap.css('left', thisPosLeft + slideWidth / 3 * -1)
+        $slideWrap.css('left', thisPosLeft + slideWidth / 3 * -1);
         setTimeout(function() {
           $slideWrap.css('left', thisPosLeft);
         }, 200);
@@ -8375,6 +8336,7 @@ hammer.onswipe = $.proxy (function(e) {
       this.currSlide++;
       this.changeSlide();
       break;
+
     case 'right':
       // stop if at the bounds
       if (this.currSlide <= 0) {
@@ -8389,6 +8351,7 @@ hammer.onswipe = $.proxy (function(e) {
       this.changeSlide();
       break;
   }
+
   // prevent default behavior
   return false;
 }, this);
@@ -8403,29 +8366,36 @@ hammer.onswipe = $.proxy (function(e) {
 ```javascript
 function Slideshow($wrap) {
   this.currSlide = 0;
+
   // cache some variables
   var $slideWrap = $wrap.find('.slides');
   var slideWidth = $slideWrap.children(':first-child').width();
   var slideCount = $slideWrap.children().length;
+
   this.changeSlide = function() {
     // sanity check on currSlide
     var $kids = $slideWrap.children();
-    if ( this.currSlide >= $kids.length ) this.currSlide = 0;
-    else if ( this.currSlide < 0 ) this.currSlide = $kids.length - 1;
+    if (this.currSlide >= $kids.length) this.currSlide = 0;
+    else if (this.currSlide < 0) this.currSlide = $kids.length - 1;
+
     // change the horizontal position of the slides
     $slideWrap.css('left', slideWidth * this.currSlide * -1);
   };
+
   // change slides on an interval
-  var slideInterval = setInterval( $.proxy ( function() {
+  var slideInterval = setInterval($.proxy(function() {
     this.currSlide++;
     this.changeSlide();
   }, this), 4000);
+
   // make swipeable
-  var hammer = new Hammer( $wrap[0] );
+  var hammer = new Hammer($wrap[0]);
+
   hammer.onswipe = $.proxy(function(e) {
     // clear any interval
-    clearInterval( slideInterval );
-    switch( e.direction ) {
+    clearInterval(slideInterval);
+
+    switch (e.direction) {
       case 'left':
         // stop if at the bounds
         if (this.currSlide >= slideCount - 1) {
@@ -8440,6 +8410,7 @@ function Slideshow($wrap) {
         this.currSlide++;
         this.changeSlide();
         break;
+
       case 'right':
         // stop if at the bounds
         if (this.currSlide <= 0) {
@@ -8448,23 +8419,16 @@ function Slideshow($wrap) {
           setTimeout(function() {
             $slideWrap.css('left', 0);
           }, 200);
-        return false;
+          return false;
         }
         this.currSlide--;
         this.changeSlide();
         break;
     }
+
     // prevent default behavior
     return false;
   }, this);
-}
-```
-
-
-
-
-```javascript
-  });
 }
 ```
 
@@ -8495,15 +8459,15 @@ function Slideshow($wrap) {
 </head>
 <body>
   <div id="map_canvas" style="width:100%; height:100%"></div>
-  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&sensor=true">
-  </script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&sensor=true"></script>
   <script>
     // get current position
-    if ( navigator.geolocation ) {
+    if (navigator.geolocation) {
       navigator.geolocation.getCurrentPosition(function(position) {
-        displayMap( position.coords.latitude, position.coords.longitude );
+        displayMap(position.coords.latitude, position.coords.longitude);
       });
     }
+
     // show map
     function displayMap(latitude, longitude) {
       // define map options
@@ -8512,9 +8476,9 @@ function Slideshow($wrap) {
         zoom: 10,
         mapTypeId: google.maps.MapTypeId.ROADMAP
       };
+
       // pull the map from the Google API
-      var map = new google.maps.Map(document.getElementById("map_canvas"),
-        mapOptions );
+      var map = new google.maps.Map(document.getElementById("map_canvas"), mapOptions);
     }
   </script>
 </body>
@@ -8533,35 +8497,31 @@ function Slideshow($wrap) {
 
 如示例所示，与 API 交互非常简单。你可以将其提升到下一个水平，创建自定义地图或在用户附近的区域放置图钉。
 
-你也可以使用 `watchCurrentPosition()` 随时间跟踪位置的变化：
+你也可以使用 `watchPosition()` 随时间跟踪位置的变化：
 
 ```javascript
-if ( navigator.geolocation ) {
-  navigator.geolocation.watchCurrentPosition(function(position) {
+if (navigator.geolocation) {
+  navigator.geolocation.watchPosition(function(position) {
     console.log('Location: ' + position.coords.latitude + ' ' + position.coords.longitude);
   });
 }
 ```
 
-此脚本设置了一个事件处理程序来跟踪地理定位的变化。这比简单的使用间隔设置 `getCurrentPosition()` 好得多，因为它只在位置改变时触发。`watchCurrentPosition()`即使在你不需要跟踪移动目标时也很有用。移动设备通常在获取数据后立即返回粗略的地理定位，并在更精确的数据可用时对其进行精炼。
+此脚本设置了一个事件处理程序来跟踪地理定位的变化。这比简单的使用间隔设置 `getCurrentPosition()` 好得多，因为它只在位置改变时触发。`watchPosition()` 即使在你不需要跟踪移动目标时也很有用。移动设备通常在获取数据后立即返回粗略的地理定位，并在更精确的数据可用时对其进行精炼。
 
-使用 `watchCurrentPosition()` 可以确保你在数据可用时获取最准确的位置数据。但为了节省资源，你应该在它触发几次后移除处理程序：
+使用 `watchPosition()` 可以确保你在数据可用时获取最准确的位置数据。但为了节省资源，你应该在它触发几次后移除处理程序：
 
 ```javascript
 var watchCount = 0;
-var positionTimer = navigator.geolocation.watchPosition(function (position) {
+var positionTimer = navigator.geolocation.watchPosition(function(position) {
   // increment the count
   watchCount++;
   // clear the watch on the third attempt
-  if ( watchCount > 2 ) {
+  if (watchCount > 2) {
     navigator.geolocation.clearWatch(positionTimer);
   }
 });
 ```
-（注：输入文本是碎片化的，我已根据规则格式化了提供的代码段。）*
-
-
-
 
 如需查看更多原生功能，请访问 [`http://docs.phonegap.com`](http://docs.phonegap.com/)。
 
@@ -8575,11 +8535,11 @@ PhoneGap 的开源版本被称为 `Apache Cordova`。
 
 PhoneGap 使用网页视图（web views）而不是每个平台的原生 UI 框架来渲染应用。这在性能上显然比构建真正的原生应用要差。事实是，PhoneGap 让发布原生应用变得简单。对于那些已经拥有 Web 应用并想将其转换为原生设备应用的项目来说，非常棒，这意味着你只需要很少编程就能发布你的专用应用程序。
 
-如既往一样，一分钱一分货。原生的应用总是 PhoneGap 应用更好，但它们的开发成本通常高得多，尤其是当你计划在多个平台发布时。
+如既往一样，一分钱一分货。原生的应用总是比 PhoneGap 应用更好，但它们的开发成本通常高得多，尤其是当你计划在多个平台发布时。
 
 ## 原生应用对标 Web 应用
 
-你还需要决定是否真的需要原生应用。根据你的情况，标准的 Web 应用可能更合适。Web 应用对用户的投入较少，因为他们不需要向设备下载并安装新东西。问问自己自己：我是想下载这个应用，还是仅仅通过浏览器访问它？
+你还需要决定是否真的需要原生应用。根据你的情况，标准的 Web 应用可能更合适。Web 应用对用户的投入较少，因为他们不需要向设备下载并安装新东西。问问自己：我是想下载这个应用，还是仅仅通过浏览器访问它？
 
 此决定的另一个因素是你是否想涉及 iOS App Store 或 Android 市场。在分发方面，这些可能是福音；但在涉及收取的 30% 费用时可能是诅咒（更不用说那神秘的审批过程了）。
 
@@ -8606,7 +8566,7 @@ function onSuccess(imageData) {
   var img = new Image();
   img.src = "data:image/jpeg;base64," + imageData;
   // 将其添加到 DOM
-  document.body.appendChild( img );
+  document.body.appendChild(img);
 }
 
 function onError(message) {
@@ -8634,7 +8594,7 @@ navigator.contacts.find('*', function(contacts) {
 });
 ```
 
-在这里`find()` 方法返回所有联系人的列表。与摄像头 API 类似，该方法接受成功和错误回调以及一个选项数组。
+在这里 `find()` 方法返回所有联系人的列表。与摄像头 API 类似，该方法接受成功和错误回调以及一个选项数组。
 
 获取联系人信息对某些应用非常有用，例如用户想找朋友一起玩游戏或分享照片。
 
@@ -8662,17 +8622,13 @@ Google Mobile Planet: [`www.thinkwithgoogle.com/mobileplanet/en`](http://www.thi
 
 Ofcom Report: [`www.smartinsights.com/marketplace-analysis/customer-analysis/new-internet-usage-report`](http://www.smartinsights.com/marketplace-analysis/customer-analysis/new-internet-usage-report/)
 
-
-
-
-
-# iOS 陀螺仪与加速度计：[`www.peterfriese.de/how-to-use-the-gyroscope-of-your-iphone-in-a-mobile-web-app`](http://www.peterfriese.de/how-to-use-the-gyroscope-of-your-iphone-in-a-mobile-web-app/)
+### iOS 陀螺仪与加速度计：[`www.peterfriese.de/how-to-use-the-gyroscope-of-your-iphone-in-a-mobile-web-app`](http://www.peterfriese.de/how-to-use-the-gyroscope-of-your-iphone-in-a-mobile-web-app/)
 
 PhoneGap 文档：[`http://docs.phonegap.com`](http://docs.phonegap.com/en/2.2.0/index.html)
 
 # 第 11 章：JavaScript 图形
 
-HTML5 引入的最令人印象的功能之一是直接在浏览器中渲染图形的能力。你不仅可以使用 `JavaScript` 生成静态图像，还可以利用这些技术创建惊叹的交互式应用程序，例如视频游戏。事实上，这些应用并不限于二维。随着 `WebGL` 引擎的集成，你现在可以创建在浏览器中原生运行的 3D 应用程序。
+HTML5 引入的最令人印象深刻的功能之一是直接在浏览器中渲染图形的能力。你不仅可以使用 `JavaScript` 生成静态图像，还可以利用这些技术创建惊叹的交互式应用程序，例如视频游戏。事实上，这些应用并不限于二维。随着 `WebGL` 引擎的集成，你现在可以创建在浏览器中原生运行的 3D 应用程序。
 
 在本章中，你首先将发现如何在 `canvas` 中绘制 2D 场景，并整合动画和鼠标事件。然后，你将学习如何使用可缩放矢量图形 (`SVG`) 渲染类似的场景，它们更容易制作动画并实现交互性。接下来，你将发现 `Raphaël.js` 库，它将通过直观的 API 简化 `SVG` 开发。随后，你将接触 `Raphaël` 的图表库，并发现如何用自己的代码来自定义这些图表。
 
@@ -8682,22 +8638,22 @@ HTML5 引入的最令人印象的功能之一是直接在浏览器中渲染图�
 
 HTML5 `canvas` 允许你动态渲染你所想象的几乎任何形状或场景。这一切从在标记中定义一个 `canvas` 元素开始：
 
-```
+```html
 <canvas id="my-canvas" width="200" height="150"></canvas>
 ```
 
-接下来，你使用 `JavaScript` 挂钩此元素并渲染你想要绘制的任何场景。首先通过元素的元素的 ID 钩子设置上下文：
+接下来，你使用 `JavaScript` 挂钩此元素并渲染你想要绘制的任何场景。首先通过元素的 ID 设置上下文：
 
 ```javascript
 var canvas = document.getElementById('my-canvas');
-if ( canvas.getContext ) {
+if (canvas.getContext) {
   var ctx = canvas.getContext('2d');
 }
 ```
 
 `canvas` 元素的上下文告诉浏览器你想使用哪种类型的渲染引擎——在这种情况下，是基础的二维渲染。但在设置上下文之前，检查 `canvas` 的支持情况是重要的。某些用户使用的旧版浏览器不支持 `canvas`，你通过先验证 `canvas.getContext` 是否可用，可以避免在这些浏览器中抛出错误。幸运的是，如今 `canvas` 的支持已经相当不错了，除了 `IE8` 及更早版本，正如你在这里看到的：[`http://caniuse.com/#feat=canvas`](http://caniuse.com/#feat=canvas)。
 
-在后面的 使用 WebGL 的 3D Canvas 部分中，你将学习如何使用不同的上下文来渲染 3D 场景。
+在后面的“使用 WebGL 的 3D Canvas”部分中，你将学习如何使用不同的上下文来渲染 3D 场景。
 
 ## 绘制基础形状
 
@@ -8705,7 +8661,7 @@ if ( canvas.getContext ) {
 
 ```javascript
 var canvas = document.getElementById('my-canvas');
-if ( canvas.getContext ) {
+if (canvas.getContext) {
   var ctx = canvas.getContext('2d');
   ctx.fillStyle = '#d64e34';
   ctx.fillRect(10, 15, 80, 50);
@@ -8735,25 +8691,22 @@ ctx.fill();
 3. `lineTo()` 绘制一条连接到指定坐标的直线。
 4. `fill()` 用指定的颜色填充路径。
 
-
-
-
-你可能会担心这种不断绘制和重绘画布（canvas）的做法实际上非常消耗资源。但令你惊讶的是：浏览器处理 canvas 渲染得非常好，这类动画通常是平滑的。在下一章中，你将学习如何使用 `requestAnimationFrame` 让它们变得更加流畅。
+你可能会担心这种不断绘制和重绘画布的做法实际上非常消耗资源。但令你惊讶的是：浏览器处理 `canvas` 渲染得非常好，这类动画通常是平滑的。在下一章中，你将学习如何使用 `requestAnimationFrame` 让它们变得更加流畅。
 
 ## Canvas 鼠标事件
 
-HTML5 canvas 通常用于创建交互式元素，这意味着你需要设置一个接口来操作这些元素。然而，在 canvas 上添加鼠标交互并不像你想象的那样直观。你无法在你绘制到 canvas 的元素上设置点击监听器。相反，你必须设置通用的监听器，判断点击事件的位置是否与 canvas 上渲染的元素位置对齐。例如，取之前示例中的矩形：
+HTML5 `canvas` 通常用于创建交互式元素，这意味着你需要设置一个接口来操作这些元素。然而，在 `canvas` 上添加鼠标交互并不像你想象的那样直观。你无法在你绘制到 `canvas` 的元素上设置点击监听器。相反，你必须设置通用的监听器，判断点击事件的位置是否与 `canvas` 上渲染的元素位置对齐。例如，取之前示例中的矩形：
 
-```
+```javascript
 ctx.fillRect(10, 15, 80, 50);
 ```
 
-遗憾的是，你无法获取该矩形的 DOM 引用并用它来应用点击处理器，因为 canvas 只是所有绘制到它上面的内容的静态渲染。因此，在用 canvas 设置鼠标处理程序时，你需要得更有创意。首先，在 canvas 元素上设置一个通用的点击监听器，并确定点击事件相对于 canvas 的位置：
+遗憾的是，你无法获取该矩形的 DOM 引用并用它来应用点击处理器，因为 `canvas` 只是所有绘制到它上面的内容的静态渲染。因此，在用 `canvas` 设置鼠标处理程序时，你需要得更有创意。首先，在 `canvas` 元素上设置一个通用的点击监听器，并确定点击事件相对于 `canvas` 的位置：
 
 ```javascript
 $('#my-canvas').click(function(e) {
-  var offsetX = e.pageX – this.offsetLeft;
-  var offsetY = e.pageY – this.offsetTop;
+  var offsetX = e.pageX - this.offsetLeft;
+  var offsetY = e.pageY - this.offsetTop;
 });
 ```
 
@@ -8763,7 +8716,7 @@ $('#my-canvas').click(function(e) {
 $('#my-canvas').click(function(e) {
   var offsetX = e.pageX - this.offsetLeft;
   var offsetY = e.pageY - this.offsetTop;
-  if ( (offsetX > 10 && offsetX < 90) && (offsetY > 15 && offsetY < 65) ) {
+  if ((offsetX > 10 && offsetX < 90) && (offsetY > 15 && offsetY < 65)) {
     alert('Rectangle clicked');
   }
 });
@@ -8771,11 +8724,11 @@ $('#my-canvas').click(function(e) {
 
 在这里，脚本将点击事件的坐标与矩形的坐标进行比较。例如，矩形的 x 轴从 10（起点）到 90（起点加上宽度）。虽然这看起来可能很复杂，但计算矩形的点击点相对简单。想象一下，对于复杂的多边形或曲线，这种数学将会有多困难！
 
-除非你真的对线性代数感兴趣，否则你可能想要使用一个库来处理这种行为。或者继续阅读下一节，在在那里你将学习 SVG，它对鼠标交互要友好得多。
+除非你真的对线性代数感兴趣，否则你可能想要使用一个库来处理这种行为。或者继续阅读下一节，在那里你将学习 SVG，它对鼠标交互要友好得多。
 
 ## SVG 基础
 
-与 canvas 不同，你实际上可以使用标记而不需要 JavaScript 就可以定义 SVG 图像。例如，这段标记绘制了一个矩形：
+与 `canvas` 不同，你实际上可以使用标记而不需要 JavaScript 就可以定义 SVG 图像。例如，这段标记绘制了一个矩形：
 
 ```xml
 <svg height="200" xmlns="http://www.w3.org/2000/svg">
@@ -8803,7 +8756,7 @@ $('#my-canvas').click(function(e) {
 
 ## 使 SVG 动画
 
-你已经知道处理 canvas 可能很困难，因为绘制到 canvas 上的一切都是完全静态的。不过，你会高兴地知道，SVG 正好相反。当你想要移动某些东西时，不需要在 SVG 中绘制并重绘一切；你只需要从 DOM 中获取节点并用 JavaScript 移动它：
+你已经知道处理 `canvas` 可能很困难，因为绘制到 `canvas` 上的一切都是完全静态的。不过，你会高兴地知道，SVG 正好相反。当你想要移动某些东西时，不需要在 SVG 中绘制并重绘一切；你只需要从 DOM 中获取节点并用 JavaScript 移动它：
 
 ```javascript
 $('svg circle').attr('cx', 60).attr('cy', 60);
@@ -8814,19 +8767,61 @@ $('svg circle').attr('cx', 60).attr('cy', 60);
 ```javascript
 var circle = $('svg circle'),
     radius = 50;
+
 var svgInterval = setInterval(function() {
   radius += .2;
-  if ( radius > 70 ) {
+  if (radius > 70) {
     clearInterval(svgInterval);
+  }
+  circle.attr('r', radius);
+}, 10);
 ```
 
+## SVG 鼠标事件
 
+正如你所见，SVG 使动画变得简单。它也使鼠标交互变得简单。因为 SVG 元素是真实的 DOM 节点，你可以直接将事件处理程序绑定到它们，就像处理任何其他 HTML 元素一样。例如：
 
+```javascript
+$('svg circle').click(function() {
+  $(this).attr('fill', 'green');
+});
+```
+
+这比 `canvas` 简单得多，因为你不需要计算坐标来判断点击位置。
+
+## Raphaël.js 简介
+
+虽然原始 SVG 很强大，但 `Raphaël.js` 库提供了一个更简单的 API 来创建和操作 SVG。首先，在页面中引入 Raphaël.js：
+
+```html
+<script src="raphael-min.js"></script>
+```
+
+然后创建一个 Raphaël 画纸对象：
+
+```javascript
+var paper = Raphael(0, 0, 600, 400);
+```
+
+这创建了一个宽 600px、高 400px 的 SVG 画布。现在你可以使用 Raphaël 的方法绘制形状：
+
+```javascript
+var circle = paper.circle(300, 200, 100);
+circle.attr('fill', '#f00');
+```
+
+这在 (300,200) 处绘制一个半径为 100px 的红色圆形。
+
+## 绘制路径
+
+Raphaël 的强大功能之一是路径绘制。你可以使用 SVG 路径字符串绘制复杂形状：
+
+```javascript
+var triangle = paper.path('M300,50 L100,350 L500,350 Z');
+```
 
 1. 它从移动操作 `M300,50` 开始，它将路径的起点移动到 (300,50)，这与你之前在 Canvas 基础章节中学过的 `moveTo()` 方法类似。
-
 2. 接下来，`L100,350` 绘制一条到 (100,350) 的直线，类似于画布中的 `lineTo()` 方法。
-
 3. 然后 `L500,350` 和 `L300,50` 绘制了另外两条线来完成三角形，如图 11-7 所示。
 
 ![9781118524565-fg1107.tif](img/9781118524565-fg1107_fmt.png)
@@ -8835,13 +8830,13 @@ var svgInterval = setInterval(function() {
 
 接下来，路径字符串可以稍微简化：
 
-```
+```javascript
 var triangle = paper.path('M300,50 L100,350 L500,350 Z');
 ```
 
 在这里，最后一条线命令被替换为 `Z`，它关闭了路径，从而绘制了三角形的第三条线。
 
-Raphaël 中的路径字符串是基于 W3Cget 的标准 SVG 路径字符串的。你可以在这里阅读更多关于路径字符串的信息：[`www.w3.org/TR/SVG.html#PathData`](http://www.w3.org/TR/SVG.html#PathData)。
+Raphaël 中的路径字符串是基于 W3C 的标准 SVG 路径字符串的。你可以在这里阅读更多关于路径字符串的信息：[`www.w3.org/TR/SVG.html#PathData`](http://www.w3.org/TR/SVG.html#PathData)。
 
 ## 绘制曲线
 
@@ -8869,13 +8864,13 @@ stroke-miterlimit:10;" d="M251.742,85.146 C75.453,48.476,100.839,430.671,
 </svg>
 ```
 
-我在这里强调了重要部分：`M251.742,85.146 C75.453,48.476,100.839,430.671`
+我在这里强调了重要部分：`M251.742,85.146 C75.453,48.476,100.839,430.671,309.565,250.152`。
 
 你可以将此路径字符串传递 Raphaël 的 `path()` API 以在你的 SVG 中生成曲线。根据你在 Illustrator 中绘制路径的方式，你可能需要调整某些值使其在你的画布上正确对齐。
 
-这个示例很容易手动移植到 Raphaël，但如果你有复杂的 SVG，可以节省更多精力。只需将导出的 SVG 上传到[`www.raphysetael.com`](http://www.raphysetael.com/)，它会自动将 SVG 转换为 Raphaël 代码。
+这个示例很容易手动移植到 Raphaël，但如果你有复杂的 SVG，可以节省更多精力。只需将导出的 SVG 上传到 [`www.raphaeljs.com`](http://www.raphaeljs.com/)，它会自动将 SVG 转换为 Raphaël 代码。
 
-或者，为了了解如何自己构建曲线，请访问[`https://developer.mozilla.org/en-US/docs/SVG/Paths`](https://developer.mozilla.org/endocs/SVG/Paths)，你可以在那里学习多种曲线类型。
+或者，为了了解如何自己构建曲线，请访问 [`https://developer.mozilla.org/en-US/docs/SVG/Paths`](https://developer.mozilla.org/en-US/docs/SVG/Paths)，你可以在那里学习多种曲线类型。
 
 ## 样式
 
@@ -8913,7 +8908,7 @@ triangle.attr({
 Raphaël 甚至包含了一些用于虚线和点线的有趣选项。你可以使用 `stroke-dasharray` 选项使用任何线和点的组合：
 
 ```javascript
-var circle = paper.circle(300,200,120);
+var circle = paper.circle(300, 200, 120);
 circle.attr({
   'stroke-width': 15,
   'stroke-dasharray': '-..'
@@ -8928,32 +8923,37 @@ circle.attr({
 
 这些只是 Raphaël 许多选项中的一部分。
 
+## 动画
 
-
-
+Raphaël 使动画变得非常简单。你可以使用 `animate()` 方法对几乎任何属性进行动画：
 
 ```javascript
+var circle = paper.circle(300, 200, 50);
+circle.attr('fill', 'white');
+
+circle.animate({
+  fill: '#f00',
+  'stroke-width': 10,
   r: 60,
   cx: 500,
   cy: 100
-}, 2000, '<>';
+}, 2000, '<>');
 ```
 
 在这里，脚本动画化圆的几个特性：`fill` 颜色、`stroke-width`、半径 (`r`) 以及中心点（`cx` 和 `cy`）。
 
-最后，你可以对路径的各个点进行动画。只需向动画传递一个新的路径，`Raphaël` 就会会在旧点和新点之间设置一个补间动画（tween），并在它们之间进行平滑动画：
+最后，你可以对路径的各个点进行动画。只需向动画传递一个新的路径，`Raphaël` 就会在旧点和新点之间设置一个补间动画（tween），并在它们之间进行平滑动画：
 
 ```javascript
 var triangle = paper.path('M300,100 L150,300 L450,300 Z');
 triangle.animate({path: 'M300,300 L150,100 L450,100 Z'}, 2000, '<>');
 ```
 
-等等，我注意到原文还有更多的代码块。让我重新正确格式化一下整个文本：
-
 如果你运行此脚本，你将看到三角形的路径在翻转。但不必止于此；你可以使用路径动画来创建一个非常复杂的动画：
 
 ```javascript
 var triangle = paper.path('M300,100 L150,300 L450,300 Z');
+
 (function animationCycle() {
   triangle.animate({path: 'M300,300 L150,100 L450,100 Z'}, 1200, '<>',
     function() {
@@ -8966,7 +8966,6 @@ var triangle = paper.path('M300,100 L150,300 L450,300 Z');
         });
       });
     });
-  );
 })();
 ```
 
@@ -8974,11 +8973,12 @@ var triangle = paper.path('M300,100 L150,300 L450,300 Z');
 
 ## 鼠标事件
 
-在之前的 SVG 鼠标事件 部分中，你已经看到将鼠标交互应用到 SVG 是多么简单了，而用 `Raphaël` 构建的 SVG 也不例外。但在应用鼠标交互之前，你必须获取 SVG 的 DOM 引用。要做到这一点，请访问 `Raphaël` 对象的 `node` 属性：
+在之前的 SVG 鼠标事件部分中，你已经看到将鼠标交互应用到 SVG 是多么简单了，而用 `Raphaël` 构建的 SVG 也不例外。但在应用鼠标交互之前，你必须获取 SVG 的 DOM 引用。要做到这一点，请访问 `Raphaël` 对象的 `node` 属性：
 
 ```javascript
 var triangle = paper.path('M300,100 L150,300 L450,300 Z');
 triangle.attr('fill', 'white');
+
 triangle.node.onclick = function() {
   triangle.attr('fill', 'red');
 };
@@ -9000,7 +9000,7 @@ $(triangle.node).on('mouseover', function() {
 
 ## 使用 gRaphaël 绘制图表
 
-除了标准图形库外，`Raphaël` 项目还维护了一个名为 `gRaphaël` 的图表库（[`g.raphaeljs.com`](http://g.raphaeljs.com/)`）。`gRaphaël` 构建在 `Raphaël` 之上并提供了一些图表选项。与其他库相比，这些图表相对轻量，特别是如果你已经在使用 `Raphaël` 处理其他功能时。然而，文件大小上的优势是有代价的——`gRaphaël` 的图表功能没有其他图表库那么丰富。尽管如此，如果你想要简单且优雅的东西，`gRaphaël` 是一个极佳的选择。
+除了标准图形库外，`Raphaël` 项目还维护了一个名为 `gRaphaël` 的图表库（[`g.raphaeljs.com`](http://g.raphaeljs.com/)）。`gRaphaël` 构建在 `Raphaël` 之上并提供了一些图表选项。与其他库相比，这些图表相对轻量，特别是如果你已经在使用 `Raphaël` 处理其他功能时。然而，文件大小上的优势是有代价的——`gRaphaël` 的图表功能没有其他图表库那么丰富。尽管如此，如果你想要简单且优雅的东西，`gRaphaël` 是一个极佳的选择。
 
 ### 饼图
 
@@ -9010,13 +9010,13 @@ $(triangle.node).on('mouseover', function() {
 paper.piechart(300, 200, 150, [65, 40, 13, 32, 5, 1, 2]);
 ```
 
-此脚本创建了一个中心点在 (300,200)、半径为 150px 的饼图，并显示数组中的数据（如 图 11-12 所示）。
+此脚本创建了一个中心点在 (300,200)、半径为 150px 的饼图，并显示数组中的数据（如图 11-12 所示）。
 
-![9781118524565-fg112.tif](img/9781118524565-fg112.tif)
+![9781118524565-fg1112.tif](img/9781118524565-fg1112.tif)
 
 图 11-12 `gRaphaël` 中的一个基础饼图。
 
-要在图表中添加图例，如 图 11-13 所示，在第五个参数中作为选项对象的一部分传递图例：
+要在图表中添加图例，如图 11-13 所示，在第五个参数中作为选项对象的一部分传递图例：
 
 ```javascript
 paper.piechart(300, 200, 150, [65, 40, 13, 32, 5, 1, 2], {
@@ -9024,55 +9024,48 @@ paper.piechart(300, 200, 150, [65, 40, 13, 32, 5, 1, 2], {
 });
 ```
 
-![9781118524565-fg113.tif](img/9781118524565-fg113.tif)
+![9781118524565-fg1113.tif](img/9781118524565-fg1113.tif)
 
-图 11-13 带有图例的饼图。你可以通过在图例中包含 `%%` 来微调 `legend` 数组，例如 `40`。最后，要转换图表中的切片，只需传递 `href` 数组：
+图 11-13 带有图例的饼图。你可以通过在图例中包含 `%%` 来微调 `legend` 数组，例如 `40%%`。最后，要转换图表中的切片，只需传递 `href` 数组：
 
 ```javascript
 paper.piechart(300, 200, 150, [65, 40, 13, 32, 5, 1, 2], {
-  legend: ['Donkeys', 'Monkeys', 'Llamas', 'Pandas', 'Rhinos', 'Gorillas']
+  legend: ['Donkeys', 'Monkeys', 'Llamas', 'Pandas', 'Rhinos', 'Gorillas'],
+  href: ['http://example.com/donkeys', 'http://example.com/monkeys']
 });
 ```
 
-这些是 `gRaphaël` 饼图提供的一些选项。要了解更多功能，请访问 [`http://g.raphaeljs.com/piechart`](http://g.raphaeljs.com/piechart)）。
+这些是 `gRaphaël` 饼图提供的一些选项。要了解更多功能，请访问 [`http://g.raphaeljs.com/piechart`](http://g.raphaeljs.com/piechart)。
 
 ### 柱状图
 
 `gRaphaël` 也支持柱状图。例如：
 
 ```javascript
-var triangle = paper.path('M300,100 L150,300 L450,300 Z');
+paper.barchart(0, 0, 600, 380, [[65, 40, 13, 32, 5, 1, 2]]);
 ```
 
-在这里，前两个参数是起始点 (0,0)，接两个是宽度和高度。通过一个值数组来转换 图 11-14 所示的 SVG。
+在这里，前两个参数是起始点 (0,0)，后两个是宽度和高度。通过一个值数组来生成如图 11-14 所示的 SVG。
 
-![9781118524565-fg114.tif](img/9781118524565-fg114.tif)
+![9781118524565-fg1114.tif](img/9781118524565-fg1114.tif)
 
 图 11-14 `gRaphaël` 中的基础柱状图。
-
-`gRaphaël` 也支持柱状图。例如：
-
-```javascript
-var triangle = paper.path('M300,100 L150,300 L450,300 Z');
-```
-
-在这里，前两个参数是起始点 (0,0)，接两个是宽度和高度。通过一个值数组来转换 图 11-15 所示的 SVG。
 
 在柱状图上，通过传递三个数组来转换图表：
 
 ```javascript
-paper.piechart(300, 200, 150, [65, 40, 13, 32, 5, 1, 2]);
+paper.barchart(0, 0, 600, 380, [[65, 40, 13, 32, 5, 1, 2]], {
+  stacked: true
+});
 ```
 
 在这里，通过三个数组来转换图表：
 
 ```javascript
-paper.piechart(300, 200, 150, [65, 40, 13, 32, 5, 1, 2]);
+paper.barchart(0, 0, 600, 380, [[65, 40, 13, 32, 5, 1, 2]], {
+  stacked: true
+});
 ```
-
-
-
-
 
 在此实现中，一个设置对象被传递给 `labelBarChart`，它定义了标签的起始坐标 (0,390) 以及图表的宽度。此外，它还定义了每列的标签，以及针对文本的可选设置。如图 11-17 所示，这标记了柱状图的 x 轴。
 
@@ -9080,15 +9073,16 @@ paper.piechart(300, 200, 150, [65, 40, 13, 32, 5, 1, 2]);
 
 图 11-17 带有自定义标签的柱状图。
 
-标记 y 轴稍微有点挑战性，但并非不可能。按照 x 轴的示例将其编写为一个练习题。或者，如果你需要 y 轴标签且不想编写这段代码，可以考虑使用不同的库来制作柱状图，例如 Raphy Charts：[`http://softwarebyjosh.com/raphy-charts`](http://softwarebyjosh.com/raphy-charts/)`。
+标记 y 轴稍微有点挑战性，但并非不可能。按照 x 轴的示例将其编写为一个练习题。或者，如果你需要 y 轴标签且不想编写这段代码，可以考虑使用不同的库来制作柱状图，例如 Raphy Charts：[`http://softwarebyjosh.com/raphy-charts`](http://softwarebyjosh.com/raphy-charts/)。
 
-## 折线图
+### 折线图
 
 幸运的是，gRaphaël 的折线图比它的柱状图健壮一点。API 也相当相似，主要的区别在于你需要传递两个值数组分别对应 x 值和 y 值：
 
-```
+```javascript
 var xVals = [0, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55],
     yVals = [63, 84, 75, 91, 62, 75, 35, 53, 47, 75, 78, 54];
+
 var chart = paper.linechart(0, 0, 600, 380, xVals, yVals);
 ```
 
@@ -9100,10 +9094,11 @@ var chart = paper.linechart(0, 0, 600, 380, xVals, yVals);
 
 你也可以传递多组值向图表添加线条：
 
-```
+```javascript
 var xVals = [0, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55],
     yVals1 = [63, 84, 75, 91, 62, 75, 35, 53, 47, 75, 78, 54],
     yVals2 = [24, 45, 31, 42, 88, 85, 67, 88, 72, 37, 54, 48];
+
 var chart = paper.linechart(0, 0, 600, 380, xVals, [yVals1, yVals2]);
 ```
 
@@ -9113,9 +9108,9 @@ var chart = paper.linechart(0, 0, 600, 380, xVals, [yVals1, yVals2]);
 
 图 11-19 你可以在图表中添加多条线条。
 
-幸运的是，与柱状图不同，gRaphaël 为折线图提供了添加轴的原方法。可以使用 `axis` 选项添加轴：
+幸运的是，与柱状图不同，gRaphaël 为折线图提供了添加轴的原生方法。可以使用 `axis` 选项添加轴：
 
-```
+```javascript
 var chart = paper.linechart(30, 0, 570, 380, xVals, [yVals1, yVals2], {axis: '0 0 1 1'});
 ```
 
@@ -9127,7 +9122,7 @@ var chart = paper.linechart(30, 0, 570, 380, xVals, [yVals1, yVals2], {axis: '0 
 
 最后，你可能注意到轴上的步长值有点奇怪。由于 x 值分布均匀分布，对它们进行标记是良好的做法。你可以使用 `axisxstep` 选项设置更自然的标记：
 
-```
+```javascript
 var chart = paper.linechart(30, 0, 570, 380, xVals, [yVals1, yVals2], {axis: '0 0 1 1', axisxstep: 11});
 ```
 
@@ -9139,19 +9134,17 @@ var chart = paper.linechart(30, 0, 570, 380, xVals, [yVals1, yVals2], {axis: '0 
 
 `axisxstep` 值有点困惑，因为它比你想要显示的步长数量少一个。在这种情况下，11 的值表示轴上有 12 个步长。
 
-gRaphaël 的折线图比它的柱状图健壮一点。API 也相当相似，主要的区别在于你需要传递两个值数组分别对应 x 值和 y 值：
-
 ## WebGL 的 3D 画布
 
-幸运的是，gRaphaël 的折线图比它的柱状图健壮一点。API 也相当相似，主要的区别在于你需要传递两个值数组分别对应 x 值和 y 值：
+如今 WebGL 最令人兴奋的方面之一是构建 3D 应用的能力。幸运的是，Three.js 简化了 3D 开发。
 
 ## 介绍 Three.js
 
-如今 WebGL 最令人兴奋的方面之一是构建 3D 应用的能力。幸运的是，Three.js 简化了 3D 开发
+Three.js 是一个轻量级的 3D 库，它抽象了 WebGL 的复杂性，让你可以专注于创建场景、相机、网格和光照，而不是处理底层的着色器代码。
 
 ## 添加相机
 
-接下来，创建任何 3D 场景中不可或缺的部分——相机。本身，WebGL 中的 3D 场景只是形状存在于 3D 空间的概念模型。相机用于渲染这些信息并将其传递给用户
+接下来，创建任何 3D 场景中不可或缺的部分——相机。本身，WebGL 中的 3D 场景只是形状存在于 3D 空间的概念模型。相机用于渲染这些信息并将其传递给用户。
 
 ## WebGL 注意事项
 
@@ -9182,23 +9175,20 @@ container.appendChild(renderer.domElement);
 var scene = new THREE.Scene();
 ```
 
-添加相机
+### 添加相机
 
 ```javascript
 // 创建相机、设置位置并将其添加到场景
-var camera = new THREE.PerspectiveCamera( 45, width/height, 0.1, 1000 );
+var camera = new THREE.PerspectiveCamera(45, width / height, 0.1, 1000);
 camera.position.z = 400;
-scene.add( camera );
+scene.add(camera);
 ```
-
-
-
 
 创建相机后，你需要在场景中对它进行定位。就像构成场景的形状一样，相机也存在于 3D 空间中。你可以将这个位置想象成你希望摄像师站立，并拍摄最终将展开的场景。在这个示例中，`camera.position.z` 将相机沿 z 轴移动 400 个单位。
 
-## 添加网格 (Mesh)
+## 添加网格
 
-在 WebGL 中，你添加到场景中的任何形状都被称为网格（mesh）。网格由两个部分组成：
+在 WebGL 中，你添加到场景中的任何形状都被称为网格。网格由两个部分组成：
 
 - `Geometry`（几何体），定义物体的顶点形状
 - `Material`（材质），定义材质表面如何被光照和渲染
@@ -9207,21 +9197,22 @@ scene.add( camera );
 
 ```javascript
 // add a sphere
-var geometry = new THREE.SphereGeometry( 100, 24, 24 ),
-var material = new THREE.PhongMaterial({
-  color: 0x00FF00
-}),
-sphere = new THREE.Mesh( geometry, material );
-scene.add( sphere );
+var geometry = new THREE.SphereGeometry(100, 24, 24),
+    material = new THREE.MeshPhongMaterial({
+      color: 0x00FF00
+    }),
+    sphere = new THREE.Mesh(geometry, material);
+
+scene.add(sphere);
 ```
 
-这段代码首先创建了一些球体几何体。第一个参数定义了 100 个单位的半径，第二个参数定义了创建模型时使用的分段（segments）和环（rings）的数量。使用的分段和环越多，渲染时模型的表面看起来越平滑。这是因为 WebGL 中的球体并不是真正的球体：它是由多边形组成的近似值。要了解其工作原理，请参见图 11-22。
+这段代码首先创建了一些球体几何体。第一个参数定义了 100 个单位的半径，第二个参数定义了创建模型时使用的分段和环的数量。使用的分段和环越多，渲染时模型的表面看起来越平滑。这是因为 WebGL 中的球体并不是真正的球体：它是由多边形组成的近似值。要了解其工作原理，请参见图 11-22。
 
-![97811852465-fg1122.tif](img/97811852465-fg1122.png)
+![9781118524565-fg1122.tif](img/9781118524565-fg1122.png)
 
 图 11-22 由多边形组成的 3D 球体。锯齿边缘在运行时由渲染器平滑。这个球体是使用 Blender 渲染的，但 WebGL 使用了相同的概念。
 
-接下来，定义了一个颜色为 `#00FF00` 的 Phong 材质。Phong 是一种定义光线如何影响物体的着色器（shader）。先不用担心着色器。最后，将几何体和材质组合在一起创建网格，并将其添加到场景中。Three.js 中另一种常用的材质是 `MeshLambertMaterial`，它与 Phong 类似，但 Lambert 的反射率较低且倾向于显示阴影。
+接下来，定义了一个颜色为 `#00FF00` 的 Phong 材质。Phong 是一种定义光线如何影响物体的着色器。先不用担心着色器。最后，将几何体和材质组合在一起创建网格，并将其添加到场景中。Three.js 中另一种常用的材质是 `MeshLambertMaterial`，它与 Phong 类似，但 Lambert 的反射率较低且倾向于显示阴影。
 
 ## 添加光照
 
@@ -9229,9 +9220,9 @@ scene.add( sphere );
 
 ```javascript
 // add a light
-var light = new THREE.DirectionalLight( 0xFFFFFF, 1 );
-light.position.set( 0, 0.5, 1 );
-scene.add( light );
+var light = new THREE.DirectionalLight(0xFFFFFF, 1);
+light.position.set(0, 0.5, 1);
+scene.add(light);
 ```
 
 这段代码向场景中添加了一个平行光。第一个参数指定光的颜色，第二个参数指定强度。平行光是 Three.js 中几种照明选项之一，包括环境光（均匀地照亮整个场景）和点光（从像蜡烛这样的单个点发射）。而平行光在给定的方向上均匀光照，就像照射在地球上的平行阳光（好吧，实际上是准平行的）。
@@ -9243,12 +9234,12 @@ scene.add( light );
 最后但同样重要的是，你需要渲染场景：
 
 ```javascript
-renderer.render( scene, camera );
+renderer.render(scene, camera);
 ```
 
 如图 11-23 所示，此脚本创建了一个简单的球体。
 
-![97811852465-fg1123.tif](img/97811852465-fg1123.png)
+![9781118524565-fg1123.tif](img/9781118524565-fg1123.png)
 
 图 11-23 此球体已使用 Three.js 和 WebGL 进行渲染。
 
@@ -9257,37 +9248,38 @@ renderer.render( scene, camera );
 ```javascript
 // get the wrapper
 var container = document.getElementById('container'),
-width = container.offsetWidth,
-height = container.offsetHeight;
+    width = container.offsetWidth,
+    height = container.offsetHeight;
 
 // create renderer and add it to the container
 var renderer = new THREE.WebGLRenderer();
-renderer.setSize( width, height );
-container.appendChild( renderer.domElement );
+renderer.setSize(width, height);
+container.appendChild(renderer.domElement);
 
 // create a new scene
 var scene = new THREE.Scene();
 
 // create a camera, position it and add it to the scene
-var camera = new THREE.PerspectiveCamera( 45, width/height, 0.1, 1000 );
+var camera = new THREE.PerspectiveCamera(45, width / height, 0.1, 1000);
 camera.position.z = 400;
-scene.add( camera );
+scene.add(camera);
 
 // add a sphere
-var geometry = new THREE.SphereGeometry( 100, 24, 24 ),
-material = new THREE.MeshPhongMaterial({
-  color: 0x00FF00
-}),
-sphere = new THREE.Mesh( geometry, material );
-scene.add( sphere );
+var geometry = new THREE.SphereGeometry(100, 24, 24),
+    material = new THREE.MeshPhongMaterial({
+      color: 0x00FF00
+    }),
+    sphere = new THREE.Mesh(geometry, material);
+
+scene.add(sphere);
 
 // add a light
-var light = new THREE.DirectionalLight( 0xFFFFFF, 1 );
-light.position.set( 0, 0.5, 1 );
-scene.add( light );
+var light = new THREE.DirectionalLight(0xFFFFFF, 1);
+light.position.set(0, 0.5, 1);
+scene.add(light);
 
 // render it
-renderer.render( scene, camera );
+renderer.render(scene, camera);
 ```
 
 如示例所示，渲染场景需要以下四个主要步骤：
@@ -9300,7 +9292,7 @@ renderer.render( scene, camera );
 
 之前的示例在创建模型材质时使用了简单的颜色。但 Three.js 也允许你使用图像为模型创建自定义纹理。例如，你可以从 `www.3dstudio-max.com/download.php?id=57` 下载地球纹理，如图 11-24 所示。
 
-![97811852465-fg1124.tif](img/97811852465-fg1124.png)
+![9781118524565-fg1124.tif](img/9781118524565-fg1124.png)
 
 图 11-24 纹理将被映射到球体。
 
@@ -9308,34 +9300,35 @@ renderer.render( scene, camera );
 
 ```javascript
 // add image map
-var map = THREE.ImageUtils.loadTexture( 'images/earth.jpg' );
+var map = THREE.ImageUtils.loadTexture('images/earth.jpg');
 
 // add the earth
-var geometry = new THREE.SphereGeometry( 100, 24, 24 ),
-material = new THREE.MeshPhongMaterial({
-  map: map
-}),
-earth = new THREE.Mesh( geometry, material );
-scene.add( earth );
+var geometry = new THREE.SphereGeometry(100, 24, 24),
+    material = new THREE.MeshPhongMaterial({
+      map: map
+    }),
+    earth = new THREE.Mesh(geometry, material);
+
+scene.add(earth);
 ```
 
 这里使用了 `THREE.ImageUtils.loadTexture()` 来加载纹理。然而，如果你现在尝试渲染场景，可能会遇到问题，因为图像加载需要时间。为了解决这个问题，请确保在窗口加载后进行渲染：
 
 ```javascript
 window.onload = function() {
-  renderer.render( scene, camera );
+  renderer.render(scene, camera);
 };
 ```
 
 在图 11-25 中，图像贴图正确地分布在球体周围，使其看起来像行星。这种计算在底层非常复杂，所以感谢 Three.js 为你处理了它。
 
-97811852465-fg1125.tif](images/97811852465-fg1125.png)
+![9781118524565-fg1125.tif](img/9781118524565-fg1125.png)
 
 图 11-25 具有写实图像贴图的球体。
 
 ## 3D 画布动画
 
-你现在已经知道如何使用 WebGL 渲染静态的 3D 场景。但如果你只需要静态图像，可以在 3D 图形程序中渲染它们并在页面上包含基础 `<image>` 标签。使用 WebGL 的真正理由是创建交互式的、动画 3D 场景，这正是本小节要学习的内容。
+你现在已经知道如何使用 WebGL 渲染静态的 3D 场景。但如果你只需要静态图像，可以在 3D 图形程序中渲染它们并在页面上包含基础 `<img>` 标签。使用 WebGL 的真正理由是创建交互式的、动画 3D 场景，这正是本小节要学习的内容。
 
 WebGL 画布的动画与 2D 画布类似：你只需要为动画的每一帧绘制并重绘场景。例如，以下脚本将旋转地球：
 
@@ -9345,33 +9338,39 @@ window.onload = function() {
   var animationLoop = setInterval(function() {
     rotation += 0.05;
     earth.rotation.y = rotation;
-    renderer.render( scene, camera );
+    renderer.render(scene, camera);
   }, 100);
 };
 ```
-
-
-
 
 在下一章中，你将发现如何使用 HTML5 的 `requestAnimationFrame`，它是使用简单间隔进行动画的替代方案。`requestAnimationFrame` 能产生更平滑且性能更好的动画。
 
 ### 添加鼠标事件
 
-在之前的 Canvas 鼠标事件 节中，你已经看到在画布绘制上应用事件监听器是困难的，因为绘制的形状无法在 DOM 中引用。遗憾的是，WebGL 画布也不例外。不过，你可以使用一种技术为你的 3D 场景添加鼠标交互。该技巧本质上是从摄像机到鼠标位置创建一条射线，并查看它是否与物体相交：
+在之前的 Canvas 鼠标事件节中，你已经看到在画布绘制上应用事件监听器是困难的，因为绘制的形状无法在 DOM 中引用。遗憾的是，WebGL 画布也不例外。不过，你可以使用一种技术为你的 3D 场景添加鼠标交互。该技巧本质上是从摄像机到鼠标位置创建一条射线，并查看它是否与物体相交：
 
 ```javascript
 var projector = new THREE.Projector();
 
 container.onmousedown = function(e) {
   e.preventDefault();
-  var vector = new THREE.Vector3( ( e.pageX - this.offsetLeft ) /
-  this.offsetWidth * 2 - 1, - ( e.pageY - this.offsetTop ) /
-  this.offsetHeight *  2 + 1, 0.5 );
-  projector.unprojectVector( vector, camera );
-  var raycaster = new THREE.Raycaster( camera.position, vector.sub(
-camera.position ).normalize() );
-  var intersects = raycaster.intersectObject( earth );
-  if ( intersects.length > 0 ) {
+
+  var vector = new THREE.Vector3(
+    (e.pageX - this.offsetLeft) / this.offsetWidth * 2 - 1,
+    -(e.pageY - this.offsetTop) / this.offsetHeight * 2 + 1,
+    0.5
+  );
+
+  projector.unprojectVector(vector, camera);
+
+  var raycaster = new THREE.Raycaster(
+    camera.position,
+    vector.sub(camera.position).normalize()
+  );
+
+  var intersects = raycaster.intersectObject(earth);
+
+  if (intersects.length > 0) {
     console.log('Earth');
   }
 };
@@ -9384,32 +9383,34 @@ camera.position ).normalize() );
 你也可以将这种技术用于分层对象，以确保鼠标事件仅应用于顶层对象。例如，你可以给这个场景添加一个月球：
 
 ```javascript
-var moonGeometry = new THREE.SphereGeometry( 20, 24, 24 ),
-     moonMaterial = new THREE.MeshPhongMaterial({
-       color: 0xDDDDDD
-   }),
-   moon = new THREE.Mesh( moonGeometry, moonMaterial );
+var moonGeometry = new THREE.SphereGeometry(20, 24, 24),
+    moonMaterial = new THREE.MeshPhongMaterial({
+      color: 0xDDDDDD
+    }),
+    moon = new THREE.Mesh(moonGeometry, moonMaterial);
+
 moon.position.z = 150;
 moon.position.x = 50;
-scene.add( moon );
+scene.add(moon);
 ```
 
 现在，不要在点击处理程序中使用 `intersectObject`，而是使用带有对象数组的 `intersectObjects`：
 
 ```javascript
-var intersects = raycaster.intersectObjects( [earth, moon] );
-if ( intersects.length > 0 ) {
+var intersects = raycaster.intersectObjects([earth, moon]);
+
+if (intersects.length > 0) {
   var topObjectId = intersects[0].object.id;
-  if ( topObjectId == earth.id ) {
+
+  if (topObjectId == earth.id) {
     console.log('Earth');
-  }
-  else if ( topObjectId == moon.id ) {
+  } else if (topObjectId == moon.id) {
     console.log('Moon');
   }
 }
 ```
 
-该脚本首先将 `earth` 和 `moon` 网格引用传递给 `intersectsObjects`。然后它确定与点击事件相交的顶层物体的 `id`，即 `intersects` 数组中的第一个项。最后，它将该 `id` 与两个物体的 `id` 进行比较，以确定哪一个是顶层。
+该脚本首先将 `earth` 和 `moon` 网格引用传递给 `intersectObjects`。然后它确定与点击事件相交的顶层物体的 `id`，即 `intersects` 数组中的第一个项。最后，它将该 `id` 与两个物体的 `id` 进行比较，以确定哪一个是顶层。
 
 ### 使用 2D 画布回退方案
 
@@ -9422,8 +9423,7 @@ var renderer = new THREE.CanvasRenderer();
 要使用回退方案，只需使用 Modernizr 或 Three.js 内置的检测器设置 WebGL 支持检测即可：
 
 ```javascript
-var renderer = Detector.webgl ? new THREE.WebGLRenderer():
-  new THREE.CanvasRenderer();
+var renderer = Detector.webgl ? new THREE.WebGLRenderer() : new THREE.CanvasRenderer();
 ```
 
 2D 画布渲染器确实不漂亮，但它是一个不错的回退方案，如图 11-26 所示。
@@ -9441,7 +9441,7 @@ var renderer = Detector.webgl ? new THREE.WebGLRenderer():
 ```html
 <div class="container">
   <div class="card">CSS3 Transform</div>
-</>
+</div>
 ```
 
 然后用 3D 变换对其进行样式处理（相关部分）：
@@ -9455,6 +9455,7 @@ var renderer = Detector.webgl ? new THREE.WebGLRenderer():
   -moz-perspective: 500px;
   perspective: 500px;
 }
+
 .card {
   position: absolute;
   top: 0;
@@ -9465,13 +9466,19 @@ var renderer = Detector.webgl ? new THREE.WebGLRenderer():
   font-size: 50px;
   background: tomato;
   color: #FFF;
-  -webkit-transform: rotateY( 45deg );
-  -moz-transform: rotateY( 45deg );
-  transform: rotateY( 45deg );
+  -webkit-transform: rotateY(45deg);
+  -moz-transform: rotateY(45deg);
+  transform: rotateY(45deg);
 }
 ```
 
-3D 变换的第一步是在父元素上定义透视（perspective）。这类似于设置摄像机的角度。接下来，CSS 将实际 3D 变换应用于 `.card`。这些变换将其绕 y 轴旋转 45 度，产生了图 11-27 所示的倾斜卡片。
+
+
+# 3D 变换与性能优化
+
+## 3D 变换基础
+
+3D 变换的第一步是在父元素上定义透视（`perspective`）。这类似于设置摄像机的角度。接下来，CSS 将实际 3D 变换应用于 `.card`。这些变换将其绕 y 轴旋转 45 度，产生了图 11-27 所示的倾斜卡片。
 
 ![9781118524565-fg1127.tif](img/9781118524565-fg1127_fmt.png)
 
@@ -9479,7 +9486,9 @@ var renderer = Detector.webgl ? new THREE.WebGLRenderer():
 
 默认情况下，透视仅适用于元素的后代。要将其扩展到所有后代，请为 `.card` 元素添加 `transform-style: preserve-3d`（以及 `-webkit` 和 `-moz` 扩展）。
 
-要制作动画，你有几种选择。首先，可以使用 CSS 过渡（transition）：
+## 动画实现
+
+要制作动画，你有几种选择。首先，可以使用 CSS 过渡（`transition`）：
 
 ```css
 .card {
@@ -9492,28 +9501,26 @@ var renderer = Detector.webgl ? new THREE.WebGLRenderer():
   font-size: 48px;
   background: tomato;
   color: #FFF;
-  -webkit-transform: rotateY( 45deg );
-  -moz-transform: rotateY( 45deg );
-  transform: rotateY( 45deg );
+  -webkit-transform: rotateY(45deg);
+  -moz-transform: rotateY(45deg);
+  transform: rotateY(45deg);
   -webkit-transition: -webkit-transform .5s ease;
   -moz-transition: -moz-transform .5s ease;
   transition: transform .5s ease;
 }
+
 .card:hover {
-  -webkit-transform: rotateY( -45deg );
-  -moz-transform: rotateY( -45deg );
-  transform: rotateY( -45deg );
+  -webkit-transform: rotateY(-45deg);
+  -moz-transform: rotateY(-45deg);
+  transform: rotateY(-45deg);
 }
 ```
 
 在这里，CSS 为元素应用了过渡，它将平滑地在样式变化之间切换。然后为卡片添加 `:hover` 伪类，以将其旋转回 -45 度。或者，你可以使用 CSS 关键帧动画（下一章将更多关于过渡和关键帧动画的内容）。
 
-总结
+## 章节总结
 
-
-
-
-在本章中，你发现了许多在浏览器中渲染图形的制技术。首先，你学习了 `canvas` 和 `SVG`，以及如何使用这两种技术来渲染基础形状。然后，你为这些形状制作了动画并应用了鼠标交互。
+在本章中，你发现了许多在浏览器中渲染图形的技术。首先，你学习了 `canvas` 和 `SVG`，以及如何使用这两种技术来渲染基础形状。然后，你为这些形状制作了动画并应用了鼠标交互。
 
 接下来，你通过 `SVG` 库 `Raphaël.js` 提升了你的 2D 绘画能力。通过 `Raphaël`，你研究了如何绘制更复杂的形状、如何添加各种样式选项以及利用内置的动画支持。随后，你将对 `Raphaël` 的知识扩展到了 `gRaphaël`，这是一个简单的图表库。
 
@@ -9523,51 +9530,49 @@ var renderer = Detector.webgl ? new THREE.WebGLRenderer():
 
 ## 额外资源
 
-## 灵感
+### 灵感
 
 - Chrome 实验：[`www.chromeexperiments.com`](http://www.chromeexperiments.com/)
 - 21 个极令人惊叹的 HTML5 Canvas 实验：[`http://net.tutsplus.com/articles/web-roundups/21-ridiculously-impressive-html5-canvas-experiments`](http://net.tutsplus.com/articles/web-roundups/21-ridiculously-impressive-html5-canvas-experiments/)
 - 专注于 HTML5 的交互式实验：[`http://hakim.se/experiments`](http://hakim.se/experiments)
 
-## Canvas
+### Canvas
 
 - Canvas 教程：[`https://developer.mozilla.org/en-US/docs/HTML/Canvas/Tutorial`](https://developer.mozilla.org/en-US/docs/HTML/Canvas/Tutorial)
 - Fulten, Steve, and Jeff Fulton. HTML5 Canvas (O'Reilly Media, Inc., 2011)：[`http://shop.oreilly.com/product/0636920013327.do`](http://shop.oreilly.com/product/0636920013327.do)
 
-## SVG
+### SVG
 
 - SVG 教程：[`https://developer.mozilla.org/en-US/docs/SVG/Tutorial`](https://developer.mozilla.org/en-US/docs/SVG/Tutorial)
 - SVG 路径字符串规范：[`www.w3.org/TR/SVG/paths.html#PathData`](http://www.w3.org/TR/SVG/paths.html#PathData)
 
-## Raphaël.js
+### Raphaël.js
 
 - Raphaël.js 文档：[`http://raphaeljs.com/reference.html`](http://raphaeljs.com/reference.html)
 - gRaphaël 文档：[`http://g.raphaeljs.com/reference.html`](http://g.raphaeljs.com/reference.html)
 - 有 Raphaël 的小帮助的 SVG：[`www.alistapart.com/articles/svg-with-a-little-help-from-raphael`](http://www.alistapart.com/articles/svg-with-a-little-help-from-raphael/)
 - Ready Set Raphaël (SVG 转换器)：[`www.readysetraphael.com`](http://www.readysetraphael.com/)
 
-## WebGL
+### WebGL
 
 - WebGL 基础：[`www.html5rocks.com/en/tutorials/webgl/webgl_fundamentals`](http://www.html5rocks.com/en/tutorials/webgl/webgl_fundamentals/)
 - Cantor, Diego, and Brandon Jones. WebGL 初学者指南 (Packt Publishing, 2012)：[`www.packtpub.com/webgl-javascript-beginners-guide/book`](http://www.packtpub.com/webgl-javascript-beginners-guide/book)
 
-## Three.js
+### Three.js
 
 - Three.js 文档：[`http://mrdoob.github.com/three.js/docs`](http://mrdoob.github.com/three.js/docs/)
 - Parisi, Tony. WebGL: Up and Running (O'Reilly Media, Inc., 2012)：[`http://shop.oreilly.com/product/0636920024729.do`](http://shop.oreilly.com/product/0636920024729.do)
 - 快速浏览 Three.js：[`http://2011.12devsofxmas.co.uk/2012/01/webgl-and-three-js`](http://2011.12devsofxmas.co.uk/2012/01/webgl-and-three-js/)
 - Three.js 点击事件示例：[`http://mrdoob.github.com/three.js/examples/canvas_interactive_cubes.html`](http://mrdoob.github.com/three.js/examples/canvas_interactive_cubes.html)
 
-## CSS3 中的 3D 变换
+### CSS3 中的 3D 变换
 
 - 3D 变换简介：[`http://desandro.github.com/3transforms`](http://desandro.github.com/3transforms/)
 - 20 个惊艳的 CSS3 变换示例：[`www.netmagazine.com/features/20-stunning-examples-transforms`](http://www.netmagazine.com/features/20-stunning-examples-transforms)
 
-## 发布
+# 性能优化与部署
 
-现在你已经能够在浏览器中绘制自定义的 2D 和 3D 图形，你在前端可以实现的可能性几乎是无限的。使用这些技术来创建一个丰富的交互式应用，让你的用户感到惊喜并印象深刻。
-
-在这个点，你已经准备好发布。然而，在本章中，你发现了补充测试驱动开发（TDD）的性能技术。## 性能清单
+## 性能清单
 
 应用最重要的特性之一就是它的运行速度。过去，优化工作集中在服务器：提高延迟和增加功能。然而，近年来开发者开始更多地关注客户端。虽然你可以通过购买更好的服务器来解决服务器性能，但对于客户端，你唯一能做的就是优化代码。这是因为你无法控制访问应用的设备。你可能认为随着计算机的不断改进，这不再是问题，但随着更多用户转向移动设备浏览网页，你的应用需要兼容性。此外，即使在桌面电脑上，用户对应用交互的预期也更高。
 
@@ -9575,7 +9580,7 @@ var renderer = Detector.webgl ? new THREE.WebGLRenderer():
 
 ## 测试性能
 
-如果你已经用 QUnit 设置了单元测试，你应该已经获得了有关测试执行时间的数据。但当你想要比较不同的方法时，还有另一种测试性能的方法：使用[`http://jsperf.com`](http://jsperf.com) 进行基准测试。
+如果你已经用 QUnit 设置了单元测试，你应该已经获得了有关测试执行时间的数据。但当你想要比较不同的方法时，还有另一种测试性能的方法：使用 [`http://jsperf.com`](http://jsperf.com) 进行基准测试。
 
 它可以让你方便地比较短脚本的性能，并在不同浏览器之间进行比较，如图 12-1 所示。
 
@@ -9587,21 +9592,18 @@ var renderer = Detector.webgl ? new THREE.WebGLRenderer():
 
 另一个用于性能测试的工具是 WebKit 开发工具中的性能分析器。你可以使用 JavaScript 性能分析器来收集数据，确定哪些部分执行最频繁，哪些部分消耗了更多资源，如图 12-2 所示。
 
-```
+```javascript
 requestAnimationFrame
 ```
-
-
-
-
-# 优化
-
-除了测试，专注于优化重复执行的代码也是一个好主意。函数运行得越频繁，优化时带来的收益就越大。因此，请检查你的循环和任何重用的函数。你也可以提前为自己提供帮助，遵循“不要重复自己”（Don't Repeat Yourself, DRY）的原则，将常用部分抽象到单独的函数中，以便在整个应用中共享。这样做的好处是除了减少总文件大小外，代码还更容易维护和测试。
 
 ![978118524565-fg1202.png]
 来自 WebKit 内置工具的 JavaScript 性能分析器。
 
-## 实际性能与感知性能
+## 优化策略
+
+除了测试，专注于优化重复执行的代码也是一个好主意。函数运行得越频繁，优化时带来的收益就越大。因此，请检查你的循环和任何重用的函数。你也可以提前为自己提供帮助，遵循“不要重复自己”（Don't Repeat Yourself, DRY）的原则，将常用部分抽象到单独的函数中，以便在整个应用中共享。这样做的好处是除了减少总文件大小外，代码还更容易维护和测试。
+
+### 实际性能与感知性能
 
 最后，请注意性能有两种类型：实际性能和感知性能。基准测试认为你的应用运行有多快其实并不重要，重要的是用户的感知。感知性能的经典案例是将某些任务推迟到以后执行，以便用户能够尽快看到页面上发生某些变化。例如，假设你有一个非常消耗资源的 JavaScript 图表。在图表加载时阻塞页面的其他部分是没有意义的。相反，先用一个“加载中”gif 加载整个页面，然后在最后加载图表。尽管脚本加载的时间相同（甚至更长），用户也会感知到更好的性能，因为他们能够与页面的其他部分进行交互。这个例子中的性能改进不必止于图表——你可以设置页面仅加载显示所需的最少内容，然后根据需要加载其余部分。
 
@@ -9611,11 +9613,11 @@ requestAnimationFrame
 
 在本节中，我涵盖了三管齐下的方法：最小化（minification）、gzip 压缩和托管。这些技术可以极大地减小文件体积；使用这些方法时，体积减少 90% 或以上的情况并不罕见。你可能已经在这样做其中的一些了，但确保遵循所有这些指南将确保你的 JavaScript 尽可能快速加载。
 
-### 最小化 (Minification)
+### 最小化
 
-这几乎是理而应当的。在发布到生产环境之前，确保运行最小化工具或打包器来处理你的代码，以删除任何空白和注释，并减少局部变量。根据可以移除多少此类字符，你将在最小化时看到显著的收益——例如，一个 100K 的文件缩小到 30K。
+这几乎是理所应当的。在发布到生产环境之前，确保运行最小化工具或打包器来处理你的代码，以删除任何空白和注释，并减少局部变量。根据可以移除多少此类字符，你将在最小化时看到显著的收益——例如，一个 100K 的文件缩小到 30K。
 
-但请记住，所有的最小化工具都是相同的。它们处理方式略有不同，并产生不同大小的文件。我个人最喜欢 Google Closure Compiler (`http://code.google.com/p/closure-compiler/`)，因为它始终提供一些最小的最小化文件。例如，参见此对比：`http://coderjournal.com/2010/01/yahoo-yui-compressor-vs-microsoft-ajax-minifier-vs-google-closure-compiler/`。
+但请记住，并非所有的最小化工具都是相同的。它们处理方式略有不同，并产生不同大小的文件。我个人最喜欢 Google Closure Compiler (`http://code.google.com/p/closure-compiler/`)，因为它始终提供一些最小的最小化文件。例如，参见此对比：`http://coderjournal.com/2010/01/yahoo-yui-compressor-vs-microsoft-ajax-minifier-vs-google-closure-compiler/`。
 
 你可以下载编译器并在计算机的终端中运行它，或者使用这里的在线版本：`http://closure-compiler.appspot.com/`。如果你正在运行 `Node`，请查看 `Uber-Compiler` 模块（它也编译 LESS）：`https://github.com/kennberg/node-uber-compiler`。
 
@@ -9629,7 +9631,7 @@ requestAnimationFrame
 
 或者如果你在 Apache 服务器上，可以通过 `.htaccess` 文件进行 gzip：
 
-```
+```apache
 # 压缩 text, html, javascript, css, xml:
 AddOutputFilterByType DEFLATE text/plain
 AddOutputFilterByType DEFLATE text/html
@@ -9655,7 +9657,7 @@ AddOutputFilterByType DEFLATE application/javascript
 
 ### CSS3 动画
 
-CSS3 引入了过渡（transition）和帧动画（keyframe animations），两者都可以作为 JavaScript 的替代。由于这些动画可以被浏览器优化并利用硬件加速，因此尽可能这样做是好主意。结果是，在能力设备上，将使用图形处理器（GPU）而不是中央处理器（CPU）来渲染动画。GPU 不仅更适合渲染，还能释放 CPU 专注于其他任务。
+CSS3 引入了过渡（`transition`）和帧动画（`keyframe animations`），两者都可以作为 JavaScript 的替代。由于这些动画可以被浏览器优化并利用硬件加速，因此尽可能这样做是好主意。结果是，在能力设备上，将使用图形处理器（GPU）而不是中央处理器（CPU）来渲染动画。GPU 不仅更适合渲染，还能释放 CPU 专注于其他任务。
 
 ### 将 CSS3 动画结合 JavaScript 使用
 
@@ -9678,10 +9680,6 @@ CSS3 引入了过渡（transition）和帧动画（keyframe animations），两�
 }
 ```
 
-
-
-
-
 接下来，使用 jQuery 为你的元素添加 `slide-left` 类：
 
 ```javascript
@@ -9690,15 +9688,15 @@ $('.my-element').addClass('slide-left');
 
 当应用此类时，元素将在 500 毫秒内向左移动 200 像素。
 
-## CSS3 动画的缺点
+### CSS3 动画的缺点
 
-遗憾的是，CSS3 动画可能比你习惯的 JavaScript 技术更难处理。例如，jQuery 动画有一个直观的回调函数，该回调函数在每次动画完成时都会被调用。尽管你可以使用 CSS3 的 `transitionend` 处理器来实现相同的功能，但此事件会在任何过渡完成时触发，并且很难辨别出底是哪一个过渡触发了它。更糟糕的是，如果你正在对多个属性进行过渡（例如，在同一次过渡中同时改变 `height` 和 `width`），它会触发多次。
+遗憾的是，CSS3 动画可能比你习惯的 JavaScript 技术更难处理。例如，jQuery 动画有一个直观的回调函数，该回调函数在每次动画完成时都会被调用。尽管你可以使用 CSS3 的 `transitionend` 处理器来实现相同的功能，但此事件会在任何过渡完成时触发，并且很难辨别出到底是哪一个过渡触发了它。更糟糕的是，如果你正在对多个属性进行过渡（例如，在同一次过渡中同时改变 `height` 和 `width`），它会触发多次。
 
 更重要的是，CSS3 动画产生了一个组织上的问题，因为动画通常更像是一个脚本任务，而不是样式任务，因此将这些代码放在样式表中是不合逻辑的。有时候这并不是大问题；例如，如果你想在悬停时切换链接的颜色，这种动画仅仅是一个样式问题。但一旦你开始使用 JavaScript 来应用 CSS3 动画，然后尝试在 JS 中处理 `transitionend` 事件，你就会发现同一脚本的部分在完全不同的位置运行。这并不意味着你应该完全避免这种做法。有时你确实使用 CSS3 动画；例如，在性能有限的移动设备上，它可以成为救命稻草。但你也需要理解这种开发模式的缺点。
 
-最后，请记住浏览器对 CSS3 动画的支持仍然不足。幸运的是，从 IE10 开始，所有主流浏览器都已支持过渡（transition）和关键帧动画（keyframe animation）（Opera Mini 除外）。然而，旧版本的 IE 不支持它，在本文写作时这仍然占据了相当的市场份额。对于过渡来说，这通常不是主要问题，因为它们会回退到即时的、非动画样式更改。另一方面，关键帧动画则是另一回事。当然，如果这些动画中有任何一个是至关重要的，你始终可以编写 JavaScript 回退方案或使用 polyfill。
+最后，请记住浏览器对 CSS3 动画的支持仍然不足。幸运的是，从 IE10 开始，所有主流浏览器都已支持过渡（`transition`）和关键帧动画（`keyframe animation`）（Opera Mini 除外）。然而，旧版本的 IE 不支持它，在本文写作时这仍然占据了相当的市场份额。对于过渡来说，这通常不是主要问题，因为它们会回退到即时的、非动画样式更改。另一方面，关键帧动画则是另一回事。当然，如果这些动画中有任何一个是至关重要的，你始终可以编写 JavaScript 回退方案或使用 polyfill。
 
-## Request Animation Frame (请求帧)
+## Request Animation Frame
 
 另一种方法，如果你想避免与 CSS3 过渡之间进行复杂的接口交互，可以使用 HTML5 的 `requestAnimationFrame` API 获取一个兼得两者的解决方案。该 API 为浏览器渲染动画的每一帧提供了一种更符合性能要求。
 
@@ -9725,6 +9723,7 @@ $('.my-element').addClass('slide-left');
     window.cancelAnimationFrame =
       window[vendors[x]+'CancelAnimationFrame'] || window[vendors[x]+'CancelRequestAnimationFrame'];
   }
+
   if (!window.requestAnimationFrame)
     window.requestAnimationFrame = function(callback, element) {
       var currTime = new Date().getTime();
@@ -9737,14 +9736,14 @@ $('.my-element').addClass('slide-left');
 }());
 ```
 
-这个 polyfill 齐了不同的浏览器，并为不支持的浏览器提供了回退方案。你可以在这里阅读更多信息：`http://paulirish.com/2011/requestframe-animating/`。
+这个 polyfill 统一了不同的浏览器，并为不支持的浏览器提供了回退方案。你可以在这里阅读更多信息：`http://paulirish.com/2011/requestframe-animating/`。
 
-## 如何使用 Request Frame
+### 如何使用 Request Frame
 
 引入 polyfill 后，你就可以开始了。首先，创建一些用于操作的标记：
 
 ```html
-<div id="my-element">点击开始</div></div>
+<div id="my-element">点击开始</div>
 ```
 
 并添加一些基础样式：
@@ -9775,9 +9774,11 @@ function render(time) {
   if (time === undefined) {
     time = new Date().getTime()
   }
+
   if (startTime === null) {
     startTime = time;
   }
+
   elem.style.left = ((time - startTime) / duration * endPos % endPos) + 'px';
 }
 
@@ -9795,9 +9796,7 @@ elem.onclick = function() {
 
 接下来，`animationLoop()` 函数渲染动画的当前帧。然后它调用 `requestAnimationFrame()`，并将自身和要动画的元素传递进去，从而建立了一个循环，在浏览器准备就绪时在元素中渲染新帧。
 
-
-
-
+## DOM 优化
 
 在处理 jQuery DOM 引用时，这项技术尤为重要，因为即使使用极快的 Sizzle 引擎，CSS 选择器也可能非常消耗资源。例如，你应该避免在循环中选择 DOM 元素，除非该循环以某种方式改变了这些选择器引用的内容。
 
@@ -9805,13 +9804,13 @@ elem.onclick = function() {
 
 ![9781118524565-fg1203.tif](img/9781118524565-fg1203_fmt.png)
 
-图 12-3：在 Chrome 中，`$(h1')` 的缓存引用快得多。
+图 12-3：在 Chrome 中，`$('h1')` 的缓存引用快得多。
 
-## 避免重流（Reflows）
+### 避免重流
 
-此外，你可以通过尽量减少页面上的重流次数来优化客户端 JavaScript。每当元素的布局发生变化时，就会发生一次重流。例如，如果你让一个浮动元素变宽，它会把其他浮动元素推到下一行，然后继继将随后的元素向下推。
+此外，你可以通过尽量减少页面上的重流次数来优化客户端 JavaScript。每当元素的布局发生变化时，就会发生一次重流。例如，如果你让一个浮动元素变宽，它会把其他浮动元素推到下一行，然后继而将随后的元素向下推。
 
-要直观了解重流是如何工作的，请查看这个在 Gecko 浏览器中运行的重流可视化：[`http://youtube/ZTnIxIA5KGw`](http://youtu.be/ZTnIxIA5KGw)。
+要直观了解重流是如何工作的，请查看这个在 Gecko 浏览器中运行的重流可视化：[`http://youtu.be/ZTnIxIA5KGw`](http://youtu.be/ZTnIxIA5KGw)。
 
 避免重流的最佳方法是避免对 DOM 进行不必要的操作。尽可能对任何 DOM 更改进行批量处理并一次插入。
 
@@ -9821,7 +9820,7 @@ elem.onclick = function() {
 
 图 12-4：批量处理十张 Nyan cat 图像比逐个添加要快。
 
-## 部署
+## 部署策略
 
 在你充分测试了应用程序，并且对功能和性能都表示满意后，就是时候进行部署了。
 
@@ -9835,7 +9834,7 @@ elem.onclick = function() {
 
 其次，CDN 针对静态资源的交付进行了优化。例如，在你的网站上，你可能以某种方式使用了 cookie，即使是为了分析。每当用户从你的服务器请求文件时（无论是 HTML、JS、CSS 还是图像），这些 cookie 数据都会作为请求头的一部分传递。
 
-尽管 cookie 相对较小（通常小于 1K），但考虑到它会随着每一个请求发送，这些额外数据确实会累积成大量开。因此，将所有静态资源（JS、CSS 和图像）托管在 CDN 上是一个好主意，因为 CDN 不会随头部传递任何 cookie。第三，CDN 提供了激进的 HTTP 缓存能力，这减少了延迟并增加了输出，允许 CDN 处理巨大的流量峰值。这结合高水平的冗余性，贡献了你自己的服务器难以实现的可用性水平。
+尽管 cookie 相对较小（通常小于 1K），但考虑到它会随着每一个请求发送，这些额外数据确实会累积成大量开销。因此，将所有静态资源（JS、CSS 和图像）托管在 CDN 上是一个好主意，因为 CDN 不会随头部传递任何 cookie。第三，CDN 提供了激进的 HTTP 缓存能力，这减少了延迟并增加了输出，允许 CDN 处理巨大的流量峰值。这结合高水平的冗余性，贡献了你自己的服务器难以实现的可用性水平。
 
 #### CDN 的劣势
 
@@ -9847,13 +9846,13 @@ elem.onclick = function() {
 
 除了将静态前端资源部署到 CDN 之外，你还可以将你的 Node 实现部署到云服务器，例如 Amazon 的 Elastic Compute Cloud (EC2)。EC2 服务器非常棒，因为它们是可扩展的，这意味着你可以在需要时增加资源，在不需要时避免付费。因此，你获得了一个兼顾两者的解决方案：在低谷期很便宜，但可以处理你抛给它的几乎任何负载。当然，你使用的资源越多，在托管上的花费就越高。但别担心；你可以设置自己能接受的限制。
 
-要了解更多关于如何将 Node 服务器部署到 EC2，请访问[`http://rsms.me/2011/03/ec2-wep-template.html`](http://rsms.me/2011/03/ec2-wep-template.html)。
+要了解更多关于如何将 Node 服务器部署到 EC2，请访问 [`http://rsms.me/2011/03/ec2-wep-template.html`](http://rsms.me/2011/03/ec2-wep-template.html)。
 
 ## 发布
 
-万事大备，你终于准备好发布了。所以不要太掉以，因为问题总是会发生。我希望你在书中发现了一些新技巧，但更重要的是，我希望这本书让你对 JavaScript 产生了兴趣。JavaScript 中充满了许多乐趣，而这只是这个不断演变的语言的开始。
+万事大备，你终于准备好发布了。所以不要太掉以轻心，因为问题总是会发生。我希望你在书中发现了一些新技巧，但更重要的是，我希望这本书让你对 JavaScript 产生了兴趣。JavaScript 中充满了许多乐趣，而这只是这个不断演变的语言的开始。
 
-你始终可以找到新的库来简化你开发的各个方面，以及所有不断增强你所能实现能力的 DOM API。此外，如果你为你想要的某个功能找不到浏览器级别的 API，你完全可以打赌在某个时刻会有一个一个——毕竟，你可以自己提建议。
+你始终可以找到新的库来简化你开发的各个方面，以及所有不断增强你所能实现能力的 DOM API。此外，如果你为你想要的某个功能找不到浏览器级别的 API，你完全可以打赌在某个时刻会有一个——毕竟，你可以自己提建议。
 
 所以，继续学习，继续编码吧！
 
@@ -9861,78 +9860,96 @@ elem.onclick = function() {
 
 ### 性能测试
 
-jsPerf. “JavaScript Performance”: [`http://jsperf.com`](http://jsperf.com/)
-
-WebKit JavaScript 性能分析器详解：[`http://fuelyourcoding.com/webkits-javascript-profiler-explained/`](http://fuelyourcoding.com/webkits-javascript-profiler-explained/)
+- jsPerf. “JavaScript Performance”：[`http://jsperf.com`](http://jsperf.com/)
+- WebKit JavaScript 性能分析器详解：[`http://fuelyourcoding.com/webkits-javascript-profiler-explained/`](http://fuelyourcoding.com/webkits-javascript-profiler-explained/)
 
 ### 文件压缩
 
-在线 Closure 编译器：[`http://closure-compiler.appspot.com`](http://closure-compiler.appspot.com/)
+- 在线 Closure 编译器：[`http://closure-compiler.appspot.com`](http://closure-compiler.appspot.com/)
+- Github. Kennberg: Node Uber-Compiler：[`https://github.com/kennberg/node-uber-compiler`](https://github.com/kennberg/node-uber-compiler)
+- 其他 Node 压缩模块：[`https://github.com/joyent/node/wiki/modules#wiki-compression`](https://github.com/joyent/node/wiki/modules#wiki-compression)
 
-Github. Kennberg: Node Uber-Compiler：[`https://github.com/kennberg/node-uber-compiler`](https://github.com/kennberg/node-uber-compiler)
+### 动画性能
 
-其他 Node 压缩模块：[`https://github.com/joyent/node/wiki/modules#wiki-compression`](https://github.com/joyent/node/wiki/modules#wiki-compression)
+- CSS-Tricks. “动画性能故事”：[`http://css-tricks.com/tale-of-animation-performance/`](http://css-tricks.com/tale-of-animation-performance/)
 
-
-
-
-
-# CSS-Tricks. “动画性能故事”: [`http://css-tricks.com/tale-of-animation-performance/`](http://css-tricks.com/tale-of-animation-performance/)
-
-## 通用性能
+### 通用性能
 
 - Zakas, Nicholas C. *High Performance JavaScript*. (O'Reilly Media, Inc., 2010)
-- Smashing Magazine. “编写快速且内存高效的 JavaScript”: [`http://coding.smashingmagazine.com/2012/11/05/writing-fast-memory-efficient-javascript/](http://coding.smashingmagazine.com/2012/11/05/writing-fast-memory-efficient-javascript/)
-- HTML5 Rocks. Chris Wilson. “V8 中 JavaScript 的性能优化技巧”: [`www.html5rocks.com/en/tutorials/speed/v8`](http://www.html5rocks.com/en/tutorials/speed/v8/)
-- SlideShare Inc. Jake Archibald. “JavaScript——优化痛点所在”: [`www.slideshare.net/jaffathecake/optimising-where-it-hurts-jake-archibald`](http://www.slideshare.net/jaffathecake/optimising-where-it-hurts-jake-archibald)
-- SlideShare Inc. Steve Souders. “JavaScript Performance (at SFJS)”: [`www.slideshare.net/souders/javascript-performance-at-sfjs`](http://www.slideshare.net/souders/javascript-performance-at-sfjs)
-- YouTube. “Gecko 重流可视化”: [`http://youtube/ZTnIxIA5KGw`](http://youtu.be/ZTnIxIA5KGw)
+- Smashing Magazine. “编写快速且内存高效的 JavaScript”：[`http://coding.smashingmagazine.com/2012/11/05/writing-fast-memory-efficient-javascript/`](http://coding.smashingmagazine.com/2012/11/05/writing-fast-memory-efficient-javascript/)
+- HTML5 Rocks. Chris Wilson. “V8 中 JavaScript 的性能优化技巧”：[`www.html5rocks.com/en/tutorials/speed/v8`](http://www.html5rocks.com/en/tutorials/speed/v8/)
+- SlideShare Inc. Jake Archibald. “JavaScript——优化痛点所在”：[`www.slideshare.net/jaffathecake/optimising-where-it-hurts-jake-archibald`](http://www.slideshare.net/jaffathecake/optimising-where-it-hurts-jake-archibald)
+- SlideShare Inc. Steve Souders. “JavaScript Performance (at SFJS)”：[`www.slideshare.net/souders/javascript-performance-at-sfjs`](http://www.slideshare.net/souders/javascript-performance-at-sfjs)
+- YouTube. “Gecko 重流可视化”：[`http://youtu.be/ZTnIxIA5KGw`](http://youtu.be/ZTnIxIA5KGw)
 
-## 部署
+### 部署
 
-- Amazon S3: [`http://aws.amazon.com/s3/`](http://aws.amazon.com/s3/)
-- Amazon EC2: [`http://aws.amazon.com/ec2`](http://aws.amazon.com/ec2/)
-- Amazon AWS 再次宕机，连带 Reddit 一起崩溃: [`www.forbes.com/sites/kellyclay/2012/10/22/amazon-aws-goes-down-again-takes-reddit-with-it`](http://www.forbes.com/sites/kellyclay/2012/10/22/amazon-aws-goes-down-again-takes-reddit-with-it/)
-- 在 EC2 上设置 Node.js 后端 Web 应用的模板: [`http://rsms.me/2011/03/23/ec2-wep-app-template.html`](http://rsms.me/2011/03/23/ec2-wep-app-template.html)
+- Amazon S3：[`http://aws.amazon.com/s3/`](http://aws.amazon.com/s3/)
+- Amazon EC2：[`http://aws.amazon.com/ec2`](http://aws.amazon.com/ec2/)
+- Amazon AWS 再次宕机，连带 Reddit 一起崩溃：[`www.forbes.com/sites/kellyclay/2012/10/22/amazon-aws-goes-down-again-takes-reddit-with-it`](http://www.forbes.com/sites/kellyclay/2012/10/22/amazon-aws-goes-down-again-takes-reddit-with-it/)
+- 在 EC2 上设置 Node.js 后端 Web 应用的模板：[`http://rsms.me/2011/03/23/ec2-wep-app-template.html`](http://rsms.me/2011/03/23/ec2-wep-app-template.html)
 
-## 附录
-
-### 使用 LESS 进行 CSS 预处理
+# 附录：使用 LESS 进行 CSS 预处理
 
 在 JavaScript 书中谈论 CSS 似乎有点奇怪，但使用 LESS 进行预处理已经不再是标准的 CSS 了。LESS 添加了动态语言的一些熟悉特性，你可以利用这些特性编写高效的 CSS，允许你使用 JavaScript 编译应用的 CSS。这种预处理器允许你使用变量、函数以及所有其他一直想在 CSS 中使用的功能来构建 CSS。LESS 加快了开发过程，同时也让样式表更有组织、更易维护。
 
 在本附录中，你将了解到为什么应该使用 CSS 预处理以及如何安装自动化的 LESS 编译器。然后你将学习 LESS 的基础知识，包括变量、操作符和嵌套。你还将发现如何使用函数和自定义混合（mixins）。最后，你将构建你的 LESS 并将其组织到单独的文件。
 
-#### 介绍 LESS
+## 介绍 LESS
 
 LESS 允许你使用自定义变量和函数对 CSS 进行脚本化。然后脚本化的 LESS 文件在到达浏览器之前会被编译为静态 CSS，这意味着你可以在 CSS 开发中使用脚本，但仍然向用户提供普通的浏览器兼容型 CSS。此外，如果你决定放弃 LESS，可以直接开始使用生成的 CSS 文件进行开发。因此，使用预处理器实际上没有任何损失。
 
-#### 预处理好在哪里？
+## 预处理好在哪里？
 
-CSS 预处理有很多优势，这些优势都归结为加速开发和组织样式表。预处理最令人印象的用例是它如何处理 CSS3 厂商前缀。如果没有预处理器，你必须记住许多不同的前缀，其中一些可能使用完全不同的语法。例如，一个跨浏览器线性渐变：
+CSS 预处理有很多优势，这些优势都归结为加速开发和组织样式表。预处理最令人印象深刻的用例是它如何处理 CSS3 厂商前缀。如果没有预处理器，你必须记住许多不同的前缀，其中一些可能使用完全不同的语法。例如，一个跨浏览器线性渐变：
 
 ```css
 .my-element {
-  background-image:  -khtml-gradient(linear, left top, left bottom, from(#444), to(#000));
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#444), color_stop(100%,#000));
+  background-image: -khtml-gradient(linear, left top, left bottom, from(#444), to(#000));
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#444), color-stop(100%,#000));
   background-image: -webkit-linear-gradient(top, #444, #000);
-  background-image:     -moz-linear-gradient(top, #444, #000);
-  background-image:       -o-linear-gradient(top, #444, #000);
-  background-image:           linear-gradient(top, #444, #000);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#444444');
+  background-image: -moz-linear-gradient(top, #444, #000);
+  background-image: -o-linear-gradient(top, #444, #000);
+  background-image: linear-gradient(top, #444, #000);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#444444');
 }
 ```
 
-（注：提示提供的源码在 CSS 代码块中包含重复/乱码的行；我已清理格式以表示标准的 CSS 结构。）
+## LESS 基础
 
+### 变量
 
+变量允许你在一个地方指定广泛使用的值，然后在需要时重用它们。这使得全局更改变得像更改一行代码一样简单。
 
+```less
+@color: #4D926F;
 
-在这里，`.more-padding` 块获得了 `35px` 的内边距，即 `25px + 10px`。你可以使用任何你想要的数学运算符：`+`、`-`、`*` 和 `/`。不要害于在数字旁边使用运算符——它们不仅用于计算变量的变化。因为 LESS 文件会被编译为 CSS，所以当你懒得进行基础算术时，使用这些基础运算符没有任何损失。
+#header {
+  color: @color;
+}
+
+h2 {
+  color: @color;
+}
+```
+
+### 操作符
+
+操作符让你可以对属性值和颜色进行加、减、乘、除运算，从而创建复杂的属性关系。例如：
+
+```less
+@basePadding: 25px;
+
+.more-padding {
+  padding: @basePadding + 10px;
+}
+```
+
+在这里，`.more-padding` 块获得了 `35px` 的内边距，即 `25px + 10px`。你可以使用任何你想要的数学运算符：`+`、`-`、`*` 和 `/`。不要害怕在数字旁边使用运算符——它们不仅用于计算变量的变化。因为 LESS 文件会被编译为 CSS，所以当你懒得进行基础算术时，使用这些基础运算符没有任何损失。
 
 事实上，这通常是一个更好的主意，因为样式表会显示为什么某个数字是那样的——例如在处理盒模型问题时：
 
-```css
+```less
 .bordered-element {
   border-left: 1px solid black;
   border-right: 1px solid black;
@@ -9950,13 +9967,16 @@ CSS 预处理有很多优势，这些优势都归结为加速开发和组织样�
 header {
   min-width: 800px;
 }
+
 header nav {
   width: 800px;
   margin: 0 auto;
 }
+
 header nav li {
   list-style: none;
 }
+
 header a {
   text-decoration: none;
 }
@@ -9964,7 +9984,7 @@ header a {
 
 但你的 LESS 文件可以通过将每条规则嵌套在其父元素内来极大地简化这些：
 
-```css
+```less
 header {
   min-width: 800px;
   nav {
@@ -9986,13 +10006,14 @@ header {
 
 ### & 符号
 
-到为止，你已经看到了具有父子关系的嵌套，但它也可以更灵活。你可以使用 `&` 符号来嵌套分组的规则，例如，如果不使用 LESS，你会这样写：
+到目前为止，你已经看到了具有父子关系的嵌套，但它也可以更灵活。你可以使用 `&` 符号来嵌套分组的规则，例如，如果不使用 LESS，你会这样写：
 
 ```css
 p {
   color: gray;
   padding: 10px;
 }
+
 p.more-padding {
   padding: 25px;
 }
@@ -10000,7 +10021,7 @@ p.more-padding {
 
 但你可以使用 `&` 符号来简化它：
 
-```css
+```less
 p {
   color: gray;
   padding: 10px;
@@ -10010,9 +10031,9 @@ p {
 }
 ```
 
-你也可以将其与伪类配合——例如，为链接定义悬停（hover）状态：
+你也可以将其与伪类配合——例如，为链接定义悬停（`hover`）状态：
 
-```css
+```less
 a {
   text-decoration: none;
   &:hover {
@@ -10023,7 +10044,7 @@ a {
 
 此外，你可以将 `&` 符号放在选择器之后以反转父子顺序：
 
-```css
+```less
 .child {
   color: blue;
   .parent & {
@@ -10038,6 +10059,7 @@ a {
 .child {
   color: blue;
 }
+
 .parent .child {
   color: red;
 }
@@ -10047,7 +10069,7 @@ a {
 
 变量作用域在嵌套时变得特别强大，因为你可以定义一个局限于给定块的变量：
 
-```css
+```less
 .contact-form {
   @labelWidth: 100px;
   @formPadding: 5px;
@@ -10077,11 +10099,49 @@ a {
 
 在这里，两个变量 `@labelWidth` 和 `@formPadding` 被局限于 `.contact-form` 块的作用域。这样，你就可以拥有全局的 `@labelWidth` 和 `@formPadding` 变量，并为这个特定的表单设置不同的值。
 
+## 函数与混合
 
+### 内置函数
 
+LESS 提供了许多内置函数来操作颜色、字符串和数学运算。例如：
 
 ```less
-*/
+@baseColor: #333;
+
+.lighten-color {
+  color: lighten(@baseColor, 20%);
+}
+
+.darken-color {
+  color: darken(@baseColor, 20%);
+}
+```
+
+### 自定义混合
+
+混合允许你将一组属性从一个规则集包含到另一个规则集中。这类似于函数，但用于 CSS 属性块。
+
+```less
+.border-radius(@radius: 5px) {
+  -webkit-border-radius: @radius;
+  -moz-border-radius: @radius;
+  border-radius: @radius;
+}
+
+.button {
+  .border-radius(10px);
+}
+```
+
+## 文件组织
+
+### 标准结构
+
+一个典型的 LESS 项目结构如下：
+
+```less
+@import "variables.less";
+@import "mixins.less";
 @import "reset.less";
 @import "site.less";
 @import "media-queries.less";
@@ -10089,9 +10149,9 @@ a {
 
 此 LESS 文件从基础变量开始，该文件包含了你希望在整个样式表中使用的所有全局变量。接着，它导入了一套标准的 mixins（混合宏），例如在 [`http://lesselements.com`](http://lesselements.com/) 中找到的那些。它导入了各种样式表：一个 CSS 重置文件（如 YUI 重置）、一组名为 `site.less` 的主样式，以及一组基于媒体查询的样式修改。
 
-此外，请注意主 `style.less` 文件中并没有实际的样式。通过将所有样式存储在子文件中，你可以确保只需将 `style.less` 复制到任何新项目中（同以及 `mixins.less` 和 `reset.less`）。
+此外，请注意主 `style.less` 文件中并没有实际的样式。通过将所有样式存储在子文件中，你可以确保只需将 `style.less` 复制到任何新项目中（以及 `mixins.less` 和 `reset.less`）。
 
-## 自定义结构
+### 自定义结构
 
 你应该根据自己的需求和工作流来自定义文件结构。如果你使用 `@font-face` 嵌入了多个不同的字体，请将它们包含在单独的 `fonts.less` 文件中。如果你的样式部分封装得很好，请将其放在单独的文件中，以便于协作开发。
 
@@ -10108,23 +10168,27 @@ LESS 通过将脚本功能引入样式表，简化了前端开发。它不仅加
 ## 额外资源
 
 ### LESS 文档
+
 - [`http://lesscss.org`](http://lesscss.org/)
 
 ### LESS 函数参考
+
 - [`http://lesscss.org/#reference`](http://lesscss.org/#reference)
 
 ### LESS 编译器
-- LESS.app (Mac OS X): [`http://incident57.com/less`](http://incident57.com/less/)
-- SimpLESS (跨平台): [`http://wearekiss.com/simpless`](http://wearekiss.com/simpless)
-- Mod-less Apache Module: [`https://github.com/waleedq/libapache2-mod-less_beta1`](https://github.com/waleedq/libapache2-mod-less_beta1)
+
+- LESS.app (Mac OS X)：[`http://incident57.com/less`](http://incident57.com/less/)
+- SimpLESS (跨平台)：[`http://wearekiss.com/simpless`](http://wearekiss.com/simpless)
+- Mod-less Apache Module：[`https://github.com/waleedq/libapache2-mod-less_beta1`](https://github.com/waleedq/libapache2-mod-less_beta1)
 
 ### 免费 Mixins
-- LESS Elements: [`http://lesselements.com`](http://lesselements.com/)
-- 有用的 CSS3 LESS Mixins: [`http://css-tricks.com/snippets/css/useful-css3-less-mixins`](http://css-tricks.com/snippets/css/useful-css3-less-mixins/)
-- 你的项目应该借鉴的 10 个 LESS CSS 示例: [`http://designshack.net/articles/css/10-less-css-examples-you-should-steal-for-your-projects`](http://designshack.net/articles/css/10-less-css-examples-you-should-steal-for-your-projects/)
+
+- LESS Elements：[`http://lesselements.com`](http://lesselements.com/)
+- 有用的 CSS3 LESS Mixins：[`http://css-tricks.com/snippets/css/useful-css3-less-mixins`](http://css-tricks.com/snippets/css/useful-css3-less-mixins/)
+- 你的项目应该借鉴的 10 个 LESS CSS 示例：[`http://designshack.net/articles/css/10-less-css-examples-you-should-steal-for-your-projects`](http://designshack.net/articles/css/10-less-css-examples-you-should-steal-for-your-projects/)
 
 ### 教程
-- LESS Mixins 的全面介绍: [`http://www.sitepoint.com/a-comprehensive-introduction-to-less-mixins/`](http://www.sitepoint.com/a-comprehensive-introduction-to-less-mixins/)
-- 如何充分利用 LESS 的潜力: [`http://net.tutsplus.com/tutorials/php/how-to-squeeze-the-most-out-of-less/`](http://net.tutsplus.com/tutorials/php/how-to-squeeze-the-most-out-of-less/)
-- Mixins 与嵌套: [`http://blog.lynda.com/2012/08/27/css-pre-processors-part-two-mixins-and-nesting/`](http://blog.lynda.com/2012/08/27/css-pre-processors-part-two-mixins-and-nesting/)
 
+- LESS Mixins 的全面介绍：[`http://www.sitepoint.com/a-comprehensive-introduction-to-less-mixins/`](http://www.sitepoint.com/a-comprehensive-introduction-to-less-mixins/)
+- 如何充分利用 LESS 的潜力：[`http://net.tutsplus.com/tutorials/php/how-to-squeeze-the-most-out-of-less/`](http://net.tutsplus.com/tutorials/php/how-to-squeeze-the-most-out-of-less/)
+- Mixins 与嵌套：[`http://blog.lynda.com/2012/08/27/css-pre-processors-part-two-mixins-and-nesting/`](http://blog.lynda.com/2012/08/27/css-pre-processors-part-two-mixins-and-nesting/)

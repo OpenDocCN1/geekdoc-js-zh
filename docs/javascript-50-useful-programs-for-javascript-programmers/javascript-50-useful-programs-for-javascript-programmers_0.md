@@ -1,20 +1,14 @@
-# 
 
-JavaScript 程序员的 50 个实用程序
+# JavaScript 程序员的 50 个实用程序
 
-
-
-# 高级 JavaScript 50 个程序
-
-# 1. 网页加载倒计时
+## 1. 网页加载倒计时
 
 ![](img/00001.jpeg)
 
-## 源代码：
+### 源代码
 
 ```html
 <html xmlns="http://www.w3.org/1999/xhtml" >
-
 <head>
 <title>加载页面倒计时</title>
 <meta http-equiv="Content-Type"
@@ -34,30 +28,28 @@ function initTimer()
   var myTime = new Date();
 ```
 
-
-
-# 1. 计时器
+### 1. 计时器
 
 ```html
-         var currentTime = myTime.getTime(); 
+         var currentTime = myTime.getTime(); 
 
-         var diffTime = currentTime - countStart;
+         var diffTime = currentTime - countStart;
 
-         this.diffSeconds = diffTime/1000;      
+         this.diffSeconds = diffTime/1000;      
 
-         return(this.diffSeconds);            
+         return(this.diffSeconds);            
 
 }
 
-  function getSeconds()
+  function getSeconds()
 
 {
 
-         var mySeconds0 = initTimer();
+         var mySeconds0 = initTimer();
 
-         var mySeconds1 = ""+mySeconds0;
+         var mySeconds1 = ""+mySeconds0;
 
-         mySeconds1= 10 - eval(
+         mySeconds1= 10 - eval(
 
 mySeconds1.substring(0,mySeconds1.indexOf(".")))
 
@@ -73,9 +65,9 @@ window.setTimeout('getSeconds()',1000);
 
 </head>
 
-<body  onLoad="window.setTimeout('getSeconds()',1)">
+<body  onLoad="window.setTimeout('getSeconds()',1)">
 
-  center><br>
+  center><br>
 
 Load web page after 10 seconds:<br><br>
 
@@ -90,27 +82,27 @@ Load web page after 10 seconds:<br><br>
 </html>
 ```
 
-# 2. 确定要删除吗？
+## 2. 确定要删除吗？
 
 ![](img/00002.jpeg)
 
-## 源代码
+### 源代码
 
 ```html
 <html xmlns="http://www.w3.org/1999/xhtml" >
 <head>
-    <title>Confirm Delete</title>
-              <meta http-equiv="Content-Type"
-              content="text/html; charset=UTF-8" />
-    <script language="javascript">
-     function delOperation()
-    {
-       if(confirm("Are you sure to delete?"))
-          alert("Already deleted!");
-       else
-          alert("Cancel deleted!");
-    }
-    </script>
+    <title>Confirm Delete</title>
+              <meta http-equiv="Content-Type"
+              content="text/html; charset=UTF-8" />
+    <script language="javascript">
+     function delOperation()
+    {
+       if(confirm("Are you sure to delete?"))
+          alert("Already deleted!");
+       else
+          alert("Cancel deleted!");
+    }
+    </script>
 </head>
 <body>
 <center>
@@ -122,11 +114,11 @@ value="Delete" onClick="delOperation()" />
 </html>
 ```
 
-# 3. 滚动文字
+## 3. 滚动文字
 
 ![](img/00003.jpeg)
 
-## 源代码
+### 源代码
 
 ```html
 <html xmlns="http://www.w3.org/1999/xhtml" >
@@ -137,60 +129,60 @@ content="text/html; charset=UTF-8" />
 </head>
 <body>
 <div align="center">
-  <p>&nbsp;</p>
-  <p><span>The Text Scrolls Up Slowly
-    </span><br><br>
-  </p>
+  <p>&nbsp;</p>
+  <p><span>The Text Scrolls Up Slowly
+    </span><br><br>
+  </p>
 </div>
 <marquee direction=up scrollamount=1
 scrolldelay=100 onmouseover='this.stop()'
 onmouseout='this.start()' height=60>
 <div align="center">
-  <table>
-    <tr>
-      <td>
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</td>
-    </tr>
-    <tr>
-      <td>
-        BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB</td>
-    </tr>
-    <tr>
-      <td>
-      CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC</td>
-    </tr>
-    <tr>
-      <td>
-        DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD</td>
-    </tr>
-    <tr>
-      <td> EEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE</td>
-    </tr>
-    <tr>
-      <td>
-     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF</td>
-    </tr>
-        <td>      GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG</td>
-      </tr>
-    <tr>
-      <td>
-        HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH</td>
-    </tr>
-    <tr>
-      <td>
-      KKKKKKKKKKKKKKKKKKKKKKKKKKKKK</td>
-  </table>
+  <table>
+    <tr>
+      <td>
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</td>
+    </tr>
+    <tr>
+      <td>
+        BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB</td>
+    </tr>
+    <tr>
+      <td>
+      CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC</td>
+    </tr>
+    <tr>
+      <td>
+        DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD</td>
+    </tr>
+    <tr>
+      <td> EEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE</td>
+    </tr>
+    <tr>
+      <td>
+     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF</td>
+    </tr>
+        <td>      GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG</td>
+      </tr>
+    <tr>
+      <td>
+        HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH</td>
+    </tr>
+    <tr>
+      <td>
+      KKKKKKKKKKKKKKKKKKKKKKKKKKKKK</td>
+  </table>
 </div>
 </marquee>
 </body>
 </html>
 ```
 
-# 4. 统计字母数量
+## 4. 统计字母数量
 
 ![](img/00004.jpeg)
 
-## 源代码
+### 源代码
 
 ```html
 <html xmlns="http://www.w3.org/1999/xhtml" >
@@ -201,14 +193,14 @@ onmouseout='this.start()' height=60>
 <p align="center">Count how many leters<br>
 </p>
 <div align="center">
-  <script language="JavaScript">
+  <script language="JavaScript">
 function cal(str)
 {
-    re=/[a-z & A-Z]/g;   
-    if(re.test(str))       
-    return str.match(re).length
-    else
-    return 0
+    re=/[a-z & A-Z]/g;   
+    if(re.test(str))       
+    return str.match(re).length
+    else
+    return 0
 }
 </script>
 <input onBlur="alert(cal(this.value) )">
@@ -219,11 +211,11 @@ function cal(str)
 </html>
 ```
 
-# 5. 搜索引擎
+## 5. 搜索引擎
 
 ![](img/00005.jpeg)
 
-## 源代码
+### 源代码
 
 ```html
 <html xmlns="http://www.w3.org/1999/xhtml" >
@@ -248,25 +240,25 @@ document.myForm.SearchSelect.selectedIndex].submit();
 }
 </script>
 </p>
-    <p><span style="font-size: 12pt">Keyword:</span>
-        <input name="SeachText" type="text" size="21"
+    <p><span style="font-size: 12pt">Keyword:</span>
+        <input name="SeachText" type="text" size="21"
 style=" margin-left: 1px">
-    </p>
-    <p><br>
-        <span style="font-size: 12pt">Select Enginee:</span>
-        <select Name="SearchSelect" size="1" >
-          <option selected>Yahoo</option>
-          <option value="Google">Google</option>
-          <option value="Bing">Bing</option>
-        </select>
-      </p>
-    <p><br>
+    </p>
+    <p><br>
+        <span style="font-size: 12pt">Select Enginee:</span>
+        <select Name="SearchSelect" size="1" >
+          <option selected>Yahoo</option>
+          <option value="Google">Google</option>
+          <option value="Bing">Bing</option>
+        </select>
+      </p>
+    <p><br>
 <input type="button" value=" SEARCH "
 onClick="makeSearch()">
-        <script language="JavaScript">
+        <script language="JavaScript">
 formVariable=document.forms.length
-        </script>
-    </p>
+        </script>
+    </p>
 </center></div>
 </form>
 <form action="http://search.yahoo.com/bin/search"
@@ -283,16 +275,16 @@ method="get">
 </html>
 ```
 
-# 6. 选择标签
+## 6. 选择标签
 
 ![](img/00006.jpeg)
 
-## 源代码
+### 源代码
 
 ```html
 <html xmlns="http://www.w3.org/1999/xhtml" >
 <head>
-    <title>Select Tag</title>
+    <title>Select Tag</title>
 <meta http-equiv="Content-Type"
 content="text/html; charset=UTF-8" />
 <style>
@@ -394,11 +386,11 @@ thin white;border-right:solid thin white">&nbsp;</td>
 </html>
 ```
 
-# 7. 时间格式转换
+## 7. 时间格式转换
 
 ![](img/00007.jpeg)
 
-## 源代码
+### 源代码
 
 ```html
 <html xmlns="http://www.w3.org/1999/xhtml" >
@@ -409,9 +401,6 @@ charset=UTF-8" />
 <SCRIPT LANGUAGE="JavaScript">
 function timeFormat() {
 ```
-
-
-
 
 ```javascript
 if (document.myForm.showFormat[0].checked) {
@@ -456,6 +445,8 @@ function displayTime() {
     setTimeout("displayTime()",1000)
 }
 ```
+
+```html
 </script>
 </head>
 <BODY onLoad="displayTime()">
@@ -467,13 +458,14 @@ function displayTime() {
 </form>
 </center>
 </body>
-</html
+</html>
+```
 
-# 8. 统计输入的字数
+## 8. 统计输入的字数
 
 ![](img/00008.jpeg)
 
-## 源代码：
+### 源代码
 
 ```html
 <html xmlns="http://www.w3.org/1999/xhtml" >
@@ -495,14 +487,14 @@ function countWords(myContents)
 <h1><div id="displayNum"></div></h1>
 </center>
 </body>
-</html
+</html>
 ```
 
-# 9. 禁止复制图片
+## 9. 禁止复制图片
 
 ![](img/00009.jpeg)
 
-## 源代码：
+### 源代码
 
 ```html
 <html xmlns="http://www.w3.org/1999/xhtml" >
@@ -525,14 +517,14 @@ function countWords(myContents)
 <br><br>
 <div align="center"><img src='' width=200 height=150 border=1 alt='我的照片'></div>
 </body>
-</html
+</html>
 ```
 
-# 10. 检查密码强度
+## 10. 检查密码强度
 
 ![](img/00010.jpeg)
 
-## 源代码：
+### 源代码
 
 ```html
 <html>
@@ -594,14 +586,14 @@ return level
 }
 </script>
 </body>
-</html
+</html>
 ```
 
-# 11. 打开硬盘
+## 11. 打开硬盘
 
 ![](img/00011.jpeg)
 
-## 源代码：
+### 源代码
 
 ```html
 <html xmlns="http://www.w3.org/1999/xhtml" >
@@ -619,15 +611,16 @@ return level
 <input type="submit" value="E"></form>
 </center>
 </body>
-</html
+</html>
 ```
 
-# 12. 波浪文本
+## 12. 波浪文本
 
 ![](img/00012.jpeg)
+
 ![](img/00013.jpeg)
 
-## 源代码：
+### 源代码
 
 ```javascript
 <script language="JavaScript">
@@ -650,14 +643,14 @@ function makeWave(n) {
 <body onload=makeWave(0);><br>
 <div id="textDiv" align="center">
 </div>
-</body
+</body>
 ```
 
-# 13. 文字广告
+## 13. 文字广告
 
 ![](img/00014.jpeg)
 
-## 源代码：
+### 源代码
 
 ```html
 <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
@@ -680,14 +673,14 @@ setTimeout("textAd()",200);
     <input type="text" name="panel" value="" size="38">
   </div>
 </form>
-</body
+</body>
 ```
 
-# 14. 网络时钟
+## 14. 网络时钟
 
 ![](img/00015.jpeg)
 
-## 源代码：
+### 源代码
 
 ```html
 <div align="center"><br>
@@ -717,11 +710,11 @@ webClock();
 </script>
 ```
 
-# 15. 价格是多少？
+## 15. 价格是多少？
 
 ![](img/00016.jpeg)
 
-## 源代码：
+### 源代码
 
 ```html
 <html>
@@ -772,10 +765,6 @@ document.priceForm.total.value = '$'+ eval(sum);
 </html>
 ```
 
-
-
-
-
 ```html
 <input type="text" name="total" size=8 value='$0'
 onFocus="this.blur();">
@@ -787,11 +776,11 @@ onFocus="this.blur();">
 </html>
 ```
 
-# 16. 进度条
+## 16. 进度条
 
 ![](img/00017.jpeg)
 
-## 源代码
+### 源代码
 
 ```html
 <html>
@@ -827,13 +816,13 @@ window.location.href = "http://www.amazon.com";
 </html>
 ```
 
-# 17. 过滤不雅词汇
+## 17. 过滤不雅词汇
 
 ![](img/00018.jpeg)
 
 ![](img/00019.jpeg)
 
-## 源代码
+### 源代码
 
 ```html
 <html>
@@ -863,11 +852,11 @@ document.write(myText)
 </html>
 ```
 
-# 18. 禁止复制密码
+## 18. 禁止复制密码
 
 ![](img/00020.jpeg)
 
-## 源代码
+### 源代码
 
 ```html
 <html>
@@ -903,11 +892,11 @@ Password:
 </html>
 ```
 
-# 19. 世界时钟
+## 19. 世界时钟
 
 ![](img/00021.jpeg)
 
-## 源代码
+### 源代码
 
 ```html
 <html>
@@ -957,11 +946,11 @@ t++
 </html>
 ```
 
-# 20. 将代码加密为数字
+## 20. 将代码加密为数字
 
 ![](img/00022.jpeg)
 
-## 源代码
+### 源代码
 
 ```html
 <html>
@@ -1031,11 +1020,11 @@ form.output.value = "";
 </html>
 ```
 
-# 21. 禁止复制文本
+## 21. 禁止复制文本
 
 ![](img/00023.jpeg)
 
-## 源代码
+### 源代码
 
 ```html
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -1049,11 +1038,11 @@ You are not able to copy these texts!
 </html>
 ```
 
-# 22. 检查电子邮件格式
+## 22. 检查电子邮件格式
 
 ![](img/00024.jpeg)
 
-## 源代码
+### 源代码
 
 ```html
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
@@ -1103,13 +1092,13 @@ return false;
 </html>
 ```
 
-# 23. 仅提交一次
+## 23. 仅提交一次
 
 防止重复提交。
 
 ![](img/00025.jpeg)
 
-## 源代码
+### 源代码
 
 ```html
 <script type="text/JavaScript">
@@ -1147,20 +1136,13 @@ function MM_popupMsg(message) {
 </body>
 ```
 
-
-
-
-# 32. 禁用部分脚本
+## 32. 禁用部分脚本
 
 ![](img/00034.jpeg)
 
 （未提供源代码）
 
-
-
-
-
-# 禁用部分脚本
+### 禁用部分脚本
 
 ```html
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
@@ -1186,13 +1168,13 @@ function MM_popupMsg(message) {
 </html>
 ```
 
-# 33. 限制错误密码
+## 33. 限制错误密码
 
 用户名：Smith   密码：123
 
 ![](img/00035.jpeg)
 
-## 源代码
+### 源代码
 
 ```html
 <script language="JavaScript">
@@ -1233,11 +1215,11 @@ if((document.myForm.username.value == "Smith")&&(document.myForm.myPassword.valu
 </body>
 ```
 
-# 34. 文字处理
+## 34. 文字处理
 
 ![](img/00036.jpeg)
 
-## 源代码
+### 源代码
 
 ```html
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -1275,11 +1257,11 @@ onclick="document.getElementById('myHeading').style.color='green';" /> <br /></p
 </html>
 ```
 
-# 35. 按时间问候
+## 35. 按时间问候
 
 ![](img/00037.jpeg)
 
-## 源代码
+### 源代码
 
 ```html
 <html><head>
@@ -1317,11 +1299,11 @@ if (hr==23) {document.write("晚上 11 点！你累了！")}
 </script></body></html>
 ```
 
-# 36. 闪烁文字
+## 36. 闪烁文字
 
 ![](img/0038.jpeg)
 
-## 源代码
+### 源代码
 
 ```html
 <html>
@@ -1351,13 +1333,13 @@ setInterval("updateColor()",200);
 </html>
 ```
 
-# 37. 登录页面
+## 37. 登录页面
 
 用户名：Smith   密码：123
 
 ![](img/0039.jpeg)
 
-## 源代码
+### 源代码
 
 ```html
 <html><head>
@@ -1387,595 +1369,346 @@ else{  window.alert("抱歉，密码错误！")  }}
      <td><input type="text" name="username" value="" size=10>
   </td></tr>
   <tr><td>
-
-
-
-
-
 ```
+
+```html
 <font size=3 color=#993366><b>密码：</b></font></td>
-
-     <td><input type="password" name="passwrd" value="" size=10>
-
-  </td></tr>
-
-  <tr><td colspan=2 align=center>
-
+     <td><input type="password" name="passwrd" value="" size=10>
+  </td></tr>
+  <tr><td colspan=2 align=center>
 <input type="button" name="btn" value=" 登录 " onClick="checking();return false;">
-
-  </td></tr>
-
+  </td></tr>
 </table>
-
 </form>
-
 </center></body></html>
 ```
 
-# 38. 设计窗口大小
+## 38. 设计窗口大小
 
 ![](img/00040.jpeg)
 
-## :
+### 源代码
 
-```
+```html
 <html>
-
 <head>
-
 <title>设计窗口大小</title>
-
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
 </head>
-
 <body><br>
-
 <h3 align="center">自行设计窗口大小。</h3> <br>
-
 <script language=JavaScript>
-
 function designWindow() {
-
 window.open("http://www.google.com", '', 'toolbar=no, location=no, directories=no, menubar=no, scrollbars=no, resizable=no, width=' + document.windowSize.width.value + ',height=' + document.windowSize.height.value +'');
-
 }
-
 </script>
-
 <form name="windowSize">
-
 <div align="center">宽度：
-
 <input type="text" name="width" value=999 size=5 maxlength=3>
-
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 高度：
-
 <input type="text" name="height" value=777 size=5 maxlength=3><br><br>
-
 <input type="button" value="打开" onClick="designWindow()" >
-
 </div>
-
 </form>
-
 </body>
-
 </html>
 ```
 
-# 39. 查看源代码
+## 39. 查看源代码
 
 ![](img/00041.jpeg)
 
-## :
+### 源代码
 
-```
+```html
 <html>
-
 <head>
-
 <title>查看源代码</title>
-
 </head>
-
 <body>
-
 <br><br>
-
 <h4 align="center">请输入网站的 URL。 </h4>
-
 <script language=JavaScript>
-
 function view(){
-
 var sourceCodes=document.forms[0].URL.value
-
 window.location="view-source:"+sourceCodes;
-
 }
-
 </script>
-
 <form>
-
 <div align="center">
-
 <input type="text" name="URL" value="http://" size=40 >
-
 </div>
-
 </form>
-
 <form>
-
 <div align="center">
-
 <input type="button" value="查看源代码" onClick=view()>
-
 </div>
-
 </form>
-
 </body>
-
 </html>
 ```
 
-# 40. 检查数字输入
+## 40. 检查数字输入
 
 防止非数字输入。
 
 ![](img/00042.jpeg)
 
-## :
+### 源代码
 
-```
+```html
 <script language="javascript">
-
 function checkDigitals()
-
 {
-
 if(isNaN(myForm.num.value)){
-
-              alert("请输入数字!");
-
-              myForm.num.focus();
-
-              myForm.num.value=""
-
-               return (false);
-
+              alert("请输入数字!");
+              myForm.num.focus();
+              myForm.num.value=""
+               return (false);
 }
-
 else
-
 {
-
-              alert("输入正确!");
-
+              alert("输入正确!");
 }
-
 }
-
 </script>
-
 <body>
-
 <br>
-
 <h4>
-
 <div align="center">检查数字输入
-
 </div></h4>
-
 <form name=myForm>
-
-  <div align="center">
-
-     <input type=text name=num size=25>
-
-     <input type=button onClick="checkDigitals()" value= "检查数字">
-
-    </div>
-
+  <div align="center">
+     <input type=text name=num size=25>
+     <input type=button onClick="checkDigitals()" value= "检查数字">
+    </div>
 </form>
-
 </body>
 ```
 
-# 41. 检查空输入
+## 41. 检查空输入
 
 防止无输入。
 
 ![](img/00043.jpeg)
 
-## :
+### 源代码
 
-```
+```html
 <html>
-
 <head>
-
 <title>检查空输入</title>
-
 <script language="JavaScript">
-
 function checkEmpty(myForm)
-
 {
-
-if (myForm.phone.value == "")     
-
+if (myForm.phone.value == "")      
 {
-
 alert("请输入电话号码!");
-
 myForm.email.focus();
-
 return (false);
-
 }
-
 if (myForm.email.value == "")
-
 {
-
 alert("请输入邮箱地址!");
-
 myForm.message.focus();
-
 return (false);
-
 }
-
 if (myForm.message.value == "")
-
 {
-
 alert("请留言!");
-
 myForm.phone.focus();
-
 return (false);
-
 }
-
 }
-
 </script>
-
 </head>
-
 <body>
-
 <br>
-
 <center>
-
-  <p><strong>检查空输入</strong></p>
-
-  <br>
-
+  <p><strong>检查空输入</strong></p>
+  <br>
 </center>
-
 <form name="myForm" method="post" onSubmit="javascript:return checkEmpty(this);">
-
 <table width="36" border="0" cellspacing="1" cellpadding="1" align="center">
-
 <tr>
-
 <td>电话：
-
-    <input type=text name=phone size=30>
-
+    <input type=text name=phone size=30>
 </tr>
-
 <tr>
-
 <td>邮箱：
-
-    <input type="text" name=email size="30">
-
+    <input type="text" name=email size="30">
 </tr>
-
 <tr>
-
 <td>消息：<br>
-
-    <textarea name=message cols=37 rows=6></textarea>
-
+    <textarea name=message cols=37 rows=6></textarea>
 </tr>
-
 <tr>
-
 <td>
-
 <div align="right">
-
-    <input type="submit" name="pub" value="检查">
-
+    <input type="submit" name="pub" value="检查">
 </div>
-
 </td>
-
 </tr>
-
 </table>
-
 </form>
-
 </body>
 ```
 
-# 2. 图片上传
+## 42. 图片上传
 
 防止非图片上传
 
 ![](img/0004.jpeg)
 
-## :
+### 源代码
 
-```
+```html
 <html>
-
 <script language=JavaScript>
-
 function uploadPicture(){
-
-    myForm.myPicture.src=myForm.pic.value;
-
-          var checkFile;
-
-         checkFile=myForm.pic.value.substring(myForm.pic.value.lastIndexOf(".")+1,myForm.pic.length); 
-
-         checkFile=checkFile.toUpperCase();
-
-       switch(checkFile){
-
-            case "GIF":
-
-              alert("正在上传 GIF 图片，好的!");
-
-             break;
-
-            case "JPG":
-
-               alert("正在上传 JPG 图片，好的!");
-
-             break;
-
-            case "BMP":
-
-               alert("正在上传 BMP 图片，好的!");
-
-            break;
-
-           case "PNG":
-
-               alert("正在上传 PNG 图片，好的!");
-
-            break;
-
-           default:
-
-               alert("错误！只允许上传 gif, jpg, bmp, png 图片!")
-
-            break;
-
-          }}
-
+    myForm.myPicture.src=myForm.pic.value;
+          var checkFile;
+         checkFile=myForm.pic.value.substring(myForm.pic.value.lastIndexOf(".")+1,myForm.pic.length); 
+         checkFile=checkFile.toUpperCase();
+       switch(checkFile){
+            case "GIF":
+              alert("正在上传 GIF 图片，好的!");
+             break;
+            case "JPG":
+               alert("正在上传 JPG 图片，好的!");
+             break;
+            case "BMP":
+               alert("正在上传 BMP 图片，好的!");
+            break;
+           case "PNG":
+               alert("正在上传 PNG 图片，好的!");
+            break;
+           default:
+               alert("错误！只允许上传 gif, jpg, bmp, png 图片!")
+            break;
+          }}
 </script>
-
 <title>检查图片上传</title>
-
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
 <body>
-
 <br>
-
 <p align="center" >只允许上传 gif, jpg, bmp, png 图片! </p>
-
 <form name="myForm" id=myForm>
-
 <p align=center>
-
-    <input name=pic type="file">
-
+    <input name=pic type="file">
 </p>
-
-<p align="center>
-
-    <input type="button" value="上传" onClick="uploadPicture()">
-
+<p align="center">
+    <input type="button" value="上传" onClick="uploadPicture()">
 </p>
-
 <img name="myPicture">
-
 </form>
-
-</
->
-
->
-```
-
-# 43. 坐标
-
-![](img/0045.jpeg)
-
-## :
-
-```
-<html>
-
-<script language="JavaScript">
-
-if (navigator.appName == 'Netscape'){
-
-    document.captureEvents(Event);
-
-    document.onmousemove = mousePosition;
-
-}
-
-function mousePosition(e) {
-
-myForm.x.value = e.screenX;
-
-myForm.y.value = e.screenY;
-
-}
-
-</script>
-
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-
-<body onMousemove="cursorCoordinates()">
-
-<div align="center"><p>&nbsp;</p></div>
-
-<form name="myForm">
-
-  <div align="center">
-
-    X: <input type="text" name="x" size="3">
-
-    y: <input type="text" name="y" size="3">
-
-  </div>
-
-</form>
-
-</body></html>
-```
-
-# 44. 防止恶意输入
-
-![](img/0046.jpeg)
-
-## :
-
-```
-<html>
-
-<head>
-
-<title>防止恶意输入</title>
-
-<meta http-equiv="content-type" content="text/html; charset=utf-8">
-
-<script type="text/JavaScript">
-
-function digital(field, event)
-
-{
-
-  var key, keyChar;
-
-  if (window.event)  key = window.event.keyCode; 
-
-  else if (event)  key = event.which;
-
-  else� return true;
-
-if (key == null || key == 0 || key == 8 || key == 13 || key == 27)
-
-     return true;
-
-  keyChar =� String.fromCharCode(key);
-
-  if (/\d/.test(keyChar)) {           
-
-            window.status = "";
-
-            return true;
-
-  }
-
-  else {
-
-      window.status = "只允许数字输入!";
-
-     return false;
-
-   }
-
-}}
-
-</script>
-
-</head>
-
-<body>
-
-<br>
-
-<center>
-
-<h2>防止恶意输入 </h2>
-
-</center>
-
-<div align="center">
-
-  <p> 不允许任何字母或符号输入!  </p>
-
-</div>
-
-<form name="myForm" id="myForm" action="#" method="get">
-
-  <div align="center">只允许数字输入:
-
-  <input type="text" name="num" id="num"
-
-size="10" maxlength="10"
-
-      onkeypress="return digital(this, event);"
-
-title="防止恶意输入">
-
-  </div>
-
-</form>
-
 </body>
-
 </html>
 ```
 
-# 45. 打字效果
+## 43. 坐标
+
+![](img/0045.jpeg)
+
+### 源代码
+
+```html
+<html>
+<script language="JavaScript">
+if (navigator.appName == 'Netscape'){
+    document.captureEvents(Event);
+    document.onmousemove = mousePosition;
+}
+function mousePosition(e) {
+myForm.x.value = e.screenX;
+myForm.y.value = e.screenY;
+}
+</script>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<body onMousemove="cursorCoordinates()">
+<div align="center"><p>&nbsp;</p></div>
+<form name="myForm">
+  <div align="center">
+    X: <input type="text" name="x" size="3">
+    y: <input type="text" name="y" size="3">
+  </div>
+</form>
+</body></html>
+```
+
+## 44. 防止恶意输入
+
+![](img/0046.jpeg)
+
+### 源代码
+
+```html
+<html>
+<head>
+<title>防止恶意输入</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<script type="text/JavaScript">
+function digital(field, event)
+{
+  var key, keyChar;
+  if (window.event)  key = window.event.keyCode; 
+  else if (event)  key = event.which;
+  else  return true;
+if (key == null || key == 0 || key == 8 || key == 13 || key == 27)
+     return true;
+  keyChar =  String.fromCharCode(key);
+  if (/\d/.test(keyChar)) {           
+            window.status = "";
+            return true;
+  }
+  else {
+      window.status = "只允许数字输入!";
+     return false;
+   }
+}}
+</script>
+</head>
+<body>
+<br>
+<center>
+<h2>防止恶意输入 </h2>
+</center>
+<div align="center">
+  <p> 不允许任何字母或符号输入!  </p>
+</div>
+<form name="myForm" id="myForm" action="#" method="get">
+  <div align="center">只允许数字输入:
+  <input type="text" name="num" id="num"
+size="10" maxlength="10"
+      onkeypress="return digital(this, event);"
+title="防止恶意输入">
+  </div>
+</form>
+</body>
+</html>
+```
+
+## 45. 打字效果
 
 单词将逐字自动显示
 
 ![](img/0047.jpeg)
 
-## :
+### 源代码
 
-```
+```html
 <html>
-
 <head>
-
 <title>打字效果</title>
-
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-
 <script>
-
 var i = 0
-
 var displayWords= "Hi!" +
 ```
 
-
-
+```javascript
 "《8 小时学会 JavaScript》是一本非常好的书！" + "通过这本书你可以学到很多技能，如果你对编程感兴趣，你也可以学习《8 小时精通 jQuery》、《8 小时精通 AngularJS》，这可以帮助你成为一名优秀的程序员。但你需要花费许多时间来学习所有这些程序，以便你可以在工作中轻松地使用它们..."
 
-```javascript
 function marquee() {
     var wordSize= displayWords.length
     document.show.typingEffect.value= document.show.typingEffect.value + displayWords.charAt(i)
@@ -1988,11 +1721,11 @@ function marquee() {
 }
 ```
 
-# 46. 设置背景颜色
+## 46. 设置背景颜色
 
 ![](img/00048.jpeg)
 
-## 源代码：
+### 源代码
 
 ```html
 <html>
@@ -2014,7 +1747,7 @@ function marquee() {
     <p>&nbsp;</p>
     <p> Enter the background color you like.</p>
     <br>
-  div>
+  </div>
   <form>
     <div align="center">
       <input type="text" name="color">
@@ -2022,14 +1755,14 @@ function marquee() {
     </div>
   </form>
 </body>
-</</html>
+</html>
 ```
 
-# 47. 选择菜单
+## 47. 选择菜单
 
 ![](img/00049.jpeg)
 
-## 源代码：
+### 源代码
 
 ```html
 <html>
@@ -2059,16 +1792,16 @@ function marquee() {
     </form>
   </center>
 </body>
-</</html>
+</html>
 ```
 
-# 48. 文字向上滚动
+## 48. 文字向上滚动
 
 整个文本缓慢向上滑动
 
 ![](img/00050.jpeg)
 
-## 源代码：
+### 源代码
 
 ```html
 <html>
@@ -2115,16 +1848,16 @@ function marquee() {
     window.setTimeout("move()",1000);
   </script>
 </body>
-</</html>
+</html>
 ```
 
-# 49. 文字放大
+## 49. 文字放大
 
 鼠标悬停时文字放大 200%
 
 ![](img/00051.jpeg)
 
-## 源代码：
+### 源代码
 
 ```html
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 1.0 Transitional//EN" "http://www.w3.org/TR/html1/transitional.dtd">
@@ -2143,14 +1876,14 @@ function marquee() {
     Java in 8 Hours<br>
   </p>
 </body>
-</</html>
+</html>
 ```
 
-# 50. 五星评价
+## 50. 五星评价
 
 ![](img/0052.jpeg)
 
-## 源代码：
+### 源代码
 
 ```html
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -2183,70 +1916,80 @@ function marquee() {
     </tr>
   </table>
 </body>
-</</html>
+</html>
 ```
 
 # 附录
 
-# JavaScript 100 道测试与答案
+## JavaScript 100 道测试与答案
 
-## 100 道测试
+### 100 道测试
 
 **1.** 下面哪个标签用于 JavaScript？
+
 1. `<?……?>`
 2. `<JavaScript…>…..</JavaScript>`
 3. `<script Language=”JavaScript”>……`
 4. `<script type “text/JavaScript”>……</script>`
 
 **2.** 关于 JavaScript 注释，哪个正确？
+
 1. `//` 用于多行注释
 2. `/* */` 用于单行注释
 3. `//` 和 `/* */` 都可以用于单行或多行注释。
 4. `//` 用于单行注释，`/* */` 用于多行注释。
 
 **3.** 下面哪个是不正确的？
+
 1. `a += b` 意味着 `a = (a + b)`
 2. `a != b` 意味着 `a = (a ! b)`
 3. `a *= b` 意味着 `a = (a * b)`
 4. `a %= b` 意味着 `a = (a % b)`
 
 **4.** 下面哪个变量名是无效的？
+
 1. `10var`
 2. `varName`
 3. `my_var`
 4. `var10`
 
 **5.** 下面哪个运算符描述不正确？
+
 1. `+` 用于加法
 2. `–` 用于减法
 3. `*` 用于乘法
 4. `%` 用于除法
 
 **6.** 下面哪个命令不是显示文本的？
+
 A. `alert()`
 B. `document.write()`
 C. `console.writeline()`
 E. `document.getElementById().innerHTML`
 
 **7.** 下面哪个可以作为变量名？
+
 1. `nonVir`
 2. `var`
 3. `float`
 4. `try`
 
 **8.** 下面哪个数据类型描述不正确？
+
 A. `boolean` 返回 true 或 false。
 B. `integer` 是一个整数。
 C. `string` 是字符字符串中的字符。
 D. `number` 是整数或浮点数。
 
 **9.** 下面哪个转义序列描述不正确？
+
 A. `\b` 用于 `backslash`（反斜杠）。
 B. `\n` 用于 `newline`（换行）。
 C. `\r` 用于 `return`（回车）。
 D. `\t` 用于 `tap`（制表符）。
 
 **10.** 以下代码中哪一行是不正确的？
+
 ```javascript
 function firstFunction( ){
   var num = 100; // line 1
@@ -2257,40 +2000,36 @@ function secondFunction( ){line3
 }
 firstFunction();
 ```
+
 1. line1
 2. line2
 3. line3
 4. line4
 
 **11.** 下面哪个是正确的命令？
+
 1. `if ( ) { } else { }`
 2. `if ( ) then { } else { }`
 3. `if ( ) then { } then else { }`
 4. `if ( ) then { } if else { }`
 
 **12.** 下面哪个不是 JS 中的比较运算符？
+
 A. `==`
 B. `<=`
 
+### JavaScript 多选题
 
-
-
-
-# JavaScript 多选题
-
-## Question 13
+#### Question 13
 
 以下哪**不是** JS 中的逻辑运算符？
 
-A. $$
+A. `$$`
+B. `&&`
+C. `||`
+D. `!`
 
-B. &&
-
-C. ||
-
-D. !
-
-## Question 14
+#### Question 14
 
 以下代码中哪一行是不正确的？
 
@@ -2306,7 +2045,7 @@ alert ( num );   //  line 4
 3. `line3`
 4. `line4`
 
-## Question 15
+#### Question 15
 
 以下代码中哪一行是不正确的？
 
@@ -2322,7 +2061,7 @@ document.write( "Hello" + name );   // line4
 3. `line3`
 4. `line4`
 
-## Question 16
+#### Question 16
 
 以下代码的输出是什么？
 
@@ -2341,7 +2080,7 @@ default:  document.write("D");
 3. BC
 4. BCD
 
-## Question 17
+#### Question 17
 
 以下代码的输出是什么？
 
@@ -2351,14 +2090,11 @@ alert( teststring);
 ```
 
 A. true
-
 B. false
-
 C. 1
-
 D. -1
 
-## Question 18
+#### Question 18
 
 以下代码的结果是什么？
 
@@ -2376,7 +2112,7 @@ alert ( "x is: " + x + "   and y is: " + y);
 3. `x` 是 12 `y` 是 42
 4. `x` 是 13 `y` 是 43
 
-## Question 19
+#### Question 19
 
 以下代码的输出是什么？
 
@@ -2394,7 +2130,7 @@ alert ( "x is: " + x + "  and y is: " + y);
 3. `x` 是 11 `y` 是 41
 4. `x` 是 10 `y` 是 40
 
-## Question 20
+#### Question 20
 
 以下代码的输出是什么？
 
@@ -2411,7 +2147,7 @@ break;
 3. 1 2 3 4
 4. 1 2 3 4 5
 
-## Question 21
+#### Question 21
 
 以下代码的输出是什么？
 
@@ -2428,7 +2164,7 @@ document.write ( num + " " );
 3. 1 2 3 4 7
 4. 1 2 3 4 8
 
-## Question 22
+#### Question 22
 
 创建数组时哪项是正确的？
 
@@ -2437,7 +2173,7 @@ document.write ( num + " " );
 3. `var a = new Array [ “A”, “B”, “C” ];`
 4. `var a = new Array < “A”, “B”, “C” >;`
 
-## Question 23
+#### Question 23
 
 以下代码中哪一行是不正确的？
 
@@ -2454,7 +2190,7 @@ alert ( arraySize );  //line4
 3. `line3`
 4. `line4`
 
-## Question 24
+#### Question 24
 
 以下代码中哪一行是不正确的？
 
@@ -2470,7 +2206,7 @@ alert (a[3]);   // line 4
 3. `line3`
 4. `line4`
 
-## Question 25
+#### Question 25
 
 以下代码的输出是什么？
 
@@ -2487,7 +2223,7 @@ alert (a.join( " - " ));
 3. A - B - C
 4. “A”, “B”, “C”
 
-## Question 26
+#### Question 26
 
 以下哪个语句是正确的？
 
@@ -2498,43 +2234,43 @@ alert (a.join( " - " ));
 3. 返回从 m-1 到 n 的元素。
 4. 返回从 m 到 n-1 的元素。
 
-## Question 27
+#### Question 27
 
-如果 `getMonth( )` 返回 11，意味着什么？
+如果 `getMonth()` 返回 11，意味着什么？
 
 1. 九月
 2. 十月
 3. 十一月
 4. 十二月
 
-## Question 28
+#### Question 28
 
 要获取格林威治标准时间，请使用 ___。
 
-1. `toGMTString( )`
-2. `getUTCHours( )`
-3. `getTimeZoneOffset( )`
-4. `getTime( )`
+1. `toGMTString()`
+2. `getUTCHours()`
+3. `getTimeZoneOffset()`
+4. `getTime()`
 
-## Question 29
+#### Question 29
 
-“window.settimeout( “myFunction( )”,10000 )” 的意思是？
+`window.settimeout( “myFunction( )”,10000 )` 的意思是？
 
 1. 每 10000 秒调用一次 `myFunction`。
 2. 每 1000 秒调用一次 `myFunction`。
 3. 每 100 秒调用一次 `myFunction`。
 4. 每 10 秒调用一次 `myFunction`。
 
-## Question 30
+#### Question 30
 
 以下哪个函数是不正确的？
 
-1. `setDate( )`
-2. `setMonth( )`
-3. `setYear( )`
-4. `setHour( )`
+1. `setDate()`
+2. `setMonth()`
+3. `setYear()`
+4. `setHour()`
 
-## Question 31
+#### Question 31
 
 `3 > 5 && false` 返回？
 
@@ -2543,16 +2279,16 @@ alert (a.join( " - " ));
 3. 1
 4. -1
 
-## Question 32
+#### Question 32
 
 Math 方法的以下哪个描述是不正确的？
 
-1. `ceil( )` 返回一个大于等于参数的整数。
-2. `log( )` 返回数字的对数。
-3. `sqrt( )` 返回数字的平方根。
-4. `floor( )` 返回最接近的整数。
+1. `ceil()` 返回一个大于等于参数的整数。
+2. `log()` 返回数字的对数。
+3. `sqrt()` 返回数字的平方根。
+4. `floor()` 返回最接近的整数。
 
-## Question 33
+#### Question 33
 
 `math.ceil (7.5 )` & `math.floor (7.5)` 的结果是什么？
 
@@ -2561,7 +2297,7 @@ Math 方法的以下哪个描述是不正确的？
 3. 8 8
 4. 8 7
 
-## Question 34
+#### Question 34
 
 `math.ceil(-7.5)` & `math.floor ( -7.5)` 的结果是什么？
 
@@ -2570,7 +2306,7 @@ Math 方法的以下哪个描述是不正确的？
 3. -8 -8
 4. -8 -7
 
-## Question 35
+#### Question 35
 
 `math.round (7.5 )` & `math.round (-7.5)` 的结果是什么？
 
@@ -2579,7 +2315,7 @@ Math 方法的以下哪个描述是不正确的？
 3. 7 -8
 4. 7 -7
 
-## Question 36
+#### Question 36
 
 `math.max(-5, -4)` 和 `math.min(-5, -4)` 的结果是？
 
@@ -2588,7 +2324,7 @@ Math 方法的以下哪个描述是不正确的？
 3. -4 -5
 4. -4 -4
 
-## Question 37
+#### Question 37
 
 以下代码的输出是什么？
 
@@ -2605,7 +2341,7 @@ alert(str1.length);
 3. null
 4. error
 
-## Question 38
+#### Question 38
 
 以下代码的输出是什么？
 
@@ -2620,7 +2356,7 @@ alert( ch );
 3. S
 4. error
 
-## Question 39
+#### Question 39
 
 以下代码的输出是什么？
 
@@ -2635,7 +2371,7 @@ alert(sub);
 3. arp
 4. Script
 
-## Question 40
+#### Question 40
 
 以下代码的输出是什么？
 
@@ -2650,7 +2386,7 @@ alert( str );
 3. error
 4. 100200
 
-## Question 41
+#### Question 41
 
 以下代码中哪一行是不正确的？
 
@@ -2659,7 +2395,6 @@ var num = 100;   // line 1
 if ( NaN )==){ // line 2
 num++;   // line 3
 alert( num);   // line 4
-
 ```
 
 1. `line1`
@@ -2667,7 +2402,7 @@ alert( num);   // line 4
 3. `line3`
 4. `line4`
 
-## Question 42
+#### Question 42
 
 以下代码中哪一行是不正确的？
 
@@ -2683,7 +2418,7 @@ document.write ( myString.length( ));   // line 4
 3. `line3`
 4. `line4`
 
-## Question 43
+#### Question 43
 
 以下代码的输出是什么？
 
@@ -2699,7 +2434,7 @@ document.write( eval ( x*2 + y - z ));
 3. 300
 4. 400
 
-## Question 44
+#### Question 44
 
 以下代码中哪一行是不正确的？
 
@@ -2715,7 +2450,7 @@ document.write( myString );  // line 4
 3. `line3`
 4. `line4`
 
-## Question 45
+#### Question 45
 
 以下代码的输出是什么？
 
@@ -2730,7 +2465,7 @@ document.write( txt );
 3. 6
 4. 7
 
-## Question 46
+#### Question 46
 
 以下代码的输出是什么？
 
@@ -2745,16 +2480,16 @@ document.write( txt );
 3. !
 4. world!
 
-## Question 47
+#### Question 47
 
-如果 `getMonth( )` 返回 8，意味着 ___？
+如果 `getMonth()` 返回 8，意味着 ___？
 
 1. 返回 8 意味着八月。
 2. 返回 8 意味着九月。
 3. 返回 8 意味着十月。
 4. 返回 8 意味着十一月。
 
-## Question 48
+#### Question 48
 
 以下代码的输出是什么？
 
@@ -2769,7 +2504,7 @@ document.write( Math.pow ( x, y ));
 3. -8
 4. 16
 
-## Question 49
+#### Question 49
 
 以下代码的输出是什么？
 
@@ -2784,7 +2519,7 @@ document.write ( con );
 3. 0_1_2_3
 4. 0 1 2 3
 
-## Question 50
+#### Question 50
 
 以下代码中哪一行是不正确的？
 
@@ -2802,7 +2537,7 @@ document.write ( e );  // line 4
 3. `line3`
 4. `line4`
 
-## Question 51
+#### Question 51
 
 要判断浏览器是否支持 cookie，请使用 ___？
 
@@ -2811,16 +2546,16 @@ document.write ( e );  // line 4
 3. `Navigator.cookieUtilized`
 4. `Navigator.cookieAllowed`
 
-## Question 52
+#### Question 52
 
-在 HTML 文档中，哪个元素先出现，<script> 元素还是 <form> 元素？
+在 HTML 文档中，哪个元素先出现，`<script>` 元素还是 `<form>` 元素？
 
-1. <form> 元素在 <script> 元素之前。
-2. <script> 元素在 <form> 元素之前。
-3. <form> 元素在 <script> 元素内部。
-4. <script> 元素在 <form> 元素内部。
+1. `<form>` 元素在 `<script>` 元素之前。
+2. `<script>` 元素在 `<form>` 元素之前。
+3. `<form>` 元素在 `<script>` 元素内部。
+4. `<script>` 元素在 `<form>` 元素内部。
 
-## Question 53
+#### Question 53
 
 输出是什么？
 
@@ -2830,14 +2565,12 @@ b=++a-3;
 alert (b);
 ```
 
-输出是什么？
-
 1. 2
 2. 3
 3. 4
 4. 5
 
-## Question 54
+#### Question 54
 
 输出是什么？
 
@@ -2847,14 +2580,12 @@ b=a++-3;
 alert (b);
 ```
 
-输出是什么？
-
 1. 2
 2. 3
 3. 4
 4. 5
 
-## Question 55
+#### Question 55
 
 以下哪项不是常量数据类型？
 
@@ -2863,7 +2594,7 @@ alert (b);
 3. 字符串常量
 4. 双精度常量
 
-## Question 56
+#### Question 56
 
 JavaScript 通过 ___ 关键字声明变量？
 
@@ -2872,19 +2603,15 @@ JavaScript 通过 ___ 关键字声明变量？
 3. myVariable
 4. myVar
 
-## Question 57
+#### Question 57
 
 哪个运算符的优先级更高？
 
 （从高到低）
 
+### JavaScript 和 HTML 测验
 
-
-
-
-# JavaScript 和 HTML 测验
-
-## 运算符优先级
+#### 运算符优先级
 
 以下哪种是正确的运算符优先级？
 
@@ -2893,16 +2620,16 @@ JavaScript 通过 ___ 关键字声明变量？
 3. `&&` > `!` > `||`
 4. `&&` > `||` > `!`
 
-### 第 58 
+#### 第 58 题
 
-“break”和“continue”的区别是 __ 和 __ ？
+`break` 和 `continue` 的区别是 __ 和 __ ？
 
 1. 停止程序运行。继续程序运行。
 2. 继续程序运行。停止程序运行。
 3. 退出循环。进入下次循环。
 4. 进入下次循环。退出循环。
 
-### 第 59 
+#### 第 59 题
 
 在 JavaScript 中，使用 __ 关键字声明函数。
 
@@ -2911,7 +2638,7 @@ JavaScript 通过 ___ 关键字声明变量？
 3. `var`
 4. `function`
 
-### 第 60 
+#### 第 60 题
 
 在 HTML 文档中，哪个 JS 命令应该先出现：函数定义还是函数调用？
 
@@ -2920,7 +2647,7 @@ JavaScript 通过 ___ 关键字声明变量？
 3. 函数调用出现在函数定义内部。
 4. 它们的顺序并不重要。
 
-### 第 61 
+#### 第 61 题
 
 在 JavaScript 函数中，使用 __ 关键字可以将结果值返回给调用者。
 
@@ -2929,7 +2656,7 @@ JavaScript 通过 ___ 关键字声明变量？
 3. retrieve
 4. result
 
-### 第 62 
+#### 第 62 题
 
 在以下代码中，哪行是不正确的？
 
@@ -2943,9 +2670,9 @@ alert ("The color of car is yellow");  // line 4
 1. line 1
 2. line 2
 3. line 3
-4. line 4-line 4
+4. line 4
 
-### 第 63 
+#### 第 63 题
 
 在以下代码中，哪个答案是正确的？
 
@@ -2963,7 +2690,7 @@ alert (myCar.color + myCar.size);    // line 3
 3. line 3
 4. 以上全部正确。
 
-### 第 64 
+#### 第 64 题
 
 以下哪个命令可以显示浏览器名称？
 
@@ -2972,16 +2699,16 @@ alert (myCar.color + myCar.size);    // line 3
 3. `navigator.plugin`
 4. `navigator.appName`
 
-### 第 65 
+#### 第 65 题
 
 以下中哪个命令不是 JavaScript 命令？
 
-1. `window.history.reverse( )`
-2. `window.history.back( )`
-3. `window.history.forward( )`
+1. `window.history.reverse()`
+2. `window.history.back()`
+3. `window.history.forward()`
 4. `window.history.go( number )`
 
-### 第 66 
+#### 第 66 题
 
 以下哪个命令无法获取屏幕分辨率？
 
@@ -2990,16 +2717,16 @@ alert (myCar.color + myCar.size);    // line 3
 3. `window.screen.width`
 4. `window.screen.height`
 
-### 第 67 
+#### 第 67 题
 
 以下哪些命令是 JavaScript 命令？（多选题）
 
-1. `window.scrollBy( )`
-2. `window.moveBy( )`
-3. `window.scrollTo( )`
-4. `window.moveTo( )`
+1. `window.scrollBy()`
+2. `window.moveBy()`
+3. `window.scrollTo()`
+4. `window.moveTo()`
 
-### 第 68 
+#### 第 68 题
 
 在以下代码中，哪行是不正确的？
 
@@ -3015,7 +2742,7 @@ alert ( "Cancel button was clicked.");   // line 4
 3. line 3
 4. line 4
 
-### 第 69 
+#### 第 69 题
 
 在以下代码中，哪行是不正确的？
 
@@ -3032,7 +2759,7 @@ alert ( "There are two or more cars.");
 3. line 3
 4. line 4
 
-### 第 70 
+#### 第 70 题
 
 在以下代码中，哪行是不正确的？
 
@@ -3048,61 +2775,61 @@ win.document.write("This is a small window.");   // line 4
 3. line 3
 4. line 4
 
-### 第 71 
+#### 第 71 题
 
 以下哪个陈述是不正确的？
 
-1. `document.getElementById( )` 通过其 ID 定位元素。
-2. `document.getElementByTagName( )` 通过标签名定位元素。
-3. `document.getElementByClass( )` 通过类名定位元素。
+1. `document.getElementById()` 通过其 ID 定位元素。
+2. `document.getElementByTagName()` 通过标签名定位元素。
+3. `document.getElementByClass()` 通过类名定位元素。
 4. `document.getElementByVariable` 通过变量名定位元素。
 
-### 第 72 
+#### 第 72 题
 
 以下哪个陈述是不正确的？
 
 1. `window.document.domain` 包含 URL 的域名。
 2. `window.document.URL` 包含完整的 URL 地址。
 3. `window.document.referrer` 包含带有该链接的网页的 URL。
-4. `window.document.title` 包含浏览器的 标题。
+4. `window.document.title` 包含浏览器的标题。
 
-### 第 73 
+#### 第 73 题
 
 以下哪个陈述是不正确的？
 
-1. `window.document.createElement( )` 可以动态创建一个新的 HTML 元素。
-2. `window.document.createTextNode( )` 可以创建一个指定字符串的对象。
-3. `window.document.createID( )` 可以创建一个指定 ID 的元素。
+1. `window.document.createElement()` 可以动态创建一个新的 HTML 元素。
+2. `window.document.createTextNode()` 可以创建一个指定字符串的对象。
+3. `window.document.createID()` 可以创建一个指定 ID 的元素。
 4. `hasNodes` 可以测试元素是否具有子元素。
 
-### 第 74 
+#### 第 74 题
 
 以下哪个陈述是正确的？（多选题）
 
-1. `setAttribute( )` 可以为 HTML 元素添加属性。
-2. `getAttribute( )` 可以获取赋值给属性的值。
-3. `appendChild( )` 可以将 HTML 元素添加到文档。
-4. `removeChild( )` 可以删除文档中的 HTML 元素。
+1. `setAttribute()` 可以为 HTML 元素添加属性。
+2. `getAttribute()` 可以获取赋值给属性的值。
+3. `appendChild()` 可以将 HTML 元素添加到文档。
+4. `removeChild()` 可以删除文档中的 HTML 元素。
 
-### 第 75 
+#### 第 75 题
 
 点击按钮返回上一页，使用以下代码：
 
-1. `onclick = "history.withdraw( )"`
-2. `onclick = "history.backward( )"`
-3. `onclick = "history.previous( )"`
-4. `onclick = "history.back( )"`
+1. `onclick = "history.withdraw()"`
+2. `onclick = "history.backward()"`
+3. `onclick = "history.previous()"`
+4. `onclick = "history.back()"`
 
-### 第 76 
+#### 第 76 题
 
-当光标离开对象时，使用 alert( ) 命令：
+当光标离开对象时，使用 `alert()` 命令：
 
 1. `onUnload = alert("Is it?")`
 2. `onFocus = alert("Is it?")`
 3. `onMove = alert("Is it?")`
 4. `onBlur = alert("Is it?")`
 
-### 第 77 
+#### 第 77 题
 
 以下哪些属于按钮事件？（多选题）
 
@@ -3111,7 +2838,7 @@ win.document.write("This is a small window.");   // line 4
 3. `onScroll` 事件
 4. `onSubmit` 事件
 
-### 第 78 
+#### 第 78 题
 
 以下哪个不是鼠标事件？
 
@@ -3120,7 +2847,7 @@ win.document.write("This is a small window.");   // line 4
 3. `onDbClick` 事件
 4. `onSClick` 事件
 
-### 第 79 
+#### 第 79 题
 
 以下代码中哪行是不正确的？
 
@@ -3137,7 +2864,7 @@ alert ( "The page loaded");   // line 4
 3. line 3
 4. line 4
 
-### 第 80 
+#### 第 80 题
 
 以下代码中哪行是不正确的？
 
@@ -3156,7 +2883,7 @@ document.write(e);   // line 4
 3. line 3
 4. line 4
 
-### 第 81 
+#### 第 81 题
 
 测试一个数字是奇数还是偶数，最好使用 __ ？
 
@@ -3165,7 +2892,7 @@ document.write(e);   // line 4
 3. `if (num * 2 == 0)…`
 4. `if (num % 2 == 0)…`
 
-### 第 82 
+#### 第 82 题
 
 以下代码的输出是什么？
 
@@ -3187,7 +2914,7 @@ alert ( message );
 3. Please Click
 4. nothing
 
-### 第 83 
+#### 第 83 题
 
 以下代码中哪行是不正确的？
 
@@ -3207,7 +2934,7 @@ window.document.forms.f.t.style.font = "18pt";  // line 4
 3. line 3
 4. line 4
 
-### 第 84 
+#### 第 84 题
 
 以下代码的输出是什么？
 
@@ -3222,7 +2949,7 @@ document.write ( n );
 3. -1
 4. nothing
 
-### 第 85 
+#### 第 85 题
 
 检查邮箱格式是否错误，通常使用 __ 代码。（多选题）
 
@@ -3231,7 +2958,7 @@ document.write ( n );
 3. `email.value.indexOf(".") == -1;`
 4. `email.value.indexOf(".") == 0;`
 
-### 第 86 
+#### 第 86 题
 
 哪个属性返回浏览器状态栏中的文本？
 
@@ -3240,16 +2967,16 @@ document.write ( n );
 3. `window.top`
 4. `window.status`
 
-### 第 87 
+#### 第 87 题
 
 以下哪个方法属于 Math 对象？
 
-1. `atan( )`
-2. `indexOf( )`
-3. `getDay( )`
-4. `setSecond( )`
+1. `atan()`
+2. `indexOf()`
+3. `getDay()`
+4. `setSecond()`
 
-### 第 88 
+#### 第 88 题
 
 以下属性中哪个是不正确的？
 
@@ -3258,7 +2985,7 @@ document.write ( n );
 3. `location.ip` 返回 IP 地址。
 4. `location.host` 返回主机名和端口号。
 
-### 第 89 
+#### 第 89 题
 
 以下代码的输出是什么？
 
@@ -3276,37 +3003,31 @@ alert (sum);
 3. 637.5
 4. 318.75
 
-### 第 90 
+#### 第 90 题
 
 以下哪个陈述是正确的？
 
 `str.substring (var m, var n)`
 
-5. 返回从 m 到 n 的子字符串。
-6. 返回从 m-1 到 n-1 的子字符串。
-7. 返回从 m-1 到 n 的子字符串。
-8. 返回从 m 到 n-1 的子字符串。
+1. 返回从 m 到 n 的子字符串。
+2. 返回从 m-1 到 n-1 的子字符串。
+3. 返回从 m-1 到 n 的子字符串。
+4. 返回从 m 到 n-1 的子字符串。
 
-### 第 91 
+#### 第 91 题
 
 以下哪些是 Array 对象的正确方法？（多选题）
 
+### JavaScript 测验
 
+#### 数组方法
 
+1. `unshift()` 在数组开头添加一个元素。
+2. `push()` 在数组末尾添加一个元素。
+3. `shift()` 从数组开头删除一个元素。
+4. `pop()` 从数组末尾删除一个元素。
 
-
-# JavaScript 测验
-
-## 数组方法
-
-1. `unshift( )` 在数组开头添加一个元素。
-2. `push( )` 在数组末尾添加一个元素。
-3. `shift( )` 从数组开头删除一个元素。
-4. `pop( )` 从数组末尾删除一个元素。
-
-## 问题
-
-### 第 92 题
+#### 第 92 题
 
 以下代码的输出是什么？
 
@@ -3321,7 +3042,7 @@ document.write(today);
 3. 返回时区。
 4. 返回一个数字，表示当前时间与 1970 年 1 月 1 日之间的毫秒差。
 
-### 第 93 题
+#### 第 93 题
 
 下列哪个陈述是不正确的？
 
@@ -3330,7 +3051,7 @@ document.write(today);
 3. `screenX` / `screenY` 是事件发生时鼠标坐标到屏幕坐标的长度。
 4. `imageX` / `imageY` 是事件发生时鼠标坐标到图像坐标的长度。
 
-### 第 94 题
+#### 第 94 题
 
 在 DOM 中下列哪个陈述是正确的？
 
@@ -3339,7 +3060,7 @@ document.write(today);
 3. `Element` 和 `Node` 是完全不同的。
 4. DOM 中根本没有 `Element` 和 `Node`。
 
-### 第 95 题
+#### 第 95 题
 
 以下代码的输出是什么？
 
@@ -3353,7 +3074,7 @@ document.body.appendChild(myLine);
 3. 可改变大小的标题。
 4. 一个超链接。
 
-### 第 96 题
+#### 第 96 题
 
 以下代码的输出是什么？
 
@@ -3367,7 +3088,7 @@ document.body.appendChild(myText);
 3. `appenChild`
 4. Hello Dom!
 
-### 第 97 题
+#### 第 97 题
 
 以下代码的输出是什么？
 
@@ -3384,7 +3105,7 @@ s.setAttribute("align", "center");
 3. Hello Dom! ( 居中 )
 4. 什么都不显示。
 
-### 第 98 题
+#### 第 98 题
 
 以下代码的输出是什么？
 
@@ -3403,7 +3124,7 @@ document.write( attr );
 3. TagName
 4. Hello Dom!     center
 
-### 第 99 题
+#### 第 99 题
 
 以下代码的 alert 输出是什么？
 
@@ -3420,7 +3141,7 @@ alert ( child );
 3. true
 4. false
 
-### 第 100 题
+#### 第 100 题
 
 在 Ajax 中，当 `readyState` 为 4 时，意味着请求过程处于阶段是 ___？
 
@@ -3429,7 +3150,7 @@ alert ( child );
 3. 已接收数据
 4. 数据可用。
 
-### 第 101 题
+#### 第 101 题
 
 在 Ajax 中，当 `http status` 为 200 时，意味着请求结果是 ____？
 
@@ -3438,7 +3159,7 @@ alert ( child );
 3. 禁止访问
 4. 未找到。
 
-### 第 102 题
+#### 第 102 题
 
 关于 Ajax 下列哪个陈述正确？（多选题）
 
@@ -3447,7 +3168,7 @@ alert ( child );
 3. `onreadystatechange` 属性是一个状态事件。
 4. `responseText` 属性返回来自服务器的文本。
 
-## 答案
+### 答案
 
 | 题目 | 答案 | 题目 | 答案 |
 |---|---|---|---|
@@ -3521,4 +3242,3 @@ alert ( child );
 - [8 小时掌握 C#](https://www.amazon.com/Beginners-Simple-Programming-Language-Coding-ebook/dp/B01LTFQHFQ/ref=asap_bc?ie=UTF8#nav-subnav)
 - [JavaScript 50 个实用程序](https://www.amazon.com/JavaScript-50-Useful-Program-Programmers-ebook/dp/B01HOSXPWK?ie=UTF8&ref_=asap_bc)
 - [PHP 100 道测试、答案与解析](http://www.amazon.com/PHP-Tests-Beginner-Answers-Explanations-ebook/dp/B00U4Z5BHS/ref=sr_1_117?s=digital-text&ie=UTF8&qid=1425242078&sr=8-117&keywords=php)
-

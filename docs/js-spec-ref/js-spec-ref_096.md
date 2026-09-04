@@ -1,19 +1,5 @@
-# 12.5 如何做到 jQuery-free？
 
-*   概述
-*   选取 DOM 元素
-*   DOM 操作
-*   事件的监听
-*   事件的触发
-*   $(document).ready
-*   attr 方法
-*   addClass 方法
-*   CSS
-*   数据储存
-*   Ajax
-*   动画
-*   替代方案
-*   参考链接
+# 12.5 如何做到 jQuery-free？
 
 ## 概述
 
@@ -107,7 +93,7 @@ $(child).remove()
 child.parentNode.removeChild(child)
 ```
 
-清空子元素。
+清空子元�。
 
 ```js
 // jQuery 写法
@@ -197,7 +183,7 @@ NodeList.prototype.trigger = function (event) {
 
     []['forEach'].call(this, function (el) {
 
-        el'trigger';
+        el.trigger(event);
 
     });
 
@@ -280,7 +266,7 @@ $(node).css( "color", "red" );
 DOM 元素有一个 style 属性，可以直接操作。
 
 ```js
-element.style.color = "red”;;
+element.style.color = "red";
 
 // or
 
@@ -386,9 +372,15 @@ el.addEventListener("transitionend", transitionEnded);
 ## 参考链接
 
 *   Remy Sharp，[I know jQuery. Now what?](http://remysharp.com/2013/04/19/i-know-jquery-now-what/)
+
 *   Hemanth.HM，[Power of Vanilla JS](http://h3manth.com/new/blog/2013/power-of-vanilla-js/)
+
 *   Burke Holland, [5 Things You Should Stop Doing With jQuery](http://flippinawesome.org/2013/05/06/5-things-you-should-stop-doing-with-jquery/)
+
 *   Burke Holland, [Out-Growing jQuery](http://tech.pro/tutorial/1385/out-growing-jquery)
+
 *   Nicolas Bevacqua, [Uncovering the Native DOM API](http://flippinawesome.org/2013/06/17/uncovering-the-native-dom-api/)
+
 *   Pony Foo, [Getting Over jQuery](http://blog.ponyfoo.com/2013/07/09/getting-over-jquery)
+
 *   Hemanth.HM, [JavaScript vs Jquery+CoffeeScript](http://h3manth.com/notes/jq-cs.html)

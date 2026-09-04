@@ -1,14 +1,5 @@
+
 # JavaScript 实用指南
-
-
-
-
-
-
-
-
-
-![](img/36d099f98df3fc1ec6be478c5e81f7a6_0_0.png)
 
 # 读者对《JavaScript 实战指南》的评价
 
@@ -24,41 +15,28 @@
 
 - Stuart Langridge，kryogenix.org, @sil
 
-
-
-
-
-
-
-
-
 我们的实战课程、工作坊和其他产品可以帮助你和你的团队创建更好的软件并增加更多乐趣。欲了解更多信息以及实战系列书籍，请访问 http://www.pragmatic.com。
 
 制作本书的团队包括：
 
 - 编辑员：David McClintock
+
 - 索引：Potomac Indexing, LLC
+
 - 文字校对：Steve Wimpset
+
 - 布局：Steve Peter
+
 - 制作：Janet Furlow
+
 - 客户支持：Ellie Callahan
+
 - 国际事务：Juliet Benda
-
-
-
-
-
 
 - 任务 35. 地位置地理编码 92
 
-
-
 # 索引 133
 
-
-
-
-
 # 献辞
 
 献给 Élodie，我的妻子，我生命中的星光。
@@ -97,24 +75,6 @@ JavaScript 不仅仅是一门强大的动态语言，它现在还拥有由专业
 
 最后但同样重要的是，我永远感激我爱的妻子 Élodie。在过去的五年里，她忍受了四本书的创作，并且一直给予支持和爱。我是地球上最幸运的男人，我无法想象有更好的配偶。这本书，再次送给她。
 
-其实这本书并不是真的为了教你“JavaScript 语言”。首先，语言本身并不复杂，所以如果你有任何合理常见语言的编程经验——即使只是基础（变量、循环等）——你也能很容易找到方向。
-
-在追求技术准确性和书籍整体完善的过程中，许多人（其中我已经提到了一些）优雅地同意审阅这本书，以减少我出丑的机会。我确实幸运地获得了一份卓越的评审员名单！我向 Dion Almaer、Arnaud Berthomier、Aaron Gustafson、Christian Heilmann、Dylan Schiemann 和 Sam Stephenson 致以崇敬和谢意。
-
-这是我与 Pragmatic Programmers 合作的第二本书。Dave Thomas 和 Andy 再次向我敞开了虚拟大门，让我与他们出色的员工一起编写这个系列新书——《实战指南》（The Pragmatic Guides）。能与系列主编 Susanna Davidson Pfalzer、我的编辑 David McClintock（这是他首次在 Pragmatic 出版）、眼敏锐的 Kim Wimpsett（负责校对）、魔法般的 Sara Lynn Eastler（制作符合 Pragmatic 水平的索引）以及高干的 Steve Peter（他的排版让书籍非常漂亮）合作，非常令人兴奋。
-
-最后但同样重要的是，我永远感激我爱的妻子 Élodie。在过去的五年里，她忍受了四本书的创作，并且一直给予支持和爱。我是地球上最幸运的男人，我无法想象有更好的配偶。这本书，再次送给她。
-
-# 引言
-
-如果你在过去的几年里对 JavaScript 即使有最微小的关注，你也听过这种说法：它是“下一个大语言”。它曾是半吊子实现和无用滚动消息的领地，现在它已成为一种世界级的、动态面向对象的语言，在在端和服务器端都有极快的实现。
-
-一方面，JavaScript 的设计者正在通过 EcmaScript 5 (ES5) 规范赋予它新的、健康的动力。另一方面，强大的引擎（如 V8、JavaScriptCore、SpiderMonkey、Rhino 和 Karakan）以及新兴技术（带有 CommonJS 和 Node）让它既在浏览器中非常有用，也可以作为服务器上独立且强大的架构。即使是即将推出的 Internet Explorer 9 也在提升其 JavaScript 水平，并承诺带来巨大的飞跃。
-
-JavaScript 不仅仅是一门强大的动态语言，它现在还拥有由专业级开发工具、基础设施、框架和工具包组成的丰富生态系统。它是多能、快速的，非常适合各种编程任务，特别是对于基于 Web 的应用程序和服务而言。
-
-是时候深入学习了！
-
 # 这本书关于什么，以及它是给谁的？
 
 这本书并不是真的为了教你“JavaScript 语言”。首先，语言本身并不复杂，所以如果你有任何合理常见语言的编程经验——即使只是基础（变量、循环等）——你也能很容易找到方向。
@@ -125,61 +85,7 @@ JavaScript 不仅仅是一门强大的动态语言，它现在还拥有由专业
 
 最后但同样重要的是，我永远感激我爱的妻子 Élodie。在过去的五年里，她忍受了四本书的创作，并且一直给予支持和爱。我是地球上最幸运的男人，我无法想象有更好的配偶。这本书，再次送给她。
 
-[/content]
-
-*(注：由于用户提供的文本中存在大量重复段落，根据“一定不要重复输出原文”的原则，译文仅对唯一内容进行了翻译。)*
-
-译文如下：
-
-[content]
-# 献辞
-
-献给 Élodie，我的妻子，我生命中的星光。
-
-献给 Élodie，我的妻子，永远是我闪耀的星星。
-
-# 致谢
-
-写一本书绝非易事。技术类书籍不需要情节，也免去了作者面对空白页的痛苦，但它让作者面临来自同行的压力，以及保持技术准确性和传达最佳实践的责任。这就是为什么写一本书仍然是一项巨大的工程，也是为什么作者可以利用一切他们能获得的帮助。
-
-在本书书中，我首先要感谢我提到的和使用的框架中那些了不起的创造者。他们不仅为世界贡献了值得赞誉的工作，许多人还花时间审阅了这本书，确保我没有在无意中损害他们的心血结晶。我要向 Sam Stephenson、Thomas Fuchs、John Resig、Alex Russell、Jack Slocum 以及大量核心开发者和贡献者表示诚挚的感谢，我没有足够的空间在这里列出他们的名字。我更对 Prototype Core 团队的成员感激。他们是一群乐于助人、高技能的人，我从他们那里学到了很多，特别是 Andrew Dupont、Tobie Lang 和 Jurij Zaytsev。
-
-在追求技术准确性和书籍整体完善的过程中，许多人（其中我已经提到了一些）优雅地同意审阅这本书，以减少我出丑的机会。我确实幸运地获得了一份卓越的评审员名单！我向 Dion Almaer、Arnaud Berthomier、Aaron Gustafson、Christian Heilmann、Dylan Schiemann 和 Sam Stephenson 致以崇敬和谢意。
-
-这是我与 Pragmatic Programmers 合作的第二本书。Dave Thomas 和 Andy 再次向我敞开了虚拟大门，让我与他们出色的员工一起编写这个系列新书——《实战指南》（The Pragmatic Guides）。能与系列主编 Susanna Davidson Pfalzer、我的编辑 David McClintock（这是他首次在 Pragmatic 出版）、眼敏锐的 Kim Wimpsett（负责校对）、魔法般的 Sara Lynn Eastler（制作符合 Pragmatic 水平的索引）以及高干的 Steve Peter（他的排版让书籍非常漂亮）合作，非常令人兴奋。
-
-最后但同样重要的是，我永远感激我爱的妻子 Élodie。在过去的五年里，她忍受了四本书的创作，并且一直给予支持和爱。我是地球上最幸运的男人，我无法想象有更好的配偶。这本书，再次送给她。
-
-# 引言
-
-如果你在过去的几年里对 JavaScript 即使有最微小的关注，你也听过这种说法：它是“下一个大语言”。它曾是半吊子实现和无用滚动消息的领地，现在它已成为一种世界级的、动态面向对象的语言，在客户端和服务器端都有极快的实现。
-
-一方面，JavaScript 的设计者正在通过 EcmaScript 5 (ES5) 规范赋予它新的、健康的动力。另一方面，强大的引擎（如 V8、JavaScriptCore、SpiderMonkey、Rhino 和 Karakan）以及新兴技术（带有 CommonJS 和 Node）让它既在浏览器中非常有用，也可以作为服务器上独立且强大的架构。即使是即将推出的 Internet Explorer 9 也在提升其 JavaScript 水平，并承诺带来巨大的飞跃。
-
-JavaScript 不仅仅是一门强大的动态语言，它现在还拥有由专业级开发工具、基础设施、框架和工具包组成的丰富生态系统。它是多能、快速的，非常适合各种编程任务，特别是对于基于 Web 的应用程序和服务而言。
-
-是时候深入学习了！
-
-# 这本书关于什么，以及它是给谁的？
-
-这本书并不是真的为了教你“JavaScript 语言”。首先，语言本身并不复杂，所以如果你有任何合理常见语言的编程经验——即使只是基础（变量、循环等）——你也能很容易找到方向。
-
-在追求技术准确性和书籍整体完善的过程中，许多人（其中我已经提到了一些）优雅地同意审阅这本书，以减少我出丑的机会。我确实幸运地获得了一份卓越的评审员名单！我向 Dion-Almaer、Arnaud Berthomier、Aaron Gustafson、Christian Heilmann、Dylan Schiemann 和 Sam Stephenson 致以崇敬和谢意。
-
-
-
-
--   第六部分是最后一部分，通过与第三方服务交互，秉着最好的“混搭（mashup）”精神进一步推进了这一理念。我在这里选择了三个热门话题：玩转 Twitter、Flickr 以及地理相关的 API。
-
--   附录 A 是我对 JavaScript 备查表的看法；我尝试压缩该语言的参考和重要提示，并省略了一些我认为多余的语言元素。我希望你会发现它很有用。
-
--   附录 B 关于 JavaScript 调试；你对自己的有义务了解其内部的一切，哪怕仅仅是为了省下无数小时抓耳挠腮的时间，特别是在涉及到 Internet Explorer 时。
-
--   附录 C 尝试对我选择在书中介绍的主要框架提供实用的描述。我尽力地对所有这些框架提供准确的描绘，将它们呈现出最好的一面，并根据具体情况为你提供一些关于如何选择框架的建议。
-
--   附录 D 作为一个关于 JavaScript 本身及主要框架的最有用资源的快速参考；它总结了附录 C 的相关部分，以及许多额外的资源（大多与语言相关）。我把它放在书的末尾，方便查找。
-
-## 如何阅读本书
+# 如何阅读本书
 
 在《实战指南（Pragmatic Guide）》系列中，每章由两个跨页组成——一页文本，另一页代码。如果你读的是纸质版，这种排版非常自然。但如果你读的是电子版，你可能希望将阅读器设置为同时显示两个页面，即并排或“双页（two-up）”模式，前提你的屏幕足够大。这将带给你最佳体验。
 
@@ -190,12 +96,15 @@ JavaScript 不仅仅是一门强大的动态语言，它现在还拥有由专业
 是时候开始了。这部分作为一个热身，包含了几个关于原生 JavaScript 的基本知识。后续任务中的代码示例不依赖于任何框架或库。
 
 -   在任务 1 “动态选择方法/属性”中，你将学习如何动态访问对象的属性和方法（一旦你的代码决定了它们的名称是什么）。
+
 -   在任务 2 “使用模块模式实现代码私有”中，你将发现如何将代码内部封装在私有作用域中，以避免“污染”其他代码并保持你的内容自成一体。
+
 -   最后，通过任务 3 “使用可选、变量和命名参数”，你将能够创建可以使用各种参数调用的函数。
 
 记住，你可以在本书的在线页面获取完整的源代码存档。⁷ 你也可以直接在演示站点访问它们。⁸ 最后，不要忘记，一个简单的空白网页（稍后加载你需要的任何库或框架），打开 JavaScript 控制台，就是交互式测试这些内容所需的所有。
 
 7 http://prag.com/titles/pg_js
+
 8. http://demos.pocketjavascript.com
 
 ## 动态选择方法/属性
@@ -216,7 +125,7 @@ JavaScript 提供了一种简单的语法来动态选择方法和属性，都依
 obj[expressionResultingInMemberName] === obj.memberName
 ```
 
-如果你使用整数索引从数组单元格中提取了一个值，那么你已经使用了方括号运算符进行动态成员选择了！这是因为数组对象具有以数字索引命名的属性（加上 length 属性）。然而，在这种情况下， JavaScript 不允许你使用点运算符 (.) 进行直接访问，`myArray.0` 是无效语法（遗憾，这本该是一个很酷的极客技巧）。
+如果你使用整数索引从数组单元中提取了一个值，那么你已经使用了方括号运算符进行动态成员选择了！这是因为数组对象具有以数字索引命名的属性（加上 length 属性）。然而，在这种情况下， JavaScript 不允许你使用点运算符 (.) 进行直接访问，`myArray.0` 是无效语法（遗憾，这本该是一个很酷的极客技巧）。
 
 这就是为什么使用方括号运算符 ([]) 比点符号法更强大的原因：你可以在括号之间放置任何内容来获取你想要访问的成员（属性或方法）的名称。常见情况包括字面量、持有成员的变量、名称组合表达式（主要是字符串拼接）以及快速的 if/then 三元运算符（`condition ? valueTrue : valueFalse`）。它们将首先被转换为字符串，然后查找你想要使用的成员。
 
@@ -270,10 +179,6 @@ alert(love[useFirstName ? 'firstName' : 'lastName']); // "Élodie"
 在 JavaScript 中，标识符第一次使用 var 关键字时是局部的（它们属于定义的函数）。没有使用 var 的标识符是全局的（它们被挂载到当前默认作用域上，大多数情况下这意味着全局窗口对象）。
 
 在某些特定情况下，当前默认作用域实际上不是全局的，因此有方法可以在非 var 标识符泄露到全局命名空间的情况下执行代码——但这出了本任务的范围。
-
-
-
-
 
 -   在匿名函数内部变量。
 
@@ -358,6 +263,7 @@ function repeat(rant, times) {
 ## 获取参数（任意数量）。
 
 内置的 `arguments` 局部变量允许你动态访问它们。
+
 它让你能够模拟变长参数列表（varargs）。
 
 ```javascript
@@ -436,11 +342,7 @@ DOM 操作主要分为以下几类：
 
 在页面上获取元素和“遍历” DOM（从一个元素移动到另一个）是任何网页脚本的两个基石。虽然获取部分在最新的浏览器中得到了很好的解决——尽管花了十多年——但没有库支持的 DOM 遍历仍然极其混乱。这就是全部原因。
 
-首先，警告一下所有依赖 `document.getElementById` 的代码都会受到 IE 怪癖的影响。它还会查找任何所有的 `name=` 属性。现在，如果你使用严格的 DOYPE（你应该这样做），这意味着你排除了 `<head>` 及其 `<meta>` 标签的 `name` 属性。所以，当你定义一个带有 `id=` 描述或关键词的元素并尝试获取它时会发生什么？你得到的是 `<meta>` 元素而不是预期的目标！所以，请避免这些 `id=` 值。
-
-
-
-
+首先，警告一下所有依赖 `document.getElementById` 的代码都会受到 IE 怪癖的影响。它还会查找任何所有的 `name=` 属性。现在，如果你使用严格的 DOYPE（你应该这样做），这意味着你排除了 `<head>` 及其 `<meta>` 标筓的 `name` 属性。所以，当你定义一个带有 `id=` 描述或关键词的元素并尝试获取它时会发生什么？你得到的是 `<meta>` 元素而不是预期的目标！所以，请避免这些 `id=` 值。
 
 ## 通过 ID 获取元素。
 
@@ -492,7 +394,7 @@ $$('a.sifr').invoke('up').invoke('setStyle', '-9999px');
 
 手动调整样式对于开发视觉效果很有用，但这种工作最好留给库作者和 JavaScript 忍者。我相信你，作为前端开发者，应该将特定样式与 JavaScript 代码清晰分离，并仅通过切换 CSS 类名来处理自己的功能以及所选库提供的内置效果。
 
-事实上，所有库都提供了统一的 API 来添加、删除和检查元素上的 CSS 类名。MooTools、jQuery、YUI、Dojo 和 Ext 使用 `addClass()`、`hasClass()`、`removeClass()` 和 `toggleClass()`。Prototype 则在这些方法后加上 Name 后缀（即 `hasClassName()`）。
+事实上，所有库都提供了统一的 API 来添加、删除和检查元素上的 CSS 类名。MooTools、jQuery、YUI、Dojo 和 Ext 使用 `addClass()`、`hasClass()`、`removeClass()`、`toggleClass()`。Prototype 则在这些方法后加上 Name 后缀（即 `hasClassName()`）。
 
 但不要忘记快捷方法！
 
@@ -548,6 +450,7 @@ Ext.get(element).getStyles('prop', 'prop2', 'prop3')
 ## 更改元素的内容
 
 可能会问，为什么不直接使用 `innerHTML` 来更改元素的内容？
+
 人们往往倾向于直接将所需的标记 赋值给容器元素的 `innerHTML` 属性。事实上，这比其他方法快几个数量级。然而，在许多浏览器上，`innerHTML` 在处理某些标记片段时会崩溃。必要时，库会切换到其他机制（例如手动构建 DOM 或对标记预处理）。当处理内容注入而非完全替换时——或者标记包含内联脚本时（正如后文几段讨论的）——使用库证明比手动调整标记更简单、更简洁且不易出错。
 
 ## 更新元素的全部内容。
@@ -595,10 +498,6 @@ dojo.place('<p>This gets where told</p>', element, pos)
 Ext.get(element).insertHtml(pos, '<p>This gets where told</p>')
 ```
 
-
-
-
-
 ## 当 DOM 加载时运行代码
 
 能够在页面 DOM 加载后立即运行代码，是让页面从一开始就具有响应能力的关键部分。
@@ -609,7 +508,7 @@ Ext.get(element).insertHtml(pos, '<p>This gets where told</p>')
 
 顺便说一下，你应该遵循良好的实践来编写页面样式：如果 UI 的部分依赖于 JavaScript，则非 JavaScript 的替代方案默认可见，而与 JavaScript 相关的 UI 是隐藏的。那么在 DOM 加载事件中，你只需要为文档的 `body` 添加一个与 JavaScript 相关的类，并让 CSS 相应地切换可见性。这比通过 JavaScript 隐藏无关的 UI 要得多，因为避免了页面加载期间 UI 闪烁的风险。
 
-现在说一个相当技术性的说明：假设你的初始化代码位于某处的实例方法中，并且该方法需要保留其绑定。它在内部使用 `this`，并需要它指向正确的包含实例。大多数库允许你通过普通的方法绑定来解决（例如使用 Prototype 的 `bind()`），而 Dojo 和 Ext JS 则通过允许你提供方法的实例的显式引用，从一开始就解决了这个问题。这样，它们就可以直接在正确的上下文中调用该方法：
+现在说一个相当技术性的说明：假设你的初始化代码位于某处的实例方法中，并且该方法需要保留其绑定。它在内部使用 `this`，并需要它指向正确的包含实例。大多数库允你通过普通的方法绑定来解决（例如使用 Prototype 的 `bind()`），而 Dojo 和 Ext JS 则通过允许你提供方法的实例的显式引用，从一开始就解决了这个问题。这样，它们就可以直接在正确的上下文中调用该方法：
 
 ```javascript
 // Dojo
@@ -648,7 +547,7 @@ Ext.onReady(fx)
 
 特别需要注意的是，许多库都有监听特定事件的简写方法。因此，你可以调用 `click(handlerFx)` 而不是 `connect('click', handlerFx)`。另一个实用的技巧是，大多数库允许你在观察停止（stopping）时传递更少的参数，从而注销匹配该更广泛范围的所有事件（例如，所有的点击处理程序或该元素的所有处理程序）。
 
-值得注意的是：Dojo 使用单一机制来连接任何类型的事件（普通 DOM 事件、自定义事件、所谓的全局事件、发布-订阅机制、以及基础的*方法调用*）到任何类型函数的触发上（真正的事件处理程序、普通函数和方法）。这非常巧妙。而 Ext 允许 `on()` 接受第四个参数，这提供了丰富的选项。
+值得注意的是：Dojo 使用单一机制来连接任何类型的事件（普通 DOM 事件、自定事件、所谓的全局事件、发布-订阅机制、以及基础的*方法调用*）到任何类型函数的触发上（真正的事件处理程序、普通函数和方法）。这非常巧妙。而 Ext 允许 `on()` 接受第四个参数，这提供了丰富的选项。
 
 如果你在文档级别观察事件（利用事件冒泡），所有的库都提供了一种简单的方法。例如，Prototype 允许你调用 `document.observe`，还有像 `dojo.doc` 和 `Ext.get` 这样的封装器。然而，你不应该依赖与*事件捕获*（自上而下的事件传播/拦截）相关的参数和选项，因为它们在 IE8 上通常没有良好的支持。
 
@@ -714,7 +613,9 @@ Ext.get(element).un('event', handlerFx)
 ## 相关任务
 
 - 任务 7，当 DOM 加载时运行代码，第 20 页
+
 - 任务 9，利用事件委托，在下一页
+
 - 任务 10，通过自定义事件解耦行为，第 26 页
 
 ## 利用事件委托
@@ -728,10 +629,6 @@ Ext.get(element).un('event', handlerFx)
 然而，有时我们不得不诉诸黑科技或完全放弃委托，因为我们的触发事件不冒泡。这确实令人沮丧。虽然存在变通代码来模拟部分冒泡，但它们无法冒泡仍然是一个麻烦。
 
 我应该提到，自从 jQuery 1.4 以来，`live()` 才变得足够灵活可以进行事件委托，而没有性能问题。从那个版本开始，它还获得了处理许多非冒泡事件的能力。相比之下，Dojo 的 `behavior()` 看起来会使用事件委托，但它并不是。它只是语法糖。
-
-
-
-
 
 ## 切换项目内容。
 
@@ -790,7 +687,7 @@ Ext.get('items').on('click', handlerFx, this, { delegate: 'a.toggler' });
 
 这大部分与组件之间如何相互作用有关。例如，某些后台聊天轮询会通知聊天组件有新消息，或者照片查看器及其缩放预加载功能会在图片轮播中的某个图片被点击时同时收到通知。
 
-这就是自定义事件的用处。关于自定义事件的行为，有几个方面会根据你使用的框架而异：
+这就是自定义事件的用处。关于自定事件的行为，有几个方面会根据你使用的框架而异：
 
 - **类 DOM 行为：** 你在 DOM 节点（包括文档）上监听并触发自定义事件。它们会冒泡、被停止等。这是 Prototype、jQuery 和 MooTools 的所作。当事件不传播时，它们必须在监听它们的对象上触发。
 
@@ -853,7 +750,9 @@ dojo.publish('event', [arg])
 这种技术对于遍历大型数据集非常棒，但对于要求平滑过渡的行为（如视觉效果）非常糟糕，因为计时器的波动很大（25-500 毫秒）。在这种情况下，你应该使用单间隔定时器并依靠时间差进行测量。
 
 JavaScript 本质上是单线程的。
+
 - `setTimeout` 按间隔调度。
+
 - `clearTimeout()` 和清理从 `setTimeout` 获取的句柄不是强制的，但都是良好的习惯，可以减少内存泄漏且没有性能开销。
 
 11. 关于此技术的真实示例，请查看...
@@ -898,10 +797,6 @@ function toggleProcessing() {
   }
 }
 ```
-
-
-
-
 
 ## 第三部分
 
@@ -1005,9 +900,13 @@ document.observe('dom:ready', function () {
 实践的核心在于：链接到目标，然后使用 JavaScript 来连接它们。如果你添加弹出窗口或灯箱，请使用良好的现有库，免受跨浏览器问题和定位算法的痛苦。这里是一些建议：
 
 - Scripty2 的 UI 部分¹⁴ http://github.com/madrobby/scripty2
+
 - jQuery UI¹⁵ http://jqueryui.com/
+
 - Dojo（基于 Dojo）¹⁶ http://ojotkit.com/projects/dijit
+
 - YUI 的 Overlay ⁷ http://developer.yahoo.com/yui/3/overlay/
+
 - Ext.Window⁸ http://www.extjs.com/dev/docs/
 
 记住，内容可能适用于点击触发的富文本工具提示，而不是弹出窗口。在这种情况下，请查看工具提示库。
@@ -1037,10 +936,6 @@ function hookPopupLink(e) {
 document.observe('click', hookPopupLink);
 ```
 
-
-
-
-
 ## 预加载图像
 
 当你的页面使用用户交互来改变显示的图像时（例如提供缩放、特写、正/反面视图等），你你不希望用户看到转瞬即的空白屏幕，因为图像突然需要一点时间来加载。你可能想要预加载这些图像。
@@ -1048,7 +943,9 @@ document.observe('click', hookPopupLink);
 从本质上，预加载图像只有三种方法：
 
 - *使用 JavaScript，使用具有适当 `src` 属性的动态创建 `Image` 对象：这样做¹可以让你检测预加载的图像是否确实已加载。*
+
 - *使用 CSS 隐藏预加载的图像：这归结底就是使用隐藏的 `<img>` 标签来预加载图像。你可以隐藏 `<img>` 标签或一个公共容器（我更倾向于后者）。*
+
 - *使用 CSS 贴图（sprites）：当你想要预加载如悬停效果或一系列相关图像（例如背景、边框和角）时，这绝对应该是你的首选方法。¹*
 
 CSS 方法非常简单，但它提供的控制能力没有 JavaScript 方法那么大。对应页面上的标记和脚本假设，带有 `re="preloadZoom"` 属性的图像标签有一个具有相同 URI（带有 `_closeup` 后缀）的特写版本已预加载，用于悬停特写。
@@ -1060,6 +957,7 @@ CSS 方法非常简单，但它提供的控制能力没有 JavaScript 方法那�
 关于快速加载图像的更多硬核技术，请查看 Steve Souders 2009 年 5 月的演讲：*让图像加载更快的 14 条规则。*²⁰
 
 > ¹⁹. 查看具有开创性的 http://www.alistpart.com/articles/sprites 和较较的 http://css-tricks.com/css-sprites/。Steve Souders 还维护着 SpriteMe 工具：http://spriteme.org/
+
 > ²⁰. http://stevesouders.com/docs/wordcamp-200905030
 
 ## 预加载标签。
@@ -1192,10 +1090,6 @@ observe('mouseout', togglePreloaded);
 
 *(注：由于提供的文本存在大量重复和 OCR 错误，以上翻译已根据要求提取核心逻辑并并输出。)*
 
-
-
-
-
 ## 检查是否滚动得足够低。
 
 ```javascript
@@ -1214,6 +1108,8 @@ function lowEnough() {
 ```
 
 ## 监控滚动位置并获取更多内容。
+
+
 
 ```javascript
 function checkScroll() {
@@ -1257,9 +1153,13 @@ ui/viewport/index.html
 ```
 
 <h3>评论 5</h3>
+
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+
 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+
 minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+
 aliquip ex ea commodo commodo consequat.</p>
 
 ## 在 Ajax 之前获取滚动位置，在 Ajax 之后调整。
@@ -1290,11 +1190,17 @@ function loadKnownComments(e) {
 实用表单背的核心思想是：不要浪费用户的时间。
 
 - 避免重复提交，请使用任务 18：*临时禁用提交按钮*。
+
 - 让他们知道他们还可以输入多少文本，感谢任务 19：*提供输入长度反馈*。
+
 - 允许他们随时切换选项，如任务 20 所示：*一次性勾选/取消勾选一组复选框*。
+
 - 尽可能立即验证他们的输入，参考任务 21：*表单验证：基础*；任务 22：*表单验证：进阶*以及任务 23：*表单验证：全面指南*。难道你不喜欢事后发现用户名已被占用或密码不符合安全要求吗？
+
 - 为特定字段提供额外帮助，如任务 24 所示：*提供实时帮助*。
+
 - 建议替代输入或补全：任务 25：*随输入自动补全*。
+
 - 让他们一次性上传多个文件：任务 26：*动态文件上传*。
 
 这些只是为了让表单体验更加愉悦的一些示例。
@@ -1318,10 +1224,6 @@ function loadKnownComments(e) {
 还要注意我们 JavaScript 代码中的那个闭包（closure）技巧。如你可能所知，调用函数时（在本例中我们延迟）会丢失当前的绑定——即 this 指向的值。我们不需要强制进行这种绑定（这需要额外的函数封装层，因此开销很大），而是依靠闭包让我们临时匿名函数内部的代码保留对原始 this（即要提交的表单）的引用，以便在适当的时间在它内部调用 submit()。
 
 21. 对 JS 函数绑定感到不解？请查看我在 ALA 上的文章：http://www.alistapart.com/articles/getoutbindings/ 了解详细信息。不确定闭包及其用处？我的朋友 Jury "Kangax" Zaytsev 在该处写过一写很棒的文章：mdn.microsoft.com/en-us/scriptjunk/ff696765.aspx。
-
-
-
-
 
 ## 在提交事件时禁用。
 
@@ -1370,8 +1272,11 @@ function preventMultipleSubmits(e) {
 然后我们可以使用 JavaScript 执行以下操作：
 
 - 动态创建表单区域（为了简洁起见，我假设是段落标签），其中包含这些元素（对应的代码为段落添加了类），然后动态创建剩余长度反馈的占位符。
+
 - 将反馈区域初始化为当前状态。
+
 - 为边输入边产生的反馈绑定适当的事件监听器。
+
 - 确定反馈区域的位置（我把它放在与其匹配字段的右下角）并将其添加到文档中，现在它已经准备就绪了！
 
 现在当发生输入时，我们只需要更新反馈，如果我们达到或超过了最大长度（这在 `<textarea>` 上是不可能的），我们将回溯到允许的最大长度。
@@ -1379,6 +1284,7 @@ function preventMultipleSubmits(e) {
 注意此过程的几个技巧：
 
 - 我们同时监听 `keyup` 和 `keypress`，以便响应非字符键（删除、剪切和粘贴）以及字符键。监听 `keydown` 是没用的，因为它在文本更改之前发生，而且我们没有可靠的方法能够跨浏览器和键盘布局来确定文本是否会发生变化。
+
 - 为了避免每次按键时都重新计算最大长度，我们在设置期间对其进行了缓存。为了将最大长度与我们的字段关联起来，我们在字段的 `id` 属性和字段本身之间使用了一个基于 JavaScript 的关联数组。这比使用扩展属性要轻量得多。
 
 52. 我们在这里使用 Prototype 的 `identify()` 来确保我们的元素拥有 id。
@@ -1443,14 +1349,19 @@ function updateFeedback(e) {
 有时，是全选。这可能是件痛苦的事。
 
 | 主题 | 日期 | 大小 |
+
 | :--- | :--- | :--- |
+
 | Happy year! | Jan 1, 2010 00:03am | Barrimore |
+
 | What's your great? | Jan 1, 2010 11:25am | McClintock |
+
 | You gotta check... | Jan 1, 2010 02:15pm | Julian Moore |
 
 脚本本身是：
 
 - 我们同时监听 `keyup` 和 `keypress`，以便响应非字符键（删除、剪切和粘贴）以及字符键。监听 `keydown` 是没用的，因为它在文本更改之前发生，而且我们没有可靠的方法能够跨浏览器和键盘布局来确定文本是否会变化。
+
 - 为了避免每次按键时都重新计算最大长度，我们在设置期间对其进行了缓存。为了将最大长度与我们的字段关联起来，我们在字段的 `id` 属性和字段本身之间使用了一个基于 JavaScript 的关联数组。这比使用扩展属性要轻量得多。
 
 ## 为以下创建标记
@@ -1501,10 +1412,6 @@ document.observe('dom:loaded', function () {
 });
 ```
 
-
-
-
-
 ## 标记必填字段。
 
 ```html
@@ -1549,6 +1456,7 @@ document.observe('dom:loaded', function () {
 ## 相关任务
 
 - 任务 22，表单验证：进阶，在在页页
+
 - 任务 23，表单验证：全方位校验，在第 60 页
 
 ## 表单验证：进阶
@@ -1602,6 +1510,7 @@ function checkBox(field) {
 ## 相关任务
 
 - 任务 21，表单验证：基础，在第 56 页
+
 - 任务 23，表单验证：全方位校验，在在页页
 
 ## 23 表单验证：全方位校验
@@ -1611,6 +1520,7 @@ function checkBox(field) {
 这是我们在书中首次使用 Ajax，它是 JavaScript 中一个调试可能很麻烦的领域。如果你还没有读过，请阅读第 56 页的附录 B。
 
 （注：此处原文似乎存在重复或错误，已按逻辑翻译）
+
 ...然而，当你只需要知道是否找到了匹配项，而不在乎匹配的具体细节时，你应该反转问题，让模式去 `test()` 字符串，它只返回一个布尔值。
 
 事实上，`test()` 方法更健壮：如果传入的是字符串以外的其他内容，它不会崩溃，而尝试在非字符串上调用 `call()` 则会失败。作为额外的好处，`test()` 效率略高。我喜欢习惯性使用此类性能优化点，特别是当它们不影响代码可读性（或没有代码代价）时。
@@ -1662,186 +1572,20 @@ document.observe('dom:loaded', function () {
 
 *(注：由于您提供的原文最后部分似乎存在大量重复和乱码，上述译文已根据逻辑结构进行了清理和对齐，确保翻译连贯。)*
 
-
-
-
-
 ## 在表单中提供即时提示
 
 有时我们会将表单发布到网上。字段具有高级的语义化和非凡的输入规则。例如，我们可能会对密码字段强制复杂度要求，在这种情况下，最佳实践（也是一种基本的礼貌）是提前警告我们的用户。当多个字段需要详细的警告和说明时，我们的表单可能会变得杂乱无章。
 
 | 字段 | | | 说明 |
+
 | :--- | :--- | :--- | :--- |
-| 登录* | | | 必须唯一，长度至少 3 个字符，且只能使用字母、数字、空格、连字符、下划线和句号。 |
-| 密码* | | | |
-| 名* | | | |
-| 姓* | | | |
 
-实用的方法是将此类细节放在每个字段的提示（tooltips）中，并仅在需要时（当字段获得焦点时）让它们可见。简而言之，这是我们在第 34 页的“制作优雅的提示”中所对应内容的表单相关变体。
-
-请注意，最佳位置是在标签（labels）内部，而不仅仅是在同一个段落中。这样，此类信息对于例如盲人用户来说，无论他们的屏幕阅读器处于什么模式都是可用的。
-
-样式——特别是在提示的定位方面——对这项任务非常重要，因此我在对应的页面上展示了一些 CSS。诚然，这是一个微不足道的示例。如果你使用模拟聚焦（focus）和失焦（blur）事件泡的库，可以从代码和性能方面对其增强，这样你就不需要为每个相关字段显式注册事件监听器。在本文写作期间，最新的 jQuery 已经内置了这一点，你也会为你最流行的 JavaScript 框架找到或或少的官方插件来满足需求。
-
-## 将提示放在有用的地方。
-
-```html
-form/tooltips/index.html
-<p>
-  <label for="user_login">
-    登录:
-    <span class="tooltip" style="display: none">
-      登录必须唯一，长度至少 3 个字符，
-      且只能使用字母、数字、空格、
-      连字符、下划线和句号。
-    </span>
-  </label>
-  <input type="text" id="user_login" name="user[login]"
-    class="required" />
-</p>
-```
-
-## 设置样式以实现统一类外观。
-
-```css
-form/tooltips/tooltips.css
-#registration label { float: left; width: 6em; position: relative; zoom: 1; }
-#registration input.text { width: 12em; }
-#registration .tooltip {
-  display: block; position: absolute; left: 24em; top: 0;
-  padding: 0.35em 0.5em 0.35em 2em; width: 15em;
-  border: 1px solid silver;
-  color: gray; font-size: 80%;
-  background: #ffc url(lightbulb.png) 0.5em 0.3em no-repeat;
-}
-```
-
-## 聚焦时显示，失焦时隐藏。
-
-```javascript
-form/tooltips/tooltips.js
-document.observe('dom:loaded', function() {
-  var attr = Prototype.Browser.IE ? 'htmlFor' : 'for';
-  function showTooltip() {
-    var tooltip = $('label['+attr+='+this.id+'] .tooltip').first();
-    tooltip && tooltip.show();
-  }
-  function hideTooltip() {
-    var tooltip = $('label['+attr+='+this.id+'] .tooltip').first();
-    tooltip && tooltip.hide();
-  }
-
-  $('#registration').getInputs().invoke('observe', 'focus', showTooltip)
-  invoke('observe', 'blur', hideTooltip);
-});
-```
-
-## 在输入时自动补全
-
-比在发送到服务器之前验证输入更好的方法是什么？是在用户输入时进行验证！通过将用户的持续输入与有效/实用的输入数据库进行匹配，我们可以提供建议，不仅能帮助他们纠正（例如）拼写错误，还能避免他们手动输入足够常见而会出现在我们建议列表中的长内容。
-
-本地搜索：Ajax 搜索：（世界首都）
-
-| 城市 | 国家 |
-| :--- | :--- |
-| 乔治敦 | 圭亚 |
-| 内昂望 | 缅甸 |
-| 平壤 | 朝鲜 |
-
-这传统上被称为自动补全。唯一的问题是你的参考数据源是在客户端预取（如一个简单的 Array 或可能结构更丰富的对象，如 JSON 字面量），还是存储在服务器上，并随着输入的进行进行反复查询。
-
-这是一个很好的经验法则：如果你的数据源足够小（例如单个品牌内州、货币或模型名称的参考列表），请在脚本内部获取（例如，在渲染页面时为其生成 JavaScript 字面量）。否则，请使用 Ajax，并确保调整查询频率，以便即使在连接较慢或打字速度快的情况下也能获得良好的用户体验。
-
-Script.aculus 1.8 拥有一个很好的自动补全控件，带有大量的自定义选项，我们将在这里使用它，并配合它的 Prototype 基础架构。根据你的数据源位置，你可以使用 `Autocompleter.Local` 或 `Ajax.Autocompleter`（我知道命名并不一致；很抱歉）。在第一种情况下，你只需要指定你的数据源数组并通过少量选项（`fullSearch`, `partialSearch`, `partialChars`, `ignoreCase`）微调匹配行为。在 Ajax 情况下，你提供基础 URL。
-
-## 在输入时自动补全输入
-
-（注：此处为为输入时自动补全）
-
-```html
-form/tooltips/index.html
-<p>
-  <label for="user_login">
-    登录:
-    <span class="tooltip" style="display: none">
-      登录必须唯一，长度至少 3 个字符，
-      且只能使用字母、数字、空格、
-      连字符、下划线和句号。
-    </span>
-  </label>
-  <input type="text" id="user_login" name="user[login]"
-    class="required" />
-</p>
-```
-
-## 设置样式以实现统一类外观。
-
-```css
-form/tooltips/tooltips.css
-#registration label { float: left; width: 6em; position: relative; zoom: 1; }
-#registration input.text { width: 12em; }
-#registration .tooltip {
-  display: block; position: absolute; left: 24em; top: 0;
-  padding: 0.35em 0.5em 0.35em 2em; width: 15em;
-  border: 1px solid silver;
-  color: gray; font-size: 80%;
-  background: #ffc url(lightbulb.png) 0.5em 0.3em no-repeat;
-}
-```
-
-## 聚焦时显示，失焦时隐藏。
-
-```javascript
-form/tooltips/tooltips.js
-document.observe('dom:loaded', function() {
-  var attr = Prototype.Browser.IE ? 'htmlFor' : 'for';
-  function showTooltip() {
-    var tooltip = $('label['+attr+='+this.id+'] .tooltip').first();
-    tooltip && tooltip.show();
-  }
-  function hideTooltip() {
-    var tooltip = $('label['+attr+='+this.id+'] .tooltip').first();
-    tooltip && tooltip.hide();
-  }
-
-  $('#registration').getInputs().invoke('observe', 'focus', showTooltip)
-  invoke('observe', 'blur', hideTooltip);
-});
-```
-
-## 在输入时自动补全输入
-
-（注：此处为为输入时自动补全）
-
-```html
-form/tooltips/index.html
-<p>
-  <label for="user_login">
-    登录:
-    <span class="tooltip" style="display: none">
-      登录必须唯一，长度至少 3 个字符，
-      且只能使用字母、数字、空格、
-      连字符、下划线和句号。
-    </span>
-  </label>
-  <input type="text" id="user_login" name="user[login]"
-    class="required" />
-</p>
-```
-
-*(注：由于提供的文本中存在大量重复的标题和占位符，根据“不要重复输出原文”的指令，上述译文已针对核心逻辑进行了整合翻译，并保留了 Markdown 结构。)*
-
-[content]
-
-## 在表单中提供即时提示
-
-有时我们会将表单发布到网上。字段具有高级的语义化和非凡的输入规则。例如，我们可能会对密码字段强制复杂度要求，在这种情况下，最佳实践（也是一种基本的礼貌）是提前警告我们的用户。当多个字段需要详细的警告和说明时，我们的表单可能会变得杂乱无章。
-
-| 字段 | | | 说明 |
-| :--- | :--- | :--- | :--- |
 | 登录* | | | 登录必须唯一，长度至少 3 个字符，且只能使用字母、数字、空格、连字符、下划线和句号。 |
+
 | 密码* | | | |
+
 | 名* | | | |
+
 | 姓* | | | |
 
 实用的方法是将此类细节放在每个字段的提示（tooltips）中，并仅在需要时（当字段获得焦点时）让它们可见。简而言之，这是我们在第 34 页的“制作优雅的提示”中所对应内容的表单相关变体。
@@ -1908,16 +1652,20 @@ document.observe('dom:loaded', function() {
 本地搜索：Ajax 搜索：（世界首都）
 
 | 城市 | 国家 |
+
 | :--- | :--- |
+
 | 乔治敦 | 圭亚 |
+
 | 内昂望 | 缅甸 |
+
 | 平壤 | 朝鲜 |
 
 这传统上被称为自动补全。唯一的问题是你的参考数据源是在客户端预取（如一个简单的 Array 或可能结构更丰富的对象，如 JSON 字面量），还是存储在服务器上，并随着输入的进行进行反复查询。
 
 这是一个很好的经验法则：如果你的数据源足够小（例如单个品牌内州、货币或模型名称的参考列表），请在脚本内部获取（例如，在渲染页面时为其生成 JavaScript 字面量）。否则，请使用 Ajax，并确保调整查询频率，以便即使在连接较慢或打字速度快的情况下也能获得良好的用户体验。
 
-Script.aculus 1.8 拥有一个很好的自动补全控件，带有大量的自定义选项，我们将在这里使用它，并配合它的 Prototype 基础架构。根据你的数据源位置，你可以使用 `Autocompleter.Local` 或 `Ajax.Autocompleter`（我知道命名并不一致；很抱歉）。在第一种情况下，你只需要指定你的数据源数组并通过少量选项（`fullSearch`, `partialSearch`, `partialChars`, `ignoreCase`）微调匹配行为。在 Ajax 情况下，你提供基础 URL。
+Script.aculus 1.8 拥有一个很好的自动补全控件，带有大量的自定选项，我们将在这里使用它，并配合它的 Prototype 基础架构。根据你的数据源位置，你可以使用 `Autocompleter.Local` 或 `Ajax.Autocompleter`（我知道命名并不一致；很抱歉）。在第一种情况下，你只需要指定你的数据源数组并通过少量选项（`fullSearch`, `partialSearch`, `partialChars`, `ignoreCase`）微调匹配行为。在 Ajax 情况下，你提供基础 URL。
 
 ## 在输入时自动补全输入
 
@@ -1939,10 +1687,6 @@ form/tooltips/index.html
 
 *(注：由于提供的文本中存在大量重复的标题和占位符，根据“不要重复输出原文”的指令，上述译文已针对核心逻辑进行了整合翻译，并保留了 Markdown 结构。)*
 
-
-
-
-
 ## 第 V 部分
 
 ## 与服务端交互
@@ -1951,9 +1695,12 @@ form/tooltips/index.html
 
 前一部分展示了（除其他内容外）我们如何尽可能地在客户端对输入进行验证。它还开始涉及到使用服务器提供的数据，以进行更复杂的验证、自动补全等。大多数 Web 应用程序依赖于后端来执行工作；而它们如何与该后端“对话”正是本部分的主题。
 
-- 我们将首先谈论 Cookie，这是跨请求保持状态（persisting state）的早期方法之一，它允许我们为用户创建一个导航会话（session），以便我们可以记住他们做了什么、记住他们是谁等。这将在“任务 27：读取/写入 Cookie”中介绍。存储在用户磁盘上的持久 Cookie（Permanent cookies）也能让我们在多次访问时“记住”它们，这可以有非常有用的应用。遗憾的是，JavaScript 中原生的 Cookie 操作相当简陋；我们将看到如何更方便地处理它们。
+- 我们将首先谈论 Cookie，这是跨请求保持状态（persisting state）的早期方法之一，它允许我们为用户创建一个导航会话（session），以便我们可以记住他们做了什么、记住他们是谁等。这将在“任务 27：读取/写入 Cookie”中介绍。存储在用户磁盘上的持久 Cookie（Permanent cookies）也能让我们在多次访问时“记住”它们，这可以有非常有用的应用。遗憾的是，JavaScript 中原生的 Cookie 操作相当简陋；我们将看到如何更方便处理它们。
+
 - 随后，我们将关注 Web 2.0 应用和服务的“大块头”：首先，我们将涵盖如何在不刷新页面的情况下与服务器通信的基础知识：这在“任务 28：加载内容 Ajax（同域）”中。
+
 - 然后，我们将在“任务 29：使用 JSON”中仔细查看 JSON，以及在“任务 30：使用 JSON-P”中查看它的兄弟 JSON-P。这些是在 JavaScript 驱动的客户端与任何服务器之间交换数据的极佳方法（比 XML 要用得多）。
+
 - 最后，作为通型网站（mashups）的开启路径，我们将涵盖大多数（众多的）与位于我们其他域名的第三方服务通信的方法。这可以在“任务 31：跨域‘Ajax’（1 次）”和“任务 32：跨域‘Ajax’（2 次）”中找到。
 
 调试 Ajax 或 JSON-P 调用可能非常棘手。如果你还没有读过那里，请务必检查第 101 页的附录 B。你将在那里获得所需的所有工具，可以舒适地探测你代码正在进行的任何客户端服务器交换：没必要白浪费几个小时并抓狂头发。
@@ -1971,7 +1718,9 @@ form/tooltips/index.html
 最后，你应该记住关于 Cookie 的一些事实：
 
 - 它们驻留在客户端，因此它们在野外几乎是裸露的。你永远不要在其中存放敏感数据，除非你以某种健壮的方式对其进行了加密和防篡改。
+
 - 它们的大小受到严格限制（4KB），因此不应存储大型数据项（如历史、复杂的购物车内容、文本草稿等）。
+
 - 它们可能无效，尽管这是一个非常罕见的现象。然而，更常见的是设置了过期的 Cookie 不跨会话持久，这是因为浏览器的安全策略（可能是因为公司安全策略，或者因为你的用户出于隐私考虑那样配置浏览器）。
 
 所以，尽量只将 Cookie 用于额外的舒适性，特别是持久 Cookie。
@@ -2022,11 +1771,16 @@ Cookie.test()
 
 同域执行 Ajax 请求是当今应用程序的基础基石，以至于我必须介绍如何使用主流框架来实现：
 
-- 所有框架都允许使用任何 HTTP 动词——GET、POST、PUT 和 DELETE——发送 Ajax 请求，并调整头，以便你可以与 REST 服务交互。
+- 所有框架都允许使用任何 HTTP 动词——GET、POST、PUT 和 DELETE——发送 Ajax 请请求，并调整头，以便你可以与 REST 服务交互。
+
 - 所有框架都提供了许多回调——start、failure、completion——以及响应格式如 JavaScript、JSON-P、XML。
+
 - 多个框架允许为 Ajax 指定通用设置（例如 jQuery 有 $.ajax.Defaults()）并注册全局回调以维持指示。
+
 - 许多框架为表单提供了提供了快捷方法，无论是使用 HTML 序列化还是让你进行调整。
+
 - 每个框架都提供特定的功能，如文件上传、HTTP 身份验证、重入和请求链、响应缓存。
+
 - 你应该始终为你的 Ajax 用的成功和失败提供用的处理。失败的情况往往被忽略或处理不当。
 
 一点建议：在同步模式下使用 Ajax 请求等同于在你的网页中召唤恶魔。如果你想要同步，就去刷新页面吧！
@@ -2064,15 +1818,12 @@ Ajax.Responders.register({
   });
 ```
 
-
-
-
-
 ## 使用 JSON
 
 过去几年中，JSON 已成为远程资源与基于 JavaScript 的客户端之间交换数据的首选方式。JSON 格式^24 实际上标准 JavaScript 允许的字面量表示法的子集。JSON 有一些局限性，但相比 XML 明显具有两个显著优势：
 
 - 它非常轻量（冗余较少）
+
 - 它除了 JavaScript 本身之外不需要任何特定的客户端技术来解释和处理。
 
 如今，大多数服务器端技术都提供了相关功能，可以将任何合格的数据结构编码为 JSON 字符串，并在这些字符串进入时对其进行解码。根据你选择的技术，你可能需要安装一个额外的库（可以通过 Google 轻松找到），请放心，Ruby、PHP、Python、Java、ColdFusion 和 ASP.NET 等语言都已涵盖其中。
@@ -2137,7 +1888,7 @@ JSON-P是将远程结构化数据获取基于 JavaScript 的客户端的主要�
 
 无论如何，衡量你的远程 JSON-P 提供者的信任和可靠性取决于你。
 
-我应该指出，我们使用的传输方式——动态 <script> 标签将 JSON-P 限制在 GET 请求上，并随后限制负载在约 4KB（这是一个传统的 GET 限制）。虽然对后者没有神奇的药物，但在服务器端的帮助下，我们可以轻松地将 GET 请求转换为任何其他，正如我们将在第82 页的任务 32 跨域“Ajax”（第2次）中看到的。
+我应该指出，我们使用的传输方式——动态 <script> 标签将 JSON-P 限制在 GET 请求上，并随后限制负载在约 4KB（这是一个传统的 GET 限制）。虽然对后者没有神奇的药物，但在服务器端的帮助下，我们可以轻松地将 GET 请请求转换为任何其他，正如我们将在第82 页的任务 32 跨域“Ajax”（第2次）中看到的。
 
 ## 使用基础代码实现 JSON-P。
 
@@ -2168,6 +1919,7 @@ script.observe('load', function() {
 ## 相关任务
 
 - 第76页的任务 29，使用 JSON
+
 - 第82页的跨域“Ajax”（第2次）
 
 ## 跨域“Ajax”（第1次）
@@ -2177,16 +1929,16 @@ script.observe('load', function() {
 跨域加载内容有多种方法。我将向你展示更重要的，这对于你的实际情况足够了。
 
 - 所谓的服务器端代理对每个 URL 都有效。如果这对有效，在处理文件上传、内容类型、POST 请求等时你可能需要一些调整。
-- 未来在于跨源资源共享（CORS），这是跨域请求的 W3C 标准，XHR2 使用它。⁵ 然而，这仅适用于 Firefox 3.5+、Safari 4+ 和 Chrome。IE8 实现了基本功能（仅限 GET、无自定义头、无凭据等），但需要你使用自定义对象 XdomainRequest。
+
+- 未来在于跨源资源共享（CORS），这是跨域请求的 W3C 标准，XHR2 使用它。⁵ 然而，这仅适用于 Firefox 3.5+、Safari 4+ 和 Chrome。IE8 实现了基本功能（仅限 GET、无自定义头、无凭据等），但需要你使用自定�对象 XdomainRequest。
+
 - 如果这两种方法都不可用，那么你的选择是 JSON-P 或者动态/隐藏表单和 <iframe>。
+
 - 在不使用服务器端代理的情况下，向另一个域 POSTComplex内容没有神奇妙药。有一些解决方案（参见下一个任务），但没有通用的解决方案。
 
 在面对的页面上，本书的任务代码说明了一种良好的 CORS 方法（不需要额外代码；使用 XMLHttpRequest），一种服务器端代理方法以及两种基于动态的方法，其中一种 <iframe>（返回 204 响应码，这让我们跳过隐藏的 <iframe>，因为浏览器不会尝试导航）。
 
 我应该强调，只有在你不想依赖外部服务时才同时使用形式和 <iframe>；否则，YQL（在下一个任务中回顾）绝对是你的选择。
-
-
-
 
 ## 使用符合 CORS 的 XMLHttpRequest。
 
@@ -2259,6 +2011,7 @@ Element.defer('responses', '<p>OK, posted.</p>');
 最后，你还可以使用“网络 虫”，通过普通的 `<img>` 标签（你用脚本生成的）对动态选择的图像进行服务器端调用。问题在于，你得到的唯一响应是基于图像尺寸的，而在加载后正确检测这些尺寸出乎意料是一个棘手问题。权衡响应的局限性与需要付出的艰巨努力，我避免了这种技术。
 
 [26] http://developer.yahoo.com/yql/
+
 [27] http://nb.io/hacks/csshttprequest
 
 # 使用原生 JSON-P
@@ -2315,9 +2068,13 @@ function yqlCallback(data) {
 # 使用 XMLHttpRequest。
 
 ```javascript
+
 XMLHttpRequest.get(this.href, function(res) {
+
   $('responses').insert('<p>OK, posted.</p>');
+
 });
+
 ```
 
 ## 相关任务
@@ -2348,20 +2105,35 @@ XMLHttpRequest.get(this.href, function(res) {
 （此处内容重复，已略）
 
 ``````javascript
+
 function yqlCallback(data) {
+
   // data.results 是一个匹配元素的 HTML 片段数组。
+
   var url = "http://github.com/languages/Ruby/updated",
+
       xpath = "//*[@class='title']",
+
       yql = "select from html where url=''+url+'" and xpath=''+xpath+''";
+
       data = { q: yql, format: 'xml', callback: 'yqlCallback' };
+
   document.documentElement.firstChild.appendChild(
+
     new Element('script', {
+
       type: 'javascript',
+
       src: 'http://query.yahoo.com/vl/public/yql?' +
+
       Object.QueryString(data) + '&r=' + Math.random()
+
     })
+
   );
+
 }
+
 ```
 
 # 使用 JSON-P 使用 YQL htmlpost 表
@@ -2377,33 +2149,57 @@ function yqlCallback(data) {
 以下代码依赖 Prototype 框架来处理几项操作（$），例如 `each()`、`escapeHTML(insert(...))`，但可以轻松转换为其他框架。
 
 ```javascript
+
 // mashups/twitter/twitter.js
+
 var REGEXP_URL = new RegExp('https://\.*?(W\?(/\s|$))', 'gi');
 
 function twitterCallback(data) {
+
   var stream = '$(twitterStream)', replyTo, contents;
+
   data.each(function(tweet) {
+
     contents = tweet.text.escapeHTML().replace(REGEXP_URL, 
+
       '<a href="$1">$2</a>');
+
     if (replyTo == tweet.in_reply_to_screen_name) { // 刻意赋值
+
       contents = contents.replace('@', replyTo +
+
         '<a href=" + 'http://twitter.com/' + replyTo + '/statuses/' +
+
         tweet.in_reply_to_status_id + ''>$6</a>');
+
     }
+
     contents += '<li>' + contents + '<p class="stamp">'</p>' + ' + tweet.created_at + '</p></li>';
+
     stream.insert(contents);
+
   });
+
 });
+
 ```
 
 ```javascript
+
 function loadTwitterStream(userName) {
+
   var uri = 'http://twitter.com/statuses/user_timeline/'+userName+'.json';
+
   document.element.firstChild.appendChild(
+
     new Element('script', { type: 'text/javascript',
+
       src: uri + '?callback=twitterCallback&=' + Math.random() });
+
   );
+
 }
+
 ```
 
 -   查看部分 JSON 编码的推文内容。
@@ -2411,18 +2207,31 @@ function loadTwitterStream(userName) {
 （实际返回的数据集要详细得多，且 URL 显然没有截断——这只是为了给你一个直概念。）
 
 ```json
+
 {
+
   "in_reply_to_screen_name": null,
+
   "user": {
+
     "friends_count": 27, "statuses_count": 622,
+
     "name": "ChristophePorteneuve",
+
     "followers_count": 215,
+
     "profile_image_url": "http://a3.twimg.com/.../headshot_tdd_normal.jpg",
+
   },
+
   "id": 953162839, "created_at": "Tue Feb 23 18:35:22 +0000 2010",
+
   "in_reply_to_status_id": null,
+
   "text": "15 pour 850m. Sympa av Saint-Ouen + av Clichy aux de..."
+
 }
+
 ```
 
 # 同步你的 Flickr 更新
@@ -2442,52 +2251,93 @@ Flickr 提供了一个相当大的量。
 # ▶ 获取某人的照片。
 
 ```javascript
+
 mashups/flickr/flickr.js
+
 var FLICKR_ENDPOINT='http://api.flickr.com/services/feeds/photos_public.json';
+
+
+
 var FLICKR_USER_ID='97027332@N00'; // 那是我！
+
 var item = new Template({
+
   '<li><a href="#{target}"><img src="#{src}" title="#{title}"></a></li>'
+
 });
 
 function jsonFlickrFeed(data) {
+
   var stream = $('FlickrStream'), dateStr;
+
   data.items.each(function(photo) {
+
     d = photo.split(/\D/);
+
     dateStr = d[1] + '/' + d[2] + '/' + d[0];
+
     stream.insert(item.evaluate({
+
       src: media.a.replace(/\s/g, '_'), target: photo.link,
+
       title: 'Published on ' + dateStr + ' GMT'
+
     }));
+
   });
+
   $('indicator').removeClass('loading').update('Loaded!');
+
 }
 
 function loadFlickrPhotostream() {
+
   var uri = FLICKR_ENDPOINT + '?format=json&id=' + FLICKR_USER_ID;
+
   document.documentElement.firstChild.appendChild(
+
     new Element('script', { type: 'text/javascript',
+
       src: uri + '&r=' + Math.random() });
+
   );
+
 }
+
 ```
 
 # ▶ 查看部分 JSON 响应。
 
 ```json
+
 jsonFlickrFeed({
+
   // ...
+
   "items": [
+
     {
+
       "title": "",
+
       "link": "http://www.flickr.com/photos/97027332@N00/0123456789",
+
       "media": {
+
         "url": "http://live.static.flickr.com/65534/0123456789_m.jpg",
+
         "s": "..."
+
       },
+
       "date_taken": "2009-11-15 18:54:22 +0000"
+
     }
+
   ]
+
 }
+
 ```
 
 # 对位置进行地理编码并获取照片
@@ -2502,1265 +2352,46 @@ jsonFlickrFeed({
 
 
 
-` 标签内包含了大量未翻译的英文内容。我将根据你提供的注意事项，对这部分英文文本进行了完整的翻译。
 
-以下是翻译后的内容：
-
-[content]
-
-## 第七部分
-## 附录
-
-## JavaScript 速查表
-
-## 内置类型与字面量
-
-| 类型 | 示例 |
-| :--- | :--- |
-| 数字 (Number) | 0, 42, 15, 310, -3e12 |
-| 字符串 (String) | "Hello", 'hello' (允许如 \uxxxx (unicode) 等转义) |
-| 布尔值 (Boolean) | true, false |
-| 数组 (Array) | [1, 2, 3], [[1]] |
-| 日期 (Date) | Date() (非字面量) |
-| 正则表达式 (RegExp) | /pattern/flags (专用正则) |
-| 对象 (Object) | { prop: value, ...value }
-
-## 特殊值
-
-| 值 | 说明 |
-| :--- | :--- |
-| undefined | 未赋值值，或未传递参数 |
-| null | 未定义；通常是“无结果”DOM调用的返回值，并用于刻意为变量设置“无值” |
-| false, true | 被视为假/真 |
-| NaN | 非有限的数字，例如 -Infinity |
-| Infinity | 数字与数字运算的结果，例如解析失败；使用 isFinite() 进行比较 |
-
-## 运算符
-
-```
-算术: + - * / ++ --
-记住：这里没有 int（整数），只有 Numbers（数字）！
-%= 取模余数。一元负号：-=
-++ 是自增和自减。将它们作为后缀 (x++) 或前缀 (++x) 使用是有明确意图的。
-```
-
-```
-比较: == != <= >= === =
-== 使用“转换协议”比较值。因此 "5" == 0 为假，null == undefined 亦为假。
-=== 严格相等，比较值和类型。非常适合用于定义字面量。
-!== 意味着不相等（类似于 VB/S? 中的 <）。
-```
-
-## 布尔逻辑：(&&) 与和 (||) 或
-
-```
-只需记住：
-&& 的优先级高于 || 或
-&& 有短路逻辑（如果 a 为假，则返回 a）
-|| 有短路逻辑（如果 a 为真，则返回 a）
-```
-
-## 正则表达式
-
-```
-优先级：与大多数 C++ / Java / Ruby 一致
-* / % = =
-+ - =
-^^ 是异或 (XOR)， << >> >>> 是移位（带符号位/无符号位 -）
-```
-
-## 数组
-
-```
-数组选择器：array[index]; propName
-```
-
-## 对象
-
-```
-动态选择器：
-obj['propname']; obj.propName
-obj['methodName'](); obj.methodName()
-e.node(visible) ? 'show':'id'
-```
-
-## 函数
-
-```javascript
-function() {
-  // 除非你显式地通过 return 或直接赋值
-  //将其取出，否则这里的内容会被保留。
-}
-```
-
-## 类
-
-(匹配的构造函数的类)
-
-## 变量
-
-局部变量使用 var 声明。
-你应该努力使用/全局变量。
-变量可以动态赋值；它们可以在作用范围内的任何地方访问（通常指当前函数）
-
-- ""（空字符串），null 和 undefined 被视为假。其他所有内容均为真。
-
-## 作用域
-
-## 变量与作用域
-
-全局：处处匹配，不取决于定义位置。
-
-函数：（可从此处访问）（不捕获闭包）。
-
-局部：（仅在... 处访问）（在定义处）。
-
-如果你需要捕获一个组以供以后使用，不需要担心具体的细节（组等），请使用 regex.test() 而不是使用它们来捕获组。
-
-声明：function name() { ... }
-表达式：function() { ... } （赋值给变量）。
-
-声明会被“提升”（hoisted）—— 意味着你可以在代码的任何地方使用它们中的任何一个（不需要 'prototypes' 声明）。
-
-函数像字面量一样是对象，因此它们拥有绑定自身方法的方法：通过引用（使用 'this' 关键字）。这意味着你可以赋值变量并作为参数传递。
-
-参数列表不指定类型，并作为“提示”为传递的前几个参数分配名称。但 JS 允许你传递任意数量的参数，并通过内置的数组对象访问，该对象的行为类似于 Array（带有长度和默认值）。
-
-```
-/[a-z]/ (匹配小写)
-/[A-Z]/ (匹配大写)
-/[0-9]/ (匹配任意数字)
-\w (匹配任意单词字符)
-```
-
-```
-^ (字符串开始)
-$ (字符串结束)
-* (零或多个)
-+ (一个或多个)
-```
-
-```
-? (零或一个)
-| (任意一个)
-[] (字符类)
-```
-
-```
-(...) (分组)
-(?:...) (非捕获组)
-```
-
-```
-?? (捕获回溯)
-\1 (反引用组)
-```
-
-## 决定采取的路径
-
-```
-if (condition) {
-  switch (expr) {
-    case value4:
-      codeA;
-      break;
-    case value5:
-      codeV2;
-      codeB;
-  }
-} else if (cond8) {
-    codeD;
-  } else {
-    default:
-      codeC;
-  }
-```
-
-提示：使用提前返回来避免将剩余嵌套在 else 块中，并保持较小的缩进
-
-## 你应该知道的数组操作
-
-```javascript
-var arr = [2, 3, 4, 5, 6];
-arr.length // 5
-arr.concat(7, 8, 9)
-arr.push(10) // 6
-arr.shift() // 5
-arr.pop() // 5
-arr.slice(4, -2) // 2
-arr.join('') // "2345"
-```
-
-```javascript
-arr.sort(function(a, b) {
-
-## 异常处理
-
-```javascript
-try {
-  doSomething();
-} catch (e) {
-  console.log(e);
-} finally {
-  console.log("finally");
-}
-```
-
-## 异步
-
-```javascript
-var timer = setTimeout(function() {
-  console.log("timeout");
-}, 1000);
-clearTimeout(timer);
-```
-
-## 糟糕的调试
-
-```javascript
-for (var i = 0; i < len; i++) {
-  console.log(i);
-}
-while (condition) {
-  console.log(i);
-}
-do {
-  console.log(i);
-} while (condition);
-```
-
-## 循环
-
-```javascript
-while (condition) {
-  if (condition) {
-    break;
-  }
-  continue;
-}
-```
-
-## 字符串
-
-```javascript
-var str = "abcde";
-str.length // 5
-str.indexOf('a') // 0
-str.indexOf('z') // -1
-str.lastIndexOf('a') // 0
-str.lastIndexOf('e') // 4
-str.replace(/c/g, function(s) {
-  return 'x';
-});
-str.substring(0, 3) // "abc"
-str.split('') // ["a", "b", "c", "d", "e"]
-str.slice(2) // "cde"
-str.slice(2, 4) // "cd"
-str.toLowerCase() // "abcde"
-```
-
-## 数
-
-```javascript
-Math.floor(Math.random() * 20); // 生成 0 到 19 之间的随机整数
-```
-
-## 全局变量
-
-```javascript
-var element = document.createElement('div');
-element.innerHTML = "Hello World";
-document.body.appendChild(element);
-```
-
-# 调试 JavaScript
-
-## B.1 危险
-
-几年前，调试 JavaScript 的艺术感觉就像在蹦床上闭着眼睛处理不稳定的甘油。我们不仅感到装备极度匮乏，而且我们拥有的工具也相当笨拙（公平地说，Visual Web Developer 内部的 IE 调试工具还是不错的）。
-
-毕竟，当时的 JavaScript 调试看起来如此危险，以至于按照那个基于《捉灵》时代的命名传统，Mozilla 的 JavaScript 调试器被命名为 Venman，他的准则是“不要让射线交叉”。
-
-后来 Joe Hewitt 出现并向世界发布了他在无意中称为“一堆脚本”。Firebug 为我们荒凉的领域（即前端 Web 开发）投射了一道巨大的光芒。
-
-正因为标准被提高，游戏规则被改变，所有浏览器厂商的好人们都卷起袖子，以自己的方式解决这些问题，这就是为什么我们现在有了 Safari 的 Web Inspector、Opera 的 Dragonfly，是的，甚至在 Internet Explorer 中也有相当不错的调试器。
-
-
-
-
-这是一个 HTML 页面，已经最精简的形式了：
-
-```
-<!DOCTYPE html PUBLIC "//W3C//DTD HTML 1.0 Strict//EN"
-"http://www.w3.org/TR/html11/DTD/xhtml-strict.dtd">
-<html>
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-  <script type="text/javascript" src="debugbench.js"></script>
-  <title>口袋版 JavaScript 调试基台</title>
-</head>
-<body>
-<h1>调试基台</h1>
-  <input type="button" onclick="alert(fibo(20))" value="斐波契 (20)" />
-</body>
-</html>
-```
-
-这是我们要操作的 JavaScript 源代码：
-
-```javascript
-function fibo(base) {
-  if (base <= 2)
-    return 1;
-  return fibo(base - 1) + fibo(base - 2);
-}
-```
-
-## Firefox Firebug
-
-你可以在 getfirebug.com 获取 Firebug，或者在 Mozilla 插件目录 addons.mozilla.org 下载。在编写此时，Firebug 正在准备发布 1.4 版本；几个 Alpha 版本已经发布了一段时间。Firebug 曾经历过一段艰难时期，其与 Ajax 相关的功能导致了双重请求等奇怪行为，但它已经得到了改进，并以比任何时候都更好的状态回归。因此，如果你在 1.2 到 1.3 期间放弃了它，绝对应该再次尝试。
-
-默认情况下，Firebug 的功能在你浏览的任何地址（包括本地文件）上都是禁用的。这是出于性能考虑，你只需要点击状态栏右侧的 Firebug 图标打开 Firebug 面板，并开始为当前域名、页面或文件启用你想要的功能。
-
-Firebug 功能非常丰富，但本书最关注的区域是“控制台”（Console）和“脚本”（Script）两个标签页。控制台是一个实时 JavaScript 命令行，你的脚本可以向全局控制台对象及其内置方法写入日志，例如 `log()`、`debug()`、`error()` 和 `group()` 等。（在 Firebug 网站上阅读整个控制台 API。）
-
-## 调试基台
-
-![](img/36d099f98df3fc1ec6be478c5e81f7a6_122_0.png)
-
-图 B.1：我们在调试基台上 FIREBUG 的基础脚本视图
-
-Script 标签页是真正的调试器。它允许你浏览页面所有的 JavaScript 部分（加载的文件、内联事件属性等）、设置断点、单步执行代码、监控特定的表达式或变量（在“监视”子标签页上），查看当前的堆栈跟踪（在“堆栈”子标签页中）。这就是我们检查运行中的 JavaScript 代码所需的所有工具。
-
-我们测试基台脚本调试器的基本视图如图 B.1 所示。
-
-在这里运行代码基本上有两种方法：要么进入控制台并单步执行我们想要检查的代码，要么在页面中触发触发相同代码的事件。在我们的调试基台页面中，点击按钮时，`fibo()` 函数会带有参数 20 被。你可以通过点击按钮来验证这一点——你应该会得到一个显示结果 (6,765) 的对话框。你可以在调试器中做很多事情来深入研究该函数执行的细节：
-
-- 选择脚本文件（或带有内联脚本的 HTML 页面）：点击源码窗上方文件名旁边的箭头，选择你的文件。
-
-> 1. 从技术上讲，许多调试器允许你在任何异常发生时（即发生错误时）进入单步模式。在 Firebug 中，点击 Script 标签旁边的箭头即可实现此类功能。
-
-## 调试 JavaScript
-
-- 在特定代码行上切换断点：只需点击源码窗左侧行间距（gutter）的行级别。
-- 要求满足给定条件后才触发断点：右键点击行间距中的断点圆点，输入用于条件的 JavaScript 表达式。
-- 临时禁用断点而不丢失其位置和条件：进入“断点”（Breakpoints）子标签页，取消勾选断点的复选框。
-- 命中断点后单步执行代码：源码窗上方的图标允许“进入”（step into，即如果当前行调用了函数，则进入函数内部）、“逐过程”（run，运行此类函数调用而不进入内部）以及“跳出”（step out，退出当前函数并在调用者函数中恢复手动单步）。
-- 随时监控之前设置的任何感兴趣表达式的局部变量和值：只需查看“监视”（Watch）子标签页。
-
-我们在这里手动执行许多步骤（这些步骤可以在其他浏览器中重现），以熟悉操作。首先，假设我们想在 `fibo()` 函数处理参数足够小（例如小于 5）时进入单步模式。要实现这一点，我们首先需要在函数的第一行设置断点，并为其配备相应的条件。
-
-- 在源码窗行间距中点击，面对函数的第一行（第 2 行）。
-- 右键点击出现的表示断点存在的红点，输入你需要的条件：`base < 5`。你应该会得到一个显示结果 (6,765) 的对话框。你可以通过点击按钮来验证这一点——你应该会得到一个显示结果 (6,765) 的对话框。
-
-（注：提供的原始文本包含大量重复和错误，已进行去重处理以确保逻辑清晰。）
-
-
-
-
-# SAFARI 与网页检查器 (WEB INSPECTOR)
-
-![](img/36d099f98df3fc1ec6be478c5e81f7a6_126_0.png)
-
-图 B.5：SAFARI 的网页检查器
-
-![](img/36d099f98df3fc1ec6be478c5e81f7a6_126_1.png)
-
-图 B.6：在网页检查器中单步
-
-或者简单按下 `Esc` 键即可切换控制台的开启，无论你当前显示哪个部分。
-
-在 Safari 当前公共版本中，网页检查器与 Firefox 有几处不同；例如，你无法精确地移除一个断点，你只能禁用它。你同样无法为它设置条件。而且没有监视器（watches）。尽管如此，它已经是一个相当实用的工具（而且未来的版本只会变得更好）。你可以如图 B.6 所示，看到递归栈中下方几层的单步执行效果，这显示了它的行为与 Firebug 有多么相似。
-
-## B.4 IE6、IE7、IE 工具栏以及 Web Developer Express
-
-Internet Explorer 长期以来一直是 Web 开发者的噩梦，仅仅是因为在“浏览器大战”结束后、Netscape 退出市场后，它突然陷入了停滞。微软现在正对 Internet Explorer 的最新版本投入巨大精力（IE8 和 IE9 通常在这些方面取得了跨越性的飞跃），但在 Web 标准（包括 JavaScript）方面，IE6 和 IE7 比竞争对手落后了十多年。
-
-雪上加霜的是，这些浏览器内置的甚至没有一个稍微像得像样的 JavaScript 调试器。它们只有一个相当愚蠢的错误控制台，如果你在寻找适用于这两个任 own调试解决方案，你会发现几个选项。
-
-抛弃过时的微软脚本调试器（Microsoft Script Debugger）不谈，最常用的工具是 Visual Web Developer Express 版：这是微软庞大的 Visual Web Developer 工具的免费限量版，它实际上是其 Visual Studio 系列针对 Web 开发者定制的轻量化版本。它已经存在了一段时间，并且拥有一个非常好的 JavaScript 调试器。
-
-所以，是的，除非你已经在使用此类工具进行开发（例如，你在做 .NET 相关工作），否则你必须下载一个几兆字节的文件（安装程序仅为 2.6MB，只是一个代理工具）来调试 JavaScript。但如果你需要在 IE6 或 IE7 中调试 JavaScript，它是值得去尝试的，仅仅是为了保持你的理智²。配置时，请记住，Silverlight 或 SQL Server 对于我们这里的目的并不是完全必要的。
-
-安装完成后，启动 Visual Web Developer Express 版（这名字很长，我们以后就直接称它为“VWDE”好吗？）；一旦完成设置，你将在相反的页面看到一个与图 B.7 类似的欢迎页。
-
-Express 版由于是免费的，它通过不让我们附加到正在运行的浏览器来限制我们的操作空间。因此，诀窍在于使用它来启动一个附加浏览器。这是一个由 VWDE 在调试模式下启动的网页浏览器，因此 JavaScript 错误会被 VWDE 的调试器拦截。
-
-一旦我们有了附加的浏览器，就可以用它随心所欲地浏览。错误将直接掉入调试器，我们还可以从 VWDE 内部获取运行中的文档并在其中设置断点等。若要复制本附录第一节的操作，你需要后一种选项。
-
-要启动一个附加的 IE6 或 IE7 浏览器，我们需要对 VWDE 的要求进行一些调整。
-
-> ² 你可以在 http://www.microsoft.com/express/download/default.aspx 下载它。
-
-![](img/36d099f98df3fc1ec6be478c5e81f7a6_128_0.png)
-
-在这里，我们本质上必须遵守两条规则：
-
-- 我们必须设置好一个 VWDE 项目并启用调试功能。
-- 我们必须将 IE7 设置为默认浏览器，这样它才是是由“启动调试”功能启动的。
-
-这两项要求只需要处理一次（除非你在经常日常上网的机器上进行此测试，因此需要在 IE 和你选定的其他浏览器之间来切换默认浏览器）。让我们来处理这些：
-
-- 打开 IE6 或 IE7，点击 工具（Tools） > Internet 选项（Internet Options）....
-- 转到高级（Advanced）选项卡，滚动到浏览（Browsing）部分。
-- 确保勾选了“对每个脚本错误显示通知”（Display a notification about every script error），并取消勾选两个“禁用脚本调试...”（Disable script debugging...）。
-- 完全关闭 IE。
-- 点击 文件（File） > 新建网站（New Web Site）....
-
-## 调试 JavaScript
-
-![](img/36d099f98df3fc1ec6be478c5e81f7a6_129_0.png)
-
-图 B.8：使用断点调试 IE7
-
-- 6. 选择“空网站”（Empty Web Site）选项，并浏览到你想要设置的任何虚拟目录。点击确定。
-- 7. 点击“启动调试”（Start debugging）菜单选项或图标（绿色箭头）。
-- 8. 第一次运行时，VWDE 检测到你的项目尚未设置好调试。它缺少一个特殊的 Web.config 文件。对话框提议为你创建该文件或在不进行调试的情况下继续——显然，勾选第一个选项并点击确定。
-- 9. 你应该会在任务栏中看到一个运行在动态端口的开发服务器，你的 IE 会打开一个以你项目目录命名的空目录列表。你应该看到任务栏中启动了一个运行在动态端口的开发服务器，你的 IE 会打开一个以你项目目录命名的空目录列表。现在我们已经准备就绪，只需浏览 debugbench.html。一旦打开，进入 VWDE。在右侧的解决方案资源（Solution Explorer）中，你应该看到运行中的文档 debugbench.html 和 debugbench.js。双击后者。你在那里了！你现在可以在第 2 行设置断点，切换回 IE，我们进入了熟悉的单步模式，如图 B.8 所示。*大搞定！*
-
-## IE8 与开发者工具
-
-毫无疑问：Internet Explorer 8 是 IE 世界的一大步。除了在 Web 标准支持方面的显著改进（尽管仍远落后），这些点对我们非常重要：
-
-- IE8 中的 JavaScript 引擎比其他 JavaScript 引擎慢七倍。相对于 Chrome 的 V8 或 Safari、Firefox 的最新版本，峰值达到十二倍。
-
-为什么这是好消息？IE7 曾经慢了九十倍。IE6 无法忍受耻辱。因此，IE 团队将其 JavaScript 引擎改进了十三倍，无论你怎么如何，这都是令人赞叹的。
-
-- IE 中的 DOM 性能是我们脚本时的第二个主要痛点，它得到了大量的关注，现在仅慢四倍，这也是一个巨大的改进。
-
-- IE8 内置了“开发者工具”，它们是 IE6 和 IE7 中使用的 IE 工具栏的清理、更快速的版本，并附带了一个真正的 JavaScript 调试器。一个运行正常且不会导致 IE 与外部应用程序之间频繁故障的调试器。
-
-所以，我们不仅可以开始在 IE 世界中开启花哨的效果和 Ajax 操作，还可以让调试变得容易得多！
-
-顺便说，IE8 还探索了减少脚本加载感知性能影响的方法。你仍然应该使用通用优化方案，如“在页面底部加载脚本”，更重要的是脚本合并（例如通过 Sprockets）和 gzip 压缩。
-
-IE8 开发者工具面板打开了脚本选项卡并运行调试会话，如下一页的图 B.9 所示，带有我们现在熟悉的断点。切换调试器的开启和关闭只需点击工具栏上的大按钮，我们进入了熟悉的单步
-
-> 3. developer.yahoo.com/performance/rules.html#js_bottom
-4. https://sprockets.com
-5. 欲需更多关于网页加载和渲染性能的绝佳建议，请参阅 Thomas Fuchs 和 Amy Hoy 的优秀著作《JavaScript Performance Rocks! [HF09]，并查看 Yahoo! Developer Network 上的性能提示 http://developer.yahoo.com/performance/rules.html。
-
-
-
-
-
-# 调试 JavaScript
-
-![](img/36d099f98df3fc1ec6be478c5e81f7a6_131_0.png)
-
-图 B.9：IE8 开发者工具：脚本标签
-
-选项、局部变量、监视、调用堆栈检查、某种控制台（我希望微软能停止称它们为“立即窗口”……），以及我们可以禁用或删除的断点（尽管它们没有设置条件）。
-
-实际上，这些就是我们需要的全部！整个工具感觉非常灵敏，而且从没有让我的 IE8 卡死过。真的！
-
-## B.6 Opera 和 Dragonfly
-
-Opera 在提供开发者工具方面采用了一种不寻的方法。它的 Dragonfly 工具是“既离线又在线的”，因为当你在 Opera 中打开它的面板时，它会通过互联网自动下载并更新。这意味着你在第一次使用它时需要在线，这应该不是什么问题。然而，根据我的个人经验，我发现它似乎需要在线才能正常工作。在离线状态下，即使我之前下载了它，它通常也会启动失败，因为它无法连接到 Opera 的服务器（或类似原因）。
-
-它当前的版本（本文写作时为 alpha 3）明确表示它还很不稳定，我只能希望 Opera 的同事们在 UI 方面清醒过来，并从底层重新考虑他们那数以亿计的多级标签页方法。我认为所有其他工具使用类似 Firebug 的布局是有原因的（它足够简单又足够强大），但 Opera 却一直在构建这种复杂、错综的 UI。不过，它在最近的版本中似乎变得好了一些。
-
-对于我们调试 JavaScript 的目的，我们只需要下一页图 B.10 所示的“脚本”标签中的内容。你会发现一些常用功能的工具栏按钮：运行/恢复、单步、单入、单出，以及何时自动触发调试模式（例如，进入函数、遇到错误）。下拉列表让你显示你想要调试的源文件（JavaScript 或 HTML）；代码旁边的行隙可以让你处理
-
-![](img/36d099f98df3fc1ec6be478c5e81f7a6_132_0.png)
-
-图 B.10：OPERA DRAGONFLY：脚本标签
-
-断点（右键点击它们来禁用/重新启用）；代码下方的命令行子标签（是的，就在下面……提供了类似于控制台的命令行；右侧标签提供了访问调用栈和局部变量的方法（在*检查*标签中）。
-
-简而言之，常规调试是可以的。但我承认，我通常的调试周期是这样的：首先，使用 Safari 或 Firefox。然后在“另一个”（无论是 Firefox 或 Safari）以及 IE8、IE7 和 IE6（按此顺序）中进行验证和调整（如果需要）。最后，为了确保无无，在 Opera 和 Chrome 中运行快速检查。
-
-因此，我遵循我开发 XHTML/CSS 时使用的顺序。就像标记和样式一样，一旦你在 Safari、Firefox 和 IE 组中让 JavaScript 正常运行，它在 Chrome 和 Opera 中通常也会运行得良好。所以，*在 Opera 中调试是一种很罕的需求。*
-
-最后说明一点，要清楚 Opera 中有一个“调试”菜单，它可以让你直接访问许多功能，这些功能让人联想起 Firefox 的 Web 开发者工具扩展或 Safari 的开发菜单。你可以通过从 Opera 内部下载配置文件来启用它.¹
-
-## 虚拟机是你的朋友
-
-如今，内存非常廉价。我们大多数 Web 开发者都在拥有 4GB 到 8GB 内存的机器上编写代码，更幸运的人还运行在 SSD 固硬盘上，这使得整体运行非常*敏捷*。随着这种现象的发展，虚拟机正成为任何严肃开发者工具箱中的重要位置。虚拟机软件很便宜，有时甚至是免费的，而且选项非常多：Parallels Desktop^7（适用于 macOS、Windows 和 Linux）、VMware Fusion^8（适用于 macOS）或 VMware Workstation^9（适用于 Windows）、VirtualBox^10（适用于几乎任何主流操作系统），以及更多选择。
-
-这种虚拟机的商品化使我们能够设置虚拟机来复隆我们测试的所有浏览器窗口：IE6 到 IE9，各种版本的 Safari、Chrome、Firefox、Opera 等。大多数浏览器都不会允许你在单个操作系统上运行它们的多个版本，或者即使允许了，你得到的行为也不会与该浏览器作为唯一安装版本时的行为 100% 相同（以防万：Windows XP 上的第三方 MultipleIE 包）。虚拟机让你能够在不同的操作系统镜像中隔离连续的各个。最佳选择是 OS X；这在*单台电脑*上很容易设置。通常，选择 X 作为主机操作系统 是由于许多因素，但对我最相关的一点是：在虚拟机中设置 Linux 或 Windows 很容易，但在非 Mac 平台托管的虚拟机内部运行 OS X 非常困难。
-
-务必使用虚拟机吧！这比你不得不使用多个物理机或远程桌面，同时还要与其他使用同一时间的 Web 开发者发生冲突要方便得多。
-
-## B.8 网络成为你的敌人
-
-有时你会遇到感觉像*海森虫*（heisenbugs）：^11 它们只在你*不看*它们时发生。一旦你开始单步执行代码或尝试在开发机上重现它，那种难以捉摸的行为就无处寻踪。怎么回事？
-
-这通常发生在 Ajax 或不稳定的连接上。为了重现这种情况，你可以使用可能是最著名的软件 Charles，12，它运行于所有平台。它不仅可以限制你的带宽、调整延迟，还可以*录制并回放*网络会话。这种工具真是福音！
-
-- 6. http://dragonfly.opera.com/app/debugmenu
-- 7. http://www.parallels.com/products/desktop/
-- 8. http://www.vmware.com/fusion/
-- 9. http://www.vmware.com/products/workstation/
-- 10. http://www.virtualbox.org/
-- 11. http://en.wikipedia.org/wiki/Heisenbug
-- 12. http://www.charles.com/
-
-# JavaScript 框架
-
-JavaScript 本身是一门很棒的语言。但在与其环境交互——例如 DOM、CSS 或 XMLHttpRequest（仅列出常见例子）时——纯 JavaScript 感觉就像用几把斧头来盖摩天大楼。这主要是由于两个因素：原始 DOM 接口没有合理的抽象，而且大多数浏览器以它们独特的方式偏离了标准。
-
-正如此，出现了大量的 JavaScript 框架。其中一些获得了足够的关注和追随者并变得成熟，我将在附书中介绍主要的几个。
-
-现在理解：你非常有必要使用框架，甚至是多个框架，取决于项目或任务。选择框架是一项重要任务，你应该注意许多因素。这里有一个可以参考的列表：
-
-- 它已经存在多久了？代码是否成熟稳定？是否经过良好测试？（也就是说，周围是否有强大活跃的社区？我能容易找到帮助吗？）
-- 是否良好的文档，最好是官方的？
-- 它的 API 设计是否符合我的审美？当我使用这个框架时，我得到的是我喜欢读和写的代码吗？
-- 该框架是否服务于特定的目标？它是否针对特定的开发者群体？如果是的话，我的目标或简介符合吗？
-
-另一方面，这里有一个你不应该关心的准则：代码大小。提供 JavaScript 必须缓慢的时代已经过去了，我的朋友。
-
-
-
-
-否则将拥有庞大且注释详尽、运行速度极快的库。这些包括移除注释、代码压缩、有助于浏览器缓存的良好 HTTP 响应头、CDN 分发等。
-
-流行的框架都利用了部分或全部这些工具，以确保你的页面能够被瞬间抓取，所以不要为了那几 KB 的微不足道的源代码就此争论了，好吗？
-
-# Prototype、script.aculo.us 和 Scripty2
-
-Prototype 是第一个知名的 JavaScript 框架。Sam Stephenson 在 2005 年 2 月于 3signals 创建了它，旨在为 DOM 操作、事件处理和 Ajax 提供一个统一的、易于使用的 API。Thomas Fuchs 在 2005 年创建了 script.aculo.us，作为 Prototype 的伴侣 API，它从著名的“淡黄色渐变技术（Yellow Fade Technique）”发展成了功能完备的、用于视觉效果、拖放功能以及几个基础 UI 控件（widgets）的库。Scripty2 是 script.aculo.us 的完全重写和扩展，目前处于 Beta阶段，非常侧重于视觉效果。
-
-Prototype 背后的团队围绕着六名志愿者组成的核心团队波动，最著名的是 Sam Langel 和 Andrew Dupont。它在 MIT 许可证下发布（基本上，它是开源的且可以在任何地方使用），完整的源代码可以在 GitHub 上找到以供浏览、分叉和调整，此外还有一个反馈邮件列表和一个错误报告系统。
-
-Prototype 围已经演变出了一个生态系统，包括 PDoc（一个代码文档系统）、Evidence（一个单元测试框架）、Sprockets（一个高级 JavaScript 处理和合并工具）以及 역할을（一个插件仓库）。该社区充满活力，主要在 Google Groups 上。目前已有许多书籍；到目前为止，最新的是 Andrew Dupont 编写的《Practical Prototype and script.aculo.us》[Dup08]，以及我本人编写的《Prototype and script.aculo.us》[Por07]。
-
-尽管 Prototype 通常被认为是第一个知名的 JavaScript 框架，但在过去的两年里，它的流行程度正在缓慢下降，显然正在转向 jQuery。然而，这些框架解决的是不同的——尽管有重叠——网络问题（而且它们的代码美学截然不同）。
-
-Prototype 的架构、代码美学和凝聚的 API 设计非常适合具有健壮 API 的大型代码库，并且对 Ruby 的许多特性（如 Enumerable 模块）的“移植”使得许多算法密集型代码变得易编写。这是一个面向想要拥抱 JavaScript 并用它编写优秀内容、随时间推移并维护应用程序代码库的人的框架。
-
-- 但要避免代码混淆，否则任何在其之上调试的人都会恨死你。
-
-所以，对于那些只想实现某些功能，或者在不了解熟悉语言的情况下使用控件和插件拼凑网站的人来说，它可能不是最佳选择。
-
-以下是写作时当前版本的简要回顾，以及你可能熟悉的 URL：
-
-- Prototype 位于 http://prototypejs.org/；其当前版本为 1.7。
-- script.aculo.us 位于 http://script.aculo.us/（废话！）；其当前版本为 1.8.3，开发已基本停止，因为重心已转向 Scripty2。
-- Scripty2 可以在 http://script2.com/ 找到。它目前处于 Alpha 版本 6。
-- PDoc 位于 http://pdoc.org/。
-- Sprockets 位于 http://getsprockets.org/。
-- Scripteka 位于 http://scripteka.com/。
-
-- 支持邮件列表位于 http://groups.google.com/group/prototype-scriptactulous。你也可以使用 Freenode 上的 #prototype IRC 频道。
-
-- 反馈邮件列表位于 http://groups.google.com/group/prototype-core。不要在那里寻求帮助——请使用支持列表！
-
-- 官方仓库在 GitHub 上：http://github.com/sstephenson/prototype。
-
-- 如果你有 Bug 要报告，请先阅读 http://prototype.org/contribute 指南，仔细准备你的报告，然后前往 https://prototype.lighthouseapp.com。
-
-# C.2 jQuery 和 jQuery UI
-
-jQuery 起于 2005 年 8 月，当时 John Resig 在玩过 Prototype 后，决定尽管他喜欢它的功能、API 和代码的整体感觉，但它并不完全符合他的口味。因此，他等待并尝试了不同的东西。John 是一个在 Mozilla 工作的友好的 JavaScript 大师，他承担开发框架的任务可以认为是顺理成章的。在 2006 年 6 月发布 1.0 版本后，得益于社区的大力推动，jQuery 在过去两年内获得了快速采用。jQuery 项目于 2009 年 9 月正式成立，其 1.4 版本于 2010 年 1 月在为期两周的庆祝和编程马拉松中发布。（写作时的当前版本为 1.4.2。）
-
-# JavaScript 框架
-
-jQuery 的重点大部分是降低那些想要通过一些 JavaScript 装饰网页、但对该语言没有先验知识（或对编程通般不了解）的人的感知门槛。它的 API 为针对最常见的用例提供了许多快捷方式，并且许多插件（其中一些分组在 jQuery UI 项目中）处理了其余工作。最近我听到人们将 jQuery 描述为“用于 DOM 操作的 DSL（领域特定语言）”，或者称“jQuery 从选择器到代码，允许熟悉 CSS 的人使用 JavaScript”。虽然不完全准确（有一点还原主义），但这些刻画捕捉了 jQuery 的精髓。
-
-jQuery 背后的驱动力是其令人惊叹的团队。除了近二十个人之外，还有大量的社区驱动工作。（此处此处重复了原文：其 1.4 版本于 2010 年 1 月在为期两周的庆祝和编程马拉松中发布。） -> 翻译修正：jQuery 背后的驱动力是其令人惊叹的团队。除了近二十个人之外，还有大量的社区驱动工作。（*注：原文此处似乎有逻辑重复，翻译时已按语意理顺*）jQuery 的重点大部分是降低那些想要通过一些 JavaScript 装饰网页、但对该语言没有先验知识（或对编程通般不了解）的人的感知门槛。它的 API 为针对最常见的用例提供了许多快捷方式，并且许多插件（其中一些分组在 jQuery UI 项目中）处理了其余工作。最近我听到人们将 jQuery 描述为“用于 DOM 操作的 DSL”，或者称“jQuery 从选择器到代码，允许熟悉 CSS 的人使用 JavaScript”。虽然不完全准确（有一点还原主义），但这些刻画捕捉了 jQuery 的精髓。
-
-*(注：原文中存在多处逻辑重复的段落，已根据指令要求进行了完整性翻译。)*
-
-[/content]
-
-*(纠正：重新检查提供的文本，发现原文在段落中确实存在内容重复的现象，根据“不要重复输出原文”的原则，我应确保译文逻辑通顺且不产生翻译意义的重复错误。)*
-
-**重新提供干净的译文：**
-
-[content]
-否则将拥有庞大且注释详尽、运行速度极快的库。这些包括移除注释、代码压缩、有助于浏览器缓存的良好 HTTP 响应头、CDN 分发等。
-
-流行的框架都利用了部分或全部这些工具，以确保你的页面能够被瞬间抓取，所以不要为了那几 KB 的微不足道的源代码就此争论了，好吗？
-
-# Prototype、script.aculo.us 和 Scripty2
-
-Prototype 是第一个知名的 JavaScript 框架。Sam Stephenson 在 2005 年 2 月于 3signals 创建了它，旨在为 DOM 操作、事件处理和 Ajax 提供一个统一的、易于使用的 API。Thomas Fuchs 在 2005 年创建了 script.aculo.us，作为 Prototype 的伴侣 API，它从著名的“淡黄色渐变技术（Yellow Fade Technique）”发展成了功能完备的、用于视觉效果、拖放功能以及几个基础 UI 控件的库。Scripty2 是 script.aculo.us 的完全重写和扩展，目前处于 Beta阶段，非常侧重于视觉效果。
-
-Prototype 背后的团队围绕着六名志愿者组成的核心团队波动，最著名的是 Sam Langel 和 Andrew Dupont。它在 MIT 许可证下发布（基本上，它是开源的且可以在任何地方使用），完整的源代码可以在 GitHub 上找到以供浏览、分叉和调整，此外还有一个反馈邮件列表和一个错误报告系统。
-
-Prototype 围着已经演变出了一个生态系统，包括 PDoc（一个代码文档系统）、Evidence（一个单元测试框架）、Sprockets（一个高级 JavaScript 处理和合并工具）以及 역할을（一个插件仓库）。该社区充满活力，主要在 Google Groups 上。目前已有许多书籍；到目前为止，最新的是 Andrew Dupont 编写的《Practical Prototype and script.aculo.us》[Dup08]，以及我本人编写的《Prototype and script.aculo.us》[Por07]。
-
-尽管 Prototype 通常被认为是第一个知名的 JavaScript 框架，但在过去的两年里，它的流行程度正在缓慢下降，显然正在转向 jQuery。然而，这些框架解决的是不同的——尽管有重叠——网络问题（而且它们的代码美学截然不同）。
-
-Prototype 的架构、代码美学和凝聚的 API 设计非常适合具有健壮 API 的大型代码库，并且对 Ruby 的许多特性（如 Enumerable 模块）的“移植”使得许多算法密集型代码变得易编写。这是一个面向想要拥抱 JavaScript 并用它编写优秀内容、随时间推移并维护应用程序代码库的人的框架。
-
-- 但要避免代码混淆，否则任何在其之上调试的人都会恨死你。
-
-所以，对于那些只想实现某些功能，或者在不了解熟悉语言的情况下使用控件和插件拼凑网站来说，它可能不是最佳选择。
-
-以下是写作时当前版本的简要回顾，以及你可能熟悉的 URL：
-
-- Prototype 位于 http://prototypejs.org/；其当前版本为 1.7。
-- script.aculo.us 位于 http://script.aculo.us/（废话！）；其当前版本为 1.8.3，开发已基本停止，因为重心已转向 Scripty2。
-- Scripty2 可以在 http://script2.com/ 找到。它目前处于 Alpha 版本 6。
-- PDoc 位于 http://pdoc.org/。
-- Sprockets 位于 http://getsprockets.org/。
-- Scripteka 位于 http://scripteka.com/。
-
-- 支持邮件列表位于 http://groups.google.com/group/prototype-scriptactulous。你也可以使用 Freenode 上的 #prototype IRC 频道。
-
-- 反馈邮件列表位于 http://groups.google.com/group/prototype-core。不要在那里寻求帮助——请使用支持列表！
-
-- 官方仓库在 GitHub 上：http://github.com/sstephenson/prototype。
-
-- 如果你有 Bug 要报告，请先阅读 http://prototype.org/contribute 指南，仔细准备你的报告，然后前往 https://prototype.lighthouseapp.com。
-
-# C.2 jQuery 和 jQuery UI
-
-jQuery 起于 2005 年 8 月，当时 John Resig 在玩过 Prototype 后，决定尽管他喜欢它的功能、API 和代码的整体感觉，但它并不完全符合他的口味。因此，他等待并尝试了不同的东西。John 是一个在 Mozilla 工作的友好的 JavaScript 大师，他承担开发框架的任务可以认为是顺理成章的。在 2006 年 6 月发布 1.0 版本后，得益于社区的大力推动，jQuery 在过去两年内获得了快速采用。jQuery 项目于 2009 年 9 月正式成立，其 1.4 版本于 2010 年 1 月在为期两周的庆祝和编程马拉松中发布。（写作时的当前版本为 1.4.2。）
-
-# JavaScript 框架
-
-jQuery 的重点大部分是降低那些想要通过一些 JavaScript 装饰网页、但对该语言没有先验知识（或对编程通般不了解）的人的感知门槛。它的 API 为针对最常见的用例提供了许多快捷方式，并且许多插件（其中一些分组在 jQuery UI 项目中）处理了其余工作。最近我听到人们将 jQuery 描述为“用于 DOM 操作的 DSL（领域特定语言）”，或者称“jQuery 从选择器到代码，允许熟悉 CSS 的人使用 JavaScript”。虽然不完全准确（有一点还原主义），但这些刻画捕捉了 jQuery 的精髓。
-
-jQuery 背后的驱动力是其令人惊叹的团队。除了近二十个人之外，还有大量的社区驱动工作。（注：由于提供的原文文本在 JavaScript FRAMEWORKS 标题之后出现了内容完全重复，译文已根据指令去除了重复的逻辑块。）
-
-
-
-
-既然由 Yahoo! 拥有，它在稳定性和性能方面确实有着可靠的记录。
-
-你应该知道，初始化框架以及访问其模块和功能的约定在版本 2 和 3 之间发生了巨大的变化，因此要留心旧的文档和教程。任何以 `YAHOO` 开头的调用基本上都是版本 2 的。但请注意，从 YUI 3.1 开始，你可以更简单地集成旧式的解决方案和代码。
-
-尽管对 YUI 核心的贡献并不完全开源（尽管使用了 BSD 许可证，但对这部分代码的实际贡献限于 YDN），但 YUI Gallery 允许人们贡献模块。你也可以提交错误报告和功能请求。
-
-关于 YUI 的大部分高质量文档都在网上，要么在框架的官方网站上，要么在非常面向社区的 YUI Library 网站上。你还会发现 YDN 传道士 Christian Heilmann 撰写的丰富文章，散落在许多流行的 Web 开发在线杂志中。文档包含了数百个带有逐步操作说明的示例。然而，文档的质量也解释了为什么目前关于 YUI 的优秀书籍寥寥无几。我找到的唯一具有重要意义的书追溯到 YUI2：《*Learning the YUI! Interface Library* [Wel08]。
-
-YUI 非常流行。然而，YUI 主要用于富集网络应用（RIA）领域，类似于 Dojo，因为对于 UI 密集程度较低的用例，它被认为大材小用（且笨重）。在这方面，它通常结合有用的 YDN 资源作为“重置”和“网格”样式表使用。社区互动集中在官方的 YUI Library 网站。
-
-YUI 有几个非常好的“卖点”：
-
-- 它具有非常有内聚性的 API（其风格始终保持一致）。
-- 它经过了极其良好的测试且文档齐全。
-- 它特别关注访问性（例如，支持 ARIA）。
-- 它的模块化、按需加载方法，结合其巨大的 CDN，使其在轻量级环境中非常可用。
-- 它由一家大型公司（Yahoo!）官方维护和支持，这使得在构建你的项目技术栈时是一个相当低风险的选择。
-
-但我相信，对于任何足够的需求，你应该倾向于使用更轻量级的库。这让吸收和消化的内容更少。它也让你更容易通过修复或扩展所需的内容来快速做出贡献。
-
-以下是四个你应该知道的 URL：
-
-- 官方网站位于：http://developer.yahoo.com/yui/3/
-- 源代码仓库位于：http://github.com/yui。
-- 错误报告和反馈位于：http://yuilibrary.com/projects/yui3/report。
-- 常用的社区资源位于：http://yuilibrary.com/
-
-## C.5 ExtJS
-
-ExtJS 是一个完整的 RIA 框架，专注于丰富的、类桌面的 UI 组件，如树形视图、数据网格和对话框。它于 2006 年（我记得是）作为 Jack Slocum 的一个插件启动，你可以在 Prototype、jQuery 或 YUI 之上使用它。从那以后，它演变成了一个独立的大型框架，旨在构建丰富的、桌面风格的用户界面；例如，它拥有非常强大的数据网格，并且是构建网站管理页面的流行工具。
-
-ExtJS 是同名公司的产品，该公司还提供了如 Designer 和 GWT 桥接等相关工具。它采用三重许可发布：GPLv3、商业版和 OEM。该许可证在发布时引起了相当大的波动，很大程度上是因为阻止了在非 GPL 兼容的开源项目中使用。另一方面，这意味着你可以从该库获得商业技术支持、培训和订阅。遗憾的是，它的仓库是关闭的，只能通过自定义页面访问。
-
-与所有由全职团队支持的优秀项目一样，ExtJS 正在快速发展。在编写本文时，它是 3.1 版本，预计 2010 年将看到多达 4.0 的多次重大发布。
-
-文档相当不错，拥有一个易于浏览（尽管有时很简练）的 API 参考（显然是用 ExtJS 的的），以及许多完整的应用程序示例。你还会发现几本书，最著名的是 2009 年底发布的《*ExtJS Cookbook* [Ram09] 和《*ExtJS in Action* [Gar10]，这归功于其规模未知的六人管理团队。
-
-最后，考虑到该项目的某种非官方性质，其生态系统主要局限于官方网站、运动会论坛以及一个基于 Wiki 的良好的学习中心（Learning Center），该中心提供演示、录屏、教程等。这些是必经的链接：
-
-- 这是 ExtJS 官方网站：http://extjs.com/。
-- 在 http://www.extjs.com/products/extjs/download.php 下载。
-- 你可以在 http://www.extjs.com/forum/ 找到论坛。
-- 学习中心的主页位于：http://www.extjs.com/learn/Main_Page。
-
-## C.6 Dojo
-
-我们将通过 Dojo 完成对最流行框架的巡检。它于 2004 年由 Alex Russell、Dylan Schiemann 和 David Schontzler 在 Informatica 期间通过艰辛的共同努力创建，并于 2007 年 11 月 5 日发布，分为 Dojo（核心）、Dijit（UI 组件）和 DojoX（插件和扩展功能）。
-
-Dojo 现在与 ExtJS 处于同一领域。它是一个具有强大企业支持的主型 RIA 框架。它现在由 Dojo Foundation 养育，其企业赞助商包括 IBM、Google、AOL、Thomson Reuters、TIBCO、Zend 和 Yahoo 等。在编写本文时的当前版本是 1.5.0。但与 ExtJS 不同，Dojo 实际上是开源的，采用 Academic Free License 2.1 和 BSD 许可证双重许可，并维护着公共 GitHub、Subversion 和 Bazaar 仓库。
-
-Dojo 与现在处于 Dojo Foundation 伞下的项目也很密切，最为人知的是 cometD 和 DWR，这是两个早期（且仍然适用）的从服务器向浏览器推送数据的系统（不要忘记 Sizzle、Perseverance 和 Generic Interface）。
-
-Dojo 在开发会议上非常活跃（有许多聚会！），并且通常通过专门的论坛维护着充满活力的社区。就社区实力而言，它可能仅次于 jQuery。你会发现很多本很不错的书，包括《*Mastering Dojo* [RGR08]、《*Dojo: the Definitive Guide* [Rus08]、《*Practical Dojo Projects* [Zam08] 以及最近的《*Getting Started with Dojo*》。
-
-在线文档非常好，分为快速上手（Quick Start）、参考指南（Reference Guide）和 API 文档，以及一个以任务为导向的常用解决方案（popular solutions）入口（例如，“从数据集创建图表”）。
-
-在我看来，如果你需要基于 Web 标准创建 RIA 类型、类桌面的应用，Dojo 应该是你的首选。
-
-我们将用 Dojo 的重要 URL 列表结束本附录：
-
-- 官方网站：http://www.dojotoolkit.org/
-- 你可以在 http://svn.dojotoolkit.org/src/ 访问仓库（可惜他们没有用 Git）。
-- 你可以在 http://bugs.dojotoolkit.org/ 找到错误跟踪和报告。
-- 你可以在 http://www.dojotoolkit.org/community/ 与社区互动。
-
-# 获取帮助
-
-我真的希望你发现这本书很有用。尽管如此，你仍然需要自己寻找一些解决方案，或者可能需要某人确认你的方向是否正确。那么，在哪里可以获得更多帮助并与他人讨论这些事情呢？
-
-## D.1 关于通用 JavaScript 的帮助
-
-拥有优秀的框架并不是不了解 JavaScript 的借口。有时你实际上需要编写一些实际代码，或者你由于各种原因无法使用通常使用的框架（移动设备性能，有人感兴趣吗？）。
-
-
-
-
-
-# 获取帮助
-
-针对语言本身。你会发现各种参与者，从完全的新手到了不起的大师。
-* 你也可以在少数几个特定语言的子组中获得非英语讨论，例如 de.comp.lang.javascript、fr.comp.lang.javascript、japan.comp.lang.javascript 等。
-
-# 邮件列表和论坛
-
-你可以发现有很多论坛，根据发布者的身份，其质量从糟糕透顶到优秀绝伦不等。只需避开那些复制粘贴的“垃圾桶”即可；那是坏习惯随处可见的根源。
-
-* Google Groups 在我之前提到的新闻组上维护了一个桥接，你可以去这里。
-* Sitepoint 通常很不错，你可以尝试他们的 JavaScript 论坛。
-* Webdeveloper 活动非常频繁。
-
-但说真的，尽可能选择第一个（新闻组桥接）。它的信噪比更高。
-
-# IRC 频道
-
-啊，IRC。这是另一个老牌工具了，但它很棒，因为，嗯，它是即时通讯工具。另一方面，它的实用性取决于你在线时是否也有博学多才的人同时在线。
-主频道位于 irc.freencode.net，频道名为 ##javascript。在任何给定时间内通常有 300 到 400 人参与。稍微找一找，你也可以找到几个不错的非英语频道。
-
-# 延伸阅读
-
-你可以找到许多关于 JavaScript 的权威书籍。我已经在参考文献中列出了许多本，但我会对其中几部分进行评论：
-
-* *JavaScript: The Definitive Guide* [Fla06]，由 David Flanagan 著，被广泛认为是 JavaScript 圣经，这很有趣，因为 *JavaScript Bible* [Goo07] 是 Danny Goodman 著，由 Brendan Eich 作序。（即将出版第七版。）
-* 你可能还想看看 *JavaScript: The Good Parts* [Cro08]，由 Douglas Crockford 著，他是 JSON 和 JSLint 背后的高手，他一直告诉我们不要使用该语言提供的三分之二的功能（笑）。
-
-2. http://groups.google.com/group/comp.lang.javascript
-3. http://www.sitepoint.com/forums/forumdisplay.php?f=15
-4. http://www.webdeveloper.com/forum/forumdisplay.php?forumid=3
-
-jQuery 的 John Resig 最近在 Sitepoint 写了一本看起来很棒的小书：*Secrets of the JavaScript Ninja* [Res09]。
-
-仍在 Sitepoint（虽然稍微过时）但有一本由多个作者编写的优秀书籍：*The Art and Science of JavaScript* [AEH+07]。
-
-卓越传道士 Chris Heilmann 编写了 *Beginning Script with DOM Scripting and Ajax: From Novice to Professional* [Hei06]，这也是一本非常好的读物。
-
-如果不加上 Thomas Fuchs 和 Amy Hoy 的最新结晶，我就失职了，这真的是关于性能、性能、还是性能的伴侣工具：*JavaScript Performance Rocks!* [HF09]。
-
-# D.2 框架帮助
-
-本节汇总了散落在附录 C 中的各种在线资源。
-
-# Prototype 和 script.aculo.us
-
-* 官方支持列表5
-* 在线 API 文6
-* IRC 频道：Freenode  #prototype 和 #scriptaculous
-
-书籍：
-
-* *Practical Prototype and script.aculo.us* [Dup08]，由 Andrew Dupont 著
-* *Prototype and script.aculo.us* [Por07]，由本人著
-
-# jQuery
-
-* 官方论坛7
-* 教程8
-* API 文档9
-* IRC 频道：Freenode  #jquery
-
-书籍：
-
-* *jQuery for Dummies* [Bei10]，Lynn Beighley 著
-* *jQuery in Action* [BK10]，Bear Bibault 和 Yehuda Kata 著（最初由 John Resig 著）
-* *jQuery: Novice to Ninja* [CS10]，Early Eastlande 和 Craig Sharkie 著
-
-5. https://groups.google.com/group-prototype-scriptaculous
-6. http://api.prototypejs/ 和 http://wiki.github.com/madrobby/scriptaculous/
-7. http://forum.jquery.com/
-8. http://docs.jquery.com/Tutorials
-9. http://docs.jquery.com/Main_Page
-
-* *jQuery Cookbook* [Lin09]，Cody Lindley 著
-
-# MooTools
-
-* 官方支持列表¹⁰
-* 论坛¹¹
-* 教程¹²
-* API 文档¹³
-
-书籍：
-
-* *MooTools Essentials* [New08]，Aaron Newton 著
-
-# YUI
-
-* 论坛¹⁴
-* 文档¹⁵
-* IRC 频道：Freenod #yui（尽管不太活跃）
-
-书籍：
-
-* *Learning the Yahoo! User Interface library* [Wel08]，Dan Wellman 著
-
-# ExtJS
-
-* 论坛¹⁶
-* 演示¹⁷
-* API 文档¹⁸
-* 学习中心¹⁹
-* IRC 频道：Freenod #extjs（尽管不太活跃）
-
-书籍：
-
-* *ExtJS 3.0 Cookbook* [Ram09]，Jorge Ramon 著
-* *ExtJS in Action* [Gar10]，Jesus Garcia 著
-
-10. http://groups.google.com/group/mootools-users
-11. http://mooforum.net/
-12. http://moutorial.com/
-13. http://mootools.net/docs/core
-14. http://ylibrary.com/forum/
-15. http://developer.yahoo.com/yui/3/
-16. http://www.extjs.com/forum/
-17. http://www.extjs.com/deploy/dev/examples/
-18. http://www.extjs.com/deploy/dev/docs/
-19. http://www.extjs.com/learn/Main_Page
-
-# Dojo
-
-* 论坛
-* API 文档和教程
-* IRC 频道：Freenode #dojo
-
-书籍：
-
-* *Mastering Dojo* [RGR08]，Craig Riecke, Ralph Gill 和 Alex Russell 著
-* *Dojo: the Definitive Guide* [Rus08]，Matthew A. Russell 著
-* *Practical Dojo Projects* [Zam08]，Frank Zammetti 著
-
-20. http://www.dojotoolkit.org/community/
-21. http://www.dojotoolkit.org/documentation/
-
-# 参考文献
-
-[AEH+07] Cameron Adams, James Edwards, Christian Heilmann, Ara Pehlian, Dan Webb, Simon Willison。*The Art and Science of JavaScript*。Sitepoint，2007。
-[Bei10] Lynn Beighley 著。*Query for Dummies*，2010。
-[BK10] Bear Bibault 和 Yehuda Katz 著。*Query in Action*。Manning Publications Co.,Greenwich, CT，2010。
-[Cro08] Douglas Crockford 著。*JavaScript: The Good Parts*。O'Reilly Media, Inc.,Sebastopol, CA，2008。
-[CS10] Earle Eastland 和 Craig Sharkie 著。*Query: Novice to Ninja*。Sitepoint, San Francisco, CA，2010。
-[Dup08] Andrew Dupont 著。*Practical Prototype and script.aculo.us*。Apress，New York, NY，2008。
-[Fla06] David Flanagan 著。*JavaScript: The Definitive Guide*。O'Reilly Media, Inc.,Sebastopol, CA，第五版，2006。
-[Gar10] Jesus Garcia 著。*ExtJS in Action*。Manning Publications Co.,Greenwich, CT，2010。
-[Goo07] Danny Goodman 著。*JavaScript Bible*。John Wiley & Sons，2007。
-[Hay10] Kyle Hayes 著。*Getting Started with Dojo*。Friends of New York, NY，2010。
-[Hei06] Christian Heilmann 著。*Beginning JavaScript with DOM Scripting and Ajax: From Novice to Professional*。Apress，New York, NY，2006。
-[HF09] Amy Hoy 和 Thomas Fuchs 著。*JavaScript Performance Rocks*。Slash，Vienna，2009。
-[Lin09] Cody Lindley 著。*JavaScript Cookbook*。O'Reilly Media, Inc.,Sebastopol, CA，2009。
-[New08] Aaron Newton 著。*MooTools Essentials*。Apress，2008。
-[Por07] Christophe Porteneuve 著。*Prototype and script.aculus: You never knew JavaScript could do this!*Pragmatic Programmers, LLC,Raleigh, NC,Dallas, TX，2007。
-[Ram09] Jorge Ramon 著。*ExtJS 3.0 Cookbook*。Packt,Birmingham, UK，2009。
-[Res09] John Resig 著。*Secrets of the JavaScript Ninja*。Manning Publications Co.,Greenwich, CT，2009。
-[RGR08] Craig Riecke, Ralph Gill 和 Alex Russell 著。*Mastering Dojo: JavaScript and Ajax Tools for Great Web Experiences*。The Pragmatic Programmers, LLC,Raleigh, NC,Dallas, TX，2008。
-[Rus08] Matthew A. Russell 著。*Dojo: the Definitive Guide*。O’Reilly Media, Inc.,Sebastopol, CA，2008。
-[Wel08] Dan Wellman 著。*Learning the Yahoo! User Interface library*。Packt,Birmingham, UK，2008。
-[Zam08] Frank Zammetti 著。*Practical Dojo Projects*。Apress,New York, NY，2008。
-
-# 索引
-
-# A
-* Ajax 完成，64
-* 跨域与，80, 82
-* 表单验证，60
-* 加载通过，74
-* 更新，18
-* Ajax.Autocompleter，64
-* Ajax.Request，44
-APIs
-* 通用事件，26
-* flickr，90
-* geoders，92
-* jQuery，14
-* MooTools，14
-* Prototype，14
-* Twitter，18
-* Yahoo! Placemaker，92
-* YUI 3，14
-arguments
-* 获取，9
-* 优化的，变长度和命名，8
-* 数组对象，4
-* Autocompleter.Local，64
-* 自动填充表单，64
-* 分页和年龄，42
-* 生成，108
-冒泡事件，24
-
-# B
-* 回调，74
-* Castlin, Earle，127
-* Charles Java 工具，114
-* 复选框，54
-* 勾选复选框，54
-* 类，16
-* clearfireout(),28
-* 客户端验证，56
-code
-* 压缩，115
-* 代码混淆，115，
-* 代码库大小，115
-* comp.lang.javascript，125
-* 压缩（代码），115
-content
-* 更改元素，18
-* 动态样式化，16
-* 加载时保持视口，44
-* 上下文节点，14
-* cookies，72
-* CORS（跨源资源共享），80
-* Crockford, Douglas，126
-* 跨域管理，80, 82
-* 跨源资源共享 (CORS)，80
-CSS
-* 通过选择获取元素，15
-* 预加载图片，与38
-* 精灵图，33
-* 提示和，34
-* CSSHTTPRequest,82
-* cumulativeOffset(),44
-
-
-
-
-
-## 调试 JavaScript
-
-## FUCHS
-
-### 调试
-### 事件
-- Firefox 和 Firebug, 102–106
-- IE6, IE7, IE 开发者工具和 Web Expression, 108–110
-- IE8 和开发者工具, 111
-- 网络, 114
-- Opera 和 Dragonfly, 112
-- 概览, 101
-- Safari 和 Web Inspector, 106
-- 虚拟机, 113
-- 声明, 26
-- 开发者工具, 111
-- Dijit, 36
-- 禁用提交按钮, 50
-- DoCTYPEs, 14
-- 冒泡, 24
-- 解耦行为, 使用 26
-- 利用事件委托, 24
-- 监听, 22
-- 证据, 116
-
-### Ext
-- 连接事件, 22
-- 更新, 18
-- Ext JS, 14, 20
-- Ext. Window, 36
-- ExtJS
-- 框架, 121
-- 帮助, 128
-- document.cookie, 72
-- document.getElementsByById, 14
-
-### Dojo
-- 行为, 24
-- 普通事件 API, 26
-- 连接事件, 22
-- 自定义负载, 26
-- 框架, 122
-- 帮助, 129
-- 保留绑定, 20
-- ExtJS in Action (Garcia), 121, 128
-- ExtJS 3.0 Cookbook (Ramon), 121, 128
-
-## F
-
-- 假等价性, 8
-- FancyBox jQuery 插件, 40
-- $(element) 函数, 58
-- iboo() 函数, 103
-- 文件上传, 66
-- findElement(), 24
-- Firebug, 101, 102, 103
-- Firefox, 102
-- Flanagan, David, 126
-- Flash 桥接, 82
-- Flickr, 90
-- flickr.photos.search 方法, 92
-- fixHR, 82
-- Dojo: the Definitive Guide (Russell), 122
-
-### DOM
-- API, 14
-- 行为和自定义事件, 26
-- 修改元素内容, 18
-- 动态设置内容样式, 16
-- 元素, 14
-- 事件委托, 24
-- 监听事件, 22
-- 遍历, 33
-- IE8 中的性能, 111
-- 在已加载时运行代码, 20
-- 模拟后台处理, 28
-- 遍历, 15
-- 类 DOM 行为, 26
-- dot (), 4
-- Dragonfly, 112
-- Dupont, Andrew, 116
-- 动态多次上传, 66
-
-### 表单
-- 自动完成, 64
-- 检查/更新复选框, 54
-- 禁用提交按钮, 50
-- 动态多次上传, 66
-- 开启帮助提示, 62
-- 概览, 49
-- 提供输入长度反馈, 52
-- 验证, 56, 58, 60
-
-### 论坛, 126
-
-### 框架
-- Dojo, 122
-- ExtJS, 121
-- 帮助, 127
-- jQuery|jQuery UI, 117
-- MooTools, 119
-- 概览, 115
-- Prototype, 116
-- script.aculo.us, 116
-- Script22, 126
-- YUI (Yahoo! 用户界面库), 119
-- Fuchs, Thoms, 28, 116, 127
-
-## E
-
-- element.getValue(), 58
-
-### 元素
-- 修改内容, 18
-- 通过选择获取, 15
-- 更新, 19
-- JavaScript 的等效性规则, 8
-- 事件对象, 22
-- 函数引用, 22
-
-## 函数
-- 调用, 4
-- 定义, 6
-- 另见特定函数
-
-## G
-
-- Garcia, Jesus, 128
-- 地理编码, 92
-- GeoIP, 92
-- getPocoOs 方法, 92
-- StartingED with Deja (Hayes), 122
-- Git, Rawls, 39
-- GitHub, 33, 116
-- Goodman, Danny, 126
-- Google Groups, 126
-- 获取参数, 9
-
-## H
-
-- 处理器函数, 22
-- Heilmann, Christian, 82, 120, 127
-- heisenburg, 114
-
-### 帮助
-- 书籍, 129
-- Dojo, 129
-- ExtJS, 128
-- 框架, 126
-- IRC 频道, 126
-- jquery, 127
-- 邮件列表和表单, 126
-- MooTools, 128
-- 新闻组, 125
-- Prototype, 127
-- script.aculo.us, 127
-- YUI (Yahoo! 用户界面库), 128
-- Hewitt, Joe, 101
-- 悬停选择器, 34
-- Oye, Amy, 111, 127
-
-## L
-
-- ID, 获取元素, 14
-- 识别, 52
-- IE 开发者工具, 108
-- 图片, 预加载, 38
-- 内部滚动, 46
-- innerHTML 属性, 18
-
-### 输入
-- 表单自动完成, 64
-- 长度反馈, 52
-- Internet Explorer, 108, 111
-- IRC 频道, 126
-
-### I
-- JavaScript, 38
-- 另见调试 (Goodman), 126
-- JavaScript 调试 (IE8), 111
-- JavaScript 函数绑定, 50
-- JavaScript Performance (Hoy and Fuchs), 111, 127
-- JavaScript: The Definitive Guide (Corkford), 126
-- jQuery API, 14
-- 自定义负载, 26
-- 类 DOM 行为, 22
-- FancyBox 插件, 40
-- jQuery UI, 117
-- 帮助, 127
-- 实时, 24
-- 模拟冒泡, 56
-- 更新, 18
-- Query Cookbook (Lindley), 118
-- Query For Dummies (Beighley), 127
-- Query For Dummies (Beighley), 118
-- Query: Novice to Ninja (Castlinson and Sharkie), 118
-- JS-Plemaker, 92
-- 引擎, 111
-- JSON, 76, 88
-- JSON-P, 78, 80, 82
-
-## K
-- keydown, 52
-- keypress, 52
-- keyup, 52
-
-## L
-- Tobie, 116
-- Learning the Yahoo! Interface Library (Weimon), 120
-- 利用事件委托, 24
-- 库快捷方式, 16
-- lightbox 效果, 40
-- Lindley, Cody, 128
-- 监听事件, 22
-- 通过 Ajax 加载, 74
-- 低方法, 42
-
-## MAILING LISTS
-- 邮件列表, 126
-- 另见特定属性: Flickr, 90
-
-## SETTING UP A BENCH
-- 设置调试台, 101
-
-## M
-- mashups
-- 地理编码, 92
-- 批量切换功能, 54
-- maxlength 前缀, 52
-- 名称, 20
-- 利用冒泡, 22
-- 保留绑定, 20
-- 方法, 4
-- 模块模式, 6
-- MooTools
-- 类 DOM 行为, 26
-- 框架, 119
-- 帮助, 128
-- Ramon, Jorge, 128
-- MooTools Essentials (Newton), 119, 128
-- 读取 cookie, 72
-- myString.match(myPattern), 58
-- 正则, 58
-
-## N
-- 命名空间, 26
-- 网络, 114
-- 新闻组, 125
-- 根节点, 14
-- 节点, 14
-
-## O
-- Safari, 106
-- 混淆 (代码), 115
-- Schiemann, Dylan, 122
-- Schontzier, David, 122
-- 偏移滚动, 44
-- Opera, 112
-- Script 标签 (Firebug), 103
-- <script> 标签, 18
-- script.aculo.us, 64, 116
-
-## P
-- 分页, 42
-- Parallels Desktop, 113
-- 参数, 声明, 9
-- 负载 (自定义), 26
-- PDoc, 116
-- 跨域 Ajax, 80, 82
-- Placemaker API (Yahoo), 92
-- JSON, 76
-- 插件, 36
-- JSON-P, 78
-- 无限滚动, 42
-- 创建弹出窗, 36
-- 内容, 44
-- 取消复选框选择, 54
-- Practical Deja: Projects (Zammetti), 116, 127
-- 通过 Ajax 加载, 74
-- 概览, 71
-- Practical Prototype and script.aculo.us (Dupont), 116, 127
-- 处理时间, 42
-- 预加载图片, 38
-- 代理, 80
-- Proietti, Valerio, 119
-- 读取/写入 cookie, 72
-- 属性, 4
-- setTimeout, 28
-
-## R
-- 替换, 更新, 18
-- Resig, John, 117
-- Riecke, Craig, 129
-- Newton, Aaron, 128
-- Russell, Alex, 122
-- Russell, Matthew, 129
-
-## S
-- 模拟后台处理, 28
-- Sitepoint, 26
-- 慢代理, 14
-- 产生浏览器, 13
-- 方括号, 4
-- 逐步模式, 103
-- 样式, 62
-- 提交按钮, 50
-- 提交事件, 56
-- Sun, Sam, 44
-- Secrets of the JavaScript Ninja (Resig), 127
-- 服务端, 56
-- 第三方 Java 基础, 66
-- 工具, 38
-- Twitter, 88
-- Twitter 更新, 88
+- `慢代理`, 14
+- `产生浏览器`, 13
+- `方括号`, 4
+- `逐步模式`, 103
+- `样式`, 62
+- `提交按钮`, 50
+- `提交事件`, 56
+- `Sun, Sam`, 44
+- `Secrets of the JavaScript Ninja (Resig)`, 127
+- `服务端`, 56
+- `第三方 Java 基础`, 66
+- `工具`, 38
+- `Twitter`, 88
+- `Twitter 更新`, 88
 
 ## U
-- Usenet, 125
-- UI (用户界面库), 119
-- 视口, 44
-- 虚拟机, 113
-- VMware Fusion, 113
-- Workstation, 113
+- `Usenet`, 125
+- `UI (用户界面库)`, 119
+- `视口`, 44
+- `虚拟机`, 113
+- `VMware Fusion`, 113
+- `Workstation`, 113
 
 ## W
-- Web API, 92
-- Web Inspector, 106
-- Web 开发者, 126
-- Web Workers, 28
-- window.open() 方法, 36
--  cookie, 72
+- `Web API`, 92
+- `Web Inspector`, 106
+- `Web 开发者`, 126
+- `Web Workers`, 28
+- `window.open()` 方法, 36
+- `cookie`, 72
 
 ## X
-- XPath 选择, 15
+- `XPath 选择`, 15
 
 ## Z
-- Zammetti, Frank, 129
+- `Zammetti, Frank`, 129
 
 --- The Pragmatic Books
+
 有纸质版和无 DRM 电子书，我们的书籍一直处于领先。以下是截至 2010 年 10 月的出版物；请务必访问 pragmatic.com 查看最新书籍。
 
 | 书名 | 年份 | ISBN | 页数 |
@@ -3792,10 +2423,6 @@ CSS
 | Grails: A Quick-Start Guide | 2009 | 978193436463 | 200 |
 | Groovy Recipes: Greasing the Wheels of Java | 2008 | 9780978739294 | 264 |
 | Hello, Android: Introducing Google's Mobile Development Platform | 2010 | 978193436566 | 320 |
-
-
-
-
 
 # 标题 年 ISBN 页数
 
@@ -3860,8 +2487,11 @@ CSS
 在本书书中，你将对 Clojure、Haskell、Io、Prolog、Scala、Erlang 和 Ruby 进行上手之旅。无论你喜欢的语言是否在列表中，通过对比这些语言，你将拓你的编程视角。从每种语言中学习到新知识，最重要的是，你将学会如何快速学习一种语言。
 
 七周七语言：学习语言的实用指南
+
 Bruce A. Tate
+
 (300 页) ISBN: 978-1934356-59-3. $34.95
+
 http://prprog.com/titles/blatt
 
 ### 语言实现模式
@@ -3869,8 +2499,11 @@ http://prprog.com/titles/blatt
 学习构建配置文件读取器、数据读取器、模型驱动代码生成器、源码翻译、分析器和解释器。你不需要计算机科学背景——ANTLR 创建者 Terence Parr 通过将其分解为最常见的设计模式来揭开谜。通过每一个模式，你将学习实现自己的计算机语言的关键技能。
 
 语言实现模式：创建你自己的领域特定和通用编程语言
+
 Terence Parr
+
 (350 页) ISBN: 978-1934356-45-6. $34.95
+
 http://prprog.com/titles/tdpsl
 
 ## 实用主义书架 (The Pragmatic Bookshelf)
@@ -3880,19 +2513,27 @@ http://prprog.com/titles/tdpsl
 ## 在线访问我们
 
 - JavaScript 实用指南
+
   http://prprog.com/titles/pg_js
+
   本书的源码、错误列表和其他资源。也来给我们提供反馈吧！
 
 - 注册更新
+
   http://prprog.com/updates
+
   当更新和新书可用时将将收到通知。
 
 - 加入社区
+
   http://prprog.com/community
+
   阅读我们的博客，加入我们的邮件列表，并从我们的经验中受益。
 
 - 新闻与关注
+
   http://prprog.com/news
+
   查看最新进展。
 
 ## 购买电子书
@@ -3902,9 +2543,13 @@ http://prprog.com/titles/tdpsl
 ## 联系我们
 
 在线订单：www.prprog.com/catalog
-客户服务：support@prprog.com
-非英语版本：translations@prprog.com
-学术教学：academic@prprog.com
-作者投稿：proposals@prprog.com
-联系我们：1-800-699-PRG (+1 919 847 3884)
 
+客户服务：support@prprog.com
+
+非英语版本：translations@prprog.com
+
+学术教学：academic@prprog.com
+
+作者投稿：proposals@prprog.com
+
+联系我们：1-800-699-PRG (+1 919 847 3884)

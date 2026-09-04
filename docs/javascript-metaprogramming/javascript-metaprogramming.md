@@ -1,13 +1,9 @@
+
 # Javascript 元编程
-
-
-
-
-
 
 ## 这是什么？
 
-> “编写那些编写或操纵其他程序（或自身）作为其数据的计算机程序”
+> "编写那些编写或操纵其他程序（或自身）作为其数据的计算机程序"
 
 ## 用 JavaScript 实现？！
 
@@ -39,10 +35,10 @@ function()
 
 ### （几乎）一切都是哈希表 (hash)
 
-数字 (number)
-字符串 (string)
-布尔值 (boolean)
-未定义 (undefined)
+- 数字 (number)
+- 字符串 (string)
+- 布尔值 (boolean)
+- 未定义 (undefined)
 
 ### 其他所有都是对象 (Object)
 
@@ -53,7 +49,7 @@ myObj[45435] = true;
 myObj[true] = 'hello';
 ```
 
-# 这对任何对象有效
+## 这对任何对象有效
 
 ```javascript
 var now = new Date;
@@ -108,7 +104,7 @@ for (var key in person) {
 ```
 
 ```javascript
-// 使用上一个示例中的 
+// 使用上一个示例中的
 // person 对象...
 if ("tel" in person) {
   alert(person.tel);
@@ -147,8 +143,9 @@ anArray instanceof Array //=> true
 an0 instanceof Array //=> false
 ```
 
-### 第一个 typeof
-然后 instanceof
+### 第一个 `typeof`
+
+然后 `instanceof`
 
 ### 函数也是对象
 
@@ -163,7 +160,7 @@ a.sum = sum;
 a.sum(1, 2); // => 3
 ```
 
-### ‘方法’只是赋值给对象属性的函数
+### '方法'只是赋值给对象属性的函数
 
 ```javascript
 var a = { counter : 5 };
@@ -226,7 +223,7 @@ a.increment.call(b, 1); // => 6
 a.increment.apply(b, [1]); // => 7
 ```
 
-### arguments (参数)
+### `arguments` (参数)
 
 ```javascript
 // 所有发送到函数的
@@ -389,7 +386,7 @@ console.log(home.constructor); //=> Coord
 
 ### 构造函数只是函数
 
-### 魔法在于 new 运算符
+### 魔法在于 `new` 运算符
 
 ```javascript
 var london = new Coord(32, 13);
@@ -453,7 +450,9 @@ pub.__proto__.__proto__ == Coord
 ```
 
 ### 重点在于：
+
 它们都只是函数、
+
 对象和属性
 
 ### 我们可以对它们进行任何操作。
@@ -482,9 +481,6 @@ if (!Array.prototype.forEach) {
   }
 }
 ```
-
-
-
 
 ### 自优化代码
 
@@ -531,11 +527,11 @@ Event.observe(window, 'load', function() {
 show('state').when('country').is('United States');
 ```
 
-#领域特定语言
+## 领域特定语言
 
-### DOMBuilder
+### `DOMBuilder`
 
-http://danwebbb.net/lowpro
+`http://danwebbb.net/lowpro`
 
 ```javascript
 var ul = document.createElement('ul');
@@ -562,7 +558,7 @@ var ul = $ul({ id : 'my_list' },
 
 ### John Resig 的方法重载
 
-http://ejohn.org/blog/javascript-method-overloading/
+`http://ejohn.org/blog/javascript-method-overloading/`
 
 ```javascript
 var users = new Users();
@@ -602,9 +598,9 @@ function addMethod(object, name, fn){
 }
 ```
 
-## Prototype 1.6 类
+## `Prototype` 1.6 类
 
-http://prototypejs.org/learn/class-inheritance
+`http://prototypejs.org/learn/class-inheritance`
 
 ```javascript
 var Person = Class.create({
@@ -640,4 +636,3 @@ john.say('ahoy matey');
 - 如果还没有完全理解，不要担心。试着玩一下。稍后提供幻灯片。
 
 ## 敬请期待...
-

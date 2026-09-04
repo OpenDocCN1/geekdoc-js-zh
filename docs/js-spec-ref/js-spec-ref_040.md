@@ -1,23 +1,5 @@
+
 # 6.1 浏览器的 JavaScript 引擎
-
-*   JavaScript 代码嵌入网页的方法
-    *   直接添加代码块
-    *   加载外部脚本
-    *   行内代码
-    *   外部脚本的加载
-        *   网页底部加载
-        *   多个脚本的加载
-        *   defer 属性
-        *   async 属性
-        *   脚本的动态嵌入
-        *   加载使用的协议
-    *   JavaScript 虚拟机
-    *   单线程模型
-    *   Event Loop
-    *   任务队列
-    *   参考链接
-
-浏览器通过内置的 JavaScript 引擎，读取网页中的代码，对其处理后运行。
 
 ## JavaScript 代码嵌入网页的方法
 
@@ -25,7 +7,7 @@
 
 ### 直接添加代码块
 
-通过 script 标签，可以直接将 JavaScript 代码嵌入网页。
+通过 `script` 标签，可以直接将 JavaScript 代码嵌入网页。
 
 ```js
 <script>
@@ -35,7 +17,7 @@
 
 ### 加载外部脚本
 
-script 标签也可以指定加载外部的脚本文件。
+`script` 标签也可以指定加载外部的脚本文件。
 
 ```js
 <script src="example.js"></script>
@@ -47,7 +29,7 @@ script 标签也可以指定加载外部的脚本文件。
 <script charset="utf-8" src="example.js"></script>
 ```
 
-加载外部脚本和直接添加代码块，这两种方法不能混用。下面代码的 console.log 语句直接被忽略。
+加载外部脚本和直接添加代码块，这两种方法不能混用。下面代码的 `console.log` 语句直接被忽略。
 
 ```js
 <script charset="utf-8" src="example.js">
@@ -57,7 +39,7 @@ script 标签也可以指定加载外部的脚本文件。
 
 ### 行内代码
 
-除了上面两种方法，HTML 语言允许在某些元素的事件属性和 a 元素的 href 属性中，直接写入 JavaScript。
+除了上面两种方法，HTML 语言允许在某些元素的事件属性和 `a` 元素的 `href` 属性中，直接写入 JavaScript。
 
 ```js
 <div onclick="alert('Hello')"></div>
@@ -74,12 +56,16 @@ script 标签也可以指定加载外部的脚本文件。
 正常的网页加载流程是这样的。
 
 1.  浏览器一边下载 HTML 网页，一边开始解析
-2.  解析过程中，发现 script 标签
-3.  暂停解析，下载 script 标签中的外部脚本
+
+2.  解析过程中，发现 `script` 标签
+
+3.  暂停解析，下载 `script` 标签中的外部脚本
+
 4.  下载完成，执行脚本
+
 5.  恢复往下解析 HTML 网页
 
-也就是说，加载外部脚本时，浏览器会暂停页面渲染，等待脚本下载并执行完成后，再继续渲染。如果加载时间很长（比如一直无法完成下载），就会造成网页长时间失去响应，浏览器就会呈现“假死”状态，失去响应，这被称为“阻塞效应”。这样设计是因为 JavaScript 代码可能会修改页面，所以必须等它执行完才能继续渲染。为了避免这种情况，较好的做法是将 script 标签都放在页面底部，而不是头部。当然，如果某些脚本代码非常重要，一定要放在页面头部的话，最好直接将代码嵌入页面，而不是连接外部脚本文件，这样能缩短加载时间。
+也就是说，加载外部脚本时，浏览器会暂停页面渲染，等待脚本下载并执行完成后，再继续渲染。如果加载时间很长（比如一直无法完成下载），就会造成网页长时间失去响应，浏览器就会呈现“假死”状态，失去响应，这被称为“阻塞效应”。这样设计是因为 JavaScript 代码可能会修改页面，所以必须等它执行完才能继续渲染。为了避免这种情况，较好的做法是将 `script` 标签都放在页面底部，而不是头部。当然，如果某些脚本代码非常重要，一定要放在页面头部的话，最好直接将代码嵌入页面，而不是连接外部脚本文件，这样能缩短加载时间。
 
 将脚本文件都放在网页尾部加载，还有一个好处。在 DOM 结构生成之前就调用 DOM，JavaScript 会报错，如果脚本都在网页尾部加载，就不存在这个问题，因为这时 DOM 肯定已经生成了。
 
@@ -91,9 +77,9 @@ script 标签也可以指定加载外部的脚本文件。
 </head>
 ```
 
-上面代码执行时会报错，因为此时 body 元素还未生成。
+上面代码执行时会报错，因为此时 `body` 元素还未生成。
 
-一种解决方法是设定 DOMContentLoaded 事件的回调函数。
+一种解决方法是设定 `DOMContentLoaded` 事件的回调函数。
 
 ```js
 <head>
@@ -105,7 +91,7 @@ script 标签也可以指定加载外部的脚本文件。
 </head>
 ```
 
-另一种解决方法是，使用 script 标签的 onload 属性。当 script 标签指定的外部脚本文件下载和解析完成，会触发一个 load 事件，可以为这个事件指定回调函数。
+另一种解决方法是，使用 `script` 标签的 `onload` 属性。当 `script` 标签指定的外部脚本文件下载和解析完成，会触发一个 `load` 事件，可以为这个事件指定回调函数。
 
 ```js
 <script src="jquery.min.js" onload="console.log(document.body.innerHTML)">
@@ -125,63 +111,70 @@ script 标签也可以指定加载外部的脚本文件。
 
 ### 多个脚本的加载
 
-如果有多个 script 标签，比如下面这样。
+如果有多个 `script` 标签，比如下面这样。
 
 ```js
 <script src="1.js"></script>
 <script src="2.js"></script>
 ```
 
-浏览器会同时平行下载 1.js 和 2.js，但是执行时会保证先执行 1.js，然后再执行 2.js，即使后者先下载完成，也是如此。也就是说，脚本的执行顺序由它们在页面中的出现顺序决定，这是为了保证脚本之间的依赖关系不受到破坏。
+浏览器会同时平行下载 `1.js` 和 `2.js`，但是执行时会保证先执行 `1.js`，然后再执行 `2.js`，即使后者先下载完成，也是如此。也就是说，脚本的执行顺序由它们在页面中的出现顺序决定，这是为了保证脚本之间的依赖关系不受到破坏。
 
 当然，加载这两个脚本都会产生“阻塞效应”，必须等到它们都加载完成，浏览器才会继续页面渲染。
 
 此外，对于来自同一个域名的资源，比如脚本文件、样式表文件、图片文件等，浏览器一般最多同时下载六个。如果是来自不同域名的资源，就没有这个限制。所以，通常把静态文件放在不同的域名之下，以加快下载速度。
 
-### defer 属性
+### `defer` 属性
 
-为了解决脚本文件下载阻塞网页渲染的问题，一个方法是加入 defer 属性。
+为了解决脚本文件下载阻塞网页渲染的问题，一个方法是加入 `defer` 属性。
 
 ```js
 <script src="1.js" defer></script>
 <script src="2.js" defer></script>
 ```
 
-defer 属性的运行过程是这样的。
+`defer` 属性的运行过程是这样的。
 
 1.  浏览器开始解析 HTML 网页
-2.  解析过程中，发现带有 defer 属性的 script 标签
-3.  浏览器继续往下解析 HTML 网页，同时并行下载 script 标签中的外部脚本
+
+2.  解析过程中，发现带有 `defer` 属性的 `script` 标签
+
+3.  浏览器继续往下解析 HTML 网页，同时并行下载 `script` 标签中的外部脚本
+
 4.  浏览器完成解析 HTML 网页，此时再执行下载的脚本
 
-有了 defer 属性，浏览器下载脚本文件的时候，不会阻塞页面渲染。下载的脚本文件在 DOMContentLoaded 事件触发前执行（即刚刚读取完标签），而且可以保证执行顺序就是它们在页面上出现的顺序。但是，浏览器对这个属性的支持不够理想，IE（<=9）还有一个 bug，无法保证 2.js 一定在 1.js 之后执行。如果需要支持老版本的 IE，且脚本之间有依赖关系，建议不要使用 defer 属性。
+有了 `defer` 属性，浏览器下载脚本文件的时候，不会阻塞页面渲染。下载的脚本文件在 `DOMContentLoaded` 事件触发前执行（即刚刚读取完标签），而且可以保证执行顺序就是它们在页面上出现的顺序。但是，浏览器对这个属性的支持不够理想，IE（<=9）还有一个 bug，无法保证 `2.js` 一定在 `1.js` 之后执行。如果需要支持老版本的 IE，且脚本之间有依赖关系，建议不要使用 `defer` 属性。
 
-对于内置而不是连接外部脚本的 script 标签，以及动态生成的 script 标签，defer 属性不起作用。
+对于内置而不是连接外部脚本的 `script` 标签，以及动态生成的 `script` 标签，`defer` 属性不起作用。
 
-### async 属性
+### `async` 属性
 
-解决“阻塞效应”的另一个方法是加入 async 属性。
+解决“阻塞效应”的另一个方法是加入 `async` 属性。
 
 ```js
 <script src="1.js" async></script>
 <script src="2.js" async></script>
 ```
 
-async 属性的运行过程是这样的。
+`async` 属性的运行过程是这样的。
 
 1.  浏览器开始解析 HTML 网页
-2.  解析过程中，发现带有 async 属性的 script 标签
-3.  浏览器继续往下解析 HTML 网页，同时并行下载 script 标签中的外部脚本
+
+2.  解析过程中，发现带有 `async` 属性的 `script` 标签
+
+3.  浏览器继续往下解析 HTML 网页，同时并行下载 `script` 标签中的外部脚本
+
 4.  脚本下载完成，浏览器暂停解析 HTML 网页，开始执行下载的脚本
+
 5.  脚本执行完毕，浏览器恢复解析 HTML 网页
 
-async 属性可以保证脚本下载的同时，浏览器继续渲染。需要注意的是，一旦采用这个属性，就无法保证脚本的执行顺序。哪个脚本先下载结束，就先执行那个脚本。使用 async 属性的脚本文件中，不应该使用 document.write 方法。IE 10 支持 async 属性，低于这个版本的 IE 都不支持。
+`async` 属性可以保证脚本下载的同时，浏览器继续渲染。需要注意的是，一旦采用这个属性，就无法保证脚本的执行顺序。哪个脚本先下载结束，就先执行那个脚本。使用 `async` 属性的脚本文件中，不应该使用 `document.write` 方法。IE 10 支持 `async` 属性，低于这个版本的 IE 都不支持。
 
-defer 属性和 async 属性到底应该使用哪一个？一般来说，如果脚本之间没有依赖关系，就使用 async 属性，如果脚本之间有依赖关系，就使用 defer 属性。如果同时使用 async 和 defer 属性，后者不起作用，浏览器行为由 async 属性决定。
+`defer` 属性和 `async` 属性到底应该使用哪一个？一般来说，如果脚本之间没有依赖关系，就使用 `async` 属性，如果脚本之间有依赖关系，就使用 `defer` 属性。如果同时使用 `async` 和 `defer` 属性，后者不起作用，浏览器行为由 `async` 属性决定。
 
 ### 脚本的动态嵌入
 
-除了用静态的 script 标签，还可以动态嵌入 script 标签。
+除了用静态的 `script` 标签，还可以动态嵌入 `script` 标签。
 
 ```js
 ['1.js', '2.js'].forEach(function(src) {
@@ -191,9 +184,9 @@ defer 属性和 async 属性到底应该使用哪一个？一般来说，如果�
 });
 ```
 
-这种方法的好处是，动态生成的 script 标签不会阻塞页面渲染，也就不会造成浏览器假死。但是问题在于，这种方法无法保证脚本的执行顺序，哪个脚本文件先下载完成，就先执行哪个。
+这种方法的好处是，动态生成的 `script` 标签不会阻塞页面渲染，也就不会造成浏览器假死。但是问题在于，这种方法无法保证脚本的执行顺序，哪个脚本文件先下载完成，就先执行哪个。
 
-如果想避免这个问题，可以设置 async 属性为 false。
+如果想避免这个问题，可以设置 `async` 属性为 `false`。
 
 ```js
 ['1.js', '2.js'].forEach(function(src) {
@@ -204,7 +197,7 @@ defer 属性和 async 属性到底应该使用哪一个？一般来说，如果�
 });
 ```
 
-上面的代码依然不会阻塞页面渲染，而且可以保证 2.js 在 1.js 后面执行。不过需要注意的是，在这段代码后面加载的脚本文件，会因此都等待 2.js 执行完成后再执行。
+上面的代码依然不会阻塞页面渲染，而且可以保证 `2.js` 在 `1.js` 后面执行。不过需要注意的是，在这段代码后面加载的脚本文件，会因此都等待 `2.js` 执行完成后再执行。
 
 我们可以把上面的写法，封装成一个函数。
 
@@ -224,7 +217,7 @@ defer 属性和 async 属性到底应该使用哪一个？一般来说，如果�
 }());
 ```
 
-此外，动态嵌入还有一个地方需要注意。动态嵌入必须等待 CSS 文件加载完成后，才会去下载外部脚本文件。静态加载就不存在这个问题，script 标签指定的外部脚本文件，都是与 CSS 文件同时并发下载的。
+此外，动态嵌入还有一个地方需要注意。动态嵌入必须等待 CSS 文件加载完成后，才会去下载外部脚本文件。静态加载就不存在这个问题，`script` 标签指定的外部脚本文件，都是与 CSS 文件同时并发下载的。
 
 ### 加载使用的协议
 
@@ -234,7 +227,7 @@ defer 属性和 async 属性到底应该使用哪一个？一般来说，如果�
 <script src="example.js"></script>
 ```
 
-上面的 example.js 默认就是采用 http 协议下载，如果要采用 HTTPs 协议下载，必需写明（假定服务器支持）。
+上面的 `example.js` 默认就是采用 `http` 协议下载，如果要采用 `HTTPS` 协议下载，必需写明（假定服务器支持）。
 
 ```js
 <script src="https://example.js"></script>
@@ -253,21 +246,28 @@ JavaScript 是一种解释型语言，也就是说，它不需要编译，可以
 早期，浏览器内部对 JavaScript 的处理过程如下：
 
 1.  读取代码，进行词法分析（Lexical analysis），将代码分解成词元（token）。
+
 2.  对词元进行语法分析（parsing），将代码整理成“语法树”（syntax tree）。
+
 3.  使用“翻译器”（translator），将代码转为字节码（bytecode）。
+
 4.  使用“字节码解释器”（bytecode interpreter），将字节码转为机器码。
 
 逐行解释将字节码转为机器码，是很低效的。为了提高运行速度，现代浏览器改为采用“即时编译”（Just In Time compiler，缩写 JIT），即字节码只在运行时编译，用到哪一行就编译哪一行，并且把编译结果缓存（inline cache）。通常，一个程序被经常用到的，只是其中一小部分代码，有了缓存的编译结果，整个程序的运行速度就会显著提升。
 
-不同的浏览器有不同的编译策略。有的浏览器只编译最经常用到的部分，比如循环的部分；有的浏览器索性省略了字节码的翻译步骤，直接编译成机器码，比如 chrome 浏览器的 V8 引擎。
+不同的浏览器有不同的编译策略。有的浏览器只编译最经常用到的部分，比如循环的部分；有的浏览器索性省略了字节码的翻译步骤，直接编译成机器码，比如 Chrome 浏览器的 V8 引擎。
 
 字节码不能直接运行，而是运行在一个虚拟机（Virtual Machine）之上，一般也把虚拟机称为 JavaScript 引擎。因为 JavaScript 运行时未必有字节码，所以 JavaScript 虚拟机并不完全基于字节码，而是部分基于源码，即只要有可能，就通过 JIT（just in time）编译器直接把源码编译成机器码运行，省略字节码步骤。这一点与其他采用虚拟机（比如 Java）的语言不尽相同。这样做的目的，是为了尽可能地优化代码、提高性能。下面是目前最常见的一些 JavaScript 虚拟机：
 
-*   Chakra)(Microsoft]([`en.wikipedia.org/wiki/Chakra_(JScript_engine%5C))(Microsoft`](http://en.wikipedia.org/wiki/Chakra_(JScript_engine%5C))(Microsoft)) Internet Explorer)
-*   [Nitro/JavaScript Core](http://en.wikipedia.org/wiki/WebKit#JavaScriptCore) (Safari)
-*   [Carakan](http://dev.opera.com/articles/view/labs-carakan/) (Opera)
-*   [SpiderMonkey](https://developer.mozilla.org/en-US/docs/SpiderMonkey) (Firefox)
-*   V8%5D(http://en.wikipedia.org/wiki/V8_(JavaScript_engine%5C))) (Chrome, Chromium)
+*   Chakra (Microsoft) (Internet Explorer)
+
+*   Nitro/JavaScript Core (Safari)
+
+*   Carakan (Opera)
+
+*   SpiderMonkey (Firefox)
+
+*   V8 (Chrome, Chromium)
 
 ## 单线程模型
 
@@ -293,7 +293,7 @@ JavaScript 之所以采用单线程，而不是多线程，跟历史有关系。
 
 1.  排队。因为一个进程一次只能执行一个任务，只好等前面的任务执行完了，再执行后面的任务。
 
-2.  新建进程。使用 fork 命令，为每个任务新建一个进程。
+2.  新建进程。使用 `fork` 命令，为每个任务新建一个进程。
 
 3.  新建线程。因为进程太耗费资源，所以如今的程序往往允许一个进程包含多个线程，由线程去完成任务。
 
@@ -319,16 +319,24 @@ JavaScript 之所以采用单线程，而不是多线程，跟历史有关系。
 
 ## 任务队列
 
-如果有大量的异步任务（实际情况就是这样），它们会在“任务队列”中注册大量的事件。这些事件排成队列，等候进入主线程。本质上，“任务队列”就是一个事件“先进先出”的数据结构。比如，点击鼠标就产生一些列事件，mousedown 事件排在 mouseup 事件前面，mouseup 事件又排在 click 事件的前面。
+如果有大量的异步任务（实际情况就是这样），它们会在“任务队列”中注册大量的事件。这些事件排成队列，等候进入主线程。本质上，“任务队列”就是一个事件“先进先出”的数据结构。比如，点击鼠标就产生一些列事件，`mousedown` 事件排在 `mouseup` 事件前面，`mouseup` 事件又排在 `click` 事件的前面。
 
 ## 参考链接
 
 *   John Dalziel, [The race for speed part 2: How JavaScript compilers work](http://creativejs.com/2013/06/the-race-for-speed-part-2-how-javascript-compilers-work/)
+
 *   Jake Archibald，[Deep dive into the murky waters of script loading](http://www.html5rocks.com/en/tutorials/speed/script-loading/)
+
 *   Mozilla Developer Network, [window.setTimeout](https://developer.mozilla.org/en-US/docs/Web/API/window.setTimeout)
+
 *   Remy Sharp, [Throttling function calls](http://remysharp.com/2010/07/21/throttling-function-calls/)
+
 *   Ayman Farhat, [An alternative to Javascript's evil setInterval](http://www.thecodeship.com/web-development/alternative-to-javascript-evil-setinterval/)
+
 *   Ilya Grigorik, [Script-injected "async scripts" considered harmful](https://www.igvita.com/2014/05/20/script-injected-async-scripts-considered-harmful/)
+
 *   Axel Rauschmayer, [ECMAScript 6 promises (1/2): foundations](http://www.2ality.com/2014/09/es6-promises-foundations.html)
+
 *   Daniel Imms, [async vs defer attributes](http://www.growingwiththeweb.com/2014/02/async-vs-defer-attributes.html)
+
 *   Craig Buckler, [Load Non-blocking JavaScript with HTML5 Async and Defer](http://www.sitepoint.com/non-blocking-async-defer/)

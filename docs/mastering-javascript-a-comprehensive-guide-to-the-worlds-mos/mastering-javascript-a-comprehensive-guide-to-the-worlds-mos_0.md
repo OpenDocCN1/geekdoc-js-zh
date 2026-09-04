@@ -1,32 +1,11 @@
+
 # 精通 JavaScript：全球最流行编程语言全面指南
-
-
-
-![image](img/image-TAHGE1VP.png)
-
-
 
 第一版。2023 年 7 月 25 日。
 
-
-
-
-
-
-
-
-
-
-![image](img/image-TAHGE1VP.png)
-
 虽然在本书的准备过程中已采取了所有预防措施，但出版商对错误或遗漏，或因使用本书所含的信息而导致的损害不承担任何责任。
 
-![image](img/image-3UHZA0MF.png) JavaScript 是最流行的语言之一，已经渗透到网站开发的各个方面。无论你是资深开发者还是初学者，学习 JavaScript 都能开启无限可能。从变量的基础到高级主题，本书涵盖了你所需的一切。因此，无论你是想构建自己的第一个应用还是提升技能，本书都是你的完美指南。
-
-![image](img/image-TAHGE1VP.png)
-
-![image](img/image-3UHZA0MF.png)
-
+JavaScript 是最流行的语言之一，已经渗透到网站开发的各个方面。无论你是资深开发者还是初学者，学习 JavaScript 都能开启无限可能。从变量的基础到高级主题，本书涵盖了你所需的一切。因此，无论你是想构建自己的第一个应用还是提升技能，本书都是你的完美指南。
 
 ASCII 字符集是最广泛使用的字符集之一，包含了字母、数字和特殊符号。在 JavaScript 中，你可以使用十进制或十六进制代码处理 ASCII 字符。例如，字母 "A" 的十进制代码为 65，十六进制代码为 0x41。你可以使用 `String.fromCharCode()` 方法将 ASCII 代码转换为相应的字符：
 
@@ -34,46 +13,33 @@ ASCII 字符集是最广泛使用的字符集之一，包含了字母、数字�
 String.fromCharCode(65)
 ```
 
-
 Unicode 是更全面的字符集，包含了超过 143,000 个来自语言的字符。在 JavaScript 中，你可以使用代码点处理 Unicode 字符，它们以十六进制值表示。例如，日语字符“こ”的代码点是 U+3053，表示为 0x3053。你可以使用 Unicode 表示法在 JavaScript 中表示 Unicode 字符：
 
 ```javascript
 "\u3053"
 ```
+
 ## UTF-8 编码方案
 
 UTF-8 是一种常用的 Unicode 编码方案，与 ASCII 兼容。UTF-8 是一种变长编码方案，这意味着它可以根据所代表字符使用不同数量的字节。在 JavaScript 中，你可以使用内置的 `String` 对象处理 UTF-8 编码字符串。例如，你可以使用 `charCodeAt()` 方法获取字符串中给定字符的 UTF-8 代码点：
 
-"A".charCodeAt(0)
-```
+`"A".charCodeAt(0)`
+
 ## 处理不同的字符集
 
 在 JavaScript 中，你可以使用库和框架处理不同的字符集和编码方案。例如，jQuery 库包含了处理文本输入和验证的函数，这对于处理不同的字符集非常有用。以下是使用 jQuery 验证文本输入框是否存在非 ASCII 字符的示例：
+
 ## 注释
-
-![image](img/image-3UHZA0MF.png)![image](img/image-MW0EC1EI.png)
-
-
-
 
 注释是任何编程语言中一个重要方面，因为它们允许开发者为其代码添加解释性备注和注解。在 JavaScript 中，注释可以提供上下文、文档化代码并与其他开发者进行通信。
 
 JavaScript 中有两种类型的注释：单行注释和多行注释。单行注释用于在单行上添加注释，而多行注释用于添加跨越多行的注释。
 
-
-![image](img/image-9VYDJCG1.png)
-
 单行注释有助于为你的代码添加快速的备注和解释。例如，你可能使用单行注释来记录变量或函数：
-
-![image](img/image-AFZ3NWG9.png)
 
 JavaScript 中的多行注释使用 `/*` 和 `*/` 符号创建。位于这些符号之间的任何内容都被视为注释，并被 JavaScript 解释器忽略。这是一个示例：
 
-![image](img/image-BLHRD9TW.png)
-
 多行注释有助于为你的代码添加较长的备注和解释。例如，你可能使用多行注释来记录一个函数或解释一个复杂的算法：
-
-![image](img/image-61HIGXEX.png)
 
 在 JavaScript 中使用注释时，遵循最佳实践很重要，以确保你的注释清晰、简洁且有用。以下是一些有效使用注释的技巧：
 
@@ -83,54 +49,30 @@ JavaScript 中的多行注释使用 `/*` 和 `*/` 符号创建。位于这些符
 - 使用描述性的变量和函数名称来减少对注释的需求。
 - 编写易于阅读和理解的注释，使用正确的语法和标点。
 
-![image](img/image-TAHGE1VP.png)
-
-
-![image](img/image-3UHZA0MF.png)
-
 字面量是 JavaScript 中的基础概念，用于表示代码中的固定值。在 JavaScript 中，字面量可以表示不同类型的值，包括字符串、数字、布尔值、对象等。以下是 JavaScript 字面量的概述以及一些示例。
 
 字符串字面量用于表示 JavaScript 中的字符串值。它们被包含在单引号或双引号中，如下：
 
-
 字符串字面量可以包含特殊字符，例如换行符和转义字符：
-![image](img/image-4A4V8ZHD.png)
 
 数字字面量用于表示 JavaScript 中的数值。它们可以是整数或浮点数，并包含数学运算符，如下：
 
-![image](img/image-RZAW6VRY.png)
 布尔字面量用于表示 JavaScript 中的布尔值。它们可以是 `true` 或 `false`，如下：
-
-![image](img/image-TYOH117R.png)
 
 数组字面量用于表示 JavaScript 中的数组。它们被包含在方括号中，可以包含任意数量的值，如下：
 
-
 对象字面量用于表示 JavaScript 中的对象。它们被包含在花括号中，由键值对组成，如下：
-
-![image](img/image-14HGP0TF.png)
 
 正则表达式字面量用于表示 JavaScript 中的正则表达式。它们被包含在正斜杠中，由模式和可选的标志组成，如下：
 
-![image](img/image-8M794LDK.png)
-
 ### 模板字面量
 模板字面量用于表示包含变量和表达式的字符串。它们被包含在反引号（`` ` ``）中，可以使用 `${...}` 包含变量占位符，如下：
-
-![image](img/image-CA5HJ35B.png)image
-
-
-![image](img/image-3UHZA0MF.png)
 
 在 JavaScript 中，标识符和保留字是基本概念，用于命名变量、函数和代码的其他元素。标识符是赋予 JavaScript 实体的名称，例如变量、函数和对象属性。保留字是在 JavaScript 中具有特殊含义的关键字，不能用作标识符。让我们通过示例进一步探索这些概念。
 
 标识符是赋予 JavaScript 实体的名称，例如变量、函数和对象属性。标识符必须遵循某些规则才能在 JavaScript 中有效。它们只能包含字母、数字、下划线和美元符号。它们必须以字母、下划线或美元符号开头。以下是 JavaScript 中有效标识符的示例：
 
-![image](img/image-7WFJY689.png)
-
 保留字是 JavaScript 中具有特殊含义且不能用作标识符的关键字。这些关键字由语言本身用于定义语法和功能，不能由开发者重新定义。以下是 JavaScript 中保留字的示例：
-
-![image](img/image-XOPDW39N.png)
 
 需要注意的是，保留字根据所使用的 JavaScript 版本而异。例如，`const` 关键字是在 ECMAScript 中引入的。
 在 JavaScript 中命名标识符时，遵循最佳实践很重要，以确保你的代码清晰易读。以下是一些关于标识符的技巧：
@@ -139,26 +81,13 @@ JavaScript 中的多行注释使用 `/*` 和 `*/` 符号创建。位于这些符
 - 避免使用单字母变量名，除非是常用的。
 - 避免将保留字作为标识符。
 
-![image](img/image-TAHGE1VP.png)
-
-![image](img/image-3UHZA0MF.png)
-
 分号在 JavaScript 中用于分隔语句并表示行的结束。然而，JavaScript 在某些情况下允许可选分号，这可能会导致混乱和错误。让我们通过示例探索可选分号的概念。
 
 在 JavaScript 中，某些情况下需要分号来分隔语句并避免语法错误。例如，当在单行中使用多个语句时，分号是必须：
 
-![image](img/image-6N3EOZCL.png)
-
 在使用某些控制流语句时也需要分号，例如 `for` 循环和 `switch` 语句：
 
-![image](img/image-XMHG0DA.png)
-
 在 JavaScript 中，分号在某些情况下是可选的，例如在单行中使用单个语句时或在使用某些块语句时。例如，在单行中使用单个语句时，分号是可选的：
-
-![image](img/image-YXW42N6H.png)
-
-
-![image](img/image-XGFEC2TA.png)
 
 在编写 JavaScript 代码时，遵循使用分号的最佳实践很重要，以避免错误和混乱。以下是一些在 JavaScript 中使用分号的技巧：
 
@@ -166,39 +95,13 @@ JavaScript 中的多行注释使用 `/*` 和 `*/` 符号创建。位于这些符
 - 使用分号分隔语句并结束代码行，特别是在可能发生语法错误的情况下。
 - 避免在单行中使用单个语句，如果它们可以合并为一个语句。
 
-
-
-
-
-
-![image](img/image-3UHZA0MF.png)![image](img/image-TAHGE1VP.png)
-
-
-![image](img/image-3UHZA0MF.png)
-
 数字是 JavaScript 中的一种基本数据类型，用于在代码中表示数值。JavaScript 支持整数和浮点数，并包含了用于对数字进行数学运算的内置函数和方法。让我们通过一些示例探索 JavaScript 中数字的概念。
-
 
 在 JavaScript 中，可以使用整数或浮点表示法创建数字。以下是一些示例：
 
-![image](img/image-O2RBGZA7.png)
-
-
-![image](img/image-BRY3NE0C.png)
-
-
-![image](img/image-PSCE46UA.png)
-
-
 JavaScript 包含了用于对数字进行数学运算的内置函数和方法。以下是一些示例：
 
-![image](img/image-P8WJ0DS7.png)
-
-
 在 JavaScript 中，浮点数有时因为在内存中的存储方式而不精确的。为了更精确地处理小数位，开发者可以使用 `toFixed()` 方法，该方法会将数字四舍五入到指定的位数：
-
-![image](img/image-4MJ4W9K3.png)
-
 
 在 JavaScript 中处理数字时，遵循最佳实践以确保你的代码清晰、高效且易读非常重要。以下是使用 JavaScript 数字的一些技巧：
 
@@ -206,36 +109,17 @@ JavaScript 包含了用于对数字进行数学运算的内置函数和方法。
 - 注意浮点数的局限性，并使用 `toFixed()` 或其他方法更精确地处理小数位。
 - 谨慎使用 `NaN` 和 `Infinity`，并在处理数字时注意它们的影响。
 
-![image](img/image-TAHGE1VP.png)
-## 文本
-
-![image](img/image-3UHZA0MF.png)
-
 文本是 JavaScript 中的一种基本数据类型，用于在代码中表示字符字符串。JavaScript 包含了处理文本的内置函数和方法，包括字符串操作、文本格式化和正则表达式。让我们通过一些示例探索 JavaScript 中文本的概念。
 ### 在 JavaScript 中创建文本
 在 JavaScript 中，文本以字符串的形式表示，由单引号或双引号内。以下是一些示例：
 
-![image](img/image-2WCM9640.png)
-
 字符串也可以使用模板字符串（template literals）创建，它允许在字符串内进行变量插值和表达式求值：
-
-![image](img/image-G04D3U1C.png)
-
 
 JavaScript 包含了处理文本的内置函数和方法，包括字符串拼接、长度和子字符串提取。以下是一些示例：
 
-![image](img/image-Z89DY9P5.png)
-
-
 JavaScript 还包含了处理文本格式化的内置函数和方法，包括将文本转换为小写或大写，以及去除字符串中的空白。以下是一些示例：
 
-![image](img/image-YJHR3DJM.png)
-
-
 JavaScript 支持正则表达式，正则表达式是处理文本模式和匹配的强大工具。正则表达式可用于搜索和替换文本、验证输入等。以下是一些示例：
-
-![image](img/image-BLDO5BQS.png)
-
 
 在 JavaScript 中处理文本时，遵循最佳实践以确保你的代码高效、可读且易于维护非常重要。以下是 JavaScript 中处理文本的一些技巧：
 
@@ -243,25 +127,15 @@ JavaScript 支持正则表达式，正则表达式是处理文本模式和匹配
 - 使用内置函数和方法进行文本操作和格式化，而不是自己编写函数。
 - 注意正则表达式的强大和复杂性，谨慎谨慎地使用它们。
 
-![image](img/image-TAHGE1VP.png)
-
-
-![image](img/image-3UHZA0MF.png)
-
 布尔值是 JavaScript 中的一种基本数据类型，用于在代码中表示真/假（true/false）。布尔值常用于控制结构，例如 `if/else` 语句和循环，以控制程序的执行流。让我们通过一些示例探索 JavaScript 中布尔值的概念。
 
 ### 在 JavaScript 中创建布尔值
 
-
-![image](img/image-P1NNXUHG.png)
-
 布尔值也可以通过比较运算符创建，它们根据两个值之间的比较返回一个布尔值：
-
 
 ### 在控制结构中使用布尔值
 
 布尔值常用于控制结构，例如 `if/else` 语句和循环，以控制程序的执行流。以下是一些示例：
-
 
 ### 使用布尔值的最佳实践
 
@@ -271,28 +145,15 @@ JavaScript 支持正则表达式，正则表达式是处理文本模式和匹配
 - 谨慎地使用 `if/else` 语句和循环。
 - 注意布尔转换，当 JavaScript 尝试将非布尔值转换为布尔值时会发生。使用 `===` 和 `!==` 避免意外结果。
 
-![image](img/image-TAHGE1VP.png)
-
-
-![image](img/image-3UHZA0MF.png)
-
 在 JavaScript 中，`null` 和 `undefined` 是用于表示值缺失的特殊值。虽然它们看起来相似，但 `null` 和 `undefined` 之间存在重要的区别。让我们通过一些示例探索 JavaScript 中 `null` 和 `undefined` 的概念。
-
 
 `undefined` 是 JavaScript 中的一种特殊值，用于表示未赋值的变量或属性。以下是一些 undefined 值的示例：
 
-![image](img/image-X06R875K.png)
 需要注意的是，访问不存在的对象属性时也会返回 `undefined`：
-
-![image](img/image-KS62OLGK.png)
-
 
 `null` 是 JavaScript 中的一种特殊值，用于表示刻值的缺失。以下是一些 null 值的示例：
 
-![image](img/image-9VFYB6QW.png)
-
 `null` 通常表示变量或属性没有值或被有意地设置为 `null`。
-
 
 虽然 `null` 和 `undefined` 看起来相似，但它们之间存在重要的区别。以下是一些关键区别：
 
@@ -300,40 +161,24 @@ JavaScript 支持正则表达式，正则表达式是处理文本模式和匹配
 - `undefined` 可以作为函数参数的值，而 `null` 不能。
 - 使用 `==` 运算符比较 `null` 和 `undefined` 时，它们被认为是相等的，但不相同（即 `null == undefined` 为 true，但 `null === undefined` 为 false）。
 
-
-
-
-
-
-
 -   使用 `undefined` 表示未初始化的变量或属性。
 -   使用 `null` 表示值的刻意缺失。
 -   注意 `null` 和 `undefined` 之间的区别，并恰善使用它们。
 -   避免在算术操作中使用 `null` 或 `undefined`，因为它们可能会导致意外之外的结果。
-![image](img/image-TAHGE1VP.png)
 
 ## 全局对象
 
-![image](img/image-3UHZA0MF.png)
 在 JavaScript 中，全局对象是一个在代码的所有部分都可用的特殊对象。它提供了对多种内置函数和对象的访问，例如 `console`、`Math` 和 `Date`，并用于定义可以从代码任何地方访问的全局变量和函数。让我们通过示例来探索 JavaScript 中全局对象的概念。
 
 ### 访问全局对象
 
 在大多数 JavaScript 环境中，使用关键字 `"global"` 或 `"window"` 来访问全局对象。这里有一些示例：
-![image](img/image-4ASWD3H4.png)
 
 在 Web 浏览器中，全局对象通常使用 `"window"` 关键字进行访问。
 
-
 全局对象提供了对整个 JavaScript 代码中使用的各种内置函数和对象的访问权限。这里有一些示例：
 
-![image](img/image-5BGENQ4Y.png)
-
-
 全局对象也可以用于定义可以在代码任何地方访问的全局变量和函数。然而，创建全局变量和函数通常被认为是不良实践，因为它们可能会导致命名冲突，并使代码更难以理解和维护。这里有一些示例：
-
-![image](img/image-PPF6F3PH.png)
-
 
 在 JavaScript 中使用全局对象时，遵循最佳实践以确保代码清晰、高效且易于阅读非常重要。以下是在 JavaScript 中使用全局对象的的一些建议：
 
@@ -341,26 +186,11 @@ JavaScript 支持正则表达式，正则表达式是处理文本模式和匹配
 -   注意不同 JavaScript 环境（如 Web 浏览器和 Node.js）之间全局对象的差异。
 -   遵循全局变量和函数的命名规范和最佳实践，例如使用唯一名称并避免命名冲突。
 
-![image](img/image-TAHGE1VP.png)
-
-
-![image](img/image-3UHZA0MF.png)
-
 在 JavaScript 中，包装对象是创建用于提供一种以对象形式访问和操作原始值的方法。当原始值作为对象访问时，系统会自动创建包装对象，并提供对多种内置方法和属性的访问。让我们通过示例来探索 JavaScript 中包装对象的概念。
-
 
 可以使用每个原始数据类型的内置构造函数手动创建包装对象。这里有一些示例：
 
-![image](img/image-X1TLRA5O.png)
-
-
-![image](img/image-6Z52JU6B.png)
-
-
 包装对象提供了对多种内置方法和属性的访问，这些方法可以用于操作和访问原始值。这里有一些示例：
-
-![image](img/image-4YG1PSQZ.png)
-
 
 在 JavaScript 中处理包装对象时，遵循最佳实践以确保代码清晰、高效且易于阅读非常重要。以下是使用包装对象的一些建议：
 
@@ -368,25 +198,17 @@ JavaScript 支持正则表达式，正则表达式是处理文本模式和匹配
 -   除非有特定需求，否则避免在修改时手动创建包装对象。
 -   遵循全局对象的命名规范和最佳实践。
 
-![image](img/image-TAHGE1VP.png)
-
 ## 不可变值与可变引用
-![image](img/image-3UHZA0MF.png)
 
 在 JavaScript 中，数据类型有两种：不可变值和可变引用。不可变值包括字符串、数字、布尔、`null` 和 `undefined`，而可变引用包括对象、数组。理解这些类型之间的区别对于编写高效的代码很重要。让我们通过示例来探索 JavaScript 中的不可变值和可变引用。
 
 ### 不可变值
 不可变值一旦创建就无法更改。任何修改不可变值的尝试都会创建一个新值。这里有一些示例：
 
-![image](img/image-VX9GN41.png)
-
 ### 可变引用
 相反，可变引用可以在原地进行修改。对可变引用的任何更改都会影响该对象的引用。这里有一些示例：
 
-![image](img/image-JKVKF4.png)
-
 重要的是，即使对象或数组使用 `"const"` 关键字赋值给常量，其内容仍然可以被修改：
-![image](img/image-SIOPVCDM.png)
 
 ### 处理数据类型的最佳实践
 
@@ -398,25 +220,13 @@ JavaScript 支持正则表达式，正则表达式是处理文本模式和匹配
 
 ## 类型转换
 
-![image](img/image-3UHZA0MF.png)
-
-
 ### 隐式类型转换
 
 当 JavaScript 需要将一种类型的数据转换为另一种类型时，会自动发生隐式类型转换。这里有一些示例：
 
-
 在此示例中，JavaScript 将 `num` 的数值转换为字符串，以便将其与 `str` 的字符串值进行拼接。这是一个隐式类型转换的示例。
 
 ### 显式类型转换
-
-
-![image](img/59EQFSA.png)
-
-
-
-
-
 
 ## 类型转换的最佳实践
 
@@ -426,30 +236,23 @@ JavaScript 支持正则表达式，正则表达式是处理文本模式和匹配
 - 当你需要将数据从一种类型转换为另一种类型时，请使用显式类型转换，并确保检查检查错误和意之外的结果。
 - 对于执行类型转换的变量和函数，遵循命名规范和最佳实践。
 
-![image](img/image-TAHGE1VP.png)
 ## 变量声明
-
-![image](img/image-3UHZA0MF.png)
 
 在 JavaScript 中，变量声明是定义变量并可选地为其分配初始值的过程。JavaScript 有三个用于变量声明的关键字：`var`、`let` 和 `const`。理解这些关键字的工作原理以及如何正确使用它们，对于编写高效且无 bug 的 JavaScript 代码非常重要。让我们通过一些来探索 JavaScript 中变量声明的概念。
 ### `var`
 
 该关键字用于声明具有函数作用域的变量。以下是一些示例：
 
-![image](img/image-HD428UBH.png)
 在此示例中，变量 `"x"` 在函数内部使用 `var` 关键字声明。该变量仅在函数内部可用，尝试在函数外部访问它将导致错误。
 
 ### `let`
 
 该关键字用于声明具有块作用域的变量。以下是一些示例：
-![image](img/image-DTBQTHKK.png)
 
 在此示例中，变量 `"x"` 在 `if` 语句块内部使用 `let` 关键字声明。该变量仅在块块内部可用，尝试在块外部访问它将导致错误。
 
 ### `const`
 该关键字用于声明具有块作用域的常量变量。以下是一些示例：
-
-![image](img/image-DKH9EHM3.png)
 
 在此示例中，常量变量 `"PI"` 使用 `const` 关键字声明并被赋值为 `3.14159`。尝试重新为 `"PI"` 赋值将导致错误。
 ## 变量声明的最佳实践
@@ -460,30 +263,17 @@ JavaScript 支持正则表达式，正则表达式是处理文本模式和匹配
 - 始终为变量初始化一个值，即使它是 `null` 或 `undefined`，以避免意外的结果。
 - 避免在全局作用域中声明变量，因为这可能导致命名冲突并让你的代码更难阅读和维护。
 
-![image](img/image-TAHGE1VP.png)
-
-
-![image](img/image-3UHZA0MF.png)
-
 变量作用域是指在代码不同部分的可见性和可访问性。JavaScript 有两种变量作用域：全局作用域和局部作用域。理解变量作用域的工作原理以及如何正确使用它，对于编写高效且无 bug 的 JavaScript 代码非常重要。让我们通过一些示例探索 JavaScript 中变量作用域的概念。
-
 
 在函数或块外部声明的变量具有全局作用域，这意味着它们从代码的任何地方都可以访问。以下是一些示例：
 
-![image](img/image-W9X5AS3B.png)
-
 在此示例中，变量在函数外部声明并具有全局作用域。它在函数内部和外部都可以被访问。
 
-
 在函数或块内部声明的变量具有局部作用域，这意味着它们只能在该函数或块内部被访问。以下是一些示例：
-
-![image](img/image-OT6TO500.png)
-
 
 ### 变量提升（Hoisting）
 
 JavaScript 还有一个称为“变量提升”的概念，这意味着所有变量声明都会移动到它们各自作用域的顶部。以下是一些示例：
-
 
 在此示例中，变量是在语句中使用之后才使用 `var` 关键字声明的。然而，由于变量提升，变量声明被移动到了全局作用域的顶部，因此 `x` 在语句中使用时已经定义，但其值为 `undefined`。
 
@@ -494,38 +284,33 @@ JavaScript 还有一个称为“变量提升”的概念，这意味着所有变
 - 尽可能使用局部变量，因为它们比全局变量更高效且更不容易产生 bug。
 - 在各自作用域的顶部声明变量，以避免由于变量提升导致的意外结果。
 - 使用易于阅读和理解的描述性变量名。
-![image](img/image-TAHGE1VP.png)
 
 # 4. 表达式与运算符
 
-![image](img/image-3UHZA0MF.png)![image](img/image-TAHGE1VP.png)
 ## 基础表达式（Primary Expressions）
-
-![image](img/image-3UHZA0MF.png)
 
 在 JavaScript 中，基础表达式是最基本的类型，无法拆解为更简单的表达式。它们包括字面量、变量和括号内的表达式。理解基础表达式对于理解复杂的表达式以及编写高效无 bug 的代码非常重要。让我们通过一些示例探索 JavaScript 中基础表达式的概念。
 ### 字面量
 
 字面量是直接写入代码的固定值。它们包括字符串、数字、布尔值、`null` 和 `undefined`。以下是一些示例：
 
-![image](img/image-KNM053KV.png)
-
 在这些示例中，字面量 `"hello"` 和 `5` 直接写入代码。
 ### 变量
 
 变量是使用 `=` 运算符赋值的命名值。以下是一些示例：
 
-![image](img/image-2YR8XUDW.png)
 在这些示例中，变量 `x` 和 `y` 分别被赋值为 `42` 和 `true`。
 
 ### 括号内的表达式
 
 括号内的表达式在任何表达式之前计算。以下是一些示例：
 ```javascript
-let result = (3 + 4) * 5;
-let message = "Hello, " + ("world" + "!");
-```
 
+let result = (3 + 4) * 5;
+
+let message = "Hello, " + ("world" + "!");
+
+```
 
 ## 基础表达式的最佳实践
 
@@ -535,34 +320,27 @@ let message = "Hello, " + ("world" + "!");
 
 ## 对象与数组初始化
 
-![image](img/image-3UHZA0MF.png)
 在 JavaScript 中，对象和数组初始化是用于创建特定值的对象和数组的表达式。对象和数组初始化是在单行代码中创建复杂数据结构的方便方法。理解对象和数组初始化对于编写高效无 bug 的代码非常重要。让我们通过一些示例探索 JavaScript 中对象和数组初始化的概念。
 
 ### 对象初始化
 
 对象初始化是用于创建特定对象的表达式。它们由一对大括号组成，键值对之间用逗号分隔。以下是一些示例：
 
-
-
-
-
 ```javascript
+
 let person = { name: "John", age: 42 };
+
 let car = { make: "Toyota", model: "Camry", year: 2018 };
+
 ```
 
 在这些示例中，对象初始化器创建了具有特定键值对的对象。
 
-
 数组初始化器是用于创建特定值数组的表达式。它们由一对方括号组成，值用逗号分隔。以下是一些示例：
-
-![image](img/image-6SXM6UMI.png)
-
 
 ## 嵌套对象和数组初始化器
 
 对象和数组初始化器也可以相互嵌套，以创建更复杂的数据结构。以下是一些示例：
-
 
 在这些示例中，用于的 的对象初始化器包含了一个用于属性的嵌套对象初始化器，而用于的 的数组初始化器包含了三个嵌套的对象初始化器。
 
@@ -572,63 +350,46 @@ let car = { make: "Toyota", model: "Camry", year: 2018 };
 - 使用缩进和格式使复杂的数据结构更易读。
 - 使用嵌套的对象和数组初始化器创建具有多层嵌套的复杂数据结构。
 
-![image](img/image-TAHGE1VP.png)
 ## 函数定义表达式
 
-![image](img/image-3UHZA0MF.png)![image](img/image-MW0EC1EI.png)
-
-在 JavaScript 中，函数定义表达式是将函数作为对象定义和创建的一种。函数定义表达式是 JavaScript 中强大的工具，允许编写动态、灵活且可重用的代码。理解函数定义表达式对于编写高效且无错误的 JavaScript 代码非常重要。让我们通过一些示例来探索 JavaScript 中函数定义表达式的概念。
+在 JavaScript 中，函数定义表达式是将函数作为对象定义和创建的一种。函数定义表达式是 JavaScript 中强大的工具，允编写动态、灵活且可重用的代码。理解函数定义表达式对于编写高效且无错误的 JavaScript 代码非常重要。让我们通过一些示例来探索 JavaScript 中函数定义表达式的概念。
 ### 基础函数定义表达式
 
 一个基础函数定义表达式由关键字、函数名、参数列表和函数体组成。这是一个示例：
-
-![image](img/image-MKMZORUV.png)
 
 在这个示例中，定义的函数包含一个参数和一个用于在控制台中中打印消息的函数体。
 ### 匿名函数定义表达式
 
 匿名函数定义表达式是不具名的函数定义表达式。匿名函数通常用作回调函数或作为其他函数的参数。这是一个示例：
 
-![image](img/image-UBN2XAQ3.png)
-
 在这个示例中，匿名函数被用作方法的参数。该匿名函数接受一个参数并将其打印到控制台中。
 ### 箭头函数定义表达式
 
 箭头函数定义表达式是使用 `=>` 箭头语法定义函数的简便方法。这是一个示例：
 
-![image](img/image-3UEJHI1R.png)
 在这个示例中，箭头函数接受单个参数 `x` 并返回该数字的。
 
 ## 函数定义表达式的最佳实践
 
 - 使用易于阅读和理解的描述性函数名。
 - 在适当的情况下使用匿名和箭头函数定义表达式来简化代码。
-- 遵循变量和函数的命名约定和最佳实践。
+- 遵�变量和函数的命名约定和最佳实践。
 
-![image](img/image-TAHGE1VP.png)
+## 属性访问表达式
 
-
-![image](img/image-3UHZA0MF.png)
-
-在 JavaScript 中，属性访问表达式是访问和操作对象属性的一种方式。属性访问表达式是 JavaScript 中的基础工具，允许编写动态、灵活且可重用的代码。理解属性访问表达式对于编写高效且无错误的 JavaScript 代码非常重要。让我们通过一些示例来探索 JavaScript 中属性访问表达式的概念。
-
+在 JavaScript 中，属性访表达式是访问和操作对象属性的一种方式。属性访问表达式是 JavaScript 中的基础工具，允许编写动态、灵活且可重用的代码。理解属性访问表达式对于编写高效且无错误的 JavaScript 代码非常重要。让我们通过一些示例来探索 JavaScript 中属性访问表达式的概念。
 
 点符号法是访问对象属性最常用的方式。它使用 `.` 运算符访问对象的属性。这是一个示例：
-
-![image](img/image-EG912M6V.png)
-
 
 ### 中括号法
 
 中括号法是访问对象属性的另一种方式。它使用 `[]` 运算符访问对象的属性。这是一个示例：
-
 
 在这个示例中，中括号法被用于访问对象的属性。
 
 ### 计算属性名
 
 计算属性名是使用中括号法动态访问对象属性的一种方式。这是一个示例：
-
 
 在这个示例中，变量被用于动态访问对象的属性。
 
@@ -638,23 +399,18 @@ let car = { make: "Toyota", model: "Camry", year: 2018 };
 - 使用易于阅读和理解的描述性属性名。
 - 避免使用保留关键字作为属性名。
 
-![image](img/image-TAHGE1VP.png)
 ## 调用表达式
-
-![image](img/image-3UHZA0MF.png)
 
 在 JavaScript 中，调用表达式是调用和执行函数的一种方式。调用表达式是 JavaScript 中的基础工具，允许编写动态、灵活且可重用的代码。理解调用表达式对于编写高效且无错误的 JavaScript 代码非常重要。让我们通过一些示例来探索 JavaScript 中调用表达式的概念。
 ### 基础函数调用表达式
 
 基础函数调用表达式由函数名、后跟一对包含参数列表的括号组成。这是一个示例：
 
-![image](img/image-CP1WT9N2.png)
 在这个示例中，函数被调用了一个。
 
 ### 方法调用表达式
 
 方法调用表达式是以对象为值的函数调用表达式。这是一个示例：
-![image](img/image-Y2BWHF6M.png)
 
 在这个示例中，方法的调用以对象值为。
 
@@ -662,15 +418,23 @@ let car = { make: "Toyota", model: "Camry", year: 2018 };
 
 构造调用表达式是一种用于创建新对象的特殊函数调用表达式。它使用关键字，后跟构造函数名和一对包含参数列表的括号。这是一个示例：
 ```javascript
+
 function Person(name, age) {
+
   this.name = name;
+
   this.age = age;
+
 }
+
 let person = new Person("John", 42);
 
 console.log(person.name); // 输出 "John"
+
 console.log(person.age); // 输出 42
+
 ```
+
 在这个示例中，构造函数被调用了两个参数和，这创建了一个具有属性和新对象。
 
 ## 调用表达式的最佳实践
@@ -679,30 +443,31 @@ console.log(person.age); // 输出 42
 - 使用方法调用表达式使你的代码更面向对象。
 - 使用构造调用表达式创建具有特定属性和新对象。
 
-![image](img/image-TAHGE1VP.png)
-
-
-![image](img/image-3UHZA0MF.png)
+## 对象创建表达式
 
 在 JavaScript 中，对象创建表达式是使用对象构造函数或对象字面量创建新对象的一种。对象创建表达式是 JavaScript 中的基础工具，允许编写动态、灵活且可重用的代码。理解对象创建表达式对于编写高效且无错误的 JavaScript 代码非常重要。让我们通过一些示例来探索 JavaScript 中对象创建表达式的概念。
-
-
-
 
 # 对象 (Object)
 
 对象构造函数是用于创建具有特定属性和方法的新对象的函数。它们通常以大写字母开头的命名，并使用关键字定义属性和方法。这是一个示例：
 
 ```javascript
+
 function Person(name, age) {
+
   this.name = name;
+
   this.sayHello = function() {
+
     console.log("Hello, " + this.name + "!");
+
   };
+
 }
 
 person.sayHello(); // 输出 "Hello, John!"
-```
+
+
 
 在这个示例中，构造函数用于创建一个具有 `name` 和 `age` 属性以及 `sayHello` 方法的新对象。
 
@@ -713,7 +478,6 @@ person.sayHello(); // 输出 "Hello, John!"
 在这个示例中，对象字面量用于创建一个具有这些属性和方法的新对象。
 
 ## 方法 (Method)
-
 ![image](img/image-RFCE6RIB.png)
 
 在这个示例中，方法用于根据具有这些属性的对象创建一个新对象。
@@ -722,28 +486,22 @@ person.sayHello(); // 输出 "Hello, John!"
 - 使用对象原型创建具有共享属性和方法的对象。
 - 简单对象使用对象字面量，复杂对象使用对象构造函数。
 - 遵循对象属性和方法的命名规范和最佳实践。
-
 ![image](img/image-TAHGE1VP.png)
-
-
 ![image](img/image-3UHZA0MF.png)
 
 在 JavaScript 中，算术表达式是对数字进行数学运算的一种方式。算术表达式是 JavaScript 中的一种基础工具，允许编写动态、灵活且可重用的代码。理解算术表达式对于在 JavaScript 中编写高效无 Bug 的代码至关重要。让我们通过一些示例探索 JavaScript 中算术表达式的概念。
 
 JavaScript 支持加、减、乘、除的基础算术运算符。是一些示例：
-
 ![image](img/image-0FPHG8P8.png)
 
 在这个示例中，基础算术运算符用于对变量 `x` 和 `y` 执行加、减、乘、除运算。
+
 ## 取模运算符 (Modulus Operator)
 取模运算符是获取除法余数的方法。这是一个示例：
-
 ![image](img/image-1MLW4LB0.png)
-
 
 ## 增减运算符 (Increment and Decrement Operators)
 增减运算符是增加或减少变量值值为 1 的方法。是一些示例：
-
 ![image](img/image-BSYAZ4PK.png)
 在这个示例中，增减运算符用于增加或减少变量 `x` 的值值为 1。
 
@@ -751,7 +509,6 @@ JavaScript 支持加、减、乘、除的基础算术运算符。是一些示例
 - 使用易于阅读和理解的描述性变量名。
 - 使用括号分组操作并明确运算顺序。
 - 谨慎使用增减运算符，以避免混淆和 Bug。
-
 ![image](img/image-TAHGE1VP.png)
 
 # 关系表达式 (Relational Expressions)
@@ -760,13 +517,10 @@ JavaScript 支持加、减、乘、除的基础算术运算符。是一些示例
 在 JavaScript 中，关系表达式是比较值并判断一个值是否大于、小于、等于或不等于另一个值的方式。关系表达式是 JavaScript 中的一种基础工具，允许编写动态、灵活且可重用的代码。理解关系表达式对于在 JavaScript 中编写高效无 Bug 的代码至关重要。让我们通过一些示例探索 JavaScript 中关系表达式的概念。
 
 JavaScript 支持大于、小于、大于等于、小于等于、等于和不等于的基础比较运算符。是一些示例：
-
 ![image](img/image-MW0EC1EI.png)![image](img/image-NF9GMLH3.png)
-
 
 ## 严格比较运算符 (Strict Comparison Operators)
 JavaScript 还支持严格相等和严格不相等的严格比较运算符。严格比较运算符不会进行类型转换，并要求被比较的值具有相同的类型。是一些示例：
-
 ![image](img/image-FNDPGUVQ.png)
 在这个示例中，严格比较运算符用于通过严格相等和严格不等来比较变量 `x` 和 `y` 的值。
 
@@ -774,7 +528,6 @@ JavaScript 还支持严格相等和严格不相等的严格比较运算符。严
 - 使用易于阅读和理解的描述性变量名。
 - 在比较不同类型的值时，使用严格比较运算符。
 - 使用逻辑运算符 `&&` 和 `||` 组合多个比较。
-
 ![image](img/image-TAHGE1VP.png)
 
 # 逻辑表达式 (Logical Expressions)
@@ -783,28 +536,23 @@ JavaScript 还支持严格相等和严格不相等的严格比较运算符。严
 在 JavaScript 中，逻辑表达式是组合多个条件并判断特定条件为真为假的方式。逻辑表达式是 JavaScript 中的一种基础工具，允许编写动态、灵活且可重用的代码。理解逻辑表达式对于在 JavaScript 中编写高效无 Bug 的代码至关重要。让我们通过一些示例探索 JavaScript 中逻辑表达式的概念。
 
 逻辑与运算符 `&&` 在两个条件都为真时返回真。是一些示例：
-
 ![image](img/image-WK0PVK12.png)
 
 在这个示例示例，逻辑与运算符用于组合两个条件并判断它们是否都为真。
 ## 逻辑或运算符 (||)
 逻辑或运算符 `||` 在至少一个条件为真时返回真。是一些示例：
-
 ![image](img/image-521TEL82.png)
 
 在这个示例中，逻辑或运算符用于组合两个条件并判断是否至少一个为真。
 ## 逻辑非运算符 (!)
 逻辑非运算符 `!` 返回条件相反的布尔值。是一些示例：
-
 ![image](img/image-NCJX9C8W.png)
-
 
 ## 逻辑表达式的最佳实践
 - 使用易于阅读和理解的描述性变量名。
 - 使用括号分组条件并明确运算顺序。
 - 使用逻辑与运算符 `&&` 组合必须真的条件。
 - 使用逻辑非运算符 `!` 取反条件。
-
 ![image](img/image-TAHGE1VP.png)
 
 ## 赋值表达式 (Assignment Expressions)
@@ -813,21 +561,13 @@ JavaScript 还支持严格相等和严格不相等的严格比较运算符。严
 在 JavaScript 中，赋值表达式是为变量赋值并更新其值的方式。赋值表达式是 JavaScript 中的一种基础工具，允许编写动态、灵活且可重用的代码。理解赋值表达式对于在 JavaScript 中编写高效无 Bug 的代码至关重要。
 
 ### 基础赋值运算符 (=)
-
 ![image](img/image-98R8XCWN.png)
 
 在这个示例中，基础赋值运算符用于将 `y` 的值赋值给 `x`。
 
-
-
-
-
-
-
 ![image](img/image-DKVBUF08.png)
 
 在此示例中，复合赋值运算符用于对变量 `x` 执行数学运算并更新其值。
-
 
 - 使用易于阅读和理解的描述性变量名。
 - 使用复合赋值运算符来简化数学运算并更新变量值。
@@ -836,12 +576,10 @@ JavaScript 还支持严格相等和严格不相等的严格比较运算符。严
 ![image](img/image-TAHGE1VP.png)
 
 ### 评估表达式
-
 ![image](img/image-3UHZA0MF.png)
 在 JavaScript 中，评估表达式（evaluation expressions）是评估代码并返回值的一种方法。评估表达式是 JavaScript 中的一种基础工具，允许编写动态、灵活且可重用的代码。理解评估表达式对于编写高效且无错误的 JavaScript 代码至关重要。让我们通过一些示例来探索 JavaScript 中的评估表达式概念。
 
 ### 基础评估
-
 JavaScript 支持使用函数对代码进行基础评估。该函数接收字符串作为输入，并将其评估为 JavaScript 代码。以下是一些示例：
 ![image](img/image-YIVVLT5R.png)
 
@@ -849,185 +587,140 @@ JavaScript 支持使用函数对代码进行基础评估。该函数接收字符
 
 ### 模板字符串字量
 模板字符串字量（Template literals）是 JavaScript 中评估代码更现代的方法。它们允许将变量和表达式插值字符串中，并用于构建动态且可重用的代码。以下是一些示例：
-
 ![image](img/image-GACPQX26.png)
 
 在此示例中，使用模板字符串字量评估表达式 `${x + y}`并将 `x` 和 `y` 的值插到字符串中。
-### 评估表达式的最佳实践
 
+### 评估表达式的最佳实践
 - 谨慎使用 `function` 并避免对用户生成的内容使用它，因为它可能会引入安全漏洞。
 - 使用模板字符串字量将变量和表达式插值字符串中。
 - 使用易于阅读和理解的描述性变量名。
-
 ![image](img/image-TAHGE1VP.png)
 
-##杂杂运算符
-
-
+## 杂杂运算符
 有几种杂杂运算符用于各种目的，例如从对象中删除属性、检查数据类型的 `typeof` 运算符、用于决策的条件运算符以及用于组合多个表达式的逗号运算符。这些运算符是 JavaScript 中的基础工具，允许编写动态、灵活且可重用的代码。理解这些运算符对于编写高效且无错误的 JavaScript 代码至关重要。
 
 ### delete 运算符
-
-
 ![image](img/image-0HYCZ5XX.png)
 
 在此示例中，使用 `delete` 运算符从对象中删除属性。
 
-
 `typeof` 运算符用于检查变量或表达式的数据类型。这是一个示例：
-
 ![image](img/image-2D7K12US.png)
 
-
 ### 条件运算符
-
 条件运算符（也称为三元运算符）用于根据条件做决策。这是一个示例：
-
+![image](img/image-OPKGAX4X.png)
 
 在此示例中，使用条件运算符判断 `x` 是否大于 `y` 并返回适当的消息。
 
 ### 逗号运算符
-
-
 ![image](img/image-UDPR16SY.png)
 
 在此示例中，使用逗号运算符评估表达式 `5 + 5` 和 `10 + 10`，并返回最后一个表达式的值，即为 `20`。
-
 
 - 使用易于阅读和理解的描述性变量名。
 - 谨慎使用 `delete` 运算符，避免从 `Array` 和 `Object` 等内置对象中删除属性。
 - 使用 `typeof` 运算符检查变量和表达式的数据类型。
 - 使用条件运算符根据条件做决策。
-
 ![image](img/image-TAHGE1VP.png)
 
 ## 5. 语句
 
-
-## 表达式语句
-
+### 表达式语句
 ![image](img/image-3UHZA0MF.png)
 
-
-### 基础表达式语句
-
+#### 基础表达式语句
 基础表达式语句由一个可以评估的单个表达式组成。以下是一些示例：
-
+![image](img/image-I0CXDPUK.png)
 
 在此示例中，表达式语句 `x + y` 被评估，但其值没有被赋值或存储在任何地方。
 
-### 赋值表达式语句
-
-
-![image](img/image-I0CXDPUK.png)
+#### 赋值表达式语句
+![image](img/image-PBM8FZ.png)
 
 在此示例中，表达式语句 `x = y + 2` 将 `y + 2` 的值赋值给变量 `x`。
 
-
+#### 增减表达式语句
 增减表达式语句用于增加或减少变量的值 1。以下是一些示例：
-
 ![image](img/image-PBM8FZ.png)
 
-
-### 表达式语句的最佳实践
-
+#### 表达式语句的最佳实践
 - 使用易于阅读和理解的描述性变量名。
 - 正确使用表达式语句，包括赋值运算符和增减运算符。
 - 将表达式语句与其他语句结合使用以创建更复杂、实用的代码。
 
-## 复合与空语句
-
+### 复合与空语句
 ![image](img/image-3UHZA0MF.png)
 在 JavaScript 中，复合和空语句用于将语句组合在一起或创建不执行任何操作的语句。复合和空语句是 JavaScript 中的一种基础工具，允许编写动态、灵活且可重用的代码。理解这些语句对于编写高效且无错误的 JavaScript 代码至关重要。让我们通过一些示例来探索 JavaScript 中的复合与空语句。
 
-### 复合语句
-
+#### 复合语句
 复合语句（称为块语句）用于将一组语句组合成代码块。复合语句包含在大括号 `{}` 中，可以包含任意数量的语句。以下是一些示例：
 ![image](img/image-9LVCZGWZ.png)
 
 在此示例中，复合语句将两个 `console.log` 语句组合在一起，并且只有当条件 `(x > 5)` 为真时才会执行。
 
-### 空语句
+#### 空语句
 空语句是不执行任何操作的语句。它们用于程序语法要求有语句但没有操作要执行的情况。这是一个示例：
-
 ![image](img/image-541B2PBK.png)
 
 在此示例中，空语句被用在 `if` 语句的主体中。虽然没有操作要执行，但程序语法要求该语句。
 
-
-
-
-使用复合语句将一组语句组合到单个代码块中。
-谨慎使用空语句，且仅在程序语法要求时才使用。
-
-使用缩进和格式化来使复合语句及其内容更具可读性。
-
+- 使用复合语句将一组语句组合到单个代码块中。
+- 谨慎使用空语句，且仅在程序语法要求时才使用。
+- 使用缩进和格式化来使复合语句及其内容更具可读性。
 ![image](img/image-TAHGE1VP.png)
-## 声明语句
 
+### 声明语句
 ![image](img/image-3UHZA0MF.png)
-
 在 JavaScript 中，声明语句用于声明和定义变量、函数和类。声明语句是 JavaScript 中的基础工具，允许编写动态、灵活且可重用的代码。理解声明语句对于编写高效且无错误的 JavaScript 代码至关重要。让我们通过一些示例来探索 JavaScript 中声明语句的概念。
-### 变量声明语句
 
+#### 变量声明语句
 变量声明语句用于声明变量。在 JavaScript 中，可以使用 `let`、`const` 或 `var` 关键字声明变量。以下是一些示例：
-
 ![image](img/image-6LCOAHBS.jpg)
+
 在此示例中，使用 `let` 和 `const` 关键字声明并定义了三个变量。
 
-### 函数声明语句
-
+#### 函数声明语句
 函数声明语句用于在 JavaScript 中声明和定义函数。这是一个示例：
 ![image](img/image-VTTQ9DSP.png)
 
 在此示例中，使用 `function` 关键字声明并定义了一个函数，然后带有参数调用它。
 
-### 类声明语句
+#### 类声明语句
 类声明语句用于在 JavaScript 中声明和定义类。这是一个示例：
-
 ![image](img/image-AXJ1RBXG.png)![image](img/image-MW0EC1EI.png)
 
 在此示例中，使用 `class` 关键字声明并定义了一个类，然后使用 `new` 关键字进行实例化，并通过方法调用它。
-### 声明语句的最佳实践
 
+#### 声明语句的最佳实践
 - 为变量、函数和类使用描述性名称，以便于阅读和理解。
 - 根据变量的作用域和可变性使用适当的关键字（`let` 或 `const`）声明变量。
 - 对于简单的函数使用箭头函数，对于复杂的函数使用函数声明语句。
-
 ![image](img/image-TAHGE1VP.png)
 
 ## 条件判断
-
-
 在 JavaScript 中，条件判断用于根据条件执行不同的代码块。条件判断是 JavaScript 中的基础工具，允许编写动态、灵活且可重用的代码。理解条件判断对于编写高效且无错误的 JavaScript 代码至关重要。让我们通过一些示例来探索 JavaScript 中条件判断的概念。
 
 ### if 语句
-
-
 ![image](img/image-68NRPM3V.png)
 
 在此示例中，`if` 语句检查 `x` 是否大于 `5`，如果是，则执行 `console.log` 语句。
 
-
+### if...else 语句
 `if...else` 语句用于在指定条件为真时执行一个代码块，在条件为假时执行另一个代码块。这是一个示例：
-
 ![image](img/image-MW0EC1EI.png)![image](img/image-WB6J737Y.png)
 
-
 ### switch 语句
-
 `switch` 语句用于根据不同的情况（case）执行代码块。这是一个示例：
-
+![image](img/image-OPKGAX4X.png)
 
 在此示例中，`switch` 语句检查 `x` 的值并执行相应的 `case` 语句。在这种情况下，执行第二个 `case` 语句并打印 `"x is 2"`。
 
 ### 三元运算符
-
-
 ![image](img/image-OPKGAX4X.png)
 
 在此示例中，三元运算符检查 `x` 是否大于 `5`，如果是，则执行第一个条件。如果不大于 `5`，则执行第二个条件。
-
 
 - 使用易于阅读和理解的描述性变量名。
 - 对于简单条件使用 `if` 语句，对于复杂条件使用 `switch` 语句。
@@ -1036,32 +729,27 @@ JavaScript 支持使用函数对代码进行基础评估。该函数接收字符
 ![image](img/image-TAHGE1VP.png)
 
 ## 循环
-
 ![image](img/image-3UHZA0MF.png)
 在 JavaScript 中，循环用于在条件为真时重复执行代码块，或执行指定的次数。循环是 JavaScript 中的基础工具，允许编写动态、灵活且可重用的代码。理解循环对于编写高效且无错误的 JavaScript 代码至关重要。
 
 ### while 循环
-
-`while` 循环用于在指定条件为真时重复执行代码块。这是一个示例：
+`while` 循环用于在指条件为真时重复执行代码块。这是一个示例：
 ![image](img/image-6LDIW65D.png)
 
 在此示例中，`while` 循环用于打印从 `0` 到 `4` 的 `i` 值。条件 `(i < 5)` 在每次迭代前检查。
 
 ### do...While 循环
 `do...while` 循环用于在指定条件为真时重复执行代码块，但代码块至少执行一次。这是一个示例：
-
 ![image](img/image-3W4PGW.png)
 
 在此示例中，`do...while` 循环用于打印从 `0` 到 `4` 的 `i` 值。条件在代码块执行后检查。
+
 ### for 循环
-
 `for` 循环用于按指定的次数重复执行代码块。这是一个示例：
-
 ![image](img/image-16VBAB7.png)
 在此示例中，`for` 循环用于打印从 `0` 到 `4` 的 `i` 值。循环由三部分组成：初始化 `let i = 0`、条件 `i < 5` 和迭代 `i++`。
 
 ### for...In 循环
-
 `for...in` 循环用于遍历对象的属性。
 ![image](img/image-FEDAGMT.png)
 
@@ -1070,23 +758,20 @@ JavaScript 支持使用函数对代码进行基础评估。该函数接收字符
 ### 循环的最佳实践
 - 使用易于阅读和理解的变量名。
 - 对于简单条件使用 `while` 循环，对于指定次数使用 `for` 循环。
-- 在满足条件时使用 `break` 语句退出循环。
+- 在满足条件时使用 `break` 语句退出循循环。
 - 使用 `continue` 语句跳过循环迭代。
 - 使用缩进和格式化使你的代码更具可读性且更容易理解。
+
 ## 跳转
-
 ![image](img/image-3UHZA0MF.png)
+在 JavaScript 中，跳转通过中断语句的正常执行并将执行重定向到程序的其他部分来控制程序流。跳转是 JavaScript 中的基础工具，允�编写动态、灵活且可重用的代码。理解跳转对于编写高效且无错误的 JavaScript 代码至关重要。
 
-在 JavaScript 中，跳转通过中断语句的正常执行并将执行重定向到程序的其他部分来控制程序流。跳转是 JavaScript 中的基础工具，允许编写动态、灵活且可重用的代码。理解跳转对于编写高效且无错误的 JavaScript 代码至关重要。
 ### break 语句
-
 `break` 语句用于退出循环或 `switch` 语句。这是一个示例：
-
 ![image](img/image-QMVB6AZ9.png)
 在此示例中，`for` 循环用于打印从 `0` 到 `4` 的 `i` 值。`if` 语句检查 `i` 是否等于 `5`，如果是，则执行 `break` 语句并终止循环。
 
 ### continue 语句
-
 `continue` 语句用于跳过循环迭代。这是一个示例：
 ![image](img/image-BC3LEWU.png)
 
@@ -1094,181 +779,134 @@ JavaScript 支持使用函数对代码进行基础评估。该函数接收字符
 
 ### return 语句
 `return` 语句用于退出函数并向调用函数返回一个值。这是一个示例：
-
 ![image](img/image-8HR29KEA.png)
-
-
 
 在此示例中，`add` 函数用于将两个数字相加并将结果返回给调用函数。随后，结果会被打印到控制台。
 
-### 语句 (Statement)
-
-
+### throw 语句
 ![image](img/image-F9B0B12B.png)
 
 在此示例中，`divide` 函数检查 `y` 是否等于 `0`，如果等于，则执行 `throw` 语句并生成异常。`try...catch` 语句用于处理异常并将错误消息打印到控制台。
-
 
 - 当满足条件时，使用 `break` 语句退出循环或 `switch` 语句。
 - 当满足条件时，使用 `continue` 语句跳过循环的当前迭代。
 - 使用 `return` 语句退出函数并向调用函数返回一个值。
 - 当程序发生错误时，使用 `throw` 语句生成异常。
-
 ![image](img/image-TAHGE1VP.png)
 
 ## 杂项语句 (Miscellaneous Statements)
-
 ![image](img/image-3UHZA0MF.png)
 
-
 ### 标签语句 (Label Statement)
-
 `label` 语句用于为代码块提供标签。以下是一个示例：
-
+![image](img/image-X44FJUOE.png)
 
 在此示例中，`outerloop` 和 `innerloop` 标签用于标记 `for` 循环。当 `i` 等于 `2` 且 `j` 等于 `2` 时，使用 `break` 语句退出 `outerloop`。
 
-### 语句 (Statement)
-
-
+### with 语句
 ![image](img/image-X44FJUOE.png)
 
 在此示例中，`with` 语句用于将对象添加到代码块的作用域链中。`console.log` 语句打印对象 `name` 和 `age` 属性的值。
 
-
+### debugger 语句
 `debugger` 语句用于在程序中创建断点以便调试。以下是一个示例：
-
 ![image](img/image-8WIKIBGX.png)
 
-
 ### 杂项语句的最佳实践
-
 - 仅在必要时使用标签，因为它们会让代码更难以阅读和理解。
 - 避免使用 `with` 语句，因为它可能会导致意外的结果并引发 Bug。
-
 ![image](img/image-TAHGE1VP.png)
 
 # 6. 对象 (Objects)
 
-
 ## 创建对象
-
 ![image](img/image-3UHZA0MF.png)
 
-
 ### 对象字面量符号 (Object Literal Notation)
-
 在 JavaScript 中创建对象的常用方法是使用对象字面量符号。对象字面量符号允许使用大括号和键值对来创建对象。以下是一个示例：
-
+![image](img/image-YKDIZ8Q0.png)
 
 在此示例中，使用对象字面量符号创建对象。该对象有两个属性 `name` 和 `age`，以及一个方法 `greet`。
 
 ### 构造函数 (Constructor Functions)
-
 构造函数用于通过定义函数并使用 `new` 关键字创建对象的实例。以下是一个示例：
-
+![image](img/image-YKDIZ8Q0.png)
 
 在此示例中，使用构造函数来创建对象。该构造函数有两个参数 `name` 和 `age`，以及一个方法 `greet`。对象的实例是通过 `new` 关键字创建的。
 
 ### Object.create 方法
-
-
 ![image](img/image-YKDIZ8Q0.png)![image](img/image-MW0EC1EI.png)
 
 在此示例中，对象被用作原型对象来创建对象的实例。对象的实例是通过 `Object.create` 方法创建并使用属性初始化的。
 
-
 在 ES6 中，JavaScript 引入了创建对象的 `class` 语法。类语法提供了一种更结构化、更易读的创建对象的方式，类似于其他语言中的面向对象编程。以下是一个示例：
-
 ![image](img/image-LKVN0B5P.png)
 
-
 ## 查询与设置属性 (Querying and Setting Properties)
-
 ![image](img/image-TAHGE1VP.png)
-
 
 在 JavaScript 中，对象是一种基本数据类型，允许创建复杂的数据结构并将数据和功能组织成可重用的模块。对象的一个重要特性是能够查询和设置属性。在本文中，我们将通过一些示例探索查询和设置属性的概念。
 
 ### 查询属性 (Querying Properties)
-
-
 ![image](img/image-H6BG2EI.png)![image](img/image-MW0EC1EI.png)
 
 在此示例中，我们使用点符号查询对象的属性。输出是属性的值。
-
 
 ![image](img/image-Y997FWQS.png)
 
 在此示例中，我们使用括号符号查询对象的属性。输出是属性的值。
 
-
+### 设置属性
 在 JavaScript 中，设置对象的属性可以使用点符号或括号符号。以下是使用点符号的示例：
-
 ![image](img/image-0LCV63.png)
 
-
 以下是使用括号符号的示例：
-
 ![image](img/image-LOXMNH3S.png)
 
-
 ### 查询与设置属性的最佳实践
-
 - 对于不包含特殊字符或空格的简单属性名使用点符号。
 - 对于包含特殊字符或空格的属性或动态访问属性使用括号符号。
 - 避免使用保留关键字作为属性名。
 
 ### 删除属性 (Deleting Properties)
-
 ![image](img/image-3UHZA0MF.png)
 在 JavaScript 中，对象是一种基本数据类型，允许创建复杂的数据结构并将数据和功能组织成可重用的模块。处理对象的一个重要方面是能够删除它们的属性。在本文中，我们将通过一些示例探索 JavaScript 中删除属性的概念。
 
 ### 删除属性 (Deleting Properties)
-
 在 JavaScript 中，删除对象中的属性可以使用 `delete` 运算符。以下是一个示例：
-
 ![image](img/image-1Y03JRIU.png)
 在此示例中，我们使用 `delete` 运算符删除对象的属性。输出是更新后的对象，它不再包含该属性。
 
 需要注意的是，`delete` 运算符仅从对象中删除属性，但不会删除属性的值。该值仍然存在于内存中，但无法再通过对象访问。
 
 ### 删除对象方法 (Deleting Object Methods)
-
-
-
 在 JavaScript 中，我们还可以使用操作符从对象中删除方法。这里有一个示例：
-
+![image](img/image-1Y03JRIU.png)
 
 在这个示例中，我们使用操作符删除了对象的方法。输出是更新后的对象，它不再包含该方法。
 
 ### 删除属性的最佳实践
-
 - 避免删除频繁使用或对你的代码功能至关重要的属性。
 - 注意，删除属性可能会影响性能和内存占用。
 - 如果你需要在移除属性的同时仍保留其值，请考虑使用其他方法，例如将属性的值设置为 `null` 或 `undefined`。
-
 ![image](img/image-TAHGE1VP.png)
+
 ## 测试属性
-
 ![image](img/image-3UHZA0MF.png)
-
 在 JavaScript 中，对象是一种基础数据类型，允许创建复杂的数据结构，并把数据和功能组织成可重用的模块。处理对象时的一个重要方面是测试属性，以检查它们是否存在或是否具有特定值。在本文中，我们将通过一些示例探索 JavaScript 中测试属性的概念。
+
 ### 测试属性是否存在
-
 要测试 JavaScript 对象上是否存在某个属性，我们可以使用 `in` 操作符或 `hasOwnProperty()` 方法。这里有一个使用操作符的示例：
-
 ![image](img/image-RC6SYC9X.png)![image](img/image-MW0EC1EI.png)
+
 在这个示例中，我们使用 `in` 操作符来测试对象上是否存在 `name` 和 `age` 属性。`name` 的输出为 `true`，`age` 的输出为 `false`。
 
 这里有一个使用 `hasOwnProperty()` 方法的示例：
-
 ![image](img/image-C7A1CY9Q.png)
 在这个示例中，我们使用 `hasOwnProperty()` 方法来测试对象上是否存在 `name` 和 `gender` 属性。`name` 的输出为 `true`，`gender` 的输出为 `false`。
 
 ### 测试属性值
-
-要测试 JavaScript 对象属性是否具有特定值，我们可以使用比较运算符或 `===` 操作符。这里有一个使用比较运算符的示例：
+要测试 JavaScript 对象属性是否具有特特定值，我们可以使用比较运算符或 `===` 操作符。这里有一个使用比较运算符的示例：
 ![image](img/image-YVGMJGBW.png)
 
 在这个示例中，我们使用比较运算符来测试对象的 `age` 属性是否大于或小于 25。30 的输出为 `true`，20 的输出为 `false`。
@@ -1277,70 +915,56 @@ JavaScript 支持使用函数对代码进行基础评估。该函数接收字符
 ![image](img/image-FNYHFPRX.png)
 
 在这个示例中，我们使用 `===` 操作符来测试对象的 `name` 属性是否等于 "John" 或 "Jane"。John" 的输出为 `true`，"Jane" 的输出为 `false`。
-
 ![image](img/image-TAHGE1VP.png)
+
 ## 枚举属性
-
 ![image](img/image-3UHZA0MF.png)
-
 在 JavaScript 中，对象是一种基础数据类型，允许创建复杂的数据结构，并把数据和功能组织成可重用的模块。处理对象时的一个重要方面是枚举它们的属性。在本文中，我们将通过一些示例探索 JavaScript 中枚举属性的概念。
+
 ### 枚举自有属性
-
 要枚举 JavaScript 对象的自有属性（own properties），可以使用 `for...in` 循环或 `Object.keys()` 方法。这里有一个使用循环的示例：
-
 ![image](img/image-WEPB6T2Y.png)
 在这个示例中，我们使用循环来枚举对象的自有属性。输出是每个属性的名称，即 `name` 和 `age`。
 
 这里有一个使用 `Object.keys()` 方法的示例：
-
 ![image](img/image-YISOU8KQ.png)
 在这个示例中，我们使用 `Object.keys()` 方法来枚举对象的自有属性。输出是一个包含每个属性名称的数组，`["name", "age"]`。
 
 ### 枚举继承属性
-
 要枚举 JavaScript 对象的继承属性，可以使用 `for...in` 循环结合 `hasOwnProperty()` 方法。这里有一个示例：
 ![image](img/image-KXD9FFIC.png)
-
 在这个示例中，我们定义了一个构造函数并在其原型上添加了一个方法。然后，我们使用该构造函数创建一个新的 `john` 对象。最后，我们使用循环来枚举 `john` 对象的属性，并使用方法检查每个属性是自有属性还是继承属性。输出是每个自有属性的名称，`name` 和 `age`。
 
 ### 枚举属性的最佳实践
 - 使用 `for...in` 循环或 `Object.keys()` 方法来枚举自有属性。
 - 使用 `hasOwnProperty()` 方法检查属性是自有属性还是继承属性。
-- 注意 JavaScript 中枚举属性的顺序。
+- 注意 JavaScript 中枚属性的顺序。
 - 避免枚举可能频繁变化或对你的代码功能至关重要的属性。
 
-
 ## 属性访问器 (Getters) 和赋值器 (Setters)
-
 ![image](img/image-3UHZA0MF.png)![image](img/image-MW0EC1EI.png)
 
-
 ### 访问器和赋值器
-
 访问器和赋值器是允许定义如何访问和设置属性的函数。这里有一个关于属性访问器和赋值器的示例：
+![image](img/image-OBG0F.png)
 
-
-在这个示例中，我们定义了一个名为 `user` 的对象，它有一个名为 `_name` 的私有属性。然后我们为 `name` 属性定义了访问器和赋值器。访问器返回 `_name` 的值，赋值器将传入的值设置为 `_name`。
+在这个示例中，我们定义了一个名为 `user` 的对象，它有一个名为 `_name` 的私有属性。然后我们为 `name` 属性定了访问器和赋值器。访问器返回 `_name` 的值，赋值器将传入的值设置为 `_name`。
 
 ### 计算属性名
-
-
 ![image](img/image-OBG0F.png)
 
 在这个示例中，我们使用计算属性名来定义对象中属性的访问器和赋值器。
-
 
 - 为私有属性使用命名约定，例如 `_`。
 - 使用访问器和赋值器在访问和设置属性时添加验证或逻辑。
 - 注意在性能敏感代码中使用访问器和赋值器的性能影响。
 - 使用计算属性名动态地定义访问器和赋值器。
+
 ## 属性描述 (Attributes)
-
-### 属性描述]
-
-在 JavaScript 中，对象是一种基础数据类型，允许创建复杂的数据结构，并把数据和功能组织成可重用的模块。处理对象时的一个重要方面是理解属性描述。在本文中，我们将通过一些示例探索 JavaScript 中属性描述的概念。
 ### 属性描述
+在 JavaScript 中，对象是一种基础数据类型，允许创建复杂的数据结构，并把数据和功能组织成可重用的模块。处理对象时的一个重要方面是理解属性描述。在本文中，我们将通过一些示例探索 JavaScript 中属性描述的概念。
 
+### 属性描述
 在 JavaScript 中，对象的每个属性有一组定义如何访问和设置该属性的描述。这些描述可以是以下一个或多个属性：
 
 - `writable`：属性的值是否可以被修改。默认值为 `true`。
@@ -1349,46 +973,31 @@ JavaScript 支持使用函数对代码进行基础评估。该函数接收字符
 - `get`：在访问属性时调用的函数。
 - `set`：在设置属性值时调用的函数。
 
-
 ![image](img/image-8BJBC03.png)
 
 在这个示例中，我们定义了一个对象 `user`，它有一个名为 `_name` 的私有属性。我们为 `name` 属性定义了访问器和赋值器，允许我们获取和设置属性的值。然后我们使用 `Object.defineProperty()` 将属性的描述设置为 `false`，这防止了它被循环枚举。我们使用访问器和赋值器来获取和设置对象的属性。
-
 
 - 使用属性描述来控制如何访问和设置属性。
 - 注意在性能敏感代码中使用属性描述的性能影响。
 - 使用 `Object.defineProperty()` 方法来定义属性描述。
 
-
-
-
-![image](img/image-3UHZA0MF.png)
-
-
 # JavaScript 中的对象属性
-
 在 JavaScript 中，每个对象都有一组属性，定义了对象的行为以及如何访问该对象。这些属性可以是以下一项或多项：
 
 - `configurable`: 是否可以向对象中添加新属性，以及是否可以删除现有属性。默认值为 `true`。
 - `writable`: 是否可以向对象中添加新属性、是否可以删除现有属性，以及是否可以修改现有属性。默认值为 `false`。
 
 以下是一个在 JavaScript 中定义和访问对象属性的示例：
-
+![image](img/image-DJURPF08.jpg)
 
 在这个示例中，我们定义了一个名为 `user` 的对象，包含两个属性：`name` 和 `age`。然后，我们使用 `isExtensible()` 方法检查该对象是可扩展的，并使用 `sealExtensions()` 方法防止向对象中添加新属性。接着，我们尝试向对象添加一个名为 `email` 的新属性，这失败了，因为该对象不再可扩展。我们还尝试从对象中删除该属性，这也失败了，因为对象已被密封。
 
 ## 对象属性的最佳实践
-
 - 在性能敏感的代码中，注意使用对象属性对性能的影响。
 - 使用 `Object.defineProperty()`、`Object.defineProperties()` 和 `Object.freeze()` 方法来设置对象属性。
 
-![image](img/image-DJURPF08.jpg)
-
-
 # 7. 数组
-
 ![image](img/image-3UHZA0MF.png)![image](img/image-TAHGE1VP.png)
-
 
 ![image](img/image-3UHZA0MF.png)
 
@@ -1400,15 +1009,14 @@ JavaScript 支持使用函数对代码进行基础评估。该函数接收字符
 
 ### 使用 Array 构造函数
 你也可以使用 `Array` 构造函数来创建数组。构造函数接受数量数量参数，这些参数将成为数组的元素。例如：
-
+![image](img/image-BYS6SEJW.png)
 
 ### 使用 Array.from() 方法
 `Array.from()` 方法可以从迭代对象创建一个新数组。你可以用它从字符串、`Set`、`Map` 或类数组创建数组。例如：
-
 ![image](img/image-BYS6SEJW.png)
+
 ### 使用 fill() 方法
 `fill()` 方法创建一个具有指定数量元素的新数组，所有元素都初始化为指定的值。例如：
-
 ![image](img/image-CIBR50Z6.png)
 
 ### 结合上述方法
@@ -1416,19 +1024,16 @@ JavaScript 支持使用函数对代码进行基础评估。该函数接收字符
 ![image](img/image-M4S3OAX0.png)![image](img/image-MW0EC1EI.png)
 
 ## 读取和写入数组元素
-
 在 JavaScript 中，你可以使用索引表示法来读取和写入数组元素。以下是几个示例：
+
 ### 读取数组元素
 要读取数组元素，使用方括号内该元素在数组中的索引。例如，要读取名为 `myArray` 的数组的第二个元素，你可以这样做：
-
 ![image](img/image-MU8SHNKY.png)
 
 要写入数组元素，使用方括号内的元素索引并为其分配一个新值。例如，要更改名为 `myArray` 的数组的第二个元素的值，你可以这样做：
-
 ![image](img/image-8OMVX96D.png)
 
 ### 向数组添加元素
-
 ![image](img/image-TZ9KNV3S.png)
 
 ### 从数组中移除元素
@@ -1437,97 +1042,68 @@ JavaScript 支持使用函数对代码进行基础评估。该函数接收字符
 
 ### 检查数组长度
 你可以使用 `length` 属性检查数组的长度。例如：
-
+![image](img/image-936Z.png)
 
 ## 稀疏数组
-
 ![image](img/image-3UHZA0MF.png)
-
-
 ![image](img/image-PME2AJKS.png)
 
 在这个示例中，我们创建了一个长度为 5 的新数组，但没有初始化任何元素。然后，我们将第二个和第四个元素的值分别设置为 10 和 30。注意，第一个、第三和第五个元素仍然是 `undefined`。
-
 
 - 使用 `hasOwnProperty()` 方法检查元素是否定义：![image](img/image-0X)
 - 使用 `in` 运算符检查元素是否存在：![image](img/image-XX)
 - 使用 `forEach()` 方法遍历所有定义的元素：![image](img/image-9F)
 - 使用 `filter()` 方法创建一个只包含定义元素的数组：![image](img/image-4U)
 - 使用 `map()` 方法对定义元素进行操作：![image](img/image-MT)
-
-
 ![image](img/image-TAHGE1VP.png)
 
 ## 数组长度
-
-
 在 JavaScript 中，数组的 `length` 属性返回元素的数量。以下是一些示例：
-
 ![image](img/image-936Z.png)
 
 在第一个示例中，我们创建了一个包含三个元素的数组，其 `length` 属性的结果为 3。
 
-
 你也可以通过设置 `length` 属性来修改长度，这会影响数组的内容。如果你将 `length` 设置为小于当前元素数量的值，将从末尾移除元素。如果你将 `length` 设置为大于当前元素数量的值，将会在数组末尾添加新的 `undefined` 元素。注意，由于我们没有初始化它们，这些新元素是 `undefined`。
-
-
-
-
-
-
 ![image](img/image-F2QGA6NW.png)
 
 在这个示例中，我们使用 `splice()` 方法删除了数组索引为 1 的元素。
-
 ![image](img/image-TAHGE1VP.png)
 
-
+## 遍历数组
 ![image](img/image-3UHZA0MF.png)
-
 在 JavaScript 中，你可以使用多种方法来遍历数组的元素。以下是一些示例：
 
 你可以使用 `for` 循环通过索引来遍历数组的元素。例如：
-
 ![image](img/image-TQZR67UZ.png)
-
-这这将输出：
+这将输出：
 10
 20
 30
 
 ### 使用 `forEach()` 方法
 `forEach()` 方法会按顺序为数组中的每个元素调用一次提供的函数。例如：
-
-
+![image](img/image-DLOBSKC1.png)
 这将输出：
-
 10
 20
 
 ### 使用 `map()` 方法
 `map()` 方法会创建一个新数组，其元素为对数组中的每个元素调用提供的函数的结果。例如：
-
 ![image](img/image-IRMLLZ4C.png)
+
 ### 使用 `filter()` 方法
 `filter()` 方法会创建一个新数组，包含所有通过提供函数实现的测试的元素。例如：
-
 ![image](img/image-DLOBSKC1.png)![image](img/image-TAHGE1VP.png)
 
-
+## 多维数组
 ![image](img/image-3UHZA0MF.png)
-
 在 JavaScript 中，多维数组是包含其他数组作为元素的数组。你可以通过在数组内部嵌套数组来创建多维数组。这里是一些示例：
-
 
 在第一个示例中，我们创建一个包含三个子数组的二维数组，每个子数组包含三个元素。我们使用方括号符号访问了第 1 行第 2 列的元素。
 
 在第二个示例中，我们创建了一个三维数组，每个子数组包含两个子数组，每个子数组又包含两个元素。我们使用方括号符号访问了深度为 1、第 0 行和第 1 列的元素。
-
-
 ![image](img/image-AJ1EJZA0.png)
-
 这将输出：
-
 2
 3
 4
@@ -1538,141 +1114,94 @@ JavaScript 支持使用函数对代码进行基础评估。该函数接收字符
 
 在这个示例中，我们使用嵌套的 `for` 循环来遍历二维数组的行和列，并打印每个元素。
 
-
 ## ECMAScript 5 数组方法
-
 ![image](img/image-3UHZA0MF.png)
-
 ECMAScript 5 (ES5) 为 JavaScript 引入了几个新的数组方法。以下是最常用的方法：
 
-
 ![image](img/image-QIACH26J.png)
-
 这将输出：
-
 20
 30
 
 - `map()`：`map()` 方法创建一个新数组，其元素为对数组中的每个元素调用提供的函数的结果。例如：
-
 ![image](img/image-HPW57AVX.png)
 
-
 ![image](img/image-MW0EC1EI.png)![image](img/image-ZA0O7FSM.png)
-
 - `reduce()`：`reduce()` 方法对累加器和数组中的每个元素应用函数，将其还原为单个值。例如：
-
-
-- `every()`：`every()` 方法测试数组中的所有元素是否通过由提供的函数实现的测试。例如：
-
 ![image](img/image-FAYCGAQV.png)![image](img/image-TAHGE1VP.png)
-
+- `every()`：`every()` 方法测试数组中的所有元素是否通过由提供的函数实现的测试。例如：
+![image](img/image-FAYCGAQV.png)![image](img/image-TAHGE1VP.png)
 
 ![image](img/image-3UHZA0MF.png)![image](img/image-TAHGE1VP.png)
 
 ### 定义函数
-
 ![image](img/image-3UHZA0MF.png)
-
-
 ![image](img/image-EHYSTAAP.png)
 
 在这个示例中，我们定义了一个名为 `addNumbers` 的函数，它接受两个参数 `a` 和 `b` 并返回它们的和。我们可以这样调用此函数：
-
-
+![image](img/image-EHYSTAAP.png)
 这将带有参数 `10` 和 `20` 调用 `addNumbers` 函数，并将结果赋值给 `result` 变量。
 
 你也可以使用 `函数表达式`（function expressions）来定义函数。函数表达式类似于函数声明，但函数被赋值给一个变量或属性。这里有一个示例：
-
-
+![image](img/image-EHYSTAAP.png)
 这定义了一个赋值给变量 `addNumbers` 的函数表达式。我们可以像上一个示例一样的方式调用此函数。
 
 最后，你可以使用 `=>` 语法在 ECMAScript 6 中定义箭头函数。箭头函数是定义函数的简洁方式。这里有一个示例：
-
 ![image](img/image-TAHGE1VP.png)
 
-
+### 调用函数
 ![image](img/image-3UHZA0MF.png)
-
 在 JavaScript 中，函数被调用（或执行）的方式是在函数名后加上括号，并在其中传递任何参数。这里是一些示例：
-
 
 在第一个示例中，我们定义了一个不接受任何参数的函数 `sayHello`，它只是向控制台打印字符串 "Hello!"。
 
 在第二个示例中，我们定义了 `addNumbers` 函数，它接受两个参数并将和打印到控制台。我们通过传递参数 `10` 和 `20` 调用此函数。
-
+![image](img/image-EHYSTAAP.png)
 
 ### 参数与参数
-
 在 JavaScript 中，参数是在调用函数时传递的实际值，而参数是函数内部接收这些值的命名变量。这里有一个示例：
-
+![image](img/image-EHYSTAAP.png)
 
 在这个示例中，我们定义了 `addNumbers` 函数，它接受两个参数 `a` 和 `b`。当我们带有参数 `10` 和 `20` 调用此函数时，值 `10` 被赋值给参数 `a`，值 `20` 被赋值给参数 `b`。在函数内部，我们使用这些参数计算和并打印到控制台。
 
 JavaScript 函数可以有任意数量的参数，包括没有参数。如果调用函数时提供的参数少于预期，缺失的参数将值为 `undefined`。如果调用函数时提供的参数多于预期，多出的参数将被忽略。
-
-
 ![image](img/image-PHRX4.png)
-
 在这个示例中，我们定义了 `greet` 函数，它接受两个参数 `name` 和 `greeting`。`greeting` 参数是可选的，默认值为字符串 "Hello"。我们使用字符串插值向控制台打印问候消息。
 
-
 ## 函数作为值
-
 ![image](img/image-3UHZA0MF.png)
-
-
 ![image](img/image-0W9HK.png)
-
-
-
 
 在第一个例子中，我们定义了一个函数表达式并将其赋值给变量 `addNumbers`。然后我们可以像使用其他任何值一样，通过变量来调用这个函数。
 
 在第二个例子中，我们定义了一个名为 `multiplyNumbers` 的函数，它接收两个数字和一个回调函数作为参数。在函数内部，我们计算这两个数字的乘积，并将结果传递给回调函数。我们可以将任何函数（包括匿名函数）作为回调参数传递进去。
-
-
 ![image](img/image-TAHGE1VP.png)
 
 ## 作为命名空间的函数
-
-
 在 JavaScript 中，函数也可以被用作命名空间来封装相关功能，并避免与其他代码发生命名冲突。这里有一个示例：
-
 ![image](img/image-YR5VXWWV.png)
 
-
 通过将函数作为命名空间，我们可以将相关功能组合在一起，避免大量的变量和函数污染全局命名空间。这可以使我们的代码更有组织性，并且更容易阅读和维护。
-
 ![image](img/image-TAHGE1VP.png)
 
-
+## 闭包
 ![image](img/image-3UHZA0MF.png)
-
 在 JavaScript 中，闭包是一个可以访问其外部函数作用域的函数，即使在外部函数已经返回后也是如此。闭包允许一种称为“部分应用”（partial application）的编程技术，允许你根据现有函数创建新函数，并预先填充部分参数。这里有一个示例：
-
+![image](img/image-0W9HK.png)
 
 在这个例子中，我们定义了一个名为 `createMultiplier` 的函数，它接收一个 `multiplier` 参数并返回一个新函数，该新函数将其参数乘以 `multiplier`。然后我们使用参数 `2` 调用该函数，并将返回的函数赋值给变量 `double`。当我们使用参数 `5` 调用 `double` 时，它返回 `10`，这就是 `5` 乘以 `2` 的结果。
 
 这种之所以有效，是因为内部函数可以访问外部函数作用域中的 `multiplier` 变量，即使外部函数已经返回。这是可能的因为 JavaScript 支持词法作用域（lexical scoping），这意味着在外部函数中声明的变量对于该函数内部声明的任何内部函数都是可见，无论外部函数是否返回。
-
 ![image](img/image-TAHGE1VP.png)
 
-
-![image](img/image-3UHZA0MF.png)![image](img/image-TAHGE1VP.png)
-
 ## 类与原型
-
-
+![image](img/image-3UHZA0MF.png)![image](img/image-TAHGE1VP.png)
 在 JavaScript 中，类是通过原型实现的。原型是作为其他对象模板的对象，并用于在对象之间共享属性和方法。这里有一个示例：
-
 ![image](img/image-YOQPZT04.png)
-
 
 然后我们使用 `Person` 构造函数创建了一个新对象，并将其赋值给变量 `john`。我们可以调用 `john` 对象上的 `sayHello` 方法向控制台打印消息。
 
 这只是如何使用原型在 JavaScript 中创建类的基础示例。在 ES6 中，JavaScript 引入了定义类的新语法，它是基于原型型方法的语法糖。这里有一个使用 ES6 语法定义类的示例：
-
 ![image](img/image-GVTAFWMA.png)
 
 这种语法更简洁且易于阅读，但在底层，它仍然使用原型来在 JavaScript 中创建类。
@@ -1681,93 +1210,62 @@ JavaScript 函数可以有任意数量的参数，包括没有参数。如果调
 ![image](img/image-TAHGE1VP.png)
 
 ## 类与构造函数
-
 ![image](img/image-3UHZA0MF.png)![image](img/image-MW0EC1EI.png)
-
-类和构造函数用于创建具有相似属性和行为的对象。构造函数是一个在使用 `new` 关键字创建对象时调用的特殊方法，用于初始化对象的属性。这里有一个示例：
-```
+类和构造函数用用于创建具有相似属性和行为的对象。构造函数是一个在使用 `new` 关键创建对象时调用的特殊方法，用于初始化对象的属性。这里有一个示例：
 ![image](img/image-JWX02CT1.png)
 
 在这个例子中，我们定义了一个名为 `Person` 的类，其构造函数接收两个参数 `name` 和 `age`，并使用 `this` 关键字将它们设置为新创建对象的属性。我们还向类中添加了一个名为 `sayHello` 的方法，该方法使用对象的 `name` 和 `age` 属性向控制台打印消息。
-
-```
-
 ![image](img/image-TAHGE1VP.png)
 
 ## JavaScript 中的 Java 风格类
 ![image](img/image-3UHZA0MF.png)
-
 JavaScript 是一种基于原型的语言，这意味着它没有内置对 Java 类的支持。然而，从 ECMAScript 6 (ES6) 开始，JavaScript 引入了类似于 Java 类的类定义语法。这里有一个示例：
-
-```
+![image](img/image-LKVN0B5P.png)
 
 ## 增强类
-
 ![image](img/image-3UHZA0MF.png)
-
-
-```
 ![image](img/image-TAHGE1VP.png)
 
 ## 类与类型
-
-
-
-
 JavaScript 是一种动态类型语言，这意味着变量和值可以在运行时更改它们的类型。JavaScript 中的类并不像 `Java` 或 `C++` 等其他面向对象的语言那样强制执行严格的类型或继承。相反，JavaScript 中的类用于定义具有共享属性和行为的对象。
-
-这里有一个示例：
 ![image](img/image-EULDB1LU.png)
-
-在这个示例中，我们定义了一个名为 `Person` 的类，它包含一个构造函数，接收两个参数 `name` 和 `age`，并使用 `this` 关键字将它们设置为新创建对象的属性。我们还为该类添加了一个名为 `sayHello` 的方法，该方法使用对象的 `name` 和 `age` 属性向控制台打印消息。
+在这个示例中，我们定义了一个名为 `Person` 的类，它包含一个构造函数，接收两个参子 `name` 和 `age`，并使用 `this` 关键字将它们设置为新创建对象的属性。我们还为该类添加了一个名为 `sayHello` 的方法，该方法使用对象的 `name` 和 `age` 属性向控制台打印消息。
 
 然后，我们使用 `Person` 构造函数创建了一个新对象，并将其赋值给变量 `john`。我们可以在 `john` 对象上调用 `sayHello` 方法向控制台打印消息。
 我们还定义了另一个名为 `jane` 的对象，它具有与 `Person` 类相同的属性和方法，但它是使用对象字面量创建创建。我们也可以在 `jane` 对象上调用 `sayHello` 方法向控制台打印消息。
-
 ![image](img/image-TAHGE1VP.png)
 
 ## JavaScript 中的面向对象技术
 ![image](img/image-3UHZA0MF.png)
-
 JavaScript 支持许多面向对象的技术，包括封装、继承和多态。
 
 封装指的是隐藏对象的实现细节并仅暴露其公共接口的实践。在 JavaScript 中，你可以使用闭包和模块来实现封装。这里有一个示例：
-
 ![image](img/image-MWF2DERO.png)
 在这个示例中，我们使用立即调用函数表达式（IIFE）定义了一个名为 `Person` 的模块。该模块具有名为 `name` 和 `age` 的私有变量，以及名为 `setName`、`setAge`、`getName` 和 `getAge` 的私有函数。然后，我们返回了一个只包含公共方法的对象，这些方法可以从模块外部访问。
 
 继承指的是创建新类并从现有类继承属性和方法的实践。在 JavaScript 中，你可以使用原型和 `Object.create()` 方法来实现继承。这里有一个示例：
-
 ![image](img/image-K8TCEO7K.png)
 在这个示例中，我们定义了一个 `Animal` 类，带有一个 `speak` 方法可以向控制台打印消息。然后，我们使用 `Object.create()` 方法定义了一个继承自 `Animal` 的 `Dog` 类。我们还为 `Dog` 定义了一个 `speak` 方法，覆盖了 `Animal` 中的 `speak` 方法。
 
 多态指的是将不同类型的对象视为相同类型的实践，只要它们具有共同接口。在 JavaScript 中，你可以通过使用鸭类型（duck typing）来实现多态，这意味着你检查某些属性或方法是否存在，而不是检查对象的类型。这里有一个示例：
-
 ![image](img/image-NH259BV4.png)
 在这个示例中，我们定义了两个对象 `cat` 和 `dog`，它们都有一个 `name` 属性和一个 `speak` 方法。我们还定义了一个 `speak` 函数，它接收一个对象并调用它的 `speak` 方法。我们可以将 `cat` 和 `dog` 传递给 `speak` 函数，即使它们是不同类型的对象，因为它们都拥有 `speak` 方法。
-
 ![image](img/image-TAHGE1VP.png)
 
 ## 子类
-
 ![image](img/image-3UHZA0MF.png)
 在 JavaScript 中，你可以使用 `extends` 关键字创建继承自父类属性和方法的子类。这里有一个示例：
-
 ![image](img/image-WSEQCNP5.png)
 
 在这个示例中，我们定义了一个 `Animal` 类，其构造函数接收一个 `name` 参数并使用 `this` 关键字将其设置为对象的属性。我们还为该类添加了一个 `speak` 方法，向控制台打印消息。
 然后，我们使用 `extends` 关键字定义了一个扩展 `Animal` 的 `Dog` 类。这意味着 `Dog` 继承了 `Animal` 的所有属性和方法。我们还为 `Dog` 定义了一个 `speak` 方法，覆盖了 `Animal` 中的 `speak` 方法。
 
 最后，我们使用 `Dog` 构造函数创建了一个新对象，并将其赋值给变量 `d`。我们可以在 `d` 对象上调用 `speak` 方法向控制台打印消息。
-
 ![image](img/image-TAHGE1VP.png)
-## ECMAScript 5 中的类
 
+## ECMAScript 5 中的类
 ![image](img/image-3UHZA0MF.png)
 ECMAScript 5 (ES5) 是 JavaScript 规范的一个旧版本，不支持用于创建类和子类的 `class` 关键字或 `extends` 关键字。然而，在 ES5 中仍然可以使用构造函数和原型定义类。
-
-这里有一个示例：
-
 ![image](img/image-VHUE3QJH.png)
 在这个示例中，我们定义了一个 `Animal` 构造函数，带有一个 `speak` 方法可以向控制台打印消息。然后，我们定义了一个 `Dog` 构造函数，通过通过带 `this` 关键字调用 `Animal` 并传递 `name` 参数来继承 `Animal`。
 
@@ -1777,32 +1275,24 @@ ECMAScript 5 (ES5) 是 JavaScript 规范的一个旧版本，不支持用于创�
 ![image](img/image-TAHGE1VP.png)
 
 ## 服务端 JavaScript
-
 ![image](img/image-3UHZA0MF.png)![image](img/image-TAHGE1VP.png)
+
 ## 使用 Rhino 编写 Java
-
 ![image](img/image-3UHZA0MF.png)
-
 Rhino 是完全用 Java 编写的 JavaScript 实现。它可以作为 Java 程序的脚本引擎，允许在 Java 代码中嵌入 JavaScript 代码。
 这是一个使用 Rhino 执行 JavaScript 的示例：
-
-![image](img/image-5V6ZFN14.png)在这个示例中，我们导入了 `org.mozilla.javascript` 包并使用 `enter()` 方法创建了一个 `Context` 对象。然后我们使用 `initStandardObjects()` 方法初始化了一个 `Scriptable` 作用域。我们定义了一个名为 `script` 的 JavaScript 代码字符串，将 `x` 和 `y` 分别设置为 10 和 20，然后将它们相加。我们使用 `cx.evaluateString()` 方法在作用域中执行 JavaScript 代码。`<cmd>"` 参数是文件名，`1` 参数是用于错误信息的行号。`result` 变量包含 JavaScript 代码的返回值，即 `x` 和 `y` 的和。
+![image](img/image-5V6ZFN14.png)
+在这个示例中，我们导入了 `org.mozilla.javascript` 包并使用 `enter()` 方法创建了一个 `Context` 对象。然后我们使用 `initStandardObjects()` 方法初始化了一个 `Scriptable` 作用域。我们定义了一个名为 `script` 的 JavaScript 代码字符串，将 `x` 和 `y` 分别设置为 10 和 20，然后将它们相加。我们使用 `cx.evaluateString()` 方法在作用域中执行 JavaScript 代码。`<cmd>"` 参数是文件名，`1` 参数是用于错误信息的行号。`result` 变量包含 JavaScript 代码的返回值，即 `x` 和 `y` 的和。
 
 最后，我们使用 `System.out.println()` 将结果打印到控制台。
 
 Rhino 支持 JavaScript 语言许多功能，包括面向对象编程、正则表达式和 XML 处理。它还包含一个调试器和一个可以优化 JavaScript 代码性能的编译器。通过使用 Rhino，你可以在 Java 应用中利用 JavaScript 的力量，创建更灵活、更动态的软件。
 
 ## Node 中的异步 I/O
-
-
 ## 使用 Node
-
 Node.js 是一个构建在 V8 JavaScript 引擎之上的服务端 JavaScript 运行时。它支持异步 I/O，这允许你的代码执行 I/O 操作而不会阻塞事件循环并降低应用程序的整体性能。
-
-
-![image](img/image-G5XX6RZJ.png)在这个示例中，我们正在使用 `fs` 模块异步读取文件。`fs.readFile()` 方法接收三个参数：文件路径、编码类型（在此例中为 `utf8`）以及在文件读取后执行的回调函数。回调函数接收两个参数：错误对象（如果发生错误）和从文件中读取的数据。
-
-
+![image](img/image-G5XX6RZJ.png)
+在这个示例中，我们正在使用 `fs` 模块异步读取文件。`fs.readFile()` 方法接收三个参数：文件路径、编码类型（在此例中为 `utf8`）以及在文件读取后执行的回调函数。回调函数接收两个参数：错误对象（如果发生错误）和从文件中读取的数据。
 
 我们随后向控制台打印一条消息，表示我们正在读取文件。这条消息会在文件实际被读取之前立即打印。
 
@@ -1812,7 +1302,6 @@ Node.js 是一个构建在 V8 JavaScript 引擎之上的服务端 JavaScript 运
 异步 I/O 是 Node.js 的一个重要特性，因为它允许你构建高性能、可扩展且响应迅速的应用程序，能够处理大量数据和并发请求。
 
 # 结束
-
 恭喜你！你已经读完了这本关于 JavaScript 的书。我们希望这本书已经为你 JavaScript 的基础打下了坚实的基础，包括变量、数据类型、表达式、语句、对象、函数等。
 
 JavaScript 是一门强大的语言，可以用于创建动态交互式的 Web 应用程序和网站。在你继续学习和提高 JavaScript 技能的过程中，我们鼓励你探索新的概念和技术，并不断挑战自我。

@@ -1,6 +1,5 @@
+
 # Java 核心 (编程语言 - JavaScript, Java)
-
-
 
 ![](img/image_rsrc2MY.jpg)
 
@@ -8,7 +7,7 @@
 
 核心 Java 是通用编程语言 Java 的一个子集，它允许开发者开发 Windows 桌面应用程序以及移动应用程序。它是最流行的编程语言之一，非常适合想要学习面向对象编程的初学者。
 
-核心 Java 编程使用类似 C++的语法，易于学习、编写和编译。核心 Java 和 C++都是面向对象语言，但 C++是一种混合型面向对象语言，而核心 Java 是一种纯面向对象编程语言。
+核心 Java 编程使用类似 C++ 的语法，易于学习、编写和编译。核心 Java 和 C++ 都是面向对象语言，但 C++ 是一种混合型面向对象语言，而核心 Java 是一种纯面向对象编程语言。
 
 如果不熟悉核心 Java，就无法理解高级 Java。因此，如果你想精通 Java，核心 Java 将是你的第一步——学习所有基础知识和面向对象环境。
 
@@ -49,11 +48,17 @@ Java 由詹姆斯·高斯林于 20 世纪 90 年代初在 Sun Microsystem 开发
 程序员必须从命令提示符设置路径，然后使用下面给出的命令编译和执行程序。
 
 1. 设置类路径的命令
+
    进入命令提示符 → 输入并回车
+
    (`Set path = c:\ program files\ java\ jdk1.8\ bin`)
+
 2. 编译命令
+
    `javac filename.java`（回车）
+
 3. 执行命令
+
    `java filename`（回车）
 
 注意：程序员也可以使用多种开发环境，如 BlueJ、Apache、NetBeans IDE 8.0.2 来执行 Java 应用程序。
@@ -79,6 +84,7 @@ Java 由詹姆斯·高斯林于 20 世纪 90 年代初在 Sun Microsystem 开发
 1. 整数：不带小数的数字称为整数。Java 使用简写`int`声明整数变量。
 
    示例
+
    `int a=5, b1, result;`
 
    注意：对于 4 字节的数字使用`int`，对于 8 字节的数字使用`long`。
@@ -86,6 +92,7 @@ Java 由詹姆斯·高斯林于 20 世纪 90 年代初在 Sun Microsystem 开发
 2. 浮点数：带小数的数字称为浮点数。Java 使用简写`float`声明浮点数变量。
 
    示例
+
    `float b=3.145, c1, result;`
 
    注意：对于 4 字节的数字使用`float`，对于 8 字节的数字使用`double`。
@@ -93,16 +100,19 @@ Java 由詹姆斯·高斯林于 20 世纪 90 年代初在 Sun Microsystem 开发
 3. 字符：所有键盘字符在编程中都视为字符。Java 使用简写`char`声明字符变量。必须使用单引号`' '`来存储字符。
 
    示例
+
    `char myChar = 'c';`
 
 4. 字符串：字符序列称为字符串。Java 使用简写`string`声明字符串变量。必须使用双引号`" "`来存储字符串。
 
    示例
+
    `string txt = "John";`
 
 5. 布尔值：存储 true 或 false 值。Java 使用简写`Boolean`声明布尔变量。
 
    示例
+
    `char myNum = true;`
 
 注意：Java 程序中的任何语句都可以用分号（`;`）结束。
@@ -117,10 +127,6 @@ Java 编程中使用的算术运算符有七种。
 2. 减法（`-`）– 从一个值中减去另一个值，例如（`a - b`）
 3. 乘法（`*`）– 将两个值相乘，例如（`a * b`）
 4. 除法（`/`）– 返回除法余数，例如（`a / b`）
-
-
-
-
 
 # 第 3 章：核心 Java 中的输入输出编程
 
@@ -144,7 +150,7 @@ number = a.nextInt();
 a.close();
 ```
 
-**注意：** 我们可以使用 `nextFloat()` 方法来输入实数。
+**注意：** 我们可以使用`nextFloat()`方法来输入实数。
 
 ## 3.2 输出语句
 
@@ -162,9 +168,9 @@ System.out.println("字符串" + var); // 变量可以加在字符串之后或�
 System.out.println("结果是 " + c);
 ```
 
-如果使用 `println`，打印后光标会移到下一行；如果使用 `print`，光标则停留在同一行。
+如果使用`println`，打印后光标会移到下一行；如果使用`print`，光标则停留在同一行。
 
-**注意：** `c` 的值会与给定的字符串一起显示。
+**注意：** `c`的值会与给定的字符串一起显示。
 
 让我们编写一个 Java 程序，在输出中显示给定的文本。
 
@@ -274,9 +280,9 @@ public class InputOutput {
 
 1. `if` 语句
 2. `if…else` 语句
-3. 嵌套 `if` 语句
-4. `else if` 阶梯
-5. `switch-case` 语句
+3. 嵌套`if`语句
+4. `else if`阶梯
+5. `switch-case`语句
 
 ## 4.2 `if` 语句
 
@@ -366,9 +372,9 @@ public class DecisionMaking
 给定数字是偶数
 ```
 
-## 4.4 嵌套 `if` 语句
+## 4.4 嵌套`if`语句
 
-如果在 `if..else` 中再使用一个 `if` 语句，则称为“嵌套 `if` 语句”。
+如果在`if..else`中再使用一个`if`语句，则称为“嵌套`if`语句”。
 
 ### 语法：
 
@@ -409,9 +415,9 @@ public class DecisionMaking
 
 **注意：** 这里只有当两个条件都为真时，才会执行真语句，否则执行假语句。
 
-## 4.5 `else if` 阶梯
+## 4.5 `else if`阶梯
 
-如果有两个或更多决策，我们可以使用 `else if` 阶梯来解释所有情况。
+如果有两个或更多决策，我们可以使用`else if`阶梯来解释所有情况。
 
 ### 语法：
 
@@ -430,10 +436,6 @@ else
 
 **示例：**
 
-
-
-
-
 ### 使用 else if 阶梯判断三个数中最大值的 Java 程序
 
 ```java
@@ -451,6 +453,7 @@ public class DecisionMaking {
 ```
 
 输出：
+
 ```
 30 is the largest number
 ```
@@ -479,9 +482,11 @@ switch(expression)
 
 让我们看看它在 Java 编程中是如何实现的。程序员可以根据需要定义任意数量的 case。
 
-该程序执行 case 测试，一旦找到匹配项，就使用 `break` 关键字终止代码执行。
+该程序执行 case 测试，一旦找到匹配项，就使用`break`关键字终止代码执行。
 
 **示例：使用 switch case 语句将给定数字转换为英文单词的 Java 程序。**
+
+
 
 ```java
 public class DecisionMaking {
@@ -509,11 +514,12 @@ public class DecisionMaking {
 ```
 
 输出：
+
 ```
 Three
 ```
 
-**注意：** 我们只给出了五个 case，因此用户可以初始化和检查数字（1-5）。
+**注意：** 我们只给出了五个`case`，因此用户可以初始化和检查数字（1-5）。
 
 # 第 5 章：Java 核心中的循环
 
@@ -523,9 +529,9 @@ Three
 
 Java 核心中使用了三种类型的循环：
 
-1. `for` 循环
-2. `while` 循环
-3. `do while` 循环
+1. `for`循环
+2. `while`循环
+3. `do while`循环
 
 ## 5.2 for 循环
 
@@ -542,13 +548,13 @@ for (初始化; 条件; 递增或递减)
 }
 ```
 
-让我们为顺序数字 1 到 10 创建一个 `for` 循环。首先，我们取一个循环变量（`int i;`）。在初始化部分，必须初始化第一个数字（`i=1`）。接下来，我们必须设置一个“条件”，以便覆盖所有数字（1-10）（`i<=10`）。由于数字（1-10）是递增顺序，因此在（递增或递减）部分我们写（`i=i+1`）。最后，我们得到如下所示的 `for` 循环。
+让我们为顺序数字 1 到 10 创建一个`for`循环。首先，我们取一个循环变量（`int i`）。在初始化部分，必须初始化第一个数字（`i=1`）。接下来，我们必须设置一个“条件”，以便覆盖所有数字（1-10）（`i<=10`）。由于数字（1-10）是递增顺序，因此在（递增或递减）部分我们写（`i=i+1`）。最后，我们得到如下所示的`for`循环。
 
 ```
 for (i=1; i<=10; i=i+1)
 ```
 
-现在让我们编写一个 Java 程序，使用 `for` 循环显示 2 的乘法表。
+现在让我们编写一个 Java 程序，使用`for`循环显示 2 的乘法表。
 
 **示例**
 
@@ -564,6 +570,7 @@ public class Looping {
 ```
 
 输出：
+
 ```
 2
 4
@@ -579,7 +586,7 @@ public class Looping {
 
 ### 嵌套 for 循环
 
-如果在 `for` 循环内部再使用一个 `for` 循环，则称为嵌套 `for` 循环。用户必须注意，在执行过程中，外层的 `for` 循环每执行一次，内层的 `for` 循环就会完成整个迭代。
+如果在`for`循环内部再使用一个`for`循环，则称为嵌套`for`循环。用户必须注意，在执行过程中，外层的`for`循环每执行一次，内层的`for`循环就会完成整个迭代。
 
 **示例**
 
@@ -590,7 +597,7 @@ for(i = 1; i >= 3; i++) {
 }
 ```
 
-**注意：** 嵌套 `for` 循环用于二维数组以及许多其他应用。
+**注意：** 嵌套`for`循环用于二维数组以及许多其他应用。
 
 ## 5.3 while 循环
 
@@ -607,7 +614,7 @@ while(条件)
 }
 ```
 
-让我们为顺序数字 1 到 10 创建一个 `while` 循环。首先，在变量声明部分取一个循环变量（`int i=1;`）。接下来，我们必须设置一个“条件”，以便覆盖所有数字（1-10）（`i<=10`）。由于数字（1-10）是递增顺序，因此在（递增或递减）部分我们写（`i=i+1`）。最后，我们得到如下所示的 `while` 循环。
+让我们为顺序数字 1 到 10 创建一个`while`循环。首先，在变量声明部分取一个循环变量（`int i=1`）。接下来，我们必须设置一个“条件”，以便覆盖所有数字（1-10）（`i<=10`）。由于数字（1-10）是递增顺序，因此在（递增或递减）部分我们写（`i=i+1`）。最后，我们得到如下所示的`while`循环。
 
 ```java
 int i=1;
@@ -617,7 +624,7 @@ while(i<=10)
 }
 ```
 
-让我们编写一个 Java 程序，使用 `while` 循环显示 5 的乘法表。
+让我们编写一个 Java 程序，使用`while`循环显示 5 的乘法表。
 
 **示例**
 
@@ -634,6 +641,7 @@ public class Looping {
 ```
 
 输出：
+
 ```
 5
 10
@@ -662,7 +670,7 @@ do
 } while(条件);
 ```
 
-让我们为顺序数字 1 到 10 创建一个 `do` 循环。首先，在变量声明部分取一个循环变量（`int i=1;`）。接下来，我们必须设置一个“条件”，以便覆盖所有数字（1-10）（`i<=10`）。由于数字（1-10）是递增顺序，因此在（递增或递减）部分我们写（`i=i+1`）。最后，我们得到如下所示的 `do` 循环。
+让我们为顺序数字 1 到 10 创建一个`do`循环。首先，在变量声明部分取一个循环变量（`int i=1`）。接下来，我们必须设置一个“条件”，以便覆盖所有数字（1-10）（`i<=10`）。由于数字（1-10）是递增顺序，因此在（递增或递减）部分我们写（`i=i+1`）。最后，我们得到如下所示的`do`循环。
 
 ```java
 do
@@ -686,6 +694,7 @@ public class Looping {
 ```
 
 输出：
+
 ```
 7
 14
@@ -715,7 +724,7 @@ num[2] 40
 num[3] 60
 ```
 
-这里，数组的名称为 `num`，每个元素都通过其位置来标识，因此元素 60 位于位置 3，因为我们从 0 开始计数。
+这里，数组的名称为`num`，每个元素都通过其位置来标识，因此元素 60 位于位置 3，因为我们从 0 开始计数。
 
 **注意：** 我们在示例中使用了二维数组。
 
@@ -758,6 +767,7 @@ public class Array {
 ```
 
 输出：
+
 ```
 10
 20
@@ -781,6 +791,7 @@ public class Array {
 ```
 
 输出：
+
 ```
 50
 40
@@ -810,10 +821,6 @@ public class Array {
 ```java
 int mat [ ] [ ] = {{1,3,6}, {2,7,3}, {4,5,8}};
 ```
-
-
-
-
 
 # 第 7 章：核心 Java 中的方法
 
@@ -982,6 +989,8 @@ c:\program files\java\jdk1.8.0\bin\appletviewer any.html (press enter)
 
 这里，一旦我们编译了`demo.java`，另一个文件（`demo.class`）将自动创建并存储在`bin`中。之后`appletviewer`将调用该类来显示字符串，如下所示。
 
+
+
 ![](img/image_rsrc2N2.jpg)
 
 ## 8.2 Applet 示例
@@ -1092,24 +1101,32 @@ public class Array {
 4 5 8
 ```
 
-
-
-
-
 以下是 AWT 中使用的组件列表。
 
 1. `Button` – 用于创建带标签按钮的类。AWT 允许我们为按钮添加操作。
+
 2. `Label` – 用于在容器中放置文本的对象。
+
 3. `Check Box` – 一种图形组件，具有两种状态：开（true）或关（false）。
+
 4. `Check Box Group` – 一组复选框。
+
 5. `List` – 包含可滚动文本项列表的组件。
+
 6. `Text Field` – 允许编辑单行文本。
+
 7. `Text Area` – 允许编辑多行文本。
+
 8. `Choices` – 一个弹出式选择菜单，所选选项将显示在顶部。
+
 9. `Canvas` – 用于绘制内容的区域。
+
 10. `Image` – 表示图形图像。
+
 11. `Scroll Bar` – 允许用户选择值的范围。
+
 12. `Dialog Box` – 用户可以插入某种形式的输入。
+
 13. `File Dialog` – 用户可以选择特定文件。
 
 ## 9.2 AWT 编程
@@ -1143,8 +1160,11 @@ public class Array {
 以下是程序员在创建组件时必须遵循的基本指令。
 
 1. `setSize(height, width)` – 设置框架或容器的大小。
+
 2. `setTitle("Title of Frame")` – 根据环境设置框架的标题。
+
 3. `setLayout(null)` – 如果不需要布局，则程序员必须将其设置为 null。如果在其他应用程序中需要布局，则避免使用此指令。
+
 4. `setVisible(true)` – 必须将可见性设置为 true。
 
 牢记上述所有讨论，让我们创建一些 AWT 组件。
@@ -1319,11 +1339,9 @@ public class Component extends Frame implements ActionListener {
 
 ![](img/image_rsrc2NA.jpg)
 
-# 第 10 章
+# 第 10 章 Core Java 中的 Swing
 
-Core Java 中的 Swing
-
-Java Swing 是一个用于创建桌面应用程序的复杂工具包。Swing 比 AWT 更复杂。它使用丰富的组件集。我们可以使用 Java Swing 轻松开发轻量级桌面应用程序。Java Swing 的包提供了比 AWT 更多的组件，例如 Combo Box、Spinner、Slider 等。
+Java Swing 是一个用于创建桌面应用程序的复杂工具包。Swing 比 AWT 更复杂。它使用丰富的组件集。我们可以使用 Java Swing 轻松开发轻量级桌面应用程序。Java Swing 的包提供了比 AWT 更多的组件，例如 `Combo Box`、`Spinner`、`Slider` 等。
 
 ## 10.1 Swing 的组件
 
@@ -1332,31 +1350,36 @@ Swing 组件是开发基于窗口的应用程序的基本构建块。它提供�
 以下是 Java Swing 中使用的组件：
 
 1. `JButton` – `JButton` 类创建一个带标签的按钮。
+
 2. `JColorChooser` – 它提供一个控制面板，允许用户操作和选择颜色。
+
 3. `JcheckBox` – 一个 GUI 组件，可以处于开（true）或关（false）状态。
+
 4. `JRadioButton` – 可以处于开（true）或关（false）状态，位于组中。
+
 5. `JList` – 该类为用户提供可滚动的文本项列表。
+
 6. `JComboBox` – 该组件为用户提供一个弹出式菜单，包含列表或选项。
+
 7. `JTextField` – 一个文本组件，允许编辑单行文本。
+
 8. `JpasswordField` – 用于密码输入的文本组件。
+
 9. `JTextArea` – 一个文本组件，允许编辑多行文本。
+
 10. `Imagelcon` – 从图像绘制图标。
 
+11. `JScrollbar` – 它代表一个滚动条组件，允许用户从范围值中选择。
 
+12. `JOptionPane` – 它提供一组标准对话框，用于提示用户输入值。
 
+13. `JFileChooser` – 它代表一个对话框窗口，允许用户选择文件。
 
+14. `JProgressBar` – 它显示任务完成的百分比。
 
-# 11\. JScrollbar - 它代表一个滚动条组件，允许用户从范围值中选择。
+15. `JSlider` – 用户可以通过在定义的区间内滑动旋钮来选择值。
 
-# 12\. JOptionPane - 它提供一组标准对话框，用于提示用户输入值。
-
-# 13\. JFileChooser - 它代表一个对话框窗口，允许用户选择文件。
-
-# 14\. JProgressBar - 它显示任务完成的百分比。
-
-# 15\. JSlider – 用户可以通过在定义的区间内滑动旋钮来选择值。
-
-# 16\. JSpinner – 它是一个单行输入字段，允许用户从有序序列中选择数字或对象值。
+16. `JSpinner` – 它是一个单行输入字段，允许用户从有序序列中选择数字或对象值。
 
 ## 10.2 Java Swing 编程
 
@@ -1371,6 +1394,8 @@ Swing 组件是开发基于窗口的应用程序的基本构建块。它提供�
 实现：`JFrame f = new JFrame("My frame");`
 
 创建一个组件（按钮）
+
+
 
 语法：`Component var = new Component("Label");`
 
@@ -1390,7 +1415,7 @@ Swing 组件是开发基于窗口的应用程序的基本构建块。它提供�
 
 考虑到上述所有讨论，让我们创建一些 Java Swing 组件。
 
-### 1\. Java Swing 程序，用于创建并显示按钮、标签和文本字段。
+### 1. Java Swing 程序，用于创建并显示按钮、标签和文本字段。
 
 ```
 import javax.swing.*;
@@ -1420,7 +1445,7 @@ public class Component {
 
 ![](img/image_rsrc2NB.jpg)
 
-### 2\. Java Swing 程序，用于创建并显示“男”和“女”单选按钮。
+### 2. Java Swing 程序，用于创建并显示“男”和“女”单选按钮。
 
 ```
 import javax.swing.*;
@@ -1446,7 +1471,7 @@ public class Component {
 
 ![](img/image_rsrc2NC.jpg)
 
-### 3\. Java Swing 程序，用于创建并显示国家组合框。
+### 3. Java Swing 程序，用于创建并显示国家组合框。
 
 ```
 import javax.swing.*;
@@ -1469,7 +1494,7 @@ public class Component {
 
 ![](img/image_rsrc2ND.jpg)
 
-### 4\. Java Swing 程序，用于创建并显示带有给定字符串的选项窗格。
+### 4. Java Swing 程序，用于创建并显示带有给定字符串的选项窗格。
 
 ```
 import javax.swing.*;
@@ -1486,7 +1511,7 @@ public class Component {
 
 ![](img/image_rsrc2NE.jpg)
 
-### 5\. Java Swing 程序，用于创建并显示密码字段。
+### 5. Java Swing 程序，用于创建并显示密码字段。
 
 ```
 import javax.swing.*;
@@ -1508,7 +1533,7 @@ public class Component {
 
 ![](img/image_rsrc2NF.jpg)
 
-### 6\. 一个程序，用于创建并显示使用 Java Swing 组件和 AWT 功能执行加法和减法的计算器。
+### 6. 一个程序，用于创建并显示使用 Java Swing 组件和 AWT 功能执行加法和减法的计算器。
 
 ```
 import javax.swing.*;
@@ -1580,7 +1605,7 @@ JDBC 是一个应用程序，它为客户端访问后端数据库创建环境。
 
 ### 11.2 JDBC 编程
 
-让我们编写一个 JDBC 程序。我们必须导入 `java.sql` 库，因为我们使用 SQL 命令（例如 `"Select * from [Sheet1$]"`）来对数据库进行操作。用户必须了解 Java 异常处理。该程序通过 ODBC 与数据库链接。
+让我们编写一个 JDBC 程序。我们必须导入`java.sql`库，因为我们使用 SQL 命令（例如`"Select * from [Sheet1$]"`）来对数据库进行操作。用户必须了解 Java 异常处理。该程序通过 ODBC 与数据库链接。
 
 示例：JDBC 程序，用于访问 Excel 文件（`demo.xls`）并显示内容。
 
@@ -1616,10 +1641,6 @@ public class JdbcDemo
     }
 }
 ```
-
-
-
-
 
 ```java
 System.out.print(columnValue);
@@ -1686,6 +1707,8 @@ public class ArithmeticOp {
 注意：这里用户必须根据提示输入第一个和第二个数字，然后得到相应的输出。
 
 ### 2. 示例（决策制定）：应用程序，计算学生的等级，即如果学生获得 60%以上则为第一等，50-59%之间为第二等，低于 50%为不及格。
+
+
 
 ```java
 import java.util.Scanner;
@@ -1948,27 +1971,20 @@ public class FruitTable{
         String data[][]={ {"1","Apple"},   
         {"2","Banana"},   
         {"3","Orange"},
-```
-
-
-
-
-
-```
-{"4","Grapes"},
-{"5","Mango"},};   
-String column[]={"Sl No.","Name of fruits"};        
-JTable jt=new JTable
-(data,column);   
-jt.setBounds(30,40,200,300);         
-JScrollPane sp=new JScrollPane(jt);   
-f.add(sp);         
-f.setSize(300,400);   
-f.setVisible(true);   
-}    
-public static void main(String[] args) {   
-new FruitTable ();   
-}    }
+        {"4","Grapes"},
+        {"5","Mango"},};   
+        String column[]={"Sl No.","Name of fruits"};         
+        JTable jt=new JTable(data,column);   
+        jt.setBounds(30,40,200,300);          
+        JScrollPane sp=new JScrollPane(jt);   
+        f.add(sp);          
+        f.setSize(300,400);   
+        f.setVisible(true);   
+    }     
+    public static void main(String[] args) {   
+        new FruitTable ();   
+    }    
+}
 ```
 
 输出
@@ -1977,34 +1993,34 @@ new FruitTable ();   
 
 ### 10. 示例（Java Swing）：创建文件、编辑和视图工具栏的应用程序。
 
-```
+```java
 import java.awt.BorderLayout;
 import java.awt.Container;
-import javax.swing.JButton;  
+import javax.swing.JButton;  
 import javax.swing.JFrame;
 import javax.swing.JScrollPane;
 import javax.swing.JTextArea;
 import javax.swing.JToolBar;
 public class Component{
-public static void main( String args[]) { 
-JFrame f = new JFrame("Java Swing ToolBar");
-f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-JToolBar toolbar = new JToolBar();
-toolbar.setRollover(true);
-JButton button = new JButton("File");
-toolbar.add(button);
-toolbar.addSeparator();
-toolbar.add(new JButton("Edit"));
-toolbar.addSeparator();
-toolbar.add(new JButton("View"));      
-Container contentPane = f.getContentPane();
-contentPane.add(toolbar, BorderLayout.NORTH);
-JTextArea textArea = new JTextArea();
-JScrollPane mypane = new JScrollPane(textArea);
-contentPane.add(mypane, BorderLayout.EAST);
-f.setSize(450, 250);
-f.setVisible(true);
-}
+    public static void main( String args[]) { 
+        JFrame f = new JFrame("Java Swing ToolBar");
+        f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        JToolBar toolbar = new JToolBar();
+        toolbar.setRollover(true);
+        JButton button = new JButton("File");
+        toolbar.add(button);
+        toolbar.addSeparator();
+        toolbar.add(new JButton("Edit"));
+        toolbar.addSeparator();
+        toolbar.add(new JButton("View"));      
+        Container contentPane = f.getContentPane();
+        contentPane.add(toolbar, BorderLayout.NORTH);
+        JTextArea textArea = new JTextArea();
+        JScrollPane mypane = new JScrollPane(textArea);
+        contentPane.add(mypane, BorderLayout.EAST);
+        f.setSize(450, 250);
+        f.setVisible(true);
+    }
 }
 ```
 
@@ -2014,6 +2030,8 @@ f.setVisible(true);
 
 ### 11. 示例（Java Swing）：创建桌面的应用程序。
 
+
+
 ```
 import java.awt.BorderLayout;
 import java.awt.Container;
@@ -2021,8 +2039,8 @@ import javax.swing.JDesktopPane;
 import javax.swing.JFrame;
 import javax.swing.JInternalFrame;
 import javax.swing.JLabel;
-public class Component extends JFrame{ 
-public Component()  
+public class Component extends JFrame{ 
+public Component()  
 {
 CustomDesktopPane desktopPane = new CustomDesktopPane();
 Container contentPane = getContentPane();
@@ -2032,21 +2050,21 @@ setTitle("Java Swing Desktop");
 setSize(300,350);
 setVisible(true);
 }
-public static void  main(String args[])
+public static void  main(String args[])
 {
 new Component();
 }
 }
-class CustomDesktopPane extends JDesktopPane 
-{   
-public void display(CustomDesktopPane dp)  
+class CustomDesktopPane extends JDesktopPane 
+{   
+public void display(CustomDesktopPane dp)  
 {
-JInternalFrame f = new JInternalFrame("My Desktop " ,  true);   
+JInternalFrame f = new JInternalFrame("My Desktop " ,  true);   
 f.setBounds(30, 30, 250, 85);
 Container c1 = f.getContentPane( ) ;
 c1.add(new JLabel("Hi! User, Welcome to Java Swing "));
 dp.add( jframe );
-f.setVisible(true);        
+f.setVisible(true);        
 }
 }
 ```
@@ -2055,13 +2073,13 @@ f.setVisible(true);        
 
 ![](img/image_rsrc2NV.jpg)
 
-### 12. 示例（Java Swing）：根据需求创建画布绘制图形的应用程序。这里用户可以绘制任何形状，但必须相应地给出指令。
+## 12. 示例（Java Swing）：根据需求创建画布绘制图形的应用程序。这里用户可以绘制任何形状，但必须相应地给出指令。
 
 ```
 import java.awt.*;
-import javax.swing.JFrame;    
-public class UserGraphics  extends Canvas{
-public void paint(Graphics g) { 
+import javax.swing.JFrame;     
+public class UserGraphics  extends Canvas{
+public void paint(Graphics g) { 
 g.drawString("Hello",40,40);
 setBackground(Color.BLUE);
 g.fillRect(130, 30,100, 80);
@@ -2069,7 +2087,7 @@ g.drawOval(30,130,50, 60);
 setForeground(Color.GREEN);
 g.fillOval(130,130,50, 60);
 g.drawArc(30, 200, 40,50,90,60);
-g.fillArc(30, 130, 40,50,180,40);    
+g.fillArc(30, 130, 40,50,180,40);     
 }
 public static void main(String[] args) {
 UserGraphics m=new UserGraphics ();
@@ -2078,20 +2096,20 @@ f.add(m);
 f.setSize(400,400);
 //f.setLayout(null);
 f.setVisible(true);
-}  }
+}  }
 ```
 
 输出
 
 ![](img/image_rsrc2NW.jpg)
 
-### 13. 示例（Java AWT、Swing 和 Applet）：处理 AWT 和 Swing 事件的小程序。
+## 13. 示例（Java AWT、Swing 和 Applet）：处理 AWT 和 Swing 事件的小程序。
 
 ```
 import java.applet.*;
 import javax.swing.*;
 import java.awt.event.*;
-public class EventApplet extends JApplet implements ActionListener{ 
+public class EventApplet extends JApplet implements ActionListener{ 
 JButton b;
 JTextField tf;
 public void init(){
@@ -2103,8 +2121,8 @@ add(b);add(tf);
 b.addActionListener(this);
 setLayout(null);
 }
-public void actionPerformed(ActionEvent e){ 
-tf.setText("Hi!, Welcome to Applet Event"); 
+public void actionPerformed(ActionEvent e){ 
+tf.setText("Hi!, Welcome to Applet Event"); 
 }
 }
 ```
@@ -2114,13 +2132,12 @@ tf.setText("Hi!, Welcome to Applet Event"); 
 ```
 <html>
 <body>
-<applet code="EventApplet.class" width="300" height="300"> 
+<applet code="EventApplet.class" width="300" height="300"> 
 </applet>
 </body>
 </html>
 ```
 
-注意：用户需要将应用程序文件和 HTML 文件保存在适当的位置，然后在命令提示符下编译程序，并使用 `appletviewer` 命令查看输出。
+注意：用户需要将应用程序文件和 HTML 文件保存在适当的位置，然后在命令提示符下编译程序，并使用`appletviewer`命令查看输出。
 
 结束
-

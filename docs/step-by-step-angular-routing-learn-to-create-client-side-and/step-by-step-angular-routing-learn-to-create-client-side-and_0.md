@@ -1,29 +1,17 @@
+
 # Angular 路由分步指南：学习使用路由和导航创建客户端及单页应用
-
-
 
 ![](img/cover.jpg)
 
 ![image](img/cover.jpg)
 
-
-
 ![](img/logo.jpg)
 
-
-
-# 责任限制与免责声明
-
-
-
-
-
-
-
+## 责任限制与免责声明
 
 由 Manish Jain 为 BPB Publications (20, Ansari Road, Darya Ganj, New Delhi-110002) 出版，并由 Repro India Pvt Ltd (Mumbai) 印刷。
 
-# 关于作者
+## 关于作者
 
 `Nishu Goel` 是一位目前在印度孟加罗尔的 `IBM` 工作的软件开发人员。她在 2018 年完成了计算机科学学士学位。她从事 `Angular` 开发并不断学习。她热爱写博客文章，并在会议上讨论 `Angular` 的基础概念。她还是 Udemy 上课程《初学者 Angular》(Angular for Beginners) 的作者。由于她在印度贾尔坎德邦的村庄生活了三个月，致力于将技术应用于联合国可持续发展目标 (SDGs)，她获得了英国首相颁发的荣誉表彰。
 
@@ -33,10 +21,11 @@
 
 你可以在 Twitter 上推特 `@DcoustaWilson` 联系她，并在 [`nishugoel.wordpress.com/`](https://nishugoel.wordpress.com/) 阅读她的博客文章。
 
-## 本书献给
+### 本书献给
+
 我的爸爸和妈妈，感谢他们支持我在人生的每一步中想要做的事情。
 
-# 前言
+## 前言
 
 路由是 `Angular` 开发人员最重要的概念之一。无论你只是刚开始 Web 开发，还是一名 `Angular` 专家，URL 栏与应用程序状态之间的映射都是一项至关的功能。路由桥接了过去的可独立寻址页面模型与如今丰富的客户端单页应用之间的之间的鸿沟。
 
@@ -46,9 +35,9 @@
 
 通过这本书，Nishu 巩固了她在 `Angular` 社区中之星的地位。
 
-**Stephen Fluin，Angular 开发者关系负责人**
+Stephen Fluin，Angular 开发者关系负责人
 
-# 序
+## 序
 
 过去，构建 Web 应用很大程度上使用的是 `HTML` 和 `JavaScript`。在构建大型应用时，会大规模使用如 `Dojo`、`knockout` 等库。2009 年，当 `AngularJS` 引入时，Web 开发者社区感到震动。Misko Hevery 和 Adam Abrons 在 `Google` 作为一个侧项目构建了它，从那时起，这个框架一直让人惊喜，并帮助他们更快、更高效地构建应用程序。
 
@@ -70,26 +59,18 @@
 
 本书有一个相关的 `GitHub` 仓库，链接分享在书中，因为正如我们所听说的，学习某事最好的方法就是实践。
 
-# 跟着一起写！
+## 跟着一起写！
 
 书中不同主题的运行代码示例 GitHub 链接：
 
-**[`github.com/NishuGoel/AngularRoutingBook`](https://github.com/NishuGoel/AngularRoutingBook)**
+[`github.com/NishuGoel/AngularRoutingBook`](https://github.com/NishuGoel/AngularRoutingBook)
 
 ![](img/pvii-001.jpg)
 
-# 勘误
-
-
-
+## 勘误
 
 我们对 BPB Publications 的工作感到非常自豪，并遵循最佳实践以确保内容的准确性，为我们的订阅者提供沉浸式的阅读体验。我们的读者是我们的镜子，我们利用他们的反馈来反思并改进出版过程中可能出现的任何人为错误。为了让我们保持质量，并帮助我们联系任何可能因不可预见的错误而遇到困难的读者，请通过以下邮箱与我们联系：
 
-errata@bpbonline.com
+`errata@bpbonline.com`
 
 BPB Publications 大家非常感谢您的支持、建议和反馈。
-
-
-
-
-

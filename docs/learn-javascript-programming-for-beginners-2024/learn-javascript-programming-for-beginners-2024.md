@@ -1,9 +1,5 @@
+
 # JavaScript 编程初学者指南 2024
-
-
-
-
-![](img/1c89893db72803b0177df8b47655c802_0_0.png)
 
 ## 第一章：JavaScript 简介
 
@@ -13,7 +9,7 @@ JavaScript 是一种轻量级、解释型、面向对象的语言，支持一等
 
 JavaScript 最初由网景公司在 20 世纪 90 年代中期开发，如今已成为与 HTML 和 CSS 并列的网页三大核心技术之一。
 
-```
+```javascript
 console.log("Hello, World!");
 ```
 
@@ -33,7 +29,7 @@ JavaScript 也是进入编程世界的一个绝佳起点。它的语法相对简
 
 JavaScript 语法是构建 JavaScript 程序的规则集合：
 
-```
+```javascript
 var x = 5; // 声明一个变量
 var y = 6; // 声明另一个变量
 var z = x + y; // 将变量相加
@@ -45,7 +41,7 @@ console.log(z); // 将结果输出到控制台
 
 JavaScript 具有动态类型。这意味着你在声明变量时不必指定其数据类型，并且可以更改已声明变量的数据类型。
 
-```
+```javascript
 var length = 16; // 数字
 var lastName = "Johnson"; // 字符串
 var x = {firstName:"John", lastName:" Doe"}; // 对象
@@ -61,20 +57,20 @@ var x = {firstName:"John", lastName:" Doe"}; // 对象
 
 变量是用于存储数据值的容器。在 JavaScript 中，我们使用 `var` 关键字声明变量，后跟变量名。让我们看看如何创建一个变量。
 
-```
+```javascript
 var name = "John Doe";
 ```
 
 在上面的例子中，我们创建了一个名为 `name` 的变量，并为其赋值“John Doe”。我们也可以先声明变量而不赋值，稍后再进行赋值。
 
-```
+```javascript
 var name;
 name = "John Doe";
 ```
 
 JavaScript 还提供了另外两个关键字来声明变量——`let` 和 `const`。`let` 关键字类似于 `var`，但它具有块级作用域。另一方面，`const` 用于声明常量，即不能重新赋值的变量。
 
-```
+```javascript
 let age = 25;
 const country = "USA";
 ```
@@ -84,41 +80,47 @@ const country = "USA";
 JavaScript 有几种数据类型，包括：
 
 1.  **Number**（数字）- 表示数值。例如：`var num = 25;`。
+
 2.  **String**（字符串）- 表示字符序列。例如：`var str = "Hello World";`。
+
 3.  **Boolean**（布尔值）- 表示逻辑值，只能是 `true` 或 `false`。例如：`var isTrue = true;`。
+
 4.  **Undefined**（未定义）- 表示尚未赋值的变量。例如：`var x;`。
+
 5.  **Null**（空值）- 表示空值。例如：`var y = null;`。
+
 6.  **Object**（对象）- 表示通过它可以访问方法的实例。例如：`var obj = {name: "John", age: 25, country: "USA"};`。
+
 7.  **Array**（数组）- 表示一组相似项目的列表。例如：`var arr = [1, 2, 3, 4, 5];`。
 
 让我们看几个这些数据类型的例子。
 
-```
+```javascript
 // 数字
 var num = 25;
 ```
 
-```
+```javascript
 // 字符串
 var str = "Hello World";
 ```
 
-```
+```javascript
 // 布尔值
 var isTrue = true;
 ```
 
-```
+```javascript
 // 未定义
 var x;
 ```
 
-```
+```javascript
 // 空值
 var y = null;
 ```
 
-```
+```javascript
 // 对象
 var obj = {name: "John", age: 25, country: "USA"};
 
@@ -128,7 +130,7 @@ var arr = [1, 2, 3, 4, 5];
 
 在 JavaScript 中，我们可以使用 `typeof` 操作符来查找变量的类型。
 
-```
+```javascript
 console.log(typeof num); // 返回 "number"
 console.log(typeof str); // 返回 "string"
 console.log(typeof isTrue); // 返回 "boolean"
@@ -151,7 +153,9 @@ console.log(typeof arr); // 返回 "object"
 在 JavaScript 中有三种声明变量的方式：
 
 1.  使用 `var`
+
 2.  使用 `let`
+
 3.  使用 `const`
 
 让我们逐一了解它们。
@@ -160,7 +164,7 @@ console.log(typeof arr); // 返回 "object"
 
 在 ES6 之前，`var` 是 JavaScript 中声明变量的唯一方式。以下是一个例子：
 
-```
+```javascript
 var name = "John Doe";
 ```
 
@@ -168,7 +172,7 @@ var name = "John Doe";
 
 在 ES6 中引入，`let` 现在是声明变量的首选方式。它比 `var` 有更多的限制，这有助于防止代码中的错误。以下是一个例子：
 
-```
+```javascript
 let name = "John Doe";
 ```
 
@@ -176,7 +180,7 @@ let name = "John Doe";
 
 同样在 ES6 中引入，`const` 用于声明常量，即不能重新赋值的变量。以下是一个例子：
 
-```
+```javascript
 const PI = 3.14159;
 ```
 
@@ -185,18 +189,24 @@ const PI = 3.14159;
 JavaScript 有几种基本数据类型，包括：
 
 1.  数字（Number）
+
 2.  字符串（String）
+
 3.  布尔值（Boolean）
+
 4.  对象（Object）
+
 5.  空值（Null）
+
 6.  未定义（Undefined）
+
 7.  符号（Symbol）（ES6 新增）
 
 ### 数字
 
 JavaScript 中的数字可以带小数点，也可以不带。例如：
 
-```
+```javascript
 let num1 = 5; // 不带小数点
 let num2 = 5.5; // 带小数点
 ```
@@ -205,7 +215,7 @@ let num2 = 5.5; // 带小数点
 
 字符串是字符的序列，必须放在引号内。例如：
 
-```
+```javascript
 let str1 = "Hello"; // 双引号
 let str2 = 'Hello'; // 单引号
 ```
@@ -214,7 +224,7 @@ let str2 = 'Hello'; // 单引号
 
 布尔值只能是 `true` 或 `false`。例如：
 
-```
+```javascript
 let isReading = true;
 let isSleeping = false;
 ```
@@ -223,7 +233,7 @@ let isSleeping = false;
 
 对象是复杂的数据类型，允许组合其他数据类型。例如：
 
-```
+```javascript
 let person = {firstName: "John", lastName: "Doe", age: 30};
 ```
 
@@ -231,13 +241,13 @@ let person = {firstName: "John", lastName: "Doe", age: 30};
 
 在 JavaScript 中，`null` 表示“无”。它需要被赋值：
 
-```
+```javascript
 let nothing = null;
 ```
 
 `undefined` 表示变量尚未被赋值：
 
-```
+```javascript
 let something;
 console.log(something); // 输出: undefined
 ```
@@ -246,7 +256,7 @@ console.log(something); // 输出: undefined
 
 `Symbol` 数据类型在 ES6 中引入，它生成一个唯一的值：
 
-```
+```javascript
 let symbol1 = Symbol('symbol');
 ```
 
@@ -261,8 +271,6 @@ let symbol1 = Symbol('symbol');
 在 JavaScript 中，函数是一等对象，这意味着它们可以存储在变量中、作为参数传递给其他函数，以及从其他函数返回。这种灵活性赋予了 JavaScript 强大的能力和多功能性。
 
 以下是一个简单的函数示例：
-
-
 
 ### 函数定义
 
@@ -430,28 +438,28 @@ console.log(fruits[0]); // Output: "Apple"
 
 JavaScript 中有几种方法可以让你操作数组。以下是一些例子：
 
-- push(): 此方法用于在数组末尾添加新项。
+- `push()`: 此方法用于在数组末尾添加新项。
 
 ```javascript
 fruits.push("Dragonfruit");
 console.log(fruits); // Output: ["Apple", "Banana", "Cherry", "Dragonfruit"]
 ```
 
-- pop(): 此方法用于移除数组的最后一项。
+- `pop()`: 此方法用于移除数组的最后一项。
 
 ```javascript
 fruits.pop();
 console.log(fruits); // Output: ["Apple", "Banana", "Cherry"]
 ```
 
-- shift(): 此方法用于移除数组的第一项。
+- `shift()`: 此方法用于移除数组的第一项。
 
 ```javascript
 fruits.shift();
 console.log(fruits); // Output: ["Banana", "Cherry"]
 ```
 
-- unshift(): 此方法用于在数组开头添加新项。
+- `unshift()`: 此方法用于在数组开头添加新项。
 
 ```javascript
 fruits.unshift("Apple");
@@ -559,15 +567,13 @@ console.log(myCar.make); // Toyota
 myCar.start(); // Car is started
 ```
 
-
-
 ### JavaScript 中的继承
 
 继承是面向对象编程的关键特性之一，它允许我们从现有的类创建一个新类。这个新类被称为子类，它会继承父类的所有属性和行为。
 
 以下是 JavaScript 中继承的一个示例：
 
-```
+```javascript
 class SportsCar extends Car {
   constructor(make, model, color, turbo) {
     super(make, model, color);
@@ -597,11 +603,15 @@ mySportsCar.turboStart(); // Turbo is started
 
 在 JavaScript 中，我们有几种类型的循环：
 
-- 1. **For 循环：** 这是最常见的循环，它会重复执行直到指定的条件求值为 false。
-- 2. **While 循环：** 只要指定的条件求值为 true，`while` 循环就会执行指令。
-- 3. **Do-while 循环：** 这类似于 `while` 循环，但它保证循环体至少会执行一次。
-- 4. **For-in 循环：** `for-in` 循环用于遍历对象的属性。
-- 5. **For-of 循环：** `for-of` 循环用于遍历可迭代对象，如数组、字符串等。
+1.  **For 循环：** 这是最常见的循环，它会重复执行直到指定的条件求值为 false。
+
+2.  **While 循环：** 只要指定的条件求值为 true，`while` 循环就会执行指令。
+
+3.  **Do-while 循环：** 这类似于 `while` 循环，但它保证循环体至少会执行一次。
+
+4.  **For-in 循环：** `for-in` 循环用于遍历对象的属性。
+
+5.  **For-of 循环：** `for-of` 循环用于遍历可迭代对象，如数组、字符串等。
 
 ### For 循环
 
@@ -609,7 +619,7 @@ mySportsCar.turboStart(); // Turbo is started
 
 以下是一个 for 循环的示例：
 
-```
+```javascript
 for (let i = 0; i < 5; i++) {
     console.log(i);
 }
@@ -623,7 +633,7 @@ for (let i = 0; i < 5; i++) {
 
 以下是一个 while 循环的示例：
 
-```
+```javascript
 let i = 0;
 while (i < 5) {
   console.log(i);
@@ -639,7 +649,7 @@ while (i < 5) {
 
 以下是一个 do-while 循环的示例：
 
-```
+```javascript
 let i = 0;
 do {
     console.log(i);
@@ -656,7 +666,7 @@ while (i < 5);
 
 以下是一个 for-in 循环的示例：
 
-```
+```javascript
 const person = {fname:"John", lname:"Doe", age:25};
 
 for (let x in person) {
@@ -672,7 +682,7 @@ for (let x in person) {
 
 以下是一个 for-of 循环的示例：
 
-```
+```javascript
 let arr = [3, 5, 7];
 for (let i of arr) {
   console.log(i);
@@ -703,7 +713,7 @@ Promise 通过提供更具可读性的语法和更好的错误处理，改进了
 
 这是一个 Promise 的示例：
 
-```
+```javascript
 let promise = new Promise((resolve, reject) => {
     let condition = true;
 
@@ -727,7 +737,7 @@ Async 和 Await 使得使用 Promise 变得更加容易。异步函数是一种�
 
 以下是如何使用 async 和 await 重写上述 Promise 的示例：
 
-```
+```javascript
 async function myFunction() {
   let condition = true;
 
@@ -755,7 +765,7 @@ myFunction()
 
 在 JavaScript 中，几乎所有东西都是对象。布尔值、数字、字符串、日期、数学运算、正则表达式、数组、函数和对象都是对象。这使得 JavaScript 成为一种强大的面向对象编程语言。
 
-```
+```javascript
 var person = {
   firstName: "John",
   lastName : "Doe",
@@ -774,19 +784,25 @@ var person = {
 
 在 JavaScript 中，类使用 `class` 关键字声明。
 
-
-
+```javascript
 class Car {
+
     constructor(brand) {
+
         this.carName = brand;
+
     }
 
     present() {
+
         return 'I have a ' + this.carName;
+
     }
+
 }
 
 let myCar = new Car("Ford");
+```
 
 在上面的代码中，`Car` 是一个类。`constructor` 和 `present` 是 `Car` 类中的方法。`myCar` 是 `Car` 类的一个实例（对象）。
 
@@ -825,7 +841,9 @@ let myCar = new Model("Ford", "Mustang");
 Promise 是一个表示异步操作最终完成或失败的对象。它作为该操作结果的一个占位符。Promise 处于以下状态之一：
 
 -   待定（Pending）：Promise 的结果尚未确定。
+
 -   已兑现（Fulfilled）：操作已成功完成。
+
 -   已拒绝（Rejected）：操作失败。
 
 下面是一个创建 Promise 的简单示例：
@@ -884,7 +902,9 @@ Promise 是一个表示异步操作最终完成或失败的对象。本质上，
 Promise 处于以下状态之一：
 
 -   待定（Pending）：初始状态，既未兑现也未拒绝。
+
 -   已兑现（Fulfilled）：表示操作已成功完成。
+
 -   已拒绝（Rejected）：表示操作失败。
 
 这是一个简单的 Promise：
@@ -977,7 +997,9 @@ cleanRoom().then(function(result) {
 Promise 是一个表示异步操作最终完成或失败的对象。它作为该操作结果的一个占位符。Promise 始终处于以下状态之一：
 
 -   待定（Pending）：Promise 的结果尚未确定。
+
 -   已兑现（Fulfilled）：操作已成功完成。
+
 -   已拒绝（Rejected）：操作失败。
 
 下面是一个创建 Promise 的示例。
@@ -1237,8 +1259,6 @@ try {
 
 错误处理是任何编程语言的基本组成部分，JavaScript也不例外。通过理解和使用JavaScript提供的工具，例如`try/catch/finally`语句和`throw`语句，你可以有效地管理和处理代码中的错误。
 
-
-
 ## 第17章：JavaScript中的错误处理
 
 在任何编程语言中，错误都是不可避免的。它们可能由于代码不正确或发生无法控制的事情（如API请求失败）而产生。理解如何处理这些错误将使你的程序更加健壮和可靠。本章将深入探讨JavaScript如何处理错误以及如何在你的代码中使用错误处理。
@@ -1247,7 +1267,7 @@ try {
 
 在JavaScript中，当发生错误时会创建一个错误对象。该对象包含两个属性：`name`和`message`。`name`属性告诉你错误的类型，而`message`属性提供了错误的描述。
 
-```
+```javascript
 try {
   // 可能会抛出错误的代码
 } catch (error) {
@@ -1260,7 +1280,7 @@ try {
 
 JavaScript提供了`try...catch`语句，允许你“尝试”一段代码并“捕获”发生的任何错误。
 
-```
+```javascript
 try {
   // 可能会抛出错误的代码
 } catch (error) {
@@ -1270,7 +1290,7 @@ try {
 
 你也可以在`catch`块之后添加一个`finally`块。无论是否发生错误，`finally`块内的代码都会运行。
 
-```
+```javascript
 try {
   // 可能会抛出错误的代码
 } catch (error) {
@@ -1284,14 +1304,14 @@ try {
 
 除了JavaScript提供的内置错误外，你还可以使用`throw`关键字创建自己的自定义错误。
 
-```
+```javascript
 throw 'Error2';  // 字符串类型
 throw 42;        // 数字类型
 throw true;      // 布尔类型
 throw {toString: function() { return "I'm an object!"; } };
 ```
 
-```
+```javascript
 // 创建一个带有自定义消息的Error类型
 throw new Error('The message');
 ```
@@ -1300,7 +1320,7 @@ throw new Error('The message');
 
 JavaScript有几个内置的错误构造函数，包括`Error()`、`RangeError()`、`TypeError()`和`SyntaxError()`。这些错误中的每一个都有特定的用例，并且它们都继承自基础的`Error`构造函数。
 
-```
+```javascript
 throw new Error('This is a generic error');
 throw new TypeError('This error indicates a type mismatch');
 throw new RangeError('This error indicates a numeric variable has exceeded its allowed range');
@@ -1320,7 +1340,7 @@ JavaScript库是节省时间和简化编码过程的好方法。它们本质上�
 
 最受欢迎的JavaScript库之一是jQuery。它简化了遍历HTML文档、处理事件、创建动画和执行Ajax交互的过程。
 
-```
+```javascript
 // 使用jQuery更改按钮的文本
 $('#myButton').click(function() {
   $(this).text('You clicked me!');
@@ -1331,7 +1351,7 @@ $('#myButton').click(function() {
 
 React是一个用于构建用户界面的JavaScript库，主要用于单页应用程序。它用于处理Web和移动应用程序中的视图层。React允许你为应用程序中的每个状态设计简单的视图。
 
-```
+```javascript
 // 一个简单的React组件
 class HelloMessage extends React.Component {
   render() {
@@ -1355,7 +1375,7 @@ API（应用程序编程接口）是允许不同软件应用程序相互通信�
 
 例如，你可以使用Fetch API从远程服务器检索数据。
 
-```
+```javascript
 // 使用Fetch API从远程服务器获取数据
 fetch('https://api.github.com/users/github')
   .then(response => response.json())
@@ -1377,7 +1397,7 @@ JSON代表JavaScript对象表示法。它是一种标准的数据交换格式，
 
 一个JSON对象的例子：
 
-```
+```javascript
 const person = {
   "name": "John Doe",
   "age": 30,
@@ -1389,7 +1409,7 @@ const person = {
 
 要将JSON文本转换为JavaScript对象，我们使用`JSON.parse()`方法。
 
-```
+```javascript
 const jsonString = '{"name":"John Doe","age":30,"city":"New York"}';
 const jsonObject = JSON.parse(jsonString);
 console.log(jsonObject.name); // 输出: "John Doe"
@@ -1399,7 +1419,7 @@ console.log(jsonObject.name); // 输出: "John Doe"
 
 将JavaScript对象编码为JSON文本的过程称为字符串化。这是通过`JSON.stringify()`方法完成的。
 
-```
+```javascript
 const person = {
   name: 'John Doe',
   age: 30,
@@ -1414,7 +1434,7 @@ console.log(jsonString); // 输出: '{"name":"John Doe","age":30,"city":"New Yor
 
 通常，你会处理从Web服务器获取的JSON数据。为此，我们可以使用`fetch()`方法，它返回一个Promise。
 
-```
+```javascript
 fetch('https://api.example.com/data')
   .then(response => response.json()) // 将数据解析为JSON
   .then(data => console.log(data)) // 处理JSON数据
@@ -1436,8 +1456,6 @@ fetch('https://api.example.com/data')
 模块模式用于在JavaScript中为类创建私有和公共封装。它在JavaScript中很常见，因为它提供了一种保护变量和方法（隐私性）的方式，同时又向公共暴露某些变量和方法。
 
 以下是模块模式的一个示例：
-
-
 
 ### 原型模式
 

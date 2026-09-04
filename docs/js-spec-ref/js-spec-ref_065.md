@@ -1,24 +1,5 @@
-# 7.14 Web Components
 
-*   概述
-*   template 标签
-    *   基本用法
-    *   document.importNode()
-    *   Custom Element
-        *   document.registerElement()
-        *   添加属性和方法
-        *   回调函数
-    *   Shadow DOM
-    *   HTML Import
-        *   基本操作
-        *   脚本的执行
-        *   Web Component 的封装
-    *   Polymer.js
-        *   直接使用的组件
-        *   安装
-        *   自定义组件
-        *   组件的使用方法
-    *   参考链接
+# 7.14 Web Components
 
 ## 概述
 
@@ -148,7 +129,7 @@ if ('registerElement' in document) {
 
 ### document.registerElement()
 
-使用自定义元素前，必须用 document 对象的 registerElement 方法登记该元素。该方法返回一个自定义元素的构造函数。
+使用自定义元素前，必须用 document 对象的 registerElement 方法登记该元素。该方法返回一个自定元素的构造函数。
 
 ```js
 var SuperButton = document.registerElement('super-button');
@@ -266,8 +247,11 @@ var XFoo = document.registerElement('x-foo', {
 自定义元素的原型有一些属性，用来指定回调函数，在特定事件发生时触发。
 
 *   createdCallback：实例生成时触发
+
 *   attachedCallback：实例插入 HTML 文档时触发
+
 *   detachedCallback：实例从 HTML 文档移除时触发
+
 *   attributeChangedCallback(attrName, oldVal, newVal)：实例的属性发生改变时（添加、移除、更新）触发
 
 下面是一个例子。
@@ -463,9 +447,13 @@ var content = document.querySelector('link[rel="import"]').import;
 发生以下情况时，link.import 属性为 null。
 
 *   浏览器不支持 HTML Import
+
 *   link 元素没有声明`rel="import"`
+
 *   link 元素没有被加入 DOM
+
 *   link 元素已经从 DOM 中移除
+
 *   对方域名没有打开 CORS
 
 下面代码用于从加载的外部网页选取 id 为 template 的元素，然后将其克隆后加入当前网页的 DOM。
@@ -628,7 +616,7 @@ bower install Polymer/polymer-ui-accordion
 }
 ```
 
-### 自定义组件
+### 自定组件
 
 下面是一个最简单的自定义组件的例子。
 
@@ -686,11 +674,19 @@ template 标签定义了网页元素的模板。
 ## 参考链接
 
 *   Todd Motto, [Web Components and concepts, ShadowDOM, imports, templates, custom elements](http://toddmotto.com/web-components-concepts-shadow-dom-imports-templates-custom-elements/)
+
 *   Dominic Cooney, [Shadow DOM 101](http://www.html5rocks.com/en/tutorials/webcomponents/shadowdom/)
+
 *   Eric Bidelman, [HTML's New Template Tag](http://www.html5rocks.com/en/tutorials/webcomponents/template/)
+
 *   Rey Bango, [Using Polymer to Create Web Components](http://code.tutsplus.com/tutorials/using-polymer-to-create-web-components--cms-20475)
+
 *   Cédric Trévisan, Building an Accessible Disclosure Button – using Web Components]([`blog.paciellogroup.com/2014/06/accessible-disclosure-button-using-web-components/`](http://blog.paciellogroup.com/2014/06/accessible-disclosure-button-using-web-components/))
+
 *   Eric Bidelman, [Custom Elements: defining new elements in HTML](http://www.html5rocks.com/en/tutorials/webcomponents/customelements/)
+
 *   Eric Bidelman, [HTML Imports](http://www.html5rocks.com/en/tutorials/webcomponents/imports/)
+
 *   TJ VanToll, [Why Web Components Are Ready For Production](http://developer.telerik.com/featured/web-components-ready-production/)
+
 *   Chris Bateman, [A No-Nonsense Guide to Web Components, Part 1: The Specs](http://cbateman.com/blog/a-no-nonsense-guide-to-web-components-part-1-the-specs/)

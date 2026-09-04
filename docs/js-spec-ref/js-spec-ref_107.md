@@ -1,26 +1,5 @@
-# 13.10 stream 接口
 
-*   Stream 是什么？
-*   基本用法
-*   可读数据流
-    *   read()
-    *   setEncoding()
-    *   resume()
-    *   pause()
-    *   isPaused()
-    *   pipe()
-    *   unpipe()
-    *   事件
-    *   可写数据流
-        *   write()
-        *   cork()，uncork()
-        *   setDefaultEncoding()
-        *   end()
-        *   事件
-    *   HTTP 请求
-    *   fs 模块
-    *   错误处理
-    *   参考链接
+# 13.10 stream 接口
 
 ## Stream 是什么？
 
@@ -130,7 +109,9 @@ bye
 Stream 接口分成三类。
 
 *   可读数据流接口，用于读取数据。
+
 *   可写数据流接口，用于写入数据。
+
 *   双向数据流接口，用于读取和写入数据，比如 Node 的 tcp sockets、zlib、crypto 都部署了这个接口。
 
 ## 可读数据流
@@ -142,7 +123,9 @@ Stream 接口分成三类。
 三种方法可以让暂停态转为流动态。
 
 *   添加 data 事件的监听函数
+
 *   调用 resume 方法
+
 *   调用 pipe 方法将数据送往一个可写数据流
 
 如果转为流动态时，没有 data 事件的监听函数，也没有 pipe 方法的目的地，那么数据将遗失。
@@ -150,6 +133,7 @@ Stream 接口分成三类。
 以下两种方法可以让流动态转为暂停态。
 
 *   不存在 pipe 方法的目的地时，调用 pause 方法
+
 *   存在 pipe 方法的目的地时，移除所有 data 事件的监听函数，并且调用 unpipe 方法，移除所有 pipe 方法的目的地
 
 注意，只移除 data 事件的监听函数，并不会自动引发数据流进入“暂停态”。另外，存在 pipe 方法的目的地时，调用 pause 方法，并不能保证数据流总是处于暂停态，一旦那些目的地发出数据请求，数据流有可能会继续提供数据。
@@ -200,7 +184,9 @@ readable 事件表示系统缓冲之中有可读的数据，使用 read 方法�
 “可读数据流”除了 read 方法，还有以下方法。
 
 *   Readable.pause() ：暂停数据流。已经存在的数据，也不再触发 data 事件，数据将保留在缓存之中，此时的数据流称为静态数据流。如果对静态数据流再次调用 pause 方法，数据流将重新开始流动，但是缓存中现有的数据，不会再触发 data 事件。
+
 *   Readable.resume()：恢复暂停的数据流。
+
 *   readable.unpipe()：从管道中移除目的地数据流。如果该方法使用时带有参数，会阻止“可读数据流”进入某个特定的目的地数据流。如果使用时不带有参数，则会移除所有的目的地数据流。
 
 ### read()
@@ -398,12 +384,19 @@ readable.on('end', function() {
 以下是部署了可写数据流的一些场合。
 
 *   客户端的 http requests
+
 *   服务器的 http responses
+
 *   fs write streams
+
 *   zlib streams
+
 *   crypto streams
+
 *   tcp sockets
+
 *   child process stdin
+
 *   process.stdout, process.stderr
 
 下面是 fs 模块的可写数据流的例子。
@@ -660,7 +653,7 @@ readStream.on('error', function (err) {
 
 writeStream.on('error', function (err) {
   console.log("ERROR", err);
-});d all your errors, you wouldn't need to use domains.
+});
 ```
 
 上面代码非常容易理解，使用的时候直接提供源文件路径和目标文件路径，就可以了。

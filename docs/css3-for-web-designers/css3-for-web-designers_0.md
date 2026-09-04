@@ -1,3 +1,4 @@
+
 # Web Designers 的 CSS3
 
 ## 前言
@@ -64,9 +65,6 @@ CSS3 是为像你我这样的网页设计师准备的，我们可以*今天*就�
 | 可用性 | 视觉奖励 |
 | 可访问性 | 反馈 |
 | 布局 | 动效 |
-
-
-
 
 品牌塑造、可用性和布局等领域对任何网站的成功都至关重要，因此，使用尚未被所有浏览器完全支持的技术会带来风险。
 
@@ -185,9 +183,6 @@ CSS3 规范中还有其他部分可能现在就可以使用，但超出了本书
 
 ## 厂商特定前缀
 
-
-
-
 我之前提到过，CSS3 规范是一系列模块，浏览器厂商正在逐步推出这些模块。在某些情况下，这种推出涉及实验性支持。也就是说，当规范在 W3C 被编写、讨论和敲定时，浏览器制造商可能会选择添加对某些属性的支持，并在真实环境中进行测试。这已成为流程中健康的一部分，实验性使用的反馈常被用来调整规范。
 
 或者，浏览器厂商可能希望引入一个不属于任何拟议标准、但日后可能成为标准的实验性属性。
@@ -225,7 +220,9 @@ CSS3 规范中还有其他部分可能现在就可以使用，但超出了本书
   }
 ```
 
-WebKit（Safari、移动 Safari 和 Chrome 的内核）和 Gecko（Firefox 的内核）浏览器各自通过自己的厂商前缀版本支持 `border-radius` 属性，而 Opera 则支持不带厂商前缀的属性。IE9 也将支持不带厂商前缀的 `border-radius`。
+
+
+WebKit（Safari、移动 Safari 和 Chrome 的内核）和 Gecko（Firefox 的内核）浏览器各自通过自己的厂商前缀版本支持`border-radius`属性，而 Opera 则支持不带厂商前缀的属性。IE9 也将支持不带厂商前缀的`border-radius`。
 
 ### 最佳顺序
 
@@ -237,9 +234,9 @@ WebKit（Safari、移动 Safari 和 Chrome 的内核）和 Gecko（Firefox 的�
 
 你的第一反应可能是：“哎呀，这太混乱了，是专有技术！”但我向你保证，这不仅是前进的方向，而且比非 CSS3 解决方案中常见的代码臃肿和僵化要清晰得多，同时也是规范演进的重要组成部分。
 
-通过现在使用这些带厂商前缀的属性，我们可以测试水温，甚至在规范最终确定之前向浏览器制造商提供宝贵的反馈。也请记住，前缀通常附加在*拟议标准*上。这与我们过去偶尔用来解决跨浏览器问题的其他 hackish CSS 有很大区别。
+通过现在使用这些带厂商前缀的属性，我们可以测试水温，甚至在规范最终确定之前向浏览器制造商提供宝贵的反馈。也请记住，前缀通常附加在拟议标准上。这与我们过去偶尔用来解决跨浏览器问题的其他 hackish CSS 有很大区别。
 
-有些人可能会将厂商前缀与许多人为针对特定浏览器版本而使用的语法技巧（例如，使用 `w\idth: 200px` 或 `_width: 200px` 来针对特定版本的 IE）相提并论。但相反，厂商前缀是*标准流程的重要组成部分*，允许属性在真实世界的实现中演进。
+有些人可能会将厂商前缀与许多人为针对特定浏览器版本而使用的语法技巧（例如，使用`w\idth: 200px`或`_width: 200px`来针对特定版本的 IE）相提并论。但相反，厂商前缀是标准流程的重要组成部分，允许属性在真实世界的实现中演进。
 
 正如 CSS 专家 Eric Meyer 在 A List Apart 上的文章“Prefix or Posthack”（[`bkaprt.com/css3/2/`](http://bkaprt.com/css3/2/)）中所解释的那样：^(3)
 
@@ -262,9 +259,7 @@ WebKit（Safari、移动 Safari 和 Chrome 的内核）和 Gecko（Firefox 的�
 在我们开始用少数可用的 CSS3 属性及其各自的厂商前缀做令人兴奋的事情之前，让我们先基本掌握 CSS 过渡。理解过渡及其运作方式将帮助我们将其与其他属性结合，创造美妙的体验。
 
 1. 长 URL：[`www.alistapart.com/articles/tohell/`](http://www.alistapart.com/articles/tohell/) [[↵]](#chapter1.html_footnote-1-backlink)
-
 2. [`www.w3.org/TR/css3-roadmap/#whymods`](http://www.w3.org/TR/css3-roadmap/#whymods) [[↵]](#chapter1.html_footnote-2-backlink)
-
 3. [`www.alistapart.com/articles/prefix-or-posthack/`](http://www.alistapart.com/articles/prefix-or-posthack/) [[↵]](#chapter1.html_footnote-3-backlink)
 
 ![第 2 章：理解 CSS 过渡](img/chap-2.png)
@@ -273,16 +268,13 @@ WebKit（Safari、移动 Safari 和 Chrome 的内核）和 Gecko（Firefox 的�
 
 一个胜利的夜晚，我兴奋地挥舞着拳头。我刚刚成功编写了第一个 JavaScript 图像翻转效果。还记得那些吗？
 
-我仍然记得看到自己拼凑出来的粗糙按钮图形在鼠标悬停时“切换”成另一个图形时的惊奇。当时我几乎不知道自己在做什么，但让页面上的东西成功变化，*动态地*，嗯……就像魔法一样。
+我仍然记得看到自己拼凑出来的粗糙按钮图形在鼠标悬停时“切换”成另一个图形时的惊奇。当时我几乎不知道自己在做什么，但让页面上的东西成功变化，动态地，嗯……就像魔法一样。
 
-在过去的十年里，我们在网页交互和视觉体验方面取得了*长足*的进步。历史上，Flash 和 JavaScript 等技术实现了动画、运动和交互效果。但最近，随着浏览器开始支持 CSS 过渡和变换，其中一些动画和体验增强现在可以轻松地转移到我们的样式表中。
-
-
-
+在过去的十年里，我们在网页交互和视觉体验方面取得了长足的进步。历史上，Flash 和 JavaScript 等技术实现了动画、运动和交互效果。但最近，随着浏览器开始支持 CSS 过渡和变换，其中一些动画和体验增强现在可以轻松地转移到我们的样式表中。
 
 1997 年，我第一次用 JavaScript 实现图片翻转效果，花了几个晚上挠头苦思，写了许多当时对我来说如同天书般的代码，还用了多张图片。而如今的 CSS3 只需几行简洁的代码就能实现更丰富、更灵活的交互效果，而且值得庆幸的是，在不支持它的浏览器中也能优雅降级。
 
-正如我在第 1 章中提到的，只要我们谨慎选择使用场景，现在就可以开始使用一些 CSS3 属性。CSS 过渡也是如此。它们当然不会*取代*Flash、JavaScript 或 SVG 等现有技术（尤其是在浏览器支持还不够广泛的情况下），但与前面提到的核心 CSS3 属性（以及我们将在本书后面介绍的 CSS 变换和动画）结合使用时，它们可以用来将体验层提升一个档次。最重要的是，对于已经熟悉 CSS 的网页设计师来说，它们相对容易实现，只需要几行代码。
+正如我在第 1 章中提到的，只要我们谨慎选择使用场景，现在就可以开始使用一些 CSS3 属性。CSS 过渡也是如此。它们当然不会取代 Flash、JavaScript 或 SVG 等现有技术（尤其是在浏览器支持还不够广泛的情况下），但与前面提到的核心 CSS3 属性（以及我们将在本书后面介绍的 CSS 变换和动画）结合使用时，它们可以用来将体验层提升一个档次。最重要的是，对于已经熟悉 CSS 的网页设计师来说，它们相对容易实现，只需要几行代码。
 
 我在这里（第 2 章）早早地介绍 CSS 过渡，是因为我们将在本书后面的许多示例中应用它们。在深入案例研究之前，对过渡的语法及其工作原理有一个基本了解会很有帮助。
 
@@ -290,19 +282,19 @@ WebKit（Safari、移动 Safari 和 Chrome 的内核）和 Gecko（Firefox 的�
 
 CSS 过渡最初由 WebKit 团队为 Safari 开发，现在已成为 W3C 的工作草案规范。（CSS 变换和 CSS 动画有着相同的渊源，我们将在第 4 章和第 6 章中分别讨论它们。）
 
-这是一个很好的例子，展示了浏览器创新如何被纳入潜在标准。我说*潜在*，是因为它目前还只是一个草案。不过，Opera 最近在 10.5 版本中增加了对 CSS 过渡的支持，Firefox 也承诺在 4.0 版本中支持。换句话说，尽管它还是一个*草案*规范，仍在演变中，但它已经足够稳定，以至于 Opera 和 Firefox 都认真对待并添加了支持。最重要的是，CSS 过渡不再是 Safari 独有的专有实验。
+这是一个很好的例子，展示了浏览器创新如何被纳入潜在标准。我说潜在，是因为它目前还只是一个草案。不过，Opera 最近在 10.5 版本中增加了对 CSS 过渡的支持，Firefox 也承诺在 4.0 版本中支持。换句话说，尽管它还是一个草案规范，仍在演变中，但它已经足够稳定，以至于 Opera 和 Firefox 都认真对待并添加了支持。最重要的是，CSS 过渡不再是 Safari 独有的专有实验。
 
 让我们来看看过渡是如何工作的，好吗？就像第 1 章中讨论的 CSS3 属性一样，我在这里只介绍它们的基本语法，以便你掌握它们的运作方式。稍后，我们将用过渡做各种有趣的事情，用它来润色后续章节中的示例，届时你就能快速理解过渡如何恰当地融入其中。
 
 ## 什么是 CSS 过渡？
 
-我喜欢把 CSS 过渡想象成*黄油*，当触发悬停、点击和聚焦等交互时，它能平滑地改变样式表中的值变化。与真正的黄油不同，过渡不会让人发胖——它们只是样式表中的几条简单规则，用来丰富设计中的某些事件。
+我喜欢把 CSS 过渡想象成黄油，当触发悬停、点击和聚焦等交互时，它能平滑地改变样式表中的值变化。与真正的黄油不同，过渡不会让人发胖——它们只是样式表中的几条简单规则，用来丰富设计中的某些事件。
 
-W3C 对 CSS 过渡的解释非常简单（[`bkaprt.com/css3/3/)`](http://bkaprt.com/css3/3/)）：^(4)
+W3C 对 CSS 过渡的解释非常简单（[`bkaprt.com/css3/3/`](http://bkaprt.com/css3/3/)）：^(4)
 
 > CSS 过渡允许 CSS 值的属性变化在指定的持续时间内平滑发生。
 
-这种平滑效果会在鼠标点击、聚焦或激活状态，或任何元素变化（甚至包括元素 class 属性的变化）触发时，对 CSS 值的变化进行动画处理。
+这种平滑效果会在鼠标点击、聚焦或激活状态，或任何元素变化（甚至包括元素`class`属性的变化）触发时，对 CSS 值的变化进行动画处理。
 
 ## 一个简单的示例
 
@@ -310,13 +302,13 @@ W3C 对 CSS 过渡的解释非常简单（[`bkaprt.com/css3/3/)`](http://bkaprt.
 
 标记是一个简单的超链接，如下所示：
 
-```
+```html
 <a href="#" class="foo">过渡我吧！</a>
 ```
 
 接下来，我们将为正常链接状态添加声明，设置一点内边距和浅绿色背景，然后在悬停时切换到深绿色背景（图 2.01）：
 
-```
+```css
 a.foo {
   padding: 5px 10px;
   background: #9c3;
@@ -335,17 +327,17 @@ a.foo:hover {
 
 为了简单起见，我们暂时只使用目前基于 WebKit 的浏览器（Safari 和 Chrome）中有效的厂商前缀属性。稍后，我们将为 Mozilla 和 Opera 添加厂商前缀。
 
-```
+```css
 a.foo {
   padding: 5px 10px;
   background: #9c3;
-  -webkit-transition-property: background; 
+  -webkit-transition-property: background;
   -webkit-transition-duration: 0.3s;
-  -webkit-transition-timing-function: ease; 
+  -webkit-transition-timing-function: ease;
   }
 ```
 
-```
+```css
 a.foo:hover {
   background: #690;
   }
@@ -357,11 +349,9 @@ a.foo:hover {
 
 你会注意到声明中过渡的三个部分：
 
-*   `transition-property`：要过渡的属性（本例中为`background`属性）
-
-*   `transition-duration`：过渡应持续的时间（0.3 秒）
-
-*   `transition-timing-function`：过渡随时间变化的速度（`ease`）
+- `transition-property`：要过渡的属性（本例中为`background`属性）。
+- `transition-duration`：过渡应持续的时间（0.3 秒）。
+- `transition-timing-function`：过渡随时间变化的速度（`ease`）。
 
 ## 计时函数（或者，我真希望当初数学课认真听了）
 
@@ -375,16 +365,16 @@ a.foo:hover {
 
 ## 延迟过渡
 
-回到我们的示例，过渡可以在屏幕上触发事件后延迟发生。例如，假设我们希望背景过渡在链接悬停后*半秒*才开始。我们可以使用`transition-delay`属性来实现。
+回到我们的示例，过渡可以在屏幕上触发事件后延迟发生。例如，假设我们希望背景过渡在链接悬停后半秒才开始。我们可以使用`transition-delay`属性来实现。
 
-```
+```css
 a.foo {
   padding: 5px 10px;
   background: #9c3;
   -webkit-transition-property: background;
   -webkit-transition-duration: 0.3s;
   -webkit-transition-timing-function: ease;
-  -webkit-transition-delay: 0.5s; 
+  -webkit-transition-delay: 0.5s;
   }
 
 a.foo:hover {
@@ -396,15 +386,15 @@ a.foo:hover {
 
 我们可以通过使用过渡的简写属性来大大简化（无延迟的）声明，这也是我们在本书后续示例中使用的语法。
 
-```
+```css
 a.foo {
   padding: 5px 10px;
   background: #9c3;
-  -webkit-transition: background 0.3s ease; 
+  -webkit-transition: background 0.3s ease;
   }
 ```
 
-```
+```css
 a.foo:hover {
   background: #690;
   }
@@ -416,7 +406,7 @@ a.foo:hover {
 
 如果我们想为简写版本的过渡重新添加半秒延迟，可以通过将持续时间值放在规则末尾来实现，如下所示：
 
-```
+```css
 a.foo {
   padding: 5px 10px;
   background: #9c3;
@@ -424,7 +414,7 @@ a.foo {
   }
 ```
 
-```
+```css
 a.foo:hover {
   background: #690;
   }
@@ -434,25 +424,22 @@ a.foo:hover {
 
 ## 浏览器支持
 
-
-
-
 正如我之前提到的，过渡效果最初由 WebKit 开发，自 Safari 和 Chrome 3.2 版本起就已支持，而 Opera 在 10.5 版本中也提供了支持（[`bkaprt.com/css3/4/`](http://bkaprt.com/css3/4/)）^(5)，并且 Firefox 4.0 已承诺支持（[`bkaprt.com/css3/5/`](http://bkaprt.com/css3/5/)）。^(6)
 
 由于当前及近期的支持情况，添加适当的厂商前缀至关重要，这样我们的过渡效果就能在更多浏览器中随着支持的推出而生效。
 
 ## 构建完整的过渡堆栈
 
-以下是修订后的声明，添加了 `–moz-` 和 `–o-` 前缀以及实际的 CSS3 `transition` 属性。同样，我们将无前缀的属性放在堆栈的最后，以确保当该属性从草案变为最终状态时，最终实现将优先于其他实现。
+以下是修订后的声明，添加了`-moz-`和`-o-`前缀以及实际的 CSS3 `transition`属性。同样，我们将无前缀的属性放在堆栈的最后，以确保当该属性从草案变为最终状态时，最终实现将优先于其他实现。
 
-```
+```css
 a.foo {
   padding: 5px 10px;
   background: #9c3;
-  -webkit-transition: background 0.3s ease; 
+  -webkit-transition: background 0.3s ease;
   -moz-transition: background 0.3s ease;
-  -o-transition: background 0.3s ease; 
-  transition: background 0.3s ease; 
+  -o-transition: background 0.3s ease;
+  transition: background 0.3s ease;
   }
 
 a.foo:hover {
@@ -464,13 +451,13 @@ a.foo:hover {
 
 ## 过渡状态
 
-我记得刚开始尝试 CSS 过渡时有点困惑。将过渡属性放在 `:hover` 声明中不是更合理吗？因为那是触发过渡的条件。答案是元素除了 `:hover` 之外还有其他可能的状态，而你很可能希望过渡在每个状态上都发生，而无需重复声明。
+我记得刚开始尝试 CSS 过渡时有点困惑。将过渡属性放在`:hover`声明中不是更合理吗？因为那是触发过渡的条件。答案是元素除了`:hover`之外还有其他可能的状态，而你很可能希望过渡在每个状态上都发生，而无需重复声明。
 
-例如，你可能希望过渡也发生在链接的 `:focus` 或 `:active` 伪类上。与其将过渡属性堆栈添加到每个声明中，不如将过渡指令附加到正常状态，这样只需声明一次。
+例如，你可能希望过渡也发生在链接的`:focus`或`:active`伪类上。与其将过渡属性堆栈添加到每个声明中，不如将过渡指令附加到正常状态，这样只需声明一次。
 
-下面的示例为 `:focus` 状态添加了相同的背景切换。这样，无论是通过悬停还是聚焦链接（例如通过键盘），都能触发过渡。
+下面的示例为`:focus`状态添加了相同的背景切换。这样，无论是通过悬停还是聚焦链接（例如通过键盘），都能触发过渡。
 
-```
+```css
 a.foo {
   padding: 5px 10px;
   background: #9c3;
@@ -490,7 +477,7 @@ a.foo:focus {
 
 假设除了背景色，我们还想改变链接的文本颜色并对其进行过渡。我们可以通过用逗号分隔多个过渡来实现。每个过渡可以有不同的持续时间和缓动函数（图 2.03）。
 
-```
+```css
 a.foo {
   padding: 5px 10px;
   background: #9c3;
@@ -509,15 +496,15 @@ a.foo:focus {
 
 ![正常状态（浅绿色背景，白色文字）和悬停状态（深绿色背景，黑色文字）](img/2-03.jpg)
 
-图 2.03：链接的正常状态和 `:hover` 状态。
+图 2.03：链接的正常状态和`:hover`状态。
 
 ## 过渡所有可能的属性
 
-另一种列出多个属性的方法是使用 `all` 值。这将过渡所有可用的属性。
+另一种列出多个属性的方法是使用`all`值。这将过渡所有可用的属性。
 
-让我们将 `all` 放入简单的示例中，而不是分别列出 `background` 和 `color`。现在它们将共享相同的持续时间和缓动函数。
+让我们将`all`放入简单的示例中，而不是分别列出`background`和`color`。现在它们将共享相同的持续时间和缓动函数。
 
-```
+```css
 a.foo {
   padding: 5px 10px;
   background: #9c3;
@@ -534,11 +521,13 @@ a.foo:focus {
   }
 ```
 
-这是一种便捷的方式，可以捕获 `:hover`、`:focus` 或 `:active` 事件中发生的所有变化，而无需列出每个你想要过渡的属性。
+这是一种便捷的方式，可以捕获`:hover`、`:focus`或`:active`事件中发生的所有变化，而无需列出每个你想要过渡的属性。
 
 ## 哪些 CSS 属性可以过渡？
 
-现在我们已经成功过渡了超链接的 `background` 和 `color`，还有许多其他 CSS 属性也可以过渡，包括 `width`、`opacity`、`position` 和 `font-size`。W3C 提供了所有可过渡属性（及其类型）的图表（[`bkaprt.com/css3/6/`](http://bkaprt.com/css3/6/)）。^(7)
+
+
+现在我们已经成功过渡了超链接的`background`和`color`，还有许多其他 CSS 属性也可以过渡，包括`width`、`opacity`、`position`和`font-size`。W3C 提供了所有可过渡属性（及其类型）的图表（[`bkaprt.com/css3/6/`](http://bkaprt.com/css3/6/)）。^(7)
 
 实现流畅体验的机会显而易见。在下一章及后续的案例研究示例中，我们将结合过渡使用其中几个属性。
 
@@ -546,11 +535,11 @@ a.foo:focus {
 
 你可能会想，既然并非所有浏览器都支持（或至少承诺支持）CSS 过渡，为什么不使用 JavaScript 解决方案来处理动画呢？流行的框架如 jQuery、Prototype 和 script.aculo.us 已经通过 JavaScript 实现了跨浏览器动画，并且已经有一段时间了。
 
-这完全取决于过渡对体验的重要性。在这本小书中，我强调如果你选择用户体验中合适的部分来应用 CSS3，就可以拥抱它的简洁性和灵活性：丰富页面上发生的交互。通常，由 CSS 过渡处理的这些交互动画对网站的品牌、可读性或布局并非不可或缺。因此，用几行简单的 CSS 来触发一个简单的动画，该动画在支持它的浏览器中是*原生*的（而不是依赖 JavaScript 框架），似乎是一个明智的选择。我很高兴我们拥有这个选择。
+这完全取决于过渡对体验的重要性。在这本小书中，我强调如果你选择用户体验中合适的部分来应用 CSS3，就可以拥抱它的简洁性和灵活性：丰富页面上发生的交互。通常，由 CSS 过渡处理的这些交互动画对网站的品牌、可读性或布局并非不可或缺。因此，用几行简单的 CSS 来触发一个简单的动画，该动画在支持它的浏览器中是`原生`的（而不是依赖 JavaScript 框架），似乎是一个明智的选择。我很高兴我们拥有这个选择。
 
 ## 明智而微妙
 
-就像所有闪亮的新工具一样，*恰当地*使用过渡非常重要。很容易过度使用，将过渡添加到页面上的所有元素，结果变成某种烦人、脉动的怪物。关键在于决定哪些地方过渡能真正丰富用户体验，哪些地方只是多余的噪音。此外，确保过渡的速度不会拖慢用户原本敏捷的操作至关重要。请谨慎使用。
+就像所有闪亮的新工具一样，`恰当地`使用过渡非常重要。很容易过度使用，将过渡添加到页面上的所有元素，结果变成某种烦人、脉动的怪物。关键在于决定哪些地方过渡能真正丰富用户体验，哪些地方只是多余的噪音。此外，确保过渡的速度不会拖慢用户原本敏捷的操作至关重要。请谨慎使用。
 
 关于 CSS 过渡和动画的合适速度的更多思考，请参阅 Trent Walton 的相关文章：[`bkaprt.com/css3/7/`](http://bkaprt.com/css3/7/)。^(8)
 
@@ -568,18 +557,14 @@ a.foo:focus {
 
 ![第 3 章：使用 CSS3 进行悬停设计](img/chap-3.png)
 
-我们在前两章进行了训练，了解了当前 CSS3 中可用的功能。我们还讨论了*体验层*目前是应用这些可用 CSS3 最合适的地方。
-
-
-
-
+我们在前两章进行了训练，了解了当前 CSS3 中可用的功能。我们还讨论了`体验层`目前是应用这些可用 CSS3 最合适的地方。
 
 回顾一下我们目前涵盖的重要内容，请记住以下几点：
 
-1.  有一些核心的 CSS3 属性现在就可以使用。
-2.  每个人都可以在自己的项目中使用这些核心属性，尤其是在针对体验层时。
-3.  厂商前缀让我们能够立即向前推进，帮助在实际环境中测试尚在变化中的属性。
-4.  CSS 过渡不再是专有的实验性功能，而是其他浏览器正在采纳的草案规范。让我们用起来吧！
+1. 有一些核心的 CSS3 属性现在就可以使用。
+2. 每个人都可以在自己的项目中使用这些核心属性，尤其是在针对体验层时。
+3. 厂商前缀让我们能够立即向前推进，帮助在实际环境中测试尚在变化中的属性。
+4. CSS 过渡不再是专有的实验性功能，而是其他浏览器正在采纳的草案规范。让我们用起来吧！
 
 有了这些反重力腰带下的知识，现在是时候用我们所有的新工具来玩一玩了，并在一个全页设计的上下文中让它们发挥作用。
 
@@ -589,7 +574,7 @@ a.foo:focus {
 
 ![网站“我们留在月球上的东西”的截图。](img/3-01.jpg)
 
-图 3.01：我们的虚构案例研究，*我们留在月球上的东西*。
+图 3.01：我们的虚构案例研究，`我们留在月球上的东西`。
 
 ### 太空和网络中的信息
 
@@ -619,13 +604,13 @@ a.foo:focus {
 
 所以现在你明白为什么我们的案例研究要向那些留在月球上或漂浮在太空中的信息致敬了。是时候开始剖析这个网站，将其分解成与 CSS3 相关的、易于消化的小例子了。我发现把所有我们将讨论的技术集中在一个地方很有帮助。你可以随时参考这个模板和所有示例，它们都存在于一个活生生的、不断更新的单页网站中。
 
-你可以从 [`CSS3exp.com/code`](http://CSS3exp.com/code) 下载案例研究的示例代码。
+你可以从[`CSS3exp.com/code`](http://CSS3exp.com/code)下载案例研究的示例代码。
 
-接下来的每一章都会处理一组与 CSS3 相关的不同示例。我并没有试图面面俱到，告诉你关于 CSS3 的一切，而是恰恰相反：深入探讨非常具体、有针对性的示例，同时展示它们如何在模拟环境中工作——这些快速收获你可以立即应用，并在消化这些页面后进一步扩展。*嗝。*
+接下来的每一章都会处理一组与 CSS3 相关的不同示例。我并没有试图面面俱到，告诉你关于 CSS3 的一切，而是恰恰相反：深入探讨非常具体、有针对性的示例，同时展示它们如何在模拟环境中工作——这些快速收获你可以立即应用，并在消化这些页面后进一步扩展。`嗝。`
 
 ## 惊喜与愉悦
 
-让网页设计与静态媒体如此不同且有趣的部分原因在于*交互*。事物可以做出反应、移动，甚至在像素而非纸张上体验时带来惊喜。
+让网页设计与静态媒体如此不同且有趣的部分原因在于`交互`。事物可以做出反应、移动，甚至在像素而非纸张上体验时带来惊喜。
 
 正是这种交互，CSS3 可以轻松地为支持它的浏览器增强，而不会让不支持的浏览器感到缺失。
 
@@ -637,7 +622,7 @@ a.foo:focus {
 
 看起来只是一个普通的文本列表，图片浮动在右侧，但当你与之交互时，它会变得有趣得多。这是丰富体验层的一个典型例子，Faruk 使用了多种 CSS3 属性来实现这一点（在支持它们的浏览器中）。
 
-图 3.05 显示了在完全不支持 CSS3 的 Internet Explorer 7 中看到的相同默认状态和悬停状态。但你会注意到，虽然悬停状态没有那么精致，但它仍然是一个可用、可读且*功能正常*的体验——更不用说默认的非悬停状态几乎完全相同了。
+图 3.05 显示了在完全不支持 CSS3 的 Internet Explorer 7 中看到的相同默认状态和悬停状态。但你会注意到，虽然悬停状态没有那么精致，但它仍然是一个可用、可读且`功能正常`的体验——更不用说默认的非悬停状态几乎完全相同了。
 
 ![Faruk Ateş 网站侧边栏的正常状态（文本，图片浮动在右侧）和悬停状态（添加了蓝色背景，没有动画或圆角）。](img/3-05.jpg)
 
@@ -647,17 +632,13 @@ a.foo:focus {
 
 也就是说，直到他们在朋友的 Safari、Chrome、Firefox 或 Opera 浏览器上打开这个页面（并感到一阵嫉妒）。
 
-
-
-
-
 ## 网站在每个浏览器中都需要完全相同的体验吗？
 
 这是一个重要的问题（在此时提出也很恰当），我尝试在这个超长域名的网站上回答它（图 3.06）：[`dowebsitesneedtobeexperiencedexactlythesameineverybrowser.com`](http://dowebsitesneedtobeexperiencedexactlythesameineverybrowser.com)。
 
 ![一个黑色背景、白色文字写着“不”的网站截图](img/3-06.jpg)
 
-图 3.06：这个名字古怪的网站 [`dowebsitesneedtobeexperiencedexactlythesameineverybrowser.com`](http://dowebsitesneedtobeexperiencedexactlythesameineverybrowser.com)。
+图 3.06：这个名字古怪的网站[`dowebsitesneedtobeexperiencedexactlythesameineverybrowser.com`](http://dowebsitesneedtobeexperiencedexactlythesameineverybrowser.com)。
 
 和 Faruk 的例子一样，只有当你开始与网站交互时，事情才变得有趣。表面上，该网站在大多数浏览器中看起来几乎相同，但当你移动鼠标划过屏幕和文字时（图 3.07），一系列 CSS3 属性、过渡和变换会被应用，从而创造出独特且令人难忘的体验。
 
@@ -669,7 +650,7 @@ a.foo:focus {
 
 ## 导航月球
 
-让我们将 CSS3 添加到设计悬停交互的概念应用到我们的案例研究中。我将带领大家创建网站顶部导航（图 3.08），其中我们结合了 `border-radius`、`text-shadow`、RGBA 和 CSS 过渡，创造出令人惊喜和愉悦的体验。
+让我们将 CSS3 添加到设计悬停交互的概念应用到我们的案例研究中。我将带领大家创建网站顶部导航（图 3.08），其中我们结合了`border-radius`、`text-shadow`、RGBA 和 CSS 过渡，创造出令人惊喜和愉悦的体验。
 
 ![五个导航链接（新闻、事物、东西、杂物、关于）水平排列，其中“事物”悬停时显示半透明白色圆角框](img/3-08.jpg)
 
@@ -739,7 +720,7 @@ a.foo:focus {
 
 虽然 RGBA 是一种非常灵活的方式来指定颜色及其不透明度，但并非所有浏览器都支持。当前版本的 Safari、Chrome、Firefox 和 Opera 都支持它，Internet Explorer 9 也支持——但 IE6–8 呢？
 
-这时指定一个*后备*颜色就派上用场了。当使用 RGBA 分配颜色值时，最佳实践是先指定一个纯色，作为不支持 RGBA 的浏览器的回退方案。
+这时指定一个`后备`颜色就派上用场了。当使用 RGBA 分配颜色值时，最佳实践是先指定一个纯色，作为不支持 RGBA 的浏览器的回退方案。
 
 ```
 #nav li a {
@@ -750,13 +731,13 @@ a.foo:focus {
   }
 ```
 
-*支持* RGBA 的浏览器会覆盖纯色（此处为浅灰色 `#ccc`），而*不支持* RGBA 的浏览器则会忽略 RGBA 规则。
+`支持` RGBA 的浏览器会覆盖纯色（此处为浅灰色`#ccc`），而`不支持` RGBA 的浏览器则会忽略 RGBA 规则。
 
-因此，需要记住一个重要点：在 RGBA 规则*之前*的单独规则中为 RGBA 颜色指定纯色后备。
+因此，需要记住一个重要点：在 RGBA 规则`之前`的单独规则中为 RGBA 颜色指定纯色后备。
 
-### 添加 text-shadow
+### 添加 `text-shadow`
 
-作为链接样式的最后一项补充，让我们添加一个非常微妙的 `text-shadow`。我们将再次使用 RGBA 来定义阴影的颜色，让 50% 不透明度的半透明黑色与背后的背景融合。
+作为链接样式的最后一项补充，让我们添加一个非常微妙的`text-shadow`。我们将再次使用 RGBA 来定义阴影的颜色，让 50% 不透明度的半透明黑色与背后的背景融合。
 
 ```
 #nav li a {
@@ -768,19 +749,19 @@ a.foo:focus {
   }
 ```
 
-图 3.12 显示了在 Safari 中查看时，未应用 `text-shadow`（左）和应用了 `text-shadow`（右）的文字链接对比。这是一个几乎难以察觉的细节，但微小的阴影为文字提供了足够的“提升感”，使其脱离背后的太空背景。
+图 3.12 显示了在 Safari 中查看时，未应用`text-shadow`（左）和应用了`text-shadow`（右）的文字链接对比。这是一个几乎难以察觉的细节，但微小的阴影为文字提供了足够的“提升感”，使其脱离背后的太空背景。
 
-![未应用 text-shadow 的链接与应用 text-shadow 的链接对比，半透明黑色 text-shadow 几乎不可见](img/3-12.jpg)
+![未应用 text-shadow 的链接与应用了 text-shadow 的链接对比，半透明黑色 text-shadow 几乎不可见](img/3-12.jpg)
 
-图 3.12：未应用 `text-shadow`（左）和应用了 `text-shadow`（右）的链接对比。
+图 3.12：未应用`text-shadow`（左）和应用了`text-shadow`（右）的链接对比。
 
-请记住，`text-shadow` 在当前版本的 Safari、Chrome、Firefox 和 Opera 中有效。不支持 `text-shadow` 的浏览器（**咳咳** IE）会无害地忽略该规则。没有阴影，没问题。
+请记住，`text-shadow`在当前版本的 Safari、Chrome、Firefox 和 Opera 中有效。不支持`text-shadow`的浏览器（**咳咳** IE）会无害地忽略该规则。没有阴影，没问题。
 
-有了 `text-shadow`，我们现在可以自由地继续处理 `:hover` 效果了。而这里我们将更多地依赖 CSS3。
+有了`text-shadow`，我们现在可以自由地继续处理`:hover`效果了。而这里我们将更多地依赖 CSS3。
 
 ### 悬停和聚焦样式
 
-我们将为每个链接的 `:hover` 状态添加颜色变化和背景颜色。再次使用 RGBA 在 `:hover` 时设置半透明白色背景。
+我们将为每个链接的`:hover`状态添加颜色变化和背景颜色。再次使用 RGBA 在`:hover`时设置半透明白色背景。
 
 ```
 #nav li a {
@@ -798,7 +779,9 @@ a.foo:focus {
   }
 ```
 
-因此，在 `:hover` 时，我们将文字颜色改为纯白色，并添加 15% 不透明度的白色背景。我还进一步为链接处于*聚焦*状态时声明了此样式。例如，使用键盘导航的用户在链接聚焦时也会看到这一变化。
+
+
+因此，在 `:hover` 时，我们将文字颜色改为纯白色，并添加 15% 不透明度的白色背景。我还进一步为链接处于聚焦状态时声明了此样式。例如，使用键盘导航的用户在链接聚焦时也会看到这一变化。
 
 图 3.13 显示了链接新的 `:hover`（和 `:focus`）状态。支持 RGBA 的浏览器将在更亮的白色文字后面获得半透明白色背景。
 
@@ -806,16 +789,13 @@ a.foo:focus {
 
 图 3.13：显示 `:hover` 状态，现在通过 RGBA 实现了半透明背景。
 
-### 使用 border-radius 圆角悬停
+### 使用 `border-radius` 圆角悬停
 
 更进一步，我们可以使用 CSS3 的 `border-radius` 属性将悬停背景的角变圆，为支持它的浏览器创建药丸形状。
 
 回顾我们在第 1 章中学到的关于 `border-radius` 属性以及使我们今天能够使用它的厂商前缀的知识，我们可以将堆叠添加到默认链接声明中，如下所示：
 
-
-
-
-```
+```css
 #nav li a {
   padding: 5px 15px;
   font-weight: bold;
@@ -834,7 +814,7 @@ a.foo:focus {
   }
 ```
 
-图 3.14 展示了 `:hover` 背景处理，现在通过 `border-radius` 实现了圆角，在 Safari、Chrome、Firefox、Opera 以及 IE9 中都能看到。请记住，我们将不带前缀的 `border-radius` 属性放在列表的*最后*，确保最终实现会覆盖带浏览器前缀的版本。例如，Safari 5 现在同时支持*不带*前缀的 `border-radius` 属性和 Safari 4 中支持的 `-webkit-border-radius`。
+图 3.14 展示了 `:hover` 背景处理，现在通过 `border-radius` 实现了圆角，在 Safari、Chrome、Firefox、Opera 以及 IE9 中都能看到。请记住，我们将不带前缀的 `border-radius` 属性放在列表的最后，确保最终实现会覆盖带浏览器前缀的版本。例如，Safari 5 现在同时支持不带前缀的 `border-radius` 属性和 Safari 4 中支持的 `-webkit-border-radius`。
 
 ![水平排列的导航链接，其中一个链接处于悬停状态，显示其下方有一个圆角的半透明白色背景。](img/3-14.jpg)
 
@@ -852,7 +832,7 @@ a.foo:focus {
 
 这里，我们将添加当前在 Safari、Chrome、Firefox（4.0）和 Opera 中有效的过渡堆栈，并将不带前缀的 `transition` 属性放在声明的最后，以便其他浏览器（或未来版本）最终实现。
 
-```
+```css
 #nav li a {
   padding: 5px 15px;
   font-weight: bold;
@@ -879,7 +859,7 @@ a.foo:focus {
 
 我在过渡中使用了 `all` 值，以捕获 `:hover` 和 `:focus` 时变化的所有属性——本例中是 `color` 和 `background`。或者，我们也可以通过逗号分隔的列表显式列出每个属性来实现相同的过渡，如下所示：
 
-```
+```css
 -webkit-transition: 
   color 0.3s ease-in-out, 
   background 0.3s ease-in-out;
@@ -902,9 +882,9 @@ transition:
 
 我认为这个小练习也展示了实现以前需要 Flash 和/或 JavaScript 才能实现的效果是多么高效。我们使用的 CSS 规则简单直接，对于尚不支持它们的浏览器来说也无害。
 
-我们还通过确保规范中的属性放在规则的最后，为我们的 CSS3 做好了未来兼容。用适当的浏览器特定前缀重复这些规则是必要的努力——但回报是丰厚的：*现在*就能使用 CSS3 来增强许多用户的体验。
+我们还通过确保规范中的属性放在规则的最后，为我们的 CSS3 做好了未来兼容。用适当的浏览器特定前缀重复这些规则是必要的努力——但回报是丰厚的：现在就能使用 CSS3 来增强许多用户的体验。
 
-## 使用 opacity 实现简单灵活的悬停效果
+## 使用 `opacity` 实现简单灵活的悬停效果
 
 我们一直在寻找能够节省时间并提供额外灵活性的解决方案。这正是 CSS3 大量提供给我们的：用几行代码就能实现过去需要更多时间和资源来创建和维护的效果。
 
@@ -920,15 +900,15 @@ transition:
 
 ![网站页脚的截图，文字为“这是一个虚构的案例研究，由马萨诸塞州塞勒姆的 SimpleBits 手工制作。我们并没有真的把那些东西留在月球上。版权所有 2010。”下方有三个徽标：SimpleBits 徽标（一个带括号的方框）、RSS 徽标（圆圈中的无线电波）和比特怪兽（像素化的机器人角色）。](img/3-16.jpg)
 
-图 3.16：*我们留在月球上的东西*的页脚。
+图 3.16：我们留在月球上的东西的页脚。
 
-我们将使用 `opacity` 属性不仅控制 `:hover` 和 `:focus` 的处理，还设置*初始*透明度级别。而 CSS 过渡将平滑并动画化这一变化，以实现完整效果。
+我们将使用 `opacity` 属性不仅控制 `:hover` 和 `:focus` 的处理，还设置初始透明度级别。而 CSS 过渡将平滑并动画化这一变化，以实现完整效果。
 
 ### 标记
 
 与之前的顶部导航示例类似，这些页脚徽标的标记简单且语义化——只是一个超链接图片的无序列表：
 
-```
+```html
 <ul id="footer-logos">
   <li><a href="#"><img src="img/logo-sb.png"  
     alt="SimpleBits 徽标" /></a>
@@ -953,13 +933,9 @@ transition:
 
 ### 为列表添加样式
 
-
-
-
-
 首先，一些样式技巧会将页脚中的图片居中，并使其水平排列而非垂直排列（图 3.18）。
 
-```
+```css
 #footer-logos {
   text-align: center;
   }
@@ -974,7 +950,7 @@ transition:
 
 接下来，我们添加 `opacity` 值，让图标在默认状态下变暗，在悬停或聚焦时则变亮一些。
 
-```
+```css
 #footer-logos a img {
   opacity: 0.25;
   }
@@ -991,9 +967,9 @@ transition:
 
 图 3.19：通过调整 `opacity` 展示页脚图标的 `:hover` 状态。
 
-请注意，`opacity` 属性不需要厂商前缀，在 Safari、Chrome、Firefox 和 Opera 中都能正常工作。IE8 及更低版本不支持 `opacity`，但对于那些不介意使用专有方案的人来说，也有一个* hack 式的*解决方案。
+请注意，`opacity` 属性不需要厂商前缀，在 Safari、Chrome、Firefox 和 Opera 中都能正常工作。IE8 及更低版本不支持 `opacity`，但对于那些不介意使用专有方案的人来说，也有一个 hack 式的解决方案。
 
-### IE 的 opacity hack
+### IE 的 `opacity` hack
 
 值得庆幸的是，`opacity` 现在已得到 Internet Explorer 9 Beta 的支持，但我们也可以通过使用微软专有的 `filter` 属性，在旧版 IE 中模拟出相同的效果。
 
@@ -1003,7 +979,7 @@ transition:
 
 具体做法如下：
 
-```
+```css
 #footer-logos a img {
   border: none;
   opacity: 0.25;
@@ -1033,7 +1009,7 @@ transition:
 
 让我们在声明中添加（现已熟悉的）`transition` 堆栈，这次专门过渡 `opacity` 属性。我们将使其相当快（仅 0.2 秒），并采用缓入缓出效果。
 
-```
+```css
 #footer-logos a img {
   opacity: 0.25;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=25)"; /* IE 8 hack */ 
@@ -1066,9 +1042,8 @@ transition:
 
 与 CSS 过渡类似，CSS 变换最初也是由 WebKit 团队开发的，后来被纳入 W3C 的两个独立工作草案中：
 
-1.  CSS 2D 变换（[`www.w3.org/TR/CSS3-2d-transforms/`](http://www.w3.org/TR/css3-2d-transforms/)）
-
-2.  CSS 3D 变换（[`www.w3.org/TR/CSS3-3d-transforms/`](http://www.w3.org/TR/css3-3d-transforms/)）
+1. CSS 2D 变换（[`www.w3.org/TR/CSS3-2d-transforms/`](http://www.w3.org/TR/css3-2d-transforms/)）
+2. CSS 3D 变换（[`www.w3.org/TR/CSS3-3d-transforms/`](http://www.w3.org/TR/css3-3d-transforms/)）
 
 本书将只关注 2D 变换，因为它们是当前最实用的。仅 3D 变换的信息就足以写满一整本书，而且它们非常神奇。但 2D 变换在浏览器支持方面最具优势，包括 Safari 3.2、Chrome 3.2、Firefox 4.0 和 Opera 10.5（与过渡一样）。
 
@@ -1090,7 +1065,9 @@ transition:
 
 我们将再次依赖我们可靠的无序列表来标记这些内容：
 
-```
+
+
+```html
 <ul class="gallery">
   <li><a href="#"><img src="photo-1.jpg" /></a></li>
   <li><a href="#"><img src="photo-2.jpg" /></a></li>
@@ -1108,23 +1085,19 @@ transition:
 
 让我们添加一些 CSS，将这个垂直的照片列表变成水平网格，并为每张图片添加 1 像素的边框（同时注意页面背景为浅灰色 `#eee`）。
 
-
-
-
-
-```
+```css
 ul.gallery li {
   float: left;
   margin: 0 10px;
   padding: 10px;
   border: 1px solid #ddd;
   list-style: none;
-  }
+}
 
 ul.gallery li a img {
   float: left;
   width: 200px;
-  }
+}
 ```
 
 这里我们让列表项浮动，关闭了 `list-style` 项目符号，并为每个 `li` 添加了 1 像素的灰色边框。我们还让图片本身浮动，并将其尺寸缩小到 200 像素宽。
@@ -1137,13 +1110,13 @@ ul.gallery li a img {
 
 缩放变换在 Safari、Chrome、Firefox 和 Opera 中均受支持——每个浏览器都需要一个厂商前缀。让我们添加一组代码，既能满足这些浏览器，也能兼容未来的浏览器。
 
-```
+```css
 ul.gallery li a:hover img {
   -webkit-transform: scale(1.5);
   -moz-transform: scale(1.5);
   -o-transform: scale(1.5);
   transform: scale(1.5);
-  }
+}
 ```
 
 当超链接被悬停时，我们表示：“将图片缩放到其初始大小的 1.5 倍”（初始大小为 200 像素宽）。设置 `scale(2)` 会使照片变为两倍大，`scale(0.5)` 则使其变为一半大小，以此类推。
@@ -1158,28 +1131,28 @@ ul.gallery li a:hover img {
 
 例如，要让照片从其容器的左下角而不是中心向外缩放，你可以这样写：
 
-```
+```css
 ul.gallery li a:hover img {
-  -webkit-transform-origin: bottom left; 
-  -moz-transform-origin: bottom left; 
-  -o-transform-origin: bottom left; 
-  transform-origin: bottom left; 
+  -webkit-transform-origin: bottom left;
+  -moz-transform-origin: bottom left;
+  -o-transform-origin: bottom left;
+  transform-origin: bottom left;
   -webkit-transform: scale(1.5);
   -moz-transform: scale(1.5);
   -o-transform: scale(1.5);
   transform: scale(1.5);
-  }
+}
 ```
 
 ### 合适的投影
 
 我们可以在这个例子中更进一步，为悬停时的照片添加投影。这是 CSS3 `box-shadow` 属性的一个恰当用法，因为我们让放大的照片看起来像是从页面上浮起来。
 
-投影是一种微妙的技巧，常常被过于冲动的设计师滥用。很容易就会过头。但在本例中，我们试图为照片放大效果增加*立体感*，所以应该会效果不错。
+投影是一种微妙的技巧，常常被过于冲动的设计师滥用。很容易就会过头。但在本例中，我们试图为照片放大效果增加立体感，所以应该会效果不错。
 
 `box-shadow` 的语法与我们在第 3 章中使用的 `text-shadow` 属性相同。不过，与 `text-shadow` 不同，`box-shadow` 需要厂商前缀才能在 Safari、Chrome 和 Firefox 中工作。（Opera 10+ 和 IE9 Beta 支持无前缀的 `box-shadow`。）让我们把这些规则整合进来。
 
-```
+```css
 ul.gallery li a:hover img {
   -webkit-transform: scale(1.5);
   -moz-transform: scale(1.5);
@@ -1187,8 +1160,8 @@ ul.gallery li a:hover img {
   transform: scale(1.5);
   -webkit-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
   -moz-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
-  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5); 
-  }
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+}
 ```
 
 我们为支持 `box-shadow` 属性的 WebKit 和 Mozilla 浏览器添加了一组 CSS3 代码，最后以无前缀版本结尾，就像我们在其他示例中所做的那样。
@@ -1207,22 +1180,22 @@ ul.gallery li a:hover img {
 
 以下是为我们的小型照片画廊添加的完整 CSS 过渡代码：
 
-```
+```css
 ul.gallery li {
   float: left;
   margin: 0 10px;
   padding: 10px;
   border: 1px solid #ddd;
   list-style: none;
-  }
+}
 
 ul.gallery li a img {
   float: left;
   width: 200px;
   -webkit-transition: -webkit-transform 0.2s ease-in-out;
   -moz-transition: -moz-transform 0.2s ease-in-out;
-  transition: transform 0.2s ease-in-out; 
-  }
+  transition: transform 0.2s ease-in-out;
+}
 
 ul.gallery li a:hover img {
   -webkit-transform: scale(1.5);
@@ -1231,8 +1204,8 @@ ul.gallery li a:hover img {
   transform: scale(1.5);
   -webkit-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
   -moz-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
-  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5); 
-  } 
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+}
 ```
 
 请注意，这次我们过渡的属性是 `scale` 变换，因此 `transition` 和 `transform` 属性都使用了相应的厂商前缀。
@@ -1243,7 +1216,7 @@ ul.gallery li a:hover img {
 
 再次强调，在这个特定示例中，我们选择全面拥抱 CSS3 的地方在于体验层：当照片被悬停时，我们提供了一个增强的视图。对于不支持这些属性的浏览器来说，这并非关键。
 
-例如，Internet Explorer 的用户只会看到一个可点击缩略图的画廊，这完全没问题。如果悬停处理是*关键*的，那么我们就需要重新考虑使用 CSS3 来实现视觉体验的方式。
+例如，Internet Explorer 的用户只会看到一个可点击缩略图的画廊，这完全没问题。如果悬停处理是关键的，那么我们就需要重新考虑使用 CSS3 来实现视觉体验的方式。
 
 ## 旋转、倾斜和平移
 
@@ -1253,7 +1226,7 @@ ul.gallery li a:hover img {
 
 如果我们希望在悬停时旋转照片，同时仍然放大它，可以在 `:hover` 规则中添加以下 `rotate` 变换：
 
-```
+```css
 ul.gallery li a:hover img {
   -webkit-transform: scale(1.5) rotate(-10deg);
   -moz-transform: scale(1.5) rotate(-10deg);
@@ -1262,7 +1235,7 @@ ul.gallery li a:hover img {
   -webkit-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
   -moz-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
-  }
+}
 ```
 
 我们仍然在悬停时放大照片，但同时使用 `rotate` 将照片向左倾斜 10 度（图 4.05）。这在 Safari、Chrome、Firefox 和 Opera 中都能工作。从 `-1deg` 到 `-360deg` 的负值会使元素逆时针旋转，而从 `1deg` 到 `360deg` 的正值则使其顺时针旋转。
@@ -1270,10 +1243,6 @@ ul.gallery li a:hover img {
 ![左侧的照片被悬停并向左旋转，下方带有阴影。](img/4-05.jpg)
 
 图 4.05：一张悬停的照片，现在使用 `rotate` 变换进行了缩放和向左旋转。
-
-
-
-
 
 或者，我们可以为列表项添加不同的 `rotate` 变换，让照片（和相框）看起来像是被随意扔在桌子上。然后我们还可以在 `:hover` 时应用 `rotate` 和 `scale`（图 4.06）。
 
@@ -1287,7 +1256,7 @@ ul.gallery li a:hover img {
 
 ### 没有旋转？别慌
 
-在页面主要设计中运用 `rotate` 的一个好例子是 Panic Software 的博客（[`www.panic.com/blog`](http://www.panic.com/blog)），他们通过 CSS3 使用了*非常*微妙的旋转，让条目向左倾斜，仿佛它们是留在桌子上的纸张（图 4.07）。这对设计来说并非关键，如果条目没有旋转而是笔直的（图 4.08），也完全没问题。
+在页面主要设计中运用 `rotate` 的一个好例子是 Panic Software 的博客（[`www.panic.com/blog`](http://www.panic.com/blog)），他们通过 CSS3 使用了非常微妙的旋转，让条目向左倾斜，仿佛它们是留在桌子上的纸张（图 4.07）。这对设计来说并非关键，如果条目没有旋转而是笔直的（图 4.08），也完全没问题。
 
 ![Panic Software 博客的截图，显示一篇设计成索引卡样式的文章，并稍微向左旋转。](img/4-07.jpg)
 
@@ -1299,7 +1268,7 @@ ul.gallery li a:hover img {
 
 ### 旋转太阳
 
-另一个*恰当*使用 CSS 变换的好例子是 Outside 网站（[`outsideapp.com`](http://outsideapp.com)），这是一款适用于 iPhone 的出色天气应用（图 4.09）。
+另一个恰当使用 CSS 变换的好例子是 Outside 网站（[`outsideapp.com`](http://outsideapp.com)），这是一款适用于 iPhone 的出色天气应用（图 4.09）。
 
 ![Outside 应用网站的截图，右上角显示一个带有强烈太阳光线的太阳图形。](img/4-09.jpg)
 
@@ -1317,13 +1286,13 @@ CSS 中的变换与过渡相结合，有助于支持我们为网络设计中的�
 
 `skew` 变换接受 x 和 y 坐标，并对元素进行倾斜。例如，如果我们想在悬停时倾斜图库中的照片，可以使用以下 CSS（在 x 坐标上倾斜负 5 度，在 y 坐标上倾斜 30 度）（图 4.11）：
 
-```
+```css
 ul.gallery li a:hover img {
   -webkit-transform: scale(1.5) skew(-5deg, 30deg);
   -moz-transform: scale(1.5) skew(-5deg, 30deg);
   -o-transform: scale(1.5) skew(-5deg, 30deg);
   transform: scale(1.5) skew(-5deg, 30deg);
-  }
+}
 ```
 
 ![水平排列的照片列表，中间的照片发生了变形。](img/4-11.jpg)
@@ -1332,13 +1301,13 @@ ul.gallery li a:hover img {
 
 与 `rotate` 类似，`skew` 接受正负角度值。你也可以只使用一个值同时应用于 x 和 y 轴，如下所示（图 4.12）：
 
-```
+```css
 ul.gallery li a:hover img {
   -webkit-transform: scale(1.5) skew(30deg);
   -moz-transform: scale(1.5) skew(30deg);
   -o-transform: scale(1.5) skew(30deg);
   transform: scale(1.5) skew(30deg);
-  }
+}
 ```
 
 ![水平排列的照片列表，中间的照片发生了变形。](img/4-12.jpg)
@@ -1359,19 +1328,19 @@ ul.gallery li a:hover img {
 
 ### 平移变换
 
-最后，`translate` 变换允许你使用 x 和 y 坐标将元素从屏幕上的正常位置*移动*。
+最后，`translate` 变换允许你使用 x 和 y 坐标将元素从屏幕上的正常位置移动。
 
 例如，如果我们想在悬停时将照片图库中的图像从其初始位置移开，可以使用 `translate`。配合我们已有的过渡，这种移动将被平滑地动画化。
 
 以下是将图像从其原始位置向右移动 20 像素、向下移动 40 像素的语法（图 4.15）：
 
-```
+```css
 ul.gallery li a:hover img {
   -webkit-transform: scale(1.5) translate(20px, 40px);
   -moz-transform: scale(1.5) translate(20px, 40px);
   -o-transform: scale(1.5) translate(20px, 40px);
   transform: scale(1.5) translate(20px, 40px);
-  }
+}
 ```
 
 ![水平排列的照片列表，中间的照片被悬停并向右下方移动。](img/4-15.jpg)
@@ -1379,6 +1348,8 @@ ul.gallery li a:hover img {
 图 4.15：使用 `translate` 变换在 `:hover` 时移动照片。
 
 如果我们想将图像向左和/或向上移动，可以使用负值，例如 `translate(-20px, -40px)`。
+
+
 
 与前面提到的变换一样，`translate` 不会干扰文档中的其他元素，它会明确地将元素移动到指定的位置。这意味着你无需担心外边距、内边距、清除浮动或绝对定位。给元素一个 `translate` 坐标，它就会移动到那里。
 
@@ -1398,17 +1369,13 @@ ul.gallery li a:hover img {
 
 当悬停在月球上留下的每个物品时，图像会根据该物品的特性（无论是甜甜圈、割草机、猫等）以不同的方式做出反应。
 
-
-
-
-
 为每个项目添加适当的变换/过渡不仅有趣且易于实现，而且对于尚未支持实现交互所需的 CSS3 特性的浏览器也无害。
 
-让我们逐一查看每个项目，了解如何将`scale`、`rotate`、定位和`opacity`与过渡结合，以完成整个体验。
+让我们逐一查看每个项目，了解如何将 `scale`、`rotate`、定位和 `opacity` 与过渡结合，以完成整个体验。
 
 ### 支持信息传达
 
-如果我们思考每个链接项目，特别是它们的*含义*，就可以应用一种变换和/或过渡来支持该对象所讲述的故事。
+如果我们思考每个链接项目，特别是它们的含义，就可以应用一种变换和/或过渡来支持该对象所讲述的故事。
 
 一个大甜甜圈或躺椅会对交互做出怎样的反应？我们可以选择在这里应用适当的 CSS3 来丰富体验（图 4.17）。
 
@@ -1420,7 +1387,7 @@ ul.gallery li a:hover img {
 
 为了标记这个古怪物品的伪旋转木马，语义非常简单：只是一个包含链接图片的有序列表，下方有一个标题描述每个物品是什么。
 
-```
+```html
 <ol id="things">
   <li id="things-1">
     <a href="#"><img src="img/doughnut.png" /></a>
@@ -1445,13 +1412,13 @@ ul.gallery li a:hover img {
 </ol>
 ```
 
-注意，我们为列表本身添加了`id`为`#things`，并为每个列表项也添加了`id`，这样我们就可以为每个项目的`:hover`状态添加独特的交互。
+注意，我们为列表本身添加了 `id` 为 `#things`，并为每个列表项也添加了 `id`，这样我们就可以为每个项目的 `:hover` 状态添加独特的交互。
 
 ### 每个项目的基础样式
 
 接下来，我们将为包含链接图片的每个列表项添加基础 CSS。以下样式将项目浮动以使其水平排列，设置相对定位作为上下文，以便稍后对每个图片进行绝对定位，最后添加一个圆角半透明背景框。
 
-```
+```css
 ol#things li {
   position: relative;
   float: left;
@@ -1467,9 +1434,9 @@ ol#things li {
   }
 ```
 
-现在我们将设置每个项目后面出现的月球背景图片，并为每个链接指定具体的`width`和`height`（图 4.18）。
+现在我们将设置每个项目后面出现的月球背景图片，并为每个链接指定具体的 `width` 和 `height`（图 4.18）。
 
-```
+```css
 ol#things li a {
   float: left;
   width: 137px;
@@ -1486,9 +1453,9 @@ ol#things li a {
 
 下一步是创建一个通用声明，将每个图片绝对定位在列表项的框架内，从而位于月球背景图片之上。
 
-我们将根据对象的不同，对每个项目进行略微不同的定位，并使用不同的变换，但我们可以在这里为*所有*图片声明`position: absolute;`，这样就不必为每个项目重复该规则。我们还将使用`all`值添加一个过渡堆栈。这样，无论我们决定更改哪些 CSS 属性，我们对每个物品所做的任何变换或更改都将被过渡并平滑处理。
+我们将根据对象的不同，对每个项目进行略微不同的定位，并使用不同的变换，但我们可以在这里为所有图片声明 `position: absolute;`，这样就不必为每个项目重复该规则。我们还将使用 `all` 值添加一个过渡堆栈。这样，无论我们决定更改哪些 CSS 属性，我们对每个物品所做的任何变换或更改都将被过渡并平滑处理。
 
-```
+```css
 ol#things li a img {
   position: absolute;
   -webkit-transition: all 0.2s ease-in;
@@ -1498,9 +1465,9 @@ ol#things li a img {
   }
 ```
 
-现在，我们可以利用添加到每个列表项的`id`，为每个图片添加精确的定位和宽度。
+现在，我们可以利用添加到每个列表项的 `id`，为每个图片添加精确的定位和宽度。
 
-```
+```css
 ol#things li#things-1 a img { 
   width: 60px;
   top: 23px;
@@ -1534,13 +1501,13 @@ ol#things li#things-5 a img {
 
 我将这些图片做得偏大，这样如果我们想放大它们，可以在不拉伸图片超出其原始尺寸的情况下进行。
 
-现在，我们将为每个项目添加独特的`:hover`处理，知道通用过渡会平滑并动画化我们加入的任何效果。
+现在，我们将为每个项目添加独特的 `:hover` 处理，知道通用过渡会平滑并动画化我们加入的任何效果。
 
 ### 放大甜甜圈
 
-大甜甜圈在悬停时会变大，因此我们将使用`scale`变换来放大图片。请记住，标记中的原始图片比我们在样式表中缩小后的尺寸要大得多。这是有意为之，这样我们就可以像这样放大它。
+大甜甜圈在悬停时会变大，因此我们将使用 `scale` 变换来放大图片。请记住，标记中的原始图片比我们在样式表中缩小后的尺寸要大得多。这是有意为之，这样我们就可以像这样放大它。
 
-```
+```css
 ol#things li#things-1 a:hover img {
   -webkit-transform: scale(1.25);
   -moz-transform: scale(1.25);
@@ -1553,7 +1520,7 @@ ol#things li#things-1 a:hover img {
 
 ![大甜甜圈在悬停前后的图片；悬停时，甜甜圈变大。](img/4-19.jpg)
 
-图 4.19：大甜甜圈在`:hover`时使用`scale`变大。
+图 4.19：大甜甜圈在 `:hover` 时使用 `scale` 变大。
 
 ### 使用缩放和定位实现透视效果
 
@@ -1566,7 +1533,7 @@ ol#things li#things-1 a:hover img {
 
 我们将默认位置向下调整 5 像素，向右调整 10 像素。同时添加一个变换堆栈，将割草机放大到比默认大 20%。
 
-```
+```css
 ol#things li#things-2 a:hover img {
   top: 25px;
   left: 60px;
@@ -1581,17 +1548,17 @@ ol#things li#things-2 a:hover img {
 
 ![割草机在悬停前后的图片；悬停时，它向前移动并变大。](img/4-20.jpg)
 
-图 4.20：割草机使用定位和`scale`创建伪三维效果。
+图 4.20：割草机使用定位和 `scale` 创建伪三维效果。
 
 ### 难以捉摸的太空猫
 
-我们可以在大量属性（不仅仅是 CSS3 属性）上添加 CSS 过渡；仅仅平滑*位置*变化就可以让太空猫看起来像是在躲避鼠标。
+我们可以在大量属性（不仅仅是 CSS3 属性）上添加 CSS 过渡；仅仅平滑位置变化就可以让太空猫看起来像是在躲避鼠标。
 
-通过调整悬停时图片的`left`位置，通用过渡将平滑该移动，使太空猫看起来像是在来回滑动。
+通过调整悬停时图片的 `left` 位置，通用过渡将平滑该移动，使太空猫看起来像是在来回滑动。
 
-这里我们将`left`值从`30px`增加到`45px`，将猫向右移动 15 像素（图 4.21）：
+这里我们将 `left` 值从 `30px` 增加到 `45px`，将猫向右移动 15 像素（图 4.21）：
 
-```
+```css
 ol#things li#things-3 a:hover img {
   left: 45px;
   }
@@ -1605,11 +1572,11 @@ ol#things li#things-3 a:hover img {
 
 ### 向后倾斜的躺椅
 
-一把好的躺椅会向后倾斜，我们可以使用前面提到的`rotate`变换来模拟这种现实世界的反应。
+一把好的躺椅会向后倾斜，我们可以使用前面提到的 `rotate` 变换来模拟这种现实世界的反应。
 
-让我们添加变换堆栈，将躺椅稍微向左旋转。我们将使用针对 WebKit、Mozilla 和 Opera 浏览器的厂商前缀规则，并以实际的`transform`属性结尾，以备将来实现。
+让我们添加变换堆栈，将躺椅稍微向左旋转。我们将使用针对 WebKit、Mozilla 和 Opera 浏览器的厂商前缀规则，并以实际的 `transform` 属性结尾，以备将来实现。
 
-```
+```css
 ol#things li#things-4 a:hover img {
   -webkit-transform: rotate(-15deg);
   -moz-transform: rotate(-15deg);
@@ -1618,10 +1585,7 @@ ol#things li#things-4 a:hover img {
   }
 ```
 
-
-
-
-我们使用了一个*负值*来让图像向左倾斜（逆时针），而过渡效果会平滑地处理这个微妙的旋转，从而完成我们那把舒适柔软的月球躺椅的幻觉（图 4.22）。
+我们使用了一个负值来让图像向左倾斜（逆时针），而过渡效果会平滑地处理这个微妙的旋转，从而完成我们那把舒适柔软的月球躺椅的幻觉（图 4.22）。
 
 ![悬停前后的躺椅；悬停时，躺椅向后倾斜。](img/4-22.jpg)
 
@@ -1635,7 +1599,7 @@ ol#things li#things-4 a:hover img {
 
 声明很简单：
 
-```
+```css
 ol#things li#things-5 a:hover img {
   opacity: 0.4;
   }
@@ -1645,7 +1609,7 @@ ol#things li#things-5 a:hover img {
 
 ![悬停前后的地精；悬停时，地精几乎消失，月球背景可以透过它看到。](img/4-23.jpg)
 
-图 4.23：通过降低 `:hover` 时的 `opacity`，地精*几乎*消失了。
+图 4.23：通过降低 `:hover` 时的 `opacity`，地精几乎消失了。
 
 现在请记住，如果我们希望这个效果在 Internet Explorer 中也能工作（无需过渡），我们可以重新使用第 3 章中介绍的专有 `filter` 属性 hack。
 
@@ -1657,7 +1621,7 @@ ol#things li#things-5 a:hover img {
 
 ## 再说一次：要聪明，要微妙
 
-花一点时间思考我们所处理内容背后的*含义*，我们可以选择应用一些今天就能使用的 CSS3 属性，以及过渡和变换。
+花一点时间思考我们所处理内容背后的含义，我们可以选择应用一些今天就能使用的 CSS3 属性，以及过渡和变换。
 
 这些体验增强可以成为真正网页工匠的标志：关注并非每个人都会注意到的细节，对非关键的视觉事件进行关怀和滋养，并将信息传递提升到超越常规的水平。对于现在支持这些内容的浏览器，以及未来将支持它们的浏览器，少量的代码和思考是非常值得的。
 
@@ -1667,7 +1631,7 @@ ol#things li#things-5 a:hover img {
 
 说到得意忘形，下次你的客户或老板说“这个设计需要更多‘哇’的效果”或“它缺少一些活力！”时，只需在你的样式表中添加以下声明（当然，确保他们使用的是 Safari、Chrome、Firefox 或 Opera）：
 
-```
+```css
 *:hover {
   -webkit-transform: rotate(180deg);
   -moz-transform: rotate(180deg);
@@ -1682,15 +1646,15 @@ ol#things li#things-5 a:hover img {
 
 图 4.24：“悬停时旋转所有内容”技巧导致的混乱。
 
-实际上，可悲的是，确实有一些客户和老板可能会*喜欢*这个。
+实际上，可悲的是，确实有一些客户和老板可能会喜欢这个。
 
 “太棒了！发布吧！”
 
 *唉。*
 
-9\. [`www.w3.org/TR/CSS3-2d-transforms/#abstract`](http://www.w3.org/TR/CSS3-2d-transforms/#abstract) [[↵]](#chapter4.html_footnote-9-backlink)
+9. [`www.w3.org/TR/CSS3-2d-transforms/#abstract`](http://www.w3.org/TR/CSS3-2d-transforms/#abstract) [[↵]](#chapter4.html_footnote-9-backlink)
 
-10\. 长 URL：[`www.w3.org/TR/css3-2d-transforms/#transform-origin`](http://www.w3.org/TR/css3-2d-transforms/#transform-origin) [[↵]](#chapter4.html_footnote-10-backlink)
+10. 长 URL：[`www.w3.org/TR/css3-2d-transforms/#transform-origin`](http://www.w3.org/TR/CSS3-2d-transforms/#transform-origin) [[↵]](#chapter4.html_footnote-10-backlink)
 
 ![第 5 章：多重背景](img/chap-5.png)
 
@@ -1700,7 +1664,7 @@ ol#things li#things-5 a:hover img {
 
 然而，现实是，在这个过程中，浏览器已经增加了对 CSS3 中背景与边框模块（[`bkaprt.com/css3/9/`](http://bkaprt.com/css3/9/)）的大部分支持。^(11) 我们之前书中讨论的许多属性，如 `border-radius`、`box-shadow`、渐变、`RGBA` 和 `opacity`，如今在 Safari、Chrome、Firefox、Opera 和 IE9 Beta 中都有不错的浏览器支持。在某些情况下，这些属性使得无需图像就能解决常见问题。许多以前需要图像的技术现在完全可以在样式表内部实现。所有这些都有明显的好处。
 
-因此，虽然几年前我对多重背景支持的前景垂涎三尺，但今天，由于我们手头有这么多其他工具，我反而没那么兴奋了。尽管如此，在单个元素上分配多个背景图像仍然有*绝佳*的用例，我们将在这一简短章节中讨论一种特定技术。
+因此，虽然几年前我对多重背景支持的前景垂涎三尺，但今天，由于我们手头有这么多其他工具，我反而没那么兴奋了。尽管如此，在单个元素上分配多个背景图像仍然有绝佳的用例，我们将在这一简短章节中讨论一种特定技术。
 
 ## 视差滚动
 
@@ -1722,17 +1686,15 @@ ol#things li#things-5 a:hover img {
 
 来回调整浏览器窗口大小，注意从顶部垂下的藤蔓层如何以略微不同的速度来回移动，从而产生立体感（我第一次遇到这个网站时，大概连续玩了一个小时）。
 
-当然，并非每个人都会注意到它——但对于那些*确实*体验到它的人来说，这是一个美妙的细节和增强的用户体验，它让你不由自主地感到一丝愉悦。
+当然，并非每个人都会注意到它——但对于那些确实体验到它的人来说，这是一个美妙的细节和增强的用户体验，它让你不由自主地感到一丝愉悦。
 
 ## 旧方法：额外标记
 
 
 
+那么具体是如何实现的呢？保罗·安奈特（Paul Annett）在 2008 年初为 `Think Vitamin` 撰写的一篇文章中，记录了他专门为 Silverback 网站创建视差效果所使用的技术（[`bkaprt.com/css3/10/`](http://bkaprt.com/css3/10/)）。^(13)
 
-
-那么具体是如何实现的呢？保罗·安奈特（Paul Annett）在 2008 年初为*Think Vitamin*撰写的一篇文章中，记录了他专门为 Silverback 网站创建视差效果所使用的技术（[`bkaprt.com/css3/10/`](http://bkaprt.com/css3/10/)）。^(13)
-
-为了将三层藤蔓（每层都是一个独立的 PNG）分层放置，你至少需要三个可用的块级元素。需要两个额外的包装`div`，以便在`body`、`#midground`和`#foreground`元素上放置背景图像。
+为了将三层藤蔓（每层都是一个独立的 PNG）分层放置，你至少需要三个可用的块级元素。需要两个额外的包装 `div`，以便在 `body`、`#midground` 和 `#foreground` 元素上放置背景图像。
 
 为了简单起见，我在这里进行了粗略的翻译，但标记大致如下：
 
@@ -1764,18 +1726,18 @@ body {
 
 这种方法效果很好。但使用 CSS3 中引入的多背景语法后，实现起来就简单多了。
 
-让我们看看如何将多背景应用于月球示例网站的`body`，以及如何为可能体验到的用户创建更简单的视差效果。
+让我们看看如何将多背景应用于月球示例网站的 `body`，以及如何为可能体验到的用户创建更简单的视差效果。
 
 ## 新方法：通过 CSS3 实现多背景
 
-我使用了四个半透明的 PNG 来创建月球示例网站所用的深邃太空背景。它们都层叠在`body`元素上，一个叠在另一个上面，以便在用户调整浏览器窗口大小时营造出立体感。
+我使用了四个半透明的 PNG 来创建月球示例网站所用的深邃太空背景。它们都层叠在 `body` 元素上，一个叠在另一个上面，以便在用户调整浏览器窗口大小时营造出立体感。
 
 图 5.03 展示了所使用的四张 PNG 图像：
 
-1.  尘埃云（`clouds.png`）
-2.  蓝到紫的渐变（`space-bg.png`）
-3.  一层星星（`stars-1.png`）
-4.  另一层随机分布的星星（`stars-2.png`）
+1. 尘埃云（`clouds.png`）
+2. 蓝到紫的渐变（`space-bg.png`）
+3. 一层星星（`stars-1.png`）
+4. 另一层随机分布的星星（`stars-2.png`）
 
 ![四张背景图像彼此分离、清晰可见。](img/5-03.jpg)
 
@@ -1783,7 +1745,7 @@ body {
 
 ### 多背景语法
 
-下面就是使用更新后的 CSS3 语法将这四张图像指定为`body`元素的背景有多么简单：
+下面就是使用更新后的 CSS3 语法将这四张图像指定为 `body` 元素的背景有多么简单：
 
 ```
 body {
@@ -1796,11 +1758,11 @@ body {
   }
 ```
 
-这里我将四张图像层叠起来，云层在底部，星星在顶部，形成一个逗号分隔的列表（注意堆叠顺序从“最靠近”用户的图像开始）。我还让每张图像水平重复，并将它们设置在不同的水平位置（使用正值和负值），以便在调整窗口大小时，每一层以不同的速度“移动”。最后，我使用`fixed`值将它们固定在页面上的锁定位置。
+这里我将四张图像层叠起来，云层在底部，星星在顶部，形成一个逗号分隔的列表（注意堆叠顺序从“最靠近”用户的图像开始）。我还让每张图像水平重复，并将它们设置在不同的水平位置（使用正值和负值），以便在调整窗口大小时，每一层以不同的速度“移动”。最后，我使用 `fixed` 值将它们固定在页面上的锁定位置。
 
-近乎黑色的背景色`#1a1a1a`作为单独的`background-color`规则最后添加。
+近乎黑色的背景色 `#1a1a1a` 作为单独的 `background-color` 规则最后添加。
 
-就是这样（图 5.04）。它的美妙之处在于不需要任何多余的标记。我们将所有这些图像放在`body`元素上，使它们位于页面内容之后，但我们不需要添加虚拟的包装`div`来分层。
+就是这样（图 5.04）。它的美妙之处在于不需要任何多余的标记。我们将所有这些图像放在 `body` 元素上，使它们位于页面内容之后，但我们不需要添加虚拟的包装 `div` 来分层。
 
 ![一张太空插图，散布着星星和蓝紫色的尘埃云。](img/5-04.jpg)
 
@@ -1808,21 +1770,21 @@ body {
 
 ### 浏览器支持情况如何？
 
-正如第 1 章中提到的，多背景在 Safari 1.3+、Chrome 2+、Firefox 3.6+、Opera 10.5+和 IE9 Beta 中得到支持。因此，实际上，它们与我们在本书中一直使用的许多其他 CSS 属性处于同一水平。
+正如第 1 章中提到的，多背景在 Safari 1.3+、Chrome 2+、Firefox 3.6+、Opera 10.5+ 和 IE9 Beta 中得到支持。因此，实际上，它们与我们在本书中一直使用的许多其他 CSS 属性处于同一水平。
 
-再次强调，由于支持不完善，我们选择在设计的非关键部分使用这个精彩的 CSS3 宝石：丰富页面的*背景*，通过为能够体验到的用户创建视差效果，增强调整窗口大小的体验。
+再次强调，由于支持不完善，我们选择在设计的非关键部分使用这个精彩的 CSS3 宝石：丰富页面的 `背景`，通过为能够体验到的用户创建视差效果，增强调整窗口大小的体验。
 
 ### 为所有浏览器提供回退方案
 
-尚不支持多背景的浏览器会忽略整个`background`规则。这正是我们将`background-color`定义在单独规则中的原因。
+尚不支持多背景的浏览器会忽略整个 `background` 规则。这正是我们将 `background-color` 定义在单独规则中的原因。
 
-图 5.05 显示了在 IE7 中查看的月球示例网站，其中我们声明的多背景图像被忽略，只显示炭灰色的`background-color`。
+图 5.05 显示了在 IE7 中查看的月球示例网站，其中我们声明的多背景图像被忽略，只显示炭灰色的 `background-color`。
 
 ![“我们留在月球上的东西”网站，只有黑色背景。](img/5-05.jpg)
 
 图 5.05：IE7 忽略了声明多背景图像的规则，只显示深炭灰色背景色。
 
-现在，这里并没有*破坏*任何东西——但失去背景中的所有太空感是一种遗憾。解决方案是，在声明中*首先*为不支持多图像的浏览器（如 IE7 和 8）指定一个单一的回退背景图像。然后，我们可以用多背景规则覆盖该规则（IE 会忽略多背景规则）。
+现在，这里并没有 *破坏* 任何东西——但失去背景中的所有太空感是一种遗憾。解决方案是，在声明中 *首先* 为不支持多图像的浏览器（如 IE7 和 8）指定一个单一的回退背景图像。然后，我们可以用多背景规则覆盖该规则（IE 会忽略多背景规则）。
 
 ```
 body {
@@ -1838,7 +1800,7 @@ body {
 
 对于单一图像回退，你可以选择多背景声明中使用的其中一张图像，甚至可以创建一个多层的扁平化版本。
 
-对于月球网站，我选择简单地使用`space-bg.png`，即颜色渐变图像（图 5.06），从而为尚不支持多背景图像的浏览器提供一个没有星星、没有云层的背景版本。这很合适。
+对于月球网站，我选择简单地使用 `space-bg.png`，即颜色渐变图像（图 5.06），从而为尚不支持多背景图像的浏览器提供一个没有星星、没有云层的背景版本。这很合适。
 
 ![“我们留在月球上的东西”网站，背景为蓝紫色尘埃云。](img/5-06.jpg)
 
@@ -1848,7 +1810,7 @@ body {
 
 与本书其他示例的主题一致，这里我们正在使用多背景图像。我们正在推进一个在 Safari、Chrome、Firefox 和 Opera 以及 IE9 Beta 中得到良好支持的 CSS3 属性。我们不是害怕这种非普遍支持并等待它普及，而是选择将该属性应用于一个非关键的视觉事件（视差移动背景）。
 
-我们还知道，如果浏览器不支持多背景，它会忽略整个`background`规则。为了弥补这一点，我们将在多背景规则之前定义一个扁平或备用的单一图形作为背景规则。
+我们还知道，如果浏览器不支持多背景，它会忽略整个 `background` 规则。为了弥补这一点，我们将在多背景规则之前定义一个扁平或备用的单一图形作为背景规则。
 
 考虑到所有这些，我们现在可以更灵活地尝试将背景图像彼此层叠、移动和定位，而无需额外的标记。看到这项技术以创造性的新方式被使用，将会令人兴奋。
 
@@ -1860,12 +1822,11 @@ body {
 
 ![第 6 章：丰富表单](img/chap-6.png)
 
+# 第 6 章：丰富表单
+
 表单是网站中另一个涉及交互的方面，因此它们提供了额外的视觉事件，非常适合用 CSS3 来丰富。
 
 默认情况下，表单元素本身的外观可能因浏览器或操作系统而异。为什么不接受这种差异，选择应用那些今天就能工作的 CSS3 部分来提升体验呢？
-
-
-
 
 在表单元素上进行细微调整与保持用户熟悉感之间取得平衡至关重要，这样才能确保表单的可用性。换句话说，输入框仍然需要明显看起来像输入框。如今，CSS 已经能够对表单元素进行深度样式化（在大多数浏览器中），我们必须小心不要破坏最重要的部分：功能。
 
@@ -1911,7 +1872,7 @@ body {
 
 图 6.02：在 Safari 中查看的表单，未应用样式。
 
-## 为 fieldset 和 label 添加样式
+## 为 `fieldset` 和 `label` 添加样式
 
 我们为这个表单添加的第一部分 CSS 是针对 `fieldset` 和 `label` 元素的——只是为每一行之间添加一些间距。
 
@@ -1936,7 +1897,7 @@ body {
 
 图 6.03：`fieldset` 和 `label` 元素现在已应用样式。
 
-现在，虽然我们在 `fieldset` 行之间有了漂亮的 10 像素间距，但由于灰色框内的内边距，我们*不需要*最后一行（包含提交按钮）下方的 10 像素外边距。
+现在，虽然我们在 `fieldset` 行之间有了漂亮的 10 像素间距，但由于灰色框内的内边距，我们 *不需要* 最后一行（包含提交按钮）下方的 10 像素外边距。
 
 这是一种常见模式：你有一系列元素，每个元素都应用了相同的样式，但你希望对该系列中的最后一个元素进行稍微不同的样式处理。
 
@@ -1947,7 +1908,7 @@ body {
   margin: 0 0 10px 0;
   }
 
-  #thing-alerts fieldset label {
+#thing-alerts fieldset label {
   display: block;
   font-weight: bold;
   line-height: 1.4;
@@ -1956,8 +1917,8 @@ body {
   text-shadow: 0 1px 1px #fff;
   }
 
-  #thing-alerts fieldset:last-child {
-    margin: 0;
+#thing-alerts fieldset:last-child {
+  margin: 0;
   }
 ```
 
@@ -1985,17 +1946,17 @@ body {
 #thing-alerts input
 ```
 
-我们将样式化表单中的所有输入框（文本*和*按钮），但如果将其修改为：
+我们将样式化表单中的所有输入框（文本 *和* 按钮），但如果将其修改为：
 
 ```
- #thing-alerts input[type="text"] 
+#thing-alerts input[type="text"]
 ```
 
 我们将仅针对文本输入框。
 
 再次强调，在样式表中使用强大的选择器可以避免在标记中添加额外的类来分别样式化不同的表单元素。这很优雅。
 
-请记住，虽然属性选择器在 IE7 及以上版本中受支持，但在 IE6 中*不受支持*，但这没关系，因为我们只是修改这些表单元素的非关键外观。IE6 会忽略这些规则，在这种情况下完全可以接受。
+请记住，虽然属性选择器在 IE7 及以上版本中受支持，但在 IE6 中 *不受支持*，但这没关系，因为我们只是修改这些表单元素的非关键外观。IE6 会忽略这些规则，在这种情况下完全可以接受。
 
 以下声明应用了特定的 `width`、`padding` 和 `font-size`，关闭了默认边框，添加了 `background-color`，并使用我们信赖的 `border-radius` 堆栈为输入框添加了圆角。
 
@@ -2028,11 +1989,11 @@ CSS 渐变目前仅在 Safari 4+、Chrome 2+ 和 Firefox 3.6+ 中受支持，但
 
 CSS 渐变可以应用于样式表中任何可以声明图像的地方。换句话说，`background-image`、`list-style-image`、`border-image` 以及生成内容。
 
-
-
 声明 CSS 渐变的语法在 Safari 和 Firefox 的实现中略有不同。不过，（非常初步的）规范更倾向于 Firefox 的处理方式。这里有一个很好的例子说明为什么厂商前缀是这个过程的重要组成部分：这两种不同的语法可以为每个浏览器正确声明，而官方规范仍在制定中。
 
 老实说，这两种语法都有点令人困惑。创建渐变时可以有大量的控制，包括涉及的颜色、颜色停止点、渐变方向等。
+
+
 
 例如，以下是在 WebKit 和基于 Mozilla 的浏览器中为元素背景创建简单线性渐变的语法：
 
@@ -2201,22 +2162,19 @@ Jonathan Snook 有一篇关于处理渐变语法的有用文章，可能也会�
   }
 ```
 
-
-
-
-我们将使用 `RGBA` 将纯白色调暗至 85%，让灰色渐变微微透出。同时指定阴影正好位于文本下方一个像素，并将阴影模糊一个像素。
+我们将使用`RGBA`将纯白色调暗至 85%，让灰色渐变微微透出。同时指定阴影正好位于文本下方一个像素，并将阴影模糊一个像素。
 
 图 6.13 展示了细微阴影的特写，以及按钮目前的进展。
 
 ![提交按钮上白色 text-shadow 的特写，以及常规尺寸视图。](img/6-13.jpg)
 
-图 6.13：我们添加的细微 `text-shadow` 的放大视图，用于营造浮雕效果。
+图 6.13：我们添加的细微`text-shadow`的放大视图，用于营造浮雕效果。
 
 ### 为按钮添加 box-shadow
 
-我们要为这个时尚小按钮添加的最后一项 CSS3 属性是非常轻微的 `box-shadow`，以增加一丝立体感。这有助于按钮在灰色背景上显得更协调。
+我们要为这个时尚小按钮添加的最后一项 CSS3 属性是非常轻微的`box-shadow`，以增加一丝立体感。这有助于按钮在灰色背景上显得更协调。
 
-以下是一组代码，为当前支持以及未来支持的浏览器添加 `box-shadow`。
+以下是一组代码，为当前支持以及未来支持的浏览器添加`box-shadow`。
 
 ```
 #thing-alerts input[type="submit"] {
@@ -2240,11 +2198,11 @@ Jonathan Snook 有一篇关于处理渐变语法的有用文章，可能也会�
   } 
 ```
 
-图 6.14 展示了在 Safari 中为按钮添加 `box-shadow` 后的效果，该阴影距离顶部 `1px`，模糊 `2px`。颜色方面，我们使用 `RGBA` 以 50% 透明度应用黑色，使阴影具有一定透明度，让背景透出。
+图 6.14 展示了在 Safari 中为按钮添加`box-shadow`后的效果，该阴影距离顶部`1px`，模糊`2px`。颜色方面，我们使用`RGBA`以 50% 透明度应用黑色，使阴影具有一定透明度，让背景透出。
 
 ![提交按钮下方灰色阴影的特写，以及常规尺寸视图。](img/6-14.jpg)
 
-图 6.14：添加到按钮底部的微小 `box-shadow` 的放大视图，使其略微脱离背景。
+图 6.14：添加到按钮底部的微小`box-shadow`的放大视图，使其略微脱离背景。
 
 这不仅完成了我们的按钮，也完成了整个表单。通过使用几行额外的 CSS3，我们将一个原本默认外观的表单塑造成更具风格、与页面其他设计更协调的样子。我们选择使用 CSS3 而非图片，因为对于尚不支持这些高级规则的浏览器来说，这样做完全可行且无害。让我们来确认一下。
 
@@ -2258,9 +2216,9 @@ Jonathan Snook 有一篇关于处理渐变语法的有用文章，可能也会�
 
 ## 使用 box-shadow 创建焦点状态
 
-我们可以更进一步丰富表单交互，在输入框的焦点状态上使用 `box-shadow` 属性。这快速、简单，并且像前面提到的 CSS3 一样，优雅降级。
+我们可以更进一步丰富表单交互，在输入框的焦点状态上使用`box-shadow`属性。这快速、简单，并且像前面提到的 CSS3 一样，优雅降级。
 
-只需创建一个新声明，并在文本输入框的属性选择器上添加 `:focus` 伪类即可。
+只需创建一个新声明，并在文本输入框的属性选择器上添加`:focus`伪类即可。
 
 （顺便说一句，如果你需要搭讪的话，前面这段话绝对是个好梗。以后谢我吧。）
 
@@ -2272,17 +2230,17 @@ Jonathan Snook 有一篇关于处理渐变语法的有用文章，可能也会�
   }
 ```
 
-这个声明包含一组 `box-shadow`，当文本输入框获得焦点时，会应用 50% 透明度的亮蓝色阴影。我们在图 6.16 中看到了结果，它模仿了操作系统默认的焦点输入框行为，但通过自定义，我们对外观有了更多控制。
+这个声明包含一组`box-shadow`，当文本输入框获得焦点时，会应用 50% 透明度的亮蓝色阴影。我们在图 6.16 中看到了结果，它模仿了操作系统默认的焦点输入框行为，但通过自定义，我们对外观有了更多控制。
 
 ![文本输入框获得焦点时出现蓝色光晕。](img/6-16.jpg)
 
-图 6.16：对文本输入框的 `:focus` 状态应用了 `box-shadow`。
+图 6.16：对文本输入框的`:focus`状态应用了`box-shadow`。
 
-那些不支持 `box-shadow` 的浏览器呢？它们只是在获得焦点时显示普通输入框。我敢打赌你能猜到我要说什么……没错，这完全没问题。
+那些不支持`box-shadow`的浏览器呢？它们只是在获得焦点时显示普通输入框。我敢打赌你能猜到我要说什么……没错，这完全没问题。
 
 ## 添加 CSS 动画以丰富表单交互
 
-在焦点处理的 `box-shadow` 基础上更进一步，如果阴影也*动画化*，比如像等待你输入一样脉动，会怎样？让我们短暂进入 CSS 动画的世界，在基于 WebKit 的浏览器中实现这一效果。
+在焦点处理的`box-shadow`基础上更进一步，如果阴影也*动画化*，比如像等待你输入一样脉动，会怎样？让我们短暂进入 CSS 动画的世界，在基于 WebKit 的浏览器中实现这一效果。
 
 我在这里说基于 WebKit 的浏览器，是因为 CSS 动画（如 CSS 变换和过渡）最初由 WebKit 团队开发，随后被纳入 W3C 的提议标准（[`bkaprt.com/css3/16/`](http://bkaprt.com/css3/16/)）。^(19) 然而，与变换和过渡不同，动画尚未被其他浏览器实现。它们目前能在 Safari 和 Chrome 中运行，但 Firefox 或 Opera 不支持，IE9 也没有计划支持。因此，我不会过多关注动画（至少目前如此）。尽管它们*确实*强大且令人兴奋，但它们的普及程度能否像变换和过渡那样全面且迅速，仍有待观察——而变换和过渡已经获得了相当不错（且不断增长）的支持。
 
@@ -2292,11 +2250,11 @@ Jonathan Snook 有一篇关于处理渐变语法的有用文章，可能也会�
 
 构建 CSS 动画的第一步是创建关键帧声明。熟悉编程的人可能会将其类比为构建一个函数，可以在样式表的其他地方调用和引用。
 
-`keyframe` 是一种专门的 CSS at 规则。它类似于普通的 CSS 声明，但允许你使用标识符为其命名，并通过一系列百分比值（或关键字“to”和“from”）指定 CSS 规则以及随时间的变化。
+`keyframe`是一种专门的 CSS at 规则。它类似于普通的 CSS 声明，但允许你使用标识符为其命名，并通过一系列百分比值（或关键字“to”和“from”）指定 CSS 规则以及随时间的变化。
 
-直接看一个实际例子会更清楚，所以让我们创建一个简单的动画，使之前添加到焦点输入框的 `box-shadow` 淡入淡出。
+直接看一个实际例子会更清楚，所以让我们创建一个简单的动画，使之前添加到焦点输入框的`box-shadow`淡入淡出。
 
-我们将它命名为“pulse”，并设置三个略有不同的规则：一个在起点（0%），一个在中点（50%），一个在终点（100%）。每个百分比规则只是调整蓝色 `box-shadow` 的不透明度，从 20% 上升到 90%，再回落到 20%。这种变化随时间过渡并循环，会在基于 WebKit 的浏览器中产生输入框获得焦点时脉动的效果。
+我们将它命名为“pulse”，并设置三个略有不同的规则：一个在起点（0%），一个在中点（50%），一个在终点（100%）。每个百分比规则只是调整蓝色`box-shadow`的不透明度，从 20% 上升到 90%，再回落到 20%。这种变化随时间过渡并循环，会在基于 WebKit 的浏览器中产生输入框获得焦点时脉动的效果。
 
 ```
 @-webkit-keyframes pulse {
@@ -2312,16 +2270,15 @@ Jonathan Snook 有一篇关于处理渐变语法的有用文章，可能也会�
 }
 ```
 
-这里我只为 WebKit 指定规则，使用了 `-webkit-` 厂商前缀。在本书前面，我们一直注意为所有当前支持这些属性的厂商编写重复规则，并添加无前缀版本以备将来兼容。但在这种情况下，CSS 动画除了 Safari 和 Chrome 外仍不被支持，且其他厂商对动画是否应属于 CSS 持保留态度，因此我选择只编写 `-webkit-` 规则。
+这里我只为 WebKit 指定规则，使用了`-webkit-`厂商前缀。在本书前面，我们一直注意为所有当前支持这些属性的厂商编写重复规则，并添加无前缀版本以备将来兼容。但在这种情况下，CSS 动画除了 Safari 和 Chrome 外仍不被支持，且其他厂商对动画是否应属于 CSS 持保留态度，因此我选择只编写`-webkit-`规则。
 
 ### 引用关键帧
 
-CSS 动画的第二部分是通过 `animation` 属性按名称引用 `keyframe`。
+CSS 动画的第二部分是通过`animation`属性按名称引用`keyframe`。
 
 
 
-
-在这种情况下，我们希望当用户聚焦表单中的文本输入框时，`box-shadow` 的脉冲效果能够运行。这里我们通过名称调用 `keyframe`，设置动画运行的持续时间，使其无限循环，最后设置缓入缓出的过渡时间函数。你可以看到 `animation` 的语法与 `transition` 类似。
+在这种情况下，我们希望当用户聚焦表单中的文本输入框时，`box-shadow`的脉冲效果能够运行。这里我们通过名称调用`keyframe`，设置动画运行的持续时间，使其无限循环，最后设置缓入缓出的过渡时间函数。你可以看到`animation`的语法与`transition`类似。
 
 ```
 #thing-alerts input[type="text"]:focus {
@@ -2329,15 +2286,15 @@ CSS 动画的第二部分是通过 `animation` 属性按名称引用 `keyframe`�
 }
 ```
 
-这样，我们就确保了 `pulse` 动画仅在用户聚焦表单中的文本输入框时运行（仅限 Safari 和 Chrome）。
+这样，我们就确保了`pulse`动画仅在用户聚焦表单中的文本输入框时运行（仅限 Safari 和 Chrome）。
 
-效果相当惊艳。图 6.17 展示了发生的情况：`box-shadow` 缓慢地淡入淡出，仿佛输入框在等待用户交互。
+效果相当惊艳。图 6.17 展示了发生的情况：`box-shadow`缓慢地淡入淡出，仿佛输入框在等待用户交互。
 
 ![输入框周围的蓝色光晕淡入淡出的动画的几个步骤。](img/6-17.jpg)
 
-图 6.17：我们添加到文本输入框 `:focus` 状态的脉冲动画。
+图 6.17：我们添加到文本输入框`:focus`状态的脉冲动画。
 
-我使用了简写属性 `animation` 来在一个规则中设置调用动画的所有值。或者，你也可以用各自的属性分别指定每个值，如下所示：
+我使用了简写属性`animation`来在一个规则中设置调用动画的所有值。或者，你也可以用各自的属性分别指定每个值，如下所示：
 
 ```
 #thing-alerts input[type="text"]:focus {
@@ -2350,9 +2307,9 @@ CSS 动画的第二部分是通过 `animation` 属性按名称引用 `keyframe`�
 
 ### 在按钮悬停时复用动画
 
-创建关键帧的一个好处是，它们可以在样式表中的多个声明中重复使用。例如，我们可以将相同的 `pulse` 动画应用于提交按钮的悬停或聚焦状态，添加一种类似 Wii 的蓝色脉冲光晕。
+创建关键帧的一个好处是，它们可以在样式表中的多个声明中重复使用。例如，我们可以将相同的`pulse`动画应用于提交按钮的悬停或聚焦状态，添加一种类似 Wii 的蓝色脉冲光晕。
 
-只需将相同的 `animation` 规则添加到提交按钮的新 `:hover`/`:focus` 声明中即可，就像我们对文本输入框所做的那样：
+只需将相同的`animation`规则添加到提交按钮的新`:hover`/`:focus`声明中即可，就像我们对文本输入框所做的那样：
 
 ```
 #thing-alerts input[type="submit"]:hover,
@@ -2361,7 +2318,7 @@ CSS 动画的第二部分是通过 `animation` 属性按名称引用 `keyframe`�
 }
 ```
 
-我们之前为文本输入框创建的 `pulse` 动画会淡入淡出蓝色 `box-shadow`——但在这里我们也可以将其用于按钮，效果同样出色（图 6.18），在悬停或聚焦时柔和地发光，仿佛在等待用户提交。
+我们之前为文本输入框创建的`pulse`动画会淡入淡出蓝色`box-shadow`——但在这里我们也可以将其用于按钮，效果同样出色（图 6.18），在悬停或聚焦时柔和地发光，仿佛在等待用户提交。
 
 ![提交按钮周围的蓝色光晕淡入淡出的动画的几个步骤。](img/6-18.jpg)
 
@@ -2419,9 +2376,6 @@ CSS3 的真正承诺在于，它使我们能够更高效地解决常见的设计
 
 但趋势是积极的。几乎在 WebKit、Mozilla 和 Opera 的每一个新版本中，都在添加新的属性支持。这种通过厂商前缀的快速采用正在推动创新。关注新特性，并观察这些前瞻性浏览器在实现上的临界点，可以帮助你了解实际应用。
 
-
-
-
 我们即将迎来令人兴奋的 IE9 Beta 版。是的，我确实这么说了。我们看到 Internet Explorer 正在加入越来越多的 CSS3 支持，这意味着一切都在向好的方向发展。
 
 最终，我们将能够依赖 CSS3 不仅用于增强体验，还能用于那些关键的视觉概念（布局就是一个主要例子）。这条路看似走得缓慢，但这是事物正确发展的必要过程。在这条缓慢的道路上，请毫不犹豫地抓住并运用当前可用的东西。你、你的客户以及网络用户都将从中受益。
@@ -2449,44 +2403,62 @@ CSS3.info 长期以来一直在汇总新闻、示例和进展：[`www.CSS3.info`
 ## 索引
 
 -chrome 11
+
 *:hover 80
+
 -khtml 11
+
 -moz 11, 22–25, 42, 44, 51, 56–61, 65–68, 72–77, 80, 98, 100, 101, 104–109
+
 -ms 11, 49–51
+
 -o 11, 22–25, 44, 51, 56–61, 65, 66, 68, 72, 73, 75, 76, 78, 80, 98, 101, 104–106, 108
+
 -webkit 10, 11, 19–25, 42, 44, 51, 56–58, 60, 61, 65, 66, 68, 72–74, 76, 77, 80, 98, 100, 101, 104–109, 112–114
 
 ### A
 
 active 17, 23, 25, 44, 47, 51
+
 Aldrin, Buzz 29
+
 A List Apart 1, 13
+
 all 24–25, 44–45, 73
+
 Allsopp, John 100–101, 105
+
 animation 4, 5, 15–16, 20, 26, 64, 84, 93, 110–115
+
 Annett, Paul 85
+
 Apollo 11 29
+
 Armstrong, Neil 29
+
 Ateş, Faruk 33–35
+
 attribute selector 97–98, 109
 
 ### B
 
 Backgrounds and Borders Module 82
+
 border-radius 6–7, 10–11, 36, 41–44, 72, 83, 98, 101, 104–106, 108, 120
+
 box-shadow 7–8, 58, 60–61, 83, 107–114
+
 browser viewport 5
 
 ### C
 
 Candidate Recommendation 3, 119
+
 Chrome 6–9, 11, 18, 22, 35, 39, 40, 42, 43, 48, 53, 56, 58, 62, 80, 83, 89, 90, 99, 105, 111, 112, 113
+
 Clearleft 84
+
 color model 8
-
-
-
-
 
 CSS3 规范 2–4, 6, 9, 10, 12, 14, 16–17, 45, 99–100, 119
 
@@ -2606,9 +2578,6 @@ Panic Software 63
 
 PNG 47–48, 83, 85–88
 
-
-
-
 渐进增强 12
 
 原型 26
@@ -2627,7 +2596,9 @@ Safari 2, 6–9, 11, 16, 17, 18, 22, 35, 39, 40, 42, 43, 48, 53, 56, 57, 58, 62,
 
 缩放 54–62, 65–70, 74–76
 
-script.aculo.us 26
+
+
+`script.aculo.us` 26
 
 硅盘 30–31
 

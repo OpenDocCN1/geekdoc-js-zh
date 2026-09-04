@@ -1,24 +1,9 @@
+
 # Jbuilder 8.0 Jfc 和 Swing 编程
-
-
-
-
 
 ![](img/6ac84fdff518ea769f07b6e3d911391e_0_0.png)
 
-
-
-
-
-
-
-
-
-
-
-
-由互联网档案馆于2018年数字化，
-资金来自 Kahle/Austin 基金会
+由互联网档案馆于2018年数字化，资金来自 Kahle/Austin 基金会
 
 https://archive.org/details/jbuilder80jfcswi0000east
 
@@ -50,8 +35,6 @@ Java 提供了一套强大的类，可用于为用户创建图形用户界面（
 
 本书的附录旨在为您提供一个快速参考，以获取可用于补充本书的额外材料。附录 A 列出了其他资源，如网站和书籍。附录 B 包含术语表和定义。附录 C 提供了复习题的答案。附录 D 和 E 是简短的教程，仅为那些可能在某些必需知识领域有欠缺的读者提供。附录 D 是数据库基础知识入门。这是学习第 11 章内容所必需的知识。附录 E 是一个简短的 HTML 入门，以便您可以学习第 12 章涵盖的小程序材料。
 
-
-
 # 写作风格
 
 我尽量以对话的语气写作，就像在课堂上与学生交流一样。我真心希望你能接受这种方式。另外，我习惯将示例的完整代码放在正文中。我个人非常讨厌阅读计算机书籍时，只看到零散的代码片段。因此，对于任何示例，我都会在正文中提供完整的代码。这样你就能在上下文中看到我所讲解的部分。我还喜欢加入大量图片。这样你就能非常直观地看到我描述的内容。我倾向于遵循那句老话：一图胜千言……只不过我更喜欢同时给你图片*和*千言万语！有些读者可能觉得这样为代码示例留出了太多空间。如果你这么觉得，可以自由选择跳过不读那些代码示例。
@@ -64,9 +47,7 @@ www.wordware.com/files/jbuilder
 
 这些文件包含书中讨论的所有示例，并按章节名称组织到不同的文件夹中。只需将文件复制到硬盘即可使用它们。
 
-### 第 1 章
-
-## JFC 和 Swing 简介
+# 第 1 章 JFC 和 Swing 简介
 
 本章涵盖以下内容：
 
@@ -77,11 +58,11 @@ www.wordware.com/files/jbuilder
 - 关键的 JFC 类
 - 编写 JFC 应用程序
 
-### 简介
+## 简介
 
 Java 是一种非常强大且灵活的开发工具。其众多优势之一是平台独立性。*平台独立性*意味着你编写的代码不依赖于你编写代码的操作系统。这意味着一旦你在某个特定操作系统上开发了应用程序，你可以将该可执行文件直接带到任何你想要的操作系统上运行。你甚至不需要重新编译程序。平台独立性对你，软件开发者来说，是一个巨大的优势。然而，和任何技术一样，这种独立性本身也有一些问题。任何多平台工具可能出现的问题之一，就是确保图形界面在不同操作系统上显示方式相同。过去，Java 程序员使用 AWT（抽象窗口工具包）来开发图形组件。这个工具过去是，现在仍然是一个非常可靠的图形用户界面开发工具。它非常易于使用，并且拥有开发界面可能需要的所有基本元素。尽管有许多优点，抽象窗口工具包确实存在一些问题。一个问题是它提供的类集不完整。自从 AWT 首次引入以来，用户已经习惯了许多 AWT 未提供的新图形组件。也许最重要的问题是图形在不同操作系统上的显示方式并不总是一致。这是导致 Swing 开发的一个因素。Java 基础类（JFC）和 Swing 扩展了原始的抽象窗口工具包，并提供了一套全面的图形用户界面类库。其中许多类只是 AWT 类的升级改进版本，但有几类是全新的。
 
-### JFC/Swing 特性
+## JFC/Swing 特性
 
 Java 开发工具包（JDK）可以从 Sun Microsystems 的 Java 网站免费下载。如果你使用的是较新版本的 JBuilder（5.0 或更高版本），你已经拥有了最新版本的 JDK，其中包含了新的 JFC 类。你可以在本书的附录 A 中找到该网址。截至本书出版时，最新版本的 JDK 是 1.3 版。1.4 版目前处于测试阶段。当你下载最新版本的 Java 开发工具包时，你就可以使用 JFC 和 Swing（当然，早期版本的 JDK 没有此功能）。JFC 包含许多新项目。你在下面看到的列表总结了最重要的特性：
 
@@ -99,7 +80,7 @@ Swing 允许你创建具有一致性的图形界面，无论它们运行在什�
 
 回想一下我在本节开头提供的列表。该列表列出了 JFC/Swing 的所有主要特性，但没有解释。以下是这些特性的简要描述。
 
-## Java 2D API
+### Java 2D API
 
 老实说：你可能希望在你的应用程序或小程序中拥有一些酷炫的图形。事实上，你甚至可能需要某些特定的形状和图形。Java 2D 应用程序编程接口（API）正是为此目的而设计的。这个 API 便于创建各种二维图像和图形。你将在本书后面接触到这个 API 的基础知识。
 
@@ -111,95 +92,91 @@ Swing 允许你创建具有一致性的图形界面，无论它们运行在什�
 
 术语*无障碍性*简单来说是指让你的应用程序可供残障人士使用。如果你的应用程序没有做到无障碍，你就放弃了一个巨大的市场份额，这通常不是个好主意。幸运的是，有一整套 API 可以帮助你使应用程序或小程序更具无障碍性。无障碍性 API 为你提供了一个接口，便于辅助技术与 JFC 或 AWT 组件进行通信。请注意，此 API 确实支持 AWT 组件。这意味着它向后兼容。到目前为止，Sun Microsystems 在这方面做得非常好。他们推出的任何新技术都是向后兼容的。人们使用的辅助技术包括屏幕阅读器、屏幕放大器、语音识别、文本转语音引擎等。
 
-内置于 Java 基础类中的无障碍性 API 相当广泛，使得软件供应商能够为残障用户提供无障碍性。这意味着你的程序现在可以被更广泛地使用。以前可能被阻止使用你软件的那一部分人群现在可以
-
-访问。虽然我并不自称是业务流程专家，但我想您会同意，为软件拥有更多客户总是一件好事。
+内置于 Java 基础类中的无障碍性 API 相当广泛，使得软件供应商能够为残障用户提供无障碍性。这意味着你的程序现在可以被更广泛地使用。以前可能被阻止使用你软件的那一部分人群现在可以访问。虽然我并不自称是业务流程专家，但我想您会同意，为软件拥有更多客户总是一件好事。
 
 ### 拖放
 
-这部分实际上非常有趣。在JFC和Swing中，对拖放的支持有了显著的增强。*拖放*指的是点击一个图形组件并将其拖动到另一个组件，然后将其放置在那里的过程。与AWT相比，拖放功能有了显著的改进。
+这部分实际上非常有趣。在 JFC 和 Swing 中，对拖放的支持有了显著的增强。*拖放*指的是点击一个图形组件并将其拖动到另一个组件，然后将其放置在那里的过程。与 AWT 相比，拖放功能有了显著的改进。
 
-### Java基础类（JFC）
+### Java 基础类（JFC）
 
-我之前提到过，Java基础类是添加到Java 2中的一组类。JFC是一个广泛的类集合，程序员可以使用它来构建应用程序。Java基础类仅仅是Java合乎逻辑的下一步发展，即为您提供处理各种任务的类。简而言之，JFC允许您更专注于特定的应用程序问题，因为许多常见的编程问题都由各种JFC类处理。这些类中的每一个都有明确的定义。Java基础类可分为四大类：
+我之前提到过，Java 基础类是添加到 Java 2 中的一组类。JFC 是一个广泛的类集合，程序员可以使用它来构建应用程序。Java 基础类仅仅是 Java 合乎逻辑的下一步发展，即为您提供处理各种任务的类。简而言之，JFC 允许您更专注于特定的应用程序问题，因为许多常见的编程问题都由各种 JFC 类处理。这些类中的每一个都有明确的定义。Java 基础类可分为四大类：
 
 - 用户界面组件
 - Java 2D
 - 辅助功能
 - 拖放支持
 
-在本书中，我们将探讨所有这四类。每一类都为Java程序员提供不同类型的功能。然而，我们目前（以及接下来几章）主要关注的是用户界面组件。还应该注意的是，Swing组件构成了JFC的大部分内容，也涵盖了本书的大部分章节。这些组件是AWT组件的重大改进。原因包括：
+在本书中，我们将探讨所有这四类。每一类都为 Java 程序员提供不同类型的功能。然而，我们目前（以及接下来几章）主要关注的是用户界面组件。还应该注意的是，Swing 组件构成了 JFC 的大部分内容，也涵盖了本书的大部分章节。这些组件是 AWT 组件的重大改进。原因包括：
 
-- **轻量级：** JFC组件比AWT组件使用更少的资源。它们通常是更小的类，使用更少的内存。
-- **功能增强：** 有许多组件和功能是AWT所没有的，现在通过Swing可用。
-- **外观一致：** AWT组件通常在不同平台上外观不一致。Swing组件则具有相同的外观，无论它们运行在什么操作系统上。
+- **轻量级：** JFC 组件比 AWT 组件使用更少的资源。它们通常是更小的类，使用更少的内存。
+- **功能增强：** 有许多组件和功能是 AWT 所没有的，现在通过 Swing 可用。
+- **外观一致：** AWT 组件通常在不同平台上外观不一致。Swing 组件则具有相同的外观，无论它们运行在什么操作系统上。
 
-与Java中的所有事物一样，Java基础类存在于一个对象层次结构中。所有Java类最终都继承自`java.lang.Object`，因此继承了该类的所有方法。所有图形组件（JFC和AWT）都继承自`java.awt.Component`，而后者又直接继承自`java.lang.Object`。了解任何Java类的继承层次结构都很重要，因为您可以访问从层次结构中更高层对象继承的所有公共方法和属性。图1.1总结了Swing组件的继承层次结构。
+与 Java 中的所有事物一样，Java 基础类存在于一个对象层次结构中。所有 Java 类最终都继承自 `java.lang.Object`，因此继承了该类的所有方法。所有图形组件（JFC 和 AWT）都继承自 `java.awt.Component`，而后者又直接继承自 `java.lang.Object`。了解任何 Java 类的继承层次结构都很重要，因为您可以访问从层次结构中更高层对象继承的所有公共方法和属性。图 1.1 总结了 Swing 组件的继承层次结构。
 
 ![](img/6ac84fdff518ea769f07b6e3d911391e_21_0.png)
 
 ### Swing
 
-如我之前所述，Java基础类的大部分内容都与Swing可视化组件相关。这些轻量级组件极大地扩展了Java程序员可用的可能性。我需要解决的第一个问题是：“轻量级”是什么意思？轻量级用户界面类是用100%纯Java编写的广泛用户界面组件集合。它们提供从简单的文本标签和按钮到选项卡式笔记本、颜色拾取器和电子表格样式表格等各种简单和复杂的用户界面组件。它们还提供了以前基本AWT控件所不具备的功能级别。因为它们是100%用Java编写的，轻量级用户界面控件无论操作系统如何，行为都相同。使用“轻量级”一词是因为JFC类自行完成所有渲染，除了基本窗口外，不依赖操作系统的内置组件。
+如我之前所述，Java 基础类的大部分内容都与 Swing 可视化组件相关。这些轻量级组件极大地扩展了 Java 程序员可用的可能性。我需要解决的第一个问题是：“轻量级”是什么意思？轻量级用户界面类是用 100% 纯 Java 编写的广泛用户界面组件集合。它们提供从简单的文本标签和按钮到选项卡式笔记本、颜色拾取器和电子表格样式表格等各种简单和复杂的用户界面组件。它们还提供了以前基本 AWT 控件所不具备的功能级别。因为它们是 100% 用 Java 编写的，轻量级用户界面控件无论操作系统如何，行为都相同。使用“轻量级”一词是因为 JFC 类自行完成所有渲染，除了基本窗口外，不依赖操作系统的内置组件。
 
-Swing组件的一个重要特征是它们的外观是可编程的。JFC类附带了多种不同的外观感觉集，可以通过编程进行切换。您可以选择“Windows”外观感觉或其他方案。
+Swing 组件的一个重要特征是它们的外观是可编程的。JFC 类附带了多种不同的外观感觉集，可以通过编程进行切换。您可以选择“Windows”外观感觉或其他方案。
 
-#### 一些关键的JFC类
+#### 一些关键的 JFC 类
 
-JFC有大量类。我尝试首先介绍最常用的类，然后介绍其他类。下表列出了一些关键的JFC用户界面类的名称及其提供的功能。您可能会注意到，其中许多类只是旧版AWT类的升级。
+JFC 有大量类。我尝试首先介绍最常用的类，然后介绍其他类。下表列出了一些关键的 JFC 用户界面类的名称及其提供的功能。您可能会注意到，其中许多类只是旧版 AWT 类的升级。
 
-**表1.1 关键的Swing类**
+**表 1.1 关键的 Swing 类**
 
 | 类名 | 用途 |
 | :--- | :--- |
-| JBorderFactory | 此类用于创建放置在组件周围的边框。 |
-| JCheckBox | 此组件在屏幕上放置一个复选框。复选框用于多选。 |
-| JCheckBoxMenuItem | 此组件创建带有复选标记的菜单项。 |
-| JColorChooser | 此组件允许您显示一个色轮，用户可以点击它来选择给定的颜色。 |
-| JComboBox | 此组件创建一个可编辑的下拉列表。 |
-| JComponent | 此类是许多其他JFC组件的父类。 |
-| JFileChooser | 文件选择对话框。 |
-| JFrame | 此类允许您创建框架窗口。 |
-| ImageIcon | 此类允许从存储中加载图像并在组件中使用。 |
-| JLabel | 此类允许您创建标签。 |
-| JList | 此类允许您创建列表。 |
-| JMenu | 此类允许您创建菜单。 |
-| JMenuBar | 此类允许您创建可以添加到框架的菜单栏。 |
-| JMenuItem | 此类允许您创建可以添加到菜单的菜单项。 |
-| JOptionPane | 允许显示几个标准对话框。 |
-| JPanel | 此类允许您创建和操作面板。 |
-| JPasswordField | 此类允许您创建一个非常适合输入密码的输入字段。 |
-| JPopupMenu | 此类允许您创建弹出菜单。 |
-| JProgressBar | 此类允许您创建进度指示条。 |
-| JRadioButton | 此类允许您创建单选按钮。 |
-| JRadioButtonMenuItem | 此类允许您在菜单中创建单选按钮。 |
-| JScrollBar | 此类允许您创建滚动条。 |
-| JScrollPane | 此类允许您创建滚动窗格。 |
-| JSeparator | 此类允许您创建菜单分隔符。 |
-| JSlider | 此类允许您创建滑块。 |
-| JSplitPane | 此类允许您创建可以垂直或水平分割的窗口窗格。 |
-| JTabbedPane | 此类允许您创建选项卡式笔记本风格的面板。 |
-| JTable | 此类允许在二维（电子表格样式）表格中显示和操作数据。 |
-| JTextArea | 此类允许您创建多行、可编辑的文本区域。 |
-| JTextField | 此类允许您创建单行文本输入字段。 |
-| JToggleButton | 此类允许您创建一个具有两种状态的按钮。 |
-| JToolBar | 此类允许您创建一个可以由图像以及常规按钮组成的工具栏，并且可以“撕下”并拖动到桌面作为一个单独的窗口。 |
-| JToolTip | 此类允许您创建一个弹出提示窗口，当鼠标移动到组件上方时显示。 |
-| JTree | 此类允许您创建数据的树视图。 |
+| `JBorderFactory` | 此类用于创建放置在组件周围的边框。 |
+| `JCheckBox` | 此组件在屏幕上放置一个复选框。复选框用于多选。 |
+| `JCheckBoxMenuItem` | 此组件创建带有复选标记的菜单项。 |
+| `JColorChooser` | 此组件允许您显示一个色轮，用户可以点击它来选择给定的颜色。 |
+| `JComboBox` | 此组件创建一个可编辑的下拉列表。 |
+| `JComponent` | 此类是许多其他 JFC 组件的父类。 |
+| `JFileChooser` | 文件选择对话框。 |
+| `JFrame` | 此类允许您创建框架窗口。 |
+| `ImageIcon` | 此类允许从存储中加载图像并在组件中使用。 |
+| `JLabel` | 此类允许您创建标签。 |
+| `JList` | 此类允许您创建列表。 |
+| `JMenu` | 此类允许您创建菜单。 |
+| `JMenuBar` | 此类允许您创建可以添加到框架的菜单栏。 |
+| `JMenuItem` | 此类允许您创建可以添加到菜单的菜单项。 |
+| `JOptionPane` | 允许显示几个标准对话框。 |
+| `JPanel` | 此类允许您创建和操作面板。 |
+| `JPasswordField` | 此类允许您创建一个非常适合输入密码的输入字段。 |
+| `JPopupMenu` | 此类允许您创建弹出菜单。 |
+| `JProgressBar` | 此类允许您创建进度指示条。 |
+| `JRadioButton` | 此类允许您创建单选按钮。 |
+| `JRadioButtonMenuItem` | 此类允许您在菜单中创建单选按钮。 |
+| `JScrollBar` | 此类允许您创建滚动条。 |
+| `JScrollPane` | 此类允许您创建滚动窗格。 |
+| `JSeparator` | 此类允许您创建菜单分隔符。 |
+| `JSlider` | 此类允许您创建滑块。 |
+| `JSplitPane` | 此类允许您创建可以垂直或水平分割的窗口窗格。 |
+| `JTabbedPane` | 此类允许您创建选项卡式笔记本风格的面板。 |
+| `JTable` | 此类允许在二维（电子表格样式）表格中显示和操作数据。 |
+| `JTextArea` | 此类允许您创建多行、可编辑的文本区域。 |
+| `JTextField` | 此类允许您创建单行文本输入字段。 |
+| `JToggleButton` | 此类允许您创建一个具有两种状态的按钮。 |
+| `JToolBar` | 此类允许您创建一个可以由图像以及常规按钮组成的工具栏，并且可以“撕下”并拖动到桌面作为一个单独的窗口。 |
+| `JToolTip` | 此类允许您创建一个弹出提示窗口，当鼠标移动到组件上方时显示。 |
+| `JTree` | 此类允许您创建数据的树视图。 |
 
-一旦您在系统上安装了**JDK**（同样，要么是下载最新版本的**JDK**，要么是安装JBuilder），您的第一步将是熟悉JFC类。您可以运行几个演示程序，看看JFC能做什么，并验证您是否已正确安装所有内容，以及CLASSPATH变量是否设置正确。
+一旦您在系统上安装了 **JDK**（同样，要么是下载最新版本的 **JDK**，要么是安装 JBuilder），您的第一步将是熟悉 JFC 类。您可以运行几个演示程序，看看 JFC 能做什么，并验证您是否已正确安装所有内容，以及 `CLASSPATH` 变量是否设置正确。
 
-### SwingSet演示
+### SwingSet 演示
 
-Java SDK附带了SwingSet演示程序。这个程序在熟悉Swing时非常有用，它还可以用于验证您是否已成功安装了JFC类，并更新了CLASSPATH和其他环境变量。SwingSet程序位于\examples\swingset目录中。对于使用JBuilder的用户（鉴于本书书名，我希望是大多数用户！），您会在安装JBuilder的文件夹下找到您的JDK。它将位于名为\jdk1.3.1\demo\jfc\SwingSet2\的目录中。要在任何Windows系统上运行SwingSet演示程序，请从SwingSet目录执行`runnit`命令。这将执行文件`runnit.bat`并启动程序。对于Unix/Linux用户，也有一个`runnit`脚本文件。如果您使用的是JBuilder，有一个HTML文件会为您演示Swing类，如图1.2所示。
+Java SDK 附带了 SwingSet 演示程序。这个程序在熟悉 Swing 时非常有用，它还可以用于验证您是否已成功安装了 JFC 类，并更新了 `CLASSPATH` 和其他环境变量。SwingSet 程序位于 `\examples\swingset` 目录中。对于使用 JBuilder 的用户（鉴于本书书名，我希望是大多数用户！），您会在安装 JBuilder 的文件夹下找到您的 JDK。它将位于名为 `\jdk1.3.1\demo\jfc\SwingSet2\` 的目录中。要在任何 Windows 系统上运行 SwingSet 演示程序，请从 SwingSet 目录执行 `runnit` 命令。这将执行文件 `runnit.bat` 并启动程序。对于 Unix/Linux 用户，也有一个 `runnit` 脚本文件。如果您使用的是 JBuilder，有一个 HTML 文件会为您演示 Swing 类，如图 1.2 所示。
 
 ![](img/6ac84fdff518ea769f07b6e3d911391e_25_0.png)
 
-图1.2 SwingSet演示
+图 1.2 SwingSet 演示
 
-
-
-### SwingSet 程序很好地展示了所有主要的 JFC 用户界面类，并允许你亲手操作它们。它还让你能够尝试不同的外观和感觉选项。
+SwingSet 程序很好地展示了所有主要的 JFC 用户界面类，并允许你亲手操作它们。它还让你能够尝试不同的外观和感觉选项。
 
 ### 编写一个 JFC 应用程序
 
@@ -211,20 +188,18 @@ Java SDK附带了SwingSet演示程序。这个程序在熟悉Swing时非常有�
 
 ### 复习题
 
-- 1. 什么是 AWT？
-- 2. 什么是 Swing？
-- 3. 什么是 JFC？
-- 4. JFC 类的四大主要分组是什么？
-- 5. JFC 无障碍功能的目的是什么？
-- 6. 列举四个关键的 JFC 类。
-- 7. 使用 Swing 而非 AWT 的目的是什么？
-- 8. BorderFactory 类的目的是什么？
-- 9. Sun JDK 的哪个版本首次附带 JFC/Swing？
-- 10. 什么是可插拔的外观和感觉？
+1. 什么是 AWT？
+2. 什么是 Swing？
+3. 什么是 JFC？
+4. JFC 类的四大主要分组是什么？
+5. JFC 无障碍功能的目的是什么？
+6. 列举四个关键的 JFC 类。
+7. 使用 Swing 而非 AWT 的目的是什么？
+8. `BorderFactory` 类的目的是什么？
+9. Sun JDK 的哪个版本首次附带 JFC/Swing？
+10. 什么是可插拔的外观和感觉？
 
-### 第 2 章
-
-## 抽象窗口工具包
+# 第 2 章 抽象窗口工具包
 
 本章涵盖以下内容：
 
@@ -240,7 +215,7 @@ Java SDK附带了SwingSet演示程序。这个程序在熟悉Swing时非常有�
 
 你可能想知道，为什么一本关于 Java 基础类和 Swing 的书会包含一章关于抽象窗口工具包的内容。这有一个非常好的理由；嗯，实际上有两个原因。首先，在许多情况下，你仍然需要至少具备 AWT 的基础知识。例如，你可能被要求将一个应用程序或小程序从 AWT 转换为 Swing。在同一个应用程序中同时使用 AWT 和 Swing 也是可能的。事实上，将这两种技术结合使用并不少见。另一个花时间研究 AWT 的原因是，Swing 在某种程度上是 AWT 的扩展。首先牢固掌握 AWT 可能有助于你理解 Swing。如果你已经有使用抽象窗口工具包的经验，你可能希望简单浏览本章，甚至完全跳过它。
 
-### 什么是 AWT？
+## 什么是 AWT？
 
 AWT 代表抽象窗口工具包。AWT 实际上是 Java 基础类的一部分，但它是一个较旧的部分，最早在 Java 的早期版本中引入。本质上，AWT 是一组类，你可以用它们来创建应用程序和小程序中的图形组件。AWT 主要用于创建图形用户界面。用户界面是应用程序或小程序中用户可以直接交互的部分。用户界面可以有各种不同的形式。有些用户界面是简单的命令行界面，而另一些则是非常吸引人的图形界面。AWT 主要用于创建此类图形界面。
 
@@ -248,41 +223,39 @@ AWT 代表抽象窗口工具包。AWT 实际上是 Java 基础类的一部分，
 
 请记住，Java 的标志之一是其平台独立性。Java 的座右铭是“一次编写，到处运行”。因为 Java 编程语言是平台无关的，所以 AWT 也必须是平台无关的。当然，这就引出了 AWT 到底如何实现这一点的问题。在单个操作系统上正确呈现图形元素可能就是一项艰巨的任务。让一个组件在多个不同的操作系统上正确呈现则是一项更加困难的任务。AWT 通过让操作系统完成部分工作来处理这个问题。AWT 提供的用户界面元素是使用每个平台的本机图形工具包实现的，从而保留了每个平台的外观和感觉。这意味着在 Windows 机器上的 AWT 按钮看起来会像一个 Windows 按钮。同一个按钮显示在 Macintosh 上时，看起来会像一个 Mac 按钮。这种方法的缺点在于，在一个平台上设计的图形用户界面在另一个平台上查看时可能看起来非常不同。
 
-### AWT 中的组件和容器
+## AWT 中的组件和容器
 
-我已经提到，AWT 的主要目的是让程序员能够实现图形用户界面并与用户交互，而无需关心底层细节。我还提到这是通过创建组件的类来完成的。因此，现在可能是时候给你一个组件究竟是什么的正式定义了。在此上下文中，*组件*就是用于创建用户界面的图形元素。典型的组件包括按钮、文本字段、复选框等项。组件允许用户与程序交互，也可以用来向用户提供视觉反馈。在 AWT 中，所有用户界面组件都是 Component 类或其子类型的实例。实际上，大多数是子类型的实例，但它们确实继承自 Component 类。
+我已经提到，AWT 的主要目的是让程序员能够实现图形用户界面并与用户交互，而无需关心底层细节。我还提到这是通过创建组件的类来完成的。因此，现在可能是时候给你一个组件究竟是什么的正式定义了。在此上下文中，*组件*就是用于创建用户界面的图形元素。典型的组件包括按钮、文本字段、复选框等项。组件允许用户与程序交互，也可以用来向用户提供视觉反馈。在 AWT 中，所有用户界面组件都是 `Component` 类或其子类型的实例。实际上，大多数是子类型的实例，但它们确实继承自 `Component` 类。
 
-这解释了什么是组件。接下来需要处理的概念是容器。*容器*正如其名所示；它是一种可以包含其他组件的特殊组件。容器包含组件并控制它们的布局。你需要使用容器，因为你需要在逻辑区域中组织你的组件。由于容器本身也是组件，容器甚至可以包含其他容器。在 AWT 中，所有容器都是 Container 类或其子类型的实例。与前面提到的组件一样，大多数是简单继承自 Container 类的子类型的实例。
+这解释了什么是组件。接下来需要处理的概念是容器。*容器*正如其名所示；它是一种可以包含其他组件的特殊组件。容器包含组件并控制它们的布局。你需要使用容器，因为你需要在逻辑区域中组织你的组件。由于容器本身也是组件，容器甚至可以包含其他容器。在 AWT 中，所有容器都是 `Container` 类或其子类型的实例。与前面提到的组件一样，大多数是简单继承自 `Container` 类的子类型的实例。
 
-适当的布局对所有程序员来说都可能是一个重大问题。当你的应用程序或小程序可能在任意数量的完全不同的操作系统上运行时，这个问题就更加重要了。组件必须在包含它们的容器内以某种空间方向排列。这种将组件嵌套到容器中的方式创建了图形元素的层次结构。AWT 提供了九个基本的非容器组件类，可以用来构建用户界面。这九个类是 TextField、TextArea、Label、Button、Canvas、Choice、Checkbox、List 和 Scrollbar。
+适当的布局对所有程序员来说都可能是一个重大问题。当你的应用程序或小程序可能在任意数量的完全不同的操作系统上运行时，这个问题就更加重要了。组件必须在包含它们的容器内以某种空间方向排列。这种将组件嵌套到容器中的方式创建了图形元素的层次结构。AWT 提供了九个基本的非容器组件类，可以用来构建用户界面。这九个类是 `TextField`、`TextArea`、`Label`、`Button`、`Canvas`、`Choice`、`Checkbox`、`List` 和 `Scrollbar`。
 
-### 容器的类型
+## 容器的类型
 
-除了 AWT 提供的九个非容器控件外，它还提供了四个容器类：Window、Frame、Dialog 和 Panel。请注意，Frame 和 Dialog 类是 Window 类的子类。除了 AWT 提供的容器外，Applet 类也是一个容器；事实上，它是 Panel 类的子类型，因此可以容纳组件。下表简要介绍了每个容器类。
+除了 AWT 提供的九个非容器控件外，它还提供了四个容器类：`Window`、`Frame`、`Dialog` 和 `Panel`。请注意，`Frame` 和 `Dialog` 类是 `Window` 类的子类。除了 AWT 提供的容器外，`Applet` 类也是一个容器；事实上，它是 `Panel` 类的子类型，因此可以容纳组件。下表简要介绍了每个容器类。
 
 | 类名 | 用途 |
 | :--- | :--- |
-| Window | 此类提供顶级显示。Window 类的实例不附加或嵌入到另一个容器中，并且没有边框和标题。 |
-| Dialog | 对话框是带有边框和标题的顶级显示。没有关联的 Frame 类实例，就不能有 Dialog 类的实例。 |
-| Frame | 框架是带有边框和标题的顶级显示。Frame 类的实例可以有一个或多个菜单栏。 |
+| `Window` | 此类提供顶级显示。`Window` 类的实例不附加或嵌入到另一个容器中，并且没有边框和标题。 |
+| `Dialog` | 对话框是带有边框和标题的顶级显示。没有关联的 `Frame` 类实例，就不能有 `Dialog` 类的实例。 |
+| `Frame` | 框架是带有边框和标题的顶级显示。`Frame` 类的实例可以有一个或多个菜单栏。 |
 
-
-
-### 创建容器
+## 创建容器
 
 既然你已经了解组件可以，也常常被包含在其他组件中（即容器组件），现在似乎是向你展示如何创建这些容器组件的恰当时机。在构建具有图形用户界面（GUI）的应用程序时，程序员必须首先创建 `Window` 类或 `Frame` 类的实例。回想一下，这两种都是可以独立运行或独立操作的顶层显示组件。`Dialog` 类不用于初始容器组件，因为它不能独立操作；它需要一个关联的框架。无论你使用 `Window` 类还是 `Frame` 类，你必须实例化某个顶层容器类，然后才能向应用程序添加任何组件。这是因为你不会直接向应用程序添加组件；你是将它们添加到容器中。
 
-构建小程序与构建具有GUI的应用程序类似，只有少数几个细微差别。当构建小程序时，一个框架已经存在。那个框架就是浏览器本身。由于 `Applet` 类是 `Panel` 类的子类型，程序员可以直接将组件添加到 `Applet` 类本身的实例中。你不需要为了向小程序添加组件而创建 `Container` 类。
+构建小程序与构建具有 GUI 的应用程序类似，只有少数几个细微差别。当构建小程序时，一个框架已经存在。那个框架就是浏览器本身。由于 `Applet` 类是 `Panel` 类的子类型，程序员可以直接将组件添加到 `Applet` 类本身的实例中。你不需要为了向小程序添加组件而创建 `Container` 类。
 
-既然我已经讨论了向应用程序添加AWT组件以赋予其图形用户界面的基础知识，那么向你展示一个示例似乎是很好的主意。
+既然我已经讨论了向应用程序添加 AWT 组件以赋予其图形用户界面的基础知识，那么向你展示一个示例似乎是很好的主意。
 
 ### 示例 2.1
 
-本例的目的仅仅是向你展示在应用程序中使用抽象窗口工具包（Abstract Windowing Toolkit）的基础知识。本例演示了使用一个顶层容器并向其添加其他容器。该示例使用了Sun Microsystems的JDK。稍后，我将提供几个使用Borland JBuilder的示例。
+本例的目的仅仅是向你展示在应用程序中使用抽象窗口工具包的基础知识。本例演示了使用一个顶层容器并向其添加其他容器。该示例使用了 Sun Microsystems 的 JDK。稍后，我将提供几个使用 Borland JBuilder 的示例。
 
 **步骤 1：** 打开你最喜欢的文本编辑器并输入以下代码：
 
-```
+```java
 import java.awt.*;
 public class example1
 {
@@ -298,15 +271,15 @@ public class example1
 
 **步骤 2：** 将文件保存为 **Example2.java**。
 
-**步骤 3：** 从命令行（Windows 98中的DOS提示符，Windows NT/2000中的命令提示符，Linux中的Shell），使用标准JDK编译命令编译程序：
+**步骤 3：** 从命令行（Windows 98 中的 DOS 提示符，Windows NT/2000 中的命令提示符，Linux 中的 Shell），使用标准 JDK 编译命令编译程序：
 
 `javac Example.java`
 
-**步骤 4：** 只需输入 **java Example** 即可运行应用程序。运行此应用程序时，你应该会看到类似于图2.1所示的内容。
+**步骤 4：** 只需输入 **java Example** 即可运行应用程序。运行此应用程序时，你应该会看到类似于图 2.1 所示的内容。
 
 ![](img/6ac84fdff518ea769f07b6e3d911391e_34_0.png)
 
-你应该特别注意在此应用程序中使用的 `add` 方法。所有容器都有一个 `add` 方法，你可以调用它来向容器添加组件。这非常简单，但你会在本书或任何其他讨论Java组件的书籍的几乎每一个示例中看到它。
+你应该特别注意在此应用程序中使用的 `add` 方法。所有容器都有一个 `add` 方法，你可以调用它来向容器添加组件。这非常简单，但你会在本书或任何其他讨论 Java 组件的书籍的几乎每一个示例中看到它。
 
 我坦率地承认这个例子并不特别令人兴奋；然而，它确实演示了如何创建一个使用容器组件然后向其添加其他组件的应用程序的基础知识。现在让我们看看这在小程序而非应用程序中是如何工作的。
 
@@ -314,7 +287,7 @@ public class example1
 
 **步骤 1：** 打开你最喜欢的文本编辑器并输入你在此处看到的代码：
 
-```
+```java
 import java.awt.*;
 import java.awt.event.*;
 import java.applet.*;
@@ -330,15 +303,15 @@ public class example2 extends Applet
 
 **步骤 2：** 将文件保存为 **example2.java**。
 
-**步骤 3：** 从命令行（Windows 98中的DOS提示符，Windows NT/2000中的命令提示符，Linux中的Shell），使用标准JDK编译命令编译程序：
+**步骤 3：** 从命令行（Windows 98 中的 DOS 提示符，Windows NT/2000 中的命令提示符，Linux 中的 Shell），使用标准 JDK 编译命令编译程序：
 
-```
+```bash
 javac Example.java
 ```
 
-**步骤 4：** 创建一个简单的HTML页面来显示小程序，如下所示：
+**步骤 4：** 创建一个简单的 HTML 页面来显示小程序，如下所示：
 
-```
+```html
 <HTML>
 <HEAD>
     <TITLE>Applets Are Awesome</TITLE>
@@ -355,47 +328,45 @@ javac Example.java
 </HTML>
 ```
 
-现在，如果你在浏览器中查看此HTML文档，你应该会看到类似于这张图片所示的内容：
+现在，如果你在浏览器中查看此 HTML 文档，你应该会看到类似于这张图片所示的内容：
 
 ![](img/6ac84fdff518ea769f07b6e3d911391e_35_0.png)
 
-**图2.2 示例2.2图解**
+图 2.2 示例 2.2 图解
 
 关于这个例子，有几件事你应该注意到，第一是没有使用容器组件来容纳按钮。记住，对于小程序，小程序本身可以充当容器组件。你应该注意的另一件事是，`add` 命令不是发送给容器，而是直接发送给小程序。你可以对小程序这样做，但不能对应用程序这样做。对于应用程序，`add` 命令只能作为容器组件的方法被调用。
 
-我们将在本书后面讨论小程序与Swing组件的关系。我们将用一整个章节来讨论它们。所以，如果此时你对小程序还不完全清楚，别担心：所有这些后面都会解释清楚的。
+我们将在本书后面讨论小程序与 Swing 组件的关系。我们将用一整个章节来讨论它们。所以，如果此时你对小程序还不完全清楚，别担心：所有这些后面都会解释清楚的。
 
-### 管理组件布局
+## 管理组件布局
 
-如果你只是简单地将组件添加到容器或浏览器中，你将得到一个相当不吸引人的显示。组件将一个接一个地放置在容器上。大多数程序员更喜欢能够控制他们组件的布局。抽象窗口工具包提供了布局管理器来处理你的组件布局。布局不是由容器控制，而是由与容器关联的布局管理器控制。在AWT中，所有布局管理器类都实现了 `LayoutManager` 接口。
+如果你只是简单地将组件添加到容器或浏览器中，你将得到一个相当不吸引人的显示。组件将一个接一个地放置在容器上。大多数程序员更喜欢能够控制他们组件的布局。抽象窗口工具包提供了布局管理器来处理你的组件布局。布局不是由容器控制，而是由与容器关联的布局管理器控制。在 AWT 中，所有布局管理器类都实现了 `LayoutManager` 接口。
 
-抽象窗口工具包为程序员提供了五种布局管理器，可用于以逻辑和视觉上吸引人的方式组织组件。当然，有些比其他的更简单。五种不同的布局管理器在表2.2中列出并简要描述。
+抽象窗口工具包为程序员提供了五种布局管理器，可用于以逻辑和视觉上吸引人的方式组织组件。当然，有些比其他的更简单。五种不同的布局管理器在表 2.2 中列出并简要描述。
 
-表2.2 布局管理器
+**表 2.2 布局管理器**
 
 | 管理器 | 格式 |
 | :--- | :--- |
-| GridLayout | GridLayout管理器将组件放置在均匀分布的网格中。网格中的每一行必须具有相同数量的单元格。 |
-| GridbagLayout | GridbagLayout管理器也将组件放置在网格中；然而，每一行可以有不同数量的单元格。 |
-| CardLayout | CardLayout管理器一次显示一个组件，就像翻阅一副扑克牌。 |
-| FlowLayout | FlowLayout管理器只是简单地将组件一个接一个地从左到右、从上到下放置。 |
-| BorderLayout | 此布局管理器允许你将组件放置在容器的边界周围或中心位置。 |
+| `GridLayout` | `GridLayout` 管理器将组件放置在均匀分布的网格中。网格中的每一行必须具有相同数量的单元格。 |
+| `GridBagLayout` | `GridBagLayout` 管理器也将组件放置在网格中；然而，每一行可以有不同数量的单元格。 |
+| `CardLayout` | `CardLayout` 管理器一次显示一个组件，就像翻阅一副扑克牌。 |
+| `FlowLayout` | `FlowLayout` 管理器只是简单地将组件一个接一个地从左到右、从上到下放置。 |
+| `BorderLayout` | 此布局管理器允许你将组件放置在容器的边界周围或中心位置。 |
 
-如表中所述，BorderLayout类有五个区域可用于放置组件。这些区域被命名为North（北）、South（南）、East（东）、West（西）和Center（中心）。可以在每个区域放置一个单独的组件。当包含容器的大小被调整时，每个边界区域的大小会调整到刚好能容纳其中放置的组件。实际上，将其他容器组件放入每个区域是很常见的。这些区域及其布局如图2.3所示。
+如表中所述，`BorderLayout` 类有五个区域可用于放置组件。这些区域被命名为 North（北）、South（南）、East（东）、West（西）和 Center（中心）。可以在每个区域放置一个单独的组件。当包含容器的大小被调整时，每个边界区域的大小会调整到刚好能容纳其中放置的组件。实际上，将其他容器组件放入每个区域是很常见的。这些区域及其布局如图 2.3 所示。
 
 ![](img/6ac84fdff518ea769f07b6e3d911391e_37_0.png)
 
-图2.3 BorderLayout区域
+图 2.3 BorderLayout 区域
 
-容器管理器是抽象窗口工具包的重要组成部分。你可以为任何容器选择任何布局管理器；然而，每个容器类都有自己的默认布局管理器。对于
-
-### Panel类和Applet类使用FlowLayout布局管理器。Frame类和Dialog类的默认布局管理器是BorderLayout管理器。
+容器管理器是抽象窗口工具包的重要组成部分。你可以为任何容器选择任何布局管理器；然而，每个容器类都有自己的默认布局管理器。对于 `Panel` 类和 `Applet` 类使用 `FlowLayout` 布局管理器。`Frame` 类和 `Dialog` 类的默认布局管理器是 `BorderLayout` 管理器。
 
 让我们来看一个使用两种布局的示例。第一种用于包含按钮的面板。第二种布局用于将该面板放置在小程序中的特定位置。
 
-#### 示例2.3
+### 示例 2.3
 
-**步骤1：** 使用你喜欢的文本编辑器输入以下代码：
+**步骤 1：** 使用你喜欢的文本编辑器输入以下代码：
 
 ```java
 import java.awt.*;
@@ -409,123 +380,128 @@ public class example3 extends Applet
         Panel p = new Panel();
         p.setLayout(new BorderLayout());
         Button b = new Button("Click Me");
-        p.add("Center",b);
+        p.add("Center", b);
         add(p);
     }
 }
 ```
 
-**步骤2：** 从命令行（Windows 98中的DOS提示符，Windows NT/2000中的命令提示符，Linux中的Shell），使用标准JDK编译程序：
+**步骤 2：** 从命令行（Windows 98 中的 DOS 提示符，Windows NT/2000 中的命令提示符，Linux 中的 Shell），使用标准 JDK 编译程序：
 
+```bash
+javac Example.java
 ```
-Javac Example.java
-```
 
-**步骤3：** 创建一个简单的HTML页面来显示该小程序。
+**步骤 3：** 创建一个简单的 HTML 页面来显示该小程序。
 
-在这个示例中，我使用了两种不同的布局。第一种是网格布局，它简单地将项目显示在网格中。传递给网格布局类构造函数的数字告诉它要创建多少行和多少列的网格。第二种布局是边框布局，应用于面板本身，允许程序员在边框周围的不同位置和中心放置代码。还要注意按钮会扩展以填充其所在的空间。如果你正确输入并编译了代码，你应该能够使用浏览器显示这个小程序，并看到类似图2.4所示的效果。
+在这个示例中，我使用了两种不同的布局。第一种是网格布局，它简单地将项目显示在网格中。传递给网格布局类构造函数的数字告诉它要创建多少行和多少列的网格。第二种布局是边框布局，应用于面板本身，允许程序员在边框周围的不同位置和中心放置代码。还要注意按钮会扩展以填充其所在的空间。如果你正确输入并编译了代码，你应该能够使用浏览器显示这个小程序，并看到类似图 2.4 所示的效果。
 
-![图2.4 示例2.3的说明](img/6ac84fdff518ea769f07b6e3d911391e_39_0.png)
+![图 2.4 示例 2.3 的说明](img/6ac84fdff518ea769f07b6e3d911391e_39_0.png)
 
 ## 事件处理
 
-前面的示例只是显示某些组件——具体来说是面板上的按钮。当用户按下按钮或执行任何操作时，它们都没有任何反应。构建图形用户界面只是故事的一部分。另一部分是与用户交互并响应用户。Java为此提供了一种优秀的机制。该机制就是事件模型。用户的每个操作都会生成一些事件。你只需在类中添加一些代码，让该类能够响应这些事件。有许多AWT事件，每种单独类型的动作对应一个事件。动作事件用于响应用户点击按钮，而鼠标移动事件用于响应鼠标移动到特定区域。让我们来看一个使用事件响应用户点击按钮的示例。
+前面的示例只是显示某些组件——具体来说是面板上的按钮。当用户按下按钮或执行任何操作时，它们都没有任何反应。构建图形用户界面只是故事的一部分。另一部分是与用户交互并响应用户。Java 为此提供了一种优秀的机制。该机制就是事件模型。用户的每个操作都会生成一些事件。你只需在类中添加一些代码，让该类能够响应这些事件。有许多 AWT 事件，每种单独类型的动作对应一个事件。动作事件用于响应用户点击按钮，而鼠标移动事件用于响应鼠标移动到特定区域。让我们来看一个使用事件响应用户点击按钮的示例。
 
-#### 示例2.4
+### 示例 2.4
 
-步骤1：打开你喜欢的文本编辑器，输入以下代码：
+**步骤 1：** 打开你喜欢的文本编辑器，输入以下代码：
 
 ```java
 import java.awt.*;
 import java.applet.*;
-// 这个小程序的目的在于演示 //java //applets
-// 如何在屏幕上创建控件并响应 //这些控件上的 //事件。
-// 这个类继承了java Applet类。所有 //小程序都必须 //这样做。
+// 这个小程序的目的在于演示
+// java
+// applets
+// 如何在屏幕上创建控件并响应
+// 这些控件上的
+// 事件。
+// 这个类继承了 java Applet 类。所有
+// 小程序都必须
+// 这样做。
 public class example4 extends Applet
 {
-  Button hiButton;
-  // 小程序使用init而不是main函数。
-  public void init()
-  {
-    // 创建一个带有标题的按钮组件
-    hiButton = new Button("Click Me!");
-    // 将该按钮添加到浏览器窗口
-    add(hiButton);
-  }// 关闭init
-  // action函数处理小程序可能响应的各种事件。
-  public boolean action(Event evt, Object objme)
-  {
-    // 检查事件是否发生在我们的hi按钮上
-    if(evt.target == hiButton)
+    Button hiButton;
+    // 小程序使用 init 而不是 main 函数。
+    public void init()
     {
-      // 更改该按钮的标题
-      hiButton.setLabel("Ahhhh!");
-      return true;
-    }// 关闭if语句
-    else
-      return false;
-  }// 关闭action
-}// 关闭类button
+        // 创建一个带有标题的按钮组件
+        hiButton = new Button("Click Me!");
+        // 将该按钮添加到浏览器窗口
+        add(hiButton);
+    } // 关闭 init
+    // action 函数处理小程序可能响应的各种事件。
+    public boolean action(Event evt, Object objme)
+    {
+        // 检查事件是否发生在我们的 hi 按钮上
+        if (evt.target == hiButton)
+        {
+            // 更改该按钮的标题
+            hiButton.setLabel("Ahhhh!");
+            return true;
+        } // 关闭 if 语句
+        else
+            return false;
+    } // 关闭 action
+} // 关闭类 button
 ```
 
-**步骤2：** 从命令行（Windows 98中的DOS提示符，Windows NT/2000中的命令提示符，Linux中的Shell），使用标准JDK编译程序：
+**步骤 2：** 从命令行（Windows 98 中的 DOS 提示符，Windows NT/2000 中的命令提示符，Linux 中的 Shell），使用标准 JDK 编译程序：
 
+```bash
+javac Example.java
 ```
-Javac Example.java
-```
 
-**步骤3：** 创建一个简单的HTML页面来显示该小程序。
-编译小程序并在浏览器中查看后，它应该看起来像图2.5所示。
+**步骤 3：** 创建一个简单的 HTML 页面来显示该小程序。
 
-![图2.5 示例2.4的说明](img/6ac84fdff518ea769f07b6e3d911391e_41_0.png)
+编译小程序并在浏览器中查看后，它应该看起来像图 2.5 所示。
 
-当你实际点击按钮时，正如其标题所指示的，你会看到类似图2.6所示的效果。
+![图 2.5 示例 2.4 的说明](img/6ac84fdff518ea769f07b6e3d911391e_41_0.png)
 
-![图2.6 示例2.4的说明](img/6ac84fdff518ea769f07b6e3d911391e_42_0.png)
+当你实际点击按钮时，正如其标题所指示的，你会看到类似图 2.6 所示的效果。
 
-这个示例与前面示例的最大区别在于添加了"public boolean action (Event evt, Object objme)"代码。
+![图 2.6 示例 2.4 的说明](img/6ac84fdff518ea769f07b6e3d911391e_42_0.png)
 
-此函数设计用于在用户点击小程序中的某些内容时被调用。传递的Event对象包含有关发生事件的信息，包括是什么触发了事件以及事件的目标组件是什么。在此函数内部，我只放置了一个if语句，询问目标是否确实是我们的按钮。如果是，则更改按钮的标题。
+这个示例与前面示例的最大区别在于添加了 `public boolean action (Event evt, Object objme)` 代码。
 
-#### 示例2.5
+此函数设计用于在用户点击小程序中的某些内容时被调用。传递的 `Event` 对象包含有关发生事件的信息，包括是什么触发了事件以及事件的目标组件是什么。在此函数内部，我只放置了一个 `if` 语句，询问目标是否确实是我们的按钮。如果是，则更改按钮的标题。
 
-到目前为止，这些示例都是使用简单的文本编辑器和Sun JDK编译器完成的。然而，我们的示例也只有几个简单的组件。在无法看到所形成图像类型的情况下尝试排列多个组件可能相当困难。这就是Borland的JBuilder可以为您提供宝贵帮助的地方。使用JBuilder，您可以以"所见即所得"（WYSIWYG）的方式将抽象窗口工具包组件拖放到屏幕上。所以现在我想引导您使用JBuilder完成这样一个示例。
+### 示例 2.5
 
-**步骤1：** 显然，您需要启动JBuilder。然后开始一个新项目。
+到目前为止，这些示例都是使用简单的文本编辑器和 Sun JDK 编译器完成的。然而，我们的示例也只有几个简单的组件。在无法看到所形成图像类型的情况下尝试排列多个组件可能相当困难。这就是 Borland 的 JBuilder 可以为您提供宝贵帮助的地方。使用 JBuilder，您可以以“所见即所得”（WYSIWYG）的方式将抽象窗口工具包组件拖放到屏幕上。所以现在我想引导您使用 JBuilder 完成这样一个示例。
 
-**步骤2：** 从下拉菜单中选择 **文件**。然后选择 **新建**。您将看到一个向导的第一个屏幕，该向导将引导您将新项目添加到您的项目中。
+**步骤 1：** 显然，您需要启动 JBuilder。然后开始一个新项目。
 
-![图2.7 对象库](img/6ac84fdff518ea769f07b6e3d911391e_43_0.png)
+**步骤 2：** 从下拉菜单中选择 **文件**。然后选择 **新建**。您将看到一个向导的第一个屏幕，该向导将引导您将新项目添加到您的项目中。
+
+![图 2.7 对象库](img/6ac84fdff518ea769f07b6e3d911391e_43_0.png)
 
 出于本示例的目的，我将从常规选项卡中选择 **应用程序**。
 
-![图2.8 添加应用程序](img/6ac84fdff518ea769f07b6e3d911391e_44_0.png)
+![图 2.8 添加应用程序](img/6ac84fdff518ea769f07b6e3d911391e_44_0.png)
 
-**步骤3：** JBuilder现在将引导您完成三个简单的屏幕，提示您设置希望应用程序具有的设置。出于我们的目的，我选择默认设置，如图2.9至图2.11所示。
+**步骤 3：** JBuilder 现在将引导您完成三个简单的屏幕，提示您设置希望应用程序具有的设置。出于我们的目的，我选择默认设置，如图 2.9 至图 2.11 所示。
 
-![图2.9 应用程序向导步骤1](img/6ac84fdff518ea769f07b6e3d911391e_44_1.png)
+![图 2.9 应用程序向导步骤 1](img/6ac84fdff518ea769f07b6e3d911391e_44_1.png)
 
-![图2.10 应用程序向导步骤2](img/6ac84fdff518ea769f07b6e3d911391e_45_0.png)
+![图 2.10 应用程序向导步骤 2](img/6ac84fdff518ea769f07b6e3d911391e_45_0.png)
 
-![图2.11 应用程序向导步骤3](img/6ac84fdff518ea769f07b6e3d911391e_45_1.png)
+![图 2.11 应用程序向导步骤 3](img/6ac84fdff518ea769f07b6e3d911391e_45_1.png)
 
-完成向导后，JBuilder将为您构建应用程序的基本框架。您应该注意，屏幕底部有各种选项卡。默认情况下，向导完成后您将看到源代码选项卡。但是，您应该切换到设计选项卡。
+完成向导后，JBuilder 将为您构建应用程序的基本框架。您应该注意，屏幕底部有各种选项卡。默认情况下，向导完成后您将看到源代码选项卡。但是，您应该切换到设计选项卡。
 
-**步骤4：** 注意顶部有几个选项卡，用于各种不同的组件，以及箭头表示屏幕外还有更多组件。您需要使用这些箭头进行滚动，直到看到AWT选项卡，然后选择该选项卡。
+**步骤 4：** 注意顶部有几个选项卡，用于各种不同的组件，以及箭头表示屏幕外还有更多组件。您需要使用这些箭头进行滚动，直到看到 AWT 选项卡，然后选择该选项卡。
 
-![图2.13 AWT选项卡](img/6ac84fdff518ea769f07b6e3d911391e_47_0.png)
+![图 2.13 AWT 选项卡](img/6ac84fdff518ea769f07b6e3d911391e_47_0.png)
 
-步骤5：注意屏幕右侧有一个属性窗口，显示当前选定组件的属性。在当前情况下，它显示应用程序容器组件（框架）的属性。您会注意到布局设置为默认的BorderLayout。
+**步骤 5：** 注意屏幕右侧有一个属性窗口，显示当前选定组件的属性。在当前情况下，它显示应用程序容器组件（框架）的属性。您会注意到布局设置为默认的 `BorderLayout`。
 
-![图2.14 默认布局](img/6ac84fdff518ea769f07b6e3d911391e_47_1.png)
+![图 2.14 默认布局](img/6ac84fdff518ea769f07b6e3d911391e_47_1.png)
 
-步骤6：将鼠标放在任何组件对象上并单击一次。
+**步骤 6：** 将鼠标放在任何组件对象上并单击一次。然后您可以在屏幕上绘制一个或多个组件的轮廓。对于本示例，在屏幕中央放置一个 JBuilder `Panel` 类的实例，并将面板的布局管理器属性设置为 2,2 的网格。然后您将向此面板添加四个按钮。它应该看起来像您在这里看到的图像。
 
-然后您可以在屏幕上绘制一个或多个组件的轮廓。对于本示例，在屏幕中央放置一个JBuilder Panel类的实例，并将面板的布局管理器属性设置为2,2的网格。然后您将向此面板添加四个按钮。它应该看起来像您在这里看到的图像。
+![图 2.15 网格布局](img/6ac84fdff518ea769f07b6e3d911391e_48_0.png)
 
-![图2.15 网格布局](img/6ac84fdff518ea769f07b6e3d911391e_48_0.png)
-
-如果您返回到JBuilder的源代码选项卡，您可以看到JBuilder为您创建的源代码。该代码显示在下方。请注意，布局、初始化、添加组件等都是为您自动完成的。此外，应用程序终止代码和其他必需代码也为您完成。
+如果您返回到 JBuilder 的源代码选项卡，您可以看到 JBuilder 为您创建的源代码。该代码显示在下方。请注意，布局、初始化、添加组件等都是为您自动完成的。此外，应用程序终止代码和其他必需代码也为您完成。
 
 ```java
 package example5;
@@ -534,151 +510,144 @@ import java.awt.event.*;
 import javax.swing.*;
 public class Frame1 extends JFrame
 {
-```
-
-
-
-# 第2章
-
-```java
-JPanel contentPane;
-BorderLayout borderLayout1 = new BorderLayout();
-Panel panel1 = new Panel();
-GridLayout gridLayout1 = new GridLayout(2,2);
-Button button1 = new Button();
-Button button2 = new Button();
-Button button3 = new Button();
-Button button4 = new Button();
-//构造框架
-public Frame1()
-{
-  enableEvents(AWTEvent.WINDOW_EVENT_MASK);
-  try
-  {
-    jbInit();
-  }
-  catch(Exception e)
-  {
-    e.printStackTrace();
-  }
-}
-//组件初始化
-private void jbInit() throws Exception
-{
-  contentPane = (JPanel) this.getContentPane();
-  contentPane.setLayout(borderLayout1);
-  this.setSize(new Dimension(400, 300));
-  this.setTitle("Frame Title");
-  panel1.setLayout(gridLayout1);
-  button1.setLabel("button1");
-  button2.setLabel("button2");
-  button3.setLabel("button3");
-  button4.setLabel("button4");
-  contentPane.add(panel1, BorderLayout.CENTER);
-  panel1.add(button1, null);
-  panel1.add(button3, null);
-  panel1.add(button2, null);
-  panel1.add(button4, null);
-}
-//重写此方法以便在窗口关闭时退出
-protected void processWindowEvent(WindowEvent e)
-{
-  super.processWindowEvent(e);
-  if (e.getID() == WindowEvent.WINDOW_CLOSING)
-  {
-    System.exit(0);
-  }
-}
+    JPanel contentPane;
+    BorderLayout borderLayout1 = new BorderLayout();
+    Panel panel1 = new Panel();
+    GridLayout gridLayout1 = new GridLayout(2,2);
+    Button button1 = new Button();
+    Button button2 = new Button();
+    Button button3 = new Button();
+    Button button4 = new Button();
+    // 构造框架
+    public Frame1()
+    {
+        enableEvents(AWTEvent.WINDOW_EVENT_MASK);
+        try
+        {
+            jbInit();
+        }
+        catch(Exception e)
+        {
+            e.printStackTrace();
+        }
+    }
+    // 组件初始化
+    private void jbInit() throws Exception
+    {
+        contentPane = (JPanel) this.getContentPane();
+        contentPane.setLayout(borderLayout1);
+        this.setSize(new Dimension(400, 300));
+        this.setTitle("Frame Title");
+        panel1.setLayout(gridLayout1);
+        button1.setLabel("button1");
+        button2.setLabel("button2");
+        button3.setLabel("button3");
+        button4.setLabel("button4");
+        contentPane.add(panel1, BorderLayout.CENTER);
+        panel1.add(button1, null);
+        panel1.add(button3, null);
+        panel1.add(button2, null);
+        panel1.add(button4, null);
+    }
+    // 重写此方法以便在窗口关闭时退出
+    protected void processWindowEvent(WindowEvent e)
+    {
+        super.processWindowEvent(e);
+        if (e.getID() == WindowEvent.WINDOW_CLOSING)
+        {
+            System.exit(0);
+        }
+    }
 }
 ```
 
-你应该意识到，随着你的图形用户界面变得越来越复杂，可视化你编写的代码的输出将变得更加困难。JBuilder为你处理布局细节。这使得JBuilder成为设计具有重要图形用户界面的程序的一个非常强大的工具。
+你应该意识到，随着你的图形用户界面变得越来越复杂，可视化你编写的代码的输出将变得更加困难。JBuilder 为你处理布局细节。这使得 JBuilder 成为设计具有重要图形用户界面的程序的一个非常强大的工具。
 
-## 一个重要的JBuilder示例
+## 一个重要的 JBuilder 示例
 
-你在本章中迄今为止看到的示例都很简单（事实上，简单到基本上没有实际价值）。这样做的原因是为了让你轻松地入门这些概念，而不会让你处理过多的代码。重要的是，一个人有机会去使用一个概念，直到他对基本要素感到满意。然而，同样重要的是，你能够将这个概念应用到某个实际目的上。考虑到这一点，让我们探索一个使用JBuilder创建AWT应用程序的实际示例。我们将使用JBuilder构建一个功能齐全的计算器。
+你在本章中迄今为止看到的示例都很简单（事实上，简单到基本上没有实际价值）。这样做的原因是为了让你轻松地入门这些概念，而不会让你处理过多的代码。重要的是，一个人有机会去使用一个概念，直到他对基本要素感到满意。然而，同样重要的是，你能够将这个概念应用到某个实际目的上。考虑到这一点，让我们探索一个使用 JBuilder 创建 AWT 应用程序的实际示例。我们将使用 JBuilder 构建一个功能齐全的计算器。
 
 ### 示例 2.6
 
-1.  **步骤 1：** 开始一个新项目。向该项目添加一个Application对象。
-2.  **步骤 2：** 确保框架的布局管理器是边界布局。
-3.  **步骤 3：** 我们将向此应用程序添加两个面板和一个标签。一个面板将被添加到中心并命名为pnlnumbers。第二个面板将被添加到东部并命名为pnlbuttons。标签将被添加到北部并命名为lbldisplay。标签的对齐方式应设置为右对齐，文本设置为"0"。两个面板之间很难区分，因此我们将pnlnumbers的背景颜色重置为黄色。你的屏幕应看起来与图2.16所示的非常相似。
+1. **步骤 1：** 开始一个新项目。向该项目添加一个 Application 对象。
+2. **步骤 2：** 确保框架的布局管理器是边界布局。
+3. **步骤 3：** 我们将向此应用程序添加两个面板和一个标签。一个面板将被添加到中心并命名为 `pnlnumbers`。第二个面板将被添加到东部并命名为 `pnlbuttons`。标签将被添加到北部并命名为 `lbldisplay`。标签的对齐方式应设置为右对齐，文本设置为 "0"。两个面板之间很难区分，因此我们将 `pnlnumbers` 的背景颜色重置为黄色。你的屏幕应看起来与图 2.16 所示的非常相似。
 
-    ![](img/6ac84fdff518ea769f07b6e3d911391e_51_0.png)
+   ![](img/6ac84fdff518ea769f07b6e3d911391e_51_0.png)
 
-    **图 2.16 计算器示例**
+   **图 2.16 计算器示例**
 
-    > **注意：** 记住，对于本章，我们使用的是AWT选项卡中的组件，而不是Swing选项卡！
+   > **注意：** 记住，对于本章，我们使用的是 AWT 选项卡中的组件，而不是 Swing 选项卡！
 
-4.  **步骤 4：** 现在将pnlnumbers布局设置为网格布局。将网格更改为四行三列。要更改网格布局的行数和列数，你需要转到JBuilder中的源代码选项卡，并在grid后面的括号中简单地输入4,3。如图2.17所示。
+4. **步骤 4：** 现在将 `pnlnumbers` 布局设置为网格布局。将网格更改为四行三列。要更改网格布局的行数和列数，你需要转到 JBuilder 中的源代码选项卡，并在 `grid` 后面的括号中简单地输入 4,3。如图 2.17 所示。
 
-    ![](img/6ac84fdff518ea769f07b6e3d911391e_52_0.png)
+   ![](img/6ac84fdff518ea769f07b6e3d911391e_52_0.png)
 
-5.  **步骤 5：** 现在我们将pnlbuttons布局更改为五行一列的网格布局。我们还将向两个面板添加一系列按钮，并设置这些按钮的标题。你可以在图2.18中看到这一点。
+5. **步骤 5：** 现在我们将 `pnlbuttons` 布局更改为五行一列的网格布局。我们还将向两个面板添加一系列按钮，并设置这些按钮的标题。你可以在图 2.18 中看到这一点。
 
-    ![](img/6ac84fdff518ea769f07b6e3d911391e_52_1.png)
+   ![](img/6ac84fdff518ea769f07b6e3d911391e_52_1.png)
 
-    确保你将每个按钮的名称更改为与其label属性匹配。例如，标签属性为"9"的按钮应命名为btn9。标签属性为"+"的按钮应命名为btnadd。
+   确保你将每个按钮的名称更改为与其 `label` 属性匹配。例如，标签属性为 "9" 的按钮应命名为 `btn9`。标签属性为 "+" 的按钮应命名为 `btnadd`。
 
-6.  **步骤 6：** 既然我们有了计算器的框架，是时候添加一些代码了！首先，在类的开头，我们将添加一些变量：
+6. **步骤 6：** 既然我们有了计算器的框架，是时候添加一些代码了！首先，在类的开头，我们将添加一些变量：
 
-    ```java
-    String temp;
-    float firstnumber;
-    float secondnumber;
-    float answer;
-    int operation;
-    int ADD = 0;
-    int SUBTRACT = 1;
-    int MULTIPLY = 2;
-    int DIVIDE = 3;
-    ```
+   ```java
+   String temp;
+   float firstnumber;
+   float secondnumber;
+   float answer;
+   int operation;
+   int ADD = 0;
+   int SUBTRACT = 1;
+   int MULTIPLY = 2;
+   int DIVIDE = 3;
+   ```
 
-    现在我们转到运算符按钮（+、-、*、/和=）。在每个按钮中，我们将int运算符设置为相应的整数值。添加按钮的代码如下所示：
+   现在我们转到运算符按钮（+、-、*、/ 和 =）。在每个按钮中，我们将 `int` 运算符设置为相应的整数值。添加按钮的代码如下所示：
 
-    ```java
-    operation = ADD;
-    temp = lbldisplay.getText();
-    firstnumber= Float.valueOf(temp).floatValue();
-    lbldisplay.setText("0");
-    ```
+   ```java
+   operation = ADD;
+   temp = lbldisplay.getText();
+   firstnumber = Float.valueOf(temp).floatValue();
+   lbldisplay.setText("0");
+   ```
 
-    代码的第一行应该很容易理解。我们只是在确定选择了什么操作。接下来的两行获取lbldisplay中的值并将其转换为浮点数。最后，我们将显示重置为零，以便用户可以输入第二个数字。所有四个运算符按钮中的代码将相同，除了第一行，你将在那里将操作设置为该按钮的适当操作。
+   代码的第一行应该很容易理解。我们只是在确定选择了什么操作。接下来的两行获取 `lbldisplay` 中的值并将其转换为浮点数。最后，我们将显示重置为零，以便用户可以输入第二个数字。所有四个运算符按钮中的代码将相同，除了第一行，你将在那里将操作设置为该按钮的适当操作。
 
-    每个数字按钮只需要将你按下的数字添加到标签中。该代码将如下所示：
+   每个数字按钮只需要将你按下的数字添加到标签中。该代码将如下所示：
 
-    ```java
-    temp = lbldisplay.getText();
-    temp = temp + "7";
-    lbldisplay.setText(temp);
-    ```
+   ```java
+   temp = lbldisplay.getText();
+   temp = temp + "7";
+   lbldisplay.setText(temp);
+   ```
 
-    显然，每个按钮都必须设置为适当的数字。小数按钮的设置类似于数字按钮。在等号按钮中，我们将有更多的代码：
+   显然，每个按钮都必须设置为适当的数字。小数按钮的设置类似于数字按钮。在等号按钮中，我们将有更多的代码：
 
-    ```java
-    temp = lbldisplay.getText();
-    secondnumber= Float.valueOf(temp).floatValue();
-    if(operation == ADD)
-        answer = firstnumber + secondnumber;
-    if(operation == SUBTRACT)
-        answer = firstnumber - secondnumber;
-    if(operation == MULTIPLY)
-        answer = firstnumber * secondnumber;
-    if(operation == DIVIDE)
-        answer = firstnumber / secondnumber;
-    temp = " " + answer;
-    lbldisplay.setText(temp);
-    ```
+   ```java
+   temp = lbldisplay.getText();
+   secondnumber = Float.valueOf(temp).floatValue();
+   if (operation == ADD)
+       answer = firstnumber + secondnumber;
+   if (operation == SUBTRACT)
+       answer = firstnumber - secondnumber;
+   if (operation == MULTIPLY)
+       answer = firstnumber * secondnumber;
+   if (operation == DIVIDE)
+       answer = firstnumber / secondnumber;
+   temp = " " + answer;
+   lbldisplay.setText(temp);
+   ```
 
-    所有这些代码所做的就是获取当前显示，将其转换为浮点数，并将其存储在名为secondnumber的变量中。然后我们执行适当的数学运算。最后，我们显示答案。当你运行此应用程序时，你可以执行所有基本的计算器操作，就像你在图2.19中看到的那样。
+   所有这些代码所做的就是获取当前显示，将其转换为浮点数，并将其存储在名为 `secondnumber` 的变量中。然后我们执行适当的数学运算。最后，我们显示答案。当你运行此应用程序时，你可以执行所有基本的计算器操作，就像你在图 2.19 中看到的那样。
 
-    ![](img/6ac84fdff518ea769f07b6e3d911391e_54_0.png)
+   ![](img/6ac84fdff518ea769f07b6e3d911391e_54_0.png)
 
-    图 2.19 运行计算器示例
+   图 2.19 运行计算器示例
 
-对于那些不使用JBuilder或只是希望查看所有源代码的读者，此处提供了源代码。
+对于那些不使用 JBuilder 或只是希望查看所有源代码的读者，此处提供了源代码。
 
-> 注意：这是一个较长的示例。
+> **注意：** 这是一个较长的示例。
 
 ```java
 package example02_06;
@@ -723,7 +692,7 @@ public class fracalc extends JFrame
 ```
 
 ```java
-//构造框架
+// 构造框架
 public fracalc()
 {
     enableEvents(AWTEvent.WINDOW_EVENT_MASK);
@@ -739,7 +708,7 @@ public fracalc()
 ```
 
 ```java
-//组件初始化
+// 组件初始化
 private void jbInit() throws Exception
 {
     contentPane = (JPanel) this.getContentPane();
@@ -753,71 +722,60 @@ private void jbInit() throws Exception
     lbldisplay.setText("0");
     pnlbuttons.setLayout(gridLayout2);
     btn7.setLabel("7");
-    btn7.addActionListener(new fracalc_btn7_action
-                            Adapter(this));
+    btn7.addActionListener(new fracalc_btn7_actionAdapter(this));
     btn2.setLabel("2");
-    btn2.addActionListener(new fracalc_btn2_action
-                            Adapter(this));
+    btn2.addActionListener(new fracalc_btn2_actionAdapter(this));
     btn3.setLabel("3");
-    btn3.addActionListener(new fracalc_btn3_action
-                            Adapter(this));
+    btn3.addActionListener(new fracalc_btn3_actionAdapter(this));
     btn1.setLabel("1");
-    btn1.addActionListener(new fracalc_btn1_action
-                            Adapter(this));
+    btn1.addActionListener(new fracalc_btn1_actionAdapter(this));
     btn6.setLabel("6");
-    btn6.addActionListener(new fracalc_btn6_action
-                            Adapter(this));
+    btn6.addActionListener(new fracalc_btn6_actionAdapter(this));
     btn5.setLabel("5");
-    btn5.addActionListener(new fracalc_btn5_action
-                            Adapter(this));
-```
-
-
-
-```java
-btn4.setLabel("4");
-btn4.addActionListener(new fracalc_btn4_actionAdapter(this));
-btn8.setLabel("8");
-btn8.addActionListener(new fracalc_btn8_actionAdapter(this));
-btn9.setLabel("9");
-btn9.addActionListener(new fracalc_btn9_actionAdapter(this));
-btnadd.setLabel("+");
-btnadd.addActionListener(new fracalc_btnadd_actionAdapter(this));
-btnminus.setLabel("-");
-btnminus.addActionListener(new fracalc_btnminus_actionAdapter(this));
-btn0.setLabel("0");
-btndecimal.setLabel(".");
-btndecimal.addActionListener(new fracalc_btndecimal_actionAdapter(this));
-btnplaceholder.setLabel("");
-btnmultiply.setLabel("*");
-btnmultiply.addActionListener(new fracalc_btnmultiply_actionAdapter(this));
-btndivide.setLabel("/");
-btndivide.addActionListener(new fracalc_btndivide_actionAdapter(this));
-btnequals.setLabel("=");
-btnequals.addActionListener(new fracalc_btnequals_actionAdapter(this));
-contentPane.add(pnlnumbers, BorderLayout.CENTER);
-pnlnumbers.add(btn7, null);
-pnlnumbers.add(btn8, null);
-pnlnumbers.add(btn9, null);
-pnlnumbers.add(btn4, null);
-pnlnumbers.add(btn5, null);
-pnlnumbers.add(btn6, null);
-pnlnumbers.add(btn1, null);
-pnlnumbers.add(btn2, null);
-pnlnumbers.add(btn3, null);
-pnlnumbers.add(btnplaceholder, null);
-pnlnumbers.add(btn0, null);
-pnlnumbers.add(btndecimal, null);
-contentPane.add(pnlbuttons, BorderLayout.EAST);
-pnlbuttons.add(btnadd, null);
-pnlbuttons.add(btnminus, null);
-contentPane.add(lbldisplay, BorderLayout.NORTH);
-pnlbuttons.add(btnmultiply, null);
-pnlbuttons.add(btndivide, null);
-pnlbuttons.add(btnequals, null);
+    btn5.addActionListener(new fracalc_btn5_actionAdapter(this));
+    btn4.setLabel("4");
+    btn4.addActionListener(new fracalc_btn4_actionAdapter(this));
+    btn8.setLabel("8");
+    btn8.addActionListener(new fracalc_btn8_actionAdapter(this));
+    btn9.setLabel("9");
+    btn9.addActionListener(new fracalc_btn9_actionAdapter(this));
+    btnadd.setLabel("+");
+    btnadd.addActionListener(new fracalc_btnadd_actionAdapter(this));
+    btnminus.setLabel("-");
+    btnminus.addActionListener(new fracalc_btnminus_actionAdapter(this));
+    btn0.setLabel("0");
+    btndecimal.setLabel(".");
+    btndecimal.addActionListener(new fracalc_btndecimal_actionAdapter(this));
+    btnplaceholder.setLabel("");
+    btnmultiply.setLabel("*");
+    btnmultiply.addActionListener(new fracalc_btnmultiply_actionAdapter(this));
+    btndivide.setLabel("/");
+    btndivide.addActionListener(new fracalc_btndivide_actionAdapter(this));
+    btnequals.setLabel("=");
+    btnequals.addActionListener(new fracalc_btnequals_actionAdapter(this));
+    contentPane.add(pnlnumbers, BorderLayout.CENTER);
+    pnlnumbers.add(btn7, null);
+    pnlnumbers.add(btn8, null);
+    pnlnumbers.add(btn9, null);
+    pnlnumbers.add(btn4, null);
+    pnlnumbers.add(btn5, null);
+    pnlnumbers.add(btn6, null);
+    pnlnumbers.add(btn1, null);
+    pnlnumbers.add(btn2, null);
+    pnlnumbers.add(btn3, null);
+    pnlnumbers.add(btnplaceholder, null);
+    pnlnumbers.add(btn0, null);
+    pnlnumbers.add(btndecimal, null);
+    contentPane.add(pnlbuttons, BorderLayout.EAST);
+    pnlbuttons.add(btnadd, null);
+    pnlbuttons.add(btnminus, null);
+    contentPane.add(lbldisplay, BorderLayout.NORTH);
+    pnlbuttons.add(btnmultiply, null);
+    pnlbuttons.add(btndivide, null);
+    pnlbuttons.add(btnequals, null);
 }
 
-//重写此方法以便在窗口关闭时可以退出程序
+// 重写此方法以便在窗口关闭时可以退出程序
 protected void processWindowEvent(WindowEvent e)
 {
     super.processWindowEvent(e);
@@ -1141,8 +1099,6 @@ class fracalc_btnequals_actionAdapter implements java.awt.event.ActionListener
 }
 ```
 
-
-
 ### 总结
 
 本章为你提供了 AWT 的基本概览。如果你之前未曾深入了解过抽象窗口工具包，确保理解本章所有重要概念至关重要。你已经接触了组件和容器，以及布局管理器。你看到了 AWT 和容器如何在应用程序和小程序中使用。你也看到了几个使用 AWT 的示例。至此，你应当对抽象窗口工具包有了基本的理解。
@@ -1151,33 +1107,33 @@ class fracalc_btnequals_actionAdapter implements java.awt.event.ActionListener
 
 ### 复习题
 
-- 1. 五种布局管理器是什么？
-- 2. 实际上属于 Window 类子类的两个组件是什么？
-- 3. 哪个组件必须与框架关联？
-- 4. 边界布局管理器的区域有哪些？
-- 5. 小程序的顶层组件是什么？
-- 6. 列出九个非容器 AWT 组件。
-- 7. Frame 类的默认布局管理器是什么？
-- 8. 用户点击按钮时，哪个事件被调用？
-- 9. Applet 是哪个类的子类型？
-- 10. Applet 类的默认布局管理器是什么？
+1. 五种布局管理器是什么？
+2. 实际上属于 `Window` 类子类的两个组件是什么？
+3. 哪个组件必须与框架关联？
+4. 边界布局管理器的区域有哪些？
+5. 小程序的顶层组件是什么？
+6. 列出九个非容器 AWT 组件。
+7. `Frame` 类的默认布局管理器是什么？
+8. 用户点击按钮时，哪个事件被调用？
+9. `Applet` 是哪个类的子类型？
+10. `Applet` 类的默认布局管理器是什么？
 
-# 第3章：用户输入
+# 第 3 章 用户输入
 
 本章涵盖以下内容：
 
-- JTextField
-- JPasswordField
-- JLabel
-- JTextArea
-- EditorKit
-- JTextPane
-- JEditorPane
-- JButton
+- `JTextField`
+- `JPasswordField`
+- `JLabel`
+- `JTextArea`
+- `EditorKit`
+- `JTextPane`
+- `JEditorPane`
+- `JButton`
 
 ## 引言
 
-既然你已经对抽象窗口工具包有了初步了解，是时候深入探讨 Swing 了。一个好的起点似乎是提供用户输入的方式。在任何应用程序中，从用户那里获取输入都至关重要。无论是控制台应用程序、AWT 应用程序，还是 JFC/Swing 应用程序，都是如此。但用户已经习惯了为输入提供多种选择。幸运的是，在 Java 基础类中，有几个 Swing 组件非常适合用户输入信息。你可能会考虑使用几种不同的组件进行用户输入；然而，有些比其他更合适。这些组件包括 JTextField、JLabel、JTextArea、JPasswordField、JTextPane 和 JEditorPane。
+既然你已经对抽象窗口工具包有了初步了解，是时候深入探讨 Swing 了。一个好的起点似乎是提供用户输入的方式。在任何应用程序中，从用户那里获取输入都至关重要。无论是控制台应用程序、AWT 应用程序，还是 JFC/Swing 应用程序，都是如此。但用户已经习惯了为输入提供多种选择。幸运的是，在 Java 基础类中，有几个 Swing 组件非常适合用户输入信息。你可能会考虑使用几种不同的组件进行用户输入；然而，有些比其他更合适。这些组件包括 `JTextField`、`JLabel`、`JTextArea`、`JPasswordField`、`JTextPane` 和 `JEditorPane`。
 
 在本章中，你将了解这些组件以及如何使用它们。表 3.1 总结了这些类的用途。
 
@@ -1185,53 +1141,64 @@ class fracalc_btnequals_actionAdapter implements java.awt.event.ActionListener
 
 | 类 | 用途 |
 | --- | --- |
-| JTextField | 允许输入和编辑单行文本 |
-| JPasswordField | 允许输入密码并在屏幕上显示密码字符，例如星号 |
-| JLabel | 允许向用户进行只读显示 |
-| JTextArea | 允许输入和编辑多行文本 |
-| JTextPane | 允许输入和编辑多行文本以及多种格式选项 |
-| JEditorPane | 允许输入和编辑多种格式的文本，包括 HTML 和富文本 (RTF) |
+| `JTextField` | 允许输入和编辑单行文本 |
+| `JPasswordField` | 允许输入密码并在屏幕上显示密码字符，例如星号 |
+| `JLabel` | 允许向用户进行只读显示 |
+| `JTextArea` | 允许输入和编辑多行文本 |
+| `JTextPane` | 允许输入和编辑多行文本以及多种格式选项 |
+| `JEditorPane` | 允许输入和编辑多种格式的文本，包括 HTML 和富文本 (RTF) |
 
 所有这些组件都旨在允许用户向程序提供输入。每个组件在输入方式或可接受的输入类型上有所不同。
 
 ### JTextField
 
- JTextField 是最基本的用户输入字段。它允许用户输入和编辑单行文本。此组件继承自 javax.swing.text.JTextComponent，而 JTextComponent 又继承自 javax.swing.JComponent。JTextComponent 是我们本章讨论的许多组件的基础类。 JTextField 类被设计为与 java.awt.TextField 类兼容，但它确实具有 java.awt.TextField 类所没有的功能。我们将在本节中探讨其中的一些功能。 JTextField 类最重要的方法及其用途总结在表 3.2 中。此表很重要，因为其中许多方法与本章涵盖的其他组件共享。
+`JTextField` 是最基本的用户输入字段。它允许用户输入和编辑单行文本。此组件继承自 `javax.swing.text.JTextComponent`，而 `JTextComponent` 又继承自 `javax.swing.JComponent`。`JTextComponent` 是我们本章讨论的许多组件的基础类。`JTextField` 类被设计为与 `java.awt.TextField` 类兼容，但它确实具有 `java.awt.TextField` 类所没有的功能。我们将在本节中探讨其中的一些功能。`JTextField` 类最重要的方法及其用途总结在表 3.2 中。此表很重要，因为其中许多方法与本章涵盖的其他组件共享。
 
 **表 3.2 JTextField 方法**
 
 | 方法 | 用途 |
 | :--- | :--- |
-| getHorizontalAlignment | public int getHorizontalAlignment()<br>此函数简单地返回文本的水平对齐方式。<br>有效键：JTextField.LEFT、JTextField.CENTER、JTextField.RIGHT、JTextField.LEADING 和 JTextField.TRAILING |
-| setHorizontalAlignment | public void setHorizontalAlignment(int alignment)<br>此函数是前一个函数的补充。它用于设置文本的水平对齐方式。<br>有效键：JTextField.LEFT、JTextField.CENTER、JTextField.RIGHT、JTextField.LEADING（默认值）和 JTextField.TRAILING |
-| getColumns | public int getColumns()<br>此函数简单地返回此 JTextField 中的列数。 |
-| setColumns | public void setColumns(int columns)<br>此函数用于设置此 JTextField 中的列数。 |
-| setFont | public void setFont(Font f)<br>此函数用于设置当前字体。 |
-| addActionListener | public void addActionListener(ActionListener l)<br>此函数将指定的操作监听器添加到此 JTextField 以接收操作事件。 |
-| removeActionListener | public void removeActionListener(ActionListener l)<br>此函数将移除指定的操作监听器，使其不再接收来自此 JTextField 的操作事件。 |
-| copy | public void copy()<br>此函数用于将关联文本模型中当前选定范围的副本传输到系统剪贴板，同时保留文本模型中的内容。 |
-| paste | public void paste()<br>此函数将系统剪贴板内容的副本传输到关联的文本模型中。如果关联视图中存在选择，则将其替换为剪贴板的内容。 |
-| getText | public String getText()。此函数用于检索此文本组件中包含的文本。 |
-| setText | public void setText(String t) 此方法将此文本组件的文本设置为指定的文本。如果文本为 null 或空，则其效果只是删除旧文本。 |
 
-除了你在表中看到的方法外，当然还有其他方法；然而，这些方法是与 JTextField 一起使用最频繁的方法。请记住，此组件的目的仅仅是允许用户输入单行文本。这意味着表中总结的大多数方法应以某种方式与实现该目标相关。例如，getText 方法允许你检索应用程序内部的代码。当然，setText 方法允许你将代码放入 JTextField 中。其他各种方法大多与格式化 JTextField 相关，使其以适合你的方式显示文本。
 
-除了类提供的方法外，该类还有几个不同的构造函数。它们总结在表 3.3 中。
+
+# 第 3 章
+
+## 用户输入组件
+
+### JTextField 方法
+
+| 方法 | 用途 |
+| :--- | :--- |
+| `getHorizontalAlignment()` | 此函数简单地返回文本的水平对齐方式。有效键：`JTextField.LEFT`、`JTextField.CENTER`、`JTextField.RIGHT`、`JTextField.LEADING` 和 `JTextField.TRAILING` |
+| `setHorizontalAlignment(int alignment)` | 此函数用于设置文本的水平对齐方式。有效键：`JTextField.LEFT`、`JTextField.CENTER`、`JTextField.RIGHT`、`JTextField.LEADING`（默认值）和 `JTextField.TRAILING` |
+| `getColumns()` | 此函数简单地返回此 `JTextField` 中的列数。 |
+| `setColumns(int columns)` | 此函数用于设置此 `JTextField` 中的列数。 |
+| `setFont(Font f)` | 此函数用于设置当前字体。 |
+| `addActionListener(ActionListener l)` | 此函数将指定的操作监听器添加到此 `JTextField` 以接收操作事件。 |
+| `removeActionListener(ActionListener l)` | 此函数将移除指定的操作监听器，使其不再接收来自此 `JTextField` 的操作事件。 |
+| `copy()` | 此函数用于将关联文本模型中当前选定范围的副本传输到系统剪贴板，同时保留文本模型中的内容。 |
+| `paste()` | 此函数将系统剪贴板内容的副本传输到关联的文本模型中。如果关联视图中存在选择，则将其替换为剪贴板的内容。 |
+| `getText()` | 此函数用于检索此文本组件中包含的文本。 |
+| `setText(String t)` | 此方法将此文本组件的文本设置为指定的文本。如果文本为 null 或空，则其效果只是删除旧文本。 |
+
+除了表中看到的方法外，当然还有其他方法；然而，这些方法是与 `JTextField` 一起使用最频繁的方法。请记住，此组件的目的仅仅是允许用户输入单行文本。这意味着表中总结的大多数方法应以某种方式与实现该目标相关。例如，`getText` 方法允许你检索应用程序内部的代码。当然，`setText` 方法允许你将代码放入 `JTextField` 中。其他各种方法大多与格式化 `JTextField` 相关，使其以适合你的方式显示文本。
+
+### JTextField 构造函数
 
 **表 3.3 JTextField 构造函数**
 
 | 构造函数 | 用途 |
-|---|---|
-| JTextField() | 此构造函数简单地创建一个新的 JTextField。 |
-| JTextField(String text) | 此构造函数创建一个新的 JTextField，但该字段使用指定的文本初始化。 |
-| JTextField(int columns) | 此构造函数构建一个新的空 JTextField，具有指定的列数。 |
-| JTextField(String text, int columns) | 此构造函数构建一个新的 JTextField，该字段使用指定的文本和特定列数进行初始化。 |
+| :--- | :--- |
+| `JTextField()` | 此构造函数简单地创建一个新的 `JTextField`。 |
+| `JTextField(String text)` | 此构造函数创建一个新的 `JTextField`，但该字段使用指定的文本初始化。 |
+| `JTextField(int columns)` | 此构造函数构建一个新的空 `JTextField`，具有指定的列数。 |
+| `JTextField(String text, int columns)` | 此构造函数构建一个新的 `JTextField`，该字段使用指定的文本和特定列数进行初始化。 |
 
-既然你已经阅读了一些关于 JTextField 类的内容，最好看一个使用此 JTextField 的实际示例。
+既然你已经阅读了一些关于 `JTextField` 类的内容，最好看一个使用此 `JTextField` 的实际示例。
 
 ### 示例 3.1
 
-此示例简单地向你展示了 JTextField 类的一些用途。我将使用 JBuilder 为你逐步讲解示例。但是，如果你没有 JBuilder（即使是早期版本也可以），那么请直接跳到源代码清单，在你喜欢的文本编辑器中输入该代码，并像编译任何其他 Java 程序一样使用 Sun Java Development Kit 编译器进行编译。
+此示例简单地向你展示了 `JTextField` 类的一些用途。我将使用 JBuilder 为你逐步讲解示例。但是，如果你没有 JBuilder（即使是早期版本也可以），那么请直接跳到源代码清单，在你喜欢的文本编辑器中输入该代码，并像编译任何其他 Java 程序一样使用 Sun Java Development Kit 编译器进行编译。
 
 > **注意：** 在所有 JBuilder 示例中，我提供完整的源代码，以便不使用 JBuilder 的读者可以使用他们希望的任何 Java 编译器。提供完整代码也是为了让你在示例无法工作时，可以将自己的代码与示例源代码进行比较。
 
@@ -1239,59 +1206,35 @@ class fracalc_btnequals_actionAdapter implements java.awt.event.ActionListener
 
 **步骤 1：** 打开 JBuilder 并启动一个新项目。你需要使用适合你的任何位置和名称；此处的图片显示了我机器上的设置。以下图片显示了通过新建项目向导的步骤。但是，除了路径和项目名称外，如果你愿意，只需使用默认设置即可。
 
-
-
-### 56 ■ 第三章
-
-图3.1 项目向导 步骤1
-
-图3.2 项目向导 步骤2
-
-图3.3 项目向导 步骤3
-
-步骤2：既然你已经启动了一个JBuilder项目，你可以向其中添加多种不同类型的源文件。当你选择一种源文件类型时，你会得到为它编写好的所有基本代码。为了本例的目的，只需选择**应用程序**。
-
-图3.4 选择应用程序
+**步骤 2：** 既然你已经启动了一个 JBuilder 项目，你可以向其中添加多种不同类型的源文件。当你选择一种源文件类型时，你会得到为它编写好的所有基本代码。为了本例的目的，只需选择**应用程序**。
 
 这将引导你完成所选特定对象的向导。在我们的例子中，你可以使用下图所示的默认设置。
 
-图3.5 应用程序向导 步骤1
+请注意此屏幕，你可以请求将多个项目添加到你的应用程序中。我们在这里不使用这些功能（但稍后会用到）。然而，请注意，JBuilder 可以为你创建诸如工具栏和“关于”对话框等项目的代码。这是一个非常有用的功能。
 
-图3.6 应用程序向导 步骤2
+当你完成此向导后，你将看到源代码的框架。请注意，其中包含一个 `Frame` 类的代码。回顾一下，对于应用程序，必须有一个容器类来放置组件类。对于小程序（applet）则不是这样，因为浏览器本身提供了一个容器。
 
-请注意此屏幕，你可以请求将多个项目添加到你的应用程序中。我们在这里不使用这些功能（但稍后会用到）。然而，请注意，JBuilder可以为你创建诸如工具栏和“关于”对话框等项目的代码。这是一个非常有用的功能。
+**步骤 3：** 你当然可以在这个代码窗口中直接添加你的代码。但是，在设计窗口上添加组件要快得多、容易得多。点击屏幕底部的**设计**选项卡，你会看到一个可以直接在框架上放置组件的窗口。
 
-当你完成此向导后，你将看到源代码的框架。请注意，其中包含一个Frame类的代码。回顾一下，对于应用程序，必须有一个容器类来放置组件类。对于小程序（applet）则不是这样，因为浏览器本身提供了一个容器。
+从左数第六个组件是 `JTextField`。我们打算在屏幕上放置两个这样的组件。
 
-图3.7 一个容器
+> 注意：框架默认使用边界布局。如果你保持这种布局，请不要将你的 `JTextField` 放在中心位置，否则它会占据整个屏幕。在本例中，我将它分别放在北边和南边。
 
-**步骤3：** 你当然可以在这个代码窗口中直接添加你的代码。但是，在设计窗口上添加组件要快得多、容易得多。点击屏幕底部的**设计**选项卡，你会看到一个可以直接在框架上放置组件的窗口。
+你可能也需要暂停片刻，查看屏幕右侧的属性窗口。在这里你可以设置 `JTextField` 的许多属性。大多数属性的含义不言自明（对齐、背景、工具提示文本、文本等）。
 
-图3.8 设计选项卡
+**步骤 4：** 让我们返回代码窗口来输入一些代码。如果你只需双击一个 `JTextField`，该 `JTextField` 的 action 事件将被添加到你的源代码中，并且你会被直接带到那里（这多方便啊！）。
 
-从左数第六个组件是JTextField。我们打算在屏幕上放置两个这样的组件。
+我只向这个 action 事件添加了一行代码：
 
-> 注意：框架默认使用边界布局。如果你保持这种布局，请不要将你的JTextField放在中心位置，否则它会占据整个屏幕。在本例中，我将它分别放在北边和南边。
-
-你可能也需要暂停片刻，查看屏幕右侧的属性窗口。在这里你可以设置JTextField的许多属性。大多数属性的含义不言自明（对齐、背景、工具提示文本、文本等）。
-
-图3.9 放置两个JTextField
-
-**步骤4：** 让我们返回代码窗口来输入一些代码。如果你只需双击一个JTextField，该JTextField的action事件将被添加到你的源代码中，并且你会被直接带到那里（这多方便啊！）。
-
-我只向这个action事件添加了一行代码：
-
-```
+```java
 jTextField2.setText(jTextField1.getText());
 ```
 
-当我在第一个JTextField中输入一些内容并按下回车键时，它会被复制到第二个JTextField中。这段代码可能并不特别令人兴奋，但它确实演示了JTextField的基础知识。具体来说，它演示了getText和setText方法以及JBuilder的一些有用功能。迄今为止，getText和setText方法是JTextField类中最常用的方法。
+当我在第一个 `JTextField` 中输入一些内容并按下回车键时，它会被复制到第二个 `JTextField` 中。这段代码可能并不特别令人兴奋，但它确实演示了 `JTextField` 的基础知识。具体来说，它演示了 `getText` 和 `setText` 方法以及 JBuilder 的一些有用功能。迄今为止，`getText` 和 `setText` 方法是 `JTextField` 类中最常用的方法。
 
-图3.10 使用JTextField
+对于那些没有 JBuilder 或者只是想检查自己代码的人，以下是完整的源代码：
 
-对于那些没有JBuilder或者只是想检查自己代码的人，以下是完整的源代码：
-
-```
+```java
 package example03;
 import java.awt.*;
 import java.awt.event.*;
@@ -1349,56 +1292,56 @@ public class Frame1 extends JFrame
 }
 ```
 
-如你所见，JBuilder为你生成了大量代码。这非常有用，因为它让你能够专注于手头的实际任务，而无需担心基础知识。现在，是时候看看其他一些输入组件了。
+如你所见，JBuilder 为你生成了大量代码。这非常有用，因为它让你能够专注于手头的实际任务，而无需担心基础知识。现在，是时候看看其他一些输入组件了。
 
 ### JPasswordField
 
-JPasswordField类相当简单直接。它的目的是为用户提供一个输入密码的地方。它与JTextField非常相似，唯一的区别在于其显示文本的方式。它不是将按键显示在屏幕上，而是显示一个密码字符。它与JTextField共享大多数方法。事实上，JPasswordField组件继承自JTextField。这意味着它拥有JTextField的所有方法，外加一些额外的方法。此类独有的方法总结在下表中。
+`JPasswordField` 类相当简单直接。它的目的是为用户提供一个输入密码的地方。它与 `JTextField` 非常相似，唯一的区别在于其显示文本的方式。它不是将按键显示在屏幕上，而是显示一个密码字符。它与 `JTextField` 共享大多数方法。事实上，`JPasswordField` 组件继承自 `JTextField`。这意味着它拥有 `JTextField` 的所有方法，外加一些额外的方法。此类独有的方法总结在下表中。
 
-#### 表3.4 JPasswordField方法
+#### 表 3.4 JPasswordField 方法
 
 | 方法 | 用途 |
 | :--- | :--- |
-| setEchoChar(char c) | 此方法为这个JPasswordField设置回显字符。这可能是此类最重要的方法。 |
-| char getText() | 此方法已被弃用。自Java 2平台v1.2起，它已被getPassword()取代。这意味着它不再打算使用，但仍然有效。 |
-| char[] getPassword() | 这是用于返回此组件中包含的文本的方法。 |
-| char getEchoChar() | 这是用于检索要用于回显的字符的方法。 |
-| append(string) | 此函数接受一个字符串，并简单地将其追加到现有文本中。 |
+| `setEchoChar(char c)` | 此方法为这个 `JPasswordField` 设置回显字符。这可能是此类最重要的方法。 |
+| `getText()` | 此方法已被弃用。自 Java 2 平台 v1.2 起，它已被 `getPassword()` 取代。这意味着它不再打算使用，但仍然有效。 |
+| `getPassword()` | 这是用于返回此组件中包含的文本的方法。 |
+| `getEchoChar()` | 这是用于检索要用于回显的字符的方法。 |
+| `append(string)` | 此函数接受一个字符串，并简单地将其追加到现有文本中。 |
 
-所有这些方法都与如何在不让旁观者从屏幕上读取密码的情况下显示密码有关。请记住，此类还拥有它从JTextField继承的所有方法。除了这些方法之外，JPasswordField还具有多种构造函数选项。每个构造函数都用于以略有不同的参数构建JPasswordField。表3.5总结了这些构造函数。
+所有这些方法都与如何在不让旁观者从屏幕上读取密码的情况下显示密码有关。请记住，此类还拥有它从 `JTextField` 继承的所有方法。除了这些方法之外，`JPasswordField` 还具有多种构造函数选项。每个构造函数都用于以略有不同的参数构建 `JPasswordField`。表 3.5 总结了这些构造函数。
 
-#### 表3.5 JPasswordField构造函数
+#### 表 3.5 JPasswordField 构造函数
 
 | 构造函数 | 用途 |
 | :--- | :--- |
-| JPasswordField() | 此构造函数创建一个新的、空白的JPasswordField，没有列数。 |
-| JPasswordField(Document doc, String txt, int columns) | 此构造函数创建一个新的JPasswordField，使用给定的文本存储模型和指定的列数。 |
-| JPasswordField(int columns) | 此构造函数将创建一个新的、空的JPasswordField，具有指定的列数。 |
-| JPasswordField(String text) | 此构造函数创建一个新的JPasswordField，用指定的文本初始化。 |
-| JPasswordField(String text, int columns) | 此构造函数将创建一个新的JPasswordField，用指定的文本和指定的列数初始化。 |
+| `JPasswordField()` | 此构造函数创建一个新的、空白的 `JPasswordField`，没有列数。 |
+| `JPasswordField(Document doc, String txt, int columns)` | 此构造函数创建一个新的 `JPasswordField`，使用给定的文本存储模型和指定的列数。 |
+| `JPasswordField(int columns)` | 此构造函数将创建一个新的、空的 `JPasswordField`，具有指定的列数。 |
+| `JPasswordField(String text)` | 此构造函数创建一个新的 `JPasswordField`，用指定的文本初始化。 |
+| `JPasswordField(String text, int columns)` | 此构造函数将创建一个新的 `JPasswordField`，用指定的文本和指定的列数初始化。 |
 
-由于此组件在功能上与JTextField几乎完全相同，因此这里没有提供其用法的明确示例。那将是多余的，并且浪费空间。相反，本章后面提供的示例将几个这样相对简单的组件组合成一个单独的示例，说明了所有这些组件的用法。
+由于此组件在功能上与 `JTextField` 几乎完全相同，因此这里没有提供其用法的明确示例。那将是多余的，并且浪费空间。相反，本章后面提供的示例将几个这样相对简单的组件组合成一个单独的示例，说明了所有这些组件的用法。
 
 ### JLabel
 
-与其他类相比，JLabel类相对简单，但相当重要。此类允许你向用户提供只读文本。标签在标识应用程序中的其他可视化组件时非常有用。例如，如果你想让用户在JTextField中输入她的名字，在旁边放一个写着“请输入姓名”的JLabel可能是个好主意。此类可能是你在本章中遇到的最简单的类。然而，与本章中的许多组件不同，此组件直接继承自JComponent，而不是JTextComponent。这意味着有几个属性和方法JLabel不与本章中的其他组件共享。其最常用的方法总结在表
+与其他类相比，`JLabel` 类相对简单，但相当重要。此类允许你向用户提供只读文本。标签在标识应用程序中的其他可视化组件时非常有用。例如，如果你想让用户在 `JTextField` 中输入她的名字，在旁边放一个写着“请输入姓名”的 `JLabel` 可能是个好主意。此类可能是你在本章中遇到的最简单的类。然而，与本章中的许多组件不同，此组件直接继承自 `JComponent`，而不是 `JTextComponent`。这意味着有几个属性和方法 `JLabel` 不与本章中的其他组件共享。其最常用的方法总结在表 3.6。由于标签通常在应用程序启动时设置且保持不变，因此我在这里也包含了构造方法。
 
-3.6. 由于标签（label）通常在应用程序启动时设置且保持不变，因此我在这里也包含了构造方法。
+#### 表 3.6 JLabel 方法
 
-表 3.6 JLabel 方法
 | 方法 | 用途 |
-|---|---|
-| `icon getDisabledIcon()` | 此函数用于返回 `disabledIcon` 属性的值（如果该属性已被设置）。如果未设置且 `icon` 属性的值是 `ImageIcon`，则我们计算一个“灰色”版本的图标并用其更新 `disabledIcon` 属性。 |
-| `icon getIcon()` | 此方法将返回标签显示的图形图像（如果有的话）。 |
-| `string getText()` | 此方法简单地返回标签显示的文本字符串。 |
-| `void setIcon(Icon icon)` | 此函数用于设置此组件将显示的图标。 |
-| `void setText(String text)` | 此方法用于设置此组件将显示的文本。 |
+| :--- | :--- |
+| `getDisabledIcon()` | 此函数用于返回 `disabledIcon` 属性的值（如果该属性已被设置）。如果未设置且 `icon` 属性的值是 `ImageIcon`，则我们计算一个“灰色”版本的图标并用其更新 `disabledIcon` 属性。 |
+| `getIcon()` | 此方法将返回标签显示的图形图像（如果有的话）。 |
+| `getText()` | 此方法简单地返回标签显示的文本字符串。 |
+| `setIcon(Icon icon)` | 此函数用于设置此组件将显示的图标。 |
+| `setText(String text)` | 此方法用于设置此组件将显示的文本。 |
 
 这些方法的目的相当直接。它们用于在运行时设置或检索 `JLabel` 要显示的文本或图像。`JLabel` 是一个相当简单的组件，其唯一目的是以静态或只读格式向用户显示文本或图像。除了上表所示的方法外，`JLabel` 当然还有几个构造选项。这些总结在表 3.7 中。
 
-表 3.7 JLabel 构造方法
+#### 表 3.7 JLabel 构造方法
+
 | 构造方法 | 用途 |
-|---|---|
+| :--- | :--- |
 | `JLabel()` | 此构造方法用于创建一个当前未显示任何内容的 `JLabel` 实例。 |
 | `JLabel(String text)` | 此构造方法创建一个具有指定文本的 `JLabel`。 |
 | `JLabel(String text, int horizontalAlignment)` | 此构造方法创建一个具有指定文本和指定水平对齐方式的 `JLabel` 实例。 |
@@ -1414,23 +1357,25 @@ JPasswordField类相当简单直接。它的目的是为用户提供一个输入
 
 AWT 有一个此组件的版本，简单称为 `TextArea`。它原生地处理滚动（如果文本超出了组件的范围）；然而，`JTextArea` 并不这样做。相反，它实现了 Swing 的 `Scrollable` 接口。这允许它被放置在 `JScrollPane` 内，如果需要滚动行为的话。此类共享在 `JTextField` 中找到的许多方法。下表总结了一些 `JTextArea` 独有或实现方式稍有不同的方法。
 
-表 3.8 JTextArea 方法
+#### 表 3.8 JTextArea 方法
+
 | 方法 | 用途 |
-|---|---|
-| `void append(String str)` | 此方法将传递给它的文本追加到文档的末尾。 |
-| `int getLineCount()` | 此方法返回 `JTextArea` 当前包含的行数。 |
-| `boolean getLineWrap()` | 此方法返回文本区域的换行策略——如果换行开启则为 `true`，否则为 `false`。 |
-| `int getColumns()` | 此方法将简单地返回 `JTextArea` 中的列数。 |
-| `int getRows()` | 此方法将返回 `JTextArea` 中的行数，作为整数值。 |
-| `void setLineWrap(boolean wrap)` | 此方法用于设置 `JTextArea` 的换行策略——`true` 表示开启换行，`false` 表示关闭。 |
+| :--- | :--- |
+| `append(String str)` | 此方法将传递给它的文本追加到文档的末尾。 |
+| `getLineCount()` | 此方法返回 `JTextArea` 当前包含的行数。 |
+| `getLineWrap()` | 此方法返回文本区域的换行策略——如果换行开启则为 `true`，否则为 `false`。 |
+| `getColumns()` | 此方法将简单地返回 `JTextArea` 中的列数。 |
+| `getRows()` | 此方法将返回 `JTextArea` 中的行数，作为整数值。 |
+| `setLineWrap(boolean wrap)` | 此方法用于设置 `JTextArea` 的换行策略——`true` 表示开启换行，`false` 表示关闭。 |
 
 如您所见，这些方法大多涉及设置 `JTextArea` 组件中文本的格式，特别是行数、列数和换行等项目。其他方法如 `getText` 和 `setText` 与 `JTextField` 类中的相同。
 
 除了所示的方法（以及您可以在 JBuilder 帮助文件中找到的其他方法）之外，此类还有几个不同的构造方法，每个都有其自己的目的。表 3.9 为您总结了这些。
 
-表 3.9 JTextArea 构造方法
+#### 表 3.9 JTextArea 构造方法
+
 | 构造方法 | 用途 |
-|---|---|
+| :--- | :--- |
 | `JTextArea()` | 此构造方法创建一个新的 `JTextArea` 类实例，其中没有任何默认文本（即，一个空白的实例）。 |
 | `JTextArea(Document doc)` | 此构造方法将使用给定的文档模型创建一个新的 `JTextArea`。 |
 | `JTextArea(String text)` | 此构造方法用于创建一个新的 `JTextArea`，并显示指定的文本。 |
@@ -1446,34 +1391,20 @@ AWT 有一个此组件的版本，简单称为 `TextArea`。它原生地处理�
 
 **步骤 2：** 使用屏幕底部的 Design 选项卡，以便您可以将各种组件图形化地放置在屏幕上。这正是我们在前面的示例中放置组件的方式。然后将布局管理器更改为 `FlowLayout`。各种布局管理器将在下一章中更详细地讨论。现在，您只需要理解布局管理器决定了其他组件将在屏幕上如何布局。
 
-### 第 3 章
-
-![](img/6ac84fdff518ea769f07b6e3d911391e_85_0.png)
-
-图 3.11 布局管理器
-
-现在的目标是在屏幕上放置各种组件，以便我们了解如何使用它们。我们将一个 `JLabel`（其文本已更改，如下图所示）、一个 `JTextArea` 和一个 `JTextField` 放在屏幕上，如图 3.12 所示。
-
-![](img/6ac84fdff518ea769f07b6e3d911391e_85_1.png)
-
-图 3.12 组件布局
-
 **步骤 3：** 双击文本区域，您将进入其操作事件。放置您在此处看到的这一行代码：
 
-```
+```java
 void jTextField1_actionPerformed(ActionEvent e)
 {
     jTextArea1.append(jTextField1.getText());
 }
 ```
 
-现在，每次您在 `jTextField1` 上按下 Enter 键时，其内容将被追加到 `jTextArea1`，如图 3.13 所示。
-
-![](img/6ac84fdff518ea769f07b6e3d911391e_86_0.png)
+现在，每次您在 `jTextField1` 上按下 Enter 键时，其内容将被追加到 `jTextArea1`。
 
 未使用 JBuilder 的读者只需将以下代码输入到他们喜欢的文本编辑器中并编译即可：
 
-```
+```java
 package untitled1;
 import java.awt.*;
 import java.awt.event.*;
@@ -1483,156 +1414,147 @@ public class Frame1 extends JFrame
     private JPanel contentPane;
     private JLabel jLabel1 = new JLabel();
     private FlowLayout flowLayout1 = new FlowLayout();
-```
-
-
-
-private JTextField jTextField1 = new JTextField();
-private JTextArea jTextArea1 = new JTextArea();
-
-// 构造窗体
-public Frame1()
-{
-    enableEvents(AWTEvent.WINDOW_EVENT_MASK);
-    try
+    private JTextField jTextField1 = new JTextField();
+    private JTextArea jTextArea1 = new JTextArea();
+    // 构造窗体
+    public Frame1()
     {
-        jbInit();
-    }    // 结束 try 块
-    catch(Exception e)
-    {
-        e.printStackTrace();
-    }    // 结束 catch 块
-}    // 结束窗体构造函数
-
-// 组件初始化
-private void jbInit() throws Exception
-{
-    contentPane = (JPanel) this.getContentPane();
-    jLabel1.setText("Type text then press enter");
-    contentPane.setLayout(flowLayout1);
-    this.setSize(new Dimension(400, 300));
-    this.setTitle("Frame Title");
-    jTextField1.setText("jTextField1");
-    jTextField1.addActionListener(new java.awt.event
-        .ActionListener()
-    {
-        public void actionPerformed(ActionEvent e)
+        enableEvents(AWTEvent.WINDOW_EVENT_MASK);
+        try
         {
-            jTextField1_actionPerformed(e);
+            jbInit();
         }
-    });
-    jTextArea1.setText("jTextArea1");
-    contentPane.add(jLabel1, null);
-    contentPane.add(jTextField1, null);
-    contentPane.add(jTextArea1, null);
-}
-
-// 重写以在窗体关闭时退出
-protected void processWindowEvent(WindowEvent e)
-{
-    super.processWindowEvent(e);
-    if (e.getID() == WindowEvent.WINDOW_CLOSING)
+        catch(Exception e)
+        {
+            e.printStackTrace();
+        }
+    }
+    // 组件初始化
+    private void jbInit() throws Exception
     {
-        System.exit(0);
-    }    // 结束 if
-} // 结束函数
-
-void jTextField1_actionPerformed(ActionEvent e)
-{
-    jTextArea1.append(jTextField1.getText());
-} // 结束事件处理方法
-} // 结束类
+        contentPane = (JPanel) this.getContentPane();
+        jLabel1.setText("Type text then press enter");
+        contentPane.setLayout(flowLayout1);
+        this.setSize(new Dimension(400, 300));
+        this.setTitle("Frame Title");
+        jTextField1.setText("jTextField1");
+        jTextField1.addActionListener(new java.awt.event
+            .ActionListener()
+        {
+            public void actionPerformed(ActionEvent e)
+            {
+                jTextField1_actionPerformed(e);
+            }
+        });
+        jTextArea1.setText("jTextArea1");
+        contentPane.add(jLabel1, null);
+        contentPane.add(jTextField1, null);
+        contentPane.add(jTextArea1, null);
+    }
+    // 重写以在窗体关闭时退出
+    protected void processWindowEvent(WindowEvent e)
+    {
+        super.processWindowEvent(e);
+        if (e.getID() == WindowEvent.WINDOW_CLOSING)
+        {
+            System.exit(0);
+        }
+    }
+    void jTextField1_actionPerformed(ActionEvent e)
+    {
+        jTextArea1.append(jTextField1.getText());
+    }
+}
+```
 
 ## EditorKit
 
-您会注意到接下来的两个类都使用了名为 EditorKit 的方法。因此，在介绍使用它的类之前，先向您介绍这个组件似乎是明智的。该类为文本组件成为某种文本内容的功能齐全的编辑器建立了一组所需的东西。工具包可以安全地将编辑状态存储为工具包的实例。工具包将专用于一个文本组件。新的工具包通常通过克隆原型工具包来创建。将调用工具包的 setComponent 方法以建立其与 JTextComponent 的关系。
+您会注意到接下来的两个类都使用了名为 `EditorKit` 的方法。因此，在介绍使用它的类之前，先向您介绍这个组件似乎是明智的。该类为文本组件成为某种文本内容的功能齐全的编辑器建立了一组所需的东西。工具包可以安全地将编辑状态存储为工具包的实例。工具包将专用于一个文本组件。新的工具包通常通过克隆原型工具包来创建。将调用工具包的 `setComponent` 方法以建立其与 `JTextComponent` 的关系。
 
 ### JTextPane
 
-JTextPane 与 JTextArea 有一些相似之处，因为它也可以容纳多行文本。但是，您会使用 JTextPane 的原因是其格式化功能。通过 JTextPane，您可以像文字处理器一样，逐个字符地格式化文本。本质上，此类为您提供了一个文本编辑器。此类提供了各种允许您进行格式化的方法。此类继承自 JEditorPane，而 JEditorPane 又继承自 JTextComponent。当然，它也与 JTextField 和 JTextArea 共享许多方法。表 3.10 总结了 JTextPane 独有的字段。
+`JTextPane` 与 `JTextArea` 有一些相似之处，因为它也可以容纳多行文本。但是，您会使用 `JTextPane` 的原因是其格式化功能。通过 `JTextPane`，您可以像文字处理器一样，逐个字符地格式化文本。本质上，此类为您提供了一个文本编辑器。此类提供了各种允许您进行格式化的方法。此类继承自 `JEditorPane`，而 `JEditorPane` 又继承自 `JTextComponent`。当然，它也与 `JTextField` 和 `JTextArea` 共享许多方法。表 3.10 总结了 `JTextPane` 独有的字段。
 
-表 3.10 JTextPane 方法
+#### 表 3.10 JTextPane 方法
 
 | 方法 | 目的 |
-| --- | --- |
-| Style addStyle(String nm, Style parent) | 此方法用于将新样式添加到逻辑样式层次结构中。 |
-| Style getLogicalStyle() | 此方法将返回分配给由插入符当前位置表示的段落的逻辑样式，如果不存在则返回 null。 |
-| Style getStyle(String nm) | 此方法将返回先前添加的具有指定名称的非空样式。 |
-| getCharacterAttributes() | 此方法将返回插入符当前位置生效的字符属性，如果不存在则返回 null。 |
-| getParagraphAttributes() | 此方法用于返回插入符位置生效的当前段落属性，如果不存在则返回 null。 |
-| insertIcon(Icon g) | 此方法用于将图标作为替换当前选定内容插入到文档中。 |
-| removeStyle(String nm) | 此方法从文档中移除先前添加的具有指定名称的非空样式。 |
-| setDocument(Document doc) | 此方法用于为编辑器设置文本文档。 |
-| setLogicalStyle(Style s) | 此方法用于设置要在当前插入符位置的段落使用的逻辑样式。 |
-| protected EditorKit createDefaultEditorKit() | 此方法将为组件首次创建时创建默认编辑器工具包（PlainEditorKit）。 |
-| protected StyledEditorKit getStyledEditorKit() | 此方法将检索编辑器工具包。 |
+| :--- | :--- |
+| `addStyle(String nm, Style parent)` | 此方法用于将新样式添加到逻辑样式层次结构中。 |
+| `getLogicalStyle()` | 此方法将返回分配给由插入符当前位置表示的段落的逻辑样式，如果不存在则返回 null。 |
+| `getStyle(String nm)` | 此方法将返回先前添加的具有指定名称的非空样式。 |
+| `getCharacterAttributes()` | 此方法将返回插入符当前位置生效的字符属性，如果不存在则返回 null。 |
+| `getParagraphAttributes()` | 此方法用于返回插入符位置生效的当前段落属性，如果不存在则返回 null。 |
+| `insertIcon(Icon g)` | 此方法用于将图标作为替换当前选定内容插入到文档中。 |
+| `removeStyle(String nm)` | 此方法从文档中移除先前添加的具有指定名称的非空样式。 |
+| `setDocument(Document doc)` | 此方法用于为编辑器设置文本文档。 |
+| `setLogicalStyle(Style s)` | 此方法用于设置要在当前插入符位置的段落使用的逻辑样式。 |
+| `createDefaultEditorKit()` | 此方法将为组件首次创建时创建默认编辑器工具包（`PlainEditorKit`）。 |
+| `getStyledEditorKit()` | 此方法将检索编辑器工具包。 |
 
-其中一些方法可能让您感到奇怪。您可能已经注意到，这些方法中有几个要么接受要么返回类型为 Style 的项。Style 是一个接口，本质上是一组与文档中某个元素关联的属性。其他与该元素关联的自定义属性实际上是在层次结构中存在的名称-值对，如果未在本地找到名称（键），则请求将被转发给父级。常用属性被分离出来，以促进更高效的替代实现。
+其中一些方法可能让您感到奇怪。您可能已经注意到，这些方法中有几个要么接受要么返回类型为 `Style` 的项。`Style` 是一个接口，本质上是一组与文档中某个元素关联的属性。其他与该元素关联的自定义属性实际上是在层次结构中存在的名称-值对，如果未在本地找到名称（键），则请求将被转发给父级。常用属性被分离出来，以促进更高效的替代实现。
 
-与我们研究的其他用户输入类不同，JTextPane 只有两个构造函数，总结在表 3.11 中。
+与我们研究的其他用户输入类不同，`JTextPane` 只有两个构造函数，总结在表 3.11 中。
 
-表 3.11 JTextPane 构造函数
+#### 表 3.11 JTextPane 构造函数
 
 | 构造函数 | 目的 |
 | :--- | :--- |
-| JTextPane() | 此构造函数是默认的、无参数构造函数，用于创建一个空白的 JTextPane。 |
-| JTextPane(StyledDocument doc) | 此构造函数用于使用指定的文档模型创建一个新的 JTextPane。 |
+| `JTextPane()` | 此构造函数是默认的、无参数构造函数，用于创建一个空白的 `JTextPane`。 |
+| `JTextPane(StyledDocument doc)` | 此构造函数用于使用指定的文档模型创建一个新的 `JTextPane`。 |
 
-这个特定组件的使用频率不如其他一些组件。事实上，您可能编程多年而从未有机会使用它。因此，本书不会深入探讨其用法。但是，提供了这个基本的介绍，以便您至少对 JTextPane 是什么以及它能做什么有一些基本的了解。
+这个特定组件的使用频率不如其他一些组件。事实上，您可能编程多年而从未有机会使用它。因此，本书不会深入探讨其用法。但是，提供了这个基本的介绍，以便您至少对 `JTextPane` 是什么以及它能做什么有一些基本的了解。
 
 ### JEditorPane
 
-此组件与 JTextPane 非常相似。然而，它不是允许您编辑基本文本，而是允许您在文本、HTML 和 RTF（富文本格式）样式之间进行选择。请注意，它使您能够处理 HTML，从而允许您创建 HTML 编辑器。此类继承自 javax.swing.text.JTextComponent。
+此组件与 `JTextPane` 非常相似。然而，它不是允许您编辑基本文本，而是允许您在文本、HTML 和 RTF（富文本格式）样式之间进行选择。请注意，它使您能够处理 HTML，从而允许您创建 HTML 编辑器。此类继承自 `javax.swing.text.JTextComponent`。
 
-正如您可能猜到的，此类与 JTextPane 共享几个方法。那些它不与 JTextPane 共享并且实现方式不同的方法总结在表 3.12 中。这些方法主要涉及如何将文本加载到 JEditorPane 中。
+正如您可能猜到的，此类与 `JTextPane` 共享几个方法。那些它不与 `JTextPane` 共享并且实现方式不同的方法总结在表 3.12 中。这些方法主要涉及如何将文本加载到 `JEditorPane` 中。
 
-表 3.12 JEditorPane 方法
+#### 表 3.12 JEditorPane 方法
 
 | 方法 | 目的 |
-| --- | --- |
-| void setText(String t) | setText 方法用于从字符串初始化组件。在这种情况下，将使用当前的 EditorKit，并且内容类型应为该类型。 |
-| void read(Reader r) | read 方法用于从读取器初始化组件。请注意，如果内容类型是 HTML，除非使用 <base> 标签或设置了 HTMLDocument 的 Base 属性，否则相对引用（例如，对于图像等）将无法解析。 |
-| void setPage(String url) | setPage 方法用于从 URL 初始化组件。在这种情况下，内容类型将由 URL 确定，并且将设置该内容类型的已注册 EditorKit。 |
-| void addHyperlinkListener(HyperlinkListener listener) | 此方法添加一个超链接监听器，用于通知任何更改（例如，当链接被选中并进入时）。 |
-| void fireHyperlinkUpdate(HyperlinkEvent e) | 此方法通知所有已注册对此事件类型通知感兴趣的监听器。 |
-| URL getPage() | 此方法返回当前正在显示的 URL。 |
-| EditorKit getEditorKit() | 此方法检索当前安装的用于处理内容的工具包。 |
-| protected InputStream getStream(URL page) | 此方法检索给定 URL 的输入流，该 URL 即将由 setPage 方法加载。 |
-| void read(InputStream in, Object desc) | 此方法从输入流初始化。 |
+| :--- | :--- |
+| `setText(String t)` | `setText` 方法用于从字符串初始化组件。在这种情况下，将使用当前的 `EditorKit`，并且内容类型应为该类型。 |
+| `read(Reader r)` | `read` 方法用于从读取器初始化组件。请注意，如果内容类型是 HTML，除非使用 `<base>` 标签或设置了 `HTMLDocument` 的 Base 属性，否则相对引用（例如，对于图像等）将无法解析。 |
+| `setPage(String url)` | `setPage` 方法用于从 URL 初始化组件。在这种情况下，内容类型将由 URL 确定，并且将设置该内容类型的已注册 `EditorKit`。 |
+| `addHyperlinkListener(HyperlinkListener listener)` | 此方法添加一个超链接监听器，用于通知任何更改（例如，当链接被选中并进入时）。 |
+| `fireHyperlinkUpdate(HyperlinkEvent e)` | 此方法通知所有已注册对此事件类型通知感兴趣的监听器。 |
+| `getPage()` | 此方法返回当前正在显示的 URL。 |
+| `getEditorKit()` | 此方法检索当前安装的用于处理内容的工具包。 |
+| `getStream(URL page)` | 此方法检索给定 URL 的输入流，该 URL 即将由 `setPage` 方法加载。 |
+| `read(InputStream in, Object desc)` | 此方法从输入流初始化。 |
 
-JEditorPane 是另一个虽然非常有用但并不常见的组件。您可能在 Java 中编程多年而没有机会使用此组件。在本书中，我们试图让您尽快掌握 JFC 和 Swing 最常用的功能。但是，像这个这样的较不常见的组件也被介绍，以便您至少熟悉它们。
+`JEditorPane` 是另一个虽然非常有用但并不常见的组件。您可能在 Java 中编程多年而没有机会使用此组件。在本书中，我们试图让您尽快掌握 JFC 和 Swing 最常用的功能。但是，像这个这样的较不常见的组件也被介绍，以便您至少熟悉它们。
 
 ### JButton
 
-严格来说，JButton 组件不是用户输入组件。然而，它的使用如此广泛，以至于必须在本书的早期介绍它，因为您将在后面的章节中使用它。此外，可以论证（尽管论证相当薄弱）JButton 允许用户提交输入。无论如何，JButton 是 AWT 按钮的 Swing/JFC 版本。JButton 继承自 javax.swing.AbstractButton，而 AbstractButton 又继承自 JComponent。
+严格来说，`JButton` 组件不是用户输入组件。然而，它的使用如此广泛，以至于必须在本书的早期介绍它，因为您将在后面的章节中使用它。此外，可以论证（尽管论证相当薄弱）`JButton` 允许用户提交输入。无论如何，`JButton` 是 AWT 按钮的 Swing/JFC 版本。`JButton` 继承自 `javax.swing.AbstractButton`，而 `AbstractButton` 又继承自 `JComponent`。
 
 此组件的使用应该相当明显。您将一个按钮放在屏幕上，用户用鼠标点击它以触发某些操作。此按钮具有许多您无疑会发现非常有用的属性和事件。最常用的属性和方法总结在表 3.13 中。
 
-表 3.13 JButton 方法和属性
+#### 表 3.13 JButton 方法和属性
 
 | 属性/方法 | 目的 |
-| --- | --- |
-| text | 此属性允许您设置用户将看到的文本。 |
-| foreground | 此属性允许您设置字体的颜色。 |
-| background | 此属性允许您设置按钮的颜色。 |
-| font | 此属性允许您为按钮的文本选择各种字体。 |
-| icon | 此属性允许您在按钮上显示图标。 |
-| tooltipText | 此属性允许您创建简短的文本段，当用户的鼠标悬停在按钮上时自动显示。 |
-| actionPerformed | 这是与 JButton 关联的主要事件，在按钮被点击时执行。 |
+| :--- | :--- |
+| `text` | 此属性允许您设置用户将看到的文本。 |
+| `foreground` | 此属性允许您设置字体的颜色。 |
+| `background` | 此属性允许您设置按钮的颜色。 |
+| `font` | 此属性允许您为按钮的文本选择各种字体。 |
+| `icon` | 此属性允许您在按钮上显示图标。 |
+| `tooltipText` | 此属性允许您创建简短的文本段，当用户的鼠标悬停在按钮上时自动显示。 |
+| `actionPerformed` | 这是与 `JButton` 关联的主要事件，在按钮被点击时执行。 |
 
-
-
-### 表 3.14 JButton 构造方法
+#### 表 3.14 JButton 构造方法
 
 | 构造方法 | 用途 |
-| --- | --- |
-| JButton() | 此构造方法创建一个空白按钮（即，没有设置文本或图标的按钮）。 |
-| JButton(Action a) | 此构造方法创建一个按钮，其属性取自提供的动作。 |
-| JButton(Icon icon) | 此构造方法创建一个显示图标的按钮。 |
-| JButton(String text) | 此构造方法创建一个带文本的按钮。 |
-| JButton(String text, Icon icon) | 此构造方法用于创建一个带有初始文本和图标的按钮。 |
+| :--- | :--- |
+| `JButton()` | 此构造方法创建一个空白按钮（即，没有设置文本或图标的按钮）。 |
+| `JButton(Action a)` | 此构造方法创建一个按钮，其属性取自提供的动作。 |
+| `JButton(Icon icon)` | 此构造方法创建一个显示图标的按钮。 |
+| `JButton(String text)` | 此构造方法创建一个带文本的按钮。 |
+| `JButton(String text, Icon icon)` | 此构造方法用于创建一个带有初始文本和图标的按钮。 |
 
-当然，JButton 的属性远不止这些，但这些是你最常用的。你应该熟悉这些属性和方法，以便能够恰当地使用 JButton。如果你使用 JBuilder，其中许多属性都可以通过属性窗口进行设置。JButton 还有许多不同的构造方法，你可以用它们来创建各种不同的 JButton。这些构造方法在表 3.14 中进行了总结。
+当然，`JButton` 的属性远不止这些，但这些是你最常用的。你应该熟悉这些属性和方法，以便能够恰当地使用 `JButton`。如果你使用 JBuilder，其中许多属性都可以通过属性窗口进行设置。`JButton` 还有许多不同的构造方法，你可以用它们来创建各种不同的 `JButton`。这些构造方法在表 3.14 中进行了总结。
 
 第 6 章将非常详细地讨论事件和事件处理。你可能对按钮的工作方式有直观的认识，因为你肯定在软件中使用过许多按钮。让我们看一个示例，它应该能帮助你了解 JFC/Swing 按钮的功能。
 
@@ -1646,18 +1568,12 @@ JEditorPane 是另一个虽然非常有用但并不常见的组件。您可能�
 
 **步骤 4：** 现在我们将更改它的几个属性。将文本更改为 Java，并将背景和前景色更改为任何你认为合适的颜色。（只需单击背景或前景属性，你就会看到一个小窗口，允许你混合颜色。）
 
-![](img/6ac84fdff518ea769f07b6e3d911391e_94_0.png)
-
 我还将字体更改为 SansSerif 并加粗。完成这些属性的更改后，你的按钮应如图 3.15 所示。
 
-![](img/6ac84fdff518ea769f07b6e3d911391e_95_0.png)
+**步骤 5：** 现在双击按钮，进入其 `actionPerformed` 事件。只需输入一行代码：
 
-图 3.15 完成的 JButton
-
-**步骤 5：** 现在双击按钮，进入其 actionPerformed 事件。只需输入一行代码：
-
-```
-void jButton1 actionPerformed(ActionEvent e)
+```java
+void jButton1_actionPerformed(ActionEvent e)
 {
     jButton1.setText("Is Cool");
 }
@@ -1665,7 +1581,7 @@ void jButton1 actionPerformed(ActionEvent e)
 
 **步骤 6：** 对于那些不使用 JBuilder 的读者，只需将以下代码输入你最喜欢的文本编辑器并编译它：
 
-```
+```java
 package example;
 import java.awt.*;
 import java.awt.event.*;
@@ -1682,12 +1598,12 @@ public class Frame1 extends JFrame
         try
         {
             jbInit();
-        }    // end of try block
+        }
         catch(Exception e)
         {
             e.printStackTrace();
-        }    // end of catch block
-    }    // end of constructor
+        }
+    }
     //Component initialization
     private void jbInit() throws Exception
     {
@@ -1716,41 +1632,39 @@ public class Frame1 extends JFrame
         if (e.getID() == WindowEvent.WINDOW_CLOSING)
         {
             System.exit(0);
-        }    // end of if
-    }    // end of processWindowEvent
+        }
+    }
     void jButton1_actionPerformed(ActionEvent e)
     {
         jButton1.setText("Is Cool");
-    }    // end of action performed event
-}// end of class
+    }
+}
 ```
 
 **步骤 7：** 运行你的应用程序。当它首次启动时，按钮应显示 "Java"，然后当你单击它时，标题应更改为 "Is Cool"。
 
-![](img/6ac84fdff518ea769f07b6e3d911391e_97_0.png)
-
-显然，JButton 还有更多的属性和方法，它们会在本书的示例中根据需要介绍。然而，这个示例应该向你展示了 JButton 的基础知识，并让你对其用法有良好的感觉。
+显然，`JButton` 还有更多的属性和方法，它们会在本书的示例中根据需要介绍。然而，这个示例应该向你展示了 `JButton` 的基础知识，并让你对其用法有良好的感觉。
 
 ### 总结
 
-本章总结了最基本的用户输入和显示类。这些类创建了允许你以多种格式向用户显示文本，并以同样多样化的格式从用户获取文本输入的组件。这些是基础类；很难想象一个 Java 程序员在不使用它们的情况下编写许多应用程序。因此，你必须对它们非常熟悉。JTextField 组件是目前最常用的，JTextArea 和 JPasswordField 并列第二。
+本章总结了最基本的用户输入和显示类。这些类创建了允许你以多种格式向用户显示文本，并以同样多样化的格式从用户获取文本输入的组件。这些是基础类；很难想象一个 Java 程序员在不使用它们的情况下编写许多应用程序。因此，你必须对它们非常熟悉。`JTextField` 组件是目前最常用的，`JTextArea` 和 `JPasswordField` 并列第二。
 
 ### 复习题
 
-1.  本章列出的哪两个类不允许显示多行？
-2.  你会使用哪个类来显示 HTML？
-3.  如果你不希望屏幕上显示实际的按键，你会使用哪个类？
-4.  列出 JTextField 组件的两个方法。
-5.  列出 JPasswordField 组件的两个方法。
-6.  JTextField 和 JTextArea 的主要区别是什么？
-7.  什么是 EditorKit？
-8.  你将如何向 JTextArea 的末尾添加文本？
-9.  说出 AWT TextArea 和 JFC JTextArea 之间的一个区别。
-10. JTextPane 和 JTextArea 的主要区别是什么？
+1. 本章列出的哪两个类不允许显示多行？
+2. 你会使用哪个类来显示 HTML？
+3. 如果你不希望屏幕上显示实际的按键，你会使用哪个类？
+4. 列出 `JTextField` 组件的两个方法。
+5. 列出 `JPasswordField` 组件的两个方法。
+6. `JTextField` 和 `JTextArea` 的主要区别是什么？
+7. 什么是 `EditorKit`？
+8. 你将如何向 `JTextArea` 的末尾添加文本？
+9. 说出 AWT `TextArea` 和 JFC `JTextArea` 之间的一个区别。
+10. `JTextPane` 和 `JTextArea` 的主要区别是什么？
 
 # 第 4 章
 
-# 外观和感觉
+## 外观和感觉
 
 本章涵盖以下内容：
 
@@ -1773,53 +1687,44 @@ public class Frame1 extends JFrame
 
 能够设置应用程序的感觉也很重要。使用 AWT 时，所有组件都是根据它们运行的操作系统生成的。JFC 允许你设置你想要的外观类型，无论操作系统如何，你的组件都会以那种方式显示。如果你只是右键单击一个组件，你会看到一个名为“外观和感觉”的选项，它为你提供了三个选项：Metal、CDE/Motif 和 Windows。我将在本章后面探讨这些选项。
 
-![](img/6ac84fdff518ea769f07b6e3d911391e_101_0.png)
-
 ### 布局管理器
 
-你的组件应该以某种类型的格式显示。布局管理器允许你改变显示方式。使用 JFC，有十种布局管理器。使用 AWT，有五种（GridLayout、GridbagLayout 等）。每一种都规定了将使用给定布局管理器添加到容器中的组件的不同布局顺序。下表总结了布局管理器及其基本用途。
+你的组件应该以某种类型的格式显示。布局管理器允许你改变显示方式。使用 JFC，有十种布局管理器。使用 AWT，有五种（`GridLayout`、`GridbagLayout` 等）。每一种都规定了将使用给定布局管理器添加到容器中的组件的不同布局顺序。下表总结了布局管理器及其基本用途。
 
-表 4.1 JFC 布局管理器
-
-| 布局管理器 | 用途 |
-|---|---|
-| BorderLayout | 这种布局管理器非常常见。它将容器的组件排列在名为北、南、东、西和中心的区域中。北和南区域的组件获得其首选高度并横向拉伸到容器的整个宽度。东和西区域的组件获得其首选宽度并纵向拉伸以填充北和南区域之间的空间。你会在各种情况下遇到 BorderLayout 管理器。 |
-| BoxLayout2Layout | 此布局管理器允许多个组件垂直或水平排列。组件不会换行；因此，组件的垂直排列在调整框架大小时将保持垂直排列。 |
-| CardLayout | CardLayout 将组件一个接一个地堆叠放置，类似于一副牌。一次只能看到一个组件。 |
-| FlowLayout | FlowLayout 按从左到右、然后从上到下的顺序排列组件，使用每个组件的正常大小。FlowLayout 在一行中尽可能多地排列组件，然后移动到新的一行。这种简单的布局管理器是某些容器的默认布局管理器；然而，它的布局，至少在许多情况下，对于一个真正有吸引力的图形用户界面来说过于简单了。 |
-
-
-
-# 第4章
+#### 表 4.1 JFC 布局管理器
 
 | 布局管理器 | 用途 |
-|---|---|
-| GridLayout | GridLayout管理器将组件放置在由行和列组成的单元格网格中。GridLayout会扩展每个组件以填充其单元格内的可用空间。这种特定的布局管理器非常常见。你应该确保自己熟练掌握它，因为你会经常看到它。 |
-| GridbagLayout | GridbagLayout管理器与GridLayout类似，但更灵活。GridbagLayout在一个动态矩形网格上水平和垂直地放置组件。各行不必具有相同的单元格数。 |
-| OverlayLayout | 此布局管理器类似于CardLayout管理器，因为它将组件彼此叠加放置。然而，与CardLayout不同的是，如果你使容器中的每个组件透明，则可以同时显示多个组件。 |
-| PaneLayout | PaneLayout允许你指定组件相对于其同级组件的大小。 |
-| VerticalFlowLayout | VerticalFlowLayout管理器使用每个组件的默认大小，从上到下、从左到右将组件排列成列。此布局管理器会尽可能多地将组件排列在一列中，然后移到新列。 |
-| XYLayout | XYLayout不是标准的Java布局管理器。如果你使用的是Sun JDK而不是JBuilder，你将无法访问此特定的布局管理器；它仅在JBuilder中可用。XYLayout将组件放置在容器中的特定x,y坐标处，因此得名。在此坐标系中，原点(0,0)位于左上角。这是本章中提到的唯一不属于Java SDK的布局管理器。 |
+| :--- | :--- |
+| `BorderLayout` | 这种布局管理器非常常见。它将容器的组件排列在名为北、南、东、西和中心的区域中。北和南区域的组件获得其首选高度并横向拉伸到容器的整个宽度。东和西区域的组件获得其首选宽度并纵向拉伸以填充北和南区域之间的空间。你会在各种情况下遇到 `BorderLayout` 管理器。 |
+| `BoxLayout2` | 此布局管理器允许多个组件垂直或水平排列。组件不会换行；因此，组件的垂直排列在调整框架大小时将保持垂直排列。 |
+| `CardLayout` | `CardLayout` 将组件一个接一个地堆叠放置，类似于一副牌。一次只能看到一个组件。 |
+| `FlowLayout` | `FlowLayout` 按从左到右、然后从上到下的顺序排列组件，使用每个组件的正常大小。`FlowLayout` 在一行中尽可能多地排列组件，然后移动到新的一行。这种简单的布局管理器是某些容器的默认布局管理器；然而，它的布局，至少在许多情况下，对于一个真正有吸引力的图形用户界面来说过于简单了。 |
+| `GridLayout` | `GridLayout` 管理器将组件放置在由行和列组成的单元格网格中。`GridLayout` 会扩展每个组件以填充其单元格内的可用空间。这种特定的布局管理器非常常见。你应该确保自己熟练掌握它，因为你会经常看到它。 |
+| `GridbagLayout` | `GridbagLayout` 管理器与 `GridLayout` 类似，但更灵活。`GridbagLayout` 在一个动态矩形网格上水平和垂直地放置组件。各行不必具有相同的单元格数。 |
+| `OverlayLayout` | 此布局管理器类似于 `CardLayout` 管理器，因为它将组件彼此叠加放置。然而，与 `CardLayout` 不同的是，如果你使容器中的每个组件透明，则可以同时显示多个组件。 |
+| `PaneLayout` | `PaneLayout` 允许你指定组件相对于其同级组件的大小。 |
+| `VerticalFlowLayout` | `VerticalFlowLayout` 管理器使用每个组件的默认大小，从上到下、从左到右将组件排列成列。此布局管理器会尽可能多地将组件排列在一列中，然后移到新列。 |
+| `XYLayout` | `XYLayout` 不是标准的 Java 布局管理器。如果你使用的是 Sun JDK 而不是 JBuilder，你将无法访问此特定的布局管理器；它仅在 JBuilder 中可用。`XYLayout` 将组件放置在容器中的特定 x,y 坐标处，因此得名。在此坐标系中，原点 (0,0) 位于左上角。这是本章中提到的唯一不属于 Java SDK 的布局管理器。 |
 
-所有各种布局管理器类都实现了Layout接口。该接口定义了所有布局管理器实现的通用方法。下表总结了这些方法。
+所有各种布局管理器类都实现了 `Layout` 接口。该接口定义了所有布局管理器实现的通用方法。下表总结了这些方法。
 
-## 表 4.2 Layout接口方法
+#### 表 4.2 Layout 接口方法
 
 | 方法 | 用途 |
 | :--- | :--- |
-| void addLayoutComponent (String name, Component comp) | 此方法用于将具有指定名称的指定组件添加到布局中。如果不向布局管理器添加组件，你确实无法使用它们，因此这是Layout接口中最常用的方法。 |
-| void layoutContainer (Container parent) | 此方法将在指定的面板中布局容器。 |
-| void removeLayoutComponent(Component comp) | 此方法用于从布局中移除指定的组件。 |
-| Dimension minimumLayoutSize(Container parent) | 此方法根据指定父容器中的组件，计算指定面板的最小尺寸。 |
-| Dimension preferredLayoutSize(Container parent) | 此方法根据指定父容器中的组件，计算指定面板的首选尺寸。 |
+| `addLayoutComponent(String name, Component comp)` | 此方法用于将具有指定名称的指定组件添加到布局中。如果不向布局管理器添加组件，你确实无法使用它们，因此这是 `Layout` 接口中最常用的方法。 |
+| `layoutContainer(Container parent)` | 此方法将在指定的面板中布局容器。 |
+| `removeLayoutComponent(Component comp)` | 此方法用于从布局中移除指定的组件。 |
+| `minimumLayoutSize(Container parent)` | 此方法根据指定父容器中的组件，计算指定面板的最小尺寸。 |
+| `preferredLayoutSize(Container parent)` | 此方法根据指定父容器中的组件，计算指定面板的首选尺寸。 |
 
-这些只是部分方法，但它们包含了你可能需要的所有功能，以便有效利用任何特定的布局管理器。当然，与所有类一样，你需要实例化一个布局管理器类才能使用该特定的布局管理器。你创建布局管理器的方式与创建任何其他Java类的实例相同。以下是一个示例：
+这些只是部分方法，但它们包含了你可能需要的所有功能，以便有效利用任何特定的布局管理器。当然，与所有类一样，你需要实例化一个布局管理器类才能使用该特定的布局管理器。你创建布局管理器的方式与创建任何其他 Java 类的实例相同。以下是一个示例：
 
 ```java
 private GridLayout gridLayout1 = new GridLayout(4,1);
 ```
 
-我们创建了一个GridLayout管理器的实例，命名为gridLayout1。我们的GridLayout管理器有四行一列。你的应用程序或小程序可能包含多个容器组件。你需要将特定的容器与特定的布局管理器关联起来。所有容器组件都有一个名为setLayout的方法，允许你将特定的布局与特定的容器关联。以下是一个示例：
+我们创建了一个 `GridLayout` 管理器的实例，命名为 `gridLayout1`。我们的 `GridLayout` 管理器有四行一列。你的应用程序或小程序可能包含多个容器组件。你需要将特定的容器与特定的布局管理器关联起来。所有容器组件都有一个名为 `setLayout` 的方法，允许你将特定的布局与特定的容器关联。以下是一个示例：
 
 `contentPane.setLayout(gridLayout1);`
 
@@ -1827,83 +1732,53 @@ private GridLayout gridLayout1 = new GridLayout(4,1);
 
 ### BorderLayout
 
-BorderLayout管理器将组件排列成五个区域。有一个相当大的Center区域，以及较小的North、South、East和West区域。此布局管理器经常用于放置容器组件，这些组件随后将托管其他组件。图4.2为你描述了这种布局安排。
-
-![](img/6ac84fdff518ea769f07b6e3d911391e_105_0.png)
+`BorderLayout` 管理器将组件排列成五个区域。有一个相当大的 Center 区域，以及较小的 North、South、East 和 West 区域。此布局管理器经常用于放置容器组件，这些组件随后将托管其他组件。
 
 ### GridLayout
 
-如前所述，GridLayout管理器将组件排列在一个网格中，每行具有相同数量的单元格。行数和列数由实例化时传递给GridLayout管理器的两个数字决定。第一个数字表示行，第二个表示列。因此，如果你写：
+如前所述，`GridLayout` 管理器将组件排列在一个网格中，每行具有相同数量的单元格。行数和列数由实例化时传递给 `GridLayout` 管理器的两个数字决定。第一个数字表示行，第二个表示列。因此，如果你写：
 
 `GridLayout mygrid = new GridLayout(4,2);`
 
-...你声明了一个四行两列的网格布局。这在计算器应用程序中特别有用。由于按钮必须以网格格式排列，因此GridLayout管理器非常适合这种情况。以下示例有点长，但为你提供了GridLayout管理器以及BorderLayout各种用途的良好示例。
+...你声明了一个四行两列的网格布局。这在计算器应用程序中特别有用。由于按钮必须以网格格式排列，因此 `GridLayout` 管理器非常适合这种情况。以下示例有点长，但为你提供了 `GridLayout` 管理器以及 `BorderLayout` 各种用途的良好示例。
 
 ### 示例 4.1
 
-**步骤1：** 使用JBuilder打开一个新项目。（同样，没有JBuilder的用户可以简单地跳到源代码，将其输入到他们喜欢的文本编辑器中并编译。）
+**步骤 1：** 使用 JBuilder 打开一个新项目。（同样，没有 JBuilder 的用户可以简单地跳到源代码，将其输入到他们喜欢的文本编辑器中并编译。）
 
-![](img/6ac84fdff518ea769f07b6e3d911391e_106_0.png)
+**步骤 2：** 向项目添加一个标准应用程序。你可以为此使用默认设置。
 
-图 4.3 示例 4.1
+**步骤 3：** 使用“设计”选项卡设置 `BorderLayout` 管理器。
 
-**步骤2：** 向项目添加一个标准应用程序。你可以为此使用默认设置。
-
-![](img/6ac84fdff518ea769f07b6e3d911391e_107_0.png)
-
-**步骤3：** 使用“设计”选项卡设置BorderLayout管理器。
-
-![](img/6ac84fdff518ea769f07b6e3d911391e_107_1.png)
-
-**步骤4：** 设置BorderLayout管理器后，在Center和East区域放置面板（你会在第二个标题为“Swing容器”的选项卡上找到JPanel控件）。每个面板都应使用网格布局。然后你可以进入代码并像这样更改行和列：
+**步骤 4：** 设置 `BorderLayout` 管理器后，在 Center 和 East 区域放置面板（你会在第二个标题为“Swing容器”的选项卡上找到 `JPanel` 控件）。每个面板都应使用网格布局。然后你可以进入代码并像这样更改行和列：
 
 ```java
 private GridLayout gridLayout1 = new GridLayout(5,1);
 private GridLayout gridLayout2 = new GridLayout(3,4);
 ```
 
-> **注意：** 第5章将详细讨论容器；目前只需将它们放在所需的位置。
-
-![](img/6ac84fdff518ea769f07b6e3d911391e_108_0.png)
+> **注意：** 第 5 章将详细讨论容器；目前只需将它们放在所需的位置。
 
 > **注意：** 如果为每个面板设置不同的背景颜色，可能更容易查看面板的位置。这可能不是视觉上最吸引人的布局，但它将帮助你记住放置物品的位置！
 
-![](img/6ac84fdff518ea769f07b6e3d911391e_109_0.png)
+**步骤 5：** 在 North 区域放置一个带有白色背景、默认标题为“0”的标签。将标签的水平对齐属性设置为 White，边框类型设置为 Etched。
 
-图 4.7 示例 4.1
-
-**步骤5：** 在North区域放置一个带有白色背景、默认标题为“0”的标签。将标签的水平对齐属性设置为White，边框类型设置为Etched。
-
-![](img/6ac84fdff518ea769f07b6e3d911391e_109_1.png)
-
-图 4.8 示例 4.1
-
-**步骤6：** 我们现在要向此显示添加一些按钮。屏幕东侧面板上的按钮将包含我们计算器的功能按钮；因此，我们将创建一个名为btnfunction的按钮数组。
-
-![](img/6ac84fdff518ea769f07b6e3d911391e_110_0.png)
-
-图 4.9 计算器按钮
+**步骤 6：** 我们现在要向此显示添加一些按钮。屏幕东侧面板上的按钮将包含我们计算器的功能按钮；因此，我们将创建一个名为 `btnfunction` 的按钮数组。
 
 > 注意：你只需右键单击第一个按钮，选择“复制”，然后粘贴四次。然后只需像这里所示更改标题。
 
-![](img/6ac84fdff518ea769f07b6e3d911391e_110_1.png)
+要将按钮添加到 Center 面板，你要做的工作大致相同。从一个名为 `btnnumber` 的按钮开始，然后创建一个数组。然后你可以像在此图像中看到的那样更改标题：
 
-图 4.10 计算器按钮 2
+> 警告：你将不得不移动按钮，直到数字按钮与文本字段匹配。换句话说，`btnnumber1` 必须是文本属性为“1”的按钮。`Btnnumber10` 应该是“.”按钮。零按钮将是原始的 `btnnumber`，你需要将其名称更改为 `btnnumber0`。
 
-要将按钮添加到Center面板，你要做的工作大致相同。从一个名为btnnumber的按钮开始，然后创建一个数组。然后你可以像在此图像中看到的那样更改标题：
+这应该为你准确说明了 `BorderLayout` 和 `GridLayout` 管理器的工作原理。此时，我们不会为此计算器添加任何功能。我们将在关于事件的章节（第 6 章）中这样做，因为所有这些代码都与发生的事件（如按下按钮）有关。对于那些不使用 JBuilder 的读者，你可以通过打开你喜欢的文本编辑器并输入此处看到的代码来完成此处完成的所有操作：
 
-![](img/6ac84fdff518ea769f07b6e3d911391e_111_0.png)
-
-警告：你将不得不移动按钮，直到数字按钮与文本字段匹配。换句话说，btnnumber1必须是文本属性为“1”的按钮。Btnnumber10应该是“.”按钮。零按钮将是原始的btnnumber，你需要将其名称更改为btnnumber0。
-
-这应该为你准确说明了BorderLayout和GridLayout管理器的工作原理。此时，我们不会为此计算器添加任何功能。我们将在关于事件的章节（第6章）中这样做，因为所有这些代码都与发生的事件（如按下按钮）有关。对于那些不使用JBuilder的读者，你可以通过打开你喜欢的文本编辑器并输入此处看到的代码来完成此处完成的所有操作：
-
+```java
 package example04;
 import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
 import javax.swing.border.*;
-
 public class Frame1 extends JFrame
 {
     private JPanel contentPane;
@@ -1931,7 +1806,6 @@ public class Frame1 extends JFrame
     private JToggleButton btnnumber9 = new JToggleButton();
     private JToggleButton btnnumber10 = new JToggleButton();
     private JToggleButton btnnumber11 = new JToggleButton();
-
     //构造窗体
     public Frame1()
     {
@@ -1945,7 +1819,6 @@ public class Frame1 extends JFrame
             e.printStackTrace();
         }
     }
-
     //组件初始化
     private void jbInit() throws Exception
     {
@@ -2000,7 +1873,6 @@ public class Frame1 extends JFrame
         jPanel1.add(btnfunction3, null);
         jPanel1.add(btnfunction4, null);
     }
-
     //重写此方法以便在关闭窗口时退出
     protected void processWindowEvent(WindowEvent e)
     {
@@ -2010,26 +1882,23 @@ public class Frame1 extends JFrame
         }
     }
 }
+```
 
-# 第4章
+现在，我毫不怀疑，看到所有这些代码对你来说可能显得相当令人畏惧。不用担心——一切都会被解释清楚。事实上，代码本身相当简单；只是恰好有很多。真正构成代码主体的部分只有两个。第一个是在 `Frame` 类的开头。在这里，所有将要使用的组件都被声明。它们的声明方式与其他任何对象变量的实例化非常相似。下一个部分是 `jbInit` 函数。这是初始化各项设置的地方。在这里设置尺寸，并将布局管理器与特定组件关联起来。如果你逐行检查这段代码，它实际上并不那么复杂。由于我们还没有在这个程序中添加任何功能，`jbInit` 是程序中唯一的真正函数。我们还没有任何处理动作或操作数据的函数（但你将在第 6 章中实现！）。
 
-现在，我毫不怀疑，看到所有这些代码对你来说可能显得相当令人畏惧。不用担心——一切都会被解释清楚。事实上，代码本身相当简单；只是恰好有很多。真正构成代码主体的部分只有两个。第一个是在`Frame`类的开头。在这里，所有将要使用的组件都被声明。它们的声明方式与其他任何对象变量的实例化非常相似。下一个部分是`jbInit`函数。这是初始化各项设置的地方。在这里设置尺寸，并将布局管理器与特定组件关联起来。如果你逐行检查这段代码，它实际上并不那么复杂。由于我们还没有在这个程序中添加任何功能，`jbInit`是程序中唯一的真正函数。我们还没有任何处理动作或操作数据的函数（但你将在第6章中实现！）。
+### XYLayout
 
-## XY布局
+当您需要将组件放置在特定且精确的位置时，`XYLayout` 管理器非常有用。使用此布局管理器，您可以指定您希望组件放置位置的 x 和 y 坐标，因此得名。让我们看一个示例。
 
-当您需要将组件放置在特定且精确的位置时，`XYLayout`管理器非常有用。使用此布局管理器，您可以指定您希望组件放置位置的x和y坐标，因此得名。让我们看一个示例。
+#### 示例 4.2
 
-### 示例4.2
+**步骤 1：** 启动一个新项目，并向其添加一个标准的 `Application` 对象。此操作方式与之前的示例完全相同。
 
-**步骤1：** 启动一个新项目，并向其添加一个标准的`Application`对象。此操作方式与之前的示例完全相同。
+**步骤 2：** 将背景容器的布局管理器设置为 **XY**。（如果您在添加 `Application` 对象时使用默认设置，还会添加一个窗体并将其用作其他组件的容器。）
 
-**步骤2：** 将背景容器的布局管理器设置为**XY**。（如果您在添加`Application`对象时使用默认设置，还会添加一个窗体并将其用作其他组件的容器。）
+**步骤 3：** 为演示起见，在屏幕上放置三个不同的按钮。请注意，您可以将它们移动到任何您想要的位置。
 
-**步骤3：** 为演示起见，在屏幕上放置三个不同的按钮。请注意，您可以将它们移动到任何您想要的位置。
-
-图4.13 XY示例
-
-这就是人们选择`XYLayout`管理器的原因——因为您可以将组件放置在精确的位置。
+这就是人们选择 `XYLayout` 管理器的原因——因为您可以将组件放置在精确的位置。
 
 为您生成了以下代码：
 
@@ -2039,7 +1908,6 @@ import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
 import com.borland.jbcl.layout.*;
-
 public class Frame1 extends JFrame
 {
     private JPanel contentPane;
@@ -2047,7 +1915,6 @@ public class Frame1 extends JFrame
     private JButton jButton1 = new JButton();
     private JButton jButton2 = new JButton();
     private JButton jButton3 = new JButton();
-
     //构造窗体
     public Frame1()
     {
@@ -2061,7 +1928,6 @@ public class Frame1 extends JFrame
             e.printStackTrace();
         }
     }
-
     //组件初始化
     private void jbInit() throws Exception
     {
@@ -2076,7 +1942,6 @@ public class Frame1 extends JFrame
         contentPane.add(jButton2, new XYConstraints(281, 169, 97, 33));
         contentPane.add(jButton3, new XYConstraints(32, 190, 103, 32));
     }
-
     //重写此方法以便在关闭窗口时退出
     protected void processWindowEvent(WindowEvent e)
     {
@@ -2089,13 +1954,13 @@ public class Frame1 extends JFrame
 }
 ```
 
-从我们的角度来看，这段代码中真正有趣的部分是与`XYLayout`管理器特定的代码。这实际上由两种类型的表达式组成，第一种是建立`XYLayout`管理器的使用。这是通过以下代码行完成的：
+从我们的角度来看，这段代码中真正有趣的部分是与 `XYLayout` 管理器特定的代码。这实际上由两种类型的表达式组成，第一种是建立 `XYLayout` 管理器的使用。这是通过以下代码行完成的：
 
 ```java
 contentPane.setLayout(xYLayout1);
 ```
 
-当添加其他组件时，会为它们指定具体的x和y坐标。每个组件将被赋予四个数字。前两个是组件左上角的x和y坐标；然后是组件右下角的x和y坐标。
+当添加其他组件时，会为它们指定具体的 x 和 y 坐标。每个组件将被赋予四个数字。前两个是组件左上角的 x 和 y 坐标；然后是组件右下角的 x 和 y 坐标。
 
 ```java
 contentPane.add(jButton1, new XYConstraints(120, 93, 114, 29));
@@ -2103,19 +1968,17 @@ contentPane.add(jButton2, new XYConstraints(281, 169, 97, 33));
 contentPane.add(jButton3, new XYConstraints(32, 190, 103, 32));
 ```
 
-`XYLayout`管理器是使用JBuilder优势的又一个例子。您不仅可以访问诸如`XYLayout`这样的额外布局管理器，而且如果仅基于x和y坐标，您将很难直观地了解组件的确切放置位置。使用JBuilder，您只需在图形化环境中放置它们即可。
+`XYLayout` 管理器是使用 JBuilder 优势的又一个例子。您不仅可以访问诸如 `XYLayout` 这样的额外布局管理器，而且如果仅基于 x 和 y 坐标，您将很难直观地了解组件的确切放置位置。使用 JBuilder，您只需在图形化环境中放置它们即可。
 
-### 流式布局
+### FlowLayout
 
-`FlowLayout`管理器是最简单的之一。组件只是从左到右放置在屏幕上，直到一行填满，然后开始下一行。这通常不利于创建美观的布局。
+`FlowLayout` 管理器是最简单的之一。组件只是从左到右放置在屏幕上，直到一行填满，然后开始下一行。这通常不利于创建美观的布局。
 
-### 垂直流式布局
+### VerticalFlowLayout
 
-`VerticalFlowLayout`管理器与`FlowLayout`管理器几乎相同，只是组件被安排在垂直列中，直到一列填满，然后开始下一列。以下示例展示了`FlowLayout`和`VerticalFlowLayout`。
+`VerticalFlowLayout` 管理器与 `FlowLayout` 管理器几乎相同，只是组件被安排在垂直列中，直到一列填满，然后开始下一列。以下示例展示了 `FlowLayout` 和 `VerticalFlowLayout`。
 
-
-
-### 示例 4.3
+#### 示例 4.3
 
 **步骤 1：** 启动一个新项目，并向其中添加一个标准的 Application 对象。
 
@@ -2125,13 +1988,11 @@ contentPane.add(jButton3, new XYConstraints(32, 190, 103, 32));
 
 **步骤 4：** 将西面板的布局管理器设置为 **VerticalFlowLayout**，将东面板的布局管理器设置为 **FlowLayout**。现在，向每个面板添加三个按钮。你应该会看到类似图 4.14 所示的内容。
 
-![](img/6ac84fdff518ea769f07b6e3d911391e_119_0.png)
-
-如你所见，主要区别在于 FlowLayout 是水平方向的，而 VerticalFlowLayout 管理器当然是垂直的。
+如你所见，主要区别在于 `FlowLayout` 是水平方向的，而 `VerticalFlowLayout` 管理器当然是垂直的。
 
 如果你不使用 JBuilder，只需将以下代码输入到你喜欢的文本编辑器中：
 
-```
+```java
 package example;
 import java.awt.*;
 import java.awt.event.*;
@@ -2204,13 +2065,13 @@ public class Frame1 extends JFrame
 
 ### BoxLayout2
 
-BoxLayout2 管理器直接继承自 `java.lang.Object`，因此你不需要继承自 AWT 或 Component 类。此布局管理器允许多个容器对象垂直或水平排列。与 FlowLayout 和 VerticalFlowLayout 管理器不同，此布局管理器的组件不会换行。这意味着当容器大小调整时，它们的位置不会改变。
+`BoxLayout2` 管理器直接继承自 `java.lang.Object`，因此你不需要继承自 AWT 或 Component 类。此布局管理器允许多个容器对象垂直或水平排列。与 `FlowLayout` 和 `VerticalFlowLayout` 管理器不同，此布局管理器的组件不会换行。这意味着当容器大小调整时，它们的位置不会改变。
 
 ### CardLayout
 
-CardLayout 管理器一次只允许查看一个组件，很像一副纸牌。你可以翻阅组件，一次查看一个组件。通常，组件本身就是容器组件。你可以通过使用类似这里看到的代码来更改“卡片”：
+`CardLayout` 管理器一次只允许查看一个组件，很像一副纸牌。你可以翻阅组件，一次查看一个组件。通常，组件本身就是容器组件。你可以通过使用类似这里看到的代码来更改“卡片”：
 
-```
+```java
 CardLayout cl = (CardLayout)(nameofcontainerwithcardlayout.getLayout());
 cl.show(nameofcontainerwithcardlayout, "nameofcontainer youwanttoshow");
 ```
@@ -2219,25 +2080,21 @@ cl.show(nameofcontainerwithcardlayout, "nameofcontainer youwanttoshow");
 
 #### 示例 4.4
 
-步骤 1：启动一个新项目并向其中添加一个 Application 对象，就像你在之前的示例中所做的那样。
+**步骤 1：** 启动一个新项目并向其中添加一个 Application 对象，就像你在之前的示例中所做的那样。
 
-步骤 2：在 Design 选项卡上，将布局设置为 Card。
+**步骤 2：** 在 Design 选项卡上，将布局设置为 Card。
 
-步骤 3：在屏幕上放置两个面板。使每个面板颜色不同，并在每个面板上放置一个按钮。按钮和颜色只是为了让你在翻阅各个组件时能够分辨。
+**步骤 3：** 在屏幕上放置两个面板。使每个面板颜色不同，并在每个面板上放置一个按钮。按钮和颜色只是为了让你在翻阅各个组件时能够分辨。
 
-步骤 4：当你第一次运行该项目时，你会看到类似下图所示的内容。
-
-# 第 4 章
-
-![](img/6ac84fdff518ea769f07b6e3d911391e_123_0.png)
+**步骤 4：** 当你第一次运行该项目时，你会看到类似下图所示的内容。
 
 按下按钮后，你会看到类似下图所示的内容。
 
-![](img/6ac84fdff518ea769f07b6e3d911391e_123_1.png)
+
 
 对于不使用 JBuilder 的读者，只需将以下代码输入到你喜欢的文本编辑器中并编译即可：
 
-```
+```java
 package example;
 import java.awt.*;
 import java.awt.event.*;
@@ -2259,11 +2116,11 @@ public class Frame1 extends JFrame
         try
         {
             jbInit();
-        }    // end of try
+        }
         catch(Exception e)
         {
             e.printStackTrace();
-        }    // end of catch
+        }
     }
     //Component initialization
     private void jbInit() throws Exception
@@ -2283,7 +2140,7 @@ public class Frame1 extends JFrame
             public void actionPerformed(ActionEvent e)
             {
                 jButton1_actionPerformed(e);
-            } //end of action performed
+            }
         });
     }
     //Overridden so we can exit when window is closed
@@ -2301,25 +2158,25 @@ public class Frame1 extends JFrame
         {
             CardLayout cl = (CardLayout)(contentPane.getLayout());
             cl.show(contentPane,"jPanel2");
-        }// end of try
+        }
         catch(Exception err)
         {
             err.printStackTrace();
             jButton1.setText(err.toString());
-        }// end of catch
+        }
     }
 }
 ```
 
-如你所见，CardLayout 管理器使用起来相当简单。不要让所有的代码吓到你。基本上，所发生的一切就是组件被创建、初始化并与所需的容器关联起来。
+如你所见，`CardLayout` 管理器使用起来相当简单。不要让所有的代码吓到你。基本上，所发生的一切就是组件被创建、初始化并与所需的容器关联起来。
 
 ## OverlayLayout
 
-OverlayLayout 管理器将项目堆叠放置，很像 CardLayout。然而，与 CardLayout 不同，各个项目可以同时被看到。除此之外，它的行为与前面描述的 CardLayout 管理器非常相似。
+`OverlayLayout` 管理器将项目堆叠放置，很像 `CardLayout`。然而，与 `CardLayout` 不同，各个项目可以同时被看到。除此之外，它的行为与前面描述的 `CardLayout` 管理器非常相似。
 
 ### GridBagLayout
 
-GridBagLayout 与网格布局几乎完全相同，只是各个行不必具有相同数量的单元格。除了这一例外，它与你在之前的计算器示例中使用的 GridLayout 管理器几乎完全相同。
+`GridBagLayout` 与网格布局几乎完全相同，只是各个行不必具有相同数量的单元格。除了这一例外，它与你在之前的计算器示例中使用的 `GridLayout` 管理器几乎完全相同。
 
 ### PaneLayout
 
@@ -2329,9 +2186,7 @@ GridBagLayout 与网格布局几乎完全相同，只是各个行不必具有相
 
 **步骤 1：** 启动一个新项目并向其中添加一个新的 Application 对象，就像你在所有之前的示例中所做的那样。
 
-**步骤 2：** 将容器的布局管理器设置为 **Pane**。然后添加四个按钮。当你运行它时，你会看到类似以下内容：
-
-
+**步骤 2：** 将容器的布局管理器设置为 `Pane`。然后添加四个按钮。当你运行它时，你会看到类似以下内容：
 
 ![](img/6ac84fdff518ea769f07b6e3d911391e_127_0.png)
 
@@ -2360,11 +2215,11 @@ public class Frame1 extends JFrame
         try
         {
             jbInit();
-        }// end of try
+        }
         catch(Exception e)
         {
             e.printStackTrace();
-        }// end of catch block
+        }
     }
     //Component initialization
     private void jbInit() throws Exception
@@ -2418,32 +2273,32 @@ public class Frame1 extends JFrame
 
 ### 复习题
 
-- 1. 外观和感觉的三个选项是什么？
-- 2. AWT 中有多少种布局管理器？
-- 3. JFC 中有多少种布局管理器？
-- 4. 如果你希望一次只显示一个组件或容器，哪种布局管理器最合适？
-- 5. Grid 布局管理器和 GridBag 布局管理器有什么区别？
-- 6. 哪些布局管理器只是将组件一个接一个地放置，直到到达容器的边缘？
-- 7. 哪种布局管理器用于将组件放置在精确的坐标位置？
-- 8. 哪种布局管理器有东、北等区域？
-- 9. 哪种布局管理器根据容器上其他组件的大小来调整组件的大小？
-- 10. 列出 JFC 中的五种布局管理器。
+1. 外观和感觉的三个选项是什么？
+2. AWT 中有多少种布局管理器？
+3. JFC 中有多少种布局管理器？
+4. 如果你希望一次只显示一个组件或容器，哪种布局管理器最合适？
+5. `Grid` 布局管理器和 `GridBag` 布局管理器有什么区别？
+6. 哪些布局管理器只是将组件一个接一个地放置，直到到达容器的边缘？
+7. 哪种布局管理器用于将组件放置在精确的坐标位置？
+8. 哪种布局管理器有东、北等区域？
+9. 哪种布局管理器根据容器上其他组件的大小来调整组件的大小？
+10. 列出 JFC 中的五种布局管理器。
 
-# 第五章
+# 第5章
 
 ## 容器组件
 
 本章涵盖以下内容：
 
-- JPanel
-- JTabbedPane
-- JScrollPane
-- JSplitPane
-- JBox
+- `JPanel`
+- `JTabbedPane`
+- `JScrollPane`
+- `JSplitPane`
+- `JBox`
 
 ### 简介
 
-在上一章中，你了解了布局管理器。布局管理器应用于各种容器组件（如框架和面板）。这些容器已经向你简要介绍过，但没有真正解释它们的功能和用途。本章致力于纠正这种情况。容器与其他任何组件非常相似。它们只是具有方法、属性等的 Java 类。容器组件仅仅是用于包含或容纳其他组件的组件。这样做的原因有几个，最明显的是将组件组织成逻辑分组。另一个原因是通过与特定的布局管理器（如你在上一章看到的 CardLayout 管理器）合作，以特定格式排列其他组件。还应该指出的是，所有图形组件*必须*位于某个容器组件上。
+在上一章中，你了解了布局管理器。布局管理器应用于各种容器组件（如框架和面板）。这些容器已经向你简要介绍过，但没有真正解释它们的功能和用途。本章致力于纠正这种情况。容器与其他任何组件非常相似。它们只是具有方法、属性等的 Java 类。容器组件仅仅是用于包含或容纳其他组件的组件。这样做的原因有几个，最明显的是将组件组织成逻辑分组。另一个原因是通过与特定的布局管理器（如你在上一章看到的 `CardLayout` 管理器）合作，以特定格式排列其他组件。还应该指出的是，所有图形组件*必须*位于某个容器组件上。
 
 你可以使用许多容器组件来构建你的应用程序和小程序。如果你使用 JBuilder，你可以在设计屏幕的第二个选项卡上找到它们，标记为 Swing 容器，如图 5.1 所示。
 
@@ -2457,50 +2312,48 @@ public class Frame1 extends JFrame
 
 | 容器 | 用途 |
 | :--- | :--- |
-| JPanel | 这是一个很好的通用轻量级组件，仅用于容纳其他组件。你会经常看到这个组件。 |
-| JTabbedPane | 此组件允许你在多个容器之间进行选项卡切换。 |
-| JScrollPane | 此组件仅为一个组件提供可滚动视图。 |
-| JSplitPane | 此容器提供一个拆分的窗格，可以是垂直或水平拆分，并且拆分可以移动。 |
-| JBox（垂直和水平） | 这是一个基本的轻量级容器，利用 BoxLayout 管理器。 |
+| `JPanel` | 这是一个很好的通用轻量级组件，仅用于容纳其他组件。你会经常看到这个组件。 |
+| `JTabbedPane` | 此组件允许你在多个容器之间进行选项卡切换。 |
+| `JScrollPane` | 此组件仅为一个组件提供可滚动视图。 |
+| `JSplitPane` | 此容器提供一个拆分的窗格，可以是垂直或水平拆分，并且拆分可以移动。 |
+| `JBox`（垂直和水平） | 这是一个基本的轻量级容器，利用 `BoxLayout` 管理器。 |
 
-JPanel 无疑是最常见的容器组件，经常用作简单的通用容器。事实上，在上一章中它就使用过。Pane 组件的三种变体显然各有其专用用途。也许最专业和最不常见的容器是 JBox 容器的两种变体。
+`JPanel` 无疑是最常见的容器组件，经常用作简单的通用容器。事实上，在上一章中它就使用过。`Pane` 组件的三种变体显然各有其专用用途。也许最专业和最不常见的容器是 `JBox` 容器的两种变体。
 
 # JPanel
 
-如前所述，此组件是最常用的容器。因此，它比其他容器组件需要更仔细的审视。乍一看，它相对容易使用。你只需将它放在你的设计器屏幕上，设置其布局管理器，然后在其上放置组件。如果你不使用 JBuilder，那么只需声明一个实例，设置其布局管理器，并向其中添加组件。无论哪种方式，它的使用都相当简单。这主要是因为它的界面整洁。它没有窗格、拆分或选项卡来使事情复杂化。此组件与许多容器一样，继承自 JComponent 类。JPanel 默认使用 FlowLayout 管理器，但你可以将其设置为使用任何你希望的布局管理器。
+如前所述，此组件是最常用的容器。因此，它比其他容器组件需要更仔细的审视。乍一看，它相对容易使用。你只需将它放在你的设计器屏幕上，设置其布局管理器，然后在其上放置组件。如果你不使用 JBuilder，那么只需声明一个实例，设置其布局管理器，并向其中添加组件。无论哪种方式，它的使用都相当简单。这主要是因为它的界面整洁。它没有窗格、拆分或选项卡来使事情复杂化。此组件与许多容器一样，继承自 `JComponent` 类。`JPanel` 默认使用 `FlowLayout` 管理器，但你可以将其设置为使用任何你希望的布局管理器。
 
-你在上一章中已经广泛看到了这个组件的使用，应该对其用法有很好的了解。JPanel 组件与所有组件一样，拥有大量的方法和属性。然而，许多方法要么不经常使用，要么更适合在后面的章节中解释。那些常用属性和方法总结在下表中。
-
-
+你在上一章中已经广泛看到了这个组件的使用，应该对其用法有很好的了解。`JPanel` 组件与所有组件一样，拥有大量的方法和属性。然而，许多方法要么不经常使用，要么更适合在后面的章节中解释。那些常用属性和方法总结在下表中。
 
 ## 表 5.2 JPanel 属性与方法
 
 | 属性/方法 | 用途 |
 | --- | --- |
-| layout | 如您在前一章所见，此属性允许您为任何容器选择布局管理器。 |
-| background | 此属性在第 3 章中已展示过。它允许您更改背景颜色。 |
-| border | 此属性允许您更改面板的边框。 |
-| tooltipText | 这是许多组件都具有的属性。它允许您为组件设置弹出工具提示。 |
-| add | 这是所有容器都有的方法，允许您将组件添加到容器中。 |
-| isShowing | 此属性在大多数组件中也很常见，如果组件当前正在显示，则返回 true。 |
-| remove | 此方法在所有容器中都很常见，允许您从容器中移除组件。 |
+| `layout` | 如您在前一章所见，此属性允许您为任何容器选择布局管理器。 |
+| `background` | 此属性在第 3 章中已展示过。它允许您更改背景颜色。 |
+| `border` | 此属性允许您更改面板的边框。 |
+| `tooltipText` | 这是许多组件都具有的属性。它允许您为组件设置弹出工具提示。 |
+| `add` | 这是所有容器都有的方法，允许您将组件添加到容器中。 |
+| `isShowing` | 此属性在大多数组件中也很常见，如果组件当前正在显示，则返回 true。 |
+| `remove` | 此方法在所有容器中都很常见，允许您从容器中移除组件。 |
 
-这些方法和属性大多数可以通过 JBuilder 中的属性窗口访问，也可以直接在代码中访问。除了所示的方法外，还有几种不同的方式可以构造 JPanel。此类可用的各种构造方法如表 5.3 所示。
+这些方法和属性大多数可以通过 JBuilder 中的属性窗口访问，也可以直接在代码中访问。除了所示的方法外，还有几种不同的方式可以构造 `JPanel`。此类可用的各种构造方法如表 5.3 所示。
 
 ## 表 5.3 JPanel 构造方法
 
 | 构造方法 | 用途 |
 | --- | --- |
-| JPanel() | 此构造方法将创建一个具有双缓冲和默认 FlowLayout 的 JPanel。 |
-| JPanel(boolean isDoubleBuffered) | 这将创建一个具有默认 FlowLayout 和指定缓冲策略的 JPanel。 |
-| JPanel(LayoutManager layout) | 此构造方法将创建一个具有指定布局管理器的 JPanel。这可能是此类最常用的构造方法。 |
-| JPanel(LayoutManager layout, boolean isDoubleBuffered) | 此构造方法创建一个具有指定布局管理器和缓冲策略的 JPanel。 |
+| `JPanel()` | 此构造方法将创建一个具有双缓冲和默认 `FlowLayout` 的 `JPanel`。 |
+| `JPanel(boolean isDoubleBuffered)` | 这将创建一个具有默认 `FlowLayout` 和指定缓冲策略的 `JPanel`。 |
+| `JPanel(LayoutManager layout)` | 此构造方法将创建一个具有指定布局管理器的 `JPanel`。这可能是此类最常用的构造方法。 |
+| `JPanel(LayoutManager layout, boolean isDoubleBuffered)` | 此构造方法创建一个具有指定布局管理器和缓冲策略的 `JPanel`。 |
 
-正如您在前一章已经看到的，Panel 组件是一个相对易于使用的、基本的通用容器。它的大多数方法也相对简单直接，易于使用。由于您已经见过这个容器，并且确实在本书中经常看到它的使用，因此在这里再提供一个完整的示例就显得多余了。
+正如您在前一章已经看到的，`Panel` 组件是一个相对易于使用的、基本的通用容器。它的大多数方法也相对简单直接，易于使用。由于您已经见过这个容器，并且确实在本书中经常看到它的使用，因此在这里再提供一个完整的示例就显得多余了。
 
 # JTabbedPane
 
-顾名思义，JTabbedPane 容器旨在以一系列标签页的形式向用户展示项目。像大多数容器一样，此类直接继承自 JComponent。为用户提供一系列标签页，每个标签页包含一组逻辑分组的组件，通常非常方便。例如，如果您希望编写一个跟踪员工的应用程序，您可能会有一个标签页显示个人信息，另一个显示当前职位信息，还有一个显示工作经历。我相信您能想象到更多使用标签页显示对用户来说很方便的情况。
+顾名思义，`JTabbedPane` 容器旨在以一系列标签页的形式向用户展示项目。像大多数容器一样，此类直接继承自 `JComponent`。为用户提供一系列标签页，每个标签页包含一组逻辑分组的组件，通常非常方便。例如，如果您希望编写一个跟踪员工的应用程序，您可能会有一个标签页显示个人信息，另一个显示当前职位信息，还有一个显示工作经历。我相信您能想象到更多使用标签页显示对用户来说很方便的情况。
 
 该容器只是允许用户通过点击特定的标签页来选择他们可能希望查看的组件集。这个容器实际上相当容易使用，尽管它有一些您应该了解的特定属性和方法。这些属性和方法列在下表中。
 
@@ -2508,31 +2361,31 @@ JPanel 无疑是最常见的容器组件，经常用作简单的通用容器。�
 
 | 属性/方法 | 用途 |
 | --- | --- |
-| tabPlacement | 此属性决定标签页放置的位置。 |
-| model | 此属性显示当前选中的模型。 |
-| Componentadd(Component component) | 此方法用于添加一个组件，其标签页标题默认为组件的名称。 |
-| Componentadd(Component component, int index) | 此方法在指定的标签页索引处添加一个组件，其标签页标题默认为组件的名称。 |
-| void add(Component component, Object constraints) | 此方法用于向选项卡窗格添加一个组件。 |
-| void add(Component component, Object constraints, int index) | 此方法将在指定的标签页索引处添加一个组件。 |
-| component add(String title, Component component) | 此方法用于添加一个具有指定标签页标题的组件。 |
-| void addTab(String title, Icon icon, Component component) | 此方法将添加一个由标题和/或图标表示的组件，两者均可为 null。 |
-| addTab(String title, Component component) | 此方法仅添加一个由标题表示且没有图标的标签页。 |
-| addTab(String title, Icon icon, Component component, String tip) | 此方法添加一个标签页以及一个图标和一个工具提示。 |
-| getTabCount | 此方法返回当前标签页的数量。 |
-| getTitleAt(int index) | 此方法返回位于您传递给它的索引处的标签页的标题。 |
-| remove(Component component) | 此方法将从容器中移除特定的组件。 |
-| remove(int index) | 此方法将移除位于您传递给它的索引处的标签页。 |
-| removeall() | 此方法移除所有标签页。 |
+| `tabPlacement` | 此属性决定标签页放置的位置。 |
+| `model` | 此属性显示当前选中的模型。 |
+| `Component add(Component component)` | 此方法用于添加一个组件，其标签页标题默认为组件的名称。 |
+| `Component add(Component component, int index)` | 此方法在指定的标签页索引处添加一个组件，其标签页标题默认为组件的名称。 |
+| `void add(Component component, Object constraints)` | 此方法用于向选项卡窗格添加一个组件。 |
+| `void add(Component component, Object constraints, int index)` | 此方法将在指定的标签页索引处添加一个组件。 |
+| `Component add(String title, Component component)` | 此方法用于添加一个具有指定标签页标题的组件。 |
+| `void addTab(String title, Icon icon, Component component)` | 此方法将添加一个由标题和/或图标表示的组件，两者均可为 null。 |
+| `void addTab(String title, Component component)` | 此方法仅添加一个由标题表示且没有图标的标签页。 |
+| `void addTab(String title, Icon icon, Component component, String tip)` | 此方法添加一个标签页以及一个图标和一个工具提示。 |
+| `getTabCount` | 此方法返回当前标签页的数量。 |
+| `getTitleAt(int index)` | 此方法返回位于您传递给它的索引处的标签页的标题。 |
+| `remove(Component component)` | 此方法将从容器中移除特定的组件。 |
+| `remove(int index)` | 此方法将移除位于您传递给它的索引处的标签页。 |
+| `removeAll()` | 此方法移除所有标签页。 |
 
-您可能注意到有很多 add 方法。这仅仅是因为您可以通过多种方式将组件添加到 JTabbedPane。Swing 尝试尽可能多地兼容这些方法。即使这里提供的列表也不是详尽无遗的；它只包含主要的添加组件方法。本表并非详尽无遗的列表，也不打算如此。然而，它应该为您总结了 JTabbedPane 类一些更常用的属性和方法。下一步显然要带您完成一个示例，说明 JTabbedPane 类的各种用法。
+您可能注意到有很多 `add` 方法。这仅仅是因为您可以通过多种方式将组件添加到 `JTabbedPane`。Swing 尝试尽可能多地兼容这些方法。即使这里提供的列表也不是详尽无遗的；它只包含主要的添加组件方法。本表并非详尽无遗的列表，也不打算如此。然而，它应该为您总结了 `JTabbedPane` 类一些更常用的属性和方法。下一步显然要带您完成一个示例，说明 `JTabbedPane` 类的各种用法。
 
 # 示例 5.1
 
 **步骤 1：** 开始一个项目并像之前所有示例一样向其中添加一个新的应用程序。
 
-**步骤 2：** 将选项卡窗格容器添加到应用程序的框架容器的 Center 部分。您还需要向选项卡窗格容器添加两个标签页。在它们上面有一些组件之前，您将看不到框架，而在代码中这样做是最容易的。因此，转到 Code 标签页并将以下代码添加到 jbInit() 函数中：
+**步骤 2：** 将选项卡窗格容器添加到应用程序的框架容器的 Center 部分。您还需要向选项卡窗格容器添加两个标签页。在它们上面有一些组件之前，您将看不到框架，而在代码中这样做是最容易的。因此，转到 Code 标签页并将以下代码添加到 `jbInit()` 函数中：
 
-```
+```java
 JButton mybutton = new JButton("Click Me");
 JButton mybutton2 = new JButton("No Click Me");
 jTabbedPane1.addTab("tab 1",mybutton);
@@ -2545,7 +2398,7 @@ jTabbedPane1.addTab("tab 2",mybutton2);
 
 对于那些不使用 JBuilder 的人，您可以简单地将以下代码输入到您喜欢的文本编辑器中并编译它：
 
-```
+```java
 package untitled1;
 import java.awt.*;
 import java.awt.event.*;
@@ -2601,56 +2454,54 @@ public class Frame1 extends JFrame
 
 图 5.4 第二个标签页
 
-如您所见，选项卡窗格允许您在单个屏幕上放置比通常情况下更多的组件，这是它最大的优势。当您需要在屏幕上显示大量组件时，您应该考虑使用 JTabbedPane 容器将它们显示在不同的标签页中。
+如您所见，选项卡窗格允许您在单个屏幕上放置比通常情况下更多的组件，这是它最大的优势。当您需要在屏幕上显示大量组件时，您应该考虑使用 `JTabbedPane` 容器将它们显示在不同的标签页中。
 
 # JScrollPane
 
-正如您可能推断的那样，当您需要滚动时，会使用 JScrollPane 容器。如果您觉得您的容器需要垂直滚动条、水平滚动条或两者都需要，您应该认真考虑使用 JScrollPane。同样，这个容器类直接继承自 java.swing.JComponent。表 5.5 总结了许多方法。
+正如您可能推断的那样，当您需要滚动时，会使用 `JScrollPane` 容器。如果您觉得您的容器需要垂直滚动条、水平滚动条或两者都需要，您应该认真考虑使用 `JScrollPane`。同样，这个容器类直接继承自 `java.swing.JComponent`。表 5.5 总结了许多方法。
 
 ## 表 5.5 JScrollPane 属性与方法
 
 | 属性/方法 | 用途 |
 | --- | --- |
-| int getBlockIncrement(int direction) | 此方法返回一个整数，即当容器接收到向上/向下请求时，滚动条值应更改的量。 |
-| int getMaximum() | 此属性表示滚动条的最大值。 |
-| int getMinimum() | 此属性表示滚动条支持的最小值。此属性的典型值为零。 |
-| int getValue() | 此方法返回滚动条的当前值。 |
-| void setMaximum(int maximum) | 此方法设置容器的 maximum 属性。 |
-| void setMinimum(int minimum) | 此方法设置容器的 minimum 属性。 |
-| void setValue(int value) | 此方法是滚动条的值。 |
+| `int getBlockIncrement(int direction)` | 此方法返回一个整数，即当容器接收到向上/向下请求时，滚动条值应更改的量。 |
+| `int getMaximum()` | 此属性表示滚动条的最大值。 |
+| `int getMinimum()` | 此属性表示滚动条支持的最小值。此属性的典型值为零。 |
+| `int getValue()` | 此方法返回滚动条的当前值。 |
+| `void setMaximum(int maximum)` | 此方法设置容器的 `maximum` 属性。 |
+| `void setMinimum(int minimum)` | 此方法设置容器的 `minimum` 属性。 |
+| `void setValue(int value)` | 此方法是滚动条的值。 |
 
 与本书中的其他表格一样，此表并非旨在详尽覆盖所讨论容器的所有属性和方法，而只是总结最常用的方法和属性。您还可以选择水平和垂直滚动条是始终显示、需要时显示还是从不显示。
 
-
-
-在JBuilder中，这很简单，只需设置一个属性即可，如图5.5所示。
+在 JBuilder 中，这很简单，只需设置一个属性即可，如图 5.5 所示。
 
 ![](img/6ac84fdff518ea769f07b6e3d911391e_142_0.png)
 
 ## 图 5.5 显示滚动条
 
-与所有其他Java类一样，`JScrollPane`有几个不同的构造函数可供选择。表5.6列出了各种构造函数并总结了每个函数的用途。
+与所有其他 Java 类一样，`JScrollPane` 有几个不同的构造函数可供选择。表 5.6 列出了各种构造函数并总结了每个函数的用途。
 
 ## 表 5.6 JScrollPane 构造函数
 
 | 构造函数 | 用途 |
 | --- | --- |
-| `JScrollPane()` | 这个构造函数最简单，只是创建一个空的JScrollPane，当需要时，水平和垂直滚动条都会出现。 |
-| `JScrollPane(Component view)` | 此构造函数用于创建一个显示指定组件内容的JScrollPane，当组件内容大于视图时，水平和垂直滚动条将始终出现。 |
-| `JScrollPane(Component view, int vsbPolicy, int hsbPolicy)` | 此构造函数将创建一个JScrollPane，该窗格在一个视口中显示视图组件，其视口位置可通过一对滚动条来控制。 |
-| `JScrollPane(int vsbPolicy, int hsbPolicy)` | 此函数用于创建一个具有指定滚动条策略的空JScrollPane。 |
+| `JScrollPane()` | 这个构造函数最简单，只是创建一个空的 `JScrollPane`，当需要时，水平和垂直滚动条都会出现。 |
+| `JScrollPane(Component view)` | 此构造函数用于创建一个显示指定组件内容的 `JScrollPane`，当组件内容大于视图时，水平和垂直滚动条将始终出现。 |
+| `JScrollPane(Component view, int vsbPolicy, int hsbPolicy)` | 此构造函数将创建一个 `JScrollPane`，该窗格在一个视口中显示视图组件，其视口位置可通过一对滚动条来控制。 |
+| `JScrollPane(int vsbPolicy, int hsbPolicy)` | 此函数用于创建一个具有指定滚动条策略的空 `JScrollPane`。 |
 
 滚动条是一个相对易于使用的容器；事实上，它比选项卡窗格更容易。但为了谨慎起见，在继续之前，最好还是先研究一个示例。
 
 ### 示例 5.2
 
-**步骤 1：** 当然，像所有其他项目一样开始这个项目。然后你只需将`JScrollPane`添加到应用程序窗口的中心，如图5.6所示。
+**步骤 1：** 当然，像所有其他项目一样开始这个项目。然后你只需将 `JScrollPane` 添加到应用程序窗口的中心，如图 5.6 所示。
 
 ![](img/6ac84fdff518ea769f07b6e3d911391e_143_0.png)
 
 图 5.6 放置滚动窗格
 
-**步骤 2：** 现在我们需要在滚动窗格上放置几个组件，以便在运行时看到它的滚动效果。所以我建议在容器的不同位置放置两个按钮，如图5.7所示。
+**步骤 2：** 现在我们需要在滚动窗格上放置几个组件，以便在运行时看到它的滚动效果。所以我建议在容器的不同位置放置两个按钮，如图 5.7 所示。
 
 ![](img/6ac84fdff518ea769f07b6e3d911391e_144_0.png)
 
@@ -2658,7 +2509,7 @@ public class Frame1 extends JFrame
 
 你最终得到的源代码将与此处看到的非常相似：
 
-```
+```java
 package untitled1;
 import java.awt.*;
 import java.awt.event.*;
@@ -2717,42 +2568,42 @@ public class Frame1 extends JFrame
 }
 ```
 
-**注意：** 到这时，你应该注意到JBuilder中的属性框中发生的事情与为你生成的代码之间存在着非常紧密的联系。例如，当你选择“Vertical Scroll Bar”属性并将其设置为“Always”时，会生成以下代码：
+**注意：** 到这时，你应该注意到 JBuilder 中的属性框中发生的事情与为你生成的代码之间存在着非常紧密的联系。例如，当你选择“Vertical Scroll Bar”属性并将其设置为“Always”时，会生成以下代码：
 
-```
+```java
 jScrollPane1.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_ALWAYS);
 ```
 
-这说明了JBuilder之所以成为任何Java开发有价值的工具的本质所在。当你专注于试图解决的实际问题并制作一个视觉上吸引人的图形用户界面时，它会为你生成Java代码。
+这说明了 JBuilder 之所以成为任何 Java 开发有价值的工具的本质所在。当你专注于试图解决的实际问题并制作一个视觉上吸引人的图形用户界面时，它会为你生成 Java 代码。
 
 ## JSplitPane
 
-顾名思义，这个特定的容器允许你将容器分割成两个不同的区域，这两个区域都是可调整大小的。我个人发现在许多情况下，这种配置在美学上令人愉悦，所以我经常使用这个容器。与本章中提到的其他容器类一样，这个类直接继承自`java.swing.JComponent`。下表总结了其主要属性和方法。
+顾名思义，这个特定的容器允许你将容器分割成两个不同的区域，这两个区域都是可调整大小的。我个人发现在许多情况下，这种配置在美学上令人愉悦，所以我经常使用这个容器。与本章中提到的其他容器类一样，这个类直接继承自 `java.swing.JComponent`。下表总结了其主要属性和方法。
 
 表 5.7 JSplitPane 方法和属性
 
 | 方法/属性 | 用途 |
 | --- | --- |
-| `Divider_size` | 此属性设置分隔两个窗格的分隔条的大小。默认值为5。 |
-| `Divider_location` | 此属性设置分隔两个窗格的分隔条的位置。 |
-| `StringDIVIDER` | 此方法用于添加一个代表分隔条的组件。 |
-| `Int HORIZONTAL_SPLIT` | 水平分割表示窗格的分割是水平的。 |
-| `Int VERTICAL_SPLIT` | 这表示窗格是垂直分割的。 |
+| `dividerSize` | 此属性设置分隔两个窗格的分隔条的大小。默认值为 5。 |
+| `dividerLocation` | 此属性设置分隔两个窗格的分隔条的位置。 |
+| `String DIVIDER` | 此方法用于添加一个代表分隔条的组件。 |
+| `int HORIZONTAL_SPLIT` | 水平分割表示窗格的分割是水平的。 |
+| `int VERTICAL_SPLIT` | 这表示窗格是垂直分割的。 |
 | `String RIGHT` | 此方法用于在其他组件的右侧添加一个组件。 |
 | `String BOTTOM` | 此方法用于在其他组件的下方添加一个组件。 |
 | `String TOP` | 此方法用于在其他组件的上方添加一个组件。 |
 
-此方法和属性列表并非详尽无遗，但它涵盖了有效使用JSplitPane所需的基本方法和属性。表5.8总结了该特定类的构造函数。
+此方法和属性列表并非详尽无遗，但它涵盖了有效使用 `JSplitPane` 所需的基本方法和属性。表 5.8 总结了该特定类的构造函数。
 
 表 5.8 JSplitPane 构造函数
 
 | 构造函数 | 用途 |
 | :--- | :--- |
-| `JSplitPane()` | 此构造函数创建一个JSplitPane，配置为将子组件水平并排放置，使用两个按钮作为组件。 |
-| `JSplitPane(int newOrientation)` | 此构造函数构建一个JSplitPane，配置了指定的方向，且没有连续布局。 |
-| `JSplitPane(int newOrientation, boolean newContinuousLayout)` | 此构造函数将创建一个具有指定方向和连续布局的JSplitPane。 |
-| `JSplitPane(int newOrientation, boolean newContinuousLayout, Component newLeftComponent, Component newRightComponent)` | 此构造函数将创建一个具有指定方向和指定组件的JSplitPane。 |
-| `JSplitPane(int newOrientation, Component newLeftComponent, Component newRightComponent)` | 此构造函数将创建一个具有指定方向和指定组件的JSplitPane，且不进行连续重绘。 |
+| `JSplitPane()` | 此构造函数创建一个 `JSplitPane`，配置为将子组件水平并排放置，使用两个按钮作为组件。 |
+| `JSplitPane(int newOrientation)` | 此构造函数构建一个 `JSplitPane`，配置了指定的方向，且没有连续布局。 |
+| `JSplitPane(int newOrientation, boolean newContinuousLayout)` | 此构造函数将创建一个具有指定方向和连续布局的 `JSplitPane`。 |
+| `JSplitPane(int newOrientation, boolean newContinuousLayout, Component newLeftComponent, Component newRightComponent)` | 此构造函数将创建一个具有指定方向和指定组件的 `JSplitPane`。 |
+| `JSplitPane(int newOrientation, Component newLeftComponent, Component newRightComponent)` | 此构造函数将创建一个具有指定方向和指定组件的 `JSplitPane`，且不进行连续重绘。 |
 
 这组多样的构造函数允许你，作为程序员，选择你希望使用的分割窗格类型，以及它将如何显示和使用。这个组件使用起来非常简单（实际上比选项卡窗格更容易），所以让我们来看一个使用此组件的示例。
 
@@ -2760,13 +2611,13 @@ jScrollPane1.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_ALWAYS);
 
 **步骤 1：** 你需要启动一个新项目。你还需要添加一个新的应用程序。
 
-**步骤 2：** 将分割窗格容器放置在应用程序的框架上。你应该会看到与图5.8所示非常相似的内容。
+**步骤 2：** 将分割窗格容器放置在应用程序的框架上。你应该会看到与图 5.8 所示非常相似的内容。
 
 ![](img/6ac84fdff518ea769f07b6e3d911391e_148_0.png)
 
 图 5.8 分割窗格
 
-注意，你已经有两个窗格，并且每个窗格都有标签。当你现在运行应用程序时，你可以轻松地前后移动窗格，调整它们的大小。这在图5.9和图5.10中清楚地显示出来。
+注意，你已经有两个窗格，并且每个窗格都有标签。当你现在运行应用程序时，你可以轻松地前后移动窗格，调整它们的大小。这在图 5.9 和图 5.10 中清楚地显示出来。
 
 ![](img/6ac84fdff518ea769f07b6e3d911391e_149_0.png)
 
@@ -2778,11 +2629,9 @@ jScrollPane1.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_ALWAYS);
 
 此容器组件的全部目的是为你提供一个具有独立窗格的可调整大小的容器。你甚至可以在不同的窗格上放置组件，它们将随窗格一起移动。
 
+对于那些没有使用 JBuilder、不得不手动完成所有操作的用户，以下是源代码：
 
-
-对于那些没有使用JBuilder、不得不手动完成所有操作的用户，以下是源代码：
-
-```
+```java
 package untitled1;
 import java.awt.*;
 import java.awt.event.*;
@@ -2831,33 +2680,33 @@ public class Frame1 extends JFrame
 
 ## JBox
 
-在您的JBuilder Swing容器工具栏上，实际上有两个JBox容器，一个垂直，一个水平。顾名思义，这个容器使用盒式布局作为其默认布局管理器。坦率地说，在我职业生涯中审查的代码里，我并没有看到这个特定容器被频繁使用。该容器有时用于创建影响整体布局的不可见区域。本质上，如果您需要图形用户界面中的某个特定区域保持空白，您可能需要考虑使用JBox容器。其最常用的方法总结在表5.9中。
+在您的 JBuilder Swing 容器工具栏上，实际上有两个 `JBox` 容器，一个垂直，一个水平。顾名思义，这个容器使用盒式布局作为其默认布局管理器。坦率地说，在我职业生涯中审查的代码里，我并没有看到这个特定容器被频繁使用。该容器有时用于创建影响整体布局的不可见区域。本质上，如果您需要图形用户界面中的某个特定区域保持空白，您可能需要考虑使用 `JBox` 容器。其最常用的方法总结在表 5.9 中。
 
-表5.9 JBox方法
+表 5.9 JBox 方法
 
 | 方法 | 用途 |
 |---|---|
-| component createGlue() | 此方法创建一个不可见的组件，它对于可见组件具有最大宽度（对于水平框）或高度（对于垂直框）的框非常有用。此组件本质上是其他组件的“粘合剂”。 |
-| Box createHorizontalBox() | 此方法创建一个从左到右显示其组件的框。 |
-| component createHorizontalGlue() | 此方法创建一个水平粘合组件。 |
-| component createHorizontalStrut (int width) | 此方法创建一个不可见的、固定宽度的组件。 |
-| Box createVerticalBox() | 此方法创建一个从上到下显示其组件的框。 |
-| component createRigidArea(Dimension d) | 此方法创建一个不可见的组件，其大小始终为指定值。 |
+| `Component createGlue()` | 此方法创建一个不可见的组件，它对于可见组件具有最大宽度（对于水平框）或高度（对于垂直框）的框非常有用。此组件本质上是其他组件的“粘合剂”。 |
+| `Box createHorizontalBox()` | 此方法创建一个从左到右显示其组件的框。 |
+| `Component createHorizontalGlue()` | 此方法创建一个水平粘合组件。 |
+| `Component createHorizontalStrut(int width)` | 此方法创建一个不可见的、固定宽度的组件。 |
+| `Box createVerticalBox()` | 此方法创建一个从上到下显示其组件的框。 |
+| `Component createRigidArea(Dimension d)` | 此方法创建一个不可见的组件，其大小始终为指定值。 |
 
 正如我之前提到的，这个特定容器的使用频率不如其他容器高。
 
 ### 总结
 
-本章为您全面介绍了Swing中可用的容器。容器在创建图形用户界面方面扮演着至关重要的角色。为特定情况选择合适的容器绝对至关重要。只有理解了各种容器、它们的用途和用法，您才能选择合适的容器。如果您完成了本章中的示例，您应该已经具备了有效使用Swing容器的必要知识。如果您没有完成，请重新阅读本章并再次尝试示例。
+本章为您全面介绍了 Swing 中可用的容器。容器在创建图形用户界面方面扮演着至关重要的角色。为特定情况选择合适的容器绝对至关重要。只有理解了各种容器、它们的用途和用法，您才能选择合适的容器。如果您完成了本章中的示例，您应该已经具备了有效使用 Swing 容器的必要知识。如果您没有完成，请重新阅读本章并再次尝试示例。
 
 ### 复习题
 
-1. 列出Swing容器的名称。
+1. 列出 Swing 容器的名称。
 2. 哪个容器最常使用？
 3. 您应该设置哪个属性以确保滚动条窗格始终显示垂直滚动条？
 4. 您可以更改分隔窗格中分隔线的大小吗？
 5. 哪个容器可用于创建占位符以及组件之间的连接？
-6. JBuilder有多少个版本的JBox容器？
+6. JBuilder 有多少个版本的 `JBox` 容器？
 7. 您会使用哪个方法来移动滚动条？
 
 # 第6章
@@ -2875,71 +2724,66 @@ public class Frame1 extends JFrame
 
 希望在前面的章节中，您已经注意到事件经常用于响应用户的操作。您可能对什么是事件有一个直观的概念，但更正式的定义可能会有所帮助。*事件*是由用户、另一个程序或另一个函数发起的操作。此类操作包括单击鼠标、按下键，甚至只是将鼠标移动到给定区域。当操作被触发时，会生成一个事件并发送给任何可用的事件处理程序。这些事件处理程序随后可以适当地响应事件。事件处理程序是专门设计用于处理特定事件的类。
 
-Swing和JFC中的事件处理基于早期的AWT事件处理模型。这两种方法有许多相似之处。如果您熟悉AWT事件处理，可能只需要粗略浏览一下本章。如果您之前没有AWT事件处理的经验，可能需要更深入地研究此处提供的材料。
+Swing 和 JFC 中的事件处理基于早期的 AWT 事件处理模型。这两种方法有许多相似之处。如果您熟悉 AWT 事件处理，可能只需要粗略浏览一下本章。如果您之前没有 AWT 事件处理的经验，可能需要更深入地研究此处提供的材料。
 
 ### 事件
 
-事件是可能发生的任何事情。从用户的角度来看，事件是任何操作，例如单击按钮或将鼠标移动到给定组件上。从程序员的角度来看，每个事件都是一个专门设计用于该事件的类。所有事件都以`java.awt.AWTEvent`类作为根类。AWTEvent随后被子类化为各种特定的事件类，例如ActionEvent、WindowEvent、ItemEvent、KeyEvent、MouseEvent等。这意味着每个特定的事件都将共享一定数量的方法和属性。
+事件是可能发生的任何事情。从用户的角度来看，事件是任何操作，例如单击按钮或将鼠标移动到给定组件上。从程序员的角度来看，每个事件都是一个专门设计用于该事件的类。所有事件都以 `java.awt.AWTEvent` 类作为根类。`AWTEvent` 随后被子类化为各种特定的事件类，例如 `ActionEvent`、`WindowEvent`、`ItemEvent`、`KeyEvent`、`MouseEvent` 等。这意味着每个特定的事件都将共享一定数量的方法和属性。
 
-AWTEvent的直接子类及其用途总结在表6.1中。
+`AWTEvent` 的直接子类及其用途总结在表 6.1 中。
 
-表6.1 AWTEvent的子类
+表 6.1 AWTEvent 的子类
 
 | 类 | 用途 |
 | :--- | :--- |
-| ActionEvent | 这是一个表示发生了组件定义的操作的事件。当发生特定于组件的操作（例如单击按钮）时，组件会生成此事件。然后，该事件传递给每个使用组件的`addActionListener`方法注册以接收此类事件的ActionListener对象。 |
-| AdjustmentEvent | 当可调整对象之一被调整时，会触发由该对象发出的调整事件。 |
-| AncestorEvent | 这是向子组件报告的、源自组件层次结构中祖先的事件。换句话说，它告诉子组件其某个父组件发生了事件。 |
-| ComponentEvent | 这是一个低级事件，表示组件移动、更改大小、变为可见或不可见等。此事件仅用于通知目的。无论您对此事件采取何种操作，组件的操作都会发生。 |
-| HierarchyEvent | 此事件表示组件所属的组件层次结构发生了某些更改。 |
-| InputMethodEvent | 当向适当的组件输入文本时，会触发此事件。只要文本因任何原因发生更改，输入方法就会发送一个事件。 |
-| InternalFrameEvent | InternalFrameEvent是一个相当奇怪的事件。您不会经常看到它被使用。它是一个添加了对JInternalFrame对象作为事件源支持的AWTEvent。此类与WindowEvent具有相同的事件类型。 |
-| InvocationEvent | 当由AWT事件分派线程分派时，此事件将在Runnable上执行`run()`方法。 |
-| ItemEvent | 此事件表示一个项目被选中或取消选中。您会经常看到它与列表框关联。 |
-| TextEvent | 此事件表示对象的文本已更改。 |
+| `ActionEvent` | 这是一个表示发生了组件定义的操作的事件。当发生特定于组件的操作（例如单击按钮）时，组件会生成此事件。然后，该事件传递给每个使用组件的 `addActionListener` 方法注册以接收此类事件的 `ActionListener` 对象。 |
+| `AdjustmentEvent` | 当可调整对象之一被调整时，会触发由该对象发出的调整事件。 |
+| `AncestorEvent` | 这是向子组件报告的、源自组件层次结构中祖先的事件。换句话说，它告诉子组件其某个父组件发生了事件。 |
+| `ComponentEvent` | 这是一个低级事件，表示组件移动、更改大小、变为可见或不可见等。此事件仅用于通知目的。无论您对此事件采取何种操作，组件的操作都会发生。 |
+| `HierarchyEvent` | 此事件表示组件所属的组件层次结构发生了某些更改。 |
+| `InputMethodEvent` | 当向适当的组件输入文本时，会触发此事件。只要文本因任何原因发生更改，输入方法就会发送一个事件。 |
+| `InternalFrameEvent` | `InternalFrameEvent` 是一个相当奇怪的事件。您不会经常看到它被使用。它是一个添加了对 `JInternalFrame` 对象作为事件源支持的 `AWTEvent`。此类与 `WindowEvent` 具有相同的事件类型。 |
+| `InvocationEvent` | 当由 AWT 事件分派线程分派时，此事件将在 `Runnable` 上执行 `run()` 方法。 |
+| `ItemEvent` | 此事件表示一个项目被选中或取消选中。您会经常看到它与列表框关联。 |
+| `TextEvent` | 此事件表示对象的文本已更改。 |
 
-其中一些类本身又是其他事件的父类。这是Java如何利用面向对象，从更通用的基类构建专门类并形成不断增长的分层类结构的另一个例子。
+其中一些类本身又是其他事件的父类。这是 Java 如何利用面向对象，从更通用的基类构建专门类并形成不断增长的分层类结构的另一个例子。
 
-由于所有事件都派生自AWTEvent类，因此研究它的一些更常用和实用的方法是明智的。这些方法总结在表6.2中。
+由于所有事件都派生自 `AWTEvent` 类，因此研究它的一些更常用和实用的方法是明智的。这些方法总结在表 6.2 中。
 
-表6.2 AWTEvent方法
+表 6.2 AWTEvent 方法
 
 | 方法 | 用途 |
 | :--- | :--- |
-| protected void consume() | 此方法用于消耗相关事件。一旦被消耗，事件即被销毁，无法进一步传播。 |
-| int getID() | 此方法用于返回表示事件类型的数值。 |
-| String toString() | 此方法将返回此事件对象的字符串表示形式。 |
-| protected void finalize() | 当垃圾收集确定对象不再有引用时，垃圾收集器实际上会在对象上调用此方法。 |
-| protected Boolean isConsumed() | 此方法将告诉您相关事件是否已被消耗。 |
+| `protected void consume()` | 此方法用于消耗相关事件。一旦被消耗，事件即被销毁，无法进一步传播。 |
+| `int getID()` | 此方法用于返回表示事件类型的数值。 |
+| `String toString()` | 此方法将返回此事件对象的字符串表示形式。 |
+| `protected void finalize()` | 当垃圾收集确定对象不再有引用时，垃圾收集器实际上会在对象上调用此方法。 |
+| `protected boolean isConsumed()` | 此方法将告诉您相关事件是否已被消耗。 |
+| `String paramString()` | 此方法用于返回一个表示此事件状态的字符串。 |
 
+此类只有两个可能的构造函数。这些构造函数在表 6.3 中进行了总结。
 
-
-### 方法 | 用途
-:--- | :---
-String paramString() | 此方法用于返回一个表示此事件状态的字符串。
-
-此类只有两个可能的构造函数。这些构造函数在表6.3中进行了总结。
-
-#### 表6.3 AWTEvent构造函数
+#### 表 6.3 AWTEvent 构造函数
 
 | 构造函数 | 用途 |
 | :--- | :--- |
-| AWTEvent(Event event) | 此构造函数用于根据1.0风格事件的参数创建一个AWTEvent对象。 |
-| AWTEvent(Object source, int id) | 此构造函数将使用指定的源对象和类型创建一个AWTEvent对象。 |
+| `AWTEvent(Event event)` | 此构造函数用于根据 1.0 风格事件的参数创建一个 `AWTEvent` 对象。 |
+| `AWTEvent(Object source, int id)` | 此构造函数将使用指定的源对象和类型创建一个 `AWTEvent` 对象。 |
 
-理解AWTEvent类及其直接子类对于理解事件的一般工作方式至关重要。你无需记忆这些表格中的每一项或本章内容。然而，熟悉这些材料是个好主意。
+理解 `AWTEvent` 类及其直接子类对于理解事件的一般工作方式至关重要。你无需记忆这些表格中的每一项或本章内容。然而，熟悉这些材料是个好主意。
 
 ### 监听器
 
-当事件被触发时，它会被一个或多个对此事件进行操作的监听器接收。*监听器*只是一个为监听特定事件发生而专门设计的特殊类。事件处理是通过使用监听器接口来完成的，这些接口在`java.awt.event`包中定义。在Java中，有许多内建接口作为不同类型事件处理的监听器。
+当事件被触发时，它会被一个或多个对此事件进行操作的监听器接收。*监听器*只是一个为监听特定事件发生而专门设计的特殊类。事件处理是通过使用监听器接口来完成的，这些接口在 `java.awt.event` 包中定义。在 Java 中，有许多内建接口作为不同类型事件处理的监听器。
 
 ### 应用事件
 
 关于事件是什么以及它们如何工作的这些通用知识是有用的，但还不完整。缺失的是对如何在程序中应用事件的概述。以下是应用事件的基本步骤概述：
 
-1.  决定将事件应用于哪个GUI组件。
-2.  实现适当的监听器接口或多个接口。适当的接口是与该组件相对应的那些接口。
-3.  现在应用接口中涉及的方法。
+1. 决定将事件应用于哪个 GUI 组件。
+2. 实现适当的监听器接口或多个接口。适当的接口是与该组件相对应的那些接口。
+3. 现在应用接口中涉及的方法。
 
 如果你了解常见的接口，这些步骤可能会更有帮助。下面是最常见接口的简要示例和描述。
 
@@ -2965,17 +2809,17 @@ public void itemStateChanged(ItemEvent e)
 }
 ```
 
-在JBuilder中使用事件被显著简化，因为JBuilder本身会为你处理部分工作。JBuilder会为该特定组件/事件创建一个EventAdapter类，并赋予其一个与该特定组件和事件相对应的适当名称。这只需双击特定组件即可实现。例如，如果你双击一个按钮，JBuilder将为你生成动作监听器。JBuilder还会在`jbInit()`方法中创建一行代码，通过EventAdapter将组件的事件源连接到你的事件处理方法。这是通过调用组件的`addListener`方法来完成的。你需要做的只是填充事件适配器在事件发生时调用的事件处理方法。
+在 JBuilder 中使用事件被显著简化，因为 JBuilder 本身会为你处理部分工作。JBuilder 会为该特定组件/事件创建一个 `EventAdapter` 类，并赋予其一个与该特定组件和事件相对应的适当名称。这只需双击特定组件即可实现。例如，如果你双击一个按钮，JBuilder 将为你生成动作监听器。JBuilder 还会在 `jbInit()` 方法中创建一行代码，通过 `EventAdapter` 将组件的事件源连接到你的事件处理方法。这是通过调用组件的 `addListener` 方法来完成的。你需要做的只是填充事件适配器在事件发生时调用的事件处理方法。
 
 ### 匿名内部类适配器
 
-Java程序员也经常使用匿名内部类作为适配器类。JBuilder也可以生成这些内部类事件适配器。内部类有几个优点，包括：
+Java 程序员也经常使用匿名内部类作为适配器类。JBuilder 也可以生成这些内部类事件适配器。内部类有几个优点，包括：
 
--  代码内联生成，从而简化了代码。
--  不生成单独的类。
--  内部类可以访问其声明作用域内的所有变量，而标准事件适配器只能访问public和包级别的变量。
+- 代码内联生成，从而简化了代码。
+- 不生成单独的类。
+- 内部类可以访问其声明作用域内的所有变量，而标准事件适配器只能访问 public 和包级别的变量。
 
-JBuilder生成的特定类型的内部类事件适配器被称为匿名适配器。这种适配器样式避免了创建单独的适配器类。生成的代码紧凑而优雅。例如，以下代码是使用匿名适配器为`focusGained()`事件生成的：
+JBuilder 生成的特定类型的内部类事件适配器被称为匿名适配器。这种适配器样式避免了创建单独的适配器类。生成的代码紧凑而优雅。例如，以下代码是使用匿名适配器为 `focusGained()` 事件生成的：
 
 ```java
 jButton1.addFocusListener(new java.awt.event.FocusAdapter()
@@ -2991,7 +2835,7 @@ void jButton1_focusGained(FocusEvent e)
 }
 ```
 
-将此代码与前面显示的标准适配器代码示例进行比较。JBuilder使用标准适配器类生成了那段代码。两种使用适配器的方式都提供了处理`focusGained()`事件的代码，但匿名适配器方法更为紧凑。
+将此代码与前面显示的标准适配器代码示例进行比较。JBuilder 使用标准适配器类生成了那段代码。两种使用适配器的方式都提供了处理 `focusGained()` 事件的代码，但匿名适配器方法更为紧凑。
 
 ### 总结
 
@@ -2999,87 +2843,85 @@ void jButton1_focusGained(FocusEvent e)
 
 ### 复习题
 
-1.  从用户的角度来看，什么是事件？
-2.  什么是事件处理器？
-3.  所有事件类的父类是什么？
-4.  列出四个常见的事件类。
-5.  什么是监听器？
-6.  使用内部类适配器有哪三个优点？
-7.  AWTEvent类有多少个构造函数？
+1. 从用户的角度来看，什么是事件？
+2. 什么是事件处理器？
+3. 所有事件类的父类是什么？
+4. 列出四个常见的事件类。
+5. 什么是监听器？
+6. 使用内部类适配器有哪三个优点？
+7. `AWTEvent` 类有多少个构造函数？
 
-第7章
+# 第7章
 
 ## 用户选择
 
 本章涵盖以下内容：
 
--  JRadioButton
--  JToggleButton
--  JCheckBox
--  JComboBox
--  JList
--  JSlider
+- `JRadioButton`
+- `JToggleButton`
+- `JCheckBox`
+- `JComboBox`
+- `JList`
+- `JSlider`
 
 ## 引言
 
-到目前为止，本书讨论了有关Swing组件结构、容器、更改外观甚至处理复杂事件结构的问题。然而，我们尚未解决设计图形用户界面时的核心问题之一。我们作为程序员开发丰富的GUI界面的全部目的，是为了促进增加用户交互。我们希望给用户一种掌控感和能够做出选择的感觉。考虑到这一点，似乎不言而喻，任何GUI工具包（无论是AWT、Swing还是其他方法）的一个不可或缺的部分就是允许用户做出选择。Java基础类提供了许多允许用户做出选择的可视组件。在本章中，我们将探讨这些组件。
+到目前为止，本书讨论了有关 Swing 组件结构、容器、更改外观甚至处理复杂事件结构的问题。然而，我们尚未解决设计图形用户界面时的核心问题之一。我们作为程序员开发丰富的 GUI 界面的全部目的，是为了促进增加用户交互。我们希望给用户一种掌控感和能够做出选择的感觉。考虑到这一点，似乎不言而喻，任何 GUI 工具包（无论是 AWT、Swing 还是其他方法）的一个不可或缺的部分就是允许用户做出选择。Java 基础类提供了许多允许用户做出选择的可视组件。在本章中，我们将探讨这些组件。
 
-当然，允许用户做出选择与第3章讨论的用户输入主题密切相关。然而，第3章关注的是允许用户输入文本的组件。本章关注的是允许用户从你提供的一组选项中进行选择的组件。我们都曾多次遇到过这样的软件。当你去ATM机取钱时，你很可能会看到一系列按特定增量设定的选项，或者你可以输入特定金额。这些预定义的选项正是本章所关注的。表7.1总结了我们在本章中探讨的组件，并简要描述了它们的用途。
+当然，允许用户做出选择与第 3 章讨论的用户输入主题密切相关。然而，第 3 章关注的是允许用户输入文本的组件。本章关注的是允许用户从你提供的一组选项中进行选择的组件。我们都曾多次遇到过这样的软件。当你去 ATM 机取钱时，你很可能会看到一系列按特定增量设定的选项，或者你可以输入特定金额。这些预定义的选项正是本章所关注的。表 7.1 总结了我们在本章中探讨的组件，并简要描述了它们的用途。
 
-#### 表7.1 用户选择组件
+#### 表 7.1 用户选择组件
 
 | 组件 | 用途 |
 |---|---|
-| JRadioButton | 单选按钮允许用户在两个或多个互斥选项之间进行选择。 |
-| JCheckBox | 复选框用于当你希望用户选择一个或多个非互斥选项时。 |
-| JComboBox | 组合框呈现一个下拉列表，只允许用户选择其中一个选项。 |
-| JList | 列表与组合框非常相似，只是所有选项都已显示。框不需要下拉。 |
-| JSlider | 滑块允许用户从预定义的值范围中选择一个值。 |
-| JToggleButton | 切换按钮允许你在两个互斥选项之间切换。 |
+| `JRadioButton` | 单选按钮允许用户在两个或多个互斥选项之间进行选择。 |
+| `JCheckBox` | 复选框用于当你希望用户选择一个或多个非互斥选项时。 |
+| `JComboBox` | 组合框呈现一个下拉列表，只允许用户选择其中一个选项。 |
+| `JList` | 列表与组合框非常相似，只是所有选项都已显示。框不需要下拉。 |
+| `JSlider` | 滑块允许用户从预定义的值范围中选择一个值。 |
+| `JToggleButton` | 切换按钮允许你在两个互斥选项之间切换。 |
 
 本章将通过示例深入探讨这些组件。这些组件相当直观且易于学习。然而，它们对于设计真正用户友好的界面至关重要。
 
 ### JRadioButton
 
-单选按钮是无处不在的组件。许多应用程序经常使用它们。它们类似于前面提到的ATM机中呈现的预定义增量值。单选按钮看起来像图7.1所示的图像。
+单选按钮是无处不在的组件。许多应用程序经常使用它们。它们类似于前面提到的 ATM 机中呈现的预定义增量值。单选按钮看起来像图 7.1 所示的图像。
 
+#### 图 7.1 单选按钮
 
+用户界面上会呈现一系列两个或以上的单选按钮，且只能选择其中一个。这正是单选按钮与复选框的区别；单选按钮允许用户做出单一的、互斥的选择。`JRadioButton` 类实际上继承自 `JToggleButton` 类。有人可能会认为，先介绍 `JToggleButton` 类会更合理；然而，单选按钮的使用要常见得多。单选按钮通常与 `ButtonGroup` 组件配合使用，以便将相关的按钮分组在一起。单选按钮最重要的方法和属性总结在表 7.2 中。
 
-#### 图7.1 单选按钮
-
-用户界面上会呈现一系列两个或以上的单选按钮，且只能选择其中一个。这正是单选按钮与复选框的区别；单选按钮允许用户做出单一的、互斥的选择。`JRadioButton` 类实际上继承自 `JToggleButton` 类。有人可能会认为，先介绍 `JToggleButton` 类会更合理；然而，单选按钮的使用要常见得多。单选按钮通常与按钮组组件配合使用，以便将相关的按钮分组在一起。单选按钮最重要的方法和属性总结在表7.2中。
-
-#### 表7.2 JRadioButton 方法和属性
+#### 表 7.2 JRadioButton 方法和属性
 
 | 方法/属性 | 用途 |
 |---|---|
-| getText | 此方法获取单选按钮中的文本。 |
-| setText | 此方法将设置显示为单选按钮标题的文本。 |
-| toolTipText | 此属性设置当用户鼠标悬停在单选按钮上时显示的工具提示。 |
-| enabled | 此属性决定单选按钮是否被启用。 |
-| String paramString() | 此函数/方法返回此 `JRadioButton` 的字符串表示形式。 |
+| `getText` | 此方法获取单选按钮中的文本。 |
+| `setText` | 此方法将设置显示为单选按钮标题的文本。 |
+| `toolTipText` | 此属性设置当用户鼠标悬停在单选按钮上时显示的工具提示。 |
+| `enabled` | 此属性决定单选按钮是否被启用。 |
+| `String paramString()` | 此函数/方法返回此 `JRadioButton` 的字符串表示形式。 |
 
 作为一名 Java 程序员，在使用 `JRadioButton` 构造函数时有几种选择。创建一个 `JRadioButton` 实例时，可以传递一个字符串作为标题，一个要显示的图标，或者两者都不传，从而创建一个空白的单选按钮。显然，所有 Swing 甚至 AWT 组件都有许多通用的函数。我们在此不展开讨论。相反，我们将通过一个简短的例子来演示使用单选按钮的基本要点。
 
 ### 示例 7.1
 
-**步骤1：** 创建一个新项目和一个应用程序对象，就像在之前的章节中所做的那样。
+**步骤 1：** 创建一个新项目和一个应用程序对象，就像在之前的章节中所做的那样。
 
-**步骤2：** 将屏幕的布局管理器设置为五行一列的 `GridLayout`。
+**步骤 2：** 将屏幕的布局管理器设置为五行一列的 `GridLayout`。
 
-**步骤3：** 向应用程序添加三个单选按钮，并按照图7.2所示更改它们的标题（文本）。
+**步骤 3：** 向应用程序添加三个单选按钮，并按照图 7.2 所示更改它们的标题（文本）。
 
-**步骤4：** 添加一个按钮组。它不会显示在屏幕上，但不用担心；它是存在的。当你选择单选按钮的 `buttonGroup` 属性时，你会看到按钮组出现。如图7.3所示。逐个选择每个单选按钮，并将其 `buttonGroup` 属性设置为 `buttonGroup1`。
+**步骤 4：** 添加一个按钮组。它不会显示在屏幕上，但不用担心；它是存在的。当你选择单选按钮的 `buttonGroup` 属性时，你会看到按钮组出现。如图 7.3 所示。逐个选择每个单选按钮，并将其 `buttonGroup` 属性设置为 `buttonGroup1`。
 
 通过将所有单选按钮分配到同一个组，你使它们协同工作并保持互斥。
 
 > **注意：** 在屏幕上使用多个按钮组，可以让你拥有多个单选按钮分组，每个组作为一个整体单元运行，但组之间没有交互。
 
-**步骤5：** 向屏幕添加一个文本框和一个按钮。
+**步骤 5：** 向屏幕添加一个文本框和一个按钮。
 
-**步骤6：** 在类的开头，添加一个名为 `choice` 的私有整型变量声明。然后，在每个单选按钮的事件处理中，你可以设置该整型变量以反映所选的按钮。例如，在单选按钮1中，将 `choice` 设置为1。
+**步骤 6：** 在类的开头，添加一个名为 `choice` 的私有整型变量声明。然后，在每个单选按钮的事件处理中，你可以设置该整型变量以反映所选的按钮。例如，在单选按钮 1 中，将 `choice` 设置为 1。
 
-**步骤7：** 在按钮的事件处理中，放置以下代码：
+**步骤 7：** 在按钮的事件处理中，放置以下代码：
 
 ```java
 switch(choice)
@@ -3096,9 +2938,9 @@ switch(choice)
 } // end of switch
 ```
 
-运行应用程序时，你将看到如图7.4所示的界面。当你选择不同的单选按钮时，按下屏幕底部的按钮。文本框将显示一条消息，指示你选择了哪个单选按钮。
+运行应用程序时，你将看到如图 7.4 所示的界面。当你选择不同的单选按钮时，按下屏幕底部的按钮。文本框将显示一条消息，指示你选择了哪个单选按钮。
 
-#### 图7.4 示例7.1的演示
+#### 图 7.4 示例 7.1 的演示
 
 如果你没有 JBuilder，可以将以下代码输入到你最喜欢的文本编辑器中并编译它。你将获得相同的效果。
 
@@ -3229,8 +3071,6 @@ public class Frame1 extends JFrame
 
 `JToggleButton` 也允许我们使用一个字符串作为标题、一个图标和一个布尔值来确定当前是否被选中来创建它。切换按钮看起来实际上有点像普通按钮，不同之处在于当点击它时，它会保持按下的状态，直到你再次点击它。在向用户显示布尔值时，这提供了一个非常有用的视觉效果。考虑下面这个使用切换按钮来指示应用程序声音是否打开或关闭的例子。
 
-
-
 **注意：** 本应用示例仅展示切换按钮及其属性的使用——并未实际开启或关闭声音。
 
 ### 示例 7.2
@@ -3241,7 +3081,7 @@ public class Frame1 extends JFrame
 
 **步骤 3：** 将以下代码添加到该切换按钮的 `actionEvent` 中。请记住，在设计视图中双击切换按钮，将直接跳转到其 `actionEvent`。
 
-```
+```java
 if(jToggleButton1.getText()=="Sound On")
 {
     jToggleButton1.setSelected(false);
@@ -3266,7 +3106,7 @@ else
 
 对于未使用 JBuilder 的读者，此处提供了本示例的完整代码：
 
-```
+```java
 package untitled1;
 import java.awt.*;
 import java.awt.event.*;
@@ -3344,14 +3184,14 @@ public class Frame1 extends JFrame
 
 | 构造方法 | 用途 |
 | :--- | :--- |
-| JCheckBox() | 此构造方法创建一个没有文本和图标且未选中的复选框按钮。 |
-| JCheckBox(Action a) | 此构造方法创建一个复选框，其属性从提供的 `Action` 获取。 |
-| JCheckBox(Icon icon) | 此构造方法创建一个未选中且带有图标的复选框。 |
-| JCheckBox(Icon icon, boolean selected) | 此构造方法创建一个带有图标的复选框，并指定该复选框初始是否选中。 |
-| JCheckBox(String text) | 此构造方法创建一个带有文本标题且初始未选中的复选框。 |
-| JCheckBox(String text, boolean selected) | 此构造方法创建一个带有文本的复选框，并指定其初始是否选中。 |
-| JCheckBox(String text, Icon icon) | 此构造方法创建一个未选中但带有指定文本和图标的复选框。 |
-| JCheckBox(String text, Icon icon, boolean selected) | 此构造方法创建一个带有文本和图标的复选框，并指定其初始是否选中。 |
+| `JCheckBox()` | 此构造方法创建一个没有文本和图标且未选中的复选框按钮。 |
+| `JCheckBox(Action a)` | 此构造方法创建一个复选框，其属性从提供的 `Action` 获取。 |
+| `JCheckBox(Icon icon)` | 此构造方法创建一个未选中且带有图标的复选框。 |
+| `JCheckBox(Icon icon, boolean selected)` | 此构造方法创建一个带有图标的复选框，并指定该复选框初始是否选中。 |
+| `JCheckBox(String text)` | 此构造方法创建一个带有文本标题且初始未选中的复选框。 |
+| `JCheckBox(String text, boolean selected)` | 此构造方法创建一个带有文本的复选框，并指定其初始是否选中。 |
+| `JCheckBox(String text, Icon icon)` | 此构造方法创建一个未选中但带有指定文本和图标的复选框。 |
+| `JCheckBox(String text, Icon icon, boolean selected)` | 此构造方法创建一个带有文本和图标的复选框，并指定其初始是否选中。 |
 
 从表 7.3 可以看出，在创建复选框时你有多种选择。你的复选框可以有标题、有图标、初始选中，或以上都没有。复选框是一个非常通用的组件。显然，如果复选框继承自切换按钮，那么它就继承了切换按钮的所有方法。然而，复选框也有一些自己独有的方法，这些是切换按钮所没有的。这些方法在表 7.4 中进行了总结。
 
@@ -3359,13 +3199,13 @@ public class Frame1 extends JFrame
 
 | 方法 | 用途 |
 | :--- | :--- |
-| void configurePropertiesFromAction(Action a) | 此方法根据 `Action` 实例的值设置 `ActionEvent` 源的属性。 |
-| createActionPropertyChangeListener(Action a) | 此方法创建用于在 `Action` 实例属性更改时更新 `ActionEvent` 源的 `PropertyChangeListener`。 |
-| AccessibleContext getAccessibleContext() | 此方法获取与此 `JCheckBox` 关联的 `AccessibleContext`。 |
-| String getUIClassID() | 此方法返回一个字符串，指定呈现此组件的类的名称。 |
-| Boolean isBorderPaintedFlat() | 此方法返回边框是否为平面。 |
-| String paramString() | 此方法返回此 `JCheckBox` 的字符串表示。 |
-| void setBorderPaintedFlat(boolean b) | 此方法设置边框是否应绘制为平面（它是 `isBorderFlat()` 的互补方法）。 |
+| `void configurePropertiesFromAction(Action a)` | 此方法根据 `Action` 实例的值设置 `ActionEvent` 源的属性。 |
+| `createActionPropertyChangeListener(Action a)` | 此方法创建用于在 `Action` 实例属性更改时更新 `ActionEvent` 源的 `PropertyChangeListener`。 |
+| `AccessibleContext getAccessibleContext()` | 此方法获取与此 `JCheckBox` 关联的 `AccessibleContext`。 |
+| `String getUIClassID()` | 此方法返回一个字符串，指定呈现此组件的类的名称。 |
+| `boolean isBorderPaintedFlat()` | 此方法返回边框是否为平面。 |
+| `String paramString()` | 此方法返回此 `JCheckBox` 的字符串表示。 |
+| `void setBorderPaintedFlat(boolean b)` | 此方法设置边框是否应绘制为平面（它是 `isBorderFlat()` 的互补方法）。 |
 
 复选框有多种方法和属性与之关联。有些方法相当晦涩，不常使用，而另一些则频繁使用。下面示例演示了更常用的方法和属性。
 
@@ -3381,13 +3221,13 @@ public class Frame1 extends JFrame
 
 本示例旨在向你展示如何在实际场景中使用复选框。在此示例中，复选框用于指示终端用户使用何种特定的通信方式。如果你将注意力转向按钮的 `actionEvent`，你会看到复选框属性的使用。在 `actionEvent` 内部，我们只需放置一系列 `if` 语句来确定哪些复选框被选中，并设置一些布尔变量来反映这一事实。这些布尔值在类的开头进行了声明。完整代码如下所示：
 
-
-
 # 第7章
 
 #### 7.4 复选框与组合框示例
 
-**示例7.3：复选框示例**
+**示例 7.3：复选框示例**
+
+
 
 ```java
 package chkboxexample;
@@ -3498,36 +3338,36 @@ public class Frame1 extends JFrame
 
 *图7.10 展开的组合框*
 
-该组件直接继承自JComponent。JComboBox的构造函数如表7.5所示。
+该组件直接继承自`JComponent`。`JComboBox`的构造函数如表7.5所示。
 
-*表7.5 JComboBox构造函数*
+**表7.5 JComboBox构造函数**
 
 | 构造函数 | 用途 |
 |---|---|
-| JComboBox() | 这是默认构造函数，它创建一个具有默认数据模型的JComboBox。 |
-| JComboBox(ComboBoxModel aModel) | 此构造函数将创建一个从现有ComboBoxModel中获取项目的JComboBox。 |
-| JComboBox(Object[] items) | 此构造函数创建一个包含指定数组中元素的JComboBox。 |
-| JComboBox(Vector items) | 此构造函数将创建一个包含指定向量中元素的JComboBox。 |
+| `JComboBox()` | 这是默认构造函数，它创建一个具有默认数据模型的`JComboBox`。 |
+| `JComboBox(ComboBoxModel aModel)` | 此构造函数将创建一个从现有`ComboBoxModel`中获取项目的`JComboBox`。 |
+| `JComboBox(Object[] items)` | 此构造函数创建一个包含指定数组中元素的`JComboBox`。 |
+| `JComboBox(Vector items)` | 此构造函数将创建一个包含指定向量中元素的`JComboBox`。 |
 
 这些构造函数中的每一个都允许你创建一个以特定初始状态开始的组合框。请记住，当你在设计屏幕上放置组合框时，JBuilder将使用默认的无参数构造函数。除了构造函数，组合框还有许多有用的方法。最常用的方法如表7.6所示。
 
-*表7.6 JComboBox方法*
+**表7.6 JComboBox方法**
 
 | 方法 | 用途 |
 |---|---|
-| void addItem(Object anObject) | 此方法将项目添加到项目列表中。 |
-| Object getItemAt(int index) | 此方法将返回指定索引处的列表项目。 |
-| int getItemCount() | 此方法用于返回列表中的项目数量。 |
-| int getSelectedIndex() | 此方法用于返回列表中与给定项目匹配的索引。 |
-| Object getSelectedItem() | 此方法将返回当前选中的项目。 |
-| void insertItemAt(Object anObject, int index) | 此方法在给定索引处将项目插入项目列表。 |
-| void removeAllItems() | 此方法通过移除列表中的所有项目来清空列表。 |
-| void removeItem(Object anObject) | 此方法从列表中移除特定项目。 |
-| void removeItemAt(int anIndex) | 此方法将移除特定索引处的项目。此方法仅在JComboBox使用默认数据模型时有效。 |
-| void setMaximumRowCount(int count) | 此方法设置JComboBox显示的最大行数。 |
-| void showPopup() | 此方法用于强制组合框显示其弹出窗口。 |
+| `void addItem(Object anObject)` | 此方法将项目添加到项目列表中。 |
+| `Object getItemAt(int index)` | 此方法将返回指定索引处的列表项目。 |
+| `int getItemCount()` | 此方法用于返回列表中的项目数量。 |
+| `int getSelectedIndex()` | 此方法用于返回列表中与给定项目匹配的索引。 |
+| `Object getSelectedItem()` | 此方法将返回当前选中的项目。 |
+| `void insertItemAt(Object anObject, int index)` | 此方法在给定索引处将项目插入项目列表。 |
+| `void removeAllItems()` | 此方法通过移除列表中的所有项目来清空列表。 |
+| `void removeItem(Object anObject)` | 此方法从列表中移除特定项目。 |
+| `void removeItemAt(int anIndex)` | 此方法将移除特定索引处的项目。此方法仅在`JComboBox`使用默认数据模型时有效。 |
+| `void setMaximumRowCount(int count)` | 此方法设置`JComboBox`显示的最大行数。 |
+| `void showPopup()` | 此方法用于强制组合框显示其弹出窗口。 |
 
-这些函数中的每一个都有不同的用途，而且都非常有用。然而，addItem方法的不同变体是我们最感兴趣的。最常用的版本如表7.6所示。addItem方法用于向组合框添加项目。在你编写的代码中某处，你将利用此方法向组合框添加项目。以下示例说明了这一点。
+这些函数中的每一个都有不同的用途，而且都非常有用。然而，`addItem`方法的不同变体是我们最感兴趣的。最常用的版本如表7.6所示。`addItem`方法用于向组合框添加项目。在你编写的代码中某处，你将利用此方法向组合框添加项目。以下示例说明了这一点。
 
 #### 示例7.4
 
@@ -3535,7 +3375,7 @@ public class Frame1 extends JFrame
 
 **步骤2：** 在设计屏幕上放置一个新的组合框。
 
-**步骤3：** 在项目的init部分（JBuilder用户的jbInit），放置以下代码：
+**步骤3：** 在项目的init部分（JBuilder用户的`jbInit`），放置以下代码：
 
 ```java
 Object myobject = new Object();
@@ -3548,7 +3388,7 @@ jComboBox1.addItem(myobject);
 contentPane.add(jComboBox1, null);
 ```
 
-**步骤4：** 在设计屏幕上添加一个按钮并将其text属性更改为**Combo Test**。它应该看起来像图7.11中的图像。
+**步骤4：** 在设计屏幕上添加一个按钮并将其text属性更改为`Combo Test`。它应该看起来像图7.11中的图像。
 
 ![](img/6ac84fdff518ea769f07b6e3d911391e_183_0.png)
 
@@ -3605,13 +3445,11 @@ public class Frame1 extends JFrame
     this.setSize(new Dimension(400, 300));
 ```
 
-
-
 ### JList
 
-我们需要探索的下一个组件是列表。列表与组合框非常相似，不同之处在于它不像组合框那样下拉，而是始终显示其项目。同样，像组合框一样，它直接继承自JComponent。与组合框不同的是，用户可以从列表中选择多个项目。你可以创建一个已经包含数据的列表，也可以先创建列表再添加数据。后者的方法如下所示：
+我们需要探索的下一个组件是列表。列表与组合框非常相似，不同之处在于它不像组合框那样下拉，而是始终显示其项目。同样，像组合框一样，它直接继承自`JComponent`。与组合框不同的是，用户可以从列表中选择多个项目。你可以创建一个已经包含数据的列表，也可以先创建列表再添加数据。后者的方法如下所示：
 
-```
+```java
 String[] mystring = {"one", "two", "three", "four"};
 JList someList = new JList(mystring);
 ```
@@ -3622,12 +3460,12 @@ JList someList = new JList(mystring);
 
 | 构造函数 | 用途 |
 | :--- | :--- |
-| JList() | 此构造函数将创建一个具有空模型的JList。 |
-| JList(ListModel dataModel) | 此构造函数将创建一个显示指定模型中元素的JList。 |
-| JList(Object[] listData) | 此方法用于构造一个显示指定数组中元素的JList。 |
-| JList(Vector listData) | 此方法构造一个显示指定向量中元素的JList。 |
+| `JList()` | 此构造函数将创建一个具有空模型的`JList`。 |
+| `JList(ListModel dataModel)` | 此构造函数将创建一个显示指定模型中元素的`JList`。 |
+| `JList(Object[] listData)` | 此方法用于构造一个显示指定数组中元素的`JList`。 |
+| `JList(Vector listData)` | 此方法构造一个显示指定向量中元素的`JList`。 |
 
-请注意某些构造函数描述中的术语“模型”。这个术语简单地指的是JList如何处理数据以及它使用哪种操作模型。你在本节开头看到了第二个构造函数的使用。
+请注意某些构造函数描述中的术语“模型”。这个术语简单地指的是`JList`如何处理数据以及它使用哪种操作模型。你在本节开头看到了第二个构造函数的使用。
 
 除了这些构造函数，列表还有许多你需要熟悉的方法。最常用的方法总结在表7.8中。
 
@@ -3635,29 +3473,29 @@ JList someList = new JList(mystring);
 
 | 方法 | 用途 |
 |---|---|
-| void clearSelection() | 此方法用于清除选择。 |
-| ListModel getModel() | 此方法将返回保存JList组件显示项目列表的数据模型。 |
-| int getSelectedIndex() | 此方法返回第一个选定的索引。如果没有选定索引，则返回-1。 |
-| Object[] getSelectedValues() | 此方法返回选定单元格值的数组。 |
-| void setListData(Object[] listData) | 此方法从对象数组构建一个ListModel，然后对其应用setModel。 |
-| void setListData(Vector listData) | 此方法从向量构建一个ListModel，然后应用setModel。 |
-| void setModel(ListModel model) | 此方法设置代表列表内容或“值”的模型，并在通知PropertyChangeListeners后清除列表选择。 |
-| void setSelectedIndex(int index) | 此方法从列表中检索单个项目。 |
-| void setSelectedIndices(int[] indices) | 此方法选择一组项目。 |
+| `void clearSelection()` | 此方法用于清除选择。 |
+| `ListModel getModel()` | 此方法将返回保存`JList`组件显示项目列表的数据模型。 |
+| `int getSelectedIndex()` | 此方法返回第一个选定的索引。如果没有选定索引，则返回-1。 |
+| `Object[] getSelectedValues()` | 此方法返回选定单元格值的数组。 |
+| `void setListData(Object[] listData)` | 此方法从对象数组构建一个`ListModel`，然后对其应用`setModel`。 |
+| `void setListData(Vector listData)` | 此方法从向量构建一个`ListModel`，然后应用`setModel`。 |
+| `void setModel(ListModel model)` | 此方法设置代表列表内容或“值”的模型，并在通知`PropertyChangeListeners`后清除列表选择。 |
+| `void setSelectedIndex(int index)` | 此方法从列表中检索单个项目。 |
+| `void setSelectedIndices(int[] indices)` | 此方法选择一组项目。 |
 
 如你所见，与列表组件相关的方法多种多样。特别值得关注的是那些允许你选择多个项目的方法以及允许你检索多个选择的相关方法。这是列表相对于组合框的主要优势——能够选择多个项目。如果你希望将其与其他组件进行类比，可以说组合框的用途本质上与单选按钮相同（即允许从多个选项中选择一个），而列表的用途则与复选框相同（即允许多个选项被选中）。一个如何从列表中选择和检索单个选项的示例可能会很有用。
 
 ### 示例7.5
 
-**步骤1：** 启动一个新项目并添加一个新的应用程序对象。在此情况下，你可以将布局管理器保留为默认的BorderLayout。
+**步骤1：** 启动一个新项目并添加一个新的应用程序对象。在此情况下，你可以将布局管理器保留为默认的`BorderLayout`。
 
-**步骤2：** 将一个列表添加到BorderLayout的Center区域，一个文本字段添加到North区域，一个按钮添加到South区域。它应如图7.14所示。
+**步骤2：** 将一个列表添加到`BorderLayout`的Center区域，一个文本字段添加到North区域，一个按钮添加到South区域。它应如图7.14所示。
 
 ![图7.14 示例组件布局](img/6ac84fdff518ea769f07b6e3d911391e_188_0.png)
 
-**步骤3：** 你需要进入此项目的代码，更改列表的构造方式。JBuilder为所有组件使用默认的无参构造函数。打开源代码，找到创建JList组件实例的地方。然后将那一行代码替换为以下两行：
+**步骤3：** 你需要进入此项目的代码，更改列表的构造方式。JBuilder为所有组件使用默认的无参构造函数。打开源代码，找到创建`JList`组件实例的地方。然后将那一行代码替换为以下两行：
 
-```
+```java
 private String[] mystring = {"Java", "JBuilder",
     "JFC", "Swing"};
 private JList jList1 = new JList(mystring);
@@ -3665,7 +3503,7 @@ private JList jList1 = new JList(mystring);
 
 **步骤4：** 在按钮的动作事件中，放置以下代码：
 
-```
+```java
 Object contents = new Object();
 contents = jList1.getSelectedValue();
 jTextField1.setText(contents.toString());
@@ -3677,7 +3515,7 @@ jTextField1.setText(contents.toString());
 
 对于那些不使用JBuilder或希望仔细检查代码的读者，此项目的完整示例代码如下：
 
-```
+```java
 package listboxexample;
 import java.awt.*;
 import java.awt.event.*;
@@ -3743,26 +3581,24 @@ public class Frame1 extends JFrame
 }
 ```
 
-
-
 列表是一种多功能且实用的组件。花时间熟悉它的各种方法是非常值得的。希望本节和这个示例能让你对列表有充分的理解，以便在自己的程序中使用它。
 
 ### JSlider
 
 本章我们考察的最后一个组件是滑块。滑块允许用户沿着预设的连续范围选择一组值，通常是数值。例如，如果你有一个应用程序允许订票代理为乘客预订航班，乘客人数可以从1到100，那么滑块可能是促进这一操作的最佳组件。
 
-与本章中我们考察的许多组件一样，滑块直接继承自JComponent，并且有多种构造函数选项。这些选项列在表7.9中。
+与本章中我们考察的许多组件一样，滑块直接继承自`JComponent`，并且有多种构造函数选项。这些选项列在表7.9中。
 
 **表7.9 JSlider构造函数**
 
 | 构造函数 | 用途 |
 |---|---|
-| JSlider() | 此构造函数将创建一个水平滑块，范围为0到100，初始值为50。 |
-| JSlider(BoundedRangeModel brm) | 此构造函数使用指定的BoundedRangeModel创建一个水平滑块。 |
-| JSlider(int orientation) | 此构造函数使用指定的方向创建一个滑块，范围为0到100，初始值为50。注意：水平是所有滑块的默认方向。 |
-| JSlider(int min, int max) | 此构造函数使用指定的最小值和最大值创建一个水平滑块，初始值为50。 |
-| JSlider(int min, int max, int value) | 此构造函数使用指定的最小值、最大值和初始值创建一个水平滑块。 |
-| JSlider(int orientation, int min, int max, int value) | 此构造函数用于创建具有指定方向以及指定最小值、最大值和初始值的滑块。 |
+| `JSlider()` | 此构造函数将创建一个水平滑块，范围为0到100，初始值为50。 |
+| `JSlider(BoundedRangeModel brm)` | 此构造函数使用指定的`BoundedRangeModel`创建一个水平滑块。 |
+| `JSlider(int orientation)` | 此构造函数使用指定的方向创建一个滑块，范围为0到100，初始值为50。注意：水平是所有滑块的默认方向。 |
+| `JSlider(int min, int max)` | 此构造函数使用指定的最小值和最大值创建一个水平滑块，初始值为50。 |
+| `JSlider(int min, int max, int value)` | 此构造函数使用指定的最小值、最大值和初始值创建一个水平滑块。 |
+| `JSlider(int orientation, int min, int max, int value)` | 此构造函数用于创建具有指定方向以及指定最小值、最大值和初始值的滑块。 |
 
 每种构造函数选项都允许你构建具有不同初始设置的滑块。当然，与Swing中的所有组件一样，滑块组件也有许多有用的方法，你应该熟悉它们。这些方法在表7.10中进行了总结。
 
@@ -3770,28 +3606,28 @@ public class Frame1 extends JFrame
 
 | 方法 | 用途 |
 |---|---|
-| int getExtent() | 此方法返回滑块中值的范围。 |
-| int getMaximum() | 此方法返回滑块支持的最大值。 |
-| int getMinimum() | 此方法返回滑块支持的最小值。 |
-| int getMinorTickSpacing() | 此方法返回次要刻度间距。 |
-| boolean getSnapToTicks() | 如果滑块解析到用户定位滑块旋钮附近最近的刻度线，此方法将返回true。 |
-| int getValue() | 此方法返回滑块的当前值。 |
-| void setMaximum(int maximum) | 此方法将设置滑块的最大值属性。 |
-| void setMinimum(int minimum) | 此方法将设置滑块的最小值属性。 |
-| void setOrientation(int orientation) | 此方法将滑块的方向设置为垂直或水平。 |
-| void setValue(int n) | 此方法设置滑块的当前值。 |
+| `int getExtent()` | 此方法返回滑块中值的范围。 |
+| `int getMaximum()` | 此方法返回滑块支持的最大值。 |
+| `int getMinimum()` | 此方法返回滑块支持的最小值。 |
+| `int getMinorTickSpacing()` | 此方法返回次要刻度间距。 |
+| `boolean getSnapToTicks()` | 如果滑块解析到用户定位滑块旋钮附近最近的刻度线，此方法将返回true。 |
+| `int getValue()` | 此方法返回滑块的当前值。 |
+| `void setMaximum(int maximum)` | 此方法将设置滑块的最大值属性。 |
+| `void setMinimum(int minimum)` | 此方法将设置滑块的最小值属性。 |
+| `void setOrientation(int orientation)` | 此方法将滑块的方向设置为垂直或水平。 |
+| `void setValue(int n)` | 此方法设置滑块的当前值。 |
 
 所有这些方法都非常有用，并且不言自明。然而，使用其中一些方法的示例可能是有必要的。
 
 ### 示例7.6
 
-步骤1：与所有前面的示例一样，你需要用一个新的Application对象开始一个新项目。你应该将布局管理器更改为四行两列的网格布局。
+**步骤1：** 与所有前面的示例一样，你需要用一个新的`Application`对象开始一个新项目。你应该将布局管理器更改为四行两列的网格布局。
 
-步骤2：在设计屏幕上放置一个滑块、一个按钮和一个文本字段；它应该看起来像你在图7.16中看到的那样。
+**步骤2：** 在设计屏幕上放置一个滑块、一个按钮和一个文本字段；它应该看起来像你在图7.16中看到的那样。
 
 ![](img/6ac84fdff518ea769f07b6e3d911391e_193_0.png)
 
-步骤3：现在设置滑块的几个属性。我们通过找到滑块添加到内容窗格的位置，并将那一行代码替换为以下几行来完成此操作：
+**步骤3：** 现在设置滑块的几个属性。我们通过找到滑块添加到内容窗格的位置，并将那一行代码替换为以下几行来完成此操作：
 
 ```java
 jSlider1.setMajorTickSpacing(5);
@@ -3800,7 +3636,7 @@ jSlider1.setToolTipText("Sliders are cool");
 contentPane.add(jSlider1, null);
 ```
 
-步骤4：现在在按钮的动作事件中，放置以下代码：
+**步骤4：** 现在在按钮的动作事件中，放置以下代码：
 
 ```java
 int value = jSlider1.getValue();
@@ -3899,14 +3735,26 @@ public class Frame1 extends JFrame
 
 ### 复习题
 
-1.  JComboBox继承自哪个组件？
+1.  `JComboBox`继承自哪个组件？
+
 2.  本章中哪些组件允许用户选择多个选项？
+
 3.  对于组合框，你使用什么方法在组合框的特定位置插入项目？
+
 4.  何时滑块是理想的组件？
 
+5.  在什么情况下，切换按钮是合适的组件？
 
+6.  复选框和单选按钮之间的主要区别是什么？
+
+7.  列表相对于组合框的主要优势是什么？
+
+8.  你使用什么方法从列表中检索多项选择？
+
+9.  那个方法返回什么？
 
 # 第八章
+
 ## 菜单与工具栏
 
 本章涵盖以下内容：
@@ -3921,19 +3769,13 @@ public class Frame1 extends JFrame
 
 菜单和工具栏在你可能遇到的任何图形用户界面中都极为普遍。大多数Windows程序都使用它们，Macintosh程序以及KDE或GNOME程序也同样如此。用户已经习惯了在应用程序中使用下拉菜单和工具栏。事实上，JBuilder提供的集成开发环境就拥有大量的下拉菜单以及若干工具栏。本章将探讨这些组件的使用。
 
-5.  在什么情况下，切换按钮是合适的组件？
-6.  复选框和单选按钮之间的主要区别是什么？
-7.  列表相对于组合框的主要优势是什么？
-8.  你使用什么方法从列表中检索多项选择？
-9.  那个方法返回什么？
-
 ### 菜单
 
 下拉菜单之所以非常受欢迎，是因为它们允许你为应用程序的用户提供广泛的选择，而不会使屏幕显得杂乱。每个选项都包含在逻辑分组的下拉菜单中，这些菜单在用户选择它们之前几乎是不可见的。这使得你可以拥有一个整洁、外观清晰的用户界面，同时仍然提供丰富的用户选项集。
 
-创建菜单比创建大多数其他组件要复杂一些。这就是为什么直到第八章才讨论它的一个原因。你需要结合使用JMenuBar类和JPopupMenu类。JMenuBar创建基本的菜单栏，而JPopupMenu创建各个菜单项。
+创建菜单比创建大多数其他组件要复杂一些。这就是为什么直到第八章才讨论它的一个原因。你需要结合使用`JMenuBar`类和`JPopupMenu`类。`JMenuBar`创建基本的菜单栏，而`JPopupMenu`创建各个菜单项。
 
-要创建一个下拉菜单，可以从JMenuBar类开始。在创建了JMenuBar的实例之后，只需向菜单栏添加JMenu对象来构建菜单。当用户选择一个JMenu对象时，其关联的JPopupMenu将会显示，允许用户选择上面的JMenuItem。与我们处理过的其他组件一样，JMenuBar组件有几个方法。最重要的方法总结在表8.1中。
+要创建一个下拉菜单，可以从`JMenuBar`类开始。在创建了`JMenuBar`的实例之后，只需向菜单栏添加`JMenu`对象来构建菜单。当用户选择一个`JMenu`对象时，其关联的`JPopupMenu`将会显示，允许用户选择上面的`JMenuItem`。与我们处理过的其他组件一样，`JMenuBar`组件有几个方法。最重要的方法总结在表8.1中。
 
 **表8.1 JMenuBar方法**
 
@@ -3951,9 +3793,9 @@ public class Frame1 extends JFrame
 | `void setMargin(Insets m)` | 此函数将设置菜单栏边框与其菜单之间的边距。 |
 | `void setSelected(Component sel)` | 此函数用于选择给定的组件。 |
 
-这些是JMenuBar类最重要且使用最广泛的方法。与你在前面七章中考察的其他组件不同，JMenuBar只有一个基本的无参数构造函数。因此，没有必要总结构造函数选项。
+这些是`JMenuBar`类最重要且使用最广泛的方法。与你在前面七章中考察的其他组件不同，`JMenuBar`只有一个基本的无参数构造函数。因此，没有必要总结构造函数选项。
 
-如前所述，JMenuBar并非单独工作。它与JMenu和JMenuItem协同工作。这三个组件中的每一个都用于成功创建菜单。这是一个标准、相当通用的三者协同创建菜单的示例：
+如前所述，`JMenuBar`并非单独工作。它与`JMenu`和`JMenuItem`协同工作。这三个组件中的每一个都用于成功创建菜单。这是一个标准、相当通用的三者协同创建菜单的示例：
 
 ```java
 // 创建菜单栏的实例
@@ -3969,7 +3811,7 @@ menu.add(myitem);
 frame.setJMenuBar(mymenuBar);
 ```
 
-如你所见，菜单需要所有这三个组件。JMenuBar创建包含其他菜单的栏。JMenu提供一个顶级下拉菜单（例如“文件”或“帮助”）。JMenuItem提供该菜单下的各个项目。如果你在使用向导为你的项目添加应用程序对象时选择了“添加菜单栏”选项，将生成以下代码：
+如你所见，菜单需要所有这三个组件。`JMenuBar`创建包含其他菜单的栏。`JMenu`提供一个顶级下拉菜单（例如“文件”或“帮助”）。`JMenuItem`提供该菜单下的各个项目。如果你在使用向导为你的项目添加应用程序对象时选择了“添加菜单栏”选项，将生成以下代码：
 
 ```java
 package example08_01;
@@ -4042,17 +3884,15 @@ public class jMenuExample extends JFrame {
 }
 ```
 
-通过检查这段由JBuilder向导生成的代码，我们可以确切地了解菜单是如何工作的。首先，请将你的注意力集中在类的开头。注意一个JMenuItem-Bar（JMenuBar）被实例化。请记住，这是所有下拉菜单将连接的实际起点或基础。然后创建JMenu和JMenuItem的实例。JMenu是你看到的顶级下拉菜单。JMenu本质上如图8.1所示。
+通过检查这段由JBuilder向导生成的代码，我们可以确切地了解菜单是如何工作的。首先，请将你的注意力集中在类的开头。注意一个`JMenuItem-Bar`（`JMenuBar`）被实例化。请记住，这是所有下拉菜单将连接的实际起点或基础。然后创建`JMenu`和`JMenuItem`的实例。`JMenu`是你看到的顶级下拉菜单。`JMenu`本质上如图8.1所示。
 
 ![图8.1 JMenu](img/6ac84fdff518ea769f07b6e3d911391e_203_0.png)
 
-注意标题“File”和“Help”。这些通过JMenu类的text属性显示。如果你点击其中一个，菜单会下拉，显示各个JMenuItem对象，如图8.2所示。
+注意标题“File”和“Help”。这些通过`JMenu`类的text属性显示。如果你点击其中一个，菜单会下拉，显示各个`JMenuItem`对象，如图8.2所示。
 
 ![图8.2 JMenuItem](img/6ac84fdff518ea769f07b6e3d911391e_203_1.png)
 
-你可以看到，创建菜单栏、顶级菜单和下拉菜单实际上只是实例化正确的JFC类并使用add方法连接它们的问题。真正的技巧在于当用户点击一个项目时该怎么办。当一个顶级菜单（JMenu类的一个实例）被选中时，所采取的操作只是下拉并显示其下方的菜单项。但当你选中其中一个菜单项时该怎么做呢？答案是，在jbInit方法期间添加一个动作监听器……
-
-
+你可以看到，创建菜单栏、顶级菜单和下拉菜单实际上只是实例化正确的JFC类并使用`add`方法连接它们的问题。真正的技巧在于当用户点击一个项目时该怎么办。当一个顶级菜单（`JMenu`类的一个实例）被选中时，所采取的操作只是下拉并显示其下方的菜单项。但当你选中其中一个菜单项时该怎么做呢？答案是，在`jbInit`方法期间添加一个动作监听器……
 
 操作（对于那些不使用 JBuilder 的读者，只需调用 `init()` 即可）。
 
@@ -4083,23 +3923,23 @@ public void jMenuFileExit_actionPerformed(ActionEvent e)
 
 | 方法 | 用途 |
 | :--- | :--- |
-| JMenuItem add(Action a) | 此函数添加一个新的菜单项，该菜单项关联到指定的 `Action` 对象，并将其附加到此菜单的末尾。 |
-| Component add(Component c) | 此函数将一个组件添加到此菜单的末尾。 |
-| JMenuItem add(JMenuItem menuItem) | 此函数将一个菜单项添加到此菜单的末尾。 |
-| void addSeparator() | 此函数在菜单末尾插入一个新的分隔符。 |
-| void addMenuListener(MenuListener l) | 此函数用于添加菜单事件的监听器。 |
-| void doClick(int pressTime) | 此函数触发一次“点击”。它本质上模拟用户点击菜单的操作。 |
-| Component getComponent() | 此函数将返回用于绘制此 `MenuElement` 的 `java.awt.Component`。 |
-| JMenuItem getItem(int pos) | 此函数将返回指定位置处的 `JMenuItem`。 |
-| int getItemCount() | 此函数返回菜单上的项数，包括分隔符。 |
-| JMenuItem insert(Action a, int pos) | 此函数用于在指定位置插入一个新的菜单项，该菜单项关联到指定的 `Action` 对象。 |
-| JMenuItem insert(JMenuItem mi, int pos) | 此函数在指定位置插入指定的 `JMenuItem`。 |
-| boolean isTopLevelMenu() | 如果菜单是顶级菜单（即，它是菜单栏的直接子菜单），则此函数返回 `true`。 |
-| boolean isSelected() | 如果菜单当前被选中，则此函数返回 `true`。 |
-| void remove(int pos) | 此函数将从此菜单中移除指定索引处的菜单项。 |
-| void remove(JMenuItem item) | 此函数将从此菜单中移除指定的菜单项。 |
-| void removeAll() | 此函数将从此菜单中移除所有菜单项。 |
-| void setSelected(boolean b) | 此函数设置菜单的选中状态。 |
+| `JMenuItem add(Action a)` | 此函数添加一个新的菜单项，该菜单项关联到指定的 `Action` 对象，并将其附加到此菜单的末尾。 |
+| `Component add(Component c)` | 此函数将一个组件添加到此菜单的末尾。 |
+| `JMenuItem add(JMenuItem menuItem)` | 此函数将一个菜单项添加到此菜单的末尾。 |
+| `void addSeparator()` | 此函数在菜单末尾插入一个新的分隔符。 |
+| `void addMenuListener(MenuListener l)` | 此函数用于添加菜单事件的监听器。 |
+| `void doClick(int pressTime)` | 此函数触发一次“点击”。它本质上模拟用户点击菜单的操作。 |
+| `Component getComponent()` | 此函数将返回用于绘制此 `MenuElement` 的 `java.awt.Component`。 |
+| `JMenuItem getItem(int pos)` | 此函数将返回指定位置处的 `JMenuItem`。 |
+| `int getItemCount()` | 此函数返回菜单上的项数，包括分隔符。 |
+| `JMenuItem insert(Action a, int pos)` | 此函数用于在指定位置插入一个新的菜单项，该菜单项关联到指定的 `Action` 对象。 |
+| `JMenuItem insert(JMenuItem mi, int pos)` | 此函数在指定位置插入指定的 `JMenuItem`。 |
+| `boolean isTopLevelMenu()` | 如果菜单是顶级菜单（即，它是菜单栏的直接子菜单），则此函数返回 `true`。 |
+| `boolean isSelected()` | 如果菜单当前被选中，则此函数返回 `true`。 |
+| `void remove(int pos)` | 此函数将从此菜单中移除指定索引处的菜单项。 |
+| `void remove(JMenuItem item)` | 此函数将从此菜单中移除指定的菜单项。 |
+| `void removeAll()` | 此函数将从此菜单中移除所有菜单项。 |
+| `void setSelected(boolean b)` | 此函数设置菜单的选中状态。 |
 
 如你所见，这个类中有许多非常有用的方法。表 8.2 也不是一个详尽的列表；它仅仅总结了最常见和广泛使用的方法。
 
@@ -4111,10 +3951,10 @@ public void jMenuFileExit_actionPerformed(ActionEvent e)
 
 | 构造函数 | 用途 |
 | :--- | :--- |
-| JMenu() | 这是默认的无参构造函数，它创建一个没有文本的 `JMenu`。 |
-| JMenu(Action a) | 此构造函数将创建一个菜单，其属性取自提供的 `action`。 |
-| JMenu(String s) | 此构造函数用于创建一个 `JMenu`，其文本为提供的字符串。 |
-| JMenu(String s, boolean b) | 此构造函数用于创建一个 `JMenu`，其文本为提供的字符串，并指定其是否为撕离菜单。 |
+| `JMenu()` | 这是默认的无参构造函数，它创建一个没有文本的 `JMenu`。 |
+| `JMenu(Action a)` | 此构造函数将创建一个菜单，其属性取自提供的 `action`。 |
+| `JMenu(String s)` | 此构造函数用于创建一个 `JMenu`，其文本为提供的字符串。 |
+| `JMenu(String s, boolean b)` | 此构造函数用于创建一个 `JMenu`，其文本为提供的字符串，并指定其是否为撕离菜单。 |
 
 尽管 `JMenu` 类重要且功能多样，但如果没有单独的菜单项，它的用处并不大。因此，我们接下来要研究的是 `JMenuItem` 类可用的方法和构造函数。在深入探讨这些特定方法之前，你应该注意 `JMenuItem` 继承自 `JAbstractButton`，而后者又继承自 `JComponent`。如果你仔细想想，这确实合乎逻辑。菜单项的目的本质上与按钮相同；它只是向用户展示的方式略有不同。
 
@@ -4122,9 +3962,9 @@ public void jMenuFileExit_actionPerformed(ActionEvent e)
 
 | 方法 | 用途 |
 | :--- | :--- |
-| protected void getComponent() | 此方法返回用于绘制菜单的 `java.awt.Component`。 |
-| protected void init(String text, Icon icon) | 此方法将使用指定的文本和图标初始化菜单项。 |
-| void setEnabled(boolean b) | 此方法用于启用或禁用菜单项。 |
+| `protected void getComponent()` | 此方法返回用于绘制菜单的 `java.awt.Component`。 |
+| `protected void init(String text, Icon icon)` | 此方法将使用指定的文本和图标初始化菜单项。 |
+| `void setEnabled(boolean b)` | 此方法用于启用或禁用菜单项。 |
 
 虽然此表绝非详尽无遗，但应注意 `JMenuItem` 的方法比 `JMenu` 少。这完全合理，因为一个 `JMenu` 可能需要管理其下方菜单层次结构中的多个 `JMenuItem`。
 
@@ -4132,10 +3972,10 @@ public void jMenuFileExit_actionPerformed(ActionEvent e)
 
 | 构造函数 | 用途 |
 | :--- | :--- |
-| JMenuItem() | 此构造函数用于创建一个没有设置文本或图标的 `JMenuItem`。 |
-| JMenuItem(Action a) | 此构造函数用于创建一个 `JMenuItem`，其属性取自提供的 `action`。 |
-| JMenuItem(Icon icon) | 此函数创建一个带图标的 `JMenuItem`。 |
-| JMenuItem(String text) | 此函数将创建一个带文本的 `JMenuItem`。 |
+| `JMenuItem()` | 此构造函数用于创建一个没有设置文本或图标的 `JMenuItem`。 |
+| `JMenuItem(Action a)` | 此构造函数用于创建一个 `JMenuItem`，其属性取自提供的 `action`。 |
+| `JMenuItem(Icon icon)` | 此函数创建一个带图标的 `JMenuItem`。 |
+| `JMenuItem(String text)` | 此函数将创建一个带文本的 `JMenuItem`。 |
 
 添加其他菜单项实际上非常简单。在下面的示例中，我们将向默认菜单添加一些项。
 
@@ -4201,31 +4041,29 @@ public void jmenuclick_actionPerformed(ActionEvent e)
 
 工具栏非常适合显示少量频繁使用的项目。工具栏的设置实际上比菜单稍微简单一些。`JToolBar` 类直接继承自 `JComponent`。让我们先看看工具栏的方法，然后是它的构造函数。
 
-
-
 #### 表 8.6 JToolBar 方法
 
 | 方法 | 用途 |
 | :--- | :--- |
-| JButton add(Action a) | 此方法用于添加一个执行指定动作的新 JButton。 |
-| void addSeparator() | 此方法将在工具栏末尾添加一个默认大小的分隔符。 |
-| void addSeparator(Dimension size) | 此方法将在工具栏末尾添加一个指定大小的分隔符。 |
-| Component getComponentAtIndex(int i) | 此函数返回指定索引处的组件。 |
-| Insets getMargin() | 此函数返回工具栏边框与其按钮之间的间距。 |
-| int getOrientation() | 此函数用于返回工具栏的当前方向。 |
-| boolean isFloatable() | 如果 JToolBar 可以被用户拖出，则此函数返回 true。 |
-| void setFloatable(boolean b) | 此函数用于设置工具栏是否可以浮动。 |
-| void setMargin(Insets m) | 此函数设置工具栏边框与其按钮之间的间距。 |
-| void setOrientation(int o) | 此函数用于设置工具栏的方向。 |
+| `JButton add(Action a)` | 此方法用于添加一个执行指定动作的新 `JButton`。 |
+| `void addSeparator()` | 此方法将在工具栏末尾添加一个默认大小的分隔符。 |
+| `void addSeparator(Dimension size)` | 此方法将在工具栏末尾添加一个指定大小的分隔符。 |
+| `Component getComponentAtIndex(int i)` | 此函数返回指定索引处的组件。 |
+| `Insets getMargin()` | 此函数返回工具栏边框与其按钮之间的间距。 |
+| `int getOrientation()` | 此函数用于返回工具栏的当前方向。 |
+| `boolean isFloatable()` | 如果 `JToolBar` 可以被用户拖出，则此函数返回 true。 |
+| `void setFloatable(boolean b)` | 此函数用于设置工具栏是否可以浮动。 |
+| `void setMargin(Insets m)` | 此函数设置工具栏边框与其按钮之间的间距。 |
+| `void setOrientation(int o)` | 此函数用于设置工具栏的方向。 |
 
 #### 表 8.7 JToolBar 构造方法
 
 | 构造方法 | 用途 |
 | :--- | :--- |
-| JToolBar() | 此构造方法将创建一个新的工具栏；方向默认为水平。 |
-| JToolBar(int orientation) | 此构造方法用于创建一个具有指定方向的新工具栏。 |
-| JToolBar(String name) | 此构造方法将创建一个具有指定名称的新工具栏。 |
-| JToolBar(String name, int orientation) | 此构造方法将创建一个具有指定名称和方向的新工具栏。 |
+| `JToolBar()` | 此构造方法将创建一个新的工具栏；方向默认为水平。 |
+| `JToolBar(int orientation)` | 此构造方法用于创建一个具有指定方向的新工具栏。 |
+| `JToolBar(String name)` | 此构造方法将创建一个具有指定名称的新工具栏。 |
+| `JToolBar(String name, int orientation)` | 此构造方法将创建一个具有指定名称和方向的新工具栏。 |
 
 ### 示例 8.2
 
@@ -4355,12 +4193,12 @@ jToolBar.add(jButton3);
 
 我们可以将此总结为创建带有图像的工具栏的四步流程：
 
-1.  创建 JToolBar、JButton 和 Icon 的实例。
+1.  创建 `JToolBar`、`JButton` 和 `Icon` 的实例。
 2.  将图标设置为硬盘驱动器上的某个图像。
-3.  使用按钮的 setIcon 方法将图标添加到按钮。
+3.  使用按钮的 `setIcon` 方法将图标添加到按钮。
 4.  将按钮添加到工具栏。
 
-就是这样。如果你希望添加更多按钮，只需遵循概述的步骤即可（当然，你只需要一个 JToolBar）。
+就是这样。如果你希望添加更多按钮，只需遵循概述的步骤即可（当然，你只需要一个 `JToolBar`）。
 
 使用任何工具栏你能做的最酷的事情之一是使其可浮动。这意味着用户可以根据需要将工具栏拖动到屏幕的不同部分。使用 JFC，这非常简单。只需在 `jbInit` 函数中添加一行小代码：
 
@@ -4378,17 +4216,15 @@ jToolBar.setFloatable(true);
 
 ### 示例 8.3
 
-**步骤 1：** 使用新的 Application 对象启动一个新项目。使用 Application 向导时，选择生成工具栏、菜单栏和关于对话框。如图 8.8 所示。
+**步骤 1：** 使用新的 `Application` 对象启动一个新项目。使用 `Application` 向导时，选择生成工具栏、菜单栏和关于对话框。如图 8.8 所示。
 
 **步骤 2：** 创建应用程序后，向用户界面添加几个组件。在 JBuilder 的 Design 选项卡上，首先将面板添加到屏幕的中心（记住默认使用边框布局）。然后将面板的布局设置为三行三列。如果你有任何
-
-
 
 # 第8章
 
 如果您在“设计”标签页上操作遇到困难，可以转到源代码并添加三行简单的代码来完成此操作：
 
-```
+```java
 private JPanel innerpanel = new JPanel();
 innerpanel.setLayout(new GridLayout(3,3));
 contentPane.add(innerpanel,BorderLayout.CENTER);
@@ -4401,14 +4237,18 @@ contentPane.add(innerpanel,BorderLayout.CENTER);
 图8.9 GUI布局
 
 **注意：** 为了按照图8.9所示的方式排列组件间距，您需要将内部面板设置为网格布局，并修改网格布局构造函数的参数。不能只写：
+
 `innerpanel.setLayout(new GridLayout(2,3)`
+
 而需要使用：
+
 `innerpanel.setLayout(new GridLayout(2,3,20,150)`
+
 最后两个参数分别指定了水平和垂直间距。
 
 **步骤4：** 我们需要将各种转换选项放入组合框。回顾第7章中我们如何使用对象变量和`addItem`方法向组合框添加项目。在`jbInit()`函数中的某个位置，在将组合框添加到面板之前，您需要添加以下代码：
 
-```
+```java
 Object cboitem = new Object();
 cboitem = "Centimeters to Inches";
 jComboBox1.addItem(cboitem);
@@ -4422,7 +4262,7 @@ jComboBox1.addItem(cboitem);
 
 **步骤5：** 现在我们需要为“转换”按钮添加一些代码。如您所料，我们的意图是提供一系列转换功能。如果您双击标题为“转换”的按钮，将进入其操作事件（您应该还记得第6章中的事件）。在此事件中，我们将放置以下代码：
 
-```
+```java
 float finputval=0, foutputval=0;
 int itemp;
 String stemp = new String();
@@ -4460,7 +4300,9 @@ jTextField2.setText(stemp);
 
 对于未使用JBuilder或仅希望查看完整源代码的读者，此处提供完整代码：
 
-```
+
+
+```java
 package example08_03;
 import java.awt.*;
 import java.awt.event.*;
@@ -4629,23 +4471,17 @@ public class practicalexample extends JFrame
 
         if(stemp == "Centimeters to Inches")
             foutputval = finputval/2.54f;
+        if(stemp == "Inches to Centimeters")
+            foutputval = finputval * 2.54f;
+        if(stemp == "Kilograms to Pounds")
+            foutputval = finputval * 2.2f;
+        if(stemp == "Pounds to Kilograms")
+            foutputval = finputval / 2.2f;
+        stemp = String.valueOf(foutputval);
+        jTextField2.setText(stemp);
     }
 }
 ```
-
-
-
-```
-if(stemp == "Inches to Centimeters")
-    foutputval = finputval * 2.54f;
-if(stemp == "Kilograms to Pounds")
-    foutputval = finputval * 2.2f;
-if(stemp == "Pounds to Kilograms")
-    foutputval = finputval / 2.2f;
-stemp = String.valueOf(foutputval);
-jTextField2.setText(stemp);
-}
-}
 
 ### 总结
 
@@ -4703,7 +4539,7 @@ jTextField2.setText(stemp);
 | void addNotify() | 此函数将通过将对话框连接到本机屏幕资源使其变为可显示状态。 |
 | void dispose() | 此函数用于销毁对话框。 |
 | AccessibleContext getAccessibleContext() | 此函数检索与此对话框关联的 `AccessibleContext`。 |
-| String getTitle() | 此函数将返回对话框的标题。 |
+| String getTitle() | 此函数将返回对话框的标ITLE。 |
 | void hide() | 此函数用于隐藏对话框。 |
 | Boolean isModal() | 此函数指示对话框是否为模态。 |
 | Boolean isResizable() | 此函数将指示此对话框是否可由用户调整大小。 |
@@ -4732,7 +4568,7 @@ jTextField2.setText(stemp);
 
 尽管前面的表格信息量很大，但它们并没有触及问题的核心，那就是：如何将对话框添加到项目中并使用它？
 
-实际上，你有两种选择可以将对话框添加到任何给定的项目中。第一种选择是从组件面板中添加一个现有的对话框。第二种选择是使用对象库中的对话框向导创建一个自定义对话框。让我们从考察第一种选择开始，因为它要简单得多。如果你想添加一个现有的对话框，你只需在组件面板上选择一个对话框组件，例如 `JFileChooser`。你会在 Swing Containers 选项卡上找到它们，如图9.1所示。
+实际上，你有两种选择可以将对话框添加到任何给定的项目中。第一种选择是从组件面板中添加一个现有的对话框。第二种选择是使用对象库中的对话框向导创建一个自定对话框。让我们从考察第一种选择开始，因为它要简单得多。如果你想添加一个现有的对话框，你只需在组件面板上选择一个对话框组件，例如 `JFileChooser`。你会在 Swing Containers 选项卡上找到它们，如图9.1所示。
 
 ![img/6ac84fdff518ea769f07b6e3d911391e_230_0.png](img/6ac84fdff518ea769f07b6e3d911391e_230_0.png)
 
@@ -4743,9 +4579,6 @@ jTextField2.setText(stemp);
 ![img/6ac84fdff518ea769f07b6e3d911391e_230_1.png](img/6ac84fdff518ea769f07b6e3d911391e_230_1.png)
 
 图 9.2 dbSwing 面板上的对话框
-```
-
-
 
 ### 创建自定义对话框
 
@@ -4823,7 +4656,7 @@ Dialog1 dialog1=new Dialog1(this, true);
 
 ### 使用颜色选择器
 
-`JColorChooser` 是 Swing 中的新组件。在 AWT 中没有类似的组件。它允许用户从调色板中选择一种颜色。默认行为是呈现一个包含选项卡窗格的对话框，让用户选择颜色。
+`JColorChooser` 是 Swing 中的新组件。在 AWT 中没有类似的组件。它允用户从调色板中选择一种颜色。默认行为是呈现一个包含选项卡窗格的对话框，让用户选择颜色。
 
 用户需要特定颜色设置的情况非常普遍。如果您使用过任何流行的图形程序，例如 Adobe Photoshop、CorelDRAW 或 GIMP，您肯定见过用户从调色板中选择特定颜色的对话框。如果您允许程序用户自定义应用程序中的任何颜色，强烈建议您使用内置的颜色选择器对话框。
 
@@ -4832,16 +4665,27 @@ Dialog1 dialog1=new Dialog1(this, true);
 表 9.3 JColorChooser 方法
 
 | 方法 | 目的 |
+
 | :--- | :--- |
+
 | void addChooserPanel(AbstractColorChooserPanel panel) | 将颜色选择器面板添加到颜色选择器。 |
+
 | static JDialog createDialog(Component c, String title, boolean modal, JColorChooser chooserPane, ActionListener okListener, ActionListener cancelListener) | 创建并返回一个包含指定颜色选择器面板以及“确定”、“取消”和“重置”按钮的新对话框。 |
+
 | AbstractColorChooserPanel[] getChooserPanels() | 返回指定的颜色面板。 |
+
 | Color getColor() | 从颜色选择器获取当前颜色值。 |
+
 | JComponent getPreviewPanel() | 返回显示所选颜色的预览面板。 |
+
 | void setChooserPanels(AbstractColorChooserPanel[] panels) | 指定用于选择颜色值的颜色面板。 |
+
 | void setColor(Color color) | 将颜色选择器的当前颜色设置为指定的颜色。 |
+
 | void setColor(int c) | 将颜色选择器的当前颜色设置为指定的颜色。 |
+
 | void setColor(int r, int g, int b) | 将颜色选择器的当前颜色设置为指定的 RGB 颜色。 |
+
 | static Color showDialog(Component component, String title, Color initialColor) | 显示一个模态颜色选择器对话框并阻塞直到对话框隐藏。 |
 
 除了这些方法之外，还可以将几个可能的构造函数与 `JColorChooser` 一起使用。这些总结在表 9.4 中。
@@ -4849,9 +4693,13 @@ Dialog1 dialog1=new Dialog1(this, true);
 表 9.4 JColorChooser 构造函数
 
 | 构造函数 | 目的 |
+
 | --- | --- |
+
 | JColorChooser() | 创建一个初始颜色为白色的颜色选择器面板。 |
+
 | JColorChooser(Color initialColor) | 创建一个具有指定初始颜色的颜色选择器面板。 |
+
 | JColorChooser(ColorSelectionModel model) | 创建一个具有指定 `ColorSelectionModel` 的颜色选择器面板。 |
 
 显然，每个构造函数都有不同的用途。第一个构造函数的目的相对明显。第二个构造函数被调用时，会传递一个 `Color` 对象的实例。由于某些读者可能不熟悉这一点，各种颜色类方法总结在表 9.5 中。
@@ -4859,10 +4707,15 @@ Dialog1 dialog1=new Dialog1(this, true);
 表 9.5 颜色类方法
 
 | 方法 | 目的 |
+
 | --- | --- |
+
 | static Color getColor(String nm) | 在系统属性中查找颜色。 |
+
 | static Color getColor(String nm, Color v) | 在系统属性中查找颜色。 |
+
 | Color darker() | 创建一个比此颜色更暗的新颜色。 |
+
 | Color brighter() | 创建一个比此颜色更亮的新颜色。 |
 
 当然，在使用这些方法之前，您需要创建一个 `Color` 类的实例。使用哪个构造函数至关重要。表 9.6 总结了最常用的构造函数。
@@ -4870,14 +4723,17 @@ Dialog1 dialog1=new Dialog1(this, true);
 表 9.6 颜色类构造函数
 
 | 构造函数 | 目的 |
+
 | --- | --- |
+
 | Color(int rgb) | 创建一个不透明的 sRGB 颜色，其指定的组合 RGB 值包含第 16 到 23 位的红色分量、第 8 到 15 位的绿色分量和第 0 到 7 位的蓝色分量。 |
+
 | Color(float r, float g, float b) | 创建一个不透明的 sRGB 颜色，其指定的红色、绿色和蓝色值在 0.0 到 1.0 的范围内。 |
 
-
-
 | 构造函数 | 用途 |
+
 | :--- | :--- |
+
 | `Color(int r, int g, int b)` | 创建一个不透明的 sRGB 颜色，其红、绿、蓝分量值在 0 到 255 范围内指定。 |
 
 最后一种最容易理解，因此我们在本节的示例中使用它。以下代码展示了如何在 Java 中实现颜色选择器：
@@ -5016,7 +4872,7 @@ public class Frame1 extends JFrame
             }
         });
     }
-    //Overridden so we can exit when window is closed
+    //Overriden so we can exit when window is closed
     protected void processWindowEvent(WindowEvent e)
     {
         super.processWindowEvent(e);
@@ -5044,38 +4900,61 @@ public class Frame1 extends JFrame
 #### 表 9.7 JFileChooser 方法
 
 | 方法 | 用途 |
+
 | :--- | :--- |
+
 | boolean accept(File f) | 如果该文件应该被显示，此函数将返回 `true`。 |
+
 | void approveSelection() | 当用户点击批准按钮（标记为“打开”或“保存”）时，用户界面会调用此函数。 |
+
 | void cancelSelection() | 当用户选择“取消”按钮时，用户界面会调用此函数。 |
+
 | void ensureFileIsVisible(File f) | 此函数用于确保指定的文件可见且未被隐藏。 |
+
 | File getCurrentDirectory() | 此方法将返回当前目录。 |
+
 | String getDescription(File f) | 此方法将返回当前选定文件的描述。 |
+
 | String getDialogTitle() | 此函数检索显示在 `JFileChooser` 标题栏中的字符串。 |
+
 | Icon getIcon(File f) | 此方法将返回此文件或文件类型的图标，具体取决于系统。 |
+
 | String getName(File f) | 此函数返回文件的名称。 |
+
 | File getSelectedFile() | 此函数实际返回文件本身。 |
+
 | boolean isFileSelectionEnabled() | 此方法根据当前文件选择模式确定是否可以选择文件。 |
+
 | void setCurrentDirectory(File dir) | 此方法将设置当前目录。 |
+
 | void setDialogTitle(String dialogTitle) | 此方法将设置显示在 `JFileChooser` 窗口标题栏中的字符串。 |
+
 | void setSelectedFile(File file) | 此方法设置选定的文件。 |
+
 | int showDialog(Component parent, String approveButtonText) | 此方法将显示一个带有自定义批准按钮的自定义文件选择器对话框。 |
+
 | int showOpenDialog(Component parent) | 此方法将显示一个“打开文件”文件选择器对话框。 |
+
 | int showSaveDialog(Component parent) | 此方法将显示一个“保存文件”文件选择器对话框。 |
-
-
 
 正如您可能从本书前面的例子中推测的那样，这个类提供了多种构造函数选项。这些在表 9.8 中进行了总结。
 
 表 9.8 JFileChooser 构造函数
 
 | 构造函数 | 用途 |
+
 |---|---|
+
 | JFileChooser() | 此构造函数将构建一个指向用户主目录的 JFileChooser。 |
+
 | JFileChooser(File currentDirectory) | 此构造函数将使用给定的文件作为路径来构建一个 JFileChooser。 |
+
 | JFileChooser(File currentDirectory, FileSystemView fsv) | 此构造函数将使用给定的当前目录和 FileSystemView 来构建一个 JFileChooser。 |
+
 | JFileChooser(FileSystemView fsv) | 此构造函数将使用给定的 FileSystemView 创建一个 JFileChooser。 |
+
 | JFileChooser(String currentDirectoryPath) | 此构造函数将使用给定的路径创建一个 JFileChooser。 |
+
 | JFileChooser(String currentDirectoryPath, FileSystemView fsv) | 此构造函数将使用给定的当前目录路径和 FileSystemView 创建一个 JFileChooser。 |
 
 ### 示例 9.3
@@ -5177,11 +5056,17 @@ public class Frame1 extends JFrame
 ### 复习题
 
 1. 默认情况下，对话框是模态的还是非模态的？
+
 2. 说一个给定的对话框是模态的意味着什么？
+
 3. `showDialog` 中的 `this` 参数代表什么？
+
 4. 在 JColorChooser 中，有哪三种选择颜色的方式？
+
 5. 哪个方法可以获取你用 JFileChooser 选定文件的名称？
+
 6. 在 JFileChooser 中，如果用户选择了取消按钮，会调用哪个方法？
+
 7. 你会用哪些方法来改变你用 JColorChooser 选定的颜色的亮度？
 
 # 第 10 章
@@ -5191,7 +5076,9 @@ public class Frame1 extends JFrame
 本章涵盖以下内容：
 
 - Graphics 类基础
+
 - Graphics 类详解
+
 - 实践示例
 
 ### 简介
@@ -5200,14 +5087,20 @@ Graphics 类可能是 JFC 中最灵活的类之一。它以前存在于抽象窗
 
 ### Graphics 类基础
 
-Graphics 类直接继承自 Object 类。这意味着它在 Java 的对象层次结构中相对靠上。Graphics 类是所有图形上下文的抽象基类，允许应用程序在组件上绘制。Graphics 类是抽象的这一事实意味着你不能直接实例化它。但是，大多数组件都有一个 getGraphics 方法，该方法返回一个图形方法的实例，你可以用它在该组件上进行绘制。Graphics 对象封装了 Java 支持的基本渲染操作所需的所有状态信息。这些状态信息包括几个属性：
+Graphics 类直接继承自 Object 类。这意味着它在 Java 的对象层次结构中相对靠上。Graphics 类是所有图形上context的抽象基类，允许应用程序在组件上绘制。Graphics 类是抽象的这一事实意味着你不能直接实例化它。但是，大多数组件都有一个 getGraphics 方法，该方法返回一个图形方法的实例，你可以用它在该组件上进行绘制。Graphics 对象封装了 Java 支持的基本渲染操作所需的所有状态信息。这些状态信息包括几个属性：
 
 - 要绘制的组件对象
+
 - 当前颜色
+
 - 当前字体
+
 - 当前裁剪区域
+
 - 渲染和裁剪坐标的平移原点
+
 - 当前的逻辑像素操作函数（XOR 或 Paint）
+
 - 当前的 XOR 备选颜色（参见 setXORMode (java.awt.Color)）
 
 ### Graphics 类详解
@@ -5218,39 +5111,60 @@ Graphics 类有一些细节，虽然对于使用该类不是必需的，但对�
 
 Graphics 类的许多方法将坐标作为参数。通常有四个数字。前两个定义起点，后两个定义终点。此图形系统的原点 (0,0) 是左上角。它*不是*笛卡尔坐标系中的屏幕中心。所有作为此 Graphics 对象方法参数出现的坐标，在调用方法前都被认为是相对于此 Graphics 对象平移原点的。所有渲染操作仅修改位于当前裁剪区域内的像素，该区域由用户空间中的形状指定，并由使用 Graphics 对象的程序控制。此用户裁剪区被转换到设备空间，并与由窗口可见性和设备范围定义的设备裁剪区结合。用户裁剪区和设备裁剪区的组合定义了复合裁剪区，它决定了最终的裁剪区域。渲染系统无法修改用户裁剪区以反映最终的复合裁剪区。用户裁剪区只能通过 setClip 或 clipRect 方法更改。所有绘制或写入都使用当前颜色、当前绘制模式和当前字体完成。
 
-本章我们将探索这个类中许多令人兴奋的方法。表 10.1 总结了最常用的方法。
+本章我们将探索这个类中许多令人兴奢的方法。表 10.1 总结了最常用的方法。
 
 表 10.1 Graphics 类方法
 
 | 方法 | 用途 |
+
 |---|---|
+
 | abstract void clearRect(int x, int y, int width, int height) | 此方法将通过使用当前绘图表面的背景色填充指定矩形来清除该矩形。 |
+
 | abstract void copyArea(int x, int y, int width, int height, int dx, int dy) | 此方法用于将组件的一个区域复制 dx 和 dy 指定的距离。 |
+
 | abstract Graphics create() | 此方法将创建一个新的 Graphics 对象，该对象是当前 Graphics 对象的副本。 |
+
 | abstract void dispose() | 此方法将处理当前的图形上下文并释放其正在使用的任何系统资源。 |
+
 | void draw3DRect(int x, int y, int width, int height, boolean raised) | 此方法用于绘制指定矩形的 3D 高亮轮廓。 |
-
-
 
 ### Graphics 类方法列表
 
 | 方法 | 用途 |
+
 |---|---|
+
 | abstract void drawArc(int x, int y, int width, int height, int startAngle, int arcAngle) | 此方法将绘制覆盖指定矩形的圆形或椭圆弧的轮廓。 |
+
 | abstract Boolean drawImage(Image img, int x, int y, Color bgcolor, ImageObserver observer) | 此方法将绘制指定图像中当前可用的部分。 |
+
 | abstract void drawLine(int x1, int y1, int x2, int y2) | 此方法将在此图形上下文的坐标系中绘制点 (x1, y1) 和 (x2, y2) 之间的直线。 |
+
 | abstract void drawOval(int x, int y, int width, int height) | 此方法用于绘制椭圆的轮廓。 |
+
 | abstract void drawPolygon(int[] xPoints, int[] yPoints, int nPoints) | 此方法将绘制由 x 和 y 坐标数组定义的封闭多边形。 |
+
 | void drawRect(int x, int y, int width, int height) | 此方法用于绘制矩形的轮廓。 |
+
 | abstract void drawRoundRect(int x, int y, int width, int height, int arcWidth, int arcHeight) | 此方法用于绘制带圆角的矩形轮廓。 |
+
 | abstract void drawString(String str, int x, int y) | 此方法用于使用此图形上下文当前的字体和颜色，绘制由指定字符串给出的文本。 |
+
 | void fill3DRect(int x, int y, int width, int height, boolean raised) | 此方法将绘制一个用当前颜色填充的、具有3D高亮效果的矩形。 |
+
 | abstract void fillArc(int x, int y, int width, int height, int startAngle, int arcAngle) | 此方法将填充覆盖指定矩形的圆形或椭圆弧。 |
+
 | abstract void fillOval(int x, int y, int width, int height) | 此方法用于用当前颜色填充由指定矩形界定的椭圆。 |
+
 | abstract void fillPolygon(int[] xPoints, int[] yPoints, int nPoints) | 此方法用于填充由 x 和 y 坐标数组定义的封闭多边形。 |
+
 | abstract void fillRect(int x, int y, int width, int height) | 此方法用于填充指定的矩形。 |
+
 | abstract void fillRoundRect(int x, int y, int width, int height, int arcWidth, int arcHeight) | 此方法用于用当前颜色填充指定的圆角矩形。 |
+
 | abstract Color getColor() | 此方法将返回此图形上下文的当前颜色。 |
+
 | abstract void setColor(Color c) | 此方法将此图形上下文的当前颜色设置为指定的颜色。 |
 
 与我们在本书中看到的许多其他类不同，这个类只有一个无参构造函数。不过理论部分已经讲得够多了；让我们来看一个示例。
@@ -5429,8 +5343,6 @@ public class Frame1 extends JFrame
 
 这个示例应该向你展示了 Graphics 类是多么灵活和有用。
 
-
-
 # 一个实际例子
 
 前面关于如何绘制圆形、线条和矩形的例子很有趣，但实用性不强。在本节中，我们将探讨一个非常实用的方法，即如何使用这些相同的图形方法，结合实时数据即时创建有用的图表。这无疑是 `Graphics` 类的一个有用应用。
@@ -5494,6 +5406,8 @@ g.fillRect(10,temp1,temp2,10);
 通过运用本书中你所见过的一些非常基础的技术，结合对 `Graphics` 类的创造性使用，我们现在有了一个程序，它可以计算任意一组浮点值的平均值，并显示各个条目的条形图。这个程序本身就很实用，并且可以轻松扩展以满足你可能有的任何特殊需求。
 
 对于那些没有 JBuilder 或者只想查看完整代码的读者，代码如下：
+
+
 
 ```java
 package pracexample;
@@ -5612,15 +5526,20 @@ public class Frame1 extends JFrame
 ### 复习题
 
 1.  如何创建 `Graphics` 类的一个实例？
+
 2.  列举 `Graphics` 类的任何四个方法。
+
 3.  `Graphics` 类继承自哪个类？
+
 4.  如何填充你使用 `Graphics` 类绘制的矩形？
+
 5.  传递给图形方法的数字代表什么？
+
 6.  如何清除 `Graphics` 类实例的所有绘图？
+
 7.  在 `Graphics` 类的坐标系中，点 0,0 代表什么？
+
 8.  如何更改 `Graphics` 类实例正在使用的颜色？
-
-
 
 # 第11章
 
@@ -5674,7 +5593,7 @@ public class Frame1 extends JFrame
 | ResultSet getResultSet() | 此方法将当前结果作为 ResultSet 对象返回。 |
 | void setMaxRows(int max) | 此方法将任何 ResultSet 对象可以包含的最大行数的限制设置为给定数字。 |
 
-Statement 接口是 `java.sql` 包中真正的工作horse。SQL 查询在这里被传递到数据库，结果在这里返回。最终，所有数据库操作不过是对某些数据库表执行的一系列 SQL 语句。
+Statement 接口是 `java.sql` 包中真正的工作马。SQL 查询在这里被传递到数据库，结果在这里返回。最终，所有数据库操作不过是对某些数据库表执行的一系列 SQL 语句。
 
 **表 11.4 ResultSet 接口方法**
 
@@ -5737,8 +5656,6 @@ System.out.println("The savings balance is " + sz_field);
 connection.close();
 }
 ```
-
-
 
 ```java
 }
@@ -5958,9 +5875,7 @@ public class dbframe extends JFrame
 }
 ```
 
-
-
-```markdown
+```java
  jPanel1.add(jButton2, null);
 jPanel1.add(jButton3, null);
 Class.forName("sun.jdbc.odbc.JdbcOdbcDriver");
@@ -6090,7 +6005,7 @@ class dbframe_jButton3_actionAdapter implements java.awt.event.ActionListener
 
 dbSwing类的真正意义在于它们是数据感知的。这意味着你可以让它们自动与底层数据库同步。对于那些有Microsoft Visual Basic背景的读者来说，这听起来可能非常像数据绑定组件。关键在于，一旦你创建了组件和底层数据源之间的关联，组件就会自动与该数据源同步。dbSwing中使用的主要类总结在表11.5中。
 
-表11.5 dbSwing类
+**表 11.5 dbSwing类**
 
 | 类 | 用途 |
 | :--- | :--- |
@@ -6138,7 +6053,7 @@ Java有一个名为Applet的基类。这个类是抽象的；它不能直接实�
 
 每个Applet都有一个特定的生命周期。这个生命周期体现在每个Applet的四个与生命周期相关的函数中：init、start、stop和destroy。表12.1总结了每个函数的用途。
 
-表12.1 Applet中的生命周期函数
+**表 12.1 Applet中的生命周期函数**
 
 | 函数 | 用途 |
 |---|---|
@@ -6149,12 +6064,7 @@ Java有一个名为Applet的基类。这个类是抽象的；它不能直接实�
 
 需要在这几个函数中编写代码的Applet只需重写相应的函数即可。并非每个Applet都需要重写所有这些方法。Applet甚至可以不重写其中任何一个方法。然而，大多数Applet会至少重写init方法。
 
-init方法适用于进行一次性的、不太耗时的初始化工作。你可以将init方法的作用类比于标准应用程序中的构造函数。Applet实际上并没有
-```
-
-
-
-构造函数，但你放在构造函数中的任何代码都可以放到 init 方法中。
+init方法适用于进行一次性的、不太耗时的初始化工作。你可以将init方法的作用类比于标准应用程序中的构造函数。Applet实际上并没有构造函数，但你放在构造函数中的任何代码都可以放到 init 方法中。
 
 每个在初始化之后执行操作（而非直接响应用户操作）的小程序都需要重写 start 方法。我所说的“执行非直接响应用户操作的操作”是什么意思？其实很简单。如果你的小程序在 init 函数之后会执行任何由用户事件以外的事件引发的操作，那么这些代码就应该放在 start 函数中。
 
@@ -6164,9 +6074,10 @@ destroy 方法可能是这四个方法中最不常用的。许多小程序不需
 
 你当然可以在不使用 JBuilder 的情况下创建小程序。使用任何文本编辑器创建你的小程序代码，并使用任何 Java 编译器（例如 Sun Java SDK）进行编译。然后再次使用你最喜欢的文本编辑器创建一个 HTML 文档，并将代码放入 HTML 文档中以包含你的小程序。以下是一个非常简单的小程序的源代码：
 
-```
+```java
 import java.awt.*;
 import java.applet.*;
+
 // create controls on the screen and respond to // events on
 // those controls.
 // This class inherits the Java Applet class. All applets must
@@ -6175,6 +6086,7 @@ class button extends Applet
 {
     // create an instance of the Button class
     Button hiButton;
+
     // applets use an init instead of a main function.
     public void init()
     {
@@ -6183,6 +6095,7 @@ class button extends Applet
         // Add that button to the browser window
         add(hiButton);
     }// close init
+
     // The action function handles the various events the // applet
     // can potentially respond to.
     public boolean action(Event evt, Object objme)
@@ -6240,11 +6153,11 @@ class button extends Applet
 
 步骤 1：按照你在上一节中看到的，创建一个包含 Applet 对象的新项目。将背景布局设置为边界布局。
 
-步骤 2：在边界布局的中心部分直接放置一个标签。使用属性窗口，将标签的边框设置为**凸起**的斜面，如图 12.6 所示。
+步骤 2：在边界布局的中心部分直接放置一个标签。使用属性窗口，将标签的边框设置为`凸起`的斜面，如图 12.6 所示。
 
 ![](img/6ac84fdff518ea769f07b6e3d911391e_293_0.png)
 
-然后将标签的字体大小设置为 **24**，前景色设置为 **蓝色**，水平对齐方式设置为 **居中**，文本设置为 **00:00**，如图 12.7 所示。
+然后将标签的字体大小设置为 `24`，前景色设置为 `蓝色`，水平对齐方式设置为 `居中`，文本设置为 `00:00`，如图 12.7 所示。
 
 ![](img/6ac84fdff518ea769f07b6e3d911391e_294_0.png)
 
@@ -6252,7 +6165,7 @@ class button extends Applet
 
 **步骤 3：** 在源代码开头的 import 语句中，添加 `java.util` 包：
 
-```
+```java
 import java.util.*;
 ```
 
@@ -6264,7 +6177,7 @@ import java.util.*;
 
 步骤 5：将以下代码放入 `jbInit` 函数中。此代码将初始化时钟，使其根据你的系统时钟显示当前时间。
 
-```
+```java
 Calendar curtime = Calendar.getInstance();
 int h = curtime.get(10);   // 10 is the constant for hour
 int m = curtime.get(12);   // 12 is the constant for minute
@@ -6275,7 +6188,7 @@ String time = h + ":" + m;
 
 步骤 6：现在将以下代码放入标记为 PST 的按钮中：
 
-```
+```java
 TimeZone t = TimeZone.getTimeZone("PST");
 curtime.setTimeZone(t);
 int h = curtime.get(10);// 10 is the constant for hour
@@ -6296,8 +6209,6 @@ jLabel1.setText(time);
 
 图 12.10 时钟小程序第二部分
 
-
-
 本章的目的并非探讨`Calendar`或`TimeZone`类的复杂性。如果你查阅JBuilder的帮助文件，会看到这些类附带了许多有趣的方法。要创建一个显示世界任何地方当前时间的时钟是轻而易举的事。稍加创意，还能制作一个可点击的地图，显示对应区域的时间。
 
 对于那些不使用JBuilder或只想查看完整源代码的读者，以下是代码：
@@ -6310,6 +6221,7 @@ import java.applet.*;
 import javax.swing.*;
 import javax.swing.border.*;
 import java.util.*;
+
 public class applettest extends Applet
 {
     private boolean isStandalone = false;
@@ -6325,7 +6237,6 @@ public class applettest extends Applet
     JButton jButton1 = new JButton();
     JButton jButton2 = new JButton();
     JButton jButton3 = new JButton();
-
     //获取参数值
     public String getParameter(String key, String def)
     {
@@ -6412,6 +6323,7 @@ public class applettest extends Applet
         jLabel1.setText(time);
     }
 }
+
 class applettest_jButton2_actionAdapter implements java.awt.event.ActionListener {
     applettest adaptee;
     applettest_jButton2_actionAdapter(applettest adaptee) {
@@ -6421,6 +6333,7 @@ class applettest_jButton2_actionAdapter implements java.awt.event.ActionListener
         adaptee.jButton2ActionPerformed(e);
     }
 }
+
 class applettest_jButton3_actionAdapter implements java.awt.event.ActionListener {
     applettest adaptee;
     applettest_jButton3_actionAdapter(applettest adaptee)
@@ -6507,11 +6420,9 @@ height = "300"
 
 ![图12.13](img/6ac84fdff518ea769f07b6e3d911391e_303_0.png)
 
-
-
 对于那些不使用 JBuilder 或只想查看小程序完整代码的读者，代码提供如下：
 
-```
+```java
 package example12_02;
 import java.awt.*;
 import java.awt.event.*;
@@ -6519,6 +6430,7 @@ import java.applet.*;
 import java.util.*;
 import javax.swing.*;
 import javax.swing.border.*;
+
 public class ParamExample extends Applet
 {
     private boolean isStandalone = false;
@@ -6635,76 +6547,150 @@ public class ParamExample extends Applet
         int h = curtime.get(10);  // 10 is the constant for hour
         int m = curtime.get(12);  // 12 is the constant for minute
         int s = curtime.get(13);  // 13 is the constant for seconds
-        int mil = curtime.get(9);
-        String time = h + ":" + m;
-        if(mil ==1)  // a value of 1 would indicate that this is pm
-            h = h + 12;
-        if(var0==true)
-            time = time + ":" + s;
-        jLabel1.setText(time);
-    }
-    void jButton2_actionPerformed(ActionEvent e)
-    {
-        TimeZone t = TimeZone.getTimeZone("CST");
-        Calendar curtime = Calendar.getInstance();
-        curtime.setTimeZone(t);
-        int h = curtime.get(10); // 10 is the constant for hour
-        int m = curtime.get(12); // 12 is the constant for minute
-        int s = curtime.get(13); // 13 is the constant for seconds
-        int mil = curtime.get(9);
-        String time = h + ":" + m;
-        if(mil ==1) // a value of 1 would indicate that this is pm
-            h = h + 12;
-        if(var0==true)
-            time = time + ":" + s;
-        jLabel1.setText(time);
-    }
-    void jButton3_actionPerformed(ActionEvent e)
-    {
-        TimeZone t = TimeZone.getTimeZone("EST");
-        Calendar curtime = Calendar.getInstance();
-        curtime.setTimeZone(t);
-        int h = curtime.get(10); // 10 is the constant for hour
-        int m = curtime.get(12); // 12 is the constant for minute
-        int s = curtime.get(13); // 13 is the constant for seconds
-        int mil = curtime.get(9);
-        String time = h + ":" + m;
-        if(mil ==1) // a value of 1 would indicate that this is pm
-            h = h + 12;
-        if(var0==true)
-            time = time + ":" + s;
-        jLabel1.setText(time);
-    }
+```
+
+
+
+int mil = curtime.get(9);
+
+String time = h + ":" + m;
+
+if(mil == 1)  // a value of 1 would indicate that this is pm
+
+    h = h + 12;
+
+if(var0 == true)
+
+    time = time + ":" + s;
+
+jLabel1.setText(time);
+
 }
+
+void jButton2_actionPerformed(ActionEvent e)
+
+{
+
+    TimeZone t = TimeZone.getTimeZone("CST");
+
+    Calendar curtime = Calendar.getInstance();
+
+    curtime.setTimeZone(t);
+
+    int h = curtime.get(10); // 10 is the constant for hour
+
+    int m = curtime.get(12); // 12 is the constant for minute
+
+    int s = curtime.get(13); // 13 is the constant for seconds
+
+    int mil = curtime.get(9);
+
+    String time = h + ":" + m;
+
+    if(mil == 1) // a value of 1 would indicate that this is pm
+
+        h = h + 12;
+
+    if(var0 == true)
+
+        time = time + ":" + s;
+
+    jLabel1.setText(time);
+
+}
+
+void jButton3_actionPerformed(ActionEvent e)
+
+{
+
+    TimeZone t = TimeZone.getTimeZone("EST");
+
+    Calendar curtime = Calendar.getInstance();
+
+    curtime.setTimeZone(t);
+
+    int h = curtime.get(10); // 10 is the constant for hour
+
+    int m = curtime.get(12); // 12 is the constant for minute
+
+    int s = curtime.get(13); // 13 is the constant for seconds
+
+    int mil = curtime.get(9);
+
+    String time = h + ":" + m;
+
+    if(mil == 1) // a value of 1 would indicate that this is pm
+
+        h = h + 12;
+
+    if(var0 == true)
+
+        time = time + ":" + s;
+
+    jLabel1.setText(time);
+
+}
+
+}
+
 class ParamExample_jButton1_actionAdapter implements
+
 java.awt.event.ActionListener {
+
     ParamExample adaptee;
+
     ParamExample_jButton1_actionAdapter(ParamExample adaptee)
+
     {
+
         this.adaptee = adaptee;
+
     }
+
     public void actionPerformed(ActionEvent e) {
+
         adaptee.jButton1_actionPerformed(e);
+
     }
+
 }
+
 class ParamExample_jButton2_actionAdapter implements java.awt.event.ActionListener {
+
     ParamExample adaptee;
+
     ParamExample_jButton2_actionAdapter(ParamExample adaptee) {
+
         this.adaptee = adaptee;
+
     }
+
     public void actionPerformed(ActionEvent e) {
+
         adaptee.jButton2_actionPerformed(e);
+
     }
+
 }
+
 class ParamExample_jButton3_actionAdapter implements java.awt.event.ActionListener {
+
     ParamExample adaptee;
+
     ParamExample_jButton3_actionAdapter(ParamExample adaptee) {
+
         this.adaptee = adaptee;
+
     }
+
     public void actionPerformed(ActionEvent e) {
+
         adaptee.jButton3_actionPerformed(e);
+
     }
+
 }
+
 ```
 
 你可以看到，添加参数并不是特别困难。然而，它非常有用。当你添加参数时，你允许你的小程序变得可定制。如果你打算分发你的小程序，最好考虑为它添加参数。这样，最终用户（即使没有任何编程经验的人）也可以自定义小程序在他们网页中的显示方式。
@@ -6742,98 +6728,182 @@ class ParamExample_jButton3_actionAdapter implements java.awt.event.ActionListen
 这个小程序本身并不特别令人兴奋。不过有趣的是，你可以将它作为小程序或独立应用程序运行。整个代码及其注释如下所示：
 
 ```
+
 package example12_03;
+
 import java.awt.*;
+
 import java.awt.event.*;
+
 import java.applet.*;
+
 import javax.swing.*;
+
 public class standaloneexample extends Applet
+
 {
+
   private boolean isStandalone = true;
+
   JButton jButton1 = new JButton();
+
   //Get a parameter value
+
   public String getParameter(String key, String def)
+
   {
+
     return isStandalone ? System.getProperty(key, def) :
+
       (getParameter(key) != null ? getParameter(key) : def);
+
   }
+
   //Construct the applet
+
   public standaloneexample()
+
   {
+
   }
+
   //Initialize the applet
+
   public void init()
+
   {
+
     try
+
     {
+
       jbInit();
+
     }
+
     catch(Exception e)
+
     {
+
       e.printStackTrace();
+
     }
+
   }
+
   //Component initialization
+
   private void jbInit() throws Exception
+
   {
+
     jButton1.setText("Click Me");
+
     jButton1.addActionListener(new standaloneexample_jButton1
+
         _actionAdapter(this));
+
     this.add(jButton1, null);
+
   }
+
   //Get Applet information
+
   public String getAppletInfo()
+
   {
+
     return "Applet Information";
+
   }
+
   //Get parameter info
+
 public String[][] getParameterInfo()
+
 {
+
     return null;
+
 }
+
 //Main method
+
 public static void main(String[] args)
+
 {
+
     standaloneexample applet = new standaloneexample();
+
     applet.isStandalone = true;
+
     Frame frame;
+
     frame = new Frame();
+
     frame.setTitle("Applet Frame");
+
     frame.add(applet, BorderLayout.CENTER);
+
     applet.init();
+
     applet.start();
+
     frame.setSize(400,320);
+
     Dimension d = Toolkit.getDefaultToolkit().getScreenSize();
+
     frame.setLocation((d.width - frame.getSize().width) / 2,
+
                       (d.height - frame.getSize().height) / 2);
+
     frame.setVisible(true);
+
 }
+
 void jButton1_actionPerformed(ActionEvent e)
+
 {
+
     jButton1.setText("Thanks");
+
 }
+
 }
+
 class standaloneexample_jButton1_actionAdapter implements
+
         java.awt.event.ActionListener
+
 {
+
     standaloneexample adaptee;
-    
+
     standaloneexample_jButton1_actionAdapter(standaloneexample adaptee)
+
     {
+
         this.adaptee = adaptee;
+
     }
+
     public void actionPerformed(ActionEvent e)
+
     {
+
         adaptee(jButton1_actionPerformed(e);
+
     }
+
 }
+
 ```
 
 如果你仔细查看这段代码，你会发现真正的技巧在于包含了小程序和应用程序所需的函数。这里有一个构造函数和一个主函数，如果它作为小程序在浏览器中启动，这两个函数都不会被调用。然后是那些在浏览器环境中使用的 `init` 函数。这样，你就得到了一个既可以作为小程序运行，也可以作为独立应用程序运行的小程序。本质上，通过添加一个主函数和一个构造函数，你就创建了一个独立小程序。
 
 ## 本章小结
 
-在本章中，我们探讨了如何在小程序中使用Java基础类。希望你已经看到，在小程序中使用JFC其实并没有太大难度。我们研究了小程序的结构、小程序所需的函数以及如何使用这些函数。我们还探讨了如何向小程序传递参数，以及如何创建一个可以作为独立应用程序运行的小程序。
+在本章中，我们探讨了如何在小程序中使用Java基础类。希望你已经看到，在小程序中使用JFC其实并没有太大难度。我们研究了小程序的结构、小程序所需的函数以及如何使用这些函数。我们还探讨了如何向小程序传递参数，以及如何创建一个可以作为独立应用程运行的小程序。
 
 小程序在网页中相当常见。如果你在小程序中整合JFC组件，你将得到一个用户友好的小程序。如果你进一步利用参数和独立运行选项，你还将得到一个功能极其强大的小程序，可以根据最终用户的需求进行定制。
 
@@ -6886,10 +6956,15 @@ Java 2D API引入了一种新的Graphics对象类型，即`java.awt.Graphics2D`�
 使用`Graphics2D`类仅比使用标准Graphics类稍微复杂一点。回忆一下，要使用标准Graphics类，你有一个函数（如`paint`），它接受一个Graphics类的实例。你也可以调用特定组件的`getGraphics`函数，它将返回一个Graphics类的实例。要使用Java 2D API功能，你需要将传入组件渲染方法的Graphics对象强制转换为Graphics2D对象。
 
 ```
+
 public void paint (Graphics g)
+
 {
+
     Graphics2D g2 = (Graphics2D) g;
+
 }
+
 ```
 
 与`Graphics2D`对象关联的各种状态属性被称为`Graphics2D`渲染上下文。要使用这个类的任何方法，你必须设置`Graphics2D`渲染上下文，然后调用`Graphics2D`的某个渲染方法，例如某个绘图方法。你可能猜到了，这个类有很多方法。最重要的方法总结在表13.1中。
@@ -6920,15 +6995,25 @@ Graphics2D 类。与其简单地列举 `Graphics2D` 类中的几个方法，我�
 **步骤 3：** 现在开始编写代码——这是最有趣的部分。在“绘制立方体”按钮的动作事件中，放入以下代码：
 
 ```
+
 g = pnldisplay.getGraphics();
+
 g2 = (Graphics2D) g;
+
 g2.draw3DRect(10,10,40,40,true);
+
 Color c = new Color(200,0,0);
+
 g2.setColor(c);
+
 g2.fill3DRect(20,20,40,40,true);
+
 g2.drawLine(10,10,20,20);
+
 g2.drawLine(10,50,20,60);
+
 g2.drawLine(50,10,60,20);
+
 ```
 
 > **注意：** 你应该注意前两行，我们将现有的图形类强制转换为 `Graphics2D` 类。这是在使用 `Graphics2D` 类之前必须执行的操作。
@@ -6936,24 +7021,39 @@ g2.drawLine(50,10,60,20);
 现在，在“绘制字符串”按钮中，放入以下代码：
 
 ```
+
 g = pnldisplay.getGraphics();
+
 g2 = (Graphics2D) g;
+
 // 注意，值为 1 表示粗体。
+
 Font f = new Font("Serif", 1, 24);
+
 Color c = new Color(0,0,255);
+
 g2.setFont(f);
+
 g2.setColor(c);
+
 g2.drawString("JBuilder is Cool",10,100);
+
 ```
 
 最后，在“绘制圆弧”按钮中，放入以下代码：
 
 ```
+
 g = pnldisplay.getGraphics();
+
 g2 = (Graphics2D) g;
+
 Color c = new Color(255,0,0);
+
 g2.setColor(c);
+
 g2.drawArc(10,200,100,25,15,90);
+
 ```
 
 请注意，在所有三种情况下，我们都必须首先将现有的 `Graphics` 类强制转换为 `Graphics2D` 类。完成此操作后，使用 `Graphics2D` 类与使用旧的 `Graphics` 类没有太大区别。运行你的应用程序时，你应该会看到类似图 13.2、13.3 和 13.4 所示的内容。
@@ -6970,138 +7070,267 @@ g2.drawArc(10,200,100,25,15,90);
 对于那些不使用 JBuilder 或者只想查看完整代码的读者，代码如下：
 
 ```
+
 package example13_01;
+
 import java.awt.*;
+
 import java.awt.event.*;
+
 import javax.swing.*;
+
 import com.borland.jbcl.layout.*;
 
 public class TwoDFrame extends JFrame
+
 {
+
     JPanel contentPane;
+
     BorderLayout borderLayout1 = new BorderLayout();
+
     JPanel pnldisplay = new JPanel();
+
     JPanel pnlwest = new JPanel();
+
     Graphics g;
+
     Graphics2D g2;
+
     JButton jButton1 = new JButton();
+
     VerticalFlowLayout verticalFlowLayout1 = new
+
             VerticalFlowLayout();
+
     JButton jButton2 = new JButton();
+
     JButton jButton3 = new JButton();
+
     //构造框架
+
     public TwoDFrame() {
+
         enableEvents(AWTEvent.WINDOW_EVENT_MASK);
+
         try
+
         {
+
             jbInit();
+
         }
+
         catch(Exception e)
+
         {
+
             e.printStackTrace();
+
         }
+
     }
+
     //组件初始化
+
     private void jbInit() throws Exception
+
     {
+
         contentPane = (JPanel) this.getContentPane();
+
         contentPane.setLayout(borderLayout1);
+
         this.setSize(new Dimension(400, 300));
+
         this.setTitle("2D Graphics API  Example");
+
         pnldisplay.setBackground(Color.white);
+
         jButton1.setText("Draw Cube");
+
         jButton1.addActionListener(new TwoDFrame_jButton1_
+
                 actionAdapter(this));
+
         pnlwest.setLayout(verticalFlowLayout1);
+
         jButton2.setText("Draw String");
+
         jButton2.addActionListener(new TwoDFrame_jButton2_
+
                 actionAdapter(this));
+
         jButton3.setText("Draw Arc");
+
         jButton3.addActionListener(new TwoDFrame_jButton3_
+
                 actionAdapter(this));
+
         contentPane.add(pnldisplay, BorderLayout.CENTER);
+
         contentPane.add(pnlwest, BorderLayout.WEST);
+
         pnlwest.add(jButton1, null);
+
         pnlwest.add(jButton2, null);
+
         pnlwest.add(jButton3, null);
+
     }
+
     //重写此方法以便在窗口关闭时退出
+
     protected void processWindowEvent(WindowEvent e)
+
     {
+
         super.processWindowEvent(e);
+
         if (e.getID() == WindowEvent.WINDOW_CLOSING)
+
         {
+
             System.exit(0);
+
         }
+
     }
+
     void jButton1_actionPerformed(ActionEvent e)
+
     {
+
         g = pnldisplay.getGraphics();
+
         g2 = (Graphics2D) g;
+
         g2.draw3DRect(10,10,40,40,true);
+
         Color c = new Color(200,0,0);
+
         g2.setColor(c);
+
         g2.fill3DRect(20,20,40,40,true);
+
         g2.drawLine(10,10,20,20);
+
         g2.drawLine(10,50,20,60);
+
         g2.drawLine(50,10,60,20);
+
     }
+
     void jButton2_actionPerformed(ActionEvent e)
+
     {
+
         g = pnldisplay.getGraphics();
+
         g2 = (Graphics2D) g;
+
         // 注意，值为 1 表示粗体。
+
         Font f = new Font("Serif", 1, 24);
+
         Color c = new Color(0, 0, 255);
+
         g2.setFont(f);
+
         g2.setColor(c);
+
         g2.drawString("JBuilder is Cool", 10, 100);
+
     }
+
     void jButton3_actionPerformed(ActionEvent e)
+
     {
+
         g = pnldisplay.getGraphics();
+
         g2 = (Graphics2D) g;
+
         Color c = new Color(255,0,0);
+
         g2.setColor(c);
+
         g2.drawArc(10,200,100,25,15,90);
+
     }
+
 }
+
 class TwoDFrame_jButton1_actionAdapter implements java.awt.event.ActionListener
+
 {
+
     TwoDFrame adaptee;
 
     TwoDFrame_jButton1_actionAdapter(TwoDFrame adaptee)
+
     {
+
         this.adaptee = adaptee;
+
     }
+
     public void actionPerformed(ActionEvent e)
+
     {
+
         adaptee(jButton1_actionPerformed(e);
+
     }
+
 }
+
 class TwoDFrame_jButton2_actionAdapter implements java.awt.event.ActionListener
+
 {
+
     TwoDFrame adaptee;
+
     TwoDFrame_jButton2_actionAdapter(TwoDFrame adaptee)
+
     {
+
         this.adaptee = adaptee;
+
     }
+
     public void actionPerformed(ActionEvent e)
+
     {
+
         adaptee(jButton2_actionPerformed(e);
+
     }
+
 }
+
 class TwoDFrame_jButton3_actionAdapter implements java.awt.event.ActionListener {
+
     TwoDFrame adaptee;
+
     TwoDFrame_jButton3_actionAdapter(TwoDFrame adaptee)
+
     {
+
         this.adaptee = adaptee;
+
     }
+
     public void actionPerformed(ActionEvent e)
+
     {
+
         adaptee(jButton3_actionPerformed(e);
+
     }
+
 }
+
 ```
 
 这个例子虽然相当简单，但应该能为你阐明使用 `Graphics2D` 类的基本要点。它并非特别复杂。实际上，它与使用标准的 `Graphics` 类并没有太大不同。它确实有一些新的方法，而且在我看来，它能渲染出更清晰、更优质的图像。
@@ -7130,7 +7359,7 @@ class TwoDFrame_jButton3_actionAdapter implements java.awt.event.ActionListener 
 
 让一个中间对象来处理从用户空间到设备特定上下文的转换是有充分理由的。当你引用设备空间中的坐标时，通常指的是单个设备像素。某些`Graphics2D`对象可用于捕获渲染操作，将其存储到图形元文件中，以便稍后在物理分辨率未知的设备上回放。由于在捕获渲染操作时可能尚不清楚目标设备的分辨率，因此使用`Graphics2D` Transform对象将用户坐标转换到一个近似于目标设备预期分辨率的虚拟设备空间。如果估算不正确，在回放时可能需要进一步应用变换。
 
-所有`Graphics2D`对象都关联一个定义渲染位置的目标。在本章前面你看到的示例中，目标是一个在你的监视器屏幕上渲染的面板（而不是在打印机上渲染）。在那里，使用`GraphicsConfiguration`对象来定义渲染目标的特性，例如像素格式和分辨率。在`Graphics2D`对象的整个生命周期中，都使用相同的渲染目标。
+所有`Graphics2D`对象都关联一个定义渲�位置的目标。在本章前面你看到的示例中，目标是一个在你的监视器屏幕上渲染的面板（而不是在打印机上渲染）。在那里，使用`GraphicsConfiguration`对象来定义渲染目标的特性，例如像素格式和分辨率。在`Graphics2D`对象的整个生命周期中，都使用相同的渲染目标。
 
 当你创建一个`Graphics2D`对象时，`GraphicsConfiguration`指定了该`Graphics2D`目标的默认变换。这个目标可以是一个组件或一个图像。在本章前面的示例中，目标是一个组件（具体来说，是一个面板）。这个默认的Transform对象将用户空间坐标系映射到屏幕和打印机设备坐标（如果正在打印），使得原点映射到设备目标区域的左上角，x坐标从最左侧向右延伸，y坐标从顶部向下延伸。在很多情况下，你可以使用`Graphics2D`对象而无需关心所使用的坐标系（当然，除了知道x和y坐标的起点）。然而，如果你遇到图形显示方面的任何重大问题，了解这个坐标系对于确定原因和采取纠正措施可能是无价的。
 
@@ -7155,7 +7384,7 @@ class TwoDFrame_jButton3_actionAdapter implements java.awt.event.ActionListener 
 -   文本操作
 -   图像操作
 
-形状操作是任何直接或间接使用`draw-Shape`方法的操作。当前`Graphics2D`上下文中的画笔会被查询以获取`Paint-Context`，该上下文指定了在设备空间中渲染的颜色。
+形状操作是任何直接或间接使用`draw-Shape`方法的操作。当前`Graphics2D`上下文中的画笔会被查询以获取`Paint-Context`，该上下指定了在设备空间中渲染的颜色。
 
 文本操作是任何渲染文本的操作。最明显应该立即想到的方法是`drawString`。如果参数是一个字符串，当前选中的字体将被要求将字符串中的Unicode字符转换为一组字形进行呈现。
 
@@ -7183,11 +7412,17 @@ Java 2D API实现了一种新的成像模型。该模型支持对存储在内存
 **步骤 3：** 在该按钮的动作事件中，放置以下代码：
 
 ```
+
 Image img1 = Toolkit.getDefaultToolkit().getImage("java.gif");
+
 Graphics g = pnlDisplay.getGraphics();
+
 Graphics2D g2 = (Graphics2D) g;
+
 g2.drawImage(img1, 10, 10, this);
+
 g2.finalize();
+
 ```
 
 现在，当你运行应用程序并按下按钮时，将显示一个图像，如图13.6所示。
@@ -7203,74 +7438,143 @@ g2.finalize();
 对于那些不使用 JBuilder 或只是希望查看完整代码的读者，代码已在此处提供：
 
 ```
+
 package example13;
+
 import java.awt.*;
+
 import java.awt.event.*;
+
 import javax.swing.*;
+
 public class framain extends JFrame
+
 {
+
     JPanel contentPane;
+
     BorderLayout borderLayout1 = new BorderLayout();
+
     JPanel pnlDisplay = new JPanel();
+
     JPanel pnlwest = new JPanel();
+
     JButton jButton1 = new JButton();
+
     //构造框架
+
     public framain()
+
     {
+
         enableEvents(AWTEvent.WINDOW_EVENT_MASK);
+
         try
+
         {
+
             jbInit();
+
         }
+
         catch(Exception e)
+
         {
+
             e.printStackTrace();
+
         }
+
     }
+
     //组件初始化
+
     private void jbInit() throws Exception
+
     {
+
         contentPane = (JPanel) this.getContentPane();
+
         contentPane.setLayout(borderLayout1);
+
         this.setSize(new Dimension(400, 300));
+
         this.setTitle("Image Example");
+
         pnlDisplay.setBackground(Color.white);
+
         jButton1.setText("Render Image");
+
         jButton1.addActionListener(new framain_jButton1_actionAdapter(this));
+
         contentPane.add(pnlDisplay, BorderLayout.CENTER);
+
         contentPane.add(pnlwest, BorderLayout.WEST);
+
         pnlwest.add(jButton1, null);
+
     }
+
     //重写以在窗口关闭时退出
+
     protected void processWindowEvent(WindowEvent e)
+
     {
+
         super.processWindowEvent(e);
+
         if (e.getID() == WindowEvent.WINDOW_CLOSING)
+
         {
+
             System.exit(0);
+
         }
+
     }
+
     void jButton1_actionPerformed(ActionEvent e)
+
     {
+
         Image img1 = Toolkit.getDefaultToolkit().getImage("java.gif");
+
         Graphics g = pnlDisplay.getGraphics();
+
         Graphics2D g2 = (Graphics2D) g;
+
         g2.drawImage(img1, 10, 10, this);
+
         g2.finalize();
+
     }
+
 }
+
 class framain_jButton1_actionAdapter implements java.awt.event.ActionListener
+
 {
+
     framain adaptee;
+
     framain_jButton1_actionAdapter(framain adaptee)
+
     {
+
         this.adaptee = adaptee;
+
     }
+
     public void actionPerformed(ActionEvent e)
+
     {
+
         adaptee(jButton1_actionPerformed(e));
+
     }
+
 }
+
 ```
 
 如您所见，使用 `Graphics2D` 类显示图像的要点与使用旧的 `Graphics` 类没有太大不同。只是现在您有更多可用选项。
@@ -7316,15 +7620,25 @@ class framain_jButton1_actionAdapter implements java.awt.event.ActionListener
 既然您已经基本了解了什么是线程，现在是时候考虑 Java 环境中的线程了。不同的编程语言提供处理线程的不同方法。如果您的程序以正确的方式创建和引用其 GUI 组件，您可能不需要担心线程。您可能会问，什么是正确的方式？如果您的程序是一个小应用程序，正确的方式是在 `init` 方法中构建其 GUI。这似乎相对简单且显而易见。然而，我见过一些代码试图在 `start` 方法中执行此操作，这可能导致灾难性的结果。如果您的程序是一个应用程序，而不是小应用程序，您最好考虑以下关于如何正确构建界面的通用示例：
 
 ```
+
 public class MyApp
+
 {
+
     public static void main(String[] args)
+
     {
+
         JFrame f = new JFrame(...);
+
         ...//在此处向框架添加组件...
+
         f.setVisible(true);
+
     }
+
 }
+
 ```
 
 您会看到 GUI 元素在类的开头创建，GUI 组件的方法在事件处理函数中处理。如果您遵循此格式，您将拥有一个线程安全的应用程序。但是，有两个重要的情况，这个标准模板可能不足以保证线程安全的应用程序。一种情况是，如果您的程序创建线程来执行影响 GUI 的任务。第二种情况是，如果它响应除标准事件之外的任何事件来操作已经可见的 GUI 组件。我们将在以下部分讨论如何处理这些情况。
@@ -7356,7 +7670,7 @@ Swing 中的线程实际上并没有那么复杂。这一切都归结为一条�
 
 ### 在Java中使用线程
 
-本章已详细讨论了与Java相关的线程使用的复杂性。如果我们简要介绍一下Java中线程的一般用法，上述所有内容可能对您来说会更易于理解。虽然线程的概念对您来说可能比较新，但线程实际上是每个Java程序的一部分。回想一下，线程仅仅是程序内单一的顺序控制流。这意味着每个程序至少有一个线程。您在前13章中使用过的应用程序和小程序都是单线程的。当您的程序是单线程时，您不需要显式地设置一个线程；Java虚拟机会为您处理这些。然而，Java语言最强大的特性之一是，您可以轻松地编程实现多个执行线程在同一个程序中并发运行，而且可以相当轻松地做到这一点。对于那些在C++等语言中使用过多线程应用程序的读者来说，这令人耳目一新，因为在那些语言中，多线程可能是一个棘手的过程。
+本章已详经讨论了与Java相关的线程使用的复杂性。如果我们简要介绍一下Java中线程的一般用法，上述所有内容可能对您来说会更易于理解。虽然线程的概念对您来说可能比较新，但线程实际上是每个Java程序的一部分。回想一下，线程仅仅是程序内单一的顺序控制流。这意味着每个程序至少有一个线程。您在前13章中使用过的应用程序和小程序都是单线程的。当您的程单线程时，您不需要显式地设置一个线程；Java虚拟机会为您处理这些。然而，Java语言最强大的特性之一是，您可以轻松地编程实现多个执行线程在同一个程序中并发运行，而且可以相当轻松地做到这一点。对于那些在C++等语言中使用过多线程应用程序的读者来说，这令人耳目一新，因为在那些语言中，多线程可能是一个棘手的过程。
 
 另一个例外涉及使用小程序。小程序的GUI可以在`init`方法中构建并显示。事实上，它就应该如此。现有的浏览器在调用小程序的`init`和`start`方法之后才会绘制它。因此，在小程序的`init`方法中构建GUI是安全的，只要您从不在实际的小程序对象上调用`show()`或`setVisible(true)`。
 
@@ -7371,7 +7685,7 @@ Swing 中的线程实际上并没有那么复杂。这一切都归结为一条�
 虽然大多数程序的工作方式如上所述，但有些程序需要在GUI可见后执行非事件驱动的GUI工作。这就是为什么我们进行了关于线程使用、单线程规则及其例外情况的讨论。您可能想知道我们谈论的是哪种类型的应用程序，因为到目前为止您看到的所有应用程序都是单线程的。以下是两个示例：
 
 - 那些必须执行冗长初始化操作才能使用的应用程序或小程序。由于初始化过程漫长，这类应用程序在初始化期间需要显示一些GUI。因此，初始化不应在事件分派线程中发生。如果在事件分派线程中进行初始化，您可能会遇到重绘和事件分派停止的情况。然而，一旦初始化完成，GUI的更新/更改应在事件分派线程中进行。
-- 那些GUI必须由于非标准事件而更新的应用程序和小程序。考虑一个从运行在不同机器上的其他应用程序接收请求的服务器应用程序。这些请求可能随时到来，它们会导致服务器的某个方法在某个可能未知的线程中被调用。该方法可以通过在事件分派线程中执行GUI更新代码来更新GUI。
+- 那些GUI必须由于非标准事件而更新的应用程序和小程序。考虑一个从运行在不同机器上的其他应用程序接收请的服务器应用程序。这些请求可能随时到来，它们会导致服务器的某个方法在某个可能未知的线程中被调用。该方法可以通过在事件分派线程中执行GUI更新代码来更新GUI。
 
 幸运的是，Java提供了一些方法，可以帮助您在事件分派线程中运行代码。这些方法可以在`SwingUtilities`类中找到。`SwingUtilities`类提供了两种这样的方法来帮助您在事件分派线程中运行代码：
 
@@ -7405,51 +7719,89 @@ Swing 中的线程实际上并没有那么复杂。这一切都归结为一条�
 如果您正在创建一个新类，并且希望其对象在单独的线程中执行，您可能需要继承`java.lang.Thread`类。`Thread`类的默认`run()`方法不执行任何操作，因此您的类需要用您自己的run方法覆盖它。`run()`方法是线程启动时首先执行的方法。例如，下面的类`ThreadExample1`继承了`Thread`类并覆盖了其`run()`方法。在这个例子中，`run()`方法仅仅标识一个线程并将其名称打印到屏幕上。for循环从起始值计数到结束值，并将每个计数打印到屏幕上。然后，在循环完成执行之前，该方法打印一条消息，表明线程已完成执行。
 
 ```java
+
 public class ThreadExample1 extends Thread
+
 {
+
     private int start;
+
     private int finish;
+
     public CountThread(int from, int to)
+
     {
+
         this.start = from;
+
         this.finish = to;
+
     }
+
     public void run()
+
     {
+
         System.out.println(this.getName() + " begun executing...");
+
         for (int i = start; i <= finish; i++)
+
         {
+
             System.out.print(i + " ");
+
         }
+
         System.out.println(this.getName() + " finished executing.");
+
     }
+
 }
+
 ```
 
 要测试`ThreadExample1`类，您可以创建一个测试应用程序，就像这里展示的一样：
 
 ```java
+
 public class ThreadTester
+
 {
+
     static public void main(String[] args)
+
     {
+
         ThreadExample1 thread1 = new ThreadExample1(1, 5);
+
         ThreadExample1 thread2 = new ThreadExample1(10, 15);
+
         thread1.start();
+
         thread2.start();
+
     }
+
 }
+
 ```
 
 测试应用程序的`main()`方法创建了两个`ThreadExample1`类的实例。然后通过调用它们的`start()`方法来启动这两个线程。此测试应用程序的输出可能如下所示：
 
 ```
+
 Thread-0 started executing...
+
 1 2 3 4 5
+
 Thread-0 finished executing.
+
 Thread-1 started executing...
+
 10 11 12 13 14 15
+
 Thread-1 finished executing.
+
 ```
 
 
@@ -7461,40 +7813,71 @@ Thread-1 finished executing.
 如果您希望使用的类继承自 Thread 类，前面的示例是可行的。正如您已经知道的，在 Java 中只能继承一个类；没有多重继承。那么，如果您想在一个已经继承自其他类的类中使用线程，该怎么办呢？幸运的是，Java 提供了一个您可以实现的接口。那就是 `java.lang.Runnable` 接口，它为那些没有继承 Thread 类的类提供了线程支持。它只提供一个方法，即 `run()` 方法，您必须在您的类中实现它。让我们看一下对之前示例的修改，这次实现了 Runnable 接口：
 
 ```java
+
 public class ThreadExample2 implements Runnable
+
 {
+
     private int start;
+
     private int finish;
+
     public ThreadExample2 (int from, int to)
+
     {
+
         this.start = from;
+
         this.finish = to;
+
     }
+
     public void run()
+
     {
+
         System.out.println(Thread.currentThread() + " started executing...");
+
         for (int i=start; i <= finish; i++)
+
         {
+
             System.out.print (i + " ");
+
         }
+
         System.out.println(Thread.currentThread() + " finished executing.");
+
     }
+
 }
+
 ```
 
 就像您需要修改 Thread 类本身一样，您也需要对测试应用程序进行小幅修改：
 
 ```java
+
 public class ThreadTester
+
 {
+
     static public void main(String[] args)
+
     {
+
         CountThreadRun thread1 = new CountThreadRun(1, 5);
+
         new Thread(thread1).start();
+
         CountThreadRun thread2 = new CountThreadRun(10, 15);
+
         new Thread(thread2).start();
+
     }
+
 }
+
 ```
 
 如您所见，使用线程并不是特别困难。实际上，它相当直接。
@@ -7516,28 +7899,47 @@ public class ThreadTester
 #### 步骤 3：在 JBuilder 为您创建的主类最后一个括号之后，您将添加一个新类。这与我们之前的示例非常相似。
 
 ```java
+
 class ThreadExample1 extends Thread
+
 {
+
     public String name;
+
     public ThreadExample1(String threadname)
+
     {
+
         name = threadname;
+
     }
+
     public void run()
+
     {
+
         name = name + " Has begun!";
+
     }
+
 }
+
 ```
 
 #### 步骤 4：在标签为 "Start Thread 1" 的按钮的 action 事件中，放置以下代码：
 
 ```java
+
 ThreadExample1 mythread = new ThreadExample1("Thread A");
+
 mythread.run();
+
 String txt = jLabel1.getText();
+
 txt = txt + mythread.name;
+
 jLabel1.setText(txt);
+
 ```
 
 您将在另一个按钮的 action 事件中放置几乎相同的代码——唯一的区别是它应该读取 "Thread B"。当您运行此应用程序时，您应该看到类似于图 14.2 和图 14.3 中描绘的内容。
@@ -7555,132 +7957,246 @@ jLabel1.setText(txt);
 对于那些不使用 JBuilder 或希望查看完整代码的读者，代码如下：
 
 ```java
+
 package example14_01;
+
 import java.awt.*;
+
 import java.awt.event.*;
+
 import javax.swing.*;
+
 import com.borland.jbcl.layout.*;
+
 import javax.swing.border.*;
+
 public class frathread extends JFrame
+
 {
+
     JPanel contentPane;
+
     BorderLayout borderLayout1 = new BorderLayout();
+
     JPanel jPanel1 = new JPanel();
+
     FlowLayout flowLayout1 = new FlowLayout();
+
     JPanel jPanel2 = new JPanel();
+
     VerticalFlowLayout verticalFlowLayout1 = new VerticalFlowLayout();
+
     JButton jButton1 = new JButton();
+
     JButton jButton2 = new JButton();
+
     JLabel jLabel1 = new JLabel();
+
     Border border1;
+
     //Construct the frame
+
     public frathread()
+
     {
+
         enableEvents(AWTEvent.WINDOW_EVENT_MASK);
+
         try {
+
             jbInit();
+
         }
+
         catch(Exception e)
+
         {
+
             e.printStackTrace();
+
         }
+
     }
+
     //Component initialization
+
     private void jbInit() throws Exception
+
     {
+
         contentPane = (JPanel) this.getContentPane();
+
         border1 = BorderFactory.createCompoundBorder(new EtchedBorder(EtchedBorder.RAISED, Color.white, new Color(178, 178, 178)), BorderFactory.createEmptyBorder(5, 5, 5, 5));
+
         contentPane.setLayout(borderLayout1);
+
         this.setSize(new Dimension(400, 300));
+
         this.setTitle("Using Threads");
+
         jPanel1.setLayout(flowLayout1);
+
         jPanel2.setLayout(verticalFlowLayout1);
+
         jButton1.setText("Start Thread 1");
+
         jButton1.addActionListener(new frathread_jButton1_actionAdapter(this));
+
         jButton2.setText("Start Thread 2");
+
         jButton2.addActionListener(new frathread_jButton2_actionAdapter(this));
+
         jLabel1.setBackground(Color.white);
+
         jLabel1.setBorder(border1);
+
         jLabel1.setMaximumSize(new Dimension(100, 50));
+
         jLabel1.setMinimumSize(new Dimension(100, 50));
+
         jLabel1.setPreferredSize(new Dimension(100, 50));
+
         jLabel1.setText("jLabel1");
+
         contentPane.add(jPanel1, BorderLayout.CENTER);
+
         jPanel1.add(jLabel1, null);
+
         contentPane.add(jPanel2, BorderLayout.WEST);
+
         jPanel2.add(jButton1);
+
         jPanel2.add(jButton2, null);
+
     }
+
     //Overridden so we can exit when window is closed
+
     protected void processWindowEvent(WindowEvent e)
+
     {
+
         super.processWindowEvent(e);
+
         if (e.getID() == WindowEvent.WINDOW_CLOSING)
+
         {
+
             System.exit(0);
+
         }
+
     }
+
     void jButton1_actionPerformed(ActionEvent e)
+
     {
+
         ThreadExample1 mythread = new ThreadExample1("Thread A");
+
         mythread.run();
+
         String txt = jLabel1.getText();
+
         txt = txt + mythread.name;
+
         jLabel1.setText(txt);
+
     }
+
     void jButton2_actionPerformed(ActionEvent e)
+
     {
+
         ThreadExample1 mythread = new ThreadExample1("Thread B");
+
         mythread.run();
+
         String txt = jLabel1.getText();
+
         txt = txt + mythread.name;
+
         jLabel1.setText(txt);
+
     }
+
 }
 
 class ThreadExample1 extends Thread
+
 {
+
     public String name;
+
     public ThreadExample1(String threadname)
+
     {
+
         name = threadname;
+
     }
+
     public void run()
+
     {
+
         name = name + " Has begun!";
+
     }
+
 }
 
 class frathread_jButton1_actionAdapter implements java.awt.event.ActionListener
+
 {
+
     frathread adaptee;
+
     frathread_jButton1_actionAdapter(frathread adaptee)
+
     {
+
         this.adaptee = adaptee;
+
     }
+
     public void actionPerformed(ActionEvent e)
+
     {
+
         adaptee.jButton1_actionPerformed(e);
+
     }
+
 }
 
 class frathread_jButton2_actionAdapter implements java.awt.event.ActionListener
+
 {
+
     frathread adaptee;
+
     frathread_jButton2_actionAdapter(frathread adaptee)
+
     {
+
         this.adaptee = adaptee;
+
     }
+
     public void actionPerformed(ActionEvent e)
+
     {
+
         adaptee.jButton2_actionPerformed(e);
+
     }
+
 }
-```
+
+
 
 如您所见，在 JBuilder 中使用线程与在 Java 中使用线程并没有什么不同。在您的大部分编程生涯中，您可能不需要多线程应用程序。希望阅读完本章后，您已经掌握了足够的基础知识，可以开始使用线程了。
-
-
 
 ### 总结
 
@@ -7824,7 +8340,7 @@ http://www.wordware.com
 5. **JFC 辅助功能特性的目的是什么？**
    *术语“辅助功能” simply 指的是使你的应用程序可供残障人士使用。*
 6. **列出任何四个关键 JFC 类。**
-   *JButton, JPanel, JMenu, JPopupMenu, JLabel, JRadioButton, JProgressBar, JScrollBar* (参见表 1.1)
+   *`JButton`, `JPanel`, `JMenu`, `JPopupMenu`, `JLabel`, `JRadioButton`, `JProgressBar`, `JScrollBar`* (参见表 1.1)
 7. **使用 Swing 而不是 AWT 的目的是什么？**
    *JFC/Swing GUI 类的全部目的是提供一组类，允许你创建平台独立的窗口组件。*
 8. **`BorderFactory` 类的目的是什么？**
@@ -7860,11 +8376,11 @@ http://www.wordware.com
 ### 第 3 章
 
 1. **本章列出的哪两个类*不允许*多行显示？**
-    *JTextField 和 JLabel*
+    *`JTextField` 和 `JLabel`*
 2. **你会使用哪个类来显示 HTML？**
-    *JEditorPane*
+    *`JEditorPane`*
 3. **如果你不想在屏幕上显示实际按键，你会使用哪个类？**
-    *JPasswordField*
+    *`JPasswordField`*
 4. **列出 `JTextField` 组件的两个方法。**
     *`setText()` 和 `getText()`* (参见表 3.2)
 5. **列出 `JPasswordField` 组件的两个方法。**
@@ -7872,397 +8388,296 @@ http://www.wordware.com
 6. **`JTextField` 和 `JTextArea` 的主要区别是什么？**
     *`JTextArea` 允许多行显示。*
 
+### 第 3 章 (续)
 
-
-# 第三章
-
-7. 什么是 EditorKit？
+7. **什么是 EditorKit？**
     *一种被多个输入组件使用的辅助类*
-
-8. 如何在 JTextArea 的末尾添加文本？
-    *使用 append 方法*
-
-9. 请说出 AWT TextArea 和 JFC JTextArea 的一个区别。
+8. **如何在 `JTextArea` 的末尾添加文本？**
+    *使用 `append` 方法*
+9. **请说出 AWT `TextArea` 和 JFC `JTextArea` 的一个区别。**
     *AWT 版本原生处理滚动，而 JFC 版本则不然。*
+10. **`JTextPane` 和 `JTextArea` 的主要区别是什么？**
+    *`JTextPane` 允许更多的格式化选项。*
 
-10. JTextPane 和 JTextArea 的主要区别是什么？
-    *JTextPane 允许更多的格式化选项。*
+### 第 4 章
 
-# 第四章
-
-1. 外观和感觉的三个选项是什么？
+1. **外观和感觉的三个选项是什么？**
     *CDE/Motif，Metallic，Windows*
-
-2. AWT 中有多少种布局管理器？
+2. **AWT 中有多少种布局管理器？**
     *五种*
-
-3. JFC 中有多少种布局管理器？
+3. **JFC 中有多少种布局管理器？**
     *十种*
-
-4. 如果你希望一次只显示一个组件或容器，哪种布局管理器最合适？
+4. **如果你希望一次只显示一个组件或容器，哪种布局管理器最合适？**
     *CardLayout 管理器*
-
-5. Grid 和 Gridbag 有什么区别？
+5. **Grid 和 Gridbag 有什么区别？**
     *使用 Grid 时，每一行必须有相同数量的字段。使用 Gridbag 时，每一行可以有不同数量的字段。*
-
-6. 哪些布局管理器只是将组件一个接一个地放置，直到达到容器的边缘？
+6. **哪些布局管理器只是将组件一个接一个地放置，直到达到容器的边缘？**
     *FlowLayout 和 VerticalFlowLayout*
-
-7. 哪种布局管理器用于将组件放置在精确的坐标位置？
+7. **哪种布局管理器用于将组件放置在精确的坐标位置？**
     *XYLayout 管理器*
-
-8. 哪种布局管理器具有像 East 和 North 这样的区域？
+8. **哪种布局管理器具有像 East 和 North 这样的区域？**
     *BorderLayout 管理器*
-
-9. 哪种布局管理器会根据容器上其他组件的大小来调整组件大小？
+9. **哪种布局管理器会根据容器上其他组件的大小来调整组件大小？**
     *PaneLayout 管理器*
-
-10. 列出 JFC 中的五种布局管理器。
+10. **列出 JFC 中的五种布局管理器。**
     *BorderLayout, BoxLayout2, CardLayout, FlowLayout, GridLayout, GridbagLayout, OverlayLayout, PaneLayout, VerticalFlowLayout, XYLayout*
 
-# 第五章
+### 第 5 章
 
-1. 说出 Swing 容器。
-    *JPanel, JScrollPane, JTabbedPane, JSplitPane, JBox*
-
-2. 最常用的容器是哪个？
-    *JPanel*
-
-3. 为了确保滚动条窗格始终显示垂直滚动条，你会设置什么属性？
-    *setHorizontalScrollBarPolicy 或 setScrollBarVerticalPolicy*
+1. **说出 Swing 容器。**
+    *`JPanel`, `JScrollPane`, `JTabbedPane`, `JSplitPane`, `JBox`*
+2. **最常用的容器是哪个？**
+    *`JPanel`*
+3. **为了确保滚动条窗格始终显示垂直滚动条，你会设置什么属性？**
+    *`setHorizontalScrollBarPolicy` 或 `setScrollBarVerticalPolicy`*
     示例：
-    `jScrollPane1.setHorizontalScrollBarPolicy(JScrollPane.HORIZONTAL_SCROLLBAR_ALWAYS);`
-
-4. 你能更改分割窗格中分隔线的大小吗？
-    *是的，使用 Divider_size 属性*
-
-5. 哪种容器用于在组件之间创建占位符和连接？
-    *Box*
-
-6. JBuilder 有几个版本的 Box 容器？
+    ```
+    jScrollPane1.setHorizontalScrollBarPolicy(JScrollPane.HORIZONTAL_SCROLLBAR_ALWAYS);
+    ```
+4. **你能更改分割窗格中分隔线的大小吗？**
+    *是的，使用 `Divider_size` 属性*
+5. **哪种容器用于在组件之间创建占位符和连接？**
+    *`Box`*
+6. **JBuilder 有几个版本的 Box 容器？**
     *两个：垂直和水平*
-
-7. 你会使用什么方法来移动滚动条？
+7. **你会使用什么方法来移动滚动条？**
     `setValue(int);`
 
-# 第六章
+### 第 6 章
 
-1. 从用户的角度来看，什么是事件？
+1. **从用户的角度来看，什么是事件？**
     *用户可以采取的任何行动：单击按钮、移动鼠标等。*
-
-2. 什么是事件处理程序？
+2. **什么是事件处理程序？**
     *响应事件的函数*
-
-3. 所有事件类的父类是什么？
-    *AWTEvent*
-
-4. 列出四种常见的事件类。
-    *ActionEvent, ComponentEvent, AdjustmentEvent, TextEvent, ItemEvent（见表 6.1）*
-
-5. 什么是监听器？
+3. **所有事件类的父类是什么？**
+    *`AWTEvent`*
+4. **列出四种常见的事件类。**
+    *`ActionEvent`, `ComponentEvent`, `AdjustmentEvent`, `TextEvent`, `ItemEvent`*（见表 6.1）*
+5. **什么是监听器？**
     *一种专门设计用于响应给定事件的特殊类*
-
-6. 使用内部类适配器的三个优点是什么？
+6. **使用内部类适配器的三个优点是什么？**
     - 代码是内联生成的，从而简化了代码。
     - 不会生成单独的类。
     - 内部类可以访问其声明作用域中的所有变量，而标准事件适配器只有公共和包级别访问权限。
-
-7. AWTEvent 类有多少个构造函数？
+7. **`AWTEvent` 类有多少个构造函数？**
     *两个*
 
-# 第七章
+### 第 7 章
 
-1. JComboBox 继承自哪个组件？
-    *JComponent*
-
-2. 本章中哪些组件允许多选？
-    *JCheckBox 和 JList*
-
-3. 对于组合框，你会使用什么方法在特定位置插入项目？
-    *insertItemAt*
-
-4. 什么时候滑块是理想的组件？
+1. **`JComboBox` 继承自哪个组件？**
+    *`JComponent`*
+2. **本章中哪些组件允许多选？**
+    *`JCheckBox` 和 `JList`*
+3. **对于组合框，你会使用什么方法在特定位置插入项目？**
+    *`insertItemAt`*
+4. **什么时候滑块是理想的组件？**
     *当你需要用户从一系列数值中选择时*
-
-5. 在什么情况下切换按钮是合适的组件？
+5. **在什么情况下切换按钮是合适的组件？**
     *当你需要用户从两个互斥的选项中选择一个时*
-
-6. 复选框和单选按钮的主要区别是什么？
+6. **复选框和单选按钮的主要区别是什么？**
     *复选框允许多选；单选按钮只允许用户选择一个选项。*
-
-7. 列表相对于组合框的主要优势是什么？
+7. **列表相对于组合框的主要优势是什么？**
     *组合框只允许用户选择一个项目，而列表允许多选。*
-
-8. 你会使用什么方法从列表中检索多个选择？
-    *getSelectedValues()*
-
-9. 该方法返回什么？
+8. **你会使用什么方法从列表中检索多个选择？**
+    *`getSelectedValues()`*
+9. **该方法返回什么？**
     *一个数组*
 
-# 第八章
+### 第 8 章
 
-1. 创建一个完整的下拉菜单需要哪些类？
-    *JMenuBar, JMenu, JMenuItem*
+1. **创建一个完整的下拉菜单需要哪些类？**
+    *`JMenuBar`, `JMenu`, `JMenuItem`*
+2. **`JMenuBar` 类的目的是什么？**
+    *为 `JMenu` 类实例关联提供一个基点或锚点*
+3. **如何添加一条分隔菜单项的线？**
+    *调用 `addSeparator` 方法*
+4. **如何清除菜单？**
+    *调用 `removeAll` 方法*
+5. **`JToolBar` 可以设置为可浮动的吗？**
+    *是的，使用 `setFloatable` 方法*
+6. **如何使工具栏最初显示为垂直而不是水平？**
+    *要么调用允许你设置方向的构造函数，要么调用 `setOrientation` 方法*
+7. **你能模拟用户单击菜单项吗？**
+    *可以，使用 `doClick` 方法*
+8. **新菜单项必须添加在当前菜单项列表的末尾吗？**
+    *不，你可以使用 `JMenuItem insert(JMenuItem mi, int pos)` 函数在任何你希望的位置插入菜单项。*
 
-2. JMenuBar 类的目的是什么？
-    *为 JMenu 类实例关联提供一个基点或锚点*
+### 第 9 章
 
-3. 如何添加一条分隔菜单项的线？
-    *调用 addSeparator 方法*
-
-4. 如何清除菜单？
-    *调用 removeAll 方法*
-
-5. JToolBar 可以设置为可浮动的吗？
-    *是的，使用 setFloatable 方法*
-
-6. 如何使工具栏最初显示为垂直而不是水平？
-    *要么调用允许你设置方向的构造函数，要么调用 setOrientation 方法*
-
-7. 你能模拟用户单击菜单项吗？
-    *可以，使用 doClick 方法*
-
-8. 新菜单项必须添加在当前菜单项列表的末尾吗？
-    *不，你可以使用 JMenuItem insert(JMenuItem mi, int pos) 函数在任何你希望的位置插入菜单项。*
-
-# 第九章
-
-1. 默认情况下，对话框是模态的还是非模态的？
+1. **默认情况下，对话框是模态的还是非模态的？**
     *非模态的*
-
-2. 说一个给定的对话框是模态的意味着什么？
+2. **说一个给定的对话框是模态的意味着什么？**
     *这意味着必须先处理该对话框，然后才能使用应用程序的任何其他部分。*
-
-3. showDialog 中的“this”参数代表什么？
+3. **`showDialog` 中的“this”参数代表什么？**
     *它是对话框父类的引用。*
-
-4. 在 JColorChooser 中选择颜色的三种方式是什么？
+4. **在 `JColorChooser` 中选择颜色的三种方式是什么？**
     *色板、HSB、RGB*
+5. **什么方法可以获取你使用 `JFileChooser` 选择的文件名？**
+    *`getName()`*
+6. **在 `JFileChooser` 中，如果用户选择“取消”按钮，会调用什么方法？**
+    *`cancelSelection()`*
+7. **你会使用什么方法来改变你用 `JColorChooser` 选择的颜色的强度？**
+    *`brighter()` 和 `darker()`*
 
-5. 什么方法可以获取你使用 JFileChooser 选择的文件名？
-    *getName()*
+### 第 10 章
 
-6. 在 JFileChooser 中，如果用户选择“取消”按钮，会调用什么方法？
-    *cancelSelection()*
-
-7. 你会使用什么方法来改变你用 JColorChooser 选择的颜色的强度？
-    *brighter() 和 darker()*
-
-# 第十章
-
-1. 如何创建 Graphics 类的实例？
-    *你必须使用你希望在其中显示图形的容器的 getGraphics 方法。*
-
-2. 列出 Graphics 类的任意四个方法。
-    *drawLine, drawArc, drawOval, drawRect, setColor, draw3DRect, drawRoundRect（见表 10.1）*
-
-3. Graphics 类继承自哪个类？
-    *Object*
-
-4. 如何填充你使用 Graphics 类绘制的矩形？
-    *使用 fillRect 方法*
-
-5. 传递给图形方法的数字代表什么？
+1. **如何创建 `Graphics` 类的实例？**
+    *你必须使用你希望在其中显示图形的容器的 `getGraphics` 方法。*
+2. **列出 `Graphics` 类的任意四个方法。**
+    *`drawLine`, `drawArc`, `drawOval`, `drawRect`, `setColor`, `draw3DRect`, `drawRoundRect`*（见表 10.1）*
+3. **`Graphics` 类继承自哪个类？**
+    *`Object`*
+4. **如何填充你使用 `Graphics` 类绘制的矩形？**
+    *使用 `fillRect` 方法*
+5. **传递给图形方法的数字代表什么？**
     *被绘制对象的起始和结束坐标*
-
-6. 如何清除 Graphics 类实例所做的所有绘图？
-    *调用 dispose 方法*
-
-7. 在 Graphics 类坐标系中，点 0,0 代表什么？
+6. **如何清除 `Graphics` 类实例所做的所有绘图？**
+    *调用 `dispose` 方法*
+7. **在 `Graphics` 类坐标系中，点 0,0 代表什么？**
     *原点，左上角*
+8. **如何更改 `Graphics` 类实例正在使用的颜色？**
+    *调用 `setColor` 方法*
 
-8. 如何更改 Graphics 类实例正在使用的颜色？
-    *调用 setColor 方法*
+### 第 11 章
 
-# 第十一章
-
-1. 什么是结果集？
+1. **什么是结果集？**
     *执行 SQL 语句后返回的记录集*
-
-2. 什么是 dbSwing？
+2. **什么是 dbSwing？**
     *一组数据感知类，是各种 Swing 组件的子类*
-
-3. Connection 类的目的是什么？
+3. **`Connection` 类的目的是什么？**
     *表示与底层数据源的实际连接*
-
-4. 为什么在首次连接到数据源时必须使用 ResultSet 类的 next 方法？
+4. **为什么在首次连接到数据源时必须使用 `ResultSet` 类的 `next` 方法？**
     *因为结果集最初指向一个不确定的位置*
-
-5. Statement 类的 execute 方法的目的是什么？
+5. **`Statement` 类的 `execute` 方法的目的是什么？**
     *在底层数据源上执行任何有效的 SQL 语句*
+6. **列出 `ResultSet` 类的任意三个方法。**
+    *`deleterow`, `close`, `next`, `previous`, `first`, `last`, `inserrow`, `getrow`, `getarray`*（见表 11.1）*
+7. **不进行特定错误处理，你能使用 `java.sql` 中的类吗？**
+    *不能，这些类必须包含在它们自己的 `try/catch` 块中。*
+8. **为了使用 `Connection`、`ResultSet` 和 `Statement` 等类，你需要导入哪个包？**
+    *`import java.sql.*;`*
 
-6. 列出 ResultSet 类的任意三个方法。
-    *deleterow, close, next, previous, first, last, inserrow, getrow, getarray*（见表 11.1）
+### 第 12 章
 
-7. 不进行特定错误处理，你能使用 java.sql 中的类吗？
-    *不能，这些类必须包含在它们自己的 try/catch 块中。*
-
-8. 为了使用 Connection、ResultSet 和 Statement 等类，你需要导入哪个包？
-    *import java.sql.\*;*
-
-复习题答案
-351
-
-# 第十二章
-
-1. 什么是小程序？
+1. **什么是小程序？**
     *可以在 Web 浏览器上下文中运行的 Java 应用程序*
-
-2. 所有小程序的四个函数是什么？
-    *init、start、stop 和 destroy*
-
-3. 所有小程序类必须扩展什么？
-    *Applet*
-
-4. 什么是参数？
+2. **所有小程序的四个函数是什么？**
+    *`init`、`start`、`stop` 和 `destroy`*
+3. **所有小程序类必须扩展什么？**
+    *`Applet`*
+4. **什么是参数？**
     *从包含小程序的 HTML 页面传递给你的小程序的变量*
-
-5. 如何将参数从 HTML 传递到你的小程序？
-    *使用 param 标签 — &lt;param name = “something” value = “somevalue”&gt;*
-
-6. 什么是独立小程序？
+5. **如何将参数从 HTML 传递到你的小程序？**
+    *使用 `param` 标签 — `<param name = “something” value = “somevalue”>`*
+6. **什么是独立小程序？**
     *也可以作为应用程序运行的小程序*
+7. **如何创建一个独立小程序？**
+    *通过添加一个构造函数和一个 `main` 函数*
 
-7. 如何创建一个独立小程序？
-    *通过添加一个构造函数和一个 main 函数*
+### 第 13 章
 
+8. **哪个小程序函数最不常被小程序程序员重写和使用？**
+    *`destroy`*
+1. **`Graphics2D` 类位于哪个包中？**
+    *`java.awt`*
+2. **在使用 `Graphics2D` 类之前，必须对其执行什么操作？**
+    *将一个标准 `Graphics` 对象进行强制类型转换*
+    示例：
+    ```
+    Graphics2D g2 = (Graphics2D) g;
+    ```
+3. **渲染过程包含哪些步骤？**
+    1. 确定渲染内容。
+    2. 确定渲染颜色。
+    3. 将渲染操作限制在当前裁剪区域内。
+    4. 应用颜色。
+4. **渲染操作有哪些类型？**
+    - 形状操作
+    - 文本操作
+    - 图像操作
+5. **传递给 `Font` 类的哪个值会使字体变为粗体？**
+    *值 1*
+6. **请至少列出 Java 2D API 处理的一项功能。**
+    - 处理一系列几何图元，如矩形、曲线和椭圆
+    - 提供渲染几乎任何几何形状的机制
+    - 为显示设备和打印机提供统一的渲染模型
+    - 提供对形状、文本和图像进行命中检测的机制
+    - 增强的颜色支持
+    - 支持打印复杂文档
+7. **渲染操作期间，图像的哪个区域由什么决定？**
+    *图像的区域由源图像的边界框定义。*
+8. **什么是双重缓冲？**
+    *在双重缓冲中，图形元素被渲染到屏幕外的 `BufferedImage` 中，然后通过调用 `Graphics2D drawImage` 方法复制到屏幕上。*
 
+### 第 14 章
 
-# 第13章
-
-#### 8. 哪个小程序函数最不常被小程序程序员重写和使用？
-
-销毁
-
-#### 1. `Graphics2D`类位于哪个包中？
-
-Java.awt
-
-#### 2. 在使用`Graphics2D`类之前，必须对其执行什么操作？
-
-将一个标准`Graphics`对象进行强制类型转换
-
-示例：
-`Graphics2D g2 = (Graphics2D) g;`
-
-#### 3. 渲染过程包含哪些步骤？
-
-1.  确定渲染内容。
-2.  确定渲染颜色。
-3.  将渲染操作限制在当前裁剪区域内。
-4.  应用颜色。
-
-#### 4. 渲染操作有哪些类型？
-
--   形状操作
--   文本操作
--   图像操作
-
-#### 5. 传递给`Font`类的哪个值会使字体变为粗体？
-
-值1
-
-#### 6. 请至少列出Java 2D API处理的一项功能。
-
--   处理一系列几何图元，如矩形、曲线和椭圆
--   提供渲染几乎任何几何形状的机制
--   为显示设备和打印机提供统一的渲染模型
--   提供对形状、文本和图像进行命中检测的机制
--   增强的颜色支持
--   支持打印复杂文档
-
-#### 7. 渲染操作期间，图像的哪个区域由什么决定？
-
-图像的区域由源图像的边界框定义。
-
-#### 8. 什么是双重缓冲？
-
-在双重缓冲中，图形元素被渲染到屏幕外的`BufferedImage`中，然后通过调用`Graphics2D drawImage`方法复制到屏幕上。
-
-# 第14章
-
-#### 1. 什么是线程？
-
-应用程序内存空间内的一个子进程
-
-#### 2. 单线程规则的四个例外情况是什么？
-
--   使用主线程
--   使用`init`
--   使用`repaint`和`revalidate`
--   使用监听器线程
-
-#### 3. 什么是单线程规则？
-
-一旦一个Swing组件被实现（realized），所有可能影响或依赖该组件状态的代码都应在事件分派线程中执行。
-
-#### 4. `SwingUtilities`类提供了哪两种方法来帮助确保线程安全？
-
--   `invokeLater`
--   `invokeAndWait`
-
-#### 5. 不安全的线程处理可能导致哪两个问题？
-
-如果一个线程更改变量的值，访问该变量的其他线程将获得更改后的值，而不是原始值。同样重要的是要注意，由于它们在相同的内存空间中，如果一个线程崩溃，整个应用程序（即其所有线程）都会崩溃。
-
-#### 6. “进程”的另一个术语是什么？
-
-内存空间
-
-#### 7. 说一个组件已被“实现”（realized）是什么意思？
-
-实现（Realized）简单来说，就是指该组件已被绘制在屏幕上，或者已准备好进行绘制。
-
-#### 8. 在自己的类中实现线程的两种方法是什么？
-
--   继承`java.lang.Thread`类
--   实现`java.lang.Runnable`接口
+1. **什么是线程？**
+    *应用程序内存空间内的一个子进程*
+2. **单线程规则的四个例外情况是什么？**
+    - 使用主线程
+    - 使用 `init`
+    - 使用 `repaint` 和 `revalidate`
+    - 使用监听器线程
+3. **什么是单线程规则？**
+    *一旦一个 Swing 组件被实现，所有可能影响或依赖该组件状态的代码都应在事件分派线程中执行。*
+4. **`SwingUtilities` 类提供了哪两种方法来帮助确保线程安全？**
+    - `invokeLater`
+    - `invokeAndWait`
+5. **不安全的线程处理可能导致哪两个问题？**
+    *如果一个线程更改变量的值，访问该变量的其他线程将获得更改后的值，而不是原始值。同样重要的是要注意，由于它们在相同的内存空间中，如果一个线程崩溃，整个应用程序（即其所有线程）都会崩溃。*
+6. **“进程”的另一个术语是什么？**
+    *内存空间*
+7. **说一个组件已被“实现”是什么意思？**
+    *实现简单来说，就是指该组件已被绘制在屏幕上，或者已准备好进行绘制。*
+8. **在自己的类中实现线程的两种方法是什么？**
+    - 继承 `java.lang.Thread` 类
+    - 实现 `java.lang.Runnable` 接口
 
 # 附录 D
 
 ## 数据库编程简介
 
-本书第11章介绍了使用JFC进行数据库编程。大多数读者可能对基本的数据库概念相当熟悉。但是，对于那些可能不熟悉这些概念或需要复习的读者，我们提供了这个附录。
+本书第 11 章介绍了使用 JFC 进行数据库编程。大多数读者可能对基本的数据库概念相当熟悉。但是，对于那些可能不熟悉这些概念或需要复习的读者，我们提供了这个附录。
 
 大多数商业编程在某种程度上都是数据库编程。员工控制程序不是数据库程序吗？销售点或库存控制程序不是数据库程序吗？作为一名专业程序员，要取得长远发展，几乎不可避免地需要进行某种数据库编程。
 
 ### 数据库简介
 
-本节旨在让你对使用Microsoft Access创建表有一个非常简要的介绍。Access是当今市场上最受欢迎的关系数据库系统之一（至少对于中小型数据库而言）。但首先让我定义一些数据库术语：
+本节旨在让你对使用 Microsoft Access 创建表有一个非常简要的介绍。Access 是当今市场上最受欢迎的关系数据库系统之一（至少对于中小型数据库而言）。但首先让我定义一些数据库术语：
 
-*字段（Field）*：这是特定的数据项，如姓氏、地址、电话等。在SQL Server或Oracle中，这被称为列。
+*字段：* 这是特定的数据项，如姓氏、地址、电话等。在 SQL Server 或 Oracle 中，这被称为列。
 
-*记录（Record）*：这是特定条目的所有字段。例如，构成单个员工档案的所有字段构成一条记录。
+*记录：* 这是特定条目的所有字段。例如，构成单个员工档案的所有字段构成一条记录。
 
-*表（Table）*：这是存储在一起的相关记录。例如，所有员工的所有记录可能存储在一个Employee表中。
+*表：* 这是存储在一起的相关记录。例如，所有员工的所有记录可能存储在一个 Employee 表中。
 
-*数据库（Database）*：这是存储在一起的相关表。例如，Employee表、Inventory表和Finance表可能存储在一个常见的小型企业数据库中。
+*数据库：* 这是存储在一起的相关表。例如，Employee 表、Inventory 表和 Finance 表可能存储在一个常见的小型企业数据库中。
 
-*关系数据库管理系统（Relational Database Management System）*：RDBMS指的是相互关联的数据。假设你有一个包含员工数据的数据库。对于每个员工，你都会希望有一份工作描述。如果你有20个人具有相同的工作描述（例如20个Java程序员）怎么办？你真的想把工作描述重写20遍吗？在关系数据库模型中，你只需有一个工作描述表，Employee表中每个员工的记录都与他或她的工作描述相关联或链接。这大大减少了数据库所需的开销，也为你的数据库提供了一个非常逻辑化的布局。
+*关系数据库管理系统：* RDBMS 指的是相互关联的数据。假设你有一个包含员工数据的数据库。对于每个员工，你都会希望有一份工作描述。如果你有 20 个人具有相同的工作描述（例如 20 个 Java 程序员）怎么办？你真的想把工作描述重写 20 遍吗？在关系数据库模型中，你只需有一个工作描述表，Employee 表中每个员工的记录都与他或她的工作描述相关联或链接。这大大减少了数据库所需的开销，也为你的数据库提供了一个非常逻辑化的布局。
 
-这种存储数据的方法与以前使用的平面文件（flat file）不同。平面文件只是简单地存储信息，一条记录接一条记录。文本文档就是平面文件的一个例子。记录或字段之间没有关系。这会导致数据文件异常庞大，并且包含大量重复数据。执行搜索也相当困难。
+这种存储数据的方法与以前使用的平面文件不同。平面文件只是简单地存储信息，一条记录接一条记录。文本文档就是平面文件的一个例子。记录或字段之间没有关系。这会导致数据文件异常庞大，并且包含大量重复数据。执行搜索也相当困难。
 
 ## 创建数据库/表
 
-要在Access中执行此操作，首先通过选择“Blank Access Database”（如图D.1所示）开始一个全新的空白数据库。
+要在 Access 中执行此操作，首先通过选择“Blank Access Database”（如图 D.1 所示）开始一个全新的空白数据库。
 
 ![图 D.1 开始使用 MS Access](img/6ac84fdff518ea769f07b6e3d911391e_372_0.png)
 
 > **注意：** 你可以让向导为你创建整个数据库，但这将无法让你学到太多关于数据库结构的知识。
 
-然后系统会询问你将该数据库保存在何处以及如何命名。做出这些选择后，你应该会看到一个类似于图D.2所示的对话框。
+然后系统会询问你将该数据库保存在何处以及如何命名。做出这些选择后，你应该会看到一个类似于图 D.2 所示的对话框。
 
 ![图 D.2 保存新数据库的对话框](img/6ac84fdff518ea769f07b6e3d911391e_372_1.png)
 
-点击**创建（Create）**。要创建新表，请选择**表（Tables）, 新建（New）**，然后选择**在设计视图中创建表（Create table in Design view）**。这在图D.3中有展示。
+点击**创建**。要创建新表，请选择**表、新建**，然后选择**在设计视图中创建表**。这在图 D.3 中有展示。
 
 ![图 D.3 在设计视图中创建新表](img/6ac84fdff518ea769f07b6e3d911391e_373_0.png)
 
-你现在看到的是一个用于设计数据库表的网格。这在图D.4中有展示。
+你现在看到的是一个用于设计数据库表的网格。这在图 D.4 中有展示。
 
 ![图 D.4 表设计网格](img/6ac84fdff518ea769f07b6e3d911391e_373_1.png)
 
-继续我们前面段落中开始的表，让我们为姓（Last Name）、名（First Name）、街道地址（Street Address）、城市（City）、州（State）、邮政编码（Zip Code）、电话号码（Phone Number）和电子邮件（Email）创建字段。你也可以在这里添加一个字段，例如“Entry Key”，然后右键单击它并选择“主键（Primary Key）”，或者你可以等到关闭设计视图时，系统会提示你让Access为你创建一个主键。主键是用于唯一标识数据库中每条记录的字段。你的表应该看起来类似于图D.5中描绘的图像。
+继续我们前面段落中开始的表，让我们为姓、名、街道地址、城市、州、邮政编码、电话号码和电子邮件创建字段。你也可以在这里添加一个字段，例如“Entry Key”，然后右键单击它并选择“主键”，或者你可以等到关闭设计视图时，系统会提示你让 Access 为你创建一个主键。主键是用于唯一标识数据库中每条记录的字段。你的表应该看起来类似于图 D.5 中描绘的图像。
 
 ![图 D.5 完成的表](img/6ac84fdff518ea769f07b6e3d911391e_374_0.png)
 
@@ -8270,22 +8685,23 @@ Java.awt
 
 ## SQL
 
-既然你已经了解了如何在MS Access中创建简单的数据库和表，现在是时候向你介绍SQL了，即结构化查询语言。SQL是用来与关系数据库通信的语言。数据库设计的关系数据库模型由E.F. Codd博士于1969年发明，并于1985年在《Computer World》杂志上发表。
+既然你已经了解了如何在 MS Access 中创建简单的数据库和表，现在是时候向你介绍 SQL 了，即结构化查询语言。SQL 是用来与关系数据库通信的语言。数据库设计的关系数据库模型由 E.F. Codd 博士于 1969 年发明，并于 1985 年在《Computer World》杂志上发表。
 
-SQL于1974年首次在IBM的圣何塞研究实验室实现。SQL本质上是一种非过程化语言，使用类似英语的词语与数据库对话。美国国家标准协会（ANSI）不断更新其SQL标准版本。
+SQL 于 1974 年首次在 IBM 的圣何塞研究实验室实现。SQL 本质上是一种非过程化语言，使用类似英语的词语与数据库对话。美国国家标准协会（ANSI）不断更新其 SQL 标准版本。
 
-你可以在Java中创建SQL语句并将其传递给数据源。考虑以下示例：
+你可以在 Java 中创建 SQL 语句并将其传递给数据源。考虑以下示例：
 
 ```
 String sz_sql;
+
 sz_sql = "SELECT * FROM mytable ";
 ```
 
-这里我们使用一个字符串变量，并将其设置为等于一条SQL（发音为S-Q-L或sequel）语句。星号（*）符号是“所有内容”的计算机简写。所以基本上我们告诉数据控件给我们名为mytable的表中的所有记录。大写字母并非绝对必要，但这是一个常用的约定。
+这里我们使用一个字符串变量，并将其设置为等于一条 SQL（发音为 S-Q-L 或 sequel）语句。星号（*）符号是“所有内容”的计算机简写。所以基本上我们告诉数据控件给我们名为 mytable 的表中的所有记录。大写字母并非绝对必要，但这是一个常用的约定。
 
-在继续之前，你应该认识到结构化查询语言*不是*Java（或任何其他编程语言）的一部分；这就是为什么我们必须将SQL语句放在字符串中。它是关系数据库使用的语言。大多数关系数据库都使用结构化查询语言，包括MS Access、MS SQL Server、Oracle、MS Access和Sybase SQL Anywhere。
+在继续之前，你应该认识到结构化查询语言*不是* Java（或任何其他编程语言）的一部分；这就是为什么我们必须将 SQL 语句放在字符串中。它是关系数据库使用的语言。大多数关系数据库都使用结构化查询语言，包括 MS Access、MS SQL Server、Oracle、MS Access 和 Sybase SQL Anywhere。
 
-通常你会遇到一个更复杂的SQL语句，包含如下子句：
+通常你会遇到一个更复杂的 SQL 语句，包含如下子句：
 
 ```
 "....WHERE [state] =California"
@@ -8296,79 +8712,6 @@ sz_sql = "SELECT * FROM mytable ";
 ```
 "SELECT [field1],[field2],..... FROM [sometable] WHERE
 [somefield] = SomeCriteria"
-```
-
-
-
-# 附录 E
-
-## HTML 入门
-
-本附录旨在提供一份相当简明的 HTML 教程。HTML 是网络的语言，对于任何基于网络的项目都至关重要。本书第 12 章涵盖了小程序，它们恰好是在网页内运行的。许多读者可能已经熟悉 HTML，完全可以跳过本附录。它仅为那些缺乏任何 HTML 背景知识或需要简短复习的读者提供。
-
-HTML，即超文本标记语言，是一种相对简单的标记语言，网络浏览器可以使用它来显示网页。你可以在任何文本编辑器中编写 HTML 代码；我个人使用 Windows 记事本。保存文件时，只需记住将其保存为 .htm 或 .html 文件。浏览器能识别 .htm 和 .html 扩展名的文件，并会在其中查找有效的 HTML 代码。HTML 历史悠久，经历了多次修订。每一次后续修订都为 HTML 添加了更多功能，而当前版本（截至本书出版时）的 HTML（版本 4.0）是一门功能非常强大的语言，需要花些时间来学习。幸运的是，大多数网页工作只需使用 HTML 的基础知识即可完成，而这正是本附录要教给你的。
-
-> **注意：** HTML 中的许多标签*必须*闭合。例如，`<B>` 标签必须用 `</B>` 闭合。然而，像 `<TD>` 和 `<TR>` 这样的标签则不必闭合。一些 HTML 程序员还是喜欢闭合它们。我不这样做。
-
-第一个问题是，我们如何让网络浏览器知道我们的文档中有供其阅读的 HTML 代码？HTML 代码由*标签*组成，这些标签告知浏览器如何处理某些文本。在文档开头，你放置命令 `<HTML>`，在末尾放置 `</HTML>`。这样网络浏览器就知道这两个标签之间的代码应该是 HTML：
-
-```
-<HTML>
-    put HTML code here
-</HTML>
-```
-
-你不得不承认这非常简单。但这个网页做不了多少事情。那么，我们来完成每个编程书都会以之开始的“Hello World”示例吧。它将向你展示如何创建一个包含一些基本 HTML 格式的简单网页。
-
-```
-<HTML>
-<HEAD>
-    <TITLE>My First HTML Page</TITLE>
-</HEAD>
-<BODY>
-<P><CENTER>
-    <B><FONT SIZE="+2">Hello World</FONT></B>
-</CENTER>
-</BODY>
-</HTML>
-```
-
-信不信由你，这个简短的示例向你展示了你需要了解的关于 HTML 的大部分内容。首先，注意所有内容都包含在 `<HTML>` 和 `</HTML>` 标签之间。这两个命令定义了 HTML 文档的开始和结束。网络浏览器会忽略这些命令之外的任何项目。接下来，我们有一个包含在 `<HEAD>` 和 `</HEAD>` 命令之间的部分。这是你 HTML 文档的头部部分。`<TITLE>` 和 `</TITLE>` 命令包含实际上将出现在浏览器标题栏中的标题。
-
-然后我们有 `<BODY>` 和 `</BODY>` 命令。正如你可能猜到的，这是你 HTML 文档的主体。你的大部分网页代码将放在这里。现在在主体部分内，我们有一些文本和一些额外的代码，用于定义文本在浏览器中的显示方式。`<P>` 命令定义了一个段落的开始和结束。`<B>` 和 `</B>` 命令告诉浏览器将它们之间的任何文本设置为粗体。`<FONT SIZE="+2">` 命令告诉浏览器文本应该有多大（有多种方法可以实现，我们将会看到）。`</FONT>` 命令结束了 HTML 代码的字体部分。如果你正确输入了 HTML 代码，你应该能够在任何浏览器中查看你的网页，并看到与图 E.1 非常相似的图像。
-
-![](img/6ac84fdff518ea769f07b6e3d911391e_380_0.png)
-
-图 E.1 一个基本的 HTML 文档
-
-到现在，我希望你已经注意到一个规律。所有命令都有一个开始命令和一个结束命令。嗯，对于绝大多数 HTML 命令来说确实如此。只需记住这个规则：你以与打开命令相反的顺序关闭它们。注意在上面的示例代码中，我在文本之前打开命令，像这样：<P><CENTER><B><FONT SIZE="+2">。然后我这样关闭它们：</FONT></B></CENTER>。（注意 `<P>` 不必闭合。）记住这点很重要。你可以将此视为“退出”你的命令。
-
-### 图像和超链接
-
-我们目前得到的是一个非常简单的网页，以粗体文本显示一个短语。诚然，这并不十分令人印象深刻，但如果你理解了使用这些 HTML 命令的相关概念，那么你基本上就理解了 HTML。现在让我们扩展你的 HTML 知识。通常网页包含的内容远不止一个标题和一些文本。你可能在网页中放置的其他项目包括图像和指向其他网页的链接。在 HTML 文档上放置图像相当简单：
-
-```
-<IMG SRC="imagepath\imagename" WIDTH=52 HEIGHT=88 ALIGN=bottom>
-```
-
-你只需提供图像的路径和图像的名称，包括其文件扩展名（例如 .gif、.bmp、.jpg 等）。此命令中的其他属性允许你更改图像的位置和大小。你可以更改其宽度和高度以及对齐方式。
-
-还要注意，当你第一次在 HTML 页面上放置图像时，它周围会有一个边框。你可以通过在标签中添加“BORDER=0”来去除它，如本例所示：
-
-```
-<IMG SRC="somepic.gif" BORDER=0>
-```
-
-放置指向另一个网站或电子邮件地址的超链接同样简单：
-
-```
-<A HREF="http://www.wordware.com">
-```
-
-此链接将连接到引号中包含的 URL（统一资源定位符）。要使用此方法创建电子邮件链接，只需使用以下格式：
-
-```
-<A HREF="mailto:sombody@somemail.com">
 ```
 
 WHERE 子句表示某些条件。基本上，你是说如果满足特定标准，你想要所有指定的字段。
@@ -8408,30 +8751,129 @@ strSQL = "SELECT DISTINCT..."
 
 这仅仅是对结构化查询语言的一个简要实用介绍。它应该能让你开始运行，以便在程序中使用 SQL。我强烈建议你在编程职业生涯的早期就认真学习更多关于 SQL 的知识。
 
+# 附录 E
 
+## HTML 入门
 
-你只需将 http:// 部分改为 mailto:。请注意，前述的三种方法有一个共同点：它们没有像其他 HTML 命令那样以典型方式结束命令。现在让我们来查看一个简单但完整的 HTML 文档的源代码：
+本附录旨在提供一份相当简明的 HTML 教程。HTML 是网络的语言，对于任何基于网络的项目都至关重要。本书第 12 章涵盖了小程序，它们恰好是在网页内运行的。许多读者可能已经熟悉 HTML，完全可以跳过本附录。它仅为那些缺乏任何 HTML 背景知识或需要简短复习的读者提供。
+
+HTML，即超文本标记语言，是一种相对简单的标记语言，网络浏览器可以使用它来显示网页。你可以在任何文本编辑器中编写 HTML 代码；我个人使用 Windows 记事本。保存文件时，只需记住将其保存为 .htm 或 .html 文件。浏览器能识别 .htm 和 .html 扩展名的文件，并会在其中查找有效的 HTML 代码。HTML 历史悠久，经历了多次修订。每一次后续修订都为 HTML 添加了更多功能，而当前版本（截至本书出版时）的 HTML（版本 4.0）是一门功能非常强大的语言，需要花些时间来学习。幸运的是，大多数网页工作只需使用 HTML 的基础知识即可完成，而这正是本附录要教给你的。
+
+> **注意：** HTML 中的许多标签*必须*闭合。例如，`<B>` 标签必须用 `</B>` 闭合。然而，像 `<TD>` 和 `<TR>` 这样的标签则不必闭合。一些 HTML 程序员还是喜欢闭合它们。我不这样做。
+
+第一个问题是，我们如何让网络浏览器知道我们的文档中有供其阅读的 HTML 代码？HTML 代码由*标签*组成，这些标签告知浏览器如何处理某些文本。在文档开头，你放置命令 `<HTML>`，在末尾放置 `</HTML>`。这样网络浏览器就知道这两个标签之间的代码应该是 HTML：
 
 ```
 <HTML>
+
+    put HTML code here
+
+</HTML>
+```
+
+你不得不承认这非常简单。但这个网页做不了多少事情。那么，我们来完成每个编程书都会以之开始的“Hello World”示例吧。它将向你展示如何创建一个包含一些基本 HTML 格式的简单网页。
+
+```
+<HTML>
+
 <HEAD>
- <TITLE>Using Images And Links in HTML</TITLE>
+
+    <TITLE>My First HTML Page</TITLE>
+
 </HEAD>
-<BODY BGCOLOR=white>
-<P>
-<CENTER><B><FONT SIZE="+2">My First Web Page with Links!
-</FONT></B></CENTER>
-<P>I am learning HTML !. I <B><I>LOVE</I></B> HTML!
-<P><CENTER><IMG SRC="java.gif"></CENTER>
-<P>
-<P><CENTER>You can email me at</CENTER>
-<P>
-<CENTER><A HREF="mailto:chuckeasttom@yahoo.com">Email ME</A>
+
+<BODY>
+
+<P><CENTER>
+
+    <B><FONT SIZE="+2">Hello World</FONT></B>
+
 </CENTER>
-<P><CENTER>Or go to this publisher's Web Site </CENTER>
-<P><CENTER><A HREF="http://www.wordware.com">Wordware
-Publishing</A></CENTER>
+
 </BODY>
+
+</HTML>
+```
+
+信不信由你，这个简短的示例向你展示了你需要了解的关于 HTML 的大部分内容。首先，注意所有内容都包含在 `<HTML>` 和 `</HTML>` 标签之间。这两个命令定义了 HTML 文档的开始和结束。网络浏览器会忽略这些命令之外的任何项目。接下来，我们有一个包含在 `<HEAD>` 和 `</HEAD>` 命令之间的部分。这是你 HTML 文档的头部部分。`<TITLE>` 和 `</TITLE>` 命令包含实际上将出现在浏览器标题栏中的标题。
+
+然后我们有 `<BODY>` 和 `</BODY>` 命令。正如你可能猜到的，这是你 HTML 文档的主体。你的大部分网页代码将放在这里。现在在主体部分内，我们有一些文本和一些额外的代码，用于定义文本在浏览器中的显示方式。`<P>` 命令定义了一个段落的开始和结束。`<B>` 和 `</B>` 命令告诉浏览器将它们之间的任何文本设置为粗体。`<FONT SIZE="+2">` 命令告诉浏览器文本应该有多大（有多种方法可以实现，我们将会看到）。`</FONT>` 命令结束了 HTML 代码的字体部分。如果你正确输入了 HTML 代码，你应该能够在任何浏览器中查看你的网页，并看到与图 E.1 非常相似的图像。
+
+![](img/6ac84fdff518ea769f07b6e3d911391e_380_0.png)
+
+图 E.1 一个基本的 HTML 文档
+
+到现在，我希望你已经注意到一个规律。所有命令都有一个开始命令和一个结束命令。嗯，对于绝大多数 HTML 命令来说确实如此。只需记住这个规则：你以与打开命令相反的顺序关闭它们。注意在上面的示例代码中，我在文本之前打开命令，像这样：`<P><CENTER><B><FONT SIZE="+2">`。然后我这样关闭它们：`</FONT></B></CENTER>`。（注意 `<P>` 不必闭合。）记住这点很重要。你可以将此视为“退出”你的命令。
+
+### 图像和超链接
+
+我们目前得到的是一个非常简单的网页，以粗体文本显示一个短语。诚然，这并不十分令人印象深刻，但如果你理解了使用这些 HTML 命令的相关概念，那么你基本上就理解了 HTML。现在让我们扩展你的 HTML 知识。通常网页包含的内容远不止一个标题和一些文本。你可能在网页中放置的其他项目包括图像和指向其他网页的链接。在 HTML 文档上放置图像相当简单：
+
+```
+<IMG SRC="imagepath\imagename" WIDTH=52 HEIGHT=88 ALIGN=bottom>
+```
+
+你只需提供图像的路径和图像的名称，包括其文件扩展名（例如 .gif、.bmp、.jpg 等）。此命令中的其他属性允许你更改图像的位置和大小。你可以更改其宽度和高度以及对齐方式。
+
+还要注意，当你第一次在 HTML 页面上放置图像时，它周围会有一个边框。你可以通过在标签中添加“BORDER=0”来去除它，如本例所示：
+
+```
+<IMG SRC="somepic.gif" BORDER=0>
+```
+
+放置指向另一个网站或电子邮件地址的超链接同样简单：
+
+```
+<A HREF="http://www.wordware.com">
+```
+
+此链接将连接到引号中包含的 URL（统一资源定位符）。要使用此方法创建电子邮件链接，只需使用以下格式：
+
+```
+<A HREF="mailto:sombody@somemail.com">
+```
+
+你只需将 `http://` 部分改为 `mailto:`。请注意，前述的三种方法有一个共同点：它们没有像其他 HTML 命令那样以典型方式结束命令。现在让我们来查看一个简单但完整的 HTML 文档的源代码：
+
+```
+<HTML>
+
+<HEAD>
+
+ <TITLE>Using Images And Links in HTML</TITLE>
+
+</HEAD>
+
+<BODY BGCOLOR=white>
+
+<P>
+
+<CENTER><B><FONT SIZE="+2">My First Web Page with Links!
+
+</FONT></B></CENTER>
+
+<P>I am learning HTML !. I <B><I>LOVE</I></B> HTML!
+
+<P><CENTER><IMG SRC="java.gif"></CENTER>
+
+<P>
+
+<P><CENTER>You can email me at</CENTER>
+
+<P>
+
+<CENTER><A HREF="mailto:chuckeasttom@yahoo.com">Email ME</A>
+
+</CENTER>
+
+<P><CENTER>Or go to this publisher's Web Site </CENTER>
+
+<P><CENTER><A HREF="http://www.wordware.com">Wordware
+
+Publishing</A></CENTER>
+
+</BODY>
+
 </HTML>
 ```
 
@@ -8479,15 +8921,25 @@ Publishing</A></CENTER>
 
 ```
 <TABLE BORDER=1>
+
   <TR>
+
     <TD>
+
       <P>This
+
       <P>Is a
+
   <TR>
+
     <TD>
+
       <P>Table
+
     <TD>
+
       <P>With a border
+
 </TABLE>
 ```
 
@@ -8497,16 +8949,27 @@ Publishing</A></CENTER>
 
 ```
 <P><TABLE BORDER=0 CELLSPACING=0 CELLPADDING=0>
+
   <TR>
+
     <TD>
+
       <P>This
+
     <TD>
+
       <P>is a
+
   <TR>
+
     <TD>
+
       <P>Table
+
     <TD>
+
       <P>With no borders or padding
+
 </TABLE>
 ```
 
@@ -8518,8 +8981,11 @@ Publishing</A></CENTER>
 
 ```
 <UL>
+
   <LI> First Item
+
   <LI> Second Item
+
 </UL>
 ```
 
@@ -8528,8 +8994,11 @@ Publishing</A></CENTER>
 
 ```
 <OL type = I>
+
     <LI> First Item
+
     <LI> Second Item
+
 </OL>
 ```
 
@@ -8574,7 +9043,9 @@ Publishing</A></CENTER>
 
 ```
 <applet
+
     code = "thejavaclass.class">
+
 </applet>
 ```
 
@@ -8584,31 +9055,47 @@ Publishing</A></CENTER>
 
 ```
 <HTML>
+
 <HEAD>
+
     <TITLE>Applet Stuff</TITLE>
+
 </HEAD>
+
 <BODY BGCOLOR = white>
+
 <CENTER>Applet stuff
+
     <HR>
+
 <MARQUEE LOOP = INFINITE>
+
 <APPLET
+
     CODE ="myapplet.class"
+
     HEIGHT = "120"
+
     WIDTH = "200"
+
     HSPACE = "20"
+
     VSPACE = "20">
+
     </APPLET>
+
 </MARQUEE>
+
 </CENTER>
+
 </BODY>
+
 </HTML>
 ```
 
 如你所见，代码确实非常简单。只是使用一些新标签将你的小程序放入 HTML 页面。在这个例子中，我们的小程序是居中的，并且在跑马灯内！这意味着我们的小程序将不断在 HTML 页面的中心滚动。
 
 > **注意：** 有些人花很多钱购买网页开发软件。就我个人而言，我认为彻底了解 HTML、Java 小程序和一些脚本语言（如 JavaScript）足以创建任何你喜欢的网页效果。只需使用这些免费工具，加上一点创造力，你就不需要昂贵的网页开发软件包了！
-
-
 
 ## 索引
 
@@ -8619,7 +9106,7 @@ Publishing</A></CENTER>
   - 动作监听器，143
   - 适配器类，144
   - 匿名内部类适配器，144
-  - Applet 类，272
+  - `Applet` 类，272
   - 小程序生命周期函数，272
   - 小程序向导，275-277
   - 小程序，271-272
@@ -8637,7 +9124,7 @@ Publishing</A></CENTER>
     - 组件类，16
     - 容器类，16-17
     - 布局管理器，21-23
-  - AWTEvent 类，
+  - `AWTEvent` 类，
     - 构造函数，142
     - 方法，141-142
     - 子类，140-141
@@ -8649,8 +9136,8 @@ Publishing</A></CENTER>
     - 使用，22
   - 边界布局管理器 (JFC)，87, 90
     - 示例，91-99
-  - 盒子容器，*参见* JBox
-  - BoxLayout2 管理器，87, 106
+  - 盒子容器，*参见* `JBox`
+  - `BoxLayout2` 管理器，87, 106
   - 按钮，添加，77
 
 - **C**
@@ -8658,18 +9145,18 @@ Publishing</A></CENTER>
   - 卡片布局管理器 (AWT)，21
   - 卡片布局管理器 (JFC)，87, 107
     - 示例，107-110
-  - 复选框，*参见* JCheckBox
+  - 复选框，*参见* `JCheckBox`
   - 类，
     - JFC，7-9
     - Swing，7-9
   - 时钟示例，278-285, 285-293
-  - Color 类
+  - `Color` 类
     - 构造函数，222-223
     - 方法，222
-  - 调色板，*参见* JColorChooser
+  - 调色板，*参见* `JColorChooser`
   - 颜色，向 HTML 文档添加，368-369
-  - 组合框，*参见* JComboBox
-  - Component 类，15
+  - 组合框，*参见* `JComboBox`
+  - `Component` 类，15
   - 组件布局，21
   - 组件，15
     - 输入组件，51-52
@@ -8678,15 +9165,15 @@ Publishing</A></CENTER>
     - 管理，21-23
     - Swing 组件，5-6, 7
     - 用户选择，148
-  - Connection 接口，254
+  - `Connection` 接口，254
     - 方法，254-255
   - 容器，15-16
     - 创建，17-18
-  - Container 类，16
+  - `Container` 类，16
   - 容器类 (AWT)，16-17
   - 容器组件 (JFC)，118-119
   - 转换应用程序示例，200-208
-  - 坐标空间和 Graphics2D 类，308-310
+  - 坐标空间和 `Graphics2D` 类，308-310
 
 - **D**
   - 数据库，356
@@ -8694,13 +9181,13 @@ Publishing</A></CENTER>
     - 示例，259-267
   - 数据库连接，实现，257-259
   - 数据库编程概念，355-356
-  - dbSwing，267-268
+  - `dbSwing`，267-268
     - 类，268
     - 与 JBuilder 一起使用，267-269
-  - Dialog 类，16
+  - `Dialog` 类，16
     - 构造函数，213-214
     - 方法，213
-  - 对话框，211-212 *另请参见* Dialog 类
+  - 对话框，211-212 *另请参见* `Dialog` 类
     - 创建，216-217
     - 示例，217-220
     - 使用，214-216
@@ -8710,79 +9197,35 @@ Publishing</A></CENTER>
     - 创建，294-298
 
 - **E**
-  - EditorKit，73
+  - `EditorKit`，73
   - 事件处理器，139
     - 示例，25-27
   - 事件处理，24-25, 139
-  - EventAdapter 类，143
+  - `EventAdapter` 类，143
   - 事件分发线程，321
   - 事件，139-140
     - 应用，142-144
     - 在 JBuilder 中使用，143-144
-  - 示例
-    - 向小程序添加 AWT 组件，19-21
-    - 向应用程序添加 AWT 组件，18-19
-    - 向小程序添加参数，285-293
-    - 转换应用程序，200-208
-    - 在 JBuilder 中创建小程序，274-277
-    - 创建计算器，35-50
-    - 创建时钟，278-285, 285-293
-    - 创建数据库，259-267
-    - 创建对话框，217-220
-    - 创建双用途小程序，294-298
-    - 创建 JFC/Swing 小程序，278-285
-    - 创建菜单，192-194
-    - 创建工具栏，196-200
-    - 使用 Java 2D API 显示图像，312-315
-    - 实现数据库连接，257-259
-    - 使用 BorderLayout 和 GridLayout，91-99
-    - 使用 CardLayout，107-110
-    - 使用事件，25-27
-    - 使用 FileChooser，230-233
-    - 使用 FlowLayout 和 VerticalFlowLayout，104-106
-    - 使用 Graphics 类，239-244
-    - 使用 Graphics 类创建条形图，245-250
-    - 使用 JBuilder，28-35
-    - 使用 JButton，79-82
-    - 使用 JCheckBox，161-164
-    - 使用 JColorChooser，224-228
-    - 使用 JComboBox，167-171
-    - 使用 JList，173-176
-    - 使用 JMenu、JMenuBar 和 JMenuItem，186-189
-    - 使用 JRadioButton，150-155
-    - 使用 JScrollPane，128-131
-    - 使用 JSlider，177-181
-    - 使用 JSplitPane，133-136
-    - 使用 JTabbedPane，123-126
-    - 使用 JTextField，55-63
-    - 使用 JTextField、JLabel 和 JTextArea，69-73
-    - 使用 JToggleButton，156-158
-    - 使用布局，23-24
-    - 使用 PaneLayout，111-113
-    - 使用 Graphics2D 类，302-308
-    - 使用线程，327-332
-    - 使用 XYLayout，100-103
 
 - **F**
   - 字段，355
-  - 文件选择器，*参见* JFileChooser
+  - 文件选择器，*参见* `JFileChooser`
   - 流式布局管理器 (AWT)，22
   - 流式布局管理器 (JFC)，87, 103
     - 示例，104-106
-  - Frame 类，16
 
 - **G**
-  - Graphics 类，235-239
+  - `Graphics` 类，235-239
     - 示例，239-244, 245-250
     - 方法，237-239
-  - Graphics2D 类，300
+  - `Graphics2D` 类，300
     - 和坐标空间，308-310
     - 示例，302-308
     - 方法，301
     - 渲染过程，310-312
     - 使用，301
-  - GridbagLayout 管理器 (AWT)，21
-  - GridbagLayout 管理器 (JFC)，88, 111
+  - `GridbagLayout` 管理器 (AWT)，21
+  - `GridbagLayout` 管理器 (JFC)，88, 111
   - 网格布局管理器 (AWT)，21
   - 网格布局管理器 (JFC)，88, 91
     - 示例，91-99
@@ -8818,42 +9261,42 @@ Publishing</A></CENTER>
     - 用于显示图像，312
   - Java 开发工具包，*参见* JDK
   - Java 基础类，*参见* JFC
-  - java.sql 包，
+  - `java.sql` 包，
     - 类，254
     - 使用，256-259
-  - JBorderFactory，8
-  - JBox，119, 136-137
+  - `JBorderFactory`，8
+  - `JBox`，119, 136-137
     - 方法，136
   - JBuilder，
     - 在其中创建小程序，274-277
     - 使用，28-35
     - 在其中使用事件，143-144
     - 用于创建计算器应用程序，35-50
-    - 与 dbSwing 一起使用，267-269
+    - 与 `dbSwing` 一起使用，267-269
     - 与 Swing 一起使用，254-257
     - 与线程一起使用，327-332
-  - JButton 类，77
+  - `JButton` 类，77
     - 构造函数，78
     - 示例，79-82
     - 方法，77-78
     - 属性，77-78
-  - JCheckBox，8, 148, 159-161
+  - `JCheckBox`，8, 148, 159-161
     - 构造函数，159-160
     - 示例，161-164
     - 方法，160
-  - JCheckBoxMenuItem，8
-  - JColorChooser，8, 220-224
+  - `JCheckBoxMenuItem`，8
+  - `JColorChooser`，8, 220-224
     - 构造函数，222
     - 示例，224-228
     - 实现，223-224
     - 方法，221
-  - JComboBox，8, 148, 164-167
+  - `JComboBox`，8, 148, 164-167
     - 构造函数，165-166
     - 示例，167-171
     - 方法，166
-  - JComponent，8
+  - `JComponent`，8
   - JDK，2
-  - JEditorPane，52, 75-77
+  - `JEditorPane`，52, 75-77
     - 方法，76
   - JFC，2-3, 5
     - 类，7-9
@@ -8863,96 +9306,96 @@ Publishing</A></CENTER>
     - 特性，2
     - 布局管理器，87-88
   - JFC/Swing 小程序，创建，278-285
-  - JFileChooser，8, 228-230
+  - `JFileChooser`，8, 228-230
     - 构造函数，230
     - 示例，230-233
     - 方法，229
-  - JFrame，8
-  - JImageIcon，8
-  - JLabel，8, 52, 65-67
+  - `JFrame`，8
+  - `JImageIcon`，8
+  - `JLabel`，8, 52, 65-67
     - 构造函数，66-67
     - 示例，69-73
     - 方法，66
-  - JList，8, 148, 171-173
+  - `JList`，8, 148, 171-173
     - 构造函数，171
     - 示例，173-176
     - 方法，172
-  - JMenu，8, 184-185
+  - `JMenu`，8, 184-185
     - 构造函数，191
     - 示例，186-189
     - 方法，189-190
-  - JMenuBar，8, 184-185
+  - `JMenuBar`，8, 184-185
     - 示例，186-189
     - 方法，184-185
-  - JMenuItem，8, 184-185
+  - `JMenuItem`，8, 184-185
     - 构造函数，192
     - 示例，186-189
     - 方法，189-190, 191
-  - JOptionPane，8
-  - JPanel，8, 118, 119-121
+  - `JOptionPane`，8
+  - `JPanel`，8, 118, 119-121
     - 构造函数，120
     - 方法，120
     - 属性，120
-  - JPasswordField，8, 52, 64-65
+  - `JPasswordField`，8, 52, 64-65
     - 构造函数，65
     - 方法，64
     - 属性，64
-  - JPopupMenu，8, 184
-  - JProgressBar，8
-  - JRadioButton，8, 148-149
+  - `JPopupMenu`，8, 184
+  - `JProgressBar`，8
+  - `JRadioButton`，8, 148-149
     - 示例，150-155
     - 方法，149
     - 属性，149
-  - JRadioButtonMenuItem，8
-  - JScrollBar，8
-  - JScrollPane，9, 119, 126-128
+  - `JRadioButtonMenuItem`，8
+  - `JScrollBar`，8
+  - `JScrollPane`，9, 119, 126-128
     - 构造函数，127-128
     - 示例，128-131
     - 方法，126
     - 属性，126
-  - JSeparator，9
-  - JSlider，9, 148, 176-177
+  - `JSeparator`，9
+  - `JSlider`，9, 148, 176-177
     - 构造函数，176-177
     - 示例，177-181
-  - JSplitPane，9, 119, 131-132
+  - `JSplitPane`，9, 119, 131-132
     - 构造函数，132
     - 示例，133-136
     - 方法，131
     - 属性，131
-  - JTabbedPane，9, 118, 121-123
+  - `JTabbedPane`，9, 118, 121-123
     - 示例，123-126
     - 方法，121-122
     - 属性，121-122
-  - JTable，9
-  - JTextArea，9, 52, 67-69
+  - `JTable`，9
+  - `JTextArea`，9, 52, 67-69
     - 构造函数，68
     - 示例，69-73
     - 方法，68
-  - JTextField，9, 52, 52-55
+  - `JTextField`，9, 52, 52-55
     - 构造函数，54-55
     - 示例，55-63, 69-73
     - 方法，53-54
-  - JTextPane，52, 73-75
+  - `JTextPane`，52, 73-75
     - 构造函数，75
     - 方法，74
-  - JToggleButton，9, 148, 155-156
+  - `JToggleButton`，9, 148, 155-156
     - 示例，156-158
-  - JToolBar，9
+  - `JToolBar`，9
     - 构造函数，195
     - 方法，195
-  - JToolTip，9
-  - JTree，9
+  - `JToolTip`，9
+  - `JTree`，9
 
 - **L**
-  - 标签，*参见* JLabel
-  - Layout 接口，88
+  - 标签，*参见* `JLabel`
+  - `Layout` 接口，88
     - 方法，89
   - 布局管理器，21-23
     - JFC，87-88
-  - LayoutManager 接口，21
+  - `LayoutManager` 接口，21
   - 布局，使用，23-24
   - 轻量级组件，6
-  - 列表，*参见* JList
+  - 列表，*参见* `JList`
   - 监听器，142
   - 列表，将其放入 HTML 文档，370-371
   - 外观和感觉，4, 85-86
@@ -8961,103 +9404,87 @@ Publishing</A></CENTER>
 
 - **M**
   - 跑马灯，将其放入 HTML 文档，371-372
-  - 菜单，184-185 *另请参见* JMenuBar
+  - 菜单，184-185 *另请参见* `JMenuBar`
     - 创建，185-189, 192-194
   - Microsoft Access，355
   - 多线程应用程序，323
 
 - **O**
   - 对象图库对话框，28-29
-  - OverlayLayout 管理器，88, 111
+  - `OverlayLayout` 管理器，88, 111
 
 - **P**
-  - Panel 类，17
-  - 面板容器，*参见* JPanel
-  - PaneLayout 管理器，88, 111
+  - `Panel` 类，17
+  - 面板容器，*参见* `JPanel`
+  - `PaneLayout` 管理器，88, 111
     - 示例，111-113
   - 密码，输入，64-65
 
+- **R**
+  - 单选按钮，*参见* `JRadioButton`
+  - 关系数据库管理系统，356
+  - 记录，356
+  - 关系数据库管理系统，*参见* RDMS
+  - 使用 `Graphics2D` 类进行渲染的过程，310-312
+  - 资源，335-337
+  - `ResultSet` 接口，254
+    - 方法，256
 
+- **S**
+  - 滚动窗格容器，*参见* `JScrollPane`
+  - `Scrollable` 接口，67
+  - 单线程规则，319-320
+    - 例外情况，320-321
+  - 滑块，*参见* `JSlider`
+  - 分割窗格容器，*参见* `JSplitPane`
+  - SQL，360-362
+  - `Statement` 接口，254
+    - 方法，255
+  - 结构化查询语言，*参见* SQL
+  - Swing，2-3
+    - 类，7-9
+    - 组件层次结构，6
+    - 特性，2
+    - 与 JBuilder 配合使用，254-227
+  - Swing 组件，5-7
+    - 优点，5-6
+  - SwingSet 演示程序，10-11
 
-## 索引
+- **T**
+  - 选项卡窗格容器，*参见* `JTabbedPane`
+  - 表格，356
+    - 创建，357-359
+    - 在 HTML 文档中放置，369-370
+  - 文本，
+    - 选择样式，75-77
+    - 输入，52-55
+    - 输入多行文本，67-69
+    - 格式化，73-75
+  - `Thread` 类，323-327
+    - 方法，324
+  - 线程，317-318
+    - 示例，327-332
+    - 在 Java 中的使用，318-319, 323-327
+  - 切换按钮，*参见* `JToggleButton`
+  - 工具栏，194-195 *另见* `JToolBar`
+    - 创建，196-200
+  - 顶层显示，17
 
--   平台独立性，114-115
--   可插拔的外观，4
--   进程，317
--   项目向导，56-57
+- **U**
+  - 用户选择组件，148
+  - 用户输入组件，51-52
+  - 用户界面，14
 
-### R
+- **V**
+  - `VerticalFlowLayout` 布局管理器，88, 103, 104-106
 
--   单选按钮，*参见* JRadioButton
--   关系数据库管理系统，356
--   记录，356
--   关系数据库管理系统，*参见* RDMS
--   使用 Graphics2D 类进行渲染的过程，310-312
--   资源，335-337
--   ResultSet 接口，254
-    -   方法，256
+- **W**
+  - 网页，*参见* HTML 文档
+  - `Window` 类，16
 
-### S
-
--   滚动窗格容器，*参见* JScrollPane
--   Scrollable 接口，67
--   单线程规则，319-320
-    -   例外情况，320-321
--   滑块，*参见* JSlider
--   分割窗格容器，*参见* JSplitPane
--   SQL，360-362
--   Statement 接口，254
-    -   方法，255
--   结构化查询语言，*参见* SQL
--   Swing，2-3
-    -   类，7-9
-    -   组件层次结构，6
-    -   特性，2
-    -   与 JBuilder 配合使用，254-227
--   Swing 组件，5-7
-    -   优点，5-6
--   SwingSet 演示程序，10-11
-
-### T
-
--   选项卡窗格容器，*参见* JTabbedPane
--   表格，356
-    -   创建，357-359
-    -   在 HTML 文档中放置，369-370
--   文本，
-    -   选择样式，75-77
-    -   输入，52-55
-    -   输入多行文本，67-69
-    -   格式化，73-75
--   Thread 类，323-327
-    -   方法，324
--   线程，317-318
-    -   示例，327-332
-    -   在 Java 中的使用，318-319, 323-327
--   切换按钮，*参见* JToggleButton
--   工具栏，194-195 *另见* JToolBar
-    -   创建，196-200
--   顶层显示，17
-
-### U
-
--   用户选择组件，148
--   用户输入组件，51-52
--   用户界面，14
-
-### V
-
--   VerticalFlowLayout 布局管理器，88, 103, 104-106
-
-### W
-
--   网页，*参见* HTML 文档
--   Window 类，16
-
-### X
-
--   XYLayout 布局管理器，88, 100
-    -   示例，100-103
+- **X**
+  - `XYLayout` 布局管理器，88, 100
+    - 示例，100-103
 
 ### 想了解更多？
 
@@ -9144,12 +9571,12 @@ Borland 解决方案合作伙伴资源指南为软件产品和服务提供商提
 
 通过第一期杂志，您将了解为何 **Delphi Informant 杂志** 是世界领先的 Delphi 开发出版物。您还会看到为何 **DelphiZine.com** 是世界上最全面、最有价值的 Delphi 开发信息资源。
 
--   完整的 Delphi 6 报道
--   提示、技巧和技术
--   即用型代码示例
--   Web 和数据库开发
--   实际解决方案
--   COM+、MTS、LDAP 等
+- 完整的 Delphi 6 报道
+- 提示、技巧和技术
+- 即用型代码示例
+- Web 和数据库开发
+- 实际解决方案
+- COM+、MTS、LDAP 等
 
 ### Delphi Informant 杂志合集 CD-ROM
 
@@ -9159,11 +9586,11 @@ Borland 解决方案合作伙伴资源指南为软件产品和服务提供商提
 
 ### Delphi 开发者必备的终极参考资源 *包含*：**(1995-2000)**
 
--   1995 年至 2000 年间发表在 **Delphi Informant 杂志** 上的超过 500 篇技术文章、产品评论、书评及其他内容
--   CD-ROM 上所有文章的快速文本搜索功能
--   每篇文章的所有配套代码、示例和工具
--   便于导航的书签
--   ...以及更多内容
+- 1995 年至 2000 年间发表在 **Delphi Informant 杂志** 上的超过 500 篇技术文章、产品评论、书评及其他内容
+- CD-ROM 上所有文章的快速文本搜索功能
+- 每篇文章的所有配套代码、示例和工具
+- 便于导航的书签
+- ...以及更多内容
 
 ### 立即致电！
 
@@ -9185,18 +9612,19 @@ www.wordware.com/files/jbuilder
 
 ## JBUILDER® 8.0 JFC 和 Swing 编程
 
-Borland 的 JBuilder 简化了使用 Java 创建专业应用程序的过程。最新版本的 Java——Java 2，提供了对 Java 基础类 (JFC) 和 Swing 类的访问，这两者共同使得在 Java 程序中创建平台独立的图形界面成为可能。*《JBuilder® 8.0 JFC 和 Swing 编程》* 介绍了用于处理事件、促进用户交互以及在容器上排列组件的各种 JFC 和 Swing 组件，并通过各种示例演示了这些主题。本书还涵盖了向应用程序添加菜单、工具栏和对话框，以及在 Swing 中处理线程的内容。每章都包含复习题，以确保掌握了基本概念。
+Borland 的 JBuilder 简化了使用 Java 创建专业应用程序的过程。最新版本的 Java——Java 2，提供了对 Java 基础类 (JFC) 和 Swing 类的访问，这两者共同使得在 Java 程序中创建平台独立的图形界面成为可能。《JBuilder® 8.0 JFC 和 Swing 编程》介绍了用于处理事件、促进用户交互以及在容器上排列组件的各种 JFC 和 Swing 组件，并通过各种示例演示了这些主题。本书还涵盖了向应用程序添加菜单、工具栏和对话框，以及在 Swing 中处理线程的内容。每章都包含复习题，以确保掌握了基本概念。
 
 *关于作者：* **Chuck Easttom** 是德克萨斯州达拉斯一所私立两年制技术学院计算机信息系统系的系主任。他拥有多年使用 Java、JavaScript、Visual Basic、C 和 C++ 进行专业软件开发的经验，其职业生涯包括在金融行业进行软件咨询以及电信软件产品和 Web 开发。他还是 *Learn JavaScript* 和 *Advanced JavaScript, Second Edition*（均由 Wordware Publishing 出版）的作者。
 
--   了解 JFC 和 Swing 类如何扩展抽象窗口工具包。
--   发现如何使用布局管理器更改应用程序的外观。
--   了解 Graphics 类如何允许您执行各种图形渲染。
--   学习如何使用 JFC 和 JBuilder 创建数据库应用程序和小程序。
--   探索 Java 2D API 的功能，该 API 提供了增强的二维图形、文本和图像处理能力。
+- 了解 JFC 和 Swing 类如何扩展抽象窗口工具包。
+- 发现如何使用布局管理器更改应用程序的外观。
+- 了解 `Graphics` 类如何允许您执行各种图形渲染。
+- 学习如何使用 JFC 和 JBuilder 创建数据库应用程序和小程序。
+- 探索 Java 2D API 的功能，该 API 提供了增强的二维图形、文本和图像处理能力。
 
 附带文件可从 www.wordware.com/files/jbuilder 下载。
 
 | 级别 | 中级/高级 |
 |---|---|
 | 类别 | JBuilder/Java |
+

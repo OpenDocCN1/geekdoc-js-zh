@@ -1,10 +1,11 @@
+
+
 # JavaScript 编码基础：专家建议，轻松掌握（每日轻松指南）
 
-
-
-
 FLAME TREE PUBLISHING
+
 Adam Crute
+
 前言：Chris Brown
 
 一本简单易用且实用的 JavaScript 基础指南。
@@ -51,6 +52,7 @@ document.write("I have " + myExperience + " years experience");
 ```
 
 ## ADAM CRUTE
+
 系列前言 作者：CHRIS BROWN
 
 读者，你好 JavaScript —— JavaScript，你好读者。
@@ -74,6 +76,7 @@ document.write("I have " + myExperience + " years experience");
 但不要只听我说……请翻页。
 
 Chris Brown
+
 Linux 大使及培训顾问
 
 ## 简介
@@ -94,7 +97,7 @@ JavaScript 语言自万维网诞生之初就一直陪伴着我们。在早期，
 
 ### 在线示例
 
-你可以下载本书所有代码示例的完整版本以及附加笔记。请访问 www.flametreepublishing.com/book-samples.html。
+你可以下载本书所有代码示例的完整版本以及附加笔记。请访问`www.flametreepublishing.com/book-samples.html`。
 
 ### 核心提示
 
@@ -102,18 +105,19 @@ JavaScript 语言自万维网诞生之初就一直陪伴着我们。在早期，
 
 ## 初识 JavaScript
 
-### JAVASCRIPT, HTML 和 CSS
+### JavaScript、HTML 和 CSS
 
 开发网页主要使用三种核心语言：HTML 提供底层结构和内容；CSS 提供视觉场景；而 JavaScript，嗯，JavaScript 提供了赋予整体生命的魔力。
 
 ### 开始之前
 
-本书仅关注 JavaScript，但该语言与 Web 浏览器和网页紧密相连，如果不依赖于 HTML 和 CSS 的先验知识，就无法讨论它。如果你还没有这些知识，*Coding HTML & CSS Basics* 将帮助你快速掌握必要的技能。
+本书仅关注 JavaScript，但该语言与 Web 浏览器和网页紧密相连，如果不依赖于 HTML 和 CSS 的先验知识，就无法讨论它。如果你还没有这些知识，`Coding HTML & CSS Basics` 将帮助你快速掌握必要的技能。
 
 > **核心提示**
+>
 > 如果在 HTML 和 CSS 的上下文中，你理解元素（element）、属性（attribute）、开始和结束标签（opening and closing tags）、选择器（selectors）和样式规则（style rules）等术语的含义，那么你可以开始学习 JavaScript 了。
 
-左图：*Coding HTML & CSS Basics* 将帮助你快速掌握必要的知识，从而轻松深入学习本书的内容。
+左图：`Coding HTML & CSS Basics` 将帮助你快速掌握必要的知识，从而轻松深入学习本书的内容。
 
 #### 浏览器兼容性
 
@@ -124,11 +128,10 @@ JavaScript 语言自万维网诞生之初就一直陪伴着我们。在早期，
 本书中的所有示例均使用标准的 JavaScript 编程技术和结构。然而，为了避开任何令人厌烦的浏览器兼容性问题，我们将使用 Firefox 浏览器运行所有示例，并鼓励你也这样做。
 
 > **核心提示**
+>
 > 请参阅第 7 页，了解如何下载本书所有代码示例的完整版本。这些文件包含有助于进一步解释示例的附加笔记。
 
-上图：目前可用的最符合标准的 Web 浏览器之一，如此精美，我们强烈建议你安装一个，你可以从 www.mozilla.org 下载。
-
-
+上图：目前可用的最符合标准的 Web 浏览器之一，如此精美，我们强烈建议你安装一个，你可以从`www.mozilla.org`下载。
 
 ## 什么是 JavaScript？
 
@@ -140,7 +143,7 @@ JavaScript 是一种脚本语言，用于与加载到 Web 浏览器中的页面�
 
 ![](img/9f289ad67d43b98b3bcc0d91197bccf6_7_0.png)
 
-*左图：* 脚本告诉演员应该在何时、何地做什么——当然，这里的演员是指计算机数据和图形。
+左图：脚本告诉演员应该在何时、何地做什么——当然，这里的演员是指计算机数据和图形。
 
 ## JavaScript 在客户端运行
 
@@ -152,7 +155,7 @@ JavaScript 是一种脚本语言，用于与加载到 Web 浏览器中的页面�
 
 ![](img/9f289ad67d43b98b3bcc0d91197bccf6_7_1.png)
 
-*上图：* JavaScript 直接与加载到用户浏览器中的页面呈现进行交互。
+上图：JavaScript 直接与加载到用户浏览器中的页面呈现进行交互。
 
 ## 为什么在页面中包含脚本？
 
@@ -196,14 +199,17 @@ Adobe Dreamweaver 使用纯文本编写代码（见图 - 不要使用富文本�
 
 ### 流行的跨平台 IDE
 
-- **Adobe Dreamweaver**。在 Web 开发方面，Dreamweaver 是业界的标杆（daddy）。但在价格方面它也是“老大哥”，尤其是考虑到 Adobe 备受争议的仅限订阅的许可模式。请审慎权衡你的选择。www.adobe.com
+- **Adobe Dreamweaver**。在 Web 开发方面，Dreamweaver 是业界的标杆（daddy）。但在价格方面它也是“老大哥”，尤其是考虑到 Adobe 备受争议的仅限订阅的许可模式。请审慎权衡你的选择。`www.adobe.com`
 
 > **实用技巧**
+>
 > 如果在 Mac 上使用 TextEdit 作为 JavaScript 编辑器，请务必在输入任何内容之前将所有新文档切换到纯文本模式。
 
-- **Komodo IDE**。这是一个功能齐全的商业 IDE，单用户许可费用为 $99.6775（截至撰写本文时），由于其简洁、不凌乱的界面和停靠操作而非常受欢迎。http://komodoide.com
-- **Komodo Edit**。这是 Komodo IDE 的精简版本，可免费下载使用，是体验 IDE 优势的绝佳选择。http://komodoide.com/komodo-edit
-- **Eclipse**。这个强大的 IDE 可以支持多种不同的语言，包括 HTML、CSS 和 JavaScript。它可以免费下载使用，但对于初学者来说可能过于复杂。www.eclipse.org
+- **Komodo IDE**。这是一个功能齐全的商业 IDE，单用户许可费用为 $99.6775（截至撰写本文时），由于其简洁、不凌乱的界面和停靠操作而非常受欢迎。`http://komodoide.com`
+
+- **Komodo Edit**。这是 Komodo IDE 的精简版本，可免费下载使用，是体验 IDE 优势的绝佳选择。`http://komodoide.com/komodo-edit`
+
+- **Eclipse**。这个强大的 IDE 可以支持多种不同的语言，包括 HTML、CSS 和 JavaScript。它可以免费下载使用，但对于初学者来说可能过于复杂。`www.eclipse.org`
 
 ![](img/9f289ad67d43b98b3bcc0d91197bccf6_9_1.png)
 
@@ -214,11 +220,11 @@ Adobe Dreamweaver 使用纯文本编写代码（见图 - 不要使用富文本�
 
 ## 将脚本添加到页面
 
-我们使用 HTML 元素 `<script>` 将脚本添加到页面。该元素的 `type` 属性必须始终为 "text/javascript"。该元素应始终使用闭合标签 `</script>` 结束。
+我们使用 HTML 元素`<script>`将脚本添加到页面。该元素的`type`属性必须始终为`"text/javascript"`。该元素应始终使用闭合标签`</script>`结束。
 
 ### 嵌入式 JavaScript
 
-要嵌入脚本，我们只需在 `<script>` 的开始和结束标签之间编写指令。这样脚本就与该页面（且仅该页面）内在绑定。
+要嵌入脚本，我们只需在`<script>`的开始和结束标签之间编写指令。这样脚本就与该页面（且仅该页面）内在绑定。
 
 ```html
 1 <!DOCTYPE html>
@@ -236,13 +242,13 @@ Adobe Dreamweaver 使用纯文本编写代码（见图 - 不要使用富文本�
 13  </html>
 ```
 
-上图：HTML `<script>` 元素可以包含一个嵌入式脚本或链接到一个外部脚本文件。
+上图：HTML`<script>`元素可以包含一个嵌入式脚本或链接到一个外部脚本文件。
 
 ![](img/9f289ad67d43b98b3bcc0d91197bccf6_10_0.png)
 
 ### 链接式 JavaScript
 
-将脚本链接到页面是很常见的做法。为此，将脚本编写在单独的文本文件中，并保存为 `.js` 文件名扩展名。然后使用 `<script>` 元素的 `src` 属性将脚本链接到页面。
+将脚本链接到页面是很常见的做法。为此，将脚本编写在单独的文本文件中，并保存为`.js`文件名扩展名。然后使用`<script>`元素的`src`属性将脚本链接到页面。
 
 例如：
 
@@ -258,18 +264,19 @@ src="myScript.js"></script>
 
 ### 解释器
 
-当浏览器遇到 `<script type="text/javascript">` 元素时，脚本的内容会立即传递给浏览器的 JavaScript 解释器（称为执行脚本）。解释器的任务是理解脚本并指示浏览器采取相应行动。当解释器完成脚本执行后，控制权将返回给浏览器，然后浏览器继续处理页面。
+当浏览器遇到`<script type="text/javascript">`元素时，脚本的内容会立即传递给浏览器的 JavaScript 解释器（称为执行脚本）。解释器的任务是理解脚本并指示浏览器采取相应行动。当解释器完成脚本执行后，控制权将返回给浏览器，然后浏览器继续处理页面。
 
 ![](img/9f289ad67d43b98b3bcc0d91197bccf6_10_1.png)
 
 ## 你的第一个脚本
 
-1. 创建一个新 HTML 文件并添加基本的结构元素 `<htmlrangle>`、`<head>` 和 `<body>`。将文件保存在方便的位置，并将其命名为 `myFirstScript.html`。
-2. 在 `<body>` 元素中添加一个 `<script>` 元素。在本例中，我们将开始和结束标签放在单独的行上，中间留一个空行。
-3. 在脚本元素中输入以下命令：`document.write("<p>Hello World!</p>");`。该命令将文本输出到页面，就像我们直接将其输入到页面中一样（这就是为什么我们也包含了 `<p>` 元素标签的原因）。
+1. 创建一个新 HTML 文件并添加基本的结构元素`<htmlrangle>`、`<head>`和`<body>`。将文件保存在方便的位置，并将其命名为`myFirstScript.html`。
+2. 在`<body>`元素中添加一个`<script>`元素。在本例中，我们将开始和结束标签放在单独的行上，中间留一个空行。
+3. 在脚本元素中输入以下命令：`document.write("<p>Hello World!</p>");`。该命令将文本输出到页面，就像我们直接将其输入到页面中一样（这就是为什么我们也包含了`<p>`元素标签的原因）。
 4. 保存页面，然后通过双击文件或右键单击并选择“打开方式”，然后选择 Firefox 来在 Firefox 中打开它。
 
 > **实用技巧**
+>
 > 我们经常使用“代码”（code）和“编码”（coding）这两个术语——前者是指你输入到脚本中的文本，而后者是指编写脚本的过程。
 
 ```html
@@ -291,18 +298,17 @@ src="myScript.js"></script>
 
 ## 工作原理
 
-恭喜——你刚刚编写并执行了你的第一个脚本。当浏览器遇到 `<script>` 元素时，脚本被传递给了解释器。解释器识别出 `document.write` 命令，并将括号（或在编程术语中称为圆括号）中包含的文本写入页面。文本必须包含在引号中，解释器才能将其识别为文本——如果你看到的只是一个空白页面，很可能是你漏掉了引号。
+恭喜——你刚刚编写并执行了你的第一个脚本。当浏览器遇到`<script>`元素时，脚本被传递给了解释器。解释器识别出`document.write`命令，并将括号（或在编程术语中称为圆括号）中包含的文本写入页面。文本必须包含在引号中，解释器才能将其识别为文本——如果你看到的只是一个空白页面，很可能是你漏掉了引号。
 
 > **实用技巧**
+>
 > 关于编程语言的书籍习惯于将 “Hello World!” 作为书中第一个练习的输出——你现在正式加入了开发者的行列！
 
 右图：你已经通过了入职测试——欢迎加入！
 
 ![](img/9f289ad67d43b98b3bcc0d91197bccf6_11_0.png)
 
-
-
-## JAVASCRIPT 中的数据
+## JavaScript 中的数据
 
 ## 什么是数据？
 
@@ -312,22 +318,24 @@ src="myScript.js"></script>
 
 任何数据片段都可以说具有一个值。这个值可以是简单的——例如一个数字或一段文本——也可以是复杂的，比如一个数字列表或多个段落。无论数据类型如何，该数据所代表的信息都被称为该数据的“值”。
 
-## 字面量 (Literals)
+## 字面量（Literals）
 
-字面量是直接在脚本中输入且具有特定值的片段。以下都是字面量的示例：`"Hello World"`、`true`、`42 和 `null`。
 
-## 标识符 (Identifiers)
+
+
+字面量是直接在脚本中输入且具有特定值的片段。以下都是字面量的示例：`"Hello World"`、`true`、`42` 和 `null`。
+
+## 标识符（Identifiers）
 
 标识符是一个分配给数据片段（或函数——见第 81 页的“具名函数”）的区分大小写的名称。一旦分配，标识符就可以在脚本中用来引用该数据（或函数）。只要遵守几条基本规则，JavaScript 允许你自由选择用作标识符的名称。
 
-```
-3  
-4  myNumberLiteral = 42;
-5  myStringLiteral = "Hello World";
-6  myBooleanLiteral = true;
-7  myNullLiteral = null;
-8  
-9  
+```javascript
+3 4  myNumberLiteral = 42;
+5    myStringLiteral = "Hello World";
+6    myBooleanLiteral = true;
+7    myNullLiteral = null;
+8
+9
 ```
 
 *上图：字面量值直接输入到脚本中。*
@@ -335,12 +343,10 @@ src="myScript.js"></script>
 ## 标识符命名规则
 
 - **保留字：** JavaScript 定义了一些对语言具有特殊含义的单词（见第 50 页）。这些单词不能用作自定义标识符的名称。
-
 - **首个字符：** 标识符的第一个字符必须是字母、下划线 `_` 或美元符号 `$`。
-
 - **后续字符：** 标识符中的其余字符只能是字母、数字、下划线或美元符号。
 
-```
+```javascript
 1  //合法标识符示例
 2  myValue
 3  _myValue
@@ -348,7 +354,7 @@ src="myScript.js"></script>
 5  $myValue
 6  my3Value23
 7  my_$_value_23
-8  
+
 9  //非法标识符示例
 10 23myvalue
 11 myValue*
@@ -356,12 +362,12 @@ src="myScript.js"></script>
 13 #myvalue
 14 my%Value
 15 my4Value
-16 
+16
 ```
 
 *右图：第一组标识符全部是合法的（也就是说，是被允许的）标识符，而第二组是非法的。*
 
-## 变量 (VARIABLES)
+## 变量（VARIABLES）
 
 本质上，变量是计算机内存的一块区域，用于存储数据，并通过标识符来引用。
 
@@ -369,7 +375,7 @@ src="myScript.js"></script>
 
 在 JavaScript 中声明一个新变量非常简单——我们只需要编写关键字 `var`，后面跟着我们想要用来引用该变量的标识符。例如：
 
-```
+```javascript
 var theAnswer;
 ```
 
@@ -377,7 +383,7 @@ var theAnswer;
 
 通常在声明变量的同时为其赋值，如下所示：
 
-```
+```javascript
 var theAnswer = 42;
 ```
 
@@ -385,13 +391,13 @@ var theAnswer = 42;
 
 一旦使用 `var` 声明了变量，我们可以像这样更改分配给它的值：`theAnswer = 54`。请注意，这次我们没有包含 `var` 关键字。
 
-```
-4 //声明变量（不带赋值和带赋值）
-5 var theQuestion;
-6 var theAnswer = 42;
+```javascript
+4  //声明变量（不带赋值和带赋值）
+5  var theQuestion;
+6  var theAnswer = 42;
 7
-8 //为已声明的变量赋值
-9 theQuestion = "Life, the Universe and Everything";
+8  //为已声明的变量赋值
+9  theQuestion = "Life, the Universe and Everything";
 10
 ```
 
@@ -406,25 +412,22 @@ var theAnswer = 42;
 要使用存储在变量中的值，我们在需要使用该值的地方编写该变量的标识符名称。
 
 1. 创建一个新的 HTML 文档并添加常见的结构元素（`<html>`、`<head>` 和 `<body>`）。将文档保存为 `gettingVariables.html`。
-
 2. 添加一个 `<script type="text/javascript">` 元素作为 `<body>` 元素的子级（即在其中），如下所示。
-
 3. 添加下面所示的 JavaScript 代码。
-
 4. 保存工作，然后在 Firefox 中打开该文件。
 
-```
-1 <!DOCTYPE HTML>
-2 <html>
-3   <head>
-4     <title>Getting Variables</title>
-5   </head>
+```html
+1  <!DOCTYPE HTML>
+2  <html>
+3    <head>
+4      <title>Getting Variables</title>
+5    </head>
 6
-7   <body>
+7    <body>
 8
-9     <script type="text/javascript">
+9      <script type="text/javascript">
 10
-11    </script>
+11     </script>
 12
 13   </body>
 14 </html>
@@ -432,7 +435,7 @@ var theAnswer = 42;
 
 *上图：步骤 2：添加 `<script type="text/javascript">` 元素。*
 
-```
+```javascript
 10 <script type="text/javascript">
 11   var theMessage = "The alert function displays a message in a dialog box. ";
 12   alert(theMessage);
@@ -449,15 +452,15 @@ var theAnswer = 42;
 
 *上图：步骤 3：添加 JavaScript 代码。*
 
-## 数据类型 (DATA TYPES)
+## 数据类型（DATA TYPES）
 
 > JavaScript 处理的所有数据都有一个数据类型。这规定了被处理数据的性质——它是数字、文本、列表等等。
 
-## 什么是数据类型？
+### 什么是数据类型？
 
-为了将一段数据转化为有用的东西，计算机或程序必须知道这段数据打算代表什么——它必须知道数据的类型。因为数据存储在变量中，我们通常称变量具有某种数据类型，或者说是某某类型的。数据类型分为两组：原始类型 (primitive) 和引用类型 (reference)。让我们来看看这意味着什么。
+为了将一段数据转化为有用的东西，计算机或程序必须知道这段数据打算代表什么——它必须知道数据的类型。因为数据存储在变量中，我们通常称变量具有某种数据类型，或者说是某某类型的。数据类型分为两组：原始类型（primitive）和引用类型（reference）。让我们来看看这意味着什么。
 
-## 数据机制
+### 数据机制
 
 与 C 和 Java 等底层编程语言不同，JavaScript 不需要程序员参与数据如何在计算机上存储的细节——解释器为我们管理这些复杂之处。
 
@@ -469,7 +472,7 @@ var theAnswer = 42;
 
 ## 原始数据类型与引用数据类型
 
-原始数据类型可以被认为是那些数据代表单个值（如数字）的类型，而**引用**数据类型则代表复杂数据（如列表）。
+原始数据类型可以被认为是那些数据代表单个值（如数字）的类型，而引用数据类型则代表复杂数据（如列表）。
 
 当脚本中使用原始类型的变量时，解释器会复制该变量的值，并在计算中使用此副本。相比之下，当使用引用类型的变量时，解释器直接操作存储在内存中的数据。
 
@@ -486,10 +489,9 @@ var theAnswer = 42;
 > 从现在起，我们不再告诉你向基础 HTML 文档中添加哪些常见元素——你现在已经知道了。
 
 1. 创建一个包含常见结构元素（`<html>`、`<head>` 和 `<body>`）的新 HTML 文档。将文件保存为 `datatypes.html`。
-
 2. 创建一个 `<script>` 元素作为 `<body>` 元素的子级（即在其中），确保将 `type` 属性设置为 `"text/javascript"`，如下所示。
 
-```
+```html
 <!DOCTYPE html>
 <html>
 <head>
@@ -501,7 +503,7 @@ var theAnswer = 42;
 </html>
 ```
 
-```
+```javascript
 <script type="text/javascript">
   document.write("<h2>PRIMITIVE DATATYPES</h2>");
   var primitiveVar1 = 72;
@@ -517,35 +519,28 @@ var theAnswer = 42;
 *上图：步骤 3：将此代码输入到你的新 `<script>` 元素中。*
 
 3. 在这个新的脚本元素中输入上面所示的代码。
-
 4. 保存工作，然后在 Firefox 中打开 `datatypes.html`。
-
 5. 正如你所看到的，尽管我们将 `primitiveVar2` 赋值为 `primitiveVar1`，但当我们更改 `primitiveVar2` 的值时，`primitiveVar1` 的值并没有改变。换句话说，每个变量引用的是一个独立的值。
-
-
-
-6. 返回你的编辑器，添加上面所示的新代码（旧代码已变暗）。这里我们使用**对象**作为引用数据类型——这些内容从第39页开始讨论。
-
-7. 保存你的工作，并在Firefox中启动页面。
-
-8. 注意，修改referenceVar2.myValue的值如何同时改变了referenceVar1.myValue的值。这是因为referenceVar1和referenceVar2都指向内存中的同一数据，所以修改其中一个也会改变另一个。
+6. 返回你的编辑器，添加上面所示的新代码（旧代码已变暗）。这里我们使用对象作为引用数据类型——这些内容从第 39 页开始讨论。
+7. 保存你的工作，并在 Firefox 中启动页面。
+8. 注意，修改 `referenceVar2.myValue` 的值如何同时改变了 `referenceVar1.myValue` 的值。这是因为 `referenceVar1` 和 `referenceVar2` 都指向内存中的同一数据，所以修改其中一个也会改变另一个。
 
 ## 区分基本类型与引用类型
 
-牢记这一区别非常重要——如果不这样做，可能会在你的JavaScript应用程序中导致一些重大错误。好消息是，你会发现它很快就会变成第二天性。
+牢记这一区别非常重要——如果不这样做，可能会在你的 JavaScript 应用程序中导致一些重大错误。好消息是，你会发现它很快就会变成第二天性。
 
 ```javascript
-7 <code>
-8 <script type="text/javascript">
-9 var playerObjectTemplate = {};
-10 var player1 = playerObjectTemplate;
-11 player1.playerName = "Seth";
-12 player1.strkngScore = 4;
-13 var player2 = playerObjectTemplate;
-14 player2.playerName = "Steven";
-15 player2.strkngScore = 12;
-16 alert(player1.playerName); //Alert box will say "Steven", not "Seth"
-17 alert(player1.strkngScore); //Alert box will say 12, not 4
+7  <code>
+8  <script type="text/javascript">
+9    var playerObjectTemplate = {};
+10   var player1 = playerObjectTemplate;
+11   player1.playerName = "Seth";
+12   player1.strkngScore = 4;
+13   var player2 = playerObjectTemplate;
+14   player2.playerName = "Steven";
+15   player2.strkngScore = 12;
+16   alert(player1.playerName); //Alert box will say "Steven", not "Seth"
+17   alert(player1.strkngScore); //Alert box will say 12, not 4
 18 </script>
 19
 20 </code>
@@ -557,11 +552,11 @@ var theAnswer = 42;
 
 ### 布尔值
 
-布尔值代表计算机数据的单个位，因此是最简单的数据类型。布尔值可以是false或true，在计算机中分别表示为0或1。
+布尔值代表计算机数据的单个位，因此是最简单的数据类型。布尔值可以是 `false` 或 `true`，在计算机中分别表示为 `0` 或 `1`。
 
 ### 数值
 
-一般来说，在计算中有两种类型的数字：整数和浮点数。前者是整数，后者是涉及分数或指数部分的数字，例如3.14或$0.945 \times 10^7$。JavaScript不纠结于这种区分——数字就是数字。
+一般来说，在计算中有两种类型的数字：整数和浮点数。前者是整数，后者是涉及分数或指数部分的数字，例如 `3.14` 或 `$0.945 \times 10^7$`。JavaScript 不纠结于这种区分——数字就是数字。
 
 ![](img/9f289ad67d43b98b3bcc0d91197bccf6_17_0.png)
 
@@ -569,10 +564,11 @@ var theAnswer = 42;
 
 字符串是文本数据——不用担心为什么它们被称为字符串（这涉及一些我们不需要担心的技术细节）；只需知道字符串就是文本，文本就是字符串。
 
-在脚本中编写字符串时，必须用引号包围它们。可以使用单引号'或双引号"（我们将使用后者），但至关重要的是，字符串必须用与开头相同风格的引号来闭合。
+在脚本中编写字符串时，必须用引号包围它们。可以使用单引号 `'` 或双引号 `"`（我们将使用后者），但至关重要的是，字符串必须用与开头相同风格的引号来闭合。
 
 > **实用提示**
-> 如果字符串由单引号'包围，它可以包含双引号"，反之亦然。
+>
+> 如果字符串由单引号 `'` 包围，它可以包含双引号 `"`，反之亦然。
 
 空字符串——即不包含任何字符的字符串——通常写作一对引号。
 
@@ -581,34 +577,35 @@ var theAnswer = 42;
 ```
 
 ```html
-1 <!DOCTYPE HTML>
-2 <html>
-3  <head>
-4    <title>Using Quotes in Strings</title>
-5  </head>
+1  <!DOCTYPE HTML>
+2  <html>
+3    <head>
+4      <title>Using Quotes in Strings</title>
+5    </head>
 6
-7  <body>
-8    <script type="text/javascript">
-9      var anyString = ""; //"" creates an empty string
-10     anyString = 'A string can be demarked by single quotes...';
-11     anyString = "...or it can be demarked by double quotes.";
-12     anyString = 'A string demarked by single quotes "can" contain double quotes';
-13     anyString = "A string demarked by double quotes 'can' contain single quotes";
-14   </script>
+7    <body>
+8      <script type="text/javascript">
+9        var anyString = ""; //"" creates an empty string
+10       anyString = 'A string can be demarked by single quotes...';
+11       anyString = "...or it can be demarked by double quotes.";
+12       anyString = 'A string demarked by single quotes "can" contain double quotes';
+13       anyString = "A string demarked by double quotes 'can' contain single quotes";
+14     </script>
 15
-16  </body>
+16   </body>
 17 </html>
 18
 ```
+
 上图：在字符串中使用引号的不同方式。
 
 ### 不存在的数据
 
-JavaScript有两种数据类型用于表示不存在的数据。null类型，其值也是null，表示没有值——如果一个标识符求值为null，它不包含任何有效数据，或者最可能的是，它尚未被声明。第二种类型是undefined，其值也是undefined，与null略有不同——它是任何已声明但尚未赋值的变量的初始类型和值。
+JavaScript 有两种数据类型用于表示不存在的数据。`null` 类型，其值也是 `null`，表示没有值——如果一个标识符求值为 `null`，它不包含任何有效数据，或者最可能的是，它尚未被声明。第二种类型是 `undefined`，其值也是 `undefined`，与 `null` 略有不同——它是任何已声明但尚未赋值的变量的初始类型和值。
 
 ## 数组
 
-数组是一种引用数据类型；数组在JavaScript术语中指的是一个值列表。有两种创建数组的方式。
+数组是一种引用数据类型；数组在 JavaScript 术语中指的是一个值列表。有两种创建数组的方式。
 
 ### 编写数组字面量
 
@@ -619,47 +616,51 @@ var myArray = [value_1, value_2, ..., value_n]
 ```
 
 ```html
-1 <!DOCTYPE HTML>
-2 <html>
-3  <head>
-4    <title>Array Examples</title>
-5  </head>
+1  <!DOCTYPE HTML>
+2  <html>
+3    <head>
+4      <title>Array Examples</title>
+5    </head>
 6
-7  <body>
-8    <script type="text/javascript">
-9      var emptyArray = [];
-10     var numbersArray = [42, 12, 57, 3.14, 981582, 5];
-11     var stringsArray = ["Harry", "Sue", "Julia", "Chris", "Oliver"];
-12     var mixedArray = ["Oliver", true, false, 5];
-13     var arraysArray = [emptyArray, numbersArray, stringsArray, mixedArray];
-14   </script>
-15  </body>
+7    <body>
+8      <script type="text/javascript">
+9        var emptyArray = [];
+10       var numbersArray = [42, 12, 57, 3.14, 981582, 5];
+11       var stringsArray = ["Harry", "Sue", "Julia", "Chris", "Oliver"];
+12       var mixedArray = ["Oliver", true, false, 5];
+13       var arraysArray = [emptyArray, numbersArray, stringsArray, mixedArray];
+14     </script>
+15   </body>
 16 </html>
 ```
+
 上图：数组存储其他数据（包括其他数组）的列表。
 
 ![](img/9f289ad67d43b98b3bcc0d91197bccf6_19_0.png)
 
-方括号[ ]标记数组的开始和结束，而存储在数组中的值——其元素——由逗号分隔，可以是任何数据类型。要创建空数组，我们只需键入不带任何元素的括号。
+方括号 `[ ]` 标记数组的开始和结束，而存储在数组中的值——其元素——由逗号分隔，可以是任何数据类型。要创建空数组，我们只需键入不带任何元素的括号。
 
-### 使用New关键字创建数组
+### 使用 `new` 关键字创建数组
 
-我们也可以使用new关键字创建数组：`var myArray = new Array();`。初始元素可以用逗号分隔，包含在括号之间。（我们在第50页讨论关键字。）
+我们也可以使用 `new` 关键字创建数组：`var myArray = new Array();`。初始元素可以用逗号分隔，包含在括号之间。（我们在第 50 页讨论关键字。）
 
 ### 数组长度
 
-数组中元素的数量称为其长度。如果我们有一个名为`myArray`的数组，我们可以通过键入`myArray.length`来获取其长度。
+数组中元素的数量称为其长度。如果我们有一个名为 `myArray` 的数组，我们可以通过键入 `myArray.length` 来获取其长度。
 
 ### 访问数组元素
 
-数组中的每个元素都有一个索引，这是一个指代元素在数组中位置的数字。第一个元素的索引为0，第二个元素的索引为1，依此类推。要访问数组的特定元素，我们编写数组变量名，后跟用方括号包裹的索引号。例如，如果我们想使用数组`myArray`的第三个元素（索引2），我们写`myArray[2]`。
+数组中的每个元素都有一个索引，这是一个指代元素在数组中位置的数字。第一个元素的索引为 `0`，第二个元素的索引为 `1`，依此类推。要访问数组的特定元素，我们编写数组变量名，后跟用方括号包裹的索引号。例如，如果我们想使用数组 `myArray` 的第三个元素（索引 `2`），我们写 `myArray[2]`。
 
 > **实用提示**
+>
 > 数组元素可以包含你喜欢的任何数据类型——包括其他数组。
 
 ### 向数组添加元素
 
-我们也可以使用方括号为数组元素赋值。例如，要设置数组`myArray`的第八个元素（索引7），我们可以键入`myArray[7] = 19;`。如果第八个元素已经包含数据，它将被新值覆盖。或者，如果数组的长度小于8，新元素将被创建，同时会创建任何所需的空元素，以填充未修改数组的最后一个元素与新添加元素之间的空隙。
+我们也可以使用方括号为数组元素赋值。例如，要设置数组 `myArray` 的第八个元素（索引 `7`），我们可以键入 `myArray[7] = 19;`。如果第八个元素已经包含数据，它将被新值覆盖。或者，如果数组的长度小于 8，新元素将被创建，同时会创建任何所需的空元素，以填充未修改数组的最后一个元素与新添加元素之间的空隙。
+
+
 
 ```html
 1 <!DOCTYPE HTML>
@@ -698,7 +699,8 @@ var myArray = [value_1, value_2, ..., value_n]
 21 </script>
 22 </body>
 ```
-上图：数组可以使用new关键字创建，并且始终具有长度。
+
+上图：数组可以使用`new`关键字创建，并且始终具有长度。
 
 上图：我们可以访问数组元素，既可以使用方括号访问表示法来获取值，也可以设置值。
 
@@ -706,7 +708,7 @@ var myArray = [value_1, value_2, ..., value_n]
 
 ### 向数组追加元素
 
-数组的`push()`方法使我们能够向数组末尾追加元素（我们在第102页讨论方法）。例如，如果我们希望将字符串"Harry"追加到数组`firstNames`，我们可以这样写：`firstNames.push("Harry")`。
+数组的`push()`方法使我们能够向数组末尾追加元素（我们在第102页讨论方法）。例如，如果我们希望将字符串`"Harry"`追加到数组`firstNames`，我们可以这样写：`firstNames.push("Harry")`。
 
 ```html
 7   <body>
@@ -719,7 +721,8 @@ var myArray = [value_1, value_2, ..., value_n]
 14    </script>
 15  </body>
 ```
-上图：数组的push方法向数组末尾添加一个元素。
+
+上图：数组的`push()`方法向数组末尾添加一个元素。
 
 ### 从数组移除元素
 
@@ -740,24 +743,24 @@ var myArray = [value_1, value_2, ..., value_n]
 18    </script>
 19  </body>
 ```
+
 上图：数组的`shift()`和`pop()`方法分别移除第一个和最后一个元素。
 
 ### 其他数组方法
 
-数组还有许多其他用于操作其内容的方法——实在太多，无法在此一一介绍。如需完整列表，请访问www.w3schools.com/js/js_array_methods.asp。
+数组还有许多其他用于操作其内容的方法——实在太多，无法在此一一介绍。如需完整列表，请访问`www.w3schools.com/js/js_array_methods.asp`。
 
 ## 对象
 
 对象类型的变量（一种引用数据类型）是一种可以存储多个值的变量。然而，与基于索引访问的数组不同，对象将值存储在命名属性中（通常称为属性-值对）。
 
-
-
 对象在 JavaScript 中扮演着特殊角色——它们是所有其他 JavaScript 数据构建的基础基石。所有其他数据类型都继承了对象数据类型的基本特性。因此，我们经常将任何且所有的 JavaScript 数据都称为对象——例如，字符串对象或数组对象。这种继承的概念是面向对象编程的基础，这是一种与 JavaScript 紧密相关的编程方法，我们将在第 95 页对其进行介绍。
 
 > **实用技巧**
+>
 > 存储在对象属性中的值可以是任何数据类型，包括其他对象或数组。
 
-```
+```html
 7  <body>
 8      <script type="text/javascript">
 9          var quizQuestion1 = new Object();
@@ -777,15 +780,15 @@ var myArray = [value_1, value_2, ..., value_n]
 
 *上图：所有 JavaScript 对象都构建在对象数据类型之上。*
 
-2. 输入上方插图所示的代码。这使用了 `new` 关键字来创建一个空对象，然后在该对象上声明了一系列属性。
+2. 输入上方插图所示的代码。这使用了`new`关键字来创建一个空对象，然后在该对象上声明了一系列属性。
 
 3. 输入下方插图所示的新代码，其中我们使用对象字面量表示法创建了一个对象：每个属性名后面跟着一个冒号和一个值；属性-值对由逗号分隔；整个字面量包裹在大括号（`{}`）中。
 
 ## 创建对象
 
-我们可以通过声明对象字面量或使用 `new` 关键字来创建对象——让我们两种方法都试一下。
+我们可以通过声明对象字面量或使用`new`关键字来创建对象——让我们两种方法都试一下。
 
-```
+```html
 13         quizQuestion1.wrongAnswer2 = "49,000,000 miles";
 14         quizQuestion1.wrongAnswer3 = "150,000 miles";
 15     
@@ -800,13 +803,13 @@ var myArray = [value_1, value_2, ..., value_n]
 24     </script>
 ```
 
-1. 创建一个包含通用结构元素的新 HTML 文档。在 body 元素的子级添加一个 `<script type="text/javascript">` 元素，然后将文档保存为 `javascriptObjects.html`。
+1. 创建一个包含通用结构元素的新 HTML 文档。在`body`元素的子级添加一个`<script type="text/javascript">`元素，然后将文档保存为`javascriptObjects.html`。
 
 *上图：步骤 3：输入此处高亮显示的代码*
 
 4. 最后，我们再次声明一个对象字面量——但这一次是一个空对象，可用于存储我们创建的对象中问题的答案。请参阅下图。
 
-```
+```html
 15 var quizQuestion2 = {
 16     question: "How many planets orbit the Sun?",
 17     answer: "8",
@@ -822,16 +825,17 @@ var myArray = [value_1, value_2, ..., value_n]
 27 </html>
 ```
 
-*上图：步骤 4 此处，你将创建一个空对象。*
+*上图：步骤 4：此处，你将创建一个空对象。*
 
 5. 保存你的工作。如果你在 Firefox 中启动此页面，你不会看到任何视觉输出，但这没关系——目前，这更多是一次编码和思考练习，但随着进度的推进，我们将在此基础上进行构建。
 
-6. 请注意，我们在两个 `quizQuestion` 对象中创建了相同的属性名结构——以这种方式创建和重用对象结构是面向对象编程的核心原则，我们将在第 95 页讨论该内容。
+6. 请注意，我们在两个`quizQuestion`对象中创建了相同的属性名结构——以这种方式创建和重用对象结构是面向对象编程的核心原则，我们将在第 95 页讨论该内容。
 
 > **实用技巧**
+>
 > 管理属性名的规则与所有标识符的规则相同——见第 25 页。
 
-```
+```html
 23 var userAnswers = {};
 24
 25
@@ -849,11 +853,11 @@ var myArray = [value_1, value_2, ..., value_n]
 
 ## 访问对象属性
 
-如果我们有一个对象 `myObject`，并在其上定义了一个属性 `myProperty`，我们可以通过输入 `myObject.myProperty` 来访问该属性。`.` 被称为点运算符（见第 53 页）。
+如果我们有一个对象`myObject`，并在其上定义了一个属性`myProperty`，我们可以通过输入`myObject.myProperty`来访问该属性。`.`被称为点运算符（见第 53 页）。
 
 ## 数据类型转换
 
-在很多情况下，你需要在一个类型的上下文中还原另一个类型的值。例如，你可能希望使用数字的字符串表示（用 `"42"` 代替 `42`），或者你可能需要在布尔值的上下文中运行一个数字。这种在数据类型之间进行翻译的操作被称为数据类型转换（data type casting）。
+在很多情况下，你需要在一个类型的上下文中还原另一个类型的值。例如，你可能希望使用数字的字符串表示（用`"42"`代替`42`），或者你可能需要在布尔值的上下文中运行一个数字。这种在数据类型之间进行翻译的操作被称为数据类型转换（data type casting）。
 
 ![](img/9f289ad67d43b98b3bcc0d91197bccf6_22_0.png)
 
@@ -863,9 +867,9 @@ JavaScript 在管理数据类型方面非常主动，它会根据数据被使用
 
 ## 显式转换
 
-我们也可以显式地转换某些数据类型，最常用于字符串和数字之间的转换。例如，要将数字转换为字符串，我们会写 `String(42)`，结果为 `"42"`。反之，要将字符串转换为数字，我们会写 `Number("42")`，结果为 `42`。
+我们也可以显式地转换某些数据类型，最常用于字符串和数字之间的转换。例如，要将数字转换为字符串，我们会写`String(42)`，结果为`"42"`。反之，要将字符串转换为数字，我们会写`Number("42")`，结果为`42`。
 
-```
+```javascript
 1 var myNumber = 42;
 2 var myString = "549";
 3 var myName = "Sajid";
@@ -892,9 +896,9 @@ JavaScript 在管理数据类型方面非常主动，它会根据数据被使用
 
 ## 特殊的 NaN 数字
 
-并非所有值都能转换为数字——例如，字符串 `"foo"` 没有数字含义。
+并非所有值都能转换为数字——例如，字符串`"foo"`没有数字含义。
 
-如果我们把这个字符串转换为数字，我们将得到结果 `NaN`（Not a Number，非数字）。尽管名字如此，它确实是一个数字，并且可以在任何允许或期望出现数字的地方使用。然而，任何包含 `NaN` 的计算结果本身永远是 `NaN`。
+如果我们把这个字符串转换为数字，我们将得到结果`NaN`（Not a Number，非数字）。尽管名字如此，它确实是一个数字，并且可以在任何允许或期望出现数字的地方使用。然而，任何包含`NaN`的计算结果本身永远是`NaN`。
 
 ![](img/9f289ad67d43b98b3bcc0d91197bccf6_23_0.png)
 
@@ -902,15 +906,15 @@ JavaScript 在管理数据类型方面非常主动，它会根据数据被使用
 
 此表显示了不同数据类型之间转换的结果。阅读此表的方式为“从行标题转换为列标题”。
 
-| | Boolean (布尔值) | number (数字) | string (字符串) |
+|  | Boolean (布尔值) | number (数字) | string (字符串) |
 |---|---|---|---|
 | Boolean | - | false 是 0, true 是 1 | false 是 "false", true 是 "true" |
 | number | 0 是 false, 其余为 true | - | 数字的字符串表示 |
-| string | "" 是 false, 其余为 true | 字符串的数字表示或 NaN | - |
+| string | "" 是 false, 其余为 true | 字符串的数字表示或`NaN` | - |
 | null | false | 0 | "null" |
-| undefined | false | NaN | "undefined" |
-| array (数组) | true | 空数组是 0, 包含元素的数组是 NaN | 元素值的逗号分隔列表 |
-| object (对象) | true | NaN | "[object Object]" |
+| undefined | false |`NaN`| "undefined" |
+| array (数组) | true | 空数组是 0, 包含元素的数组是`NaN`| 元素值的逗号分隔列表 |
+| object (对象) | true |`NaN`| "[object Object]" |
 
 ![](img/9f289ad67d43b98b3bcc0d91197bccf6_24_0.png)
 
@@ -920,9 +924,9 @@ JavaScript 在管理数据类型方面非常主动，它会根据数据被使用
 
 ## 区分大小写
 
-首先要注意的是，JavaScript 是区分大小写的，即小写字符被认为与其对应的大写字符不同。例如，标识符 `"myVariable"` 与 `"MyVariable"` 不同（请注意不同的首字母大写）。
+首先要注意的是，JavaScript 是区分大小写的，即小写字符被认为与其对应的大写字符不同。例如，标识符`"myVariable"`与`"MyVariable"`不同（请注意不同的首字母大写）。
 
-```
+```javascript
 00 com.flamerepublishing.simpleQuiz.prototype.addQuestion = function() {
 01   // QUESTION 1
 02   this.questions.push(
@@ -958,11 +962,13 @@ JavaScript 在管理数据类型方面非常主动，它会根据数据被使用
 
 ## 空格
 
+
+
 JavaScript 忽略前导空格和制表符（tabs）。这使我们能够在代码中使用缩进，这是一种有助于使代码更有组织且更具可读性的技巧。
 
 ## 分号
 
-JavaScript 语句通常以分号 (;) 结尾，但并非必须。在省略分号的地方，解释器会假设换行符标志着语句的结束。然而，省略分号可能会导致代码出现歧义，因此最佳实践是为每个语句加上分号结尾。
+JavaScript 语句通常以分号（`;`）结尾，但并非必须。在省略分号的地方，解释器会假设换行符标志着语句的结束。然而，省略分号可能会导致代码出现歧义，因此最佳实践是为每个语句加上分号结尾。
 
 ```
 1  //Inline comments start with '//' and end at the next line break
@@ -971,8 +977,6 @@ JavaScript 语句通常以分号 (;) 结尾，但并非必须。在省略分号�
 4
 5  //alert(userScore); //They can also be used to disable lines of code
 6
-7
-8
 ```
 
 *上图：行内注释在注释后的换行符处结束。*
@@ -983,11 +987,9 @@ JavaScript 语句通常以分号 (;) 结尾，但并非必须。在省略分号�
 
 ### 行内注释
 
-行内注释以 `//` 开始，一直持续到下一个换行符。它们可以单独占据一行，也可以紧跟在其他 JavaScript 代码之后。
+行内注释以`//`开始，一直持续到下一个换行符。它们可以单独占据一行，也可以紧跟在其他 JavaScript 代码之后。
 
 > **实用技巧：** 注释通常用于禁用脚本的部分内容——这在尝试新想法或试图寻找漏洞（bugs）时非常有用。
-
-
 
 ## 表达式与运算符
 
@@ -995,7 +997,7 @@ JavaScript 语句通常以分号 (;) 结尾，但并非必须。在省略分号�
 
 ### 什么是表达式？
 
-表达式是解释器可以求值的任何代码片段，通常会产生一个值。这个宏大的描述掩盖了概念的简单性——考虑以下内容：42。严格来说，除了是一个字面量之外，它也是一个表达式——解释器可以对其进行求值，得到十进制值 42。诚然，这算不上多么了不起的表达式——它相当于脚本世界中你走向一位同事说"42"；她会理解你陈述了一个值，但她完全不知道你希望她对此做什么。
+表达式是解释器可以求值的任何代码片段，通常会产生一个值。这个宏大的描述掩盖了概念的简单性——考虑以下内容：`42`。严格来说，除了是一个字面量之外，它也是一个表达式——解释器可以对其进行求值，得到十进制值`42`。诚然，这算不上多么了不起的表达式——它相当于脚本世界中你走向一位同事说"42"；她会理解你陈述了一个值，但她完全不知道你希望她对此做什么。
 
 ```
 1 42
@@ -1008,7 +1010,7 @@ JavaScript 语句通常以分号 (;) 结尾，但并非必须。在省略分号�
 
 ### 块注释
 
-块注释以 `/*` 开头，持续到出现闭合的 `*/` 为止。这两个标记之间的所有内容都被视为注释的一部分。
+块注释以`/*`开头，持续到出现闭合的`*/`为止。这两个标记之间的所有内容都被视为注释的一部分。
 
 ### 关键字和保留字
 
@@ -1051,13 +1053,13 @@ code.title = "Example";
 
 | 关键字 | 保留字 |
 | :--- | :--- |
-| break, case, catch, continue, default, delete, do, else, false, finally, for, function, if, in, instanceof, new, null, return, switch, this, throw, true, try, typeof, var, void, while, with | abstract, boolean, byte, char, class, const, debugger, double, enum, export, extends, final, float, goto, implements, import, int, interface, long, native, package, private, protected, public, short, static, super, synchronized, throws, transient, volatile |
+| `break`, `case`, `catch`, `continue`, `default`, `delete`, `do`, `else`, `false`, `finally`, `for`, `function`, `if`, `in`, `instanceof`, `new`, `null`, `return`, `switch`, `this`, `throw`, `true`, `try`, `typeof`, `var`, `void`, `while`, `with` | `abstract`, `boolean`, `byte`, `char`, `class`, `const`, `debugger`, `double`, `enum`, `export`, `extends`, `final`, `float`, `goto`, `implements`, `import`, `int`, `interface`, `long`, `native`, `package`, `private`, `protected`, `public`, `short`, `static`, `super`, `synchronized`, `throws`, `transient`, `volatile` |
 
 ## 更具表达力
 
-现在考虑表达式 38 + 4。这次，在对表达式求值时，解释器将 38 和 4 相加——结果与我们之前的例子相同（值为 42），但我们将两个值相加后实现了某种效果。
+现在考虑表达式`38 + 4`。这次，在对表达式求值时，解释器将`38`和`4`相加——结果与我们之前的例子相同（值为`42`），但我们将两个值相加后实现了某种效果。
 
-沿用我们的类比，你对你的同事说"38 加 4"，她回答"42"。产生区别的是加法运算符 + 的引入。
+沿用我们的类比，你对你的同事说"38 加 4"，她回答"42"。产生区别的是加法运算符`+`的引入。
 
 ### 什么是运算符？
 
@@ -1073,7 +1075,7 @@ JavaScript 有许多不同的运算符——多得无法在此一一介绍——
 
 ### 点运算符
 
-我们已经见过点运算符 "."——它使我们能够访问对象的属性（和方法——参见第 102 页）。左操作数是对对象的引用，右操作数则是该对象的属性或方法的名称。
+我们已经见过点运算符`"."`——它使我们能够访问对象的属性（和方法——参见第 102 页）。左操作数是对对象的引用，右操作数则是该对象的属性或方法的名称。
 
 ```javascript
 1  38 + 4
@@ -1098,16 +1100,17 @@ JavaScript 有许多不同的运算符——多得无法在此一一介绍——
 算术运算符使用提供的操作数执行算术运算，并返回该计算的结果。操作数必须是数字，或者求值为数字的表达式。
 
 > **热门提示**
+
 > 访问 https://en.wikibooks.org/wiki/JavaScript_Operators 查看 JavaScript 运算符的完整列表。
 
 | 运算符 | 操作数个数 | 名称 | 作用 | 示例（括号内为结果） |
 |---|---|---|---|---|
-| `+` | 2 | 加法 | 将左右操作数相加 | 4 + 5 (9) |
-| `-` | 2 | 减法 | 左操作数减去右操作数 | 31 - 14 (17) |
-| `*` | 2 | 乘法 | 左右操作数相乘 | 12 * 3 (36) |
-| `/` | 2 | 除法 | 左操作数除以右操作数 | 12 / 3 (4) |
-| `++` | 1 | 自增 | 将单个标识符操作数的值加 1 | multipliers++ (multipliers 增加 1) |
-| `--` | 1 | 自减 | 将单个标识符操作数的值减 1 | multipliers-- (multipliers 减少 1) |
+| `+` | 2 | 加法 | 将左右操作数相加 | `4 + 5` (9) |
+| `-` | 2 | 减法 | 左操作数减去右操作数 | `31 - 14` (17) |
+| `*` | 2 | 乘法 | 左右操作数相乘 | `12 * 3` (36) |
+| `/` | 2 | 除法 | 左操作数除以右操作数 | `12 / 3` (4) |
+| `++` | 1 | 自增 | 将单个标识符操作数的值加 1 | `multipliers++` (`multipliers` 增加 1) |
+| `--` | 1 | 自减 | 将单个标识符操作数的值减 1 | `multipliers--` (`multipliers` 减少 1) |
 
 ### 字符串运算符
 
@@ -1115,11 +1118,12 @@ JavaScript 有许多不同的运算符——多得无法在此一一介绍——
 
 | 运算符 | 名称 | 作用 | 示例（括号内为结果） |
 |---|---|---|---|
-| `+` | 拼接 | 将两个字符串连接在一起，返回结果字符串 | "Hello " + "World" ("Hello World") |
+| `+` | 拼接 | 将两个字符串连接在一起，返回结果字符串 | `"Hello " + "World"` ("Hello World") |
 
 请注意，拼接运算符看起来与加法运算符相同——解释器根据操作数的数据类型来推断应该使用哪个运算符。如果两个操作数求值都是数字，则是加法；如果任一操作数求值为字符串，则是拼接。此外，如果拼接运算符的操作数求值为数字，它会转换为字符串（参见数据类型转换，第 43 页）。
 
 > **热门提示**
+
 > 我们的表格中没有列出操作数个数的，默认都是二元运算符——即它们需要两个操作数。
 
 ### 赋值运算符
@@ -1128,37 +1132,38 @@ JavaScript 有许多不同的运算符——多得无法在此一一介绍——
 
 | 运算符 | 名称 | 作用 | 示例（括号内为结果） |
 | :--- | :--- | :--- | :--- |
-| `=` | 赋值 | 将右操作数的值赋给左操作数指示的变量或属性 | `myRef = 42` (myRef 现在的值为 42) |
+| `=` | 赋值 | 将右操作数的值赋给左操作数指示的变量或属性 | `myRef = 42` (`myRef` 现在的值为 42) |
 
 ### 相等运算符
 
-这些运算符比较两个操作数，返回 true 或 false（参见布尔值，第 331 页）。操作数可以是任何数据类型。
+这些运算符比较两个操作数，返回`true`或`false`（参见布尔值，第 331 页）。操作数可以是任何数据类型。
 
 > **热门提示**
-> 务必充分理解赋值运算符 `=` 和相等运算符 `==` 之间的区别。
+
+> 务必充分理解赋值运算符`=`和相等运算符`==`之间的区别。
 
 | 运算符 | 名称 | 作用 | 示例（括号内为结果） |
 | :--- | :--- | :--- | :--- |
-| `==` | 相等 | 如果两个操作数相等则返回 true，否则返回 false | `4 == 2` (false) |
-| `!=` | 不相等 | 如果两个操作数不相等则返回 true，否则返回 false | `4 != 2` (true) |
+| `==` | 相等 | 如果两个操作数相等则返回`true`，否则返回`false` | `4 == 2` (false) |
+| `!=` | 不相等 | 如果两个操作数不相等则返回`true`，否则返回`false` | `4 != 2` (true) |
 
 ### 比较运算符
 
-顾名思义，比较运算符比较两个操作数，返回 true 或 false。操作数可以是任何数据类型。
+顾名思义，比较运算符比较两个操作数，返回`true`或`false`。操作数可以是任何数据类型。
 
 | 运算符 | 名称 | 作用 | 示例（括号内为结果） |
 | :--- | :--- | :--- | :--- |
-| `<=` | 小于或等于 | 如果左操作数的值小于或等于右操作数的值，则返回 true，否则返回 false | `52 < 20` (false) <br> `15 < 19` (true) |
-| `>=` | 大于或等于 | 如果左操作数的值大于或等于右操作数的值，则返回 true，否则返回 false | `52 > 20` (true) <br> `12 > 350` (false) |
+| `<=` | 小于或等于 | 如果左操作数的值小于或等于右操作数的值，则返回`true`，否则返回`false` | `52 < 20` (false) <br> `15 < 19` (true) |
+| `>=` | 大于或等于 | 如果左操作数的值大于或等于右操作数的值，则返回`true`，否则返回`false` | `52 > 20` (true) <br> `12 > 350` (false) |
 
 ### 逻辑运算符
 
-逻辑运算符比较值，然后返回 true 或 false。如有需要，操作数会被转换为布尔值。
+逻辑运算符比较值，然后返回`true`或`false`。如有需要，操作数会被转换为布尔值。
 
 | 运算符 | 操作数个数 | 名称 | 作用 | 示例（括号内为结果） |
 | :--- | :--- | :--- | :--- | :--- |
-| `&&` | 2 | 逻辑与 | 如果两个操作数都求值为 true，则返回 true，否则返回 false | `true && false` (false) |
-| `||` | 2 | 逻辑或 | 如果任一操作数求值为 true，则返回 true，否则返回 false | `true || false` (true) |
+| `&&` | 2 | 逻辑与 | 如果两个操作数都求值为`true`，则返回`true`，否则返回`false` | `true && false` (false) |
+| `||` | 2 | 逻辑或 | 如果任一操作数求值为`true`，则返回`true`，否则返回`false` | `true || false` (true) |
 | `!` | 1 | 逻辑非 | 置于单个操作数之前，反转操作数的布尔值 | `!true` (false) |
 
 ```javascript
@@ -1178,7 +1183,7 @@ JavaScript 有许多不同的运算符——多得无法在此一一介绍——
 
 ## 运算符优先级
 
-考虑以下代码：`20 - 4 * 3`。这表示 `(20 - 4) * 3`（结果为 48），还是 `20 - (4 * 3)`（结果为 8）？JavaScript 通过为每个运算符分配优先级来处理这种情况——优先级最高的运算符先计算，优先级最低的运算符最后计算。何不写一个脚本来验证哪种解释是正确的呢？
+考虑以下代码：`20 - 4 * 3`。这表示`(20 - 4) * 3`（结果为 48），还是`20 - (4 * 3)`（结果为 8）？JavaScript 通过为每个运算符分配优先级来处理这种情况——优先级最高的运算符先计算，优先级最低的运算符最后计算。何不写一个脚本来验证哪种解释是正确的呢？
 
 ![](img/9f289ad67d43b98b3bcc0d91197bccf6_30_0.png)
 
@@ -1186,7 +1191,7 @@ JavaScript 有许多不同的运算符——多得无法在此一一介绍——
 
 记住每个运算符的优先级可能相当困难，因此使用括号（小括号）来覆盖默认的运算符优先级通常更简单、也更明确。
 
-括号内的任何表达式都会在同一语句中的其他所有表达式之前进行计算。考虑以下内容：`(24 - 2) / 7`。括号内的部分 `(24 - 2)` 先计算，结果 22 再除以 7。
+括号内的任何表达式都会在同一语句中的其他所有表达式之前进行计算。考虑以下内容：`(24 - 2) / 7`。括号内的部分`(24 - 2)`先计算，结果 22 再除以 7。
 
 ```javascript
 1  <!DOCTYPE HTML>
@@ -1208,11 +1213,12 @@ IDE 检测到由缺少括号引起的语法错误：此开括号没有对应的�
 上例：本例中的第二个表达式导致语法错误。
 
 > **温馨提示**
-> 嵌套括号时，务必确保每个开括号 `(` 都有对应的闭括号 `)`。如果不匹配，就会发生语法错误。
+
+> 嵌套括号时，务必确保每个开括号`(`都有对应的闭括号`)`。如果不匹配，就会发生语法错误。
 
 ## 嵌套括号
 
-你经常会发现需要在括号内嵌套括号，例如 `((24 - 2) + 10) / 7`。在这种情况下，嵌套最深的表达式先计算，然后是次深的，依此类推。
+你经常会发现需要在括号内嵌套括号，例如`((24 - 2) + 10) / 7`。在这种情况下，嵌套最深的表达式先计算，然后是次深的，依此类推。
 
 ## 语句
 
@@ -1224,7 +1230,7 @@ JavaScript 语句封装了一个或多个表达式，可以被视为脚本中的
 
 ### 构成语句
 
-考虑以下简单表达式：`playerScore = 0;`。虽然这是一个表达式，但正如结尾的分号 `;` 所示，它也是一个语句。语句不必比这更复杂，但它们通常会更复杂。
+考虑以下简单表达式：`playerScore = 0;`。虽然这是一个表达式，但正如结尾的分号`;`所示，它也是一个语句。语句不必比这更复杂，但它们通常会更复杂。
 
 ```javascript
 playerScore = 0;
@@ -1240,7 +1246,7 @@ document.write("Your score is " + playerScore);
 
 我们通常会在一条语句中构建相当复杂的表达式堆栈，例如：`document.getElementsByTagName("body")[0].appendChild(document.createElement("p")).innerHTML = 'Hello World!';`
 
-这条语句说明了表达式auch表达式可以如何组合。它使用了 DOM 编程技术（在第 109 页介绍），以达到与我们编写的第一个脚本相同的结果。
+这条语句说明了表达式可以如何组合。它使用了 DOM 编程技术（在第 109 页介绍），以达到与我们编写的第一个脚本相同的结果。
 
 ![](img/9f289ad67d43b98b3bcc0d91197bccf6_31_0.png)
 
@@ -1249,6 +1255,7 @@ document.getElementsByTagName("body")[0].appendChild(document.createElement("p")
 ```
 
 > **温馨提示**
+
 > 像本页这样的复杂语句通常写起来容易得多，读起来难。事实上，一旦你掌握了 JavaScript 的要领，你可能会发现写这些语句有种奇怪的满足感——甚至可以说是种艺术。
 
 ### 在复杂性与可读性之间取得平衡
@@ -1277,6 +1284,8 @@ document.getElementsByTagName("body")[0].appendChild(document.createElement("p")
 18 </script>
 ```
 
+
+
 上例：复杂语句可以分解成单独的语句——也可以不分解。
 
 ## 语句块
@@ -1303,7 +1312,7 @@ document.getElementsByTagName("body")[0].appendChild(document.createElement("p")
 
 ### IF 语句
 
-使用 `if`，我们测试某个条件的存在，如果该条件存在，则执行相应的表达式。其基本形式如下：
+使用`if`，我们测试某个条件的存在，如果该条件存在，则执行相应的表达式。其基本形式如下：
 
 ```javascript
 if (condition) expressions;
@@ -1311,21 +1320,25 @@ if (condition) expressions;
 
 ![](img/9f289ad67d43b98b3bcc0d91197bccf6_33_0.png)
 
-上例：简单 if 语句的流程图
+上例：简单`if`语句的流程图
 
 ### 使用 IF 语句
 
-当解释器遇到 `if` 语句时，它会计算括号内的表达式。如果该表达式计算结果为 `true`，则执行 `if` 后面的语句。
+当解释器遇到`if`语句时，它会计算括号内的表达式。如果该表达式计算结果为`true`，则执行`if`后面的语句。
 
 ### If 语句的工作原理
 
-让我们通过一个简单的例子来看看 `if` 语句是如何工作的：
+让我们通过一个简单的例子来看看`if`语句是如何工作的：
 
-- 1. 新建一个 HTML 文档并输入标准的结构性元素。将页面保存为 `ifExample.html`。
-- 2. 新建一个 `<script>` 元素，作为 `<head>` 元素的子元素（即放在 `<head>` 内）。我们将其声明在 `<head>` 中，以确保它在 `<body>` 元素渲染之前可用。
-- 3. 在这个 `<script>` 元素中添加一个简单的变量声明：`var userAge = 36;`。虽然我们手动为这个变量赋值，但请想象这个信息实际上是由用户提供的。参见右侧插图。
-- 4. 再添加一个 `<script>` 元素，这次作为 `<body>` 元素的子元素。将下方插图所示的代码复制到这个新的 `<script>` 元素中。
-- 5. 保存工作，然后在 Firefox 中打开 `ifExample.html`。
+- 1. 新建一个 HTML 文档并输入标准的结构性元素。将页面保存为`ifExample.html`。
+
+- 2. 新建一个`<script>`元素，作为`<head>`元素的子元素（即放在`<head>`内）。我们将其声明在`<head>`中，以确保它在`<body>`元素渲染之前可用。
+
+- 3. 在这个`<script>`元素中添加一个简单的变量声明：`var userAge = 36;`。虽然我们手动为这个变量赋值，但请想象这个信息实际上是由用户提供的。参见右侧插图。
+
+- 4. 再添加一个`<script>`元素，这次作为`<body>`元素的子元素。将下方插图所示的代码复制到这个新的`<script>`元素中。
+
+- 5. 保存工作，然后在 Firefox 中打开`ifExample.html`。
 
 ```html
 1 <!DOCTYPE HTML>
@@ -1353,15 +1366,13 @@ if (condition) expressions;
 
 上例：步骤 4：按照上方文字描述使用代码。
 
-
-
 ## 工作原理
 
-`if` 语句的条件表达式会将 `userAge` 的值与字面量值 16 进行比较。由于 `userAge` 的求值结果为 36，而 36 大于 16，因此 `if` 条件的求值结果为 `true`，随后的表达式会被执行。
+`if`语句的条件表达式会将`userAge`的值与字面量值 16 进行比较。由于`userAge`的求值结果为 36，而 36 大于 16，因此`if`条件的求值结果为`true`，随后的表达式会被执行。
 
 ## Else 子句
 
-基本的 `if` 语句可以通过添加 `else` 子句来扩展（我们称之为子句，因为它是更大 `if` 语句的一个子部分，在 `if` 语句之外没有意义）。其通用形式如下：
+基本的`if`语句可以通过添加`else`子句来扩展（我们称之为子句，因为它是更大`if`语句的一个子部分，在`if`语句之外没有意义）。其通用形式如下：
 
 > 语句块的左大括号可以直接跟在条件表达式的右括号之后，也可以单独占一行，甚至可以放在第一条语句之前。这取决于你。
 
@@ -1373,11 +1384,11 @@ if(condition) {
 }
 ```
 
-上方：`if` 条件表达式求值为 true，因此我们看到警报消息。
+上方：`if`条件表达式求值为 true，因此我们看到警报消息。
 
 ## 执行多条语句
 
-上述形式的 `if` 在其条件为 true 时只能执行单条语句，但我们经常需要执行多条语句。为此，我们在条件表达式后添加一个语句块（参见第 63 页的语句块）。通用形式如下：
+上述形式的`if`在其条件为 true 时只能执行单条语句，但我们经常需要执行多条语句。为此，我们在条件表达式后添加一个语句块（参见第 63 页的语句块）。通用形式如下：
 
 ```javascript
 if(condition) {
@@ -1388,13 +1399,13 @@ if(condition) {
 }
 ```
 
-现在，如果条件求值为 `true`，语句块（`if` 语句的主体）中的所有语句都会被执行。
+现在，如果条件求值为`true`，语句块（`if`语句的主体）中的所有语句都会被执行。
 
-当 `if` 语句的条件求值为 `false` 时，`else` 后的语句块会执行。何不在最后一个编码练习（第 65 页）中尝试添加一个 `else` 子句？
+当`if`语句的条件求值为`false`时，`else`后的语句块会执行。何不在最后一个编码练习（第 65 页）中尝试添加一个`else`子句？
 
-上方：为 `if` 语句添加语句块。
+上方：为`if`语句添加语句块。
 
-右侧：当条件表达式求值为 false 时，`else` 子句被触发。
+右侧：当条件表达式求值为 false 时，`else`子句被触发。
 
 ## Else If 子句
 
@@ -1410,13 +1421,13 @@ if (condition) {
 }
 ```
 
-我们可以根据需要添加任意多个 `else if` 子句，并且可以用一个最终的 `else` 子句来结束，该子句仅在所有前面的条件都求值为 `false` 时才执行。
+我们可以根据需要添加任意多个`else if`子句，并且可以用一个最终的`else`子句来结束，该子句仅在所有前面的条件都求值为`false`时才执行。
 
-上方：`else if` 子句允许在 `if` 语句中进行多个条件测试。
+上方：`else if`子句允许在`if`语句中进行多个条件测试。
 
 ## SWITCH 语句
 
-使用 `switch` 与 `if` 类似，但它不是测试条件是否为 true 或 false，而是 switch 语句根据条件表达式的结果选择要执行的代码块。要测试的值在 `case` 部分中指定。通用形式如下：
+使用`switch`与`if`类似，但它不是测试条件是否为 true 或 false，而是`switch`语句根据条件表达式的结果选择要执行的代码块。要测试的值在`case`部分中指定。通用形式如下：
 
 ```javascript
 switch(condition) {
@@ -1434,24 +1445,25 @@ switch(condition) {
 
 ### Switch 语句的工作原理
 
-当解释器遇到 `switch` 语句时，它会计算条件表达式，然后在 switch 块中查找与条件结果匹配的 `case` 标签。如果找到匹配项，则执行其后的所有语句，包括后续 `case` 部分中包含的语句。
+当解释器遇到`switch`语句时，它会计算条件表达式，然后在`switch`块中查找与条件结果匹配的`case`标签。如果找到匹配项，则执行其后的所有语句，包括后续`case`部分中包含的语句。
 
-上方：`switch` 语句的流程。
+上方：`switch`语句的流程。
 
 ## 嵌套 IF 语句
 
-`else if` 子句创建了一种分支逻辑结构，这在编程中非常常见。但要小心：随着每个额外分支的增加，这种结构会变得越来越复杂——我们通常可以通过使用不同的条件语句来完全避免它们。
+`else if`子句创建了一种分支逻辑结构，这在编程中非常常见。但要小心：随着每个额外分支的增加，这种结构会变得越来越复杂——我们通常可以通过使用不同的条件语句来完全避免它们。
 
 ### 从 CASE 部分跳出
 
-为了防止后续的 case 部分被执行，我们在每个 case 的末尾包含一个 break 关键字。这告诉解释器停止处理该语句块，并在块后的第一条语句处恢复执行。
+为了防止后续的`case`部分被执行，我们在每个`case`的末尾包含一个`break`关键字。这告诉解释器停止处理该语句块，并在块后的第一条语句处恢复执行。
 
 **实用技巧**
-如果你发现 if-else-if 语句的结构变得过于笨重难以管理，switch 语句可能是一种更合适的方法。
+
+如果你发现`if-else-if`语句的结构变得过于笨重难以管理，`switch`语句可能是一种更合适的方法。
 
 ### DEFAULT CASE
 
-switch 语句可以包含一个特殊的 default 部分，如果遇到该部分则始终触发。这通常放在 switch 的末尾，以便仅在没有任何 case 标签与条件表达式匹配时才被选中。
+`switch`语句可以包含一个特殊的`default`部分，如果遇到该部分则始终触发。这通常放在`switch`的末尾，以便仅在没有任何`case`标签与条件表达式匹配时才被选中。
 
 ## 循环语句
 
@@ -1459,7 +1471,7 @@ switch 语句可以包含一个特殊的 default 部分，如果遇到该部分�
 
 ### WHILE 循环
 
-最简单的循环语句形式称为 while 循环。其通用形式如下：
+最简单的循环语句形式称为`while`循环。其通用形式如下：
 
 ```javascript
 while(condition) {
@@ -1468,6 +1480,7 @@ while(condition) {
 ```
 
 **实用技巧**
+
 注意：如果你错误地编写了循环，你可能会触发一个无限循环，其中解释器会无限期地卡在处理同一个循环语句中。
 
 ```javascript
@@ -1492,13 +1505,13 @@ while(condition) {
 
 如果条件求值为 true，则执行条件后代码块中包含的语句，然后再次测试条件。如果仍然为 true，则重复此过程。这持续进行直到条件求值为 false。
 
-*上方：这个虚构的脚本展示了如何使用 switch 语句。*
+*上方：这个虚构的脚本展示了如何使用`switch`语句。*
 
-*上方：while 循环的流程。*
+*上方：`while`循环的流程。*
 
 ### DO WHILE 循环
 
-这些循环与 `while` 循环非常相似，区别在于条件仅在语句块执行后才进行评估。如果条件求值为 `true`，则语句块会重复执行，并再次评估条件。其形式如下：
+这些循环与`while`循环非常相似，区别在于条件仅在语句块执行后才进行评估。如果条件求值为`true`，则语句块会重复执行，并再次评估条件。其形式如下：
 
 ```javascript
 do {
@@ -1508,17 +1521,19 @@ do {
 
 ### FOR 循环的组成部分
 
-`for` 循环的三个组成部分是控制循环重复执行的表达式：
+`for`循环的三个组成部分是控制循环重复执行的表达式：
 
 - **初始化**：此表达式求值一次，并为循环创建一个初始索引；索引只是一个数字，通常用于计算已发生的循环迭代次数。
+
 - **条件**：这是测试以判断循环是否继续重复的表达式。在大多数情况下，条件表达式会测试索引的值是否与另一个值（例如数组的长度）相匹配。
+
 - **迭代表达式**：此表达式在循环的语句块执行后求值，其预期用途是在下一次迭代之前修改索引的值。
 
 ## FOR 循环
 
-`for` 循环通常用于处理数组的元素，因为它简化了针对数组中每个元素执行相同语句块的过程。
+`for`循环通常用于处理数组的元素，因为它简化了针对数组中每个元素执行相同语句块的过程。
 
-`for` 循环的声明可能看起来有点令人生畏——让我们先看看它，然后分析它的含义：
+`for`循环的声明可能看起来有点令人生畏——让我们先看看它，然后分析它的含义：
 
 ```javascript
 for (initialize ; condition ; iteration ) {
@@ -1530,18 +1545,19 @@ for (initialize ; condition ; iteration ) {
 
 在第 41 页的练习中，我们创建了两个表示测验中问题的对象——我们将在此基础上继续。
 
-1.  创建一个新文件夹并将其命名为 SimpleQuiz。创建一个子文件夹并将其命名为 js——我们将在后续示例中将外部脚本文件存储在此处。
+1.  创建一个新文件夹并将其命名为`SimpleQuiz`。创建一个子文件夹并将其命名为`js`——我们将在后续示例中将外部脚本文件存储在此处。
 
-2.  创建一个包含常见结构元素的新 HTML 文档，并将其作为 simpleQuiz.html 保存在新文件夹中。同时创建一个新的 JavaScript 文档，并将其作为 quizQuestions.js 保存在 js 子文件夹中。
+2.  创建一个包含常见结构元素的新 HTML 文档，并将其作为`simpleQuiz.html`保存在新文件夹中。同时创建一个新的 JavaScript 文档，并将其作为`quizQuestions.js`保存在`js`子文件夹中。
 
-3.  返回 HTML 文档。在 `<head>` 元素中添加一个 `<script>` 子元素，将其 type 属性设置为 "text/javascript"，src 属性设置为 "js/quizQuestions.js"。请参见下图。
+3.  返回 HTML 文档。在`<head>`元素中添加一个`<script>`子元素，将其`type`属性设置为`"text/javascript"`，`src`属性设置为`"js/quizQuestions.js"`。请参见下图。
 
-4.  转到 quizQuestions.js，我们将在其中定义问题本身。在文件顶部，声明一个名为 questions 的数组变量。
+4.  转到`quizQuestions.js`，我们将在其中定义问题本身。在文件顶部，声明一个名为`questions`的数组变量。
 
-5.  现在我们将通过在 `push()` 方法的括号内声明对象和数组字面量来添加问题，如下图所示。你可以复制我们的问题和答案，或者自己编写。
+5.  现在我们将通过在`push()`方法的括号内声明对象和数组字面量来添加问题，如下图所示。你可以复制我们的问题和答案，或者自己编写。
 
 **实用技巧**
-我们不再提醒你为 `<script>` 元素添加 type 属性了——请认为这是你应该做的。
+
+我们不再提醒你为`<script>`元素添加`type`属性了——请认为这是你应该做的。
 
 ```javascript
 1 var questions = [];
@@ -1586,28 +1602,27 @@ for (initialize ; condition ; iteration ) {
 
 6.  保存 JavaScript 文档，然后在编辑器中返回 HTML 文档。
 
-
-
 上图：步骤 7：将此处所示的代码添加到你的 HTML 文档中。
 
-- 7. 在 `<body>` 元素下添加一个新的 `<script>` 元素作为其子元素——添加上图所示的代码。
+- 7. 在`<body>`元素下添加一个新的`<script>`元素作为其子元素——添加上图所示的代码。
+
 - 9. 保存你的工作，并在 Firefox 中启动该 HTML 页面。
 
 ## 工作原理
 
-第一个 `<script>` 元素非常简单——它链接到一个脚本，我们在其中声明代表测验题目的对象，并将这些对象存储在一个名为 `questions` 的数组中。该数组对页面中的所有脚本都是可访问的，并且定义在 `<head>` 中，以便我们可以确保在处理页面的 `<body>` 时它已经可用。
+第一个`<script>`元素非常简单——它链接到一个脚本，我们在其中声明代表测验题目的对象，并将这些对象存储在一个名为`questions`的数组中。该数组对页面中的所有脚本都是可访问的，并且定义在`<head>`中，以便我们可以确保在处理页面的`<body>`时它已经可用。
 
 上图：我们的测验正在逐渐成形。
 
-现在让我们看看第二个 `<script>` 元素中的 `for` 循环。索引被初始化为 `0`。然后对条件 `i < questions.length` 进行求值。当 `i` 为 `0` 时，条件求值为 `true`，因此执行循环体，并使用熟悉的 `document.write()` 技术将文本写入页面。需要注意的是，我们使用循环索引 `i` 依次访问 `questions` 数组的每个元素。
+现在让我们看看第二个`<script>`元素中的`for`循环。索引被初始化为`0`。然后对条件`i < questions.length`进行求值。当`i`为`0`时，条件求值为`true`，因此执行循环体，并使用熟悉的`document.write()`技术将文本写入页面。需要注意的是，我们使用循环索引`i`依次访问`questions`数组的每个元素。
 
-语句块完成后，会对迭代表达式 `i++` 进行求值，将索引加 `1`，然后再次测试条件。这个过程会重复进行，直到条件求值为 `false` 为止。
+语句块完成后，会对迭代表达式`i++`进行求值，将索引加`1`，然后再次测试条件。这个过程会重复进行，直到条件求值为`false`为止。
 
 ## 从循环或迭代中退出
 
-我们可以通过编写 `break` 关键字随时退出循环，导致脚本执行在循环之后的第一个语句处继续。我们也可以使用 `continue` 退出当前循环迭代，这会指示解释器立即对迭代和条件表达式进行求加密，然后在需要时继续循环。
+我们可以通过编写`break`关键字随时退出循环，导致脚本执行在循环之后的第一个语句处继续。我们也可以使用`continue`退出当前循环迭代，这会指示解释器立即对迭代和条件表达式进行求加密，然后在需要时继续循环。
 
-上图：`continue` 和 `break` 语句分别使我们能够跳过某次迭代或完全退出循环。
+上图：`continue`和`break`语句分别使我们能够跳过某次迭代或完全退出循环。
 
 ## 函数与类
 
@@ -1617,15 +1632,15 @@ for (initialize ; condition ; iteration ) {
 
 ### 内置函数
 
-JavaScript 有许多内置函数——事实上，我们一直在使用其中一个：`alert()` 函数。当我们在脚本中使用函数名称时，我们是在**调用**或**执行**该函数——函数名称后面的括号表明了这一点。利用这些括号，我们还可以传递数据——称为**参数**——给函数。
+JavaScript 有许多内置函数——事实上，我们一直在使用其中一个：`alert()`函数。当我们在脚本中使用函数名称时，我们是在**调用**或**执行**该函数——函数名称后面的括号表明了这一点。利用这些括号，我们还可以传递数据——称为**参数**——给函数。
 
 ### 函数参数
 
-参数是传递给函数的值，函数可以使用这些值。例如，在调用 `alert()` 函数时，我们将希望对话框显示的消息字符串放在括号内。有些函数需要传递多个参数——在这种情况下，我们用逗号分隔每个参数。
+参数是传递给函数的值，函数可以使用这些值。例如，在调用`alert()`函数时，我们将希望对话框显示的消息字符串放在括号内。有些函数需要传递多个参数——在这种情况下，我们用逗号分隔每个参数。
 
 ### 命名函数
 
-创建函数有几种技术，但第一种很简单——我们使用 `function` 关键字。它看起来像这样：
+创建函数有几种技术，但第一种很简单——我们使用`function`关键字。它看起来像这样：
 
 ```javascript
 function functionName (parameter_1, parameter_2, ... , parameter_n) {
@@ -1647,9 +1662,11 @@ showMessageToUser("Oliver", "Your function is working");
 
 在函数调用中传递参数时，它们必须按照函数定义中参数列出的相同顺序排列。
 
-`functionName` 是赋予函数的名称——它必须遵循标识符命名规则（见第 25 页）。函数定义可以包含一个以逗号分隔的参数列表——这些是接收调用函数时作为参数传递的值的标识符，可以被函数内的语句使用。括号后面是一个语句块——这被称为函数体，在函数被调用时执行。
+`functionName`是赋予函数的名称——它必须遵循标识符命名规则（见第 25 页）。函数定义可以包含一个以逗号分隔的参数列表——这些是接收调用函数时作为参数传递的值的标识符，可以被函数内的语句使用。括号后面是一个语句块——这被称为函数体，在函数被调用时执行。
 
 上图：函数调用将值赋给函数定义中的命名参数
+
+
 
 ```javascript
 showMessageToUser("Oliver", "Your function is working");
@@ -1671,10 +1688,10 @@ function showMessageToUser(userName, message) {
 
 在之前的练习（第 74 页）中，我们编写了一些代码，将自定义问题对象的内容呈现在页面上——让我们把它包装在一个可重用的函数中。
 
-- 1. 在你的编辑器中，创建一个新的 JavaScript 文件，并将其保存为 `quizFunctions.js`，放在我们 SimpleQuiz 文件夹的 js 子文件夹中。
-- 2. 添加函数声明，如右图所示。请注意，我们命名了一个参数 `questionIndex`——我们的想法是在调用函数时传递一个索引值作为参数。
-- 3. 在你的编辑器中打开 `simpleQuiz.html`。在 `<head>` 元素下添加一个新的 `<script>` 元素作为其子元素，并将其 src 属性设置为 "js/quizFunctions.js"。
-- 4. 在 HTML 文档中找到 for 循环，然后删除循环体中的所有语句，并用对我们新函数的调用替换它们。
+1. 在你的编辑器中，创建一个新的 JavaScript 文件，并将其保存为`quizFunctions.js`，放在我们 SimpleQuiz 文件夹的 js 子文件夹中。
+2. 添加函数声明，如右图所示。请注意，我们命名了一个参数`questionIndex`——我们的想法是在调用函数时传递一个索引值作为参数。
+3. 在你的编辑器中打开`simpleQuiz.html`。在`<head>`元素下添加一个新的`<script>`元素作为其子元素，并将其`src`属性设置为`"js/quizFunctions.js"`。
+4. 在 HTML 文档中找到`for`循环，然后删除循环体中的所有语句，并用对我们新函数的调用替换它们。
 
 ```javascript
 function renderQuestionAtIndex(questionIndex) {
@@ -1702,22 +1719,23 @@ function renderQuestionAtIndex(questionIndex) {
 
 ## 从函数返回值
 
-我们通常希望以某种方式处理传递给函数的值，并将计算结果返回给调用表达式——返回的值将成为函数调用表达式的值。我们使用 `return` 关键字来实现这一点。
+我们通常希望以某种方式处理传递给函数的值，并将计算结果返回给调用表达式——返回的值将成为函数调用表达式的值。我们使用`return`关键字来实现这一点。
 
 ### 使用 Return 关键字
 
-当解释器遇到 `return` 时，它会停止处理该函数并返回到调用表达式。如果函数需要将一个值送回给调用表达式，我们将该值放在 `return` 关键字后面的括号中——例如：
+当解释器遇到`return`时，它会停止处理该函数并返回到调用表达式。如果函数需要将一个值送回给调用表达式，我们将该值放在`return`关键字后面的括号中——例如：
 
 ```javascript
 return(functionResult);
 ```
 
 > **实用提示**
-> 好的做法是尽量安排使得函数中只有*一个* `return` 关键字——但这并不总是能做到。
+>
+> 好的做法是尽量安排使得函数中只有一个`return`关键字——但这并不总是能做到。
 
-`renderQuestion(i);` 如上一页的插图所示。请注意，我们正在将循环索引值传递给函数，函数将使用它来访问 questions 数组中的元素。
+`renderQuestion(i);`如上一页的插图所示。请注意，我们正在将循环索引值传递给函数，函数将使用它来访问`questions`数组中的元素。
 
-- 5. 保存 HTML 文档，并返回 `quizFunctions.js`。将下图所示的代码添加到 `renderQuestion(index)` 函数体中。
+5. 保存 HTML 文档，并返回`quizFunctions.js`。将下图所示的代码添加到`renderQuestion(index)`函数体中。
 
 ```javascript
 function renderQuestion(index) {
@@ -1733,8 +1751,8 @@ function renderQuestion(index) {
 
 上图 5：将此处所示的代码添加到函数体中。
 
-- 6. 请注意，函数体几乎与我们刚刚删除的代码完全相同，但现在我们只需向函数传递一个索引值就能呈现一个问题。
-- 7. 保存你的工作并在 Firefox 中打开页面。如果一切顺利，你应该会看到与之前完全相同的结果。
+6. 请注意，函数体几乎与我们刚刚删除的代码完全相同，但现在我们只需向函数传递一个索引值就能呈现一个问题。
+7. 保存你的工作并在 Firefox 中打开页面。如果一切顺利，你应该会看到与之前完全相同的结果。
 
 ```javascript
 function calculateRectArea(rectWidth, rectHeight) {
@@ -1749,13 +1767,11 @@ var myRectArea = calculateRectArea(217, 179);
 
 上图：函数返回的值成为函数调用表达式的值。
 
-
-
 ## 在检查测验答案时使用 Return
 
-我们的测验需要能够判断用户是否选择了正确答案 —— 现在让我们为此编写一个函数。
+我们的测验需要能够判断用户是否选择了正确答案——现在让我们为此编写一个函数。
 
-1. 在编辑器中打开 `quizFunctions.js`，并添加一个名为 `checkUserAnswer()` 的新函数 —— 见下图。该函数将接收两个参数 —— 问题索引（question index）和答案索引（answer index） —— 从而允许函数确定要检查的问题以及给出的答案。
+1. 在编辑器中打开`quizFunctions.js`，并添加一个名为`checkUserAnswer()`的新函数——见下图。该函数将接收两个参数——问题索引（question index）和答案索引（answer index）——从而允许函数确定要检查的问题以及给出的答案。
 
 ```javascript
 function checkUserAnswer(questionIndex, answerIndex) {
@@ -1782,11 +1798,11 @@ function checkUserAnswer(questionIndex, answerIndex) {
 
 上图：步骤 2：输入此处所示的代码。
 
-3. 如果你现在启动页面，不会有任何新变化，因为我们还没有以任何方式触发这个新函数 —— 我们将在第 116 页讨论“事件（Events）”时处理这个问题。
+3. 如果你现在启动页面，不会有任何新变化，因为我们还没有以任何方式触发这个新函数——我们将在第 116 页讨论“事件（Events）”时处理这个问题。
 
 ## 匿名函数
 
-在 JavaScript 中，函数只是另一种形式的数据。这意味着你可以创建一个函数并将其赋值给变量或对象属性。此类函数被称为**匿名函数**，因为它们没有函数名称。
+在 JavaScript 中，函数只是另一种形式的数据。这意味着你可以创建一个函数并将其赋值给变量或对象属性。此类函数被称为匿名函数，因为它们没有函数名称。
 
 ### 声明匿名函数
 
@@ -1824,11 +1840,11 @@ var myRectHypotenuse = calculateRectHypotenuse(49, 28);
 
 ## 变量作用域
 
-当变量在任何函数或语句块之外声明时，它可以从网页的任何地方访问，因此被称为**全局变量**。另一种表达方式是，该变量存在于**全局作用域**（global scope）中。相反，在函数内部声明的变量只能在该函数内部访问 —— 也就是说，它们处于该函数的**作用域**内。
+当变量在任何函数或语句块之外声明时，它可以从网页的任何地方访问，因此被称为全局变量。另一种表达方式是，该变量存在于全局作用域（global scope）中。相反，在函数内部声明的变量只能在该函数内部访问——也就是说，它们处于该函数的作用域内。
 
 ### 作用域链
 
-作用域是层级结构的 —— 一个作用域嵌套在另一个作用域之中。例如，具名函数总是存在于全局作用域中。一个表达式只能访问与其处于同一作用域或在作用域链中位置更高（更外层）的变量。
+作用域是层级结构的——一个作用域嵌套在另一个作用域之中。例如，具名函数总是存在于全局作用域中。一个表达式只能访问与其处于同一作用域或在作用域链中位置更高（更外层）的变量。
 
 全局作用域 - 可从页面中的所有脚本和函数访问
 
@@ -1838,7 +1854,7 @@ var myRectHypotenuse = calculateRectHypotenuse(49, 28);
 
 ## 命名空间
 
-我们在 JavaScript 中创建了大量的命名对象 —— 变量和函数 —— 每个对象的名称在其自身作用域内应该是唯一的。如果不是唯一的，就会发生名称冲突，导致程序出现严重错误。
+我们在 JavaScript 中创建了大量的命名对象——变量和函数——每个对象的名称在其自身作用域内应该是唯一的。如果不是唯一的，就会发生名称冲突，导致程序出现严重错误。
 
 ### 什么是命名空间？
 
@@ -1850,15 +1866,15 @@ var myRectHypotenuse = calculateRectHypotenuse(49, 28);
 | **Shoot（嫩芽）：** 从树或植物主干生长出的幼枝 | **Shoot（射击）：** 开枪或发射大炮的行为 |
 | **Dope（笨蛋）：** 一个愚蠢或懒惰的人 | **Dope（注射）：** 管理或施用药物 |
 
-上图：我们可以将动词和名词视为现实世界命名空间的例子 —— 一个名称可以同时出现在两者中，但含义截然不同。
+上图：我们可以将动词和名词视为现实世界命名空间的例子——一个名称可以同时出现在两者中，但含义截然不同。
 
 > **实用技巧**
 >
-> 命名空间的概念起初可能看起来很令人困惑，但在实践中其实非常简单 —— 我们一直都在使用它们。
+> 命名空间的概念起初可能看起来很令人困惑，但在实践中其实非常简单——我们一直都在使用它们。
 
 ### 在 JavaScript 中模拟命名空间
 
-与某些语言不同，JavaScript 没有用于创建命名空间的正式符号。然而，请记住 JavaScript 中的一切都是对象 —— 由此产生的结果是，我们可以在全局命名空间中创建一个对象，然后在这个对象内部定义我们所有的变量和函数。这样我们的名称就不会污染全局命名空间，而且如果我们明智地选择命名空间对象的名称，就不会与其他脚本中使用相同的名称。
+与某些语言不同，JavaScript 没有用于创建命名空间的正式符号。然而，请记住 JavaScript 中的一切都是对象——由此产生的结果是，我们可以在全局命名空间中创建一个对象，然后在这个对象内部定义我们所有的变量和函数。这样我们的名称就不会污染全局命名空间，而且如果我们明智地选择命名空间对象的名称，就不会与其他脚本中使用相同的名称。
 
 ### 什么是名称冲突？
 
@@ -1890,11 +1906,11 @@ myNamespace.calculateRectArea = function(rectWidth, rectHeight) {
 
 ### 为命名空间选择名称
 
-鉴于命名空间的名称必须存在于全局命名空间中，完全有可能与其他命名空间的名称发生冲突。避免这种情况的诀窍是选择一个不太可能被他人使用的名称。怎么做？很简单 —— 根据你网站的域名来命名命名空间。通常，我们会将域名反转，所以如果你的域名是 `mydomain.com`，你的命名空间就是 `com.mydomain`。然后你可以根据每个应用程序和/或每个模块进一步扩展 —— 例如 `com.mydomain.myApplication`。
+鉴于命名空间的名称必须存在于全局命名空间中，完全有可能与其他命名空间的名称发生冲突。避免这种情况的诀窍是选择一个不太可能被他人使用的名称。怎么做？很简单——根据你网站的域名来命名命名空间。通常，我们会将域名反转，所以如果你的域名是`mydomain.com`，你的命名空间就是`com.mydomain`。然后你可以根据每个应用程序和/或每个模块进一步扩展——例如`com.mydomain.myApplication`。
 
 > **实用技巧**
 >
-> 重要的是要理解，命名空间名称并不指向一个页面或 Web 资源 —— 它仅仅是一个名称。
+> 重要的是要理解，命名空间名称并不指向一个页面或 Web 资源——它仅仅是一个名称。
 
 ### 全局作用域命名空间
 
@@ -1912,13 +1928,10 @@ myNamespace.calculateRectArea = function(rectWidth, rectHeight) {
 
 让我们为 Simple Quiz 项目中的对象创建一个命名空间。
 
-1. 在编辑器中打开 `quizQuestions.js`，并在文档顶部创建几行空行。
-
-2. 我们将使用 `com.flameTreepublishing` 作为我们的命名空间 —— 这意味着我们需要在全局命名空间中创建一个名为 `com` 的对象，并在 `com` 对象内部创建另一个名为 `flameTreepublishing` 的对象。
-
-3. 复制插图（右）中所示的代码。在声明（但尚未初始化）`com` 之后，我们在初始化每个命名空间对象之前测试它是否不存在（参见第 57 页的“逻辑非运算符”）。这是为了避免初始化一个已经存在的命名空间。
-
-4. 现在我们将调整脚本的其余部分，使其使用新的命名空间 —— 见插图（右）中未变暗的部分。
+1. 在编辑器中打开`quizQuestions.js`，并在文档顶部创建几行空行。
+2. 我们将使用`com.flameTreepublishing`作为我们的命名空间——这意味着我们需要在全局命名空间中创建一个名为`com`的对象，并在`com`对象内部创建另一个名为`flameTreepublishing`的对象。
+3. 复制插图（右）中所示的代码。在声明（但尚未初始化）`com`之后，我们在初始化每个命名空间对象之前测试它是否不存在（参见第 57 页的“逻辑非运算符”）。这是为了避免初始化一个已经存在的命名空间。
+4. 现在我们将调整脚本的其余部分，使其使用新的命名空间——见插图（右）中未变暗的部分。
 
 ```javascript
 var com;
@@ -1957,11 +1970,11 @@ com.flameTreepublishing.questions.push({
 
 上图：步骤 4：按照此处突出显示的部分调整脚本。
 
+5. 保存`quizQuestions.js`并打开`quizFunctions.js`。在所有脚本的顶部包含你的命名空间声明是一个良好的习惯，因此请将其复制到`quizFunctions.js`的顶部。
 
 
-5. 保存 quizQuestions.js 并打开 quizFunctions.js。在所有脚本的顶部包含你的命名空间声明是一个良好的习惯，因此请将其复制到 quizFunctions.js 的顶部。
 
-```
+```javascript
 9 com.flametreepublishing.renderQuestionAtIndex = function(questionIndex) {
 10 document.write("<h2>QUESTION " + (questionIndex + 1) + "</h2>");
 11 var questionObject = com.flametreepublishing.questions[questionIndex];
@@ -1977,13 +1990,13 @@ com.flameTreepublishing.questions.push({
 21 var theResult;
 ```
 
-上图：步骤 6：更新此处高亮显示的引用
+上图：步骤 6：更新此处高亮显示的引用。
 
-6. 为了将函数放置在我们的命名空间中，我们需要将它们更改为匿名函数。我们还需要更新所有对 questions 数组的引用——请参阅上方插图中高亮的部分。
+6. 为了将函数放置在我们的命名空间中，我们需要将它们更改为匿名函数。我们还需要更新所有对`questions`数组的引用——请参阅上方插图中高亮的部分。
 
-7. 保存文档，然后在编辑器中打开 simpleQuiz.html。找到 for 循环并更新其条件表达式和函数调用，如下图所示。
+7. 保存文档，然后在编辑器中打开`simpleQuiz.html`。找到`for`循环并更新其条件表达式和函数调用，如下图所示。
 
-```
+```javascript
 12 <script type="text/javascript">
 13 for(var i = 0; i < com.flametreepublishing.questions.length ; i++) {
 14 com.flametreepublishing.renderQuestionAtIndex(i);
@@ -1991,7 +2004,7 @@ com.flameTreepublishing.questions.push({
 16 </script>
 ```
 
-上图：步骤 7：更新条件表达式和函数调用如所示
+上图：步骤 7：更新条件表达式和函数调用如所示。
 
 8. 保存你的工作并在 Firefox 中打开该页面——同样地，它看起来应该与之前完全一样，但在底层我们拥有一个纯净且无污染的命名空间。
 
@@ -2023,7 +2036,7 @@ OOP 正是利用了这种分层分类系统。我们编写被称为“类”（c
 
 上图：我们对事物的分类方式也是我们的结构化方式。上图：这种通用的世界分类在 OOP 的软件结构中得到了镜像反映。
 
-然而，这个类定义本身并不是该类的一个对象——要创建这样一个对象，我们必须调用类的**构造函数**（constructor），因为正是它根据类定义生成对象。这个生成的对象被称为该类的**实例**（instance），因此调用类构造函数的行为通常被称为**实例化**（instantiating）该类。
+然而，这个类定义本身并不是该类的一个对象——要创建这样一个对象，我们必须调用类的`构造函数`（constructor），因为正是它根据类定义生成对象。这个生成的对象被称为该类的`实例`（instance），因此调用类构造函数的行为通常被称为`实例化`（instantiating）该类。
 
 ### 一个庞大的课题
 
@@ -2033,17 +2046,17 @@ OOP 是一个非常深奥的主题，我们不会深入探讨——如果你想�
 
 ## JavaScript 类
 
-我们已经在处理 JavaScript 类了——**number**、**string** 和 **array** 都是内置类。它们都从 **object** 类继承了一些特征——用 OOP 的术语来说，这使得 **object** 成为这些其他类的**超类**（superclass）。
+我们已经在处理 JavaScript 类了——`number`、`string`和`array`都是内置类。它们都从`object`类继承了一些特征——用 OOP 的术语来说，这使得`object`成为这些其他类的`超类`（superclass）。
 
-我们也在使用类方法：例如，`write` 是 HTMLDocument 类的一个方法——我们将其用作 `document.write()`。（`document` 是 HTMLDocument 类的一个实例。）这些类内置于语言中，但我们也可以构建自己的类。
+我们也在使用类方法：例如，`write`是 HTMLDocument 类的一个方法——我们将其用作`document.write()`。（`document`是 HTMLDocument 类的一个实例。）这些类内置于语言中，但我们也可以构建自己的类。
 
 ### 定义自定义类
 
-我们 Simple Quiz 应用程序中的问题目前定义在通用对象中——让我们改为开发一个 **QuizQuestion** 类。
+我们 Simple Quiz 应用程序中的问题目前定义在通用对象中——让我们改为开发一个`QuizQuestion`类。
 
-- 1. 创建一个新的 JavaScript 文档，并将其保存在 Simple Quiz 的 **js** 文件夹中，命名为 **QuizQuestion.js**。同时在 simpleQuiz.html 的 `<head>` 中创建一个 `<script>` 元素，并将其链接到这个新脚本。见下图。
+1. 创建一个新的 JavaScript 文档，并将其保存在 Simple Quiz 的`js`文件夹中，命名为`QuizQuestion.js`。同时在`simpleQuiz.html`的`<head>`中创建一个`<script>`元素，并将其链接到这个新脚本。见下图。
 
-```
+```html
 1  <!DOCTYPE HTML>
 2  <html>
 3    <head>
@@ -2061,11 +2074,11 @@ OOP 是一个非常深奥的主题，我们不会深入探讨——如果你想�
 15         com.flametreepublishing.renderQuestionAtIndex(i);
 ```
 
-- 2. 在 QuizQuestion.js 的顶部添加我们的命名空间声明（见第 93 页）。
+2. 在`QuizQuestion.js`的顶部添加我们的命名空间声明（见第 93 页）。
 
-- 3. 我们将把这个类命名为 QuizQuestion，所以首先要做的是定义构造函数——见下图。构造函数与类同名。
+3. 我们将把这个类命名为`QuizQuestion`，所以首先要做的是定义构造函数——见下图。构造函数与类同名。
 
-```
+```javascript
 1 var com;
 2 if(!com) {
 3   com = {};
@@ -2083,22 +2096,23 @@ OOP 是一个非常深奥的主题，我们不会深入探讨——如果你想�
 
 ## 创建实例
 
-既然定义了构造函数，我们就可以使用 `new` 关键字来创建 QuizQuestion 实例，如下所示：
+既然定义了构造函数，我们就可以使用`new`关键字来创建`QuizQuestion`实例，如下所示：
 
-```
+```javascript
 new com.flametreepublishing.QuizQuestion(arguments);
 ```
 
-回想一下，QuizQuestion 构造函数期望接收四个参数：问题编号、问题文本、可能答案的数组以及正确答案的索引。在实例化类时，所有这些都需要包含在构造函数名称后的括号内——我们很快就会详细讲解这一点。
+回想一下，`QuizQuestion`构造函数期望接收四个参数：问题编号、问题文本、可能答案的数组以及正确答案的索引。在实例化类时，所有这些都需要包含在构造函数名称后的括号内——我们很快就会详细讲解这一点。
 
 > 小贴士
+>
 > 按照惯例，我们用大写字母开头命名类，用小写字母开头命名实例。
 
-- 4. 如你所见，构造函数期望四个参数。这些参数对应于我们希望 QuizQuestion 实例拥有的属性；我们在名称前添加了前缀 'q'，以便将它们与同名的类属性区分开来。
+4. 如你所见，构造函数期望四个参数。这些参数对应于我们希望`QuizQuestion`实例拥有的属性；我们在名称前添加了前缀`q`，以便将它们与同名的类属性区分开来。
 
-- 5. 将上方插图中高亮显示的代码添加到构造函数的正文中。
+5. 将上方插图中高亮显示的代码添加到构造函数的正文中。
 
-```
+```javascript
 9  com.flametreepublishing.QuizQuestion = function(qQuestionNum,
 10                                qQuestionText,
 11                                qAnswers,
@@ -2113,7 +2127,7 @@ new com.flametreepublishing.QuizQuestion(arguments);
 
 上图：步骤 5：添加此处高亮的代码。
 
-```
+```javascript
 20 new com.flametreepublishing.QuizQuestion(
 21   1,
 22   "Approximately how far away from the Earth is the Sun?",
@@ -2124,17 +2138,15 @@ new com.flametreepublishing.QuizQuestion(arguments);
 
 上图：实例化一个类会创建该类的一个对象，然后我们可以对其进行操作。
 
-在这里，我们第一次遇到了 `this` 关键字——见上文。
+在这里，我们第一次遇到了`this`关键字——见上文。
 
-## `this` 关键字
+## `this`关键字
 
-上一个实操环节引入了特殊的 `this` 关键字。当在构造函数中使用时，`this` 指的是正在构建的那个实例。
+上一个实操环节引入了特殊的`this`关键字。当在构造函数中使用时，`this`指的是正在构建的那个实例。
 
-在我们刚刚编写的代码中，有四个以 `this` 开头的语句——这些语句将发送给构造函数的参数值分配给新实例。通过将这些值分配给 `this`，我们将它们分配给了新实例。
+在我们刚刚编写的代码中，有四个以`this`开头的语句——这些语句将发送给构造函数的参数值分配给新实例。通过将这些值分配给`this`，我们将它们分配给了新实例。
 
-- 6. 保存你的工作。
-
-
+6. 保存你的工作。
 
 当`this`在类方法中使用时，它指向执行该方法的类的具体实例。在接下来的练习中，这一点会变得更加清晰。
 
@@ -2146,9 +2158,9 @@ new com.flametreepublishing.QuizQuestion(arguments);
 
 ## 原型对象
 
-如前所述，JavaScript 的 object 类在语言中占有崇高的地位——它是所有其他类的基础。结果是，所有其他类，包括我们自己定义的类，都继承了 object 类的方法和属性。其中一个属性叫做`prototype`——类的方法应当定义在此处。让我们看看具体怎么做。
+如前所述，JavaScript 的`object`类在语言中占有崇高的地位——它是所有其他类的基础。结果是，所有其他类，包括我们自己定义的类，都继承了`object`类的方法和属性。其中一个属性叫做`prototype`——类的方法应当定义在此处。让我们看看具体怎么做。
 
-```
+```javascript
 25
 26 //问题 1
 27 com.flametreepublishing.questions.push({
@@ -2162,11 +2174,11 @@ new com.flametreepublishing.QuizQuestion(arguments);
 
 ## 定义类方法
 
-在我们的测验中目前有一个函数`checkUserAnswer`，它更适合作为我们新 QuizQuestion 类的一个方法。
+在我们的测验中目前有一个函数`checkUserAnswer`，它更适合作为我们新`QuizQuestion`类的一个方法。
 
-1. 在编辑器中打开 QuizQuestion.js。
+1. 在编辑器中打开`QuizQuestion.js`。
 
-```
+```javascript
 15
 16 com.flametreepublishing.QuizQuestion.prototype.checkUserAnswer = function(answerIndex) {
 17   var theResult;
@@ -2183,7 +2195,7 @@ new com.flametreepublishing.QuizQuestion(arguments);
 
 ![](img/9f289ad67d43b98b3bcc0d91197bccf6_52_0.png)
 
-2. 在构造函数下方创建几个空行，然后输入上一页图中所示的 checkUserAnswer 方法定义。这使用的逻辑与我们之前同名函数大致相同。
+2. 在构造函数下方创建几个空行，然后输入上一页图中所示的`checkUserAnswer`方法定义。这使用的逻辑与我们之前同名函数大致相同。
 
 3. 注意方法名必须以命名空间、类名和原型属性引用为前缀。这可能会有些冗长，但不可避免。
 
@@ -2197,11 +2209,11 @@ new com.flametreepublishing.QuizQuestion(arguments);
 
 让我们为 Simple Quiz 应用程序创建一个主类。
 
-1. 新建一个 JavaScript 文档，并将其保存在项目的 js 文件夹中，命名为 SimpleQuiz.js。
+1. 新建一个 JavaScript 文档，并将其保存在项目的`js`文件夹中，命名为`SimpleQuiz.js`。
 
-2. 在编辑器中打开 simpleQuiz.html。添加一个 `<script>` 元素来链接新的 SimpleQuiz.js 脚本，并删除链接到 quizQuestions.js 和 quizFunctions.js 的 `<script>` 元素。保存 HTML 文件，然后切换回 SimpleQuiz.js。参见右图。
+2. 在编辑器中打开`simpleQuiz.html`。添加一个`<script>`元素来链接新的`SimpleQuiz.js`脚本，并删除链接到`quizQuestions.js`和`quizFunctions.js`的`<script>`元素。保存 HTML 文件，然后切换回`SimpleQuiz.js`。参见右图。
 
-```
+```html
 1 <!DOCTYPE HTML>
 2 <html>
 3 <head>
@@ -2219,7 +2231,7 @@ new com.flametreepublishing.QuizQuestion(arguments);
 
 4. 趁此机会，让我们让题目能够自我渲染。下图所示的代码应该已经熟悉了。
 
-```
+```javascript
 1 var com;
 2 if(!com) {
 3   com = {};
@@ -2235,7 +2247,7 @@ new com.flametreepublishing.QuizQuestion(arguments);
 
 上图：步骤 3：按此处所示创建构造函数。
 
-```
+```javascript
 26
 27 com.flametreepublishing.QuizQuestion.prototype.renderQuestion = function() {
 28   document.write("<h2>问题 " + this.questionNum + "</h2>");
@@ -2249,9 +2261,9 @@ new com.flametreepublishing.QuizQuestion(arguments);
 
 上图：步骤 4：此处的代码将使题目能够自我渲染。
 
-5. 我们仍需要一个数组来存储 QuizQuestion 对象——我们将通过在构造函数中声明和初始化它，使其成为 SimpleQuiz 类的一个属性，如图所示。
+5. 我们仍需要一个数组来存储`QuizQuestion`对象——我们将通过在构造函数中声明和初始化它，使其成为`SimpleQuiz`类的一个属性，如图所示。
 
-```
+```javascript
 9 com.flametreepublishing.SimpleQuiz = function() {
 10   this.questions = [];
 11 }
@@ -2259,20 +2271,22 @@ new com.flametreepublishing.QuizQuestion(arguments);
 
 上图：步骤 4：按此处所示声明和初始化数组。
 
-9. 在 renderAllQuestions 的主体中，创建一个 for 循环，对每个 QuizQuestion 对象调用 renderQuestion()，如图所示。
+9. 在`renderAllQuestions`的主体中，创建一个`for`循环，对每个`QuizQuestion`对象调用`renderQuestion()`，如图所示。
 
-```
+
+
+```javascript
 9 com.flametreepublishing.SimpleQuiz = function() {
 10   this.questions = [];
 11   this.loadQuestions();
 12 }
 ```
 
-10. 保存 SimpleQuiz.js，然后切换到 simpleQuiz.html。
+10. 保存`SimpleQuiz.js`，然后切换到`simpleQuiz.html`。
 
-5. 在完整的测验应用程序中，我们可能会从 Web 服务器下载题目数据，但为简单起见，我们将题目硬编码到 SimpleQuiz 类中。我们将通过调用 loadQuestions() 方法来模拟下载——见上图。
+5. 在完整的测验应用程序中，我们可能会从 Web 服务器下载题目数据，但为简单起见，我们将题目硬编码到`SimpleQuiz`类中。我们将通过调用`loadQuestions()`方法来模拟下载——见上图。
 
-```
+```html
 11 <body>
 12   <script type="text/javascript">
 13     com.flametreepublishing.simpleQuiz = new com.flametreepublishing.SimpleQuiz();
@@ -2281,19 +2295,19 @@ new com.flametreepublishing.QuizQuestion(arguments);
 16 </body>
 ```
 
-11. 找到 `<body>` 元素内的 `<script>` 元素，并删除 for 循环——它现在已经过时了。
+11. 找到`<body>`元素内的`<script>`元素，并删除`for`循环——它现在已经过时了。
 
-6. 在构造函数中添加对 loadQuestions() 的调用，如上图所示。注意我们通过 this 关键字来完成此操作。
+6. 在构造函数中添加对`loadQuestions()`的调用，如上图所示。注意我们通过`this`关键字来完成此操作。
 
-12. 在同一个 `<script>` 块中，实例化 SimpleQuiz，并将实例赋值给 com.flametreepublishing.simpleQuiz，如上图所示。
+12. 在同一个`<script>`块中，实例化`SimpleQuiz`，并将实例赋值给`com.flametreepublishing.simpleQuiz`，如上图所示。
 
-7. SimpleQuiz 现在可以加载和存储 QuizQuestion 对象了，但我们不再有渲染所有题目的方式（考虑到 QuizQuestion 的 renderQuestion 方法需要从某处调用）。
+7. `SimpleQuiz`现在可以加载和存储`QuizQuestion`对象了，但我们不再有渲染所有题目的方式（考虑到`QuizQuestion`的`renderQuestion`方法需要从某处调用）。
 
-13. 最后，按下图所示在新创建的 SimpleQuiz 对象上调用 renderAllQuestions()。
+13. 最后，按下图所示在新创建的`SimpleQuiz`对象上调用`renderAllQuestions()`。
 
-8. 创建一个名为 renderAllQuestions() 的 SimpleQuiz 新方法。
+8. 创建一个名为`renderAllQuestions()`的`SimpleQuiz`新方法。
 
-```
+```html
 11
 12 <script type="text/javascript">
 13   com.flametreepublishing.simpleQuiz = new com.flametreepublishing.SimpleQuiz();
@@ -2302,7 +2316,7 @@ new com.flametreepublishing.QuizQuestion(arguments);
 16
 ```
 
-```
+```javascript
 44 com.flametreepublishing.SimpleQuiz.prototype.renderAllQuestions = function() {
 45   for(var i = 0; i < this.questions.length; i++) {
 46     this.questions[i].renderQuestion();
@@ -2314,7 +2328,7 @@ new com.flametreepublishing.QuizQuestion(arguments);
 
 ![](img/9f289ad67d43b98b3bcc0d91197bccf6_55_0.png)
 
-DOM 与事件
+# DOM 与事件
 
 ## 操作 DOM
 
@@ -2324,7 +2338,7 @@ DOM 与事件
 
 所有主流浏览器都支持一种称为动态 HTML（简称 DHTML）的技术。DHTML 允许 JavaScript 在页面加载并渲染到浏览器后对其进行更改，并且这些更改会立即显示在屏幕上。这为我们带来了大量的可能性——你的想象力真的是唯一的限制。
 
-```
+```javascript
 /*
 我们对 checkUserAnswer() 进行了相当大的改动——请参见方法主体中的注释...
 */
@@ -2354,7 +2368,7 @@ return theResult;
 };
 ```
 
-上图：额外的说明包含在可下载的代码示例中
+上图：额外的说明包含在可下载的代码示例中。
 
 ## 温馨提示
 
@@ -2362,23 +2376,21 @@ return theResult;
 
 ## HTML 是层次结构
 
-所有 HTML 文档都包含一个 `<html>` 元素；该元素总是包含一个 `<head>` 和一个 `<body>` 元素；这些元素本身又包含其他元素。因此，页面是 HTML 元素的层次结构。我们用血缘关系来表达这种结构：`<html>`是**根**元素，有两个子元素，`<head>`和`<body>`；`<html>`是`<head>`和`<body>`的**父元素**；`<head>`和`<body>`是**兄弟元素**。
+所有 HTML 文档都包含一个`<html>`元素；该元素总是包含一个`<head>`和一个`<body>`元素；这些元素本身又包含其他元素。因此，页面是 HTML 元素的层次结构。我们用血缘关系来表达这种结构：`<html>`是**根**元素，有两个子元素，`<head>`和`<body>`；`<html>`是`<head>`和`<body>`的**父元素**；`<head>`和`<body>`是**兄弟元素**。
 
 ## 什么是 DOM？
 
-我们知道 JavaScript 使我们能够通过在一个对象中存储其他对象来创建类似的层次结构；事实证明，这正是网页在浏览器底层被表示的方式。这种表示——或模型——被称为**文档对象模型**，简称 **DOM**。
+我们知道 JavaScript 使我们能够通过在一个对象中存储其他对象来创建类似的层次结构；事实证明，这正是网页在浏览器底层被表示的方式。这种表示——或模型——被称为**文档对象模型**，简称**DOM**。
 
 ![](img/9f289ad67d43b98b3bcc0d91197bccf6_56_0.png)
 
 上图：HTML 元素嵌套在其他 HTML 元素中；所有元素都有一个父元素，许多元素还有兄弟元素和子元素。
 
-
-
 ## DOM 编程
 
-JavaScript 的 DOM 类（如 HTMLDocument 和 HTMLElement）提供了大量用于操作已加载页面的方法，并暴露了与 HTML 属性直接映射的属性。例如，一个 `<p>` 元素在 DOM 中由一个 HTMLElement 对象表示。在 `<p>` 元素上定义的任何属性都可以作为相应对象的属性供 JavaScript 访问；JavaScript 在该对象上定义的任何属性都会成为 `<p>` 元素的属性值。
+JavaScript 的 DOM 类（如`HTMLDocument`和`HTMLElement`）提供了大量用于操作已加载页面的方法，并暴露了与 HTML 属性直接映射的属性。例如，一个`<p>`元素在 DOM 中由一个`HTMLElement`对象表示。在`<p>`元素上定义的任何属性都可以作为相应对象的属性供 JavaScript 访问；JavaScript 在该对象上定义的任何属性都会成为`<p>`元素的属性值。
 
-```
+```javascript
 var paraElement = document.createElement('p');
 paraElement.id = 'para1';
 paraElement.className = 'articlePara';
@@ -2391,19 +2403,19 @@ paraElement.innerHTML = 'Hello World!';
 
 ## 从 DOM 中检索元素
 
-正如我们所看到的，所有 HTML 元素（`<html>` 除外）都必须嵌套在另一个元素内。因此，要使用 JavaScript 向页面添加新元素，我们通常需要从 DOM 中检索将作为新元素父级的元素。在其他时候，我们可能希望对所有某种类型的元素应用样式更改。
+正如我们所看到的，所有 HTML 元素（`<html>`除外）都必须嵌套在另一个元素内。因此，要使用 JavaScript 向页面添加新元素，我们通常需要从 DOM 中检索将作为新元素父级的元素。在其他时候，我们可能希望对所有某种类型的元素应用样式更改。
 
-获取元素的方法定义在单个 HTMLDocument 实例上，即 DOM 的顶层。我们已经在脚本中使用过这个对象——每次输入 `document` 时，我们都在访问这个 HTMLDocument 对象。
+获取元素的方法定义在单个`HTMLDocument`实例上，即 DOM 的顶层。我们已经在脚本中使用过这个对象——每次输入`document`时，我们都在访问这个`HTMLDocument`对象。
 
 ## 向 DOM 中添加元素
 
-让我们通过更新 QuizQuestion 类的 renderQuestion 方法来探索 DOM 编程。
+让我们通过更新`QuizQuestion`类的`renderQuestion`方法来探索 DOM 编程。
 
-1. 在编辑器中打开 QuizQuestion.js 并找到 renderQuestion 方法。
+1. 在编辑器中打开`QuizQuestion.js`并找到`renderQuestion`方法。
 
-2. 目前，此方法使用 document.write 将一个字面量 HTML 字符串输出到页面。此技术仅在页面加载时执行该方法才有效——让我们来修复这个问题。
+2. 目前，此方法使用`document.write`将一个字面量 HTML 字符串输出到页面。此技术仅在页面加载时执行该方法才有效——让我们来修复这个问题。
 
-```
+```javascript
 36  
 37  com.flomtreepublishing.QuizQuestion.prototype.renderQuestion = function() {
 38      document.write("<h3>QUESTION " + this.questionNum + "</h3>");
@@ -2418,11 +2430,11 @@ paraElement.innerHTML = 'Hello World!';
 
 上图：一旦页面加载完成，此方法将无法工作。
 
-- 3. 删除 renderQuestion 方法的方法体。
+- 3. 删除`renderQuestion`方法的方法体。
 
-4. 在屏幕上，我们将把每个题目布局在一个 `<div>` 元素内——下图中的代码展示了如何创建一个。请注意，这个新的 `<div>` 尚不是页面的一部分——它是在屏幕外创建的，在被分配给父元素之前一直留在那里。
+4. 在屏幕上，我们将把每个题目布局在一个`<div>`元素内——下图中的代码展示了如何创建一个。请注意，这个新的`<div>`尚不是页面的一部分——它是在屏幕外创建的，在被分配给父元素之前一直留在那里。
 
-```
+```javascript
 36  
 37  com.flomtreepublishing.QuizQuestion.prototype.renderQuestion = function() {
 38      var questionDiv = document.createElement("div");
@@ -2431,9 +2443,9 @@ paraElement.innerHTML = 'Hello World!';
 41  
 ```
 
-上图：步骤 4：document.createElement() 在屏幕外创建新元素。
+上图：步骤 4：`document.createElement()`在屏幕外创建新元素。
 
-```
+```javascript
 36 com.flametreepublishing.QuizQuestion.prototype.renderQuestion = function() {
 37   var questionDiv = document copyright© froment element("div");
 38   questionDiv.id = "q" + this.questionNum;
@@ -2446,13 +2458,13 @@ paraElement.innerHTML = 'Hello World!';
 
 上图：步骤 5 和 6。继续构建题目的 HTML 元素，如下所示。
 
-5. 为 `<div>` 赋予一个从 `QuizQuestion` 对象的 `questionNum` 属性派生的 `id` 值，如上图第 39 行所示。
+5. 为`<div>`赋予一个从`QuizQuestion`对象的`questionNum`属性派生的`id`值，如上图第 39 行所示。
 
-6. 我们将创建一个 `<h2>` 元素来容纳题目标题；创建后，我们需要使用 `HTMLElement` 对象的 `innerHTML` 属性为其设置一些文本内容，并使用 `appendChild` 将其添加到 `<div>` 中——参见上图。
+6. 我们将创建一个`<h2>`元素来容纳题目标题；创建后，我们需要使用`HTMLElement`对象的`innerHTML`属性为其设置一些文本内容，并使用`appendChild`将其添加到`<div>`中——参见上图。
 
-7. 使用相同的技术将题目和答案的文本添加到 `<div>` 中，如下图所示。
+7. 使用相同的技术将题目和答案的文本添加到`<div>`中，如下图所示。
 
-```
+```javascript
 42 questionDiv.appendChild(questionHeading);
 43 var questionTextPara = document.createElement("p");
 44 questionTextPara.innerHTML = this.questionText;
@@ -2468,13 +2480,13 @@ paraElement.innerHTML = 'Hello World!';
 
 上图：步骤 7 和 8。这段代码将构建显示题目所需的其余 HTML 元素。
 
-8. 请注意，我们没有为每个可能的答案手动输入代码，而是将其包装在一个 `for` 循环中，遍历 `answers` 数组。还要注意，我们为每个答案的 `<p>` 元素设置了 `id` 属性。
+8. 请注意，我们没有为每个可能的答案手动输入代码，而是将其包装在一个`for`循环中，遍历`answers`数组。还要注意，我们为每个答案的`<p>`元素设置了`id`属性。
 
-9. 最后，我们需要将 `<div>` 元素添加到页面中。我们将它添加到 `<body>` 元素中，可以通过 `document.body` 访问，如下图所示。
+9. 最后，我们需要将`<div>`元素添加到页面中。我们将它添加到`<body>`元素中，可以通过`document.body`访问，如下图所示。
 
 10. 保存你的工作并在 Firefox 中打开页面。我们再次看到了和之前相同的内容，但这次我们是使用 DOM 编程构建的页面。
 
-```
+```javascript
 49   answerPara.id = "a" + i;
 50   questionDiv.appendChild(answerPara);
 51 }
@@ -2494,15 +2506,15 @@ JavaScript 中有几种不同的事件模型，它们经过多年发展而来。
 
 > **实用技巧**
 >
-> 如果你想深入了解所有 JavaScript 事件模型，可以在 www.quirksmode.org/js/introevents.html 找到精彩的讨论。
+> 如果你想深入了解所有 JavaScript 事件模型，可以在`www.quirksmode.org/js/introevents.html`找到精彩的讨论。
 
 ## 什么是事件？
 
-事件是浏览器发出的消息。事件总是有一个类型——类型表明了事件的性质——是点击、页面加载、按键等。例如，点击页面中的任何元素都会导致该元素发送（或分发）一个类型为 "click" 的事件。
+事件是浏览器发出的消息。事件总是有一个类型——类型表明了事件的性质——是点击、页面加载、按键等。例如，点击页面中的任何元素都会导致该元素发送（或分发）一个类型为`"click"`的事件。
 
 ## 监听事件
 
-为了响应事件，我们必须编写"监听"该事件发生的代码——这段代码被称为事件监听器。当事件监听器检测到它正在监听的事件类型时，它会执行一个表达式，以对事件做出某些响应操作。
+为了响应事件，我们必须编写“监听”该事件发生的代码——这段代码被称为事件监听器。当事件监听器检测到它正在监听的事件类型时，它会执行一个表达式，以对事件做出某些响应操作。
 
 ## 事件处理程序
 
@@ -2512,9 +2524,9 @@ JavaScript 中有几种不同的事件模型，它们经过多年发展而来。
 
 我们的 Simple Quiz 应用需要能够响应用户点击答案——让我们首先定义一个事件处理程序。
 
-1. 打开 SimpleQuiz.js。我们将创建一个名为 clickHandler 的新方法——移动到文档底部并按如下图所示添加该方法。
+1. 打开`SimpleQuiz.js`。我们将创建一个名为`clickHandler`的新方法——移动到文档底部并按如下图所示添加该方法。
 
-```
+```javascript
 59
 60 com.flametreepublishing.SimpleQuiz.prototype.clickHandler = function(e) {
 61   //click handler statements go here
@@ -2525,9 +2537,9 @@ JavaScript 中有几种不同的事件模型，它们经过多年发展而来。
 
 上图：步骤 1。按图中所示添加方法。
 
-2. 使用 W3C 事件模型时，事件处理程序始终会收到一个包含事件详细信息的对象——我们的方法通过参数 `e` 来捕获它。通过这样做，我们可以通过引用 `e.target` 来访问发生事件的元素，如下图所示。
+2. 使用 W3C 事件模型时，事件处理程序始终会收到一个包含事件详细信息的对象——我们的方法通过参数`e`来捕获它。通过这样做，我们可以通过引用`e.target`来访问发生事件的元素，如下图所示。
 
-```
+```javascript
 59
 60 com.flametreepublishing.SimpleQuiz.prototype.clickHandler = function(e) {
 61   var clickedAnswerId = e.target.id;
@@ -2535,19 +2547,21 @@ JavaScript 中有几种不同的事件模型，它们经过多年发展而来。
 63
 ```
 
-上图：步骤 2。e.target 引用触发事件的 HTML 元素。
+上图：步骤 2。`e.target`引用触发事件的 HTML 元素。
 
-3. 我们需要识别被点击的答案——这就是为什么我们的代码为每个答案的 `<p>` 元素定义了一个 id 值。每个答案的 id 是以字母 'a' 为前缀的答案索引，因此我们只需要访问 id 的第二个字符；我们将这第二个字符转换为数字，因为我们将把它用作 questions 数组的索引。参见上图。
+3. 我们需要识别被点击的答案——这就是为什么我们的代码为每个答案的`<p>`元素定义了一个 id 值。每个答案的 id 是以字母`'a'`为前缀的答案索引，因此我们只需要访问 id 的第二个字符；我们将这第二个字符转换为数字，因为我们将把它用作`questions`数组的索引。参见上图。
 
-4. 注意 String 类的 substr() 方法的使用，它使我们能够访问其被调用字符串的一个片段。第一个参数是片段开始的字符位置（从零开始，类似数组索引）；第二个参数是要返回的片段长度。
+4. 注意`String`类的`substr()`方法的使用，它使我们能够访问其被调用字符串的一个片段。第一个参数是片段开始的字符位置（从零开始，类似数组索引）；第二个参数是要返回的片段长度。
 
-```
+```javascript
 var clickedAnswerIndex = Number(clickedAnswerId.substr(1, 1));
 ```
 
-上图：步骤 4。substr() 是 String 类的一个方法。
+上图：步骤 4。`substr()`是`String`类的一个方法。
 
-5. 我们的事件处理程序还需要知道题号——我们可以从 `<div>` 元素的 id 属性中提取它。我们可以通过引用 `e.target.parentNode` 来访问 `<div>`（`<div>` 是 `<p>` 的父元素），如下图所示。
+
+
+5. 我们的事件处理程序还需要知道题号——我们可以从`<div>`元素的`id`属性中提取它。我们可以通过引用`e.target.parentNode`来访问`<div>`（`<div>`是`<p>`的父元素），如下图所示。
 
 ```
 62   var clickedAnswerIndex = Number(clickedAnswerId.substr(1, 1));
@@ -2558,15 +2572,13 @@ var clickedAnswerIndex = Number(clickedAnswerId.substr(1, 1));
 
 上图：步骤 5。从事件对象中提取已回答的题号。
 
-
-
-6. 现在处理程序调用题号，它可以从问题数组中检索对应的QuizQuestion对象。但是，在事件处理程序中，`this`指的是触发事件的元素，所以我们需要处理事件的对象，因此需要使用全局引用来访问问题数组。相关代码如下图所示。
+6. 现在处理程序调用题号，它可以从问题数组中检索对应的`QuizQuestion`对象。但是，在事件处理程序中，`this`指的是触发事件的元素，所以我们需要处理事件的对象，因此需要使用全局引用来访问问题数组。相关代码如下图所示。
 
 > **小贴士**
 
 HTML元素的`parentNode`属性指的是该元素的父级元素，即包含该元素的嵌套元素。
 
-7. 既然我们已经获得了用户点击的QuizQuestion对象和答案索引，我们就可以判断用户是否给出了正确答案，并将结果告知用户——相关代码如下图所示。
+7. 既然我们已经获得了用户点击的`QuizQuestion`对象和答案索引，我们就可以判断用户是否给出了正确答案，并将结果告知用户——相关代码如下图所示。
 
 ```
 60 com.flametreepublishing.simpleQuiz.prototype.onAnswer = function() {
@@ -2579,7 +2591,7 @@ HTML元素的`parentNode`属性指的是该元素的父级元素，即包含该�
 67 }
 ```
 
-关于框7 这段代码获取被点击答案对应的QuizQuestion对象。
+关于框7 这段代码获取被点击答案对应的`QuizQuestion`对象。
 
 ![](img/9f289ad67d43b98b3bcc0d91197bccf6_61_0.png)
 
@@ -2593,7 +2605,7 @@ HTML元素的`parentNode`属性指的是该元素的父级元素，即包含该�
 71 }
 ```
 
-关于框8 onAnswer函数将检查答案是否正确，并显示相应的提示信息。
+关于框8 `onAnswer`函数将检查答案是否正确，并显示相应的提示信息。
 
 8. 保存你的工作。暂时不要在浏览器中打开文件——我们还没有完全完成。
 
@@ -2616,7 +2628,7 @@ myObject.addEventListener(eventType, handlerExpression, useCapture);
 67 }
 ```
 
-## AddEventListener()方法的参数
+## `addEventListener()`方法的参数
 
 - **事件类型**：第一个参数表示要监听的事件类型。这是一个字符串，例如`'click'`、`'keydown'`或`'mouseover'`。
 
@@ -2640,7 +2652,7 @@ myPara.addEventListener("click", clickHandler, false);
 
 我们已经创建了事件处理程序，但在被事件监听器触发之前它不会执行任何操作。
 
-- 1. 打开QuizQuestion.js，找到`renderQuestion`方法中的`for`循环。
+- 1. 打开`QuizQuestion.js`，找到`renderQuestion`方法中的`for`循环。
 
 ```
 for(var i = 0; i < this.answers.length; i++) {
@@ -2658,7 +2670,7 @@ for(var i = 0; i < this.answers.length; i++) {
 
 - 3. 在引用处理程序方法时我们不包含括号。如果包含的话，表达式会在事件监听器被赋值时作为方法调用被执行——我们希望表达式是处理程序的名称，而不是对它的调用。
 
-- 4. 保存你的工作，在Firefox中打开simpleQuiz.html并点击一个答案。终于——我们有了一个可以工作的测验。
+- 4. 保存你的工作，在Firefox中打开`simpleQuiz.html`并点击一个答案。终于——我们有了一个可以工作的测验。
 
 ![](img/9f289ad67d43b98b3bcc0d91197bccf6_62_0.png)
 
@@ -2668,7 +2680,7 @@ for(var i = 0; i < this.answers.length; i++) {
 
 让我们再添加一个事件监听器和处理程序——它们将在页面加载完成时启动应用程序。
 
-- 1. 创建一个新的JavaScript文档，将其保存到项目的js文件夹中，命名为**quizStartup.js**。在文档顶部输入我们的命名空间声明。
+- 1. 创建一个新的JavaScript文档，将其保存到项目的`js`文件夹中，命名为`quizStartup.js`。在文档顶部输入我们的命名空间声明。
 
 - 2. 添加下一页图中所示的事件处理程序代码。你现在应该能理解它了——如果不能，请下载我们的代码示例并研究其中的注释。
 
@@ -2692,9 +2704,9 @@ window.addEventListener("load", com.flametreepublishing.startQuiz, false);
 
 上图：步骤3：事件监听器代码。
 
-- 4. 保存你的工作，在编辑器中打开simpleQuiz.html。
+- 4. 保存你的工作，在编辑器中打开`simpleQuiz.html`。
 
-- 5. 在`<head>`中添加一个新的`<script>`元素，并将其链接到quizStartup.js。然后完全删除`<body>`元素中的`<script>`元素，并保存文件。参见下图。
+- 5. 在`<head>`中添加一个新的`<script>`元素，并将其链接到`quizStartup.js`。然后完全删除`<body>`元素中的`<script>`元素，并保存文件。参见下图。
 
 ```
 <head>
@@ -2711,9 +2723,9 @@ window.addEventListener("load", com.flametreepublishing.startQuiz, false);
 
 ## 后续步骤
 
-就是这样——我们的测验现在可以运行了！更重要的是，想想我们的HTML文档包含了什么：只有三个script元素。JavaScript在处理其他所有事情——很好！
+就是这样——我们的测验现在可以运行了！更重要的是，想想我们的HTML文档包含了什么：只有三个`script`元素。JavaScript在处理其他所有事情——很好！
 
-如果你想改进这个测验游戏，何不添加一个样式表让界面更好看？你还可以更进一步，记录用户的答案并跟踪他们的分数——你已经具备了实现这些的知识。如需更多提示，请参阅代码示例包中的SimpleQuiz_onwards。
+如果你想改进这个测验游戏，何不添加一个样式表让界面更好看？你还可以更进一步，记录用户的答案并跟踪他们的分数——你已经具备了实现这些的知识。如需更多提示，请参阅代码示例包中的`SimpleQuiz_onwards`。
 
 ## 继续前进！
 

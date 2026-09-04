@@ -1,108 +1,13 @@
+
 # JavaScript开发者的 LangChain 指南
 
+## 1. 引言
 
-
-![](img/index-1_1.png)
-
-第 1 / 120 页
-
-版权 © 2024 Daniel Nastase。版权所有。
-
-未经作者书面许可，不得以任何形式或通过任何电子或机械手段（包括信息存储和检索系统）复制本书的任何部分。唯一的例外是评论者可以在评论中引用简短摘录。
-
-# 1. 引言 (#index_split_000.html_p4)
-
-## 1.1. 获取书籍更新和代码示例 (#index_split_000.html_p5)
-
-## 1.2. 关于作者 (#index_split_000.html_p6)
-
-## 1.3. 本书是如何产生的 (#index_split_000.html_p7)
-
-## 1.4. 什么是 LangChain (#index_split_000.html_p9)
-
-## 1.5. 本书概述 (#index_split_000.html_p11)
-
-## 1.6. 要求以及如何使用本书 (#index_split_000.html_p13)
-
-# 2. 模型、提示词与链 (#index_split_000.html_p15)
-
-## 2.1. 引言 (#index_split_000.html_p16)
-
-## 2.2. 入门 (#index_split_000.html_p17)
-
-## 2.3. OpenAI ChatGPT 模型的 API key (#index_split_000.html_p20)
-
-## 2.4. 使用 ChatOpenAI LangChain 模型 (#index_split_000.html_p21)
-
-## 2.5. 提示词模板 (#index_split_000.html_p24)
-
-## 2.6. 链 (#index_split_000.html_p28)
-
-## 2.7. LCEL - LangChain 表达式 (#index_split_000.html_p32)
-
-# 3. LangChain 中的流式传输 (#index_split_000.html_p35)
-
-## 3.1. 引言和项目设置 (#index_split_000.html_p36)
-
-## 3.2. 项目重构 (#index_split_000.html_p38)
-
-## 3.3. 响应流式输出 (#index_split_000.html_p42)
-
-# 4. 输出解析器 (#index_split_000.html_p46)
-
-## 4.1. 引言 (#index_split_000.html_p47)
-
-## 4.2. 示例设置 (#index_split_000.html_p48)
-
-## 4.3. StringOutputParser (#index_split_000.html_p51)
-
-## 4.4. CommaSeparatedListOutputParser (#index_split_000.html_p54)
-
-## 4.5. `getFormatInstructions()` 方法与自定义解析器 (#index_split_000.html_p59)
-
-## 4.6. StructuredOutputParser (#index_split_000.html_p62)
-
-# 5. 对话记忆 (#index_split_000.html_p67)
-
-## 5.1. 引言和项目设置 (#index_split_000.html_p68)
-
-## 5.2. 向对话记忆中注入消息 (#index_split_000.html_p71)
-
-## 5.3. 完整的对话历史 (#index_split_000.html_p76)
-
-# 6. RAG / 与文档聊天 (#index_split_000.html_p80)
-
-## 6.1. 引言 (#index_split_000.html_p81)
-
-## 6.2. 示例设置 (#index_split_000.html_p83)
-
-## 6.3. 使用本地文档 (#index_split_000.html_p88)
-
-## 6.4. RAG 过程的组件 (#index_split_000.html_p92)
-
-## 6.5. 向量、嵌入与向量数据库 (#index_split_000.html_p93)
-
-## 6.6. 使用 CheerioWebBaseLoader 和 MemoryVectorStore (#index_split_000.html_p96)
-
-# 7. AI 智能体 (#index_split_000.html_p105)
-
-## 7.1. 引言和项目设置 (#index_split_000.html_p106)
-
-## 7.2. 创建智能体 (#index_split_000.html_p110)
-
-## 7.3. 监控智能体与性能考虑 (#index_split_000.html_p114)
-
-## 7.4. 总结 (#index_split_000.html_p118)
-
-## 7.5. 结语 (#index_split_000.html_p120)
-
-# 1. 引言
-
-## 1.1. 获取书籍更新和代码示例
+### 1.1. 获取书籍更新和代码示例
 
 要获取书籍的最新版本，请通过邮件 `daniel@js-craft.io` 订阅我们的列表。我努力保持书籍的更新。为了获取最新内容，请确保订阅 `daniel@js-craft.io`。
 
-## 1.2. 关于作者
+### 1.2. 关于作者
 
 你好，我是 Daniel，一名软件开发者和教育者。我一直喜欢教学。我相信教育是改进软件的关键。
 
@@ -113,7 +18,7 @@
 - Mastodon: `mastodon.social/@danielnastase`
 - YouTube: `youtube.com/danielnastase`
 
-## 1.3. 本书是如何产生的
+### 1.3. 本书是如何产生的
 
 我第一次写计算机程序是 26 年前，当时朋友向我展示了 ChatGPT。它感觉就像魔法一样。但这一次我知道它是如何工作的。
 
@@ -123,18 +28,15 @@
 
 因此，我回到了我作为 Web 开发者的日常工作中。但在脑海深处，我仍然觉得应该关注 AI。因此决定再次尝试 AI。但这次是从更实用的角度出发。
 
-## 1.4. 什么是 LangChain
+### 1.4. 什么是 LangChain
 
-LangChain 是一个旨在简化集成大语言模型（LLM）应用程序创建的框架。
+`LangChain` 是一个旨在简化集成大语言模型（LLM）应用程序创建的框架。
 
-LangChain 在一个框架中提供了所有的 AI 集成构建块。它提供了一个模块化、灵活且可扩展的架构。
+`LangChain` 在一个框架中提供了所有的 AI 集成构建块。它提供了一个模块化、灵活且可扩展的架构。
 
-你可以将 LangChain 看作 AI 生态系统中几乎所有内容的胶水层。
+你可以将 `LangChain` 看作 AI 生态系统中几乎所有内容的胶水层。
 
-
-
-
-通过学习 `LangChain`，你将对 AI  way 的结构、工作流和实践有深入的理解。
+通过学习 `LangChain`，你将对 AI 生态系统的结构、工作流和实践有深入的理解。
 
 `LangChain` 的一些用例包括：
 
@@ -142,27 +44,27 @@ LangChain 在一个框架中提供了所有的 AI 集成构建块。它提供了
 - `LangChain` 可以格式化 LLM 交互中的输入和输出。
 - LLM 是无状态的。它们不会记得你是谁或你几秒前说了什么。`LangChain` 提供对长期和短期记忆的支持。
 - LLM 速度可能慢。`LangChain` 可以在响应生成时进行流式传输，为用户提供快速反馈。
-- LLM 有截止日期。例如，GPT-3.5 没有 2021 年之后的训练数据。GPT-4 不知道 2023 年之后的任何信息。通过 LangChain，我们可以创建并管理 AI 代理（Agents），让它们上线、搜索信息并使用工具解析这些信息。
+- LLM 有截止日期。例如，GPT-3.5 没有 2021 年之后的训练数据。GPT-4 不知道 2023 年之后的任何信息。通过 `LangChain`，我们可以创建并管理 AI 代理，让它们上线、搜索信息并使用工具解析这些信息。
 - 我们可以将多个 LLM 链起来。例如，我们可以使用 Google 的 Gemini 生成文章，然后将文本传递给 Midjourney 为该文章生成图像。
-- LLM 缺乏对内部文档的访问。我们可以使用检索增强生成（`RAG`）为模型提供额外的上下文，使其根据组织的规则和知识与用户交互。`LangChain` 拥有一非常强大的 RAG 操作工具集。
+- LLM 缺乏对内部文档的访问。我们可以使用检索增强生成（`RAG`）为模型提供额外的上下文，使其根据组织的规则和知识与用户交互。`LangChain` 拥有一套非常强大的 RAG 操作工具集。
 - `LangChain` 抽象了上述操作，方便根据需要更换组件。想因为更好或更便宜而使用不同的 LLM 吗？想更改向量数据库来存储嵌入？`LangChain` 都能为你解决。
 - `LangChain` 标准化了与 LLM 工作时的通用模式。虽然可以在不使用 `LangChain` 的情况下创建任何应用，但它简化了过程并比手动提示（prompting）好得多。
 - 如果你想深入研究这个主题，我建议收听 Latent Space 播客中关于 `LangChain` 创始人 Harrison Chase 的那集节目。
 
-## 1.5 本书概述
+### 1.5. 本书概述
 
 在本书中，我们将开启一段有趣、实战且务实的 `LangChain` 学习之旅。每个主章节都有一个关联的示例应用程序，该程序会在章节期间逐渐演进。每一步都以易于理解的方式引入新的 `LangChain` 概念，而不会让你感到压力。本书被刻意分为短小的章节，每章关注不同的主题。
 
-- **第 1 章**：我们将使用一个“故事生成器”（Story Generator）应用介绍 `LangChain` 的基础。我们将连接第一个 LLM，并使用提示模板（prompt templates）和链（chains）。我们将深入研究模板、模板组合等内容。
-- **第 2 章**：在第 1 章的基础设置之后，本章将引入流式传输（streaming）的概念。使用同一个“故事生成器”应用，我们将流式传输 LL 的响应以改进用户体验。
-- **第 3 章**：LLM 的挑战之一是它们以非结构化的格式给出响应，因为它们是在人类理解的文本上训练的。在本章中，我们将通过使用 `ChatGPT` 从零创建一个问答游戏（Trivia Game）来学习输出解析器（output parsers）。
-- **第 4 章**：记忆模块为 `LangChain` 应用提供了 LLM 记忆。我们可以像 `ChatGPT` 那样记住当前会话中的过去对话和响应。在本章中，我们将构建一个“事实百科全”（Fact Wiki）应用。
-- **第 5 章**：`LangChain` 的关键特性之一是支持 `RAG` - 检索增强生成。在本章中，我们将构建一个根据外部上下文回答问题的聊天机器人（Chat Bot）应用。我们将看到如何从 PDF 或在线文档等来源提供数据、什么是嵌入（embeddings）以及向量数据库是如何工作的。
-- **第 6 章**：与链相比，AI 代理（AI agents）更加灵活和多功能，它们帮助你构建复杂的解决方案，并允许访问 Google 搜索和数学计算器等第三方工具。它们可以在给定情况下决定使用什么适当的工具。
+- **第 1 章**：我们将使用一个“故事生成器”应用介绍 `LangChain` 的基础。我们将连接第一个 LLM，并使用提示模板和链。我们将深入研究模板、模板组合等内容。
+- **第 2 章**：在第 1 章的基础设置之后，本章将引入流式传输的概念。使用同一个“故事生成器”应用，我们将流式传输 LLM 的响应以改进用户体验。
+- **第 3 章**：LLM 的挑战之一是它们以非结构化的格式给出响应，因为它们是在人类理解的文本上训练的。在本章中，我们将通过使用 `ChatGPT` 从零创建一个问答游戏来学习输出解析器。
+- **第 4 章**：记忆模块为 `LangChain` 应用提供了 LLM 记忆。我们可以像 `ChatGPT` 那样记住当前会话中的过去对话和响应。在本章中，我们将构建一个“事实百科全”应用。
+- **第 5 章**：`LangChain` 的关键特性之一是支持 `RAG` - 检索增强生成。在本章中，我们将构建一个根据外部上下文回答问题的聊天机器人应用。我们将看到如何从 PDF 或在线文档等来源提供数据、什么是嵌入以及向量数据库是如何工作的。
+- **第 6 章**：与链相比，AI 代理更加灵活和多功能，它们帮助你构建复杂的解决方案，并允许访问 Google 搜索和数学计算器等第三方工具。它们可以在给定情况下决定使用什么适当的工具。
 
 从构建“故事生成器”到创建“问答游戏”以及真实的“聊天机器人应用”，每一章都会逐渐扩展你的理解。到结束时，我们将探索流式传输、输出解析、记忆模块、AI 代理和 RAG 能力，赋予你开发复杂解决方案的能力。
 
-## 1.6 要求以及如何使用本书
+### 1.6. 要求以及如何使用本书
 
 `LangChain` 提供了 `JavaScript` 和 `Python` 两种实现。在本书中，我们的重点放在 `JavaScript` 上。
 
@@ -171,6 +73,7 @@ LangChain 在一个框架中提供了所有的 AI 集成构建块。它提供了
 我们将结合使用 `LangChain`、`React` 和 `Next.js`。虽然要求你对 `React` 有基础了解，但不需要成为专家。设置 `Next.js` 的最简单方法是利用 `create-next-app` 工具。
 
 在大多数情况下，我们的工作将仅限于两个文件：
+
 - `src/app/page.js` - 处理前端；其主要功能是显示信息和数据。
 - `src/app/api/route.js` - 管理后端；此文件将处理与 LLM 的 API 交互。
 
@@ -191,17 +94,17 @@ const model = new ChatGPT({
 
 请注意，`LangChain` 目前正在经历开发且变化迅速。虽然我会努力频繁更新本书，但可能会出现短暂的方法名称或导入语句与最新版本不匹配的情况。如需帮助，请随时通过邮件联系 `daniel@js-craft.io`。
 
-## 2 模型、提示与链
+## 2. 模型、提示词与链
 
-### 2.1 介绍
+### 2.1. 引言
 
-现在是使用 `LangChain` 和 `JavaScript` 创建我们的第一个应用了。你被分配创建一个名为“故事制作器”（Story Maker）的应用。该应用将为儿童故事生成标题。这是应用程序的 UI 样式：
+现在是使用 `LangChain` 和 `JavaScript` 创建我们的第一个应用了。你被分配创建一个名为“故事制作器”的应用。该应用将为儿童故事生成标题。这是应用程序的 UI 样式：
 
 例如，如果我们指定一个独角兽为主角的故事，应用程序将生成这样的故事标题：
 
 “独角兽的魔法冒险”
 
-### 2.2 开始
+### 2.2. 开始
 
 最简单的方法是使用 `create-next-app` 工具。一旦安装了它，创建一个名为 `story-generator` 的项目：
 
@@ -219,25 +122,22 @@ npm i langchain @langchain/openai
 
 ```json
 {
-  "@langchain/openai": "⁰.0.14",
-  "langchain": "⁰.1.19"
+  "@langchain/openai": "0.0.14",
+  "langchain": "0.1.19"
 }
 ```
-
-
-
 
 请注意，`LangChain` 目前正处于快速发展阶段，随着版本的迭代，某些代码可能会过时。我正努力保持书籍的更新，但如果由于某种原因导致代码报错，退回到这些版本号可能是明智之举。
 
 一旦设置好依赖项，我们将使用 `React` 创建应用程序的前端。
 
-将以下代码插入 `src/App.js`：
+将以下代码插入 `src/app/page.js`：
 
 ```javascript
 // code/story-generator/src/app/page.js
 
 export default function Home() {
-  const onSubmitHandler = async (event)=> {
+  const onSubmitHandler = async (event) => {
     event.preventDefault()
     const subject = event.target.subject.value
     console.log(subject)
@@ -265,7 +165,7 @@ export default function Home() {
 
 目前，如果用户输入主题，将不会生成故事，因为我们还没有将应用与 `OpenAI` 集成。我们将在下一章解决这个问题。
 
-### 2.3 OpenAI ChatGPT 模型的 API key
+### 2.3. OpenAI ChatGPT 模型的 API key
 
 要使用 OpenAI 的 `ChatGPT` 模型，你需要一个 API key。该 API 是基于订阅制的，可以通过以下 URL 生成密钥：`https://platform.openai.com/api-keys`
 
@@ -282,14 +182,14 @@ OPENAI_API_KEY='sk-1234567890B2tT4HT3BlbkFJXkATN1arB9DXABkRQ1uj'
 
 ```javascript
 // code/story-generator/src/app/api/route.js
-console.log( process.env.OPENAI_API_KEY )
+console.log(process.env.OPENAI_API_KEY)
 ```
 
-密钥稍会被传递给 `LangChain` 模型对象的构造函数。这一步骤将是本书后续章节中每个代码示例的默认流程。
+密钥稍后将被传递给 `LangChain` 模型对象的构造函数。这一步骤将是本书后续章节中每个代码示例的默认流程。
 
 [如果你不想使用 API key，可以查看此列表](https://js.langchain.com/docs/modules/model_io/models/)，了解 `LangChain` 支持的 LLM 并选择一个免费模型。你甚至可以使用免费的 `HuggingFace` token 来避开 `OpenAI` API。
 
-## 2.4. 使用 ChatOpenAI LangChain 模型
+### 2.4. 使用 ChatOpenAI LangChain 模型
 
 让我们通过建立与 `OpenAI` LLM 的连接来继续。在应用后端的 `src/app/api/route.js` 文件添加以下代码：
 
@@ -309,7 +209,7 @@ export async function POST(req) {
 }
 ```
 
-要与 `OpenAI` 建立连接，创建一个 `ChatOpenAI` 对象的实例实例。在其构造函数中，我们定义了以下内容：设置为 `0.9` 的 `temperature` 参数；以及上一节获取的 API key。
+要与 `OpenAI` 建立连接，创建一个 `ChatOpenAI` 对象的实例。在其构造函数中，我们定义了以下内容：设置为 `0.9` 的 `temperature` 参数；以及上一节获取的 API key。
 
 你可能对这个 `temperature` 参数好奇，对吧？`temperature` 参数影响模型的想象力。增加它会产生更具创造性的输出，而降低它则会让响应更贴实、更事实。坚持事实可以减少模型潜在的不准确性或幻觉。
 
@@ -329,11 +229,11 @@ export default function Home() {
 }
 ```
 
-设置好温度后……“艾莎是《冰雪奇缘》的主角角。她是阿伦德尔的女王，拥有创造冰雪的魔法能力。”
+设置好温度后……“艾莎是《冰雪奇缘》的主角。她是阿伦德尔的女王，拥有创造冰雪的魔法能力。”
 
 请注意，你的答案可能会有些不同。与经典方式相反，LLM 可以对相同的输入给出不同的输出。例如，请求如：“给我讲一个关于猫的故事标题。”
 
-### 2.5. 提示词模板 (Prompt templates)
+### 2.5. 提示词模板
 
 你很快会发现提示词需要重复输入，例如“给我讲一个关于”后面跟着主题。这种冗余可以通过模板解决，我们稍后探讨。
 
@@ -375,24 +275,20 @@ export default function Home() {
 
 这就是更改后 UI 将呈现的样子：
 
-现在让我们回到本章的核心内容：提示词模板。语言模型使用文本作为输入。这些文本被称为提示词（prompt）。不过，它不仅仅是一个固定的字符串。通常情况下，它是模板、示例和用户添加内容的混合。
+现在让我们回到本章的核心内容：提示词模板。语言模型使用文本作为输入。这些文本被称为提示词。不过，它不仅仅是一个固定的字符串。通常情况下，它是模板、示例和用户添加内容的混合。
 
 通过模板，我们可以简化提示词流程，确保用户不需要每次请求都重复输入相同的前缀。
 
 对于我们特定的用例，提示词模板看起来如下：
 
-`Tell me a story title about {subject}` 我们是我们需要做的机会都在后端：
+`Tell me a story title about {subject}`
+
+我们在后端需要做的是：
 
 ```javascript
 // code/story-generator/src/app/api/route.js
 import { ChatOpenAI } from "@langchain/openai"
 // 我们将使用 PromptTemplate 来避免重复
-```
-
-
-
-
-```javascript
 import { PromptTemplate } from "@langchain/core/prompts"
 
 const model = new ChatOpenAI({
@@ -418,16 +314,11 @@ export async function POST(req) {
 }
 ```
 
-No. 26 / 120
-
-![](img/index-27_1.png)
-
 编写 prompt template 的默认格式是 F-String 格式，它在 Python 中非常流行。如果你想使用更熟悉的双大括号 JavaScript Mustache 格式，可以使用：
 
 ```javascript
 const prompt = PromptTemplate.fromTemplate(
-  inputVariables: ["subject"],
-  template: "Tell me a story title about {{subject}}",
+  "Tell me a story title about {{subject}}",
   {
     templateFormat: "mustache"
   }
@@ -436,17 +327,13 @@ const prompt = PromptTemplate.fromTemplate(
 
 如果你想了解更多，可以查看文档中的[快速上手指南](https://js.langchain.com/docs/modules/model_io/prompts/quick_start/)。
 
-No. 27 / 120
-
-![](img/index-28_1.png)
-
-## 2.6. Chains (链)
+### 2.6. Chains (链)
 
 Chains（链）指的是调用的序列——无论是调用 LLM、工具还是数据预处理步骤。
 
-它们是 LangChain 中至关的核心概念，可以看作围绕 LLMs 编写的用于执行复杂任务的短程序。
+它们是 `LangChain` 中至关重要的核心概念，可以看作围绕 LLMs 编写的用于执行复杂任务的短程序。
 
-提到链，这里有一个关于 LangChain Logo 的趣闻：鹦鹉和链条的灵感源于人们将 LLM 称为“随机鹦鹉”（stochastic parrots）。这些模型可以模仿人类的写作，但并不真正理解它们在说什么。这个库旨在将这些“鹦鹉”“链”在一起，产生更有意义且实用的输出。
+提到链，这里有一个关于 `LangChain` Logo 的趣闻：鹦鹉和链条的灵感源于人们将 LLM 称为“随机鹦鹉”。这些模型可以模仿人类的写作，但并不真正理解它们在说什么。这个库旨在将这些“鹦鹉”“链”在一起，产生更有意义且实用的输出。
 
 链中上一个环节的输出将成为下一个环节的输入。
 
@@ -455,13 +342,6 @@ Chains（链）指的是调用的序列——无论是调用 LLM、工具还是�
 1. 使用 ChatGPT 生成文章标题。
 2. 将此标题传递给本地 LLM，利用内部文档编写正文。
 3. 将文章传递给 Midjourney（另一个 LLM），为文章生成图像。
-
-No. 28 / 120
-
-![](img/index-29_1.png)
-![](img/index-29_2.png)
-![](img/index-29_3.png)
-![](img/index-29_4.png)
 
 让我们看看如何向我们的后端代码添加一个链：
 
@@ -482,7 +362,7 @@ const prompt = new PromptTemplate({
   template: "Tell me a story title about {subject}"
 })
 
-// 一个链接模型、提示 和 verbose 选项的链
+// 一个链接模型、提示和 verbose 选项的链
 const chain = new LLMChain({
   llm: model,
   prompt,
@@ -498,10 +378,6 @@ export async function POST(req) {
 }
 ```
 
-No. 29 / 120
-
-![](img/index-30_1.png)
-
 你可能会在网上看到使用 `chain.call()` 方法而不是 `chain.invoke()` 的示例。请注意，`.call()` 已弃用并将移除。
 
 `verbose: true` 选项是可选的。如果启用，它将在后端控制台中提供关于链的更多详细信息。这些信息包括：
@@ -510,7 +386,7 @@ No. 29 / 120
 - 每一步花费了多久
 - `tokenUsage` 变量
 
-最后这一点很重要，因为我们通过 token 支付 LLM API 的费用。平均而言，100 个单词大约相当于 130 个 token。一个管理 token 的有用工具是 [OpenAI Tokenizer](https://platform.openai.com/tokenizer)。`tokenUsage` 分为输入 prompt 使用了多少以及实际响应使用了多少：
+最后一点很重要，因为我们通过 token 支付 LLM API 的费用。平均而言，100 个单词大约相当于 130 个 token。一个管理 token 的有用工具是 [OpenAI Tokenizer](https://platform.openai.com/tokenizer)。`tokenUsage` 分为输入 prompt 使用了多少以及实际响应使用了多少：
 
 ```json
 "llmOutput": {
@@ -531,30 +407,22 @@ export default function Home() {
 return (
   <>
     <h1>故事生成器</h1>
-    <em>此应用使用 GPT 模型来生成故事...```
-    // ... (UI 代码)
-![](img/index-31_1.png)
-![](img/index-31_2.png)
-![](img/index-31_3.png)
-![](img/index-31_4.png)
-![](img/index-31_5.png)
-![](img/index-31_6.png)
+    <em>此应用使用 GPT 模型来生成故事...</em>
+
     <select name="subject">
       <option value="cats">猫</option>
       <option value="unicorns">独角兽</option>
       <option value="elfs">精灵</option>
     </select>
+
     <button>询问 AI</button>
-  </>
-)
+  </>)
 }
 ```
 
-No. 30 / 120
+### 2.7. LCEL - LangChain 表达式语言
 
-## 2.7. LCEL - LangChain 语言
-
-LangChain 语言（简称 LCEL）提供了一种更简单的方法来链接多个节点。简而言之，使用 LCEL，我们可以用 `.pipe()` 方法替换其他类（如 `LLMChain`）。让我们再次查看：
+`LangChain` 表达式语言（简称 `LCEL`）提供了一种更简单的方法来链接多个节点。简而言之，使用 `LCEL`，我们可以用 `.pipe()` 方法替换其他类（如 `LLMChain`）。让我们再次查看：
 
 ```javascript
 const model = new ChatOpenAI({
@@ -572,31 +440,29 @@ const chain = new LLMChain({
   llm: model,
   prompt,
 })
+
 await chain.invoke({subject})
 
 // 之后
 const chain = prompt.pipe(model)
+
 await chain.invoke({subject})
 ```
 
-LCEL 的核心元素是 `RunnableInterface`。它确保链中的节点具有通用模式。LCEL 标准化了通信并允许在 LangChain 框架内轻松切换组件。所有的组件都是模块化的。如果需要更改某些内容，只需替换该部分而不是整个流水线。本书中的许多示例将使用 LCEL 制作。
+`LCEL` 的核心元素是 `RunnableInterface`。它确保链中的节点具有通用模式。`LCEL` 标准化了通信并允许在 `LangChain` 框架内轻松切换组件。所有的组件都是模块化的。如果需要更改某些内容，只需替换该部分而不是整个流水线。本书中的许多示例将使用 `LCEL` 制作。
 
-No. 31 / 120 这标志着我们使用 JavaScript、LangChain 和 ChatGPT 的第一个小应用的结束。
+这标志着我们使用 JavaScript、`LangChain` 和 ChatGPT 的第一个小应用的结束。
 
 我们学会了如何：
 
 - 初始化并连接 Web 应用到 LLM。
-- 利用 LangChain 的 prompt 模板防止重复并创建我们的第一个链。
-
-
-
-
+- 利用 `LangChain` 的 prompt 模板防止重复并创建我们的第一个链。
 
 在下一章节中，我们将扩展此应用程序以生成实际的故事正文并集成数据流。
 
-# 3. LangChain 中的流
+## 3. LangChain 中的流式传输
 
-## 3.1 简介与项目设置
+### 3.1. 简介与项目设置
 
 大语言模型（LLM）生成某些答案可能需要很长时间。例如，当你要求模型编写像诗或总结文档之类的复杂回复时。
 
@@ -609,28 +475,19 @@ No. 31 / 120 这标志着我们使用 JavaScript、LangChain 和 ChatGPT 的第�
 回到故事生成器示例，假设我们想创建一个名为《银色精灵的秘密》的故事。与其等待整个故事生成，我们可以在故事编写的同时对其进行流式传输：
 
 从前以前
-
 ...
-
 ...
-
 从前，在一个神秘的森林里
-
 ...
-
 ...
-
 从前，在一个深藏于山中的神秘森林里
-
 ...
-
 ...
-
 从前，在一个深藏于山中的神秘森林里，住着一个银色精灵族。
 
 在本章中，我们将实现流式功能。这是应用程序 UI 最终的样式：
 
-## 3.2 项目重构
+### 3.2. 项目重构
 
 在继续之前，我们首先需要对项目进行重构。
 
@@ -639,7 +496,7 @@ No. 31 / 120 这标志着我们使用 JavaScript、LangChain 和 ChatGPT 的第�
 1. 一旦我们有了故事标题，我们将将其作为按钮显示，文本为`告诉我关于 <<这里是故事名称>>的故事`
 2. 当按下此按钮时，我们将调用后端，传递故事名称并打印响应
 
-代码代码将如下所示：
+代码将如下所示：
 
 ```javascript
 // code/streaming/src/app/page.js
@@ -653,22 +510,21 @@ export default function Home() {
   const [storyTitle, setStoryTitle] = useState()
 
   //! 为 storyBody 准备的新状态变量
-
   const [storyBody, setStoryBody] = useState()
 
-  const onSubmitHandler = async (e)=> {
+  const onSubmitHandler = async (e) => {
     e.preventDefault()
     const subject = e.target.subject.value
     const response = await fetch('api', {
       method: "POST",
       body: JSON.stringify({ subject })
     })
-
     const { data } = await response.json()
     setStoryTitle(data)
   }
 
-  //! 点击开始故事按钮时调用此方法 const startStoryStream = async ()=> {
+  //! 点击开始故事按钮时调用此方法
+  const startStoryStream = async () => {
     //! 重置故事正文，调用后端
     // 并在故事正文中显示响应
     setStoryBody('')
@@ -676,32 +532,33 @@ export default function Home() {
       method: "POST",
       body: JSON.stringify({ storyTitle })
     })
-
     const { data } = await response.json()
     setStoryBody(data)
   }
 
   return (
     <>
-      <h1>" 故事制造者</h1>
+      <h1>故事制造者</h1>
       <em>此应用使用 GPT 模型为孩子们生成故事。</em>
       <form onSubmit={onSubmitHandler}>
         故事的主题：
         <select name="subject">
-          <option value="cats">$ 猫</option>
-          <option value="unicorns">" 独角兽</option>
-          <option value="elfs">% •♀ 精灵</option>
+          <option value="cats">猫</option>
+          <option value="unicorns">独角兽</option>
+          <option value="elfs">精灵</option>
         </select>
-        <button># 询问 AI 模型</button>
+        <button>询问 AI 模型</button>
       </form>
       {/* ! 如果有故事标题，则显示
       开始故事按钮和故事正文 */}
-      {storyTitle && <div>
-        <button onClick={startStoryStream}>
-          告诉我关于 {storyTitle}的故事
-        </button>
-        <p>{storyBody}</p>
-      </>}
+      {storyTitle && (
+        <div>
+          <button onClick={startStoryStream}>
+            告诉我关于 {storyTitle} 的故事
+          </button>
+          <p>{storyBody}</p>
+        </div>
+      )}
     </>
   )
 }
@@ -709,36 +566,39 @@ export default function Home() {
 
 在后端，我们将添加这些更改：
 
-添加一个 `makeStoryTitle()` 方法，它包含之前所有的逻辑；添加一个 `streamStory()` 方法。我们稍后将使用此方法来实现流机制。目前，它将返回一些静态文本。
-
-检查来自前端的请求是请求故事标题还是故事正文。调用上述两个方法之一。
+- 添加一个 `makeStoryTitle()` 方法，它包含之前所有的逻辑；
+- 添加一个 `streamStory()` 方法。我们稍后将使用此方法来实现流机制。目前，它将返回一些静态文本。
+- 检查来自前端的请求是请求故事标题还是故事正文。调用上述两个方法之一。
 
 后端代码将如下：
 
 ```javascript
 import { ChatOpenAI } from "@langchain/openai"
 import { PromptTemplate } from "@langchain/core/prompts"
-//! 我们将使用 NextResponse 来发送故事正文 import { NextResponse } from "next/server"
-//! 所有的之前的逻辑都在这里
+//! 我们将使用 NextResponse 来发送故事正文
+import { NextResponse } from "next/server"
 
-const makeStoryTitle = async (subject)=> {
+//! 所有的之前的逻辑都在这里
+const makeStoryTitle = async (subject) => {
   const model = new ChatOpenAI({
     openAIApiKey: process.env.OPENAI_API_KEY,
     temperature: 0.9
   })
+
   const prompt = new PromptTemplate({
-    inputVariables: [ "subject"],
-    template: "告诉我一个关于 {subject}的故事标题",
+    inputVariables: ["subject"],
+    template: "告诉我一个关于 {subject} 的故事标题",
   })
+
   const chain = prompt.pipe(model)
   return await chain.invoke({subject})
 }
 
-//! 我们稍后会更新这里以添加流式传输 const streamStory = async (storyTitle)=> {
+//! 我们稍后会更新这里以添加流式传输
+const streamStory = async (storyTitle) => {
   return new NextResponse(
-    JSON.stringify( { data: "故事从这里开始..."}
-  ),
-  { headers: { 'content-type': 'application/json' },
+    JSON.stringify({ data: "故事从这里开始..."} ),
+    { headers: { 'content-type': 'application/json' } }
   )
 }
 
@@ -750,11 +610,11 @@ export async function POST(req) {
   }
   //! 如果没有 storyTitle 则返回
   const gptResponse = await makeStoryTitle(subject)
-  return Response.json({data:gptResponse})
+  return Response.json({data: gptResponse})
 }
 ```
 
-## 3.3 流式响应
+### 3.3. 流式响应
 
 在某些情况下，AI 模型可能需要几秒钟来生成完整的提示响应。这比应用程序感觉流畅的 200-300 毫秒阈值慢。
 
@@ -766,14 +626,15 @@ export async function POST(req) {
 
 ```javascript
 // code/streaming/src/app/route.js
-// 其他部分保持不变
 
+// 其他部分保持不变
 // ...
 
-const streamStory = async (storyTitle)=> {
+const streamStory = async (storyTitle) => {
   const encoder = new TextEncoder()
   const stream = new TransformStream()
   const writer = stream.writable.getWriter()
+
   const model = new ChatOpenAI({
     openAIApiKey: process.env.OPENAI_API_KEY,
     temperature: 0.9,
@@ -789,20 +650,20 @@ const streamStory = async (storyTitle)=> {
       }
     }]
   })
+
   const prompt = new PromptTemplate({
-    inputVariables: [ "storyTitle" ],
-    template: "告诉我一个标题为 {storyTitle}的故事"
+    inputVariables: ["storyTitle"],
+    template: "告诉我一个标题为 {storyTitle} 的故事"
   })
+
   const chain = prompt.pipe(model)
   chain.invoke({storyTitle})
+
   return new NextResponse(stream.readable, {
     headers: { "Content-Type": "text/event-stream" }
   })
 }
 ```
-
-
-
 
 此外，在前端，我们将修改单个方法：`startStoryStream()`：
 
@@ -810,18 +671,19 @@ const streamStory = async (storyTitle)=> {
 // code/streaming/src/app/page.js
 
 // 其他部分保持不变
-
 // ...
 
-const startStoryStream = async ()=> {
+const startStoryStream = async () => {
   setStoryBody('')
   const response = await fetch('api', {
     method: "POST",
     body: JSON.stringify({ storyTitle })
   })
+
   //! reader 将充当数据通信“管道”
   const reader = response.body.getReader()
   const decoder = new TextDecoder()
+
   //! 在我们不断接收新的响应块时保持连接
   while (true) {
     const { value, done } = await reader.read()
@@ -836,22 +698,13 @@ const startStoryStream = async ()=> {
 // ...
 ```
 
-第 44 / 120 页
+通过了这些最终的 UI 更改，我们可以看到故事随着 LLM 的生成而展开：如果你想更深入地研究这个主题，`LangChain` [文档有一份非常好的](https://js.langchain.com/docs/modules/chains/foundational/llm_chain#cancelling-a-running-llmchain) [关于流式的指南，](https://js.langchain.com/docs/expression_language/streaming) [包括这一部分关于如何](https://js.langchain.com/docs/modules/chains/foundational/llm_chain#cancelling-a-running-llmchain) [在响应不符合你的预期时停止流式处理的内容。](https://js.langchain.com/docs/modules/chains/foundational/llm_chain#cancelling-a-running-llmchain)
 
-![](img/index-45_1.png)
+## 4. 输出解析器
 
-通过了这些最终的 UI 更改，我们可以看到故事随着 LLM 的生成而展开：如果你想更深入地研究这个主题，LangChain [文档有一份非常好的](https://js.langchain.com/docs/modules/chains/foundational/llm_chain#cancelling-a-running-llmchain) [关于流式的指南，](https://js.langchain.com/docs/expression_language/streaming) [包括这一部分关于如何](https://js.langchain.com/docs/modules/chains/foundational/llm_chain#cancelling-a-running-llmchain) [在响应不符合你的预期时停止流式处理的内容。](https://js.langchain.com/docs/modules/chains/foundational/llm_chain#cancelling-a-running-llmchain)
+### 4.1. 引言
 
-第 45 / 120 页
-
-# 4. 输出
-## `parsers`
-
-第 46 / 120 页
-
-## 4.1. 引言
-
-好了，让我们深入探讨 LangChain 中输出解析器的细节。
+好了，让我们深入探讨 `LangChain` 中输出解析器的细节。
 
 我们为什么需要它们？嗯，在与 LLM 交互时，你会发现如果你两次问同一个问题，响应可能不同。此外，输出的格式也可能变化。
 
@@ -860,20 +713,19 @@ const startStoryStream = async ()=> {
 而且当你更改底层 LLM 模型类型时，情况会变得糟糕。
 
 将输出解析器想象成你的格式化助手。它们可以：
-1. 通过添加前缀或后缀等内容来调整你的提示词（prompt），将输出引导至特定方向。想要 JavaScript 数组吗？想要简单的字符串或 JSON 嵌套结构吗？LangChain 的输出解析器都能搞定；
+
+1. 通过添加前缀或后缀等内容来调整你的提示词，将输出引导至特定方向。想要 JavaScript 数组吗？想要简单的字符串或 JSON 嵌套结构吗？`LangChain` 的输出解析器都能搞定；
 2. 在输出准备好后，一个 JavaScript 函数可能会介入进行清理。该函数甚至可以使用其他 LLM 将输出润色为完美的格式。
 
-第 47 / 120 页
+### 4.2. 示例设置
 
-![](img/index-48_1.png)
-
-## 4.2. 示例设置
-
-LangChain 提供了几个预定义的输出解析器可以直接使用。我们将在随后的示例中使用其中一些。
+`LangChain` 提供了几个预定义的输出解析器可以直接使用。我们将在随后的示例中使用其中一些。
 
 你被要求使用 ChatGPT 制作一个问答游戏。用户将要求一个带有四个可能答案的问答问题。其中一个答案是正确的。点击其中一个答案后，将弹出一个窗口指示答案是正确还是错误。用户可以随时要求提一个新问题。
 
-这就是应用程序的最终版本的样子：我们将从一个非常简单的状态开始。
+这就是应用程序的最终版本的样子：
+
+我们将从一个非常简单的状态开始。
 
 在后端，我们将创建一个 OpenAI 模型并向它请求一个问答问题：
 
@@ -886,11 +738,7 @@ import { PromptTemplate } from "@langchain/core/prompts"
 const model = new ChatOpenAI({
   openAIApiKey: process.env.OPENAI_API_KEY,
 })
-```
 
-第 48 / 120 页
-
-```javascript
 const prompt = PromptTemplate.fromTemplate(
   `问我一个关于地理的问答问题.`
 )
@@ -909,129 +757,32 @@ export async function GET() {
 
 ```javascript
 // code/trivia-game/src/app/page.js
+'use client'
+import { useState } from "react"
 
-import { ChatOpenAI } from "@langchain/openai"
-import { PromptTemplate } from "@langchain/core/prompts"
+export default function Home() {
+  const [question, setQuestion] = useState()
 
-const model = new ChatOpenAI({
-  openAIApiKey: process.env.OPENAI_API_KEY
-})
+  const getTriviaQuestion = async () => {
+    const response = await fetch('api')
+    const data = await response.json()
+    console.log(data)
+    setQuestion(data.question)
+  }
 
-const prompt = PromptTemplate.fromTemplate(
-  `问我一个关于地理的问答问题.`
-)
-
-const chain = new prompt.pipe(model)
-
-export async function GET() {
-  // 注意：此处原文代码有误（缺少 const），但翻译保持原意逻辑
-  const gptResponse = await chain.invoke()
-}
-```
-*(纠正：原文提供的代码片段中 `const chain = new prompt.pipe(model)` 似乎是笔误，根据上下文应为 `prompt.pipe(model)`，但在翻译中我将遵循原文结构或根据逻辑微调以保持通顺。)* 让我们重新对齐原文代码逻辑：
-
-```javascript
-const chain = new prompt.pipe(model) // 原文此处可能有误，按原文符号翻译
-```
-*(重新审视原文：`const chain = new prompt.pipe(model)` 确实语法错误，但作为翻译，我将保留其结构或修正为合理的逻辑。此处按原意翻译。)*
-
-修正翻译代码块：
-```javascript
-const chain = new prompt.pipe(model) // 修正自原文逻辑错误
-```
-*(等等，为了严格遵守“不翻译代码块”，我应保持 `new prompt.pipe(model)` 也不样，尽管它看起来像 `new。 `new ` `pipe.pipe( 。。。
-
-按照
-
-按照按照严格，保持代码块：：
-```javascript
-const chain = new prompt.pipe(model)
-```
-
-```
-```
-```
-```
-```
-``````
-```
-```
-```
-```
-```
-```
-```
-```
-```
-```
-```
-```
-```
-```
-```
-```
-```
-```
-```
-```
-```
-```
-```
-```
-```
-```
-```
-```
-```
-```
-```
-```
-```
-```
-```
-```
-```
-```
-```
-```
-```
-```
-```
-```
-```
-```
-```
-```
-```
-```抱歉，由于系统出现异常。 重新处理第 48 / 120 页之后的代码逻辑对齐：
-
-```javascript
-const chain = new prompt.pipe(model)
-
-export async function GET() {
-  const gptResponse = await chain.invoke()
-  return Response.json({question: gptResponse.text})
+  return (
+    <>
+      <h1>趣味知识</h1>
+      <button onClick={getTriviaQuestion}>获取问题</button>
+      <p>{question}</p>
+    </>
+  )
 }
 ```
 
-第 49 / 120 页
+### 4.3. StringOutputParser
 
-```javascript
-const chain = new prompt.pipe(model)
-
-export async function GET() {
-  const gptResponse = await chain.invoke()
-  return Response.json({question: gptResponse.text})
-}
-```
-
-第 50 / 120
-
-![](img/index-50_1.png)
-
-## 4.3. StringParser
-
-[`StringParser`](https://js.langchain.com/docs/modules/output_parsers/string) 接收模型输出并将其转换为简单的字符串。这是最易使用的解析器。让我们看看实际样子：
+[`StringOutputParser`](https://js.langchain.com/docs/modules/output_parsers/string) 接收模型输出并将其转换为简单的字符串。这是最易使用的解析器。让我们看看实际样子：
 
 ```javascript
 const prompt = PromptTemplate.fromTemplate(
@@ -1046,6 +797,7 @@ console.log(gptResponse)
 ```
 
 如果我们打印 `gptResponse`，它看起来像：
+
 ```json
 {text: "法国的首都是哪里？"}
 ```
@@ -1081,10 +833,11 @@ const model = new ChatOpenAI({
 })
 
 //! 创建提示词并调用链
-const makeQuestion = async ()=> {
+const makeQuestion = async () => {
   const prompt = PromptTemplate.fromTemplate(
     `问我一个关于地理的问答问题.`
   )
+
   //! 将解析器添加到 LCEL 链中，以便我们得到简单的字符串输出而不是对象
   const chain = prompt
     .pipe(model)
@@ -1100,22 +853,11 @@ export async function GET() {
 }
 ```
 
-第 51 / 120
+### 4.4. CommaSeparatedListOutputParser
 
-![](img/index-52_1.png)
-![](img/index-52_2.png)
-![](img/index-52_3.png)
-![](img/index-52_4.png)
-
-![](img/index-52_5.png)
-
-## 4.4. CommaSeparatedListOutputParser 有时我们需要从 LLM 的响应中获取多个项目。
+有时我们需要从 LLM 的响应中获取多个项目。
 
 让我们让 ChatGPT 也帮助我们为问答问题提供一些可能的答案。这就是提示词的样子：
-
-
-
-
 
 `为 {question} 提供 4 个可能的答案，用逗号分隔，3 个错误答案 1 个正确答案，随机排序。`
 
@@ -1142,13 +884,7 @@ AIMessage {
 
 这是一个长且复杂的 JavaScript 对象，我们需要对其手动解析。顺便说一下，我们将在聊天内存章节中详细介绍 `AIMessage` 类。
 
-No. 54 / 120
-
-![](img/index-55_1.png)
-![](img/index-55_2.png)
-![](img/index-55_3.png)
-
-对于此类情况，LangChain 可以帮助我们使用 [逗号分隔列表输出解析器](https://api.js.langchain.com/classes/langchain_core_output_parsers.CommaSeparatedListOutputParser.html)。
+对于此类情况，`LangChain` 可以帮助我们使用 [逗号分隔列表输出解析器](https://api.js.langchain.com/classes/langchain_core_output_parsers.CommaSeparatedListOutputParser.html)。
 
 `CommaSeparatedListOutputParser` 获取 LLM 提供的复杂答案并将其重新格式化为标准的字符串数组。例如，上面示例中的 `AIMessage` 将变为：
 
@@ -1180,31 +916,28 @@ const model = new ChatOpenAI({
 
 //! 向模型询问可能的答案
 const makePossibileAnswers = async (question) => {
+  const prompt = PromptTemplate.fromTemplate(
+    `为 {question} 提供 4 个可能的答案，用逗号分隔，
+    3 个错误答案 1 个正确答案，随机排序.`
+  )
 
-// No. 55 / 120
-![](img/index-56_1.png)
-![](img/index-56_2.png)
+  //! 在链中应用 CommaSeparatedListOutputParser
+  const chain = prompt
+    .pipe(model)
+    .pipe(new CommaSeparatedListOutputParser())
 
-const prompt = PromptTemplate.fromTemplate(
-  `为 {question} 提供 4 个可能的答案，用逗号分隔，
-  3 个错误答案 1 个正确答案，随机排序.`
-)
-
-//! 在链中应用 CommaSeparatedListOutputParser
-const chain = prompt
-  .pipe(model)
-  .pipe(new CommaSeparatedListOutputParser())
-
-return await chain.invoke({question: question})
+  return await chain.invoke({question: question})
 }
 
-const makeQuestion = async ()=> {
+const makeQuestion = async () => {
   const prompt = PromptTemplate.fromTemplate(
     `问我一个关于地理的趣味知识问题.`
   )
+
   const chain = prompt
     .pipe(model)
     .pipe(new StringOutputParser())
+
   return await chain.invoke()
 }
 
@@ -1218,16 +951,10 @@ export async function GET() {
 
 注意，我们增加了模型的温度，因为它在生成可能的答案时需要具有创造性。
 
-虽然你可能想使用 [JavaScript 的 `split()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/split) 方法，但请想想！如果我们更改了 LLM 且响应结构发生了变化会发生什么？这就是为什么 LangChain 如此强大的原因！它标准化了我们与 AI 模型交互的方式。
-
-No. 56 / 120
-
-![](img/index-57_1.png)
-![](img/index-57_2.png)
-![](img/index-57_3.png)
-![](img/index-57_4.png)
+虽然你可能想使用 [JavaScript 的 `split()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/split) 方法，但请想想！如果我们更改了 LLM 且响应结构发生了变化会发生什么？这就是为什么 `LangChain` 如此强大的原因！它标准化了我们与 AI 模型交互的方式。
 
 在此时，我们正在使用两个输出解析器：
+
 - `StringOutputParser` 用于主要的趣味知识问题
 - `CommaSeparatedListOutputParser` 用于解析可能的答案列表
 
@@ -1244,7 +971,7 @@ export default function Home() {
   //! 添加一个空数组状态变量来存储答案
   const [answers, setAnswers] = useState([])
 
-  const getTriviaQuestion = async ()=> {
+  const getTriviaQuestion = async () => {
     const response = await fetch('api')
     const data = await response.json()
     console.log(data)
@@ -1261,8 +988,6 @@ export default function Home() {
       {/* 遍历答案并显示为按钮 */}
       {answers.map((answ, i) => (
         <button key={i}>
-          // No. 57 / 120
-          ![](img/index-58_1.png)
           {answ}
         </button>
       ))}
@@ -1273,25 +998,17 @@ export default function Home() {
 
 这种 UI 看起来是这样的：
 
-![](img/index-59.png)
-
 一旦我们有了答案，我们将更新状态。
 
+## 5. 对话记忆
 
+### 5.1. 简介与项目设置
 
-
-
-# 5. 对话内存
-
-## 5.1 简介与项目设置
-
-对话内存功能允许大语言模型（LLM）记住之前与用户的交互内容。对话内存是聊天机器人能够以对话方式响应多个查询的关键。如果没有它，每个查询都将被视为单个输入。只有当追问引用之前的问题和答案时，追问才才有意义。例如，如果我只对 LLM 说 `Explain in detail`（详细解释），它会要求更多上下文。
+对话记忆功能允许大语言模型（LLM）记住之前与用户的交互内容。对话记忆是聊天机器人能够以对话方式响应多个查询的关键。如果没有它，每个查询都将被视为单个输入。只有当追问引用之前的问题和答案时，追问才有意义。例如，如果我只对 LLM 说 `Explain in detail`（详细解释），它会要求更多上下文。
 
 默认情况下，LLM 是无状态的。每个传入的查询都是与其他交互独立处理的。对于无状态实体来说，唯一存在的是当前输入，别无其他。
 
 你正在为一家茶馆工作，被指派创建一个 GPT 驱动的应用程序，为用户提供关于茶的趣知识。以下是应用程序最终版本的预览：
-
-![](img/index-69_1.png)
 
 我们将从以下设置开始。
 
@@ -1299,13 +1016,14 @@ export default function Home() {
 
 ```javascript
 // code/tea-wiki/src/app/page.js
+
 'use client'
 import { useState } from "react"
 
 export default function Home() {
   const [answer, setAnswer] = useState()
 
-  const tellFact = async ()=> {
+  const tellFact = async () => {
     const response = await fetch('api', {
       method: "POST"
     })
@@ -1315,7 +1033,7 @@ export default function Home() {
 
   return (
     <>
-      <h1>+ Tea Facts</h1>
+      <h1>Tea Facts</h1>
       <button onClick={tellFact}>
         Tell a fact about my favourite drink
       </button>
@@ -1329,6 +1047,7 @@ export default function Home() {
 
 ```javascript
 // code/tea-wiki/src/app/api/route.js
+
 import { ChatOpenAI } from "@langchain/openai"
 import { ChatPromptTemplate } from "@langchain/core/prompts"
 import { StringOutputParser } from "@langchain/core/output_parsers"
@@ -1341,16 +1060,11 @@ const model = new ChatOpenAI({
 const prompt = ChatPromptTemplate.fromMessages([
   ["human", "{input}"]
 ])
-```
 
-
-
-
-
-```javascript
 const outputParser = new StringOutputParser()
 
 const chain = prompt.pipe(model).pipe(outputParser)
+
 export async function POST() {
   const question = `Tell me a fact about my favorite drink.`
   const fact = await chain.invoke({
@@ -1360,15 +1074,9 @@ export async function POST() {
 }
 ```
 
-No. 70 / 120
+### 5.2. 向对话记忆中注入消息
 
-![](img/index-71_1.png)
-
-![](img/index-71_2.png)
-
-## 5.2. 将消息注入到对话内存中
-
-从一开始就能看出我们面临一个问题：在调用链（chain）时，我们可以使用 `chat_history` 属性为当前的对话设置内存上下文。
+从一开始就能看出我们面临一个问题：在调用链时，我们可以使用 `chat_history` 属性为当前的对话设置内存上下文。
 
 让我们看看如何实现这一点！
 
@@ -1388,21 +1096,12 @@ const model = new ChatOpenAI({
   openAIApiKey: process.env.OPENAI_API_KEY,
   temperature: 0.9,
 })
-```
 
-No. 71 / 120
-
-![](img/index-72_1.png)
-
-![](img/index-72_2.png)
-
-![](img/index-72_3.png)
-
-```javascript
-//! 初始对话内存上下文
+//! 初始对话记忆上下文
 const chatHistory = [
   new HumanMessage(`My favorite drink is tea.`)
 ]
+
 const prompt = ChatPromptTemplate.fromMessages([
   //! 我们需要告诉提示词它将拥有内存
   new MessagesPlaceholder("chat_history"),
@@ -1410,7 +1109,9 @@ const prompt = ChatPromptTemplate.fromMessages([
 ])
 
 const outputParser = new StringOutputParser()
+
 const chain = prompt.pipe(model).pipe(outputParser)
+
 export async function POST() {
   const question = `Tell me a fact about my favorite drink.`
   const fact = await chain.invoke({
@@ -1424,34 +1125,29 @@ export async function POST() {
 
 这里的关键是 `MessagesPlaceholder` 对象。我们可以为提示词设置不同的消息占位符。
 
-例如，我们可以使用代理暂稿板（agent scratchpad）消息占位符来存储 AI 智能体的“想法”。别担心，我们将在后续章节中详细讨论 AI 智能体。
+例如，我们可以使用代理暂存板消息占位符来存储 AI 智能体的“想法”。别担心，我们将在后续章节中详细讨论 AI 智能体。
 
 在这种情况下，我们将使用带有 `chat_history` 的 `MessagesPlaceholder` 来告知提示词它不是无状态的，并且有一个历史。
 
-No. 72 / 120
-
-![](img/index-73_1.png)
-
-![](img/index-73_2.png)
-
-![](img/index-73_3.png)
-
 `chatHistory` 只是一个简单的数组，我们可以在其中存储带有 `HumanMessage` 和 `AIMessage` 对象的对话历史。最后，这些对象的内容仅由简单的字符串加上一些额外的格式组成。
 
-通过这些更改，模型现在将知道我们最喜欢的饮料是茶茶：太棒了！向前迈了一步！
+通过这些更改，模型现在将知道我们最喜欢的饮料是茶：太棒了！向前迈了一步！
 
 然而，我们现在面临另一个问题。让我们看看在请求多个事实后会发生什么。
 
-为了实现存储之前的实，我们只需要更改前端。我们将跟踪并显示模型给出的所有之前的响应：
+为了实现存储之前的事实，我们只需要更改前端。我们将跟踪并显示模型给出的所有之前的响应：
 
 ```javascript
 // code/tea-wiki/src/app/page.js
+
 'use client'
 import { useState } from "react"
+
 export default function Home() {
   //! 将答案替换为事实数组
   const [facts, setFacts] = useState([])
-  const tellFact = async ()=> {
+
+  const tellFact = async () => {
     const response = await fetch('api', {
       method: "POST"
     })
@@ -1459,16 +1155,17 @@ export default function Home() {
     //! 将新事实添加到数组
     setFacts([data, ...facts])
   }
+
   return (
     <>
-      <h1>+ 茶的知识</h1>
+      <h1>Tea Facts</h1>
       <button onClick={tellFact}>
         告诉我关于我最喜欢的饮料的事实
       </button>
       <ul>
         {
           //! 显示数组
-          facts.map( (fact,i) => <li key={i}>{fact}</li>)
+          facts.map((fact, i) => <li key={i}>{fact}</li>)
         }
       </ul>
     </>
@@ -1478,9 +1175,7 @@ export default function Home() {
 
 模型一直在返回同样的几个旧事实，就像一个老爷爷不断一遍又一遍复述同样的故事一样。
 
-我们可以尝试更新提示词，但这将没有帮助：No. 74 / 120
-
-![](img/index-75_1.png)
+我们可以尝试更新提示词，但这将没有帮助：
 
 ```javascript
 //! 更改提示词无法解决重复问题
@@ -1495,9 +1190,7 @@ const response = await chain.invoke({
 
 之所以这样做是因为我们只提供了初始消息（My favorite drink is tea.）。我们还需要随着对话的演进来更新消息历史。
 
-No. 75 / 120
-
-## 5.3. 完整的对话历史
+### 5.3. 完整的对话历史
 
 如果你查看对话历史，它就是一个简单的 JavaScript 数组。这意味着我们可以通过向数组推送新项来轻松添加消息：来自用户端的 `HumanMessage`，来自模型的 `AIMessage`，对话看起来像这样：
 
@@ -1525,25 +1218,112 @@ const model = new ChatOpenAI({
 })
 
 const prompt = ChatPromptTemplate.fromMessages([
-  new MessagesPlaceholder("chat_history"),
-  ["human", "{input}"]
+```
+
+
+
+# 文档大纲
+
+* 1. 引言
+    * 1.1. 获取书籍更新和代码示例
+    * 1.2. 关于作者
+    * 1.3. 这本书是如何诞生的
+    * 1.4. 什么是 LangChain
+    * 1.5. 本书概述
+    * 1.6. 要求以及如何使用本书
+
+* 2. 模型、提示词和链
+    * 2.1. 引言
+    * 2.2. 入门
+    * 2.3. OpenAI ChatGPT 模型的 API key
+    * 2.4. 使用 `ChatOpenAI` LangChain 模型
+    * 2.5. 提示词模板
+    * 2.6. 链
+    * 2.7. LCEL - LangChain 表达式语言
+
+* 3. LangChain 中的流式传输
+    * 3.1. 引言和项目设置
+    * 3.2. 项目重构
+    * 3.3. 流式传输响应
+
+* 4. 输出解析器
+    * 4.1. 引言
+    * 4.2. 示例设置
+    * 4.3. `StringOutputParser`
+    * 4.4. `CommaSeparatedListOutputParser`
+    * 4.5. `getFormatInstructions()` 方法和自定义解析器
+    * 4.6. `StructuredOutputParser`
+
+* 5. 对话记忆
+    * 5.1. 引言和项目设置
+    * 5.2. 将消息注入对话内存中
+    * 5.3. 完整的对话历史
+
+* 6. RAG / 与文档对话
+    * 6.1. 引言
+    * 6.2. 示例设置
+    * 6.3. 使用本地文档
+    * 6.4. RAG 过程的组件
+    * 6.5. 向量、嵌入和向量数据库
+    * 6.6. 使用 `CheerioWebBaseLoader` 和 `MemoryVectorStore`
+
+* 7. AI 代理
+    * 7.1. 引言和项目设置
+    * 7.2. 创建智能体
+    * 7.3. 监控智能体
+    * 7.4. 总结
+    * 7.5. 结语
+
+---
+
+## 5. 对话记忆
+
+### 5.1. 引言和项目设置
+
+...
+
+### 5.2. 将消息注入对话内存中
+
+...
+
+### 5.3. 完整的对话历史
+
+```javascript
+new MessagesPlaceholder("chat_history"),
+
+["human", "{input}"]
 ])
 
 const outputParser = new StringOutputParser()
+
 const chain = prompt.pipe(model).pipe(outputParser)
+
 export async function POST() {
+
   //! 更新提示词
+
   const question = `Tell me a fact about my favorite drink.
+
   Do not repeat any of the previous facts.`
+
   //! 将用户发送的消息添加到历史中
+
   chatHistory.push(new HumanMessage(question))
+
   const fact = await chain.invoke({
+
     input: question,
+
     chat_history: chatHistory
+
   })
+
   //! 存储每个事实以便 LLM 知道不要重复
+
   chatHistory.push(new AIMessage(fact))
+
   return Response.json({data: fact})
+
 }
 ```
 
@@ -1573,19 +1353,11 @@ OpenAI ChatGPT 网页应用的操作方式：
 
 [`js.langchain.com/docs/use_cases/chatbots/memory_management/`](https://js.langchain.com/docs/use_cases/chatbots/memory_management/)
 
-[/content]
+---
 
-## 6. RAG /
+## 6. RAG / 与文档对话
 
-### 与文档对话
-
-
-
-
-
-No. 80 / 120
-
-## 6.1. 引言
+### 6.1. 引言
 
 让我们来聊一个在使用 LLM 时非常重要的话题：`RAG`，它代表“检索增强生成”（Retrieval Augmented Generation）。
 
@@ -1607,8 +1379,6 @@ No. 80 / 120
 
 ### 但为什么 `RAG` 如此重要？
 
-No. 81 / 120
-
 LLM 的训练成本非常高。**非常高**！例如，来自 `Meta` 的 `Llama 2` 模型使用了 6000 个 `GPUs` 运行了 12 天。训练成本大约为 200 万美元。在绝大多数情况下，你并不想从零开始训练模型。
 
 然而，随着每一分钟的过去，都会产生新的信息/知识。让模型与新信息同步是一场持续的竞赛。
@@ -1623,7 +1393,7 @@ No. 82 / 120
 
 ![](img/index-83_1.png)
 
-## 6.2. 示例设置
+### 6.2. 示例设置
 
 我们将通过构建以下示例来探索如何连接 LLM 与外部文档：
 
@@ -1643,9 +1413,7 @@ No. 83 / 120
 
 ```javascript
 // code/rag/src/app/page.js
-
 'use client'
-
 import { useState } from "react"
 
 export default function Home() {
@@ -1658,26 +1426,18 @@ export default function Home() {
       method: "POST",
       body: JSON.stringify({question})
     })
-```
-
-No. 84 / 120
-
-![](img/index-85_1.png)
-
-```javascript
     const {data} = await response.json()
     setAnswer(data)
   }
 
   return (<>
-    <h1>文档机器人</h>
+    <h1>文档机器人</h1>
     <form onSubmit={askQuestion} >
       <input name="question" />
       <button>提问机器人</button>
     </form>
     <p>{answer}</p>
   </>)
-  )
 }
 ```
 
@@ -1685,7 +1445,6 @@ No. 84 / 120
 
 ```javascript
 // code/rag/src/app/api/route.js
-
 import { ChatOpenAI } from "@langchain/openai"
 import { ChatPromptTemplate } from "@langchain/core/prompts"
 import { LLMChain } from "langchain/chains"
@@ -1707,13 +1466,6 @@ const chain = new LLMChain({
 export async function POST(req) {
   const { question } = await req.json()
   const data = await chain.invoke({
-```
-
-No. 85 / 120
-
-![](img/index-86_1.png)
-
-```javascript
     input: question
   })
   return Response.json({data: data.text})
@@ -1724,7 +1476,9 @@ No. 85 / 120
 
 虽然这在处理简单问题时如预期运行，但当我们询问其训练数据之外的话题时，模型的局限性就会显现出来。
 
-例如，如果我们询问 `LangSmith`（一个用于部署和监控 `LLM` 应用的平台），它将给出类似下面的通用回答：No. 86 / 120
+例如，如果我们询问 `LangSmith`（一个用于部署和监控 `LLM` 应用的平台），它将给出类似下面的通用回答：
+
+No. 86 / 120
 
 ![](img/index-87_1.png)
 
@@ -1735,18 +1489,15 @@ No. 85 / 120
 No. 87 / 120
 
 ![](img/index-88_1.png)
-
 ![](img/index-88_2.png)
-
 ![](img/index-88_3.png)
 
-## 6.3. 使用本地文档
+### 6.3. 使用本地文档
 
 使用 `LangChain` 扩展 LLM 上文的方法之一是使用本地文档。在这个示例中，我们使用了简单的文本，但也可以拥有 `PDF`、`CSV` 和其他类型的文件。我们甚至可以包含视频和音频，这些包含大量信息。让我们看看这一切在后端是如何整合的：
 
 ```javascript
 // code/rag/src/app/api/route.js
-
 import { ChatOpenAI } from "@langchain/openai"
 import { ChatPromptTemplate } from "@langchain/core/prompts"
 // 我们需要这个来创建本地文档
@@ -1801,10 +1552,6 @@ No. 89 / 120
 
 未这样做会导致以下错误：`Error: Prompt must include a context variable`
 
-
-
-
-
 上下文长度（Context length）指的是模型一次能够处理的最大单词数。你可以将其视为模型的内存或注意力跨度。这是像 `ChatGPT` 和 `Llama` 等基于 Transformer 的模型中预设的特性。
 
 以下是一些流行的大语言模型（LLMs）的默认上下文长度：扩展上下文不会重新训练模型；在此过程中权重将保持不变。
@@ -1815,31 +1562,29 @@ No. 89 / 120
 
 ![](img/index-91_1.png)
 
-让我们测试一下。再次问它“LangSmith 是什么？”，而现在我们将从我们刚刚创建的本地文档中获得答案：第 91 / 120
+让我们测试一下。再次问它“LangSmith 是什么？”，而现在我们将从我们刚刚创建的本地文档中获得答案：
 
-## 6.4. RAG 过程的组件
+第 91 / 120
+
+### 6.4. RAG 过程的组件
 
 让我们来看一下 RAG 过程中涉及的各种组件类型：
 
 1. `Document Loaders`（文档加载器） - 将这些看作你的数据收集器。它们抓取外部信息并将其加载，无论是旧的 `.txt` 文件、网页文本，甚至是 YouTube 视频字幕。
-
 2. `Transformers`（转换器） - 你已经加载了文档，但有时它们需要进行一些微调以完美适配你的应用。`LangChain` 预制的转换器可以帮助你调整文档。一个基础示例是使用转换器将一个大文档拆分成较小的片段，以适应你模型的上下文窗口。
-
 3. `Embeddings`（嵌入） - 这完全关于将数据转换为向量。`Embeddings` 类是你处理嵌入模型（如来自 `OpenAI`、`Meta` 或 `Hugging Face` 的模型）的首选。将文本嵌入看作是在向量空间中表示文本或数据的方式，使得语义搜索等操作更快。
-
 4. `Vector Databases`（向量数据库） - 是时候存储我们在上一步生成的文本嵌入了。这些专门的数据库旨在高效地存储和检索向量数据。它们让语义搜索变得简单且快速。我们可以瞬间调出最相关的文本。我们稍后深入探讨向量数据库。
-
 5. `Retrievers`（检索器） - 最后但同样重要的，认识你的信息获取助手：检索器。与仅仅持有数据的向量存储不同，检索器会出去抓取你需要的文档。虽然某些检索器可能会使用向量存储，但还有各种针对特定任务定制的检索器。
 
 第 92 / 120
 
-## 6.5. 向量、嵌入和向量数据库
+### 6.5. 向量、嵌入和向量数据库
 
 在继续之前，我们需要进行短时间的绕路，讨论 RAG 过程中涉及的一些基础概念。
 
 我们将从向量开始。向量简单来说就是一个数字数组。
 
-```
+```javascript
 // this is how a vector looks like
 let vec = [2.5, 1.3, 7.0, 9.2]
 ```
@@ -1860,7 +1605,7 @@ let vec = [2.5, 1.3, 7.0, 9.2]
 
 每个点都是一个如下格式的向量：
 
-```
+```javascript
 [
   x, // 对象有多大
   y // 对象有多快
@@ -1895,7 +1640,7 @@ let vec = [2.5, 1.3, 7.0, 9.2]
 
 ![](img/index-96_1.png)
 
-## 6.6. 使用 CheerioWebBaseLoader 和 MemoryVectorStore
+### 6.6. 使用 `CheerioWebBaseLoader` 和 `MemoryVectorStore`
 
 在之前的示例中，我们只使用了文档加载器和检索器。现在是时候扩展我们的示例并让其他 RAG 组件工作了。
 
@@ -1912,7 +1657,6 @@ let vec = [2.5, 1.3, 7.0, 9.2]
 ```javascript
 // code/rag/src/page.js
 'use client'
-
 import { useState } from "react"
 
 export default function Home() {
@@ -1991,34 +1735,26 @@ const model = new ChatOpenAI({
 })
 
 const prompt = ChatPromptTemplate.fromTemplate(`
-  nswer 根据以下上下文回答用户的问题：
+  Answer 根据以下上下文回答用户的问题：
   {context}
-
   Question: {input}`)
 ```
-
-
 
 ```javascript
 let retrievalChain, splitDocs
 
 //! RAG 流程
-
 async function loadDocumentsFromUrl(url) {
-  //! 文加载器
+  //! 文档加载器
   const loader = new CheerioWebBaseLoader(url)
   const docs = await loader.load()
 
-  //! 文转换器
+  //! 文档转换器
   const splitter = new RecursiveCharacterTextSplitter({
     chunkSize: 100,
-    No. 99 / 120
-    ![](img/index-100_1.png)
-    ![](img/index-100_2.png)
-    ![](img/index-100_3.png)
-    ![](img/index-100_4.png)
     chunkOverlap: 20,
   })
+
   splitDocs = await splitter.splitDocuments(docs)
 
   //! 设置嵌入
@@ -2029,12 +1765,15 @@ async function loadDocumentsFromUrl(url) {
     splitDocs,
     embeddings
   )
+
   //! 我们用它从向量数据库获取数据
   const retriever = vectorstore.asRetriever()
+
   const chain = await createStuffDocumentsChain({
     llm: model,
     prompt
   })
+
   retrievalChain = await createRetrievalChain({
     combineDocsChain: chain,
     retriever
@@ -2043,6 +1782,7 @@ async function loadDocumentsFromUrl(url) {
 
 export async function POST(req) {
   const { question, url } = await req.json()
+
   //! 如果用户发送了 url，则设置 RAG 并返回
   if (url) {
     await loadDocumentsFromUrl(url);
@@ -2052,12 +1792,22 @@ export async function POST(req) {
   const data = await retrievalChain.invoke({
     input: question,
     context: splitDocs
-    No. 100 / 120
-    ![](img/index-101_1.png)
   })
+
   return Response.json({data: data.answer})
 }
 ```
+
+No. 99 / 120
+
+![](img/index-100_1.png)
+![](img/index-100_2.png)
+![](img/index-100_3.png)
+![](img/index-100_4.png)
+
+No. 100 / 120
+
+![](img/index-101_1.png)
 
 在这段代码中，我们看到了上一章中描述的 RAG 组件的实际运行。
 
@@ -2082,8 +1832,11 @@ const splitter = new RecursiveCharacterTextSplitter({
   chunkSize: 100,
   chunkOverlap: 20,
 })
+
 splitDocs = await splitter.splitDocuments(docs)
+
 const embeddings = new OpenAIEmbeddings()
+
 const vectorstore = await MemoryVectorStore.fromDocuments(
   splitDocs,
   embeddings
@@ -2099,6 +1852,7 @@ const vectorstore = await MemoryVectorStore.fromDocuments(
 `createRetrievalChain()` 接收用户查询，然后将其传递给 `retriever` 以获取相关文档。这些文档（以及原始输入）随后传递给 LLM 以生成响应。
 
 No. 102 / 120
+
 ![](img/index-103_1.png)
 ![](img/index-103_2.png)
 ![](img/index-103_3.png)
@@ -2107,10 +1861,12 @@ No. 102 / 120
 
 ```javascript
 const retriever = vectorstore.asRetriever()
+
 const chain = await createStuffDocumentsChain({
   llm: model,
   prompt
 })
+
 retrievalChain = await createRetrievalChain({
   combineDocsChain: chain,
   retriever
@@ -2124,23 +1880,23 @@ retrievalChain = await createRetrievalChain({
 
 No. 103 / 120
 
-# Agents
-No. 104 / 120
+---
 
-### 7.1 简介与项目设置
+## 7. AI 代理
+
+### 7.1. 简介与项目设置
 
 到目前，我们查看了链（chains）。代理（Agents）的区别在于，我们只需要给它们一个目标，它们就会尝试采取行动。与环境交互并做出决策更符合我们对智能的定义。
 
 我们的任务是创建一个帮助记者研究新文章的工具。在本章结束时，我们将构建一个能够从用户读取问题并使用代理进行回答的应用程序。
 
-No. 105 / 120
+No. 104 / 120
 
 我们将从以下状态开始：在前端，让用户输入问题并提交到服务器。当响应到达时，我们将显示内容。
 
 ```javascript
 // code/agents/src/app/page.js
 "use client";
-
 import { useState } from "react";
 
 export default function Home() {
@@ -2174,7 +1930,8 @@ export default function Home() {
 }
 ```
 
-No. 106 / 120
+No. 105 / 120
+
 ![](img/index-107_1.png)
 
 在后端，我们将让 GPT-4 Omni 模型询问用户输入的问题。
@@ -2198,13 +1955,7 @@ const prompt = new PromptTemplate({
 const chain = prompt
   .pipe(model)
   .pipe(new StringOutputParser())
-```
 
-
-
-
-
-```javascript
 export async function POST(req) {
   const { question } = await req.json()
   const data = await chain.invoke({
@@ -2222,7 +1973,7 @@ export async function POST(req) {
 
 ![](img/agents-limit-2023.png)
 
-## 7.2. 创建一个智能体 (Agent)
+### 7.2. 创建一个智能体
 
 是时候创建我们的第一个智能体了。为了克服训练数据集带来的局限性，我们将赋予聊天机器人进行在线研究的选项。
 
@@ -2264,7 +2015,7 @@ npm install @langchain/community
 后端的完整代码看起来如下：
 
 ```javascript
-// code/agents/src/app/page.js
+// code/agents/src/app/api/route.js
 import { ChatOpenAI } from "@langchain/openai"
 import { WikipediaQueryRun } from "@langchain/community/tools/wikipedia_query_run"
 import { createReactAgent, AgentExecutor } from "langchain/agents"
@@ -2284,9 +2035,6 @@ const tools = [wikipediaQuery, calculator]
 
 // ! 获取代理规则集
 const prompt = await pull("hwchase17/react")
-```
-
-![](img/index-112_1.png)
 
 // ! 定义 Agent 和 AgentExecutor
 const agent = await createReactAgent({
@@ -2353,9 +2101,9 @@ export default function Home() {
 ![](img/index-113_2.png)
 ![](img/index-113_3.png)
 
-在此刻，如果我们问智能体“2024 年超级碗冠军是谁？”，它将能够使用工具进行搜索 img/agents-answer.png)
+在此刻，如果我们问智能体“2024 年超级碗冠军是谁？”，它将能够使用工具进行搜索。
 
-## 7.3. 监控智能体
+### 7.3. 监控智能体
 
 智能体非常强大，但也有成本。幸运的是，我们有几种方法可以控制智能体的行为。让我们更新后端以增强监控：
 
@@ -2391,18 +2139,14 @@ const agentExecutor = new AgentExecutor({
 首先，`maxIterations` 选项限制了智能体寻找解决方案的次数。这是一个加速响应并确保我们不会陷入无限循环的好选项。与之前的用例一样，`verbose` 选项会在后端控制台中得出结果的推理过程。例如，当询问“PI 的两倍是多少？”时，它会打印类似的内容：
 
 [chain/start] [1:chain:AgentExecutor > 18:chain:ReactAgent > 22:prompt:PromptTemplate] Entering Chain run with input: {
-
 "input": "What is the double of PI?",
 "steps": [
-
 {
-
 "action": {
 "tool": "wikipedia-api",
 "toolInput": "PI",
 "log": "PI 是可以在维基百科上找到的数学常数\nAction: wikipedia-api\nAction Input: PI"
 },
-
 {
 "action": {
 "tool": "calculator",
@@ -2410,24 +2154,18 @@ const agentExecutor = new AgentExecutor({
 "log": "我知道 PI 大约等于 3.14159，所以我可以计算它的两倍\nAction: calculator\nAction Input: 2*3.14159"
 }
 }
-
 ],
-
 ],
-
 "content": "I now know the final answer\nFinal Answer: 6.28318"
-
 }
 
 第三个选项 `returnIntermediateSteps`（[文档链接](https://js.langchain.com/docs/modules/agents/how_to/max_iterations/)）在这里会打印智能体使用的工具及其顺序。例如，维基百科工具就已经足够回答问题了。
 
+“2024 年超级碗决赛的冠军是谁？”另一方面，“自从巴西赢得世界杯以来已经过了多少年了？”这个问题需要同时使用 `Wikipedia` 和 `Calculator` 工具。通过此选项，我们可以监控智能体是否正在为任务使用正确的工具。
 
+第 116 / 120
 
-
-
-“2024 年超级碗决赛的冠军是谁？”另一方面，“自从巴西赢得世界杯以来已经过了多少年了？”这个问题需要同时使用 `Wikipedia` 和 `Calculator` 工具。通过此选项，我们可以监控智能体是否正在为任务使用正确的工具（第 116 / 120 页）。
-
-## 7.4. 总结
+### 7.4. 总结
 
 代理（Agents）和工具使用通常是 `LangChain` 的核心概念。
 
@@ -2448,15 +2186,19 @@ const agent = await createReactAgent({
 })
 ```
 
-有许多类型的代理。你可以在[此页面](https://js.langchain.com/docs/modules/agents/agent_types/)查看目前可用的五种主要代理类型（第 118 / 120 页）。
+有许多类型的代理。你可以在[此页面](https://js.langchain.com/docs/modules/agents/agent_types/)查看目前可用的五种主要代理类型。
+
+第 118 / 120
 
 ![](img/index-119_1.png)
 
-有些适用于本地模型，有些适用于最新的 OpenAI 模型，有些支持并行函数调用（paral el function cal ing），有些支持对话历史。由于其通用的提示词策略，其他代理非常适合使用简单工具和单一输入。
+有些适用于本地模型，有些适用于最新的 OpenAI 模型，有些支持并行函数调用（parallel function calling），有些支持对话历史。由于其通用的提示词策略，其他代理非常适合使用简单工具和单一输入。
 
-在讨论 AI 代理（AI agents）时，请注意还有许多其他主题、概念、技术、提示词和功能。我们在本章中讨论的只是该主题非常简要的介绍（第 119 / 120 页）。
+在讨论 AI 代理（AI agents）时，请注意还有许多其他主题、概念、技术、提示词和功能。我们在本章中讨论的只是该主题非常简要的介绍。
 
-## 7.5. 结语
+第 119 / 120
+
+### 7.5. 结语
 
 希望你喜欢这本书！
 
@@ -2468,51 +2210,6 @@ const agent = await createReactAgent({
 
 如果你喜欢这本书，如果你能留评论，我将不胜感激。
 
-感谢，朋友，继续写代码吧！第 120 / 120 页
+感谢，朋友，继续写代码吧！
 
-# 文档大纲
-
-* 1. 引言
-    * 1.1. 获取书籍更新和代码示例
-    * 1.2. 关于作者
-    * 1.3. 这本书是如何诞生的
-    * 1.4. 什么是 LangChain
-    * 1.5. 本书概述
-    * 1.6. 要求以及如何使用本书
-* 2. 模型、提示词和链
-    * 2.1. 引言
-    * 2.2. 入门
-    * 2.3. OpenAI ChatGPT 模型的 API key
-    * 2.4. 使用 ChatOpenAI LangChain 模型
-    * 2.5. 提示词模板
-    * 2.6. 链 (Chains)index_split_000.html_p28)
-    * [2.7. LCEL - LangChain 表达式语言
-* 3. LangChain 中的流式传输
-    * 3.1. 引言和项目设置
-    * 3.2. 项目重构
-    * 3.3. 流式传输响应
-* 4. 输出解析器
-    * 4.1. 引言
-    * 4.2. 示例设置
-    * 4.3. StringOutputParser
-    * 4.4. CommaSeparatedListOutputParser
-    * 4.5. getFormatInstructions() 方法和自定义解析器
-    * 4.6. StructuredOutputParser
-* 5. 对话记忆
-    * 5.1. 引言和项目设置
-    * 5.2. 将消息注入对话内存中
-    * 5.3. 完整的对话历史
-* 6. RAG / 与文档对话
-    * 6.1. 引言
-    * 6.2. 示例设置
-    * 6.3. 使用本地文档
-    * 6.4. RAG 过程的组件
-    * 6.5. 向量、嵌入和向量数据库
-    * 6.6. 使用 CheerioWebBaseLoader 和 MemoryVectorStore
-* 7. AI 代理
-    * 7.1. 引言和项目设置
-    * 7.2.get 代理
-    * 7.3. 代理监控和性能考量
-    * 7.4. 总结
-    * 7.5. 结语
-
+第 120 / 120 页

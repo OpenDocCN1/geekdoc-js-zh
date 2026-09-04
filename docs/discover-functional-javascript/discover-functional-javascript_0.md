@@ -1,43 +1,41 @@
+
 # 函数式JavaScript探索指南
-
-
-
 
 *献给我的父母，维奥丽卡和格奥尔基*
 
 # 前言
 
-JavaScript 已经成为最重要的编程语言之一。从许多角度来看，它都很重要：
+`JavaScript`已经成为最重要的编程语言之一。从许多角度来看，它都很重要：
 
-*   它易于学习。这门语言的美妙之处在于它的简洁性。
-*   它是第一门将函数式编程带入主流的语言。
-*   它提供了一种无需类和原型即可进行面向对象编程的新方式。
+* 它易于学习。这门语言的美妙之处在于它的简洁性。
+* 它是第一门将函数式编程带入主流的语言。
+* 它提供了一种无需类和原型即可进行面向对象编程的新方式。
 
-JavaScript 作为浏览器语言而广受欢迎。同时，它也是一种强大且富有表现力的编程语言。
+`JavaScript`作为浏览器语言而广受欢迎。同时，它也是一种强大且富有表现力的编程语言。
 
-这是一本为渴望在 JavaScript 中打下函数式编程基础，并希望学习构建封装对象新方法的开发者而写的书。
+这是一本为渴望在`JavaScript`中打下函数式编程基础，并希望学习构建封装对象新方法的开发者而写的书。
 
-#### 在线代码示例
+## 在线代码示例
 
-本书中的许多代码示例（并非全部）可在 [`github.com/cristi-salcescu/discover-functional-javascript`](https://github.com/cristi-salcescu/discover-functional-javascript) 找到。我鼓励你自己编写代码。写作是另一种学习形式，在大多数情况下，你最理解的代码是你自己写的代码。
+本书中的许多代码示例（并非全部）可在[`github.com/cristi-salcescu/discover-functional-javascript`](https://github.com/cristi-salcescu/discover-functional-javascript)找到。我鼓励你自己编写代码。写作是另一种学习形式，在大多数情况下，你最理解的代码是你自己写的代码。
 
-#### 反馈
+## 反馈
 
-我很乐意听到你的反馈。如有关于本书的评论、问题或建议，请发送电子邮件至 cristisalcescu@gmail.com。提前感谢你考虑为本书撰写评论。
+我很乐意听到你的反馈。如有关于本书的评论、问题或建议，请发送电子邮件至`cristisalcescu@gmail.com`。提前感谢你考虑为本书撰写评论。
 
-# 第 1 章：JavaScript 简要概述
+# 第1章：JavaScript简要概述
 
-JavaScript 有原始值、对象和函数。它们都是值。所有值都被视为对象，即使是原始值也是如此。
+`JavaScript`有原始值、对象和函数。它们都是值。所有值都被视为对象，即使是原始值也是如此。
 
-### 原始值
+## 原始值
 
-数字、布尔值、字符串、`undefined` 和 `null` 是原始值。
+数字、布尔值、字符串、`undefined`和`null`是原始值。
 
-#### 数字
+### 数字
 
-目前 JavaScript 中只有一种数字类型，即 64 位二进制浮点数。十进制数的算术是不精确的。你可能已经知道，`0.1 + 0.2` 不等于 `0.3`。但对于整数，算术是精确的，所以 `1 + 2 === 3`。
+目前`JavaScript`中只有一种数字类型，即64位二进制浮点数。十进制数的算术是不精确的。你可能已经知道，`0.1 + 0.2`不等于`0.3`。但对于整数，算术是精确的，所以`1 + 2 === 3`。
 
-数字继承自 `Number.prototype` 对象的方法。可以在数字上调用方法：
+数字继承自`Number.prototype`对象的方法。可以在数字上调用方法：
 
 ```
 (123).toString();  //"123"
@@ -46,7 +44,7 @@ JavaScript 有原始值、对象和函数。它们都是值。所有值都被视
 
 有一些函数用于将字符串转换为数字：
 
-`Number.parseInt()`、`Number.parseFloat()` 和 `Number()`。
+`Number.parseInt()`、`Number.parseFloat()`和`Number()`。
 
 ```
 Number.parseInt("1");       //1
@@ -56,13 +54,13 @@ Number("1");                //1
 Number("1.234");            //1.234
 ```
 
-无效的算术运算或无效的转换不会抛出异常，而是产生 `NaN`（“非数字”）值。`isNaN()` 可以检测 `NaN`。
+无效的算术运算或无效的转换不会抛出异常，而是产生`NaN`（“非数字”）值。`isNaN()`可以检测`NaN`。
 
-#### 字符串
+### 字符串
 
-字符串存储一系列 Unicode 字符。文本可以放在双引号 `""` 或单引号 `''` 内。
+字符串存储一系列Unicode字符。文本可以放在双引号`""`或单引号`''`内。
 
-字符串继承自 `String.prototype` 的方法。它们有诸如 `substring()`、`indexOf()` 或 `concat()` 等方法。
+字符串继承自`String.prototype`的方法。它们有诸如`substring()`、`indexOf()`或`concat()`等方法。
 
 ```
 "text".substring(1,3); //"ex"
@@ -70,9 +68,9 @@ Number("1.234");            //1.234
 "text".concat(" end"); //"text end"
 ```
 
-字符串和所有原始值一样，是不可变的。例如，`concat()` 不会修改现有字符串，而是创建一个新字符串。
+字符串和所有原始值一样，是不可变的。例如，`concat()`不会修改现有字符串，而是创建一个新字符串。
 
-`+` 运算符可以用于加法或拼接：
+`+`运算符可以用于加法或拼接：
 
 ```
 1 + 1      //2
@@ -80,13 +78,13 @@ Number("1.234");            //1.234
 1 + "1"    //"11"
 ```
 
-#### 布尔值
+### 布尔值
 
-布尔值有两个值：`true` 和 `false`。
+布尔值有两个值：`true`和`false`。
 
-该语言有真值和假值。`false`、`null`、`undefined`、`''`（空字符串）、`0` 和 `NaN` 是假值。所有其他值都是真值。
+该语言有真值和假值。`false`、`null`、`undefined`、`''`（空字符串）、`0`和`NaN`是假值。所有其他值都是真值。
 
-真值在布尔上下文中执行时会被求值为 `true`。假值会被求值为 `false`。下一个示例显示了 `false` 分支。
+真值在布尔上下文中执行时会被求值为`true`。假值会被求值为`false`。下一个示例显示了`false`分支。
 
 ```
 if('') {
@@ -96,19 +94,19 @@ if('') {
 }
 ```
 
-相等运算符是 `===`。不等运算符是 `!==`。
+相等运算符是`===`。不等运算符是`!==`。
 
-### 变量
+## 变量
 
-变量可以使用 `var`、`let` 和 `const` 定义。
+变量可以使用`var`、`let`和`const`定义。
 
-`var` 声明并可选地初始化一个变量。用 `var` 声明的变量具有函数作用域。它们被视为在函数顶部声明。这称为变量提升。
+`var`声明并可选地初始化一个变量。用`var`声明的变量具有函数作用域。它们被视为在函数顶部声明。这称为变量提升。
 
-`let` 和 `const` 声明具有块级作用域。用 `const` 声明的变量不能被重新赋值。
+`let`和`const`声明具有块级作用域。用`const`声明的变量不能被重新赋值。
 
-未初始化的变量的值是 `undefined`。
+未初始化的变量的值是`undefined`。
 
-### 对象
+## 对象
 
 对象是属性的动态集合。
 
@@ -134,25 +132,21 @@ delete obj.message; //删除
 
 所有对象的属性都是公开的。
 
-#### 原始值与对象
+### 原始值与对象
 
-原始值（除了 `null` 和 `undefined`）在拥有方法的意义上被视为对象，但它们不是对象。
+原始值（除了`null`和`undefined`）在拥有方法的意义上被视为对象，但它们不是对象。
 
-数字、字符串和布尔值有对应的包装对象。这些包装对象由 `Number`、`String` 和 `Boolean` 函数构建。
+数字、字符串和布尔值有对应的包装对象。这些包装对象由`Number`、`String`和`Boolean`函数构建。
 
-为了允许访问原始值上的属性，JavaScript 会创建一个包装对象，然后销毁它。创建和销毁包装对象的过程由 JavaScript 引擎优化。
+为了允许访问原始值上的属性，`JavaScript`会创建一个包装对象，然后销毁它。创建和销毁包装对象的过程由`JavaScript`引擎优化。
 
-### 数组
+## 数组
 
 数组是值的索引集合。每个值都是一个元素。元素按顺序排列，并通过其索引号访问。
 
+`JavaScript`拥有类数组对象。数组是通过对象实现的。索引被转换为字符串，并用作检索值的键。
 
-
-
-
-JavaScript 拥有类数组对象。数组是通过对象实现的。索引被转换为字符串，并用作检索值的键。
-
-像 `let arr = ['A', 'B', 'C']` 这样的简单数组，是通过类似于下面的对象模拟的：
+像`let arr = ['A', 'B', 'C']`这样的简单数组，是通过类似于下面的对象模拟的：
 
 ```
 {
@@ -162,13 +156,13 @@ JavaScript 拥有类数组对象。数组是通过对象实现的。索引被转
 }
 ```
 
-注意，`arr[1]` 与 `arr['1']` 返回相同的值：
+注意，`arr[1]`与`arr['1']`返回相同的值：
 
 ```
 arr[1] === arr['1']; //true
 ```
 
-使用 `delete` 从数组中删除值会留下空洞。可以使用 `splice()` 来避免这个问题，但它的速度可能较慢。
+使用`delete`从数组中删除值会留下空洞。可以使用`splice()`来避免这个问题，但它的速度可能较慢。
 
 ```
 let arr = ['A', 'B', 'C'];
@@ -177,7 +171,7 @@ console.log(arr); //['A', empty, 'C']
 console.log(arr.length); //3
 ```
 
-JavaScript 的数组不会抛出“索引越界”异常。如果索引不可用，它们会返回 `undefined`。
+`JavaScript`的数组不会抛出“索引越界”异常。如果索引不可用，它们会返回`undefined`。
 
 栈和队列可以很容易地使用数组方法实现：
 
@@ -195,43 +189,36 @@ let first = queue.shift();//[2]
 console.log(first);      //1
 ```
 
-### 函数
+## 函数
 
 函数是独立的行为单元。定义函数有三种方式：
 
-*   函数声明（又称函数语句）
+* 函数声明（又称函数语句）
+* 函数表达式（又称函数字面量）
+* 箭头函数
 
-*   函数表达式（又称函数字面量）
-
-*   箭头函数
-
-#### 函数声明
+### 函数声明
 
 ```
 function doSomething(){ }
 ```
 
-*   `function` 是行中的第一个关键字。
+* `function`是行中的第一个关键字。
+* 它必须有一个名称。
+* 它可以在定义之前使用。函数声明会被提升（hoisted）到其作用域的顶部。
 
-*   它必须有一个名称。
-
-*   它可以在定义之前使用。函数声明会被提升（hoisted）到其作用域的顶部。
-
-#### 函数表达式
+### 函数表达式
 
 ```
 let doSomething = function() { }
 ```
 
-*   `function` 不是行中的第一个关键字。
+* `function`不是行中的第一个关键字。
+* 名称是可选的。可以有匿名函数表达式或命名函数表达式。
+* 它需要先定义，然后才能执行。
+* 它可以在定义后自动执行。这被称为IIFE（立即调用函数表达式），也称为自执行函数。
 
-*   名称是可选的。可以有匿名函数表达式或命名函数表达式。
-
-*   它需要先定义，然后才能执行。
-
-*   它可以在定义后自动执行。这被称为 IIFE（立即调用函数表达式），也称为自执行函数。
-
-以下是一个 IIFE 的示例：
+以下是一个IIFE的示例：
 
 ```
 (function autorun(){
@@ -240,7 +227,7 @@ let doSomething = function() { }
 //"executed"
 ```
 
-#### 箭头函数
+### 箭头函数
 
 箭头函数是创建匿名函数表达式的语法糖。
 
@@ -248,7 +235,7 @@ let doSomething = function() { }
 let doSomething = () => { };
 ```
 
-#### 函数调用
+### 函数调用
 
 函数可以通过不同的方式调用：
 
@@ -267,15 +254,15 @@ doSomething.apply(theObject, [arguments]);
 doSomething.call(theObject, arguments);
 ```
 
-函数调用时传入的参数可以多于或少于定义中声明的参数。多余的参数会被忽略，缺少的参数会被设置为 `undefined`。
+函数调用时传入的参数可以多于或少于定义中声明的参数。多余的参数会被忽略，缺少的参数会被设置为`undefined`。
 
-除了箭头函数，函数都有两个伪参数：`this` 和 `arguments`。
+除了箭头函数，函数都有两个伪参数：`this`和`arguments`。
 
-#### this
+### this
 
-方法是存储在对象中的函数。为了让函数知道它要操作哪个对象，会使用 `this`。`this` 代表函数的上下文。
+方法是存储在对象中的函数。为了让函数知道它要操作哪个对象，会使用`this`。`this`代表函数的上下文。
 
-当函数作为方法使用时，`this` 代表该对象。
+当函数作为方法使用时，`this`代表该对象。
 
 ```
 let theObject = {
@@ -288,9 +275,9 @@ let theObject = {
 theObject.getName(); //"name"
 ```
 
-当函数作为构造函数 `new Constructor()` 使用时，`this` 代表新创建的对象。箭头函数不能用作构造函数。
+当函数作为构造函数`new Constructor()`使用时，`this`代表新创建的对象。箭头函数不能用作构造函数。
 
-函数是对象，因此函数可以有方法。`apply()` 和 `call()` 方法在给定的 `this` 下执行函数。`call()` 逐个提供参数，而 `apply()` 接受一个包含所有参数的数组。
+函数是对象，因此函数可以有方法。`apply()`和`call()`方法在给定的`this`下执行函数。`call()`逐个提供参数，而`apply()`接受一个包含所有参数的数组。
 
 ```
 let otherObject = {
@@ -305,7 +292,7 @@ getName.apply(otherObject); //"otherName"
 getName.call(otherObject);  //"otherName"
 ```
 
-当函数以函数形式调用时，使用 `this` 没有意义。在这种情况下，`this` 是 `undefined` 或 `window` 对象，具体取决于是否启用了严格模式。考虑以下示例：
+当函数以函数形式调用时，使用`this`没有意义。在这种情况下，`this`是`undefined`或`window`对象，具体取决于是否启用了严格模式。考虑以下示例：
 
 ```
 "use strict";
@@ -317,11 +304,11 @@ getName();
 //Cannot read property 'name' of undefined
 ```
 
-`this` 的值取决于函数如何被调用，而不是函数在哪里定义。这当然是一个令人困惑的来源。
+`this`的值取决于函数如何被调用，而不是函数在哪里定义。这当然是一个令人困惑的来源。
 
-#### arguments
+### arguments
 
-`arguments` 伪参数给出了调用时使用的所有参数。它是一个类数组对象，但不是数组。它缺少数组的方法。
+`arguments`伪参数给出了调用时使用的所有参数。它是一个类数组对象，但不是数组。它缺少数组的方法。
 
 ```
 function logAll(){
@@ -332,11 +319,11 @@ logAll("msg1", "msg2", "msg3");
 //Arguments(3)["msg1","msg2","msg3"]
 ```
 
-#### return
+### return
 
-`return` 会停止函数执行并返回结果。当它没有返回值或根本没有 `return` 时，函数仍然返回 `undefined`。
+`return`会停止函数执行并返回结果。当它没有返回值或根本没有`return`时，函数仍然返回`undefined`。
 
-使用 `return` 时，自动分号插入可能会造成问题。以下函数不会返回空对象，而是返回 `undefined`。
+使用`return`时，自动分号插入可能会造成问题。以下函数不会返回空对象，而是返回`undefined`。
 
 ```
 function getObject(){ 
@@ -348,11 +335,11 @@ function getObject(){
 getObject();
 ```
 
-花括号 `{` 应该与 `return` 在同一行打开。
+花括号`{`应该与`return`在同一行打开。
 
-### 动态类型
+## 动态类型
 
-JavaScript 具有动态类型。值有类型，但变量不与类型关联。任何变量、参数、属性都可以被赋予和重新赋予任何类型的值。
+`JavaScript`具有动态类型。值有类型，但变量不与类型关联。任何变量、参数、属性都可以被赋予和重新赋予任何类型的值。
 
 ```
 function log(value){
@@ -364,7 +351,7 @@ log("text");
 log({message: "text"});
 ```
 
-`typeof()` 运算符可以检查变量的类型。
+`typeof()`运算符可以检查变量的类型。
 
 ```
 let n = 1;
@@ -379,17 +366,17 @@ typeof(fn);  //"function"
 
 动态类型提供了更高的灵活性。
 
-### 异常
+## 异常
 
-JavaScript 有一个异常处理机制。它的工作方式与你预期的一样，通过使用 `try/catch` 语句包裹代码。该语句有一个单一的 `catch` 块来处理所有异常。
+`JavaScript`有一个异常处理机制。它的工作方式与你预期的一样，通过使用`try/catch`语句包裹代码。该语句有一个单一的`catch`块来处理所有异常。
 
-你可以 `throw` 任何类型的值，但通常抛出错误对象。
+你可以`throw`任何类型的值，但通常抛出错误对象。
 
-了解 JavaScript 有时倾向于静默错误是很有用的。严格模式消除了 JavaScript 的一些静默错误。
+了解`JavaScript`有时倾向于静默错误是很有用的。严格模式消除了`JavaScript`的一些静默错误。
 
-### 最后思考
+## 最后思考
 
-原始值不是对象，但 JavaScript 允许像访问对象一样访问它们的属性。
+原始值不是对象，但`JavaScript`允许像访问对象一样访问它们的属性。
 
 对象是键值对的动态集合。
 
@@ -399,21 +386,21 @@ JavaScript 有一个异常处理机制。它的工作方式与你预期的一样
 
 原始值、对象和函数都是值。
 
-# 第 2 章：ES6+ 的新特性
+# 第2章：ES6+的新特性
 
-ES6+ 为语言带来了新特性。一些新语法允许你以更具表现力的方式编写代码，一些特性完善了函数式编程工具箱，还有一些特性则存在争议。
+ES6+为语言带来了新特性。一些新语法允许你以更具表现力的方式编写代码，一些特性完善了函数式编程工具箱，还有一些特性则存在争议。
 
-### let 和 const
+## let和const
 
-现在有两种声明变量的方式：`let` 和 `const`，还有一种正在逐渐过时的 `var`。
+现在有两种声明变量的方式：`let`和`const`，还有一种正在逐渐过时的`var`。
 
-#### let
+### let
 
-`let` 在当前作用域中声明并可选地初始化一个变量。当前作用域可以是模块、函数或块。
+`let`在当前作用域中声明并可选地初始化一个变量。当前作用域可以是模块、函数或块。
 
 作用域定义了变量的生命周期和可见性。变量在其声明的作用域之外不可见。
 
-考虑以下强调 `let` 块级作用域的代码：
+考虑以下强调`let`块级作用域的代码：
 
 ```
 let x = 1;
@@ -423,7 +410,7 @@ let x = 1;
 console.log(x); //1
 ```
 
-相比之下，`var` 声明没有块级作用域：
+相比之下，`var`声明没有块级作用域：
 
 ```
 var x = 1;
@@ -433,9 +420,9 @@ var x = 1;
 console.log(x); //2
 ```
 
-#### const
+### const
 
-`const` 声明一个不能被重新赋值的变量。只有当赋给的值是不可变的时，它才成为常量。
+`const`声明一个不能被重新赋值的变量。只有当赋给的值是不可变的时，它才成为常量。
 
 ```
 const x = 1;
@@ -461,12 +448,9 @@ console.log(obj);
 // { message: "Hello" }
 ```
 
-`const` 变量的初始化是强制性的。
+`const`变量的初始化是强制性的。
 
-### 模块
-
-
-
+## 模块
 
 在模块出现之前，在任何函数外部声明的变量都是全局变量。使用模块后，在任何函数外部声明的变量会被隐藏，除非显式导出，否则其他模块无法访问。
 
@@ -493,7 +477,7 @@ const todoStore = TodoStore();
 const userStore = UserStore();
 ```
 
-使用默认导出时，导入的名称可以与导出的名称不同。在下一个示例中，默认导出的 `flow` 函数以名称 `pipe` 使用。
+使用默认导出时，导入的名称可以与导出的名称不同。在下一个示例中，默认导出的`flow`函数以名称`pipe`使用。
 
 ```
 import pipe from "lodash/flow";
@@ -518,11 +502,13 @@ import { compose, decorate } from "./tools";
 
 在某种程度上，我们可以将模块想象成一个自执行函数，它接收导入数据作为输入，并返回导出数据。
 
-### 展开/剩余
+## 展开/剩余
 
-`...` 运算符可以是展开运算符或剩余参数，具体取决于使用位置。
+`...`运算符可以是展开运算符或剩余参数，具体取决于使用位置。
 
 展开运算符将对象或数组拆分为单个值。
+
+
 
 ```
 const numbers = [1, 2, 3];
@@ -550,7 +536,7 @@ processArray(1, 2, 3, 4, 5);
 //[1, 2, 3, 4, 5]
 ```
 
-#### 克隆
+### 克隆
 
 展开运算符使对象和数组的克隆更简单、更具表现力。
 
@@ -572,9 +558,9 @@ const cloneArr = arr.slice();
 const cloneArr = [ ...arr ];
 ```
 
-#### 合并对象
+### 合并对象
 
-展开运算符，像 `Object.assign()` 一样，可用于将一个或多个对象的属性复制到空对象中，并合并它们的属性。
+展开运算符，像`Object.assign()`一样，可用于将一个或多个对象的属性复制到空对象中，并合并它们的属性。
 
 ```
 const authorGateway = { 
@@ -599,9 +585,9 @@ const gateway = {
 };
 ```
 
-`gateway` 对象包含来自 `authorGateway` 和 `bookGateway` 对象的属性。当多个对象具有同名属性时，最后一个对象的属性会覆盖前面的属性。
+`gateway`对象包含来自`authorGateway`和`bookGateway`对象的属性。当多个对象具有同名属性时，最后一个对象的属性会覆盖前面的属性。
 
-#### 连接数组
+### 连接数组
 
 在下一个示例中，使用展开运算符连接数组：
 
@@ -619,9 +605,9 @@ console.log(arr);
 //[1, 2, 3, 4, 5, 6]
 ```
 
-#### arguments
+### arguments
 
-使用剩余参数，我们可以替换 `arguments` 伪参数。剩余参数是一个数组，而 `arguments` 不是。
+使用剩余参数，我们可以替换`arguments`伪参数。剩余参数是一个数组，而`arguments`不是。
 
 ```
 function logAll(...args){
@@ -733,7 +719,7 @@ log("An error", "Error");
 
 ### 模板字符串字面量
 
-模板字符串使用反引号 ` 定义。使用模板字符串，之前的日志消息可以这样写：
+模板字符串使用反引号`定义。使用模板字符串，之前的日志消息可以这样写：
 
 ```
 function log(message, mode= "Info"){
@@ -769,11 +755,11 @@ const service = new Service();
 console.log(service.__proto__ === Service.prototype);
 ```
 
-在 `Service` 类中定义的所有方法都会被添加到 `Service.prototype` 对象中。`Service` 类的实例将具有相同的原型对象 `Service.prototype`。所有实例都会将方法调用委托给原型对象。方法在原型中定义一次，然后被所有实例继承。
+在`Service`类中定义的所有方法都会被添加到`Service.prototype`对象中。`Service`类的实例将具有相同的原型对象`Service.prototype`。所有实例都会将方法调用委托给原型对象。方法在原型中定义一次，然后被所有实例继承。
 
 #### 继承
 
-“类可以继承其他类”。下面是一个继承示例，其中 `SpecialService` 类“继承”自 `Service` 类：
+“类可以继承其他类”。下面是一个继承示例，其中`SpecialService`类“继承”自`Service`类：
 
 ```
 class Service {
@@ -793,16 +779,13 @@ specialService.doSomething();
 specialService.doSomethingElse();
 ```
 
-在 `SpecialService` 类中定义的所有方法都会被添加到 `SpecialService.prototype` 对象中。所有实例都会将方法调用委托给 `SpecialService.prototype` 对象。如果在 `SpecialService.prototype` 中找不到该方法，则会到 `Service.prototype` 对象中查找。如果仍然找不到，则会到 `Object.prototype` 中查找。
+在`SpecialService`类中定义的所有方法都会被添加到`SpecialService.prototype`对象中。所有实例都会将方法调用委托给`SpecialService.prototype`对象。如果在`SpecialService.prototype`中找不到该方法，则会到`Service.prototype`对象中查找。如果仍然找不到，则会到`Object.prototype`中查找。
 
 ### 箭头函数
 
 箭头函数可以动态创建匿名函数。它们可用于创建简短的小型回调函数，语法更简洁。
 
-考虑以下代码，从待办事项集合中仅选择 `title`：
-
-
-
+考虑以下代码，从待办事项集合中仅选择`title`：
 
 ```
 const todos = [
@@ -833,9 +816,9 @@ const isNewContent = todo => todo.type === "NC";
 
 #### this
 
-箭头函数没有自己的 `this` 和 `arguments`。箭头函数不能用作构造函数。
+箭头函数没有自己的`this`和`arguments`。箭头函数不能用作构造函数。
 
-使用 `bind()`、`apply()` 或 `call()` 为箭头函数设置 `this` 的值是无效的。请看下面的代码：
+使用`bind()`、`apply()`或`call()`为箭头函数设置`this`的值是无效的。请看下面的代码：
 
 ```
 this.message = "help";
@@ -848,7 +831,7 @@ logMessage(); //"help"
 logMessage.call({message : "identify"}); //"help"
 ```
 
-`this` 和 `arguments` 被视为函数定义中使用的任何其他自由变量。
+`this`和`arguments`被视为函数定义中使用的任何其他自由变量。
 
 ### 尾调用优化
 
@@ -888,7 +871,7 @@ Promise 可以处于三种状态之一：待定（pending）、已解决（resol
 
 #### 创建 Promise
 
-让我们使用 `Promise` 创建一个 `delay()` 函数：
+让我们使用`Promise`创建一个`delay()`函数：
 
 ```
 function delay(duration){
@@ -905,13 +888,12 @@ delay(5000)
  .then(logMessage);
 ```
 
-`Promise` 构造函数接受一个参数，即一个称为“执行器函数”的函数。当 Promise 被创建时，该函数会立即执行。
+`Promise`构造函数接受一个参数，即一个称为“执行器函数”的函数。当 Promise 被创建时，该函数会立即执行。
 
-执行器函数接受两个回调：`resolve` 和 `reject`。
+执行器函数接受两个回调：`resolve`和`reject`。
 
-*   调用 `resolve()` 会解决 Promise。
-
-*   调用 `reject()` 会拒绝 Promise。
+*   调用`resolve()`会解决 Promise。
+*   调用`reject()`会拒绝 Promise。
 
 这两个函数都可以接受一个参数。Promise 只会被解决或拒绝一次。之后对这些方法的任何调用都将无效。
 
@@ -932,13 +914,13 @@ fetchUsers()
   .catch(handleError);
 ```
 
-当 Promise 被解决时，调用 `doSomething()`。当 Promise 被拒绝时，调用 `handleError()`。`doSomething()` 不需要返回 Promise。
+当 Promise 被解决时，调用`doSomething()`。当 Promise 被拒绝时，调用`handleError()`。`doSomething()`不需要返回 Promise。
 
-`then()` 可以同时处理成功和失败，但更清晰的做法是使用它处理成功，使用 `catch()` 处理拒绝。
+`then()`可以同时处理成功和失败，但更清晰的做法是使用它处理成功，使用`catch()`处理拒绝。
 
 ### 最后思考
 
-`let` 和 `const` 声明并初始化变量。
+`let`和`const`声明并初始化变量。
 
 模块封装功能，只暴露一小部分。
 
@@ -955,9 +937,7 @@ Promise 和尾递归完善了函数式编程工具箱。
 JavaScript 拥有一等函数。这意味着函数可以像其他任何值一样使用。数字和函数都是值，因此我们可以像使用数字一样使用函数：
 
 *   数字可以存储在变量中 → 函数可以存储在变量中。实际上，函数可以存储在变量、对象或数组中。
-
 *   数字可以作为参数传递给函数 → 函数可以作为参数传递给其他函数。
-
 *   函数可以返回数字 → 函数可以返回其他函数。
 
 请看以下示例：
@@ -998,7 +978,7 @@ let doSomething = function() {}
 
 > 高阶函数是接受另一个函数作为参数、返回一个函数，或两者兼有的函数。
 
-让我们构建一个 `doWithLoading(fn)` 高阶函数，它接受一个函数 `fn` 作为参数并执行它。它在输入函数执行前后显示加载消息。
+让我们构建一个`doWithLoading(fn)`高阶函数，它接受一个函数`fn`作为参数并执行它。它在输入函数执行前后显示加载消息。
 
 ```
 function doWithLoading(fn){
@@ -1018,11 +998,11 @@ doWithLoading(process);
 //end loading
 ```
 
-以函数式风格处理数组涉及使用一组内置的高阶函数：`filter()`、`map()` 和 `reduce()`。
+以函数式风格处理数组涉及使用一组内置的高阶函数：`filter()`、`map()`和`reduce()`。
 
 ### filter()
 
-> `filter()` 使用一个谓词函数从列表中选择值，该函数决定保留哪些值。
+> `filter()`使用一个谓词函数从列表中选择值，该函数决定保留哪些值。
 
 ```
 const numbers = [1,2,3,4,5,6];
@@ -1041,15 +1021,17 @@ const evenNumbers = numbers.filter(isEven);
 //[2, 4, 6]
 ```
 
-> 谓词函数是接受一个参数并返回 `true` 或 `false` 的函数。它测试输入值是否满足条件。
 
-> 回调是作为参数传递给另一个函数的函数。
 
-`isEven()` 是一个谓词函数，并作为回调使用。
+谓词函数是接受一个参数并返回`true`或`false`的函数。它测试输入值是否满足条件。
+
+回调是作为参数传递给另一个函数的函数。
+
+`isEven()`是一个谓词函数，并作为回调使用。
 
 ### map()
 
-> `map()` 使用映射函数将一个值列表转换为另一个值列表。
+`map()`使用映射函数将一个值列表转换为另一个值列表。
 
 ```
 function toCodeOfLength(number){
@@ -1064,13 +1046,13 @@ const codes = numbers.map(toCodeOfLength);
 //["a", "aa", "aaa"]
 ```
 
-`toCodeOfLength()` 是一个映射函数。它接受一个值并计算出另一个值。
+`toCodeOfLength()`是一个映射函数。它接受一个值并计算出另一个值。
 
 ### reduce()
 
-> `reduce()` 使用归约函数将一个值列表归约为一个值。
+`reduce()`使用归约函数将一个值列表归约为一个值。
 
-> 归约函数接受累加器值和当前值，并计算新的累加器值。`reduce()` 方法对数组中的每个元素执行归约函数。
+归约函数接受累加器值和当前值，并计算新的累加器值。`reduce()`方法对数组中的每个元素执行归约函数。
 
 ```
 function addNumber(total, number){
@@ -1085,13 +1067,9 @@ const total = numbers.reduce(addNumber, 0);
 //6
 ```
 
-`addNumber()` 是一个归约函数。
+`addNumber()`是一个归约函数。
 
-
-
-
-
-`reduce(reducer, initialValue)` 接受第二个参数作为累加器的初始值。如果未提供该值，则将数组的第一个元素设为初始值，并从第二个元素开始循环。
+`reduce(reducer, initialValue)`接受第二个参数作为累加器的初始值。如果未提供该值，则将数组的第一个元素设为初始值，并从第二个元素开始循环。
 
 ```
 const numbers = [1, 2, 3];
@@ -1101,7 +1079,7 @@ const total = numbers.reduce(addNumber);
 //6
 ```
 
-还有一个 `reduceRight()` 方法，它从列表的最后一个元素开始处理。
+还有一个`reduceRight()`方法，它从列表的最后一个元素开始处理。
 
 ```
 function multiply(product, value){
@@ -1118,11 +1096,11 @@ const product = numbers.reduceRight(multiply, 1);
 
 正如你所注意到的，当我们将数字相乘时，累加器的初始值为 1。
 
-### `sort()`
+### sort()
 
-> `sort()` 使用比较函数对数组元素进行排序。它是一个不纯的方法，会修改输入数组。
+`sort()`使用比较函数对数组元素进行排序。它是一个不纯的方法，会修改输入数组。
 
-> 比较函数接受两个参数，例如 `a` 和 `b`，并返回负数、正数或零。当结果为负数时，`a` 排在 `b` 之前；当结果为正数时，`a` 排在 `b` 之后；当结果为零时，`a` 和 `b` 的相对顺序不变。
+比较函数接受两个参数，例如`a`和`b`，并返回负数、正数或零。当结果为负数时，`a`排在`b`之前；当结果为正数时，`a`排在`b`之后；当结果为零时，`a`和`b`的相对顺序不变。
 
 ```
 function asc(a, b){
@@ -1142,17 +1120,17 @@ numbers.sort(desc);
 //[6, 5, 4, 3, 2, 1]
 ```
 
-`asc()` 和 `desc()` 是比较函数。对于相同的输入，比较函数应始终返回相同的输出。
+`asc()`和`desc()`是比较函数。对于相同的输入，比较函数应始终返回相同的输出。
 
 ### 扩展工具箱
 
-> `find()` 返回第一个满足谓词函数的值。找到第一个值后即停止处理。
+`find()`返回第一个满足谓词函数的值。找到第一个值后即停止处理。
 
-> `findIndex()` 返回第一个满足谓词函数的值的索引。
+`findIndex()`返回第一个满足谓词函数的值的索引。
 
-> `some()` 检查列表中是否至少有一个值通过了谓词函数实现的测试。当谓词返回 `true` 时停止处理。
+`some()`检查列表中是否至少有一个值通过了谓词函数实现的测试。当谓词返回`true`时停止处理。
 
-> `every()` 检查列表中的所有值是否都通过了谓词函数实现的测试。当谓词返回 `false` 时停止处理。
+`every()`检查列表中的所有值是否都通过了谓词函数实现的测试。当谓词返回`false`时停止处理。
 
 让我们使用它们：
 
@@ -1172,7 +1150,7 @@ const hasOneEven = numbers.some(isEven);
 //true
 ```
 
-> `forEach()` 按顺序为数组中的每个元素调用回调函数。
+`forEach()`按顺序为数组中的每个元素调用回调函数。
 
 ```
 function log(value){
@@ -1192,11 +1170,11 @@ numbers.forEach(log);
 
 拥有头等函数意味着能够将函数作为值来使用。这使得传递行为以及像处理其他值一样处理函数变得容易。
 
-`filter()`、`map()`、`reduce()` 构成了以函数式风格处理集合的基本工具箱。
+`filter()`、`map()`、`reduce()`构成了以函数式风格处理集合的基本工具箱。
 
 # 第 4 章：闭包
 
-> 闭包是一个内部函数，它可以访问外部作用域，即使外部作用域容器已经执行完毕。
+闭包是一个内部函数，它可以访问外部作用域，即使外部作用域容器已经执行完毕。
 
 作用域定义了变量的生命周期和可见性。外部作用域容器可以是一个函数、一个块或一个模块。
 
@@ -1214,7 +1192,7 @@ numbers.forEach(log);
 })();
 ```
 
-`log()` 是一个嵌套函数。`log()` 从其外部作用域访问变量 `x`。`log()` 函数是一个闭包。外部作用域容器是外部函数。
+`log()`是一个嵌套函数。`log()`从其外部作用域访问变量`x`。`log()`函数是一个闭包。外部作用域容器是外部函数。
 
 内部函数访问外部函数中的变量，这就是闭包。
 
@@ -1238,17 +1216,18 @@ numbers.forEach(log);
 })();
 ```
 
-`log()` 函数是一个闭包。它引用其父函数 `autorun()` 中的变量 `x`。`log()` 不使用 `run()` 函数中的变量 `x`。
+`log()`函数是一个闭包。它引用其父函数`autorun()`中的变量`x`。`log()`不使用`run()`函数中的变量`x`。
 
 闭包函数可以访问其创建时所在的作用域，而不是其执行时所在的作用域。
 
-`autorun()` 的局部函数作用域就是 `log()` 函数的词法作用域。
+`autorun()`的局部函数作用域就是`log()`函数的词法作用域。
 
 ### 父级执行后的存活
 
 当内部函数在父作用域容器执行完毕后仍然存活时，闭包就变得重要了。这发生在以下情况中：
 
 *   内部函数被用作异步任务的回调，例如定时器、事件或网络调用
+
 *   父函数或模块返回内部函数，或返回存储了内部函数的对象
 
 考虑以下示例：
@@ -1264,9 +1243,9 @@ numbers.forEach(log);
 })();
 ```
 
-变量 `x` 会一直存在，直到 `log()` 函数被调用。
+变量`x`会一直存在，直到`log()`函数被调用。
 
-如果使用了 `setInterval()`，那么变量 `x` 将永远存在，或者直到调用了 `clearInterval()`。
+如果使用了`setInterval()`，那么变量`x`将永远存在，或者直到调用了`clearInterval()`。
 
 #### 事件
 
@@ -1279,7 +1258,7 @@ numbers.forEach(log);
 })();
 ```
 
-当变量 `x` 在事件处理程序中使用时，它会一直存在，直到处理程序被移除。
+当变量`x`在事件处理程序中使用时，它会一直存在，直到处理程序被移除。
 
 #### 网络调用
 
@@ -1292,9 +1271,9 @@ numbers.forEach(log);
 })();
 ```
 
-变量 `x` 会一直存在，直到从 Web API 返回响应并执行回调。
+变量`x`会一直存在，直到从 Web API 返回响应并执行回调。
 
-在所有这些情况下，`log()` 都是一个闭包，并且在父函数调用结束后仍然存活。
+在所有这些情况下，`log()`都是一个闭包，并且在父函数调用结束后仍然存活。
 
 变量的生命周期取决于闭包的生命周期。变量会一直存在，直到引用它的所有闭包都被垃圾回收。如果一个变量被多个闭包共享，那么在所有闭包都被垃圾回收之前，该变量不会被回收。
 
@@ -1314,9 +1293,9 @@ function initEvents(){
 initEvents();
 ```
 
-在这个示例中，创建了三个闭包，它们都共享同一个变量 `i`。这三个闭包都是事件处理程序。由于 `i` 在循环过程中会变化，所有日志都会显示相同的值，即最后一个值。
+在这个示例中，创建了三个闭包，它们都共享同一个变量`i`。这三个闭包都是事件处理程序。由于`i`在循环过程中会变化，所有日志都会显示相同的值，即最后一个值。
 
-解决这个问题的最简单方法是在 `for` 语句内部使用 `let` 声明。这将为每次迭代创建一个块级作用域的局部变量。
+解决这个问题的最简单方法是在`for`语句内部使用`let`声明。这将为每次迭代创建一个块级作用域的局部变量。
 
 ```
 function initEvents(){
@@ -1330,7 +1309,7 @@ function initEvents(){
 initEvents();
 ```
 
-当变量声明在 `for` 语句外部时，即使使用 `let`，所有闭包也会使用同一个变量。所有日志都会显示相同的值，即最后一个值。
+当变量声明在`for`语句外部时，即使使用`let`，所有闭包也会使用同一个变量。所有日志都会显示相同的值，即最后一个值。
 
 ```
 function initEvents(){
@@ -1345,11 +1324,11 @@ function initEvents(){
 
 ### 生成器
 
-> 生成器是一个函数，每次调用它时，它会从序列中返回下一个值。
+生成器是一个函数，每次调用它时，它会从序列中返回下一个值。
 
 我认为 ES6 生成器是一个不必要的特性，它使代码变得更加复杂。
 
-ES6 生成器创建了一个具有 `next()` 方法的对象。`next()` 方法创建了一个具有 `value` 属性的对象。ES6 生成器促进了循环的使用，而在函数式编程中，我们希望摆脱循环。
+ES6 生成器创建了一个具有`next()`方法的对象。`next()`方法创建了一个具有`value`属性的对象。ES6 生成器促进了循环的使用，而在函数式编程中，我们希望摆脱循环。
 
 考虑下面的 ES6 生成器：
 
@@ -1385,23 +1364,19 @@ generator(); //2
 generator(); //3
 ```
 
+`generator()`函数是一个闭包。它可以访问其父函数`sequence()`中的`count`变量。即使在`sequence()`执行完毕后，它仍然可以访问`count`变量。
 
-
-
-
-`generator()` 函数是一个闭包。它可以访问其父函数 `sequence()` 中的 `count` 变量。即使在 `sequence()` 执行完毕后，它仍然可以访问 `count` 变量。
-
-`generator()` 闭包是通过一个返回函数的函数创建的。这样，闭包函数在其父函数调用后依然存活。`sequence()` 是一个高阶函数。
+`generator()`闭包是通过一个返回函数的函数创建的。这样，闭包函数在其父函数调用后依然存活。`sequence()`是一个高阶函数。
 
 ### 具有私有状态的函数
 
 利用闭包，我们可以创建具有私有状态的函数。闭包封装了状态。
 
-`generator()` 闭包就是一个具有私有状态的函数。每次调用时，它都会记住之前的 `count` 状态，并返回下一个连续的数字。`count` 变量是私有的，外部无法访问。
+`generator()`闭包就是一个具有私有状态的函数。每次调用时，它都会记住之前的`count`状态，并返回下一个连续的数字。`count`变量是私有的，外部无法访问。
 
 ### 具有私有状态的函数
 
-我们可以进一步扩展这个思路，创建多个共享同一私有状态的闭包。在下一个示例中，`increment()` 和 `decrement()` 是两个共享同一私有 `state` 变量的闭包。
+我们可以进一步扩展这个思路，创建多个共享同一私有状态的闭包。在下一个示例中，`increment()`和`decrement()`是两个共享同一私有`state`变量的闭包。
 
 ```
 const counter = (function(){
@@ -1473,7 +1448,7 @@ counter.decrement(); //1
 
 闭包的私有状态在闭包本身被垃圾回收后才有资格被回收。为了实现这一点，闭包不应再持有对该状态的引用。
 
-在下一个示例中，首先创建了 `add()` 闭包函数：
+在下一个示例中，首先创建了`add()`闭包函数：
 
 ```
 let add = (function createAddClosure(){
@@ -1486,8 +1461,9 @@ let add = (function createAddClosure(){
 
 然后，定义了两个与该闭包函数配合使用的函数：
 
-*   `addALotOfObjects()` 向闭包的私有状态中添加大量对象。
-*   `clearAllObjects()` 将闭包引用设置为 `null`。
+*   `addALotOfObjects()`向闭包的私有状态中添加大量对象。
+
+*   `clearAllObjects()`将闭包引用设置为`null`。
 
 这两个函数都用作事件处理程序：
 
@@ -1512,11 +1488,7 @@ $("#clear").click(clearAllObjects);
 
 点击“Add”将向闭包的私有状态中添加 10,000 个待办事项。
 
-![](img/image00078.jpeg "添加 10000 个待办事项后的内存快照")
-
-点击“Clear”会将闭包引用设置为 `null`。之后，私有状态将被垃圾回收。
-
-![](img/image00079.gif "将闭包引用设置为 null 后的内存快照")
+点击“Clear”会将闭包引用设置为`null`。之后，私有状态将被垃圾回收。
 
 ### 总结
 
@@ -1530,11 +1502,13 @@ $("#clear").click(clearAllObjects);
 
 # 第 5 章：函数装饰器
 
-> 函数装饰器是一个高阶函数，它接受一个函数作为参数并返回另一个函数，返回的函数是参数函数的变体。—— Reginald Braithwaite，《JavaScript Allongé》作者
+函数装饰器是一个高阶函数，它接受一个函数作为参数并返回另一个函数，返回的函数是参数函数的变体。—— Reginald Braithwaite，《JavaScript Allongé》作者
 
-为了在实践中理解这一概念，我们将编写一些常见的函数装饰器，这些装饰器可以在 [lodash.js](https://lodash.com/docs/4.17.5)、[underscore.js](http://underscorejs.org/#functions) 或 [ramda.js](http://ramdajs.com/docs/) 等库中找到。
+为了在实践中理解这一概念，我们将编写一些常见的函数装饰器，这些装饰器可以在[lodash.js](https://lodash.com/docs/4.17.5)、[underscore.js](http://underscorejs.org/#functions)或[ramda.js](http://ramdajs.com/docs/)等库中找到。
 
 ### once()
+
+
 
 `once(fn)` 创建一个只执行原始函数一次的函数。当我们希望函数只执行一次，无论从不同地方调用多少次时，这非常有用。
 
@@ -1563,7 +1537,7 @@ processOnce(); //
 
 `once()` 是一个返回另一个函数的函数。返回的函数是一个闭包。注意原始函数是如何通过所有参数调用的：`fn(...args)`。
 
-### after()
+## after()
 
 `after(fn, count)` 创建一个仅在调用一定次数后才执行的函数版本。例如，它可以用于在所有异步操作完成后运行函数。
 
@@ -1600,7 +1574,7 @@ setTimeout(function secondCall(){
 
 在这个示例中，我使用 `after()` 构建了一个新函数 `logResultAfter2()`，该函数从第二次调用开始执行 `logResult()` 的原始代码。
 
-### throttle()
+## throttle()
 
 `throttle(fn, wait)` 创建一个函数版本，当重复调用时，每 `wait` 毫秒最多调用一次原始函数。它对于限制过快发生的事件非常有用。
 
@@ -1621,7 +1595,7 @@ $(window).mousemove(throttledProcess);
 
 在这个示例中，移动鼠标会生成大量 `mousemove` 事件，但原始函数每秒只会被调用一次。
 
-### debounce()
+## debounce()
 
 `debounce(fn, wait)` 创建一个函数版本，当重复调用时，会在最后一次调用后等待 `wait` 毫秒才执行原始函数。它适用于仅在事件停止到达后运行函数。
 
@@ -1642,14 +1616,11 @@ $(window).resize(debouncedProcess);
 
 一些常见的适合 `debounce` 的事件包括 `scroll`、`resize`、`mousemove` 或 `keypress`。
 
-### memoize()
+## memoize()
 
 记忆化是一种通过保存先前结果并利用它们避免重复计算来提高执行速度的技术。记忆化与缓存不同，它只适用于确定性函数。
 
 `memoize(fn)` 创建一个函数的记忆化版本。它对于加速慢速计算非常有用。
-
-
-
 
 以下是一个接受单参数函数的实现。
 
@@ -1683,7 +1654,7 @@ console.log(factorial(5)); //120;
 
 `factorial()` 是一个拥有私有状态的函数。其内部状态是一个存储先前结果的映射表。
 
-### unary()
+## unary()
 
 `unary(fn)` 创建一个只接受一个参数的函数版本。它通常用于修复函数被传入多余参数时的问题。
 
@@ -1725,7 +1696,7 @@ numbers.map(unary(parseInt));
 //[1, 2, 3, 4, 5, 6]
 ```
 
-### binary()
+## binary()
 
 `binary(fn)` 创建一个只接受两个参数的函数版本。它可用于修复函数被传入多余两个参数时的问题。
 
@@ -1756,7 +1727,7 @@ numbers.reduce(binary(Math.min));
 //1
 ```
 
-### 保留函数上下文
+## 保留函数上下文
 
 为了保留原始函数的上下文，我们需要做两件事：
 
@@ -1764,7 +1735,7 @@ numbers.reduce(binary(Math.min));
 
 *   原始函数应通过 `fn.apply(this, args)` 或 `fn.call(this, ...args)` 调用。
 
-### 最终思考
+## 最终思考
 
 函数装饰器是一种强大的工具，可以在不修改原始函数的情况下创建现有函数的变体。它们可以成为函数式编程工具箱中用于复用通用逻辑的一部分。
 
@@ -1774,7 +1745,7 @@ numbers.reduce(binary(Math.min));
 
 纯函数承诺让代码更易于阅读、理解、测试、调试和组合。这些承诺很重大。让我们看看它们能做什么。
 
-### 从内部阅读
+## 从内部阅读
 
 我们不需要考虑当前函数中变量的变化会如何影响其他函数。我们也不需要考虑其他函数中变量的变化会如何影响当前函数。
 
@@ -1795,7 +1766,7 @@ capitalize("chapter");
 
 阅读纯函数时，我们可以专注于一个地方——当前函数。纯函数让读者阅读的代码更少。
 
-### 从外部阅读
+## 从外部阅读
 
 看下面的代码：
 
@@ -1811,19 +1782,26 @@ console.log(arr);
 
 需要阅读和理解的东西越少，代码就越容易阅读。
 
-### 副作用
+## 副作用
 
 副作用是指在计算结果过程中，对局部环境之外的变量进行更改，或与外部环境进行交互。
 
 以下是一些副作用的例子：
 
 *   读取和修改局部作用域之外的状态
+
 *   修改作为参数传入的对象
+
 *   网络调用
+
 *   读写 DOM
+
 *   写入控制台
+
 *   触发/分发事件
+
 *   读写本地存储
+
 *   使用定时器
 
 以任何方式改变外部环境都是副作用。
@@ -1866,7 +1844,7 @@ console.log(numbers);
 //[1, 2]
 ```
 
-### 自由变量
+## 自由变量
 
 > 自由变量是指在函数中使用，但既不是该函数的局部变量也不是参数的变量。
 
@@ -1887,13 +1865,13 @@ getFinalPrice(10);
 
 纯函数不会访问可能变化的外部环境变量。
 
-### 不可变性
+## 不可变性
 
 不可变值是指一旦创建就无法更改的值。
 
 纯函数将输入值视为不可变的。理想情况下，输入值应该是不可变值。返回不可变值是一个好习惯。
 
-### 纯函数中的 `this`
+## 纯函数中的 `this`
 
 `this` 是一个隐式输入。
 
@@ -1913,7 +1891,7 @@ function transform(context) { }
 
 我建议在纯函数中避免使用 `this`。
 
-### 确定性函数
+## 确定性函数
 
 纯函数是确定性函数。对于特定的输入，它总是返回相同的输出。
 
@@ -1927,7 +1905,7 @@ function getNextValue(){
 }
 ```
 
-### 引用透明性
+## 引用透明性
 
 > 如果一个函数可以用其输出值替换，且应用程序的行为不变，则该函数具有引用透明性。
 
@@ -1935,11 +1913,7 @@ function getNextValue(){
 
 具有引用透明性的函数就是纯函数。
 
-
-
-
-
-### 使用其他纯函数
+## 使用其他纯函数
 
 纯函数可以调用其他纯函数。请看下面的代码，其中 `getMaxId()` 纯函数使用了另外两个纯函数：`prop()` 和 `Math.max()`。而 `addTodo()` 纯函数则使用了 `getMaxId()` 纯函数。
 
@@ -1967,7 +1941,7 @@ console.log(newTodos);
 //[{title: "improve", id: 1}]
 ```
 
-### 使用其他非纯函数
+## 使用其他非纯函数
 
 纯函数通常不会调用其他非纯函数，但有一个例外：如果那些非纯函数只修改输入参数，且整体纯度不受影响，那么纯函数可以调用它们。请看下面的代码：
 
@@ -2010,28 +1984,37 @@ function getFunction(){
 
 `runFunction()` 是非纯的，而 `getFunction()` 是纯的。
 
-### 从内部实现纯度
+## 从内部实现纯度
 
 我们可以通过移除某些特性来开始编写纯函数风格的代码：
 
 *   不使用赋值运算符。
+
 *   不使用 `let`、`var` 声明。
+
 *   只使用 `const` 声明变量。
+
 *   不使用 `++` 或 `--` 更新运算符。
+
 *   不使用 `delete`。
+
 *   不将变量作为 `Object.assign()` 的第一个参数。
+
 *   不使用循环。
+
 *   只使用纯数组方法。
 
 在纯函数风格中，循环被纯数组方法（如 `filter()`、`map()`、`reduce()`）或递归所替代。
 
 请注意，当引擎支持尾调用优化时，用递归替换所有循环才是可行的。目前，主流浏览器尚未支持尾调用优化。
 
-### 从外部判断纯度
+## 从外部判断纯度
+
+
 
 以纯函数风格编写代码，会使函数从内部和外部来看都是纯的。
 
-然而，根据定义，函数的纯度是由外部而非内部决定的。请看下面的函数，它根据集合中的 id 创建了一个映射：
+然而，根据定义，函数的纯度是由外部而非内部决定的。请看下面的函数，它根据集合中的`id`创建了一个映射：
 
 ```
 function createMapById(list){
@@ -2055,9 +2038,9 @@ console.log(map);
 //}
 ```
 
-`createMapById()` 并非以纯函数风格编写。它使用了赋值运算符和非纯的 `forEach()` 方法。然而，当我们从外部观察这个函数时，它是纯的。
+`createMapById()`并非以纯函数风格编写。它使用了赋值运算符和非纯的`forEach()`方法。然而，当我们从外部观察这个函数时，它是纯的。
 
-函数内部的纯度是我们在追求清晰代码时应当努力的方向。下面 `getEvens()` 函数的两种实现都是纯的，但我们应优先选择第一种：
+函数内部的纯度是我们在追求清晰代码时应当努力的方向。下面`getEvens()`函数的两种实现都是纯的，但我们应优先选择第一种：
 
 ```
 function isEven(number){
@@ -2115,7 +2098,7 @@ function getEvens(numbers) {
 
 想象一下你在排队。在入口处，你拿到一个显示你号码的电子设备。就在你快要被服务时，屏幕上的订单号发生了变化。当你询问原因时，你了解到大楼里的任何人都可以更改你的号码，但没人知道是谁改的。在你等待的过程中，订单号一次又一次地变化。你现在面临的任务是请求大楼里的每个人都停止更改你的订单号。
 
-回到代码中，将订单设备想象成一个带有 `number` 属性的 `order` 对象。假设应用程序中的任何代码都可以更改 `order.number` 属性。检测是哪部分代码做了更改非常困难。你可能需要检查所有使用 `order` 对象的代码，并推测发生了什么。
+回到代码中，将订单设备想象成一个带有`number`属性的`order`对象。假设应用程序中的任何代码都可以更改`order.number`属性。检测是哪部分代码做了更改非常困难。你可能需要检查所有使用`order`对象的代码，并推测发生了什么。
 
 一个不可变的订单对象就不会有这种问题。
 
@@ -2147,9 +2130,9 @@ console.log(arr);
 //[1, 2, 3] ?
 ```
 
-我们能轻易地说 `log()` 会在控制台打印 `[1, 2, 3]` 吗？不能。数组是一种可变的数据结构。它可以在 `doSomething()` 函数中被修改。我们需要阅读并理解 `doSomething()` 函数才能知道控制台会打印什么。
+我们能轻易地说`log()`会在控制台打印`[1, 2, 3]`吗？不能。数组是一种可变的数据结构。它可以在`doSomething()`函数中被修改。我们需要阅读并理解`doSomething()`函数才能知道控制台会打印什么。
 
-下面是一个修改数组的 `doSomething()` 函数示例：
+下面是一个修改数组的`doSomething()`函数示例：
 
 ```
 function doSomething(arr){
@@ -2157,16 +2140,13 @@ function doSomething(arr){
 }
 ```
 
-如果数组是一种不可变的数据结构，那么无需阅读 `doSomething()` 函数，我们就能知道控制台会打印什么。这样需要阅读和理解的代码就会更少。
+如果数组是一种不可变的数据结构，那么无需阅读`doSomething()`函数，我们就能知道控制台会打印什么。这样需要阅读和理解的代码就会更少。
 
 ### 常量
 
+`const`声明一个不能被重新赋值的变量。只有当赋值为不可变值时，它才成为常量。
 
-
-
-`const` 声明一个不能被重新赋值的变量。只有当赋值为不可变值时，它才成为常量。
-
-简而言之，对原始值使用 `const` 定义的是常量。对对象值使用 `const` 并不一定定义常量。
+简而言之，对原始值使用`const`定义的是常量。对对象值使用`const`并不一定定义常量。
 
 ```
 const book = {
@@ -2185,7 +2165,7 @@ console.log(book);
 
 冻结对象使其不可变。
 
-`Object.freeze()` 可用于冻结对象。属性不能被添加、删除或修改。
+`Object.freeze()`可用于冻结对象。属性不能被添加、删除或修改。
 
 ```
 const book = Object.freeze({
@@ -2197,7 +2177,7 @@ book.title = "You Don't Know JS";
 //Cannot assign to read only property 'title'
 ```
 
-`Object.freeze()` 执行的是浅冻结。嵌套对象仍可被修改。要实现深冻结，需要递归地冻结每个对象类型的属性。以下是 `deepFreeze()` 的实现：
+`Object.freeze()`执行的是浅冻结。嵌套对象仍可被修改。要实现深冻结，需要递归地冻结每个对象类型的属性。以下是`deepFreeze()`的实现：
 
 ```
 function deepFreeze(object) {
@@ -2211,11 +2191,11 @@ function deepFreeze(object) {
 }
 ```
 
-`deepFreeze()` 使普通对象不可变。
+`deepFreeze()`使普通对象不可变。
 
 ### 处理不可变对象
 
-将 `book` 视为一个不可变对象。
+将`book`视为一个不可变对象。
 
 ```
 const book = Object.freeze({
@@ -2259,7 +2239,7 @@ console.log(newBook);
 
 #### 删除属性
 
-可以使用解构语法创建一个不包含 `author` 属性的新对象：
+可以使用解构语法创建一个不包含`author`属性的新对象：
 
 ```
 const { author, ...newBook } = book;
@@ -2280,15 +2260,15 @@ console.log(newBook);
 
 纯数组方法不会修改现有数组，而是创建新值。
 
-`concat()`、`every()`、`filter()`、`find()`、`findIndex()`、`map()`、`reduce()`、`reduceRight()`、`slice()`、`some()` 是纯方法。
+`concat()`、`every()`、`filter()`、`find()`、`findIndex()`、`map()`、`reduce()`、`reduceRight()`、`slice()`、`some()`是纯方法。
 
-`reverse()`、`sort()` 本应是纯方法，但实际上不是。要使用它们，必须先复制原始数组。
+`reverse()`、`sort()`本应是纯方法，但实际上不是。要使用它们，必须先复制原始数组。
 
 非纯方法会修改输入数组。
 
-`pop()`、`push()`、`shift()`、`splice()`、`unshift()` 不是纯方法。
+`pop()`、`push()`、`shift()`、`splice()`、`unshift()`不是纯方法。
 
-`Object.freeze()` 冻结数组。只有纯方法能正常工作。
+`Object.freeze()`冻结数组。只有纯方法能正常工作。
 
 ```
 const books = Object.freeze([ 
@@ -2320,7 +2300,7 @@ const newBooks = books.concat([newBook]);
 
 #### 删除
 
-以下是从位置 `index` 删除值的示例：
+以下是从位置`index`删除值的示例：
 
 ```
 const index = 0;
@@ -2328,11 +2308,11 @@ const newBooks = [...books.slice(0, index),
                   ...books.slice(index+1)];
 ```
 
-`slice(start, end)` 返回数组的一部分，介于两个指定索引之间，作为一个新数组。当省略 `end` 索引时，会选择从 `start` 位置到数组末尾的所有元素。当 `start` 索引也被省略时，则从索引 0 开始，并创建数组的浅克隆。
+`slice(start, end)`返回数组的一部分，介于两个指定索引之间，作为一个新数组。当省略`end`索引时，会选择从`start`位置到数组末尾的所有元素。当`start`索引也被省略时，则从索引 0 开始，并创建数组的浅克隆。
 
 #### 编辑
 
-`map()` 可用于编辑不可变数组中的元素。映射函数返回我们要更新的元素的新值，并返回所有其他元素的现有值。
+`map()`可用于编辑不可变数组中的元素。映射函数返回我们要更新的元素的新值，并返回所有其他元素的现有值。
 
 ```
 const newBook = Object.freeze({title:"JavaScript Patterns"});
@@ -2349,9 +2329,9 @@ const newBooks = books.map(function(book, index){
 
 ### 不可变库
 
-[Immutable.js](https://facebook.github.io/immutable-js/) 提供了不可变数据结构，如 `List` 和 `Map`。这些数据结构经过了高度优化。
+[Immutable.js](https://facebook.github.io/immutable-js/)提供了不可变数据结构，如`List`和`Map`。这些数据结构经过了高度优化。
 
-让我们看看 `List` 数据结构。
+让我们看看`List`数据结构。
 
 ```
 import { List } from "immutable";
@@ -2364,7 +2344,7 @@ const books = List([
 
 #### 添加
 
-> `push(value)` 返回一个添加了新 `value` 的新 `List`。
+> `push(value)`返回一个添加了新`value`的新`List`。
 
 ```
 const aNewBook = { title: "Mastering Immutable.js" };
@@ -2383,7 +2363,7 @@ console.log(Array.from(newBooks));
 
 #### 编辑
 
-> `set(index, value)` 返回一个新 `List`，在位置 `index` 处具有新 `value`。
+> `set(index, value)`返回一个新`List`，在位置`index`处具有新`value`。
 
 ```
 const aNewBook = { title: "Mastering Immutable.js" };
@@ -2397,7 +2377,7 @@ console.log(Array.from(newBooks));
 
 #### 删除
 
-> `remove(index)` 返回一个新 `List`，其中移除了位置 `index` 处的值。
+> `remove(index)`返回一个新`List`，其中移除了位置`index`处的值。
 
 ```
 const newBooks = books.remove(0);
@@ -2406,9 +2386,9 @@ console.log(Array.from(newBooks));
 //[{title: "You Don't Know JS"}];
 ```
 
-不可变的 `List` 数据结构可以使用 `Array.from()`、展开运算符或 `toArray()` 方法转换为原生数组。对于大型数组/对象，这些转换可能会很慢。
+不可变的`List`数据结构可以使用`Array.from()`、展开运算符或`toArray()`方法转换为原生数组。对于大型数组/对象，这些转换可能会很慢。
 
-在性能和内存方面，我们应该考虑像 [Immutable.js](https://facebook.github.io/immutable-js/) 这样的库提供的不可变数据结构。
+在性能和内存方面，我们应该考虑像[Immutable.js](https://facebook.github.io/immutable-js/)这样的库提供的不可变数据结构。
 
 ### 传输对象
 
@@ -2432,14 +2412,11 @@ console.log(Array.from(newBooks));
 
 不可变性避免了一类难以检测的错误。
 
-在 JavaScript 中处理不可变值有两种方法。一种是在创建时冻结所有对象和数组，然后使用展开运算符或纯数组方法创建新数组。另一种选择是使用像 [Immutable.js](https://facebook.github.io/immutable-js/) 这样的库，它提供了不可变数据结构。
+在 JavaScript 中处理不可变值有两种方法。一种是在创建时冻结所有对象和数组，然后使用展开运算符或纯数组方法创建新数组。另一种选择是使用像[Immutable.js](https://facebook.github.io/immutable-js/)这样的库，它提供了不可变数据结构。
 
 不可变性不是关于不能改变的变量，而是关于不能改变的值。
 
 # 第 8 章：偏函数应用与柯里化
-
-
-
 
 偏函数应用和柯里化是将函数转换为参数更少的其他函数的技术。它们的目的相似，但实现方式不同。让我们看看具体区别。
 
@@ -2447,7 +2424,9 @@ console.log(Array.from(newBooks));
 
 > 偏函数应用是通过生成一个参数更少的函数来固定函数中一定数量参数的过程。返回的函数就是一个偏应用函数。
 
-固定或绑定函数的第一个参数会创建一个新函数，该函数接受剩余的参数。考虑函数 `f(x, y, z)`：
+固定或绑定函数的第一个参数会创建一个新函数，该函数接受剩余的参数。考虑函数`f(x, y, z)`：
+
+
 
 ```
 function f(x, y, z){
@@ -2476,17 +2455,15 @@ f3();
 //3
 ```
 
-*   固定函数 `f` 的一个参数会创建一个具有两个参数的新函数。
-*   固定函数的两个参数会创建一个具有一个参数的新函数。
-*   固定全部三个参数会创建一个没有参数的新函数。
+固定函数`f`的一个参数会创建一个具有两个参数的新函数。固定函数的两个参数会创建一个具有一个参数的新函数。固定全部三个参数会创建一个没有参数的新函数。
 
-假设你有一个函数，想要创建另一个接受更少参数的函数。首先，为什么要这样做？一个原因可能是你想从一个通用函数中创建一个专用函数。另一个原因可能是你实际上需要一个接受更少参数的函数，以便与 `filter()` 或 `map()` 等函数一起使用。
+假设你有一个函数，想要创建另一个接受更少参数的函数。首先，为什么要这样做？一个原因可能是你想从一个通用函数中创建一个专用函数。另一个原因可能是你实际上需要一个接受更少参数的函数，以便与`filter()`或`map()`等函数一起使用。
 
 接下来，我们将介绍用于实现偏函数应用的工具。
 
-### bind()
+## `bind()`
 
-`bind()` 方法可以实现偏函数应用，但需要注意 `this` 的取值。请看下面的例子：
+`bind()`方法可以实现偏函数应用，但需要注意`this`的取值。请看下面的例子：
 
 ```
 function log(level, message){
@@ -2498,13 +2475,13 @@ logInfo("A message");
 //Info : A message
 ```
 
-注意 `logInfo()` 函数是如何创建的。它只需要一个参数，即 `message`。`logInfo()` 就是一个偏应用函数。
+注意`logInfo()`函数是如何创建的。它只需要一个参数，即`message`。`logInfo()`就是一个偏应用函数。
 
-### partial()
+## `partial()`
 
-为了更好地理解偏函数应用的工作原理，让我们自己创建一个 `partial()` 函数装饰器。
+为了更好地理解偏函数应用的工作原理，让我们自己创建一个`partial()`函数装饰器。
 
-`partial()` 创建一个函数版本，该版本接受的参数比原函数少。
+`partial()`创建一个函数版本，该版本接受的参数比原函数少。
 
 ```
 function partial(fn, ...leftArgs) {
@@ -2522,9 +2499,9 @@ logInfo("A message");
 //Info : A message
 ```
 
-`partial()` 函数可以在 [lodash.js](https://lodash.com/docs/4.17.11#partial) 或 [underscore.js](https://underscorejs.org/#partial) 等库中找到。
+`partial()`函数可以在[lodash.js](https://lodash.com/docs/4.17.11#partial)或[underscore.js](https://underscorejs.org/#partial)等库中找到。
 
-### 与 filter 一起使用的偏函数应用
+## 与`filter`一起使用的偏函数应用
 
 当新函数作为回调函数且可以接受更少参数时，偏函数应用就派上用场了。考虑下面的例子：
 
@@ -2546,15 +2523,15 @@ const filteredTodos = getTodos(todos, "NC");
 //[{id:1, type:"NC", title:"create"}];
 ```
 
-`filter()` 的匿名谓词接受一个参数，即当前的 `todo`，并用它来调用 `isTodoOfType()`。
+`filter()`的匿名谓词接受一个参数，即当前的`todo`，并用它来调用`isTodoOfType()`。
 
-另一种选择是使用偏函数应用，创建一个已经设置了 `type` 的新函数：
+另一种选择是使用偏函数应用，创建一个已经设置了`type`的新函数：
 
 ```
 const isOfType = partial(isTodoOfType, type); 
 ```
 
-然后我们可以将新的谓词函数作为 `filter()` 方法的回调。代码如下：
+然后我们可以将新的谓词函数作为`filter()`方法的回调。代码如下：
 
 ```
 function getTodos(type){
@@ -2563,11 +2540,11 @@ function getTodos(type){
 }
 ```
 
-### 参数顺序
+## 参数顺序
 
 参数顺序很重要。
 
-`partial()` 工具从左到右固定参数。以下代码无法正常工作：
+`partial()`工具从左到右固定参数。以下代码无法正常工作：
 
 ```
 function isTodoOfType(todo, type){
@@ -2579,11 +2556,11 @@ function getTodos(type){
 }
 ```
 
-注意 `isTodoOfType(todo, type)` 函数中参数的顺序。`partial(isTodoOfType, type)` 将第一个参数 `todo` 设置为特定于 `type` 的值，这是错误的。
+注意`isTodoOfType(todo, type)`函数中参数的顺序。`partial(isTodoOfType, type)`将第一个参数`todo`设置为特定于`type`的值，这是错误的。
 
-### 与 map 一起使用的偏函数应用
+## 与`map`一起使用的偏函数应用
 
-以购物清单为例，每个行项目包含 `productId` 和 `quantity`。假设我们想显示每一行的所有产品详情。我们可以使用 `map()` 方法将购物清单转换为包含所有产品详情的新列表。我想使用 `toProductView(products, line)` 函数，但 `map()` 只发送一个参数，即当前行项目。此时，偏函数应用对于创建一个已经设置了 `products` 参数的新函数非常有用。
+以购物清单为例，每个行项目包含`productId`和`quantity`。假设我们想显示每一行的所有产品详情。我们可以使用`map()`方法将购物清单转换为包含所有产品详情的新列表。我想使用`toProductView(products, line)`函数，但`map()`只发送一个参数，即当前行项目。此时，偏函数应用对于创建一个已经设置了`products`参数的新函数非常有用。
 
 ```
 import partial from "lodash/partial";
@@ -2622,9 +2599,9 @@ console.log(newList);
 //]
 ```
 
-### 与事件处理程序一起使用的偏函数应用
+## 与事件处理程序一起使用的偏函数应用
 
-偏函数应用提供了一种向事件处理程序传递参数的好方法。查看 [React](https://reactjs.org/) 中的下一个示例：
+偏函数应用提供了一种向事件处理程序传递参数的好方法。查看[React](https://reactjs.org/)中的下一个示例：
 
 ```
 import partial from "lodash/partial";
@@ -2641,11 +2618,11 @@ function TodoItem({ todo, onRemoveClick }) {
 }
 ```
 
-### 柯里化
+## 柯里化
 
 > 柯里化将接受多个参数的函数转换为一系列函数，每个函数只接受一个参数。
 
-例如，考虑具有三个参数的 `f(x,y,z)` 函数。以下是编写柯里化版本的方法：
+例如，考虑具有三个参数的`f(x,y,z)`函数。以下是编写柯里化版本的方法：
 
 ```
 function f(x){
@@ -2674,11 +2651,11 @@ f(1)(2); // 返回一个函数
 f(1)(2)(3); // 执行 f 并返回结果
 ```
 
-### 与 filter 一起使用的柯里化
+## 与`filter`一起使用的柯里化
 
-回到之前的情况，`isTodoOfType()` 需要两个参数，而我们想将其与只提供一个参数（`todo`）的 `filter()` 一起使用。
+回到之前的情况，`isTodoOfType()`需要两个参数，而我们想将其与只提供一个参数（`todo`）的`filter()`一起使用。
 
-可以将 `isTodoOfType` 创建为柯里化函数。它接受 `type` 并返回一个谓词函数，该函数接受 `todo` 并返回布尔值。代码如下：
+可以将`isTodoOfType`创建为柯里化函数。它接受`type`并返回一个谓词函数，该函数接受`todo`并返回布尔值。代码如下：
 
 ```
 function isTodoOfType(type){
@@ -2700,9 +2677,9 @@ const filteredTodos = getTodos("NC");
 //[{id:1, type:"NC", title:"create"}];
 ```
 
-### 与 map 一起使用的柯里化
+## 与`map`一起使用的柯里化
 
-在购物清单示例中，我们可以将需要两个参数的 `toProductView()` 函数重写为柯里化函数。考虑以下代码：
+在购物清单示例中，我们可以将需要两个参数的`toProductView()`函数重写为柯里化函数。考虑以下代码：
 
 ```
 function toProductView(products){
@@ -2718,16 +2695,13 @@ function toProductView(products){
 const newList = shoppingList.map(toProductView(products));
 ```
 
-### curry()
+## `curry()`
 
-在 [Haskell](https://en.wikipedia.org/wiki/Haskell_(programming_language)) 等函数式语言中，函数默认是柯里化的。用更少的参数调用函数会得到一个接受剩余参数的新函数。用所有参数调用函数则会执行该函数。
+在[Haskell](https://en.wikipedia.org/wiki/Haskell_(programming_language))等函数式语言中，函数默认是柯里化的。用更少的参数调用函数会得到一个接受剩余参数的新函数。用所有参数调用函数则会执行该函数。
 
-在 JavaScript 中，可以使用像 `curry()` 这样的工具函数来启用柯里化。
+在JavaScript中，可以使用像`curry()`这样的工具函数来启用柯里化。
 
-
-
-
-`curry()` 提供了一种比真正柯里化函数更灵活的调用系统。它可以一次性传入多个参数，而不仅仅是一个。当所有参数都传入时，函数会被执行。
+`curry()`提供了一种比真正柯里化函数更灵活的调用系统。它可以一次性传入多个参数，而不仅仅是一个。当所有参数都传入时，函数会被执行。
 
 ```
 import { curry } from 'lodash';
@@ -2746,7 +2720,7 @@ f(1)(2)(3);
 //3
 ```
 
-以下是 `curry()` 函数的一种实现：
+以下是`curry()`函数的一种实现：
 
 ```
 function curry(f, leftArgs = []){
@@ -2761,9 +2735,9 @@ function curry(f, leftArgs = []){
 }
 ```
 
-这种 `curry()` 函数的实现对于含有剩余参数或默认值的函数无法正确工作。
+这种`curry()`函数的实现对于含有剩余参数或默认值的函数无法正确工作。
 
-函数的 `length` 属性获取的是函数期望的参数个数。然而，剩余参数不计入函数的 `length` 属性，默认值也不计入。
+函数的`length`属性获取的是函数期望的参数个数。然而，剩余参数不计入函数的`length`属性，默认值也不计入。
 
 ```
 function f1 (a, b) { }
@@ -2805,29 +2779,29 @@ fn(1)(2);
 //2
 ```
 
-`curry()` 函数可以在 [lodash.js](https://lodash.com/docs/4.17.11#curry) 或 [ramda.js](https://ramdajs.com/docs/#curryN) 中找到。
+`curry()`函数可以在[lodash.js](https://lodash.com/docs/4.17.11#curry)或[ramda.js](https://ramdajs.com/docs/#curryN)中找到。
 
-### 元数
+## 元数
 
 函数的元数表示它接受的参数个数。
 
 * 一元函数是接受一个参数的函数。
 * 二元函数接受两个参数。
 * 三元函数接受三个参数。
-* n 元函数接受 n 个参数。
+* n元函数接受n个参数。
 * 零元函数不接受参数。
 
 偏应用和柯里化会降低函数的元数。
 
-柯里化将一个 n 元函数转换为 n 个一元函数。
+柯里化将一个n元函数转换为n个一元函数。
 
-### 完全应用
+## 完全应用
 
 向函数传入少于总参数个数的参数称为偏应用。
 
 向函数传入所有参数称为完全应用。
 
-考虑以下对 `f(x, y, z)` 函数的完全应用：
+考虑以下对`f(x, y, z)`函数的完全应用：
 
 ```
 function f(x, y, z){
@@ -2848,7 +2822,7 @@ const fn = curry(f);
 fn(1)(2)(3);
 ```
 
-偏应用工具函数是一个例外。使用 `partial()` 向函数传入所有参数会创建一个所有参数都已固定的零元函数。原始函数不会在参数传入时立即执行。这个新函数可以用作回调。
+偏应用工具函数是一个例外。使用`partial()`向函数传入所有参数会创建一个所有参数都已固定的零元函数。原始函数不会在参数传入时立即执行。这个新函数可以用作回调。
 
 ```
 const fn = partial(f,1,2,3);
@@ -2858,9 +2832,9 @@ setTimeout(fn, 1000);
 //3
 ```
 
-### Thunk
+## Thunk
 
-Thunk 是一种延迟调用另一个函数的函数。thunk 函数会使用所有参数调用原始函数。
+Thunk是一种延迟调用另一个函数的函数。thunk函数会使用所有参数调用原始函数。
 
 ```
 function sum(x, y, z){
@@ -2877,9 +2851,9 @@ sumThunk();
 //6
 ```
 
-我们可以使用函数装饰器来创建 thunk。
+我们可以使用函数装饰器来创建thunk。
 
-`thunk(fn, args)` 接受一个函数和所有参数，并创建一个新函数，该函数使用所有参数执行原始函数。
+`thunk(fn, args)`接受一个函数和所有参数，并创建一个新函数，该函数使用所有参数执行原始函数。
 
 ```
 function thunk(fn, ...args){
@@ -2893,7 +2867,7 @@ setTimeout(sumFirst3, 3000);
 //6 after 3s
 ```
 
-`thunkify(fn)` 接受一个函数 `fn`，并返回一个新函数，该函数要求传入参数，并返回第三个函数，当第三个函数被调用时，它会使用所有参数调用 `fn`。
+`thunkify(fn)`接受一个函数`fn`，并返回一个新函数，该函数要求传入参数，并返回第三个函数，当第三个函数被调用时，它会使用所有参数调用`fn`。
 
 ```
 function thunkify(fn) {
@@ -2909,7 +2883,7 @@ setTimeout(sumFirst3, 3000);
 //6 after 3s
 ```
 
-我认为最好只对少于总参数个数的参数使用 `partial()`，而使用 `thunk()` 来创建一个零元函数，该函数使用所有参数调用原始函数。
+我认为最好只对少于总参数个数的参数使用`partial()`，而使用`thunk()`来创建一个零元函数，该函数使用所有参数调用原始函数。
 
 ```
 function f(x, y, z){
@@ -2922,22 +2896,24 @@ const fThunk = thunk(f, 1, 2, 3);
 $("#btn").click(fThunk);
 ```
 
-### 最终思考
+## 最终思考
 
 偏应用将一个多参数函数转换为一个参数更少的函数。
 
 柯里化将一个多参数函数转换为一系列每个只接受一个参数的函数。
 
-# 第 9 章：函数组合
+# 第9章：函数组合
 
 > 函数组合是一种将一个函数的输出作为另一个函数输入的技术。
 
-假设我们有两个函数 `f()` 和 `g()`，每个接受一个参数。
+假设我们有两个函数`f()`和`g()`，每个接受一个参数。
 
 ```
 const y = g(x);
 const z = f(y);
 ```
+
+
 
 将它们组合意味着：
 
@@ -2947,13 +2923,13 @@ const z = f(g(x));
 
 ### compose()
 
-为了组合多个函数，我们可以创建 `compose()` 工具函数。
+为了组合多个函数，我们可以创建`compose()`工具函数。
 
 ```
 f(g(x)) === compose(f,g)(x);
 ```
 
-以下是 `compose()` 的一种实现：
+以下是`compose()`的一种实现：
 
 ```
 function compose(...functions){
@@ -2973,11 +2949,11 @@ function g(x){
 f(g(2)) === compose(f,g)(2);
 ```
 
-`compose()` 适用于一元函数。
+`compose()`适用于一元函数。
 
 ### 使用装饰器进行组合
 
-考虑以下从书籍集合中选取 `title` 的代码：
+考虑以下从书籍集合中选取`title`的代码：
 
 ```
 import prop from "lodash/property";
@@ -2994,9 +2970,9 @@ const titles = books.map(prop("title"));
 // "Javascript Allongé"]
 ```
 
-在这个例子中，我们使用了函数组合。`map()` 函数将 `prop()` 函数的返回值作为输入。
+在这个例子中，我们使用了函数组合。`map()`函数将`prop()`函数的返回值作为输入。
 
-下面是另一个使用 `matchesProperty()` 按 id 查找书籍的函数组合示例：
+下面是另一个使用`matchesProperty()`按`id`查找书籍的函数组合示例：
 
 ```
 import matchesProperty from "lodash/matchesProperty";
@@ -3005,13 +2981,13 @@ const book = books.find(matchesProperty("id", 1));
 //{id: 1, title: "JavaScript The Good Parts", type: "T"}
 ```
 
-函数 `find()` 将 `matchesProperty()` 装饰器的返回值作为输入。
+函数`find()`将`matchesProperty()`装饰器的返回值作为输入。
 
 以这种方式组合函数时，第一个函数可以有多个参数。
 
 ### pipe()
 
-> `pipe()` 创建一个函数管道，其中一个函数的输出是下一个函数的输入。
+> `pipe()`创建一个函数管道，其中一个函数的输出是下一个函数的输入。
 
 考虑以下代码：
 
@@ -3048,7 +3024,7 @@ const html = createListHtml(filteredBooks);
 renderHtml(html);
 ```
 
-可以使用 `pipe()` 工具函数重写 `books` 的处理过程：
+可以使用`pipe()`工具函数重写`books`的处理过程：
 
 ```
 import pipe from "lodash/flow";
@@ -3060,7 +3036,7 @@ pipe(
 )(books);
 ```
 
-可以使用像 `logData()` 这样的工具函数在转换之间记录数据：
+可以使用像`logData()`这样的工具函数在转换之间记录数据：
 
 ```
 import pipe from "lodash/flow";
@@ -3079,7 +3055,7 @@ pipe(
 )(books);
 ```
 
-以下是 `pipe()` 函数的一种实现：
+以下是`pipe()`函数的一种实现：
 
 ```
 function pipe(...functions){
@@ -3089,11 +3065,7 @@ function pipe(...functions){
 }
 ```
 
-`pipe()` 适用于接受一个参数的函数。
-
-
-
-
+`pipe()`适用于接受一个参数的函数。
 
 ### 使用 Promise 链式调用进行组合
 
@@ -3196,7 +3168,7 @@ function renderFirstItem(){
 }
 ```
 
-我建议使用能够表达函数用途并为现有代码增加价值的名称。例如，像 `onClick()` 或 `myCustomClickEvent()` 这样的名称表达的是函数在哪里被使用，而不是它做什么。同一个函数完全可以处理其他事件或在其他地方被调用。
+我建议使用能够表达函数用途并为现有代码增加价值的名称。例如，像`onClick()`或`myCustomClickEvent()`这样的名称表达的是函数在哪里被使用，而不是它做什么。同一个函数完全可以处理其他事件或在其他地方被调用。
 
 ### 命名函数表达式
 
@@ -3216,7 +3188,7 @@ function renderFirstItem(){
 })();
 ```
 
-匿名函数在调用栈中显示为 `(anonymous)`。
+匿名函数在调用栈中显示为`(anonymous)`。
 
 ![](img/image00080.gif "调用栈中的匿名函数表达式")
 
@@ -3238,7 +3210,7 @@ function renderFirstItem(){
 
 ![](img/image00081.gif "调用栈中的命名函数表达式")
 
-`createTodoModule()`、`getAllTodos()` 和 `renderTodo()` 是命名函数表达式。
+`createTodoModule()`、`getAllTodos()`和`renderTodo()`是命名函数表达式。
 
 ### 箭头函数的命名
 
@@ -3253,7 +3225,7 @@ function sum(a, b) { return a + b; }
 const total = numbers.reduce(sum, 0);
 ```
 
-`sum()` 函数可以用箭头语法编写。在这种情况下，箭头函数会推断变量的名称。
+`sum()`函数可以用箭头语法编写。在这种情况下，箭头函数会推断变量的名称。
 
 ```
 const sum = (a, b) => a + b;
@@ -3276,7 +3248,7 @@ const titles = books.map(book => book.title);
 // "Functional-Light JavaScript"]
 ```
 
-另一种选择是使用像 `prop()` 这样的通用工具函数：
+另一种选择是使用像`prop()`这样的通用工具函数：
 
 ```
 import prop from "lodash/property";
@@ -3286,9 +3258,9 @@ const titles = books.map(prop("title"));
 
 ### 箭头函数 vs `function`
 
-代码更少并不一定意味着可读性更高。下一个示例展示了定义 `prop()` 函数的两种方式。我更喜欢使用 `function` 关键字的方式，因为我认为它更清楚地表达了函数的作用。
+代码更少并不一定意味着可读性更高。下一个示例展示了定义`prop()`函数的两种方式。我更喜欢使用`function`关键字的方式，因为我认为它更清楚地表达了函数的作用。
 
-`prop()` 接受一个属性名称，并返回一个函数，该函数接受一个对象并返回该对象的属性。
+`prop()`接受一个属性名称，并返回一个函数，该函数接受一个对象并返回该对象的属性。
 
 ```
 //使用箭头函数
@@ -3341,7 +3313,7 @@ const todos = [
 ];
 ```
 
-下面是过滤待办事项并创建具有 `userName` 属性的新对象的命令式代码。
+下面是过滤待办事项并创建具有`userName`属性的新对象的命令式代码。
 
 ```
 let filteredTodos = [];
@@ -3363,7 +3335,7 @@ console.log(filteredTodos);
 //}]
 ```
 
-重构为函数式风格，使用了 `filter()` 和 `map()` 函数。
+重构为函数式风格，使用了`filter()`和`map()`函数。
 
 ```
 const filteredTodos = todos
@@ -3371,13 +3343,9 @@ const filteredTodos = todos
  .map(todo => ({ ...todo, userName: todo.user.name }));
 ```
 
-
-
-
-
 > 链式调用是一种用于简化代码的技术，即对同一个对象连续调用多个方法。
 
-`map()` 和 `filter()` 被链式调用。
+`map()`和`filter()`被链式调用。
 
 我们可以通过提取匿名回调函数并赋予其意图明确的名称来进一步改进代码。请看下面的代码：
 
@@ -3395,13 +3363,15 @@ const filteredTodos = todos
  .map(todo => toTodoView(todo));
 ```
 
-`isPriorityTodo()` 和 `toTodoView()` 是纯函数，且具有意图明确的名称。
+`isPriorityTodo()`和`toTodoView()`是纯函数，且具有意图明确的名称。
 
 ### 无点风格
 
 > 无点风格是一种通过消除不必要的参数来提高可读性的技术。
 
 回顾之前的代码：
+
+
 
 ```
 const filteredTodos = todos
@@ -3419,7 +3389,7 @@ const filteredTodos = todos
 
 无点风格可以在特定场景下提高可读性。
 
-在无点风格中，没有 `function` 关键字，也没有箭头语法。这意味着我们使用另一个函数来创建所需的函数。在无点风格中，我们看到的只有函数名。
+在无点风格中，没有`function`关键字，也没有箭头语法。这意味着我们使用另一个函数来创建所需的函数。在无点风格中，我们看到的只有函数名。
 
 ### 使用 reduce 重构
 
@@ -3451,9 +3421,9 @@ console.log(fruitsPrice);
 //35
 ```
 
-在这种情况下，采用函数式方法需要使用 `reduce()` 来计算总价。
+在这种情况下，采用函数式方法需要使用`reduce()`来计算总价。
 
-> `reduce()` 将一组值归约为一个值
+> `reduce()`将一组值归约为一个值
 
 和之前一样，我们使用具有意图明确名称的纯函数、纯数组方法和无点风格来重构代码：
 
@@ -3488,7 +3458,7 @@ let fruitsPrice = shoppingList
 
 ### 最终思考
 
-以函数式风格处理集合时，会将数据转换分解为 filter、map、reduce 或 sort 等步骤。同时，需要定义小型纯函数来支持这些转换。
+以函数式风格处理集合时，会将数据转换分解为`filter`、`map`、`reduce`或`sort`等步骤。同时，需要定义小型纯函数来支持这些转换。
 
 无点风格提高了代码的清晰度和可读性。
 
@@ -3502,7 +3472,7 @@ let fruitsPrice = shoppingList
 
 > 异步函数启动操作后立即返回。操作可能在未来的某个时刻完成。
 
-在控制台应用程序中，像 `Console.ReadKey()` 这样的命令会阻塞程序，直到按下某个字符。这种方法对于无法执行其他操作的控制台应用程序可能有效，但对于 Web 应用程序则行不通。
+在控制台应用程序中，像`Console.ReadKey()`这样的命令会阻塞程序，直到按下某个字符。这种方法对于无法执行其他操作的控制台应用程序可能有效，但对于 Web 应用程序则行不通。
 
 同步代码易于理解，但在某些情况下，我们需要在不阻塞界面的情况下执行操作。从这个角度来看：
 
@@ -3530,7 +3500,7 @@ block(5000);
 logMessage();
 ```
 
-这是一个阻塞代码的示例。它会阻塞所有操作 5 秒，然后执行 `logMessage()` 函数。当应用程序被阻塞时，它将无法响应。
+这是一个阻塞代码的示例。它会阻塞所有操作 5 秒，然后执行`logMessage()`函数。当应用程序被阻塞时，它将无法响应。
 
 让我们看看如何在不阻塞的情况下，在间隔时间后显示一条消息。
 
@@ -3562,9 +3532,9 @@ delay(5000, logMessage);
 
 #### DOM 事件
 
-用户交互可能会产生许多事件，如 `click`、`focus`、`blur`、`keypress`。监听这些事件不会阻塞界面。
+用户交互可能会产生许多事件，如`click`、`focus`、`blur`、`keypress`。监听这些事件不会阻塞界面。
 
-看看下面使用回调处理 DOM 事件的示例，使用了 [jQuery](https://jquery.com/)：
+看看下面使用回调处理 DOM 事件的示例，使用了[jQuery](https://jquery.com/)：
 
 ```
 function doSomething(){ }
@@ -3573,7 +3543,7 @@ $("#btn").on("click", doSomething);
 $("#input").on("keypress", doSomething);
 ```
 
-另一个使用 [React](https://reactjs.org/) 的示例：
+另一个使用[React](https://reactjs.org/)的示例：
 
 ```
 import React from "react";
@@ -3596,9 +3566,9 @@ function TodoItem({ todo, onRemoveClick }) {
 
 有两个函数用于在指定的时间间隔执行代码。
 
-`setTimeout`：在间隔时间后执行一次回调。可以通过 `clearTimeout()` 取消。
+`setTimeout`：在间隔时间后执行一次回调。可以通过`clearTimeout()`取消。
 
-`setInterval`：以指定的时间间隔重复执行回调。它会一直运行直到调用 `clearInterval` 函数。
+`setInterval`：以指定的时间间隔重复执行回调。它会一直运行直到调用`clearInterval`函数。
 
 ```
 setInterval(doSomething, 5000);
@@ -3606,7 +3576,7 @@ setInterval(doSomething, 5000);
 
 #### 嵌套回调
 
-回调对于简单任务（如事件处理）非常有用，但难以组合。考虑 `fetchUsers()`、`fetchPosts()`、`fetchComments()` 能够进行网络调用，并在操作完成时接受一个回调来执行。
+回调对于简单任务（如事件处理）非常有用，但难以组合。考虑`fetchUsers()`、`fetchPosts()`、`fetchComments()`能够进行网络调用，并在操作完成时接受一个回调来执行。
 
 ```
 fetchUsers(function(users) {
@@ -3634,10 +3604,7 @@ Promise 可以在知道结果之前传递给代码的其他部分。
 
 Promise 通常用于处理网络调用。在等待 Web API 响应时，应用程序不会被阻塞。更重要的是，网络调用可以并行运行。
 
-
-
-
-网络调用可以通过 `fetch()` 函数完成。`fetch()` 函数返回一个 promise。
+网络调用可以通过`fetch()`函数完成。`fetch()`函数返回一个 promise。
 
 ### 组合 promises
 
@@ -3673,19 +3640,19 @@ Promises 支持链式系统，允许我们通过一组函数传递数据。Promi
 
 注意前面示例中的执行流程：
 
-*   `fetchPosts` 在 `fetchUsers` 获取结果后执行。等待结果时，应用程序不会被阻塞。
+*   `fetchPosts`在`fetchUsers`获取结果后执行。等待结果时，应用程序不会被阻塞。
 
-*   `fetchComments` 在 `fetchPosts` 获取结果后执行。
+*   `fetchComments`在`fetchPosts`获取结果后执行。
 
-`fetchUsers` 的结果作为输入传递给 `fetchPosts`。`fetchUsers` 的结果作为输入传递给 `fetchComments`，以此类推。
+`fetchUsers`的结果作为输入传递给`fetchPosts`。`fetchUsers`的结果作为输入传递给`fetchComments`，以此类推。
 
 数据流为：`fetchUsers` → `fetchPosts` → `fetchComments` → `doSomething`
 
 如果任何步骤出现错误，链式控制会跳转到链中最近的拒绝处理程序。
 
-`Promise.all()` 返回一个新的 promise，当所有 promise 都解决时解决，或者当其中一个 promise 拒绝时拒绝。
+`Promise.all()`返回一个新的 promise，当所有 promise 都解决时解决，或者当其中一个 promise 拒绝时拒绝。
 
-`Promise.race()` 返回一个新的 promise，当其中一个 promise 解决或拒绝时解决或拒绝。
+`Promise.race()`返回一个新的 promise，当其中一个 promise 解决或拒绝时解决或拒绝。
 
 ```
 const allPromises = [ fetchUsers(),
@@ -3699,9 +3666,9 @@ Promise.all(allPromises)
 
 ### async/await
 
-`async/await` 允许我们编写看起来像同步代码的异步代码。`async/await` 是使用 promise 的语法糖。
+`async/await`允许我们编写看起来像同步代码的异步代码。`async/await`是使用 promise 的语法糖。
 
-该语法要求使用 `async` 关键字标记函数。
+该语法要求使用`async`关键字标记函数。
 
 ```
 //async 与函数声明
@@ -3724,9 +3691,9 @@ const doAsynchronousTask = async ()=>{ };
 })();
 ```
 
-`await` 运算符用于等待一个 promise。
+`await`运算符用于等待一个 promise。
 
-`await fetchUsers()` 之后的代码在 `fetchUsers` 获取结果后执行。`await fetchPosts()` 之后的代码在 `fetchPosts` 获取结果后执行。在某种程度上，可以想象成：
+`await fetchUsers()`之后的代码在`fetchUsers`获取结果后执行。`await fetchPosts()`之后的代码在`fetchPosts`获取结果后执行。在某种程度上，可以想象成：
 
 ```
 fetchUsers().then((users) => {
@@ -3740,7 +3707,7 @@ fetchUsers().then((users) => {
 });
 ```
 
-`try/catch` 用于处理错误。
+`try/catch`用于处理错误。
 
 ```
 function handleError(error) { 
@@ -3771,7 +3738,7 @@ fetchUsers()
  .catch(handleError);
 ```
 
-当我们想要并行执行所有网络调用时，可以将 `await` 与 `Promise.all()` 一起使用：
+当我们想要并行执行所有网络调用时，可以将`await`与`Promise.all()`一起使用：
 
 ```
 (async function startApplication(){
@@ -3827,7 +3794,7 @@ worker.onmessage = function(e) {
 };
 ```
 
-Worker 监听来自主线程的消息。当它收到 `"start"` 消息时，开始长时间运行的计算。计算完成后，结果通过 `postMessage()` 发送到主线程。
+Worker 监听来自主线程的消息。当它收到`"start"`消息时，开始长时间运行的计算。计算完成后，结果通过`postMessage()`发送到主线程。
 
 ```
 function computeValue() {
@@ -3853,17 +3820,19 @@ onmessage = function(e) {
 
 Promises 是表示未来结果的对象。Promises 为组合异步任务提供了更好的方式。
 
-`async/await` 允许我们编写看起来像同步代码的异步代码。
+`async/await`允许我们编写看起来像同步代码的异步代码。
+
+
 
 JavaScript 拥有一个更简单的异步编程模型，没有线程、竞态条件、锁或死锁。
 
-Web workers 可以运行长时间运行的任务。
+`Web workers` 可以运行长时间运行的任务。
 
 # 第 13 章：带原型的对象
 
 > 对象是属性的动态集合，带有一个指向对象原型的“隐藏”属性。属性有一个键和一个值。
 
-### 属性键
+## 属性键
 
 属性键是一个唯一的字符串。
 
@@ -3910,14 +3879,11 @@ obj[number1] === obj['1']; //true
 
 在前面的示例中，对象 `number1` 被用作属性键。然后它被转换为字符串，转换结果 `'1'` 被用作属性键。
 
-### 属性值
+## 属性值
 
 属性值可以是原始值、对象或函数。
 
-### 对象作为值
-
-
-
+## 对象作为值
 
 对象可以嵌套在其他对象内部。请看下一个示例：
 
@@ -3947,11 +3913,11 @@ app.bookGateway = {
 };
 ```
 
-### 函数作为值
+## 函数作为值
 
 当函数被用作属性的值时，它通常会成为一个方法。在方法内部，`this` 关键字用于引用当前对象。然而，`this` 的值会根据函数的调用方式而有所不同。
 
-### 原型
+## 原型
 
 对象有一个指向原型对象的“隐藏”链接 `__proto__`，并从中继承属性。
 
@@ -3966,15 +3932,15 @@ obj.__proto__ === Object.prototype; //true
 
 原型继承具有节省内存的优点。原型只创建一次，并被所有实例使用。
 
-#### 原型链
+### 原型链
 
 原型对象自身也有一个原型。当访问一个属性而对象本身不包含它时，引擎会沿着原型对象向下查找，直到找到请求的属性或到达 `null`。
 
-#### 只读
+### 只读
 
 原型链接仅用于读取值。当进行修改时，只会在当前对象上进行，而不会影响其原型，即使原型上存在同名的属性也是如此。
 
-#### 内置原型
+### 内置原型
 
 数字继承自 `Number.prototype`，而 `Number.prototype` 又继承自 `Object.prototype`。
 
@@ -3988,7 +3954,7 @@ no.__proto__.__proto__ === Object.prototype; //true
 
 所有对象、函数和原始值（除了 `null` 和 `undefined`）都从 `Object.prototype` 继承属性。例如，它们都有 `toString()` 方法。
 
-### 映射
+## 映射
 
 我们可以将对象视为一个映射。映射中的键是对象属性的名称。
 
@@ -4005,7 +3971,7 @@ italian["No"]  = "No";
 italian["Yes"]; //"Si"
 ```
 
-### 对象字面量
+## 对象字面量
 
 对象字面量提供了一种简单优雅的创建对象的方式。
 
@@ -4027,7 +3993,7 @@ timer.start = function() {
 timer.start(); //"don't start"
 ```
 
-### Object.create()
+## Object.create()
 
 `Object.create(prototypeObject)` 创建一个新对象，并将参数对象作为其原型。
 
@@ -4060,7 +4026,7 @@ timer.start = function() {
 
 `Object.create(timerPrototype)` 可用于构建更多具有相同原型的对象。
 
-### 函数构造函数
+## 函数构造函数
 
 最初，该语言提出了函数构造函数作为构建具有自定义原型的对象的语法糖。请看下一个示例：
 
@@ -4094,7 +4060,7 @@ Timer.prototype = Object.freeze({
 });
 ```
 
-#### new
+### new
 
 当执行 `new Timer()` 时，它会执行与 `newTimer()` 函数类似的步骤：
 
@@ -4110,7 +4076,7 @@ function newTimer(){
 
 创建一个新对象，其原型为 `Timer.prototype`。然后运行 `Timer` 函数，在新对象上设置字段。
 
-### 类
+## 类
 
 `class` 提供了更好的语法糖，用于构建具有自定义原型的对象。请看下一个示例：
 
@@ -4138,7 +4104,7 @@ timer.__proto__ === Timer.prototype;
 Object.freeze(Timer.prototype);
 ```
 
-### 无隐私
+## 无隐私
 
 基于原型的继承模式没有隐私。所有对象的属性都是公开的。
 
@@ -4153,7 +4119,7 @@ function logProperty(name){
 Object.keys(obj).forEach(logProperty);
 ```
 
-### 最终思考
+## 最终思考
 
 对象本质上是动态的，可以用作映射。所有对象的属性都是公开的。
 
@@ -4167,7 +4133,7 @@ Object.keys(obj).forEach(logProperty);
 
 闭包可以作为具有私有状态的函数来创建。不仅如此，我们还可以创建多个共享相同私有状态的闭包。这样，我们可以将对象构建为闭包的集合。闭包封装了状态。
 
-### 工厂函数
+## 工厂函数
 
 让我们看看如何做到这一点。我们从揭示模块模式开始，给该函数命名，并用它来构建新的封装对象。以下是一个 `Counter` 函数的示例，它可以创建计数器对象：
 
@@ -4202,13 +4168,9 @@ otherCounter.increment(); //1
 
 `Counter` 函数被称为工厂函数。以这种方式构建的对象具有一系列优点。
 
-### 封装
+## 封装
 
 封装意味着信息隐藏。
-
-
-
-
 
 使用闭包时，只有暴露的方法才是公开的，其他一切都被封装起来。
 
@@ -4219,7 +4181,7 @@ counter.state; //undefined
 
 对象的私有数据只能通过其公共方法进行修改。
 
-### 不可变的公共接口
+## 不可变的公共接口
 
 使用工厂函数创建的对象，其公共接口是不可变的。注意在返回的包含公共方法的对象上使用了 `Object.freeze()`。
 
@@ -4231,15 +4193,15 @@ counter.increment = function() {
 //Cannot assign to read only property 'increment' of object
 ```
 
-### 没有 `this`
+## 没有 `this`
 
 不存在 `this` 上下文变化的问题，因为使用闭包构建对象时，根本不会用到 `this`。
 
 让我们用闭包构建几个其他对象，并与用原型构建的对象进行比较。
 
-### 定时器
+## 定时器
 
-定时器对象用于在特定时间间隔执行异步操作。与 `setInterval` 不同，它会等待上一个操作完成后再进行新的调用。它实现了递归的 setTimeout 模式。下面分别用原型和闭包创建定时器对象。
+定时器对象用于在特定时间间隔执行异步操作。与 `setInterval` 不同，它会等待上一个操作完成后再进行新的调用。它实现了递归的 `setTimeout` 模式。下面分别用原型和闭包创建定时器对象。
 
 使用原型的定时器
 
@@ -4315,7 +4277,7 @@ const timer = Timer(getTodos, 2000);
 timer.start();
 ```
 
-#### 封装
+### 封装
 
 使用 `class` 时，对象的所有成员、字段和方法都是公开的。
 
@@ -4323,7 +4285,7 @@ timer.start();
 
 `timerId` 和 `executeAndStartTimer()` 是私有的。
 
-#### 不可变的公共接口
+### 不可变的公共接口
 
 使用 `class` 创建的对象，其公共接口可以被修改。
 
@@ -4337,7 +4299,7 @@ timer.start(); //"don't start"
 
 使用闭包和 `Object.freeze()` 创建的对象，其公共接口是不可变的。
 
-#### 没有 `this`
+### 没有 `this`
 
 当方法作为回调使用时，`this` 可能会意外丢失上下文。在嵌套函数中使用时也可能丢失上下文。
 
@@ -4358,13 +4320,15 @@ executeAndStartTimer(){
 $("#btnStart").click(timer.start);
 ```
 
-使用闭包时不存在这些问题，因为根本没有使用 `this`。
 
-没有 `this` 的 JavaScript 看起来更像一种更好的函数式编程语言。
+
+使用闭包时不存在这些问题，因为根本没有使用`this`。
+
+没有`this`的JavaScript看起来更像一种更好的函数式编程语言。
 
 ### 栈
 
-栈是一种数据结构，包含两个主要操作：`push()` 用于向集合中添加元素，`pop()` 用于移除最近添加的元素。它按照 LIFO（后进先出）原则添加和移除元素。
+栈是一种数据结构，包含两个主要操作：`push()`用于向集合中添加元素，`pop()`用于移除最近添加的元素。它按照LIFO（后进先出）原则添加和移除元素。
 
 请看下面的例子：
 
@@ -4398,7 +4362,7 @@ function Stack(){
 }
 ```
 
-栈对象有两个公共方法 `push()` 和 `pop()`。内部状态只能通过这些方法改变。
+栈对象有两个公共方法`push()`和`pop()`。内部状态只能通过这些方法改变。
 
 我们不能直接修改内部状态：
 
@@ -4410,7 +4374,7 @@ stack.list = null;
 
 ### 队列
 
-队列是一种数据结构，包含两个主要操作：`enqueue()` 用于向集合中添加元素，`dequeue()` 用于从集合中移除第一个元素。它按照 FIFO（先进先出）原则添加和移除元素。
+队列是一种数据结构，包含两个主要操作：`enqueue()`用于向集合中添加元素，`dequeue()`用于从集合中移除第一个元素。它按照FIFO（先进先出）原则添加和移除元素。
 
 下面是一个例子：
 
@@ -4466,7 +4430,7 @@ function doSomethingElse(value) { }
 function addItem(value) { }
 ```
 
-首先，我们为 `update` 事件订阅了两个函数，为 `add` 事件订阅了一个函数。当事件发射器发布 `update` 事件时，`doSomething()` 和 `doSomethingElse()` 将被调用。
+首先，我们为`update`事件订阅了两个函数，为`add`事件订阅了一个函数。当事件发射器发布`update`事件时，`doSomething()`和`doSomethingElse()`将被调用。
 
 下面是一个简单事件发射器的实现：
 
@@ -4501,15 +4465,15 @@ function EventEmitter(){
 }
 ```
 
-只有 `publish()` 和 `subscribe()` 方法是公开的。其他一切都是私有的。没有使用 `this`。
+只有`publish()`和`subscribe()`方法是公开的。其他一切都是私有的。没有使用`this`。
 
 ### 内存
 
 类在内存节省方面更优，因为它们是基于原型系统实现的。所有方法都将在原型对象中创建一次，并由所有实例共享。
 
-当创建数千个相同对象时，使用闭包的内存开销是明显的。以下是在 Chrome 中测量的内存开销：
+当创建数千个相同对象时，使用闭包的内存开销是明显的。以下是在Chrome中测量的内存开销：
 
-| 实例数 | 10 个方法 | 20 个方法 |
+| 实例数 | 10个方法 | 20个方法 |
 | --- | --- | --- |
 | 10 | 0 | 0 |
 | 100 | ~0.1 Mb | ~0.1 Mb |
@@ -4518,7 +4482,7 @@ function EventEmitter(){
 
 ### 组合优于继承
 
-工厂函数提倡组合优于继承。请看下面的例子，其中 `SpecialService` 复用了 `Service` 的成员：
+工厂函数提倡组合优于继承。请看下面的例子，其中`SpecialService`复用了`Service`的成员：
 
 ```
 function Service() {
@@ -4557,13 +4521,9 @@ specialService.doSomethingElse();
 
 闭包为面向对象编程开辟了一条新路，无需类或原型。
 
+使用闭包构建的对象封装数据，支持组合，并且没有`this`上下文变化的问题。
 
-
-
-
-使用闭包构建的对象封装数据，支持组合，并且没有 `this` 上下文变化的问题。
-
-# 第 15 章：方法装饰器
+# 第15章：方法装饰器
 
 > 装饰器就像关键字或注解，记录方法的行为，但将这些次要关注点与方法的核心逻辑清晰分离。——雷金纳德·布雷思韦特，《JavaScript Allongé》作者
 
@@ -4603,9 +4563,9 @@ todoStore.add({ title : "learn"});
 //"add() duration : 0"
 ```
 
-`add()` 方法的主要职责是将新的 `todo` 添加到内部状态，同时还有两个次要职责：验证用户身份和记录执行时长。这些次要关注点可能会在其他方法中重复出现。
+`add()`方法的主要职责是将新的`todo`添加到内部状态，同时还有两个次要职责：验证用户身份和记录执行时长。这些次要关注点可能会在其他方法中重复出现。
 
-假设我们将这两个次要职责分解为两个意图明确的函数装饰器：`authorize()` 和 `logDuration()`。然后我们将它们组合起来创建原始函数。
+假设我们将这两个次要职责分解为两个意图明确的函数装饰器：`authorize()`和`logDuration()`。然后我们将它们组合起来创建原始函数。
 
 ```
 import { compose } from "./tools";
@@ -4624,7 +4584,7 @@ function TodoStore(){
 }
 ```
 
-现在 `add()` 方法只负责将 `todo` 添加到列表中。其他职责通过装饰方法来实现。
+现在`add()`方法只负责将`todo`添加到列表中。其他职责通过装饰方法来实现。
 
 ### 记录时长
 
@@ -4644,7 +4604,7 @@ function logDuration(fn){
 
 ### 授权
 
-`authorize()` 装饰器确保用户有权执行该方法。这个装饰器更复杂，因为它依赖于另一个对象 `currentUser`。在这种情况下，我们可以使用函数 `createAuthorizeDecorator()` 来构建装饰器。只有当用户通过身份验证时，装饰器才会执行原始方法。
+`authorize()`装饰器确保用户有权执行该方法。这个装饰器更复杂，因为它依赖于另一个对象`currentUser`。在这种情况下，我们可以使用函数`createAuthorizeDecorator()`来构建装饰器。只有当用户通过身份验证时，装饰器才会执行原始方法。
 
 ```
 function createAuthorizeDecorator(currentUser) {
@@ -4688,7 +4648,7 @@ const addWithComposedDecorator = composedDecorator(add);
 addWithComposedDecorator();
 ```
 
-下面使用 `compose()` 函数将装饰器应用于 `add()` 方法：
+下面使用`compose()`函数将装饰器应用于`add()`方法：
 
 ```
 import { compose } from "./tools";
@@ -4717,7 +4677,7 @@ todoStore.add();
 
 ### 装饰对象的所有方法
 
-在某些情况下，我们可能需要将装饰器应用于对象的所有公共方法。我们可以创建 `decorateMethods()` 函数来将装饰器应用于对象的所有公共方法。
+在某些情况下，我们可能需要将装饰器应用于对象的所有公共方法。我们可以创建`decorateMethods()`函数来将装饰器应用于对象的所有公共方法。
 
 ```
 function decorateMethods(obj, ...decorators) {
@@ -4732,7 +4692,7 @@ function decorateMethods(obj, ...decorators) {
 }
 ```
 
-我们可能希望直接将装饰器应用于创建对象的函数。`decorate()` 函数可以做到这一点：
+我们可能希望直接将装饰器应用于创建对象的函数。`decorate()`函数可以做到这一点：
 
 ```
 function decorate(factory, ...decorators) {
@@ -4744,7 +4704,7 @@ function decorate(factory, ...decorators) {
 }
 ```
 
-在下一个示例中，由 `TodoStore` 创建的对象的所有公共方法都使用 `logDuration()` 和 `authorize()` 进行了装饰。
+在下一个示例中，由`TodoStore`创建的对象的所有公共方法都使用`logDuration()`和`authorize()`进行了装饰。
 
 ```
 import { decorate } from "./tools";
@@ -4789,11 +4749,13 @@ export default function TodoStore() {
 }
 ```
 
-在这个例子中，`add()` 是一个纯函数，而 `addAndMutate()` 是不纯的。为了修改 `todos` 状态，我们需要使用不纯函数。如果我们把不纯代码封装在像下面 `setter` 这样的装饰器中呢？
+在这个例子中，`add()`是一个纯函数，而`addAndMutate()`是不纯的。为了修改`todos`状态，我们需要使用不纯函数。如果我们把不纯代码封装在像下面`setter`这样的装饰器中呢？
 
-```
-import { decorateMethods } from "./tools";
 
+
+`import { decorateMethods } from "./tools";`
+
+```javascript
 function Store(storeConfig) {
   return function() {
     let state = storeConfig.state;
@@ -4826,7 +4788,7 @@ export default Store;
 
 借助像 `Store.js` 这样的库，我们可以仅使用纯函数来编写 `TodoStore`：
 
-```
+```javascript
 import Store from "./Store";
 
 function add(todos, todo) {
@@ -4847,10 +4809,6 @@ export default Store({
 
 装饰器提高了可读性。代码更加清晰，因为它专注于主要职责，而不会被次要逻辑所模糊。
 
-
-
-
-
 # 第 16 章：等待新的编程范式
 
 > 知识建立在知识之上。——约翰·卡马克
@@ -4865,7 +4823,7 @@ JavaScript 让函数式编程流行起来，并提供了一种用闭包构建封
 
 让我们创建一个 `TodoStore` 类，它管理一个 `todos` 列表。`TodoStore` 类有一个私有列表和两个公有方法：`push()` 和 `getBy()`。`Todo` 类定义了 `todo` 传输对象。这两个类随后在 `main()` 函数中使用。
 
-```
+```java
 import java.util.List;
 import java.util.ArrayList;
 import java.util.stream.Collectors;
@@ -4932,7 +4890,7 @@ public class StartApplication
 
 JavaScript 中的 `class` 是使用自定义原型创建对象的语法糖。让我们用原型重新实现之前的 `TodoStore`：
 
-```
+```javascript
 class TodoStore{
   constructor(){
     this.list = [];
@@ -4989,7 +4947,7 @@ JavaScript 重新发现并将函数式编程范式带入了主流。
 
 JavaScript 将闭包带入了主流。闭包可以封装状态。更进一步，我们可以创建多个共享相同私有状态的闭包。这样，我们就可以创建灵活、封装的对象。考虑 `TodoStore` 的下一个实现：
 
-```
+```javascript
 function TodoStore(){
   const list = [];
 
@@ -5054,10 +5012,6 @@ JavaScript 带来了另一种创建对象的方式，即作为闭包的集合。
 
 # 接下来是什么？
 
-
-
-
-
 ![](img/image00082.jpeg) 在《[JavaScript 函数式编程](https://www.amazon.com/dp/B08CZZ4FQQ)》一书中，你将了解如何通过禁用 `this` 关键字并使用 linter 强制不可变对象，将 JavaScript 用作函数式编程语言。你将学习如何以函数式方式使用 `if` 和 `switch` 等语句，以及如何创建和使用函子与单子。
 
 ![](img/image00083.jpeg) 如果你想学习如何使用函数式组件和函数式编程原则构建现代 React 应用，可以考虑阅读《[函数式 React（第 2 版）](https://www.amazon.com/dp/B088FZQ1XN)》。
@@ -5073,4 +5027,3 @@ JavaScript 带来了另一种创建对象的方式，即作为闭包的集合。
 ![](img/image00087.jpeg) Composition API 提供了一种管理响应式的新方式。它由一组响应式 API 函数以及注册生命周期钩子的功能组成。通过从零开始构建一个响应式系统来更好地理解它，然后实现一个主从详情功能。了解如何使用 Composition API 管理状态，然后利用它实现一个类似于 Vuex 的中央存储。
 
 祝学习愉快！
-

@@ -1,47 +1,39 @@
+
 # HTML5, CSS3 和 JavaScript：通过实践练习构建现代响应式、动态且用户友好型全设备网站的快速入门指南
 
+## 第九章
 
+### 高效的 CSS 动画
 
+使用高效的 CSS 动画：在使用 CSS 动画时，避免使用过多的关键帧或同时为过多属性添加动画效果。这可能会拖慢页面加载速度，并使动画不够流畅。
 
-
-
-
-
-
-
-# 第九章
-
-## 高效的 CSS 动画
-
-*   使用高效的 CSS 动画：在使用 CSS 动画时，避免使用过多的关键帧或同时为过多属性添加动画效果。这可能会拖慢页面加载速度，并使动画不够流畅。
-
-## 调试 CSS
+### 调试 CSS
 
 调试 CSS 是 Web 开发中的重要环节。以下是一些调试 CSS 的技巧：
 
-*   使用浏览器内置的开发者工具：大多数现代 Web 浏览器都内置了开发者工具，可用于检查和调试 CSS。你可以使用“元素”标签查看网页的 HTML 和 CSS，使用“控制台”标签查看任何错误或警告。
-*   检查拼写错误和语法错误：CSS 对拼写错误和语法错误非常敏感。请检查 CSS 代码中是否有拼写错误、缺少分号或其他语法问题。
-*   使用有意义的类名和 ID 名：使用描述性强且有意义的类名和 ID 名。这将有助于理解 CSS 代码并调试问题。
-*   使用注释组织代码：使用注释来组织 CSS 代码，使其更易于理解。这也有助于识别代码中的问题或错误。
-*   使用 CSS 预处理器：像 Sass 或 Less 这样的 CSS 预处理器可以帮助你编写更高效、更有组织的 CSS 代码。它们还提供变量和混入等功能，有助于避免重复代码。
-*   使用 CSS 代码检查工具：CSS 代码检查工具可以帮助你识别和修复常见的 CSS 错误，并提高代码的整体质量。
-*   在不同浏览器中测试代码：CSS 在不同浏览器中的表现可能不同，因此在多个浏览器中测试代码以确保其按预期工作非常重要。
+- 使用浏览器内置的开发者工具：大多数现代 Web 浏览器都内置了开发者工具，可用于检查和调试 CSS。你可以使用“元素”标签查看网页的 HTML 和 CSS，使用“控制台”标签查看任何错误或警告。
+- 检查拼写错误和语法错误：CSS 对拼写错误和语法错误非常敏感。请检查 CSS 代码中是否有拼写错误、缺少分号或其他语法问题。
+- 使用有意义的类名和 ID 名：使用描述性强且有意义的类名和 ID 名。这将有助于理解 CSS 代码并调试问题。
+- 使用注释组织代码：使用注释来组织 CSS 代码，使其更易于理解。这也有助于识别代码中的问题或错误。
+- 使用 CSS 预处理器：像 Sass 或 Less 这样的 CSS 预处理器可以帮助你编写更高效、更有组织的 CSS 代码。它们还提供变量和混入等功能，有助于避免重复代码。
+- 使用 CSS 代码检查工具：CSS 代码检查工具可以帮助你识别和修复常见的 CSS 错误，并提高代码的整体质量。
+- 在不同浏览器中测试代码：CSS 在不同浏览器中的表现可能不同，因此在多个浏览器中测试代码以确保其按预期工作非常重要。
 
-## CSS 的未来
+### CSS 的未来
 
 CSS 的未来令人期待，因为新特性和功能正在不断被开发和实现。以下是塑造 CSS 未来的一些趋势和发展方向：
 
-*   CSS 网格布局：CSS 网格布局是一种强大的布局系统，可以快速轻松地创建复杂布局。它已被广泛采用，并正在成为布局设计的标准。
-*   CSS 自定义属性：CSS 自定义属性（即变量）允许开发者定义可复用的值，并将其应用于 CSS 的各个部分，从而更易于维护和更新样式。
-*   CSS 动画与过渡：CSS 动画和过渡正变得越来越复杂，新增的属性和特性使得创建更复杂、更具交互性的动画成为可能。
-*   响应式网页设计：响应式设计已成为网页设计的标准，但随着更多设备和屏幕尺寸的出现，对响应式设计的需求只会持续增长。
-*   无障碍性：无障碍性变得越来越重要，而 CSS 在使网站对所有用户可访问方面发挥着关键作用。新的 CSS 特性和技术正在开发中，以便更轻松地创建无障碍设计。
+- CSS 网格布局：CSS 网格布局是一种强大的布局系统，可以快速轻松地创建复杂布局。它已被广泛采用，并正在成为布局设计的标准。
+- CSS 自定义属性：CSS 自定义属性（即变量）允许开发者定义可复用的值，并将其应用于 CSS 的各个部分，从而更易于维护和更新样式。
+- CSS 动画与过渡：CSS 动画和过渡正变得越来越复杂，新增的属性和特性使得创建更复杂、更具交互性的动画成为可能。
+- 响应式网页设计：响应式设计已成为网页设计的标准，但随着更多设备和屏幕尺寸的出现，对响应式设计的需求只会持续增长。
+- 无障碍性：无障碍性变得越来越重要，而 CSS 在使网站对所有用户可访问方面发挥着关键作用。新的 CSS 特性和技术正在开发中，以便更轻松地创建无障碍设计。
 
-## HTML 与 CSS 实战练习
+### HTML 与 CSS 实战练习
 
 本章包含 HTML 与 CSS 实战练习，旨在提升初学者和高级 Web 开发者使用 HTML 和 CSS 构建专业网站的能力。
 
-### 练习 1：使用 HTML 和 CSS 设计一个简单的登录页面
+#### 练习 1：使用 HTML 和 CSS 设计一个简单的登录页面
 
 以下是一个简单登录页面的 HTML 和 CSS 代码示例。
 
@@ -130,7 +122,7 @@ background-color: #3e8e41;
 
 ![](img/image_rsrc638.jpg)
 
-### 练习 2：使用 HTML 和 CSS 构建一个简单的产品落地页
+#### 练习 2：使用 HTML 和 CSS 构建一个简单的产品落地页
 
 以下是一个简单产品落地页的 HTML 和 CSS 代码示例：
 
@@ -269,7 +261,7 @@ text-align: center;
 
 请注意，你可以修改上述练习以适应你的项目。
 
-### 练习 3：使用 HTML 和 CSS 创建一个响应式定价表
+#### 练习 3：使用 HTML 和 CSS 创建一个响应式定价表
 
 以下是一个使用 HTML 和 CSS 创建的响应式定价表示例：
 
@@ -325,10 +317,7 @@ HTML 代码：
 </html>
 ```
 
-
-
-
-# 第十章：响应式网页设计
+## 第十章：响应式网页设计
 
 响应式网页设计是一种专注于创建针对各种设备和屏幕尺寸进行优化的网站的网页设计方法。随着移动设备的日益普及，响应式网页设计已成为确保网站在所有设备上都能易于访问且用户友好的关键。
 
@@ -336,7 +325,7 @@ HTML 代码：
 
 在本章中，我们将探讨响应式网页设计的原则，包括设计响应式网站的最佳实践以及用于创建响应式网站的工具和技术。我们还将介绍与响应式网页设计相关的一些常见挑战和解决方案，例如优化图像和管理复杂布局。
 
-## 响应式设计简介
+### 响应式设计简介
 
 响应式设计是一种确保网站和应用程序在多种设备和屏幕尺寸上外观良好且运行良好的网页设计方法。随着使用移动设备上网的人数日益增多，响应式设计已成为现代网页开发的关键要素。
 
@@ -344,43 +333,43 @@ HTML 代码：
 
 响应式设计确保所有用户无论使用何种设备都能访问网站和应用程序，并帮助确保他们能够以最高效、最用户友好的方式导航和与内容互动。
 
-## 设计响应式网站的最佳实践
+### 设计响应式网站的最佳实践
 
 以下是设计响应式网站的一些最佳实践：
 
-*   移动优先方法：首先针对最小屏幕尺寸进行设计，然后逐步向更大屏幕尺寸过渡。这确保网站针对小屏幕进行优化并能更快加载。
-*   使用响应式框架：像 Bootstrap 这样的响应式框架提供了网格系统，有助于快速创建响应式布局。这还能确保网站与不同屏幕尺寸兼容。
-*   优化图像：大图像会减慢网站的加载时间，因此为网络使用优化图像非常重要。您可以使用像 TinyPNG 或 JPEGmini 这样的图像压缩工具来在不影响质量的情况下减小图像大小。
-*   使用媒体查询：媒体查询允许您为不同的屏幕尺寸应用不同的样式。这有助于在不同设备上创建一致的用户体验。
-*   在多种设备上进行测试：在不同设备上测试网站以确保其在所有设备上外观和功能正常非常重要。您可以使用像 BrowserStack 或 Google Chrome 的设备模式这样的工具来在不同设备上测试网站。
-*   保持简洁：避免使用过多复杂的设计元素或可能减慢网站加载时间的动画。坚持简单干净的设计原则，在小屏幕上易于阅读和导航。
-*   使用可缩放字体：使用在小屏幕上可缩放且易于阅读的字体。避免使用过小或在小屏幕上难以阅读的字体。
+- 移动优先方法：首先针对最小屏幕尺寸进行设计，然后逐步向更大屏幕尺寸过渡。这确保网站针对小屏幕进行优化并能更快加载。
+- 使用响应式框架：像 Bootstrap 这样的响应式框架提供了网格系统，有助于快速创建响应式布局。这还能确保网站与不同屏幕尺寸兼容。
+- 优化图像：大图像会减慢网站的加载时间，因此为网络使用优化图像非常重要。您可以使用像 TinyPNG 或 JPEGmini 这样的图像压缩工具来在不影响质量的情况下减小图像大小。
+- 使用媒体查询：媒体查询允许您为不同的屏幕尺寸应用不同的样式。这有助于在不同设备上创建一致的用户体验。
+- 在多种设备上进行测试：在不同设备上测试网站以确保其在所有设备上外观和功能正常非常重要。您可以使用像 BrowserStack 或 Google Chrome 的设备模式这样的工具来在不同设备上测试网站。
+- 保持简洁：避免使用过多复杂的设计元素或可能减慢网站加载时间的动画。坚持简单干净的设计原则，在小屏幕上易于阅读和导航。
+- 使用可缩放字体：使用在小屏幕上可缩放且易于阅读的字体。避免使用过小或在小屏幕上难以阅读的字体。
 
-## 用于创建响应式网站的工具和技术
+### 用于创建响应式网站的工具和技术
 
 创建响应式网站有多种工具和技术。以下是一些最流行的：
 
-*   HTML 和 CSS：这些是任何网站的基本构建块，用于创建网站的结构和样式。
-*   CSS 框架：像 Bootstrap 和 Foundation 这样的框架提供了预构建的 CSS 样式和组件，使创建响应式网站更加容易。
-*   CSS 预处理器：像 Sass 和 Less 这样的预处理器通过提供变量、嵌套和混合等特性，使开发者能够更高效地编写 CSS。
-*   JavaScript：JavaScript 可用于为网站添加交互性和动态行为。它常用于响应式导航菜单和滑块等功能。
-*   响应式设计工具：有许多工具可用于辅助响应式设计，例如媒体查询生成器、视口测试工具和响应式设计框架。
-*   内容管理系统（CMS）：像 WordPress、Drupal 和 Joomla 这样的 CMS 平台内置了响应式设计功能和模板，可用于创建响应式网站。
-*   移动应用开发平台：像 React Native 和 Flutter 这样的平台允许开发者创建针对不同设备和屏幕尺寸优化的移动应用。
+- HTML 和 CSS：这些是任何网站的基本构建块，用于创建网站的结构和样式。
+- CSS 框架：像 Bootstrap 和 Foundation 这样的框架提供了预构建的 CSS 样式和组件，使创建响应式网站更加容易。
+- CSS 预处理器：像 Sass 和 Less 这样的预处理器通过提供变量、嵌套和混合等特性，使开发者能够更高效地编写 CSS。
+- JavaScript：JavaScript 可用于为网站添加交互性和动态行为。它常用于响应式导航菜单和滑块等功能。
+- 响应式设计工具：有许多工具可用于辅助响应式设计，例如媒体查询生成器、视口测试工具和响应式设计框架。
+- 内容管理系统（CMS）：像 WordPress、Drupal 和 Joomla 这样的 CMS 平台内置了响应式设计功能和模板，可用于创建响应式网站。
+- 移动应用开发平台：像 React Native 和 Flutter 这样的平台允许开发者创建针对不同设备和屏幕尺寸优化的移动应用。
 
-## 理解媒体查询
+### 理解媒体查询
 
 媒体查询是一种 CSS 技术，用于根据查看网页的设备或屏幕尺寸来设置网页样式。通过媒体查询，您可以为不同的设备或屏幕尺寸（如台式机、笔记本电脑、平板电脑和移动设备）定义不同的样式。
 
-媒体查询通过检查视口（即浏览器窗口中显示网页的区域）的宽度和高度来工作。您可以使用 CSS 中的@media 规则为特定的视口尺寸或尺寸范围设置特定的样式。
+媒体查询通过检查视口（即浏览器窗口中显示网页的区域）的宽度和高度来工作。您可以使用 CSS 中的`@media`规则为特定的视口尺寸或尺寸范围设置特定的样式。
 
 例如，您可以为最大宽度为 768 像素的屏幕定义媒体查询，并为该尺寸范围设置不同的字体大小和布局。这使您能够在不同设备上创建更友好、更一致的用户体验。
 
 媒体查询还可以根据设备的其他特性（如方向（横向或纵向）、分辨率或颜色深度）应用不同的样式。
 
-### 应用媒体查询
+#### 应用媒体查询
 
-要在 CSS 中应用媒体查询，首先需要指定要应用样式的媒体类型。最常见的媒体类型是屏幕，用于有屏幕的设备，如台式电脑、笔记本电脑、平板电脑和智能手机。其他媒体类型包括打印（用于打印）和语音（用于屏幕阅读器）。要为特定的媒体类型应用样式，可以使用@media 规则，后跟括号中的媒体类型，如下所示：
+要在 CSS 中应用媒体查询，首先需要指定要应用样式的媒体类型。最常见的媒体类型是屏幕，用于有屏幕的设备，如台式电脑、笔记本电脑、平板电脑和智能手机。其他媒体类型包括打印（用于打印）和语音（用于屏幕阅读器）。要为特定的媒体类型应用样式，可以使用`@media`规则，后跟括号中的媒体类型，如下所示：
 
 ![](img/image_rsrc63B.jpg)
 
@@ -388,9 +377,9 @@ HTML 代码：
 
 ![](img/image_rsrc63C.jpg)
 
-## 代码示例
+### 代码示例
 
-### HTML 示例
+#### HTML 示例
 
 ```html
 <li>Free Support</li>
@@ -402,7 +391,9 @@ HTML 代码：
 </html>
 ```
 
-### CSS 代码
+#### CSS 代码
+
+
 
 ```css
 .pricing-table {
@@ -451,14 +442,11 @@ li {
 
 ![](img/image_rsrc63A.jpg)
 
-
-
-
 # 响应式网页设计
 
 ## 媒体查询
 
-当屏幕宽度为 768 像素或更小时，将应用媒体查询块内的样式。你也可以使用 `min-width` 属性来指定样式生效的最小屏幕宽度。
+当屏幕宽度为 768 像素或更小时，将应用媒体查询块内的样式。你也可以使用`min-width`属性来指定样式生效的最小屏幕宽度。
 
 通过使用媒体查询，你可以创建适应不同屏幕尺寸和设备的响应式设计，使你的网站更加用户友好和易于访问。
 
@@ -476,7 +464,7 @@ li {
 
 ![](img/image_rsrc63D.jpg)
 
-*   使用响应式单位，如 `em` 和 `%`，而不是固定单位如 `px`，以确保元素在不同屏幕尺寸下能正确缩放。
+*   使用响应式单位，如`em`和`%`，而不是固定单位如`px`，以确保元素在不同屏幕尺寸下能正确缩放。
 
 *   使用响应式框架，如 Bootstrap 或 Foundation，它们提供了预构建的 CSS 类和组件，用于创建响应式布局。
 
@@ -525,7 +513,7 @@ HTML 代码：
 </section>
 </main>
 <footer>
-p> Copyrights @ 2023 My Website. All Rights Reserved.</p>
+<p> Copyrights @ 2023 My Website. All Rights Reserved.</p>
 </footer>
 </body>
 </html>
@@ -655,9 +643,6 @@ section p {
 
 ## 优化图片和管理复杂布局
 
-
-
-
 # 第十一章
 
 ## 响应式网站实战练习
@@ -677,6 +662,12 @@ section p {
 以下是一个如何创建餐厅网站的示例。
 
 HTML 代码：
+
+
+
+## 练习 1：创建一个响应式餐厅首页
+
+### HTML 代码
 
 ```html
 <!DOCTYPE html>
@@ -710,7 +701,7 @@ HTML 代码：
             <ul>
                 <li>
                     <img src="img1.jpeg" alt="Pizza">
-                    <h3>Pizza</h3><br>
+                    <h3>Pizza</h3>
                     <p>Delicious pizza with fresh toppings</p>
                     <span>$10</span>
                 </li>
@@ -764,7 +755,7 @@ HTML 代码：
 </html>
 ```
 
-CSS 代码：
+### CSS 代码
 
 ```css
 /* Global styles */
@@ -923,17 +914,17 @@ footer {
 }
 ```
 
-请参阅下面的网络结果。
+### 效果展示
 
 ![](img/image_rsrc63F.jpg)![](img/image_rsrc63G.jpg)![](img/image_rsrc63H.jpg)
 
-### 练习 2：创建一个响应式摄影师作品集
+## 练习 2：创建一个响应式摄影师作品集
 
 为摄影师、艺术家或设计师创建一个响应式在线作品集。以视觉上吸引人的方式展示他们的作品，使用响应式设计技术确保网站在所有设备上看起来都很棒，使用 HTML 和 CSS。
 
 以下是一个示例，展示如何使用 HTML 和 CSS 创建一个响应式摄影师在线作品集：
 
-HTML 代码：
+### HTML 代码
 
 ```html
 <!DOCTYPE html>
@@ -1006,10 +997,7 @@ HTML 代码：
 </html>
 ```
 
-
-
-
-# 示例网站代码
+## 示例网站代码
 
 ### HTML 代码
 
@@ -1035,244 +1023,169 @@ HTML 代码：
 
 ### CSS 代码
 
+
+
 ```css
 /* 全局样式 */
 
 * {
-
-box-sizing: border-box;
-
-margin: 0;
-
-padding: 0;
-
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-
-font-family: Arial, sans-serif;
-
-font-size: 16px;
-
-line-height: 1.5;
-
-color: #130101;
-
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #130101;
 }
 
 a {
-
-text-decoration: none;
-
-color: #4b0b0b;
-
+  text-decoration: none;
+  color: #4b0b0b;
 }
 
 ul {
-
-list-style: none;
-
+  list-style: none;
 }
 
 img {
-
-max-width: 100%;
-
-height: auto;
+  max-width: 100%;
+  height: auto;
 }
 
 /* 头部样式 */
 
 header {
-
-background-color: #7c7a7a;
-
-border-bottom: 1px solid #696262;
+  background-color: #7c7a7a;
+  border-bottom: 1px solid #696262;
 }
 
 nav ul {
-
-display: flex;
-
-justify-content: space-between;
-
-align-items: center;
-
-margin: 0;
-
-padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  padding: 1rem;
 }
 
 nav li {
-
-margin: 0 1rem;
+  margin: 0 1rem;
 }
 
 nav a {
-
-font-weight: bold;
-
-letter-spacing: 1px;
-
-text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
 }
 
 /* Hero 区域样式 */
 
 .hero {
-
-background-image: url(https://via.placeholder.com/1200x600);
-
-background-size: cover;
-
-background-position: center;
-
-height: 60vh;
-
-display: flex;
-
-flex-direction: column;
-
-justify-content: center;
-
-align-items: center;
-
-text-align: center;
+  background-image: url(https://via.placeholder.com/1200x600);
+  background-size: cover;
+  background-position: center;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .hero h1 {
-
-font-size: 3rem;
-
-margin-bottom: 1rem;
-
-color: #791818;
-
-text-shadow: 2px 2px #333;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: #791818;
+  text-shadow: 2px 2px #333;
 }
 
 .hero p {
-
-font-size: 1.5rem;
-
-color: #442222;
-
-text-shadow: 2px 2px #418d58;
+  font-size: 1.5rem;
+  color: #442222;
+  text-shadow: 2px 2px #418d58;
 }
 
 /* 作品集区域样式 */
 
 .portfolio {
-
-padding: 2rem;
+  padding: 2rem;
 }
 
 .portfolio h2 {
-
-font-size: 2rem;
-
-margin-bottom: 1rem;
+  font-size: 2rem;
+  margin-bottom: 1rem;
 }
 
 .portfolio li {
-
-margin-bottom: 2rem;
+  margin-bottom: 2rem;
 }
 
 .portfolio h3 {
-
-font-size: 1.5rem;
-
-margin-top: 1rem;
+  font-size: 1.5rem;
+  margin-top: 1rem;
 }
 
 /* 关于我们区域样式 */
 
 .about {
-
-padding: 2rem;
+  padding: 2rem;
 }
 
 .about h2 {
-
-font-size: 2rem;
-
-margin-bottom: 1rem;
+  font-size: 2rem;
+  margin-bottom: 1rem;
 }
 
 /* 联系我们区域样式 */
 
 .contact {
-
-padding: 2rem;
+  padding: 2rem;
 }
 
 .contact h2 {
-
-font-size: 2rem;
-
-margin-bottom: 1rem;
+  font-size: 2rem;
+  margin-bottom: 1rem;
 }
 
 label {
-
-display: block;
-
-margin-bottom: 0.5rem;
+  display: block;
+  margin-bottom: 0.5rem;
 }
 
 input,
-
 textarea {
-
-display: block;
-
-width: 100%;
-
-padding: 0.5rem;
-
-margin-bottom: 1rem;
-
-border: 1px solid #ccc;
-
-border-radius: 4px;
+  display: block;
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
 }
 
 button[type="submit"] {
-
-background-color: #333;
-
-color: #fff;
-
-border: none;
-
-padding: 0.5rem 1rem;
-
-border-radius: 4px;
-
-cursor: pointer;
-
-font-size: 1rem;
-
-text-transform: uppercase;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  text-transform: uppercase;
 }
 
 button[type="submit"]:hover {
-
-background-color: #444;
+  background-color: #444;
 }
 
 /* 页脚样式 */
 
 footer {
-
-background-color: #333;
-
-color: #fff;
-
-text-align: center;
-
-padding: 1rem;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
 }
 ```
 
@@ -1290,81 +1203,43 @@ padding: 1rem;
 
 ```html
 <!DOCTYPE html>
-
 <html lang="en">
-
 <head>
-
 <meta charset="UTF-8">
-
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>响应式电子商务网站</title>
-
 <link rel="stylesheet" href="style.css">
-
 </head>
-
 <body>
-
 <header>
-
 <nav>
-
 <ul>
-
 <li><a href="#">首页</a></li>
-
 <li><a href="#">商店</a></li>
-
 <li><a href="#">联系我们</a></li>
-
 <li><a href="#">购物车</a></li>
-
 </ul>
-
 </nav>
-
 </header>
-
 <main>
-
 <section class="hero">
-
 <h1>欢迎来到我们的电子商务网站</h1>
-
 <p>立即购买最新产品</p>
-
 </section>
-
 <section class="featured">
-
 <h2>特色产品</h2>
-
 <ul>
-
 <li><a href="#"><img src="img1.jpg" alt="产品 1"><h3>产品 1</h3><p>$20.00</p></a></li>
-
 <li><a href="#"><img src="img2.jpg" alt="产品 2"><h3>产品 2</h3><p>$25.00</p></a></li>
-
 <li><a href="#"><img src="img3.jpg" alt="产品 3"><h3>产品 3</h3><p>$30.00</p></a></li>
-
 </ul>
-
 </section>
-
 </main>
-
 <footer>
-
 <p>&copy; 2023 Sammie Smith</p>
-
 </footer>
-
 </body>
-
 </html>
 ```
 
@@ -1374,237 +1249,163 @@ padding: 1rem;
 /* 全局样式 */
 
 * {
-
-box-sizing: border-box;
-
-margin: 0;
-
-padding: 0;
-
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-
-font-family: Arial, sans-serif;
-
-font-size: 16px;
-
-line-height: 1.5;
-
-color: #130101;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #130101;
 }
 
 a {
-
-text-decoration: none;
-
-color: #4b0b0b;
+  text-decoration: none;
+  color: #4b0b0b;
 }
 
 ul {
-
-list-style: none;
+  list-style: none;
 }
 
 img {
-
-max-width: 100%;
-
-height: auto;
+  max-width: 100%;
+  height: auto;
 }
 
 /* 头部样式 */
 
 header {
-
-background-color: #7c7a7a;
-
-border-bottom: 1px solid #696262;
+  background-color: #7c7a7a;
+  border-bottom: 1px solid #696262;
 }
 
 nav ul {
-
-display: flex;
-
-justify-content: space-between;
-
-align-items: center;
-
-margin: 0;
-
-padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  padding: 1rem;
 }
 
 nav li {
-
-margin: 0 1rem;
+  margin: 0 1rem;
 }
 
 nav a {
-
-font-weight: bold;
-
-letter-spacing: 1px;
-
-text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
 }
 
 /* Hero 区域样式 */
 
 .hero {
-
-background-image: url(https://via.placeholder.com/1200x600);
-
-background-size: cover;
-
-background-position: center;
-
-height: 60vh;
-
-display: flex;
-
-flex-direction: column;
-
-justify-content: center;
-
-align-items: center;
-
-text-align: center;
+  background-image: url(https://via.placeholder.com/1200x600);
+  background-size: cover;
+  background-position: center;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .hero h1 {
-
-font-size: 3rem;
-
-margin-bottom: 1rem;
-
-color: #791818;
-
-text-shadow: 2px 2px #333;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: #791818;
+  text-shadow: 2px 2px #333;
 }
 
 .hero p {
-
-font-size: 1.5rem;
-
-color: #442222;
-
-text-shadow: 2px 2px #418d58;
+  font-size: 1.5rem;
+  color: #442222;
+  text-shadow: 2px 2px #418d58;
 }
 
 /* 作品集区域样式 */
 
 .portfolio {
-
-padding: 2rem;
+  padding: 2rem;
 }
 
 .portfolio h2 {
-
-font-size: 2rem;
-
-margin-bottom: 1rem;
+  font-size: 2rem;
+  margin-bottom: 1rem;
 }
 
 .portfolio li {
-
-margin-bottom: 2rem;
+  margin-bottom: 2rem;
 }
 
 .portfolio h3 {
-
-font-size: 1.5rem;
-
-margin-top: 1rem;
+  font-size: 1.5rem;
+  margin-top: 1rem;
 }
 
 /* 关于我们区域样式 */
 
 .about {
-
-padding: 2rem;
+  padding: 2rem;
 }
 
 .about h2 {
-
-font-size: 2rem;
-
-margin-bottom: 1rem;
+  font-size: 2rem;
+  margin-bottom: 1rem;
 }
 
 /* 联系我们区域样式 */
 
 .contact {
-
-padding: 2rem;
+  padding: 2rem;
 }
 
 .contact h2 {
-
-font-size: 2rem;
-
-margin-bottom: 1rem;
+  font-size: 2rem;
+  margin-bottom: 1rem;
 }
 
 label {
-
-display: block;
-
-margin-bottom: 0.5rem;
+  display: block;
+  margin-bottom: 0.5rem;
 }
 
 input,
-
 textarea {
-
-display: block;
-
-width: 100%;
-
-padding: 0.5rem;
-
-margin-bottom: 1rem;
-
-border: 1px solid #ccc;
-
-border-radius: 4px;
+  display: block;
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
 }
 
 button[type="submit"] {
-
-background-color: #333;
-
-color: #fff;
-
-border: none;
-
-padding: 0.5rem 1rem;
-
-border-radius: 4px;
-
-cursor: pointer;
-
-font-size: 1rem;
-
-text-transform: uppercase;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  text-transform: uppercase;
 }
 
 button[type="submit"]:hover {
-
-background-color: #444;
+  background-color: #444;
 }
 
 /* 页脚样式 */
 
 footer {
-
-background-color: #333;
-
-color: #fff;
-
-text-align: center;
-
-padding: 1rem;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
 }
 ```
 
@@ -1614,236 +1415,163 @@ padding: 1rem;
 /* 全局样式 */
 
 * {
-
-box-sizing: border-box;
-
-margin: 0;
-
-padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-
-font-family: Arial, sans-serif;
-
-font-size: 16px;
-
-line-height: 1.5;
-
-color: #130101;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #130101;
 }
 
 a {
-
-text-decoration: none;
-
-color: #4b0b0b;
+  text-decoration: none;
+  color: #4b0b0b;
 }
 
 ul {
-
-list-style: none;
+  list-style: none;
 }
 
 img {
-
-max-width: 100%;
-
-height: auto;
+  max-width: 100%;
+  height: auto;
 }
 
 /* 头部样式 */
 
 header {
-
-background-color: #7c7a7a;
-
-border-bottom: 1px solid #696262;
+  background-color: #7c7a7a;
+  border-bottom: 1px solid #696262;
 }
 
 nav ul {
-
-display: flex;
-
-justify-content: space-between;
-
-align-items: center;
-
-margin: 0;
-
-padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  padding: 1rem;
 }
 
 nav li {
-
-margin: 0 1rem;
+  margin: 0 1rem;
 }
 
 nav a {
-
-font-weight: bold;
-
-letter-spacing: 1px;
-
-text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
 }
 
 /* Hero 区域样式 */
 
 .hero {
-
-background-image: url(https://via.placeholder.com/1200x600);
-
-background-size: cover;
-
-background-position: center;
-
-height: 60vh;
-
-display: flex;
-
-flex-direction: column;
-
-justify-content: center;
-
-align-items: center;
-
-text-align: center;
+  background-image: url(https://via.placeholder.com/1200x600);
+  background-size: cover;
+  background-position: center;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .hero h1 {
-
-font-size: 3rem;
-
-margin-bottom: 1rem;
-
-color: #791818;
-
-text-shadow: 2px 2px #333;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: #791818;
+  text-shadow: 2px 2px #333;
 }
 
 .hero p {
-
-font-size: 1.5rem;
-
-color: #442222;
-
-text-shadow: 2px 2px #418d58;
+  font-size: 1.5rem;
+  color: #442222;
+  text-shadow: 2px 2px #418d58;
 }
 
 /* 作品集区域样式 */
 
 .portfolio {
-
-padding: 2rem;
+  padding: 2rem;
 }
 
 .portfolio h2 {
-
-font-size: 2rem;
-
-margin-bottom: 1rem;
+  font-size: 2rem;
+  margin-bottom: 1rem;
 }
 
 .portfolio li {
-
-margin-bottom: 2rem;
+  margin-bottom: 2rem;
 }
 
 .portfolio h3 {
-
-font-size: 1.5rem;
-
-margin-top: 1rem;
+  font-size: 1.5rem;
+  margin-top: 1rem;
 }
 
 /* 关于我们区域样式 */
 
 .about {
-
-padding: 2rem;
+  padding: 2rem;
 }
 
 .about h2 {
-
-font-size: 2rem;
-
-margin-bottom: 1rem;
+  font-size: 2rem;
+  margin-bottom: 1rem;
 }
 
 /* 联系我们区域样式 */
 
 .contact {
-
-padding: 2rem;
+  padding: 2rem;
 }
 
 .contact h2 {
-
-font-size: 2rem;
-
-margin-bottom: 1rem;
+  font-size: 2rem;
+  margin-bottom: 1rem;
 }
 
 label {
-
-display: block;
-
-margin-bottom: 0.5rem;
+  display: block;
+  margin-bottom: 0.5rem;
 }
 
 input,
-
 textarea {
-
-display: block;
-
-width: 100%;
-
-padding: 0.5rem;
-
-margin-bottom: 1rem;
-
-border: 1px solid #ccc;
-
-border-radius: 4px;
+  display: block;
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
 }
 
 button[type="submit"] {
-
-background-color: #333;
-
-color: #fff;
-
-border: none;
-
-padding: 0.5rem 1rem;
-
-border-radius: 4px;
-
-cursor: pointer;
-
-font-size: 1rem;
-
-text-transform: uppercase;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  text-transform: uppercase;
 }
 
 button[type="submit"]:hover {
-
-background-color: #444;
+  background-color: #444;
 }
 
 /* 页脚样式 */
 
 footer {
-
-background-color: #333;
-
-color: #fff;
-
-text-align: center;
-
-padding: 1rem;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
 }
 ```
 
@@ -1853,64 +1581,58 @@ padding: 1rem;
 
 JavaScript 是一种高级的、解释执行的编程语言，广泛用于客户端 Web 开发。它最初由 Brendan Eich 在 1995 年在 Netscape 开发，旨在为网页添加动态和交互式功能。
 
-在设计网页、应用程序、服务器甚至游戏时，Web 开发人员经常使用这种轻量级编程语言 JavaScript 来生成更动态的交互。JavaScript 通常与 HTML 和 CSS 一起使用。对于格式化 组件，脚本语言和 CSS 配合得很好。用户交互仍然通过 JavaScript 维持，但 CSS 无法独立做到这一点。
-
-
-
-
+在设计网页、应用程序、服务器甚至游戏时，Web 开发人员经常使用这种轻量级编程语言 JavaScript 来生成更动态的交互。JavaScript 通常与 HTML 和 CSS 一起使用。对于格式化组件，脚本语言和 CSS 配合得很好。用户交互仍然通过 JavaScript 维持，但 CSS 无法独立做到这一点。
 
 # JavaScript
 
-JavaScript 脚本语言用于创建网站、移动端应用程序和视频游戏。你可以通过在 GitHub 等代码托管平台上探索免费的 JavaScript 模板和应用程序，或者使用 BitDegree 等学习平台来实现这一目标。JavaScript 是一种多功能的语言，可用于多种用途，包括构建 Web 应用程序、创建浏览器扩展和开发移动应用。它也被用于服务端，像 Node.js 这样的平台允许开发者构建全栈 JavaScript 应用程序。所有现代网络浏览器都支持 JavaScript，使其成为 Web 开发者不可或缺的工具。它用于为网页添加交互性，包括表单验证、弹出窗口和动画。它还可以用于从 Web 服务器检索并显示数据，允许网页在无需刷新的情况下进行动态更新。JavaScript 是一种面向对象的语言，这意味着它允许开发者定义并创建带有属性方法的对象。它还支持函数式编程，允许开发者以更模块化和可重用的方式编写代码。JavaScript 是一种多功能且强大的编程语言，对于 Web 开发至关重要。它允许开发者创建动态交互的网页，并已成为构建现代 Web 应用程序不可或缺的工具。
+
+
+JavaScript 脚本语言用于创建网站、移动端应用程序和视频游戏。你可以通过在 GitHub 等代码托管平台上探索免费的 JavaScript 模板和应用程序，或者使用 BitDegree 等学习平台来实现这一目标。JavaScript 是一种多功能的语言，可用于多种用途，包括构建 Web 应用程序、创建浏览器扩展和开发移动应用。它也被用于服务端，像 `Node.js` 这样的平台允许开发者构建全栈 JavaScript 应用程序。所有现代网络浏览器都支持 JavaScript，使其成为 Web 开发者不可或缺的工具。它用于为网页添加交互性，包括表单验证、弹出窗口和动画。它还可以用于从 Web 服务器检索并显示数据，允许网页在无需刷新的情况下进行动态更新。JavaScript 是一种面向对象的语言，这意味着它允许开发者定义并创建带有属性方法的对象。它还支持函数式编程，允许开发者以更模块化和可重用的方式编写代码。JavaScript 是一种多功能且强大的编程语言，对于 Web 开发至关重要。它允许开发者创建动态交互的网页，并已成为构建现代 Web 应用程序不可或缺的工具。
 
 ## JavaScript 的历史
 
 Brendan Eich 在 1995 年于 Netscape Communications 工作期间发明了 JavaScript。为了与该公司主要的网页浏览器 Netscape Navigator 配合，Netscape 和 Eich 创建了 JavaScript 作为一种脚本语言。LiveScript 是该语言的原始名称，Netscape 将其更改为 JavaScript，以便将其作为合作伙伴 Sun Microsystems 创建的 Java 语言的补充。然而，JavaScript 和 Java 编程语言之间除了某些表层语法上的相似之处外，它们并没有关系。
 
-JavaScript 一经发布，越来越多的浏览器开始支持它。尽管如此，在很长的一历史中，JavaScript 并不被视为一种严谨的编程语言。尽管它的早期版本存在显著的速度和安全问题，但开发者并没有其他选择。他们需要使用 JavaScript 来在浏览器中运行程序。
+JavaScript 一经发布，越来越多的浏览器开始支持它。尽管如此，在很长的一段历史中，JavaScript 并不被视为一种严谨的编程语言。尽管它的早期版本存在显著的速度和安全问题，但开发者并没有其他选择。他们需要使用 JavaScript 来在浏览器中运行程序。
 
 JavaScript 的一个转折点出现在 2008 年，Google 发布了高性能的开源 Chrome V8 JavaScript 引擎。随后涌现的快速 JavaScript 引擎让程序员能够创建性能与桌面和移动应用相当的复杂浏览器应用程序。
 
-不久后，Ryan Dahl 发布了 Node.js 开源跨平台环境。它提供了一种从浏览器外部执行 JavaScript 代码的方法。它通过将 JavaScript 从浏览器的限制中释放出来，促进了其如今的显赫地位。今天，JavaScript 可用于创建各种应用，包括桌面端、移动端、服务器和浏览器应用。如今大多数最大的互联网公司，如 Facebook、Twitter、Netflix 和 Google，都在其产品中使用了 JavaScript。
+不久后，Ryan Dahl 发布了 `Node.js` 开源跨平台环境。它提供了一种从浏览器外部执行 JavaScript 代码的方法。它通过将 JavaScript 从浏览器的限制中释放出来，促进了其如今的显赫地位。今天，JavaScript 可用于创建各种应用，包括桌面端、移动端、服务器和浏览器应用。如今大多数最大的互联网公司，如 Facebook、Twitter、Netflix 和 Google，都在其产品中使用了 JavaScript。
 
 ## JavaScript 的特性
 
 JavaScript 拥有广泛的特性，使其成为一种流行且强大的编程语言。其关键特性包括：
 
-*   客户端脚本：JavaScript 主要用作客户端脚本语言，这意味着它运行在用户的 Web 浏览器上，并允许动态和交互的网页内容。
-*   跨平台兼容性：JavaScript 受所有主流网络浏览器以及移动设备和桌面应用程序的支持，使其成为一种易于获取的语言。
-*   面向对象编程：JavaScript 是一种面向对象的语言，允许开发者定义并创建带有属性方法的对象。
-*   函数式编程：JavaScript 支持函数式编程，允许开发者以更模块化和可重用的方式编写代码。
-*   异步编程：JavaScript 支持异步编程，允许非阻塞代码执行，并在某些场景下提高性能。
-*   事件驱动编程：JavaScript 是事件驱动的，这意味着它可以响应网页上的用户操作或其他事件。
-*   动态类型：JavaScript 是一种动态类型语言，这意味着变量类型在运行时确定，而不是显式定义。
-*   易于与 HTML 和 CSS 集成：JavaScript 可以轻松与 HTML 和 CSS 集成，以创建动态交互的网页。
-*   广泛的库和框架：JavaScript 拥有庞大且不断发展的库和框架生态系统，使得构建复杂的应用程序和网站变得简单。
-*   基于解释器：与编译语言相比，JavaScript 是一种解释语言。在这一点上它与 Python 和 Ruby 相似。JavaScript 的源代码由浏览器逐行解释并执行。相反，编译语言需要被翻译成可执行的字节码。编译语言的示例有 Java 和 C++。
-*   大小敏感：JavaScript 对大小写非常。。关键字、变量、函数名和其他标识符中的每个单词必须保持大小写一致。由于大小写区分，`hitCounter` 和 `hitcounter` 是不同的变量。此外，包括 "var" 在内的所有关键字都是大小敏感的。
-*   控制语句：JavaScript 提供了 if-else-if、switch-case 以及 for、while 和 do-while 循环等控制语句。其用户可以使用这种编程语言强大的控制语句创建复杂的逻辑。
-*   客户端验证：JavaScript 被广泛用于简化用户与 Web 应用程序之间的交互。为此，验证发挥着重要作用。验证可以引导用户使用有效数据正确填写表单，并防止垃圾提交。
-*   基于原型：JavaScript 采用原型继承模型而不是更为人知的类继承，因为它是一种基于原型的脚本语言。因此，我们定义对象的原型，并利用此对象原型来构建相同类型的其他对象，而不是定义类并从中派生对象。鉴于这种行为类似于对象工厂函数，这种设计模式在 JavaScript 应用程序中经常使用。
-*   对象简写：遵循 ES6/ES2015 语法，你可以使用简写并只需给出键名来定义对象，该对象的键与作为属性传入的变量相同。通过允许使用这种简写，对象简写允许你节省时间和空间，同时提高了代码的惯用性和简洁性。
+* 客户端脚本：JavaScript 主要用作客户端脚本语言，这意味着它运行在用户的 Web 浏览器上，并允许动态和交互的网页内容。
+* 跨平台兼容性：JavaScript 受所有主流网络浏览器以及移动设备和桌面应用程序的支持，使其成为一种易于获取的语言。
+* 面向对象编程：JavaScript 是一种面向对象的语言，允许开发者定义并创建带有属性方法的对象。
+* 函数式编程：JavaScript 支持函数式编程，允许开发者以更模块化和可重用的方式编写代码。
+* 异步编程：JavaScript 支持异步编程，允许非阻塞代码执行，并在某些场景下提高性能。
+* 事件驱动编程：JavaScript 是事件驱动的，这意味着它可以响应网页上的用户操作或其他事件。
+* 动态类型：JavaScript 是一种动态类型语言，这意味着变量类型在运行时确定，而不是显式定义。
+* 易于与 HTML 和 CSS 集成：JavaScript 可以轻松与 HTML 和 CSS 集成，以创建动态交互的网页。
+* 广泛的库和框架：JavaScript 拥有庞大且不断发展的库和框架生态系统，使得构建复杂的应用程序和网站变得简单。
+* 基于解释器：与编译语言相比，JavaScript 是一种解释语言。在这一点上它与 Python 和 Ruby 相似。JavaScript 的源代码由浏览器逐行解释并执行。相反，编译语言需要被翻译成可执行的字节码。编译语言的示例有 Java 和 C++。
+* 大小写敏感：JavaScript 对大小写非常敏感。关键字、变量、函数名和其他标识符中的每个单词必须保持大小写一致。由于大小写区分，`hitCounter` 和 `hitcounter` 是不同的变量。此外，包括 `var` 在内的所有关键字都是大小写敏感的。
+* 控制语句：JavaScript 提供了 `if-else-if`、`switch-case` 以及 `for`、`while` 和 `do-while` 循环等控制语句。其用户可以使用这种编程语言强大的控制语句创建复杂的逻辑。
+* 客户端验证：JavaScript 被广泛用于简化用户与 Web 应用程序之间的交互。为此，验证发挥着重要作用。验证可以引导用户使用有效数据正确填写表单，并防止垃圾提交。
+* 基于原型：JavaScript 采用原型继承模型而不是更为人知的类继承，因为它是一种基于原型的脚本语言。因此，我们定义对象的原型，并利用此对象原型来构建相同类型的其他对象，而不是定义类并从中派生对象。鉴于这种行为类似于对象工厂函数，这种设计模式在 JavaScript 应用程序中经常使用。
+* 对象简写：遵循 ES6/ES2015 语法，你可以使用简写并只需给出键名来定义对象，该对象的键与作为属性传入的变量相同。通过允许使用这种简写，对象简写允许你节省时间和空间，同时提高了代码的惯用性和简洁性。
 
 ## JavaScript 与其他语言的差异
 
 JavaScript 是一种独特的编程语言，与其他语言相比具有一些关键差异。以下是 JavaScript 与其他语言的一些主要区别：
 
-*   解释执行：JavaScript 是一种解释语言，这意味着代码由浏览器或运行时环境直接执行。这与 C++ 等编译语言不同，后者在执行之前需要进行编译。
-*   动态类型：JavaScript 是一种动态类型语言，意味着变量类型在运行时确定，而不是显式定义。这与 Java 等静态类型语言不同，在这些语言中变量类型是在编译时定义的。
-*   原型继承：JavaScript 使用原型继承，这与 Java 和 C++ 等语言使用的经典继承不同。原型继承允许对象直接从其他对象继承属性和方法。
-
-
-
-
+* 解释执行：JavaScript 是一种解释语言，这意味着代码由浏览器或运行时环境直接执行。这与 C++ 等编译语言不同，后者在执行之前需要进行编译。
+* 动态类型：JavaScript 是一种动态类型语言，意味着变量类型在运行时确定，而不是显式定义。这与 Java 等静态类型语言不同，在这些语言中变量类型是在编译时定义的。
+* 原型继承：JavaScript 使用原型继承，这与 Java 和 C++ 等语言使用的经典继承不同。原型继承允许对象直接从其他对象继承属性和方法。
 
 ## JavaScript 概述
 
-- **事件驱动编程**：`JavaScript` 是一种事件驱动的语言，意味着它可以响应网页上的用户操作或其他事件。这与 `C` 等过程化语言不同，后者遵循代码执行的线性顺序。
-- **客户端脚本**：`JavaScript` 主要用作客户端脚本语言，运行在用户的 Web 浏览器中，而不是在服务器上。这与 `PHP` 或 `Ruby` 等服务器端语言不同，后者在服务器上运行以动态生成网页。
-- **函数式编程**：`JavaScript` 支持函数式编程，这与许多其他语言使用的面向对象编程是两种不同的编程范式。
-- **多功能性**：`JavaScript` 是一种多用途的语言，可以用于 Web 开发之外的广泛应用，包括使用 `Node.js` 进行服务端编程，以及使用 `Electron` 或 `React Native` 等框架进行桌面或移动应用开发。
+* 事件驱动编程：JavaScript 是一种事件驱动的语言，意味着它可以响应网页上的用户操作或其他事件。这与 C 等过程化语言不同，后者遵循代码执行的线性顺序。
+* 客户端脚本：JavaScript 主要用作客户端脚本语言，运行在用户的 Web 浏览器中，而不是在服务器上。这与 PHP 或 Ruby 等服务器端语言不同，后者在服务器上运行以动态生成网页。
+* 函数式编程：JavaScript 支持函数式编程，这与许多其他语言使用的面向对象编程是两种不同的编程范式。
+* 多功能性：JavaScript 是一种多用途的语言，可以用于 Web 开发之外的广泛应用，包括使用 `Node.js` 进行服务端编程，以及使用 Electron 或 React Native 等框架进行桌面或移动应用开发。
 
 ## 理解面向对象编程
 
@@ -1918,32 +1640,32 @@ JavaScript 是一种独特的编程语言，与其他语言相比具有一些关
 
 在 OOP 中，对象拥有自己的属性和方法，并且可以与其他对象交互以执行特定任务。OOP 有四个基本概念：封装、继承、抽象和多态。
 
-- **封装**是隐藏对象实现细节并只暴露必要方法和属性的概念。这有助于确保对象只能以设计者预想的方式被使用。
-- **继承**是基于现有类创建新类的概念。继承允许子类继承父类的的属性和方法。这允许开发者在不需要重写已存在代码的情况下创建更具特异性的类。
-- **抽象**是通过通过将复杂系统分解为更小、更易管理的部分来简化复杂系统的概念。抽象允许开发者关注对象的本质特征，而无需担心实现细节。
-- **多态**是创建可以与不同类型对象工作的代码的概念。这允许开发者编写更具活性和可重用的代码。
+* 封装是隐藏对象实现细节并只暴露必要方法和属性的概念。这有助于确保对象只能以设计者预想的方式被使用。
+* 继承是基于现有类创建新类的概念。继承允许子类继承父类的属性和方法。这允许开发者在不需要重写已存在代码的情况下创建更具特异性的类。
+* 抽象是通过将复杂系统分解为更小、更易管理的部分来简化复杂系统的概念。抽象允许开发者关注对象的本质特征，而无需担心实现细节。
+* 多态是创建可以与不同类型对象工作的代码的概念。这允许开发者编写更具活性和可重用的代码。
 
-OOP 用于许多流行的编程语言，包括 `Java`、`Python` 和 `C++`。它已成为创建健壮且可扩展软件应用程序的标准。对于任何想要构建易维护、易扩展复杂系统的开发者来说，理解 OOP 是至关重要的。
+OOP 用于许多流行的编程语言，包括 Java、Python 和 C++。它已成为创建健壮且可扩展软件应用程序的标准。对于任何想要构建易维护、易扩展复杂系统的开发者来说，理解 OOP 是至关重要的。
 
 ## 设置 JavaScript 开发环境
 
 要设置 JavaScript 开发环境，您需要一些关键工具和软件。以下是入门的基本步骤：
 
-- **安装代码编辑器**：代码编辑器是允许您编写和编辑代码的工具。有很多编辑器可用，包括免费和付费选项。JavaScript 开发的流行选择包括 `Visual Studio Code`、`Sublime Text` 和 `Atom`。您可以在“https://code.visualstudio.com/download”下载并安装 Visual Studio。
+* 安装代码编辑器：代码编辑器是允许您编写和编辑代码的工具。有很多编辑器可用，包括免费和付费选项。JavaScript 开发的流行选择包括 Visual Studio Code、Sublime Text 和 Atom。您可以在 `https://code.visualstudio.com/download` 下载并安装 Visual Studio。
 
 ![](img/image_rsrc63S.jpg)
 
-- **安装 Node.js**：`Node.js` 是一个 JavaScript 运行时环境，允许你在 浏览器之外运行 JavaScript 代码。它包含一个名为 `npm` 的包管理器，用于管理和安装第三方包和库。您可以从官方网站“https://nodejs.org/en”下载 `Node.js` 并按照操作系统的安装说明进行操作。在您的系统上安装 "Node.js" 环境。确保安装 LTS 版本以获得性和长期支持。
+* 安装 `Node.js`：`Node.js` 是一个 JavaScript 运行时环境，允许你在浏览器之外运行 JavaScript 代码。它包含一个名为 `npm` 的包管理器，用于管理和安装第三方包和库。您可以从官方网站 `https://nodejs.org/en` 下载 `Node.js` 并按照操作系统的安装说明进行操作。在您的系统上安装 `Node.js` 环境。确保安装 LTS 版本以获得稳定性和长期支持。
 
 ![](img/image_rsrc63T.jpg)
 
-- **创建项目目录**：一旦安装了代码编辑器和 `Node.js`，就可以创建一个项目目录，在其中存储您的 JavaScript 代码文件。您可以使用命令行或通过操作系统的文件管理器创建新目录。
+* 创建项目目录：一旦安装了代码编辑器和 `Node.js`，就可以创建一个项目目录，在其中存储您的 JavaScript 代码文件。您可以使用命令行或通过操作系统的文件管理器创建新目录。
 
 ![](img/image_rsrc63U.jpg)
 
-- **初始化新的 Node.js 项目**：在项目目录中，您可以使用终端中的 `npm init` 命令初始化一个新的 Node.js 项目。这将创建一个 `package.json` 文件，其中包含有关项目及其依赖的信息。
-- **安装依赖项**：您可以使用 `npm` 安装项目所需的任何依赖项或包。例如，如果您正在构建 Web 应用程序，可能想要安装类似 `Express.js` 的包来处理服务端路由和中间件。
-- **开始编码**：设置好开发环境后，就可以开始编写 JavaScript 代码了。您可以在项目目录中创建一个 JavaScript 文件，并开始使用代码编辑器编写代码。
+* 初始化新的 `Node.js` 项目：在项目目录中，您可以使用终端中的 `npm init` 命令初始化一个新的 `Node.js` 项目。这将创建一个 `package.json` 文件，其中包含有关项目及其依赖的信息。
+* 安装依赖项：您可以使用 `npm` 安装项目所需的任何依赖项或包。例如，如果您正在构建 Web 应用程序，可能想要安装类似 `Express.js` 的包来处理服务端路由和中间件。
+* 开始编码：设置好开发环境后，就可以开始编写 JavaScript 代码了。您可以在项目目录中创建一个 JavaScript 文件，并开始使用代码编辑器编写代码。
 
 您可以使用像记事本这样的简单编辑器编写 JavaScript 代码。然而，您可以安装任何开源或授权的 IDE（集成开发环境），以获得 JavaScript 的 IntelliSense 支持以及语法错误/警告高亮，以便快速开发。
 
@@ -1951,24 +1673,24 @@ OOP 用于许多流行的编程语言，包括 `Java`、`Python` 和 `C++`。它
 
 要配置 Visual Studio Code 运行 JavaScript 代码，可以遵循以下步骤：
 
-- 启动 Visual Studio Code。
-- 在 Visual Studio Code 中安装 "Code Runner" 扩展。您可以点击左侧边栏的扩展图标，搜索 "Code Runner"，并点击 "Install" 按钮。
-- 在 Visual Studio Code 中打开想要运行的 JavaScript 文件。
-- 按下 `Ctrl+Shift+P` 键组合打开命令面板。搜索 `Code Runner: Run Code` 命令并选择它。
-- 或者，您可以使用 `Ctrl+Alt+N` 键组合直接运行代码。
-- 如果 JavaScript 文件需要用户输入，您可以在运行代码后打开的终端中输入内容。
-- 您还可以通过 文件 > 首选项 > 设置 来配置 Code Runner 扩展设置，搜索 "code-runner" 并根据您的需求修改选项。
-- 仔细完成上述步骤后，您现在可以通过右键点击代码区域然后选择 Run Code，在 Visual Studio Code 中运行 JavaScript 文件。见下面的截图。
+* 启动 Visual Studio Code。
+* 在 Visual Studio Code 中安装 "Code Runner" 扩展。您可以点击左侧边栏的扩展图标，搜索 "Code Runner"，并点击 "Install" 按钮。
+* 在 Visual Studio Code 中打开想要运行的 JavaScript 文件。
+* 按下 `Ctrl+Shift+P` 键组合打开命令面板。搜索 `Code Runner: Run Code` 命令并选择它。
+* 或者，您可以使用 `Ctrl+Alt+N` 键组合直接运行代码。
+* 如果 JavaScript 文件需要用户输入，您可以在运行代码后打开的终端中输入内容。
+* 您还可以通过 文件 > 首选项 > 设置 来配置 Code Runner 扩展设置，搜索 "code-runner" 并根据您的需求修改选项。
+* 仔细完成上述步骤后，您现在可以通过右键点击代码区域然后选择 Run Code，在 Visual Studio Code 中运行 JavaScript 文件。见下面的截图。
 
 ![](img/image_rsrc63V.jpg)
 
 # 第十三章：JavaScript 基础
 
-变量和数据类型是编程中的基本概念。在 `JavaScript` 中，变量用于存储稍后在程序中使用的值。另一方面，数据类型是定义可以存储在变量中的值类型的分类。在本章中，我们将结合实际示例深入探讨这些概念。
+变量和数据类型是编程中的基本概念。在 JavaScript 中，变量用于存储稍后在程序中使用的值。另一方面，数据类型是定义可以存储在变量中的值类型的分类。在本章中，我们将结合实际示例深入探讨这些概念。
 
 ### JavaScript 变量
 
-在 `JavaScript` 中，使用 `var`、`let` 或 `const` 关键字声明变量。这些关键字告诉 JavaScript 解释器正在声明一个新变量。声明变量的语法如下：
+在 JavaScript 中，使用 `var`、`let` 或 `const` 关键字声明变量。这些关键字告诉 JavaScript 解释器正在声明一个新变量。声明变量的语法如下：
 
 ![](img/image_rsrc63W.jpg)
 
@@ -1976,32 +1698,31 @@ OOP 用于许多流行的编程语言，包括 `Java`、`Python` 和 `C++`。它
 
 ### JavaScript 数据类型
 
-`JavaScript` 有多种数据类型，包括字符串、数字、布尔值、对象和数组。
+JavaScript 有多种数据类型，包括字符串、数字、布尔值、对象和数组。
 
 ### 字符串
+
 字符串是用于表示文本的数据类型。它们被包含在单引号或双引号中。这里有一个示例：
 
-```
+```javascript
 var myString = "Hello, world!";
 ```
 
 ### 数字
+
 数字用于表示数值。它们可以是整数或浮点数。下面的示例：
 
-```
+```javascript
 var myNumber = 42;
 ```
 
 #### 布尔值
+
 布尔值用于表示真或假的值。它们通常用于条件语句。下面的示例：
 
 ```javascript
 var myBoolean = true;
 ```
-
-
-
-
 
 # JavaScript 基础
 
@@ -2019,7 +1740,7 @@ var myBoolean = true;
 
 ### 对象
 
-对象是复杂的数据类型，可以包含多个属性和方法。它们使用 "object" 关键字创建，属性使用 "属性名: 值" 的语法定义。这里是一个示例：
+对象是复杂的数据类型，可以包含多个属性和方法。它们使用 `object` 关键字创建，属性使用 `属性名: 值` 的语法定义。这里是一个示例：
 
 ```javascript
 var myObject = { name: "John", age: 30, occupation: "Programmer" };
@@ -2027,7 +1748,7 @@ var myObject = { name: "John", age: 30, occupation: "Programmer" };
 
 ## 数组
 
-数组用于存储值的集合，这些值可以是任何数据类型。它们使用 "array" 关键字创建，每个值之间用逗号隔开。这里是一个示例：
+数组用于存储值的集合，这些值可以是任何数据类型。它们使用 `array` 关键字创建，每个值之间用逗号隔开。这里是一个示例：
 
 ```javascript
 var myArray = [1, 2, 3, "four", true];
@@ -2077,7 +1798,7 @@ console.log(message[0]); // 输出: H
 
 #### 字符串拼接
 
-你可以使用拼接运算符 (+) 或模板字符串来拼接两个或多个字符串。下面是一个示例：
+你可以使用拼接运算符（`+`）或模板字符串来拼接两个或多个字符串。下面是一个示例：
 
 ```javascript
 let firstName = 'Sammie';
@@ -2100,145 +1821,8 @@ console.log(message); // 输出: My name is Sammie Smith
 
 在 JavaScript 中声明数字变量，你只需给变量赋值一个数值即可。这里是一个示例：
 
-```javascript
-let x = 10; let y = 3.14;
-```
 
-#### 执行算术运算
 
-你可以使用 `+`、`-`、`*` 和 `/` 等运算符对数字进行算术运算。这里是一个示例：
-
-```javascript
-let x = 10; let y = 5;
-console.log(x + y); // 输出: 15
-console.log(x - y); // 输出: 5
-console.log(x * y); // 输出: 50
-console.log(x / y); // 输出: 2
-```
-
-查看下方的输出。
-
-![](img/image_rsrc641.jpg)
-
-### 布尔值操作
-
-布尔值表示真（true）或假（false）。布尔值常用于条件语句和循环以控制程序的执行流。
-
-#### 声明布尔变量
-
-在 JavaScript 中声明布尔变量，你只需给变量赋值一个 `true` 或 `false` 值即可。这里是一个示例：
-
-```javascript
-let isRaining = true;
-let isSunny = false;
-```
-
-#### 使用布尔运算符
-
-你可以使用 `&&`（与）、`||`（或）和 `!`（非）等布尔运算符对布尔值执行逻辑操作。这里是一个示例：
-
-```javascript
-let isRaining = true;
-let isCold = true;
-let isWindy = false;
-console.log(isRaining && isCold); // 输出: true
-console.log(isRaining || isWindy); // 输出: true
-console.log(!isCold); // 输出: false
-```
-
-查看下方的输出。
-
-![](img/image_rsrc642.jpg)
-
-## 理解对象和数组
-
-在 JavaScript 中，对象和数组是两种重要的数据结构，允许开发者以各种方式存储和操作数据。在本节中，我们将探索对象和数组的基础知识、它们的语法以及如何在实际示例中使用它们。
-
-### 理解对象
-
-JavaScript 中的对象是属性的集合，这些属性是键值对，描述了对象的各种特征。例如，一个人的对象可以拥有姓名、年龄和性别属性，每个属性都有其值。对象可以包含任何类型的数据，包括其他对象、函数和数组。
-
-#### 声明对象
-
-JavaScript 中的对象是属性的集合，这些属性是键值对，描述了对象的各种特征。例如，一个人的对象可以拥有姓名、年龄和性别属性，每个属性都有其值。对象可以包含任何类型的数据，包括其他对象、函数和数组。
-
-#### 声明对象
-JavaScript 中的对象是属性的集合，这些属性是键值对，描述了对象的各种特征。例如，一个人的对象可以拥有姓名、年龄和性别属性，每个属性都有其值。对象可以包含任何类型的数据，包括其他对象、函数和数组。
-
-```javascript
-var myObject = { name: "John", age: 30, occupation: "Programmer" };
-```
-
-#### 声明对象
-JavaScript 中的对象是属性的集合，这些属性是键值对，描述了对象的各种特征。例如，一个人的对象可以拥有姓名、年龄和性别属性，每个属性都有其值。对象可以包含任何类型的数据，包括其他对象、函数和数组。
-
-```javascript
-var myObject = { name: "John", age: 30, occupation: "Programmer" };
-```
-
-#### 声明对象
-JavaScript 中的对象是属性的集合，这些属性是键值对，描述了对象的各种特征。例如，一个人的对象可以拥有姓名、年龄和性别属性，每个属性都有其值。对象可以包含任何类型的数据，包括其他对象、函数和数组。
-
-```javascript
-var myObject = { name: "John", age: 30, occupation: "Programmer" };
-```
-
-#### 声明对象
-JavaScript 中的对象是属性的集合，这些属性是键值对，描述了对象的各种特征。例如，一个人的对象可以拥有姓名、年龄和性别属性，每个属性都有其值。对象可以包含任何类型的数据，包括其他对象、函数和数组。
-
-```javascript
-var myObject = { name: "John", age: 30, occupation: "Programmer" };
-```
-
-#### 声明对象
-JavaScript 中的对象是属性的集合，这些属性是键值对，描述了对象的各种特征。例如，一个人的对象可以拥有姓名、年龄和性别属性，每个属性都有其值。对象可以包含任何类型的数据，包括其他对象、函数和数组。
-
-```javascript
-var myObject = { name: "John", age: 30, occupation: "Programmer" };
-```
-
-#### 声明对象
-JavaScript 中的对象是属性的集合，这些属性是键值对，描述了对象的各种特征。例如，一个人的对象可以拥有姓名、年龄和性别属性，每个属性都有其值。对象可以包含任何类型的数据，包括其他对象、函数和数组。
-
-```javascript
-var myObject = { name: "John", age: 30, occupation: "Programmer" };
-```
-
-#### 声明对象
-JavaScript 中的对象是属性的集合，这些属性是键值对，描述了对象的各种特征。例如，一个人的对象可以拥有姓名、年龄和性别属性，每个属性都有其值。对象可以包含任何类型的数据，包括其他对象、函数和数组。
-
-```javascript
-var myObject = { name: "John", age: 30, occupation: "Programmer" };
-```
-
-#### 声明对象
-JavaScript 中的对象是属性的集合，这些属性是键值对，描述了对象的各种特征。例如，一个人的对象可以拥有姓名、年龄和性别属性，每个属性都有其值。对象可以包含任何类型的数据，包括其他对象、函数和数组。
-
-```javascript
-var myObject = { name: "John", age: 30, occupation: "Programmer" };
-```
-
-#### 声明对象
-JavaScript 中的对象是属性的集合，这些属性是键值对，描述了对象的各种特征。例如，一个人的对象可以拥有姓名、年龄和性别属性，每个属性都有其值。对象可以包含任何类型的数据，包括其他对象、函数和数组。
-
-```javascript
-var myObject = { name: "John", age: 30, occupation: "Programmer" };
-```
-
-#### 声明对象
-JavaScript 中的对象是属性的集合，这些属性是键值对，描述了对象的各种特征。例如，一个人的对象可以拥有姓名、年龄和性别属性，每个属性都有其值。对象可以包含任何类型的数据，包括其他对象、函数和数组。
-
-```javascript
-var myObject = { name: "John", age: 30, occupation: "Programmer" };
-```
-
-*(注：由于原文文本中存在大量重复的“Declaring an Object”及代码，译文已根据“不要重复输出原文”的原则进行了去重处理，保持核心逻辑连贯)*
-
----
-
-**重新审视并修正翻译：** 提供的原文文本在中间部分出现了严重的重复。以下是基于原文逻辑、清理后的高质量译文：
-
-[content]
 # JavaScript 基础
 
 ## 变量声明
@@ -2247,7 +1831,7 @@ var myObject = { name: "John", age: 30, occupation: "Programmer" };
 var myBoolean = true;
 ```
 
-在 JavaScript 中声明变量，使用 `var`、`let` 或 `const` 关键字，后跟你想要创建的变量名。你也可以通过给变量赋值一个值来初始化它，如上面的示例所示。如果你在声明变量时没有给它赋值，它的值将是 `undefined`。
+在 JavaScript 中声明变量，使用`var`、`let`或`const`关键字，后跟你想要创建的变量名。你也可以通过给变量赋值一个值来初始化它，如上面的示例所示。如果你在声明变量时没有给它赋值，它的值将是`undefined`。
 
 让我们来看一些在 JavaScript 中声明变量的示例：
 
@@ -2255,7 +1839,7 @@ var myBoolean = true;
 
 ### 对象
 
-对象是复杂的数据类型，可以包含多个属性和方法。它们使用 "object" 关键字创建，属性使用 "propertyName: value" 的语法定义。这里是一个示例：
+对象是复杂的数据类型，可以包含多个属性和方法。它们使用`object`关键字创建，属性使用`propertyName: value`的语法定义。这里是一个示例：
 
 ```javascript
 var myObject = { name: "John", age: 30, occupation: "Programmer" };
@@ -2263,7 +1847,7 @@ var myObject = { name: "John", age: 30, occupation: "Programmer" };
 
 ## 数组
 
-数组用于存储值的集合，这些值可以是任何数据类型。它们使用 "array" 关键字创建，每个值之间用逗号隔开。这里是一个示例：
+数组用于存储值的集合，这些值可以是任何数据类型。它们使用`array`关键字创建，每个值之间用逗号隔开。这里是一个示例：
 
 ```javascript
 var myArray = [1, 2, 3, "four", true];
@@ -2299,7 +1883,7 @@ console.log(greeting); // 输出: Hello Sammie!
 
 #### 访问字符串中的单个字符
 
-你可以通过 `charAt()` 方法或方括号符号访问字符串中的单个字符。这里是一个示例：
+你可以通过`charAt()`方法或方括号符号访问字符串中的单个字符。这里是一个示例：
 
 ```javascript
 let message = 'Hello World!';
@@ -2313,7 +1897,7 @@ console.log(message[0]); // 输出: H
 
 #### 字符串拼接
 
-你可以使用拼接运算符 (+) 或模板字符串来拼接两个或多个字符串。下面是一个示例：
+你可以使用拼接运算符（`+`）或模板字符串来拼接两个或多个字符串。下面是一个示例：
 
 ```javascript
 let firstName = 'Sammie';
@@ -2342,7 +1926,7 @@ let x = 10; let y = 3.14;
 
 #### 执行算术运算
 
-你可以使用 `+`、`-`、`*` 和 `/` 等运算符对数字进行算术运算。这里是一个示例：
+你可以使用`+`、`-`、`*`和`/`等运算符对数字进行算术运算。这里是一个示例：
 
 ```javascript
 let x = 10; let y = 5;
@@ -2358,11 +1942,11 @@ console.log(x / y); // 输出: 2
 
 ### 布尔值操作
 
-布尔值表示真（true）或假（false）。布尔值常用于条件语句和循环以控制程序的执行流。
+布尔值表示真（`true`）或假（`false`）。布尔值常用于条件语句和循环以控制程序的执行流。
 
 #### 声明布尔变量
 
-在 JavaScript 中声明布尔变量，你只需给变量赋值一个 `true` 或 `false` 值即可。这里是一个示例：
+在 JavaScript 中声明布尔变量，你只需给变量赋值一个`true`或`false`值即可。这里是一个示例：
 
 ```javascript
 let isRaining = true;
@@ -2371,7 +1955,7 @@ let isSunny = false;
 
 #### 使用布尔运算符
 
-你可以使用 `&&`（与）、`||`（或）和 `!`（非）等布尔运算符对布尔值执行逻辑操作。这里是一个示例：
+你可以使用`&&`（与）、`||`（或）和`!`（非）等布尔运算符对布尔值执行逻辑操作。这里是一个示例：
 
 ```javascript
 let isRaining = true;
@@ -2395,7 +1979,7 @@ console.log(!isCold); // 输出: false
 JavaScript 中的对象是属性的集合，这些属性是键值对，描述了对象的各种特征。例如，一个人的对象可以拥有姓名、年龄和性别属性，每个属性都有其值。对象可以包含任何类型的数据，包括其他对象、函数和数组。
 
 #### 声明对象
-*(此处省略原文中重复出现的内容，保留核心逻辑)*
+
 ```javascript
 var myObject = { name: "John", age: 30, occupation: "Programmer" };
 ```
@@ -2405,19 +1989,18 @@ var myObject = { name: "John", age: 30, occupation: "Programmer" };
 JavaScript 中的数组是值的集合，这些值可以是任何数据类型。数组是有序的，这意味着存储的顺序是重要的。
 
 ### 声明数组
-在 JavaScript 中声明数组，使用方括号 ([]) 符号。在方括号内列出值并用逗号隔开。
+
+在 JavaScript 中声明数组，使用方括号（`[]`）符号。在方括号内列出值并用逗号隔开。
 
 ```javascript
 let numbers = [1, 2, 3];
 ```
 
-
-
-
-JavaScript 具有若干算术运算符，可执行数学运算。这些运算符包括加法 (`+`)、减法 (`-`)、乘法 (`*`)、除法 (`/`) 和取模 (`%`)。让我们详细查看每一个运算符。
+JavaScript 具有若干算术运算符，可执行数学运算。这些运算符包括加法（`+`）、减法（`-`）、乘法（`*`）、除法（`/`）和取模（`%`）。让我们详细查看每一个运算符。
 
 ### 加法 (+)
-该运算符用于两个两个或多个数字。例如：
+
+该运算符用于将两个或多个数字相加。例如：
 
 ```javascript
 let x = 5;
@@ -2425,10 +2008,13 @@ let y = 10;
 let z = x + y;
 console.log(z); // Output: 15
 ```
+
 查看下方的输出。
+
 ![](img/image_rsrc648.jpg)
 
 ### 减法 (-)
+
 该运算符用于从一个数字减去另一个数字。例如：
 
 ```javascript
@@ -2437,10 +2023,13 @@ let y = 5;
 let z = x - y;
 console.log(z); // Output: 5
 ```
+
 查看下方的输出。
+
 ![](img/image_rsrc649.jpg)
 
 ### 乘法 (*)
+
 该运算符用于将两个或多个数字相乘。例如：
 
 ```javascript
@@ -2449,10 +2038,13 @@ let y = 10;
 let z = x * y;
 console.log(z); // Output: 50
 ```
+
 查看下方的输出。
+
 ![](img/image_rsrc64A.jpg)
 
 ### 除法 (/)
+
 该运算符用于将一个数字除以另一个数字。例如：
 
 ```javascript
@@ -2461,10 +2053,13 @@ let y = 5;
 let z = x / y;
 console.log(z); // Output: 2
 ```
+
 查看下方的输出。
+
 ![](img/image_rsrc64B.jpg)
 
 ### 取模 (%)
+
 该运算符用于找到除法后的余数。例如：
 
 ```javascript
@@ -2473,13 +2068,17 @@ let y = 3;
 let z = x % y;
 console.log(z); // Output: 1
 ```
+
 查看下方的输出。
+
 ![](img/image_rsrc64C.jpg)
 
 ## 比较运算符
-JavaScript 还有若干比较运算符，可用于比较两个值。这些运算符包括等于 (`==`)、不等于 (`!=`)、大于 (`>`)、小于 (`<`)、大于等于 (`>=`) 和小于等于 (`<=`)。让我们详细查看每一个运算符。
+
+JavaScript 还有若干比较运算符，可用于比较两个值。这些运算符包括等于（`==`）、不等于（`!=`）、大于（`>`）、小于（`<`）、大于等于（`>=`）和小于等于（`<=`）。让我们详细查看每一个运算符。
 
 ### 等于 (==)
+
 该运算符用于检查两个值是否相等。例如：
 
 ```javascript
@@ -2487,10 +2086,13 @@ let x = 5;
 let y = 5;
 console.log(x == y); // Output: true
 ```
+
 查看下方的输出。
+
 ![](img/image_rsrc64D.jpg)
 
-### 不等于 (!=
+### 不等于 (!=)
+
 该运算符用于检查两个值是否不相等。例如：
 
 ```javascript
@@ -2498,11 +2100,14 @@ let x = 5;
 let y = 10;
 console.log(x != y); // Output: true
 ```
+
 查看下方的输出。
+
 ![](img/image_rsrc64E.jpg)
 
 ### 大于 (>) 和 小于 (<)
-这些运算符用于比较两个值，判断其中一个是否大于小于另一个。例如：
+
+这些运算符用于比较两个值，判断其中一个是否大于或小于另一个。例如：
 
 ```javascript
 let x = 5;
@@ -2510,10 +2115,28 @@ let y = 10;
 console.log(x < y); // Output: true
 console.log(x > y); // Output: false
 ```
+
 查看下方的输出。
+
 ![](img/image_rsrc64F.jpg)
 
 ### 大于等于 (>=) 和 小于等于 (<=)
+
+这些运算符用于比较两个值，判断其中一个是否大于等于或小于等于另一个。例如：
+
+```javascript
+let x = 5;
+let y = 5;
+console.log(x >= y); // Output: true
+console.log(x <= y); // Output: true
+```
+
+查看下方的输出。
+
+![](img/image_rsrc64G.jpg)
+
+
+
 这些运算符用于检查一个值是否大于等于或小于等于另一个值。例如：
 
 ```javascript
@@ -2522,16 +2145,21 @@ let y = 5;
 console.log(x <= y); // Output: true
 console.log(x >= y); // Output: true
 ```
+
 查看下方的输出。
+
 ![](img/image_rsrc64G.jpg)
 
 ## 逻辑运算符
+
 在编程中，逻辑运算符用于组合两个或多个条件以形成更复杂的条件。JavaScript 中有三个主要的逻辑运算符：
 
 ### 与 运算符 (&&)
-与运算符表示为 `&&`，用于检查两个条件是否都为真。只有当两个条件都为真时，它才返回真。如果一个或两个条件为假，它返回假。
+
+与运算符表示为`&&`，用于检查两个条件是否都为真。只有当两个条件都为真时，它才返回真。如果一个或两个条件为假，它返回假。
 
 示例：
+
 ```javascript
 let x = 5;
 let y = 10;
@@ -2543,12 +2171,15 @@ else {
 }
 // Output: Both conditions are true
 ```
-在这个示例中，第一个条件 `(x > 0)` 为真，第二个条件 `(y > 5)` 也是真。因此，控制台将输出 "Both conditions are true"。
+
+在这个示例中，第一个条件`(x > 0)`为真，第二个条件`(y > 5)`也是真。因此，控制台将输出 "Both conditions are true"。
 
 ### 或 运算符 (||)
-或运算符表示为 `||`，用于检查两个条件中至少有一个是否为真。如果其中一个或两个条件为真，它就返回真。如果两个条件都为假，它返回假。
+
+或运算符表示为`||`，用于检查两个条件中至少有一个是否为真。如果其中一个或两个条件为真，它就返回真。如果两个条件都为假，它返回假。
 
 示例：
+
 ```javascript
 let x = 5;
 let y = 10;
@@ -2560,13 +2191,17 @@ else {
 }
 // Output: At least one condition is true
 ```
-在这个示例中，第一个条件 `(x > 0)` 为真，第二个条件 `(y < 5)` 为假。但由于至少有一个条件为真，控制台将输出 "At least one condition is true"。
+
+在这个示例中，第一个条件`(x > 0)`为真，第二个条件`(y < 5)`为假。但由于至少有一个条件为真，控制台将输出 "At least one condition is true"。
+
 ![](img/image_src64H)
 
 ### 非 运算符 (!)
-非运算符表示为 `!`，用于反转条件的逻辑状态。如果条件为真，它会使其为假；如果条件为假，它会使其为真。
+
+非运算符表示为`!`，用于反转条件的逻辑状态。如果条件为真，它会使其为假；如果条件为假，它会使其为真。
 
 示例：
+
 ```javascript
 let x = 5;
 if(!(x > 0)) {
@@ -2577,29 +2212,38 @@ else {
 }
 // Output: condition is true
 ```
-在这个示例中，条件 `(x > 0)` 为真，但 `!` 使其为假，从而触发了 `else` 块。(image_src64J)
+
+在这个示例中，条件`(x > 0)`为真，但`!`使其为假，从而触发了`else`块。(image_src64J)
 
 ## 条件语句 (IF/ELSE)
+
 条件语句也称为控制语句，用于控制程序的流程。它们允许程序做出决策。
 
 ### if 语句
-`if` 语句的语法如下：
+
+`if`语句的语法如下：
+
 ```javascript
 if (condition) {
   // 如果条件为真则执行代码块
 }
 ```
+
 这是一个示例：
+
 ```javascript
 let a = 5;
 if (a > 3) {
   console.log("a is greater than 3");
 }
 ```
-在这个示例中，条件 `a > 3` 为真，因此执行大括号内的代码。(image_src64K)
+
+在这个示例中，条件`a > 3`为真，因此执行大括号内的代码。(image_src64K)
 
 ### else 语句
-`else` 语句与 `if` 语句结合使用，在条件为假时执行代码块。`else` 语句的语法如下：
+
+`else`语句与`if`语句结合使用，在条件为假时执行代码块。`else`语句的语法如下：
+
 ```javascript
 if (condition) {
   // 如果条件为真则执行代码块
@@ -2608,7 +2252,9 @@ else {
   // 如果条件为假则执行代码块
 }
 ```
+
 这是一个示例：
+
 ```javascript
 let a = 2;
 if (a > 3) {
@@ -2618,10 +2264,13 @@ else {
   console.log("a is less than or equal to 3");
 }
 ```
-在这个示例中，条件 `a > 3` 为假，因此执行 `else` 块。(image_src64M)
+
+在这个示例中，条件`a > 3`为假，因此执行`else`块。(image_src64M)
 
 ### else if 语句
-`else if` 语句与 `if` 语句结合使用，当另一个条件为真时执行代码块。`else if` 语句的语法如下：
+
+`else if`语句与`if`语句结合使用，当另一个条件为真时执行代码块。`else if`语句的语法如下：
+
 ```javascript
 if (condition1) {
   // 如果 condition1 为真则执行代码块
@@ -2632,7 +2281,9 @@ else {
   // 如果所有条件为假则执行代码块
 }
 ```
+
 这是一个示例：
+
 ```javascript
 let a = 7;
 if (a > 10) {
@@ -2644,12 +2295,9 @@ if (a > 10) {
 }
 ```
 
-
-
-
 ## 条件语句
 
-在这个例子中，条件 `a > 10` 为假，但条件 `a > 5` 为真，因此第二个代码块将被执行，消息 "a 大于 5 但小于或等于 10" 将被打印到控制台。上述代码的输出如下所示。
+在这个例子中，条件`a > 10`为假，但条件`a > 5`为真，因此第二个代码块将被执行，消息 "a 大于 5 但小于或等于 10" 将被打印到控制台。上述代码的输出如下所示。
 
 ![](img/image_rsrc64N.jpg)
 
@@ -2661,23 +2309,14 @@ JavaScript 中 switch 语句的语法如下：
 
 ```javascript
 switch(expression) {
-
-case value1:
-
-// code block
-
-break;
-
-case value2:
-
-// code block
-
-break;
-
-default:
-
-// code block
-
+  case value1:
+    // code block
+    break;
+  case value2:
+    // code block
+    break;
+  default:
+    // code block
 }
 ```
 
@@ -2687,63 +2326,38 @@ default:
 
 ```javascript
 let day = new Date().getDay();
-
 let dayName;
 
 switch(day) {
-
-case 0:
-
-dayName = "Sunday";
-
-break;
-
-case 1:
-
-dayName = "Monday";
-
-break;
-
-case 2:
-
-dayName = "Tuesday";
-
-break;
-
-case 3:
-
-dayName = "Wednesday";
-
-break;
-
-case 4:
-
-dayName = "Thursday";
-
-break;
-
-case 5:
-
-dayName = "Friday";
-
-break;
-
-case 6:
-
-dayName = "Saturday";
-
-break;
-
-default:
-
-dayName = "Invalid day";
-
+  case 0:
+    dayName = "Sunday";
+    break;
+  case 1:
+    dayName = "Monday";
+    break;
+  case 2:
+    dayName = "Tuesday";
+    break;
+  case 3:
+    dayName = "Wednesday";
+    break;
+  case 4:
+    dayName = "Thursday";
+    break;
+  case 5:
+    dayName = "Friday";
+    break;
+  case 6:
+    dayName = "Saturday";
+    break;
+  default:
+    dayName = "Invalid day";
 }
 
 console.log(dayName);
 ```
 
-在这个例子中，switch 语句使用 `Date` 对象的 `getDay()` 方法获取当前星期几。代码将日期匹配到相应的字符串值，并将其赋值给 `dayName` 变量。如果日期值不匹配任何 case，则 default case 将 `dayName` 变量赋值为 "Invalid day"。上述代码的结果如下图所示。
+在这个例子中，switch 语句使用`Date`对象的`getDay()`方法获取当前星期几。代码将日期匹配到相应的字符串值，并将其赋值给`dayName`变量。如果日期值不匹配任何 case，则 default case 将`dayName`变量赋值为 "Invalid day"。上述代码的结果如下图所示。
 
 ![](img/image_rsrc64P.jpg)
 
@@ -2755,13 +2369,11 @@ Switch 语句通常用作 if-else 语句的替代方案，当需要检查多个�
 
 ### 声明和调用函数
 
-在 JavaScript 中，可以使用 `function` 关键字声明函数，后跟函数名和一对圆括号。函数体用花括号 `{}` 包裹。例如：
+在 JavaScript 中，可以使用`function`关键字声明函数，后跟函数名和一对圆括号。函数体用花括号`{}`包裹。例如：
 
 ```javascript
 function greet() {
-
-console.log("Hello, world!");
-
+  console.log("Hello, world!");
 }
 ```
 
@@ -2781,13 +2393,11 @@ greet(); // Output: Hello, world!
 
 ```javascript
 function greet(name) {
-
-console.log("Hello, " + name + "!");
-
+  console.log("Hello, " + name + "!");
 }
 ```
 
-在上面的例子中，`greet` 函数接受一个参数 `name`。要用实参调用函数，只需在调用函数时传递值作为实参：
+在上面的例子中，`greet`函数接受一个参数`name`。要用实参调用函数，只需在调用函数时传递值作为实参：
 
 ```javascript
 greet("Sammie"); // Output: Hello, Sammie!
@@ -2801,9 +2411,7 @@ greet("Sammie"); // Output: Hello, Sammie!
 
 ```javascript
 function add(a, b) {
-
-return a + b;
-
+  return a + b;
 }
 
 console.log(add(2, 3)); // Output: 5
@@ -2815,17 +2423,17 @@ console.log(add(2, 3)); // Output: 5
 
 ### 返回值
 
-函数也可以使用 `return` 关键字返回值。这允许函数提供一个可用于代码其他部分的结果。例如：
+函数也可以使用`return`关键字返回值。这允许函数提供一个可用于代码其他部分的结果。例如：
 
 ```javascript
 function multiply(a, b) {
-
-return a * b; }
+  return a * b;
+}
 
 console.log(multiply(2, 3)); // Output: 6
 ```
 
-在上面的例子中，`multiply` 函数返回 `a` 和 `b` 的乘积。请参见下面的输出。
+在上面的例子中，`multiply`函数返回`a`和`b`的乘积。请参见下面的输出。
 
 ![](img/image_rsrc64U.jpg)
 
@@ -2841,8 +2449,8 @@ console.log(multiply(2, 3)); // Output: 6
 let globalVar = "I'm a global variable";
 
 function printGlobalVar() {
-
-console.log(globalVar); }
+  console.log(globalVar);
+}
 
 printGlobalVar(); // Output: I'm a global variable
 ```
@@ -2857,11 +2465,8 @@ printGlobalVar(); // Output: I'm a global variable
 
 ```javascript
 function printLocalVar() {
-
-let localVar = "I'm a local variable";
-
-console.log(localVar);
-
+  let localVar = "I'm a local variable";
+  console.log(localVar);
 }
 
 printLocalVar(); // Output: I'm a local variable
@@ -2877,31 +2482,22 @@ printLocalVar(); // Output: I'm a local variable
 
 ```javascript
 function outer() {
-
-let x = 10;
-
-function inner() {
-
-console.log(x);
-
-}
-
-return inner;
-
+  let x = 10;
+  function inner() {
+    console.log(x);
+  }
+  return inner;
 }
 
 let innerFunc = outer();
-
 innerFunc(); // Output: 10
 ```
 
-在上面的例子中，`outer` 函数返回 `inner` 函数，该函数可以访问外部函数作用域中的 `x` 变量，即使外部函数已经返回。请参见下面的输出；
+在上面的例子中，`outer`函数返回`inner`函数，该函数可以访问外部函数作用域中的`x`变量，即使外部函数已经返回。请参见下面的输出；
 
 ![](img/image_rsrc64X.jpg)
 
-在上面的例子中，`outer` 函数返回 `inner` 函数，该函数可以访问外部函数作用域中的 `x` 变量，即使外部函数已经返回。
-
-请对本章进行详细阐述，附上示例（3000 字）。
+在上面的例子中，`outer`函数返回`inner`函数，该函数可以访问外部函数作用域中的`x`变量，即使外部函数已经返回。
 
 ## 数组与循环
 
@@ -2917,15 +2513,15 @@ innerFunc(); // Output: 10
 let fruits = ["apple", "banana", "orange"];
 ```
 
-在上面的例子中，我们声明了一个名为 `fruits` 的数组，包含三个元素："apple"、"banana" 和 "orange"。
+在上面的例子中，我们声明了一个名为`fruits`的数组，包含三个元素："apple"、"banana" 和 "orange"。
 
-我们可以使用索引号访问数组的各个元素。数组第一个元素的索引始终是 `0`。例如，要访问 `fruits` 数组的第一个元素，我们使用：
+我们可以使用索引号访问数组的各个元素。数组第一个元素的索引始终是`0`。例如，要访问`fruits`数组的第一个元素，我们使用：
 
 ```javascript
 let firstFruit = fruits[0];
 ```
 
-这会将值 "apple" 赋值给 `firstFruit` 变量。
+这会将值 "apple" 赋值给`firstFruit`变量。
 
 数组还有几个内置方法，允许我们操作其所包含的数据一些最常用的数组方法包括：
 
@@ -2948,22 +2544,17 @@ for 循环用于遍历数组或任何其他可迭代对象。它有三个部分�
 let numbers = [1, 2, 3, 4, 5];
 
 for (let i = 0; i < numbers.length; i++) {
-
-console.log(numbers[i]);
-
+  console.log(numbers[i]);
 }
 ```
 
-
-
-
-在上面的示例中，我们使用 `numbers` 数组的`length`属性来确定所需的迭代次数。循环从 0 开始，一直持续到索引等于数组的`length`。见下方的输出。
+在上面的示例中，我们使用`numbers`数组的`length`属性来确定所需的迭代次数。循环从 0 开始，一直持续到索引等于数组的`length`。见下方的输出。
 
 ![](img/image_rsrc64Z.jpg)
 
 ## While 循环
 
-`while` 循环是一种控制流语句，允许你在特定条件为真时重复执行一个代码块。`while` 循环的语法如下：
+`while`循环是一种控制流语句，允许你在特定条件为真时重复执行一个代码块。`while`循环的语法如下：
 
 ```javascript
 while (condition) {
@@ -2971,9 +2562,9 @@ while (condition) {
 }
 ```
 
-在这里，`condition` 是一个布尔表达式，在循环的每次迭代之前都会进行求值。如果条件为真，则执行代码块。这个过程会不断重复，直到条件为假。
+在这里，`condition`是一个布尔表达式，在循环的每次迭代之前都会进行求值。如果条件为真，则执行代码块。这个过程会不断重复，直到条件为假。
 
-让我们通过一个例子来理解 `while` 循环是如何工作的：
+让我们通过一个例子来理解`while`循环是如何工作的：
 
 ```javascript
 let i = 0;
@@ -2983,13 +2574,13 @@ while (i < 5) {
 }
 ```
 
-在这个示例中，`while` 循环将执行代码块，直到 `i` 小于 5。上述代码的输出将是：
+在这个示例中，`while`循环将执行代码块，直到`i`小于 5。上述代码的输出将是：
 
 ![](img/image_rsrc650.jpg)
 
 ## Do-While 循环
 
-`do-while` 循环与 `while` 循环类似，但有一个显著区别：即使条件为假，代码块也会至少执行一次。`do-while` 循环的语法如下：
+`do-while`循环与`while`循环类似，但有一个显著区别：即使条件为假，代码块也会至少执行一次。`do-while`循环的语法如下：
 
 ```javascript
 while (condition) {
@@ -2997,9 +2588,9 @@ while (condition) {
 }
 ```
 
-在这里，`condition` 是一个布尔表达式，在循环的每次迭代之后都会进行求值。如果条件为真，则再次执行代码块。这个过程会不断重复，直到条件为假。
+在这里，`condition`是一个布尔表达式，在循环的每次迭代之后都会进行求值。如果条件为真，则再次执行代码块。这个过程会不断重复，直到条件为假。
 
-让我们通过一个例子来理解 `do-while` 循环是如何工作的：
+让我们通过一个例子来理解`do-while`循环是如何工作的：
 
 ```javascript
 let i = 0;
@@ -3009,13 +2600,13 @@ while (i < 5) {
 }
 ```
 
-在这个示例中，即使 `i` 不小于 5，代码块也会至少执行一次。上述代码的输出将是：
+在这个示例中，即使`i`不小于 5，代码块也会至少执行一次。上述代码的输出将是：
 
 ![](img/image_rsrc651.jpg)
 
 ## forEach 方法
 
-`forEach` 方法是 JavaScript 中的一个内置函数，允许你遍历数组并在每个元素上执行一个函数。`forEach` 方法的语法如下：
+`forEach`方法是 JavaScript 中的一个内置函数，允许你遍历数组并在每个元素上执行一个函数。`forEach`方法的语法如下：
 
 ```javascript
 array.forEach(function(currentValue, index, array) {
@@ -3023,9 +2614,9 @@ array.forEach(function(currentValue, index, array) {
 });
 ```
 
-在这里，`currentValue` 表示当前正在处理的元素，`index` 表示元素的索引，`array` 表示正在扫描的数组。数组的每个元素都会接收代码块的执行。
+在这里，`currentValue`表示当前正在处理的元素，`index`表示元素的索引，`array`表示正在扫描的数组。数组的每个元素都会接收代码块的执行。
 
-为了进一步理解 `forEach` 方法是如何工作的，让我们来看一个例子：
+为了进一步理解`forEach`方法是如何工作的，让我们来看一个例子：
 
 ```javascript
 let fruits = ["apple", "banana", "orange"];
@@ -3033,6 +2624,8 @@ fruits.forEach(function(fruit) {
   console.log(fruit);
 });
 ```
+
+
 
 在这个示例中，`forEach` 方法将为 `fruits` 数组的每个元素执行代码块。上述代码的输出将是：
 
@@ -3053,7 +2646,7 @@ fruits.forEach(fruit => console.log(fruit));
 
 JavaScript 中的对象是属性的组，每个属性都是一个键值对。对象可能具有特征，这些特征可以是其他对象，也可以是基本数据类型（如文本、整数和布尔值）。此外，还可以拥有方法，方法被定义为对象的属性和函数。因为对象让程序员能够高效地组织和管理代码，这对 JavaScript 编程至关重要。
 
- 创建和使用对象
+## 创建和使用对象
 
 在 JavaScript 中创建一个对象，你可以使用对象字面量符号或 `Object` 构造函数。对象字面量符号是创建对象的快捷方式，通过在大括号中包含键值对列表来创建。例如：
 
@@ -3110,7 +2703,7 @@ let person = {
 console.log(person.fullName()); // 输出: "undefined"
 ```
 
-在对象方法中使用箭头方法使用 `this 关键字` 通常是不推荐的，因为会产生问题。
+在对象方法中使用箭头方法使用 `this` 关键字通常是不推荐的，因为会产生问题。
 
 对象方法也可以通过 `call()` 方法在对象之外调用。例如：
 
@@ -3195,14 +2788,11 @@ class Person {
 
 该类还有两个方法：`getFullName` 和 `canVote`。`getFullName` 通过连接姓和名返回人的全名，而 `canVote` 检查人是否满 18 岁或以上并返回真或假。
 
-
-
-
 要从此类创建一个对象，你需要使用 `new` 关键字并带有必要的参数调用构造函数：
 
 ```javascript
 const sammie = new Person('Sammie', 'Smith', 25);
-console.log(john.getFullName()); // 输出: "Sammie Smith"
+console.log(sammie.getFullName()); // 输出: "Sammie Smith"
 console.log(sammie.canVote()); // 输出: true
 ```
 
@@ -3257,7 +2847,7 @@ console.log(alice.canVote()); // 输出: true
 
 # 构造函数与原型
 
-构造函数和原型是 JavaScript 面向编程的重要组成部分。在本节中，我们将探索构造函数和原型是如何工作的，以及如何使用它们来创建对象和类。
+构造函数和原型是 JavaScript 面向对象编程的重要组成部分。在本节中，我们将探索构造函数和原型是如何工作的，以及如何使用它们来创建对象和类。
 
 构造函数是用于创建新对象的函数。它们定义对象的属性和方法，还可以为这些属性定义默认值。当使用 `new` 关键字调用构造函数时，会创建一个新对象，构造函数会初始化对象的属性。
 
@@ -3291,9 +2881,6 @@ Animal.prototype.eat = function() {
 let dog = new Animal("Buddy");
 dog.eat(); // 输出: "Buddy is eating."
 ```
-
-
-
 
 # JavaScript DOM 操作
 
@@ -3331,25 +2918,25 @@ element.setAttribute("src", "image.jpg");
 ```javascript
 const myButton = document.querySelector('#myButton');
 myButton.addEventListener('click', function() {
-console.log('Button clicked!');
+  console.log('Button clicked!');
 });
 ```
 
-在这个示例中，我们首先使用 `querySelector()` 方法选择 ID 为 `myButton` 的按钮元素。然后，我们使用 `addEventListener()` 方法为按钮附加一个点击事件监听器。当按钮被点击时，作为 `addEventListener()` 第二参数传递的函数将执行执行，并在控制台打印“Button clicked!”消息。
+在这个示例中，我们首先使用 `querySelector()` 方法选择 ID 为 `myButton` 的按钮元素。然后，我们使用 `addEventListener()` 方法为按钮附加一个点击事件监听器。当按钮被点击时，作为 `addEventListener()` 第二参数传递的函数将执行，并在控制台打印“Button clicked!”消息。
 
 我们还可以使用 `removeEventListener()` 方法从元素中移除事件监听器。该方法接受与 `addEventListener()` 相同的参数：要移除的事件名称以及最初用事件监听器的函数。
 
 ```javascript
 const myButton = document.querySelector('#myButton');
 function handleClick() {
-console.log('Button clicked!');
+  console.log('Button clicked!');
 }
 myButton.addEventListener('click', handleClick);
 // 之后，我们可以移除事件监听器
 myButton.removeEventListener('click', handleClick);
 ```
 
-在示例示例中，我们首先定义了一个函数 `handleClick()`，它在调用时会向控制台打印消息。然后，我们使用 `addEventListener()` 将 `handleClick()` 作为按钮点击事件的事件监听器。最后，我们使用 `removeEventListener()` 移除事件监听器。
+在示例中，我们首先定义了一个函数 `handleClick()`，它在调用时会向控制台打印消息。然后，我们使用 `addEventListener()` 将 `handleClick()` 作为按钮点击事件的事件监听器。最后，我们使用 `removeEventListener()` 移除事件监听器。
 
 除了 `addEventListener()` 和 `removeEventListener()` 之外，处理事件时常用的一些其他方法和属性。这些包括：
 
@@ -3358,6 +2945,8 @@ myButton.removeEventListener('click', handleClick);
 - `event.stopPropagation()`：此方法停止事件传播。例如，在子元素上调用 `event.stopPropagation()` 可以防止事件传播到其父元素。
 
 以下是如何使用其中一些方法的示例：
+
+
 
 ```javascript
 const myButton = document.querySelector('#myButton');
@@ -3424,10 +3013,6 @@ image_rsrc65D.jpg
 
 在 JavaScript 中，异步编程通常用于处理耗时较长才能完成的操作，例如网络请求、文件系统操作或数据库查询。
 
-
-
-
-
 异步编程的好处是它可以提高应用程序的性能和响应能力。如果没有它，应用程序必须等待每个长耗时任务完成后才能继续执行下一个任务，这会导致应用程序看起来运行缓慢且无响应。通过使用异步编程，应用程序可以在后台执行这些长耗时任务的同时，继续响应用户的输入。
 
 异步编程的一个常见示例是网络请求。当用户点击按钮从服务器获取数据时，应用程序可以使用异步函数来发送请求，并在等待响应的过程中继续执行代码。当响应到达时，该函数会收到通知并处理数据。
@@ -3440,7 +3025,7 @@ image_rsrc65D.jpg
 
 让我们来看一个回调函数的实际示例。假设我们有一个数字数组，并想要遍历数组并将每个数字翻倍。我们可以使用 `map` 方法来实现：
 
-```
+```javascript
 const numbers = [1, 2, 3, 4, 5];
 
 const doubledNumbers = numbers.map(function(number) {
@@ -3595,9 +3180,6 @@ return data;
 }
 ```
 
-
-
-
 # JavaScript 中的 Async/Await
 
 在上述代码中，`await` 关键字用于等待 `fetch` 方法的完成，该方法返回一个解析为 `Response` 对象的 `Promise`。`Response` 对象的 `JSON` 方法也返回一个 `Promise`，该 `Promise` 解析为实际的 `JSON` 数据。通过使用 `await` 关键字，我们等待两个 `Promise` 解析后再返回数据。
@@ -3683,11 +3265,13 @@ fetch('https://api.example.com/data')
 
 ### 使用 Fetch API 发送数据
 
+
+
 ```javascript
 fetch('https://api.example.com/data', {
-method: 'POST',
-body: JSON.stringify({ name: 'John Doe', email: 'johndoe@example.com' }),
-headers: { 'Content-Type': 'application/json' }
+  method: 'POST',
+  body: JSON.stringify({ name: 'John Doe', email: 'johndoe@example.com' }),
+  headers: { 'Content-Type': 'application/json' }
 })
 .then(response => response.json())
 .then(data => console.log(data))
@@ -3810,9 +3394,6 @@ const apiKey = 'YOUR_API_KEY_HERE';
 });
 ```
 
-
-
-
 ```javascript
 const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${location}&appid=${apiKey}&units=metric`;
 
@@ -3826,9 +3407,9 @@ fetch(apiUrl)
     const country = data.sys.country;
     // Update the weather data
     weatherDiv.innerHTML = `
-    <p><<strong>>Location:</strong> ${city}, ${country}</p>
-    <p><<strong>>Temperature:</strong> ${temperature} &deg;C</p>
-    <p><<strong>>Condition:</strong> ${description}</p>
+    <p><strong>Location:</strong> ${city}, ${country}</p>
+    <p><strong>Temperature:</strong> ${temperature} &deg;C</p>
+    <p><strong>Condition:</strong> ${description}</p>
     `;
   })
   .catch(error => {
@@ -3957,15 +3538,24 @@ ES6，也称为 `ECMAScript 2015`，是 JavaScript 语言的一次重大更新�
 
 ES6 引入了一些新功能，其中最显著的变化包括：
 
-- 块作用域变量 (`let` 和 `const`）
+- 块作用域变量 (`let` 和 `const`)
+
 - 箭头函数
+
 - 模板字符串
+
 - 解构
+
 - 类和模块
+
 - 默认参数
+
 - 剩余和扩展运算符
+
 - Promise
+
 - 生成器
+
 - 符号
 
 ## 新功能与语法
@@ -3973,21 +3563,26 @@ ES6 引入了一些新功能，其中最显著的变化包括：
 ES6 为 JavaScript 引入了一些新功能和语法。一些主要的包括：
 
 - **Let 和 const**：ES6 引入了两个新的声明关键字：`let` 和 `const`。与具有函数作用域的 `var` 不同，`let` 和 `const` 具有块作用域。`let` 声明变量可以重新赋值。
+
 - **箭头函数**：箭头函数提供了更简洁的定义语法。它们是匿名函数，使用 `=>` 代替 `function` 关键字。箭头函数也可以作为返回值的简写。
-- **模板字符串**：模板字符串提供了在字符串字面量嵌入表达式的方法。它们使用反引号（`` `）而不是单引号或双引号，并允许在 `${}` 中包含变量和表达式。
+
+- **模板字符串**：模板字符串提供了在字符串字面量嵌入表达式的方法。它们使用反引号（`` ` ``）而不是单引号或双引号，并允许在 `${}` 中包含变量和表达式。
+
 - **解构**：解构提供了一种从数组和对象提取值并将其赋值给变量的方法。它使用简写语法一次性提取多个值。
+
 - **类和模块**：ES6 引入了类语法，提供更传统的面向对象编程模型。类允许定义具有方法和属性的蓝图。ES6 还引入了模块语法，使得文件之间的代码组织和共享更加容易。
+
 - **默认参数**：默认参数允许在未提供值时为函数参数指定默认值。
-- **剩余和扩展运算符**：剩余和扩展运算符提供了更容易处理数组和对象的方法。剩余运算符 `...`可以将多个参数收集到一个数组中，而扩展运算符 `...`可以将数组或对象展开为单独参数。
+
+- **剩余和扩展运算符**：剩余和扩展运算符提供了更容易处理数组和对象的方法。剩余运算符 `...` 可以将多个参数收集到一个数组中，而扩展运算符 `...` 可以将数组或对象展开为单独参数。
+
 - **Promise**：Promise 提供了一种更具读性和可预测性的处理异步操作的方法。它们允许链式异步操作并优雅地处理错误。
+
 - **生成器**：生成器提供了暂停和恢复函数执行的方法。它们用于创建迭代器，用于遍历值的序列。
+
 - **符号**：符号提供了一种创建唯一、不可变值的方法，这些值可以作为对象的键。它们有助于创建私有属性和方法。
 
 ## 使用模块
-
-
-
-
 
 # JavaScript 模块与现代特性
 
@@ -4025,6 +3620,8 @@ console.log(sum(2, 3)); // output: 5
 
 从模块中导出代码的另一种方法是使用 `export default` 语法。通过这种语法，我们可以从模块中导单个值，而无需在导入时使用大括号。例如：
 
+
+
 ```javascript
 // utils.js
 
@@ -4051,19 +3648,19 @@ console.log(sum(2, 3)); // output: 5
 
 JavaScript 是一门不断演进的语言，定期添加新的更新和提案。JavaScript 即将推出的一些特性和更新包括：
 
-*   可选链（Optional Chaining）：此特性允许开发人员安全地访问对象的嵌套属性，而无需担心每个属性是否存在。这有助于减少用于空值检查的样板代码，并提高代码的可读性。
+* 可选链（Optional Chaining）：此特性允许开发人员安全地访问对象的嵌套属性，而无需担心每个属性是否存在。这有助于减少用于空值检查的样板代码，并提高代码的可读性。
 
-*   空值合并运算符（Nullish Coalescing Operator）：该运算符允许开发者检查 `null` 或 `undefined` 值，并简洁地提供默认值。它有助于减少用于空值检查的样板代码，并提供更具读性的代码。
+* 空值合并运算符（Nullish Coalescing Operator）：该运算符允许开发者检查 `null` 或 `undefined` 值，并简洁地提供默认值。它有助于减少用于空值检查的样板代码，并提供更具读性的代码。
 
-*   `Promise.any()`：此特性允许开发者创建一个 `Promise`，当传递给它的任何一个 `Promise` 解决时，该就会就会解决。当你想要执行多个异步操作并在任何一个操作成功完成时获取结果时，这非常有用。
+* `Promise.any()`：此特性允许开发者创建一个 `Promise`，当传递给它的任何一个 `Promise` 解决时，该就会就会解决。当你想要执行多个异步操作并在任何一个操作成功完成时获取结果时，这非常有用。
 
-*   逻辑赋值运算符（Logical Assignment Operators）：这些运算符是常用操作（如 `+=`、`-=`、`*=` 和 `/=`）结合逻辑运算符的简写。例如，`||=` 运算符仅在变量为 `null` 或 `undefined` 时才给其赋值。
+* 逻辑赋值运算符（Logical Assignment Operators）：这些运算符是常用操作（如 `+=`、`-=`、`*=` 和 `/=`）结合逻辑运算符的简写。例如，`||=` 运算符仅在变量为 `null` 或 `undefined` 时才给其赋值。
 
-*   私有字段和方法（Private Fields and Methods）：此特性提供了一种在类中创建私有属性和方法的方法，更容易封装和保护数据。
+* 私有字段和方法（Private Fields and Methods）：此特性提供了一种在类中创建私有属性和方法的方法，更容易封装和保护数据。
 
-*   SIMD（单指令多数据）：此特性允许 JavaScript 对数组执行 SIMD 操作，使其处理大量数据时更快、更高效。
+* SIMD（单指令多数据）：此特性允许 JavaScript 对数组执行 SIMD 操作，使其处理大量数据时更快、更高效。
 
-*   `GlobalThis`：此特性提供了一种跨平台访问全局对象的方法，无论代码运行在什么环境中。
+* `GlobalThis`：此特性提供了一种跨平台访问全局对象的方法，无论代码运行在什么环境中。
 
 这些只是 JavaScript 许多更新和提案中的几个例子。随着语言不断演进，开发者需要跟上最新的特性和语法。
 
@@ -4071,37 +3668,37 @@ JavaScript 是一门不断演进的语言，定期添加新的更新和提案。
 
 遵循最佳实践以确保你的代码整洁、可维护且易读非常重要。在本文中我们将讨论编写 JavaScript 代码时应避免的一些常见错误，以及编写整洁可维护代码的一些最佳实践。
 
-*   不使用 `const` 和 `let`：最常见的错误之一是在声明变量时使用 `var` 而不是 `const` 或 `let`。`var` 关键字在循环或嵌套函数会导致问题，因为它不是块作用的。相比之下，`const` 和 `let` 是块作用的，是声明变量的更好选择。
+* 不使用 `const` 和 `let`：最常见的错误之一是在声明变量时使用 `var` 而不是 `const` 或 `let`。`var` 关键字在循环或嵌套函数会导致问题，因为它不是块作用的。相比之下，`const` 和 `let` 是块作用的，是声明变量的更好选择。
 
-*   未检查 `undefined`：另一个常见错误是未检查 `undefined` 值。这在尝试访问 `undefined` 对象的属性或调用 `undefined` 函数时会导致错误。为了避免这种情况，请在访问它们之前始终检查 `undefined` 值。
+* 未检查 `undefined`：另一个常见错误是未检查 `undefined` 值。这在尝试访问 `undefined` 对象的属性或调用 `undefined` 函数时会导致错误。为了避免这种情况，请在访问它们之前始终检查 `undefined` 值。
 
-*   使用全局变量：全局变量在大型应用程序中使用会导致问题，因为可以从应用程序的任何部分访问和修改。相反，请使用局部变量或将代码封装在模块中以避免使用全局变量。
+* 使用全局变量：全局变量在大型应用程序中使用会导致问题，因为可以从应用程序的任何部分访问和修改。相反，请使用局部变量或将代码封装在模块中以避免使用全局变量。
 
-*   不使用严格模式：严格模式是 JavaScript 的一项特性，有助于捕获常见的编码错误并使编写安全代码更容易。在你的 JavaScript 代码中始终使用严格模式以避免常见错误。
+* 不使用严格模式：严格模式是 JavaScript 的一项特性，有助于捕获常见的编码错误并使编写安全代码更容易。在你的 JavaScript 代码中始终使用严格模式以避免常见错误。
 
-*   不处理错误：错误处理是编写 JavaScript 代码的一个重要方面。不处理错误会导致意外行为，并使代码调试变得困难。请始终通过 `try-catch` 块或返回错误对象来处理错误。
+* 不处理错误：错误处理是编写 JavaScript 代码的一个重要方面。不处理错误会导致意外行为，并使代码调试变得困难。请始终通过 `try-catch` 块或返回错误对象来处理错误。
 
 ## 编写整洁可维护代码的最佳实践
 
-*   使用描述性名称：为变量、函数和类使用描述性名称，以便更容易理解它们的作用。避免使用单字母或通用名称，因为这些名称可能使代码目的变得难以理解。
+* 使用描述性名称：为变量、函数和类使用描述性名称，以便更容易理解它们的作用。避免使用单字母或通用名称，因为这些名称可能使代码目的变得难以理解。
 
-*   编写模块化代码：模块化代码是指组织成更小的、可重用模块的代码。这使得代码更容易维护和调试，并减少了引入 bug 的概率。使用模块封装你的代码并避免使用全局变量。
+* 编写模块化代码：模块化代码是指组织成更小的、可重用模块的代码。这使得代码更容易维护和调试，并减少了引入 bug 的概率。使用模块封装你的代码并避免使用全局变量。
 
-*   使用注释：使用注释解释代码的作用、其工作原理以及任何潜在的问题或陷阱（gotchas）。这使得其他开发者更容易理解和维护代码。
+* 使用注释：使用注释解释代码的作用、其工作原理以及任何潜在的问题或陷阱（gotchas）。这使得其他开发者更容易理解和维护代码。
 
-*   避免嵌套代码：避免使用嵌套循环或嵌套函数，因为它们可能会使代码难以阅读和理解。相反，请使用模块化代码和函数将代码拆分为更小易管理的部分。
+* 避免嵌套代码：避免使用嵌套循环或嵌套函数，因为它们可能会使代码难以阅读和理解。相反，请使用模块化代码和函数将代码拆分为更小易管理的部分。
 
-*   使用正确的缩进：正确的缩进对于提高代码的可读性和理解性很重要。为每一层代码使用一致的缩进，避免混合使用制表符和空格。
+* 使用正确的缩进：正确的缩进对于提高代码的可读性和理解性很重要。为每一层代码使用一致的缩进，避免混合使用制表符和空格。
 
-*   使用分号：虽然 JavaScript 不是强制，但使用分号终止语句是一种良好的习惯。这使得代码更容易阅读并避免潜在错误。
+* 使用分号：虽然 JavaScript 不是强制，但使用分号终止语句是一种良好的习惯。这使得代码更容易阅读并避免潜在错误。
 
-*   使用 `const` 和 `let`：声明变量时使用 `const` 和 `let` 代替 `var`。这使得代码更容易阅读和理解，并避免潜在的作用域问题。
+* 使用 `const` 和 `let`：声明变量时使用 `const` 和 `let` 代替 `var`。这使得代码更容易阅读和理解，并避免潜在的作用域问题。
 
-*   使用模板字符串：构建字符串时使用模板字符串代替拼接。模板字符串使得构建复杂字符串更容易，且比拼接更具可读性。
+* 使用模板字符串：构建字符串时使用模板字符串代替拼接。模板字符串使得构建复杂字符串更容易，且比拼接更具可读性。
 
-*   使用箭头函数：使用箭头函数代替传统的函数声明。箭头函数更简洁、易读。
+* 使用箭头函数：使用箭头函数代替传统的函数声明。箭头函数更简洁、易读。
 
-*   使用解构：使用解构从对象和数组中提取值。解构使得处理复杂数据结构变得更容易，比传统方法更具可读性。
+* 使用解构：使用解构从对象和数组中提取值。解构使得处理复杂数据结构变得更容易，比传统方法更具可读性。
 
 # 第二十二章
 
@@ -4110,10 +3707,6 @@ JavaScript 是一门不断演进的语言，定期添加新的更新和提案。
 JavaScript 实践练习是开发者通过构建现实应用程序来练习编码技能的极佳方法。这些练习提供了将 JavaScript 课程和教程中学到的概念应用于实际场景的机会。项目的复杂程度和范围各不相同，从简单的待事项列表应用到带有后端服务器的完整 Web 应用程序。
 
 进行项目练习有助于开发者对自己的编码能力建立信心，学习新技术并开发解决问题的能力。它还提供了探索新框架和库的机会，并在使用它们方面获得实战经验。
-
-
-
-
 
 此外，JavaScript 实战练习可以是开发者作品集的极佳补充。潜在的雇主可以通过查看他们完成的项目来评估开发者的技能。此外，它还可以帮助开发者与其他从事相似项目的开发者建立联系并进行协作。
 
@@ -4125,7 +3718,7 @@ JavaScript 实践练习是开发者通过构建现实应用程序来练习编码
 
 以下是一个用 JavaScript 编写的简单待办事项应用示例及其对应的 HTML 和 CSS 代码：
 
-### HTML 代码：
+#### HTML 代码：
 
 ```html
 <!DOCTYPE html>
@@ -4141,13 +3734,13 @@ JavaScript 实践练习是开发者通过构建现实应用程序来练习编码
 <h1>To-do List</h1>
 <input type="text" id="new-todo" placeholder="Enter new to-do item">
 <button id="add-todo">Add</button>
-<ul id="todo-list"></</ul>
-<script src="index.js"></script>
+<ul id="todo-list</ul>
+<script src="index.js</script>
 </body>
 </html>
 ```
 
-### CSS 代码：
+#### CSS 代码：
 
 ```css
 ul {
@@ -4162,7 +3755,7 @@ li {
 }
 ```
 
-### JavaScript 代码：
+#### JavaScript 代码：
 
 ```javascript
 const todoList = document.getElementById('todo-list');
@@ -4226,7 +3819,7 @@ renderTodos();
 
 这是一个使用 HTML、CSS 和 JavaScript 执行简单和复杂数学运算的示例计算器应用示例：
 
-### HTML 代码：
+#### HTML 代码：
 
 ```html
 <!DOCTYPE html>
@@ -4245,14 +3838,14 @@ renderTodos();
 </div>
 <div class="buttons">
 <button onclick="clearResult()">C</button>
-<button onclick="backspace()">&larr;</button>
-<button onclick="calculate('^')">x<<sup>>y</sup></button>
-<button onclick="calculate('/')">&divide;</button>
-<button onclick="calculate('*')">&times;</button>
+<button onclick="backspace()">&larr</button>
+<button onclick="calculate('^')">x<<sup>>y</sup</button>
+<button onclick="calculate('/')">&divide</button>
+<button onclick="calculate('*')">&times</button>
 <button onclick="calculate('-')">-</button>
 <button onclick="calculate('+')">+</button>
 <button onclick="calculate('%')">%</button>
-<button onclick="calculate('.')">.</button>
+<button onclick="calculate('.')"></button>
 <button onclick="calculate('0')">0</button>
 <button onclick="calculate('1')">1</button>
 <button onclick="calculate('2')">2</button>
@@ -4263,9 +3856,9 @@ renderTodos();
 <button onclick="calculate('7')">7</button>
 <button onclick="calculate('8')">8</button>
 <button onclick="calculate('9')">9</button>
-<button onclick="calculate('(')">">(</button>
-<button onclick="calculate(')')">)</button>
-<button onclick="calculate('pi')">&pi;</button>
+<button onclick="calculate('(')"></button>
+<button onclick="calculate(')')"></button>
+<button onclick="calculate('pi')">&pi</button>
 <button onclick="calculate('e')">e</button>
 <button onclick="calculate('sqrt')">√</button>
 <button onclick="calculate('sin')">sin</button>
@@ -4279,16 +3872,16 @@ renderTodos();
 <button onclick="calculate('exp')">exp</button>
 <button onclick="calculate('min')">min</button>
 <button onclick="calculate('max')">max</button>
-<button onclick="equal()">=</button>
+<button onclick="equal()"></button>
 </div>
 </div>
 </div>
-<script src="index.js"></script>
+<script src="index.js</script>
 </body>
 </html>
 ```
 
-### CSS 代码：
+#### CSS 代码：
 
 ```css
 body {
@@ -4327,7 +3920,9 @@ button {
 }
 ```
 
-### JavaScript 代码：
+#### JavaScript 代码：
+
+
 
 ```javascript
 let result = document.getElementById("result");
@@ -4384,10 +3979,6 @@ function backspace() {
   result.value = result.value.substring(0, result.value.length - 1);
 }
 ```
-
-
-
-
 
 ```javascript
 expression = expression.replace("ln(", "Math.log(");
@@ -4459,9 +4050,9 @@ result.value = "";
 
 ### 练习 3：使用 JavaScript 创建简单游戏
 
-下面是一个使用 HTML、CSS 和 JavaScript 创建的名为“打地鼠”的简单游戏示例：
+下面是一个使用 `HTML`、`CSS` 和 `JavaScript` 创建的名为“打地鼠”的简单游戏示例：
 
-### HTML 代码
+#### HTML 代码
 
 ```html
 <!DOCTYPE html>
@@ -4539,7 +4130,7 @@ result.value = "";
 </html>
 ```
 
-### CSS 代码
+#### CSS 代码
 
 ```css
 .game {
@@ -4631,7 +4222,7 @@ color: #FF6F00;
 }
 ```
 
-### JavaScript 代码
+#### JavaScript 代码
 
 ```javascript
 const holes = document.querySelectorAll('.hole');
@@ -4733,46 +4324,48 @@ setTimeout(() => timeUp = true, 10000);
 
 部署和托管是软件开发的关键环节，涉及将应用程序提供给各种设备和平台上的用户。根据应用程序类型、预算和所需控制级别，有多种部署和托管选项，各有优缺点。在本回答中，我们将讨论一些最常见的部署和托管选项。
 
-*   本地部署：此部署选项涉及在位于现场的服务器或其他硬件上运行应用程序。本地部署使企业能够更好地控制其应用程序和数据，但维护和升级硬件成本较高，并且需要经验丰富的 IT 团队来管理基础设施。
+*   **本地部署**：此部署选项涉及在位于现场的服务器或其他硬件上运行应用程序。本地部署使企业能够更好地控制其应用程序和数据，但维护和升级硬件成本较高，并且需要经验丰富的 IT 团队来管理基础设施。
 
-*   云部署：云部署涉及在由云服务提供商（如 Amazon Web Services (AWS)、Microsoft Azure 和 Google Cloud Platform (GCP)）托管的远程服务器上运行应用程序。云部署具有可扩展性、灵活性和成本效益，因为企业只需为使用的资源付费。云服务提供商还提供数据库、存储和分析等各种服务，使企业能够轻松地将不同的服务和功能集成到其应用程序中。
+*   **云部署**：云部署涉及在由云服务提供商（如 Amazon Web Services (`AWS`)、Microsoft `Azure` 和 Google Cloud Platform (`GCP`)）托管的远程服务器上运行应用程序。云部署具有可扩展性、灵活性和成本效益，因为企业只需为使用的资源付费。云服务提供商还提供数据库、存储和分析等各种服务，使企业能够轻松地将不同的服务和功能集成到其应用程序中。
 
-*   虚拟专用服务器 (VPS) 托管：VPS 托管涉及从托管提供商处租用虚拟服务器。与共享托管相比，VPS 托管对服务器环境的控制更多，并且比专用托管更实惠。但是，VPS 托管需要一定的技术知识来设置和管理，企业需要确保服务器资源足以满足其应用程序的需求。
+*   **虚拟专用服务器 (`VPS`) 托管**：`VPS` 托管涉及从托管提供商处租用虚拟服务器。与共享托管相比，`VPS` 托管对服务器环境的控制更多，并且比专用托管更实惠。但是，`VPS` 托管需要一定的技术知识来设置和管理，企业需要确保服务器资源足以满足其应用程序的需求。
 
-*   共享托管：共享托管涉及将应用程序托管在与其他用户共享的服务器上。共享托管是最实惠的托管选项，非常适合小型企业或个人拥有的小型应用程序。但是，共享托管对服务器环境的控制有限，并且共享资源可能导致性能问题。
+*   **共享托管**：共享托管涉及将应用程序托管在与其他用户共享的服务器上。共享托管是最实惠的托管选项，非常适合小型企业或个人拥有的小型应用程序。但是，共享托管对服务器环境的控制有限，并且共享资源可能导致性能问题。
 
-*   专用托管：专用托管涉及租用完全专用于某个应用程序的物理服务器。专用托管提供对服务器环境的完全控制，非常适合高流量或资源密集型应用程序。但是，专用托管成本高昂，并且需要技术知识来设置和管理。
+*   **专用托管**：专用托管涉及租用完全专用于某个应用程序的物理服务器。专用托管提供对服务器环境的完全控制，非常适合高流量或资源密集型应用程序。但是，专用托管成本高昂，并且需要技术知识来设置和管理。
 
-*   容器化：容器化涉及将应用程序打包到容器中，这些容器可以在不同的平台和环境中一致地运行。容器化提供了一个标准化的环境，开发人员可以在其中构建、测试和部署应用程序。容器化还允许轻松扩展、更新和维护应用程序。容器化技术包括 Docker 和 Kubernetes。
+*   **容器化**：容器化涉及将应用程序打包到容器中，这些容器可以在不同的平台和环境中一致地运行。容器化提供了一个标准化的环境，开发人员可以在其中构建、测试和部署应用程序。容器化还允许轻松扩展、更新和维护应用程序。容器化技术包括 `Docker` 和 `Kubernetes`。
 
 ### 了解几种更便宜的网站托管平台
 
 多家网络托管提供商为个人和小型企业提供经济实惠的托管方案。以下是一些最便宜的选择：
 
-*   Hostinger：Hostinger 提供共享托管方案，起价仅为每月 0.99 美元。其方案包括免费域名、网站构建器和 24/7 客户支持。
+*   **Hostinger**：`Hostinger` 提供共享托管方案，起价仅为每月 0.99 美元。其方案包括免费域名、网站构建器和 24/7 客户支持。
 
-*   Bluehost：Bluehost 是一家流行的网络托管提供商，提供共享托管方案，起价为每月 2.95 美元。其方案包括免费域名、SSL 证书和网站构建器。
+*   **Bluehost**：`Bluehost` 是一家流行的网络托管提供商，提供共享托管方案，起价为每月 2.95 美元。其方案包括免费域名、`SSL` 证书和网站构建器。
 
-*   DreamHost：DreamHost 提供共享托管方案，起价为每月 2.59 美元。其方案包括无限存储和带宽、免费域名以及 24/7 客户支持。
+*   **DreamHost**：`DreamHost` 提供共享托管方案，起价为每月 2.59 美元。其方案包括无限存储和带宽、免费域名以及 24/7 客户支持。
 
-*   A2 Hosting：A2 Hosting 提供共享托管方案，起价为每月 2.99 美元。其方案包括无限存储和带宽、免费 SSL 证书以及 24/7 客户支持。
+*   **A2 Hosting**：`A2 Hosting` 提供共享托管方案，起价为每月 2.99 美元。其方案包括无限存储和带宽、免费 `SSL` 证书以及 24/7 客户支持。
 
-*   HostGator：HostGator 是另一家流行的网络托管提供商，提供共享托管方案，起价为每月 2.75 美元。其方案包括免费域名、网站构建器和 24/7 客户支持。
+*   **HostGator**：`HostGator` 是另一家流行的网络托管提供商，提供共享托管方案，起价为每月 2.75 美元。其方案包括免费域名、网站构建器和 24/7 客户支持。
 
 ### 如何托管你的网站
 
 托管网站需要几个基本步骤，包括：
 
+- **选择托管提供商**：目前有多种托管提供商可用，例如 `Bluehost`、`HostGator`、`SiteGround` 等。你可以比较每个提供商的定价、功能和客户支持，并选择最符合你需求和预算的一个。
 
-
-
-
-- **选择托管提供商**：目前有多种托管提供商可用，例如 Bluehost、HostGator、SiteGround 等。你可以比较每个提供商的定价、功能和客户支持，并选择最符合你需求和预算的一个。
 - **选择托管计划**：一旦你选择了托管提供商，你就需要选择一个托管计划。大多数提供商会根据你所需的功能和资源（如存储空间、带宽、电子邮件账户等）提供不同的计划。
-- **注册域名**：域名是你的网站的地址，例如 `www.example.com`。你可以从域名注册商（如 Namecheap 或 GoDaddy）购买域名。
-- **将你的域名连接到你的托管账户**：你需要更新域名的 DNS 设置，以指向你的托管提供商的服务器。你通常可以通过域名注册商的控制面板进行此操作。
-- **上传你的网站文件**：你可以使用 FTP 客户端（如 FileZilla）将网站文件上传到托管账户。或者，许多托管提供商还提供网站生成器或针对 WordPress 等流行 CMS 平台的一键安装工具。
-- **测试你的网站**：一旦上传了网站文件，你就想要测试你的网站以确保一切运行正常。你可以通过在网络浏览器中访问网站的 URL 来实现。
+
+- **注册域名**：域名是你的网站的地址，例如 `www.example.com`。你可以从域名注册商（如 `Namecheap` 或 `GoDaddy`）购买域名。
+
+- **将你的域名连接到你的托管账户**：你需要更新域名的 `DNS` 设置，以指向你的托管提供商的服务器。你通常可以通过域名注册商的控制面板进行此操作。
+
+- **上传你的网站文件**：你可以使用 `FTP` 客户端（如 `FileZilla`）将网站文件上传到托管账户。或者，许多托管提供商还提供网站生成器或针对 `WordPress` 等流行 `CMS` 平台的一键安装工具。
+
+- **测试你的网站**：一旦上传了网站文件，你就想要测试你的网站以确保一切运行正常。你可以通过在网络浏览器中访问网站的 `URL` 来实现。
+
 - **发布你的网站**：当你对网站的外观和功能满意后，就可以通过将其向公众开放来正式发布它。
 
 需要注意的是，具体的步骤可能会根据你选择的托管提供商和网站平台而略有不同。
@@ -4783,9 +4376,9 @@ setTimeout(() => timeUp = true, 10000);
 
 在整本书中，你学习了 `HTML` 如何提供网页的结构和语义化标记，让你能够有效地组织和展示内容。`CSS` 赋予了你将这些页面转化为迷人且视觉惊艳的体验的能力，并能够自定义布局、颜色、字体排版等。
 
-通过 `JavaScript`，你探索了交互和动态行为的世界，使你能够添加功能、处理用户交互，并实时操作页面元素。通过掌握 `JavaScript`，你获得了创建引人胜的用户体验并构建超越静态内容的 Web 应用程序的力量。
+通过 `JavaScript`，你探索了交互和动态行为的世界，使你能够添加功能、处理用户交互，并实时操作页面元素。通过掌握 `JavaScript`，你获得了创建引人入胜的用户体验并构建超越静态内容的 Web 应用程序的力量。
 
-此外，你发现了响应式设计的重要性，确保你的网站能够完美适应各种屏幕尺寸和设备。这种对响应性和用户体验的强调在当今移动驱动的世界中变得至关重要，而你现在已经了了所有平台上提供无缝体验的技术和最佳实践。
+此外，你发现了响应式设计的重要性，确保你的网站能够完美适应各种屏幕尺寸和设备。这种对响应性和用户体验的强调在当今移动驱动的世界中变得至关重要，而你现在已经掌握了所有平台上提供无缝体验的技术和最佳实践。
 
 从基础概念到更高级的主题（如 `DOM manipulation`、`event handling` 和 `AJAX`），本书提供了对核心 Web 开发技术的坚实理解。你学会了利用 `HTML`、`CSS` 和 `JavaScript` 的潜力来释放你的创意，并在 Web 上实现你的愿景。
 
@@ -4796,160 +4389,172 @@ setTimeout(() => timeUp = true, 10000);
 # 索引
 
 ### A
+
 - 抽象，216
-- 抽象，216
+
 - 加法，229, 239, 289, 345
-- AJAX，322, 323, 331, 333
-- alt，7, 14, 20, 33, 72, 74, 78, 165, 176, 177, 188, 189, 201, 202
-- 备选，14, 20, 33, 72
-- 动画，123, 124, 125, 126, 127, 128, 129, 133
-- 动画，3, 63, 64, 94, 123, 126, 127, 133, 138, 140, 159, 210
-- 动画，vi, 123, 124, 140
-- 匿名，306, 338
-- API，299, 300, 310, 319, 322, 323, 324, 325, 329, 331, 333
-- APIs，8, 322, 323, 325, 331
-- 应用，215, 305, 325, 340, 346, 350
-- 应用，210, 211, 212, 213, 214, 215, 216, 301, 322, 323, 331, 342, 345, 370
-- 应用，210, 211, 212, 345
-- 参数，264, 290, 293, 295, 302, 309, 312, 339
-- 算术，229, 239
-- 数组，224, 235, 236, 273, 274, 279, 310, 339
-- 数组，223, 232, 235, 278, 338, 342, 344
-- 文章，4, 11, 75
-- 辅助，10, 74
-- Async/await，319, 320
-- 异步，212, 308, 309, 310, 311, 313, 318, 339
-- 异步，212, 308, 322, 331
-- 原子，9, 217
-- 属性，1, 5, 6, 20, 21, 25, 29, 31, 32, 33, 35, 36, 39, 41, 43, 44, 45, 46, 47, 48, 49, 51, 52, 53, 58, 59, 62, 70, 74, 98, 135
-- 属性，2, 13, 14, 20, 25, 33, 37, 39, 41, 42, 49, 51, 52, 53, 57, 79, 109, 134
-- 属性，ii, 2, 13, 14, 20
-- 音频，2, 3, 7, 11, 38, 39, 40, 73
-- 身份验证，323
-- Azure，369
-### B
-- 背景，308, 309, 327, 328, 334, 354, 355, 364, 365
-- 反引号，225
-- 带宽，371, 372
-- BitDegree，210
-- 块，223, 254, 255, 256, 257, 258, 259, 260, 264, 276, 277, 278, 279, 320, 338, 342, 364
-- 块级，223
-- 块，24, 33, 159, 254, 264, 308, 319, 343
-- Bluehost，371
-- 蓝图，289, 297, 338
-- Body，12, 13, 15, 16, 17, 18, 80, 82, 83, 85, 91, 118, 136, 141, 142, 146, 147, 152, 154, 164, 166, 175, 178, 179, 187, 190, 191, 200, 202, 203
-- 布尔值，223, 230
-- 框，55, 99, 108, 109, 110, 111, 112, 113, 114, 115, 143, 144, 150, 154, 156, 166, 179, 182, 183, 190, 192, 196, 202, 206
-- 边，3, 55, 57, 60, 62, 107, 138
-- 盒模型，110, 111, 112, 113, 115
-- 盒模型，111, 166, 179, 190, 202
-- 大括号，233, 254, 255, 264, 282, 340, 341
-- 括号，226
-- 括号，235, 273
-- 括号，9
-- 终止，260, 261, 262, 343
-- Brendan，210, 211
-- 浏览器，2, 3, 5, 6, 8, 11, 12, 15, 16, 17, 18, 19, 21, 29, 34, 36, 39, 53, 63, 66, 70, 92, 99, 100, 117, 118, 124, 137, 138, 160, 210, 211, 212, 213, 214, 215, 216, 217, 218, 219, 220, 221, 225, 254, 255, 256, 257, 258, 259, 260, 262, 263, 264, 268, 269, 276, 277, 278, 279, 280, 282, 283, 293, 300, 301, 308, 309, 318, 319, 320, 321, 337, 339, 340, 341, 342, 343, 344, 345, 346
-- 预算，369, 371
-- 按钮，14, 42, 47, 48, 51, 52, 126, 127, 142, 144, 147, 150, 152, 153, 154, 156, 178, 182, 183, 185, 196
-### C
-- C++,213, 214, 216, 259
-- 计算器，350, 351, 354
-- 回调，308, 309, 310, 311, 312, 314
-- 回调，309, 311
-- Canvas，iv, 63, 64, 65, 66
-- 区分大小，213
-- catch，316, 317, 332
-- 链式，341
-- 类，213, 289, 290, 291, 292, 293, 295, 297, 300, 326, 338, 351, 362, 363
-- 类，214, 216, 289, 294, 297, 337, 341, 343
-- 类，289, 291, 337, 338
-- 客户端，63, 66, 67, 71, 72
-- 客户端，21
-- 闭包，264
-- 云，369
-- 合并，341
-- 代码，3, 5, 6, 7, 8, 10, 11, 16, 19, 21, 39, 46, 47, 48, 49, 51, 52, 53, 55, 56, 58, 59, 64, 73, 77, 79, 80, 82, 83, 84, 91, 94, 96, 98, 99, 100, 101, 103, 107, 114, 117, 122, 123, 130, 131, 132, 133, 134, 136, 137, 138, 139, 141, 142, 145, 147, 151, 154, 163, 166, 169, 187, 210, 211, 212, 213, 214, 215, 216, 217, 218, 219, 220, 221, 225, 254, 255, 256, 257, 258, 259, 260, 262, 263, 264, 268, 269, 276, 277, 278, 279, 280, 282, 283, 293, 300, 301, 308, 309, 318, 319, 320, 321, 337, 339, 340, 341, 342, 343, 344, 345, 346
-- 代码，217, 220, 325, 326, 329, 333, 334, 335, 346, 347, 350, 353, 356, 362, 364, 366
-- 代码运行，220
-- 代码，219, 343, 345
-- 集合，273
-- 冒号，233
-- 颜色，3, 5, 55, 59, 62, 66, 73, 74, 94, 95, 97, 98, 99, 100, 104, 106, 107, 108, 109, 113, 125, 126, 127, 128, 129, 131, 132, 133, 142, 143, 144, 148, 149, 150, 155, 156, 160, 166, 167, 179, 180, 182, 183, 191, 192, 193, 196, 197, 203, 204, 205, 206, 207, 208
-- 列，51, 54, 55, 56, 57, 58, 59, 60, 120, 121, 122
-- 命令，218, 219, 220
-- 比较，244, 247, 371
-- 比较，244
-- 兼容性，8, 124, 137, 171
+
+- `AJAX`，322, 323, 331, 333
 
 
 
+# 索引
+
+## A
+
+- **alt**，7, 14, 20, 33, 72, 74, 78, 165, 176, 177, 188, 189, 201, 202
+- **备选**，14, 20, 33, 72
+- **动画**，123, 124, 125, 126, 127, 128, 129, 133
+- **动画**，3, 63, 64, 94, 123, 126, 127, 133, 138, 140, 159, 210
+- **动画**，vi, 123, 124, 140
+- **匿名**，306, 338
+- **API**，299, 300, 310, 319, 322, 323, 324, 325, 329, 331, 333
+- **APIs**，8, 322, 323, 325, 331
+- **应用**，215, 305, 325, 340, 346, 350
+- **应用**，210, 211, 212, 213, 214, 215, 216, 301, 322, 323, 331, 342, 345, 370
+- **应用**，210, 211, 212, 345
+- **参数**，264, 290, 293, 295, 302, 309, 312, 339
+- **算术**，229, 239
+- **数组**，224, 235, 236, 273, 274, 279, 310, 339
+- **数组**，223, 232, 235, 278, 338, 342, 344
+- **文章**，4, 11, 75
+- **辅助**，10, 74
+- **Async/await**，319, 320
+- **异步**，212, 308, 309, 310, 311, 313, 318, 339
+- **异步**，212, 308, 322, 331
+- **原子**，9, 217
+- **属性**，1, 5, 6, 20, 21, 25, 29, 31, 32, 33, 35, 36, 39, 41, 43, 44, 45, 46, 47, 48, 49, 51, 52, 53, 58, 59, 62, 70, 74, 98, 135
+- **属性**，2, 13, 14, 20, 25, 33, 37, 39, 41, 42, 49, 51, 52, 53, 57, 79, 109, 134
+- **属性**，ii, 2, 13, 14, 20
+- **音频**，2, 3, 7, 11, 38, 39, 40, 73
+- **身份验证**，323
+- **Azure**，369
+
+## B
+
+- **背景**，308, 309, 327, 328, 334, 354, 355, 364, 365
+- **反引号**，225
+- **带宽**，371, 372
+- **BitDegree**，210
+- **块**，223, 254, 255, 256, 257, 258, 259, 260, 264, 276, 277, 278, 279, 320, 338, 342, 364
+- **块级**，223
+- **块**，24, 33, 159, 254, 264, 308, 319, 343
+- **Bluehost**，371
+- **蓝图**，289, 297, 338
+- **Body**，12, 13, 15, 16, 17, 18, 80, 82, 83, 85, 91, 118, 136, 141, 142, 146, 147, 152, 154, 164, 166, 175, 178, 179, 187, 190, 191, 200, 202, 203
+- **布尔值**，223, 230
+- **框**，55, 99, 108, 109, 110, 111, 112, 113, 114, 115, 143, 144, 150, 154, 156, 166, 179, 182, 183, 190, 192, 196, 202, 206
+- **边**，3, 55, 57, 60, 62, 107, 138
+- **盒模型**，110, 111, 112, 113, 115
+- **盒模型**，111, 166, 179, 190, 202
+- **大括号**，233, 254, 255, 264, 282, 340, 341
+- **括号**，226
+- **括号**，235, 273
+- **括号**，9
+- **终止**，260, 261, 262, 343
+- **Brendan**，210, 211
+- **浏览器**，2, 3, 5, 6, 8, 11, 12, 15, 16, 17, 18, 19, 21, 29, 34, 36, 39, 53, 63, 66, 70, 92, 99, 100, 117, 118, 124, 137, 138, 160, 210, 211, 212, 213, 214, 215, 216, 217, 218, 219, 220, 221, 225, 254, 255, 256, 257, 258, 259, 260, 262, 263, 264, 268, 269, 276, 277, 278, 279, 280, 282, 283, 293, 300, 301, 308, 309, 318, 319, 320, 321, 337, 339, 340, 341, 342, 343, 344, 345, 346
+- **预算**，369, 371
+- **按钮**，14, 42, 47, 48, 51, 52, 126, 127, 142, 144, 147, 150, 152, 153, 154, 156, 178, 182, 183, 185, 196
+
+## C
+
+- **C++**，213, 214, 216, 259
+- **计算器**，350, 351, 354
+- **回调**，308, 309, 310, 311, 312, 314
+- **回调**，309, 311
+- **Canvas**，iv, 63, 64, 65, 66
+- **区分大小**，213
+- **catch**，316, 317, 332
+- **链式**，341
+- **类**，213, 289, 290, 291, 292, 293, 295, 297, 300, 326, 338, 351, 362, 363
+- **类**，214, 216, 289, 294, 297, 337, 341, 343
+- **类**，289, 291, 337, 338
+- **客户端**，63, 66, 67, 71, 72
+- **客户端**，21
+- **闭包**，264
+- **云**，369
+- **合并**，341
+- **代码**，3, 5, 6, 7, 8, 10, 11, 16, 19, 21, 39, 46, 47, 48, 49, 51, 52, 53, 55, 56, 58, 59, 64, 73, 77, 79, 80, 82, 83, 84, 91, 94, 96, 98, 99, 100, 101, 103, 107, 114, 117, 122, 123, 130, 131, 132, 133, 134, 136, 137, 138, 139, 141, 142, 145, 147, 151, 154, 163, 166, 169, 187, 210, 211, 212, 213, 214, 215, 216, 217, 218, 219, 220, 221, 225, 254, 255, 256, 257, 258, 259, 260, 262, 263, 264, 268, 269, 276, 277, 278, 279, 280, 282, 283, 293, 300, 301, 308, 309, 318, 319, 320, 321, 337, 339, 340, 341, 342, 343, 344, 345, 346
+- **代码**，217, 220, 325, 326, 329, 333, 334, 335, 346, 347, 350, 353, 356, 362, 364, 366
+- **代码运行**，220
+- **代码**，219, 343, 345
+- **集合**，273
+- **冒号**，233
+- **颜色**，3, 5, 55, 59, 62, 66, 73, 74, 94, 95, 97, 98, 99, 100, 104, 106, 107, 108, 109, 113, 125, 126, 127, 128, 129, 131, 132, 133, 142, 143, 144, 148, 149, 150, 155, 156, 160, 166, 167, 179, 180, 182, 183, 191, 192, 193, 196, 197, 203, 204, 205, 206, 207, 208
+- **列**，51, 54, 55, 56, 57, 58, 59, 60, 120, 121, 122
+- **命令**，218, 219, 220
+- **比较**，244, 247, 371
+- **比较**，244
+- **兼容性**，8, 124, 137, 171
+
+## 索引参考
+
+- `编译的`，213, 214
+- `编译时`，214
+- `复杂的`，211, 213, 215, 216, 223, 249, 309, 344, 350
+- `拼接`，227
+- `条件`，249, 250, 251, 252, 253, 254, 255, 256, 257, 259, 274, 276, 277, 278
+- `条件`，254
+- `条件`，249, 250, 251, 254, 258, 263, 325
+- `配置`，220
+- `连接`，71, 72
+- `连接`，71, 172
+- `一致性`，52, 101, 118
+- `控制台`，225, 226, 228, 229, 231, 233, 234, 235, 236, 237, 238, 239, 241, 242, 243, 244, 245, 246, 247, 249, 250, 251, 253, 254, 255, 256, 258, 259, 262, 264, 265, 267, 268, 269, 270, 271, 274, 275, 276, 278, 279, 280, 283, 290, 293, 296, 297, 298, 302, 303, 304, 310, 311, 312, 314, 315, 317, 320, 323, 324, 325, 330, 332, 335, 340
+- `构造函数`，282, 289, 290, 292, 293, 294, 295, 296, 297, 298
+- `构造函数`，294
+- `容器化`，370
+- `内容`，1, 2, 3, 4, 6, 7, 9, 10, 11, 12, 13, 14, 15, 17, 18, 19, 20, 21, 23, 24, 25, 32, 38, 54, 63, 67, 72, 73, 74, 75, 76, 77, 78, 79, 80, 82, 85, 94, 95, 96, 104, 105, 110, 111, 112, 113, 116, 121, 124, 129, 131, 137, 141, 145, 148, 151, 152, 154, 157, 158, 162, 164, 168, 169, 171, 172, 175, 187, 192, 193, 200, 204, 205, 206
+- `对比`，213, 214, 215, 308, 342
+- `控制`，36, 39, 40, 74, 119
+- `已转换`，324
+- `创建`，1, 2, 4, 7, 8, 11, 13, 14, 15, 20, 24, 25, 26, 28, 29, 31, 33, 41, 42, 45, 46, 47, 48, 50, 51, 54, 56, 61, 62, 63, 64, 65, 66, 67, 69, 71, 72, 79, 91, 93, 94, 95, 96, 104, 105, 110, 113, 115, 118, 120, 123, 126, 127, 128, 129, 130, 140, 157, 159, 160, 161, 162, 166, 171, 174, 187
+- `跨平台`，8
+- `密码学的`，6
+- `CSS`，i, iv, vii, 1, 2, 3, 8, 9, 12, 13, 25, 38, 55, 57, 59, 62, 66, 86, 87, 88, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 142, 145, 147, 151, 154, 157, 159, 160, 162, 163, 166, 169, 170, 171, 172, 174, 179, 187, 190, 199, 199, 202, 210, 213, 300, 307, 326, 334, 346, 347, 353, 362
+- `自定义`，51, 132, 135, 136, 140, 171
+- `数据类型`，222
+- `调试`，138, 139
+- `调试`，vii, 138
+- `声明`，223, 224, 225, 229, 231, 233, 235, 273, 319
+- `依赖`，219
+- `部署`，369
+- `解构`，337, 338, 344
+- `开发者`，1, 2, 6, 8, 10, 11, 12, 21, 66, 67, 68, 94, 104, 105, 110, 115, 118, 120, 121, 136, 140, 159, 160, 162, 171, 210, 211, 212, 216, 232, 322, 323, 337, 341, 342, 343, 345, 370
+- `开发`，210, 211, 215, 216, 217, 219, 220, 301, 322, 323, 345, 369
+- `设备`，212, 369
+- `数字`，2
+- `方向`，116, 124, 125, 129, 143, 182, 193, 205
+- `目录`，30, 35, 136, 218, 219, 220
+- `显示`，5, 11, 54, 70, 75, 119, 120, 121, 129, 131, 143, 148, 154, 156, 167, 168, 169, 180, 181, 182, 184, 192, 193, 195, 204, 205, 206, 207
+- `div`，3, 13, 14, 18, 70, 71, 74, 112, 114, 115, 119, 125, 128, 129, 142, 152, 153, 154
+- `Docker`，370
+- `文档`，iii, 2, 4, 6, 12, 13, 14, 15, 16, 17, 18, 19, 21, 23, 33, 35, 38, 41, 42, 45, 47, 48, 50, 51, 52, 54, 57, 59, 61, 64, 65, 72, 73, 74, 75, 79, 80, 82, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 145, 147, 148, 151, 152, 154, 157, 159, 160, 162, 163, 164, 166, 168, 169, 170, 171, 172, 174, 179, 187, 190, 199, 202, 210, 213, 300, 307, 326, 334, 346, 347, 350, 353, 362
+- `DOM`，299, 300, 302, 304, 305, 307, 322
+- `DOM API`，299, 300
+- `DOM tree`，299
+- `域`，371, 372
+- `下载`，217
+- `时长`，124, 125, 126, 127
+- `动态`，2, 6, 63, 64, 66, 93, 133, 159, 210, 211, 212, 213, 322, 323, 331
+- `动态`，213, 214
+- `动态`，210, 213, 214, 215, 333
+- `ECMAScript`，2015, 337
+- `扩展`，211
+- `编辑器`，8, 9, 14, 16, 17, 33, 217, 218, 220
+- `元素`，273, 274, 279, 299, 300, 302, 303, 304, 305, 306, 307, 322, 333
+- `元素`，2, 3, 5, 6, 7, 11, 13, 14, 15, 16, 17, 20, 33, 36, 39, 41, 42, 54, 55, 57, 58, 64, 65, 70, 72, 73, 74, 75, 91, 93, 94, 95, 96, 97, 98, 99, 100, 103, 104, 105, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 121, 123, 129, 131, 133, 134, 138, 158, 159, 163, 170, 173, 273, 274, 299, 300, 302, 303, 304, 305, 306, 307, 322, 333
+- `嵌入`，225, 338
+- `嵌入`，3, 7
+- `封装`，289, 341, 343
+- `封装`，216
+- `包含`，24
+- `错误`，312, 317, 320, 332, 343, 360
+- `错误`，311, 316, 319, 339, 342, 343, 344
 
 
-# 索引参考
 
-- `编译的`, 213, 214
-- `编译时`, 214
-- `复杂的`, 211, 213, 215, 216, 223, 249, 309, 344, 350
-- `拼接`, 227
-- `条件`, 249, 250, 251, 252, 253, 254, 255, 256, 257, 259, 274, 276, 277, 278
-- `条件`, 254
-- `条件`, 249, 250, 251, 254, 258, 263, 325
-- `配置`, 220
-- `连接`, 71, 72
-- `连接`, 71, 172
-- `一致性`, 52, 101, 118
-- `控制台`, 225, 226, 228, 229, 231, 233, 234, 235, 236, 237, 238, 239, 241, 242, 243, 244, 245, 246, 247, 249, 250, 251, 253, 254, 255, 256, 258, 259, 262, 264, 265, 267, 268, 269, 270, 271, 274, 275, 276, 278, 279, 280, 283, 285, 286, 288, 290, 293, 296, 297, 298, 302, 303, 304, 310, 311, 312, 314, 315, 317, 320, 323, 324, 325, 330, 332, 335, 340
-- `构造函数`, 282, 289, 290, 292, 293, 294, 295, 296, 297, 298
-- `构造函数`, 294
-- `容器化`, 370
-- `内容`, 1, 2, 3, 4, 6, 7, 9, 10, 11, 12, 13, 14, 15, 17, 18, 19, 20, 21, 23, 24, 25, 32, 38, 54, 63, 67, 72, 73, 74, 75, 76, 77, 78, 79, 80, 82, 85, 94, 95, 96, 104, 105, 110, 111, 112, 113, 116, 121, 124, 129, 131, 137, 141, 145, 148, 151, 152, 154, 157, 158, 162, 164, 168, 169, 171, 172, 175, 187, 192, 193, 200, 204, 205, 206
-- `对比`, 213, 214, 215, 308, 342
-- `控制`, 36, 39, 40, 74, 119
-- `已转换`, 324
-- `创建`, 1, 2, 4, 7, 8, 11, 13, 14, 15, 20, 24, 25, 26, 28, 29, 31, 33, 41, 42, 45, 46, 47, 48, 50, 51, 54, 56, 61, 62, 63, 64, 65, 66, 67, 69, 71, 72, 79, 91, 93, 94, 95, 96, 104, 105, 110, 113, 115, 118, 120, 123, 126, 127, 128, 129, 130, 140, 157, 159, 160, 161, 162, 166, 171, 174, 187
-- `跨平台`, 8
-- `密码学的`, 6
-- `CSS`, i, iv, vii, 1, 2, 3, 8, 9, 12, 13, 25, 38, 55, 57, 59, 62, 66, 86, 87, 88, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 142, 145, 147, 151, 154, 157, 159, 160, 162, 163, 166, 169, 170, 171, 172, 174, 179, 187, 190, 199, 199, 202, 210, 213, 300, 307, 326, 334, 346, 347, 353, 362
-- `自定义`, 51, 132, 135, 136, 140, 171
-- `数据类型`, 222
-- `调试`, 138, 139
-- `调试`, vii, 138
-- `声明`, 223, 224, 225, 229, 231, 233, 235, 273, 319
-- `依赖`, 219
-- `部署`, 369
-- `解构`, 337, 338, 344
-- `开发者`, 1, 2, 6, 8, 10, 11, 12, 21, 66, 67, 68, 94, 104, 105, 110, 115, 118, 120, 121, 136, 140, 159, 160, 162, 171, 210, 211, 212, 216, 232, 322, 323, 337, 341, 342, 343, 345, 370
-- `开发`, 210, 211, 215, 216, 217, 219, 220, 301, 322, 323, 345, 369
-- `设备`, 212, 369
-- `数字`, 2
-- `方向`, 116, 124, 125, 129, 143, 182, 193, 205
-- `目录`, 30, 35, 136, 218, 219, 220
-- `显示`, 5, 11, 54, 70, 75, 119, 120, 121, 129, 131, 143, 148, 154, 156, 167, 168, 169, 180, 181, 182, 184, 192, 193, 195, 204, 205, 206, 207
-- `div`, 3, 13, 14, 18, 70, 71, 74, 112, 114, 115, 119, 125, 128, 129, 142, 152, 153, 154
-- `Docker`, 370
-- `文档`, iii, 2, 4, 6, 12, 13, 14, 15, 16, 17, 18, 19, 21, 23, 33, 35, 38, 41, 42, 45, 47, 48, 50, 51, 52, 54, 57, 59, 61, 64, 65, 72, 73, 74, 75, 79, 80, 82, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 145, 147, 148, 151, 152, 154, 157, 159, 160, 162, 163, 164, 166, 168, 169, 170, 171, 172, 174, 179, 187, 190, 199, 202, 210, 213, 300, 307, 326, 334, 346, 347, 350, 353, 362
-- `DOM`, 299, 300, 302, 304, 305, 307, 322
-- `DOM API`, 299, 300
-- `DOM tree`, 299
-- `域`, 371, 372
-- `下载`, 217
-- `时长`, 124, 125, 126, 127
-- `动态`, 2, 6, 63, 64, 66, 93, 133, 159, 210, 211, 212, 213, 322, 323, 331
-- `动态`, 213, 214
-- `动态`, 210, 213, 214, 215, 333
-- `ECMAScript`, 2015, 337
-- `扩展`, 211
-- `编辑器`, 8, 9, 14, 16, 17, 33, 217, 218, 220
-- `元素`, 273, 274, 279, 299, 300, 302, 303, 304, 305, 306, 307, 322, 333
-- `元素`, 2, 3, 5, 6, 7, 11, 13, 14, 15, 16, 17, 20, 33, 36, 39, 41, 42, 54, 55, 57, 58, 64, 65, 70, 72, 73, 74, 75, 91, 93, 94, 95, 96, 97, 98, 99, 100, 103, 104, 105, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 121, 123, 129, 131, 133, 134, 138, 158, 159, 163, 170, 173, 273, 274, 299, 300, 302, 303, 304, 305, 306, 307, 322, 333
-- `嵌入`, 225, 338
-- `嵌入`, 3, 7
-- `封装`, 289, 341, 343
-- `封装`, 216
-- `包含`, 24
-- `错误`, 312, 317, 320, 332, 343, 360
-- `错误`, 311, 316, 319, 339, 342, 343, 344
 - `ES6`, 214, 284, 337, 338, 339
 - `事件`, 212, 215, 301
 - `事件驱动`, 212, 215
@@ -5029,442 +4634,619 @@ setTimeout(() => timeUp = true, 10000);
 - `网络`, 211, 372
 - `解释器`, 210, 214
 - `解释器`, 211
-- `JavaScript`   1   2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77 78 79 80 81 82 83 84 85 86 87 88 89 90 91 92 93 94 95 96 97 98 99 100 101 102 103 104 105 106 107 108 109 110 111 112 113 114 115 116 117 118 119 120 121 122 123 124 125 126 127 128 129 130 131 132 133 134 135 136 137 138 139 140 141 142 143 144 145 146 147 148 149 150 151 152 153 154 155 156 157 158 159 160 161 162 163 164 165 166 167 168 169 170 171 172 173 174 175 176 177 178 179 180 181 182 183 184 185 186 187 188 189 190 191 192 193 194 195 196 197 198 199 200 201 202 203 204 205 206 207 208 209 210 211 212 213 214 215 216 217 218 219 220 221 222 223 224 225 226 227 228 229 230 231 232 233 234 235 236 237 238 239 240 241 242 243 244 245 246 247 248 249 250 251 252 253 254 255 256 257 258 259 260 261 262 263 264 265 266 267 268 269 270 271 272 273 274 275 276 277 278 279 280 281 282 283 284 285 286 287 288 289 290 291 292 293 294 295 296 297 298 299 300 301 302 303 304 305 306 307 308 309 310 311 312 313 314 315 316 317 318 319 320 321 322 323 324 325 326 327 328 329 330 331 332 333 334 335 336 337 338 339 340 341 342 343 344 345 346 347 348 349 350 351 352 353 354 355 356 357 358 359 360 361 362 363 364 365 366 367 368 369 370 371 372
-
-
-
-
+- `JavaScript`, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 176, 177, 178, 179, 180, 181, 182, 183, 184, 185, 186, 187, 188, 189, 190, 191, 192, 193, 194, 195, 196, 197, 198, 199, 200, 201, 202, 203, 204, 205, 206, 207, 208, 209, 210, 211, 212, 213, 214, 215, 216, 217, 218, 219, 220, 221, 222, 223, 224, 225, 226, 227, 228, 229, 230, 231, 232, 233, 234, 235, 236, 237, 238, 239, 240, 241, 242, 243, 244, 245, 246, 247, 248, 249, 250, 251, 252, 253, 254, 255, 256, 257, 258, 259, 260, 261, 262, 263, 264, 265, 266, 267, 268, 269, 270, 271, 272, 273, 274, 275, 276, 277, 278, 279, 280, 281, 282, 283, 284, 285, 286, 287, 288, 289, 290, 291, 292, 293, 294, 295, 296, 297, 298, 299, 300, 301, 302, 303, 304, 305, 306, 307, 308, 309, 310, 311, 312, 313, 314, 315, 316, 317, 318, 319, 320, 321, 322, 323, 324, 325, 326, 327, 328, 329, 330, 331, 332, 333, 334, 335, 336, 337, 338, 339, 340, 341, 342, 343, 344, 345, 346, 347, 348, 349, 350, 351, 352, 353, 354, 355, 356, 357, 358, 359, 360, 361, 362, 363, 364, 365, 366, 367, 368, 369, 370, 371, 372
 
 # 关键词
-keywords, 213, 222, 224, 239, 338
+
+`keywords`, 213, 222, 224, 239, 338
 
 # Kubernetes
-Kubernetes, 370
+
+`Kubernetes`, 370
 
 # L
-### 语言
-language, 2, 20, 64, 65, 93, 210, 211, 212, 213, 214, 215, 299, 337, 341, 342
 
-languages, 213, 214, 215, 216, 259
+### 语言
+
+`language`, 2, 20, 64, 65, 93, 210, 211, 212, 213, 214, 215, 299, 337, 341, 342
+
+`languages`, 213, 214, 215, 216, 259
 
 ### 布局
-layout, 1, 59, 93, 94, 95, 96, 104, 110, 115, 116, 117, 120, 121, 129, 139, 157, 160, 161, 162, 170, 173, 174
+
+`layout`, 1, 59, 93, 94, 95, 96, 104, 110, 115, 116, 117, 120, 121, 129, 139, 157, 160, 161, 162, 170, 173, 174
 
 ### 库
-libraries, 213, 217, 345
+
+`libraries`, 213, 217, 345
 
 ### 已许可的
-licensed, 220
+
+`licensed`, 220
 
 ### 链接
-links, iv, 6, 11, 12, 13, 17, 18, 23, 25, 29, 31, 32, 64, 74, 75, 76, 78, 84, 95, 96
-链接, 6, 29, 33
+
+`links`, iv, 6, 11, 12, 13, 17, 18, 23, 25, 29, 31, 32, 64, 74, 75, 76, 78, 84, 95, 96
+
+`链接`, 6, 29, 33
 
 ### 列表
-list, 13, 14, 25, 26, 27, 28, 33, 38, 42, 46, 47, 48, 61, 62, 70, 148, 149, 155, 167, 179, 181, 191, 203
-lists, 11, 13, 14, 15, 18, 23, 25, 26, 28, 29, 33, 54, 61, 62, 72, 74, 79, 106
+
+`list`, 13, 14, 25, 26, 27, 28, 33, 38, 42, 46, 47, 48, 61, 62, 70, 148, 149, 155, 167, 179, 181, 191, 203
+
+`lists`, 11, 13, 14, 15, 18, 23, 25, 26, 28, 29, 33, 54, 61, 62, 72, 74, 79, 106
 
 ### 字面量
-literals, 225, 227, 337, 338, 344
+
+`literals`, 225, 227, 337, 338, 344
 
 ### LiveScript
-LiveScript, 211
+
+`LiveScript`, 211
 
 ### 本地
-Local, 270
+
+`Local`, 270
 
 ### 已登录的
-logged, 302, 320, 324, 325
+
+`logged`, 302, 320, 324, 325
 
 ### 逻辑
-logic, 213
-logical, 231, 249, 252, 253, 341
+
+`logic`, 213
+
+`logical`, 231, 249, 252, 253, 341
 
 ### 循环
-loop, 274, 275, 276, 277, 278, 300
+
+`loop`, 274, 275, 276, 277, 278, 300
 
 ### LTS 版本
-LTS version, 218
+
+`LTS version`, 218
 
 # M
+
 ### 主
-Main, 4
+
+`Main`, 4
 
 ### 操作
-manipulate, 225, 232, 274, 300, 302
-manipulation, 299, 307
+
+`manipulate`, 225, 232, 274, 300, 302
+
+`manipulation`, 299, 307
 
 ### 边距
-margin, 99, 110, 111, 112, 113, 114, 115, 116, 131, 138, 142, 143, 144, 147, 148, 149, 150, 154, 155, 156, 166, 167, 168, 169, 179, 180, 181, 182, 183, 185, 190, 192, 193, 194, 195, 196, 202, 204, 205, 206, 207
+
+`margin`, 99, 110, 111, 112, 113, 114, 115, 116, 131, 138, 142, 143, 144, 147, 148, 149, 150, 154, 155, 156, 166, 167, 168, 169, 179, 180, 181, 182, 183, 185, 190, 192, 193, 194, 195, 196, 202, 204, 205, 206, 207
 
 ### 标记
-markup, 2, 9, 10, 11, 20, 64, 65, 73, 74, 75, 137
+
+`markup`, 2, 9, 10, 11, 20, 64, 65, 73, 74, 75, 137
 
 ### 匹配
-match, 1, 52
+
+`match`, 1, 52
 
 ### 元
-meta, 12, 13, 73, 77, 79, 80, 82, 85, 141, 145, 152, 164, 174, 175, 187, 199, 200
+
+`meta`, 12, 13, 73, 77, 79, 80, 82, 85, 141, 145, 152, 164, 174, 175, 187, 199, 200
 
 ### 计量
-Meter, 5, 6
+
+`Meter`, 5, 6
 
 ### 方法
-methods, 211, 212, 215, 216, 223, 225, 273, 274, 282, 283, 284, 286, 287, 289, 290, 291, 293, 294, 295, 297, 298, 299, 300, 303, 308, 315, 337, 338, 339, 341
+
+`methods`, 211, 212, 215, 216, 223, 225, 273, 274, 282, 283, 284, 286, 287, 289, 290, 291, 293, 294, 295, 297, 298, 299, 300, 303, 308, 315, 337, 338, 339, 341
 
 ### 微系统
-Microsystems, 211
+
+`Microsystems`, 211
 
 ### 最小长度
-minlength, 53
+
+`minlength`, 53
 
 ### 移动端
-mobile, 210, 211, 212
+
+`mobile`, 210, 211, 212
 
 ### 现代
-modern, 1, 2, 66, 67, 68, 71, 94, 116, 124, 132, 157, 210, 211, 333
+
+`modern`, 1, 2, 66, 67, 68, 71, 94, 116, 124, 132, 157, 210, 211, 333
 
 ### 模块
-modules, 337, 338, 343
+
+`modules`, 337, 338, 343
 
 ### 多媒体
-multimedia, 2, 79
+
+`multimedia`, 2, 79
 
 ### 多个
-multiple, 57, 58, 66, 94, 101, 104, 137, 139, 158, 223, 266, 273, 309, 315, 320, 338-341
+
+`multiple`, 57, 58, 66, 94, 101, 104, 137, 139, 158, 223, 266, 273, 309, 315, 320, 338-341
 
 ### 乘法
-multiplication, 229, 239
+
+`multiplication`, 229, 239
 
 ### 名字
-name, 211, 214, 222, 224, 225, 228, 233, 234, 264, 265, 266, 282, 283, 289, 290, 293, 295, 296, 297, 298, 302, 305, 313, 314, 315, 324, 331, 332, 338, 339, 341, 342, 351, 362, 372
-cheap, 372
-names, 213, 290, 343
+
+`name`, 211, 214, 222, 224, 225, 228, 233, 234, 264, 265, 266, 282, 283, 289, 290, 293, 295, 296, 297, 298, 302, 305, 313, 314, 315, 324, 331, 332, 338, 339, 341, 342, 351, 362, 372
+
+`cheap`, 372
+
+`names`, 213, 290, 343
 
 ### 导航
-nav, 11, 73, 74, 75, 76, 85, 131, 146, 148, 149, 162, 164, 165, 167, 169, 170, 173, 174, 179, 180, 183, 187, 188, 192, 200, 203, 204
-navigation, 4, 11, 73, 74, 75, 76, 130, 131, 151, 159, 162, 169, 170, 28
+
+`nav`, 11, 73, 74, 75, 76, 85, 131, 146, 148, 149, 162, 164, 165, 167, 169, 170, 173, 174, 179, 180, 183, 187, 188, 192, 200, 203, 204
+
+`navigation`, 4, 11, 73, 74, 75, 76, 130, 131, 151, 159, 162, 169, 170, 28
 
 ### Netflix
-Netflix, 212
+
+`Netflix`, 212
 
 ### 网景浏览器
-Netscape, 210, 211
+
+`Netscape`, 210, 211
 
 ### Node.js
-Node.js, 210, 211, 215, 217, 218, 219
+
+`Node.js`, 210, 211, 215, 217, 218, 219
 
 ### 非
-NOT, 252, 253
+
+`NOT`, 252, 253
 
 ### 写法
-notation, 226, 233, 235, 282, 283, 287, 288, 289, 338
+
+`notation`, 226, 233, 235, 282, 283, 287, 288, 289, 338
 
 ### npm
-npm, 217, 219
+
+`npm`, 217, 219
 
 ### 数字
-Numbers, 223
+
+`Numbers`, 223
 
 # O
+
 ### 对象
+
+
+
+# O
+
+### 对象
+
 object, 210, 212, 214, 215, 216, 223, 233, 234, 262, 274, 282, 283, 284, 286, 289, 290, 293, 294, 295, 296, 298, 299, 300, 313, 314, 315, 319, 321, 324, 331, 332, 338, 339, 341, 342
+
 objects, 211, 212, 214, 215, 216, 223, 225, 232, 233, 235, 238, 282, 283, 286, 289, 294, 295, 296, 297, 322, 337, 338, 339, 342, 343, 344
+
 Objects, 214, 223, 233, 282, 283
 
 ### 面向对象
+
 OOP, 215, 216
 
 ### 操作系统
+
 operating, 217, 218, 227, 239, 240, 241, 242, 243, 245, 246, 250, 252, 231, 239, 244, 247, 248, 338, 339, 341
+
 operators, 229, 231, 239, 244, 247, 248
 
 ### 选项
+
 option, 47, 48, 49, 50, 51
 
 ### 排序
+
 ordered, 13, 14, 25, 26, 27, 28, 33, 61, 62
 
 ### 外部
+
 outer, 271, 272
 
 # P
+
 ### 包
+
 package, 217, 219, 370
 
 ### 内边距
+
 padding, 99, 110, 111, 112, 113, 114, 115, 138, 142, 143, 144, 149, 150, 155, 156
 
 ### 页面
+
 pages, 1, 2, 3, 10, 11, 12, 13, 14, 20, 29, 30, 54, 61, 62, 70, 72, 73, 74, 79, 84, 93, 94, 96, 100, 101, 104, 105, 106, 107, 110, 113, 114, 115, 117, 118, 119, 120, 129, 132, 135, 136, 137, 138, 140, 148, 149, 150, 151, 155, 155, 156, 160, 161, 167, 169, 210, 211, 212, 213, 214, 215, 322, 323
+
 paragraph, 2, 10, 19, 20, 22, 24, 33, 97, 116
 
 ### 参数
+
 parameter, 264, 265, 266, 290, 293, 339
+
 parameters, 264, 265, 266, 290, 293, 339
 
 ### 模式
+
 pattern, 5, 52
 
 ### 性能
+
 performance, 211, 212, 309, 370
 
 ### PHP
+
 PHP, 215
 
 ### 像素
+
 pixels, 37, 65, 94, 95, 98, 106, 107, 113, 114, 115, 117, 119, 135, 160, 161, 169
 
 ### 占位符
+
 Placeholders, 4
 
 ### 平台
+
 platforms, 210, 369, 370, 372
 
 ### 多态
+
 polymorphism, 216
 
 ### 作品集
+
 portfolio, 222, 232, 345
 
 ### 偏好
+
 Preferences, 220
 
 ### 预加载
+
 Preload, 4
 
 ### 演示
+
 presentation, 9, 93, 94, 95, 96
 
 ### 问题
+
 problems, 211, 342
 
 ### 专业的
+
 professional, 86, 93, 141
 
 ### 程序员
+
 programmers, 211, 282
 
 ### 编程
+
 programming, 210, 211, 212, 213, 214, 215, 216, 222, 249, 254, 259, 264, 282, 294, 299, 308, 309, 313, 337, 338
+
 programs, 211, 299
 
 ### 进度
+
 Progress, 3, 5
 
 ### 项目
+
 project, 218, 219, 220, 345
+
 Project, 345
 
 ### 承诺/
+
 Promises, 313, 318, 319, 321, 338, 339
 
 ### 属性
+
 properties, 4, 5, 6, 94, 97, 98, 99, 104, 105, 106, 107, 108, 109, 110, 111, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 126, 127, 129, 132, 133, 134, 136, 137, 138, 140, 148, 149, 150, 151, 155, 156, 159, 160, 161, 167, 175, 179, 181, 187, 191, 200, 203
+
 property, 4, 5, 6, 96, 97, 99, 108, 109, 110, 111, 113, 114, 115, 116, 117, 118, 119, 120, 121, 124, 126, 127, 129, 131, 133, 134, 161, 211, 212, 214, 215, 216, 223, 225, 233, 234, 282, 283, 284, 289, 290, 294, 295, 296, 297, 298, 300, 303, 338, 339, 341
 
 ### 原型
+
 prototype, 71, 213, 214, 295, 296, 297
+
 prototypes, 214
 
 ### 用途
+
 purposes, 210, 323
 
 ### 查询
+
 queries, 157, 158, 160, 161, 162, 163, 171, 174
 
 ### 注册
+
 Registration, 82
 
 ### 相对
+
 Relative, 30, 117
 
 ### 移除
+
 Removes, 274
 
 ### 代表
+
 represents, 230, 233, 273, 299, 313
 
 ### 请求
+
 requests, 308, 325, 331, 333
 
 ### 要求的
+
 required, 33, 44, 52, 53, 80, 82, 83, 91, 134
 
 ### 重置
+
 reset, 51
 
 ### 响应
+
 Response, 319, 332
+
 responsive, 1, 66, 67, 73, 94, 96, 115, 116, 120, 121, 129, 133, 140, 151, 157, 158, 159, 160, 161, 163, 170, 171, 172, 174, 186, 187, 199
+
 ### 返回值
+
 Return Values, 218, 264, 343
 
 ### 反转
+
 Reverse, 6
 
 ### 行
+
 rows, 51, 54, 55, 57, 60, 120, 121, 122
 
 ### Ruby
+
 Ruby, 213, 215
 
 ### 运行
+
 Run, 220, 221
 
 ### 运行时
+
 runtime, 213, 214, 217
 
 ### Ryan
+
 Ryan, 211
 
 # S
+
 ### 可扩展的
+
 Scalable, 64, 133, 134
 
 ### 场景
+
 scenarios, 212, 322, 345
 
 ### 范围
+
 scope, 223, 264, 269, 270, 271, 272, 338, 345
+
 Scope, 269, 270
 
 ### 屏幕
+
 screen, 1, 10, 11, 14, 46, 70, 71, 73, 74, 80, 82, 93, 94, 96, 116, 118, 121, 129, 140, 157, 158, 160, 161, 162, 163, 164, 168, 169, 171, 172
 
 ### 脚本
+
 scripting, 210, 211, 212, 214, 215, 299
 
 ### 章节
+
 section, 4, 11, 15, 23, 32, 75, 77, 86, 87, 88, 90, 100, 101, 103, 104, 146, 147, 149, 151, 165, 167, 168, 169, 175, 176, 177, 178, 180, 184, 186, 188, 189, 200, 201, 202, 232, 254, 294
+
 Section, 4
 
 ### 安全
+
 secure, 343
 
 ### 安全性
+
 security, 6, 211
 
 ### 语义化的
+
 semantic, 9, 10, 11, 72, 74, 75
 
 ### 服务器
+
 server, 8, 11, 41, 47, 48, 71, 72, 210, 215, 21, 309, 322, 323
+
 servers, 210, 212, 331, 345
 
 ### 语句
+
 statement, 24, 254, 256, 257, 259, 260, 276, 314, 315
+
 statements, 213, 223, 230, 254
 
 ### 存储
+
 storage, 370, 371, 372
 
 ### 字符串
+
 string, 225, 226, 338
+
 Strings, 223, 225
 
 ### 样式
+
 style, 2, 6, 25, 38, 41, 54, 55, 59, 62, 65, 93, 94, 95, 97, 98, 100, 102, 104, 105, 106, 107, 113, 114, 115, 116, 117, 118, 119, 120, 121, 133, 134, 135, 140, 148, 149, 152, 155, 159, 160, 161, 167, 175, 179, 181, 187, 191, 200, 203
+
 Styling, 59, 60
 
 ### 子类
+
 subclass, 216
 
 ### 副标题
+
 subheading, 9, 16, 17, 217
 
 ### Sublime
+
 Sublime, 9
 
 ### 提交
+
 submit, 11, 41, 42, 51, 80, 83, 142, 178, 196
 
 ### 减法
+
 subtraction, 229, 239
 
 ### 支持
+
 supports, 211, 212, 215
 
 ### SVG
+
 SVG, 63, 64, 65, 66, 79, 133, 134, 135
 
 ### 切换
+
 switch, 213, 254, 259, 260, 262
 
 ### 同步的
+
 synchronous, 308
 
 ### 语法
+
 syntax, 214, 220, 222, 224, 232, 254, 256, 257, 260, 276, 277, 279, 280, 284, 293, 319, 337, 338, 340, 342
 
 # T
+
 ### 表格
+
 Tables, iv, 54, 57, 59
+
 tablets, 1, 8, 160, 174
 
 ### 标签
+
 tag, 2, 3, 4, 6, 7, 12, 13, 18, 20, 23, 24, 33, 36, 38, 39, 42, 45, 46, 47, 48, 49, 50, 51, 52, 53, 61, 62, 73, 77, 79, 82, 83, 97, 98, 99, 100, 101, 102, 104, 105, 106, 107, 108, 109, 110, 111, 113, 114, 115, 116, 117, 118, 119, 120, 121, 124, 129, 131, 132, 133, 134, 135, 136, 137, 138, 140, 141, 145, 146, 148, 149, 150, 151, 152, 157, 158, 159, 160, 161, 162, 163, 164, 165, 167, 168, 169, 170, 171, 172, 173, 174, 175, 177, 178, 179, 180, 181, 183, 184, 186, 187, 188, 189, 190, 191, 196, 199, 200, 201, 202, 203
+
 tags, 2, 3, 4, 9, 11, 12, 13, 14, 16, 17, 18, 20, 21, 22, 23, 25, 26, 27, 28, 29, 30, 31, 32, 33
 
 ### 技术
+
 tech, 8
+
 ### 技术
+
 techniques, 1, 54, 96, 116, 140, 157, 171, 172, 174, 187, 199
+
 ### 技术
+
 technologies, 1, 8, 10, 64, 73, 74, 157, 159
+
 ### 技术
+
 technology, 64
 
 ### 模板
+
 templates, 210
 
 ### 终端
+
 terminal, 219, 220
 
 ### 时间
+
 Time, 5, 6
 
 ### 标题
+
 title, 12, 13, 15, 16, 18, 23, 24, 80, 82, 85, 141, 146, 152, 164, 175, 187, 200
 
 ### 趋势
+
 trends, 139
 
 ### Twitter
+
 Twitter, 212
 
 ### 类型
+
 type, 2, 5, 6, 12, 14, 18, 36, 39, 42, 44, 45, 46, 47, 51, 52, 53, 62, 66, 80, 82, 83, 88, 115, 117, 117, 118, 119, 141, 142, 152, 160, 161, 164, 177, 178, 190, 196
+
 types, 213, 214, 216, 222, 223, 225, 254, 269, 273, 282
 
 # U
+
+### 未定义
+
 undefined, 224, 285, 341, 342
 
-
-
-
+### 无序
 
 无序, 13, 14, 25, 26, 28, 33, 61
+
+### URL
 
 URL, 3, 14, 20, 21, 29, 33, 41, 103, 135, 136, 323, 332, 372
 
 URLs, iv, 30, 73, 78
 
+### 用户
+
 用户, 1, 3, 4, 5, 7, 8, 11, 14, 21, 22, 29, 32, 36, 38, 39, 41, 43, 44, 45, 46, 47, 48, 51, 52, 63, 64, 66, 67, 68, 69, 70, 71, 94, 118, 119, 123, 124, 133, 157, 158, 160, 161, 162, 172, 174
 
 用户, 1, 5, 6, 9, 10, 11, 29, 32, 41, 45, 46, 48, 51, 54, 70, 71, 72, 73, 74, 77, 124, 140, 158, 162
 
-## V
+# V
+
+### 验证
 
 验证, 5, 52, 53
 
+### 值
+
 值, 4, 20, 21, 42, 44, 47, 48, 49, 66, 67, 80, 83, 96, 97, 99, 114, 116, 118, 119, 132, 133
+
+### 变量
 
 变量, 213, 214, 222, 224, 225, 229, 231, 262, 269, 270, 271, 272, 273, 332, 341
 
 变量, 213, 214, 222, 224, 239, 269, 270, 271, 337, 338, 342, 343, 344
 
+### 多功能性
+
 多功能性, 215
+
+### 视频
 
 视频, 2, 3, 4, 35, 36, 37, 73, 210
 
@@ -5472,13 +5254,19 @@ URLs, iv, 30, 73, 78
 
 视频, iv, 4, 35
 
+### Visual Studio
+
 Visual Studio, 9, 16, 83, 217, 220
 
-## W
+# W
+
+### web
 
 web, 1, 2, 3, 6, 7, 8, 9, 10, 11, 12, 13, 14, 17, 19, 20, 23, 25, 29, 32, 33, 34, 36, 37, 39, 40, 41, 45, 46, 48, 51, 52, 54, 63, 66, 67, 68, 69, 70, 71, 73, 74, 75, 76, 77, 79, 93, 94, 95, 96, 99, 100, 101, 104, 105, 110, 112, 113, 115, 117, 118, 120, 123, 124, 125, 133, 135, 137, 138, 140, 141, 144, 151, 156, 157, 158, 160, 165, 170, 171, 173, 185, 197, 208, 210, 211, 212, 213, 215, 217, 219, 299, 301, 322, 323, 331, 333, 345, 371, 372
 
 Web, i, iii, iv, v, vii, 2, 8, 11, 63, 66, 67, 68, 69, 71, 94, 133, 140, 171
+
+### 网页
 
 网页, 212, 215, 299, 301, 322
 
@@ -5486,17 +5274,24 @@ Web, i, iii, iv, v, vii, 2, 8, 11, 63, 66, 67, 68, 69, 71, 94, 133, 140, 171
 
 网页, 307, 322, 333
 
+### 网站
+
 网站, viii, 4, 5, 6, 11, 30, 32, 41, 72, 73, 74, 78, 94, 95, 96, 100, 101, 104, 115, 124, 133, 135, 136, 157, 158, 159, 161, 162, 171, 172, 173, 174, 187, 199, 217, 371, 372
 
 网站, 1, 3, 5, 6, 7, 8, 72, 79, 93, 94, 96, 100, 101, 104, 133, 140, 141, 157, 158, 159, 162, 171, 172, 210, 213
 
+### WebSocket
+
 WebSocket, 71, 72
 
+### WebStorm
+
 WebStorm, 9
+
+
 
 宽度, 6, 37, 60, 65, 80, 82, 85, 111, 112, 113, 114, 115, 116, 119, 127, 128, 134, 135, 141, 143, 145, 149, 152, 154, 155, 160, 161, 164, 168, 169, 175, 183, 185, 187, 191, 196, 200, 208
 
 ## X
 
 XML, 322, 323, 331
-

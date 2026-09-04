@@ -1,17 +1,5 @@
-# 13.2 CommonJS 规范
 
-*   概述
-*   module 对象
-    *   module.exports 属性
-    *   exports 变量
-    *   AMD 规范与 CommonJS 规范的兼容性
-    *   require 命令
-        *   基本用法
-        *   加载规则
-        *   模块的缓存
-        *   模块的循环加载
-        *   require.main
-    *   参考链接
+# 13.2 CommonJS 规范
 
 ## 概述
 
@@ -34,7 +22,7 @@ var addX = function(value) {
 global.warning = true;
 ```
 
-上面代码的 waining 变量，可以被所有文件读取。当然，这样写法是不推荐的。
+上面代码的 warning 变量，可以被所有文件读取。当然，这样写法是不推荐的。
 
 CommonJS 规定，每个文件的对外接口是 module.exports 对象。这个对象的所有属性和方法，都可以被其他文件导入。
 

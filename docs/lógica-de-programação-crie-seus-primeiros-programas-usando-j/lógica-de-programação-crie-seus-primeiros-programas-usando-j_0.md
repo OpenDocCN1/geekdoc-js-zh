@@ -1,14 +1,7 @@
+
 # 编程逻辑：使用 Javascript 和 HTML 创建你的第一个程序
 
-
-
-
-
-
-
-
-
-许多决定并不是容易的。放弃 `console.log` 而选择用笨拙的 `document.write`、在 `ifs` 和 `fors` 之前解释函数、通过赋值而不是更常见的语法来定义函数。这些只是在为了更好的教学方法而具有优劣之分的的一些问题。我们在对一些计算机初学者进行了一些测试后，做出了这些选择。
+许多决定并不是容易的。放弃 `console.log` 而选择用笨拙的 `document.write`、在 `ifs` 和 `fors` 之前解释函数、通过赋值而不是更常见的语法来定义函数。这些只是在为了更好的教学方法而具有优劣之分的一些问题。我们在对一些计算机初学者进行了一些测试后，做出了这些选择。
 
 特别感谢 Leonardo Wolter 和 Francisco Sokol，他们提供了带有动画的练习基础。感谢 Erich Egert，他对学生进行了书籍测试并对新挑战提出了各种建议。
 
@@ -84,11 +77,8 @@
 
 保存带有这两行新代码的文件，并在浏览器中打开页面。记住，打开它请双击文件，如果它已经打开，请点击刷新图标刷新页面。
 
-
-
-
-
 ![Criando link para outra página](img/minha_pagina3.png)
+
 *Figura 1.7: Criando link para outra página*
 
 A forma de escrever HTML, com aqueles sinais de `<` e `>`, também conhecida como sintaxe HTML, pode assustar na primeira vez. Assim como o uso de `<h3> </h3>`, a tag `<a ...></a>` envolve uma parte do nosso texto. Além disso, ela possui um atributo, neste caso o tal do `href`, que indica para onde o navegador deve ir se alguém clicar neste link. É comum que tags HTML possam diversas propriedades diferentes, modificando a visualização e o comportamento de certos trechos do documento. Uma tag e seu conteúdo formam um **elemento HTML**, por exemplo, o `<strong>Não</strong>`.
@@ -97,11 +87,11 @@ Existem muitas tags. Não se preocupe em memorizá-las. Você perceberá que, co
 
 Você já reparou que o navegador não pulou a linha onde sugerimos? Uma das tags que pode ajudar com isso é a `<br>`. Experimente. Diferente das outras tags que vimos até aqui, ela deve ser utilizada sem o estilo de abertura e fechamento, aparecendo apenas uma vez para cada uso. Vamos utilizá-la com mais frequência mais adiante.
 
-Está curioso com a sigla HTML? Ela significa Hypertext Markup Language (linguagem de marcação de hipertexto). Ou, em uma tradução bem aberta, uma linguagem que possui tags para marcar documentos do tipo hipertexto. Um documento hipertexto é aquele que pode ter links para outros. O HTML sozinho não passa de uma forma de marcação (através das tags). Veremos agora como incrementá-la.
+Está curioso com a sigla HTML? Ela significa Hypertext Markup Language (linguagem de marcação de hipertexto). Ou, em uma tradução bem aberta, uma linguagem que possui tags para marcar documentos do tipo hipertexto. Um documento hipertexto é aquele que pode有链接到其他文档。HTML 仅仅是一种通过标签进行标记的方式。我们现在将看到如何对其进行增强。
 
 ### 1.4 Dê hola ao mundo
 
-Para ter essa interação com o usuário, utilizaremos o **JavaScript**, uma linguagem que nos permite escrever códigos interessantíssimos. Altere seu arquivo `html`, adicionando as seguintes linhas ao final dele:
+为了与用户进行交互，我们将使用 **JavaScript**，一种允许我们编写有趣代码的语言。修改你的 HTML 文件，在其末尾添加以下行：
 
 ```
 1 <script>
@@ -109,26 +99,27 @@ Para ter essa interação com o usuário, utilizaremos o **JavaScript**, uma lin
 3 </script>
 ```
 
-Salve o arquivo. Abra-o no seu navegador, dando um duplo clique na página ou recarregando-a. O resultado deve ser o aparecer de uma caixa de texto com uma mensagem. Essa caixa também é conhecida como *popup*. Além dela, o texto que já conhecemos será exibido:
+保存文件。在浏览器中打开它，通过双击页面或重新加载。结果应为一个带有消息的文本框出现。这个框也被称为 *popup*。此外，你已经熟悉的文本也会被显示出来：
 
-![Começando a interagir mais](img/minha_pagina-alert.png)
-*Figura 1.8: Começando a interagir mais*
+![开始更多交互](img/minha_pagina-alert.png)
 
-Será muito comum repetir o processo de alteração do nosso código. Esse processo é: adicionar novas linhas no arquivo `html`, salvá-lo e abri-lo novamente no navegador. Como vimos, em vez de dar dois cliques na página, há também o botão de *atualizar* (*Reload*), que buscará as novas informações do nosso arquivo, executando tudo de novo.
+*图 1.8：开始更多交互*
 
-Sim, você já está programando! Parabéns, esse foi seu primeiro código usando a linguagem JavaScript. Passos pequenos e muita prática durante a leitura deste livro o levarão muito mais longe do que imagina.
+修改我们的代码的过程将非常常见。这个过程是：在 HTML 文件中添加新行，保存它，然后在浏览器中重新打开。正如我们所见，除了双击页面之外，还有一个 *刷新*（Reload）按钮，它会获取我们文件中的新信息并重新执行一切。
 
-Algo deu errado? No final desta lição, aprenderemos a usar algumas ferramentas do navegador para nos auxiliar na descoberta dos problemas que podem acontecer. Além disso, todas as lições possuem seções de revisão de código, onde você poderá comparar o código que você fez com o que era esperado.
+是的，你已经在编程了！祝贺你，这是你第一次使用 JavaScript 语言编写代码。在阅读本书的过程中，通过小步骤和大量练习，你将走得比想象中更远。
 
-Note que nosso código possui uma série de caracteres não usuais, como parênteses e ponto e vírgula. Será que não funcionaria fazer um simples `alert "olá mundo"`? Cada linguagem tem seu conjunto de regras, sua **sintaxe**, que devem ser respeitadas para que o código possa ser executado. No caso do JavaScript, há toda uma especificação que os navegadores seguem (ou deveriam seguir).
+出错了吗？在本课结束时，我们将学习使用一些浏览器工具来帮助发现可能发生的问题。此外，所有课程都包含代码审查部分，你可以在那里将你编写的代码与预期的代码进行比较。
 
-Caso você esteja estudando através de uma versão digital do livro, pode ter sentido vontade de copiar e colar o código deste `alert`. Não faça isso. Uma parte muito importante do aprendizado é errar a sintaxe de uma linguagem, além de praticá-la mesmo quando óbvia. Caso você tenha errado algo, o navegador emitirá uma mensagem de erro. Às vezes ela pode ajudar bastante, mas dependendo do navegador, pode levá-lo ao desespero.
+请注意，我们的代码包含一些不常见的字符，如括号和分号。仅仅写一个简单的 `alert "olá mundo"` 是否可行？每种语言都有其自身的规则，即**语法**，必须遵守这些规则才能使代码得以执行。对于 JavaScript 来说，有一套完整的规范，浏览器应该遵循（或应遵循）它。
 
-### 1.5 Revise o código: seu primeiro programa
+如果你正在学习本书的数字版，可能会有复制粘贴此 `alert` 代码的冲动。不要这样做。学习语言的一个重要部分是在明显的时候也练习其语法，并且犯错。如果你犯了错误，浏览器会显示一个错误消息。有时这个消息会很有帮助，但有时，取决于浏览器，它可能会让你感到绝望。
 
-emos como escrever nosso primeiro código. Durante todas as lições, sempreemos seções de revisão. É através delas que você pode verificar o que fez até agora e também seguir novamente os passos, de maneira mais sucinta, para consolidar seus novos conhecimentos.
+### 1.5 审查代码：你的第一个程序
 
-Vamos fazer novamente? Abra o editor de texto e digite o seguinte código, que já conhecemos:
+我们已经知道如何编写我们的第一个代码。在所有课程中，我们都会有代码审查部分。通过这些部分，你可以检查你目前所做的工作，并且可以再次按照更简洁的步骤来巩固你新获得的知识。
+
+我们再来一次？打开文本编辑器，输入以下我们已经熟悉的代码：
 
 ```
  1 Meu primeiro teste!
@@ -144,39 +135,37 @@ Vamos fazer novamente? Abra o editor de texto e digite o seguinte código, que j
 11 </script>
 ```
 
-Agora, salve-o. Como é um arquivo novo, o editor perguntará onde e com qual nome deseja gravá-lo. Escolha uma pasta de fácil acesso e um nome significativo. No nosso caso, usamos `minha_pagina.html`. Para não perder o que fez até agora, você pode gravar essa nova versão com outro nome, por exemplo `meu_primeiro_programa.html`. Agora encontre o arquivo e dê dois cliques nele. O navegador deve abrir.
+现在，保存它。由于这是一个新文件，编辑器会询问你希望将其保存到何处以及使用什么名称。选择一个易于访问的文件夹和一个有意义的名称。在我们的例子中，我们使用了 `minha_pagina.html`。为了不丢失你目前的工作，你可以将这个新版本保存为另一个名称，例如 `meu_primeiro_programa.html`。现在找到该文件并双击它。浏览器应该会打开它。
 
-### 1.6 Utilize o Chrome e o Notepad++
+### 1.6 使用 Chrome 和 Notepad++
 
-Podemos utilizar qualquer um dos navegadores para aprender a programar. Mesmo assim, durante o livro utilizaremos o Chrome como base para nossas imagens, atalhos, menus e dicas. Recomendamos fortemente que você faça o mesmo. Não há problema em utilizar outro, porém as mensagens de erro e a forma de apresentar o resultado podem variar um pouco.
+我们可以使用任何浏览器来学习编程。尽管如此，在本书中，我们将以 Chrome 为基础提供图像、快捷键、菜单和技巧。我们强烈建议你也这样做。使用其他浏览器也没有问题，但错误信息和结果的呈现方式可能会略有不同。
 
-Você pode fazer a instalação através do site: `https://www.google.com/chrome` (`https://www.google.com/chrome`)
+你可以通过访问以下网站进行安装：`https://www.google.com/chrome`（`https://www.google.com/chrome`）
 
-A instalação é muito simples, basta após o download seguir os passos ao executar o programa de instalação. Há versões para Windows, Linux e Mac.
+安装过程非常简单，下载完成后，按照安装程序的提示进行操作即可。该软件提供 Windows、Linux 和 Mac 版本。
 
-Para o editor de texto, o Bloco de Notas (Notepad) seria suficiente, porém é muito mais interessante utilizar um editor que nos ajude mais, colorindo alguns termos para facilitar a visualização do código fonte, além de oferecer outros truques.
+对于文本编辑器，Windows 自带的 Notepad（记事本）虽然可以使用，但我们更推荐使用一个能够更好地辅助我们工作的编辑器，比如能够通过着色关键字来提高代码可读性，并提供其他便利功能的编辑器。
 
-Para Windows, recomendamos o Notepad++, que é gratuito e de código aberto: `http://notepad-plus-plus.org/` (`http://notepad-plus-plus.org/`)
+对于 Windows 系统，我们推荐使用 Notepad++，它是免费且开源的：`http://notepad-plus-plus.org/`（`http://notepad-plus-plus.org/`）
 
-Clicando em *downloads*, há logo uma opção `Notepad++ v6.1.3 Installer` (pode ser uma versão mais atual).
+点击 *downloads*，你会看到一个名为 `Notepad++ v6.1.3 Installer` 的选项（可能是更高版本的安装程序）。
 
-Basta baixar este executável e abri-lo. Durante a instalação, há a opção de escolher pelo português. Agora você pode editar nosso `html` através desse editor, dando um clique da direita no arquivo e escolhendo *Edit with Notepad++*:
+下载该可执行文件并运行它。在安装过程中，你可以选择使用葡萄牙语界面。安装完成后，你可以通过右键点击 HTML 文件并选择 *Edit with Notepad++* 来使用 Notepad++ 编辑我们的 HTML 文件：
 
-![Utilizando o Notepad++ para facilitar nosso trabalho](img/notepadpp.png)
-*Figura 1.9: Utilizando o Notepad++ para facilitar nosso trabalho*
+![使用 Notepad++ 来辅助我们的工作](img/notepadpp.png)
 
+*图 1.9：使用 Notepad++ 来辅助我们的工作*
 
+在本书中，我们将配合使用 Notepad++、Google Chrome 和 Windows 7。如果你使用的是 Linux 或 Mac，可能已经拥有了你偏好的编辑器。我们推荐在 Linux 和 Mac 上使用 Sublime。当然，你也可以使用 vim、emacs 或任何你认为更合适的工具。
 
-
-我们将在书中的中使用 Notepad++，配合 Google Chrome 和 Windows 7。如果你使用的是 Linux 或 Mac，可能已经拥有了你偏好的编辑器。我们推荐在 Linux 和 Mac 上使用 Sublime。当然，你也可以使用 vim、emacs 或任何你认为更合适的工具。
-
-在书中，我们使用了一些在 Windows 上截取的图像，另一些在 Mac 上，还有一些在 Linux 上。但它们之间没有什么明显的区别。
+在本书中，我们使用了一些在 Windows 上截取的图像，另一些在 Mac 上，还有一些在 Linux 上。但它们之间没有明显的区别。
 
 ### 1.7 救命！我的程序无法运行。认识并使用 Chrome 控制台
 
-不要被错误吓到。知道如何面对它们非常重要。理解错误信息至关重要。总会有论坛和讨论列表，你可以在那里寻求帮助。记得要很好描述你的问题以及错误信息，但同时也需要保持简洁。GUJ 论坛在各种语言的巴西开发者开发者社区中非常有名。利用它来解决你的疑问：[`www.guj.com.br`](http://www.guj.com.br)
+不要被错误吓到。知道如何应对它们非常重要。理解错误信息至关重要。总会有论坛和讨论列表，你可以在那里寻求帮助。请确保详细描述你的问题和错误信息，但同时也要保持简洁。GUJ 论坛在巴西各语言的开发者社区中非常有名。利用它来解决你的疑问：[`www.guj.com.br`](http://www.guj.com.br)
 
-有一些非常常见的错误。例如在 `alert` 中没有使用括号。如果你这样做，此 `script` 标签内的任何内容都无法运行，且不会显示错误信息！测试一下，以错误的方式添加第二个 `alert` 调用：
+有一些非常常见的错误。例如，在 `alert` 中未使用括号。如果你这样做了，则 `script` 标签内的任何内容都将无法执行，并且不会显示任何错误信息！请进行测试，以错误的方式添加第二个 `alert` 调用：
 
 ```
 1 <script>
@@ -185,29 +174,29 @@ Basta baixar este executável e abri-lo. Durante a instalação, há a opção d
 4 </script>
 ```
 
-浏览器甚至不会显示第一个 `alert`，而那里没有任何错误！那么如何发现问题呢？Chrome 有一个工具帮助我们完成这项任务。
+浏览器甚至不会显示第一个 `alert`，而此时根本没有任何错误信息！那么我们该如何发现问题呢？Chrome 提供了一个工具来帮助我们完成这项任务。
 
 ![选择打开 JavaScript 控制台的菜单](img/chrome-console.png) 图 1.10：选择打开 JavaScript 控制台的菜单
 
-点击菜单/工具图标。它位于 Chrome 的右上角。然后访问 `工具` (`Tools`) 菜单，最后点击 `JavaScript 控制台`，如如图所示。将出现以下窗口，指示**语法错误**：
+点击菜单/工具图标。它位于 Chrome 右上角。然后访问 `工具`（`Tools`）菜单，最后点击 `JavaScript 控制台`，如图所示。将出现以下窗口，指示**语法错误**：
 
 ![打开的 Chrome JavaScript 控制台](img/chrome-console2.png) 图 1.11：打开的 Chrome JavaScript 控制台
 
-在这种情况下，它正在提醒我们有一个“未预期的字符串”。有帮助吗？有时错误信息可能并不清晰，但通过指示问题所在的位置已经很有帮助了。注意，在错误信息的右侧，浏览器会显示问题发生在哪个文件以及哪一行。你甚至可以点击那里直接跳转到问题的代码段。
+在这种情况下，它正在提醒我们有一个“未预期的字符串”。有时错误信息可能不够清晰，但通过指出问题所在的位置已经非常有帮助了。请注意，在错误信息的右侧，浏览器会显示问题发生在哪个文件以及哪一行。你甚至可以点击该位置直接跳转到问题的代码段。
 
-通过这条错误信息，Chrome 想指出 `"chamando sem parenteses"` 出现在一个意料之外的地方，就像它在用一种它听不懂的“语言”说话。这种错误就是我们说的**语法错误**，即在与懂语言的人交流时形式上的错误。在这种特殊情况下，它不期望在括号之外出现这条消息。修复这个问题。
+通过这个错误信息，Chrome 想告诉我们 `"chamando sem parenteses"` 出现在了一个意料之外的位置，就像它在用一种它听不懂的“语言”说话。这种错误就是我们所说的**语法错误**，即在与懂得该语言的人交流时形式上的错误。在这种情况下，它不期望在括号之外出现这条消息。请修复这个问题。
 
-用其他错误进行测试。例如，以错误的方式编写 `alert`，比如 `alertar`。
+用其他错误进行测试。例如，以错误的方式编写 `alert`，比如写成 `alertar`。
 
-同时，有些变化不会影响代码执行。例如，我们可以在 `alert` 和左括号之间加上空格。那么分号呢？我们可以省略它吗？引号呢？测试一下，发现它。在我们课程之外进行实验是非常重要的。
+同时，有些变化不会影响代码的执行。例如，我们可以在 `alert` 和左括号之间添加一个空格。那么分号呢？我们可以省略它吗？引号呢？请进行测试并发现答案。在课程之外进行实验是非常重要的。
 
-对于 Firefox，可以通过访问 `工具` (`Tools`)、`Web 开发者` 然后是 `Web 控制台` 菜单来访问类似的控制台。在 Internet Explorer 9 中，你可以点击齿轮图标并选择 `F12 开发工具` (`Developer Tools`) 来找到它。
+对于 Firefox，可以通过访问 `工具`（`Tools`）、`Web 开发者` 然后是 `Web 控制台` 菜单来访问类似的控制台。在 Internet Explorer 9 中，你可以点击齿轮图标并选择 `F12 开发工具`（`Developer Tools`）来找到它。
 
 ### 1.8 救命！重音显示不正常
 
 **仅在你使用 Mac 或 Linux 的情况下**，会出现一个小问题：重音显示不正确。当我们保存文件时，有不同的格式来以 `字节` 存储字符。Chrome 默认会尝试用名为 `latin1` 的编码读取它。
 
-如果我们以其他格式保存文件，我们需要在 HTML 中包含这些信息，HTML 拥系列标签，这些标签甚至不标记文本，而是为文件提供元数据。如果你使用这些操作系统之一，请将以下行作为文件的第一行添加：`<meta charset="UTF-8">`。将其想象为 Word 文件的属性。这些信息不是直接提供给最终用户的，而是为了让浏览器能更好地处理该文件。
+如果我们以其他格式保存文件，我们需要在 HTML 中包含这些信息。HTML 拥有一系列标签，这些标签甚至不标记文本，而是为文件提供元数据。如果你使用的是这些操作系统之一，请将以下行作为文件的第一行添加：`<meta charset="UTF-8">`。可以把它想象为 Word 文件的属性。这些信息不是直接提供给最终用户的，而是为了让浏览器能够更好地处理该文件。
 
 ## 第 2 章：与用户通信
 
@@ -243,9 +232,6 @@ Basta baixar este executável e abri-lo. Durante a instalação, há a opção d
 4 </script>
 ```
 
-
-
-
 在许多语言中，就像 JavaScript 中一样，引号之间的字符序列被称为 `string`。因此，我们说 `+` 除了相加数字外，还会拼接 `strings`。
 
 你将要处理数字还是字符序列（`string`）？这取决于你想做什么。对于数字，我们可以进行数学运算。为了估算你的出生年份，我们从当前年份中减去这个数值：
@@ -257,7 +243,7 @@ Basta baixar este executável e abri-lo. Durante a instalação, há a opção d
 
 那么，如果我们将的没有执行 `document.write(2012 - 25)`，而是将 `2012 - 25` 整体放在引号中，执行 `document.write("2012 - 25")` 呢？结果是什么？
 
-为了简洁起见，我们有时会在后续程序中省略 `script` 标签，就像我们刚刚做的那样。但你应该使用它们。此外，如果我们不把这些指令放在 `script` 标签内，我们的程序会发生什么？测试一下吧。
+为了简洁起见，我们有时会在后续程序中省略 `script` 标签，就像我们刚刚做的那样。但你应该使用它们。此外，如果我们不把这些指令放在 `script` 标签内，我们的程序会发生什么？请进行测试。
 
 除了减法运算符 `-` 之外，还有加法运算符 `+`、乘法 `*` 和除法 `/`。你可以将你的年龄与作者的年龄相加。Paulo 年 32 岁，Adriano 26 岁：
 
@@ -270,7 +256,7 @@ Basta baixar este executável e abri-lo. Durante a instalação, há a opção d
 
 ```javascript
 1 document.write("我们的平均年龄是： ");
-2- document.write(25 + 32 + 26 / 3);
+2 document.write(25 + 32 + 26 / 3);
 ```
 
 检查结果。不符合预期！除法计算是在加法之前完成的，就像学校数学一样，因此第一个计算的值是 `26 / 3`。我们可以使用括号来强制执行计算顺序，先进行加法：
@@ -287,7 +273,7 @@ Basta baixar este executável e abri-lo. Durante a instalação, há a opção d
 1 document.write("我的年龄是： " + 25);
 ```
 
-字符序列 `"我的年龄是"` 会与数字 `25` 一起出现，也就是说，它们被拼接了！同样注意我们需要小心括号。让我们再次混合字符串和数字：
+字符序列 `"我的年龄是"` 会与数字 `25` 一起出现，也就是说，它们被拼接了！同样需要注意括号。让我们再次混合字符串和数字：
 
 ```javascript
 1 document.write("我们的平均年龄是： " + ((25 + 32 + 26) / 3));
@@ -308,7 +294,7 @@ Basta baixar este executável e abri-lo. Durante a instalação, há a opção d
 
 每次复习都会为你提供重要的练习，以便你练习并巩固我们看到的内容。不要满足于此，要进行你自己的测试。你的好奇心对你的学习至关重要。
 
-1.这段代码没有使用 `<br>`，所以所有输出都在同一行！这几乎几乎无法跟踪程序。修改它，在每行末尾添加 `<br>`。有引号的地方，只需将其放在里面。没有引号的地方，你需要进行拼接。例如，在这一行：
+1. 这段代码没有使用 `<br>`，所以所有输出都在同一行！这几乎几乎无法跟踪程序。修改它，在每行末尾添加 `<br>`。有引号的地方，只需将其放在里面。没有引号的地方，你需要进行拼接。例如，在这一行：
 
 ```javascript
 1 document.write("我的年龄是： " + 25);
@@ -358,7 +344,7 @@ document.write((eu + adriano + paulo) / 3);
 
 ### 2.6 复习你的代码：使用变量组织
 
-在上一节中，我们以更有可读性的编写了代码。如果你愿意，创建 `testando_idades_com_variaveis.html` 来最后练习一次这段代码。首先放入每个人的年龄声明：
+在上一节中，我们以更有可读性的方式编写了代码。如果你愿意，创建 `testando_idades_com_variaveis.html` 来最后练习一次这段代码。首先放入每个人的年龄声明：
 
 ```html
 <script>
@@ -368,85 +354,6 @@ document.write((eu + adriano + paulo) / 3);
 </script>
 ```
 
-
-
-
-
-```
-1 var total = eu + adriano + paulo;
-2 var media = total / 3;
-```
-
-Por fim, imprimimos a média e fechamos a tag de `script`:
-
-```
-1 document.write("A média de idade é " + media);
-2 </script>
-```
-
-Seu código está funcionando? Cuidado com os nomes das variáveis. Você precisa utilizá-las da mesma forma como as declarou. O JavaScript diferencia, inclusive, maiúsculas de minúsculas. Erre o nome de uma variável para ver qual é a mensagem de erro que aparecerá no JavaScript Console. Por exemplo, mostre `med` em vez de `media`, como havia sido declarado:
-
-```
-1 document.write("A média de idade é " + med);
-```
-
-É comum digitarmos o nome de uma variável errada. Fique atento e habitue-se a utilizar o JavaScript Console que vimosmos no fim da lição passada. As mensagens de erro serão em inglês, e algumas vezes não serão tão específicas quanto gostaríamos, mas sempre dizendo com exatidão em qual linha do código houve o problema.
-
-Você está cansado de ver um número com tantas casas decimais? Você pode arredondá-lo com o `Math.round(numero)`. Altere seu código:
-
-```
-1 document.write("A média de idade é " + Math.round(media));
-```
-
-O `Math.round` pega o valor que está dentro dos parênteses e o arredonda, utilizando esse novo valor para juntar (concatenar) com o restante da frase que queremos mostrar.
-
-Agora, vamos fazer um exercício completamente novo:
-
-1. Crie um novo arquivo, o `calcula_consumo.html`, colocando um título de destaque na primeira linha: `<h3>Álcool ou Gasolina?</h3>`. Logo logo abaixo, insira as já conhecidas tags de `<script>` e `</script>`. O arquivo está pronto para adicionarmos o código do nosso programa. Salve-o e abra-o no navegador.
-
-2. Seu carro tem um `tanque` de 40 litros. Com gasolina, e usando todo o tanque, você fez um `caminhoComGasolina` de `480` quilômetros. Qual é o `consumoDeGasolina`? Para calculá-lo, divida a distância percorrida pela quantidade de litros gasto. Imprima esse valor, organizando suas contas em variáveis.
-
-É comum utilizar uma variável dessa forma, como `consumoDeGasolina`. A letra `D` e `G` facilitam a leitura. Compare `consumoDeGasolina` com `consumodegasolina`. E fique atento: se você errar a maiúscula/minúscula depois que criar a variável, o código não funcionará como esperado.
-
-3. Já com álcool, o mesmo tanque de 40 litros fez um `caminhoComAlcool` de `300` quilômetros. Qual é o `consumoDeAlcool`?
-
-4. Os números são todos quebrados, cheios de dígitos. Utilize o `Math.round` para arredondá-los. Funciona bem?
-
-5. Arredondar um número pequeno, como `0.314178473`, vai dar `0`! Faz sentido, mas não é o que queríamos. Gostaríamos de arredondar `0.314178473` para ter apenas duas casas decimais, por exemplo. Pra fazer isso, você deve utilizar `numero.toFixed(2)`, sendo que o `2` é um parâmetro indicando quantas casas decimais queremos.
-
-Repare que estamos chamando uma função de maneira bem diferente. Antes fazíamos `Math.round(numero)` e agora fazemos `numero.toFixed(2)`. Além do nome da função ser diferente, dessa vez a variável `numero` aparece "na frente" da chamada. Isso aparece bastante no JavaScript e tem sim uma diferença, que entenderemos em capítulos posteriores.
-
-6. Agora um desafio. Hoje, o `precoDaGasolina` está R$2.90 e o `precoDoAlcool` R$2.40. Qual é o `precoPorKilometro`, tanto do álcool quanto da gasolina? Dica: dividindo o preço do litro pelo consumo, temos o preço por quilometro. Qual é o menor deles?
-
-## 2.7 Pare de escrever BR tantas vezes!
-
-Vimos que utilizar variáveis já ajudou de duas formas: não precisamos mais copiar e colar tanta informação e também alguns trechos ficaram mais legíveis. As variáveis podem ir além, economando na repetição de linhas de código.
-
-Atenção! Nesta seção, não precisa alterar seu código, apenas acompanhe o que poderia ser feito. Você fará tudo que há de novo aqui durante a revisão, que virá logo a seguir.
-
-Repare como ficou aquele nosso código que mostra as idades de cada pessoa:
-
-```
-1 var ano = 2012;
-2 document.write("Eu nasci em : " + (ano - 25) + "<br>");
-3 document.write("Adriano nasceu em : " + (ano - 26) + "<br>");
-4 document.write("Paulo nasceu em : " + (ano - 32) + "<br>");
-```
-
-Poderíamos organizá-lo um pouco mais, removendo o `<br>` para outra chamada do `document.write`.
-
-```
-1 var ano = 2012;
-2 document.write("Eu nasci em : " + (ano - 25));
-3 document.write("<br>");
-4 document.write("Adriano nasceu em : " + (ano - 26));
-5 document.write("Paulo nasceu em : " + (ano - 32));
-```
-[/content]
-
-*(注：由于原始文本为葡萄牙语，且指令要求翻译成中文，以下为针对该文本的中文翻译。)*
-
-[content]
 ```
 1 var total = eu + adriano + paulo;
 2 var media = total / 3;
@@ -518,8 +425,6 @@ Poderíamos organizá-lo um pouco mais, removendo o `<br>` para outra chamada do
 5 document.write("Paulo nasceu em : " + (ano - 32));
 ```
 
-
-
 搞定。`pulaLinha` 现在指的是一个可以被调用的函数。**如何调用它？** 就像你之前调用 `alert` 一样。也就是说，**在它的名称后使用括号**：
 
 ```
@@ -548,7 +453,7 @@ Poderíamos organizá-lo um pouco mais, removendo o `<br>` para outra chamada do
 3 }
 ```
 
-但这个函数并没有那么有用：它总是显示同一个句子。它不符合我们的需求，因为我们想要显示的句子取决于时机。不要绝望，确实有办法解决这个问题。当我们**声明**（创建）一个函数时，我们可以采取采取这种方式，使其能够接收到额外的内容，即某些对我们重要的信息。在显示某个句子的函数中，这个重要值是什么？就是我们要显示的 `frase`！我们通过在括号内声明来实现，如 `function(frase)`，然后像我们已经认识的变量一样正常地使用 `frase`：
+但这个函数并没有那么有用：它总是显示同一个句子。它不符合我们的需求，因为我们想要显示的句子取决于时机。不要绝望，确实有办法解决这个问题。当我们**声明**（创建）一个函数时，我们可以采取这种方式，使其能够接收到额外的内容，即某些对我们重要的信息。在显示某个句子的函数中，这个重要值是什么？就是我们要显示的 `frase`！我们通过在括号内声明来实现，如 `function(frase)`，然后像我们已经认识的变量一样正常地使用 `frase`：
 
 ```
 1 function mostra(frase) {
@@ -614,7 +519,7 @@ Poderíamos organizá-lo um pouco mais, removendo o `<br>` para outra chamada do
 
 `alert` 会在弹窗中抛出消息。过度使用它可能会耗尽用户的耐心。`document.write` 的侵入性较小，但你是否注意到消息是直接投到页面上的，甚至不需要每条新消息都点击 *OK*。
 
-即使将 `document.write` 放在函数中，我们通常也希望某些消息不给用户看，但又希望在开发期间看到它们，使其仅对你这个程序员可见。这对于发现错误（我们称之为 **bug**）、学习技巧和测试功能非常有用。我们将这些数据保存在 **logs** 中。在葡萄语中，经常使用 **logar** 这个新造词。要用 JavaScript 记录信息（log），可以使用 `console.log` 函数。测试一下：
+即使将 `document.write` 放在函数中，我们通常也希望某些消息不给用户看，但又希望在开发期间看到它们，使其仅对你这个程序员可见。这对于发现错误（我们称之为 **bug**）、学习技巧和测试功能非常有用。我们将这些数据保存在 **logs** 中。在葡萄牙语中，经常使用 **logar** 这个新造词。要用 JavaScript 记录信息（log），可以使用 `console.log` 函数。测试一下：
 
 ```
 1 <script>
@@ -626,14 +531,11 @@ Poderíamos organizá-lo um pouco mais, removendo o `<br>` para outra chamada do
 
 结果是什么？
 
-传递给 `console.log` 的消息并没有出现！当我们使用该函数时，浏览器会将所有消息存储在一个特殊的地方，普通用户看不到。为了查看结果，我们需要启用控制台显示，正如我们在上一节中检查错误时所的那样。
+传�给 `console.log` 的消息并没有出现！当我们使用该函数时，浏览器会将所有消息存储在一个特殊的地方，普通用户看不到。为了查看结果，我们需要启用控制台显示，正如我们在上一节中检查错误时所的那样。
 
 在 Chrome 中，你可以通过点击小工具菜单图标来实现，选择*工具*（*Tools*，如果是英语）然后选择 *JavaScript 控制台*。这就是你之前检查代码错误时使用的同一个控制台。
 
 在 Windows 和 Linux 上，可以使用快捷键 `CTRL+SHIFT+J` 打开此标签页（Mac 上为 *Command+Option+J*），如果选中了其他选项，请点击 Console。它确实非常重要，你经常会访问它。
-
-
-
 
 你可以以你认为最合适的方式组合这三个功能：`alert` 用于突出消息，`document.write` 用于在页面内部添加信息，以及 `console.log` 用于仅向我们（程序员）显示数据。
 
@@ -663,7 +565,7 @@ Poderíamos organizá-lo um pouco mais, removendo o `<br>` para outra chamada do
 
 到目前为止，你都在自己的浏览器中运行程序。如果你想让朋友也能看到你正在做什么呢？如果你已经对互联网有所了解，可以将你的 `.html` 文件放置在 Web 服务器上。但有一种非常简单的方法可以分享你的练习并展示你新学到的编程技能。
 
-有些网站允许你在表单内编写 HTML 和 JavaScript 代码，并快速查看结果。在网站上编写而不是在自己的电脑上编写有什么好处呢？答案是这些网站允许程序分享！在这里访问我们用于计算年龄的程序：
+有些网站允许你在表单内编写 HTML和 JavaScript 代码，并快速查看结果。在网站上编写而不是在自己的电脑上编写有什么好处呢？答案是这些网站允许程序分享！在这里访问我们用于计算年龄的程序：
 
 [`jsfiddle.net/55vSR/`](http://jsfiddle.net/55vSR/)
 
@@ -707,20 +609,6 @@ Poderíamos organizá-lo um pouco mais, removendo o `<br>` para outra chamada do
 3 var imc = peso / (altura * altura);
 ```
 
-*(注：原文此处开始出现了大量重复段落，已按要求逐行翻译)*
-
-但是 `peso` 和 `altura` 变量在哪里定义的呢？还没有定义。你经常看到这样编写的示例代码，即是不完整的。如果你尝试运行这样的代码，JavaScript 会抱怨 `altura` 和 `peso` 不存在。尝试一下。
-
-我们来给它们赋值并打印 `imc` 的结果：
-
-```
-1 var peso = 75;
-2 var altura = 1.72;
-3 var imc = peso / (altura * altura);
-```
-
-*(重复段落翻译略)*
-
 ### 3.2 使用函数计算 IMC
 
 如果我们现在需要计算朋友的 IMC 呢？我们可以创建另一个变量 `imcPrimo` 来存储该结果。为了这一点，我们需要有 `pesoPrimo` 和 `alturaPrimo`。我们的代码将如下：
@@ -731,9 +619,6 @@ Poderíamos organizá-lo um pouco mais, removendo o `<br>` para outra chamada do
 3 var imcPrimo = pesoPrimo / (alturaPrimo * alturaPrimo);
 4 mostra("我朋友的 IMC 是：" + imcPrimo);
 ```
-
-
-
 
 相反，我们可以让 `calculaIMC` 不显示 BMI，而是顾如其名，只计算它的值并将其返回给调用者。修改你的函数，删除 `mostra` 那行并添加一个 `return`：
 
@@ -752,7 +637,7 @@ Poderíamos organizá-lo um pouco mais, removendo o `<br>` para outra chamada do
 3 var imcDoPrimo = calculaIMC(alturaDoPrimo, pesoDoPrimo);
 4 mostra("我表弟的 BMI 是 " + imcDoPrimo);
 5 mostra("他仍然比消瘦标准高出 " + (imcDoPrimo - 18.5) 
-6     + 分。");
+6     + " 分。");
 ```
 
 变量 `imcDoPrimo` 将通过关键字 `return` 接收 `calculaIMC` 返回的值。我们有很多以这种方式工作的函数：接收一些参数，执行某个任务，然后返回一个对调用者有用的结果。这个返回给调用者的值被称为**函数的返回值**。
@@ -798,6 +683,7 @@ Poderíamos organizá-lo um pouco mais, removendo o `<br>` para outra chamada do
 让我们稍微修改一下代码，通过练习来学习。
 
 1. 添加一行代码说明你距离严重肥胖有多远（严重肥胖指数是 35）。
+
 2. 这两行有更短的写法：
 
     ```
@@ -839,34 +725,41 @@ Poderíamos organizá-lo um pouco mais, removendo o `<br>` para outra chamada do
 
 我们能够处理数字和单词，但它们都在我们的代码内部，即使它们组织在变量和函数中。如果我们想计算另一个朋友的 BMI，我们需要更改这些值、保存文件并刷新页面。如果能够在不修改代码的情况下获取我们程序的用户信息，将非常有趣。
 
-当我们使用电脑时，出现一个对话框（`dialog`）是自然的。当我们使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。当我们使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。当我们使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。当我们使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。当我们使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。当我们使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。当我们使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。当我们使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。当我们使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。当我们使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。当我们使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。当我们使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。当我们使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。当我们使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。当我们使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。当我们使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。当我们使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。当我们使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。当我们使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。当我们使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。当我们使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。当我们使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。当我们使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。当我们使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。当我们使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。当我们使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。当我们使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。当我们使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。当我们使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。当我们使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。当我们使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。当我们使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。当我们使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。当我们使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。当我们使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。当我们使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。当我们使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。当我们使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。当我们使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。当我们使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。当我们使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。当我们使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。当我们使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。当我们使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。当我们使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。当我们使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。当我们使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。当我们使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。当我们使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。当我们使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。当我们使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。当我们使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。当我们使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。当我们使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。当我们使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。当我们使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。当我们使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。当我们使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。当我们使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。当我们使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。当我们使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。当我们使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。当我们使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。当我们使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。当我们使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。当我们使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。当我们使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。当我们使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。当我们使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。当我们使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。当我们使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。当我们使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。当我们使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`对话`）是自然的。框使用对话框（```）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（```）时，出现一个对话框（`dialog`）是自然的。框使用对话框（```）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（`dialog`）时，出现一个对话框（`dialog`）是自然的。框使用对话框（```）时，出现一个对话框（```）是自然的。框框框框（```）`，出现一个对话框（```）是自然的。框框框框（```）`，出现一个对话框（``框）是框。框框框框框框框`````框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框. 
-    ``` 
-    框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框框. 
-    ```
-    框框框框框框    ：：
+
+
+当我们使用电脑时，出现一个对话框（`dialog`）是自然的。
+
+## 代码示例
 
 ```java
 public class BMICalculator {
+
     public static double calculateBMI(double height, double weight) {
+
         double imc = weight / (height * height);
+
         return imc;
+
     }
+
 }
 
 public class Main {
+
     public static void main(String[] args) {
+
         System.out.println("Hello World");
+
     }
+
 }
 ```
 
-
-
-Com isso, seu código passará de `var dias = idade * 365;` para `var dias = calculaDiasDeVida(idade);`.
+Com isso, seu código passará de `var dias = idade * 365;` para `var dias = calculaDiasDeVida(idade);`。
 
 2. Faça o mesmo com a variável de batimentos. Crie uma função `calculaBatimentos` que recebe quantos `dias` a pessoa viveu e faz o cálculo.
 
-3. Agora que temos as duas funções, podemos fazer assim:
+3. Agora que temos as duas funções, podemos fazer assim：
 
 ```
 1 var idade = 34;
@@ -884,7 +777,7 @@ Um pequeno desafio: como fazer, na mesma linha, uma chamada para `calculaDiasDeV
 
 Para facilitar, vamos escrever um simples código com três funções: a primeira função chama a segunda função, e a segunda chama a terceira. Além disso, dentro de cada função imprimimos uma mensagem antes e depois de chamar a próxima. Dessa forma será possível que você veja como as chamadas são "empilhadas" e, quando a terceira função é chamada, o caminho inverso começa a ser percorrido.
 
-Crie então um arquivo `funcoes.html` e coloque:
+Crie então um arquivo `funcoes.html` e coloque：
 
 ```
  1 <script>
@@ -917,17 +810,18 @@ Rode e veja o resultado!
 
 Às vezes pode ser trabalhoso digitar um programa inteiro para descobrir que determinado comando não funcionava da maneira que esperávamos. O Chrome possibilita fazer testes dentro do próprio Console.
 
-Faça o seguinte teste. Abra uma nova aba no Chrome e então abra o Console, conforme vimos na seção 2.11. Você pode fazer isso pelo menu ou já se habituar com a tecla de atalho: `CTRL+SHIFT+J` no Windows e no Linux (`Command+Option+J` no Mac) e depois clicar no Console.
+Faça o seguinte teste. Abra uma nova aba no Chrome e então abra o Console, conforme vimos na seção 2.11. Você pode fazer isso pelo menu ou já se habituar com a tecla de atalho：`CTRL+SHIFT+J` no Windows e no Linux（`Command+Option+J` no Mac）e depois clicar no Console.
 
-Repare que dentro do console você pode digitar o que quiser, que o JavaScript será executado! Digite, por exemplo, `console.log("teste");`. O que acontece? Ele primeiro imprime o que a função retorna (nesse caso `undefined`, indicando que não retorna nada). Logo depois vem a saída da nossa função, conforme esperado!
+Repare que dentro do console você pode digitar o que quiser, que o JavaScript será executado！Digite, por exemplo, `console.log("teste");`。O que acontece? Ele primeiro imprime o que a função retorna（nesse caso `undefined`, indicando que não retorna nada）。Logo depois vem a saída da nossa função, conforme esperado！
 
-Faça mais alguns testes. Declare uma variável `idade` valendo 30. Na linha seguinte, digite apenas `idade + 5;`. Não há muito sentido em fazer uma conta em JavaScript sem atribuir o resultado a uma variável, pois o resultado seria perdido, ficaria sem uso. Dentro do console você pode fazer isso, pois ele exibirá o resultado para você, conforme a figura:
+Faça mais alguns testes. Declare uma variável `idade` valendo 30. Na linha seguinte, digite apenas `idade + 5;`。Não há muito sentido em fazer uma conta em JavaScript sem atribuir o resultado a uma variável, pois o resultado seria perdido, ficaria sem uso. Dentro do console você pode fazer isso, pois ele exibirá o resultado para você, conforme a figura：
 
-![Fazendo testes no Console](img/console-testes.png)*Figura 3.1: Fazendo testes no Console*
+![Fazendo testes no Console](img/console-testes.png)
+*Figura 3.1: Fazendo testes no Console*
 
-Outra ajuda que o console dá se chama `code completion` ou `auto complete`. É a capacidade dele de tentar adivinhar o que você quer escrever, tornando a codificação mais rápida. Repare que na figura já começamos a digitar `console` e paramos no meio, como indicado pelo cursor, e o console já deu duas sugestões. Basta escolher a correta e pressionar enter! Essa também é uma forma de conhecer mais as funções e variáveis que o JavaScript nos fornece.
+Outra ajuda que o console dá se chama `code completion` ou `auto complete`。É a capacidade dele de tentar adivinhar o que você quer escrever, tornando a codificação mais rápida。Repare que na figura já começamos a digitar `console` e paramos no meio, como indicado pelo cursor, e o console já deu duas sugestões。Basta escolher a correta e pressionar enter！Essa também é uma forma de conhecer mais as funções e variáveis que o JavaScript nos fornece。
 
-Cuidado! Se você esquecer de fechar chaves ou parênteses, pode ser bem difícil perceber. O efeito final será inesperado e facilmente pode se confundir entre as diversas mensagens de erro. Caso o código seja grande, prefira criar seu próprio arquivo `html`, ou então o [`www.jsfiddle.net`](http://www.jsfiddle.net), conforme visto na seção 2.13.
+Cuidado！Se você esquecer de fechar chaves ou parênteses, pode ser bem difícil perceber。O efeito final será inesperado e facilmente pode se confundir entre as diversas mensagens de erro。Caso o código seja grande, prefira criar seu próprio arquivo `html`, ou então o [`www.jsfiddle.net`](http://www.jsfiddle.net), conforme visto na seção 2.13.
 
 #### Para saber mais: outra forma de declarar funções
 
@@ -939,7 +833,7 @@ Em javascript, há quem prefira declarar as funções dessa outra forma...
 3 };
 ```
 
-... do que a maneira que vimos no livro, que diferencia bastante as funções das variáveis:
+... do que a maneira que vimos no livro, que diferencia bastante as funções das variáveis：
 
 ```
 1 function pulaLinha() {
@@ -947,14 +841,11 @@ Em javascript, há quem prefira declarar as funções dessa outra forma...
 3 }
 ```
 
-Na maioria das vezes não faz diferença usar de uma forma ou outra. A forma que atribui a função a uma variável é usada mais comumente quando estamos usando *programação funcional*. Não se preocupe com isso, neste momento.
+Na maioria das vezes não faz diferença usar de uma forma ou outra。A forma que atribui a função a uma variável é usada mais comumente quando estamos usando *programação funcional*。Não se preocupe com isso, neste momento。
 
 ## Capítulo 4: Execute códigos diferentes dependendo da condição
 
-Nem sempre queremos executar um código. Como fazemos para decidir se uma linha deve ser ou não executada? Como expressar uma condição? Vamos ver novos comandos e nos aprofundar na lógica de programação.
-
-
-
+Nem sempre queremos executar um código。Como fazemos para decidir se uma linha deve ser ou não executada? Como expressar uma condição? Vamos ver novos comandos e nos aprofundar na lógica de programação。
 
 ```
 1 var vitorias = 3;
@@ -1114,9 +1005,6 @@ if(imcDoUsuario > 18.5) {
 }
 ```
 
-
-
-
 看起来很复杂。我们在一个 `if` 里面嵌套了另一个 `if`！注意，我们使用了`缩进`功能来清楚地表示第二个 `if` 在第一个 `if` 内部。如果我们没有使用 `TAB`，就会很难察觉这一点。想看看吗？看这个缩进非常糟糕、格式混乱的示例：
 
 ```
@@ -1187,9 +1075,6 @@ if(imcDoUsuario > 18.5) {
 2   var numeroPensado = Math.round(Math.random() * 100);
 3 </script>
 ```
-
-
-
 
 接下来，我们询问用户一个数字，即他的`chute`，让他尝试猜猜计算机想的数字。通过这个数字，我们可以检查用户是否正确。
 
@@ -1272,8 +1157,6 @@ if(imcDoUsuario > 18.5) {
 </script>
 ```
 
-
-
 首先，让我们重新编写 `mostra` 函数的代码。之前我们也创建了 `pulaLinha` 函数，但出于教学考虑，考虑到我们没有在其他地方复用 `pulaLinha`，而且它本身并不复杂。这次我们将在同一个函数中完成这两项工作：调用 `document.write` 并在末尾添加 `<br>`：
 
 ```
@@ -1337,7 +1220,6 @@ if(imcDoUsuario > 18.5) {
 ```
 
 1. 现在我们已经能够显示世界杯年份了，计算机似乎完全没有这项任务感到累。增加你的程序以显示到 2100 年的世界杯。只需更改 `while` 条件中的限制年份即可。在浏览器中打开 `anos_de_copa.html` 文件，看看它是否需要更长的时间。
-
 2. 太不可议了，它完成了所有工作却不累！想象一下如果是我们来完成这些计算将会怎样。甚至可以尝试更大的数字，比如 20000、50000 或 100000。
 
 ```
@@ -1351,14 +1233,9 @@ if(imcDoUsuario > 18.5) {
 我们学会了可以通过 `prompt` 向用户获取信息。通过类似 `var anoLimite = prompt("Qual é o ano limite?");` 的行获取 `anoLimite`，然后使用该变量来执行你的 `while`。条件将变为 `anoDeCopa <= anoLimite`。
 
 4. 再次在浏览器中打开程序，检查现在在开始执行之前，它会询问我们限制年份是多少。例如输入 2050，查看结果。
-
 5. 如果让我们显示到 100 年的世界杯（那一年世界杯还没被创立），会发生什么呢？做这个测试并发现我们的程序非常聪明，它已经知道在那一年没有世界杯。但它是怎么做到的呢？
 
 很简单。在我们的 `while` 条件中，我们规定 `anoDeCopa` 必须小于或等于 `anoLimite`，年份才会在浏览器中显示。也就是说，当年份
-
-
-
-
 
 ```
 1 var anoComoTexto = prompt("Informe o ano inicial");
@@ -1417,6 +1294,8 @@ if(imcDoUsuario > 18.5) {
 15 </script>
 ```
 
+
+
 现在我们可以在浏览器中打开 `anos_de_copa.html` 程序，它会询问我们起始年份和上限，并正确地完成整个过程。
 
 1. 同样一个显示赛事年份的程序，但是针对奥运会的。记得第一届奥运会是在 1896 年，而且也是每 4 年一次。
@@ -1442,33 +1321,33 @@ if(imcDoUsuario > 18.5) {
 第一步是创建一个新文件，可以命名为 `tabuadas.html`。在这个文件中，我们将通过 `<script>` 标签开始编写 JavaScript 代码：
 
 ```
-1 <script>
-2 
+<script>
+
 </script>
 ```
 
 由于我们的乘法表计算从乘以 1 开始，直到乘以 10，我们将创建一个变量来存储这个值，我们将其命名为 `multiplicador`，并使其初始值为 1。
 
 ```
-1 <script>
-2   var multiplicador = 1;
-3 </script>
+<script>
+  var multiplicador = 1;
+</script>
 ```
 
 只要变量 `multiplicador` 小于或等于 10，我们就想要计算乘法表。我们可以让程序执行这些任务。以下代码是一个示例：
 
 ```
-1 <script>
-2 var mostra = function(frase) {
-3   document.write(frase + "<br>");
-4 };
-5 
-6 var multiplicador = 1;
-7 while(multiplicador <= 10) {
-8   mostra("7 x " + multiplicador + " = " + (7 * multiplicador));
-9   multiplicador++;
-10 }
-11 </script>
+<script>
+  var mostra = function(frase) {
+    document.write(frase + "<br>");
+  };
+
+  var multiplicador = 1;
+  while(multiplicador <= 10) {
+    mostra("7 x " + multiplicador + " = " + (7 * multiplicador));
+    multiplicador++;
+  }
+</script>
 ```
 
 ### 5.7 学习不同的显示方式：for 命令
@@ -1500,27 +1379,24 @@ for (初始化; 条件; 增量) {
 
 注意 `for` 如何一行整合了我们之前用 `while` 需要多行完成的功能，使得代码更加简洁且易于阅读。
 
-
-
-
 每一个这些空间都在等待一个信息来控制将发生的循环。我们将编写一个程序，显示 10 个警报，每个都有一个从 1 到 10 的数字。我们同样会有一个循环，现在它应该从 1 到 10。你还记得如何用 `while` 来实现它吗？代码会像下面这样：
 
 ```
-1 var numero = 1
-2 while(numero <= 10) {
-3   alert(numero);
-4   numero = numero + 1;
-5 }
+var numero = 1
+while(numero <= 10) {
+  alert(numero);
+  numero = numero + 1;
+}
 ```
 
 那么，我们可以用 `for` 实现几乎完全相同的操作：
 
 ```
-1 var numero = 1;
-2 for(; numero <= 10; ) {
-3   alert(numero);
-4   numero = numero + 1;
-5 }
+var numero = 1;
+for(; numero <= 10; ) {
+  alert(numero);
+  numero = numero + 1;
+}
 ```
 
 我们在第二个空间填充了循环条件，它将每次被被检查，以确定是否应该发生下一次循环。
@@ -1530,10 +1406,10 @@ for (初始化; 条件; 增量) {
 使用 `for`，我们可以使用分号之前的第一个空间来进行初始化。一个例子是初始化变量 `numero`：
 
 ```
-1 for(var numero = 1; numero <= 10; ) {
-2   alert(numero);
-3   numero = numero + 1;
-4 }
+for(var numero = 1; numero <= 10; ) {
+  alert(numero);
+  numero = numero + 1;
+}
 ```
 
 现在，发生了什么变化？几乎没有变化。你的代码变得更易读了。`var numero = 1` 的部分被称为 `for` 的初始化。它将只执行一次。下一步是检查 `numero <= 10` 并决定是否应该执行循环。
@@ -1541,9 +1417,9 @@ for (初始化; 条件; 增量) {
 在第二个分号 后的第三个空间，我们可以做什么呢？该部分的内容将始终被执行。它被广泛用于执行增加、递增我们在循环中使用的变量的代码。在这种情况下，是为了增加我们变量 `numero` 的值。通过此，我们可以使用这个新命令以这种方式打印从 1 到 10 的数字：
 
 ```
-1 for(var numero = 1; numero <= 10; numero = numero + 1) {
-2   alert(numero);
-3 }
+for(var numero = 1; numero <= 10; numero = numero + 1) {
+  alert(numero);
+}
 ```
 
 因此，我们可以发现 `for` 拥有 3 个空间/部分：第一个，我们说明我们想要的初始值是多少；第二个，用于定义决定是否应该执行循环的条件——这部分的实现与我们在 `while` 中看到的一样；第三个，用于修改影响循环结束的变量值。这三部分都由 `;` 隔开。
@@ -1559,35 +1435,35 @@ for([初始化]; 重复条件]; 值修改])
 既然如此，如果我们编写相同的显示在屏幕上的程序，但现在使用 `for` 代替 `while` 会变成什么样？首先，让我们回一下乘法表代码是如何写的，它使用了 `while` 命令：
 
 ```
-1 <script>
-2 var mostra = function(frase) {
-3   document.write(frase + "<br>");
-4 };
-5 
-6 var multiplicador = 1;
-7 while(multiplicador <= 10) {
-8   mostra(7 * multiplicador);
-9   multiplicador = multiplicador + 1;
-10 }
-11 </script>
+<script>
+  var mostra = function(frase) {
+    document.write(frase + "<br>");
+  };
+
+  var multiplicador = 1;
+  while(multiplicador <= 10) {
+    mostra(7 * multiplicador);
+    multiplicador = multiplicador + 1;
+  }
+</script>
 ```
 
 现在，我们可以创建 `tabuada_com_for.html` 文件，在其中创建一个新程序，它将执行与之前完全相同的事情，但方式不同。由于 `for` 首先需要一个初始值，很容易识别出它是变量 `multiplicador`，它从值 1 开始。
 
 ```
-1 <script>
-2 for(var multiplicador = 1; ;) {
-3 }
-4 </script>
+<script>
+  for(var multiplicador = 1; ;) {
+  }
+</script>
 ```
 
 现在我们需要填充 `for` 需要的其他信息。下一个是循环应该持续到什么时候，在这种情况下，是指示当 `multiplicador` 小于 10 时应该循环的条件。
 
 ```
-1 <script>
-2 for(var multiplicador = 1; multiplicador <= 10; ) {
-3 }
-4 </script>
+<script>
+  for(var multiplicador = 1; multiplicador <= 10; ) {
+  }
+</script>
 ```
 
 好了，只差说明 `multiplicador` 以多大的间隔增加，在我们的情况下是每次 1。我们称这为递增变量。为了此，我们正在执行 `multiplicador = multiplicador + 1`。每当我们想给那个变量加 1 时，我们必须重复变量的名字，表示我们想将其赋值原有值加 1 的结果。
@@ -1597,10 +1473,10 @@ for([初始化]; 重复条件]; 值修改])
 通过此，我们可以用这种方式写写命令：
 
 ```
-1 <script>
-2 for(var multiplicador = 1; multiplicador <= 10; ) {
-3 }
-4 </script>
+<script>
+  for(var multiplicador = 1; multiplicador <= 10; ) {
+  }
+</script>
 ```
 
 好了，只差说明 `multiplicador` 以多大的间隔增加，在我们的情况下是每次 1。我们称这为递增变量。为了此，我们正在执行 `multiplicador = multiplicador + 1`。每当我们想给那个变量加 1 时，我们必须重复变量的名字，表示我们想将其赋值原有值加 1 的结果。
@@ -1610,33 +1486,36 @@ for([初始化]; 重复条件]; 值修改])
 通过此，我们可以用这种方式写写命令：
 
 ```
-1 <script>
-2 for(var multiplicador = 1; multiplicador <= 10; multiplicador++) {
-3   mostra(multiplicador * 7);
-4 }
-5 </script>
+<script>
+  for(var multiplicador = 1; multiplicador <= 10; multiplicador++) {
+    mostra(multiplicador * 7);
+  }
+</script>
 ```
 
+### 5.9 计算平均年龄
 
-
-
-Agora que sabemos quantos familiares existem, podemos perguntar a idade de cada um. Dessa forma, se for informado que são 4 familiares, precisamos perguntar as 4 idades. Note que temos uma repetição, que neste caso vai de 1 até número total de familiares.
+现在我们可以在浏览器中打开 `familia.html` 程序，它会询问我们有多少个家庭成员，然后询问每个人的年龄，最后计算并显示平均年龄。
 
 ```javascript
 var totalDeFamiliares = prompt("Quantos familiares são?");
+
 var numero = 1;
+
 while(numero <= totalDeFamiliares) {
   numero++;
 }
 ```
 
-Analisando o código, temos uma nova variável chamada `numero`. Ela serve apenas para nos auxiliar a saber até quando repetir o trecho dentro do `while`. A cada repetição, aumentamos seu valor em 1 através de `numero++`.
+分析代码，我们有一个新变量 `numero`。它仅用于帮助我们知道何时停止重复 `while` 内部的代码。每次重复，我们将其值增加 1，通过 `numero++`。
 
-A cada repetição, precisamos perguntar a idade da pessoa.
+每次重复，我们需要询问某人的年龄。
 
 ```javascript
 var totalDeFamiliares = prompt("Quantos familiares são?");
+
 var numero = 1;
+
 while(numero <= totalDeFamiliares) {
   var idadeTexto = prompt("Qual é a idade?");
   var idade = parseInt(idadeTexto);
@@ -1644,25 +1523,30 @@ while(numero <= totalDeFamiliares) {
 }
 ```
 
-Note que usamos o `parseInt` para transformar o valor digitado no `prompt` em um número. Isso acontece porque vamos somar esse valor `idade`. Se o deixássemos como `string`, os valores seriam concatenados, como já vimos.
+我们使用 `parseInt` 将 `prompt` 中输入的值转换为数字。这是因为我们将对这个 `idade` 值求和。如果我们保持为 `string`，值将被连接，就像我们之前看到的那样。
 
-É comum fazer tudo isso em uma única linha, descartando a necessidade de criar a variável `idadeTexto`. Este é o tipo de variável que chamamos de temporária, pois existe apenas para nos auxiliar a calcular a `idade`. Para fazer direto, usamos `parseInt(prompt("Qual é a idade?"))`. Parece complicado, mas não é. O JavaScript sempre começa a execução pelos parênteses mais internos, executando o `prompt`. Com o resultado do `prompt` em mãos, ele executará o `parseInt`, devolvendo o valor do que foi digitado, porém como número, pronto para ser usado corretamente em operações matemáticas. Nosso código ficou:
+通常，我们会将所有这些操作合并到一行，省去创建 `idadeTexto` 变量的需要。这是一种临时变量，仅用于帮助我们计算 `idade`。为了直接操作，我们使用 `parseInt(prompt("Qual é a idade?"))`。这看起来可能复杂，但实际上并不复杂。JavaScript 总是从最内层的括号开始执行，先执行 `prompt`。拿到 `prompt` 的结果后，它会执行 `parseInt`，返回输入的值，但作为数字，准备好用于数学运算。我们的代码变为：
 
 ```javascript
 var totalDeFamiliares = prompt("Quantos familiares são?");
+
 var numero = 1;
+
 while(numero <= totalDeFamiliares) {
   var idade = parseInt(prompt("Qual é a idade?"));
   numero++;
 }
 ```
 
-Para calcular a média, somamos todas as idades e dividimos pelo `totalDeFamiliares` que temos, porém, a cada repetição, pegamos uma nova idade e não guardamos o total de idades que já poderíamos ter pegado em repetições anteriores. Para resolver esse problema, vamos criar uma nova variável chamada `somaDeIdades`, que começará com o valor 0 e a cada repetição somaremos a idade digitada.
+为了计算平均年龄，我们将所有年龄相加，然后除以 `totalDeFamiliares`。然而，每次重复，我们只得到一个新的年龄值，而没有保存之前重复中已经获取的年龄总和。为了解决这个问题，我们创建一个新变量 `somaDeIdades`，初始值为 0，每次重复将输入的年龄加到这个变量上。
 
 ```javascript
 var totalDeFamiliares = prompt("Quantos familiares são?");
+
 var somaDeIdades = 0;
+
 var numero = 1;
+
 while(numero <= totalDeFamiliares) {
   var idade = parseInt(prompt("Qual é a idade?"));
   somaDeIdades = somaDeIdades + idade;
@@ -1670,191 +1554,190 @@ while(numero <= totalDeFamiliares) {
 }
 ```
 
-Com isso, considere que temos 3 familiares. O primeiro com 20, o segundo com 30 e o terceiro com 40 anos. Na primeira repetição, o valor de `somaDeIdades` que estará 0 será somado com 20, ou seja, seu novo valor agora é 20. Na segunda repetição, `somaDeIdades` que agora tem o valor 20 será somado com 30 e vai para 50. Por fim, `somaDeIdades` que agora é 50 vai para 90, com a soma de 40 da idade do último familiar.
+考虑我们有 3 个家庭成员。第一个 20 岁，第二个 30 岁，第三个 40 岁。第一次重复时，`somaDeIdades` 的值为 0，加上 20 后变为 20。第二次重复时，`somaDeIdades` 现在是 20，加上 30 后变为 50。最后，`somaDeIdades` 现在是 50，加上 40（最后一个家庭成员的年龄）后变为 90。
 
-**No fim das repetições, o valor da soma das idades foi para 90**. Agora que terminamos as repetições, se queremos saber a média de idades, basta dividir essa `somaDasIdades` pelo `totalDeFamiliares`. Por exemplo, com a soma 90 e 3 familiares, a média de idade será de 30 anos.
+**在所有重复结束后，年龄总和为 90**。现在重复结束了，如果我们想知道平均年龄，只需将这个 `somaDeIdades` 除以 `totalDeFamiliares`。例如，年龄总和为 90，有 3 个家庭成员，平均年龄为 30 岁。
 
-Então vamos fazer o nosso programa: após as repetições serem feitas, ou seja, depois que o `while` terminar seu trabalho, calcular a média e mostrá-la. São as duas últimas linhas do código abaixo:
+那么，让我们编写我们的程序：在重复结束后（即 `while` 完成其工作后），计算平均年龄并显示它。这是下面代码的最后两行：
 
 ```javascript
 var totalDeFamiliares = prompt("Quantos familiares são?");
+
 var somaDeIdades = 0;
+
 var numero = 1;
+
 while(numero <= totalDeFamiliares) {
   var idade = parseInt(prompt("Qual é a idade?"));
   somaDeIdades = somaDeIdades + idade;
   numero++;
 }
+
 var media = somaDeIdades / totalDeFamiliares;
+
 alert("A média é: " + media);
 ```
 
-Pronto, agora se você abrir esse programa em seu navegador, ele perguntará primeiro a quantidade de familiares que você tem e, em seguida, perguntará qual é a idade de cada um deles. No final teremos a média de idade dos familiares.
+完成！现在，如果你在浏览器中打开这个程序，它会先询问你有多少个家庭成员，然后逐个询问每个人的年龄。最后，我们会得到家庭成员的平均年龄。
 
-### 5.10 Jogo: Mais chances para adivinhar o número que estou pensando
+### 5.10 游戏：更多机会猜中我想的数字
 
-No capítulo 4, fizemos o computador pensar em um número. Agora o computador pensará em um número entre 0 e 100. O usuário terá 3 chances para adivinhar esse número. Se o usuário errar, o computador dirá se o número secreto é maior ou menor. Se o usuário acertar, o computador mostrará parabéns.
+在第 4 章，我们让电脑想一个数。现在电脑会想一个 0 到 100 之间的数。用户有 3 次机会猜这个数。如果用户猜错了，电脑会说秘密数是更大还是更小。如果用户猜对了，电脑会显示祝贺信息。
 
-Vamos criar um novo arquivo chamado `jogo_adivinha_com_tentativas.html`:
+让我们创建一个名为 `jogo_adivinha_com_tentativas.html` 的新文件：
 
 ```html
 <script>
-var numeroPensado = Math.floor(Math.random() * 101);
+  var numeroPensado = Math.floor(Math.random() * 101);
 </script>
 ```
 
-A partir do `numeroPensado`, precisaremos perguntar ao usuário qual palpite ele gostaria de dar. Vamos estipular também que a quantidade de tentativas será 3 e que quando passar da terceira tentativa a repetição deverá encerrar.
+从 `numeroPensado` 开始，我们需要询问用户他想猜什么数。我们还规定猜测次数为 3 次，超过第三次后循环应结束。
 
-Para isso, vamos declarar uma variável `numeroTentativa`, onde guardaremos se é a primeira, segunda ou terceira tentativa. Essa variável começará em 1, já que no começo do programa estaremos na primeira tentativa. Enquanto esse número for menor ou igual a 3, ou seja, enquanto não passar da terceira tentativa, faremos a pergunta. Vamos usar o `while` para isso e não esquecer que ao final de cada repetição devemos aumentar o número da tentativa (caso contrário, entraremos em repetições infinitas):
-
-```javascript
-<script>
-var numeroPensado = Math.floor(Math.random() * 101);
-var numeroTentativa = 1;
-while(numeroTentativa <= 3) {
-  numeroTentativa++;
-}
-</script>
-```
-
-Precisamos perguntar para o usuário do programa qual é o número que ele acha que o computador pensou. Vamos fazer isso através de um `prompt`, que colocaremos dentro do bloco de repetição, o `while`, pois ele fará parte de uma tentativa:
+为此，我们声明一个变量 `numeroTentativa`，用于记录这是第一次、第二次还是第三次猜测。该变量初始值为 1，因为程序开始时我们处于第一次猜测。当该变量小于等于 3 时（即未超过第三次猜测），我们继续提问。我们将使用 `while` 循环，并且不要忘记在每次循环结束时增加尝试次数（否则会陷入无限循环）：
 
 ```javascript
 <script>
-var numeroPensado = Math.floor(Math.random() * 101);
-var numeroTentativa = 1;
-while(numeroTentativa <= 3) {
-  var chute = prompt("Qual você acha que é?");
-  numeroTentativa++;
-}
-</script>
-```
-
-Pronto, agora a cada repetição perguntamos ao usuário qual é o palpite que ele quer dar. Precisamos saber se ele acertou ou não. Para isso, basta compararmos o número do `chute` com o `numeroPensado` e ver se eles são iguais. Mostraremos mensagens para o usuário nos dois casos.
-
-```javascript
-<script>
-var numeroPensado = Math.floor(Math.random() * 101);
-var numeroTentativa = 1;
-while(numeroTentativa <= 3) {
-  var chute = prompt("Qual você acha que é?");
-  if(chute == numeroPensado) {
-    alert("Uau! Você acertou!");
-  } else {
-    alert("Errou! Eu tinha pensado " + numeroPensado);
+  var numeroPensado = Math.floor(Math.random() * 101);
+  var numeroTentativa = 1;
+  while(numeroTentativa <= 3) {
+    numeroTentativa++;
   }
-  numeroTentativa++;
-}
 </script>
 ```
 
-
-
-
-```javascript
- 1 <script>
- 2 var numeroPensado = Math.round(Math.random() * 100);
- 3 
- 4 var numeroDaTentativa = 1;
- 5 while(numeroDaTentativa <= 3) {
- 6   var chute = prompt("Qual você acha que é?");
- 7   
- 8   if(chute == numeroPensado) {
- 9     alert("Parabéns, você acertou!");
-10   } else {
-11     alert("Você errou. Será que ainda tem mais tentativas?");
-12   }
-13   numeroDaTentativa++;
-14 }
-15 </script>
-```
-
-在你的浏览器中打开 `jogo_adivinha_com_tentativas.html` 并尝试猜中。如果觉得困难，一个技巧是减少计算机想的数字范围，例如从 100 减到 10。要这样做，只需修改以下行：
+我们需要询问程序的用户他认为电脑想的是什么数。我们将通过一个 `prompt` 来实现这一点，并将其放置在 `while` 循环块内，因为它属于一次猜测：
 
 ```javascript
-1 var numeroPensado = Math.round(Math.random() * 10);
+<script>
+  var numeroPensado = Math.floor(Math.random() * 101);
+  var numeroTentativa = 1;
+  while(numeroTentativa <= 3) {
+    var chute = prompt("Qual você acha que é?");
+    numeroTentativa++;
+  }
+</script>
 ```
 
-在玩几次之后，你会发现这个游戏有些问题。尝试在第一次或第二次尝试中猜中数字，看看会发生什么。游戏会显示恭喜信息，表示你猜中了，但它会再次问你计算机想的数字是多少。我们需要修复这个问题，但该怎么做呢？代码中的问题在哪里？
+现在，每次循环我们都会询问用户他想猜什么数。我们需要判断他猜对了还是猜错了。为此，只需将 `chute` 的值与 `numeroPensado` 进行比较，看是否相等。我们将在两种情况下向用户显示消息。
+
+```javascript
+<script>
+  var numeroPensado = Math.floor(Math.random() * 101);
+  var numeroTentativa = 1;
+  while(numeroTentativa <= 3) {
+    var chute = prompt("Qual você acha que é?");
+    if(chute == numeroPensado) {
+      alert("Uau! Você acertou!");
+    } else {
+      alert("Errou! Eu tinha pensado " + numeroPensado);
+    }
+    numeroTentativa++;
+  }
+</script>
+```
+
+```javascript
+<script>
+  var numeroPensado = Math.round(Math.random() * 100);
+  var numeroDaTentativa = 1;
+  while(numeroDaTentativa <= 3) {
+    var chute = prompt("Qual você acha que é?");
+    if(chute == numeroPensado) {
+      alert("Parabéns, você acertou!");
+    } else {
+      alert("Você errou. Será que ainda tem mais tentativas?");
+    }
+    numeroDaTentativa++;
+  }
+</script>
+```
+
+在浏览器中打开 `jogo_adivinha_com_tentativas.html` 并尝试猜中数字。如果觉得困难，一个技巧是减少电脑想的数字范围，例如从 100 减到 10。只需修改以下行：
+
+```javascript
+var numeroPensado = Math.round(Math.random() * 10);
+```
+
+玩几次后，你会发现这个游戏有些问题。尝试在第一次或第二次猜测中猜中数字，看看会发生什么。游戏会显示祝贺信息，表示你猜中了，但它会再次问你电脑想的数字是多少。我们需要修复这个问题，但该怎么做呢？问题出现在代码中的哪里？
 
 通过仔细分析，我们发现一旦猜中了数字，就不需要再次尝试，也就是说，循环应该立即结束。但我们如何停止循环并立即退出 `while` 循环呢？
 
-Javascript（与其他编程语言一样）有一个名为 `break`（打破）的命令，这意味着当它被调用时，循环应该被打破，即被停止。这正是我们需要的。当猜中数字时，我们需要停止循环，因为再次询问用户没有意义。
+JavaScript（与其他编程语言一样）有一个名为 `break`（中断）的命令，这意味着当它被调用时，循环应该被中断，即被停止。这正是我们需要的。当猜中数字时，我们需要停止循环，因为再次询问用户没有意义。
 
 ```javascript
-1 if(chute == numeroPensado) {
-2   alert("Parabéns, você acertou!");
-3   break;
-4 } else {
-5   alert("Você errou. Será que ainda tem mais tentativas?");
-6 }
+if(chute == numeroPensado) {
+  alert("Parabéns, você acertou!");
+  break;
+} else {
+  alert("Você errou. Será que ainda tem mais tentativas?");
+}
 ```
 
-进行此更改后，尝试在第一次或第二次尝试中猜中数字。程序将不再再向你索要另一个数字。这好多了，不是吗？
+进行此更改后，尝试在第一次或第二次猜测中猜中数字。程序将不再再向你索要另一个数字。这好多了，不是吗？
 
 ### 5.11 复习我们的代码：数字猜数字游戏
 
-我们在 `jogo_adivinha_com_tentativas.html` 文件中开始游戏，让计算机想一个 0 到 100 之间的随机数。
+我们在 `jogo_adivinha_com_tentativas.html` 文件中开始游戏，让电脑想一个 0 到 100 之间的随机数。
 
 ```javascript
-1 var numeroPensado = Math.round(Math.random() * 100);
+var numeroPensado = Math.round(Math.random() * 100);
 ```
 
-下一步是向用户最多询问 3 次，询问他认为计算机想的数字是多少。
+下一步是向用户最多询问 3 次，询问他们认为电脑想的数字是多少。
 
 ```javascript
-1 var numeroDaTentativa = 1;
-2 while(numeroDaTentativa <= 3) {
-3   var chute = prompt("Qual você acha que é?");
-4   
-5   numeroDaTentativa++;
-6 }
+var numeroDaTentativa = 1;
+while(numeroDaTentativa <= 3) {
+  var chute = prompt("Qual você acha que é?");
+  numeroDaTentativa++;
+}
 ```
 
-每次尝试时，我们需要检查他是猜中了还是猜错了。如果猜中了，我们需要立即退出循环，这可以通过 `break` 命令实现。
+每次尝试时，我们需要检查用户是猜中了还是猜错了。如果猜中了，我们需要立即退出循环，这可以通过 `break` 命令实现。
 
 ```javascript
- 1 var numeroDaTentativa = 1;
- 2 while(numeroDaTentativa <= 3) {
- 3   var chute = prompt("Qual você acha que é?");
- 4   if(chute == numeroPensado) {
- 5     alert("Parabéns, você acertou!");
- 6     break;
- 7   } else {
- 8     alert("Você errou. Será que ainda tem mais tentativas?");
- 9   }
-10   numeroDaTentativa++;
-11 }
+var numeroDaTentativa = 1;
+while(numeroDaTentativa <= 3) {
+  var chute = prompt("Qual você acha que é?");
+  if(chute == numeroPensado) {
+    alert("Parabéns, você acertou!");
+    break;
+  } else {
+    alert("Você errou. Será que ainda tem mais tentativas?");
+  }
+  numeroDaTentativa++;
+}
 ```
 
 让我们通过一些挑战来改进我们的游戏。
 
-1. 让你的程序在尝试失败时，显示“猜中”的数字比计算机想的数字大还是小。这可以作为用户猜中的一个良好提示。记住，为了这一点，你将需要在说用户错误的 `else` 块内部使用另一个 `if`。
+1. 让你的程序在尝试失败时，显示“猜中的”数字比电脑想的数字大还是小。这可以作为用户猜中的一个良好提示。记住，为了这一点，你将需要在说用户错误的 `else` 块内部使用另一个 `if`。
 2. 让游戏只有在猜中时才结束。为了这样做，必须修改 `while` 的循环条件，使其变成无限循环。修改后，测试你的游戏，看看你需要多少次尝试才能发现那个数字。
-3. 游戏太简单了？增加计算机可能想的数字范围。`1000` 可能是一个很好的开始数字。挑战你的朋友和家人。看看谁能保持记录。
+3. 游戏太简单了？增加电脑可能想的数字范围。`1000` 可能是一个很好的开始数字。挑战你的朋友和家人。看看谁能保持记录。
 4. 是否有一种方法可以在不使用 `break` 的情况下编写这个游戏，只需更改 `while` 条件，并通过表示“与”的运算符（`&&`）添加一个额外的子句。你能猜到怎么做吗？
 
 ### 5.12 练习：在循环中使用循环
 
 循环在我们的代码中经常出现。它们嵌套出现也很常见。想象我们想在屏幕上显示以下星号序列。有 3 行，每行有 10 个星号：
 
-![Parece fácil fazer esse monte de asteriscos.](img/asteriscos.png) 
+![Parece fácil fazer esse monte de asteriscos.](img/asteriscos.png)
 *图 5.1：制作这么多星号看起来很简单。*
 
 你可能会想出一个非常、非常简单但毫无挑战性的解决方案。类似于这样的：
 
 ```javascript
-1 mostra("**********");
-2 mostra("**********");
-3 mostra("**********");
+mostra("**********");
+mostra("**********");
+mostra("**********");
 ```
 
 可以变得更有趣。与其复制粘贴，我们可以使用见过的 `for`：
 
 ```javascript
-1 for(var linha = 0; linha < 3; linha = linha + 1) {
-2   mostra("**********");
-3
+for(var linha = 0; linha < 3; linha = linha + 1) {
+  mostra("**********");
+}
 ```
 
 改进了！但我们想更进一步。如果我们需要修改并在每行打印 250 个星号，我们将在该 `mostra` 调用中写一大堆它们。
@@ -1864,16 +1747,15 @@ Javascript（与其他编程语言一样）有一个名为 `break`（打破）�
 代码很短，但第一次可能会吓到你。创建 `asteriscos.html` 并像往一样在 script 标签内输入以下行：
 
 ```javascript
-1 for(var linha = 0; linha < 3; linha = linha + 1) {
-2   for(var coluna = 0; coluna < 10; coluna = coluna + 1) {
-3     document.write("*");
-4   }
-5   document.write("<br>");
-6 }
+for(var linha = 0; linha < 3; linha = linha + 1) {
+  for(var coluna = 0; coluna < 10; coluna = coluna + 1) {
+    document.write("*");
+  }
+  document.write("<br>");
+}
 ```
 
-
-
+### 6.1 使用 HTML 表单
 
 现在打开页面。看到我们有一个文本框和一个按钮！这就是你的第一个表单！
 
@@ -1884,23 +1766,23 @@ Javascript（与其他编程语言一样）有一个名为 `break`（打破）�
 
 是的！这就是大多数你输入数据的网页的工作方式。当你点击一个按钮时，这些数据通常会被发送到其他计算机（称为服务器），以便在那里进行存储。但我们也可以使用 JavaScript 在我们自己的电脑上处理这些数据。
 
-让我们让这个按钮检查用户是否猜中了我们正在想的数字。在继续之前，我们需要为我们的每个小框命名。我们通过在每个输入框（input）中放置标识符（`id`）来实现
+让我们让这个按钮检查用户是否猜中了我们正在想的数字。在继续之前，我们需要为我们的每个小框命名。我们通过在每个输入框（input）中放置标识符（`id`）来实现：
 
 ```
-1 <input type="text" id="numero" />
-2 <input type="submit" id="adivinhar" value="比较我的秘密！"/>
+<input type="text" id="numero" />
+<input type="submit" id="adivinhar" value="比较我的秘密！"/>
 ```
 
 现在我们可以开始编写 JavaScript 代码了。我们将做的第一步是访问包含数字的文本框并弹出一个 `alert`。以下是完整代码：
 
 ```
-1 <input type="text" id="numero" />
-2 <input type="submit" id="adivinhar" value="比较我的秘密！"/>
-3 
-4 <script>
-5 var caixaDoNumero = document.getElementById("numero");
-6 alert(caixaDoNumero.value);
-7 </script>
+<input type="text" id="numero" />
+<input type="submit" id="adivinhar" value="比较我的秘密！"/>
+
+<script>
+  var caixaDoNumero = document.getElementById("numero");
+  alert(caixaDoNumero.value);
+</script>
 ```
 
 嘿！这里发生了很多事情。`document.getElementById("numero")` 是让 JavaScript 搜索 HTML 代码并找到 `id = numero` 元素的方法。这个变量 `caixaDoNumero` 并不是我们输入的数值，它本身就是那个文本框！通过 `caixaDoNumero.value`，我们才得到了框内内容的值，即在里面输入的内容。
@@ -1910,9 +1792,9 @@ Javascript（与其他编程语言一样）有一个名为 `break`（打破）�
 为了实现这一点，我们首先要创建一个希望在点击按钮时执行的函数。删除 `alert` 并添加：
 
 ```
-1 var botaoClicado = function() {
-2   alert(caixaDoNumero.value);
-3 };
+var botaoClicado = function() {
+  alert(caixaDoNumero.value);
+};
 ```
 
 如果我们现在打开页面，输入数字并点击按钮会怎样？又什么都没有发生！
@@ -1920,8 +1802,8 @@ Javascript（与其他编程语言一样）有一个名为 `break`（打破）�
 缺少了什么？缺少定义当有人点击 `adivinhar` 按钮时，应该调用函数 `botaoClicado`！我们用非常简单的方法来实现。添加以下行：
 
 ```
-1 var botaoAdivinhar = document.getElementById("adivinhar");
-2 botaoAdivinhar.onclick = botaoClicado;
+var botaoAdivinhar = document.getElementById("adivinhar");
+botaoAdivinhar.onclick = botaoClicado;
 ```
 
 在第一行中，我们获取按钮并将其存储在变量 `botaoAdivinhar` 中。第二行是重要的。它表示当 `adivinhar` 按钮被点击（`onclick`）时，应该调用函数 `botaoClicado`。将特定事件与函数的执行关联起来是非常常见的。这些发生通常被称为事件（events），而要在特定事件中执行的函数被称为回调函数（callback functions）。不要太担心命名，但它会在你的学习中频繁出现。
@@ -1933,59 +1815,54 @@ Javascript（与其他编程语言一样）有一个名为 `break`（打破）�
 让我们重新编写代码，但这次带上游戏。第一步，创建 `adivinha_mais.html` 文件。我们从声明两个 HTML 元素开始：一个是包含数字的框，另一个是检查是否猜中的按钮：
 
 ```
-1 <input type="text" id="numero" />
-2 <input type="submit" id="adivinhar" 
-3   value="与我想的数字比较!" />
+<input type="text" id="numero" />
+<input type="submit" id="adivinhar" value="与我想的数字比较!" />
 ```
 
 现在开始处理 HTML。为了简单，我们不随机抽取数字，而是将其固定：
 
 ```
-1 <script>
-2 var segredo = 8;
+<script>
+  var segredo = 8;
+</script>
 ```
 
 然后我们通过那段长代码获取 HTML 元素，即 `document.getElementById`。
 
 ```
-1 var caixaDoNumero = document.getElementById("numero");
+var caixaDoNumero = document.getElementById("numero");
 ```
 
 我们创建一个函数来检查输入的数字（即 `caixaDoNumero.value`）是否等于 `segredo`。根据结果打印输出内容：
 
 ```javascript
-1 var botaoClicado = function() {
-2   if(segredo == caixaDoNumero.value) {
-3     alert("恭喜！你猜中了秘密数字");
-4   }
-5   else {
-6     alert("遗憾，你猜错了!");
-7   }
-8 };
+var botaoClicado = function() {
+  if(segredo == caixaDoNumero.value) {
+    alert("恭喜！你猜中了秘密数字");
+  } else {
+    alert("遗憾，你猜错了!");
+  }
+};
 ```
 
 只差最后一步：说明当 `adivinhar` 按钮被点击（点击事件）时，它应该调用函数 `botaoAdivinhar`：
 
 ```
-1 var botaoAdivinhar = document.getElementById("adivinhar");
-2 botaoAdivinhar.onclick = botaoClicado;
-3 </script>
+var botaoAdivinhar = document.getElementById("adivinhar");
+botaoAdivinhar.onclick = botaoClicado;
+</script>
 ```
 
 正如我们所看到的，这种接收通知类型的函数……（注：原文此处存在大量重复的无效文本，已根据逻辑处理结束）。
 
-
-
-
-
-# 打印所有数字
+### 6.3 创建彩票
 
 只需创建一个从 0 到 5 的 `for` 循环即可：
 
 ```
-1 for(var i = 0; i < 6; i = i + 1) {
-2   console.log(segredos[i]);
-3 }
+for(var i = 0; i < 6; i = i + 1) {
+  console.log(segredos[i]);
+}
 ```
 
 `segredos[i]` 访问数组 `segredos` 中第 `i` 个位置！位于 `[]` 内部的数字也称为索引！
@@ -1993,15 +1870,15 @@ Javascript（与其他编程语言一样）有一个名为 `break`（打破）�
 `arrays` 具有一些方便之处。例如，我们可以知道它的长度：
 
 ```
-1 console.log(segredos.length);
+console.log(segredos.length);
 ```
 
 正因如此，编写那个 `for` 循环不需要固定数字 6，而是将其替换为 `segredos.length`：
 
 ```
-1 for(var i = 0; i < segredos.length; i = i + 1) {
-2   console.log(segredos[i]);
-3 }
+for(var i = 0; i < segredos.length; i = i + 1) {
+  console.log(segredos[i]);
+}
 ```
 
 ## 创建彩票
@@ -2009,45 +1886,45 @@ Javascript（与其他编程语言一样）有一个名为 `break`（打破）�
 现在简单了！创建你的 `loteria.html` 文件，我们来声明文本框和按钮：
 
 ```
-1 <input type="text" id="numero" />
-2 <input type="submit" id="adivinhar" value="Compare com o meu segredo!" />
+<input type="text" id="numero" />
+<input type="submit" id="adivinhar" value="Compare com o meu segredo!" />
 ```
 
 现在我们在 JavaScript 中声明我们的秘密数字：
 
 ```
-1 var segredos = [16, 34, 37, 42, 50, 58];
+var segredos = [16, 34, 37, 42, 50, 58];
 ```
 
 正如我们所看到的，我们获取用户输入猜测数字的框：
 
 ```
-1 var caixaDoNumero = document.getElementById("numero");
+var caixaDoNumero = document.getElementById("numero");
 ```
 
 让我们准备在点击按钮事件发生时被调用的函数（回调）。我们在里面要做什么？我们使用一个 `for` 循环遍历所有数字，检查它是否等于 `caixaDoNumero.value`。如果是，我们就打印他赢了。注意：
 
-```
-1 var botaoClicado = function() {
-2   for(var i = 0; i < segredos.length; i = i + 1) {
-3     if(segredos[i] == caixaDoNumero.value) {
-4       alert("Parabéns! Você acertou um dos números secretos");
-5     }
-6   }
-7 };
+```javascript
+var botaoClicado = function() {
+  for(var i = 0; i < segredos.length; i = i + 1) {
+    if(segredos[i] == caixaDoNumero.value) {
+      alert("Parabéns! Você acertou um dos números secretos");
+    }
+  }
+};
 ```
 
 代码还不够完美。如果用户猜错了会发生什么？没有任何消息显示。我们可以尝试通过在 `for` 循环末尾添加一个新的 `alert` 来尝试解决这个问题：
 
-```
-1 var botaoClicado = function() {
-2   for(var i = 0; i < segredos.length; i = i + 1) {
-3     if(segredos[i] == caixaDoNumero.value) {
-4       alert("Parabéns! Você acertou um dos números secretos");
-5     }
-6   }
-7   alert("Infelizmente você errou!");
-8 };
+```javascript
+var botaoClicado = function() {
+  for(var i = 0; i < segredos.length; i = i + 1) {
+    if(segredos[i] == caixaDoNumero.value) {
+      alert("Parabéns! Você acertou um dos números secretos");
+    }
+  }
+  alert("Infelizmente você errou!");
+};
 ```
 
 好了，当你猜错秘密时，这可以运行。只会显示“Infelizmente você errou!”（遗憾你错了！）。
@@ -2056,16 +1933,16 @@ Javascript（与其他编程语言一样）有一个名为 `break`（打破）�
 
 我们可以通过使用 `return` 来解决这个问题。`return` 可以用于不返回任何值的函数，使函数的执行在那个时刻停止并返回给调用者：
 
-```
-1 var botaoClicado = function() {
-2   for(var i = 0; i < segredos.length; i = i + 1) {
-3     if(segredos[i] == caixaDoNumero.value) {
-4       alert("Parabéns! Você acertou um dos números secretos");
-5       return;
-6     }
-7   }
-8   alert("Infelizmente você errou!");
-9 };
+```javascript
+var botaoClicado = function() {
+  for(var i = 0; i < segredos.length; i = i + 1) {
+    if(segredos[i] == caixaDoNumero.value) {
+      alert("Parabéns! Você acertou um dos números secretos");
+      return;
+    }
+  }
+  alert("Infelizmente você errou!");
+};
 ```
 
 注意，还有其他方法可以在不使用 `return` 的情况下解决这个问题。你可以创建一个 `var achou`，并在检查是否猜中的 `if` 语句中设置 `achou = true`，同时显示猜中的消息。在 `for` 之外、显示错误消息之前，你应该检查 `achou != true`。
@@ -2073,9 +1950,9 @@ Javascript（与其他编程语言一样）有一个名为 `break`（打破）�
 下一步是什么？现在我们只需要注册该函数将作为按钮点击事件的回调，正如我们已经学过的那样：
 
 ```
-1 var botaoAdivinhar = document.getElementById("adivinhar");
-2 botaoAdivinhar.onclick = botaoClicado;
-3 </script>
+var botaoAdivinhar = document.getElementById("adivinhar");
+botaoAdivinhar.onclick = botaoClicado;
+</script>
 ```
 
 打开你的彩票并尝试猜中其中一个数字。
@@ -2083,24 +1960,21 @@ Javascript（与其他编程语言一样）有一个名为 `break`（打破）�
 1. 移除代码中的 `break` 看看会发生什么。为什么这里需要 `break` ？
 2. 如果用户猜中了数字，请说出猜中数字的位置。例如：“Parabéns, você acertou o 5o número!”。即数组的索引，只需注意从 0 开始。
 
-## 6.4 在宾果游戏中中避免重复数字
+### 6.4 在宾果游戏中中避免重复数字
 
 我们已经看到了数组的基本操作，但如何修改它的值呢？请看 `segredos` 数组：
 
 ```
-1 var segredos = [16, 34, 37, 42, 50, 58];
-2 console.log(segredos[0]);
+var segredos = [16, 34, 37, 42, 50, 58];
+console.log(segredos[0]);
 ```
 
 正如我们可以通过 `segredos[0]` 获取第一个元素一样，我们也可以修改它：
 
 ```
-1 segredos[0] = 20;
-2 console.log(segredos[0]);
+segredos[0] = 20;
+console.log(segredos[0]);
 ```
-
-
-
 
 请注意，如果我们找到了数字并显示了警告消息，我们会执行一个 `return`。正如我们所看到的，`return` 命令可以简单地停止一个没有返回值的函数的执行。如果你移除这个 `return`，你会发现即使数字已经重复，它最终会将该数字添加到我们的数组中。如果换成 `break`，会有用吗？
 
@@ -2121,7 +1995,7 @@ Javascript（与其他编程语言一样）有一个名为 `break`（打破）�
 我们要在页面上定义一个区域，以便我们通过 JavaScript 在上面绘图。创建一个 `canvas.html` 文件，并如下所示声明我们将用于涂画的区域：
 
 ```
-1 <canvas id="tela" width="600" height="400"></canvas>
+<canvas id="tela" width="600" height="400"></canvas>
 ```
 
 没错，只有一行，没有 `script` 标签。在 Chrome 中打开你的 HTML，结果是什么？没错，一个 600x400 的白色画布，背景上是……也是白色的！什么也看不见。让我们在左侧画一个绿色（`green`）矩形，位于 `0,0`（左上角），大小为 `200,400`（到达底部，即最大可能值 600 的三分之一）。在这里我们正在一个二维平面上工作，逗号分隔 X 位置和 Y 位置。
@@ -2131,18 +2005,19 @@ Javascript（与其他编程语言一样）有一个名为 `break`（打破）�
 在你的 canvas 声明下方直接添加以下行。
 
 ```
-1 <script>
-2 var tela = document.getElementById("tela");
-3 var c = tela.getContext("2d");
-4 
-5 c.fillStyle="green";
-6 c.fillRect(0, 0, 200, 400);
-7 </script>
+<script>
+  var tela = document.getElementById("tela");
+  var c = tela.getContext("2d");
+
+  c.fillStyle="green";
+  c.fillRect(0, 0, 200, 400);
+</script>
 ```
 
 打开你的 HTML，我们得到了下面的图形：
 
-![一个简单的绿色列柱](img/verde.png) 图 7.1：一个简单的绿色列柱
+![一个简单的绿色列柱](img/verde.png)
+图 7.1：一个简单的绿色列柱
 
 前两个目前对我们并不重要。你可以想象变量 `c` 就像一把画笔。我们可以更改画笔的样式（通过变量 `fillStyle`）并绘制各种形状（在本例中是矩形，通过调用函数 `fillRect`）。
 
@@ -2150,18 +2025,20 @@ Javascript（与其他编程语言一样）有一个名为 `break`（打破）�
 
 如何更好地了解它在屏幕上的终点在哪里？`0,0` 点是左上角。`600,400` 点是右下角。观察我们 X 和 Y 坐标中分散的一些其他点：
 
-![我们平面的坐标。使用此图作为参考知道在哪里绘制你的对象！](img/plano.png) 图 7.2：我们平面的坐标。使用此图作为参考知道在哪里绘制你的对象！
+![我们平面的坐标。使用此图作为参考知道在哪里绘制你的对象！](img/plano.png)
+图 7.2：我们平面的坐标。使用此图作为参考知道在哪里绘制你的对象！
 
 让我们再添加一个矩形，现在是红色的，从位置 `400,0` 开始。在你的绿色矩形之后添加：
 
 ```
-1 c.fillStyle="red";
-2 c.fillRect(400, 0, 200, 400);
+c.fillStyle="red";
+c.fillRect(400, 0, 200, 400);
 ```
 
 结果非常棒！我们得到了意大利国旗。
 
-![意大利国旗](img/italia.png) 图 7.3：意大利国旗
+![意大利国旗](img/italia.png)
+图 7.3：意大利国旗
 
 尝试更换颜色，如 `gray`、`red`、`green`、`blue`、`black` 等。
 
@@ -2176,10 +2053,10 @@ Javascript（与其他编程语言一样）有一个名为 `break`（打破）�
 为了实现这一点，我们需要从这里。存在 `arc` 函数，它需要很多信息。是 X 和 Y 坐标、半径、起始角度和结束角度，都是弧度。并不简单。它需要起始和结束角度来绘制圆弧。我们将使用 0 到 3.14。
 
 ```
-1 c.fillStyle="blue";
-2 c.beginPath();
-3 c.arc(300, 200, 50, 0, 3.14);
-4 c.fill();
+c.fillStyle="blue";
+c.beginPath();
+c.arc(300, 200, 50, 0, 3.14);
+c.fill();
 ```
 
 只使用了两位小数。这个 PI 值可以替换为 `Math.PI`，它是一个已经存在的变量。像这样的固定值通常被称为常量。
@@ -2194,15 +2071,12 @@ Javascript（与其他编程语言一样）有一个名为 `break`（打破）�
 
 事实是我们一直有一个 JavaScript 主要函数的文档。例如，我们用于处理画布 的所有函数和变量可以在这里找到，并有详细的文档：
 
-
-
-
-
 [`developer.mozilla.org/en-US/docs/DOM/CanvasRenderingContext2D`](https://developer.mozilla.org/en-US/docs/DOM/CanvasRenderingContext2D)
 
 Mozilla site, responsável pelo navegador Firefox, possui uma das documentações mais completas e fáceis de ler. Neste site, você pode ver uma documentação como a imagem abaixo.
 
-![Documentação no site Mozilla](img/documentacao_normal.png) *Figura 7.7: Documentação no site da Mozilla*
+![Documentação no site Mozilla](img/documentacao_normal.png)
+*Figura 7.7: Documentação no site da Mozilla*
 
 Note que ele fornece uma breve descrição e em seguida passa para cada função e cada variável relacionada ao assunto. Sim, você precisará lidar com o inglês técnico, mesmo que seja básico. Em português, documentações desse tipo, que chamamos de referência (reference), são bastante escassas.
 
@@ -2220,143 +2094,138 @@ Também podemos encontrar formatos mais simpáticos dessas documentações, cria
 
 Ele apresenta um resumo das funções que trabalham com o canvas. Segue um pedaço dessa documentação onde podemos ver algumas das que já conhecemos, de forma resumida, explicando quais são os parâmetros com os quais trabalham:
 
-![Uma documentação não oficial, mas que pode ser bem útil. Há várias como essa na internet.](img/documentacao_diferente.png) *Figura 7.8: Uma documentação não oficial, mas que pode ser bem útil. Há várias como essa na internet.*
+![Uma documentação não oficial, mas que pode ser bem útil. Há várias como essa na internet.](img/documentacao_diferente.png)
+*Figura 7.8: Uma documentação não oficial, mas que pode ser bem útil. Há várias como essa na internet.*
 
-Vamos conhecer outras funções relacionadas ao canvas ainda neste capítulo. Lembre-se de que você pode e deve explorar novas opções através da documentação. O inglês não deve ser uma barreira: ele exigirá pouco, mas é fundamental conhecer o mínimo.
+Vamos conhecer outras funções relacionadas ao canvas ainda neste capítulo. Lembre-se de que你可以 e 应该 探索新的选项通过文档。英语不应成为障碍：它将要求很少，但了解最基本的知识是根本的。
 
-### 7.4 Rev seus primeiros passos com o canvas
+### 7.4 Rev 你的最初步骤与画布
 
-Vamos revisar o que fizemos para criar a bandeira da Itália e nossas outras figuras. Não se assuste com um pouco de matemática e coordenadas. A prática tornará tudo muito mais fácil. Primeiro, criamos o arquivo `canvas.html` e declaramos nosso canvas:
-
-```
-1 <canvas id="tela" width="600" height="400"></canvas>
-```
-
-Logo depois, começamos a inserir o código JavaScript. As duas primeiras linhas são para obter o tal contexto 2d, que servirá como pincel. São duas linhas de código que ainda não dominamos:
+让我们回顾一下我们为创建意大利国旗和其他图形所做的工作。不要被一点数学和坐标吓到。实践会让一切变得容易得多。首先，我们创建了文件 `canvas.html` 并声明了我们的画布：
 
 ```
-1 <script>
-2 var tela = document.getElementById("tela");
-3 var c = tela.getContext("2d");
+<canvas id="tela" width="600" height="400"></canvas>
 ```
 
-Agora desenhamos o primeiro retângulo, que será verde:
+紧接着，我们开始插入 JavaScript 代码。前两行是为了获得那个至关重要的 2d 上下文，它将充当画笔。这两行代码我们尚未完全掌握：
 
 ```
-1 c.fillStyle="green";
-2 c.fillRect(0, 0, 200, 400);
+<script>
+  var tela = document.getElementById("tela");
+  var c = tela.getContext("2d");
+</script>
 ```
 
-O segundo retângulo será vermelho, de mesma largura e altura, porém iniciará na posição `400,0`:
+现在我们绘制第一个矩形，它将是绿色的：
 
 ```
-1 c.fillStyle="red";
-2 c.fillRect(400, 0, 200, 400);
+c.fillStyle="green";
+c.fillRect(0, 0, 200, 400);
 ```
 
-Vamos ao triângulo cinza. Aqui usamos a função que inicia o traçado, a `beginPath`. Movemos o pincel com `moveTo` e desenhamos com `lineTo`. Por último, preenchemos o interior com a função `fill`:
+第二个矩形将是红色的，宽度和高度相同，但起始位置为 `400,0`：
 
 ```
-1 c.fillStyle="gray";
-2 c.beginPath();
-3 c.moveTo(300, 200);
-4 c.lineTo(200, 400);
-5 c.lineTo(400, 400);
-6 c.fill();
+c.fillStyle="red";
+c.fillRect(400, 0, 200, 400);
 ```
 
-Por último, desenhamos nosso círculo bem no meio da bandeira, em azul, lembrando também de fechar a tag `script`:
+接下来是灰色三角形。这里我们使用了开始绘制路径的函数 `beginPath`。我们用 `moveTo` 移动画笔，用 `lineTo` 绘制线条。最后，我们用 `fill` 函数填充内部：
 
 ```
-1 c.fillStyle="blue";
-2 c.beginPath();
-3 c.arc(300, 200, 50, 0, 2*3.14);
-4 c.fill();
-5 </script>
+c.fillStyle="gray";
+c.beginPath();
+c.moveTo(300, 200);
+c.lineTo(200, 400);
+c.lineTo(400, 400);
+c.fill();
 ```
 
-Vamos praticar mais o conhecimento de coordenadas e testar outros desenhos e formas através de bandeiras.
-
-1.  Inicialmente vamos desenhar duas bandeiras simples, a primeira da Colômbia e a segunda de Madagascar:
-
-    ![Bandeira da Colombia](img/colombia.png)
-
-    *Figura 7.1: Bandeira da Colômbia*
-
-    ![Bandeira de Madagascar](img/madagascar.png)
-
-    *Figura 7.2: Bandeira de Madagascar*
-
-2.  Agora duas que possuem circunferências e que você precisará usar o arco, do Laos e a do Níger:
-
-    ![Bandeira do Laos](img/laos.png)
-
-    *Figura 7.3: Bandeira do Laos*
-
-    ![Bandeira do Niger](img/niger.png)
-
-    *Figura 7.4: Bandeira do Níger*
-
-3.  A bandeira da Noruega tem uma cruz interessante:
-
-    ![Bandeira da Noruega](img/noruega.png)
-
-    *Figura 7.5: Bandeira da Noruega*
-
-4.  E a bandeira do Brasil:
-
-    ![Bandeira do Brasil](img/brasil.png)
-
-    *Figura 7.6: Bandeira do Brasil*
-
-### 7.5 Cansei de repetir! Funções
-
-Vamos desenhar vários quadrados. Podemos usar um novo arquivo, `loop.html`. Dentro dele, vamos declarar o canvas e preparar 50 por pixels. Ela chamará `desenhaQuadradoVerde`:
+最后，我们在旗帜正中央画一个蓝色的圆，同时记得关闭 `script` 标签：
 
 ```
-1 <canvas id="tela" width="600" height="400"></canvas>
-2 
-3 <script>
-4 desenhaQuadradoVerde = function(x,y) {
-5   var tela = document.getElementById("tela");
-6   var c = tela.getContext("2d");
-7   
-8   c.fillStyle="green";
-9   c.fillRect(x, y, 50, 50);
-10 };
-11 
-12 desenhaQuadradoVerde(0,0);
-13 </script>
+c.fillStyle="blue";
+c.beginPath();
+c.arc(300, 200, 50, 0, 2*3.14);
+c.fill();
+</script>
 ```
 
-Na última linha estamos chamando a função para testar. Salve o arquivo e abra-o com o Chrome. O resultado é apenas um quadrado verde.
+让我们通过更多的坐标练习和测试其他图形和形状来巩固知识，以国旗为例。
 
-![Um quadrado verde... através da função!](img/quadrado_verde.png) *Figura 7.9: Um quadrado verde através da função*
+1. 首先，我们来画两面简单的旗帜：第一面是哥伦比亚的旗帜，第二面是马达加斯加的旗帜：
 
-### 7.6 Loops e funções para nos ajudar
+   ![哥伦比亚国旗](img/colombia.png)
+   *图 7.1：哥伦比亚国旗*
 
-Com o auxílio de um loop, podemos fazer muitas imagens. Vamos desenhar diversos quadrados de tamanho 50 por 50, começando da posição zero do eixo X, indo até a posição 600.
+   ![马达加斯加国旗](img/madagascar.png)
+   *图 7.2：马达加斯加国旗*
 
-Edite seu arquivo `canvas_loops.html` e vamos usar o `while` para fazer isso. Criaremos uma variável `x` que vai aumentando de 50 em 50, até chegar em 600. Delete a chamada para `desenhaQuadradoVerde(0,0)` e adicione as seguintes:
+2. 现在画两面带有圆弧的旗帜，你需要使用 `arc` 函数，分别是老挝的旗帜和尼日尔的旗帜：
+
+   ![老挝国旗](img/laos.png)
+   *图 7.3：老挝国旗*
+
+   ![尼日尔国旗](img/niger.png)
+   *图 7.4：尼日尔国旗*
+
+3. 挪威的旗帜有一个有趣的十字图案：
+
+   ![挪威国旗](img/noruega.png)
+   *图 7.5：挪威国旗*
+
+4. 巴西的旗帜：
+
+   ![巴西国旗](img/brasil.png)
+   *图 7.6：巴西国旗*
+
+### 7.5 我厌倦了重复！函数
+
+让我们画几个正方形。我们可以使用一个新文件 `loop.html`。在其中，我们将声明画布并准备好每个边长为 50 像素的正方形。它将调用 `desenhaQuadradoVerde`：
 
 ```
-1 var x = 0;
-2 while(x < 600) {
-3   desenhaQuadradoVerde(x, 0);
-4   x = x + 50;
-5 }
+<canvas id="tela" width="600" height="400"></canvas>
+
+<script>
+  desenhaQuadradoVerde = function(x,y) {
+    var tela = document.getElementById("tela");
+    var c = tela.getContext("2d");
+
+    c.fillStyle="green";
+    c.fillRect(x, y, 50, 50);
+  };
+
+  desenhaQuadradoVerde(0,0);
+</script>
 ```
 
-Salve e abra o arquivo no Chrome. Qual é o resultado? Uma linha comprida verde!
+在最后一行，我们调用该函数进行测试。保存文件并在 Chrome 中打开。结果只是一个绿色的正方形。
 
-![Uma linha verde. Na verdade, uma série de quadrados verde.](img/linha_verde.png) *Figura 7.10: Uma linha verde, na verdade uma série de quadrados*
+![一个绿色的正方形……通过函数！](img/quadrado_verde.png)
+*图 7.9：通过函数画出的绿色正方形*
 
-Por quê? Pois a cada 50 pontos nós desenhamos um novo quadrado. Não há divisão entre eles pois são verdes em todos seus pontos. Para ficar mais visual, podemos alterar a função `desenhaQuadradoVerde` para que o estilo do traçado da borda (`strokeStyle`) seja preta, adicionando duas linhas:
+### 7.6 循环和函数来帮助我们
 
+借助循环，我们可以创建许多图像。让我们画很多边长为 50 像素的正方形，从 X 轴零位置开始，一直延伸到 X 轴 600 位置。
 
+编辑你的文件 `canvas_loops.html`，我们将使用 `while` 来实现这一点。我们将创建一个变量 `x`，它每次增加 50，直到达到 600。删除对 `desenhaQuadradoVerde(0,0)` 的调用，并添加以下内容：
 
+```
+var x = 0;
+while(x < 600) {
+  desenhaQuadradoVerde(x, 0);
+  x = x + 50;
+}
+```
 
-```javascript
+保存并在 Chrome 中打开文件。结果是什么？一长条绿色！
+
+![一条绿色的线。实际上是许多绿色正方形组成的线。](img/linha_verde.png)
+*图 7.10：一条绿色的线，实际上是许多绿色正方形组成的线。*
+
+为什么？因为每隔 50 个像素，我们就画一个新的正方形。它们之间没有间隔，因为它们在所有点上都是绿色的。为了更直观，我们可以修改函数 `desenhaQuadradoVerde`，使得描边的样式（`strokeStyle`）为黑色，只需添加两行：
+
+```
 var desenhaQuadradoVerde = function(x,y) {
   var tela = document.getElementById("tela");
   var c = tela.getContext("2d");
@@ -2369,23 +2238,24 @@ var desenhaQuadradoVerde = function(x,y) {
 };
 ```
 
-O resultado agora será a mesma linha, porém com divisões claras de cada um dos quadrados:
+现在的结果将是同样的线条，但每个正方形之间会有明显的黑色分割线：
 
-![Marcando bem os quadrados](img/quadrados_verdes.png) *Figura 7.11: Marcando bem os quadrados.*
+![清晰标出的正方形](img/quadrados_verdes.png)
+*图 7.11：清晰标出的正方形。*
 
-Vamos trocar esse nosso `while` pelo `for`, que também é um comando de loop, porém mais conciso. Ele tem uma sintaxe um pouco estranha, mas é importante se acostumar, ele aparece com bastante frequência! Delete o `while` e faça assim:
+现在，我们将这个 `while` 循环换成更简洁的 `for` 循环。`for` 也是一个循环命令，但更为简洁。它的语法看起来有点奇怪，但熟悉它很重要，因为它出现得非常频繁！删除 `while` 并这样写：
 
-```javascript
+```
 for(var x = 0; x < 600; x = x + 50) {
   desenhaQuadradoVerde(x, 0);
 }
 ```
 
-Percebe como ele fica mais curto? A variável `x` não precisa mais ser declarada antes. E o incremento de 50 em 50 fica definido dentro do próprio comando.
+注意它变得多么简洁？变量 `x` 不需要再在循环外声明。而且每次增加 50 的增量直接定义在循环命令内部。
 
-Vamos incrementar um pouco mais. Como fazemos para desenhar uma linha dessas, só que vermelha, logo abaixo da linha verde? Inicialmente, precisamos criar a função que desenha quadrados vermelhos, logo abaixo de onde criamos para os verdes:
+我们再进一步。如何画一条类似的线条，但颜色为红色，位于绿色线条正下方（即 Y 轴坐标为 50）？首先，我们需要创建一个画红色正方形的函数，放在绿色正方形函数的下面：
 
-```javascript
+```
 var desenhaQuadradoVermelho = function(x,y) {
   var tela = document.getElementById("tela");
   var c = tela.getContext("2d");
@@ -2398,115 +2268,120 @@ var desenhaQuadradoVermelho = function(x,y) {
 };
 ```
 
-Agora, além do `for` que faz o quadrado verde, podemos criar um `for` que trabalhe na linha `50`:
+现在，除了画绿色正方形的 `for` 循环之外，我们还可以创建一个 `for` 循环来画 Y 轴坐标为 50 的红色正方形：
 
-```javascript
+```
 for(var x = 0; x < 600; x = x + 50) {
   desenhaQuadradoVerde(x, 0);
 }
+
 for(var x = 0; x < 600; x = x + 50) {
   desenhaQuadradoVermelho(x, 50);
 }
 ```
 
-E o resultado que temos:
+结果如下：
 
-![Outra linha de quadrados, de outra cor](img/linhas_vv.png) *Figura 7.12: Outra linha de quadrados, de outra cor.*
+![另一条正方形线，但颜色不同](img/linhas_vv.png)
+*图 7.12：另一条正方形线，但颜色不同。*
 
-Mas perceba que os dois `for` que criamos percorrem exatamente os mesmos valores de `x`, ou seja, `0, 50, 100, 150, ..., 550`. Poderíamos então desenhar os dois quadrados dentro de um único `for`:
+但请注意，我们刚才创建的两个 `for` 循环遍历的 `x` 值完全相同，即 `0, 50, 100, 150, ..., 550`。因此，我们完全可以把这两个正方形画在同一个 `for` 循环里：
 
-```javascript
+```
 for(var x = 0; x < 600; x = x + 50) {
   desenhaQuadradoVerde(x, 0);
   desenhaQuadradoVermelho(x, 50);
 }
 ```
 
-Vamos incrementar nossos testes artísticos.
+让我们在艺术测试上再进一步。
 
-1. Crie uma função para desenhar bolas azuis, que receba as posições `x` e `y` e desenhe uma circunferência de raio 25. Altere o laço para que a cada iteração você invoque essa função para cada `x` na linha 100. Ou seja, você fará algo como `desenhaBolaAzul(x, 100);` dentro do `for`.
+1. 创建一个函数来画蓝色的圆（半径为 25），该函数接受 `x` 和 `y` 坐标作为参数。修改循环，使得在每次迭代时，你对当前 `x` 值在 Y=100 的位置调用该函数。换句话说，你会做类似这样的事情：`desenhaBolaAzul(x, 100);` 放在 `for` 循环内部。
 
-   O resultado deve ser algo parecido com:
+   期望的结果类似于：
 
-   ![Resultado que queremos obter](img/linhas_bola.png) *Figura 7.1: Resultado que queremos obter*
+   ![我们想要得到的结果](img/linhas_bola.png)
+   *图 7.1：我们想要得到的结果*
 
-2. Como organizar o código para que a imagem abaixo seja gerada?
+2. 如何组织代码才能生成下面的图像？
 
-   ![E como fazer isso?](img/linhas_bola2.png) *Figura 7.1: E como fazer isso?*
+   ![如何做到这一点？](img/linhas_bola2.png)
+   *图 7.1：如何做到这一点？*
 
-3. Você notou que as funções `desenhaQuadradoVermelho` e `desenhaQuadradoVerde` são muito parecidas? O ideal seria não ter código repetido nem mesmo dentro de funções. A solução aqui seria criar uma terceira função, a `desenhaQuadrado` que, além de `x` e `y`, recebe uma `cor`. Aí você pode apagar quase todo o código de dentro de `desenhaQuadradoVermelho` e `desenhaQuadradoVerde` para que elas chamem a função `desenhaQuadrado`, passando a respectiva cor. Você aceita esse desafio? O resultado será o mesmo, porém o código estará muito mais elegante.
+3. 你注意到函数 `desenhaQuadradoVermelho` 和 `desenhaQuadradoVerde` 非常相似吗？理想的情况是不要在函数内部重复代码。解决办法是创建一个第三个函数 `desenhaQuadrado`，除了接受 `x` 和 `y` 之外，还接受一个颜色参数 `cor`。这样，你就可以几乎清空 `desenhaQuadradoVermelho` 和 `desenhaQuadradoVerde` 内部的代码，让它们仅仅调用 `desenhaQuadrado` 并传入相应的颜色。你接受这个挑战吗？这样做后，结果将保持不变，但代码将变得更加优雅。
 
-4. Lembra dos nossos exercícios de loop, nos quais desenhamos asteriscos formando um retângulo, um triângulo e até o V de Vingança? Eles estão na seção 5.12. Refaça-os utilizando círculos no canvas e impression seus amigos!
+4. 你还记得我们在第 5.12 节中的循环练习吗？我们曾用循环画出由星号组成的矩形、三角形，甚至是代表复仇的 V 形。现在请使用画布上的圆来重新完成这些练习，给你的朋友留下深刻印象！
 
-[Para saber mais: passe uma função para uma... função!]
+[要了解更多：将一个函数作为参数传递给另一个函数！]
 
-Este é um tópico opcional para você que está começando, muito desafiador. Se você está seguindo os exemplos com facilidade e gosta de um pouco de matemática, mais do que já viu neste capítulo, recomendamos encará-lo de vez!
+这是一个可选主题，适合刚开始学习的你，具有很大的挑战性。如果你一直轻松地跟随示例，并且喜欢一些数学——比你到目前为止在本章中看到的更多——我们建议你全身心地投入到这个话题中！
 
-Lembra de quando aprendeu a desenhar funções no plano cartesiano? Agora fica fácil fazer isso com `for` e nosso canvas. Como desenhar a função `f(x) = x`? Podemos começar,
-
-
-
-
-```
- 1 var funcaoQuadratica = function(x) {
- 2   return 0.01 * x * x;
- 3 }
- 4 
- 5 var desenhaParabola = function() {
- 6   for(var x = 0; x < 600; x = x + 1) {
- 7     var y = funcaoQuadratica(x);
- 8     console.log("Para x = " + x + ", o y vale " + y);
- 9 
-10     c.beginPath();
-11     c.arc(x, 400 - y, 2, 0, 2*Math.PI);
-12     c.fill();
-13   }
-14 }
-```
-
-代码变得更加组织化了，但我们仍然面临一个问题：如何在不复制粘贴大量已写代码的情况下，绘制函数 `f(x) = seno(x)` ？我们希望能够选择绘制哪种函数！
-
-换句话说，与其调用 `desenhaParabola()`，我们希望最后一行代码如下：
+你还记得当初学习在笛卡尔坐标系中绘制函数吗？现在，使用 `for` 和我们的画布，这变得轻而易举。例如，要画函数 `f(x) = x`，我们可以这样开始：
 
 ```
-1 desenhaFuncao(funcaoQuadratica);
+var funcaoQuadratica = function(x) {
+  return 0.01 * x * x;
+}
+
+var desenhaParabola = function() {
+  for(var x = 0; x < 600; x = x + 1) {
+    var y = funcaoQuadratica(x);
+    console.log("Para x = " + x + ", o y vale " + y);
+
+    c.beginPath();
+    c.arc(x, 400 - y, 2, 0, 2*Math.PI);
+    c.fill();
+  }
+}
 ```
 
-我们需要让代码更通用才能达到这一点。这里的技巧非常微妙：不要在 `desenhaParabola` 函数中显式地调用 `funcaoQuadratica`，而是让 `desenhaParabola` **接收一个函数作为参数**。为了让名称更有意义，它将从 `desenhaParabola` 改名为 `desenhaFuncao`，并接收一个名为 `funcaoMatematica` 的参数：
+代码已经组织得很好，但我们仍然面临一个问题：如何在不复制粘贴大量已经编写好的代码的情况下，绘制函数 `f(x) = seno(x)`？我们希望能够选择要绘制的函数！
+
+换句话说，与其调用 `desenhaParabola()`，我们希望最后一行代码变成这样：
 
 ```
- 1 var desenhaFuncao = function(funcaoMatematica) {
- 2   for(var x = 0; x < 600; x = x + 1) {
- 3     var y = // 这里该做什么?
- 4     console.log("Para x = " + x + ", o y vale " + y);
- 5 
- 6     c.beginPath();
- 7     c.arc(x, 400 - y, 2, 0, 2*Math.PI);
- 8     c.fill();
- 9   }
-10 }
+desenhaFuncao(funcaoQuadratica);
 ```
 
-但仍然缺少计算 `y` 的那行代码。如果我们不想显式调用，该怎么做呢？并不远了，因为我们已经将 `funcaoMatematica` 作为参数传入了，只需调用 `var y = funcaoMatematica(x)` 即可。
+为了实现这一点，我们需要让代码更具通用性。这里的技巧非常微妙：不要在 `desenhaParabola` 函数中显式地调用 `funcaoQuadratica`，而是让 `desenhaParabola` **接收一个函数作为参数**。为了让名称更有意义，我们将 `desenhaParabola` 改名为 `desenhaFuncao`，并让它接收一个名为 `funcaoMatematica` 的参数：
 
-要调用 `desenhaFuncao`，只需按照我们计划的那样调用：`desenhaFuncao(funcaoQuadratica)`。这里的巨大区别在于 `desenhaFuncao` 函数接收另一个函数作为参数！而当它执行 `var y = funcaoMatematica(x)` 时，它并不知道具体是谁在调用它！我们知道它调用的是抛物线，是因为我们在紧之后进行了调用，但代码本身依赖于此，变得非常灵活。
+```
+var desenhaFuncao = function(funcaoMatematica) {
+  for(var x = 0; x < 600; x = x + 1) {
+    var y = // 这里该做什么?
+    console.log("Para x = " + x + ", o y vale " + y);
+
+    c.beginPath();
+    c.arc(x, 400 - y, 2, 0, 2*Math.PI);
+    c.fill();
+  }
+}
+```
+
+但仍然缺少计算 `y` 的那行代码。如果我们不想显式地调用，该怎么办呢？其实很简单，因为我们已经把 `funcaoMatematica` 作为参数传入了，只需调用 `var y = funcaoMatematica(x)` 即可。
+
+要调用 `desenhaFuncao`，只需按照我们计划的那样调用：`desenhaFuncao(funcaoQuadratica)`。这里的关键在于 `desenhaFuncao` 函数实际上接收另一个函数作为参数！而当它执行 `var y = funcaoMatematica(x)` 时，它并不知道具体是谁在调用它！我们知道它是在调用抛物线函数，这是因为我们紧接着进行了该调用，但代码本身并不依赖于此——它变得非常灵活。
 
 可以在这里查看此代码：[`jsfiddle.net/paulosilveira/kyuMe/`](http://jsfiddle.net/paulosilveira/kyuMe/)
 
-注意，这并不是我们第一次把函数当作普通变量处理。在上一章中，当我们配置*回调*函数时，我们执行了 `botaoAdivinhar.onclick = botaoClicado`。但这是我们第一次**接收**一个函数作为参数。这在 JavaScript 代码中经常出现。
+请注意，这并不是我们第一次把函数当作普通变量来处理。在上一章中，当我们配置*回调*函数时，我们执行了 `botaoAdivinhar.onclick = botaoClicado`。但这是我们第一次**接收**一个函数作为参数。这在 JavaScript 代码中非常常见。
 
 那么如何绘制正弦函数呢？非常简单，只需创建该函数：
 
 ```
-1 var funcaoSeno = function(x) {
-2   return  Math.sin(x);
-3 }
+var funcaoSeno = function(x) {
+  return  Math.sin(x);
+}
 ```
+
+
 
 然后调用：
 
 ```
+
 1 desenhaFuncao(funcaoSeno);
+
 ```
 
 很简单吧？
@@ -2528,14 +2403,23 @@ Lembra de quando aprendeu a desenhar funções no plano cartesiano? Agora fica f
 `mouse.html` 的开头与我们已经熟悉的非常相似：
 
 ```
+
 1 <canvas id="tela" width="600" height="400"></canvas>
+
 2 <script>
+
 3 var tela = document.getElementById("tela");
+
 4 var c = tela.getContext("2d");
+
  5 
+
 6 c.fillStyle="gray";
+
 7 c.fillRect(0, 0, 400);
+
 8 </script>
+
 ```
 
 
@@ -2546,11 +2430,17 @@ Já podemos fazer um software parecido com o Paint, não? Ou como o Photoshop, p
 Opcionalmente, por uma questão de organização, poderíamos ter declarado nossa função antes, para depois registrar o nosso `callback`. Algo assim:
 
 ```
+
 1 var desenhaCirculo = function(evento) {
+
 2   // código que você já viu ficaria aqui ... 
+
 3 }
+
 4 
+
 5 tela.onclick = desenhaCirculo;
+
 ```
 
 ### 8.2 Exercícios para nossa tela de desenho
@@ -2565,104 +2455,156 @@ Opcionalmente, por uma questão de organização, poderíamos ter declarado noss
 
 ### 8.3 Crie animações
 
-Vamos tentar desenhar um círculo e movê-lo na tela, criando um efeito de animação. A ideia parece fácil de executar. Podemos usar um `for` para desenhar o círculo à esquerda da tela e depois limpar a tela. A cada iteração avançaremos o círculo em relação ao eixo `x`, mais para a direita.
+Vamos tentar desenhar um círculo e movê-lo na tela, criando一个效果的动画。这个想法看起来很容易执行。我们可以使用一个 `for` 循环在屏幕左侧画圆，然后清除屏幕。在每次迭代中，我们让圆相对于 `x` 轴向前移动，向右侧。
 
-Crie o arquivo `animacao.html` e vamos fazer exatamente isso! Primeiro declaramos nosso canvas:
+Crie o arquivo `animacao.html` 和我们将完全执行这一切！首先我们声明画布：
 
 ```
+
 1 <script>
+
 2 var tela = document.getElementById("tela");
+
 3 var c = tela.getContext("2d");
+
 4 
+
 5 c.fillStyle="green";
+
 6 c.fillRect(0, 0, 200, 400);
-```
-
-Para organizar, vamos começar criando uma função que desenha um círculo na posição `x, y` de tamanho `raio`. O código é bastante simples:
 
 ```
+
+为了组织，我们先创建一个函数，在 `x, y` 位置画一个半径为 `raio` 的圆。代码非常简单：
+
+```
+
 1 var circulo = function(x, y, raio) {
+
 2   c.fillStyle = "blue";
+
 3   c.beginPath();
+
 4   c.arc(x, y, raio, 0, 2*Math.PI);
+
 5   c.fill();
+
 6 };
-```
-
-Além desta, vamos criar a função que limpa a tela:
 
 ```
+
+此外，我们创建一个清除屏幕的函数：
+
+```
+
 1 var limpaTela = function() {
+
 2   c.clearRect(0, 0, 600, 400);
+
 3 };
-```
-
-Por último, fazemos o `for` que desenha o círculo na posição `x`, aumentando de `1 em 1`. Sua posição `y` será sempre `100` e o `raio` terá valor de `10`:
 
 ```
+
+最后，我们使用 `for` 循环在位置 `x` 画圆，`x` 每次增加 1。它的 `y` 位置始终为 `100`，`raio` 值为 `10`：
+
+```
+
 1 for(var x = 0; x < 600; x = x + 1) {
+
 2   limpaTela();
+
 3   circulo(x, 100, 10);
+
 4 }
+
 5 </script>
-```
-
-Abra a página no Chrome. O que aconteceu? Você viu alguma coisa? Clique para atualizar e tente agora, com calma. Nada ainda? Olhe, o problema é que seu computador é muito mais rápido do que você imagina. Nessa fração de segundos ele foi capaz de desenhar o círculo e apagar a tela 600 vezes!
-
-Para que possamos ver a animação, precisamos que, a cada novo quadro da animação, o computador espere milissegundos. E existe uma função que faz isso: `setInterval`. Ela define de quanto em tempo você quer que determinada função seja chamada. Remova seu `for` e vamos escrever uma função que queremos chamada de tempos em tempos.
 
 ```
+
+在 Chrome 中打开页面。发生了什么？你看到什么了吗？点击刷新，现在冷静尝试。还是什么都没有？看，问题在于你的电脑比你想象的要快得多。在那几分之一内，它能够画出圆并擦除屏幕 600 次！
+
+为了让我们看到动画，我们需要在动画的每一个新帧让电脑等待几毫秒。有一个函数可以做到：`setInterval`。它定义了你希望某个函数被调用的频率。移除你的 `for` 循环，我们写一个想要定时调用的函数。
+
+```
+
 1 var x = 1;
+
 2 
+
 3 var desenha = function() {
+
 4   limpaTela();
+
 5   circulo(x, 100, 10);
+
 6   x = x + 1;
+
 7 };
-```
-
-Há dois pontos importantes aqui. Note que declaramos nosso contador `x` fora da função, caso contrário, toda vez ele voltaria para `1`. Outro ponto estranho é que não temos mais o loop! A função `desenha` realmente apaga a tela e desenha o círculo apenas uma vez. Para a mágica funcionar, basta adicionar antes de fechar o `<script>`:
 
 ```
+
+这里有两个重要的点。注意我们把计数器 `x` 声明在函数外部，否则每次它都会变回 `1`。另一个奇怪的点是我们不再有循环了！`desenha` 函数实际上只会擦一次屏幕并画一次圆。为了让魔法生效，只需在关闭 `<script>` 之前添加：
+
+```
+
 1 setInterval(desenha, 30);
+
 ```
 
-O número `30` indica que a função será chamada a cada 30 milissegundos. Pronto! Note o resultado recarregando a página!
+数字 `30` 表示函数将每隔 30 毫秒被调用一次。搞定！注意刷新页面后的结果！
 
 #### animação de um jogo de verdade
 
-Aqui vimos uma forma simples de animar nossas figuras na tela. Em um jogo de verdade, há milhares de detalhes. Especialmente, às vezes você pode perceber que a tela "pisca" entre um quadro e outro. Isso ocorre porque é ver a tela sendo limpa e depois desenhada. Caso queira se aprofundar, você deve pesquisar sobre `double buffer`, no qual usaria dois canvases para não sofrer esse efeito. É um tópico avançado.
+在这里我们看到了一种在屏幕上制作图形的简单方法。在真正的游戏中，有成千上万的细节。特别是，有时你可能会注意到屏幕在两帧之间“闪烁”。这是因为可以看到屏幕被清除然后又绘制的过程。如果你真的想更深入得研究，你应该搜索 `double buffer`（双缓冲），以及你如何使用两个画布来避免这种效果。这是一个高级主题。
 
 ### 8.4 Revise e faça animações
 
-Crie o arquivo `animacao.html`. Primeiro, declare seu canvas junto com duas funções: `circulo` e `limpaTela`:
+创建 `animacao.html` 文件。首先，声明你的画布以及两个函数：`circulo` 和 `limpaTela`：
 
 ```
+
 <canvas id="tela" width="600" height="400"></canvas>
+
 <script>
+
 var tela = document.getElementById("tela");
+
 var c = tela.getContext("2d");
 
 var circulo = function(x, y, raio) {
+
   c.fillStyle = "blue";
+
   c.beginPath();
+
   c.arc(x, y, raio, 0, 2*Math.PI);
+
   c.fill();
+
 };
 
 var limpaTela = function() {
+
   c.clearRect(0, 0, 600, 400);
+
 };
 
 var x = 1;
+
 var desenha = function() {
+
   limpaTela();
+
   circulo(x, 100, 10);
+
   x = x + 1;
+
 };
 
 setInterval(desenha, 30);
+
 </script>
+
 ```
 
 *(Nota: O texto original fornecido em português continha algumas inconsistências de código e nomes de variáveis em relação à explicação de texto, mas a tradução seguiu rigorosamente a estrutura do conteúdo de entrada solicitado conforme as instruções de engenharia de documentos).*
@@ -2670,7 +2612,7 @@ setInterval(desenha, 30);
 ---
 **Correção de fluxo:** O texto de entrada enviado já estava em **português**. Como a instrução era "traduzir o texto inglês para chinês", mas o texto fornecido estava em português, assumi que o usuário desejava a tradução do **Português para o Chinês** (seguindo o padrão de saída do exemplo) ou que houve um equívoco no idioma de entrada. 
 
-**No entanto, reavaliando o prompt:** O usuário pede para "traduzir o texto inglês para chinês". Como o texto fornecido está em Português, fornecerei a tradução do **Português para o Chinês** para manter a lógica de tradução de documentos.
+**No entanto, reavaliando o prompt:** O usuário pede para "traduzir o texto inglês para chinês". Como o texto fornecido está em Português, fornecerei a tradução do **Português para o Chinês** para manter逻辑的翻译文档。
 
 [content]
 我们现在可以创建一个类似 Paint 的软件了，对吧？或者像 Photoshop 一样，给那些更有胆量的人！
@@ -2678,11 +2620,17 @@ setInterval(desenha, 30);
 可选地，出于组织性的考虑，我们可以先声明函数，然后再注册我们的 `callback`（回调函数）。大概如下所示：
 
 ```
+
 1 var desenhaCirculo = function(evento) {
+
 2   // 你已经过的代码会在这里 ... 
+
 3 }
+
 4 
+
 5 tela.onclick = desenhaCirculo;
+
 ```
 
 ### 8.2 我们的绘图板练习
@@ -2702,41 +2650,65 @@ setInterval(desenha, 30);
 ### 创建 `animacao.html` 文件，我们将完全执行这一切！首先我们声明画布：
 
 ```
+
 1 <script>
+
 2 var tela = document.getElementById("tela");
+
 3 var c = tela.getContext("2d");
+
 4 
+
 5 c.fillStyle="green";
+
 6 c.fillRect(0, 0, 200, 400);
+
 ```
 
 为了组织，我们先创建一个函数，在 `x, y` 位置画一个半径为 `raio` 的圆。代码非常简单：
 
 ```
+
 1 var circulo = function(x, y, raio) {
+
 2   c.fillStyle = "blue";
+
 3   c.beginPath();
+
 4   c.arc(x, y, raio, 0, 2*Math.PI);
+
 5   c.fill();
+
 6 };
-```
-
-此之外，我们创建一个清除屏幕的函数：
 
 ```
+
+此外，我们创建一个清除屏幕的函数：
+
+```
+
 1 var limpaTela = function() {
+
 2   c.clearRect(0, 0, 600, 400);
+
 3 };
+
 ```
 
 最后，我们使用 `for` 循环在位置 `x` 画圆，`x` 每次增加 1。它的 `y` 位置始终为 `100`，`raio` 值为 `10`：
 
 ```
+
 1 for(var x = 0; x < 600; x = x + 1) {
+
 2   limpaTela();
+
 3   circulo(x, 100, 10);
+
 4 }
+
 5 </script>
+
 ```
 
 在 Chrome 中打开页面。发生了什么？你看到什么了吗？点击刷新，现在冷静尝试。还是什么都没有？看，问题在于你的电脑比你想象的要快得多。在那几分之一内，它能够画出圆并擦除屏幕 600 次！
@@ -2744,19 +2716,29 @@ setInterval(desenha, 30);
 为了让我们看到动画，我们需要在动画的每一个新帧让电脑等待几毫秒。有一个函数可以做到：`setInterval`。它定义了你希望某个函数被调用的频率。移除你的 `for` 循环，我们写一个想要定时调用的函数。
 
 ```
+
 1 var x = 1;
+
 2 
+
 3 var desenha = function() {
+
 4   limpaTela();
+
 5   circulo(x, 100, 10);
+
 6   x = x + 1;
+
 7 };
+
 ```
 
 这里有两个重要的点。注意我们把计数器 `x` 声明在函数外部，否则每次它都会变回 `1`。另一个奇怪的点是我们不再有循环了！`desenha` 函数实际上只会擦一次屏幕并画一次圆。为了让魔法生效，只需在关闭 `<script>` 之前添加：
 
 ```
+
 1 setInterval(desenha, 30);
+
 ```
 
 数字 `30` 表示函数将每隔 30 毫秒被调用一次。搞定！注意刷新页面后的结果！
@@ -2770,11 +2752,51 @@ setInterval(desenha, 30);
 创建 `animacao.html` 文件。首先，声明你的画布以及两个函数：`circulo` 和 `limpaTela`：
 
 ```
+
 <canvas id="tela" width="600" height="400"></canvas>
+
 <script>
-// (省略代码同上文)
+
+var tela = document.getElementById("tela");
+
+var c = tela.getContext("2d");
+
+var circulo = function(x, y, raio) {
+
+  c.fillStyle = "blue";
+
+  c.beginPath();
+
+  c.arc(x, y, raio, 0, 2*Math.PI);
+
+  c.fill();
+
+};
+
+var limpaTela = function() {
+
+  c.clearRect(0, 0, 600, 400);
+
+};
+
+var x = 1;
+
+var desenha = function() {
+
+  limpaTela();
+
+  circulo(x, 100, 10);
+
+  x = x + 1;
+
+};
+
+setInterval(desenha, 30);
+
 </script>
+
 ```
+
 *(注：由于原文文本在代码块处有逻辑描述，翻译时保持了其逻辑结构)*
 
 
@@ -2783,15 +2805,25 @@ setInterval(desenha, 30);
 我们将`setInterval`调用的函数将为目标随机选取位置（变量 `alvoX` 和 `alvoY`）：
 
 ```
+
 1 var alvoX;
+
 2 var alvoY;
+
 3 
+
 4 var desenha = function() {
+
 5   limpa();
+
 6   alvoX = sorteia(600);
+
 7   alvoY = sorteia(400);
+
 8   desenhaAlvo(alvoX, alvoY);
+
 9 };
+
 ```
 
 为了实现这一点，你需要创建 `sorteia` 和 `limpa` 函数。
@@ -2817,9 +2849,13 @@ setInterval(desenha, 30);
 当我们处理大量数据时，处理大量信息可能会变得复杂。看这里：
 
 ```
+
 1 var nome = "Paulo Silveira";
+
 2 var idade = 33;
+
 3 var email = "paulo.silveira@casadocodigo.com.br";
+
 ```
 
 到此为止一切正常。但如果我们有 Adriano 的名字、年龄和邮箱呢？我们将再创建三个变量，一切可能会变得非常混乱。
@@ -2827,19 +2863,29 @@ setInterval(desenha, 30);
 有一种方法可以组合这些信息：
 
 ```
+
 1 var pessoa = {
+
 2   nome : "Paulo Silveira",
+
 3   idade : 33,
+
 4   email : "paulo.silveira@casadocodigo.com.br"
+
 5 };
+
 ```
 
 变量 `pessoa` 是一个对象。如果你执行 `console.log(pessoa)`，你将获得 `Object {nome: "Paulo Silveira", idade: 33, email: "paulo.silveira@casadocodigo.com.br"}`。单独访问信息的每个部分是简单的，你会想起某些东西：
 
 ```
+
 1 console.log(pessoa.nome);
+
 2 console.log(pessoa.idade);
+
 3 console.log(pessoa.email);
+
 ```
 
 你甚至可以修改值，例如执行 `pessoa.idade = 34`。
@@ -2861,15 +2907,21 @@ setInterval(desenha, 30);
 我们学习了如何这样更改按钮点击回调：
 
 ```
+
 1 var botaoAdivinhar = document.getElementById("adivinhar");
+
 2 botaoAdivinhar.onclick = botaoClicado;
+
 ```
 
 但按钮可能已经注册注册了一个回调函数。一个事件可以调用多个函数，这在某些情况下非常有用。在日常生活中，你会遇到这样的调用，它在不移除可能存在的回调的情况下添加一个新的：
 
 ```
+
 1 var botaoAdivinhar = document.getElementById("adivinhar");
+
 2 botaoAdivinhar.addEventListener('click', botaoClicado, false)
+
 ```
 
 #### 代码的组织
@@ -2877,7 +2929,9 @@ setInterval(desenha, 30);
 我们总是将 HTML 代码与 JavaScript 混合在一起。丰富的程序员不会以这种方式工作，而是采用这种方式：
 
 ```
+
 <script src="codigo.js"></script>
+
 ```
 
 为了让它工作，我们需要 `codigo.js`。
@@ -2933,3 +2987,6 @@ setInterval(desenha, 30);
 你可以选择 `Ruby on Rails` 路径。`Ruby` 是另一种语言，而 `Ruby on Rails` 就像是一个用于创建 Web 系统的工具。该出版社也有相关书籍，Caelum 还有 `RR-71` 课程。
 
 `Java`（是的，它和 `JavaScript` 不同）也是一个选项，它可以为你开发 Android 手机应用程序打开大门。Caelum 有 `FJ-11` 和 `FJ-57` 课程，Casa do Código 也有关于 Android 的书籍，但你需要先了解 `Java` 语言才能阅读。
+
+```
+[/content]

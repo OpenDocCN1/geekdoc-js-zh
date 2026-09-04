@@ -1,8 +1,9 @@
+
 # JavaScript 游戏制作基础
 
 ## 简介
 
-学习如何使用JavaScript编写自己的趣味游戏。JavaScript是一种最初用于让网页更具互动性的语言。现在它被用来创建可在电脑和移动设备上运行的在线游戏。享受创建本书中的简单项目，你将成为JavaScript专家的道路上迈进！
+学习如何使用 JavaScript 编写自己的趣味游戏。JavaScript 是一种最初用于让网页更具互动性的语言。现在它被用来创建可在电脑和移动设备上运行的在线游戏。享受创建本书中的简单项目，你将成为 JavaScript 专家的道路上迈进！
 
 ⇒ 如果你正在制作自己的网页，花点时间画个示意图并做好规划再开始。如果事情不顺利，尝试更改数值，不要害怕重新开始——你会从中学到东西。
 
@@ -12,7 +13,7 @@
 
 您可以使用纯文本编辑器来创建代码。
 
-```
+```html
 mygame.html
 <script>
 alert('Press any key to start')
@@ -21,11 +22,11 @@ alert('Press any key to start')
 
 这可以正常工作，但可能相当繁琐，因为软件不会提供任何帮助。
 
-本书中最适合使用的工具是离线HTML编辑器。它将在您输入代码时提供支持，同时也有助您学习JavaScript代码。
+本书中最适合使用的工具是离线 HTML 编辑器。它将在您输入代码时提供支持，同时也有助您学习 JavaScript 代码。
 
 您将使用两个独立的窗口：
 
-```
+```javascript
 Sublime Text
 <script>
 var score=0;
@@ -34,103 +35,121 @@ function moveIt(){
 score++;
 ```
 
-文本编辑器用于输入JavaScript代码。
+文本编辑器用于输入 JavaScript 代码。
 
 浏览器用于查看程序。
 
-有许多不同的浏览器可供使用。我们建议使用Google Chrome来完成本书中的活动。开始前请确保您的计算机已安装最新版本。
+有许多不同的浏览器可供使用。我们建议使用 Google Chrome 来完成本书中的活动。开始前请确保您的计算机已安装最新版本。
 
-本书中您还将学习一些HTML以及JavaScript。HTML是用于构建网页的语言。JavaScript是让这些页面生动起来的语言！
+本书中您还将学习一些 HTML 以及 JavaScript。HTML 是用于构建网页的语言。JavaScript 是让这些页面生动起来的语言！
 
 ## 开始
 
-您需要一个文本编辑器来开始编写JavaScript。您的计算机上可能已经有一个简单的文本编辑器，叫做记事本（如果您使用Windows）或TextEdit（在Mac上）。这足以让您入门，但下载一个更强大的文本编辑器会让JavaScript的创建更加容易。本书中，我们将使用一个名为Sublime Text的文本编辑器。还有许多其他编辑器可供下载，例如Brackets或Notepad++——所有这些都可以免费试用。
+您需要一个文本编辑器来开始编写 JavaScript。您的计算机上可能已经有一个简单的文本编辑器，叫做记事本（如果您使用 Windows）或 TextEdit（在 Mac 上）。这足以让您入门，但下载一个更强大的文本编辑器会让 JavaScript 的创建更加容易。本书中，我们将使用一个名为 Sublime Text 的文本编辑器。还有许多其他编辑器可供下载，例如 Brackets 或 Notepad++——所有这些都可以免费试用。
 
-### 步骤 1 – 找到Sublime Text网站
+### 步骤 1 – 找到 Sublime Text 网站
 
-- 打开网络浏览器并访问 www.sublimetext.com
+- 打开网络浏览器并访问 `www.sublimetext.com`。
 
 ### 步骤 2 – 开始下载
 
 - 点击网页顶部附近的**下载**按钮。
-- 选择您需要的Sublime Text版本。如果不确定，请让成年人帮您找到正确的版本：如果您使用Mac，点击Apple菜单，然后点击**关于本机**。在PC上点击**开始**菜单，选择**系统**，然后点击**关于**。
+
+- 选择您需要的 Sublime Text 版本。如果不确定，请让成年人帮您找到正确的版本：如果您使用 Mac，点击 Apple 菜单，然后点击**关于本机**。在 PC 上点击**开始**菜单，选择**系统**，然后点击**关于**。
 
 | 下载 |
 | --- |
-| OS X（需要10.7或更高版本） |
+| OS X（需要 10.7 或更高版本） |
 | Windows |
-| Windows 64位 |
+| Windows 64 位 |
 
 ### 步骤 3 – 安装软件
 
 - 某些网络浏览器会要求您运行安装程序。选择**运行**。
+
 - 如果这没有发生，不要惊慌。安装程序文件应该已下载到您的计算机。在您的**下载**文件夹中查找它。双击它以开始安装新的文本编辑器。您应该会看到一个白色或灰色的大框，其中包含接下来操作的说明。按照这些说明完成安装。
 
-### 步骤 4 – 运行Sublime Text
+### 步骤 4 – 运行 Sublime Text
 
-**在PC上：**
+**在 PC 上：**
+
 ⇒ 点击**开始 > 程序 > Sublime Text**。或者如果它出现在**最近添加**部分，直接点击**Sublime Text**。
 
-**在Mac上：**
+**在 Mac 上：**
+
 ⇒ 点击**Finder**。
+
 ⇒ 点击**应用程序**。
+
 ⇒ 通过将**Finder**中的**Sublime Text**拖到**桌面**底部的程序坞来创建快捷方式。
+
 ⇒ 点击**Sublime Text**图标。
 
 ### 步骤 5 – 说你好
 
-⇒ 仔细地将以下内容输入到文本编辑器的第1、2、3行中。
+⇒ 仔细地将以下内容输入到文本编辑器的第 1、2、3 行中。
 
-```
+```html
 1  <script>
 2    alert("Hello")
 3  </script>
 ```
 
 **Sublime Text**
-标记JavaScript部分的开始。
-显示一个说出"Hello"的消息框。代码将自动缩进。
-标记JavaScript部分的结束。
+
+标记 JavaScript 部分的开始。
+
+显示一个说出 `"Hello"` 的消息框。代码将自动缩进。
+
+标记 JavaScript 部分的结束。
 
 ### 步骤 6 – 保存您的代码
 
 ⇒ 点击**文件 > 保存**。
+
 ⇒ 保存到您的**文档**文件夹。
-⇒ 输入**hello.html**作为文件名。
+
+⇒ 输入 `hello.html` 作为文件名。
 
 ### 步骤 7 – 查看您的页面
 
 ⇒ 打开您的**文档**文件夹。
-⇒ 找到**hello.html**文件并双击它。
+
+⇒ 找到 `hello.html` 文件并双击它。
+
 ⇒ 您的网页现在应该会在您常用的网络浏览器中加载。
-⇒ 您应该会看到一条显示"Hello"的消息。
 
-## 为什么要在HTML代码中使用JavaScript？
+⇒ 您应该会看到一条显示 `"Hello"` 的消息。
 
-虽然我们在用JavaScript编程，但我们需要将文件放在一些HTML代码中才能使其工作。HTML代表超文本标记语言，是用于构建网页的语言。
+## 为什么要在 HTML 代码中使用 JavaScript？
 
-HTML用于描述网页上显示什么对象或元素。如果您正在创建一个简单的游戏，您需要使用HTML来添加图像和一些文本来显示分数。但是，HTML无法让图像移动或分数变化。
+虽然我们在用 JavaScript 编程，但我们需要将文件放在一些 HTML 代码中才能使其工作。HTML 代表超文本标记语言，是用于构建网页的语言。
 
-添加JavaScript是为了告诉图像在不同的按键被按下或鼠标被点击时移动。它还可以用来显示分数并使其发生变化。我们需要同时使用HTML和JavaScript来制作更有趣的游戏。JavaScript的设计初衷就是添加到HTML页面中以增强它们的互动性。
+HTML 用于描述网页上显示什么对象或元素。如果您正在创建一个简单的游戏，您需要使用 HTML 来添加图像和一些文本来显示分数。但是，HTML 无法让图像移动或分数变化。
 
-在本书的项目中，您将学习如何将HTML的不同元素与JavaScript结合使用。
+添加 JavaScript 是为了告诉图像在不同的按键被按下或鼠标被点击时移动。它还可以用来显示分数并使其发生变化。我们需要同时使用 HTML 和 JavaScript 来制作更有趣的游戏。JavaScript 的设计初衷就是添加到 HTML 页面中以增强它们的互动性。
+
+在本书的项目中，您将学习如何将 HTML 的不同元素与 JavaScript 结合使用。
 
 ## 数学测验
 
-现在让我们编写一个简单的数学测验。这将是您进一步了解JavaScript的好机会。如果您以前做过一些编程，您应该熟悉变量和IF语句的概念。我们将看看如何在JavaScript中使用这些概念。
+现在让我们编写一个简单的数学测验。这将是您进一步了解 JavaScript 的好机会。如果您以前做过一些编程，您应该熟悉变量和 IF 语句的概念。我们将看看如何在 JavaScript 中使用这些概念。
 
 ### 步骤 1 – 启动您的文本编辑器
 
-- **在PC上：**
+- **在 PC 上：**
+
   - 点击开始 > 程序 > Sublime Text。
-- **在Mac上：**
-  - 点击Sublime Text图标（请参见第5页获取帮助）。
+
+- **在 Mac 上：**
+
+  - 点击 Sublime Text 图标（请参见第 5 页获取帮助）。
 
 ### 步骤 2 – 输入代码
 
-仔细输入您的数学测验题目。对于问题"8 x 8是多少？"（答案：64），将以下代码添加到文本编辑器的第1至6行：
+仔细输入您的数学测验题目。对于问题 `"8 x 8 是多少？"`（答案：64），将以下代码添加到文本编辑器的第 1 至 6 行：
 
-```
+```javascript
 <script>
   answer=prompt("What is 8 x 8?");
   if(answer===64){
@@ -140,23 +159,26 @@ HTML用于描述网页上显示什么对象或元素。如果您正在创建一�
 ```
 
 开始脚本。
+
 提出一个问题。
-如果答案是64，则：
-显示一个写着"Correct!"的消息框。
+
+如果答案是 64，则：
+
+显示一个写着 `"Correct!"` 的消息框。
+
 结束脚本。
 
-在JavaScript中，代码的缩进量不会影响其工作方式。然而，这会让代码更易读。您的文本编辑器也可能会自动执行此操作。正如您用句号结束句子一样，您应该用分号(;)结束JavaScript语句。
+在 JavaScript 中，代码的缩进量不会影响其工作方式。然而，这会让代码更易读。您的文本编辑器也可能会自动执行此操作。正如您用句号结束句子一样，您应该用分号（`;`）结束 JavaScript 语句。
 
 ### 步骤 3 – 保存您的代码
 
-- 点击文件 > 保存并输入**quiz.html**作为文件名。
+- 点击文件 > 保存并输入 `quiz.html` 作为文件名。
+
 - 确保将其保存在您的**文档**文件夹中。
-
-
 
 ### 步骤 4 – 查看你的作品
 
-⇒ 打开你的**文档**文件夹，然后双击**quiz.html**文件。你的程序应该会在网页浏览器中运行。
+⇒ 打开你的**文档**文件夹，然后双击 `quiz.html` 文件。你的程序应该会在网页浏览器中运行。
 
 ⇒ 通过正确回答问题来测试你的页面，然后重新加载页面并给出错误答案。
 
@@ -164,17 +186,17 @@ HTML用于描述网页上显示什么对象或元素。如果您正在创建一�
 
 ⇒ 按以下方式修改你的代码，以便为题目随机选取数字：
 
-创建一个名为 a 的变量。
+创建一个名为 `a` 的变量。
 
 生成一个 0 到 1 之间的随机数。
 
-```
+```javascript
 var a=Math.round(Math.random()*10);
 ```
 
 四舍五入到最接近的整数。将其乘以 10。
 
-```
+```javascript
 1  <script>
 2    var a=Math.round(Math.random()*10);
 3    var b=Math.round(Math.random()*10);
@@ -185,9 +207,9 @@ var a=Math.round(Math.random()*10);
 8  </script>
 ```
 
-使用 + 号将字符串 'what is' 与存储在变量 a 中的值连接起来。
+使用 `+` 号将字符串 `'what is'` 与存储在变量 `a` 中的值连接起来。
 
-检查输入的答案是否等于 a 乘以 (*) b。
+检查输入的答案是否等于 `a` 乘以（`*`）`b`。
 
 ### 步骤 6 – 保存并刷新
 
@@ -203,11 +225,11 @@ var a=Math.round(Math.random()*10);
 
 ## 核心概念
 
-## 变量
+### 变量
 
 变量是程序中存储信息的部分。变量被赋予一个名称，用于指向计算机内存的某一部分。然后在该内存部分中存储一个值。在这个测验中，变量用于存储随机数和用户的输入。
 
-## IF 语句
+### IF 语句
 
 通常，每一行代码都是一行接一行地执行。IF 语句则不同。它在运行某段代码之前，会先检查特定条件是否为真。
 
@@ -218,12 +240,18 @@ var a=Math.round(Math.random()*10);
 ### 步骤 1 – 规划
 
 - 列出四种可供选择的颜色。
+
 - 启动一个计时器，每 1000 毫秒（即每一秒）改变一次颜色。
+
 - 要改变颜色：
-  - 从 0 到 3 中随机选取一个数字
-  - 使用随机数字选取其中一种颜色
+
+  - 从 0 到 3 中随机选取一个数字。
+
+  - 使用随机数字选取其中一种颜色。
+
   - 将背景颜色设置为所选颜色。
-- 创建一个称为函数的特殊代码段，它将按照上述步骤来改变颜色。通过给函数起名为**changeColour()**，你就创建了一个新命令，每当输入**changeColour()**时就会执行这些步骤。
+
+- 创建一个称为函数的特殊代码段，它将按照上述步骤来改变颜色。通过给函数起名为 `changeColour()`，你就创建了一个新命令，每当输入 `changeColour()` 时就会执行这些步骤。
 
 ## 括号！
 
@@ -231,13 +259,13 @@ var a=Math.round(Math.random()*10);
 
 ### 步骤 2 – 开始一个新的 HTML 文件
 
-- 启动你的文本编辑器，或者点击**文件** > **新建**。
+- 启动你的文本编辑器，或者点击**文件 > 新建**。
 
 ### 步骤 3 – 输入此代码
 
-非常仔细地输入这段代码，使用完全相同的拼写、符号和大写字母。记住在 JavaScript 样式命令中使用美式拼写 color，但在函数名称（如**changeColour**）或变量名称中使用英式拼写 colour。
+非常仔细地输入这段代码，使用完全相同的拼写、符号和大写字母。记住在 JavaScript 样式命令中使用美式拼写 `color`，但在函数名称（如 `changeColour`）或变量名称中使用英式拼写 `colour`。
 
-```
+```javascript
 <script>
 colors=["red","green","blue","yellow"];
 var timer=window.setInterval(changeColour, 1000);
@@ -249,23 +277,23 @@ function changeColour(){
 ```
 
 | 行 | 说明 |
-|---|---|
+| --- | --- |
 | 1 | 开始脚本。 |
 | 2 | 创建颜色列表。 |
-| 3 | 创建一个计时器，每秒运行一次 changeColour 函数。 |
-| 4 | 定义 changeColour 函数。 |
-| 5 | 创建一个名为 n 的变量，并给它一个 0 到 3 的随机值。 |
+| 3 | 创建一个计时器，每秒运行一次 `changeColour` 函数。 |
+| 4 | 定义 `changeColour` 函数。 |
+| 5 | 创建一个名为 `n` 的变量，并给它一个 0 到 3 的随机值。 |
 | 6 | 设置背景颜色。 |
 | 7 | 结束函数。 |
 | 8 | 结束脚本。 |
 
 ### 步骤 4 - 保存你的代码
 
-⇒ 点击 文件 > 保存，然后输入 **colours.html** 作为文件名。确保将其保存在你的**文档**文件夹中。
+⇒ 点击文件 > 保存，然后输入 `colours.html` 作为文件名。确保将其保存在你的**文档**文件夹中。
 
 ### 步骤 5 - 查看你的作品
 
-⇒ 打开你的**文档**文件夹。双击 **colours.html** 文件。你的程序应该会在网页浏览器中运行。屏幕应该每秒改变一次颜色。
+⇒ 打开你的**文档**文件夹。双击 `colours.html` 文件。你的程序应该会在网页浏览器中运行。屏幕应该每秒改变一次颜色。
 
 ### 步骤 6 - 排列你的屏幕
 
@@ -280,15 +308,19 @@ function changeColour(){
 ## 自定义
 
 - 在列表中添加更多颜色。确保在每个颜色单词周围加上双引号，并用逗号分隔。
+
 - 要从新列表中选取项目，你需要更改所选的随机数。编辑第 5 行末尾的数字，使其与列表长度匹配。
+
 - 通过编辑第 3 行末尾的内容来更改选择新颜色的频率（选择非常低的值将导致颜色闪烁）。
 
-> **核心概念**
+## 核心概念
 
-**数组**
+### 数组
+
 数组是作为某些数据存储的项目列表。列表类似于变量，但它们可以存储多个信息项。在我们的程序中，第 2 行包含一个颜色列表。
 
-**函数**
+### 函数
+
 函数是结合多个命令的代码段。函数的名称成为一个新命令，运行整个部分。第 4 到 7 行包含函数定义。
 
 ## 动起来
@@ -302,20 +334,22 @@ function changeColour(){
 - 上网搜索一些可用的剪贴画（参见第 31 页）。
 
 - 右键点击你选择的图片。我们将使用一张幽灵图片。
+
 - 点击**图片另存为...**
+
 - 导航到你的**文档**文件夹，然后点击**保存**。
 
 ### 步骤 2 – 检查！
 
-- 打开你的**文档**文件夹，检查图片文件是否在那里。根据你的浏览器和图片，它可能被称为 **ghost.png** 或 **download.png**。如果它不在那里，返回步骤 1 重试，确保你选择的是**文档**文件夹。
+- 打开你的**文档**文件夹，检查图片文件是否在那里。根据你的浏览器和图片，它可能被称为 `ghost.png` 或 `download.png`。如果它不在那里，返回步骤 1 重试，确保你选择的是**文档**文件夹。
 
 - 找到你的图片并记住它的确切文件名。
 
 ### 步骤 3 – 开始一个新文件
 
-- 仔细地将这段代码输入到你的文本编辑器中。我们将使用一些 HTML 代码，通过 **\<body\>** 标签来设置背景颜色。我们将使用 **\<img\>** 标签添加一张图片。
+- 仔细地将这段代码输入到你的文本编辑器中。我们将使用一些 HTML 代码，通过 `<body>` 标签来设置背景颜色。我们将使用 `<img>` 标签添加一张图片。
 
-```
+```html
 1  <html>
 2    <body style="background-color:darkblue">
 3      <img id="ghost" style="position:absolute;" src="ghost.png">
@@ -324,35 +358,41 @@ function changeColour(){
 ```
 
 开始 HTML。
-使用 body 标签设置背景颜色。
+
+使用 `body` 标签设置背景颜色。
+
 使用步骤 3 中的图片文件名。
-结束 body 标签。
+
+结束 `body` 标签。
+
 结束 HTML。
 
-## HTML 图片标签：
+### HTML 图片标签
 
-id 是我们给图片起的名称。
+`id` 是我们给图片起的名称。
 
-position:absolute 允许使用坐标来定位图片。
+`position:absolute` 允许使用坐标来定位图片。
 
-```
+```html
 <img id="ghost" style="position:absolute;" src="ghost.png">
 ```
 
 我们在页面上添加一张图片。
 
-style 属性用于设置 HTML 元素的大小和颜色等内容。记得加上引号。
+`style` 属性用于设置 HTML 元素的大小和颜色等内容。记得加上引号。
 
-在 src 属性中输入图片的文件名。
+在 `src` 属性中输入图片的文件名。
 
 ### 步骤 4 - 保存你的文件
 
-⇒ 点击**文件 > 保存**，然后输入 **ghost.html** 作为文件名。
+⇒ 点击**文件 > 保存**，然后输入 `ghost.html` 作为文件名。
+
 确保将其保存在你的**文档**文件夹中。
 
 ### 步骤 5 - 查看你的页面
 
 ⇒ 打开你的**文档**文件夹。
+
 双击该文件，你应该能在网页上看到它。
 
 ### 步骤 6 - 让它动起来！
@@ -361,7 +401,7 @@ style 属性用于设置 HTML 元素的大小和颜色等内容。记得加上�
 
 ⇒ 通过在第 5 行插入一个 `<script>` 部分来添加到你的原始代码中。
 
-```
+```javascript
 Sublime Text
 
 1  <html>
@@ -379,58 +419,66 @@ Sublime Text
 ```
 
 - 开始 JavaScript 部分。
-- 创建一个计时器，每 1000 毫秒运行一次 moveGhost 函数。
-- 定义 moveGhost 函数。
-- 通过设置 left 和 top 样式属性，将幽灵移动到新的随机位置。
-- 结束 moveGhost 函数。
+
+- 创建一个计时器，每 1000 毫秒运行一次 `moveGhost` 函数。
+
+- 定义 `moveGhost` 函数。
+
+- 通过设置 `left` 和 `top` 样式属性，将幽灵移动到新的随机位置。
+
+- 结束 `moveGhost` 函数。
+
 - 结束 JavaScript。
 
 ## 核心概念
 
-## 坐标
+### 坐标
 
-通过设置元素（如图像）的 **left** 和 **top** 样式属性或坐标来移动它们。在值末尾添加 **px** 以像素为单位。坐标 (0,0) 始终位于浏览器的左上角。最大坐标将取决于浏览器窗口的大小。
+通过设置元素（如图像）的 `left` 和 `top` 样式属性或坐标来移动它们。在值末尾添加 `px` 以像素为单位。坐标 `(0,0)` 始终位于浏览器的左上角。最大坐标将取决于浏览器窗口的大小。
 
-## 标签
+### 标签
 
-在 HTML 中，所有元素都有一个开始标签。标签始终以 < 开始，以 > 结束。
+在 HTML 中，所有元素都有一个开始标签。标签始终以 `<` 开始，以 `>` 结束。
 
-## 属性
+### 属性
 
 属性提供有关 HTML 元素的额外信息，如其大小和颜色。
 
-
-
- ## 开始点击
+## 开始点击
 
 所有电脑游戏都需要玩家与计算机或设备进行交互。为此，我们需要使用鼠标和键盘事件。这些是一些特殊的代码片段，可以“监听”鼠标或键盘，等待某些事情发生，然后再运行其他代码。
 
 ### 事件
 
-我们可以使用 onclick 事件，让代码在点击图片时运行。
+我们可以使用 `onclick` 事件，让代码在点击图片时运行。
 
 程序正在监听的事件。
 
-```
+```html
 <img id="ghost" onclick="hideMe()" src="ghost.png">
 ```
 
 事件发生时将运行的函数名称。
 
-除了 onclick 事件，还有许多其他事件，包括：
+除了 `onclick` 事件，还有许多其他事件，包括：
 
-- onmousedown → 鼠标按钮按下的瞬间触发。
-- onmousemove → 每次鼠标在元素上移动时触发。
-- onmouseup → 鼠标按钮释放的瞬间触发。
-- onkeydown → 键盘上的按键被按下时触发。
+- `onmousedown` → 鼠标按钮按下的瞬间触发。
+
+- `onmousemove` → 每次鼠标在元素上移动时触发。
+
+- `onmouseup` → 鼠标按钮释放的瞬间触发。
+
+- `onkeydown` → 键盘上的按键被按下时触发。
 
 ![](img/6c566f2daf5f64a5f69519309716a385_15_0.png)
+
+
 
 ### 步骤 1 – 创建新文件
 
 → 仔细地将此代码添加到您的文本编辑器中。
 
-```
+```html
 1 <html>
 2   <img id="ghost" onclick="hideMe()" src="ghost.png">
 3   <script>
@@ -441,40 +489,44 @@ Sublime Text
 8 </html>
 ```
 
-使用第10页的幽灵图片。当点击它时，运行名为 hideMe 的函数。使用第10页的图片文件名。定义名为 hideMe 的函数。函数运行时隐藏幽灵。结束函数。
+使用第10页的幽灵图片。当点击它时，运行名为`hideMe`的函数。使用第10页的图片文件名。定义名为`hideMe`的函数。函数运行时隐藏幽灵。结束函数。
 
 <12>
 
 ### 步骤 2 – 保存并查看您的文件
 
-- 点击 文件 > 保存，并输入 **events.html** 作为文件名。
-- 确保将其保存在 **文档** 文件夹中。
-- 打开 **文档** 文件夹。双击 **events.html** 文件。您将看到您的图片。
+- 点击文件 > 保存，并输入`events.html`作为文件名。
+- 确保将其保存在文档文件夹中。
+- 打开文档文件夹。双击`events.html`文件。您将看到您的图片。
 - 点击图片使其消失。
 
 ![](img/6c566f2daf5f64a5f69519309716a385_16_0.png)
 
-```
-隐藏 HTML 元素
-将元素的 style.display 属性设置为 **none** 使其消失。设置为 **block** 使其再次显示。
+#### 隐藏 HTML 元素
+
+将元素的`style.display`属性设置为`none`使其消失。设置为`block`使其再次显示。
 
 使用其 ID（名称）选择要隐藏的元素（幽灵）。
+
+```javascript
 document.getElementById("ghost").style.display="none";
+```
 
 您要给属性的值。
+
 您要更改的属性。
-```
 
 ### 步骤 3 – 逃跑！
 
-我们将在下一个示例中使用 **onmouseenter** 事件。这是在鼠标移动到元素上方时触发的。它不需要等待鼠标按下。当您将鼠标移到幽灵上方时，它会**跳转**到一个新的随机位置。
+我们将在下一个示例中使用`onmouseenter`事件。这是在鼠标移动到元素上方时触发的。它不需要等待鼠标按下。当您将鼠标移到幽灵上方时，它会**跳转**到一个新的随机位置。
 
 - 编辑您第12页的代码。
 
-记得设置 **position:absolute**。
+记得设置`position:absolute`。
 
-```
-Sublime Text
+#### Sublime Text
+
+```html
 1 <html>
 2  <img id="ghost" style="position:absolute;" onmouseenter="runAway()" src="ghost.png">
 3  <script>
@@ -486,10 +538,12 @@ Sublime Text
 9 </html>
 ```
 
-一旦有人试图将鼠标移到幽灵上方，就会运行名为 runAway 的函数。
+一旦有人试图将鼠标移到幽灵上方，就会运行名为`runAway`的函数。
 
-定义名为 runAway 的函数。
-通过设置其 left 和 top 样式属性，将幽灵移动到新的随机位置。
+定义名为`runAway`的函数。
+
+通过设置其`left`和`top`样式属性，将幽灵移动到新的随机位置。
+
 结束函数。
 
 ### 步骤 4 – 保存并重新加载
@@ -503,7 +557,7 @@ Sublime Text
 
 ## 章鱼捕捉者
 
-在这个游戏中，玩家必须在30秒内尽可能多地抓住章鱼奥托。计时器将每秒钟让奥托移动一次。使用 **onmousedown** 事件来检查何时点击了奥托。变量将用于存储分数和剩余时间。游戏的完整代码列在第17页。
+在这个游戏中，玩家必须在30秒内尽可能多地抓住章鱼奥托。计时器将每秒钟让奥托移动一次。使用`onmousedown`事件来检查何时点击了奥托。变量将用于存储分数和剩余时间。游戏的完整代码列在第17页。
 
 ### 步骤 1 – 规划
 
@@ -511,9 +565,9 @@ Sublime Text
 
 计时器将每秒钟让奥托移动一次。
 
-使用 **onmousedown** 事件来检查何时抓住了奥托。（**onmousedown** 将比 **onclick** 事件更早触发。）
+使用`onmousedown`事件来检查何时抓住了奥托。（`onmousedown`将比`onclick`事件更早触发。）
 
-Documents/otto.html
+`Documents/otto.html`
 
 Score: 7
 
@@ -521,9 +575,9 @@ Score: 7
 
 确定
 
-**var score**
+`var score`
 
-**var seconds**
+`var seconds`
 
 变量用于计算分数和游戏运行的时间。
 
@@ -536,22 +590,22 @@ Score: 7
 - 找到一张章鱼图片使用。它需要保存到与您的 HTML 文件相同的文件夹中。
 - 搜索一些剪贴画。
 - 右键点击图片。
-- 点击 **保存图片为...**
-- 导航到您的 **文档** 文件夹，然后点击 **保存**。
+- 点击保存图片为...
+- 导航到您的文档文件夹，然后点击保存。
 
 ## HTML 段落标签
 
-将元素的 style.display 属性设置为 **none** 使其消失。设置为 **block** 使其再次显示。
+将元素的`style.display`属性设置为`none`使其消失。设置为`block`使其再次显示。
 
 我们在页面上添加一个段落。
 
 ID 是我们给段落起的名称。
 
-```
+```html
 <p id="scoreText">Score: 0</p>
 ```
 
-我们希望在段落元素中显示的文本在这里输入：在开始的 `<p>` 标签和结束的 `</p>` 标签之间。
+我们希望在段落元素中显示的文本在这里输入：在开始的`<p>`标签和结束的`</p>`标签之间。
 
 这被称为闭合标签——段落的结束。
 
@@ -563,7 +617,7 @@ ID 是我们给段落起的名称。
 
 #### Sublime Text
 
-```
+```html
 <html>
 <body style="background-color:cyan">
   <img id="otto" style="position:absolute; -webkit-transition: all 0.5s;" src="octopus.png" width="100" onmousedown="caughtIt()">
@@ -583,11 +637,11 @@ ID 是我们给段落起的名称。
 
 第10页的幽灵移动得相当生硬。我们希望这个游戏更流畅一些。为了实现这一点，我们将添加一个 transition 属性。这意味着当奥托的任何属性被更改时，它们将在特定时间内逐渐变化，而不是立即变化。以下是第3行中使用的新样式属性：
 
--webkit-transition 是一个用于开启逐渐变化的属性。
+`-webkit-transition`是一个用于开启逐渐变化的属性。
 
 所有样式属性都会逐渐变化。
 
-```
+```css
 -webkit-transition: all 0.5s;
 ```
 
@@ -595,7 +649,7 @@ ID 是我们给段落起的名称。
 
 ### 步骤 4 – 保存您的代码
 
-点击 文件 > 保存，并输入 **otto.html** 作为文件名。
+点击文件 > 保存，并输入`otto.html`作为文件名。
 
 确保将其保存在您的文档文件夹中。每次添加新代码时都记得保存。
 
@@ -603,7 +657,7 @@ ID 是我们给段落起的名称。
 
 我们需要创建变量并启动计时器。添加此代码：
 
-```
+```javascript
 <script>
 var score=0;
 var seconds=0;
@@ -612,18 +666,19 @@ var timer=window.setInterval(moveIt, 1000);
 
 开始脚本部分。
 
-将 score 变量设置为 0。
+将`score`变量设置为 0。
 
-将 seconds 变量设置为 0。
+将`seconds`变量设置为 0。
 
-添加计时器，它将每秒钟运行一次名为 *moveIt* 的函数。虽然我们将其“声明”为变量，但它更像一个时钟。给它命名意味着我们以后可以停止它。
+添加计时器，它将每秒钟运行一次名为`moveIt`的函数。虽然我们将其“声明”为变量，但它更像一个时钟。给它命名意味着我们以后可以停止它。
 
 ### 步骤 6 – 移动它！
 
 接下来我们需要输入移动奥托的函数。
-这类似于第11页的 moveGhost 函数。
 
-```
+这类似于第11页的`moveGhost`函数。
+
+```javascript
 function moveIt(){
     seconds++;
     document.getElementById("otto").style.left=Math.random()*900+"px";
@@ -648,9 +703,9 @@ function moveIt(){
 
 ### 步骤 7 – 抓住了！
 
-现在添加在点击奥托时运行（或“调用”）的函数 caughtIt。
+现在添加在点击奥托时运行（或“调用”）的函数`caughtIt`。
 
-```
+```javascript
 function caughtIt(){
     score++;
     document.getElementById("scoreText").innerText="Score: "+score;
@@ -661,7 +716,7 @@ function caughtIt(){
 
 - 定义函数。
 - 分数增加 1。
-- 更改分数文本。这是通过设置 innerText 属性实现的。
+- 更改分数文本。这是通过设置`innerText`属性实现的。
 - 结束脚本。
 - 结束 HTML 文件。
 
@@ -670,16 +725,14 @@ function caughtIt(){
 ## 自定义
 
 - 更改游戏持续时间。
-- 通过更改 -webkit-transition 值让奥托移动得更快。
+- 通过更改`-webkit-transition`值让奥托移动得更快。
 - 使用不同的图片文件，并更改背景颜色，完全改变游戏的外观。
 
 ![](img/6c566f2daf5f64a5f69519309716a385_19_0.png)
 
+## 完整代码
 
-
- # 完整代码
-
-```
+```html
 <html>
 <body style="background-color:cyan">
   <img id="otto" style="position:absolute; -webkit-transition:
@@ -719,14 +772,14 @@ function caughtIt(){
 1. 首先，你需要找到一个气球图像来使用。它需要放在与HTML文件相同的文件夹中。
 2. 上网搜索合适的图像。
 3. 右键单击一张图像。
-4. 点击**另存为图片...**
-5. 导航到你的**文档**文件夹，然后点击**保存**。
+4. 点击另存为图片...
+5. 导航到你的文档文件夹，然后点击保存。
 
 ## 段落样式
 
-段落可以像HTML body和image元素一样进行样式设置或格式化。**color**设置文本颜色。注意美式拼写。用分号分隔。这设置文本的字体名称。如果设置的字体名称中包含空格，请将字体名称用引号括起来。
+段落可以像HTML body和image元素一样进行样式设置或格式化。`color`设置文本颜色。注意美式拼写。用分号分隔。这设置文本的字体名称。如果设置的字体名称中包含空格，请将字体名称用引号括起来。
 
-```
+```html
 <p style="color:yellow; font-size:20px; font-family:Arial;">Score: 0</p>
 ```
 
@@ -755,7 +808,7 @@ function caughtIt(){
 
 首先输入游戏的HTML，设置出body、image和用于显示分数的段落。
 
-```
+```html
 1  <html>
 2  <body style="background-color:#32CD32">
 3       <img id="balloon" onmousedown="popped()" src="purple-balloon.png" style="position:absolute; width:100px; top:500px; left:500px;">
@@ -771,20 +824,20 @@ function caughtIt(){
 
 ### 步骤 4 — 保存并预览
 
-点击**文件**和**保存**。输入**pop.html**作为文件名。
+点击文件和保存。输入`pop.html`作为文件名。
 
-打开你的**文档**文件夹。找到**pop.html**文件并双击它。文件现在应该在你的浏览器中加载。
+打开你的文档文件夹。找到`pop.html`文件并双击它。文件现在应该在你的浏览器中加载。
 
 ### 步骤 5 — 开始脚本
 
 现在我们已经定义了页面上的元素，需要开始编写JavaScript了。在这个游戏开始时，我们需要：
 
-- 创建我们需要的变量
-- 定义一些函数来获取和设置坐标
-- 定义一个简单的函数来生成随机数
+- 创建我们需要的变量。
+- 定义一些函数来获取和设置坐标。
+- 定义一个简单的函数来生成随机数。
 - 启动一个计时器。
 
-```
+```javascript
 6  <script>
 7  var score=0, speed=1;
 8  function setLeft(id,x){document.getElementById(id).style.left=x+"px";}
@@ -795,7 +848,7 @@ function caughtIt(){
 13 var gameTimer=window.setInterval(floatUp, 25);
 ```
 
-JavaScript通过右花括号}知道函数定义已经结束。程序员有时会将这些简短、简单的函数定义在一行中，就像我们在这里所做的那样。
+JavaScript通过右花括号`}`知道函数定义已经结束。程序员有时会将这些简短、简单的函数定义在一行中，就像我们在这里所做的那样。
 
 开始脚本部分。
 
@@ -807,11 +860,11 @@ JavaScript通过右花括号}知道函数定义已经结束。程序员有时会
 
 定义一个返回两个值之间随机数的函数。
 
-计时器将每25毫秒（每秒40次）运行一次名为floatUp的函数。
+计时器将每25毫秒（每秒40次）运行一次名为`floatUp`的函数。
 
-#### 使用GET、SET和随机函数
+#### 使用 GET、SET 和随机函数
 
-你可以将这些函数添加到你自己的游戏中。这里有一些例子帮助你使用它们。（注意，对于**get**和**set**函数来说，要移动元素，该元素需要将其position样式属性设置为**absolute**。）
+你可以将这些函数添加到你自己的游戏中。这里有一些例子帮助你使用它们。（注意，对于`get`和`set`函数来说，要移动元素，该元素需要将其`position`样式属性设置为`absolute`。）
 
 | 代码 | 描述 |
 | :--- | :--- |
@@ -825,7 +878,7 @@ JavaScript通过右花括号}知道函数定义已经结束。程序员有时会
 
 接下来，我们需要输入使气球向上浮动的函数。
 
-```
+```javascript
 14 function floatUp(){
 15   var y=getTop("balloon");
 16   if(y<-100){
@@ -837,21 +890,23 @@ JavaScript通过右花括号}知道函数定义已经结束。程序员有时会
 
 14：定义函数。
 
-15：找出气球距离窗口顶部多远，并将其存储在一个名为y的变量中。
+15：找出气球距离窗口顶部多远，并将其存储在一个名为`y`的变量中。
 
-16：如果气球已经超出屏幕顶部，那么y将小于-100。如果它已经超出顶部，那么：
+16：如果气球已经超出屏幕顶部，那么`y`将小于-100。如果它已经超出顶部，那么：
 
-17：运行名为gameOver的函数。
+17：运行名为`gameOver`的函数。
 
 18：结束IF代码块。
 
-19：使用setTop函数向上移动气球。这是通过从y中减去speed值来实现的。
+
+
+19：使用`setTop`函数向上移动气球。这是通过从`y`中减去`speed`值来实现的。
 
 20：结束函数。
 
-当气球到达屏幕顶部时，游戏结束。这在第16行中通过检测气球的顶部是否小于-100来检查。
+当气球到达屏幕顶部时，游戏结束。这在第16行中通过检测气球的顶部是否小于`-100`来检查。
 
-一旦气球超出屏幕顶部，getTop函数将返回一个负数，-100。
+一旦气球超出屏幕顶部，`getTop`函数将返回一个负数，`-100`。
 
 这里气球正在触碰窗口顶部。这意味着它在顶部下方0像素。
 
@@ -863,7 +918,7 @@ JavaScript通过右花括号}知道函数定义已经结束。程序员有时会
 
 当气球被弹出（点击）时，我们需要让很多事情发生。添加这个函数：
 
-```
+```javascript
 function popped(){
   score++;
   speed++;
@@ -884,7 +939,7 @@ function popped(){
 
 当气球到达屏幕顶部时，游戏结束。当这种情况发生时，我们需要运行以下代码：
 
-```
+```javascript
 function gameOver(){
   clearInterval(gameTimer);
   alert("Game Over! You scored: "+ score);
@@ -901,18 +956,16 @@ function gameOver(){
 
 最后，添加这两行以表示脚本部分和HTML的结束。
 
-```
+```html
 </script>
 </html>
 ```
 
 保存你的文件，重新加载浏览器，然后开始玩吧！
 
+## 完整代码
 
-
- ## 完整代码
-
-```
+```html
 <html>
 <body style="background-color:#32CD32">
   <img id="balloon" onmousedown="popped()" style="position:absolute;
@@ -952,7 +1005,7 @@ width:100px; top:500px; left:500px;" src="purple-balloon.png">
 
 ## 自定义
 
-- 让气球变小，增加游戏难度。修改第3行中的 width 属性。
+- 让气球变小，增加游戏难度。修改第3行中的`width`属性。
 - 气球被点击时，将其速度设置为随机值。
 - 使用不同的图片和背景创建一个新的游戏。你可以尝试让物体向下或向右移动？
 
@@ -960,19 +1013,19 @@ width:100px; top:500px; left:500px;" src="purple-balloon.png">
 
 在这个游戏中，玩家控制一只狗，左右移动来接住从屏幕上方掉下来的骨头。按下左右方向键可以让狗左右移动。这个游戏使用了与前一个程序中相同的函数来设置坐标和生成随机数。骨头和狗都以50像素的间隔移动。游戏的完整代码列在第29页。
 
-### 步骤1 – 规划
+### 步骤 1 – 规划
 
 分数显示在一个 HTML 段落元素中。
 
 一个计时器每200毫秒移动一次骨头。
 
-**var score** &nbsp; **var lives**
+`var score`　`var lives`
 
-**var dogX** &nbsp; **var dogY**
+`var dogX`　`var dogY`
 
-**var boneX** &nbsp; **var boneY**
+`var boneX`　`var boneY`
 
-变量用于记录分数、剩余生命数，以及狗和骨头的 x、y 坐标。
+变量用于记录分数、剩余生命数，以及狗和骨头的`x`、`y`坐标。
 
 当没有生命时，游戏结束。
 
@@ -982,11 +1035,11 @@ width:100px; top:500px; left:500px;" src="purple-balloon.png">
 
 **确定**
 
-按下左右方向键会改变狗的 x 坐标，从而改变狗的位置。
+按下左右方向键会改变狗的`x`坐标，从而改变狗的位置。
 
 点击**确定**重新开始游戏。
 
-### 步骤2 – 寻找图片
+### 步骤 2 – 寻找图片
 
 找一张狗和一张骨头的图片来使用。将它们保存在你的 HTML 文件所在的同一文件夹中。
 
@@ -995,11 +1048,11 @@ width:100px; top:500px; left:500px;" src="purple-balloon.png">
 - 点击**图片另存为...**
 - 导航到你的**文档**文件夹，然后点击**保存**。
 
-### 步骤3 – 新建文件
+### 步骤 3 – 新建文件
 
-首先输入游戏的 HTML，设置好 body、图片和显示分数的段落。
+首先输入游戏的 HTML，设置好`body`、图片和显示分数的段落。
 
-```
+```html
 <html>
 
 <body style="background: -webkit-linear-gradient(blue, green);">
@@ -1021,16 +1074,16 @@ color:yellow; font-size:28px; font-family:Arial;">Lives: 3</p>
 
 设置背景色。
 
-添加狗和骨头的图片。每种情况下，src 属性必须与你下载的文件匹配。
+添加狗和骨头的图片。每种情况下，`src`属性必须与你下载的文件匹配。
 
 添加显示分数的段落。
 
 显示剩余生命数。注意这是从右边缘开始设置50像素。
 
-### 步骤4 – 保存并预览
+### 步骤 4 – 保存并预览
 
-- 点击文件然后保存。输入 catch.html 作为文件名。
-- 打开你的文档文件夹。找到 catch.html 文件并双击它。文件现在应该会在浏览器中加载。图片还不会移动（因为没有代码告诉它们移动），但页面应该看起来像这样：
+- 点击文件然后保存。输入`catch.html`作为文件名。
+- 打开你的文档文件夹。找到`catch.html`文件并双击它。文件现在应该会在浏览器中加载。图片还不会移动（因为没有代码告诉它们移动），但页面应该看起来像这样：
 
 ## 关键概念
 
@@ -1038,50 +1091,50 @@ color:yellow; font-size:28px; font-family:Arial;">Lives: 3</p>
 
 在我们目前创建的游戏中，我们将背景设置为纯色。然而，我们可以使用一种叫做颜色渐变的东西来创建一些很棒的效果。这意味着使用两种颜色并将它们逐渐混合在一起。试试从第2行开始的以下代码：
 
-修改这些
+修改这些：
 
-```
+```html
 <body style="background: -webkit-linear-gradient(blue, green);">
 ```
 
-```
+```html
 <body style="background: -webkit-linear-gradient(red, yellow);">
 ```
 
-### 步骤5 – 开始脚本
+### 步骤 5 – 开始脚本
 
 既然我们已经定义了页面上的元素，我们需要开始编写 JavaScript。在这个游戏开始时，我们需要：
 
-- 创建我们需要的变量
-- 定义一些函数来获取和设置坐标
-- 定义一个简单的函数来生成随机数
-- 启动一个计时器
+- 创建我们需要的变量。
+- 定义一些函数来获取和设置坐标。
+- 定义一个简单的函数来生成随机数。
+- 启动一个计时器。
 
-```
+```html
 <script>
 ```
 
-```
+```javascript
 var score=0, lives=3, dogX=6, dogY=10, boneX=8, boneY=0;
 ```
 
-```
+```javascript
 function setLeft(id,x){document.getElementById(id).style.left=x+"px";}
 ```
 
-```
+```javascript
 function setTop(id,y){document.getElementById(id).style.top=y+"px";}
 ```
 
-```
+```javascript
 function randomNumber(low,high){return(Math.floor(low+Math.random()*(1+high-low)));}
 ```
 
-```
+```javascript
 var gameTimer=window.setInterval(moveBone, 200);
 ```
 
-```
+```javascript
 document.onkeydown=handleKeys;
 ```
 
@@ -1093,41 +1146,41 @@ document.onkeydown=handleKeys;
 
 定义一个返回两个值之间随机数的函数。
 
-设置计时器每200毫秒运行一次名为 moveBone 的函数（每秒5次）。
+设置计时器每200毫秒运行一次名为`moveBone`的函数（每秒5次）。
 
-每当键盘上的按键被按下时，运行名为 handleKeys 的函数。
+每当键盘上的按键被按下时，运行名为`handleKeys`的函数。
 
 ## 监听键盘
 
-在这个游戏中，当按下键盘上的方向键时，狗会移动。为此，我们需要设置一个叫事件监听器的东西，它会"监听"键盘，如果按键被按下就运行一些代码。这类似于第12页解释的 onclick 鼠标事件监听器。看第14行：
+在这个游戏中，当按下键盘上的方向键时，狗会移动。为此，我们需要设置一个叫事件监听器的东西，它会“监听”键盘，如果按键被按下就运行一些代码。这类似于第12页解释的`onclick`鼠标事件监听器。看第14行：
 
-```
+```javascript
 document.onkeydown=handleKeys;
 ```
 
-程序正在等待（监听）的事件。其他键盘事件包括 onkeyup 和 onkeypress。
+程序正在等待（监听）的事件。其他键盘事件包括`onkeyup`和`onkeypress`。
 
 事件发生时运行的函数名称。
 
-> 记住，星号 * 用来表示'乘以'。数学符号是 ×。
+> 记住，星号 `*` 用来表示“乘以”。数学符号是 ×。
 
 ## 定位狗和骨头
 
-狗的坐标存储在 **dogX** 和 **dogY** 中，骨头的坐标存储在 **boneX** 和 **boneY** 中。
+狗的坐标存储在`dogX`和`dogY`中，骨头的坐标存储在`boneX`和`boneY`中。
 
-为了确保狗有机会接住骨头，我们让它们都在一个不可见的网格上移动。网格中的每个方格宽50像素、高50像素。因此要设置狗的 left 位置，我们将 **dogX** 乘以50，要设置 top 值，我们将 **dogY** 乘以50。
+为了确保狗有机会接住骨头，我们让它们都在一个不可见的网格上移动。网格中的每个方格宽50像素、高50像素。因此要设置狗的`left`位置，我们将`dogX`乘以50，要设置`top`值，我们将`dogY`乘以50。
 
-如果 **dogX** 是2，**dogY** 是3，那么会发生：
+如果`dogX`是2，`dogY`是3，那么会发生：
 
-狗距离左边 2 * 50 = 100 像素。
+狗距离左边 `2 * 50 = 100` 像素。
 
-狗距离顶部 3 * 50 = 150 像素。
+狗距离顶部 `3 * 50 = 150` 像素。
 
-### 步骤6 – 按下任意键
+### 步骤 6 – 按下任意键
 
-当玩家按下按键时，我们需要让狗左右移动。移动的方向取决于按下了哪个键。我们需要在函数中添加一种特殊的变量，叫做参数，它会存储有关被按下按键的信息。在函数名后输入 (e) 来添加参数。onics键盘上的每个按键都有一个与之关联的特定代码。左方向键的代码是37，右方向键的代码是39。被按下按键的代码将存储在 **e.keyCode** 中。
+当玩家按下按键时，我们需要让狗左右移动。移动的方向取决于按下了哪个键。我们需要在函数中添加一种特殊的变量，叫做参数，它会存储有关被按下按键的信息。在函数名后输入`(e)`来添加参数。键盘上的每个按键都有一个与之关联的特定代码。左方向键的代码是37，右方向键的代码是39。被按下按键的代码将存储在`e.keyCode`中。
 
-```
+```javascript
 15	function handleKeys(e){
 16		if(e.keyCode==37){dogX--;}
 17		if(e.keyCode==39){dogX++;}
@@ -1136,19 +1189,19 @@ document.onkeydown=handleKeys;
 20	}
 ```
 
-定义名为 handleKeys 的函数。有关按键事件的信息将被放入名为 e 的变量中。
+定义名为`handleKeys`的函数。有关按键事件的信息将被放入名为`e`的变量中。
 
-如果左方向键的代码已被发送，让 dogX 减少1（dogX-- 表示从 dogX 的值中减去1）。
+如果左方向键的代码已被发送，让`dogX`减少1（`dogX--`表示从`dogX`的值中减去1）。
 
-如果右方向键的代码已传递给函数，让 dogX 增加1（dogX++ 表示给 dogX 加1）。
+如果右方向键的代码已传递给函数，让`dogX`增加1（`dogX++`表示给`dogX`加1）。
 
 设置狗的新位置。
 
-### 步骤7 – 移动骨头
+### 步骤 7 – 移动骨头
 
-计时器每200毫秒移动一次骨头。虽然这意味着它每秒只移动5次，但看起来会很流畅，因为我们使用了 **webkit-transition** 属性。计时器运行这个函数。
+计时器每200毫秒移动一次骨头。虽然这意味着它每秒只移动5次，但看起来会很流畅，因为我们使用了`webkit-transition`属性。计时器运行这个函数。
 
-```
+```javascript
 21	function moveBone(){
 22		boneY=boneY+=1;
 23		setLeft("bone", boneX*50);
@@ -1160,21 +1213,19 @@ document.onkeydown=handleKeys;
 
 定义函数。
 
-让 boneY 变量增加1（如果你想节省时间，可以把这个代码写成 boneY++！）。
+让`boneY`变量增加1（如果你想节省时间，可以把这个代码写成`boneY++`！）。
 
-设置骨头的新位置。（boneX 只有在被接住或错过时才会改变）。
+设置骨头的新位置。（`boneX`只有在被接住或错过时才会改变）。
 
-如果骨头被错过了，并且已经掉到狗下方，运行 missedBone 函数。
+如果骨头被错过了，并且已经掉到狗下方，运行`missedBone`函数。
 
-如果骨头被狗接住了，并且它们具有相同的 x 和 y 坐标，运行 caughtBone 函数。
+如果骨头被狗接住了，并且它们具有相同的`x`和`y`坐标，运行`caughtBone`函数。
 
+### 第 8 步 – 没接住
 
+如果狗狗没有接住骨头，玩家就会失去一条命。我们在第25行对此进行测试，通过比较两张图片的`y`坐标。如果骨头比狗狗低超过5个网格方格，那么就是没接住。当这种情况发生时，需要运行以下代码：
 
- ## 第 8 步 – 没接住
-
-如果狗狗没有接住骨头，玩家就会失去一条命。我们在第 25 行对此进行测试，通过比较两张图片的 y 坐标。如果骨头比狗狗低超过 5 个网格方格，那么就是没接住。当这种情况发生时，需要运行以下代码：
-
-```
+```javascript
 28 function missedBone(){
 29     boneY=0;
 30     boneX=randomNumber(2,16);
@@ -1189,13 +1240,13 @@ document.onkeydown=handleKeys;
 - 将它随机定位在距离屏幕左侧一定位置的地方。
 - 失去一条命。
 - 显示剩余多少条命。
-- 如果没有命剩余了，运行 gameOver 函数。
+- 如果没有命剩余了，运行`gameOver`函数。
 
 ### 第 9 步 – 接住了
 
-第 26 行的代码检查骨头和狗狗的坐标是否相等。如果匹配，则运行以下函数：
+第26行的代码检查骨头和狗狗的坐标是否相等。如果匹配，则运行以下函数：
 
-```
+```javascript
 35 function caughtBone(){
 36     boneY=0;
 37     boneX=randomNumber(2,16);
@@ -1207,14 +1258,14 @@ document.onkeydown=handleKeys;
 - 定义函数。
 - 将骨头移到顶部。
 - 将骨头随机定位在距离屏幕左侧一定位置的地方。
-- 分数增加 1。
+- 分数增加1。
 - 显示分数。
 
 ### 第 10 步 – 结束
 
 如果狗狗没有接住骨头，且没有命剩余了，游戏就结束了。输入这个函数：
 
-```
+```javascript
 41 function gameOver(){
 42     alert("Game Over! You scored: "+ score);
 43     location.reload();
@@ -1227,9 +1278,9 @@ document.onkeydown=handleKeys;
 
 ### 第 11 步 – 闭合标签
 
-最后，输入一个闭合的 script 标签和一个闭合的 HTML 标签来结束文件。
+最后，输入一个闭合的`script`标签和一个闭合的 HTML 标签来结束文件。
 
-```
+```html
 45 </script>
 46 </html>
 ```
@@ -1238,57 +1289,55 @@ document.onkeydown=handleKeys;
 
 ## 完整代码
 
-```
-1 <html>
-2 <body style="background: -webkit-linear-gradient(blue, green);">
-3   <img id="dog" style="position:absolute; width:50px; top:500px; left:300px;
--webkit-transition: all 0.2s;"src="dog.png">
-4   <img id="bone" style="position:absolute; width:50px; top:0px; left:0px;
--webkit-transition: all 0.2s;" src="bone.png">
-5   <p id="scoreTB" style="position:absolute; left:50px; color:yellow;
-font-size:28px; font-family:Arial;">Score: 0</p>
-6   <p id="livesTB" style="position:absolute; right:50px; color:yellow;
-font-size:28px; font-family:Arial;">Lives: 3</p>
-7 </body>
-8 <script>
-9   var score=0, lives=3, dogX=6, dogY=10, boneX=8, boneY=0;
-10  function setLeft(id,x){document.getElementById(id).style.left=x+"px";}
-11  function setTop(id,y){document.getElementById(id).style.top=y+"px";}
-12  function randomNumber(low,high){return (Math.floor(low+ Math.random()*(1+high-low)));}
-13  var gameTimer=window.setInterval(moveBone, 200);
-14  document.onkeydown=handleKeys;
-15  function handleKeys(e){
-16    if(e.keyCode==37){dogX--;}
-17    if(e.keyCode==39){dogX++;}
-18    setLeft("dog", dogX*50);
-19    setTop("dog", dogY*50);
-20  }
-21  function moveBone(){
-22    boneY=boneY+=1;
-23    setLeft("bone", boneX*50);
-24    setTop("bone", boneY*50);
-25    if(boneY>dogY+5){missedBone();}
-26    if((dogX==boneX) && (dogY==boneY)){caughtBone();}
-27  }
-28  function missedBone(){
-29    boneY=0;
-30    boneX=randomNumber(2,16);
-31    lives--;
-32    document.getElementById("livesTB").innerText="Lives: "+lives;
-33    if(lives==0){gameOver();}
-34  }
-35  function caughtBone(){
-36    boneY=0;
-37    boneX=randomNumber(2,16);
-38    score++;
-39    document.getElementById("scoreTB").innerText="Score: "+score;
-40  }
-41  function gameOver(){
-42    alert("Game Over! You scored: "+ score);
-43    location.reload();
-44  }
-45 </script>
-46 </html>
+
+
+```html
+<html>
+<body style="background: -webkit-linear-gradient(blue, green);">
+  <img id="dog" style="position:absolute; width:50px; top:500px; left:300px; -webkit-transition: all 0.2s;" src="dog.png">
+  <img id="bone" style="position:absolute; width:50px; top:0px; left:0px; -webkit-transition: all 0.2s;" src="bone.png">
+  <p id="scoreTB" style="position:absolute; left:50px; color:yellow; font-size:28px; font-family:Arial;">Score: 0</p>
+  <p id="livesTB" style="position:absolute; right:50px; color:yellow; font-size:28px; font-family:Arial;">Lives: 3</p>
+</body>
+<script>
+  var score=0, lives=3, dogX=6, dogY=10, boneX=8, boneY=0;
+  function setLeft(id,x){document.getElementById(id).style.left=x+"px";}
+  function setTop(id,y){document.getElementById(id).style.top=y+"px";}
+  function randomNumber(low,high){return (Math.floor(low+ Math.random()*(1+high-low)));}
+  var gameTimer=window.setInterval(moveBone, 200);
+  document.onkeydown=handleKeys;
+  function handleKeys(e){
+    if(e.keyCode==37){dogX--;}
+    if(e.keyCode==39){dogX++;}
+    setLeft("dog", dogX*50);
+    setTop("dog", dogY*50);
+  }
+  function moveBone(){
+    boneY=boneY+=1;
+    setLeft("bone", boneX*50);
+    setTop("bone", boneY*50);
+    if(boneY>dogY+5){missedBone();}
+    if((dogX==boneX) && (dogY==boneY)){caughtBone();}
+  }
+  function missedBone(){
+    boneY=0;
+    boneX=randomNumber(2,16);
+    lives--;
+    document.getElementById("livesTB").innerText="Lives: "+lives;
+    if(lives==0){gameOver();}
+  }
+  function caughtBone(){
+    boneY=0;
+    boneX=randomNumber(2,16);
+    score++;
+    document.getElementById("scoreTB").innerText="Score: "+score;
+  }
+  function gameOver(){
+    alert("Game Over! You scored: "+ score);
+    location.reload();
+  }
+</script>
+</html>
 ```
 
 ## 词汇表
@@ -1323,13 +1372,13 @@ font-size:28px; font-family:Arial;">Lives: 3</p>
 
 **RGB** 混合红、绿、蓝光以产生任何颜色的系统。
 
-**选择/分支（SELECTION）** 使用 IF 等命令来运行程序的不同部分。
+**选择/分支（SELECTION）** 使用`IF`等命令来运行程序的不同部分。
 
-**字符串（STRING）** 由有序字符列表组成的一种数据类型，例如 'Hello world!'。
+**字符串（STRING）** 由有序字符列表组成的一种数据类型，例如`'Hello world!'`。
 
 **语法（SYNTAX）** 正确且按正确顺序使用命令、括号和其他符号。
 
-**标签（TAGS）** HTML 文档中被尖括号 <> 包围的特殊词语，用于定义元素。
+**标签（TAGS）** HTML 文档中被尖括号`<>`包围的特殊词语，用于定义元素。
 
 **文本编辑器（TEXT EDITOR）** 用于创建和修改代码的程序。
 
@@ -1337,7 +1386,7 @@ font-size:28px; font-family:Arial;">Lives: 3</p>
 
 **变量（VARIABLE）** 在程序中用于存储信息的值，可以更改。
 
-> **漏洞与调试**
+## 漏洞与调试
 
 当你发现代码没有按预期工作时，停下来逐行查看你输入的代码。思考你希望它做什么，以及它实际上告诉计算机做什么。如果你正在输入本书中的某个程序，请检查你没有遗漏任何一行。以下是一些调试技巧：
 
@@ -1346,7 +1395,7 @@ font-size:28px; font-family:Arial;">Lives: 3</p>
 - 🐛 检查你是否遗漏了任何引号。
 - 🐛 检查你是否正确闭合了标签。
 - 🐛 如果图像没有显示，请检查文件名是否准确输入。
-- 🐛 如果图像没有移动，请检查你是否设置了 **position:absolute**。
+- 🐛 如果图像没有移动，请检查你是否设置了`position:absolute`。
 - 🐛 确保你使用了正确样式的括号和其他符号。
 
 <30>
@@ -1356,10 +1405,10 @@ font-size:28px; font-family:Arial;">Lives: 3</p>
 ### JAVASCRIPT 命令
 
 - `alert("Hello");` – 在弹出框中显示 "Hello" 作为消息。
-- `var score=0;` – 定义一个名为 **score** 的变量。
-- `var gameTimer=window.setInterval(myFunction, 1000);` – 每秒运行一次名为 **myFunction** 的函数。
-- `clearInterval(gameTimer);` – 停止名为 **gameTimer** 的计时器。
-- `function gameOver()` – 定义名为 **gameOver()** 的函数。
+- `var score=0;` – 定义一个名为`score`的变量。
+- `var gameTimer=window.setInterval(myFunction, 1000);` – 每秒运行一次名为`myFunction`的函数。
+- `clearInterval(gameTimer);` – 停止名为`gameTimer`的计时器。
+- `function gameOver()` – 定义名为`gameOver()`的函数。
 - `document.getElementById("dog")` – 选择页面上的一个元素。
 - `Math.random()` – 创建一个 0 到 1 之间的随机数。
 - `Math.round()` – 将小数四舍五入到最近的整数。
@@ -1375,10 +1424,10 @@ font-size:28px; font-family:Arial;">Lives: 3</p>
 
 ### 事件
 
-- **onclick** – 鼠标按钮被点击。
-- **onmousedown** – 鼠标按钮被按下（发生在 click 和 mouseup 之前）。
-- **onmouseup** – 鼠标按钮被释放。
-- **onkeydown** – 键盘上的某个键被按下。
+- `onclick` – 鼠标按钮被点击。
+- `onmousedown` – 鼠标按钮被按下（发生在 click 和 mouseup 之前）。
+- `onmouseup` – 鼠标按钮被释放。
+- `onkeydown` – 键盘上的某个键被按下。
 
 # 我是 JavaScript 游戏制作达人：基础篇
 
@@ -1387,6 +1436,6 @@ font-size:28px; font-family:Arial;">Lives: 3</p>
 *《我是 JavaScript 游戏制作达人：基础篇》*包含趣味十足、易于跟做的项目，将一步一步引导你学习 JavaScript 编程语言。
 
 - 学习如何创建交互式网页，运用流畅而多彩的动画让你的在线游戏栩栩如生。
-- "关键概念"板块以简明易懂的方式解释难点知识，帮助你自定义并创建独一无二的网页。
+- “关键概念”板块以简明易懂的方式解释难点知识，帮助你自定义并创建独一无二的网页。
 
 还在等什么？是时候开始编程了！

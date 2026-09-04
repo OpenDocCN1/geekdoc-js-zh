@@ -1,22 +1,23 @@
+
 # 日期
 
 > 原文：[`jsprimer.net/basic/date/`](https://jsprimer.net/basic/date/)
 
-本章将学习如何在 JavaScript 中处理日期和时间的[Date](https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/Date)。
+本章将学习如何在 JavaScript 中处理日期和时间的[`Date`](https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/Date)。
 
-## *日期对象*
+## 日期对象
 
-*`Date`对象与`String`、`Array`等一样，是在 ECMAScript 中定义的内置对象。
+`Date`对象与`String`、`Array`等一样，是在 ECMAScript 中定义的内置对象。
 
 通过实例化`Date`对象，可以获得表示特定时间的对象。 在`Date`中，“时间”以相对毫秒形式保留，以 UTC（协调世界时）的 1970 年 1 月 1 日 0 时 0 分 0 秒为基准。 本章将这个毫秒值称为“时间值”。 `Date`对象的实例各自具有一个时间值，并提供用于处理日期、小时和分钟等的方法。
 
-### *创建实例*
+### 创建实例
 
-*`Date`对象的实例始终使用`new`运算符创建。 创建`Date`对象的实例有两种主要方法。 一种是实例化当前时间，另一种是实例化任意时间。
+`Date`对象的实例始终使用`new`运算符创建。 创建`Date`对象的实例有两种主要方法。 一种是实例化当前时间，另一种是实例化任意时间。
 
-#### *实例化当前时间*
+#### 实例化当前时间
 
-*如果在`new`时不传递构造函数参数，则创建的实例将表示当前时间。 如果只需要当前时间的时间值而不是`Date`对象的实例，则可以使用`Date.now`方法的返回值。 创建的实例的时间值可以通过`getTime`方法获取。 此外，使用`toISOString`方法可以将时间转换为 UTC 的[ISO 8601](https://ja.wikipedia.org/wiki/ISO_8601)格式的字符串。 ISO 8601 是一种国际标准的字符串格式，表示时间和时区信息，例如`2006-01-02T15:04:05.999+09:00`。 由于这种格式易于理解，因此被广泛使用。
+如果在`new`时不传递构造函数参数，则创建的实例将表示当前时间。 如果只需要当前时间的时间值而不是`Date`对象的实例，则可以使用`Date.now`方法的返回值。 创建的实例的时间值可以通过`getTime`方法获取。 此外，使用`toISOString`方法可以将时间转换为 UTC 的[ISO 8601](https://ja.wikipedia.org/wiki/ISO_8601)格式的字符串。 ISO 8601 是一种国际标准的字符串格式，表示时间和时区信息，例如`2006-01-02T15:04:05.999+09:00`。 由于这种格式易于理解，因此被广泛使用。
 
 ```
 // 現在の時刻を表すインスタンスを作成する
@@ -30,9 +31,9 @@ console.log(now.getTime());
 console.log(now.toISOString()); 
 ```
 
-#### *实例化任意时间*
+#### 实例化任意时间
 
-*通过传递构造函数参数，可以创建表示任意时间的实例。 `Date`的构造函数根据传递的数据类型和参数来确定时间的指定方法。 `Date`支持以下 3 种参数。
+通过传递构造函数参数，可以创建表示任意时间的实例。 `Date`的构造函数根据传递的数据类型和参数来确定时间的指定方法。 `Date`支持以下 3 种参数。
 
 +   传递时间值
 
@@ -77,7 +78,7 @@ new Date(year, month, day, hour, minutes, seconds, milliseconds);
 
 由于结果取决于执行环境，基本上不应该使用这种方法。
 
-如果要逐个指定时间，则最好使用[Date.UTC](https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/Date/UTC)方法。 参数的格式相同，但`Date.UTC`方法将传递的数字视为 UTC 时间，并返回该时间值。
+如果要逐个指定时间，则最好使用[`Date.UTC`](https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/Date/UTC)方法。 参数的格式相同，但`Date.UTC`方法将传递的数字视为 UTC 时间，并返回该时间值。
 
 ```
 // 実行環境における"2006 年 1 月 2 日 15 時 04 分 05 秒 999"を表す
@@ -103,9 +104,9 @@ console.log(invalid.toString()); // => "Invalid Date"
 console.log(Number.isNaN(invalid.getTime())); // => true 
 ```
 
-### *Date 实例方法*
+### Date 实例方法
 
-*`Date`对象的实例具有许多方法，但大多数是用于获取和更新时间各部分的方法，如`getHours`和`setHours`。
+`Date`对象的实例具有许多方法，但大多数是用于获取和更新时间各部分的方法，如`getHours`和`setHours`。
 
 以下代码将日期转换为特定格式的字符串。 要注意像`getMonth`和`setMonth`这样以数字表示月份的方法，需要注意月份是从 0 到 11 的数字。 要显示`Date`实例的时间是哪个月，需要将`getMonth`方法的返回值加 1。
 
@@ -134,9 +135,9 @@ const timezoneOffsetInHours = now.getTimezoneOffset() / 60;
 console.log(`Hours in UTC: ${now.getHours() + timezoneOffsetInHours}`); 
 ```
 
-## *实际用例与 Date*
+## 实际用例与 Date
 
-*到此为止，我们讲述了`Date`对象和实例方法。但在许多用例中，`Date`的功能是不够的。例如，在以下情况下，使用`Date`无法直观地描述：
+到此为止，我们讲述了`Date`对象和实例方法。但在许多用例中，`Date`的功能是不够的。例如，在以下情况下，使用`Date`无法直观地描述：
 
 +   没有从任意格式字符串转换时刻的方法
 
@@ -146,7 +147,7 @@ console.log(`Hours in UTC: ${now.getHours() + timezoneOffsetInHours}`);
 
 +   没有提供将字符串转换为`YYYY/MM/DD HH:mm`等格式的方法
 
-因此，在 JavaScript 中处理日期和时间的通常做法是使用库，而不是标准库中的`Date`。 典型的库包括[Day.js](https://day.js.org/)、[date-fns](https://date-fns.org/)、[js-joda](https://github.com/js-joda/js-joda)、[moment.js](https://momentjs.com/)的后续者[Luxon](https://github.com/moment/luxon/)等。
+因此，在 JavaScript 中处理日期和时间的通常做法是使用库，而不是标准库中的`Date`。 典型的库包括[`Day.js`](https://day.js.org/)、[`date-fns`](https://date-fns.org/)、[`js-joda`](https://github.com/js-joda/js-joda)、[`moment.js`](https://momentjs.com/)的后续者[`Luxon`](https://github.com/moment/luxon/)等。
 
 ```
 // Day.jsで現在時刻のDay.jsオブジェクトを作る
@@ -157,9 +158,9 @@ const future = now.add(10, "minute");
 console.log(future.format("YYYY/MM/DD HH:mm")); 
 ```
 
-## *总结*
+## 总结
 
-*在本章中，我们学习了`Date`对象。
+在本章中，我们学习了`Date`对象。
 
 +   `Date`对象实例表示一个特定的时间点，是内置对象
 

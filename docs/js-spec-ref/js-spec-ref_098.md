@@ -1,24 +1,5 @@
-# 13.1 Node.js 概述
 
-*   简介
-    *   安装与更新
-    *   版本管理工具 nvm
-    *   基本用法
-    *   REPL 环境
-    *   异步操作
-    *   全局对象和全局变量
-    *   模块化结构
-        *   概述
-        *   核心模块
-        *   自定义模块
-    *   异常处理
-        *   try...catch 结构
-        *   回调函数
-        *   EventEmitter 接口的 error 事件
-        *   uncaughtException 事件
-        *   unhandledRejection 事件
-    *   命令行脚本
-    *   参考链接
+# 13.1 Node.js 概述
 
 ## 简介
 
@@ -26,9 +7,9 @@ Node 是 JavaScript 语言的服务器运行环境。所谓“运行环境”有
 
 Node 内部采用 Google 公司的 V8 引擎，作为 JavaScript 语言解释器；通过自行开发的 libuv 库，调用操作系统资源。
 
-### 安装与更新
+## 安装与更新
 
-访问官方网站[nodejs.org](http://nodejs.org/)了解安装细节。
+访问官方网站[nodejs.org](http://nodejs.org/)了解安装细节细节。
 
 安装完成以后，运行下面的命令，查看是否能正常运行。
 
@@ -53,7 +34,7 @@ n 模块也可以指定安装特定版本的 node。
 $ sudo n 0.10.21
 ```
 
-### 版本管理工具 nvm
+## 版本管理工具 nvm
 
 如果想在同一台机器，同时安装多个版本的 node.js，就需要用到版本管理工具 nvm。
 
@@ -99,7 +80,7 @@ $ nvm ls-remote
 $ nvm deactivate
 ```
 
-### 基本用法
+## 基本用法
 
 安装完成后，运行 node.js 程序，就是使用 node 命令读取 JavaScript 脚本。
 
@@ -113,9 +94,9 @@ node demo
 node demo.js
 ```
 
-### REPL 环境
+## REPL 环境
 
-在命令行键入 node 命令，后面没有文件名，就进入一个 Node.js 的 REPL 环境（Read–eval–print loop，"读取-求值-输出"循环），可以直接运行各种 JavaScript 命令。
+在命令行键入 node 命令，后面没有文件名，就进入一个 Node.js 的 REPL 环境（Read–eval–print loop，“读取-求值-输出”循环），可以直接运行各种 JavaScript 命令。
 
 ```js
 $ node
@@ -151,7 +132,7 @@ REPL 是 Node.js 与用户互动的 shell，各种基本的 shell 功能都可�
 
 上面代码的第二条命令，没有显示任何结果。因为这是一条语句，不是表达式，所以没有返回值。
 
-### 异步操作
+## 异步操作
 
 Node 采用 V8 引擎处理 JavaScript 脚本，最大特点就是单线程运行，一次只能运行一个任务。这导致 Node 大量采用异步操作（asynchronous opertion），即任务不是马上执行，而是插在任务队列的尾部，等到前面的任务运行完后再执行。
 
@@ -209,29 +190,35 @@ if(err) {
 }
 ```
 
-### 全局对象和全局变量
+## 全局对象和全局变量
 
 Node 提供以下几个全局对象，它们是所有模块都可以调用的。
 
-*   global：表示 Node 所在的全局环境，类似于浏览器的 window 对象。需要注意的是，如果在浏览器中声明一个全局变量，实际上是声明了一个全局对象的属性，比如`var x = 1`等同于设置`window.x = 1`，但是 Node 不是这样，至少在模块中不是这样（REPL 环境的行为与浏览器一致）。在模块文件中，声明`var x = 1`，该变量不是`global`对象的属性，`global.x`等于 undefined。这是因为模块的全局变量都是该模块私有的，其他模块无法取到。
+*   `global`：表示 Node 所在的全局环境，类似于浏览器的 window 对象。需要注意的是，如果在浏览器中声明一个全局变量，实际上是声明了一个全局对象的属性，比如`var x = 1`等同于设置`window.x = 1`，但是 Node 不是这样，至少在模块中不是这样（REPL 环境的行为与浏览器一致）。在模块文件中，声明`var x = 1`，该变量不是`global`对象的属性，`global.x`等于 undefined。这是因为模块的全局变量都是该模块私有的，其他模块无法取到。
 
-*   process：该对象表示 Node 所处的当前进程，允许开发者与该进程互动。
+*   `process`：该对象表示 Node 所处的当前进程，允许开发者与该进程互动。
 
-*   console：指向 Node 内置的 console 模块，提供命令行环境中的标准输入、标准输出功能。
+*   `console`：指向 Node 内置的 console 模块，提供命令行环境中的标准输入、标准输出功能。
 
 Node 还提供一些全局函数。
 
-*   setTimeout()：用于在指定毫秒之后，运行回调函数。实际的调用间隔，还取决于系统因素。间隔的毫秒数在 1 毫秒到 2,147,483,647 毫秒（约 24.8 天）之间。如果超过这个范围，会被自动改为 1 毫秒。该方法返回一个整数，代表这个新建定时器的编号。
-*   clearTimeout()：用于终止一个 setTimeout 方法新建的定时器。
-*   setInterval()：用于每隔一定毫秒调用回调函数。由于系统因素，可能无法保证每次调用之间正好间隔指定的毫秒数，但只会多于这个间隔，而不会少于它。指定的毫秒数必须是 1 到 2,147,483,647（大约 24.8 天）之间的整数，如果超过这个范围，会被自动改为 1 毫秒。该方法返回一个整数，代表这个新建定时器的编号。
-*   clearInterval()：终止一个用 setInterval 方法新建的定时器。
-*   require()：用于加载模块。
-*   Buffer()：用于操作二进制数据。
+*   `setTimeout()`：用于在指定毫秒之后，运行回调函数。实际的调用间隔，还取决于系统因素。间隔的毫秒数在 1 毫秒到 2,147,483,647 毫秒（约 24.8 天）之间。如果超过这个范围，会被自动改为 1 毫秒。该方法返回一个整数，代表这个新建定时器的编号。
+
+*   `clearTimeout()`：用于终止一个 setTimeout 方法新建的定时器。
+
+*   `setInterval()`：用于每隔一定毫秒调用回调函数。由于系统因素，可能无法保证每次调用之间正好间隔指定的毫秒数，但只会多于这个间隔，而不会少于它。指定的毫秒数必须是 1 到 2,147,483,647（大约 24.8 天）之间的整数，如果超过这个范围，会被自动改为 1 毫秒。该方法返回一个整数，代表这个新建定时器的编号。
+
+*   `clearInterval()`：终止一个用 setInterval 方法新建的定时器。
+
+*   `require()`：用于加载模块。
+
+*   `Buffer()`：用于操作二进制数据。
 
 Node 提供两个全局变量，都以两个下划线开头。
 
-*   _filename：指向当前运行的脚本文件名。
-*   _dirname：指向当前运行的脚本所在的目录。
+*   `_filename`：指向当前运行的脚本文件名。
+
+*   `_dirname`：指向当前运行的脚本所在的目录。
 
 除此之外，还有一些对象实际上是模块内部的局部变量，指向的对象根据模块不同而不同，但是所有模块都适用，可以看作是伪全局变量，主要为 module, module.exports, exports 等。
 
@@ -278,20 +265,27 @@ var bar = require('bar/lib/bar.js')
 
 如果只是在服务器运行 JavaScript 代码，用处并不大，因为服务器脚本语言已经有很多种了。Node.js 的用处在于，它本身还提供了一系列功能模块，与操作系统互动。这些核心的功能模块，不用安装就可以使用，下面是它们的清单。
 
-*   http：提供 HTTP 服务器功能。
-*   url：解析 URL。
-*   fs：与文件系统交互。
-*   querystring：解析 URL 的查询字符串。
-*   child_process：新建子进程。
-*   util：提供一系列实用小工具。
-*   path：处理文件路径。
-*   crypto：提供加密和解密功能，基本上是对 OpenSSL 的包装。
+*   `http`：提供 HTTP 服务器功能。
+
+*   `url`：解析 URL。
+
+*   `fs`：与文件系统交互。
+
+*   `querystring`：解析 URL 的查询字符串。
+
+*   `child_process`：新建子进程。
+
+*   `util`：提供一系列实用小工具。
+
+*   `path`：处理文件路径。
+
+*   `crypto`：提供加密和解密功能，基本上是对 OpenSSL 的包装。
 
 上面这些核心模块，源码都在 Node 的 lib 子目录中。为了提高运行速度，它们安装时都会被编译成二进制文件。
 
 核心模块总是最优先加载的。如果你自己写了一个 HTTP 模块，`require('http')`加载的还是核心模块。
 
-### 自定义模块
+### 自定模块
 
 Node 模块采用 CommonJS 规范。只要符合这个规范，就可以自定义模块。
 
@@ -359,7 +353,9 @@ Node 是单线程运行环境，一旦抛出的异常没有被捕获，就会引
 一般来说，Node 有三种方法，传播一个错误。
 
 *   使用 throw 语句抛出一个错误对象，即抛出异常。
+
 *   将错误对象传递给回调函数，由回调函数负责发出错误。
+
 *   通过 EventEmitter 接口，发出一个 error 事件。
 
 ### try...catch 结构
@@ -418,7 +414,7 @@ async(function(res) {
 
 ### 回调函数
 
-Node 采用的方法，是将错误对象作为第一个参数，传入回调函数。这样就避免了捕获代码与发生错误的代码不在同一个时间段的问题。
+Node 采用的方法，是将错误对象作为第一个参数，传入回回调函数。这样就避免了捕获代码与发生错误的代码不在同一个时间段的问题。
 
 ```js
 fs.readFile('/foo.txt', function(err, data) {
@@ -594,12 +590,21 @@ $ ./foo.js arg1 arg2 ...
 ## 参考链接
 
 *   Cody Lindley, [Package Managers: An Introductory Guide For The Uninitiated Front-End Developer](http://tech.pro/tutorial/1190/package-managers-an-introductory-guide-for-the-uninitiated-front-end-developer)
+
 *   Stack Overflow, [What is Node.js?](http://stackoverflow.com/questions/1884724/what-is-node-js)
+
 *   Andrew Burgess, [Using Node's Event Module](http://dev.tutsplus.com/tutorials/using-nodes-event-module--net-35941)
+
 *   James Halliday, [task automation with npm run](http://substack.net/task_automation_with_npm_run)- Romain Prieto, [Working on related Node.js modules locally](http://www.asyncdev.net/2013/12/working-on-related-node-modules-locally/)
+
 *   Alon Salant, [Export This: Interface Design Patterns for Node.js Modules](http://bites.goodeggs.com/posts/export-this/)
+
 *   Node.js Manual & Documentation, [Modules](http://nodejs.org/api/modules.html)
+
 *   Brent Ertz, [Creating and publishing a node.js module](http://quickleft.com/blog/creating-and-publishing-a-node-js-module)
+
 *   Fred K Schott, ["npm install --save" No Longer Using Tildes](http://fredkschott.com/post/2014/02/npm-no-longer-defaults-to-tildes/)
-*   Satans17, [Node 稳定性的研究心得](http://satans17.github.io/2014/05/04/node%E7%A8%B3%E5%AE%9A%E6%80%A7%E7%9A%84%E7%A0%94%E7%A9%B6%E5%BF%83%E5%BE%97/)
+
+*   Satans17, [Node 稳定性的研究心得](http://satans17.github.io/2014/05/04/node%E7%A8%B3%E5%AE%9A%E6%80%A5%E7%9A%84%E7%A0%94%E7%A9%B6%E5%BF%83%E5%BE%97/)
+
 *   Axel Rauschmayer, [Write your shell scripts in JavaScript, via Node.js](http://www.2ality.com/2011/12/nodejs-shell-scripting.html)

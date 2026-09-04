@@ -1,15 +1,9 @@
-# 一天学会并精通 CSS（包含 HTML5）：带实战项目的 CSS 初学者实用指南。你开始 CSS 编程所需的唯一书籍……通过实战项目快速编程（第 2 卷）
 
-
+# 一天学会并精通 CSS（包含 HTML5）：带实战项目的 CSS 初学者实用指南
 
 ![](img/cover.jpeg)
 
-
-
-
 [`www.learncodingfast.com/css`](http://www.learncodingfast.com/css)
-
-
 
 ## 前言
 
@@ -37,98 +31,7 @@
 
 [Python：一天学会并精通 Python](http://mybook.to/Python)
 
-
-
-> 工具工具
-
-> 打开 .HTML 文件
-
-
-> 什么是 HTML
-> HTML 页面的基本结构
-> Doctype
-> 开始和结束标签
-> Head 元素
-> Body 元素
-> Head 元素中的元素
-> Body 元素中的元素
-> 用于向添加内容的元素
-> 与 CSS 配合使用的元素
-> 用于为网站添加 JavaScript 代码的元素
-> 用于格式化文本的元素
-> 定义网页区域的元素
-> 注释
-> 字符实体
-
-
-> 应用 CSS 代码
-> CSS 规则的语法
-> 选择元素
-> 选择类和 ID
-> 更多选择器
-> 不区分大小写
-> 优先级顺序
-> 显示不一致性
-> 注释
-> 练习 3
-> 练习 3.1
-
-
-> 什么是 CSS 盒模型
-> 宽度和高度属性
-> 溢出属性
-> 内边距和外边距属性
-> 边框属性
-> `border-width`
-> `border-color`
-> `border-style`
-> `border-radius`
-> 练习 4
-## 第五章：定位
-> 静态 Static
-> 相对 Relative
-> 固定 Fixed
-> 绝对 Absolute
-> 练习 5
-## 第六章：显示与可见性
-
-> 显示 Display
-> 可见性 Visibility
-> 练习 6
-## 第七章：背景
-
-> 背景图片 Background-image`
-> 背景重复 Background-repeat`
-> 背景属性 Background-attachment`
-> 练习 7
-## 第八章：文本与字体
-
-> 字体族 Font-family`
-> 字体样式 Font-style`
-> 字体粗细 Font-weight`
-> 文本颜色 Text-color`
-> 文本对齐 Text-alignment`
-> 文本装饰 Text-decoration`
-> 字间距 Letter-spacing`
-> 词间距 Word-spacing`
-> 行高 Line-height`
-> 练习 8
-
-## 第九章：列表、链接与导航栏
-> 列表 Lists
-> 列表类型 List-style-type`
-> 列表图片 List-style-image`
-> 链接 Links
-> 导航栏 Navigation Bars
-> 练习 9
-## 第十章：表格
-> 边框、内边距和外边距
-
-
-
-
-
-# 第 1 章：引言
+## 第 1 章：引言
 
 欢迎来到 CSS 的世界。非常荣幸也感谢你选择这本书。在我们共同开启这段学习之旅之前，让我们先定义什么是 CSS。
 
@@ -150,13 +53,13 @@ HTML 关注网站的内容和结构。由于没有内容的网站存在是毫无
 
 在处理 HTML 文件时，我建议你同时在浏览器和文本编辑器中打开文件，并将两个窗口并排排列。这样，你就可以在编辑器中编辑代码，保存，然后移动到浏览器，刷新页面并立即检查对代码所做更改的效果。在完成第 3 章到第 10 章的练习时，请遵循此步骤。
 
-# 第 2 章：HTML 基础
+## 第 2 章：HTML 基础
 
 现在我们已经介绍了网页编程的基础，让我们开始学习一些实际的 HTML 代码。在本章中，我们将涵盖 HTML 的核心内容。如果你熟悉 HTML，可以跳过本章直接进入第 3 章。
 
 对于初次接触 HTML 的同学，让我们开始吧。
 
-## 什么是 HTML
+### 什么是 HTML
 
 HTML 代表超文本标记语言（Hypertext Markup Language），是 Web 程序员用于向网页添加内容的语言。标记语言简单来说是一种用于注释文档的语言，用以解释文本的不同部分是什么以及它们应该如何呈现。例如，我们可以使用 HTML 来指定内容应该以列表形式还是表格形式呈现。目前的 HTML 版本是 HTML5。
 
@@ -166,7 +69,7 @@ HTML 最棒的一点是网页的源代码对所有人免费开放。这使得我
 
 为了更好地理解 HTML5 的工作原理，让我们从检查 HTML 文档的基本结构开始。
 
-### HTML 页面的基本结构
+#### HTML 页面的基本结构
 
 下面是一个基础 HTML 文档的示例。我在每一行旁边添加了数字。
 
@@ -185,11 +88,11 @@ HTML 最棒的一点是网页的源代码对所有人免费开放。这使得我
 
 从上面的代码可以看出，HTML 使用了许多标签，例如 `<head>` 和 `<body>`。
 
-#### Doctype
+##### Doctype
 
 在第 1 行，`<!doctype html>` 标签告诉浏览器此文档使用的是 HTML5。如果你检查旧页面的源代码，可能会看到类似 `<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">` 的内容。这意味着它们使用的是其他版本，如 HTML4.01。
 
-插入 开始和结束标签
+##### 开始和结束标签
 
 在第 2 行，`<html>` 标签告诉浏览器 HTML 代码从这里开始。HTML 中的大多数标签都有对应的结束标签。`<html>` 标签的结束标签位于第 10 行。它在 `html` 单词之前有一个额外的斜杠 (/)。
 
@@ -199,9 +102,9 @@ HTML 最棒的一点是网页的源代码对所有人免费开放。这使得我
 
 我们将得到：This text is important, but this text is not.
 
-`<strong>` 标签和 `</<strong>` 标签告诉浏览器加粗效果从何时开始以及何时结束。相比之下，不需要告诉浏览器插入的图像应该何时结束。
+`<strong>` 标签和 `</strong>` 标签告诉浏览器加粗效果从何时开始以及何时结束。相比之下，不需要告诉浏览器插入的图像应该何时结束。
 
-#### head 元素
+##### head 元素
 
 在第 3 行，我们是 `head` 元素的开始。
 
@@ -211,11 +114,7 @@ HTML 最棒的一点是网页的源代码对所有人免费开放。这使得我
 
 在示例中，我们只在 `head` 元素中包含了关于标题的信息。`<title>` 元素（第 4 行）显示浏览器应该在标题栏或页面标签页上显示的标题。在这种情况下，将显示文本“My First HTML Page”。我们将在后的章节中介绍更多在 `head` 元素内部使用的标签。
 
-### body 元素
-
-
-
-
+##### body 元素
 
 第 6 行是 `body` 元素开始的地方。`<body>...</body>` 标签内的内容将显示在网页上。在我们的示例中，文本“This is just text”和图像“someimage.jpg”将被显示。
 
@@ -225,13 +124,13 @@ HTML 最棒的一点是网页的源代码对所有人免费开放。这使得我
 
 在完成本书附带的额外项目时，你也将被引导去编写一个真实的 HTML 文档。该项目的源代码可以在 `Bonus Project\Answers` 文件夹中找到。
 
-## head 元素中的元素
+##### head 元素中的元素
 
 现在我们已经了解了 HTML 的工作原理，让我们详细查看 `head` 元素。
 
 如上所述，`head` 元素提供了有关文档通用信息，例如元数据、标题以及指向外部资源的链接。让我们来看看 `head` 元素中的一些标签。
 
-### `<meta>`
+###### `<meta>`
 
 `<meta>` 标签包含在 `<head>…</head>` 标签内，用于向浏览器、搜索引擎或其他网络服务提供有关网站的附加信息。这些信息不会显示在页面本身。`<meta>` 标签没有结束标签。
 
@@ -243,7 +142,7 @@ HTML 最棒的一点是网页的源代码对所有人免费开放。这使得我
 
 你可能会注意到这个标签比我们之前讨论的标签要长得多。这是因为 `<meta>` 标签有两个属性：`name` 和 `content`。
 
-`name` 用于指定标签包含的信息的类型（在本例中为关键词），而 `content` 用于指定信息的内容。
+`name` 用于指标签包含的信息的类型（在本例中为关键词），而 `content` 用于指定信息的内容。
 
 你还可以使用 `name=description` 属性为你的网站提供描述。例如：
 
@@ -265,11 +164,11 @@ HTML 最棒的一点是网页的源代码对所有人免费开放。这使得我
 
 如果你感兴趣了解更多关于视口的工作原理，可以查看 [`https://developer.apple.com/library/ios/documentation/AppleApplications/Reference/SafariWebContent/UsingtheViewport/UsingtheViewport.html`](https://developer.apple.com/library/ios/documentation/AppleApplications/Reference/SafariWebContent/UsingtheViewport/UsingtheViewport.html)
 
-### `<title>...</title>`
+###### `<title>...</title>`
 
 `<title>` 标签用于定义浏览器应该在其标题栏或页面标签页上显示的标题。
 
-### `<style>...</style>`
+###### `<style>...</style>`
 
 `<style>` 标签用于向我们的 HTML 文档添加内部 CSS 代码。我们将在第 3 章学习如何操作。
 
@@ -283,7 +182,7 @@ body {
 </style>
 ```
 
-### `<link>`
+###### `<link>`
 
 `<link>` 标签用于链接到外部资源，最常用于链接到外部 CSS 样式表。它不需要结束标签。
 
@@ -295,7 +194,7 @@ body {
 
 `rel` 和 `type` 属性只是告诉浏览器你正在链接到一个 CSS 样式表。你不需要修改它们。唯一你需要修改的属性是 `href` 属性。该属性用于指定 CSS 文件的路径。
 
-## 如何编写外部文件的路径
+##### 如何编写外部文件的路径
 
 任何外部文件的路径始终从 HTML 文档的当前文件夹开始。假设有五个文件夹：`User`、`Documents`、`MyWebsite`、`MyCSS` 和 `MoreCSS`，结构如下：
 
@@ -305,13 +204,9 @@ body {
 
 如果你正在 `MyWebsite` 中处理一个 HTML 文件，并想访问 `MoreCSS` 中的文件，你将使用路径 `MyCSS/MoreCSS/filename.ext`。
 
+##### `<ol>` 标签代表有序列表，用于创建一个以数字或字母作为列表标记的列表。
 
-
-
-
-`<ol>` 标签代表有序列表，用于创建一个以数字或字母作为列表标记的列表。
-
-### 有序列表
+###### 有序列表
 
 示例：
 
@@ -324,19 +219,24 @@ body {
 ```
 
 输出：
+
 > 1. Chocolate（巧克力）
+
 > 2. Strawberry（草莓）
+
 > 3. Vanilla（香草味）
 
-### 无序列表
+###### 无序列表
+
 `<ul>`...`</ul>` 和 `<li>`...`</li>`
 
 `<ul>` 标签代表无序列表，与 `<ol>`</ol>` 标签类似。但是，它不使用数字或字母作为列表标记，而是使用形状（如圆点或空心圆）。
 
-### 表格
+##### 表格
+
 `<table>`...`</table>`, `<tr>`...`</tr>`, `<th>`...`</th>`, `<td>`...`</td>`
 
-`<table>` 标签用于创建表格。`<tr>` 代表“表格行（Table Row）”，`<th>` 代表“表头（Table Header）”，而 `<td>` 代表“表格数据（Table Data）”。在 HTML 中，表格是逐行创建的。
+`<table>` 标�用于创建表格。`<tr>` 代表“表格行（Table Row）”，`<th>` 代表“表头（Table Header）”，而 `<td>` 代表“表格数据（Table Data）”。在 HTML 中，表格是逐行创建的。
 
 示例（数字不属于代码内容）：
 
@@ -361,11 +261,12 @@ body {
 
 ![](img/00005.jpg)
 
-### 与 CSS 结合使用的元素
+##### 与 CSS 结合使用的元素
 
 有两个特殊的 HTML 元素在 HTML 中没有任何固有含义。它们主要与 CSS 结合使用，为网页的特定部分设置样式。这两个元素是 `div` 和 `span`。
 
-#### Div 标签
+###### Div 标签
+
 `<div>`...`</div>`
 
 `<div>` 代表“划分（division）”，用于定义 HTML 文档中的一个划分或区域。`<div>` 标签通常与 CSS 结合使用，以格式化 `<div>`...`</div>` 标签内的内容。
@@ -385,7 +286,8 @@ body {
 
 我们可以使用 CSS 来格式化 `div` 标签内的所有内容（即：文本和有序列表）。我们将在下一章学习如何操作。
 
-#### Span 标签
+###### Span 标签
+
 `<span>`...`</span>`
 
 `<span>` 标签与 `<div>` 标签类似。主要区别在于 `<div>` 是**块级元素 (block element)**，而 `<span>` 是**行内元素 (inline element)**。
@@ -397,12 +299,14 @@ body {
 我们将得到：
 
 This is a
+
 block element
+
 while this is an inline element.
 
 由于短语“block element”被标记为 `<div>`标签，它会在新行开始并结束。另一方面，“inline”一词是一个行内元素，不会在新行开始或结束。通常，我们倾向于使用 `<div>` 来封装文档的章节，而 `<span>` 用于封装一小部分文本、图像等。
 
-### 用于向网站添加 JavaScript 代码的元素
+##### 用于向网站添加 JavaScript 代码的元素
 
 `<script>`...`</script>`
 
@@ -422,9 +326,10 @@ while this is an inline element.
 <script type="text/javascript" src="myscripts.js"></script>
 ```
 
-### 用于格式化文本的元素
+##### 用于格式化文本的元素
 
-#### Strong 标签
+###### Strong 标签
+
 `<strong>`...`</strong>`
 
 `<strong>` 标签用于定义重要的文本。大多数浏览器会将文本**加粗**。
@@ -434,9 +339,11 @@ while this is an inline element.
 `The examination will be held on <strong>12 Jan at 2pm</strong>. Late will not be allowed into the hall.`
 
 输出：
+
 考试将于 1 月 12 日下午 2 点举行。迟到者将不允许进入现场。
 
-#### Em 标签
+###### Em 标签
+
 `<em>`...`</em>`
 
 `<em>` 标签用于定义强调的文本。大多数浏览器将以*斜体*形式显示文本。
@@ -445,7 +352,7 @@ while this is an inline element.
 
 `The examination will be held on 12 Jan at 2pm. Late <em>not</em> be allowed into the hall.`
 
-### 用于定义网页部分的元素
+##### 用于定义网页部分的元素
 
 `<header>`...`</header>`
 
@@ -486,7 +393,7 @@ while this is an inline element.
 </html>
 ```
 
-## 注释
+##### 注释
 
 注意在之前的示例中，我们使用了大量的 `<!--` 和 `-->` 符号？这些被称为注释。通常我们在编程时，需要添加注释以便阅读和理解。注释不会在浏览器中显示，它们仅仅是为了解释我们的代码。
 
@@ -498,7 +405,7 @@ while this is an inline element.
 <!--This is a comment. It will not be displayed in the browser-->
 ```
 
-### 字符实体
+##### 字符实体
 
 某些字符在 HTML 中有预定义定义的特定用途。例如，小于符号 `<` 用于启动所有标签。如果我们需要在网页上显示文本 5<12 怎么办？
 
@@ -507,21 +414,20 @@ while this is an inline element.
 常用的字符实体包括：
 
 小于符号 (<):
+
 `&lt;` 或 `&#60;`
 
 大于符号 (>):
+
 `&gt;` 或 `&#62;`
 
 安培符号 (&):
+
 `&amp;` 或 `&#38;`
 
 例如，如果你想在网站上显示 5<12，你在 HTML 代码中应将其写为 `5&lt;12`。
 
-
-
-
-
-另一个常用的字符实体是不换行空格（`&nbsp;`）。不换行空格实体用于显示连续的空格。在默认情况下，HTML 不识别连续的空格。如果你在 HTML 代码中写 5 个空格，浏览器会移除其中的 4 个并只显示一个空格。例如，如果你写
+另一个常用的字符实体是不换行空格（`&nbsp;`）。不换行空格实体用用于显示连续的空格。在默认情况下，HTML 不识别连续的空格。如果你在 HTML 代码中写 5 个空格，浏览器会移除其中的 4 个并只显示一个空格。例如，如果你写
 
 `“There are 5 spaces      here”`
 
@@ -533,17 +439,17 @@ while this is an inline element.
 
 `“There are 5 spaces &nbsp;&nbsp;&nbsp;&nbsp;here”`。
 
-# 第 3 章：CSS 基础
+## 第 3 章：CSS 基础
 
 现在我们已经涵盖了大量的 HTML，让我们转向 CSS。CSS 代表级联样式表（Cascading Stylesheet），正如其名所示，CSS 的核心在于样式设计以及让你的网站看起来非常精美。
 
 CSS 的最新版本是 `CSS3`。与之前的 CSS 版本（即 `CSS1` 和 `CSS2.1`）不同，`CSS3` 将语言分成了不同的模块，以便每个模块可以以不同的速度独立开发。每个模块都添加了新功能，或者扩展了之前在 `CSS2.1` 中定义的功能能力。本质上，`CSS3` 只是 `CSS2.1` 的扩展。
 
-本书涵盖了 `CSS2.1` 的核心属性，以及 `CSS3` 中引入的几个新属性。一旦你掌握了核心属性，你就可以毫无问题地转向 `CSS3` 中新添加的高级属性。这些高级属性允许对你的网站进行更奇幻的样式设计，例如添加过渡和动画。
+本书涵盖了 `CSS2.1` 的核心属性，以及 `CSS3` 中引入的几个新属性。一旦你掌�了核心属性，你就可以毫无问题地转向 `CSS3` 中新添加的高级属性。这些高级属性允许对你的网站进行更奇幻的样式设计，例如添加过渡和动画。
 
 在本章中，我们将介绍 CSS 的基础，包括它的语法和优先级。然而，在进入 CSS 语法之前，让我们先学习如何向我们的网站添加 CSS 规则。
 
-## 应用 CSS 代码
+### 应用 CSS 代码
 
 有三种方法可以将 CSS 代码应用到我们的网站中。
 
@@ -553,7 +459,7 @@ CSS 的最新版本是 `CSS3`。与之前的 CSS 版本（即 `CSS1` 和 `CSS2.1
 <link rel="stylesheet" type="text/css" href="style.css">
 ```
 
-你将将 `<link>` 标签添加到 `head` 元素中，位于 `<head>...</head>` 标签之间。前两个属性 `rel` 和 `type  告诉这是一个 CSS 样式表。你不需要修改它们。最后一个属性 `href` 是你指定要链接的 CSS 文件路径的地方。CSS 文件仅仅是一个包含 CSS 规则的文件，不包含任何 HTML 标签。下例所示。如果代码对你来说意义不大不要担心，我们很快就会讲解。
+你将将 `<link>` 标签添加到 `head` 元素中，位于 `<head>...</head>` 标签之间。前两个属性 `rel` 和 `type` 告诉这是一个 CSS 样式表。你不需要修改它们。最后一个属性 `href` 是你指定要链接的 CSS 文件路径的地方。CSS 文件仅仅是一个包含 CSS 规则的文件，不包含任何 HTML 标签。下例所示。如果代码对你来说意义不大不要担心，我们很快就会讲解。
 
 ```
 body {
@@ -586,7 +492,7 @@ div {
 
 在这三种方法中，链接是首选方法。链接将 HTML 内容与样式规则分离，使其更易维护。当我们需要对多个页面应用相同的 CSS 规则时，它也非常有用。相反，嵌入式 CSS 通常用于适用于页面的规则。当你需要将一个规则应用于一个元素，或者当你想覆盖应用于同一元素的其他 CSS 规则时，内联 CSS 非常方便。这是因为内联 CSS 的优先级高于使用其他两种方法添加的 CSS。我们稍后会讨论优先级。然而，内联 CSS 将样式与内容混合在一起，应该尽可能避免。
 
-## CSS 规则的语法
+### CSS 规则的语法
 
 现在我们已经知道如何将 CSS 规则应用到 HTML 中，让我们学习实际的 CSS 代码。学习 CSS 的第一件事是它的语法，它相对非常直观。语法是：
 
@@ -611,11 +517,11 @@ div { background-color: green; font-size: 12px; }
 
 非常直观，对吧？太棒了！让我们继续...
 
-## 选择元素
+### 选择元素
 
 在上面的示例中，大括号中声明的规则将适用于所有带有 `<div>` 标签的元素。然而，在大多数情况下，我们希望有所变化。假设你想让一个 `<div>` 元素具有 `12px` 的字体大小，而另一个具有 `14px` 的字体大小。你会如何做呢？
 
-### 选择类和 ID
+#### 选择类和 ID
 
 基本上有两种方法。第一种是使用 `id` 属性。在你的 HTML 文档中，不再仅仅使用 `<div>` 标签，你可以给它添加一个 `id` 属性。例如，你可以写：
 
@@ -672,9 +578,6 @@ p.myclass1 { ... }
 
 点的前后不应该留空格。
 
-
-
-
 一个元素可以有多个类。在 HTML 属性中，多个类之间用空格分隔。例如，下面的 `div` 元素有两个类：`myclass1` 和 `myclass2`。
 
 ```html
@@ -692,11 +595,11 @@ p.myclass1 { ... }
 
 那么 `myclass1` 和 `myclass2` 的规则都适用于上述 `<div>` 元素。
 
-## 更多选择器
+### 更多选择器
 
 除了通过 `id` 和 `class` 选择元素外，CSS 还提供了许多方法来指定我们想要选择的元素。
 
-### 选择多个元素
+#### 选择多个元素
 
 例如，我们可以一次选择多个元素。如果我们想选择 `<div>`、`<p>` 和 `<ul>` 元素，我们可以写：
 
@@ -704,7 +607,7 @@ p.myclass1 { ... }
 div, p, ul { … }
 ```
 
-### 选择子元素
+#### 选择子元器
 
 如果我们想选择 `<div>` 元素内部所有的 `<p>` 元素，我们可以写：
 
@@ -723,7 +626,7 @@ div p { … }
 
 第一个段落“I am a paragraph inside div”被称为 `<div>` 标签的子元素，因为它的起始和结束标签（`<p>` 和 `</p>`）完全位于 `<div>...</div>` 标签之内。
 
-### 按属性选择
+#### 按属性选择
 
 你也可以根据元素的属性来选择元素。如果你想选择所有指向 `http://www.learncodingfast.com/` 的超链接，你可以写：
 
@@ -738,13 +641,16 @@ a[href="http://www.learncodingfast.com"] { … }
 <a href="http://www.google.com/">Google</a>
 ```
 
-### 选择伪类
+#### 选择伪类
 
 另一个常用的选择器是伪类选择器。伪类指的是元素的一种特殊状态。最常见的伪类是针对 `<a>...</a>` 元素的伪类。超链接可以处于四种状态之一：
 
 - `link`（未访问过的链接）
+
 - `visited`（已过的链接）
+
 - `hover`（当用户鼠标悬停在其上方时），或
+
 - `active`（当链接被点击时）。
 
 我们可以根据链接所处的状态来选择它。例如，要选择悬停状态，我们写：
@@ -773,7 +679,7 @@ p:nth-child(2) { … }
 
 由于括号 `()` 中的数字‘2’，我们将选择段落“I am the second child”。
 
-### 选择伪元素
+#### 选择伪元素
 
 除了伪类，CSS 还有伪元素的概念。伪元素指的是元素的指定部分，例如元素的第一个字母或第一行。
 
@@ -805,15 +711,15 @@ h1::after {
 <h1>This is a heading</h1>
 ```
 
-## 大小不敏感
+### 大小不敏感
 
 在大多数情况下，选择器是不区分大小写的的。然而，唯一的例外是某些语境下的 `id` 和 `class` 名称（等等，根据提供的文本：“在大多数情况下，选择器是不区分大小写的的”）。实际上，提供的文本有些碎片化，但我将保留核心信息。
 
-## 优先级
+### 优先级
 
 现在我们已经学会了如何选择，让我们进入一个非常重要的概念：优先级。三个原则控制着哪条规则生效。
 
-### 原则 1：选择器越具体，优先级越高
+#### 原则 1：选择器越具体，优先级越高
 
 我们不会详细介绍如何计算选择性。要记住的点是 `id` 比 `class` 更具体，而 `class` 比元素更具体。考虑以下代码：
 
@@ -822,6 +728,7 @@ div { font-size: 10px; }
 #myId { font-size: 12px; }
 .myClass { font-size: 14px; }
 ```
+
 ```html
 <div id="myId" class="myClass">Some text</div>
 ```
@@ -837,7 +744,7 @@ div#myId { color: yellow; }
 .myClass { color: green; }
 ```
 
-### 原则 2：如果没有指定样式，元素将从父容器继承样式
+#### 原则 2：如果没有指定样式，元素将从父容器继承样式
 
 子元素是完全位于另一个元素的起始和结束标签之内的元素。例如，在下代码中，`<p>` 是 `<body>` 元素的子元素。由于没有定义 `<p>` 的字体大小，它将从定义了该属性的 `<body>` 元素继承该属性。
 
@@ -846,6 +753,7 @@ body {
     font-size: 1.5em;
 }
 ```
+
 ```html
 <body>
     <p>Some text</p>
@@ -854,7 +762,7 @@ body {
 
 如果 `<body>` 元素也没有定义 `font-size` 属性，将使用浏览器的字体字体。
 
-### 原则 3：在其他相等的情况下，最后声明的规则胜出
+#### 原则 3：在其他相等的情况下，最后声明的规则胜出
 
 假设你在 HTML `<head>` 元素中有以下 CSS 声明。
 
@@ -866,9 +774,6 @@ body {
 </head>
 ```
 
-
-
-
 在 HTML 文档的后续，你有以下 HTML 代码，其中包含一条内联 CSS 规则：
 
 ```html
@@ -879,7 +784,7 @@ body {
 
 正确答案是内联规则。这是因为在其他相等的情况下，最后声明的规则优先级最高。由于内联 CSS 是在 HTML 代码内部声明的，它的声明顺序晚于在 `head` 部分中声明的嵌入式 CSS。因此，将应用 30px 的字体大小。
 
-## 显示不一致
+### 显示不一致
 
 在处理 CSS 时需要解决的另一个问题是跨浏览器的显示不一致问题。你可能会发现你的网站在不同的浏览器中看起来略有（或极度）不同。大多数显示问题倾向于旧版本的 Internet Explorer，尽管问题也可能发生在其他浏览器中（尤其是移动浏览器）。
 
@@ -887,7 +792,7 @@ body {
 
 另一个导致显示不一致的问题是对某些 CSS 属性缺乏通用支持。某些属性并不是所有浏览器都支持。你可以访问 [`www.caniuse.com`](http://www.caniuse.com/) 网站来检查你正在开发的浏览器是否支持特定的 CSS 属性。
 
-有时，只有当我们为 CSS 规则添加前缀时，特定的浏览器才支持某个 CSS 属性。这对于 CSS3 中的新属性尤其如此。一个例子是 CSS 中的 `column-count` 属性。该属性将元素分成多个列。例如，我们可以通过编写 `column-count: 3` 将一个 `div` 元素分为三列。
+有时，只有当我们为 CSS 规件添加前缀时，特定的浏览器才支持某个 CSS 属性。这对于 CSS3 中的新属性尤其如此。一个例子是 CSS 中的 `column-count` 属性。该属性将元素分成多个列。例如，我们可以通过编写 `column-count: 3` 将一个 `div` 元素分为三列。
 
 旧版本的 `Firefox`、`Chrome`、`Safari` 和 `Opera` 不支持此属性。为了让该属性在这些浏览器上生效，你必须将其三个三个声明：
 
@@ -907,7 +812,7 @@ column-count: 3;
 
 在创建网站时，在各种浏览器上进行测试是有用的，以确保没有内容损坏。修复“损坏”显示的方法取决于导致问题的原因。如果你真的卡住了，我建议在 [`stackoverflow.com`](http://stackoverflow.com/) 上搜索或发布问题，这是一个非常有用的程序员在线社区。
 
-## 注释
+### 注释
 
 本章最后介绍的是注释。在 CSS 中，我们使用 `/*...*/` 符号向代码中添加注释。例如所示：
 
@@ -924,56 +829,71 @@ p {
 
 `/*` 和 `*/` 符号之间的所有内容会被浏览器忽略。
 
-## 练习 3
+### 练习 3
 
 从 [`learncodingfast.com/css`](http://learncodingfast.com/css) 下载此练习的源代码并解压文件。此练习的源代码可以在“Chapter 3 - Basics of CSS”文件夹中找到。
 
-### 练习 3.1
+#### 练习 3.1
 
 > 1. 在你的浏览器和文本编辑器中同时打开 `Chapter 3 - Basics of CSS.html` 文件。
+
 > 2. 首先，在文本编辑器的源代码中寻找以下行：
+
 ```css
 p {
 background-color: yellow;
 }
 ```
+
 这选取了所有的 `<p>` 元素并将它们的背景颜色设置为黄色。“This is some text in the div element.” 这一行没有被选中，因为它不在任何 `<p>...</p>` 标签之内。
+
 > 3. 现在，让我们尝试将规则从
+
 ```css
 p {
 background-color: yellow;
 }
 ```
+
 改为
+
 ```css
 P {
 Background-coloR: YELLOW;
 }
 ```
+
 在你的文本编辑器中保存文件并刷新浏览器。注意看没有发生变化？这是因为在大多数情况下 CSS 是不区分大小写的。
+
 > 4. 现在，让我们尝试选择不同的 HTML 元素，并观察哪些元素最终变成了黄色背景。对于下方的每一项，只需将 HTML 文件第 6 行的选择器更改为所需的选择器即可。
+
 > 首先，让我们选取 `class = "myClassPara"` 的元素。要做到这一点，将 CSS 规则中的 `p` 选择器改为 `.myClassPara`。在编辑器中保存文件并刷新浏览器中的页面。注意现在哪个段落被选中了。
+
 > 5. 现在将选择器改为 `.myclasspara`。注意现在什么都没有被选中？那是因为 CSS 在选取类和 id 时是区分大小写的。
+
 > 6. 接下来，让我们选取 `id = "myIDPara"` 的元素。尝试自己做一下。
+
 > 明白了吗？
+
 > 将 `.myClassPara` 改为 `#myIDPara`。注意现在哪个段落被选中了。
+
 > 7. 现在，将 `#myIDPara` 改为 `#myidpara`。注意什么都没有被选中？那是因为 CSS 在选取类和 id 时是区分大小写的。
+
 > 8. 接下来，让我们选取 `id = "myIDPara"` 的元素。尝试自己做一下。
+
 > 明白了吗？
+
 > 将 `.myClassPara` 改为 `#myIDPara`。注意现在哪个段落被选中了。
+
 > 9. 现在，将 `#myIDPara` 改为 `#myidpara`。注意什么都没有被选中？那是因为 CSS 在选取类和 id 时是区分大小写的。
 
-# 第 4 章：CSS 盒模型
+## 第 4 章：CSS 盒模型
 
 到目前，我们已经涵盖了 HTML 和 CSS 的基础。在本章中，我们将开始进行实际的 CSS 编码。具体来说，我们将学习 CSS 盒模型，并研究如何修改 CSS 盒的外观。
 
-## 什么是 CSS 盒模型
+### 什么是 CSS 盒模型
 
 CSS 中的所有元素都被视为盒子。CSS 盒子由外边距、边框、内边距和实际内容组成，如下所示。
-
-
-
-
 
 ![](img/00011.jpg)
 
@@ -1006,7 +926,7 @@ CSS 中的所有元素都被视为盒子。CSS 盒子由外边距、边框、内
 <body>
 <div id="box1">Learn CSS in One Day and Learn It Well. CSS is easy.</div>>
 <div id="box2">Learn CSS in One Day and Learn It Well. CSS is easy.</div>>
-<p>skajd fhadlc vkas j cnl ka jshvn aclaks jdclkasjd ckasj cnkas djvcn ksa mc nlkasd jn skajd fhadlc vkas j cnl ka jshvn aclaks jdclkasjd ckasj cnkas djvcn ksa mc nlkasd jn skajd fhadlc vkas j cnl ka jshvn aclaks jdclkasjd ckasj cnkas djvcn ksa mc nlkasd jn</p>
+<p>skajd fhadlc vkas j cnl ka jshvn aclaks jdclkasjd ckasj cnkas djvcn ksa mc nlkasd jn skajd fhadlc vkas j cnl ka jshvn aclaks jdclkasjd ckasj cnkas djvcn ksa mc nlkasd jn</p>
 </body>
 </html>
 ```
@@ -1025,71 +945,78 @@ CSS 中的所有元素都被视为盒子。CSS 盒子由外边距、边框、内
 
 尝试稍微修改代码，更改宽度、height、padding、margin 和 border 属性的值。观察每项变化影响了哪些部分。你会注意到宽度和高度影响内容区域。外边距影响边框外部的区域，而内边距影响内部的区域。边框理当然是框的边界。我们将在接下来详细介绍这些每一个属性。
 
-## 宽度和高度属性
+#### 宽度和高度属性
 
 CSS 框的 `width` 和 `height` 属性指定了内容区域的尺寸（不包括内边距、边框和外边距）。值通常以像素或百分比给出。例如，示例中的代码将 `box1` 和 `box2` 的宽度和高度都设置为 100px。你也可以将宽度设置为 80%。此时框的内容区域将占据页面宽度的 80%。最后，你可以将高度和宽度设置为 `auto`。在这种情况下，浏览器将根据显示框内内容所需的空间自动计算这些值。
 
-## Overflow 溢出属性
+#### Overflow 溢出属性
 
 有时，内容区域的宽度和高度可能太小，无法容纳框内的内容。默认情况下，内容将溢出框外并与其他内容重叠。这将导致网页格式非常糟糕。如果你不希望发生这种情况，可以使用 `overflow` 属性。下面的图显示了使用 `overflow` 属性的不同值（`visible`、`hidden`、`scroll` 和 `auto`）如何显示内容。
 
 ![](img/00001.jpg)
 
-## Padding 和 Margin 属性
+#### Padding 和 Margin 属性
 
 内边距和外边距都是透明的。因此，我们无法改变它们的颜色。但我们可以指定它们的宽度。指定宽度最常用的单位是像素。如果你希望外边距为 10 像素，可以写 `margin: 10px;`。10 和 px 之间不应有空格。
 
 下面的示例显示了指定外边距宽度的四种不同语法。内边距也一样。只需将属性名从 `margin` 更改为 `padding`。
 
 语法 1
+
 ```css
 margin: 25px;
 ```
+
 语法 2
+
 ```css
 margin: 25px 50px;
 ```
+
 语法 3
+
 ```css
 margin-top: 25px;
 ```
+
 语法 4
+
 ```css
 margin: 25px 50px 60px 10px;
 ```
-
-
-
-
 
 除了使用 RGB 表示法外，你也可以使用十六进制表示法，它使用 6 位数字表示颜色。前两个数字代表“红色”强度的十六进制值，接下来的两个代表“绿色”，最后两个代表“蓝色”。通常使用颜色工具来生成这些十六进制值。可以访问 [`instant-eyedropper.com/`](http://instant-eyedropper.com/) 网站获取其中一个免费工具。
 
 或者，你可以访问 [`html-color-codes.info/`](http://html-color-codes.info/)，那里有一张颜色表供你选择所需的颜色。点击它，就会得到对应的十六进制值。
 
-### 示例
+##### 示例
 
 ```css
 border-color: rgb(255, 0, 0);
 ```
+
 将所有边框设置为红色。
 
 ```css
 border-color: red green;
 ```
+
 将顶部和底部边框设置为红色，左侧和右侧边框设置为绿色。
 
 ```css
 border-top-color: #12005F;
 ```
+
 将顶部边框设置为 #12005F。
 
-### border-style
+##### border-style
 
 要设置边框样式，你需要使用属性 `border-style`。接受的值有：`none`、`dotted`、`dashed`、`solid`、`double`、`groove`、`ridge`、`inset` 和 `outset`。例如，如果你写
 
 ```css
 border-style: solid dotted;
 ```
+
 顶部和底部边界将为实线，左侧和右侧将为虚线。如果你想单独设置样式，可以写：
 
 ```css
@@ -1100,130 +1027,184 @@ border-top-style: solid;
 border-left-style: dotted;
 ```
 
-### border-radius
+##### border-radius
 
 `border-radius` 属性用于创建圆角边框。值通常以像素或百分比给出。
 
 可以为四个角单独设置圆角半径。四个角分别是 `top-left`（左上）、`top-right`（右上）、`bottom-right`（右下）和 `bottom-left`（左下）。
 
-### 示例
+##### 示例
 
 ```css
 border-radius: 5px;
 ```
+
 将所有角的圆角半径设置为 5px。
 
 ```css
 border-radius: 10px 20px;
 ```
+
 将左上和右下（即两个对角的角）的半径设置为 10px，右上和左下的半径设置为 20px。
 
 ```css
 border-radius: 25px 5px 0 50px;
 ```
+
 从左上角开始按顺时针方向设置各个角的值。
 
 ```css
 border-top-left-radius: 10px;
 ```
+
 将左上角的圆角半径设置为 10px。
 
 如果元素的宽度和高度为 100px，内边距为 20px，边框宽度为 50px（总宽度和总高度 = 100 + 20*2 + 50*2 = 240px），将圆角半径设置为 120px（240 除以 2）将得到一个圆而不是正方形。
 
-### 边框简写
+##### 边框简写
 
 `border` 属性是单行内指定边框宽度、样式和颜色的简写，而不需要分开进行。只需写：
 
 ```css
 border: 5px solid green;
 ```
+
 这些值分别为宽度 (5px)、样式 (solid) 和颜色 (green)。此简写中不包含圆角半径。
 
-## 练习 4
+### 练习 4
 
 从 [`learncodingfast.com/css`](http://learncodingfast.com/css) 下载此练习的源代码并解压文件。此练习的源代码可以在第 4 章 - CSS 模型中找到。
 
-### 练习 4.1
+#### 练习 4.1
 
 1. 在浏览器和文本编辑器中同时打开 `Chapter 4 - CSS Model.html` 文件。
+
 2. 调整浏览器窗口大小，观察乱码文本如何环绕方框。
+
 3. 修改 `box1` 的 CSS 声明，将 `width: 100px;` 和 `height: 100px;` 分别改为以下各项：
+
    - (a) `width: 200px; height: 200px;`
+
    - (b) `width: 60%;`
+
    - (c) `height: auto; width: auto;`
+
    在文本编辑器中保存文件并刷新页面。注意每种情况下 `box1` 发生了什么。
+
 4. 现在将 `box1` 的宽度和高度改回 100px，并将标签 `<div id="box1">...</div>` 之间的文本更改为：“Learn CSS in One Day and It Well. 这个例子显示了文本溢出框尺寸会发生什么。”接下来，在 `box1` 的 CSS 声明中添加以下各项，并注意每种情况下发生了什么：
+
    - (a) `overflow: visible;`
+
    - (b) `overflow: hidden;`
+
    - (c) `overflow: scroll;`
+
    - (d) `overflow: auto;`
+
 5. 修改 `box1` 的 CSS 声明，将 `margin: 20px;` 改为以下各项，并注意 `box1` 周围空间的变化：
+
    - (a) `margin: 50px;`
+
    - (b) `margin: -50px;`
+
    - (c) `margin: 25px 200px;`
+
    - (d) `margin: 25px 50px 60px 10px;`
+
 6. 移除 `box1` 的外边距规则并添加以下 4 行：
+
    ```css
    margin-top: 25px;
    margin-right: 50px;
    margin-bottom: 60px;
    margin-left: 10px;
    ```
+
    注意 `box1` 有任何变化吗？应该没有变化，因为这与上面的 5(d) 相同。
+
 7. 移除 `box1` 的外边距规则并添加下面的一行：
+
    ```css
    margin: 0 auto;
    ```
+
    接下来，将 `box1` 的宽度改为 80%。最后，删除行 `float: left;`。注意发生了什么（我们将在下一章解释 `float` 的作用）。`box1` 现在居中对齐了。
+
 8. 现在，让我们处理 `box2`。修改 `box2` 的 CSS 声明，将 `padding: 50px;` 改为以下各项，并注意 `box2` 内部的变化：
+
    - (a) `padding: 25px;`
+
    - (b) `padding: -10px;`
+
    - (c) `padding: 25px 50px;`
+
    - (d) `padding: 25px 50px 60px 10px;`
+
    8(b) 将不起作用，因为内边距不能为负值。你将得到 0 像素的内边距。
+
 9. 移除 `box2` 的内边距规则并添加以下 4 行：
+
    ```css
    padding-top: 25px;
    padding-right: 50px;
    padding-bottom: 60px;
    padding-left: 10px;
    ```
+
    注意 `box2` 有任何变化吗？应该没有变化，因为这与上面的 8(d) 相同。
+
 10. 现在让我们更改 `box2` 的边框样式。从 `box2` 的 CSS 声明中删除行 `border: 5px solid black;` 并添加以下各项。注意边框在每种情况下发生了什么：
+
     - (a) `border-style: solid;`
+
     - (b) `border-style: none double;`
+
     - (c) `border-style: inset;`
+
     - (d) `border-style: outset;`
+
 11. 接下来，移除 `box2` 的 `border-style` 规则并添加以下：
+
     ```css
     border-top-style: dotted;
     border-left-style: double;
     ```
+
 12. 现在移除第 11 的规则并将边框样式改为实线（`border-style: solid;`）。添加以下各项。注意每种情况下 `box2` 发生了什么：
+
     - (a) `border-width: 25px;`
+
     - (b) `border-width: 25px thin;`
+
     - (c) `border-top-width: 30px;`
+
 13. 现在我们要更改 `box2` 的边框颜色。尝试添加以下各项：
+
     - (a) `border-color: rgb(255, 0, 0);`
+
     - (b) `border-color: red green;`
+
     - (c) `border-top-color: #12FF5F;`
+
 14. 接下来，我们尝试边框简写。移除 `box2` 的所有边框属性。添加以下：
+
     ```css
     border: 5px solid green;
     ```
+
 15. 现在，尝试 `border-radius` 属性。尝试以下各项：
+
     - (a) `border-radius: 20px;`
+
     - (b) `border-radius: 10px 20px;`
+
     - (c) `border-radius: 25px 5px 0 50px;`
+
     - (d) `border-top-left-radius: 10px;`
 
+### 定位元素有四种方法。为了理解这四种方法的工作原理，我强烈建议你尝试本章末尾的练习。这是一个没有实践很难理解的话题。
 
-
-
-
-定位元素有四种方法。为了理解这四种方法的工作原理，我强烈建议你尝试本章末尾的练习。这是一个没有实践很难理解的话题。
-
-## 静态定位 (Static Positioning)
+#### 静态定位 (Static Positioning)
 
 第一种定位方法是 `static` 静态定位。静态并没有特殊含义，它意味着元素是根据页面的正常流进行定位的。所有的 HTML 元素默认都使用这种方法进行定位。如果你想指定使用 `static` 定位（例如为了覆盖同一元素的其他定位规则），你可以写：
 
@@ -1231,7 +1212,7 @@ border: 5px solid green;
 position: static;
 ```
 
-## 相对定位 (Relative Positioning)
+#### 相对定位 (Relative Positioning)
 
 定位元素的第二种方法是 `relative` 相对定位方法。这种方法相对于元素相对于正常位置进行定位。正常位置是指元素在没有指定定位规则或使用 `static` 定位时的默认位置。
 
@@ -1295,7 +1276,7 @@ z-index: 2;
 
 那么 `redBox` 将位于 `greenBox` 之上，因为它的 `z-index` 值更大。
 
-## 固定定位 (Fixed Positioning)
+#### 固定定位 (Fixed Positioning)
 
 第三种定位方法是 `fixed` 固定定位。顾如其名，使用 `fixed` 方法定位的元素将始终保持在它指定的位置；即使页面滚动，它也不会移动。固定定位通常用于在网页的侧边定位社交分享按钮。要使用 `fixed` 定位，我们写：
 
@@ -1307,7 +1288,7 @@ position: fixed;
 
 除了 `top` 和 `left`，还有 `right` 和 `bottom` 属性，它们分别指定盒子距离页面右侧和底部的像素数。
 
-## 绝对定位 (Absolute Positioning)
+#### 绝对定位 (Absolute Positioning)
 
 最后的方法是 `absolute` 绝对定位。
 
@@ -1347,7 +1328,7 @@ position: fixed;
 
 在某种程度上，`absolute` 定位与 `relative` 定位相似，只是元素相对于父元素而不是正常位置。
 
-## 浮动 (Floating)
+#### 浮动 (Floating)
 
 我们将讨论的下一个 CSS 属性是浮动。浮动是一种在页面上排列元素的技术。这种想法类似于将书放在书架上。假设你有一叠厚度和高度不同的书，你需要将这些书放在书架上。此外，不允许重新排列书籍。也就是说，书籍必须按照它们在原始中的顺序放在书架上。
 
@@ -1413,12 +1394,10 @@ div {
 现在，假设在这些 7 个盒子之外，我们还有想要显示在网站上的以下文本。
 
 <p>这是一些非浮动的文本。</p>
+
 <p>这是更多非浮动的文本。</p>
+
 <p>这是更多的非浮动的文本。</p>
-
-
-
-
 
 如果这些段落包含在 `div` 框之后的 HTML 文档中，我们将得到下面的图。这些段落将仅仅“挤入”任何可用的空间。
 
@@ -1440,17 +1419,18 @@ div {
 
 这就是 CSS 中定位和浮动的的工作原理精要。我强烈建议你尝试本章节的练习题，以更好地理解这两个概念。
 
-## 练习 5
+### 练习 5
 
 从 [`learncodingfast.com/css`](http://learncodingfast.com/css) 下载此练习的源代码并解压文件。该练习的源代码可以在 `Chapter 5 - Positioning and Floating` 文件夹中找到。
 
-### 练习 5.1
+#### 练习 5.1
 
 > 1. 在浏览器和文本编辑器中同时打开 `Chapter 5 - Positioning.html` 文件。
 
 > 2. 为 `#box1` 和 `#box2` 的 CSS 声明添加规则 `position: static;`，并观察两个框的位置发生了什么变化。
 
 >
+
 > 没有任何变化，对吧？那是因为所有 HTML 元素默认都使用 `static` 定位。
 
 > 3. 从 `#box1` 和 `#box2` 的 CSS 声明中移除规则 `position: static;`。在 `#box2` 的 CSS 声明中添加以下几行。
@@ -1527,7 +1507,7 @@ z-index: 2;
 
 > `box3` 现在是 `box2` 的子元素。因此，它是相对于 `box2` 定位的。
 
-### 练习 5.2
+#### 练习 5.2
 
 > 1. 在浏览器和文本编辑器中同时打开 `Chapter 5 - Positioning.html` 文件。
 
@@ -1553,10 +1533,6 @@ z-index: 2;
 
 > 12. 现在将三个框的 `<div>` 代码改为嵌套结构。`box3` 现在是 `box2` 的子元素。因此，它是相对于 `box2` 定位的。
 
-
-
-
-
 > 没有任何变化，对吧？黄色框被声明为内联元素。因此，它只会占据它所需的宽度和高度。事实上，你可以移除高度和宽度属性，且什么都不会改变。
 
 > 3. 现在将 `#displaydemo` 的 `display` 属性从 `display: inline;` 改为 `display: block;`。发生了什么？
@@ -1564,6 +1540,8 @@ z-index: 2;
 > 黄色框现在以块级元素的形式显示。它会在新行开始并结束。如果你声明了它的宽度和高度，宽度和高度将是你你指定的值。如果你没有指定宽度和高度，黄色框将占据页面的整个宽度。它将占据它所需的高度。
 
 > 4. 尝试更改 CSS 中针对 `#displaydemo` 声明的高度和宽度。观察发生了什么。
+
+
 
 > 5. 现在，让我们来看 `visibility` 属性。将 `#magic` 的 CSS 声明从 `display: inline;` 改为 `visibility: hidden;`。观察蓝色句子中“magic”一词发生了什么。
 
@@ -1598,7 +1576,7 @@ background-color: #00FF00;
 示例：
 
 ```
-background-image: url(“image1.jpg”);
+background-image: url("image1.jpg");
 ```
 
 ### background-repeat
@@ -1606,8 +1584,11 @@ background-image: url(“image1.jpg”);
 默认情况下，背景图像位于元素的左上角，并在水平和垂直方向上重复。如果你不希望背景图像重复，可以使用 `background-repeat` 属性进行更改。以下列表显示了 `background-repeat` 属性的一些常用值：
 
 - `repeat`: 默认值。图像将在水平和垂直方向上重复。
+
 - `repeat-x`: 图像仅在水平方向重复。
+
 - `repeat-y`: 图像仅在垂直方向重复。
+
 - `no-repeat`: 图像不重复。
 
 示例：
@@ -1661,22 +1642,39 @@ background-position: -100px -200px;
 ### 练习 7.1
 
 1. 从 [`learncodingfast.com/css`](http://learncodingfast.com/css) 下载此练习的源代码并解压文件。此练习的源代码可以在章节找到。
+
 2. 在浏览器中打开 `7 - Background.html` 文件。注意滚动时发生了什么。
+
 3. 在 `body` 元素中，将 `background-attachment: fixed;` 改为 `background-attachment: scroll;`。注意标志发生了什么。
+
 4. 接下来，将 `background-repeat: repeat;` 改为：
+
    - (a) `repeat-x;`
+
    - (b) `no-repeat;`
+
    - (c) `repeat-y;`
+
    注意每种情况下发生了什么。
+
 5. 接下来，将 `background-color: white;` 改为 `background-color: #0000FF;`。这应该改变页面的背景颜色。
-6. 最后，我们将查看 `backgroundposition` 属性。此示例使用的图像是存储在相同文件夹中的‘backgroundposition.png’。在继续之前看一眼图像。
+
+6. 最后，我们将查看 `background-position` 属性。此示例使用的图像是存储在相同文件夹中的`backgroundposition.png`。在继续之前看一眼图像。
+
 7. 注意当 `background-position` 设置为 `0 0`（默认值）时，显示区域 A。更改 `background-position` 属性将相对于区域 A 移动背景图像。
+
 8. 在 `#box1` 的 CSS 中，将 `background-position: 0 0;` 改为：
+
    - (a) `background-position: -100px 0;`
+
    - (b) `background-position: 100px 0;`
+
    - (c) `background-position: 0 -100px;`
+
    - (d) `background-position: 0 100px;`
+
    - (e) `background-position: -100px -100px;`
+
    尝试弄清楚你会得到哪个区域。
 
 # 第 8 章：文本和字体
@@ -1685,13 +1683,9 @@ CSS 中的文本和字体属性用于格式化网页上单词和文本的外观�
 
 ## 字体属性
 
-font-family
+### font-family
 
 `font-family` 属性用于设置字体类型。
-
-
-
-
 
 字体类型主要三大类：衬线字体、无衬线字体和等宽字体。
 
@@ -1709,15 +1703,15 @@ font-family
 font-family: "Times New Roman", Times, serif;
 ```
 
-## font-size
+### font-size
 
 `font-size` 属性设置文本的大小。字体大小可以使用像素 (px)、em、百分比 (%) 或使用关键字来设置。
 
-### 使用 px
+#### 使用 px
 
-大多数浏览器使用的默认字体大小是 16 像素。如果你想让网站显示不同的字体大小，可以这样指定：`font-size: 20px;`。
+大多数浏览器使用的默认字体大 size 是 16 像素。如果你想让网站显示不同的字体大小，可以这样指定：`font-size: 20px;`。
 
-### 使用 em
+#### 使用 em
 
 一个 em 等于当前的字体大小。如果该元素是另一个元素的子元素，则当前字体大小是父元素的字体大小。如果该元素不是任何元素的子元素，则当前字体大小是浏览器的默认字体大小。如上述，大多数浏览器使用的默认字体大小为 16px。因此，默认情况下 `1em = 16px`。
 
@@ -1725,11 +1719,11 @@ font-family: "Times New Roman", Times, serif;
 
 如果用户将默认字体设置为 20px，`1em` 变为 20px。如果你想让字体大小变为当前字体大小的 1.5 倍，只需编写 `1.5em`。em 是大多数开发者使用的首选单位大小，因为默认字体大小可以由用户自定义。
 
-### 使用百分比
+#### 使用百分比
 
 百分比类似于 em。`200%` 仅意味着当前字体大小的 2 倍。因此，`200% = 2em`。
 
-### 使用关键字
+#### 使用关键字
 
 指定字体大小的最后方法是使用关键字。常用的关键字有 `xx-small`、`x-small`、`small`、`medium`（默认值）、`large`、`x-large` 和 `xx-large`。
 
@@ -1742,7 +1736,7 @@ font-size: 120%;
 font-size: large;
 ```
 
-## font-style
+### font-style
 
 `font-style` 属性用于指定斜体文本。两个常用值是 `normal` 和 `italic`。normal 显示不斜体的文本，而 italic 以斜体显示文本。
 
@@ -1752,7 +1746,7 @@ font-size: large;
 font-style: italic;
 ```
 
-## font-weight
+### font-weight
 
 `font-weight` 属性是 `font-style` 的对应属性。`font-style` 用于指定斜体文本，而 `font-weight` 用于指定加粗文本。常用的值包括 `normal`、`bold`、`bolder` 和 `lighter`。或者，你也可以使用 100 的倍数数字指定字符的粗细，从 100（最细）到 900（最粗）。400 是正常粗细，700 等于粗。
 
@@ -1815,10 +1809,6 @@ text-decoration: none;
 
 行高用于设置文本行之间的垂直距离。
 
-
-
-
-
 ## 7. 修改 CSS 属性 `text-align` 并观察示例文本的变化。默认情况下，此段的文字是左对齐的。现在尝试每一项：
 
 (a) `text-align: justify;`
@@ -1872,20 +1862,27 @@ text-decoration: none;
 其他常用的标记包括：
 
 - `decimal`（这是默认值），
+
 - `decimal-leading-zero`（带有前导零的数字，例如 01, 02..），
+
 - `lower-alpha`（例如 a, b, c..），
+
 - `lower-greek`（例如 α, β, γ..），
+
 - `upper-alpha`（例如 A, B, C..）以及
+
 `upper-roman`（例如 I, II, III…）。
 
-对于无序列表，你可以指定想要作为符号的形状。默认标记是 `disc`（实心圆）。你可以将其更改为 `square`（正方形）或 `circle`（空心圆）。
+对于无序列表，你可以指定想要作为符号的形状。默标记是 `disc`（实心圆）。你可以将其更改为 `square`（正方形）或 `circle`（空心圆）。
 
 此外，还可以选择不为列表使用任何项目标记。要这样做，你需要写 `list-style-type: none;`。这在创建导航栏时非常常见。
 
 示例：
 
 - `list-style-type: lower-roman;`
+
 - `list-style-type: circle;`
+
 - `list-style-type: none;`
 
 ### list-style-image
@@ -1894,7 +1891,7 @@ text-decoration: none;
 
 示例：
 
-- `list-style-image: url(‘myMarker.gif’);`
+- `list-style-image: url('myMarker.gif');`
 
 ### list-style-position
 
@@ -1918,13 +1915,16 @@ text-decoration: none;
 
 ## CSS 链接
 
-链接可以使用之前章节中讨论过的任何 CSS 属性进行样式化。你可以使用 `background-color` 属性设置背景颜色，这将为链接提供高亮显示效果。你还可以使用第 8 章涵盖的文本和字体属性来更改字体大小、字体样式、文本颜色、文本装饰等。
+链接可以使用之前章节中讨论过的任何 CSS 属性进行样式化。你可以使用 `background-color` 属性设置背景颜色，这将为链提供高亮显示效果。你还可以使用第 8 章涵盖的文本和字体属性来更改字体大小、字体样式、文本颜色、文本装饰等。
 
 此外，我们可以根据状态对链接进行样式化。链接可以处于四种状态：
 
 - `link`（未访问的链接）
+
 - `visited`（已访问的链接）
+
 - `hover`（当鼠标悬停在其上方时）
+
 - `active`（当点击点击时）
 
 要指定状态，我们写：
@@ -1995,10 +1995,6 @@ li {
 
 搞定！我们刚刚创建了一个简单的水平导航栏。该导航栏的源代码已作为练习的一部分给出。尝试一下并让它在视觉上更有吸引力。你还可以为四种链接状态指定不同的样式。
 
-
-
-
-
 > 刷新浏览器。什么都没有变化吧？那是因为 `list-style-position: outside;` 是默认值。现在将 `list-style-position: outside;` 改为 `list-style-position: inside;`。你会发现无序列表向右稍微移动了（即缩进变大了）。
 
 > 5. 移除 `ul` 的 `list-style-type` 属性，并改用以下属性：
@@ -2018,6 +2014,7 @@ li {
 ### 练习 9.2
 
 1. 在浏览器和文本编辑器中同时打开 `Chapter 9 - Navigation Bar.html` 文件。
+
 2. 此页面展示了如何使用列表和链接的 CSS 规则创建一个水平导航栏的示例。书中解释了这些步骤。学习代码并尝试修改 CSS 声明以改进此导航栏的设计。
 
 # 第 10 章：表格
@@ -2059,7 +2056,7 @@ td {
 
 第二行、第三行和第四行使用 `<td>` 标签定义。“Derek”、“Aaron”和“31”等单词周围的空间是 `<td>` 元素的内边距（20px）。
 
-`<th>` 和 `<td>` 元素没有声明外边距，因为外边距会被表格单元格忽略。因此，我们无法指定单元格之间的间距。默认情况下，单个表格单元格之间会有一个小的间隙。此外，即使你将表格内边距设置为 0px，表格边框（虚线）与单元格边框（实线）之间也存在间隙。如果你只需要一个边框，必须使用 `border-collapse` 属性：
+`<th>` 和 `<td>` 元素没有声明外边距，因为外边距会被表格单元格忽略。因此，我们无法指定单元格之间的间距。默认情况下，单个表格单元之间会有一个小的间隙。此外，即使你将表格内边距设置为 0px，表格边框（虚线）与单元格边框（实线）之间也存在间隙。如果你只需要一个边框，必须使用 `border-collapse` 属性：
 
 ```css
 border-collapse: collapse;
@@ -2151,9 +2148,6 @@ tr:nth-child(odd) {
 }
 ```
 
-
-
-
 ## 7. 分别在第一个、第二个和第三个 `<th>` 起始标签上添加 `id="firstColumn"`、`id="secondColumn"` 和 `id="thirdColumn"` 属性。接下来，添加以下 CSS 规则来分别调整三列的宽度：
 
 ```css
@@ -2173,6 +2167,7 @@ tr:nth-child(odd) {
 ## 8. 修改 `tr` 的 CSS 声明并观察表格发生了什么。尝试添加：
 
 (a) `text-align: center;`
+
 (b) `vertical-align: top;`
 
 从 `tr` 中删除上述属性并将它们添加到 `th` 中。注意发生了什么。对 `td` 重复相同的操作。如果你没有看到任何区别，请增加表格的宽度和/或行的高度。
@@ -2180,6 +2175,7 @@ tr:nth-child(odd) {
 ## 9. 修改 `tr` 的 CSS 声明并观察表格发生了什么。尝试添加：
 
 (a) `background-color: green;`
+
 (b) `color: white;`
 
 从 `tr` 中删除上述属性并将它们添加到 `th` 中。注意发生了什么。
@@ -2392,10 +2388,6 @@ display: inline;
 <body>
 ```
 
-
-
-
-
 这个 `<span id="displaydemo">黄色框</span>` 用来演示行内元素和块级元素之间的区别。
 
 “这就像`<span id="magic">魔法</span>`一样。你可以让文字消失。”
@@ -2585,4 +2577,3 @@ tr {
 </body>
 </html>
 ```
-

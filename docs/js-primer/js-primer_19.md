@@ -1,3 +1,4 @@
+
 # 原型对象
 
 > 原文：[`jsprimer.net/basic/prototype-object/`](https://jsprimer.net/basic/prototype-object/)
@@ -15,9 +16,9 @@ console.log(obj.toString()); // "[object Object]"
 
 本章将确定内置方法的实现位置，以及为什么可以从`Object`的实例中调用。 由于详细的机制将在“类”章节中重新解释，因此本章的目的是了解大致的操作流程。
 
-## *`Object`是所有的起源*
+## `Object`是所有的起源
 
-*`Object`与其他对象（如`Array`、`String`、`Function`等）有所不同的特点在于，其他对象都继承自`Object`。
+`Object`与其他对象（如`Array`、`String`、`Function`等）有所不同的特点在于，其他对象都继承自`Object`。
 
 更准确地说，几乎所有的对象都继承自`Object.prototype`属性中定义的`prototype`对象。 `prototype`对象是在创建所有对象时自动添加的特殊对象。 `Object`的`prototype`对象可以看作是提供给所有对象使用的基础对象。
 
@@ -28,7 +29,7 @@ console.log(obj.toString()); // "[object Object]"
 如前所述，`toString`方法定义在`Object`的`prototype`对象中。 我们可以引用`Object.prototype.toString`方法的实现本身。
 
 ```
-// `Object.prototype`オブジェクトに`toString`メソッドの定義がある
+// `Object.prototype`对象中有`toString`方法的定义
 console.log(typeof Object.prototype.toString); // => "function" 
 ```
 
@@ -42,10 +43,10 @@ console.log(typeof Object.prototype.toString); // => "function"
 const obj = {
     "key": "value"
 };
-// `obj`インスタンスは`Object.prototype`に定義されたものを継承する
-// `obj.toString`は継承した`Object.prototype.toString`を参照している
+// `obj`实例继承了`Object.prototype`中定义的内容
+// `obj.toString`引用了继承的`Object.prototype.toString`
 console.log(obj.toString === Object.prototype.toString); // => true
-// インスタンスからプロトタイプメソッドを呼び出せる
+// 实例可以调用原型方法
 console.log(obj.toString()); // => "[object Object]" 
 ```
 
@@ -53,7 +54,7 @@ console.log(obj.toString()); // => "[object Object]"
 
 这种从实例引用到原型对象上定义的方法的机制称为**原型链**。 关于原型链的机制，我们将在“类”章节中进行讨论，因此在这里只需要了解从实例中调用原型方法即可。
 
-### *[专栏] 关于`Object#toString`的缩写表示*
+### [专栏] 关于`Object#toString`的缩写表示
 
 *在本书中，由于每次都写上`prototype`会显得冗长，因此有时会使用“Object 的`toString`方法”这样的缩写形式。 在除了本书之外的其他文本中，可能会使用`Object.prototype.toString`表示为`Object#toString`这样的形式，使用`#`代替`prototype`。
 
@@ -61,14 +62,14 @@ console.log(obj.toString()); // => "[object Object]"
 
 因此，本书不使用`Object#toString`这样的缩写形式来表示`Object.prototype.toString`，而是保持原样。
 
-### *原型方法和实例方法的优先级*
+### 原型方法和实例方法的优先级
 
 *有时，实例对象中也可能定义了与原型方法同名的方法。 在这种情况下，实例定义的方法将优先调用。
 
 下面的代码定义了一个名为`customObject`的`Object`实例，并定义了`toString`方法。 执行代码后，我们发现实例方法优先于原型方法被调用。
 
 ```
-// オブジェクトのインスタンスにtoStringメソッドを定義
+// 在对象实例上定义toString方法
 const customObject = {
     toString() {
         return "custom value";
@@ -79,7 +80,7 @@ console.log(customObject.toString()); // => "custom value"
 
 如此一来，当实例和原型对象中有相同名称的方法时，实例的方法将优先。
 
-### *`Object.hasOwn`静态方法和`in`运算符的区别*
+### `Object.hasOwn`静态方法和`in`运算符的区别
 
 在“对象”章节中，我们已经学习了`Object.hasOwn`静态方法和`in`运算符的行为差异。 这两种行为的差异与本章介绍的原型对象有关。
 
@@ -89,57 +90,57 @@ console.log(customObject.toString()); // => "custom value"
 
 ```
 const obj = {};
-// `obj`というオブジェクト自体に`toString`メソッドが定義されているわけではない
+// `obj`对象本身没有定义`toString`方法
 console.log(Object.hasOwn(obj, "toString")); // => false
-// `in`演算子は指定されたプロパティ名が見つかるまで親をたどるため、`Object.prototype`まで見にいく
+// `in`运算符会一直查找直到找到指定属性，因此会检查到`Object.prototype`
 console.log("toString" in obj); // => true 
 ```
 
 如下所示，如果实例具有`toString`方法，则`Object.hasOwn`静态方法也会返回`true`。
 
 ```
-// オブジェクトのインスタンスにtoStringメソッドを定義
+// 在对象实例上定义toString方法
 const obj = {
     toString() {
         return "custom value";
     }
 };
-// オブジェクトのインスタンスが`toString`メソッドを持っている
+// 对象实例具有`toString`方法
 console.log(Object.hasOwn(obj, "toString")); // => true
 console.log("toString" in obj); // => true 
 ```
 
-### *明确对象的继承源的`Object.create`方法*
+### 明确对象的继承源的`Object.create`方法
 
 *通过使用`Object.create`方法，可以创建一个新对象，该对象继承自指定的`prototype`对象。
 
 通过前面的解释，我们知道对象字面量会自动继承`Object.prototype`对象。通过使用`Object.create`方法，可以创建新对象，如下所示。
 
 ```
-// const obj = {} と同じ意味
+// 与 const obj = {} 具有相同含义
 const obj = Object.create(Object.prototype);
-// `obj`は`Object.prototype`を継承している
-// そのため、`obj.toString`と`Object.prototype.toString`は同じとなる
+// `obj`继承自`Object.prototype`
+// 因此，`obj.toString`和`Object.prototype.toString`是相同的
 console.log(obj.toString === Object.prototype.toString); // => true 
 ```
 
-### *Array 也继承自 Object*
+### `Array` 也继承自 Object
 
 *`Object`和`Object.prototype`的关系与内置对象`Array`和`Array.prototype`的关系类似。同样地，数组（`Array`）的实例也会继承`Array.prototype`。此外，由于`Array.prototype`也继承了`Object.prototype`，因此数组（`Array`）的实例也会继承`Object.prototype`。
 
 > `Array`的实例 → `Array.prototype` → `Object.prototype`
 
-使用`Object.create`方法来表示`Array`和`Object`之间的关系。这段伪代��中，`Array`构造函数的实现等与实际情况有所不同，请注意这只是一个概念。
+使用`Object.create`方法来表示`Array`和`Object`之间的关系。这段伪代码中，`Array`构造函数的实现等与实际情况有所不同，请注意这只是一个概念。
 
 ```
-// このコードはイメージです！
-// `Array`コンストラクタ自身は関数でもある
+// 此代码仅为示意图！
+// `Array`构造函数本身也是一个函数
 const Array = function() {};
-// `Array.prototype`は`Object.prototype`を継承している
+// `Array.prototype`继承自`Object.prototype`
 Array.prototype = Object.create(Object.prototype);
-// `Array`のインスタンスは、`Array.prototype`を継承している
+// `Array`的实例继承自`Array.prototype`
 const array = Object.create(Array.prototype);
-// `array`は`Object.prototype`を継承している
+// `array`也继承自`Object.prototype`
 console.log(array.hasOwnProperty === Object.prototype.hasOwnProperty); // => true 
 ```
 
@@ -149,7 +150,7 @@ console.log(array.hasOwnProperty === Object.prototype.hasOwnProperty); // => tru
 
 ```
 const array = [];
-// `Array`のインスタンス -> `Array.prototype` -> `Object.prototype`
+// `Array`的实例 → `Array.prototype` → `Object.prototype`
 console.log(array.hasOwnProperty === Object.prototype.hasOwnProperty); // => true 
 ```
 
@@ -161,20 +162,20 @@ console.log(array.hasOwnProperty === Object.prototype.hasOwnProperty); // => tru
 
 ```
 const numbers = [1, 2, 3];
-// `Array.prototype.toString`が定義されているため、`Object.prototype.toString`とは異なる出力形式となる
+// 由于`Array.prototype.toString`已定义，因此输出格式与`Object.prototype.toString`不同
 console.log(numbers.toString()); // => "1,2,3" 
 ```
 
-## *不继承`Object.prototype`的对象*
+### 不继承`Object.prototype`的对象
 
 *虽然说`Object`是所有对象的父对象，但也存在例外情况。
 
 尽管是一种惯用法，但通过`Object.create(null)`可以创建不继承`Object.prototype`的对象，从而创建一个真正**空的对象**。
 
 ```
-// 親がnull、つまり親がいないオブジェクトを作る
+// 创建一个没有父对象（即父对象为null）的对象
 const obj = Object.create(null);
-// Object.prototypeを継承しないため、hasOwnPropertyが存在しない
+// 由于不继承`Object.prototype`，因此`hasOwnProperty`不存在
 console.log(obj.hasOwnProperty); // => undefined 
 ```
 
@@ -183,13 +184,13 @@ console.log(obj.hasOwnProperty); // => undefined
 普通对象也具有类似`Map`的特性，因为一开始就存在一些属性可以访问。这是因为`Object`的实例默认会继承`Object.prototype`，因此在创建对象时就存在像`toString`这样的属性名。因此，通过`Object.create(null)`创建不继承`Object.prototype`的对象，这些对象曾被用作`Map`的替代品。
 
 ```
-// 空オブジェクトを作成
+// 创建空对象
 const obj = {};
-// "toString"という値を定義してないのに、"toString"が存在している
-console.log(obj["toString"]);// Function
-// Mapのような空オブジェクト
+// 虽然没有定义"toString"值，但"toString"属性存在
+console.log(obj["toString"]); // Function
+// 类似Map的空对象
 const mapLike = Object.create(null);
-// toStringキーは存在しない
+// "toString"键不存在
 console.log(mapLike["toString"]); // => undefined 
 ```
 
@@ -200,24 +201,24 @@ console.log(mapLike["toString"]); // => undefined
 如下所示，不继承`Object.prototype`的对象无法调用`Object.prototype.hasOwnProperty`方法。因此，在检查对象是否具有属性时，无法简单地使用`hasOwnProperty`方法。
 
 ```
-// Mapのような空オブジェクト
+// 类似Map的空对象
 const mapLike = Object.create(null);
-// `Object.prototype`を継承していないため呼び出すと例外が発生する
-console.log(mapLike.hasOwnProperty("key")); // => Error: hasOwnPropertyメソッドは呼び出せない 
+// 由于未继承`Object.prototype`，调用时会抛出异常
+console.log(mapLike.hasOwnProperty("key")); // => Error: hasOwnProperty方法无法调用 
 ```
 
 自 ES2022 起，`Object.hasOwn`静态方法可以使用，无论目标对象是否继承自`Object.prototype`。
 
 ```
-// Mapのような空オブジェクト
+// 类似Map的空对象
 const mapLike = Object.create(null);
-// keyは存在しない
+// key不存在
 console.log(Object.hasOwn(mapLike, "key")); // => false 
 ```
 
 这样，不依赖于目标对象的`Object.hasOwn`静态方法修正了`hasOwnProperty`方法的缺点。
 
-## *总结*
+### 总结
 
 *在本章中，我们学习了有关原型对象的知识。
 

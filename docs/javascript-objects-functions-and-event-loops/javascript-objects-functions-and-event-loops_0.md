@@ -1,13 +1,7 @@
+
 # Javascript：对象、函数与事件循环
 
-
-
 ![](img/calibre_cover.jpg)
-
-
-
-
-
 
 版权所有 2017 J Adrian Zimmer
 
@@ -16,7 +10,6 @@
 版本：1.0
 
 本书有两个目录。一个是章节的注释列表；另一个列出了每个主要代码段的列表。
-
 
 ## 前言
 
@@ -61,11 +54,11 @@ var counter = {
 }
 ```
 
-不要将其与类混淆。它是一个对象。正如你将看到的，`prototype` 成为其他对象的 [[Prototype]]。许多对象都有一个名为 `prototype` 的属性。正如你将看到的，`prototype` 成为其他对象的 [[Prototype]]。它们并不是它们所所属对象的 [[Prototype]]。
+不要将其与类混淆。它是一个对象。正如你将看到的，`prototype` 成为其他对象的 `[[Prototype]]`。许多对象都有一个名为 `prototype` 的属性。正如你将看到的，`prototype` 成为其他对象的 `[[Prototype]]`。它们并不是它们所所属对象的 `[[Prototype]]`。
 
 例如，`Object.prototype` 成为大多数其他对象继承链中的最后一个对象。因此，大多数对象都可以访问 `toString` 方法，因为 `toString` 存在于 `Object.prototype` 中。
 
-`getPrototypeOf` 方法返回其参数在继承链中的直接前驱。你可以将其构想为“父类”（super）对象。它通常被称为对象的 [[Prototype]]。
+`getPrototypeOf` 方法返回其参数在继承链中的直接前驱。你可以将其构想为“父类”（super）对象。它通常被称为对象的 `[[Prototype]]`。
 
 获取“自身”（own）属性名称意味着获取对象本身所拥有的属性，而不是从其他对象继承而来的属性。
 
@@ -84,22 +77,26 @@ Javascript 有一个内置对象 `Object`，其方法帮助操作对象。两个
 true
 ```
 
-`Object` 中还有其他实用的函数。其中一个我将使用 `Object.create`，它可以创建一个具有指定 [[Prototype]] 的空对象。特别是这个表达式
+`Object` 中还有其他实用的函数。其中一个我将使用 `Object.create`，它可以创建一个具有指定 `[[Prototype]]` 的空对象。特别是这个表达式
 
 ```
 Object.create(obj)
 ```
 
-会创建一个 [[Prototype]] 为 `obj` 的新空对象。
+会创建一个 `[[Prototype]]` 为 `obj` 的新空对象。
 
 ### 问题
 
 按上述实现 `counter`，然后
 
 1. 创建 `counter2`，它继承自 `counter` 并添加一个 `decr` 方法，使 `val` 减 1。
+
 2. 检查以下每个操作
+
    `Object.getOwnPropertyNames(counter2)`
+
    `Object.getOwnPropertyNames(counter)`
+
    返回什么。从目前的内容来看答案并不显而易见，所以请尝试一下。
 
 ### 答案
@@ -122,10 +119,6 @@ counter2.decr = function() { this.val -= 1 }
 
 如果你对 `counter2` 的自身属性没有两个不同的答案，那么你漏掉了什么。当你执行 `incr` 或 `decr` 时，情况会发生变化。
 
-
-
-
-
 ### 创建时
 
 ```
@@ -280,18 +273,10 @@ Function.prototype.fixThis = function(obj) {
 
 正如大家所知的，`arguments` 是一个伪数组，包含了传递给其所属函数的任何参数。
 
-### III. 两行文本居中
 
-```
-Object.getOwnPropertyNames(counter2)
-['decr']
-```
 
-但在执行了 `counter2.incr` 或 `counter2.decr` 之一后，你将得到
-
-```javascript
-Object.getOwnPropertyNames(counter2)
 ['decr', 'val']
+
 ```
 
 原因是因为 `counter2` 可以通过继承从 `counter` 获取数据值，但它无法修改它们。当需要修改时，会在 `counter2` 中创建一个新属性。此后，从 `counter2` 获取的属性将是 `counter2` 自身的属性，而不是它在 `counter` 中原始的属性。
@@ -313,11 +298,14 @@ Object.getOwnPropertyNames(counter2)
 
 ```javascript
 var getP = Object.getPrototypeOf;
+
 function f() {}
+
 getP(f)===Function.prototype
-true
+// true
+
 getP(Function.prototype)===Object.prototype
-true
+// true
 ```
 
 `apply` 和 `call` 都需要一个参数，用于指定在函数执行时 `this` 指向哪个对象。此外，这两个函数都接受普通参数列表。它们唯一的区别在于参数列表的指定方式。你可以在下面的示例中看到这种区别。
@@ -363,7 +351,7 @@ f(2)
 ```javascript
 var obj = {f:f, y:3}
 obj.f(2)
-5
+// 5
 ```
 
 这之所以有效是因为 `obj` 同时包含了 `y` 和 `f`。如果对象中缺少 `f`，则无法工作。
@@ -377,7 +365,7 @@ obj.f(2) // 不行
 
 ```javascript
 Object.apply({y:3},f)
-5
+// 5
 ```
 
 总结：函数是可调用的对象，方法是函数，而 `this` 由函数执行时的上下文决定。你可以通过使用 `call` 或 `apply` 来处理该上下文。
@@ -398,18 +386,20 @@ f.fixThis(obj);
 
 ```javascript
 function f(z) { return z + this.x }
+
 var x = '?'
 f('hi')
-'hi?'
+// 'hi?'
+
 var obj = {x: '!'}
 var g = f.fixThis(obj)
 g('hi')
-'hi!'
+// 'hi!'
 ```
 
 你可能知道 `Function.prototype` 已经包含一个行为与 `fixThis` 相似的函数 `bind`。使用该函数将就忽略了本次练习的意图。
 
-#### 答案 
+#### 答案
 
 你可能已经发现定义需要这样开头
 
@@ -436,3571 +426,41 @@ Function.prototype.fixThis = function(obj) {
 
 ### III. 两行文本居中
 
-```
+```javascript
 Object.getOwnPropertyNames(counter2)
-['decr']
+// ['decr']
 ```
 
 但在执行了 `counter2.incr` 或 `counter2.decr` 之一后，你将得到
 
 ```javascript
 Object.getOwnPropertyNames(counter2)
-['decr', 'val']
+// ['decr', 'val']
 ```
 
 原因是因为 `counter2` 可以通过继承从 `counter` 获取数据值，但它无法修改它们。当需要修改时，会在 `counter2` 中创建一个新属性。此后，从 `counter2` 获取的属性将是 `counter2` 自身的属性，而不是它在 `counter` 中原始的属性。
 
 这意味着 `counter` 可以用于为任何作为其 `[[Prototype]]` 的对象提供初始值。
 
-## II. 函数
 
-函数是可调用的对象，这意味着：
 
-- 它们是包含函数主体（很可能是编译后的形式）的对象。
-- 它们的继承链可以访问到执行该函数主体的方法。
 
-函数对象之所以可以访问执行其代码的方法，是因为它们的继承链中被插入了 `Function.prototype`。在 `Function.prototype` 中有两个可以执行函数的方法，即 `apply` 和 `call`。
+# JavaScript 对象、函数与事件循环深度解析
 
-下面的简短交互过程展示了函数的继承链。
-
-### 澄清 `Function.prototype`
-
-```javascript
-var getP = Object.getPrototypeOf;
-function f() {}
-getP(f)===Function.prototype
-true
-getP(Function.prototype)===Object.prototype
-true
-```
-
-`apply` 和 `call` 都需要一个参数，用于指定在函数执行时 `this` 指向哪个对象。此外，这两个函数都接受普通参数列表。它们唯一的区别在于参数列表的指定方式。你可以在下面的示例中看到这种区别。
-
-### `call` 和 `apply` 的区别
-
-假设有如下定义
-
-```javascript
-function f(x,y) { return x+y }
-```
-
-那么这个
-
-```javascript
-f.call({},2,3)
-```
-
-以及这个
-
-```javascript
-f.apply({},[2,3])
-```
-
-都将返回 5。在两种情况下，`this` 都指向一个空对象。
-
-一个更具信息量的示例涉及这个函数
-
-```javascript
-function f(x) { return x+this.y }
-```
-
-它期望在一个包含 `y` 的 `this` 对象上下文中执行。以这种方式执行它
-
-```javascript
-f(2)
-```
-
-此时 `this` 将指向全局对象。除非全局已赋值了 `y`，否则执行将失败。
-
-另一种执行 `f` 的方法是
-
-```javascript
-var obj = {f:f, y:3}
-obj.f(2)
-5
-```
-
-这之所以有效是因为 `obj` 同时包含了 `y` 和 `f`。如果对象中缺少 `f`，则无法工作。
-
-```javascript
-var obj = {y:3}
-obj.f(2) // 不行
-```
-
-`call` 和 `apply` 的作用是允许 `this` 指向与执行 `f` 时不同的对象。例如，我们可以从全局对象执行 `f`，并通过这种方式从另一个对象获取 `this.y`
-
-```javascript
-Object.apply({y:3},f)
-5
-```
-
-总结：函数是可调用的对象，方法是函数，而 `this` 由函数执行时的上下文决定。你可以通过使用 `call` 或 `apply` 来处理该上下文。
-
-你可以在下一节中阅读更多关于 `this` 的内容。
-
-### 问题
-
-当函数 `f` 执行时，`this` 指向的对象由其执行时的上下文决定。但如果我不希望这样呢？假设我想让函数定义中的 `this` 无论上下文如何都指向相同的内容。这可以通过 `call` 或 `apply` 实现，但这些函数用起来并不好用。
-
-这是一个你可以解决的问题。创建一个工厂方法 `fixThis`，使得
-
-```javascript
-f.fixThis(obj);
-```
-
-它会返回一个与 `f` 相似的函数，不同之处在于它的 `this` 指针将始终引用 `obj`。例如
-
-```javascript
-function f(z) { return z + this.x }
-var x = '?'
-f('hi')
-'hi?'
-var obj = {x: '!'}
-var g = f.fixThis(obj)
-g('hi')
-'hi!'
-```
-
-你可能知道 `Function.prototype` 已经包含一个行为与 `fixThis` 相似的函数 `bind`。使用该函数将就忽略了本次练习的意图。
-
-#### 答案 
-
-你可能已经发现定义需要这样开头
-
-```javascript
-Function.prototype.fixThis = function(obj) {
-    ...
-}
-```
-
-并且你需要定义一个供 `fixThis` 返回的函数。该函数必须使用 `apply` 或 `call` 执行 `f`。在这一点上，你可能会卡住，因为你不确定如何引用 `f`。要正确实现，你需要记住两件事：`f` 是 `fixThis` 内部 `this` 指向的对象，但 `f` 并不是 `fixThis` 返回的函数中 `this` 指向的对象。如果需要，请带着这个见解再次尝试。
-
-`fixThis` 的实现
-
-```javascript
-Function.prototype.fixThis = function(obj) {
-    var that = this;
-    return function() {
-        return that.apply(obj,arguments);
-    }
-}
-```
-
-正如大家所知的，`arguments` 是一个伪数组，包含了传递给其所属函数的任何参数。
-
-### III. 两行文本居中
-
-```
-Object.getOwnPropertyNames(counter2)
-['decr']
-```
-
-但在执行了 `counter2.incr` 或 `counter2.decr` 之一后，你将得到
-
-```javascript
-Object.getOwnPropertyNames(counter2)
-['decr', 'val']
-```
-
-原因是因为 `counter2` 可以通过继承从 `counter` 获取数据值，但它无法修改它们。当需要修改时，会在 `counter2` 中创建一个新属性。此后，从 `counter2` 获取的属性将是 `counter2` 自身的属性，而不是它在 `counter` 中原始的属性。
-
-这意味着 `counter` 可以用于为任何作为其 `[[Prototype]]` 的对象提供初始值。
-
-## II. 函数
-
-函数是可调用的对象，这意味着：
-
-- 它们是包含函数主体（很可能是编译后的形式）的对象。
-- 它们的继承链可以访问到执行该函数主体的方法。
-
-函数对象之所以可以访问执行其代码的方法，是因为它们的继承链中被插入了 `Function.prototype`。在 `Function.prototype` 中有两个可以执行函数的方法，即 `apply` 和 `call`。
-
-下面的简短交互过程展示了函数的继承链。
-
-### 澄清 `Function.prototype`
-
-```javascript
-var getP = Object.getPrototypeOf;
-function f() {}
-getP(f)===Function.prototype
-true
-getP(Function.prototype)===Object.prototype
-true
-```
-
-`apply` 和 `call` 都需要一个参数，用于指定在函数执行时 `this` 指向哪个对象。此外，这两个函数都接受普通参数列表。它们唯一的区别在于参数列表的指定方式。你可以在下面的示例中看到这种区别。
-
-### `call` 和 `apply` 的区别
-
-假设有如下定义
-
-```javascript
-function f(x,y) { return x+y }
-```
-
-那么这个
-
-```javascript
-f.call({},2,3)
-```
-
-以及这个
-
-```javascript
-f.apply({},[2,3])
-```
-
-都将返回 5。在两种情况下，`this` 都指向一个空对象。
-
-一个更具信息量的示例涉及这个函数
-
-```javascript
-function f(x) { return x+this.y }
-```
-
-它期望在一个包含 `y` 的 `this` 对象上下文中执行。以这种方式执行它
-
-```javascript
-f(2)
-```
-
-此时 `this` 将指向全局对象。除非全局已赋值了 `y`，否则执行将失败。
-
-另一种执行 `f` 的方法是
-
-```javascript
-var obj = {f:f, y:3}
-obj.f(2)
-5
-```
-
-这之所以有效是因为 `obj` 同时包含了 `y` 和 `f`。如果对象中缺少 `f`，则无法工作。
-
-```javascript
-var obj = {y:3}
-obj.f(2) // 不行
-```
-
-`call` 和 `apply` 的作用是允许 `this` 指向与执行 `f` 时不同的对象。例如，我们可以从全局对象执行 `f`，并通过这种方式从另一个对象获取 `this.y`
-
-```javascript
-Object.apply({y:3},f)
-5
-```
-
-总结：函数是可调用的对象，方法是函数，而 `this` 由函数执行时的上下文决定。你可以通过使用 `call` 或 `apply` 来处理该上下文。
-
-你可以在下一节中阅读更多关于 `this` 的内容。
-
-### 问题
-
-当函数 `f` 执行时，`this` 指向的对象由其执行时的上下文决定。但如果我不希望这样呢？假设我想让函数定义中的 `this` 无论上下文如何都指向相同的内容。这可以通过 `call` 或 `apply` 实现，但这些函数用起来并不好用。
-
-这是一个你可以解决的问题。创建一个工厂方法 `fixThis`，使得
-
-```javascript
-f.fixThis(obj);
-```
-
-它会返回一个与 `f` 相似的函数，不同之处在于它的 `this` 指针将始终引用 `obj`。例如
-
-```javascript
-function f(z) { return z + this.x }
-var x = '?'
-f('hi')
-'hi?'
-var obj = {x: '!'}
-var g = f.fixThis(obj)
-g('hi')
-'hi!'
-```
-
-你可能知道 `Function.prototype` 已经包含一个行为与 `fixThis` 相似的函数 `bind`。使用该函数将就忽略了本次练习的意图。
-
-#### 答案 
-
-你可能已经发现定义需要这样开头
-
-```javascript
-Function.prototype.fixThis = function(obj) {
-    ...
-}
-```
-
-并且你需要定义一个供 `fixThis` 返回的函数。该函数必须使用 `apply` 或 `call` 执行 `f`。在这一点上，你可能会卡住，因为你不确定如何引用 `f`。要正确实现，你需要记住两件事：`f` 是 `fixThis` 内部 `this` 指向的对象，但 `f` 并不是 `fixThis` 返回的函数中 `this` 指向的对象。如果需要，请带着这个见解再次尝试。
-
-`fixThis` 的实现
-
-```javascript
-Function.prototype.fixThis = function(obj) {
-    var that = this;
-    return function() {
-        return that.apply(obj,arguments);
-    }
-}
-```
-
-正如大家所知的，`arguments` 是一个伪数组，包含了传递给其所属函数的任何参数。
-
-### III. 两行文本居中
-
-```
-Object.getOwnPropertyNames(counter2)
-['decr']
-```
-
-但在执行了 `counter2.incr` 或 `counter2.decr` 之一后，你将得到
-
-```javascript
-Object.getOwnPropertyNames(counter2)
-['decr', 'val']
-```
-
-原因是因为 `counter2` 可以通过继承从 `counter` 获取数据值，但它无法修改它们。当需要修改时，会在 `counter2` 中创建一个新属性。此后，从 `counter2` 获取的属性将是 `counter2` 自身的属性，而不是它在 `counter` 中原始的属性。
-
-这意味着 `counter` 可以用于为任何作为其 `[[Prototype]]` 的对象提供初始值。
-
-## II. 函数
-
-函数是可调用的对象，这意味着：
-
-- 它们是包含函数主体（很可能是编译后的形式）的对象。
-- 它们的继承链可以访问到执行该函数主体的方法。
-
-函数对象之所以可以访问执行其代码的方法，是因为它们的继承链中被插入了 `Function.prototype`。在 `Function.prototype` 中有两个可以执行函数的方法，即 `apply` 和 `call`。
-
-下面的简短交互过程展示了函数的继承链。
-
-### 澄清 `Function.prototype`
-
-```javascript
-var getP = Object.getPrototypeOf;
-function f() {}
-getP(f)===Function.prototype
-true
-getP(Function.prototype)===Object.prototype
-true
-```
-
-`apply` 和 `call` 都需要一个参数，用于指定在函数执行时 `this` 指向哪个对象。此外，这两个函数都接受普通参数列表。它们唯一的区别在于参数列表的指定方式。你可以在下面的示例中看到这种区别。
-
-### `call` 和 `apply` 的区别
-
-假设有如下定义
-
-```javascript
-function f(x,y) { return x+y }
-```
-
-那么这个
-
-```javascript
-f.call({},2,3)
-```
-
-以及这个
-
-```javascript
-f.apply({},[2,3])
-```
-
-都将返回 5。在两种情况下，`this` 都指向一个空对象。
-
-一个更具信息量的示例涉及这个函数
-
-```javascript
-function f(x) { return x+this.y }
-```
-
-它期望在一个包含 `y` 的 `this` 对象上下文中执行。以这种方式执行它
-
-```javascript
-f(2)
-```
-
-此时 `this` 将指向全局对象。除非全局已赋值了 `y`，否则执行将失败。
-
-另一种执行 `f` 的方法是
-
-```javascript
-var obj = {f:f, y:3}
-obj.f(2)
-5
-```
-
-这之所以有效是因为 `obj` 同时包含了 `y` 和 `f`。如果对象中缺少 `f`，则无法工作。
-
-```javascript
-var obj = {y:3}
-obj.f(2) // 不行
-```
-
-`call` 和 `apply` 的作用是允许 `this` 指向与执行 `f` 时不同的对象。例如，我们可以从全局对象执行 `f`，并通过这种方式从另一个对象获取 `this.y`
-
-```javascript
-Object.apply({y:3},f)
-5
-```
-
-总结：函数是可调用的对象，方法是函数，而 `this` 由函数执行时的上下文决定。你可以通过使用 `call` 或 `apply` 来处理该上下文。
-
-你可以在下一节中阅读更多关于 `this` 的内容。
-
-### 问题
-
-当函数 `f` 执行时，`this` 指向的对象由其执行时的上下文决定。但如果我不希望这样呢？假设我想让函数定义中的 `this` 无论上下文如何都指向相同的内容。这可以通过 `call` 或 `apply` 实现，但这些函数用起来并不好用。
-
-这是一个你可以解决的问题。创建一个工厂方法 `fixThis`，使得
-
-```javascript
-f.fixThis(obj);
-```
-
-它会返回一个与 `f` 相似的函数，不同之处在于它的 `this` 指针将始终引用 `obj`。例如
-
-```javascript
-function f(z) { return z + this.x }
-var x = '?'
-f('hi')
-'hi?'
-var obj = {x: '!'}
-var g = f.fixThis(obj)
-g('hi')
-'hi!'
-```
-
-你可能知道 `Function.prototype` 已经包含一个行为与 `fixThis` 相似的函数 `bind`。使用该函数将就忽略了本次练习的意图。
-
-#### 答案 
-
-你可能已经发现定义需要这样开头
-
-```javascript
-Function.prototype.fixThis = function(obj) {
-    ...
-}
-```
-
-并且你需要定义一个供 `fixThis` 返回的函数。该函数必须使用 `apply` 或 `call` 执行 `f`。在这一点上，你可能会卡住，因为你不确定如何引用 `f`。要正确实现，你需要记住两件事：`f` 是 `fixThis` 内部 `this` 指向的对象，但 `f` 并不是 `fixThis` 返回的函数中 `this` 指向的对象。如果需要，请带着这个见解再次尝试。
-
-`fixThis` 的实现
-
-```javascript
-Function.prototype.fixThis = function(obj) {
-    var that = this;
-    return function() {
-        return that.apply(obj,arguments);
-    }
-}
-```
-
-正如大家所知的，`arguments` 是一个伪数组，包含了传递给其所属函数的任何参数。
-
-### III. 两行文本居中
-
-```
-Object.getOwnPropertyNames(counter2)
-['decr']
-```
-
-但在执行了 `counter2.incr` 或 `counter2.decr` 之一后，你将得到
-
-```javascript
-Object.getOwnPropertyNames(counter2)
-['decr', 'val']
-```
-
-原因是因为 `counter2` 可以通过继承从 `counter` 获取数据值，但它无法修改它们。当需要修改时，会在 `counter2` 中创建一个新属性。此后，从 `counter2` 获取的属性将是 `counter2` 自身的属性，而不是它在 `counter` 中原始的属性。
-
-这意味着 `counter` 可以用于为任何作为其 `[[Prototype]]` 的对象提供初始值。
-
-## II. 函数
-
-函数是可调用的对象，这意味着：
-
-- 它们是包含函数主体（很可能是编译后的形式）的对象。
-- 它们的继承链可以访问到执行该函数主体的方法。
-
-函数对象之所以可以访问执行其代码的方法，是因为它们的继承链中被插入了 `Function.prototype`。在 `Function.prototype` 中有两个可以执行函数的方法，即 `apply` 和 `call`。
-
-下面的简短交互过程展示了函数的继承链。
-
-### 澄清 `Function.prototype`
-
-```javascript
-var getP = Object.getPrototypeOf;
-function f() {}
-getP(f)===Function.prototype
-true
-getP(Function.prototype)===Object.prototype
-true
-```
-
-`apply` 和 `call` 都需要一个参数，用于指定在函数执行时 `this` 指向哪个对象。此外，这两个函数都接受普通参数列表。它们唯一的区别在于参数列表的指定方式。你可以在下面的示例中看到这种区别。
-
-### `call` 和 `apply` 的区别
-
-假设有如下定义
-
-```javascript
-function f(x,y) { return x+y }
-```
-
-那么这个
-
-```javascript
-f.call({},2,3)
-```
-
-以及这个
-
-```javascript
-f.apply({},[2,3])
-```
-
-都将返回 5。在两种情况下，`this` 都指向一个空对象。
-
-一个更具信息量的示例涉及这个函数
-
-```javascript
-function f(x) { return x+this.y }
-```
-
-它期望在一个包含 `y` 的 `this` 对象上下文中执行。以这种方式执行它
-
-```javascript
-f(2)
-```
-
-``` `this` 将指向全局对象。除非全局已赋值了 `y`，否则执行将失败。
-
-另一种执行 `f` 的方法是
-
-```javascript
-var obj = {f:f, y:3}
-obj.f(2)
-5
-```
-
-这之所以有效是因为 `obj` 同时包含了 `y` 和 `f`。如果对象中缺少 `f`，则无法工作。
-
-```javascript
-var obj = {y:3}
-obj.f(2) // 不行
-```
-
-`call` 和 `apply` 的作用是允许 `this` 指向与执行 `f` 时不同的对象。例如，我们可以从全局对象执行 `f`，并通过这种方式从另一个对象获取 `this.y`
-
-```javascript
-Object.apply({y:3},f)
-5
-```
-
-总结：函数是可调用的对象，方法是函数，而 `this` 由函数执行时的上下文决定。你可以通过使用 `call` 或 `apply` 来处理该上下文。
-
-你可以在下一节中阅读更多关于 `this` 的内容。
-
-### 问题
-
-当函数 `f` 执行时，`this` 指向的对象由其执行时的上下文决定。但如果我不希望这样呢？假设我想让函数定义中的 `this` 无论上下文如何都指向相同的内容。这可以通过 `call` 或 `apply` 实现，但这些函数用起来并不好用。
-
-这是一个你可以解决的问题。创建一个工厂方法 `fixThis`，使得
-
-```javascript
-f.fixThis(obj);
-```
-
-它会返回一个与 `f` 相似的函数，不同之处在于它的 `this` 指针将始终引用 `obj`。例如
-
-```javascript
-function f(z) { return z + this.x }
-var x = '?'
-f('hi')
-'hi?'
-var obj = {x: '!'}
-var g = f.fixThis(obj)
-g('hi')
-'hi!'
-```
-
-你可能知道 `Function.prototype` 已经包含一个行为与 `fixThis` 相似的函数 `bind`。使用该函数将就忽略了本次练习的意图。
-
-#### 答案 
-
-你可能已经发现定义需要这样开头
-
-```javascript
-Function.prototype.fixThis = function(obj) {
-    ...
-}
-```
-
-并且你需要定义一个供 `fixThis` 返回的函数。该函数必须使用 `apply` 或 `call` 执行 `f`。在这一点上，你可能会卡住，因为你不确定如何引用 `f`。要正确实现，你需要记住两件事：`f` 是 `fixThis` 内部 `this` 指向的对象，但 `f` 并不是 `fixThis` 返回的函数中 `this` 指向的对象。如果需要，请带着这个见解再次尝试。
-
-`fixThis` 的实现
-
-```javascript
-Function.prototype.fixThis = function(obj) {
-    var that = this;
-    return function() {
-        return that.apply(obj,arguments);
-    }
-}
-```
-
-正如大家所知的，`arguments` 是一个伪数组，包含了传递给其所属函数的任何参数。
-
-### III. 两行文本居中
-
-```
-Object.getOwnPropertyNames(counter2)
-['decr']
-```
-
-但在执行了 `counter2.incr` 或 `counter2.decr` 之一后，你将得到
-
-```javascript
-Object.getOwnPropertyNames(counter2)
-['decr', 'val']
-```
-
-原因是因为 `counter2` 可以通过继承从 `counter` 获取数据值，但它无法修改它们。当需要修改时，会在 `counter2` 中创建一个新属性。此后，从 `counter2` 获取的属性将是 `counter2` 自身的属性，而不是它在 `counter` 中原始的属性。
-
-这意味着 `counter` 可以用于为任何作为其 `[[Prototype]]` 的对象提供初始值。
-
-## II. 函数
-
-函数是可调用的对象，这意味着：
-
-- 它们是包含函数主体（很可能是编译后的形式）的对象。
-- 它们的继承链可以访问到执行该函数主体的方法。
-
-函数对象之所以可以访问执行其代码的方法，是因为它们的继承链中被插入了 `Function.prototype`。在 `Function.prototype` 中有两个可以执行函数的方法，即 `apply` 和 `call`。
-
-下面的简短交互过程展示了函数的继承链。
-
-### 澄清 `Function.prototype`
-
-```javascript
-var getP = Object.getPrototypeOf;
-function f() {}
-getP(f)===Function.prototype
-true
-getP(Function.prototype)===Object.prototype
-true
-```
-
-`apply` 和 `call` 都需要一个参数，用于指定在函数执行时 `this` 指向哪个对象。此外，这两个函数都接受普通参数列表。它们唯一的区别在于参数列表的指定方式。你可以在下面的示例中看到这种区别。
-
-### `call` 和 `apply` 的区别
-
-假设有如下定义
-
-```javascript
-function f(x,y) { return x+y }
-```
-
-那么这个
-
-```javascript
-f.call({},2,3)
-```
-
-以及这个
-
-```javascript
-f.apply({},[2,3])
-```
-
-都将返回 5。在两种情况下，`this` 都指向一个空对象。
-
-一个更具信息量的示例涉及这个函数
-
-```javascript
-function f(x) { return x+this.y }
-```
-
-它期望在一个包含 `y` 的 `this` 对象上下文中执行。以这种方式执行它
-
-```javascript
-f(2)
-```
-
-此时 `this` 将指向全局对象。除非全局已赋值了 `y`，否则执行将失败。
-
-另一种执行 `f` 的方法是
-
-```javascript
-var obj = {f:f, y:3}
-obj.f(2)
-5
-```
-
-这之所以有效是因为 `obj` 同时包含了 `y` 和 `f`。如果对象中缺少 `f`，则无法工作。
-
-```javascript
-var obj = {y:3}
-obj.f(2) // 不行
-```
-
-`call` 和 `apply` 的作用是允许 `this` 指向与执行 `f` 时不同的对象。例如，我们可以从全局对象执行 `f`，并通过这种方式从另一个对象获取 `this.y`
-
-```javascript
-Object.apply({y:3},f)
-5
-```
-
-总结：函数是可调用的对象，方法是函数，而 `this` 由函数执行时的上下文决定。你可以通过使用 `call` 或 `apply` 来处理该上下文。
-
-你可以在下一节中阅读更多关于 `this` 的内容。
-
-### 问题
-
-当函数 `f` 执行时，`this` 指向的对象由其执行时的上下文决定。但如果我不希望这样呢？假设我想让函数定义中的 `this` 无论上下文如何都指向相同的内容。这可以通过 `call` 或 `apply` 实现，但这些函数用起来并不好用。
-
-这是一个你可以解决的问题。创建一个工厂方法 `fixThis`，使得
-
-```javascript
-f.fixThis(obj);
-```
-
-它会返回一个与 `f` 相似的函数，不同之处在于它的 `this` 指针将始终引用 `obj`。例如
-
-```javascript
-function f(z) { return z + this.x }
-var x = '?'
-f('hi')
-'hi?'
-var obj = {x: '!'}
-var g = f.fixThis(obj)
-g('hi')
-'hi!'
-```
-
-你可能知道 `Function.prototype` 已经包含一个行为与 `fixThis` 相似的函数 `bind`。使用该函数将就忽略了本次练习的意图。
-
-#### 答案 
-
-你可能已经发现定义需要这样开头
-
-```javascript
-Function.prototype.fixThis = function(obj) {
-    ...
-}
-```
-
-并且你需要定义一个供 `fixThis` 返回的函数。该函数必须使用 `apply` 或 `call` 执行 `f`。在这一点上，你可能会卡住，因为你不确定如何引用 `f`。要正确实现，你需要记住两件事：`f` 是 `fixThis` 内部 `this` 指向的对象，但 `f` 并不是 `fixThis` 返回的函数中 `this` 指向的对象。如果需要，请带着这个见解再次尝试。
-
-`fixThis` 的实现
-
-```javascript
-Function.prototype.fixThis = function(obj) {
-    var that = this;
-    return function() {
-        return that.apply(obj,arguments);
-    }
-}
-```
-
-正如大家所知的，`arguments` 是一个伪数组，包含了传递给其所属函数的任何参数。
-
-### III. 两行文本居中
-
-```
-Object.getOwnPropertyNames(counter2)
-['decr']
-```
-
-但在执行了 `counter2.incr` 或 `counter2.decr` 之一后，你将得到
-
-```javascript
-Object.getOwnPropertyNames(counter2)
-['decr', 'val']
-```
-
-原因是因为 `counter2` 可以通过继承从 `counter` 获取数据值，但它无法修改它们。当需要修改时，会在 `counter2` 中创建一个新属性。此后，从 `counter2` 获取的属性将是 `counter2` 自身的属性，而不是它在 `counter` 中原始的属性。
-
-这意味着 `counter` 可以用于为任何作为其 `[[Prototype]]` 的对象提供初始值。
-
-## II. 函数
-
-函数是可调用的对象，这意味着：
-
-- 它们是包含函数主体（很可能是编译后的形式）的对象。
-- 它们的继承链可以访问到执行该函数主体的方法。
-
-函数对象之所以可以访问执行其代码的方法，是因为它们的继承链中被插入了 `Function.prototype`。在 `Function.prototype` 中有两个可以执行函数的方法，即 `apply` 和 `call`。
-
-下面的简短交互过程展示了函数的继承链。
-
-### 澄清 `Function.prototype`
-
-```javascript
-var getP = Object.getPrototypeOf;
-function f() {}
-getP(f)===Function.prototype
-true
-getP(Function.prototype)===Object.prototype
-true
-```
-
-`apply` 和 `call` 都需要一个参数，用于指定在函数执行时 `this` 指向哪个对象。此外，这两个函数都接受普通参数列表。它们唯一的区别在于参数列表的指定方式。你可以在下面的示例中看到这种区别。
-
-### `call` 和 `apply` 的区别
-
-假设有如下定义
-
-```javascript
-function f(x,y) { return x+y }
-```
-
-那么这个
-
-```javascript
-f.call({},2,3)
-```
-
-以及这个
-
-```javascript
-f.apply({},[2,3])
-```
-
-都将返回 5。在两种情况下，`this` 都指向一个空对象。
-
-一个更具信息量的示例涉及这个函数
-
-```javascript
-function f(x) { return x+this.y }
-```
-
-它期望在一个包含 `y` 的 `this` 对象上下文中执行。以这种方式执行它
-
-```javascript
-f(2)
-```
-
-此时 `this` 将指向全局对象。除非全局已赋值了 `y`，否则执行将失败。
-
-另一种执行 `f` 的方法是
-
-```javascript
-var obj = {f:f, y:3}
-obj.f(2)
-5
-```
-
-这之所以有效是因为 `obj` 同时包含了 `y` 和 `f`。如果对象中缺少 `f`，则无法工作。
-
-```javascript
-var obj = {y:3}
-obj.f(2) // 不行
-```
-
-`call` 和 `apply` 的作用是允许 `this` 指向与执行 `f` 时不同的对象。例如，我们可以从全局对象执行 `f`，并通过这种方式从另一个对象获取 `this.y`
-
-```javascript
-Object.apply({y:3},f)
-5
-```
-
-总结：函数是可调用的对象，方法是函数，而 `this` 由函数执行时的上下文决定。你可以通过使用 `call` 或 `apply` 来处理该上下文。
-
-你可以在下一节中阅读更多关于 `this` 的内容。
-
-### 问题
-
-当函数 `f` 执行时，`this` 指向的对象由其执行时的上下文决定。但如果我不希望这样呢？假设我想让函数定义中的 `this` 无论上下文如何都指向相同的内容。这可以通过 `call` 或 `apply` 实现，但这些函数用起来并不好用。
-
-这是一个你可以解决的问题。创建一个工厂方法 `fixThis`，使得
-
-```javascript
-f.fixThis(obj);
-```
-
-它会返回一个与 `f` 相似的函数，不同之处在于它的 `this` 指针将始终引用 `obj`。例如
-
-```javascript
-function f(z) { return z + this.x }
-var x = '?'
-f('hi')
-'hi?'
-var obj = {x: '!'}
-var g = f.fixThis(obj)
-g('hi')
-'hi!'
-```
-
-你可能知道 `Function.prototype` 已经包含一个行为与 `fixThis` 相似的函数 `bind`。使用该函数将就忽略了本次练习的意图。
-
-#### 答案 
-
-你可能已经发现定义需要这样开头
-
-```javascript
-Function.prototype.fixThis = function(obj) {
-    ...
-}
-```
-
-并且你需要定义一个供 `fixThis` 返回的函数。该函数必须使用 `apply` 或 `call` 执行 `f`。在这一点上，你可能会卡住，因为你不确定如何引用 `f`。要正确实现，你需要记住两件事：`f` 是 `fixThis` 内部 `this` 指向的对象，但 `f` 并不是 `fixThis` 返回的函数中 `this` 指向的对象。如果需要，请带着这个见解再次尝试。
-
-`fixThis` 的实现
-
-```javascript
-Function.prototype.fixThis = function(obj) {
-    var that = this;
-    return function() {
-        return that.apply(obj,arguments);
-    }
-}
-```
-
-正如大家所知的，`arguments` 是一个伪数组，包含了传递给其所属函数的任何参数。
-
-### III. 两行文本居中
-
-```
-Object.getOwnPropertyNames(counter2)
-['decr']
-```
-
-但在执行了 `counter2.incr` 或 `counter2.decr` 之一后，你将得到
-
-```javascript
-Object.getOwnPropertyNames(counter2)
-['decr', 'val']
-```
-
-原因是因为 `counter2` 可以通过继承从 `counter` 获取数据值，但它无法修改它们。当需要修改时，会在 `counter2` 中创建一个新属性。此后，从 `counter2` 获取的属性将是 `counter2` 自身的属性，而不是它在 `counter` 中原始的属性。
-
-这意味着 `counter` 可以用于为任何作为其 `[[Prototype]]` 的对象提供初始值。
-
-## II. 函数
-
-函数是可调用的对象，这意味着：
-
-- 它们是包含函数主体（很可能是编译后的形式）的对象。
-- 它们的继承链可以访问到执行该函数主体的方法。
-
-函数对象之所以可以访问执行其代码的方法，是因为它们的继承链中被插入了 `Function.prototype`。在 `Function.prototype` 中有两个可以执行函数的方法，即 `apply` 和 `call`。
-
-下面的简短交互过程展示了函数的继承链。
-
-### 澄清 `Function.prototype`
-
-```javascript
-var getP = Object.getPrototypeOf;
-function f() {}
-getP(f)===Function.prototype
-true
-getP(Function.prototype)===Object.prototype
-true
-```
-
-`apply` 和 `call` 都需要一个参数，用于指定在函数执行时 `this` 指向哪个对象。此外，这两个函数都接受普通参数列表。它们唯一的区别在于参数列表的指定方式。你可以在下面的示例中看到这种区别。
-
-### `call` 和 `apply` 的区别
-
-假设有如下定义
-
-```javascript
-function f(x,y) { return x+y }
-```
-
-那么这个
-
-```javascript
-f.call({},2,3)
-```
-
-以及这个
-
-```javascript
-f.apply({},[2,3])
-```
-
-都将返回 5。在两种情况下，`this` 都指向一个空对象。
-
-一个更具信息量的示例涉及这个函数
-
-```javascript
-function f(x) { return x+this.y }
-```
-
-它期望在一个包含 `y` 的 `this` 对象上下文中执行。以这种方式执行它
-
-```javascript
-f(2)
-```
-
-此时 `this` 将指向全局对象。除非全局已赋值了 `y`，否则执行将失败。
-
-另一种执行 `f` 的方法是
-
-```javascript
-var obj = {f:f, y:3}
-obj.f(2)
-5
-```
-
-这之所以有效是因为 `obj` 同时包含了 `y` 和 `f`。如果对象中缺少 `f`，则无法工作。
-
-```javascript
-var obj = {y:3}
-obj.f(2) // 不行
-```
-
-`call` 和 `apply` 的作用是允许 `this` 指向与执行 `f` 时不同的对象。例如，我们可以从全局对象执行 `f`，并通过这种方式从另一个对象获取 `this.y`
-
-```javascript
-Object.apply({y:3},f)
-5
-```
-
-总结：函数是可调用的对象，方法是函数，而 `this` 由函数执行时的上下文决定。你可以通过使用 `call` 或 `apply` 来处理该上下文。
-
-你可以在下一节中阅读更多关于 `this` 的内容。
-
-### 问题
-
-当函数 `f` 执行时，`this` 指向的对象由其执行时的上下文决定。但如果我不希望这样呢？假设我想让函数定义中的 `this` 无论上下文如何都指向相同的内容。这可以通过 `call` 或 `apply` 实现，但这些函数用起来并不好用。
-
-这是一个你可以解决的问题。创建一个工厂方法 `fixThis`，使得
-
-```javascript
-f.fixThis(obj);
-```
-
-它会返回一个与 `f` 相似的函数，不同之处在于它的 `this` 指针将始终引用 `obj`。例如
-
-```javascript
-function f(z) { return z + this.x }
-var x = '?'
-f('hi')
-'hi?'
-var obj = {x: '!'}
-var g = f.fixThis(obj)
-g('hi')
-'hi!'
-```
-
-你可能知道 `Function.prototype` 已经包含一个行为与 `fixThis` 相似的函数 `bind`。使用该函数将就忽略了本次练习的意图。
-
-#### 答案 
-
-你可能已经发现定义需要这样开头
-
-```javascript
-Function.prototype.fixThis = function(obj) {
-    ...
-}
-```
-
-并且你需要定义一个供 `fixThis` 返回的函数。该函数必须使用 `apply` 或 `call` 执行 `f`。在这一点上，你可能会卡住，因为你不确定如何引用 `f`。要正确实现，你需要记住两件事：`f` 是 `fixThis` 内部 `this` 指向的对象，但 `f` 并不是 `fixThis` 返回的函数中 `this` 指向的对象。如果需要，请带着这个见解再次尝试。
-
-`fixThis` 的实现
-
-```javascript
-Function.prototype.fixThis = function(obj) {
-    var that = this;
-    return function() {
-        return that.apply(obj,arguments);
-    }
-}
-```
-
-正如大家所知的，`arguments` 是一个伪数组，包含了传递给其所属函数的任何参数。
-
-### III. 两行文本居中
-
-```
-Object.getOwnPropertyNames(counter2)
-['decr']
-```
-
-但在执行了 `counter2.incr` 或 `counter2.decr` 之一后，你将得到
-
-```javascript
-Object.getOwnPropertyNames(counter2)
-['decr', 'val']
-```
-
-原因是因为 `counter2` 可以通过继承从 `counter` 获取数据值，但它无法修改它们。当需要修改时，会在 `counter2` 中创建一个新属性。此后，从 `counter2` 获取的属性将是 `counter2` 自身的属性，而不是它在 `counter` 中原始的属性。
-
-这意味着 `counter` 可以用于为任何作为其 `[[Prototype]]` 的对象提供初始值。
-
-## II. 函数
-
-函数是可调用的对象，这意味着：
-
-- 它们是包含函数主体（很可能是编译后的形式）的对象。
-- 它们的继承链可以访问到执行该函数主体的方法。
-
-函数对象之所以可以访问执行其代码的方法，是因为它们的继承链中被插入了 `Function.prototype`。在 `Function.prototype` 中有两个可以执行函数的方法，即 `apply` 和 `call`。
-
-下面的简短交互过程展示了函数的继承链。
-
-### 澄清 `Function.prototype`
-
-```javascript
-var getP = Object.getPrototypeOf;
-function f() {}
-getP(f)===Function.prototype
-true
-getP(Function.prototype)===Object.prototype
-true
-```
-
-`apply` 和 `call` 都需要一个参数，用于指定在函数执行时 `this` 指向哪个对象。此外，这两个函数都接受普通参数列表。它们唯一的区别在于参数列表的指定方式。你可以在下面的示例中看到这种区别。
-
-### `call` 和 `apply` 的区别
-
-假设有如下定义
-
-```javascript
-function f(x,y) { return x+y }
-```
-
-那么这个
-
-```javascript
-f.call({},2,3)
-```
-
-以及这个
-
-```javascript
-f.apply({},[2,3])
-```
-
-都将返回 5。在两种情况下，`this` 都指向一个空对象。
-
-一个更具信息量的示例涉及这个函数
-
-```javascript
-function f(x) { return x+this.y }
-```
-
-它期望在一个包含 `y` 的 `this` 对象上下文中执行。以这种方式执行它
-
-```javascript
-f(2)
-```
-
-此时 `this` 将指向全局对象。除非全局已赋值了 `y`，否则执行将失败。
-
-另一种执行 `f` 的方法是
-
-```javascript
-var obj = {f:f, y:3}
-obj.f(2)
-5
-```
-
-这之所以有效是因为 `obj` 同时包含了 `y` 和 `f`。如果对象中缺少 `f`，则无法工作。
-
-```javascript
-var obj = {y:3}
-obj.f(2) // 不行
-```
-
-`call` 和 `apply` 的作用是允许 `this` 指向与执行 `f` 时不同的对象。例如，我们可以从全局对象执行 `f`，并通过这种方式从另一个对象获取 `this.y`
-
-```javascript
-Object.apply({y:3},f)
-5
-```
-
-总结：函数是可调用的对象，方法是函数，而 `this` 由函数执行时的上下文决定。你可以通过使用 `call` 或 `apply` 来处理该上下文。
-
-你可以在下一节中阅读更多关于 `this` 的内容。
-
-### 问题
-
-当函数 `f` 执行时，`this` 指向的对象由其执行时的上下文决定。但如果我不希望这样呢？假设我想让函数定义中的 `this` 无论上下文如何都指向相同的内容。这可以通过 `call` 或 `apply` 实现，但这些函数用起来并不好用。
-
-这是一个你可以解决的问题。创建一个工厂方法 `fixThis`，使得
-
-```javascript
-f.fixThis(obj);
-```
-
-它会返回一个与 `f` 相似的函数，不同之处在于它的 `this` 指针将始终引用 `obj`。例如
-
-```javascript
-function f(z) { return z + this.x }
-var x = '?'
-f('hi')
-'hi?'
-var obj = {x: '!'}
-var g = f.fixThis(obj)
-g('hi')
-'hi!'
-```
-
-你可能知道 `Function.prototype` 已经包含一个行为与 `fixThis` 相似的函数 `bind`。使用该函数将就忽略了本次练习的意图。
-
-#### 答案 
-
-你可能已经发现定义需要这样开头
-
-```javascript
-Function.prototype.fixThis = function(obj) {
-    ...
-}
-```
-
-并且你需要定义一个供 `fixThis` 返回的函数。该函数必须使用 `apply` 或 `call` 执行 `f`。在这一点上，你可能会卡住，因为你不确定如何引用 `f`。要正确实现，你需要记住两件事：`f` 是 `fixThis` 内部 `this` 指向的对象，但 `f` 并不是 `fixThis` 返回的函数中 `this` 指向的对象。如果需要，请带着这个见解再次尝试。
-
-`fixThis` 的实现
-
-```javascript
-Function.prototype.fixThis = function(obj) {
-    var that = this;
-    return function() {
-        return that.apply(obj,arguments);
-    }
-}
-```
-
-正如大家所知的，`arguments` 是一个伪数组，包含了传递给其所属函数的任何参数。
-
-### III. 两行文本居中
-
-```
-Object.getOwnPropertyNames(counter2)
-['decr']
-```
-
-但在执行了 `counter2.incr` 或 `counter2.decr` 之一后，你将得到
-
-```javascript
-Object.getOwnPropertyNames(counter2)
-['decr', 'val']
-```
-
-原因是因为 `counter2` 可以通过继承从 `counter` 获取数据值，但它无法修改它们。当需要修改时，会在 `counter2` 中创建一个新属性。此后，从 `counter2` 获取的属性将是 `counter2` 自身的属性，而不是它在 `counter` 中原始的属性。
-
-这意味着 `counter` 可以用于为任何作为其 `[[Prototype]]` 的对象提供初始值。
-
-## II. 函数
-
-函数是可调用的对象，这意味着：
-
-- 它们是包含函数主体（很可能是编译后的形式）的对象。
-- 它们的继承链可以访问到执行该函数主体的方法。
-
-函数对象之所以可以访问执行其代码的方法，是因为它们的继承链中被插入了 `Function.prototype`。在 `Function.prototype` 中有两个可以执行函数的方法，即 `apply` 和 `call`。
-
-下面的简短交互过程展示了函数的继承链。
-
-### 澄清 `Function.prototype`
-
-```javascript
-var getP = Object.getPrototypeOf;
-function f() {}
-getP(f)===Function.prototype
-true
-getP(Function.prototype)===Object.prototype
-true
-```
-
-`apply` 和 `call` 都需要一个参数，用于指定在函数执行时 `this` 指向哪个对象。此外，这两个函数都接受普通参数列表。它们唯一的区别在于参数列表的指定方式。你可以在下面的示例中看到这种区别。
-
-### `call` 和 `apply` 的区别
-
-假设有如下定义
-
-```javascript
-function f(x,y) { return x+y }
-```
-
-那么这个
-
-```javascript
-f.call({},2,3)
-```
-
-以及这个
-
-```javascript
-f.apply({},[2,3])
-```
-
-都将返回 5。在两种情况下，`this` 都指向一个空对象。
-
-一个更具信息量的示例涉及这个函数
-
-```javascript
-function f(x) { return x+this.y }
-```
-
-它期望在一个包含 `y` 的 `this` 对象上下文中执行。以这种方式执行它
-
-```javascript
-f(2)
-```
-
-此时 `this` 将指向全局对象。除非全局已赋值了 `y`，否则执行将失败。
-
-另一种执行 `f` 的方法是
-
-```javascript
-var obj = {f:f, y:3}
-obj.f(2)
-5
-```
-
-这之所以有效是因为 `obj` 同时包含了 `y` 和 `f`。如果对象中缺少 `f`，则无法工作。
-
-```javascript
-var obj = {y:3}
-obj.f(2) // 不行
-```
-
-`call` 和 `apply` 的作用是允许 `this` 指向与执行 `f` 时不同的对象。例如，我们可以从全局对象执行 `f`，并通过这种方式从另一个对象获取 `this.y`
-
-```javascript
-Object.apply({y:3},f)
-5
-```
-
-总结：函数是可调用的对象，方法是函数，而 `this` 由函数执行时的上下文决定。你可以通过使用 `call` 或 `apply` 来处理该上下文。
-
-你可以在下一节中阅读更多关于 `this` 的内容。
-
-### 问题
-
-当函数 `f` 执行时，`this` 指向的对象由其执行时的上下文决定。但如果我不希望这样呢？假设我想让函数定义中的 `this` 无论上下文如何都指向相同的内容。这可以通过 `call` 或 `apply` 实现，但这些函数用起来并不好用。
-
-这是一个你可以解决的问题。创建一个工厂方法 `fixThis`，使得
-
-```javascript
-f.fixThis(obj);
-```
-
-它会返回一个与 `f` 相似的函数，不同之处在于它的 `this` 指针将始终引用 `obj`。例如
-
-```javascript
-function f(z) { return z + this.x }
-var x = '?'
-f('hi')
-'hi?'
-var obj = {x: '!'}
-var g = f.fixThis(obj)
-g('hi')
-'hi!'
-```
-
-你可能知道 `Function.prototype` 已经包含一个行为与 `fixThis` 相似的函数 `bind`。使用该函数将就忽略了本次练习的意图。
-
-#### 答案 
-
-你可能已经发现定义需要这样开头
-
-```javascript
-Function.prototype.fixThis = function(obj) {
-    ...
-}
-```
-
-并且你需要定义一个供 `fixThis` 返回的函数。该函数必须使用 `apply` 或 `call` 执行 `f`。在这一点上，你可能会卡住，因为你不确定如何引用 `f`。要正确实现，你需要记住两件事：`f` 是 `fixThis` 内部 `this` 指向的对象，但 `f` 并不是 `fixThis` 返回的函数中 `this` 指向的对象。如果需要，请带着这个见解再次尝试。
-
-`fixThis` 的实现
-
-```javascript
-Function.prototype.fixThis = function(obj) {
-    var that = this;
-    return function() {
-        return that.apply(obj,arguments);
-    }
-}
-```
-
-正如大家所知的，`arguments` 是一个伪数组，包含了传递给其所属函数的任何参数。
-
-### III. 两行文本居中
-
-```
-Object.getOwnPropertyNames(counter2)
-['decr']
-```
-
-但在执行了 `counter2.incr` 或 `counter2.decr` 之一后，你将得到
-
-```javascript
-Object.getOwnPropertyNames(counter2)
-['decr', 'val']
-```
-
-原因是因为 `counter2` 可以通过继承从 `counter` 获取数据值，但它无法修改它们。当需要修改时，会在 `counter2` 中创建一个新属性。此后，从 `counter2` 获取的属性将是 `counter2` 自身的属性，而不是它在 `counter` 中原始的属性。
-
-这意味着 `counter` 可以用于为任何作为其 `[[Prototype]]` 的对象提供初始值。
-
-## II. 函数
-
-函数是可调用的对象，这意味着：
-
-- 它们是包含函数主体（很可能是编译后的形式）的对象。
-- 它们的继承链可以访问到执行该函数主体的方法。
-
-函数对象之所以可以访问执行其代码的方法，是因为它们的继承链中被插入了 `Function.prototype`。在 `Function.prototype` 中有两个可以执行函数的方法，即 `apply` 和 `call`。
-
-下面的简短交互过程展示了函数的继承链。
-
-### 澄清 `Function.prototype`
-
-```javascript
-var getP = Object.getPrototypeOf;
-function f() {}
-getP(f)===Function.prototype
-true
-getP(Function.prototype)===Object.prototype
-true
-```
-
-`apply` 和 `call` 都需要一个参数，用于指定在函数执行时 `this` 指向哪个对象。此外，这两个函数都接受普通参数列表。它们唯一的区别在于参数列表的指定方式。你可以在下面的示例中看到这种区别。
-
-### `call` 和 `apply` 的区别
-
-假设有如下定义
-
-```javascript
-function f(x,y) { return x+y }
-```
-
-那么这个
-
-```javascript
-f.call({},2,3)
-```
-
-以及这个
-
-```javascript
-f.apply({},[2,3])
-```
-
-都将返回 5。在两种情况下，`this` 都指向一个空对象。
-
-一个更具信息量的示例涉及这个函数
-
-```javascript
-function f(x) { return x+this.y }
-```
-
-它期望在一个包含 `y` 的 `this` 对象上下文中执行。以这种方式执行它
-
-```javascript
-f(2)
-```
-
-此时 `this` 将指向全局对象。除非全局已赋值了 `y`，否则执行将失败。
-
-另一种执行 `f` 的方法是
-
-```javascript
-var obj = {f:f, y:3}
-obj.f(2)
-5
-```
-
-这之所以有效是因为 `obj` 同时包含了 `y` 和 `f`。如果对象中缺少 `f`，则无法工作。
-
-```javascript
-var obj = {y:3}
-obj.f(2) // 不行
-```
-
-`call` 和 `apply` 的作用是允许 `this` 指向与执行 `f` 时不同的对象。例如，我们可以从全局对象执行 `f`，并通过这种方式从另一个对象获取 `this.y`
-
-```javascript
-Object.apply({y:3},f)
-5
-```
-
-总结：函数是可调用的对象，方法是函数，而 `this` 由函数执行时的上下文决定。你可以通过使用 `call` 或 `apply` 来处理该上下文。
-
-你可以在下一节中阅读更多关于 `this` 的内容。
-
-### 问题
-
-当函数 `f` 执行时，`this` 指向的对象由其执行时的上下文决定。但如果我不希望这样呢？假设我想让函数定义中的 `this` 无论上下文如何都指向相同的内容。这可以通过 `call` 或 `apply` 实现，但这些函数用起来并不好用。
-
-这是一个你可以解决的问题。创建一个工厂方法 `fixThis`，使得
-
-```javascript
-f.fixThis(obj);
-```
-
-它会返回一个与 `f` 相似的函数，不同之处在于它的 `this` 指针将始终引用 `obj`。例如
-
-```javascript
-function f(z) { return z + this.x }
-var x = '?'
-f('hi')
-'hi?'
-var obj = {x: '!'}
-var g = f.fixThis(obj)
-g('hi')
-'hi!'
-```
-
-你可能知道 `Function.prototype` 已经包含一个行为与 `fixThis` 相似的函数 `bind`。使用该函数将就忽略了本次练习的意图。
-
-#### 答案 
-
-你可能已经发现定义需要这样开头
-
-```javascript
-Function.prototype.fixThis = function(obj) {
-    ...
-}
-```
-
-并且你需要定义一个供 `fixThis` 返回的函数。该函数必须使用 `apply` 或 `call` 执行 `f`。在这一点上，你可能会卡住，因为你不确定如何引用 `f`。要正确实现，你需要记住两件事：`f` 是 `fixThis` 内部 `this` 指向的对象，但 `f` 并不是 `fixThis` 返回的函数中 `this` 指向的对象。如果需要，请带着这个见解再次尝试。
-
-`fixThis` 的实现
-
-```javascript
-Function.prototype.fixThis = function(obj) {
-    var that = this;
-    return function() {
-        return that.apply(obj,arguments);
-    }
-}
-```
-
-正如大家所知的，`arguments` 是一个伪数组，包含了传递给其所属函数的任何参数。
-
-### III. 两行文本居中
-
-```
-Object.getOwnPropertyNames(counter2)
-['decr']
-```
-
-但在执行了 `counter2.incr` 或 `counter2.decr` 之一后，你将得到
-
-```javascript
-Object.getOwnPropertyNames(counter2)
-['decr', 'val']
-```
-
-原因是因为 `counter2` 可以通过继承从 `counter` 获取数据值，但它无法修改它们。当需要修改时，会在 `counter2` 中创建一个新属性。此后，从 `counter2` 获取的属性将是 `counter2` 自身的属性，而不是它在 `counter` 中原始的属性。
-
-这意味着 `counter` 可以用于为任何作为其 `[[Prototype]]` 的对象提供初始值。
-
-## II. 函数
-
-函数是可调用的对象，这意味着：
-
-- 它们是包含函数主体（很可能是编译后的形式）的对象。
-- 它们的继承链可以访问到执行该函数主体的方法。
-
-函数对象之所以可以访问执行其代码的方法，是因为它们的继承链中被插入了 `Function.prototype`。在 `Function.prototype` 中有两个可以执行函数的方法，即 `apply` 和 `call`。
-
-下面的简短交互过程展示了函数的继承链。
-
-### 澄清 `Function.prototype`
-
-```javascript
-var getP = Object.getPrototypeOf;
-function f() {}
-getP(f)===Function.prototype
-true
-getP(Function.prototype)===Object.prototype
-true
-```
-
-`apply` 和 `call` 都需要一个参数，用于指定在函数执行时 `this` 指向哪个对象。此外，这两个函数都接受普通参数列表。它们唯一的区别在于参数列表的指定方式。你可以在下面的示例中看到这种区别。
-
-### `call` 和 `apply` 的区别
-
-假设有如下定义
-
-```javascript
-function f(x,y) { return x+y }
-```
-
-那么这个
-
-```javascript
-f.call({},2,3)
-```
-
-以及这个
-
-```javascript
-f.apply({},[2,3])
-```
-
-都将返回 5。在两种情况下，`this` 都指向一个空对象。
-
-一个更具信息量的示例涉及这个函数
-
-```javascript
-function f(x) { return x+this.y }
-```
-
-它期望在一个包含 `y` 的 `this` 对象上下文中执行。以这种方式执行它
-
-```javascript
-f(2)
-```
-
-此时 `this` 将指向全局对象。除非全局已赋值了 `y`，否则执行将失败。
-
-另一种执行 `f` 的方法是
-
-```javascript
-var obj = {f:f, y:3}
-obj.f(2)
-5
-```
-
-这之所以有效是因为 `obj` 同时包含了 `y` 和 `f`。如果对象中缺少 `f`，则无法工作。
-
-```javascript
-var obj = {y:3}
-obj.f(2) // 不行
-```
-
-`call` 和 `apply` 的作用是允许 `this` 指向与执行 `f` 时不同的对象。例如，我们可以从全局对象执行 `f`，并通过这种方式从另一个对象获取 `this.y`
-
-```javascript
-Object.apply({y:3},f)
-5
-```
-
-总结：函数是可调用的对象，方法是函数，而 `this` 由函数执行时的上下文决定。你可以通过使用 `call` 或 `apply` 来处理该上下文。
-
-你可以在下一节中阅读更多关于 `this` 的内容。
-
-### 问题
-
-当函数 `f` 执行时，`this` 指向的对象由其执行时的上下文决定。但如果我不希望这样呢？假设我想让函数定义中的 `this` 无论上下文如何都指向相同的内容。这可以通过 `call` 或 `apply` 实现，但这些函数用起来并不好用。
-
-这是一个你可以解决的问题。创建一个工厂方法 `fixThis`，使得
-
-```javascript
-f.fixThis(obj);
-```
-
-它会返回一个与 `f` 相似的函数，不同之处在于它的 `this` 指针将始终引用 `obj`。例如
-
-```javascript
-function f(z) { return z + this.x }
-var x = '?'
-f('hi')
-'hi?'
-var obj = {x: '!'}
-var g = f.fixThis(obj)
-g('hi')
-'hi!'
-```
-
-你可能知道 `Function.prototype` 已经包含一个行为与 `fixThis` 相似的函数 `bind`。使用该函数将就忽略了本次练习的意图。
-
-#### 答案 
-
-你可能已经发现定义需要这样开头
-
-```javascript
-Function.prototype.fixThis = function(obj) {
-    ...
-}
-```
-
-并且你需要定义一个供 `fixThis` 返回的函数。该函数必须使用 `apply` 或 `call` 执行 `f`。在这一点上，你可能会卡住，因为你不确定如何引用 `f`。要正确实现，你需要记住两件事：`f` 是 `fixThis` 内部 `this` 指向的对象，但 `f` 并不是 `fixThis` 返回的函数中 `this` 指向的对象。如果需要，请带着这个见解再次尝试。
-
-`fixThis` 的实现
-
-```javascript
-Function.prototype.fixThis = function(obj) {
-    var that = this;
-    return function() {
-        return that.apply(obj,arguments);
-    }
-}
-```
-
-正如大家所知的，`arguments` 是一个伪数组，包含了传递给其所属函数的任何参数。
-
-### III. 两行文本居中
-
-```
-Object.getOwnPropertyNames(counter2)
-['decr']
-```
-
-但在执行了 `counter2.incr` 或 `counter2.decr` 之一后，你将得到
-
-```javascript
-Object.getOwnPropertyNames(counter2)
-['decr', 'val']
-```
-
-原因是因为 `counter2` 可以通过继承从 `counter` 获取数据值，但它无法修改它们。当需要修改时，会在 `counter2` 中创建一个新属性。此后，从 `counter2` 获取的属性将是 `counter2` 自身的属性，而不是它在 `counter` 中原始的属性。
-
-这意味着 `counter` 可以用于为任何作为其 `[[Prototype]]` 的对象提供初始值。
-
-## II. 函数
-
-函数是可调用的对象，这意味着：
-
-- 它们是包含函数主体（很可能是编译后的形式）的对象。
-- 它们的继承链可以访问到执行该函数主体的方法。
-
-函数对象之所以可以访问执行其代码的方法，是因为它们的继承链中被插入了 `Function.prototype`。在 `Function.prototype` 中有两个可以执行函数的方法，即 `apply` 和 `call`。
-
-下面的简短交互过程展示了函数的继承链。
-
-### 澄清 `Function.prototype`
-
-```javascript
-var getP = Object.getPrototypeOf;
-function f() {}
-getP(f)===Function.prototype
-true
-getP(Function.prototype)===Object.prototype
-true
-```
-
-`apply` 和 `call` 都需要一个参数，用于指定在函数执行时 `this` 指向哪个对象。此外，这两个函数都接受普通参数列表。它们唯一的区别在于参数列表的指定方式。你可以在下面的示例中看到这种区别。
-
-### `call` 和 `apply` 的区别
-
-假设有如下定义
-
-```javascript
-function f(x,y) { return x+y }
-```
-
-那么这个
-
-```javascript
-f.call({},2,3)
-```
-
-以及这个
-
-```javascript
-f.apply({},[2,3])
-```
-
-都将返回 5。在两种情况下，`this` 都指向一个空对象。
-
-一个更具信息量的示例涉及这个函数
-
-```javascript
-function f(x) { return x+this.y }
-```
-
-它期望在一个包含 `y` 的 `this` 对象上下文中执行。以这种方式执行它
-
-```javascript
-f(2)
-```
-
-此时 `this` 将指向全局对象。除非全局已赋值了 `y`，否则执行将失败。
-
-另一种执行 `f` 的方法是
-
-```javascript
-var obj = {f:f, y:3}
-obj.f(2)
-5
-```
-
-这之所以有效是因为 `obj` 同时包含了 `y` 和 `f`。如果对象中缺少 `f`，则无法工作。
-
-```javascript
-var obj = {y:3}
-obj.f(2) // 不行
-```
-
-`call` 和 `apply` 的作用是允许 `this` 指向与执行 `f` 时不同的对象。例如，我们可以从全局对象执行 `f`，并通过这种方式从另一个对象获取 `this.y`
-
-```javascript
-Object.apply({y:3},f)
-5
-```
-
-总结：函数是可调用的对象，方法是函数，而 `this` 由函数执行时的上下文决定。你可以通过使用 `call` 或 `apply` 来处理该上下文。
-
-你可以在下一节中阅读更多关于 `this` 的内容。
-
-### 问题
-
-当函数 `f` 执行时，`this` 指向的对象由其执行时的上下文决定。但如果我不希望这样呢？假设我想让函数定义中的 `this` 无论上下文如何都指向相同的内容。这可以通过 `call` 或 `apply` 实现，但这些函数用起来并不好用。
-
-这是一个你可以解决的问题。创建一个工厂方法 `fixThis`，使得
-
-```javascript
-f.fixThis(obj);
-```
-
-它会返回一个与 `f` 相似的函数，不同之处在于它的 `this` 指针将始终引用 `obj`。例如
-
-```javascript
-function f(z) { return z + this.x }
-var x = '?'
-f('hi')
-'hi?'
-var obj = {x: '!'}
-var g = f.fixThis(obj)
-g('hi')
-'hi!'
-```
-
-你可能知道 `Function.prototype` 已经包含一个行为与 `fixThis` 相似的函数 `bind`。使用该函数将就忽略了本次练习的意图。
-
-#### 答案 
-
-你可能已经发现定义需要这样开头
-
-```javascript
-Function.prototype.fixThis = function(obj) {
-    ...
-}
-```
-
-并且你需要定义一个供 `fixThis` 返回的函数。该函数必须使用 `apply` 或 `call` 执行 `f`。在这一点上，你可能会卡住，因为你不确定如何引用 `f`。要正确实现，你需要记住两件事：`f` 是 `fixThis` 内部 `this` 指向的对象，但 `f` 并不是 `fixThis` 返回的函数中 `this` 指向的对象。如果需要，请带着这个见解再次尝试。
-
-`fixThis` 的实现
-
-```javascript
-Function.prototype.fixThis = function(obj) {
-    var that = this;
-    return function() {
-        return that.apply(obj,arguments);
-    }
-}
-```
-
-正如大家所知的，`arguments` 是一个伪数组，包含了传递给其所属函数的任何参数。
-
-### III. 两行文本居中
-
-```
-Object.getOwnPropertyNames(counter2)
-['decr']
-```
-
-但在执行了 `counter2.incr` 或 `counter2.decr` 之一后，你将得到
-
-```javascript
-Object.getOwnPropertyNames(counter2)
-['decr', 'val']
-```
-
-原因是因为 `counter2` 可以通过继承从 `counter` 获取数据值，但它无法修改它们。当需要修改时，会在 `counter2` 中创建一个新属性。此后，从 `counter2` 获取的属性将是 `counter2` 自身的属性，而不是它在 `counter` 中原始的属性。
-
-这意味着 `counter` 可以用于为任何作为其 `[[Prototype]]` 的对象提供初始值。
-
-## II. 函数
-
-函数是可调用的对象，这意味着：
-
-- 它们是包含函数主体（很可能是编译后的形式）的对象。
-- 它们的继承链可以访问到执行该函数主体的方法。
-
-函数对象之所以可以访问执行其代码的方法，是因为它们的继承链中被插入了 `Function.prototype`。在 `Function.prototype` 中有两个可以执行函数的方法，即 `apply` 和 `call`。
-
-下面的简短交互过程展示了函数的继承链。
-
-### 澄清 `Function.prototype`
-
-```javascript
-var getP = Object.getPrototypeOf;
-function f() {}
-getP(f)===Function.prototype
-true
-getP(Function.prototype)===Object.prototype
-true
-```
-
-`apply` 和 `call` 都需要一个参数，用于指定在函数执行时 `this` 指向哪个对象。此外，这两个函数都接受普通参数列表。它们唯一的区别在于参数列表的指定方式。你可以在下面的示例中看到这种区别。
-
-### `call` 和 `apply` 的区别
-
-假设有如下定义
-
-```javascript
-function f(x,y) { return x+y }
-```
-
-那么这个
-
-```javascript
-f.call({},2,3)
-```
-
-以及这个
-
-```javascript
-f.apply({},[2,3])
-```
-
-都将返回 5。在两种情况下，`this` 都指向一个空对象。
-
-一个更具信息量的示例涉及这个函数
-
-```javascript
-function f(x) { return x+this.y }
-```
-
-它期望在一个包含 `y` 的 `this` 对象上下文中执行。以这种方式执行它
-
-```javascript
-f(2)
-```
-
-此时 `this` 将指向全局对象。除非全局已赋值了 `y`，否则执行将失败。
-
-另一种执行 `f` 的方法是
-
-```javascript
-var obj = {f:f, y:3}
-obj.f(2)
-5
-```
-
-这之所以有效是因为 `obj` 同时包含了 `y` 和 `f`。如果对象中缺少 `f`，则无法工作。
-
-```javascript
-var obj = {y:3}
-obj.f(2) // 不行
-```
-
-`call` 和 `apply` 的作用是允许 `this` 指向与执行 `f` 时不同的对象。例如，我们可以从全局对象执行 `f`，并通过这种方式从另一个对象获取 `this.y`
-
-```javascript
-Object.apply({y:3},f)
-5
-```
-
-总结：函数是可调用的对象，方法是函数，而 `this` 由函数执行时的上下文决定。你可以通过使用 `call` 或 `apply` 来处理该上下文。
-
-你可以在下一节中阅读更多关于 `this` 的内容。
-
-### 问题
-
-当函数 `f` 执行时，`this` 指向的对象由其执行时的上下文决定。但如果我不希望这样呢？假设我想让函数定义中的 `this` 无论上下文如何都指向相同的内容。这可以通过 `call` 或 `apply` 实现，但这些函数用起来并不好用。
-
-这是一个你可以解决的问题。创建一个工厂方法 `fixThis`，使得
-
-```javascript
-f.fixThis(obj);
-```
-
-它会返回一个与 `f` 相似的函数，不同之处在于它的 `this` 指针将始终引用 `obj`。例如
-
-```javascript
-function f(z) { return z + this.x }
-var x = '?'
-f('hi')
-'hi?'
-var obj = {x: '!'}
-var g = f.fixThis(obj)
-g('hi')
-'hi!'
-```
-
-你可能知道 `Function.prototype` 已经包含一个行为与 `fixThis` 相似的函数 `bind`。使用该函数将就忽略了本次练习的意图。
-
-#### 答案 
-
-你可能已经发现定义需要这样开头
-
-```javascript
-Function.prototype.fixThis = function(obj) {
-    ...
-}
-```
-
-并且你需要定义一个供 `fixThis` 返回的函数。该函数必须使用 `apply` 或 `call` 执行 `f`。在这一点上，你可能会卡住，因为你不确定如何引用 `f`。要正确实现，你需要记住两件事：`f` 是 `fixThis` 内部 `this` 指向的对象，但 `f` 并不是 `fixThis` 返回的函数中 `this` 指向的对象。如果需要，请带着这个见解再次尝试。
-
-`fixThis` 的实现
-
-```javascript
-Function.prototype.fixThis = function(obj) {
-    var that = this;
-    return function() {
-        return that.apply(obj,arguments);
-    }
-}
-```
-
-正如大家所知的，`arguments` 是一个伪数组，包含了传递给其所属函数的任何参数。
-
-### III. 两行文本居中
-
-```
-Object.getOwnPropertyNames(counter2)
-['decr']
-```
-
-但在执行了 `counter2.incr` 或 `counter2.decr` 之一后，你将得到
-
-```javascript
-Object.getOwnPropertyNames(counter2)
-['decr', 'val']
-```
-
-原因是因为 `counter2` 可以通过继承从 `counter` 获取数据值，但它无法修改它们。当需要修改时，会在 `counter2` 中创建一个新属性。此后，从 `counter2` 获取的属性将是 `counter2` 自身的属性，而不是它在 `counter` 中原始的属性。
-
-这意味着 `counter` 可以用于为任何作为其 `[[Prototype]]` 的对象提供初始值。
-
-## II. 函数
-
-函数是可调用的对象，这意味着：
-
-- 它们是包含函数主体（很可能是编译后的形式）的对象。
-- 它们的继承链可以访问到执行该函数主体的方法。
-
-函数对象之所以可以访问执行其代码的方法，是因为它们的继承链中被插入了 `Function.prototype`。在 `Function.prototype` 中有两个可以执行函数的方法，即 `apply` 和 `call`。
-
-下面的简短交互过程展示了函数的继承链。
-
-### 澄清 `Function.prototype`
-
-```javascript
-var getP = Object.getPrototypeOf;
-function f() {}
-getP(f)===Function.prototype
-true
-getP(Function.prototype)===Object.prototype
-true
-```
-
-`apply` 和 `call` 都需要一个参数，用于指定在函数执行时 `this` 指向哪个对象。此外，这两个函数都接受普通参数列表。它们唯一的区别在于参数列表的指定方式。你可以在下面的示例中看到这种区别。
-
-### `call` 和 `apply` 的区别
-
-假设有如下定义
-
-```javascript
-function f(x,y) { return x+y }
-```
-
-那么这个
-
-```javascript
-f.call({},2,3)
-```
-
-以及这个
-
-```javascript
-f.apply({},[2,3])
-```
-
-都将返回 5。在两种情况下，`this` 都指向一个空对象。
-
-一个更具信息量的示例涉及这个函数
-
-```javascript
-function f(x) { return x+this.y }
-```
-
-它期望在一个包含 `y` 的 `this` 对象上下文中执行。以这种方式执行它
-
-```javascript
-f(2)
-```
-
-此时 `this` 将指向全局对象。除非全局已赋值了 `y`，否则执行将失败。
-
-另一种执行 `f` 的方法是
-
-```javascript
-var obj = {f:f, y:3}
-obj.f(2)
-5
-```
-
-这之所以有效是因为 `obj` 同时包含了 `y` 和 `f`。如果对象中缺少 `f`，则无法工作。
-
-```javascript
-var obj = {y:3}
-obj.f(2) // 不行
-```
-
-`call` 和 `apply` 的作用是允许 `this` 指向与执行 `f` 时不同的对象。例如，我们可以从全局对象执行 `f`，并通过这种方式从另一个对象获取 `this.y`
-
-```javascript
-Object.apply({y:3},f)
-5
-```
-
-总结：函数是可调用的对象，方法是函数，而 `this` 由函数执行时的上下文决定。你可以通过使用 `call` 或 `apply` 来处理该上下文。
-
-你可以在下一节中阅读更多关于 `this` 的内容。
-
-### 问题
-
-当函数 `f` 执行时，`this` 指向的对象由其执行时的上下文决定。但如果我不希望这样呢？假设我想让函数定义中的 `this` 无论上下文如何都指向相同的内容。这可以通过 `call` 或 `apply` 实现，但这些函数用起来并不好用。
-
-这是一个你可以解决的问题。创建一个工厂方法 `fixThis`，使得
-
-```javascript
-f.fixThis(obj);
-```
-
-它会返回一个与 `f` 相似的函数，不同之处在于它的 `this` 指针将始终引用 `obj`。例如
-
-```javascript
-function f(z) { return z + this.x }
-var x = '?'
-f('hi')
-'hi?'
-var obj = {x: '!'}
-var g = f.fixThis(obj)
-g('hi')
-'hi!'
-```
-
-你可能知道 `Function.prototype` 已经包含一个行为与 `fixThis` 相似的函数 `bind`。使用该函数将就忽略了本次练习的意图。
-
-#### 答案 
-
-你可能已经发现定义需要这样开头
-
-```javascript
-Function.prototype.fixThis = function(obj) {
-    ...
-}
-```
-
-并且你需要定义一个供 `fixThis` 返回的函数。该函数必须使用 `apply` 或 `call` 执行 `f`。在这一点上，你可能会卡住，因为你不确定如何引用 `f`。要正确实现，你需要记住两件事：`f` 是 `fixThis` 内部 `this` 指向的对象，但 `f` 并不是 `fixThis` 返回的函数中 `this` 指向的对象。如果需要，请带着这个见解再次尝试。
-
-`fixThis` 的实现
-
-```javascript
-Function.prototype.fixThis = function(obj) {
-    var that = this;
-    return function() {
-        return that.apply(obj,arguments);
-    }
-}
-```
-
-正如大家所知的，`arguments` 是一个伪数组，包含了传递给其所属函数的任何参数。
-
-### III. 两行文本居中
-
-```
-Object.getOwnPropertyNames(counter2)
-['decr']
-```
-
-但在执行了 `counter2.incr` 或 `counter2.decr` 之一后，你将得到
-
-```javascript
-Object.getOwnPropertyNames(counter2)
-['decr', 'val']
-```
-
-原因是因为 `counter2` 可以通过继承从 `counter` 获取数据值，但它无法修改它们。当需要修改时，会在 `counter2` 中创建一个新属性。此后，从 `counter2` 获取的属性将是 `counter2` 自身的属性，而不是它在 `counter` 中原始的属性。
-
-这意味着 `counter` 可以用于为任何作为其 `[[Prototype]]` 的对象提供初始值。
-
-## II. 函数
-
-函数是可调用的对象，这意味着：
-
-- 它们是包含函数主体（很可能是编译后的形式）的对象。
-- 它们的继承链可以访问到执行该函数主体的方法。
-
-函数对象之所以可以访问执行其代码的方法，是因为它们的继承链中被插入了 `Function.prototype`。在 `Function.prototype` 中有两个可以执行函数的方法，即 `apply` 和 `call`。
-
-下面的简短交互过程展示了函数的继承链。
-
-### 澄清 `Function.prototype`
-
-```javascript
-var getP = Object.getPrototypeOf;
-function f() {}
-getP(f)===Function.prototype
-true
-getP(Function.prototype)===Object.prototype
-true
-```
-
-`apply` 和 `call` 都需要一个参数，用于指定在函数执行时 `this` 指向哪个对象。此外，这两个函数都接受普通参数列表。它们唯一的区别在于参数列表的指定方式。你可以在下面的示例中看到这种区别。
-
-### `call` 和 `apply` 的区别
-
-假设有如下定义
-
-```javascript
-function f(x,y) { return x+y }
-```
-
-那么这个
-
-```javascript
-f.call({},2,3)
-```
-
-以及这个
-
-```javascript
-f.apply({},[2,3])
-```
-
-都将返回 5。在两种情况下，`this` 都指向一个空对象。
-
-一个更具信息量的示例涉及这个函数
-
-```javascript
-function f(x) { return x+this.y }
-```
-
-它期望在一个包含 `y` 的 `this` 对象上下文中执行。以这种方式执行它
-
-```javascript
-f(2)
-```
-
-此时 `this` 将指向全局对象。除非全局已赋值了 `y`，否则执行将失败。
-
-另一种执行 `f` 的方法是
-
-```javascript
-var obj = {f:f, y:3}
-obj.f(2)
-5
-```
-
-这之所以有效是因为 `obj` 同时包含了 `y` 和 `f`。如果对象中缺少 `f`，则无法工作。
-
-```javascript
-var obj = {y:3}
-obj.f(2) // 不行
-```
-
-`call` 和 `apply` 的作用是允许 `this` 指向与执行 `f` 时不同的对象。例如，我们可以从全局对象执行 `f`，并通过这种方式从另一个对象获取 `this.y`
-
-```javascript
-Object.apply({y:3},f)
-5
-```
-
-总结：函数是可调用的对象，方法是函数，而 `this` 由函数执行时的上下文决定。你可以通过使用 `call` 或 `apply` 来处理该上下文。
-
-你可以在下一节中阅读更多关于 `this` 的内容。
-
-### 问题
-
-当函数 `f` 执行时，`this` 指向的对象由其执行时的上下文决定。但如果我不希望这样呢？假设我想让函数定义中的 `this` 无论上下文如何都指向相同的内容。这可以通过 `call` 或 `apply` 实现，但这些函数用起来并不好用。
-
-这是一个你可以解决的问题。创建一个工厂方法 `fixThis`，使得
-
-```javascript
-f.fixThis(obj);
-```
-
-它会返回一个与 `f` 相似的函数，不同之处在于它的 `this` 指针将始终引用 `obj`。例如
-
-```javascript
-function f(z) { return z + this.x }
-var x = '?'
-f('hi')
-'hi?'
-var obj = {x: '!'}
-var g = f.fixThis(obj)
-g('hi')
-'hi!'
-```
-
-你可能知道 `Function.prototype` 已经包含一个行为与 `fixThis` 相似的函数 `bind`。使用该函数将就忽略了本次练习的意图。
-
-#### 答案 
-
-你可能已经发现定义需要这样开头
-
-```javascript
-Function.prototype.fixThis = function(obj) {
-    ...
-}
-```
-
-并且你需要定义一个供 `fixThis` 返回的函数。该函数必须使用 `apply` 或 `call` 执行 `f`。在这一点上，你可能会卡住，因为你不确定如何引用 `f`。要正确实现，你需要记住两件事：`f` 是 `fixThis` 内部 `this` 指向的对象，但 `f` 并不是 `fixThis` 返回的函数中 `this` 指向的对象。如果需要，请带着这个见解再次尝试。
-
-`fixThis` 的实现
-
-```javascript
-Function.prototype.fixThis = function(obj) {
-    var that = this;
-    return function() {
-        return that.apply(obj,arguments);
-    }
-}
-```
-
-正如大家所知的，`arguments` 是一个伪数组，包含了传递给其所属函数的任何参数。
-
-### III. 两行文本居中
-
-```
-Object.getOwnPropertyNames(counter2)
-['decr']
-```
-
-但在执行了 `counter2.incr` 或 `counter2.decr` 之一后，你将得到
-
-```javascript
-Object.getOwnPropertyNames(counter2)
-['decr', 'val']
-```
-
-原因是因为 `counter2` 可以通过继承从 `counter` 获取数据值，但它无法修改它们。当需要修改时，会在 `counter2` 中创建一个新属性。此后，从 `counter2` 获取的属性将是 `counter2` 自身的属性，而不是它在 `counter` 中原始的属性。
-
-这意味着 `counter` 可以用于为任何作为其 `[[Prototype]]` 的对象提供初始值。
-
-## II. 函数
-
-函数是可调用的对象，这意味着：
-
-- 它们是包含函数主体（很可能是编译后的形式）的对象。
-- 它们的继承链可以访问到执行该函数主体的方法。
-
-函数对象之所以可以访问执行其代码的方法，是因为它们的继承链中被插入了 `Function.prototype`。在 `Function.prototype` 中有两个可以执行函数的方法，即 `apply` 和 `call`。
-
-下面的简短交互过程展示了函数的继承链。
-
-### 澄清 `Function.prototype`
-
-```javascript
-var getP = Object.getPrototypeOf;
-function f() {}
-getP(f)===Function.prototype
-true
-getP(Function.prototype)===Object.prototype
-true
-```
-
-`apply` 和 `call` 都需要一个参数，用于指定在函数执行时 `this` 指向哪个对象。此外，这两个函数都接受普通参数列表。它们唯一的区别在于参数列表的指定方式。你可以在下面的示例中看到这种区别。
-
-### `call` 和 `apply` 的区别
-
-假设有如下定义
-
-```javascript
-function f(x,y) { return x+y }
-```
-
-那么这个
-
-```javascript
-f.call({},2,3)
-```
-
-以及这个
-
-```javascript
-f.apply({},[2,3])
-```
-
-都将返回 5。在两种情况下，`this` 都指向一个空对象。
-
-一个更具信息量的示例涉及这个函数
-
-```javascript
-function f(x) { return x+this.y }
-```
-
-它期望在一个包含 `y` 的 `this` 对象上下文中执行。以这种方式执行它
-
-```javascript
-f(2)
-```
-
-此时 `this` 将指向全局对象。除非全局已赋值了 `y`，否则执行将失败。
-
-另一种执行 `f` 的方法是
-
-```javascript
-var obj = {f:f, y:3}
-obj.f(2)
-5
-```
-
-这之所以有效是因为 `obj` 同时包含了 `y` 和 `f`。如果对象中缺少 `f`，则无法工作。
-
-```javascript
-var obj = {y:3}
-obj.f(2) // 不行
-```
-
-`call` 和 `apply` 的作用是允许 `this` 指向与执行 `f` 时不同的对象。例如，我们可以从全局对象执行 `f`，并通过这种方式从另一个对象获取 `this.y`
-
-```javascript
-Object.apply({y:3},f)
-5
-```
-
-总结：函数是可调用的对象，方法是函数，而 `this` 由函数执行时的上下文决定。你可以通过使用 `call` 或 `apply` 来处理该上下文。
-
-你可以在下一节中阅读更多关于 `this` 的内容。
-
-### 问题
-
-当函数 `f` 执行时，`this` 指向的对象由其执行时的上下文决定。但如果我不希望这样呢？假设我想让函数定义中的 `this` 无论上下文如何都指向相同的内容。这可以通过 `call` 或 `apply` 实现，但这些函数用起来并不好用。
-
-这是一个你可以解决的问题。创建一个工厂方法 `fixThis`，使得
-
-```javascript
-f.fixThis(obj);
-```
-
-它会返回一个与 `f` 相似的函数，不同之处在于它的 `this` 指针将始终引用 `obj`。例如
-
-```javascript
-function f(z) { return z + this.x }
-var x = '?'
-f('hi')
-'hi?'
-var obj = {x: '!'}
-var g = f.fixThis(obj)
-g('hi')
-'hi!'
-```
-
-你可能知道 `Function.prototype` 已经包含一个行为与 `fixThis` 相似的函数 `bind`。使用该函数将就忽略了本次练习的意图。
-
-#### 答案 
-
-你可能已经发现定义需要这样开头
-
-```javascript
-Function.prototype.fixThis = function(obj) {
-    ...
-}
-```
-
-并且你需要定义一个供 `fixThis` 返回的函数。该函数必须使用 `apply` 或 `call` 执行 `f`。在这一点上，你可能会卡住，因为你不确定如何引用 `f`。要正确实现，你需要记住两件事：`f` 是 `fixThis` 内部 `this` 指向的对象，但 `f` 并不是 `fixThis` 返回的函数中 `this` 指向的对象。如果需要，请带着这个见解再次尝试。
-
-`fixThis` 的实现
-
-```javascript
-Function.prototype.fixThis = function(obj) {
-    var that = this;
-    return function() {
-        return that.apply(obj,arguments);
-    }
-}
-```
-
-正如大家所知的，`arguments` 是一个伪数组，包含了传递给其所属函数的任何参数。
-
-### III. 两行文本居中
-
-```
-Object.getOwnPropertyNames(counter2)
-['decr']
-```
-
-但在执行了 `counter2.incr` 或 `counter2.decr` 之一后，你将得到
-
-```javascript
-Object.getOwnPropertyNames(counter2)
-['decr', 'val']
-```
-
-原因是因为 `counter2` 可以通过继承从 `counter` 获取数据值，但它无法修改它们。当需要修改时，会在 `counter2` 中创建一个新属性。此后，从 `counter2` 获取的属性将是 `counter2` 自身的属性，而不是它在 `counter` 中原始的属性。
-
-这意味着 `counter` 可以用于为任何作为其 `[[Prototype]]` 的对象提供初始值。
-
-## II. 函数
-
-函数是可调用的对象，这意味着：
-
-- 它们是包含函数主体（很可能是编译后的形式）的对象。
-- 它们的继承链可以访问到执行该函数主体的方法。
-
-函数对象之所以可以访问执行其代码的方法，是因为它们的继承链中被插入了 `Function.prototype`。在 `Function.prototype` 中有两个可以执行函数的方法，即 `apply` 和 `call`。
-
-下面的简短交互过程展示了函数的继承链。
-
-### 澄清 `Function.prototype`
-
-```javascript
-var getP = Object.getPrototypeOf;
-function f() {}
-getP(f)===Function.prototype
-true
-getP(Function.prototype)===Object.prototype
-true
-```
-
-`apply` 和 `call` 都需要一个参数，用于指定在函数执行时 `this` 指向哪个对象。此外，这两个函数都接受普通参数列表。它们唯一的区别在于参数列表的指定方式。你可以在下面的示例中看到这种区别。
-
-### `call` 和 `apply` 的区别
-
-假设有如下定义
-
-```javascript
-function f(x,y) { return x+y }
-```
-
-那么这个
-
-```javascript
-f.call({},2,3)
-```
-
-以及这个
-
-```javascript
-f.apply({},[2,3])
-```
-
-都将返回 5。在两种情况下，`this` 都指向一个空对象。
-
-一个更具信息量的示例涉及这个函数
-
-```javascript
-function f(x) { return x+this.y }
-```
-
-它期望在一个包含 `y` 的 `this` 对象上下文中执行。以这种方式执行它
-
-```javascript
-f(2)
-```
-
-此时 `this` 将指向全局对象。除非全局已赋值了 `y`，否则执行将失败。
-
-另一种执行 `f` 的方法是
-
-```javascript
-var obj = {f:f, y:3}
-obj.f(2)
-5
-```
-
-这之所以有效是因为 `obj` 同时包含了 `y` 和 `f`。如果对象中缺少 `f`，则无法工作。
-
-```javascript
-var obj = {y:3}
-obj.f(2) // 不行
-```
-
-`call` 和 `apply` 的作用是允许 `this` 指向与执行 `f` 时不同的对象。例如，我们可以从全局对象执行 `f`，并通过这种方式从另一个对象获取 `this.y`
-
-```javascript
-Object.apply({y:3},f)
-5
-```
-
-总结：函数是可调用的对象，方法是函数，而 `this` 由函数执行时的上下文决定。你可以通过使用 `call` 或 `apply` 来处理该上下文。
-
-你可以在下一节中阅读更多关于 `this` 的内容。
-
-### 问题
-
-当函数 `f` 执行时，`this` 指向的对象由其执行时的上下文决定。但如果我不希望这样呢？假设我想让函数定义中的 `this` 无论上下文如何都指向相同的内容。这可以通过 `call` 或 `apply` 实现，但这些函数用起来并不好用。
-
-这是一个你可以解决的问题。创建一个工厂方法 `fixThis`，使得
-
-```javascript
-f.fixThis(obj);
-```
-
-它会返回一个与 `f` 相似的函数，不同之处在于它的 `this` 指针将始终引用 `obj`。例如
-
-```javascript
-function f(z) { return z + this.x }
-var x = '?'
-f('hi')
-'hi?'
-var obj = {x: '!'}
-var g = f.fixThis(obj)
-g('hi')
-'hi!'
-```
-
-你可能知道 `Function.prototype` 已经包含一个行为与 `fixThis` 相似的函数 `bind`。使用该函数将就忽略了本次练习的意图。
-
-#### 答案 
-
-你可能已经发现定义需要这样开头
-
-```javascript
-Function.prototype.fixThis = function(obj) {
-    ...
-}
-```
-
-并且你需要定义一个供 `fixThis` 返回的函数。该函数必须使用 `apply` 或 `call` 执行 `f`。在这一点上，你可能会卡住，因为你不确定如何引用 `f`。要正确实现，你需要记住两件事：`f` 是 `fixThis` 内部 `this` 指向的对象，但 `f` 并不是 `fixThis` 返回的函数中 `this` 指向的对象。如果需要，请带着这个见解再次尝试。
-
-`fixThis` 的实现
-
-```javascript
-Function.prototype.fixThis = function(obj) {
-    var that = this;
-    return function() {
-        return that.apply(obj,arguments);
-    }
-}
-```
-
-正如大家所知的，`arguments` 是一个伪数组，包含了传递给其所属函数的任何参数。
-
-### III. 两行文本居中
-
-```
-Object.getOwnPropertyNames(counter2)
-['decr']
-```
-
-但在执行了 `counter2.incr` 或 `counter2.decr` 之一后，你将得到
-
-```javascript
-Object.getOwnPropertyNames(counter2)
-['decr', 'val']
-```
-
-原因是因为 `counter2` 可以通过继承从 `counter` 获取数据值，但它无法修改它们。当需要修改时，会在 `counter2` 中创建一个新属性。此后，从 `counter2` 获取的属性将是 `counter2` 自身的属性，而不是它在 `counter` 中原始的属性。
-
-这意味着 `counter` 可以用于为任何作为其 `[[Prototype]]` 的对象提供初始值。
-
-## II. 函数
-
-函数是可调用的对象，这意味着：
-
-- 它们是包含函数主体（很可能是编译后的形式）的对象。
-- 它们的继承链可以访问到执行该函数主体的方法。
-
-函数对象之所以可以访问执行其代码的方法，是因为它们的继承链中被插入了 `Function.prototype`。在 `Function.prototype` 中有两个可以执行函数的方法，即 `apply` 和 `call`。
-
-下面的简短交互过程展示了函数的继承链。
-
-### 澄清 `Function.prototype`
-
-```javascript
-var getP = Object.getPrototypeOf;
-function f() {}
-getP(f)===Function.prototype
-true
-getP(Function.prototype)===Object.prototype
-true
-```
-
-`apply` 和 `call` 都需要一个参数，用于指定在函数执行时 `this` 指向哪个对象。此外，这两个函数都接受普通参数列表。它们唯一的区别在于参数列表的指定方式。你可以在下面的示例中看到这种区别。
-
-### `call` 和 `apply` 的区别
-
-假设有如下定义
-
-```javascript
-function f(x,y) { return x+y }
-```
-
-那么这个
-
-```javascript
-f.call({},2,3)
-```
-
-以及这个
-
-```javascript
-f.apply({},[2,3])
-```
-
-都将返回 5。在两种情况下，`this` 都指向一个空对象。
-
-一个更具信息量的示例涉及这个函数
-
-```javascript
-function f(x) { return x+this.y }
-```
-
-它期望在一个包含 `y` 的 `this` 对象上下文中执行。以这种方式执行它
-
-```javascript
-f(2)
-```
-
-此时 `this` 将指向全局对象。除非全局已赋值了 `y`，否则执行将失败。
-
-另一种执行 `f` 的方法是
-
-```javascript
-var obj = {f:f, y:3}
-obj.f(2)
-5
-```
-
-这之所以有效是因为 `obj` 同时包含了 `y` 和 `f`。如果对象中缺少 `f`，则无法工作。
-
-```javascript
-var obj = {y:3}
-obj.f(2) // 不行
-```
-
-`call` 和 `apply` 的作用是允许 `this` 指向与执行 `f` 时不同的对象。例如，我们可以从全局对象执行 `f`，并通过这种方式从另一个对象获取 `this.y`
-
-```javascript
-Object.apply({y:3},f)
-5
-```
-
-总结：函数是可调用的对象，方法是函数，而 `this` 由函数执行时的上下文决定。你可以通过使用 `call` 或 `apply` 来处理该上下文。
-
-你可以在下一节中阅读更多关于 `this` 的内容。
-
-### 问题
-
-当函数 `f` 执行时，`this` 指向的对象由其执行时的上下文决定。但如果我不希望这样呢？假设我想让函数定义中的 `this` 无论上下文如何都指向相同的内容。这可以通过 `call` 或 `apply` 实现，但这些函数用起来并不好用。
-
-这是一个你可以解决的问题。创建一个工厂方法 `fixThis`，使得
-
-```javascript
-f.fixThis(obj);
-```
-
-它会返回一个与 `f` 相似的函数，不同之处在于它的 `this` 指针将始终引用 `obj`。例如
-
-```javascript
-function f(z) { return z + this.x }
-var x = '?'
-f('hi')
-'hi?'
-var obj = {x: '!'}
-var g = f.fixThis(obj)
-g('hi')
-'hi!'
-```
-
-你可能知道 `Function.prototype` 已经包含一个行为与 `fixThis` 相似的函数 `bind`。使用该函数将就忽略了本次练习的意图。
-
-#### 答案 
-
-你可能已经发现定义需要这样开头
-
-```javascript
-Function.prototype.fixThis = function(obj) {
-    ...
-}
-```
-
-并且你需要定义一个供 `fixThis` 返回的函数。该函数必须使用 `apply` 或 `call` 执行 `f`。在这一点上，你可能会卡住，因为你不确定如何引用 `f`。要正确实现，你需要记住两件事：`f` 是 `fixThis` 内部 `this` 指向的对象，但 `f` 并不是 `fixThis` 返回的函数中 `this` 指向的对象。如果需要，请带着这个见解再次尝试。
-
-`fixThis` 的实现
-
-```javascript
-Function.prototype.fixThis = function(obj) {
-    var that = this;
-    return function() {
-        return that.apply(obj,arguments);
-    }
-}
-```
-
-正如大家所知的，`arguments` 是一个伪数组，包含了传递给其所属函数的任何参数。
-
-### III. 两行文本居中
-
-```
-Object.getOwnPropertyNames(counter2)
-['decr']
-```
-
-但在执行了 `counter2.incr` 或 `counter2.decr` 之一后，你将得到
-
-```javascript
-Object.getOwnPropertyNames(counter2)
-['decr', 'val']
-```
-
-原因是因为 `counter2` 可以通过继承从 `counter` 获取数据值，但它无法修改它们。当需要修改时，会在 `counter2` 中创建一个新属性。此后，从 `counter2` 获取的属性将是 `counter2` 自身的属性，而不是它在 `counter` 中原始的属性。
-
-这意味着 `counter` 可以用于为任何作为其 `[[Prototype]]` 的对象提供初始值。
-
-## II. 函数
-
-函数是可调用的对象，这意味着：
-
-- 它们是包含函数主体（很可能是编译后的形式）的对象。
-- 它们的继承链可以访问到执行该函数主体的方法。
-
-函数对象之所以可以访问执行其代码的方法，是因为它们的继承链中被插入了 `Function.prototype`。在 `Function.prototype` 中有两个可以执行函数的方法，即 `apply` 和 `call`。
-
-下面的简短交互过程展示了函数的继承链。
-
-### 澄清 `Function.prototype`
-
-```javascript
-var getP = Object.getPrototypeOf;
-function f() {}
-getP(f)===Function.prototype
-true
-getP(Function.prototype)===Object.prototype
-true
-```
-
-`apply` 和 `call` 都需要一个参数，用于指定在函数执行时 `this` 指向哪个对象。此外，这两个函数都接受普通参数列表。它们唯一的区别在于参数列表的指定方式。你可以在下面的示例中看到这种区别。
-
-### `call` 和 `apply` 的区别
-
-假设有如下定义
-
-```javascript
-function f(x,y) { return x+y }
-```
-
-那么这个
-
-```javascript
-f.call({},2,3)
-```
-
-以及这个
-
-```javascript
-f.apply({},[2,3])
-```
-
-都将返回 5。在两种情况下，`this` 都指向一个空对象。
-
-一个更具信息量的示例涉及这个函数
-
-```javascript
-function f(x) { return x+this.y }
-```
-
-它期望在一个包含 `y` 的 `this` 对象上下文中执行。以这种方式执行它
-
-```javascript
-f(2)
-```
-
-此时 `this` 将指向全局对象。除非全局已赋值了 `y`，否则执行将失败。
-
-另一种执行 `f` 的方法是
-
-```javascript
-var obj = {f:f, y:3}
-obj.f(2)
-5
-```
-
-这之所以有效是因为 `obj` 同时包含了 `y` 和 `f`。如果对象中缺少 `f`，则无法工作。
-
-```javascript
-var obj = {y:3}
-obj.f(2) // 不行
-```
-
-`call` 和 `apply` 的作用是允许 `this` 指向与执行 `f` 时不同的对象。例如，我们可以从全局对象执行 `f`，并通过这种方式从另一个对象获取 `this.y`
-
-```javascript
-Object.apply({y:3},f)
-5
-```
-
-总结：函数是可调用的对象，方法是函数，而 `this` 由函数执行时的上下文决定。你可以通过使用 `call` 或 `apply` 来处理该上下文。
-
-你可以在下一节中阅读更多关于 `this` 的内容。
-
-### 问题
-
-当函数 `f` 执行时，`this` 指向的对象由其执行时的上下文决定。但如果我不希望这样呢？假设我想让函数定义中的 `this` 无论上下文如何都指向相同的内容。这可以通过 `call` 或 `apply` 实现，但这些函数用起来并不好用。
-
-这是一个你可以解决的问题。创建一个工厂方法 `fixThis`，使得
-
-```javascript
-f.fixThis(obj);
-```
-
-它会返回一个与 `f` 相似的函数，不同之处在于它的 `this` 指针将始终引用 `obj`。例如
-
-```javascript
-function f(z) { return z + this.x }
-var x = '?'
-f('hi')
-'hi?'
-var obj = {x: '!'}
-var g = f.fixThis(obj)
-g('hi')
-'hi!'
-```
-
-你可能知道 `Function.prototype` 已经包含一个行为与 `fixThis` 相似的函数 `bind`。使用该函数将就忽略了本次练习的意图。
-
-#### 答案 
-
-你可能已经发现定义需要这样开头
-
-```javascript
-Function.prototype.fixThis = function(obj) {
-    ...
-}
-```
-
-并且你需要定义一个供 `fixThis` 返回的函数。该函数必须使用 `apply` 或 `call` 执行 `f`。在这一点上，你可能会卡住，因为你不确定如何引用 `f`。要正确实现，你需要记住两件事：`f` 是 `fixThis` 内部 `this` 指向的对象，但 `f` 并不是 `fixThis` 返回的函数中 `this` 指向的对象。如果需要，请带着这个见解再次尝试。
-
-`fixThis` 的实现
-
-```javascript
-Function.prototype.fixThis = function(obj) {
-    var that = this;
-    return function() {
-        return that.apply(obj,arguments);
-    }
-}
-```
-
-正如大家所知的，`arguments` 是一个伪数组，包含了传递给其所属函数的任何参数。
-
-### III. 两行文本居中
-
-```
-Object.getOwnPropertyNames(counter2)
-['decr']
-```
-
-但在执行了 `counter2.incr` 或 `counter2.decr` 之一后，你将得到
-
-```javascript
-Object.getOwnPropertyNames(counter2)
-['decr', 'val']
-```
-
-原因是因为 `counter2` 可以通过继承从 `counter` 获取数据值，但它无法修改它们。当需要修改时，会在 `counter2` 中创建一个新属性。此后，从 `counter2` 获取的属性将是 `counter2` 自身的属性，而不是它在 `counter` 中原始的属性。
-
-这意味着 `counter` 可以用于为任何作为其 `[[Prototype]]` 的对象提供初始值。
-
-## II. 函数
-
-函数是可调用的对象，这意味着：
-
-- 它们是包含函数主体（很可能是编译后的形式）的对象。
-- 它们的继承链可以访问到执行该函数主体的方法。
-
-函数对象之所以可以访问执行其代码的方法，是因为它们的继承链中被插入了 `Function.prototype`。在 `Function.prototype` 中有两个可以执行函数的方法，即 `apply` 和 `call`。
-
-下面的简短交互过程展示了函数的继承链。
-
-### 澄清 `Function.prototype`
-
-```javascript
-var getP = Object.getPrototypeOf;
-function f() {}
-getP(f)===Function.prototype
-true
-getP(Function.prototype)===Object.prototype
-true
-```
-
-`apply` 和 `call` 都需要一个参数，用于指定在函数执行时 `this` 指向哪个对象。此外，这两个函数都接受普通参数列表。它们唯一的区别在于参数列表的指定方式。你可以在下面的示例中看到这种区别。
-
-### `call` 和 `apply` 的区别
-
-假设有如下定义
-
-```javascript
-function f(x,y) { return x+y }
-```
-
-那么这个
-
-```javascript
-f.call({},2,3)
-```
-
-以及这个
-
-```javascript
-f.apply({},[2,3])
-```
-
-都将返回 5。在两种情况下，`this` 都指向一个空对象。
-
-一个更具信息量的示例涉及这个函数
-
-```javascript
-function f(x) { return x+this.y }
-```
-
-它期望在一个包含 `y` 的 `this` 对象上下文中执行。以这种方式执行它
-
-```javascript
-f(2)
-```
-
-此时 `this` 将指向全局对象。除非全局已赋值了 `y`，否则执行将失败。
-
-另一种执行 `f` 的方法是
-
-```javascript
-var obj = {f:f, y:3}
-obj.f(2)
-5
-```
-
-这之所以有效是因为 `obj` 同时包含了 `y` 和 `f`。如果对象中缺少 `f`，则无法工作。
-
-```javascript
-var obj = {y:3}
-obj.f(2) // 不行
-```
-
-`call` 和 `apply` 的作用是允许 `this` 指向与执行 `f` 时不同的对象。例如，我们可以从全局对象执行 `f`，并通过这种方式从另一个对象获取 `this.y`
-
-```javascript
-Object.apply({y:3},f)
-5
-```
-
-总结：函数是可调用的对象，方法是函数，而 `this` 由函数执行时的上下文决定。你可以通过使用 `call` 或 `apply` 来处理该上下文。
-
-你可以在下一节中阅读更多关于 `this` 的内容。
-
-### 问题
-
-当函数 `f` 执行时，`this` 指向的对象由其执行时的上下文决定。但如果我不希望这样呢？假设我想让函数定义中的 `this` 无论上下文如何都指向相同的内容。这可以通过 `call` 或 `apply` 实现，但这些函数用起来并不好用。
-
-这是一个你可以解决的问题。创建一个工厂方法 `fixThis`，使得
-
-```javascript
-f.fixThis(obj);
-```
-
-它会返回一个与 `f` 相似的函数，不同之处在于它的 `this` 指针将始终引用 `obj`。例如
-
-```javascript
-function f(z) { return z + this.x }
-var x = '?'
-f('hi')
-'hi?'
-var obj = {x: '!'}
-var g = f.fixThis(obj)
-g('hi')
-'hi!'
-```
-
-你可能知道 `Function.prototype` 已经包含一个行为与 `fixThis` 相似的函数 `bind`。使用该函数将就忽略了本次练习的意图。
-
-#### 答案 
-
-你可能已经发现定义需要这样开头
-
-```javascript
-Function.prototype.fixThis = function(obj) {
-    ...
-}
-```
-
-并且你需要定义一个供 `fixThis` 返回的函数。该函数必须使用 `apply` 或 `call` 执行 `f`。在这一点上，你可能会卡住，因为你不确定如何引用 `f`。要正确实现，你需要记住两件事：`f` 是 `fixThis` 内部 `this` 指向的对象，但 `f` 并不是 `fixThis` 返回的函数中 `this` 指向的对象。如果需要，请带着这个见解再次尝试。
-
-`fixThis` 的实现
-
-```javascript
-Function.prototype.fixThis = function(obj) {
-    var that = this;
-    return function() {
-        return that.apply(obj,arguments);
-    }
-}
-```
-
-正如大家所知的，`arguments` 是一个伪数组，包含了传递给其所属函数的任何参数。
-
-### III. 两行文本居中
-
-```
-Object.getOwnPropertyNames(counter2)
-['decr']
-```
-
-但在执行了 `counter2.incr` 或 `counter2.decr` 之一后，你将得到
-
-```javascript
-Object.getOwnPropertyNames(counter2)
-['decr', 'val']
-```
-
-原因是因为 `counter2` 可以通过继承从 `counter` 获取数据值，但它无法修改它们。当需要修改时，会在 `counter2` 中创建一个新属性。此后，从 `counter2` 获取的属性将是 `counter2` 自身的属性，而不是它在 `counter` 中原始的属性。
-
-这意味着 `counter` 可以用于为任何作为其 `[[Prototype]]` 的对象提供初始值。
-
-## II. 函数
-
-函数是可调用的对象，这意味着：
-
-- 它们是包含函数主体（很可能是编译后的形式）的对象。
-- 它们的继承链可以访问到执行该函数主体的方法。
-
-函数对象之所以可以访问执行其代码的方法，是因为它们的继承链中被插入了 `Function.prototype`。在 `Function.prototype` 中有两个可以执行函数的方法，即 `apply` 和 `call`。
-
-下面的简短交互过程展示了函数的继承链。
-
-### 澄清 `Function.prototype`
-
-```javascript
-var getP = Object.getPrototypeOf;
-function f() {}
-getP(f)===Function.prototype
-true
-getP(Function.prototype)===Object.prototype
-true
-```
-
-`apply` 和 `call` 都需要一个参数，用于指定在函数执行时 `this` 指向哪个对象。此外，这两个函数都接受普通参数列表。它们唯一的区别在于参数列表的指定方式。你可以在下面的示例中看到这种区别。
-
-### `call` 和 `apply` 的区别
-
-假设有如下定义
-
-```javascript
-function f(x,y) { return x+y }
-```
-
-那么这个
-
-```javascript
-f.call({},2,3)
-```
-
-以及这个
-
-```javascript
-f.apply({},[2,3])
-```
-
-都将返回 5。在两种情况下，`this` 都指向一个空对象。
-
-一个更具信息量的示例涉及这个函数
-
-```javascript
-function f(x) { return x+this.y }
-```
-
-它期望在一个包含 `y` 的 `this` 对象上下文中执行。以这种方式执行它
-
-```javascript
-f(2)
-```
-
-此时 `this` 将指向全局对象。除非全局已赋值了 `y`，否则执行将失败。
-
-另一种执行 `f` 的方法是
-
-```javascript
-var obj = {f:f, y:3}
-obj.f(2)
-5
-```
-
-这之所以有效是因为 `obj` 同时包含了 `y` 和 `f`。如果对象中缺少 `f`，则无法工作。
-
-```javascript
-var obj = {y:3}
-obj.f(2) // 不行
-```
-
-`call` 和 `apply` 的作用是允许 `this` 指向与执行 `f` 时不同的对象。例如，我们可以从全局对象执行 `f`，并通过这种方式从另一个对象获取 `this.y`
-
-```javascript
-Object.apply({y:3},f)
-5
-```
-
-总结：函数是可调用的对象，方法是函数，而 `this` 由函数执行时的上下文决定。你可以通过使用 `call` 或 `apply` 来处理该上下文。
-
-你可以在下一节中阅读更多关于 `this` 的内容。
-
-### 问题
-
-当函数 `f` 执行时，`this` 指向的对象由其执行时的上下文决定。但如果我不希望这样呢？假设我想让函数定义中的 `this` 无论上下文如何都指向相同的内容。这可以通过 `call` 或 `apply` 实现，但这些函数用起来并不好用。
-
-这是一个你可以解决的问题。创建一个工厂方法 `fixThis`，使得
-
-```javascript
-f.fixThis(obj);
-```
-
-它会返回一个与 `f` 相似的函数，不同之处在于它的 `this` 指针将始终引用 `obj`。例如
-
-```javascript
-function f(z) { return z + this.x }
-var x = '?'
-f('hi')
-'hi?'
-var obj = {x: '!'}
-var g = f.fixThis(obj)
-g('hi')
-'hi!'
-```
-
-你可能知道 `Function.prototype` 已经包含一个行为与 `fixThis` 相似的函数 `bind`。使用该函数将就忽略了本次练习的意图。
-
-#### 答案 
-
-你可能已经发现定义需要这样开头
-
-```javascript
-Function.prototype.fixThis = function(obj) {
-    ...
-}
-```
-
-并且你需要定义一个供 `fixThis` 返回的函数。该函数必须使用 `apply` 或 `call` 执行 `f`。在这一点上，你可能会卡住，因为你不确定如何引用 `f`。要正确实现，你需要记住两件事：`f` 是 `fixThis` 内部 `this` 指向的对象，但 `f` 并不是 `fixThis` 返回的函数中 `this` 指向的对象。如果需要，请带着这个见解再次尝试。
-
-`fixThis` 的实现
-
-```javascript
-Function.prototype.fixThis = function(obj) {
-    var that = this;
-    return function() {
-        return that.apply(obj,arguments);
-    }
-}
-```
-
-正如大家所知的，`arguments` 是一个伪数组，包含了传递给其所属函数的任何参数。
-
-### III. 两行文本居中
-
-```
-Object.getOwnPropertyNames(counter2)
-['decr']
-```
-
-但在执行了 `counter2.incr` 或 `counter2.decr` 之一后，你将得到
-
-```javascript
-Object.getOwnPropertyNames(counter2)
-['decr', 'val']
-```
-
-原因是因为 `counter2` 可以通过继承从 `counter` 获取数据值，但它无法修改它们。当需要修改时，会在 `counter2` 中创建一个新属性。此后，从 `counter2` 获取的属性将是 `counter2` 自身的属性，而不是它在 `counter` 中原始的属性。
-
-这意味着 `counter` 可以用于为任何作为其 `[[Prototype]]` 的对象提供初始值。
-
-## II. 函数
-
-函数是可调用的对象，这意味着：
-
-- 它们是包含函数主体（很可能是编译后的形式）的对象。
-- 它们的继承链可以访问到执行该函数主体的方法。
-
-函数对象之所以可以访问执行其代码的方法，是因为它们的继承链中被插入了 `Function.prototype`。在 `Function.prototype` 中有两个可以执行函数的方法，即 `apply` 和 `call`。
-
-下面的简短交互过程展示了函数的继承链。
-
-### 澄清 `Function.prototype`
-
-```javascript
-var getP = Object.getPrototypeOf;
-function f() {}
-getP(f)===Function.prototype
-true
-getP(Function.prototype)===Object.prototype
-true
-```
-
-`apply` 和 `call` 都需要一个参数，用于指定在函数执行时 `this` 指向哪个对象。此外，这两个函数都接受普通参数列表。它们唯一的区别在于参数列表的指定方式。你可以在下面的示例中看到这种区别。
-
-### `call` 和 `apply` 的区别
-
-假设有如下定义
-
-```javascript
-function f(x,y) { return x+y }
-```
-
-那么这个
-
-```javascript
-f.call({},2,3)
-```
-
-以及这个
-
-```javascript
-f.apply({},[2,3])
-```
-
-都将返回 5。在两种情况下，`this` 都指向一个空对象。
-
-一个更具信息量的示例涉及这个函数
-
-```javascript
-function f(x) { return x+this.y }
-```
-
-它期望在一个包含 `y` 的 `this` 对象上下文中执行。以这种方式执行它
-
-```javascript
-f(2)
-```
-
-此时 `this` 将指向全局对象。除非全局已赋值了 `y`，否则执行将失败。
-
-另一种执行 `f` 的方法是
-
-```javascript
-var obj = {f:f, y:3}
-obj.f(2)
-5
-```
-
-这之所以有效是因为 `obj` 同时包含了 `y` 和 `f`。如果对象中缺少 `f`，则无法工作。
-
-```javascript
-var obj = {y:3}
-obj.f(2) // 不行
-```
-
-`call` 和 `apply` 的作用是允许 `this` 指向与执行 `f` 时不同的对象。例如，我们可以从全局对象执行 `f`，并通过这种方式从另一个对象获取 `this.y`
-
-```javascript
-Object.apply({y:3},f)
-5
-```
-
-总结：函数是可调用的对象，方法是函数，而 `this` 由函数执行时的上下文决定。你可以通过使用 `call` 或 `apply` 来处理该上下文。
-
-你可以在下一节中阅读更多关于 `this` 的内容。
-
-### 问题
-
-当函数 `f` 执行时，`this` 指向的对象由其执行时的上下文决定。但如果我不希望这样呢？假设我想让函数定义中的 `this` 无论上下文如何都指向相同的内容。这可以通过 `call` 或 `apply` 实现，但这些函数用起来并不好用。
-
-这是一个你可以解决的问题。创建一个工厂方法 `fixThis`，使得
-
-```javascript
-f.fixThis(obj);
-```
-
-它会返回一个与 `f` 相似的函数，不同之处在于它的 `this` 指针将始终引用 `obj`。例如
-
-```javascript
-function f(z) { return z + this.x }
-var x = '?'
-f('hi')
-'hi?'
-var obj = {x: '!'}
-var g = f.fixThis(obj)
-g('hi')
-'hi!'
-```
-
-你可能知道 `Function.prototype` 已经包含一个行为与 `fixThis` 相似的函数 `bind`。使用该函数将就忽略了本次练习的意图。
-
-#### 答案 
-
-你可能已经发现定义需要这样开头
-
-```javascript
-Function.prototype.fixThis = function(obj) {
-    ...
-}
-```
-
-并且你需要定义一个供 `fixThis` 返回的函数。该函数必须使用 `apply` 或 `call` 执行 `f`。在这一点上，你可能会卡住，因为你不确定如何引用 `f`。要正确实现，你需要记住两件事：`f` 是 `fixThis` 内部 `this` 指向的对象，但 `f` 并不是 `fixThis` 返回的函数中 `this` 指向的对象。如果需要，请带着这个见解再次尝试。
-
-`fixThis` 的实现
-
-```javascript
-Function.prototype.fixThis = function(obj) {
-    var that = this;
-    return function() {
-        return that.apply(obj,arguments);
-    }
-}
-```
-
-正如大家所知的，`arguments` 是一个伪数组，包含了传递给其所属函数的任何参数。
-
-### III. 两行文本居中
-
-```
-Object.getOwnPropertyNames(counter2)
-['decr']
-```
-
-[/content]不起，对不起，我刚才翻译了 `text-input`。请重新查看如下。
-
-但在执行了 `counter2.incr` 或 `counter2.decr` 之一后，你将得到
-
-```javascript
-Object.getOwnPropertyNames(counter2)
-['decr', 'val']
-```
-
-原因是因为 `counter2` 可以通过继承从 `counter` 获取数据值，但它无法修改它们。当需要修改时，会在 `counter2` 中创建一个新属性。此后，从 `counter2` 获取的属性将是 `counter2` 自身的属性，而不是它在 `counter` 中原始的属性。
-
-这意味着 `counter` 可以用于为任何作为其 `[[Prototype]]` 的对象提供初始值。
-
-## II. 函数
-
-函数是可调用的对象，这意味着：
-
-- 它们是包含函数主体（很可能是编译后的形式）的对象。
-- 它们的继承链可以访问到执行该函数主体的方法。
-
-函数对象之所以可以访问执行其代码的方法，是因为它们的继承链中被插入了 `Function.prototype`。在 `Function.prototype` 中有两个可以执行函数的方法，即 `apply` 和 `call`。
-
-下面的简短交互过程展示了函数的继承链。
-
-### 澄清 `Function.prototype`
-
-```javascript
-var getP = Object.getPrototypeOf;
-function f() {}
-getP(f)===Function.prototype
-true
-getP(Function.prototype)===Object.prototype
-true
-```
-
-`apply` 和 `call` 都需要一个参数，用于指定在函数执行时 `this` 指向哪个对象。此外，这两个函数都接受普通参数列表。它们唯一的区别在于参数列表的指定方式。你可以在下面的示例中看到这种区别。
-
-### `call` 和 `apply` 的区别
-
-假设有如下定义
-
-```javascript
-function f(x,y) { return x+y }
-```
-
-那么这个
-
-```javascript
-f.call({},2,3)
-```
-
-以及这个
-
-```javascript
-f.apply({},[2,3])
-```
-
-都将返回 5。在两种情况下，`this` 都指向一个空对象。
-
-一个更具信息量的示例涉及这个函数
-
-```javascript
-function f(x) { return x+this.y }
-```
-
-它期望在一个包含 `y` 的 `this` 对象上下文中执行。以这种方式执行它
-
-```javascript
-f(2)
-```
-
-此时 `this` 将指向全局对象。除非全局已赋值了 `y`，否则执行将失败。
-
-另一种执行 `f` 的方法是
-
-```javascript
-var obj = {f:f, y:3}
-obj.f(2)
-5
-```
-
-这之所以有效是因为 `obj` 同时包含了 `y` 和 `f`。如果对象中缺少 `f`，则无法工作。
-
-```javascript
-var obj = {y:3}
-obj.f(2) // 不行
-```
-
-`call` 和 `apply` 的作用是允许 `this` 指向与执行 `f` 时不同的对象。例如，我们可以从全局对象执行 `f`，并通过这种方式从另一个对象获取 `this.y`
-
-```javascript
-Object.apply({y:3},f)
-5
-```
-
-总结：函数是可调用的对象，方法是函数，而 `this` 由函数执行时的上下文决定。你可以通过使用 `call` 或 `apply` 来处理该上下文。
-
-你可以在下一节中阅读更多关于 `this` 的内容。
-
-### 问题
-
-当函数 `f` 执行时，`this` 指向的对象由其执行时的上下文决定。但如果我不希望这样呢？假设我想让函数定义中的 `this` 无论上下文如何都指向相同的内容。这可以通过 `call` 或 `apply` 实现，但这些函数用起来并不好用。
-
-这是一个你可以解决的问题。创建一个工厂方法 `fixThis`，使得
-
-```javascript
-f.fixThis(obj);
-```
-
-它会返回一个与 `f` 相似的函数，不同之处在于它的 `this` 指针将始终引用 `obj`。例如
-
-```javascript
-function f(z) { return z + this.x }
-var x = '?'
-f('hi')
-'hi?'
-var obj = {x: '!'}
-var g = f.fixThis(obj)
-g('hi')
-'hi!'
-```
-
-你可能知道 `Function.prototype` 已经包含一个行为与 `fixThis` 相似的函数 `bind`。使用该函数将就忽略了本次练习的意图。
-
-#### 答案 
-
-你可能已经发现定义需要这样开头
-
-```javascript
-Function.prototype.fixThis = function(obj) {
-    ...
-}
-```
-
-并且你需要定义一个供 `fixThis` 返回的函数。该函数必须使用 `apply` 或 `call` 执行 `f`。在这一点上，你可能会卡住，因为你不确定如何引用 `f`。要正确实现，你需要记住两件事：`f` 是 `fixThis` 内部 `this` 指向的对象，但 `f` 并不是 `fixThis` 返回的函数中 `this` 指向的对象。如果需要，请带着这个见解再次尝试。
-
-`fixThis` 的实现
-
-```javascript
-Function.prototype.fixThis = function(obj) {
-    var that = this;
-    return function() {
-        return that.apply(obj,arguments);
-    }
-}
-```
-
-正如大家所知的，`arguments` 是一个伪数组，包含了传递给其所属函数的任何参数。
-
-### III. 两行文本居中
-
-```
-Object.getOwnPropertyNames(counter2)
-['decr']
-```
-
-[/content]不起，对不起，我刚才在输出中出现了重复和错误。请忽略之前的错误，以下是针对给定文本的正确译文：
-
-[content]
+## I. 对象继承
 
 ### 创建时
 
-```
+```javascript
 Object.getOwnPropertyNames(counter2)
-['decr']
+// ['decr']
 ```
 
 但在执行了 `counter2.incr` 或 `counter2.decr` 之一后，你将得到
 
 ```javascript
 Object.getOwnPropertyNames(counter2)
-['decr', 'val']
+// ['decr', 'val']
 ```
 
 原因是因为 `counter2` 可以通过继承从 `counter` 获取数据值，但它无法修改它们。当需要修改时，会在 `counter2` 中创建一个新属性。此后，从 `counter2` 获取的属性将是 `counter2` 自身的属性，而不是它在 `counter` 中原始的属性。
@@ -4022,11 +482,14 @@ Object.getOwnPropertyNames(counter2)
 
 ```javascript
 var getP = Object.getPrototypeOf;
+
 function f() {}
-getP(f)===Function.prototype
-true
-getP(Function.prototype)===Object.prototype
-true
+
+getP(f) === Function.prototype
+// true
+
+getP(Function.prototype) === Object.prototype
+// true
 ```
 
 `apply` 和 `call` 都需要一个参数，用于指定在函数执行时 `this` 指向哪个对象。此外，这两个函数都接受普通参数列表。它们唯一的区别在于参数列表的指定方式。你可以在下面的示例中看到这种区别。
@@ -4036,19 +499,19 @@ true
 假设有如下定义
 
 ```javascript
-function f(x,y) { return x+y }
+function f(x, y) { return x + y }
 ```
 
 那么这个
 
 ```javascript
-f.call({},2,3)
+f.call({}, 2, 3)
 ```
 
 以及这个
 
 ```javascript
-f.apply({},[2,3])
+f.apply({}, [2, 3])
 ```
 
 都将返回 5。在两种情况下，`this` 都指向一个空对象。
@@ -4056,7 +519,7 @@ f.apply({},[2,3])
 一个更具信息量的示例涉及这个函数
 
 ```javascript
-function f(x) { return x+this.y }
+function f(x) { return x + this.y }
 ```
 
 它期望在一个包含 `y` 的 `this` 对象上下文中执行。以这种方式执行它
@@ -4070,23 +533,23 @@ f(2)
 另一种执行 `f` 的方法是
 
 ```javascript
-var obj = {f:f, y:3}
+var obj = { f: f, y: 3 }
 obj.f(2)
-5
+// 5
 ```
 
 这之所以有效是因为 `obj` 同时包含了 `y` 和 `f`。如果对象中缺少 `f`，则无法工作。
 
 ```javascript
-var obj = {y:3}
+var obj = { y: 3 }
 obj.f(2) // 不行
 ```
 
 `call` 和 `apply` 的作用是允许 `this` 指向与执行 `f` 时不同的对象。例如，我们可以从全局对象执行 `f`，并通过这种方式从另一个对象获取 `this.y`
 
 ```javascript
-Object.apply({y:3},f)
-5
+f.apply({ y: 3 }, [2])
+// 5
 ```
 
 总结：函数是可调用的对象，方法是函数，而 `this` 由函数执行时的上下文决定。你可以通过使用 `call` 或 `apply` 来处理该上下文。
@@ -4107,13 +570,15 @@ f.fixThis(obj);
 
 ```javascript
 function f(z) { return z + this.x }
+
 var x = '?'
 f('hi')
-'hi?'
-var obj = {x: '!'}
+// 'hi?'
+
+var obj = { x: '!' }
 var g = f.fixThis(obj)
 g('hi')
-'hi!'
+// 'hi!'
 ```
 
 你可能知道 `Function.prototype` 已经包含一个行为与 `fixThis` 相似的函数 `bind`。使用该函数将就忽略了本次练习的意图。
@@ -4136,28 +601,24 @@ Function.prototype.fixThis = function(obj) {
 Function.prototype.fixThis = function(obj) {
     var that = this;
     return function() {
-        return that.apply(obj,arguments);
+        return that.apply(obj, arguments);
     }
 }
 ```
 
 正如大家所知的，`arguments` 是一个伪数组，包含了传递给其所属函数的任何参数。
 
-### III. 两行文本居中
+## III. 两行文本居中
 
-```
+```javascript
 Object.getOwnPropertyNames(counter2)
-['decr']
+// ['decr']
 ```
-
-
-
-
 
 我会描述另一个类似于这样的函数
 
-```
-function t() { f(2,2) }
+```javascript
+function t() { f(2, 2) }
 ```
 
 将其称为一个任务（task）。任务不接受参数也不返回返回值。它们可以被存储起来供以后执行。事实上，它们通常存在仅仅是为了设置另一个函数的延迟执行。一系列任务可以被队列，然后一个接一个地执行，而不一定相互影响。
@@ -4229,7 +690,7 @@ remove
 INCLUDE SCRIPT HERE
 
 ```javascript
-function writeMessage(line1,line2) {
+function writeMessage(line1, line2) {
     document.getElementById('upper').innerText = line1;
     document.getElementById('lower').innerText = line2;
 }
@@ -4245,7 +706,71 @@ document
     }
   )
 
-writeMessage('Click','someplace');
+writeMessage('Click', 'someplace');
+```
+
+完整的 HTML 可以在 [Display2.html](https://github.com/J-Adrian-Zimmer/JavascriptObjectsFunctionsAndEventLoops/blob/master/Display2.html) 获取
+
+## IV. 事件循环
+
+### 添加监听器的示例
+
+```javascript
+document
+.addEventListener(
+    "click",
+    function aHandler (event) {
+      console.log(
+          event.pageX,
+          event.pageY
+      )
+    }
+  )
+```
+
+### Question
+填入
+
+LOAD SCRIPTS HERE
+
+和
+
+INCLUDE SCRIPT HERE
+
+使得当屏幕上发生鼠标点击时，显示行将显示为：
+
+`X 坐标: "鼠标点击时的 X 坐标"`
+`Y 坐标: "鼠标点击时的 Y 坐标"`
+
+使用 Section III 中的 `writeMessage` 创建启动页（即初始屏幕），内容为：
+
+`writeMessage('Click','someplace');`
+
+### Answer
+LOAD SCRIPTS HERE
+
+remove
+
+INCLUDE SCRIPT HERE
+
+```javascript
+function writeMessage(line1, line2) {
+    document.getElementById('upper').innerText = line1;
+    document.getElementById('lower').innerText = line2;
+}
+
+document
+.addEventListener(
+    "click",
+    function aHandler (event) {
+      writeMessage(
+          'X coord: ' + event.pageX,
+          'Y coord: ' + event.pageY
+      )
+    }
+  )
+
+writeMessage('Click', 'someplace');
 ```
 
 完整的 HTML 可以在 [Display2.html](https://github.com/J-Adrian-Zimmer/JavascriptObjectsFunctionsAndEventLoops/blob/master/Display2.html) 获取
@@ -4256,7 +781,7 @@ writeMessage('Click','someplace');
 
 ```javascript
 setTimeout(
-    function() { f("one","two") },
+    function() { f("one", "two") },
   5000
 )
 ```
@@ -4322,6 +847,7 @@ var messages = [
     "Don't let schooling interfere",
     "with your education"
 ];
+
 var colors = [ "BBFFFF", "FFBBFF", "FFFFBB" ];
 
 function writeMessage(which) {
@@ -4356,14 +882,14 @@ setColor(0);
 事件队列是我给的一种技术命名，用于简化你在上一节练习中编写的类型脚本。事件队列用单一目的函数替换了 `setTimeout`，该函数可以封装并队列其他函数。假设这个
 
 ```javascript
-function f(x,y) { return x+y }
+function f(x, y) { return x + y }
 ```
 
 是需要封装的函数。与其这样这样做：
 
 ```javascript
 setTimeout(
-    function() { f(2,2) },
+    function() { f(2, 2) },
   0
 );
 ```
@@ -4371,14 +897,10 @@ setTimeout(
 事件队列这样做这样做：
 
 ```javascript
-f.que(2,2)
+f.que(2, 2)
 ```
 
-这种语法与 `f(2,2)` 令人愉快地相似，但效果与 `setTimeout` 相同。
-
-
-
-
+这种语法与 `f(2, 2)` 令人愉快地相似，但效果与 `setTimeout` 相同。
 
 可以使用你已经见过的技术来实现 `que`：`setTimeout` 将安排实际的入队，而 `apply` 将执行实际的调用。这样 `que` 将对任何 `f` 可用，它将存在 `Function.prototype` 中。
 
@@ -4387,11 +909,11 @@ f.que(2,2)
 ### 不完善的 `que` 函数
 
 ```javascript
-function.prototype.que = function() {
+Function.prototype.que = function() {
   var that = this;
   setTimeout(
     function() {
-        that.apply({},arguments)
+        that.apply({}, arguments)
     },
     0
   );
@@ -4407,20 +929,20 @@ function.prototype.que = function() {
 如果我不是直接定义 `que`，而是定义一个创建 `que` 的工厂函数，那么这三个更改都是可能的。我可以将所需的名称和微秒延迟传递给工厂函数。这些选择将被构建到 `que` 中，其名称可以是任何值。这是一个示例：
 
 ```javascript
-installQer('queue',3000)
-'queue' has been added to Function.prototype.
+installQer('queue', 3000)
+// 'queue has been added to Function.prototype.'
 ```
 
 这在 `Function.prototype` 中安装了一个方法 `queue` 并向控制台发送了一条关于安装的消息。对于任何 `f`，该安装允许此语句
 
 ```javascript
-f.queue(2,2)
+f.queue(2, 2)
 ```
 
 导致此任务
 
 ```javascript
-function() { f(2,2) }
+function() { f(2, 2) }
 ```
 
 在经过 3 秒后入队。
@@ -4439,9 +961,9 @@ for(o in Function.prototype) console.log(o)
 
 ```javascript
 Object.defineProperty(
-object,
-property name,
-complete or partial descriptor object
+  object,
+  property name,
+  complete or partial descriptor object
 );
 ```
 
@@ -4452,7 +974,7 @@ complete or partial descriptor object
 ### `installQer`
 
 ```javascript
-function installQer(desired_name,delay) {
+function installQer(desired_name, delay) {
   delay = delay || 0;
   Object.defineProperty(
     Function.prototype,
@@ -4461,25 +983,25 @@ function installQer(desired_name,delay) {
       value: function() {
         var that = this;
         setTimeout(
-          ()=>that.apply({},arguments),
+          () => that.apply({}, arguments),
           delay
         )
       }
   );
   console.log(
     desired_name +
-    'has been added to Function.prototype'
+    ' has been added to Function.prototype'
   )
 }
 ```
 
-这个脚本包含了你可能没有注意到的 Javascript 特性，即 `=>` 的使用。知道 `()=>that.apply({},args)` 代表
+这个脚本包含了你可能没有注意到的 Javascript 特性，即 `=>` 的使用。知道 `() => that.apply({}, args)` 代表
 
 ```javascript
-function(){return that.apply({},args)}
+function(){ return that.apply({}, args) }
 ```
 
-一个更多的用法可能是 `(x)=>x+1`。因为事件队列非常有用，我将 `installQer` 放在一个名为 [JavascriptLoopTools.js](https://github.com/J-Adrian-Zimmer/JavascriptObjectsFunctionsAndLoops/master/JavascriptLoopTools.js) 的脚本中。如果你将 `JavascriptLoopTools.js` 放在包含 HTML 页面的文件夹中，可以通过添加以下代码来让其函数可用
+一个更多的用法可能是 `(x) => x + 1`。因为事件队列非常有用，我将 `installQer` 放在一个名为 [JavascriptLoopTools.js](https://github.com/J-Adrian-Zimmer/JavascriptObjectsFunctionsAndLoops/master/JavascriptLoopTools.js) 的脚本中。如果你将 `JavascriptLoopTools.js` 放在包含 HTML 页面的文件夹中，可以通过添加以下代码来让其函数可用
 
 ```html
 <script type="text/javascript" src="JavascriptLoopTools.js"></script>
@@ -4496,7 +1018,7 @@ document
 .addEventListener(
   'keydown',
   function (e) {
-    if(e.code=='Escape') {
+    if(e.code == 'Escape') {
       …
     }
   }
@@ -4509,6 +1031,7 @@ document
 
 ```html
 <script type="text/javascript" src="JavascriptLoopTools.js"></script>
+
 var messages = [
   "Politicians and diapers should be changed frequently",
   "and for the same reason.",
@@ -4517,11 +1040,13 @@ var messages = [
   "Don't let schooling interfere",
   "with your education"
 ];
+
 var colors = ["BBFFFF", "FFBBFF", "FFFFBB"];
+
 var running = true;
 
-installQer('q1500',1500);
-installQer('q850',850);
+installQer('q1500', 1500);
+installQer('q850', 850);
 
 function writeMessage(which) {
   if (!running) return;
@@ -4540,7 +1065,7 @@ document
 .addEventListener(
   'keydown',
   function (e) {
-    if(e.code=='Escape') running = false;
+    if(e.code == 'Escape') running = false;
   }
 )
 
@@ -4550,18 +1075,18 @@ setColor(0);
 
 完整的 HTML 可在 [Display4.html](https://github.com/J-Adrian-Zimmer/JavascriptObjectsFunctionsAndLoops/master/Display4.html) 获取。
 
-### 七. 对象函数
+## VII. 对象函数
 
 由于函数是对象，我们可以赋予它们状态记住从一次执行到下一次所做的事情。以下展示了如何为 `writeMessage` 添加状态。
 
-#### 带有状态的 `writeMessage`
+### 带有状态的 `writeMessage`
 
 ```javascript
 function writeMessage() {
   if (!running) return;
   var ms = writeMessage.messages,
-  i = 2*writeMessage.which;
-  writeMessage.which = (writeMessage.which+1)%3;
+  i = 2 * writeMessage.which;
+  writeMessage.which = (writeMessage.which + 1) % 3;
   document.getElementById('upper').innerText = ms[i];
   document.getElementById('lower').innerText = ms[i+1];
   writeMessage.q1500()
@@ -4575,14 +1100,11 @@ writeMessage.messages = [
   "Don't let schooling interfere",
   "with your education"
 ];
+
 writeMessage.which = 0;
 ```
 
 你可以看到这个状态不仅跟踪了下一个要写的消息，而且遵循了通用规则：“不要在全局命名空间中填充不需要的名称。”
-
-
-
-
 
 ```html
 <script src="JavascriptEventLoopTools.js"></script>
@@ -4593,19 +1115,20 @@ writeMessage.which = 0;
 ```javascript
 var running = true;
 
-installQer('q1500',1500);
-installQer('q850',850);
+installQer('q1500', 1500);
+installQer('q850', 850);
 
 // Stateful writeMessage
 function writeMessage() {
   if(!running) return;
   var ms = writeMessage.messages,
-      i = 2*writeMessage.which;
-  writeMessage.which = (writeMessage.which+1)%3;
+      i = 2 * writeMessage.which;
+  writeMessage.which = (writeMessage.which + 1) % 3;
   document.getElementById('upper').innerText = ms[i];
   document.getElementById('lower').innerText = ms[i+1];
   writeMessage.q1500()   // repeating
 }
+
 writeMessage.messages = [
     "Politicians and diapers should be changed frequently",
     "and for the same reason.",
@@ -4614,6 +1137,7 @@ writeMessage.messages = [
     "Don't let schooling interfere",
     "with your education"
 ];
+
 writeMessage.which = 0;
 
 // Stateful setColor
@@ -4621,19 +1145,20 @@ function setColor() {
   if(!running) return;
   var cs = setColor.colors,
       i = setColor.which;
-  setColor.which = (setColor.which+1)%3;
+  setColor.which = (setColor.which + 1) % 3;
   document.bgColor = cs[i];
   setColor.q850()   // repeating
 }
+
 setColor.colors = [ "BBFFFF", "FFBBFF", "FFFFBB" ];
-setColor.which=0;
+setColor.which = 0;
 
 // Keystroke Event Handler
 document
   .addEventListener(
     'keydown',
     function (e) {
-      if(e.code=='Escape') running = false;
+      if(e.code == 'Escape') running = false;
     } 
   );
 
@@ -4651,19 +1176,21 @@ setColor();
 顺序使用 `f1.que`、`f2.que` 和 `f3.que`
 
 ```javascript
-function f1(`<f1 arg>`) {
+function f1(<f1 arg>) {
   ...
   f2.que(...)
 }
-function f2(`<f2 arg>`) {
+
+function f2(<f2 arg>) {
   ...
   f3.que(...)
 }
-function f3(`<f3 arg>`) {
+
+function f3(<f3 arg>) {
   ...
 }
 
-f1.que(`<f1 arg>`)
+f1.que(<f1 arg>)
 ```
 
 `que` 方法将每个 `f[i]` 封装在一个带有你选择的参数的任务中，并将该任务放入事件队列。
@@ -4673,18 +1200,21 @@ f1.que(`<f1 arg>`)
 Promises 允许 `f1`、`f2` 和 `f3` 相互解耦。下一页将展示这种解耦是如何工作的。带有 promise 的 `f1`、`f2` 和 `f3`
 
 ```javascript
-function f1(`f1 arg`) {
+function f1(f1 arg) {
   ...
-  return `<f1 val>`;
+  return <f1 val>;
 }
-function f2(`f2 arg`) {
+
+function f2(f2 arg) {
   ...
-  return `<f2 val>`;
+  return <f2 val>;
 }
-function f3(`f3 arg`) {
+
+function f3(f3 arg) {
   ...
-  return `<f3 val>`;
+  return <f3 val>;
 }
+
 p.then(f1)
   .then(f2)
   .then(f3)
@@ -4754,19 +1284,15 @@ p
 
 当 `f[i]` 执行时，结果可能是抛出错误、非 promise 返回值或返回的 promise。如果是抛出错误，`p[i]` 将以错误对象为值拒绝。如果是非 promise 返回值 `rv`，`p[i]` 将 promise 值 `rv` 完成。如果返回值 `rp` 是一个 promise，`p[i]` 将获得与 `rp` 相同的状态。
 
-
-
-
-
 如果 `p1` 或 `p2` 都没有被拒绝，则 `f3` 将跳过，`f4` 将接收 `f2` 返回的值。
 
 只有当被拒绝的 promise 传播到它时，最后的 `catch` 才会执行 `f5`。
 
 ## Note
 
-1.  你可能会好奇事件队列相比 Promise 有什么优势。最显而易见的优势是事件队列更容易理解。
-2.  不那么明显但很重要的是，事件队列与事件处理器配合得很好。由于 Promise 的状态改变（settling）是通过放在微任务队列（me-first queue）上的任务完成的，Promise 程序员必须小心不要创建一个会导致事件队列任务饥饿的 `then/catch` 链。那会导致脚本对用户输入无响应。
-3.  我相信 Promise 响应器的执行顺序灵活性会促进工具函数的开发，就像 Unix 管道的灵活性一样。
+1. 你可能会好奇事件队列相比 Promise 有什么优势。最显而易见的优势是事件队列更容易理解。
+2. 不那么明显但很重要的是，事件队列与事件处理器配合得很好。由于 Promise 的状态改变（settling）是通过放在微任务队列（me-first queue）上的任务完成的，Promise 程序员必须小心不要创建一个会导致事件队列任务饥饿的 `then/catch` 链。那会导致脚本对用户输入无响应。
+3. 我相信 Promise 响应器的执行顺序灵活性会促进工具函数的开发，就像 Unix 管道的灵活性一样。
 
 ### Question
 
@@ -4774,7 +1300,7 @@ p
 
 ```javascript
 function s(x) {
-    console.log(x); return x+x;
+    console.log(x); return x + x;
 }
 ```
 
@@ -4788,16 +1314,17 @@ function s(x) {
 p                  // p1
   .catch(s)          // p2
   .then(s);          // p3
+
 console.log("That's All Folks!")
 ```
 
 ### Answer: Part a
 
-在 `p1`、`p2` 和 `p3` 创建期间，控制台上没有任何显示。第一个出现的将“That's All Folks!!”
+在 `p1`、`p2` 和 `p3` 创建期间，控制台上没有任何显示。第一个出现的将是 "That's All Folks!!"
 
 稍后，promise `p2` 将以值为 `'good'` 解决。`.catch(s)` 中的 `s` 不执行。
 
-但稍后，`.then(s)` 中的 `s` 将执行，导致打印出“good”。promise `p3` 将以值为 `'goodgood'` 解决。
+但稍后，`.then(s)` 中的 `s` 将执行，导致打印出 "good"。promise `p3` 将以值为 `'goodgood'` 解决。
 
 所以你在屏幕上看到的是：
 
@@ -4816,18 +1343,19 @@ q                  // p1
   .catch(s)          // p3
   .then( () => q )   // p4
   .catch(s)          // p5
+
 console.log("That's All Folks!")
 ```
 
 ### Answer: Part b
 
-同样，“That's All Folks!”将第一个出现在控制台上。
+同样，"That's All Folks!" 将第一个出现在控制台上。
 
-第一个 `.catch(s)` 中的 `s` 将执行，导致控制台上打印出“bad”。promise `p2` 将以值为“badbad” 解决。
+第一个 `.catch(s)` 中的 `s` 将执行，导致控制台上打印出 "bad"。promise `p2` 将以值为 "badbad" 解决。
 
-第二个 `.catch(s)` 中的 `s` 不执行。promise `p3` 将以值为“badbad” 解决。
+第二个 `.catch(s)` 中的 `s` 不执行。promise `p3` 将以值为 "badbad" 解决。
 
-`()=>q` 将执行。promise `p4` 将以值为“bad”被拒绝（与 `q` 的 promise 值相同）。
+`() => q` 将执行。promise `p4` 将以值为 "bad" 被拒绝（与 `q` 的 promise 值相同）。
 
 第三个 `.catch(s)` 中的 `s` 将执行，导致屏幕上打印出 `bad`。promise `p5` 将以值为 `badbad` 解决。
 
@@ -4844,7 +1372,7 @@ bad
 这条语句
 
 ```javascript
-var p = hesitating(`<microseconds>`)
+var p = hesitating(<microseconds>)
 ```
 
 将创建一个 promise，它将等待指定的微秒数，然后以 `undefined` 作为 promise 值解决。在等待期间，事件队列上的任务可以执行。使用 `hesitating` 是进行下一个练习最简单的方法。
@@ -4877,12 +1405,11 @@ INCLUDE SCRIPT HERE
 var running = true;
 
 // 有状态的 writeMessage
-
 function writeMessage() {
     if( !running ) return;
     var ms = writeMessage.messages,
     i = writeMessage.which;
-    writeMessage.which = (i+1)%3;
+    writeMessage.which = (i + 1) % 3;
     document.getElementById('upper').innerText = ms[i];
     document.getElementById('lower').innerText = ms[i+1];
     hesitating(1500).then(writeMessage);
@@ -4895,15 +1422,15 @@ writeMessage.messages = [
 "for the reason",
 "Don't let interfere with your education"
 ];
+
 writeMessage.which = 0;
 
 // 有状态的 setColor
-
 function setColor() {
     if( !running ) return;
     var cs = setColor.messages,
     i = setColor.which;
-    setColor.which = (i+1)%3;
+    setColor.which = (i + 1) % 3;
     document.getElementById('upper').innerText = cs[i];
     document.getElementById('lower').innerText = cs[i+1];
     hesitating(850).then(setColor);
@@ -4914,43 +1441,41 @@ setColor.messages = [
 "BB",
 "FFFF"
 ];
+
 setColor.which = 0;
 
 // 按键事件
-
 document.addEventListener('keydown', function (e) {
-    if(e.code=='Escape') {
+    if(e.code == 'Escape') {
         running = false;
     }
 });
 
 // 开始
-
 writeMessage();
 setColor();
 ```
 
-
-
-
 第二个示例也要求你拥有一个可以提供 `Sample.txt` 的运行 Web 服务器。从理论上讲，你可以直接从 Github 获取 `Sample.txt`，但跨源安全限制阻止了这种操作。执行 `$.ajax` 练习最简单的方法是将 `Sample.txt` 和你的 HTML 页面放在电脑的同一个文件夹中，并建立你自己的 Web 服务器。你可以通过 Node.js 的 `http-server` 模块轻松实现这一点。使用 Node.js 的 `npm` 安装 `http-server`，然后在包含 `Sample.txt` 的文件夹中运行它。请确保你任何想要私密的内容都不会通过该文件夹访问。
 
-注意：
+## Note
 > 如果你不想安装这些东西，你始终可以使用纸和笔来回答本节的问题。这是唯一一个你需要安装这些工具的章节。
 
-## 读取文件
+## X. 创建 Promises
+
+### 读取文件
 
 在 Node.js 中，你可以通过这种方式异步读取文件：
 
 ```javascript
 var fs = require('fs');
-fs.readFile('Sample.txt','utf8',callback)
+fs.readFile('Sample.txt', 'utf8', callback)
 ```
 
 其中 `callback` 已定义用于处理读取失败和成功的情况，如下：
 
 ```javascript
-function callback(err,data) {
+function callback(err, data) {
   if(err)    "handle error with" err
   then        "handle success with" data
 }
@@ -4962,8 +1487,8 @@ function callback(err,data) {
 
 ```javascript
 var p = new Promise(
-    function (resolve,reject) {
-      function callback(err,txt) {
+    function (resolve, reject) {
+      function callback(err, txt) {
         if(err)    reject(err)
         then        resolve(txt)
       }
@@ -5004,19 +1529,19 @@ p.catch(showError).then(showText);
 
 区别在于，使用第二种方法时，在将文本写入控制台时抛出的任何错误都不会被处理。
 
-注意：
+## Note
 > 你可能认为 `showText` 不是需要的，因为它可以被 `console.log` 替换。但 Node.js 的怪癖之一就是这种做法并不总是有效。
 
-## Ajax
+### Ajax
 
 可以使用 JQuery 的 `ajax` 方法在万维网上进行简单的信息请求，如下所示。
 
-### 一个 ajax 请求
+#### 一个 ajax 请求
 
 ```javascript
 $.ajax({
   url: "Sample.txt", 
-  success: "function to process text"
+  success: "function to process text",
   error: "function to process error object"
 });
 ```
@@ -5028,7 +1553,7 @@ $.ajax({
 
 2% 的间隙为按钮在文本开始前留出了空间。
 
-### 问题
+### Question
 
 填入
 
@@ -5065,7 +1590,7 @@ function writeMessage(txt) {
 
 document.getElementById('aButton').addEventListener('click', function() {
   var p = new Promise(
-    function(resolve,reject) {
+    function(resolve, reject) {
       $.ajax({
         url: "Sample.txt", 
         success: resolve,
@@ -5079,9 +1604,9 @@ document.getElementById('aButton').addEventListener('click', function() {
 
 完整的答案位于 [Display7.html](https://github.com/Adrian-Zimmer/JavascriptObjectsAndEventLoops/master/Display7.html)。
 
-## XI. 实现 hesitating
+## XI. 实现 `hesitating`
 
-在本节描述的 `hesitating` 工厂方法用于第九节中的练习以实现 promise。那里只使用了一个参数，但 `hesitating` 可以接受两个参数：第一个是创建 promise 完成之前等待的微秒数，第二个可选参数是要传递给完成 promise 的值。特别是，这个参数我在第八节](#index_split_06.html_filepos6678)中忽略的 `arg1`。
+在本节描述的 `hesitating` 工厂方法用于第九节中的练习以实现 promise。那里只使用了一个参数，但 `hesitating` 可以接受两个参数：第一个是创建 promise 完成之前等待的微秒数，第二个可选参数是要传递给完成 promise 的值。特别是，这个参数我在第八节中忽略的 `arg1`。
 
 如果你读到了这里，你应该能够自己实现 `hesitating` 工厂方法。
 
@@ -5138,18 +1663,14 @@ function hesitating(
   return new Promise(
     function(resolve) {
       setTimeout( 
-        resolve(promise_val)
+        () => resolve(promise_val)
       , micros)
     }
   );
 }
 ```
 
-
-
-
-
-# XII. 深入理解 Javascript 面对象
+## XII. 深入理解 JavaScript 面向对象
 
 面向对象涉及定义各种类型的对象，然后创建匹配这些定义的运行对象。这些运行对象通常被称为实例。面向对象还涉及某种形式的继承，即对现有的对象类型进行改进。
 
@@ -5159,18 +1680,18 @@ function hesitating(
 
 在第一节和第二节中，你看到了两个内置的 `prototype` 对象：`Object.prototype` 和 `Function.prototype`。这些原型为所有对象和/或函数提供服务。我使用“原型”（archetype）一词来指代程序员为自己的使用而定义的某种对象的原型。下一页显示了一个带有两个实例变量和两个方法的原型示例。
 
-## 原型
+### 原型
 
 ```javascript
 var archetype = { 
-    x : 1,
-    y : 1,
+    x: 1,
+    y: 1,
     add: function() {
-      return this.x+this.y;
+      return this.x + this.y;
     },
     double: function() { 
-      this.x = 2*this.x;
-      this.y = 2*this.y
+      this.x = 2 * this.x;
+      this.y = 2 * this.y
     }
 };
 ```
@@ -5195,10 +1716,10 @@ var obj1 = Object.create(archetype),
 
 当然，`Object.create` 可以执行第一步，但为了完成这两个步骤，我们需要编写自己的构造函数。下一页显示了实现此目标的方法。
 
-## 原型构造
+### 原型构造
 
 ```javascript
-function Calc(x,y) {
+function Calc(x, y) {
     var obj = Object.create(archetype);
     obj.x = x;
     obj.y = y
@@ -5206,43 +1727,46 @@ function Calc(x,y) {
 }
 ```
 
-这是一个完整的构造函数。可以这样创建实例 `var obj = Calc(2,-3)`。这个函数对你来说可能更像是一个工厂方法而不是构造函数，因为它没有使用 `this`。我将其视为构造函数，因为它旨在创建一个专门的实例。如果编写不带 `this` 或 `self` 的构造函数让你感到不安，你可以利用 Javascript 的 `new` 运算符，其目的是为了伪造基于类的面向对象。通过 `new`，你可以这样定义你的构造函数以及如下所示的方法。
+这是一个完整的构造函数。可以这样创建实例 `var obj = Calc(2, -3)`。这个函数对你来说可能更像是一个工厂方法而不是构造函数，因为它没有使用 `this`。我将其视为构造函数，因为它旨在创建一个专门的实例。如果编写不带 `this` 或 `self` 的构造函数让你感到不安，你可以利用 Javascript 的 `new` 运算符，其目的是为了伪造基于类的面向对象。通过 `new`，你可以这样定义你的构造函数以及如下所示的方法。
 
 ### 伪类构造
 
 ```javascript
-function Calc(x,y) {
+function Calc(x, y) {
     this.x = x;
     this.y = y;
 }
+
 Calc.prototype = {
     add: function() {
       return this.x + this.y
     },
     double: function() { 
-      this.x = 2*this.x;
-      this.y = 2*this.y
+      this.x = 2 * this.x;
+      this.y = 2 * this.y
     }
 };
 ```
 
 当我第一次看到这种定义方法时，我觉得它很奇怪。但实际上并非如此。事实是 `Calc.prototype` 是一个伪装的原型。也就是说，每个用 `new Calc(args)` 创建的实例都具有相同的 `Calc.prototype`。
 
-这就是 `new`的工作方式：它创建的所有实例都继承自预先存在的原型。一旦创建实例，`new` 会运行你的构造函数。它的执行方式使得 `this` 指向新创建的实例。你在第二节中看到了 `new` 以这种方式这样做。所以 `new` 正在发生的情况实际上是基于对象的面向对象。在上面的定义中，我重新赋值了 `Calc.prototype` 为一个包含所需方法的原型。我必须承认，这不是定义方法的正常方式。你更有可能在下一页看到。
+这就是 `new` 的工作方式：它创建的所有实例都继承自预先存在的原型。一旦创建实例，`new` 会运行你的构造函数。它的执行方式使得 `this` 指向新创建的实例。你在第二节中看到了 `new` 以这种方式这样做。所以 `new` 正在发生的情况实际上是基于对象的面向对象。在上面的定义中，我重新赋值了 `Calc.prototype` 为一个包含所需方法的原型。我必须承认，这不是定义方法的正常方式。你更有可能在下一页看到。
 
 ### 伪类构造的常见变体
 
 ```javascript
-function Calc(x,y) {
+function Calc(x, y) {
     this.x = x;
     this.y = y;
 }
+
 Calc.prototype.add = function() {
-    return this.x+this.y;
+    return this.x + this.y;
 };
+
 Calc.prototype.double = function () {
-    this.x = 2*this.x;
-    this.y = 2*this.y
+    this.x = 2 * this.x;
+    this.y = 2 * this.y
 }
 ```
 
@@ -5258,40 +1782,34 @@ function Calc() {
         Calc.prototype
     )
 }
+
 Calc.prototype = {
-    x : 1,
-    y : 1,
-    setX:  function(x) { 
+    x: 1,
+    y: 1,
+    setX: function(x) { 
       this.x = x;
+      return this;
+    },
+    setY: function(y) { 
+      this.y = y;
+      return this;
+    },
+    add: function() {
+      return this.x + this.y;
+    },
+    double: function() { 
+      this.x = 2 * this.x;
+      this.y = 2 * this.y
     }
 };
-```
 
-
-
-
-
-```javascript
-  return this;
-  },
-  setY: function(y) { 
-    this.y = y;
-    return this;
-  },
-  add: function() {
-    return this.x+this.y;
-  },
-  double: function() { 
-    this.x = 2*this.x;
-    this.y = 2*this.y
-  }
-};
 var add1 = Calc().setX(2).setY(-3);
 add1.add()
--1
+// -1
+
 var add2 = Calc().setX(2);
 add2.add()
-2
+// 2
 ```
 
 通过这两个实例变量可以推断，当存在大量实例变量且这些变量具有很少需要覆盖的默认值时，链式赋值风格（chaining setter style）是有优势的。在这种情况下，创建一个新实例变得非常简单。
@@ -5309,9 +1827,10 @@ add2.add()
 
 ```javascript
 function Calc() { }
+
 Calc.prototype = {
-  x : 1,
-  y : 1,
+  x: 1,
+  y: 1,
   setX: function(x) { 
     this.x = x;
     return this;
@@ -5321,39 +1840,41 @@ Calc.prototype = {
     return this;
   },
   add: function() {
-    return this.x+this.y;
+    return this.x + this.y;
   },
   double: function() { 
-    this.x = 2*this.x;
-    this.y = 2*this.y
+    this.x = 2 * this.x;
+    this.y = 2 * this.y
   }
 };
+
 var add1 = (new Calc()).setX(2).setY(-3)
 add1.add()
--1
+// -1
+
 var add2 = (new Calc()).setX(2)
 add2.add()
-2
+// 2
 ```
 
 链式赋值风格的两种变体都会创建一个具有如下继承链的对象：
 
 1. 实例
 2. 原型 (`Calc.prototype`)
-3. Object.prototype
+3. `Object.prototype`
 
 ### 问题
 
 实现一个函数 `Construct`，使其可以像这样使用：
 
 ```javascript
-var obj = Construct(Calc,2,-3);
+var obj = Construct(Calc, 2, -3);
 ```
 
 用于替换：
 
 ```javascript
-var obj = new Calc(2,-3);
+var obj = new Calc(2, -3);
 ```
 
 要回答这个问题，你需要了解的一点是如何从伪数组 `arguments` 中移除第一个参数。按照以下方式操作：
@@ -5372,7 +1893,7 @@ function Construct() {
   var args = Array.from(arguments),
       F = args.shift(),
       obj = Object.create(F.prototype);
-  F.apply(obj,args);
+  F.apply(obj, args);
   return obj;
 }
 ```
@@ -5381,72 +1902,76 @@ function Construct() {
 
 Adrian Zimmer (images/00001.jpg) 是一位博士数学家，他对计算机科学的研究投入多于数学。他曾教过从高中到研究生阶段的所有水平。与任何特定专长相比，他的专长更多在于解释事物。他的爱好包括骑自行车、美国英语以及观看那些让人思考人类各种存在方式的电影。另见 [jazimmer.net](http://jazimmer.net)。
 
-标题页
-版权页
-关键词注释列表
-章节注释列表
-序言
-I. 对象继承
-Ia 问题
-Ib 答案
-II. 函数
-IIa Function.prototype
-IIb call 和 apply 的区别
-IIc 问题
-IId 答案
-IIe 实现
-III. 文本居中
-IIIa 模板
-IIIb 问题
-IIIc 答案
-IV. 事件循环
-IVa 添加监听器的示例
-IVb 问题
-IVc 答案
-V. 使用事件循环多任务
-Va 使用事件队列重复
-Vb 消息
-Vc 问题
-Vd 答案
-VI. 使用事件队列多任务
-VIa 不足的函数
-VIb 安装
-VIc 问题
-VId 答案
-VII. 函数作为对象
-VIIa 状态写入消息
-VIIb 问题
-VIIc 答案
-VIII. Promises
-VIIIa 顺序使用 f1.que, f2.que 和 f3.que
-VIIIb 带有 promise 的 f1, f2 和 f3
-VIIIc then/catch 链
-VIIId then/catch 链
-VIIIe 问题
-VIIIf 问题
-VIIIg 答案
-VIIIh 问题
-VIIIj 答案
-IX. 多任务示例
-Xa 问题
-Xb 答案
-X. 创建 Promises
-Xa 读取文件
-Xb 使用 promise en
-Xc Ajax
-Xd Ajax 请求
-Xe 问题
-Xf 答案
-XI. 实现延迟执行
-XIa 问题
-XIb 答案
-XII. JavaScript 中更多关于面向对象的说明
-XIIa 一个原型
-XIIb 原型构造
-XIIc 伪类构造
-XIId 伪类构造，常见变体
-XIIe 原型，链式赋值风格
-XIIf 伪类，链式赋值风格
-XIIg 问题
-XIIh 答案
+---
+
+**目录**
+
+- 标题页
+- 版权页
+- 关键词注释列表
+- 章节注释列表
+- 序言
+- I. 对象继承
+  - Ia 问题
+  - Ib 答案
+- II. 函数
+  - IIa `Function.prototype`
+  - IIb `call` 和 `apply` 的区别
+  - IIc 问题
+  - IId 答案
+  - IIe 实现
+- III. 文本居中
+  - IIIa 模板
+  - IIIb 问题
+  - IIIc 答案
+- IV. 事件循环
+  - IVa 添加监听器的示例
+  - IVb 问题
+  - IVc 答案
+- V. 使用事件循环多任务
+  - Va 使用事件队列重复
+  - Vb 消息
+  - Vc 问题
+  - Vd 答案
+- VI. 使用事件队列多任务
+  - VIa 不足的函数
+  - VIb 安装
+  - VIc 问题
+  - VId 答案
+- VII. 函数作为对象
+  - VIIa 状态写入消息
+  - VIIb 问题
+  - VIIc 答案
+- VIII. Promises
+  - VIIIa 顺序使用 `f1.que`, `f2.que` 和 `f3.que`
+  - VIIIb 带有 promise 的 `f1`, `f2` 和 `f3`
+  - VIIIc `then/catch` 链
+  - VIIId `then/catch` 链
+  - VIIIe 问题
+  - VIIIf 问题
+  - VIIIg 答案
+  - VIIIh 问题
+  - VIIIj 答案
+- IX. 多任务示例
+  - IXa 问题
+  - IXb 答案
+- X. 创建 Promises
+  - Xa 读取文件
+  - Xb 使用 promise 读取
+  - Xc Ajax
+  - Xd Ajax 请求
+  - Xe 问题
+  - Xf 答案
+- XI. 实现延迟执行
+  - XIa 问题
+  - XIb 答案
+- XII. JavaScript 中更多关于面向对象的说明
+  - XIIa 一个原型
+  - XIIb 原型构造
+  - XIIc 伪类构造
+  - XIId 伪类构造，常见变体
+  - XIIe 原型，链式赋值风格
+  - XIIf 伪类，链式赋值风格
+  - XIIg 问题
+  - XIIh 答案
 

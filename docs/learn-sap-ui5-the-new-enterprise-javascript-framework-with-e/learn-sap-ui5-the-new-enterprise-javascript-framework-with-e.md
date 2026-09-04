@@ -1,10 +1,5 @@
+
 # SAP UI5 入门指南：全新的企业级 JavaScript 框架示例
-
-
-
-
-
-
 
 ## 免费礼物券
 
@@ -22,7 +17,6 @@ SAP® Netweaver Gateway：学习如何为 UI5 和 ABAP 项目使用 SAP® Netwea
 
 轻松学习 D3.js
 
-
 # 1. 引言
 
 SAPUI5 是一个用于为现代 Web 业务应用程序开发丰富用户界面的平台。它得到了支持 Web 应用程序中 HTML5 功能的浏览器的支持。使用 SAPUI5 构建的应用程序具有跨浏览器和设备的响应性 - 它们可在智能手机、平板电脑和支持 HTML5 的台式机上运行。这种响应性由 UI 控件提供，这些控件会根据设备类型自动调整。
@@ -30,6 +24,7 @@ SAPUI5 是一个用于为现代 Web 业务应用程序开发丰富用户界面�
 ## 1.1 前提条件
 
 开始学习 UI5 所需的技能集是 HTML5、CSS3、JavaScript、jQuery 和 OData。即使您不了解其中任何一项技能，由于大多数技术都易于学习，在一段时间内掌握它们并不困难。
+
 下图展示了开始使用 UI5 工作需要在这些技术上达到的熟练程度。
 
 ![](img/e0db2820988dc54294b33092f834e7a1_10_0.png)
@@ -49,6 +44,7 @@ SAPUI5 是一个用于为现代 Web 业务应用程序开发丰富用户界面�
 在开始 SAP UI5 开发之前，您需要了解 UI5 库，以便知道‘如何使用它们’以及‘何时使用它们’。市场上存在两种不同的 UI5 库：
 
 - Open UI5（使用 Apache 2 许可证）
+
 - SAPUI5（使用 SAP 许可证）
 
 OpenUI5 是免费的，您无需获得 SAP 的任何许可即可使用它。但是，要使用 SAPUI5，您需要拥有现有的 SAP 许可证。
@@ -65,7 +61,7 @@ Open UI5 库的当前版本是“版本 1.36.6”（版本频繁更改。由于�
 
 ![](img/e0db2820988dc54294b33092f834e7a1_12_1.png)
 
-这里我们有一个主详细信息布局，左侧是组件列表，右侧是组件的详细描述以及当您在应用程序中使用这些组件时它将如何表现。在移动设备上，它会自动调整并在同一屏幕上显示主详细信息布局，以提供更好的用户体验。
+这里我们有一个主详细信息布局，左侧是组件列表，右侧是组件的详细描述以及当您在应用程中使用这些组件时它将如何表现。在移动设备上，它会自动调整并在同一屏幕上显示主详细信息布局，以提供更好的用户体验。
 
 ## 库的设置
 
@@ -74,13 +70,12 @@ Open UI5 库的当前版本是“版本 1.36.6”（版本频繁更改。由于�
 ## 搜索组件
 
 它还包含一个搜索选项，用于搜索您可以用于 UI5 应用程序的特定组件。例如：如果您想在应用程序中添加列表项，那么您将搜索‘list’关键词以获取包含关键词“list”的过滤结果。
+
 这里，让我们通过点击选择简单列表；您将获得关于该列表的详细信息，例如它属于哪个库（这里它属于“sap.m”，该库从 SAP UI5 的 1.10 版本开始存在）。我们可以在这里看到很多示例，这些都是独立的示例，展示了如何在不同类型的场景中使用此列表项。
 
 ![](img/e0db2820988dc54294b33092f834e7a1_13_0.png)
 
 让我们看看第一个“List-Counter Indication”。点击它，您将在右侧获得描述和数字（这里是 Power Projector 4713 类别中的产品数量）。
-
-
 
 如果你想查看代码，请点击右上角如图所示的图标：
 
@@ -134,7 +129,7 @@ FIORI 是使用 SAP UI5 构建的成品应用程序。
 
 让我们再次以超级用户身份登录，并选择“查看工作许可证”，以查看所有工作许可证及其右侧的状态。你也可以根据状态筛选工作许可证。只需在右侧的“筛选状态框”中搜索即可。
 
-如果你想查看所有已批准的工作许可证，只需在框中输入“*approve*”，然后屏幕上就会显示所有已批准的工作许可证。你还可以通过点击来查看工单的详细信息。
+如果你想查看所有已批准的工作许可证，只需在框中输入“*approve*”，然后屏幕上就会显示所有已批准的工作许可证。你还可以通过点击来查看工单的详经信息。
 
 另一种筛选内容的方法是使用工单编号。你需要在左侧输入工单编号，然后就会得到筛选后的工作许可证。
 
@@ -190,8 +185,6 @@ FIORI 是使用 SAP UI5 构建的成品应用程序。
 
 **Cloud9 IDE：** 这是一个基于云的IDE，用于编写代码、编译和随时随地访问。你需要创建一个账户才能使用Cloud9 IDE，而且它是免费的。我们将在Cloud 9 IDE中分享大量代码，并将其用于大量开发。
 
-
-
 使用云端IDE的主要优势之一是整个开发环境是预先打包好的。在未来，大部分开发工作将基于云端环境进行，因此熟悉Cloud9将是一个重要的助力。Cloud9 IDE的链接是 https://c9.io/
 
 所有示例文件都在代码库中可用。当你在项目开发中需要快速查阅语法时，它也会很有帮助。该代码库是公开的，你可以访问它并在以下网址中实时预览代码：https://ide.c9.io/ajaytech/demo
@@ -211,6 +204,7 @@ FIORI 是使用 SAP UI5 构建的成品应用程序。
 以下是你需要选择的选项，以开始你的第一个项目：
 
 - **库：** 这里有两个库 sap.ui.commons 和 sap.m 库。我们将使用 sap.m。
+
 - **选项：** 它有一个复选框选项。如果你需要默认创建初始视图，那么保持选中状态并点击 next。
 
 在这个页面，我们必须为你的视图控制器对命名。这里我们给它起名为 *demo*。
@@ -287,11 +281,12 @@ sap.ui.jsview("myFirstApp_01.demo", {
 现在我们在 eclipse 中。我们将创建一个简单的应用程序。第一步是更改标题。为此，我们可以进入视图内部。在这里你可以看到带有 title 属性为 “Hello World” 的代码 *sap.m.page*。现在我们要将 hello world 改为 ‘Simple App’（与我们在线框图中提到的完全一致）。
 
 如果我们回顾一下我们的线框图，现在需要创建一个输入框和一个按钮。为此，我必须通过以下链接进入我的 Open UI5 库
+
 [https://tools.hana.ondemand.com/](https://tools.hana.ondemand.com/)。
 
 在这种情况下，我们需要资源管理器和 API 参考。在不同的标签页中打开两者。我们可以在资源管理器中搜索任何我们将要使用的应用程序组件或元素。我们必须搜索我们现在需要的 ‘Input’ 组件。在左侧标签页提供的框中搜索它。当我们用 sap.m.Input 搜索时，会看到很多结果，我们需要为 sap.m.Input 选择 JSDoc 那一个。这里我们应该首先检查版本，该版本将在 UI5 库的版本中打开。由于我们的 eclipse 版本是 1.34，所以我们可以在我们的项目中使用它。
 
-下一步将是查看它在资源管理器中的示例外观。如果我们去资源管理器中搜索 ‘Input’，会看到许多结果，选择第一个示例 ‘Input – Assisted’，你可以看到输出的样子。要查看源代码，请单击右上角的图标。这将是 XML 视图，我们将得到它；在这里你可以看到用于输入标签的代码。为了我们的目的，我们需要一个带有占位符（‘Enter Name’）的输入，我们可以看到在示例中我们需要使用 ‘text’ 属性。让我们进入我们的 eclipse 并使用 ‘sap.m.input’。
+下一步将是查看它在资源管理器中的示例外观。如果我们去资源管理器中搜索 ‘Input’，会看到许多结果，选择第一个示例 ‘Input – Assisted’，你可以看到输出的样子。要查看源代码，请单击右上角的图标。这将是 XML 视图，我们将得到它；在这里你可以看到用于输入标�的代码。为了我们的目的，我们需要一个带有占位符（‘Enter Name’）的输入，我们可以看到在示例中我们需要使用 ‘text’ 属性。让我们进入我们的 eclipse 并使用 ‘sap.m.input’。
 
 现在我们可以进入 eclipse 中的视图文件，我们将根据我们的项目更改代码。
 
@@ -310,11 +305,8 @@ createContent : function(oController) {
             oBtn
         ]
     });
-```
-
-return oPage;
+    return oPage;
 }
-});
 ```
 
 在这种情况下，我们可以看到变量名为 oSimpleInput（最好让变量名的开头代表它是什么类型的变量。我们正在为 sap.m.Input 创建一个对象。因此，这里的‘o’表示对象值，如果是数组则用‘a’，如果是整数则用‘i’，以此类推）。因此，这里的 oSimpleInput 是 sap.m.Input 的一个对象。
@@ -342,12 +334,19 @@ return oPage;
 如果我们查看 UI5 应用程序的控制流，程序执行从 index 文件‘index.html’开始。第一个操作是加载我们的库文件。
 
 ```
+
 <script
+
     src="resources/sap-ui-core.js"
+
     id="sap-ui-bootstrap"
+
     data-sap-ui-libs="sap.m"
+
     data-sap-ui-theme="sap_bluecrystal">
+
 </script>
+
 ```
 
 您可以看到这里的“src=‘resources/sap-ui-core.js’”将加载我们 UI5 应用程序的核心库文件。此过程也称为**引导（Bootstrapping）**。在这里，您也可以提及我们应用程序所需的库文件。我们还需要知道的是，在这种情况下，我们的应用程序需要哪些库，这里是‘sap.m’。在这里，您可以看到我们只提及了‘sap.m’，但有时我们可能需要应用程序中某些需要分析的特性。在这种情况下，我们将使用名为‘sap.m,sap.viz’的库。您将在‘sap.m’旁边提及它。同样，还有很多其他库，例如“sap.ui.commons”。我们将在未来的章节中看到这些。
@@ -360,20 +359,32 @@ return oPage;
 
 ![](img/e0db2820988dc54294b33092f834e7a1_35_0.png)
 
-引导之后的下一步是实例化。在这里，您为您的应用程序创建对象，为您的视图控制器创建对象，并将视图添加到您的应用程序中。然后，您将应用程序放置在 content 中。
+引导之后的下一步是实例化。在这里，您为您的应用程序创建对象，为您的视控制器创建对象，并将视图添加到您的应用程序中。然后，您将应用程序放置在 content 中。
 
 ```
+
 <script>
+
     console.log("in index page creating app object");
+
     sap.ui.localResources("myfirstapp_01");
+
     var app = new sap.m.App({initialPage:"iddemo1"}); // Creating Object for app
+
     var page = sap.ui.view({id:"iddemo1",
+
         // Creating object of view controller
+
         viewName:"myfirstapp_01.demo",
+
         type:sap.ui.core.mvc.ViewType.JS});
+
     app.addPage(page); // Adding the view to the page
+
     app.placeAt("content"); // Placing App at content
+
 </script>
+
 ```
 
 您可能会有一个问题，什么是 content？content 实际上是 index 页面中提到的 Div 元素的 ID（<div id="content"></div>）。您的整个应用程序将被放置在其中。
@@ -409,15 +420,25 @@ getControllerName 之后，将执行 *createContent* 函数。在 *createContent
 首先，我们在 index 文件的 script 中编写 console.log。
 
 ```
+
 <script>
+
     console.log("in index page creating app object");
+
     sap.ui.localResources("myfirstapp_01");
+
     var app = new sap.m.App({initialPage:"iddemo1"});
+
     var page = sap.ui.view({id:"iddemo1", viewName:"myfirstapp_01.demo",
+
     type:sap.ui.core.mvc.ViewType.JS});
+
     app.addPage(page);
+
     app.placeAt("content");
+
 </script>
+
 ```
 
 类似地，在视图文件中添加 console.log。
@@ -425,42 +446,69 @@ getControllerName 之后，将执行 *createContent* 函数。在 *createContent
 sap.ui.jsview("myfirstapp_01.demo", {
 
 ```
+
 /**Specifies the Controller belonging to this View.
+
  *In the case that it is not implemented, or that "null" is returned, this View does not have a Controller.
+
  *@memberOf myfirstapp_01.demo
+
  */
+
 getControllerName : function() {
+
     console.log("getControllerName");
+
     return "myfirstapp_01.demo";
+
 },
+
 ```
 
 在控制器文件中，在 onInit、onBeforeRendering、onAfterRendering 函数中也编写 console.log。
 
 ```
+
 sap.ui.controller("myfirstapp_01.demo", {
 
 /**
+
  *Called when a controller is instantiated and its View controls (if available) are already created.
+
  *Can be used to modify the View before it is displayed, to bind event handlers and do other one-time initialization.
+
  *@memberOf myfirstapp_01.demo
+
  */
+
 onInit: function() {
+
     console.log("onInit");
+
 },
 
 /**
+
  *Similar to onAfterRendering, but this hook is invoked before the controller's View is re-rendered
+
  *(NOT before the first rendering! onInit() is used for that one!).
+
  *@memberOf myfirstapp_01.demo
+
  */
+
 onBeforeRendering: function() {
+
     console.log("onBeforeRendering");
+
 },
 
 /**
+
  *Called when the View has been rendered (so its HTML is part of the document). Post-rendering manipulation of the HTML could be done here.
+
  *This hook is the same one that SAPUI5 controls get after being rendered.
+
 ```
 
 
@@ -488,11 +536,17 @@ onExit: function() {
 现在我们可以根据应用程序的执行，在控制台窗口中查看控制流。您将发现的顺序是：
 
 1. 索引页面
+
 2. getControllerName
+
 3. createContent
+
 4. onInit
+
 5. onBeforeRendering
+
 6. onAfterRendering
+
 7. onExit（如果您关闭应用程序）
 
 由此，我们清楚地了解了应用程序的控制流程是如何工作的。在创建涉及较大组件的大型应用程序时，预测应用程序的结果是至关重要的。
@@ -500,6 +554,7 @@ onExit: function() {
 ## 扩展应用程序
 
 让我们扩展我们的应用程序，通过添加更多组件将其提升到新的水平。我们已经看过 Simple App 的示例，现在我们将通过在第二页添加一个带有返回按钮和标签的新视图控制器来扩展它。首先，我们将为此构建一个线框图，然后开始开发过程。
+
 在此之前，我们想澄清如何使用 MVC 模式，它是编程语言中最常见的模式之一，而在 UI5 中，其实现方式略有不同。
 
 ## 模型视图控制器 (MVC)
@@ -620,8 +675,6 @@ goToSecondPage : function(oEvt){
 },
 ```
 
-
-
 一旦我们完成需求，就在 Chrome 中运行该应用程序。在框中输入一些文本并按提交。它没有任何反应。哦不！我们遇到了一个bug。
 
 所以右键单击并检查，打开控制台窗口，你就能看到错误是什么。这里显示 'oLabel.setValue' 不是一个函数。为了修复它，我们将直接在控制台中运行代码，以验证编写的代码是否正确。转到 first.controller 并复制
@@ -694,7 +747,7 @@ UI5 库中存在许多组件，其中许多在我们的项目中使用非常频�
 
 ### 文件浏览器
 
-我们要添加的下一个组件是文件浏览器。检查是否可以在资源管理器中找到它。现在在不传递任何属性值的情况下将其添加到应用程序中。它将向你的应用程序添加一个简单的文件上传器。
+我们要添加的下一个组件是文件浏览器。检查是否可以在资源管理器中找到它。现在在不传递任何属性值的情况下将其添到应用程序中。它将向你的应用程序添加一个简单的文件上传器。
 
 ### 右侧带有按钮的栏
 
@@ -718,8 +771,6 @@ HBOX 与 VBox 类似，它将以水平方式对齐内容。这里我们在 HBox 
 
 ![](img/e0db2820988dc54294b33092f834e7a1_49_1.png)
 
-
-
 # 6. UI5 应用中的数据
 
 在本新章节中，我们将探讨如何在 UI5 应用中使用数据。我们已经了解了如何使用组件以及如何创建一个基础的 UI5 应用。我们将处理 JSON 数据（JavaScript 对象表示法）。如果你之前没有使用过 JSON，那么以下是面向初学者的简短介绍。如果你已经熟悉它，则可以直接跳至下一小节。
@@ -730,7 +781,7 @@ HBOX 与 VBox 类似，它将以水平方式对齐内容。这里我们在 HBox 
 
 在右侧的图片中，我们可以看到每条记录对应一个对象。这些记录包含在花括号中。你还可以看到每个对象都有一些重复的值。例如：id、Name 和 waiting_number。这些被称为‘键’，它们代表数据库表的列值。在右侧，我们有 A1、A2、A3 作为 id 值，Ajay、Jon、Bob 作为 Name 值，以及 1、2、3 作为 waiting_number 值。这些就是你实际使用的数据。因此，这就是该表格的简单 JSON 格式表示。
 
-要在我们的 UI5 项目中使用 JSON 数据，我们必须创建一个对象，并将该对象称为‘模型’。然后，我们需要将模型附加到视图，以便视图能使用模型中的数据。在你的 UI5 应用中实现这一点非常简单。
+要在我们的 UI5 项目中使用 JSON 数据，我们必须创建一个对象，并将该对象称为‘模型’。然后，我们需要将模型附加到视图，以便视图能使用模中的数据。在你的 UI5 应用中实现这一点非常简单。
 
 ![img](img/e0db2820988dc54294b33092f834e7a1_52_0.png)
 
@@ -824,7 +875,9 @@ Ui5 社区网络 · SAP 专家 · SAP 服务，SAP 咨询，SAP 教育
 深入学习 SAP UI5 / OpenUI5：基础与高级水平，循序渐进，在顶尖 Open UI5 专家的帮助下
 
 - 🎥 56 节课
+
 - ⏱️ 7 小时
+
 - 📊 中级水平
 
 ![img](img/e0db2820988dc54294b33092f834e7a1_55_1.png)
@@ -840,7 +893,9 @@ Ui5 社区网络 · SAP 专家 · SAP 服务，SAP 咨询，SAP 教育
 ### 创建列表的步骤
 
 1. 第一步是创建一个标准列表项。一旦我们有了标准列表项，它们就是将出现在我们列表中的项目。
+
 2. 第二步是使用 ‘sap.m.List’ 创建一个列表对象。一旦我们创建了 ‘sap.m.List’，我们就可以将标准项放入列表中。这里 dinosaur 是一个列表项，animal 是一个列表。
+
 3. 第三步是提供数据。在图片中，你可能注意到使用了带有正斜杠 ‘{/}’ 的花括号。这代表数据绑定。
 
 现在，如果我们进入 Cloud9 中的 *program list_demo_basic_3.html*，看看如何实现这个列表。我们可以找到以下结构：
@@ -867,7 +922,7 @@ var oApp = new sap.m.App({              /** 使用 oApp 创建一个应用 */
 }).placeAt("content");               /** 将内容放置到 HTML 中 */
 ```
 
-我们还需要创建内容。为此，在 body 标签内，创建一个 div 元素并添加内容。现在我们已经准备好了页面和列表。接下来，我们将添加一个列表。接着，我们需要创建数据。创建 oData 对象并在 JSON 数据中添加数据。在之前的绑定示例中，为了创建一个简单的应用，我们只有数据存在。现在我们将添加更多数据。因此，我们要做的是在 oData 内部创建一个 names 属性，所有数据都可以放入其中。
+我们还需要创建内容。为此，在 body 标签内，创建一个 div 元素并添内容。现在我们已经准备好了页面和列表。接下来，我们将添加一个列表。接着，我们需要创建数据。创建 oData 对象并在 JSON 数据中添加数据。在之前的绑定示例中，为了创建一个简单的应用，我们只有数据存在。现在我们将添加更多数据。因此，我们要做的是在 oData 内部创建一个 names 属性，所有数据都可以放入其中。
 
 ```javascript
 var oData = {
@@ -904,13 +959,17 @@ oList.bindItems({
 ```
 
 这里的 "path: "/names"" 指定了指向该路径的数据。
+
 第二个参数是模板。它是列表项的标准模板。它将作为列表项的蓝图。首先，我们创建了一个页面，然后使用 oData 添加了一些数据，最后，我们将数据与列表绑定。
+
 如果你使用 Eclipse 并且有分离的视图-控制器，那么所有操作都将在控制器中执行，例如数据绑定、数据处理以及相关的操作。
+
 现在，如果我们运行代码并查看结果，我们将看到下面的输出：
 
 ![](img/e0db2820988dc54294b33092f834e7a1_59_0.png)
 
 这里，我们将标准列表项的创建通用化，所有项目都从 JSON 数据中获取并添加到我们的最终列表中，你可以在输出中看到。
+
 你也可以查看我们的 SAPUI5 专业开发视频课程以加速学习：[点击此处](https://example.com)或使用下方的二维码。
 
 ![](img/e0db2820988dc54294b33092f834e7a1_60_0.png)
@@ -932,8 +991,11 @@ UI5 社区网络 • SAP 专家 - SAP 服务、SAP 咨询、SAP 教育
 表格是 UI5 库中最常用的元素。表格的结构类似于我们使用的 Excel 电子表格。在表格中，我们有包含标题的表头，以及包含数据的行。以下是使用 UI5 创建表格的简化步骤。
 
 1.  第一步是定义和创建列。
+
 2.  第二步是将列添加到表格中。
+
 3.  第三步是定义行的外观。这里我们使用 `sap.m.ColumnListItem`。因此，每条独立记录都被视为一个独立的列表项。
+
 4.  在最后一步，我们将表格与数据绑定。
 
 ![](img/e0db2820988dc54294b33092f834e7a1_62_0.png)
@@ -1011,9 +1073,7 @@ var oTemp = new sap.m.ColumnListItem({
 
  })
 
- ]
-
-})
+ ])
 ```
 
 最后，我们执行数据绑定步骤，为 `oTemp` 提供数据路径。在这种情况下，各个列表项将根据数据生成。
@@ -1084,16 +1144,23 @@ oList.bindItems("/names");
 这些是为我们新的表格变体所做的简单更改。现在运行这个应用程序，你可以看到新旧表格之间的区别。
 
 | 名称 | 地点 | ID |
+
 | :--- | :--- | :--- |
+
 | 恐龙 | 山脉 | 山脉 |
+
 | 大象 | 森林 | 森林 |
+
 | 鲸鱼 | 大海 | 大海 |
+
 | 鸭子 | 水域 | 水域 |
+
 | 猴子 | 树木 | 树木 |
 
 这里的结构发生了变化，并且在一定程度上也响应了移动设备。然而，选择使用哪种表格（sap.m 和 sap.ui）的主要决定取决于两个因素：
 
 - 功能特性。
+
 - 以及主要目标设备类型。
 
 你也可以查看我们的 SAPUI5 专业开发视频课程以加速学习：[点击此处](https://example.com)或使用下方的二维码。
@@ -1105,9 +1172,11 @@ oList.bindItems("/names");
 # 9. 磁贴
 
 磁贴是提供多个在逻辑上分离的功能的绝佳方式。它们在显示 KPI 信息数据方面也很受欢迎。
+
 创建和使用磁贴有两个简单的步骤：
 
 1.  创建单个磁贴。
+
 2.  将这些磁贴添加到磁贴容器中。
 
 现在让我们尝试一个创建磁贴并将其添加到磁贴容器中的简单场景。在 cloud9 共享工作区中，你可以看到 `tile_demo_basic_1&2.html`。提到的步骤很简单；我们使用 `StandardTile` 创建单个磁贴：
@@ -1158,37 +1227,58 @@ var page = new sap.m.Page({
 var oData = {
 ```
 
-
-
 “names” :[{
+
             icon : “sap-icon://sap-ui5”,
+
             Name : “恐龙”,
+
             Place : “山地”
+
 }, {
+
             icon : “sap-icon://general-leave-request”,
+
             Name : “大象”,
+
             Place : “森林”
+
 }, {
+
             icon : “sap-icon://map-2”,
+
             Name : “鲸鱼”,
+
             Place : “海洋”
+
 }, {
+
             icon : “sap-icon://travel-expense”,
+
             Name : “鸭子”,
+
             Place : “水域”
+
 }]
+
 };
+
 var oModel = new sap.ui.model.json.JSONModel(oData);
 
 接下来，移除硬编码部分，因为我们将在此使用数据绑定：
 
 var oTileTemplate = new sap.m.StandardTile({ //创建模板
+
 icon: “{icon}”,
+
 title: “{Name}”,
+
 info: “{Place}”
+
 });
 
 var oTileContainer = new sap.m.TileContainer(“idTileAction”, {
+
 });
 
 oTileContainer.bindAggregation(“tiles”, “/names”, oTileTemplate);
@@ -1198,14 +1288,23 @@ oTileContainer.bindAggregation(“tiles”, “/names”, oTileTemplate);
 oTileContainer.setModel(oModel);
 
 var page = new sap.m.Page({
+
     title: “简单磁贴”,
+
     enableScrolling: false,
+
     content: [
+
         oTileContainer
+
     ]
+
 });
+
 var app = new sap.m.App();
+
 app.addPage(page);
+
 app.placeAt(“content”);
 
 这是创建简单磁贴而不进行任何硬编码的通用方法。在项目中应避免硬编码。在实际项目中使用磁贴时，我们也应该使用绑定聚合函数。下面是我们的程序运行得到的输出：
@@ -1234,36 +1333,51 @@ UI5 社区网络 • SAP 专家 - SAP 服务，SAP 咨询，SAP 教育
 
 例如，如果我们有这样的需求：我们有一个列表，其描述依赖于标题值。如果列表的主要内容是动物的名称，而描述中包含一些依赖关系。那么工厂函数就是实现这些绑定并使其通用化的方法。
 
-在我们的例子中，如果我们将列表标题表示为动物名称，并且需要说明该动物是否已灭绝。那么我们需要使用 `bindAggregation`，其第三个参数为自定义函数，该函数包含返回特定动物描述的逻辑。下面是代码和输出效果的示意图：
+在我们的例子中，如果我们将列表标题表示为动物名称，并且需要说明该动物是否已灭绝。那么我们需要使用 `bindAggregation`，其第三个参数为自定�函数，该函数包含返回特定动物描述的逻辑。下面是代码和输出效果的示意图：
 
 ![](img/e0db2820988dc54294b33092f834e7a1_74_0.png)
 
 *bindAggregation* 函数的第三个参数将是一个自定义函数，它接受两个参数。第一个是 `sId`，另一个是 `oContext`。参数 `oContext` 将包含您操作所需的所有必要信息：
 
 oList.bindAggregation(“items”,
+
     “/names”,
+
 function(sId, oContext) {
+
     var sValue = oContext.getProperty(“Name”);
 
     var sDesc1 = “仍在漫游”; //字符串描述
+
     var sDesc2 = “已灭绝” //字符串描述
 
     });
 
 if (sValue === “Dinosaur”) { //如果语句用来说明描述是灭绝
-    return new sap.m.StandardListItem({
-        title: sValue,
-        description: sDesc2
-    });
-} else {
-    return new sap.m.StandardListItem({
-        title: sValue,
-        description: sDesc1
 
-        });
+    return new sap.m.StandardListItem({
+
+        title: sValue,
+
+        description: sDesc2
+
+    });
+
+} else {
+
+    return new sap.m.StandardListItem({
+
+        title: sValue,
+
+
+
+description: sDesc1
+
+});
+
 }
 
-您还可以通过在代码中添加 ‘debugger’ 关键字来添加调试器以调试代码。在代码中添加调试器后，如果您打开开发工具包（Firefox 和 Chrome），您甚至可以进一步分析代码的行为。
+您还可以通过在代码中添加 `debugger` 关键字来添加调试器以调试代码。在代码中添加调试器后，如果您打开开发工具包（Firefox 和 Chrome），您甚至可以进一步分析代码的行为。
 
 ### 命名模型
 
@@ -1271,40 +1385,59 @@ if (sValue === “Dinosaur”) { //如果语句用来说明描述是灭绝
 
 之前我们使用 `sap.ui.getCore().setModel(oModel)`。该模型被设置到核心，可以称为全局模型。然而，当我们使用命名模型的概念时，我们必须提供第二个参数。第二个参数实际上是我们设置的模型的名称。例如 XYZ、ABC 或任何名称。该名称应为有效的字符串字符。当我们传递模型对象和模型名称时，该模型对象只能通过此名称检索。它将充当此模型的键。
 
-**全局/核心模型语法（示例）：** sap.ui.getCore().setModel(oModel)
+**全局/核心模型语法（示例）：** `sap.ui.getCore().setModel(oModel)`
 
-## 命名模型语法（示例）：** sap.ui.getCore().setModel(oModel,XYZ)
+## 命名模型语法（示例）：`sap.ui.getCore().setModel(oModel,XYZ)`
 
 接下来的问题是，如何在数据绑定中使用命名模型？下面是命名模型与我们之前使用的普通模型绑定的简单比较。在命名模型的情况下，我们将使用 `>` 运算符来分隔绑定中的模型名称和键值，如下所示：
 
 ### 普通模型
 
-oList.Items({
+`oList.Items({`
+
     path: “/names”,
+
     template: new sap.m.StandardListItem({
+
         title: “{Name}” // 普通模型没有大于号
+
         description: “{Place}”,
+
         type: sap.m.ListType.Navigation,
+
         press: [oController.showDetails, oController]
+
     })
+
 });
 
 ### 命名模型
 
-oList.Items({
+`oList.Items({`
+
     path: “XYZ>/names”,
+
     //大于号用于表示命名模型
+
     template: new sap.m.StandardListItem({
+
         title: “{XYZ>Name}”
+
         //大于号用于表示命名模型
+
         description: “{XYZ>Place}”,
+
         //大于号用于表示命名模型
+
         type: sap.m.ListType.Navigation,
+
         press: [oController.showDetails, oController]
+
     })
+
 });
 
-在使用命名模型时，必须在键名之前使用大于号指定名称。例如：`title:”{XYZ>Name}”`。
+在使用命名模型时，必须在键名之前使用大于号指定名称。例如：`title:"{XYZ>Name}"`。
 
 注意：始终尝试使用全局/核心模型，并尽量限制命名模型的使用。当您创建多个命名模型时，要跟踪实际存在多少个命名模型会变得非常复杂。
 
@@ -1326,8 +1459,6 @@ oList.Items({
 
 ![](img/e0db2820988dc54294b33092f834e7a1_79_0.png)
 
-
-
 现在让我们浏览一下当前存在的不同选项卡。
 
 ## 元素选项卡
@@ -1342,7 +1473,7 @@ oList.Items({
 
 如果我们搜索提交按钮，它会用黄色高亮显示该组件。这在你寻找网页中的某个组件时非常方便。还有一个选项，如果你想检查应用中重复出现的组件，那么可以输入该组件名称并按回车键；每次它都会显示该组件在其他地方也被使用的位置。你还可以按 'Ctrl+Z' 返回到上一次搜索。
 
-还有一个更方便的功能是**选择元素**功能。一旦你选中它，它会变成蓝色。当你将鼠标在屏幕上移动时，特定的 'div' 元素会在屏幕上高亮显示。
+还有一个更方便的功能是**选择元素**功能。一旦你选中它，它会变成蓝色。当你将鼠在屏幕上移动时，特定的 'div' 元素会在屏幕上高亮显示。
 
 ## 实时更改 HTML
 
@@ -1352,7 +1483,7 @@ oList.Items({
 
 ![](img/e0db2820988dc54294b33092f834e7a1_81_0.png)
 
-CSS 是一个非常强大的工具。当你高亮选中一些 DOM 元素时，可以在右侧看到与之关联的 CSS 属性。在这里，我们可以直接修改 CSS 属性，如颜色、内边距、宽度等，这些更改会立即在网页上反映出来。
+CSS 是一个非常强大的工当你高亮选中一些 DOM 元素时，可以在右侧看到与之关联的 CSS 属性。在这里，我们可以直接修改 CSS 属性，如颜色、内边距、宽度等，这些更改会立即在网页上反映出来。
 
 当你需要对 CSS 进行大量设计修改时，实时更改 CSS 并查看结果至关重要。例如，如果你的客户要求你更改按钮颜色或将按钮置于页面底部，CSS 样式选项卡提供了大量的试错方法，以达到最终优化的 CSS 代码来实现这一目标。
 
@@ -1362,7 +1493,7 @@ CSS 是一个非常强大的工具。当你高亮选中一些 DOM 元素时，�
 
 ![](img/e0db2820988dc54294b33092f834e7a1_82_0.png)
 
-在切换设备模式下，你可以查看应用程序在其他设备（如 iPhone、Nexus 6 等）上的显示效果。这里也有一个编辑选项卡。它允许你从列表中选择可用的设备。
+在切换设备模式下，你可以查看应用程在其他设备（如 iPhone、Nexus 6 等）上的显示效果。这里也有一个编辑选项卡。它允许你从列表中选择可用的设备。
 
 ## 浏览器控制台
 
@@ -1395,7 +1526,9 @@ UI5 应用程序的响应性可能是一个成败攸关的决定。当你交付�
 简而言之，在做出任何重大决定之前，请始终考虑以下三件事：
 
 - 1. 充分了解客户的设备和环境。
+
 - 2. 根据 SAP 帮助文档检查运行环境的兼容性规则。
+
 - 3. 在开发阶段始终考虑跨浏览器和跨设备的使用。
 
 ## UI5 应用的样式和主题
@@ -1409,8 +1542,6 @@ UI5 应用程序的响应性可能是一个成败攸关的决定。当你交付�
 ![](img/e0db2820988dc54294b33092f834e7a1_86_0.png)
 
 要开始这个过程，让我们打开我们的开发工具包。现在，我们将使用元素选项卡进行更改。要聚焦到输入框，请右键点击输入框并选择 inspect element。这将在浏览器控制台中高亮显示输入的 HTML 内容。让我们查找分配给 input 元素的类。大多数标准 CSS 类以 'sap' 开头。因此，当你更改标准 CSS 类时要小心。因为如果你更改了标准类，它将影响应用程序中的所有地方。
-
-
 
 所以最好不要随意尝试标准类。
 
@@ -1530,9 +1661,13 @@ https://<server>:<port>/sap/bc/theming/theme-designer?sap-client=<client>
 要在Eclipse中使用此新主题。我们必须遵循以下步骤。
 
 - 1. 找到我们应用新主题的应用程序位置。
+
 - 2. 现在转到Web内容文件夹，创建一个名为resources的文件夹。
+
 - 3. 将UI5文件夹内的‘Sap’文件夹复制并粘贴到resource文件夹中。
+
 - 4. 更改index文件中的主题名称。
+
 - 5. 保存并重新加载页面。
 
 重新加载页面后，您将能够看到新主题已应用于您的应用程序。在我们的案例中，我们已将新主题应用于“Simple App”演示，并且它已更改了背景、输入框和页眉样式（如下图所示）。
@@ -1679,7 +1814,7 @@ return oPage;
 
 ## 表格中的事件
 
-在前面的例子中，我们看到了列表中的事件。现在在本节中，我们将使用相同的方法为表格应用事件。我们已经有了表格的例子，在这个例子中，我们将添加一些功能，使得当我们点击表格中的某个单元格时，它会跳转到下一页并显示我们点击的行和名称。
+在前面的例子中，我们看到了列表中的事件。现在在本节中，我们将使用相同的方法为表格应用事件。我们已经有了表格的例子，在这个例子中，我们将添加一些功能，使得当我们点击表格中的某个单元时，它会跳转到下一页并显示我们点击的行和名称。
 
 为此，让我们查看API参考中可用的事件属性，并将单元格点击事件添加到应用程序中。让我们打开Eclipse，在视图中添加单元格点击事件，并传递事件处理函数`goToNextPage`：
 
@@ -1800,6 +1935,7 @@ createContent : function(oController) {
 为了说明区别，我们可以以我们的可拖拽按钮为例。现在，如果我给这个按钮及其在DOM树中的直接父元素都添加点击事件监听器。在第一种情况下，我们：
 
 - 在冒泡阶段执行按钮的事件处理程序（第三个参数传递false）
+
 - 在冒泡阶段也执行其父元素的事件处理程序（第三个参数传递false）
 
 ```
@@ -1815,8 +1951,6 @@ document.getElementById("_page0-cont").addEventListener("click", function(){
 ```
 
 现在，如果你点击按钮，控制台将显示以下结果：
-
-
 
 现在，如果我们通过让它在捕获阶段执行（在第三个参数中传递 `true`）来改变父元素的执行顺序：
 
@@ -2038,8 +2172,6 @@ app.placeAt("content");
 
 你也可以查看我们的 SAPUI5 专业开发视频课程以加速学习：[点击此处](https://example.com) 或使用下方的二维码。
 
-
-
 # SAP - 学习SAPUI5专业开发
 
 UI5社区网络 • SAP专家 - SAP服务、SAP咨询、SAP教育
@@ -2100,7 +2232,9 @@ oList.bindItems({
 ```
 
 两者的区别在于：
+
 - 第一种情况，我们直接将键名放在花括号内。
+
 - 第二种情况，我们有一个格式化函数，它返回绑定的内容。
 
 以下是使用和不使用格式化器的代码运行结果：
@@ -2108,19 +2242,31 @@ oList.bindItems({
 ### 格式化器
 
 | 动物 |
+
 |---|
+
 | 恐龙 : 山 |
+
 | 大象 : 森林 |
+
 | 鲸鱼 : 海 |
+
 | 鸭子 : 水 |
+
 | 猴子 : 树 |
 
 | 动物 | |
+
 |---|---|
+
 | 恐龙 | 山 |
+
 | 大象 | 森林 |
+
 | 鲸鱼 | 海 |
+
 | 鸭子 | 水 |
+
 | 猴子 | 树 |
 
 ### 国际化和本地化
@@ -2209,6 +2355,7 @@ UI5社区网络 - SAP专家 - SAP服务、SAP咨询、SAP教育
 要使用Viz创建一个简单的柱状图，我们需要创建：
 
 - 展平的数据集
+
 - 坐标轴
 
 ### 展平的数据集
@@ -2226,8 +2373,11 @@ var oVizFrame = new sap.viz.ui5.controls.VizFrame();
 ```
 
 我们需要为这个VizFrame提供三个重要细节：
+
 1. 展平的数据集
+
 2. 图表类型（柱状图或饼图）
+
 3. 坐标轴
 
 同时，在index.html中，我们必须包含额外的*sap.viz*库：
@@ -2261,8 +2411,6 @@ createContent : function(oController) {
         dimensions : [{ //维度
 ```
 
-
-
 ## 可视化：饼图
 
 创建饼图的过程与柱状图相似。那么，让我们使用饼图和我们的动物列表来创建一个简单的应用程序。我们需要创建一个扁平化的数据集和轴。数据绑定的方式将与柱状图案例中相同，维度和度量也是一样。
@@ -2270,7 +2418,9 @@ createContent : function(oController) {
 因此，我们也需要定义三个重要部分：
 
 -   1. 扁平化的数据集
+
 -   2. 图表类型（柱状图或饼图）
+
 -   3. 轴
 
 ## 饼图
@@ -2310,7 +2460,9 @@ KPI 磁贴是基于 Fiori 的应用程序中可视化最基本的部分之一。
 创建 KPI 磁贴的步骤：
 
 -   创建一个通用磁贴
+
 -   将通用磁贴放置在自定义磁贴内
+
 -   将所有自定义磁贴放入磁贴容器中
 
 除了 `sap.m` 之外，我们还需要在索引页面中添加 `sap.suite.ui.commons`, `sap.ui.core`, `sap.viz` 库。
@@ -2379,6 +2531,9 @@ UI5 社区网络 · SAP 专家 - SAP 服务、SAP 咨询、SAP 教育
 ## 参考与参考文献
 
 -   Open UI5 API 参考：[https://openui5.hana.ondemand.com/](https://openui5.hana.ondemand.com/)
+
 -   UI5CN 官方博客：[http://ui5cn.com/](http://ui5cn.com/)
+
 -   Udemy UI5 视频课程：[https://www.udemy.com/learn-sapui5/](https://www.udemy.com/learn-sapui5/)
+
 -   Open UI5 探索：[https://openui5.hana.ondemand.com/explored.html](https://openui5.hana.ondemand.com/explored.html)

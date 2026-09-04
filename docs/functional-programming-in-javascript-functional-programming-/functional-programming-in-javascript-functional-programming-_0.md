@@ -1,4 +1,5 @@
-# JavaScript 函数式编程 (JavaScript 和 React 函数式编程 第4卷)
+
+# JavaScript 函数式编程（JavaScript 和 React 函数式编程 第 4 卷）
 
 ## 引言
 
@@ -28,10 +29,6 @@ JavaScript 既是一种函数式编程语言，也是一种基于原型的语言
 }
 ```
 
-
-
-
-
 `JavaScript without this` 看起来像是一种更好的函数式编程语言。
 
 ## 源代码
@@ -40,7 +37,7 @@ JavaScript 既是一种函数式编程语言，也是一种基于原型的语言
 
 ## 反馈
 
-我很乐意听取您的反馈。如有关于本书的评论、问题或建议，请发送电子邮件至 cristisalcescu@gmail.com。提前感谢您考虑为本书撰写评论。
+我很乐意听取您的反馈。如有关于本书的评论、问题或建议，请发送电子邮件至 `cristaliscescu@gmail.com`。提前感谢您考虑为本书撰写评论。
 
 ## 环境搭建
 
@@ -52,7 +49,7 @@ JavaScript 既是一种函数式编程语言，也是一种基于原型的语言
 
 然后可以在命令提示符中使用以下命令检查 Node.js 和 `npm` 的版本：
 
-```
+```bash
 node --version
 npm --v
 ```
@@ -65,13 +62,13 @@ npm --v
 
 首先使用 `npm` 创建一个 `package.json` 文件。
 
-```
+```bash
 npm init
 ```
 
-我们需要一个工具，将我们的 JavaScript 代码转换为向后兼容的版本，并支持 [模块](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules)。我们需要 [Babel](https://babeljs.io/)。去安装必要的包。
+我们需要一个工具，将我们的 JavaScript 代码转换为向后兼容的版本，并支持[模块](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules)。我们需要 [Babel](https://babeljs.io/)。去安装必要的包。
 
-```
+```bash
 npm install @babel/core @babel/node @babel/preset-env --save
 ```
 
@@ -89,9 +86,9 @@ npm install @babel/core @babel/node @babel/preset-env --save
 
 代码检查是分析代码以发现潜在错误和风格问题的过程。检查器是一种运行并报告这些问题的工具。检查器对于代码格式化和使用最佳实践也很有用。
 
-我们将使用 [ES Lint](https://eslint.org/)。首先安装它。
+我们将使用 [ESLint](https://eslint.org/)。首先安装它。
 
-```
+```bash
 npm install eslint --save-dev
 ```
 
@@ -99,13 +96,13 @@ npm install eslint --save-dev
 
 接下来，设置一个配置文件。
 
-```
+```bash
 npx eslint --init
 ```
 
 我们将使用的一个插件是 `eslint-plugin-functional`，所以让我们安装它。
 
-```
+```bash
 npm install eslint-plugin-functional --save-dev
 ```
 
@@ -124,7 +121,7 @@ npm install eslint-plugin-functional --save-dev
 
 以下是如何对 `src` 文件夹中的所有文件运行代码检查。
 
-```
+```bash
 npx eslint src
 ```
 
@@ -144,11 +141,11 @@ npx eslint src
 
 我将使用 [Visual Studio Code](https://code.visualstudio.com/)，但您也可以使用任何您喜欢的编辑器。
 
-为了编写命令，请在 Visual Studio Code 中打开应用程序文件夹。然后从 `终端 -> 新建终端` 打开终端并执行命令。
+为了编写命令，请在 Visual Studio Code 中打开应用程序文件夹。然后从“终端 -> 新建终端”打开终端并执行命令。
 
 例如，要运行 `filter.js` 文件中的代码并检查结果，我们可以使用以下命令。
 
-```
+```bash
 npx babel-node filter.js
 ```
 
@@ -172,29 +169,29 @@ console.log(true);
 
 ```javascript
 console.log(typeof(1));
-//"number"
+// "number"
 console.log(typeof(''));
-//"string"
+// "string"
 console.log(typeof(true));
-//"boolean"
+// "boolean"
 ```
 
 有两种数字类型：`Number` 和 `BigInt`。我们主要使用第一种，它存储双精度浮点数。重要的是要知道浮点运算是不精确的。
 
 ```javascript
-console.log(0.1+0.2);
-//0.30000000000000004
+console.log(0.1 + 0.2);
+// 0.30000000000000004
 console.log(0.1 + 0.2 === 0.3);
-//false
+// false
 ```
 
 整数运算精确到 15 位。我们可以通过先乘后除来解决上述问题。
 
 ```javascript
 console.log(1 + 2 === 3);
-//true
-console.log(0.1 * 10 + 0.2 * 10) / 10 === 3);
-//true
+// true
+console.log((0.1 * 10 + 0.2 * 10) / 10 === 0.3);
+// true
 ```
 
 `BigInt` 用于表示更大的数字。我们可以通过在整数文字末尾附加 `n` 来创建这样的数字。
@@ -219,23 +216,23 @@ console.log(12345678987654321n);
 
 ```javascript
 'TEXT'.toLowerCase();
-//"text"
+// "text"
 ```
 
 我们可以访问原始类型上的现有属性，但不能更改它们或创建新属性。例如，`length` 属性返回字符串的长度。
 
 ```javascript
 'ABCDEFG'.length
-//7
+// 7
 'ABCDEFG'.type = 'letters';
-//Cannot create property 'type' on string 'ABCDEFG'
+// Cannot create property 'type' on string 'ABCDEFG'
 ```
 
 唯一不被视为对象的原始类型是 `null` 和 `undefined`。尝试对它们调用方法会抛出错误。
 
 ```javascript
 null.toString();
-//Cannot read property 'toString' of null
+// Cannot read property 'toString' of null
 ```
 
 ### 不可变性
@@ -246,7 +243,7 @@ null.toString();
 
 ```javascript
 ' 123 '.trim();
-//'123';
+// '123';
 ```
 
 `trim` 方法不会修改现有字符串。它会创建一个新字符串。
@@ -262,7 +259,7 @@ null.toString();
 ```javascript
 let x;
 console.log(x);
-//undefined
+// undefined
 ```
 
 变量存储对值的引用。值不包含变量。值可能包含其他值。
@@ -276,24 +273,23 @@ let x;
 x = 1;
 ```
 
-
-
-
-
 `x = '';` 当变量存储的值发生变化时，变量的类型也可能随之改变。动态类型意味着变量的类型可以在运行时改变。这种情况只发生在使用 `let` 或 `var` 声明的变量上。`const` 声明的变量无法重新赋值，因此其类型也不能改变。
 
 ### 回顾
+
 数字、字符串、布尔值、`null` 和 `undefined` 是原始值。原始值是不可变的。值可以存储在变量中。变量会推断其所存储值的类型。
 
 ## 第 02 章：不可变数据对象
+
 接下来，我们将了解什么是对象，以及如何创建和使用不可变对象。在函数式编程中，我们将对象用作数据结构。它们存储数据，并且没有行为。
 
 ### 对象
+
 对象是属性的集合。每个属性都有一个键和一个值。在控制台中查看一个对象。
 
 ```javascript
 const book = {
-  title : 'JavaScript Allongé',
+  title: 'JavaScript Allongé',
   author: 'Reginald Braithwaite',
   category: 'JavaScript'
 };
@@ -304,19 +300,20 @@ console.log(book);
 
 ```javascript
 console.log(book.title);
-//"JavaScript Allongé"
+// "JavaScript Allongé"
 console.log(book["title"]);
 ```
 
 ### 不可变性
+
 不可变性是函数式编程的核心原则之一。变异意味着改变。说我们更改了对象的属性，等同于说我们变异了该对象。一个不可变对象一旦创建就不能被更改。JavaScript 对象并非如此。它们可以被修改。它们不是不可变的。请看下面的例子：
 
 ```javascript
 let fruit = {
   name: 'Apple'
 };
-fruit.name = 'Orange'
-//{name : 'Orange'}
+fruit.name = 'Orange';
+// {name: 'Orange'}
 ```
 
 如你所见，我们可以更改现有的 `fruit` 对象。即使使用 `const` 关键字声明，也会发生同样的情况。
@@ -325,20 +322,21 @@ fruit.name = 'Orange'
 const fruit = {
   name: 'Apple'
 };
-fruit.name = 'Orange'
-// {name : 'Orange'}
+fruit.name = 'Orange';
+// {name: 'Orange'}
 ```
 
 `const` 关键字指的是变量，而不是它存储的值。这意味着该变量不能被重新赋值。当它存储的值是不可变时，它才真正成为常量。
 
 ### 冻结
+
 为了创建不可变对象，我们可以在创建时将其冻结。
 
 ```javascript
 const fruit = Object.freeze({
   name: 'Apple'
 });
-fruit.name = 'Orange'
+fruit.name = 'Orange';
 // Cannot assign to read only property 'name' of object
 ```
 
@@ -358,6 +356,7 @@ book.author.firstName = '';
 `book` 对象被更改了。我们不能给 `author` 属性重新赋值一个新对象，但可以修改它的属性。对于包含其他对象的对象，我们应该使用 [deepFreeze()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/freeze) 工具函数。它会冻结给定对象内部所有对象的所有属性。
 
 ### 代码检查
+
 启用不可变性的另一种方法是使用代码检查工具，例如 [ESLint](https://eslint.org/)。有几个插件可以帮助我们强制实现不可变对象。这些插件包括 [eslint-plugin-functional](https://www.npmjs.com/package/eslint-plugin-functional)、[eslint-plugin-fp](https://www.npmjs.com/package/eslint-plugin-fp) 或 [eslint-plugin-immutable](https://www.npmjs.com/package/eslint-plugin-immutable)。我们将使用 [eslint-plugin-functional](https://www.npmjs.com/package/eslint-plugin-functional)。
 
 ```bash
@@ -384,13 +383,17 @@ const counter = {
 counter.value = 2;
 delete counter.value;
 Object.assign(counter, { value: 2 });
-//Modifying properties of existing object not allowed.
+// Modifying properties of existing object not allowed.
 ```
 
 ### 使用不可变对象
+
 接下来，让我们看看如何“更改”不可变对象。更改不可变对象意味着创建一个更改后的副本。为此，使用[展开运算符语法](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax)非常有用。
 
 #### 更改属性
+
+
+
 以下是修改现有属性的示例：
 
 ```javascript
@@ -404,10 +407,11 @@ const newProduct = {
 };
 ```
 
-通过使用展开语法，我们首先复制了 `product` 对象的所有属性，然后添加了需要更改的属性及其新值。
+通过使用展开语法，我们首先复制了`product`对象的所有属性，然后添加了需要更改的属性及其新值。
 
-#### 添加属性
-添加新属性可以用类似的方式完成。我们克隆对象，然后向其添加额外的属性。在下一个示例中，`product` 对象被克隆，并添加了 `type` 属性。
+### 添加属性
+
+添加新属性可以用类似的方式完成。我们克隆对象，然后向其添加额外的属性。在下一个示例中，`product`对象被克隆，并添加了`type`属性。
 
 ```javascript
 const product = {
@@ -420,8 +424,9 @@ const newProduct = {
 };
 ```
 
-#### 删除属性
-可以使用[解构语法](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment#Rest_in_Object_Destructuring)中的剩余运算符来删除属性。在下一个示例中，通过解构并忽略 `quantity` 属性，将其从新 product 对象中移除。
+### 删除属性
+
+可以使用[解构语法](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment#Rest_in_Object_Destructuring)中的剩余运算符来删除属性。在下一个示例中，通过解构并忽略`quantity`属性，将其从新`product`对象中移除。
 
 ```javascript
 const product = {
@@ -439,13 +444,16 @@ console.log(newProduct);
 从现在开始，在接下来的示例中，默认已通过代码检查工具启用了不可变性。
 
 ### 回顾
+
 不可变对象在创建后不能被更改。我们可以通过冻结对象或使用代码检查工具来启用不可变对象。展开运算符对于创建现有对象的更改副本非常方便。
 
 ## 第 03 章：函数
+
 函数是我们定义和封装逻辑的主要方式。函数有一个参数列表和一个语句体。根据函数的创建方式，它可能有一个名称。大多数情况下，我会尽量使用命名函数。让我们看看定义函数的主要方式。
 
 ### 函数声明
-可以使用 `function` 关键字声明来创建函数，后面跟着函数名称和参数列表。函数体放在花括号内。
+
+可以使用`function`关键字声明来创建函数，后面跟着函数名称和参数列表。函数体放在花括号内。
 
 ```javascript
 function sum(x, y){
@@ -460,7 +468,7 @@ sum(1,2)
 //3
 ```
 
-如果没有传入值或传入 `undefined`，函数参数可以使用默认值进行初始化。在下面的示例中，如果在调用 `increment` 函数时没有为 `step` 参数提供值，它将默认为 `1`。
+如果没有传入值或传入`undefined`，函数参数可以使用默认值进行初始化。在下面的示例中，如果在调用`increment`函数时没有为`step`参数提供值，它将默认为`1`。
 
 ```javascript
 function increment(n, step = 1){
@@ -483,10 +491,11 @@ function sum(x, y){
 }
 ```
 
-函数返回值。`return` 语句指定返回的值。它也会停止函数的执行。
+函数返回值。`return`语句指定返回的值。它也会停止函数的执行。
 
 ### 函数表达式
-`function` 关键字可用于在表达式内部定义函数。在函数声明中，`function` 是行中的第一个关键字。如果不是这种情况，我们处理的就是函数表达式。对于函数表达式，名称是可选的，但在实现递归函数时，拥有名称会很方便。这是一个函数表达式。
+
+`function`关键字可用于在表达式内部定义函数。在函数声明中，`function`是行中的第一个关键字。如果不是这种情况，我们处理的就是函数表达式。对于函数表达式，名称是可选的，但在实现递归函数时，拥有名称会很方便。这是一个函数表达式。
 
 ```javascript
 const sum = function(x, y){
@@ -502,7 +511,7 @@ const sum = function(x, y){
 }
 ```
 
-一旦 `function` 不是行中的第一个关键字，它就变成了函数表达式。函数名可以省略，并且可以自动执行。
+一旦`function`不是行中的第一个关键字，它就变成了函数表达式。函数名可以省略，并且可以自动执行。
 
 ```javascript
 !function(){
@@ -510,24 +519,20 @@ const sum = function(x, y){
 }();
 ```
 
-
-
-
-
 ### 箭头函数表达式
 
-箭头函数表达式是常规函数表达式的一种紧凑替代形式。箭头函数语法由参数列表、`=>` 符号以及可选地用花括号括起来的函数体组成。
+箭头函数表达式是常规函数表达式的一种紧凑替代形式。箭头函数语法由参数列表、`=>`符号以及可选地用花括号括起来的函数体组成。
 
-```
+```javascript
 const sum = (x, y) => x + y;
 sum(1,2);
 ```
 
-这次没有 `function` 关键字，也没有 `return` 语句。`=>` 符号指向要返回的内容。
+这次没有`function`关键字，也没有`return`语句。`=>`符号指向要返回的内容。
 
-当箭头函数内部的逻辑包含多条语句时，我们使用花括号。此时需要 `return` 语句来返回结果。
+当箭头函数内部的逻辑包含多条语句时，我们使用花括号。此时需要`return`语句来返回结果。
 
-```
+```javascript
 const sum = (x, y) => {
   return x + y;
 }
@@ -541,20 +546,20 @@ const sum = (x, y) => {
 
 - 一元函数有一个参数。
 - 二元函数有两个参数。
-- n 元函数有 n 个参数。
+- n元函数有n个参数。
 - 零元函数没有参数。
 
 #### 纯函数
 
 在函数式编程中，函数类似于数学函数。它们进行计算。这类函数被称为纯函数。
 
-纯函数基于输入参数计算新值。它们是确定性函数。这意味着当使用相同输入调用时，它们返回相同的结果。`Math.random` 和 `Date.now` 不是确定性函数，因为每次调用它们都会返回不同的结果。它们不能在纯函数内部使用。
+纯函数基于输入参数计算新值。它们是确定性函数。这意味着当使用相同输入调用时，它们返回相同的结果。`Math.random`和`Date.now`不是确定性函数，因为每次调用它们都会返回不同的结果。它们不能在纯函数内部使用。
 
 纯函数不会修改函数执行的外部环境，因此它们不会写入外部环境，也不会读取可能从外部更改的数据。
 
 以下是一个纯函数的示例。
 
-```
+```javascript
 const number = 1.7654321;
 function roundNumber(n, precision = 2) {
   const noAsString = n.toFixed(precision);
@@ -564,13 +569,13 @@ console.log(roundNumber(number));
 //1.77
 ```
 
-`roundNumber` 是一个纯函数，它使用其他纯函数 `toFixed` 和 `parseFloat` 将数字四舍五入到 n 位小数。
+`roundNumber`是一个纯函数，它使用其他纯函数`toFixed`和`parseFloat`将数字四舍五入到n位小数。
 
 更改局部作用域之外的数据、读取可能从外部更改的数据，或任何对外部环境的改变，都是副作用。
 
 正因为它们仅基于输入进行计算且没有副作用，所以更容易理解、测试或调试。
 
-`Math.min`、`Math.max`、`Math.sqrt` 是纯函数。事实上，除了 `Math.random` 之外，`Math` 对象的所有静态方法都是纯函数。
+`Math.min`、`Math.max`、`Math.sqrt`是纯函数。事实上，除了`Math.random`之外，`Math`对象的所有静态方法都是纯函数。
 
 ### 总结
 
@@ -582,13 +587,13 @@ console.log(roundNumber(number));
 
 我们只需使用数组字面量即可创建数组。示例如下。
 
-```
+```javascript
 const arr = [1, 2, 3];
 ```
 
-检测一个值是否为数组可以使用 `Array.isArray`。
+检测一个值是否为数组可以使用`Array.isArray`。
 
-```
+```javascript
 Array.isArray(arr);
 //true
 ```
@@ -599,7 +604,7 @@ Array.isArray(arr);
 
 考虑以下从数组中仅选择偶数的示例。
 
-```
+```javascript
 const numbers = [1, 2, 3, 4];
 function isEven(n) {
   return n % 2 == 0;
@@ -609,15 +614,15 @@ console.log(evenNumbers);
 //[2, 4]
 ```
 
-`filter` 方法遍历数组中的所有元素，并应用 `isEven` 函数。它创建一个新数组，其中仅包含 `isEven` 函数返回 `true` 的那些元素。
+`filter`方法遍历数组中的所有元素，并应用`isEven`函数。它创建一个新数组，其中仅包含`isEven`函数返回`true`的那些元素。
 
 ![](img/Image00003.jpg)
 
-`isEven` 是一个谓词函数。谓词函数是一个接受元素并返回布尔值的函数。该谓词是一元函数。
+`isEven`是一个谓词函数。谓词函数是一个接受元素并返回布尔值的函数。该谓词是一元函数。
 
 接下来，考虑一个游戏对象列表。
 
-```
+```javascript
 const games = [
   { title: 'Starcraft', genre: 'RTS' },
   { title: 'Command and Conquer',  genre: 'RTS' },
@@ -626,20 +631,20 @@ const games = [
 ]
 ```
 
-我们将只选择策略游戏。为此，我们将构建一个谓词函数，该函数接受一个游戏对象，并根据其 `genre` 属性判断它是否为策略游戏。
+我们将只选择策略游戏。为此，我们将构建一个谓词函数，该函数接受一个游戏对象，并根据其`genre`属性判断它是否为策略游戏。
 
-```
+```javascript
 function isStrategy(game) {
   const strategyGenres = ['RTS', 'RTT', 'TBS', 'TBT'];
   return strategyGenres.includes(game.genre);
 }
 ```
 
-`includes` 方法检查一个值是否在数组中，并返回 `true` 或 `false`。
+`includes`方法检查一个值是否在数组中，并返回`true`或`false`。
 
-现在我们可以使用 `filter` 和谓词函数来仅选择策略游戏。
+现在我们可以使用`filter`和谓词函数来仅选择策略游戏。
 
-```
+```javascript
 const strategyGames = games.filter(isStrategy);
 console.log(strategyGames);
 //[ { title: 'Starcraft', genre: 'RTS' },
@@ -651,7 +656,7 @@ console.log(strategyGames);
 
 接下来，我们将对数字列表应用映射转换。
 
-```
+```javascript
 const numbers = [1, 2, 3, 4];
 function triple(n) {
   return n * 3;
@@ -661,15 +666,15 @@ console.log(newNumbers);
 //[3, 6, 9, 12]
 ```
 
-`map` 方法将映射函数应用于数组中的所有元素，并创建一个包含结果的新数组。
+`map`方法将映射函数应用于数组中的所有元素，并创建一个包含结果的新数组。
 
 ![](img/Image00004.jpg)
 
-`triple` 是一个映射函数。映射函数是一个接受元素并将其转换为新值的函数。它是一元函数。
+`triple`是一个映射函数。映射函数是一个接受元素并将其转换为新值的函数。它是一元函数。
 
 接下来，让我们对游戏对象列表应用一个映射函数。
 
-```
+```javascript
 const games = [
   { title: 'Starcraft', genre: 'RTS' },
   { title: 'Command and Conquer',  genre: 'RTS' },
@@ -678,17 +683,17 @@ const games = [
 ]
 ```
 
-下面的 `toGameHtml` 函数接受一个游戏对象并为其创建 HTML 字符串。
+下面的`toGameHtml`函数接受一个游戏对象并为其创建 HTML 字符串。
 
-```
+```javascript
 function toGameHtml(game) {
   return `<div>${game.title}</div>`;
 }
 ```
 
-模板字符串允许我们将变量插入到字符串中。它们是字符串拼接的更好替代方案。插入模板字符串的变量用 `${}` 包围。模板字符串允许文本跨越多行。这有助于创建更易读的 HTML 字符串。
+模板字符串允许我们将变量插入到字符串中。它们是字符串拼接的更好替代方案。插入模板字符串的变量用`${}`包围。模板字符串允许文本跨越多行。这有助于创建更易读的 HTML 字符串。
 
-```
+```javascript
 function toGameHtml(game) {
   return `
 <div>
@@ -699,7 +704,7 @@ function toGameHtml(game) {
 
 现在我们可以使用映射函数将所有游戏对象转换为 HTML 字符串。
 
-```
+```javascript
 const htmlRows = games.map(toGameHtml);
 console.log(htmlRows);
 //   [ '<div>Starcraft</div>',
@@ -708,9 +713,9 @@ console.log(htmlRows);
 //   '<div>World of Warcraft</div>' ]
 ```
 
-`join` 方法将数组的所有元素组合成一个字符串。它接受一个分隔符作为参数。如果未提供参数，它将所有元素组合在一起而不使用任何分隔符。
+`join`方法将数组的所有元素组合成一个字符串。它接受一个分隔符作为参数。如果未提供参数，它将所有元素组合在一起而不使用任何分隔符。
 
-```
+```javascript
 console.log(htmlRows.join());
 //"<div>Starcraft</div>,<div>Command and Conquer</div>,
 //<div>Heroes of Might and Magic</div>,
@@ -723,7 +728,7 @@ console.log(htmlRows.join());
 
 考虑以下代码。
 
-```
+```javascript
 const numbers = [1, 3, 5, 7];
 function add(total, n) {
   return total + n;
@@ -733,141 +738,142 @@ console.log(total);
 //16
 ```
 
-`reduce` 方法将列表缩减为单个值。`reduce` 方法对数组中的每个元素应用归约函数以计算聚合值。它可以接受第二个参数作为初始聚合值。
+`reduce`方法将列表缩减为单个值。`reduce`方法对数组中的每个元素应用归约函数以计算聚合值。它可以接受第二个参数作为初始聚合值。
 
-`add` 是归约函数。归约函数接受当前聚合值和当前元素，并返回新的聚合值。归约函数是二元函数。
+`add`是归约函数。归约函数接受当前聚合值和当前元素，并返回新的聚合值。归约函数是二元函数。
 
 ![](img/Image00005.jpg)
 
-在第一次迭代中，聚合值为 `0`，当前元素为 `1`。应用归约函数得到新的聚合值 `1`。在第四次迭代中，当前聚合值为 `9`，当前元素为 `7`。应用归约函数得到新的聚合值 `16`。
+在第一次迭代中，聚合值为`0`，当前元素为`1`。应用归约函数得到新的聚合值`1`。在第四次迭代中，当前聚合值为`9`，当前元素为`7`。应用归约函数得到新的聚合值`16`。
 
 让我们回到游戏对象数组，并计算每种类型的游戏数量。
 
-```
+```javascript
 const games = [
   { title: 'Starcraft', genre: 'RTS' },
-```
-
-
-
-
-
-```
-{ title: 'Command and Conquer',  genre: 'RTS' },
-{ title: 'Heroes of Might and Magic', genre: 'TBS' },
-{ title: 'World of Warcraft', genre : 'MMORPG'}
+  { title: 'Command and Conquer',  genre: 'RTS' },
+  { title: 'Heroes of Might and Magic', genre: 'TBS' },
+  { title: 'World of Warcraft', genre : 'MMORPG'}
 ];
 function countByGenre(countMap, game){
-const count = countMap[game.genre] || 0;
-return {
-...countMap,
-[game.genre]: count + 1
-}
+  const count = countMap[game.genre] || 0;
+  return {
+    ...countMap,
+    [game.genre]: count + 1
+  }
 }
 const gamesByGenreCounts = games
-.reduce(countByGenre, {});
+  .reduce(countByGenre, {});
 console.log(gamesByGenreCounts);
 //{ RTS: 2, TBS: 1, MMORPG: 1 }
 ```
 
-`countByGenre` 是归约函数。它从一个空对象作为聚合值开始，每一步都会增加当前游戏类型的游戏数量。更改聚合对象上的计数意味着创建一个具有新计数的对象。
+`countByGenre`是归约函数。它从一个空对象作为聚合值开始，每一步都会增加当前游戏类型的游戏数量。更改聚合对象上的计数意味着创建一个具有新计数的对象。
 
 ### 排序
 
-`sort` 方法允许对数组进行排序。
+`sort`方法允许对数组进行排序。
 
-```
+```javascript
 const numbers = [4, 2, 3, 1];
 function asc(a, b) {
-if(a === b){
-return 0
-} else {
-if (a < b){
-return -1;
-} else {
-return 1;
-}
-}
+  if(a === b){
+    return 0
+  } else {
+    if (a < b){
+      return -1;
+    } else {
+      return 1;
+    }
+  }
 }
 const sortedNumbers = numbers.slice().sort(asc);
 console.log(sortedNumbers);
 //[1, 2, 3, 4]
 ```
 
-`sort` 方法使用比较函数进行排序。`asc` 函数就是比较函数。它是一个二元函数，接受两个值并返回 -1、0 和 1。考虑比较函数接受两个值 `a` 和 `b`。
+`sort`方法使用比较函数进行排序。`asc`函数就是比较函数。它是一个二元函数，接受两个值并返回 -1、0 和 1。考虑比较函数接受两个值`a`和`b`。
 
-* 如果值相等，返回 0
-* 如果值 `a` 在值 `b` 之前，返回 -1
-* 如果值 `a` 在值 `b` 之后，返回 1
+- 如果值相等，返回 0。
+- 如果值`a`在值`b`之前，返回 -1。
+- 如果值`a`在值`b`之后，返回 1。
 
-`sort` 是一个不纯的方法。它会修改输入数组。这就是为什么它会给出 lint 错误。为了进行排序，我们需要先克隆数组。
+`sort`是一个不纯的方法。它会修改输入数组。这就是为什么它会给出 lint 错误。为了进行排序，我们需要先克隆数组。
 
-```
+```javascript
 const sortedNumbers = numbers.sort(asc);
 //Modifying an array is not allowed  functional/immutable-data
 const sortedNumbers = numbers.slice().sort(asc);
 const sortedNumbers = [...numbers].sort(asc);
 ```
 
-`slice` 会复制数组或数组的一部分。不带参数调用 `slice` 会复制整个数组。第一个参数是起始索引，第二个参数是结束索引。
+`slice`会复制数组或数组的一部分。不带参数调用`slice`会复制整个数组。第一个参数是起始索引，第二个参数是结束索引。
 
 ### 搜索
 
-`find` 返回第一个匹配谓词函数的元素。`find` 返回第一个匹配项后停止。`filter` 从不停止，并返回包含所有匹配项的数组。`find` 比 `filter` 更快。
+`find`返回第一个匹配谓词函数的元素。`find`返回第一个匹配项后停止。`filter`从不停止，并返回包含所有匹配项的数组。`find`比`filter`更快。
 
-`findIndex` 返回第一个匹配项的索引。
+`findIndex`返回第一个匹配项的索引。
 
-`every` 如果所有元素都匹配谓词函数，则返回 true。它在第一个不匹配的元素处停止并返回 false。
+`every`如果所有元素都匹配谓词函数，则返回`true`。它在第一个不匹配的元素处停止并返回`false`。
 
-`some` 如果至少有一个元素匹配谓词函数，则返回 true。它在第一个匹配项处停止。
+`some`如果至少有一个元素匹配谓词函数，则返回`true`。它在第一个匹配项处停止。
 
 这四个方法都使用谓词函数，并根据返回值停止。
 
-```
+
+
+```javascript
 const games = [
-{ title: 'Starcraft 2', genre: 'RTS' },
-{ title: 'Desperados 3', genre : 'RTT'},
-{ title: 'Candy Crush Saga ', genre : 'Tile-matching'}
+  { title: 'Starcraft 2', genre: 'RTS' },
+  { title: 'Desperados 3', genre: 'RTT' },
+  { title: 'Candy Crush Saga ', genre: 'Tile-matching' }
 ];
-function isStrategy(game){
-const strategyGenres = ['RTS', 'RTT', 'TBS', 'TBT'];
-return strategyGenres.includes(game.genre);
+
+function isStrategy(game) {
+  const strategyGenres = ['RTS', 'RTT', 'TBS', 'TBT'];
+  return strategyGenres.includes(game.genre);
 }
+
 const first = games.find(isStrategy);
 console.log(first);
-//{ title: 'Starcraft 2', genre: 'RTS' }
+// { title: 'Starcraft 2', genre: 'RTS' }
+
 const firstIndex = games.findIndex(isStrategy);
 console.log(firstIndex);
-//0
+// 0
+
 const areAll = games.every(isStrategy);
 console.log(areAll);
-//false
+// false
+
 const hasOne = games.some(isStrategy);
 console.log(hasOne);
-//true
+// true
 ```
 
-### forEach
+### `forEach`
 
 `forEach` 接受一个函数，并对数组中的每个元素调用该函数。它以当前元素作为第一个参数，当前索引作为第二个参数来调用该函数。`forEach` 从不停止，会处理整个列表。它会忽略返回值。
 
-```
-const numbers = [1, 2, 3]
-function log(value){
-console.log(value);
+```javascript
+const numbers = [1, 2, 3];
+
+function log(value) {
+  console.log(value);
 }
-numbers
-.forEach(log);
-//1
-//2
-//3
+
+numbers.forEach(log);
+// 1
+// 2
+// 3
 ```
 
 ### 不纯操作
 
 当为对象启用不可变数据 lint 规则时，我们也会强制数组作为不可变结构。
 
-```
+```json
 "functional/immutable-data": "error"
 ```
 
@@ -875,43 +881,48 @@ numbers
 
 `push` 将元素添加到数组末尾，并返回数组的新长度。`pop` 移除并返回数组的最后一个元素。`unshift` 将元素添加到数组开头，并返回数组的新长度。`shift` 移除并返回数组的第一个元素。
 
-```
+```javascript
 const arr = [1, 2, 3];
+
 arr.push(4);
 arr.pop();
 arr.unshift(0);
 arr.shift();
-//Modifying an array is not allowed
+
+// Modifying an array is not allowed
 ```
 
 ### 更改数组
 
 接下来，看看如何在不可变数组上执行基本的添加、编辑和删除操作。考虑游戏对象数组。
 
-```
+```javascript
 const games = [
-{id: 1, title: 'WarCraft'},
-{id: 2, title: 'X-COM: UFO Defense' }
-]
+  { id: 1, title: 'WarCraft' },
+  { id: 2, title: 'X-COM: UFO Defense' }
+];
 ```
 
 #### 添加
 
 `concat` 接受一个或多个数组并将它们连接在一起。它可以用于添加。它会创建一个包含新值的新数组。
 
-```
-const newValue = {id: 3, title: 'The Settlers'};
+```javascript
+const newValue = { id: 3, title: 'The Settlers' };
 const newGames = games.concat([newValue]);
+
 console.log(newGames);
-console.log(newGames);
-//[ { id: 1, title: 'WarCraft' },
-//  { id: 2, title: 'X-COM: UFO Defense' },
-//  { id: 3, title: 'The Settlers' } ]
+
+// [
+//   { id: 1, title: 'WarCraft' },
+//   { id: 2, title: 'X-COM: UFO Defense' },
+//   { id: 3, title: 'The Settlers' }
+// ]
 ```
 
 另一种向数组添加值的方法是使用展开运算符。示例如下。
 
-```
+```javascript
 const newGames = [...games, newValue];
 ```
 
@@ -919,28 +930,37 @@ const newGames = [...games, newValue];
 
 更改意味着创建一个新数组，其中包含指定索引位置的新值。我们可以使用 `map` 来实现。映射函数为指定索引返回新值，否则返回现有值。下面是一个更改索引 1 处游戏对象的示例。
 
-```
+```javascript
 const id = 1;
 const newValue = { id, title: 'WarCraft 2' };
+
 const newGames = games.map(game =>
-(game.id === id)
-? newValue
-: game
+  (game.id === id)
+    ? newValue
+    : game
 );
+
 console.log(newGames);
-//[ { id: 1, title: 'WarCraft 2' },
-//  { id: 2, title: 'X-COM: UFO Defense' } ]
+
+// [
+//   { id: 1, title: 'WarCraft 2' },
+//   { id: 2, title: 'X-COM: UFO Defense' }
+// ]
 ```
 
 #### 删除
 
 我们可以使用 `filter` 从数组中删除一个元素。它会返回一个新数组，排除指定索引处的元素。
 
-```
+```javascript
 const id = 1;
 const newGames = games.filter(game => game.id !== id);
+
 console.log(newGames);
-//[ { id: 2, title: 'X-COM: UFO Defense' } ]
+
+// [
+//   { id: 2, title: 'X-COM: UFO Defense' }
+// ]
 ```
 
 ### 总结
@@ -955,44 +975,50 @@ console.log(newGames);
 
 函数可以存储在变量中。我们之前已经见过这种情况。
 
-```
+```javascript
 const square = x => {
-return x * x;
-}
+  return x * x;
+};
 ```
 
 这里，我们使用箭头函数表达式定义了一个函数，然后将该函数存储在 `square` 变量中。函数会推断出变量的名称。然后我们可以使用该变量，通过在末尾添加括号 `()` 来调用函数。
 
-```
+```javascript
 square(3);
-//9
+// 9
 ```
 
 函数可以放入像数组这样的数据结构中。看下一个例子。
 
-```
-function toUpperCase(text){
-return text.toUpperCase();
+```javascript
+function toUpperCase(text) {
+  return text.toUpperCase();
 }
-function toLowerCase(text){
-return text.toLowerCase();
+
+function toLowerCase(text) {
+  return text.toLowerCase();
 }
-function trim(text){
-return text.trim();
+
+function trim(text) {
+  return text.trim();
 }
+
 const functions = [
-toUpperCase,
-toLowerCase,
-trim
+  toUpperCase,
+  toLowerCase,
+  trim
 ];
+
 const text = '  StARt!';
+
 functions.forEach(f => {
-const newText = f(text);
-console.log(newText);
+  const newText = f(text);
+  console.log(newText);
 });
-//"START!"
-//"start!"
-//"StARt!"
+
+// "START!"
+// "start!"
+// "StARt!"
 ```
 
 在这个例子中，我们定义了三个函数，然后将它们放入一个名为 `functions` 的数组中。然后我们遍历该数组，并用 `text` 参数调用每个函数。结果会显示在控制台中。
@@ -1001,29 +1027,30 @@ console.log(newText);
 
 函数可以作为参数传递给其他函数。在下一个例子中，我们定义了两个函数 `sum` 和 `multiply`，并将它们作为参数传递给另一个名为 `doOperation` 的函数。
 
-```
-function sum(a, b){
-return a + b;
+```javascript
+function sum(a, b) {
+  return a + b;
 }
-function multiply(a, b){
-return a * b;
+
+function multiply(a, b) {
+  return a * b;
 }
-function doOperation(operation, a, b){
-return operation(a,b)
+
+function doOperation(operation, a, b) {
+  return operation(a, b);
 }
+
 doOperation(sum, 2, 3);
-//5
+// 5
+
 doOperation(multiply, 2, 3);
+// 6
 ```
 
+函数可以返回其他函数。函数可以拥有属性和方法。例如，它们拥有 `name` 属性，可以以字符串形式访问函数名。函数还有像 [`call()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/call) 或 [`apply()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/apply) 这样的方法。这两个方法实现的功能基本相同，区别在于 `call` 接受一个参数列表，而 `apply` 接受一个包含所有参数的单一数组。使用参数调用函数也称为将这些参数应用于函数。考虑下面使用 `call` 方法将函数应用于一组参数的例子。
 
-
-
-
-//6 函数可以返回其他函数。函数可以拥有属性和方法。例如，它们拥有 `name` 属性，可以以字符串形式访问函数名。函数还有像 [call()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/call) 或 [apply()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/apply) 这样的方法。这两个方法实现的功能基本相同，区别在于 `call` 接受一个参数列表，而 `apply` 接受一个包含所有参数的单一数组。使用参数调用函数也称为将这些参数应用于函数。考虑下面使用 `call` 方法将函数应用于一组参数的例子。
-
-```
-function multiply(a, b){
+```javascript
+function multiply(a, b) {
   return a * b;
 }
 
@@ -1034,25 +1061,25 @@ multiply.call(null, 2, 3);
 
 高阶函数是操作其他函数的函数。高阶函数将其他函数作为参数、返回函数，或两者兼有。所有以函数作为输入的数组方法，如 `filter`、`map`、`reduce`、`sort`，都是高阶函数。之前自定义的 `doOperation` 函数就是一个高阶函数，因为它将另一个函数作为输入。考虑下面返回函数的高阶函数。
 
-```
+```javascript
 const objects = [
   { id: 1 },
   { id: 2 }
 ];
 
-function hasId(id){
-  return function(element){
+function hasId(id) {
+  return function(element) {
     return element.id === id;
-  }
+  };
 }
 
 console.log(objects.find(hasId(1)));
-//{ id: 1 }
+// { id: 1 }
 ```
 
 `hasId` 返回一个函数。`hasId` 是一个高阶函数。下面是一个高阶函数创建 `sort` 方法所需的比较函数的例子。
 
-```
+```javascript
 const courses = [
   {
     title: 'Course 2',
@@ -1065,17 +1092,16 @@ const courses = [
   {
     title: 'Course 1',
     author: 'Author 1'
-  }  
+  }
 ];
 
-function by(name){
-  return function(a, b){
+function by(name) {
+  return function(a, b) {
     return a[name].localeCompare(b[name]);
-  }
+  };
 }
 
-courses
-  .slice().sort(by('author'))
+courses.slice().sort(by('author'));
 ```
 
 `by` 是一个高阶函数。它允许我们使用对象中任意字符串类型的属性对列表进行排序。
@@ -1084,40 +1110,43 @@ courses
 
 函数可以在其他函数内部定义。内部函数除了可以访问自己的参数和变量外，还可以访问外部函数的参数和变量。闭包是指内部函数能够访问外部函数变量的能力。让我们从一个基本例子开始。
 
-```
-function run(){
+```javascript
+function run() {
   const value = 1;
-  function logValue(){
+
+  function logValue() {
     console.log(value);
   }
+
   logValue();
 }
 
 run();
-//1
+// 1
 ```
 
 在函数内部定义的所有变量仅在该函数内部可见。`logValue` 函数定义在 `run` 函数内部，并且可以访问 `value` 变量。当内部函数在外部函数调用结束后仍然存在时，闭包就变得非常重要。考虑下一个例子。
 
-```
-function createCount(){
+```javascript
+function createCount() {
   let counter = 0;
-  return function count(){
+
+  return function count() {
     counter = counter + 1;
     return counter;
-  }
+  };
 }
 
 const count = createCount();
 
 console.log(count());
-//1
+// 1
 
 console.log(count());
-//2
+// 2
 
 console.log(count());
-//3
+// 3
 ```
 
 `count` 可以访问外部函数中的 `counter` 变量。`count` 在外部函数调用结束后仍然存在。`count` 就是一个闭包。
@@ -1136,24 +1165,24 @@ console.log(count());
 
 例如，`1 + 2` 是一个表达式。当函数返回一个值时，函数调用也是一个表达式。考虑 `multiply` 函数。
 
-```
-function multiply(a, b){
+```javascript
+function multiply(a, b) {
   return a * b;
 }
 ```
 
 `multiply(2, 3)` 是一个表达式。一个表达式可以包含其他表达式。例如，表达式 `multiply(2, 3+7)` 包含了表达式 `3+7`。算术表达式求值为数字。字符串表达式求值为字符串。示例如下：
 
-```
+```javascript
 "This " + "IS A texT".toLowerCase();
-//"This is a text"
+// "This is a text"
 ```
 
 逻辑表达式求值为 `true` 或 `false`。这些表达式通常使用像 `&&`、`||`、`!` 或 `===` 这样的[逻辑运算符](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#Logical)。
 
-```
+```javascript
 1 === 2;
-//false
+// false
 ```
 
 表达式是一段返回值的代码。
@@ -1162,7 +1191,7 @@ function multiply(a, b){
 
 有三种声明变量的语句：`var`、`let` 和 `const`。`var` 语句声明的变量具有函数作用域，但没有块作用域。这可能会造成混淆。`var` 声明已经过时，因此我们可以通过 lint 规则禁用它的使用。
 
-```
+```json
 "no-var": "error"
 ```
 
@@ -1174,11 +1203,11 @@ function multiply(a, b){
 
 `if` 语句不一定返回值，因此在函数式风格中，我们应该要么始终包含 `else` 分支并返回一个值，要么完全禁用 `if` 语句。我们将禁用以下 `if` 语句的使用方式。
 
-```
+```javascript
 const n = 3;
 let isEven;
 
-if(n % 2 === 0){
+if (n % 2 === 0) {
   isEven = true;
 } else {
   isEven = false;
@@ -1189,7 +1218,7 @@ console.log(isEven);
 
 只有当 `if` 语句包含 `else` 分支且所有分支都有 `return` 语句时，才允许使用。以下是相应的 lint 规则。
 
-```
+```json
 "functional/no-conditional-statement": ["error", {
   "allowReturningBranches": "ifExhaustive"
 }]
@@ -1197,9 +1226,9 @@ console.log(isEven);
 
 下面是一个带有 `else` 分支且始终返回值的 `if` 语句示例。
 
-```
-function isEven(n){
-  if(n % 2 === 0){
+```javascript
+function isEven(n) {
+  if (n % 2 === 0) {
     return true;
   } else {
     return false;
@@ -1213,52 +1242,55 @@ console.log(isEven(3));
 
 更好的选择是使用[条件运算符](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Conditional_Operator)，它是一个返回值的表达式。
 
-```
+```javascript
 const n = 3;
+
 const isEven = (n % 2 === 0)
   ? true
-  : false
+  : false;
 
 console.log(isEven);
-//false
+// false
 ```
 
 下面是一个函数示例，当没有提供产品对象时返回 `null`，当价格可用时返回价格，否则返回 `lastPrice`。
 
-```
-function getPrice(product){
+```javascript
+function getPrice(product) {
   return product
     ? product.price
       ? product.price
       : product.lastPrice
-    : null       
+    : null;
 }
 
 console.log(getPrice(null));
-//null
+// null
 
-console.log(getPrice({lastPrice: 10}));
-//10
+console.log(getPrice({ lastPrice: 10 }));
+// 10
 
-console.log(getPrice({price:5, lastPrice: 10}));
-//5
+console.log(getPrice({ price: 5, lastPrice: 10 }));
+// 5
 ```
 
 #### `switch` 语句
 
 与 `if` 语句类似，`switch` 语句允许编写不返回值的代码。应禁用以下 `switch` 语句的使用方式。
 
-```
-function increment(x){
+
+
+```javascript
+function increment(x) {
   return x + 1;
 }
 
-function decrement(x){
+function decrement(x) {
   return x - 1;
 }
 
-function doAction(actionName){
-  switch(actionName){
+function doAction(actionName) {
+  switch (actionName) {
     case "increment":
       number = increment(number);
       break;
@@ -1269,19 +1301,19 @@ function doAction(actionName){
 }
 
 let number = 0;
-doAction('increment')
+doAction("increment");
 console.log(number);
-//1
+// 1
 ```
 
 只有当 `switch` 语句包含 `default` 分支且所有分支都返回值时，才允许使用。请看下一个示例。
 
-```
-function doAction(x, actionName){
-  switch(actionName){
-    case 'increment':
+```javascript
+function doAction(x, actionName) {
+  switch (actionName) {
+    case "increment":
       return increment(x);
-    case 'decrement':
+    case "decrement":
       return decrement(x);
     default:
       return x;
@@ -1289,35 +1321,28 @@ function doAction(x, actionName){
 }
 
 const number = 0;
-const newNumber = doAction(number, 'increment');
+const newNumber = doAction(number, "increment");
 console.log(newNumber);
-//1
+// 1
 ```
 
-更好的选择是使用映射（map）。它有助于将 switch 分解为更小的部分。以下是使用对象字面量作为映射重写相同逻辑的方式。
+更好的选择是使用映射（map）。它有助于将 `switch` 分解为更小的部分。以下是使用对象字面量作为映射重写相同逻辑的方式。
 
-```
-function increment(x){
+```javascript
+function increment(x) {
   return x + 1;
 }
 
-function decrement(x){
+function decrement(x) {
   return x - 1;
 }
 
 const actionMap = {
-```
+  increment,
+  decrement
+};
 
-
-
-
-
-```
-increment,
-decrement
-}
-
-function doAction(x, actionName){
+function doAction(x, actionName) {
   const action = actionMap[actionName];
   return action
     ? action(x)
@@ -1325,7 +1350,7 @@ function doAction(x, actionName){
 }
 
 const number = 0;
-const newNumber = doAction(number, 'increment');
+const newNumber = doAction(number, "increment");
 console.log(number);
 ```
 
@@ -1339,29 +1364,30 @@ console.log(number);
 
 `for-in` 循环遍历对象的键。
 
-```
+```javascript
 const book = {
-  title : "How JavaScript Works",
-  author : "Douglas Crockford"
+  title: "How JavaScript Works",
+  author: "Douglas Crockford"
 };
 
 for (const propName in book) {
-  console.log(book[propName])
+  console.log(book[propName]);
 }
 ```
 
 我们可以使用 `Object.keys` 和数组方法实现相同的逻辑。
 
-```
+```javascript
 Object.keys(book).forEach(propName => {
-  console.log(book[propName])
+  console.log(book[propName]);
 });
 ```
 
 `for-of` 语句遍历[可迭代对象](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Iteration_protocols#The_iterable_protocol)，如数组或字符串。
 
-```
+```javascript
 const arr = [1, 2, 3];
+
 for (const element of arr) {
   console.log(element);
 }
@@ -1369,7 +1395,7 @@ for (const element of arr) {
 
 它可以被 `forEach` 方法替代。
 
-```
+```javascript
 arr.forEach(element => {
   console.log(element);
 });
@@ -1385,10 +1411,11 @@ arr.forEach(element => {
 
 禁用所有循环语句是有问题的。在[尾调用优化](https://en.wikipedia.org/wiki/Tail_call)可用之前，我们仍然至少需要一个循环语句，以便在特定算法中偶尔使用。以下是如何在特定行上停用上述循环规则的方法。
 
-```
+```javascript
 let i = 1;
+
 // eslint-disable-next-line functional/no-loop-statement
-while(i < 10){
+while (i < 10) {
   console.log(i);
   i = i + 1;
 }
@@ -1408,55 +1435,62 @@ while(i < 10){
 
 考虑以下示例，当找到搜索的元素时跳出循环。
 
-```
+```javascript
 const products = [
-  {id:1, name: 'apple'},
-  {id:2, name:'mango'}
-]
+  { id: 1, name: "apple" },
+  { id: 2, name: "mango" }
+];
+
 const id = 1;
 let product;
-for(let i=0; i<products.length; i++){
-  if(products[i].id === id){
+
+for (let i = 0; i < products.length; i++) {
+  if (products[i].id === id) {
     product = products[i];
     break;
   }
 }
+
 console.log(product);
-//{id:1, name: 'apple'}
+// {id:1, name: 'apple'}
 ```
 
 我们可以使用 `find` 实现相同的逻辑。
 
-```
+```javascript
 const id = 1;
 const product = products.find(p => p.id === id);
-console.log(product)
+
+console.log(product);
 ```
 
 现在，看一个遍历单词列表并在找到特定单词时停止的示例。
 
-```
+```javascript
 const words = [
-  'ability',
-  'calculate',
-  'calendar',
-  'double',
-  'door'
+  "ability",
+  "calculate",
+  "calendar",
+  "double",
+  "door"
 ];
-const stopTo = 'double';
-for(let word of words){
-  if(word === stopTo){
+
+const stopTo = "double";
+
+for (const word of words) {
+  if (word === stopTo) {
     break;
   }
+
   console.log(word);
 }
 ```
 
 相同的逻辑可以使用 `every` 实现。
 
-```
+```javascript
 words.every(w => {
-  if(w.startsWith(stopTo)){
+  if (w.startsWith(stopTo)) {
     return false;
   } else {
     console.log(w);
@@ -1473,8 +1507,8 @@ words.every(w => {
 
 `throw` 语句引发异常。下面是一个示例。
 
-```
-throw new Error('The errors details');
+```javascript
+throw new Error("The errors details");
 ```
 
 函数式编程中不使用异常，这意味着我们需要为这些场景寻找其他替代方案。
@@ -1507,83 +1541,90 @@ throw new Error('The errors details');
 
 让我们先看看以迭代方式计算一个数的阶乘的算法。如你所知，`n`! = `n` * (`n`-1)!。
 
-```
+```javascript
 function factorial(n) {
   let result = 1;
   let i = 2;
-  while(i <= n){
+
+  while (i <= n) {
     result = result * i;
     i = i + 1;
   }
+
   return result;
 }
+
 console.log(factorial(5));
-//i=2, result=2
-//i=3, result=6
-//i=4, result=24
-//i=5, result=120
-//120
+// i=2, result=2
+// i=3, result=6
+// i=4, result=24
+// i=5, result=120
+// 120
 ```
 
 以下是使用递归实现相同算法的方法。
 
-```
+```javascript
 function factorial(n) {
-  if (n === 0) { 
-    return 1;  
-  }
-  else {  
-    return n * factorial(n - 1);  
+  if (n === 0) {
+    return 1;
+  } else {
+    return n * factorial(n - 1);
   }
 }
-//n=5 -> 5*f(4)
-//n=4 -> 4*f(3)
-//n=3 -> 3*f(2)
-//n=2 -> 2*f(1)
-//n=1 -> 1*f(0)
-//n=0 -> 1 停止！
-//n=1 -> 1*f(0) = 1*1 = 1
-//n=2 -> 2*f(1) = 2*1 = 2
-//n=3 -> 3*f(2) = 3*2 = 6
-//n=4 -> 4*f(3) = 4*6 = 24
-//n=5 -> 5*f(4) = 5*24= 120
+
+// n=5 -> 5*f(4)
+// n=4 -> 4*f(3)
+// n=3 -> 3*f(2)
+// n=2 -> 2*f(1)
+// n=1 -> 1*f(0)
+// n=0 -> 1 停止！
+// n=1 -> 1*f(0) = 1*1 = 1
+// n=2 -> 2*f(1) = 2*1 = 2
+// n=3 -> 3*f(2) = 3*2 = 6
+// n=4 -> 4*f(3) = 4*6 = 24
+// n=5 -> 5*f(4) = 5*24= 120
+
 console.log(factorial(5));
-//120
+// 120
 ```
 
 `factorial` 函数不断调用自身，直到得到 `n` 为 0 的结果。然后它恢复执行，并计算 `n` 等于 1、2、3、4 和最终 5 的结果。
 
 下面是使用条件运算符重构的相同递归函数。
 
-```
+```javascript
 function factorial(n) {
-  return (n === 0) 
+  return (n === 0)
     ? 1
-    : n * factorial(n - 1);  
+    : n * factorial(n - 1);
 }
+
 console.log(factorial(5));
-//120
+// 120
 ```
 
 ### 尾调用优化
 
 这是编写阶乘函数的另一种方式。
 
-```
+```javascript
 function factorial(n, result = 1) {
-  //console.log(`n=${n}, result=${result}`);
-  return (n === 0) 
+  // console.log(`n=${n}, result=${result}`);
+
+  return (n === 0)
     ? result
-    : factorial(n - 1, n * result);  
+    : factorial(n - 1, n * result);
 }
+
 console.log(factorial(5));
-//n=5, result=1
-//n=4, result=5
-//n=3, result=20
-//n=2, result=60
-//n=1, result=120
-//n=0, result=120
-//120
+// n=5, result=1
+// n=4, result=5
+// n=3, result=20
+// n=2, result=60
+// n=1, result=120
+// n=0, result=120
+// 120
 ```
 
 注意，这次一旦函数到达停止条件，它就返回结果。它不需要返回并恢复之前的调用来返回最终结果。当满足结束条件时，它直接返回，因为它已经拥有了所有必要的数据。
@@ -1598,92 +1639,81 @@ console.log(factorial(5));
 
 考虑以下函数，它以迭代方式计算从 0 到 10000 的所有值的和。
 
-```
-function sumAll(n) {        
+```javascript
+function sumAll(n) {
   let total = 0;
   let i = 1;
-  while(i <= n){
+
+  while (i <= n) {
     total = total + i;
     i = i + 1;
   }
+
   return total;
 }
+
 console.log(sumAll(10000));
-//50005000
+// 50005000
 ```
 
 下面是使用尾调用优化编写的等效代码。
 
-```
+```javascript
 function sumAll(n, i = 0, result = 0) {
-  return (i > n) 
+  return (i > n)
     ? result
-    : sumAll(n, i + 1, i + result);  
+    : sumAll(n, i + 1, i + result);
 }
+
 console.log(sumAll(5));
-//15
+// 15
 ```
 
 用较大的数字调用递归函数会导致栈溢出错误。
 
-```
+```javascript
 console.log(sumAll(10000));
 ```
 
-
-
-
-
-`//Maximum call stack size exceeded`递归可能导致“Maximum call stack size exceeded”错误信息。JavaScript 为每个函数调用保留一个调用栈，这是一块固定大小的内存，用于存储调用的相关信息。信息以栈的方式（后进先出）添加到调用栈中。每次递归调用都会向调用栈添加一个新的栈帧。如果递归调用创建了过多的栈帧，就会抛出栈溢出错误。尾递归函数不应为每个函数调用创建新的栈帧，而应使用单个栈帧。理论上，任何循环都可以用递归实现。但由于缺少尾调用优化的实现，用递归替换所有类型的循环并不实际。在撰写本文时，循环的尾递归实现可能会带来性能损失，或导致栈溢出错误。
+`Maximum call stack size exceeded` 递归可能导致“Maximum call stack size exceeded”错误信息。JavaScript 为每个函数调用保留一个调用栈，这是一块固定大小的内存，用于存储调用的相关信息。信息以栈的方式（后进先出）添加到调用栈中。每次递归调用都会向调用栈添加一个新的栈帧。如果递归调用创建了过多的栈帧，就会抛出栈溢出错误。尾递归函数不应为每个函数调用创建新的栈帧，而应使用单个栈帧。理论上，任何循环都可以用递归实现。但由于缺少尾调用优化的实现，用递归替换所有类型的循环并不实际。在撰写本文时，循环的尾递归实现可能会带来性能损失，或导致栈溢出错误。
 
 ### 蹦床（Trampoline）
 
 蹦床是一种技术，允许我们在没有尾调用优化的语言中使用尾递归函数。首先，需要将原始的尾调用函数重写为返回 thunk 而不是实际值。在我们的示例中，这意味着不直接返回 `sumAll(n, i + 1, i + result)` 的结果，而是返回一个返回该结果的无参函数。
 
-```
+```javascript
 function sumAll(n, i = 0, result = 0) {
-
-return (i > n) 
-
-? () => result
-
-: () => sumAll(n, i + 1, i + result);
-
+  return (i > n)
+    ? () => result
+    : () => sumAll(n, i + 1, i + result);
 }
 ```
 
 [thunk](https://en.wikipedia.org/wiki/Thunk_(functional_programming)) 是一个不接受参数的函数，它调用另一个函数并传入所有必要参数，然后返回结果。例如，以下函数就是一个 thunk。
 
-```
+```javascript
 const sum100Thunk = () => sumAll(100);
 ```
 
 `sum100Thunk` 函数不接受参数，并返回以特定参数调用 `sumAll` 的结果。将原始函数转换为返回 thunk 后，我们需要一个 `trampoline` 工具函数，它以迭代方式循环并调用 thunk 函数。只要 thunk 返回其他 thunk 函数，循环就会继续。
 
-```
+```javascript
 function trampoline(f) {
+  return function (...args) {
+    let result = f(...args);
 
-return function(...args){
+    while (typeof result === "function") {
+      result = result();
+    }
 
-let result = f(...args);
-
-while (typeof(result) === 'function'){
-
-result = result();
-
-}
-
-return result;
-
-}
-
+    return result;
+  };
 }
 
 const _sumAll = trampoline(sumAll);
 
 console.log(_sumAll(10000));
-
-//50005000
+// 50005000
 ```
 
 蹦床技术解决了一个本不应存在的问题，并且它本身也带来了额外的开销。它本质上允许我们将递归函数转换为迭代循环。
@@ -1692,56 +1722,40 @@ console.log(_sumAll(10000));
 
 递归可用于实现某些更容易用此方式解决的特定算法。在下一个示例中，递归用于遍历树并创建一个包含顶层选中节点值的数组。我们首先定义树，从包含其他节点对象的根节点对象开始。每个节点都有 `value` 和 `checked` 属性。
 
-```
+```javascript
 const tree = {
-
-value: 0,
-
-checked: false,
-
-children: [{
-
-value: 1,
-
-checked: true,
-
-children: [{
-
-value: 11,
-
-checked: true,
-
-children: null
-
-}]
-
-}, {
-
-value: 2,
-
-checked: false,
-
-children: [{
-
-value: 22,
-
-checked: true,
-
-children: null
-
-},{
-
-value: 23,
-
-checked: true,
-
-children: null
-
-}]
-
-}]
-
-}
+  value: 0,
+  checked: false,
+  children: [
+    {
+      value: 1,
+      checked: true,
+      children: [
+        {
+          value: 11,
+          checked: true,
+          children: null
+        }
+      ]
+    },
+    {
+      value: 2,
+      checked: false,
+      children: [
+        {
+          value: 22,
+          checked: true,
+          children: null
+        },
+        {
+          value: 23,
+          checked: true,
+          children: null
+        }
+      ]
+    }
+  ]
+};
 ```
 
 以下是该树的直观表示。
@@ -1750,33 +1764,26 @@ children: null
 
 我们希望获取顶层选中节点的值。这意味着我们不需要树中所有被选中的值。如果父节点已被选中，则无需获取其子节点的选中值。
 
-```
-function toChildTopSelection(selection, childNode){
-
-return selection.concat(getTopSelection(childNode));
-
+```javascript
+function toChildTopSelection(selection, childNode) {
+  return selection.concat(getTopSelection(childNode));
 }
 
-function getTopSelection(node){
-
-return node.checked
-
-?   [node.value]
-
-:   node.children !== null
-
-? node.children.reduce(toChildTopSelection, [])
-
-: []
-
+function getTopSelection(node) {
+  return node.checked
+    ? [node.value]
+    : node.children !== null
+      ? node.children.reduce(toChildTopSelection, [])
+      : [];
 }
 
 getTopSelection(tree);
-
-//[1, 22, 23]
+// [1, 22, 23]
 ```
 
-`getTopSelection` 接收一个树对象，并返回一个包含顶层选中值的数组。如果节点被选中，则返回该节点的值作为单元素数组。当节点未被选中且有子节点时，它返回这些子节点的顶层选中值。`getTopSelection` 会为树中的每个子节点调用，直到递归在选中的节点处停止。找到被选中的节点就是终止条件。对于已选中节点的子节点，不会调用 `getTopSelection`。
+
+
+`getTopSelection` 接收一个树对象，并返回一个包含顶层选中值的数组。如果节点被选中，则返回该节点的值作为单元素数组。当节点未被选中且有子节点时，它返回这些子节点的顶层选中值。`getTopSelection` 会为树中的每个子节点调用，直到递归在选中的节点处停止。找到被选中的节点就是终止条件。对于已选中节点的子节点，不会调用`getTopSelection`。
 
 ### 回顾
 
@@ -1790,41 +1797,32 @@ getTopSelection(tree);
 
 管道是一系列数据转换，其中一个转换的输出是下一个转换的输入。管道使我们能够以更具表现力的方式编写数据转换。考虑以下代码：
 
-```
+```javascript
 function capitalize(text) {
-
-return text.charAt(0).toUpperCase() + text.slice(1);
-
+  return text.charAt(0).toUpperCase() + text.slice(1);
 }
 
 function shortenText(text) {
-
-return text.substring(0, 8).trim();
-
+  return text.substring(0, 8).trim();
 }
 
-const shortText =
-
-shortenText(capitalize("this is a long text"));
+const shortText = shortenText(capitalize("this is a long text"));
 
 console.log(shortText);
 
 //"This is"
 ```
 
-我们可以使用函数式库（如 [lodash](https://lodash.com/) 或 [ramda](https://ramdajs.com/) ）中的 `pipe` 工具，以更具表现力的方式编写这些转换。`npm i lodash --save`
+我们可以使用函数式库（如 [lodash](https://lodash.com/) 或 [ramda](https://ramdajs.com/)）中的`pipe`工具，以更具表现力的方式编写这些转换。`npm i lodash --save`
 
 以下是在管道中这些转换的样子。
 
-```
+```javascript
 import { pipe } from 'lodash/fp';
 
 const shortText = pipe(
-
-capitalize,
-
-shortenText
-
+  capitalize,
+  shortenText
 )("this is a long text");
 
 console.log(shortText);
@@ -1832,7 +1830,7 @@ console.log(shortText);
 //"This is"
 ```
 
-初始文本是管道的输入。`capitalize` 是第一个处理文本的函数。然后该转换的输出作为下一个函数 `shortenText` 的输入。接着管道结束，我们得到结果。
+初始文本是管道的输入。`capitalize`是第一个处理文本的函数。然后该转换的输出作为下一个函数`shortenText`的输入。接着管道结束，我们得到结果。
 
 ![](img/Image00007.jpg)
 
@@ -1840,87 +1838,56 @@ console.log(shortText);
 
 链式调用是定义管道的一种更常见的形式。它需要操作一个对象。考虑以下债务列表。
 
-```
+```javascript
 const debts = [
-
-{
-
-contractNo : 1,
-
-daysSinceLastPayment: 91,
-
-currency : 'EUR'
-
-},
-
-{
-
-contractNo : 2,
-
-daysSinceLastPayment: 35,
-
-currency : 'USD'
-
-},
-
-{
-
-contractNo : 3,
-
-daysSinceLastPayment: 45,
-
-currency : 'USD'
-
-}   
-
+  {
+    contractNo: 1,
+    daysSinceLastPayment: 91,
+    currency: 'EUR'
+  },
+  {
+    contractNo: 2,
+    daysSinceLastPayment: 35,
+    currency: 'USD'
+  },
+  {
+    contractNo: 3,
+    daysSinceLastPayment: 45,
+    currency: 'USD'
+  }
 ];
 ```
 
 以下是如何使用链式调用定义转换管道。
 
-```
+```javascript
 const newDebts = debts
+  .filter(isEur)
+  .map(toDebtView);
 
-.filter(isEur)
-
-.map(toDebtView);
-
-function isEur(debt){
-
-return debt.currency === "EUR";
-
+function isEur(debt) {
+  return debt.currency === "EUR";
 }
 
-function toDebtView(debt){
-
-return {
-
-...debt,
-
-priority : getPriority(debt)
-
+function toDebtView(debt) {
+  return {
+    ...debt,
+    priority: getPriority(debt)
+  };
 }
 
-}
+function getPriority(debt) {
+  const days = debt.daysSinceLastPayment;
 
-function getPriority(debt){
-
-const days = debt.daysSinceLastPayment;
-
-return days > 90
-
-? 1
-
-: days > 60
-
-? 2
-
-: 3;
-
+  return days > 90
+    ? 1
+    : days > 60
+    ? 2
+    : 3;
 }
 ```
 
-首先，使用 `isEur` 谓词函数过滤债务列表。然后，使用 `toDebtView` 映射函数转换此操作的结果。
+首先，使用`isEur`谓词函数过滤债务列表。然后，使用`toDebtView`映射函数转换此操作的结果。
 
 ![](img/Image00008.jpg)
 
@@ -1928,104 +1895,77 @@ return days > 90
 
 恒等函数是一个一元函数，它返回作为参数传入的值。在数学中，它定义为 f(x) = x。
 
-```
-function identity(value){
-
-return value;
-
+```javascript
+function identity(value) {
+  return value;
 }
 ```
 
-如果我们将此转换放入之前的管道中，它只会创建数组的一个副本。`logIdentity` 函数提供了一种在不影响流程的情况下检查管道中数据的方法。它返回接收到的参数，同时将其记录到控制台。
+如果我们将此转换放入之前的管道中，它只会创建数组的一个副本。`logIdentity`函数提供了一种在不影响流程的情况下检查管道中数据的方法。它返回接收到的参数，同时将其记录到控制台。
 
-```
-function logIdentity(value){
-
-console.log(value);
-
-return value;
-
+```javascript
+function logIdentity(value) {
+  console.log(value);
+  return value;
 }
 
 debts
-
-.filter(isEur)
-
-.map(logIdentity)
-
-.map(toDebtView)
-
-.map(logIdentity);
+  .filter(isEur)
+  .map(logIdentity)
+  .map(toDebtView)
+  .map(logIdentity);
 ```
 
 ### 柯里化
 
 柯里化是一种技术，用于将期望 n 个参数的函数转换为一系列 n 个函数，每个函数期望一个参数。考虑过滤单词列表的情况。
 
-```
+```javascript
 const words = [
-
-'ability',
-
-'calculate',
-
-'calendar',
-
-'double',
-
-'door'
-
+  'ability',
+  'calculate',
+  'calendar',
+  'double',
+  'door'
 ];
 
-function startsWith(word, term){
-
-return word.startsWith(term);
-
+function startsWith(word, term) {
+  return word.startsWith(term);
 }
 
 words
-
-.filter(w => startsWith(w, 'a'))
-
-.forEach(console.log);
+  .filter(w => startsWith(w, 'a'))
+  .forEach(console.log);
 ```
 
 现在，看看使用柯里化重构后的相同代码。
 
-```
-function startsWith(term){
-
-return function(word){
-
-return word.startsWith(term);
-
-}
-
+```javascript
+function startsWith(term) {
+  return function(word) {
+    return word.startsWith(term);
+  };
 }
 
 words
 ```
 
-
-
-
-
-```
+```javascript
 .filter(startsWith('a'))
 .forEach(console.log);
 ```
 
-`startsWith` 是一个柯里化函数。它不接收两个参数，而是只接收一个参数，并返回一个接受第二个参数的函数。另外请注意，与接收两个参数的原始版本相比，柯里化版本的参数顺序是相反的。当使用箭头语法编写柯里化版本时，你可能会觉得更清晰。
+`startsWith`是一个柯里化函数。它不接收两个参数，而是只接收一个参数，并返回一个接受第二个参数的函数。另外请注意，与接收两个参数的原始版本相比，柯里化版本的参数顺序是相反的。当使用箭头语法编写柯里化版本时，你可能会觉得更清晰。
 
-```
+```javascript
 const startsWith = term => word => {
   return word.startsWith(term);
-}
+};
 ```
 
-另一种选择是使用自动柯里化工具函数来创建函数的柯里化版本。下面是一个使用 [lodash](https://lodash.com/) 中的 `curry` 工具的示例。
+另一种选择是使用自动柯里化工具函数来创建函数的柯里化版本。下面是一个使用 [lodash](https://lodash.com/) 中的`curry`工具的示例。
 
-```
+```javascript
 import { curry } from 'lodash/fp';
 
 const startsWith = curry(function(term, word) {
@@ -2035,9 +1975,9 @@ const startsWith = curry(function(term, word) {
 
 ### 归约管道
 
-`reduce` 方法也使用了管道。让我们再次查看代码并分析数据流。
+`reduce`方法也使用了管道。让我们再次查看代码并分析数据流。
 
-```
+```javascript
 const numbers = [1, 3, 5];
 
 function add(total, n) {
@@ -2054,7 +1994,7 @@ console.log(total);
 
 ![](img/Image00009.jpg)
 
-第一步的聚合值是 0。调用归约器后，这次转换的输出 1 作为下一个归约器调用的输入。再次调用归约器后，输出 4 作为下一个归约器调用的输入，以此类推。`reduce` 创建了一个管道，其中每一步我们都会得到前一次归约器调用的结果和当前元素作为输入。
+第一步的聚合值是 0。调用归约器后，这次转换的输出 1 作为下一个归约器调用的输入。再次调用归约器后，输出 4 作为下一个归约器调用的输入，以此类推。`reduce`创建了一个管道，其中每一步我们都会得到前一次归约器调用的结果和当前元素作为输入。
 
 ### 总结
 
@@ -2064,13 +2004,13 @@ console.log(total);
 
 接下来，我们将探索函子。让我们从一组数据转换开始。考虑下面的例子：
 
-```
-function toCelsius(kelvin){
-  const celsius = (kelvin - 273.15);
+```javascript
+function toCelsius(kelvin) {
+  const celsius = kelvin - 273.15;
   return Math.round(celsius * 100) / 100;
 }
 
-function describeTemperature(temperature){
+function describeTemperature(temperature) {
   return temperature < 0
     ? "Freezing"
     : temperature < 15
@@ -2086,37 +2026,38 @@ const description = describeTemperature(celsius);
 
 console.log(celsius);
 //26.85
-console.log(description)
+console.log(description);
 //"Warm"
 ```
 
-如你所见，这段代码的重点是对单个值应用两次变换。它从开尔文温度开始，应用 `toCelsius` 变换，然后对结果应用 `describeTemperature` 函数。如果能将这些变换链式应用到初始值上并创建一个管道，那就更好了。下面是一种可能的实现方式：
+如你所见，这段代码的重点是对单个值应用两次变换。它从开尔文温度开始，应用`toCelsius`变换，然后对结果应用`describeTemperature`函数。如果能将这些变换链式应用到初始值上并创建一个管道，那就更好了。下面是一种可能的实现方式：
 
-```
+```javascript
 Mappable(300)
   .map(toCelsius)
-  .map(describeTemperature)
+  .map(describeTemperature);
 ```
 
 这就是函子发挥作用的情况。
 
 ### 函子
 
-函子是一个带有 `map` 操作的对象，该操作满足函子定律。我们可以简单地将函子创建为一个带有 `map` 方法的对象。考虑以下函数：
+函子是一个带有`map`操作的对象，该操作满足函子定律。我们可以简单地将函子创建为一个带有`map`方法的对象。考虑以下函数：
 
-```
-function F(value){
-  function map(f){
+```javascript
+function F(value) {
+  function map(f) {
     const newValue = f(value);
     return F(newValue);
   }
+
   return {
     map
-  }
+  };
 }
 ```
 
-`F` 创建了一个带有 `map` 方法的对象，该方法包装了一个值。`map` 接收一个变换函数，将其应用于包装的值，并返回一个包装了新值的新对象。`F` 被称为工厂函数。`F` 返回一个包含闭包 `map` 的对象，该闭包从其父作用域访问 `value` 变量。`F` 工厂函数创建了一个函子。
+`F`创建了一个带有`map`方法的对象，该方法包装了一个值。`map`接收一个变换函数，将其应用于包装的值，并返回一个包装了新值的新对象。`F`被称为工厂函数。`F`返回一个包含闭包`map`的对象，该闭包从其父作用域访问`value`变量。`F`工厂函数创建了一个函子。
 
 ### 函子定律
 
@@ -2124,19 +2065,19 @@ function F(value){
 
 #### 同一律
 
-将同一函数传递给函子的 `map` 操作，应该得到相同的函子，即存储相同值的函子。考虑同一函数。
+将同一函数传递给函子的`map`操作，应该得到相同的函子，即存储相同值的函子。考虑同一函数。
 
-```
-function identity(n){
+```javascript
+function identity(n) {
   return n;
 }
 
-functor.map(identiy) = functor
+functor.map(identity) = functor;
 ```
 
 让我们验证一下我们函子的同一律。
 
-```
+```javascript
 const functor = F(1);
 const newFunctor = functor.map(identity);
 //F(1)
@@ -2144,30 +2085,30 @@ const newFunctor = functor.map(identity);
 
 #### 组合律
 
-函数组合是一种操作，它接收两个函数 `f` 和 `g`，并产生一个新函数 `h`，其中 `h(x) = g(f(x))`。在此操作中，函数 `g` 应用于将函数 `f` 应用于 `x` 的结果。我们可以说函数组合是将一个函数应用于另一个函数结果的操作。函子必须遵守组合律，即：
+函数组合是一种操作，它接收两个函数`f`和`g`，并产生一个新函数`h`，其中`h(x) = g(f(x))`。在此操作中，函数`g`应用于将函数`f`应用于`x`的结果。我们可以说函数组合是将一个函数应用于另一个函数结果的操作。函子必须遵守组合律，即：
 
-```
-functor.map(f).map(g) === functor.map(x => g(f(x)))
+```javascript
+functor.map(f).map(g) === functor.map(x => g(f(x)));
 ```
 
 让我们验证组合律。
 
-```
-function increment(n){
+```javascript
+function increment(n) {
   return n + 1;
 }
 
-function double(n){
-  return n * 2
+function double(n) {
+  return n * 2;
 }
 
 F(1)
   .map(increment)
-  .map(double)
+  .map(double);
 //F(4)
 
 F(1)
-  .map(n => double(increment(n)))
+  .map(n => double(increment(n)));
 //F(4)
 ```
 
@@ -2177,22 +2118,22 @@ F(1)
 
 ![](img/Image00010.jpg)
 
-这个例子中的范畴有三个值：1、2、3，以及三个映射这些值之间的函数。`f` 函数将 1 映射到 2。`g` 函数将 2 映射到 3。函数 `h` 从 1 映射到 3，等于 `g(f(1))`。对于每个值，应用同一函数会得到相同的值。
+这个例子中的范畴有三个值：1、2、3，以及三个映射这些值之间的函数。`f`函数将 1 映射到 2。`g`函数将 2 映射到 3。函数`h`从 1 映射到 3，等于`g(f(1))`。对于每个值，应用同一函数会得到相同的值。
 
 ### 实践中的函子
 
 在实践中，函子有助于链式操作。从开发的角度来看，对我们重要的是知道什么时候某个东西是函子。如果是，我们可以用同一函数检查它的值，并且我们可以使用函数组合。我们创建的函子称为同一函子。考虑我们最初的一组数据转换。下面是我们如何使用同一函子将两个变换链式应用到值上。
 
-```
+```javascript
 F(300)
   .map(toCelsius)
-  .map(describeTemperature)
+  .map(describeTemperature);
 ```
 
 我们可以使用同一函数的不纯变体来检查内部的值，该变体会在控制台中记录该值。
 
-```
-function logIdentity(value){
+```javascript
+function logIdentity(value) {
   console.log(value);
   return value;
 }
@@ -2201,34 +2142,34 @@ F(300)
   .map(toCelsius)
   .map(logIdentity) //26.85
   .map(describeTemperature)
-  .map(logIdentity) //"Warm"
+  .map(logIdentity); //"Warm"
 ```
 
 应用函数组合时，我们也会得到相同的结果。
 
-```
+```javascript
 F(300)
   .map(x => describeTemperature(toCelsius(x)))
-  .map(logIdentity)
+  .map(logIdentity);
 //"Warm"
 ```
 
-下面是一个使用函数式库（如 [lodash](https://lodash.com/)）中的 `compose` 工具应用函数组合的示例。
+下面是一个使用函数式库（如 [lodash](https://lodash.com/)）中的`compose`工具应用函数组合的示例。
 
-```
-import { compose } from 'lodash/fp'
+```javascript
+import { compose } from 'lodash/fp';
 
 F(300)
   .map(compose(describeTemperature, toCelsius))
-  .map(logIdentity)
+  .map(logIdentity);
 //"Warm"
 ```
 
 ### 数组
 
-数组是可映射的。`map` 方法遍历集合，并将映射函数应用于数组中的每个值。让我们验证数组上的函子定律。对数组应用同一函数会创建它的一个副本。
+数组是可映射的。`map`方法遍历集合，并将映射函数应用于数组中的每个值。让我们验证数组上的函子定律。对数组应用同一函数会创建它的一个副本。
 
-```
+```javascript
 [1, 2, 3]
   .map(identity)
   .map(logIdentity);
@@ -2239,7 +2180,7 @@ F(300)
 
 接下来，检查组合律。
 
-```
+```javascript
 [1, 2, 3]
   .map(increment)
   .map(double)
@@ -2258,7 +2199,7 @@ F(300)
 
 一个简单的包装单个值的函子可以通过使用只有一个值的数组即时创建。
 
-```
+```javascript
 [300]
   .map(toCelsius)
   .map(describeTemperature)
@@ -2270,21 +2211,20 @@ F(300)
   .map(logIdentity);
 ```
 
-
-
-
-
 ### 回顾
+
 范畴是值的集合，以及这些值之间的箭头。箭头代表映射函数。对任何值应用恒等函数都会返回该值。函子是尊重恒等性和组合性的可映射对象。函子为我们提供了一种有用的方式，可以在包装值上创建数据转换管道。
 
 ## 第 10 章：单子
+
 函子是包装一个值并支持映射的对象。单子是包装一个值并支持映射和扁平映射的对象。
 
 ### 扁平映射
-让我们再次看看数组函子上可用的 `map` 方法。应用一个返回值类型的映射函数，会得到一个新的数组，其中包含转换后的值。
+
+让我们再次看看数组函子上可用的`map`方法。应用一个返回值类型的映射函数，会得到一个新的数组，其中包含转换后的值。
 
 ```javascript
-function toUpperCase(text){
+function toUpperCase(text) {
   return text.toUpperCase();
 }
 
@@ -2300,24 +2240,26 @@ console.log(arr);
 看看当我们应用一个返回数组的映射函数时会发生什么。
 
 ```javascript
-function split(text){
+function split(text) {
   return text.split(' ');
 }
 
 const arr = ["raspberry strawberry", "blueberry"]
-  .map(split)
+  .map(split);
 
 console.log(arr);
 //[ [ 'raspberry', 'strawberry' ], [ 'blueberry' ] ]
 ```
 
-`split` 函数使用分隔符将字符串拆分为子字符串数组。每个子字符串代表原始文本中的一个单词。
+`split`函数使用分隔符将字符串拆分为子字符串数组。每个子字符串代表原始文本中的一个单词。
 
-应用 `split` 映射函数会得到一个包含两个其他数组的数组。每个子数组是一个字符串集合。
+应用`split`映射函数会得到一个包含两个其他数组的数组。每个子数组是一个字符串集合。
 
 扁平映射类似于映射，但它会展开返回类型。
 
-接下来，看看使用数组上可用的 `flatMap` 方法应用相同的映射函数。
+接下来，看看使用数组上可用的`flatMap`方法应用相同的映射函数。
+
+
 
 ```javascript
 const arr = ["raspberry strawberry", "blueberry"]
@@ -2347,6 +2289,7 @@ console.log(arr.flat());
 ```
 
 ### 单子
+
 我们可以简单地将单子创建为一个具有 `map` 和 `flatMap` 方法的对象。考虑以下 `M` 函数：
 
 ```javascript
@@ -2371,9 +2314,11 @@ function M(value){
 `M` 是单子构造函数。它接受一个值并返回一个包装该值的单子。`M` 被称为恒等单子。
 
 ### 单子定律
+
 单子应遵守三条定律。
 
 #### 左恒等
+
 将 `f` 视为一个返回单子的映射函数。将 `f` 函数传递给包装值 `x` 的单子的 `flatMap` 操作，应该得到与调用函数 `f(x)` 相同的单子。
 
 ```
@@ -2396,6 +2341,7 @@ f(1);
 ```
 
 #### 右恒等
+
 将 `M` 函数传递给包装一个值的单子的 `flatMap` 操作，应该得到包装相同值的单子。
 
 ```
@@ -2411,6 +2357,7 @@ M(1)
 ```
 
 #### 结合律
+
 单子必须遵守结合律，即：
 
 ```
@@ -2439,6 +2386,7 @@ M(1)
 ```
 
 ### 替代创建与命名
+
 扁平映射方法有不同的名称，如 `bind`、`chain` 或仅 `flatMap`。还有一种做法是使用一个名为 `unit` 的不同方法来创建单子。`unit` 与 `M` 工厂函数的作用相同，它创建一个新的单子。
 
 下面是使用这种替代命名定义单子的示例。
@@ -2485,19 +2433,22 @@ M.unit(1).bind(f)
 
 下面你可以回顾在这种情况下单子规则如何书写。
 
-**左恒等**
+#### 左恒等
+
 ```
 M.unit(1).bind(f)
 //M 2
 ```
 
-**右恒等**
+#### 右恒等
+
 ```
 M.unit(1).bind(M.unit)
 //M 1
 ```
 
-**结合律**
+#### 结合律
+
 ```
 M.unit(1).bind(f).bind(g)
 //M 3
@@ -2514,7 +2465,8 @@ M.unit(1).bind(x => f(x).bind(g))
 
 以下三种描述单子定律的方式是等价的。
 
-**左恒等**
+#### 左恒等
+
 ```
 bind(unit(x), f) === f(x)
 M.unit(x).bind(f) === f(x)
@@ -2523,14 +2475,16 @@ M(x).flatMap(f) === f(x)
 
 注意，在最后一行中，`M` 被用作构造函数。`M(x)` 等价于 `M.unit(x)`，也等价于 `unit(x)`。
 
-**右恒等**
+#### 右恒等
+
 ```
 bind(monad, unit)  === monad
 monad.bind(M.unit) === monad
 monad.flatMap(M)   === monad
 ```
 
-**结合律**
+#### 结合律
+
 ```
 bind(bind(monad, f), g)
   === bind(monad, x => bind(f(x), g))
@@ -2545,6 +2499,7 @@ monad.flatMap(f).flatMap(g)
 话虽如此，我认为将恒等单子实现为具有 `map` 和 `flatMap` 方法的对象更容易使用。
 
 ### 数组
+
 数组同时具有 `map` 和 `flatMap` 方法。让我们检查它们上的单子定律。
 
 首先，我们需要一个可以从值创建数组的函数。
@@ -2569,7 +2524,8 @@ function split(text){
 
 接下来检查三条定律。
 
-**左恒等**
+#### 左恒等
+
 ```
 //M(x).flatMap(f) === f(x)
 Array.of('mango')
@@ -2582,7 +2538,8 @@ duplicate('mango');
 
 正如你所注意到的，当使用 `Array.of` 创建数组时，`M(x)` 转换为 `Array.of(x)`。
 
-**右恒等**
+#### 右恒等
+
 ```
 //monad.flatMap(M) === monad
 Array.of('lemon')
@@ -2590,7 +2547,8 @@ Array.of('lemon')
 //['lemon']
 ```
 
-**结合律**
+#### 结合律
+
 ```
 //monad.flatMap(f).flatMap(g)
 //  === monad.flatMap(x => f(x).flatMap(g)))
@@ -2604,11 +2562,9 @@ Array.of('orange kiwi')
   .flatMap(s => split(s).flatMap(duplicate))
 ```
 
-
-
-
-
+```javascript
 //[ 'orange', 'orange', 'kiwi', 'kiwi' ]
+```
 
 回顾：函子是一个具有 `map` 操作的对象。单子是一个具有 `map` 和 `flatMap` 操作的对象。函子将一个函数应用于包装的值。单子将一个返回包装值的函数应用于包装的值。本质上，单子只是值的包装器。我们可以通过一个存储单个值并支持映射和扁平映射的对象来创建它。在接下来的章节中，我们将探讨实用的单子，如不可变列表、Promise 和 Observable。
 
@@ -2620,11 +2576,11 @@ Array.of('orange kiwi')
 npm install immutable --save
 ```
 
-### List
+### `List`
 
-List 是索引集合，类似于数组。实际上，它们可以从数组创建。
+`List` 是索引集合，类似于数组。实际上，它们可以从数组创建。
 
-```
+```javascript
 import { List } from 'immutable';
 
 const emptyList = List();
@@ -2647,7 +2603,7 @@ const list = List([
 
 [`set(index, value)`](https://immutable-js.github.io/immutable-js/docs/#/List/set) 允许我们编辑集合中指定索引处的元素。它返回一个包含修改的新 `List`。指定索引位置的元素将被替换。
 
-```
+```javascript
 const newList = list.set(0, { name: 'Riomaggiore' });
 
 // List [
@@ -2662,7 +2618,7 @@ console.log(list === newList);
 
 [`push(…values)`](https://immutable-js.github.io/immutable-js/docs/#/List/push) 返回一个新 `List`，其中追加了提供的值。它可以用于向列表添加新值。示例如下。
 
-```
+```javascript
 const newList = list.push({name: 'Funchal'});
 
 // List [
@@ -2673,7 +2629,7 @@ const newList = list.push({name: 'Funchal'});
 
 添加也可以使用 [`concat(…values)`](https://immutable-js.github.io/immutable-js/docs/#/List/concat) 完成。它将一个新集合连接到现有集合。要添加单个值，我们使用包含一个值的数组调用它。
 
-```
+```javascript
 const newList = list.concat([{name: 'Funchal'}]);
 
 // List [
@@ -2688,7 +2644,7 @@ const newList = list.concat([{name: 'Funchal'}]);
 
 [`delete(index)`](https://immutable-js.github.io/immutable-js/docs/#/List/delete) 删除指定索引处的元素，并返回包含修改的新 `List`。
 
-```
+```javascript
 const newList = list.delete(0);
 
 // List [{ name: 'Malaga' }]
@@ -2704,7 +2660,7 @@ const newList = list.delete(0);
 
 [`clear()`](https://immutable-js.github.io/immutable-js/docs/#/List/clear) 返回一个没有值的新 `List`。
 
-```
+```javascript
 const newList = list.clear();
 
 console.log(newList)
@@ -2713,11 +2669,11 @@ console.log(newList)
 
 ### 数据转换
 
-我们可以像处理数组一样处理列表。List 具有 `filter`、`map`、`flatMap`、`reduce` 和 `sort` 方法，其工作方式与数组相同。这次 `sort` 方法是一个纯方法，返回一个新集合。
+我们可以像处理数组一样处理列表。`List` 具有 `filter`、`map`、`flatMap`、`reduce` 和 `sort` 方法，其工作方式与数组相同。这次 `sort` 方法是一个纯方法，返回一个新集合。
 
 以下是一个使用 `filter` 方法从目标对象列表中选择特定国家目的地的示例。
 
-```
+```javascript
 import { List } from 'immutable';
 
 const list = List([
@@ -2742,11 +2698,11 @@ list
 
 注意 `inCountry` 是一个柯里化函数。
 
-List 是单子，因为它们同时支持映射和扁平映射。
+`List` 是单子，因为它们同时支持映射和扁平映射。
 
 #### 查找元素
 
-List 具有用于检索数据的方法。
+`List` 具有用于检索数据的方法。
 
 [`get(index)`](https://immutable-js.github.io/immutable-js/docs/#/List/get) 返回与提供的索引关联的元素。
 
@@ -2754,7 +2710,9 @@ List 具有用于检索数据的方法。
 
 [`find()`](https://immutable-js.github.io/immutable-js/docs/#/List/find) 返回谓词函数返回 `true` 的第一个元素。[`findLast()`](https://immutable-js.github.io/immutable-js/docs/#/List/findLast) 返回谓词函数返回 `true` 的最后一个元素。以下是在之前列表上使用这两个方法的示例。
 
-```
+
+
+```js
 import { List } from 'immutable';
 
 const list = List([
@@ -2772,11 +2730,11 @@ const otherDestionation = list.findLast(inCountry('Portugal'));
 
 ### Map
 
-Map 是键值对的集合。不可变 Map 接受任何类型的键。
+`Map` 是键值对的集合。不可变 `Map` 接受任何类型的键。
 
-以下是一个按 id 创建国家对象 Map 的示例。
+以下是一个按 id 创建国家对象 `Map` 的示例。
 
-```
+```js
 import { Map } from 'immutable';
 
 const countryMap = Map({
@@ -2788,43 +2746,41 @@ const countryMap = Map({
 
 [`get(key)`](https://immutable-js.github.io/immutable-js/docs/#/Map/get) 返回与给定键关联的值。
 
-```
+```js
 console.log(countryMap.get("3"));
 //{ name: 'UK' }
 ```
 
 [`set(key, value)`](https://immutable-js.github.io/immutable-js/docs/#/Map/set) 返回一个包含该键值对的新 `Map`。如果键已存在，则替换其值。如果键不存在，则添加它。`set` 可用于添加和编辑键值对。
 
-```
+```js
 const newMap = countryMap.set("2", { name: 'Spain'});
 console.log(newMap.get("2"));
 //{ name: 'Spain' }
 ```
 
-[`has(key)`](https://immutable-js.github.io/immutable-js/docs/#/Map/has) 如果给定键存在于 Map 中，则返回 `true`，否则返回 `false`。
+[`has(key)`](https://immutable-js.github.io/immutable-js/docs/#/Map/has) 如果给定键存在于 `Map` 中，则返回 `true`，否则返回 `false`。
 
 [`delete(key)`](https://immutable-js.github.io/immutable-js/docs/#/Map/delete) 返回一个移除了指定键的新 `Map`。
 
-```
+```js
 const newMap = countryMap.delete("3");
 console.log(newMap.has("3"));
 //false
 
 console.log(newMap.get("3"));
+//undefined
 ```
 
-
-
-
-//undefined[clear()](https://immutable-js.github.io/immutable-js/docs/#/Map/clear) 返回一个不包含任何键值对的新 `Map`。
+[`clear()`](https://immutable-js.github.io/immutable-js/docs/#/Map/clear) 返回一个不包含任何键值对的新 `Map`。
 
 ### 数据转换
 
-`Map` 支持 `filter` 和 `map` 操作。[map(mapper)](https://immutable-js.github.io/immutable-js/docs/#/Map/map) 返回一个新的 `Map`，其中所有值都应用了 mapper 函数。[filter(predicate)](https://immutable-js.github.io/immutable-js/docs/#/Map/filter) 返回一个新的 `Map`，仅包含谓词函数返回 `true` 的键值对。谓词函数应用于值。
+`Map` 支持 `filter` 和 `map` 操作。[`map(mapper)`](https://immutable-js.github.io/immutable-js/docs/#/Map/map) 返回一个新的 `Map`，其中所有值都应用了 mapper 函数。[`filter(predicate)`](https://immutable-js.github.io/immutable-js/docs/#/Map/filter) 返回一个新的 `Map`，仅包含谓词函数返回 `true` 的键值对。谓词函数应用于值。
 
 ### 回顾
 
-`List` 和 `Map` 都为处理不可变集合提供了更友好的公共接口。`List` 具有 `filter`、`map`、`reduce` 和 `sort` 方法，其工作方式与数组中的类似。这些不可变数据结构经过了高度优化。`List` 在列表的末尾和开头都能高效地进行添加和删除操作，复杂度为 O(1)。
+`List` 和 `Map` 都为处理不可变集合提供了更友好的公共接口。`List` 具有 `filter`、`map`、`reduce` 和 `sort` 方法，其工作方式与数组中的类似。这些不可变数据结构经过了高度优化。`List` 在列表的末尾和开头都能高效地进行添加和删除操作，复杂度为 `O(1)`。
 
 ## 第 12 章：惰性转换
 
@@ -2836,23 +2792,16 @@ console.log(newMap.get("3"));
 
 以下是使用 `reduce` 实现映射转换的代码。
 
-```
+```js
 function map(transform) {
-
-return function reducer(arr, value) {
-
-const newValue = transform(value);
-
-return [...arr, newValue];
-
+  return function reducer(arr, value) {
+    const newValue = transform(value);
+    return [...arr, newValue];
+  }
 }
 
-}
-
-function double(n){
-
-return n * 2;
-
+function double(n) {
+  return n * 2;
 }
 
 const numbers = [1, 2, 3];
@@ -2864,29 +2813,19 @@ const newNumbers = numbers.reduce(map(double), []);
 
 下面是使用 `reduce` 实现的过滤转换。
 
-```
+```js
 function filter(test) {
-
-return function reducer(arr, value) {
-
-if (test(value)) {
-
-return [...arr, value]
-
-} else {
-
-return arr;
-
+  return function reducer(arr, value) {
+    if (test(value)) {
+      return [...arr, value]
+    } else {
+      return arr;
+    }
+  }
 }
 
-}
-
-}
-
-function isEven(n){
-
-return n % 2 === 0;
-
+function isEven(n) {
+  return n % 2 === 0;
 }
 
 const numbers = [1, 2, 3, 4];
@@ -2898,29 +2837,19 @@ const newNumbers = numbers.reduce(filter(isEven), []);
 
 注意，`reduce` 不会停止，它会处理数组中的所有值。而 `find` 方法在找到值时会停止。使用 `reduce` 方法实现的 `find` 等效实现性能更差，因为它会遍历所有元素。
 
-```
+```js
 function find(test) {
-
-return function reducer(foundValue, value) {
-
-if (test(value) && !foundValue) {
-
-return value
-
-} else {
-
-return foundValue;
-
+  return function reducer(foundValue, value) {
+    if (test(value) && !foundValue) {
+      return value
+    } else {
+      return foundValue;
+    }
+  }
 }
 
-}
-
-}
-
-function isEven(n){
-
-return n % 2 === 0;
-
+function isEven(n) {
+  return n % 2 === 0;
 }
 
 const numbers = [1, 2, 3, 4];
@@ -2934,112 +2863,82 @@ const element = numbers.reduce(find(isEven), undefined);
 
 考虑下一个示例，它在每一步都创建一个数组。
 
-```
-function isEven(n){
-
-return n % 2 === 0;
-
+```js
+function isEven(n) {
+  return n % 2 === 0;
 }
 
-function double(n){
-
-return n * 2;
-
+function double(n) {
+  return n * 2;
 }
 
 const numbers = [1, 2, 3, 4];
 
 const newNumbers =
-
-numbers
-
-.filter(isEven) //[2, 4]
-
-.map(double); //[4, 8]
+  numbers
+    .filter(isEven) //[2, 4]
+    .map(double); //[4, 8]
 ```
 
 第一个 `filter` 创建了一个中间数组 `[2, 4]`，然后被 `map` 方法使用。
 
-让我们看看通过构建一个执行所有转换的 reducer 而不是构建中间数组来达到相同结果意味着什么。
+让我们看看通过构建一个执行所有转换的 reducer，而不是构建中间数组来达到相同结果意味着什么。
 
 这意味着 `filter` 创建一个应用过滤的新 reducer，而 `map` 接收这个 reducer 并创建一个应用映射转换的新 reducer。
 
 以下是一个 `filter` 函数的实现，它接收一个 reducer 并创建一个应用谓词测试的新 reducer。
 
-```
+```js
 function filter(test) {
-
-return function(reducer){
-
-return function filterReducer(arr, value){
-
-if(test(value)){
-
-return reducer(arr, value);
-
-} else {
-
-return arr;
-
-}
-
-}
-
-}
-
+  return function(reducer) {
+    return function filterReducer(arr, value) {
+      if (test(value)) {
+        return reducer(arr, value);
+      } else {
+        return arr;
+      }
+    }
+  }
 }
 ```
 
 如果使用箭头函数和条件运算符来定义这个柯里化函数，看起来可能会更好。
 
-```
+```js
 const filter = test => reducer => {
-
-return function filterReducer(arr, value){
-
-return test(value)
-
-? reducer(arr, value)
-
-: arr
-
-}
-
+  return function filterReducer(arr, value) {
+    return test(value)
+      ? reducer(arr, value)
+      : arr
+  }
 }
 ```
 
 以下是 `map` 函数，它接收一个 reducer 并返回一个新的 reducer，该 reducer 对所有值应用映射转换。
 
-```
+```js
 const map = transform => reducer => {
-
-return function mapReducer(arr, value){
-
-const newValue = transform(value);
-
-return reducer(arr, newValue);
-
-}
-
+  return function mapReducer(arr, value) {
+    const newValue = transform(value);
+    return reducer(arr, newValue);
+  }
 }
 ```
 
 所有这些函数都作用于 reducer，因此我们需要一个初始的 reducer 来工作。这将是一个仅复制现有数组的函数。
 
-```
+```js
 const toArrayReducer = (arr, value) => {
-
-return [...arr, value]
-
+  return [...arr, value]
 };
 ```
 
 让我们使用这些函数来重构之前的转换。
 
-```
-function isEven(n){}
+```js
+function isEven(n) {}
 
-function double(n){}
+function double(n) {}
 
 const numbers = [1, 2, 3, 4];
 
@@ -3048,16 +2947,12 @@ const filterTransducer = filter(isEven);
 const mapTransducer = map(double);
 
 const newNumbers = numbers
-
-.reduce(
-
-filterTransducer(
-
-mapTransducer(toArrayReducer)
-
-),
-
-[]);
+  .reduce(
+    filterTransducer(
+      mapTransducer(toArrayReducer)
+    ),
+    []
+  );
 
 //[4, 8]
 ```
@@ -3066,21 +2961,18 @@ mapTransducer(toArrayReducer)
 
 如果使用 `compose` 工具，转换看起来可能会更好。下面是一个示例，其中 `filter` 和 `map` 变换器应用于 `toArrayReducer` reducer。我们最终得到一个执行所有必要转换的 reducer。
 
-```
+```js
 import { compose } from 'lodash/fp';
 
 const newReducer = compose(
-
-filter(isEven),
-
-map(double)
-
+  filter(isEven),
+  map(double)
 )(toArrayReducer);
 ```
 
 然后我们可以将这个 reducer 应用于原始数组。
 
-```
+```js
 const newNumbers = numbers.reduce(newReducer, []);
 ```
 
@@ -3094,31 +2986,25 @@ const newNumbers = numbers.reduce(newReducer, []);
 
 下面是一个示例，其中数组被转换为序列，然后进行转换，而不创建其他中间数组。
 
-```
+```js
 import { Seq } from 'immutable';
 
-function isEven(n){
-
-return n % 2 === 0;
-
+function isEven(n) {
+  return n % 2 === 0;
 }
 
-function double(n){
-
-return n * 2;
-
+function double(n) {
+  return n * 2;
 }
 
-const sequence = Seq([ 1, 2, 3, 4])
-
-.filter(isEven)
-
-.map(double);
+const sequence = Seq([1, 2, 3, 4])
+  .filter(isEven)
+  .map(double);
 ```
 
-然后我们可以使用 [toArray()](https://immutable-js.github.io/immutable-js/docs/#/Seq/toArray) 方法转换回数组数据结构。
+然后我们可以使用 [`toArray()`](https://immutable-js.github.io/immutable-js/docs/#/Seq/toArray) 方法转换回数组数据结构。
 
-```
+```js
 const newArray = sequence.toArray();
 
 //[4, 8]
@@ -3128,97 +3014,76 @@ const newArray = sequence.toArray();
 
 ### 范围（Range）
 
-[Range](https://immutable-js.github.io/immutable-js/docs/#/Range) 返回从 start 到 end 的数字序列。当不传入参数时，它从 `0` 开始。当不提供 end 参数时，它会创建一个无限序列。它还接受第三个参数 `step`，用于定义增量。
+[`Range`](https://immutable-js.github.io/immutable-js/docs/#/Range) 返回从 start 到 end 的数字序列。当不传入参数时，它从 `0` 开始。当不提供 end 参数时，它会创建一个无限序列。它还接受第三个参数 `step`，用于定义增量。
 
 `Range` 是一个惰性序列，按顺序生成整数。下面是一个 `Range` 生成数字 `1`、`2`、`3` 的示例。
 
-```
+```js
 import { Range } from 'immutable';
 
-function logIdentity(n){
-
-console.log(n);
-
-return n;
-
+function logIdentity(n) {
+  console.log(n);
+  return n;
 }
 
 Range(1, 4)
-
-.forEach(logIdentity);
+  .forEach(logIdentity);
 
 //1
-
 //2
-
 //3
 ```
 
 现在，看一个生成质数的示例。检查我们如何使用 `Range` 序列重构 `for` 循环。
 
-```
-for(let i=0; i<10; i++){
-
-if(isPrime(i)){
-
-console.log(i)
-
-}
-
+```js
+for (let i = 0; i < 10; i++) {
+  if (isPrime(i)) {
+    console.log(i)
+  }
 }
 
 //2
-
 //3
-
 //5
-
 //7
 
-function isPrime(number){
+function isPrime(number) {
+  if (number <= 1) {
+    return false;
+  }
 
-if (number <= 1){
+  for (let i = 2; i <= number / 2; i++) {
+    if (number % i === 0) {
+      return false;
+    }
+  }
 
-return false;
-
-}
-
-for (let i=2; i<=number/2; i++){
-
-if (number % i === 0 ){
-
-return false;
-
-}
-
-}
-
-return true;
-
+  return true;
 }
 ```
 
 我们可以先替换打印数字到控制台的第一个循环。
 
-```
+```js
 import { Range } from "immutable";
 
 Range(0, 10)
 ```
 
-
-
-
-
-`.filter(isPrime)`
-
-`.forEach(log);`
-
-```
-function isPrime(number){ }
+```js
+.filter(isPrime)
 ```
 
+```js
+.forEach(log);
 ```
+
+```js
+function isPrime(number) {}
+```
+
+```js
 function log(number) {
   console.log(number);
 }
@@ -3228,7 +3093,7 @@ function log(number) {
 
 下面我们来看如何利用 `Range` 序列重构检测质数的循环。
 
-```
+```js
 import { Range } from 'immutable';
 
 Range(0, 10)
@@ -3259,7 +3124,7 @@ function isDivisorOf(number) {
   };
 }
 
-function log(number) { }
+function log(number) {}
 ```
 
 `isDivisorOf` 是一个柯里化函数，它接收一个数字，并返回一个谓词函数，该谓词函数接收一个可能的除数并返回一个布尔值。
@@ -3282,7 +3147,9 @@ function log(number) { }
 
 我们将从一个简单的生成器函数开始，它每次调用时返回下一个整数。它从 0 开始。
 
-```
+
+
+```javascript
 function range() {
   let count = 0;
   return function() {
@@ -3304,7 +3171,7 @@ console.log(nextNumber()); //2
 
 生成器可以是有限的。请看下一个示例，其中 `range` 创建了一个生成器，它从特定区间返回连续的数字。在序列末尾，它返回 `undefined`。
 
-```
+```javascript
 function range(from, to) {
   let count = from;
   return function() {
@@ -3329,7 +3196,7 @@ console.log(nextNumber()); //undefined
 
 在使用生成器时，我们可能希望创建一个包含序列中所有值的数组。针对这种情况，我们需要一个像 `toArray` 这样的工具函数，它接收一个生成器，并将序列中的所有值作为数组返回。该序列应该是有限的。
 
-```
+```javascript
 function toArray(generate) {
   let arr = [];
   let value = generate();
@@ -3343,7 +3210,7 @@ function toArray(generate) {
 
 让我们将它与之前的生成器一起使用。
 
-```
+```javascript
 const numbers = toArray(range(1, 5));
 console.log(numbers);
 //[1, 2, 3, 4]
@@ -3353,7 +3220,7 @@ console.log(numbers);
 
 我们可能还需要对序列中的每个元素运行一个回调函数。`forEach` 工具函数正是为此而设计的。它接收一个生成器和一个回调函数，并运行该回调函数，直到生成器返回 `undefined`。
 
-```
+```javascript
 function forEach(callback) {
   return function(generate) {
     let value = generate();
@@ -3369,7 +3236,7 @@ function forEach(callback) {
 
 在下一个示例中，`log` 函数会被生成器返回的所有数字调用。
 
-```
+```javascript
 function log(x) {
   console.log(x);
 }
@@ -3385,7 +3252,7 @@ forEach(log)(nextNumber);
 
 另一种常见场景是只取序列中的前 `n` 个元素。在这种情况下，我们需要一个新的工具函数，比如 `take`，它接收一个生成器并创建一个新的生成器，只返回序列中的前 `n` 个元素。
 
-```
+```javascript
 function take(n) {
   return function(generate) {
     let count = 0;
@@ -3403,7 +3270,7 @@ function take(n) {
 
 下面展示了如何在管道中使用 `take` 和 `forEach`，从无限数字序列中获取前三个值并将其记录到控制台。
 
-```
+```javascript
 import { pipe } from 'lodash/fp';
 
 const nextNumber = range();
@@ -3418,9 +3285,9 @@ pipe(
 
 ### 自定义生成器
 
-我们可以创建任何自定义生成器，并将其与之前的工具函数一起使用。让我们创建 [斐波那契](https://en.wikipedia.org/wiki/Fibonacci_number) 自定义生成器：
+我们可以创建任何自定义生成器，并将其与之前的工具函数一起使用。让我们创建[斐波那契](https://en.wikipedia.org/wiki/Fibonacci_number)自定义生成器：
 
-```
+```javascript
 function fibonacci() {
   let a = 0;
   let b = 1;
@@ -3435,7 +3302,7 @@ function fibonacci() {
 
 我们可以将斐波那契生成器与已创建的工具函数一起使用，以显示序列中的前 5 个数字。
 
-```
+```javascript
 import { pipe } from 'lodash/fp';
 
 const generateFibonacci = fibonacci();
@@ -3462,9 +3329,9 @@ Promise 是一个包含未来结果的对象。
 
 Promise 有三种状态：待定（pending）、已完成（fulfilled）和已拒绝（rejected）。
 
-*   待定是 Promise 的初始状态。此时结果不可用。
-*   已完成表示操作成功。此时结果可用。
-*   已拒绝表示操作失败。结果不可用，但我们可以访问错误对象，其中包含操作失败原因的详细信息。
+- 待定是 Promise 的初始状态。此时结果不可用。
+- 已完成表示操作成功。此时结果可用。
+- 已拒绝表示操作失败。结果不可用，但我们可以访问错误对象，其中包含操作失败原因的详细信息。
 
 最初，Promise 以待定状态开始。然后它可以进入已完成或已拒绝状态。一旦 Promise 被完成或拒绝，它将保持该状态。
 
@@ -3476,7 +3343,7 @@ Promise 有三种状态：待定（pending）、已完成（fulfilled）和已�
 
 让我们从创建一个简单的 Promise 开始。
 
-```
+```javascript
 function delay(interval) {
   return new Promise(function(resolve) {
     return setTimeout(resolve, interval);
@@ -3509,7 +3376,7 @@ delay(1000)
 
 我们可以使用 `Promise.resolve` 创建一个简单的可映射对象，包装一个值。然后我们可以转换并检查包装后的值。
 
-```
+```javascript
 function toUpperCase(text) {
   return text.toUpperCase();
 }
@@ -3523,10 +3390,6 @@ Promise.resolve('sTudY')
   .then(logIdentity)  //"sTudY"
   .then(toUpperCase)
 ```
-
-
-
-
 
 ### 扁平映射
 
@@ -3664,7 +3527,7 @@ const result = fetch('/todos')
 
 首先，安装 Parcel。
 
-```
+```bash
 npm install parcel-bundler --save-dev
 ```
 
@@ -3719,6 +3582,8 @@ fetch('https://api.github.com/gists/public')
 
 [Promise.race](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/race) 接收一个 Promise 数组，并返回第一个兑现或拒绝的 Promise。
 
+
+
 ```javascript
 const dictionariesPromise = fetch('/dictionaries').then(toJson);
 const todosPromise = fetch('/todos').then(toJson);
@@ -3731,7 +3596,7 @@ Promise.race([
 
 ### Promise.all
 
-[Promise.all](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/all) 接收一个 Promise 数组，并返回一个新的 Promise，该 Promise 在所有输入的 Promise 都兑现时兑现。如果其中一个输入的 Promise 被拒绝，它会立即拒绝。`Promise.all` 可用于确保所有输入的 Promise 都已成功完成。
+[`Promise.all`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/all) 接收一个 Promise 数组，并返回一个新的 Promise，该 Promise 在所有输入的 Promise 都兑现时兑现。如果其中一个输入的 Promise 被拒绝，它会立即拒绝。`Promise.all` 可用于确保所有输入的 Promise 都已成功完成。
 
 ```javascript
 Promise.all([
@@ -3742,7 +3607,7 @@ Promise.all([
 
 ### Promise.allSettled
 
-[Promise.allSettled](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/allSettled) 接收一个 Promise 数组，并返回一个 Promise，该 Promise 在所有输入的 Promise 要么兑现要么拒绝后兑现。它会兑现为一个描述每个 Promise 结果的对象数组。
+[`Promise.allSettled`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/allSettled) 接收一个 Promise 数组，并返回一个 Promise，该 Promise 在所有输入的 Promise 要么兑现要么拒绝后兑现。它会兑现为一个描述每个 Promise 结果的对象数组。
 
 ```javascript
 const dictionariesPromise = fetch('/dictionaries').then(toJson);
@@ -3825,10 +3690,6 @@ Promise.resolve(1)
 
 在这种情况下，Promise 不能作为函子工作，因为它不遵守组合律。在实际应用中，我们不应该将 `promise.then(f).then(g)` 重构为 `promise.then(x => g(f(x)))`。
 
-
-
-
-
 `.then(x => g(f(x))`
 
 ### Monad 定律
@@ -3837,7 +3698,7 @@ Promise.resolve(1)
 
 左单位元成立。
 
-```
+```javascript
 function f(x){
   return Promise.resolve(x + 1);
 }
@@ -3852,7 +3713,7 @@ f(1)
 
 右单位元也成立。
 
-```
+```javascript
 function unit(value){
   return Promise.resolve(value)
 }
@@ -3864,7 +3725,7 @@ Promise.resolve(1)
 
 `promise.flatMap(f).flatMap(g)` 与 `promise.flatMap(x => f(x).flatMap(g))` 结果相同。
 
-```
+```javascript
 function g(x){
   return Promise.resolve(x * 2);
 }
@@ -3891,7 +3752,7 @@ Promise 是包装未来结果的对象。当转换函数返回一个值时，`th
 
 可观察对象是一种可以随时间到达的数据流。可观察对象是当值可用时向监听器发出这些值的对象。可观察对象未来[可能成为 JavaScript 语言的一部分](https://github.com/tc39/proposal-observable)，但目前我们将使用 [RxJS](https://www.npmjs.com/package/rxjs) 库中的可观察对象实现。
 
-```
+```bash
 npm install rxjs --save
 ```
 
@@ -3905,7 +3766,7 @@ npm install rxjs --save
 
 以下示例创建了一个可观察对象，它向订阅者发出值 `1`、`2`、`3`，然后完成。
 
-```
+```javascript
 import { Observable } from 'rxjs';
 
 const observable = Observable.create(observer => {
@@ -3918,15 +3779,15 @@ const observable = Observable.create(observer => {
 
 `create` 操作符接受一个回调函数，该函数定义了如何发出值。有三个方法描述了可观察对象可以做什么。
 
-* `next()` 向监听器发送一个值。
-* `error()` 向监听器发送一个错误。
-* `complete()` 标记值序列的结束。调用 `complete` 后，进一步调用 `next()` 将无效。
+- `next()` 向监听器发送一个值。
+- `error()` 向监听器发送一个错误。
+- `complete()` 标记值序列的结束。调用 `complete` 后，进一步调用 `next()` 将无效。
 
 `next` 定义了实际传递给订阅者的数据。数据流可以通过 `complete` 成功完成，或者通过 `error` 标记失败。
 
 我们可以使用 `subscribe` 方法监听可观察对象源。
 
-```
+```javascript
 observable
   .subscribe(console.log);
 //1
@@ -3936,7 +3797,7 @@ observable
 
 如果我们稍后再次订阅该数据源，我们将再次收到所有发出的值。
 
-```
+```javascript
 setTimeout(()=>{
   observable.subscribe(console.log);
   //1
@@ -3949,7 +3810,7 @@ setTimeout(()=>{
 
 `of` 从一组值创建可观察对象。以下是一个按顺序发出 `1`、`2`、`3` 的可观察对象示例。
 
-```
+```javascript
 import { of } from 'rxjs';
 
 const source = of(1, 2, 3);
@@ -3964,7 +3825,7 @@ source
 
 `from` 可以从类数组对象、promise 或类可观察对象创建可观察对象。以下是从数组构建可观察对象的示例。
 
-```
+```javascript
 import { from } from 'rxjs';
 
 const observable = from([1, 2, 3]);
@@ -3978,7 +3839,7 @@ observable.subscribe(console.log);
 
 `interval` 函数接受毫秒数 `n` 作为输入，并返回一个可观察对象，该对象每隔 `n` 毫秒按顺序发出一个新的整数。
 
-```
+```javascript
 import { interval } from 'rxjs';
 
 const observable = interval(1000);
@@ -3995,7 +3856,7 @@ observable.subscribe(console.log);
 
 `ajax` 创建一个可观察对象，从网络请求中获取结果。它接受一个包含 URL、方法、数据等的请求对象，或者仅接受一个 URL 字符串作为输入。以下是一个示例。
 
-```
+```javascript
 import { ajax } from 'rxjs/ajax';
 
 ajax('https://api.github.com/gists/public')
@@ -4004,7 +3865,7 @@ ajax('https://api.github.com/gists/public')
 
 使用 `ajax` 函数创建的可观察对象流会发出从请求返回的响应对象。下面使用 `ajax.getJSON` 函数执行相同的请求，该函数创建一个仅发出从请求返回的响应对象中 JSON 键的可观察对象。
 
-```
+```javascript
 ajax.getJSON('https://api.github.com/gists/public')
   .subscribe(console.log);
 ```
@@ -4015,7 +3876,7 @@ ajax.getJSON('https://api.github.com/gists/public')
 
 `map` 使用映射函数转换可观察对象源中的值。
 
-```
+```javascript
 import { of } from 'rxjs';
 import { map } from 'rxjs/operators';
 
@@ -4035,7 +3896,7 @@ dataSource
 
 `filter` 使用谓词函数过滤流中的值。
 
-```
+```javascript
 import { of } from 'rxjs';
 import { map, filter } from 'rxjs/operators';
 
@@ -4054,7 +3915,7 @@ dataSource
 
 `take` 操作符允许只选择可观察对象源中前 `n` 个发出的值。以下是从源中选择前三个值的示例。
 
-```
+```javascript
 import { of } from 'rxjs';
 import { take } from 'rxjs/operators';
 
@@ -4071,7 +3932,7 @@ source
 
 `pipe` 方法在可观察对象源上创建了一个管道。它允许我们将数据通过一个操作符管道进行转换。
 
-```
+```javascript
 import { of } from 'rxjs';
 import { map, filter } from 'rxjs/operators';
 
@@ -4096,7 +3957,7 @@ dataSource
 
 观察者是具有三个回调函数的对象，每个回调对应可观察对象传递的一种通知类型。观察者是可观察对象传递的值的消费者。以下是一个处理所有类型通知的简单观察者对象。
 
-```
+```javascript
 const observer = {
   next(value){
     console.log(`Next: ${value}`)
@@ -4112,7 +3973,7 @@ const observer = {
 
 观察者被用作可观察对象 `subscribe` 方法的参数。
 
-```
+```javascript
 const observable = Observable.create(observer => {
   observer.next(1);
   observer.next(2);
@@ -4127,7 +3988,7 @@ observable.subscribe(observer);
 
 以下是一个订阅可观察对象的示例，该对象发出两个值然后失败。
 
-```
+```javascript
 const observable = Observable.create(observer => {
   observer.next(1);
   observer.next(2);
@@ -4138,10 +3999,6 @@ observable.subscribe(observer);
 //Next: 1
 //Next: 2
 ```
-
-
-
-
 
 //错误：失败
 
@@ -4180,6 +4037,8 @@ setTimeout(() => {
 //1 -> 2 秒后
 //2 -> 3 秒后
 ```
+
+
 
 订阅对象只有一个 `unsubscribe` 方法。当所有订阅者都取消订阅某个可观察对象时，该可观察对象就会停止执行。可观察对象在至少有一个订阅者时开始执行。
 
@@ -4250,7 +4109,8 @@ observable.pipe(
 
 考虑一个映射函数，它接收一个值并返回一个可观察对象，该对象发出序列中的前三个数字。数字序列使用输入值作为常数 `c`，并应用 `n*c + 1` 公式定义。
 
-当 `c = 2` 时，序列公式为 `2n + 1`，前三个值为 `3`、`5` 和 `7`。  
+当 `c = 2` 时，序列公式为 `2n + 1`，前三个值为 `3`、`5` 和 `7`。
+
 当 `c = 4` 时，序列公式为 `4n + 1`，前三个值为 `5`、`9` 和 `13`。
 
 下面是创建可观察对象的 `toSequence` 映射函数。
@@ -4492,40 +4352,45 @@ of(1)
 of(1)
 ```
 
-
-
-
-
 ## 第 16 章：Elm 架构
 
-`.pipe(
+```javascript
+.pipe(
   mergeMap(x => f(x).pipe(mergeMap(g)))
-)`
+)
+//Observable 4
+```
 
-`//Observable 4Observables are monads.`  
-`RecapObservables` 是数据流。这些 observable 的消费者是订阅这些流的观察者。像 `of`、`from`、`interval` 或 `ajax` 这样的创建函数会生成新的 observable。  
-Observable 为执行异步任务提供了解决方案，同时还拥有一组强大的操作符来处理结果。像 `filter`、`map` 或 `take` 这样的可管道操作符接收一个 observable 作为输入，并返回另一个发出转换后值的 observable。  
+Observables are monads.
+
+### Recap
+
+`Observables` 是数据流。这些 observable 的消费者是订阅这些流的观察者。像 `of`、`from`、`interval` 或 `ajax` 这样的创建函数会生成新的 observable。
+
+Observable 为执行异步任务提供了解决方案，同时还拥有一组强大的操作符来处理结果。像 `filter`、`map` 或 `take` 这样的可管道操作符接收一个 observable 作为输入，并返回另一个发出转换后值的 observable。
+
 发出其他 observable 的 observable 被称为高阶 observable。像 `concatAll`、`mergeAll`、`mergeMap` 这样的扁平化操作允许我们将高阶 observable 转换为普通 observable。
 
 接下来，我们将学习如何通过构建一个使用 [Elm](https://guide.elm-lang.org/) 纯函数式语言的简单应用，来以函数式风格创建应用。然后，我们将使用 [React](https://reactjs.org/) 和 [Redux](https://redux.js.org/) 实现相同的功能。关键在于理解支持这种编程风格的架构。
 
 首先创建 Elm 项目。导航到一个新文件夹，并通过运行以下命令创建 Elm 项目：
 
-```
+```bash
 elm init
 ```
 
-该命令会创建一个 `elm.json` 文件和一个用于存放所有 Elm 文件的 `src` 文件夹。  
+该命令会创建一个 `elm.json` 文件和一个用于存放所有 Elm 文件的 `src` 文件夹。
+
 `elm reactor` 会启动开发服务器。它在 `http://localhost:8000` 启动一个服务器。从那里我们可以导航到任何 Elm 文件。
 
 ### Elm 架构
 
 Elm 架构定义了 Elm 应用内部的数据流。它将应用分解为以下核心部分：
 
-* **模型（Model）**——定义应用的所有状态。
-* **视图（View）**——是一个纯函数，将状态数据转换为 HTML。HTML 会发送回消息。
-* **消息（Messages）**——表达用户交互。
-* **更新（Update）**——是一个纯函数，根据当前消息和实际状态返回新状态。
+- **模型（Model）**——定义应用的所有状态。
+- **视图（View）**——是一个纯函数，将状态数据转换为 HTML。HTML 会发送回消息。
+- **消息（Messages）**——表达用户交互。
+- **更新（Update）**——是一个纯函数，根据当前消息和实际状态返回新状态。
 
 ![](img/Image00012.jpg)
 
@@ -4537,10 +4402,11 @@ Elm 架构定义了 Elm 应用内部的数据流。它将应用分解为以下�
 
 #### 模型
 
-模型存储所有可以改变的应用数据。在我们的例子中，我们只需要存储一个数字来反映当前计数。  
+模型存储所有可以改变的应用数据。在我们的例子中，我们只需要存储一个数字来反映当前计数。
+
 该计数器的初始值为 `0`。
 
-```
+```elm
 type alias Model = {
   number : Int
 }
@@ -4553,17 +4419,19 @@ initialModel = { number = 0 }
 
 消息定义用户交互。用户可以增加或减少计数，因此我们需要两个消息来表达这些操作。
 
-```
+```elm
 type Msg = Increment | Decrement
 ```
 
 #### 视图函数
 
-视图函数接收 `Model` 作为参数，并将其显示在屏幕上。视图函数创建 HTML。  
-HTML 包含一个生成 `Decrement` 消息的减号按钮，一个生成 `Increment` 消息的加号按钮，以及当前计数。计数数字从模型中读取，转换为字符串，然后作为文本渲染在 `div` 元素内。  
+视图函数接收 `Model` 作为参数，并将其显示在屏幕上。视图函数创建 HTML。
+
+HTML 包含一个生成 `Decrement` 消息的减号按钮，一个生成 `Increment` 消息的加号按钮，以及当前计数。计数数字从模型中读取，转换为字符串，然后作为文本渲染在 `div` 元素内。
+
 消息通过处理每个按钮的 `onClick` 事件来生成。
 
-```
+```elm
 view : Model -> Html Msg
 view model =
   div []
@@ -4576,10 +4444,11 @@ view model =
 
 #### 更新函数
 
-更新函数描述了在收到新消息时如何改变模型。  
+更新函数描述了在收到新消息时如何改变模型。
+
 当收到 `Increment` 消息时，它返回一个数字递增的新模型。当收到 `Decrement` 消息时，它返回一个数字递减的新模型。
 
-```
+```elm
 update : Msg -> Model -> Model
 update msg model =
   case msg of
@@ -4595,7 +4464,7 @@ update msg model =
 
 `main` 值描述了屏幕上显示的内容。它需要初始模型、生成 HTML 的视图函数以及改变模型的更新函数。
 
-```
+```elm
 import Browser
 import Html exposing (Html, button, div, text)
 import Html.Events exposing (onClick)
@@ -4619,7 +4488,7 @@ main =
 
 模型定义所有应用数据。我们可以将计数器定义为应用状态对象上的 `number` 属性。
 
-```
+```javascript
 const initialModel = {
   number: 0
 };
@@ -4629,7 +4498,7 @@ const initialModel = {
 
 用于增加和减少计数的两个消息可以表示为创建具有 `type` 属性的普通数据对象的函数。
 
-```
+```javascript
 function Increment(){
   return {
     type : Increment.name
@@ -4647,9 +4516,11 @@ export { Increment, Decrement };
 
 #### 视图函数
 
-视图函数可以使用 [React 函数组件](https://reactjs.org/docs/components-and-props.html) 来实现。这些组件返回一种类似 HTML 的语法，称为 [JSX](https://reactjs.org/docs/introducing-jsx.html)。
 
-```
+
+视图函数可以使用[React 函数组件](https://reactjs.org/docs/components-and-props.html)来实现。这些组件返回一种类似 HTML 的语法，称为[JSX](https://reactjs.org/docs/introducing-jsx.html)。
+
+```jsx
 import React from 'react';
 import { connect } from 'react-redux';
 import { Increment, Decrement } from './store';
@@ -4678,7 +4549,7 @@ export default connect(
 
 更新函数接收当前模型和消息，并返回新模型。
 
-```
+```js
 function reducer(model = initialModel, action){
   switch(action.type){
     case Increment.name:
@@ -4695,9 +4566,9 @@ export { reducer };
 
 #### 连接
 
-我们可以在应用入口文件 `index.js` 中连接所有这些部分。在这里我们指定初始状态、视图和更新函数。
+我们可以在应用入口文件`index.js`中连接所有这些部分。在这里我们指定初始状态、视图和更新函数。
 
-```
+```jsx
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { createStore } from 'redux';
@@ -4719,14 +4590,15 @@ ReactDOM.render(
 
 ### 使用 Elm 生成随机数
 
-接下来，我们将创建另一个显示随机数的页面。这可能看起来比之前的功能更简单，但实际上更难实现，因为生成随机数无法通过纯函数完成。  
+接下来，我们将创建另一个显示随机数的页面。这可能看起来比之前的功能更简单，但实际上更难实现，因为生成随机数无法通过纯函数完成。
+
 纯函数是确定性函数。使用相同的输入调用时，它们总是返回相同的输出。Elm 是一种纯函数式语言。这意味着它只允许我们编写纯函数。那么，如何既能生成随机数又能只编写纯函数呢？让我们一探究竟。
 
 #### 模型
 
 同样，我们需要一个模型来存储可以改变的应用数据。该模型只包含一个数字。
 
-```
+```elm
 type alias Model = {
   number : Int
 }
@@ -4740,17 +4612,17 @@ initModel _ =
 
 #### 消息
 
-用户可以按下生成按钮，因此我们需要一个消息来表达该交互，即 `GenerateNumber`。
+用户可以按下生成按钮，因此我们需要一个消息来表达该交互，即`GenerateNumber`。
 
-```
+```elm
 type Msg = GenerateNumber
 ```
 
 #### 视图
 
-视图函数接收模型并渲染 UI。它在 `div` 元素内显示模型中存储的当前数字。它还显示用于生成新数字的按钮。当按下按钮时，会创建 `GenerateNumber` 消息。
+视图函数接收模型并渲染 UI。它在`div`元素内显示模型中存储的当前数字。它还显示用于生成新数字的按钮。当按下按钮时，会创建`GenerateNumber`消息。
 
-```
+```elm
 view : Model -> Html Msg
 view model =
   div []
@@ -4760,23 +4632,19 @@ view model =
     ]
 ```
 
-
-
-
-
 #### 更新
 
-更新函数接收当前消息并生成新模型。更新函数是纯函数，不能生成随机数。相反，它创建一条命令，告诉 Elm 框架生成随机数，然后将结果放入新消息中。我们将这条新消息命名为 `SetNumber`。此时我们意识到消息可以接受参数，消息可以是函数。
+更新函数接收当前消息并生成新模型。更新函数是纯函数，不能生成随机数。相反，它创建一条命令，告诉 Elm 框架生成随机数，然后将结果放入新消息中。我们将这条新消息命名为`SetNumber`。此时我们意识到消息可以接受参数，消息可以是函数。
 
-```
+```elm
 type Msg = GenerateNumber | SetNumber Int
 ```
 
-为了使用 `Random.generate` 命令，我们需要安装一个额外的包：`elm install elm/random`
+为了使用`Random.generate`命令，我们需要安装一个额外的包：`elm install elm/random`
 
 以下是处理两条消息的更新函数。
 
-```
+```elm
 update : Msg -> Model -> (Model, Cmd Msg)
 
 update msg model =
@@ -4791,15 +4659,15 @@ update msg model =
       )
 ```
 
-当更新函数收到 `GenerateNumber` 消息时，它使用 `Random.generate` 函数创建一条命令。Elm 框架执行该命令，生成随机数，并构建一条包含该随机数的新消息 `SetNumber`。在这种情况下，更新函数不修改模型，它返回相同的模型。
+当更新函数收到`GenerateNumber`消息时，它使用`Random.generate`函数创建一条命令。Elm 框架执行该命令，生成随机数，并构建一条包含该随机数的新消息`SetNumber`。在这种情况下，更新函数不修改模型，它返回相同的模型。
 
-当更新函数收到带有随机数的 `SetNumber` 消息时，它返回一个包含新生成数字的新模型。在这种情况下，更新函数不生成任何命令，它返回 `Cmd.none`。
+当更新函数收到带有随机数的`SetNumber`消息时，它返回一个包含新生成数字的新模型。在这种情况下，更新函数不生成任何命令，它返回`Cmd.none`。
 
 正如所见，为了处理不纯逻辑，更新函数为每条消息返回两样东西：新模型和 Elm 框架需要执行的新命令。
 
 以下是在 JavaScript 中编写返回两个值的函数的方法。我们只需返回一个包含这两个值的数组。然后在赋值语句的左侧使用[解构赋值](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment)语法来解包返回的值。
 
-```
+```js
 function update(model, action){
   switch(action.type){
     case 'GenerateNumber' : {
@@ -4828,7 +4696,7 @@ console.log(command);
 //{name: "Cmd.none"}
 ```
 
-注意，命令是一个描述要执行命令的普通对象。另外，请注意我们在 switch 分支内部使用花括号来为每个子句定义块作用域，并允许在不同分支中声明同名变量。
+注意，命令是一个描述要执行命令的普通对象。另外，请注意我们在`switch`分支内部使用花括号来为每个子句定义块作用域，并允许在不同分支中声明同名变量。
 
 下面是使用命令处理不纯逻辑时的数据流示意图。
 
@@ -4840,9 +4708,9 @@ console.log(command);
 
 #### 模型
 
-我们首先将模型定义为一个对象，其 number 属性设置为 0。
+我们首先将模型定义为一个对象，其`number`属性设置为 0。
 
-```
+```js
 const initialModel = {
   number: 0
 };
@@ -4852,9 +4720,9 @@ const initialModel = {
 
 这就是我们在生成随机数时遇到问题的地方，同时还要使用纯函数。Redux 允许我们定义一个放置此类不纯逻辑的地方，但没有完全避免它的解决方案。
 
-我们将遵循 Redux 模式，将 `GenerateNumber` 定义为一个返回另一个函数的函数。返回的函数称为 thunk，包含不纯逻辑。这个不纯逻辑的结果将作为参数传递给 `SetNumber` 消息。
+我们将遵循 Redux 模式，将`GenerateNumber`定义为一个返回另一个函数的函数。返回的函数称为 thunk，包含不纯逻辑。这个不纯逻辑的结果将作为参数传递给`SetNumber`消息。
 
-```
+```js
 function GenerateNumber(){
   return function(dispatch){
     const number = Math.floor(Math.random() * 100);
@@ -4865,9 +4733,9 @@ function GenerateNumber(){
 
 #### 消息
 
-`GenerateNumber` 命令需要 `SetNumber` 消息来发送新生成的数字。
+`GenerateNumber`命令需要`SetNumber`消息来发送新生成的数字。
 
-```
+```js
 function SetNumber(number){
   return {
     type : SetNumber.name,
@@ -4878,9 +4746,9 @@ function SetNumber(number){
 
 #### 视图
 
-视图函数接收模型并为其创建 HTML。当点击生成按钮时，它会分发 `GenerateNumber` 命令。
+视图函数接收模型并为其创建 HTML。当点击生成按钮时，它会分发`GenerateNumber`命令。
 
-```
+```jsx
 import React from 'react';
 import { connect } from 'react-redux';
 import { GenerateNumber } from './store';
@@ -4904,9 +4772,9 @@ export default connect(
 
 #### 更新
 
-更新函数处理应用程序消息。当收到 `SetNumber` 消息时，它返回一个带有新数字值的模型。
+更新函数处理应用程序消息。当收到`SetNumber`消息时，它返回一个带有新数字值的模型。
 
-```
+```js
 function reducer(model = initialModel, action){
   switch(action.type){
     case SetNumber.name:
@@ -4949,9 +4817,9 @@ Elm 架构定义了数据流，使我们能够以函数式风格编写实用的�
 
 以下是在 Elm 中执行不纯逻辑的流程：
 
-*   纯更新函数创建一条描述不纯逻辑的命令
-*   Elm 框架获取该命令，执行不纯逻辑，并生成一条包含结果的消息
-*   纯更新函数通过创建一个包含先前结果的新更新模型来处理这条消息
+- 纯更新函数创建一条描述不纯逻辑的命令。
+- Elm 框架获取该命令，执行不纯逻辑，并生成一条包含结果的消息。
+- 纯更新函数通过创建一个包含先前结果的新更新模型来处理这条消息。
 
 这种方法需要为任何类型的不纯逻辑创建命令的函数，并使用能够理解这些命令的框架。
 
@@ -4963,27 +4831,24 @@ Elm 架构定义了数据流，使我们能够以函数式风格编写实用的�
 
 模型最初只存储一个空的待办事项列表。
 
-```
+```js
 const initialModel = {
   todos: []
 };
 ```
 
-描述 fetch 请求的消息对象是使用 `LoadTodos` 纯函数创建的。
+描述 fetch 请求的消息对象是使用`LoadTodos`纯函数创建的。
 
-```
+```js
 function LoadTodos(){
   return {
     type: LoadTodos.name,
+    payload: { request: { url: '/todos' } }
+  };
+}
 ```
 
-
-
-
-
-`payload: { request:{ url:'/todos' } } } }`
-
-`List` 视图函数是纯函数。它接收待办事项列表并生成 HTML。它创建了一个刷新按钮，点击时会发送 `LoadTodos` 消息。
+`List`视图函数是纯函数。它接收待办事项列表并生成 HTML。它创建了一个刷新按钮，点击时会发送`LoadTodos`消息。
 
 ```jsx
 import React from 'react';
@@ -5005,7 +4870,7 @@ export default connect(
 )(List);
 ```
 
-`update` 函数是纯函数。它接收当前模型和动作，并返回新模型。当接收到成功消息时，它会返回一个包含新待办事项列表的新模型。
+`update`函数是纯函数。它接收当前模型和动作，并返回新模型。当接收到成功消息时，它会返回一个包含新待办事项列表的新模型。
 
 ```jsx
 function reducer(model = initialModel, action){
@@ -5025,17 +4890,17 @@ function reducer(model = initialModel, action){
 
 请注意此应用中的数据流：
 
-*   点击刷新按钮会创建一条描述 fetch 请求的消息
-*   Axios 中间件拦截该消息，执行 fetch 调用，并创建一条包含结果的新成功消息
-*   update 函数处理成功消息，通过之前的结果创建新模型
+- 点击刷新按钮会创建一条描述 fetch 请求的消息。
+- Axios 中间件拦截该消息，执行 fetch 调用，并创建一条包含结果的新成功消息。
+- update 函数处理成功消息，通过之前的结果创建新模型。
 
 ![](img/Image00014.jpg)
 
 仔细想想，这种获取数据的逻辑包含三个非纯部分：
 
-*   从 Web API 获取数据
-*   更新模型对象
-*   在屏幕上渲染数据
+- 从 Web API 获取数据。
+- 更新模型对象。
+- 在屏幕上渲染数据。
 
 Redux-Axios 中间件使我们能够通过创建 fetch 命令的纯函数来发起 fetch 请求。Redux 提供了使用纯函数更新模型的解决方案。React 提供了使用纯视图函数更新 UI 的解决方案。这很有帮助，但这并不是我们所能编写的唯一非纯逻辑。还有很多其他情况，比如协调多个网络请求、创建定时器事件、生成随机数、获取当前时间、写入控制台或本地存储等等。我们称这些为副作用。
 
@@ -5045,15 +4910,17 @@ Redux-Axios 中间件使我们能够通过创建 fetch 命令的纯函数来发�
 
 事实证明，实现不可变性要容易得多。我们可以在创建对象时直接冻结它们，它们就变得不可变了。另一个简单的解决方案是使用 linter 来确保应用中不发生任何变更。
 
-像 `Immutable.JS` 这样的库提供了不可变数据结构。它们提供了优化改进和更友好的公共接口。
+像`Immutable.JS`这样的库提供了不可变数据结构。它们提供了优化改进和更友好的公共接口。
+
+
 
 在处理列表时，我们不必担心创建中间集合。当列表很小（少于一千条记录）时，差异几乎无法察觉。当处理包含数千个对象的集合时，我们可以开始使用不会创建中间集合的序列。
 
 ### 管道
 
-我们看到了创建数据转换管道的不同方式，从 `pipe` 工具到数组、不可变列表、序列、Promise 或 Observable 上的链式转换。
+我们看到了创建数据转换管道的不同方式，从`pipe`工具到数组、不可变列表、序列、Promise 或 Observable 上的链式转换。
 
-所有这些数据结构都包装了一个或多个值，并允许我们创建纯函数管道来转换包装的数据。通常，这些数据结构都支持一组常见的转换，如 `filter`、`map`、`reduce` 或 `sort`。
+所有这些数据结构都包装了一个或多个值，并允许我们创建纯函数管道来转换包装的数据。通常，这些数据结构都支持一组常见的转换，如`filter`、`map`、`reduce`或`sort`。
 
 在这种情况下，柯里化技术对于向管道中的函数传递额外参数非常有用。
 
@@ -5083,9 +4950,9 @@ Redux-Axios 中间件使我们能够通过创建 fetch 命令的纯函数来发�
 
 ### 下一步是什么？
 
-如果你想将所学付诸实践，并使用函数式组件和函数式编程原则构建现代 React 应用，请考虑阅读 [Functional React, 2nd Edition](https://www.amazon.com/dp/B088FZQ1XN)。
+如果你想将所学付诸实践，并使用函数式组件和函数式编程原则构建现代 React 应用，请考虑阅读[Functional React, 2nd Edition](https://www.amazon.com/dp/B088FZQ1XN)。
 
-继续你的学习之路，阅读 [Functional Architecture with React and Redux](https://www.amazon.com/dp/B0846NRJYR/ref=cm_sw_em_r_mt_dp_U_pztUEbV10W9GY)，并使用 React 和 Redux 构建多个具有递增复杂度的应用。
+继续你的学习之路，阅读[Functional Architecture with React and Redux](https://www.amazon.com/dp/B0846NRJYR/ref=cm_sw_em_r_mt_dp_U_pztUEbV10W9GY)，并使用 React 和 Redux 构建多个具有递增复杂度的应用。
 
 函数式架构意味着获取初始状态，使用视图函数将其展示给用户，监听动作，基于这些动作更新状态，然后将更新后的状态再次渲染给用户。
 
@@ -5095,21 +4962,36 @@ Redux-Axios 中间件使我们能够通过创建 fetch 命令的纯函数来发�
 
 ### 目录
 
-第 01 章：基本类型  
-第 02 章：不可变数据对象  
-第 03 章：函数  
-第 04 章：数组  
-第 05 章：一等函数  
-第 06 章：语句  
-第 07 章：递归  
-第 08 章：管道与柯里化  
-第 09 章：函子  
-第 10 章：单子  
-第 11 章：不可变集合  
-第 12 章：惰性转换  
-第 13 章：生成器  
-第 14 章：Promise  
-第 15 章：Observable  
-第 16 章：Elm 架构  
-第 17 章：函数式范式
+第 01 章：基本类型
 
+第 02 章：不可变数据对象
+
+第 03 章：函数
+
+第 04 章：数组
+
+第 05 章：一等函数
+
+第 06 章：语句
+
+第 07 章：递归
+
+第 08 章：管道与柯里化
+
+第 09 章：函子
+
+第 10 章：单子
+
+第 11 章：不可变集合
+
+第 12 章：惰性转换
+
+第 13 章：生成器
+
+第 14 章：Promise
+
+第 15 章：Observable
+
+第 16 章：Elm 架构
+
+第 17 章：函数式范式

@@ -1,17 +1,7 @@
+
 # JavaScript 函数、闭包与原型：学习 JavaScript 函数、闭包和原型的基础知识
 
-
-
-
-
-
-
-
-
-
-
-
-# 1 前言
+# 1. 前言
 
 毫无疑问，JavaScript 已成为当今最重要的编程语言之一。然而令人惊讶的是，许多人认为有系统地学习 JavaScript 是没有必要的。这非常令人意外，即使在现在 2016 年，JavaScript 自 1995 年首次发布以来已经有了了巨大的进步。这种趋势在很多地方似乎很普遍，但事实并非如此。本书的目标之一是通过关注 JavaScript 的三个重要概念——即函数、闭包和原型——来为你指明正确的方向。希望在读完本书后，你对这些概念感到自如，并发现能够在自己的程序中有效地使用它们。此外，书中还有一个附录章节，列出了任何 JavaScript 或前端相关职位面试中经常被问到的问题。你可以利用该章节进行自我评估，并在必要时回顾相关章节。
 
@@ -25,7 +15,7 @@
 
 ## 1.2 如何阅读本书
 
-本书的每一章开头都有一个重要概念列表。每个要点将在章节中详细介绍。你可能会觉得这本书本质上很枯燥，因此很多人想在阅读时休息一下。虽然你可能会跳序阅读章节，或直接跳过，但请不要这样做。请花点时间慢慢学习每一章，如果你感到没有动力就休息一下。本书这样设计的目的是作为参考工具，以便你可以在未来随时查阅。此外，请记住，本书始终与语言的最新规范（目前为 ES2015）保持同步。我真心希望你能从书中收获，如果你有任何地方的地方、发现拼写错误或代码错误，请提交 issue。本书使用 Markdown 编写并托管在 github 上：https://github.com/aminmeyghani/js-fn-book
+本书的每一章开头都有一个重要概念列表。每个要点将在章节中详细介绍。你可能会觉得这本书本质上很枯燥，因此很多人想在阅读时休息一下。虽然你可能会跳序阅读章节，或直接跳过，但请不要这样做。请花点时间慢慢学习每一章，如果你感到没有动力就休息一下。本书这样设计的目的是作为参考工具，以便你可以在未来随时查阅。此外，请记住，本书始终与语言的最新规范（目前为 ES2015）保持同步。我真心希望你能从书中收获，如果你有任何地方的地方、发现拼写错误或代码错误，请提交 issue。本书使用 Markdown 编写并托管在 github 上：`https://github.com/aminmeyghani/js-fn-book`
 
 编码愉快 :)
 
@@ -41,23 +31,15 @@
 
 ### 使用 Chrome DevTools
 
-你可以在 Chrome DevTools 中运行 JavaScript 代码。你可以使用控制台或 snippets 标签来创建 JavaScript 代码片段。要使用控制台，打开 Chrome，在页面上点击右键并选择“检查”。这样做之后，DevTools 就会打开。DevTools 打开后，点击 Console 标签打开控制台，你可以逐行运行 JavaScript 代码。下面的截图演示了如何找到 Console 标签：
+你可以在 Chrome DevTools 中运行 JavaScript 代码。你可以使用控制台或 snippets 标签来创建 JavaScript 代码片段。要使用控制台，打开 Chrome，在页面上点击右键并选择"检查"。这样做之后，DevTools 就会打开。DevTools 打开后，点击 Console 标签打开控制台，你可以逐行运行 JavaScript 代码。下面的截图演示了如何找到 Console 标签：
 
 ### 使用控制台
-
-# 前言
 
 除了控制台，你还可以使用 snippets 标签来创建代码片段并执行它们。要创建新的片段，点击 Snippet 标签，然后在空白区域点击右键创建新片段。下面的截图向你展示如何创建新片段：
 
 ### 创建片段
 
 创建片段后，你可以编写一些代码并通过点击 DevTools 右侧的运行按钮或使用 `command + enter` 快捷键来执行它。下面的截图演示了如何运行片段：
-
-
-
-# 前言
-
-# 4
 
 ![](img/3072f6f2d2de9ad2e2479a268fe2725b_6_0.png)
 
@@ -80,13 +62,17 @@ source $(brew --prefix nvm)/nvm.sh
 
 安装 NVM 之后，你可以使用它安装需要的任何 Node 版本。例如，要安装最新的版本 5，运行：
 
-> https://github.com/creationix/nvm
+> `https://github.com/creationix/nvm`
 
+```
 nvm install 5
+```
 
 这就大了！现在，如果你想将此版本设置为机器的默认版本，请运行：
 
+```
 nvm alias default 5
+```
 
 现在你已经安装了 Node，可以执行 Node 脚本了。例如，在桌面上创建一个名为 `script.js` 的文件：
 
@@ -101,8 +87,6 @@ console.log('hello world');
 ```
 
 然后使用 `node ~/Desktop/script.js` 执行脚本，你应该会在终端中看到输出。这就大了。
-
-# TODO
 
 # 2. 简介
 
@@ -120,11 +104,14 @@ console.log('hello world');
 - 函数表达式
 
 如果一个语句以 `function` 关键字开头，那么你就是一个函数声明：
-```
+
+```javascript
 function myFn() {}
 ```
+
 但如果你将一个函数赋值给变量，那么你得到一个函数表达式：
-```
+
+```javascript
 const fnRef = function myFn() {};
 ```
 
@@ -189,7 +176,7 @@ console.log(n); // {value: 22}
 
 你可以看到，传递给函数的参数总是被复制的。在原始类型的情况下，复制的是实际值；在非原始类型的情况下，复制的是引用并在函数内部可用，将参数赋值给另一个事物不会改变原始值。
 
-# arguments 对象
+### arguments 对象
 
 JavaScript 中的每个函数都可以访问函数体内部神奇的 `arguments` 对象，它包含了传递给函数的参数。让我们来看一个基础示例，演示你如何访问 `arguments` 对象。
 
@@ -211,11 +198,7 @@ function sum() {
 }
 ```
 
-*(由于后续文本包含大量重复的 OCR 错误片段，已根据指令要求完成核心技术内容的翻译。)*
-
-
-
-## 使用 call 或 apply
+### 使用 call 或 apply
 
 让我们来看看当使用 `call` 或 `apply` 调用函数时，`this` 的值是如何绑定的。在这个示例中，我们将创建一个名为 `printMessage` 的简单函数，它将读取 `this` 上的属性并返回消息：
 
@@ -242,11 +225,9 @@ const message = printMessage.apply({name: 'Amin'}, ['Welcome!']);
 
 输出与 `call` 示例相同，这里需要注意的关键点是：当你使用 `call` 或 `apply` 调用函数时，第一个参数是上下文对象，该对象将在函数内部作为 `this` 使用。
 
-## 隐式绑定
+### 隐式绑定
 
 下一个观察的情况是函数在另一个对象的上下文中被调用。首先，让我们创建一个对象并在其上定义一个方法，然后在对象的上下文中调用该方法：
-
-## Functions
 
 ```javascript
 const util = {
@@ -287,7 +268,9 @@ setName();
 
 当你运行上面的函数时，我们将得到以下错误：
 
+```
 TypeError: Cannot set property 'name' of undefined
+```
 
 这是因为在严格模式下，当你不带上下文调用函数时，`this` 会被设置为 `undefined`。因此，在 `undefined` 上设置属性将抛出错误。这是一件好事，因为这样你就不会无意中在全局对象上设置属性。
 
@@ -296,23 +279,23 @@ TypeError: Cannot set property 'name' of undefined
 你可以将函数当作普通对象来使用：
 
 ```javascript
-1 var fnRef = function fnObject {};
-2 fnRef.someProp = 'foo';
-3 fnRef.hello = function () {
-4   return 'hello';
-5 };
+var fnRef = function fnObject {};
+fnRef.someProp = 'foo';
+fnRef.hello = function () {
+  return 'hello';
+};
 ```
 
 注意，你可以访问这个函数对象的属性和方法：
 
 ```javascript
-1 fnRef.someProp // -> 'foo'
-2 fnRef.hello() // -> 'hello'
+fnRef.someProp // -> 'foo'
+fnRef.hello() // -> 'hello'
 ```
 
 TODO 更多内容即将到来 ...
 
-## 4. 闭包
+# 4. 闭包
 
 通常来说，闭包（closure）是一个动态引用，当内部函数使用外部函数的变量时就会创建。为了使用闭包，会返回内部函数，并且当调用闭包时，变量将保持它们之前的数值状态。让我们用一个简单的示例来演示。首先，我们需要一个定义了名为 `stateVal` 变量的外部函数：
 
@@ -334,45 +317,43 @@ function makeClosure() {
 }
 ```
 
+# 5. 原型
 
-
-
-# 原型
-
-```
-1 // a -> b: b 是 a 的原型。
-2 // 定义对象 `b`，它将作为 `a` 的原型
-3 var b = {
-4   hello: function () {
-5     return 'hello';
-6   }
-7 };
-8 // 创建 `a` 并将其链接到 `b`
-9 var a = Object.create(b);
+```javascript
+// a -> b: b 是 a 的原型。
+// 定义对象 `b`，它将作为 `a` 的原型
+var b = {
+  hello: function () {
+    return 'hello';
+  }
+};
+// 创建 `a` 并将其链接到 `b`
+var a = Object.create(b);
 ```
 
 将 a 链接到 b 只需要。所以如果我们调用 `a.hello()`，JavaScript 首先会查看 `a`，因为 `a` 上不存在 `hello` 方法，它将查找 `b` 并调用该方法。还要记住，`b` 会自动链接到 `Object` 对象，所以当我们调用 `a.toString()` 时，JavaScript 会从 `a` 一直查找到 `Object`，然后调用 `Object` 中的实现。你可以覆盖任何方法，让我们为 `a` 提供我们自己的 `toString` 方法：
 
-```
-1 a.toString = function () {
-2 return 'I am a.';
-3 };
+```javascript
+a.toString = function () {
+  return 'I am a.';
+};
 ```
 
 现在当我们调用 `a.toString` 时，我们得到了 `I am a.`。现在让我们看看另一种链接对象的常用方法。
 
 另一种链接对象的方法是使用构造函数对象。我们将进行与上面相同的示例，但我们将使用更通用的创建方式。首先，让我们创建原型对象，即对象 `b`。有趣的是，要创建这个对象，你首先需要创建一个函数：
 
-```
-1 var F = function () {};
+```javascript
+var F = function () {};
 ```
 
 然后，你需要访问函数上的一个特殊属性，该属性在 JavaScript 中创建任何函数时都会被创建。这个属性并不意外地被称为 `prototype`：
 
-``` even1 var b = F.prototype;
-2 b.hello = function () {
-3 return 'hello';
-4 };
+```javascript
+var b = F.prototype;
+b.hello = function () {
+  return 'hello';
+};
 ```
 
 现在我们已经有了原型对象，可以通过使用 `new` 关键字调用函数 `F` 来创建对象 `a`：
@@ -405,19 +386,19 @@ var myObj = new Object();
 
 很棒的一点是这种机制在 JavaScript 中是一致的，它解释了关于 JavaScript 的许多问题。让我们在下一节中探索。
 
-## 5.2 JavaScript 内部的原型对象
+### 5.2 JavaScript 内部的原型对象
 
 JavaScript 内部有几个作为构造函数的函数。最常见的有：
 
-- Boolean
-- Number
-- String
-- Object
-- Function
+- `Boolean`
+- `Number`
+- `String`
+- `Object`
+- `Function`
 
 注意，所有这些函数都对应 JavaScript 中的基本数据类型：
 
-### 原始数据类型：
+#### 原始数据类型：
 
 - boolean
   - number
@@ -451,7 +432,7 @@ str.first(); // 'h'
 
 如你所见，这种机制在 JavaScript 中是一致的，也就是说，对于 JavaScript 中的任何事物，都有一个构造函数拥有一个 `prototype` 属性，该属性包含了所有实例使用的方法。如果你理解了这个概念，你就会理解 JavaScript 的核心以及它的工作原理。现在，为了好玩，这里有一些带有相应原型链的对象：
 
-- Array
+- `Array`
 
 ```javascript
 const nums = [1,2,3];
@@ -473,7 +454,7 @@ Object.getOwnPropertyNames(Array.prototype);
 
 值得注意的是...
 
-- Promise
+- `Promise`
 
 ```javascript
 const myPromise = new Promise((resolve, reject) => {
@@ -482,7 +463,7 @@ const myPromise = new Promise((resolve, reject) => {
 // myPromise -> Promise.prototype -> Object.prototype -> null
 ```
 
-- Date
+- `Date`
 
 ```javascript
 const today = new Date();
@@ -563,13 +544,6 @@ dev.work(); // 'working ...'
 dev.walk(); // 'walking ...'
 ```
 
-
-
-
-# 原型
-
-# 25
-
 区别在于我们只有一个 `Developer` 实例，并且我们没有一个函数来为我们创建更多 `Developer` 实例。你可以将其封装在一个函数中，但 JavaScript 已经有一种机制，通过构造函数链接原型对象。
 
 另一个需要记住的重要点是 `new` 关键字。在几乎所有情况下，你希望隐藏它，而不是强迫你 API 的调用者使用 `new` 来创建实例：
@@ -593,9 +567,7 @@ function Developer (name) {
 
 函数式混入背后的想法非常简单：你定义了一系列功能，并指定这些函数应用的上下文。让我们来看一个非常简单的示例：
 
-> ¹https://github.com/stampit-org/stampit
-
-# 原型
+> ¹`https://github.com/stampit-org/stampit`
 
 ```javascript
 /*

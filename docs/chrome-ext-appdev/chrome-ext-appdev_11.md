@@ -1,3 +1,4 @@
+
 # 第八章　媒体库
 
 通过`mediaGalleries`接口 Chrome 应用可以操作计算机中的媒体库，如音乐文件夹、图片文件夹、iPod 设备和 iTunes 等。
@@ -224,6 +225,7 @@ getMedia();
 载入到 Chrome 后可以看到目前运行的截图。
 
 ![enter image description here](img/00057.jpeg)
+
 *获取媒体库*
 
 ## 8.2　添加及移除媒体库
@@ -233,11 +235,13 @@ getMedia();
 在上一节中我们调用`getMediaFileSystems`方法时，将其参数中的`interactive`指定为了`if_needed`，如果将其指定为`yes`则会出现一个弹出让用户选择保留的媒体库或者添加其他媒体库：
 
 ![enter image description here](img/00058.jpeg)
+
 *媒体库选择弹窗*
 
 如果只想单纯提供添加其他位置的功能，可以使用`addUserSelectedFolder`方法，当调用`addUserSelectedFolder`方法时，会弹出一个目录选择窗口让用户选择新媒体库的位置：
 
 ![enter image description here](img/00059.jpeg)
+
 *添加新媒体库位置*
 
 `addUserSelectedFolder`方法使用回调函数传递用户选择结果：
@@ -294,6 +298,7 @@ document.getElementById('edit').onclick = function(){
 改进后的窗口如下所示。
 
 ![enter image description here](img/00060.jpeg)
+
 *带有添加移除媒体库的窗口*
 
 ## 8.3　更新媒体库
@@ -336,9 +341,11 @@ chrome.mediaGalleries.addScanResults(function(mediaFileSystems){
 
 `mediaFileSystems`是一个包含多个`FileSystem`的数组，其包含的是应用有权限访问的所有媒体库`FileSystem`，而非只是用户刚刚选择的。
 
-下面我们来将更新媒体库的功能加入到 Media Manager。首先在 HTML 中添加更新按钮、loading 元素和出错提示框：
 
-```js
+
+下面我们来将更新媒体库的功能加入到`Media Manager`。首先在 HTML 中添加更新按钮、`loading`元素和出错提示框：
+
+```html
 <div id="error">更新失败</div>
 <div id="appTitle">Media Manager<span id="edit">&#x3466;</span><span id="scan">&#xf015c;</span>
 <div id="loading">
@@ -353,7 +360,7 @@ chrome.mediaGalleries.addScanResults(function(mediaFileSystems){
 
 之后在 CSS 中添加相应的样式：
 
-```js
+```css
 #appTitle {
     height: 60px;
     line-height: 60px;
@@ -442,11 +449,11 @@ chrome.mediaGalleries.addScanResults(function(mediaFileSystems){
 } 
 ```
 
-其中为了让 loading 元素位置相对于`appTitle`，将`appTitle`的`position`属性更改为了`relative`。
+其中为了让`loading`元素位置相对于`appTitle`，将`appTitle`的`position`属性更改为了`relative`。
 
 最后在 JS 中加入相应事件：
 
-```js
+```javascript
 var scanning = false;
 
 document.getElementById('scan').onclick = function(){
@@ -493,7 +500,7 @@ chrome.mediaGalleries.onScanProgress&&chrome.mediaGalleries.onScanProgress.addLi
 
 通过`getMetadata`方法可以读取出媒体文件相关信息¹：
 
-```js
+```javascript
 chrome.mediaGalleries.getMetadata(mediaFile, {metadataType: 'all'}, function(metadata){
     //do something with metadata
 }); 
@@ -505,7 +512,7 @@ chrome.mediaGalleries.getMetadata(mediaFile, {metadataType: 'all'}, function(met
 
 `metadata`为一个包含媒体信息的对象，完整结构如下：
 
-```js
+```javascript
 {
     mimeType: MIME 类型,
     height: 视频或图片的高度，单位为像素,
@@ -541,4 +548,4 @@ chrome.mediaGalleries.getMetadata(mediaFile, {metadataType: 'all'}, function(met
 
 最后值得说明的是，由于已经在 Manifest 中声明了媒体库的读取权限，而不必另外声明`fileSystem`权限用于读取媒体文件。
 
-由于遍历目录和读取、复制、删除文件与文章讲解的内容无关，读者可自行参考第七章内容实现相关功能。Media Manager 实例的源码可以通过[`github.com/sneezry/chrome_extensions_and_apps_programming/tree/master/media_manager`](https://github.com/sneezry/chrome_extensions_and_apps_programming/tree/master/media_manager)下载到。
+由于遍历目录和读取、复制、删除文件与文章讲解的内容无关，读者可自行参考第七章内容实现相关功能。`Media Manager`实例的源码可以通过[`github.com/sneezry/chrome_extensions_and_apps_programming/tree/master/media_manager`](https://github.com/sneezry/chrome_extensions_and_apps_programming/tree/master/media_manager)下载到。

@@ -1,19 +1,11 @@
-# Javascript 高级指南
 
-
-
-
-
-
+# JavaScript 高级指南
 
 ```
 if (cond > someVal) {console.log("xxx")}
 ```
-[/content]
 
 **译文：**
-
-[content]
 
 ```
 if (cond > someVal) {console.log("xxx")}

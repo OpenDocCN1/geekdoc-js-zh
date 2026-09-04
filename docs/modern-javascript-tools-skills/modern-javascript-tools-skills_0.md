@@ -1,23 +1,7 @@
+
 # 现代 JavaScript 工具与技能
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-# 前言
+## 前言
 
 毫无疑问，JavaScript 生态系统的变化非常快。不仅新工具和框架以快速的速度引入和开发，随着 `ES2015`（又称 `ES6`）的引入，语言本身也发生了巨大的变化。可以理解，有许多文章在抱怨如今学习现代 JavaScript 开发有多困难。我们的目标是通过这系列关于现代 JavaScript 的书籍尽量减少这种困惑。
 
@@ -34,24 +18,24 @@
 书中的代码使用等宽字体显示，如下：
 
 ```
- <h1>一个完美的夏日</h1>
+<h1>一个完美的夏日</h1>
 <p>这是一个在公园散步的好日子。
-鸟儿在歌唱，孩子们都已回学校了。</p> 
+鸟儿在歌唱，孩子们都已回学校了。</p>
 ```
 
-当需要现有代码作为上下文时，而不是重复所有内容，将显示 ⋮：
+当需要现有代码作为上下文时，而不是重复所有内容，将显示 `⋮`：
 
 ```
- function animate() {
+function animate() {
     ⋮
-new_variable = "Hello";
+    new_variable = "Hello";
 }
 ```
 
-某些行代码应该在一行内输入，但由于页面限制，我们对它们进行了换行处理。➥ 表示仅为了格式目的而存在的换行，应该被忽略：
+某些行代码应该在一行内输入，但由于页面限制，我们对它们进行了换行处理。`➥` 表示仅为了格式目的而存在的换行，应该被忽略：
 
 ```
- URL.open("http://www.sitepoint.com/responsive-web-
+URL.open("http://www.sitepoint.com/responsive-web-
 ➥design-real-user-testing/?responsive1");
 ```
 
@@ -59,21 +43,21 @@ new_variable = "Hello";
 
 #### 提示、注释和警告
 
-#### 嘿，你！
+**嘿，你！**
 
-提示（Tips）提供有用的小建议。
+提示提供有用的小建议。
 
-#### 咳，打扰一下……
+**咳，打扰一下……**
 
-注释（Notes）是与当前主题相关但并非关重要的补充说明。将它们视为额外的信息片段。
+注释是与当前主题相关但并非关键的补充说明。将它们视为额外的信息片段。
 
-#### 确保你始终……
+**确保你始终……**
 
-…… 注意这些重要要点。
+……注意这些重要要点。
 
-#### 注意！
+**注意！**
 
-警告（Warnings）突出了在过程中可能让你出错的任何陷阱。
+警告突出了在过程中可能让你出错的任何陷阱。
 
 # 第 1 章：Babel 入门指南
 
@@ -81,13 +65,13 @@ new_variable = "Hello";
 
 本文介绍了 [Babel](https://babeljs.io/)，这是一个 JavaScript 编译器，允许开发者现在就使用下一代 JavaScript。
 
-在构建 Web 应用程序时，编写 JavaScript 可能会令人沮丧。我们必须考虑目标浏览器中可用的功能，以及当某个功能未实现时会发生什么。有些人会建议干脆不要使用，但如果我们正在复杂的东西，这在大多数情况下是非常痛苦的经历。
+在构建 Web 应用程序时，编写 JavaScript 可能会令人沮丧。我们必须考虑目标浏览器中可用的功能，以及当某个功能未实现时会发生什么。有些人会建议干脆不要使用，但如果我们正在构建复杂的东西，这在大多数情况下是非常痛苦的经历。
 
-幸运的是，有些工具允许我们停止担心支持情况，只需编写我们能写的最好的代码。它们被称为转译器（transpilers）。`transpiler` 是一种将源代码作为输入并产生新源代码作为输出的工具，其语法不同，但在语义上尽可能接近原始代码——或理想情况下等同。
+幸运的是，有些工具允许我们停止担心支持情况，只需编写我们能写的最好的代码。它们被称为转译器。`transpiler` 是一种将源代码作为输入并产生新源代码作为输出的工具，其语法不同，但在语义上尽可能接近原始代码——或理想情况下等同。
 
-`Babel` 几乎是是将现代 JavaScript (`ES2015+`) 翻译为可在旧浏览器中运行的兼容实现的标准转译器。如果你只想专注于编写 JavaScript，它是完美的解决方案。
+`Babel` 几乎是将现代 JavaScript (`ES2015+`) 翻译为可在旧浏览器中运行的兼容实现的标准转译器。如果你只想专注于编写 JavaScript，它是完美的解决方案。
 
-尽管 `Babel` 的主要目标是为旧（有时是当前的）浏览器翻译最新的 `ECMAScript` (`ES`) 标准，但它还可以做更多。存在一个由预设（presets）和插件（plugins）组成的生态系统，使得添加非标准功能成为可能。每个插件为你的代码提供一个新功能/转换，而预设只是插件的集合。
+尽管 `Babel` 的主要目标是为旧（有时是当前的）浏览器翻译最新的 `ECMAScript` (`ES`) 标准，但它还可以做更多。存在一个由预设和插件组成的生态系统，使得添加非标准功能成为可能。每个插件为你的代码提供一个新功能/转换，而预设只是插件的集合。
 
 ## 入门
 
@@ -106,7 +90,7 @@ npm install --save-dev babel-cli
 
 接下来，我们可以打开 `package.json` 并在 npm 脚本中添加一个 `build` 命令：
 
-```
+```json
 "scripts": {
   "build": "babel src -d dist"
 }
@@ -122,7 +106,7 @@ npm install babel-preset-env --save-dev
 
 然后在项目的根目录下创建一个 `.babelrc` 文件并添加预设：
 
-```
+```json
 {
   "presets": ["env"]
 }
@@ -132,7 +116,8 @@ npm install babel-preset-env --save-dev
 
 请注意，根据你的操作系统，点开头的文件默认是隐藏的。如果这对你来说有问题（或者你只是喜欢更少的文件），可以将 Babel 设置放在 `package.json` 文件中，位于 `babel` 键下，如下：
 
-```json{
+```json
+{
   "name": "babel-test",
   "version": "1.0.0",
   "babel": {
@@ -140,9 +125,6 @@ npm install babel-preset-env --save-dev
   }
 }
 ```
-
-
-
 
 最后，让我们创建 Babel 期望找到的目录和文件：
 
@@ -152,7 +134,7 @@ mkdir src dist
 
 并提供一些需要进行转换的内容：
 
-```
+```javascript
 let a = 1;
 let b = 2;
 [a, b] = [b, a];
@@ -174,7 +156,7 @@ npm run build
 
 以下是生成的结果：
 
-```
+```javascript
 "use strict";
 
 var a = 1;
@@ -189,7 +171,7 @@ console.log(b);
 
 如你所见，`let` 已替换为 `var`，并且 Babel 引入了一个临时变量（用下划线表示）来方便交换。
 
-就是这样。你在 `src` 目录中编写的代码将被翻译为语言之前的版本。默认情况下，如果你不在预设（preset）中添加任何选项，它将加载所有转换。你也可以如下所示指定目标浏览器：
+就是这样。你在 `src` 目录中编写的代码将被翻译为语言之前的版本。默认情况下，如果你不在预设中添加任何选项，它将加载所有转换。你也可以如下所示指定目标浏览器：
 
 ```json
 {
@@ -237,7 +219,7 @@ console.log(b);
 
 ### Babel Polyfill（垫片）
 
-有些 JavaScript 特性无法在语法上进行转换，通常是因为没有实现相应的功能——例如 Promises 和生成器函数（generator functions）。
+有些 JavaScript 特性无法在语法上进行转换，通常是因为没有实现相应的功能——例如 Promises 和生成器函数。
 
 这类功能必须通过库在浏览器实现才能在你的代码中使用，这就是 polyfill 的工作。
 
@@ -245,14 +227,15 @@ Babel polyfill 由 [core-js](https://github.com/zloirock/core-js) 和 [Regenerat
 
 ### 高级用法
 
-如所述，Babel 还可以用于转换语言中尚未实现的功能。一个很好的例子是类字段（class fields）提案（目前处于 [TC39 stage 3 ：候选阶段](https://github.com/tc39/proposal-class-fields)）。这在 React 开发者中特别流行，因为它消除了显式将方法绑定到特定组件的必要，并且意味着组件的 `state` 可以声明为类。
+如所述，Babel 还可以用于转换语言中尚未实现的功能。一个很好的例子是类字段提案（目前处于 [TC39 stage 3 ：候选阶段](https://github.com/tc39/proposal-class-fields)）。这在 React 开发者中特别流行，因为它消除了显式将方法绑定到特定组件的必要，并且意味着组件的 `state` 可以声明为类。
 
+# 第 2 章：Webpack 入门指南
 
-
+### 作者：Mark Brown
 
 [Webpack](https://webpack.js.org/) 已成为现代 Web 开发中最重要的工具之一。它主要是一个用于 JavaScript 的模块打包器，但也可以教它来转换你所有的前端资源，如 HTML、CSS 甚至图像。它可以让你对应用发出的 HTTP 请求数量有更多控制，并允许你使用这些资源的其他格式（例如 Pug、Sass 和 ES8）。Webpack 还允许你轻松地使用来自 npm 的包。
 
-本文面向 Webpack 初学者，将涵盖初始设置与配置、模块、加载器（loaders）、插件、代码分割和热模块替换。如果你觉得视频教程很有帮助，我强烈推荐将 Glen Maddern 的 [Webpack from First Principles](https://www.youtube.com/watch?v=WQue1AN93YU) 作为起点，来理解是什么让 Webpack 变得特别的。它现在有点老了，但原理仍然一样，而且是一个非常棒的介绍。
+本文面向 Webpack 初学者，将涵盖初始设置与配置、模块、加载器、插件、代码分割和热模块替换。如果你觉得视频教程很有帮助，我强烈推荐将 Glen Maddern 的 [Webpack from First Principles](https://www.youtube.com/watch?v=WQue1AN93YU) 作为起点，来理解是什么让 Webpack 变得特别的。它现在有点老了，但原理仍然一样，而且是一个非常棒的介绍。
 
 ## 示例代码
 
@@ -271,20 +254,20 @@ npm install --save-dev webpack webpack-cli
 接下来我们将创建以下目录结构和内容：
 
 ```
- webpack-demo
+webpack-demo
   |- package.json
-+ |- webpack.config.js
-+ |- /src
-+   |- index.js
-+ |- /dist
-+   |- index.html
+  |- webpack.config.js
+  |- /src
+    |- index.js
+  |- /dist
+    |- index.html
 ```
 
 ### `dist/index.html`
 
-```
+```html
 <!doctype html>
-<html
+<html>
   <head>
     <title>Hello Webpack</title>
   </head>
@@ -321,7 +304,7 @@ module.exports = {
 ### `package.json`
 
 ```json
- {
+{
     ...
     "scripts": {
 -     "test": "echo \"Error: no test specified\" && exit 1"
@@ -329,7 +312,7 @@ module.exports = {
 +     "build": "webpack --mode production"
     },
     ...
-  }
+}
 ```
 
 使用 `npm run develop` 命令，我们可以创建第一个包！
@@ -354,8 +337,8 @@ bundle.js  647 bytes  main  [emitted]  main
 
 再次查看 `dist/bundle.js`，你会看到一团杂乱的代码。我们的包已经通过 UglifyJS 进行了压缩：代码的运行方式完全相同，但实现了最小的文件大小。
 
-*   `--mode development` 针对构建速度和调试进行优化
-*   `--mode production` 针对运行时执行速度和输出文件大小进行优化
+* `--mode development` 针对构建速度和调试进行优化
+* `--mode production` 针对运行时执行速度和输出文件大小进行优化
 
 ## 模块
 
@@ -398,24 +381,9 @@ const people = [
 export default people
 ```
 
-### 导入
+### 加载器
 
-等待，原文文本包含了一些重复或损坏的片段。在“模块”部分：
-
-```javascript
-import { groupBy } from "lodash-es"
-import people from "./people"
-
-const managerGroups = groupBy(people, "manager")
-
-const root = document.createElement("div")
-root.innerHTML = `<pre>${JSON.stringify(managerGroups, null, 2)}</pre>`
-document.body.appendChild(root)
-```
-
-### 加载器 (Loaders)
-
-加载器允许你对导入的内容运行预处理器。这在处理类似 [Babel](http://babel.io/) 的：
+加载器允许你对导入的内容运行预处理器。这在处理类似 [Babel](http://babel.io/) 的转换时非常有用：
 
 ```bash
 npm install --save-dev babel-loader
@@ -498,9 +466,9 @@ module.exports = {
 
 这些加载器按照相反的顺序处理：
 
-*   `sass-loader` 将 Sass 转换为 CSS。
-*   `css-loader` 解析 CSS 为 JavaScript 并解析任何依赖。
-*   `style-loader` 将我们的 CSS 输出到文档中的 `<style>` 标签中。
+* `sass-loader` 将 Sass 转换为 CSS。
+* `css-loader` 解析 CSS 为 JavaScript 并解析任何依赖。
+* `style-loader` 将我们的 CSS 输出到文档中的 `<style>` 标签中。
 
 你可以将这些想象成函数调用。一个加载器的输出作为下一个加载器的输入：
 
@@ -508,14 +476,11 @@ module.exports = {
 styleLoader(cssLoader(sassLoader("source")))
 ```
 
-
-
-
 让我们添加 Sass 源文件并将其作为模块导入。
 
 `src/style.scss`
 
-```
+```scss
 $bluegrey: #2b3a42;
 
 pre {
@@ -532,13 +497,13 @@ pre {
 
 `src/index.js`
 
-```
- import { groupBy } from 'lodash-es'
-  import people from './people'
+```javascript
+import { groupBy } from 'lodash-es'
+import people from './people'
 
-+ import './style.scss'
+import './style.scss'
 
-  ...
+...
 ```
 
 使用 `Ctrl` + `C` 和 `npm run develop` 重启构建。在浏览器中刷新 `index.html`，你应该就能看到一些样式了。
@@ -553,13 +518,10 @@ pre {
 
 我在这里不会深入探讨这个话题，但有几个原因值得考虑：
 
-*   你可能想要包含在项目中的 JavaScript 组件可能依赖于其他资源才能正常运行（HTML、CSS、图像、SVG）。如果这些内容都能打包在一起，那么导入和使用它们将简单得多。
-
-*   **死代码消除（Dead code elimination）**：当 JS 组件不再被你的代码导入时，CSS 也也不再被导入。生成的包将只包含发挥作用的代码。
-
-*   **CSS Modules**：CSS 的全局命名空间使得你很难确定对 CSS 的更改是否会产生任何副作用。[CSS modules](https://github.com/css-modules/css-modules) 通过让 CSS 默认变为局部的，并暴露可以在 JavaScript 中引用的唯一类名来改变这一点。
-
-*   通过巧妙的方式打包/拆分代码来减少 HTTP 请求数。
+* 你可能想要包含在项目中的 JavaScript 组件可能依赖于其他资源才能正常运行（HTML、CSS、图像、SVG）。如果这些内容都能打包在一起，那么导入和使用它们将简单得多。
+* **死代码消除**：当 JS 组件不再被你的代码导入时，CSS 也也不再被导入。生成的包将只包含发挥作用的代码。
+* **CSS Modules**：CSS 的全局命名空间使得你很难确定对 CSS 的更改是否会产生任何副作用。[CSS modules](https://github.com/css-modules/css-modules) 通过让 CSS 默认变为局部的，并暴露可以在 JavaScript 中引用的唯一类名来改变这一点。
+* 通过巧妙的方式打包/拆分代码来减少 HTTP 请求数。
 
 ## Images
 
@@ -573,20 +535,20 @@ npm install --save-dev file-loader
 
 `webpack.config.js`
 
-```
- module.exports = {
+```javascript
+module.exports = {
     ...
     module: {
       rules: [
         ...
-+       {
-+         test: /\.(png|svg|jpg|gif)$/,
-+         use: [
-+           {
-+             loader: 'file-loader'
-+           }
-+         ]
-+       }
+        {
+          test: /\.(png|svg|jpg|gif)$/,
+          use: [
+            {
+              loader: 'file-loader'
+            }
+          ]
+        }
       ]
     }
   }
@@ -602,19 +564,19 @@ curl https://raw.githubusercontent.com/sitepoint-editors/webpack-demo/master/src
 
 `src/index.js`
 
-```
- import { groupBy } from 'lodash-es'
-  import people from './people'
+```javascript
+import { groupBy } from 'lodash-es'
+import people from './people'
 
-  import './style.scss'
-+ import './image-example'
+import './style.scss'
+import './image-example'
 
-  ...
+...
 ```
 
 `src/image-example.js`
 
-```
+```javascript
 import codeURL from "./code.png"
 
 const img = document.createElement("img")
@@ -634,42 +596,53 @@ document.body.appendChild(img)
 
 `src/style.scss`
 
+```scss
+$bluegrey: #2b3a42;
+
+pre {
+  padding: 8px 16px;
+  background: $bluegrey url("code.png") no-repeat center center / 32px 32px;
+  color: #e1e6e9;
+  font-family: Menlo, Courier, monospace;
+  font-size: 13px;
+  line-height: 1.5;
+  text-shadow: 0 1px 0 rgba(23, 31, 35, 0.5);
+  border-radius: 3px;
+}
 ```
- $bluegrey: #2b3a42;
 
-  pre {
-    padding: 8px 16px;
--   background: $bluegrey;
-+   background: $bluegrey url("code.png") no-repeat center center / 32px 32px;
-    color: #e1e6e9;
-    font-family: Menlo, Courier, monospace;
-    font-size: 13px;
-    line-height: 1.5;
-    text-shadow: 0 1px 0 rgba(23, 31, 35, 0.5);
-    border-radius: 3px;
-  }
+## 代码分割
+
+代码分割是 Webpack 最引人注目的功能之一。它允许你将代码分割成不同的包，然后按需加载或并行加载。
+
+我们可以使用动态 `import()` 语法来实现代码分割。这会在运行时加载模块，并返回一个 `Promise`。
+
+让我们创建一个简单的聊天小部件，仅在用户点击按钮时加载。
+
+`src/chat.js`
+
+```javascript
+export function init() {
+  const root = document.createElement("div")
+  root.innerHTML = `<p>Chat widget loaded.</p>`
+  document.body.appendChild(root)
+}
 ```
 
-每个单独出现的变量名 (`varName`)、函数名 (`funcName()`)、类名 (`ClassName`)、路径名 (`/path.to.xxx`)、命令名 (`cmdname`) 以及以及它们的语句或表达式 (`ClassName.funcName(var1 + var2, "cmd0 arg1")`) 都需要反引号。如果上面的内容是加粗的 (****) 或斜体的 (**)，请删除星号并添加反引号。
+`src/app.js`
 
-代码块由三个反引号包围。
+```javascript
+const button = document.createElement("button")
+button.textContent = "Open chat"
+button.onclick = () => {
+  import("./chat").then(chat => {
+    chat.init()
+  })
+}
+document.body.appendChild(button)
+```
 
-### 为什么要这样做？
-
-我在这里不会深入探讨这个话题，但有几个原因值得考虑：
-
-*   你可能想要包含在项目中的 JavaScript 组件可能依赖于其他资源才能正常运行（HTML、CSS、图像、SVG）。如果这些内容都能打包在一起，那么导入和使用它们将简单得多。
-
-*   死代码消除：当 JS 组件不再被你的代码导入时，CSS 也也不再被导入。生成的包将只包含发挥作用的代码。
-
-*   CSS Modules：CSS 的全局命名空间使得你很难确定对 CSS 的更改是否会产生任何副作用。[CSS modules](https://github.com/css-modules/css-modules) 通过让 CSS 默认变为局部的，并暴露可以在 JavaScript 中引用的唯一类名来改变这一点。
-
-*   通过巧妙的方式打包/拆分代码来减少 HTTP 请求数。
-
-（注：由于提供的原文后部分存在大量重复的文本，已根据您的“不要重复输出原文”原则进行了去重处理，仅保留核心逻辑部分的翻译。）
-
-
-
+现在运行 `npm run develop`，你会看到生成了两个包：`main.bundle.js` 和 `chat.bundle.js`。
 
 在浏览器中打开 `http://localhost:5000` 并观察发生了什么。初始只获取了 `bundle.js`。当点击按钮时，聊天模块被导入并初始化。
 
@@ -681,23 +654,23 @@ document.body.appendChild(img)
 
 虽然 `loaders` 在单个文件上执行转换，但 `plugins` 在跨越更大的代码块上进行操作。
 
-现在我们正在打包代码、外部模块*以及*静态资源，我们的包体积将会增长——*非常快*。插件的作用是帮助我们以智能的方式分割代码，并为生产环境进行优化。
+现在我们正在打包代码、外部模块以及静态资源，我们的包体积将会增长——非常快。插件的作用是帮助我们以智能的方式分割代码，并为生产环境进行优化。
 
 在不经意间，我们已经使用了许多[带有“mode”的默认 Webpack 插件](https://webpack.js.org/concepts/mode/#usage)
 
 ### development
 
-*   提供值为“development”的 `process.env.NODE_ENV`
-*   `NamedModulesPlugin`
+* 提供值为“development”的 `process.env.NODE_ENV`
+* `NamedModulesPlugin`
 
 ### production
 
-*   提供值为“production”的 `process.env.NODE_ENV`
-*   `UglifyJsPlugin`
-*   `ModuleConcatenationPlugin`
-*   `NoEmitOnErrorsPlugin`
+* 提供值为“production”的 `process.env.NODE_ENV`
+* `UglifyJsPlugin`
+* `ModuleConcatenationPlugin`
+* `NoEmitOnErrorsPlugin`
 
-#### Production
+### Production
 
 在添加额外的插件之前，我们首先拆分配置，以便针对每个环境应用特定的插件。
 
@@ -716,7 +689,7 @@ document.body.appendChild(img)
 npm install --save-dev webpack-merge
 ```
 
-#### webpack.dev.js
+#### `webpack.dev.js`
 
 ```javascript
 const merge = require('webpack-merge')
@@ -727,7 +700,7 @@ module.exports = merge(common, {
 })
 ```
 
-#### webpack.prod.js
+#### `webpack.prod.js`
 
 ```javascript
 const merge = require('webpack-merge')
@@ -738,10 +711,10 @@ module.exports = merge(common, {
 })
 ```
 
-#### package.json
+#### `package.json`
 
 ```json
- "scripts": {
+"scripts": {
 -    "develop": "webpack --watch --mode development",
 -    "build": "webpack --mode production"
 +    "develop": "webpack --watch --config webpack.dev.js",
@@ -755,366 +728,136 @@ module.exports = merge(common, {
 
 在为生产环境打包时，使用 [ExtractTextWebpackPlugin](https://webpack.js.org/plugins/extract-text-webpack-plugin) 将 CSS 从 JavaScript 分离被认为最佳实践。
 
-目前的 `.scss` loaders 非常非常适合开发，因此我们将把它们从 `webpack.common.js` 移动到 `webpack.dev.js`，并仅在 `webpack.prod.js` 中添加 `ExtractTextWebpackPlugin`。
+目前的 `.scss` loaders 非常适合开发，因此我们将把它们从 `webpack.common.js` 移动到 `webpack.dev.js`，并仅在 `webpack.prod.js` 中添加 `ExtractTextWebpackPlugin`。
 
 ```bash
 npm install --save-dev extract-text-webpack-plugin@4.0.0-beta.0
 ```
 
-#### webpack.common.js
+#### `webpack.common.js`
 
 ```javascript
- ...
+...
   module.exports = {
     ...
     module: {
       rules: [
-        ...
--       {
--         test: /\.scss$/,
--         use: [
--           {
--             loader: 'style-loader'
--           }, {
--             loader: 'css-loader'
--           }, {
--             loader: 'sass-loader'
--           }
--         ]
--       },
         ...
       ]
     }
   }
 ```
 
-#### webpack.dev.js
-
-```javascript
- const merge = require('webpack-merge')
-  const common = require('./webpack.common.js')
-
-  module.exports = merge(common, {
-    mode: 'development',
-+   module: {
-+     rules: [
-+       {
-+         test: /\.scss$/,
-+         use: [
-+           {
-+             loader: 'style-loader'
-+           }, {
-+             loader: 'css-loader'
-+           }, {
-+             loader: 'sass-loader'
-+           }
-+         ]
-+       }
-+     ]
-+   }
-  })
-```
-
-#### webpack.prod.js
-
-```javascript
- const merge = require('webpack-merge')
-+ const ExtractTextPlugin = require('extract-text-webpack-plugin')
-  const common = require('./webpack.common.js')
-
-  module.exports = merge(common, {
-    mode: 'production',
-+   module: {
-+     rules: [
-+       {
-+         test: /\.scss$/,
-+         use: ExtractTextPlugin.extract({
-+           fallback: 'style-loader',
-+           use: ['css-loader', 'sass-loader']
-+         })
-+       }
-+     ]
-+   },
-+   plugins: [
-+     new ExtractTextPlugin('style.css')
-+   ]
-  })
-```
-
-让我们比较两个构建脚本的输出：
-
-```
-> npm run develop
-
-Asset           Size      Chunks           Chunk Names
-app.bundle.js   28.5 KiB  app   [emitted]  app
-chat.bundle.js
-```
-
-```
-Asset           Size      Chunks           Chunk Names
-app.bundle.js   28.5 KiB  app   [emitted]  app
-chat.bundle.js
-```
-
-让我们比较两个构建脚本的输出：
-
-```
-> npm run develop
-Asset           Size      Chunks           Chunk Names
-app.bundle.js   28.5 KiB  app   [emitted]  app
-chat.bundle.js
-```
-
-```
-Asset           Size      Chunks           Chunk Names
-app.bundle.js   28.5 KiB  app   [emitted]  app
-chat.bundle.js
-```
-
-现在我们有了 `index.html`：
-
-```
-
-
-等待，提供的文本有些重复/损坏。让我根据提供的内容提供一个干净的版本。
-
-[content]
-在浏览器中打开 `http://localhost:5000` 并观察发生了什么。初始只获取了 `bundle.js`。当点击按钮时，聊天模块被导入并初始化。
-
-![显示分块懒加载的网络请求](img/1521906882lazy-loading.png)
-
-只需少少精力，我们就为应用添加了动态代码分割和模块的懒加载。这是构建高性能 Web 应用程序的绝佳起点。
-
-## 插件
-
-虽然 `loaders` 在单个文件上执行转换，但 `plugins` 在跨越更大的代码块上进行操作。
-
-现在我们正在打包代码、外部模块*以及*静态资源，我们的包体积将会增长——*非常快*。插件的作用是帮助我们以智能的方式分割代码，并为生产环境进行优化。
-
-在不经意间，我们已经使用了许多[带有“mode”的默认 Webpack 插件](https://webpack.js.org/concepts/mode/#usage)
-
-### development
-
-*   提供值为“development”的 `process.env.NODE_ENV`
-*   `NamedModulesPlugin`
-
-### production
-
-*   提供值为“production”的 `process.env.NODE_ENV`
-*   `UglifyJsPlugin`
-*   `ModuleConcatenationPlugin`
-*   `NoEmitOnErrorsPlugin`
-
-#### Production
-
-在添加额外的插件之前，我们首先拆分配置，以便针对每个环境应用特定的插件。
-
-将 `webpack.config.js` 重命名为 `webpack.common.js`，并为开发和生产添加配置文件。
-
-```
-- |- webpack.config.js
-+ |- webpack.common.js
-+ |- webpack.dev.js
-+ |- webpack.prod.js
-```
-
-我们将使用 `webpack-merge` 将通用配置与特定环境的配置合并：
-
-```bash
-npm install --save-dev webpack-merge
-```
-
-#### webpack.dev.js
+#### `webpack.dev.js`
 
 ```javascript
 const merge = require('webpack-merge')
 const common = require('./webpack.common.js')
 
 module.exports = merge(common, {
-  mode: 'development'
+  mode: 'development',
+  module: {
+    rules: [
+      {
+        test: /\.scss$/,
+        use: [
+          {
+            loader: 'style-loader'
+          }, {
+            loader: 'css-loader'
+          }, {
+            loader: 'sass-loader'
+          }
+        ]
+      }
+    ]
+  }
 })
 ```
 
-#### webpack.prod.js
+#### `webpack.prod.js`
 
 ```javascript
+const merge = require('webpack-merge')
+const ExtractTextPlugin = require('extract-text-webpack-plugin')
+const common = require('./webpack.common.js')
+
+module.exports = merge(common, {
+  mode: 'production',
+  module: {
+    rules: [
+      {
+        test: /\.scss$/,
+        use: ExtractTextPlugin.extract({
+          fallback: 'style-loader',
+          use: ['css-loader', 'sass-loader']
+        })
+      }
+    ]
+  },
+  plugins: [
+    new ExtractTextPlugin('style.css')
+  ]
+})
+```
+
+让我们比较两个构建脚本的输出：
+
+```
+> npm run develop
+
+Asset           Size      Chunks           Chunk Names
+app.bundle.js   28.5 KiB  app   [emitted]  app
+chat.bundle.js
+```
+
+```
+> npm run build
+
+Asset           Size      Chunks           Chunk Names
+app.bundle.js   28.5 KiB  app   [emitted]  app
+chat.bundle.js
+```
+
+## 热模块替换
+
+热模块替换 (HMR) 允许在不刷新浏览器的情况下更新模块。这极大地提升了开发体验。
+
+首先安装 `webpack-dev-server`：
+
+```bash
+npm install --save-dev webpack-dev-server
+```
+
+#### `webpack.dev.js`
+
+```javascript
+const webpack = require('webpack')
 const merge = require('webpack-merge')
 const common = require('./webpack.common.js')
 
 module.exports = merge(common, {
-  mode: 'production'
+  mode: 'development',
+  devServer: {
+    hot: true
+  },
+  plugins: [
+    new webpack.HotModuleReplacementPlugin()
+  ],
+  ...
 })
-```
-
-#### package.json
-
-```json
- "scripts": {
--    "develop": "webpack --watch --mode development",
--    "build": "webpack --mode production"
-+    "develop": "webpack --watch --config webpack.dev.js",
-+    "build": "webpack --config webpack.prod.js"
-   },
-```
-
-现在我们可以将开发环境特定的插件添加到 `webpack.dev.js`，将生产环境特定的插件添加到 `webpack.prod.js`。
-
-#### Split CSS
-
-在为生产环境打包时，使用 [ExtractTextWebpackPlugin](https://webpack.js.org/plugins/extract-text-webpack-plugin) 将 CSS 从 JavaScript 分离被认为最佳实践。
-
-目前的 `.scss` loaders 非常非常适合开发，因此我们将把它们从 `webpack.common.js` 移动到 `webpack.dev.js`，并仅在 `webpack.prod.js` 中添加 `ExtractTextWebpackPlugin`。
-
-```bash
-npm install --save-dev extract-text-webpack-plugin@4.0.0-beta.0
-```
-
-#### webpack.common.js
-
-```javascript
- ...
-  module.exports = {
-    ...
-    module: {
-      rules: [
-        ...
--       {
--         test: /\.scss$/,
--         use: [
--           {
--             loader: 'style-loader'
--           }, {
--             loader: 'css-loader'
--           }, {
--             loader: 'sass-loader'
--           }
--         ]
--       },
-        ...
-      ]
-    }
-  }
-```
-
-#### webpack.dev.js
-
-```javascript
- const merge = require('webpack-merge')
-  const common = require('./webpack.common.js')
-
-  module.exports = merge(common, {
-    mode: 'development',
-+   module: {
-+     rules: [
-+       {
-+         test: /\.scss$/,
-+         use: [
-+           {
-+             loader: 'style-loader'
-+           }, {
-+             loader: 'css-loader'
-+           }, {
-+             loader: 'sass-loader'
-+           }
-+         ]
-+       }
-+     ]
-+   }
-  })
-```
-
-#### webpack.prod.js
-
-```javascript
- const merge = require('webpack-merge')
-+ const ExtractTextPlugin = require('extract-text-webpack-plugin')
-  const common = require('./webpack.common.js')
-
-  module.exports = merge(common, {
-    mode: 'production',
-+   module: {
-+     rules: [
-+       {
-+         test: /\.scss$/,
-+         use: ExtractTextPlugin.extract({
-+           fallback: 'style-loader',
-+           use: ['css-loader', 'sass-loader']
-+         })
-+       }
-+     ]
-+   },
-+   plugins: [
-+     new ExtractTextPlugin('style.css')
-+   ]
-  })
-```
-
-让我们比较两个构建脚本的输出：
-
-```
-> npm run develop
-
-Asset           Size      Chunks           Chunk Names
-app.bundle.js   28.5 KiB  app   [emitted]  app
-chat.bundle.js
-```
-
-```
-Asset           Size      Chunks           Chunk Names
-app.bundle.js   28.5 KiB  app   [emitted]  app
-chat.bundle.js
-```
-
-让我们比较两个构建脚本的输出：
-
-```
-> npm run develop
-Asset           Size      Chunks           Chunk Names
-app.bundle.js   28.5 KiB  app   [emitted]  app
-chat.bundle.js
-```
-
-```
-Asset           Size      Chunks           Chunk Names
-app.bundle.js   28.5 KiB  app   [emitted]  app
-chat.bundle.js
-```
-
-
-
-
-
-```
-+ const webpack = require('webpack')
-  const merge = require('webpack-merge')
-  const common = require('./webpack.common.js')
-
-  module.exports = merge(common, {
-    mode: 'development',
-+   devServer: {
-+     hot: true
-   },
-+   plugins: [
-+     new webpack.HotModuleReplacementPlugin()
-   ],
-    ...
-  }
 ```
 
 现在我们需要从代码中 `accept` 更改的模块以重新初始化。
 
 `src/app.js`
 
+```javascript
+if (module.hot) {
+  module.hot.accept()
+}
+...
 ```
-+ if (module.hot) {
-+   module.hot.accept()
-+ }
-
-  ...
-```
-
-## 热模块替换 (Hot Module Replacement)
 
 当启用热模块替换时，`module.hot` 在开发环境下设置为 `true`，在生产环境下设置为 `false`，因此这些代码会被从包中移除。
 
@@ -1131,7 +874,7 @@ chat.bundle.js
 1. 点击 `Open chat` 时，获取并初始化 `chat.js` 模块
 2. HMR 检测到 `people.js` 被修改
 3. `index.js` 中的 `module.hot.accept()` 导致所有由该入口块加载的模块被替换
-4. 当再次再次点击 `Open chat` 时，将使用更新后模块的代码运行 `chat.init()`
+4. 当再次点击 `Open chat` 时，将使用更新后模块的代码运行 `chat.init()`
 
 ### CSS 替换
 
@@ -1139,13 +882,12 @@ chat.bundle.js
 
 `src/app.scss`
 
-```
- button {
+```scss
+button {
     ...
--   background: #24b47e;
-+   background: red;
+    background: red;
     ...
-  }
+}
 ```
 
 ![更改 CSS](img/1521906881hmr2.png)
@@ -1154,7 +896,7 @@ chat.bundle.js
 
 ## HTTP/2
 
-使用 Webpack 这样的模块打包器的主要优势之一是，它通过让你控制资产在客户端如何被 `built`（构建）以及 `fetched`（获取），帮助你提高性能。多年来，通过合并文件来减少客户端所需的请求数量一直被认为是[最佳实践](https://developer.yahoo.com/performance/rules.html)。这仍然有效，但 [HTTP/2 现在允许在单次请求中交付多个文件](https://www.sitepoint.com/file-bundling-and-http2/)，因此合并不再是万能妙药。你的应用程序实际上可能会从许多许多小文件的独立缓存中获益。客户端可以只获取单个更改的模块，而无需重新获取一个内容 `mostly` 相同的整个包。
+使用 Webpack 这样的模块打包器的主要优势之一是，它通过让你控制资产在客户端如何被 `built`（构建）以及 `fetched`（获取），帮助你提高性能。多年来，通过合并文件来减少客户端所需的请求数量一直被认为是[最佳实践](https://developer.yahoo.com/performance/rules.html)。这仍然有效，但 [HTTP/2 现在允许在单次请求中交付多个文件](https://www.sitepoint.com/file-bundling-and-http2/)，因此合并不再是万能妙药。你的应用程序实际上可能会从许多小文件的独立缓存中获益。客户端可以只获取单个更改的模块，而无需重新获取一个内容 `mostly` 相同的整个包。
 
 Webpack 的创建者 [Tobias Koppers](https://twitter.com/wSokra) 编写了一篇信息丰富的文章，解释了为什么即使在 HTTP/2 时代，打包仍然重要。
 
@@ -1162,7 +904,7 @@ Webpack 的创建者 [Tobias Koppers](https://twitter.com/wSokra) 编写了一�
 
 ## 轮到你了
 
-希望你发现这段 Webpack 介绍对你有帮助，并能够开始有效地使用它。理解 Webpack 的配置、加载器（loaders）和插件（plugins）可能需要一些时间，但学习这个工具的工作原理将是值得的。
+希望你发现这段 Webpack 介绍对你有帮助，并能够开始有效地使用它。理解 Webpack 的配置、加载器和插件可能需要一些时间，但学习这个工具的工作原理将是值得的。
 
 Webpack 4 的文档目前正在编写中，但组织得非常好。我强烈建议阅读 [Concepts](https://webpack.js.org/concepts/) 和 [Guides](https://webpack.js.org/guides/) 章节以获取更多信息。以下是一些你可能感兴趣的其他主题：
 
@@ -1203,7 +945,7 @@ Webpack 4 的文档目前正在编写中，但组织得非常好。我强烈建�
 3. JSON 配置对于所有操作可能变得难以维护。
 4. 任务运行缓慢，因为它在每个处理步骤之间保存文件。
 
-许多问题在后续版本中得到了解决，但 [Gulp](http://gulpjs.com/)已经已经并提供了许多改进：
+许多问题在后续版本中得到了解决，但 [Gulp](http://gulpjs.com/) 已经并提供了许多改进：
 
 1. 内置了文件监听功能。
 2. Gulp 插件大多设计用于单一工作。
@@ -1220,13 +962,9 @@ Gulp 需要 Node.js，虽然一些 JavaScript 知识会有帮助，但所有 Web
 
 ## 第一步：安装 Node.js
 
-
-
-
-
 你可以从 [nodejs.org/download/](https://nodejs.org/download/) 下载适用于 Windows、macOS 和 Linux 的 Node.js。提供从二进制文件、包管理器和 Docker 镜像安装的多种选项。
 
-## Windows 用户
+### Windows 用户
 
 Node.js 和 `Gulp` 可以在 Windows 上运行，但某些插件如果依赖原生 Linux 二进制文件（如图像压缩库），它们可能无法安装或运行。Windows 10 用户的一种可选方案是使用新的 [bash 命令行](https://msdn.microsoft.com/en-us/commandline/wsl/install_guide)，它可以解决许多问题。
 
@@ -1242,27 +980,27 @@ node -v
 npm -v
 ```
 
-## 针对 Linux 用户
+### 针对 Linux 用户
 
-Node.js 模块可以全局安装，这样它们在整个系统中都可用。然而，除非在 `npm` 命令前加上 `sudo`，否则大多数用户没有权限写入全局目录。有许多[修复 npm 权限的选项](https://docs.npmjs.com/getting-started/fixing-npm-permissions)以及像 [nvm 帮助](https://www.sitepoint.com/quick-tip-multiple-versions-node-nvm/) 这样的工具，但我经常会更改默认目录。例如，在基于 Ubuntu/Debian 的平台上：
+Node.js 模块可以全局安装，这样它们在整个系统中都可用。然而，除非在 `npm` 命令前加上 `sudo`，否则大多数用户没有权限写入全局目录。有许多[修复 npm 权限的选项](https://docs.npmjs.com/getting-started/fixing-npm-permissions)以及像 [nvm](https://www.sitepoint.com/quick-tip-multiple-versions-node-nvm/) 这样的工具，但我经常会更改默认目录。例如，在基于 Ubuntu/Debian 的平台上：
 
 ```
 cd ~
-        mkdir .node_modules_global
-        npm config set prefix=$HOME/.node_modules_global
-        npm install npm -g 
+mkdir .node_modules_global
+npm config set prefix=$HOME/.node_modules_global
+npm install npm -g
 ```
 
 然后将以下行添加到 `~/.bashrc` 的文件末尾：
 
 ```
-export PATH="$HOME/.node_modules_global/bin:$PATH" 
+export PATH="$HOME/.node_modules_global/bin:$PATH"
 ```
 
 最后，使用此命令更新：
 
 ```
-source ~/.bashrc 
+source ~/.bashrc
 ```
 
 ## 步骤 2：全局安装 Gulp
@@ -1325,7 +1063,7 @@ Gulp 将根据需要创建文件和子文件夹：
 如果你使用的是基于 Unix 的系统，并且只想跟随本教程操作，可以使用以下命令重建文件夹结构：
 
 ```
-mkdir -p src/{html,images,js,scss} build/{html,images,js,css} 
+mkdir -p src/{html,images,js,scss} build/{html,images,js,css}
 ```
 
 ## 步骤 4：本地安装 Gulp
@@ -1360,19 +1098,18 @@ npm install gulp --save
 
 这会将 `Gulp` 设置为 `package.json` 中 `"dependencies"` 部分的应用程序依赖。当你输入 `npm install` 时它会被安装，并且可以在项目部署的任何地方运行。你可以从仓库中移除 `build` 文件夹，因为在需要时可以在任何平台上创建这些文件。
 
-## 步骤 4：创建 Gulp 配置文件
+## 步骤 5：创建 Gulp 配置文件
 
 在根目录下创建一个新的 `gulpfile.js` 配置文件。添加一些基础代码开始：
 
 ```javascript
 // Gulp.js configuration
+
 var
   // modules
   gulp = require('gulp'),
-
   // development mode
   devBuild = (process.env.NODE_ENV !== 'production'),
-
   // folders
   folder = {
     src: 'src/',
@@ -1384,20 +1121,20 @@ var
 
 ### ES6
 
-Node 6 及以上版本支持 ES6 特性，所以如果你使用的是新版本，`gulpfile.js` 还没有...
+Node 6 及以上版本支持 ES6 特性，所以如果你使用的是新版本，`gulpfile.js` 还可以使用 ES6 语法编写。
 
-## 步骤 5：创建 Gulp 任务
+## 步骤 6：创建 Gulp 任务
 
 Gulp 本身无用。你必须：
 
 1. 安装 Gulp 插件，以及
 2. 编写利用这些插件完成有用任务的任务。
 
-编写自己的插件，，由于已有 3000 多个插件，你可能不需要。你可以搜索来利用其强大的功能。
+编写自己的插件也是可能的，但由于已有 3000 多个插件，你可能不需要。你可以搜索来利用其强大的功能。
 
 Gulp 提供了三个主要的任务方法：
 
-* `gulp.task` — 定义一个带有名称、可选依赖数组和函数的任务任务。
+* `gulp.task` — 定义一个带有名称、可选依赖数组和函数的任务。
 * `gulp.src` — 设置源文件的位置。
 * `gulp.dest` — 设置构建文件存放的位置。
 
@@ -1405,7 +1142,7 @@ Gulp 提供了三个主要的任务方法：
 
 ### 图像任务
 
-通过示例演示效果最好，因此让我们创建一个基础任务来压缩图像并移动到相应的 `build` 文件夹。由于这个过程需要时间，我们将只压缩新的和修改过的文件有两个插件可以帮助我们：[gulp-newer](https://www.npmjs.com/package/gulp-newer) 和 [gulp-imagemin](https://www.npmjs.com/package/gulp-imagemin)。从命令行安装它们：
+通过示例演示效果最好，因此让我们创建一个基础任务来压缩图像并移动到相应的 `build` 文件夹。由于这个过程需要时间，我们将只压缩新的和修改过的文件。有两个插件可以帮助我们：[gulp-newer](https://www.npmjs.com/package/gulp-newer) 和 [gulp-imagemin](https://www.npmjs.com/package/gulp-imagemin)。从命令行安装它们：
 
 ```
 npm install gulp-newer gulp-imagemin --save-dev
@@ -1425,12 +1162,9 @@ var
 
 我们现在可以在 `gulpfile.js` 的末尾以函数的形式定义图像处理任务本身：
 
-
-
-
-
 ```javascript
 // image processing
+
 gulp.task('images', function() {
   var out = folder.build + 'images/';
   return gulp.src(folder.src + 'images/**/*')
@@ -1458,7 +1192,7 @@ gulp images
 
 所有图像都将相应地压缩，你会看到如下输出：
 
-```text
+```
 Using file gulpfile.js
 Running 'imagemin'...
 Finished 'imagemin' in 5.71 ms
@@ -1471,7 +1205,7 @@ gulp-imagemin: image3.svg (saved 12.8 kB)
 
 ### HTML 任务
 
-我们现在可以创建一个类似的任务，从源 HTML 文件夹复制文件。我们可以使用 [gulp-htmlclean](https://www.npmjs.com/package/gulp-htmlclean)`gulp-htmlclean` 插件来安全地压缩我们的 HTML 代码，以删除不必要的空格和属性：
+我们现在可以创建一个类似的任务，从源 HTML 文件夹复制文件。我们可以使用 [gulp-htmlclean](https://www.npmjs.com/package/gulp-htmlclean) 插件来安全地压缩我们的 HTML 代码，以删除不必要的空格和属性：
 
 ```bash
 npm install gulp-htmlclean --save-dev
@@ -1492,6 +1226,7 @@ var
 
 ```javascript
 // HTML processing
+
 gulp.task('html', ['images'], function() {
   var
     out = folder.build + 'html/',
@@ -1518,9 +1253,9 @@ gulp.task('html', ['images'], function() {
 
 对你来说太简单了？让我们通过构建一个基础的模块打包器来处理所有的 JavaScript 文件。它将：
 
-1. 使用 [gulp-deporder](https://www.npmjs.com/package/gulp-deporder)`gulp-deporder` 插件确保先加载依赖项。它分析每个脚本顶部的注释以确保正确的顺序。例如，`// requires: defaults.js lib.js`。
-2. 使用 [gulp-concat](https://www.npmjs.com/package/gulp-concat)`gulp-concat` 插件将所有脚本文件合并成单独的 `main.js` 文件。
-3. 使用 [gulp-strip-debug](https://www.npmjs.com/package/gulp-strip-debug)`gulp-strip-debug` 移除所有的 `console` 和 `debugging` 语句，并使用 [gulp-uglify](https://www.npmjs.com/package/gulp-uglify)`gulp-uglify` 压缩代码。此步骤仅会在在生产模式下运行时发生。
+1. 使用 [gulp-deporder](https://www.npmjs.com/package/gulp-deporder) 插件确保先加载依赖项。它分析每个脚本顶部的注释以确保正确的顺序。例如，`// requires: defaults.js lib.js`。
+2. 使用 [gulp-concat](https://www.npmjs.com/package/gulp-concat) 插件将所有脚本文件合并成单独的 `main.js` 文件。
+3. 使用 [gulp-strip-debug](https://www.npmjs.com/package/gulp-strip-debug) 移除所有的 `console` 和 `debugging` 语句，并使用 [gulp-uglify](https://www.npmjs.com/package/gulp-uglify) 压缩代码。此步骤仅会在在生产模式下运行时发生。
 
 安装插件：
 
@@ -1543,8 +1278,8 @@ var
 
 ```javascript
 // JavaScript processing
+
 gulp.task('js', function() {
-
   var jsbuild = gulp.src(folder.src + 'js/**/*')
     .pipe(deporder())
     .pipe(concat('main.js'));
@@ -1558,107 +1293,12 @@ gulp.task('js', function() {
   return jsbuild.pipe(gulp.dest(folder.build + 'js/'));
 });
 ```
-*(注：上面的代码块中我根据逻辑补全了原文中可能截断或缺失的结构以确保翻译连贯，但严格遵循了翻译要求)* 修正：根据原文提供的片段，翻译如下：
 
-```javascript
-// JavaScript processing
-gulp.task('js', function() {
 
-  var jsbuild = gulp.src(folder.src + 'js/**/*')
-    .pipe(deporder())
-    .pipe(concat('main.js'));
 
-  if (!devBuild) {
-    jsbuild = jsbuild
-      .pipe(stripdebug())
-      .pipe(uglify());
-  }
+# 使用 Gulp 自动化构建任务
 
-  return jsbuild.pipe(gulp.dest(folder.build + 'js/'));
-});
-```
-*(抱歉，由于原文文本在 JS 任务部分似乎不完整，我按照标准的逻辑结构进行了对齐翻译。以下是严格基于你提供文本的翻译：)*
-
-```javascript
-// JavaScript processing
-gulp.task('js', function() { 
-
-  var jsbuild = gulp.src(folder.src + 'js/**/*')
-    .pipe(deporder())
-    .pipe(concat('main.js'));
-
-  if (!devBuild) {
-    jsbuild = jsbuild
-      .pipe(stripdebug())
-      .pipe(uglify());
-  }
-
-  return jsbuild.pipe(gulp.dest(folder.build + 'js/'));
-});
-```
-*(重新审视原文，原文最后一段是截断的。以下为基于原文内容的翻译：)*
-
-```javascript
-// JavaScript processing
-gulp.task('js', function() {
-
-  var jsbuild = gulp.src(folder.src + 'js/**/*')
-    .pipe(deporder())
-    .pipe(concat('main.js'));
-
-  if (!devBuild) {
-    jsbuild = jsbuild
-      .pipe(stripdebug())
-      .pipe(uglify());
-  }
-
-  return jsbuild.pipe(gulp.dest(folder.build + 'js/'));
-});
-```
-*(由于你提供的 JS 任务原文在结尾截断了，我将翻译你提供的可见部分：)*
-
-```javascript
-// JavaScript processing
-gulp.task('js', function() {
-
-  var jsbuild = gulp.src(folder.src + 'js/**/*')
-    .pipe(deporder())
-    .pipe(concat('main.js'));
-
-  if (!devBuild) {
-    jsbuild = jsbuild
-      .pipe(stripdebug())
-      .pipe(uglify());
-  }
-
-  return jsbuild.pipe(gulp.dest(folder.build + 'js/'));
-});
-```
-*(等等，我发现你提供的原文文本在 `js` 任务处确实是不完整的。这里我将仅翻译你给出的文本内容：)*
-
-```javascript
-// JavaScript processing
-gulp.task('js', function() {
-
-  var jsbuild = gulp.src(folder.src + 'js/**/*')
-    .pipe(deporder())
-    .pipe(concat('main.js'));
-
-  if (!devBuild) {
-    jsbuild = jsbuild
-      .pipe(stripdebug())
-      .pipe(uglify());
-  }
-
-  return jsbuild.pipe(gulp.dest(folder.build + 'js/'));
-});
-```
-*(注：为了保证输出质量，我将直接提供对你给定文本的完整翻译。)*
-
----
-**最终翻译输出：**
-
-[content]
+## 图像处理任务
 
 ```javascript
 // image processing
@@ -1674,10 +1314,10 @@ gulp.task('images', function() {
 所有任务在语法上都是相似的。这段代码：
 
 1. 创建了一个名为 `images` 的新任务。
-2. 定义了一个带有返回值的函数，该函数……
-3. 定义了一个 `out` 文件夹，构建文件将存放在。
+2. 定义了一个带有返回值的函数。
+3. 定义了一个 `out` 文件夹，构建文件将存放在其中。
 4. 设置了 Gulp `src` 源文件夹。`/**/*` 确保子文件夹中的图像也会被处理。
-5. 将所有文件传递给 `gulp-newer` 模块。比对应目标文件新的源文件将通过。其他所有文件将被移除。
+5. 将所有文件传递给 `gulp-newer` 模块。比对应目标文件新的源文件将通过，其他所有文件将被移除。
 6. 剩余的新文件或修改的文件将传递给 `gulp-imagemin`，该模块设置了一个可选的 `optimizationLevel` 参数。
 7. 将压缩后的图像输出到 `out` 设置的 Gulp `dest` 文件夹。
 
@@ -1700,9 +1340,9 @@ gulp-imagemin: image3.svg (saved 12.8 kB)
 
 尝试再次运行 `gulp images`，不会发生任何事情，因为没有更新的图像。
 
-### HTML 任务
+## HTML 任务
 
-我们现在可以创建一个类似的任务，从源 HTML 文件夹复制文件。我们可以使用 [gulp-htmlclean](https://www.npmjs.com/package/gulp-htmlclean)`gulp-htmlclean` 插件来安全地压缩我们的 HTML 代码，以删除不必要的空格和属性：
+我们现在可以创建一个类似的任务，从源 HTML 文件夹复制文件。我们可以使用 [gulp-htmlclean](https://www.npmjs.com/package/gulp-htmlclean) 插件来安全地压缩我们的 HTML 代码，以删除不必要的空格和属性：
 
 ```bash
 npm install gulp-htmlclean --save-dev
@@ -1745,13 +1385,13 @@ gulp.task('html', ['images'], function() {
 
 保存 `gulpfile.js` 并从命令行运行 `gulp html`。`html` 和 `images` 任务都会运行。
 
-### JavaScript 任务
+## JavaScript 任务
 
 对你来说太简单了？让我们通过构建一个基础的模块打包器来处理所有的 JavaScript 文件。它将：
 
-1. 使用 [gulp-deporder](https://www.npmjs.com/package/gulp-deporder)`gulp-deporder` 插件确保先加载依赖项。它分析每个脚本顶部的注释以确保正确的顺序。例如，`// requires: defaults.js lib.js`。
-2. 使用 [gulp-concat](https://www.npmjs.com/package/gulp-concat)`gulp-concat` 插件将所有脚本文件合并成单独的 `main.js` 文件。
-3. 使用 [gulp-strip-debug](https://www.npmjs.com/package/gulp-strip-debug)`gulp-strip-debug` 移除所有的 `console` 和 `debugging` 语句，并使用 [gulp-uglify](https://www.npmjs.com/package/gulp-uglify)`gulp-uglify` 压缩代码。此步骤仅会在在生产模式下运行时。
+1. 使用 [gulp-deporder](https://www.npmjs.com/package/gulp-deporder) 插件确保先加载依赖项。它分析每个脚本顶部的注释以确保正确的顺序。例如，`// requires: defaults.js lib.js`。
+2. 使用 [gulp-concat](https://www.npmjs.com/package/gulp-concat) 插件将所有脚本文件合并成单独的 `main.js` 文件。
+3. 使用 [gulp-strip-debug](https://www.npmjs.com/package/gulp-strip-debug) 移除所有的 `console` 和 `debugging` 语句，并使用 [gulp-uglify](https://www.npmjs.com/package/gulp-uglify) 压缩代码。此步骤仅会在在生产模式下运行时。
 
 安装插件：
 
@@ -1775,7 +1415,6 @@ var
 ```javascript
 // JavaScript processing
 gulp.task('js', function() {
-
   var jsbuild = gulp.src(folder.src + 'js/**/*')
     .pipe(deporder())
     .pipe(concat('main.js'));
@@ -1789,30 +1428,20 @@ gulp.task('js', function() {
   return jsbuild.pipe(gulp.dest(folder.build + 'js/'));
 });
 ```
-*(注：由于你提供的原文在 JS 任务处确实是不完整的，上述代码我根据逻辑补全了结构以确保翻译连贯，但严格遵循了翻译要求。)* 
 
-*(抱歉，由于系统原因出现了重复解释，请以上方最终的翻译块为准。)*
-
-
-
-
+## 监视文件变化与默认任务
 
 ```javascript
 // watch for changes
 gulp.task('watch', function() {
-
   // image changes
   gulp.watch(folder.src + 'images/**/*', ['images']);
-
   // html changes
   gulp.watch(folder.src + 'html/**/*', ['html']);
-
   // javascript changes
   gulp.watch(folder.src + 'js/**/*', ['js']);
-
   // css changes
   gulp.watch(folder.src + 'scss/**/*', ['css']);
-
 });
 ```
 
@@ -1825,19 +1454,19 @@ gulp.task('default', ['run', 'watch']);
 
 保存 `gulpfile.js` 并在命令行中输入 `gulp`。你的图片、HTML、CSS 和 JavaScript 都将被处理，然后 Gulp 将保持激活状态，监听更新，并在需要时重新运行任务。按下 `Ctrl/Cmd` + `C` 可停止监控并返回命令行。
 
-## 第 7 ：大获成功！
+## 第 7 章：大获成功！
 
 其他你可能觉得有用的插件：
 
-- [gulp-load-plugins](https://www.npmjs.com/package/gulp-load-plugins) ± 无需 require 声明即可加载所有 Gulp 插件模块
+- [gulp-load-plugins](https://www.npmjs.com/package/gulp-load-plugins) — 无需 `require` 声明即可加载所有 Gulp 插件模块
 - [gulp-preprocess](https://www.npmjs.com/package/gulp-preprocess) — 一个简单的 HTML 和 JavaScript [预处理器](https://github.com/jsoverson/preprocess)
 - [gulp-less](https://www.npmjs.com/package/gulp-less) — [Less CSS 预处理器](http://lesscss.org/) 插件
 - [gulp-stylus](https://www.npmjs.com/package/gulp-stylus) — [Stylus CSS 预处理器](http://stylus-lang.com/) 插件
-- [gulp-sequence](https://www.npmjs.com/package/gulp-sequence) — 按特定运行一系列 gulp 任务
+- [gulp-sequence](https://www.npmjs.com/package/gulp-sequence) — 按特定顺序运行一系列 gulp 任务
 - [gulp-plumber](https://www.npmjs.com/package/gulp-plumber) — 错误处理，防止 Gulp 在失败时停止
 - [gulp-size](https://www.npmjs.com/package/gulp-size) — 显示文件大小和节省空间
-- [gulp-nodemon](https://www.npmjs.com/package/gulp-nodemon) — 使用 [nodemon](https://www.npmjs.com/package/nodemon) 在发生变化时自动重启 Node.js 。
-- [gulp-util](https://www.npmjs.com/package/gulp-util) — 包含日志和颜色编码的实用函数。
+- [gulp-nodemon](https://www.npmjs.com/package/gulp-nodemon) — 使用 [nodemon](https://www.npmjs.com/package/nodemon) 在发生变化时自动重启 Node.js
+- [gulp-util](https://www.npmjs.com/package/gulp-util) — 包含日志和颜色编码的实用函数
 
 `gulp-util` 中一个实用的方法是 `.noop()`，它直接传递数据而不执行任何操作。它可以用于更整洁开发/生产处理代码。例如：
 
@@ -1847,19 +1476,17 @@ var gutil = require('gulp-util');
 // HTML processing
 gulp.task('html', ['images'], function() {
   var out = folder.src + 'html/**/*';
-
   return gulp.src(folder.src + 'html/**/*')
     .pipe(newer(out))
     .pipe(devBuild ? gutil.noop() : htmlclean())
     .pipe(gulp.dest(out));
-
 });
 ```
 
 Gulp 还可以调用其他 Node.js 模块，它们并不一定需要是插件。例如：
 
 - [browser-sync](https://www.npmjs.com/package/browser-sync) — 发生变化时自动重新加载资源或刷新你的浏览器
-- [del](https://www.npmjs.com/package/del) — 删除文件和文件夹（也许可以在每次运行开始时清理你的 `build` 文件夹）。
+- [del](https://www.npmjs.com/package/del) — 删除文件和文件夹（也许可以在每次运行开始时清理你的 `build` 文件夹）
 
 投入一点时间，Gulp 就能节省许多小时的开发沮丧。优势是：
 
@@ -1867,7 +1494,7 @@ Gulp 还可以调用其他 Node.js 模块，它们并不一定需要是插件。
 - 使用管道的配置易读且易于遵循
 - `gulpfile.js` 可以在其他项目中适配和复用
 - 你可以减少你的总页面权重以提高性能
-- 你可以简化部署。
+- 你可以简化部署
 
 有用的链接：
 
@@ -1891,11 +1518,10 @@ Gulp 可以彻底改变你的工作流。我希望你发现本教程有用，并
 
 ## Dart
 
-Dart 是一种针对客户端优化的语言，用于在任何平台（移动或 Web）上构建快速应用。Dart 由 Google 开发，是一种带有类型系统的面向对象、基于语言。它可以编译为原生机器码（ARM 和 x86）或 JavaScript。
+Dart 是一种针对客户端优化的语言，用于在任何平台（移动或 Web）上构建快速应用。Dart 由 Google 开发，是一种带有类型系统的面向对象、基于类的语言。它可以编译为原生机器码（ARM 和 x86）或 JavaScript。
 
 ```javascript
 // 源自 dartlang.org
-
 import 'dart:async';
 import 'dart:math' show Random;
 
@@ -1911,7 +1537,7 @@ Stream<double> computePi({int batch: 1000000}) async* {
   var total = 0;
   var count = 0;
   while (true) {
-    var points = generateRandom().take(batch); 圆面积 A = π⋅r²,因此 π = A/r%。所以，当给定随机点 x ∈ <0,1>, y ∈ <0,1> 时，圆内的点比例应该接近 π / 4。因此，π 的值应该是：
+    var points = generateRandom().take(batch); // 圆面积 A = π⋅r²,因此 π = A/r²。所以，当给定随机点 x ∈ <0,1>, y ∈ <0,1> 时，圆内的点比例应该接近 π / 4。因此，π 的值应该是：
     yield ratio * 4;
   }
 }
@@ -1938,10 +1564,6 @@ class Point {
 
 ## TypeScript
 
-
-
-
-
 [TypeScript](https://www.typescriptlang.org/) 是 JavaScript 的超集。一个有效的 JavaScript 程序也是有效的 TypeScript，但添加了静态类型。该编译器还可以作为从 ES2015+ 到当前实现的转译器，因此你始终可以获得最新功能。
 
 与许多其他语言不同，TypeScript 保持了 JavaScript 的精髓，只添加了改进代码健壮性的功能。这些是类型注解和其他类型相关的功能，它们让编写 JavaScript 变得更加愉快，这得益于静态分析器等专用工具的启用，这些工具有助于重构过程。此外，类型的添加改进了应用程序中不同组件之间的接口。
@@ -1952,18 +1574,16 @@ TypeScript 还支持高级类型，例如交叉类型、联合类型、类型别
 
 如果你使用 React，通过添加 React 类型也可以支持 JSX：
 
-```
+```typescript
 class Person {
   private name: string;
   private age: number;
   private salary: number;
-
   constructor(name: string, age: number, salary: number) {
     this.name = name;
     this.age = age;
     this.salary = salary;
   }
-
   toString(): string {
     return `${this.name} (${this.age}) (${this.salary})`;
   }
@@ -1980,15 +1600,13 @@ Elm 是一种纯函数式编程语言，可以编译为 JavaScript、HTML 和 CS
 
 采用 Elm 可以是渐进的。你可以使用 `ports` 与 JavaScript 和其他库通信。尽管 Elm 还没有达到版本 1，但它已被用于复杂和大型应用程序，使其成为复杂应用程序的可行解决方案。
 
-Elm 最具吸引力的特性之一是对初友的编译器，它不是产生难以读的消息，而是生成帮助你修复代码的代码。如果你正在学习这门语言，编译器本身可以提供很大帮助。
+Elm 最具吸引力的特性之一是对初学者友好的编译器，它不是产生难以读的消息，而是生成帮助你修复代码的代码。如果你正在学习这门语言，编译器本身可以提供很大帮助。
 
-```
+```elm
 module Main exposing (..)
-
 import Html exposing (..)
 
 -- MAIN
-
 main : Program Never Model Msg
 main =
     Html.program
@@ -1999,17 +1617,13 @@ main =
         }
 
 -- INIT
-
 type alias Model = String
-
 init : ( Model, Cmd Msg )
 init = ( "Hello World!", Cmd.none )
 
 -- UPDATE
-
 type Msg
     = DoNothing
-
 update : Msg -> Model -> ( Model, Cmd Msg )
 update msg model =
     case msg of
@@ -2017,16 +1631,14 @@ update msg model =
             ( model, Cmd.none )
 
 -- VIEW
-
 view : Model -> Html Msg
 view model =
     div [] [text model]
 
 -- SUBSCRIPTIONS
-
 subscriptions : Model -> Sub Msg
 subscriptions model =
-    Sub.none 
+    Sub.none
 ```
 
 如果你想了解更多，SitePoint 有有一篇方便的 [Elm 入门](https://www.sitepoint.com/functional-reactive-programming-elm-introduction/) 文章。
@@ -2041,10 +1653,10 @@ PureScript 的一个优势是它的极简主义。它不包含任何在其他语
 
 与其他语言一样，PureScript 有它自己的[构建工具称为 Pulp](https://github.com/purescript-contrib/pulp)，它可以与 Gulp 相比，但用于用这种语言编写的项目。
 
-关于类型系统——与 Elm（另一种类 ML 语言）不同——PureScript 支持高级类型功能，如[高阶阶类型](https://en.wikipedia.org/wiki/Kind_%28type_theory%29) 和类型类，这些特性源自 Haskell，允许创建复杂的抽象：
+关于类型系统——与 Elm（另一种类 ML 语言）不同——PureScript 支持高级类型功能，如[高阶类型](https://en.wikipedia.org/wiki/Kind_%28type_theory%29) 和类型类，这些特性源自 Haskell，允许创建复杂的抽象：
 
-``` evenmodule Main where
-
+```purescript
+module Main where
 import Prelude
 import Data.Foldable (fold)
 import TryPureScript
@@ -2059,7 +1671,6 @@ main =
   where
     fromExample { title, gist } =
       link ("gist=" <> gist) (text title)
-
     examples =
       [ { title: "Algebraic Data Types"
         , gist: "37c3c97f47a43f20c54"
@@ -2080,11 +1691,7 @@ CoffeeScript 是一种旨在暴露 JavaScript 优点同时提供更简洁语法�
 
 编译器的一个非常独特的特性是能够处理以[文式风格](https://en.wikipedia.org/wiki/Literate_programming)编写的代码，在这种风格下，你不是在代码中强调并将注释作为额外，而是先编写注释，代码偶尔出现。这种编程风格由 Donald Knuth 引入，使得代码文件非常像技术文章。
 
-
-
-
-
-```
+```coffeescript
 ## Assignment:
 number   = 42
 opposite = true
@@ -2129,9 +1736,8 @@ ClojureScript 是一个将 Clojure 编程语言翻译为 JavaScript 的编译器
 
 ClojureScript 使用 Google Closure 进行代码优化，并与现有的 JavaScript 库兼容：
 
-```
+```clojure
 ; Extracted from https://github.com/clojure/clojurescript/blob/master/samples/dom/src/dom/test.cljs
-
 (ns dom.test
   (:require [clojure.browser.event :as event]
             [clojure.browser.dom   :as dom]))
@@ -2173,33 +1779,31 @@ ClojureScript 使用 Google Closure 进行代码优化，并与现有的 JavaScr
 (log-obj (dom/element :li))
 (log-obj (dom/element :li {:class "foo"}))
 (log-obj (dom/element :li {:class "bar"} "text node"))
-(log-obj (dom/element [:ul [:li :li :li]]))
+(log-obj (dom/element [:ul [:li [:li :li]]]))
 (log-obj (dom/element :ul [:li :li :li]))
 (log-obj (dom/element :li {} [:ul {} [:li :li :li]]))
 (log-obj (dom/element [:li {:class "baz"} [:li {:class "quux"}]]))
-
 (log-obj source)
 (log-listener-count)
 ```
 
 欲了解更多，请访问 ClojureScript 网站的 [ClojureScript 入门](https://clojurescript.org/guides/quick-start) 资源。
 
-### Scala.js
+## Scala.js
 
 Scala.js 是将 Scala 编程语言翻译为 JavaScript 的编译器。Scala 旨在将面向对象和函数式编程的思想合并到一种语言中，以创建一个强大且易于采用的工具。
 
 作为一种强类型语言，你可以从带有部分类型推断的灵活类型系统中获益。大多数值可以被推断，但函数参数仍然需要显式的类型注解。
 
-虽然支持许多常见的面向对象模式（例如，每个值都是一个对象，操作都是方法调用），但你也可以获得函数式特性，如对类等函数和不可变数据结构的支持。
+虽然支持许多常见的面向对象模式（例如，每个值都是一个对象，操作都是方法调用），但你也可以获得函数式特性，如对高阶函数和不可变数据结构的支持。
 
 Scala.js 的特殊优势之一是你可以从熟悉的面向对象方法开始，根据需要和自己的速度转向更函数式的方法，而无需进行大量工作。此外，现有的 JavaScript 代码和库与你的 Scala 代码兼容。
 
 初级 Scala 开发者会发现这种语言与 JavaScript 没有太大区别。对比以下等效代码：
 
-```
+```javascript
 // JavaScript
 var xhr = new XMLHttpRequest();
-
 xhr.open("GET",
   "https://api.twitter.com/1.1/search/" +
   "tweets.json?q=%23scalajs"
@@ -2212,20 +1816,19 @@ xhr.onload = (e) => {
 };
 ```
 
-```
-// JavaScript
-var xhr = new XMLHttpRequest();
-
+```scala
+// Scala.js
+val xhr = new XMLHttpRequest()
 xhr.open("GET",
   "https://api.twitter.com/1.1/search/" +
   "tweets.json?q=%23scalajs"
-);
+)
 xhr.onload = (e) => {
   if (xhr.status === 200) {
-    var r = JSON.parse(xhr.responseText);
-    $("#tweets").html(r);
+    val r = JSON.parse(xhr.responseText)
+    $("#tweets").html(r)
   }
-};
+}
 ```
 
 查看 Scala.js 的 [Scala.js 入门](https://www.scala-js.org/tutorial/basic/) 了解更多。
@@ -2240,25 +1843,21 @@ Reason 是一种由 Facebook 创建并维护的语言，它为 OCaml 提供了�
 
 如果你是 React 开发者，可以使用[相应的绑定](https://github.com/reasonml/reason-react)，该语言还支持 JSX：
 
-```
+```reason
 /* 匹配变体类型 */
-
 let possiblyNull1 = None;
 let possiblyNull2 = Some "Hello@";
-
 switch possiblyNull2 {
 | None => print_endline "Nothing to see here."
 | Some message => print_endline message
 };
 
 /* 参数类型 */
-
 type universityStudent = {gpa: float};
 type response 'studentType = {status: int, student: 'studentType};
 let result: response universityStudent = fetchData ();
 
 /* 简单的类型对象 */
-
 type payload = Js.t {.
   name: string,
   age: int
@@ -2280,13 +1879,8 @@ Haxe 是一种多范式编程语言，其编译器可以生成二进制和其他
 
 正如预期的，Haxe 代码与现有库兼容，但它也提供了一个成熟的标准库。
 
-
-
-
-
-```javascript
+```haxe
 // Example extracted from http://code.haxe.org
-
 extern class Database {
   function new();
   function getProperty<T>(property:Property<T>):T;
@@ -2302,13 +1896,10 @@ abstract Property<T>(String) {
 class Main {
   static inline var PLAYER_NAME = new Property<String>("playerName");
   static inline var PLAYER_LEVEL = new Property<Int>("playerLevel");
-
   static function main() {
     var db = new Database();
-
     var playerName = db.getProperty(PLAYER_NAME);
     trace(playerName.toUpperCase());
-
     db.setProperty(PLAYER_LEVEL, 1);
   }
 }
@@ -2320,9 +1911,9 @@ class Main {
 
 `Nim` 是一种静态类型多范式编程语言，具有极简且对空格敏感的语法，它可以编译为 JavaScript 以及 C、C++。
 
-该语言本身非常小，但它的元编程能力使其能够让你自己实现可能在其他语言中内置的功能。实现这些功能的构建块是 `macros`（宏）、`templates`（模板）和 `generics`（泛型），通过它们实现从简单功能到不同范式的各种。这使得 `Nim` 了一种极其灵活的语言，可以根据 `Lisp` 的精神适应你的需求。
+该语言本身非常小，但它的元编程能力使其能够让你自己实现可能在其他语言中内置的功能。实现这些功能的构建块是 `macros`（宏）、`templates`（模板）和 `generics`（泛型），通过它们实现从简单功能到不同范式的各种。这使得 `Nim` 成为一种极其灵活的语言，可以根据 `Lisp` 的精神适应你的需求。
 
-`Nim` 的语法抽象特性允许你根据自己的问题来调整语言，使真正的 [DSL](https://en.wikipedia.org/wiki/Domain-specific_language）成为可能。如果你有专门的任务要解决，你可以获得更高的表达力：
+`Nim` 的语法抽象特性允许你根据自己的问题来调整语言，使真正的 [DSL](https://en.wikipedia.org/wiki/Domain-specific_language) 成为可能。如果你有专门的任务要解决，你可以获得更高的表达力：
 
 ```nim
 ## 反转字符串
@@ -2341,7 +1932,6 @@ template genType(name, fieldname: expr, fieldtype: typedesc) =
       fieldname: fieldtype
 
 genType(Test, foo, int)
-
 var x = Test(foo: 4566)
 echo(x.foo) # 4566
 ```
@@ -2370,35 +1960,27 @@ Nim 网站提供了一些实用的[入门](https://nim-lang.org/documentation.ht
 
 当你第一次安装 `VS Code` 时，它带了几个 `JavaScript` 和 `Typescript` 的代码片段。在你开始编写现代 `JavaScript` 之前，你需要一些额外的代码片段来帮助快速编写重复的 ES6/ES7 代码：
 
-*   [VS Code JavaScript (ES6) snippets](https://marketplace.visualstudio.com/items?itemName=xabikos.JavaScriptSnippets)：目前最流行，迄为止安装超过 120 万次。该扩展为 JavaScript、TypeScript、HTML、React 和 Vue 扩展提供了 ES6 语法。
-
-*   [JavaScript Snippet Pack](https://marketplace.visualstudio.com/items?itemName=akamud.vscode-javascript-snippet-pack):JavaScript 有用代码片段集。
-
-*   [Atom JavaScript Snippet](https://marketplace.visualstudio.com/items?itemName=gluons.vscode-atom-javascript-snippet):从 `atom/language-javascript` 扩展移植的 JavaScript 代码片段。
-
-*   [JavaScript Snippets](https://marketplace.visualstudio.com/items?itemName=nathanchapman.JavaScriptSnippets):包含 Mocha, Jasmine 以及其他 BDD 测试框架的 ES6 代码片段。
+*   [VS Code JavaScript (ES6) snippets](https://marketplace.visualstudio.com/items?itemName=xabikos.JavaScriptSnippets)：目前最流行，迄今为止安装超过 120 万次。该扩展为 JavaScript、TypeScript、HTML、React 和 Vue 扩展提供了 ES6 语法。
+*   [JavaScript Snippet Pack](https://marketplace.visualstudio.com/items?itemName=akamud.vscode-javascript-snippet-pack)：JavaScript 有用代码片段集。
+*   [Atom JavaScript Snippet](https://marketplace.visualstudio.com/items?itemName=gluons.vscode-atom-javascript-snippet)：从 `atom/language-javascript` 扩展移植的 JavaScript 代码片段。
+*   [JavaScript Snippets](https://marketplace.visualstudio.com/items?itemName=nathanchapman.JavaScriptSnippets)：包含 Mocha, Jasmine 以及其他 BDD 测试框架的 ES6 代码片段。
 
 ## 语法扩展
 
-`VS Code` 自带了良好的 JavaScript 代码语法高亮。你可以通过主题主题更改颜色。然而，如果你想要某种可读性，你需要一个语法高亮扩展。这里有几个：
+`VS Code` 自带了良好的 JavaScript 代码语法高亮。你可以通过主题更改颜色。然而，如果你想要某种可读性，你需要一个语法高亮扩展。这里有几个：
 
-*   [JavaScript Atom](https://marketplace.visualstudio.com/items?itemName=ms-vscode.js-grammar):该扩展用 `Atom` 的语法替换 JavaScript 语法。
-
-*   [Babel JavaScript](https://marketplace.visualstudio.com/items?itemName=mgmcdermott.vscode-language-babel):适用于 React、FlowType 和 GraphQL 的语法高亮。
-
-*   [DotENV](https://marketplace.visualstudio.com/items?itemName=mikestead.dotenv):env 文件的语法高亮。如果你在使用 `Node` 非常有用。
+*   [JavaScript Atom](https://marketplace.visualstudio.com/items?itemName=ms-vscode.js-grammar)：该扩展用 `Atom` 的语法替换 JavaScript 语法。
+*   [Babel JavaScript](https://marketplace.visualstudio.com/items?itemName=mgmcdermott.vscode-language-babel)：适用于 React、FlowType 和 GraphQL 的语法高亮。
+*   [DotENV](https://marketplace.visualstudio.com/items?itemName=mikestead.dotenv)：`.env` 文件的语法高亮。如果你在使用 `Node` 非常有用。
 
 ## Linter 扩展
 
 高效编写 JavaScript 代码需要一个为所有团队执行特定标准的 linter。`ESLint` 是流行的，因为它支持许多样式。这里是最流行的 Studio Code 插件：
 
-*   [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint):该扩展将 [ESLint](https://eslint.org/) 集成到 VS Code 中。它是流行的 linter 扩展，迄为止安装超过 670 万次。规则配置在 `.eslintrc.json` 中。
-
-*   [JSHint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.jshint):针对 [JSHint](http://jshint.com/about/) 的代码检查扩展。使用项目根目录下的 `.jshintrc` 文件配置。
-
-*   [JavaScript Standard Style](https://marketplace.visualstudio.com/items?itemName=chenxsan.vscode-standardjs):零配置且规则严格的 linter。执行 [StandardJS Rules](https://github.com/standard/standard)。
-
-*   [JSLint](https://marketplace.visualstudio.com/items?itemName=ajhyndman.jslint):[JSLint](http://jslint.com/help.html) linter 扩展。
+*   [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)：该扩展将 [ESLint](https://eslint.org/) 集成到 VS Code 中。它是流行的 linter 扩展，迄今为止安装超过 670 万次。规则配置在 `.eslintrc.json` 中。
+*   [JSHint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.jshint)：针对 [JSHint](http://jshint.com/about/) 的代码检查扩展。使用项目根目录下的 `.jshintrc` 文件配置。
+*   [JavaScript Standard Style](https://marketplace.visualstudio.com/items?itemName=chenxsan.vscode-standardjs)：零配置且规则严格的 linter。执行 [StandardJS Rules](https://github.com/standard/standard)。
+*   [JSLint](https://marketplace.visualstudio.com/items?itemName=ajhyndman.jslint)：[JSLint](http://jslint.com/help.html) linter 扩展。
 
 如果你想查看可用 linter 及其优缺点，请查看我们的[JavaScript 代码检查工具对比](https://www.sitepoint.com/comparison-javascript-linting-tools/)。
 
@@ -2406,76 +1988,71 @@ Nim 网站提供了一些实用的[入门](https://nim-lang.org/documentation.ht
 
 每个 JavaScript 项目至少需要一个 Node 包，除非你是一个喜欢走硬路的人。这里有一些 VS Code 扩展可以帮助你更轻松地处理 Node 模块。
 
-
-
-
-
-*   [npm](https://marketplace.visualstudio.com/items?itemName=eg2.vscode-npm-script): 使用 `package.json` 验证已安装的包。确保已安装的包具有正确的版本号，高亮显示 `package.json` 中缺失已安装包以及尚未安装的包。
-*   [Node.js Modules IntelliSense](https://marketplace.visualstudio.com/items?itemName=leizongmin.node-module-intellisense): 为 import 语句中的 JavaScript 和 TypeScript 模块提供自动补全。
-*   [Path IntelliSense](https://marketplace.visualstudio.com/items?itemName=christian-kohler.path-intellisense): 它实际上与 Node 无关，但你确实需要本地文件的 IntelliSense，此扩展可以自动补全文件名。
-*   [Node exec](https://marketplace.visualstudio.com/items?itemName=miramac.vscode-exec-node): 允许你使用 Node.js 执行当前文件或选中的代码。
-*   [View Node Package](https://marketplace.visualstudio.com/items?itemName=dkundel.vscode-npm-source): 使用此扩展快速查看 Node 包源码，允许你直接从 VS Code 打开 Node 包仓库/文档。
-*   [Node Readme](https://marketplace.visualstudio.com/items?itemName=bengreenier.vscode-node-readme): 快速打开 npm 包文档。
-*   [Search node_modules](https://marketplace.visualstudio.com/items?itemName=jasonnutter.search-node-modules): 此扩展允许你搜索 `node_modules` 文件夹，该文件夹通常在标准搜索中被排除。
-*   [Import Cost](https://marketplace.visualstudio.com/items?itemName=wix.vscode-import-cost): 显示导入包的大小。
+*   [npm](https://marketplace.visualstudio.com/items?itemName=eg2.vscode-npm-script)：使用 `package.json` 验证已安装的包。确保已安装的包具有正确的版本号，高亮显示 `package.json` 中缺失已安装包以及尚未安装的包。
+*   [Node.js Modules IntelliSense](https://marketplace.visualstudio.com/items?itemName=leizongmin.node-module-intellisense)：为 `import` 语句中的 JavaScript 和 TypeScript 模块提供自动补全。
+*   [Path IntelliSense](https://marketplace.visualstudio.com/items?itemName=christian-kohler.path-intellisense)：它实际上与 Node 无关，但你确实需要本地文件的 IntelliSense，此扩展可以自动补全文件名。
+*   [Node exec](https://marketplace.visualstudio.com/items?itemName=miramac.vscode-exec-node)：允许你使用 Node.js 执行当前文件或选中的代码。
+*   [View Node Package](https://marketplace.visualstudio.com/items?itemName=dkundel.vscode-npm-source)：使用此扩展快速查看 Node 包源码，允许你直接从 VS Code 打开 Node 包仓库/文档。
+*   [Node Readme](https://marketplace.visualstudio.com/items?itemName=bengreenier.vscode-node-readme)：快速打开 npm 包文档。
+*   [Search node_modules](https://marketplace.visualstudio.com/items?itemName=jasonnutter.search-node-modules)：此扩展允许你搜索 `node_modules` 文件夹，该文件夹通常在标准搜索中被排除。
+*   [Import Cost](https://marketplace.visualstudio.com/items?itemName=wix.vscode-import-cost)：显示导入包的大小。
 
 ## 格式化扩展
 
-偶尔，你会发现自己正在格式化并非按偏风格编写的代码。为了节省时间，你可以安装这些 VS Code 扩展来快速格式化和重构现有代码：
-*   [Beautify](https://marketplace.visualstudio.com/items?itemName=HookyQR.beautify): 一个 [jsBeautifier](http://jsbeautifier.org/) 扩展，支持 JavaScript、JSON、CSS 和 HTML。可以通过 `.jsbeautifyrc` 文件进行自定义。截至目前安装量超过 230 万，是最流行的格式化器。
-*   [Prettier Code Formatter](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode): 支持使用 [Prettier](https://github.com/prettier/prettier)（一种有倾向的代码格式化程序）格式化 JavaScript、TypeScript 和 CSS。截至目前安装量超过 150 万。
-*   [JS Refactor](https://marketplace.visualstudio.com/items?itemName=cmstead.jsrefactor): 为重构 JavaScript 代码提供多种工具和操作，例如提取变量/方法、将现有代码转换为使用箭头函数或模板字面量以及导出函数。
-*   [JavaScript Booster](https://marketplace.visualstudio.com/items?itemName=sburg.vscode-javascript-booster): 一个强大的代码重构工具。具有多种编码操作，如将 `var` 转换为 `const` 或 `let`、删除冗余的 `else` 语句以及合并声明与初始化。很大程度上灵感来自 [WebStorm](https://www.jetbrains.com/webstorm/)。
+偶尔，你会发现自己正在格式化并非按偏好风格编写的代码。为了节省时间，你可以安装这些 VS Code 扩展来快速格式化和重构现有代码：
+
+*   [Beautify](https://marketplace.visualstudio.com/items?itemName=HookyQR.beautify)：一个 [jsBeautifier](http://jsbeautifier.org/) 扩展，支持 JavaScript、JSON、CSS 和 HTML。可以通过 `.jsbeautifyrc` 文件进行自定义。截至目前安装量超过 230 万，是最流行的格式化器。
+*   [Prettier Code Formatter](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)：支持使用 [Prettier](https://github.com/prettier/prettier)（一种有倾向的代码格式化程序）格式化 JavaScript、TypeScript 和 CSS。截至目前安装量超过 150 万。
+*   [JS Refactor](https://marketplace.visualstudio.com/items?itemName=cmstead.jsrefactor)：为重构 JavaScript 代码提供多种工具和操作，例如提取变量/方法、将现有代码转换为使用箭头函数或模板字面量以及导出函数。
+*   [JavaScript Booster](https://marketplace.visualstudio.com/items?itemName=sburg.vscode-javascript-booster)：一个强大的代码重构工具。具有多种编码操作，如将 `var` 转换为 `const` 或 `let`、删除冗余的 `else` 语句以及合并声明与初始化。很大程度上灵感来自 [WebStorm](https://www.jetbrains.com/webstorm/)。
 
 ## 浏览器扩展
 
 除非你在用 JavaScript 编写控制台程序，否则你可能需要在浏览器内部执行 JavaScript 代码。这意味着你需要频繁刷新页面以查看你所做的每次代码更新的效果。与其一直手动这样做，这里有一些工具可以显著缩短迭代过程的开发时间：
-*   [Debugger for Chrome](https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-chrome): 在 Chrome 中轻松调试 JavaScript（通过在编辑器内部设置断点）。
-*   [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer): 具有静态和动态页面实时重载功能的本地开发服务器。
-*   [Preview on Web Server](https://marketplace.visualstudio.com/items?itemName=yuichinukiyama.vscode-preview-server): 提供 Web 服务器和实时预览功能。
-*   [PHP Server](https://marketplace.visualstudio.com/items?itemName=brapifra.phpserver): 用于测试仅需要在客户端运行的 JavaScript 代码。
-*   [Rest Client](https://marketplace.visualstudio.com/items?itemName=humao.rest-client): 你可以使用浏览器或 CURL 程序来测试 REST API 端点，不如安装此工具直接在编辑器内部交互式地运行 HTTP 请求。
+
+*   [Debugger for Chrome](https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-chrome)：在 Chrome 中轻松调试 JavaScript（通过在编辑器内部设置断点）。
+*   [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)：具有静态和动态页面实时重载功能的本地开发服务器。
+*   [Preview on Web Server](https://marketplace.visualstudio.com/items?itemName=yuichinukiyama.vscode-preview-server)：提供 Web 服务器和实时预览功能。
+*   [PHP Server](https://marketplace.visualstudio.com/items?itemName=brapifra.phpserver)：用于测试仅需要在客户端运行的 JavaScript 代码。
+*   [Rest Client](https://marketplace.visualstudio.com/items?itemName=humao.rest-client)：你可以使用浏览器或 CURL 程序来测试 REST API 端点，不如安装此工具直接在编辑器内部交互式地运行 HTTP 请求。
 
 ## 框架扩展
 
 对于大多数项目，你需要一个合适的框架来结构化代码并缩短开发时间。VS Code 通过扩展支持大多数主流框架。然而，仍然有很多成熟的框架尚未拥有完全开发的扩展。以下是一些提供显著功能的 VS Code 扩展。
-*   [Angular 6](https://marketplace.visualstudio.com/items?itemName=Mikael.Angular-BeastCode): Angular 6 的代码片段。支持 TypeScript、HTML、Angular Material ngRx、RxJS 和 Flex Layout。截至目前安装量超过 220 万，并包含 172 个 Angular 代码片段。
-*   [Angular v5 snippets](https://marketplace.visualstudio.com/items?itemName=johnpapa.Angular2):为 TypeScript、RxJS、HTML 和 Docker 文件提供 Angular 代码片段。截至目前安装量超过 270 万。
-*   [React Native/Redux snippets for es6/es7](https://marketplace.visualstudio.com/items?itemName=EQu.react-native-redux): 为所有这些框架提供 ES6/ES7 代码片段。
-*   [React Native Tools](https://marketplace.visualstudio.com/items?itemName=vsmobile.react-native): 为 React Native 框架提供 IntelliSense、命令和调试功能。
-*   [Vetur](https://marketplace.visualstudio.com/items?itemName=octref.vetur): 为 Vue 框架提供语法高亮、代码片段、Emmet、校验、格式化、IntelliSense 和调试支持。其文档发布在 [GitBook](https://vuejs.github.io/vetur/)。
-*   [Ember](https://marketplace.visualstudio.com/items?itemName=felixrieseberg.vsc-ember-cli): 为 Ember 提供命令支持和 IntelliSense。安装后，可以通过 Code 命令列表可以使用 ember 命令。
-*   [Cordova Tools](https://marketplace.visualstudio.com/items?itemName=vsmobile.cordova-tools): 支持 Cordova 插件和 Ionic 框架。为 Cordova 项目提供 IntelliSense、调试和其他支持功能。
-*   [jQuery Code Snippets](https://marketplace.visualstudio.com/items?itemName=donjayamanne.jquerysnippets): 提供超过 130 个 jQuery 代码片段。通过前缀 `jq` 激活。
+
+*   [Angular 6](https://marketplace.visualstudio.com/items?itemName=Mikael.Angular-BeastCode)：Angular 6 的代码片段。支持 TypeScript、HTML、Angular Material ngRx、RxJS 和 Flex Layout。截至目前安装量超过 220 万，并包含 172 个 Angular 代码片段。
+*   [Angular v5 snippets](https://marketplace.visualstudio.com/items?itemName=johnpapa.Angular2)：为 TypeScript、RxJS、HTML 和 Docker 文件提供 Angular 代码片段。截至目前安装量超过 270 万。
+*   [React Native/Redux snippets for es6/es7](https://marketplace.visualstudio.com/items?itemName=EQu.react-native-redux)：为所有这些框架提供 ES6/ES7 代码片段。
+*   [React Native Tools](https://marketplace.visualstudio.com/items?itemName=vsmobile.react-native)：为 React Native 框架提供 IntelliSense、命令和调试功能。
+*   [Vetur](https://marketplace.visualstudio.com/items?itemName=octref.vetur)：为 Vue 框架提供语法高亮、代码片段、Emmet、校验、格式化、IntelliSense 和调试支持。其文档发布在 [GitBook](https://vuejs.github.io/vetur/)。
+*   [Ember](https://marketplace.visualstudio.com/items?itemName=felixrieseberg.vsc-ember-cli)：为 Ember 提供命令支持和 IntelliSense。安装后，可以通过 Code 命令列表使用 `ember` 命令。
+*   [Cordova Tools](https://marketplace.visualstudio.com/items?itemName=vsmobile.cordova-tools)：支持 Cordova 插件和 Ionic 框架。为 Cordova 项目提供 IntelliSense、调试和其他支持功能。
+*   [jQuery Code Snippets](https://marketplace.visualstudio.com/items?itemName=donjayamanne.jquerysnippets)：提供超过 130 个 jQuery 代码片段。通过前缀 `jq` 激活。
 
 ## 测试扩展
 
 测试是软件开发的关键部分，特别是对于处于生产阶段的项目。你可以获取 JavaScript 测试的概述，并在我们的指南中了解更多不同类型的测试——[JavaScript 测试：单元测试与集成测试](https://www.sitepoint.com/javascript-testing-unit-functional-integration/)。以下是一些常用的 VS Code 测试扩展：
-*   [Mocha sidebar](https://marketplace.visualstudio.com/items?itemName=maty.vscode-mocha-sidebar): 支持使用 Mocha 库测试。此扩展帮助你直接在代码上运行测试并通过装饰器显示错误。
-*   [ES6 Mocha Snippets](https://marketplace.visualstudio.com/items?itemName=spoonscen.es6-mocha-snippets): ES6 语法的 Mocha 代码片段。此扩展的重点是保持代码简洁（dry），尽可能利用箭头函数并省略大括号。可以配置允许分号。
-*   [Jasmine Code Snippets](https://marketplace.visualstudio.com/items?itemName=xabikos.JasmineSnippets): Jasmine 测试框架的代码片段。
 
-
-
-
-
-*   [Protractor Snippets](https://marketplace.visualstudio.com/items?itemName=deerawan.vscode-protractor-snippets): 用于 Protractor 框架的端到端测试片段。支持 JavaScript 和 TypeScript。
-*   [Node TDD](https://marketplace.visualstudio.com/items?itemName=prashaantt.node-tdd): 为 Node 和 JavaScript 项目提供测试驱动开发支持。当源代码更新时，可触发自动测试构建。
+*   [Mocha sidebar](https://marketplace.visualstudio.com/items?itemName=maty.vscode-mocha-sidebar)：支持使用 Mocha 库测试。此扩展帮助你直接在代码上运行测试并通过装饰器显示错误。
+*   [ES6 Mocha Snippets](https://marketplace.visualstudio.com/items?itemName=spoonscen.es6-mocha-snippets)：ES6 语法的 Mocha 代码片段。此扩展的重点是保持代码简洁（dry），尽可能利用箭头函数并省略大括号。可以配置允许分号。
+*   [Jasmine Code Snippets](https://marketplace.visualstudio.com/items?itemName=xabikos.JasmineSnippets)：Jasmine 测试框架的代码片段。
+*   [Protractor Snippets](https://marketplace.visualstudio.com/items?itemName=deerawan.vscode-protractor-snippets)：用于 Protractor 框架的端到端测试片段。支持 JavaScript 和 TypeScript。
+*   [Node TDD](https://marketplace.visualstudio.com/items?itemName=prashaantt.node-tdd)：为 Node 和 JavaScript 项目提供测试驱动开发支持。当源代码更新时，可触发自动测试构建。
 
 ## 优秀扩展
 
-*   [Quokka.js](https://marketplace.visualstudio.com/items?itemName=WallabyJs.quokka-vscode): 一个非常强大的调试工具，为 JavaScript 代码提供了一个快速原型开发的实验场。它附有[出色的文档](https://quokkajs.com/docs/)。
-*   [Paste as JSON](https://marketplace.visualstudio.com/items?itemName=quicktype.quicktype): 快速将 JSON 数据转换为 JavaScript 代码。
-*   [Code Metrics](https://marketplace.visualstudio.com/items?itemName=kisstkondoros.vscode-codemetrics): 这是另一个非常优秀的扩展，用于计算 JavaScript 和 TypeScript 代码的复杂度。
+*   [Quokka.js](https://marketplace.visualstudio.com/items?itemName=WallabyJs.quokka-vscode)：一个非常强大的调试工具，为 JavaScript 代码提供了一个快速原型开发的实验场。它附有[出色的文档](https://quokkajs.com/docs/)。
+*   [Paste as JSON](https://marketplace.visualstudio.com/items?itemName=quicktype.quicktype)：快速将 JSON 数据转换为 JavaScript 代码。
+*   [Code Metrics](https://marketplace.visualstudio.com/items?itemName=kisstkondoros.vscode-codemetrics)：这是另一个非常优秀的扩展，用于计算 JavaScript 和 TypeScript 代码的复杂度。
 
 ## 扩展包
 
 现在我们已经来到了最后一个类别，我想告诉大家 VS Code 市场有一个专门的[扩展包分类](https://marketplace.visualstudio.com/search?term=extension%20packs&target=VSCode&category=All%20categories&sortBy=Relevance)。本质上，这些是将相关的 VS Code 扩展打包成一个包的集合，以便安装。以下是其中一些较好的扩展包：
 
-*   [Nodejs Extension Pack](https://marketplace.visualstudio.com/items?itemName=waderyan.nodejs-extension-pack): 此包包含了 `ESLint`、`npm`、JavaScript (ES6) 代码片段、搜索 `node_modules`、`NPM IntelliSense` 和 `Path IntelliSense`。
-*   [VS Code for Node.js - Development Pack](https://marketplace.visualstudio.com/items?itemName=nodesource.vscode-for-node-js-development-pack): 这个包含 `NPM IntelliSense`、`ESLint`、`Debugger for Chrome`、`Code Metrics`、`Docker` 和 `Import Cost`。
-*   [Vue.js Extension Pack](https://marketplace.visualstudio.com/items?itemName=mubaidr.vuejs-extension-pack): Vue 和 JavaScript 扩展的集合。它目前包含约 12 个 VS Code 扩展，其中一些在这里没有提到，例如 [auto-rename-tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag) 和 [auto-close-tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-close-tag)。
-*   [Ionic Extension Pack](https://marketplace.visualstudio.com/items?itemName=loiane.ionic-extension-pack): 此包包含了许多用于 Ionic、Angular、`RxJS`、Cordova 和 HTML 开发的 VS Code 扩展。
+*   [Nodejs Extension Pack](https://marketplace.visualstudio.com/items?itemName=waderyan.nodejs-extension-pack)：此包包含了 `ESLint`、`npm`、JavaScript (ES6) 代码片段、搜索 `node_modules`、`NPM IntelliSense` 和 `Path IntelliSense`。
+*   [VS Code for Node.js - Development Pack](https://marketplace.visualstudio.com/items?itemName=nodesource.vscode-for-node-js-development-pack)：这个包含 `NPM IntelliSense`、`ESLint`、`Debugger for Chrome`、`Code Metrics`、`Docker` 和 `Import Cost`。
+*   [Vue.js Extension Pack](https://marketplace.visualstudio.com/items?itemName=mubaidr.vuejs-extension-pack)：Vue 和 JavaScript 扩展的集合。它目前包含约 12 个 VS Code 扩展，其中一些在这里没有提到，例如 [auto-rename-tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag) 和 [auto-close-tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-close-tag)。
+*   [Ionic Extension Pack](https://marketplace.visualstudio.com/items?itemName=loiane.ionic-extension-pack)：此包包含了许多用于 Ionic、Angular、`RxJS`、Cordova 和 HTML 开发的 VS Code 扩展。
 
 ## 总结
 
@@ -2487,11 +2064,11 @@ VS Code 海量的高质量扩展使其成为 JavaScript 开发者的热门选择
 
 ### 作者：Michael Wanyoike
 
-调试 JavaScript 并不是 编程中最有趣的部分，但它是一项关键技能。本文介绍了两个可以帮助你像专业人士一样调试 JavaScript 的工具。
+调试 JavaScript 并不是编程中最有趣的部分，但它是一项关键技能。本文介绍了两个可以帮助你像专业人士一样调试 JavaScript 的工具。
 
 想象一下，如果 JavaScript 中不存在 `console.log()` 函数。我确信你问自己的第一个问题将会是：“我该如何确认我的代码运行正常呢？”
 
-答案在于使用调试工具。长期以来，大多数开发者（包括我在内）一直在使用 `console.log` 来调试故障代码。它快速且易于使用。然而，如果你不知道错误在哪里以及是由什么引起的，有时情况会变得非常棘手。你经常发现自己在整个代码中到处布置 `console.log` 陷阱，看看哪一个能揭露罪祸首。
+答案在于使用调试工具。长期以来，大多数开发者（包括我在内）一直在使用 `console.log` 来调试故障代码。它快速且易于使用。然而，如果你不知道错误在哪里以及是由什么引起的，有时情况会变得非常棘手。你经常发现自己在整个代码中到处布置 `console.log` 陷阱，看看哪一个能揭露罪魁祸首。
 
 为了解决这个问题，我们需要改变习惯并开始使用调试工具。有很多工具可用于调试 JavaScript 代码，例如 Chrome 工具、[Node Debugger](https://www.sitepoint.com/debugging-javascript-node-debugger/)、`Node Inspect` 等。事实上，每个[主流浏览器](https://www.w3schools.com/js/js_debugging.asp)都提供了自己的工具。
 
@@ -2499,7 +2076,7 @@ VS Code 海量的高质量扩展使其成为 JavaScript 开发者的热门选择
 
 ## 先决条件
 
-对于本教程，你只需要在[现代 JavaScript](https://www.sitepoint.com/anatomy-of-a-modern-javascript-application/)方面有坚实的基础。我们将查看如何使用 Visual Studio Code 提供的调试功能。我们还将查看如何使用 [Debugger for Chrome](https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-chrome) 扩展，该扩展允许 VS Code 与 Chrome 开发工具集成。一旦完成，你将再也不想用 `console.log()` 了。
+对于本教程，你只需要在[现代 JavaScript](https://www.sitepoint.com/anatomy-of-a-modern-javascript-application/)方面有坚实的基础。
 
 ## 在 VS Code 中调试 JavaScript
 
@@ -2510,7 +2087,6 @@ const places = [];
 
 module.exports = {
   places,
-
   addPlace: (city, country) => {
     const id = ++places.length;
     let numType = 'odd';
@@ -2532,15 +2108,11 @@ module.exports.addPlace('Kingston', 'Jamaica');
 module.exports.addPlace('Cape Town', 'South Africa');
 ```
 
-现在，我确定你已经很想用用 `console.log` 来输出 `places` 的值了。但我们不要这样做。相反，让我们添加断点。只需左键侧边栏（即行号旁边的空白区域）即可添加断点：
+现在，我确定你已经很想用 `console.log` 来输出 `places` 的值了。但我们不要这样做。相反，让我们添加断点。只需左键侧边栏（即行号旁边的空白区域）即可添加断点：
 
 看到左侧的红点了吗？那些就是断点。断点只是告诉调试器在何处暂停执行的视觉指示。接下来，在操作栏上，点击调试按钮（显示“No Bugs Allowed”的图标）。
 
 查看顶部区域。你会注意到有一个带红点的齿轮图标。只需点击它。系统会为你创建一个调试配置文件 `launch.json`。按如下方式更新配置，你就可以使用 VS Code 调试器运行 `places.js` 了：
-
-
-
-
 
 ```json
 "configurations": [
@@ -2548,7 +2120,7 @@ module.exports.addPlace('Cape Town', 'South Africa');
     "type": "node",
     "request": "launch",
     "name": "Launch Places",
-    "program": "${workspaceFolder}\\src\\places.js"
+    "program": "${workspaceFolder}/src/places.js"
   }
 ]
 ```
@@ -2569,7 +2141,7 @@ module.exports.addPlace('Cape Town', 'South Africa');
 
 一旦你点击调试按钮，一系列操作会接连发生。首先，编辑器顶部会出现一个工具栏。它包含以下控制按钮：
 
-*   **拖动锚点锚点**：用于将工具栏移动到不会遮挡任何内容的地方
+*   **拖动锚点**：用于将工具栏移动到不会遮挡任何内容的地方
 *   **继续 (Continue)**：继续调试会话
 *   **逐行 (Step over)**：逐行执行代码，跳过函数
 *   **单步 (Step into)**：逐行执行代码，进入函数内部
@@ -2607,7 +2179,7 @@ module.exports.addPlace('Cape Town', 'South Africa');
 
 ### 使用 Mocha 进行调试测试
 
-打开 `test/placesTest.js` 并检查编写用于测试 `places.test` 中代码的代码。如果你从未用过 Mocha，需要先全局安装它才能运行测试。
+打开 `test/placesTest.js` 并检查编写用于测试 `places.js` 中代码的代码。如果你从未用过 Mocha，需要先全局安装它才能运行测试。
 
 ```bash
 ## 全局安装 mocha
@@ -2684,18 +2256,15 @@ if (id % 2 === 0) {
 }
 ```
 
-重启调试会话并点击 `Continue` 跳过当前断点。第一个测试“can add a place”现在通过了。但第二个测试没有通过。为了修复这个问题，我们需要另一个断点。移除当前断点，并在第 16 行放置新断点，那里写着：
+重启调试会话并点击 `Continue` 跳过当前断点。第一个测试“can add a place”现在通过了。但第二个测试没有通过。为了修复这个问题，我们需要另一个断点。移除当前断点，并在第 16 行放置新断点。
 
-```javascript
+
+
 addPlace('Cape Town', 'South Africa');
-```
 
 启动新的调试会话：
 
 ![Mocha test2 fail](img/152442835812-mocha-test2-error.png)
-
-
-
 
 搞定！看 `Variables` 部分。即使在第二次测试开始之前，我们也发现 `places` 数组已经包含了由第一次测试创建的现有。这显然污染了我们当前的测试。为了修复这个问题，我们需要实现某种 `setup` 函数，为每个测试重置 `places` 数组。在 Mocha 中实现这一操作，只需在测试之前添加以下代码即可：
 
@@ -2721,7 +2290,6 @@ beforeEach(() => {
 
 ```
 const express = require('express');
-
 const app = express();
 const port = 3000;
 
@@ -2733,7 +2301,6 @@ app.use('/scripts', express.static(`${__dirname}/node_modules/`));
 
 // Redirect all traffic to index.html
 app.use((req, res) => res.sendFile(`${__dirname}/public/index.html`));
-
 app.listen(port, () => {
   console.info('listening on %d', port);
 });
@@ -2771,7 +2338,6 @@ app.listen(port, () => {
   <br>
   <div id="places-table"></div>
 </script>
-
 <!-- Places Table Template -->
 <script id="places-table-template" type="text/x-handlebars-template">
   <table class="ui celled striped table">
@@ -2798,8 +2364,6 @@ app.listen(port, () => {
 ```
 
 如果你快速扫一眼，代码看起来是正确的。那么问题一定在 `app.js` 中。打开该文件并分析那里的代码。下面是你应该注意的代码段。请花时间阅读注释以理解代码。
-
-
 
 嗯……这不对。地点已经添加了，但国家没有显示。问题显然不在 HTML 表格代码，因为第一行已经填充了国家单元格，所以 JavaScript 端一定发生了什么。打开 `app.js` 并在第 58 行添加一个断点，代码内容是：
 
@@ -2938,16 +2502,13 @@ axios({
 
 ### 请求选项
 
-
-
-
 在发送请求时，你可以传递许多[额外的选项](https://github.com/axios/axios#request-config)，但这里是几个最常用的：
 
-* `baseUrl`:如果你指定了基础 URL，它将会被 set 置到你使用的任何相对 URL 之前。
-* `headers`:一个包含键/值对的对象，将作为请求头发送。
-* `params`:一个包含键/值对的对象，该对象将被序列化并作为查询字符串附加到 URL 中。
-* `responseType`:如果你期望的响应格式 JSON 于 JSON，可以将此属性设置为 `arraybuffer`、`blob`、`document`、`text` 或 `stream`。
-* `auth`:传递一个包含 `username` 和 `password` 字段的对象，将在请求中使用这些凭据进行 HTTP Basic 认证。
+* `baseUrl`：如果你指定了基础 URL，它将会被 set 置到你使用的任何相对 URL 之前。
+* `headers`：一个包含键/值对的对象，将作为请求头发送。
+* `params`：一个包含键/值对的对象，该对象将被序列化并作为查询字符串附加到 URL 中。
+* `responseType`：如果你期望的响应格式 JSON 于 JSON，可以将此属性设置为 `arraybuffer`、`blob`、`document`、`text` 或 `stream`。
+* `auth`：传递一个包含 `username` 和 `password` 字段的对象，将在请求中使用这些凭据进行 HTTP Basic 认证。
 
 ## 便捷方法
 
@@ -2983,21 +2544,21 @@ axios.get('/product/9')
 
 当请求成功时，你的 `then()` 回调将接收一个包含以下属性的响应对象：
 
-* `data`:从服务器返回的负载。默认情况下，Axios 期望 JSON 并将其解析回 JavaScript 对象。
-* `status`:服务器返回的 HTTP 状态码。
-* `statusText`:服务器返回的 HTTP 状态消息。
-* `headers`:服务器返回的所有响应头。
-* `config`:原始请求配置。
-* `request`: 实际的 `XMLHttpRequest` 对象（当在浏览器中运行时）。
+* `data`：从服务器返回的负载。默认情况下，Axios 期望 JSON 并将其解析回 JavaScript 对象。
+* `status`：服务器返回的 HTTP 状态码。
+* `statusText`：服务器返回的 HTTP 状态消息。
+* `headers`：服务器返回的所有响应头。
+* `config`：原始请求配置。
+* `request`：实际的 `XMLHttpRequest` 对象（当在浏览器中运行时）。
 
 ### 错误对象
 
 如果请求出现问题，promise 将拒绝并返回一个错误对象，该对象至少包含以下某些属性：
 
-* `message`:错误消息文本。
-* `response`:响应对象（如果已收到），如上一节所述。
-* `request`:实际的 `XMLHttpRequest` 对象（当在浏览器中运行时）。
-* `config`:原始请求配置。
+* `message`：错误消息文本。
+* `response`：响应对象（如果已收到），如上一节所述。
+* `request`：实际的 `XMLHttpRequest` 对象（当在浏览器中运行时）。
+* `config`：原始请求配置。
 
 ## 转换器与拦截器
 
@@ -3060,11 +2621,10 @@ axios.interceptors.response.use((response) => {
 
 作为一个流行的库，Axios 受益于扩展其功能的第三方库生态系统。从拦截器到测试适配器到日志记录，有很多选择。这里有几个你可能觉得有用的：
 
-* [axios-mock-adapter](https://github.com/ctimmerm/axios-mock-adapter):允许你轻松模拟请求以方便测试代码。
-* [axios-cache-plugin](https://github.com/jin5354/axios-cache-plugin):用于选择性缓存 GET 请求的封装。
-* [redux-axios-middleware](https://github.com/svrcekmichal/redux-axios-middleware):如果你是 Redux 用户，此中间件提供了一种通过普通 action 调度 Ajax 请求的方便方法。
+* [axios-mock-adapter](https://github.com/ctimmerm/axios-mock-adapter)：允许你轻松模拟请求以方便测试代码。
+* [axios-cache-plugin](https://github.com/jin5354/axios-cache-plugin)：用于选择性缓存 GET 请求的封装。
+* [redux-axios-middleware](https://github.com/svrcekmichal/redux-axios-middleware)：如果你是 Redux 用户，此中间件提供了一种通过普通 action 调度 Ajax 请求的方便方法。
 
 更多[Axios 添加和扩展](https://github.com/axios/axios/blob/master/ECOSYSTEM.md)列表可以在 Axios GitHub 仓库中找到。
 
 总来说，Axios 有很多推荐它的理由。它具有简单的 API，并带有对于任何使用过 jQuery 的人来说都是熟悉的实用快捷方法。它的流行程度以及各种第三方插件的可用性，使其成为包含在应用程序（无论是前端、后端还是两者）中的的可靠选择。
-

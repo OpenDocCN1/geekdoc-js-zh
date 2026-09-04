@@ -1,21 +1,5 @@
+
 # 7.5 文件和二进制数据的操作
-
-*   Blob 对象
-*   FileList 对象
-*   File 对象
-*   FileReader 对象
-*   综合实例：显示用户选取的本地图片
-*   URL 对象
-*   参考链接
-
-历史上，JavaScript 无法处理二进制数据。如果一定要处理的话，只能使用 charCodeAt()方法，一个个字节地从文字编码转成二进制数据，还有一种办法是将二进制数据转成 Base64 编码，再进行处理。这两种方法不仅速度慢，而且容易出错。ECMAScript 5 引入了 Blob 对象，允许直接操作二进制数据。
-
-Blob 对象是一个代表二进制数据的基本对象，在它的基础上，又衍生出一系列相关的 API，用来操作文件。
-
-*   File 对象：负责处理那些以文件形式存在的二进制数据，也就是操作本地文件；
-*   FileList 对象：File 对象的网页表单接口；
-*   FileReader 对象：负责将二进制数据读入内存内容；
-*   URL 对象：用于对二进制数据生成 URL。
 
 ## Blob 对象
 
@@ -85,6 +69,7 @@ document.querySelector('input[type="file"]').addEventListener('change', function
 （3）Blob 对象有两个只读属性：
 
 *   size：二进制数据的大小，单位为字节。
+
 *   type：二进制数据的 MIME 类型，全部为小写，如果类型未知，则该值为空字符串。
 
 在 Ajax 操作中，如果 xhr.responseType 设为 blob，接收的就是二进制数据。
@@ -126,8 +111,11 @@ function handleFileSelect(evt) {
 File 对象是 FileList 对象的成员，包含了文件的一些元信息，比如文件名、上次改动时间、文件大小和文件类型。它的属性值如下：
 
 *   name：文件名，该属性只读。
+
 *   size：文件大小，单位为字节，该属性只读。
+
 *   type：文件的 MIME 类型，如果分辨不出类型，则为空字符串，该属性只读。
+
 *   lastModifiedDate：文件的上次修改时间。
 
 ```js
@@ -211,10 +199,15 @@ reader.abort();
 FileReader 对象采用异步方式读取文件，可以为一系列事件指定回调函数。
 
 *   onabort 方法：读取中断或调用 reader.abort()方法时触发。
+
 *   onerror 方法：读取出错时触发。
+
 *   onload 方法：读取成功后触发。
+
 *   onloadend 方法：读取完成后触发，不管是否成功。触发顺序排在 onload 或 onerror 后面。
+
 *   onloadstart 方法：读取将要开始时触发。
+
 *   onprogress 方法：读取过程中周期性触发。
 
 下面的代码是如何展示文本文件的内容。
@@ -274,7 +267,7 @@ reader.onprogress = updateProgress;
 
 function updateProgress(evt) {
   if (evt.lengthComputable) {
-    var percentLoaded = Math.round((evt.loaded / evt.totalEric Bidelman) * 100);
+    var percentLoaded = Math.round((evt.loaded / evt.total) * 100);
 
     var progress = document.querySelector('.percent');
     if (percentLoaded < 100) {
@@ -310,7 +303,7 @@ function readFile(file){
     applyDataUrlToCanvas( reader.result );
   };
 
-  reader.reaAsDataURL(file);
+  reader.readAsDataURL(file);
 }
 ```
 
@@ -403,8 +396,13 @@ window.URL.revokeObjectURL(obj_url);
 ## 参考链接
 
 *   [W3C Working Draft](http://www.w3.org/TR/FileAPI/)
+
 *   Andrew Dodson, [Get Loaded with the File API](http://msdn.microsoft.com/en-gb/magazine/jj835793.aspx)
+
 *   Mozilla Developer Network，[Using files from web applications](https://developer.mozilla.org/en-US/docs/Using_files_from_web_applications)
+
 *   [HTML5 download attribute](http://javascript-reverse.tumblr.com/post/37056936789/html5-download-attribute)
+
 *   Eric Bidelman, [Reading files in JavaScript using the File APIs](http://www.html5rocks.com/en/tutorials/file/dndfiles/)
+
 *   Matt West, [Reading Files Using The HTML5 FileReader API](http://blog.teamtreehouse.com/reading-files-using-the-html5-filereader-api)

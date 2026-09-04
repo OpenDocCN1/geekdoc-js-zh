@@ -1,17 +1,5 @@
-# 13.14 Cluster 模块
 
-*   概述
-    *   基本用法
-    *   cluster.worker 对象
-    *   cluster.workers 对象
-    *   属性与方法
-        *   isMaster，isWorker
-        *   fork()
-        *   kill()
-        *   listening 事件
-    *   实例：不中断地重启 Node 服务
-    *   PM2 模块
-    *   参考链接
+# 13.14 Cluster 模块
 
 ## 概述
 
@@ -270,4 +258,5 @@ process.on('message', function(msg) {
 ## 参考链接
 
 *   José F. Romaniello, [Reloading node with no downtime](http://joseoncode.com/2015/01/18/reloading-node-with-no-downtime/)
+
 *   Joni Shkurti, [Node.js clustering made easy with PM2](https://keymetrics.io/2015/03/26/pm2-clustering-made-easy/)

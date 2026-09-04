@@ -1,7 +1,5 @@
+
 # JavaScript 核心 (Smashing eBook 系列, #21)
-
-
-
 
 ## 关于 Smashing Magazine
 
@@ -85,9 +83,6 @@ var band = {
 "year":"2009"
 }
 ```
-
-
-
 
 你可以直接在 JavaScript 中使用 JSON，并且当它被封装在函数调用中时，甚至可以作为 API 的返回格式。这被称为 JSON-P，许多 API 都支持它。你可以使用数据端点，在脚本节点中直接返回 JSON-P：
 
@@ -274,8 +269,6 @@ function getMemberDetails(){
 }();
 ```
 
-
-
 然而，这在函数外部不会产生任何作用。如果这正是你需要的，那么太好了。你大可以抛弃这个名字了：
 
 ```javascript
@@ -370,11 +363,17 @@ get:getMemberDetails
 解决办法是在你的脚本中添加配置对象。我曾详细写过[JavaScript 配置对象](http://www.wait-till-i.com/2008/05/23/script-configuration/)，但这里是核心点：
 
 - 在整个脚本中包含一个名为 `configuration` 的对象。
+
 - 在其中存储所有人们在使用你的脚本时可能会更改的项：
+
     - CSS ID 和类名；
+
     - 用于生成按钮的字符串（如标签）；
+
     - 诸如“显示的图像数量”、“地图尺寸”等值；
+
     - 位置、区域和语言设置。
+
 - 将该对象作为公共属性返回，以便人们可以对其进行覆盖。
 
 大多数时候，你可以在编码过程的最后一步完成此操作。我整理了一个示例在[交给下一位开发者之前对脚本要做的五件事](http://www.wait-till-i.com/2008/02/07/five-things-to-do-to-a-script-before-handing-it-over-to-the-next-developer/)中。
@@ -406,10 +405,14 @@ get:getMemberDetails
 除了本文提到的资源外，还可以查看以下内容来学习 JavaScript：
 
 - [Douglas Crockford 谈 JavaScript](http://yuiblog.com/crockford/)
+
     一个系列深度的视频讲座。
+
 - [Opera Web 标准课程](http://dev.opera.com/articles/wsc/)
+
     包含关于 JavaScript 的详细章节。
-WordPress Essentials: How To Create A WordPress Plugin
+
+# WordPress Essentials: How To Create A WordPress Plugin
 
 # 从 JavaScript 代码审查获得的教训
 
@@ -422,8 +425,6 @@ Addy Osmani
 今天，我们将看看在哪里可以获得代码审查，如何构建你的请求，以及审查者在看什么。最近我被请求审查一个新 JavaScript 应用的代码，我想分享我的一些反馈，因为它们涵盖了一些始终有用的 JavaScript 基础知识。
 
 ## 引言
-
-
 
 代码审查与维护良好的编码标准是密相分的。尽管如此，标准通常无法防止逻辑错误或对编程语言特性的误解，无论它是 `JavaScript`、`Ruby`、`Objective-C` 还是其他语言。即使是最经验丰富的开发者也会犯这类错误，而代码审查可以极大地帮助发现这些错误。
 
@@ -487,23 +488,22 @@ Jonathan Betz，一位 Google 前开发者，曾说过代码审查理想情况�
 
 4. 可维护性 团队中的其他成员是否可以在合理的努力范围内轻松扩展代码？
 
+5. 可扩展性 代码的编写方式是否同时支持 100 个和 10,000 个用户？它是否经过了优化？
 
-
-
-
-## 5. 可扩展性
-代码的编写方式是否同时支持 100 个和 10,000 个用户？它是否经过了优化？
-
-## 6. 风格
-代码是否遵循特定的风格指南（如果是协作项目，最好是团队共同认可的）？
+6. 风格 代码是否遵循特定的风格指南（如果是协作项目，最好是团队共同认可的）？
 
 虽然我同意这个列表，但如果将其扩展为一份指导评审人员在实践中应该向开发者提供什么的指南，将会非常有帮助。因此，评审人员应该执行以下操作：
 
 - 提供清晰的注释，展示专业知识并进行良好的沟通。
+
 - 指出实现中的不足之处（但不要过度批评）。
+
 - 说明为什么不推荐某种特定方法，并在可能的情况下，引用博客文章、Gists、规范、[MDN](http://developer.mozilla.org/) 页面和 [jsPerf](http://jsperf.com/) 测试来支持该论点。
+
 - 建议替代方案，可以通过单独的可运行代码形式提供，也可以通过 fork（分支）集成到代码中，以便开发者能够清晰地看到自己的错误在哪里。
+
 - 首先关注解决方案，其次才是风格。关于风格的建议可以在评审的后期提出，但在关注这些之前，应尽可能彻底地解决根本问题。
+
 - 评审超出请求范围的内容。这完全取决于评审人员的自行判断，但如果我注意到开发者实现的其他方面存在问题，我通常会尝试建议他们如何改进这些问题。我还没有收到过关于此的投诉，所以我认为这不是坏事。
 
 ### 协作式代码评审
@@ -513,15 +513,19 @@ Jonathan Betz，一位 Google 前开发者，曾说过代码审查理想情况�
 为了协助小组，你可能希望使用协作工具，让所有评审人员同时检查并对代码进行评论。幸运的是，有一些不错的工具值得尝试：
 
 - [Review Board](http://www.reviewboard.org/)
+
 这是一个基于 Web 的工具，采用 MIT 许可证免费提供。它可以与 `Git`、`CVS`、`Mercurial`、`Subversion` 以及其他版本控制系统集成。Review Board 可以安装在运行 `Apache` 或 `lighttpd` 的服务器上，且个人和商业用途均免费。
 
 - [Crucible](http://www.atlassian.com/software/crucible)
+
 该工具由澳大利亚软件公司 Atlassian 开发，同样基于 Web。它面向企业，在分布式团队中效果最好。Crucible 支持实时评审和实时评论，像 Review Board 一样，与许多版本控制工具集成，包括 `Git` 和 `Subversion`。
 
 - [Rietveld](http://code.google.com/p/rietveld/)
+
 与其他两个工具一样，Rietveld 也支持协作评审，但它实际上是由 Python 创始人 Guido van Rossum 编写的。它设计运行在 Google 的云服务上，并受益于 Guido 编写 Mondrian 的经验——Mondrian 是 Google 内部用于评审代码的专用应用程序。
 
 - 其他
+
 其他许多协作代码评审的选项并非为此目的创建的。包括 [CollabEdit](http://collabedit.com/)（免费且基于 Web）以及我个人喜欢的 [EtherPad](http://piratepad.net/front-page/)（同样免费且基于 Web）。
 
 ![exhaustion.jpg](img/exhaustion.jpg)
@@ -541,9 +545,10 @@ Jonathan Betz，一位 Google 前开发者，曾说过代码审查理想情况�
 **反馈**：类型验证是确保你只处理所需类型输入的关键步骤。如果没有进行清理检查，你面临着用户传入几乎任何内容（字符串、日期、数组等）的风险，如果你在开发时没有进行防御性编程，这很容易破坏你的应用程序。对于函数，你起码应该执行以下操作：
 
 1. 测试以确保传递的参数确实存在；
+
 2. 进行 `typeof` 检查，以防止应用执行并非有效函数的输入。
 
-```
+```javascript
 if (callback && typeof callback === "function"){
   /* 剩余逻辑 */
 }else{
@@ -594,7 +599,7 @@ Number("0020"); // 返回 20
 
 **问题**：代码库中到处都是检查特定浏览器检查（例如功能检测、支持 ES5 特性的检查等）。
 
-**反馈**：理想情况下，你的代码库应该尽可能 DRY（不要重复），这个问题有一些优雅的解决方案。例如，你可能会从加载时配置模式（也称为加载时和初始化分支）。基本思想是你只在应用程序加载时测试一次条件，然后在后续检查中访问该测试的结果。这种模式常见于加载时针对特定浏览器进行优化的 JavaScript 库中。
+**反馈**：理想情况下，你的代码库应该尽可能 DRY（不要重复），这个问题有一些优雅的解决方案。例如，你可能会从加载时配置模式（也称为加载时和初始化分支）中受益。基本思想是你只在应用程序加载时测试一次条件，然后在后续检查中访问该测试的结果。这种模式常见于加载时针对特定浏览器进行优化的 JavaScript 库中。
 
 ```javascript
 var tools = {
@@ -602,10 +607,6 @@ var tools = {
   removeMethod: null
 };
 ```
-
-
-
-
 
 ```javascript
 if(/* condition for native support */){
@@ -806,10 +807,6 @@ for( var i=0; i<myArray.length;i++ ){
 }
 ```
 
-
-
-
-
 反馈：这种方法的问题（我仍然看到许多开发者在使用它）是，在每次循环迭代时都会不必要地重新访问数组长度。这可能会导致非常慢，特别是在处理 `HTMLCollections` 的时候（在这种情况下，缓存长度可能比反复访问快多达 190 倍，正如 Nicholas C. Zakas 在他的书籍 [High-Performance JavaScript](http://shop.oreilly.com/product/9780596802806.do) 中提到的那样）。以下是几种缓存数组长度的优方案。
 
 ```javascript
@@ -961,8 +958,11 @@ var myNamespace = myNamespace || {};
 ```
 
 // 尽管有更高效的方法可以：
+
 // myNamespace || ( myNamespace = {} );
+
 // jsPerf 测试: [`jsperf.com/conditional-assignment`](http://jsperf.com/conditional-assignment)
+
 //或
 
 ```javascript
@@ -986,21 +986,24 @@ Christian Heilmann
 如此多的选择让我们很容易挑选，而这正是问题出现的地方。在大多数情况下，我们根据解决方案的便利性来衡量它的质量。我们选择一个解决方案而不是另一个的主要原因是：
 
 它能完成我需要的吗？
+
 • 它看起来酷吗？
+
 • 它听起来好用吗？
+
 • 我想用它吗？
+
 • 它使用了我使用的框架吗？
 
 然而，你真正应该寻找的是不同的：
 
 • 解决方案稳定吗？如果这个不可用，是否有良好的替代方案？
+
 • 易于自定义吗？你需要 JavaScript 专家才能修改组件吗？
+
 • 易用性和可访问性如何？没有鼠标或使用移动浏览器的用户会被阻挡吗？
+
 • 你理解发生了什么吗？你能修复问题并向他人解释吗？
-
-
-
-
 
 支持哪些功能？你可以如何扩展功能？新的浏览器和客户端请求总是接踵而至？在本文中，我们将展示一些进一步了解这些问题的方法。不过，首先理解为 Web 开发意味着什么至关重要。
 
@@ -1095,10 +1098,6 @@ Christian Heilmann
 </ul>
 ```
 
-
-
-
-
 第二个示例不需要 JavaScript 即可运行，并且使用的 HTML 少得多。它在样式方面也需要的 CSS 少得多，因为你只需要利用级联（cascade）特性即可。
 
 此外，基于组件的 HTML 只是冰山一角。`JavaScript` 生成的内容同样需要有效、可用且无无障碍，你可以在 Web 开发者工具中检查生成的源代码时验证这一点。
@@ -1159,10 +1158,6 @@ Christian Heilmann
 
 如果开发者对该小部件没有重大的个人利益，或者没有开发者群体或商业用户群体，那么很有可能你未来不会看到任何修复或改进，而且你将负责支持表现糟糕的下一个浏览器版本。
 
-
-
-
-
 最后一点需要考虑的是未来会发生什么。声称组件可以在“任何环境下工作”的说法是荒谬的，因为这是无法实现的。Web 的强大之处在于，软件解决方案可以适应它们所处的环境。如果你使用 `Netscape 4`，你应该看到几张图片；如果你使用最新的 `Webkit` 浏览器，你应该看到一个带有动画和淡入效果的精美图片轮播；此类等等。
 
 一个良好的组件应该有一份经过证明的测试报告，涵盖它在哪些浏览器和环境中进行过测试，以及已知问题是什么。问题永远存在，声称没有问题是傲慢或无知的。
@@ -1189,21 +1184,23 @@ Christian Heilmann
 
 最后要提一点：有些组件开发者使用某个参数来推销他们的解决方案，但那与你的决定完全无关，那就是尺寸。
 
-广告用语如“20 行 JavaScript 编写的下拉菜单”或“小于 2 KB 的全功能灯箱”听起来很有趣，且利于开发者的自尊心，但实际上，这并不是衡量解决方案质量的尺度。虽然你应该避免使用庞大的 `JavaScript` 解决方案（比说是 100 KB），但编写得非常通用且易于扩展的代码总是比为了单一目的而编写的代码要大。任何被自豪地吹嘘并打算让开发水平不如初始所有者的人使用的组件，随着时间的推移都会变得越来越大。开发者们喜欢玩数字游戏，但可维护的代码与极端的数字计算是不同的。
+
+
+广告用语如“20 行 `JavaScript` 编写的下拉菜单”或“小于 2 KB 的全功能灯箱”听起来很有趣，且利于开发者的自尊心，但实际上，这并不是衡量解决方案质量的尺度。虽然你应该避免使用庞大的 `JavaScript` 解决方案（比说是 100 KB），但编写得非常通用且易于扩展的代码总是比为了单一目的而编写的代码要大。任何被自豪地吹嘘并打算让开发水平不如初始所有者的人使用的组件，随着时间的推移都会变得越来越大。开发者们喜欢玩数字游戏，但可维护的代码与极端的数字计算是不同的。
 
 如果你对这类事情感兴趣，可以尝试这个演示场景，Farbrausch 在 2000 年通过 [The Product](http://www.pouet.net/prod.php?which=1221) 证明了你可以将一个带有音乐和合成语音的七分钟动画压缩到 64 KB 中。
 
 # 关于 JavaScript 的十个奇异与秘密
 
-Andy Croxall![lg.php.gif](img/lg.php.gif)
+Andy Croxall
 
 `JavaScript`。它既怪异又美丽，无疑是帕布罗·毕加索会发明的编程语言。`Null` 显然是一个对象，空数组显然等于 `false`，而函数被随手抛得就像网球一样。
 
 本文针对对更高级 `JavaScript` 感兴趣的中级开发者。它是 `JavaScript` 奇异之处和深藏不秘密的合集。希望某些章节能让你洞察这些奇特现象如何对你的代码有用，而另一些章节则是纯粹的让人大跌（WTF）的内容。那么，让我们开始吧。
 
-### ![lg.php.gif](img/lg.php.gif) 数据类型与定义
+## 数据类型与定义
 
-#### 1. Null 是一个对象
+### 1. Null 是一个对象
 
 让我们从大家最喜欢的 `JavaScript` 奇异开始，尽管它是如此众所周知。`Null` 显然是一个对象，从矛盾论的角度来看，这完全可以名列前茅。`Null`？一个对象？“当然，`null` 的定义是有意义值的完全缺失，”你可能会说。你是对的。但事实如此。这里是证明：
 
@@ -1213,7 +1210,7 @@ alert(typeof null); // 弹出 'object'
 
 尽管如此，`null` 并不被视为对象的实例。（如果你不知道的话，`JavaScript` 中的值是基础对象的实例。所以，每个数字都是 `Number` 对象的实例，每个对象都是 `Object` 对象的实例，以此此类推。）这让我们回到了理智，因为如果 `null` 是值的缺失，那么它显然不可能是任何东西的实例。
 
-#### 2. NaN 是一个数字
+### 2. NaN 是一个数字
 
 你认为 `null` 是对象很荒谬？尝试处理一下 `NaN` 的概念吧。
 
@@ -1227,7 +1224,7 @@ alert(NaN === NaN); // 结果为 false
 
 事实上，`NaN` 不等于任何东西。确认某物是 `NaN` 的唯一方法是通过 `isNaN()`。
 
-#### 3. 无键的数组 == False (关于真值和假值)
+### 3. 无键的数组 == False (关于真值和假值)
 
 这是另一个深受喜爱的 `JavaScript` 奇异：
 
@@ -1239,7 +1236,7 @@ alert(new Array() == false); // 结果为 true
 
 我读过很多关于真值和假值的解释，我觉得最容易理解的是这种：在 `JavaScript` 中，每个非布尔值都有一个内置的布尔标记，当该值被要求像布尔值一样表现时会被调用；例如，当你把它与布尔值进行比较时。
 
-由于苹果无法与梨比较，当 `JavaScript` 被要求比较不同数据类型的值时，它首先会将它们“强制转换”为共同的数据类型。false`、0、`null`、`undefined`、空字符串和 `NaN` 最终都会变成 `false`——不是永久性的，仅针对给定的表达式。一个救场的例子：
+由于苹果无法与梨比较，当 `JavaScript` 被要求比较不同数据类型的值时，它首先会将它们“强制转换”为共同的数据类型。`false`、0、`null`、`undefined`、空字符串和 `NaN` 最终都会变成 `false`——不是永久性的，仅针对给定的表达式。一个救场的例子：
 
 ```javascript
 var someVar = 0;
@@ -1267,9 +1264,6 @@ alert(someVar == false); // 结果为 true – 0 是假值
 alert(someVar === false); // 结果为 false – 0 是数字，不是布尔值
 ```
 
-
-
-
 呼。正如你可能察觉到的，这是一个广泛的话题，我建议你对此进行更多阅读——数据类型转换（data coercion），这虽然不是 JavaScript 特有的概念，但在 JavaScript 中非常突出。
 
 我曾在[这里讨论过真值（truthy）、假值（falsy）以及数据类型转换的概念](http://www.mitya.co.uk/blog/2011/Apr/Twisted-logic-understanding-truthy-and-falsy-174)。如果你真的想深入了解 JavaScript 被要求比较两个值时内部发生了什么，请查看 [ECMA-262 文档规范的第 11.9.3 节](http://www.mozilla.org/js/language/E262-3.pdf)。
@@ -1278,29 +1272,29 @@ alert(someVar === false); // 结果为 false – 0 是数字，不是布尔值
 
 ### 4. replace() 可以接受回调函数
 
-这是 JavaScript 最不不为人知的秘密之一，并在 v1.3 版本中引入。`replace()` 的大多数用法如下所示：
+这是 `JavaScript` 最不为人知的秘密之一，并在 v1.3 版本中引入。`replace()` 的大多数用法如下所示：
 
-```
+```javascript
 alert('10 13 21 48 52'.replace(/\d+/g, '*')); // 将所有数字替换为 *
 ```
 
 这是一种简单的替换：一个字符串，一个星号。但如果我们想对替换的发生方式和时进行更多控制呢？如果我们只想替换小于 30 的数字呢？这仅靠正则表达式是无法实现的（毕竟它们本质上是关于字符串的，而不是数学的）。我们需要跳转到回调函数来评估每个匹配项。
 
-```
+```javascript
 alert('10 13 21 48 52'.replace(/\d+/g, function(match) {
   return parseInt(match) < 30 ? '*' : match;
 }));
 ```
 
-对于每一个匹配的项，JavaScript 都会调用我们的函数，并将 `match` 传递给 `match` 参数。然后，我们返回星号（如果匹配的数字小于 30）或 `match` 本身（即不发生任何替换）。
+对于每一个匹配的项，`JavaScript` 都会调用我们的函数，并将 `match` 传递给 `match` 参数。然后，我们返回星号（如果匹配的数字小于 30）或 `match` 本身（即不发生任何替换）。
 
 ### 5. 正则表达式：不仅仅是匹配和替换
 
-许多中间 JavaScript 开发者仅依靠正则表达式的匹配和替换就能工作。但 JavaScript 定义的方法比这两种多得多。
+许多中间 `JavaScript` 开发者仅依靠正则表达式的匹配和替换就能工作。但 `JavaScript` 定义的方法比这两种多得多。
 
 特别值得关注的是 `test()`，它的用法与 `match` 类似，但它不返回匹配项：它只是确认模式是否匹配。从这个意义上说，它的计算开销更小。
 
-```
+```javascript
 alert(/\w{3,}/.test('Hello')); //  'true'
 ```
 
@@ -1310,7 +1304,7 @@ alert(/\w{3,}/.test('Hello')); //  'true'
 
 ```javascript
 function findWord(word, string) {
-  var instancesOfWord = string.match(new RegExp('\b'+word+'\b', 'ig'));
+  var instancesOfWord = string.match(new RegExp('\\b'+word+'\\b', 'ig'));
   alert(instancesOfWord);
 }
 
@@ -1325,7 +1319,7 @@ findWord('car', 'Carl went to buy a car but had forgotten his credit card.');
 
 ### 6. 你可以伪造作用域
 
-执行内容的作用域定义了哪些变量是可以访问的。独立的 JavaScript（即不在函数内部运行的 JavaScript）在 `window` 对象的全局作用域内运行，所有内容都可以访问；而在函数内部声明的局部变量仅在该函数内部可见，外部不可。
+执行内容的作用域定义了哪些变量是可以访问的。独立的 `JavaScript`（即不在函数内部运行的 `JavaScript`）在 `window` 对象的全局作用域内运行，所有内容都可以访问；而在函数内部声明的局部变量仅在该函数内部可见，外部不可。
 
 ```javascript
 var animal = 'dog';
@@ -1347,13 +1341,15 @@ var myObj = {animal: 'camel'};
 getAnimal.call(myObj, 'lovely'); // 'lovely camel'
 ```
 
-在这里，我们的函数不是运行在 `window` 上，而是运行在 `myObj` 上——这是作为 `call` 方法的第一个参数指定的。本质上，`call()` 假装我们的函数是 `myObj` 的方法（如果这听起来不明，你可能想了解一下 JavaScript 的原型继承系统）。还要注意，传递给 `call()` 的第一个参数之后的任何参数都会传递给我们的函数——因此我们将 `lovely` 作为 `adjective` 参数传递进去。
+在这里，我们的函数不是运行在 `window` 上，而是运行在 `myObj` 上——这是作为 `call` 方法的第一个参数指定的。本质上，`call()` 假装我们的函数是 `myObj` 的方法（如果这听起来不明，你可能想了解一下 `JavaScript` 的原型继承系统）。还要注意，传递给 `call()` 的第一个参数之后的任何参数都会传递给我们的函数——因此我们将 `lovely` 作为 `adjective` 参数传递进去。
 
-我听过 JavaScript 开发者说，他们好几年都不需要使用一次这个，这不仅是因为良好的设计确保了你不需要它。
+我听过 `JavaScript` 开发者说，他们好几年都不需要使用一次这个，这不仅是因为良好的设计确保了你不需要它。
 
 顺便提一下，`apply()` 执行的工作与 `call()` 相同，只是函数的参数是以数组形式指定的。因此，上述使用 `apply()` 的示例看起来会是：
 
-`getAnimal.apply(myObj, ['lovely']);`
+```javascript
+getAnimal.apply(myObj, ['lovely']);
+```
 
 ### 7. 函数可以自执行
 
@@ -1385,23 +1381,23 @@ var someVar = 'goodbye';
 
 这一次，它显示了 hello，如预期的那样，因为它显示的是隔离版本的 `someVar`（即：函数参数，而不是外部变量）。
 
+## DOM 与样式
 
+### 8. getComputedStyle 与 currentStyle
 
-
-
-虽然大多数浏览器会 set `ff9900`，但 Firefox 返回的是 `rgb(255, 153, 0)`，即其 RGB 等效值。这里有很多 JavaScript 函数可以将 RGB 转换为十六进制。
+虽然大多数浏览器会返回 `#ff9900`，但 Firefox 返回的是 `rgb(255, 153, 0)`，即其 RGB 等效值。这里有很多 `JavaScript` 函数可以将 RGB 转换为十六进制。
 
 请注意，当我说到“计算后颜色”（computed color）时，指的是当前的颜色，无论它是如何应用于元素上的。将其与“样式”（style）进行比较，后者只读取在元素的样式属性中隐式设置的样式属性。此外，正如你在上面的示例中注意到的那样，`IE` 检测计算后样式的方法与其他浏览器不同。
 
-顺便提一下，jQuery 的 `css()` 方法包含了这种计算后检测，并以样式被应用于元素的方式返回它们：无论是隐式的、通过继承还是其他方式。因此，你很少需要使用原生的 `getComputedStyle` 和 `currentStyle`。
+顺便提一下，`jQuery` 的 `css()` 方法包含了这种计算后检测，并以样式被应用于元素的方式返回它们：无论是隐式的、通过继承还是其他方式。因此，你很少需要使用原生的 `getComputedStyle` 和 `currentStyle`。
 
-## 杂杂
+## 杂项
 
 ### 9. 0.1 + 0.2 !== 0.3
 
-这不仅是 JavaScript 中的一个奇现象；它实际上是计算机科学中普遍存在的问题，并影响着许多语言。它的输出是 `0.3000000000000004`。
+这不仅是 `JavaScript` 中的一个奇现象；它实际上是计算机科学中普遍存在的问题，并影响着许多语言。它的输出是 `0.3000000000000004`。
 
-这与被称为“机器精度”（machine precision）的问题有关。当 JavaScript 尝试执行上述行时，它会将值转换为它们的二进制等效值。
+这与被称为“机器精度”（machine precision）的问题有关。当 `JavaScript` 尝试执行上述行时，它会将值转换为它们的二进制等效值。
 
 问题就在于此。`0.1` 并不是真正的 `0.1`，而是它的二进制等效值，这是一个接近但并不相等的值。从本质上说，只要你写下值，它们注定会丢失精度。你可能只是想要两个小数，但正如 Chris Pine [笔记](http://dev.opera.com/articles/view/why-i-love-ecmascript-4-real-decimals/) 所说的，你得到的是二进制浮点运算。类似于你想把文本翻译成俄语，结果却是白俄罗斯语。相似但不相同。
 
@@ -1409,9 +1405,10 @@ var someVar = 'goodbye';
 
 1. 将转换为整数并对它们进行计算，然后再转换回小数；
 2. 调整逻辑以允许一个范围而不是特定结果。
+
 3. 所以，例如，而不是……
 
-```
+```javascript
 var num1 = 0.1, num2 = 0.2, shouldEqual = 0.3;
 alert(num1 + num2 == shouldEqual); //false
 ```
@@ -1426,7 +1423,7 @@ alert(num1 + num2 > shouldEqual - 0.001 && num1 + num2 < shouldEqual + 0.001); /
 
 ### 10. Undefined 是可以被定义的
 
-好了，让我们用一个愚蠢且无关紧要的问题结束吧。尽管听起来很奇怪，`undefined` 实际上并不是 JavaScript 中的一个保留字，尽管它有特殊含义，并且是判断变量是否未定义的唯一方法。所以：
+好了，让我们用一个愚蠢且无关紧要的问题结束吧。尽管听起来很奇怪，`undefined` 实际上并不是 `JavaScript` 中的一个保留字，尽管它有特殊含义，并且是判断变量是否未定义的唯一方法。所以：
 
 ```javascript
 var someVar;
@@ -1445,19 +1442,19 @@ alert(someVar == undefined); // 结果为 false!
 
 # JavaScript 实现的七大罪
 
-Christian Heilmann![lg.php.gif](img/lg.php.gif)
+Christian Heilmann
 
-在过去的几年里，使用 JavaScript 变得越来越容易。过去，我们需要了解每个浏览器的特性，而现在许多库如 `jQuery`、`YUI`、`Dojo` 和 `MooTools` 即使是不懂 JavaScript 的人也能为无聊的 HTML 文档增加令人印象深刻且华丽的效果。通过借助 CSS 选择器引擎，我们远离了 `DOM` 的复杂性和不一致性，并让事情变得简单得多。
+在过去的几年里，使用 `JavaScript` 变得越来越容易。过去，我们需要了解每个浏览器的特性，而现在许多库如 `jQuery`、`YUI`、`Dojo` 和 `MooTools` 即使是不懂 `JavaScript` 的人也能为无聊的 `HTML` 文档增加令人印象深刻且华丽的效果。通过借助 CSS 选择器引擎，我们远离了 `DOM` 的复杂性和不一致性，并让事情变得简单得多。
 
 然而，如果你查看一些发布的代码，我们似乎退后了一步。在获得更方便访问的同时，我们的代码也变得有些草率。要找到结构清晰、易于维护的 `jQuery` 代码非常困难，这就是为什么许多插件都在做同样的事情。自己写一个比试图理解其他开发者做了什么要快。
 
-不过，稳健、易于维护且安全的 JavaScript 规则并没有改变。所以，让我们过一遍 JavaScript 开发的七大罪，当你以后需要维护代码或将其交给其他方时，这些罪会让你吃头噬肉。
+不过，稳健、易于维护且安全的 `JavaScript` 规则并没有改变。所以，让我们过一遍 `JavaScript` 开发的七大罪，当你以后需要维护代码或将其交给其他方时，这些罪会让你吃头噬肉。
 
 我们都不得不处理过别人编写的代码。我们也对缺乏可维护性和文档以及奇异的逻辑感到绝望。有趣的是，作为开发者，我们开始将这视为常态，并习惯了忽略别人的工作，转而反复为相同的问题编写新代码，仿佛我们是在下意识里试图通过留下不可维护的代码来确保自己的工作——留下只有我们自己能懂的代码，同时抱怨那里没有好的解决方案。
 
 ## 祖辈之罪：特定浏览器代码
 
-阻碍我们作为开发者进化的主要障碍之一是，JavaScript 在很大程度上是特定浏览器的。
+阻碍我们作为开发者进化的主要障碍之一是，`JavaScript` 在很大程度上是特定浏览器的。
 
 这主要是因为浏览器不支持标准（或者在管理机构达成标准之前就发布了），而且因为我们必须在竞争对手之前交付工作，且不能推延项目经理设定的过度乐观的期限。
 
@@ -1467,7 +1464,7 @@ Christian Heilmann![lg.php.gif](img/lg.php.gif)
 
 ## 库的救援
 
-`jQuery`、`YUI`、`MooTools`、`Dojo` 和 `Glow` 等 JavaScript 库的工作是让 JavaScript 开发变得可预测，并将开发者从我们称为浏览器支持的活狱中解出来。换句话说，它们修复了浏览器中的随机 Bug，让我们能够自由地采用标准，而不必担心某些浏览器不会识别它们。
+`jQuery`、`YUI`、`MooTools`、`Dojo` 和 `Glow` 等 `JavaScript` 库的工作是让 `JavaScript` 开发变得可预测，并将开发者从我们称为浏览器支持的活狱中解出来。换句话说，它们修复了浏览器中的随机 Bug，让我们能够自由地采用标准，而不必担心某些浏览器不会识别它们。
 
 例如，`DOM` 方法 `getElementById(id)` 应该是直接的：找到 ID 为 `id` 的元素并返回它。但由于某些版本的 `IE` 和 `Opera` 也会返回名称属性为 `id` 的元素，[jQuery 这样解决了该问题](http://github.com/jquery/jquery/blob/master/src/core.js)：
 
@@ -1486,12 +1483,9 @@ if ( elem ) {
 }
 ```
 
-这正是库非常有用的地方，这也是为什么 JavaScript 库会存在下去。浏览器总是会出错，而旧版浏览器也不会被终端用户升级，要么是因为上述的公司规定，要么是因为人们根本不在意跟上时代。
+这正是库非常有用的地方，这也是为什么 `JavaScript` 库会存在下去。浏览器总是会出错，而旧版浏览器也不会被终端用户升级，要么是因为上述的公司规定，要么是因为人们根本不在意跟上时代。
 
-
-
-
-因此，虽然为特定浏览器构建软件的做法正在减少（至少对于 JavaScript 来说——至于 CSS，我们还有另一堆麻烦要处理），但我们仍然必须警惕某些“罪过”。
+因此，虽然为特定浏览器构建软件的做法正在减少（至少对于 `JavaScript` 来说——至于 CSS，我们还有另一堆麻烦要处理），但我们仍然必须警惕某些“罪过”。
 
 ## 罪过一：与其他脚本不相处
 
@@ -1499,10 +1493,8 @@ if ( elem ) {
 
 我指这些是什么意思？请考虑以下几：
 
-• HTML 文档中的每个脚本都与其他脚本具有相同的权限，在需要时，它可以覆盖其他脚本之前执行的内容。
-
+• `HTML` 文档中的每个脚本都与其他脚本具有相同的权限，在需要时，它可以覆盖其他脚本之前执行的内容。
 • 如果你定义了一个变量或函数名，而其他包含文件使用了相同的名称，那么初始的定义会被覆盖。
-
 • 如果使用旧式的 `onEvent` 方式绑定事件处理器，这种情况对事件处理器同样适用。
 
 假设你有一个脚本 `script_one.js`：
@@ -1512,7 +1504,8 @@ x = 5;
 
 function init(){
   alert('script one init');
-  document.getElementsByTagName('h1')[0].onclick = function(){ own    this.style.background = 'blue';
+  document.getElementsByTagName('h1')[0].onclick = function(){
+    this.style.background = 'blue';
   }
 }
 
@@ -1586,9 +1579,9 @@ alert('x outside is '+x);
 
 你得到了一个错误。因为 `x` 在函数外部没有定义，`alert('x outside is '+x);` 永远不起作用。
 
-原因是通过将 `x` 移动到 `scriptOne` 和 `scriptTwo` 函数并在它们前面添加 `var` 关键字，我们使其成为这些函数的一部分，但对外部世界隐藏了它们。这被称为闭包，[在此处有详细解释](https://developer.mozilla.org/en/Core_JavaScript_1.5_Guide/Working_with_Closures)。它可能是 JavaScript 最强大的功能之一。
+原因是通过将 `x` 移动到 `scriptOne` 和 `scriptTwo` 函数并在它们前面添加 `var` 关键字，我们使其成为这些函数的一部分，但对外部世界隐藏了它们。这被称为闭包，[在此处有详细解释](https://developer.mozilla.org/en/Core_JavaScript_1.5_Guide/Working_with_Closures)。它可能是 `JavaScript` 最强大的功能之一。
 
-使用闭包和 `var` 关键字，你就不会遇到同名变量互相覆盖的问题。这在 jQuery 中也适用：你应该[为你的函数命名空间](http://jquery-howto.blogspot.com/2009/01/namespace-your-javascript-function-and.html)。
+使用闭包和 `var` 关键字，你就不会遇到同名变量互相覆盖的问题。这在 `jQuery` 中也适用：你应该[为你的函数命名空间](http://jquery-howto.blogspot.com/2009/01/namespace-your-javascript-function-and.html)。
 
 这可能很难理解，所以让我们来看一个简单的例子：
 
@@ -1630,18 +1623,15 @@ var longerAndMoreDistinct = function(){
 
 ## 罪过二：相信而非测试
 
-与 JavaScript 实现相关的另一个大罪过是期望一切顺利：每个参数的格式正确，你尝试增强的每个 HTML 元素确实可用，每个终端用户输入信息的格式正确。这种情况永远不会发生，而最后那个假设特别为糟糕，因为它允许恶意用户注入危险代码。
+与 `JavaScript` 实现相关的另一个大罪过是期望一切顺利：每个参数的格式正确，你尝试增强的每个 `HTML` 元素确实可用，每个终端用户输入信息的格式正确。这种情况永远不会发生，而最后那个假设特别为糟糕，因为它允许恶意用户注入危险代码。
 
-当你编写 JavaScript 并将其交付世界，或者将其集成到由第三方维护的产品中时，一点偏执是好事。
+当你编写 `JavaScript` 并将其交付世界，或者将其集成到由第三方维护的产品中时，一点偏执是好事。
 
 `typeof` 是你的朋友。正则表达式是你的朋友。`indexOf()`、`split()` 和 `length` 都是你的朋友。
 
+## 罪状 #3：任务使用了错误的技术
 
-
-
-# 罪状 #3：任务使用了错误的技术
-
-JavaScript 最大的问题在于当你用错误的工具来完成任务时。这会让维护变成一场噩梦，并降低代码质量。应该根据它们的设计初衷使用工具。这意味着：
+`JavaScript` 最大的问题在于当你用错误的工具来完成任务时。这会让维护变成一场噩梦，并降低代码质量。应该根据它们的设计初衷使用工具。这意味着：
 
 * 绝对核心的内容和标记应该放在 `HTML` 中，无论它将显示在什么种环境中。
 * 任何“外观和感受”元素都应该通过 `CSS` 进行维护。你不应该为了改变一个颜色而翻遍 `JavaScript` 代码。
@@ -1701,7 +1691,7 @@ $(document).ready(function(){
 });
 ```
 
-这里有几地方是不的。首先，你通过 `JavaScript` 而不是 `CSS` 来控制外观和感受，导致这难以维护（这一点稍后详述）。其次是性能问题：虽然 `jQuery` 速度惊人，但很多代码仍然隐藏在 `$('.section').hide()` 之下。最后，也是非常痛苦的性能问题是那些复制粘贴的设置 `CSS` 的行。不要让 `jQuery` 连续四次寻找相邻元素并对其进行操作。你可以将 `next()` 存储在变量中，但如果使用链式调用，甚至不需要这样做。如果你真的需要在 `jQuery` 中设置很多 `CSS`，请使用映射（map）：
+这里有几地方是不对的。首先，你通过 `JavaScript` 而不是 `CSS` 来控制外观和感受，导致这难以维护（这一点稍后详述）。其次是性能问题：虽然 `jQuery` 速度惊人，但很多代码仍然隐藏在 `$('.section').hide()` 之下。最后，也是非常痛苦的性能问题是那些复制粘贴的设置 `CSS` 的行。不要让 `jQuery` 连续四次寻找相邻元素并对其进行操作。你可以将 `next()` 存储在变量中，但如果使用链式调用，甚至不需要这样做。如果你真的需要在 `jQuery` 中设置很多 `CSS`，请使用映射（map）：
 
 ```javascript
 $(document).ready(function(){
@@ -1752,7 +1742,7 @@ $(document).ready(function(){
 });
 ```
 
-将当前章节预定义为 `false`，并在点击第一个标题时设置它。这样你只需只在 `current` 为 `true` 时才隐藏它，从而消除了再次遍历所有具有 `section` 元素的元素的性。
+将当前章节预定义为 `false`，并在点击第一个标题时设置它。这样你只需只在 `current` 为 `true` 时才隐藏它，从而消除了再次遍历所有具有 `section` 元素的元素的性能问题。
 
 但有趣的一点在于：如果你只是想显示和隐藏章节，你根本不需要任何循环！`CSS` 在渲染和应用类时已经遍历了文档。你只需要[给它提供一个挂载点](http://icant.co.uk/articles/sins/sins_section_with_current.html)，比如一个类：
 
@@ -1788,9 +1778,9 @@ $(document).ready(function(){
 </style>
 ```
 
-# 罪状 #4：依赖 JavaScript
+## 罪状 #4：依赖 JavaScript
 
-关于当今时代是否需要考虑非 JavaScript 环境有相当多的讨论，但事实是：`JavaScript` 可以被关闭，而且任何 `JavaScript` 都可能破坏页面。考虑到可能与你的代码同时运行的那些杂乱代码以及移动连接的不稳定性，我个人想要构建一种东西：运行正常的代码。
+关于当今时代是否需要考虑非 `JavaScript` 环境有相当多的讨论，但事实是：`JavaScript` 可以被关闭，而且任何 `JavaScript` 都可能破坏页面。考虑到可能与你的代码同时运行的那些杂乱代码以及移动连接的不稳定性，我个人想要构建一种东西：运行正常的代码。
 
 所以，确保你的产品最基本的用法不依赖 `JavaScript` 不仅仅是锦上添花，如果你希望人们真正使用它，这是必不可少的。
 
@@ -1799,24 +1789,19 @@ $(document).ready(function(){
 * 产品功能的任何核心部分都不需要 `JavaScript`。表单、链接以及服务器端验证和重定向脚本是你的朋友。
 * 如果某些功能依赖 `JavaScript`，请用 `JavaScript` 构建它们，并使用 `DOM` 或你所选库的相应方法将其添加到文档中。
 * 如果你增加了 `JavaScript` 功能，请确保它可以使用键盘和鼠标工作。`click` 和 `submit` 处理程序是稳固的，而 `key` 和 `mouse` 事件则不稳定，且在移动设备上无法工作。
+* 通过编写巧妙的后端代码来识别 `JavaScript` 何时数据，而不是构建渲染 `HTML` 的 API，你就可以避免了双重维护的困扰，这也是许多“每个人都应该启用 JavaScript”的狂热分子经常提出的一个论点。为了证明这一点，请查看我几周前做的关于[使用 YQL 和 YUI 构建 Web 应用程序的演示文稿](http://www.yuiblog.com/blog/2010/02/11/video-heilmann-yql/)（视频有英语和德语版本）。
 
+### 何时依赖 JavaScript 是可以的（在某种程度上）
 
+对 `JavaScript` 依赖项的许多误解源于人们根据自己所的工作环境发表一概而论的观点。
 
+如果你是一名负责 `Gmail` 开发的 Google 工程师，你很难想象自己为什么要费精力在不使用 `JavaScript` 的情况下工作。对于开发 `OpenSocial` 插件、移动应用、Apple 插件以及 Adobe Air 的开发者来说也是如此。换句话说，如果你的环境已经依赖于 `JavaScript`，那么请务必不要浪费精力去做回退（fallback）方案。
 
+但不要将这些闭源环境和边缘案例应用作为我们衡量 `JavaScript` 的标准。`JavaScript` 最大的力量也是最大的问题在于它的多功能性。说所有网站都可以脱离 `JavaScript` 是因为 `Gmail` 需要它，就像说所有汽车都应该有启动按钮，因为它们在混合动力汽车上表现良好；或者说混合动力汽车应该配备巨大的油箱和防撞杠，因为它们在悍马车上表现优异。产品的技术功能集取决于它的实现方式和目标市场。不同的应用有不同的基础功能需要满足，以便触及最大的受众，而不将人们排除在外。
 
--   通过编写巧妙的后端代码来识别 JavaScript 何时数据，而不是构建渲染 HTML 的 API，你就可以避免了双重维护的困扰，这也是许多“每个人都应该启用 JavaScript”的狂热分子经常提出的一个论点。为了证明这一点，请查看我几周前做的关于[使用 YQL 和 YUI 构建 Web 应用程序的演示文稿](http://www.yuiblog.com/blog/2010/02/11/video-heilmann-yql/)（视频有英语和德语版本）。
+### 考虑用例和维护
 
-## 何时依赖 JavaScript 是可以的（在某种程度上）
-
-对 JavaScript 依赖项的许多误解源于人们根据自己所的工作环境发表一概而论的观点。
-
-如果你是一名负责 `Gmail` 开发的 Google 工程师，你很难想象自己为什么要费精力在不使用 JavaScript 的情况下工作。对于开发 `OpenSocial` 插件、移动应用、Apple 插件以及 Adobe Air 的开发者来说也是如此。换句话说，如果你的环境已经依赖于 JavaScript，那么请务必不要浪费精力去做回退（fallback）方案。
-
-但不要将这些闭源环境和边缘案例应用作为我们衡量 JavaScript 的标准。JavaScript 最大的力量也是最大的问题在于它的多功能性。说所有网站都可以脱离 JavaScript 是因为 `Gmail` 需要它，就像说所有汽车都应该有启动按钮，因为它们在混合动力汽车上表现良好；或者说混合动力汽车应该配备巨大的油箱和防撞杠，因为它们在悍马车上表现优异。产品的技术功能集取决于它的实现方式和目标市场。不同的应用有不同的基础功能需要满足，以便触及最大的受众，而不将人们排除在外。
-
-## 考虑用例和维护
-
-依赖 JavaScript 代码的一个引人注目的方面是，在许多情况下，人们根本没有考虑所有的用例（[这里有一个很好的例子](http://icant.co.uk/articles/sins/sins_jsform.html)）。参考以下 HTML：
+依赖 `JavaScript` 代码的一个引人注目的方面是，在许多情况下，人们根本没有考虑所有的用例（[这里有一个很好的例子](http://icant.co.uk/articles/sins/sins_jsform.html)）。参考以下 `HTML`：
 
 ```html
 <form action="#" id="f">
@@ -1829,16 +1814,16 @@ $(document).ready(function(){
 <div id="results"></div>
 ```
 
-如果没有 JavaScript，这段代码完全不起作用。它没有合理的 `action` 属性，而且文本字段没有 `name` 属性。所以，即使你提交了表单，服务器也不会获取用户输入的信息。
+如果没有 `JavaScript`，这段代码完全不起作用。它没有合理的 `action` 属性，而且文本字段没有 `name` 属性。所以，即使你提交了表单，服务器也不会获取用户输入的信息。
 
-使用 `jQuery` 和像 [YQL](http://developer.yahoo.com/yql) 这样的 `JSON` 数据源，你可以用此进行纯 JavaScript 搜索：
+使用 `jQuery` 和像 [YQL](http://developer.yahoo.com/yql) 这样的 `JSON` 数据源，你可以用此进行纯 `JavaScript` 搜索：
 
 ```javascript
 $('#s').click(function(event){
 event.preventDefault();
 $('<ul/>').appendTo('#results');
 var url =
-$.getJSON('[`query.yahooapis.com/v1/public/yql?'+
+$.getJSON('http://query.yahooapis.com/v1/public/yql?'+
 'q=select%20abstract%2Cclickurl%2Cdispurl%2Ctitle%20'+
 'from%20search.web%20where%20query%3D%22'+
 $('#search').val() + '%22&format=json&'+
@@ -1864,7 +1849,7 @@ $('#f').submit(function(event){
 event.preventDefault();
 $('<ul/>').appendTo('#results');
 var url =
-$.getJSON('[http://query.yahooapis.com/v1/public/yql?'+
+$.getJSON('http://query.yahooapis.com/v1/public/yql?'+
 'q=select%20abstract%2Cclickurl%2Cdispurl%2Ctitle%20'+
 'from%20search.web%20where%20query%3D%22'+
 $('#search').val() + '%22&format=json&'+
@@ -1881,19 +1866,15 @@ appendTo("#results ul");
 });
 ```
 
-我们现在涵盖了第一种情况。但如果没有 JavaScript，表单仍然无所作为。另一个问题把我们引了编写 JavaScript 的下一个罪过。
+我们现在涵盖了第一种情况。但如果没有 `JavaScript`，表单仍然无所作为。另一个问题把我们引了编写 `JavaScript` 的下一个罪过。
 
 ### 罪过 #5：让维护变得不必要的困难
 
-优秀代码无法留在 Web 上的原因之一是，我们的工作环境、截止日期和招聘实践习惯了开发者为了快速发布而构建代码，而不考虑以后维护这些代码会有多困难。我曾将 [JavaScript 称为 Web 设计中的村级自行车`](http://developer.yahoo.net/blogs/theater/archives/2008/10/fronteers_2008_christian_heilmann_on_maintain_1.html) ([幻灯片在此处](http://www.slideshare.net/cheilmann/fronteers-maintainability-presentation))：任何人都可以去骑。因为代码是公开的，未来的维护者将能够以他们喜欢的方式对其捣弄和扩展。
+优秀代码无法留在 Web 上的原因之一是，我们的工作环境、截止日期和招聘实践习惯了开发者为了快速发布而构建代码，而不考虑以后维护这些代码会有多困难。我曾将 [JavaScript 称为 Web 设计中的村级自行车](http://developer.yahoo.net/blogs/theater/archives/2008/10/fronteers_2008_christian_heilmann_on_maintain_1.html) ([幻灯片在此处](http://www.slideshare.net/cheilmann/fronteers-maintainability-presentation))：任何人都可以去骑。因为代码是公开的，未来的维护者将能够以他们喜欢的方式对其捣弄和扩展。
 
 遗憾的是，你的代码越难维护，其中添加的错误就越多，导致它看起来更像是一团乱码，而不是组织良好的脚本。
 
 以上面的例子为例。你们中没有用过跨域 AJAX 的 [YQL](http://developer.yahoo.com/yql) 和 `JSON-P` 的人，看到这段代码时无疑会有“什么？”的时刻。此外，在 `JavaScript` 中保持大量的 `HTML` 易于读是很困难的，猜猜当页面新设计出现时，第一个要改变的是什么？没错：`HTML` 和 `CSS`。所以，为了更容易维护，我会将所有工作转移到后端。
-
-
-
-
 
 ```javascript
 $('#results').html(data);
@@ -1907,6 +1888,7 @@ $('#results').html(data);
 所以，我们对早期的示例可以做的一项更改——尽管现在看起来很小，但随着更多需求的加入，它可能会迅速发生变化——是在最开头设置一个配置部分，用于定义所使用的 CSS 类：
 
 ```javascript
+
 $(document).ready(function(){
 
   /* 配置对象 -在此处更改类、ID 和字符串 */
@@ -1914,8 +1896,11 @@ $(document).ready(function(){
   var config = {
 
     /* 动态应用的 CSS 类 */
+
     javascriptenabled:'js',
+
     currentsection:'current'
+
   }
 
   /* 功能从这里开始 */
@@ -1929,25 +1914,28 @@ $(document).ready(function(){
     if(current){
 
       current.removeClass(config.currentsection);
+
     }
 
     current = $(this).next().addClass(config.currentsection);
+
   })
 
 });
+
 ```
 
 关于配置对象以及为什么它们对维护非常有用的更多信息，请查看博客文章“[内联和编程提供脚本配置](http://www.wait-till-i.com/2008/05/23/script-configuration/)”。
 
 总而言之，当你认为已经完成代码且下一个人即将接手时，请再次检查你的代码。
 
-### 第 6 罪：不对你的代码编写文档
+## 第 6 罪：不对你的代码编写文档
 
 “良好的代码自自成章”是一个极其常见且误导性的观点。在我多年的开发生涯中，我发现我的编码风格在不断变化。2004 年的常识和最佳实践，在今天可能被遗忘，甚至被认为是糟糕的风格。
 
 记录为了让代码在不同浏览器中运行而所做的所有技巧和变通方案（workarounds）绝对是一个好主意。这允许未来的维护者在目标浏览器版本过时或库函数修复了问题时，将它们移除。
 
-为代码添加注释还允许维护者在需要某些信息时将其追溯到你这里，并允许偶然发现你脚本的人将其包含在更大的解决方案或库中（这种情况在我身上发生过过）。因为 JavaScript 倾向于在 Web 上大量复制（在所有博客和“脚本合集”中），这也是让你的名字为人知的途径。
+为代码添加注释还允许维护者在需要某些信息时将其追溯到你这里，并允许偶然发现你脚本的人将其包含在更大的解决方案或库中（这种情况在我身上发生过过）。因为 `JavaScript` 倾向于在 Web 上大量复制（在所有博客和“脚本合集”中），这也是让你的名字为人知的途径。
 
 不过，不要过度注释。显而易见的事情不需要解释清楚。我发现以下情况值得注释：
 
@@ -1959,33 +1947,41 @@ $(document).ready(function(){
 
 简而言之，对任何偏离正常编码流的地方都进行注释。我倾向于使用 `/* */` 而不是 `//`，因为如果人们意外删除了换行符，也不会产生 Bug。
 
-#### 特殊情况：注释掉代码
+### 特殊情况：注释掉代码
 
-一种特殊情况是注释掉未来版本中需要的、或取决于当前尚可用的功能的部分。这可能非常有用，但取决于你注释掉的内容，也存在安全风险。例如，不要留下任何指向尚未可用但可能随时实现一半的服务器端 API 的代码。我以前见过这种情况，管理员带有完整未保护路径的链接在 HTML 中被注释掉了。
+一种特殊情况是注释掉未来版本中需要的、或取决于当前尚可用的功能的部分。这可能非常有用，但取决于你注释掉的内容，也存在安全风险。例如，不要留下任何指向尚未可用但可能随时实现一半的服务器端 API 的代码。我以前见过这种情况，管理员带有完整未保护路径的链接在 `HTML` 中被注释掉了。
 
 尽管如此，注释掉代码对于调试非常有用。一个巧妙的小技巧如下：
 
 ```javascript
+
 /*
+
 myFunction('do something');
+
 // */
+
 ```
 
 这现在是被注释掉的。但通过在第一条注释行前添加一个斜杠，你将取消整个块的注释使其生效。
 
 ```javascript
+
 //*
+
 myFunction('do something');
+
 // */
+
 ```
 
 这个技巧让切换整个块变得非常容易。
 
-### 第 7 罪：为机器优化，而不是为人类
+## 第 7 罪：为机器优化，而不是为人类
 
-最后一个罪是根据我们所获得的大量性能信息对 JavaScript 进行过度优化。你会在网络上找到大量关于在当前浏览器环境中优化 JavaScript 性能的信息。请注意“当前浏览器环境”——许多信息是针对特定浏览器和版本的，目前它们是必要的恶，但未来未必如此。如果你的应用程序很大，或者你的网站流量很高，了解并应用这些信息可能会决定成败。然而，这其中的许多内容适用于对小型项目和环境影响乎其微的边缘情况。这种优化确实让代码变得更难维护；为了让浏览器在大规模网站上运行飞快，我们需要做的一些事情（例如使用 `document.write()` 编写脚本节点）是非常糟糕的。
+最后一个罪是根据我们所获得的大量性能信息对 `JavaScript` 进行过度优化。你会在网络上找到大量关于在当前浏览器环境中优化 `JavaScript` 性能的信息。请注意“当前浏览器环境”——许多信息是针对特定浏览器和版本的，目前它们是必要的恶，但未来未必如此。如果你的应用程序很大，或者你的网站流量很高，了解并应用这些信息可能会决定成败。然而，这其中的许多内容适用于对小型项目和环境影响乎其微的边缘情况。这种优化确实让代码变得更难维护；为了让浏览器在大规模网站上运行飞快，我们需要做的一些事情（例如使用 `document.write()` 编写脚本节点）是非常糟糕的。
 
-在让代码更整洁、易于修改、扩展和理解，与每页加载时间缩短两毫秒之间选择时，我选择前者。许多 JavaScript 优化可以通过脚本完成。与其教项目中的所有开发者 JavaScript 性能的细节，不如让专家团队（甚至是工具）在代码上线之前对其进行优化。
+在让代码更整洁、易于修改、扩展和理解，与每页加载时间缩短两毫秒之间选择时，我选择前者。许多 `JavaScript` 优化可以通过脚本完成。与其教项目中的所有开发者 `JavaScript` 性能的细节，不如让专家团队（甚至是工具）在代码上线之前对其进行优化。
 
 如果你能利用机器做任何事情让其他机器的工作变得更容易，就去做吧。现在是时候像对待后端代码一样将构建过程应用于前端代码了，而不是强迫自己遵循违背编写代码自然流的编码规范。
 
@@ -1999,15 +1995,20 @@ Christian Heilmann
 
 在我们所做的视觉内容中有很多数学，即使我们没有意识到。如果你想让某个东西看起来自然并移动得自然，你需要在其中加入一些物理和舍入。自然界并不是按照直角或线性加速度运行的。这就是为什么电影里的僵尸如此可怕。[之前在这里结合 CSS 动画讨论过](http://coding.smashingmagazine.com/2011/09/14/the-guide-to-css-animation-principles-and-examples/)，但今天让我们深入一点，看看平滑效果背后的简单数学。
 
-### 从 0 到 1 且不无聊
+## 从 0 到 1 且不无聊
 
 如果你刚刚开始编程，被要求从 0 到 1 且中间几个步骤，你可能会选择一个 `for` 循环：
 
 ```javascript
+
 for ( i = 0; i <= 1; i += 0.1 ) {
+
   x = i;
+
   y = i;
+
 }
+
 ```
 
 这会在图上产生一条 45 度的线。自然界中没有任何东西以这种精度运动：
@@ -2017,10 +2018,15 @@ for ( i = 0; i <= 1; i += 0.1 ) {
 让这种运动稍微自然一点的一种简单方法是将该值乘以自身：
 
 ```javascript
+
 for ( i = 0; i <= 1; i += 0.1 ) {
+
   x = i;
+
   y = i * i;
+
 }
+
 ```
 
 这意味着 0.1 是 0.01，0.2 是 0.04，0.3 是 0.09，0.4 是 0.16，0.5 是 0.25，依此类推。结果是一条开始平坦并在末尾变得越来越陡峭的曲线：
@@ -2029,15 +2035,16 @@ for ( i = 0; i <= 1; i += 0.1 ) {
 
 你可以通过继续相乘或使用“幂”函数 `Math.pow()` 来让这种效果更加明显：
 
-
-
-
-
 ```javascript
+
 for ( i = 0; i <= 1; i += 0.1 ) {
+
 x = i;
+
 y = Math.pow( i, 4 );
+
 }
+
 ```
 
 ![powerto.png](img/powerto.png)
@@ -2046,7 +2053,7 @@ y = Math.pow( i, 4 );
 
 你可以同样的方式使用它，但对于获取在 0 到 1 之间遵循自然运动的值，有一个甚至更简单的选项。
 
-### 这不是错误，只是自然运动
+## 这不是错误，只是自然运动
 
 [正弦波](http://en.wikipedia.org/wiki/Sine_wave) 可能是平滑动画最好的东西。它们存在于自然界：观察一个挂着重物的弹簧、海浪、声音和光。
 
@@ -2055,14 +2062,23 @@ y = Math.pow( i, 4 );
 为了创建一个从 0 到 1 再回到 0 的平滑运动，我们可以使用一个在几步内从 0 变到 `π` 的正弦波。一个完整的从 0 到 `π` × `2`（即一整圈）的正弦波将产生从 -1 到 1 的值，我们暂时不需要那样。
 
 ```javascript
+
 var counter = 0;
+
 // 100 次迭代
+
 var increase = Math.PI / 100;
+
 for ( i = 0; i <= 1; i += 0.01 ) {
+
 x = i;
+
 y = Math.sin(counter);
+
 counter += increase;
+
 }
+
 ```
 
 ![sine.png](img/sine.png)
@@ -2070,24 +2086,39 @@ counter += increase;
 关于正弦和余弦数值的简要说明：`Math.sin()` 和 `Math.cos()` 都接受一个单位为[弧度](http://en.wikipedia.org/wiki/Radian)的角度。然而，作为人类，0 到 360 度的度更容易读得多。这就是为什么你能够并且应该这个简单的公式在它们之间进行转换：
 
 ```javascript
+
 var toRadian = Math.PI / 180;
+
 var toDegree = 180 / Math.PI;
+
 var angle = 30;
+
 var angleInRadians = angle * toRadian;
+
 var angleInDegrees = angleInRadians * toDegree;
+
 ```
 
 回到我们的正弦波。你可以对此玩很多。例如，你可以使用一个完整的 2 × `π` 循环的绝对值：
 
 ```javascript
+
 var counter = 0;
+
 // 100 次迭代
+
 var increase = Math.PI * 2 / 100;
+
 for ( i = 0; i <= 1; i += 0.01 ) {
+
 x = i;
+
 y = Math.abs( Math.sin( counter ) );
+
 counter += increase;
+
 }
+
 ```
 
 ![msine.png](img/msine.png)
@@ -2095,14 +2126,23 @@ counter += increase;
 但再次，这看起来很粗糙。如果你想要完整的上下运动而中间没有断点，那么你需要偏移值。你必须将正弦减半，然后给它加上 0.5：
 
 ```javascript
+
 var counter = 0;
+
 // 100 次迭代
+
 var increase = Math.PI * 2 / 100;
+
 for ( i = 0; i <= 1; i += 0.01 ) {
+
 x = i;
+
 y = Math.sin( counter ) / 2 + 0.5;
+
 counter += increase;
+
 }
+
 ```
 
 ![shiftingup.png](img/shiftingup.png)
@@ -2116,37 +2156,63 @@ counter += increase;
 看起来很整洁，不是吗？很多技巧已经包含在 CSS 中：
 
 ```css
+
 .stage {
+
 width:200px;
+
 height:200px;
+
 margin:2em;
+
 position:relative;
+
 background:#6cf;
+
 overflow:hidden;
+
 }
+
 .stage div {
+
 line-height:40px;
+
 width:100%;
+
 text-align:center;
+
 background:#369;
+
 color:#fff;
+
 font-weight:bold;
+
 position:absolute;
+
 }
+
 ```
 
 `.stage` 元素具有固定尺寸并采用相对定位。这意味着在它内部绝对定位的所有内容都将相对于元素本身。
 
-`.stage` 内部的 `div` 高 40 像素并是绝对定位的。现在，我们只需要用 JavaScript 以正弦波移动这个 `div` 即可：
+`.stage` 内部的 `div` 高 40 像素并是绝对定位的。现在，我们只需要用 `JavaScript` 以正弦波移动这个 `div` 即可：
 
 ```javascript
+
 var banner = document.querySelector( '.stage div' ),
+
 start = 0;
+
 function sine(){
+
 banner.style.top = 50 * Math.sin( start ) + 80 + 'px';
+
 start += 0.05;
+
 }
+
 window.setInterval( sine, 1000/30 );
+
 ```
 
 `start` 值不断变化，通过 `Math.sin()` 我们得到了一个很好的波浪运动。我们将其乘以 50 以得到一个更宽的波浪，并加上 80 像素使其在 `.stage` 元素中居中。是的，该元素高为 200 像素，100 是它的一半，但因为 banner 高 40 像素，所以我们需要减去它的一半来使其居中。
@@ -2154,22 +2220,28 @@ window.setInterval( sine, 1000/30 );
 目前，这是一个简单的上下运动。但是，没有什么阻止你让它变得更有趣。例如，50 的倍数系数本身可以是不同值的正弦波：
 
 ```javascript
+
 var banner = document.querySelector( '.stage div' ),
+
 start = 0,
+
 multiplier = 0;
+
 function sine(){
+
 multiplier = 50 * Math.sin( start * 2 );
+
 banner.style.top = multiplier * Math.sin( start ) + 80 + 'px';
+
 start += 0.05;
+
 }
+
 window.setInterval( sine, 1000/30 );
+
 ```
 
 [这种结果](http://www.smashingmagazine.com/wp-content/uploads/2011/09/growingsinejump.html) 是一个似乎在试探性上下移动的 banner。在过去，在非常缓慢的 Commodore 64 上，实时计算正弦波太慢了。相反，我们有工具来生成正弦表（如果说是数组）。
-
-
-
-
 
 这里可能唯一的新内容是带有不同浏览器前缀的转换以及定位。人们经常会犯一个错误：创建一个具有宽度 `w` 和高度 `h` 的 `div`，然后将其设置为屏幕上的 `x` 和 `y` 坐标。这意味着你将始终需要处理高度和宽度的偏移。通过在定位 `div` 之前减去宽度和高度的一半，你就可以真正将它设置在你想放置的位置——无论尺寸如何。[这里有一个证明](http://www.smashingmagazine.com/wp-content/uploads/2011/09/offsetissue1.html)：
 
@@ -2180,6 +2252,7 @@ window.setInterval( sine, 1000/30 );
 ![simplecircle.png](img/simplecircle.png)
 
 ```javascript
+
 var stage = document.querySelector('.stage'),
 
 plots = 10;
@@ -2209,15 +2282,17 @@ p.position( x, y );
 angle += increase;
 
 }
+
 ```
 
 我们想要在一个圆中放置 10 个物体，所以我们需要找到想要放置它们的角度。一个圆周是 `Math.PI` 的两倍，所以我们所做的就是除以它。矩形的 `x` 和 `y` 位置可以根据我们想要的角度来计算。正如早之前在毕达哥定理部分解释的那样，`x` 是余弦，`y` 是正弦。那么，我们只需要将要在舞台上绘制的圆居中中（200,200 是舞台的中心），任务就完成了。我们在画布上用 10 步画了一个半径为 100 像素的圆。
 
-问题是这看起来非常糟糕。如果我们真的想在圆周上绘制物体，那么它们的角度也应该指向中心，对吧？为了这一点，我们需要计算直角三角形的正切值，正如在这个[有趣的“数学很有趣”页面](http://www.mathsisfun.com/algebra/trig-finding-angle-right-triangle.html)中解释的那样。在 JavaScript 中，可以使用 [`Math.atan2()](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Math/atan2) 作为快捷方法。结果看起来好多了：
+问题是这看起来非常糟糕。如果我们真的想在圆周上绘制物体，那么它们的角度也应该指向中心，对吧？为了这一点，我们需要计算直角三角形的正切值，正如在这个[有趣的“数学很有趣”页面](http://www.mathsisfun.com/algebra/trig-finding-angle-right-triangle.html)中解释的那样。在 `JavaScript` 中，可以使用 [`Math.atan2()`](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Math/atan2) 作为快捷方法。结果看起来好多了：
 
 ![tancircle.png](img/tancircle.png)
 
 ```javascript
+
 var stage = document.querySelector('.stage'),
 
 plots = 10;
@@ -2249,6 +2324,7 @@ p.position( x, y );
 angle += increase;
 
 }
+
 ```
 
 注意，CSS 中的 `rotate` 转换在这种情况下对我们非常有帮助。否则，旋转我们矩形的数学计算将会无趣得多。CSS 转换也接受弧度和角度作为其值。在这种情况下，我们使用 `rad`；如果你想用角度旋转，只需使用 `deg` 作为值即可。
@@ -2256,6 +2332,7 @@ angle += increase;
 现在让圆圈动起来怎么样？嗯，第一件事是稍微修改脚本，因为我们不希望不断创建新的图形。除此之外，要[旋转圆圈只需要不断增加起始角度](http://www.smashingmagazine.com/wp-content/uploads/2011/09/rotatingcircle.html)：
 
 ```javascript
+
 var stage = document.querySelector('.stage'),
 
 plots = 10;
@@ -2303,6 +2380,7 @@ angle += 0.06;
 }
 
 setInterval( rotate, 1000/30 );
+
 ```
 
 想要更多吗？基于此做一个[旋转的文本消息](http://www.smashingmagazine.com/wp-content/uploads/2011/09/rotatingmessage.html) 怎么样？这其中的棘手之处在于我们还需要在每次迭代中将字符旋转 90°：
@@ -2310,6 +2388,7 @@ setInterval( rotate, 1000/30 );
 ![rotatedmessage.png](img/rotatedmessage.png)
 
 ```javascript
+
 var stage = document.querySelector('.stage'),
 
 message = 'Smashing Magazine '.toUpperCase(),
@@ -2365,11 +2444,13 @@ angle += 0.06;
 }
 
 setInterval( rotate, 1000/40 );
+
 ```
 
 再次，这里没有东西是固定的。你可以让[圆的半径不断变化](http://www.smashingmagazine.com/wp-content/uploads/2011/09/growrotatingmessage.html)，就像我们之前做的跳动横幅消息一样（以下只是片段）：
 
 ```javascript
+
 multiplier = 80 * Math.sin( angle );
 
 for( var i = 0; i < plots; i++ ) {
@@ -2389,11 +2470,13 @@ angle += increase;
 }
 
 angle += 0.06;
+
 ```
 
 当然，你也可以[移动圆的中心](http://www.smashingmagazine.com/wp-content/uploads/2011/09/rotaterotatingmessage.html)：
 
 ```javascript
+
 rx = 50 * Math.cos( angle ) + 200;
 
 ry = 50 * Math.sin( angle ) + 200;
@@ -2415,11 +2498,13 @@ angle += increase;
 }
 
 angle += 0.06;
+
 ```
 
 最后一个技巧，如何[允许特定范围 Coordinates](http://www.smashingmagazine.com/wp-content/uploads/2011/09/boxedrotatingmessage.html)？
 
 ```javascript
+
 function rotate() {
 
 rx = 70 * Math.cos( angle ) + 200;
@@ -2455,69 +2540,76 @@ function contain( min, max, value ) {
 return Math.min( max, Math.max( min, value ) );
 
 }
+
 ```
 
+# AJAX 与 SEO：让动态内容可被搜索
 
+Google 搜索喜欢简单、易于爬取的网站。而你喜欢那些能展示你的作品且引人注目的动态网站。但搜索引擎无法运行你的 `JavaScript`。那个加载你内容的酷炫 AJAX 程正在损害你的 SEO。
 
+Google 的机器人可以轻松解析 `HTML`；它们可以拆解 Word 文档、PDF 甚至来自你网站偏远角落的图像。但对于它们来说，AJAX 内容是不可见的。
 
-Google 搜索喜欢简单、易于爬取的网站。而你喜欢那些能展示你的作品且引人注目的动态网站。但搜索引擎无法运行你的 JavaScript。那个加载你内容的酷炫 AJAX 程正在损害你的 SEO。
+## AJAX 的问题
 
-Google 的机器人可以轻松解析 HTML；它们可以拆解 Word 文档、PDF 甚至来自你网站偏远角落的图像。但对于它们来说，AJAX 内容是不可见的。
+AJAX 彻底改变了 Web，但它也隐藏了内容。如果你有一个 Twitter 账户，尝试查看你个人资料页的源代码。那里没有任何推文 —— 只有代码！Twitter 页面上的几乎所有内容都是通过 `JavaScript` 动态构建的，爬虫无法看到任何内容。这就是为什么 Google 开发了 [AJAX 爬取](http://code.google.com/web/ajaxcrawling)。
 
-### AJAX 的问题
+由于 Google 无法从 `HTML` 中获取动态内容，你将通过其他方式提供它。但存在两个大问题：Google 不运行你的 `JavaScript`，而且它并不信任你。
 
-AJAX 彻底改变了 Web，但它也隐藏了内容。如果你有一个 Twitter 账户，尝试查看你个人资料页的源代码。那里没有任何推文 —— 只有代码！Twitter 页面上的几乎所有内容都是通过 JavaScript 动态构建的，爬虫无法看到任何内容。这就是为什么 Google 开发了 [AJAX 爬取](http://code.google.com/web/ajaxcrawling)。
-
-由于 Google 无法从 HTML 中获取动态内容，你将通过其他方式提供它。但存在两个大问题：Google 不运行你的 JavaScript，而且它并不信任你。
-
-Google 索引整个 Web，但它并不运行 JavaScript。现代网站是运行在浏览器中的小型应用程序，但在其索引时运行这些应用程序对 Google 和其他人来说都太慢了。
+Google 索引整个 Web，但它并不运行 `JavaScript`。现代网站是运行在浏览器中的小型应用程序，但在其索引时运行这些应用程序对 Google 和其他人来说都太慢了。
 
 信任问题更为棘手。每个网站都想在搜索结果中排第一；你的网站正在和其他所有网站争夺顶部位置。Google 不能简单地给你一个 API 来返回你的内容，因为某些网站使用了如[遮蔽法](http://en.wikipedia.org/wiki/Cloaking) 等脏手段来尝试获得更高的排名。搜索引擎无法信任你会做正确的事。
 
-Google 需要一种方法，让你向浏览器提供 AJAX 内容，同时向爬虫提供简单的 HTML 内容。换句话说，你需要多种格式的相同内容。
+Google 需要一种方法，让你向浏览器提供 AJAX 内容，同时向爬虫提供简单的 `HTML` 内容。换句话说，你需要多种格式的相同内容。
 
-### 相同内容的两个 URL
+## 相同内容的两个 URL
 
 让我们从一个简单的例子开始。我是一个名为 Spiffy UI 的开源项目的成员。它是一个用于 REST 和快速开发的 [Google Web Toolkit](http://code.google.com/webtoolkit/) (GWT) 框架。我们想要展示我们的框架，因此我们使用 GWT 制作了 [SpiffyUI.org](http://www.spiffyui.org/)。
 
-GWT 是一个动态框架，将我们所有的内容都放在 JavaScript 中。我们的 `index.html` 文件看起来如下：
+GWT 是一个动态框架，将我们所有的内容都放在 `JavaScript` 中。我们的 `index.html` 文件看起来如下：
 
 ```html
 <body>
+
 <script type="text/javascript" language="javascript"
+
 src="org.spiffyui.spsample.index.nocache.js"></script>
+
 </body>
 ```
 
-所有内容都通过 JavaScript 添加到页面，我们通过[标签 (hash tags)](http://en.wikipedia.org/wiki/Hashtag#Hashtags) 来控制内容（我稍后会解释原因）。每当你移动到应用程序的另一个页面时，你会得到一个新的标签。点击“CSS”链接，你会来到这里：
 
-http://www.spiffyui.org#css
+
+# 所有内容都通过 JavaScript 添加到页面
+
+我们通过[标签 (hash tags)](http://en.wikipedia.org/wiki/Hashtag#Hashtags) 来控制内容（我稍后会解释原因）。每当你移动到应用程序的另一个页面时，你会得到一个新的标签。点击“CSS”链接，你会来到这里：
+
+`http://www.spiffyui.org#css`
 
 在大多数浏览器中，地址栏中的 URL 看起来如下：
 
-http://www.spiffyui.org/?css
+`http://www.spiffyui.org/?css`
 
 我们用 HTML5 修复了它。我将在本文后续部分向你展示如何做。
 
 这种简单的哈希对我们的应用程序有效并可以书签，但它是不可爬取的。Google 不知道标签意味着什么，也不知道如何从中获取内容，但它确实为网站提供了一种返回内容的替代方法。因此，我们通过添加一个感叹号（“bang”）来让 Google 知道我们的哈希实际上是 JavaScript 代码，而是页面上的锚点，如下：
 
-http://www.spiffyui.org#!css
+`http://www.spiffyui.org#!css`
 
 这种 hash bang 是整个 AJAX 爬取方案中的秘密配方。当 Google 看到这两个字符在一起时，它就知道有更多内容被 JavaScript 隐藏了。它给了我们机会，通过向特殊的 URL 发起第二次请求来返回完整内容：
 
-http://www.spiffyui.org?_escaped_fragment_=css
+`http://www.spiffyui.org?_escaped_fragment_=css`
 
 新 URL 用 `?_escaped_fragment=` 替换了 `#!`。使用 URL 参数而不是标签很重要，因为参数会被发送到服务器，而标签仅对浏览器可用。
 
 这个新 URL 让我们在 Google 爬虫请求时，能够以 HTML 格式返回相同的内容。困惑吗？让我们逐步查看它是如何运作的。
 
-### HTML 片段
+## HTML 片段
 
 整个页面是在 JavaScript 中渲染的。我们需要将该内容转换为 HTML，以便 Google 能够访问。第一步是将 SpiffyUI.org 拆分为 HTML 片段。
 
-Google 仍然将网站视为一组页面，因此我们需要以这种方式提供我们的内容。对于我们的应用程序来说，这非常容易，因为我们有一组页面，每个页面都是一个独立的逻辑部分。第一步是让页面可以设置书签。
+Google 仍然将网站视为一组页面，因此我们需要以这种方式提供我们的内容。对于我们的应用程序来说，这非常容易，因为我们有一组页面，每个页面都是一个独立的逻辑部分。
 
-#### 书签
+### 书签
 
 大多数时候，JavaScript 只是更改页面内的某些东西：当你点击那个按钮或弹出那个面板时，页面的 URL 不会改变。对于简单页面来说这很好，但当你通过 JavaScript 提供内容时，你希望给用户提供唯一的 URL，以便他们可以收藏应用程序的某些区域。
 
@@ -2525,56 +2617,27 @@ JavaScript 应用程序可以更改当前页面的 URL，因此它们通常通�
 
 标签本质上是一个在应用程序语境下有意义的值。选择一个对于它代表的应用程序区域逻辑合理的标签，并将其添加：
 
-http://www.spiffyui.org#css
+`http://www.spiffyui.org#css`
 
 在大多数浏览器中，地址栏中的 URL 看起来如下：
 
-http://www.spiffyui.org/?css
+`http://www.spiffyui.org/?css`
 
 我们用 HTML5 修复了它。我将在本文后续部分向你展示如何做。
 
 这种简单的哈希对我们的应用程序有效并可以书签，但它是不可爬取的。Google 不知道标签意味着什么，也不知道如何从中获取内容，但它确实为网站提供了一种返回内容的替代方法。因此，我们通过添加一个感叹号（“bang”）来让 Google 知道我们的哈希实际上是 JavaScript 代码，而是页面上的锚点，如下：
 
-http://www.spiffyui.org#!css
+`http://www.spiffyui.org#!css`
 
 这种 hash bang 是整个 AJAX 爬取方案中的秘密配方。当 Google 看到这两个字符在一起时，它就知道有更多内容被 JavaScript 隐藏了。它给了我们机会，通过向特殊的 URL 发起第二次请求来返回完整内容：
 
-http://www.spiffyui.org?_escaped_fragment_=css
+`http://www.spiffyui.org?_escaped_fragment_=css`
 
 新 URL 用 `?_escaped_fragment=` 替换了 `#!`。使用 URL 参数而不是标签很重要，因为参数会被发送到服务器，而标签仅对浏览器可用。
 
 这个新 URL 让我们在 Google 爬虫请求时，能够以 HTML 格式返回相同的内容。困惑吗？让我们逐步查看它是如何运作的。
 
-#### 提供片段
-
-整个页面是在 JavaScript 中渲染的。我们需要将该内容转换为 HTML，以便 Google 能够访问。第一步是将 SpiffyUI.org 拆分为 HTML 片段。
-
-Google 仍然将网站视为一组页面，因此我们需要以这种方式提供我们的内容。对于我们的应用程序来说，这非常容易，因为我们有一组页面，每个页面都是一个独立的逻辑部分。第一步是让页面可以设置书签。
-
-大多数时候，JavaScript 只是更改页面内的某些东西：当你点击那个按钮或弹出那个面板时，页面的 URL 不会改变。对于简单页面来说这很好，但当你通过 JavaScript 提供内容时，你希望给用户提供唯一的 URL，以便他们可以收藏应用程序的某些区域。
-
-JavaScript 应用程序可以更改当前页面的 URL，因此它们通常通过添加标签来支持书签。标签比任何其他 URL 机制都更好，因为它们不会被发送到服务器；它们是 URL 中唯一无需刷新页面即可更改的部分。
-
-标签本质上是一个在应用程序语境下有意义的值。选择一个对于它代表的应用程序区域逻辑合理的标签，并将其添加：
-
-http://www.spiffyui.org#css
-
-在大多数浏览器中，地址栏中的 URL 看起来如下：
-
-http://www.spiffyui.org/?css
-
-我们用 HTML5 修复了它。我将在本文后续部分向你展示如何做。
-
-这种简单的哈希对我们的应用程序有效并可以书签，但它是不可爬取的。Google 不知道标签意味着什么，也不知道如何从中获取内容，但它确实为网站提供了一种返回内容的替代方法。因此，我们通过添加一个感叹号（“bang”）来让 Google 知道我们的哈希实际上是 JavaScript 代码，而是页面上的锚点，如下：
-
-http://www.spiffyui.org#!css
-
-这种 hash bang 是整个 AJAX 爬取方案中的秘密配方。当 Google 看到这两个字符在一起时，它就知道有更多内容被 JavaScript 隐藏了。它给了我们机会，通过向特殊的 URL 发起第二次请求来返回完整内容：
-
-http://www.spiffyui.org?_escaped_fragment_=css
-
-
-
+### 提供片段
 
 你可以看到我们的 [SiteMapServlet.java](http://spiffyui.googlecode.com/svn/trunk/spiffyui-app/src/main/java/org/spiffyui/spsample/server/SiteMapServlet.java) servlet 的所有源代码。这个 servlet 大多只是查找表，接收一个 ID 并从我们服务器上的某处提供关联内容。它被称为 `SiteMapServlet.java` 是因为该类还处理我们站点地图的生成。
 
@@ -2636,17 +2699,17 @@ hash bang（井号）告诉 Google 这是一个转义片段，其余部分的工
 
 Twitter 在其 URL 中保留了 hash bang，如下：
 
-http://twitter.com/#!/ZackGrossbart
+`http://twitter.com/#!/ZackGrossbart`
 
 这对于 AJAX 爬取效果良好，但同样，它看起来有点丑。你可以通过集成 [HTML5 history](http://www.w3.org/TR/html5/history.html) 让你的 URL 更美观。
 
 Spiffy UI 使用 HTML5 history 集成将像这样的 hash-bang URL 转换……
 
-http://www.spiffyui.org#!css
+`http://www.spiffyui.org#!css`
 
 ……转换为像这样的美观 URL：
 
-http://www.spiffyui.org?css
+`http://www.spiffyui.org?css`
 
 HTML5 history 让更改此 URL 参数成为可能，因为井号是 HTML4 中你可以更改的唯一 URL 部分。如果你更改其他任何内容，整个页面都会重新加载。HTML5 history 在不刷新页面的情况下更改整个 URL，我们可以让 URL 呈现任何我们想要的样式。
 
@@ -2667,7 +2730,7 @@ Hash bangs 不应该取代 Web 上的每一个 URL。简单页面不需要 hash 
 等等，支持 AJAX 爬取意味着你需要更改客户端代码和服务器代码。这里有一些链接可以了解更多：
 
 - “[让 AJAX 应用可爬取](http://code.google.com/web/ajaxcrawling),”Google Code
-- “[会话历史与导航](http://www.w3.org/TR/html5/history.html),”HTML5 规范，章节 5.4 
+- “[会话历史与导航](http://www.w3.org/TR/html5/history.html),”HTML5 规范，章节 5.4
 - [sitemaps.org](http://www.sitemaps.org/)
 - [Google Webmaster Tools](https://www.google.com/webmasters/tools)
 - [Spiffy UI 源代码](https://code.google.com/p/spiffyui/source/checkout)，包含完整的 AJAX 爬取示例。
@@ -2675,23 +2738,19 @@ Hash bangs 不应该取代 Web 上的每一个 URL。简单页面不需要 hash 
 
 # 作者
 
-### Addy Osmani
+## Addy Osmani
 
 Addy Osmani 是一位住在英国伦敦的 JavaScript 博客作者兼 AOL 的 UI 开发者。他还是 jQuery [Bug Triage/Docs/Front-end] 团队的成员，负责处理错误、文档编写和社区更新。最近，他被提名了 [.net “杰出新秀”奖](http://www.thenetawards.com/#num12)。
 
-### Andy Croxall
+## Andy Croxall
 
 Andy Croxall 是一位来自英国伦敦 Wandsworth 的 Web 开发者。他是一位 JavaScript 专家，jQuery 社区的活跃成员，发布插件和扩展。他服务的客户从伦敦证券交易所到杜乐士（Durex）应有尽。你可以在这里关注他和他的项目和创作
 
-### Christian Heilmann
+## Christian Heilmann
 
 一位在英国美丽的伦敦镇为 Mozilla 工作的国际开发者布道师（Developer Evangelist）。
 
-### Zack Grossbart
-
-
-
-
+## Zack Grossbart
 
 Zack Grossbart 是一位[工程师](http://www.zackgrossbart.com/hackito/)、设计师和[作者](http://www.zackgrossbart.com/blog/toc/)。他是 [Spiffy UI](http://www.spiffyui.org/) 项目的创始成员，[WordPress 编辑日历](http://stresslimitdesign.com/editorial-calendar-plugin)插件的架构师，也是 [NetIQ](http://www.netiq.com/) 的顾问工程师。
 

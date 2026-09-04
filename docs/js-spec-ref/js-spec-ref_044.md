@@ -1,27 +1,48 @@
+
 # 6.5 Ajax
 
 Ajax 指的是不刷新页面，发出异步请求，向服务器端要求数据，然后再进行处理的方法。
 
 *   XMLHttpRequest 对象
+
     *   Open()
+
     *   setRequestHeader()
+
     *   send()
+
     *   readyState 属性和 readyStateChange 事件
+
     *   progress 事件
+
     *   服务器返回的信息
+
     *   setRequestHeader 方法
+
     *   overrideMimeType 方法
+
     *   responseType 属性
+
     *   文件上传
+
     *   JSONP
+
     *   CORS
+
     *   Fetch API
+
         *   基本用法
+
         *   fetch()
+
         *   Headers
+
         *   Request 对象
+
         *   Response
+
         *   body 属性
+
     *   参考链接
 
 ## XMLHttpRequest 对象
@@ -49,7 +70,7 @@ xhr.onreadystatechange = function(){
 // open 方式用于指定 HTTP 动词、请求的网址、是否异步
 xhr.open('GET', '/endpoint', true);
 
-// 发送 HTTP 请求
+// 发送 HTTP 请务
 xhr.send(null);
 ```
 
@@ -58,7 +79,9 @@ xhr.send(null);
 open 方法用于指定发送 HTTP 请求的参数，它有三个参数如下：
 
 *   发送方法，一般来说为“GET”、“POST”、“PUT”和“DELETE”中的一个值。
+
 *   网址。
+
 *   是否异步，true 表示异步，false 表示同步。
 
 下面发送 POST 请求的例子。
@@ -273,9 +296,13 @@ XMLHttpRequest 对象有一个 responseType 属性，用来指定服务器返回
 XHR 2 允许用户自行设置这个属性，也就是指定返回数据的类型，可以设置如下的值：
 
 *   'text'：返回类型为字符串，这是默认值。
+
 *   'arraybuffer'：返回类型为 ArrayBuffer。
+
 *   'blob'：返回类型为 Blob。
+
 *   'document'：返回类型为 Document。
+
 *   'json'：返回类型为 JSON object。
 
 text 类型适合大多数情况，而且直接处理文本也比较方便，document 类型适合返回 XML 文档的情况，blob 类型适合读取二进制数据，比如图片文件。
@@ -423,13 +450,13 @@ function foo(data) {
 
 由于 script 元素返回的脚本文件，是直接作为代码运行的，不像 Ajax 请求返回的是 JSON 字符串，需要用 JSON.parse 方法将字符串转为 JSON 对象。于是，为了方便起见，许多服务器支持 JSONP 指定回调函数的名称，直接将 JSON 数据放入回调函数的参数，如此一来就省略了将字符串解析为 JSON 对象的步骤。
 
-请看下面的例子，假定访问 [`example.com/ip`](http://example.com/ip) ，返回如下 JSON 数据：
+请看下面的例子，假定访问 [`example.com/ip`](http://example.com/ip) ，返回如下 JSON 数据：
 
 ```js
 {"ip":"8.8.8.8"}
 ```
 
-现在服务器允许客户端请求时使用 callback 参数指定回调函数。访问 [`example.com/ip?callback=foo`](http://example.com/ip?callback=foo) ，返回的数据变成：
+现在服务器允客户端请求时使用 callback 参数指定回调函数。访问 [`example.com/ip?callback=foo`](http://example.com/ip?callback=foo) ，返回的数据变成：
 
 ```js
 foo({"ip":"8.8.8.8"})
@@ -465,7 +492,7 @@ if("withCredentials" in request) {
 }
 ```
 
-CORS 的原理其实很简单，就是增加一条 HTTP 头信息的查询，询问服务器端，当前请求的域名是否在许可名单之中，以及可以使用哪些 HTTP 动词。如果得到肯定的答复，就发出 XMLHttpRequest 请求。这种机制叫做“预检”（preflight）。
+CORS 的原理其实很简单，就是增加一条 HTTP 头信息的查询，询问服务器端，当前请请求的域名是否在许可名单之中，以及可以使用哪些 HTTP 动词。如果得到肯定的答复，就发出 XMLHttpRequest 请求。这种机制叫做“预检”（preflight）。
 
 “预检”的专用 HTTP 头信息是 Origin。假定用户正在浏览来自 www.example.com 的网页，该网页需要向 Google 请求数据，这时浏览器会向该域名询问是否同意跨域请求，发出的 HTTP 头信息如下：
 
@@ -663,7 +690,9 @@ fetch('users.json').then(function(response) {
 上面代码中，response 对象有很多属性，其中的`response.type`属性比较特别，表示 HTTP 回应的类型，它有以下三个值。
 
 *   basic：正常的同域请求
-*   cors：CORS 机制下的跨域请求
+
+*   cors：CORS 机制下的跨域请请求
+
 *   opaque：非 CORS 机制下的跨域请求，这时无法读取返回的数据，也无法判断是否请求成功
 
 如果需要在 CORS 机制下发出跨域请求，需要指明状态。
@@ -868,15 +897,21 @@ var postReq = new Request(req, {method: 'POST'});
 fetch 方法返回 Response 对象实例，它有以下属性。
 
 *   status：整数值，表示状态码（比如 200）
+
 *   statusText：字符串，表示状态信息，默认是“OK”
+
 *   ok：布尔值，表示状态码是否在 200-299 的范围内
+
 *   headers：Headers 对象，表示 HTTP 回应的头信息
+
 *   url：字符串，表示 HTTP 请求的网址
+
 *   type：字符串，合法的值有五个 basic、cors、default、error、opaque。basic 表示正常的同域请求；cors 表示 CORS 机制的跨域请求；error 表示网络出错，无法取得信息，status 属性为 0，headers 属性为空，并且导致 fetch 函数返回 Promise 对象被拒绝；opaque 表示非 CORS 机制的跨域请求，受到严格限制。
 
 Response 对象还有两个静态方法。
 
 *   Response.error() 返回一个 type 属性为 error 的 Response 对象实例
+
 *   Response.redirect(url, status) 返回的 Response 对象实例会重定向到另一个 URL
 
 ### body 属性
@@ -884,10 +919,15 @@ Response 对象还有两个静态方法。
 Request 对象和 Response 对象都有 body 属性，表示请求的内容。body 属性可能是以下的数据类型。
 
 *   ArrayBuffer
+
 *   ArrayBufferView (Uint8Array 等)
+
 *   Blob/File
+
 *   string
+
 *   URLSearchParams
+
 *   FormData
 
 ```js
@@ -903,9 +943,13 @@ fetch("/login", {
 Request 对象和 Response 对象都提供以下方法，用来读取 body。
 
 *   arrayBuffer()
+
 *   blob()
+
 *   json()
+
 *   text()
+
 *   formData()
 
 注意，上面这些方法都只能使用一次，第二次使用就会报错，也就是说，body 属性只能读取一次。Request 对象和 Response 对象都有 bodyUsed 属性，返回一个布尔值，表示 body 是否被读取过。
@@ -949,11 +993,19 @@ addEventListener('fetch', function(evt) {
 ## 参考链接
 
 *   MDN, [Using XMLHttpRequest](https://developer.mozilla.org/en-US/docs/DOM/XMLHttpRequest/Using_XMLHttpRequest)
+
 *   Mathias Bynens, [Loading JSON-formatted data with Ajax and xhr.responseType='json'](http://mathiasbynens.be/notes/xhr-responsetype-json)
+
 *   Eric Bidelman, [New Tricks in XMLHttpRequest2](http://www.html5rocks.com/en/tutorials/file/xhr2/)
+
 *   Matt West, [Uploading Files with AJAX](http://blog.teamtreehouse.com/uploading-files-ajax)
+
 *   Monsur Hossain, [Using CORS](http://www.html5rocks.com/en/tutorials/cors/)
+
 *   MDN, [HTTP access control (CORS)](https://developer.mozilla.org/en-US/docs/Web/HTTP/Access_control_CORS)
+
 *   Matt Gaunt, [Introduction to fetch()](http://updates.html5rocks.com/2015/03/introduction-to-fetch)
+
 *   Nikhil Marathe, [This API is so Fetching!](https://hacks.mozilla.org/2015/03/this-api-is-so-fetching/)
+
 *   Ludovico Fischer, [Introduction to the Fetch API](http://www.sitepoint.com/introduction-to-the-fetch-api/)

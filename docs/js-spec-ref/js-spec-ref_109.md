@@ -1,18 +1,9 @@
-# 13.12 Http 模块
 
-*   基本用法
-    *   处理 GET 请求
-    *   处理 POST 请求
-    *   发出请求
-        *   get()
-        *   request()
-    *   搭建 HTTPs 服务器
-    *   模块属性
-    *   模块方法
+# 13.12 Http 模块
 
 ## 基本用法
 
-### 处理 GET 请求
+### 处理 GET 请求处理
 
 Http 模块主要用于搭建 HTTP 服务。使用 Node.js 搭建 HTTP 服务器非常简单。
 
@@ -86,10 +77,12 @@ http.createServer(function(req, res) {
 回调函数的 req（request）对象，拥有以下属性。
 
 *   url：发出请求的网址。
+
 *   method：HTTP 请求的方法。
+
 *   headers：HTTP 请求的所有 HTTP 头信息。
 
-### 处理 POST 请求
+### POST 请求处理
 
 当客户端采用 POST 方法发送数据时，服务器端可以对 data 和 end 两个事件，设立监听函数。
 
@@ -146,7 +139,7 @@ http.createServer(function (request, response) {
 
 ## 发出请求
 
-### get()
+### get() 方法
 
 get 方法用于发出 get 请求。
 
@@ -173,7 +166,7 @@ function getTestPersonaLoginCredentials(callback) {
 },
 ```
 
-### request()
+### request() 方法
 
 request 方法用于发出 HTTP 请求，它的使用格式如下。
 
@@ -186,19 +179,33 @@ request 方法的 options 参数，可以是一个对象，也可以是一个字
 options 对象可以设置如下属性。
 
 *   host：HTTP 请求所发往的域名或者 IP 地址，默认是 localhost。
+
 *   hostname：该属性会被`url.parse()`解析，优先级高于 host。
+
 *   port：远程服务器的端口，默认是 80。
+
 *   localAddress：本地网络接口。
+
 *   socketPath：Unix 网络套接字，格式为 host:port 或者 socketPath。
+
 *   method：指定 HTTP 请求的方法，格式为字符串，默认为 GET。
-*   path：指定 HTTP 请求的路径，默认为根路径（/）。可以在这个属性里面，指定查询字符串，比如`/index.html?page=12`。如果这个属性里面包含非法字符（比如空格），就会抛出一个错误。
+
+*   path：指定 HTTP 请请求的路径，默认为根路径（/）。可以在这个属性里面，指定查询字符串，比如`/index.html?page=12`。如果这个属性里面包含非法字符（比如空格），就会抛出一个错误。
+
 *   headers：一个对象，包含了 HTTP 请求的头信息。
+
 *   auth：一个代表 HTTP 基本认证的字符串`user:password`。
+
 *   agent：控制缓存行为，如果 HTTP 请求使用了 agent，则 HTTP 请求默认为`Connection: keep-alive`，它的可能值如下：
+
     *   undefined（默认）：对当前 host 和 port，使用全局 Agent。
+
     *   Agent：一个对象，会传入 agent 属性。
+
     *   false：不缓存连接，默认 HTTP 请求为`Connection: close`。
-*   keepAlive：一个布尔值，表示是否保留 socket 供未来其他请求使用，默认等于 false。
+
+*   keepAlive：一个布尔值，表示是否保留 socket 供未来其他请请求使用，默认等于 false。
+
 *   keepAliveMsecs：一个整数，当使用 KeepAlive 的时候，设置多久发送一个 TCP KeepAlive 包，使得连接不要被关闭。默认等于 1000，只有 keepAlive 设为 true 的时候，该设置才有意义。
 
 request 方法的 callback 参数是可选的，在 response 事件发生时触发，而且只触发一次。
@@ -285,23 +292,26 @@ curl -k https://localhost:8000
 
 ## 模块属性
 
-（1）HTTP 请求的属性
+### HTTP 请求的属性
 
 *   headers：HTTP 请求的头信息。
+
 *   url：请求的路径。
 
 ## 模块方法
 
-（1）http 模块的方法
+### http 模块的方法
 
 *   createServer(callback)：创造服务器实例。
 
-（2）服务器实例的方法
+### 服务器实例的方法
 
 *   listen(port)：启动服务器监听指定端口。
 
-（3）HTTP 回应的方法
+### HTTP 回应的方法
 
 *   setHeader(key, value)：指定 HTTP 头信息。
+
 *   write(str)：指定 HTTP 回应的内容。
+
 *   end()：发送 HTTP 回应。

@@ -1,15 +1,18 @@
-# Ember.js 入门指南之六枚举（enumerables）
 
-在`Ember`中，枚举是包含多个子对象的对象，并且提供了丰富的 API（[Ember.Enumerable API](http://emberjs.com/api/classes/Ember.Enumerable.html)）去获取所包含的子对象。`Ember`的枚举都是基于原生的`javascript`数组实现的，`Ember`扩展了其中的很多接口。 `Ember`提供一个标准化接口处理枚举，并且允许开发者完全改变底层数据存储，而无需修改应用程序的数据访问代码。 `Ember`的`Enumerable API`尽可能的遵照`ECMAScript`规范。为了减少与其他库不兼容，`Ember`允许你使用本地浏览器实现数组。
+
+# Ember.js 入门指南之六：枚举（enumerables）
+
+在`Ember`中，枚举是包含多个子对象的对象，并且提供了丰富的 API（[Ember.Enumerable API](http://emberjs.com/api/classes/Ember.Enumerable.html)）去获取所包含的子对象。`Ember`的枚举都是基于原生的`javascript`数组实现的，`Ember`扩展了其中的很多接口。`Ember`提供一个标准化接口处理枚举，并且允许开发者完全改变底层数据存储，而无需修改应用程序的数据访问代码。`Ember`的`Enumerable API`尽可能地遵照`ECMAScript`规范。为了减少与其他库不兼容，`Ember`允许你使用本地浏览器实现数组。
 
 下面是一些重要而常用的`API`列表；请注意左右两列的不同。
 
 | 标准方法 | 可被观察方法 | 说明 |
-| pop | popObject | 该函数从从数组中删除最后项，并返回该删除项 |
-| push | pushObject | 新增元素 |
-| reverse | reverseObject | 颠倒数组元素 |
-| shift | shiftObject | 把数组的第一个元素从其中删除，并返回第一个元素的值 |
-| unshift | unshiftObject | 可向数组的开头添加一个或更多元素，并返回新的长度 |
+| --- | --- | --- |
+| `pop` | `popObject` | 该函数从数组中删除最后项，并返回该删除项 |
+| `push` | `pushObject` | 新增元素 |
+| `reverse` | `reverseObject` | 颠倒数组元素 |
+| `shift` | `shiftObject` | 把数组的第一个元素从其中删除，并返回第一个元素的值 |
+| `unshift` | `unshiftObject` | 可向数组的开头添加一个或更多元素，并返回新的长度 |
 
 详细文档请看：[`emberjs.com/api/classes/Ember.Enumerable.html`](http://emberjs.com/api/classes/Ember.Enumerable.html)
 
@@ -17,7 +20,7 @@
 
 ## 常用 API
 
-#### 1，数组迭代器
+### 1，数组迭代器
 
 遍历数组元素使用`forEach`方法。
 
@@ -28,7 +31,7 @@ arr.forEach(function(item, index) {
 }); 
 ```
 
-#### 2，获取数组首尾元素
+### 2，获取数组首尾元素
 
 ```js
 //  获取头尾的元素，直接调用 Ember 封装好的 firstObject 和 lastObject 方法即可
@@ -36,7 +39,7 @@ console.log('The firstItem is ' + arr.get('firstObject'));  // output> chen
 console.log('The lastItem is ' + arr.get('lastObject'));  //output> ubuntuvim.xyz 
 ```
 
-#### 3，map 方法
+### 3，map 方法
 
 ```js
 //  map 方法，转换数组，并且可以在回调函数里添加自己的逻辑
@@ -50,7 +53,7 @@ arrMap.forEach(function(item, index) {
 console.log('-----------------------------------------------'); 
 ```
 
-#### 4，mapBy 方法
+### 4，mapBy 方法
 
 ```js
 // mapBy 方法：返回对象属性的集合，
@@ -83,7 +86,7 @@ tmp.forEach(function(item, index) {
 console.log('-----------------------------------------------'); 
 ```
 
-#### 5，filter 方法
+### 5，filter 方法
 
 ```js
 //  filter 过滤器方法，过滤普通数组元素
@@ -102,7 +105,7 @@ console.log('-----------------------------------------------');
 
 `filter`方法会返回所有判断为`true`的元素，会把判断结果为`false`或者`undefined`的元素过滤掉。
 
-#### 6，filterBy 方法
+### 6，filterBy 方法
 
 ```js
 //  如果你想根据对象的某个属性过滤数组你需要用 filterBy 方法，比如下面的代码根据 isDone 这个对象属性过滤
@@ -138,7 +141,7 @@ console.log('-----------------------------------------------');
 
 `filter`和`filterBy`不同的地方是前者可以自定义过滤逻辑，后者可以直接使用。
 
-#### 7，every、some 方法
+### 7，every、some 方法
 
 ```js
 // every、some 方法
@@ -168,7 +171,7 @@ var some = people.some(function(person, index, self) {
 console.log('some = ' + some); 
 ```
 
-#### 8，isEvery、isAny 方法
+### 8，isEvery、isAny 方法
 
 ```js
 //  与 every、some 类似的方法还有 isEvery、isAny 
@@ -176,8 +179,9 @@ console.log('isEvery = ' + people.isEvery('isHappy', true));  //  全部都为 t
 console.log('isAny = ' + people.isAny('isHappy', true));  //只要有一个为 true，返回结果就是 true 
 ```
 
-上述方法的使用与普通`JavaScript`提供的方法基本一致。学习难度不大……自己敲两边就懂了！
+上述方法的使用与普通`JavaScript`提供的方法基本一致。学习难度不大……自己敲两遍就懂了！
 
 这些方法非常重要，请一定要学会如何使用！！！
 
-博文完整代码放在[Github](https://github.com/ubuntuvim/my_emberjs_code)（博文经过多次修改，博文上的代码与 github 代码可能又出入，不过影响不大！），如果你觉得博文对你有点用在 github 项目上给我个`star`吧。您的肯定对我来说是最大的动力！！
+博文完整代码放在[Github](https://github.com/ubuntuvim/my_emberjs_code)（博文经过多次修改，博文上的代码与 GitHub 代码可能有出入，不过影响不大！），如果你觉得博文对你有点用，在 GitHub 项目上给我个`star`吧。您的肯定对我来说是最大的动力！！
+

@@ -1,10 +1,7 @@
+
 # 精简网站：Web 性能至关重要
 
-
-
-![](img/cover.jpeg)
-
-# 目录
+## 目录
 
 - 前言
 - 1. 性能至上
@@ -22,14 +19,14 @@
 
 ![SitePoint®](img/sitepoint-logo-2012.png)
 
-
-
-
 Copyright © 2015 SitePoint Pty. Ltd.
 
 产品经理：Simon Mackie
+
 技术编辑：Andrew Betts
+
 英文编辑：Ralph Mason
+
 封面设计：Alex Walker
 
 ## 权利声明
@@ -47,8 +44,11 @@ Copyright © 2015 SitePoint Pty. Ltd.
 ![SitePoint®](img/sitepoint-logo-2012.png)
 
 由 SitePoint Pty. Ltd. 出版
+
 48 Cambridge Street Collingwood VIC 3066
+
 网址：www.sitepoint.com
+
 邮箱：business@sitepoint.com
 
 ## 关于 Barbara
@@ -70,9 +70,11 @@ SitePoint 专门为 Web 专业人士提供有趣、实用且易懂的内容。�
 图 1 (`pr01.html_ch0-filesize`) 和图 2 (`pr01.html_ch0-httquests`) 源自 HTTP Archive，显示了网站的大小和 HTTP 请求数量，以及这两项指标在过去几年中的增长情况：
 
 ![2011-2014 年平均网站传输大小的增加](img/0-http-filesize-increase.png)
+
 图 1。2011-2014 年平均网站传输大小的增加
 
-![2011-2014 年每个网站平均 HTTP 请求数量的增加](img/0-http-requests-increase.png)
+![2011-2014 年每个网站平均 HTTP 请请求数量的增加](img/0-http-requests-increase.png)
+
 图 2。2011-2014 年每个网站平均 HTTP 请求数量的增加
 
 从 2010 年到 2014 年，网站的平均总传输大小（基本上是网站的整体重量）增加了 150%，而请求总数（加载网站所需的所有资源）仅增长了约 16%。我们可以清楚地看到向复杂 Web 应用程序发展的趋势。我们的代码需要具备高性能以应对复杂应用程序的兴起。本书将向你展示如何你的网站变得更精简、更快速。
@@ -135,10 +137,6 @@ function animate() {
 }
 ```
 
-
-
-
-
 某些代码行本应单行输入，但由于页面限制，我们不得不对它们进行换行。↵ 表示仅出于格式目的而存在的换行，应该被忽略：
 
 ```
@@ -149,32 +147,41 @@ URL.open("http://www.sitepoint.com/blogs/2015/05/28/user-style-she
 ## 提示、备注与警告
 
 ### 提示 (Tip)：嘿，你！
+
 提示将为你提供有用的小贴士。
 
 ### 备注 (Note)：额，打扰一下……
+
 备注是与当前主题相关但并非至关重要的补充说明。可以将它们看作是额外信息。
 
 ### 重要 (Important)：确保你始终……
+
 ……注意这些重要的点。
 
 ### 警告 (Warning)：小心！
+
 警告将标出在过程中可能会让你绊倒的陷阱。
 
 ## 补充材料
 
 [`www.learnable.com/books/webperf1/`](http://www.learnable.com/books/webperf1/)
+
 该书籍的网站，包含了链接、更新、资源等。
 
 [`github.com/spbooks/webperf1/`](https://github.com/spbooks/webperf1/)
+
 该书籍的可下载代码存档。
 
 [`community.sitepoint.com/`](http://community.sitepoint.com/)
+
 SitePoint 论坛，用于解决任何棘手的网络问题。
 
 `books@sitepoint.com`
+
 我们的电子邮箱，如果您需要联系我们寻求支持、报告问题或出于任何其他原因，可以使用它。
 
 ## 致谢
+
 没有任何语言能描述我对比家人支持我的职业是有多么感激，他们从未让我因离开他们而感到内疚。感谢爸爸、Anna、Kathy、Michael、我的侄子 Jan 以及侄女 Antonia 和 Lisa，还有所有已不在人世的优秀家族成员。
 
 我最深切的感谢和感激送给 Daniela，她给了我如此多的爱。当我写书感到快乐和兴奋时，她在；每当我感到低落、精疲力竭，不知道书籍是否能像我（以及编辑们）预期的那样，她也在。感谢你牺牲了无数小时和周末。你提振我的精神并提供支持性和建设性反馈的能力是无价的。
@@ -192,11 +199,13 @@ SitePoint 论坛，用于解决任何棘手的网络问题。
 谢谢。
 
 ## 想进一步提升学习吗？
+
 感谢选择购买 SitePoint 的书籍。你想继续学习吗？现在你可以在 Learnable 以极廉的价格无限访问课程和所有 SitePoint 书籍。立即注册并从今天开始学习！加入 Learnable，你将处于最新趋势的前沿：[`www.learnable.com`](http://www.learnable.com)。
 
 # 第 1 章：性能至关重要
 
 ## 精简的网站
+
 这本书《精简的网站》（*Lean Websites*）探讨了网站臃肿和缓慢背后的原因，剖析了页面中哪些资源是必要的，哪些是锦上添花的，哪些是完全没且可以删除以减轻负担的。它将帮助你理解导致网站变慢的原因，以及如何在保持网站最初设想质量的同时寻找效率。
 
 书名包含了 `lean`（精简）一词。那么这个词是什么意思呢？
@@ -208,9 +217,11 @@ SitePoint 论坛，用于解决任何棘手的网络问题。
 正如谚语所，“领先的秘诀在于开始。”所以，让我们开始吧！
 
 ## 速度的心理学
+
 人们为什么离开网站？可能有很多原因，例如很难找到他们想要的内容。但用户离开很有可能是因为加载太慢了。在这一部分中，我想关注一下心理学，以及它是如何在我们感知速度和性能中发挥巨大作用的。
 
 ### 什么是“太慢”，网站何时“感觉”慢？
+
 正如心理学家 Jeremy Dean 指出的，[当我们开心时，时间过得很快](http://www.spring.org.uk/2011/06/10-ways-our-minds-warp-time.php)。我们什么时候体验快乐？显然，不是在等待的时候。谁喜欢等待，尤其是在这个不断更新新闻和响应的世界里？如今，人们渴望即时满足，极少耐心。Amazon 提供一日送达；出租车到达时间不应超过十分钟。我们已经变成了一个等待不再被接受的社会——尤其是在网络世界。当我们访问网站时，如果没有得到即时响应，竞争对手的网站只需点击一下就能触达。
 
 > [盯着锅里的水看永远不会烧开。当我们无聊时，分钟会过得格外漫长。](http://www.theguardian.com/science/2013/jan/01/psychology-time-perception-awareness-research)
@@ -218,19 +229,18 @@ SitePoint 论坛，用于解决任何棘手的网络问题。
 讨论网站速度的问题在于，速度的感知是非常主观的且取决于特定背景的。对我来说慢，对我父亲或祖母来说可能并不慢。我们都有不同的预期。因此，第 3 章将帮助我们用真实的数字和数据制定“太慢”的定义。
 
 ### Maister 的服务第一法则
+
 David Maister 是哈佛商学院的前教授，他为服务法则制定了一个公式。该公式——多年研究的结果——衡量了等待特定服务如何影响客户对所提供服务和实际产品的感知。
 
 Maister 的公式指出：[满意度 = 感知 - 预期。](http://faculty.haas.berkeley.edu/andy/blockhandouts/Queue%20Psychology.ppt) 在网络性能和为访问者提供内容的范围内，这个公式提出了以下问题：
 
 * 实际向访问者呈现了什么，内容是否满足了用户的目标？
+
 * 访问者感知到了什么？
+
 * 访问者实际预期什么？
 
 #### 满意度
-
-
-
-
 
 想象这样一个场景：你访问一个页面，加载指示器缓慢地从 5% 移动到 10%。你预计达到 100% 需要一段时间。如果百分比意料之外地快速飙升到 95% 然后到达 100%，你会感到满意和快乐，因为你的感知超过了预期。相反，如果加载指示器的增长比你预想的要慢，你会产生一种不愉快的感觉。
 
@@ -252,7 +262,7 @@ Maister 的公式指出：[满意度 = 感知 - 预期。](http://faculty.haas.b
 
 在性能背景下，在服务客户时，管理并关注他们的预期至关重要。迪士尼在管理预期方面做得非常好，让客户在游乐园中获得了积极的结果。他们设置了显示预计等待时间的排队，且给出一个相当悲观的估计，这样客户排到队的时间比预测的要短得多。结果，客户感到更加积极。
 
-那么，这如何转化到服务网站访问者上？我们应该通过告知他们任务进度来设定明确的预期。以尽可能快的方式向他们展示想看的内容；如果需要等待，则显示进度条或其他指示器，以让他们他们网站仍在响应，并且将收到他们请求的内容。
+那么，这如何转化到服务网站访问者上？我们应该通过告知他们任务进度来设定明的预期。以尽可能快的方式向他们展示想看的内容；如果需要等待，则显示进度条或其他指示器，以让他们他们网站仍在响应，并且将收到他们请求的内容。
 
 ### 备注：尊重
 
@@ -267,8 +277,11 @@ Maister 的公式指出：[满意度 = 感知 - 预期。](http://faculty.haas.b
 以下是一些[真实的统计数据和数字](http://www.webperformancetoday.com/2010/06/15/everything-you-wanted-to-know-about-web-performance/)，证明了在追求瞬时价值的世界里速度有多重要：
 
 *   Amazon 计算出，页面加载每慢一秒，他们[每年就会损失 16 亿美元的销售额](http://www.fastcompany.com/1825005/how-one-second-could-cost-amazon-16-billion-sales)
+
 *   近 40% 的在线购物者会放弃加载超过 3 秒的网站（[Gomez](http://www.mcrinc.com/Documents/Newsletters/201110_why_web_performance_matters.pdf)）
+
 *   79% 的在线购物者在因性能差导致失望体验后不会再次访问该网站（[KissMetrics](https://blog.kissmetrics.com/loading-time/?wide=1)）
+
 *   页面加载时间延迟 1 秒意味着页面浏览减少 11%，客户满意度下降 16%，转化率损失 7%（[Aberdeen Group](http://www.aberdeen.com/research/5136/ra-performance-web-application/content.aspx)）
 
 ## 响应时间
@@ -282,9 +295,13 @@ Maister 的公式指出：[满意度 = 感知 - 预期。](http://faculty.haas.b
 图 1.1. 以毫秒为单位的感知性能，以及我们大脑的反应[^([1])](#ch01.html_ftn.d5e249)
 
 *   在约 `100ms` 的延迟周围我们感到`瞬时感知`
+
 *   在 `100ms` 到 `300ms` 之间发生`轻微的可感知延迟`
+
 *   在 `1000ms` (1s) 以内我们绝对能感觉到`可感知延迟`
+
 *   在 `1 秒` 之后，我们感到`心理上下文切换`开始
+
 *   在 `10 秒`及更久，`流失率`上升，用户倾向于离开网站
 
 ### 备注：心理上下文切换
@@ -299,17 +316,13 @@ Maister 的公式指出：[满意度 = 感知 - 预期。](http://faculty.haas.b
 
 ## 速度很重要：每个人都在意，甚至 Google 也是
 
-
-
-
-
 当你的网站响应迅速且快速时，让用户感到快乐并通过传输更少的字节降低运营和服务器成本，这些并不是关注性能的唯一好处。Google 已经[正式](http://www.thinkwithgoogle.com/articles/the-google-gospel-of-speed-urs-hoelzle.html)他们的搜索排名算法重视页面速度，并在此基础上组织搜索结果。这可以追溯到 Google 在 2010 年发布的一篇[博客](http://googlewebmastercentral.blogspot.ca/2010/04/using-site-speed-in-web-search-ranking.html)，文中提到：“用户非常重视速度——这就是为什么我们决定在搜索排名中考虑网站速度。”
 
 当你必须处理大量的竞争产品和网站时，这一点尤为重要。当有人在 Google 上搜索你提供的服务时，比竞争对手快绝对能让你处于领先地位。
 
 Alexa 排名衡量了一个网站相对于 Web 上所有其他网站的受欢迎程度。Alexa 的指标基于这些网站的页面访问量和访问。
 
-最近对排名靠前的页面及其速度进行了一些[研究](http://bigqueri.es/t/are-popular-websites-faster/162)，调查了网站的受欢迎程度是否与 `Start Render` 时间相关。Start Render 时间将在第 3 和第 4 章中进行详细讨论，但目前，我们可以说它是一个记录浏览器开始在屏幕上“绘制”内容时间的指标。在感知性能的背景下，这是一个非常有用的衡量标准。如果用户能够“看到”内容，他们就会觉得网站已经准备好可以浏览了。然而，Start Render 时间仅表示页面内容已开始加载，因此即使用户可以看到内容，他们实际上可能还无法与之进行交互。
+最近对排名靠前的页面及其速度进行了一些[研究](http://bigqueri.es/t/are-popular-websites-faster/162)，调查了网站的受欢迎程度是否与 `Start Render` 时间相关。Start Render 时间将在第 3 和第 4 章中进行详�讨论，但目前，我们可以说它是一个记录浏览器开始在屏幕上“绘制”内容时间的指标。在感知性能的背景下，这是一个非常有用的衡量标准。如果用户能够“看到”内容，他们就会觉得网站已经准备好可以浏览了。然而，Start Render 时间仅表示页面内容已开始加载，因此即使用户可以看到内容，他们实际上可能还无法与之进行交互。
 
 ## 总结
 
@@ -361,9 +374,6 @@ Web 设计师喜欢创建美丽且审学的网页，他们这样做有充分的�
 
 ### 注意：作为设计特性的速度
 
-
-
-
 Instagram 是少数真正关注设计与速度共生的公司之一。[他们的初衷](https://speakerdeck.com/mikeyk/secrets-to-lightning-fast-mobile-design)是找到让速度成为一种设计特性的解决方案。
 
 ## 感知与抢占性网页性能
@@ -409,11 +419,14 @@ Instagram 是少数真正关注设计与速度共生的公司之一。[他们的
 | 模块 | 分值 | 描述 |
 
 | --- | --- | --- |
+
 | 低影响 | 1 | 小图片、大部分静态内容和简单图形、如按钮和文本字段等交互元素。 |
+
 | 中影响 | 2 | 中等大小的图片和简单脚本。 |
+
 | 高影响 | 6 | 大图片以及加载重量型 JavaScript 或 JavaScript 和图像的第三方脚本（如广告）。 |
 
-与你的设计团队坐在一起，拿一把铅笔，开始在线框图中标记 MPM。根据上面的表格，尝试识别线框图上的哪些模块代表低、中、高性能影响。这不仅对于创建线框图的设计师有用，也对于必须规划关键路径的开发者很有用。（关键路径——我们将在第 5 章中详细讨论——描述了渲染页面初始视图的代码和资源。）
+与你的设计团队坐在一起，拿一把铅笔，开始在线框图中标记 MPM。根据上面的表格，尝试识别线框图上的哪些模块代表低、中、高性能影响。这不仅对于创建线框图的设计师有用，也对于必须规划关�路径的开发者很有用。（关键路径——我们将在第 5 章中详细讨论——描述了渲染页面初始视频的代码和资源。）
 
 这项练习的最终目标让整个团队专注于尽可能高效地加载和显示内容。
 
@@ -449,9 +462,6 @@ Instagram 是少数真正关注设计与速度共生的公司之一。[他们的
 
 让我们看看如何将打分和排序系统应用于线框图。
 
-
-
-
 图 2.5 所示的线框图是根据今天[最常见的屏幕尺寸](http://www.w3schools.com/browsers/browsers_display.asp)之一：1366x768px 描绘的。如果你知道访问者最常用的屏幕尺寸，请根据该尺寸进行草图：
 
 ![Time.com 网站的线框图](img/2-wf-time-mpm.png)
@@ -467,10 +477,15 @@ Instagram 是少数真正关注设计与速度共生的公司之一。[他们的
 以下是每个 MPM 在首屏以上（above the fold）的计数，分为低影响、中等影响和高影响：
 
 | 计数 | 模块 | 分数 |
+
 | --- | --- | --- |
+
 | 10 | 低影响 | 10 |
+
 | 2 | 中等影响 | 4 |
+
 | 2 | 高影响 | 12 |
+
 | **14** | **总计** | **26** |
 
 通过检查每个 MPM 的文件大小，你可以评估每个 MPM 的影响。如前提到的，主要为了让设计人员和开发人员聚集，快速绘制出不同内容模块对性能的影响。它能让你轻松确定哪些元素可能太重，而不适合在首屏展示。
@@ -488,10 +503,15 @@ Instagram 是少数真正关注设计与速度共生的公司之一。[他们的
 以下是我根据更改后获得的新 MPM 首屏以上计数：
 
 | 计数 | 模块 | 分数 |
+
 | --- | --- | --- |
+
 | 12 | 低影响 | 12 |
+
 | 3 | 中等影响 | 6 |
+
 | 1 | 高影响 | 6 |
+
 | **16** | **总计** | **24** |
 
 我减小了主故事图片的高度和宽度，通过将标题和描述右对，在图片旁边放置了更多上下文。我还将股票数据小部件替换为用户必须点击的 CTA 按钮。只有在点击时，才会加载股票数据，这在某种程度上缩短了 ATF 加载时间。
@@ -507,8 +527,11 @@ Instagram 是少数真正关注设计与速度共生的公司之一。[他们的
 在本章中，我们涵盖了以下主题：
 
 * 早期考虑并规划性能的方法
+
 * 如何“伪造”一个快速网站
+
 * 感知性能的重要性
+
 * 性能点数系统和 MDM 的概念
 
 性能最重要的规则之一是量化性能的好坏。虽然*感知*性能是 Web 性能的一个重要方面，但网站的*实际*性能同样重要——而这只能通过测量和监控来确定。你无法改进你没有测量过的东西。下一章将为你介绍几种用于测量和监控网站性能的指标指标、技术和工具。
@@ -517,7 +540,7 @@ Instagram 是少数真正关注设计与速度共生的公司之一。[他们的
 
 ## 预热
 
-在改进某事物（无论是网站还是产品）的过程中，能够衡量进展是有帮助的。没有有效的测量，很难判断某物是变好了了还是变坏了。幸运的是，我们有很多工具可以测试和监控你的网站性能。这就是本章的重点。
+在改进某事物（无论是网站还是产品）的过程中，能够衡量进展是有帮助的。没有有效的测量，很难判断某物是变好了还是变坏了。幸运的是，我们有很多工具可以测试和监控你的网站性能。这就是本章的重点。
 
 ## 测量性能
 
@@ -532,9 +555,13 @@ Instagram 是少数真正关注设计与速度共生的公司之一。[他们的
 * **总传输大小和总请求数**：网站页面总体在持续增长。从 2012 年到 2014 年，页面大小增加了约 38%：
 
 | 年份（8 月 1 日） | [总传输大小](http://httparchive.org/about.php#bytesTotal) | 上年的增长百分比 |
+
 | --- | --- | --- |
+
 | 2012 | 1124 | - |
+
 | 2013 | 1532 | 27 |
+
 | 2014 | 1821 | 16 |
 
 *HTTP Archive 统计：2012-14 年单个顶级 Alexa 网站的平均总传输大小和总请求数*
@@ -549,7 +576,7 @@ Instagram 是少数真正关注设计与速度共生的公司之一。[他们的
 
 这类数据对于理解你的网站与当前标准的对比很有用。
 
-下面的图片显示了来自 Time.com 的[数据](http://httparchive.org/viewsite.php?pageid=17936268*)。如果你是一家新闻机构，你可能想将你的网站数据与这些进行比较。你在这里发现趋势。例如，Time.com 似乎减少了图像文件大小以及请求量，这可能表明网站优化的趋势：
+下面的图片显示了来自 Time.com 的[数据](http://httparchive.org/viewsite.php?pageid=17936268*)。如果你是一家新闻机构，你可能想将你的网站数据与这些进行比较。你在这里发现趋势。例如，Time.com 似乎减少了图像文件大小以及请请求量，这可能表明网站优化的趋势：
 
 ![HTTP Archive 的 Time.com 数据](img/3-httparchive-time.png)
 
@@ -563,11 +590,7 @@ HTTP Archive 为性能世界提供了很好的介绍——回答你或公司其�
 
 #### 基于浏览器的开发工具
 
-
-
-
-
-衡量网站性能最快、最简单的方法是从使用你偏好的浏览器开发者工具开始。大多数浏览器都提供了内置的开发者工具，你可以用它们来检查网站代码并监控其性能。在 Windows 上按下 `Ctrl + Shift + I`，在 Mac 上按下 `Cmd + Opt + I` 即可打开开发者工具。
+衡量网站性能最快、最简单的方法是从使用你偏好的浏览器开发者工具开始。大多数浏览器都提供了内置的开发者工具，你可以用它们来检查网站代并监控其性能。在 Windows 上按下 `Ctrl + Shift + I`，在 Mac 上按下 `Cmd + Opt + I` 即可打开开发者工具。
 
 图 3.3 显示了 sitepoint.com 网站的一个示例，在 Firefox 开发者工具的网络（Network）标签页中打开。
 
@@ -578,7 +601,9 @@ HTTP Archive 为性能世界提供了很好的介绍——回答你或公司其�
 在图片的右下角，我们可以看到以下信息：
 
 1. 浏览器必须发送 59 个 HTTP 请求来渲染页面
+
 2. 页面总大小为 1,498.83 千字节
+
 3. 页面在浏览器中完全加载耗了 4.48 秒
 
 其他浏览器提供了更多功能。Google 的 Chrome 开发团队一直在 Chrome 开发者工具中添加实用功能。其中之一是时间轴（Timeline）标签页，它提供了加载页面时大部分时间消耗在方面的完整概述（参见图 3.4）。
@@ -599,7 +624,7 @@ HTTP Archive 为性能世界提供了很好的介绍——回答你或公司其�
 
 优化性能在于了解如何以及何时加载资源，并避免任何内容的阻塞：这就是资源瀑布图（`resource waterfall`）派上用场的地方。
 
-我为止提到的大多数性能工具都包含资源瀑布图（可以通过浏览器开发者工具的网络标签页访问）。当我们之前在 Firefox 的网络标签页查看 sitepoint.com 的基本信息时，你已经了解了资源瀑布图。那么为什么这个视图如此重要呢？每个网页都由 HTTP 事务（请求和响应）组成。它们组合在一起形成了浏览器中显示的网站。它们包含了你网站的资产和资源。视觉化表示所有 HTTP 请求的最简单方法是将它们绘制在所谓的“瀑布图”上。资源之所以以瀑布形式排列，是因为浏览器无法一次下载所有资源。浏览器遵循规则下载每个组件，要么并行，要么顺序。
+我为止提到的大多数性能工具都包含资源瀑布图（可以通过浏览器开发者工具的网络标签页访问）。当我们之前在 Firefox 的网络标签页查看 sitepoint.com 的基本信息时，你已经了解了资源瀑布图。那么为什么这个视图如此重要呢？每个网页都由 HTTP 事务（请务和响应）组成。它们组合在一起形成了浏览器中显示的网站。它们包含了你网站的资产和资源。视觉化表示所有 HTTP 请求的最简单方法是将它们绘制在所谓的“瀑布图”上。资源之所以以瀑布形式排列，是因为浏览器无法一次下载所有资源。浏览器遵循规则下载每个组件，要么并行，要么顺序。
 
 下面的图片显示了资源瀑布图的一个示例，取自 Chrome 开发者工具：
 
@@ -620,9 +645,13 @@ HTTP Archive 为性能世界提供了很好的介绍——回答你或公司其�
 除了大多数浏览器开发者工具中可用的数据（总请求数、页面总大小和页面加载时间）外，WPT 还提供了其他几个重要指标：
 
 1. **加载时间 (Load Time)**：`Load Time` 的测量标准为从初始导航开始到窗口加载事件（`onload`）开始的时间。
+
 2. **首次字节 (First Byte)**：`First Byte` 时间的测量标准为从初始导航开始到浏览器接收到基础页第一个字节的时间（在跟随重定向之后）。
+
 3. **开始渲染 (Start Render)**：`Start Render` 时间是内容开始在浏览器中出现的时间点。这甚至仅仅是背景颜色，或者是页面顶角的 Logo。Start Render 时间在瀑布图中也被标记为一条绿线，理想情况下，它应该尽早出现。
-4. **文档完成（Document Complete，或页面加载时间）**：`Document Complete`（通常也称为 `Page Load Time`）记录初始页面加载过程完成的时刻。你也可以通过 JavaScript 的 `window.onload()` 事件捕捉这一时刻。对于重量型网站，页面加载可能花费大量时间。未通过 JavaScript 推送的图像和内容将在此时完成完全加载，包括不可见元素。然而，如果使用 JavaScript 触发内容推送（例如通过 Ajax 调用），它们可能不会包含在内。要计算这些事件，你应该查看“完全加载（Fully Loaded）”数据。
+
+4. **文档完成（Document Complete，或页面加载时间）**：`Document Complete`（通常也称为 `Page Load Time`）记录初始页面加载过程完成的时刻。你也可以通过 JavaScript 的 `window.onload()` 事件捕捉这一时刻。对于重量型网站，页面加载可能花费大量时间。未通过 JavaScript 推送的图像和内容将在此完成完全加载，包括不可见元素。然而，如果使用 JavaScript 触发内容推送（例如通过 Ajax 调用），它们可能不会包含在内。要计算这些事件，你应该查看“完全加载（Fully Loaded）”数据。
+
 5. **完全加载 (Fully Loaded)**：`Fully Loaded` 时间发生在页面所有资产都加载之后，包括主内容加载后由 JavaScript 触发的任何活动。
 
 我们将在本章后面以及全书的其他部分查看 WPT 的更多功能。
@@ -644,10 +673,15 @@ AFT 是衡量完全渲染用户起初在屏幕上看到的页面部分所需的�
 速度索引数据可以用于 A/B 测试或一般的竞争对手比较。是一些示例：
 
 | 网站 | 速度索引 |
+
 | --- | --- |
+
 | facebook.com | 3524 |
+
 | twitter.com | 2604 |
+
 | sitepoint.com | 1342 |
+
 | time.com | 10784 |
 
 ## 注意：A/B 测试
@@ -659,15 +693,16 @@ AFT 是衡量完全渲染用户起初在屏幕上看到的页面部分所需的�
 Google 对速度索引的回答是 `PageSpeed` 分数。它从 0 到 100 分，分数越高越。Google [认为](https://developers.google.com/speed/docs/insights/about) 85 分是一个性能良好的页面。可以通过在你的页面上运行 [PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/) 工具获取 PageSpeed 分数：
 
 | 网站 | PageSpeed |
+
 | --- | --- |
+
 | facebook.com | 99 |
+
 | twitter.com | 99 |
+
 | sitepoint.com | 95 |
+
 | time.com | 82 |
-
-
-
-
 
 如你从上述两个性能测试结果所示，PageSpeed 和 Speed Index 似乎与其判断标准并不完全匹配。虽然 Speed Index 主要关注 ATF（首次内容绘制）的可见性和交互性，但 [Page Speed](https://developers.google.com/speed/docs/insights/about) 还考虑了完全加载页面所需的时间。
 
@@ -675,7 +710,7 @@ Google 对速度索引的回答是 `PageSpeed` 分数。它从 0 到 100 分，�
 
 让我们仔细观察页面每个资源是如何加载的。
 
-资源瀑布图中的每一项都代表一次网络事务，也称为 HTTP 事务。HTTP 事务描述了客户端对 HTTP 内容发起单个请求的过程。当我们谈论 HTTP 内容时，通常指的是浏览器通过所谓的“内容类型”（content types）接收的任何内容。
+资源瀑布图中的每一项都代表一次网络事务，也称为 HTTP 事务。HTTP 事务描述了客户端对 HTTP 内容发起单个请请求的过程。当我们谈论 HTTP 内容时，通常指的是浏览器通过所谓的“内容类型”（content types）接收的任何内容。
 
 `Content types` 可以是脚本、图像、HTML、文本、Flash、Excel 或 Word 文档等——基本上任何可以提供给浏览器并由浏览器显示的内容。其他不支持且无法显示的内容类型将以下载的形式提供。正如我们之前看到的，各种内容类型在瀑布图中是用颜色区分标记的。
 
@@ -757,22 +792,30 @@ TTFB 由两个因素组成：浏览器到服务器的实际物理距离，以及
 
 [Akamai 的互联网状况报告](http://www.akamai.com/dl/akamai/akamai-soti-q114.pdf?WT.mc_id=soti_Q114) 包含了许多关于服务提供商、地区连接速度和移动浏览器使用数据的极佳信息：
 
-
-
-
-
 | 地区 | 2014 年第一季度平均 Mbps |
+
 | --- | --- |
+
 | 全球 | 3.9 |
+
 | 韩国 | 23.6 |
+
 | 日本 | 14.6 |
+
 | 香港 | 13.3 |
+
 | 瑞士 | 12.7 |
+
 | 荷兰 | 12.4 |
+
 | 拉脱维亚 | 12 |
+
 | 瑞典 | 11.6 |
+
 | 捷克 | 11.2 |
+
 | 芬兰 | 10.7 |
+
 | 爱尔兰 | 10.7 |
 
 然而，尽管带宽在未来几年可能会提高，但随之而来的延迟并不是一个容易解决的问题。改进延迟需要更新和增强——例如更短的跨洋电缆。
@@ -822,7 +865,8 @@ ms // my ISP
 让我们先看基础设置：
 
 * **Test Location (测试位置)**：选择你想要获取性能结果的地理位置。这可能是你大多数访问者所在的地方，甚至是几乎没有访问者来自的地方。你也可以根据收到的投诉来选择位置——例如来自某个体验较糟糕国家的访问者的投诉。
-* **Browser (浏览器)**：你可以从广泛的浏览器列表中选择，包括几个移动版本。
+
+* **Browser (浏览器)**：你可以从广泐的浏览器列表中选择，包括几个移动版本。
 
 在 Advanced Settings（高级设置）下有许多不同的选项可选。例如，`Connection` 允许你精确定义测试 URL 时使用什么连接速度，`Repeat View`重复视图）帮助你查看有无缓存的网站性能。`Number of Tests to Run`运行测试次数）帮助你找到所有运行的平均值。你还可以将测试录制为视频，并按需命名。如果要测试的网站需要身份验证，可以使用 `Auth` 标签填写所需的凭据。
 
@@ -845,9 +889,13 @@ ms // my ISP
 逐一考虑截图中的每个编号项目：
 
 1. 评分区域（右上角）为你提供了网站性能的简要概述。绿色和 A 级越多越好。
+
 2. 有多个视图可以查看：`Summary`（摘要）标签页提供了足够的概览。
+
 3. 表格列出了重要指标的细分。我们之前讨论了其中大部分内容。两行包含了第一次运行（假设之前未被访问过）和第二次运行的数据。第二次运行显示了网站是否利用了缓存（如果利用了，是如何利用的）。
+
 4. 结果页面的其余部分包括瀑布图和截图，展示了网站渲染的路径。瀑布图通过颜色编码帮助你理解每个资源在加载上花费了大部分时间。
+
 5. 你还可以利用一些未显示的工具，例如将测试结果导出为 `HAR` 或 `CSV` 格式以便进一步调查。
 
 #### 注意：什么是 HAR？
@@ -865,9 +913,6 @@ HTTP 存档文件的正式格式被称为 HAR。它是一种 `JSON` 格式，提
 如果你在公共 WebDetailPage 实例上运行多次测试，取决于一天的时间，你会发现它可能非常忙碌。你的测试运行可能会与其他用户的许多测试一起排队列中。如果你觉得你的测试不能总是等待，我建议你考虑安装[自己的 WPT 实例](https://sites.google.com/a/webpagetest.org/docs/private-instances)。这确实为你运行测试时提供了更多的灵活性和自由。否则，你必须等待，直到 WPT 引擎调用你的性能测试。
 
 ##### 唯一 ID
-
-
-
 
 每次 `WPT` 运行都有一个唯一的 ID，你随时可以在以后在浏览器中引用它并进行审查，例如 [`www.webpagetest.org/result/140721_5F_1KP/`](http://www.webpagetest.org/result/140721_5F_1KP/)。
 
@@ -903,15 +948,13 @@ HTTP 存档文件的正式格式被称为 HAR。它是一种 `JSON` 格式，提
 
 ### 查询能力 = Big Query + HTTP Archive
 
-当前的 `HTTP Archive` `SQL` 导出大约有 400GB 的原始数据。你可能不想下载并导入到你的数据库中。使用一个已经导入了所有数据并准备好你查询的工具如何？答案是 [Big Query](https://cloud.google.com/bigquery/what-is-bigquery)。`Big Query` 是一个 Google 数据库工具，允许你通过浏览器查询大型数据集。你可以轻松地将 `HTTP Archive` 项目加载到你的 `Big Query` 配置中，并对 `HTTP Archive` 运行任何喜欢的查询，同时享受极速的 Google 基础设施。
+当前的 `HTTP Archive` `SQL` 导出大约有 400GB 的原始数据。你可能不想下载并导入到你的数据库中。使用一个已经导入了所有数据并准备好你查询的工具如何？答案是 [Big Query](https://cloud.google.com/bigquery/what-is-bigquery)。`Big Query` 是一个 Google 数据库工允许你通过浏览器查询大型数据集。你可以轻松地将 `HTTP Archive` 项目加载到你的 `Big Query` 配置中，并对 `HTTP Archive` 运行任何喜欢的查询，同时享受极速的 Google 基础设施。
 
 如果你想问一些 `HTTP Archive` 未回答的问题，这个工具非常有用。例如，最常见的第三方脚本是什么？查看 [BigQueri.es](http://bigqueri.es/)，这是一个用于寻找各种性能问题答案的绝佳社区资源。
 
 ### APIs
 
-如果你想避免手动监控和测量，我建议你查看一下提供的某些 `APIs`。通过 `APIs`，你可以轻松创建实用的工具和集成检查。它们可以消除手动打开浏览器的需求。
-
-
+如果你想避手动监控和测量，我建议你查看一下提供的某些 `APIs`。通过 `APIs`，你可以轻松创建实用的工具和集成检查。它们可以消除手动打开浏览器的需求。
 
 加载时间会有很大差异，这取决于几个你作为 Web 开发人员无法影响的外部因素。通过 `RUM`，你可以更好地感知实际用户在这方面的体验。我自己的 `RUM` 经验揭示了许多令人惊讶的数据，关于有多少人的带宽比我最初预期的要低，或要高。
 
@@ -966,13 +1009,21 @@ logPerformanceData('main logo', ttfb, total);
 下表显示了上述 API 的当前浏览器支持情况：
 
 | 浏览器 | Navigation Timing API | Resource Timing API |
+
 | --- | --- | --- |
+
 | Chrome | ✔ | ✔ |
+
 | Opera | ✔ | ✔ |
+
 | IE >8 | ✔ | ✔ |
+
 | Safari >7 | ✔ |  |
+
 | iOS Safari >7 | ✔ |  |
+
 | Firefox >30 | ✔ |  |
+
 | Android >4.3 | ✔ | ✔ |
 
 *Resource Timing API 的浏览器支持情况，2014 年 8 月，来源：caniuse.com*
@@ -1010,10 +1061,15 @@ Boomerang 基于 `Navigation` 和 `Resource Timing APIs`，收集评估你网站
 既然你已经了解了同步测试和 RUM，你可能会疑问哪种方法更好。这实际上取决于你想回答的问题。
 
 | | 同步测试 (Synthetic) | RUM |
+
 | --- | --- | --- |
+
 | **谁执行？** | 你运行测试 | 用户运行测试 |
+
 | **什么？** | 测量特定配置的体验（更像实验室环境） | 测量“实际用户”的体验（撒大网，让人放心），让你更了解用户 |
+
 | **为什么？** | 建立基准性能水平 | 获取延迟、带宽、页面加载时间等具体信息 |
+
 | **如何？** | 工具：私有/公共 WebPagetest (API)、PageSpeed Insights (API) 以及商业产品 | 工具：Boomerang、Google Analytics 以及商业产品 |
 
 结合使用真实用户数据将帮助你覆盖整个测量频谱。
@@ -1026,15 +1082,16 @@ Boomerang 基于 `Navigation` 和 `Resource Timing APIs`，收集评估你网站
 
 * 测量数据对于跟踪进度至关重要。
 
-
-
-
-
 *   不要只看单一指标。仅仅因为一个网站有很多图片，并不意味着它比一个没有图片的页面慢。
+
 *   瀑布图（Waterfall）是识别性能瓶颈的绝佳工具。
+
 *   HTTP Archive 和 WebPagetest 是衡量网站性能的重要性能工具。
+
 *   PageSpeed 和 Speed Index（速度指数）捕捉了页面的整体性能。
+
 *   如果你喜欢编写代码和与 API 交互，那么将性能预算（performance budget）纳入你的持续部署流程中是非常值得的。它将消除大量的手动工作。
+
 *   合成测试（Synthetic testing）和真实用户监控（RUM）是互补且配合良好的流程。
 
 恭喜你，你在本章中学习到了很多知识。现在，我们将开始训练营，将所有所学知识付诸实践。
@@ -1052,11 +1109,14 @@ Boomerang 基于 `Navigation` 和 `Resource Timing APIs`，收集评估你网站
 就像我们可能会参加一个高强度训练营课程来让身体精瘦一样，让我们开始我们的网络性能训练营吧。为了做好准备，我们将采取以下步骤：
 
 *   建立一个监控机制来记录我们网站的性能，以便了解需要优化什么。
+
 *   建立一个性能预算作为关注的目标。
 
 ## 先测量，后面向目标优化
 
 在设置任何目标之前，你首先需要对网站的性能进行审计。如果你还没有这样做过，请让你的网站通过 `WebPagetest` (`WPT`) 运行一遍。虽然你有一系列丰富的性能工具可以使用（正如我们在第 3 章）中看到的），但在接下来的示例中，我将主要使用 `WPT` 和浏览器开发者工具。
+
+
 
 ### 你网站的瀑布图
 
@@ -1074,7 +1134,7 @@ Boomerang 基于 `Navigation` 和 `Resource Timing APIs`，收集评估你网站
 2.  第 16–19 行请求了几个图像资源，它们都由较大的主体组成。最好的目标是获得一个“薄”的瀑布图，因为这与小资源（或小文件大小）相关。每个资产或请求都应该快速加载，这意味着资产的主体应该是很小的。
 3.  第 22、24、26 和 27 行请求了许多小的 JavaScript 文件。请求越少，瀑布图就越小、越“陡”。陡峭的瀑布图是精简网站的一个很好的指标，揭示了资源的合理共享和并行化。
 
-###set：资源未找到
+### 资源未找到
 
 ![未找到资源](img/4-not-found-waterfall.png)
 
@@ -1106,17 +1166,13 @@ Boomerang 基于 `Navigation` 和 `Resource Timing APIs`，收集评估你网站
 
 一旦你有了私有的 `HTTP Archive` 数据库并填充了数据，就可以基于它运行查询。为了给你提供一些“真实”的结果，我决定使用我之前一个项目的 `HTTP Archive` 实例。
 
-
-
-
-
 让我们先从几个可以通过捕获的数据回答的问题开始。请注意，以下示例使用 SQL 语句查询数据库。如果你不熟悉 SQL 查询，可以查看一些[课程](https://www.coursera.org/course/db)或[教程](https://www.udacity.com/course/viewer#!/c-cs253/l-48756013/m-48691560)，并回顾 Ilya Grigorik 提供的一些[HTTP Archive 查询](https://gist.github.com/igrigorik/5801492)来入门。
 
 ## 最大的图片有多大？
 
 运行以下查询以获取该问题的答案：
 
-```
+```sql
 SELECT req.url, req.respSize, req.mimeType, pages.url FROM requests
 ↵ as req
 JOIN (SELECT url , pageid, rank FROM pages) as pages
@@ -1133,7 +1189,7 @@ ORDER by req.respSize DESC
 
 你可以通过运行以下查询发现最慢的页面，该查询位于图 4.4：
 
-```
+```sql
 SELECT url, renderStart
 FROM pages
 GROUP BY url
@@ -1148,7 +1204,7 @@ ORDER BY renderStart DESC
 
 让我们找到请求超过 200 次的页面，所示图 4.5：
 
-```
+```sql
 SELECT url, reqTotal
 FROM pages WHERE reqTotal > 200
 GROUP BY url
@@ -1171,10 +1227,9 @@ ORDER BY reqTotal DESC
 
 作为复习，Navigation Timing API 提供了对页面交付给用户的整个过程中的不同事件的访问。这包括用户的连接事件、服务器事件，以及由浏览器执行的事件（在图 4.6 中从左到右）。例如，我们可以直接测量服务器响应时间：
 
-```
+```javascript
 var page = performance.timing,
 rt = page.responseEnd - page.responseStart,
-
 console.log(rt); // server response time
 ```
 
@@ -1188,7 +1243,7 @@ console.log(rt); // server response time
 
     下面的脚本显示了我如何使用 beacon 发送性能数据。我创建了一个透明的 1x1px GIF，将其上传到 Web 服务器，并将 `beacon_url` 路径设置为其所在位置：
 
-    ```
+    ```html
     <script src="http://bbinto.me/lean-websites/chapter-4/rum/
     ↵boomerang/boomerang.custom.min.js" type="text/javascript">
     ↵</script>
@@ -1250,27 +1305,23 @@ console.log(rt); // server response time
 
 所示图 4.8 截图显示了我记录的内容：用户访问页面的精确时间（Date）、带宽（bw）、延迟（lat）、页面加载时间（t_done）以及相应的用户代理（UA）。此外，通过简单的电子表格函数，我确定了 RUM 加载时间、用户延迟和带宽的分布。以下三个指标对于理解用户访问你的网站的体验有用：
 
-页面加载时间：以下图表描述了 bbinto.me 以毫秒为单位的加载时间分布，检索自所有 `t_done` 数据点。你可以看到大多数用户的页面加载时间在 3 到 5 秒之间。一半访问者的页面在 5 秒内加载。95% 的访问者加载时间低于 19.1 秒：
+**页面加载时间**：以下图表描述了 bbinto.me 以毫秒为单位的加载时间分布，检索自所有 `t_done` 数据点。你可以看到大多数用户的页面加载时间在 3 到 5 秒之间。一半访问者的页面在 5 秒内加载。95% 的访问者加载时间低于 19.1 秒：
 
-    ![页面加载时间分布](img/4-rum-cbc.png)
+![页面加载时间分布](img/4-rum-cbc.png)
 
-    图 4.9. 页面加载时间分布
+图 4.9. 页面加载时间分布
 
+**延迟**：延迟通过收集信标（beacon）的 `lat` 值来记录。一半的访问需要处理 166ms 左右的延迟。95% 的访问者延迟低于 370ms（第 95 位数）：
 
+![延迟分布](img/4-rum-latency.png)
 
+图 4.10. 延迟分布
 
+**带宽**：另一个有趣的 RUM 实验是观察带宽，列在 `bw` 下。如下例所示，我从电子表格中汇总了所有的 `bw` 数据点，并根据特定范围对其进行过滤。下方的饼图显示了最常见的互联网连接。一半的访问者通过连接速度在 512KB/s 到 1.6MB/s 之间的访问我的网站：
 
-- **延迟**：延迟通过收集信标（beacon）的 `lat` 值来记录。一半的访问需要处理 166ms 左右的延迟。95% 的访问者延迟低于 370ms（第 95 位数）：
+![带宽分布](img/4-rum-bandwidth.png)
 
-  ![延迟分布](img/4-rum-latency.png)
-
-  图 4.10。延迟分布
-
-- **带宽**：另一个有趣的 RUM 实验是观察带宽，列在 `bw` 下。如下例所示，我从电子表格中汇总了所有的 `bw` 数据点，并根据特定范围对其进行过滤。下方的饼图显示了最常见的互联网连接。一半的访问者通过连接速度在 512KB/s 到 1.6MB/s 之间的访问我的网站：
-
-  ![带宽分布](img/4-rum-bandwidth.png)
-
-  图 4.11。带宽分布
+图 4.11. 带宽分布
 
 ### 注意：Boomerang 方法
 
@@ -1290,17 +1341,17 @@ console.log(rt); // server response time
 
 以下是你可以为网站设置的一些基础告警示例：
 
-- 如果你的网站对访客者不可用，则收到通知。
-- 如果根据地理或特定平台事件发生任何问题，则收到通知。
-- 如果性能测量值达到特定阈值（例如页面加载时间超过 10 秒，或服务器响应时间超过 2 秒），则收到通知。
+*   如果你的网站对访客者不可用，则收到通知。
+*   如果根据地理或特定平台事件发生任何问题，则收到通知。
+*   如果性能测量值达到特定阈值（例如页面加载时间超过 10 秒，或服务器响应时间超过 2 秒），则收到通知。
 
 #### Google Analytics
 
 如果你已经在用 Google Analytics，不妨利用它的免费自定义告警。虽然我提到过 Analytics 仅使用采样数据，并且依赖平均值而非中位数来计算性能指标，但它仍然是一个快速且易用的告警工具。进入 Admin -> Custom Alerts 来创建你的[自定义告警](https://www.igvita.com/2012/11/30/web-performance-anomaly-detection-with-google-analytics/)，如图 4.12 所示：
 
-  ![在 Google Analytics 中设置告警](img/4-alerts-plt-google.png)
+![在 Google Analytics 中设置告警](img/4-alerts-plt-google.png)
 
-  图 4.12。在 Google Analytics 中设置告警
+图 4.12. 在 Google Analytics 中设置告警
 
 #### Pingdom
 
@@ -1308,17 +1359,17 @@ console.log(rt); // server response time
 
 下面的图 4.13 截图显示了如何设置告警在网站宕机时通知你：
 
-  ![在 Pingdom 中设置宕机告警](img/4-alerts-downtime.png)
+![在 Pingdom 中设置宕机告警](img/4-alerts-downtime.png)
 
-  图 4.13。在 Pingdom 中设置宕机告警
+图 4.13. 在 Pingdom 中设置宕机告警
 
 #### CopperEgg
 
 [CopperEgg](http://copperegg.com/) 是许多商业工具之一，提供了设置告警、RUM 和其他测量的灵活性。下方的图 4.14 截图显示了在设置特定性能指标告警时可以达到多细的粒度。这是一套实用的监控工具包，会让你安心。
 
-  ![在 CopperEgg 中设置告警](img/4-alerts-copperegg.png)
+![在 CopperEgg 中设置告警](img/4-alerts-copperegg.png)
 
-  图 4.14。在 CopperEgg 中设置告警
+图 4.14. 在 CopperEgg 中设置告警
 
 ## 设置性能预算
 
@@ -1330,9 +1381,9 @@ console.log(rt); // server response time
 
 以下是一些帮助你设定预算并坚持预算的要点：
 
-- **评估竞争对手的标准**：竞争对手的指标可以帮助你建立性能基准。
-- **创建性能假设以强化业务指标**：针对如何通过提高速度来使你的网站更成功提出假设。
-- **列出并承诺你的性能预算**：为了坚持预算，你需要发布它，并承诺你的性能指标和阈值。
+*   **评估竞争对手的标准**：竞争对手的指标可以帮助你建立性能基准。
+*   **创建性能假设以强化业务指标**：针对如何通过提高速度来使你的网站更成功提出假设。
+*   **列出并承诺你的性能预算**：为了坚持预算，你需要发布它，并承诺你的性能指标和阈值。
 
 让我们更详细地查看每一项。
 
@@ -1350,19 +1401,15 @@ WPT 是运行竞争分析的绝佳资源。当你第一次进入 WPT 网站时�
 
 1. 转到 WPT 并点击 Visual Comparison 标签。输入你的网站和竞争对手的网站以获取对比性能数据和胶帧，如图 4.15 所示：
 
-  ![在 WPT 上启动视觉比较](img/4-visual-comparison.png)
+![在 WPT 上启动视觉比较](img/4-visual-comparison.png)
 
-  图 4.15。在 WPT 上启动视觉比较
-
-
-
-
+图 4.15. 在 WPT 上启动视觉比较
 
 2. 完成比较测试后，你将看到网站 A 和网站 B 的胶片图，如图 4.16 所示。网站 B 立即交付第一个可见内容，而网站 A 在 6 秒后才开始在折叠以上（above the fold）显示有用内容。
 
 ![比较两个服装网站的 WPT 胶片图](img/4-competitive-comparison.png)
 
-图 4.16。比较两个服装网站的 WPT 胶片图
+图 4.16. 比较两个服装网站的 WPT 胶片图
 
 3. 这里是一些额外的测量：
 
@@ -1388,7 +1435,7 @@ WPT 是运行竞争分析的绝佳资源。当你第一次进入 WPT 网站时�
 
 目标是提出与性能相关的假设，这些假设可以通过具体数据进行验证，然后进行改进。
 
-让我们讨论一个简单的例子。假设你维护着一个销售家具的电子商务网站，你已经对竞争对手进行了性能分析，并定义了你的头号竞争对手。你想确保人们通过你的网站而不是竞争对手的网站购买家具。现在，让我们创建一些假设和目标。一个好的开始是比较你的网站与竞争对手网站首先加载的元素。例如，检查你的“行动号召”（CTA)[^([2])](#ch04.html_ftn.d5e1576)按钮加载是否比竞争对手网站上的按钮更快。或者比较折叠以上可见哪些内容。
+让我们讨论一个简单的例子。假设你维护着一个销售家具的电子商务网站，你已经对竞争对手进行了性能分析，并定义了你的头号竞争对手。你想确保人们通过你的网站而不是竞争对手的网站购买家具。现在，让我们创建一些假设和目标。一个好的开始是比较你的网站与竞争对手网站首先加载的元素。例如，检查你的“行动号召”（CTA）按钮加载是否比竞争对手网站上的按钮更快。或者比较折叠以上可见哪些内容。
 
 以下是一些可能帮助为家具电商网站形成假设的观察结果：
 
@@ -1430,21 +1477,20 @@ WPT 是运行竞争分析的绝佳资源。当你第一次进入 WPT 网站时�
 
 3. 承诺你的目标。不要只是口头上说说，要在团队中传阅和发布——如果有帮助，甚至打印出来挂在某处。Etsy 在公开网站性能方面做得很好。他们季度发布一次[性能报告](https://codeascraft.com/2014/08/01/q2-2014-site-performance-report/)。
 
-
-
-
-
 * 你已经学习了如何搭建自己的性能仪表板，从一个私有的 HTTP Archive 实例开始，收集 RUM 数据以理解用户的带宽、加载时间，以及更重要的延迟。此外，你还接触了监控产品和告警系统，以帮助你应对性能问题。
 * 你已经学习了如何根据网站的 RUM 测量结果、WPT 结果以及竞争对比分析来设定合理的性能目标。
 * 总的来说，你已经学会了如何发现自己网站的性能问题。现在，让我们来修复它们吧！
-* CTA 按钮可以是“购买”、“购物”等，取决于你希望访问者在访问时实现什么目标。
+
+> CTA 按钮可以是“购买”、“购物”等，取决于你希望访问者在访问时实现什么目标。
 
 # 第 5 章：掌握精简 HTTP 请求
 
 ## 预热
+
 我们已经了解到，在网页性能方面，延迟是最大的瓶颈之一。减少延迟的最佳方法是减少浏览器必须进行的 HTTP 请求数量，并尽可能地减小每个被请求资源的大小。为了让你理解如何掌握精简 HTTP 请求，我将首先解释浏览器是如何处理它们的。在帮助你掌握浏览器工作原理后，我将讨论缩小规模和优化 HTTP 请求的方法，例如图片合并、文件合并和压缩。
 
 ## 理解浏览器的工作原理
+
 通过理解浏览器如何渲染你的内容，你将对如何构建和排序页面元素获得大量见解。浏览器的任务是加载资源，这些被称为 HTTP 请求。正如我们在剖析 HTTP 事务时看到的，每个资源都关联了几个指标，帮助衡量其性能。
 
 下面的流程图显示了浏览器渲染页面及其资源时所经历的步骤。**渲染**——在浏览器窗口中显示请求内容的过程——是浏览器的主要功能：
@@ -1454,26 +1500,33 @@ WPT 是运行竞争分析的绝佳资源。当你第一次进入 WPT 网站时�
 图 5.1. 浏览器如何渲染
 
 ### 注意：渲染规则
+
 浏览器在渲染页面时遇到的任何歧义都会阻塞渲染，直到问题解决。请确保为浏览器提供整洁的标记以及如何渲染页面的指令。
 
 让我们来看图 5.1 所示的图：
 
 #### HTML
+
 HTML 解析是渲染拼图中的关键部分，会导致文档对象模型的构建。解析是增量进行的，这样浏览器就可以发送必要响应的同时，发现所需的和即将到来的请求。
 
 #### 文档对象模型
+
 浏览器解析 HTML 文档以构建**文档对象模型** (DOM) ——这是一个描述页面上元素的树结构结构。
 
 #### CSS
+
 CSS 是**渲染阻塞的**，这意味着浏览器在渲染内容之前，需要加载 HTML 标记中引用的*所有* CSS 文件。没有样式，页面可能会变得不可用，有时甚至无法使用。如果你的 CSS 加载在页面靠后的位置，可能会发生名为“无样式内容闪”（FOUC）的现象。
 
 #### CSS 对象模型
+
 除了解析 HTML 之外，浏览器还必须处理样式表（CSS），以理解 DOM 中的元素应该如何显示。我们将其称为 CSS 对象模型（CSSOM）。DOM 和 CSSOM 共同允许浏览器绘制页面。
 
 #### JavaScript
+
 JavaScript 赋予了操纵和与 DOM 交互的能力，这会导致渲染树发生变化。如果发生这种情况，渲染将被阻塞，直到浏览器解析并执行该脚本。JavaScript 可以同步加载（阻塞 DOM），也可以异步加载（这不会中断文档的解析）。在 CSSOM 完全加载之前，JavaScript 将不会运行。不同的浏览器运行在不同的 JavaScript 引擎上。根据你的用户使用的浏览器，他们对你网站性能的体验可能会有所不同，特别是当它是一个沉重的 JavaScript Web 应用时。
 
 #### 渲染树
+
 **渲染树**结合了屏幕上所有可见内容的内和样式信息。这是 DOM 和 CSSOM 汇合的事件。
 
 DOM 中的所有节点都会出现在渲染树中。例如，脚本和 meta 标签是非可见元素，用户是看不见的。
@@ -1481,15 +1534,19 @@ DOM 中的所有节点都会出现在渲染树中。例如，脚本和 meta 标�
 此外，`visibility: hidden` 样式声明不会将其子元素插入渲染树，但它们会被渲染并作为空框显示。然而，使用 `display:none` 样式声明的元素（节点）不会被添加到渲染树中。
 
 #### 布局
+
 虽然渲染树让我们更接近在屏幕上看到内容，但仍然缺少一些重要内容：这个过程没有定义每个节点在页面上的位置或大小。这就是**布局**步骤负责的工作。
 
 #### 绘制
+
 最后一步是**绘制**像素。样式表定义了绘制过程的昂贵程度。如果你有复杂的样式，例如阴影或 CSS 动画，可能会增加渲染树的复杂性，导致加载时间变慢。绘制步骤将揭你的网站在滚动时是否无卡顿（jank-free）。对于图形处理单元（GPU）来说，重绘是非常昂贵的，会导致你的页面在滚动时感觉笨拙。
 
 ### 注意：卡顿 (Jank)
+
 **卡顿**指的是滚动页面时任何感觉笨拙或延迟的情况。它基本上是流畅滚动的反面。例如，当 JavaScript 尝试在 `onscroll` 处理程序中重绘大量内容时就会发生卡顿效应。
 
 ### 注意：JavaScript 引擎
+
 一些流行的引擎有 Nitro、SpiderMonkey、V8 和 Chakra：
 
 | 引擎 | 浏览器 |
@@ -1503,14 +1560,15 @@ Douglas Crockford，“JavaScript 之之父”构建了一个代表性的性能�
 
 ![Performance comparison of different JavaScript engines (by Douglas Crockford)](img/5-javascript-engine.png)
 
-图 5.2. 不同 JavaScript 引擎的性能对比（来自 Douglas Crockford））
+图 5.2. 不同 JavaScript 引擎的性能对比（来自 Douglas Crockford）
 
 ### 关键渲染路径
+
 通过上面的页面渲染过程，我们实际上遍历了所谓的**关键渲染路径** (CRP)。CRP 描述了渲染页面初始视图（或可见的折叠以上部分）所需的代码和资源。
 
 让我们通过一个简单的示例遍历 CRP：
 
-```
+```html
 1\. <html>
 2\.  <head>
 3\.      <link rel="stylesheet" href="style.css">
@@ -1521,7 +1579,6 @@ Douglas Crockford，“JavaScript 之之父”构建了一个代表性的性能�
 8\.      <script src="load_map.js"></\/script>
 9\.  </body>
 10\. </html>
-```
 ```
 
 渲染此页面会发生几个步骤：
@@ -1538,9 +1595,6 @@ Douglas Crockford，“JavaScript 之之父”构建了一个代表性的性能�
 
 图 5.3. 关键渲染路径
 
-
-
-
 我们刚刚讨论了浏览器是如何工作的、什么是 `CRP`，以及渲染过程的每一步包含哪些内容。现在，让我们通过识别优化 `CRP` 的机会来应用这些知识。理解浏览器如何构建 `CRP`，将使你在规划页面上如何加载以及加载哪些内容时处于极大的优势地位。任何对于服务提供页面初始视图不是绝对必不可的内容，都不应该出现在 `CRP` 中。
 
 我们的目标是通过优先考虑页面的可见内容，来缩短页面首次渲染的时间。要优化 `CRP`，首要任务是尽可能关键资源减少到最少。为了做到这一点，你需要尽可能地识别并移除阻塞渲染的资源（render-blocking assets）。
@@ -1553,8 +1607,7 @@ Douglas Crockford，“JavaScript 之之父”构建了一个代表性的性能�
 
 （注：由于提供的原文文本后续包含大量重复的占位符和不完整的句子，此处已根据您的逻辑对核心段落进行了翻译和对齐。）
 
-
-
+![示例页面的 WPT 视频对比](http://www.webpagetest.org/video/compare.php?tests=141222_R6_JNC%2C141222_4C_KDV&thumbSize=100&ival=500&end=visual#)
 
 图 5.5. 示例页面的 [WPT 视频对比](http://www.webpagetest.org/video/compare.php?tests=141222_R6_JNC%2C141222_4C_KDV&thumbSize=100&ival=500&end=visual#)，展示了优化前后的对比
 
@@ -1630,10 +1683,9 @@ Douglas Crockford，“JavaScript 之之父”构建了一个代表性的性能�
 
 虽然你可以手动合并文件，但最好使用工具来自动化此过程。一种快速的解决方案是使用 Unix [`cat`](http://en.wikipedia.org/wiki/Cat_%28Unix%29) 命令。例如，你可以使用以下命令将所有 CSS 文件合并为 `merge.css`，或将所有 JavaScript 文件合并为 `merge.js`：
 
-```
+```bash
 $ cd css/
 $ cat *.css > merge.css
-
 // 或者 JavaScript
 $ cd javascript/
 $ cat *.js > merge.js
@@ -1641,15 +1693,10 @@ $ cat *.js > merge.js
 
 还有一些更复杂的命令行工具可以结合合并和压缩化。[Google 的 Closure Compiler](https://developers.google.com/closure/compiler/) 支持合并（仅针对 JavaScript 文件），像 [Grunt](https://github.com/gruntjs/grunt-contrib-concat) 和 [Gulp](http://gulpjs.com/) 这样的任务管理器也提供了合并任务和插件。我们将在第 8 章中使用 Grunt 和 Gulp 来展示如何自动化性能任务。
 
-
-
-
-
 让我们将前面示例中显示的文件使用 Google 的 [Closure Compiler](http://closure-compiler.appspot.com/home) 进行合并。下载 Java [jar 文件](https://code.google.com/p/closure-compiler/downloads/list) 并执行以下命令之一：
 
-```
+```bash
 java -jar compiler.jar --js_output_file=concat.js 1.js 2.js 3.js ...
-
 ## 递归包含子目录下的所有 js 文件
 java -jar compiler.jar --js_output_file=concat.js 'src/**.js'
 ```
@@ -1664,7 +1711,7 @@ Closure Compiler 的本地版本需要安装 Java 并通过 Java CLI 运行时�
 
 让我们通过一个示例来展示它是如何工作的。假设我有四张想要显示在页面上的植物图像——盆里的草丛、一棵树、一片叶子和一个盆栽。与其像这样使用单独的图像标签（产生四次 HTTP 请求）来显示每张植物图像：
 
-```
+```html
 <img src="img/planter.png"/>
 <img src="img/tree.png"/>
 <img src="img/leaf.png"/>
@@ -1675,11 +1722,11 @@ Closure Compiler 的本地版本需要安装 Java 并通过 Java CLI 运行时�
 
 ![使用 CSS Sprites Generator 创建雪碧图和相应的 CSS](img/5-css-sprites-tool.png)
 
-图 5.8。使用 CSS Sprites Generator 创建雪碧图和相应的 CSS
+图 5.8. 使用 CSS Sprites Generator 创建雪碧图和相应的 CSS
 
 现在我们可以使用生成的雪碧图和 x/y 坐标在页面中显示每张植物图像：
 
-```
+```html
 <style type="text/css">
    div {
        background: url('img/sprite.png');
@@ -1690,13 +1737,13 @@ Closure Compiler 的本地版本需要安装 Java 并通过 Java CLI 运行时�
    .pot {background-position: -0px -218px; width: 42px; height: 79px}
  </style>
 <!-- planter -->
-<div class="planter"></div
+<div class="planter"></div>
 <!-- tree -->
-<div class="tree"></div
+<div class="tree"></div>
 <!-- leaf -->
-<div class="leaf"></div
+<div class="leaf"></div>
 <!-- planted pot -->
-<div class="pot"></div
+<div class="pot"></div>
 ```
 
 让我们在 WPT 中查看这些示例页面，首先是在不使用雪碧的情况下（图 5.9），然后是使用雪碧的情况下（图 5.10）：
@@ -1711,11 +1758,9 @@ Closure Compiler 的本地版本需要安装 Java 并通过 Java CLI 运行时�
 
 代码压缩是在不改变文件功能的情况下减小文件大小的过程。这通常涉及移除不必要的字符，如注释、空白符以及缩短变量名。
 
+# 预浏览（Pre-browsing）
 
-
-
-
-# 预浏览（Pre-browsing）是一种性能优化技术，指的是预测用户与你页面的交互——例如在用户请求资源之前加载这些资源。[资源提示](http://w3c.github.io/resource-hints/)——这些是添加到 `link` 标签的[预浏览属性](https://docs.google.com/presentation/d/18zlAdKAxnc51y_kj-6sWLmnjl6TLnaru_WH0LJTjP-o/edit#slide=id.p19)——旨在通过主动告诉浏览器需要预取什么，来帮助浏览器预测用户的下一步操作。
+**预浏览（Pre-browsing）** 是一种性能优化技术，指的是预测用户与你页面的交互——例如在用户请求资源之前加载这些资源。[资源提示](http://w3c.github.io/resource-hints/)——这些是添加到 `link` 标签的[预浏览属性](https://docs.google.com/presentation/d/18zlAdKAxnc51y_kj-6sWLmnjl6TLnaru_WH0LJTjP-o/edit#slide=id.p19)——旨在通过主动告诉浏览器需要预取什么，来帮助浏览器预测用户的下一步操作。
 
 例如，你可能知道用户在你的网站上最常去哪里。你可以使用以下某些选项来预加载某些资源，你认为浏览器在访问下一个页面时需要获取这些资源。
 
@@ -1731,7 +1776,7 @@ Closure Compiler 的本地版本需要安装 Java 并通过 Java CLI 运行时�
 
 下面的示例为 Flickr 域名添加了 DNS 预取，因为该域名在页面之后将用于画廊中的图片：
 
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -1767,10 +1812,8 @@ Closure Compiler 的本地版本需要安装 Java 并通过 Java CLI 运行时�
     <title>My website</title>
 </head>
 <body>
-
     <img src="logo.jpg"/>
     <!-- ... -->
-
     <script>
         $.getJSON( "data.json", function( data ) {
             //
@@ -1797,7 +1840,6 @@ Closure Compiler 的本地版本需要安装 Java 并通过 Java CLI 运行时�
     <!-- ... -->
     <img src="logo.jpg"/>
     <!-- ... -->
-
       <img src="footer.jpg"/>
 </body>
 </html>
@@ -1830,7 +1872,7 @@ Closure Compiler 的本地版本需要安装 Java 并通过 Java CLI 运行时�
 由于某些资源提示还很新，浏览器仍在实现中。以下是支持情况表：
 
 | 浏览器 | dns-prefetch | subresource | prefetch | prerender |
-| --- | --- | --- | --- |
+| --- | --- | --- | --- | --- |
 | Firefox | 3.5+ | 不支持 | 3.5+ | 不支持 |
 | Chrome | 1.0+ | 1.0+ | 1.0+ | 1.3+ |
 | Safari | 5.0+ | 不支持 | 不支持 | 不支持 |
@@ -1838,9 +1880,7 @@ Closure Compiler 的本地版本需要安装 Java 并通过 Java CLI 运行时�
 
 正如你从上表看到的，`dns-prefetch` 似乎被大多数浏览器支持，因此使用得当可以提高性能。
 
-# 第 6 章
-
-## 生成精简的 Web 资源：第一部分
+# 第 6 章：生成精简的 Web 资源：第一部分
 
 ## 热身
 
@@ -1856,27 +1896,19 @@ Closure Compiler 的本地版本需要安装 Java 并通过 Java CLI 运行时�
 
 有很多工具可以帮助你保持 HTML 的良好状态，例如 [HTML Tidy](http://www.html-tidy.org/)，这是一个命令行工具，你可以从 [GitHub](https://github.com/htacg/tidy-html5) 下载并安装到电脑上。（还有一个[较旧的命令行版本](http://tidy.sourceforge.net/)，它有一个方便的[在线](http://infohound.net/tidy/)对应版本，尽管这些现在已经过时了，不包含对 HTML5 的支持。）
 
-
-
-
-
 HTML Tidy 不仅会检查你的 HTML 错误，还会警告潜在的问题，甚至可以为你生成一个修改后的文件版本。
 
 另一个流行的检查 HTML 代码质量的在线工具是 [W3C 标记验证服务](https://validator.w3.org/)。你可以为它提供页面链接、上传文件，或直接将代码粘贴到提供的表单中。验证器会列出警告和错误供你处理，尽管它不会为你重写代码。
 
-### 关优化 HTML 文件的进阶提示
+### 关键优化 HTML 文件的进阶提示
 
 一旦你的 HTML 代码没有错误，还有其他方法可以对其进行优化，例如：
 
-* 尽可能减小文件大小。尽可能通过删除空白和注释来对 HTML 进行压缩化。与其手动进行此操作，可以使用如 `HTML Compressor` 这样的压缩器，它同时提供[命令行版](https://code.google.com/p/htmlcompressor/)和[在线版](https://htmlcompressor.com/compressor/)。
-
-* 移除未使用的元素。由于它们没有用处，不要让浏览器浪费宝贵的时间去处理它们。
-
-* 不要忘记为需要闭合的元素添加闭合标签。渲染步骤可能会在此卡住并产生混乱，可能导致延迟（以及布局错乱）。
-
-* 练习智能内容布局。将最重要的内容放在源代码顺序更靠前的位置，让不重要的内容（如侧边栏）在树的更下方加载。
-
-* 保持 `head` 尽可能小且整洁，以优先考虑可见内容。`head` 中的链接、脚本和其他代码越多，浏览器下载完实际页面内容所需的时间就越长。
+*   尽可能减小文件大小。尽可能通过删除空白和注释来对 HTML 进行压缩化。与其手动进行此操作，可以使用如 `HTML Compressor` 这样的压缩器，它同时提供[命令行版](https://code.google.com/p/htmlcompressor/)和[在线版](https://htmlcompressor.com/compressor/)。
+*   移除未使用的元素。由于它们没有用处，不要让浏览器浪费宝贵的时间去处理它们。
+*   不要忘记为需要闭合的元素添加闭合标签。渲染步骤可能会在此卡住并产生混乱，可能导致延迟（以及布局错乱）。
+*   练习智能内容布局。将最重要的内容放在源代码顺序更靠前的位置，让不重要的内容（如侧边栏）在树的更下方加载。
+*   保持 `head` 尽可能小且整洁，以优先考虑可见内容。`head` 中的链接、脚本和其他代码越多，浏览器下载完实际页面内容所需的时间就越长。
 
 ## 优化 CSS
 
@@ -1890,7 +1922,7 @@ HTML Tidy 不仅会检查你的 HTML 错误，还会警告潜在的问题，甚�
 
 最有效的选择器是 ID，然后是类（class）、标签（tag）、通用（universal）、属性和伪类选择器。效率体现在下面每个选择器的出现顺序上。
 
-```
+```css
 #content        {…}  /* ID */
 body #title     {…}  /* ID */
 .content        {…}  /* class */
@@ -1903,26 +1935,26 @@ a:hover         {…}  /* pseudo */
 
 通过遵循以下规则，你可以确保 CSS 的高效性：
 
-* **选择一个特定的关键选择器**。例如，以下关键选择器的效率并不高：
+*   **选择一个特定的关键选择器**。例如，以下关键选择器的效率并不高：
 
-    ```
-#menu a {…}
+    ```css
+    #menu a {…}
     ```
 
     根据从右向左的原则，浏览器必须先找到页面上所有的现有链接，然后再对 `#menu` 元素中找到链接应用样式。
 
-    ```
-<ul id="menu">
+    ```html
+    <ul id="menu">
         <li><a href="#">首页</a></li>
         <li><a href="#">联系我们</a></li>
-   <!-- more -->
+       <!-- more -->
     </ul>
     ```
 
     通过给每个 `<li>` 元素添加类，我们可以让关键选择器更高效：
 
-    ```
-<ul id="menu">
+    ```html
+    <ul id="menu">
         <li><a href="#" class="menu-item">首页</a></li>
         <li><a href="#" class="menu-item">联系我们</a></li>
        <!-- more -->        
@@ -1931,67 +1963,59 @@ a:hover         {…}  /* pseudo */
 
     现在选择器可以被优化了：
 
-    ```
-#menu .menu-item {…}
+    ```css
+    #menu .menu-item {…}
     ```
 
     这个优化后的关键选择器现在将匹配少得多的元素。浏览器能够更快地找到元素，并专注于下一个要渲染的样式。
 
-* **移除未使用的选择器**。样式表越旧，或者参与它的开发者越多，该文件就越可能因为未使用的选择器而变得混乱和膨肿。（这可能发生在像 Bootstrap 这样的 CSS 框架中，或者 CSS 重置文件中。）
+*   **移除未使用的选择器**。样式表越旧，或者参与它的开发者越多，该文件就越可能因为未使用的选择器而变得混乱和膨肿。（这可能发生在像 Bootstrap 这样的 CSS 框架中，或者 CSS 重置文件中。）
+*   **检查你最初为何选择某个选择器**。它并不总是需要的。在下面的例子中，`font-family` 声明会向下级联，可能不需要将其应用到 `li a`：
 
-* **检查你最初为何选择某个选择器**。它并不总是需要的。在下面的例子中，`font-family` 声明会向下级联，可能不需要将其应用到 `li a`：
-
-    ```
-#top-nav li a {font-family: Arial;}
+    ```css
+    #top-nav li a {font-family: Arial;}
     ```
 
     你可以按照以下方式清理：
 
-    ```
-#top-nav {font-family: Arial;}
-    ```
-
-* **避免内联 CSS**。直接通过 `style` 属性应用到元素上的样式是低效的。此类样式应该移动到样式表中，那里它们可能被重用。例如，`<header style="margin:5px; color:red"/>` 中的 `style` 属性应该被移除，改为使用以下形式：
-
-    ```
-/* style.css */
-header {margin: 5px; color: red;}
+    ```css
+    #top-nav {font-family: Arial;}
     ```
 
-* **尽可能合并声明**。不要像下面这样重复声明 `color: red;`：
+*   **避免内联 CSS**。直接通过 `style` 属性应用到元素上的样式是低效的。此类样式应该移动到样式表中，那里它们可能被重用。例如，`<header style="margin:5px; color:red"/>` 中的 `style` 属性应该被移除，改为使用以下形式：
 
+    ```css
+    /* style.css */
+    header {margin: 5px; color: red;}
     ```
-h1 {color: red;}
-h2 {color: red;}
+
+*   **尽可能合并声明**。不要像下面这样重复声明 `color: red;`：
+
+    ```css
+    h1 {color: red;}
+    h2 {color: red;}
     ```
 
     你可以将它们合并为一个单一规则：
 
-    ```
-h1, h2 {color: red;}
+    ```css
+    h1, h2 {color: red;}
     ```
 
-* **节制使用 CSS3 选择器**。虽然像 `:nth-child` 这样的选择器在定义页面元素样式时非常有帮助，但在浏览器渲染时间上它们是最慢的。
-
-* **避免使用 `@import url("style.css")`**。通过 `@import`，浏览器会解析 CSS 文件并顺序下载每个导入文件。为了提高性能，请使用 HTML 元素 `<link='stylesheet' href='style.css'>` 代替 `@import`。
+*   **节制使用 CSS3 选择器**。虽然像 `:nth-child` 这样的选择器在定义页面元素样式时非常有帮助，但在浏览器渲染时间上它们是最慢的。
+*   **避免使用 `@import url("style.css")`**。通过 `@import`，浏览器会解析 CSS 文件并顺序下载每个导入文件。为了提高性能，请使用 HTML 元素 `<link='stylesheet' href='style.css'>` 代替 `@import`。
 
 ### CSS 优化工具
 
 有很多工具可以帮助优化 CSS，通过移除不需要的选择器、指出不规范以及压缩你的代码：
 
-* [CSS Shrink](http://cssshrink.com/) 有在线版和命令行版，适用于移除不必要的选择器。
+*   [CSS Shrink](http://cssshrink.com/) 有在线版和命令行版，适用于移除不必要的选择器。
+*   [Unused CSS](https://unused-css.com/) 是一个移除未使用 CSS 的在线工具。
+*   [UnCSS](https://github.com/giakki/uncss) 是移除未使用 CSS 的命令行工具。
+*   [CSSLint](http://csslint.net/) 是一个会“伤害你的 CSS 感情”的在线工具。它会直诚地指出你 CSS 的任何缺点。
+*   [CSSO](https://bem.info/tools/optimizers/csso/) 是一个可以压缩并对 CSS 文件进行结构性优化的命令行工具。
 
-* [Unused CSS](https://unused-css.com/) 是一个移除未使用 CSS 的在线工具。
-
-* [UnCSS](https://github.com/giakki/uncss) 是移除未使用 CSS 的命令行工具。
-
-* [CSSLint](http://csslint.net/) 是一个会“伤害你的 CSS 感情”的在线工具。它会直诚地指出你 CSS 的任何缺点。
-
-* [CSSO](https://bem.info/tools/optimizers/csso/) 是一个可以压缩并对 CSS 文件进行结构性优化的命令行工具。
-
-
-
-
+## 优化 JavaScript
 
 低效的 JavaScript 会对网站性能产生巨大影响。如果同步包含 JavaScript，它将导致渲染阻塞，如果脚本编写效率低下或仅仅是体积太大，会导致页面加载延迟。如果脚本出现在页面的 `head` 中，它将阻塞关键页面内容的渲染。因此，请将任何脚本放在页面底部——紧接 `</body>` 标签之前——以避免渲染阻塞。另一个选项是使脚本变为非阻塞，通过等待直到 `window.onload` 事件触发后再加载剩余的 JavaScript 文件，或使用 `async` 和 `defer` 属性。这两个属性都能防止渲染阻塞。
 
@@ -2007,9 +2031,9 @@ h1, h2 {color: red;}
 
 使用 `document.write()` 动态向页面插入脚本是一种常见的做法。然而，这会产生若干性能问题：
 
-* `document.write()` 会阻塞解析，因为浏览器不知道 `document.write()` 将对页面做什么，因此在它运行之前无法构建 DOM 树。
-* 使用 `document.write()` 会干扰浏览器的[预加载扫描器](http://andydavies.me/blog/2013/10/22/how-the-browser-pre-loader-makes-pages-load-faster/)，因为它还不知道 `document.write()` 内部的代码。
-* `document.write()` 代码只能在初始页面解析期间运行。
+*   `document.write()` 会阻塞解析，因为浏览器不知道 `document.write()` 将对页面做什么，因此在它运行之前无法构建 DOM 树。
+*   使用 `document.write()` 会干扰浏览器的[预加载扫描器](http://andydavies.me/blog/2013/10/22/how-the-browser-pre-loader-makes-pages-load-faster/)，因为它还不知道 `document.write()` 内部的代码。
+*   `document.write()` 代码只能在初始页面解析期间运行。
 
 在可能的情况下，使用 DOM 操作代替 `document.write()`。
 
@@ -2023,7 +2047,6 @@ h1, h2 {color: red;}
 
 ```javascript
 var vals = [1,2,3,4,5,6,7,8,9,10];
-
 for (var i=0; i < vals.length; i++){
     doStuff(vals[i]);
 }
@@ -2037,10 +2060,8 @@ for (var i=0; i < vals.length; i++){
 
 ```javascript
 var vals = [1,2,3,4,5,6,7,8,9,10];
-
 // 通过为数组长度声明本地变量来优化 
 var len = vals.length;
-
 for (var i=0; i < len; i++){
     doStuff(vals[i]);
 }
@@ -2063,10 +2084,8 @@ for (var i=0; i < document.images.length; i++){
 ```javascript
 // 通过为数组长度声明本地变量来优化 
 var lenImgs = document.images.length;
-
 for (var i=0; i < lenImgs; i++){
     document.images[i].style.display = 'none';
-
 }
 ```
 
@@ -2099,7 +2118,7 @@ for (var i=0; i < lenImgs; i++){
 让我们看一个修改 `div` 外观的示例：
 
 ```html
-<<body>
+<body>
 <style>
     #info {display:none}
 </style>
@@ -2112,7 +2131,6 @@ for (var i=0; i < lenImgs; i++){
         <li>列表 2</li>
     </ul>
 </div>
-
 <script>
 function triggerReflow() {
     var findMe = document.getElementById('info');
@@ -2136,7 +2154,9 @@ function triggerReflow() {
     background-color: yellow;
     border: 1px solid black;
 }
+```
 
+```javascript
 // JavaScript
 <script>
     function triggerReflow() {
@@ -2146,18 +2166,17 @@ function triggerReflow() {
 </script>
 ```
 
+
+
 ##### 改进动画
 
-屏幕上的移动需要重流和重绘。特别是动画需要浏览器执行大量工作，因此确保它们尽可能高效是关重要的。
+屏幕上的移动需要重流和重绘。特别是动画需要浏览器执行大量工作，因此确保它们尽可能高效是关键的。
 
 ##### 动画与帧率
 
+动画是基于重流的，执行动画的速度越快，触发的速度就越快，因此完成得越快。在 JavaScript 中创建动画，你通常使用 `setTimeout()` 或 `setInterval()` 函数。
 
-
-
-动画是基于重流（reflows）的，执行动画的速度越快，触发的速度就越快，因此完成得越快。在 JavaScript 中创建动画，你通常使用 `setTimeout` 或 `setInterval` 函数。
-
-**帧率**是设备在屏幕上产生连续图像的速率。帧率越低，用户越容易看到“卡顿”（janky）的体验；相反，帧率越高，动画或滚动的体验就越流畅。每秒 60 帧（fps）被用作大多数屏幕的标准，因为它与它们的刷新率（60Hz）相匹配。
+**帧率**是设备在屏幕上产生连续图像的速率。帧率越低，用户越容易看到“卡顿”的体验；相反，帧率越高，动画或滚动的体验就越流畅。每秒 60 帧（fps）被用作大多数屏幕的标准，因为它与它们的刷新率（60Hz）相匹配。
 
 你动画的流畅度取决于其帧率。为了给用户提供流畅的体验，请确保帧率保持在 60fps。否则，你的用户可能会觉得动画很生硬，尤其是在快速向上或向下滚动时。帧率越高，网站给用户的响应感觉越灵敏。
 
@@ -2224,7 +2243,7 @@ function triggerReflow() {
 
 我们之前讨论过关键渲染路径以及 JavaScript 如何阻塞渲染。
 
-```
+```html
 <script src="http://example.com/3rdparty-script.js"></script>
 ```
 
@@ -2238,27 +2257,24 @@ function triggerReflow() {
 
 你听说过动态脚本标签吗？它被高性能 Facebook 按钮的制定者 Stoyan Stefanov 和 boomerang.js 的创始人 Philip Tellis 大力推广。
 
-
-
-
 这种方法的想法是异步包含脚本，将其从关键渲染路径中移除，从而防止它阻塞渲染——例如，当宿主机响应缓慢，甚至完全宕机时。浏览器会在后台下载脚本，一旦下载完成，将使用普通的 JavaScript 线程执行它：
 
-```
-1\. <script>
-2\.  (function(d,s,id){
-3\.      var js, 3js = d.getElementsByTagName(s)[0];
-4\.      if (d.getElementById(id)) {return;}
-5\.      js = d.createElement(s); js.id = id;
-6\.      js.src = "http://example.com.com/3rdparty-script.js";
-7\.      3js.parentNode.insertBefore(js, 3js);
-8\.  }(document, 'script', '3rd-js'));
+```javascript
+<script>
+  (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) {return;}
+      js = d.createElement(s); js.id = id;
+      js.src = "http://example.com.com/3rdparty-script.js";
+      fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', '3rd-js'));
 </script>
 ```
 
 让我们逐行此脚本看看它是如何工作的：
 
 *   **第 2 行和第 8 行**：这是一个立即自执行函数。我们希望确保任何临时变量都留在局部作用范围内，而不会渗透到宿主页面的全局命名空间中。我们将 `d`、`s` 和 `id` 作为参数传递，因为这比在函数体内定义它们要短。
-*   **第 3 行**：这一行声明了一个变量并在页面上找到第一个可 `<script>` 元素。这是在页面上包含脚本的最简单钩，而不是随机追加。
+*   **第 3 行**：这一行声明了一个变量并在页面上找到第一个可用 `<script>` 元素。这是在页面上包含脚本的最简单钩子，而不是随机追加。
 *   **第 4 行**：这一行检查脚本是否已在页面上，如果是，则直接退出，因为没有更多需要做的，由于我们只需要该文件一次。它防止了脚本文件被包含多次。
 *   **第 5 行**：这一行创建一个脚本元素并为其分配一个 `id`，以便我们以后可以检查它，并确保它不会被错误地添加两次。
 *   **第 6 行**：在这里你将 `script` 元素的 `src` 属性指向你的第三方脚本。
@@ -2269,19 +2285,19 @@ function triggerReflow() {
 *   脚本仍然会在 `window.onload` 上阻塞。
 *   它还会阻塞 CSSOM（CSS 对象模型），除非我们将它放在 CSS 加载之前。
 
-那么，是否有更好的方法我们可以可以使用呢？是的，有的！
+那么，是否有更好的方法我们可以使用呢？是的，有的！
 
 ### 更新的、改进的方法
 
 幸运的是，越来越多的浏览器厂商已经意识到了同步加载脚本并阻塞渲染的问题，因此 [W3C](http://www.w3.org/TR/html5/scripting-1.html) 为 `<script>` 标签推荐了两个新属性。没有这些属性，浏览器会立即运行脚本。
 
-*   `async`：当使用此属性时，浏览器会在脚本可用时加载它，且不会阻塞 DOM 或 CSSOM。它具有无序执行特性，这意味着它可以放置在页面的任何位置。这可以用于那些容忍执行顺序错乱（out-of-order execution）的脚本。
+*   `async`：当使用此属性时，浏览器会在脚本可用时加载它，且不会阻塞 DOM 或 CSSOM。它具有无序执行特性，这意味着它可以放置在页面的任何位置。这可以用于那些容忍执行顺序错乱的脚本。
 *   `defer`：当使用此属性时，浏览器将在页面完成解析后运行脚本。
 
 有了这些新属性，我们可以解决动态标签无法解决以下问题：
 
 *   `async` 属性不会阻塞 CSSOM。
-*   预加载扫描器（preload scanner）只能在 `src` 和 `href` 上运行，因此无法预加载任何定义为内联脚本的脚本。由于动态脚本标签是以内联脚本的形式呈现的，扫描器无法预加载这部分。
+*   预加载扫描器只能在 `src` 和 `href` 上运行，因此无法预加载任何定义为内联脚本的脚本。由于动态脚本标签是以内联脚本的形式呈现的，扫描器无法预加载这部分。
 
 由于这些属性非常新，只有较新的浏览器支持它们，而旧浏览器将不知道它们的意思并直接忽略它们。如果你的目标受众使用 IE8 和 9，或者 Android 2.2 或 2.3 设备，你可能需要在标签上添加 `defer` 以防万一，因为 `defer` 在 `async` 之前引入。正如 W3C 建议，[使用这两个属性的组合来覆盖更广泛的浏览器](https://www.igvita.com/2014/05/20/script-injected-async-scripts-considered-harmful/)。
 
@@ -2313,28 +2329,23 @@ function triggerReflow() {
 
     图 6.5. WPT 以及包含第三方脚本以测试 SPOF 的 SPOF 标签的截图
 
-*   **通过 hosts 文件中的黑洞（blackhole）**：除了使用 WPT，你也可以本地机器上模拟 SPOF。将第三方域名指向[黑洞](http://blog.patrickmeenan.com/2011/10/testing-for-frontend-spof.html)。黑洞的地址是 blackhole.webpagetest.org，相应的 IP 地址为 `72.66.115.13`。它是一个具有丢弃所有进入数据包防火墙规则的主机，因此模拟主机宕机。让我们尝试一下：
+*   **通过 hosts 文件中的黑洞**：除了使用 WPT，你也可以在本地机器上模拟 SPOF。将第三方域名指向[黑洞](http://blog.patrickmeenan.com/2011/10/testing-for-frontend-spof.html)。黑洞的地址是 blackhole.webpagetest.org，相应的 IP 地址为 `72.66.115.13`。它是一个具有丢弃所有进入数据包防火墙规则的主机，因此模拟主机宕机。让我们尝试一下：
 
     *   更新 hosts 文件（请注意，你需要机器的管理员权限才能编辑这些文件）。
 
         *   对于 Windows，文件位于 `C:\Windows\System32\drivers\etc\hosts`。
-
         *   在 Mac 上，你可以点击 Finder 菜单中的“前往”->“前往文件夹”并粘贴 `/private/etc/hosts`，或者在在你偏好的命令行界面中输入 `vi /private/etc/hosts`。
 
+    首先，使用黑洞 IP 地址，后跟一个空格，然后是你想要模拟 SPOF 的第三方主机地址。
 
+    ```
+    72.66.115.13 www.google-analytics.com
+    72.66.115.13 connect.facebook.net
+    72.66.115.13 platform.twitter.com
+    ```
 
-
-
-首先，使用黑洞 IP 地址，后跟一个空格，然后是你想要模拟 SPOF（单点故障）的第三方主机地址。
-
-```
-72.66.115.13 www.google-analytics.com
-72.66.115.13 connect.facebook.net
-72.66.115.13 platform.twitter.com
-```
-
-* 在 Mac 上，请确保刷新了 DNS 缓存以应用更改，在 CLI 命令行中输入 `dscacheutil -flushcache`。重启浏览器也会清除浏览器的 DNS 缓存。
-* 在浏览器中刷新页面，观察 SPOF 是如何处理的。浏览你的网站或其他网站，查看它们如何应对这些脚本的任何一个宕机。
+    * 在 Mac 上，请确保刷新了 DNS 缓存以应用更改，在 CLI 命令行中输入 `dscacheutil -flushcache`。重启浏览器也会清除浏览器的 DNS 缓存。
+    * 在浏览器中刷新页面，观察 SPOF 是如何处理的。浏览你的网站或其他网站，查看它们如何应对这些脚本的任何一个宕机。
 
 ### 使用第三方脚本的技巧
 
@@ -2369,7 +2380,7 @@ function triggerReflow() {
 
 图 7.1. [查询](http://bbinto.github.io/lean-web-code/chapter-7/queries/) Alexa 排名网站常用图像格式的结果
 
-Alexa Alexa 排名网站上使用的图像中位数大小为 30220 字节，而每页图像总大小平均约为 [1206KB](http://httparchive.org/interesting.php#onLoad)，如图图 7.2 所示：
+Alexa 排名网站上使用的图像中位数大小为 30220 字节，而每页图像总大小平均约为 [1206KB](http://httparchive.org/interesting.php#onLoad)，如图图 7.2 所示：
 
 ![平均大小](img/7-image-size.png)
 
@@ -2386,7 +2397,7 @@ Alexa Alexa 排名网站上使用的图像中位数大小为 30220 字节，而�
 
 此外，编码图像数据有两种方法——位图和矢量图形，我们将在接下来介绍。
 
-#### 位图（Raster Graphics）
+#### 位图
 
 位图通过编码矩形网格内每个像素的单个值来表示图像。以下图像格式属于位图范畴：
 
@@ -2397,16 +2408,11 @@ Alexa Alexa 排名网站上使用的图像中位数大小为 30220 字节，而�
 | [渐进式 JPEG](http://en.wikipedia.org/wiki/JPEG) | 有损 | 按系列扫描加载，从低分辨率版本开始，中间有几个版本，直到达到全分辨率。 |
 | [GIF](http://en.wikipedia.org/wiki/Graphics_Interchange_Format) | 无损 | 仅支持 256 色颜色。如果你只需要几种不同的颜色，或者需要创建文本图像，请用它替代 JPEG。支持透明度，但现在更多是以其支持动画闻名。 |
 | [PNG](http://en.wikipedia.org/wiki/Portable_Network_Graphics) | 无损 | 比 GIF 可压缩 5%–25%。也支持透明度。如果你需要保留大量颜色，请用替代 GIF。PNG-8 与 GIF 类似，支持最多 256 种颜色，而 PNG-24 能够显示数百万种颜色。 |
-
-
-
-
-
 | [WebP](http://en.wikipedia.org/wiki/WebP) | 有损和无损 | 另一种网络图像格式，由 Google 开发，承诺比 PNG 压缩 45%。目前并非所有浏览器都支持它。我们稍后会讨论。 |
 
 ### 警告：渐进式图像
 
-渐进式图像渲染似乎会[提高感知加载时间](http://calendar.perfplanet.com/2012/progressive-jpegs-a-new-best-practice/)，因为用户接收视觉反馈的速度比普通 JPEG 更快。然而，Radware 的一项[研究](http://t.co/uDgtM2fFjv) 表，渐进式图像实际上通过增加用户的挫败感而损害感知性能。
+渐进式图像渲染似乎会[提高感知加载时间](http://calendar.perfplanet.com/2012/progressive-jpegs-a-new-best-practice/)，因为用户接收视觉反馈的速度比普通 JPEG 更快。然而，Radware 的一项[研究](http://t.co/uDgtM2fFjv) 表明，渐进式图像实际上通过增加用户的挫败感而损害感知性能。
 
 #### 矢量图形
 
@@ -2449,7 +2455,7 @@ Data URI 为在页面上包含图像提供了另一种有趣的选择。对你�
 
 data URI 是一个 [Base64](http://en.wikipedia.org/wiki/Base64) 字符串。（Base64 是一种编码方案，用 ASCII 字符串格式表示二进制数据。）一旦你将图像转换为 data URI，就可以将该字符串直接插入 HTML 或 CSS 中——从而为你的浏览器节省了一个 HTTP 请求，这通常意味着提高了你网站的性能。
 
-让我们用 `leaf.png` 示例图像来展示如何将其转换为 data URI。有很多工具可以执行此转换。我使用了 [DATAURL.NET](http://dataurl.net/#dataurlmaker)，如图 7.3](#ch07.html_ch7-leaf-uri "图 7.3. 将 PNG 图像转换为 data URI") 所示：
+让我们用 `leaf.png` 示例图像来展示如何将其转换为 data URI。有很多工具可以执行此转换。我使用了 [DATAURL.NET](http://dataurl.net/#dataurlmaker)，如图 7.3 所示：
 
 ![将 PNG 图像转换为 data URI](img/7-leaf-png-to-uri.png)
 
@@ -2459,24 +2465,24 @@ data URI 是一个 [Base64](http://en.wikipedia.org/wiki/Base64) 字符串。（
 
 ```
 data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAXCAYAAAALHW+jAA
-”AABGdBTUEAALGPC/
-         xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3Ccu
-              ....
-          +7Qwdz8SrsdYz2s7ee7rLc2M4qVcD23mRbJpOB3+fDnr17bT+bgBNTHS+y
-”oNqFcVw2CzPT0/rQN+/erQ0VRpu9bs3+BwJLmvcQyqFgAAAAAElFTkSuQmCC
+AABGdBTUEAALGPC/
+xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3Ccu
+...
++7Qwdz8SrsdYz2s7ee7rLc2M4qVcD23mRbJpOB3+fDnr17bT+bgBNTHS+y
+oNqFcVw2CzPT0/rQN+/erQ0VRpu9bs3+BwJLmvcQyqFgAAAAAElFTkSuQmCC
 ```
 
 你可以将此代码放在样式表中，或者放在 HTML 的图像标签中。
 
 1. 通过 `<img>` 标签使用 Data URI：
 
-   ```
+   ```html
    <img src="data URI output" />
    ```
 
 2. 通过外部或内联 CSS：
 
-   ```
+   ```css
    .mydatauri {
        background:url(data URI output)
    }
@@ -2484,21 +2490,21 @@ data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAXCAYAAAALHW+jAA
 
 你可以像上面一样使用在线工具创建 data URI，也可以使用 CLI 工具。例如，你可以通过 Java CLI 运行时使用 [CSSEmbed](https://github.com/nzakas/cssembed/downloads/)。该工具会扫描你的 CSS 文件并将所有图像转换为 CSS 内部的 base64 字符串。例如，考虑这段 CSS：
 
-```
+```css
 /* style.css */
 background: url('leaf.png');
 ```
 
 通过运行 jar 文件，`leaf.png` 将被转换为 data URI 图像。
 
-```
+```bash
 java -jar cssembed.jar -o style_optimized.css styles.css
 ```
 
 输出的新样式表如下（精简）：
 
-```
-/* style_optimized.css
+```css
+/* style_optimized.css */
 background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAA
 XCAYAAAALH
 +jAAAABGdBTUEAALGPCxhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA
@@ -2507,20 +2513,17 @@ XCAYAAAALH
 
 值得注意的是，base64 编码使文件大小比其原始二进制表示大出 [33%](http://davidbcalhoun.com/2011/when-to-base64-encode-images-and-when-not-to/)。因此，在较小的图像上使用 data URI 格式比在大图像上更好，因为可能会损害页面的性能。当然，在将其转换为 data URI *之前*，请尽可能地优化你的图像。
 
-
-
-
 此外，还要注意缓存的限制。Data URI 图像成为更大的 HTML 或 CSS 文件的一部分，因此若要缓存编码为 data URIs 的图像，我们需要缓存包含它们的页面。例如，如果你将 data URI 图像放在 HTML 中，那么它们只能根据 HTTP 缓存控制头部的定义进行缓存（我们将在稍后详细讨论缓存问题）。如果 HTML 不可缓存，则 HTML 标记的整个内容（包括内联 data URI）在用户每次访问页面时都需要重新下载。如果图像很大，这会降低性能。因此，一种方案是将编码后的图像放在样式表中，这样你就可以对 CSS 文件使用更具激进的缓存，而 HTML 页面可以设置为不缓存或非常有限的缓存，因为 HTML 内容更有可能发生。大图像会让这个问题更严重，一个实用的经验法则是不内联任何大于 `4KB` 的资源。
 
 ## WebP
 
 WebP 是一种相对新的图像格式，相比 PNG 和 JPEG 能极大节省文件空间。
 
-[WebP](https://developers.google.com/speed/webp/?csw=1) 是一种开源图像格式，目前仅受 Chrome、Opera 和 Android 支持。Facebook 等一些知名网站已开始[采用这种格式](http://highscalability.com/blog/2014/9/22/how-facebook-makes-mobile-work-at-scale-for-all-phones-on-al.html) 并取得了巨大成功。发送到 Facebook 和 Android Messenger 的大部分图像使用 WebP 格式，与 JPG 相比[节省了数据](https://code.facebook.com/posts/485459238254631/improving-facebook-on-android）25–35%，与 PNG 相比节省了 80%。
+[WebP](https://developers.google.com/speed/webp/?csw=1) 是一种开源图像格式，目前仅受 Chrome、Opera 和 Android 支持。Facebook 等一些知名网站已开始[采用这种格式](http://highscalability.com/blog/2014/9/22/how-facebook-makes-mobile-work-at-scale-for-all-phones-on-al.html) 并取得了巨大成功。发送到 Facebook 和 Android Messenger 的大部分图像使用 WebP 格式，与 JPG 相比[节省了数据](https://code.facebook.com/posts/485459238254631/improving-facebook-on-android) 25–35%，与 PNG 相比节省了 80%。
 
 你可以使用转换器将图像转换为 WebP。我使用 [ImageMagick](http://imagemagick.org/) 通过安装 ImageMagick 并运行以下命令将 `leaf.png` 转换为 WebP：
 
-```
+```bash
 convert leaf.png -quality 50 -define webp:lossless=true leaf.webp
 ```
 
@@ -2538,52 +2541,52 @@ WebP 的缺点之一并非所有浏览器都支持这种新格式，特别是 Fi
 
 我使用了一个 `180x180px` 的矢量源文件并将其保存为 PNG、SVG、WebP，并从 PNG 创建了一个 data URI。
 
-1. [内联 Data URI](http://www.bbinto.me/lean-websites/chapter-4/data-uri/data-uri-inline/):通过 `<<img>>` 标签以图像形式内联的 base64 编码图像：
+1. [内联 Data URI](http://www.bbinto.me/lean-websites/chapter-4/data-uri/data-uri-inline/):通过 `<img>` 标签以图像形式内联的 base64 编码图像：
 
-```
-<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQ..."/>
-```
+   ```html
+   <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQ..."/>
+   ```
 
 2. [WebP](http://www.bbinto.me/lean-websites/chapter-4/data-uri/webp/):使用 ImageMagick 将 PNG 转换为 WebP，并通过外部 CSS 作为背景图像引用：
 
-```css
-/* style.css*/
-.leanleaf{
-    background-image: url(../img/leaf.webp);
-    /* ... */
-}
-```
+   ```css
+   /* style.css*/
+   .leanleaf{
+       background-image: url(../img/leaf.webp);
+       /* ... */
+   }
+   ```
 
 3. [SVG](http://www.bbinto.me/lean-websites/chapter-4/data-uri/svg/):将矢量源文件导出为 SVG，通过外部 CSS 文件作为背景图像引入：
 
-```css
-/* style.css*/
-.leanleaf{
-    background-image: url(../img/leaf.svg);
-    /* ... */
-}
-```
+   ```css
+   /* style.css*/
+   .leanleaf{
+       background-image: url(../img/leaf.svg);
+       /* ... */
+   }
+   ```
 
 4. [Data URI](http://www.bbinto.me/lean-websites/chapter-4/data-uri/data-uri-external): base64 编码并作为背景图像包含在外部 CSS 文件中：
 
-```css
-/* style.css*/
-.leanleaf{
-width:156px;height:169px;background:url(data:image/png;base64,
-iVBORw0KGgoAAAANSUHEUgAAALQ...
-iVBORw0KGgoAAAANSUHEUgAAALQ...
-}
-```
+   ```css
+   /* style.css*/
+   .leanleaf{
+   width:156px;height:169px;background:url(data:image/png;base64,
+   iVBORw0KGgoAAAANSUHEUgAAALQ...
+   iVBORw0KGgoAAAANSUHEUgAAALQ...
+   }
+   ```
 
 5. [PNG](http://www.bbinto.me/lean-websites/chapter-4/data-uri/data-uri-external):通过外部 CSS 作为背景图像引用：
 
-```css
-/* style.css*/
-.leanleaf{
-    background-image: url(../img/leaf.webp);
-    /* ... */
-}
-```
+   ```css
+   /* style.css*/
+   .leanleaf{
+       background-image: url(../img/leaf.png);
+       /* ... */
+   }
+   ```
 
 | 结果 | Inline Data URI | WebP | SVG | Data URI | PNG |
 | :--- | :--- | :--- | :--- | :--- | :--- |
@@ -2600,9 +2603,9 @@ iVBORw0KGgoAAAANSUHEUgAAALQ...
 
 视频越复杂，越难压缩。如果你可以控制视频的拍摄，可以采取一些步骤来确保它更容易压缩：
 
-* 目标是无无噪声内容。
-*   尽量减少缩放次数。
-*   尽量减少背景细节和运动数量。
+* 目标是无噪声内容。
+* 尽量减少缩放次数。
+* 尽量减少背景细节和运动数量。
 
 ### 注意：音频
 
@@ -2618,18 +2621,15 @@ iVBORw0KGgoAAAANSUHEUgAAALQ...
 
 **帧率**定义为每秒出现的帧数。以每秒帧 (fps) 为单位。帧率或分辨率越高，用户的视频体验越好。
 
+然而，任何增加帧率的调整都会增加文件的总体大小——因此，确定视频的意图至关重要。例如，如果你录制的是一个动作较少的 PowerPoint 演示文稿，但你又在意图像质量，那么你可能更关注更高的分辨率并降低帧率。对于体育赛事等快速运动的录制，你会希望[每秒尽可能捕捉更多的帧](https://ustream.zendesk.com/entries/22962268-Encoding-Specs-and-Stream-Settings#recommended)，同时牺牲一部分分辨率。
 
-
-
-然而，任何增加帧率的调整都会增加文件的总体大小——因此，确定视频的意图至关重要。例如，如果你录制的是一个动作较少的 PowerPoint 演示文，但你又在意图像质量，那么你可能更关注更高的分辨率并降低帧率。对于体育赛事等快速运动的录制，你会希望[每秒尽可能捕捉更多的帧](https://ustream.zendesk.com/entries/22962268-Encoding-Specs-and-Stream-Settings#recommended)，同时牺牲一部分分辨率。
-
-# 分辨率
+#### 分辨率
 
 有两种常见的 `resolution` 格式——标准定义 (SD) 和高定义 (HD)。SD 视频常见的分辨率包括 640x480px (4:3 宽高比例) 和 640x360px (16:9 宽高比例)。HD 视频通常格式为 720p (1280x720px) 或 1080p (1920x1080px)。
 
 显然，分辨率越高，视频文件的大小越大，传输给在线消费者的时间就越长。
 
-# 比特率
+#### 比特率
 
 `bit rate` 控制视频的视觉质量和文件大小，单位是每秒比特 (kbit/s)。[Adobe](http://help.adobe.com/en_US/mediaencoder/cs/using/WSb8e30982e628fbecc0e59e6131255b4dd2-8000.html#WSb8e30982e628fbecc0e59e6131255b4dd2-7ffd) 建议对通过网络传输的视频使用较低的比特率。根据分辨率的不同，以下比特率可以作为[指南](https://vimeo.com/help/compression)：SD 使用 2,000–5,000kbit/s；HD 的 720p 使用 5,000–10,000kbit/s，1080p 使用 10,000–20,000kbit/s。
 
@@ -2665,10 +2665,10 @@ iVBORw0KGgoAAAANSUHEUgAAALQ...
 
 ### 流媒体
 
-`Streaming` 是通过一种协议实现的，视频被分成时间分块（通常为 10 秒）。浏览器对每个分块发送定期的 HTTP 请求。这意味着适用于 CSS 和 HTML 等资源的相同优化规则同样这里。有两种主要的流媒体协议：
+`Streaming` 是通过一种协议实现的，视频被分成时间分块（通常为 10 秒）。浏览器对每个分块发送定期的 HTTP 请求。这意味着适用于 CSS 和 HTML 等资源的相同优化规则同样适用这里。有两种主要的流媒体协议：
 
 *   `RTMP` ([Real Time Messaging Protocol](https://www.adobe.com/devnet/rtmp.html)) 较旧且运行在端口 1335 上，这意味着 Flash 无法查看。
-*   更常见的流媒体解决方案提供 `HLS` ([`en.wikipedia.org/wiki/HTTP_Live_Streaming))/`HDS` ([HTTP Dynamic Streaming`](https://www.adobe.com/ca/products/hds-dynamic-streaming.html))。
+*   更常见的流媒体解决方案提供 `HLS` ([HTTP Live Streaming](https://en.wikipedia.org/wiki/HTTP_Live_Streaming))/`HDS` ([HTTP Dynamic Streaming](https://www.adobe.com/ca/products/hds-dynamic-streaming.html))。
 
 ### 下载
 
@@ -2687,9 +2687,6 @@ iVBORw0KGgoAAAANSUHEUgAAALQ...
 ## 视频托管
 
 为了避免思考使用哪种传输方法，将你的视频托管在 YouTube 或 Vimeo 上可能是最合理的——这些服务针对快速内容传输进行了优化。
-
-
-
 
 此外，它们还提供了共享选项，使你能够将视频包含在自己的网站上。在线视频平台拥有强大的服务器，可以提供可靠的视频内容。它们通常还会提供 `Flash` 和 `HTML5` 版本的源，即使在移动设备上也能轻松访问并经过优化。
 
@@ -2719,9 +2716,8 @@ iVBORw0KGgoAAAANSUHEUgAAALQ...
 
 在选择 Google 字体时，你可以通过 API 调用中的参数来定义你的字符集：
 
-```
-<link href="http://fonts.googleapis.com/css?family=Open+Sans&subset=
-↵latin" rel="stylesheet">
+```html
+<link href="http://fonts.googleapis.com/css?family=Open+Sans&subset=latin" rel="stylesheet">
 ```
 
 Google Fonts 提供了一个实用的性能仪表，用于确定在你的网站上包含其字体对页面加载时间的影响。在图 7.5 中你可以看到包含相对简单有限的字符集的影响很小，而图 7.6 显示包含带有多个集的多个字体的影响要大得多：
@@ -2734,11 +2730,10 @@ Google Fonts 提供了一个实用的性能仪表，用于确定在你的网站�
 
 图 7.6. Google Fonts service with performance gauge, showing a performance alert
 
-对于 Google 字体，如果你知道在特定的网络字体中只需要一个单词，可以使用 `text` 参数仅指定你需要的字符。通过使用字符子集（character subsetting），你保证了字体的最佳优化，因为你只请求了特定单词的字符：
+对于 Google 字体，如果你知道在特定的网络字体中只需要一个单词，可以使用 `text` 参数仅指定你需要的字符。通过使用字符子集，你保证了字体的最佳优化，因为你只请求了特定单词的字符：
 
-```
-<link href="http://fonts.googleapis.com/css?family=Inconsolata&amp;
-↵text=Welcome%20Readers!" rel="stylesheet">
+```html
+<link href="http://fonts.googleapis.com/css?family=Inconsolata&amp;text=Welcome%20Readers!" rel="stylesheet">
 ```
 
 一旦你确定了一个（或多个）网络字体，请确保异步地包含它，以避免渲染阻塞。
@@ -2751,20 +2746,17 @@ Google Fonts 提供了一个实用的性能仪表，用于确定在你的网站�
 
 下面的示例显示了如何通过 WFL 加载 Open Sans 和 Satisfy：
 
-```
+```javascript
 <script>
-      WebFontConfig = {
-      google: {
-        families: ['Open Sans', 'Satisfy']
-      }
-   };
+  WebFontConfig = {
+    google: {
+      families: ['Open Sans', 'Satisfy']
+    }
+  };
 
   (function() {
     var wf = document.createElement('script');
-    wf.src = ('https:' == document.location.protocol ? 'https' :
-↵ 'http') +
-              '://ajax.googleapis.com/ajax/libs/webfont/1.5.6/
-↵webfont.js';
+    wf.src = ('https:' == document.location.protocol ? 'https' : 'http') + '://ajax.googleapis.com/ajax/libs/webfont/1.5.6/webfont.js';
     wf.type = 'text/javascript';
     wf.async = 'true';
     var s = document.getElementsByTagName('script')[0];
@@ -2775,14 +2767,11 @@ Google Fonts 提供了一个实用的性能仪表，用于确定在你的网站�
 
 关于配置以及如何包含 TypeKit 字体的更多信息可以在 WFL 文档中找到。
 
-### 注意：字体加载事件 API (Font Load Events API)
+### 注意：字体加载事件 API
 
 新的[字体加载事件 API（css-font-loading API）](http://dev.w3.org/csswg/css-font-loading/)——目前处于草稿阶段——最终将完全控制字体如何以及何时加载和渲染。然而，在此 API 在所有浏览器中得到完全支持之前，我建议你使用 WFL。
 
 ### Web 字体技巧
-
-
-
 
 *   在添加自定义字体之前请三思，除非它们对你公司的品牌至关重要。除了影响性能外，过多的不同字体会让你的设计显得杂乱。
 *   考虑仅在对连接不敏感的设备上加载网络字体。
@@ -2791,7 +2780,7 @@ Google Fonts 提供了一个实用的性能仪表，用于确定在你的网站�
 
 现在我们已经讨论了优化网站资源的方法，接下来我们将看看如何将这些技术整合到自动化的性能优化工作流中。
 
-## 总结 (Cool Down)
+## 总结
 
 *   虽然图像仍然是网页性能不佳的主要原因，但有很多方法可以对其优化。
 *   选择最适合你目的的图像格式，权衡它们的优缺点。
@@ -2801,7 +2790,7 @@ Google Fonts 提供了一个实用的性能仪表，用于确定在你的网站�
 
 # 第 8 章：自动化优化任务
 
-## 热身 (Warm Up)
+## 热身
 
 这一章是我整本书中最喜欢的。它涵盖了自动化网站性能优化的工具。有无数工具可以实现 Web 开发各项任务的自动化，其中许多非常适合书中介绍的优化任务。
 
@@ -2811,9 +2800,9 @@ Google Fonts 提供了一个实用的性能仪表，用于确定在你的网站�
 
 本节介绍了用于自动化性能优化的工具。它们的目的是根据前几节讨论的性能指南对代码进行验证，并以 `JSON` 或 `XML` 等结构化格式返回结果。
 
- 与其他工具配合 PhantomJS
+### 与其他工具配合 PhantomJS
 
-到为止，我们可以我们一直在手动进行所有的性能测试，例如使用 `WPT`、`PageSpeed Insights` 和 `YSlow` 浏览器扩展等工具。现在我们转转向 [PhantomJS](http://phantomjs.org/)，这是一个`无头浏览器`——这意味着你可以用它打开网站并在命令行中在上面运行命令。通过 `PhantomJS`，我们可以在不打开浏览器窗口的情况下运行相同的测试（例如使用 `YSlow`）。
+到目前为止，我们一直在手动进行所有的性能测试，例如使用 `WPT`、`PageSpeed Insights` 和 `YSlow` 浏览器扩展等工具。现在我们转向 [PhantomJS](http://phantomjs.org/)，这是一个`无头浏览器`——这意味着你可以用它打开网站并在命令行中在上面运行命令。通过 `PhantomJS`，我们可以在不打开浏览器窗口的情况下运行相同的测试（例如使用 `YSlow`）。
 
 通过将 `PhantomJS` 与其他工具结合，你可以监控[页面和网络性能](http://phantomjs.org/network-monitoring.html)，并将其作为你部署过程的一部分。
 
@@ -2822,6 +2811,7 @@ Google Fonts 提供了一个实用的性能仪表，用于确定在你的网站�
 ```javascript
 // open-mypage.js
 var page = require('webpage').create();
+
 page.open('http://bbinto.me', function() {
   // do your stuff
   console.log('Just opened bbinto.me');
@@ -2832,7 +2822,7 @@ page.open('http://bbinto.me', function() {
 你可以按照以下方式执行此代码：
 
 ```bash
-$ phantomjs open-mypage.js 
+$ phantomjs open-mypage.js
 ```
 
 让我们来看一个使用 `PhantomJS` 配合 `YSlow` 分析简单[演示页面](http://bbinto.me/lean-websites/crp/index.html) 的实际示例。首先，作为对比，图 8.1 显示了浏览器中的 `YSlow` 结果，该网站的总体得分为 87：
@@ -2845,60 +2835,55 @@ $ phantomjs open-mypage.js
 
 *   首先，我们获取简单的 `JSON` 输出：
 
-```bash
-$ phantomjs yslow.js --info basic http://bbinto.me/lean-websites/
-↵crp/index.html
+    ```bash
+    $ phantomjs yslow.js --info basic http://bbinto.me/lean-websites/crp/index.html
+    // result
+    $ {"v":"3.1.8","w":623435,"o":87,"u":"http%3A%2F%2Fbbinto.me%2Flean-websites%2Fcrp%2Findex.html","r":19,"i":"ydefault","lt":2191}
+    ```
 
-// result
-$ {"v":"3.1.8","w":623435,"o":87,"u":"http%3A%2F%2Fbbinto.me%2Fle
-an-websites%2Fcrp%2Findex.html","r":19,"i":"ydefault","lt":2191}
-```
+    结果的关键点如下：
 
-结果的关键点如下：
+    *   `v`: 版本
+    *   `w`: 权重
+    *   `o`: 总体得分
+    *   `u`: URL
+    *   `r`: 请求数
+    *   `i`: 性能规则集（来自 `ydefault`、`yslow1` 或 `yblog`）
+    *   `lt`: 页面加载时间
 
-*   `v`: 版本
-*   `w`: 权重
-*   `o`: 总体得分
-*   `u`: URL
-*   `r`: 请求数
-*   `i`: 性能规则集（来自 `ydefault`、`yslow1` 或 `yblog`）
-*   `lt`: 页面加载时间
-
-总体得分“87”与浏览器中运行的 `YSlow` 扩展的结果一致。
+    总体得分“87”与浏览器中运行的 `YSlow` 扩展的结果一致。
 
 *   这是一个完整的示例，包含了测试网站的预定义条件。如果不符合条件，测试将失败并返回警告。以下命令定义了阈值，以检查网站总体得分是否达到 `B`（或更高）：
 
-```bash
-$ phantomjs yslow.js --info basic --format tap --threshold B http:
-//bbinto.me/lean-websites/crp/index.html
-```
+    ```bash
+    $ phantomjs yslow.js --info basic --format tap --threshold B http://bbinto.me/lean-websites/crp/index.html
+    ```
 
-测试通过：
+    测试通过：
 
-```bash
-$ TAP version 13
-1..1
-ok 1 B (87) overall score
-```
+    ```bash
+    $ TAP version 13
+    1..1
+    ok 1 B (87) overall score
+    ```
 
-阈值范围可以从 0 到 100（其中 100 最严格），或者可以使用 `A–F` 标记进行验证，其中 `A` 最好，`F` 最差。
+    阈值范围可以从 0 到 100（其中 100 最严格），或者可以使用 `A–F` 标记进行验证，其中 `A` 最好，`F` 最差。
 
-你可以为网站选择合适的阈值。例如，你甚至可以更具体、更严谨，将 HTTP 请求的阈值（`ynumreq:A`）设置为 95，如下：
+    你可以为网站选择合适的阈值。例如，你甚至可以更具体、更严谨，将 HTTP 请求的阈值（`ynumreq:A`）设置为 95，如下：
 
-```bash
-$ phantomjs yslow.js --info grade --format tap --threshold '{"ynum
-req": "95"}' http://bbinto.me/lean-websites/crp/index.html
-```
+    ```bash
+    $ phantomjs yslow.js --info grade --format tap --threshold '{"ynumreq": "95"}' http://bbinto.me/lean-websites/crp/index.html
+    ```
 
-上面的示例使用了 `yslow.js` 文件中指定的 `ydefault` 规则集。这与通过浏览器扩展运行 `YSlow` 时使用的规则集是相同的。该规则集根据要测试的标准定义了总体得分的计算方式。
+    上面的示例使用了 `yslow.js` 文件中指定的 `ydefault` 规则集。这与通过浏览器扩展运行 `YSlow` 时使用的规则集是相同的。该规则集根据要测试的标准定义了总体得分的计算方式。
 
-与单独使用 `YSlow` 不同，配合 `PhantomJS` 使用允许对性能测试和阈值进行更多自定义。为了使这一过程更加优化，你可以将 `PhantomJS` 脚本添加到你的部署过程中。诸如 `Jenkins` 或 `Travis` 这样的持续集成工具提供了自动化测试环境，并在其中一个测试失败时提醒你。
+    与单独使用 `YSlow` 不同，配合 `PhantomJS` 使用允许对性能测试和阈值进行更多自定义。为了使这一过程更加优化，你可以将 `PhantomJS` 脚本添加到你的部署过程中。诸如 `Jenkins` 或 `Travis` 这样的持续集成工具提供了自动化测试环境，并在其中一个测试失败时提醒你。
 
 ### 注意：持续交付、持续集成
 
 持续交付涉及构建软件使其能够随时进入生产环境。持续集成涉及定期测试并将更改合并到项目中。持续集成构建可以由各种事件启动，例如由版本控制系统中的提交触发、通过类似 cron 的机制进行调度，或在其他构建完成后进行构建等。
 
-诸如 [Jenkins](http://en.wikipedia.org/wiki/Jenkins_(software))) 或 [Travis](https://travis-ci.org/recent) 之类的工具有助于组织运行这些流程。
+诸如 [Jenkins](http://en.wikipedia.org/wiki/Jenkins_(software)) 或 [Travis](https://travis-ci.org/recent) 之类的工具有助于组织运行这些流程。
 
 ### WPT API 和 PageSpeed Insights API
 
@@ -2910,11 +2895,7 @@ Google 工程师 Marcel Duran 构建了一个[用于 WPT API 的插件](https://
 
 通过为 Duran 的 `WPT API` 封装器提供 `specs.json` 文件，你可以指定如何运行性能测试，以及测试何时应该通过或失败。让我们查看 `specs.json` 的一些示例内容：
 
-
-
-
-
-```
+```json
 {
   "median": {
     "firstView": {
@@ -2930,7 +2911,7 @@ Google 工程师 Marcel Duran 构建了一个[用于 WPT API 的插件](https://
 
 以下是我们用于启动测试时发布的命令：
 
-```
+```bash
 webpagetest test http://urltotest.com --specs specs.json
 ```
 
@@ -2942,7 +2923,6 @@ WebPageTest
     1) median.firstView.render: 600 should be less than 400
     ✓ median.firstView.loadTime: 2500 should be less than 4000
     2) median.firstView.score_gzip: 50 should be greater than 90
-
   2 passing
   2 failing
 ```
@@ -2951,14 +2931,13 @@ WebPageTest
 
 现在让我们转向 `PageSpeed Insights API`。接下来的请求将为你提供 `bbinto.me` 的 PageSpeed 结果：
 
-```
-curl GET https://www.googleapis.com/pagespeedonline/v1/runPagespeed?
-url=http%3A%2F%2Fwww.bbinto.me&key={YOUR_API_KEY}
+```bash
+curl GET https://www.googleapis.com/pagespeedonline/v1/runPagespeed?url=http%3A%2F%2Fwww.bbinto.me&key={YOUR_API_KEY}
 ```
 
 默认情况下，结果以 JSON 格式返回，如下：
 
-```
+```json
 {
  "kind": "pagespeedonline#result",
  "id": "http://www.bbinto.me/",
@@ -2979,9 +2958,16 @@ url=http%3A%2F%2Fwww.bbinto.me&key={YOUR_API_KEY}
   "numberCssResources": 10
  },
  // ...
+}
 ```
 
-查看上面的 JSON 结果，你可以关注几个指标，例如 `score` 或 `numberResources` 的值，以便在超过定义的阈值时触发报警。通过读取性能 JSON 文件的结果，你可以以程序化的检测并响应性能问题，而无需通过 PageSpeed Insights 的在线版本运行页面。
+
+
+# 性能自动化与网络优化
+
+## PageSpeed API 与性能监控
+
+查看上面的 JSON 结果，你可以关注几个指标，例如 `score` 或 `numberResources` 的值，以便在超过定义的阈值时触发报警。通过读取性能 JSON 文件的结果，你可以以程序化的方式检测并响应性能问题，而无需通过 PageSpeed Insights 的在线版本运行页面。
 
 请注意，这些 `PageSpeed API` 的验证检查只有在你的网站已经上线的情况下才可行。如果你需要在部署之前验证此类结果，你将查看 [WPT 的私有实例](https://sites.google.com/a/webpagetest.org/docs/private-instances)并通过该私有实例使用其 API。这样，你也可以测试内部集成页面。这对于新启动的网站特别有用。
 
@@ -3001,15 +2987,15 @@ url=http%3A%2F%2Fwww.bbinto.me&key={YOUR_API_KEY}
 | [grunt-contrib-imagemin](https://github.com/gruntjs/grunt-contrib-imagemin) | 优化页面上使用的图片的 Grunt 任务。 | 减少文件大小 |
 | [grunt-contrib-uglify](https://github.com/gruntjs/grunt-contrib-uglify) | `Uglify` 和 `concat` 几乎是相伴的，应该结合使用。`Concat` 先合并所有定义的 JavaScript 文件。`Uglify` 仅对 JavaScript 文件有效。它将所有代码压缩成单行代码块。CSS 文件使用 `cssmin`。 | 减少文件大小 |
 | [grunt-criticalcss](https://github.com/filamentgroup/grunt-criticalCSS) | 找到页面首屏以上的 CSS，并将其输出到文件中。 | 14KB 头部规则 |
-| [grunt-htmltidy](https://www.npmjs.org/package/grunt-htmltidy) |  `HTML Tidy` 的 Grunt 任务。 | 清理标记 |
+| [grunt-htmltidy](https://www.npmjs.org/package/grunt-htmltidy) | `HTML Tidy` 的 Grunt 任务。 | 清理标记 |
 | [grunt-htmlcompressor](https://github.com/jney/grunt-htmlcompressor) | 压缩和压缩 HTML 文件的 Grunt 任务。 | 减少文件大小 |
 | [grunt-image-embed](https://github.com/ehynds/grunt-image-embed) | 该插件将图像编码为 base64 并利用图片的 Data URI 技术。 | 减少 HTTP 请求 |
-| [grunt-montage](https://github.com/globaldev/grunt-montage) | 制作雪图片的 Grunt 任务。需要 `ImageMagick`。 | 减少 HTTP 请求 |
+| [grunt-montage](https://github.com/globaldev/grunt-montage) | 制作雪碧图的 Grunt 任务。需要 `ImageMagick`。 | 减少 HTTP 请求 |
 | [grunt-pagespeed](https://www.npmjs.org/package/grunt-pagespeed) | 作为 CI 的部分运行 Google PageSpeed Insights 的 Grunt 插件。 | 优先测量 |
 | [grunt-perfbudget](https://github.com/tkadlec/grunt-perfbudget) | 用于性能预算的 Grunt 任务。 | 优先测量/设置基准 |
 | [grunt-phantomas](https://www.npmjs.org/package/grunt-phantomas) | 基于 `PhantomJS` 的网络性能统计收集器和监控工具的 Grunt 任务。 | 优先测量 |
 | [grunt-uncss](https://github.com/addyosmani/grunt-uncss) | 从项目中移除未使用 CSS 的 Grunt 任务。 | 减少文件大小 |
-| [grunt-usemin](https://github.com/yeoman/grunt-usemin) | 将一组 HTML 文件中对未优化脚本或样式表的引用的 Grunt 任务。 | 减少 HTTP 请求 |
+| [grunt-usemin](https://github.com/yeoman/grunt-usemin) | 将一组 HTML 文件中对未优化脚本或样式表的引用替换为优化版本的 Grunt 任务。 | 减少 HTTP 请求 |
 | [SPOFCheck](https://github.com/senthilp/spofcheck) | 可通过 `CLI` 检测潜在的单点（SPOF）第三方脚本。 | 移除第三方怪兽 |
 
 让我们选取上述列出的某些任务并将它们应用于示例网页。该页面包含一张主图、一个指向托管在 Google CDN 上的 `jQuery` 库链接、一个带有上一个和下一个按钮的简单 `jQuery` 幻灯片，以及指向其他 JavaScript 和 CSS 文件的链接。为了比较，我创建了页面的两个版本，一个是[运行 Grunt 之前](http://bbinto.me/lean-websites/crp-grunt/without/magic.html)（标题为“这不是魔法”），另一个是[运行 Grunt 之后](http://bbinto.me/lean-websites/crp-grunt/with/magic.html)（标题为“这是魔法”）。
@@ -3024,21 +3010,16 @@ url=http%3A%2F%2Fwww.bbinto.me&key={YOUR_API_KEY}
 
 那么，测试了、更改并改进了什么？
 
-*   本地 CSS 和 JavaScript 文件已压缩并合并（使用 `grunt-concat`、`grunt-uglify`、`grunt-cssmin`）。
-*   图像已通过 `ImageMagick` 进行了优化（使用 `grunt-imagemin`）。
-*   “上一个”和“下一个”按钮已合并到单个雪图片文件中（使用 `grunt-montage`）。
-
-
-
-
-
+*   本地 CSS 和 JavaScript 文件已压缩并合并（使用 `grunt-contrib-concat`、`grunt-contrib-uglify`、`grunt-contrib-cssmin`）。
+*   图像已通过 `ImageMagick` 进行了优化（使用 `grunt-contrib-imagemin`）。
+*   “上一个”和“下一个”按钮已合并到单个雪碧图文件中（使用 `grunt-montage`）。
 *   标题已从“这不是魔法”更改为“这是魔法”（虽然这并不算真正的优化，但使用了 `grunt-processhtml`）。
 *   HTML 已经过压缩，并删除了注释（使用了 `grunt-htmlcompressor`）。
-*   已运行了针对潜在 SPOF（单点故障）脚本的测试（使用了 `SPOF-check`），并警告了输出过程中可能出现的问题。
+*   已运行了针对潜在 SPOF（单点故障）脚本的测试（使用了 `SPOFCheck`），并警告了输出过程中可能出现的问题。
 
 ## 比较
 
-让我们比较这两个版本页面的瀑布图。“并非魔法”的版本（运行 Grunt 之前）显示在图 8.2。“这是魔法”的版本（运行 Grunt 之后）显示在图 8.3 你可以看到下载资源数量上的差异：
+让我们比较这两个版本页面的瀑布图。“并非魔法”的版本（运行 Grunt 之前）显示在图 8.2。“这是魔法”的版本（运行 Grunt 之后）显示在图 8.3。你可以看到下载资源数量上的差异：
 
 ![“并非魔法”页面的瀑布图](img/8-notmagic-waterfall.png)
 
@@ -3052,7 +3033,7 @@ url=http%3A%2F%2Fwww.bbinto.me&key={YOUR_API_KEY}
 
 ![我们页面的 WPT 视频对比](img/8-grunt-video-comparison.png)
 
-图 8.4. 我们页面的[WPT 视频对比](http://www.webpagetest.org/video/compare.php?tests=150123_B7_2RD%2C150123_61_2RB&thumbSize=100&ival=100&end=visual#)
+图 8.4. 我们页面的 [WPT 视频对比](http://www.webpagetest.org/video/compare.php?tests=150123_B7_2RD%2C150123_61_2RB&thumbSize=100&ival=100&end=visual#)
 
 以下是 WPT 指标的详细分类：
 
@@ -3068,7 +3049,7 @@ url=http%3A%2F%2Fwww.bbinto.me&key={YOUR_API_KEY}
 
 ## Grunt 替代方案
 
-[Gulp](http://gulpjs.com/) 是 Grunt 的替代方案，同样可以自动处理常见的性能任务，如压缩 JavaScript 和编译预处理过的 CSS。虽然 Gr 会频繁写入文件系统并更改文件，而 Gulp 在写入磁盘之前会在内存中执行大多数操作（使用流）。大多数 Grunt 任务在 Gulp 中也可用，例如 [gulp-concat](https://www.npmjs.com/packages/gulp-concat)、[gulp-minify-html](https://www.npmjs.com/packages/gulp-minify-html) 等。
+[Gulp](http://gulpjs.com/) 是 Grunt 的替代方案，同样可以自动处理常见的性能任务，如压缩 JavaScript 和编译预处理过的 CSS。虽然 Grunt 会频繁写入文件系统并更改文件，而 Gulp 在写入磁盘之前会在内存中执行大多数操作（使用流）。大多数 Grunt 任务在 Gulp 中也可用，例如 [gulp-concat](https://www.npmjs.com/packages/gulp-concat)、[gulp-minify-html](https://www.npmjs.com/packages/gulp-minify-html) 等。
 
 其他任务运行器还包括 [Maven](http://maven.apache.org/) 和 [Ant](http://ant.apache.org/)，它们主要用于 Java 项目，也可以用于自动化 Web 性能优化。有几种性能插件可用，如 [Google Closure Compiler](https://github.com/google/closure-compiler) 或 [HtmlCompressor](https://code.google.com/p/htmlcompressor/)。Maven 和 Ant 都使用 XML 来描述构建过程。
 
@@ -3076,33 +3057,33 @@ url=http%3A%2F%2Fwww.bbinto.me&key={YOUR_API_KEY}
 
 *   你已经配置了可以自动化性能优化任务的工具。
 *   大多数现有性能工具（如 YSlow 和 WPT API 封装器）可以集成到你的持续部署过程中，以消除任何手动性能测试。
-*   你已经介绍了任务运行器和构建系统，以及它们如何帮助你实现性能自动化。
+*   你已经了解了任务运行器和构建系统，以及它们如何帮助你实现性能自动化。
 *   介绍了几个特定的 Grunt 性能工具，以演示将性能任务包含在部署过程中的好处。“之前”和“之后”页面的对比揭示了在不进行人工操作的情况下可以进行多少改进。
 
 # 第 9 章：网络和服务器性能改进
 
 ## 热身
 
-我们目前为止涵盖的性能技术主要集中在优化网站的前端——或者说是下载到浏览器的所有。在本章中，我们将关注改进后端性能，这涉及到对你的网络和 Web 服务器进行微调。
+我们目前为止涵盖的性能技术主要集中在优化网站的前端——或者说是下载到浏览器的所有资源。在本章中，我们将关注改进后端性能，这涉及到对你的网络和 Web 服务器进行微调。
 
 ## 内容分发网络
 
-内容分发网络（CDN）是一种为了快速提供内容内容的托管服务，旨在克服延迟。如果柏林的用户请求一个托管在旧金山没有 CDN 的服务器上的页面，那么该页的所有资源都必须从旧金山获取，跨越大西洋。这非常麻烦，你不觉得吗？CDN 通过在全球范围内多个位置缓存静态内容来解决这个问题，允许网站资源快速递送到任何浏览器。
+内容分发网络（CDN）是一种为了快速提供内容的托管服务，旨在克服延迟。如果柏林的用户请求一个托管在旧金山没有 CDN 的服务器上的页面，那么该页的所有资源都必须从旧金山获取，跨越大西洋。这非常麻烦，你不觉得吗？CDN 通过在全球范围内多个位置缓存静态内容来解决这个问题，允许网站资源快速递送到任何浏览器。
 
 以下示例概述了带有 CDN 和没有 CDN 的网站性能：
 
-| velocityconf.com[^([a])](#ch09.html_ftn.d5e3544) | 原始 | CDN |
+| velocityconf.com[^1] | 原始 | CDN |
 | --- | --- | --- |
 | 加载时间 | 17.87s | 8.34s |
 | 开始渲染 | 7.01s | 2.74s |
 | 请求数 | 81 | 81 |
 | 字节数 | 1014KB | 792KB |
 
-[^([a])](#ch09.html_d5e3544) 来源：velocityconf.com 的示例数据，取自 [Web Performance Today](http://www.webperformancetoday.com/2012/05/14/cdn-feo-front-end-optimization-web-acceleration/)
+[^1]: 来源：velocityconf.com 的示例数据，取自 [Web Performance Today](http://www.webperformancetoday.com/2012/05/14/cdn-feo-front-end-optimization-web-acceleration/)
 
 整个 CDN 中可用的服务器被称为边缘服务器，在这些服务器上分发多个内容副本被称为内容复制。大多数 CDN 供应商在世界各地维护大量边缘服务器，使得 CDN 对于向许多国家提供内容的网站特别有用。
 
-图 9.1 插释了如何在 CDN 内部访问网站。一旦请求页面，将根据到达服务器所需的跳数，或根据哪个服务器的可用性最高来确定最佳服务器：
+图 9.1 演示了如何在 CDN 内部访问网站。一旦请求页面，将根据到达服务器所需的跳数，或根据哪个服务器的可用性最高来确定最佳服务器：
 
 ![CDN 的工作演示](img/9-cdn-example-external.png)
 
@@ -3116,19 +3097,15 @@ url=http%3A%2F%2Fwww.bbinto.me&key={YOUR_API_KEY}
 
 ## 针对你的 Web 服务器使用 PageSpeed Insights
 
-PageSpeed Insights 以后端模块 `https://developers.google.com/speed/pagespeed/module` 的提供，可以安装在你的服务器上。该模块带有许多用的过滤器 `https://developers.google.com/speed/pagespeed/module/filters`，可以安装以优化代码。该模块在不需要修改现有内容的情况下优化代码，在 HTTP 服务器交付资源时执行。它基本上是“即时”的性能改进。
+PageSpeed Insights 以后端模块 [PageSpeed Module](https://developers.google.com/speed/pagespeed/module) 的形式提供，可以安装在你的服务器上。该模块带有许多有用的过滤器 [Filters](https://developers.google.com/speed/pagespeed/module/filters)，可以启用以优化代码。该模块在不需要修改现有内容的情况下优化代码，在 HTTP 服务器交付资源时执行。它基本上是“即时”的性能改进。
 
-后续章节简要介绍了在减少 HTTP 请求（从而减少延迟）背景下值得提到的几个过滤器[^([3])](#ch09.html_ftn.d5e3594)。
+后续章节简要介绍了在减少 HTTP 请求（从而减少延迟）背景下值得提到的几个过滤器[^3]。
 
 ### 标准化 JavaScript 库
 
 jQuery 是目前最流行的 JavaScript 库之一。假设你从使用 jQuery 的网站 A 导航到同样使用 jQuery 的网站 B。浏览器会自动再次从网站 B 获取 jQuery 脚本，即使它刚刚从网站 A 请求过。
 
-
-
-
-
-感觉这里效率很低，不是吗？这浪费了带宽。因此，Google 的聪明人们想出了一种解决方案，通过引入[规范化 JavaScript 库](https://developers.google.com/speed/pagespeed/module/filter-canonicalize-js) 过滤器来减少这种低效率。其核心思想是将本地托管的 JavaScript 库（例如 `jQuery`）替换为托管在 Google CDN 上的等效库——这意味着用户在浏览时，可以使用之前已从 Google CDN 获取（并因此已缓存在浏览器中）的 `jQuery` 副本。
+感觉这里效率很低，不是吗？这浪费了带宽。因此，Google 的聪明人们想出了一种解决方案，通过引入[规范化 JavaScript 库](https://developers.google.com/speed/pagespeed/module/filter-canonicalize-js)过滤器来减少这种低效率。其核心思想是将本地托管的 JavaScript 库（例如 `jQuery`）替换为托管在 Google CDN 上的等效库——这意味着用户在浏览时，可以使用之前已从 Google CDN 获取（并因此已缓存在浏览器中）的 `jQuery` 副本。
 
 按照以下方式启用该过滤器（针对 Apache）：
 
@@ -3139,17 +3116,14 @@ ModPagespeedEnableFilters canonicalize_javascript_libraries
 以下是该模块替换本地 `jQuery` 文件的示例：
 
 ```html
-<html
+<html>
   <head>
-    <script src="/local/jquery-1.8.3.js">
-    </script>
-    <script src="foo.js">
-    </script>
-    <script src="bar.js">
-    </script>
+    <script src="/local/jquery-1.8.3.js"></script>
+    <script src="foo.js"></script>
+    <script src="bar.js"></script>
   </head>
-  <body
-  <!-- fun stuff -->
+  <body>
+    <!-- fun stuff -->
   </body>
 </html>
 ```
@@ -3157,18 +3131,14 @@ ModPagespeedEnableFilters canonicalize_javascript_libraries
 将被重写为：
 
 ```html
-<html
+<html>
   <head>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/
-jquery.min.js">
-    </script>
-    <script src="foo.js">
-    </script>
-    <script src="bar.js">
-    </script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="foo.js"></script>
+    <script src="bar.js"></script>
   </head>
-  <body
-  <!-- fun stuff -->
+  <body>
+    <!-- fun stuff -->
   </body>
 </html>
 ```
@@ -3190,30 +3160,29 @@ ModPagespeedEnableFilters combine_css
 例如，假设原始 HTML 如下：
 
 ```html
-<html
+<html>
   <head>
     <link rel="stylesheet" type="text/css" href="styles/1.css">
     <link rel="stylesheet" type="text/css" href="styles/2.css">
     <link rel="stylesheet" type="text/css" href="styles/3.css">
   </head>
-  <body
+  <body>
     <!-- fun stuff -->
   </body>
-</html> 
+</html>
 ```
 
 合并 CSS 将其转变为类似内容：
 
 ```html
-<html
+<html>
   <head>
-    <link rel="stylesheet" type="text/css" href="styles/1.css+2.css+
-3.css.pagespeed.cc.yu2He3_gBx.css">
+    <link rel="stylesheet" type="text/css" href="styles/1.css+2.css+3.css.pagespeed.cc.yu2He3_gBx.css">
   </head>
-  <body
+  <body>
     <!-- fun stuff -->
   </body>
-</html> 
+</html>
 ```
 
 ### 推迟 JavaScript
@@ -3249,17 +3218,16 @@ ModPagespeedEnableFilters prioritize_critical_css
 以下页面包含一个外部 `style.css` 文件，其中页面仅引用了 `class="red"`：
 
 ```html
-<html
+<html>
   <head>
     <link rel="stylesheet" href="style.css">
-
     <!-- style.css 的内容
           .red {color: red;}
           .big { font-size: 8em; }
           .gallery {border:1p solid black; }
     -->
   </head>
-  <body
+  <body>
     <div class="red">
       Hello readers!
     </div>
@@ -3270,13 +3238,13 @@ ModPagespeedEnableFilters prioritize_critical_css
 过滤器的输出将如下，仅关注此页面上真正使用的样式：
 
 ```html
-<html
+<html>
   <head>
     <style>
-      .red{red;}
+      .red{color: red;}
     </style>
-    </head>
-  <body
+  </head>
+  <body>
     <div class="red">
       Hello readers!
     </div>
@@ -3285,17 +3253,15 @@ ModPagespeedEnableFilters prioritize_critical_css
 <noscript><link rel="stylesheet" href="style.css"></noscript>
 ```
 
-
-
-
+## HTTP/2
 
 当 `HTTP/1.1` 在十年前引入时，延迟并不是一个令人担心的问题。然而，时代、技术和用户预期已经发生了变化。`HTTP/1.1` 已不足以应对今天的挑战。现在的用户要求在不同设备和不同位置快速、即时地交付内容，这导致了更高的延迟，并要求对 HTTP 请求进行更好的处理。这些性能问题最终通过 `HTTP/2` 得到了解决。
 
-在 `HTTP/1.1` 中，只有客户端可以发起请求。即使服务器知道客户端需要某个资源，它也没有机制来通知客户端，必须等待接收客户端对该资源的请求。`HTTP/2.0` 承诺让 HTTP 请求更加[高效](https://www.mnot.net/blog/2014/01/30/http2_expectations)，减少对为了减少 HTTP 请求而采用通变技术的需求，从而降低延迟。
+在 `HTTP/1.1` 中，只有客户端可以发起请求。即使服务器知道客户端需要某个资源，它也没有机制来通知客户端，必须等待接收客户端对该资源的请求。`HTTP/2` 承诺让 HTTP 请求更加[高效](https://www.mnot.net/blog/2014/01/30/http2_expectations)，减少对为了减少 HTTP 请求而采用通变技术的需求，从而降低延迟。
 
-`HTTP/2` 优于 `HTTP/1.1` 的主要优势之一是它允许许多并发 HTTP 请求在单个 TCP 连接上运行。如果没有持久连接（使用 `keep-alive`），正如第 3 章所讨论的，手手将由 `HTTP/1.1` 强制执行，导致延迟和阻塞。虽然 `keep-alive` 的想法是保持 TCP 连接开启，但 `HTTP/2` 带来了更多的改进。它带有默认 HTTP 头部压缩，而 `HTTP/1.1` 使用的是可选压缩。此外，通过 `HTTP/2`，服务器可以主动向客户端发送可能需要的资源，这被称为**服务器推送 (server push)**。
+`HTTP/2` 优于 `HTTP/1.1` 的主要优势之一是它允许许多并发 HTTP 请求在单个 TCP 连接上运行。如果没有持久连接（使用 `keep-alive`），正如第 3 章所讨论的，请求将由 `HTTP/1.1` 强制串行执行，导致延迟和阻塞。虽然 `keep-alive` 的想法是保持 TCP 连接开启，但 `HTTP/2` 带来了更多的改进。它带有默认 HTTP 头部压缩，而 `HTTP/1.1` 使用的是可选压缩。此外，通过 `HTTP/2`，服务器可以主动向客户端发送可能需要的资源，这被称为**服务器推送 (server push)**。
 
-尽管 `HTTP/2`是一项巨大的改进，但请注意，在不久的将来使用 `HTTP/2` 仍然需要你做好功课。该协议不会魔法地消除渲染阻塞和同步第三方脚本，也不会为你压缩脚本。为了让这一新协议发挥作用，仍然需要采用技术。
+尽管 `HTTP/2` 是一项巨大的改进，但请注意，在不久的将来使用 `HTTP/2` 仍然需要你做好功课。该协议不会魔法地消除渲染阻塞和同步第三方脚本，也不会为你压缩脚本。为了让这一新协议发挥作用，仍然需要采用技术。
 
 然而，通过 `HTTP/2`，许多小资源可以并行复用，诸如资源合并——图片精灵和合并——等技术[不再需要](http://chimera.labs.oreilly.com/books/1230000000545/ch13.html#_removing_1_x_optimizations)来提高性能。
 
@@ -3305,11 +3271,11 @@ ModPagespeedEnableFilters prioritize_critical_css
 
 ## Gzip 压缩
 
-`Gzip` 是一个非常高效的压缩程序，可以轻松地在你的服务器上开启，以减少几毫秒的加载时间。你的服务器将在文件发送给用户之前使用 `zip` 进行压缩。我强烈建议你在服务器上启用 `Gzip` 压缩，这是一个非常快速且简单的性能提升。
+`Gzip` 是一个非常高效的压缩程序，可以轻松地在你的服务器上开启，以减少几毫秒的加载时间。你的服务器将在文件发送给用户之前使用 `gzip` 进行压缩。我强烈建议你在服务器上启用 `Gzip` 压缩，这是一个非常快速且简单的性能提升。
 
 ### Warning：何时使用 Gzip
 
-`Gzip` 对于未压缩的、基于文本的格式（如 `HTML`、`XML`、`JSON` 和 `CSS` 文件最有意义。对于已经压缩的内容类型（PDF 和图像），不应该进行 gzip 处理，因为它们的文件大小实际上可能会[增大](https://developer.yahoo.com/performance/rules.html#gzip)。
+`Gzip` 对于未压缩的、基于文本的格式（如 `HTML`、`XML`、`JSON` 和 `CSS` 文件）最有意义。对于已经压缩的内容类型（PDF 和图像），不应该进行 gzip 处理，因为它们的文件大小实际上可能会[增大](https://developer.yahoo.com/performance/rules.html#gzip)。
 
 但如何知道 `Gzip` 已启用？你可以打开浏览器的开发者工具并检查响应头，如图 9.3 所示，或者使用 [HTTP 压缩 test](http://checkgzipcompression.com) 等工具，如图 9.4 所示：
 
@@ -3331,7 +3297,7 @@ ModPagespeedEnableFilters prioritize_critical_css
 <ifModule mod_gzip.c>
     mod_gzip_on Yes
     mod_gzip_dechunk Yes
-    mod_gzip_item_include file .(html?|txt|css|js|php|pl)$
+    mod_gzip_item_include file \.(html?|txt|css|js|php|pl)$
     mod_gzip_item_include handler ^cgi-script$
     mod_gzip_item_include mime ^application/x-javascript.*
     mod_gzip_item_exclude mime ^image/.*
@@ -3349,7 +3315,7 @@ SetEnv gzip 1
 
 ![bbinto.me 开启和未开启 Gzip 的 WPT 对比](img/9-gzip-bbinto.png)
 
-图 9.5. bbinto.me 开启和未开启 Gzip 的[WPT 对比](http://www.webpagetest.org/video/compare.php?tests=141011_G7_JD1,141011_7E_K5J)
+图 9.5. bbinto.me 开启和未开启 Gzip 的 [WPT 对比](http://www.webpagetest.org/video/compare.php?tests=141011_G7_JD1,141011_7E_K5J)
 
 你可以看到 gzip 版本和非 gzip 版本之间性能的明显差异。我开启了 Gzip 的网站加载快了近一秒。我的速度索引（speed index）从 3140 提高到 2100，渲染开始时间（start to render time）从 3.05s 提高到 1.94s。Gzip 可以是一个简单且快速的性能胜利。
 
@@ -3373,20 +3339,16 @@ SetEnv gzip 1
 
 现在，让我们讨论如何通过缓存来提高性能。基本思想是尽可能避免不必要的 HTTP 请求，通过在浏览器中存储可以重用的某些资源。每个浏览器都包含缓存，但需要关于如何以及何时使用它的指令。你可以通过使用 `Cache-Control` 头部来设置该逻辑，例如何时请求更更新或更新的资源版本，以及何时不使用缓存中的版本。
 
+为了说明缓存头的使用，让我们查看之前 Google 精灵图的响应头，如图 9.8 中红框所示。响应头由服务器发送，而请求头由浏览器发送到服务器：
 
-
-
-
-为了说明缓存头（caching headers）的使用，让我们查看之前 Google 精灵图的响应头，如图 9.8 中红框所示。响应头由服务器发送，而请求头由浏览器发送到服务器：
-
-![Checking out Cache-Control headers for the sprite image](img/9-cache-header-google.png)
+![检查精灵图的 Cache-Control 头](img/9-cache-header-google.png)
 
 图 9.8 检查精灵图的 Cache-Control 头
 
 让我们来看一下 `Cache-Control` 头部。它的设置被称为`缓存响应指令`（cache response directives）。第一个指令可以是 `public`、`private`、`max-age` 或 `no-cache`。
 
 *   `public`：公共（或“共享”）缓存被多个客户端利用。正因如此，它提供了极佳的性能提升，因为用户可以从他人那里获取缓存副本，而无需从源服务器获取原始副本。公共缓存的资源可以是 Logo、导航项、JavaScript 和 CSS 文件等——即大多数或每个网站访问者都频繁请求的任何资源。
-*   `private`：私有缓存仅供单个客户端使用且不共享。它允许在浏览器中缓存特定于某个用户的资源。任何代理服务器都不会缓存该响应。这主要用于访问需要授权且通过 HTTPS 服务的资源时。上面的 Google 图片示例使用了 `private` 指令，因此该资源无法被中间缓存^([5])](#ch09.html_ftn.d5e3781) 或 CDN 捕获供其他用户提取。
+*   `private`：私有缓存仅供单个客户端使用且不共享。它允许在浏览器中缓存特定于某个用户的资源。任何代理服务器都不会缓存该响应。这主要用于访问需要授权且通过 HTTPS 服务的资源时。上面的 Google 图片示例使用了 `private` 指令，因此该资源无法被中间缓存[^5] 或 CDN 捕获供其他用户提取。
 *   `max-age=[seconds]`：指定资源被认为“新鲜”（fresh）的最大时间（以秒为单位）。该指令相对于请求时间。在 Google 图片示例中，`max-age` 被设置为 31536000 秒，即 365 天。这些 `Cache-Control` 指令会让资源在浏览器缓存中保留 365 天，在此之后再检查是否有新版本可供获取。
 *   `no-cache`：每次请求该资源时，缓存都需要向源服务器提交请求进行确认，然后才释放缓存副本。
 
@@ -3400,7 +3362,7 @@ SetEnv gzip 1
 
 你会发现某些资源在响应头中也包含一个 `ETag`。当浏览器根据 `Cache-Control` 设置被要求刷新资源时，如果资源并没有发生变化，`ETag` 就派上用场了。`ETag` 由服务器生成，是一个任意标记（例如 MD5 哈希值），作为资源内容的指纹。如果哈希值与请求头中 `If-None-Match` 的值相同，则浏览器就知道资源没有变化，从而跳过下载。关于如何从[雅虎加速网站的最佳实践](https://developer.yahoo.com/performance/rules.html#etags)中创建 `ETags`，可以找到更多信息。
 
-这里是一个 `ETag` 使用示例。以下片段是一个 HTTP 请求头 `if-None-Match`，以及对应我网站上 `/css/services.css` 样式表的带有 `ETag` 哈希的响应头。哈希值是相同的，表明样式表的内容与缓存中的版本没有变化，因此内容不需要重新下载。
+这里是一个 `ETag` 使用示例。以下片段是一个 HTTP 请求头 `If-None-Match`，以及对应我网站上 `/css/services.css` 样式表的带有 `ETag` 哈希的响应头。哈希值是相同的，表明样式表的内容与缓存中的版本没有变化，因此内容不需要重新下载。
 
 *   请求头：
 ```
@@ -3420,9 +3382,11 @@ Etag: "532a0d9b-bd8+gzip"
 
 #### 基于时间
 
-[条件性时间头部](https://devcenter.heroku.com/articles/increasing-application-performance-with-http-cache-headers），例如 `If-modified-since`（在请求头中）和 `Last-modified`（在响应头中），可以被设置为：仅当资源自浏览器缓存副本以来确实已修改过时，才请求该资源的最新版本。如果缓存副本是最新的，服务器将不会提供任何新副本，并返回 304（未修改）响应码。
+[条件性时间头部](https://devcenter.heroku.com/articles/increasing-application-performance-with-http-cache-headers)，例如 `If-Modified-Since`（在请求头中）和 `Last-Modified`（在响应头中），可以被设置为：仅当资源自浏览器缓存副本以来确实已修改过时，才请求该资源的最新版本。如果缓存副本是最新的，服务器将不会提供任何新副本，并返回 304（未修改）响应码。
 
-以下片段是 `if-modified-since` 的 HTTP 请求头，以及对应我网站上 `/css/services.css` 样式表的带有 `Last-modified` 响应的响应头。
+以下片段是 `If-Modified-Since` 的 HTTP 请求头，以及对应我网站上 `/css/services.css` 样式表的带有 `Last-Modified` 响应的响应头。
+
+*   请求头：
 ```
 GET /css/services.css?ver=2015Febaa HTTP/1.1
 ...
@@ -3438,7 +3402,7 @@ Last-Modified: Wed, 19 Mar 2014 21:35:23 GMT
 ...
 ```
 
-`Last-modified` 日期并不比 `If-Modified-Since` 日期，因此不需要请求新副本。
+`Last-Modified` 日期并不比 `If-Modified-Since` 日期新，因此不需要请求新副本。
 
 #### `stale-while-revalidate`
 
@@ -3452,7 +3416,7 @@ Cache-Control: max-age=86400, stale-while-revalidate=43200
 Content-Type: text/plain
 ```
 
-资源将从缓存中读取 86400 秒（1 天）。在该时间段时间之后，缓存将重新获取所请求的资源。如果我们没有设置 `stale-while-revalidate`，页面的加载速度会变慢。相反，我们给了缓存长达 43200 秒（半天）的时间在后台重新获取新版本，从而确保终端用户获得快速加载的资源。
+资源将从缓存中读取 86400 秒（1 天）。在该时间段之后，缓存将重新获取所请求的资源。如果我们没有设置 `stale-while-revalidate`，页面的加载速度会变慢。相反，我们给了缓存长达 43200 秒（半天）的时间在后台重新获取新版本，从而确保终端用户获得快速加载的资源。
 
 #### `stale-if-error`
 
@@ -3466,7 +3430,7 @@ Content-Type: text/plain
 
 在上面的示例中，响应首先指示资源在 1000 秒内是新鲜。此外，资源还可以继续使用 1200 秒。如果之后发生错误，它将变为过期。
 
-目前许多网站还没有利用这些优化功能。根据[2015 年 1 月](http://bbinto.github.io/lean-web-code/chapter-9/cache-headers-stale-jan2015.xlsx)的数据，Alexa 排名名前 0.2% 的网站资源使用了 `stale-while-revalidate`，只有 0.1% 使用 `stale-if-error`。
+目前许多网站还没有利用这些优化功能。根据[2015 年 1 月](http://bbinto.github.io/lean-web-code/chapter-9/cache-headers-stale-jan2015.xlsx)的数据，Alexa 排名前 0.2% 的网站资源使用了 `stale-while-revalidate`，只有 0.1% 使用 `stale-if-error`。
 
 ### 实践中的缓存
 
@@ -3474,11 +3438,7 @@ Content-Type: text/plain
 
 每位开发者的良好习惯是制定一套精心设计的 `Cache-Control` 策略，根据预期的生命周期列出网站的资源。
 
-
-
-
-
-# 在创建缓存策略时，将你的网站结构化为逻辑目录是非常有益的。请检查你的资源，并根据它们的性质将它们拆分为多个目录。例如，很少更改的品牌文件和 logo 文件可以存储在一个需要长时间缓存的资源文件夹中，而动态内容可以存储在具有较短缓存时间的独立文件夹中。
+在创建缓存策略时，将你的网站结构化为逻辑目录是非常有益的。请检查你的资源，并根据它们的性质将它们拆分为多个目录。例如，很少更改的品牌文件和 logo 文件可以存储在一个需要长时间缓存的资源文件夹中，而动态内容可以存储在具有较短缓存时间的独立文件夹中。
 
 让我们来看一个例子。我的网站是一个 WordPress 博客，我不打算经常频繁地更改它的设计。因此，为我的主题文件设置较长时间的缓存时间是完全合理的。此外，我尝试根据我的日程，每两个到三个月发布新的博客文章来更新我的网站。所以，我想确保在设置 HTML 文件的缓存策略时，将这一写作计划考虑在内。为了稳妥起见，让我们将其设置为一个月。我还决定为我上传的所有内容（如图像、PDF 和文本文件）设置一年的缓存值，假设这些内容在被我上传后很少更改。
 
@@ -3491,7 +3451,7 @@ Content-Type: text/plain
 <ifModule mod_headers.c>
     ExpiresActive On
     # Expires after 1 month
-    <filesMatch ".(html)$">
+    <filesMatch "\.(html)$">
     Header set Cache-Control "max-age=2592000"
     </filesMatch>
 </ifModule>
@@ -3524,7 +3484,7 @@ Content-Type: text/plain
 </Directory>
 
 ## Expires after 1 month
-<filesMatch ".(html)$">
+<filesMatch "\.(html)$">
 Header set Cache-Control "max-age=2592000"
 </filesMatch>
 
@@ -3554,21 +3514,19 @@ Header set Cache-Control "max-age=2592000"
 
 ### 缓存技巧
 
-值得注意的是，并没有一种可以应用于你网站所有资源的缓存“灵万能银药”。请花时间审核并定义你的资源以及它们的最佳缓存生命周期。每个资源都有不同的“新鲜度”要求。这里有一些[提示]/小贴士](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/http-caching#caching-checklist)帮助你开始思考：
+值得注意的是，并没有一种可以应用于你网站所有资源的缓存“灵丹妙药”。请花时间审核并定义你的资源以及它们的最佳缓存生命周期。每个资源都有不同的“新鲜度”要求。这里有一些[提示](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/http-caching#caching-checklist)帮助你开始思考：
 
-*   对于静态资源或很少更改的资源，Google 建议设置[一个月](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/http-caching#caching-checklist)的过期策略，或者至少一周。例如，如果资源很少更改，就没有需要重复获取。
+*   对于静态资源或很少更改的资源，Google 建议设置[一个月](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/http-caching#caching-checklist)的过期策略，或者至少一周。例如，如果资源很少更改，就没有必要重复获取。
 *   如果你使用 CDN，请区分哪些是对于所有用户都相同的资源。这些是 CDN 缓存的理想选择。
-*   如前所述，在合并所有 JavaScript 文件之前，请检查哪些 应用程序部分更改频繁。为这些部分设置不激进的缓存策略。为资源确定合适的 `max-age`。
+*   如前所述，在合并所有 JavaScript 文件之前，请检查哪些应用程序部分更改频繁。为这些部分设置不激进的缓存策略。为资源确定合适的 `max-age`。
 
-
-
-
+# 第 10 章：移动端性能
 
 > “单一网络（One Web）”意味着在合理范围内，无论用户使用何种设备，都能获得相同的信息和服务。然而，这并不意味着在所有设备上都能以完全相同的形式呈现完全相同的信息。移动端的使用场景、设备能力的差异、带宽问题以及移动网络能力都会影响信息的呈现方式。（[W3C 移动 Web 实践](http://www.w3.org/TR/mobile-bp/#OneWeb)）
 
 这段引用来自 W3C 移动 Web 倡议最佳实践工作组，它总结了我们应该如何为多设备构建网站。由于不同设备的性能和屏幕尺寸各异，如果我们想提供最佳用户体验，就需要针对每种设备来构建网站。
 
-为所有用户提供完全相同的内容并不总是明智的。想象一个精美、图片密集的旅游网站。对于使用宽带的桌面用户来说，这可能是一种很棒的，但对于使用小型移动设备的用户来说却是糟糕的。图片很可能需要减小尺寸以加快下载并节省带宽——如果它们确实需要显示的话。此外，移动用户可能只想查看行程详情或出发时间，因此适用于桌面端的布局和功能在移动场景下可能非常不合适。为用户提供最佳体验以帮助他们实现目标应该是核心关注点。
+为所有用户提供完全相同的内容并不总是明智的。想象一个精美、图片密集的旅游网站。对于使用宽带的桌面用户来说，这可能是一种很棒的体验，但对于使用小型移动设备的用户来说却是糟糕的。图片很可能需要减小尺寸以加快下载并节省带宽——如果它们确实需要显示的话。此外，移动用户可能只想查看行程详情或出发时间，因此适用于桌面端的布局和功能在移动场景下可能非常不合适。为用户提供最佳体验以帮助他们实现目标应该是核心关注点。
 
 ## 移动端的兴起：当前统计与互联网使用
 
@@ -3611,7 +3569,7 @@ Akamai 将移动端与非移动端页面加载时间的差异定义为“移动�
 
 正如你所料的，在处理无线通信时，延迟是一个遗憾的因素。因此，尽量减少 `HTTP` 请求的数量以避免任何额外的延迟问题。发送少数响应较大的 `HTTP` 请求比发送许多响应较小的 `HTTP` 请求要好。
 
-下表[^([6])](#ch10.html_ftn.d5e4059) 显示在移动网络上请求 `HTTP` 资源通常会有多少延迟：
+下表[^6] 显示在移动网络上请求 `HTTP` 资源通常会有多少延迟：
 
 | 移动代际 | 速率 | 延迟 |
 | --- | --- | --- |
@@ -3619,17 +3577,13 @@ Akamai 将移动端与非移动端页面加载时间的差异定义为“移动�
 | 3G | 0.5–5Mbit/s | 100–500ms |
 | 4G | 1–50Mbit/s | < 100ms |
 
-移动网络和运营商的延迟波动性可能非常大。[虽然 4G 网络将改善延迟](https://www.igvita.com/slides/2013/breaking-1s-mobile-barrier.pdf)，但在所有移动用户切换到 4G 网络之前还需要很一段时间。
+移动网络和运营商的延迟波动性可能非常大。[虽然 4G 网络将改善延迟](https://www.igvita.com/slides/2013/breaking-1s-mobile-barrier.pdf)，但在所有移动用户切换到 4G 网络之前还需要很长一段时间。
 
-### CPU/GPU 与更较少的内存
+### CPU/GPU 与更少的内存
 
 CPU 指的是**中央处理器**，它是所有计算机（包括移动设备）的大脑。如今的移动设备处理能力大致相当于五年前的桌面电脑。
 
-
-
-
-
-GPU 代表 `graphics processing unit`（图形处理单元）。它的主要功能是卸载原本由主 `CPU` 处理和计算的图形任务。`GPU` 的架构专门为图形处理而设计——因此，它可以比 `CPU` 更高效地完成这项任务。
+GPU 代表 `Graphics Processing Unit`（图形处理单元）。它的主要功能是卸载原本由主 `CPU` 处理和计算的图形任务。`GPU` 的架构专门为图形处理而设计——因此，它可以比 `CPU` 更高效地完成这项任务。
 
 我们在 `CPU/GPU` 上承载的任务越重——尤其是在智能手机等较小设备上——它们就工作得越辛苦，导致处理速度变慢，性能下降。习惯了桌面级和笔记本电脑上巨大可用内存的开发者应该记住，移动设备的内存容量要少得多。可用内存越少，性能优化就越具挑战性。正如第 6 章所示，某些 JavaScript 操作是以性能为代价的，对 DOM 的重大操作都可能导致移动设备的内存问题。
 
@@ -3649,7 +3603,7 @@ GPU 代表 `graphics processing unit`（图形处理单元）。它的主要功�
 
 - **图像：** 渲染图像占总渲染能量的很大比例。将图像压缩为 JPEG 已显示出能量消耗方面的改进。
 - **JavaScript：** JavaScript 是网页中耗能最高的组件之一。尽可能移除大量未使用的框架或操作。
-- **CSS：** CSS 的渲染成本取决于被样化的项目数量。合并 CSS 文件也有助于减少能量消耗。
+- **CSS：** CSS 的渲染成本取决于被样式化的项目数量。合并 CSS 文件也有助于减少能量消耗。
 
 这些听起来都有些熟悉，不是吗？我在讨论通用网站优化时已经提到过这些内容了。因此，通过遵循这些规则，我们可以确保我们的网站在移动端也是节能的。
 
@@ -3674,10 +3628,7 @@ GPU 代表 `graphics processing unit`（图形处理单元）。它的主要功�
 以下是 iPhone 4 条目的 WURFL `device` 节点的示例片段：
 
 ```xml
-<device id="apple_generic" user_agent="Mozilla/5.0 (iPhone; U; CPU
- iPhone OS 4_0 like Mac OS X; xx-xx) AppleWebKit/532.9 (KHTML,
-like Gecko) Version/4.0.5 Mobile/8A293 Safari/6531.22.7"
- fall_back="generic_xhtml">
+<device id="apple_generic" user_agent="Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_0 like Mac OS X; xx-xx) AppleWebKit/532.9 (KHTML, like Gecko) Version/4.0.5 Mobile/8A293 Safari/6531.22.7" fall_back="generic_xhtml">
     <group id="product_info">
       <capability name="mobile_browser" value="Safari"/>
       <capability name="device_os" value="iOS"/>
@@ -3716,11 +3667,7 @@ like Gecko) Version/4.0.5 Mobile/8A293 Safari/6531.22.7"
 
 [DeviceAtlas](https://deviceatlas.com/) 与 WURFL 遵循相同的理念：它让你访问一个巨大的移动设备数据库，输出你关于这些设备的任何类型的信息。
 
-DeviceAtlas 提供[多种编程语言](https://deviceatlas.com/resources) 版本，例如 Java、PHP、NET、Python、Ruby 和 JavaScript，并且也可以通过 [REST API](https://deviceatlas.com/resources/rest-api) 直接访问。
-
-
-
-
+DeviceAtlas 提供[多种编程语言](https://deviceatlas.com/resources) 版本，例如 Java、PHP、.NET、Python、Ruby 和 JavaScript，并且也可以通过 [REST API](https://deviceatlas.com/resources/rest-api) 直接访问。
 
 提供带有 API 密钥的试用版本，或者你可以退回到产品的免费云端版本。该版本仅带有设备检测客户端，每月检测次数有限制，且仅支持一个网站。企业版（提供本地版本）提供对运营商识别的无限制访问，并提供[设备属性列表](https://deviceatlas.com/resources/available-properties)，这些属性在云端版本是受限的。
 
@@ -3751,11 +3698,12 @@ $ -------------------------------------------------------------
 ```
 
 ### DeviceMap (免费)
-[DeviceMap](http://incubator.apache.org/devicemap/) 是 Apache 的一个开源项目。它的目标创建一个包含移动设备信息的数据仓库。与 WURFL 类似，数据也存储在 XML 中，但它根据设备特性、浏览器和供应商数据被分为几个不同的文件。
+
+[DeviceMap](http://incubator.apache.org/devicemap/) 是 Apache 的一个开源项目。它的目标是创建一个包含移动设备信息的数据仓库。与 WURFL 类似，数据也存储在 XML 中，但它根据设备特性、浏览器和供应商数据被分为几个不同的文件。
 
 DeviceMap 支持 Java、C#、VB.Net 和 JavaScript。提供了一个网页[演示](http://devicemap-vm.apache.org/browsermap/index.html)，让你快速了解可以从 DDR（设备数据库）中收集到什么类型的信息：
 
-```
+```xml
 <!-- DeviceDataSource.xml Snippet -->
 <device id="iPhone" parentId="genericApple">
     <property name="model" value="iPhone"/>
@@ -3768,6 +3716,7 @@ DeviceMap 支持 Java、C#、VB.Net 和 JavaScript。提供了一个网页[演�
 ```
 
 ### 创建你自己的 DDR
+
 如果你不想让别人为你提供设备信息，你可以创建自己的列表，并存储在你偏好的格式中，例如 XML、JSON 等。
 
 例如，在我参与过的一个项目中，我们将设备分为不同的“桶”——“笨”（dumb）”、“智能”（smart）和“触摸”（touch）。具有简单 WAP 浏览器的设备被归类为“笨”，具有 HTML 浏览器的高级设备被归类为“智能”，具有高级浏览器和触摸手势的设备被归类为“触摸”。我们使用这些桶通过根据用户代理字符串（见下一节）识别设备来区分移动设备。根据用户设备属于哪一个桶，我们不仅提供不同的设计，还提供了不同尺寸的图像。
@@ -3777,9 +3726,11 @@ DeviceMap 支持 Java、C#、VB.Net 和 JavaScript。提供了一个网页[演�
 然而，尽管这听起来是一个很棒的计划——与购买商业 DDR 访问相比，它简单且廉价——但你需要理解这种方法带来的挑战。一个主要问题是，你需要不断维护可用设备列表，这为你的任务列表增加了另一个负担，而且这种负担很容易被忽视。一种可能的解决方案是创建一个 `cron job`，从商业或开源 DDR 获取新的设备和用户代理字符串，以保持你的设备仓库实时更新。
 
 ## 设备检测
-为了利用从设备仓库中收集的信息，我们需要确定确底是哪些设备访问了我们的网站。可以通过几种设备检测方法来实现。
+
+为了利用从设备仓库中收集的信息，我们需要确定到底是哪些设备访问了我们的网站。可以通过几种设备检测方法来实现。
 
 ### 快速盘点
+
 在开始对你的网站使用设备检测之前，我的建议是对你当前的用户及其设备进行快速盘点。你可以使用 Google Analytics 这样的工具获取这些数据。
 
 例如，在我的个人网站 (bbinto.me) 上使用 Analytics 显示，在 10 月，我有 23 个不同的设备访问了我的网站，共有 72 种不同的屏幕分辨率。
@@ -3789,34 +3740,30 @@ DeviceMap 支持 Java、C#、VB.Net 和 JavaScript。提供了一个网页[演�
 现在，让我们看看如何检测用户的设备。
 
 ### 标识符：HTTP Header
+
 HTTP 头部（当浏览器请求内容时发送）是设备检测的基础。最有趣且实用的头部是 `user-agent` 字符串。使用用户代理字符串检测设备被称为“用户代理嗅探”（user agent sniffing）。你可以使用默认的 Firefox 开发者工具来显示和修改用户代理字符串，如图 10.1 所示
 
 ![Firefox developer tools' Network Panel view with HTTP headers](img/10-http-header-firefox.png)
 
-图 10.1. *Firefox 开发者工具带有 HTTP 头部的网络面板视图*
+图 10.1. Firefox 开发者工具带有 HTTP 头部的网络面板视图
 
 通过用户代理字符串，你可以获取浏览器版本、操作系统和设备。
 
 以下是一些常用设备及其用户代理字符串的示例：
 
-*   iPhone 6  Safari:
+*   iPhone 6 Safari:
     ```
-    Mozilla/5.0 (iPhone; CPU iPhone OS 6_1_3 like Mac OS X) AppleWeb
-    Kit/536.26 (KHTML, like Gecko) Version/6.0 Mobile/10B329 Safari
-    /8536.25
+    Mozilla/5.0 (iPhone; CPU iPhone OS 6_1_3 like Mac OS X) AppleWebKit/536.26 (KHTML, like Gecko) Version/6.0 Mobile/10B329 Safari/8536.25
     ```
 
-*   iPad  Safari:
+*   iPad Safari:
     ```
-    Mozilla/5.0 (iPad; CPU OS 7_0 like Mac OS X) AppleWebKit/537.51.1
-    (KHTML, like Gecko) CriOS/30.0.1599.12 Mobile/11A465 Safari
-    8536.25 (3B92C18B-D9DE-4CB7-A02A-22FD2AF17C8F)
+    Mozilla/5.0 (iPad; CPU OS 7_0 like Mac OS X) AppleWebKit/537.51.1 (KHTML, like Gecko) CriOS/30.0.1599.12 Mobile/11A465 Safari 8536.25 (3B92C18B-D9DE-4CB7-A02A-22FD2AF17C8F)
     ```
 
-*   Galaxy Nexus  Chrome:
+*   Galaxy Nexus Chrome:
     ```
-    Mozilla/5.0 (Linux; Android 4.1.1; Galaxy Nexus Build/JRO03O)
-    AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.166 Mobile Safari/535.19
+    Mozilla/5.0 (Linux; Android 4.1.1; Galaxy Nexus Build/JRO03O) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.166 Mobile Safari/535.19
     ```
 
 设备检测背后的基本思想是将访问者浏览器的传入用户代理字符串与你维护的列表进行比较。使用你偏好的 DDR——无论是 WURFL、DeviceAtlas、DeviceMap 还是你自己的过滤器——你就可以开始根据设备特性定制用户体验。设备检测最大的优势是内容变得具有上下文感知性。我们可以根据设备的功能和能力为用户提供不同的内容。
@@ -3825,16 +3772,12 @@ HTTP 头部（当浏览器请求内容时发送）是设备检测的基础。最
 
 *   **服务端（Server-side）**：检测在服务器上进行，在内容进入浏览器之前决定向客户端提供什么内容。
 *   **CDN**：检测在 CDN 层级进行，而无需返回源服务器获取内容。
-*   *客户端（Client-side）*：检测在浏览器接收到内容后执行。到那时，可能已经提供了不必要的内容。
-*   *客户端提示（Client Hints）*：这种方法尚未完全支持，但它是为不同设备提供正确内容和功能最有前景且最高效的方法。它是客户端和服务器端解决方案的混合体。
+*   **客户端（Client-side）**：检测在浏览器接收到内容后执行。到那时，可能已经提供了不必要的内容。
+*   **客户端提示（Client Hints）**：这种方法尚未完全支持，但它是为不同设备提供正确内容和功能最有前景且最高效的方法。它是客户端和服务器端解决方案的混合体。
 
+网络社区对于在构建高性能（移动端）网站或 Web 应用程序时采用何种方法存在多种讨论。一方面，有一种观点是先将所有所需内容发送到浏览器，然后让客户端决定显示哪些内容。这种方法的优势是，一旦所有内容都到达客户端，浏览网站的速度会更快，因为所有必要的资产已经通过网络传输完成。另一方面，你也可以让服务器在发送内容到客户端 `之前` 就决定显示哪些内容——在首次加载时仅提供绝对必要的资产。这改进了首字节时间（TTFB）和初始加载时间，随后根据需要获取更多资产。可以使用服务器端编程语言如 `PHP`、`Perl`、`ASP.NET`、`Java`、`Python`甚至是位于 `CDN` 上的 `Edge Side Includes`（边缘包含）来检测用户的设备。
 
-
-
-
-网络社区对于在构建高性能（移动端）网站或 Web 应用程序时采用何种方法存在多种讨论。一方面，有一种观点是先将所有所需内容发送到浏览器，然后让客户端决定显示哪些内容。这种方法的优势是，一旦所有内容都到达客户端端，浏览网站的速度会更快，因为所有必要的资产已经通过网络传输完成。另一方面，你也可以让服务器在发送内容到客户端 `之前` 就决定显示哪些内容——在首次加载时仅提供绝对必要的资产。这改进了首字节时间（TTFB）和初始加载时间，随后根据需要获取更多资产。可以使用服务器端编程语言如 `PHP`、`Perl`、`ASP.NET`、`Java`、`Python`甚至是位于 `CDN` 上的 `Edge Side Includes`（边缘包含）来检测用户的设备。
-
-我的建议是，如果你可以在服务器端进行设备检测，请选择这种方法而不是客户端检测。页面到达后，你让浏览器执行的任何操作都会消耗电时间和数据。
+我的建议是，如果你可以在服务器端进行设备检测，请选择这种方法而不是客户端检测。页面到达后，你让浏览器执行的任何操作都会消耗时间和数据。
 
 以下是一些用于服务器端设备检测的实用工具：
 
@@ -3848,7 +3791,7 @@ HTTP 头部（当浏览器请求内容时发送）是设备检测的基础。最
 
 如果你熟悉 [Server Side Includes](http://en.wikipedia.org/wiki/Server_Side_Includes) (`SSI`) 和 `XML/XSLT`，那么理解 `ESI` 将没有问题。它支持基于 `HTTP request attributes` 访问变量。例如，你可以轻松检查 `HTTP_HEADER` 中的任何字段，因此也可以检查 `HTTP_USER_AGENT` 属性。
 
-`ESI` 还可以通过 `include` 命令包含额外内容的片段。为了使这种功能更强大，`ESI` 支持条件处理，这意味着可以根据如用户代理字符串等特定条件应用逻辑，通过 `include` 执行特定内容。例如，你可以仅为支持 GPS 的设备包含地图，或仅在桌面级设备上显示大视频。所有这些都由边缘服务器（即离用户用户的服务器）完成。用户永远不会接收到他们不应该接收的内容，也不会传输任何不需要的数据。此外，在处理 `ESI` 时，不需要返回源站进行处理，从而减轻了源站的负载。
+`ESI` 还可以通过 `include` 命令包含额外内容的片段。为了使这种功能更强大，`ESI` 支持条件处理，这意味着可以根据如用户代理字符串等特定条件应用逻辑，通过 `include` 执行特定内容。例如，你可以仅为支持 GPS 的设备包含地图，或仅在桌面级设备上显示大视频。所有这些都由边缘服务器（即离用户最近的服务器）完成。用户永远不会接收到他们不应该接收的内容，也不会传输任何不需要的数据。此外，在处理 `ESI` 时，不需要返回源站进行处理，从而减轻了源站的负载。
 
 你可以通过给 `ESI` 变量赋值正则表达式来创建设备列表，并使用它来检测用户代理字符串（user-agent strings），如下所示：
 
@@ -3857,21 +3800,23 @@ HTTP 头部（当浏览器请求内容时发送）是设备检测的基础。最
 <esi:assign name="tablet" value="'(iPad|Nexus 10|PlayBook|Xoom|hp-tablet|Dell Streak)'"/>
 ```
 
-你可以使用 `WURFL` 或任何其他设备目录，根据最新的设备和你定义的标准来自动填充此变量。
+
+
+你可以使用`WURFL`或任何其他设备目录，根据最新的设备和你定义的标准来自动填充此变量。
 
 ## 客户端选项
 
-客户端设备检测在客户端执行，因此处理的是已经送达的内容。如果你决定使用客户端方法，可以通过在 `JavaScript` 中请求 `navigator.userAgent` 的值来检测用户代理字符串。
+客户端设备检测在客户端执行，因此处理的是已经送达的内容。如果你决定使用客户端方法，可以通过在`JavaScript`中请求`navigator.userAgent`的值来检测用户代理字符串。
 
-Detect Mobile Browsers 提供了客户端选项。[Device.js](https://github.com/matthewhudson/device.js/) 是另一个轻量（3KB）且可靠的 `JavaScript` 设备检测解决方案，并基于此针对用户体验。
+Detect Mobile Browsers 提供了客户端选项。[Device.js](https://github.com/matthewhudson/device.js/)是另一个轻量（3KB）且可靠的`JavaScript`设备检测解决方案，并基于此针对用户体验。
 
 ## Client Hints（客户端提示）
 
-到目前讨论的大多数解决方案都有代价：你要么必须使用你的 Web 服务器（可能依赖商业 DDR），利用你的 `CDN` 的设备检测功能，或者（如果两者都无法实现）使用客户端选项来完成繁重工作。
+到目前讨论的大多数解决方案都有代价：你要么必须使用你的Web服务器（可能依赖商业DDR），利用你的`CDN`的设备检测功能，或者（如果两者都无法实现）使用客户端选项来完成繁重工作。
 
-[Client Hints](https://github.com/igrigorik/http-client-hints) 将在近期推出，提供一种混合客户端/服务器端解决方案。但它将如何工作呢？存储在 `HTTP header` 中的用户代理信息将由 `Client Hints` 用于为该特定客户端加载资源做出决策。用户代理为服务器提供了关于其能力的提示，因此不会被要求加载它不需要的资源——由于逻辑在服务器上执行，从而减少了开销。
+[Client Hints](https://github.com/igrigorik/http-client-hints)将在近期推出，提供一种混合客户端/服务器端解决方案。但它将如何工作呢？存储在`HTTP header`中的用户代理信息将由`Client Hints`用于为该特定客户端加载资源做出决策。用户代理为服务器提供了关于其能力的提示，因此不会被要求加载它不需要的资源——由于逻辑在服务器上执行，从而减少了开销。
 
-`Client Hints` 的当前实现状态指出，`IE` 正在[考虑](https://status.modern.ie/httpclienthints?term=client%20hints)实现，而 Mozilla 已对此提交了[错误报告](https://bugzilla.mozilla.org/show_bug.cgi?id=935216)。[整个草案](https://tools.ietf.org/html/draft-grigorik-http-client-hints-02) 可以在 `IETF` 网站上找到。
+`Client Hints`的当前实现状态指出，`IE`正在[考虑](https://status.modern.ie/httpclienthints?term=client%20hints)实现，而Mozilla已对此提交了[错误报告](https://bugzilla.mozilla.org/show_bug.cgi?id=935216)。[整个草案](https://tools.ietf.org/html/draft-grigorik-http-client-hints-02)可以在`IETF`网站上找到。
 
 ## 用户代理嗅探的缺点
 
@@ -3884,7 +3829,7 @@ Detect Mobile Browsers 提供了客户端选项。[Device.js](https://github.com
 
 ## 设备测试
 
-如今，仅仅在各种桌面浏览器（如 `Chrome`、`Safari`、`Firefox`、`Opera` 或 `Internet Explorer`）上测试你的网站是不够的。多设备的宏环境给我们带来了更多挑战——具有不同能力、不同屏幕尺寸和多种连接速度的设备。我们现在构建网站时必须考虑这些挑战。如果你在较大的公司工作，可能足够幸运，可以使用拥有许多不同设备的设备实验室。如果没有，我将分享一些关于如何在系列设备上对你的网站进行测试的技巧。
+如今，仅仅在各种桌面浏览器（如`Chrome`、`Safari`、`Firefox`、`Opera`或`Internet Explorer`）上测试你的网站是不够的。多设备的宏环境给我们带来了更多挑战——具有不同能力、不同屏幕尺寸和多种连接速度的设备。我们现在构建网站时必须考虑这些挑战。如果你在较大的公司工作，可能足够幸运，可以使用拥有许多不同设备的设备实验室。如果没有，我将分享一些关于如何在系列设备上对你的网站进行测试的技巧。
 
 测试世界上每一个设备或每个屏幕尺寸几乎是不可能的。你可以利用之前创建的设备清单来帮助你设定要支持的基准。如果你目前没有使用分析或追踪工具，现在是采取行动的时候了。它提供的数据对于优化你的性能非常有帮助。
 
@@ -3894,27 +3839,23 @@ Detect Mobile Browsers 提供了客户端选项。[Device.js](https://github.com
 
 你可以使用各种模拟器在不同设备上模拟你的网页。以下是精选：
 
-* [User Agent Switcher](http://chrispederick.com/work/user-agent-switcher/) 是一个浏览器扩展，可以模拟不同的用户代理字符串，从而帮助现场调试各种问题。将用户代理切换到移动设备将帮助你模拟网站在移动浏览器上的外观。还有其他用于模拟不同用户代理的浏览器扩展。最新版本的 `Chrome` 内置了用户代理切换器。
-* [BrowserStack](http://www.browserstack.com/) 是一个商业在线工具，如果你负担不起建立物理实验室，它非常方便。你可以在许多不同的浏览器上测试你的网站，并使用内置的便捷开发工具调试 HTML、CSS 和 JavaScript。
-
-
-
-
+* [User Agent Switcher](http://chrispederick.com/work/user-agent-switcher/)是一个浏览器扩展，可以模拟不同的用户代理字符串，从而帮助现场调试各种问题。将用户代理切换到移动设备将帮助你模拟网站在移动浏览器上的外观。还有其他用于模拟不同用户代理的浏览器扩展。最新版本的`Chrome`内置了用户代理切换器。
+* [BrowserStack](http://www.browserstack.com/)是一个商业在线工具，如果你负担不起建立物理实验室，它非常方便。你可以在许多不同的浏览器上测试你的网站，并使用内置的便捷开发工具调试HTML、CSS和JavaScript。
 
 # 介绍
 
-*   [WebPagetest](http://webpagetest.org) 是解决所有性能相关问题的“万灵药”。根据你选择的测试位置，你可以选择多种设备和浏览器选项之一。显然，你一次只能测试网站的一个页面，但有时这足够了。合成的 WPT 结果将帮助你了解网站在移动设备上的性能表现。然而，你可能不会用它来调试，因为它是静态的，且不允许用户交互。
+*   [WebPagetest](http://webpagetest.org)是解决所有性能相关问题的“万灵药”。根据你选择的测试位置，你可以选择多种设备和浏览器选项之一。显然，你一次只能测试网站的一个页面，但有时这足够了。合成的WPT结果将帮助你了解网站在移动设备上的性能表现。然而，你可能不会用它来调试，因为它是静态的，且不允许用户交互。
 
-要模拟不同的连接速度，你可以使用 Chrome 开发者工具、[Slowy](http://slowyapp.com/) 或 [Wireshark](https://www.wireshark.org/)。
+要模拟不同的连接速度，你可以使用Chrome开发者工具、[Slowy](http://slowyapp.com/)或[Wireshark](https://www.wireshark.org/)。
 
 ## 设备测试
 
-如果你能够建立一个真实设备的实验室（就像 [Etsy 所做](https://codeascraft.com/2013/08/09/mobile-device-lab/)），以下工具可以帮助你在这些设备上简化测试：
+如果你能够建立一个真实设备的实验室（就像[Etsy所做](https://codeascraft.com/2013/08/09/mobile-device-lab/)），以下工具可以帮助你在这些设备上简化测试：
 
-*   [Adobe Edge Inspect](https://creative.adobe.com/products/inspect) 通过将你的测试设备与电脑配对，帮助你在多个浏览器上实时测试你的网站。
-*   [Shim](https://github.com/dmolsen/shim) 作为 Node.js 运行，与 Adobe Edge Inspect 类似，能够在一个连接到同一 WiFi 网络的多个设备上同时加载页面。
+*   [Adobe Edge Inspect](https://creative.adobe.com/products/inspect)通过将你的测试设备与电脑配对，帮助你在多个浏览器上实时测试你的网站。
+*   [Shim](https://github.com/dmolsen/shim)作为Node.js运行，与Adobe Edge Inspect类似，能够在一个连接到同一WiFi网络的多个设备上同时加载页面。
 
-### 提示：模拟器 vs 真实设备测试
+### 提示：模拟器vs真实设备测试
 
 在真实设备上测试始终比在模拟器上更好，尤其是当你有意识地决定支持特定的浏览器和设备操作系统时。例如，模拟器无法提供电量消耗、连接速度或性能的真实模拟，而且无法通过鼠标模拟触摸屏体验。因此，虽然它们对于简单的测试目的很方便，但不要过度依赖它们。当然，你必须在这种考虑与测试一系列不同设备的成本和物流成本之间取得平衡。
 
@@ -3923,14 +3864,14 @@ Detect Mobile Browsers 提供了客户端选项。[Device.js](https://github.com
 *   移动端使用率正在上升，通过移动设备浏览很快将超过桌面浏览。
 *   移动端面临的特殊挑战是速度、电池寿命和功耗。开发移动网站时，请假设用户的连接是最糟糕的。
 *   设备描述存储库是定期更新的市面设备列表，可用于识别连接到你网站的设备。
-*   你可以通过 HTTP user agent 字符串头（通过服务器端或客户端解决方案）检测设备。
+*   你可以通过HTTP user agent字符串头（通过服务器端或客户端解决方案）检测设备。
 *   有一些非常有用的工具可以在移动设备上测试（或模拟）你的网站。
 
 * * *
 
-[^([6])](#ch10.html_d5e4059) 来源：Ilya Grigorik 的《High Performance Browser Networking》
+[^([6])](#ch10.html_d5e4059)来源：Ilya Grigorik的《High Performance Browser Networking》
 
-# 第 11 章：移动优化技术
+# 第11章：移动优化技术
 
 ## 热身
 
@@ -3942,289 +3883,332 @@ Detect Mobile Browsers 提供了客户端选项。[Device.js](https://github.com
 
 ### 离线存储
 
-HTML5 引入了[离线存储](http://www.html5rocks.com/en/features/storage)，使得浏览器能够存储网页副本，从而允许用户在离线状态下浏览页面。离线存储可以通过消除从服务器重新获取资源的需求来帮助节省不必要的 HTTP 请求。重要的是，在本书的背景下，离线存储也有助于提高*感知*性能。
+HTML5引入了[离线存储](http://www.html5rocks.com/en/features/storage)，使得浏览器能够存储网页副本，从而允许用户在离线状态下浏览页面。离线存储可以通过消除从服务器重新获取资源的需求来帮助节省不必要的HTTP请求。重要的是，在本书的背景下，离线存储也有助于提高*感知*性能。
 
-虽然离线存储可能有些[漏洞](http://alistapart.com/article/application-cache-is-a-douchebag)，而且有时在实现和管理上很复杂，但有一些 Web 应用——例如 [金融时报 Web 应用](http://apps.ft.com/ftwebapp/) 或 [Google 的基于 Web 的离线邮箱](http://googlecode.blogspot.com/2009/04/gmail-for-mobile-html5-series-using.html) 版本——已经展示了如何成功使用它进行性能增强。想象你正在火车上，想在进入隧道前读完一篇新闻。如果网站支持离线存储，你就可以持续阅读而不中断。
+虽然离线存储可能有些[漏洞](http://alistapart.com/article/application-cache-is-a-douchebag)，而且有时在实现和管理上很复杂，但有一些Web应用——例如[金融时报Web应用](http://apps.ft.com/ftwebapp/)或[Google的基于Web的离线邮箱](http://googlecode.blogspot.com/2009/04/gmail-for-mobile-html5-series-using.html)版本——已经展示了如何成功使用它进行性能增强。想象你正在火车上，想在进入隧道前读完一篇新闻。如果网站支持离线存储，你就可以持续阅读而不中断。
 
-离线浏览可以通过“应用程序缓存”（通常缩写为“appcache”）或“本地存储”（local storage）来实现，这两者都有助于避免 HTTP 请求，因为它们在本地缓存并保存文件。
+离线浏览可以通过“应用程序缓存”（通常缩写为“appcache”）或“本地存储”（local storage）来实现，这两者都有助于避免HTTP请求，因为它们在本地缓存并保存文件。
 
-`[Appcache](https://developer.mozilla.org/en-US/docs/Web/HTML/Using_the_application_cache)` 允许你指定浏览器应该缓存哪些文件并提供给离线用户。它基于 `manifest file`，该文件告诉浏览器从本地缓存加载哪些内容，哪些文件需要重新请求。然而，你需要考虑哪些文件应该保存在本地。由于 appcache 在某些浏览器中仍然不可靠，最好遵循 [FT Labs](http://www.smashingmagazine.com/2013/05/23/building-the-new-financial-times-web-app-a-case-study/) 团队的建议，保持 manifest 文件尽可能小，只包含较小文件，如字体、favicon 和少量图像。
+`[Appcache](https://developer.mozilla.org/en-US/docs/Web/HTML/Using_the_application_cache)`允许你指定浏览器应该缓存哪些文件并提供给离线用户。它基于`manifest file`，该文件告诉浏览器从本地缓存加载哪些内容，哪些文件需要重新请求。然而，你需要考虑哪些文件应该保存在本地。由于appcache在某些浏览器中仍然不可靠，最好遵循[FT Labs](http://www.smashingmagazine.com/2013/05/23/building-the-new-financial-times-web-app-a-case-study/)团队的建议，保持manifest文件尽可能小，只包含较小文件，如字体、favicon和少量图像。
 
-`[Local storage](http://diveintohtml5.info/storage.html)` 也被称为“客户端存储”或“Web 存储”。它像任何 JavaScript 对象一样基于键值对。你可以在本地存储中存储 JavaScript 或 CSS 代码块，并在随后的页面查看中检索这些代码块并将其插入页面中，从而减小 HTML 文档的下载尺寸，并加快初始渲染时间（Start Render time）。
+`[Local storage](http://diveintohtml5.info/storage.html)`也被称为“客户端存储”或“Web存储”。它像任何JavaScript对象一样基于键值对。你可以在本地存储中存储JavaScript或CSS代码块，并在随后的页面查看中检索这些代码块并将其插入页面中，从而减小HTML文档的下载尺寸，并加快初始渲染时间（Start Render time）。
 
-[Guardian](http://www.theguardian.com/) 网站展示了如何使用本地存储来提升性能的示例。它包含在访问者浏览器支持本地存储时执行的 JavaScript。CSS 文件通过 Ajax 异步加载。在第一次运行时，CSS 是内联的，但也存储在浏览器的本地存储中。下当用户访问该页面或 Guardian 网站上的任何后续页面时，服务器将不再加载内联 CSS，而是使用本地存储版本，从而更快地为用户提供页面。通过这种方法，Guardian 能够将其初始渲染时间从 [1.113s 降至 0.759s](https://speakerd.s3.amazonaws.com/presentations/ca037050b8d40131e4494251e58a135f/Breaking_news_at_1000ms_-_4-3_-_pdf.pdf)。
+[Guardian](http://www.theguardian.com/)网站展示了如何使用本地存储来提升性能的示例。它包含在访问者浏览器支持本地存储时执行的JavaScript。CSS文件通过Ajax异步加载。在第一次运行时，CSS是内联的，但也存储在浏览器的本地存储中。下当用户访问该页面或Guardian网站上的任何后续页面时，服务器将不再加载内联CSS，而是使用本地存储版本，从而更快地为用户提供页面。通过这种方法，Guardian能够将其初始渲染时间从[1.113s降至0.759s](https://speakerd.s3.amazonaws.com/presentations/ca037050b8d40131e4494251e58a135f/Breaking_news_at_1000ms_-_4-3_-_pdf.pdf)。
 
 ### 提示：存储局限性
 
-如果你计划存储大量数据，请注意大多数移动浏览器在本地存储中无法存储超过约 5MB 的数据。
+如果你计划存储大量数据，请注意大多数移动浏览器在本地存储中无法存储超过约5MB的数据。
 
-你可以使用的其他本地存储技术包括 [Web SQL Database](http://www.w3.org/TR/webdatabase/)（已弃用）、[IndexedDB](http://www.w3.org/TR/IndexedDB/) 和 [File System API](http://www.w3.org/TR/file-system-api/)。如果你想存储大量内容，应该考虑使用结构化数据库而不是本地存储，因为本地存储在执行多次操作时可能会慢。此外，本地存储是同步执行的，而数据库选项是异步的，允许你并行获取数据，从而避免阻塞移动应用程序的执行。
+你可以使用的其他本地存储技术包括[Web SQL Database](http://www.w3.org/TR/webdatabase/)（已弃用）、[IndexedDB](http://www.w3.org/TR/IndexedDB/)和[File System API](http://www.w3.org/TR/file-system-api/)。如果你想存储大量内容，应该考虑使用结构化数据库而不是本地存储，因为本地存储在执行多次操作时可能会慢。此外，本地存储是同步执行的，而数据库选项是异步的，允许你并行获取数据，从而避免阻塞移动应用程序的执行。
 
 ### 其他针对移动端的优化建议
 
-我们在第 5 章、第 6 章和第 7 章中讨论的所有性能加速器对移动网站都有帮助。但正如我们在第 10 章中所讨论的，移动网络更高的延迟以及移动设备性能较弱的 CPU/GPU（导致 JavaScript 性能较慢）都为移动设备的 Web 性能带来了特殊挑战。让我们来看一些针对移动限制优化你网站的技巧。
+我们在第5章、第6章和第7章中讨论的所有性能加速器对移动网站都有帮助。但正如我们在第10章中所讨论的，移动网络更高的延迟以及移动设备性能较弱的CPU/GPU（导致JavaScript性能较慢）都为移动设备的Web性能带来了特殊挑战。让我们来看一些针对移动限制优化你网站的技巧。
 
 #### 应对移动延迟
-
-
-
-
 
 不要让移动设备的无线电频繁地在空闲模式和活动模式之间切换，以避免不必要的往返。在空闲状态下，设备无法发送或接收任何数据。要发送和接收数据，无线电必须与附近的基塔同步，这需要移动设备与基塔之间进行多次往返。因此，在空闲和非空闲状态之间切换不仅会消耗电池寿命，还会引入更多延迟，从而影响性能。
 
 因此，尝试尽可能快地单批次执行所有请求，然后让无线电返回空闲状态。尝试在无线电已经启动时使用它——例如，使用我们之前讨论过的预取技术。
 
-此外，通过尽可能减少 HTTP 请求来对抗移动端的延迟，并压缩和缓存资源以规避进一步的请求或往返。
+此外，通过尽可能减少HTTP请求来对抗移动端的延迟，并压缩和缓存资源以规避进一步的请求或往返。
 
 ### 注意：域名分片（Domain Sharding）
 
-[域名分片](http://www.stevesouders.com/blog/2009/05/12/sharding-dominant-domains/) 的理念是将资产分布在多个域名或子域名上，以便更快地为用户提供服务。浏览器可以开启六个并发连接，允许你的资产分布在六个不同的域名上并进行并行下载。然而，不要被这种方法误骗。特别对于移动网站，使用不同的域名意味着会有额外的 DNS 查询和必须打开的额外 TCP 连接。如果你使用[两个以上的域名](http://www.stevesouders.com/blog/2013/09/05/domain-sharding-revisited/)，性能将会受到损害，特别是当移动用户没有足够的带宽来处理来自服务器的大量资源时。
+[域名分片](http://www.stevesouders.com/blog/2009/05/12/sharding-dominant-domains/)的理念是将资产分布在多个域名或子域名上，以便更快地为用户提供服务。浏览器可以开启六个并发连接，允许你的资产分布在六个不同的域名上并进行并行下载。然而，不要被这种方法误骗。特别对于移动网站，使用不同的域名意味着会有额外的DNS查询和必须打开的额外TCP连接。如果你使用[两个以上的域名](http://www.stevesouders.com/blog/2013/09/05/domain-sharding-revisited/)，性能将会受到损害，特别是当移动用户没有足够的带宽来处理来自服务器的大量资源时。
 
 ### 优化重绘（Repaints）和重流（Reflows）
 
-JavaScript 的执行在移动设备上可能速度较慢，因此请尽可能避免重绘和重流操作，并避免过多的 DOM 操作。第 5 章提供了关于如何增强重绘和重流的更多细节。
+JavaScript的执行在移动设备上可能速度较慢，因此请尽可能避免重绘和重流操作，并避免过多的DOM操作。第5章提供了关于如何增强重绘和重流的更多细节。
 
 ### 无卡顿滚动和动画
 
-如今大多数移动设备使用触摸手势，通过手指进行滚动。手指手势可以轻松快速滚动页面。正如第 5 章所述的，理想情况下动画应以每秒 60 帧的速度运行以获得流畅的结果。然而，由于移动端 CPU/GPU 的限制，处理动画可能需要几百毫秒。在此期间，动画可能会变得极其“卡顿（janky）”，特别是在快速滚动时。
+如今大多数移动设备使用触摸手势，通过手指进行滚动。手指手势可以轻松快速滚动页面。正如第5章所述的，理想情况下动画应以每秒60帧的速度运行以获得流畅的结果。然而，由于移动端CPU/GPU的限制，处理动画可能需要几百毫秒。在此期间，动画可能会变得极其“卡顿（janky）”，特别是在快速滚动时。
 
-为了在移动设备上产生平滑的动画，我建议使用 `requestAnimationFrame()`（在第 6 章 中讨论）。通过这种方式你可以节省 CPU 周期，让动画与 GPU 同步更好。这有助于保护用户的电池寿命。
+为了在移动设备上产生平滑的动画，我建议使用`requestAnimationFrame()`（在第6章中讨论）。通过这种方式你可以节省CPU周期，让动画与GPU同步更好。这有助于保护用户的电池寿命。
 
 ## 内容呈现
 
-以下章节概述了向移动用户提供内容的种不同方法：专用移动端（“mdot”）站点；单 URL 响应式站点；以及 RESS 站点（一种混合模式）。
+以下章节概述了向移动用户提供内容的种不同方法：专用移动端（“mdot”）站点；单URL响应式站点；以及RESS站点（一种混合模式）。
 
 首先，我将解释它们是什么以及如何设置。然后，我将对这些方法进行比较，帮助你决定哪种能为你的网站实现最佳性能结果。
 
-### 专用移动网站，或 mdot 
+### 专用移动网站，或mdot
 
-`mdot` 网站是专门为移动设备设计的网站独立版本。它的名称源于此类网站使用的典型 URL 方案，例如 m.example.com。
+`mdot`网站是专门为移动设备设计的网站独立版本。它的名称源于此类网站使用的典型URL方案，例如m.example.com。
 
-mdot 方法的主要优势是内容自适应。在向用户发送站点内容之前，服务器会检测请求的设备类型，并自动从桌面端重定向到 mdot 站点。不会向用户发送沉重的桌面特定内容（如大图）。内容是专门为移动设备进行组织和呈现的。
+mdot方法的主要优势是内容自适应。在向用户发送站点内容之前，服务器会检测请求的设备类型，并自动从桌面端重定向到mdot站点。不会向用户发送沉重的桌面特定内容（如大图）。内容是专门为移动设备进行组织和呈现的。
 
-然而，通过包含重定向，你增加了一个需要处理的额外 DNS 查询，这可能会增加整体页面加载时间。此外，由于是一个独立的网站，维护、设计和保持两个版本同步的精力也需要被考虑和规划。
+然而，通过包含重定向，你增加了一个需要处理的额外DNS查询，这可能会增加整体页面加载时间。此外，由于是一个独立的网站，维护、设计和保持两个版本同步的精力也需要被考虑和规划。
 
-如果你决定使用 mdot 站点，请确保在页面的 `head` 中正确添加代码，帮助像 Google 这样的搜索引擎理解向访问者发送哪个版本的站点。对于桌面版本，在 `head` 中放入此内容：
+如果你决定使用mdot站点，请确保在页面的`head`中正确添加代码，帮助像Google这样的搜索引擎理解向访问者发送哪个版本的站点。对于桌面版本，在`head`中放入此内容：
 
 ```
+
 <link rel="alternate" media="only screen and (max-width: 640px)"
+
     href="http://m.example.com/hello">
-```
-
-对于对应的移动站点，在 `head` 中放入此内容：
 
 ```
+
+对于对应的移动站点，在`head`中放入此内容：
+
+```
+
 <link rel="canonical" href="http://www.example.com/hello">
+
 ```
 
 ### 重定向
 
-在用户重定向到网站的移动版本之前，你需要正确检测他们的设备。重定向是 mdot 网站流程的一部分，用户只需要知道你网站的主（非 mdot）URL。一旦输入浏览器，服务器将根据其设备将用户引导至相应的站点。考虑 URL 命名规范至关重要。通过拥有清晰、结构化的 URL 层级结构，你将更容易在相应的网站之间进行映射映射——例如，example.com/section1 可以对应 m.example.com/section1 或 example.com/m/section1。
+在用户重定向到网站的移动版本之前，你需要正确检测他们的设备。重定向是mdot网站流程的一部分，用户只需要知道你网站的主（非mdot）URL。一旦输入浏览器，服务器将根据其设备将用户引导至相应的站点。考虑URL命名规范至关重要。通过拥有清晰、结构化的URL层级结构，你将更容易在相应的网站之间进行映射映射——例如，example.com/section1可以对应m.example.com/section1或example.com/m/section1。
 
 ### 提示：跳过重定向
 
 避免用户在通过移动端访问网站时反复经历重定向。你可以通过鼓励用户将移动版本书签（无论是作为普通书签，还是将其添加到主屏幕）来缓解重定向延迟。
 
-在讨论重定向技术之前，让我们来看一些使用 mdot 方法的网站真实示例，以及由于重定向导致的延迟。我通过 WPT 拍摄了移动设备上 LinkedIn（图 11.1）和 Facebook（图 11.1）的瀑布图截图，并使用 WPT 移动设备测试了桌面 URL：
+在讨论重定向技术之前，让我们来看一些使用mdot方法的网站真实示例，以及由于重定向导致的延迟。我通过WPT拍摄了移动设备上LinkedIn（图11.1）和Facebook（图11.1）的瀑布图截图，并使用WPT移动设备测试了桌面URL：
 
-![移动端的 LinkedIn，从 linkedin.com 重定向到 touch.www.linkedin.com，仅重定向就浪费了 1.3 秒](img/11-redirect-linkedin.png)
+![移动端的LinkedIn，从linkedin.com重定向到touch.www.linkedin.com，仅重定向就浪费了1.3秒](img/11-redirect-linkedin.png)
 
-图 11.1. [LinkedIn](http://www.webpagetest.org/result/141102_GK_F1K/) 在移动设备上，从 linkedin.com 重定向到 touch.www.linkedin.com，仅重定向就浪费了 1.3 秒
+图11.1.[LinkedIn](http://www.webpagetest.org/result/141102_GK_F1K/)在移动设备上，从linkedin.com重定向到touch.www.linkedin.com，仅重定向就浪费了1.3秒
 
-![移动端的 Facebook，从 facebook.com 重定向到 m.facebook.com，仅两次重定向花费了约 3.6 秒](img/11-redirect-facebook.png)
+![移动端的Facebook，从facebook.com重定向到m.facebook.com，仅两次重定向花费了约3.6秒](img/11-redirect-facebook.png)
 
-图 11.2. [Facebook](http://www.webpagetest.org/result/141102_RS_F2Y/) 在移动设备上，从 facebook.com 重定向到 m.facebook.com，仅两次重定向花费了约 3.6 秒
+图11.2.[Facebook](http://www.webpagetest.org/result/141102_RS_F2Y/)在移动设备上，从facebook.com重定向到m.facebook.com，仅两次重定向花费了约3.6秒
 
-对于 Facebook 示例，用户在到达 mdot 站点之前需要跳过两个重定向关卡：
+对于Facebook示例，用户在到达mdot站点之前需要跳过两个重定向关卡：
 
-1. 第一次 1.1 秒的重定向是从 http:// 重定向到 https://
-2. 然后需要大约 2.5 秒重定向到 m.facebook.com
-3. 只有在约 3.6 秒后，用户才能到达预期目的地。
+1. 第一次1.1秒的重定向是从http://重定向到https://
+2. 然后需要大约2.5秒重定向到m.facebook.com
+3. 只有在约3.6秒后，用户才能到达预期目的地。
 
 ### 重定向方法
 
 引导用户进入合适位置有三种主要方法：
 
-*   **服务器端重定向：**可以通过简单的服务器重写规则实现。你可以告诉 Apache、Nginx、IIS 或其他 Web 服务器如何根据用户代理重定向用户。此外，还可以利用 PHP 等服务器端语言根据用户代理来处理重定向。
+*   **服务器端重定向：**可以通过简单的服务器重写规则实现。你可以告诉Apache、Nginx、IIS或其他Web服务器如何根据用户代理重定向用户。此外，还可以利用PHP等服务器端语言根据用户代理来处理重定向。
 
-
-
-
-
-*   **ESI 重定向：** 在脱离 CDN 网络运行时，ESI 重定向非常有用，并且可以根据用户代理字符串（user agent strings）进行设置。所有操作都在边缘端完成；用户永远不会获得他们不应该接收的内容。此外，在处理 ESI 时，无需返回源站进行处理，从而减轻了源站的负载。
-*   **客户端重定向：** 重定向通过客户端脚本（如 JavaScript）完成。在执行任何验证、选择或检测之前，整个页面都会被发送给用户。
+*   **ESI重定向：**在脱离CDN网络运行时，ESI重定向非常有用，并且可以根据用户代理字符串（user agent strings）进行设置。所有操作都在边缘端完成；用户永远不会获得他们不应该接收的内容。此外，在处理ESI时，无需返回源站进行处理，从而减轻了源站的负载。
+*   **客户端重定向：**重定向通过客户端脚本（如JavaScript）完成。在执行任何验证、选择或检测之前，整个页面都会被发送给用户。
 
 那么，你应该选择这些方法中的哪一种？
 
-通常情况下，服务器端重定向比客户端重定向快，因此如果在这两者之间进行选择，我建议侧重于服务器端解决方案。然而，如果你使用 CDN 且支持 ESI，我会认为这是首选方案，因为 ESI 重定向与普通的服务器端重定向相比，还有一个额外的优势：它发生在边缘端，比将重定向逻辑放在源站要速度快得多。
+通常情况下，服务器端重定向比客户端重定向快，因此如果在这两者之间进行选择，我建议侧重于服务器端解决方案。然而，如果你使用CDN且支持ESI，我会认为这是首选方案，因为ESI重定向与普通的服务器端重定向相比，还有一个额外的优势：它发生在边缘端，比将重定向逻辑放在源站要速度快得多。
 
-在我看来，客户端重定向是最不受青睐的方案，因为任何需要客户端去解决的问题（例如 JavaScript 执行）都会影响设备的性能、电池电量和 CPU 消耗。
+在我看来，客户端重定向是最不受青睐的方案，因为任何需要客户端去解决的问题（例如JavaScript执行）都会影响设备的性能、电池电量和CPU消耗。
 
 无论你选择哪种重定向方法，请记住不要限制用户仅查看网站的移动版。始终给他们提供覆盖重定向策略并查看完整网站的选择，因为人们不喜欢被强迫做事情！
 
 ### 响应式网站
 
-除了提供专门的 mdot 站点外，还有另一种完全不同的方法来针对移动设备优化网站。Google 的[移动端最佳实践](https://developers.google.com/webmasters/smartphone-sites/)建议网页开发者应该创建响应式网站。`响应式网页设计`（RWD）由 Ethan Marcotte 在 2010 年提出，其核心思想是为所有设备提供同一个相同的 HTML 页面。网站只有一个版本，但它针对不同的设备有不同的*样式（styled）*处理。RWD 依赖于 CSS3 媒体查询、流式网格和柔性图像。当浏览器窗口低于（或高于）某个定义的宽度时，媒体查询会提供专门针对的样式。媒体查询指定的转换点被称为`断点（breakpoints）`。
+除了提供专门的mdot站点外，还有另一种完全不同的方法来针对移动设备优化网站。Google的[移动端最佳实践](https://developers.google.com/webmasters/smartphone-sites/)建议网页开发者应该创建响应式网站。`响应式网页设计`（RWD）由EthanMarcotte在2010年提出，其核心思想是为所有设备提供同一个相同的HTML页面。网站只有一个版本，但它针对不同的设备有不同的*样式（styled）*处理。RWD依赖于CSS3媒体查询、流式网格和柔性图像。当浏览器窗口低于（或高于）某个定义的宽度时，媒体查询会提供专门针对的样式。媒体查询指定的转换点被称为`断点（breakpoints）`。
 
 为了让网站能够按照描述的方式进行转换，布局必须是灵活的。流式网格使用变量测量值（如百分比）而不是像素设计的，因此网格容器内的元素可以根据父容器的大小进行调整。图像也使用相对单位进行尺寸设置，以保持其灵活性并始终包含在父元素中。
 
-以下是使用媒体查询的一些示例。你既可以在 `link` 元素中使用 `media` 属性，也可以在样式表本身中使用 `@media`。
+以下是使用媒体查询的一些示例。你既可以在`link`元素中使用`media`属性，也可以在样式表本身中使用`@media`。
 
-*   通过媒体查询加载的外部样式表：在下面的示例中，`mobile.css` 将用于任何宽度低于 321px 的设备；竖屏模式下的任何设备将改用 `portrait.css`；当页面打印时将使用 `print.css`：
+*   通过媒体查询加载的外部样式表：在下面的示例中，`mobile.css`将用于任何宽度低于321px的设备；竖屏模式下的任何设备将改用`portrait.css`；当页面打印时将使用`print.css`：
 
 ```
+
 <link rel="stylesheet" media="(max-width: 320px)" href=
+
 "mobile.css">
+
 <link rel="stylesheet" media="(orientation: portrait)" href=
+
 "portrait.css">
+
 <link rel="stylesheet" media="print" href="print.css">
+
 ```
 
 #### 警告：潜在的性能成本
 
-这种技术伴随着性能成本。即使媒体查询返回假，大多数浏览器也会[下载所有](http://scottjehl.github.io/CSS-Download-Tests/) CSS 文件，如图 11.3 所示：
+这种技术伴随着性能成本。即使媒体查询返回假，大多数浏览器也会[下载所有](http://scottjehl.github.io/CSS-Download-Tests/)CSS文件，如图11.3所示：
 
-![无论用户实际匹配何种媒体，浏览器都会下载所有三个 CSS 文件](img/11-mediaquery-css.png)
+![无论用户实际匹配何种媒体，浏览器都会下载所有三个CSS文件](img/11-mediaquery-css.png)
 
-图 11.3。无论用户实际匹配何种媒体，浏览器都会下载所有三个 CSS 文件。
+图11.3。无论用户实际匹配何种媒体，浏览器都会下载所有三个CSS文件。
 
-与其浪费这些额外的 HTTP 请求，不如将样式放入一个 CSS 文件中，如下所示。如果你仍然希望在样式表中保持结构和分离，请在开发期间保留单独的文件，但在部署时合并为一个文件，以节省额外的 HTTP 请求。
+与其浪费这些额外的HTTP请求，不如将样式放入一个CSS文件中，如下所示。如果你仍然希望在样式表中保持结构和分离，请在开发期间保留单独的文件，但在部署时合并为一个文件，以节省额外的HTTP请求。
 
-*   这里是上述相同 `@media` 指令的示例，这次包含了样式表内部：
+*   这里是上述相同`@media`指令的示例，这次包含了样式表内部：
 
 ```
+
 @media (max-device-width: 320px) {
+
   /* 移动样式 */
+
 }
+
 @media (orientation: portrait) {
+
       /* 竖屏样式 */
+
 }
+
 @media print {
+
     /* 打印样式 */
+
 }
+
 ```
 
-[Guy Podjarny 的研究](http://www.guypo.com/real-world-rwd-performance-take-2/)显示，大多数响应式网站尚未关注网页性能：72% 使用响应式设计的网站没有针对移动端进行优化。在小屏幕设备上查看时，这些页面的权重与在大屏设备上查看的页面相同。尝试避免为了便利而牺牲性能，因为性能对于移动网站来说仍然是关键。
+[GuyPodjarny的研究](http://www.guypo.com/real-world-rwd-performance-take-2/)显示，大多数响应式网站尚未关注网页性能：72%使用响应式设计的网站没有针对移动端进行优化。在小屏幕设备上查看时，这些页面的权重与在大屏设备上查看的页面相同。尝试避免为了便利而牺牲性能，因为性能对于移动网站来说仍然是关键。
 
-总的来说，优化移动网站的性能似乎比优化 RWD 网站要容易。让我们比较一下响应式网页设计的优缺点。
+总的来说，优化移动网站的性能似乎比优化RWD网站要容易。让我们比较一下响应式网页设计的优缺点。
 
-#### RWD 优点
+#### RWD优点
 
-RWD 相比优于专门的 mdot 站点的优势包括：
+RWD相比优于专门的mdot站点的优势包括：
 
-*   **跨平台共享**：你是否收到过朋友分享的链接，但当你在笔记本电脑上打开它时，它打开的是移动版？有了 RWD，你只需要共享一个 URL，无需担心向用户显示哪个版本？（注：此处原文漏了一个问号）
-*   **搜索引擎优化（SEO）**：Google [指出](https://developers.google.com/webmasters/mobile-sites/mobile-seo/overview/select-config)响应式网页设计是其“推荐的设计模式”。响应式网站对所有设备只有一个 URL，且内容（通常）相同。因此，Google 爬取和索引你的内容的工作将变得更轻松。
+*   **跨平台共享**：你是否收到过朋友分享的链接，但当你在笔记本电脑上打开它时，它打开的是移动版？有了RWD，你只需要共享一个URL，无需担心向用户显示哪个版本？（注：此处原文漏了一个问号）
+*   **搜索引擎优化（SEO）**：Google[指出](https://developers.google.com/webmasters/mobile-sites/mobile-seo/overview/select-config)响应式网页设计是其“推荐的设计模式”。响应式网站对所有设备只有一个URL，且内容（通常）相同。因此，Google爬取和索引你的内容的工作将变得更轻松。
 *   **维护的代码库更少**：将工作整合到一个网络属性中带来了一些维护优势，一个代码库服务所有设备属性。
 
-#### RWD 缺点
+#### RWD缺点
 
-响应式网站可能不如 mdot 站点效率高，因为它们有时会向移动设备提供不需要的内容：
+响应式网站可能不如mdot站点效率高，因为它们有时会向移动设备提供不需要的内容：
 
-下载与 `display: none`
+下载与`display:none`
 
-对于较小的设备，并不是所有内容都应该显示。因此，内容需要被移除，或者像大多数 RWD 网站那样，只是不显示。然而，不显示某些内容并不意味着它没有发送给客户端。正如我们在第 5 章中学习到的，关键渲染路径上任何带有 `display: none` 的内容仍然会被加载到渲染树中。你基本上是在视觉上隐藏了资源，但仍然要求浏览器下载它们——这并不高明！
+对于较小的设备，并不是所有内容都应该显示。因此，内容需要被移除，或者像大多数RWD网站那样，只是不显示。然而，不显示某些内容并不意味着它没有发送给客户端。正如我们在第5章中学习到的，关键渲染路径上任何带有`display:none`的内容仍然会被加载到渲染树中。你基本上是在视觉上隐藏了资源，但仍然要求浏览器下载它们——这并不高明！
 
-DOM 元素的重复
+DOM元素的重复
 
-在开发 RWD 网站时，代码中加入了大量的逻辑来处理和移动框框及容器，这导致 DOM 不可避免地变得越来越且复杂。代码越多，下载量越大，浏览器构建页面时的工作就越多。
+在开发RWD网站时，代码中加入了大量的逻辑来处理和移动框框及容器，这导致DOM不可避免地变得越来越且复杂。代码越多，下载量越大，浏览器构建页面时的工作就越多。
 
 下载与调整大小
 
-记得我们讨论过应该为用户提供合适的图像大小吗？这对于 RWD 来说就变成了一个挑战。你希望在小屏幕上显示精美的图片，但又不想在大屏幕上显示时放弃它的质量和尺寸。你该怎么办？为了美观牺牲尺寸并加载较大的图像，但在小屏幕上进行缩放？考虑到图像是性能大挑战之一，我们根本不应该这样做。
+记得我们讨论过应该为用户提供合适的图像大小吗？这对于RWD来说就变成了一个挑战。你希望在小屏幕上显示精美的图片，但又不想在大屏幕上显示时放弃它的质量和尺寸。你该怎么办？为了美观牺牲尺寸并加载较大的图像，但在小屏幕上进行缩放？考虑到图像是性能大挑战之一，我们根本不应该这样做。
 
-
-
-
-
-所以到目前，我的观点如下：根据统计数据，如果速度和用户体验是我最关心的点，那么我不确定自己是否会选择 RWD（响应式网页设计）而不是独立的移动端站点（mdot）。但是，如果你没有预算开发一个独立的移动端站点，我可以推荐 RWD，但前提是遵循最佳实践。
+所以到目前，我的观点如下：根据统计数据，如果速度和用户体验是我最关心的点，那么我不确定自己是否会选择RWD（响应式网页设计）而不是独立的移动端站点（mdot）。但是，如果你没有预算开发一个独立的移动端站点，我可以推荐RWD，但前提是遵循最佳实践。
 
 ### 注意：响应式图像能救急吗？
 
-性能社区一直有一个运动旨在解决 RWD 站点比独立移动站点更重的问题。正如我们之前讨论过的，图像是导致网站臃肿的元凶。响应式图像旨在为 RWD 网站提供优化后的图像，移除小型设备不需要的臃肿图像。
+性能社区一直有一个运动旨在解决RWD站点比独立移动站点更重的问题。正如我们之前讨论过的，图像是导致网站臃肿的元凶。响应式图像旨在为RWD网站提供优化后的图像，移除小型设备不需要的臃肿图像。
 
 响应式图像的核心思想是浏览器将智能地显示图像，根据设备的能力从多个版本的图像中进行选择。从概念上讲，图像响应当前显示的设备，并相应地改变其尺寸和文件大小。
 
-[响应式图像社区小组](http://responsiveimages.org/) 列出了几种向不同设备提供适当图像的方法。Guy Podjarny 的 [响应式与快速：实现高性能响应式设计](http://www.akamai.com/dl/akamai/responsive-and-fast-implementing-high-performance-responsive-design.pdf) 也概述了使用响应式图像的最佳实践。
+[响应式图像社区小组](http://responsiveimages.org/)列出了几种向不同设备提供适当图像的方法。GuyPodjarny的[响应式与快速：实现高性能响应式设计](http://www.akamai.com/dl/akamai/responsive-and-fast-implementing-high-performance-responsive-design.pdf)也概述了使用响应式图像的最佳实践。
 
 好消息是，这是向正确设备提供正确尺寸图像迈出的一大步，并且在需要时只下载较小的图像。坏消息是，目前并非所有浏览器都支持响应式图像。
 
-mdot 和 RWD 都有它们的性能优缺点。下一节介绍了一种结合了两种方法优点的混合方法。
+mdot和RWD都有它们的性能优缺点。下一节介绍了一种结合了两种方法优点的混合方法。
 
 ### RESS
 
-RESS 代表[带有服务器端组件的响应式网页设计](http://www.lukew.com/ff/entry.asp?1392)，并将响应式设计与服务器端组件相结合。它解决了 RWD 的许多问题，同时利用了 mdot 方法的优势。服务器端组件能够在向客户端发送内容之前卸载掉不需要的内容，而媒体查询仍被用于实现响应式布局。你可以采取两种 RESS 方法，详细信息见下文。
+RESS代表[带有服务器端组件的响应式网页设计](http://www.lukew.com/ff/entry.asp?1392)，并将响应式设计与服务器端组件相结合。它解决了RWD的许多问题，同时利用了mdot方法的优势。服务器端组件能够在向客户端发送内容之前卸载掉不需要的内容，而媒体查询仍被用于实现响应式布局。你可以采取两种RESS方法，详细信息见下文。
 
-#### 原始 RESS
+#### 原始RESS
 
-RESS 是我最喜欢的向不同设备提供内容的方法。它结合了这两者的长处，因为你可以为所有设备提供单一 URL，但可以创建如下的情境体验：
+RESS是我最喜欢的向不同设备提供内容的方法。它结合了这两者的长处，因为你可以为所有设备提供单一URL，但可以创建如下的情境体验：
 
-* 服务器端组件负责任何沉重的工作或复杂的计算，例如 JavaScript 库、页面模板和其他功能。
-* 客户端组件负责任何与布局更相关的部分，例如更改和移动框——大部分是可以通过媒体查询轻松处理的内容。
+*   服务器端组件负责任何沉重的工作或复杂的计算，例如JavaScript库、页面模板和其他功能。
+*   客户端组件负责任何与布局更相关的部分，例如更改和移动框——大部分是可以通过媒体查询轻松处理的内容。
 
-例如，假设你有一个展示带文本和图像新闻的网站：移动端和桌面端版本应该交付相同的内容。假设桌面版本包含更大的头部和页脚，而移动端版本的头部和页脚更简单、更小，所以基本上只是设计不同但功能相同。桌面端的图像应该比移动端具有更高的分辨率。针对这种场景，一种可能的 RESS 方法如下：
+例如，假设你有一个展示带文本和图像新闻的网站：移动端和桌面端版本应该交付相同的内容。假设桌面版本包含更大的头部和页脚，而移动端版本的头部和页脚更简单、更小，所以基本上只是设计不同但功能相同。桌面端的图像应该比移动端具有更高的分辨率。针对这种场景，一种可能的RESS方法如下：
 
 ##### 服务器端组件
 
-在服务器上检测检测设备，并根据设备交付不同的图像。假设我们存储了一个名为 `s_photo1.jpg` 的小尺寸图像，以及原始尺寸的 `photo1.jpg`。
+在服务器上检测检测设备，并根据设备交付不同的图像。假设我们存储了一个名为`s_photo1.jpg`的小尺寸图像，以及原始尺寸的`photo1.jpg`。
 
-`<?=$device_prefix?>` 在服务器上根据设备确定，一旦页面在用户端加载，就会动态包含。以下代码使用 PHP 编写，显示了为 iPhone 应该提供什么前缀：
+`<?=$device_prefix?>`在服务器上根据设备确定，一旦页面在用户端加载，就会动态包含。以下代码使用PHP编写，显示了为iPhone应该提供什么前缀：
 
 ```php
+
 <?php
+
     $ua=$_SERVER['HTTP_USER_AGENT'];
+
     $device_prefix = '';    
+
     if(preg_match('/iphone/i',$ua)) {
+
         $device_prefix = 's_';
+
     }
+
 ?>
+
 ```
 
-这以及你编写相应的 HTML 代码的方式：
+这以及你编写相应的HTML代码的方式：
 
 ```html
+
 <img src="<?=$device_prefix?>photo1.jpg" alt="Example photo"/>
+
 ```
 
 ##### 客户端组件
 
-客户端组件可以通过媒体查询处理头部和页脚的样式。这些查询可以如下所示存储在 CSS 文件中（为了示例目的进行了简化）：
+客户端组件可以通过媒体查询处理头部和页脚的样式。这些查询可以如下所示存储在CSS文件中（为了示例目的进行了简化）：
 
 ```css
+
 header {
+
     height:100px;
+
 }
 
 footer {
+
     height:60px;
+
 }
 
 @media (max-device-width : 560px) {
+
     header {
+
         height:50px;
+
     }
+
     footer {
+
         height:20px;
+
     }       
+
 }
+
 ```
 
-#### 带有 ESI 的 RESS
+#### 带有ESI的RESS
 
-如前所述，ESI 是处理设备检测和引导的强大工具，那么为什么不将 RESS 与 ESI 结合呢？
+如前所述，ESI是处理设备检测和引导的强大工具，那么为什么不将RESS与ESI结合呢？
 
-通过 ESI，也可以为你的桌面端和移动站点提供单一 URL。根据用户连接你网站时使用的设备，你可以为整个页面创建一个内容和标记切换：
+通过ESI，也可以为你的桌面端和移动站点提供单一URL。根据用户连接你网站时使用的设备，你可以为整个页面创建一个内容和标记切换：
 
 ```html
+
 <!--esi
+
 <esi:choose>
+
 <esi:when test="$(HTTP_USER_AGENT) matches_i $(mobile_ua)">
+
        <!-- Mobile head and body -->
+
      </esi:when>
+
      <esi:otherwise>
+
        <!-- Desktop head and body -->
+
     </esi:otherwise>
+
 </esi:choose>
+
 -->
+
 ```
 
 上面的代码段演示了为移动设备提供完全不同的标记和内容有多简单。
@@ -4237,30 +4221,26 @@ footer {
 
 | | 优点 | 缺点 | 注意事项
 | --- | --- | --- | --- |
-| mdot | 关注性能、内容适配、仅交付所需内容。 | 多 URL（不利分享）、需要设备检测库、可能复杂的重定向逻辑、内容分叉、带有额外加载时间的重定向。 | 持续更新设备过滤器。 |
-| RWD | 所有内容共一个 URL、无重定向、易分享、Google 推荐、对 SEO 更好、不需要设备库。 | 涉及细致规划、交付了不需要的内容、可能损害性能。 | 具有重复 DOM 元素等的臃肿网站。 |
-| RESS (带有 ESI) | 如果需要，所有内容共一个 URL、无重定向、易分享。 | 需要设备检测或功能检测。带有 ESI 的 RESS：无需返回源处理，因此减少了源站负载。 | 持续更新设备过滤器。 |
+| mdot | 关注性能、内容适配、仅交付所需内容。 | 多URL（不利分享）、需要设备检测库、可能复杂的重定向逻辑、内容分叉、带有额外加载时间的重定向。 | 持续更新设备过滤器。 |
+| RWD | 所有内容共一个URL、无重定向、易分享、Google推荐、对SEO更好、不需要设备库。 | 涉及细致规划、交付了不需要的内容、可能损害性能。 | 具有重复DOM元素等的臃肿网站。 |
+| RESS（带有ESI） | 如果需要，所有内容共一个URL、无重定向、易分享。 | 需要设备检测或功能检测。带有ESI的RESS：无需返回源处理，因此减少了源站负载。 | 持续更新设备过滤器。 |
 
-我的建议是在可以使用支持 ESI 的 CDN 时使用带有 ESI 的 RESS。这种方法提供了最大的灵活性，并最能根据特定平台或设备决定服务。
+我的建议是在可以使用支持ESI的CDN时使用带有ESI的RESS。这种方法提供了最大的灵活性，并最能根据特定平台或设备决定服务。
 
 ## 总结
 
-* 各种技术（如离线存储）对于提高感知性能和延迟非常有用。
-* User Agent HTTP 头可以管理和检测设备。
-* 有三种主要方案——mdot、RWD 和 RESS 可以高效向移动设备提供内容。与性能一样，你的选择取决于你的需求和资源。
-* 如果选择 RWD，不要仅仅让网站具有响应式。还要关注性能。
-* 学习如何使用媒体查询。尽量避免将不需要的内容设为 `display:none` 的做法，因为隐藏内容仍会被下载到设备上。
-* 绕过大量的客户端处理（JavaScript 以及未优化的第三方脚本），并尝试将逻辑从前端移动到后端。
+*   各种技术（如离线存储）对于提高感知性能和延迟非常有用。
+*   UserAgentHTTP头可以管理和检测设备。
+*   有三种主要方案——mdot、RWD和RESS可以高效向移动设备提供内容。与性能一样，你的选择取决于你的需求和资源。
+*   如果选择RWD，不要仅仅让网站具有响应式。还要关注性能。
+*   学习如何使用媒体查询。尽量避免将不需要的内容设为`display:none`的做法，因为隐藏内容仍会被下载到设备上。
+*   绕过大量的客户端处理（JavaScript以及未优化的第三方脚本），并尝试将逻辑从前端移动到后端。
 
-
-
-
-
-在最后一个章节中，我汇总了全书中涵盖的最重要的技巧和窍门。它被设计成一份性能“作弊手册”，或者，如果你愿意的话，也是一组指导你练习 Web 性能的练习题。你越频繁地应用下方的技巧，你就会越擅长处理性能问题并创建快速、精简的网站。
+在最后一个章节中，我汇总了全书中涵盖的最重要的技巧和窍门。它被设计成一份性能“作弊手册”，或者，如果你愿意的话，也是一组指导你练习Web性能的练习题。你越频繁地应用下方的技巧，你就会越擅长处理性能问题并创建快速、精简的网站。
 
 ## 塑造性能文化
 
-本书强调了建立强大的性能[文化](http://www.stevesouders.com/blog/2013/05/17/creating-a-performance-culture/) 的重要性。确保你的团队和公司里的每一个人都参与此来。如果你不建立正确的文化，将会面临与产品、营销或设计等跨职能团队之间持续的性能斗争。你需要培养、教育并维护这样观点：性能会带来成功、收入、客户的快乐和满意度。因此，请将网络性能作为你公司文化的一部分来培养。
+本书强调了建立强大的性能[文化](http://www.stevesouders.com/blog/2013/05/17/creating-a-performance-culture/)的重要性。确保你的团队和公司里的每一个人都参与此来。如果你不建立正确的文化，将会面临与产品、营销或设计等跨职能团队之间持续的性能斗争。你需要培养、教育并维护这样观点：性能会带来成功、收入、客户的快乐和满意度。因此，请将网络性能作为你公司文化的一部分来培养。
 
 ### 团队文化清单
 
@@ -4277,16 +4257,16 @@ footer {
 *   提问：“用户与我的页面交互需要多长时间？”或者“用户完成此任务需要多少个步骤？”根据这些答案进行优化。
 *   通过避免加载页面时的任何不必要的延迟，向你的访问者表示尊重。
 *   将速度视为一种[特性](https://www.igvita.com/slides/2013/io-pagespeed.pdf)。
-*   从用户的角度进行优化。关注用户的实际处境，而不是你的`理想`设置。记录 RUM 数据以发现用户真实的延迟和连接速度。有关合成监控和真实用户监控的细节，请参阅第 3 章。
+*   从用户的角度进行优化。关注用户的实际处境，而不是你的`理想`设置。记录RUM数据以发现用户真实的延迟和连接速度。有关合成监控和真实用户监控的细节，请参阅第3章。
 *   你的网站永远不够快：`总是`有改进空间。
 
 ## 性能优先原型设计
 
-确保你团队中的每一个人（包括设计师和 UX 专家）都理解如何在设计过程中早期就将性能整合进来。第 2 章 涵盖了关于如何执行的一些想法。让我们简要总结一下一些最重要的技巧。
+确保你团队中的每一个人（包括设计师和UX专家）都理解如何在设计过程中早期就将性能整合进来。第2章涵盖了关于如何执行的一些想法。让我们简要总结一下一些最重要的技巧。
 
 ### 规划清单
 
-*   使用第 2 章引入的性能评分系统，定义并就网站最重要的内容达成共识。
+*   使用第2章引入的性能评分系统，定义并就网站最重要的内容达成共识。
 *   为每个原型定义可衡量的性能模块，以说明性能影响。
 *   就折叠上方的内容达成共识，并优先考虑可见内容。
 *   努力向整个团队解释性能的影响。
@@ -4294,24 +4274,24 @@ footer {
 
 ## 先测量，后优化（并重复）
 
-多谈数据，多展示图表和饼图！量化性能瓶颈对网站决策决策者可以产生巨大影响。使用第 3 章 和第 4 章介绍的工具和技术，并遵循以下指南。
+多谈数据，多展示图表和饼图！量化性能瓶颈对网站决策决策者可以产生巨大影响。使用第3章和第4章介绍的工具和技术，并遵循以下指南。
 
 ### 测量清单
 
-*   选择你的工具。利用强大的开源工具（如 WebPagetest、PageSpeed Insights、如 Boomerang 等 RUM 工具以及浏览器的瀑布视图）建立你的个人性能测量工具库。跟踪趋势，请查看 HTTP Archive。
-*   清理你的瀑布图。保持整体瀑布图尽可能越陡、越细越小。更多细节请复习第 4 章。
+*   选择你的工具。利用强大的开源工具（如WebPagetest、PageSpeedInsights、如Boomerang等RUM工具以及浏览器的瀑布视图）建立你的个人性能测量工具库。跟踪趋势，请查看HTTPArchive。
+*   清理你的瀑布图。保持整体瀑布图尽可能越陡、越细越小。更多细节请复习第4章。
 *   设置性能预算以建立一个努力的目标，例如通过将你的性能结果与竞争对手进行比较来设定基准。
-*   在选择第三方内容（如脚本）之前，使用第 3 章引入的 `Resource Timing API` 测量它们的性能影响。
-*   目标是`低` Speed Index（速度索引）和`高`PageSpeed 值。
-*   考虑设置免费的私有 HTTP Archive 和 WPT 实例，以便对定义的网页列表和测量周期有更多控制权。第 4 章 涵盖了如何开始。
+*   在选择第三方内容（如脚本）之前，使用第3章引入的`ResourceTimingAPI`测量它们的性能影响。
+*   目标是`低`SpeedIndex（速度索引）和`高`PageSpeed值。
+*   考虑设置免费的私有HTTPArchive和WPT实例，以便对定义的网页列表和测量周期有更多控制权。第4章涵盖了如何开始。
 
 ## 为性能进行原型设计
 
-确保你团队中的每一个人（包括设计师和 UX 专家）都理解如何在早期将性能整合到设计过程中。第 2 章 涵盖了关于如何执行的一些想法。让我们简要总结一下一些最重要的技巧。
+确保你团队中的每一个人（包括设计师和UX专家）都理解如何在早期将性能整合到设计过程中。第2章涵盖了关于如何执行的一些想法。让我们简要总结一下一些最重要的技巧。
 
 ### 规划清单
 
-*   使用第 2 章引入的性能评分系统，定义并就网站最重要的内容达成共识。
+*   使用第2章引入的性能评分系统，定义并就网站最重要的内容达成共识。
 *   为每个原型定义可衡量的性能模块，以说明性能影响。
 *   就折叠上方的内容达成共识，并优先考虑可见内容。
 *   努力向整个团队解释性能的影响。
@@ -4319,141 +4299,131 @@ footer {
 
 ## 先测量，后优化（并重复）
 
-多谈数据，多展示图表和饼图！量化性能瓶颈对网站决策者可以产生巨大影响。使用第 3 章 和第 4 章介绍的工具和技术，并遵循以下指南。
+多谈数据，多展示图表和饼图！量化性能瓶颈对网站决策者可以产生巨大影响。使用第3章和第4章介绍的工具和技术，并遵循以下指南。
 
 ### 测量清单
 
-*   选择你的工具。利用强大的开源工具（如 WebPagetest、PageSpeed Insights、如 Boomerang 等 RUM 工具以及浏览器的瀑布视图）建立你的个人性能测量工具库。跟踪趋势，请查看 HTTP Archive。
-*   清理你的瀑布图。保持整体瀑布图尽可能越陡、越细越小。更多细节请复习第 4 章。
+*   选择你的工具。利用强大的开源工具（如WebPagetest、PageSpeedInsights、如Boomerang等RUM工具以及浏览器的瀑布视图）建立你的个人性能测量工具库。跟踪趋势，请查看HTTPArchive。
+*   清理你的瀑布图。保持整体瀑布图尽可能越陡、越细越小。更多细节请复习第4章。
 *   设置性能预算以建立一个努力的目标，例如通过将你的性能结果与竞争对手进行比较来设定基准。
-*   在选择第三方内容（如脚本）之前，使用第 3 章引入的 `Resource Timing API` 测量它们的性能影响。
-*   目标是`低` Speed Index（速度索引）和`高` PageSpeed 值。
-*   考虑设置免费的私有 HTTP Archive 和 WPT 实例，以便对定义的网页列表和测量周期有更多控制权。第 4 章 涵盖了如何开始。
+*   在选择第三方内容（如脚本）之前，使用第3章引入的`ResourceTimingAPI`测量它们的性能影响。
+*   目标是`低`SpeedIndex（速度索引）和`高`PageSpeed值。
+*   考虑设置免费的私有HTTPArchive和WPT实例，以便对定义的网页列表和测量周期有更多控制权。第4章涵盖了如何开始。
 
 ## 确定渲染路径
 
-了解并理解页面的关键渲染路径。尽可能压缩[渲染初始视图所需的代码和资源](https://developers.google.com/speed/docs/mobile?csw=1)。复习第 5 章 以应用一些技术和工具。
+了解并理解页面的关键渲染路径。尽可能压缩[渲染初始视图所需的代码和资源](https://developers.google.com/speed/docs/mobile?csw=1)。复习第5章以应用一些技术和工具。
 
 ### 关键渲染清单
 
-*   HTML 页面本身始终是关键资源。保持尽可能整洁。
-*   通过移除未使用的元素来清理 `DOM`。它们只会延迟渲染。
+*   HTML页面本身始终是关键资源。保持尽可能整洁。
+*   通过移除未使用的元素来清理`DOM`。它们只会延迟渲染。
 *   顺序非常重要：尽早加载关键资源，并从关键路径中移除阻塞的元素。
 *   不要将第三方功能（如脚本或网络字体）放在你的关键路径中。
-*   减少重绘和重流，在不改变布局的情况下更改元素外观。避免的 CSS 元素请复习第 6 章。
-*   目标是 60fps 或高于 30fps 的持续帧以实现流畅滚动。对于动画，使用 `requestAnimationFrame()` 代替 `setInterval()` 或 `setTimeout()`，如第 6 章所述。
-*   遵循 14KB 规则优先提供最重要的内容。
+*   减少重绘和重流，在不改变布局的情况下更改元素外观。避免的CSS元素请复习第6章。
+*   目标是60fps或高于30fps的持续帧以实现流畅滚动。对于动画，使用`requestAnimationFrame()`代替`setInterval()`或`setTimeout()`，如第6章所述。
+*   遵循14KB规则优先提供最重要的内容。
 *   优先考虑可见内容：首先关注折叠上方的内容，之后加载其他资源。
-*   CSS 是关键的。通过使用 `media` 属性移除阻塞的 CSS（但请记住文件仍然会被下载）。
-*   最重要的样式，特别是折叠上方的样式，应该内联，如第 5 章所述。
-*   通过在 JavaScript 标签上使用 `defer` 或 `async` 等属性解除解析器阻塞。
+*   CSS是关键的。通过使用`media`属性移除阻塞的CSS（但请记住文件仍然会被下载）。
+*   最重要的样式，特别是折叠上方的样式，应该内联，如第5章所述。
+*   通过在JavaScript标签上使用`defer`或`async`等属性解除解析器阻塞。
 *   将脚本放在页面底部以避免阻塞渲染。
-*   使脚本非阻塞：等待 `window.onload` 事件触发后再加载不关键的 JavaScript 文件，并异步加载它们，特别是第三方脚本。
-*   限制 `script` 标签的总数以允许更快渲染。更多 JavaScript 优化技巧请查看第 6 章。
+*   使脚本非阻塞：等待`window.onload`事件触发后再加载不关键的JavaScript文件，并异步加载它们，特别是第三方脚本。
+*   限制`script`标签的总数以允许更快渲染。更多JavaScript优化技巧请查看第6章。
 
 ## 减少字节
 
-越小的网站越快！通常，减少发送到浏览器的资源大小是有益的。在第 6 章和第 7 章中描述了一些优化技巧，你可以遵循这些技巧来精简页面资源。
+越小的网站越快！通常，减少发送到浏览器的资源大小是有益的。在第6章和第7章中描述了一些优化技巧，你可以遵循这些技巧来精简页面资源。
 
 ### 资源清单
 
-*   压缩你的页面资源，如 HTML、CSS 和 JavaScript。
+*   压缩你的页面资源，如HTML、CSS和JavaScript。
+*   记住，图片是你最好的朋友，也是你最坏的敌人。图片可以获得最大的优化效果。通过选择正确的图像压缩和格式，不要提供多余的像素。请查看第7章中讨论的压缩和格式选项。
+*   在确定图像格式之前，先测量其性能。使用`PNG`、`GIF`、`JPEG`、`SVG`等图像格式，甚至可以将图像编码为`base64`格式（dataURI）用于网络。
+*   避免使用自定义网络字体，除非绝对必要。在必须使用网络字体时，请考虑在第7章中讨论的字体字体加载器。
+*   使用第9章中介绍的`Gzip`技术来减少网�传输的文件大小。
 
+## 减少HTTP请求
 
-
-
-
-*   记住，图片是你最好的朋友，也是你最坏的敌人。图片可以获得最大的优化效果。通过选择正确的图像压缩和格式，不要提供多余的像素。请查看第 7 章中讨论的压缩和格式选项。
-*   在确定图像格式之前，先测量其性能。使用 `PNG`、`GIF`、`JPEG`、`SVG` 等图像格式，甚至可以将图像编码为 `base64` 格式（data URI）用于网络。
-*   避免使用自定义网络字体，除非绝对必要。在必须使用网络字体时，请考虑在第 7 章中讨论的字体字体加载器。
-*   使用第 9 章中介绍的 `Gzip` 技术来减少网络传输的文件大小。
-
-## 减少 HTTP 请求
-
-性能优化的重要方面之一是减少你发起的 HTTP 请求数量。只为用户提供必要的文件。为了实现这一点，请查看以下总结的技巧，这些技巧之前在第 5 章中讨论过。
+性能优化的重要方面之一是减少你发起的HTTP请求数量。只为用户提供必要的文件。为了实现这一点，请查看以下总结的技巧，这些技巧之前在第5章中讨论过。
 
 ### 请求清单
 
-*   在可行的情况下进行合并，以减少 HTTP 请求的数量。要聪明地处理：将频繁更改的代码与不频繁更改的代码分开。根据这些标准合并文件，并对后者使用更激进的缓存策略。
-*   “少即是多”。只加载重要的内容，特别是在使用 `RWD` 时。
-*   不要仅仅因为方便就盲目使用 `JavaScript` 库和框架。
-*   使用雪精灵（image sprites）来减少 HTTP 请求。避免图像之间留有过多的空白以减少内存消耗（详情请参阅第 5 章）。
-*   对于小图片，考虑使用 `data URI` 技术来消除额外的 HTTP 请求。
+*   在可行的情况下进行合并，以减少HTTP请求的数量。要聪明地处理：将频繁更改的代码与不频繁更改的代码分开。根据这些标准合并文件，并对后者使用更激进的缓存策略。
+*   “少即是多”。只加载重要的内容，特别是在使用`RWD`时。
+*   不要仅仅因为方便就盲目使用`JavaScript`库和框架。
+*   使用雪精灵（imagesprites）来减少HTTP请请求。避免图像之间留有过多的空白以减少内存消耗（详情请参阅第5章）。
+*   对于小图片，考虑使用`dataURI`技术来消除额外的HTTP请求。
 
 ## 击延迟
 
-延迟是精简网站最大的瓶颈，正如在第 3 章、第 5 章、第 6 章、第 7 章以及第 9 章中讨论过的。考虑以下步骤以尽可能降低延迟。
+延迟是精简网站最大的瓶颈，正如在第3章、第5章、第6章、第7章以及第9章中讨论过的。考虑以下步骤以尽可能降低延迟。
 
 ### 延迟清单
 
-*   使用第 3 章中引入的 `Resource Timing API` 测量用户的延迟。
-*   通过尽可能减少 HTTP 请求来对抗延迟（参见上文的“减少 HTTP 请求”）。
-*   移动设备上的延迟最高。额外的延迟是由设备的无线电引起的，正如在第 10 章和第 11 章中讨论过的。
+*   使用第3章中引入的`ResourceTimingAPI`测量用户的延迟。
+*   通过尽可能减少HTTP请求来对抗延迟（参见上文的“减少HTTP请求”）。
+*   移动设备上的延迟最高。额外的延迟是由设备的无线电引起的，正如在第10章和第11章中讨论过的。
 *   减少页面上的轮询次数。不要在后台不断尝试获取新内容，特别是当内容并非立即需要时。
 *   尽快通过网络发送最重要的样式。
 *   尽可能移除重定向。
-*   使用保持 TCP 连接开启的 `keep-alive` 头部来减少延迟，正如第 3 章和第 9 章中解释的那样。
-*   使用 `appcache`、`local storage`、`Web SQL database` 或 `IndexedDB` 等离线存储技术来降低延迟。详情请查看第 11 章
-*   使用内容分发网络（CDN）来避免高延迟，通过将请求资源移动用户用户缩短往返时间。第 9 章概述了进一步的服务器快速优化。
-*   `HTTP/2`（以及之前的 `SPDY`）通过在同一连接上允许多个并发请求，实现了网络资源的有效利用并降低了延迟。
+*   使用保持TCP连接开启的`keep-alive`头部来减少延迟，正如第3章和第9章中解释的那样。
+*   使用`appcache`、`localstorage`、`WebSQLdatabase`或`IndexedDB`等离线存储技术来降低延迟。详情请查看第11章
+*   使用内容分发网络（CDN）来避免高延迟，通过将请求资源移动用户用户缩短往返时间。第9章概述了进一步的服务器快速优化。
+*   `HTTP/2`（以及之前的`SPDY`）通过在同一连接上允许多个并发请求，实现了网络资源的有效利用并降低了延迟。
 
 ## 与服务器做朋友
 
-你不会相信一点小的服务器关爱对你的性能优化有多大帮助。第 9 章中的示例显示，只需在服务器优化上下一点点功夫（例如使用 `Gzip` 压缩），就能获得巨大的性能提升。下面的提示总结了最重要的几点。
+你不会相信一点小的服务器关爱对你的性能优化有多大帮助。第9章中的示例显示，只需在服务器优化上下一点点功夫（例如使用`Gzip`压缩），就能获得巨大的性能提升。下面的提示总结了最重要的几点。
 
 ### 服务器清单
 
-*   对 `HTML`、`XML`、`JSON` 和 `CSS` 等未压缩资产进行 Gzip。
-*   如第 9 章所述，创建一个稳健的缓存策略。使用条件请求（基于内容和基于时间）来指定如何从网络检索资源。
-*   为你的 Web 服务器考虑 `PageSpeed Insights`。这是一个通过应用 `mod_pagespeed` 过滤器来减少性能负载的佳工具。
+*   对`HTML`、`XML`、`JSON`和`CSS`等未压缩资产进行Gzip。
+*   如第9章所述，创建一个稳健的缓存策略。使用条件请求（基于内容和基于时间）来指定如何从网络检索资源。
+*   为你的Web服务器考虑`PageSpeedInsights`。这是一个通过应用`mod_pagespeed`过滤器来减少性能负载的佳工具。
 
 ## 驯服移动野兽
 
-移动网页浏览最大的挑战之一是无线电和无线连接带来的延迟。不要害怕它，要意识到它。第 10 章和第 11 章涵盖了移动网页性能的重要方面，总结如下。
+移动网页浏览最大的挑战之一是无线电和无线连接带来的延迟。不要害怕它，要意识到它。第10章和第11章涵盖了移动网页性能的重要方面，总结如下。
 
 ### 移动端技巧
 
 *   尊重访问者移动端的流量费用。不要让用户为你的糟糕性能买单。
-*   在移动端避免域名分片（domain sharding）。更多的 HTTP 请求和 DNS 查询会导致更高的延迟。
-*   关注 `RUM` 或 `Analytics` 数据以理解用户的连接速度和延迟，然后对其进行优化。
-*   权衡不同移动策略的优缺点。在 `mdot`、`RWD`、`RESS` 或带有 `ESI` 的 `RESS` 之间做出选择。请查看第 11 章中的对比表。
+*   在移动端避免域名分片（domainsharding）。更多的HTTP请求和DNS查询会导致更高的延迟。
+*   关注`RUM`或`Analytics`数据以理解用户的连接速度和延迟，然后对其进行优化。
+*   权衡不同移动策略的优缺点。在`mdot`、`RWD`、`RESS`或带有`ESI`的`RESS`之间做出选择。请查看第11章中的对比表。
 *   应用设备描述库来辅助进行设备检测。
-*   带有 `ESI` 的 `RESS` 重定向比普通的服务器端重定向具有额外优势：它发生在边缘节点，速度比将重定向逻辑放在源站更快。
-*   通过鼓励用户书签你的 `mdot` 站点而不是使用桌面版 URL，消除对移动端直接访问（此处原文为 mobile direct，可能为 mobile redirect）的需求。
-*   移动设备是由电池驱动的。了解导致耗电的原因：渲染图像占据了大部分渲染能量，其次是执行 `JavaScript` 代码。此外，页面上样化的项目越多，样式表的能量消耗就越大。
-*   考虑第 11 章中描述的离线存储技术。
+*   带有`ESI`的`RESS`重定向比普通的服务器端重定向具有额外优势：它发生在边缘节点，速度比将重定向逻辑放在源站更快。
+*   通过鼓励用户书签你的`mdot`站点而不是使用桌面版URL，消除对移动端直接访问（此处原文为mobiledirect，可能为mobileredirect）的需求。
+*   移动设备是由电池驱动的。了解导致耗电的原因：渲染图像占据了大部分渲染能量，其次是执行`JavaScript`代码。此外，页面上样化的项目越多，样式表的能量消耗就越大。
+*   考虑第11章中描述的离线存储技术。
 *   尽可能在真实设备上测试你的移动体验。
 
 ## 自动化你的性能常规工作
 
-正如第 8 章讨论的，自动化性能优化的核心思想是帮助你用最少的人力构建和维护精简网站。在部署期间使用 `APIs` 和任务运行器程序化地生成高性能代码，对于生产精简网站非常有帮助。
+正如第8章讨论的，自动化性能优化的核心思想是帮助你用最少的人力构建和维护精简网站。在部署期间使用`APIs`和任务运行器程序化地生成高性能代码，对于生产精简网站非常有帮助。
 
 ### 自动化清单
 
-*   利用 `PageSpeed Insights API` 的功能来检查性能瓶颈、应用过滤器和规则并提供警告。查看第 8 章中的过滤器列表。
-*   使用第 8 章中讨论的 `Grunt`、`Gulp`、`Maven` 或 `Ant` 等任务运行器，使性能优化成为部署过程的一部分。
-*   更好，是将任务运行器和性能 API 包含在你的持续集成系统中。查看第 8 章中介绍的 `YSlow` 持续集成插件。
+*   利用`PageSpeedInsightsAPI`的功能来检查性能瓶颈、应用过滤器和规则并提供警告。查看第8章中的过滤器列表。
+*   使用第8章中讨论的`Grunt`、`Gulp`、`Maven`或`Ant`等任务运行器，使性能优化成为部署过程的一部分。
+*   更好，是将任务运行器和性能API包含在你的持续集成系统中。查看第8章中介绍的`YSlow`持续集成插件。
 
 ## 保持状态并避免反复波动
 
+维持一个精简的网站就像执行减重计划。在瘦身之后很快就反弹回失去掉的体重，这种情况太常见了！就像减肥一样，在维护精简网站时，我们需要避免[回溜球效应](http://en.wikipedia.org/wiki/Yo-yo_effect)。第4章中讨论的监控工具，以及第8章中描述的性能自动化工具，都能帮助我们持续掌控网站优化。
 
-
-
-
-维持一个精简的网站就像执行减重计划。在瘦身之后很快就反弹回失去掉的体重，这种情况太常见了！就像减肥一样，在维护精简网站时，我们需要避免[回溜球效应](http://en.wikipedia.org/wiki/Yo-yo_effect)。第 4 章中讨论的监控工具，以及第 8 章中描述的性能自动化工具，都能帮助我们持续掌控网站优化。
-
-## 监控清单
+### 监控清单
 
 - 先测量，后优化。
 - 持续对你的网站性能进行测量和监控，将帮助你识别并处理性能瓶颈。
 - 设置每日性能报告和警报，让你对性能表现无忧。
-- 自动化通过触发适当的警报，在对抗反复效应方面非常有帮助。请参阅第 8 章，了解用于掌控此点的工具和选项。
+- 自动化通过触发适当的警报，在对抗反复效应方面非常有帮助。请参阅第8章，了解用于掌控此点的工具和选项。
 
 ## 结语
 
-这是我们全书结束前的最后一个“结语”。我想用 Google 创始人拉里·佩奇（Larry Page）的一句话来结束最后一章：
+这是我们全书结束前的最后一个“结语”。我想用Google创始人拉里·佩奇（LarryPage）的一句话来结束最后一章：
 
 > “浏览应该像翻阅杂志页一样简单快速。”
 
 愿这句话能激励我们所有人，为了更精简的网站而努力！
-

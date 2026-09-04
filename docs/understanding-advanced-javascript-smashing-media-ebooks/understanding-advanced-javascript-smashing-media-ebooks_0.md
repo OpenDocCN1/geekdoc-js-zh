@@ -1,6 +1,5 @@
+
 # 高级 JavaScript 入门指南
-
-
 
 ![](img/cover-image.png)
 
@@ -121,12 +120,7 @@ img.src="/1x1.gif";
 
 一旦连接建立，它将一直保持开放，直到双方都决定关闭它，通过类似的握手来实现。
 
-
-
-
 当我们将 HTTP 运行在 TCP 之上时，现在有了一个 HTTP 客户端（通常是浏览器），它发起了 TCP 连接并发送第一个数据包（例如，一个 `GET` 请求）。如果我们使用 HTTP/1.1（现在几乎所有人都在使用），那么默认将是使用 HTTP 保持存活连接（`Connection: keep-alive`）。这意味着多个 HTTP 请求可能会在同一个 TCP 连接上发生。这是好事，因为这意味着我们减少了握手的开销（额外的三个数据包）。
-
-
 
 现在，除非我们开启了 [HTTP 管道化传输](http://en.wikipedia.org/wiki/HTTP_pipelining)^(11)（大多数浏览器和服务器都禁用了它），否则这些请求将串顺序发生。
 
@@ -288,23 +282,36 @@ Amazon 上的书籍链接。
 
 GitHub 上的 Boomerang 项目，许多内容在此已实现。
 
-
-
-
 5. [Internet 协议族](http://en.wikipedia.org/wiki/Internet_protocol_suite)
+
 6. [RFC 2549](http://www.faqs.org/rfcs/rfc2549.html)
+
 7. [基于鸟类传输的 IP](http://en.wikipedia.org/wiki/IP_over_Avian_Carriers)
+
 8. [光纤](http://en.wikipedia.org/wiki/Optical_fiber)
+
 9. [延迟问题](http://rescomp.stanford.edu/~cheshire/rants/Latency.html)
+
 10. [电缆地图](http://cablemap.info/)
+
 11. [HTTP 管道化](http://en.wikipedia.org/wiki/HTTP_pipelining)
+
 12. [慢启动](http://en.wikipedia.org/wiki/Slow-start)
+
 13. [Google 表格](https://spreadsheets.google.com/ccc?key=0AplxPyCzmQi6dDRBN2JEd190N1hhV1N5cHQtUVdBMUE&hl=en_GB)
+
 14. [电缆地图](http://cablemap.info/)
+
 15. [传输控制协议](http://en.wikipedia.org/wiki/Transmission_Control_Protocol)
+
+
+
 16. [TCP 详解教程](http://www.amazon.com/TCP-Illustrated-Vol-Addison-Wesley-Professional/dp/0201633469)
+
 17. [慢启动](http://en.wikipedia.org/wiki/Slow-start)
+
 18. [Google 表格](https://spreadsheets.google.com/ccc?key=0AplxPyCzmQi6dDRBN2JEd190N1hhV1N5cHQtUVdBMUE&hl=en_GB)
+
 19. [Boomerang 项目](http://github.com/bluesmoon/boomerang/)
 
 ## JavaScript 单元测试简介
@@ -321,13 +328,13 @@ GitHub 上的 Boomerang 项目，许多内容在此已实现。
 
 考虑到这一点，我们显然可以说，在从零开始某项任务时，从单元测试开始要容易得多。但这并不是本章的主题。本章旨在帮助你解决一个更困难的问题：提取现有代码并测试重要部分，可能发现并修复代码中的错误。
 
-提取代码将其转换为不同形式而不改变其当前行为的过程被称为 `refactoring`（重构）。重构是改进程序代码设计的极方法；因为任何更改实际上都会修改程序的行为，所以当已有单元测试时进行重构是最安全的。
+提取代码，将其转换为不同形式而不改变其当前行为的过程被称为 `refactoring`（重构）。重构是改进程序代码设计的极佳方法；因为任何更改实际上都会修改程序的行为，所以当已有单元测试时进行重构是最安全的。
 
 这个“鸡生蛋蛋”的问题意味着，要为现有代码添加测试，你必须承担破坏东西的风险。因此，在你拥有稳固的单元测试覆盖之前，你需要继续手动测试以最小化这种风险。
 
 目前理论应该足够了。让我们来看一个实际示例，测试一些当前与页面混合并连接的 JavaScript 代码。代码寻找带有 `title` 属性的链接，使用这些标题来显示内容发布的时间，这是一个相对时间值，例如“5 天前”：
 
-```
+```html
 <!DOCTYPE html>
 <html>
 <head>
@@ -388,7 +395,7 @@ window.onload = function(){
 
 问题是，对于任何超过 31 天的日期，`prettyDate` 只返回 `undefined`（隐式通过单个 `return` 语句），保留了锚点的文本不变。因此，为了看到应该发生什么，我们可以硬编码一个“当前”日期：
 
-```
+```html
 <!DOCTYPE html>
 <html>
 <head>
@@ -447,9 +454,6 @@ window.onload = function(){
 ```
 
 • [运行此示例。](http://provide.smashingmagazine.com/introduction-to-js-unit-testing-code/1-mangled.html)^(1)
-
-
-
 
 现在，链接应该显示为“2 小时前”、“昨天”等。这虽然算是一个进展，但仍然不是一个实际的可测试单元（unit）。因此，在不进一步修改代码的情况下，我们能做的就是尝试测试生成的 DOM 变化。即使这种方法有效，标记语言的任何细微变化都可能导致测试失败，从而导致这种测试的成本效益比非常糟糕。
 
@@ -566,22 +570,7 @@ console.log("Of " + results.total + " tests, " + results.bad + " failed, "
 
 现在我们已经有了可以测试的内容，让我们写一些真正的单元测试吧：
 
-[/content]
-```
----
-**注：由于你提供的待翻译文本在结尾处出现了重复（从“Refactoring, Stage 0”开始重复），我已根据指令“一定不要重复输出原文”的要求，仅翻译了第一部分。如果需要翻译重复的部分，请告知。**
-```
 
-抱歉，我重新审视了你的输入。在之前的处理中，我似乎只翻译了前半部分。以下是针对你提供的**非重复部分**的完整翻译翻译：
-
-[content]
-现在，链接应该显示为“2 小时前”、“昨天”等。这虽然算是一个进展，但仍然不是一个实际的可测试单元。因此，在不进一步修改代码的情况下，我们能做的就是尝试测试生成的 DOM 变化。即使这种方法有效，标记语言的任何细微变化都可能导致测试失败，导致这种这种的的效益效益非常糟糕糟糕
-
-### 重构构阶段 0
-
-相反，让我们对代码进行少少量的构，以便以便可以进行单元测试的内容。
-
-为了为了这一点，我们需要进行两处更改：将将日期作为参数传递给 `prettyDate` 函数，，而不是它它直接 ` ` Date``并将并将函数提取到一个单独的文件，这样我们我们就可以在单独的页面包含这段代码进行单元测试。
 
 ```html
 <!DOCTYPE html>
@@ -622,7 +611,7 @@ window.onload = function() {
 </html>
 ```
 
-这里是 `prettydate.js` 的内容：
+这里是`prettydate.js`的内容：
 
 ```javascript
 function prettyDate(now, time){
@@ -688,9 +677,6 @@ console.log("Of " + results.total + " tests, " + results.bad + " failed, "
 
 • [运行这个示例。](http://provide.smashingmagazine.com/introduction-to-js-unit-testing-code/2-getting-somewhere.html)
 
-
-
-
 ```javascript
 test("prettydate basics", function() {
 	function date(then, expected) {
@@ -707,11 +693,11 @@ test("prettydate basics", function() {
 
 •[运行此示例。](http://provide.smashingmagazine.com/introduction-to-js-unit-testing-code/5-qunit-test-refactored.html)^(6)
 
-在这里，我们将对 `prettyDate` 的调用提取到 `date` 函数中，并将 `now` 变量内联到函数中。我们最终只为每个断言保留了相关数据，使其更易读，同时底层的抽象仍然保持显而易见。
+在这里，我们将对`prettyDate`的调用提取到`date`函数中，并将`now`变量内联到函数中。我们最终只为每个断言保留了相关数据，使其更易读，同时底层的抽象仍然保持显而易见。
 
 ### 测试 DOM 操作
 
-现在 `prettyDate` 函数已经经过了充分的测试，让我们重新回到最初的示例上。除了 `prettyDate` 函数外，它在 `window` 加载事件处理器中选择了一些 DOM 元素并更新了它们。应用之前相同的原理，我们应该能够重构代码并对其进行测试。此外，我们还将为这两个函数引入一个模块，以避免污染全局命名空间，并能够为这些单独函数赋予更有意义的名字。
+现在`prettyDate`函数已经经过了充分的测试，让我们重新回到最初的示例上。除了`prettyDate`函数外，它在`window`加载事件处理器中选择了一些 DOM 元素并更新了它们。应用之前相同的原理，我们应该能够重构代码并对其进行测试。此外，我们还将为这两个函数引入一个模块，以避免污染全局命名空间，并能够为这些单独函数赋予更有意义的名字。
 
 ```html
 <!DOCTYPE html>
@@ -781,7 +767,7 @@ test("prettyDate.update, one day later", function() {
 </html>
 ```
 
-这里是 `prettydate2.js` 的内容：
+这里是`prettydate2.js`的内容：
 
 ```javascript
 var prettyDate = {
@@ -821,11 +807,7 @@ var prettyDate = {
 
 ### 重构，第二阶段
 
-下一个测试 `prettyDate.update, one day later` 与之前的测试几乎相同，不同之处它向 `prettyDate.update` 传递了不同的日期，因此对两个链接期望了不同的结果。让我们看看是否可以重构这些测试以消除重复。
-
-
-
-
+下一个测试`prettyDate.update, one day later`与之前的测试几乎相同，不同之处它向`prettyDate.update`传递了不同的日期，因此对两个链接期望了不同的结果。让我们看看是否可以重构这些测试以消除重复。
 
 # 穿越 JavaScript 丛林
 
@@ -840,7 +822,9 @@ Web 正在演进。曾经简单的网站现在正变成复杂的交互式应用�
 MVC 是一种软件架构模式，它将应用程序分为三个主要组件：
 
 *   **模型 (Model)**：代表应用程序的数据和逻辑。
+
 *   **视图 (View)**：数据的视觉呈现（用户界面）。
+
 *   **控制器 (Controller)**：充当模型和视图之间的接口，处理用户输入并更新其他部分。
 
 这种关注点分离使得程序具有更好的维护性、可测试性和扩展性。
@@ -870,19 +854,20 @@ Vue.js 是一个易于学习和集渐进式框架。它结合了 Angular 和 Emb
 选择合适的框架取决于项目的需求、团队的专业知识以及你想要实现的特定目标。
 
 *   **复杂性**：应用程序有多复杂？
+
 *   **性能**：运行速度需要有多快？
+
 *   **社区支持**：是否有大型社区和可用文档？
+
 *   **学习曲线**：团队可以花费多少时间学习？
 
 ## 结论
 
+
+
 MVC 框架彻底改变了我们构建 Web 应用的方式。通过分离数据、视图和逻辑，它们允许开发者创建更健壮、更易维护的软件。随着 Web 的持续演进，我们可以期待更多创新的框架出现。
 
-
-
-
-
-从零开始编写 Web 应用程序时，很容易觉得我们只需要依赖一个 [DOM](https://developer.mozilla.org/en/DOM/About_the_Document_Object_Model)^(1) 操作库（如 [jQuery](http://jquery.com)^(2))以及一些实用工具插件就能应付了。这样做的问题在于，很快你就会迷失在嵌套的 jQuery 回调和 DOM 元素中，而我们的应用程序并没有建立任何真正的结构。
+从零开始编写 Web 应用程序时，很容易觉得我们只需要依赖一个 [DOM](https://developer.mozilla.org/en/DOM/About_the_Document_Object_Model)^(1) 操作库（如 [jQuery](http://jquery.com)^(2)）以及一些实用工具插件就能应付了。这样做的问题在于，很快你就会迷失在嵌套的 jQuery 回调和 DOM 元素中，而我们的应用程序并没有建立任何真正的结构。
 
 简而言之，我们陷入了[意大利条面代码](http://en.wikipedia.org/wiki/Spaghetti_code)^(3)的困境。幸运的是，现代 JavaScript 框架可以帮助我们为项目引入结构和组织，提高其长期的可维护性。
 
@@ -891,7 +876,9 @@ MVC 框架彻底改变了我们构建 Web 应用的方式。通过分离数据�
 这些现代框架为开发者提供了一种易于组织代码的路径，使用了各种名为 [MVC](http://addyosmani.com/resources/essentialjsdesignpatterns/book/#detailmvcmvp)^(4)（模型-视图-控制器）的模式。MVC 将应用程序中的关注点拆分为三个部分：
 
 - **模型（Models）**代表应用程序中的特定领域知识和数据。可以将其看作你可以建模的数据“类型”，例如用户（User）、照片（Photo）或笔记（Note）。模型应该在其状态变化时通知观察者（例如视图）。
+
 - **视图（Views）**通常被认为是应用程序的用户界面（例如你的标记和模板），但也不一定如此。它们应该知道模型的存在以便观察它们，但不会直接与模型进行通信。
+
 - **控制器（Controllers）**处理应用程序中的输入（例如点击、用户操作），而视图可以被视为处理输出。当一个 `Controller` 更新模型的状态（例如编辑照片的说明文字）时，它不会直接告诉视图。这正是视图和模型之间关系中观察者模式的作用所在。
 
 帮助我们结构化代码的 JavaScript “MVC”框架并不总是严格遵循上述模式。某些框架会将控制器的职责包含在视图中（例如 [Backbone.js](http://backbonejs.org)^(5)），而另一些框架则会将自己的见解组件加入其中，因为它们认为这样更有效。
@@ -927,10 +914,6 @@ JavaScript 社区在过去几年中经历了一场复兴，开发者用它构建
 ### TodoMVC：一个用于学习和比较的常用应用程序
 
 在过去的几年里，此类 MV* 框架的发布数量激增。
-
-
-
-
 
 [Backbone.js](http://backbonejs.org), [Ember.js](http://emberjs.com), [AngularJS](http://angularjs.com), [Spine](http://spinejs.com), [CanJS](http://canjs.us) …… 新旧稳定解决方案的列表每周都在增长，开发者可能会发现自己迷失在选项的海洋中。从那些为了处理复杂应用而开发出这些解决方案的人（如 [Yehuda Katz](http://github.com/wycats) 和 [Jeremy Ashkenas](http://github.com/jashkenas)），有很多有很多开发者应该考虑使用的有力竞争者。问题是，用什么，以及如何选择？
 
@@ -990,9 +973,6 @@ JavaScript 社区在过去几年中经历了一场复兴，开发者用它构建
 
 JavaScript 库不应止于“query”，这就是为什么 `Dojo` 早期就专注于完成企业级应用开发的蓝图。这与它今天在 `MVC` 上拥有的关注点是相同的，它只是“军备库中的另一种工具”。
 
-
-
-
 为什么 Dojo 没有成为主导工具包？它的目标从未是成为唯一的选择。它的目标是提供一个开放的工具集，这些工具可以在项目内部与其他任何东西配合使用，也可以被自由地复制到其他工作中。Dojo 曾被批评运行缓慢，即使在这一问题解决后，它仍然被批评运行缓慢。想要改变这种认知是有挑战性的。要记录一个功能丰富的工具包是非常困难的。`Dojo 1.8` 包含 175 个子包和超过 1,400 个模块。
 
 这不仅是文档方面的挑战，也意味着 Dojo 并不是只做某一件事。对于正在尝试寻找从何入手的开发者来说，这是好事但也非常困难。这些都是我们一直尝试在 `Dojo 1.8` 中通过教程和显著改进的文档来解决的问题。
@@ -1019,45 +999,50 @@ JavaScript 库不应止于“query”，这就是为什么 `Dojo` 早期就专�
 
 我们的应用程序包括：
 
-- •[Backbone.js](http://documentcloud.github.com/backbone)^(21)
-- •[Ember.js](http://emberjs.com)^(22)
-- •[AngularJS](http://angularjs.org)^(23)
-- •[Spine.js](http://spinejs.com)^(24)
-- •[KnockoutJS](http://knockoutjs.com)^(25) (MVVM)
-- •[Dojo](http://dojotkit.org)^(26)
-- •[YUI](http://yuilibrary.com)^(27)
-- •[Batman.js](http://batmanjs.org)^(28)
-- •[Closure](http://code.google.com/closure/library/(29)
-- •[Agility.js](http://agilityjs.com)^(30)
-- •[Knockback.js](http://kmaloff.github.com/knockback)^(31)
+- [Backbone.js](http://documentcloud.github.com/backbone)^(21)
+- [Ember.js](http://emberjs.com)^(22)
+- [AngularJS](http://angularjs.org)^(23)
+- [Spine.js](http://spinejs.com)^(24)
+- [KnockoutJS](http://knockoutjs.com)^(25) (MVVM)
+- [Dojo](http://dojotkit.org)^(26)
+- [YUI](http://yuilibrary.com)^(27)
+- [Batman.js](http://batmanjs.org)^(28)
+- [Closure](http://code.google.com/closure/library/(29)
+- [Agility.js](http://agilityjs.com)^(30)
+- [Knockback.js](http://kmaloff.github.com/knockback)^(31)
+
 对于对 AMD 感的：
 
-- •[Backbone.js](http://documentcloud.github.com/backbone)^(32) + [RequireJS](http://requirejs.org)^(33) (using AMD)
-- •[Ember.js](http://emberjs.com)^(34) + [RequireJS](http://requirejs.org)^(35) (using AMD)
+- [Backbone.js](http://documentcloud.github.com/backbone)^(32) + [RequireJS](http://requirejs.org)^(33) (using AMD)
+- [Ember.js](http://emberjs.com)^(34) + [RequireJS](http://requirejs.org)^(35) (using AMD)
+
 我们的 Labs 包含：
 
-- •[CanJS](http://canjs.us)^(36)
-- •[Maria.js](https://github.com/petichaux/maria)^(37)
-- •[cujo.js](http://cujojs.github.com)^(38)
-- •[Meteor](http://meteor.com)^(39)
-- •[SocketStream](http://www.socketstream.org)^(40) + [jQuery](http://jquery.com)^(41)
-- •[Ext.js](http://www.sencha.com/products/extjs)^(42)
-- •[Sammy.js](http://sammyjs.org)^(43)
-- •[JavaScriptMVC](http://javascriptmvc.com)^(44)
-- •[Google Web Toolkit](https://developers.google.com)^(45)
-- •[TroopJS](https://github.com/troopjs)^(46)
-- •[Stapes.js](http://hay.github.com/stapes)^(47)
-- •[somajs](http://github.com/somajs)^(48)
-- •[DUEL](https://bitbucket.org/mckamey/duel)^(49)
-- •[Fidel](https://github.com/jgallen23/fidel)^(50)
-- •[Olives](https://github.com/flams/olives)^(51)
-- •[PlastronJS](https://github.com/rhysbowen/PlastronJS)^(52)
-- •[Dijon](https://github.com/creynders/dijon-framework)^(53)
-- •[rAppid.js](http://www.rappid.com)^(54)
-- •[Broke](https://github.com/brokenseal/broke)^(55)
-- •[o_O](http://weepy.github.com/o_O)^(56)
-- •[Fun](https://github.com/marcuswestin/fun)^(57)
-- •[AngularJS](http://angularjs.org)^(58) + [RequireJS](http://requirejs.org)^(59) (using AMD)
+- [CanJS](http://canjs.us)^(36)
+- [Maria.js](https://github.com/petichaux/maria)^(37)
+- [cujo.js](http://cujojs.github.com)^(38)
+- [Meteor](http://meteor.com)^(39)
+- [SocketStream](http://www.socketstream.org)^(40) + [jQuery](http://jquery.com)^(41)
+- [Ext.js](http://www.sencha.com/products/extjs)^(42)
+- [Sammy.js](http://sammyjs.org)^(43)
+- [JavaScriptMVC](http://javascriptmvc.com)^(44)
+- [Google Web Toolkit](https://developers.google.com)^(45)
+- [TroopJS](https://github.com/troopjs)^(46)
+- [Stapes.js](http://hay.github.com/stapes)^(47)
+- [somajs](http://github.com/somajs)^(48)
+- [DUEL](https://bitbucket.org/mckamey/duel)^(49)
+- [Fidel](https://github.com/jgallen23/fidel)^(50)
+
+
+
+- [Olives](https://github.com/flams/olives)^(51)
+- [PlastronJS](https://github.com/rhysbowen/PlastronJS)^(52)
+- [Dijon](https://github.com/creynders/dijon-framework)^(53)
+- [rAppid.js](http://www.rappid.com)^(54)
+- [Broke](https://github.com/brokenseal/broke)^(55)
+- [o_O](http://weepy.github.com/o_O)^(56)
+- [Fun](https://github.com/marcuswestin/fun)^(57)
+- [AngularJS](http://angularjs.org)^(58) + [RequireJS](http://requirejs.org)^(59) (using AMD)
 
 **注意：** 我们使用[纯 JavaScript](https://github.com/addyosmani/todomvc/blob/master/vanilla-examples/vanillajs/js/app.js)^(60) 实现了一个 Todo 应用程序版本，另一个主要使用[jQuery 约定](https://github.com/addyosmani/todomvc/blob/master/architecture-examples/jquery/js/app.js)^(61)。
 
@@ -1065,25 +1050,23 @@ JavaScript 库不应止于“query”，这就是为什么 `Dojo` 早期就专�
 
 为了帮助你开始缩小探索框架的范围，我们希望提供以下高层框架摘要，希望这些能帮助引导你选择几个具体的选项进行尝试。
 
+我需要一个灵活的方案，为我的应用程序提供关注点分离的极简解决方案。它应该支持持久化层和 RESTful 同步、模型、视图（带控制器）、事件驱动通信、模板渲染和路由。它应该是命令式的，允许在模型变化时更新视图。我希望架构方面的一些决策能由我来决定。理想情况下，许多大型公司已经使用该方案构建了非复杂的应用程序。由于我可能会构建复杂的系统，我希望该框架周围有一个活跃的扩展社区，他们已经尝试解决更大的问题（[Marionette](https://github.com/derickbailey/backbone.marionette)^(62), [Chaplin](https://github.com/chaplinjs/chaplin)^(63), [Aura](https://github.com/addyosmani/backbone-aura/)^(64), [Thorax](https://github.com/walmartlabs/thorax)^(65)）。理想情况下，该方案还有可脚手架工具（[grunt-bbb](https://github.com/backbone-boilerplate/grunt-bbb)^(66), [brunch](http://brunch.io/)^(67)）。使用`Backbone.js`。
 
+我需要一个尝试解决 Web 端桌面级应用开发的方案。它应该是有主见的、模块化的，支持某种变体 MVC，避免需要手动连接应用程序中的所有内容，支持持久化、计算属性并具有自动更新（实时）模板。它应该支持良好的状态管理，而不是许多其他框架提倡使用的手动路由解决方案。它还应该带有详尽的文档，当然还有模板渲染。它也应该提供脚手架工具（`ember.gem`, `ember for brunch`）。使用`Ember.js`。
 
-我需要一个灵活的方案，为我的应用程序提供关注点分离的极简解决方案。它应该支持持久化层和 RESTful 同步、模型、视图（带控制器）、事件驱动通信、模板渲染和路由。它应该是命令式的，允许在模型变化时更新视图。我希望架构方面的一些决策能由我来决定。理想情况下，许多大型公司已经使用该方案构建了非复杂的应用程序。由于我可能会构建复杂的系统，我希望该框架周围有一个活跃的扩展社区，他们已经尝试解决更大的问题（[Marionette](https://github.com/derickbailey/backbone.marionette)^(62), [Chaplin](https://github.com/chaplinjs/chaplin)^(63), [Aura](https://github.com/addyosmani/backbone-aura/)^(64), [Thorax](https://github.com/walmartlabs/thorax)^(65)）。理想情况下，该方案还有可脚手架工具（[grunt-bbb](https://github.com/backbone-boilerplate/grunt-bbb)^(66), [brunch](http://brunch.io/)^(67)）。使用 `Backbone.js.`。
+我需要一个更轻量级的，支持实时绑定模板、路由、与主流库（如`jQuery`和`Dojo`）集成，并针对性能进行了优化。它还应该支持一种实现模型、视图和控制器的方法。它可能还没有用于许多大型公共应用，但具有潜力。理想情况下，该方案应该由具有创建许多复杂应用经验的人构建。使用`CanJS`。
 
-我需要一个尝试解决 Web 端桌面级应用开发的方案。它应该是有主见的、模块化的，支持某种变体 MVC，避免需要手动连接应用程序中的所有内容，支持持久化、计算属性并具有自动更新（实时）模板。它应该支持良好的状态管理，而不是许多其他框架提倡使用的手动路由解决方案。它还应该带有详尽的文档，当然还有模板渲染。它也应该提供脚手架工具（ember.gem, ember for brunch）。使用 `Ember.js.`。
+我需要一个声明式的、通过视图来推导行为的方案。它专注于通过自定义 HTML 标签和组件来指定应用程序意图。它应该支持易于测试、URL 管理（路由）以及通过变体 MVC 实现关注点分离。它采取了与大多数框架不同的方法，提供了一个 HTML 编译器来在 HTML 中创建自己的 DSL。它可能受到即将推出的 Web 平台特性（如 Web Components）的启发，并且有自己的脚手架工具（`angular-seed`）。使用`AngularJS`。
 
-我需要一个更轻量级的，支持实时绑定模板、路由、与主流库（如 `jQuery` 和 `Dojo`）集成，并针对性能进行了优化。它还应该支持一种实现模型、视图和控制器的方法。它可能还没有用于许多大型公共应用，但具有潜力。理想情况下，该方案应该由具有创建许多复杂应用经验的人构建。使用 `CanJS.`。
+我需要一个能为构建大规模应用提供极佳基础的方案。它应该支持成熟的组件基础设施、支持懒加载且可以异步的模块、与 CDN 的简单集成、广泛的组件模块（图形、图表、网格等）以及对国际化（i18n, l10n）的强大支持。它应该支持 OOP、MVC 以及构建更复杂架构的构建块。使用`Dojo`。
 
-我需要一个声明式的、通过视图来推导行为的方案。它专注于通过自定义 HTML 标签和组件来指定应用程序意图。它应该支持易于测试、URL 管理（路由）以及通过变体 MVC 实现关注点分离。它采取了与大多数框架不同的方法，提供了一个 HTML 编译器来在 HTML 中创建自己的 DSL。它可能受到即将推出的 Web 平台特性（如 Web Components）的启发，并且有自己的脚手架工具（angular-seed）。使用 `AngularJS.`。
+我需要一个受益于 YUI 扩展基础设施的方案。它应该支持模型、视图和路由器，并让编写支持路由、视图切换等更多的多视图应用程序变得简单。虽然体积较大，但它是一个完整的解决方案，包含了组件/插件以及创建组织良好的应用程序架构所需的工具。它可能有脚手架工具（`yuiproject`），但这些工具需要更新。使用`YUI`。
 
-我需要一个能为构建大规模应用提供极佳基础的方案。它应该支持成熟的组件基础设施、支持懒加载且可以异步的模块、与 CDN 的简单集成、广泛的组件模块（图形、图表、网格等）以及对国际化（i18n, l10n）的强大支持。它应该支持 OOP、MVC 以及构建更复杂架构的构建块。使用 `Dojo.`。
+我需要一个简单的、重视异步接口且无任何依赖的方案。它应该是有主见的，但在构建应用的方式上是灵活的。该框架应该提供模型、视图、控制器、事件和路由等核心功能，同时保持极轻量。它应该针对 CoffeeScript 的使用进行优化，并附带完整的文档。使用`Spine`。
 
-我需要一个受益于 YUI 扩展基础设施的方案。它应该支持模型、视图和路由器，并让编写支持路由、视图切换等更多的多视图应用程序变得简单。虽然体积较大，但它是一个完整的解决方案，包含了组件/插件以及创建组织良好的应用程序架构所需的工具。它可能有脚手架工具（yuiproject），但这些工具需要更新。使用 `YUI.`。
+我需要一个能够通过的底层数据模型和声明式绑定轻松构建动态 UI 的方案。它应该通过双向绑定在模型变化时自动更新我的 UI，并支持对模型数据的依赖跟踪。我应该能够在我喜欢的任何框架甚至现有应用中使用它。它还应该内置模板渲染并易于扩展。使用`KnockoutJS`。
 
-我需要一个简单的、重视异步接口且无任何依赖的方案。它应该是有主见的，但在构建应用的方式上是灵活的。该框架应该提供模型、视图、控制器、事件和路由等核心功能，同时保持极轻量。它应该针对 CoffeeScript 的使用进行优化，并附带完整的文档。使用 `Spine.`。
-
-我需要一个能够通过的底层数据模型和声明式绑定轻松构建动态 UI 的方案。它应该通过双向绑定在模型变化时自动更新我的 UI，并支持对模型数据的依赖跟踪。我应该能够在我喜欢的任何框架甚至现有应用中使用它。它还应该内置模板渲染并易于扩展。使用 `KnockoutJS.`。
-
-我需要一个帮助我构建简单 Web 应用程序和网站的方案。我不预期涉及大量的代码，因此代码组织不需要太担心。该方案应该抽象浏览器差异，以便我可以专注于有趣的部分。它应该让我轻松绑定事件、与远程服务交互、具有可扩展性并拥有巨大的插件社区。使用 `jQuery.`。
+我需要一个帮助我构建简单 Web 应用程序和网站的方案。我不预期涉及大量的代码，因此代码组织不需要太担心。该方案应该抽象浏览器差异，以便我可以专注于有趣的部分。它应该让我轻松绑定事件、与远程服务交互、具有可扩展性并拥有巨大的插件社区。使用`jQuery`。
 
 ### 开发者如何看待最流行的框架？
 
@@ -1093,45 +1076,41 @@ JavaScript 库不应止于“query”，这就是为什么 `Dojo` 早期就专�
 
 #### Ember.js
 
-**优点：** 实时模板和可观察对象的结合改变了我编写 JavaScript 的方式。起初可能需要花点时间理解，但最终你会获得良好的职责分离。我发现一旦我设置好了一切，添加相当复杂的功能只需要几行代码。如果没有 `Ember`，实现这些相同的功能将是痛苦。
+**优点：** 实时模板和可观察对象的结合改变了我编写 JavaScript 的方式。起初可能需要花点时间理解，但最终你会获得良好的职责分离。我发现一旦我设置好了一切，添加相当复杂的功能只需要几行代码。如果没有`Ember`，实现这些相同的功能将是痛苦。
 
-**缺点：** Ember 尚未达到 1.0。许多事情仍然处于变动中，例如 `router` 和 `ember-data`。新网站非常有帮助，但 `Ember` 的文档仍然不像其他框架那样丰富。此外，由于框架中存在许多“魔法”，这可能会让人害怕。担心如果某些东西坏了，你无法找出原因。噢，而且 `ember` 给你的错误信息通常很糟糕。
+**缺点：** Ember 尚未达到 1.0。许多事情仍然处于变动中，例如`router`和`ember-data`。新网站非常有帮助，但`Ember`的文档仍然不像其他框架那样丰富。此外，由于框架中存在许多“魔法”，这可能会让人害怕。担心如果某些东西坏了，你无法找出原因。噢，而且`ember`给你的错误信息通常很糟糕。
 
 **优点：**
 
 关键因素：
 
-a) 允许我避免大量模板代码的功能（绑定、计算属性、带有酷炫的 的视图层）。
+a) 允许我避免大量模板代码的功能（绑定、计算属性、带有酷炫的视图层）。
 
 b) 核心团队：我是一个 Rails 开发者，了解 Yehuda Katz 的工作。我信任这个家伙 =)
 
-**缺点：** 文档。非常遗憾的是 `Ember` 没有像 `Backbone`、`Angular` 或其他框架那样良好的文档、教程、视频。目前，我们通过浏览代码来寻找文档，这并不理想。
+**缺点：** 文档。非常遗憾的是`Ember`没有像`Backbone`、`Angular`或其他框架那样良好的文档、教程、视频。目前，我们通过浏览代码来寻找文档，这并不理想。
 
-**优点：** 约定优于配置。`Ember` 为你做了许多微小决策，它无疑是目前构建客户端应用最简单的方法。
+**优点：** 约定优于配置。`Ember`为你做了许多微小决策，它无疑是目前构建客户端应用最简单的方法。
 
-**缺点：** 学习曲线。它缺少像 `Backbone` 等框架所拥有的入门指南，这部分是因为社区较小，但我认为更多是因为代码库在 1.0 之前处于变动状态。
+**缺点：** 学习曲线。它缺少像`Backbone`等框架所拥有的入门指南，这部分是因为社区较小，但我认为更多是因为代码库在 1.0 之前处于变动状态。
 
-**优点：** 简单、绑定、与 `Handlebars` 的紧密集成、在自己的代码中实现模块化的便利性。
+**优点：** 简单、绑定、与`Handlebars`的紧密集成、在自己的代码中实现模块化的便利性。
 
-**缺点：** 我希望与 `ember-data` 有稳定的集成，并有与 REST API 同步的内置 `localStorage` 支持，但嘿，那是某一天会实现的幻想；-;
+**缺点：** 我希望与`ember-data`有稳定的集成，并有与 REST API 同步的内置`localStorage`支持，但嘿，那是某一天会实现的幻想；-;
 
 #### Backbone.js
 
-**优点：** 简单——只有 4 个核心组件（`Collection`, `Model`, `View`, `Router`）。庞大的社区（生态系统）以及 StackOverflow 上有许多解决方案。像 `Marionette` 或 `Vertebrae` 这样的高阶框架内部包含许多巧妙的代码。有些人可能喜欢“低级”——需要编写大量的模板代码，但可以获得定制的应用程序架构。
-
-
-
-
+**优点：** 简单——只有 4 个核心组件（`Collection`, `Model`, `View`, `Router`）。庞大的社区（生态系统）以及 StackOverflow 上有许多解决方案。像`Marionette`或`Vertebrae`这样的高阶框架内部包含许多巧妙的代码。有些人可能喜欢“低级”——需要编写大量的模板代码，但可以获得定制的应用程序架构。
 
 ### Backbone
 
-**缺点：** 我不喜欢 `extend` 方法的工作方式——它将父对象的内容拷贝到新对象中。原型继承才是万岁（FTW）。有时我觉得文档示例中缺少真实世界的应用场景。此外，在读完 TODO 教程后，还需要大量的研究来确定如何构建更大的应用。
+**缺点：** 我不喜欢`extend`方法的工作方式——它将父对象的内容拷贝到新对象中。原型继承才是万岁（FTW）。有时我觉得文档示例中缺少真实世界的应用场景。此外，在读完 TODO 教程后，还需要大量的研究来确定如何构建更大的应用。
 
-我发现来自 DocumentCloud 的项目中缺少了官方的 AMD 支持（BB, _）。[注意：这在 `RequireJS 2.0` 的新的 `RequireJS shim()` 方法中不应该是一个问题]。
+我发现来自 DocumentCloud 的项目中缺少了官方的 AMD 支持（BB, _）。[注意：这在`RequireJS 2.0`的新的`RequireJS shim()`方法中不应该是一个问题]。
 
-**优点：** 在最初经历了理解 Backbone 运行机制的大脑风暴后，它是非常有用的。有用体现在：支持良好、轻量级，并且在合理的范围内不断更新。它与天然的朋友 Underscore、`jQuery/Zepto` 结合，这些都是我工作室大多数项目都会使用的工具。
+**优点：** 在最初经历了理解 Backbone 运行机制的大脑风暴后，它是非常有用的。有用体现在：支持良好、轻量级，并且在合理的范围内不断更新。它与天然的朋友 Underscore、`jQuery/Zepto`结合，这些都是我工作室大多数项目都会使用的工具。
 
-**缺点：** 关于如何使用 Backbone 的教程数量极不均衡，且分布在 Backbone 生命周期的不同时期。我曾让其他开发者看看 Backbone，他们写的竟然是 `v0.3` 版本的代码。完全不顾现状。虽然这不是 Backbone 自身可以解决的问题，但这无疑是与该框架相关的重大槽点。
+**缺点：** 关于如何使用 Backbone 的教程数量极不均衡，且分布在 Backbone 生命周期的不同时期。我曾让其他开发者看看 Backbone，他们写的竟然是`v0.3`版本的代码。完全不顾现状。虽然这不是 Backbone 自身可以解决的问题，但这无疑是与该框架相关的重大槽点。
 
 我假设在理论上你可以将其应用于任何地方，但在我看来，Backbone 是反复出现的。见鬼，我甚至看到几个月前的文章在使用古老的 Backbone 方法和模式。
 
@@ -1139,7 +1118,7 @@ b) 核心团队：我是一个 Rails 开发者，了解 Yehuda Katz 的工作。
 
 **优点：** 提供了恰到好处的抽象且没有偏见——允许你根据项目需求对其进行定制。
 
-**缺点：** 我会重写（可能删除）`Backbone.sync`。它内置了典型的客户端发起的 HTTP 通信假设，不能很好地适应 `WebSockets` 的推送特性。
+**缺点：** 我会重写（可能删除）`Backbone.sync`。它内置了典型的客户端发起的 HTTP 通信假设，不能很好地适应`WebSockets`的推送特性。
 
 **优点：** 它非常容易上手，为基于 MV* 的框架提供了一个很好的入口。它具有很强的定制性，而且还有很多人在使用它，使得寻找帮助或支持变得容易。
 
@@ -1153,27 +1132,27 @@ RESTful API 有很多优点，但缺乏批量保存功能（诚然这是 REST �
 
 a) 双向数据绑定非常强大。你倾向于更多地考虑模型及其所处的状态，而不是一系列需要发生的事件。模型是单一真理源。
 
-b) 性能。`AngularJS` 下载包很小。它的模板使用 DOM 节点而不是将字符串转换为 DOM 节点，性能应该更好。
+b) 性能。`AngularJS`下载包很小。它的模板使用 DOM 节点而不是将字符串转换为 DOM 节点，性能应该更好。
 
-c) 如果你针对的是现代浏览器并且/或者稍微小心，你也可以从依赖中剔除 `jQuery`。
+c) 如果你针对的是现代浏览器并且/或者稍微小心，你也可以从依赖中剔除`jQuery`。
 
-**缺点：** 我希望能够为从模型变化传播出来的 UI 状态更改指定过渡。特别是对于使用 `ng-show` 或 `ng-hide` 的元素，我希望以一种简单的声明式方式使用淡入或滑入效果。
+**缺点：** 我希望能够为从模型变化传播出来的 UI 状态更改指定过渡。特别是对于使用`ng-show`或`ng-hide`的元素，我希望以一种简单的声明式方式使用淡入或滑入效果。
 
-**优点：** 它非常直观，拥有优秀的文档。我喜欢他们的数据绑定方法、基于 HTML 的视图以及嵌套作用。我从 `Backbone/Thorax` 切换到 `Angular` 后再也没有回头过。一个新的 Chrome 扩展程序 `Batarang` 与 Chrome 开发者工具集成，并提供了对 `Angular` 数据结构的实时访问。
+**优点：** 它非常直观，拥有优秀的文档。我喜欢他们的数据绑定方法、基于 HTML 的视图以及嵌套作用。我从`Backbone/Thorax`切换到`Angular`后再也没有回头过。一个新的 Chrome 扩展程序`Batarang`与 Chrome 开发者工具集成，并提供了对`Angular`数据结构的实时访问。
 
-**缺点：** 我希望内置支持如 `drag'n'drop` 之类的功能，不过可以使用 GitHub 上的外部组件来添加。我也希望看到更多可复用的第三方组件。我认为 `AngularJS` 生态系统变得更加成熟只是时间问题，那时这些组件就会像 `jQuery` 社区中一样随处可用。
+**缺点：** 我希望内置支持如`drag'n'drop`之类的功能，不过可以使用 GitHub 上的外部组件来添加。我也希望看到更多可复用的第三方组件。我认为`AngularJS`生态系统变得更加成熟只是时间问题，那时这些组件就会像`jQuery`社区中一样随处可用。
 
 **优点：** 它极大地减少了样板代码，允许通过组件进行良好的代码复用，扩展了 HTML 语法，使得许多复杂功能最终变得像在 HTML 中应用一个指令（属性）一样简单，并且由于对依赖注入的完全投入，它非常容易测试。
 
-你可以不使用 `jQuery` 或不直接操作 `DOM` 来编写一个复杂的应用程序。这确实是一个了不起。
+你可以不使用`jQuery`或不直接操作`DOM`来编写一个复杂的应用程序。这确实是一个了不起。
 
-**缺点：** 它的学习曲线比 `Backbone`（后者很容易掌握）稍微陡一些，但收益是值得的。文档可以更好。
+**缺点：** 它的学习曲线比`Backbone`（后者很容易掌握）稍微陡一些，但收益是值得的。文档可以更好。
 
 ### KnockoutJS
 
-**优点：** 我并不一定总是使用它，但 `KnockoutJS` 对于单页应用来说太棒了。订阅实时排序非常容易；使用可观察数组，为 Backbone 中所谓的“集合视图”提供了好得多的 API。以及在可观察对象上使用自定义事件来实现效果等。
+**优点：** 我并不一定总是使用它，但`KnockoutJS`对于单页应用来说太棒了。订阅实时排序非常容易；使用可观察数组，为 Backbone 中所谓的“集合视图”提供了好得多的 API。以及在可观察对象上使用自定义事件来实现效果等。
 
-**缺点：** 感觉 `API` 很难扩展，在较大的应用中可能更倾向于折腾 `Backbone`。（但这部分也是由于社区支持的原因）。
+**缺点：** 感觉`API`很难扩展，在较大的应用中可能更倾向于折腾`Backbone`。（但这部分也是由于社区支持的原因）。
 
 **优点：** 我喜欢数据绑定机制，并觉得使用它非常舒服。我特别喜欢他们如何用控制流绑定替换模板。
 
@@ -1181,9 +1160,9 @@ c) 如果你针对的是现代浏览器并且/或者稍微小心，你也可以�
 
 ### Dojo
 
-**优点：** 从语法上说，`Dojo` 非常简单。它允许动态且健壮的构建，在某些情况下初始加载文件仅为 6k。它兼容 AMD，使其极具可移植性，并且箱箱提供了大量功能，从基础的 DOM 交互到复杂的 SVG、VML 和 canvas 功能。小部件系统 `Dijit` 在易用性和扩展性方面是无与伦比的。这是一个非常完备且完整的工具包。
+**优点：** 从语法上说，`Dojo`非常简单。它允许动态且健壮的构建，在某些情况下初始加载文件仅为 6k。它兼容 AMD，使其极具可移植性，并且箱箱提供了大量功能，从基础的 DOM 交互到复杂的 SVG、VML 和 canvas 功能。小部件系统`Dijit`在易用性和扩展性方面是无与伦比的。这是一个非常完备且完整的工具包。
 
-**缺点：** `dojo/_base/declare` 功能并非 100% 遵循严格模式，目前由于向下兼容性存在一些开销，尽管这会在 `Dojo 2.0` 发布时大部分消失。
+**缺点：** `dojo/_base/declare`功能并非 100% 遵循严格模式，目前由于向下兼容性存在一些开销，尽管这会在`Dojo 2.0`发布时大部分消失。
 
 **优点：** 良好的组件：标签页、数据网、表单管理器——跨浏览器渲染相同。兼容 AMD。易于使用 mock 进行测试。与其他框架集成得良好，感谢 AMD。
 
@@ -1191,9 +1170,9 @@ c) 如果你针对的是现代浏览器并且/或者稍微小心，你也可以�
 
 ### YUI
 
-**优点：** `YUI3` 是一个模块化且随用随用的组件库，包含了 Backbone 的所有优点以及更多。它甚至（在我看来）通过解耦某些内容改进了 Backbone 的某些概念（例如，属性是一个独立的模块，可以混合到任何对象中——事件模块也可以类似地混合）。
+**优点：** `YUI3`是一个模块化且随用随用的组件库，包含了 Backbone 的所有优点以及更多。它甚至（在我看来）通过解耦某些内容改进了 Backbone 的某些概念（例如，属性是一个独立的模块，可以混合到任何对象中——事件模块也可以类似地混合）。
 
-**缺点：** 我希望看到 `YUI3` 支持 `Ember` 的某些自动装配（可选）。我认为这是 `Ember` 的真正胜利；否则，我将 `YUI3` 视为一个可以挑选所需内容的卓越组件库。我也希望看到更兼容 AMD 的模块加载器。现在的加载器工作得很好；但如果我能基于 AMD 模块启动新项目，并引入特定的 `YUI3` 组件以及其他地方的其他东西，就更完美了。
+**缺点：** 我希望看到`YUI3`支持`Ember`的某些自动装配（可选）。我认为这是`Ember`的真正胜利；否则，我将`YUI3`视为一个可以挑选所需内容的卓越组件库。我也希望看到更兼容 AMD 的模块加载器。现在的加载器工作得很好；但如果我能基于 AMD 模块启动新项目，并引入特定的`YUI3`组件以及其他地方的其他东西，就更完美了。
 
 ### JavascriptMVC
 
@@ -1203,53 +1182,51 @@ c) 如果你针对的是现代浏览器并且/或者稍微小心，你也可以�
 
 ### Maria
 
-**优点：** 因为 `Maria` 是一个纯粹的 MVC 框架，专注于仅仅做一个 MVC 框架。不多也不少。它简洁简单。
-
-
-
-
+**优点：** 因为`Maria`是一个纯粹的 MVC 框架，专注于仅仅做一个 MVC 框架。不多也不少。它简洁简单。
 
 **缺点：** 源代码之外需要多一些用法文档，再加上多几个测试用例。如果能有一个深入讲解如何在 Maria 中真实使用 MVC 的教程就就更好了。
 
 ### Cujo.js
 
-**优点：** 真实的应用几乎从不完美地契合 `MV*` 框架，最重要的部分往往在框之外。使用 `cucho.js`，你可以定义这个框。
+**优点：** 真实的应用几乎从不完美地契合`MV*`框架，最重要的部分往往在框之外。使用`cucho.js`，你可以定义这个框。
 
-是的，`cucho.js` 拥有类似 `MV*` 的高级功能，用于创建视图、模型、控制器等，但每个应用都是不同的，没有任何框架能提供 100% 的解决方案。`cucho.js` 并不试图涵盖一切，它还提供了底层工具、架构支撑和丰富的插件系统，这些甚至可以用于集成和扩展其他 `MV*` 框架。
+是的，`cucho.js`拥有类似`MV*`的高级功能，用于创建视图、模型、控制器等，但每个应用都是不同的，没有任何框架能提供 100% 的解决方案。`cucho.js`并不试图涵盖一切，它还提供了底层工具、架构支撑和丰富的插件系统，这些甚至可以用于集成和扩展其他`MV*`框架。
 
 创建最适合你应用程序的架构，而不是让你的应用程序去迎合别人预定义的架构。
 
 **缺点：** 更广泛的 JavaScript 社区完全没有准备好，也没有经过训练来处理大型应用程序。我们大多数人甚至不知道设计模式和架构模式的存在。
 
-由于 `cucho.js` 与其他框架如此不同，它需要的不仅仅是简单的 API 参考和代码片段。如果没有教程、教育材料和分步示例，`cucho.js` 在未经过训练的眼睛眼中可能看起来很奇怪且难以捉摸，但文档预计很快推出。
+由于`cucho.js`与其他框架如此不同，它需要的不仅仅是简单的 API 参考和代码片段。如果没有教程、教育材料和分步示例，`cucho.js`在未经过训练的眼睛眼中可能看起来很奇怪且难以捉摸，但文档预计很快推出。
 
 ### ExtJS
 
-**优点：** 我认为 `ExtJS` 与 `Ext Designer` 结合使用效果最好。通过让非程序员模拟 UI，让程序员可以填补空白，这使其具有了于其他 GUI 框架的优势。我认为将其与如 `Backbone` 类的 MVC 框架进行比较并不能体现它的真正价值——它的优势在于创建丰富的 GUI，而不是轻量级的 Web 应用。
+**优点：** 我认为`ExtJS`与`Ext Designer`结合使用效果最好。通过让非程序员模拟 UI，让程序员可以填补空白，这使其具有了于其他 GUI 框架的优势。我认为将其与如`Backbone`类的 MVC 框架进行比较并不能体现它的真正价值——它的优势在于创建丰富的 GUI，而不是轻量级的 Web 应用。
 
-对于复杂的商业化后台应用程序，我认为在所有 JavaScript 解决方案中，`ExtJS` 仍然是最佳选择（即不是 `GWT` 等）。对于面向公众的 Web 应用，我更倾向于使用能让我对标记有更多控制权的（理想情况下是能够优雅降级的方案）。
+对于复杂的商业化后台应用程序，我认为在所有 JavaScript 解决方案中，`ExtJS`仍然是最佳选择（即不是`GWT`等）。对于面向公众的 Web 应用，我更倾向于使用能让我对标记有更多控制权的（理想情况下是能够优雅降级的方案）。
 
-**缺点：** 与许多其他现代结构化框架相比，它的学习曲线更陡。有人可能会认为，如果你现在是为了长期投资 `ExtJS`，那么花费这些时间学习是值得的；然而，我认为这类解决方案应该旨在尽可能地缩短团队上手使用它的时间。
+**缺点：** 与许多其他现代结构化框架相比，它的学习曲线更陡。有人可能会认为，如果你现在是为了长期投资`ExtJS`，那么花费这些时间学习是值得的；然而，我认为这类解决方案应该旨在尽可能地缩短团队上手使用它的时间。
 
-**优点：** 我认为 `ExtJS 4` 的一个大特点是它从一开始就带入 MVC 思维和首选的文件系统结构。与 `Dojo` 不同，初始教程似乎大多关于增强现有网站，而 `ExtJS` 则假设你是从零开始的。
 
-使用 `ExtJS` 真的完全感觉不像在处理 HTML。组件库足够丰富，可以让你在不触碰比启动应用所需的更多 HTML 的情况下，让工作走得很远。
 
-当 Web 组件（Web components）得到更广泛的支持时，看到两者的对比将非常有趣。这最终将允许操作 `DOM`，而无需担心破坏任何组件或导致应用程序的内部状态变得不一致。
+**优点：** 我认为 `ExtJS 4` 的一个大特点是它从一开始就带入 `MVC` 思维和首选的文件系统结构。与 `Dojo` 不同，初始教程似乎大多关于增强现有网站，而 `ExtJS` 则假设你是从零开始的。
+
+使用 `ExtJS` 真的完全感觉不像在处理 `HTML`。组件库足够丰富，可以让你在不触碰比启动应用所需的更多 `HTML` 的情况下，让工作走得很远。
+
+当 `Web` 组件（`Web components`）得到更广泛的支持时，看到两者的对比将非常有趣。这最终将允许操作 `DOM`，而无需担心破坏任何组件或导致应用程序的内部状态变得不一致。
 
 **缺点：** 许可协议被某些人认为具有限制性且难以理解。如果使用它的前期成本和长期成本更清晰，会有更多人投资 `ExtJS`。这在某些其他结构化解决方案中不是担心的问题，但对于大型企业来说可能也不是大问题。
 
-**优点：** `ExtJS` 是快速构建内部使用的 RIA（富交互应用程序）的优秀包。我个人非常喜欢使用 HTML 和 JavaScript 进行构建，对我来说，在那个层级折腾非常有成就感。尽管 `ExtJS` 让你感觉不像真的在处理 HTML，但它仍然提供了很多，尤其是当你用它来创建一个复杂的 UI 时。
+**优点：** `ExtJS` 是快速构建内部使用的 `RIA`（富交互应用程序）的优秀包。我个人非常喜欢使用 `HTML` 和 `JavaScript` 进行构建，对我来说，在那个层级折腾非常有成就感。尽管 `ExtJS` 让你感觉不像真的在处理 `HTML`，但它仍然提供了很多，尤其是当你用它来创建一个复杂的 `UI` 时。
 
-**缺点：** 话如此……我完全同意它非常沉重，我不认为会将其推荐面向外部的 Web 应用。我对整个包最大的意见其实是它测试起来比我预期的要麻烦得多。我们的测试人员最终实际上切换到了 `Sikuli`，因为在 `Selenium` 中与它协作已经变成了一场战斗。
+**缺点：** 话如此……我完全同意它非常沉重，我不认为会将其推荐面向外部的 `Web` 应用。我对整个包最大的意见其实是它测试起来比我预期的要麻烦得多。我们的测试人员最终实际上切换到了 `Sikuli`，因为在 `Selenium` 中与它协作已经变成了一场战斗。
 
-### Batman
+## Batman
 
 **优点：** 它有一个非常棒且易于使用的视图绑定系统。与 `Rails` 配合得非常好，并且完全遵循“约定优于配置”。
 
 **缺点：** 文档可以做得更好，我感觉 `Shopify` 不会添加他们所说要添加的功能。
 
-### 不要害怕实验
+## 不要害怕实验
 
 虽然开发者不太可能需要学习使用这些框架中的好几个，但我确实鼓励探索那些你不熟悉的框架。在这个过程中，可以学到多如山般的有趣事实和技术。
 
@@ -1257,141 +1234,135 @@ c) 如果你针对的是现代浏览器并且/或者稍微小心，你也可以�
 
 无论你最终是否使用不同的解决方案，归根结底，你从探索中获得的只有关于现有世界的更多知识。
 
-### 超越 MV* 框架
+## 超越 MV* 框架
 
-虽然 `MV*` 模式族在结构化应用程序方面非常流行，但它们的局限性在于，它们没有解决任何类型的应用层、视图之间的通信、执行工作的服务或任何其他问题。因此，开发者可能会发现，他们有时需要探索 MVC 之外的内容——有些时候你绝对需要将他们提供的东西更进一步。
+虽然 `MV*` 模式族在结构化应用程序方面非常流行，但它们的局限性在于，它们没有解决任何类型的应用层、视图之间的通信、执行工作的服务或任何其他问题。因此，开发者可能会发现，他们有时需要探索 `MVC` 之外的内容——有些时候你绝对需要将他们提供的东西更进一步。
 
-我们联系了那些通过自己的模式或对现有框架进行扩展来进一步推进 MVC 的开发者，以获取关于你何时需要更多内容的见解。
+我们联系了那些通过自己的模式或对现有框架进行扩展来进一步推进 `MVC` 的开发者，以获取关于你何时需要更多内容的见解。
 
+我花了几乎一年的时间尝试解决这个问题，但最终我意识到将它强行引入 `MV` 并不是一个可行的方案。我处理的是一个“无定模型”，而这正是导致崩溃的地方。换句话说，如果你没有一个定义良好的模型，大多数现代 `JavaScript` 框架都帮不了你。
 
+> 这就是[核心 J2EE 模式](http://java.sun.com/blueprints/corej2eepatterns/Patterns/)² 发挥用场的地方。我在阅读 `Matt Zandstra` 写的 [PHP 对象、模式与实践](http://www.amazon.com/Objects-Patterns-Practice-Matt-Zandstra/dp/1590599098)² 时对它们产生了兴趣，我很幸这么做了！J2EE 模式基本上概述了一个请求驱动的过程，由 `URL` 驱动应用程序的行为。简而言之，创建一个请求，对其进行修改，然后用它决定要渲染的视图。
 
+> 为任何感兴趣的人扩展了关于[请求驱动的 JavaScript 应用和 J2EE 模式](http://dblogit.com/archives/3895)³的经验。
 
-
-我花了几乎一年的时间尝试解决这个问题，但最终我意识到将它强行引入 `MV` 并不是一个可行的方案。我处理的是一个“无定模型”，而这正是导致崩溃的地方。换句话说，如果你没有一个定义良好的模型，大多数现代 JavaScript 框架都帮不了你。
-
-> 这就是[核心 J2EE 模式](http://java.sun.com/blueprints/corej2eepatterns/Patterns/)^(71) 发挥用场的地方。我在阅读 Matt Zandstra 写的 [PHP 对象、模式与实践](http://www.amazon.com/Objects-Patterns-Practice-Matt-Zandstra/dp/1590599098)^(72) 时对它们产生了兴趣，我很幸这么做了！J2EE 模式基本上概述了一个请求驱动的过程，由 URL 驱动应用程序的行为。简而言之，创建一个请求，对其进行修改，然后用它决定要渲染的视图。
-
-> 为任何感兴趣感兴趣的人扩展了关于[请求驱动的 JavaScript 应用和 J2EE 模式](http://dblogit.com/archives/3895)^(73)的经验。
-> *— Dustin Boston，Aura 合著者*
+> — *Dustin Boston，Aura 合著者*
 
 ## 结论
 
-虽然现在对于构建 JavaScript Web 应用程序结构有多种选择，但在选择过程中保持**勤勉**至关重要——花时间彻底评估你的选项，以便做出产生可持续、**可维护**代码的决策。框架的多样性促进了创新，而过度的相似只会产生噪音。
+虽然现在对于构建 `JavaScript` Web 应用程序结构有多种选择，但在选择过程中保持**勤勉**至关重要——花时间彻底评估你的选项，以便做出产生可持续、**可维护**代码的决策。框架的多样性促进了创新，而过度的相似只会产生噪音。
 
 像 `TodoMVC` 这样的项目可以帮助你将范围缩小到你认为对特定项目最有趣或最舒适的选项。记住花时间仔细挑选，不要太受特定模式的束缚，并记住在所选的方案基础上进行构建以最好符合你应用程序的需求是完全可以接受的。
 
 尝试不同的框架也将为你提供解决常见问题的不同视角，这反过来会让你成为更好的程序员。
 
-*感谢我的 TodoMVC 团队成员 [Sindre Sorhus](http://sindresorhus.com/)^(74) 在本章节微调和技术审查方面提供的帮助。*
+感谢我的 `TodoMVC` 团队成员 [Sindre Sorhus](http://sindresorhus.com/)⁴ 在本章节微调和技术审查方面提供的帮助。
 
-1. [`developer.mozilla.org/en/DOM/About_the_Document_Object_Model`](https://developer.mozilla.org/en/DOM/About_the_Document_Object_Model)
-2. [`jquery.com`](http://jquery.com)
-3. [`en.wikipedia.org/wiki/Spaghetti_code`](http://en.wikipedia.org/wiki/Spaghetti_code)
-4. [`addyosmani.com/resources/essentialjsdesignpatterns/book/#detailmvcmvp`](http://addyosmani.com/resources/essentialjsdesignpatterns/book/#detailmvcmvp)
-5. [`backbonejs.org`](http://backbonejs.org)
-6. [`addyosmani.com/resources/essentialjsdesignpatterns/book/#detailmvcmvp`](http://addyosmani.com/resources/essentialjsdesignpatterns/book/#detailmvcmvp)
-7. [`gmail.com`](http://gmail.com)
-8. [`docs.google.com`](http://docs.google.com)
-9. [`addyosmani.com/blog/digesting-javascript-mvc-pattern-abuse-or-evolution/`](http://addyosmani.com/blog/digesting-javascript-mvc-pattern-abuse-or-evolution/)
-10. [`backbonejs.org`](http://backbonejs.org)
-11. [`emberjs.com`](http://emberjs.com)
-12. [`angularjs.com`](http://angularjs.com)
-13. [`spinejs.com`](http://spinejs.com)
-14. [`canjs.us`](http://canjs.us)
-15. [`github.com/wycats`](http://github.com/wycats)
-16. [`github.com/jashkenas`](http://github.com/jashkenas)
-17. [`todomvc.com`](http://todomvc.com)
-18. [`www.todomvc.com`](http://www.todomvc.com)
-19. [`dojotoolkit.org`](http://dojotoolkit.org)
-20. [`dylanschiemann.com`](http://dylanschiemann.com)
-21. [`documentcloud.github.com/backbone`](http://documentcloud.github.com/backbone)
-22. [`emberjs.com`](http://emberjs.com)
-23. [`angularjs.org`](http://angularjs.org)
-24. [`spinejs.com`](http://spinejs.com)
-25. [`knockoutjs.com`](http://knockoutjs.com)
-26. [`dojotoolkit.org`](http://dojotoolkit.org)
-27. [`yuilibrary.com`](http://yuilibrary.com)
-28. [`batmanjs.org`](http://batmanjs.org)
-29. [`code.google.com/closure/library/`](http://code.google.com/closure/library/)
-30. [`agilityjs.com`](http://agilityjs.com)
-31. [`kmalakoff.github.com/knockback`](http://kmalakoff.github.com/knockback)
-32. [`documentcloud.github.com/backbone`](http://documentcloud.github.com/backbone)
-33. [`requirejs.org`](http://requirejs.org)
-34. [`emberjs.com`](http://emberjs.com)
-35. [`requirejs.org`](http://requirejs.org)
-36. [`canjs.us`](http://canjs.us)
-37. [`github.com/petermichaux/maria`](http://github.com/petermichaux/maria)
-38. [`cujojs.github.com`](http://cujojs.github.com)
-39. [`meteor.com`](http://meteor.com)
-40. [`www.socketstream.org`](http://www.socketstream.org)
-41. [`jquery.com`](http://jquery.com)
-42. [`www.sencha.com/products/extjs`](http://www.sencha.com/products/extjs)
-43. [`sammyjs.org`](http://sammyjs.org)
-44. [`javascriptmvc.com`](http://javascriptmvc.com)
-45. [`developers.google.com/web-toolkit/`](http://developers.google.com/web-toolkit/)
-46. [`github.com/troopjs`](http://github.com/troopjs)
-47. [`hay.github.com/stapes`](http://hay.github.com/stapes)
-48. [`somajs.github.com/somajs`](http://somajs.github.com/somajs)
-49. [`bitbucket.org/mckamey/duel`](http://bitbucket.org/mckamey/duel)
-50. [`github.com/jgallen23/fidel`](http://github.com/jgallen23/fidel)
-51. [`github.com/flams/olives`](http://github.com/flams/olives)
-52. [`github.com/rhysbrettbowen/PlastronJS`](http://github.com/rhysbrettbowen/PlastronJS)
-53. [`github.com/creynders/dijon-framework`](http://github.com/creynders/dijon-framework)
-54. [`www.rappidjs.com`](http://www.rappidjs.com)
-55. [`github.com/brokenseal/broke`](http://github.com/brokenseal/broke)
-56. [`weepy.github.com/o_O`](http://weepy.github.com/o_O)
-57. [`github.com/marcuswestin/fun`](http://github.com/marcuswestin/fun)
-58. [`angularjs.org`](http://angularjs.org)
-59. [`requirejs.org`](http://requirejs.org)
-60. [`github.com/addyosmani/todomvc/blob/master/vanilla-examples/vanillaj/js/app.js`](http://github.com/addyosmani/todomvc/blob/master/vanilla-examples/vanillaj/js/app.js)
-61. [`github.com/addyosmani/todomvc/blob/master/architecture-examples/jquery/js/app.js`](http://github.com/addyosmani/todomvc/blob/master/architecture-examples/jquery/js/app.js)
-62. [`github.com/derickbailey/backbone.marionette`](https://github.com/derickbailey/backbone.marionette)
-63. [`github.com/chaplinjs/chaplin`](https://github.com/chaplinjs/chaplin)
-64. [`github.com/addyosmani/backbone-aura/`](https://github.com/addyosmani/backbone-aura/)
-65. [`github.com/walmartlabs/thorax`](https://github.com/walmartlabs/thorax)
-66. [`github.com/backbone-boilerplate/grunt-bbb`](https://github.com/backbone-boilerplate/grunt-bbb)
-67. [`brunch.io/`](http://brunch.io/)
-68. [`lostechies.com/derickbailey/2011/12/16/composite-javascript-applications-with-backbone-and-backbone-marionette/`](http://lostechies.com/derickbailey/2011/12/16/composite-javascript-applications-with-backbone-and-backbone-marionette/)
-69. [`lostechies.com/derickbailey/2011/12/12/composite-js-apps-regions-and-region-managers/`](http://lostechies.com/derickbailey/2011/12/12/composite-js-apps-regions-and-region-managers/)
-70. [`github.com/derickbailey/todomvc/tree/marionette`](https://github.com/derickbailey/todomvc/tree/marionette)
-71. [`java.sun.com/blueprints/corej2eepatterns/Patterns/`](http://java.sun.com/blueprints/corej2eepatterns/Patterns/)
-72. [`www.amazon.com/Objects-Patterns-Practice-Matt-Zandstra/dp/1590599098`](http://www.amazon.com/Objects-Patterns-Practice-Matt-Zandstra/dp/1590599098)
+## 参考链接
 
-
-
-
-
-73. [`dblogit.com/archives/3895`](http://dblogit.com/archives/3895)
-
+1. [`developer.mozilla.org/en/DOM/About_the_Document_Object_Model`](https://developer.mozilla.org/en/DOM/About_the_Document_Object_Model)  
+2. [`jquery.com`](http://jquery.com)  
+3. [`en.wikipedia.org/wiki/Spaghetti_code`](http://en.wikipedia.org/wiki/Spaghetti_code)  
+4. [`addyosmani.com/resources/essentialjsdesignpatterns/book/#detailmvcmvp`](http://addyosmani.com/resources/essentialjsdesignpatterns/book/#detailmvcmvp)  
+5. [`backbonejs.org`](http://backbonejs.org)  
+6. [`addyosmani.com/resources/essentialjsdesignpatterns/book/#detailmvcmvp`](http://addyosmani.com/resources/essentialjsdesignpatterns/book/#detailmvcmvp)  
+7. [`gmail.com`](http://gmail.com)  
+8. [`docs.google.com`](http://docs.google.com)  
+9. [`addyosmani.com/blog/digesting-javascript-mvc-pattern-abuse-or-evolution/`](http://addyosmani.com/blog/digesting-javascript-mvc-pattern-abuse-or-evolution/)  
+10. [`backbonejs.org`](http://backbonejs.org)  
+11. [`emberjs.com`](http://emberjs.com)  
+12. [`angularjs.com`](http://angularjs.com)  
+13. [`spinejs.com`](http://spinejs.com)  
+14. [`canjs.us`](http://canjs.us)  
+15. [`github.com/wycats`](http://github.com/wycats)  
+16. [`github.com/jashkenas`](http://github.com/jashkenas)  
+17. [`todomvc.com`](http://todomvc.com)  
+18. [`www.todomvc.com`](http://www.todomvc.com)  
+19. [`dojotoolkit.org`](http://dojotoolkit.org)  
+20. [`dylanschiemann.com`](http://dylanschiemann.com)  
+21. [`documentcloud.github.com/backbone`](http://documentcloud.github.com/backbone)  
+22. [`emberjs.com`](http://emberjs.com)  
+23. [`angularjs.org`](http://angularjs.org)  
+24. [`spinejs.com`](http://spinejs.com)  
+25. [`knockoutjs.com`](http://knockoutjs.com)  
+26. [`dojotoolkit.org`](http://dojotoolkit.org)  
+27. [`yuilibrary.com`](http://yuilibrary.com)  
+28. [`batmanjs.org`](http://batmanjs.org)  
+29. [`code.google.com/closure/library/`](http://code.google.com/closure/library/)  
+30. [`agilityjs.com`](http://agilityjs.com)  
+31. [`kmalakoff.github.com/knockback`](http://kmalakoff.github.com/knockback)  
+32. [`documentcloud.github.com/backbone`](http://documentcloud.github.com/backbone)  
+33. [`requirejs.org`](http://requirejs.org)  
+34. [`emberjs.com`](http://emberjs.com)  
+35. [`requirejs.org`](http://requirejs.org)  
+36. [`canjs.us`](http://canjs.us)  
+37. [`github.com/petermichaux/maria`](http://github.com/petermichaux/maria)  
+38. [`cujojs.github.com`](http://cujojs.github.com)  
+39. [`meteor.com`](http://meteor.com)  
+40. [`www.socketstream.org`](http://www.socketstream.org)  
+41. [`jquery.com`](http://jquery.com)  
+42. [`www.sencha.com/products/extjs`](http://www.sencha.com/products/extjs)  
+43. [`sammyjs.org`](http://sammyjs.org)  
+44. [`javascriptmvc.com`](http://javascriptmvc.com)  
+45. [`developers.google.com/web-toolkit/`](http://developers.google.com/web-toolkit/)  
+46. [`github.com/troopjs`](http://github.com/troopjs)  
+47. [`hay.github.com/stapes`](http://hay.github.com/stapes)  
+48. [`somajs.github.com/somajs`](http://somajs.github.com/somajs)  
+49. [`bitbucket.org/mckamey/duel`](http://bitbucket.org/mckamey/duel)  
+50. [`github.com/jgallen23/fidel`](http://github.com/jgallen23/fidel)  
+51. [`github.com/flams/olives`](http://github.com/flams/olives)  
+52. [`github.com/rhysbrettbowen/PlastronJS`](http://github.com/rhysbrettbowen/PlastronJS)  
+53. [`github.com/creynders/dijon-framework`](http://github.com/creynders/dijon-framework)  
+54. [`www.rappidjs.com`](http://www.rappidjs.com)  
+55. [`github.com/brokenseal/broke`](http://github.com/brokenseal/broke)  
+56. [`weepy.github.com/o_O`](http://weepy.github.com/o_O)  
+57. [`github.com/marcuswestin/fun`](http://github.com/marcuswestin/fun)  
+58. [`angularjs.org`](http://angularjs.org)  
+59. [`requirejs.org`](http://requirejs.org)  
+60. [`github.com/addyosmani/todomvc/blob/master/vanilla-examples/vanillaj/js/app.js`](http://github.com/addyosmani/todomvc/blob/master/vanilla-examples/vanillaj/js/app.js)  
+61. [`github.com/addyosmani/todomvc/blob/master/architecture-examples/jquery/js/app.js`](http://github.com/addyosmani/todomvc/blob/master/architecture-examples/jquery/js/app.js)  
+62. [`github.com/derickbailey/backbone.marionette`](https://github.com/derickbailey/backbone.marionette)  
+63. [`github.com/chaplinjs/chaplin`](https://github.com/chaplinjs/chaplin)  
+64. [`github.com/addyosmani/backbone-aura/`](https://github.com/addyosmani/backbone-aura/)  
+65. [`github.com/walmartlabs/thorax`](https://github.com/walmartlabs/thorax)  
+66. [`github.com/backbone-boilerplate/grunt-bbb`](https://github.com/backbone-boilerplate/grunt-bbb)  
+67. [`brunch.io/`](http://brunch.io/)  
+68. [`lostechies.com/derickbailey/2011/12/16/composite-javascript-applications-with-backbone-and-backbone-marionette/`](http://lostechies.com/derickbailey/2011/12/16/composite-javascript-applications-with-backbone-and-backbone-marionette/)  
+69. [`lostechies.com/derickbailey/2011/12/12/composite-js-apps-regions-and-region-managers/`](http://lostechies.com/derickbailey/2011/12/12/composite-js-apps-regions-and-region-managers/)  
+70. [`github.com/derickbailey/todomvc/tree/marionette`](https://github.com/derickbailey/todomvc/tree/marionette)  
+71. [`java.sun.com/blueprints/corej2eepatterns/Patterns/`](http://java.sun.com/blueprints/corej2eepatterns/Patterns/)  
+72. [`www.amazon.com/Objects-Patterns-Practice-Matt-Zandstra/dp/1590599098`](http://www.amazon.com/Objects-Patterns-Practice-Matt-Zandstra/dp/1590599098)  
+73. [`dblogit.com/archives/3895`](http://dblogit.com/archives/3895)  
 74. [`sindresorhus.com/`](http://sindresorhus.com/)
 
 # JavaScript 事件与用户响应
 
-：Christian Heilmann
+作者：Christian Heilmann
 
-每当人们问我 JavaScript 和 DOM 中最强大的功能时，我很快就会联想到事件。这是因为浏览器中的事件极其有用。此外，将功能与事件解耦是一个强大的思想，这也就是为什么 [Node.js](http://nodejs.org/)^(1) 成为如此热门的话题的原因。
+每当人们问我 `JavaScript` 和 `DOM` 中最强大的功能时，我很快就会联想到事件。这是因为浏览器中的事件极其有用。此外，将功能与事件解耦是一个强大的思想，这也就是为什么 [Node.js](http://nodejs.org/)¹ 成为如此热门的话题的原因。
 
-今天，让我们回到事件的基础，让你进入开始玩转它们的状态，而不仅仅是给所有元素都加上点击处理器，或者使用 `<a href="javascript:void(0)">` 链接破坏 Web，又用 `onclick="foo()"` 内联处理器弄乱我们的 HTML（我在 2005 年曾详细解释过[**为什么这些是糟糕的主意**](http://www.onlinetools.org/articles/unobtrusivejavascript/chapter4.html)^(2)）。
+
+
+今天，让我们回到事件的基础，让你进入开始玩转它们的状态，而不仅仅是给所有元素都加上点击处理器，或者使用`<a href="javascript:void(0)">`链接破坏 Web，又用`onclick="foo()"`内联处理器弄乱我们的 HTML（我在 2005 年曾详细解释过[为什么这些是糟糕的主意](http://www.onlinetools.org/articles/unobtrusivejavascript/chapter4.html)^(2)）。
 
 注意：本章节使用原生 JavaScript，不使用任何库。我们在这里讨论的很多内容在 jQuery、YUI 或 Dojo 中更容易实现，但理解基础是非常重要的，因为你会发现自己处于一种无法使用库但仍需提供出色解决方案的境地。
 
-**免责声明**：我们在这里使用的事件语法是 [`addEventListener()`](https://developer.mozilla.org/en/DOM/element.addEventListener)^(3)，定义在“[DOM Level 3 Events](http://dev.w3.org/2006/webapi/DOM-Level-3-Events/html/DOM3-Events.html#events-EventTarget-addEventListener)^(4)”规范中，它适用于目前使用的的所有浏览器，Internet Explorer 9 以下版本除外。不过，我们将展示的许多内容可以通过 jQuery 实现，它也支持旧版浏览器。想起来，在 `DOMContentLoaded` 上使用一个简单的 `addEventListener()` 是确保你的脚本不在旧版浏览器上运行的极佳方法。这是一件好事。如果我们想让 Web 演进，我们需要停止向旧浏览器提供复杂且要求刻的代码。如果你以正确的方式构建解决方案，那么 IE 6 就不需要任何 JavaScript 来显示一个可行的（尽管更简单的）解决方案。把你的产品想象成电扶梯：如果你的 JavaScript 没有执行，网站仍然应该作为楼梯使用。
+**免责声明**：我们在这里使用的事件语法是[`addEventListener()`](https://developer.mozilla.org/en/DOM/element.addEventListener)^(3)，定义在“[DOM Level 3 Events](http://dev.w3.org/2006/webapi/DOM-Level-3-Events/html/DOM3-Events.html#events-EventTarget-addEventListener)^(4)”规范中，它适用于目前使用的所有浏览器，Internet Explorer 9 以下版本除外。不过，我们将展示的许多内容可以通过 jQuery 实现，它也支持旧版浏览器。
+
+想起来，在`DOMContentLoaded`上使用一个简单的`addEventListener()`是确保你的脚本不在旧版浏览器上运行的极佳方法。这是一件好事。如果我们想让 Web 演进，我们需要停止向旧浏览器提供复杂且要求刻的代码。如果你以正确的方式构建解决方案，那么 IE 6 就不需要任何 JavaScript 来显示一个可行的（尽管更简单的）解决方案。把你的产品想象成电扶梯：如果你的 JavaScript 没有执行，网站仍然应该作为楼梯使用。
 
 在我们进入事件细节以及如何使用它们之前，请查看几个巧妙利用滚动事件来实现非常出色的效果的演示：
 
-•在寻找设计师时，Wealthfront Engineering 使用了[沿 Z 轴滚动并移动内容](https://www.wealthfront.com/designerwanted)^(5)。这是 [Beercamp 2011 网站](http://2011.beercamp.com/)^(6) 的重要部分。Wealthfront [详细记录了博客](http://eng.wealthfront.com/)^(5)。
-
-•在 `DOMContentLoaded` 上使用一个简单的 `addEventListener()` 是确保你的脚本不在旧版浏览器上运行的极佳方法。
-
-•[滚动路径](http://joim.se/scroll/)^(9) 就是我们得到的结果。
-
-•[jQuery](http://www.jquery.com/)^(2) 处理了大部分此类。
+- 在寻找设计师时，Wealthfront Engineering 使用了[沿 Z 轴滚动并移动内容](https://www.wealthfront.com/designerwanted)^(5)。这是[Beercamp 2011 网站](http://2011.beercamp.com/)^(6)的重要部分。Wealthfront [详细记录了博客](http://eng.wealthfront.com/)^(5)。
+- 在`DOMContentLoaded`上使用一个简单的`addEventListener()`是确保你的脚本不在旧版浏览器上运行的极佳方法。
+- [滚动路径](http://joim.se/scroll/)^(9)就是我们得到的结果。
+- [jQuery](http://www.jquery.com/)^(2)处理了大部分此类。
 
 ### 基础：什么是事件？
 
 你可以为同一个事件分配多个事件处理器，也可以为多个事件分配同一个处理器（如此演示所示）。
 
-`ev` 是我们从事件中获取的对象。而且（再次，在我的情况下，在 Firefox 中）它包含许多有趣的内容：
+`ev`是我们从事件中获取的对象。而且（再次，在我的情况下，在 Firefox 中）它包含许多有趣的内容：
 
 ```javascript
 var log = document.getElementById('log'),
@@ -1408,7 +1379,7 @@ for (i in window) {
 }
 ```
 
-将 `useCapture` 设置为 `false` 意味着我们捕获事件冒泡，而不是捕获阶段。这是一个[长期而艰巨的话题](http://www.w3.org/TR/DOM-Level-Events/#event-flow)^(10)。我们只需说通过将 `useCapture` 设置为 `false`，在 99.7434% 的情况下你没问题（这是一个粗略的估算）。该参数在 Opera 之外的所有浏览器中都是可选的。
+将`useCapture`设置为`false`意味着我们捕获事件冒泡，而不是捕获阶段。这是一个[长期而艰巨的话题](http://www.w3.org/TR/DOM-Level-Events/#event-flow)^(10)。我们只需说，通过将`useCapture`设置为`false`，在 99.7434% 的情况下你没问题（这是一个粗略的估算）。该参数在 Opera 之外的所有浏览器中都是可选的。
 
 现在，事件处理器函数从事件获取一个对象作为参数，这个对象充满了我们可以操作的棒属性。如果你[尝试我的示例](http://thewebrocks.com/demos/smashing-events/eventproperties.html)^(12)，你将看到以下代码的作用：
 
@@ -1431,9 +1402,6 @@ function logeventinfo (ev) {
   log.innerHTML += out + '</ul>';
 }
 ```
-
-
-
 
 ```
 originalTarget: [object HTMLHtmlElement]
@@ -1506,13 +1474,13 @@ explicitOriginalTarget: [object Text]
 isTrusted: true
 ```
 
-它也因事件而异。尝试点击演示并按下按键，你会发现得到不同的结果。你也可以参考[标准 `event` 属性完整列表](https://developer.mozilla.org/en/DOM/event#Properties)^(13)。
+它也因事件而异。尝试点击演示并按下按键，你会发现得到不同的结果。你也可以参考[标准`event`属性完整列表](https://developer.mozilla.org/en/DOM/event#Properties)^(13)。
 
 ### 基础知识的最后：阻止执行和获取目标
 
-在浏览器事件方面，还有两点非常重要：我们必须阻止浏览器对事件执行默认操作，并且我们必须找到事件是在哪个元素上触发的。前者通过 `ev.preventDefault()` 方法实现，后者存储在 `ev.target` 中。
+在浏览器事件方面，还有两点非常重要：我们必须阻止浏览器对事件执行默认操作，并且我们必须找到事件是在哪个元素上触发的。前者通过`ev.preventDefault()`方法实现，后者存储在`ev.target`中。
 
-假设你想知道一个链接是否被点击，但你不想让浏览器跳转，因为你对如何处理该事件有了一个极佳的主意。你可以通过订阅链接的点击事件来实现这一点，并通过调用 `preventDefault()` 来阻止浏览器跳转。以下是 HTML：
+假设你想知道一个链接是否被点击，但你不想让浏览器跳转，因为你对如何处理该事件有了一个极佳的主意。你可以通过订阅链接的点击事件来实现这一点，并通过调用`preventDefault()`来阻止浏览器跳转。以下是 HTML：
 
 ```html
 <a class="prevent" href="http://smashingmagazine.com">Smashing, my dear!</a>
@@ -1535,17 +1503,17 @@ normal.addEventListener('click', function(ev) {
 }, false);
 ```
 
-注意：`document.querySelector()` 是在 DOM 中获取元素的标准方法。它就是 jQuery 中 `$()` 方法所做的事情。你可以阅读 [W3C 规范](http://www.w3.org/TR/selectors-api/)^(14)并在 Mozilla 开发者网络 (MDN) 上获取一些[解释代码片段](https://developer.mozilla.org/En/Code_snippets/QuerySelector)^(15)。
+注意：`document.querySelector()`是在 DOM 中获取元素的标准方法。它就是 jQuery 中`$()`方法所做的事情。你可以阅读[W3C 规范](http://www.w3.org/TR/selectors-api/)^(14)，并在 Mozilla 开发者网络（MDN）上获取一些[解释代码片段](https://developer.mozilla.org/En/Code_snippets/QuerySelector)^(15)。
 
-如果你现在点击链接，你会得到一个弹窗。当你点击“确定”按钮时，没有再发生其他事情了；浏览器不会访问 `http://smashingmagazine.com`。如果没有 `preventDefault()`，浏览器将显示弹窗并跳转到链接。[尝试一下。](http://thewebrocks.com/demos/smashing-events/preventdefault.html)^(16)
+如果你现在点击链接，你会得到一个弹窗。当你点击“确定”按钮时，没有再发生其他事情了；浏览器不会访问`http://smashingmagazine.com`。如果没有`preventDefault()`，浏览器将显示弹窗并跳转到链接。[尝试一下。](http://thewebrocks.com/demos/smashing-events/preventdefault.html)^(16)
 
-访问被点击、悬停或按下按键的元素的普通方法是在处理程序中使用 `this` 关键字。这种方法简洁明了，但实际上是有局限性的，因为 `addEventListener()` 给了我们更好的东西：事件目标。这可能会引起混淆，因为 `this` 可能已经绑定到了其他东西，所以正如规范所示，使用 `ev.currentTarget` 是更稳妥的选择。
+访问被点击、悬停或按下按键的元素的普通方法是在处理程序中使用`this`关键字。这种方法简洁明了，但实际上是有局限性的，因为`addEventListener()`给了我们更好的东西：事件目标。这可能会引起混淆，因为`this`可能已经绑定到了其他东西，所以正如规范所示，使用`ev.currentTarget`是更稳妥的选择。
 
 ### 事件委托：它太棒了。用起来吧！
 
-使用事件对象的 `target` 属性，你可以找出事件发生在哪个元素上。
+使用事件对象的`target`属性，你可以找出事件发生在哪个元素上。
 
-事件的发生是通过遍历整个文档树到达你交互的元素，然后返回主窗口。这意味着，如果你在一个元素上添加事件处理程序，你将免费获得所有的子元素。你只需要测试事件目标并做出相应的响应即可。[查看我的列表示例](http://thewebrocks.com/demos/smashing-events/eventation.html)^(17):
+事件的发生是通过遍历整个文档树到达你交互的元素，然后返回主窗口。这意味着，如果你在一个元素上添加事件处理程序，你将免费获得所有的子元素。你只需要测试事件目标并做出相应的响应即可。[查看我的列表示例](http://thewebrocks.com/demos/smashing-events/eventation.html)^(17)：
 
 ```html
 <ul id="resources">
@@ -1565,10 +1533,6 @@ resources.addEventListener('click', function(ev) {
   }
 }, false);
 ```
-
-
-
-
 
 ```css
 .smooth {
@@ -1593,7 +1557,7 @@ CSS 与 JavaScript 事件之间的交互一直非常强大，但在较新的浏�
 
 #### 按键按下了多长时间？
 
-正如你之前在可用事件列表中看到的，浏览器也给了我们机会来响应键盘输入，并告诉我们用户何时按下了按键。遗憾的是，在浏览器中正确处理按键很难，正如 [Jan Wolter 详细解释的那样](http://unixpapa.com/js/key.html)^(20)。然而，作为一个简单的示例，让我们看看如何以毫秒为单位测量用户按钮多长时间。查看[这个 keytime 演示](http://thewebrocks.com/demos/smashing-events/keytime.html)^(21) 示例。按下按键，你会看到输出字段在按键按住期间不断增长。一旦松开按键，你将看到按下按钮的毫秒数。代码一点也不难：
+正如你之前在可用事件列表中看到的，浏览器也给了我们机会来响应键盘输入，并告诉我们用户何时按下了按键。遗憾的是，在浏览器中正确处理按键很难，正如[Jan Wolter 详细解释的那样](http://unixpapa.com/js/key.html)^(20)。然而，作为一个简单的示例，让我们看看如何以毫秒为单位测量用户按钮多长时间。查看[这个 keytime 演示](http://thewebrocks.com/demos/smashing-events/keytime.html)^(21)示例。按下按键，你会看到输出字段在按键按住期间不断增长。一旦松开按键，你将看到按下按钮的毫秒数。代码一点也不难：
 
 ```javascript
 var resources = document.querySelector('#resources'),
@@ -1604,8 +1568,8 @@ document.addEventListener('keydown', keydown, false);
 document.addEventListener('keyup', keyup, false);
 
 function keydown(ev) {
-  if (time === 0) { 
-    time = ev.timeStamp; 
+  if (time === 0) {
+    time = ev.timeStamp;
     log.classList.add('animate');
   }
 }
@@ -1618,15 +1582,17 @@ function keyup(ev) {
 }
 ```
 
-我们定义了想要元素，并将 `time` 设置为 `0`。然后我们对文档（document）应用了两个事件处理器，一个针对 `keydown`，另一个针对 `keyup`。
+我们定义了想要元素，并将`time`设置为`0`。然后我们对文档（document）应用了两个事件处理器，一个针对`keydown`，另一个针对`keyup`。
 
-在 `keydown` 处理器中，我们检查 `time` 是否为 `0`，如果是，我们将 `time` 设置为事件的 `timeStamp`。我们为输出元素分配一个 CSS 类，这会启动一个 CSS 动画（具体实现方式请参见 CSS 部分）。
+在`keydown`处理器中，我们检查`time`是否为`0`，如果是，我们将`time`设置为事件的`timeStamp`。我们为输出元素分配一个 CSS 类，这会启动一个 CSS 动画（具体实现方式请参见 CSS 部分）。
 
-`keyup` 处理器检查 `time` 是否仍为 `0`（因为在按键按住期间 `keydown` 会被连续触发），如果不是，则计算时间戳之差。我们将 `time` 设回 `0` 并移除该类以停止动画。
+`keyup`处理器检查`time`是否仍为`0`（因为在按键按住期间`keydown`会被连续触发），如果不是，则计算时间戳之差。我们将`time`设回`0`并移除该类以停止动画。
 
 #### 使用 CSS 过渡（以及动画）工作
 
-[CSS 过渡](https://developer.mozilla.org/en/CSS/CSS_transitions)^(22) 会触发一个单一事件，你可以在 JavaScript 中监听该事件，名为 `transitionend`。该事件对象随后有两个属性：`propertyName`（包含发生过渡的属性）和 `elapsedTime`（告诉你花费了多长时间）。查看[这个演示](http://thewebrocks.com/demos/smashing-events/transition.html)^(23) 查看其运行效果。代码非常简单。这里是 CSS：
+[CSS 过渡](https://developer.mozilla.org/en/CSS/CSS_transitions)^(22)会触发一个单一事件，你可以在 JavaScript 中监听该事件，名为`transitionend`。该事件对象随后有两个属性：`propertyName`（包含发生过渡的属性）和`elapsedTime`（告诉你花费了多长时间）。查看[这个演示](http://thewebrocks.com/demos/smashing-events/transition.html)^(23)查看其运行效果。代码非常简单。这里是 CSS：
+
+
 
 ```css
 .plot {
@@ -1660,7 +1626,7 @@ plot.addEventListener('transitionend', function(ev) {
 
 然而，这现在只在 Firefox 中有效，因为 Chrome 和 Safari 使用带有厂商前缀的事件。[David Calhoun 的 gist](https://gist.github.com/702)^(24) 所示，你需要检测浏览器支持的内容并定义事件名称。[CSS 动画事件](https://developer.mozilla.org/en/CSS/animations)^(25) 的工作方式相同，但你有三个事件而不是一个：`animationstart`、`animationend` 和 `animationiteration`。[MDN 有一个关于它的演示](https://developer.mozilla.org/samples/css/animations.html)^(26)。
 
-#### 速度、距离和角度
+## 速度、距离和角度
 
 检测事件的发生是一回事。如果你想对它们进行一些美观且吸引人心的操作，你就需要更进一步，并在其中加入一些数学元素。所以，让我们尝试使用几个处理器来计算当用户在屏幕上拖动元素时移动的角度、距离和速度。[先查看此演示。](http://thewebrocks.com/demos/smashing-events/speedangle.html)^(27)
 
@@ -1721,10 +1687,6 @@ function moveplot(x, y) {
 
 ![Demo](http://jsfiddle.net/codepo8/bAwUf/embedded/result,js,html,css)
 
-
-
-
-
 视频和音频都会触发许多我们可以利用的事件。其中最有趣的是时间事件，它们可以告诉你歌曲或电影已经播放了多久。MDN 上那个[受 MGM 灵感的恐龙动画](http://hacks.mozilla.org/2012/03/making-the-dino-roar-syncing-audio-and-css-transitions/) 是一个非常棒的小型演示；我录制了一个[六分钟的录屏视频](http://www.youtube.com/watch?v=aFIJ_ZpV-8Q) 来解释它是如何实现的。
 
 如果你想看到所有事件运行的演示，JPlayer 团队提供了一个非常棒的[显示媒体事件演示页面](http://www.jplayer.org/HTML5.Media.Event.Inspector/)。
@@ -1740,38 +1702,62 @@ function moveplot(x, y) {
 就是这些。事件并不难；在大多数情况下，你只需要订阅它们，并检查返回的事件对象以看看你可以用它做什么。当然，有时仍然需要大量的浏览器“黑客技巧（hacking）”，但我个人认为，我们与用户交互以及观察他们在做什么的方式多到令人难以置信。如果你如果你想在这方面真正发挥创意，请停止考虑我们现在的用例，去深入研究距离、速度和输入对界面意味着什么。如果你仔细想想，从最大程度上玩《愤怒的小鸟》意味着检测触摸的开始和结束，并检测小鸟起飞的方向。所以，还有什么在阻碍你创造一些互动又酷的东西呢？
 
 1. [http://nodejs.org/]
+
 2. [http://www.onlinetools.org/articles/untrusivejavascript/chapter4.html]
+
 3. [https://developer.mozilla.org/en/DOM/element.addEventListener]
+
 4. [http://dev.w3.org/2006/webapi/DOM-Level-3-Events/DOM3-Events.html#eventsTarget-addEventListener]
+
 5. [https://www.wealthfront.com/designerwanted]
+
 6. [http://2011.beercamp.com/]
+
 7. [http://eng.wealthfront.com/2012/03/scrolling-z-axis-with-css-3d-transforms.html]
+
 8. [http://hakim.se/scroll-effects/]
+
 9. [http://joelb.me/scrollpath/]
+
 10. [http://www.w3.org/TR/DOM-Level-Events/#event-flow]
+
 11. [http://dev.opera.com/articles/event-capture-explained/]
+
 12. [http://thewebrocks.com/demos/smashing-events/eventproperties.html]
+
 13. [https://developer.mozilla.org/en/DOM/event#Properties]
+
 14. [http://www.w3.org/TR/selectors-api/]
+
 15. [https://developer.mozilla.org/En/Code_snippets/QuerySelector]
+
 16. [http://thewebrocks.com/demos/smashing-events/preventdefault.html]
+
 17. [http://thewebrocks.com/demos/smashing-events/eventdelegation.html]
+
 18. [https://developer.mozilla.org/en/DOM/event.pageX]
+
 19. [http://thewebrocks.com/demos/smashing-events/mouseposition.html]
+
 20. [http://unixpapa.com/js/key.html]
+
 21. [http://thewebrocks.com/demos/smashing-events/keytime.html]
+
 22. [https://developer.mozilla.org/en/CSS/CSS_transitions]
+
 23. [http://thewebrocks.com/demos/smashing-events/transitionevent.html]
+
 24. [https://gist.github.com/702866]
+
 25. [https://developer.mozilla.org/en/CSS/CSS_animations]
+
 26. [https://developer.mozilla.org/samples/cssref/animations/animevents.html]
+
 27. [http://thewebrocks.com/demos/smashing-events/speeddistanceangle.html]
+
 28. [http://en.wikipedia.org/wiki/Pythagorean_theorem]
+
 29. [http://coding.smashingmagazine.com/2011/10/04/quick-look-math-animations-javascript/]
-
-
-
-
 
 你的网站可以运行了。现在让我们让它运行得更快。网站性能涉及两个方面：页面加载有多快，以及页面上的代码运行有多快。有很多服务可以提高你的网站加载速度，从[压缩工具](http://stackoverflow.com/questions/3520285/is-there-a-good-javascript-minimizer)^(1)到[CDN](http://en.wikipedia.org/wiki/Content_delivery_network)^(2)，但让它运行得更快取决于你自己。
 
@@ -1806,8 +1792,12 @@ function moveplot(x, y) {
 分析器告诉我们哪些函数消耗了最多的时间。让我们通过切换到 Chrome 开发者工具中的“Profiles”选项卡来创建基准分析，那里提供了三种类型的分析：
 
 - **JavaScript CPU 分析文件**：显示我们的 JavaScript 占用了多少 CPU 时间。
+
 - **CSS 选择器分析文件**：显示处理 CSS 选择器花费了多少 CPU 时间。
+
 - **内存快照 (Heap snapshot)**：显示我们的 JavaScript 对象是如何使用内存的。
+
+
 
 我们想让 JavaScript 运行得更快，因此使用 CPU 分析。我们开始分析，刷新页面然后停止分析器。
 
@@ -1819,7 +1809,7 @@ function moveplot(x, y) {
 
 这是代码：
 
-```
+```javascript
 $(document).ready(function() {
     makeColorSorter(.05, .05, .05, 0, 2, 4);
 });
@@ -1827,7 +1817,7 @@ $(document).ready(function() {
 
 ## 隔离问题
 
-时间线告诉我们代码运行花费了多久，但这并不能帮助我们了解运行期间发生了什么。我们可以反复修改并重新运行时间线，但这只是在盲目摸索。“Profiles”选项卡为我们提供了更好的方法来查看发生了什么。
+时间线告诉我们代码运行花费了多久，但这并不能帮助我们了解运行期间发生了什么。我们可以反复修改并重新运行时间线，但这只是在盲目摸索。"Profiles"选项卡为我们提供了更好的方法来查看发生了什么。
 
 （注：此处根据原文逻辑衔接下文）
 
@@ -1847,30 +1837,27 @@ function decimalToHex(d) {
 }
 ```
 
-*(纠正：由于您提供的英文原文在“Isolate The Problem”部分存在逻辑重复和截断感，我已根据高级文档工程师的标准，确保了翻译逻辑连贯，并严格遵循了 Markdown 格式要求。)*
-
-**抱歉，由于您提供的原始文本在“Isolate The Problem”部分似乎存在内容重复或逻辑断层，以下是基于您提供的完整文本块的完整优化翻译：**
-
-[content]
-你的网站可以运行了。现在让我们让它运行得更快。网站性能涉及两个方面：页面加载有多快，以及页面上的代码运行有多快。有很多服务可以提高你的网站加载速度，从[压缩工具](http://stackoverflow.com/questions/3520285/is-there-a-good-javascript-minimizer)^(1)到[CDN](http://en.wikipedia.org/wiki/Content_delivery_network)^(2)，但让它运行得更快取决于你自己。
-
-代码中的微小变化可能会产生巨大的性能影响。这里或那里的几行代码可能就意味着快如飞的网站与可怕的“脚本无响应”对话框之间的区别。本章将向你展示如何使用[Chrome 开发者工具](http://code.google.com/chrome/devtools/docs/overview.html)^(3) 来找到这些代码行。
-
 ## 建立基准
 
-我们将查看一个名为“颜色排序器”的简单应用程序，它展示了一个彩虹色的网格，你可以拖放它们来混合颜色。每个点都是一个 `div` 标签，带有少量的 CSS 使它看起来像圆圈。
+你的网站可以运行了。现在让我们让它运行得更快。网站性能涉及两个方面：页面加载有多快，以及页面上的代码运行有多快。有很多服务可以提高你的网站加载速度，从[压缩工具](http://stackoverflow.com/questions/3520285/is-there-a-good-javascript-minimizer)^(1)到[CDN](http://en.wikipedia.org/wiki/Content_delivery_network)^(2)，但让它运行得更快取决于你自己。
+
+代码中的微小变化可能会产生巨大的性能影响。这里或那里的几行代码可能就意味着快如飞的网站与可怕的"脚本无响应"对话框之间的区别。本章将向你展示如何使用[Chrome 开发者工具](http://code.google.com/chrome/devtools/docs/overview.html)^(3) 来找到这些代码行。
+
+### 颜色排序器
+
+我们将查看一个名为"颜色排序器"的简单应用程序，它展示了一个彩虹色的网格，你可以拖放它们来混合颜色。每个点都是一个 `div` 标签，带有少量的 CSS 使它看起来像圆圈。
 
 ![颜色排序器](http://zgrossbart.github.com/jsprofarticle/index1.htm)
 
-生成我的彩虹颜色有点棘手，所以我参考了“[在 JavaScript 中制作烦人的彩虹](http://krazydad.com/tutorials/makecolors.php)^(4)”。
+生成我的彩虹颜色有点棘手，所以我参考了"[在 JavaScript 中制作烦人的彩虹](http://krazydad.com/tutorials/makecolors.php)^(4)"。
 
 页面加载很快，但在绘制之前仍然需要一些时间并闪烁一下。是是对页面进行性能分析并让它快起来。
 
 任何性能改进项目始终从对应用程序当前运行速度的基准理解开始。基准将让你知道你是否正在改进，并帮助你做出权衡。对于本章，我们将使用[Chrome 开发者工具](http://code.google.com/chrome/devtools/docs/overview.html)^(5)。
 
-分析器（Profiler）是 Chrome 开发者工具的一部分，在 Chrome 中始终可用。点击小扳手图标下的“工具”菜单打开它。[Firebug](http://getfirebug.com)^(6) 也有一些分析工具，但 WebKit 浏览器（Chrome 和 Safari）最擅长分析代码和显示时间线。Chrome 还提供了一个优秀的事件追踪工具，称为 [Speed Tracer](https://developers.google.com/web-toolkit/speedtracer/)^(7)。
+分析器（Profiler）是 Chrome 开发者工具的一部分，在 Chrome 中始终可用。点击小扳手图标下的"工具"菜单打开它。[Firebug](http://getfirebug.com)^(6) 也有一些分析工具，但 WebKit 浏览器（Chrome 和 Safari）最擅长分析代码和显示时间线。Chrome 还提供了一个优秀的事件追踪工具，称为 [Speed Tracer](https://developers.google.com/web-toolkit/speedtracer/)^(7)。
 
-为了建立基准，我们将在“时间线”（Timeline）选项卡中开始记录，加载我们的页面然后停止记录。（要在打开 Chrome 开发者工具后开始记录，点击“Timeline”选项卡，然后点击窗口最底部的黑色小圆“记录”图标。）Chrome 非常聪明，它在页面开始加载之前不会开始记录。我运行了三次并取平均值，以防我的电脑在第一次测试期间运行较慢。
+为了建立基准，我们将在"时间线"（Timeline）选项卡中开始记录，加载我们的页面然后停止记录。（要在打开 Chrome 开发者工具后开始记录，点击"Timeline"选项卡，然后点击窗口最底部的黑色小圆"记录"图标。）Chrome 非常聪明，它在页面开始加载之前不会开始记录。我运行了三次并取平均值，以防我的电脑在第一次测试期间运行较慢。
 
 ![性能基准 1](img/baseline1.png "Performance baseline 1")
 
@@ -1880,9 +1867,9 @@ function decimalToHex(d) {
 
 ## 创建分析（Profile）
 
-时间线告诉我们代码运行花费了多久，但这并不能帮助我们了解在运行期间发生了什么。我们可以反复修改并重新运行时间线，但这只是在盲目摸索。“Profiles”选项卡为我们提供了更好的方法来查看发生了什么。
+时间线告诉我们代码运行花费了多久，但这并不能帮助我们了解运行期间发生了什么。我们可以反复修改并重新运行时间线，但这只是在盲目摸索。"Profiles"选项卡为我们提供了更好的方法来查看发生了什么。
 
-分析器告诉我们哪些函数消耗了最多的时间。让我们通过切换到 Chrome 开发者工具中的“Profiles”选项卡来创建基准分析，那里提供了三种类型的分析：
+分析器告诉我们哪些函数消耗了最多的时间。让我们通过切换到 Chrome 开发者工具中的"Profiles"选项卡来创建基准分析，那里提供了三种类型的分析：
 
 - **JavaScript CPU 分析文件**：显示我们的 JavaScript 占用了多少 CPU 时间。
 - **CSS 选择器分析文件**：显示处理 CSS 选择器花费了多少 CPU 时间。
@@ -1898,22 +1885,13 @@ function decimalToHex(d) {
 
 这是代码：
 
-```
+```javascript
 $(document).ready(function() {
     makeColorSorter(.05, .05, .05, 0, 2, 4);
 });
 ```
 
 ## 隔离问题
-
-时间线告诉我们代码运行花费了多久，但这并不能帮助我们了解运行期间发生了什么。我们可以反复修改并重新运行时间线，但这只是在盲目摸索。“Profiles”选项卡为我们提供了更好的方法来查看发生了什么。
-
-（注：此处原文文本存在逻辑跳转/重复，翻译已按原意保留）
-
-（此处由于您提供的原始文本在 Isolate The Problem 之后出现了重复的描述，我已根据您的要求完成翻译。）
-
-
-
 
 颜色分类器中的每个点都采用[十六进制格式](http://en.wikipedia.org/wiki/Hexadecimal)^(10)的背景颜色值，例如 `#86F01B` 或 `#2456FE`。这些值代表颜色的红、绿、蓝值。例如，
 
@@ -1927,7 +1905,7 @@ $(document).ready(function() {
 
 `decimalToHex` 函数还会在数字开头添加填充字符。这非常重要，因为某些十进制数字会产生单个十六进制数字；十进制的 12 在十六进制中是 C，但 CSS 要求两位。我们可以通过让它变得不那么通用来提高转换速度。我知道需要填充的数字每个都是一位，所以我们可以这样重写该函数：
 
-```
+```javascript
 function decimalToHex(d) {
     var hex = Number(d).toString(16);
     return hex.length === 1 ? '0' + hex : hex; }
@@ -1943,7 +1921,7 @@ function decimalToHex(d) {
 
 颜色分类器中的彩虹色是由正弦波生成的。代码查看光谱中的中心点，并在指定的宽度内通过该中心点创建一个波。这把颜色变成了彩虹图案。我们还可以通过改变红、绿、蓝的频率来改变彩虹的颜色。
 
-```
+```javascript
 function makeColorSorter(frequency1, frequency2, frequency3,
   phase1, phase2, phase3,
   center, width, len) {
@@ -1972,7 +1950,7 @@ function makeColorSorter(frequency1, frequency2, frequency3,
 
 与其每次循环运行时都添加一个新的 `div`，我想一次性添加所有的 `div` 标签。让我们创建一个变量来保存它们，然后在最后一次性添加。
 
-```
+```javascript
 function makeColorSorter(frequency1, frequency2, frequency3,
   phase1, phase2, phase3,
   center, width, len) {
@@ -1991,7 +1969,6 @@ function makeColorSorter(frequency1, frequency2, frequency3,
     $('#colors').append(colors);
 }
 ```
-注：由于原文提供的第二个代码块中存在括号闭合错误（提前闭合），在翻译时保持了逻辑结构并修正了格式以确保可读性。
 
 [第五个版本](http://zgrossbart.github.com/jsprofarticle/index5.htm)^(14) 运行时间为 26 毫秒，使用了 18 行代码。
 
@@ -2013,18 +1990,16 @@ function makeColorSorter(frequency1, frequency2, frequency3,
 
 性能分析和优化让[最终的颜色分类器](http://zgrossbart.github.com/jsprofarticle/index6.htm)^(15) 的运行时间缩短了 92% 以上。你的网站可以变快多少？
 
+## 参考资料
 
-
-
-
--   [使用事件捕获优化 Basecamp 页面加载时间](http://37signals.com/svn/posts/3137-using-event-capturing-to-improve-basecamp-page-load-times)
--   [JS 性能分析 2](http://zgrossbart.github.com/jsprofarticle/index2.htm)
--   [十六进制](http://en.wikipedia.org/wiki/Hexadecimal)
--   [RGB](http://en.wikipedia.org/wiki/Rgb)
--   [JS 性能分析 3](http://zgrossbart.github.com/jsprofarticle/index3.htm)
--   [JS 性能分析 4](http://zgrossbart.github.com/jsprofarticle/index4.htm)
--   [JS 性能分析 5](http://zgrossbart.github.com/jsprofarticle/index5.htm)
--   [JS 性能分析 6](http://zgrossbart.github.com/jsprofarticle/index6.htm)
+- [使用事件捕获优化 Basecamp 页面加载时间](http://37signals.com/svn/posts/3137-using-event-capturing-to-improve-basecamp-page-load-times)
+- [JS 性能分析 2](http://zgrossbart.github.com/jsprofarticle/index2.htm)
+- [十六进制](http://en.wikipedia.org/wiki/Hexadecimal)
+- [RGB](http://en.wikipedia.org/wiki/Rgb)
+- [JS 性能分析 3](http://zgrossbart.github.com/jsprofarticle/index3.htm)
+- [JS 性能分析 4](http://zgrossbart.github.com/jsprofarticle/index4.htm)
+- [JS 性能分析 5](http://zgrossbart.github.com/jsprofarticle/index5.htm)
+- [JS 性能分析 6](http://zgrossbart.github.com/jsprofarticle/index6.htm)
 
 # 编写快速且内存高效的 JavaScript
 
@@ -2032,13 +2007,15 @@ function makeColorSorter(frequency1, frequency2, frequency3,
 
 像 Google 的 [V8](http://code.google.com/p/v8/)^(1)（Chrome, Node）这样的 JavaScript 引擎专为大型 JavaScript 程序的[快速执行](http://www.html5rocks.com/en/tutorials/speed/v8/)^(2) 设计。在开发过程中，如果你关注内存使用和性能，你应该意识到用户浏览器 JavaScript 引擎背后正在发生。
 
-无论是 V8、[SpiderMonkey](https://developer.mozilla.org/en-US/docs/SpiderMonkey)^(3) (Firefox)、[Carakan](http://my.opera.com/ODIN/blog/carakan-faq)^(4) (Opera)、[Chakra](http://en.wikipedia.org/wiki/Chakra_(JScript_engine))^(5) (IE) 还是其他引擎，了解这些都能帮助你**更好地优化应用程序**。这并不是说应该针对某个特定的浏览器或引擎进行优化。永远不要这样做。
+
+
+无论是 V8、[SpiderMonkey](https://developer.mozilla.org/en-US/docs/SpiderMonkey)^(3)（Firefox）、[Carakan](http://my.opera.com/ODIN/blog/carakan-faq)^(4)（Opera）、[Chakra](http://en.wikipedia.org/wiki/Chakra_(JScript_engine))^(5)（IE）还是其他引擎，了解这些都能帮助你`更好地优化应用程序`。这并不是说应该针对某个特定的浏览器或引擎进行优化。永远不要这样做。
 
 然而，你应该问自己一些问题：
 
-• 在我的代码中，是否有我可以做得更高效的地方？
-• 流行的 JavaScript 引擎做了哪些（常见的）优化？
-• 引擎无法对哪些内容进行优化？垃圾回收器能够清理我预期的内容吗？
+- 在我的代码中，是否有我可以做得更高效的地方？
+- 流行的 JavaScript 引擎做了哪些（常见的）优化？
+- 引擎无法对哪些内容进行优化？垃圾回收器能够清理我预期的内容吗？
 
 ![仪表盘](http://dhybridcars.com/toyota-hybrid/2013-scion-fr-s-sexy-sport-car/media/2013-scion-fr-s-speed-gauge-img-8/)
 
@@ -2050,25 +2027,20 @@ function makeColorSorter(frequency1, frequency2, frequency3,
 
 虽然在不深入理解 JavaScript 引擎的情况下也可以开发大型应用程序，但任何车主都会告诉你，他们至少查看过一次引擎盖。由于 Chrome 是我的首选浏览器，我将稍微谈谈它的 JavaScript 引擎。V8 由几个核心部分组成。
 
-• 一个**基础编译器（base compiler）**，它在执行之前解析你的 JavaScript 并生成原生机器代码，而不是执行字节码或简单地解释。这些代码最初并没有经过高度优化。
-
-• V8 在**对象模型（object model）**中表示你的对象。在 JavaScript 中，对象表示为关联数组，但在 V8 中，它们通过[隐藏类（hidden classes)](https://developers.google.com/v8/design)^(7) 表示，这是一种用于优化查找的内部类型系统。
-
-• **运行时性能分析器（runtime profiler）**监控正在运行的系统并识别“热点”函数（即最终运行时间很长的代码）。
-
-• **优化编译器（optimizing compiler）**重新编译并优化运行时性能分析器识别出的“热点”代码，并执行诸如内联（即将函数调用点替换为被调用函数的体）等优化。
-
-• V8 支持**去优化（deoptimization）**，这意味着如果优化编译器发现对优化代码所做的某些假设过于乐观，它可以从生成的代码中退回。
-
-• 它拥有一个**垃圾回收器（garbage collector）**。理解它的工作原理对你有帮助。
+- 一个**基础编译器（base compiler）**，它在执行之前解析你的 JavaScript 并生成原生机器代码，而不是执行字节码或简单地解释。这些代码最初并没有经过高度优化。
+- V8 在**对象模型（object model）**中表示你的对象。在 JavaScript 中，对象表示为关联数组，但在 V8 中，它们通过[隐藏类（hidden classes)](https://developers.google.com/v8/design)^(7) 表示，这是一种用于优化查找的内部类型系统。
+- **运行时性能分析器（runtime profiler）**监控正在运行的系统并识别“热点”函数（即最终运行时间很长的代码）。
+- **优化编译器（optimizing compiler）**重新编译并优化运行时性能分析器识别出的“热点”代码，并执行诸如内联（即将函数调用点替换为被调用函数的体）等优化。
+- V8 支持**去优化（deoptimization）**，这意味着如果优化编译器发现对优化代码所做的某些假设过于乐观，它可以从生成的代码中退回。
+- 它拥有一个**垃圾回收器（garbage collector）**。理解它的工作原理对你有帮助。
 
 ### 垃圾回收
 
 理解它的工作原理可以帮助你。垃圾回收是**内存管理的一种**。在许多语言中，你必须手动管理内存，但在 JavaScript 中，垃圾回收器会自动完成。然而，你需要了解它以避免内存泄漏。垃圾回收器通过识别不可达的对象并回收其内存来工作。如果存在从根到对象的路径，则对象是可达的。如果对象不可达，它就可以被垃圾回收。垃圾回收并不是自动的，至少在这方面你需要意识到它何时运行。在编写内存高效且快速的代码时，有很多常见的陷阱，在本章中我们将探索一些经过测试的方法，以编写性能更好的代码。
 
-关于 解引的误区
+#### 关于解引用的误区
 
-在关于回收 JavaScript 内存的很多讨论中，`delete` 关键字被提及，尽管它本用于从映射中删除键，但某些开发者认为可以用它强制解除引用。尽可能避免 `delete`。在下面的示例中，`delete o.x` 害大于利，因为它改变了 o 的隐藏类。
+在关于回收 JavaScript 内存的很多讨论中，`delete` 关键字被提及，尽管它本用于从映射中删除键，但某些开发者认为可以用它强制解除引用。尽可能避免 `delete`。在下面的示例中，`delete o.x` 害大于利，因为它改变了 `o` 的隐藏类。
 
 ```javascript
 var o = { x: 1 };
@@ -2095,25 +2067,21 @@ o.x // TypeError
 var myGlobalNamespace = {};
 ```
 
-全局变量会在刷新页面、导航到其他页面、关闭标签或退出浏览器时清理。函数作用域变量在离开作用时会被清理。当函数退出且没有对它的引用时，变量就会被清理。
+全局变量会在刷新页面、导航到其他页面、关闭标签或退出浏览器时清理。函数作用域变量在离开作用域时会被清理。当函数退出且没有对它的引用时，变量就会被清理。
 
 #### 通用规则
 
-为了让垃圾回收器尽可能早地收集尽可能的对象，**不要保留不再需要的对象**。这大部分情况下是自动的；这里有几点需要的事项。
+为了让垃圾回收器尽可能早地收集尽可能多的对象，**不要保留不再需要的对象**。这大部分情况下是自动的；这里有几点需要注意的事项。
 
-
-
-
-
-- 正如前面提到的，手动取消引用的更好替代方案是使用具有适当作用域的变量。也就是说，与其使用一个置为 null 的全局变量，不如直接使用在不再需要时就会超出作用域的函数局部变量。这意味着代码更整洁，需要担心的问题也更少。
+- 正如前面提到的，手动取消引用的更好替代方案是使用具有适当作用域的变量。也就是说，与其使用一个置为 `null` 的全局变量，不如直接使用在不再需要时就会超出作用域的函数局部变量。这意味着代码更整洁，需要担心的问题也更少。
 - 确保在不再需要事件监听器时将它们解绑，特别是当它们所绑定的 DOM 对象即将被移除时。
 - 如果你在本地使用数据缓存，请确保清理该缓存或使用老化机制，以避免存储大量可能无法重用的数据块。
 
-## 函数 (Functions)
+## 函数（Functions）
 
 接下来，让我们来看函数。正如我们已经说过的，垃圾回收是通过回收不再可达的内存块（对象）来工作的。为了形象地说明这一点，这里有几个示例。
 
-```
+```javascript
 function foo() {
     var bar = new LargeObject();
     bar.someCall();
@@ -2124,7 +2092,7 @@ function foo() {
 
 将其与此对比：
 
-```
+```javascript
 function foo() {
     var bar = new LargeObject();
     bar.someCall();
@@ -2137,12 +2105,12 @@ var b = foo();
 
 我们现在拥有了该对象的引用，它在调用后存活，直到调用者为 `b` 赋值其他值（或者 `b` 超出作用域）。
 
-## 闭包 (Closures)
+## 闭包（Closures）
 
-当你看到一个返回内部函数的函数时，即使在外部函数执行完毕后，该内部函数仍然可以访问外部作用域。这基本上上是一个[闭包](http://robertnyman.com/2008/10/09/explaining-javascript-scope-and-closures/)^(9)——一个可以与特定上下文中设置的变量工作的表达式。例如：
+当你看到一个返回内部函数的函数时，即使在外部函数执行完毕后，该内部函数仍然可以访问外部作用域。这基本上是一个[闭包](http://robertnyman.com/2008/10/09/explaining-javascript-scope-and-closures/)^(9)——一个可以与特定上下文中设置的变量工作的表达式。例如：
 
-```
-function sum (x) {
+```javascript
+function sum(x) {
     function sumIt(y) {
         return x + y;
     };
@@ -2159,7 +2127,7 @@ console.log(sumB); // 返回 7
 
 让我们来看另一个例子。在这里，我们可以访问 `largeStr` 吗？
 
-```
+```javascript
 var a = function () {
     var largeStr = new Array(1000000).join('x');
     return function () {
@@ -2170,7 +2138,7 @@ var a = function () {
 
 是的，我们可以通过 `a()` 访问，所以它不会被回收。那么这一个呢？
 
-```
+```javascript
 var a = function () {
     var smallStr = 'x';
     var largeStr = new Array(1000000).join('x');
@@ -2182,18 +2150,18 @@ var a = function () {
 
 我们无法再访问它了，它是垃圾回收的候选对象。
 
-## 定时器 (Timers)
+## 定时器（Timers）
 
 泄漏最糟糕的地方之一是在循环或 `setTimeout()`/`setInterval()` 中，但这种情况非常常见。
 
-考虑以下示例。
+考虑以下示例：
 
-```
+```javascript
 var myObj = {
     callMeMaybe: function () {
         var myRef = this;
-        var val = setTimeout(function () { 
-            console.log('Time is running out!'); 
+        var val = setTimeout(function () {
+            console.log('Time is running out!');
             myRef.callMeMaybe();
         }, 1000);
     }
@@ -2202,27 +2170,23 @@ var myObj = {
 
 如果我们然后运行：
 
-```
+```javascript
 myObj.callMeMaybe();
 ```
 
 为了启动计时器，我们可以每秒看到一次“Time is running out!”。如果然后运行：
 
-```
+```javascript
 myObj = null;
 ```
 
-计时器将继续运行，因为 `myRef` 在闭包中引用了 `this`。即使 `myObj` 被置为 null，闭包仍然持有对它的引用，导致对象无法被回收。这就是一个典型的内存泄漏。
+计时器将继续运行，因为 `myRef` 在闭包中引用了 `this`。即使 `myObj` 被置为 `null`，闭包仍然持有对它的引用，导致对象无法被回收。这就是一个典型的内存泄漏。
 
-## 注意性能陷阱 (Be Aware Of Performance Traps)
+## 注意性能陷阱（Be Aware Of Performance Traps）
 
 在某些情况下，直接使用 `DocumentFragment` 和原生 DOM 方法比使用 jQuery 性能更好。在我们的示例中，jQuery 在循环中多次调用 `append()` 绑定每一个 `td` 并不是最高效的。
 
-
-
-
-
-我们可能会考虑其他改进性能的方法。你可能可能在某处读到使用原型模式（prototypal pattern）比模块模式（module pattern）更优（我们之前已经证实并非如此），或者听说使用 JavaScript 模板框架经过高度优化。有时确实如此，但使用它们是因为它们让代码更具可读性。此外，要预编译！让我们来测试并看看这在实践中有多大真实。
+我们可能会考虑其他改进性能的方法。你可能在某处读到使用原型模式（prototypal pattern）比模块模式（module pattern）更优（我们之前已经证实并非如此），或者听说使用 JavaScript 模板框架经过高度优化。有时确实如此，但使用它们是因为它们让代码更具可读性。此外，要预编译！让我们来测试并看看这在实践中有多大真实。
 
 ```javascript
 moduleG = function () {};
@@ -2248,9 +2212,9 @@ var modG = new moduleG();
 
 事实证明，在这种情况下，性能收益微乎其微。[选择模板和原型模式](http://jsperf.com/second-pass)^(12) 并没有提供比我们之前更多的任何东西。尽管如此，性能并不是现代开发者使用这两种方式的真正原因——它们为代码库带来的是可读性、继承模型和可维护性。
 
-更复杂的问题包括[使用 canvas 高效绘制图像](http://jsperf.com/canvas-drawimage-vs-webgl-drawarrays)^(13) 以及在使用（或不使用[类型数组](http://jsperf.com/typed-arrays-for-pixel-manipulation)^(15) 的情况下[操作像素数据](http://jsperf.com/canvas-pixel-manipulation/30)^(14)
+更复杂的问题包括[使用 canvas 高效绘制图像](http://jsperf.com/canvas-drawimage-vs-webgl-drawarrays)^(13)，以及在使用（或不使用[类型数组](http://jsperf.com/typed-arrays-for-pixel-manipulation)^(15)）的情况下[操作像素数据](http://jsperf.com/canvas-pixel-manipulation/30)^(14)。
 
-在你的应用程序中使用这些技术之前，请务必仔细观察微基准（micro-benchmarks）。你们中的一些可能还记得 [JavaScript 模板对决](http://jsperf.com/dom-vs-innerhtml-based-templating/473)^(16) 和[随后的扩展对决](http://jsperf.com/javascript-templating-shootoff-extended/26)^(17)。你希望确保测试不会受到你在现实应用中不太可能看到的限制的影响——请在实际代码中一起测试优化。
+在你的应用程序中使用这些技术之前，请务必仔细观察微基准（micro-benchmarks）。你们中的一些可能还记得[JavaScript 模板对决](http://jsperf.com/dom-vs-innerhtml-based-templating/473)^(16)和[随后的扩展对决](http://jsperf.com/javascript-templating-shootoff-extended/26)^(17)。你希望确保测试不会受到你在现实应用中不太可能看到的限制的影响——请在实际代码中一起测试优化。
 
 ### V8 优化技巧
 
@@ -2260,18 +2224,19 @@ var modG = new moduleG();
 - 如果你在意速度，请尽量保持函数是单态的（monomorphic），即确保变量（包括属性、数组和函数参数）始终包含具有相同隐藏类（hidden class）的实例。例如，不要这样做：
 
 ```javascript
-function add(x, y) { 
-   return x+y;
-} 
+function add(x, y) {
+   return x + y;
+}
 
-add(1, 2); 
-add('a','b'); 
+add(1, 2);
+add('a', 'b');
 add(my_custom_object, undefined);
 ```
+
 - 不要从未初始化或已删除的元素中加载。这不会改变输出结果，但会让速度变慢。
 - 不要编写巨大的函数，因为它们更难以优化。
 
-获取更多技巧，请观看 Daniel Clifford 的 Google I/O 演讲 [使用 V8 突破 JavaScript 速度限制](http://www.youtube.com/watch?v=UJPdhx5zTaw)^(18)，它很好地涵盖了这些主题。[针对 V8 优化——系列](http://floitsch.blogspot.co.uk/2012/03/optimizing-for-v8-introduction.html)^(19) 也值得一。
+获取更多技巧，请观看 Daniel Clifford 的 Google I/O 演讲[使用 V8 突破 JavaScript 速度限制](http://www.youtube.com/watch?v=UJPdhx5zTaw)^(18)，它很好地涵盖了这些主题。[针对 V8 优化——系列](http://floitsch.blogspot.co.uk/2012/03/optimizing-for-v8-introduction.html)^(19)也值得一看。
 
 #### 对象对比数组：我应该用哪一个？
 
@@ -2284,7 +2249,7 @@ JavaScript 中对象和数组之间只有一个主要的区别，那就是数组
 
 #### 使用对象的技巧
 
-- 使用构造函数创建对象。这确保了所有用该函数创建的对象都具有相同的隐藏类，并有助于避免更改这些类。作为额外益处，它比 `Object.create()`http://jsperf.com/object-create-vs-constructor-vs-object-literal/7)^(21) 稍微一点。
+- 使用构造函数创建对象。这确保了所有用该函数创建的对象都具有相同的隐藏类，并有助于避免更改这些类。作为额外益处，它比 `Object.create()`[稍微快一点](http://jsperf.com/object-create-vs-constructor-vs-object-literal/7)^(21)。
 - 对于应用程序中使用的不同对象类型数量或其复杂度没有限制（在合理范围内：长的原型链往往会损害性能，而只有少数属性的对象会获得一种快一点的特殊表示）。对于“热点”对象，尝试保持短的原型链和低字段数量。
 
 ### 对象克隆
@@ -2309,11 +2274,9 @@ var copy = new clone(original);
 
 *使用模块或原型模式时的性能改进。*
 
+
+
 这是一个[原型与模块模式性能的测试](http://jsperf.com/prototypal-performance/12)^(22)。
-
-
-
-
 
 ```
  // 原型模式
@@ -2393,11 +2356,11 @@ var copy = new clone(original);
 
 ## 使用数组的技巧
 
-接下来，让我们来看一些关于数组的技巧。通常情况下，**不要删除数组元素**。这会导致数组转换为更慢的内部表示。当键集变得稀疏时，V8 最终会将元素切换到字典模式，这会更慢。
+接下来，让我们来看一些关于数组的技巧。通常情况下，**不要删除数组元素**。这会导致数组转换为更慢的内部表示。当键集变得稀疏时，`V8` 最终会将元素切换到字典模式，这会更慢。
 
 ### 数组字面量
 
-数组字面量非常有用，因为它们为虚拟机（VM）提供了关于数组大小和类型的提示。它们通常适用于中等规模的数组。
+数组字面量非常有用，因为它们为虚拟机（`VM`）提供了关于数组大小和类型的提示。它们通常适用于中等规模的数组。
 
 ```
 // 这里 V8 可以看到你想要一个包含 4 个数字的数组：
@@ -2412,13 +2375,13 @@ for(var i = 1; i <= 4; i++) {
 
 ### 单一类型 vs 混合类型的存储
 
-在同一个数组中混合不同类型的值（例如数字、字符串、undefined 或 true/false，即 `var arr = [1, “1”, undefined, true, “true”]）永远不是一个好主意。
+在同一个数组中混合不同类型的值（例如数字、字符串、`undefined` 或 `true`/`false`，即 `var arr = [1, "1", undefined, true, "true"]`）永远不是一个好主意。
 
 [类型推断测试](http://jsperf.com/type-inference-performance/24) 我们从结果可以看出，`ints` 数组是最快的。
 
 ### 稀疏数组 vs 完整数组
 
-当你使用稀疏数组时，请注意访问其中的元素比访问完整数组慢得多。这是因为如果只使用了少数元素，V8 不会为元素分配平坦存储。相反，它在字典中管理这些元素，这节省了空间，但增加了访问成本。
+当你使用稀疏数组时，请注意访问其中的元素比访问完整数组慢得多。这是因为如果只使用了少数元素，`V8` 不会为元素分配平坦存储。相反，它在字典中管理这些元素，这节省了空间，但增加了访问成本。
 
 [稀疏数组与完整数组的测试](http://jsperf.com/sparse-arrays-full-arrays/25) 完整数组 `sum` 以及不包含零的所有元素的 `sum` 实际上是最快的。完整数组是否包含零不应该产生区别。
 
@@ -2430,11 +2393,11 @@ for(var i = 1; i <= 4; i++) {
 
 ### 预分配数组 vs 随需增长
 
-不要预分配大大数组（即大于 64K）到最大尺寸，而是要根据需要增长。在我们进行此技巧的性能测试之前，请记住这特定于某些 JavaScript 引擎。
+不要预分配大大数组（即大于 64K）到最大尺寸，而是要根据需要增长。在我们进行此技巧的性能测试之前，请记住这特定于某些 `JavaScript` 引擎。
 
 ![各种浏览器中空字面量与预分配数组的测试。](img/graph2.jpg "空字面量。各种浏览器中的预分配数组")
 
-Nitro (Safari) 实际上对预分配数组更友好。然而，在其他引擎（`V8`, `SpiderMonkey`）中，不预分配更高效。
+`Nitro` (Safari) 实际上对预分配数组更友好。然而，在其他引擎（`V8`, `SpiderMonkey`）中，不预分配更高效。
 
 [预分配数组的测试](http://jsperf.com/pre-allocated-arrays/27)
 
@@ -2461,13 +2424,12 @@ for (var i = 0; i < 1000000; i++) {
 图片来源：[Olof Forsberg](http://www.flickr.com/photos/peroffberg/6691745/) 虽然理解并改进性能很有用，但也可能困难。我们建议采取以下步骤：
 
 • 测量（45%）
+
 • 理解（45%）
+
 • 修复它！（10%）
 
 下面的工具和技术可以帮助这一过程。
-
-
-
 
 性能分析始于获取代码当前性能的基准，这可以通过 `Timeline`（时间线）发现。它会告诉我们代码运行了多长时间。`Profiles`（配置文件）标签页则让我们更好地了解应用程序正在发生的情况。`JavaScript` CPU 配置文件显示了我们的代码消耗了多少 CPU 时间，`CSS` 选择器配置文件显示了处理选择器花费了多少时间，而 `Heap`（堆）快照则显示了对象占用了多少内存。
 
@@ -2506,10 +2468,6 @@ for (var i = 0; i < 1000000; i++) {
 > “除了意识到事件在引用方面如何工作外，只需遵循 JavaScript 管理内存的标准规则就没问题了。如果你正在向一个包含 `User` 对象的 `Backbone` 集合中加载数据，并且你希望该集合被清理以不再占用内存，那么你必须移除对该集合及其其中单个对象的所有引用。一旦删除了所有引用，就会被清理。这只是标准的 JavaScript 垃圾回收规则。”
 
 在他的文章中，Derick 涵盖了在使用 `Backbone` 时遇到的许多常见的[内存陷阱](http://lostechies.com/derickbailey/2012/03/19/backbone-js-and-javascript-garbage-collection/)^(39)。还有一个非常有用的[文档片段 (DocumentFragment)](https://www.w3.org/TR/DOM-Level-2-Core.html#ID-B6ED1A3)^(40)，这是一个轻量级的文档对象。可以将其视为提取文档的一部分，或创建一个新的文档“片段”的方法。我们不需要不断向 DOM 添加内容，而是可以使用文档片段构建所需的所有内容，然后只执行一次插入 DOM 操作，以避免过多的重流。
-
-
-
-
 
 - [JavaScript 内存优化](http://blog.tojicode.com/2012/03/javascript-memory-optimization-and.html)^(45) 和 [查找内存泄漏](http://gent.ilcore.com/2011/08/finding-memory-leaks.html)^(46)
 
@@ -2565,17 +2523,19 @@ HRT 目前在 Chrome（稳定版）中通过 `window.performance.webkitNow()`可
 
 *控制台中显示计时信息。*
 
-通过查看上述数据，我们可以提取出一些非常有用的信息。例如，网络延迟为 `responseEnd-fetchStart`，页面从服务器接收后到加载完成的时间为 `loadEventEnd-responseEnd`，而从导航到页面加载之间的处理时间为 `loadEventEnd-navigationStart`。
+
+
+通过查看上述数据，我们可以提取出一些非常有用的信息。例如，网络延迟为`responseEnd-fetchStart`，页面从服务器接收后到加载完成的时间为`loadEventEnd-responseEnd`，而从导航到页面加载之间的处理时间为`loadEventEnd-navigationStart`。
 
 ## about:memory 和 about:tracing
 
-Chrome 中的 `tracing` 提供了浏览器性能的直观视图。
+Chrome 中的`tracing`提供了浏览器性能的直观视图。
 
 ![tracing 提供了浏览器性能的直观视图。](img/tracing.jpg "Tracing 提供了浏览器性能的直观视图")
 
-*`tracing` 提供了浏览器性能的直观视图。*
+`tracing`提供了浏览器性能的直观视图。
 
-该工具真正有用的地方在于它允许捕获 Chrome 正在执行的分析数据。Lilli Thompson 写了一篇关于使用 `tracing` 对 WebGL 进行分析的[优秀文章](http://www.html5rocks.com/en/games/abouttracing/)^(54。在 Chrome 中导航到 `memory` 也很有用，它可以显示每个标签页内存内存有助于有助于内存内存。关于导航计时的更多细节，请阅读 Sam Dutton 出色的[测量页面速度](http://www.html5rocks.com/en/webperformance/basics/)^(53)。
+该工具真正有用的地方在于它允许捕获 Chrome 正在执行的分析数据。Lilli Thompson 写了一篇关于使用`tracing`对 WebGL 进行分析的[优秀文章](http://www.html5rocks.com/en/games/abouttracing/)^(54。在 Chrome 中导航到`memory`也很有用，它可以显示每个标签页内存内存有助于有助于内存内存。关于导航计时的更多细节，请阅读 Sam Dutton 出色的[测量页面速度](http://www.html5rocks.com/en/webperformance/basics/)^(53)。
 
 ## 结论
 
@@ -2587,63 +2547,108 @@ Chrome 中的 `tracing` 提供了浏览器性能的直观视图。
 
 *图片来源：[Sally Hunter](http://www.flickr.com/photos/38891164@N02/426660987/)^(55).*
 
-
-
-
-
 本章节由 Jakob Kummerow, Michael Starzinger, Sindre Sorhus, Mathias Bynens, John-David Dalton 和 Paul Irish 审阅。
 
 ---
 
 1. [`code.google.com/p/v8/`](http://code.google.com/p/v8/)
+
 2. [`www.html5rocks.com/en/tutorials/speed/v8/`](http://www.html5rocks.com/en/tutorials/speed/v8/)
+
 3. [SpiderMonkey 文档](https://developer.mozilla.org/en-US/docs/SpiderMonkey)(https://developer.mozilla.org/en-US/docs/SpiderMonkey)
+
 4. [Carakan 常见问题](http://my.opera.com/ODIN/blog/carakan-faq)(http://my.opera.com/ODIN/blog/carakan-faq)
+
 5. [Chakra (JScript 引擎)](http://en.wikipedia.org/wiki/Chakra_(JScript_engine))(http://en.wikipedia.org/wiki/Chakra_(JScript_engine))
+
 6. [2013 Scion FR-S 速度表图片](http://dhybridcars.com/toyota-hybrid/2013-scion-fr-s-sexy-sport-car/media/2013-scion-fr-s-speed-gauge-img-8/](http://dhybridcars.com/toyota-hybrid/2013-scion-fr-s-sexy-sport-car/media/2013-scion-fr-s-speed-gauge-img-8/)
+
 7. [V8 设计](https://developers.google.com/v8/design)(https://developers.google.com/v8/design)
+
 8. [Flickr 图片](http://www.flickr.com/photos/26817893@N05/2864644153/](http://www.flickr.com/photos/26817893@N05/2864644153/)
+
 9. [解释 JavaScript 作用域与闭包](http://robertnyman.com/2008/10/09/explaining-javascript-scope-and-closures/](http://robertnyman.com/2008/10/09/explaining-javascript-scope-and-closures/)
+
 10. [Flickr 图片](http://www.flickr.com/photos/tim_uk/7717078488/sizes/c/in/photostream/](http://www.flickr.com/photos/tim_uk/7717078488/sizes/c/in/photostream/)
+
 11. [JSPerf 第一遍通过](http://jsperf.com/first-pass)(http://jsperf.com/first-pass)
+
 12. [JSPerf 第二遍通过](http://jsperf.com/second-pass)(http://jsperf.com/second-pass)
+
 13. [Canvas drawImage vs WebGL drawArrays](http://jsperf.com/canvas-drawimage-vs-webgl-drawarrays/6)(http://jsperf.com/canvas-drawimage-vs-webgl-drawarrays/6)
+
 14. [JSPerf Canvas 像素操作](http://jsperf.com/canvas-pixel-manipulation/30)(http://jsperf.com/canvas-pixel-manipulation/30)
+
 15. [用于像素操作的类型化数组](http://jsperf.com/typed-arrays-for-pixel-manipulation)(http://jsperf.com/typed-arrays-for-pixel-manipulation)
+
 16. [DOM vs. 基于 innerHTML 的模板化](http://jsperf.com/dom-vs-innerhtml-based-templating/473)(http://jsperf.com/dom-vs-innerhtml-based-templating/473)
+
 17. [JSPerf JavaScript 模板化对比](http://jsperf.com/javascript-templating-shootoff-extended/26)(http://jsperf.com/javascript-templating-shootoff-extended/26)
+
 18. [YouTube 视频](http://www.youtube.com/watch?v=UJPdhx5zTaw)(http://www.youtube.com/watch?v=UJPdhx5zTaw)
+
 19. [针对 V8 优化简介](http://floitsch.blogspot.co.uk/2012/03/optimizing-for-v8-introduction.html)(http://floitsch.blogspot.co.uk/2012/03/optimizing-for-v8-introduction.html)
+
 20. [数组 vs. 对象的性能](http://jsperf.com/performance-of-array-vs-object/3)(http://jsperf.com/performance-of-array-vs-object/3)
+
 21. [Object.create vs 构造函数 vs. 对象字面量](http://jsperf.com/object-create-vs-constructor-vs-object-literal/7)(http://jsperf.com/object-create-vs-constructor-vs-object-literal/7)
+
 22. [原型性能](http://jsperf.com/prototypal-performance/12)(http://jsperf.com/prototypal-performance/12)
+
 23. [原型性能](http://jsperf.com/prototypal-performance/54)(http://jsperf.com/prototypal-performance/54)
+
 24. [类型推推性能](http://jsperf.com/type-inference-performance/2)(http://jsperf.com/type-inference-performance/2)
+
 25. [稀疏数组 vs. 完整数组](http://jsperf.com/sparse-arrays-vs-full-arrays)(http://jsperf.com/sparse-arrays-vs-full-arrays)
+
 26. [填充数组 vs. 有空洞数组](http://jsperf.com/packed-vs-holey-arrays)(http://jsperf.com/packed-vs-holey-arrays)
+
 27. [预分配数组](http://jsperf.com/pre-allocated-arrays)(http://jsperf.com/pre-allocated-arrays)
+
 28. [Flickr 图片](http://www.flickr.com/photos/perolorsberg/669174587/in/photostream/](http://www.flickr.com/photos/perolorsberg/669174587/in/photostream/)
+
 29. [JSPerf 首页](http://jsperf.com)(http://jsperf.com)
+
 30. [WebKit 性能](http://www.webkit.org/perf/sunspider.html)(http://www.webkit.org/perf/sunspider.html)
+
 31. [Kraken 基准测试](http://krakenbenchmark.mozilla.org/](http://krakenbenchmark.mozilla.org/)
+
 32. [JavaScript 基准测试](http://mathiasbynens.be/notes/benchmarking)(http://mathiasbynens.be/notes/benchmarking)
+
 33. [Chrome 开发者工具](https://developers.google.com/chrome-tools)(https://developers.google.com/chrome-tools)
+
 34. [JavaScript 性能分析 开发者工具](http://coding.smashing.com/2012/06/javascript-profiling-chrome-tools/](http://coding.smashing.com/2012/06/javascript-profiling-chrome-tools/)
+
 35. [Google 演示文](https://docs.google.com/presentation/d/1wUVmf78g-ra5OxvTfYdiLkd9XRIcmus/pub?start=false&delayms=3000#slide=id.g1d65_0_0)(https://docs.google.com/presentation/d/1wUVmf78g-ra5OxvTfYdiLkd9XRIcmus/pub?start=false&delayms=3000#slide=id.g1d65_0_0)
+
 36. [Backbone.js 第 124 行](https://github.com/documentcloud/blob/master/backbone.js#L124)(https://github.com/documentcloud/blob/master/backbone.js#L124)
+
 37. [Backbone.js 第 135 行](https://github.com/documentcloud/blob/master/backbone.js#L135)(https://github.com/documentcloud/blob/master/backbone.js#L135)
+
 38. [Ember.Handlebars 绑定](https://github.com/emberjs/ember.js/blob/d8f76a0fd741ae3d1e07b12df671848/packages/ember-handlebars/lib/binding.js#L296)(https://github.com/emberjs/ember.js/blob/d8f76a0fd741ae3d1e07b12df671848/packages/ember-handlebars/lib/binding.js#L296)
+
 39. [Backbone JS 与 JavaScript 集合](http://lostechies.com/derickbailey/2012/03/19/backbone-js-and-javascript-collection/](http://lostechies.com/derickbailey/2012/03/19/backbone-js-and-javascript-collection/)
+
 40. [Node 内存泄漏教程](https://github.com/felixge/node-memory-leak-tutorial)(https://github.com/felixge/node-memory-leak-tutorial)
+
 41. [YouTube 视频](https://www.youtube.com/watch?v=ZHxbs5zE)(https://www.youtube.com/watch?v=ZHxbs5zE)
+
 42. [DOM 环境中何时发生重流](http://stackoverflow.com/questions/510213/when-does-reflow-happen-in-dom-environment)(http://stackoverflow.com/questions/510213/when-does-reflow-happen-in-dom-environment)
+
 43. [DOM Level 2 核心](http://www.w3.org/TR/DOM-Level-2-Core/core.html#ID-B63EDA3](http://www.w3.org/TR/DOM-Level-2-Core/core.html#ID-B63EDA3)
+
 44. [JavaScript DOM](https://developers.google.com/speed/articles/javascript-dom)(https://developers.google.com/speed/articles/javascript-dom)
+
 45. [JavaScript 内存优化](http://blog.tojicode.com/2012/03/javascript-memory-optimization-and.html)(http://blog.tojicode.com/2012/03/javascript-memory-optimization-and.html)
+
 46. [查找内存泄漏](http://gent.ilcore.com/2011/08/finding-memory-leaks.html)(http://gent.ilcore.com/2011/08/finding-memory-leaks.html)
+
 47. [JavaScript 新泄漏查找工具](http://google-opensource.blogspot.de/2012/08/leak-finder-new-tool-for-javascript.html)(http://google-opensource.blogspot.de/2012/08/leak-finder-new-tool-for-javascript.html)
+
 48. [JavaScript 泄漏查找](http://code.google.com/p/leak-finder-for-javascript/](http://code.google.com/p/leak-finder-for-javascript/)
+
 49. [V8 优化检查清单](http://mrale.ph/blog/2011/12/18/v8-optimization-checklist.html)(http://mrale.ph/blog/2011/12/18/v8-optimization-checklist.html)
+
 50. [高分辨率时间](http://www.w3.org/TR/hr-time/)(http://www.w3.org/TR/hr-time/)
 
 # 设计更好的 JavaScript API
@@ -2654,16 +2659,15 @@ Chrome 中的 `tracing` 提供了浏览器性能的直观视图。
 
 
 
-
-本章涵盖了在你编写自己的工具类和库之前及编写期间需要考虑的最重要事项。我们将关注如何让你的代码对其他开发者具有`可访问性`（accessible）。为了演示，某些主题会涉及到 `jQuery`，但本章既不是关于 `jQuery`，也不是关于为它编写插件。
+本章涵盖了在你编写自己的工具类和库之前及编写期间需要考虑的最重要事项。我们将关注如何让你的代码对其他开发者具有`可访问性`（accessible）。为了演示，某些主题会涉及到`jQuery`，但本章既不是关于`jQuery`，也不是关于为它编写插件。
 
 彼得·德鲁克（（Peter Drucker）曾说过：“电脑是个白痴。”不要为白痴写代码，要为人类写代码！让我们深入设计开发者喜爱使用的 API 吧。
 
 ## 流式接口
 
-[流式接口](http://en.wikipedia.org/wiki/Fluent_interface#JavaScript)^(1) 通常被称为`方法链`（Method Chaining，尽管这只是 true 事实的一半）。对于初学者来说，它看起来像 `jQuery 风格`。虽然我相信 API 风格是 `jQuery` 成功的关键因素之一，但它并不是由他们发明的——这似乎归功于马丁·福勒（Martin Fowler），他在 2005 年[创造了这一术语](http://martinfowler.com/bliki/FluentInterface.html)^(2)，大约在 `jQuery` 发布的一年前。不过，福勒只是给它起了一个名字——流式接口已经存在很长时间了。
+[流式接口](http://en.wikipedia.org/wiki/Fluent_interface#JavaScript)^(1) 通常被称为`方法链`（Method Chaining，尽管这只是 true 事实的一半）。对于初学者来说，它看起来像`jQuery 风格`。虽然我相信 API 风格是`jQuery`成功的关键因素之一，但它并不是由他们发明的——这似乎归功于马丁·福勒（Martin Fowler），他在 2005 年[创造了这一术语](http://martinfowler.com/bliki/FluentInterface.html)^(2)，大约在`jQuery`发布的一年前。不过，福勒只是给它起了一个名字——流式接口已经存在很长时间了。
 
-除了重大的简化，`jQuery` 甚至提供了平滑浏览器之间巨大差异的方法。这一直是我在这个极其成功的库中最喜欢的`流式接口`。我已经非常喜欢这种特定的 API 风格，以至于显而易见，我想在 [URI.js](http://medialize.github.com/URI.js/)^(3) 中也使用这种风格。在调优 `URI.js` API 时，我不断查看 `jQuery` 的源码，寻找那些让我的实现尽可能简单的小技巧。我发现我在这件事上并不孤单。[Lea Verou](https://twitter.com/leaverou)^(4) 创建了 [chainvas](http://lea.verou.me/chainvas/)^(5)——一个将普通的 getter/setter API 包装成优雅的流式接口的工具。Underscore 的 [`_.chain()`](http://underscorejs.org/#chain)^(6) 也做了类似的事情。事实上，大多数新一代的库都支持方法链。
+除了重大的简化，`jQuery`甚至提供了平滑浏览器之间巨大差异的方法。这一直是我在这个极其成功的库中最喜欢的`流式接口`。我已经非常喜欢这种特定的 API 风格，以至于显而易见，我想在 [URI.js](http://medialize.github.com/URI.js/)^(3) 中也使用这种风格。在调优`URI.js` API 时，我不断查看`jQuery`的源码，寻找那些让我的实现尽可能简单的小技巧。我发现我在这件事上并不孤单。[Lea Verou](https://twitter.com/leaverou)^(4) 创建了 [chainvas](http://lea.verou.me/chainvas/)^(5)——一个将普通的 getter/setter API 包装成优雅的流式接口的工具。Underscore 的 [`_.chain()`](http://underscorejs.org/#chain)^(6) 也做了类似的事情。事实上，大多数新一代的库都支持方法链。
 
 ### 方法链
 
@@ -2693,9 +2697,6 @@ DOMHelper.getElementById('foobar')
 
 [命令与查询分离](http://en.wikipedia.org/wiki/Command-query_separation)^(8) (CQS) 是继承自命令式编程的概念。改变对象状态（内部值）的函数称为`命令`（commands），获取状态的函数称为`查询`（queries）。
 
-
-
-
 ```javascript
 String.prototype.foo = function() {
   return new Foo(this);
@@ -2705,11 +2706,11 @@ String.prototype.foo = function() {
   .iAmACustomFunction();
 ```
 
-通过这种方法，你的函数仍然位于你的命名空间内，但可以通过另一个对象访问。确保你的 `.foo()` 等效项是一个非通用的术语，极不可能与其他 API 发生冲突。同时，确保你提供了适当的 `.valueOf()`](https://developer.mozilla.org/en-US/docs/JavaScript/Reference/Global_Objects/Object/valueOf) 和 `.toString()`](https://developer.mozilla.org/en-US/docs/JavaScript/Reference/Global_Objects/Object/toString) 方法来转换回原始类型。
+通过这种方法，你的函数仍然位于你的命名空间内，但可以通过另一个对象访问。确保你的`.foo()`等效项是一个非通用的术语，极不可能与其他 API 发生冲突。同时，确保你提供了适当的`.valueOf()`](https://developer.mozilla.org/en-US/docs/JavaScript/Reference/Global_Objects/Object/valueOf) 和`.toString()`](https://developer.mozilla.org/en-US/docs/JavaScript/Reference/Global_Objects/Object/toString) 方法来转换回原始类型。
 
 ### 一致性 (Consistency)
 
-[Jake Archibald](https://twitter.com/jaffathecake) 曾经有一张幻灯片定义过*一致性*。上面的内容仅仅是：[*不是 PHP*](http://www.slideshare.net/slideshow/embed_code/5426258?startSlide=59)。千万、永远不要发现自己在命名诸如 `str_repeat()`、`strpos()`、`substr()` 的函数。此外，永远不要打乱参数的顺序。如果你在某个时刻声明了 `find_in_array(haystack, needle)`，那么引入 `findInString(needle, haystack)` 将引发一群愤怒的僵尸从坟墓爬起追杀你，并迫使你余生都在写 Delphi 语言！
+[Jake Archibald](https://twitter.com/jaffathecake) 曾经有一张幻灯片定义过*一致性*。上面的内容仅仅是：[*不是 PHP*](http://www.slideshare.net/slideshow/embed_code/5426258?startSlide=59)。千万、永远不要发现自己在命名诸如`str_repeat()`、`strpos()`、`substr()`的函数。此外，永远不要打乱参数的顺序。如果你在某个时刻声明了`find_in_array(haystack, needle)`，那么引入`findInString(needle, haystack)`将引发一群愤怒的僵尸从坟墓爬起追杀你，并迫使你余生都在写 Delphi 语言！
 
 ### 命名 (Naming Things)
 
@@ -2719,7 +2720,7 @@ String.prototype.foo = function() {
 
 我参加过许多讲座和会议，试图教我如何命名的精妙之处。我没有离开任何一次会议时是没听过上述名言，也没有真正学会如何如何命名。我的建议可以总结为：*保持简洁且具有描述性，并遵循你的直觉*。但最重要的是，保持一致性。
 
-上面的 `DateInterval` 示例引入了一个名为 `until()` 的方法。我们本可以将该函数命名为 `interval()`。后者更接近返回值，而前者更*符合人类阅读习惯*。找到一行你喜欢的表述并坚持使用它。一致性是至关重要的 90% 因素。选择一种风格并坚持下去——即使你自己在未来的某时刻发现自己并不喜欢它。
+上面的`DateInterval`示例引入了一个名为`until()`的方法。我们本可以将该函数命名为`interval()`。后者更接近返回值，而前者更*符合人类阅读习惯*。找到一行你喜欢的表述并坚持使用它。一致性是至关重要的 90% 因素。选择一种风格并坚持下去——即使你自己在未来的某时刻发现自己并不喜欢它。
 
 ### 处理参数 (Handling Arguments)
 
@@ -2748,7 +2749,7 @@ jQuery("#some-selector").css({
 });
 ```
 
-jQuery 的 [`on()`](http://api.jquery.com/on/) 方法可以注册事件处理器。像 `css()` 一样，它接受事件映射，但更进了一步，允许为多个事件注册单个处理器：
+jQuery 的 [`on()`](http://api.jquery.com/on/) 方法可以注册事件处理器。像`css()`一样，它接受事件映射，但更进了一步，允许为多个事件注册单个处理器：
 
 ```javascript
 // 通过传递映射来绑定事件
@@ -2794,7 +2795,7 @@ DateInterval.prototype.values = function(name, value) {
 };
 ```
 
-如果你正在处理集合（collections），请考虑可以做什么来减少 API 用户可能必须进行的循环次数。假设我们有一些 `<input>` 元素需要为它们设置默认值：
+如果你正在处理集合（collections），请考虑可以做什么来减少 API 用户可能必须进行的循环次数。假设我们有一些`<input>`元素需要为它们设置默认值：
 
 ```html
 <input type="text" value="" data-default="foo">
@@ -2836,9 +2837,9 @@ DateInterval.prototype.days = function(start, end) {
 };
 ```
 
-通过添加这几行代码，我们让函数能够接受 Date 对象、数字时间戳，甚至是像 `Sat Sep 08 2012 15:34:35 GMT+0200 (CEST)` 这样的字符串表示。我们不知道人们将如何以及为何使用我们的代码，但通过这种预见性，我们可以确保集成我们的代码时保持痛苦。
+通过添加这几行代码，我们让函数能够接受`Date`对象、数字时间戳，甚至是像`Sat Sep 08 2012 15:34:35 GMT+0200 (CEST)`这样的字符串表示。我们不知道人们将如何以及为何使用我们的代码，但通过这种预见性，我们可以确保集成我们的代码时保持痛苦。
 
-丰富的开发者可以发现示例代码中的另一个问题。我们假设 `start` 在 `end` 之前。如果 API 用户不小心交换了日期，他得到的两个日期之间的天数将是一个负值。停下来仔细考虑这些情况。如果你得出负值没有意义，请修复它：
+丰富的开发者可以发现示例代码中的另一个问题。我们假设`start`在`end`之前。如果 API 用户不小心交换了日期，他得到的两个日期之间的天数将是一个负值。停下来仔细考虑这些情况。如果你得出负值没有意义，请修复它：
 
 ```javascript
 DateInterval.prototype.days = function(start, end) {
@@ -2853,9 +2854,6 @@ DateInterval.prototype.days = function(start, end) {
 };
 ```
 
-
-
-
 JavaScript 提供了多种类型转换的方法。如果你处理的是原始类型（字符串、数字、布尔），它可以变得非常简单（如所谓的“短写法”）：
 
 ```javascript
@@ -2868,9 +2866,9 @@ function castaway(some_string, some_integer, some_boolean) {
 
 我不提倡你在任何地方、任何时候这样做。但这些看起来无害的代码在集成代码时可能会节省时间并减少一些痛苦。
 
-#### 将 `undefined` 视为预期值
+#### 将`undefined`视为预期值
 
-总会有那么，`undefined` 是你的 API 实际期望用于设置属性的一个值。这可能是为了“取消设置”某个属性，或者仅仅是为了优雅地处理错误输入，使你的 API 更健壮。要识别你的方法是否真的传递了 `undefined` 值，你可以检查 [`arguments`](https://developer.mozilla.org/en-US/docs/JavaScript/Reference/Functions_and_function_scope/arguments) 对象：
+总会有那么，`undefined`是你的 API 实际期望用于设置属性的一个值。这可能是为了“取消设置”某个属性，或者仅仅是为了优雅地处理错误输入，使你的 API 更健壮。要识别你的方法是否真的传递了`undefined`值，你可以检查 [`arguments`](https://developer.mozilla.org/en-US/docs/JavaScript/Reference/Functions_and_function_scope/arguments) 对象：
 
 ```javascript
 function testUndefined(expecting, someArgument) {
@@ -2898,7 +2896,7 @@ event.initMouseEvent(
   1, null);
 ```
 
-[Event.initMouseEvent](https://developer.mozilla.org/en-US/docs/DOM/event.initMouseEvent) 的函数签名简直是一场噩梦成真。如果不查阅文档，没有任何开发者能记得那个 `1`（倒数第二个参数）意味着什么。无论你的文档写得多么好，请尽可能努力让人们不需要去查阅！
+[Event.initMouseEvent](https://developer.mozilla.org/en-US/docs/DOM/event.initMouseEvent) 的函数签名简直是一场噩梦成真。如果不查阅文档，没有任何开发者能记得那个`1`（倒数第二个参数）意味着什么。无论你的文档写得多么好，请尽可能努力让人们不需要去查阅！
 
 #### 其他人是如何做的
 
@@ -2922,7 +2920,7 @@ namesAreAwesome(bar=6);
 // 输出: 1, 6
 ```
 
-采用这种方案，`initMouseEvent()` 可以看起来是一个自解释的函数调用：
+采用这种方案，`initMouseEvent()`可以看起来是一个自解释的函数调用：
 
 ```javascript
 event.initMouseEvent(
@@ -2943,9 +2941,11 @@ event.initMouseEvent(
   relatedTarget=null);
 ```
 
-在 JavaScript 中，这目前是不可能的。虽然“JavaScript 的下一个版本”（通常称为 ES.next, ES6 或 Harmony）将拥有[默认参数值](http://wiki.ecmascript.org/doku.php?id=harmony:parameter_default_values)和[剩余参数](http://wiki.ecmascript.org/doku.php?id=harmony:rest_parameters)，但目前还没有命名参数的迹象。
 
-#### 参数映射
+
+在 JavaScript 中，这目前是不可能的。虽然“JavaScript 的下一个版本”（通常称为 ES.next、ES6 或 Harmony）将拥有[默认参数值](http://wiki.ecmascript.org/doku.php?id=harmony:parameter_default_values)和[剩余参数](http://wiki.ecmascript.org/doku.php?id=harmony:rest_parameters)，但目前还没有命名参数的迹象。
+
+### 参数映射
 
 由于 JavaScript 并不是 Python（而且 ES.next 还遥不可及），我们用来克服“参数森林”障碍的选择并不多。jQuery（以及几乎所有其他优秀的 API）都选择了使用“配置对象”的概念。[`jQuery.ajax()`](http://api.jquery.com/jquery.ajax/) 的签名提供了一个很好的例子。与其接受大量参数，我们只接收一个对象：
 
@@ -2966,16 +2966,13 @@ function dream(options) {
 
 这不仅防止了过长的函数签名，还让函数调用更具描述性。
 
-
-
-
 通过选项对象（option objects），我们已经涵盖了扩展配置的主题。现在让我们讨论如何允许 API 用户扩展核心代码和 API 本身。这是一个重要的课题，因为它允许你的代码专注于重要的事情，同时让 API 用户自己去实现边缘情况（edge-cases）。良好的 API 是简洁的 API。拥有少数几个配置选项是可以接受的，但拥有几十个选项会让你的 API 显得臃肿且不透明。专注于主要的使用用例，只做大多数 API 用户需要的事情。其他所有事情都留给他们来处理。为了允许 API 用户扩展你的代码以适应他们的需求，你有几种选择……
 
-### 回调函数 (Callbacks)
+#### 回调函数 (Callbacks)
 
 回调函数可以通过配置来实现扩展性。你可以使用回调函数允许 API 用户覆盖你代码的某些部分。当你认为特定任务的处理方式可能与默认代码不同时，可以将该代码重构为可配置的回调函数，以便允许 API 用户轻松地覆盖它：
 
-```
+```javascript
 var default_options = {
   // ...
   position: function($elem, $parent) {
@@ -3001,7 +2998,7 @@ Widget.protoype.show = function() {
 };
 ```
 
-```
+```javascript
 var widget = new Widget({
   position: function($elem, $parent) {
     var position = $parent.position();
@@ -3016,7 +3013,7 @@ widget.show();
 
 回调函数也是一种允许 API 用户自定义你代码创建的元素的通用方法：
 
-```
+```javascript
 // 默认的 create 回调什么都不做
 default_options.create = function($thingie){};
 
@@ -3029,7 +3026,7 @@ Widget.prototype.create = function() {
 };
 ```
 
-```
+```javascript
 var widget = new Widget({
   create: function($elem) {
     $elem.addClass('my-style-stuff');
@@ -3040,13 +3037,13 @@ widget.show();
 
 每当你接受回调函数时，务必记录它们的签名（signature）并提供示例以帮助 API 用户自定义你的代码。确保回调执行时的上下文（`this` 指向哪里）以及它们接受的参数是一致的。
 
-### 事件 (Events)
+#### 事件 (Events)
 
 在处理 DOM 时，事件是自然而。在较大的应用程序中，我们使用各种形式的事件（例如 PubSub）来实现模块之间的通信。在处理 UI 组件时，事件显得特别有用且最符合习惯。像 jQuery 这样的库提供了简单的接口，让你能够轻松攻克这一领域。
 
 事件接口在某些事情发生时效果最好——这也是名称由来。显示和隐藏组件可能取决于你范围之外的情况。在组件显示时更新组件也是非常常见的操作。这两者都可以使用 jQuery 的事件接口轻松实现，它甚至允许使用委托事件（delegated events）：
 
-```
+```javascript
 Widget.prototype.show = function() {
   var event = jQuery.Event("widget:show");
   this.$container.trigger(event);
@@ -3061,7 +3058,7 @@ Widget.prototype.show = function() {
 };
 ```
 
-```
+```javascript
 // 监听所有的 widget:show 事件
 $(document.body).on('widget:show', function(event) {
   if (Math.random() > 0.5) {
@@ -3077,11 +3074,11 @@ var widget = new Widget();
 widget.show();
 ```
 
-### 钩子 (Hooks)
+#### 钩子 (Hooks)
 
-传统的 getter 和 setter 方法可以从钩子中特别获益。钩子与回调的区别通常在于它们的数量和注册方式。回调通常在实例级别上用于特定任务，而钩子通常在全局级别上用于自定义值或分发自定义操作。为了说明钩子如何使用，我们将查看一眼 [jQuery 的 cssHooks](http://api.jquery.com/jQuery.cssHooks/)^(29):
+传统的 getter 和 setter 方法可以从钩子中特别获益。钩子与回调的区别通常在于它们的数量和注册方式。回调通常在实例级别上用于特定任务，而钩子通常在全局级别上用于自定义值或分发自定义操作。为了说明钩子如何使用，我们将查看一眼 [jQuery 的 cssHooks](http://api.jquery.com/jQuery.cssHooks/)^(29)：
 
-```
+```javascript
 // 定义一个自定义钩子
 jQuery.cssHooks.box = {
   get: function(element, prop) {
@@ -3094,13 +3091,9 @@ jQuery.cssHooks.box = {
 };
 ```
 
-
-
-
-
 这种方法允许你生成多个类似的访问器方法，而不是单独定义每一个方法。如果你的访问器方法需要比简单的字符串更多的数据来完成设置，可以考虑如下代码：
 
-```
+```javascript
 var accessors = {"start" : {color: "green"}, "end" : {color: "red"}};
 for (var key in accessors) {
   DateInterval.prototype[key] = generateAccessor(key, accessors[key]);
@@ -3115,9 +3108,9 @@ function generateAccessor(key, accessor) {
 }
 ```
 
-在`处理参数`（Handling Arguments）章节中，我们讨论了一种方法模式，允许你的 getter 和 setter 接受各种有用类型，如 map 和数组。方法模式本身是非常通用的，可以很容易转换为生成器：
+在处理参数（Handling Arguments）章节中，我们讨论了一种方法模式，允许你的 getter 和 setter 接受各种有用类型，如 map 和数组。方法模式本身是非常通用的，可以很容易转换为生成器：
 
-```
+```javascript
 function wrapFlexibleAccessor(get, set) {
   return function(name, value) {
     var map;
@@ -3158,11 +3151,11 @@ DateInterval.prototype.values = wrapFlexibleAccessor(
 
 深入编写 DRY 代码的艺术远超本章的范围。[Rebecca Murphey](https://twitter.com/rmurphey)^(31) 编写的[更 DRY 的 JavaScript 模式](http://rmurphey.com/blog/2010/07/12/patterns-for-dry-er-javascript/)^(32) 以及 [Mathias Bynens'](https://twitter.com/mathias)^(33) 关于[DRY 如何影响 JavaScript 性能](http://slideshare.net/mathiasbynens/how-dry-impacts-javascript-performance-faster-javascript-execution-for-the-lazy-developer)^(34) 的幻灯片，如果你是该话题的新手，这是一个很好的开始。
 
-### 引用的恐怖之处
+#### 引用的恐怖之处
 
 与其他语言不同，JavaScript 并不理解“按引用传递”或“按值传递”的概念。按值传递数据是安全的。它确保了传递给 API 的数据和从 API 返回的数据可以在 API 外部被修改，而不会改变内部状态。按引用传递通常用于保持低内存开销，按引用传递的值可以在 API 外部任何地方被更改，并影响内部状态。
 
-在 JavaScript 中，没有办法告诉参数应该是按引用传递还是按值传递。原始类型（字符串、数字、布尔值）被视为`按值传递`，而对象（任何对象，包括 Array、Date）的处理方式类似于`按引用`。如果这是你第一次听到这个话题，请看下面的示例来大开眼界：
+在 JavaScript 中，没有办法告诉参数应该是按引用传递还是按值传递。原始类型（字符串、数字、布尔值）被视为`按值传递`，而对象（任何对象，包括 `Array`、`Date`）的处理方式类似于`按引用`。如果这是你第一次听到这个话题，请看下面的示例来大开眼界：
 
 ```javascript
 // 按值传递
@@ -3202,7 +3195,7 @@ var days = interval.days(); // 得到了 31 但预期是 365 - 哎！
 
 注意，从 API 返回的值也是如此。如果你简单地返回一个内部对象，在你的 API 外部对其进行的任何更改将反映在你的内部数据上。这绝对不是你想要的。[jQuery.extend()](http://api.jquery.com/jQuery.extend/)^(35)
 
-### 持续链问题
+#### 持续链问题
 
 在链式接口中，我们无法跳出链式。根据方法的作用，预判一个微小的`空值`检测可能有帮助：
 
@@ -3235,7 +3228,7 @@ if ($elem.length) {
 }
 ```
 
-### 处理错误
+#### 处理错误
 
 ![快速失败](img/fail-faster.jpg "Fail Fast")
 
@@ -3250,6 +3243,7 @@ $(document.body).on('click', {});
 // 点击时控制台大尖叫
 //   TypeError: ((p.event.special[l.origType] || {}).handle || l.handler).apply is not a function 
 //   in jQuery.min.js on Line 3
+```
 
 这类错误非常难以调试。不要浪费别人的时间。如果 API 用户做了愚蠢的事，告知他们：
 
@@ -3259,22 +3253,20 @@ if (Object.prototype.toString.call(callback) !== '[object Function]') {
 }
 ```
 
-注意：不应该使用 `typeof callback === "function"`，因为旧浏览器可能会报告对象为`函数`，但它们并不是。在 Chrome（截至版本 12）中 `RegExp` 就是这样一种情况。为了方便起见，请使用 [jQuery.isFunction()](http://api.jquery.com/jQuery.isfunction/)^(40) 或 [_.isFunction()](http://underscorejs.org/#isFunction)^(41)。
 
 
+注意：不应该使用`typeof callback === "function"`，因为旧浏览器可能会报告对象为`函数`，但它们并不是。在 Chrome（截至版本 12）中`RegExp`就是这样一种情况。为了方便起见，请使用[jQuery.isFunction()](http://api.jquery.com/jQuery.isfunction/)^(40)或[_.isFunction()](http://underscorejs.org/#isFunction)^(41)。
 
+我遇到过的多数库，无论使用什么语言（在弱类型领域内），都不关心严格的输入验证。坦率地说，我自己的代码只会在我预见到开发者会绊倒的地方进行验证。并没有真的有人这样做，但我们所有人都应该这样做。程序员是一群懒汉——我们写代码并不是为了写代码而写代码，也不是为了某些我们并不真正认同的事业。Perl6的开发者意识到了这个问题，并决定引入一种名为`Parameter Constraints`（参数约束）的东西。在 JavaScript 中，他们的方法可能看起来如下：
 
-
-我遇到过的多数库，无论使用什么语言（在弱类型领域内），都不关心严格的输入验证。坦率地说，我自己的代码只会在我预见到开发者会绊倒的地方进行验证。并没有真的有人这样做，但我们所有人都应该这样做。程序员是一群懒汉——我们写代码并不是为了写代码而写代码，也不是为了某些我们并不真正认同的事业。Perl6 的开发者意识到了这个问题，并决定引入一种名为 `Parameter Constraints`（参数约束）的东西。在 JavaScript 中，他们的方法可能看起来如下：
-
-```javascript
+```
 function validateAllTheThings(a, b {where typeof b === "numeric" and b < 10}) {
   // Interpreter should throw an Error if b is
   // not a number or greater than 9
 }
 ```
 
-虽然这种语法极其难看，但其核心思想是将输入验证成为语言层面的“一等公民”。JavaScript 远没有达到那种程度。这没关系——反正我也没法把自己把这些约束塞进函数签名中。承认这个问题（弱类型语言的问题）才是这个故事中有趣的地方。
+虽然这种语法极其难看，但其核心思想是将输入验证成为语言层面的"一等公民"。JavaScript 远没有达到那种程度。这没关系——反正我也没法把自己把这些约束塞进函数签名中。承认这个问题（弱类型语言的问题）才是这个故事中有趣的地方。
 
 JavaScript 既不弱也不低级，我们只是需要付出更多的努力来让我们的东西真正健壮。让代码健壮并不意味着接受任何数据并挥挥魔棒就能得到结果。健壮意味着不接受垃圾，*并且告诉开发者这件事*。
 
@@ -3284,20 +3276,21 @@ JavaScript 既不弱也不低级，我们只是需要付出更多的努力来让
 
 到目前为止，我们只看了同步 API。异步方法通常接受一个回调函数，以便在特定任务完成后通知外部。不过，这与我们的流式接口方案并不太契合：
 
-```javascript
+```
 Api.protoype.async = function(callback) {
   console.log("async()");
   // do something asynchronous
   window.setTimeout(callback, 500);
   return this;
 };
+
 Api.protoype.method = function() {
   console.log("method()");
   return this;
 };
 ```
 
-```javascript
+```
 // running things
 api.async(function() {
   console.log('callback()');
@@ -3306,27 +3299,25 @@ api.async(function() {
 // prints: async(), method(), callback()
 ```
 
-这个示例说明了异步方法 `async()` 如何开始工作但立即返回，导致 `method()` 在 `async()` 实际任务完成之前就被调用。某些时候我们希望这种情况发生，但通常我们期望 `method()` 在 `async()` 完成其任务*后*执行。
+这个示例说明了异步方法`async()`如何开始工作但立即返回，导致`method()`在`async()`实际任务完成之前就被调用。某些时候我们希望这种情况发生，但通常我们期望`method()`在`async()`完成其任务*后*执行。
 
 ### 延迟 (Promises)
 
-在某种程度上，我们可以通过 [Promises](http://wiki.commonjs.org/wiki/Promises/A)^(42) 来应对异步和同步 API 调用混合带来的混乱。jQuery 将它们称为 [Deferreds](http://api.jquery.com/category/deferred-object/(([43)。返回一个 `Deferred` 对象来代替常规的 `this`，这迫使你离开链式调用。这初看起来看起来可能很奇怪，但它有效地防止了你在调用异步方法后继续进行同步操作：
+在某种程度上，我们可以通过[Promises](http://wiki.commonjs.org/wiki/Promises/A)^(42)来应对异步和同步 API 调用混合带来的混乱。jQuery 将它们称为[Deferreds](http://api.jquery.com/category/deferred-object/(([43)。返回一个`Deferred`对象来代替常规的`this`，这迫使你离开链式调用。这初看起来可能很奇怪，但它有效地防止了你在调用异步方法后继续进行同步操作：
 
-```javascript
+```
 Api.protoype.async = function() {
   var deferred = $.Deferred();
   console.log("async()");
-
   window.setTimeout(function() {
     // do something asynchronous
     deferred.resolve("some-data");
   }, 500);
-
   return deferred.promise();
 };
 ```
 
-```javascript
+```
 api.async().done(function(data) {
   console.log("callback()");
   api.method();
@@ -3335,28 +3326,28 @@ api.async().done(function(data) {
 // prints: async(), callback(), method()
 ```
 
-`Deferred` 对象允许你使用 `.done()`、`.fail()`、`.always()` 注册处理器，在异步任务完成、失败或无论状态如何时调用。请参阅 [JavaScript 中的 Promise Pipeline](http://sitr.us/2012/07/31/promise-pipelines-in-javascript.html)^(44) 以获取关于 Deferred 的更详细介绍。
+`Deferred`对象允许你使用`.done()`、`.fail()`、`.always()`注册处理器，在异步任务完成、失败或无论状态如何时调用。请参阅[JavaScript 中的 Promise Pipeline](http://sitr.us/2012/07/31/promise-pipelines-in-javascript.html)^(44)以获取关于 Deferred 的更详细介绍。
 
 ## 调试流式接口
 
 虽然*流式接口*（Fluent Interfaces）开发起来方便得多，但它们在调试性方面确实存在某些局限性。
 
-与任何代码一样*测试驱动开发*（TDD）是减少调试需求的简单方法。由于是用 TDD 编写的 `URI.js`，我并没有遇到过调试代码的主要痛苦。然而，TDD 只是*减少*了调试需求——它并没有完全取代调试。
+与任何代码一样*测试驱动开发*（TDD）是减少调试需求的简单方法。由于是用 TDD 编写的`URI.js`，我并没有遇到过调试代码的主要痛苦。然而，TDD 只是*减少*了调试需求——它并没有完全取代调试。
 
 互联网上有些声音建议将链中的每个组件写在单独的行上，以便堆栈跟踪中的错误获得正确的行号：
 
-```javascript
+```
 foobar.bar()
   .baz()
   .bam()
   .someError();
 ```
 
-这种技术确实有其优势（尽管更好的调试并不是其固有的部分）。像上面示例那样编写的代码甚至更易读。基于行的差异（用于 SVN、GIT 等版本控制系统）也可能获得细微的优势。在调试方面，目前只有 Chrome 会显示 `someError()` 在第四行，而其他浏览器将其视为第一行。
+这种技术确实有其优势（尽管更好的调试并不是其固有的部分）。像上面示例那样编写的代码甚至更易读。基于行的差异（用于 SVN、GIT 等版本控制系统）也可能获得细微的优势。在调试方面，目前只有 Chrome 会显示`someError()`在第四行，而其他浏览器将其视为第一行。
 
-为你的对象添加一个简单的日志方法就已经很有帮助了——尽管这被认为是“手动调试”，并可能被习惯了“真实”调试的人所鄙弃：
+为你的对象添加一个简单的日志方法就已经很有帮助了——尽管这被认为是"手动调试"，并可能被习惯了"真实"调试的人所鄙弃：
 
-```javascript
+```
 Date.prototype.explain = function() {
   // log current state
   console.dir(this);
@@ -3368,38 +3359,37 @@ var days = (new Date(2012, 0, 31))
 
 ### 函数名
 
-在本章中，你看到了大量的 `Foo.prototype.something={}` 风格的代码。在编写 API 时，你可能考虑以下两种方式的函数名：
+在本章中，你看到了大量的`Foo.prototype.something={}`风格的代码。在编写 API 时，你可能考虑以下两种方式的函数名：
 
-```javascript
+```
 Foo.prototype.something = function() {
   // yadda
 };
 ```
 
-```javascript
+```
 Foo.prototype.something = function() {
   // yadda
 };
+
 Foo.prototype.displayName = "Foo.something";
 ```
 
-第二种方案 `displayName` 由 WebKit 引入后被 Firefox 采用。`displayName` 编写起来稍微复杂，但允许任意名称，包括命名空间或关联对象。这两种方法对匿名函数都有帮助。关于这个主题，请阅读 [kangax](https://twitter.com/kangax)^(46) 的[命名命名函数表达式 (Named function expressions)](http://kangax.github.com/nfe)。
+
+
+第二种方案`displayName`由 WebKit 引入后被 Firefox 采用。`displayName`编写起来稍微复杂，但允许任意名称，包括命名空间或关联对象。这两种方法对匿名函数都有帮助。关于这个主题，请阅读 [kangax](https://twitter.com/kangax)^(46) 的[命名命名函数表达式 (Named function expressions)](http://kangax.github.com/nfe)。
 
 ## 文档编写
 
 软件开发中最困难的任务之一就是编写文档。几乎每个人都讨厌它，但每个人都在抱怨他们使用的工具文档糟糕或缺失。有很多工具据称可以帮助并自动化你的代码：
 
--   [YUIDoc](http://yui.github.com/yuidoc)^(47) (需要 Node.js, npm)
--   [JsDoc Toolkit](https://github.com/p120ph37/node-jsdoc-toolkit)^(48) (需要 Node.js, npm)
--   [Markdox](https://github.com/cbou/markdox)^(49) (需要 Node.js, npm)
--   [Dox](https://github.com/visionmedia/dox)^(50) (需要 Node.js, npm)
--   [Docco](http://jashkenas.github.com/docco/)^(51) (需要 Node.js, Python, CoffeeScript)
--   [JSDuck](https://github.com/senchalabs/jsduck)^(52) (需要 Ruby, gem)
--   [JSDoc 3](https://github.com/jsdoc3/jsdoc)^(53) (需要 Java)
-
-
-
-
+- [YUIDoc](http://yui.github.com/yuidoc)^(47) (需要 Node.js, npm)
+- [JsDoc Toolkit](https://github.com/p120ph37/node-jsdoc-toolkit)^(48) (需要 Node.js, npm)
+- [Markdox](https://github.com/cbou/markdox)^(49) (需要 Node.js, npm)
+- [Dox](https://github.com/visionmedia/dox)^(50) (需要 Node.js, npm)
+- [Docco](http://jashkenas.github.com/docco/)^(51) (需要 Node.js, Python, CoffeeScript)
+- [JSDuck](https://github.com/senchalabs/jsduck)^(52) (需要 Ruby, gem)
+- [JSDoc 3](https://github.com/jsdoc3/jsdoc)^(53) (需要 Java)
 
 在某个时刻，这些工具无一不让你感到失望。JavaScript 是一种非常动态的语言，因此在表达上特别具有多样性。这使得许多事情对这些工具来说变得极其困难。列表列出了我决定使用原生 HTML、Markdown 或 [DocBook](http://en.wikipedia.org/wiki/DocBook)（如果项目足够大的话）来编写文档的几个原因。例如，jQuery 也存在相同的问题，而且它们完全没有在代码中记录 API 文档。
 
@@ -3425,14 +3415,10 @@ Foo.prototype.displayName = "Foo.something";
 - API 是你（提供者）和用户（消费者）之间的合约。不要在版本之间随意更改内容。
 - 你投入在“人们将如何使用我的软件？”这个问题上的时间，应该与你投入在“我的软件内部是如何工作的？”上的时间一样多。
 - 通过几个简单的技巧，你可以大大减少开发者的工作量（从代码量来看）。
-- 尽早处理无效输入——抛出 `Errors`。
+- 尽早处理无效输入——抛出`Errors`。
 - 良好的 API 是灵活的，更好的 API 不会让你犯错。
 
 继续阅读 [Jake Archibald](https://twitter.com/jaffathecake) 设计 API 的演讲 [Reusable Code for good or for awesome](http://vimeo.com/35689836)（[幻灯片](http://www.slideshare.net/jaffathecake/reusable-code-for-good-or-for-awesome)）。2007 年 Joshua Bloch 发表了 [如何设计良好的 API 及其重要性](http://www.youtube.com/watch?v=heh4OeB9A-c) 演讲。
-
-
-
-
 
 32. [JavaScript 的 DRY 模式](http://rmurphey.com/blog/2010/07/12/patterns-for-dry-er-javascript/)
 33. [Mathias Twitter](https://twitter.com/mathias)
@@ -3440,14 +3426,14 @@ Foo.prototype.displayName = "Foo.something";
 35. [jQuery.extend 文档](http://api.jquery.com/jQuery.extend/)
 36. [Underscore.js extend 方法](http://underscorejs.org/#extend)
 37. [PrototypeJS Object.extend 文档](http://api.prototypejs.org/language/Object/extend/)
-38. [Web 编程第 11 章第 2 ](http://docstore.mik.ua/orelly/webprog/jscript/ch11_02.htm)
+38. [Web 编程第 11 章第 2](http://docstore.mik.ua/orelly/webprog/jscript/ch11_02.htm)
 39. [Web 编程目录](http://docstore.mik.ua/orelly/webprog/jscript/index.htm)
 40. [jQuery.isfunction 文档](http://api.jquery.com/jQuery.isfunction/)
 41. [Underscore.js isFunction 方法](http://underscorejs.org/#isFunction)
 42. [Promises/A 规范](http://wiki.commonjs.org/wiki/Promises/A)
 43. [jQuery 对象分类](http://api.jquery.com/category/deferred-object/)
 44. [JavaScript 中的 Promise 管道](http://sitr.us/2012/07/31/promise-pipelines-in-javascript.html)
-45. [Kangax  GitHub](http://kangax.github.com/nfe/)
+45. [Kangax GitHub](http://kangax.github.com/nfe/)
 46. [Kangax Twitter](https://twitter.com/kangax)
 47. [YUI 文档](http://yui.github.com/yuidoc/)
 48. [node-jsdoc-toolkit](https://github.com/p120ph37/node-jsdoc-toolkit)
@@ -3493,9 +3479,5 @@ JUnit 是一位在德国工作的开发者。
 
 ### Netiq
 Netiq 在五岁时就开始创立了自己的公司。他住在马萨诸塞市。
-
-
-
-
 
 # 9. [Smashing Media](http://www.smashing-media.com)

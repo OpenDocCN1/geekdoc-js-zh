@@ -1,104 +1,90 @@
-# 易用 Web JavaScript 实用指南
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 易用 Web JavaScript 实用指南指南
 
 # 鸣谢
 
 **作者**
-Paul Wilson 
-Stephen Williams
-Sing Li
+`Paul Wilson`
+`Stephen Williams`
+`Sing Li`
 
 **策划编辑**
-Eleanor Baylis
+`Eleanor Baylis`
 
 **技术编辑**
-Amanda Kay
-Simon Mackle
+`Amanda Kay`
+`Simon Mackle`
 
 **技术审查员**
-Tom Farrell
-Martin Honnen
-Mark Horner
-Christian Kenyeres
-Ginnie O'Neal
-David Schultz
-Jon Stephens
-Michael Walston
-Stephen Williams
+`Tom Farrell`
+`Martin Honnen`
+`Mark Horner`
+`Christian Kenyeres`
+`Ginnie O'Neal`
+`David Schultz`
+`Jon Stephens`
+`Michael Walston`
+`Stephen Williams`
 
 **制作编辑**
-Liz Toy
+`Liz Toy`
 
 **项目经理**
-Sophie Edwards
+`Sophie Edwards`
 
 **制作协调**
-Pip Wonson
+`Pip Wonson`
 
 **封面**
-Dawn Chellingworth
+`Dawn Chellingworth`
 
 **校对**
-Dan Walker
-Agnes Wiggers
+`Dan Walker`
+`Agnes Wiggers`
 
 **索引编检**
-Adrian Axinte
+`Adrian Axinte`
 
 # 关于作者
 
-# Paul Wilton
-
+## Paul Wilton
 
 在英国英国国防部担任 Visual Basic 应用程序开发员一段时间后，Paul Wilton 发现自己被带入了网络世界。他目前从事自由职业工作，忙于拼凑微软 .Net 的拼图。Paul 的主要技能是使用 DHTML、JavaScript、VBScript 和 Visual Basic 开发 Web前端，以及使用 ASP、Visual Basic 和 SQL Server 开发后端解决方案。他想感谢他的未妻 Catherine 的耐心与照顾。
 
-# Stephen Williams
-
+## Stephen Williams
 
 Steve 最近联合创立了 Chimera Digital Ltd，这汇聚集了教育、视频制作和技术领域的专家，并生产适用于培训、营销等业务的内容包。在此之前，他在 Edison Interactive 工作，担任 Switch 娱乐门户网站的主开发人员。他对人工智能的兴趣使他从伯明大学的微生物学博士学位转向了面向对象的编程和互联网。
 
-# Sing Li
-
+## Sing Li
 
 Sing Li 是一位活跃的作者、顾问和企业家。他曾在流行的技术期刊上撰写过文章，是“Internet Global”最早的电话之一。他的广泛知识涵盖了互联网和内网系统、分布式架构、Web 服务、嵌入式系统、实时技术和跨平台设计。他还参与了 Jini 社区。
 
+http://archive.org/details/practicaljavascriptcr0Paul
 
-http://archive.org/details/practicaljavascriptcr0Paul # 目录
+# 目录
 
 引言 1
 
 第1章：开始学习 JavaScript 5
+
 什么是 JavaScript？6
+
 JavaScript 能为做什么？6
+
 JavaScript 的优缺点 8
+
 网页中的 JavaScript 11
+
 JavaScript 语法 12
+
 代码执行 14
+
 对象 15
+
 简单 JavaScript 示例 17
 
 第2章：数据与决策 21
+
 数据、类型和数据运算符 22
 
 第3章：函数与代码设计 59
@@ -107,36 +93,21 @@ JavaScript 语法 12
 
 第5章：窗口与框架 125
 
-
 第6章：针对 IE4 和 NN4 的 DHTML 163
 
 ImageView：第二部分：添加 HTML 和 CSS 179
 
 第7章：DOM：针对最新浏览器的 DHTML 193
 
-
 第8章：高级表单技术 237
+
 电子商务图片查看器 – 第一部分 256
 
 第9章：在网页与数据存储之间传递信息 275
 
-
-
-
-
 ## 第 10 章：数据验证技术 339
 
-
-
-
-
-
-
 ## 图像查看器电子商务应用程序 – 第 3 部分 360
-
-
-
-
 
 ## 引言
 
@@ -170,8 +141,11 @@ JavaScript 的实现可能很棘手：浏览器兼容性和易用性问题是 We
 ## 样式规范
 
 我们在书中使用了多种样式帮助你理解正在发生什么。
+
 我们使用了**重要词汇**（important words）样式来标记新的或重要的主题。
+
 *屏幕文本*（Screen Text）用于指示你在屏幕上会看到的任何内容，包括 URL。
+
 新的代码块采用这种前置样式：
 
 ```html
@@ -201,7 +175,7 @@ document.write(myResponse);
 
 </script>
 </body>
-</</html>>
+</html>
 ```
 
 在正文中讨论代码时，我们使用这种内联代码（code in text）样式，它也用于像 myFirstJavaScript.htm 这样的文件名。
@@ -236,7 +210,6 @@ output='<a href="getPageName(pages[i][j]).html" class="page" title="pages[i][j]"
 
 ## Web 支持
 
-
 - 编程和概念讨论
 
 作者：Paul Wilton
@@ -253,14 +226,9 @@ JavaScript 自诞生以来，其流行度和能力一直在稳步增长，现在
 
 随着书籍的进行，我们将为网站添加电子商务功能，让访问不仅可以查看还可以购买图像。我们将研究如何使用 JavaScript 创建购物车、获取下单所需的信息并验证这些信息。
 
-
-
-
-
 # 第1章
 
 当然，一切都从本章开始，我们将通过本章为本书的内容奠定基础，涵盖：
-
 
 你们中的许多人已经接触过 JavaScript，并且对它是什么以及能做什么已经有了了解，因此我们将首先快速介绍这门语言及其功能。
 
@@ -304,7 +272,6 @@ JavaScript 的伟大之处在于，一旦你学会了如何使用它进行浏览
 
 我们已经看到了 JavaScript 的一些优点，例如跨浏览器支持、客户端数据验证以及能够创建更复杂的用户界面。
 
-
 其他优点还包括：你不需要任何额外工具来编写 JavaScript，任何纯文本编辑器都可以，因此不需要购买昂贵的开发软件。它也是一门容易学习的语言，并且有一个繁荣且受支持的 JavaScript 开发者社区和信息资源。
 
 JavaScript 的缺点（与大多数 Web 开发中的一样）几乎完全与浏览器兼容性有关。
@@ -324,14 +291,9 @@ JavaScript 语言经历了多个版本，从最初发布的 JavaScript 1.0 到�
 
 下表列出了不同版本，并指示了 IE 和 Navigator 的 JavaScript 版本大致兼容之处：
 
-
-
-
-
 ## JavaScript 入门
 
-
-此此表仅提供了一个非常粗略的近似，在这些术语中，JavaScript IE3 = NN3，IE4 = NN4，IE5+ = NN6。小差异的一个例子是 `try..catch` 子句，IE5+ 和 NN6 在 JavaScript 中支持它，但在 IE4 或 NN4 中不支持。
+此表仅提供了一个非常粗略的近似，在这些术语中，JavaScript IE3 = NN3，IE4 = NN4，IE5+ = NN6。小差异的一个例子是 `try..catch` 子句，IE5+ 和 NN6 在 JavaScript 中支持它，但在 IE4 或 NN4 中不支持。
 
 虽然有许多参考资料供你查找此类差异，但确保页面在不同浏览器上运行的唯一方法是尽可能广泛地测试。来自 www.connectix.com 的 VirtualPC 等程序允许你从一个宿主操作系统安装并运行带有不同浏览器的多个操作系统。
 
@@ -354,8 +316,8 @@ JavaScript 语言经历了多个版本，从最初发布的 JavaScript 1.0 到�
 *由于你提供的原始文本中存在多段完全相同的段落，为了保证文档专业性，我将按照逻辑结构进行翻译。以下是针对针对给定文本的完整译文：*
 
 [content]
-## JavaScript 入门
 
+## JavaScript 入门
 
 此表仅提供了一个非常粗略的近似，在这些术语中，JavaScript IE3 = NN3，IE4 = NN4  IE5+ = NN6。小差异的一个例子是 `try..catch` 子句，IE5+ 和 NN6 在 JavaScript 中支持它，但在 IE4 或 NN4 中不支持。
 
@@ -368,9 +330,6 @@ JavaScript 语言经历了多个版本，从最初发布的 JavaScript 1.0 到�
 没有环境，JavaScript 无法完成很多事情，在本书中，我们将在浏览器中使用 JavaScript。从这个意义上说，我们可以说浏览器本质上是宿主。JavaScript 的无用之处在于它具有操纵宿主环境的能力，无论环境是什么。
 
 （注：原文后续部分大量重复，此处遵循“不要重复输出原文”原则，仅展示翻译核心逻辑部分。若需保留所有重复段落的翻译请告知。）
-
-
-
 
 ## 第一章
 
@@ -400,15 +359,13 @@ JavaScript 语言经历了多个版本，从最初发布的 JavaScript 1.0 到�
 
 - // 表示其之后的内容是注释，而不是要执行的代码，因此解释器不会尝试将其转换为机器码并运行。注释是在代码中放置备注的方便方法，可以提醒我们代码的意图是什么，或者帮助其他阅读代码的人理解正在发生什么。
 
-# 入门 JavaScript
-
 - /** 表示跨越多行的注释的开始。
 
 - */ 表示跨越多行的注释的结束。如果你想停止某些代码的执行但又不想永久删除它，那么多行注释也非常有用。例如，当你某段代码出现问题，但不确定是哪行导致了问题时，你可以一次注释一段代码以隔离问题。
 
 - 花括号（`{` 和 `}`）用于表示代码块。确保内部的所有行都被视为一个代码块。
 
-- 分号定义了语句的结束，语句是一个单一命令。事实上，分号是可选的，但使用分号来明确语句的结束位置是一个好主意，因为这样做可以让你的代码更易读且调试。（尽管你可以将许多语句放在同一行上，但最好将它们放在不同的行上，以便代码更易读。）在花括号后面不需要使用分号。
+- 分号定义了语句的结束，语句是一个单一命令。事实上，分号是可选的，但使用分号来明明语句的结束位置是一个好主意，因为这样做可以让你的代码更易读且调试。（尽管你可以将许多语句放在同一行上，但最好将它们放在不同的行上，以便代码更易读。）在花括号后面不需要使用分号。
 
 让我们把这种语法放入可以运行的代码块中：
 
@@ -421,7 +378,7 @@ JavaScript 语言经历了多个版本，从最初发布的 JavaScript 1.0 到�
 /* 这是一个多行注释。它既适用于较长的注释，
 也适用于在测试时屏蔽某些代码段。
 */
-// 脚本从这里开始。我们声明了一个变量 myName，并将其值赋值为用户在提示框中输入的任何内容（将在第二章中详细介绍），用分号结束指令，因为它是一条语句
+// 脚本从这里开始。我们声明了一个变量 myName，并将其值赋值为用户在提示框中输入的任何内容（将在第二章中详�介绍），用分号结束指令，因为它是一条语句
 var myName = prompt("Enter your name,");
 
 // 如果用户输入的名字是 Paul Wilton
@@ -505,13 +462,9 @@ doSomething();
 - **方法**：启动汽车的方法可能是*转动火钥匙*
 - **事件**：转动火钥匙导致*汽车启动*
 
-
-
-
-
 ## 第一章
 
-面向对象编程 OOP 试图通过对现实世界对象建模来让编程变得更容易。假设我们正在创建一个汽车模拟器。首先，我们会创建一个汽车对象，并赋予它颜色和当前速度等属性。然后，我们需要创建方法：也许有一个用于启动汽车的转钥匙方法，以及一个用于减速汽车的按下刹车方法，在此过程中，我们需要传递关于刹车是如何按下的信息，以便我们能够确定减速的效果。最后，我们想要一些事件，例如燃油不足时提醒我们给汽车加油。
+面向对象编程 OOP 试图通过对现实世界对象建模来让编程变得更容易。假设我们正在创建一个汽车模拟器。首先，我们会创建一个汽车对象，并赋予它颜色和当前速度等属性。然后，我们需要创建方法：也许有一个用启动汽车的转钥匙方法，以及一个用于减速汽车的按下刹车方法，在此过程中，我们需要传递关于刹车是如何按下的信息，以便我们能够确定减速的效果。最后，我们想要一些事件，例如燃油不足时提醒我们给汽车加油。
 
 面向对象编程正是基于这些概念的。这种软件设计非常常见，并影响了编程的许多领域——但对我们来说最重要的，它是 JavaScript 和 浏览器编程的核心。
 
@@ -523,7 +476,7 @@ doSomething();
 
 > 关于 JavaScript 是一门基于对象的语言还是面向对象的语言，存在一些争议。区别在于，基于对象的语言使用对象进行编程，但并不允许编码员在代码中使用面向对象编程。面向对象编程语言不仅使用对象，而且易于按照面向对象的设计方法论开发和设计代码。JavaScript 允许我们创建自己的对象，但它的语法不像 Java 或 C# 那么对面向对象友好，后者具有语言结构和特性来启用 OOP。然而，我们在这里的重点不在于关于是否是面向对象的争论，而是在本书中对象在实际操作中是如何被使用的，我们将查看一些让我们生活变得更简单的基础面向对象代码。
 
-随着书籍的进行，我们将更深入地学习对象：JavaScript 语言、浏览器提供的用于通过 JavaScript 访问和操纵的对象，以及创建我们自己的自定义对象。现在，我们只需要知道 JavaScript 中的对象是我们可以用来为网页添加功能的“实体”，并且它们具有属性、方法和事件——尽管并非所有对象都具备这些特性：例如，`Math` 对象只有属性（如圆周率 Pi 值）和方法（其中一个方法可以生成随机数）。
+随着书籍的进行，我们将更深入地学习对象：JavaScript 语言、浏览器提供的用于通过 JavaScript 访问和操纵的对象，以及创建我们自己的自定�对象。现在，我们只需要知道 JavaScript 中的对象是我们可以用来为网页添加功能的“实体”，并且它们具有属性、方法和事件——尽管并非所有对象都具备这些特性：例如，`Math` 对象只有属性（如圆周率 Pi 值）和方法（其中一个方法可以生成随机数）。
 
 ## 简单的 JavaScript 示例
 
@@ -626,15 +579,9 @@ if (screen.availWidth < 650)
 
 我们还运行了一些 JavaScript，学习了如何向代码添加注释，以及如何用分号分隔 JavaScript 语句。我们还看到了可以使用大括号将一组代码视为一个单一的语句块，例如使用 `if` 语句。
 
-
-
-
-
 # 2
 
-
 作者：Paul Wilton
-
 
 # 数据与决策
 
@@ -644,17 +591,20 @@ if (screen.availWidth < 650)
 
 我们将涵盖很多内容：
 
-
 # 第 2 章
 
 ## 数据、数据类型和数据运算符
 
-数据用于存储信息，为了更有效地实现这一点，JavaScript 为每条数据分配了一个**类型**。这种类型规定了对数据可以做什么或不能做什么。例如，JavaScript 的类型之一是 **Number**（数字），它允许你对所持的数据进行计算。JavaScript 中简单的数据类型是原始数据类型（primitive data types）。这种意义上的原始仅仅意味着数据是直接存储的。JavaScript 中有三种存储数据的原始数据类型：
+数据用于存储信息，为了更有效地实现这一点，JavaScript 为每条数据分配了一个**类型**。这种类型规定了对数据可以做什么或不能做什么。例如，JavaScript 的类型之一是 **Number**（数字），它允许你对所持的数据进行计算。JavaScript 中简单的数据类型是原始数据类型。这种意义上的原始仅仅意味着数据是直接存储的。JavaScript 中有三种存储数据的原始数据类型：
 
+- String（字符串）：一系列字符：例如 "some characters"
+- Number（数字）：浮点数，如 42 或 3.1415
 - Boolean（布尔值）：可以包含 true（真）或 false（假）值
 
 还有两种略不同的原始数据类型。它们不存储信息，而是向我们对特定情况发出警告：
 
+- Null（空）：表示没有有效数据
+- Undefined（未定义）：表示某些东西没有被定义和赋值。这在你处理变量时非常重要。
 
 在整个章节中，我们将频繁地使用这些数据类型。
 
@@ -663,44 +613,67 @@ if (screen.availWidth < 650)
 JavaScript 解释器期望数据类型被包含在单引号或双引号内（称为定界符）。例如，此脚本将在页面上写入 *some characters*：
 
 ```html
+
 <html>
+
 <body>
+
   <script language="JavaScript">
+
     document.write("some characters");
+
   </script>
+
 </body>
+
 </html>
+
 ```
 
 引号不会被写到页面上，因为它们不是字符串的一部分，它们只是告诉 JavaScript 字符串从哪里开始，到哪里结束。我们完全可以同样使用单引号：
 
 ```html
+
 <html>
+
 <body>
+
   <script language="JavaScript">
+
     document.write('some characters');
+
   </script>
+
 </body>
+
 </html>
+
 ```
 
 这两种方法都是可以，只要你以打开字符串相同的方式关闭它，并且不要尝试像这样对它定界：
 
 ```javascript
+
 document.write('some characters');
+
 document.write('some characters');
+
 ```
 
 当然，你可能想在字符串内部使用单引号或双引号，在这种情况下，你需要使用一个不同的定界符。如果你使用双引号，那么指令将按照你的预期被解析：
 
 ```javascript
+
 document.write("Paul's characters");
+
 ```
 
 但如果你使用单引号，它们将不会被预期解析：
 
 ```javascript
+
 document.write('Paul's characters');
+
 ```
 
 这将导致产生语法错误，因为 JavaScript 解释器无法判断字符串是在最后一个 s 之前还是之后结束。
@@ -710,42 +683,70 @@ document.write('Paul's characters');
 你可以通过使用单引号来定界任何包含双引号的字符串，反之亦然，从而避免创建这样的 JavaScript 语法错误：
 
 ```javascript
-document.write("Paul's numbers are 123");
-document.write("some characters");
-```
 
-另一方面，如果你想在字符串中同时使用单引号和双引号，你就需要使用所谓的转义序列（escape sequence）。事实上，使用转义序列比我们目前一直使用的引号更好的做法，因为它们让代码更易读。
+document.write("Paul's numbers are 123");
+
+document.write("some characters");
+
+```
 
 ## 转义序列
 
 转义序列对于你想要使用无法通过键盘键出的字符的情况也很有用（例如在西方键盘上输入日元符号 ¥）。以下是一些最常用的转义序列：
 
+| 转义序列 | 表示的字符 |
+| --- | --- |
+| \b | 退格 (Backspace) |
+| \f | 分页 (Form feed) |
+| \n | 换行 (New line) |
+| \r | 回车 (Carriage return) |
 
 表格继续见下一页
 
 # 第 2 章
+
+| 转义序列 | 表示的字符 |
+| --- | --- |
+| \t | 制表符 (Tab) |
+| \' | 单引号 |
 | " | 双引号 |
 | \ | 反斜杠 |
-| \xNN | NN 是十六进制数，用于识别拉丁字符集（拉丁字符集是英语国家的标准） |
+| \xNN | NN 是十六进数，用于识别拉丁字符集（拉丁字符集是英语国家的标准） |
 | \uDDDD | DDD 是十六进制数，识别 Unicode 字符 |
 
 让我们修改这个字符串，它会导致语法错误：
 
 ```javascript
+
+document.write('Paul's characters');
+
+```
+
 使其使用转义序列（\'）并被正确解析：
 
 ```javascript
-document.write('Paul\'s characters');
-转义序列告诉 JavaScript 解释器单引号属于字符串本身，而不是定界符。
 
-```javascript
-document.write(\x43');
+document.write('Paul\'s characters');
+
 ```
 
-\uDDDD 转义序列的工作原理，，使用的是 Unicode 字符方法，它有 65535 个字符。由于 ASCII 和 Unicode 集是类似的，你可以使用此转义序列写出字母 C：
+转义序列告诉 JavaScript 解释器单引号属于字符串本身，而不是定界符。
+
+ASCII 是一种使用 0 到 254 值的字符编码方法。我们使用十六进制转义序列 \xNN 来指定字符。字母 C 在十进制中是 67，十六进制中是 43，所以我们可以使用转义序列将其写入页面：
 
 ```javascript
+
+document.write(\x43');
+
+```
+
+\uDDDD 转义序列的工作原理类似，但使用的是 Unicode 字符方法，它有 65535 个字符。由于 ASCII 和 Unicode 集是类似的，你可以使用此转义序列写出字母 C：
+
+```javascript
+
 document.write(\u0043');
+
+```
 
 Unicode 信息非常详细，最好的查看地方是网站：http://www.unicode.org。
 
@@ -766,23 +767,41 @@ JavaScript 有许多你可以用于处理程序中数据的数据运算符；你
 以下是它们的用法：
 
 ```html
+
 <html>
+
 <body>
+
 <script language="JavaScript">
+
 document.write(1 - 1);
+
 document.write("<br>");
+
 document.write(1 + 1);
+
 document.write("<br>");
+
 document.write(2 * 2);
+
 document.write("<br>");
+
 document.write(12 / 2);
+
 document.write("<br>");
+
 document.write(1 + 2 * 3);
+
 document.write("<br>");
+
 document.write(98 % 10);
+
 </script>
+
 </body>
+
 </html>
+
 ```
 
 你应该得到这样的输出：
@@ -797,8 +816,11 @@ document.write(98 % 10);
 JavaScript 就像数学一样，赋予某些运算符优先级。乘法的优先级高于加法，所以和 1 + 2 * 3 的执行方式如下：
 
 ```
+
 2 * 3 = 6
+
 6 + 1 = 7
+
 ```
 
 # 数据与决策
@@ -838,55 +860,81 @@ JavaScript 就像数学一样，赋予某些运算符优先级。乘法的优先
 JavaScript 解释器期望数据类型被包含在单引号或双引号内（称为定界符）。例如，此脚本将在页面上写入 *some characters*：
 
 ```html
+
 <html>
+
 <body>
+
   <script language="JavaScript">
+
     document.write("some characters");
+
   </script>
+
 </body>
+
 </html>
+
 ```
 
 引号不会被写到页面上，因为它们不是字符串的一部分，它们只是告诉 JavaScript 字符串从哪里开始，到哪里结束。我们完全可以同样使用单引号：
 
 ```html
+
 <html>
+
 <body>
+
   <script language="JavaScript">
+
     document.write('some characters');
+
   </script>
+
 </body>
+
 </html>
+
 ```
 
 这两种方法都是可以，只要你以打开字符串相同的方式关闭它，并且不要尝试像这样对它定界：
 
 ```javascript
+
 document.write('some characters');
+
 document.write('some characters');
+
 ```
 
 当然，你可能想在字符串内部使用单引号或双引号，在这种情况下，你需要使用一个不同的定界符。如果你使用双引号，那么指令将按照你的预期被解析：
 
 ```javascript
+
 document.write("Paul's characters");
+
 ```
 
 但如果你使用单引号，它们将不会被预期解析：
 
 ```javascript
+
 document.write('Paul's characters');
+
 ```
 
 这将导致产生语法错误，因为 JavaScript 解释器无法判断字符串是在最后一个 s 之前还是之后结束。
 
 > JavaScript 语法就像英语一样，是一组让语言变得“可理解”的规则。就像英语中的语法错误可以使句子毫无意义，JavaScript 中的语法错误也可以让指令毫无意义。
 
-你可以通过使用单引号来定界任何包含双引号的字符串，反之亦然，从而避免创建这样的 JavaScript 语法错误：
+你可以通过使用单引来定界任何包含双引号的字符串，反之亦然，从而避免创建这样的 JavaScript 语法错误：
 
 ```javascript
+
 document.write("Paul's numbers are 123");
+
 document.write("some characters");
+
 ```
 
 ## 转义序列
@@ -911,18 +959,22 @@ document.write("some characters");
 | " | 双引号 |
 | \ | 反斜杠 |
 | \xNN | NN 是十六进制数，用于识别拉丁字符集（拉丁字符集是英语国家的标准） |
-| \uDDDD | DDD 是十六进制数，识别 Unicode 字符 |
+| \uDDDD | DDD 是十六进制数，识 Unicode 字符 |
 
 让我们修改这个字符串，它会导致语法错误：
 
 ```javascript
+
 document.write('Paul's characters');
+
 ```
 
 使其使用转义序列（\'）并被正确解析：
 
 ```javascript
+
 document.write('Paul\'s characters');
+
 ```
 
 转义序列告诉 JavaScript 解释器单引号属于字符串本身，而不是定界符。
@@ -930,13 +982,17 @@ document.write('Paul\'s characters');
 ASCII 是一种使用 0 到 254 值的字符编码方法。我们使用十六进制转义序列 \xNN 来指定字符。字母 C 在十进制中是 67，十六进制中是 43，所以我们可以使用转义序列将其写入页面：
 
 ```javascript
+
 document.write(\x43');
+
 ```
 
 \uDDDD 转义序列的工作原理类似，但使用的是 Unicode 字符方法，它有 65535 个字符。由于 ASCII 和 Unicode 集是类似的，你可以使用此转义序列写出字母 C：
 
 ```javascript
+
 document.write(\u0043');
+
 ```
 
 Unicode 信息非常详细，最好的查看地方是网站：http://www.unicode.org。
@@ -958,23 +1014,41 @@ JavaScript 有许多你可以用于处理程序中数据的数据运算符；你
 以下是它们的用法：
 
 ```html
+
 <html>
+
 <body>
+
 <script language="JavaScript">
+
 document.write(1 - 1);
+
 document.write("<br>");
+
 document.write(1 + 1);
+
 document.write("<br>");
+
 document.write(2 * 2);
+
 document.write("<br>");
+
 document.write(12 / 2);
+
 document.write("<br>");
+
 document.write(1 + 2 * 3);
+
 document.write("<br>");
+
 document.write(98 % 10);
+
 </script>
+
 </body>
+
 </html>
+
 ```
 
 你应该得到这样的输出：
@@ -989,11 +1063,12 @@ document.write(98 % 10);
 JavaScript 就像数学一样，赋予某些运算符优先级。乘法的优先级高于加法，所以和 1 + 2 * 3 的执行方式如下：
 
 ```
+
 2 * 3 = 6
+
 6 + 1 = 7
+
 ```
-
-
 
 
 
@@ -1002,15 +1077,21 @@ JavaScript 就像数学一样，赋予某些运算符优先级。乘法的优先
 所有的运算符都有优先级。乘法、除法和取模运算的优先级相同，因此当它们同时出现在等式中时，将从左到右进行计算。尝试一下：
 
 ```
+
 2 * 10 / 5%3
+
 ```
 
 结果是 1，因为计算仅仅是从左到右读取：
 
 ```
+
 2 * 10 = 20
+
 20 / 5 = 4
+
 4%3 = 1
+
 ```
 
 加法和减法也具有相同的优先级。
@@ -1018,7 +1099,9 @@ JavaScript 就像数学一样，赋予某些运算符优先级。乘法的优先
 你可以使用括号来提高部分计算的优先级。例如，你可以像这样先将 1 加 1，然后乘以 5：
 
 ```
+
 (1 + 1) * 5
+
 ```
 
 结果将是 10，但如果不加括号，结果将是 6。事实上，即使在括号不是必须的情况下使用它们也是一个好主意，因为它们让执行顺序变得清晰可见。
@@ -1026,30 +1109,47 @@ JavaScript 就像数学一样，赋予某些运算符优先级。乘法的优先
 如果使用多一组括号，JavaScript 将简单地从左到右运行：
 
 ```
+
 document.write( 1 + 1 ) * 5 * ( 2 + 3 ) );
+
 ```
 
 这是计算总和的方式：
 
 ```
+
 (1 + 1) = 2
+
 (2 + 3) = 5
+
 2 * 5 = 10
+
 10 * 5 = 50
+
 ```
 
 正如我们所看到的，JavaScript 的加法运算符会将运算符左侧的值加到右侧的值，这取决于你使用的数据类型。例如，如果你正在处理两个存储为数字数据类型的数字，那么 `+` 运算符将把它们相加。然而，如果你正在处理的类型之一是字符串（如分隔符所示），那么这两个值将会被拼接。尝试一下：
 
 ```html
+
 <html>
+
 <body>
+
 <script language="JavaScript">
+
 document.write('Java' + ' Script');
+
 document.write( 1 + 1 );
+
 document.write( 1 + '1');
+
 </script>
+
 </body>
+
 </html>
+
 ```
 
 能够对字符串使用加法运算符是方便的，但如果你正在处理的值之一的数据类型恰好与你预期的数据类型不同，它也可能产生意想不到的结果。我们将查看一些这样的示例，并在稍后解决它们。
@@ -1069,7 +1169,9 @@ document.write( 1 + '1');
 所以，尽管如此，让我们开始声明变量。我们可以在不初始化的情况下声明变量（不给它赋值）：
 
 ```
+
 var myFunction;
+
 ```
 
 然后它就准备就绪等待我们赋值。这对于存储用户输入的变量非常有用。
@@ -1077,33 +1179,47 @@ var myFunction;
 我们也可以同时声明并初始化变量：
 
 ```
+
 var myFunction = "A String"
+
 var anotherVariable = 123;
+
 ```
 
 或者我们可以通过赋值 `prompt()` 函数的返回值或计算和来声明并初始化：
 
 ```
+
 var eurosToConvert = prompt("你想转换多少欧元，**");
+
 var dollars = eurosToConvert * euroDollarRate;
+
 ```
 
 # 第 2 章（续）
 
 `prompt()` 函数是一个 JavaScript 函数，它要求用户输入一个值并将其返回给代码。在这里，我们将输入的值赋值给变量 `euroToConvert`。
 
-初始化变量是一个非常好的主意，特别是你可以给它们提供一个对应用程序有用的默认值。即使给变量初始化一个空字符串也是好主意，因为你可以检查它，而不会弹出如果没有值就会出现的错误消息。
+初始化变量是一个非常好的主意，特别是你可以给它们提供一个对应用程有用的默认值。即使给变量初始化一个空字符串也是好主意，因为你可以检查它，而不会弹出如果没有值就会出现的错误消息。
 
 让我们看看变量如何提高代码的可读性和功能。这里有一段没有使用任何变量的代码：
 
 ```html
+
 <html>
+
 <body>
+
 <script language="JavaScript">
+
   document.write(0.872 * prompt("你想转换多少欧元，"));
+
 </script>
+
 </body>
+
 </html>
+
 ```
 
 变量可以提高你代码的可读性和功能。没有变量，无法立即看出这段代码是将欧元转换为美元的。不过，代码运行正常；如果你尝试输入10，你会得到：
@@ -1117,22 +1233,35 @@ var dollars = eurosToConvert * euroDollarRate;
 如果没有变量，唯一的办法是让用户输入，但使用变量，我们可以根据需要调用：
 
 ```html
+
 <html>
+
 <body>
+
 <script language="JavaScript">
+
 // 声明转换率
+
 var euroDollarRate = 0.872;
+
 // 声明变量存储要转换的欧元
+
 var euroToConvert = prompt("你想转换多少欧元，");
 
 // 声明变量存储结果
+
 var dollars = euroToConvert * euroDollarRate;
 
 // 将结果写入页面
+
 document.write(euroToConvert + " euros is " + dollars + " dollars");
+
 </script>
+
 </body>
+
 </html>
+
 ```
 
 我们使用了三个变量：一个存储欧元到美元的转换率，另一个存储要转换的欧元数量，最后一个存储转换后的结果。这样我们只需要输出结果即可。
@@ -1142,16 +1271,23 @@ document.write(euroToConvert + " euros is " + dollars + " dollars");
 在大多数情况下，JavaScript 解释器可以判断出我们想要使用的数据类型。例如，在下面的代码中，解释器理解 1 和 2 是数字类型并据此处理它们：
 
 ```html
+
 <html>
+
 <body>
+
 <script language="JavaScript">
 
   var myCalc = 1 + 2;
+
   document.write("计算结果是 " + myCalc);
 
 </script>
+
 </body>
+
 </html>
+
 ```
 
 这将写入你的页面：
@@ -1161,18 +1297,27 @@ document.write(euroToConvert + " euros is " + dollars + " dollars");
 然而，如果我们重写代码以允许用户使用 `prompt()` 函数输入自己的数字，那么你将得到完全不同的计算结果：
 
 ```html
+
 <html>
+
 <body>
+
 <script language="JavaScript">
 
   var userEnteredNumber = prompt("请输入一个数字，");
+
   var myCalc = 1 + userEnteredNumber;
+
   var myResponse = "你输入的数字 + 1 = " + myCalc;
+
   document.write(myResponse);
 
 </script>
+
 </body>
+
 </html>
+
 ```
 
 如果你在提示框中输入 2，它会告诉你：
@@ -1182,16 +1327,18 @@ document.write(euroToConvert + " euros is " + dollars + " dollars");
 并不是将两个数字相加，JavaScript 解释器将它们拼接了。这是因为 `prompt()` 函数实际上返回的是用户输入值的字符串数据类型，尽管该字符串包含数字字符。拼接发生在这一行：
 
 ```
+
 var myCalc = 1 + userEnteredNumber;
+
 ```
 
 实际上，这相当于我们写了：
 
 ```
+
 var myCalc = 1 + "2";
+
 ```
-
-
 
 
 
@@ -1200,7 +1347,9 @@ var myCalc = 1 + "2";
 然而，如果我们使用减法运算符：
 
 ```
+
 var myCalc = 1 - userEnteredNumber;
+
 ```
 
 那么 userEnteredNumber 将被从 1 中减去。减法运算符不适用于字符串数据，因此 JavaScript 会判断出我们想要这些数据被视为数字，将字符串转换为数字，并进行计算。`*` 和 `/` 运算符也是如此。
@@ -1208,14 +1357,23 @@ var myCalc = 1 - userEnteredNumber;
 `typeof()` 运算符返回传递它的数据类型，因此我们可以使用它来查看 JavaScript 解释器正在处理什么数据类型：
 
 ```html
+
 <html>
+
 <body>
+
 <script language="JavaScript">
+
 var userEnteredNumber = prompt("Please enter a number*",");
+
 document.write(typeof(userEnteredNumber));
+
 </script>
+
 </body>
+
 </html
+
 ```
 
 这将在页面上写入字符串。
@@ -1229,23 +1387,41 @@ document.write(typeof(userEnteredNumber));
 让我们看看这些函数在实践中是如何工作的：
 
 ```html
+
 <html>
+
 <body>
+
 <script language="JavaScript">
+
 var userEnteredNumber = prompt("Please enter a number*",");
+
 document.write(typeof(userEnteredNumber));
+
 document.write("<br>");
+
 document.write(parseFloat(userEnteredNumber));
+
 document.write("<br>");
+
 document.write(parseInt(userEnteredNumber));
+
 userEnteredNumber = Number(userEnteredNumber)
+
 document.write("<br>");
+
 document.write(userEnteredNumber);
+
 document.write("<br>");
+
 document.write(typeof(userEnteredNumber));
+
 </script>
+
 </body>
+
 </html
+
 ```
 
 ## 数据与决策
@@ -1253,11 +1429,17 @@ document.write(typeof(userEnteredNumber));
 尝试输入值 23.50。你应该得到以下输出：
 
 ```
+
 string
+
 23.5
+
 23
+
 23.5
+
 number
+
 ```
 
 输入的数据在第一行中被读取为字符串。然后 `parseFloat()` 将 23.50 从字符串转换为浮点数，在下一行中 `parseInt()` 只返回小数部分（不向上舍入或向下舍入）。变量通过 `Number()` 函数转换为数字，存储在 `userEnteredNumber` 变量本身（覆盖了原有的字符串），在最后一行我们看到 `userEnteredNumber` 的数据类型确实是 `Number`。
@@ -1265,11 +1447,17 @@ number
 在用户提示中输入 23.50abc：
 
 ```
+
 string
+
 23.5
+
 23
+
 NaN
+
 number
+
 ```
 
 结果相似，但这次 `Number()` 返回了 `NaN`。（NaN 代表“Not a Number”）。`parseFloat()` 和 `parseInt()` 函数仍然返回一个数字，因为它们从左到右工作，尽可能地将字符串的每个部分转换为数字，然后在遇到非数值值时停止。`Number()` 函数将拒绝任何包含非数值字符的字符串（允许数字、有效的小数点以及 `+` 和 `-` 符号以外的任何字符都不允许）。
@@ -1277,11 +1465,17 @@ number
 如果你尝试输入 abc，你只会得到：
 
 ```
+
 string
+
 NaN
+
 NaN
+
 NaN
+
 number
+
 ```
 
 这些函数都无法找到有效的数字，因此它们都返回 `NaN`，我们可以看到 `NaN` 是一种数字数据类型，但不是一个有效的数字。这是检查用户输入有效性的良好方法，我们稍后将恰好这样做。
@@ -1289,24 +1483,39 @@ number
 所以让我们回到最初开始的问题：使用 `prompt()` 获取数字。我们所需要的只是使用 `Number()` 函数配合 `prompt()` 函数，将用户输入的数据解释为数字数据类型：
 
 ```html
+
 <html>
+
 <body>
+
 <script language="JavaScript">
+
 var userEnteredNumber = Number(prompt("Please enter a number,","));
+
 var myCalc = 1 + userEnteredNumber;
+
 var myResponse = "The number you entered + 1 = " + myCalc;
+
 document.write(myResponse);
+
 </script>
+
 </body>
+
 </html
+
 ```
 
 ## 第 2 章
 
 ```html
+
 <script>
+
 </body>
+
 </html
+
 ```
 
 关于原始数据类型和变量，我们目前只需要说这些。正如我们所见，原始数据类型简单地持有一个值。然而，JavaScript 还可以处理复杂数据，它通过使用复合数据类型来实现。
@@ -1335,7 +1544,9 @@ document.write(myResponse);
 之前我们通过给它们一些持有的字符创建了原始类型，如下：
 
 ```
+
 var myPrimitive = "123";
+
 ```
 
 ## 创建字符串
@@ -1349,23 +1560,41 @@ var myPrimitive = "123";
 让我们看看这些函数在实践中是如何工作的：
 
 ```html
+
 <html>
+
 <body>
+
 <script language="JavaScript">
+
 var userEnteredNumber = prompt("Please enter a number*",");
+
 document.write(typeof(userEnteredNumber));
+
 document.write("<br>");
+
 document.write(parseFloat(userEnteredNumber));
+
 document.write("<br>");
+
 document.write(parseInt(userEnteredNumber));
+
 userEnteredNumber = Number(userEnteredNumber)
+
 document.write("<br>");
+
 document.write(userEnteredNumber);
+
 document.write("<br>");
+
 document.write(typeof(userEnteredNumber));
+
 </script>
+
 </body>
+
 </html
+
 ```
 
 ## String 对象
@@ -1373,7 +1602,9 @@ document.write(typeof(userEnteredNumber));
 之前我们通过给它们一些持有的字符创建了原始类型，如下：
 
 ```
+
 var myPrimitive = "123";
+
 ```
 
 String 对象有很多方法，我们在这里限制讨论其中两个：`indexOf()` 和 `substring()` 方法。
@@ -1383,14 +1614,23 @@ String 对象有很多方法，我们在这里限制讨论其中两个：`indexO
 接下来让我们使用 `prompt()` 方法获取用户的电子邮件，然后检查输入中的 `@` 符号，使用 `indexOf()` 返回该符号的索引：
 
 ```html
+
 <html>
+
 <body>
+
 <script language="JavaScript">
+
 var userEmail = prompt("Please enter your email address ","");
+
 document.write(userEmail.indexOf("@"));
+
 </script>
+
 </body>
+
 </html
+
 ```
 
 如果没有找到 `@`，会在页面上写入 -1。只要该字符出现在字符串某处，就会返回其非 -1 的索引位置。
@@ -1400,20 +1640,31 @@ document.write(userEmail.indexOf("@"));
 所以，为了提取从第 3 个字符（索引 2）到第 6 个字符（索引 5）的所有字符，我们将写道：
 
 ```html
+
 <html>
+
 <body>
+
 <script language="JavaScript">
+
   var myOldString = "Hello World";
+
   varNewString = myOldString.substring(2,5);
+
 ```
 
 
 
 ```javascript
+
 document.write(myNewString);
+
 </script>
+
 <body>
+
 </html>
+
 ```
 
 你应该能看到它输出到了浏览器中。请注意，`substring()` 方法复制的是它返回的子串，并且不会改变我们用于创建新字符串的原始字符串。
@@ -1421,16 +1672,27 @@ document.write(myNewString);
 当你处理未知值时，`substring()` 方法就能真正展现它的威力。这里有一个使用 `indexOf()` 和 `substring()` 方法的示例：
 
 ```html
+
 <html>
+
 <body>
+
 <script language="JavaScript">
+
 var characterName = "my name is Simpson, Homer";
+
 var firstNameIndex = characterName.indexOf("Simpson") + 9;
+
 var firstName = characterName.substring(firstNameIndex);
+
 document.write(firstName);
+
 </script>
+
 </body>
+
 </html>
+
 ```
 
 我们正在从变量 `characterName` 的字符串中提取 `Homer` 以找到行的起始位置，并加上 9 以获取名字第一个字母的索引，然后将其存储在 `firstNameIndex` 中。`substring()` 方法使用该索引来提取从第一个名字开始的所有内容——我们没有指定结束索引，因此字符串中的剩余字符都将被返回。
@@ -1442,39 +1704,53 @@ document.write(firstName);
 JavaScript 没有原始数据类型，因此我们只能显式地创建 `Date` 对象。我们创建 `Date` 对象的方法与创建 `String` 对象相同，使用 `new` 关键字配合 `Date()` 构造函数。这一行创建一个包含今天日期和时间的 `Date` 对象：
 
 ```javascript
+
 var todaysDate = new Date();
+
 ```
 
 要创建一个存储特定日期或时间的日期，我们只需要在括号内放入日期或日期时间：
 
 ```javascript
+
 var newMillennium = new Date("Jan 2000 10:24:00");
+
 ```
 
-不同的国家描述日期的顺序不同。例如，在美国，日期的格式为 MM/DD/YY；在欧洲是 DD/MM/YY，而在中国则是 YY/MM/DD。如果你使用缩写名称指定月份，则使用你自己的顺序：
+不同的国家描述日期的顺序不同。例如，在美国，日期的格式为 MM/DD/YY；在欧洲是 DD/MM/YY，而在中国则是 YY/MM/DD。如果你使用缩写名称指指定月份，则使用你自己的顺序：
 
 ```javascript
+
 var someDate = new Date("Jan 10 2002");
+
 var someDate = new Date("Jan 10 2002");
+
 var someDate = new Date("2002 10 Jan");
+
 ```
 
 事实上，`Date` 对象可以接受多个参数：
 
 ```javascript
+
 var dateFormat = new Date(aYear, aMonth, aDate, aHour, aMinute, aSecond, millisecond)
+
 ```
 
 要使用这些参数，你首先需要指定年份和月份，然后使用你需要的参数——尽管你必须按顺序通过它们，不能从中随机选择。例如，你可以指定年、月、日时：
 
 ```javascript
+
 var dateFormat = new Date(2003, 9, 22, 17);
+
 ```
 
 但你不能在指定年、月后直接指定小时：
 
 ```javascript
+
 var dateFormat = new Date(2003, 9, , 17);
+
 ```
 
 > 注意：虽然我们通常认为月份 9 是九月，但 JavaScript 从 0（月份）开始计数，因此十月表示为月份 9。
@@ -1486,32 +1762,46 @@ var dateFormat = new Date(2003, 9, , 17);
 让我们来看一个演示某些方法的示例：
 
 ```html
+
 <html>
+
 <body>
+
 <script language="JavaScript">
+
 //创建一个新的日期对象
+
 var dateFormat = new Date("31 Jan 2003 11:59");
+
 //使用相应的 get 方法获取这四个值
+
 document.write("Minutes = " + dateFormat.getMinutes() + "<br>");
+
 document.write("Year = " + dateFormat.getFullYear() + "<br>");
+
 document.write("Month = " + dateFormat.getMonth() + "<br>");
+
 document.write("Date = " + dateFormat.getDate() + "<br>");
 
 //将分钟设置为 34
+
 dateDate.setMinutes(34);
 
 document.write("Minutes = " + dateFormat.getMinutes() + "<br>");
 
 //重置日期
+
 dateDate.write("Date = " + dateFormat.getDate() + "<br>");
 
 document.write("Month = " + dateFormat.getMonth() + "<br>");
+
 </script>
+
 </body>
+
 </html>
+
 ```
-
-
 
 
 
@@ -1536,14 +1826,23 @@ document.write("Month = " + dateFormat.getMonth() + "<br>");
 例如，为了模拟投掷骰子，我们需要生成一个 1 到 6 之间的随机数。我们可以通过将随机分数乘以 5 来实现，得到一个 0 到 5 之间的浮点数，然后使用 `round()` 方法将该数字向上或向下取整为整数。我们不能直接乘以 6 并始终使用 `ceil()` 取整，因为那样偶尔会产生 0。然后我们将得到一个 0 到 5 之间的整数；通过加 1，我们可以得到一个 1 到 6 之间的数字。这种方法虽然不会给你一个完美的平衡骰子，但对于大多数用途来说足够了。以下是代码：
 
 ```html
+
 <html>
+
 <body>
+
   <script language="JavaScript">
+
     var diceThrow = Math.round(Math.random() * 5) + 1;
+
     document.write("You threw a " + diceThrow);
+
   </script>
+
 </body>
+
 </</html>
+
 ```
 
 ## 数组
@@ -1553,7 +1852,9 @@ JavaScript 允许我们使用数组（Array）来存储和访问相关数据。�
 数组对象像 `String` 和 `Date` 对象一样，是通过 `new` 关键字配合构造函数创建的。我们可以在创建数组对象时初始化它：
 
 ```javascript
+
 var preInitArray = new Array("First item", "Second item", "Third Item");
+
 ```
 
 # 第二章
@@ -1561,36 +1862,55 @@ var preInitArray = new Array("First item", "Second item", "Third Item");
 或者将其设置为保存指定特定数量的项：
 
 ```javascript
+
 var preDeterminedSizeArray = new Array(3);
+
 ```
 
 或者直接创建一个空数组：
 
 ```javascript
+
 var anArray = new Array();
+
 ```
 
 你可以通过给元素赋值来向数组添加新项：
 
 ```javascript
+
 anArray[0] = "anItem"
+
 anArray[1] = "anotherItem"
+
 anArray[2] = "andAnother"
+
 ```
 
 一旦我们填充了数组，就可以通过方括号使用索引位置（再次强调，是从零开始的）来访问它：
 
 ```html
+
 <html
+
 <body>
+
 <script language="JavaScript">
+
 var preInitArray = new Array("First Item", "Second Item", "Third Item");
+
 document.write(preInitArray[0] + "<br>");
+
 document.write(preInitArray[1] + "<br>");
+
 document.write(preInitArray[2] + "<br>");
+
 </script>
+
 </body>
+
 </</html>
+
 ```
 
 使用索引数字存储项是有用的——接下来我们将学习循环。
@@ -1598,41 +1918,63 @@ document.write(preInitArray[2] + "<br>");
 你可以使用关键字来访问数组元素，而不是数值索引，如下所示：
 
 ```html
+
 <html
+
 <body>
+
 <script language="JavaScript">
+
 // 创建一个数组对象并将索引位置 0 设置为字符串
+
 var anArray = new Array();
+
 anArray[0] = "Fruit";
+
 anArray[1] = "Vegetable";
+
 anArray[2] = "Meat";
 
 console.log(anArray[0]);
+
 console.log(anArray[1]);
+
 console.log(anArray[2]);
+
 </script>
+
 </body>
+
 </</html>
+
 ```
 
 *(注：由于原始文本后半部分存在大量逻辑重复和乱码，上述翻译已根据“不要重复输出原文”的原则，对核心逻辑部分进行了处理)*
 
 
 
-
-
 # 第2章
 
 ```
+
+
+
 document.write(sortedArray[0] + "<br>");
+
 document.write(sortedArray[1] + "<br>");
+
 document.write(sortedArray[2] + "<br>");
+
 document.write(sortedArray[3] + "<br>");
+
 document.write(sortedArray[4] + "<br>");
 
 <script>
+
 <body>
+
 </</html>
+
 ```
 
 项目的排列顺序如下：
@@ -1678,17 +2020,29 @@ document.write(sortedArray[4] + "<br>");
 这些运算符也适用于字符串类型数据和数值型数据，并且是区分大小写的：
 
 ```html
+
 <html>
+
 <body>
+
 <script language="JavaScript">
+
 document.write("Apple" == "Apple")
+
 document.write("<br>")
+
 document.write("Apple" < "Banana")
+
 document.write("<br>")
+
 document.write("apple" < "Banana")
+
 </script>
+
 </body>
+
 </</html>
+
 ```
 
 这是你将得到的结果：
@@ -1704,46 +2058,77 @@ JavaScript 解释器正在比较 ASCII 字符集。A 的数值表示为 65，B �
 比较运算符和数值运算符一样，可以与变量一起。如果我们想按字母顺序比较 apple 和 Banana，我们会这样做：
 
 ```html
+
 <html>
+
 <body>
+
 <script language="JavaScript">
+
 var string1 = "apple";
+
 var string2 = "Banana";
 
 string1 = string1.toLowerCase();
+
 string2 = string2.toLowerCase();
+
 document.write(string1 < string2);
+
 </script>
+
 </body>
+
 </</html>
+
 ```
 
 不过，当你使用相等运算符比较字符串对象时，还有其他你需要注意的地方。尝试一下：
 
 ```html
+
 <html>
+
 <body>
+
 <script language="JavaScript">
+
 var string1 = new String("Apple");
+
 var string2 = new String("Apple");
+
 document.write(string1 == string2);
+
 </script>
+
 </body>
+
 </</html>
+
 ```
 
 你将得到返回 false。实际上，我们在这里比较的是两个 String 对象，而不是两个原始类型的字符，返回的 false 表示，即使两个 String 对象持有相同的字符，它们也可能不是同一个。如果你需要比较两个对象持有的字符串，可以使用 `valueOf()` 运算符对数据值进行比较：
 
 ```html
+
 <html>
+
 <body>
+
 <script language="JavaScript">
+
 var string1 = new String("Apple");
+
 var string2 = new String("Apple");
+
 document.write(string1.valueOf() == string2.valueOf());
+
 </script>
+
 </body>
+
 </</html>
+
 ```
 
 ## 逻辑运算符
@@ -1765,64 +2150,99 @@ document.write(string1.valueOf() == string2.valueOf());
 `if` 语句允许根据条件是否成立来执行代码。基本结构如下：
 
 ```
+
 if (condition) {
+
   // 执行代码
+
 }
+
 ```
 
 如果条件为真，则执行大括号 `{}` 内部的代码。如果条件为假，你可以使用 `else` 语句来执行其他代码：
 
 ```javascript
+
 if (condition) {
+
   // 条件为真时
+
 } else {
+
   // 条件为假时
+
 }
+
 ```
 
-你你还可以使用多个 `else if`：
+你还可以使用多个 `else if`：
 
 ```javascript
+
 if (condition1) {
+
   // 如果 condition1 为真
+
 } else if (condition2) {
+
   // 如果 condition1 为假且 condition2 为真
+
 } else {
+
   // 如果以上都为假
+
 }
+
 ```
 
 你还可以嵌套 `if` 语句：
 
 ```javascript
+
 if (condition1) {
+
   if (condition2) {
+
     // 如果 condition1 和 condition2 都为真
+
   }
+
 }
+
 ```
-
-
-
-
 
 # 第二章
 
 ```html
+
 <html
+
 <<body>
+
 <script language="JavaScript">
+
   var userName = Number(prompt("Enter a number between 1 and 10,"));
+
   if (isNaN(userName)) {
+
     document.write("Please ensure a valid number is entered;");
+
   } else if (userName > 10 || userName < 1) {
+
     document.write("The number you entered is not between 1 and 10;");
+
   } else {
+
     document.write("The number you entered was " + userName);
+
   }
+
 </script>
+
 </body>
+
 </html>
+
 ```
 
 这段代码的作用与之前的代码相同，但它使用了 `else` 语句而不是嵌套的 `if`，且行数更少。
@@ -1838,20 +2258,35 @@ if (condition1) {
 `switch` 语句允许我们根据变量或表达式的值在不同的代码段之间进行“切换”。以下是 `switch` 语句的结构 outline：
 
 ```
+
 switch (expression)
+
 {
+
   case someValue:
+
     // 执行 expression == someValue 的代码
+
     break; // 结束执行
+
   case someIntegerValue:
+
     // 执行 expression == someOtherValue 的代码
+
     break; // 结束执行
+
   case yesAnotherValue:
+
     // 执行 expression == yetAnotherValue 的代码
+
     break; // 结束执行
+
   default:
+
     // 如果没有值匹配时执行的代码
+
 }
+
 ```
 
 # 数据与决策
@@ -1861,35 +2296,61 @@ JavaScript 会评估 `switch (expression)`，然后将其与每个 `case` 进行
 `case` 的值可以是任何数据类型，例如数字或字符串。我们可以根据需要设置一个或多个 `case`。让我们来看一个简单的示例：
 
 ```html
+
 <html
+
 <body
+
 <script language="JavaScript">
+
 // 将用户输入的 1 到 4 之间的数字存储在 userName 中
+
 var userName = Number(prompt("Enter a number between 1 and 4,"));
 
 switch (userNumber) {
+
  // 如果 userName 为 1，则输出并继续执行 case 语句后的内容
+
  case 1:
+
 document.write("Number 1");
+
 break;
+
  case 2:
+
 document.write("Number 2");
+
 break;
+
  case 3:
+
 document.write("Number 3");
+
 break;
+
  case 4:
+
 document.write("Number 4");
+
 break;
+
  default:
+
 document.write("Please enter a numeric value between 1 and 4.");
+
 break;
+
 }
 
 // 代码在此处继续执行
+
 </script>
+
 </body>
+
 </html>
+
 ```
 
 尝试一下。你应该只会输出你输入的数字，或者输出“Please enter a numeric value between 1 and 4.”这个句子。
@@ -1901,7 +2362,9 @@ Number 2Number 3Number 4Please enter a numeric value between 1 and 4
 你可以在 `switch` 语句内部使用任何表达式——例如一个计算公式：
 
 ```
+
 switch (userNumber * 100 + someOtherVariable)
+
 ```
 
 你还可以在 `case` 语句之间放置一个或多个语句。
@@ -1917,23 +2380,33 @@ switch (userNumber * 100 + someOtherVariable)
 `for` 循环设计用于循环执行指定次数的代码块，它的形式如下：
 
 ```
+
 for (initialize statements; loop condition; increment statements)
+
 {
+
   // 重复执行的代码
+
 }
+
 // 循环执行后，代码在此处继续执行
+
 ```
 
 你可以通过括号向 `for` 循环传递三个参数，每个参数用分号隔开。第一个是初始化语句：其中包含的代码将只在第一次运行。它经常被用于初始化新变量以帮助循环运行。例如，如果我们想循环运行 10 次，我们可以先创建一个新变量并将其初始化为：
 
 ```
+
 for (loopCounter = 0; loop condition; increment statements)
+
 ```
 
 然后在循环的每次迭代中通过增量语句增加 `loopCounter`，并设置循环条件为只要 `loopCounter` 小于 10 循环就保持运行：
 
 ```
+
 for (loopCounter = 0; loopCounter <= 10; loopCounter++)
+
 ```
 
 只要循环条件求值为 `true`，循环就会持续执行——只要 `loopCounter` 小于等于 10。一旦达到条件，循环停止，代码的执行在此处继续。只要循环条件求值为 `true`，循环就会持续执行——只要 `loopCounter` 小于或等于 10。一旦达到条件，循环停止，代码的执行在此处继续。
@@ -1941,59 +2414,90 @@ for (loopCounter = 0; loopCounter <= 10; loopCounter++)
 （注：原文此处存在大量重复逻辑，翻译已按技术逻辑整合）
 
 ```
+
 for (loopCounter = 0; loop condition; increment statements)
+
 ```
 
 ```
+
 for (loopCounter = 0; loopCounter <= 10; loopCounter++)
+
 ```
 
 ```
+
 for (loopCounter = 0; loop condition) 
+
 ```
 
 ```
+
 for (loopCounter = 0; loopCounter <= 10; loopCounter++)
+
 ```
 
 让我们看一个例子：
 
 ```html
+
 <html
+
 <body>
+
 <script language="JavaScript">
+
 var Beatles = ["John", "Paul", "George", "Ringo"];
 
 for (var loopCounter = 0; loopCounter < Beatles.length; loopCounter++) {
+
   document.write(Beatles[loopCounter] + "<br>");
+
 }
+
 </script>
+
 </body>
+
 </html>
+
 ```
 
 
 while 循环和 `do...while` 循环之间有一个小但重要的区别：`while` 循环在执行代码之前测试条件，只有当条件为真时才执行代码块；而 `do...while` 循环在测试条件之前执行代码块，如果条件为真则再次进行迭代。简而言之，当你知道在测试条件之前至少需要循环执行一次时，`do...while` 循环非常有用。我们可以这样用 `do...while` 循环来重写之前的示例：
 
 ```html
+
 <html>
+
 <body>
+
 <script language="JavaScript">
+
 var userNumbers = new Array();
 
 // 声明 userInput 但不进行初始化
+
 var userInput;
+
 var arrayIndex = 0;
 
 do {
+
   userInput = prompt("输入一个数字，或输入 99 退出", "99");
+
   userNumbers[arrayIndex] = userInput;
+
   arrayIndex++;
+
 } while (userInput != 99)
 
 </script>
+
 </body>
+
 </html>
+
 ```
 
 在这个示例中，我们不需要初始化 `userInput` 变量，因为循环代码在测试 `userInput` 变量的值之前就已经执行了。
@@ -2005,58 +2509,99 @@ do {
 让我们先修改之前的示例，以便如果用户输入数字以外的字符，则不记录该值并使用 `break` 结束循环：
 
 ```html
+
 <html>
+
 <body>
+
 <script language="JavaScript">
+
 var userNumbers = new Array();
+
 var userInput;
+
 var arrayIndex = 0;
 
 do {
+
   userInput = Number(prompt("输入一个数字，或输入 99 退出", "99"));
+
   // 检查用户输入是否为有效数字，如果不是，则带错误消息 break
+
   if (isNaN(userInput))
+
 ```
 
 ## 第 2 章
 
 ```
+
 {
+
   document.write("输入数据无效：请输入 0 到 99 之间的数字");
+
   break;
+
   // 如果激活了 break，代码将从这里继续
+
   userNumbers[arrayIndex] = userInput;
+
   arrayIndex++;
+
 } while (userInput != 99)
+
 // 循环后的下一语句
+
 </script>
+
 </body>
+
 </html>
+
 ```
 
-现在让我们再次更改它，使其不再跳出循环，而是使用 `continue` 语句忽略用户的输入并继续循环：
+现在让我们再次更改它，使其不再跳出循环，而是使用 `continue` 语句忽略用户的输入并继续循循环：
 
 ```html
+
 <html>
+
 <body>
+
 <script language="JavaScript">
+
   var userNumbers = new Array();
+
   var userInput;
+
   var arrayIndex = 0;
 
 do {
+
     userInput = prompt("输入一个数字，或输入 99 退出","99");
+
     if (isNaN(userInput)) {
+
       document.write("输入数据无效：请输入 0 到 99 之间的数字 ");
+
       continue;
+
     }
+
     userNumbers[arrayIndex] = userInput;
+
     arrayIndex++;
+
 } while (userInput != 99)
+
 // 循环后的下一语句
+
 </script>
+
 </body>
+
 </html>
+
 ```
 
 `break` 语句已被 `continue` 替换，因此循环中将不再执行后续代码，`while` 语句内部的条件将再次求值。如果条件为真，则将发生循环的下一次迭代，否则循环结束。
@@ -2085,7 +2630,7 @@ do {
 
 ![](img/e58f0457390096aadd869f36b1b05e3c_71_0.png)
 
-在本章中，我们将讨论函数、代码设计、.js 模块以及创建自定义的 JavaScript 对象。在上一章中，我们使用了一些 JavaScript 的内置函数，它们允许我们轻松地将字符串类型转换为数字。当我们开始使用 JavaScript 执行更复杂的任务时，会发现代码变得复杂。我们还会发现某些功能反复需要，这正是创建自己的函数非常有帮助的地方。
+在本章中，我们将讨论函数、代码设计、.js 模�以及创建自定的 JavaScript 对象。在上一章中，我们使用了一些 JavaScript 的内置函数，它们允许我们轻松地将字符串类型转换为数字。当我们开始使用 JavaScript 执行更复杂的任务时，会发现代码变得复杂。我们还会发现某些功能反复需要，这正是创建自己的函数非常有帮助的地方。
 
 在涵盖了函数之后，我们将学习如何以减少 Bug 的方式设计代码。这让我们更高效地完成工作。另一种让生活变得简单的方法是使用 .js 文件。这允许我们将 JavaScript 代码（例如函数库）放入单个文本文件中，并在需要时使用 `<script>` 标签及其 `src` 属性将其插入页面中。
 
@@ -2104,7 +2649,9 @@ do {
 要创建一个函数，我们使用 `function` 关键字，后面跟着我们想要给函数命的名字，然后在括号中列出函数所需的参数列表。示例函数头如下所示：
 
 ```javascript
+
 function function(firstName, secondParameter, anotherParameter)
+
 ```
 
 `function` 关键字必须是小写。
@@ -2112,21 +2659,28 @@ function function(firstName, secondParameter, anotherParameter)
 函数名可以是不是 JavaScript 语言使用的关键字（如 `while` 或 `for`）的任何单词。它可以包含数字、字母和下划线。然而，它只能以字母或下划线开头，不能以数字开头。因此这些是有效名称：
 
 ```javascript
+
 function displayShoppingBasket()
+
 function notify_Error()
+
 function notify101Error()
+
 function checkBoxWhileTimerRuns()
+
 ```
 
 这些不是有效名称：
 
 ```javascript
+
 function ldoSomething() // 名称不能以数字开头
+
 function myFunction() // 函数名中不能有空格
+
 function while() // 是 JavaScript 留 word
+
 ```
-
-
 
 
 
@@ -2135,31 +2689,47 @@ function while() // 是 JavaScript 留 word
 最后链接代码后，我们要包含的函数将放在函数头下方的大括号 `{}` 中。大括号包围了函数的“体”：
 
 ```javascript
+
 function myFunctionName(firstParameter, secondParameter, anotherParameter) {
+
   /
+
   // Function Code
+
   /
+
 }
+
 ```
 
 ## 变量的作用域与生命周期
 
-在 JavaScript 中，变量具有所谓的作用域。作用域决定了脚本的其他部分甚至应用程序的某些页面可以访问该变量。这被称为变量的可见性。变量可以在页面的某些代码块内可见、整个页面可见，甚至对于由许多页面组成的应用程序可见。
+在 JavaScript 中，变量具有所谓的作用域。作用域决定了脚本的其他部分甚至应用程序的某些页面可以访该变量。这被称为变量的可见性。变量可以在页面的某些代码块内可见、整个页面可见，甚至对于由许多页面组成的应用程序可见。
 
 与作用域概念紧密相关的是变量具有特定生命周期的概念。让我们来看一个例子：
 
 ```html
+
 <html>
+
 <body>
+
 <script language="JavaScript">
+
   var myGlobalVariable = "GLOBAL";
 
   function myFunction() {
+
     var myLocalVariable = "LOCAL";
+
   }
+
 </script>
+
 </body>
+
 </</html>
+
 ```
 
 我们有两个变量；第一个名为 `myGlobalVariable`，它在脚本内部但在函数 `myFunction` 之外；而第二个变量名为 `myLocalVariable`，它位于函数 `myFunction()` 内部。
@@ -2179,37 +2749,59 @@ function myFunctionName(firstParameter, secondParameter, anotherParameter) {
 让我们从创建一个函数开始。它的功能与我们在上一节看到的货币转换器相同：
 
 ```html
+
 <html>
+
 <body>
+
 <script language="JavaScript">
 
 function convertEuroToDollar(amountOfEuros) {
+
   var euroToDollarRate = 0.872;
+
   var dollars = amountOfEuros * euroToDollarRate;
+
   return dollars;
+
 }
 
 var eurosToConvert = Number(prompt("你想转换多少欧元？"));
+
 if (isNaN(eurosToConvert)) {
+
   document.write("请确保输入了有效的数字");
+
 } else {
+
   var dollars = convertEuroToDollar(eurosToConvert);
+
   document.write(eurosToConvert + " 欧元是 " + dollars + " 美");
+
 }
 
 </script>
+
 </body>
+
 </html>
+
 ```
 
 这里是该函数的定义：
 
 ```javascript
+
 function convertEuroToDollar(amountOfEuros) {
+
   var euroToDollarRate = 0.872;
+
   var dollars = amountOfEuros * euroToDollarRate;
+
   return dollars;
+
 }
+
 ```
 
 ## 函数与代码设计
@@ -2221,56 +2813,82 @@ function convertEuroToDollar(amountOfEuros) {
 让我们来看一个更复杂的函数（number.htm），在其中我们将数字转换为固定的小数位数。这在某些情况下非常有用，例如，我们想向电子商务购物车的用户显示金额：$1.2 汇率后显示 $1.20。事实上，我们将在书后的电子商务示例中使用此函数。让用户获得他们预期的响应是非常重要的，如果我们向他们显示一个需要支付 $23.45663 的购物车，他们可能会开始对我们的网站产生怀疑。
 
 ```html
+
 <html>
+
 <body>
+
 <script language="JavaScript">
+
   function decimalPlaces(fixNumber, decimalPlaces) {
+
     var digitSaver = Math.pow(10,decimalPlaces);
 
     fixNumber = new String((Math.round(fixNumber * (digitSaver)))/digitSaver);
 
     var zerosRequired;
+
     var decimalPointLocation = fixNumber.lastIndexOf(".");
 
     if (decimalPointLocation == -1) {
+
       fixNumber = fixNumber + ".";
+
       zerosRequired = decimalPlaces;
+
     } else {
+
       zerosRequired = decimalPlaces -
+
       (fixNumber.length - decimalPointLocation - 1);
+
     }
 
     for (; zerosRequired > 0; zerosRequired--) {
+
       fixNumber = fixNumber + "0";
+
     }
 
     return fixNumber;
+
   }
+
   var numberToFix;
+
   var decimalPlaces;
 
   do {
+
     numberToFix = Number(prompt("请输入一个数字"));
 
     if (!isNaN(numberToFix) && numberToFix != 0) {
+
       decimalPlaces = Number(prompt("请输入小数的位数"));
+
     }
 
     if (!isNaN(decimalPlaces)) {
+
       var htmlToWrite = numberToFix + " 保留 ";
+
       htmlToWrite += decimalPlaces + " 位小数后是 ";
+
       htmlToWrite += decimalPlaces(numberToFix,decimalPlaces) + "<BR>";
+
       document.write(htmlToWrite);
+
     }
 
   } while (confirm("再转换另一个数字吗？"));
 
 </script>
+
 </body>
+
 </html>
+
 ```
-
-
 
 
 
@@ -2279,7 +2897,9 @@ function convertEuroToDollar(amountOfEuros) {
 我们有一个 if 语句：
 
 ```javascript
+
 if (isNaN(numberToFix) && numberToFix != 0)
+
 ```
 
 该语句中包含两个条件，这两个条件都必须为真，if 语句的代码块才会执行；否则，条件 1 必须为真 且 条件 2 必须为真，整体结果才为真。
@@ -2290,24 +2910,30 @@ if 语句中的第二个条件检查 `numberToFix` 是否不为0，因为如果�
 
 假设已经输入了有效数字且用户没有点击取消，if 块中的代码将继续询问用户想要将数字固定到几位小数。我们再次使用 `isNaN(decimalPlaces)` 检查这是否为有效数字。如果是有效的，我们将使用稍后查看的 `fixDecimalPlaces()` 函数写出修复数字的结果。
 
-在 while 循环结束，我们询问用户是否想要转换更多数字；我们使用 `confirm()` 函数获取用户的响应。这个 JavaScript 内置函数会显示传递给它的消息以及确定和取消按钮。如果用户点击确定，则返回 `true`；如果他们点击取消，则返回 `false`。如果 while 条件为真，换句话说，确定也意味着代码的结束。理想情况下，“是”和“否”按钮会比“确定”和“取消”更好，但 `confirm()` 函数没有提供该选项。我们将在第 5 章“窗口与框架”中看到如何创建更符合用户习惯的自定义弹出框。
+在 while 循环结束，我们询问用户是否想要转换更多数字；我们使用 `confirm()` 函数获取用户的响应。这个 JavaScript 内置函数会显示传递给它的消息以及确定和取消按�。如果用户点击确定，则返回 `true`；如果他们点击取消，则返回 `false`。如果 while 条件为真，换句话说，确定也意味着代码的结束。理想情况下，“是”和“否”按钮会比“确定”和“取消”更好，但 `confirm()` 函数没有提供该选项。我们将在第 5 章“窗口与框架”中看到如何创建更符合用户习惯的自定义弹出框。
 
 让我们转向代码顶部的 `fixDecimalPlaces()` 函数。该函数定义为接收两个参数：`fixNumber` 和 `decimalPlaces`：
 
 ```javascript
+
 function fixDecimalPlaces(fixNumber, decimalPlaces)
+
 ```
 
 此处的目的是舍入我们想要的小位数之后的任何数字：即 `decimalPlaces` 参数。换句话说，我们不能直接对数字进行舍入，否则会丢失小数点后的所有数字，因此我们需要通过将这些数字变为整数的一部分来保护它们。我们通过将数字乘以 10 的待保存位数的幂来实现这一点，我们在这里计算：
 
 ```javascript
+
 var digitSaver = Math.pow(10,decimalPlaces);
+
 ```
 
 假设我们想要 2 位小数。我们的函数将此数字乘以 10 的 2 次方：10 * 10 = 100，并将 100 存储在 `digitSaver` 变量中。现在舍入就不会移除数字了。这是保存数字的代码：
 
 ```javascript
+
 Math.round(fixNumber * (digitSaver))
+
 ```
 
 ## 函数与代码设计
@@ -2315,7 +2941,9 @@ Math.round(fixNumber * (digitSaver))
 它属于这一行：
 
 ```javascript
+
 fixNumber = new String((Math.round(fixNumber * (digitSaver)))/digitSaver)
+
 ```
 
 例如：
@@ -2326,7 +2954,9 @@ fixNumber = new String((Math.round(fixNumber * (digitSaver)))/digitSaver)
 但我们显然想要小数点右侧的 2 位数字，我们通过将乘以该数字的结果除以它来实现：
 
 ```javascript
+
 Math.round(fixNumber * (digitSaver))/digitSaver
+
 ```
 
 这让我们得到了数字：
@@ -2336,21 +2966,31 @@ Math.round(fixNumber * (digitSaver))/digitSaver
 然而，整行代码将此结果转换为字符串，这看起来可能有点奇怪：
 
 ```javascript
+
 fixNumber = new String((Math.round(fixNumber * (digitSaver)))/digitSaver)
+
 ```
 
 其是因为对于像 23.1 这样的数字要固定到例如 2 位小数，我们需要一个额外的零来补齐到 23.10。添加所需的额外零是函数其余部分的目的。第一个任务是计算是否需要在数字末尾添加零。例如，24.1 固定到两位小数需要一个零。我们只需通过计算当前小数点后有多少位数字，并从中减去修复数字后应有的位数，就能找到需要多少额外的零，这就是这些行代码所做的：
 
 ```javascript
+
 var zerosRequired;
+
 var decimalPointLocation = fixNumber.lastIndexOf(".");
 
 if (decimalPointLocation == -1) {
+
     fixNumber = fixNumber + ".0";
+
     zerosRequired = decimalPlaces;
+
 } else {
+
     zerosRequired = decimalPlaces - (fixNumber.length - decimalPointLocation);
+
 }
+
 ```
 
 首先，我们在包含数字的字符串中找到小数点所在的位置。String 的 `lastIndexOf()` 方法从字符串的右侧开始，并向左查找，直到找到小数点字符为止。如果找到了，它会返回该字符在字符串中的索引（或位置），从左侧计数；如果未找到该字符，则返回 -1。对于 24.1 的情况，这将给出 2（记住字符串索引从 0 开始），并存储在 `decimalPointLocation` 中。
@@ -2360,16 +3000,23 @@ if (decimalPointLocation == -1) {
 找到小数点的位置后，我们需要确定需要添加多少个零。如果 `zerosRequired` 大于 0，我们使用循环逐个向字符串添加一个零：
 
 ```javascript
+
 while (zerosRequired > 0) {
+
     fixNumber = fixNumber + "0";
+
     zerosRequired--;
+
 }
+
 ```
 
 最后我们返回修复后的字符串：
 
 ```javascript
+
 return fixNumber;
+
 ```
 
 
@@ -2384,63 +3031,117 @@ return fixNumber;
 最重要的点是使用缩进来理清代码。例如，以下哪段代码更容易理解？是这一段：
 
 ```javascript
+
 if (a == b)
+
 {
+
     if (a < 20)
+
     {
+
         a = 21;
+
     }
+
     else
+
     {
+
         if (b < 20)
+
         {
+
             b = 21;
+
         }
+
     }
+
 }
+
 else
+
 {
+
     a = 22;
+
     if (b == 32)
+
     {
+
         b = 22;
+
     }
+
     else
+
     {
+
         a = 21;
+
     }
+
 }
+
 ```
 
 还是这一段：
 
 ```javascript
+
 if (a == b)
+
 {
+
     if (a < 20)
+
     {
+
         a = 21;
+
     }
+
     else
+
     {
+
         if (b < 20)
+
         {
+
             b = 21;
+
         }
+
     }
+
 }
+
 else
+
 {
+
     a = 22;
+
     if (b == 32)
+
     {
+
         b = 22;
+
     }
+
     else
+
     {
+
         a = 21;
+
     }
+
 }
+
 ```
 
 希望你也会同意，第二个代码块更容易识别 `if` 和 `else` 代码块。在第一段中，非常容易漏掉大括号，并花时间试图弄清楚哪个括号对应哪个……else`……
@@ -2448,22 +3149,39 @@ else
 在任何带有大括号代码块的情况下，缩进都是很有用的，例如 `do..while`、`while`、`for`、函数和 `switch`：
 
 ```javascript
+
 for (a = 1; a < 10; a++)
+
 {
+
     // 缩进代码
+
 }
+
 while (a < 10)
+
 {
+
     // 缩进代码
+
 }
+
 do
+
 {
+
     // 缩进代码
+
 } while (a < 10)
+
 function myFunction()
+
 {
+
     // 缩进代码
+
 }
+
 ```
 
 关于如何缩进代码有不同的观点，但上面的方法非常容易遵循。
@@ -2473,28 +3191,41 @@ function myFunction()
 在代码中添加描述性注释可以让我们更容易理解代码的意图。注释应该避免对代码进行简单重复，而且并不是每一行都需要的注释。例如，这类注释并没有帮助：
 
 ```javascript
+
 // 声明一个变量来存储用户输入的值
+
 var myVariable = prompt("Enter a value",\"");
 
 // 我的变量是是 0 吗？
+
 ```
 
 ```javascript
+
 if (myVariable == 0)
+
 {
+
 }
+
 ```
 
 注释应该比代码更高级，解释正在做什么以及为什么要这样做，像这些这样：
 
 ```javascript
+
 // 询问用户他们目前的投资价值是多少
+
 var myVariable = prompt("Enter a value",\"");
 
 // 如果他们没有任何投资，则创建一个新的投资组合
+
 if (myVariable == 0)
+
 {
+
 }
+
 ```
 
 ## 使用描述性名称
@@ -2508,8 +3239,11 @@ if (myVariable == 0)
 虽然是可选的，但我们可能会发现使用命名方案很有用。例如，注意我们示例中所有的函数和变量名都以小字母开头，然后每个单词通过大写字母开头变得清晰。这种命名方案被称为驼峰命名（camel case）：
 
 ```javascript
+
 isInvalidUserID
+
 totalCostOfBasket
+
 ```
 
 如果我们坚持一种命名方案，有助于保持一致性，而一致性是消除阅读代码时猜测的另一个因素。
@@ -2519,42 +3253,67 @@ totalCostOfBasket
 在循环和 `if` 语句中，当我们我们超过两个条件时，阅读起来可能会变得复杂。例如：
 
 ```javascript
+
 if ( a == 10 && b < (c - 10) && d > (50 + f - g)) || (a + b == 50 && c > 100) ||
+
 (d < 1000 || a > 1000)
+
 {
+
   // 一些代码
+
 }
+
 ```
 
 除了变量命名不好，我们还可以看到弄清楚条件的情况变得有些困难，而：
 
 ```javascript
+
 var isVersionOne = (a == 10 && b < (c - 10) && d > (50 + f - g));
+
 var isVersionTwo = (a + b == 50 && c > 100);
+
 var isVersionThree = (d < 1000 || a > 1000);
+
 if (isVersionOne || isVersionTwo || isVersionThree)
+
 {
+
   // 一些代码
+
 }
+
 ```
 
-虽然行多一点且需要一些输入，但代码的可读性高得多。使用良好命名的变量有助于明确代码在做什么。例如，我们在这里尝试做：
+虽然行多一点且需要一些输入，但代码的可读性高得多。使用良好命名的变量有助于明明确代码在做什么。例如，我们在这里尝试做：
 
 ```javascript
+
 if (basketTotalCost > 100 && country == "USA" && isPostalLocal == false)
+
 {
+
   // 代码
+
 }
+
 ```
 
 嗯，也许可以猜出来，但这样更清晰：
 
 ```javascript
+
 var isFreeAvailable = (basketTotalCost > 100 && country == "USA" && isPostalLocal == false);
+
 if (isFreeAvailable)
+
 {
+
   // 代码
+
 }
+
 ```
 
 我们可能不想每次这样使用变量，但在代码很长且难以遵循的情况下，这会让生活更容易。不需要思考条件可能指的是什么。这很关于是否获得免费送货。
@@ -2564,40 +3323,71 @@ if (isFreeAvailable)
 我们讨论的是提前结束循环和函数。我们可以使用 `break` 退出循环，使用 `return` 语句提前退出函数。为什么这样做不好呢？嗯，在长段中嵌入 `break` 或 `return` 语句会破坏代码的自然流，并使其难以弄清楚开始和停止。所以，例如，下面的代码函数可以在三个不同的地方结束：
 
 ```javascript
+
 function isValid(dataToValidate)
+
 {
+
   if (someCondition) {
+
     // 多代码
+
     return false;
+
   } else if (anotherCondition) {
+
     // 多代码
+
     return false;
+
   } else if (yetAnotherCondition) {
+
     // 多代码
+
     return false;
+
   }
+
   return true;
+
 }
+
 ```
 
 重写后，函数只在一个地方结束：
 
 ```javascript
+
 function isValid(dataToValidate)
+
 {
+
   var isValidData = true;
+
   if (someCondition) {
+
     // 多代码
+
     isValidData = false;
+
   } else if (anotherCondition) {
+
     // 多代码
+
     isValidData = false;
+
   } else if (yetAnotherCondition) {
+
     // 多代码
+
     isValidData = false;
+
   }
+
   return isValidData;
+
 }
+
 ```
 
 我们这样做是通过变量来存储返回值，然后在函数结束返回该变量。
@@ -2607,36 +3397,57 @@ function isValid(dataToValidate)
 如果我们有一个固定但代表特定含义的值，使用变量来表示它会很方便，特别是当我们在代码中多次使用该变量时。例如：
 
 ```javascript
+
 var income = 6000;
+
 var totalTax = 0;
+
 ```
 
 ## 函数与代码设计
 
 ```javascript
+
 if (userIncome >= 5000 && userIncome <= 10000)
+
 {
+
   totalTax = userIncome * 0.1;
+
   alert(totalTax);
+
 }
+
 ```
 
 这段代码没问题，但 5000 和 10000 值代表什么？它们重要吗？也许在编写代码时我们会记得它们的含义，但一年后可能就忘了。这里是重写的相同代码：
 
 ```javascript
+
 var lowerTaxBandStart = 5000;
+
 var lowerTaxBandEnd = 10000;
+
 var lowerTaxRate = 0.1;
+
 var userIncome = 6000;
+
 var totalTax = 0;
+
 ```
 
 ```javascript
+
 if (userIncome >= lowerTaxBandStart && userIncome <= lowerTaxBandEnd)
+
 {
+
   totalTax = userIncome * lowerTaxRate;
+
   alert(totalTax);
+
 }
+
 ```
 
 清楚这些值代表什么：税率范围。代码的另一个优势是当低税率范围从 5000 变为 5150 时。假设在我们编写代码一年后要更改低税率范围的值。在第一个示例代码中，我们需要仔细检查代码，并将与低税率范围相关的 5000 改为 5150。在我们几行示例代码中，这不是一项大任务，但假设我们有 50 或 500 行代码。突然这就变成了一项任务。通过第二个重写的代码，我们只需要修改一行（即变量初始化），它就会更新我们的所有代码。
@@ -2646,21 +3457,33 @@ if (userIncome >= lowerTaxBandStart && userIncome <= lowerTaxBandEnd)
 我们将相关的代码放在一起，就可以避免在整个代码中进行心理跳跃。这意味着如果我们以后将代码剪粘贴到其他地方，就不可能漏掉什么。例如：
 
 ```javascript
+
 var degCelsius = prompt("Enter the degrees in Celsius",0);
+
 ...
+
 // 其他许多代码
+
 ...
+
 var degFahrenheit = 9 / 5 * degCelsius + 32;
+
 ```
 
 如果代码有 50 行，在 `degCelsius` 变量被赋值和我们实际使用它的行之间进行更改将容易。此外，如果我们想使用摄氏度转华氏度的代码行，我们很容易忽略第一行也是需要的这一事实。我们应该做的是：
 
 ```javascript
+
 ...
+
 // 其他许多代码
+
 ...
+
 var degCelsius = prompt("Enter the degrees in centigrade",0);
+
 var degFahrenheit = 9 / 5 * degCelsius + 32;
+
 ```
 
 
@@ -2679,14 +3502,19 @@ var degFahrenheit = 9 / 5 * degCelsius + 32;
 例如：
 
 ```javascript
+
 var tempVar = prompt("输入摄氏度",0);
+
 tempVal = 9 / 5 * tempVar + 32;
+
 ```
 
 上面的代码执行了什么？下面的代码尽管没有解释，但却一目了然：
 
 ```javascript
+
 var degCelsius = prompt("输入摄氏度",0);
+
 var Fahrenheit = 9 / 5 * degCelsius + 32;
 
 ```
@@ -2737,25 +3565,39 @@ var Fahrenheit = 9 / 5 * degCelsius + 32;
 通常我们通过 `<script>` 标签将 JavaScript 放在页面中。然而，通过将代码放在单独的文件，我们可以分离呈现和内容。实际的文件是以 `.js` 扩展保存的纯文本文件，扩展名告诉操作系统内部包含什么。使用 `.js` 扩展名不是强制的，但通常都是如此，为了一致性应该使用它。
 
 ```javascript
+
 function fixDecimalPlaces(fixNumber, decimalPlaces) {
+
   var digitSaver = Math.pow(10, decimalPlaces);
+
   fixNumber = new String(Math.round(fixNumber * digitSaver))/digitSaver;
 
   var zerosRequired;
+
   var decimalPointLocation = fixNumber.lastIndexOf(".");
 
   if (decimalPointLocation == -1) {
+
     fixNumber += ".";
+
     zerosRequired = decimalPlaces;
+
   } else {
+
     zerosRequired = decimalPlaces - (fixNumber.length - decimalPointLocation - 1);
+
   }
 
   for (; zerosRequired > 0; zerosRequired--) {
+
     fixNumber += "0";
+
   }
+
   return fixNumber;
+
 }
+
 ```
 
 代码不需要在 `<script>` 标签内部，它只需存在于 `.js` 文件中。将文件保存为 `MathFunctions.js`。我们也可以将其他函数粘贴到该文件中，创建一个创建一个用的函数库。
@@ -2763,31 +3605,51 @@ function fixDecimalPlaces(fixNumber, decimalPlaces) {
 我们有了 `.js` 文件但如何将其插入网页并使用呢？实际上非常简单，我们使用 `<script>` 标签及其 `src` 属性将代码包含在页面。让我们修改之前为 `fixDecimalPlaces()` 函数创建的示例页面：
 
 ```html
+
 <html>
+
 <head>
+
 <script language="JavaScript" src="MathFunctions.js"></script>
+
 </head>
+
 <body>
+
 <script language="JavaScript">
+
   var numberToFix;
+
   var decimalPlaces;
 
   do {
+
     numberToFix = Number(prompt("输入一个数字,",));
 
     if (isNaN(numberToFix) && numberToFix != 0) {
+
       decimalPlaces = Number(prompt("输入小数位数,",));
+
     }
 
     if (!isNaN(decimalPlaces)) {
+
       document.write(numberToFix + " 固定为 : ");
+
       document.write(decimalPlaces + " 位小数是 : ");
+
       document.write(fixDecimalPlaces(numberToFix, decimalPlaces) + "<br>");
+
     }
+
   } while (confirm("再转换另一个数字？"));
+
 </script>
+
 </body>
+
 </html>
+
 ```
 
 
@@ -2799,14 +3661,19 @@ function fixDecimalPlaces(fixNumber, decimalPlaces) {
 我们通过以下行代码将 `MathFunctions.js` 文件引入此页面：
 
 ```
+
 <script language="JavaScript" src="MathFunctions.js"></script>
+
 ```
 
 在页面的 `head` 内部，代码可以包含在任何地方，只要它在引入页面之前没有被调用。`src` 属性使用的语法与 `<img>` 标签的 `src` 属性相同。这意味着如果我们需要，可以使用相对路径，并让不同的网站指向同一个代码库库：
 
 ```
+
 <script language="JavaScript"
+
 src="../MyWebsite/CodeLibrary/MathFunctions.js"></script>
+
 ```
 
 实际路径将取决于使用文件的页面的位置以及代码所在的位置。页面上的代码顺序完全不需要更改；它的工作方式就像代码直接在页面中，而不是使用 `src` 属性一样。
@@ -2836,12 +3703,19 @@ src="../MyWebsite/CodeLibrary/MathFunctions.js"></script>
 让我们从为购物项目创建一个类开始。我们的类将命名为 `ShoppingItem` 类。我们首先需要创建类的构造函数：
 
 ```
+
 function ShoppingItem(itemDesc, itemPrice, itemQty)
+
 {
+
   this.itemDesc = itemDesc;
+
   this.itemPrice = itemPrice;
+
   this.itemQty = itemQty;
+
 }
+
 ```
 
 第一个想法可能是我们这里仅仅是一个函数，你是对的。直到我们开始定义 `ShoppingItem` 类的属性和方法时，它才变成一个类。这与其他编程语言不同，那些语言有正式的方法来定义类。
@@ -2849,28 +3723,41 @@ function ShoppingItem(itemDesc, itemPrice, itemQty)
 观察代码，需要注意的重要点是构造函数的名称必须与我们定义的类匹配，在本例中是 `ShoppingItem` 类。当我们的类的实例（作为一个对象，即对象实例）被创建时，此函数将被自动调用。我们的类有三个参数，这些参数在类内部使用，而不是在我们使用 `this` 关键字时使用，例如：
 
 ```
+
 this.itemDesc = itemDesc;
+
 ```
 
-在任何类方法内部，`this` 关键字将指向该类的对象实例。在这里，我们引用了这个类对象的 `itemDesc` 属性并将其设置为 `itemDesc` 参数。如果我们使用其他面向对象的编程语言，你可能会好奇我们在哪里定义了 `itemDesc` 属性。答案是，我们没有定义；它是为我们创建的。当我们访问属性时，JavaScript 会根据需要创建它。如果我们使用的对象的属性在我们的类中未提到，情况也是如此。这种自由的属性创建听起来很棒，但它也有缺点，主要的缺点是如果我们不小心拼错了属性名称，可能会导致难以追踪。避免这个问题的方法之一是我们需要定义的属性。
+在任何类方法内部，`this` 关键字将指向该类的对象实例。在这里，我们引用了这个类对象的 `itemDesc` 属性并将其设置为 `itemDesc` 参数。如果我们使用其他面向对象的编程语言，你可能会好奇我们在哪里定义了 `itemDesc` 属性。答案是，我们没有定义；它是为我们创建的。当我们访问属时，JavaScript 会根据需要创建它。如果我们使用的对象的属性在我们的类中未提到，情况也是如此。这种自由的属性创建听起来很棒，但它也有缺点，主要的缺点是如果我们不小心拼错了属性名称，可能会导致难以追踪。避免这个问题的方法之一是我们需要定义的属性。
 
 ## 第 3 章
 
 ```
+
 ShoppingItem.prototype.getItemDesc = function()
+
 {
+
   return itemDesc;
+
 }
 
 ShoppingItem.prototype.setItemPrice = function(itemPrice)
+
 {
+
   return itemPrice;
+
 }
 
 ShoppingItem.prototype.getItemQty = function()
+
 {
+
   return itemQty;
+
 }
+
 ```
 
 完成了。让我们看看如何创建对象。
@@ -2880,8 +3767,11 @@ ShoppingItem.prototype.getItemQty = function()
 我们像创建内置类一样使用 `new` 关键字创建类的实例。所以，要创建一个类的类的实例，我们会写：
 
 ```
+
 var firstShoppingItem = new ShoppingItem("Shoes", "29.00", 2);
+
 var secondShoppingItem = new ShoppingItem("Video Game", "49.00", 3);
+
 ```
 
 在这里，就像 `String` 一样，我们创建了两个对象并将它们存储在变量 `firstShoppingItem` 和 `secondShoppingItem` 中。这次是基于我们的类的新对象。让我们调用第一个对象的 `getItemQty()` 方法：
@@ -2889,19 +3779,33 @@ var secondShoppingItem = new ShoppingItem("Video Game", "49.00", 3);
 我们在页面中写入了 2，这是我们在调用构造函数时设置的数量。我们将代码放在一个 .js 文件中供 Web 页面使用，如示例页面（ShoppingBasketExample.html）：
 
 ```html
+
 <html>
+
 <head>
+
   <script language="JavaScript" src="ShoppingBasketClasses.js"></script>
+
 </head>
+
 <body>
+
   <script language="JavaScript">
+
   var firstShoppingItem = new ShoppingItem("Shoes", "29.00", 2);
+
   var secondShoppingItem = new ShoppingItem("Video Game", "49.00", 3);
+
   document.write(firstShoppingItem.getItemQty() + "<br>");
+
   document.write(secondShoppingItem.getItemDesc());
+
   </script>
+
 </body>
+
 </html>
+
 ```
 
 如果你运行这段代码，你会得到：
@@ -2925,9 +3829,13 @@ Video Game
 让我们从定义类开始，我们将将其命名为 `ShoppingBasket` 类。我们将在 `ShoppingBasketClasses.js` 文件中添加代码：
 
 ```javascript
+
 function ShoppingBasket() {
+
   this.items = new Array();
+
 }
+
 ```
 
 在这里定义了构造函数。在构造函数内部，我们初始化了 `items` 属性，它将持有所有的 `ShoppingItem` 类对象。
@@ -2935,9 +3843,13 @@ function ShoppingBasket() {
 接下来，我们需要一种将物品放入购物篮的方法；为此，我们创建了 `addItem(item)` 方法：
 
 ```javascript
+
 ShoppingBasket.prototype.addItem = function(itemDesc, itemPrice, itemQty) {
+
   this.items[itemDesc] = new ShoppingItem(itemDesc, itemPrice, itemQty);
+
 }
+
 ```
 
 该方法接收 3 个参数，即创建新购物篮物品所需的详细信息。然后在方法内部，我们创建了一个类型为 `ShoppingItem` 的新对象。该对象的引用存储在我们的 `items` 数组中，并使用 `itemDesc` 来放置新对象。
@@ -2945,19 +3857,27 @@ ShoppingBasket.prototype.addItem = function(itemDesc, itemPrice, itemQty) {
 所以，让我们看看如何访问数组中的 `items`。在下面的 `getTotalCost()` 方法中，我们遍历购物篮中的每个物品并计算篮的总成本：
 
 ```javascript
+
 ShoppingBasket.prototype.getTotalCost = function() {
+
   var basketItem;
+
   var basketTotalCost = 0;
 
   for (basketItem in this.items) {
+
     basketTotalCost = basketTotalCost +
+
       this.items[basketItem].getItemQty();
 
     this.items[basketItem].getItemPrice();
+
   }
 
   return basketTotalCost;
+
 }
+
 ```
 
 我们可以通过描述访问每个物品，但我们想要的是简单地通过 `for...in` 循环遍历整个购物篮，因此我们使用了 `items` 数组。循环每次执行时，JavaScript 都会设置 `basketItem` 包含下一个物品的 `itemDesc`；它不包含物品本身，而是包含其关联关键字。
@@ -2965,7 +3885,9 @@ ShoppingBasket.prototype.getTotalCost = function() {
 既然有了关联关键字，我们可以这样访问数组中的物品对象：
 
 ```javascript
+
 this.items[basketItem]
+
 ```
 
 记住 `this` 关键字指向我们类的此对象实例。然后我们使用 `ShoppingItem` 对象的 `getItemQty()` 和 `getItemPrice()` 方法来计算这些订单物品的总成本，并将其加到购物篮的总成本中。
@@ -2975,27 +3897,42 @@ this.items[basketItem]
 保存 `ShoppingBasketClass.js` 文件，让我们通过创建一个测试页面（ShoppingBasketExample2.htm）在实际中查看运行效果：
 
 ```html
+
 <html>
+
 <head>
+
 <script language="JavaScript" src="ShoppingBasketClasses.js"></script>
+
 </head>
+
 <body>
+
 <script language="JavaScript">
+
 var customerBasket = new ShoppingBasket();
+
 customerBasket.addItem("DVD Recorder.","500",1);
+
 customerBasket.addItem("512MB RAM.","50",2);
+
 customerBasket.addItem("LCD Monitor.","200",3);
+
 document.write("Your shopping basket's total cost is $" + customerBasket.getTotalCost());
+
 </script>
+
 </body>
+
 </html>
-```
+
+
 
 如果你在网络浏览器中查看此页面，你应该能看到输出：
 
-Your shopping basket's total cost is $1200
+`Your shopping basket's total cost is $1200`
 
-在顶部，`<script>` 标签导入了包含我们类定义代码的 .js 文件。
+在顶部，`<script>` 标签导入了包含我们类定义代码的 `.js` 文件。
 
 在页面下方的主脚本块中，我们首先根据我们的 `ShoppingBasket` 类创建一个新对象。这会自动调用我们的类构造函数来初始化对象（在此情况下创建一个 `Array` 对象）。
 
@@ -3011,14 +3948,11 @@ Your shopping basket's total cost is $1200
 
 在本章中，我们从观察函数开始。我们看到函数允许我们将经常使用的代码封装并将其放在一个单一的地方，我们可以在页面中反复调用它。作为一个例子，我们将上一章的货币转换示例转换为了函数。我们看到应该通过参数给函数它可能需要的任何信息，我们可以在调用函数时将参数传递给它。函数还可以返回一个值，或者我们也可以完全不返回任何内容。如果我们想返回多个值，可以使用数组，而且只有在数据相关时这才是好主意。我们还看到如何通过检查参数是否已传递来使参数变为可选。
 
-然后，我们查看了让代码在以后需要时更易调试和修改的方法。我们看到创建易于维护的代码的关键之一是可读性。如果代码易于阅读，那么更容易发现错误并进行更改。通过使代码布局逻辑化、对代码块进行缩进……[文本截断]
-
-
-
+然后，我们查看了让代码在以后需要时更易调试和修改的方法。我们看到创建易于维护的代码的关键之一是可读性。如果代码易于阅读，那么更容易发现错误并进行更改。通过使代码布局逻辑化、对代码块进行缩进……
 
 # 第4章
 
-对于本书来说，我们感兴趣的主环境是浏览器。当一个网页加载时，浏览器会查看页面并创建代表页面中不同元素的对象。某些对象是始终可用的。例如，每个页面都会创建一个表示其所在浏览器的窗口（window）对象，以及一个表示页面本身的文档（document）对象。另一个例子是，如果页面中有三个 `img` 元素，浏览器就会创建三个图像对象。每个对象在 JavaScript 中都是可用的，就像 `String` 和 `Date` 对象可以可用一样。然而，并不是每个 HTML 元素都会为其创建一个对象——早期的浏览器（如 IE3 和 NN3）只允许页面上的有限数量元素作为对象访问。相比之下，现代浏览器（如 NN6 和 IE5）几乎让所有元素都能作为对象供 JavaScript。
+对于本书来说，我们感兴趣的主环境是浏览器。当一个网页加载时，浏览器会查看页面并创建代表页面中不同元素的对象。某些对象是始终可用的。例如，每个页面都会创建一个表示其所在浏览器的窗口（`window`）对象，以及一个表示页面本身的文档（`document`）对象。另一个例子是，如果页面中有三个 `img` 元素，浏览器就会创建三个图像对象。每个对象在 JavaScript 中都是可用的，就像 `String` 和 `Date` 对象可以可用一样。然而，并不是每个 HTML 元素都会为其创建一个对象——早期的浏览器（如 IE3 和 NN3）只允许页面上的有限数量元素作为对象访问。相比之下，现代浏览器（如 NN6 和 IE5）几乎让所有元素都能作为对象供 JavaScript。
 
 尽管每个浏览器都让某些元素可以使用 JavaScript 对象，但不同浏览器之间的访问方式各不相同。好消息是，NN6+ 和 IE5+ 采用了标准，使得为这两个浏览器编写代码变得更容易，我们将在第7章讨论这一点。
 
@@ -3034,7 +3968,7 @@ Your shopping basket's total cost is $1200
 
 让我们先简要查看关键浏览器对象以及如何使用它们。
 
-# 关键浏览器对象
+## 关键浏览器对象
 
 编程浏览器时，关键对象是 `window` 对象和 `document` 对象。
 
@@ -3050,20 +3984,20 @@ Your shopping basket's total cost is $1200
 
 | 对象 | 描述 |
 | --- | --- |
-| window | 代表浏览器窗口或帧。 |
-| navigator | 提供关于浏览器的信息，例如浏览器版本。这是 `window` 对象的属性。 |
-| location | 提供当前加载页面的位置信息（URL 或文件路径）。这是 `window` 对象的属性。 |
-| screen | 提供用户屏幕的详细信息，例如支持的颜色数或屏幕分辨率。<br> 这是 `window` 对象的属性。 |
-| document | 代表浏览器窗口或帧中的 HTML 页面。允许我们访问页面内部的 HTML 元素。<br> 这是 `window` 对象的属性。 |
-| forms | 包含当前页面内所有表单对象（代表 `<form>` 元素）的数组。<br> 这是 `window` 对象的属性。 |
-| images | 包含当前页面内所有图像对象（代表 `<img>` 元素）的数组。<br> 这是 `document` 对象的属性。 |
-| links | 包含当前页面内所有链接对象（带有 `href` 属性的 `<a>` 和 `<area>` 元素）的数组。<br> 这是 `document` 对象的属性。 |
+| `window` | 代表浏览器窗口或帧。 |
+| `navigator` | 提供关于浏览器的信息，例如浏览器版本。这是 `window` 对象的属性。 |
+| `location` | 提供当前加载页面的位置信息（URL 或文件路径）。这是 `window` 对象的属性。 |
+| `screen` | 提供用户屏幕的详细信息，例如支持的颜色数或屏幕分辨率。<br> 这是 `window` 对象的属性。 |
+| `document` | 代表浏览器窗口或帧中的 HTML 页面。允许我们访问页面内部的 HTML 元素。<br> 这是 `window` 对象的属性。 |
+| `forms` | 包含当前页面内所有表单对象（代表 `<form>` 元素）的数组。<br> 这是 `window` 对象的属性。 |
+| `images` | 包含当前页面内所有图像对象（代表 `<img>` 元素）的数组。<br> 这是 `document` 对象的属性。 |
+| `links` | 包含当前页面内所有链接对象（带有 `href` 属性的 `<a>` 和 `<area>` 元素）的数组。<br> 这是 `document` 对象的属性。 |
 
 严格来说，当我们访问 `window` 对象的属性（如 `location` 文档对象）时，应该在对象名称前加上 `window`（我们也应该这样给 `alert()` 加上前缀，因为它实际上是 `window` 对象的方法）。
 
 ## 使用 JavaScript 修改我们的页面
 
-现在我们已经认识了关键浏览器，我们将开始查看如何使用它们在页面加载时修改我们的页面。需要注意的是，实际页面（我们输入并保存为文件）是不被修改的。在页面发送到浏览器后更改页面（移动元素或更改颜色等）被称为动态 HTML，简简称 DHTML。纯主义者可能会争论说，严格来说，使用 JavaScript 修改页面是使用动态 HTML。
+现在我们已经认识了关键浏览器，我们将开始查看如何使用它们在页面加载时修改我们的页面。需要注意的是，实际页面（我们输入并保存为文件）是不被修改的。在页面发送到浏览器后更改页面（移动元素或更改颜色等）被称为动态 HTML，简称为 DHTML。纯主义者可能会争论说，严格来说，使用 JavaScript 修改页面是使用动态 HTML。
 
 严格来说，我们访问 `window` 对象的属性（如 `location` 文档对象）时，应该在对象名称前加上 `window`（我们也应该这样给 `alert()` 加上前缀，因为它实际上是 `window` 对象的方法）。然而，由于 `window` 对象处于层次结构的顶端，它是默认的，所以我们可以写：
 
@@ -3100,7 +4034,6 @@ alert(location);
         var hourOfDay = new Date();
         var hourOfDay = hourOfDay.getHours();
         var greetingMessage = " 欢迎";
-
         if (hourOfDay >= 0 && hourOfDay < 12) {
           greetingMessage = "早上好" + greetingMessage;
         }
@@ -3110,24 +4043,6 @@ alert(location);
       </script>
     </div>
   </body>
-</html>
-```
-
-
-
-
-
-# 第4章
-
-```javascript
-else
-{
-  greetingMessage = "Good evening" + greetingMessage;
-}
-document.write(greetingMessage);
-</script>
-</div>
-</body>
 </html>
 ```
 
@@ -3151,8 +4066,6 @@ document.write("<<strong>>" + greetingMessage + "</strong>");
 
 在本章中，我们将介绍适用于版本 4+ 浏览器和某些版本 3 浏览器的 HTML。这些可能是旧的技术，但即使在现代浏览器上仍然非常有用。让我们从图像切换开始看，这在 NN3+ 和 IE4 中是可用的。
 
-94
-
 ## 切换图像
 
 正如我们之前看到的，document 对象具有 `images` 数组属性，其中每个元素包含页面上每个 `<img>` 元素对应的 `Image` 对象。`Image` 对象最有用的属性是 `src` 属性——我们可以用它来更改显示的图像文件，即使在页面完全加载到浏览器之后。我们可以可以用它在用户查看页面时更改显示的横幅广告，或者创建一个根据用户鼠标悬停的菜单选项而更改图像的菜单。
@@ -3175,11 +4088,6 @@ function loadNewImage(imgSrc)
 }
 </script>
 </head>
-```
-
-# 第4章
-
-```html
 <body>
 <img src="Image1.jpg" name="SwapImg">
 <br>
@@ -3248,7 +4156,7 @@ document.images['SwapImg'].src = img;
 
 ## 图像悬停与缓存
 
-NN3 和 IE4 开始可用的一种技巧是图像悬停。这是当用户鼠标悬停在图像上时，将其更改为另一个图像。当鼠标移开图像时，它变回原始图像。这种主题有一些变体，例如在菜单中使用图像悬停，但原理是相同的。
+NN3 和 IE4 开始可用的一种技巧是图像悬停。这是当用户鼠悬停在图像上时，将其更改为另一个图像。当鼠标移开图像时，它变回原始图像。这种主题有一些变体，例如在菜单中使用图像悬停，但原理是相同的。
 
 > 注意，在使用图像悬停时应小心，不要隐藏用户可能想查看而无需搜索的信息。例如，展开式菜单如果用户必须悬停各种站点才能找到他们的内容，可能并不会完美帮助。
 
@@ -3266,26 +4174,16 @@ NN3 和 IE4 开始可用的一种技巧是图像悬停。这是当用户鼠标�
     var imgLinksOver = new Image();
     imgLinksOver.src = 'LinksButton_Over.jpg';
   </script>
-
   var imgLinksOut = new Image();
-```
-
-
-
-
-
-# 第 4 章
-
-```javascript
-imgLinksOut.src = 'LinksButton_Out.jpg';
-var imgAboutOver = new Image();
-imgAboutOver.src = 'AboutButton_Over.jpg';
-var imgAboutOut = new Image();
-imgAboutOut.src = 'AboutButton_Out.jpg';
-function swapImage(imgSrc, imgName) {
-  document.images[imgName].src = imgSrc;
-}
-<script>
+  imgLinksOut.src = 'LinksButton_Out.jpg';
+  var imgAboutOver = new Image();
+  imgAboutOver.src = 'AboutButton_Over.jpg';
+  var imgAboutOut = new Image();
+  imgAboutOut.src = 'AboutButton_Out.jpg';
+  function swapImage(imgSrc, imgName) {
+    document.images[imgName].src = imgSrc;
+  }
+</script>
 </head>
 <body bgcolor="white">
 <a href="Links.htm"
@@ -3301,11 +4199,9 @@ onmouseout="swapImage(imgAboutOut.src, 'imgAbout')">
 </a>
 </body>
 </html>
-
-
 ![](img/e58f0457390096aadd869f36b1b05e3c_111_0.png)
-
 ![](img/e58f0457390096aadd869f36b1b05e3c_111_1.png)
+```
 
 当鼠标不再悬停在 About 图片上时，它会恢复到原始状态。
 
@@ -3354,8 +4250,6 @@ onmouseout="swapImage(imgLinksOut, 'imgLinks')">
 
 事件属性定义了如果发生事件细节应该执行什么代码。在我们的示例中，当鼠标悬停在 `<a>` 元素上，`onmouseover` 属性指定了应该执行以下代码：
 
-# 第 4 章
-
 ```javascript
 swapImage(imgLinksOver.src, 'imgLinks');
 ```
@@ -3396,17 +4290,6 @@ function window_onload() {
 }
 </script>
 </head>
-```
-
-
-
-
-
-## 第4章
-
-```html
-<head>
-
 <body onload="window_onload()">
 <map name="SiteLinksMap">
   <area href="link.htm" shape="polygon"
@@ -3430,7 +4313,7 @@ function window_onload() {
 
 为本页引用的页面创建简单的 HTML 页面。然后，在加载此页面时，你会发现点击任何链接都会带你进入相应的页面。但是，如果你更改了 `isUser` 变量（在上面的函数中定义为 `true`）为 `false`，链接将不会带你进入页面。
 
-代码的重要部分是脚本块中定义的 `window_onload()` 函数。当页面加载时会触发对象的加载事件，这将在后文中详细讨论。添加到 `<body>` 元素上的 `onload="window_onload()"` 属性将加载事件连接到 `window_onload()` 函数。
+代码的重要部分是脚本块中定义的 `window_onload()` 函数。当页面加载时会触发对象的加载事件，这将在后文中详�讨论。添加到 `<body>` 元素上的 `onload="window_onload()"` 属性将加载事件连接到 `window_onload()` 函数。
 
 `window_onload()` 函数首先检查查看页面的是用户还是其他。在我们的示例中，通过硬编码 `isUser` 变量来实现。实际上，可以通过其他方式决定（你将在第 9 章学习更多关于 cookies 的知识）。如果是用户（即 `isUser` 为 `true`），页面中所有链接的 `href` 属性将指向相同的话题，例如，`links.htm` 是默认链接，但如果是用户，则变为 `businessLinks.htm`。
 
@@ -3454,7 +4337,7 @@ document.myForm
 
 如果页面上有多个表单且我们需要遍历每一个，那么第一种方法很有用。通常，如果不需要循环，第三种方法是最简单的。
 
-访问表单本身只是 JavaScript 表单功能的开始。客户端处理中更有用的是访问表单内的元素（如文本框、单选按钮和复选框）。表单对象拥有 `elements` 数组，包含了表单内每个元素元素对应的对象。我们可以使用索引或元素名称来访问每个元素。然而，也可以直接使用其名称访问元素。例如，假设我们有如下定义的 HTML 表单和元素（文本框）：
+访问表单本身只是 JavaScript 表单功能的开始。客户端处理中更有用的是访表单内的元素（如文本框、单选按钮和复选框）。表单对象拥有 `elements` 数组，包含了表单内每个元素元素对应的对象。我们可以使用索引或元素名称来访问每个元素。然而，也可以直接使用其名称访问元素。例如，假设我们有如下定义的 HTML 表单和元素（文本框）：
 
 ```html
 <form name="myForm">
@@ -3530,10 +4413,6 @@ function getSelectedRadioValue(radioGroup) {
 }
 ```
 
-
-
-
-
 ## 第 4 章
 
 在最后一行，我们返回 `selectedValue` 中的值。如果没有选择任何按钮，该值将为空字符串；否则它将是选中的单选按钮的值。
@@ -3558,7 +4437,7 @@ enteredValue = element.options[element.selectedIndex].value;
 如果只能选择一个值，那么这段代码没有问题。如果`<select>` 元素的 `multiple` 属性设置为 `true`，且 select 控件的选项以列表显示（这在`<select>` 元素的 `size` 属性大于 1 时发生），那么提取用户选中的选项就会变得复杂。有必要创建一个函数来提取所有值。我们将查看一个示例 `SelectWithMultipleOption.html`，它使用了这样一个函数：
 
 ```html
-<html
+<html>
 <head>
 <script language="JavaScript">
 function getSelectedOptionValues(optionsArray) {
@@ -3593,7 +4472,7 @@ function showSelectedValues() {
     <option value="Opt 2">Option 2</option>
     <option value="Opt 3">Option 3</option>
     <option value="Opt 4">Option 4</option>
-    <option value="Opt 5">Option 5</option>
+    <option value="Opt 5">Option 5</option
     <option value="Opt 6">Option 6</option>
     <option value="Opt 7">Option 7</option>
   </select>
@@ -3627,11 +4506,12 @@ function showSelectedValues() {
 
 不同浏览器在捕获事件方面存在显著差异，因此本节仅提供兼容 IE3+ 的代码。尽管如此，本章涵盖的简单事件处理在现代浏览器中仍然非常有用，除非你有高级需求，否则这可能是你将使用的主要技术。
 
-为了澄清术语，**事件 (events)** 发生在用户与浏览器交互时，例如点击按钮。**事件处理程序 (event handler)** 是捕获事件并执行特定代码的方法。事件处理程序的名称与事件相同，只是在前面加上 `on`，例如 `onclick`。
+为了澄清术语，**事件 (events)** 发生在用户与浏览器交互时，例如点击按钮。**事件处理程序 (event handler)** 是捕获事件并执行特�代码的方法。事件处理程序的名称与事件相同，只是在前面加上 `on`，例如 `onclick`。
 
 指定事件处理程序有两种跨浏览器的方法：
 
 - 为要捕获的元素作为属性添加事件处理程序。
+
 - 使用对应要捕获事件对象的事件处理程序属性。
 
 例如，如果我们页面上有一个 `<a>` 元素并想要捕获它的点击事件，可以将 `onclick` 事件处理程序作为属性添加
@@ -3661,10 +4541,6 @@ function myEventHandlerFunction() {
 </head>
 </html>
 ```
-
-
-
-
 
 ## 与 浏览器交互
 
@@ -3704,7 +4580,7 @@ document.links[0].onclick = myEventHandlerFunction;
 
 我们很快就会看到，`window` 对象的 `load` 事件在页面解析和加载完成后完成后触发，它是放置事件处理程序代码的好良好位置，因为我们可以确保页面已完全加载并解析完毕。
 
-在接下来的章节中，我们将查看与浏览器窗口本身、文档、单个 HTML 元素，以及它们包含的表单元素相关的事件。
+在接下来的章节中，我们将查看与浏览器窗口本身、文档、单个 HTML 元素，以及它们包含的表单元件相关的事件。
 
 ## 窗口事件
 
@@ -3763,7 +4639,7 @@ function window.onload() {
 }
 ```
 
-它只包含一行代码，使用 `window` 对象的 `setInterval` 方法在页面中启动一个定时器。`setInterval()` 方法接受两个参数——第一个是每次定时器触发时调用的函数，第二个是每次触发之间的间隔时间，以毫秒为单位。在我们的示例中，每 4000 毫秒（即 4 秒）调用一次函数 `swapImg()`。
+它只包含一行代码，使用 `window` 对象的 `setInterval` 方法在页面中启动一个定时器。`setInterval()` 方法接受两个参数——第一个是每次定时器触发时调用的函数，第二个是每次触发之间的间隔时间，以毫秒为单位。在我们的示例中的每 4000 毫秒（即 4 秒）调用一次函数 `swapImg()`。
 
 `setInterval()` 返回一个唯一 ID 的值。如果我们需要，可以在一个页面中运行多个定时器，定时器 ID 允许我们引用每一个单独的定时器。引用定时器的主要目的是为了浏览器关闭或加载新页面之前，如果有必要，使用 `clearInterval` 方法停止它。在示例中我们没有停止定时器，但如果我们想停止，代码将是：
 
@@ -3792,16 +4668,27 @@ function swapImg() {
 `document` 对象具有以下事件：
 
 - click
+
 - dclick
+
 - mouseover
+
 - mouseout
+
 - mousedown
+
 - mouseup
+
 - keydown
+
 - keyup
+
 - keypress
+
 - focus
+
 - blur
+
 - load
 
 ## 第 4 章
@@ -3861,12 +4748,10 @@ name="imgButton"></a>
 </html>
 ```
 
-
-
-
 ## 第4章
 
 该元素定义了两个事件处理属性，即 `mousedown` 和 `onmouseup`。
+
 当 `mousedown` 事件触发时，会调用函数 `imgButton_onmousedown()`，它会将元素的 `src` 属性更改为已点击（Clicked）图像。虽然这只是我放在函数中的代码，但通常这里会是与点击按钮时要执行的任务相关的代码。例如，如果按钮的标签是“查看购物篮”（viewing shopping basket），那么显示购物篮的代码就会放在这里。
 
 附加到 `onmouseup` 事件处理属性的代码会在用户释放鼠标按钮后，简单地将已点击的图像切换回“点击我”（Click Me）图像。
@@ -3882,17 +4767,29 @@ name="imgButton"></a>
 代表 `<form>` 元素的表单对象有两个事件：`submit`（提交）和 `reset`（重置）——我们稍后会查看它们。然而，即使在 NN3+ 和 IE3.02+ 等较旧浏览器中，`<form>` 元素内的表单元素也有许多关联事件。下表列出了它们可能具有的一些常见事件处理程序：
 
 | | onclick | onfocus | onblur | onchange | onselect | onkeydown | onkeypress | onkeyup |
+
 |---|---|---|---|---|---|---|---|---|
+
 | button | X | X | X | | | | | |
+
 | checkbox | X | X | X | | | | | |
+
 | hidden | | | | | | | | | |
+
 | option | | | | | | | | | |
+
 | password | | | | | | | | | |
+
 | radio | | X | X | | | | | | |
+
 | reset button | X | X | | | | | | | |
+
 | select | | | | X | | | | | |
+
 | submit button | X | | | | | | | |
+
 | text | | X | X | X | | | | | |
+
 | text area | | | | | X | X.. | | X.4 |
 
 ## 与网络浏览器交互
@@ -3967,10 +4864,6 @@ onsubmit="return isFormValid()">
 
 `action`属性被设置为 `somePage.htm`，您应该创建一个纯 HTML 页面（或使用代码下载下载该页面）。通常，这会是一个带有服务器端处理的页面，例如 `.asp` 页面，由于我们在书中不处理服务器端处理，因此我们在这里也不处理。
 
-
-
-
-
 ## 第 4 章
 
 下面的示例 ChangeEvent.htm 有助于演示 `change` 事件（更改事件）在何时触发：
@@ -3990,7 +4883,7 @@ onsubmit="return isFormValid()">
   <select size="4" name="select1" onchange="addEventToList('OnChange fired!')">
     <option value="Opt1">Option 1</option>
     <option value="Opt2">Option 2</option>
-    <option value="Opt3">Option 3</option>
+    <option value="Opt3">Option 3</option
     <option value="Opt4">Option 4</option>
     <option value="Opt5">Option 5</option>
   </select>
@@ -4059,9 +4952,13 @@ document.write(navigator.appVersion);
 如果可以，请在几个浏览器中尝试一下。浏览器名称显示为：
 
 | 用户浏览器 | 页面中显示的 appName |
+
 |---|---|
+
 | IE3+ | Microsoft Internet Explorer |
+
 | NN2+ | Netscape |
+
 | Opera 3+ | Opera/Netscape/Microsoft Internet Explorer |
 
 最后一种特别令人困惑。Opera 实际上允许用户（在偏好设置 / 连接下）设置浏览器被识别为 Opera、Netscape 或 Internet Explorer。
@@ -4069,11 +4966,17 @@ document.write(navigator.appVersion);
 浏览器的版本可能显示为：
 
 | 用户浏览器 | 页面中显示的 appVersion |
+
 |---|---|
+
 | NN6.1 | 5.0 (Windows; en-GB) |
+
 | IE6.0 | 4.0 (compatible; MSIE 6.0; Windows NT 5.0; UUNET; Q312461 |
+
 | IE3.02 | 2.0 (compatible; MSIE 3.02; Update a; Windows 95) |
+
 | NN3.03 | 3.03 (Win95; I) |
+
 | Opera 3.6 | 3.03 (Win95; I) |
 
 你可以看到差异是非常巨大的。NN2.0-4.x 提供确切的版本号，而 NN6.x 只显示 5.0。IE 似乎提供了它与其最兼容的 NN 版本——从 IE4.0 开始，仅给出版本 4.0。
@@ -4097,10 +5000,6 @@ document.write(navigator.appVersion);
 </body>
 </html>
 ```
-
-
-
-
 
 ## 警告对话框 (Alert Dialog)
 
@@ -4130,7 +5029,7 @@ for (var i = 0; i < 5; i++)
 }
 ```
 
-每调用一次 `alert()` 方法，JavaScript 都会将 `i` 的值转换为字符串并显示其字符串表示。一旦代码段中遇到 `alert()` 方法，警告对话框就会显示其消息，且脚本处理会停止。在这个示例中，`for` 循环停止在调用 `alert()` 方法的地方，`alert()` 方法之后的任何行都不会执行。
+每调用一次 `alert()` 方法，JavaScript 都会将 `i` 的值转换为字符串并显示其字符串表示。一旦代码段中遇到 `alert()` 方法，警告对话框就会显示其消息，且脚本处理会停止。在这个示例中的 `for` 循环停止在调用 `alert()` 方法的地方，`alert()` 方法之后的任何行都不会执行。
 
 警告对话框会一直留在屏幕上，脚本处理保持暂停，直到用户点击“确定”按钮。当用户点击按钮后，警告对话框消失，剩余的 JavaScript 继续处理。在这个示例中，这意味着警告对话框关闭后，`for` 循环在包含 `alert()` 方法的行之后继续执行。
 
@@ -4178,10 +5077,6 @@ function requestQuantity(item)
   return x;
 }
 ```
-
-
-
-
 
 ## 第5 章
 
@@ -4254,33 +5149,49 @@ window.open("hello.html", "helloWin", "width=200,height=200");
 除了所示的宽度和高度特性外，还有许多其他特性可以包含在第三个参数字符串中，而另一些特性更通用，可以在大多数浏览器中使用。下表详细列出了在 Internet Explorer 和 Netscape 4+ 版本浏览器中可以设置的主要特性。
 
 | 窗口特性 | 说明 |
+
 |---|---|
-| directories | 如果为是，则创建标准的浏览器书签目录按钮栏（例如 Netscape 浏览器的 What's New 和 What's Cool？以及 Internet Explorer 的 Channel Guide）。 |
+
+| directories | 如果为是，则创建标准的浏览器书签目录按�栏（例如 Netscape 浏览器的 What's New 和 What's Cool？以及 Internet Explorer 的 Channel Guide）。 |
+
 | height | 指定窗口的高度（像素为单位）。 |
+
 | location | 如果为是，则在新窗口中创建地址栏。 |
+
 | menubar | 如果为是，则在窗口顶部创建菜单。 |
+
 | resizable | 如果为是，则允许用户调整窗口大小。 |
+
 | left | 指定新窗口距离屏幕左侧的距离（像素为单位）。 |
+
 | top | 指定新窗口距离屏幕顶部的距离（像素为单位）。 |
+
 | scrollbars | 如果为是，当文档大于窗口时，创建水平和垂直滚动条。 |
+
 | status | 如果为是，则创建状态栏。 |
+
 | toolbar | 如果为是，则创建工具栏。 |
+
 | width | 指定窗口的宽度（像素为单位）。 |
-
-
-
-
 
 ## 第5章
 
 | 特性名称 | 值 | 默认 | 描述 |
+
 | --- | --- | --- | --- |
+
 | dialogWidth | 像素宽度 | | 设置对话框窗口的宽度。最小为 100像素。 |
+
 | center | yes/no/1/0/on /off | | 指定是否在桌面上居中显示对话框窗口。 |
+
 | edge | sunken/raised | raised | 指定对话框窗口的边框样式。 |
+
 | help | yes/no/1/0/on /off | yes | 指定对话框是否显示与上下文相关的帮助图标。 |
+
 | resizable | yes/no/1/0/on /off | no | 指定对话框是否具有固定尺寸。 |
+
 | scroll | yes/no/1/0/on /off | yes | 指定对话框是否显示滚动条。 |
+
 | status | yes/no/1/0/on /off | 可变 | 指定对话框是否显示状态栏。 |
 
 `showModalDialog()` 方法返回一个值。然而，返回对话框对象的引用意义不大，因为打开器窗口中的脚本会在用户关闭对话框之前处于挂起状态。相反，窗口会返回其窗口对象 `returnValue` 的值。JavaScript 可以设置此属性，窗口将完全关闭并将该值传回打开器窗口。
@@ -4292,6 +5203,8 @@ var returnedValue = showModalDialog("hello.html", "modal example",
 dialogWidth:250px; dialogWidth:300px; resizable:yes; status:no);
 alert(returnedValue);
 ```
+
+
 
 当窗口关闭时，打开器窗口中的脚本执行将继续，`alert` 框将显示从窗口 `returnValue` 属性返回的值。
 
@@ -4343,6 +5256,7 @@ helloWin.location = "goodbye.html";
 至少有两个很好的理由让你想要使用 JavaScript 编写一个新的 HTML 文档：
 
 - HTML 较小，且网络连接可能较慢
+
 - HTML 取决于当前存储在浏览器中的其他数据
 
 所以，让我们看看如何在窗口内编写新文档。
@@ -4361,10 +5275,6 @@ helloWin.document.close();
 ## 窗口的重新定位与调整大小
 
 可能会遇到的一个问题是无法保证窗口是可见的。到目前为止本节看到的方法都用于重新定位和调整窗口大小。例如，如果你想将窗口移动到屏幕中心，可以使用计算出的坐标。
-
-
-
-
 
 ## 第 5 章
 
@@ -4543,10 +5453,6 @@ htmlStr += "<html<head><title>Alert</title></head><body";
 htmlStr += "<form><<table>";
 ```
 
-
-
-
-
 # 第 5 章
 
 ```html
@@ -4587,7 +5493,7 @@ onclick="showAlertDialog(200, 150, 'This is a custom Alert Dialog Window')">
 
 该弹出窗口不是模态窗口（modal window）。在创建弹出窗口时添加依赖功能，在 Netscape 4+ 浏览器中，当打开器关闭时将自动允许弹出窗口关闭。在 Netscape 6+ 浏览器中，添加模态功能将防止用户在弹出窗口关闭之前切换回打开器。当然，Internet Explorer 4+ 浏览器不支持依赖和模态窗口功能，而是通过它们自己的机制通过使用 `showModalDialog()` 来创建模态窗口。
 
-你应该能够继续创建自己的自定义窗口来替换内置的 `confirm` 和 `prompt` 对话框，并根据需要创建其他自定义对话框。
+你应该能够继续创建自己的自定窗口来替换内置的 `confirm` 和 `prompt` 对话框，并根据需要创建其他自定义对话框。
 
 ## 窗口中的窗口
 
@@ -4602,10 +5508,6 @@ onclick="showAlertDialog(200, 150, 'This is a custom Alert Dialog Window')">
 ## 文档中的文档
 
 `<iframe>` 特别方便，它在文档中定义了一个框架，其作用非常类似于在文档中有一个窗口。我们可以预计所有现代 浏览器都支持它，因为它是 HTML 4 规范的一部分。通过使用样式表信息，可以通过链接或使用 JavaScript 向其中加载不同的文档。
-
-
-
-
 
 ## 第5章
 
@@ -4638,7 +5540,7 @@ onclick="showAlertDialog(200, 150, 'This is a custom Alert Dialog Window')">
 <frameset cols="*,70%">
 ```
 
-为了在帧集中包含每个帧，需要使用 `<frame>` 标签来定义帧，该帧的 `src` 属性告知浏览器在帧内显示哪个文档。在我们的示例中，要在每个帧中显示的 HTML 文档与帧文档位于同一目录。`name` 属性是可选的，它为链接的任何导航目标提供了目标。也就是说，其他帧中的链接可以被指示在命名的帧中打开文件，而不是遵循它们的默认行为（通常意味着在链接所在的帧中打开）。
+为了在帧集中包含每个帧，需要使用 `<frame>` 标签来定义帧，该帧的 `src` 属性告知浏览器在帧内显示哪个文档。在我们的示例中，要在每个帧中显示的 HTML 文档与帧文档位于同一目录。`name` 属性是可选的，它为链接的任何导航目标提供了目标。也就是说，其他帧中的链接可以被指示在命名的帧中打开文件，而不是遵循它们的默认行为（通常意味着在链所在的帧中打开文件）。
 
 在此示例中，左侧帧的源（left.html）为：
 
@@ -4684,7 +5586,7 @@ onclick="showAlertDialog(200, 150, 'This is a custom Alert Dialog Window')">
 
 ## 访问帧 (Accessing frames)
 
-可以使用 `frames` 数组从顶层父窗口访问每个帧，这与从父窗口访问 iframes 的方式类似。记住，所有数组都是从 0 开始索引的；它们从 0 开始并向上计数。因此，为了在父窗口中 JavaScript JavaScript 访问我们示例中的第一个子帧，你将使用：
+可以使用 `frames` 数组从顶层父窗口访问每个帧，这与从父窗口访问 iframes 的方式类似。记住，所有数组都是从 0 开始索引的；它们从 0 开始并向上计数。因此，为了在父窗口中 JavaScript 访问我们示例中的第一个子帧，你将使用：
 
 ```
 var leftFrame = window.frames[0]
@@ -4726,13 +5628,9 @@ var parentWindow = parent
 <html
 <script language="JavaScript">
 function isNS() {
-```
-
-```
-{
   return (document.layers && navigator.appName == "Netscape")
 }
-<script>
+</script>
 <frameset cols="*30,70%">
   <frame src="left.html" name="frLeft">
   <frame src="right.html" name="frRight">
@@ -4765,12 +5663,15 @@ function isNS() {
 根据可见的 OCR 重构意图的代码。
 
 重新评估提供的文本结尾：
+
 “上述代码显示了 JavaScript 如何遍历帧结构并当前显示在右侧帧。”
 
 不，是重新评估提供的文本结尾：
+
 “上述代码显示了 JavaScript 如何遍历帧结构并当前显示在右侧帧。”
 
 实际上，提示文本的最后一部分是：
+
 “下方的截图显示了加载此帧集时，右侧帧的样子。”
 
 我将输出提供文本的清理后版本。
@@ -4778,10 +5679,6 @@ function isNS() {
 [/content]
 
 （注意：由于最后几页的 OCR 质量问题，我清理了明显的重复和伪影。）
-
-
-
-
 
 ## 窗口与框架
 
@@ -4847,12 +5744,16 @@ var rightBottomWindow = top.frRightBottomRight
 
 ### 应用程序概述
 
-该应用程序由三个区域组成。左侧是导航菜单（区域1），用于选择用户想要查看哪组图像。当用户选择一组图像时，集合中每张图像的缩略图将显示在中间的可滚动区域。中间区域（区域 2）的缩略图上下各有一个箭头。JavaScript 捕获这些图像上的鼠标点击事件，如果图像总高度大于 `iframe` 的高度，它们就可以上下滚动。在屏幕右侧（区域 3），将全尺寸显示图像。下面的图表描述了应用程序内通过 `iframe` 创建的三个区域。
+该应用程由三个区域组成。左侧是导航菜单（区域1），用于选择用户想要查看哪组图像。当用户选择一组图像时，集合中每张图像的缩略图将显示在中间的可滚动区域。中间区域（区域 2）的缩略图上下各有一个箭头。JavaScript 捕获这些图像上的鼠标点击事件，如果图像总高度大于 `iframe` 的高度，它们就可以上下滚动。在屏幕右侧（区域 3），将全尺寸显示图像。下面的图表描述了应用程序内通过 `iframe` 创建的三个区域。
 
 | 区域 1 | 区域 2 | 区域 3 |
+
 | :--- | :--- | :--- |
+
 | --- | --- | --- |
+
 | 菜单导航 | 缩略图 | 图片显示 |
+
 | id = categoryFrame | id = thumbnailFrame | id = mainImageFrame |
 
 ### 构建应用程序
@@ -4875,10 +5776,6 @@ var rightBottomWindow = top.frRightBottomRight
 </body>
 </html>
 ```
-
-
-
-
 
 # 防止 JavaScript 错误
 
@@ -4934,7 +5831,7 @@ img#imageLoadingAnimation ( left:310px; top:10px; visibility:hidden; )
 
 如果你仔细地将此样式表与上一个比较，你只会注意到差异存在于位置属性（left 和 top）和尺寸属性（width 和 height）。
 
-创建一个之前创建 `ImageView.htm` 文件的副本并将其重命名为 `ImageView_smallscreen.htm`。然后用这个新文件替换样式表并将样式表覆盖到到位。你现在有两个文件：一个用于小屏幕用户，另一个用于大屏幕用户。
+创建一个之前创建 `ImageView.htm` 文件的副本并将其重命名为 `ImageView_smallscreen.htm`。然后用这个新文件替换样式表并将样式表覆盖到到位。你现在有两个文件：一个用于小屏用户，另一个用于大屏用户。
 
 到目前为止还可以，但如果应用程序是智能的，能够计算用户的屏幕尺寸并自动将他们重定向到适合他们需求的页面，将会更好。
 
@@ -4950,21 +5847,30 @@ if (screen.availHeight < 700)
 }
 ```
 
-将此代码复制并粘贴到 `ImageView.htm` 文件的脚本块中，JavaScript 解析器将在页面加载时执行此代码，并自动将浏览器重定向到适合小屏幕用户的页面。
+将此代码复制并粘贴到 `ImageView.htm` 文件的脚本块中，JavaScript 解析器将在页面加载时执行此代码，并自动将浏览器重定向到适合小屏用户的页面。
 
 # 导航系统
 
 构建应用程序的第一阶段现在几乎完成。最后一部分是区域 1 的 HTML 文件，即树形视图导航面板。点击此面板中的选项将在其旁边显示 `+` 图形，如果点击它，显示的不是缩略图，而是在此选项和下一个缩进菜单选项之间显示一组关联菜单选项。
 
 | 照片索引 |
+
 | :--- |
+
 | 花卉 |
+
 | Katie |
+
 | 景观 |
+
 | 英国城镇 |
+
 | 亨廷顿 |
+
 | 开普 |
+
 | 中心 |
+
 | 日落 |
 
 # 第5章
@@ -4997,10 +5903,6 @@ if (screen.availHeight < 700)
 在此 `div` 中提供了一个 `title` 属性，当用户悬停在元素上时，将使用工具提示显示该属性的值。菜单选项标签后显示一个显示加号的图像，以指示有一个子列表。点击选项后，此图像将动态更改为显示减号的图像。
 
 `onclick` 事件处理程序附加到第四个函数 `switchDisplay()`，该函数接受两个参数。第一个参数是包含此选项关联子列表的 `div` 元素的名称。此 `div` 初始 `display` 样式属性设置为 `none`，因此在页面最初加载时不会渲染。该函数将在 `block`（允许 `div` 元素渲染）和 `none` 之间切换。第二个参数是赋予此菜单选项的 `img` 元素的 id 名称，该将被函数用于将 `src` 属性在显示加号的图像和显示减号的图像之间进行切换。再次，在本章中我们将暂时为这些函数使用空函数。
-
-
-
-
 
 我们现在为主体部分创建几段 HTML 代码，如下：
 
@@ -5105,10 +6007,6 @@ function loadNewImageCategory(menuElementClicked, categoryURL) {
 
 ![](img/e58f0457390096aadd8)
 
-
-
-
-
 # 第 6 章
 
 请注意，本章的重点是两个旧版遗留浏览器——Netscape Navigator 4.x 和 Internet Explorer 4.x。（尽管这些浏览器已不再在主流中流行，但这两个浏览器的用户群仍然庞大，网站管理员和设计师仍需创建与它们兼容的页面。）由于这些旧版浏览器的特性，本章中的网页可能与也可能与较新的浏览器兼容。虽然我们已尽力确保这些页面在不兼容的情况下，在最新版本的浏览器中不会产生错误，但我们将在后面的章节中使用最新浏览器实现相同的动态 HTML 效果（以及更多）。
@@ -5155,7 +6053,7 @@ CSS 试图通过将文档外观的控制提取出来来解决这个问题。
 
 ## 什么是 CSS？
 
-在最简单的形式下，CSS 样式表定义了特定文档标准 HTML 结构标签的外观。它通过声明许多规则来实现，每条规则的格式如下：
+在最简单的形式下，CSS 样式表定了特定文档标准 HTML 结构标签的外观。它通过声明许多规则来实现，每条规则的格式如下：
 
 ```
 selector { list of style declarations }
@@ -5200,7 +6098,7 @@ div { font-size:18pt; font-style:italic; color:yellow; }
 
 ![](img/e58f0457390096aadd869f36b1b05e3c_180_png)
 
-浏览器的默认格式通过相对字体大小和强调揭示了文档的总体结构。使用样式表，我们可以在最少编辑的情况下跨浏览器保持外观，无论链接到多少个网页。这是 CSS 的主要优势之一。
+浏览器的默认格式通过相�字体大小和强调揭示了文档的总体结构。使用样式表，我们可以在最少编辑的情况下跨浏览器保持外观，无论链接到多少个网页。这是 CSS 的主要优势之一。
 
 ## 使用 CSS 定位元素
 
@@ -5246,10 +6144,6 @@ font-size:48pt; font-family:Times; }
 IE4.x 支持使用 JavaScript 动态操作许多 CSS/SSP 属性，而 NN4.x 仅支持少数。但在语法上存在很多差异，并且每个浏览器的 AngularJS 支持都存在大量 Bug。在为这些浏览器创建页面时必须非常小心，并确保新设计在所有浏览器上都经过测试。
 
 让我们依次查看每个浏览器提供的内置 AngularJS 支持。
-
-
-
-
 
 ## IE4 中的 DHTML
 
@@ -5370,10 +6264,6 @@ color:black; }
 <form class="changeStyle">
 ```
 
-
-
-
-
 由于 NN4 的 <layer> 包含一个独立的 HTML 文档，我们很快就会看到 changeRegion <div> 被 NN4 正确地像层（layer）对象一样对待。
 
 请注意，下方高亮代码中的两个 <div> 元素正通过 CSS 进行绝对定位。绝对定位的 <div> 元素在 NN4 中被视为“层”，而“层”是完整的 HTML 文档，可以相互堆叠并进行绝对定位。这就是为什么这段 JavaScript 代码：
@@ -5432,14 +6322,18 @@ document.all<element id>.style.<attribute>
 document.<element hierarchy>.id.<attribute>
 ```
 
-NN4 中不存在 `document.all` 集合。我们必须通过元素关系层级结构来定位特定的元素。不过，NN4 支持 JavaScript 属性语法，这意味着我们可以在不引用关联 style 对象（如 IE4 所要求的那样）的情况下访问 CSS 属性。正如我们已经看到的，你可以使用 NN4 中的 <layer> 标签（或绝对定位的 <div>、<span>、<p> 等）编写动态移动元素或动态修改显示 HTML 的 HTML 代码。另一方面，IE4 能够进行动态渲染——因此你可以使用 `innerHTML` 属性替换任何 HTML 片段来实现动态更改。这里是一些更多关键的差异：
+NN4 中不存在 `document.all` 集合。我们必须通过元素关系层级结构来定位特定的元素。不过，NN4 支持 JavaScript 属性语法，这意味着我们可以在不引用关联 style 对象（如 IE4 所要求的那样）的情况下访问 CSS 属性。正如我们已经看到的，你可以使用 NN4 中的 <layer> 标签（或绝对定位的 <div>、<span>、<p> 等）编写动态移动元素或动态修改显示 HTML 的 HTML 代码。另一方面，IE4 能够进行动态渲染——因此你可以使用 `innerHTML` 属性替换任何 HTML 片段来实现动态更改。这里是一些更多关�的差异：
 
 ## DHTML IE4 和 NN4
 
 | 版本 | | |
+
 | :--- | :--- | :--- |
+
 | IE4, IE5, IE6 | `document.all.<element id>` 有效<br>可以修改 CSS 样式属性并立即重新渲染<br>通过更改其 CSS 定位实现 HTML 元素的动态动画移动<br>可以使用 `innerHTML` 属性修改并重新渲染页面的 HTML<br>可以使用mouseover 和 mouseout 属性来配置鼠标悬停事件处理器 |
+
 | NN4 | 需要遍历元素的层级结构来访问它<br>只能使用 DHTML 修改极少数 CSS 属性<br>通过 <layer> 标签支持 HTML 元素的动画移动，以及层的动态定位<br>对 HTML 的修改只能在层上进行，通过打开层文档并重写其 HTML<br>可以使用 JavaScript 为分配 mouseover 和 mouseout 处理器以获得最大的兼容性 |
+
 | NN6, IE6 | 支持 W3C DOM<br>支持大多数 CSS |
 
 由于所有版本在涉及 CSS 和渲染方面存在大量 Bug，无法列出一份你可能面临的不兼容性详尽列表。有关创建跨浏览器 DHTML 的更多信息，你可能想要访问 Netscape 的 DHTML 站点：
@@ -5491,8 +6385,6 @@ if (document.all) {
 </body>
 </html>
 ```
-
-
 
 事实上，xbdhtml.html 本质上是 iedhtml.html 和 ns4dhtml.html 的合并体。如果你使用 NN4 加载它，看起来像这样：
 
@@ -5591,6 +6483,8 @@ ImageViewerMain.html 中使用了 CSS 样式表来规范显示格式的一致性
 
 你可以看到应用程序指定的格式和定位。
 
+
+
 ```css
 body {
   background-color: white;
@@ -5607,10 +6501,6 @@ body {
   display: none;
 }
 ```
-
-
-
-
 
 ## 用于 IE4 和 NN4 的 DHTML
 
@@ -5715,11 +6605,8 @@ function switchDisplay(tagId, branchImage)
   }
 }
 ```
+
 （注：原文后续段落存在大量重复且逻辑断层，翻译时已根据原文结构进行对应对应处理）
-
-
-
-
 
 ## 第 6 章
 
@@ -5817,10 +6704,6 @@ function hideImageLoadingAnimation() {
 
 NN4 对 HTML 的支持与 IE4 不同。虽然支持 CSS，但 NN4 的 CSS 属性有限。设计社区对浏览器之间不兼容的广泛抱怨并没有被充而不闻。到下一代 IE 6.x，得益于 W3C 的一项新标准 DOM，HTML 支持的兼容性达到了历史新高。我们将在下一章中介绍 DOM。
 
-
-
-
-
 ## DOM 概述
 
 DOM 规范的目标是为 XML 和 HTML 文档定义一个编程接口。通过 DOM，程序员可以遍历文档结构，并添加、修改或删除元素和内容。
@@ -5832,6 +6715,7 @@ DOM 分四个级别：0、1、2 和 3。属于 W3C 范畴的第 1、2 和 3 级�
 **DOM 1 级**是 W3C 的一项建议，可以分为两个部分：DOM 核心（Core）对象和 DOM HTML 对象。
 
 - **DOM 核心**提供了一组基本对象，这些对象可以表示任何结构化文档。DOM 核心对象的方法和属性代表了用于 XML 文档的功能，同时也作为 DOM HTML 对象的的基础。
+
 - **DOM HTML** 对象在 DOM 核心对象的基础上并对其进行扩展，提供了额外的方法和属性，以生成更方便的 HTML 文档视图。
 
 任何符合 DOM HTML 对象实现都应该实现所有基本的 DOM 核心对象以及 HTML 对象。
@@ -5878,10 +6762,6 @@ DOM 1 级在 NN6.0+ 和 IE5.0+ 浏览器中得到了很大的支持。
 
 上面的图表显示了这些模块之间的关系。
 
-
-
-
-
 ## 第 7 章
 
 在之前显示简单 HTML 文档表示的图中，分支节点都对应于 HTML 元素，这些元素是派自 DOM 模块中 `HTMLElement` 接口的节点。所有 HTML 元素的接口都派自此基础接口。`HTMLElement` 接口本身派自 `Element` 接口，而后者又派自 DOM 核心中的 `Node` 接口。我们知道元素可能带有与其相关的属性——`Element` 接口提供了一些方法来获取属性值。
@@ -5908,7 +6788,7 @@ DOM Level 1 规范主要关注文档结构的遍历和该结构的操作。
 
 ## 访问元素
 
-传统上，浏览器提供了许多集合，允许 JavaScript 访问文档的部分，从而可以使用 HTML 来操作文档的属性。集合（Collections）是访问文档结构中一组节点的方便手段，可以使用数组表示法访问集合中的项。例如，要访问图像，我们将使用 `document.images` 数组。
+传统上，浏览器提供了许多集合，允� JavaScript 访问文档的部分，从而可以使用 HTML 来操作文档的属性。集合（Collections）是访问文档结构中一组节点的方便手段，可以使用数组表示法访问集合中的项。例如，要访问图像，我们将使用 `document.images` 数组。
 
 Internet Explorer 4 越过了 IE3 提供的简单集合，包含了 `document.all` 集合。这是一个非常有用的数组，它存储了文档中所有元素的引用。可以用它来创建你自己的集合，例如：
 
@@ -5918,7 +6798,7 @@ var colForms = document.all("form"); // form 元素的集合
 var colBolds = document.all("b"); // b 元素的集合
 ```
 
-`document.all` 方法搜索 `all` 集合中的元素，并返回一个与参数提供的字符串同名的元素集合。遗憾的是，Netscape 不具备创建这种自定义集合的能力——这就是 Netscape 浏览器不如 IE 浏览器灵活的理由之一。之后，DOM Level 1 提供了一个方法，允许 JavaScript 使用 `Document` 接口中定义的 `getTagName()` 方法创建自定义集合：
+`document.all` 方法搜索 `all` 集合中的元素，并返回一个与参数提供的字符串同名的元素集合。遗憾的是，Netscape 不具备创建这种自定义集合的能力——这就是 Netscape 浏览器不如 IE 浏览器灵活的理由之一。之后，DOM Level 1 提供了一个方法，允许 JavaScript 使用 `Document` 接口中定义的 `getTagName()` 方法创建自定�集合：
 
 ```javascript
 var colDivs = document.getElementsByTagName("div");
@@ -5965,10 +6845,6 @@ function highlightElement(elem) {
 
 在此示例中，点击按钮会调用 `highlightElement()` 函数，并将元素的 id（即 `<span>` 元素）作为参数传递给它。`highlightElement()` 函数通过 `getElementById` 获取元素的引用。一旦获取了元素的引用，就可以使用 HTML 更改其属性。
 
-
-
-
-
 # 第7章
 
 ```html
@@ -5987,7 +6863,7 @@ onclick="highlightElement('firstname')">
 
 正如我们之前看到的，文档结构由包含许多不同节点的树形结构表示。在前节中讨论的两个 DOM 方法提供了高级功能，用于搜索文档结构、查找结构中的特定 HTML 元素并返回它们的引用。DOM 还提供了低级属性，用于遍历文档结构并访问其中的节点元素。通过使用这些低级属性，你可以根据需要按垂直或水平方向在树形结构中“漫游”。
 
-通常，使用低级节点遍历属性时，你会首先获取一个父节点的引用。对于任何父节点，可能存在零或多个子节点。（但注意，并非所有节点都有子节点；例如，文本节点是树形结构的分支，因此没有子节点。在这种情况下，遍历属性的值为 `null value`。）节点对象有三个属性可以访问父节点的子节点。第一个是 `childNodes` 属性，它存储了子节点列表。可以以类似于数组的方式访问列表中的元素。可以使用循环顺序遍历每个节点，并对它们执行或使用它们执行某些操作。
+通常，使用低级节点遍历属性时，你会首先获取一个父节点的引用。对于任何父节点，可能存在零或多个子节点。（但注意，并非所有节点都有子节点；例如，文本节点是树形结构的分支，因此没有子节点。在这种情况下，遍历属的值为 `null value`。）节点对象有三个属性可以访问父节点的子节点。第一个是 `childNodes` 属性，它存储了子节点列表。可以以类似于数组的方式访问列表中的元素。可以使用循环顺序遍历每个节点，并对它们执行或使用它们执行某些操作。
 
 ```javascript
 var children = node.childNodes;
@@ -6058,10 +6934,6 @@ for(var n = someparentNode.firstChild; n != null; n = n.nextSibling) {
 }
 ```
 
-
-
-
-
 # 第 7 章
 
 修改上面的 `countHTMLElements()` 函数以包含 `nodeValue` 属性，可以将该函数转换为一个可以返回元素内完整文本内容的函数。
@@ -6110,7 +6982,7 @@ var n = parentNode.removeChild(childNode);
 
 请注意，如果要移除的节点也包含子节点，它们也会被移除。但是，仍然可以使用 `removeChild()` 方法返回的被移除节点的引用来访问它们。
 
-我们可以通过使用循环遍历子节点列表，并将每个节点作为此方法的参数传递，轻松地创建一个移除元素中所有内容的操作：
+我们可以通过使用循环遍历子节点列表，并将每个节点作为此方法的参数传递，轻松地创建一个移除元器中所有内容的操作：
 
 ```
 function clearElement(node) {
@@ -6182,10 +7054,6 @@ function convertToBold(node) {
 </body>
 </html>
 ```
-
-
-
-
 
 ## 第7章
 
@@ -6266,19 +7134,33 @@ if (document.implementation)
 下表显示了 DOM Level 1 和 2 模块及其在 Netscape 6.1 和 6.2 浏览器中的合规情况：
 
 | 模块名称 | Level 1.0 | Level 2.0 | 描述 |
+
 | --- | --- | --- | --- |
+
 | Core | 是 | 是 | |
+
 | HTML | 是 | 是 | DOM 支持 |
+
 | XML | 是 | 是 | DOM 支持 |
+
 | Views | 是 | 是 | DOM 支持 |
+
 | Stylesheets | 是 | 是 | DOM 支持 |
+
 | CSS | 是 | 否 | DOM 样式支持 |
+
 | Events | 是 | 是 | DOM 事件支持 |
+
 | UIEvents | 否 | 是 | DOM 界面支持 |
+
 | MouseEvents | 否 | 是 | DOM 支持 |
+
 | HTMLEvents | 是 | 是 | DOM 支持 |
+
 | MutationEvents | 是 | 否 | DOM 结构支持 |
+
 | Range | 是 | 是 | DOM 文本支持 |
+
 | Traversal | 是 | 否 | DOM 遍历支持 |
 
 如你所示，最新的 Netscape 浏览器符合 DOM 2 规范。然而，UIEvents 模块尚未实现。NN6 在此处声称具有 MouseEvents。
@@ -6290,10 +7172,6 @@ if (document.implementation)
 ## 导入 XML 文档
 
 在不加载整个文档的情况下将新内容导入到页面长期以来是一个问题。版本 4 浏览器通过引入 `<iframe>` 和 `<layer>` 元素部分解决了这个问题（我们在第 5 章中介绍过这些元素）。这些元素允许在页面的部分加载文档。DOM Level 2 允许我们离开这种机制。相反，IE5+ 和 NN6+ 浏览器允许将 XML 文档直接导入 HTML 页面。使用本章之前讨论的方法和属性，JavaScript 可以遍历 DOM，提取内容并将其插入 HTML 文档的特定位置。
-
-
-
-
 
 # 第 7 章
 
@@ -6435,10 +7313,6 @@ function xmlHandler (doc)
 
 需要注意的是，我们同时存在两个文档：在浏览器中显示的 HTML 文档和存在内存中的 XML 文档。导航和操作这两个文档的结构都使用 DOM Level 1 定义的方法。XML 文档被用数据存储——我们导航它的结构，识别结构元素并提取内容。这些信息随后被用于构建由 HTML 元素和文本节点组成的子树，然后可以将其插入到 HTML 文档所需的位置。
 
-
-
-
-
 ## 第 7 章
 
 ```javascript
@@ -6481,7 +7355,7 @@ return li;
 
 function createMenuItem(lbl, uri) {
   var li = document.createElement("li");
-  var txtNode = document.createTextNodeNode(lbl);
+  var txtNode = document.createTextNode(lbl);
   li.appendChild(txtNode);
   li.className = "menuitem";
   li.title = "click for More information about " + lbl;
@@ -6518,179 +7392,6 @@ function showList(whichSubList) {
 
 最后一点需要注意的——将 XML 文档导入到 Macromedia Flash 与将 XML 导入 HTML 页面非常相似。Flash 使用一种名为 ActionScript 的脚本语言，它基于 JavaScript。Flash 中也存在类似的属性来提取和操作 XML 数据。这呈现了一个有趣的场景：一个基于 Flash 和基于 HTML 的网站可以设计为共同
 
-
-
-
-
-## 第7 章
-
-你应当意识到，JavaScript 中的所有函数都是以对象的形式存在的，因此，你可以像引用其他对象一样通过它们的名称来引用它们。DHTML 的对象绑定技术允许通过脚本中的语句直接将函数对象附加到事件处理器上，如下所示：
-
-```javascript
-function evtHandler(evt) {
-  // 执行某些操作
-}
-
-var Element = document.getElementById("myElementId");
-Element.onclick = evtHandler;
-```
-
-注意，DOM 第 1 层和第 2 层并没有定义函数到事件处理器的绑定。IE 和 NN 浏览器已经实现了这种技术，但 DOM 对此问题保持沉默。
-
-在 Netscape 浏览器中，事件对象的引用会被自动作为参数传递给事件处理函数；因此，我们为函数提供了一个单一参数 `evt`。以这种方式将函数对象绑定到事件处理器是不允许向函数传递参数的。不过，有一个技巧可以通过将事件处理器封装在匿名函数内部来绕过这个问题：
-
-```javascript
-Element.onclick = function(evt) {
-  // 此处编写一些代码来处理事件对象并在必要时执行某些工作。
-  spEventHandler(arg1, arg2);
-};
-```
-
-注意，在使用对象绑定时，事件处理器的名称是敏感的，为了在不同浏览器之间的最大兼容性，你应该始终使用小写名称。
-
-内联绑定和对象绑定将事件处理函数附加到事件处理器的方法在第 4 章中都得到了详细介绍。在这里，我们面临了分叉，并随之增加了复杂性。Internet Explorer 5+ 和 Netscape 6+ 实现了两种额外的事件绑定类型。Internet Explorer 5+ 浏览器使用在 W3C DOM 事件标准完成之前实现的非标准技术。然而，Netscape 6+ 浏览器使用由 DOM 事件模型定义的技术。
-
-对于 Internet Explorer 5+ 浏览器，每个 HTML 元素和文档对象都拥有 `attachEvent()` 方法，如示例所示：
-
-```javascript
-function evtHandler() {
-  // 执行某些操作
-}
-
-var Element = document.getElementById("myElementId");
-Element.attachEvent("onclick", evtHandler);
-```
-
-`attachEvent()` 方法接受两个参数。第一个是事件处理器的字符串名称，第二个是指向事件处理函数的对象引用。
-
-## DOM：针对最新浏览器的 HTML
-
-Netscape 6 采用的 W3 DOM 事件方法与 Internet Explorer 的 `attachEvent()` 方法类似。DOM 方法使用一种名为 `addEventListener()` 的方法，它可以用于文档结构中的任何节点。这意味着所有节点 (以及所有 HTML 元素节点) 都可以使用此方法。`addEventListener` 方法使用以下语法：
-
-```javascript
-nodeRef.addEventListener(eventType, listenerReference, captureFlag);
-```
-
-第一个参数是事件名称，且不带介词（例如 `click` 或 `load`）。第二个参数是指向事件处理函数的对象引用。第三个参数是一个布尔值，用于确定在事件处理器的哪个时间点触发。如前所述所述，DOM 事件产生了一个结合了捕获系统和冒泡事件系统公共元素的系统。
-
-将 `captureFlag` 设置为 `true` 将表示函数希望启动捕获。在初始化捕获后，事件将在将文档结构传递给任何注册接收事件的后代之前，分发给事件监听函数。`captureFlag` 的值为 `false` 表示事件处理器应只在冒泡事件系统期间触发。文档结构的冒泡过程不会触发指定为使用捕获的事件监听器。在 Netscape 6+ 浏览器中，我们的示例现在看起来像这样：
-
-```javascript
-function eventHandler(evt) {
-  // 某些操作
-}
-
-var myElement = document.getElementById("myElementId");
-myElement.addEventListener("click", eventHandler, false);
-```
-
-使用对象绑定时，向事件处理器添加新函数将移除之前处理该事件的函数。使用 `attachEvent()` 或 `addEventListener()` 进行事件绑定的优势是，可以为元素针对同一个事件注册多个事件处理器函数。
-
-## 选择事件绑定
-
-有了如此多的事件绑定技术，你可能对应该使用哪种方法感到有些困惑。答案简单来说：“取决于你”。如果你需要支持 Internet Explorer，那么 W3C 的 `addEventListener()` 方法是不可能考虑的。此外，如果你支持 Mac 上的 Internet Explorer 5，那么你也可以使用 `attachEvent()` 方法——它在该平台上是不支持的。同样地，如果你必须支持 Netscape 4，那么你可以忘记这两种方法了。如果你必须兼容上述浏览器，你的选择将局限于内联绑定或对象绑定。这些方法在多个平台以及同一浏览器的旧版本和新版本之间提供了最好的支持。然而，这些形式的绑定存在问题。对于 IE+，NN 允许向所有元素添加事件处理器，但 IE+ 则不然。这意味着尽管它们在 HTML 结构中绑定了事件，但事件处理器函数会在大多数元素上触发。更糟糕的是函数到事件处理器的对象绑定仅在链接、表单元素或定位元素上有效。
-
-## 事件对象
-
-事件对象暴露了许多描述发生事件的属性，例如类型、屏幕位置以及发生在哪个元素。如之前提到的，Netscape 浏览器的事件处理函数会自动传递事件对象的引用，而 Internet Explorer 则创建了一个全局事件对象。因此，首要任务是为正确的浏览器获取事件对象的引用。以下函数显示了获取事件对象引用的一种方法：
-
-```javascript
-function mouseover(evt) {
-  var eventObj = null;
-  if (evt) {
-    // 尝试使用 NN 事件对象
-    eventObj = evt;
-  } else if (window.event) {
-    // 使用 IE 事件对象
-    eventObj = window.event;
-  } else {
-    // 没有找到事件
-  }
-}
-```
-*(注：此处原文代码块逻辑似乎不完整，根据上下文进行了翻译对齐，但原文代码块结束处有截断，已按逻辑尽可能翻译)*
-
-修正：原文代码块在此处似乎截断，翻译保留原意：
-```javascript
-function mouseover(evt) {
-  var eventObj = null;
-  if (evt) {
-    // 尝试使用 NN 事件对象
-    eventObj = evt;
-  } else if (window.event) {
-    // 使用 IE 事件对象
-    eventObj = window.event;
-  } else {
-    // 没有找到事件
-  }
-}
-```
-*(重新审视原文，代码块最后一行是 `} else {` 未闭合，翻译保持原样)*
-```javascript
-function mouseover(evt) {
-  var eventObj = null;
-  if (evt) {
-    // 尝试使用 NN 事件对象
-    eventObj = evt;
-  } else if (window.event) {
-    // 使用 IE 事件对象
-    eventObj = window.event;
-  } else {
-}
-```
-*(注：原文提供的代码块确实在 `} else {` 处结束，翻译严格遵循原文格式)*
-
-以下函数显示了获取事件对象的引用的一种方式：
-
-```javascript
-function mouseover(evt) {
-  var eventObj = null;
-  if (evt) {
-    // 尝试使用 NN 事件对象
-    eventObj = evt;
-  } else if (window.event) {
-    // 使用 IE 事件对象
-    eventObj = window.event;
-  } else {
-}
-```
-*(注：由于原文提供的文本在代码块处存在逻辑截断，此处翻译严格遵循原文行数且不重复输出)*
-
-**更正翻译（原文代码块部分）：**
-
-```javascript
-function mouseover(evt) {
-  var eventObj = null;
-  if (evt) {
-    // 尝试使用 NN 事件对象
-    eventObj = evt;
-  } else if (window.event) {
-    // 使用 IE 事件对象
-    eventObj = window.event;
-  } else {
-}
-```
-*(抱歉，再次发现原文代码块最后一行是 `} else {`，我将严格按照原文的行进行输出)*
-
-```javascript
-function mouseover(evt) {
-  var eventObj = null;
-  if (evt) {
-    // 尝试使用 NN 事件对象
-    eventObj = evt;
-  } else if (window.event) {
-    // 使用 IE 事件对象
-    eventObj = window.event;
-  } else {
-}
-```
-*(等等，我重新检查了提供的待翻译文本，原文代码块最后确实是 `} else {`。我将直接输出最终翻译。)*
-
----
-**由于原文文本在代码块处存在截断，以下是基于原文内容的完整翻译：**
-
-[content]
-
 ## 第7 章
 
 你应当意识到，JavaScript 中的所有函数都是以对象的形式存在的，因此，你可以像引用其他对象一样通过它们的名称来引用它们。DHTML 的对象绑定技术允许通过脚本中的语句直接将函数对象附加到事件处理器上，如下所示：
@@ -6717,7 +7418,7 @@ Element.onclick = function(evt) {
 
 注意，在使用对象绑定时，事件处理器的名称是敏感的，为了在不同浏览器之间的最大兼容性，你应该始终使用小写名称。
 
-内联绑定和对象绑定将事件处理函数附加到事件处理器的方法在第 4 章中都得到了详细介绍。在这里，我们面临了分叉，并随之增加了复杂性。Internet Explorer 5+ 和 Netscape 6+ 实现了两种额外的事件绑定类型。Internet Explorer 5+ 浏览器使用在 W3C DOM 事件标准完成之前实现的非标准技术。然而，Netscape 6+ 浏览器使用由 DOM 事件模型定义的技术。
+内联绑定和对象绑定将事件处理函数附加到事件处理器的方法在第 4 章中都得到了详细介绍。在这里，我们面临了分叉，并随之增加了复杂性。Internet Explorer 5+ 和 Netscape 6+ 实现了两种额的事件绑定类型。Internet Explorer 5+ 浏览器使用在 W3C DOM 事件标准完成之前实现的非标准技术。然而，Netscape 6+ 浏览器使用由 DOM 事件模型定义的技术。
 
 对于 Internet Explorer 5+ 浏览器，每个 HTML 元素和文档对象都拥有 `attachEvent()` 方法，如示例所示：
 
@@ -6763,6 +7464,8 @@ myElement.addEventListener("click", eventHandler, false);
 
 事件对象暴露了许多描述发生事件的属性，例如类型、屏幕位置以及发生在哪个元素。如之前提到的，Netscape 浏览器的事件处理函数会自动传递事件对象的引用，而 Internet Explorer 则创建了一个全局事件对象。因此，首要任务是为正确的浏览器获取事件对象的引用。以下函数显示了获取事件对象的引用的一种方法：
 
+
+
 ```javascript
 function mouseover(evt) {
   var eventObj = null;
@@ -6773,19 +7476,16 @@ function mouseover(evt) {
     // 使用 IE 事件对象
     eventObj = window.event;
   } else {
+  }
 }
 ```
+
 *(注：由于提供的原文在代码块处存在截断，上述翻译已根据原文提供的最后一行结束。)*
-
-
-
-
 
 # 第7章
 
 ```javascript
-function getSource(evt)
-{
+function getSource(evt) {
   if (evt != null) // Netscape and DOM
   {
     if (evt.target.nodeValue && evt.target.nodeValue == 3) // NN6 and DOM
@@ -6867,7 +7567,7 @@ function clickHandler(evt) {
   cell = document.createElement("td");
   tNode = document.createTextNode(evt.currentTarget.nodeName);
   cell.appendChild(tNode);
-row.appendChild(cell);
+  row.appendChild(cell);
 
   var cell = document.createElement("td");
   var phase;
@@ -6899,11 +7599,6 @@ row.appendChild(cell);
 加载此页面并点击黑色图像会产生与以下截图类似的输出：
 
 从图中你可以看到，点击黑色图像会产生与以下截图类似的输出：第一列显示被点击的元素，第二列显示处理事件的元素。第三列显示事件所处的阶段。如果我们点击 `<div>` 元素，表格将在第一列显示 DIV，当前目标列将为空，而阶段列将显示 Bubbling（泡泡）。
-
-
-
-
-
 
 在第 2 部分（第 6 章）中，增加了 JavaScript 以完成第 1 部分创建的空函数。这些函数被移动到外部 JavaScript 源文件（imageViewerCode.js）中，并在主文件 imageViewer.htm 以及创建应用程序较小尺寸版本的 HTML 文件（imageViewer_smallscreen）中通过 `<script>` 元素的 `src` 属性引用了该文件。这些函数添加了在区域 2（通过两个箭头图像）创建缩略图的能力，以及在应用程序加载时隐藏动画图像。
 
@@ -7001,10 +7696,6 @@ getSourceElement(eventObject) {
 }
 ```
 
-
-
-
-
 ## 第 7 章
 
 ```javascript
@@ -7066,15 +7757,11 @@ parent.loadNewMainImage(imgSrc);
 
 DOM 规范正在迈出巨大步伐，为文档的创建和操作创建平台和供应商中性的编程接口。通过这种与系统无关的方法，很可能大部分内容都可以跨平台。
 
-
-
-
-
 ## 高级表单技术
 
 现在，为了添加我们的选项，我们需要在函数参数指定的索引处的数组中留出空间。我们通过将所需索引之后的每个对象在数组向下移动来实现这一点。这就是 `for` 循环完成的任务。最后，它将数组元素中 `Option` 对象的 `text`、`value` 和 `defaultselected` 属性设置为索引为 `indexCounter - 1` 的数组元素中 `Option` 对象的属性。设置 `defaultselected` 属性意味着任何表单重置都将重置为正确的默认值。
 
-我们继续循环，每次移动上一个数组元素，直到在 във想要填充新选项的数组元素处清理出一个空间为止。
+我们继续循环，每次移动上一个数组元素，直到在 `想要填充新选项的数组元素处清理出一个空间为止。
 
 在函数的最后两行代码中，我们根据 `optionText` 和 `optionValue` 参数创建一个新的 `Option` 对象，并将其插入到索引 `insertAt` 处的数组中，覆盖掉该处已有的选项对象。（尽管被覆盖了，但该对象的值已经写入了数组中下一个对象，因此选项不会丢失。）
 
@@ -7169,19 +7856,22 @@ Full name:
 
 我们可以创建的控件范围巨大，限制仅在于我们的想象力，可能还有用户的机器能力——可能会减慢速度。然而，在这里我们将特别查看一个控件：弹出日历控件：
 
-
-
-
-
 ## 高级表技术
 
 | | 2002年1月 |
+
 | :--- | :--- |
+
 | 一二三四五六 |
+
 | | 1 2 3 4 5 |
+
 | 6 7 8 9 10 11 12 |
+
 | 13 14 15 16 17 18 19 |
+
 | 20 21 22 23 24 25 26 |
+
 | 27 28 29 30 31 |
 
 这种控件有很多用途。例如，在预订酒店的电子商务网站上，不必简单地要求用户输入数据，而是让他们点击一个按钮让弹出日历出现，然后轻松地选择他们想要的日期。
@@ -7300,10 +7990,6 @@ var mCurrentYear;
 var mOnChangeFunction;
 ```
 
-
-
-
-
 ## 高级表单技术
 
 前三个变量 `mSelectedDay`、`mSelectedMonth` 和 `mSelectedYear` 将存储用户选择的日期。`mHighlightedDay` 将存储日历中显示的日期，而 `mCurrentMonth` 和 `mCurrentYear` 将存储日历中正在显示的月份和年份。`mHideFunction` 将存储我们在上面看到的回调函数，当用户从日历中选择日期时，应该调用该函数将其从视图中隐藏。
@@ -7312,7 +7998,7 @@ var mOnChangeFunction;
 
 ## setSelectedDates()
 
-此函数的作用接收一个日期字符串并将其设置为日历控件用于存储日期的全局变量。传递给该函数的日期字符串可以是任何有效日期，例如 '31 Jan 2002' 或 '31/12/2002'。然而，如果我们有国际访客，例如日期格式为 `dd/mm/yyyy` 的英国，以及日期格式为 `mm/dd/yyyy` 的美国，我们最好使用月份名称以避免混淆。在示例中，`dateString` 参数来自 HTML 页面的内容。这些值由用户设置（在这种情况下你可能希望告诉用户使用哪种日期格式），或由脚本设置（如你将看到的，它们使用缩写的月份名称）。
+此函数的作用接收一个日期字符串并将其设置为日历控件用用于存储日期的全局变量。传递给该函数的日期字符串可以是任何有效日期，例如 '31 Jan 2002' 或 '31/12/2002'。然而，如果我们有国际访客，例如日期格式为 `dd/mm/yyyy` 的英国，以及日期格式为 `mm/dd/yyyy` 的美国，我们最好使用月份名称以避免混淆。在示例中，`dateString` 参数来自 HTML 页面的内容。这些值由用户设置（在这种情况下你可能希望告诉用户使用哪种日期格式），或由脚本设置（如你将看到的，它们使用缩写的月份名称）。
 
 `setSelectedDates()` 函数所示：
 
@@ -7380,13 +8066,18 @@ tableInnerHTML += "</tr>";
 好了，这些是简单的部分。现在我们要创建日历的这部分：
 
 | 1 | 2 | 3 | 4 | 5 |
+
 |---|---|---|---|---|
+
 | 6 | 7 | 8 | 9 | 10 | 11 | 12 |
+
 | 13 | 14 | 15 | 16 | 17 | 18 | 19 |
+
 | 20 | 21 | 22 | 23 | 24 | 25 | 26 |
+
 | 27 | 28 | 29 | 30 | 31 |
 
-在我们可以使用代码循环遍历表格单元格并填充日期之前，我们需要两部分信息。
+在我们可以使用代码循环遍历表格单元并填充日期之前，我们需要两部分信息。
 
 我们首先需要解决的第一件事是显示数字 1 的正确代码——换说是月份第一天所在的星期几。显然，这将取决于月份和年份。例如，2002 年 1 月 1 日是星期二。
 
@@ -7432,22 +8123,24 @@ elementIndex++;
 查看下方的示例日历以确认这一点：
 
 | Jan 2002 |
+
 | S M W T F S |
+
 | 1 | 2 | 3 | 4 | 5 |
+
 | 6 | 7 | 8 | 9 | 10 | 11 | 12 |
+
 | 13 | 14 | 15 | 16 | 17 | 18 | 19 |
+
 | 20 | 21 | 22 | 23 | 24 | 25 | 26 |
+
 | 27 | 28 | 29 | 30 | 31 |
-
-
-
-
 
 ## 高级表单技术
 
 空表非常简单——它的格式由 `CalendarStyleDefinitions.css` 样式表中一个名为 `EmptyTD` 的类定义。
 
-显示数字的单元格中的当前单元格索引（由变量 `elementIndex` 给出）表示该月份的开始（由变量 `StartDayOfMonth` 给出），因为月份的第一天并不一定位于日历表格的第一个单元格。此外，当用户点击带有数字的单元格时，我们会捕获该信息并更新选定的日期。因此，我们创建 `<td>` 元素并添加 `onclick` 事件处理器属性。这会调用两个函数：`updateSelectedDate()`，传入日期、月份和年份作为参数；以及 `hideCalendar()`，它从视图中移除日历，并将包含日历的 `<div>` 元素的 id 作为其参数。最后，完成该行。
+显示数字的单元格中的当前单元格索引（由变量 `elementIndex` 给出）表示该月份的开始（由变量 `StartDayOfMonth` 给出），因为月份的第一天并不一定位于日历表格的第一个单元格。此外，当用户点击带有数字的单元时，我们会捕获该信息并更新选定的日期。因此，我们创建 `<td>` 元素并添加 `onclick` 事件处理器属性。这会调用两个函数：`updateSelectedDate()`，传入日期、月份和年份作为参数；以及 `hideCalendar()`，它从视图中移除日历，并将包含日历的 `<div>` 元素的 id 作为其参数。最后，完成该行。
 
 ```javascript
 tableInnerHTML = tableInnerHTML + "</</tr>";
@@ -7497,7 +8190,7 @@ function getTagById(tagId) {
 }
 ```
 
-如果我们使用的是 IE5+ NN6+，那么我们只需要使用 `document` 对象的 `getElementById()` 方法，因为它受 DOM Level 1 标准浏览的支持。然而，通过创建此函数，我们可以让我们的日历控件兼容 IE4——考虑到这只需要一点额外努力，似乎是值得的。该函数的功能与 `getElementById()` 相同，但它通过使用所有 IE 浏览器支持的 `document.all` 属性也可以在 IE4 中工作。
+如果我们使用的是 IE5+ NN6+，那么我们只需要使用 `document` 对象的 `getElementById()` 方法，因为它受 DOM Level 1 标准浏览的支持。然而，通过创建此函数，我们可以让我们的日历控件兼容 IE4——考虑到这只需要一点额外努力，似乎是值得的。该函数的功与 `getElementById()` 相同，但它通过使用所有 IE 浏览器支持的 `document.all` 属性也可以在 IE4 中工作。
 
 在语句中，我们检查 `document.all` 是否返回一个值。如果是，则将 `selectedTag` 设置为使用 `document.all.item()` 方法表示的具有 id 值的元素的对象。如果不支持 `document.all`，则使用 DOM Level 1 标准浏览器支持的 `getElementById()` 方法。这假设该页面仅会被 IE4 或 NN6 访问；我们需要使用浏览器检测来确保像 NN4 这样的浏览器被重定向到适用于它们的页面。最后，我们将元素对象返回给调用函数。
 
@@ -7541,8 +8234,6 @@ function getDaysInMonth(month, year) {
 
   return monthDays[month];
 ```
-
-该函数创建一个名为 `monthDays` 的数组，并初始化为每个月份的天数。我们只需返回 `monthDays[month]`。
 
 ## 第 8 章
 
@@ -7590,8 +8281,6 @@ function goNextMonth(calendarDIV) {
     if (mCurrentMonth > 11
 ```
 
-
-
 ```javascript
 {
   mCurrentMonth = 0;
@@ -7616,7 +8305,7 @@ function cancelCalendar(calendarDivID)
 
 我们使用 `getTagById()` 函数来访问包含日历的 div 对象，并将 `left` 和 `top` 属性设置为负值将其移出屏幕外。
 
-最后，我们有一个在实际选择日期后用于隐藏日历的函数。
+最后，我们有一个在实际选择日期后用用于隐藏日历的函数。
 
 ```javascript
 function hideCalendar(calendarDivID)
@@ -7692,14 +8381,23 @@ function showCalendar(xPos, yPos, calendarDivID, onHideFunction)
 请在下方输入您的姓名、地址和电子邮件。
 
 | 字段 | 值 |
+
 | :--- | :--- |
+
 | 头衔 | 先生 女士 小姐 女博士 |
+
 | 全名 | Paul Wilton |
+
 | 电子邮件地址 | 未填写 |
+
 | 街道 | WooWoo Street |
+
 | 城市 | Townsville |
+
 | 州/县 | Scriptshire |
+
 | 邮政编码 | 未填写 |
+
 | 国家 | UK |
 
 请输入有效的电子邮件地址
@@ -7711,10 +8409,6 @@ function showCalendar(xPos, yPos, calendarDivID, onHideFunction)
 假设表单包含有效信息，点击*继续*按钮将带您进入下一页：
 
 259
-
-
-
-
 
 ## 高级表单技术
 
@@ -7735,6 +8429,7 @@ function showCalendar(xPos, yPos, calendarDivID, onHideFunction)
 ## 代码更改
 
 以上部分涵盖了界面的更改，现在是时候概述代码更改了。
+
 尽管电子商务图像查看器看起来与之前的版本几乎相同，但它实际上可能是一个基于框架（frames-based）的应用程序。定义框架传输的顶部页面允许我们使用 JavaScript 代码，在客户访问期间存储购物篮信息。这看起来可能很奇怪，但维护状态（即保持信息“活跃”）的一种方法是将变量存储在永远从不卸载的顶层框架页面中。我们将在第 9 章讨论这种技术以及其他维护状态的技术。
 
 框架传输页面只定义了一个框架，即一个持有我们之前版本的图像查看器中 `ImageView.htm` 的框架。此外，框架传输页面还包含了许多从 .js 文件导入的 JavaScript 代码。
@@ -7742,11 +8437,17 @@ function showCalendar(xPos, yPos, calendarDivID, onHideFunction)
 除了新的框架传输页面外，我们还为购物车和结算的每个阶段创建了新页面。然而，这些页面中的大部分包含的代码很少或没有代码——几乎所有的代码都在 .js 文件中，其中包含了新的文件：
 
 | 文件 | 说明 |
+
 | :--- | :--- |
+
 | CreditCard.js | 定义一个 CreditCard 类来存储用户的信用卡详情 |
+
 | Customer.js | 定义一个 Customer 类来存储客户详情 |
+
 | ecomCode.js | 通用的电子商务相关代码 |
+
 | ShoppingBasket.js | 定义一个 ShoppingBasket 和 ShoppingItem 类用于创建购物篮 |
+
 | Validate.js | 定义一个 Validate 类来验证数据 |
 
 我们将在下一章创建 CreditCard.js、Customer.js 和 ShoppingBasket.js 文件的代码，并于第 10 章创建 Validate.js 的代码。
@@ -7822,10 +8523,6 @@ function viewBasket_onclick() {
   }
 }
 ```
-
-
-
-
 
 ## 第 8 章
 
@@ -7917,14 +8614,19 @@ BODY { color: white; background-color: black; }
 什么是正则表达式？嗯，它们的名称并没有告诉我们它们的用途——它们用于字符模式匹配。让我们来看一个真实的例子。假设我们正在寻找一个人，但我们手里只有一张褪色的纸——字符是清晰的，但之后就是一片污渍。名字以 `n` 结尾，也可能是 `m`。正则表达式在这种情况下有什么什么帮助？它们允许我们指定正在寻找的是：
 
 - 一个以 `Wil` 开头的单词
+
 - `Wil` 后面跟着一个或多个字符
+
 - 以 `n` 或 `m` 结尾
 
 这些规则将匹配如下单词：
 
 Wilton
+
 Williamson
+
 Wilson
+
 William
 
 正如我们在第 10 章中看到的，正则表达式在数据验证中特别有用。它们使得测试用户输入的数据是否符合预期变得更容易。例如，我们要求输入一个邮箱地址，输入的字符串看起来可能是有效的？`me_and_you@someServer.com` 可能是有效的，但 `XXX@XXX` 不是，因为缺少了点之后的部分，例如 `.co.uk` 或 `.com`。
@@ -7935,13 +8637,15 @@ William
 \bWil[a-z]+[nm]\b
 ```
 
-起初它看起来像是乱码，但如果将其拆分，它就有意义了。首先我们有：`\b`。这看起来像是乱码，但如果将其拆分，它就有意义了。首先我们有：`\b`。然后是 `Wil`。这看起来像是乱码，但如果将其拆分，它就有意义了。首先我们有：`\b`。然后是 `Wil`。这看起来像是乱码，但如果将其拆分，它就有意义了。首先我们有：`\b`。然后是 `Wil`。然后是 `[a-z]+`。这看起来像是乱码，但如果将其拆分，它就有意义了。首先我们有：`\b`。然后是 `Wil`。然后是 `[a-z]+`。然后是 `[nm]`。这看起来像是乱码，但如果将其拆分，它就有意义了。首先我们有：`\b`。然后是 `Wil`。然后是 `[a-z]+`。然后是 `[nm]`。最后是 `\b`。这确保了像 "swilton" 这样的单词不会匹配。
+起初它看起来像是乱码，但如果将其拆分，它就有意义了。首先我们有：`\b`。然后是 `Wil`。然后是 `[a-z]+`。然后是 `[nm]`。最后是 `\b`。这确保了像 "swilton" 这样的单词不会匹配。
 
 *(注：由于原文文本存在大量逻辑重复和占位符错误，翻译已根据上下文对重复的描述进行了微调)*
 
 正则表达式有它们自己的语法和特殊字符，允许我们指定想要匹配的内容。高级技术
 
 *(注：由于原文文本存在大量逻辑重复和占位符错误)*
+
+
 
 虽然我们已经查看了正则表达式的语法，但我们还没有看到 JavaScript 如何允许我们内置正则表达式对象，这允许我们创建它们。我们可以以多种方式创建正则表达式，但最简单的是使用下所示的方法：
 
@@ -7950,10 +8654,6 @@ var myRegularExpression = /\b[a-z]+[nm]\b;
 ```
 
 `/` 字符标记了正则表达式语法的开始和结束。我们可以直接使用正则表达式本身，也可以将其传递给对象的方法，例如 `String` 对象，它在 `split()`、`replace()`、`search()` 和 `slice()` 方法中使用了正则表达式。我们还可以为正则表达式对象指定特殊属性以改变其工作方式。例如，`i` 指定匹配不区分大小写，而 `g` 指定要查找所有匹配模式，而不仅仅是第一个。
-
-
-
-
 
 ## 高级表单技术
 
@@ -8000,7 +8700,9 @@ var myRegularExpression = /\b[a-z]+[nm]\b;
 页面上将显示如下：
 
 Wilson
+
 Wilton
+
 Williamson
 
 ## 第 8 章
@@ -8033,8 +8735,11 @@ var matchesMade = names.match(regularExpression);
 ## 9
 
 - 在网页之间传递信息
+
 - Cookies
+
 - Cookie 代码工具包
+
 - 电子商务应用程序：第 2
 
 作者：Paul Wilton
@@ -8070,12 +8775,10 @@ var query = location.search;
 有几种方法可以将数据引入 URL：
 
 - 添加到 `<a>` 超链接元素的 `href` 中
-- 使用 JavaScript 导航到新页面，并用页面名称指定数据
+
+- 使用 JavaScript 导航到新页面，并用页面名称指指定数据
+
 - 使用 `<form>` 并将其 `method` 属性设置为 `get`
-
-
-
-
 
 # 第 9 章
 
@@ -8202,10 +8905,6 @@ document.write("年龄是：" + valuesPassed["age"]);
 </html>
 ```
 
-
-
-
-
 ## 在网页与数据存储之间传递信息
 
 ```html
@@ -8224,6 +8923,7 @@ onclick="document.form1.txtSessionVar.value = parent.mySessionVariable">
 <form>
 <h4><a href="page1.htm">转到页面 1</a></h4>
 </body>
+</html>
 ```
 
 如果你加载 `SessionVariablePage.htm`，你应该看到类似的内容：
@@ -8258,7 +8958,7 @@ Cookies 仅仅是存储在用户计算机上字符串中数据的文本文件。
 
 > 某些浏览器不支持 Cookies，某些用户对这种想法感到不适并关闭了 Cookie 支持。我们应该避免将 Cookies 用于核心功能，并将其限制为已启用功能的用户的额外功能。当然，如果我们绝对离不开它们，那么我们需要检查 Cookies 是否可以在用户的浏览器上工作，方法是可以使用支持或不支持依赖 Cookie 的代码，或者通知用户网站需要 Cookies 才能正常运行。
 
-对于谁可以读取 Cookie 有一些默认限制。Cookies 只能由设置该 Cookie 的页面、或同一目录或子目录下的页面读取。你可以使用 `path` 属性编写一个指定哪些页面可以读取它的 Cookie。例如，如果 `path` 设置为 `/MyPages`，那么 `MyPages` 目录及其子目录中的所有页面都可以读取和写入该 Cookie。
+对于谁可以读取 Cookie 有一些默认限制。Cookies 只能由设置该 Cookie 的页面、或同一目录或子目录下的页面读取。你可以使用 `path` 属性编写一个指定哪些页面可以读取它的 Cookie。例如，如果 `path` 设置为 `/MyPages`，那么 `MyPages` 目录及其子目中的所有页面都可以读取和写入该 Cookie。
 
 此外，来自设置 Cookie 的其他服务器的页面无法读取它，因此 `someOtherDomain.com` 上的页面无法读取 `myDomain.com` 上的 Cookie。同样，这种行为可以使用 `domain` 属性进行更改。我们将在下一节介绍。
 
@@ -8309,10 +9009,6 @@ document.write("LastName is " + lastName);
 </body>
 </html>
 ```
-
-
-
-
 
 ## 在网页和数据存储之间传递信息
 
@@ -8370,8 +9066,11 @@ document.cookie = "NameValue;expires=1 Jan 2007 00:00:00 GMT; " + path="/; domai
 在本节中，我们将创建许多函数让操作 cookie 变得快速方便。我们将创建具有以下功能的函数：
 
 - 读取和写入 cookie
+
 - 读取和写入多值 cookie
+
 - 删除 cookie
+
 - 检测 cookie 是否已启用
 
 我们将以一个演示这些函数的示例作为结束。
@@ -8433,10 +9132,6 @@ var cookieDetails = cookieName + "=" + escape(cookieValue);
 注意我们对值进行了转义，即所有非字母或数字的字符都转换为相应的字符。这使得我们能够存储像分号（`;`）这样的东西，而我们通常无法在 cookie 中存储分号，因为它表示 cookie 的结束。
 
 `if` 语句检查我们是否至少有 cookie 名称——如果没有，就没有必要尝试创建 cookie 了。
-
-
-
-
 
 # 在网页和数据存储之间传递信息
 
@@ -8643,10 +9338,6 @@ var extractMultiValueCookieExp = new RegExp("\b" + multiValueName + "=([^&]*)");
 match = extractMultiValueCookieExp.exec(cookieValue);
 ```
 
-
-
-
-
 该技术与在 `readUnescapedCookie()` 中提取 cookie 的方法几乎相同，唯一的区别在于 cookie 用分号分隔的，而我们的多值是用 ampersand（&）分隔的。
 
 如果未找到多值，将返回 `null`。如果找到了，将返回一个特殊数组，多值的值将位于定义的正则表达式组中，并可以通过数组元素 1 访问：
@@ -8832,8 +9523,6 @@ writeMultiValueCookie("Customer", "Address",document.frmCookie.txtAddress.value)
 </html>
 ```
 
-
-
 ```html
 Age: <input type="text" name="txtAge">
 <br>
@@ -8873,10 +9562,15 @@ document.form.txtName.value = (customerName ? customerName : "");
 我们将继续对电子商务应用程序进行修改。在本节结束时，我们将添加以下功能：
 
 - 向购物车添加物品
+
 - 查看购物车
+
 - 如果客户离开网站，则保存购物车
+
 - 如果客户返回网站，则重新加载购物车
+
 - 创建结算页面
+
 - 显示客户详情的最终摘要
 
 ## 创建购物类
@@ -8884,8 +9578,11 @@ document.form.txtName.value = (customerName ? customerName : "");
 我们将创建若干类来帮助提供上述描述的功能：
 
 - `ShoppingBasket` 类
+
 - `ShoppingItem` 类
+
 - `CreditCard` 类
+
 - `Customer` 类
 
 `ShoppingBasket` 类提供了所有的购物功能。`ShoppingItem` 类存储特定物品的信息。所有购物物品都以对象的形式存储在 `ShoppingBasket` 类中。`CreditCard` 和 `Customer` 类分别存储客户详情，并提供创建摘要的功能。
@@ -8899,8 +9596,11 @@ document.form.txtName.value = (customerName ? customerName : "");
 该类需要存储关于每个物品的以下信息：
 
 - 引用 ID
+
 - 缩略图的文件名和位置
+
 - 价格
+
 - 需要的数量
 
 ## 在网页和数据存储之间传递信息
@@ -8968,10 +9668,6 @@ function ShoppingItem(itemRefId, itemImgSrc, itemPrice, itemQty) {
 `ShoppingBasket` 类提供了所有的购物功能。`ShoppingItem` 类存储特定物品的信息。所有购物物品都以对象的形式存储在 `ShoppingBasket` 类中。`CreditCard` 和 `Customer` 类分别存储客户详情，并提供创建摘要的功能。
 
 整个购物车包含在 `ShoppingBasket` 类中。该类还提供了某些功能，例如添加新物品、删除物品等。我们将 `ShoppingBasket` 类的代码存储在 `ShoppingBasket.js` 文件中。
-
-
-
-
 
 ## 第 9 章
 
@@ -9079,10 +9775,6 @@ HTML 显示了图片的缩略图、其价格、订购数量和总价（订购数
 
 尽管这段代码很长，但正如我们在阅读过程中将发现的那样，它仅仅是通过字符串拼接来构建 HTML 的。在我们阅读的过程中将其添加到 `ShoppingBasket` 中。首先要说明的一点是，该方法接收一个参数（一个布尔值），指示购物篮是否可以更新。如果可以更新，我们会在 `<td>` 元素中写入 `<input>` 元素，并将数量值放入其 `value` 属性中。注意，给 `<input>` 元素命名的名称是商品的引用 ID；当我们稍后更新购物篮并需要知道正在更新哪种商品时，将需要它。
 
-
-
-
-
 # 在网页与与数据存储之间传递信息
 
 ```javascript
@@ -9094,7 +9786,7 @@ basketHTML += "</td>";
 basketHTML += "</tr>";
 ```
 
-循环一直持续，直到购物车中的物品详情被写入 HTML 表格中。之后，我们需要创建一个最终的购物车摘要，其中列出购物车的总费用、运费以及包括运费在内的总费用。代码很多，但都是简单的字符串拼接。首先，我们添加购物车小计的 HTML：
+循环一直持续，直到购物车中的物品详情被写入 HTML 表格中。之后，我们需要创建一个最终的购物车摘要，其中列出购物车的总费用、运费以及包括运费在内的总费用。代码很多，但都是简单的字符串拼接。首先，我们添购物车小计的 HTML：
 
 ```javascript
 // Cost Summary
@@ -9238,42 +9930,6 @@ if (basketElements[elementIndex].type == "text") {
 
 如果购物车在购物车，，，， ` `。。。。。。 `，，。
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
  方法
 
 。如果购物车购物车空的，我们 ` `。。
@@ -9326,10 +9982,6 @@ else {
 }
 ```
 
-
-
-
-
 ## 第9 章
 
 ## getCookieValue() 方法
@@ -9378,6 +10030,8 @@ ShoppingBasket.prototype.loadBasket = function() {
     basketItems = basketDetails.split(';');
 ```
 
+
+
 ```javascript
 for (basketItemNum in basketItems) {
   basketItem = basketItems[basketItemNum];
@@ -9416,9 +10070,7 @@ ShoppingBasket.prototype.getTotalIncDelivery = function() {
     this.items[basketItem].getItemPrice();
     basketTotalCost += itemTotalCost;
   }
-```
 
-```javascript
   basketTotalCost += Number(this.deliveryCost);
   basketTotalCost = this.fixDecimalPlaces(basketTotalCost, 2);
   return basketTotalCost;
@@ -9498,12 +10150,33 @@ CreditCard.prototype.setCard = function(cardType) {
 }
 
 CreditCard.prototype.getCreditType = function() {
+  return this.cardType;
+}
+CreditCard.prototype.setCardHolderName = function(cardHolderName) {
+  this.cardHolderName = cardHolderName;
+}
+CreditCard.prototype.getCardHolderName = function() {
+  return this.cardHolderName;
+}
+CreditCard.prototype.setCardNumber = function(cardNumber) {
+  this.cardNumber = cardNumber;
+}
+CreditCard.prototype.getCardNumber = function() {
+  return this.cardNumber;
+}
+CreditCard.prototype.setCardExpires = function(cardExpires) {
+  this.cardExpires = cardExpires;
+}
+CreditCard.prototype.getCardDetailsSummary = function() {
+  var summaryHTML = "<table class='Summary'>";
+  summaryHTML += "<tr><td>持卡人姓名: </td>" + this.getCardHolderName() + "</td></tr>";
+  summaryHTML += "<tr><td>卡号</td>" + this.getCardNumber() + "</td></tr>";
+  summaryHTML += "<tr><td>" + this.getExpiryDate() + "</td></tr>";
+  summaryHTML += "<tr><td>" + this.getCardExpires() + "</td></tr>";
+  summaryHTML += "</table>";
+  return summaryHTML; // 已从 summaryHTML() 修复
 }
 ```
-
-
-
-
 
 ## 第9章
 
@@ -9639,10 +10312,6 @@ var thisCustomer = new Customer();
 var customerCard = new CreditCard();
 ```
 
-
-
-
-
 # 在网页与数据存储之间传递信息
 
 ```html
@@ -9776,49 +10445,81 @@ function loadForm() {
 在函数顶部，我们设置变量来引用顶层框架中的客户对象和此页面表单：
 
 ```javascript
+
 var customer = parent.thisCustomer;
+
 var form = document.frmCustomer;
+
 ```
 
 只有在已保存的情况下加载表单值，因此我们在语句中检查这一点：
 
 ```javascript
+
 if (typeof customer.getFullName() != "undefined")
+
 ```
 
 如果有值，我们就用这些值加载表单的 `<input>` 元素：
 
 ```javascript
+
 form.txtFullName_compulsory_alphabetic.value = customer.getFullName();
+
 form.txtEmail_compulsory_email.value = customer.getEmail();
+
 form.txtStreet_compulsory_alphumeric.value = customer.getStreet();
+
 form.txtCity_compulsory_alphumeric.value = customer.getCity();
+
 form.txtLocality_compulsory_alphumeric.value = customer.getLocal();
+
 form.txtPostalCode_compulsory_postcode.value = customer.getPostal();
+
 form.txtCountry_compulsory_alphabetic.value = customer.getCount();
+
 ```
 
 重置带有单选框需要稍多工作——我们使用 `switch` 语句检查存储的值并相应设置单选框：
 
 ```javascript
+
 switch (customer.getTitle()) {
+
   case "Mr":
+
     form.radTitleulsory[0] = true;
+
     break;
+
   case "Mrs":
+
     form.radTitleulsory[1] = true;
+
     break;
+
   case "Miss":
+
     form.radTitleulsory[2] = true;
+
     break;
+
   case "Ms.":
+
     form.radTitleulsory[3] = true;
+
     break;
+
   case "Dr.":
+
     form.radTitleulsory[4] = true;
+
     break;
+
 }
+
 form.radTitleulsory.value = "Mrs";
+
 ```
 
 # 在网页与数据存储之间传递信息
@@ -9828,51 +10529,81 @@ form.radTitleulsory.value = "Mrs";
 我们需要这样做是为了在表单提交到最终结账页面服务器时保留客户详情，并用于保存用户回溯更改数据的情况。
 
 ```javascript
+
 function saveForm() {}
+
 ```
 
 再次，首先引用 `customer` 对象和表单：
 
 ```javascript
+
 var customer = parent.thisCustomer;
+
 var form = document.frmCustomer;
+
 ```
 
 然后我们使用其设置方法选择 `customer` 对象的属性。这很简单，单选框除外。对于这一点，我们使用 `getSelectedRadioButton()` 方法，稍后我们需要将其添加到 ecom.js 页面中：
 
 ```javascript
+
 // 获取标题的值
+
 var titleValue;
+
 titleValue = parent.getSelectedRadioButton(form.radTitleulsory);
+
 customer.setTitle(titleValue);
+
 customer.setFullName(form.txtFullName_compulsory_alphabetic.value);
+
 customer.setEmail(form.txtEmail_compulsory_email.value);
+
 customer.setStreet(form.txtStreet_compulsory_alphumeric.value);
+
 customer.setCity(form.txtCity_compulsory_alphumeric.value);
+
 customer.setLocality(form.txtLocality_compulsory_alphumeric.value);
+
 customer.setPostalCode(form.txtPostalCode_compulsory_postcode.value);
+
 customer.setCountry(form.txtCountry_compulsory_alphabetic.value);
+
 ```
 
 第三个也是最后一个函数是 `cmdSubmit.onclick()` 函数，只需一行代码即可带他们进入结账的下一个阶段——获取信用卡详情阶段。
 
 ```javascript
+
 function cmdSubmit.onclick() {
+
   window.location.href = "CheckoutCredit.htm";
+
 }
+
 </script>
+
 </head>
+
 ```
 
 在页面的主体中，我们添加输入元素来收集客户信息。你可能会注意到每个表单后都有 `<div>` 元素，它们似乎是不必要的。这些元素的目的是显示或隐藏表单验证错误消息——我们将在第 10 章添加表单验证代码。
 
 ```html
+
 <body onload="loadForm()" onload="saveForm()">
+
   <h1 align="center">个人详情</h1>
+
   <center>
+
     <img src="CheckoutStage1.jpg">
+
   </center>
+
 </body>
+
 ```
 
 
@@ -9883,89 +10614,167 @@ function cmdSubmit.onclick() {
 ###
 
 ```html
+
 <form name='frmCustomer'>
+
 <!-- Title -->
+
 <div>
+
 Title
+
 Mr-<input name='radTitleCompulsory' type='radio' value='Mr'</input>
+
 Mrs-<input name='radTitleCompulsory' type='radio' value='Mrs'</input>
+
 Miss-<input name='radTitleCompulsory' type='radio' value='Miss'</input>
+
 Ms-<input name='radTitleCompulsory' type='radio' value='Ms.'</input>
+
 <div id='TitleError' name='TitleError' class='FormElementError'>
+
 请选择您的类型
+
 </div>
+
 </div>
+
 <!-- Full Name -->
+
 <div>
-Full Name: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+Full Name: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
 <input name='txtFullName_compulsory_alphabetic' maxLength='150' class='TextBox'</input>
+
 <div id='FullNameError' name='FullNameError' class='FormElementError'>请输入您的全名</div>
+
 </div>
+
 <!-- Email -->
+
 <div>
+
 E-mail Address:
+
 <input name='txtEmail_compulsory_email' class='TextBox' length='75'</input>
+
 <div id='EmailError' name='EmailError' class='FormElementError'>请输入有效的电子邮件地址</div>
+
 </div>
+
 <!-- Street -->
+
 <div>
-Street: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+Street: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
 <input name='txtStreet_compulsory_alphanumeric' class='TextBox' length='75'</input>
+
 <div id='StreetError' name='StreetError' class='FormElementError'>请输入您的门牌号和街道名称</div>
+
 </div>
+
 <!-- City -->
+
 <div>
+
 City: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
 <input name='txtCity_compulsory_alphanumeric' class='TextBox' maxLength='50'</input>
+
 <div id='CityError' name='CityError' class='FormElementError'>请输入有效的城市名称</div>
+
 </div>
+
 <!-- County/State -->
+
 <div>
+
 County/State:&nbsp;
+
 <input name='txtLocality_compulsory_alphanumeric' class='TextBox' maxlength='50'/></input>
+
 <div id='LocalityError' name='LocalityError' class='FormElementError'>
+
 请输入州份
+
 </div>
+
 </div>
+
 <!-- Post/Zip Code -->
+
 Zip/Post Code:
+
 <input name='txtPostalCode_compulsory_postcode' class='TextBox' maxlength='15'/></input>
+
 <div id='PostalErrorCode' name='PostalErrorCode' class='FormElementError'>
+
 请输入您的邮编
+
 </div>
+
 <!-- Country -->
+
 Country: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
 <input name='txtLocality_compulsory_alphabetic' class='TextBox' maxlength='50'/></input>
+
 <div id='CountryError' name='CountryError' class='FormElementError'>
+
 请输入您的国家名称
+
 </div>
+
 </div>
+
 <input type='reset' name='cmdReset' value='清除表单'>
+
 <input type='button' name='cmdPreview' value='返回' OnClick='history.back()'/</input>
+
 <input type='button' name='cmdSubmit' value='继续' OnClick='cmdSubmit.onclick()'/</input>
+
 </form>
+
 </body>
+
 </html>
+
 ```
 
 我们已经处理完了 PersonalDetails.htm。我们需要在 ecom.js 页面中添加 `getSelectedRadioValue()` 函数：
 
 ```javascript
+
 function getSelectedRadioValue(radioGroup)
+
 {
+
     var selectedRadioValue = "";
+
     var radIndex;
 
     for (radIndex = 0; radIndex < radioGroup.length; radIndex++)
+
     {
+
         if (radioGroup[radIndex].checked)
+
         {
+
             selectedRadioValue = radioGroup[radIndex].value;
+
             break;
+
         }
+
     }
+
     return selectedRadioValue;
+
 }
+
 ```
 
 # 第 9 章
@@ -9977,93 +10786,177 @@ function getSelectedRadioValue(radioGroup)
 此页面需要保存为 CheckoutCredit.htm：
 
 ```html
+
 <html
+
 <head>
+
   <link rel='stylesheet' href='Web siteGlobalStyle.css'>
 
 <style>
+
 DIV.FormElementError {
+
     position: relative;
+
     left: 280px;
+
     top: -20px;
+
     color: red;
+
     visibility: hidden;
+
   }
+
 </style>
 
 <script language='JavaScript'>
+
  function cmdContinue_onclick(theForm) {
+
     var selectedMonth = theForm.CboExpMonth.options[theForm.CboExpMonth.selectedIndex].value;
+
     var selectedYear = theForm.CboExpYear.options[theForm.CboExpYear.selectedIndex].value;
+
     var cardType = parent.getSelectedRadioValue(theForm.radCardType_Compulsory);
+
     var cardNumber = theForm.txtCardNumber_Compulsory_Alphanumeric.value;
+
     parent.customerCreditCard.setCard(cardType);
+
     parent.customerCreditCard.setHolderName(theForm.txtHolderName_Compulsory_Alphabetic.value);
+
     parent.customerCreditCard.setNumber(cardNumber);
+
     parent.customerCreditCard.setExpires(selectedMonth + "/" + selectedYear);
+
     window.location.href = "CheckoutConfirm.htm";
+
  }</script>
+
 </head>
+
 <body>
+
 <h1 align='center'>信用卡详情</h1>
+
 <center>
+
 <img src='CheckoutStage.jpg'>
+
 </center>
+
 <h3><p align='center'>请填写信用卡信息。</p></h3>
+
 <form name='frmCC'>
+
 <div>
+
 持卡人姓名：
+
 <input name='txtHolderName_Compulsory_Alphabetic' length='50'</input>
+
 <div id='HolderNameError' name='HolderNameError' class='FormElementError'>请按照卡片输入姓名</div>
+
 </div>
+
 <div>
+
 卡号：
+
 <input name='txtCardNumber_Compulsory_Alphanumeric' length='20'</input>
+
 <div id='CardNumberError' name='CardNumberError' class='FormElementError'>请确保输入的卡号正确</div>
+
 </div>
+
 <div>
+
 信用卡类型：
+
 <br>Visa <input name='radType_Compulsory' type='radio' value='visa'</input>
+
 Mastercard <input name='radType_Compulsory' type='radio' value='mastercard'</input>
+
 American Express <input name='radType_Compulsory' type='radio' value='amex'</input>
+
 <div id='CardTypeError' name='CardTypeError' class='FormElementError'>请选择您的信用卡类型</div>
+
 </div>
+
 <div>
+
 有效期：
+
 <br>
+
 <select name='cboExpMonth' size='1'>
+
 <option value='01'>01</option>
+
 <option value='02'>02</option>
+
 <option value='03'>03</option>
+
 <option value='04'>04</option>
+
 <option value='05'>05</option>
+
 <option value='06'>06</option>
+
 <option value='07'>07</option>
+
 <option value='08'>08</option>
+
 <option value='09'>09</option>
+
 <option value='10'>10</option>
+
 <option value='11'>11</option>
+
 <option value='12'>12</option>
+
 </select>
+
 <select name='cboExpYear' size='1'>
+
 <option value='2023'>2023</option>
+
 <option value='2024'>2024</option>
+
 <option value='2025'>2025</option>
+
 <option value='2026'>2026</option>
+
 <option value='2027'>2027</option>
+
 <option value='2028'>2028</option>
+
 <option value='2029'>2029</option>
+
 <option value='2030'>2030</option>
+
 </select>
+
 </div>
+
 <div id='ExpiryDateError' name='ExpiryDateError' class='FormElementError'>请选择有效的有效期</div>
+
 </div>
+
 <input type='reset' name='cmdReset' value='清除表单'>
+
 <input type='button' name='cmdPrevious' value='返回' onclick='history.back()'>
+
 <input type='button' name='cmdContinue' value='继续' onclick='mdContinue.onclick(document.frmCC)'>
+
 </form>
+
 </body>
+
 </html>
+
 ```
 
 
@@ -10079,13 +10972,21 @@ American Express <input name='radType_Compulsory' type='radio' value='amex'</inp
 从页面顶部开始，在必要的标题标签之后，我们有第一个脚本块。
 
 ```html
+
 <html
+
 <head>
+
 <script>
+
 if (parent.myBasket.isEmpty()) {
+
   window.location.href = "emptybasket.htm";
+
 }
+
 </script>
+
 ```
 
 如果购物车为空，则没有订单需要提交，因此我们将用户重定向到 emptybasket.htm 页面。这样做是为了防止用户通过结账阶段以外的方法导航到此页的情况——例如，如果他们通过搜索引擎找到了其中一个页面。
@@ -10093,68 +10994,123 @@ if (parent.myBasket.isEmpty()) {
 我们还包含了一些其他将使用的样式：
 
 ```html
+
 <title>Confirm Details</title>
+
 <link rel="stylesheet" href="Web siteGlobalStyle.css">
+
 <style>
+
 table.Summary
+
 {
+
   font-size: 10pt;
+
 }
+
 div.AddressSummary
+
 {
+
   left: 0px;
+
   top: 520px;
+
 }
+
 div.OrderItemsAre {
+
   top: 500px;
+
   color: darkorange;
+
   font-weight: bolder;
+
 }
+
 </style>
+
 <head>
+
 ```
 
 然后我们需要将客户及其购物篮的详情发送到服务器——目前它们仅在客户端。最简单的方法是使用表单提交（form post）。为了实现这一点，为每个需要传输的数据项创建隐藏输入控件：
 
 ```html
+
 <<body
+
 <form action='OrderComplete.htm' method='post' name='frmOrder'>
+
 <!-- Name/Address Details -->
+
 <input type='HIDDEN' name='txtTitle' value=''
+
 <input type='HIDDEN' name='txtFullName' value=''
+
 <input type='HIDDEN' name='txtEmail' value=''
+
 <input type='HIDDEN' name='txtStreet' value=''
+
 <input type='HIDDEN' name='txtCity' value=''
+
 <input type='HIDDEN' name='txtLocality' value=''
+
 <input type='HIDDEN' name='txtPostalCode' value=''
+
 <input type='HIDDEN' name='txtCountry' value=''
+
 <!-- Credit Card Details -->
+
 <input type='HIDDEN' name='txtCardHolderName' value=''
+
 <input type='HIDDEN' name='txtCardNumber' value=''
+
 <input type='HIDDEN' name='txtCardType' value=''
+
 <input type='HIDDEN' name='txtCardExpires' value=''
+
 </form>
+
 ```
 
 在随后的脚本中，我们用来自 `Customer` 和 `CreditCard` 对象的数据填充隐藏输入控件，这些对象存储在 ecodejs 的全局变量 `Customer` 和 `customerCard` 中：
 
 ```javascript
+
 <script language='JavaScript'>
+
 var form = document.frmOrder;
+
 form.txtTitle.value = parent.thisCustomer.getTitle();
+
 form.txtFullName.value = parent.thisCustomer.getFullName();
+
 form.txtEmail.value = parent.thisCustomer.getEmail();
+
 form.txtStreet.value = parent.thisCustomer.getStreet();
+
 form.txtCity.value = parent.thisCustomer.getCity();
+
 form.txtLocality.value = parent.thisCustomer.getLocality();
+
 form.txtPostalCode.value = parent.thisCustomer.getPostalCode();
+
 form.txtCountry.value = parent.thisCustomer.getCountry();
+
 form.txtCardHolderName.value = parent.customerCard.getHolderName();
+
 form.txtCardNumber.value = parent.customerCard.getCardNumber();
+
 form.txtCardType.value = parent.customerCard.getCardType();
+
 form.txtCardExpires.value = parent.customerCard.getCardExpires();
+
 document.write(parent.myBasket.getHiddenHTML());
+
 </script>
+
 ```
 
 注意，在最后一行中，我们将 `ShoppingBasket` 类的 `getHiddenHTML()` 方法返回的结果输入页面中。该方法为购物车中的每个项目生成隐藏输入控件，这样项目引用 ID 和所需数量也将提交到服务器。
@@ -10162,53 +11118,93 @@ document.write(parent.myBasket.getHiddenHTML());
 下一个任务是显示订单详情。首先，我们生成客户的详情、姓名和地址：
 
 ```html
+
 <h1 align=center>Order Summary</h1>
+
 <center>
+
 <img src="CheckoutStage3.jpg">
+
 </center>
+
 <!-- Summarize Order details -->
+
 <h4>Your order details are listed below.</h4>
+
 <p>Once you have confirmed the details click
+
 <input type='button' name='cmdSubmit' onclick='window.location.href = "OrderComplete.html"' value='Submit Order'>
+
 to send your order
+
 </p>
+
 </form>
+
 <!-- Summary of name and address for delivery -->
+
 <div id='divAddressSummary' class='AddressSummary'>
+
 <script language='JavaScript'>
+
 var customerSummaryHTML = parent.thisCustomer.getCustomerSummary();
+
 document.write(customerSummaryHTML);
+
 </script>
+
 </div>
+
 ```
 
 我们使用 `Customer` 类的 `customerDetailsSummary()` 方法来完成生成摘要的核心工作。接下来，我们生成信用卡详情：
 
 ```html
+
 <!-- Summary of amount to be charged to credit card -->
+
 <div id='divAmountSummary' class='AmountSummary'>
+
 <script language='JavaScript'>
+
 var cardSummaryHTML =
+
 parent.customerCreditCard.getCreditDetailsSummary();
+
 document.write(cardSummaryHTML);
+
 </script>
+
 </div>
+
 ```
 
 这次是由 `CreditCard` 类提供摘要 HTML。为了让客户确认从其银行卡中扣除的准确金额，我们也为此创建了一个摘要：
 
 ```html
+
 <!-- Show summary of card details -->
+
 <div id='divCreditCardSummary' class='CreditCardSummary'>
+
 <script language='JavaScript'>
+
 var cardDebitSummaryHTML = "A total of &amp;";
+
 cardDebitSummaryHTML += parent.myBasket.getTotalIncDelivery();
+
 cardDebitSummaryHTML += " will be debited from your ";
+
 cardDebitSummaryHTML += parent.customerCreditCard.getCardType();
+
 cardDebitSummaryHTML += " card (Card details below)";
+
 document.write(cardDebitSummaryHTML);
+
 </script>
+
 </div>
+
 ```
 
 
@@ -10227,7 +11223,7 @@ document.write(cardDebitSummaryHTML);
 
 用户有多种方式向网络应用程序提供信息。最常见的方式是通过表单，但也可以通过提示框和 HTML 技术来实现。有时用户会故意输入错误信息，但大多数情况下，如果数据在某些方面是错误的，那是他们的无意之过。也许他们并不理解需要输入什么数据。更好的做法是（更糟糕的是）是在问题发生时告诉他们哪里错了。虽然我们可以尽力在 HTML 页面中说明这一点，但我们仍然需要一些技术来检查他们输入数据的有效性。如果我们能在问题发生时告知他们错误，而不是在另一个页面上，或者（更糟糕的是）根本不告知，将会更加符合用户习惯。在本章中，我们将研究如何验证用户输入的信息，并在出现问题时立即通知他们。
 
-在整个章节中，我们将创建一个特殊的验证类，并在此过程中添加用于检查各种类型数据的方法。我们将能够检查简单数字和字符串的有效性，一直到更复杂的数据，如信用卡详情和邮政或邮政编码。然后，我们将扩展该类以供电子商务图像查看器使用。特别是，我们将看到如何自动化表单检查，以便通过方法调用只需几行代码即可对大型表单进行检查。
+在整个章节中，我们将创建一个特殊的验验类，并在此过程中添加用于检查各种类型数据的方法。我们将能够检查简单数字和字符串的有效性，一直到更复杂的数据，如信用卡详情和邮政或邮政编码。然后，我们将扩展该类以供电子商务图像查看器使用。特别是，我们将看到如何自动化表单检查，以便通过方法调用只需几行代码即可对大型表单进行检查。
 
 # 对不同类型信息的验证
 
@@ -10240,14 +11236,16 @@ document.write(cardDebitSummaryHTML);
 在开始查看单独的数据检查方法之前，我们需要创建类构造函数，并将其添加到我们在第 8 章中为电子商务应用创建的、目前为空的 `Validate.js` 文件中：
 
 ```
+
 function Validate() { }
+
 ```
 
 尽管它没做什么，但我们需要它来让类正常工作。
 
 我们将在接下来的章节中查看使用我们在稍早类中使用过的 `prototype` 属性向类添加的许多方法——如果类中不包含你需要的验证方法，你可以非常容易地自己创建并将其添加到 `Validate.js` 文件中。
 
-我们的大部分检查将涉及正则表达式——这些对字符模式的检查非常简单。所有方法至少接受一个参数，即要待验证的数据。它们还返回一个布尔值，如果数据有效则返回 `true`，如果无效则返回 `false`。
+我们的大部分检查将涉及正则表达式——这些对字符模的检查非常简单。所有方法至少接受一个参数，即要待验证的数据。它们还返回一个布尔值，如果数据有效则返回 `true`，如果无效则返回 `false`。
 
 # 验证字符
 
@@ -10258,18 +11256,25 @@ function Validate() { }
 与我们在此提供的所有方法一样，将此内容添加到 `Validate.js` 文件中：
 
 ```
+
 Validate.prototype.isAlphaNumeric = function(string) {
+
   var invalidCharactersRegex = /[^a-z\d]/;
+
   var isValid = !(invalidCharactersRegex.test(string));
 
   return isValid;
+
 }
+
 ```
 
 在第一行中，我们创建一个包含该正则表达式的新正则表达式对象：
 
 ```
+
 /[^a-z\d]/
+
 ```
 
 该正则表达式指定了我们字符串中无效的字符。`^` 字符表示“不是方括号中的字符之一”，即不是字母表中的字母 (a-z) 或数字 (`\d`) 或空格（注意闭合括号之前的空格）。我们在末尾设置了不区分大小写的标志 `i`，因此表达式不匹配字母表的大写字母也不匹配小写字母。
@@ -10277,7 +11282,9 @@ Validate.prototype.isAlphaNumeric = function(string) {
 然后我们测试字符串中是否发现了任何无效字符：
 
 ```
+
 var isValid = !(invalidCharactersRegex.test(string));
+
 ```
 
 如果参数 `string` 的值包含正则表达式指定的无效字符之一，那么 `invalidCharactersRegex.test(string)` 将返回 `true`（因为发现了其中一个无效字符）。但是，我们希望 `isValid` 变量在字符串有效时包含 `true`，所以如果没有发现任何无效字符，我们使用 `!` 字符反转 `invalidCharactersRegex.test(string)` 的结果。现在，如果发现了无效字符，`invalidCharactersRegex.test(string)` 返回 `true`，`!` 将其反转，从而使 `isValid` 包含 `false`。
@@ -10293,39 +11300,53 @@ var isValid = !(invalidCharactersRegex.test(string));
 正如你所看到的，此方法与上述描述的几乎相同：
 
 ```
+
 Validate.prototype.isOnlyNumericSpace = function(string) {
+
   var invalidCharactersExp = /[^a-z\d]/
+
   var isValid = ! (invalidExp.test(string));
 
   return isValid;
+
 }
+
 ```
 
 区别在于使用的正则表达式：
 
 ```
+
 /[a-z\d]/
+
 ```
 
-注意没有指定空格，因此只有字母和数字是有效的，而不是空格。同样，此方法没有指定字符串中必须有字符，因此空字符串将通过此测试。
+注意没有指空格，因此只有字母和数字是有效的，而不是空格。同样，此方法没有指定字符串中必须有字符，因此空字符串将通过此测试。
 
 # 仅限字母和空格
 
 正如你所看到的，此方法与之前看到的非常相似：
 
 ```
+
 Validate.prototype.isOnlyAlphabet = function(string)
+
   var invalidCharactersExp = /[^a-z ]/i;
+
   var isValid = ! (invalidCharactersExp.test(string));
 
   return isValid;
+
 }
+
 ```
 
 使用的正则表达式是：
 
 ```
+
 /[^a-z ]
+
 ```
 
 由于没有指定 `\d`，只有字母和空格是有效的，而不是数字。只有空格的空字符串将通过此测试。
@@ -10335,20 +11356,31 @@ Validate.prototype.isOnlyAlphabet = function(string)
 此方法与查看过的有所不同，尽管起始方式相似：
 
 ```
+
 Validate.prototype.isPasswordCharacters = function(password)
+
   var invalidCharactersExp = /[^a-z\d]/i;
+
   var isValid = !(invalidCharactersExp.test(password));
+
   if (isValid) {
+
     isValid = (password.length >= 8 && password.length <= 16);
+
   }
+
 return isValid;
+
 }
+
 ```
 
 这次，我们将正则表达式指定为：
 
 ```
+
 /[a-z\d]/i
+
 ```
 
 任何不是字母或数字都是无效，这意味着密码应该由这些字符组成。如果你需要检查包含其他字符的密码，你需要修改此表达式。
@@ -10362,13 +11394,19 @@ return isValid;
 我们首先从一个检查传递的字符串是否只包含正数的方法，例如 4、7654 和 74.743。
 
 ```
+
 Validate.prototype.isOnlyNumeric = function(string)
+
 {
+
   var validFormatRegExp = /^^\d+$/;
+
   var isValid = validFormatRegExp.test(string);
 
   return isValid;
+
 }
+
 ```
 
 
@@ -10377,7 +11415,9 @@ Validate.prototype.isOnlyNumeric = function(string)
 首先，我们定义了一个正则表达式来指定字符串的正确格式：
 
 ```
+
 /^\d*(\.\d+)?$/
+
 ```
 
 周围的 `^` 和 `$` 字符意味着该表达式必须出现在字符串的开头和结尾。在实际范围内，这意味着表达式必须匹配整个字符串——字符串不能包含任何其他字符。
@@ -10395,18 +11435,27 @@ Validate.prototype.isOnlyNumeric = function(string)
 我们的下一个方法检查整数，即没有浮点部分的数字。
 
 ```
+
 Validate.prototype.isValidInteger = function(string)
+
 {
+
   var validFormatRegExp = /^((+|-])?\d*$/;
+
   var isValid = validFormatRegExp.test(string);
+
   return isValid;
+
 }
+
 ```
 
 这与上面的方法类似，不同之处是现在小数点是无效的，并且我们允许正负号：
 
 ```
+
 /^((+|-])?\d*$/
+
 ```
 
 这个正则表达式指定字符串可以可选地以 `+` 或 `-` 号开头，但如果是这样，后面必须跟随至少一个数字。`^` 和 `$` 字符再次确保模式之前或之后不允许其他字符。
@@ -10419,25 +11468,32 @@ Validate.prototype.isValidInteger = function(string)
 
 与“仅限正数”方法一样，我们用正则表达式对字符串进行测试，并返回变量 `isValid`，该变量包含此测试的结果。
 
-注意，我们可以将正则表达式写为 `/^(\+|-)??\d+$/`。然而，这将无法匹配空字符串——这是我们想要匹配的，以便该方法可以用于检查非必填数据。
+注意，我们可以将正则表达式写为 `/^(\+|-)??\d+$/`。然而，这将无法匹空字符串——这是我们想要匹配的，以便该方法可以用于检查非必填数据。
 
 ## 浮点数
 
 接下来，我们检查正或负浮点数，即可能包含小数点的数字。
 
 ```
+
 Validate.prototype.isValidFloatingPoint = function(string) {
+
   var validFormatRegExp = /^(\+|-)?\d*(\.\d+)?$/;
+
   var isValid = validFormatRegExp.test(string);
 
   return isValid;
+
 }
+
 ```
 
 这一次，正则表达式指定允许数字、减号和小数点：
 
 ```
+
 /^(\+|-)?\d*(\.\d+)?$/
+
 ```
 
 `^` 和 `$` 字符指定我们的模式必须匹配我们测试的整个字符串。
@@ -10453,24 +11509,33 @@ Validate.prototype.isValidFloatingPoint = function(string) {
 我们的下一个方法检查指定值对于提供的数据类型是否符合逻辑，在这种情况下是人的年龄。
 
 ```
+
 Validate.prototype.isValidAge = function(age) {
+
   var isValid = false;
+
   if (this.isInteger(age)) {
+
     isValid = (parseInt(age) >= 0 && parseInt(age) < 140)
+
   }
 
   return isValid;
+
 }
+
 ```
 
 ## 数据验证技术
 
-这与我们的密码验证函数类似，因为我们不仅检查字符是否有效，还检查数据是否在特定范围内。
+这与我们的密码验函数类似，因为我们不仅检查字符是否有效，还检查数据是否在特定范围内。
 
 首先，我们使用 `isInteger()` 方法检查我们的是否整数数据：
 
 ```
+
 if (this.isInteger(age))
+
 ```
 
 如果是，则使用语句检查年龄是否在 0 到 140 的范围内。如果某种医学奇迹改变了人类预期寿命，我们需要更新代码，但否则这似乎是一个合理的范围。
@@ -10494,7 +11559,9 @@ if (this.isInteger(age))
 我们最后添加了部分来处理可选的扩展号：
 
 ```
+
 (?|xtn|ext|extn|extension)?\.? \d(1,5))
+
 ```
 
 此组是可选的，后面跟着一个问号。该组本身检查一个可选的空格，随后可选地匹配 x、ext、xtn 和 extension 之一，后面跟随着零或一个点（使用 `\.` ，因为 `.` 在正则表达式语法中是特殊字符），然后是零或一个空格，以及一到五位数字。
@@ -10504,13 +11571,17 @@ if (this.isInteger(age))
 好了，这个吓人的表达式总算解决了。使用它的方法将非常简单。现在，我们创建正则表达式对象：
 
 ```
+
 var validFormatRegExp = /^(\d(1,3))?(\d(1,5))\|\d(1,5)) \d(3)? \d(0,7)\n(?|xtn|ext|extn|extension)?\.? \d(1,5))$/i;
+
 ```
 
 然后，我们使用正则表达式测试我们的字符串：
 
 ```
+
 var isValid = validFormatRegExp.test(telephoneNum);
+
 ```
 
 最后，方法返回 `isValid` 变量。
@@ -10524,11 +11595,17 @@ var isValid = validFormatRegExp.test(telephoneNum);
 再次，重要的是要注意，此方法只检查邮政格式是否有效——没有简单的客户端方法可以检查邮编是否存在并实际上在使用。
 
 ```
+
 isValid.prototype.isValidPostalCode = function(postalCode) {
+
   var validFormat = /^(\d(5)-\d(4))?([a-z][a-z]?)?\d[a-z]?$/i
+
   var isValid = validFormat.test(postalCode);
+
   return isValid;
+
 }
+
 ```
 
 ## 第10 章
@@ -10536,7 +11613,9 @@ isValid.prototype.isValidPostalCode = function(postalCode) {
 该方法与我们已经看到的方法非常相似，所以我们从查看正则表达式开始：
 
 ```
+
 ^(\d{5})(-\d{4))?[a-z][a-z]?\d\d? [a-z][a-z]$/i
+
 ```
 
 这实际上分为两部分：第一部分检查邮政编码，第二部分检查英国邮编。我们将先查看邮政编码部分。
@@ -10546,7 +11625,9 @@ isValid.prototype.isValidPostalCode = function(postalCode) {
 匹配此格式的邮编正则表达式是：
 
 ```
+
 \d(5)(-\d(4))?
+
 ```
 
 它匹配五个数字，后面跟着一个可选组，该组匹配一个连字符后跟四位数字。
@@ -10556,25 +11637,33 @@ isValid.prototype.isValidPostalCode = function(postalCode) {
 基于此，我们的模式是：
 
 ```
+
 [a-z][a-z]?\d\d? [a-z][a-z]
+
 ```
 
 匹配邮政编码和邮编的模式使用 `|` 字符组合，以匹配“匹配其中之一”，并使用括号分组：
 
 ```
+
 (\d{5})(-\d(4))?[a-z][a-z]?\d\d? [a-z][a-z]
+
 ```
 
 我们在模式开头添加 `^` 字符并在结尾添加 `$` 字符，以确保字符串中的唯一信息是邮编，并用正则表达式分隔符 `/` 包围字符串。虽然邮编应该是大写的，但小写也是有效的，因此我们还设置了不区分大小写的标志 `i`：
 
 ```
+
 ^(\d{5})(-\d{4))?[a-z][a-z]?\d\d? [a-z][a-z]$/i
+
 ```
 
 方法的其余部分使用此正则表达式测试数据中字符的格式是否匹配邮编的有效格式：
 
 ```
+
 var isValid = validFormat.test(postalCode);
+
 ```
 
 ## 验证电子邮件地址
@@ -10601,11 +11690,17 @@ var isValid = validFormat.test(postalCode);
 - 如下：
 
 ```
+
 Validate.prototype.isValidEmail = function(email) {
+
   var RegExpExp = /^\w+\.[a-z]{2,4}$/i;
+
   var isValid = RegExpExp.test(email);
+
   return isValid;
+
 }
+
 ```
 
 我们需要支持-mailserver.com
@@ -10613,7 +11708,9 @@ Validate.prototype.isValidEmail = function(email) {
 所以，我们的完整模式是：
 
 ```
+
 \w+\.[a-z]{2,4}
+
 ```
 
 我们还需要确保字符串中只有地址而没有其他任何内容。我们需要添加 `^` 字符来指定模式应位于字符串的开头，以及 `/` 字符来限制正则表达式：
@@ -10631,31 +11728,46 @@ Validate.prototype.isValidEmail = function(email) {
 > 我们可以创建一个接受月份数字（0-11）的方法，但由于不同国家指定日期的方式不同，这可能会产生问题。例如，在美国，我们说“月 日 年”，而在英国，“日 月 年”更常见。使用数字表示月份可能会导致意外日期的设置，其中月份被视为日期。
 
 ```
+
 Validate.prototype.isValidDate = function(day, month, year) {
+
   var isValid = true;
+
 ```
 
 
 ```
+
 var enteredDate = new Date(day + " " + month + " " + year);
+
 if (enteredDate.getDate() != day) {
+
   isValid = false;
+
 }
+
 return isValid;
+
 ```
 
 此方法检查日期是否为 1 月 32 日，或者非闰年份的 2 月 29 日。该方法通过根据提供的参数创建一个新的 `Date` 对象来实现此功能：
 
 ```
+
 var enteredDate = new Date(day + " " + month + " " + year);
+
 ```
 
 如果日期无效，那么则传递的 `day` 参数与 `Date` 对象的 `getDate()` 方法返回的值将相等：
 
 ```javascript
+
 if (enteredDate.getDate() != day) {
+
   isValid = false;
+
 }
+
 ```
 
 在这种情况下，`isValid` 被设置为值 `false`（注意，它在方法开始时被初始化为 `true`）。然后由方法返回 `isValid`。
@@ -10665,20 +11777,31 @@ if (enteredDate.getDate() != day) {
 在验证出生日期时，我们必须首先像上面那样对日期进行验证，然后检查出生年份对于今天仍然在世的人来说是否可能。与之前一样，参数是月份中的某一天、月份的短名或全称以及一个四位数的。
 
 ```javascript
+
 Validate.prototype.isValidOfBirth = function(day, month, year) {
+
   var isValid = true;
+
   var now = new Date();
+
   year = parseInt(year);
+
   var dateOfBirth = new Date(day + " " + month + " " + year);
 
   if (!this.isValidDate(day,month,year)) {
+
     isValid = false;
+
   } else if (dateOfBirth > now || (year + 140) < now.getFullYear()) {
+
     isValid = false;
+
   }
 
   return isValid;
+
 }
+
 ```
 
 ## 第 10 章
@@ -10686,21 +11809,31 @@ Validate.prototype.isValidOfBirth = function(day, month, year) {
 此方法首先使用参数创建一个 Date 对象——这将设置为当前的系统日期。然后，正如我们在上一个方法中看到的，我们检查通过参数传递的日期是否为有效日期。
 
 ```javascript
+
 var nowDate = new Date();
+
 year = parseInt(year);
+
 var dateOfBirth = new Date(day + " " + month + " " + year);
 
 if (!this.isValidDate(day,month,year)) {
+
   isValid = false;
+
 }
+
 ```
 
 接下来，我们需要检查出生日期是否对于今天在世的人来说可能是有效的。声称出生于 1750 年的人要么是发现了长生不老的秘密，要么错误地输入了出生日期。如果他们声称出生在未来，他们也一定是错了。`else` 语句检查输入的日期是否不是未来日期（在这种情况下，该日期将大于 `nowDate` 中存储的当前日期），并且它比过去更远不超过 140 年，前提是很少有人能活超过 140 年：
 
 ```javascript
+
 else if (dateOfBirth > nowDate || (year + 140) < nowDate.getFullYear()) {
+
   isValid = false;
+
 }
+
 ```
 
 ## 验证信用卡有效期
@@ -10708,17 +11841,29 @@ else if (dateOfBirth > nowDate || (year + 140) < nowDate.getFullYear()) {
 有效的信用卡有效期是一个月份和年份的组合，且该组合不在过去。
 
 ```javascript
+
 Validate.prototype.isValidCardExpiry = function(expiresMonth, expiresYear) {
+
   var isValid = true;
+
   var nowDate = new Date();
+
   if (expiresMonth < (nowDate.getMonth() + 1) &&
+
       expiresYear == nowDate.getFullYear()) {
+
     isValid = false;
+
   } else if (expiresYear < nowDate.getFullYear()) {
+
     isValid = false;
+
   }
+
   return isValid;
+
 }
+
 ```
 
 此方法接收两个参数：卡片的两位有效期月份（01 代表 1 月，到 12 代表 12 月）和四位数的有效期年份。我们需要检查以下两个条件之一成立：
@@ -10731,19 +11876,26 @@ Validate.prototype.isValidCardExpiry = function(expiresMonth, expiresYear) {
 第一个 `if` 语句检查有效期月份是否为当年的月份：
 
 ```javascript
+
 if (expiresMonth < (nowDate.getMonth() + 1) &&
+
   expiresYear == nowDate.getFullYear()) {
+
   isValid = false;
+
 }
+
 ```
 
 然后 `else` 语句检查有效期年份是否早于当前年份：
 
 ```javascript
+
+
+
 else if (expiresYear < nowDate.getFullYear()) {
   isValid = false;
 }
-```
 
 如果这两个语句中的任何一个条件为真，那么 `isValid` 将被设置为 `false`。
 
@@ -10762,13 +11914,11 @@ Validate.prototype.isValidCardNumber = function(cardNumber, cardType) {
   var isValid = false;
   var ccExp = /^[\d ]/;
   isValid = !!ccExp.test(cardNumber);
-
   if (isValid) {
     var cardNumbersOnly = cardNumber.replace(/ /g,"");
     var cardLength = cardNumbersOnly.length;
     var lengthIsValid = false;
     var prefixExp;
-
     switch (cardType) {
       case "mastercard":
         lengthIsValid = (cardLength == 16);
@@ -10786,9 +11936,7 @@ Validate.prototype.isValidCardNumber = function(cardNumber, cardType) {
         prefixExp = /;
         alert("未找到卡类型");
     }
-
     var prefixIsValid = prefixExp.test(cardNumbersOnly);
-
     if (prefixIsValid && lengthIsValid) {
       var checkSumTotal = 0;
       var digitCounter;
@@ -10802,7 +11950,6 @@ Validate.prototype.isValidCardNumber = function(cardNumber, cardType) {
       isValid = (checkSumTotal % 10 == 0);
     }
   }
-
   return isValid;
 }
 ```
@@ -10819,7 +11966,7 @@ var ccRegex = /^[\d ]/;
 isValid = !!ccRegex.test(cardNumber);
 ```
 
-/[^\d ]/ 将匹配非法字符（任何不是数字或空格的字符）。当我们在第三行对卡号进行测试时，在之前的方法中，我们反转了逻辑，如果发现非法字符，则将 `isValid` 设置为 `false`。
+`/[^\d ]/` 将匹配非法字符（任何不是数字或空格的字符）。当我们在第三行对卡号进行测试时，在之前的方法中，我们反转了逻辑，如果发现非法字符，则将 `isValid` 设置为 `false`。
 
 方法的后续部分检查卡片是否具有有效前缀，它是否以该类型的正确数字开头，并包含正确的位数，同样针对特定的卡类型。常用卡片的前缀和长度所示：
 
@@ -10834,32 +11981,25 @@ isValid = !!ccRegex.test(cardNumber);
 首先我们去掉用户在输入信用卡号时可能放入的空格：
 
 ```javascript
-{ (isValid)
 var cardNumbersOnly = cardNumber.replace(/ /g,"");
 ```
 
 变量 `cardLength` 设置为字符串长度（字符串中数字的数量）。变量 `lengthIsValid` 和 `prefixIsValid` 将布尔值，指示我们未进行的长度和前缀检查的有效性。
 
-
-
 ```javascript
-switch (cardType)
-{
+switch (cardType) {
   case "mastercard":
     lengthIsValid = (cardNumberLength == 16);
     prefixRegExp = /^[1-5]/;
     break;
-
   case "visa":
     lengthIsValid = (cardNumberLength == 16 || cardNumber == 13);
     prefixRegExp = /^[4]/;
     break;
-
   case "amex":
     lengthIsValid = (cardNumberLength == 15);
     prefixRegExp = /^[3(4|7)]/;
     break;
-
   default:
     prefixRegExp = /\$/;
     alert("Card type not found");
@@ -10924,7 +12064,6 @@ if (isValid)
   var numberProduct;
   var productDigitIndex;
   var checkSumTotal = 0;
-
   for (digitCounter = cardNumberLength - 1;
     digitCounter > 0;
     digitCounter--)
@@ -10957,8 +12096,6 @@ productDigitCounter < numberProduct.length;
 
 在下表中，我们展示了对于示例数字 4221 3456 1243 1237，提取了哪些数字以及加到总和的值。
 
-# 数据验证技术
-
 | 提取的字符 | 对它的操作 | 对总和的操作 | 总和值 |
 | :--- | :--- | :--- | :--- |
 | 7 | 加到总和 | (0) + (7) | 7 |
@@ -10978,17 +12115,7 @@ productDigitCounter < numberProduct.length;
 | 2 | 加到总和 | 55 + (2) | 57 |
 | 4 | 翻倍 (8)，并将每个数字加到总和 | 57 + (8) | 65 |
 
-# 第 10 章
-
 一旦我们得到了结果（在上面表格的 65 之方），我们寻找模10 值，即总和除以 10 的剩余余数。如果为 0，我们就有一个有效的卡号，否则它就是虚假的。我们将 `isValid` 设置为比较余数与零的布尔表达式的结果——如果真则有效，假则无效。在我们的示例中，我们得到了 65，其模10 值为 5，所以示例数字是无效的——你并没认为我会现在给你我的信用卡号，对吧？
-
-# 图片查看器电子商务应用程序 – 部分 3
-
-是时候完成图片查看器向电子商务应用程序的转换。到目前为止，一切运行正常，除了应用程序中结账部分用户输入数据的字段验证外。如果我们输入“Duck Duck”作为信用卡号，应用程序会接受它。在这一节中，我们将修复这个问题，并利用我们的 `Validate` 类来验证表单。
-
-
-
-
 
 ## 数据验证技术
 
@@ -11003,7 +12130,7 @@ productDigitCounter < numberProduct.length;
 以下是了各种变体的总结：
 
 |  | | 名称值的后缀 | 示例 |
-|---|---|---|
+|---|---|---|---|
 | 不验证所有内容 | 无 | name="MyElementsName" |
 | 检查元素是否已填写，但不检查数据类型 | _Compulsory | name="MyElementsName_Compulsory" |
 | 检查数据类型（如果有），但数据不是必填的 | _NotCompulsory_datatype | name="MyElementsName_NotCompulsory_alphabetic" |
@@ -11017,8 +12144,6 @@ productDigitCounter < numberProduct.length;
 | _alphanumericpace | isOnlyAlphaNumericSpace() | 是 |
 
 表格继续见下一页
-
-## 第 10 章
 
 | 标识符 | 使用的 Validate 类方法 | 可以配合 _NotCompulsory 使用吗 |
 | --- | --- | --- |
@@ -11044,12 +12169,10 @@ productDigitCounter < numberProduct.length;
 
 为了给每个表单元素找到相应的 `<div>`，我们说错误 `<div>` 的 id 必须包含表单元素的名称，但不包含三字母标识符、必填标识符数据类型标识符，并在最后添加 Error 单词。根据上面的表单元素示例，如果名称为 `txtFullNameCompulsory_alphabetic`，则错误 `<div>` 的 id 值为 `FullNameError`。
 
-362
-
 下面是从我们应用程序的 PersonalDetails.htm 页面截取的 `<input>` 元素及其关联的 `<div>` 错误示例：
 
 ```html
-<<div>
+<div>
 Full Name :
 <br>
 <input name="txtFullName_Compulsory_Name_alphabetic" maxlength="150" class="TextBox">
@@ -11082,8 +12205,6 @@ Full Name :
 
 在自动验证表单方面，这就是该方法。该方法将遍历作为其第一个参数的表单，并逐个查看元素。如果表单元素是文本框或单选按钮，该方法将检查是否应该输入值。此外，在文本框的情况下，它会检查值应该是什么类型。如果发现错误，将显示该元素的错误 `<div>`。
 
-367
-
 ```javascript
 Validate.prototype.checkFormValid = function(theForm, theDocument) {
 var isWholeFormValid = true;
@@ -11103,25 +12224,20 @@ var isTextBoxElement;
 for (var formElementCounter = 0; formElementCounter < theForm.length; formElementCounter++) {
 theElement = theForm.elements[formElementCounter];
 elementName = theElement.name;
-
 isCompulsoryElement = isCompulsoryRegExp.test(elementName);
 isToBeValidatedElement = toBeValidatedRegExp.test(elementName);
-
 if (isToBeValidatedElement) {
 errorDivId = elementName;
 errorDivId = errorDivId.slice(3,errorDivId.indexOf("_")) + " Error*";
 this.hideErrorDiv(errorDivId,theDocument);
 }
-
 isTextBoxElement = theElement.type == "text" ||
 theElement.type == "password" ||
 theElement.type == "file";
-
 if (isTextBoxElement) {
 isValid = this.inputTextValid(theElement,
 validDataTypeExp,
 isCompulsoryElement);
-
 if (!isValid) {
 this.showErrorDiv(errorDivId,theDocument);
 isWholeFormValid = false;
@@ -11130,19 +12246,12 @@ isWholeFormValid = false;
 
 // 检查复选框单选按钮完成
 else if (theElement.type == "radio") {
-```
-
-
-
-```javascript
 theElement = theForm.elements[theElement.name];
 isValid = this.isRadioButtonInGroupSelected(theElement);
-
 if (isValid == false) {
     this.showErrorDiv(errorDivId,theDocument);
     isWholeFormValid = false;
 }
-
 do {
     formElementCounter++;
     theElement = theForm.elements[formElementCounter];
@@ -11152,6 +12261,7 @@ do {
 }
 }
 return isWholeFormValid;
+}
 ```
 
 这是网页自动验证表单的关键方法。它有两个参数：要检查的表单，以及包含该表单的页面文档对象。我们将使用文档对象来访问错误 `<div>` 元素。在方法的顶部，我们进行了变量声明，注意这三个正则表达式，它们稍后将用于检查元素的名称，以判断是否需要检查以及它们包含什么数据：
@@ -11180,8 +12290,6 @@ for (var formElementCounter = 0; formElementCounter < theForm.length;
     theElement = theForm.elements[formElementCounter];
     elementName = theElement.name;
 ```
-
-# 第 10 章
 
 ```javascript
 isCompulsoryElement = isCompulsoryRegExp.test(elementName);
@@ -11223,10 +12331,8 @@ if(!isValid) {
 在 `else` 语句中，接着检查这是否是一个单选按钮元素。如果是单选按钮，我们就检查它是否为必填元素。（这应该是总是如此——如果单选按钮不是必填的，它的名称中不应该包含 *_Compulsory* 或 *_NonCompulsory*，而且根本不会落入此逻辑中。然而，这个检查起到了双重检查。）如果是必填的，我们需要获取整个单选按钮组的引用以及其中的单个元素。我们通过获取元素的名称，然后使用此类（`Validate` 类）的 `oneRadioButtonInGroupSelected` 方法来实现此点，该方法会遍历单选按钮组并检查该元素是否已被选中，如果是则返回 true，否则返回 false。在我们在第 4 章之前的某个示例中，我们正在获取索引。
 
 ```javascript
-else if (element.type == "radio")
-{
-    if (isCompulsoryElement)
-    {
+else if (element.type == "radio") {
+    if (isCompulsoryElement) {
         element = element.name;
         theElement = theForm.elements[element];
         isValid = this.oneRadioButtonInGroupSelected(theElement);
@@ -11251,6 +12357,7 @@ do {
 } while (theElement.name == elementName &&
     formElementCounter < theForm.length);
     formElementCounter--;
+}
 ```
 
 这结束了单选按钮的 `else` 语句。最后，在方法结束时，我们返回关于表单是否有效的发现。
@@ -11258,9 +12365,7 @@ do {
 ```javascript
 ```
 
-# 第 10 章
-
-# isTextValid() 方法
+## isTextValid() 方法
 
 该方法负责对任何包含 *_Compulsory* 或 *_NonCompulsory* 的元素进行实际检查。所示的方法接受三个参数：元素对象、我们用于从名称中获取数据类型的正则表达式以及存储在 `isCompulsoryElement` 中的布尔值。
 
@@ -11271,7 +12376,6 @@ Validate.prototype.isTextValid = function(theElement,
 {
   var isValid = true;
   var validDataType;
-
   if (isCompulsoryElement && theElement.value == "") {
     isValid = false;
   }
@@ -11292,12 +12396,6 @@ Validate.prototype.isTextValid = function(theElement,
 
 在语句中，我们需要检查控件是否确实指定了数据类型且不是必填，否则我们的数据类型正则表达式将引导我们去检查一个不存在的名为 *_compulsory* 的数据类型。
 
-
-
-
-
-## 数据校验技术
-
 ## isElementValid() 方法
 
 该方法基本上是一个大的 `switch` 语句，其中我们根据在上述 `isElementValid()` 方法中提取的 `validDataType` 参数，调用我们 `Validate` 类中相关的数据校验方法。该参数包含了元素名称中定义的数据类型。所调用的方法是我们在本节早些时候介绍用于验证各种类型数据的方法。如果我们想扩展自动检查功能，只需创建一个检查额外数据类型的校验方法，并添加相关的数据类型名称到：
@@ -11305,44 +12403,34 @@ Validate.prototype.isTextValid = function(theElement,
 ```javascript
 Validate.prototype.isElementDataValid = function(elementValue, validDataType) {
   var isValid = false;
-
   switch (validDataType) {
     case "_alphanumeric":
       isValid = this.isOnlyAlphaNumeric(elementValue);
       break;
-
     case "_alphanumericnospace":
       isValid = this.isOnlyAlphaNumericNoSpace (elementValue);
       break;
-
     case "_alphabetic":
       isValid = this.isOnlyAlphabetic(elementValue);
       break;
-
     case "_numeric":
       isValid = this.isOnlyNumeric(elementValue);
       break;
-
     case "_integer":
       isValid = this.isValidInteger(elementValue);
       break;
-
     case "_floatingpoint":
       isValid = this.isValidFloatingPoint(elementValue);
       break;
-
     case "_age":
       isValid = isValidAge(elementValue);
       break;
-
     case "_password":
       isValid = isValidPassword(elementValue);
       break;
-
     case "_telephone":
       isValid = isValidTelephoneNum(elementValue);
       break;
-
     case "_postcode":
       isValid = this.isValidPostalCode(elementValue);
       break;
@@ -11394,6 +12482,7 @@ if (document.layers)
 {
   document.getElementById(errorDescDivId).style.visibility = "visible";
 }
+}
 ```
 
 NN4 使用层（layers），因此，如果 `document.layers` 不为 `null`，第一个 `if` 语句的条件将为 `true`，并执行其包含的代码。
@@ -11419,6 +12508,7 @@ if (document.layers)
 {
   document.getElementById(errorDescDivId).style.visibility = "hidden";
 }
+}
 ```
 
 ## 更新个人详情
@@ -11442,7 +12532,6 @@ function Continue_onclick(theForm) {
 ```javascript
 var selectedMonth = theForm.cboMonth.options[theForm.cboMonth.selectedIndex].value;
 var selectedYear = theForm.cboYear.options[theForm.cboYear.selectedIndex].value;
-
 if (parent.validator.isValidCardExpiry(selectedMonth, selectedYear) == false) {
     isValid = false;
     parent.validator.showErrorDiv("CardExpiryError", window.document);
@@ -11450,12 +12539,6 @@ if (parent.validator.isValidCardExpiry(selectedMonth, selectedYear) == false) {
     parent.validator.hideErrorDiv("CardExpiryError", window.document);
 }
 ```
-
-
-
-
-
-# 第 10 章
 
 ```javascript
 if (parent.validator.isValidCreditCardNumber(cardNumber,
@@ -11479,7 +12562,6 @@ if (isValid){
     parent.customerCreditCard.setCardNumber(cardNumber);
     parent.customerCreditCard.setCardExpires(selectedMonth + " /*"
     + selectedYear)
-
     window.location.href = "CheckoutConfirm.htm";
 }
 ```
@@ -11489,10 +12571,12 @@ if (isValid){
 ```javascript
 else
 {
-    alert("There were problems with your form.\n" + 
+    alert("There were problems with your form.\n" +
     "Please correct them before continuing.");
 }
 ```
+
+
 
 ## 总结
 
@@ -11508,29 +12592,29 @@ else
 
 # A
 
-- <a> 元素，HTML，114
+- `<a>` 元素，HTML，114
 - 事件，列表，114
-- href 属性，<a> 超级链接，279
-- onmouseover/down-up，示例，115
-- onmouseover/cut，示例，99
-- addEventListener(type, method, document)
+- `href` 属性，`<a>` 超级链接，279
+- `onmouseover/down-up`，示例，115
+- `onmouseover/cut`，示例，99
+- `addEventListener(type, method, document)`
 - DOM 事件，取消传播，227
 - Node NN DOM 事件绑定，223
     - 参数，223
     - 示例，223
-- alert(function)，window，92, 126
+- `alert(function)`，`window`，92, 126
 - 函数，显示 alert 对话框直到点击 OK，126
 - JavaScript 语法，示例，14
-- all 集合，document，166
+- `all` 集合，`document`，166
 - 作为类型/版本检测方式，178
 - 访问集合的方法，169
 - 控制器，弹出日历，252
 - 使用 HTML & JavaScript 进行 CSS 评估，164
-- tags() 方法，190
-- appendChild(node), Node
+- `tags()` 方法，190
+- `appendChild(node)`，`Node`
     - 函数，向文档添加节点
     - 结构，207
-- Array 对象，
+- `Array` 对象，
     - 访问元素，40
     - 关键字，使用，40
     - 数字索引，使用，40
@@ -11539,34 +12623,34 @@ else
 - 横幅选择显示，41
 - 随机数生成器属性，初始化，41
 - 写入索引页，41
-- 创建元素，Array() 构造函数，39
+- 创建元素，`Array()` 构造函数，39
     - 初始化/非数组处理，39
-- for 循环遍历数组示例，43
-- length 属性，42
+- `for` 循环遍历数组示例，43
+- `length` 属性，42
 - 方法，42
-    - concat(),合并数组，43
-    - slice(),元素数组，42
-    - sort(),排序元素，43
+    - `concat()`，合并数组，43
+    - `slice()`，元素数组，42
+    - `sort()`，排序元素，43
 - 对象实例存储数组，类示例，84
 - ASCII 字符编码方法，24
 - 关联数组
     - 电子商务查看器，304
-- attachEvent() 方法，IE 5 文
+- `attachEvent()` 方法，IE 5 文
     - 函数，DOM 事件绑定，222
     - 示例，227
 - 属性，HTML 元素
     - 修改，DOM，209
-    - getAttribute(set-1)，Element，209
-    - title 属性，鼠标悬停时提供工具提示，209
-- availWidth 属性，screen
+    - `getAttribute(set-1)`，`Element`，209
+    - `title` 属性，鼠标悬停时提供工具提示，209
+- `availWidth` 属性，`screen`
     - 确定屏幕大小，17
     - 图像加载示例，17
 
 # B
 
 - 边界标记，正则表达式，268
-- 绑定，DOM 事件，<form>，或查看/模糊。
-- break 语句
+- 绑定，DOM 事件，`<form>`，或查看/模糊。
+- `break` 语句
 - 函数，循环，50
 - 对象，89
     - 页面加载时创建，90
@@ -11575,7 +12659,7 @@ else
     - 表单访问，102
     - 动态更改，100
     - 悬停切换，97
-    - 使用 src 切换，95
+    - 使用 `src` 切换，95
     - 动态更改，91
     - 文档，91
     - 窗口，91
@@ -11903,52 +12987,42 @@ else
     - 浏览器的，363
     - 浏览器的，364
     - 浏览器的，365
-    - 浏览器的，366
-    - 浏览器的，367
-    - 浏览器的，368
-    - 浏览器的，369
-    - 浏览器的，370
-    - 浏览器的，371
     - 电子商务查看器，365
     - 选项列表，381
-
-
-
-
 
 # 数据类型
 
 - 控制器，弹出式自定义日历, 242
 - CSS 样式表, 243
 - 主 HTML 页面, 244
-- cmdShowStartCalendar(onClick(), 后退函数, 245
-- ononCalendarHideStartDate(), 调用, 246
-- showCalendar(), 调用, 247
-- mainScript.file, 248
-- cancelCalendar-hide(-), 249
-- generateCalendar(), 250
+- `cmdShowStartCalendar(onClick(), 后退函数, 245`
+- `ononCalendarHideStartDate()`，调用, 246
+- `showCalendar()`，调用, 247
+- `mainScript.file`, 248
+- `cancelCalendar-hide(-)`, 249
+- `generateCalendar()`, 250
 - 日历顶部 h1, 生成中, 251
-- <div>HTML, 生成中, 252
+- `<div>HTML`，生成中, 252
 - 月份天数数组, 生成中, 253
-- selected_date, 处理, 254
+- `selected_date`, 处理, 254
 - 变量声明, 255
-- daysArray, 生成中, 256
-- getDayOfWeek-Name-DayOfMonthMonth, 257
-- ember(252), 258
-- getTabID(), 259
+- `daysArray`, 生成中, 256
+- `getDayOfWeek-Name-DayOfMonthMonth`, 257
+- `ember(252)`, 258
+- `getTabID()`, 259
 - 全局变量, 生成中, 260
-- goproPreviousMonth()-NextMonth(), 261
-- highlightDay(), 262
-- setSelectedDate(), 263
-- showCalendar(), 264
+- `goproPreviousMonth()-NextMonth()`, 261
+- `highlightDay()`, 262
+- `setSelectedDate()`, 263
+- `showCalendar()`, 264
 - 参数, 265
-- updateSelectedDate(), 266
+- `updateSelectedDate()`, 266
 - 概述, 267
 - cookie 文档, 268
 - cookie 读取示例, 269
 - 自定义函数示例, 270
 - 电子商务图片查看器, 271
-- cookieEnabledProperty, 272
+- `cookieEnabledProperty`, 272
 - cookie 函数示例, 273
 - cookies, 使用持久化数据存储, 274
 - 属性, 275
@@ -11957,9 +13031,9 @@ else
 - 名称/值, 识别 cookie, 278
 - 路径, 指定路径范围, 279
 - 安全连接选择, 280
-- cn 自定义函数, 示例, 281
+- `cn` 自定义函数, 示例, 281
 - 输入值字符串示例, 282
-- when-onload()-onunload(), 283
+- `when-onload()-onunload()`, 283
 - 从自定义函数中删除多值, 284
 - 示例, 285
 - 调用函数, 286
@@ -11968,24 +13042,24 @@ else
 - 删除, 自定义函数示例, 289
 - 电子商务图片查看器, 290
 - 启用 cookie, 检查, 291
-- cookieEnabledProperty, 使用, 292
+- `cookieEnabledProperty`, 使用, 292
 - 概述, cookies, 293
 - cookie 可读性限制, 294
 - 读取多值, 自定义函数示例, 295
 - 多值, 返回, 296
 - 正则表达式, 创建, 297
 - 读取, 自定义函数示例, 298
-- exec(), 使用, 299
-- readCookieReadingUnescapedCookie(), 300
-- readUnescapedCookie(), 301
+- `exec()`，使用, 299
+- `readCookieReadingUnescapedCookie()`, 300
+- `readUnescapedCookie()`, 301
 - 正则表达式, 302
 - 读取多值示例, 303
-- document.cookie 属性, 204
+- `document.cookie` 属性, 204
 - 提取值并写入页面, 205
-- readCookie(), 提取 cookies, 206
+- `readCookie()`，提取 cookies, 206
 - 结构体, 207
 - 变量声明, 208
-- 写入多值, 自定义函数示例, 209
+- 写入多值, 自定函数示例, 209
 - 属性, 使用, 210
 - 调用函数, 211
 - 找到匹配计数, 检查是否, 212
@@ -11993,11 +13067,11 @@ else
 - 写入, 自定义函数示例, 228
 - 属性, 设置, 229
 - 调用函数, 230
-- createDocument(), 方法实现
+- `createDocument()`，方法实现
 - 将 HTML 文档导入 DOM, 231
 - XML 导入到 DOM 示例, 232
-- createElement(Element), 233
-- document, 234
+- `createElement(Element)`, 233
+- `document`, 234
 - 信用卡, 值/数字过期日期, 235
 - 电子商务图片查看器, 236
 - 信用卡, 获取信用卡详情, 237
@@ -12010,14 +13084,14 @@ else
 - 操作, 使用跨浏览器 HTML & JavaScript, 244
 - 在...操作 HTML & JavaScript, 245
 - 示例, 246
-- document, 使用, 247
+- `document`, 使用, 247
 - inner HTML 示例, 248
 - mouseover/out 示例, 249
 - 在 NN4 中操作 HTML & JavaScript, 250
 - 示例, 251
 - HTML 模板页面, 252
 - 层元素, 使用, 253
-- onmouseover, 设置, 254
+- `onmouseover`，设置, 254
 - HTML, 页面, 255
 - NN & IE 差异, 256
 - 示例原因, 257
@@ -12033,8 +13107,8 @@ else
 - 列表, 28
 - 逻辑, 29
 - 运算符, 优先级, 30
-- type(), 创建类型: 31
-- valueOf(), 比较 String 对象, 32
+- `type()`，创建类型: 31
+- `valueOf()`，比较 String 对象, 32
 - 数据类型, 22
 - 复合体, 对象, 33
 - Array, 35
@@ -12044,25 +13118,25 @@ else
 - String, 39
 - 之间转换, 29
 - 加法/减法运算符, 使用, 29
-- 声明数字示例, Number/parseFloat-Int(), 30
-- prompt(), 使用, 29
-- type(), 使用, 33
+- 声明数字示例, `Number/parseFloat-Int()`, 30
+- `prompt()`，使用, 29
+- `type()`，使用, 33
 - 原类型, 22
-- null/undefined, 25
-- string/number/Boolean, 26
+- `null/undefined`, 25
+- `string/number/Boolean`, 26
 - 变量, 27
 
 ## Date 对象
 
-- Date 对象, 35
+- `Date` 对象, 35
 - 控制器，弹出日历事件, 247
 - 显式创建 Date, 35
 - 构造函数变量, 35
 - 自定义 cookie 函数, 291
 - 方法, 36
-- getDate(-), 37
+- `getDate(-)`, 37
 - getter/setter, 本地/UTC 时间, 38
-- toString(), 37
+- `toString()`, 37
 - 验证日期, 350
 - 引用变量名的方法, 302
 - 优势, 44
@@ -12094,7 +13168,7 @@ else
 - 动态更改, 100
 - 使用图片, 97
 - 与...交换图片, 96
-- write(), 创建页面, 93
+- `write()`，创建页面, 93
 - 控制器，弹出日历事件, 242
 - 跨浏览器 HTML 写入, 174
 - 访问元素的属性, 174
@@ -12105,24 +13179,24 @@ else
 - 使用 NN 创建, 164
 - 使用 HTML & JavaScript 操作, 168
 - IE4, 168
-- innerHTML, 示例处理, 170
+- `innerHTML`, 示例处理, 170
 - NN, 172
 - 图片查看器, 折叠列表, 182
 - 对话窗口, 125, 141
 - 内置模型, 125
-- alert, 调用 alert(), 126
-- confirm, 调用 confirm(), 127
-- prompt(), 调用 confirm(), 127
+- `alert`，调用 `alert()`, 126
+- `confirm`，调用 `confirm()`, 127
+- `prompt()`，调用 `confirm()`, 127
 - 自定义, 创建, 141
 - HTML 页面, 141
 - 本地化, 143
-- showAlertDialog(), 142
-- <div> 标签
+- `showAlertDialog()`, 142
+- `<div>` 标签
 - 图片查看器, 158, 159
 - 隐藏 div, 184
 - 自动验证, 电子商务图片查看器, 362
-- setShowHide(-), 370
-- do_while 循环, 55
+- `setShowHide(-)`, 370
+- `do_while` 循环, 55
 - 函数, 决策, 55
 - 自定义函数, 示例, 65
 - 事件, 113
@@ -12132,11 +13206,11 @@ else
 - 顶层 DOM 层级, 90
 - 集合, 252
 - 方法, 222
-- addEventListener(), 223
-- attachEvent(), 222
-- createTextNode(), 208
-- getElementById, 252
-- write(), 写入页面, 18
+- `addEventListener()`, 223
+- `attachEvent()`, 222
+- `createTextNode()`, 208
+- `getElementById`, 252
+- `write()`，写入页面, 18
 - DOM 对象模型 (DOM), 193
 - 浏览器层级, 93
 - 早期 DOM 对象, 90
@@ -12159,23 +13233,23 @@ else
 - 电子商务图片查看器应用, 255, 296
 - 额外列表, 262
 - 图片查看器升级, 代码更改, 266
-- addTextBox(onclick), 空白, 265
-- doubleclick(onclick), 修改, 265
+- `addTextBox(onclick)`，空白, 265
+- `doubleclick(onclick)`，修改, 265
 - iframe HTML 页面, 263
 - 新按钮, 添加主页面, 263
 - 新按钮, 添加小页面, 263
 - 样式定义, 添加主 HTML, 263
 - 样式定义, 添加小屏幕, 263
 - 查看 HTML 页面, 266
-- viewBasket(onclick), 添加, 265
+- `viewBasket(onclick)`，添加, 265
 - 变量, 设置, 266
 - 图片查看器升级, UI 选择, 260
 - 信用卡详情, 结账, 259
 - 订单完成, 结账, 261
 - 订单摘要页, 结账, 257
 - 将商品添加到购物车, 321
-- add(), 调用, 322
-- addTextBox(onclick) 空白函数, 321
+- `add()`，调用, 322
+- `addTextBox(onclick)` 空白函数, 321
 - 在主框架中加载, 检查, 322
 - 变化, 322
 - 结账, 创建, 225
@@ -12189,13 +13263,13 @@ else
 - 购物车, 显示, 336
 - 样式, 包括, 336
 - 名称/地址详情, 获取, 325
-- cmdSubmit(onclick), 修改, 229
-- getSelection(value), 329
+- `cmdSubmit(onclick)`，修改, 229
+- `getSelection(value)`, 329
 - HTML 页面修改, 327
-- loadForm(), 修改, 327
-- saveForm(), 327
+- `loadForm()`，修改, 327
+- `saveForm()`，修改, 327
 - CreditCard 列表, 317
-- getCreditDetailsSummary(), 317
+- `getCreditDetailsSummary()`, 317
 - 存储的商品列表, 318
 - Customer 类, 318
 - 存储的商品列表, 318
@@ -12205,16 +13279,16 @@ else
 - 概述, 组件类, 330
 - 使用类, 购物车表现, 321
 - ShoppingBasket 类, 303
-- add(item), 304
+- `add(item)`, 304
 - 购物车中的商品, 更新数量, 305
 - 如果不在购物车中, 创建并添加, 304
 - 参数, 325
-- clearBasket(Basket), 317
+- `clearBasket(Basket)`, 317
 - 构造函数, 303
-- deleteItem(item), 305
-- inDecimalHTML(), 306
-- getBasketHTML(), 306
-- <form>, 创建, 307
+- `deleteItem(item)`, 305
+- `inDecimalHTML()`, 306
+- `getBasketHTML()`, 306
+- `<form>`，创建, 307
 - 商品图片, 修改, 307
 - 价格/数量表格元素, 添加, 308
 - 标题表, 写入, 307
@@ -12222,19 +13296,19 @@ else
 - 订单总商品列表计算, 309
 - 添加 Basket 更新, 添加, 309
 - 变量详情, 307
-- getCodeValue(item), 314
-- getHiddenInputHTML(item), 316
-- empty(), 310
-- loadBasket(item), 314
+- `getCodeValue(item)`, 314
+- `getHiddenInputHTML(item)`, 316
+- `empty()`, 310
+- `loadBasket(item)`, 314
 - 数组元素, 访问, 315
 - cookie 字符串, 获取, 315
 - 方法, 列表, 307
-- save(item), 312
+- `save(item)`, 312
 - 存储的商品列表, 313
 - 显式创建过期日期, 313
 - 迭代, 获取商品, 313
-- sethi(), 310
-- updateBasketWithForm(item), 311
+- `sethi()`, 310
+- `updateBasketWithForm(item)`, 311
 - 变量 textbox, 检查, 311
 - 变量声明, 311
 - Shopping 类, 300
@@ -12242,11 +13316,7 @@ else
 - getter/setter 方法, 属性, 302
 - 方法优先用于验证,调试,适配器, 302
 - 更新购物车, 323
-- saveBasket(item), 324
-
-
-
-
+- `saveBasket(item)`, 324
 
 元素, 表单, 103
 
@@ -12289,38 +13359,38 @@ escape() 函数
 事件绑定, DOM, 221
 
 - 浏览器差异, 225
-- addEventListener(), DOM, 223
-- attachEvent(), IE, 222
+- `addEventListener()`，DOM, 223
+- `attachEvent()`，IE, 222
 - 选择方法, 223
 - 图片查看器, 202
-- 内联绑定, 222
+- 内联绑ning, 222
 - 对象绑定, HTML, 222
 
 事件处理器, 110
 
 - 文档事件, 113
 - 函数, 110
-- < & 事件处理器函数定义列表, 110
+- `< & 事件处理器函数定义列表, 110
 - 鼠标悬停图片示例, 99
 - 加速，跨浏览器技术, 110
 - HTML 事件, 114
-- <form, 119
-- <a, 99
+- `<form`, 119
+- `<a`, 99
 
-- open(), 直接从...打开窗口
+- `open()`，直接从...打开窗口
 - 处理器, 111
-- onload/unload, 112
+- `onload/unload`, 112
 
 事件模型, DOM, 220
 
 - 取消事件，传播, 226
-- cancelBubble(), 传播, 229
-- handler(), 事件处理器, 227
+- `cancelBubble()`，传播, 229
+- `handler()`，事件处理器, 227
 
 - HTML 页面, 226
 - 运行, 228
-- stopAtDiv(), 注册 cancelEvent(), 229
-- window(), 将 handler() 附加
+- `stopAtDiv()`，注册 `cancelEvent()`, 229
+- `window()`，将 `handler()` 附加
 - 处理器, 227
 - 事件绑定, 221
 - 事件流系统, 220
@@ -12333,13 +13403,13 @@ escape() 函数
 
 - 引用，示例, 224
 
-- eventPhase 属性，事件
+- `eventPhase` 属性，事件
 
 - DOM 事件，取消传播, 228
-- exec(method), 正则表达式
+- `exec(method)`，正则表达式
 - 自定义 cookie 函数示例, 291
 - 电子商务图片查看器, 314
-- expires, cookies
+- `expires`, cookies
 - 自定义 cookie 函数，示例, 289
 - 电子商务图片查看器, 313
 - 函数，指定寿命, 284
@@ -12348,18 +13418,18 @@ escape() 函数
 
 特性, 窗口, chrome.
 
-- firstChild-属性, DOM 节点, 203
+- `firstChild-属性`，DOM 节点, 203
 - 函数，引用子节点, 203
 - Flash, Macromedia
 - XML 导入, 220
-- floor(), 方法, round/ceil/floor()
-- focus(), 窗口, 135
+- `floor()`，方法, `round/ceil/floor()`
+- `focus()`，窗口, 135
 - 自定义对话框示例, 142
-- focus/BLUR HTML 事件, <> 118
+- `focus/BLUR` HTML 事件, `<> 118`
 - 示例, 119
-- 函数, onblur, 119
-- for 循环, 52
-- for...in, 使用变量代替
+- 函数, `onblur`, 119
+- `for` 循环, 52
+- `for...in`，使用变量代替
 - 计数器, 53
 - 函数，重复执行指定次数的操作, 52
 - 参数, 52
@@ -12400,7 +13470,7 @@ escape() 函数
 - iframe, 父子层级, 145
 - 属性属性, window, 151
 - top/top 属性, 151
-- src 属性 & name 属性, <frame>, 146
+- src 属性 & name 属性, `<frame>`, 146
 
 - frameset, 145
 
@@ -12414,10 +13484,10 @@ escape() 函数
 - 双面板，示例创建, 146
 - frame 层级，图表, 147
 - HTML 页面, 146
-- <frameset> 标签, 146
+- `<frameset>` 标签, 146
 - 运行, 147
 - 放置于内, 148
-- 浏览器检测, 148
+- 浏览器检浟, 148
 
 作为重用代码块, 159
 - 描述性名称, 69, 70
@@ -12425,20 +13495,20 @@ escape() 函数
 - return 语句，执行, 73
 - 回调函数, 246
 - 内聚与单任务，设计函数, 76
-- convertElementTo(), 自定义示例, 62
+- `convertElementTo()`，自定义示例, 62
 - 定义, 65
 - 变量作用域, 63
 - 创建于内, 65
 - 有效名称, 62
 - 从零到无限, 60
-- DecimalPlaces(), 自定义示例, 63
+- `DecimalPlaces()`，自定义示例, 63
 - 为小数添加额外序列, 68
 - 调用函数, 65
 - 检查要添加的零的数量, 67
 - confirm all，获取用户响应, 66
 - do while 循环 & , 65
-- lastIndexOf(), 调用点, 67
-- Number(), 调用数字, 66
+- `lastIndexOf()`，调用点, 67
+- `Number()`，调用数字, 66
 - 参数, 66
 - 运行, 64
 - frameset 放置于内, 148
@@ -12447,41 +13517,41 @@ escape() 函数
 # G
 
 - get/local/UTC 时间, Date
-- getAttribute/set 方法, Element, 209
+- `getAttribute/set` 方法, `Element`, 209
 - 函数，获取/设置属性, 209
-- title 属性, 209
-- getStartDate/set 方法, Date, 37
+- `title` 属性, 209
+- `getStartDate/set` 方法, Date, 37
 - 验证日期，示例, 351
-- getElement(), 方法, document
+- `getElement()`，方法, `document`
 - 选项，弹出控制, 52
 - 电子商务图片查看器, 371
 - 函数，访问 DOM 元素, 200
 - 示例, 200
-- getElementsTagName() 结合使用
-- getElementsTagName(), 方法
+- `getElementsTagName()` 结合使用
+- `getElementsTagName()`，方法
 - 函数，访问 DOM 集合, 199
 - 示例, 199
-- getElementById(), 结合使用, 201
+- `getElementById()`，结合使用, 201
 - DOMImplementation, 实现, 213
 - XML 导入 DOM, 217, 218
 
 # H
 
-- hasChild(Node)? 方法
+- `hasChild(Node)?` 方法
 - 函数，检查是否包含, 207
-- hasFeature() 方法，实现，对象, 211
+- `hasFeature()` 方法，实现，对象, 211
 - 函数，测试 DOM 集合, 211
 - DOM  级 & 特性, 212
 - 隐藏元素/对象，表单
 - 动态访问, HTML, 104
 - 宿环境, 99
 - 浏览器作为, 90
-- href 属性，超链接
+- `href` 属性，超链接
 - 添加数据到，URL 发送, 279
 
 - 向上，示例, 115
 - 向外，示例, 99
-- <form,
+- `<form`,
 - change, 119
 - focus/blur, 118
 - select, 121
@@ -12492,32 +13562,32 @@ escape() 函数
 # I
 
 - IE (Internet Explorer)
-- attach(), DOM 事件绑定, 222
+- `attach()`，DOM 事件绑定, 222
 - 使用 DOM & JavaScript 操作 CSS, 169
 - IEHTMLElement, IE 处理 HTML, 170
 - IE, 差异, 174
 - CSS 定位, 168
 - 曲线属性，自定义设计, 60
 - DOMObject, 211
-- getElement/TagName(), 方法, 199
+- `getElement/TagName()`，方法, 199
 - DOMImplementation, 实现, 213
 - 电子商务图片查看器, 199, 200
-- open(), IE+ 中的可选参数, 132
-- showModalDialog(), 创建依赖弹出
+- `open()`，IE+ 中的可选参数, 132
+- `showModalDialog()`，创建依赖弹出
 - 窗口, 103
 
-- tags(), 全部, 199
+- `tags()`，全部, 199
 - while 无处理，IE 差异, 202
 
 if...else, 计数, 97
 - if else 语句, 45
 - 函数，测试条件, 47
-- isNaN(), 使用, 48
+- `isNaN()`，使用, 48
 - 逻辑运算符，使用, 48
 - 嵌套, 48
 - 自定义函数示例, 65
 
-- iframeElement/对象, 143
+- `iframeElement/对象`, 143
 - 函数，在文档内定义, 143
 - 调用 iframe/属性, 144
 - 创建元素到 iframe, 144
@@ -12533,24 +13603,24 @@ if...else, 计数, 97
 
 - 图片查看器应用, 152, 179, 230
 - 构建, 154
-- <iframe><image> 属性/事件处理器，设置, 154
+- `<iframe><image>` 属性/事件处理器，设置, 154
 - 主 html 文件, 154
 
 - 折叠列表实现，应用 HTML, 212
 - 跨浏览器 HTML，编写, 194
 - CSS, 定义类, 183
 - HTML-image, 183
-- getTag(id), 使用 id 访问元素, 184
-- 隐藏嵌套 <div>, 184
-- 布局嵌套 <div>, 184
-- 初始可见 <div>, 184
+- `getTag(id)`，使用 id 访问元素, 184
+- 隐藏嵌套 `<div>`, 184
+- 布局嵌套 `<div>`, 184
+- 初始可见 `<div>`, 184
 - 叶子元素，折叠列表, 187
 - 未命名 canvas, 187
 
-- loadImageCategory(), 加载缩略图, 119
-- loadImageCategory(),, 119
-- loadImageCategory(),, 119
-- loadImageCategory(),, 119
+- `loadImageCategory()`，加载缩略图, 119
+- `loadImageCategory()`，, 119
+- `loadImageCategory()`，, 119
+- `loadImageCategory()`，, 119
 - 103
 - 事件, 116
 - change, 19
@@ -12579,7 +13649,7 @@ if...else, 计数, 97
 - iframe, 父子层级, 145
 - 属性属性, window, 151
 - top/top 属性, 151
-- src 属性 & name 属性, <frame>, 146
+- src 属性 & name 属性, `<frame>`, 146
 
 - frameset, 145
 
@@ -12593,7 +13663,7 @@ if...else, 计数, 97
 - 双面板，示例创建, 146
 - frame 层级，图表, 147
 - HTML 页面, 146
-- <frameset> 标签, 146
+- `<frameset>` 标签, 146
 - 运行, 147
 - 放置于内, 148
 - 浏览器检测, 148
@@ -12604,20 +13674,20 @@ if...else, 计数, 97
 - return 语句，执行, 73
 - 回调函数, 246
 - 内聚与单任务，设计函数, 76
-- convertElementTo(), 自定义示例, 62
+- `convertElementTo()`，自定义示例, 62
 - 定义, 65
 - 变量作用域, 63
 - 创建于内, 65
 - 有效名称, 62
 - 从零到无限, 60
-- DecimalPlaces(), 自定义示例, 63
+- `DecimalPlaces()`，自定义示例, 63
 - 为小数添加额外序列, 68
 - 调用函数, 65
 - 检查要添加的零的数量, 67
 - confirm all，获取用户响应, 66
 - do while 循环 & , 65
-- lastIndexOf(), 调用点, 67
-- Number(), 调用数字, 66
+- `lastIndexOf()`，调用点, 67
+- `Number()`，调用数字, 66
 - 参数, 66
 - 运行, 64
 - frameset 放置于内, 148
@@ -12626,40 +13696,40 @@ if...else, 计数, 97
 # G
 
 - get/local/UTC 时间, Date
-- getAttribute/set 方法, Element, 209
+- `getAttribute/set` 方法, `Element`, 209
 - 函数，获取/设置属性, 209
-- title 属性, 209
-- getStartDate/set 方法, Date, 37
+- `title` 属性, 209
+- `getStartDate/set` 方法, Date, 37
 - 验证日期，示例, 351
-- getElement(), 方法, document
+- `getElement()`，方法, `document`
 - 选项，弹出控制, 52
 - 电子商务图片查看器, 371
 - 函数，访问 DOM 元素, 200
 - 示例, 200
-- getElementsTagName() 结合使用
-- getElementsTagName(), 方法
+- `getElementsTagName()` 结合使用
+- `getElementsTagName()`，方法
 - 函数，访问 DOM 集合, 199
 - 示例, 199
-- getElementById(), 结合使用, 201
+- `getElementById()`，结合使用, 201
 - XML 导入 DOM, 217, 218
 
 # H
 
-- hasChild(Node)? 方法
+- `hasChild(Node)?` 方法
 - 函数，检查是否包含, 207
-- hasFeature() 方法，实现，对象, 211
+- `hasFeature()` 方法，实现，对象, 211
 - 函数，测试 DOM 集合, 211
 - DOM 级级 & 特性, 212
 - 隐藏元素/对象，表单
 - 动态访问, HTML, 104
 - 宿环境, 99
 - 浏览器作为, 90
-- href 属性，超链接
+- `href` 属性，超链接
 - 添加数据到，URL 发送, 279
 
 - 向上，示例, 115
 - 向外，示例, 99
-- <form,
+- `<form`,
 - change, 119
 - focus/blur, 118
 - select, 121
@@ -12670,32 +13740,32 @@ if...else, 计数, 97
 # I
 
 - IE (Internet Explorer)
-- attach(), DOM 事件绑定, 222
+- `attach()`，DOM 事件绑定, 222
 - 使用 DOM & JavaScript 操作 CSS, 169
 - IEHTMLElement, IE 处理 HTML, 170
 - IE, 差异, 174
 - CSS 定位, 168
 - 曲线属性，自定义设计, 60
 - DOMObject, 211
-- getElement/TagName(), 方法, 199
+- `getElement/TagName()`，方法, 199
 - DOMImplementation, 实现, 213
 - 电子商务图片查看器, 199, 200
-- open(), IE+ 中的可选参数, 132
-- showModalDialog(), 创建依赖弹出
+- `open()`，IE+ 中的可选参数, 132
+- `showModalDialog()`，创建依赖弹出
 - 窗口, 103
 
-- tags(), 全部, 199
+- `tags()`，全部, 199
 - while 无处理，IE 差异, 202
 
 if...else, 计数, 97
 - if else 语句, 45
 - 函数，测试条件, 47
-- isNaN(), 使用, 48
+- `isNaN()`，使用, 48
 - 逻辑运算符，使用, 48
 - 嵌套, 48
-- 自定义函数示例, 65
+- 自定函数示例, 65
 
-- iframeElement/对象, 143
+- `iframeElement/对象`, 143
 - 函数，在文档内定义, 143
 - 调用 iframe/属性, 144
 - 创建元素到 iframe, 144
@@ -12711,17 +13781,17 @@ if...else, 计数, 97
 
 - 图片查看器应用, 152, 179, 230
 - 构建, 154
-- <iframe><image> 属性/事件处理器，设置, 154
+- `<iframe><image>` 属性/事件处理器，设置, 154
 - 主 html 文件, 154
 
 - 折叠列表实现，应用 HTML, 212
 - 跨浏览器 HTML，编写, 194
 - CSS, 定义类, 183
 - HTML-image, 183
-- getTag(id), 使用 id 访问元素, 184
-- 隐藏嵌套 <div>, 184
-- 布局嵌套 <div>, 184
-- 初始可见 <div>, 184
+- `getTag(id)`，使用 id 访问元素, 184
+- 隐藏嵌套 `<div>`, 184
+- 布局嵌套 `<div>`, 184
+- 初始可见 `<div>`, 184
 - 叶子元素，折叠列表, 187
 - 未命名 canvas, 187
 
@@ -12735,99 +13805,99 @@ if...else, 计数, 97
 - 数组，访问, 40
 
 # L
-- label 属性，<menu>
+- `label` 属性，`<menu>`
 - XML 属性，导入 DOM，示例, 216
-- language 属性，<script>
+- `language` 属性，`<script>`
 - JavaScript 版本，指定, 12
-- lastChildProperty, DOM 节点, firstChild/lastChild
-- indexOf(), 创建 String, indexof()
-- lastIndexOf(),
-- layer 元素, NN4 DHTML
+- `lastChildProperty`, DOM 节点, firstChild/lastChild
+- `indexOf()`，创建 String, `indexof()`
+- `lastIndexOf()`,
+- `layer` 元素, NN4 DHTML
 - 使用 HTML & JavaScript 操控层, 172
-- layers 集合, NN4 document
+- `layers` 集合, NN4 document
 - 浏览器类型/版本描述, 178
-- length, Array/String, 42
+- `length`, Array/String, 42
 - 隐式 String，选择
-- timeframe，变量, 61
-- links 对象, 62
+- `timeframe`，变量, 61
+- `links` 对象, 62
 - 动态更改，HTML 示例, 100
-- window_onload(), 102)
-- location 对象, 91
-- location 属性, window
+- `window_onload()`，, 102)
+- `location` 对象, 91
+- `location` 属性, `window`
 - frames 访问, 150
 - 指向窗口文档的函数, 135
 - 逻辑运算符, 27
 - 函数，测试多种条件，if-else, 使用, 48
 - ...的列表, 47
 - 循环, 52
-- break 语句，循环, 550
+- `break` 语句，循环, 550
 - 循环中的条件，简化, 72
-- continue 语句，继续循环, 55
-- for, 52
-- for, in..., 53
-- if, 在 else if 条件语句之后, 49
-- return 语句，执行函数, 73
-- switch 条件语句, 50
-- while, 54
-- do-while, 55
+- `continue` 语句，继续循环, 55
+- `for`, 52
+- `for`, in..., 53
+- `if`, 在 else if 条件语句之后, 49
+- `return` 语句，执行函数, 73
+- `switch` 条件语句, 50
+- `while`, 54
+- `do-while`, 55
 
 - Luhn 算法 (Mod 10) 信用卡号，验证, 356
 - 算法，步骤, 356
 
 # M
-- match() 方法，String, 271
+- `match()` 方法，`String`, 271
 - 函数，创建正则表达式对象, 272
-- Math 对象, 38
-- DateString 和，比较, 38
+- `Math` 对象, 38
+- `DateString` 和，比较, 38
 - 方法, 38
-- methodOfMathObject(),调用 Math 方法, 38
-- random(),生成随机数, 39
-- rootsquare/floor(),数字四舍五入, 38
-- <menu> 标签
-    - label 属性, 216
-    - method 属性，<form>
+- `methodOfMathObject()`，调用 Math 方法, 38
+- `random()`，生成随机数, 39
+- `rootsquare/floor()`，数字四舍五入, 38
+- `<menu>` 标签
+    - `label` 属性, 216
+    - `method` 属性，`<form>`
     - 设置为，URL 数据发送, 279
-- methodOfObjectClass() 方法，Math 函数，调用其他 Math 方法, 38
+- `methodOfObjectClass()` 方法，`Math` 函数，调用其他 Math 方法, 38
 - 方法
     - 自定义方法，类, 81, 82
     - 语法, 52
     - 变量与，调试优势, 302
 - Mod 10/公式, 10, Luhn 算法
 - 拨号对话框窗口, 125
-- alert,调用 alert(), 126
+- `alert`，调用 `alert()`, 126
 - 内置, 128
-- confirm,调用 confirm(), 127
+- `confirm`，调用 `confirm()`, 127
 - 自定义，创建, 143
-- prompt,调用 prompt(), 127
-- modal 属性特征名称, NN6+
+- `prompt`，调用 `prompt()`, 127
+- `modal` 属性特征名称, NN6+
 - 自定义对话框, 143
 - 依赖于弹出窗口, 132
 - DOM Level 2 模式, 194
 - 图表, 194
-- moveTo(), 方法，window 显示窗口选择, 136
+- `moveTo()`，方法，`window` 显示窗口选择, 136
 - 示例, 138
-- multiple 属性，select, 106
+- `multiple` 属性，`select`, 106
 
 # N
-- name 属性，<frame>
+- `name` 属性，`<frame>`
 - 双成对 frameset 示例, 146
-- name 属性，cookies
+- `name` 属性，cookies
 - 自定义 cookie 函数示例, 289
 - 识别 cookie, 284, 287
-- navigator 浏览器对象, 91
-- cookie 属性，浏览器支持, 297
+- `navigator` 浏览器对象, 91
+- `cookie` 属性，浏览器支持, 297
 - 检测树的插入, 121
-- new 关键字
-    - Array 示例, 39
-    - Date 创建示例, 35
+- `new` 关键字
+    - `Array` 示例, 39
+    - `Date` 创建示例, 35
     - 显式 String，从类创建, 83
-    - nextSibling/previous-属性，DOM 节点, 203
+    - `nextSibling/previous-属性`，DOM 节点, 203
     - 获取后一个/前一个子节点, 203
 - n (Netscape Navigator)
-    - addEventListener(DOM)，事件绑定, 223
-    - createDocument(),实现, 214
+    - `addEventListener(DOM)`，事件绑定, 223
+    - `createDocument()`，实现, 214
     - 使用 HTML & JavaScript 操控, 172
-    - layer 元素，使用, 126
+    - `layer` 元素，使用, 126
     - NNIE，表格差异, 174
     - CSS 定位, 168
     - 为了容量定义两次, 210
@@ -12835,77 +13905,76 @@ if...else, 计数, 97
     - DOM 能力, 211
     - DOM Level 2 & NN6 frames, 322
     - 电子商务图片查看器, 371
-    - getElementsByTagName(),document, 199
-    - iframe, 兼容 NN4-应用程序, 144
-    - sizeContent(),调整窗口大小, 136
+    - `getElementsByTagName()`，`document`, 199
+    - `iframe`, 兼容 NN4-应用程序, 144
+    - `sizeContent()`，调整窗口大小, 136
     - 空格处理，NNIE 差异, 202
-    - Node 接口，DOM, 197
+    - `Node` 接口，DOM, 197
     - 方法, 207
-    - appendChild/replace(-), 207, 208
-    - hasChildren(), 207
-    - nodeType 属性，DOM 节点, 204
+    - `appendChild/replace(-)`，207, 208
+    - `hasChildren()`，207
+    - `nodeType` 属性，DOM 节点, 204
     - 示例, 205
     - 识别节点类型的函数, 204
 
 # nodes, DOM
-- nodes, DOM, 198
+- `nodes`, DOM, 198
 - 访问子节点，属性, 202
-- childNodes, 短子列表索引, 204
-- dom, 213
-- firstChild/last，引用第一个/最后一个子节点, 203
-- nextSibling/previousSibling，引用后一个/前一个兄弟节点, 203
+- `childNodes`, 短子列表索引, 204
+- `dom`, 213
+- `firstChild/last`，引用第一个/最后一个子节点, 203
+- `nextSibling/previousSibling`，引用后一个/前一个兄弟节点, 203
 - 创建节点, 209
-- createTextNode(Element), Document, 208
+- `createTextNode(Element)`，`Document`, 208
 - 识别类型，属性, 204
 - 常量数值值，节点类型, 204
-- countHTML(Element) 示例, 205
+- `countHTML(Element)` 示例, 205
 - 示例, 205
-- getText() 函数, 206
-- nodeType/Name, 204
-- appendChild() 函数示例, 206
+- `getText()` 函数, 206
+- `nodeType/Name`, 204
+- `appendChild()` 函数示例, 206
 - 从文档中移除, 207
-- appendChild/remove(-), Node, 208
-- hasChildNodes(), Node, 207
+- `appendChild/remove(-)`，`Node`, 208
+- `hasChildNodes()`，`Node`, 207
 - 树结构节点，节点类型, 195
-- document，根节点, 196
-- parentChild，图表, 196
-- textField, 196
-- null 数据类型, 22
+- `document`，根节点, 196
+- `parentChild`，图表, 196
+- `textField`, 196
+- `null` 数据类型, 22
 - 数据类型转换, 29
-- 声明性，number/ParseFloat/parseInt(), 30
-- 验证数字, 342
-- Number() 函数, 30
+- 声明性，`number/ParseFloat/parseInt()`, 30
+- `Number()` 函数, 30
 - 显式数字类型声明, 30
-- prompt(),使用, 31
+- `prompt()`，使用, 31
 - 自定义函数示例, 65
 - 悬停图片示例, 97
-- mousedown/onmouse/mouseup HTML 事件处理器, 116
+- `mousedown/onmouse/mouseup` HTML 事件处理器, 116
 - 基于图像的创建, 115
-- img.onmousedown(), 116
-- onmouseover/onmouseout HTML 事件处理器, 99
+- `img.onmousedown()`, 116
+- `onmouseover/onmouseout` HTML 事件处理器, 99
 - 使用 DHTML & JavaScript 的 CSS 操作, 173
 - 图片查看器, 158, 233
 - 浏览器兼容性, 99
 - 悬停图片示例, 99
-- onSubmit 事件处理器，<form>, 118
-- submit 示例, 118
-- open() 方法, 129
-- document.open() 和, 130
+- `onSubmit` 事件处理器，`<form>`, 118
+- `submit` 示例, 118
+- `open()` 方法, 129
+- `document.open()` 和, 130
 - 打开弹出窗口的函数, 129
 - 直接从 HTML 打开, 130
 - 无参数选项，窗口示例, 129
-- select 复选框选项，参数, 131
-- URL & 标签名，参数, 129
-- opener 窗口, 139
+- `select` 复选框选项，参数, 131
+- `URL` & 标签名，参数, 129
+- `opener` 窗口, 139
 - 从弹出窗口访问的函数, 139
 - 示例, 25
 - 使用, 96
 - 运算符，数据选择器
 - 优化代码，设计元素, 238
 - 从 select 控制中移除, 238
-- addOption/remove(-) 通用函数, 238
+- `addOption/remove(-)` 通用函数, 238
 - 参数, 238
-- operations/onclick_makeOptions(),调用, 241
+- `operations/onclick_makeOptions()`，调用, 241
 - 选项选项, 242
 - HTML 页面, 240
 - JavaScript 文件, 238
@@ -12913,7 +13982,7 @@ if...else, 计数, 97
 # O
 - 对象绑定，DOM 事件, 222
 - 对象实例创建/使用, 63
-- this 关键字，特定实例, 81
+- `this` 关键字，特定实例, 81
 - 对象, 89
 - 浏览器兼容性, 16
 - 类创建对象, 16
@@ -12923,18 +13992,18 @@ if...else, 计数, 97
 - Math, 38
 - String, 32
 - OOP (面向对象编程), 16
-- onchange 事件处理器，<form>, 121
-- <img> 控制 onclick 事件处理器，弹出日历示例, 245
+- `onchange` 事件处理器，`<form>`, 121
+- `<img>` 控制 `onclick` 事件处理器，弹出日历示例, 245
 - 自定义对话框示例, 142
 - DOM 示例取消传播, 227
 - 电子商务图片查看器, 263, 321
-- select 控制选项示例, 201
-- onfocus/mouseout HTML 事件处理器，<form>, 119
-- load/onunload 窗口事件处理器, 112
+- `select` 控制选项示例, 201
+- `onfocus/mouseout` HTML 事件处理器，`<form>`, 119
+- `load/onunload` 窗口事件处理器, 112
 - banner 切换示例, 112
-- setSelection(clear(-)),调用, 113
+- `setSelection(clear(-))`，调用, 113
 - 切换图片, 113
-- window_onLoad(), 112
+- `window_onLoad()`，112
 - 电子商务图片查看器, 325
 - 图片查看器, 232
 - 窗口前清除, 140
@@ -12947,91 +14016,91 @@ if...else, 计数, 97
 - 链接，动态更改, 100
 - 使用缓存的悬停图片, 97
 - 使用缓存的切换图片, 97
-- write(),在下载时更改页面, 93
+- `write()`，在下载时更改页面, 93
 - 参数, 60
 - 使用描述性名称, 72
 - 添加可选参数, 68
 - 从 0 到无限数量, 60
-- parent 属性，iframe
-- 从子框访问父窗口的函数，iframe, 145
+- `parent` 属性，`iframe`
+- 从子框访问父窗口的函数，`iframe`, 145
 - 多框架元素示例, 151
-- ParseFloat/-Int() 函数, 30
+- `ParseFloat/-Int()` 函数, 30
 - 函数，显式数字类型声明, 30
 - 使用 URL 传递数据类型，查找 URL, 276
 
-# split() 方法，String
-- 密码元素 elementObject.form, HTML, 104
+# split() 方法，`String`
+- 密码元素 `elementObject.form`, HTML, 104
 - 在 HTML 中动态访问, 104
 - 验证密码字符, 341
-- path 属性，函数，指定页面 cookie, 284
+- `path` 属性，函数，指定页面 cookie, 284
 - 模式匹配，字符，见正则表达式。
 - 重用代码, 77
 - 使用类创建对象, 60
 - 代码库，优势, 77
 - 带 js 文件的代码模块, 78
 - 优势, 78
-- FixedDecimalPosition，复制到 js 文件, 77
+- `FixedDecimalPosition`，复制到 js 文件, 77
 - 插入到网页, 79
-- src 属性，使用, 80
-- post_code，验证, 347
+- `src` 属性，使用, 80
+- `post_code`，验证, 347
 - 运算符，数据数组
 - 悬停图片 (rollolovers)
 - 动画，使用, 100
 - 使用缓存的, 97
-- rolvers, 99
-- PreviousProperty, DOM 节点, 204
-- nextSibling/previousSibling，引用后一个/前一个兄弟节点, 203
+- `rolvers`, 99
+- `PreviousProperty`, DOM 节点, 204
+- `nextSibling/previousSibling`，引用后一个/前一个兄弟节点, 203
 - 创建节点, 209
-- createTextNode(Element), Document, 208
+- `createTextNode(Element)`，`Document`, 208
 - 识别类型，属性, 204
 - 常量数值值，节点类型, 204
-- countHTML(Element) 示例, 205
+- `countHTML(Element)` 示例, 205
 - 示例, 205
-- getText() 函数, 206
-- nodeType/Name, 204
-- appendChild() 函数示例, 206
+- `getText()` 函数, 206
+- `nodeType/Name`, 204
+- `appendChild()` 函数示例, 206
 - 从文档中移除, 207
-- appendChild/remove(-), Node, 208
-- hasChildNodes(), Node, 207
+- `appendChild/remove(-)`，`Node`, 208
+- `hasChildNodes()`，`Node`, 207
 - 树结构节点，节点类型, 195
-- document，根节点, 196
-- parentChild，图表, 196
-- textField, 196
-- null 数据类型, 22
+- `document`，根节点, 196
+- `parentChild`，图表, 196
+- `textField`, 196
+- `null` 数据类型, 22
 - 数据类型转换, 29
-- 声明性，number/ParseFloat/parseInt(), 30
+- 声明性，`number/ParseFloat/parseInt()`, 30
 - 验证数字, 342
-- Number() 函数, 30
+- `Number()` 函数, 30
 - 显式数字类型声明, 30
-- prompt(),使用, 31
+- `prompt()`，使用, 31
 - 自定义函数示例, 65
-- mousedown/onmouse/mouseup HTML 事件处理器, 116
+- `mousedown/onmouse/mouseup` HTML 事件处理器, 116
 - 基于图像的创建, 115
-- img.onmousedown(), 116
-- onmouseover/onmouseout HTML 事件处理器, 99
+- `img.onmousedown()`, 116
+- `onmouseover/onmouseout` HTML 事件处理器, 99
 - 使用 DHTML & JavaScript 的 CSS 操作, 173
 - 图片查看器, 158, 233
 - 浏览器兼容性, 99
 - 悬停图片示例, 99
-- onSubmit 事件处理器，<form>, 118
-- submit 示例, 118
-- open() 方法, 129
-- document.open() 和, 130
+- `onSubmit` 事件处理器，`<form>`, 118
+- `submit` 示例, 118
+- `open()` 方法, 129
+- `document.open()` 和, 130
 - 打开弹出窗口的函数, 129
 - 直接从 HTML 打开, 130
 - 无参数选项，窗口示例, 129
-- select 复选框选项，参数, 131
-- URL & 标签名，参数, 129
-- opener 窗口, 139
+- `select` 复选框选项，参数, 131
+- `URL` & 标签名，参数, 129
+- `opener` 窗口, 139
 - 从弹出窗口访问的函数, 139
 - 示例, 25
 - 使用, 96
 - 运算符，数据选择器
 - 优化代码，设计元素, 238
 - 从 select 控制中移除, 238
-- addOption/remove(-) 通用函数, 238
+- `addOption/remove(-)` 通用函, 238
 - 参数, 238
-- operations/onclick_makeOptions(),调用, 241
+- `operations/onclick_makeOptions()`，调用, 241
 - 选项选项, 242
 - HTML 页面, 240
 - JavaScript 文件, 238
@@ -13043,66 +14112,63 @@ if...else, 计数, 97
 - 声明，无必要, 61
 
 # R
-- screen, 17
+- `screen`, 17
 - 作为浏览器对象, 92
-- image 属性，创建, 17
-- scrolling 属性, 17
-- radio 元素/form, 104
+- `image` 属性，创建, 17
+- `scrolling` 属性, 17
+- `radio` 元素/`form`, 104
 - 在 HTML 中动态访问, 104
-- getSelectedValue(), 104
+- `getSelectedValue()`, 104
 - 多个选中的值
 - 动态验证，电子商务, 363
-- isRadioButtonSelected(), 370
-- random() 方法，Math, 39
+- `isRadioButtonSelected()`, 370
+- `random()` 方法，`Math`, 39
 - 正则表达式 (regex), 67
-- String, method(), 270
+- `String`, `method()`，270
 - 自定义 cookie 函数, 290
 - 自定义对话框, 142
 - 函数，模式匹配, 67
 - 语法，示例, 69
 - 特殊字符, 269
 - 重复字符, 264
-- removeChild(), 方法
+- `removeChild()`，方法
 - 函数，从文档中移除, 207
-- replace(), 方法
+- `replace()`，方法
 - 图片查看器, 257
 - URL 数据，接收示例, 280
-- replaceChild(), 方法
+- `replaceChild()`，方法
 - 函数，替换子节点, 208
-- reset element,form
+- `reset` element,`form`
 -- 动态，HTML, 109
 - 方法, 109
-- resizeTo(), 方法
+- `resizeTo()`，方法
 - 函数，调整窗口大小, 136
 - 示例, 137
-- return 语句
+- `return` 语句
 - 函数，令人的函数, 73
 - 函数，指定连接优势, 285, 288
-- select elementObject.form, HTML, 101, 106
+- `select` `elementObject.form`, HTML, 101, 106
 - 在 HTML 中动态访问, 106
-- getSelectedValues(), 106, 109
-- showSelectorValues(), 102
-- multiple 属性, 106
+- `getSelectedValues()`, 106, 109
+- `showSelectorValues()`, 102
+- `multiple` 属性, 106
 - 元素，从 select 控制中添加或移除, 127
-- options 属性, 108
-- indexed select 属性, 106
+- `options` 属性, 108
+- `indexed select` 属性, 106
 - Session，用户, 275
 - 状态，使用变量维持, 275, 282
-- setMethod，window, 113
-- ononload/示例, 113
-- setXXX() 方法，也是 getXXX-set(-).
-- showDialog() 方法，IE4+, 123
+- `setMethod`，`window`, 113
+- `ononload/示例`, 113
+- `setXXX()` 方法，也是 `getXXX-set(-)`.
+- `showDialog()` 方法，IE4+, 123
 - 自定义对话框示例, 143
 
+# src 属性/属性，Image/`<src/>`/`<frame>`
 
-
-
-# src 属性/属性，Image/<src/><frame>
-
-- src 属性/属性，Image/<src/><frame>
+- src 属性/属性，Image/`<src/>`/`<frame>`
 - 电子商务图片查看器, 308
 - 图片查看器, 555
-- onload/unload 示例, 113
+- `onload/unload` 示例, 113
 - 代码复用，代码模块示例, 80
 - 切换图片, 38
 - 超链接点击示例, 95
@@ -13112,17 +14178,17 @@ if...else, 计数, 97
 - 文本框/元素，对象，表单
 - 动态访问，HTML, 104
 - 通用覆盖，电子商务图片查看器, 363
-- isTextElementValue(Valid), 368
-- updateBaselineWithForm(), 311
-- this 关键字, 8
+- `isTextElementValue(Valid)`, 368
+- `updateBaselineWithForm()`, 311
+- `this` 关键字, 8
 
 - 函数，特定对象实例, 81
 - 类 classes, 示例, 85
-- title 属性，HTML 元素, 209
+- `title` 属性，HTML 元素, 209
 - 通过鼠标悬停访问 ToolTip (工具提示), 209
 - 示例, 210
 
-- srcElement/target, HTML 事件
+- `srcElement`/`target`, HTML 事件
 - 取消默认的 DOM 示例
 
 - 函数，识别元素事件, 225
@@ -13137,32 +14203,32 @@ if...else, 计数, 97
 - 函数，语法, 22
 - 语法错误, 29
 
-- String 对象, 32
+- `String` 对象, 32
 - 显式创建，构造函数 Constructor, 33
 - 隐式创建，使用字符串原始类型, 32
-- length 属性, 33
+- `length` 属性, 33
 - 方法, 34
-- indexof/lastIndexOf, 01
-- substring(), 34
+- `indexof/lastIndexOf`, 01
+- `substring()`, 34
 
 - 样式表，CSS.
 - 提交按钮元素/对象，表单
 - 动态访问，HTML, 104
 - DOM HTML 事件，表单, 117
 - 用户数量示例, 117
-- formValid(), 114
-- 使用 onsubmit, 118
+- `formValid()`, 114
+- 使用 `onsubmit`, 118
 
-- 来自 submit() 处, 104
-- substring() 方法，String, 34
+- 来自 `submit()` 处, 104
+- `substring()` 方法，`String`, 34
 - cookie/读取，简单示例, 287
 - 从 substring 创建新字符串的函数, 34
 - 使用 src 切换图片, 95
 - 超链接点击示例, 95
 - 射线数组 (ray array), 97
-- hyperlink(), 96
+- `hyperlink()`, 96
 
-- onload/unload 示例, 113
+- `onload/unload` 示例, 113
 - 使用缓存的鼠标悬停图片, 97
 - 切换条件状态, 50
 - 函数，在代码段之间切换, 50
@@ -13171,30 +14237,30 @@ if...else, 计数, 97
 # top 属性
 
 - 多面板框架陷阱，示例, 152
-- toString(), toString() 方法，Date, 37
+- `toString()`，`toString()` 方法，`Date`, 37
 - 树，DOM, 195
 - 结构化在树中的节点, 196
 
-- typeof 数据
+- `typeof` 数据
 - 数据类型转换, 30
 
 # U
 
-- undefined 数据类型, 22
-- 反转义字符 (escape/unescape)
+- `undefined` 数据类型, 22
+- 反转义字符 (`escape`/`unescape`)
 - Unicode 字符编码方法, 24
-- URLs (通用资源定位符)，传递数据, 276
-- escape(escape)/反转义字符, 276
+- `URLs`（通用资源定位符），传递数据, 276
+- `escape`(`escape`)/反转义字符, 276
 - 函数，概述, 276
 - 读取数据, 276
 - 接收数据，示例, 278, 279
-- 传递的值 (valuesPassed),
-- name 和 age 作为索引方法, 280
+- 传递的值 (`valuesPassed`),
+- `name` 和 `age` 作为索引方法, 280
 - 使用方法填充数组, 280
 - 发送数据，示例, 274
 - 添加到 href，超链接
 - 使用 JavaScript 到新页面, 279
-- 设置 <form> 方法为 get, 279
+- 设置 `<form>` 方法为 get, 279
 
 # V
 
@@ -13224,20 +14290,20 @@ if...else, 计数, 97
 
 # T
 
-- tags() 方法.all, 199
+- `tags()` 方法.`all`, 199
 - 函数，访问 DOM 集合, 199
-- target 属性，ca=<form>
-- 在 open() 中使用的参数, 129
-- on 事件上的 target, 见 srcElement/target.
+- `target` 属性，`ca=<form>`
+- 在 `open()` 中使用的参数, 129
+- `on` 事件上的 `target`, 见 `srcElement`/`target`.
 - 电话号码，验证, 345
-- test() 方法，正则表达式, 271
+- `test()` 方法，正则表达式, 271
 - 文本接口，DOM, 198
 
-# write() 方法，document 对象
+# write() 方法，`document` 对象
 
 - 验证（续）
 - 日期 350
-- 可见性属性，div/image
+- 可见性属性，`div`/`image`
 - 自动验证表单，电子商务图片查看器, 350
 - 出生日期, 351
 - 方法，示例, 351
@@ -13255,10 +14321,10 @@ if...else, 计数, 97
 - 第二部分, 349
 - JavaScript 语法, 11, 12
 - 表单，自动的, 360
-- language 属性，指定 JavaScript 版本, 12
+- `language` 属性，指定 JavaScript 版本, 12
 - 网页，网站,
 - 计算机/非计算机，选项列表, 361
-- while 循环，while 与比较, 55
+- `while` 循环，`while` 与比较, 55
 - 表单元素中包含的数据, 360
 - 函数，决策后的重复操作, 54
 - 数据验证方法，选项列表, 361
@@ -13267,7 +14333,7 @@ if...else, 计数, 97
 - 窗口事件, 111
 - 错误输入, 362
 - 窗口对象, 125
-- onload/unload, 112
+- `onload/unload`, 112
 - 数字, 362
 - 窗口属性，其他, 319
 - 电话号码, 344
@@ -13289,32 +14355,32 @@ if...else, 计数, 97
 - 函数，语法, 22
 - 语法错误, 29
 
-- String 对象, 32
+- `String` 对象, 32
 - 显式创建，构造函数 Constructor, 33
 - 隐式创建，使用字符串原始类型, 32
-- length 属性, 33
+- `length` 属性, 33
 - 方法, 34
-- indexof/lastIndexOf, 01
-- substring(), 34
+- `indexof/lastIndexOf`, 01
+- `substring()`, 34
 
 - 样式表，CSS.
 - 提交按钮元素/对象，表单
 - 动态访问，HTML, 104
 - DOM HTML 事件，表单, 117
 - 用户数量示例, 117
-- formValid(), 114
-- 使用 onsubmit, 118
+- `formValid()`, 114
+- 使用 `onsubmit`, 118
 
-- 来自 submit() 处, 104
-- substring() 方法，String, 34
+- 来自 `submit()` 处, 104
+- `substring()` 方法，`String`, 34
 - cookie/读取,简单示例, 287
 - 从 substring 创建新字符串的函数, 34
 - 使用 src 切换图片, 95
 - 超链接点击示例, 95
 - 射线数组 (ray array), 97
-- hyperlink(), 96
+- `hyperlink()`, 96
 
-- onload/unload 示例, 113
+- `onload/unload` 示例, 113
 - 使用缓存的鼠标悬停图片, 97
 - 切换条件状态, 50
 - 函数，在代码段之间切换, 50
@@ -13323,30 +14389,30 @@ if...else, 计数, 97
 # top 属性
 
 - 多面板框架陷阱，示例, 152
-- toString(), toString() 方法，Date, 37
+- `toString()`，`toString()` 方法，`Date`, 37
 - 树，DOM, 195
 - 结构化在树中的节点, 196
 
-- typeof 数据
+- `typeof` 数据
 - 数据类型转换, 30
 
 # U
 
-- undefined 数据类型, 22
-- 反转义字符 (escape/unescape)
+- `undefined` 数据类型, 22
+- 反转义字符 (`escape`/`unescape`)
 - Unicode 字符编码方法, 24
-- URLs (通用资源定位符)，传递数据, 276
-- escape(escape)/反转义字符, 276
+- `URLs`（通用资源定位符），传递数据, 276
+- `escape`(`escape`)/反转义字符, 276
 - 函数，概述, 276
 - 读取数据, 276
 - 接收数据，示例, 278, 279
-- 传递的值 (valuesPassed),
-- name 和 age 作为索引方法, 280
+- 传递的值 (`valuesPassed`),
+- `name` 和 `age` 作为索引方法, 280
 - 使用方法填充数组, 280
 - 发送数据，示例, 274
 - 添加到 href，超链接
 - 使用 JavaScript 到新页面, 279
-- 设置 <form> 方法为 get, 279
+- 设置 `<form>` 方法为 get, 279
 
 # V
 
@@ -13376,21 +14442,21 @@ if...else, 计数, 97
 
 # T
 
-- tags() 方法.all, 199
+- `tags()` 方法.`all`, 199
 - 函数，访问 DOM 集合, 199
-- target 属性，ca=<form>
-- 在 open() 中使用的参数, 129
-- on 事件上的 target, 见 srcElement/target.
+- `target` 属性，`ca=<form>`
+- 在 `open()` 中使用的参数, 129
+- `on` 事件上的 `target`, 见 `srcElement`/`target`.
 - 电话号码，验证, 345
-- test() 方法，正则表达式, 271
+- `test()` 方法，正则表达式, 271
 - 文本接口，DOM, 198
 
-# write() 方法，document 对象
+# write() 方法，`document` 对象
 
 - 验证（续）
 - 日期 350
-- 可见性属性，div/image
-- 自动验证表单，电子商务图片查看器, 350
+- 可见性属性，`div`/`image`
+- 自动验化表单，电子商务图片查看器, 350
 - 出生日期, 351
 - 方法，示例, 351
 - 日/月/年, 350
@@ -13407,10 +14473,10 @@ if...else, 计数, 97
 - 第二部分, 349
 - JavaScript 语法, 11, 12
 - 表单，自动的, 360
-- language 属性，指定 JavaScript 版本, 12
+- `language` 属性，指定 JavaScript 版本, 12
 - 网页，网站,
 - 计算机/非计算机，选项列表, 361
-- while 循环，while 与比较, 55
+- `while` 循环，`while` 与比较, 55
 - 表单元素中包含的数据, 360
 - 函数，决策后的重复操作, 54
 - 数据验证方法，选项列表, 361
@@ -13419,7 +14485,7 @@ if...else, 计数, 97
 - 窗口事件, 111
 - 错误输入, 362
 - 窗口对象, 125
-- onload/unload, 112
+- `onload/unload`, 112
 - 数字, 362
 - 窗口属性，其他, 319
 - 电话号码, 344
@@ -13435,38 +14501,3 @@ if...else, 计数, 97
 - 变体, 283
 - 框架陷阱与页面加载, 282
 - 运行, 283
-
-
-
-
-
-# 易可用 Web 的实用 JavaScript
-
-## 概述
-
-这是一本全新的 JavaScript 书。它不是简单的复制粘贴，不是参考手册，亦非对 JavaScript 语言的穷尽研究。它关注的是客户端、面向 Web、以任务为导向的 JavaScript。
-
-本书将为你奠定坚实的客户端 JavaScript 基础，使你能够快速、轻松地构建自己的功能，且不会掉入技术所留下的任何易用性陷阱。
-
-## 本书适合读群
-
-JavaScript 是 Web 专业人士的核心技能。正如每位 Web 专业人士所知的，客户端 JavaScript 可能会产生各种故障和错误。《易可用 Web 的实用 JavaScript》采用双管齐下的方法来教你学习完成工作所需的 JavaScript：教授你为了在 Web 应用程序中加入易用的交互而所需的核心 JavaScript（包括许多短小的功能脚本），并从零开始构建一个真实的电子商务应用程序。
-
-包含内容：
-
-- 对 DOM 的广泛涵盖，以及针对旧版浏览器的 HTML
-- 易用性技术
-- JavaScript 购物车功能的分步拆解
-- 高级数据验证技术
-- 可立即集成到你的 Web 应用程序中的可用脚本
-
-> http://www.glasshaus.com support@glasshaus.com
-
-# Web 专业人士系列
-
-- 行业工具：学习 Web 专业人士使用的工具
-- 构建：以任务为导向——完成 Web 专业人士的工作
-- 洞察：观察在技术与设计上取得平衡的成功网站
-
-$39.99
-分类分类：Web 设计，Web 开发

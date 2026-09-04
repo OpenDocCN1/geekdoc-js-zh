@@ -1,48 +1,51 @@
-# 轻松学习数据结构与算法 ES6+JavaScript：ES6+ JavaScript 中的经典数据结构与算法
+
+# 轻松学习数据结构与算法 ES6+JavaScript
+
+## ES6+ JavaScript 中的经典数据结构与算法
 
 ## 读累了记得休息一会哦~
 
 **公众号：古德猫宁李**
 
-*   电子书搜索下载
-*   书单分享
-*   书友学习交流
+- 电子书搜索下载
+- 书单分享
+- 书友学习交流
 
-**网站：**[沉金书屋 https://www.chenjin5.com](https://www.chenjin5.com)
+**网站：**[沉金书屋](https://www.chenjin5.com)
 
-*   电子书搜索下载
-*   电子书打包资源分享
-*   学习资源分享
+- 电子书搜索下载
+- 电子书打包资源分享
+- 学习资源分享
 
 ## 冒泡排序算法
 
 冒泡排序算法：比较前两个元素，如果前一个元素大于后一个元素，则交换位置。重复此过程，直到排序完成。
 
-将以下数字从小到大排序
+将以下数字从小到大排序。
 
 ![](img/Image00001.jpg)
 
 说明：
 
-![](img/Image00002.jpg) 未排序，![](img/Image00003.jpg) 比较中，![](img/Image00004.jpg) 已排序
+![](img/Image00002.jpg) 未排序，![](img/Image00003.jpg) 比较中，![](img/Image00004.jpg) 已排序。
 
 1. 第一次排序：
 
-![](img/Image00005.jpg)
+   ![](img/Image00005.jpg)
 
 2. 第二次排序：
 
-![](img/Image00006.jpg)
+   ![](img/Image00006.jpg)
 
 3. 第三次排序：
 
-![](img/Image00007.jpg)
+   ![](img/Image00007.jpg)
 
-4、5 以此类推：我们可以得到最终从小到大的排序数字
+4. 第四、五次以此类推：我们可以得到最终从小到大的排序数字。
 
-![](img/Image00008.jpg)
+   ![](img/Image00008.jpg)
 
-1. 使用记事本创建一个 `TestBubbleSort.html` 文件，并在浏览器中打开它。
+5. 使用记事本创建一个 `TestBubbleSort.html` 文件，并在浏览器中打开它。
 
 ```javascript
 <script type = "text/javascript" >
@@ -77,41 +80,41 @@
 
 选择排序算法：从数组中剩余的无序元素中选择最小的一个，插入到已排序序列的前面。
 
-将以下数字从小到大排序
+将以下数字从小到大排序。
 
 ![](img/Image00010.jpg)
 
 说明：
 
-![](img/Image00002.jpg) 未排序，![](img/Image00003.jpg) 比较中，![](img/Image00004.jpg) 已排序
+![](img/Image00002.jpg) 未排序，![](img/Image00003.jpg) 比较中，![](img/Image00004.jpg) 已排序。
 
 1. 第一次排序：
 
-![](img/Image00011.jpg)
+   ![](img/Image00011.jpg)
 
-![](img/Image00012.jpg)
+   ![](img/Image00012.jpg)
 
 2. 第二次排序：
 
-![](img/Image00013.jpg)
+   ![](img/Image00013.jpg)
 
-![](img/Image00014.jpg)
+   ![](img/Image00014.jpg)
 
 3. 第三次排序：
 
-![](img/Image00015.jpg)
+   ![](img/Image00015.jpg)
 
-![](img/Image00016.jpg)
+   ![](img/Image00016.jpg)
 
 4. 第四次排序：
 
-![](img/Image00017.jpg)
+   ![](img/Image00017.jpg)
 
 5. 第五次排序：
 
-![](img/Image00018.jpg)
+   ![](img/Image00018.jpg)
 
-1. 使用记事本创建一个 `TestSelectSort.html` 文件，并在浏览器中打开它。
+6. 使用记事本创建一个 `TestSelectSort.html` 文件，并在浏览器中打开它。
 
 ```javascript
 <script type = "text/javascript" >
@@ -156,39 +159,35 @@
 
 插入排序算法：从数组中取出一个未排序的新元素，与前面已排序的元素进行比较，如果新元素小于已排序元素，则将新元素插入到其右侧。
 
-将以下数字从小到大排序
+将以下数字从小到大排序。
 
 ![](img/Image00010.jpg)
 
 说明：
 
-
-
-
-
-![](img/Image00002.jpg) 未排序的元素，![](img/Image00003.jpg) 插入元素，![](img/Image00004.jpg) 已排序的元素
+![](img/Image00002.jpg) 未排序的元素，![](img/Image00003.jpg) 插入元素，![](img/Image00004.jpg) 已排序的元素。
 
 1. 第一次排序：
 
-![](img/Image00020.jpg)
+   ![](img/Image00020.jpg)
 
 2. 第二次排序：
 
-![](img/Image00021.jpg)
+   ![](img/Image00021.jpg)
 
 3. 第三次排序：
 
-![](img/Image00022.jpg)
+   ![](img/Image00022.jpg)
 
 4. 第四次排序：
 
-![](img/Image00023.jpg)
+   ![](img/Image00023.jpg)
 
 5. 第五次排序：
 
-![](img/Image00024.jpg)
+   ![](img/Image00024.jpg)
 
-1. 使用记事本创建一个 `TestInsertSort.html` 文件，并在浏览器中打开。
+6. 使用记事本创建一个 `TestInsertSort.html` 文件，并在浏览器中打开。
 
 ```javascript
 <script type = "text/javascript" >
@@ -248,22 +247,28 @@
 
 从已排序的数组中查找给定值的索引位置。
 
-1. 初始化最低索引 `low=0`，最高索引 `high=scores.length-1`
-2. 找到中间索引 `mid=(low+high)/2` 对应的值 `scores[mid]`
-3. 将中间值 `scores[mid]` 与 `searchValue` 比较
-   - 如果 `scores[mid]==searchValue`，则输出当前 mid 索引
-   - 如果 `scores[mid]>searchValue`，说明要查找的 `searchValue` 位于 `low` 和 `mid-1` 之间
+1. 初始化最低索引 `low=0`，最高索引 `high=scores.length-1`。
+2. 找到中间索引 `mid=(low+high)/2` 对应的值 `scores[mid]`。
+3. 将中间值 `scores[mid]` 与 `searchValue` 比较：
+   - 如果 `scores[mid]==searchValue`，则输出当前 `mid` 索引。
+   - 如果 `scores[mid]>searchValue`，说明要查找的 `searchValue` 位于 `low` 和 `mid-1` 之间。
 4. 依此类推。重复步骤 3，直到找到 `searchValue` 或 `low>=high` 时终止循环。
 
-示例 1：在下面已排序的数组中查找 `searchValue=40` 的索引。
+### 示例 1
+
+在下面已排序的数组中查找 `searchValue=40` 的索引。
 
 ![](img/Image00026.jpg)
 
 ![](img/Image00027.jpg)
 
-示例 2：在下面已排序的数组中查找 `searchValue=90` 的索引。
+### 示例 2
 
-![](img/Image00028.jpg) ![](img/Image00029.jpg)
+在下面已排序的数组中查找 `searchValue=90` 的索引。
+
+![](img/Image00028.jpg)
+
+![](img/Image00029.jpg)
 
 1. 使用记事本创建一个 `TestBinarySearch.html` 文件，并在浏览器中打开。
 
@@ -361,92 +366,72 @@
 
 1. 单向链表初始化。
 
-示例：构建一个旧金山地铁单向链表
+   示例：构建一个旧金山地铁单向链表。
 
-![](img/Image00033.jpg)
+   ![](img/Image00033.jpg)
 
 2. 遍历输出。
 
-![](img/Image00034.jpg)
+   ![](img/Image00034.jpg)
 
-1. 使用记事本创建一个 `TestUnidirectionalLinkedList.html` 文件，并在浏览器中打开。
+3. 使用记事本创建一个 `TestUnidirectionalLinkedList.html` 文件，并在浏览器中打开。
+
+
 
 ```javascript
-<script type = "text/javascript" >
+<script type="text/javascript">
 
-    class Node {
+    class Node {
 
-        constructor ( data , next ){
+        constructor(data, next) {
+            this.data = data;
+            this.next = next;
+        }
 
-            this.data = data ;
+        getData() {
+            return this.data;
+        }
+    }
 
-            this.next = next ;
+    class LinkedList {
 
-        }
+        init() {
+            // 第一个节点称为头节点
+            this.head = new Node("San Francisco", null);
 
-        getData (){
+            var nodeOakland = new Node("Oakland", null);
+            this.head.next = nodeOakland;
 
-            return this.data ;
+            var nodeBerkeley = new Node("Berkeley", null);
+            nodeOakland.next = nodeBerkeley;
 
-        }
+            // 最后一个节点称为尾节点
+            this.tail = new Node("Fremont", null);
+            nodeBerkeley.next = this.tail;
 
-    }
+            return this.head;
+        }
 
-    class LinkedList {
+        print(node) {
+            var p = node;
 
-        init () {
+            while (p != null) // 从头到尾
+            {
+                var data = p.getData();
+                document.write(data + " -> ");
+                p = p.next;
+            }
 
-            // 第一个节点称为头节点
+            document.write("End<br><br>");
+        }
+    }
 
-            this.head = new Node ( "San Francisco" , null );
+    //////////////////////测试////////////////////
 
-            var nodeOakland = new Node ( "Oakland" , null );
+    var linkedList = new LinkedList();
+    var head = linkedList.init();
 
-            this.head.next = nodeOakland ;
-
-            var nodeBerkeley = new Node ( "Berkeley" , null );
-
-            nodeOakland.next = nodeBerkeley ;
-
-            // 最后一个节点称为尾节点
-
-            this.tail = new Node ( "Fremont" , null );
-
-            nodeBerkeley.next = this.tail ;
-
-            return this.head ;
-
-        }
-
-        print ( node ) {
-
-            var p = node ;
-
-            while ( p != null ) // 从头到尾
-
-            {
-
-                var data = p.getData ();
-
-                document.write ( data + " -> " );
-
-                p = p.next ;
-
-            }
-
-            document.write ( "End<br><br>" );
-
-        }
-
-    }
-
-    //////////////////////测试////////////////////
-
-    var linkedList = new LinkedList ();
-
-    var head = linkedList.init ();
-
-    linkedList.print ( head );
+    linkedList.print(head);
 
 </script>
 ```
@@ -455,100 +440,73 @@
 
 ![](img/Image00035.jpg)
 
-3. 在末尾追加一个名为 Walnut 的新节点。
+### 3. 在末尾追加一个名为 Walnut 的新节点
 
 ![](img/Image00036.jpg)
 
-1. 使用记事本创建一个 `TestUnidirectionalLinkedListAppend.html` 文件
+1. 使用记事本创建一个 `TestUnidirectionalLinkedListAppend.html` 文件。
 
 ```javascript
-<script type = "text/javascript" >
+<script type="text/javascript">
 
-    class Node {
+    class Node {
 
-        constructor ( data , next ){
+        constructor(data, next) {
+            this.data = data;
+            this.next = next;
+        }
 
-            this.data = data ;
+        getData() {
+            return this.data;
+        }
+    }
 
-            this.next = next ;
+    class LinkedList {
 
-        }
+        init() {
+            // 第一个节点称为头节点
+            this.head = new Node("San Francisco", null);
 
-        getData (){
+            var nodeOakland = new Node("Oakland", null);
+            this.head.next = nodeOakland;
 
-            return this.data ;
+            var nodeBerkeley = new Node("Berkeley", null);
+            nodeOakland.next = nodeBerkeley;
 
-        }
+            // 最后一个节点称为尾节点
+            this.tail = new Node("Fremont", null);
+            nodeBerkeley.next = this.tail;
 
-    }
+            return this.head;
+        }
 
-    class LinkedList {
+        add(newNode) {
+            this.tail.next = newNode;
+            this.tail = newNode;
+        }
 
-        init () {
+        print(node) {
+            var p = node;
 
-            // 第一个节点称为头节点
+            while (p != null) // 从头到尾
+            {
+                var data = p.getData();
+                document.write(data + " -> ");
+                p = p.next;
+            }
 
-            this.head = new Node ( "San Francisco" , null );
+            document.write("End<br><br>");
+        }
+    }
 
-            var nodeOakland = new Node ( "Oakland" , null );
+    //////////////////////测试////////////////////
 
-            this.head.next = nodeOakland ;
+    var linkedList = new LinkedList();
+    var head = linkedList.init();
 
-            var nodeBerkeley = new Node ( "Berkeley" , null );
-
-            nodeOakland.next = nodeBerkeley ;
-
-            // 最后一个节点称为尾节点
-
-            this.tail = new Node ( "Fremont" , null );
-
-            nodeBerkeley.next = this.tail ;
-
-            return this.head ;
-
-        }
-
-        add ( newNode ) {
-
-            this.tail.next = newNode ;
-
-            this.tail = newNode ;
-
-        }
-
-        print ( node ) {
-
-            var p = node ;
-
-            while ( p != null ) // 从头到尾
-
-            {
-
-                var data = p.getData ();
-
-                document.write ( data + " -> " );
-
-                p = p.next ;
-
-            }
-
-            document.write ( "End<br><br>" );
-
-        }
-
-    }
-
-    //////////////////////测试////////////////////
-
-    var linkedList = new LinkedList ();
-
-    var head = linkedList.init ();
-
-    document.write ( "在末尾追加一个名为 Walnut 的新节点: <br>" );
-
-    linkedList.add ( new Node ( "Walnut" , null ));
-
-    linkedList.print ( head );
+    document.write("在末尾追加一个名为 Walnut 的新节点: <br>");
+    linkedList.add(new Node("Walnut", null));
+    linkedList.print(head);
 
 </script>
 ```
@@ -557,124 +515,82 @@
 
 ![](img/Image00037.jpg)
 
-3. 在位置 2 插入一个节点 Walnut。
+### 3. 在位置 2 插入一个节点 Walnut
 
 ![](img/Image00038.jpg)
 
-1. 使用记事本创建一个 `TestUnidirectionalLinkedListInsert.html` 文件
+1. 使用记事本创建一个 `TestUnidirectionalLinkedListInsert.html` 文件。
 
 ```javascript
-<script type = "text/javascript" >
+<script type="text/javascript">
 
-    class Node {
+    class Node {
 
-        constructor ( data , next ){
+        constructor(data, next) {
+            this.data = data;
+            this.next = next;
+        }
 
-            this.data = data ;
+        getData() {
+            return this.data;
+        }
+    }
 
-            this.next = next ;
+    class LinkedList {
 
-        }
+        init() {
+            // 第一个节点称为头节点
+            this.head = new Node("San Francisco", null);
 
-        getData (){
+            var nodeOakland = new Node("Oakland", null);
+            this.head.next = nodeOakland;
 
-            return this.data ;
-
-        }
-
-    }
-
-    class LinkedList {
-
-        init () {
-
-            // 第一个节点称为头节点
-
-            this.head = new Node ( "San Francisco" , null );
-
-            var nodeOakland = new Node ( "Oakland" , null );
-
-            this.head.next = nodeOakland ;
-
-            var nodeBerkeley = new Node ( "Berkeley" , null );
-```
-
-
-
-
-
-```javascript
-            this.head.next = nodeOakland ;
-
-            var nodeBerkeley = new Node ( "Berkeley" , null );
-
-            nodeOakland.next = nodeBerkeley ;
+            var nodeBerkeley = new Node("Berkeley", null);
+            nodeOakland.next = nodeBerkeley;
 
             // the last node called tail node
+            this.tail = new Node("Fremont", null);
+            nodeBerkeley.next = this.tail;
 
-            this.tail = new Node ( "Fremont" , null );
-
-            nodeBerkeley.next = this.tail ;
-
-            return this.head ;
-
+            return this.head;
         }
 
-        insert ( insertPosition , newNode ) {
-
-            var p = this.head ;
-
-            var i = 0 ;
+        insert(insertPosition, newNode) {
+            var p = this.head;
+            var i = 0;
 
             // Move the node to the insertion position
-
-            while ( p.next != null && i < insertPosition - 1 ) {
-
-                p = p.next ;
-
-                i ++;
-
+            while (p.next != null && i < insertPosition - 1) {
+                p = p.next;
+                i++;
             }
 
-            newNode.next = p.next ; // newNode next point to next node
-
-            p.next = newNode ; // current next point to newNode
-
+            newNode.next = p.next; // newNode next point to next node
+            p.next = newNode; // current next point to newNode
         }
 
-        print ( node ) {
+        print(node) {
+            var p = node;
 
-            var p = node ;
-
-            while ( p != null ) // From the beginning to the end
-
+            while (p != null) // From the beginning to the end
             {
-
-                var data = p.getData ();
-
-                document.write ( data + " -> " );
-
-                p = p.next ;
-
+                var data = p.getData();
+                document.write(data + " -> ");
+                p = p.next;
             }
 
-            document.write ( "End<br><br>" );
-
+            document.write("End<br><br>");
         }
-
     }
 
     //////////////////////testing////////////////////
 
-    var linkedList = new LinkedList ();
+    var linkedList = new LinkedList();
+    var head = linkedList.init();
 
-    var head = linkedList.init ();
-
-    document.write ( "Insert a new node Walnut at index = 2 : <br>" );
-
-    linkedList.insert ( 2 , new Node ( "Walnut" , null ));
-
-    linkedList.print ( head );
+    document.write("Insert a new node Walnut at index = 2 : <br>");
+    linkedList.insert(2, new Node("Walnut", null));
+    linkedList.print(head);
 
 </script>
 ```
@@ -683,116 +599,83 @@
 
 ![](img/Image00039.jpg)
 
-4. 删除 `index=2` 的节点。
+### 4. 删除 `index=2` 的节点
 
 ![](img/Image00040.jpg)
 
-1. 用记事本创建 `TestUnidirectionalLinkedListDelete.html`
+1. 用记事本创建 `TestUnidirectionalLinkedListDelete.html`。
 
 ```javascript
-<script type = "text/javascript" >
+<script type="text/javascript">
 
     class Node {
 
-        constructor ( data , next ){
-
-            this.data = data ;
-
-            this.next = next ;
-
+        constructor(data, next) {
+            this.data = data;
+            this.next = next;
         }
 
-        getData (){
-
-            return this.data ;
-
+        getData() {
+            return this.data;
         }
-
     }
 
     class LinkedList {
 
-        init () {
-
+        init() {
             // the first node called head node
+            this.head = new Node("San Francisco", null);
 
-            this.head = new Node ( "San Francisco" , null );
+            var nodeOakland = new Node("Oakland", null);
+            this.head.next = nodeOakland;
 
-            var nodeOakland = new Node ( "Oakland" , null );
-
-            this.head.next = nodeOakland ;
-
-            var nodeBerkeley = new Node ( "Berkeley" , null );
-
-            nodeOakland.next = nodeBerkeley ;
+            var nodeBerkeley = new Node("Berkeley", null);
+            nodeOakland.next = nodeBerkeley;
 
             // the last node called tail node
+            this.tail = new Node("Fremont", null);
+            nodeBerkeley.next = this.tail;
 
-            this.tail = new Node ( "Fremont" , null );
-
-            nodeBerkeley.next = this.tail ;
-
-            return this.head ;
-
+            return this.head;
         }
 
-        remove ( removePosition ) {
-
-            var p = this.head ;
-
-            var i = 0 ;
+        remove(removePosition) {
+            var p = this.head;
+            var i = 0;
 
             // Move the node to the previous node position that was deleted
-
-            while ( p.next != null && i < removePosition - 1 ) {
-
-                p = p.next ;
-
-                i ++;
-
+            while (p.next != null && i < removePosition - 1) {
+                p = p.next;
+                i++;
             }
 
-            var temp = p.next ; // Save the node you want to delete
-
-            p.next = p.next.next ; // Previous node next points to next of delete the node
-
-            temp.next = null ;
-
+            var temp = p.next; // Save the node you want to delete
+            p.next = p.next.next; // Previous node next points to next of delete the node
+            temp.next = null;
         }
 
-        print ( node ) {
+        print(node) {
+            var p = node;
 
-            var p = node ;
-
-            while ( p != null ) // From the beginning to the end
-
+            while (p != null) // From the beginning to the end
             {
-
-                var data = p.getData ();
-
-                document.write ( data + " -> " );
-
-                p = p.next ;
-
+                var data = p.getData();
+                document.write(data + " -> ");
+                p = p.next;
             }
 
-            document.write ( "End<br><br>" );
-
+            document.write("End<br><br>");
         }
-
     }
 
     //////////////////////testing////////////////////
 
-    var linkedList = new LinkedList ();
+    var linkedList = new LinkedList();
+    var head = linkedList.init();
 
-    var head = linkedList.init ();
-
-    document.write ( "Delete a new node Berkeley at index = 2 : <br>" );
-
-    linkedList.remove ( 2 );
-
-    linkedList.print ( head );
+    document.write("Delete a new node Berkeley at index = 2 : <br>");
+    linkedList.remove(2);
+    linkedList.print(head);
 
 </script>
 ```
@@ -814,34 +697,30 @@
 ![](img/Image00043.jpg)
 
 ```javascript
-    class Node {
+class Node {
 
-        constructor ( data , prev , next ){
-
-            this.data = data ;
-
-            this.prev = prev ;
-
-            this.next = next ;
-
-        }
-
-        getData (){
-
-            return this.data ;
-
-        }
-
+    constructor(data, prev, next) {
+        this.data = data;
+        this.prev = prev;
+        this.next = next;
     }
+
+    getData() {
+        return this.data;
+    }
+
+}
 ```
 
 ### 1. 双向链表初始化
 
-示例：构建一个旧金山地铁双向链表
+示例：构建一个旧金山地铁双向链表。
 
 ![](img/Image00044.jpg)
 
 ### 2. 用记事本创建 `TestDoubleLink.html`
+
+
 
 ```javascript
 <script type = "text/javascript" >
@@ -961,11 +840,11 @@
 
 ![](img/Image00045.jpg)
 
-### 3. 在 Fremont 末尾添加一个节点 Walnut。
+### 3. 在 Fremont 末尾添加一个节点 Walnut
 
 ![](img/Image00046.jpg)
 
-用记事本创建 `TestDoubleLinkAdd.html`
+用记事本创建 `TestDoubleLinkAdd.html`。
 
 ```javascript
 <script type = "text/javascript" >
@@ -1069,13 +948,7 @@
                 document.write ( data + " -> " );
                 p = p.prev ;
             }
-```
 
-
-
-
-
-```
             document.write ( "Start<br><br>" );
 
         }
@@ -1099,13 +972,13 @@
 
 ![](img/Image00047.jpg)
 
-### 3. 在位置 2 插入一个节点 Walnut。
+### 3. 在位置 2 插入一个节点 Walnut
 
 ![](img/Image00048.jpg)
 
-使用记事本创建 `TestDoubleLinkInsert.html`
+使用记事本创建 `TestDoubleLinkInsert.html`。
 
-```
+```javascript
 <script type = "text/javascript" >
 
     class Node {
@@ -1253,13 +1126,15 @@
 
 ![](img/Image00049.jpg)
 
-### 4. 删除索引为 2 的节点。
+### 4. 删除索引为 2 的节点
 
 ![](img/Image00050.jpg)
 
-使用记事本创建 `TestDoubleLinkDelete.html`
+使用记事本创建 `TestDoubleLinkDelete.html`。
 
-```
+
+
+```html
 <script type = "text/javascript" >
 
     class Node {
@@ -1411,43 +1286,43 @@
 
 ## 单向循环链表
 
-单向循环链表：
+### 单向循环链表
 
-它是线性表的一种链式存储结构，通过节点单向连接，并首尾相连形成一个环，每个节点由数据和指针 next 组成。
+它是线性表的一种链式存储结构，通过节点单向连接，并首尾相连形成一个环，每个节点由数据和指针 `next` 组成。
 
 ![](img/Image00052.jpg)
 
-UML 图
+### UML 图
 
 ![](img/Image00053.jpg)
 
-```
-    class Node {
+```javascript
+class Node {
 
-        constructor ( data , next ){
+    constructor ( data , next ){
 
-            this.data = data ;
+        this.data = data ;
 
-            this.next = next ;
-
-        }
-
-        getData (){
-
-            return this.data ;
-
-        }
+        this.next = next ;
 
     }
+
+    getData (){
+
+        return this.data ;
+
+    }
+
+}
 ```
 
-### 1. 单向循环链表的初始化与遍历输出。
+### 1. 单向循环链表的初始化与遍历输出
 
 ![](img/Image00054.jpg)
 
-使用记事本创建 `TestSingleCircleLink.html`
+使用记事本创建 `TestSingleCircleLink.html`。
 
-```
+```html
 <script type = "text/javascript" >
 
     class Node {
@@ -1537,15 +1412,15 @@ UML 图
 
 ![](img/Image00055.jpg)
 
-### 3. 在位置 2 插入一个节点 E。
+### 3. 在位置 2 插入一个节点 E
 
 ![](img/Image00056.jpg)
 
 ![](img/Image00057.jpg)
 
-使用记事本创建 `TestSingleCircleLinkInsert.html`
+使用记事本创建 `TestSingleCircleLinkInsert.html`。
 
-```
+```javascript
 <script type = "text/javascript" >
 
     class Node {
@@ -1565,224 +1440,225 @@ UML 图
         }
 
     }
-```
 
+    class SingleCircleLink {
 
+        init () {
 
+            // 第一个节点称为头节点
 
-```
-    class SingleCircleLink {
+            this.head = new Node ( "A" );
 
-        init () {
+            this.head.next = null ;
 
-            // 第一个节点称为头节点
+            var nodeB = new Node ( "B" );
 
-            this.head = new Node ( "A" );
+            nodeB.next = null ;
 
-            this.head.next = null ;
+            this.head.next = nodeB ;
 
-            var nodeB = new Node ( "B" );
+            var nodeC = new Node ( "C" );
 
-            nodeB.next = null ;
+            nodeC.next = null ;
 
-            this.head.next = nodeB ;
+            nodeB.next = nodeC ;
 
-            var nodeC = new Node ( "C" );
+            // 最后一个节点称为尾节点
 
-            nodeC.next = null ;
+            this.tail = new Node ( "D" );
 
-            nodeB.next = nodeC ;
+            this.tail.next = this.head ;
 
-            // 最后一个节点称为尾节点
+            nodeC.next = this.tail ;
 
-            this.tail = new Node ( "D" );
+        }
 
-            this.tail.next = this.head ;
+        insert ( insertPosition , newNode ) {
 
-            nodeC.next = this.tail ;
+            var p = this.head ;
 
-        }
+            var i = 0 ;
 
-        insert ( insertPosition , newNode ) {
+            // 将节点移动到插入位置
 
-            var p = this.head ;
+            while ( p.next != null && i < insertPosition - 1 ) {
 
-            var i = 0 ;
+                p = p.next ;
 
-            // 将节点移动到插入位置
+                i ++;
 
-            while ( p.next != null && i < insertPosition - 1 ) {
+            }
 
-                p = p.next ;
+            newNode.next = p.next ;
 
-                i ++;
+            p.next = newNode ;
 
-            }
+        }
 
-            newNode.next = p.next ;
+        print () {
 
-            p.next = newNode ;
+            var p = this.head ;
 
-        }
+            do {
 
-        print () {
+                var data = p.getData ();
 
-            var p = this.head ;
+                document.write ( data + " -> " );
 
-            do {
+                p = p.next ;
 
-                var data = p.getData ();
+            } while ( p != this.head );
 
-                document.write ( data + " -> " );
+            var data = p.getData ();
 
-                p = p.next ;
+            document.write ( data + "<br><br>" );
 
-            } while ( p != this.head );
+        }
 
-            var data = p.getData ();
+    }
 
-            document.write ( data + "<br><br>" );
+    //////////////////////测试////////////////////
 
-        }
+    var singleCircleLink = new SingleCircleLink ();
 
-    }
+    var head = singleCircleLink.init ();
 
-    //////////////////////测试////////////////////
+    document.write ( "在索引 2 处插入新节点 E：<br>" );
 
-    var singleCircleLink = new SingleCircleLink ();
+    singleCircleLink.insert ( 2 , new Node ( "E" ));
 
-    var head = singleCircleLink.init ();
-
-    document.write ( "在索引 2 处插入新节点 E：<br>" );
-
-    singleCircleLink.insert ( 2 , new Node ( "E" ));
-
-    singleCircleLink.print ( head );
+    singleCircleLink.print ( head );
 
 </script>
+```
 
 结果：
 
 ![](img/Image00058.jpg)
 
-### 4. 删除 `index`=2 的节点
+### 4. 删除 `index` = 2 的节点
 
 ![](img/Image00059.jpg)
 
 ![](img/Image00060.jpg)
 
-使用记事本创建 `TestSingleCircleLinkDelete.html`
+使用记事本创建 `TestSingleCircleLinkDelete.html`。
 
-```
+```html
 <script type = "text/javascript" >
 
-    class Node {
+    class Node {
 
-        constructor ( data , next ){
+        constructor ( data , next ){
 
-            this.data = data ;
+            this.data = data ;
 
-            this.next = next ;
+            this.next = next ;
 
-        }
+        }
 
-        getData (){
+        getData (){
 
-            return this.data ;
+            return this.data ;
 
-        }
+        }
 
-    }
+    }
 
-    class SingleCircleLink {
+    class SingleCircleLink {
 
-        init () {
+        init () {
 
-            // 第一个节点称为头节点
+            // 第一个节点称为头节点
 
-            this.head = new Node ( "A" );
+            this.head = new Node ( "A" );
 
-            this.head.next = null ;
+            this.head.next = null ;
 
-            var nodeB = new Node ( "B" );
+            var nodeB = new Node ( "B" );
 
-            nodeB.next = null ;
+            nodeB.next = null ;
 
-            this.head.next = nodeB ;
+            this.head.next = nodeB ;
 
-            var nodeC = new Node ( "C" );
+            var nodeC = new Node ( "C" );
 
-            nodeC.next = null ;
+            nodeC.next = null ;
 
-            nodeB.next = nodeC ;
+            nodeB.next = nodeC ;
 
-            // 最后一个节点称为尾节点
+            // 最后一个节点称为尾节点
 
-            this.tail = new Node ( "D" );
+            this.tail = new Node ( "D" );
 
-            this.tail.next = this.head ;
+            this.tail.next = this.head ;
 
-            nodeC.next = this.tail ;
+            nodeC.next = this.tail ;
 
-        }
+        }
 
-        remove ( removePosition ) {
+        remove ( removePosition ) {
 
-            var p = this.head ;
+            var p = this.head ;
 
-            var i = 0 ;
+            var i = 0 ;
 
-            while ( p.next != null && i < removePosition - 1 ) {
+            while ( p.next != null && i < removePosition - 1 ) {
 
-                p = p.next ;
+                p = p.next ;
 
-                i ++;
+                i ++;
 
-            }
+            }
 
-            var temp = p.next ;
+            var temp = p.next ;
 
-            p.next = p.next.next ;
+            p.next = p.next.next ;
 
-            temp.next = null ;
+            temp.next = null ;
 
-        }
+        }
 
-        print () {
+        print () {
 
-            var p = this.head ;
+            var p = this.head ;
 
-            do {
+            do {
 
-                var data = p.getData ();
+                var data = p.getData ();
 
-                document.write ( data + " -> " );
+                document.write ( data + " -> " );
 
-                p = p.next ;
+                p = p.next ;
 
-            } while ( p != this.head );
+            } while ( p != this.head );
 
-            var data = p.getData ();
+            var data = p.getData ();
 
-            document.write ( data + "<br><br>" );
+            document.write ( data + "<br><br>" );
 
-        }
+        }
 
-    }
+    }
 
-    //////////////////////测试////////////////////
+    //////////////////////测试////////////////////
+```
 
-    var singleCircleLink = new SingleCircleLink ();
 
-    singleCircleLink.init ();
 
-    document.write ( "在索引 2 处删除节点 C：<br>" );
+```javascript
+var singleCircleLink = new SingleCircleLink ();
 
-    singleCircleLink.remove ( 2 );
+singleCircleLink.init ();
 
-    singleCircleLink.print ();
+document.write ( "在索引 2 处删除节点 C：<br>" );
+
+singleCircleLink.remove ( 2 );
+
+singleCircleLink.print ();
 
 </script>
+```
 
 结果：
 
@@ -1790,9 +1666,7 @@ UML 图
 
 ## 双向循环链表
 
-双向循环链表：
-
-它是线性表的一种链式存储结构。节点通过两个方向串联起来，并连接成环。每个节点由 `data`、指向前一个节点的 `prev` 和指向后一个节点的 `next` 组成。
+双向循环链表是一种线性表的链式存储结构。节点通过两个方向串联起来，并连接成环。每个节点由 `data`、指向前一个节点的 `prev` 和指向后一个节点的 `next` 组成。
 
 ![](img/Image00062.jpg)
 
@@ -1800,26 +1674,26 @@ UML 图
 
 ![](img/Image00063.jpg)
 
-```
-    class Node {
+```javascript
+class Node {
 
-        constructor ( data , prev , next ){
+    constructor ( data , prev , next ){
 
-            this.data = data ;
+        this.data = data ;
 
-            this.prev = prev ;
+        this.prev = prev ;
 
-            this.next = next ;
+        this.next = next ;
 
-        }
+    }
 
-        getData (){
+    getData (){
 
-            return this.data ;
+        return this.data ;
 
-        }
+    }
 
-    }
+}
 ```
 
 ### 1. 双向循环链表的初始化与遍历输出
@@ -1828,257 +1702,275 @@ UML 图
 
 ![](img/Image00065.jpg)
 
-使用记事本创建 `TestDoubleCircleLink.html`
+使用记事本创建 `TestDoubleCircleLink.html`。
 
-```
+```html
 <script type = "text/javascript" >
 
-    class Node {
+    class Node {
 
-        constructor ( data , prev , next ){
+        constructor ( data , prev , next ){
 
-            this.data = data ;
+            this.data = data ;
 
-            this.prev = prev ;
+            this.prev = prev ;
 
-            this.next = next ;
+            this.next = next ;
 
-        }
+        }
 
-        getData (){
+        getData (){
 
-            return this.data ;
+            return this.data ;
 
-        }
+        }
 
-    }
+    }
 
-    class DoubleCircleLink {
+    class DoubleCircleLink {
 
-        init () {
+        init () {
 
-            // 第一个节点称为头节点
+            // 第一个节点称为头节点
 
-            this.head = new Node ( "A" );
+            this.head = new Node ( "A" );
 
-            this.head.next = null ;
+            this.head.next = null ;
 
-            this.head.prev = null ;
+            this.head.prev = null ;
 
-            var nodeB = new Node ( "B" );
+            var nodeB = new Node ( "B" );
 
-            nodeB.next = null ;
+            nodeB.next = null ;
 
-            nodeB.prev = this.head ;
+            nodeB.prev = this.head ;
 
-            this.head.next = nodeB ;
+            this.head.next = nodeB ;
 
-            var nodeC = new Node ( "C" );
+            var nodeC = new Node ( "C" );
 
-            nodeC.next = null ;
+            nodeC.next = null ;
 
-            nodeC.prev = nodeB ;
+            nodeC.prev = nodeB ;
 
-            nodeB.next = nodeC ;
+            nodeB.next = nodeC ;
 
-            // 最后一个节点称为尾节点
+            // 最后一个节点称为尾节点
 
-            this.tail = new Node ( "D" );
+            this.tail = new Node ( "D" );
 
-            this.tail.next = this.head ;
+            this.tail.next = this.head ;
 
-            this.tail.prev = nodeC ;
+            this.tail.prev = nodeC ;
 
-            nodeC.next = this.tail ;
+            nodeC.next = this.tail ;
 
-            this.head.prev = this.tail ;
+            this.head.prev = this.tail ;
 
-        }
+        }
 
-        print () {
+        print () {
 
-            var p = this.head ;
+            var p = this.head ;
 
-            do {
+            do {
 
-                var data = p.getData ();
+                var data = p.getData ();
 
-                document.write ( data + " -> " );
+                document.write ( data + " -> " );
 
-                p = p.next ;
+                p = p.next ;
 
-            } while ( p != this.head );
+            } while ( p != this.head );
 
-            var data = p.getData ();
+            var data = p.getData ();
 
-            document.write ( data + "<br><br>" );
+            document.write ( data + "<br><br>" );
 
-            p = this.tail ;
+            p = this.tail ;
 
-            do {
+            do {
 
-                data = p.getData ();
+                data = p.getData ();
 
-                document.write ( data + " -> " );
+                document.write ( data + " -> " );
 
-                p = p.prev ;
+                p = p.prev ;
 
-            } while ( p != this.tail );
+            } while ( p != this.tail );
 
-            data = p.getData ();
+            data = p.getData ();
 
-            document.write ( data + "<br><br>" );
+            document.write ( data + "<br><br>" );
 
-        }
+        }
 
-    }
+    }
 
-    //////////////////////测试////////////////////
+    //////////////////////测试////////////////////
 
-    var doubleCircleLink = new DoubleCircleLink ();
+    var doubleCircleLink = new DoubleCircleLink ();
 
-    doubleCircleLink.init ();
+    doubleCircleLink.init ();
 
-    doubleCircleLink.print ();
+    doubleCircleLink.print ();
 
 </script>
+```
 
 结果：
 
 ![](img/Image00066.jpg)
 
-### 3. 在位置 2 插入节点 E
+### 2. 在位置 2 插入节点 E
 
 ![](img/Image00067.jpg)
 
 ![](img/Image00068.jpg)
 
-使用记事本创建 `TestDoubleCircleLinkInsert.html`
+使用记事本创建 `TestDoubleCircleLinkInsert.html`。
 
-```
+```html
 <script type = "text/javascript" >
 
-    class Node {
+    class Node {
 
-        constructor ( data , prev , next ){
+        constructor ( data , prev , next ){
 
-            this.data = data ;
+            this.data = data ;
 
-            this.prev = prev ;
+            this.prev = prev ;
 
-            this.next = next ;
+            this.next = next ;
 
-        }
+        }
 
-        getData (){
+        getData (){
 
-            return this.data ;
+            return this.data ;
 
-        }
+        }
 
-    }
+    }
 
-    class DoubleCircleLink {
+    class DoubleCircleLink {
 
-        init () {
+        init () {
 
-            // 第一个节点称为头节点
+            // 第一个节点称为头节点
 
-            this.head = new Node ( "A" );
+            this.head = new Node ( "A" );
 
-            this.head.next = null ;
+            this.head.next = null ;
 
-            this.head.prev = null ;
+            this.head.prev = null ;
 
-            var nodeB = new Node ( "B" );
+            var nodeB = new Node ( "B" );
 
-            nodeB.next = null ;
+            nodeB.next = null ;
 
-            nodeB.prev = this.head ;
+            nodeB.prev = this.head ;
 
-            this.head.next = nodeB ;
+            this.head.next = nodeB ;
 
-            var nodeC = new Node ( "C" );
+            var nodeC = new Node ( "C" );
 
-            nodeC.next = null ;
+            nodeC.next = null ;
 
-            nodeC.prev = nodeB ;
+            nodeC.prev = nodeB ;
 
-            nodeB.next = nodeC ;
+            nodeB.next = nodeC ;
 
-            // 最后一个节点称为尾节点
+            // 最后一个节点称为尾节点
 
-            this.tail = new Node ( "D" );
+            this.tail = new Node ( "D" );
 
-            this.tail.next = this.head ;
+            this.tail.next = this.head ;
 
-            this.tail.prev = nodeC ;
+            this.tail.prev = nodeC ;
 
-            nodeC.next = this.tail ;
+            nodeC.next = this.tail ;
 
-            this.head.prev = this.tail ;
+            this.head.prev = this.tail ;
 
-        }
+        }
 
-        insert ( insertPosition , newNode ) {
+        insert ( insertPosition , newNode ) {
 
-            var p = this.head ;
+            var p = this.head ;
 
-            var i = 0 ;
+            var i = 0 ;
 
-            // 将节点移动到插入位置
+            // 将节点移动到插入位置
 
-            while ( p.next != null && i < insertPosition - 1 ) {
+            while ( p.next != null && i < insertPosition - 1 ) {
 
-                p = p.next ;
+                p = p.next ;
 
-                i ++;
+                i ++;
 
-            }
+            }
 
-            newNode.next = p.next ;
+            newNode.next = p.next ;
 
-            p.next = newNode ;
+            p.next = newNode ;
 
-            newNode.prev = p ;
+            newNode.prev = p ;
 
-            newNode.next.prev = newNode ;
+            newNode.next.prev = newNode ;
 
-        }
+        }
 
-        print () {
+        print () {
 
-            var p = this.head ;
+            var p = this.head ;
 
-            do {
+            do {
 
-                var data = p.getData ();
-```
+                var data = p.getData ();
 
+                document.write ( data + " -> " );
 
+                p = p.next ;
 
-```
-document.write ( data + " -> " );
-p = p.next ;
-} while ( p != this.head );
-var data = p.getData ();
-document.write ( data + "<br><br>" );
-p = this.tail ;
-do {
-    data = p.getData ();
-    document.write ( data + " -> " );
-    p = p.prev ;
-} while ( p != this.tail );
-data = p.getData ();
-document.write ( data + "<br><br>" );
-}
-}
-//////////////////////testing////////////////////
-var doubleCircleLink = new DoubleCircleLink ();
-doubleCircleLink.init ();
-document.write ( "Insert a new E at index = 2 : <br>" );
-doubleCircleLink.insert ( 2 , new Node ( "E" ));
-doubleCircleLink.print ();
+            } while ( p != this.head );
+
+            var data = p.getData ();
+
+            document.write ( data + "<br><br>" );
+
+            p = this.tail ;
+
+            do {
+
+                data = p.getData ();
+
+                document.write ( data + " -> " );
+
+                p = p.prev ;
+
+            } while ( p != this.tail );
+
+            data = p.getData ();
+
+            document.write ( data + "<br><br>" );
+
+        }
+
+    }
+
+    //////////////////////testing////////////////////
+
+    var doubleCircleLink = new DoubleCircleLink ();
+
+    doubleCircleLink.init ();
+
+    document.write ( "Insert a new E at index = 2 : <br>" );
+
+    doubleCircleLink.insert ( 2 , new Node ( "E" ));
+
+    doubleCircleLink.print ();
+
 </script>
 ```
 
@@ -2086,85 +1978,155 @@ doubleCircleLink.print ();
 
 ![](img/Image00069.jpg)
 
-4. 删除索引为 2 的节点。
+### 3. 删除索引为 2 的节点
 
 ![](img/Image00070.jpg)
 
 ![](img/Image00071.jpg)
 
-使用记事本创建一个 `TestDoubleCircleLinkDelete.html` 文件
+使用记事本创建一个 `TestDoubleCircleLinkDelete.html` 文件。
 
-```
+```html
 <script type = "text/javascript" >
+
     class Node {
+
         constructor ( data , prev , next ){
+
             this.data = data ;
+
             this.prev = prev ;
+
             this.next = next ;
+
         }
+
         getData (){
+
             return this.data ;
+
         }
+
     }
+
     class DoubleCircleLink {
+
         init () {
+
             // the first node called head node
+
             this.head = new Node ( "A" );
+
             this.head.next = null ;
+
             this.head.prev = null ;
+
             var nodeB = new Node ( "B" );
+
             nodeB.next = null ;
+
             nodeB.prev = this.head ;
+
             this.head.next = nodeB ;
+
             var nodeC = new Node ( "C" );
+
             nodeC.next = null ;
+
             nodeC.prev = nodeB ;
+
             nodeB.next = nodeC ;
+
             // the last node called tail node
+
             this.tail = new Node ( "D" );
+
             this.tail.next = this.head ;
+
             this.tail.prev = nodeC ;
+
             nodeC.next = this.tail ;
+
             this.head.prev = this.tail ;
+
         }
+
         remove ( removePosition ) {
+
             var p = this.head ;
+
             var i = 0 ;
+
             while ( p.next != null && i < removePosition - 1 ) {
+
                 p = p.next ;
+
                 i ++;
+
             }
+
             var temp = p.next ;
+
             p.next = p.next.next ;
+
             p.next.prev = p ;
+
             temp.next = null ; //Set the delete node next to null
+
             temp.prev = null ; // Set the delete node prev to null
+
         }
+
         print () {
+
             var p = this.head ;
+
             do {
+
                 var data = p.getData ();
+
                 document.write ( data + " -> " );
+
                 p = p.next ;
+
             } while ( p != this.head );
+
             var data = p.getData ();
+
             document.write ( data + "<br><br>" );
+
             p = this.tail ;
+
             do {
+
                 data = p.getData ();
+
                 document.write ( data + " -> " );
+
                 p = p.prev ;
+
             } while ( p != this.tail );
+
             data = p.getData ();
+
             document.write ( data + "<br><br>" );
+
         }
+
     }
+
     //////////////////////testing////////////////////
+
     var doubleCircleLink = new DoubleCircleLink ();
+
     doubleCircleLink.init ();
+
     document.write ( "Delete a node C at index = 2 : <br>" );
+
     doubleCircleLink.remove ( 2 );
+
     doubleCircleLink.print ();
+
 </script>
 ```
 
@@ -2174,109 +2136,135 @@ doubleCircleLink.print ();
 
 ## 队列
 
-队列：
-
-FIFO（先进先出）序列。
+队列是一个 FIFO（先进先出）序列。
 
 ![](img/Image00073.jpg)
 
-UML 图
+### UML 图
 
 ![](img/Image00074.jpg)
 
-```
+```javascript
 class Node {
+
     constructor ( data , prev , next ){
+
         this.data = data ;
+
         this.prev = prev ;
+
         this.next = next ;
+
     }
+
     getData (){
+
         return this.data ;
+
     }
+
 }
 ```
 
-1. 队列初始化与遍历输出。
 
-初始化插入 A
+
+# 1. 队列初始化与遍历输出
+
+初始化插入 A。
 
 ![](img/Image00075.jpg)
 
-初始化插入 B
+初始化插入 B。
 
 ![](img/Image00076.jpg)
 
-初始化插入 C
+初始化插入 C。
 
 ![](img/Image00077.jpg)
 
-初始化插入 D
+初始化插入 D。
 
 ![](img/Image00078.jpg)
 
-使用记事本创建一个 `TestQueue.html` 文件
+使用记事本创建一个 `TestQueue.html` 文件。
 
-```
-<script type = "text/javascript" >
+```html
+<script type="text/javascript">
     class Node {
-        constructor ( data , prev , next ){
-            this.data = data ;
-            this.prev = prev ;
-            this.next = next ;
+        constructor(data, prev, next) {
+            this.data = data;
+            this.prev = prev;
+            this.next = next;
         }
-        getData (){
-            return this.data ;
+
+        getData() {
+            return this.data;
         }
     }
+
     class Queue {
-        constructor (){
-            this.head = null ;
-            this.tail = null ;
-            this.size = 0 ;
+        constructor() {
+            this.head = null;
+            this.tail = null;
+            this.size = 0;
         }
-        offer ( element ) {
-            if ( this.head == null ) {
-                this.head = new Node ( element );
-                this.tail = this.head ;
+
+        offer(element) {
+            if (this.head == null) {
+                this.head = new Node(element);
+                this.tail = this.head;
             } else {
-                var newNode = new Node ( element );
-                newNode.next = this.tail ;
-                this.tail.prev = newNode ;
-                this.tail = newNode ;
+                var newNode = new Node(element);
+                newNode.next = this.tail;
+                this.tail.prev = newNode;
+                this.tail = newNode;
             }
-            this.size ++;
+
+            this.size++;
         }
-        poll () {
-            var p = this.head ;
-            if ( p == null ) {
-                return null ;
+
+        poll() {
+            var p = this.head;
+
+            if (p == null) {
+                return null;
             }
-            this.head = this.head.prev ;
-            p.next = null ;
-            p.prev = null ;
-            this.size --;
-            return p ;
+
+            this.head = this.head.prev;
+            p.next = null;
+            p.prev = null;
+            this.size--;
+
+            return p;
         }
-        size () {
-            return this.size ;
+
+        size() {
+            return this.size;
         }
     }
+
     //////////////////////testing////////////////////
-    function print ( queue ) {
-        document.write ( "Head " );
-        var node = null ;
-        while (( node = queue.poll ())!= null ) {
-            document.write ( node.getData () + " <- " );
+
+    function print(queue) {
+        document.write("Head ");
+
+        var node = null;
+
+        while ((node = queue.poll()) != null) {
+            document.write(node.getData() + " <- ");
         }
-        document.write ( "Tail <br>" );
+
+        document.write("Tail <br>");
     }
-    var queue = new Queue ();
-    queue.offer ( "A" );
-    queue.offer ( "B" );
-    queue.offer ( "C" );
-    queue.offer ( "D" );
-    print ( queue );
+
+    var queue = new Queue();
+
+    queue.offer("A");
+    queue.offer("B");
+    queue.offer("C");
+    queue.offer("D");
+
+    print(queue);
 </script>
 ```
 
@@ -2284,7 +2272,7 @@ class Node {
 
 ![](img/Image00079.jpg)
 
-## 栈
+# 栈
 
 栈：
 
@@ -2292,33 +2280,34 @@ FILO（先进后出）序列。
 
 ![](img/Image00080.jpg)
 
-UML 图
+## UML 图
 
 ![](img/Image00081.jpg)
 
-```
+```javascript
 class Node {
-    constructor ( data , next ){
-        this.data = data ;
-        this.next = next ;
+    constructor(data, next) {
+        this.data = data;
+        this.next = next;
     }
-    getData (){
-        return this.data ;
+
+    getData() {
+        return this.data;
     }
 }
 ```
 
-1. 栈初始化与遍历输出。
+## 1. 栈初始化与遍历输出
 
-将 A 压入栈
+将 A 压入栈。
 
 ![](img/Image00082.jpg)
 
-将 B 压入栈
+将 B 压入栈。
 
 ![](img/Image00083.jpg)
 
-将 C 压入栈
+将 C 压入栈。
 
 ![](img/Image00084.jpg)
 
@@ -2330,63 +2319,79 @@ class Node {
 
 ![](img/Image00086.jpg)
 
-使用记事本创建一个 `TestStack.html` 文件
+使用记事本创建一个 `TestStack.html` 文件。
 
-```
-<script type = "text/javascript" >
+```html
+<script type="text/javascript">
     class Node {
-        constructor ( data , next ){
-            this.data = data ;
-            this.next = next ;
+        constructor(data, next) {
+            this.data = data;
+            this.next = next;
         }
-        getData (){
-            return this.data ;
+
+        getData() {
+            return this.data;
         }
     }
+
     class Stack {
-        constructor (){
-            this.top = null ;
-            this.size = 0 ;
+        constructor() {
+            this.top = null;
+            this.size = 0;
         }
-        push ( element ) {
-            if ( this.top == null ) {
-                this.top = new Node ( element );
+
+        push(element) {
+            if (this.top == null) {
+                this.top = new Node(element);
             } else {
-                var newNode = new Node ( element );
-                newNode.next = this.top ;
-                this.top = newNode ;
+                var newNode = new Node(element);
+                newNode.next = this.top;
+                this.top = newNode;
             }
-            this.size ++;
+
+            this.size++;
         }
-        pop () {
-            if ( this.top == null ){
-                return null ;
+
+        pop() {
+            if (this.top == null) {
+                return null;
             }
-            var p = this.top ;
-            this.top = this.top.next ; // top move down
-            p.next = null ;
-            this.size --;
-            return p ;
+
+            var p = this.top;
+            this.top = this.top.next; // top move down
+            p.next = null;
+            this.size--;
+
+            return p;
         }
-        size () {
-            return this.size ;
+
+        size() {
+            return this.size;
         }
     }
+
     //////////////////////testing////////////////////
-    function print ( stack ) {
-        document.write ( "Top " );
-        var node = null ;
-        while (( node = stack.pop ())!= null ) {
-            document.write ( node.getData () + " -> " );
+
+    function print(stack) {
+        document.write("Top ");
+
+        var node = null;
+
+        while ((node = stack.pop()) != null) {
+            document.write(node.getData() + " -> ");
         }
-        document.write ( "End <br>" );
+
+        document.write("End <br>");
     }
-    var stack = new Stack ();
-    stack.push ( "A" );
-    stack.push ( "B" );
-    stack.push ( "C" );
-    stack.push ( "D" );
-    print ( stack );
+
+    var stack = new Stack();
+
+    stack.push("A");
+    stack.push("B");
+    stack.push("C");
+    stack.push("D");
+
+    print(stack);
 </script>
 ```
 
@@ -2394,33 +2399,35 @@ class Node {
 
 ![](img/Image00087.jpg)
 
-## 递归算法
+# 递归算法
 
 递归算法：
 
-
-
-
 程序函数自身调用自身，层层递进，直到满足某个条件，再逐步返回至结束。
 
-1. n 的阶乘：`n*(n-1)*(n-2) ...... *2*1`
+## 1. n 的阶乘
 
-使用记事本创建 `TestRecursive.html`
+`n*(n-1)*(n-2) ...... *2*1`
+
+使用记事本创建 `TestRecursive.html`。
 
 ```html
-<script type = "text/javascript" >
-    function factorial ( n ) {
-        if ( n == 1 ) {
-            return 1 ;
+<script type="text/javascript">
+    function factorial(n) {
+        if (n == 1) {
+            return 1;
         } else {
             // 递归调用自身，直到返回结束
-            return factorial ( n - 1 ) * n ;
+            return factorial(n - 1) * n;
         }
     }
+
     //////////////////////测试////////////////////
-    var n = 5 ;
-    var fac = factorial ( n );
-    document.write ( "5 的阶乘是：" + fac );
+
+    var n = 5;
+    var fac = factorial(n);
+
+    document.write("5 的阶乘是：" + fac);
 </script>
 ```
 
@@ -2434,69 +2441,83 @@ class Node {
 
 ![](img/Image00090.jpg)
 
-## 二路归并算法
+# 二路归并算法
 
 二路归并算法：
 
 将前半部分和后半部分的数据分别排序，再将两个有序子列表合并成一个有序列表，如此递归直至结束。
 
-1. 对分数 {50, 65, 99, 87, 74, 63, 76, 100} 进行归并排序
+## 1. 对分数 {50, 65, 99, 87, 74, 63, 76, 100} 进行归并排序
 
 ![](img/Image00091.jpg)
 
-使用记事本创建 `TestMergeSort.html`
+使用记事本创建 `TestMergeSort.html`。
 
 ```html
-<script type = "text/javascript" >
+<script type="text/javascript">
     class MergeSort {
-        sort ( array ) {
-            var temp = new Array ( array.length );
-            this.mergeSort ( array , temp , 0 , array.length - 1 );
+        sort(array) {
+            var temp = new Array(array.length);
+            this.mergeSort(array, temp, 0, array.length - 1);
         }
-        mergeSort ( array , temp , left , right ) {
-            if ( left < right ) {
-                var center = parseInt (( left + right ) / 2 );
-                this.mergeSort ( array , temp , left , center ); // 左半部分归并排序
-                this.mergeSort ( array , temp , center + 1 , right ); // 右半部分归并排序
-                this.merge ( array , temp , left , center + 1 , right ); // 合并两个有序数组
+
+        mergeSort(array, temp, left, right) {
+            if (left < right) {
+                var center = parseInt((left + right) / 2);
+
+                this.mergeSort(array, temp, left, center); // 左半部分归并排序
+                this.mergeSort(array, temp, center + 1, right); // 右半部分归并排序
+                this.merge(array, temp, left, center + 1, right); // 合并两个有序数组
             }
         }
+
         /**
          将两个有序列表合并成一个有序列表
+
          temp : 临时数组
          left :    左侧起始下标
          right :  右侧起始下标
          rightEndIndex : 右侧结束下标
          */
-        merge ( array , temp , left , right , rightEndIndex ) {
-            var leftEndIndex = right - 1 ; // 左侧结束下标
-            var tempIndex = left ; // 从左侧开始计数
-            var elementNumber = rightEndIndex - left + 1 ;
-            while ( left <= leftEndIndex && right <= rightEndIndex ) {
-                if ( array [ left ] <= array [ right ])
-                    temp [ tempIndex ++] = array [ left ++];
-                else
-                    temp [ tempIndex ++] = array [ right ++];
+
+        merge(array, temp, left, right, rightEndIndex) {
+            var leftEndIndex = right - 1; // 左侧结束下标
+            var tempIndex = left; // 从左侧开始计数
+            var elementNumber = rightEndIndex - left + 1;
+
+            while (left <= leftEndIndex && right <= rightEndIndex) {
+                if (array[left] <= array[right]) {
+                    temp[tempIndex++] = array[left++];
+                } else {
+                    temp[tempIndex++] = array[right++];
+                }
             }
-            while ( left <= leftEndIndex ) { // 如果左侧还有元素
-                temp [ tempIndex ++] = array [ left ++];
+
+            while (left <= leftEndIndex) { // 如果左侧还有元素
+                temp[tempIndex++] = array[left++];
             }
-            while ( right <= rightEndIndex ) { // 如果右侧还有元素
-                temp [ tempIndex ++] = array [ right ++];
+
+            while (right <= rightEndIndex) { // 如果右侧还有元素
+                temp[tempIndex++] = array[right++];
             }
+
             // 将 temp 复制回 array
-            for ( var i = 0 ; i < elementNumber ; i ++) {
-                array [ rightEndIndex ] = temp [ rightEndIndex ];
-                rightEndIndex --;
+            for (var i = 0; i < elementNumber; i++) {
+                array[rightEndIndex] = temp[rightEndIndex];
+                rightEndIndex--;
             }
         }
     }
+
     //////////////////////测试////////////////////
-    var scores = [ 50 , 65 , 99 , 87 , 74 , 63 , 76 , 100 , 92 ];
-    var mergeSort = new MergeSort ();
-    mergeSort.sort ( scores );
-    for ( var i = 0 ; i < scores.length ; i ++) {
-        document.write ( scores [ i ] + "," );
+
+    var scores = [50, 65, 99, 87, 74, 63, 76, 100, 92];
+    var mergeSort = new MergeSort();
+
+    mergeSort.sort(scores);
+
+    for (var i = 0; i < scores.length; i++) {
+        document.write(scores[i] + ",");
     }
 </script>
 ```
@@ -2505,13 +2526,13 @@ class Node {
 
 ![](img/Image00092.jpg)
 
-## 快速排序算法
+# 快速排序算法
 
 快速排序算法：
 
 将数组分成两个子数组，然后递归调用自身，对子数组进行快速排序，直至结束。
 
-1. 对分数 {90, 60, 50, 80, 70, 100} 进行快速排序
+## 1. 对分数 {90, 60, 50, 80, 70, 100} 进行快速排序
 
 ![](img/Image00093.jpg)
 
@@ -2521,54 +2542,80 @@ class Node {
 
 ![](img/Image00096.jpg)
 
-使用记事本创建 `TestQuickSort.html`
+使用记事本创建 `TestQuickSort.html`。
 
 ```html
-<script type = "text/javascript" >
+<script type="text/javascript">
     class QuickSort {
-        sort ( array ) {
-            if ( array.length > 0 ) {
-                this.quickSort ( array , 0 , array.length - 1 );
+        sort(array) {
+            if (array.length > 0) {
+                this.quickSort(array, 0, array.length - 1);
             }
         }
-        quickSort ( array , low , high ) {
-            if ( low > high ) {
-                return ;
+
+        quickSort(array, low, high) {
+            if (low > high) {
+                return;
             }
-            var i = low ;
-            var j = high ;
-            var threshold = array [ low ];
+
+            var i = low;
+            var j = high;
+            var threshold = array[low];
+
             // 从列表两端交替扫描
-            while ( i < j ) {
+
+            while (i < j) {
                 // 从右向左找到第一个小于阈值的位置
-                while ( i < j && array [ j ] > threshold ) {
-                    j --;
+                while (i < j && array[j] > threshold) {
+                    j--;
                 }
+
                 // 将比阈值小的数替换到低位
-                if ( i < j )
-                    array [ i ++] = array [ j ];
-                // 从左向右找到第一个大于阈值的位置
-                while ( i < j && array [ i ] <= threshold ) {
-                    i ++;
+                if (i < j) {
+                    array[i++] = array[j];
                 }
+
+                // 从左向右找到第一个大于阈值的位置
+                while (i < j && array[i] <= threshold) {
+                    i++;
+                }
+```
+
+
+
+```javascript
+}
+
                 // 将比阈值大的数替换到高位
-                if ( i < j )
-                    array [ j --] = array [ i ];
+                if (i < j)
+                    array[j--] = array[i];
+
             }
-            array [ i ] = threshold ;
+
+            array[i] = threshold;
+
             // 左侧快速排序
-            this.quickSort ( array , low , i - 1 );
+            this.quickSort(array, low, i - 1);
+
             // 右侧快速排序
-            this.quickSort ( array , i + 1 , high );
+            this.quickSort(array, i + 1, high);
+
         }
+
     }
+
     //////////////////////测试////////////////////
-    var scores = [ 90 , 60 , 50 , 80 , 70 , 100 ];
-    var quickSort = new QuickSort ();
-    quickSort.sort ( scores );
-    for ( var i = 0 ; i < scores.length ; i ++) {
-        document.write ( scores [ i ] + "," );
+
+    var scores = [90, 60, 50, 80, 70, 100];
+
+    var quickSort = new QuickSort();
+
+    quickSort.sort(scores);
+
+    for (var i = 0; i < scores.length; i++) {
+        document.write(scores[i] + ",");
     }
+
 </script>
 ```
 
@@ -2586,64 +2633,65 @@ class Node {
 
 ![](img/Image00098.jpg)
 
-节点 UML 图
+节点 UML 图：
 
 ![](img/Image00099.jpg)
 
 ```javascript
 class Node {
-    constructor ( data , left , right ){
-        this.data = data ;
-        this.left = left ;
-        this.right = right ;
+    constructor(data, left, right) {
+        this.data = data;
+        this.left = left;
+        this.right = right;
     }
-    getData (){
-        return this.data ;
+
+    getData() {
+        return this.data;
     }
 }
 ```
 
-1. 构建二叉搜索树，插入节点
+### 1. 构建二叉搜索树，插入节点
 
 插入的节点从根节点开始比较，若小于根节点则与根节点的左子树比较，否则与右子树比较，直到左子树为空或右子树为空，然后插入。
 
-插入 60
+插入 60：
 
 ![](img/Image00100.jpg)
 
-插入 40
+插入 40：
 
 ![](img/Image00101.jpg)
 
-插入 20
+插入 20：
 
 ![](img/Image00102.jpg)
 
-插入 10
+插入 10：
 
 ![](img/Image00103.jpg)
 
-插入 30
+插入 30：
 
 ![](img/Image00104.jpg)
 
-插入 50
+插入 50：
 
 ![](img/Image00105.jpg)
 
-插入 80
+插入 80：
 
 ![](img/Image00106.jpg)
 
-插入 70
+插入 70：
 
 ![](img/Image00107.jpg)
 
-插入 90
+插入 90：
 
 ![](img/Image00108.jpg)
 
-2. 二叉搜索树的中序遍历
+### 2. 二叉搜索树的中序遍历
 
 中序遍历：左子树 -> 根节点 -> 右子树
 
@@ -2653,102 +2701,115 @@ class Node {
 
 ![](img/Image00110.jpg)
 
-使用记事本创建 `TestBinarySearchTreeInOrder.html`
+使用记事本创建 `TestBinarySearchTreeInOrder.html`。
 
 ```html
-<script type = "text/javascript" >
+<script type="text/javascript">
     class BinaryTree {
-        getRoot () {
-            return this.root ;
+        getRoot() {
+            return this.root;
         }
+
         // 中序遍历二叉搜索树
-        inOrder ( root ) {
-            if ( root == null ) {
-                return ;
+        inOrder(root) {
+            if (root == null) {
+                return;
             }
-            this.inOrder ( root.left ); // 遍历左子树
-            document.write ( root.getData () + ", " );
-            this.inOrder ( root.right ); // 遍历右子树
+
+            this.inOrder(root.left); // 遍历左子树
+            document.write(root.getData() + ", ");
+            this.inOrder(root.right); // 遍历右子树
         }
-        insert ( node , newData ) {
-            if ( this.root == null ) {
-                this.root = new Node ( newData , null , null );
-                return ;
+
+        insert(node, newData) {
+            if (this.root == null) {
+                this.root = new Node(newData, null, null);
+                return;
             }
-            var compareValue = newData - node.getData ();
+
+            var compareValue = newData - node.getData();
+
             // 递归左子树，继续查找插入位置
 </script>
 ```
 
-
-
-
-
-### 1. 中序遍历二叉搜索树
+### 3. 中序遍历二叉搜索树
 
 使用记事本创建一个 `TestBinarySearchTreeInOrder.html` 文件。
 
 ```html
-<script type = "text/javascript" >
+<script type="text/javascript">
     class BinaryTree {
-        getRoot () {
-            return this.root ;
+        getRoot() {
+            return this.root;
         }
+
         //In-order traversal binary search tree
-        inOrder ( root ) {
-            if ( root == null ) {
-                return ;
+        inOrder(root) {
+            if (root == null) {
+                return;
             }
-            this.inOrder ( root.left ); // Recursive Traversing the left subtree
-            document.write ( root.getData () + ", " );
-            this.inOrder ( root.right ); // Recursive Traversing the right subtree
+
+            this.inOrder(root.left); // Recursive Traversing the left subtree
+            document.write(root.getData() + ", ");
+            this.inOrder(root.right); // Recursive Traversing the right subtree
         }
-        insert ( node , newData ) {
-            if ( this.root == null ) {
-                this.root = new Node ( newData , null , null );
-                return ;
+
+        insert(node, newData) {
+            if (this.root == null) {
+                this.root = new Node(newData, null, null);
+                return;
             }
-            var compareValue = newData - node.getData ();
+
+            var compareValue = newData - node.getData();
+
             //Recursive left subtree, continue to find the insertion position
-            if ( compareValue < 0 ) {
-                if ( node.left == null ) {
-                    node.left = new Node ( newData , null , null );
+            if (compareValue < 0) {
+                if (node.left == null) {
+                    node.left = new Node(newData, null, null);
                 } else {
-                    this.insert ( node.left , newData );
+                    this.insert(node.left, newData);
                 }
-            } else if ( compareValue > 0 ) { ////Recursive right subtree, continue to find the insertion position
-                if ( node.right == null ) {
-                    node.right = new Node ( newData , null , null );
+            } else if (compareValue > 0) {
+                ////Recursive right subtree, continue to find the insertion position
+                if (node.right == null) {
+                    node.right = new Node(newData, null, null);
                 } else {
-                    this.insert ( node.right , newData );
+                    this.insert(node.right, newData);
                 }
             }
         }
     }
+
     class Node {
-        constructor ( data , left , right ){
-            this.data = data ;
-            this.left = left ;
-            this.right = right ;
+        constructor(data, left, right) {
+            this.data = data;
+            this.left = left;
+            this.right = right;
         }
-        getData (){
-            return this.data ;
+
+        getData() {
+            return this.data;
         }
     }
+
     //////////////////////testing////////////////////
-    var binaryTree = new BinaryTree ();
+
+    var binaryTree = new BinaryTree();
+
     //Constructing a binary search tree
-    binaryTree.insert ( binaryTree.getRoot (), 60 );
-    binaryTree.insert ( binaryTree.getRoot (), 40 );
-    binaryTree.insert ( binaryTree.getRoot (), 20 );
-    binaryTree.insert ( binaryTree.getRoot (), 10 );
-    binaryTree.insert ( binaryTree.getRoot (), 30 );
-    binaryTree.insert ( binaryTree.getRoot (), 50 );
-    binaryTree.insert ( binaryTree.getRoot (), 80 );
-    binaryTree.insert ( binaryTree.getRoot (), 70 );
-    binaryTree.insert ( binaryTree.getRoot (), 90 );
-    document.write ( "<br> In-order traversal binary search tree <br>" );
-    binaryTree.inOrder ( binaryTree.getRoot ());
+    binaryTree.insert(binaryTree.getRoot(), 60);
+    binaryTree.insert(binaryTree.getRoot(), 40);
+    binaryTree.insert(binaryTree.getRoot(), 20);
+    binaryTree.insert(binaryTree.getRoot(), 10);
+    binaryTree.insert(binaryTree.getRoot(), 30);
+    binaryTree.insert(binaryTree.getRoot(), 50);
+    binaryTree.insert(binaryTree.getRoot(), 80);
+    binaryTree.insert(binaryTree.getRoot(), 70);
+    binaryTree.insert(binaryTree.getRoot(), 90);
+
+    document.write("<br> In-order traversal binary search tree <br>");
+    binaryTree.inOrder(binaryTree.getRoot());
 </script>
 ```
 
@@ -2756,7 +2817,7 @@ class Node {
 
 ![](img/Image00111.jpg)
 
-### 2. 二叉搜索树前序遍历
+### 4. 二叉搜索树前序遍历
 
 前序遍历：根节点 -> 左子树 -> 右子树
 
@@ -2769,66 +2830,78 @@ class Node {
 使用记事本创建一个 `TestBinarySearchTreePreOrder.html` 文件。
 
 ```html
-<script type = "text/javascript" >
+<script type="text/javascript">
     class BinaryTree {
-        getRoot () {
-            return this.root ;
+        getRoot() {
+            return this.root;
         }
+
         //Preorder traversal binary search tree
-        preOrder ( root ) {
-            if ( root == null ) {
-                return ;
+        preOrder(root) {
+            if (root == null) {
+                return;
             }
-            document.write ( root.getData () + ", " );
-            this.preOrder ( root.left ); // Recursive Traversing the left subtree
-            this.preOrder ( root.right ); // Recursive Traversing the right subtree
+
+            document.write(root.getData() + ", ");
+            this.preOrder(root.left); // Recursive Traversing the left subtree
+            this.preOrder(root.right); // Recursive Traversing the right subtree
         }
-        insert ( node , newData ) {
-            if ( this.root == null ) {
-                this.root = new Node ( newData , null , null );
-                return ;
+
+        insert(node, newData) {
+            if (this.root == null) {
+                this.root = new Node(newData, null, null);
+                return;
             }
-            var compareValue = newData - node.getData ();
+
+            var compareValue = newData - node.getData();
+
             //Recursive left subtree, continue to find the insertion position
-            if ( compareValue < 0 ) {
-                if ( node.left == null ) {
-                    node.left = new Node ( newData , null , null );
+            if (compareValue < 0) {
+                if (node.left == null) {
+                    node.left = new Node(newData, null, null);
                 } else {
-                    this.insert ( node.left , newData );
+                    this.insert(node.left, newData);
                 }
-            } else if ( compareValue > 0 ) { ////Recursive right subtree, continue to find the insertion position
-                if ( node.right == null ) {
-                    node.right = new Node ( newData , null , null );
+            } else if (compareValue > 0) {
+                ////Recursive right subtree, continue to find the insertion position
+                if (node.right == null) {
+                    node.right = new Node(newData, null, null);
                 } else {
-                    this.insert ( node.right , newData );
+                    this.insert(node.right, newData);
                 }
             }
         }
     }
+
     class Node {
-        constructor ( data , left , right ){
-            this.data = data ;
-            this.left = left ;
-            this.right = right ;
+        constructor(data, left, right) {
+            this.data = data;
+            this.left = left;
+            this.right = right;
         }
-        getData (){
-            return this.data ;
+
+        getData() {
+            return this.data;
         }
     }
+
     //////////////////////testing////////////////////
-    var binaryTree = new BinaryTree ();
+
+    var binaryTree = new BinaryTree();
+
     //Constructing a binary search tree
-    binaryTree.insert ( binaryTree.getRoot (), 60 );
-    binaryTree.insert ( binaryTree.getRoot (), 40 );
-    binaryTree.insert ( binaryTree.getRoot (), 20 );
-    binaryTree.insert ( binaryTree.getRoot (), 10 );
-    binaryTree.insert ( binaryTree.getRoot (), 30 );
-    binaryTree.insert ( binaryTree.getRoot (), 50 );
-    binaryTree.insert ( binaryTree.getRoot (), 80 );
-    binaryTree.insert ( binaryTree.getRoot (), 70 );
-    binaryTree.insert ( binaryTree.getRoot (), 90 );
-    document.write ( "<br> Pre-order traversal binary search tree <br>" );
-    binaryTree.preOrder ( binaryTree.getRoot ());
+    binaryTree.insert(binaryTree.getRoot(), 60);
+    binaryTree.insert(binaryTree.getRoot(), 40);
+    binaryTree.insert(binaryTree.getRoot(), 20);
+    binaryTree.insert(binaryTree.getRoot(), 10);
+    binaryTree.insert(binaryTree.getRoot(), 30);
+    binaryTree.insert(binaryTree.getRoot(), 50);
+    binaryTree.insert(binaryTree.getRoot(), 80);
+    binaryTree.insert(binaryTree.getRoot(), 70);
+    binaryTree.insert(binaryTree.getRoot(), 90);
+
+    document.write("<br> Pre-order traversal binary search tree <br>");
+    binaryTree.preOrder(binaryTree.getRoot());
 </script>
 ```
 
@@ -2836,7 +2909,7 @@ class Node {
 
 ![](img/Image00114.jpg)
 
-### 3. 二叉搜索树后序遍历
+### 5. 二叉搜索树后序遍历
 
 后序遍历：右子树 -> 根节点 -> 左子树
 
@@ -2849,67 +2922,83 @@ class Node {
 使用记事本创建一个 `TestBinarySearchTreePostOrder.html` 文件。
 
 ```html
-<script type = "text/javascript" >
+<script type="text/javascript">
     class BinaryTree {
-        getRoot () {
-            return this.root ;
+        getRoot() {
+            return this.root;
         }
+
         //Post-order traversal binary search tree
-        postOrder ( root ) {
-            if ( root == null ) {
-                return ;
+        postOrder(root) {
+            if (root == null) {
+                return;
             }
-            this.postOrder ( root.left ); // Recursive Traversing the left subtree
-            this.postOrder ( root.right ); // Recursive Traversing the right subtree
-            document.write ( root.getData () + ", " );
+
+
+
+```javascript
+this.postOrder(root.left); // Recursive Traversing the left subtree
+
+this.postOrder(root.right); // Recursive Traversing the right subtree
+
+document.write(root.getData() + ", ");
+}
+
+insert(node, newData) {
+    if (this.root == null) {
+        this.root = new Node(newData, null, null);
+        return;
+    }
+
+    var compareValue = newData - node.getData();
+
+    // Recursive left subtree, continue to find the insertion position
+    if (compareValue < 0) {
+        if (node.left == null) {
+            node.left = new Node(newData, null, null);
+        } else {
+            this.insert(node.left, newData);
         }
-        insert ( node , newData ) {
-            if ( this.root == null ) {
-                this.root = new Node ( newData , null , null );
-                return ;
-            }
-            var compareValue = newData - node.getData ();
-            //Recursive left subtree, continue to find the insertion position
-            if ( compareValue < 0 ) {
-                if ( node.left == null ) {
-                    node.left = new Node ( newData , null , null );
-                } else {
-                    this.insert ( node.left , newData );
-                }
-            } else if ( compareValue > 0 ) { ////Recursive right subtree, continue to find the insertion position
-                if ( node.right == null ) {
-                    node.right = new Node ( newData , null , null );
-                } else {
-                    this.insert ( node.right , newData );
-                }
-            }
+    } else if (compareValue > 0) {
+        // Recursive right subtree, continue to find the insertion position
+        if (node.right == null) {
+            node.right = new Node(newData, null, null);
+        } else {
+            this.insert(node.right, newData);
         }
     }
-    class Node {
-        constructor ( data , left , right ){
-            this.data = data ;
-            this.left = left ;
-            this.right = right ;
-        }
-        getData (){
-            return this.data ;
-        }
+}
+}
+
+class Node {
+    constructor(data, left, right) {
+        this.data = data;
+        this.left = left;
+        this.right = right;
     }
-    //////////////////////testing////////////////////
-    var binaryTree = new BinaryTree ();
-    //Constructing a binary search tree
-    binaryTree.insert ( binaryTree.getRoot (), 60 );
-    binaryTree.insert ( binaryTree.getRoot (), 40 );
-    binaryTree.insert ( binaryTree.getRoot (), 20 );
-    binaryTree.insert ( binaryTree.getRoot (), 10 );
-    binaryTree.insert ( binaryTree.getRoot (), 30 );
-    binaryTree.insert ( binaryTree.getRoot (), 50 );
-    binaryTree.insert ( binaryTree.getRoot (), 80 );
-    binaryTree.insert ( binaryTree.getRoot (), 70 );
-    binaryTree.insert ( binaryTree.getRoot (), 90 );
-    document.write ( "<br> Post-order traversal binary search tree <br>" );
-    binaryTree.postOrder ( binaryTree.getRoot ());
-</script>
+
+    getData() {
+        return this.data;
+    }
+}
+
+// Testing
+var binaryTree = new BinaryTree();
+
+// Constructing a binary search tree
+binaryTree.insert(binaryTree.getRoot(), 60);
+binaryTree.insert(binaryTree.getRoot(), 40);
+binaryTree.insert(binaryTree.getRoot(), 20);
+binaryTree.insert(binaryTree.getRoot(), 10);
+binaryTree.insert(binaryTree.getRoot(), 30);
+binaryTree.insert(binaryTree.getRoot(), 50);
+binaryTree.insert(binaryTree.getRoot(), 80);
+binaryTree.insert(binaryTree.getRoot(), 70);
+binaryTree.insert(binaryTree.getRoot(), 90);
+
+document.write("<br> Post-order traversal binary search tree <br>");
+
+binaryTree.postOrder(binaryTree.getRoot());
 ```
 
 结果：
@@ -2926,117 +3015,108 @@ class Node {
 
 ![](img/Image00119.jpg)
 
-使用记事本创建一个 `TestBinarySearchTreeMaxMinValue.html` 文件。
+使用记事本创建一个`TestBinarySearchTreeMaxMinValue.html`文件。
 
 ```html
-<script type = "text/javascript" >
-    class BinaryTree {
-        getRoot () {
-            return this.root ;
+<script type="text/javascript">
+class BinaryTree {
+    getRoot() {
+        return this.root;
+    }
+
+    // Minimum value
+    searchMinValue(node) {
+        if (node == null || node.getData() == 0) {
+            return null;
         }
-        //Minimum value
-        searchMinValue ( node ) {
-            if ( node == null || node.getData () == 0 )
-                return null ;
-            if ( node.left == null ) {
-                return node ;
+
+        if (node.left == null) {
+            return node;
+        }
+
+        // Recursively find the minimum from the left subtree
+        return this.searchMinValue(node.left);
+    }
+
+    // Maximum value
+    searchMaxValue(node) {
+        if (node == null || node.getData() == 0) {
+            return null;
+        }
+
+        if (node.right == null) {
+            return node;
+        }
+
+        // Recursively find the minimum from the right subtree
+        return this.searchMaxValue(node.right);
+    }
+
+    insert(node, newData) {
+        if (this.root == null) {
+            this.root = new Node(newData, null, null);
+            return;
+        }
+
+        var compareValue = newData - node.getData();
+
+        // Recursive left subtree, continue to find the insertion position
+        if (compareValue < 0) {
+            if (node.left == null) {
+                node.left = new Node(newData, null, null);
+            } else {
+                this.insert(node.left, newData);
             }
-            //Recursively find the minimum from the left subtree
+        } else if (compareValue > 0) {
+            // Recursive right subtree, continue to find the insertion position
+            if (node.right == null) {
+                node.right = new Node(newData, null, null);
+            } else {
+                this.insert(node.right, newData);
+            }
         }
     }
-</script>
-```
-
-
-
-
-
-```
-return this.searchMinValue ( node.left );
-
-}
-
-//Maximum value
-
-searchMaxValue ( node ) {
-
-    if ( node == null || node.getData () == 0 )
-        return null ;
-
-    if ( node.right == null ) {
-        return node ;
-    }
-
-    //Recursively find the minimum from the right subtree
-    return this.searchMaxValue ( node.right );
-
-}
-
-insert ( node , newData ) {
-
-    if ( this.root == null ) {
-        this.root = new Node ( newData , null , null );
-        return ;
-    }
-
-    var compareValue = newData - node.getData ();
-
-    //Recursive left subtree, continue to find the insertion position
-    if ( compareValue < 0 ) {
-        if ( node.left == null ) {
-            node.left = new Node ( newData , null , null );
-        } else {
-            this.insert ( node.left , newData );
-        }
-    } else if ( compareValue > 0 ) { ////Recursive right subtree, continue to find the insertion position
-        if ( node.right == null ) {
-            node.right = new Node ( newData , null , null );
-        } else {
-            this.insert ( node.right , newData );
-        }
-    }
-
-}
-
 }
 
 class Node {
-
-    constructor ( data , left , right ){
-        this.data = data ;
-        this.left = left ;
-        this.right = right ;
+    constructor(data, left, right) {
+        this.data = data;
+        this.left = left;
+        this.right = right;
     }
 
-    getData (){
-        return this.data ;
+    getData() {
+        return this.data;
     }
-
 }
 
-//////////////////////testing////////////////////
+// Testing
+var binaryTree = new BinaryTree();
 
-var binaryTree = new BinaryTree ();
+// Constructing a binary search tree
+binaryTree.insert(binaryTree.getRoot(), 60);
+binaryTree.insert(binaryTree.getRoot(), 40);
+binaryTree.insert(binaryTree.getRoot(), 20);
+binaryTree.insert(binaryTree.getRoot(), 10);
+binaryTree.insert(binaryTree.getRoot(), 30);
+binaryTree.insert(binaryTree.getRoot(), 50);
+binaryTree.insert(binaryTree.getRoot(), 80);
+binaryTree.insert(binaryTree.getRoot(), 70);
+binaryTree.insert(binaryTree.getRoot(), 90);
 
-//Constructing a binary search tree
-binaryTree.insert ( binaryTree.getRoot (), 60 );
-binaryTree.insert ( binaryTree.getRoot (), 40 );
-binaryTree.insert ( binaryTree.getRoot (), 20 );
-binaryTree.insert ( binaryTree.getRoot (), 10 );
-binaryTree.insert ( binaryTree.getRoot (), 30 );
-binaryTree.insert ( binaryTree.getRoot (), 50 );
-binaryTree.insert ( binaryTree.getRoot (), 80 );
-binaryTree.insert ( binaryTree.getRoot (), 70 );
-binaryTree.insert ( binaryTree.getRoot (), 90 );
+document.write("<br> Minimum Value<br> ");
 
-document.write ( "<br> Minimum Value<br> " );
-var minNode = binaryTree.searchMinValue ( binaryTree.getRoot ());
-document.write ( minNode.getData ());
-document.write ( "<br> Maximum Value<br> " );
-var maxNode = binaryTree.searchMaxValue ( binaryTree.getRoot ());
-document.write ( maxNode.getData ());
+var minNode = binaryTree.searchMinValue(binaryTree.getRoot());
 
+document.write(minNode.getData());
+
+document.write("<br> Maximum Value<br> ");
+
+var maxNode = binaryTree.searchMaxValue(binaryTree.getRoot());
+
+document.write(maxNode.getData());
 </script>
+```
 
 结果：
 
@@ -3046,20 +3126,27 @@ document.write ( maxNode.getData ());
 
 二叉搜索树删除节点有三种情况：
 
-1. 如果没有子节点，直接删除
+1. 如果没有子节点，直接删除。
 2. 如果只有一个子节点，子节点替换当前节点，然后删除当前节点。
 3. 如果有两个子节点，用右子树中最小的节点替换当前节点，因为右边最小的节点也大于左边的值。
 
 ![](img/Image00121.jpg)
+
 ![](img/Image00122.jpg)
+
 ![](img/Image00123.jpg)
+
 ![](img/Image00124.jpg)
+
 ![](img/Image00125.jpg)
+
 ![](img/Image00126.jpg)
 
-用记事本创建 TestBinarySearchTreeDelete.html
+用记事本创建`TestBinarySearchTreeDelete.html`。
 
-```
+
+
+```javascript
 <script type = "text/javascript" >
 
     class BinaryTree {
@@ -3198,9 +3285,6 @@ document.write ( maxNode.getData ());
 
 左子节点下标 = `2*i+1`
 
-
-
-
 右子节点下标 = `2*i+2`
 
 ## 堆排序过程
@@ -3264,126 +3348,126 @@ document.write ( maxNode.getData ());
 
 ![](img/Image00150.jpg)
 
-使用记事本创建 TestBinaryHeapSorting.html
+使用记事本创建 `TestBinaryHeapSorting.html`
 
 ```javascript
 <script type = "text/javascript" >
 
-    class HeapSort {
+    class HeapSort {
 
-        constructor (){
+        constructor (){
 
-            this.array = [];
+            this.array = [];
 
-        }
+        }
 
-        //Initialize the heap
+        //Initialize the heap
 
-        createHeap ( array ) {
+        createHeap ( array ) {
 
-            this.array = array ;
+            this.array = array ;
 
-            // Build a heap, (array.length - 1) / 2 scan half of the nodes with child nodes
+            // Build a heap, (array.length - 1) / 2 scan half of the nodes with child nodes
 
-            for ( var i = ( array.length - 1 ) / 2 ; i >= 0 ; i --) {
+            for ( var i = ( array.length - 1 ) / 2 ; i >= 0 ; i --) {
 
-                this.adjustHeap ( i , array.length - 1 );
+                this.adjustHeap ( i , array.length - 1 );
 
-            }
+            }
 
-        }
+        }
 
-        //Adjustment heap
+        //Adjustment heap
 
-        adjustHeap ( currentIndex , maxLength ) {
+        adjustHeap ( currentIndex , maxLength ) {
 
-            var noLeafValue = this.array [ currentIndex ]; // Current non-leaf node
+            var noLeafValue = this.array [ currentIndex ]; // Current non-leaf node
 
-            //2 * currentIndex + 1  Current left subtree subscript
+            //2 * currentIndex + 1  Current left subtree subscript
 
-            for ( var j = 2 * currentIndex + 1 ; j <= maxLength ; j = currentIndex * 2 + 1 ) {
+            for ( var j = 2 * currentIndex + 1 ; j <= maxLength ; j = currentIndex * 2 + 1 ) {
 
-                if ( j < maxLength && this.array [ j ] < this.array [ j + 1 ]) {
+                if ( j < maxLength && this.array [ j ] < this.array [ j + 1 ]) {
 
-                    j ++; // j Large subscript
+                    j ++; // j Large subscript
 
-                }
+                }
 
-                if ( noLeafValue >= this.array [ j ]) {
+                if ( noLeafValue >= this.array [ j ]) {
 
-                    break ;
+                    break ;
 
-                }
+                }
 
-                this.array [ currentIndex ] = this.array [ j ]; // Move up to the parent node
+                this.array [ currentIndex ] = this.array [ j ]; // Move up to the parent node
 
-                currentIndex = j ;
+                currentIndex = j ;
 
-            }
+            }
 
-            this.array [ currentIndex ] = noLeafValue ; // To put in the position
+            this.array [ currentIndex ] = noLeafValue ; // To put in the position
 
-        }
+        }
 
-        heapSort () {
+        heapSort () {
 
-            for ( var i = this.array.length - 1 ; i > 0 ; i --) {
+            for ( var i = this.array.length - 1 ; i > 0 ; i --) {
 
-                var temp = this.array [ 0 ];
+                var temp = this.array [ 0 ];
 
-                this.array [ 0 ] = this.array [ i ];
+                this.array [ 0 ] = this.array [ i ];
 
-                this.array [ i ] = temp ;
+                this.array [ i ] = temp ;
 
-                this.adjustHeap ( 0 , i - 1 );
+                this.adjustHeap ( 0 , i - 1 );
 
-            }
+            }
 
-        }
+        }
 
-    }
+    }
 
-    //////////////////////testing////////////////////
+    //////////////////////testing////////////////////
 
-    var heapSort = new HeapSort ();
+    var heapSort = new HeapSort ();
 
-    var scores = [ 10 , 90 , 20 , 80 , 30 , 70 , 40 , 60 , 50 ];
+    var scores = [ 10 , 90 , 20 , 80 , 30 , 70 , 40 , 60 , 50 ];
 
-    document.write ( "Before building a heap : <br>" );
+    document.write ( "Before building a heap : <br>" );
 
-    for ( var i = 0 ; i < scores.length ; i ++) {
+    for ( var i = 0 ; i < scores.length ; i ++) {
 
-        document.write ( scores [ i ] + ", " );
+        document.write ( scores [ i ] + ", " );
 
-    }
+    }
 
-    document.write ( "<br><br>" );
+    document.write ( "<br><br>" );
 
-    ////////////////////////////////////////////////////////////
+    ////////////////////////////////////////////////////////////
 
-    document.write ( "After building a heap : <br>" );
+    document.write ( "After building a heap : <br>" );
 
-    heapSort.createHeap ( scores );
+    heapSort.createHeap ( scores );
 
-    for ( var i = 0 ; i < scores.length ; i ++) {
+    for ( var i = 0 ; i < scores.length ; i ++) {
 
-        document.write ( scores [ i ] + ", " );
+        document.write ( scores [ i ] + ", " );
 
-    }
+    }
 
-    document.write ( "<br><br>" );
+    document.write ( "<br><br>" );
 
-    ////////////////////////////////////////////////////////////
+    ////////////////////////////////////////////////////////////
 
-    document.write ( "After heap sorting : <br>" );
+    document.write ( "After heap sorting : <br>" );
 
-    heapSort.heapSort ();
+    heapSort.heapSort ();
 
-    for ( var i = 0 ; i < scores.length ; i ++) {
+    for ( var i = 0 ; i < scores.length ; i ++) {
 
-        document.write ( scores [ i ] + ", " );
+        document.write ( scores [ i ] + ", " );
 
-    }
+    }
 
 </script>
 ```
@@ -3396,17 +3480,19 @@ document.write ( maxNode.getData ());
 
 通过映射键 => 值来访问表中的数据。
 
-1. 将 `{19, 18, 35,40,41,42}` 映射到 `HashTable`，映射规则为 `key % 4`
+
+
+1. 将 `{19, 18, 35,40,41,42}` 映射到`HashTable`，映射规则为`key % 4`
 
 ![](img/Image00152.jpg)
 
 ![](img/Image00153.jpg)
 
-2. 实现一个 `Hashtable`
+2. 实现一个`Hashtable`
 
 ![](img/Image00154.jpg)
 
-使用记事本创建 TestHashtable.html
+使用记事本创建`TestHashtable.html`：
 
 ```javascript
 <script type = "text/javascript" >
@@ -3604,15 +3690,15 @@ document.write ( maxNode.getData ());
 
 数据结构通过邻接矩阵（即二维数组）和邻接表来表示。每个节点称为顶点，两个相邻节点称为边。
 
-无向图无方向：A -> B = B -> A
+无向图无方向：`A -> B = B -> A`
 
 ![](img/Image00156.jpg)
 
-1. 邻接矩阵如上所述：顶点总数是二维数组的大小，如果有边则值为 1，否则无边值为 0。
+1. 邻接矩阵如上所述：顶点总数是二维数组的大小，如果有边则值为`1`，否则无边值为`0`。
 
 ![](img/Image00157.jpg)
 
-2. 深度优先搜索：从 A 开始寻找相邻边节点 B，然后从 B 寻找相邻节点 C，依此类推，直到找到所有节点 A -> B -> C -> D -> E。
+2. 深度优先搜索：从`A`开始寻找相邻边节点`B`，然后从`B`寻找相邻节点`C`，依此类推，直到找到所有节点`A -> B -> C -> D -> E`。
 
 ![](img/Image00158.jpg)
 
@@ -3620,7 +3706,7 @@ document.write ( maxNode.getData ());
 
 ![](img/Image00160.jpg)
 
-使用记事本创建 TestUndirectedGraphDepthFrstSearch.html
+使用记事本创建`TestUndirectedGraphDepthFrstSearch.html`：
 
 ```javascript
 <script type = "text/javascript" >
@@ -3640,292 +3726,290 @@ document.write ( maxNode.getData ());
 
 
 
-
-
 ```javascript
-            return this.data ;
+return this.data;
 
-        }
+}
 
-        setData ( data ) {
+setData(data) {
 
-            this.data = data ;
+    this.data = data;
 
-        }
+}
 
-        isVisited () {
+isVisited() {
 
-            return this.visited ;
+    return this.visited;
 
-        }
+}
 
-        setVisited ( visited ) {
+setVisited(visited) {
 
-            this.visited = visited ;
+    this.visited = visited;
+
+}
+
+}
+
+class Stack {
+
+constructor() {
+
+    this.stacks = new Array();
+
+    this.top = -1;
+
+}
+
+push(element) {
+
+    this.top++;
+
+    this.stacks[this.top] = element;
+
+}
+
+pop() {
+
+    if (this.top == -1) {
+
+        return -1;
+
+    }
+
+    var data = this.stacks[this.top];
+
+    this.top--;
+
+    return data;
+
+}
+
+peek() {
+
+    if (this.top == -1) {
+
+        return -1;
+
+    }
+
+    var data = this.stacks[this.top];
+
+    return data;
+
+}
+
+isEmpty() {
+
+    if (this.top <= -1) {
+
+        return true;
+
+    }
+
+    return false;
+
+}
+
+}
+
+class Graph {
+
+constructor(maxVertexSize) {
+
+    this.maxVertexSize = maxVertexSize; // Two-dimensional array size
+
+    this.vertexs = new Array(maxVertexSize);
+
+    this.size = 0; // Current vertex size
+
+    this.adjacencyMatrix = new Array(maxVertexSize);
+
+    for (var i = 0; i < maxVertexSize; i++) {
+
+        this.adjacencyMatrix[i] = new Array();
+
+        for (var j = 0; j < maxVertexSize; j++) {
+
+            this.adjacencyMatrix[i][j] = 0;
 
         }
 
     }
 
-    class Stack {
+    this.stack = new Stack(); // Stack saves current vertices
 
-        constructor (){
+}
 
-            this.stacks = new Array ();
+addVertex(data) {
 
-            this.top = - 1 ;
+    var vertex = new Vertex(data, false);
 
-        }
+    this.vertexs[this.size] = vertex;
 
-        push ( element ) {
+    this.size++;
 
-            this.top ++;
+}
 
-            this.stacks [ this.top ] = element ;
+// Add adjacent edges
 
-        }
+addEdge(from, to) {
 
-        pop () {
+    // A -> B = B -> A
 
-            if ( this.top == - 1 ){
+    this.adjacencyMatrix[from][to] = 1;
 
-                return - 1 ;
+    this.adjacencyMatrix[to][from] = 1;
 
-            }
+}
 
-            var data = this.stacks [ this.top ];
+depthFirstSearch() {
 
-            this.top --;
+    // Start searching from the first vertex
 
-            return data ;
+    var firstVertex = this.vertexs[0];
 
-        }
+    firstVertex.setVisited(true);
 
-        peek () {
+    document.write(firstVertex.getData());
 
-            if ( this.top == - 1 ){
+    this.stack.push(0);
 
-                return - 1 ;
+    while (!this.stack.isEmpty()) {
 
-            }
-
-            var data = this.stacks [ this.top ];
-
-            return data ;
-
-        }
-
-        isEmpty () {
-
-            if ( this.top <= - 1 ){
-
-                return true ;
-
-            }
-
-            return false ;
-
-        }
-
-    }
-
-    class Graph {
-
-        constructor ( maxVertexSize ){
-
-            this.maxVertexSize = maxVertexSize ; // Two-dimensional array size
-
-            this.vertexs = new Array ( maxVertexSize );
-
-            this.size = 0 ; // Current vertex size
-
-            this.adjacencyMatrix = new Array ( maxVertexSize );
-
-            for ( var i = 0 ; i < maxVertexSize ; i ++) {
-
-                this.adjacencyMatrix [ i ] = new Array ();
-
-                for ( var j = 0 ; j < maxVertexSize ; j ++) {
-
-                    this.adjacencyMatrix [ i ][ j ] = 0 ;
-
-                }
-
-            }
-
-            this.stack = new Stack (); // Stack saves current vertices
-
-        }
-
-        addVertex ( data ) {
-
-            var vertex = new Vertex ( data , false );
-
-            this.vertexs [ this.size ] = vertex ;
-
-            this.size ++;
-
-        }
-
-        // Add adjacent edges
-
-        addEdge ( from , to ) {
-
-            // A -> B = B -> A
-
-            this.adjacencyMatrix [ from ][ to ] = 1 ;
-
-            this.adjacencyMatrix [ to ][ from ] = 1 ;
-
-        }
-
-        depthFirstSearch () {
-
-            // Start searching from the first vertex
-
-            var firstVertex = this.vertexs [ 0 ];
-
-            firstVertex.setVisited ( true );
-
-            document.write ( firstVertex.getData ());
-
-            this.stack.push ( 0 );
-
-            while (! this.stack.isEmpty ()) {
-
-                var row = this.stack.peek ();
-
-                // Get adjacent vertex positions that have not been visited
-
-                var col = this.findAdjacencyUnVisitedVertex ( row );
-
-                if ( col == - 1 ) {
-
-                    this.stack.pop ();
-
-                } else {
-
-                    this.vertexs [ col ]. setVisited ( true );
-
-                    document.write ( " -> " + this.vertexs [ col ]. getData ());
-
-                    this.stack.push ( col );
-
-                }
-
-            }
-
-            this.clear ();
-
-        }
+        var row = this.stack.peek();
 
         // Get adjacent vertex positions that have not been visited
 
-        findAdjacencyUnVisitedVertex ( row ) {
+        var col = this.findAdjacencyUnVisitedVertex(row);
 
-            for ( var col = 0 ; col < this.size ; col ++) {
+        if (col == -1) {
 
-                if ( this.adjacencyMatrix [ row ][ col ] == 1 && ! this.vertexs [ col ]. isVisited ()) {
+            this.stack.pop();
 
-                    return col ;
+        } else {
 
-                }
+            this.vertexs[col].setVisited(true);
 
-            }
+            document.write(" -> " + this.vertexs[col].getData());
 
-            return - 1 ;
-
-        }
-
-        // Clear reset
-
-        clear () {
-
-            for ( var i = 0 ; i < this.size ; i ++) {
-
-                this.vertexs [ i ]. setVisited ( false );
-
-            }
-
-        }
-
-        getAdjacencyMatrix () {
-
-            return this.adjacencyMatrix ;
-
-        }
-
-        getVertexs () {
-
-            return this.vertexs ;
+            this.stack.push(col);
 
         }
 
     }
 
-    //////////////////////testing////////////////////
+    this.clear();
 
-    function printGraph ( graph ) {
+}
 
-        document.write ( "Two-dimensional array traversal output vertex edge and adjacent array :  <br>" );
+// Get adjacent vertex positions that have not been visited
 
-        for ( var i = 0 ; i < graph.getVertexs (). length ; i ++) {
+findAdjacencyUnVisitedVertex(row) {
 
-            document.write ( graph.getVertexs ()[ i ]. getData () + "  " );
+    for (var col = 0; col < this.size; col++) {
 
-        }
+        if (this.adjacencyMatrix[row][col] == 1 && !this.vertexs[col].isVisited()) {
 
-        document.write ( "<br>" );
-
-        for ( var i = 0 ; i < graph.getAdjacencyMatrix (). length ; i ++) {
-
-            document.write ( graph.getVertexs ()[ i ]. getData () + "  " );
-
-            for ( var j = 0 ; j < graph.getAdjacencyMatrix (). length ; j ++) {
-
-                document.write ( graph.getAdjacencyMatrix ()[ i ][ j ] + "  " );
-
-            }
-
-            document.write ( "<br>" );
+            return col;
 
         }
 
     }
 
-    var graph = new Graph ( 5 );
+    return -1;
 
-    graph.addVertex ( "A" );
+}
 
-    graph.addVertex ( "B" );
+// Clear reset
 
-    graph.addVertex ( "C" );
+clear() {
 
-    graph.addVertex ( "D" );
+    for (var i = 0; i < this.size; i++) {
 
-    graph.addVertex ( "E" );
+        this.vertexs[i].setVisited(false);
 
-    graph.addEdge ( 0 , 1 );
+    }
 
-    graph.addEdge ( 0 , 2 );
+}
 
-    graph.addEdge ( 0 , 3 );
+getAdjacencyMatrix() {
 
-    graph.addEdge ( 1 , 2 );
+    return this.adjacencyMatrix;
 
-    graph.addEdge ( 1 , 3 );
+}
 
-    graph.addEdge ( 2 , 3 );
+getVertexs() {
 
-    graph.addEdge ( 3 , 4 );
+    return this.vertexs;
 
-    // Two-dimensional array traversal output vertex edge and adjacent array
+}
 
-    printGraph ( graph );
+}
 
-    document.write ( "<br>Depth-first search traversal output : <br>" );
+//////////////////////testing////////////////////
 
-    graph.depthFirstSearch ();
+function printGraph(graph) {
+
+document.write("Two-dimensional array traversal output vertex edge and adjacent array: <br>");
+
+for (var i = 0; i < graph.getVertexs().length; i++) {
+
+    document.write(graph.getVertexs()[i].getData() + "  ");
+
+}
+
+document.write("<br>");
+
+for (var i = 0; i < graph.getAdjacencyMatrix().length; i++) {
+
+    document.write(graph.getVertexs()[i].getData() + "  ");
+
+    for (var j = 0; j < graph.getAdjacencyMatrix().length; j++) {
+
+        document.write(graph.getAdjacencyMatrix()[i][j] + "  ");
+
+    }
+
+    document.write("<br>");
+
+}
+
+}
+
+var graph = new Graph(5);
+
+graph.addVertex("A");
+
+graph.addVertex("B");
+
+graph.addVertex("C");
+
+graph.addVertex("D");
+
+graph.addVertex("E");
+
+graph.addEdge(0, 1);
+
+graph.addEdge(0, 2);
+
+graph.addEdge(0, 3);
+
+graph.addEdge(1, 2);
+
+graph.addEdge(1, 3);
+
+graph.addEdge(2, 3);
+
+graph.addEdge(3, 4);
+
+// Two-dimensional array traversal output vertex edge and adjacent array
+
+printGraph(graph);
+
+document.write("<br>Depth-first search traversal output: <br>");
+
+graph.depthFirstSearch();
 
 </script>
 ```
@@ -3934,9 +4018,9 @@ document.write ( maxNode.getData ());
 
 ![](img/Image00161.jpg)
 
-无向图与广度优先搜索
+# 无向图与广度优先搜索
 
-广度优先搜索：
+## 广度优先搜索
 
 从 A 出发找到所有相邻边节点 B、C、D，然后从 B 出发找到所有相邻节点 A、C、D，依此类推，直到找到所有节点 A -> B -> C -> D -> E。
 
@@ -3946,228 +4030,227 @@ document.write ( maxNode.getData ());
 
 ![](img/Image00164.jpg)
 
-使用记事本创建一个 `TestUndirectedGraphBreadthFrstSearch.html` 文件
+使用记事本创建一个 `TestUndirectedGraphBreadthFrstSearch.html` 文件。
 
 ```javascript
-<script type = "text/javascript" >
+<script type="text/javascript">
 
-    class Vertex {
+class Vertex {
 
-        constructor ( data , visited ){
+constructor(data, visited) {
 
-            this.data = data ;
+    this.data = data;
 
-            this.visited = visited ; // Have you visited
+    this.visited = visited; // Have you visited
 
-        }
+}
 
-        getData () {
+getData() {
 
-            return this.data ;
+    return this.data;
 
-        }
+}
 
-        setData ( data ) {
+setData(data) {
 
-            this.data = data ;
+    this.data = data;
 
-        }
+}
 
-        isVisited () {
+isVisited() {
 
-            return this.visited ;
+    return this.visited;
 
-        }
+}
 
-        setVisited ( visited ) {
+setVisited(visited) {
 
-            this.visited = visited ;
+    this.visited = visited;
+
+}
+
+}
+
+class Queue {
+
+constructor() {
+
+    this.queues = new Array();
+
+}
+
+add(element) {
+
+    this.queues[this.queues.length] = element;
+
+}
+
+remove() {
+
+    if (this.queues.length <= 0) {
+
+        return -1;
+
+    }
+
+    return this.queues.shift();
+
+}
+
+isEmpty() {
+
+    if (this.queues.length <= 0) {
+
+        return true;
+
+    }
+
+    return false;
+
+}
+
+}
+
+class Graph {
+
+constructor(maxVertexSize) {
+
+    this.maxVertexSize = maxVertexSize; // Two-dimensional array size
+
+    this.vertexs = new Array(maxVertexSize);
+
+    this.size = 0; // Current vertex size
+
+    this.adjacencyMatrix = new Array(maxVertexSize);
+
+    for (var i = 0; i < maxVertexSize; i++) {
+
+        this.adjacencyMatrix[i] = new Array();
+
+        for (var j = 0; j < maxVertexSize; j++) {
+
+            this.adjacencyMatrix[i][j] = 0;
 
         }
 
     }
 
-    class Queue {
+    this.queue = new Queue(); // Queue saves current vertices
 
-        constructor (){
+}
 
-            this.queues = new Array ();
+addVertex(data) {
 
-        }
+    var vertex = new Vertex(data, false);
 
-        add ( element ) {
+    this.vertexs[this.size] = vertex;
 
-            this.queues [ this.queues.length ] = element ;
+    this.size++;
 
-        }
+}
 
-        remove () {
+// Add adjacent edges
 
-            if ( this.queues.length <= 0 ){
+addEdge(from, to) {
 
-                return - 1 ;
+    // A -> B = B -> A
 
-            }
+    this.adjacencyMatrix[from][to] = 1;
 
-            return this.queues.shift ();
+    this.adjacencyMatrix[to][from] = 1;
 
-        }
+}
 
-        isEmpty () {
+breadthFirstSearch() {
 
-            if ( this.queues.length <= 0 ){
+    // Start searching from the first vertex
 
-                return true ;
+    var firstVertex = this.vertexs[0];
 
-            }
+    firstVertex.setVisited(true);
 
-            return false ;
+    document.write(firstVertex.getData());
 
-        }
+    this.queue.add(0);
 
-    }
+    var col = 0;
 
-    class Graph {
-
-        constructor ( maxVertexSize ){
-
-            this.maxVertexSize = maxVertexSize ; // Two-dimensional array size
-
-            this.vertexs = new Array ( maxVertexSize );
-
-            this.size = 0 ; // Current vertex size
-
-            this.adjacencyMatrix = new Array ( maxVertexSize );
-
-            for ( var i = 0 ; i < maxVertexSize ; i ++) {
-
-                this.adjacencyMatrix [ i ] = new Array ();
-
-                for ( var j = 0 ; j < maxVertexSize ; j ++) {
-
-                    this.adjacencyMatrix [ i ][ j ] = 0 ;
-
-                }
-
-            }
-
-            this.queue = new Queue (); // Queue  saves current vertices
-
-        }
-
-        addVertex ( data ) {
-
-            var vertex = new Vertex ( data , false );
-
-            this.vertexs [ this.size ] = vertex ;
-
-            this.size ++;
-
-        }
-
-        // Add adjacent edges
-
-        addEdge ( from , to ) {
-
-            // A -> B = B -> A
-
-            this.adjacencyMatrix [ from ][ to ] = 1 ;
-
-            this.adjacencyMatrix [ to ][ from ] = 1 ;
-
-        }
-
-        breadthFirstSearch () {
-
-            // Start searching from the first vertex
-
-            var firstVertex = this.vertexs [ 0 ];
-
-            firstVertex.setVisited ( true );
-
-            document.write ( firstVertex.getData ());
-
-            this.queue.add ( 0 );
-
-            var col = 0 ;
-
-            while (! this.queue.isEmpty ()) {
+    while (!this.queue.isEmpty()) {
 ```
 
 
 
-
-```
-                var head = this.queue.remove ();
-             // Get adjacent vertex positions that have not been visited
-                col = this.findAdjacencyUnVisitedVertex ( head );
-              //Loop through all vertices connected to the current vertex
-                while ( col != - 1 )
-                {
-                    this.vertexs [ col ]. setVisited ( true );
-                    document.write ( " -> " + this.vertexs [ col ]. getData ());
-                    this.queue.add ( col );
-                    col = this.findAdjacencyUnVisitedVertex ( head );
-                }
-            }
-            this.clear ();
-        }
-        // Get adjacent vertex positions that have not been visited
-        findAdjacencyUnVisitedVertex ( row ) {
-            for ( var col = 0 ; col < this.size ; col ++) {
-                if ( this.adjacencyMatrix [ row ][ col ] == 1 && ! this.vertexs [ col ]. isVisited ()) {
-                    return col ;
-                }
-            }
-            return - 1 ;
-        }
-        // Clear reset
-        clear () {
-            for ( var i = 0 ; i < this.size ; i ++) {
-                this.vertexs [ i ]. setVisited ( false );
-            }
-        }
-        getAdjacencyMatrix () {
-            return this.adjacencyMatrix ;
-        }
-        getVertexs () {
-            return this.vertexs ;
+```javascript
+var head = this.queue.remove ();
+// Get adjacent vertex positions that have not been visited
+col = this.findAdjacencyUnVisitedVertex(head);
+// Loop through all vertices connected to the current vertex
+while (col != -1) {
+    this.vertexs[col].setVisited(true);
+    document.write(" -> " + this.vertexs[col].getData());
+    this.queue.add(col);
+    col = this.findAdjacencyUnVisitedVertex(head);
+}
+}
+this.clear();
+}
+// Get adjacent vertex positions that have not been visited
+findAdjacencyUnVisitedVertex(row) {
+    for (var col = 0; col < this.size; col++) {
+        if (this.adjacencyMatrix[row][col] == 1 && !this.vertexs[col].isVisited()) {
+            return col;
         }
     }
-    //////////////////////testing////////////////////
-    function printGraph ( graph ) {
-        document.write ( "Two-dimensional array traversal output vertex edge and adjacent array :  <br>" );
-        document.write ( "&nbsp;&nbsp;&nbsp;" );
-        for ( var i = 0 ; i < graph.getVertexs (). length ; i ++) {
-            document.write ( graph.getVertexs ()[ i ]. getData () + "&nbsp;&nbsp;&nbsp;&nbsp;" );
-        }
-        document.write ( "<br>" );
-        for ( var i = 0 ; i < graph.getAdjacencyMatrix (). length ; i ++) {
-            document.write ( graph.getVertexs ()[ i ]. getData () + "  " );
-            for ( var j = 0 ; j < graph.getAdjacencyMatrix (). length ; j ++) {
-                document.write ( graph.getAdjacencyMatrix ()[ i ][ j ] + "&nbsp;&nbsp;&nbsp;&nbsp;" );
-            }
-            document.write ( "<br>" );
-        }
+    return -1;
+}
+// Clear reset
+clear() {
+    for (var i = 0; i < this.size; i++) {
+        this.vertexs[i].setVisited(false);
     }
-    var graph = new Graph ( 5 );
-    graph.addVertex ( "A" );
-    graph.addVertex ( "B" );
-    graph.addVertex ( "C" );
-    graph.addVertex ( "D" );
-    graph.addVertex ( "E" );
-    graph.addEdge ( 0 , 1 );
-    graph.addEdge ( 0 , 2 );
-    graph.addEdge ( 0 , 3 );
-    graph.addEdge ( 1 , 2 );
-    graph.addEdge ( 1 , 3 );
-    graph.addEdge ( 2 , 3 );
-    graph.addEdge ( 3 , 4 );
-    // Two-dimensional array traversal output vertex edge and adjacent array
-    printGraph ( graph );
-    document.write ( "\nBreadth-First Search traversal output : <br>" );
-    graph.breadthFirstSearch ();
+}
+getAdjacencyMatrix() {
+    return this.adjacencyMatrix;
+}
+getVertexs() {
+    return this.vertexs;
+}
+}
+//////////////////////testing////////////////////
+function printGraph(graph) {
+    document.write("Two-dimensional array traversal output vertex edge and adjacent array :  <br>");
+    document.write("&nbsp;&nbsp;&nbsp;");
+    for (var i = 0; i < graph.getVertexs().length; i++) {
+        document.write(graph.getVertexs()[i].getData() + "&nbsp;&nbsp;&nbsp;&nbsp;");
+    }
+    document.write("<br>");
+    for (var i = 0; i < graph.getAdjacencyMatrix().length; i++) {
+        document.write(graph.getVertexs()[i].getData() + "  ");
+        for (var j = 0; j < graph.getAdjacencyMatrix().length; j++) {
+            document.write(graph.getAdjacencyMatrix()[i][j] + "&nbsp;&nbsp;&nbsp;&nbsp;");
+        }
+        document.write("<br>");
+    }
+}
+var graph = new Graph(5);
+graph.addVertex("A");
+graph.addVertex("B");
+graph.addVertex("C");
+graph.addVertex("D");
+graph.addVertex("E");
+graph.addEdge(0, 1);
+graph.addEdge(0, 2);
+graph.addEdge(0, 3);
+graph.addEdge(1, 2);
+graph.addEdge(1, 3);
+graph.addEdge(2, 3);
+graph.addEdge(3, 4);
+// Two-dimensional array traversal output vertex edge and adjacent array
+printGraph(graph);
+document.write("\nBreadth-First Search traversal output : <br>");
+graph.breadthFirstSearch();
 </script>
+```
 
 结果：
 
@@ -4179,19 +4262,19 @@ document.write ( maxNode.getData ());
 
 数据结构通过邻接矩阵（即二维数组）和邻接表来表示。每个节点称为顶点，两个相邻节点称为边。
 
-有向图具有方向性：A -> B 和 B -> A 是不同的。
+有向图具有方向性：`A -> B` 和 `B -> A` 是不同的。
 
 ![](img/Image00166.jpg)
 
-### 1. 邻接矩阵如上所述：
+### 1. 邻接矩阵如上所述
 
-顶点总数是二维数组的大小，如果有边则值为 1，否则无边值为 0。
+顶点总数是二维数组的大小，如果有边则值为 `1`，否则无边值为 `0`。
 
 ![](img/Image00167.jpg)
 
-### 2. 深度优先搜索：
+### 2. 深度优先搜索
 
-从 A 开始寻找相邻的边节点 B，然后从 B 寻找相邻节点 C，依此类推，直到找到所有节点 A -> B -> C -> D -> E。
+从 `A` 开始寻找相邻的边节点 `B`，然后从 `B` 寻找相邻节点 `C`，依此类推，直到找到所有节点 `A -> B -> C -> D -> E`。
 
 ![](img/Image00168.jpg)
 
@@ -4199,304 +4282,204 @@ document.write ( maxNode.getData ());
 
 ![](img/Image00170.jpg)
 
-用记事本创建一个 `TestDirectedGraphDepthFrstSearch.html` 文件
+用记事本创建一个 `TestDirectedGraphDepthFrstSearch.html` 文件。
 
-```
-<script type = "text/javascript" >
-
+```html
+<script type="text/javascript">
     class Vertex {
-
-        constructor ( data , visited ){
-
-            this.data = data ;
-
-            this.visited = visited ; // Have you visited
-
+        constructor(data, visited) {
+            this.data = data;
+            this.visited = visited; // Have you visited
         }
 
-        getData () {
-
-            return this.data ;
-
+        getData() {
+            return this.data;
         }
 
-        setData ( data ) {
-
-            this.data = data ;
-
+        setData(data) {
+            this.data = data;
         }
 
-        isVisited () {
-
-            return this.visited ;
-
+        isVisited() {
+            return this.visited;
         }
 
-        setVisited ( visited ) {
-
-            this.visited = visited ;
-
+        setVisited(visited) {
+            this.visited = visited;
         }
-
     }
 
     class Stack {
-
-        constructor (){
-
-            this.stacks = new Array ();
-
-            this.top = - 1 ;
-
+        constructor() {
+            this.stacks = new Array();
+            this.top = -1;
         }
 
-        push ( element ) {
-
-            this.top ++;
-
-            this.stacks [ this.top ] = element ;
-
+        push(element) {
+            this.top++;
+            this.stacks[this.top] = element;
         }
 
-        pop () {
-
-            if ( this.top == - 1 ){
-
-                return - 1 ;
-
+        pop() {
+            if (this.top == -1) {
+                return -1;
             }
 
-            var data = this.stacks [ this.top ];
-
-            this.top --;
-
-            return data ;
-
+            var data = this.stacks[this.top];
+            this.top--;
+            return data;
         }
 
-        peek () {
-
-            if ( this.top == - 1 ){
-
-                return - 1 ;
-
+        peek() {
+            if (this.top == -1) {
+                return -1;
             }
 
-            var data = this.stacks [ this.top ];
-
-            return data ;
-
+            var data = this.stacks[this.top];
+            return data;
         }
 
-        isEmpty () {
-
-            if ( this.top <= - 1 ){
-
-                return true ;
-
+        isEmpty() {
+            if (this.top <= -1) {
+                return true;
             }
 
-            return false ;
-
+            return false;
         }
-
     }
 
     class Graph {
+        constructor(maxVertexSize) {
+            this.maxVertexSize = maxVertexSize; // Two-dimensional array size
+            this.vertexs = new Array(maxVertexSize);
+            this.size = 0; // Current vertex size
+            this.adjacencyMatrix = new Array(maxVertexSize);
 
-        constructor ( maxVertexSize ){
+            for (var i = 0; i < maxVertexSize; i++) {
+                this.adjacencyMatrix[i] = new Array();
 
-            this.maxVertexSize = maxVertexSize ; // Two-dimensional array size
-
-            this.vertexs = new Array ( maxVertexSize );
-
-            this.size = 0 ; // Current vertex size
-
-            this.adjacencyMatrix = new Array ( maxVertexSize );
-
-            for ( var i = 0 ; i < maxVertexSize ; i ++) {
-
-                this.adjacencyMatrix [ i ] = new Array ();
-
-                for ( var j = 0 ; j < maxVertexSize ; j ++) {
-
-                    this.adjacencyMatrix [ i ][ j ] = 0 ;
-
+                for (var j = 0; j < maxVertexSize; j++) {
+                    this.adjacencyMatrix[i][j] = 0;
                 }
-
             }
 
-            this.stack = new Stack (); // Stack saves current vertices
-
+            this.stack = new Stack(); // Stack saves current vertices
         }
 
-        addVertex ( data ) {
-
-            var vertex = new Vertex ( data , false );
-
-            this.vertexs [ this.size++ ] = vertex ;
-
+        addVertex(data) {
+            var vertex = new Vertex(data, false);
+            this.vertexs[this.size++] = vertex;
         }
 
-        addEdge ( from , to ) {
-
-            this.adjacencyMatrix [ from ][ to ] = 1 ; // A -> B  and B -> A are different
-
+        addEdge(from, to) {
+            this.adjacencyMatrix[from][to] = 1; // A -> B and B -> A are different
         }
 
-        depthFirstSearch () {
+        depthFirstSearch() {
+            var firstVertex = this.vertexs[0]; // Start searching from the first vertex
 
-            var firstVertex = this.vertexs [ 0 ]; // Start searching from the first vertex
+            firstVertex.setVisited(true);
+            document.write(firstVertex.getData());
+            this.stack.push(0);
 
-            firstVertex.setVisited ( true );
-
-            document.write ( firstVertex.getData ());
-
-            this.stack.push ( 0 );
-
-            while (! this.stack.isEmpty ()) {
-
-                var row = this.stack.peek ();
+            while (!this.stack.isEmpty()) {
+                var row = this.stack.peek();
 
                 // Get adjacent vertex positions that have not been visited
+                var col = this.findAdjacencyUnVisitedVertex(row);
 
-                var col = this.findAdjacencyUnVisitedVertex ( row );
-
-                if ( col == - 1 ) {
-
-                    this.stack.pop ();
-
+                if (col == -1) {
+                    this.stack.pop();
                 } else {
-
-                    this.vertexs [ col ]. setVisited ( true );
-
-                    document.write ( " -> " + this.vertexs [ col ]. getData ());
-
-                    this.stack.push ( col );
-
+                    this.vertexs[col].setVisited(true);
+                    document.write(" -> " + this.vertexs[col].getData());
+                    this.stack.push(col);
                 }
-
             }
 
-            this.clear ();
-
+            this.clear();
         }
 
         // Get adjacent vertex positions that have not been visited
-
-        findAdjacencyUnVisitedVertex ( row ) {
-
-            for ( var col = 0 ; col < this.size ; col ++) {
-
-                if ( this.adjacencyMatrix [ row ][ col ] == 1 && ! this.vertexs [ col ]. isVisited ()) {
-
-                    return col ;
-
+        findAdjacencyUnVisitedVertex(row) {
+            for (var col = 0; col < this.size; col++) {
+                if (this.adjacencyMatrix[row][col] == 1 && !this.vertexs[col].isVisited()) {
+                    return col;
                 }
-
             }
 
-            return - 1 ;
-
+            return -1;
         }
 
         // Clear reset
-
-        clear () {
-
-            for ( var i = 0 ; i < this.size ; i ++) {
-
-                this.vertexs [ i ]. setVisited ( false );
-
+        clear() {
+            for (var i = 0; i < this.size; i++) {
+                this.vertexs[i].setVisited(false);
             }
-
         }
 
-        getAdjacencyMatrix () {
-
-            return this.adjacencyMatrix ;
-
+        getAdjacencyMatrix() {
+            return this.adjacencyMatrix;
         }
 
-        getVertexs () {
-
-            return this.vertexs ;
-
+        getVertexs() {
+            return this.vertexs;
         }
-
     }
 
     //////////////////////testing///////////////////
+    function printGraph(graph) {
+        document.write("Two-dimensional array traversal output vertex edge and adjacent array :  <br>");
+        document.write("&nbsp;&nbsp;&nbsp;");
 
-    function printGraph ( graph ) {
-
-        document.write ( "Two-dimensional array traversal output vertex edge and adjacent array :  <br>" );
-
-        document.write ( "&nbsp;&nbsp;&nbsp;" );
-
-        for ( var i = 0 ; i < graph.getVertexs (). length ; i ++) {
-```
-
-
-
-```
-            document.write ( graph.getVertexs ()[ i ]. getData () + "&nbsp;&nbsp;&nbsp;&nbsp;" );
-
+        for (var i = 0; i < graph.getVertexs().length; i++) {
+            document.write(graph.getVertexs()[i].getData() + "&nbsp;&nbsp;&nbsp;&nbsp;");
         }
 
-        document.write ( "<br>" );
+        document.write("<br>");
 
-        for ( var i = 0 ; i < graph.getAdjacencyMatrix (). length ; i ++) {
+        for (var i = 0; i < graph.getAdjacencyMatrix().length; i++) {
+            document.write(graph.getVertexs()[i].getData() + "  ");
 
-            document.write ( graph.getVertexs ()[ i ]. getData () + "  " );
-
-            for ( var j = 0 ; j < graph.getAdjacencyMatrix (). length ; j ++) {
-
-                document.write ( graph.getAdjacencyMatrix ()[ i ][ j ] + "&nbsp;&nbsp;&nbsp;&nbsp;" );
-
+            for (var j = 0; j < graph.getAdjacencyMatrix().length; j++) {
+                document.write(graph.getAdjacencyMatrix()[i][j] + "&nbsp;&nbsp;&nbsp;&nbsp;");
             }
 
-            document.write ( "<br>" );
+            document.write("<br>");
+```
 
-        }
 
-    }
 
-    var graph = new Graph ( 5 );
+```javascript
+}
 
-    graph.addVertex ( "A" );
+}
 
-    graph.addVertex ( "B" );
+var graph = new Graph(5);
 
-    graph.addVertex ( "C" );
+graph.addVertex("A");
+graph.addVertex("B");
+graph.addVertex("C");
+graph.addVertex("D");
+graph.addVertex("E");
 
-    graph.addVertex ( "D" );
+graph.addEdge(0, 1);
+graph.addEdge(0, 2);
+graph.addEdge(0, 3);
+graph.addEdge(1, 2);
+graph.addEdge(1, 3);
+graph.addEdge(2, 3);
+graph.addEdge(3, 4);
 
-    graph.addVertex ( "E" );
+// Two-dimensional array traversal output vertex edge and adjacent array
+printGraph(graph);
 
-    graph.addEdge ( 0 , 1 );
+document.write("<br>Depth-first search traversal output : <br>");
 
-    graph.addEdge ( 0 , 2 );
-
-    graph.addEdge ( 0 , 3 );
-
-    graph.addEdge ( 1 , 2 );
-
-    graph.addEdge ( 1 , 3 );
-
-    graph.addEdge ( 2 , 3 );
-
-    graph.addEdge ( 3 , 4 );
-
-    // Two-dimensional array traversal output vertex edge and adjacent array
-
-    printGraph ( graph );
-
-    document.write ( "<br>Depth-first search traversal output : <br>" );
-
-    graph.depthFirstSearch ();
+graph.depthFirstSearch();
 
 </script>
+```
 
 结果：
 
@@ -4504,7 +4487,7 @@ document.write ( maxNode.getData ());
 
 ## 有向图与广度优先搜索
 
-广度优先搜索：
+### 广度优先搜索
 
 从 A 出发找到所有相邻边节点 B、C、D，然后从 B 出发找到所有相邻节点 A、C、D，依此类推，直到找到所有节点 A -> B -> C -> D -> E。
 
@@ -4514,290 +4497,204 @@ document.write ( maxNode.getData ());
 
 ![](img/Image00174.jpg)
 
-用记事本创建一个 `TestDirectedGraphBreadthFrstSearch.html` 文件
+用记事本创建一个 `TestDirectedGraphBreadthFrstSearch.html` 文件。
 
-```
-<script type = "text/javascript" >
+```javascript
+<script type="text/javascript">
 
-    class Vertex {
-
-        constructor ( data , visited ){
-
-            this.data = data ;
-
-            this.visited = visited ; // Have you visited
-
-        }
-
-        getData () {
-
-            return this.data ;
-
-        }
-
-        setData ( data ) {
-
-            this.data = data ;
-
-        }
-
-        isVisited () {
-
-            return this.visited ;
-
-        }
-
-        setVisited ( visited ) {
-
-            this.visited = visited ;
-
-        }
-
+class Vertex {
+    constructor(data, visited) {
+        this.data = data;
+        this.visited = visited; // Have you visited
     }
 
-    class Queue {
-
-        constructor (){
-
-            this.queues = new Array ();
-
-        }
-
-        add ( element ) {
-
-            this.queues [ this.queues.length ] = element ;
-
-        }
-
-        remove () {
-
-            if ( this.queues.length <= 0 ){
-
-                return - 1 ;
-
-            }
-
-            return this.queues.shift ();
-
-        }
-
-        isEmpty () {
-
-            if ( this.queues.length <= 0 ){
-
-                return true ;
-
-            }
-
-            return false ;
-
-        }
-
+    getData() {
+        return this.data;
     }
 
-    class Graph {
-
-        constructor ( maxVertexSize ){
-
-            this.maxVertexSize = maxVertexSize ; // Two-dimensional array size
-
-            this.vertexs = new Array ( maxVertexSize );
-
-            this.size = 0 ; // Current vertex size
-
-            this.adjacencyMatrix = new Array ( maxVertexSize );
-
-            for ( var i = 0 ; i < maxVertexSize ; i ++) {
-
-                this.adjacencyMatrix [ i ] = new Array ();
-
-                for ( var j = 0 ; j < maxVertexSize ; j ++) {
-
-                    this.adjacencyMatrix [ i ][ j ] = 0 ;
-
-                }
-
-            }
-
-            this.queue = new Queue (); // Queue  saves current vertices
-
-        }
-
-        addVertex ( data ) {
-
-            var vertex = new Vertex ( data , false );
-
-            this.vertexs [ this.size ] = vertex ;
-
-            this.size ++;
-
-        }
-
-        // Add adjacent edges
-
-        addEdge ( from , to ) {
-
-            // A -> B  and B -> A are different
-
-            this.adjacencyMatrix [ from ][ to ] = 1 ;
-
-        }
-
-        breadthFirstSearch () {
-
-            // Start searching from the first vertex
-
-            var firstVertex = this.vertexs [ 0 ];
-
-            firstVertex.setVisited ( true );
-
-            document.write ( firstVertex.getData ());
-
-            this.queue.add ( 0 );
-
-            var col = 0 ;
-
-            while (! this.queue.isEmpty ()) {
-
-                var head = this.queue.remove ();
-
-             // Get adjacent vertex positions that have not been visited
-
-                col = this.findAdjacencyUnVisitedVertex ( head );
-
-              //Loop through all vertices connected to the current vertex
-
-                while ( col != - 1 )
-
-                {
-
-                    this.vertexs [ col ]. setVisited ( true );
-
-                    document.write ( " -> " + this.vertexs [ col ]. getData ());
-
-                    this.queue.add ( col );
-
-                    col = this.findAdjacencyUnVisitedVertex ( head );
-
-                }
-
-            }
-
-            this.clear ();
-
-        }
-
-        // Get adjacent vertex positions that have not been visited
-
-        findAdjacencyUnVisitedVertex ( row ) {
-
-            for ( var col = 0 ; col < this.size ; col ++) {
-
-                if ( this.adjacencyMatrix [ row ][ col ] == 1 && ! this.vertexs [ col ]. isVisited ()) {
-
-                    return col ;
-
-                }
-
-            }
-
-            return - 1 ;
-
-        }
-
-        // Clear reset
-
-        clear () {
-
-            for ( var i = 0 ; i < this.size ; i ++) {
-
-                this.vertexs [ i ]. setVisited ( false );
-
-            }
-
-        }
-
-        getAdjacencyMatrix () {
-
-            return this.adjacencyMatrix ;
-
-        }
-
-        getVertexs () {
-
-            return this.vertexs ;
-
-        }
-
+    setData(data) {
+        this.data = data;
     }
 
-    //////////////////////testing////////////////////
-
-    function printGraph ( graph ) {
-
-        document.write ( "Two-dimensional array traversal output vertex edge and adjacent array :  <br>" );
-
-        document.write ( "&nbsp;&nbsp;&nbsp;" );
-
-        for ( var i = 0 ; i < graph.getVertexs (). length ; i ++) {
-
-            document.write ( graph.getVertexs ()[ i ]. getData () + "&nbsp;&nbsp;&nbsp;&nbsp;" );
-
-        }
-
-        document.write ( "<br>" );
-
-        for ( var i = 0 ; i < graph.getAdjacencyMatrix (). length ; i ++) {
-
-            document.write ( graph.getVertexs ()[ i ]. getData () + "  " );
-
-            for ( var j = 0 ; j < graph.getAdjacencyMatrix (). length ; j ++) {
-
-                document.write ( graph.getAdjacencyMatrix ()[ i ][ j ] + "&nbsp;&nbsp;&nbsp;&nbsp;" );
-
-            }
-
-            document.write ( "<br>" );
-
-        }
-
+    isVisited() {
+        return this.visited;
     }
 
-    var graph = new Graph ( 5 );
+    setVisited(visited) {
+        this.visited = visited;
+    }
+}
 
-    graph.addVertex ( "A" );
+class Queue {
+    constructor() {
+        this.queues = new Array();
+    }
 
-    graph.addVertex ( "B" );
+    add(element) {
+        this.queues[this.queues.length] = element;
+    }
 
-    graph.addVertex ( "C" );
+    remove() {
+        if (this.queues.length <= 0) {
+            return -1;
+        }
 
-    graph.addVertex ( "D" );
+        return this.queues.shift();
+    }
 
-    graph.addVertex ( "E" );
+    isEmpty() {
+        if (this.queues.length <= 0) {
+            return true;
+        }
 
-    graph.addEdge ( 0 , 1 );
+        return false;
+    }
+}
 
-    graph.addEdge ( 0 , 2 );
+class Graph {
+    constructor(maxVertexSize) {
+        this.maxVertexSize = maxVertexSize; // Two-dimensional array size
+        this.vertexs = new Array(maxVertexSize);
+        this.size = 0; // Current vertex size
+        this.adjacencyMatrix = new Array(maxVertexSize);
 
-    graph.addEdge ( 0 , 3 );
+        for (var i = 0; i < maxVertexSize; i++) {
+            this.adjacencyMatrix[i] = new Array();
 
-    graph.addEdge ( 1 , 2 );
+            for (var j = 0; j < maxVertexSize; j++) {
+                this.adjacencyMatrix[i][j] = 0;
+            }
+        }
 
-    graph.addEdge ( 1 , 3 );
+        this.queue = new Queue(); // Queue saves current vertices
+    }
 
-    graph.addEdge ( 2 , 3 );
+    addVertex(data) {
+        var vertex = new Vertex(data, false);
+        this.vertexs[this.size] = vertex;
+        this.size++;
+    }
 
-    graph.addEdge ( 3 , 4 );
+    // Add adjacent edges
+    addEdge(from, to) {
+        // A -> B and B -> A are different
+        this.adjacencyMatrix[from][to] = 1;
+    }
 
-    // Two-dimensional array traversal output vertex edge and adjacent array
+    breadthFirstSearch() {
+        // Start searching from the first vertex
+        var firstVertex = this.vertexs[0];
 
-    printGraph ( graph );
+        firstVertex.setVisited(true);
+        document.write(firstVertex.getData());
 
-    document.write ( "\nBreadth-First Search traversal output : <br>" );
+        this.queue.add(0);
 
-    graph.breadthFirstSearch ();
+        var col = 0;
+
+        while (!this.queue.isEmpty()) {
+            var head = this.queue.remove();
+
+            // Get adjacent vertex positions that have not been visited
+            col = this.findAdjacencyUnVisitedVertex(head);
+
+            // Loop through all vertices connected to the current vertex
+            while (col != -1) {
+                this.vertexs[col].setVisited(true);
+                document.write(" -> " + this.vertexs[col].getData());
+                this.queue.add(col);
+                col = this.findAdjacencyUnVisitedVertex(head);
+            }
+        }
+
+        this.clear();
+    }
+
+    // Get adjacent vertex positions that have not been visited
+    findAdjacencyUnVisitedVertex(row) {
+        for (var col = 0; col < this.size; col++) {
+            if (
+                this.adjacencyMatrix[row][col] == 1 &&
+                !this.vertexs[col].isVisited()
+            ) {
+                return col;
+            }
+        }
+
+        return -1;
+    }
+
+    // Clear reset
+    clear() {
+        for (var i = 0; i < this.size; i++) {
+            this.vertexs[i].setVisited(false);
+        }
+    }
+
+    getAdjacencyMatrix() {
+        return this.adjacencyMatrix;
+    }
+
+    getVertexs() {
+        return this.vertexs;
+    }
+}
+
+//////////////////////testing////////////////////
+
+function printGraph(graph) {
+    document.write(
+        "Two-dimensional array traversal output vertex edge and adjacent array : <br>"
+    );
+
+    document.write("&nbsp;&nbsp;&nbsp;");
+
+    for (var i = 0; i < graph.getVertexs().length; i++) {
+        document.write(
+            graph.getVertexs()[i].getData() + "&nbsp;&nbsp;&nbsp;&nbsp;"
+        );
+    }
+
+    document.write("<br>");
+
+    for (var i = 0; i < graph.getAdjacencyMatrix().length; i++) {
+        document.write(graph.getVertexs()[i].getData() + "  ");
+
+        for (var j = 0; j < graph.getAdjacencyMatrix().length; j++) {
+            document.write(
+                graph.getAdjacencyMatrix()[i][j] + "&nbsp;&nbsp;&nbsp;&nbsp;"
+            );
+        }
+
+        document.write("<br>");
+    }
+}
+
+var graph = new Graph(5);
+
+graph.addVertex("A");
+graph.addVertex("B");
+graph.addVertex("C");
+graph.addVertex("D");
+graph.addVertex("E");
+
+graph.addEdge(0, 1);
+graph.addEdge(0, 2);
+graph.addEdge(0, 3);
+graph.addEdge(1, 2);
+graph.addEdge(1, 3);
+graph.addEdge(2, 3);
+graph.addEdge(3, 4);
+
+// Two-dimensional array traversal output vertex edge and adjacent array
+printGraph(graph);
+
+document.write("\nBreadth-First Search traversal output : <br>");
+
+graph.breadthFirstSearch();
 
 </script>
+```
 
 结果：
 
@@ -4805,21 +4702,21 @@ document.write ( maxNode.getData ());
 
 ## 有向图拓扑排序
 
-有向图拓扑排序：
+### 有向图拓扑排序
 
 按照方向顺序对有向图中的顶点进行排序。
 
-有向图具有方向性：A -> B 和 B -> A 是不同的
+有向图具有方向性：A -> B 和 B -> A 是不同的。
 
 ![](img/Image00166.jpg)
 
 1. 邻接矩阵如上所述：
 
-顶点总数是二维数组的大小，如果有边则值为 1，否则无边值为 0。
+   顶点总数是二维数组的大小，如果有边则值为 1，否则无边值为 0。
 
-![](img/Image00167.jpg)
+   ![](img/Image00167.jpg)
 
-从顶点 A 开始的拓扑排序：A -> B -> C -> D -> E
+从顶点 A 开始的拓扑排序：A -> B -> C -> D -> E。
 
 ![](img/Image00176.jpg)
 
@@ -4827,177 +4724,202 @@ document.write ( maxNode.getData ());
 
 ![](img/Image00178.jpg)
 
-用记事本创建一个 `TestTopologicalSorting.html` 文件
+用记事本创建一个 `TestTopologicalSorting.html` 文件。
 
-```
-<script type = "text/javascript" >
+```javascript
+<script type="text/javascript">
 
-    class Vertex {
-
-        constructor ( data , visited ){
-
-            this.data = data ;
-
-            this.visited = visited ; // Have you visited
-
-        }
-
-        getData () {
-
-            return this.data ;
-
-        }
-
-        setData ( data ) {
-
-            this.data = data ;
-
-        }
-
-        isVisited () {
-
-            return this.visited ;
-
-        }
-
-        setVisited ( visited ) {
-
-            this.visited = visited ;
-
-        }
-
+class Vertex {
+    constructor(data, visited) {
+        this.data = data;
+        this.visited = visited; // Have you visited
     }
 
-    class Graph {
+    getData() {
+        return this.data;
+    }
+
+    setData(data) {
+        this.data = data;
+    }
+
+    isVisited() {
+        return this.visited;
+    }
+
+    setVisited(visited) {
+        this.visited = visited;
+    }
+}
+
+class Graph {
+```
+
+```javascript
+constructor(maxVertexSize) {
+    this.maxVertexSize = maxVertexSize; // Two-dimensional array size
+    this.vertexs = new Array(maxVertexSize);
+    this.topologys = new Array();
+    this.adjacencyMatrix = new Array(maxVertexSize);
+
+    for (var i = 0; i < maxVertexSize; i++) {
+        this.adjacencyMatrix[i] = new Array();
+
+        for (var j = 0; j < maxVertexSize; j++) {
+            this.adjacencyMatrix[i][j] = 0;
+        }
+    }
+
+    this.size = 0;
+}
+
+addVertex(data) {
+    var vertex = new Vertex(data, false);
+    this.vertexs[this.size] = vertex;
+    this.size++;
+}
+
+// Add adjacent edges
+addEdge(from, to) {
+    // A -> B and B -> A are different
+    this.adjacencyMatrix[from][to] = 1;
+}
+
+topologySort() {
+    while (this.size > 0) {
+        var noSuccessorVertex = this.getNoSuccessorVertex(); // Get a no successor node
 ```
 
 
 
 ```javascript
-constructor ( maxVertexSize ){
-    this.maxVertexSize = maxVertexSize ; // Two-dimensional array size
-    this.vertexs = new Array ( maxVertexSize );
-    this.topologys = new Array ();
-    this.adjacencyMatrix = new Array ( maxVertexSize );
-    for ( var i = 0 ; i < maxVertexSize ; i ++) {
-        this.adjacencyMatrix [ i ] = new Array ();
-        for ( var j = 0 ; j < maxVertexSize ; j ++) {
-            this.adjacencyMatrix [ i ][ j ] = 0 ;
-        }
-    }
-    this.size = 0 ;
+if (noSuccessorVertex == -1) {
+    document.write("There is ring in Graph");
+
+    return;
 }
-addVertex ( data ) {
-    var vertex = new Vertex ( data , false );
-    this.vertexs [ this.size ] = vertex ;
-    this.size ++;
+
+// Copy the deleted node to the sorted array
+this.topologys[this.size - 1] = this.vertexs[noSuccessorVertex];
+
+this.removeVertex(noSuccessorVertex); // Delete no successor node
 }
-// Add adjacent edges
-addEdge ( from , to ) {
-    // A -> B  and B -> A are different
-    this.adjacencyMatrix [ from ][ to ] = 1 ;
 }
-topologySort () {
-    while ( this.size > 0 ) {
-        var noSuccessorVertex = this.getNoSuccessorVertex (); // Get a no successor node
-        if ( noSuccessorVertex == - 1 ) {
-            document.write ( "There is ring in Graph " );
-            return ;
-        }
-        // Copy the deleted node to the sorted array
-        this.topologys [ this.size - 1 ] = this.vertexs [ noSuccessorVertex ];
-        this.removeVertex ( noSuccessorVertex ); // Delete no successor node
-    }
-}
-getNoSuccessorVertex () {
-    var existSuccessor = false ;
-    for ( var row = 0 ; row < this.size ; row ++) { // For each vertex
-        existSuccessor = false ;
-        //If the node has a fixed row, each column has a 1, indicating that the node has a successor, terminating the loop
-        for ( var col = 0 ; col < this.size ; col ++) {
-            if ( this.adjacencyMatrix [ row ][ col ] == 1 ) {
-                existSuccessor = true ;
-                break ;
+
+getNoSuccessorVertex() {
+    var existSuccessor = false;
+
+    for (var row = 0; row < this.size; row++) { // For each vertex
+        existSuccessor = false;
+
+        // If the node has a fixed row, each column has a 1, indicating that the node has a successor, terminating the loop
+        for (var col = 0; col < this.size; col++) {
+            if (this.adjacencyMatrix[row][col] == 1) {
+                existSuccessor = true;
+                break;
             }
         }
-        if (! existSuccessor ) { // If the node has no successor, return its subscript
-            return row ;
+
+        if (!existSuccessor) { // If the node has no successor, return its subscript
+            return row;
         }
     }
-    return - 1 ;
+
+    return -1;
 }
-removeVertex ( vertex ) {
-    if ( vertex != this.size - 1 ) { //If the vertex is the last element, the end
-        for ( var i = vertex ; i < this.size - 1 ; i ++) { // The vertices are removed from the vertex array
-            this.vertexs [ i ] = this.vertexs [ i + 1 ];
+
+removeVertex(vertex) {
+    if (vertex != this.size - 1) { // If the vertex is the last element, the end
+        for (var i = vertex; i < this.size - 1; i++) { // The vertices are removed from the vertex array
+            this.vertexs[i] = this.vertexs[i + 1];
         }
-        for ( var row = vertex ; row < this.size - 1 ; row ++) { // move up a row
-            for ( var col = 0 ; col < this.size - 1 ; col ++) {
-                this.adjacencyMatrix [ row ][ col ] = this.adjacencyMatrix [ row + 1 ][ col ];
+
+        for (var row = vertex; row < this.size - 1; row++) { // Move up a row
+            for (var col = 0; col < this.size - 1; col++) {
+                this.adjacencyMatrix[row][col] = this.adjacencyMatrix[row + 1][col];
             }
         }
-        for ( var col = vertex ; col < this.size - 1 ; col ++) { // move left a row
-            for ( var row = 0 ; row < this.size - 1 ; row ++) {
-                this.adjacencyMatrix [ row ][ col ] = this.adjacencyMatrix [ row ][ col + 1 ];
+
+        for (var col = vertex; col < this.size - 1; col++) { // Move left a row
+            for (var row = 0; row < this.size - 1; row++) {
+                this.adjacencyMatrix[row][col] = this.adjacencyMatrix[row][col + 1];
             }
         }
     }
-    this.size --; // Decrease the number of vertices
+
+    this.size--; // Decrease the number of vertices
 }
+
 // Clear reset
-clear () {
-    for ( var i = 0 ; i < this.size ; i ++) {
-        this.vertexs [ i ]. setVisited ( false );
+clear() {
+    for (var i = 0; i < this.size; i++) {
+        this.vertexs[i].setVisited(false);
     }
 }
-getAdjacencyMatrix () {
-    return this.adjacencyMatrix ;
+
+getAdjacencyMatrix() {
+    return this.adjacencyMatrix;
 }
-getVertexs () {
-    return this.vertexs ;
+
+getVertexs() {
+    return this.vertexs;
 }
-getTopologys () {
-    return this.topologys ;
+
+getTopologys() {
+    return this.topologys;
 }
 }
+
 //////////////////////testing////////////////////
-function printGraph ( graph ) {
-    document.write ( "Two-dimensional array traversal output vertex edge and adjacent array :  <br>" );
-    document.write ( "&nbsp;&nbsp;&nbsp;" );
-    for ( var i = 0 ; i < graph.getVertexs (). length ; i ++) {
-        document.write ( graph.getVertexs ()[ i ]. getData () + "&nbsp;&nbsp;&nbsp;&nbsp;" );
+
+function printGraph(graph) {
+    document.write("Two-dimensional array traversal output vertex edge and adjacent array :  <br>");
+    document.write("&nbsp;&nbsp;&nbsp;");
+
+    for (var i = 0; i < graph.getVertexs().length; i++) {
+        document.write(graph.getVertexs()[i].getData() + "&nbsp;&nbsp;&nbsp;&nbsp;");
     }
-    document.write ( "<br>" );
-    for ( var i = 0 ; i < graph.getAdjacencyMatrix (). length ; i ++) {
-        document.write ( graph.getVertexs ()[ i ]. getData () + "  " );
-        for ( var j = 0 ; j < graph.getAdjacencyMatrix (). length ; j ++) {
-            document.write ( graph.getAdjacencyMatrix ()[ i ][ j ] + "&nbsp;&nbsp;&nbsp;&nbsp;" );
+
+    document.write("<br>");
+
+    for (var i = 0; i < graph.getAdjacencyMatrix().length; i++) {
+        document.write(graph.getVertexs()[i].getData() + "  ");
+
+        for (var j = 0; j < graph.getAdjacencyMatrix().length; j++) {
+            document.write(graph.getAdjacencyMatrix()[i][j] + "&nbsp;&nbsp;&nbsp;&nbsp;");
         }
-        document.write ( "<br>" );
+
+        document.write("<br>");
     }
 }
-var graph = new Graph ( 5 );
-graph.addVertex ( "A" );
-graph.addVertex ( "B" );
-graph.addVertex ( "C" );
-graph.addVertex ( "D" );
-graph.addVertex ( "E" );
-graph.addEdge ( 0 , 1 );
-graph.addEdge ( 0 , 2 );
-graph.addEdge ( 0 , 3 );
-graph.addEdge ( 1 , 2 );
-graph.addEdge ( 1 , 3 );
-graph.addEdge ( 2 , 3 );
-graph.addEdge ( 3 , 4 );
+
+var graph = new Graph(5);
+
+graph.addVertex("A");
+graph.addVertex("B");
+graph.addVertex("C");
+graph.addVertex("D");
+graph.addVertex("E");
+
+graph.addEdge(0, 1);
+graph.addEdge(0, 2);
+graph.addEdge(0, 3);
+graph.addEdge(1, 2);
+graph.addEdge(1, 3);
+graph.addEdge(2, 3);
+graph.addEdge(3, 4);
+
 // Two-dimensional array traversal output vertex edge and adjacent array
-printGraph ( graph );
-document.write ( "<br>Depth-First Search traversal output : <br>" );
-document.write ( "Directed Graph Topological Sorting:<br>" );
-graph.topologySort ();
-for ( var i = 0 ; i < graph.getTopologys (). length ; i ++){
-    document.write ( graph.getTopologys ()[ i ]. getData ()+ " -> " );
+printGraph(graph);
+
+document.write("<br>Depth-First Search traversal output : <br>");
+document.write("Directed Graph Topological Sorting:<br>");
+
+graph.topologySort();
+
+for (var i = 0; i < graph.getTopologys().length; i++) {
+    document.write(graph.getTopologys()[i].getData() + " -> ");
 }
-</script>
 ```
 
 结果：

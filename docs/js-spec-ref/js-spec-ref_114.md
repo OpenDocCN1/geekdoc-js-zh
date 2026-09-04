@@ -1,35 +1,5 @@
-# 13.17 Express 框架
 
-*   概述
-    *   搭建 HTTPs 服务器
-    *   运行原理
-        *   底层：http 模块
-        *   对 http 模块的再包装
-        *   什么是中间件
-        *   use 方法
-    *   Express 的方法
-        *   all 方法和 HTTP 动词方法
-        *   set 方法
-        *   response 对象
-        *   requst 对象
-    *   项目开发实例
-        *   编写启动脚本
-        *   配置路由
-        *   静态网页模板
-    *   动态网页模板
-        *   安装模板引擎
-        *   新建数据脚本
-        *   新建网页模板
-        *   渲染模板
-        *   指定静态文件目录
-    *   ExpressJS 4.0 的 Router 用法
-        *   基本用法
-        *   router.route 方法
-        *   router 中间件
-        *   对路径参数的处理
-        *   app.route
-    *   上传文件
-    *   参考链接
+# 13.17 Express 框架
 
 ## 概述
 
@@ -219,9 +189,9 @@ Express 框架等于在 http 模块之上，加了一个中间层，而 use 方�
 
 ### 什么是中间件
 
-简单说，中间件（middleware）就是处理 HTTP 请求的函数，用来完成各种特定的任务，比如检查用户是否登录、分析数据、以及其他在需要最终将数据发送给用户之前完成的任务。它最大的特点就是，一个中间件处理完，再传递给下一个中间件。
+简单说，中间件（middleware）就是处理 HTTP 请的函数，用来完成各种特定的任务，比如检查用户是否登录、分析数据、以及其他在需要最终将数据发送给用户之前完成的任务。它最大的特点就是，一个中间件处理完，再传递给下一个中间件。
 
-node.js 的内置模块 http 的 createServer 方法，可以生成一个服务器实例，该实例允许在运行过程中，调用一系列函数（也就是中间件）。当一个 HTTP 请求进入服务器，服务器实例会调用第一个中间件，完成后根据设置，决定是否再调用下一个中间件。中间件内部可以使用服务器实例的 response 对象（ServerResponse，即回调函数的第二个参数），以及一个 next 回调函数（即第三个参数）。每个中间件都可以对 HTTP 请求（request 对象）做出回应，并且决定是否调用 next 方法，将 request 对象再传给下一个中间件。
+node.js 的内置模块 http 的 createServer 方法，可以生成一个服务器实例，该实例允在运行过程中，调用一系列函数（也就是中间件）。当一个 HTTP 请求进入服务器，服务器实例会调用第一个中间件，完成后根据设置，决定是否再调用下一个中间件。中间件内部可以使用服务器实例的 response 对象（ServerResponse，即回调函数的第二个参数），以及一个 next 回调函数（即第三个参数）。每个中间件都可以对 HTTP 请求（request 对象）做出回应，并且决定是否调用 next 方法，将 request 对象再传给下一个中间件。
 
 一个不进行任何操作、只传递 request 对象的中间件，大概是下面这样：
 
@@ -1124,8 +1094,13 @@ function upload(file, signed_request, url, done) {
 ## 参考链接
 
 *   Raymond Camden, [Introduction to Express](http://net.tutsplus.com/tutorials/javascript-ajax/introduction-to-express/)
+
 *   Christopher Buecheler, [Getting Started With Node.js, Express, MongoDB](http://cwbuecheler.com/web/tutorials/2013/node-express-mongo/)
+
 *   Stephen Sugden, [A short guide to Connect Middleware](http://stephensugden.com/middleware_guide/)
+
 *   Evan Hahn, [Understanding Express.js](http://evanhahn.com/understanding-express/)
+
 *   Chris Sevilleja, [Learn to Use the New Router in ExpressJS 4.0](http://scotch.io/tutorials/javascript/learn-to-use-the-new-router-in-expressjs-4)
+
 *   Stefan Fidanov, [Limitless file uploading to Amazon S3 with Node & Express](http://www.terlici.com/2015/05/23/uploading-files-S3.html)

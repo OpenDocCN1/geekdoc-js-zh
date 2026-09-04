@@ -1,36 +1,60 @@
-# Javascript：4本合1
+
+# JavaScript：4本合1
+
 Java 编程初学者指南
+
 Java 编程技巧与窍门
+
 Java 编程最佳实践
+
 Java 编程高级指南
-
-
 
 ![](img/cover.jpg)
 
-
 ## 目录
+
 - 序言
+
 - 第 1 章：JavaScript...它是什么？对我将何受益？
+
 - 第 2 章：HTML 与 JavaScript
+
 - 第 3 章：数据与 JavaScript 变量
+
 - 第 4 章：使用 JavaScript 进行数学
+
 - 第 5 章：JavaScript 逻辑
+
 - 第 6 章：JavaScript 条件
+
 - 第 7 章：JavaScript 循环
+
 - 第 8 章：JavaScript 中的函数
+
 - 第 9 章：JavaScript 中的对象
+
 - 第 10 章：JavaScript 数组
+
 - 第 11 章：DOM
+
 - 第 12 章：JavaScript 回调与事件
+
 - 第 13 章：JavaScript 中的 AJAX
+
 - 第 14 章：JSON
+
 - 第 15 章：JavaScript 作用
+
 - 第 16 章：JavaScript 中的 jQuery
+
 - 第 17 章：jQuery DOM 与 API
+
 - 第 18 章：jQuery 与 AJAX
+
 - 第 19 章：jQuery 及其他技巧
+
 - 第 20 章：JavaScript 控制流语句
+
 - 结
 
 © 版所有 2016 Charlie Masterson - 版权所有。
@@ -85,10 +109,6 @@ JavaScript 不仅在从事 IT 或 Web 设计时有益处。JavaScript 可以用�
 
 # 第 2 章：
 
-
-
-
-
 ![image](img/chapter_title_below.png)
 
 # HTML 与 JavaScript
@@ -104,6 +124,7 @@ JavaScript 也可以直接在脚本中使用，即所谓的“内部使用”，
 每当你将 JavaScript 代码放入 HTML 正在使用的脚本元素时，你就是在从内部使用 JavaScript，因为它被直接放置在脚本中。
 
 ### 代码
+
 ```html
 <script>
 Alert(“Hello, people.”);
@@ -117,6 +138,7 @@ Alert(“Hello, people.”);
 你使用的文件应该命名为 `filename.js`，并列与 HTML 文件位于相同的目录下。
 
 ### 代码
+
 ```html
 <script src = “ script.js”> </script>
 ```
@@ -144,6 +166,7 @@ Alert(“Hello, people.”);
 当你编写代码时，你可以通过询问可能以后使用的信息来与用户交互。
 
 ### 代码
+
 你希望用户输入他们的姓氏，以便为他们提供个性化的问候。
 
 ```javascript
@@ -175,6 +198,7 @@ Var surname = prompt ( ‘ Greetings user, may I ask what your surname is? ‘ )
 为了留出一个变量，在编写变量名之前使用 `var` 单词。这告诉代码变量的名称以及它应该如何运行。
 
 ### 代码
+
 ```javascript
 Var birthday ;
 Var first name ;
@@ -189,15 +213,19 @@ Var first name ;
 变量的初始化将使用等号 `=`，使得语句的含义是：等号左侧列出的变量的值将与左侧的数据一致。
 
 ### 代码
+
 ```javascript
 Var name = “Sue” ;
 ```
+
 字符串将是 `Sue`，该字符串会被引号包围。
 
 ### 代码
+
 ```javascript
 Var age = 22 ;
 ```
+
 由于变量的值是一个数字，它不需要引号。
 
 ## 赋值
@@ -207,10 +235,12 @@ Var age = 22 ;
 会使用等号，但你不需要 `var` 关键字，因为代码已经知道该值是一个变量。
 
 ### 代码
+
 ```javascript
 Name = “Sue” ;
 Age = 22;
 ```
+
 但变量必须先声明！
 
 | ![image](img/chapter_title_corner_decoration_left.png) |  | ![image](img/chapter_title_corner_decoration_right.png) |
@@ -226,23 +256,24 @@ Age = 22;
 在你的脚本中，你将创建两个变量。
 
 ### 代码
+
 ```javascript
 Var apples = 5, oranges = 10;
 ```
+
 现在你创建了两个变量。`var` 只使用了一次是因为你进行了初始化并给变量赋予了值。当你写一次关键字并用逗号分隔它们时，你节省了额外的工作。
 
 在 JavaScript 的帮助下，你将能够算出你有个水果。
 
 ### 代码
+
 ```javascript
 Var piecesOfFruit = apples + oranges;
 ```
+
 代码将告诉浏览器，在将该结果重新赋值给 `piecesOfFruit` 数量之前，需要先算出右侧数字的和。但变量名本身不会相加，只有值会相加。你的浏览器会知道你在做什么，并且只会给你值的总和。
 
 你的总和不是水果，而是 `piecesOfFruit`，因为你的变量不能包含任何空格。很容易发现 `Of` 和 `Fruit` 中的 `O` 和 `F` 是大写的。这被称为“驼峰命名法”（camel casing），有助于让变量更容易读。
-
-
-
 
 请记住，代码的阅读方式有多种。这就是为什么确保你的代码易于阅读和理解是如此重要。
 
@@ -261,8 +292,11 @@ JavaScript 可以完成这些数学计算，而无需取出计算器来确保计
 为了得到一组数字的和，你将为每种操作使用符号。
 
 - 乘法 (`*`)
+
 - 加法 (`+`)
+
 - 除法 (`/`)
+
 - 减法 (`-`)
 
 每个符号都被称为运算符（operator），因为它们将对某种数学数据进行操作。就像任何数学题一样，这些操作的执行会有一个特定的顺序，这被称为运算符优先级（operator precedence）。
@@ -395,8 +429,6 @@ Alert (i) ;
 ```
 
 在代码中，将弹出一个警告框，按顺序给出 1 到 10 的数字。`i++` 等同于 `i = i + l`。
-
-
 
 `a` 和 `b` 将作为函数的参数，而值将通过关键字返回。用于 `return` 的关键字将停止函数中放置的代码，因此在其之后将不再有代码运行。
 
@@ -589,10 +621,6 @@ Var pageHeader = document. getElementByID ( ‘ page header ‘ ) ;
 
 `document.getElementsByTagName` 的工作与 `getElementById` 相同，但它需要标签名（如 `a`、`li` 或 `ul`）而不是 ID。它将返回一个 `NodeList`，这本质上是 DOM 元素的列表或数组。
 
-
-
-
-
 ### 类名
 
 `document.getElementsByClassName` 返回的列表与标签名方法返回相同。最大的区别在于，你必须传递一个匹配的类名，而不是标签名。
@@ -708,10 +736,6 @@ JSON 可能不是 JavaScript 官方代码的一部分，但它是 JavaScript 的
 
 和普通的 JavaScript 代码一样，括号被用于标记代码的特定部分。
 
-
-
-
-
 JSON 用于在浏览器与其服务器之间传输需要移动的信息，或者保存到文本文件中以便稍后检索。正因如此，你不允许存储函数等复杂数据。然而，数组和任何包含简单数据的对象是允许的。
 
 JSON 将在 Web 端取代 XML 的地位，并且已经编写了新的 API 来提供服务。这意味着你可以使用 AJAX 技术来获取 JSON。
@@ -798,6 +822,7 @@ console.log(a); // a 将是 10
 };
 };
 ```
+
 函数作用域在创建优雅代码方面是非常强大的工具，但需要一段时间才能真正精通。
 
 ![image](img/chapter_title_corner_decoration_left.png) | ![image](img/chapter_title_corner_decoration_right.png) | ![image](img/chapter_title_above.png)
@@ -842,10 +867,6 @@ $('.note').css('background', 'red').height(100);
 var currentWeather = $('.note').height();
 var currentColor = $('.note').css('color');
 ```
-
-
-
-
 
 当选取了多个元素时，获取器（getter）将检索第一个元素的值。
 
@@ -994,9 +1015,14 @@ $(window) . load (doSomething) ;
 要找出存储在变量中的数据，JavaScript 会显得有些笨拙，但 jQuery 能够向你展示如何优雅地完成。
 
 ### Code
+
+```
 $. isArray ( | 1, 2, 3 | ) ; True
+
 $.isFunction (function () {  } ) ; True
+
 $. isNumeric (10) ; True
+
 $. isPlainObject ( { name:‘Burt’ } ) ; True.
 ```
 
@@ -1012,12 +1038,19 @@ $. isPlainObject ( { name:‘Burt’ } ) ; True.
 
 ```
 驾驶员课程只有在汽车已经移动的情况下才允许通过刹车减慢汽车的加速度。
+
 Void applyBrakes() {
+
 // “if” 子句：汽车已经在运动中
+
 If (isMoving) {
+
 // “then” 子句：降低汽车加速度
+
 acceleration—;
+
 }
+
 }
 ```
 
@@ -1025,9 +1058,13 @@ acceleration—;
 
 ```
 Void applyBreaks() {
+
 // 与上述代码相同，只是这里没有大括号
+
 If (isMoving)
+
 CurrentSpeed—;
+
 }
 ```
 
@@ -1041,11 +1078,17 @@ CurrentSpeed—;
 
 ```
 Void applyBreakes() {
+
 If (isMoving) {
+
 CurrentSpeed—;
+
 } else {
+
 System.err.printin (“汽车没有移动！”)
+
 }
+
 }
 ```
 
@@ -1057,48 +1100,81 @@ System.err.printin (“汽车没有移动！”)
 
 ```
 Public class SwitchDemo {
+
 Publicstatic void main (String[] args) {
+
 Int month = 8 ;
+
 String monthString ;
+
 Switch (month) {
+
 Case 1: monthString = “January” ;
+
 Break ;
+
 Case 2: monthString = “February” ;
+
 Break ;
+
 Case 3: monthString = “March” ;
+
 Break ;
+
 Case 4: monthString = “April” ;
+
 Break ;
+
 Case 5: monthString = “May” ;
+
 Break ;
+
 Case 6: monthString = “June” ;
+
 Break ;
+
 Case 7: monthString = “July” ;
+
 Break ;
+
 Case 8: monthString = “August” ;
+
 Break ;
+
 Case 9: monthString = “September” ;
+
 Break ;
+
 Case 10: monthString = “October” ;
+
 Break ;
+
 Case 11: monthString = “November” ;
+
 Break ;
+
 Case 12: monthString = “December” ;
+
 Break ;
+
 Default: monthString = “Invalid month” ;
+
 Break ;
+
 }
+
 System.out.println(monthString) ;
+
 }
+
 }
 ```
-
-
 
 作为 `switch` 语句的一部分，其主要声明是允许注释落在 `switch` 块中，以便执行多个 `case` 或 `default` 标签。所有的 `switch` 语句在被 `JavaScript` 执行之前都会进行评估。当一个语句与另一个语句具有相同的标签时，它将成功执行。
 
 ### Code
 ```java
+
 Int month = 8
 
 If (month == 1) {
@@ -1112,6 +1188,7 @@ If (month == 1) {
 }
 
 ... 依此类推。
+
 ```
 
 当使用 `if then else` 语句时，必须检查表达式的清晰度。`If then else` 语句将测试任何表达式，以检查条件以及根据使用的枚举值、字符串值和整数来测试测试而必须使用的任何值。`Switch` 语句将结束任何 `break` 语句。
@@ -1120,6 +1197,7 @@ If (month == 1) {
 
 ### Code
 ```java
+
 Public class SwitchDemoFallThrough {
 
 Public static void main (String[] args) {
@@ -1173,6 +1251,7 @@ If (futureMonths.isEmpty()) {
         System.out.println (monthName) ;
 
     }
+
 }
 
 }
@@ -1186,6 +1265,7 @@ If (futureMonths.isEmpty()) {
 
 ### Code
 ```java
+
 Class SwitchDemo2 {
 
 Public static void main (String[] args) {
@@ -1241,6 +1321,7 @@ System.out.println (“Number of Days = “ + numDays) ;
 }
 
 }
+
 ```
 
 结果将是 29，因为在 2 月发现了 29 天。
@@ -1250,6 +1331,7 @@ System.out.println (“Number of Days = “ + numDays) ;
 
 ### Code
 ```java
+
 Public class StringSwitchDemo {
 
 Public static int getMonthNumber(String month) {
@@ -1269,6 +1351,7 @@ Case “January”:
 monthNumber = 1
 
 break ;
+
 ```
 
 该语句将继续执行，直到所有十二月份都以小写写出，并带有与月份相关的数字。
@@ -1278,14 +1361,19 @@ break ;
 
 #### 语法
 ```
+
 While (expression) {
+
     Statement(s)
+
 }
+
 ```
 `while` 语句在返回布尔语句之前将评估任何和所有表达式。当发现条件为真时，它将执行在 `while` 块中找到的任何语句。
 
 ### Code
 ```java
+
 Class WhileDemo {
 
 Public static void main(String[] args) {
@@ -1301,24 +1389,34 @@ While (count < 8) {
 }
 
 }
+
 ```
 
 无限循环的语法如下：
 ```
+
 While (true){
+
     // script
+
 }
+
 ```
 `do while` 语句可以位于 `JavaScript`：
 ```
+
 Do {
+
     Statement(s)
+
 } while (expression) ;
+
 ```
 `do while` 语句至少执行一次。
 
 ### Code
 ```java
+
 Class DoWhileDemo {
 
 Public static void main(String[] args) {
@@ -1336,6 +1434,7 @@ Do {
 }
 
 }
+
 ```
 
 ### For 语句
@@ -1343,14 +1442,19 @@ Do {
 
 #### 语法
 ```
+
 For (initialization; termination; Increment) {
+
     Statement(s)
+
 }
+
 ```
 当你处理 `for` 语句时，必须记住当条件发现为假时将停止。`Increment` 表达式将在迭代后调用，但这种表达式值增加或减少。最后，表达式的初始化将初始化循环。
 
 ### Code
 ```java
+
 Class ForDemo {
 
 Public static void main(String[] args) {
@@ -1364,10 +1468,8 @@ Public static void main(String[] args) {
 }
 
 }
+
 ```
-
-
-
 
 任何像上面代码那样持有值的变量都将再次给你提供一到十的输出。这种变体的用法将按照通常编写 `for` 语句的通用方式写出语句。
 
@@ -1378,25 +1480,45 @@ JavaScript 中使用了两种 `break` 语句：带标签的语句（labeled stat
 #### 代码示例（Code）
 
 ```java
+
 Class BreakDemo {
+
     Public static void main(String[] args) {
+
         Int[] arrayofInts = {72, 57, 5, 579, 14, 1179, 2120, 9, 655, 145};
+
         Int searchfor = 14;
+
         Int I;
+
         Boolean fountIt = false;
+
         For (I = 0; I < arrayOfInts . length; i++) {
+
             If (arrayOfInts [i] == searchfor) {
+
                 fountIt = true;
+
                 break;
+
             }
+
         }
+
         If (foundIt) {
+
             System.out.println(“found “ + searchfor + “ at index “ + i);
+
         } else {
+
             System.out.println (search for + “ not in the array”);
+
         }
+
     }
+
 }
+
 ```
 
 在到达你想要提取的值之前，只要循环已终止，就必须在粗体打印处放置语句。大多数控制流语句都可以转移到循环中。
@@ -1408,33 +1530,61 @@ Class BreakDemo {
 #### 代码示例（Code）
 
 ```java
+
 Class BreakWithLabelDemo {
+
     Public static void main(String[] args) {
+
         Int[] []arrayOfInts = {
+
             { 32, 87, 3, 589 },
+
             { 12, 1076, 2000, 8 },
+
             { 622, 127, 77, 955}
+
         };
+
         Int searchfor = 12;
+
         Int I;
+
         Int j = 0;
+
         Boolean foundIt = false;
+
         Search:
+
         For (I =0; I < arrayOfInts.length; i++) {
+
             For (j = 0; j < arrayOfInts[i].length; J++) {
+
                 If (arrayOfInts[i][j] == searchfor) {
+
                     foundIt = true;
+
                     breack search;
+
                 }
+
             }
+
         }
+
         If (foundIt) {
+
             System.out.println(“Found “ + searchfor + “ at “ + I + “, “ +j);
+
         } else {
+
             System.outoutprintln(searchfor + “ not in the array”);
+
         }
+
     }
+
 }
+
 ```
 
 输出将是在第一个索引找到了十二。
@@ -1448,21 +1598,37 @@ Class BreakWithLabelDemo {
 #### 代码示例（Code）
 
 ```java
+
 Class ContinueDemo {
+
     Public static void main(String[] args) {
+
         String searchMe = “Peter Piper picked a “ + “peck of pickled peppers”;
+
         Int max = searchMe.length();
+
         Int numPs=0;
+
         For (int I = 0; I < max; I++) {
+
             // 只对 p 感感兴趣
+
             If (searchMe.charAt(i) ! = ‘p’)
+
                 Continue;
+
             // 处理 p
+
             numPs++;
+
         }
+
         System.out.println(found” + numPs + “ p’s in the string. “ );
+
     }
+
 }
+
 ```
 
 在上面的代码中发现了两个 p。
@@ -1474,28 +1640,51 @@ Class ContinueDemo {
 #### 代码示例（Code）
 
 ```java
+
 Class ContinueWithLabelDemo {
+
     Public static void main(String[] args) {
+
         String searchMe = “Look for a substring in me” ;
+
         String substring = “sub”;
+
         Boolean foundIt = false;
+
         Int max = searchMe.length() – Substring.length();
+
         Test:
+
         For (int I = 0; I <= max; i++) {
+
             Int n = substring.length();
+
             Int j = I;
+
             Int k =0;
+
             While (n—!= 0) {
+
                 If (searchMe.charAt(j++) != substring.charAt((k++)) {
+
                     Continue test;
+
                 }
+
             }
+
             foundIt = true;
+
             break test;
+
         }
+
         System.out.println(foundIt ? “Found it” : “Didn’t find it”);
+
     }
+
 }
+
 ```
 
 ### return 语句
@@ -1511,3 +1700,4 @@ Class ContinueWithLabelDemo {
 感谢你读到《JavaScript：使用 JavaScript 编程入门指南》的最后，我们希望它是启发性的，并为你提供了所需的所有工具。
 
 下一步是使用你学习的编码技能创建你自己的代码。
+

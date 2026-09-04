@@ -1,31 +1,56 @@
+
 # 5.6 CSS 操作
 
 CSS 与 JavaScript 是两个有着明确分工的领域，前者负责页面的视觉效果，后者负责与用户的行为互动。但是，它们毕竟同属网页开发的前端，因此不可避免有着交叉和互相配合。本节介绍如果通过 JavaScript 操作 CSS。
 
 *   HTML 元素的 style 属性
+
 *   Element 节点的 style 属性
+
     *   基本用法
+
     *   cssText 属性
+
     *   CSS 模块的侦测
+
     *   setPropertyValue()，getPropertyValue()，removeProperty()
+
     *   CSS 伪元素
+
     *   StyleSheet 对象
+
         *   获取样式表
+
         *   属性
+
         *   insertRule()，deleteRule()
+
         *   添加样式表
+
     *   CSS 规则
+
         *   CSSRule 接口
+
         *   CSSStyleRule 接口
+
         *   CSSMediaRule 接口
+
         *   CSSStyleDeclaration 对象
+
     *   window.getComputedStyle()
+
     *   window.matchMedia()
+
         *   基本用法
+
         *   监听事件
+
     *   CSS 事件
+
         *   transitionEnd 事件
+
         *   animationstart 事件，animationend 事件，animationiteration 事件
+
     *   参考链接
 
 ## HTML 元素的 style 属性
@@ -81,7 +106,7 @@ divStyle.cssText = 'background-color:red;'
 
 CSS 的规格发展太快，新的模块层出不穷。不同浏览器的不同版本，对 CSS 模块的支持情况都不一样。有时候，需要知道当前浏览器是否支持某个模块，这就叫做“CSS 模块的侦测”。
 
-一个比较普遍适用的方法是，判断某个 DOM 元素的 style 对象的某个属性值是否为字符串。
+一个比较普遍适用的方法是，判断某个 DOM 元素的 style 对象的某个属值是否为字符串。
 
 ```js
 typeof element.style.animationName === 'string';
@@ -140,7 +165,9 @@ CSS.supports('(display: table-cell) and (display: list-item)');
 style 对象的以下三个方法，用来读写行内 CSS 规则。
 
 *   setPropertyValue(propertyName,value)：设置某个 CSS 属性。
+
 *   getPropertyValue(propertyName)：读取某个 CSS 属性。
+
 *   removeProperty(propertyName)：删除某个 CSS 属性。
 
 这三个方法的第一个参数，都是 CSS 属性名，且不用改写连词线。
@@ -396,8 +423,11 @@ type 属性返回有一个整数值，表示当前规则的类型。
 最常见的类型有以下几种。
 
 *   1：样式规则，部署了 CSSStyleRule 接口
+
 *   3：输入规则，部署了 CSSImportRule 接口
+
 *   4：Media 规则，部署了 CSSMediaRule 接口
+
 *   5：字体规则，部署了 CSSFontFaceRule 接口
 
 ### CSSStyleRule 接口
@@ -736,7 +766,11 @@ element.style.webkitAnimationPlayState = "running";
 ## 参考链接
 
 *   David Walsh, [Add Rules to Stylesheets with JavaScript](http://davidwalsh.name/add-rules-stylesheets)
+
 *   Mozilla Developer Network, [Using CSS animations](https://developer.mozilla.org/en-US/docs/CSS/Tutorials/Using_CSS_animations)
+
 *   Ryan Morr, [Detecting CSS Style Support](http://ryanmorr.com/detecting-css-style-support/)
+
 *   Mozilla Developer Network, [Testing media queries](https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Testing_media_queries)
+
 *   Robert Nyman, [Using window.matchMedia to do media queries in JavaScript](https://hacks.mozilla.org/2012/06/using-window-matchmedia-to-do-media-queries-in-javascript/)

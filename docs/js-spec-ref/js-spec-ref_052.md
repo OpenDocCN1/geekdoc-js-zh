@@ -1,11 +1,5 @@
-# 7.1 HTML 网页元素
 
-*   image 元素
-    *   alt 属性，src 属性
-    *   complete 属性
-    *   height 属性，width 属性
-    *   naturalWidth 属性，naturalHeight 属性
-    *   audio 元素，video 元素
+# 7.1 HTML 网页元素
 
 ## image 元素
 
@@ -54,11 +48,17 @@ myImage.addEventListener('onload', function() {
 audio 元素和 video 元素加载音频和视频时，以下事件按次序发生。
 
 *   loadstart：开始加载音频和视频。
+
 *   durationchange：音频和视频的 duration 属性（时长）发生变化时触发，即已经知道媒体文件的长度。如果没有指定音频和视频文件，duration 属性等于 NaN。如果播放流媒体文件，没有明确的结束时间，duration 属性等于 Inf（Infinity）。
+
 *   loadedmetadata：媒体文件的元数据加载完毕时触发，元数据包括 duration（时长）、dimensions（大小，视频独有）和文字轨。
+
 *   loadeddata：媒体文件的第一帧加载完毕时触发，此时整个文件还没有加载完。
+
 *   progress：浏览器正在下载媒体文件，周期性触发。下载信息保存在元素的 buffered 属性中。
+
 *   canplay：浏览器准备好播放，即使只有几帧，readyState 属性变为 CAN_PLAY。
+
 *   canplaythrough：浏览器认为可以不缓冲（buffering）播放时触发，即当前下载速度保持不低于播放速度，readyState 属性变为 CAN_PLAY_THROUGH。
 
 除了上面这些事件，audio 元素和 video 元素还支持以下事件。

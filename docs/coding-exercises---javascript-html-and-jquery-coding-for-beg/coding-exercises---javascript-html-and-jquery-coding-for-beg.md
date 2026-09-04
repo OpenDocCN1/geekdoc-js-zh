@@ -1,26 +1,7 @@
-# JavaScript, HTML 和 jQuery 编程练习：初学者编程指南
 
+# JavaScript、HTML 和 jQuery 编程练习：初学者编程指南
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
----
-
-
-
----
-
+## 练习目录
 
 - 显示当前日期和时间
 - 打印内容
@@ -33,18 +14,14 @@
 - 反转给定字符串
 - 替换每个字符
 - 将首字母大写
-
-
 - 为 HTML 标签添加注释
 - 在 HTML 中创建超链接
 - 下载文件
 - 创建链接
-- 创建nofollow链接
+- 创建 `nofollow` 链接
 - 打开链接文档
-
 - 正确书写地址的方式
 - 指定替代文本
-- 创建 HTML 文档
 - 创建 HTML 文档
 - 为音频添加控件
 - 使用 HTML 标签编写粗体文本
@@ -61,16 +38,14 @@
 - 发送表单数据
 - 指定显示位置
 - 为按钮指定名称
-
-
-- 检查是否已加载 JQUERY
+- 检查是否已加载 jQuery
 - 滚动到顶部
 - 禁用右键菜单
 - 文字闪烁效果
 - 创建表格效果
 - 将第一个单词加粗
 - 为所有单词添加下划线
-- 使用 JQUERY 更改按钮文本
+- 使用 jQuery 更改按钮文本
 - 为下拉列表添加选项
 - 设置背景图片
 - 删除除第一行外的所有表格行
@@ -80,19 +55,11 @@
 - 添加前一组元素
 - 添加指定的类
 
----
-
-
-
-
----
-
-
 ## 显示当前日期和时间
 
 ### HTML 代码
 
-```
+```html
 <!DOCTYPE html>
 <html>
 <head>
@@ -103,9 +70,9 @@
 </html>
 ```
 
-### JAVASCRIPT 代码
+### JavaScript 代码
 
-```
+```javascript
 var today = new Date();
 var day = today.getDay();
 var daylist = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
@@ -148,7 +115,7 @@ console.log("Current Time : "+hour + prepand + " : " + minute + " : " + second);
 
 ### HTML 代码
 
-```
+```html
 <!DOCTYPE html>
 <html>
 <head>
@@ -163,9 +130,9 @@ console.log("Current Time : "+hour + prepand + " : " + minute + " : " + second);
 </html>
 ```
 
-### JAVASCRIPT 代码
+### JavaScript 代码
 
-```
+```javascript
 function print_current_page()
 {
 window.print();
@@ -176,7 +143,7 @@ window.print();
 
 ### HTML 代码
 
-```
+```html
 <!DOCTYPE html>
 <html>
 <head>
@@ -188,9 +155,9 @@ window.print();
 </html>
 ```
 
-### JAVASCRIPT 代码
+### JavaScript 代码
 
-```
+```javascript
 var today = new Date();
 var dd = today.getDate();
 
@@ -219,7 +186,7 @@ console.log(today);
 
 ### HTML 代码
 
-```
+```html
 <!DOCTYPE html>
 <html>
 <head>
@@ -231,9 +198,9 @@ console.log(today);
 </html>
 ```
 
-### JAVASCRIPT 代码
+### JavaScript 代码
 
-```
+```javascript
 var side1 = 5;
 var side2 = 6;
 var side3 = 7;
@@ -246,7 +213,7 @@ console.log(area);
 
 ### HTML 代码
 
-```
+```html
 <!DOCTYPE html>
 <html>
 <head>
@@ -258,9 +225,9 @@ console.log(area);
 </html>
 ```
 
-### JAVASCRIPT 代码
+### JavaScript 代码
 
-```
+```javascript
 function leapyear(year)
 {
 return (year % 100 === 0) ? (year % 400 === 0) : (year % 4 === 0);
@@ -274,20 +241,19 @@ console.log(leapyear(100));
 
 ### 输出
 
-| true |
-| false |
-
-true
-
-false
-
-false
+| 结果 |
+| --- |
+| `true` |
+| `false` |
+| `true` |
+| `false` |
+| `false` |
 
 ## 计算两个数的乘法和除法
 
 ### HTML 代码
 
-```
+```html
 <!DOCTYPE html>
 <html>
 <head>
@@ -311,9 +277,9 @@ body {margin: 30px;}
 </html>
 ```
 
-### JAVASCRIPT 代码
+### JavaScript 代码
 
-```
+```javascript
 function multiplyBy()
 {
     num1 = document.getElementById("firstNumber").value;
@@ -322,7 +288,7 @@ function multiplyBy()
 }
 ```
 
-```
+```javascript
 function divideBy()
 {
     num1 = document.getElementById("firstNumber").value;
@@ -335,11 +301,11 @@ function divideBy()
 
 ![](img/3c47590736460ba39948e1c4764537c3_13_0.png)
 
-## 在 JAVASCRIPT 中进行摄氏度和华氏度的相互转换
+## 在 JavaScript 中进行摄氏度和华氏度的相互转换
 
 ### HTML 代码
 
-```
+```html
 <!DOCTYPE html>
   <html>
   <head>
@@ -351,9 +317,9 @@ function divideBy()
   </html>
 ```
 
-### JAVASCRIPT 代码
+### JavaScript 代码
 
-```
+```javascript
 function cToF(celsius)
 {
   var cTemp = celsius;
@@ -383,7 +349,7 @@ fToC(45);
 
 ### HTML 代码
 
-```
+```html
 <!DOCTYPE html>
 <html>
 <head>
@@ -397,9 +363,9 @@ fToC(45);
 </html>
 ```
 
-### JAVASCRIPT 代码
+### JavaScript 代码
 
-```
+```javascript
 function max_of_three(x, y, z)
 {
   max_val = 0;
@@ -422,7 +388,7 @@ console.log(max_of_three(0,-10,-20));
 console.log(max_of_three(1000,510,440));
 ```
 
-#### 输出:
+### 输出
 
 1
 
@@ -434,7 +400,7 @@ console.log(max_of_three(1000,510,440));
 
 ### HTML 代码
 
-```
+```html
 <!DOCTYPE html>
 <html>
 <head>
@@ -447,9 +413,9 @@ console.log(max_of_three(1000,510,440));
 </html>
 ```
 
-### JAVASCRIPT 代码
+### JavaScript 代码
 
-```
+```javascript
 function string_reverse(str)
 {
     return str.split("").reverse().join("");
@@ -463,14 +429,16 @@ console.log(string_reverse("JavaScript"));
 ### 输出
 
 ecruosersj
+
 www
+
 tpircSavaJ
 
 ## 用字母表中的下一个字符替换字符串中的每个字符
 
 ### HTML 代码
 
-```
+```html
 <!DOCTYPE html>
 <html>
 <head>
@@ -485,9 +453,9 @@ tpircSavaJ
 </html>
 ```
 
-### JAVASCRIPT 代码
+### JavaScript 代码
 
-```
+```javascript
 function LetterChanges(text) {
 //https://goo.gl/R8gn7u
 var s = text.split("");
@@ -502,22 +470,15 @@ for (var i = 0; i < s.length; i++) {
         case 'Z':
             s[i] = 'A';
             break;
-```
+        default:
+            s[i] = String.fromCharCode(1 + s[i].charCodeAt(0));
+    }
 
-
-
-## LetterChanges
-
-```javascript
-default:
-    s[i] = String.fromCharCode(1 + s[i].charCodeAt(0));
-}
-
-// 大写元音字母
-switch(s[i]) {
-case 'a': case 'e': case 'i': case 'o': case 'u':
-    s[i] = s[i].toUpperCase();
-}
+    // 大写元音字母
+    switch(s[i]) {
+    case 'a': case 'e': case 'i': case 'o': case 'u':
+        s[i] = s[i].toUpperCase();
+    }
 }
 return s.join("");
 }
@@ -526,7 +487,7 @@ console.log(LetterChanges("W3R"));
 console.log(LetterChanges("php"));
 ```
 
-输出：
+### 输出
 
 QZUIPO
 
@@ -552,7 +513,7 @@ qIq
 </html>
 ```
 
-### JAVASCRIPT 代码
+### JavaScript 代码
 
 ```javascript
 function capital_letter(str)
@@ -571,18 +532,13 @@ console.log(capital_letter("Write a JavaScript program to capitalize the first l
 
 ### 输出
 
-输出：
-
 Write A JavaScript Program To Capitalize The First Letter Of Each Word Of A Given String.
-
-
-
-
-
 
 ## 注释 HTML 标签
 
 ### HTML 代码
+
+
 
 ```html
 <!DOCTYPE html>
@@ -640,7 +596,7 @@ PHP 教程
 </html>
 ```
 
-## 创建带有 media 属性的链接
+## 创建带有 `media` 属性的链接
 
 ### HTML 代码
 
@@ -657,7 +613,7 @@ PHP 教程
 </html>
 ```
 
-## 创建 nofollow 链接
+## 创建 `nofollow` 链接
 
 ### HTML 代码
 
@@ -712,7 +668,7 @@ PHP 教程
 </html>
 ```
 
-## 如果存在 href 属性，为区域指定替代文本
+## 如果存在 `href` 属性，为区域指定替代文本
 
 ### HTML 代码
 
@@ -727,7 +683,7 @@ PHP 教程
 </body>
 ```
 
-## 创建使用 article 元素的 HTML 文档
+## 创建使用 `article` 元素的 HTML 文档
 
 ### HTML 代码
 
@@ -747,7 +703,7 @@ PHP 教程
 </html>
 ```
 
-## 创建使用 aside 元素的 HTML 文档
+## 创建使用 `aside` 元素的 HTML 文档
 
 ### HTML 代码
 
@@ -863,11 +819,11 @@ PHP 教程
 
 在下面的示例中，用户显示了用户名以及比赛中的得分点数。如果浏览器不支持 bdi 元素，阿拉伯语用户的用户名会混淆文本（双向算法会将冒号和数字"80"放在单词"User"旁边，而不是放在单词"points"旁边）。
 
-- User hrefs: 40 points
-- User jdoe: 60 points
-- User 80:ترحيب points
+- User `hrefs`: 40 points
+- User `jdoe`: 60 points
+- User `80`:ترحيب points
 
-**注意：** bdi 元素目前仅在 Firefox 和 Chrome 中受支持。
+**注意：** `bdi` 元素目前仅在 Firefox 和 Chrome 中受支持。
 
 ## 定义从其他来源引用的部分
 
@@ -890,13 +846,11 @@ PHP 教程
 
 自由如果不包含犯错的自由，那就不值得拥有。我无法理解，人类无论多么有经验、有能力，怎么会以剥夺他人这种珍贵权利为乐。
 
-
-
 ## 定义文档的主体
 
 ### HTML 代码
 
-```
+```html
 <!DOCTYPE html>
 <html>
 <head>
@@ -911,13 +865,13 @@ We are learning HTML body element.
 
 ### 输出
 
-我们正在学习 HTML body 元素。
+我们正在学习 HTML `body` 元素。
 
 ## 定义单个换行
 
 ### HTML 代码
 
-```
+```html
 <!DOCTYPE html>
 <html>
 <head>
@@ -933,13 +887,14 @@ We are learning HTML body element.
 ### 输出
 
 敏捷的棕色狐狸
+
 跃过了懒狗。
 
 ## 定义可点击按钮
 
 ### HTML 代码
 
-```
+```html
 <!DOCTYPE html>
 <html>
 <head>
@@ -956,7 +911,7 @@ We are learning HTML body element.
 
 ### HTML 代码
 
-```
+```html
 <!DOCTYPE html>
 <html>
 <head>
@@ -973,7 +928,7 @@ We are learning HTML body element.
 
 ### HTML 代码
 
-```
+```html
 <!DOCTYPE html>
 <html>
 <head>
@@ -997,7 +952,7 @@ First Name : <input type="text" name="Fname"><br>
 
 ### HTML 代码
 
-```
+```html
 <!DOCTYPE html>
 <html>
 <head>
@@ -1033,7 +988,7 @@ action="https://www.htmlresource.com/html-css-exercise/basic/solution/button-for
 
 ### HTML 代码
 
-```
+```html
 <!DOCTYPE html>
 <html>
 <head>
@@ -1056,11 +1011,15 @@ action="https://www.htmlresource.com/html-css-exercise/basic/solution/button-for
 <!-- 无内容 -->
 
 ## 发送表单数据
+
 （使用哪种 HTTP 方法）
 
 ### HTML 代码
 
-```
+
+
+
+```html
 <!DOCTYPE html>
 <html>
 <head>
@@ -1087,7 +1046,7 @@ action="https://www.htmlresource.com/html-css-exercise/basic/solution/button-for
 
 ### HTML 代码
 
-```
+```html
 <!DOCTYPE html>
 <html>
 <head>
@@ -1113,12 +1072,12 @@ action="https://www.htmlresource.com/html-css-exercise/basic/solution/button-for
 
 ### HTML 代码
 
-```
+```html
 <!DOCTYPE html>
 <html>
 <head>
   <meta charset="utf-8">
-<title>How to specify a name for the button</title>
+  <title>How to specify a name for the button</title>
 </head>
 <body>
 <form action="https://www.htmlresource.com/html-css-exercise/basic/solution/button-name-answer-demo.php" method="post">
@@ -1134,15 +1093,11 @@ Choose your favorite topic:
 
 ![](img/3c47590736460ba39948e1c4764537c3_51_0.png)
 
-
-
-
-
 ## 检查 jQuery 是否已加载
 
 ### HTML 代码
 
-```
+```html
 <!DOCTYPE html>
 <html>
 <head>
@@ -1158,7 +1113,7 @@ Choose your favorite topic:
 
 ### JavaScript 代码
 
-```
+```javascript
 $("p").bind("click", function(){
     $( "This is a click Event").appendTo( "body" );
 });
@@ -1178,7 +1133,7 @@ This is a click Event
 
 ### HTML 代码
 
-```
+```html
 <!DOCTYPE html>
 <html>
 <head>
@@ -1213,7 +1168,7 @@ This is a click Event
 
 ### JavaScript 代码
 
-```
+```javascript
 $("a[href='#top']").click(function() {
     $("html, body").animate({ scrollTop: 0 }, "slow");
     return false;
@@ -1224,7 +1179,7 @@ $("a[href='#top']").click(function() {
 
 ### HTML 代码
 
-```
+```html
 <!DOCTYPE html>
 <html>
 <head>
@@ -1239,7 +1194,7 @@ $("a[href='#top']").click(function() {
 
 ### JavaScript 代码
 
-```
+```javascript
 $(document).bind("contextmenu",function(e){
   return false;
 });
@@ -1249,7 +1204,7 @@ $(document).bind("contextmenu",function(e){
 
 ### HTML 代码
 
-```
+```html
 <!DOCTYPE html>
 <html>
 <head>
@@ -1266,7 +1221,7 @@ $(document).bind("contextmenu",function(e){
 
 ### JavaScript 代码
 
-```
+```javascript
 $('#accept').click(function() {
     if ($('#submitbtn').is(':disabled')) {
         $('#submitbtn').removeAttr('disabled');
@@ -1284,7 +1239,7 @@ $('#accept').click(function() {
 
 ### HTML 代码
 
-```
+```html
 <!DOCTYPE html>
 <html>
 <head>
@@ -1300,7 +1255,7 @@ $('#accept').click(function() {
 
 ### JavaScript 代码
 
-```
+```javascript
 function blink_text() {
     $('.blink').fadeOut(500);
     $('.blink').fadeIn(500);
@@ -1308,15 +1263,13 @@ function blink_text() {
 setInterval(blink_text, 1000);
 ```
 
+## 创建表格效果
 
+### 斑马条纹效果
 
- ## 创建表格效果
+#### HTML 代码
 
-## 斑马条纹效果
-
-### HTML 代码
-
-```
+```html
 <!DOCTYPE html>
 <html>
 <head>
@@ -1374,15 +1327,15 @@ setInterval(blink_text, 1000);
 </html>
 ```
 
-### JAVASCRIPT 代码
+#### JavaScript 代码
 
-```
+```javascript
 $(document).ready(function(){
     $("tr:odd").addClass("zebra");
 });
 ```
 
-### 输出
+#### 输出
 
 | 学生姓名 | 科学成绩 |
 | --- | --- |
@@ -1397,7 +1350,7 @@ $(document).ready(function(){
 
 ### HTML 代码
 
-```
+```html
 <!DOCTYPE html>
 <html>
 <head>
@@ -1414,9 +1367,9 @@ $(document).ready(function(){
 </html>
 ```
 
-### JAVASCRIPT 代码
+### JavaScript 代码
 
-```
+```javascript
 $('p').each(function(){
          var pdata = $(this);
          pdata.html( pdata.text().replace(/(^\w+)/,'<b>$1</b>') );
@@ -1439,7 +1392,7 @@ $('p').each(function(){
 
 ### HTML 代码
 
-```
+```html
 <!DOCTYPE html>
 <html>
 <head>
@@ -1456,15 +1409,15 @@ $('p').each(function(){
 
 ### CSS 代码
 
-```
+```css
 p span{
     text-decoration: underline;
 }
 ```
 
-### JAVASCRIPT 代码
+### JavaScript 代码
 
-```
+```javascript
 $('p').each(function() {
 
 var text_words = $(this).text().split(' ');
@@ -1492,7 +1445,7 @@ The best way we learn anything is by practice and exercise questions
 
 ### HTML 代码
 
-```
+```html
 <!DOCTYPE html>
 <html>
 <head>
@@ -1507,9 +1460,9 @@ The best way we learn anything is by practice and exercise questions
 </html>
 ```
 
-### JAVASCRIPT 代码
+### JavaScript 代码
 
-```
+```javascript
 //Uncomment the following code and see the changes.
 
 //$("#button1").prop('value', 'Save');
@@ -1519,11 +1472,14 @@ The best way we learn anything is by practice and exercise questions
 
 ## 向下拉列表添加选项
 
-使用 jQuery
+### 使用 jQuery
 
- # HTML 代码
+#### HTML 代码
 
-```
+
+
+
+```html
 <!DOCTYPE html>
 <html>
 <head>
@@ -1544,9 +1500,9 @@ The best way we learn anything is by practice and exercise questions
 </html>
 ```
 
-### JAVASCRIPT 代码
+### JavaScript 代码
 
-```
+```javascript
 var myOptions = {
     val1 : 'Blue',
     val2 : 'Orange'
@@ -1574,11 +1530,11 @@ $.each(myOptions, function(val, text) {
 
 ## 设置背景图片
 
-## 使用 jQuery CSS 属性
+### 使用 jQuery CSS 属性
 
-### HTML 代码
+#### HTML 代码
 
-```
+```html
 <!DOCTYPE html>
 <html>
 <head>
@@ -1592,9 +1548,9 @@ $.each(myOptions, function(val, text) {
 </html>
 ```
 
-### JAVASCRIPT 代码
+#### JavaScript 代码
 
-```
+```javascript
 $('body').css('background-image',
 'url("https://www.htmlresource.com/includes/jquery-images/jquery.gif")');
 ```
@@ -1605,11 +1561,11 @@ $('body').css('background-image',
 
 ## 删除表格中除第一行外的所有行
 
-使用 jQuery
+### 使用 jQuery
 
-### HTML 代码
+#### HTML 代码
 
-```
+```html
 <!DOCTYPE html>
 <html>
 <head>
@@ -1643,9 +1599,9 @@ $('body').css('background-image',
 </html>
 ```
 
-### JAVASCRIPT 代码
+#### JavaScript 代码
 
-```
+```javascript
 $(document).ready(function(){
 	$('#button1').click(function(){
 		$("#myTable").find("tr:gt(0)").remove();
@@ -1661,9 +1617,9 @@ $(document).ready(function(){
 
 ### 使用 jQuery
 
-### HTML 代码
+#### HTML 代码
 
-```
+```html
 <!DOCTYPE html>
 <html>
 <head>
@@ -1675,14 +1631,14 @@ $(document).ready(function(){
 <body>
 <a href="https://www.htmlresource.com/jquery-exercises/">jQuery Exercises, Practice, Solution</a>
 <p></p>
-  <input id="button1" type="button" value="Click to remove the link!" />
+<input id="button1" type="button" value="Click to remove the link!" />
 </body>
 </html>
 ```
 
-### JAVASCRIPT 代码
+#### JavaScript 代码
 
-```
+```javascript
 $(document).ready(function(){
   $('#button1').click(function(){
   $("a").removeAttr('href');
@@ -1698,9 +1654,9 @@ $(document).ready(function(){
 
 ### 使用 jQuery
 
-### HTML 代码
+#### HTML 代码
 
-```
+```html
 <!DOCTYPE html>
 <html>
 <head>
@@ -1716,9 +1672,9 @@ $(document).ready(function(){
 </html>
 ```
 
-### CSS 代码
+#### CSS 代码
 
-```
+```css
 p.center {
     text-align: center;
     color: red;
@@ -1729,9 +1685,9 @@ p.large {
 }
 ```
 
-### JAVASCRIPT 代码
+#### JavaScript 代码
 
-```
+```javascript
 $(document).ready(function(){
   $('#button1').click(function()
  { $('#pid').removeClass('center').addClass('large');
@@ -1743,9 +1699,9 @@ $(document).ready(function(){
 
 ## 设置背景颜色
 
-### HTML 代码
+#### HTML 代码
 
-```
+```html
 <!DOCTYPE html>
 <html>
 <head>
@@ -1754,15 +1710,13 @@ $(document).ready(function(){
 <meta name="viewport" content="width=device-width">
 <title>Set the background color red of the following elements using jQuery.</title>
 <style type="?"
-
+```
 
 <div style="page-break-after: always"></div>
 
-```
+#### JavaScript 代码
 
-### JAVASCRIPT 代码
-
-```
+```javascript
 $('#button1').click(function(){
 $("p").add( "span" ).add("textarea").css( "background", "red" );
 });
@@ -1770,13 +1724,11 @@ $("p").add( "span" ).add("textarea").css( "background", "red" );
 
 ---
 
-# 将之前堆栈上的元素集合
-
-# 添加到当前集合
+## 将之前堆栈上的元素集合添加到当前集合
 
 ### HTML 代码
 
-```
+```html
 <!DOCTYPE html>
 <html>
 <head>
@@ -1806,14 +1758,12 @@ $("p").add( "span" ).add("textarea").css( "background", "red" );
 
 ### CSS 代码
 
-```
+```css
 p, div {
     margin: 5px;
 ```
 
-
-
-### JAVASCRIPT 代码
+### JavaScript 代码
 
 ```javascript
 $( "div.left, div.right" ).find( "div, div > p" ).addClass( "border" );
@@ -1825,23 +1775,19 @@ $( "div.before-addback" ).find( "p" ).addClass( "background" );
 $( "div.after-addback" ).find( "p" ).addBack().addClass( "background" );
 ```
 
-## 添加指定的类
-
-### 到匹配的元素
+## 添加指定的类到匹配的元素
 
 ### HTML 代码
 
 ```html
-
 ```
 
 ### CSS 代码
 
 ```css
-
 ```
 
-### JAVASCRIPT 代码
+### JavaScript 代码
 
 ```javascript
 $('p').last().addClass("h3r_font_color");

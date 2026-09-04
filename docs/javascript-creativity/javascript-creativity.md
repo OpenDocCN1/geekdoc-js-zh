@@ -1,7 +1,5 @@
+
 # JavaScript 创意指南
-
-
-
 
 ## 第 1 章
 
@@ -19,7 +17,7 @@
 
 对象检测在 Web 行业中并非特别常见的领域，但它一直是我的兴趣所在，我们现在拥有访问网络摄像头的原生能力（甚至还有更复杂的技术，如 Web Workers，尽管本书不会使用它们），所以我在 Web 上进行计算机视觉研究是有道理的！最后一个涉及对象检测的项目可能不如其他项目有用，但更有趣，并且希望它能成为任何对该主题感兴趣的人的完美起点，同时展示 Web 平台的真正强大之处。大多数计算机视觉算法都基于数学且令人困惑，因此我选择了简单算法（易于理解，但有许多未涵盖的边界情况），并使用了一个库来进行更高级的对象检测，这样你可以在不被学术内容淹没的情况下获得介绍。
 
-最后一个项目将所有章节整合在一起。它是一个实时的、多用户的、计算机生成的、手势控制的音乐乐队。这是一个雄心勃勃的项目，绝非完美。它是实践书中所有内容的好方法，并且（我希望）是一个有趣而独特的项目。生成的音乐不会很完美，可能会有延迟，音质也不会太好，但我认为这将是本书的完美结尾；毕竟，我写本书的主要目的是让你参与一些你甚至可能未曾想过的项目！
+最后一个项目将所有章节整合在一起。它是一个实时的、多用户的、计算机生成的、手劤控制的音乐乐队。这是一个雄心勃勃的项目，绝非完美。它是实践书中所有内容的好方法，并且（我希望）是一个有趣而独特的项目。生成的音乐不会很完美，可能会有延迟，音质也不会太好，但我认为这将是本书的完美结尾；毕竟，我写本书的主要目的是让你参与一些你甚至可能未曾想过的项目！
 
 #### 你需要知道什么
 
@@ -39,8 +37,6 @@
 
 首先要检查的是你的浏览器是否兼容正在使用的特性。如果你曾在生产环境中使用过任何现代技术，你应该已经熟悉这一点，因为许多用户仍然使用不支持这些技术的浏览器。当然，在这种情况下，你应该以“渐进增强”的方式编写代码，这样现代浏览器可以获得现代特性，但不会破坏旧版浏览器。然而，在本书中（因为它涉及前沿技术和特性），我不支持旧版浏览器，并且在撰写代码时，常常只有一两种浏览器能运行。除非另有说明，我使用 Google Chrome 31 测试所有代码。大部分代码也应该在 Mozilla Firefox 中运行。
 
-
-
 如今浏览器的变化非常迅速，事实上，在我写这本书的时候，Chrome 将 Webkit 分支为了 Blink，这已经影响到了规范，因为它们不再总是走同一条路。所以我们需要一种方法来知道不同版本的浏览器何时改变了实现。遗憾的是，除了查看变更日志或缺陷跟踪器之外，无法知道某些内容是否已被更改。幸运的是，我们确实知道何时添加了功能（这对大多数情况来说已经足够了），这要归功于两个开源项目：[www.html5please.com](http://www.html5please.com) 和 [www.caniuse.com](http://www.caniuse.com)。HTML5 Please 用于轻松了解在生产环境中使用某个功能是否被推荐，而 Can I Use 则用于了解某个功能在哪些浏览器中受支持。
 
 ######## JavaScript 控制台
@@ -52,9 +48,13 @@
 通常你会想知道一个变量的值，以便验证它是否符合预期，或者只是为了解数据的结构（特别是对于对象）。为此，只需在 JavaScript 控制台中输入变量名，其值就会显示在名称下方，这对所有类型都有效，包括对象和数组。有几种方法可以通过控制台访问变量：
 
 - 代码运行之后——如果你只对最终结果感兴趣，只需按照我上面解释的那样输入变量名。
+
 - 断点——我将在稍后更详细地讨论断点，但与许多其他语言中的调试器一样，你可以添加断点，以便在断点处的代码执行时检查变量。
+
 - 调试器语句——你可以通过在代码中写入 `debugger;` 来手动添加断点。使用断点通常更容易，但了解调试器语句也是值得的。
+
 - 在代码内部——你可以从代码内部记录到控制台。使用断点通常更容易，但如果你愿意，可以通过在代码中写入 `console.log('foo');` 来记录。
+
 - 表格形式——目前仅在 Google Chrome 和 Firebug 中可用，但这是非常实用的方式，可以将数组以表格数据的形式查看，每个索引为一行。通过从代码内部或控制台中运行 `console.table(array);`（我建议直接从控制台运行，在断点期间，因为它与其他浏览器不兼容）。
 
 ######### 提示符
@@ -63,7 +63,7 @@
 
 ######## 源代码
 
-与控制台一样，大多数 JavaScript 调试工具（在浏览器和/或插件中）都有查看源代码的方法——这很合理，因为你通常需要查看代码才能理解和调试它——但它不仅仅是只读的。这些工具允许你逐行操作和调试代码。在 Google Chrome 中，它位于"Sources"选项卡下，尽管大多数功能在大多数其他工具中也都有。
+与控制台一样，大多数 JavaScript 调试工具（在浏览器和/或插件中）都有查看源代码的方法——这很合理，因为你通常需要查看代码才能理解和调试它——但它不仅仅是只读的。这些工允许你逐行操作和调试代码。在 Google Chrome 中，它位于"Sources"选项卡下，尽管大多数功能在大多数其他工具中也都有。
 
 ######### 实时编辑
 
@@ -74,8 +74,11 @@
 你可能已经熟悉基本断点了，无论是使用 JS 开发者工具还是之前的语言。它是开发者工具箱中最有用的工具之一。在代码视图中（Chrome 中的 sources 选项卡），你可以通过单击行号来添加断点，这会留下一个标记（断点）。正如我之前解释的，这种默认类型的断点会暂停 JavaScript，并允许你看到当前状态，包括变量的值。还有其他几种断点类型，并非所有调试器都能处理所有类型的断点，但它们在不同情况下可能很有用。
 
 - **DOM 断点：** 这些让你在代码发生变化时暂停，例如属性修改或元素移除。在 Chrome 中，可以通过右键单击 DOM 节点并选择 "Break on..." 下列出的选项之一来找到此功能。
+
 - **异常：** 很多时候，你会有设置为抛出异常的代码，但你不想在代码中处理它，而是想进行适当的调试并找出导致异常的原因。与其在每个异常处都设置断点（这很快就会让人厌烦），你可以将调试器设置为在所有异常或仅未捕获的异常时暂停。在 Chrome 中，可以通过单击带有六边形背景的暂停按钮来访问。颜色会根据设置的模式而改变。
+
 - **事件：** 可以为事件触发时设置断点，例如 click 或 mousemove，这对于确保事件在应该触发的地方被触发并且按预期执行非常有用。在 Chrome 中，这些可以从 sources 面板下的 "Event Listener Breakpoints" 标题下找到。
+
 - **条件断点：** 这些与默认断点相同，只是你可以设置断点暂停的条件，其工作方式与在 if 语句中放置断点相同。在我看来，这是最有用的断点类型，因为你可以用它们仅在结果不符合预期时暂停代码。要设置条件断点，请右键单击行号，它会给你一个文本字段来输入条件，如图 1-1 所示。
 
 ![图 1-1. 添加条件断点](img/dece54b614d0e868811b83f9273c55df_7_0.png)
@@ -91,8 +94,6 @@
 要开始使用时间轴，你需要通过单击圆形按钮来记录代码的运行。一旦开始记录，你会注意到创建了一些图表。在撰写本文时，有三个方面被记录：Events、Frames 和 Memory；所有这些都是同时记录的，但只能通过选择它们来分别查看。在基本层面上，这些功能为你提供了一个测试代码各部分速度的好方法，因为它像堆栈一样分解代码，显示每个函数调用。这是发现瓶颈的相当简单的方法，但这只是时间轴功能的冰山一角。
 
 它不仅能显示函数所花费的时间，还将其分为 loading、scripting、rendering 和 painting。这些对于了解函数为何耗时过长极为有用。loading 类别是进行任何 XHR (AJAX) 调用以及解析 HTML 的地方。函数内的逻辑包含在 scripting 类别中。rendering 是进行 DOM 操作的地方，主要是重新计算样式和布局。paint 是浏览器更新显示内容以匹配 rendering 结果的地方，包括对 canvas 和其他不直接相关 DOM 元素的更改。
-
-
 
 ## 第1章 引言
 
@@ -187,8 +188,6 @@ ctx.fillRect(10, 10, 50, 50);
 })();
 ```
 
-
-
  ## 线性插值
 
 我发现将代码分离开来很重要，所以尽管目前还不会使用任何特定的设计模式（因为代码量很小），但我鼓励你适当地组织代码。对于这一部分，我认为 logic() 和 draw() 是合适的函数名称。
@@ -279,13 +278,21 @@ element.addEventListener(type, listener, useCapture boolean optional);
 Type 是事件的名称（参见后面列出的鼠标相关事件列表）。Listener 可以通过两种方式实现，要么作为实现 EventListener 的对象，要么作为简单的回调函数。useCapture 是一个布尔值，如果事件应该在捕获阶段触发则为 true；否则它将在目标和冒泡阶段触发。useCapture 在现代浏览器中默认为 false，但某些旧版浏览器可能需要设置它。
 
 - click
+
 - dblclick
+
 - mousedown
+
 - mouseenter
+
 - mouseleave
+
 - mousemove
+
 - mouseover
+
 - mouseout
+
 - mouseup
 
 要让鼠标移动生效，你需要一个回调函数来根据鼠标位置设置新的起点和终点，如下所示：
@@ -456,7 +463,9 @@ requestAnimationFrame(draw);
 接下来我们要创建一个“聪明的”动画——也就是说，在弹跳盒子示例中发现的动态动画概念的基础上进行扩展，使对象能够感知周围环境。1986 年，Craig Reynolds 创建了一个令人难以置信的鸟类群飞模拟，他将其称为 Boids。它仅基于三条规则构建，这些规则让每个 boid（个体）能够负责自身的移动，同时也使其能够看到附近的邻居并向它们移动。我找到的对每条规则的最佳解释如下：
 
 - **分离：** 转向以避免与附近的同伴过度拥挤
+
 - **对齐：** 转向朝向附近同伴的平均航向
+
 - **凝聚：** 转向朝向附近同伴的平均位置（质心）
 
 我们的动画基于 Boids，不过为了简洁起见会做一些简化（我鼓励你修改我的代码以改进它——为此你可能需要使用向量）。我们将从通常的设置代码开始，getContext 等，以及创建一个 Boid 对象，用于保存关于 boid 位置、方向和大小的数据。完成之后，我们创建一个名为 setup() 的函数，它会（在每帧）随机的位置和方向将每个 boid（取决于我们设置的数量）添加到画布上。我做了一个简单的函数来包装 JavaScript 的 Math.random，只是为了让代码更整洁一些。
@@ -637,8 +646,6 @@ if (b.y > canvas.height) b.y = 0;
         this.size = size;
     };
 ```
-
-
 
 ```javascript
 function setup() {
@@ -870,8 +877,6 @@ function findEdges(originalData) {
 要编写算法，你首先需要了解数据结构，它是一个 `Uint8ClampedArray`。尽管这个名字听起来很可怕，但它只是一个由 8 位无符号（仅正值）整数组成的数组（或者说我更喜欢称之为——字节大小的元素！），其组织方式非常简单，遵循"红、绿、蓝、透明度"的模式并不断重复，因此每个像素由四个数组元素组成。
 
 要计算像素的位置 (i)，我们需要两个循环，一个用于图像的高度 (y)，另一个用于宽度 (x)。然后我们可以通过计算 y 乘以画布宽度来得到每个像素的第一种颜色（红色），因为数组是按行存储的，然后加上 x 以找到该行中的位置。当然，由于构成像素的颜色数量（包括透明度），这个结果还需要乘以 4。
-
-
 
 ## 第2章 ■ Canvas与动画基础
 
@@ -1138,8 +1143,6 @@ function handleDrawing(e) {
 }
 ```
 
-
-
  ```javascript
 function saveCanvas() {
     var img = drop.toDataURL("image/png");
@@ -1155,6 +1158,8 @@ function saveCanvas() {
 现在你已拥有如图 2-3 所示的涂色书。
 
 ![](img/dece54b614d0e868811b83f9273c55df_34_0.png)
+
+
 
 ***图 2-3.*** 此图展示了一张企鹅照片，已被转换为线条画，并使用 canvas 进行了上色
 
@@ -1184,7 +1189,7 @@ WebM 是一种由 Google 赞助的音视频容器。它是免版税的，由基�
 
 ##### MP4
 
-运动图像专家组（MPEG）标准化了许多容器和编解码器。他们可能最出名的是 MP3 音频编解码器，但 MP4 是最常用的视频格式之一。MP4 通常使用 H.264 作为视频编解码器，AAC 或 MP3 作为音频编解码器。MP4 格式受专利限制，这引发了浏览器之间关于非免版税格式是否适合用于网络的讨论。
+运动图像专家组（MPEG）标准化了许多容器和编解码器。他们可能最出名的是 MP3 音频编解码器，但 MP4 是最常用的视频格式之一。MP4 通常使用 H.264 作为视频编解码器，AAC 或 MP3 作为音频编解码器。MP4 格受专利限制，这引发了浏览器之间关于非免版税格式是否适合用于网络的讨论。
 
 ##### QuickTime 文件格式
 
@@ -1241,8 +1246,6 @@ H.264 是由视频编码专家组（VCEG）和运动图像专家组开发的视�
 ##### Theora
 
 基于 VP3（VP8 的前身），Theora 是由 Xiph.Org 基金会维护的开放、有损视频编解码器。它通常与 Ogg 容器格式一起在网页上使用。
-
-
 
 ## 编码视频
 
@@ -1318,7 +1321,7 @@ H.264 是由视频编码专家组（VCEG）和运动图像专家组开发的视�
 </video>
 ```
 
-如果你在浏览器中运行此代码，现在应该能看到一个基本的音频（或视频）播放器。如果你想提供一个自定义播放器以适应你网站的风格，那么最好创建 DOM 元素，按照你的意愿设置样式，然后将其连接到一个未启用 `controls` 属性的 `<audio>`/`<video>` 元素。
+如果你在浏览器中运行此代码，现在应该能看到一个基本的音频（或视频）播放器。如果你想提供一个自定�播放器以适应你网站的风格，那么最好创建 DOM 元素，按照你的意愿设置样式，然后将其连接到一个未启用 `controls` 属性的 `<audio>`/`<video>` 元素。
 
 > **注意** 一些浏览器使用 Shadow DOM，因此理论上你可以用 CSS 样式化默认控件，但截至撰写本文时，每个浏览器的实现差异很大，而且 Shadow DOM 仍然较新。我建议查看 www.caniuse.com 以了解当前各浏览器的实现状态。
 
@@ -1350,10 +1353,10 @@ H.264 是由视频编码专家组（VCEG）和运动图像专家组开发的视�
 `preload` 有三个可接受的值：
 
 - **auto**：这将优先级交给浏览器，如果这样做合适的话。例如，如果网络连接良好，它可能会尝试下载整个文件。当 `preload` 设置为 `auto` 时，`readyState` 变量将从 0（未下载任何内容）递增到 4（可以无中断播放），一个完全预加载的文件的 `readyState` 将是 4。
+
 - **metadata**：这是最常用的值，因为它是一种“折中方案”。它基本上让浏览器知道，了解文件信息（例如时长）会很好，但在用户点击播放之前不需要整个文件。当 `preload` 设置为 `metadata` 时，一旦元数据下载完成，`readyState` 将设置为 1（已具有元数据），并可能根据获取的积极程度移动到 2 或 3。
+
 - **none**：这通过告诉浏览器在用户点击播放之前不需要任何信息来减轻服务器的压力。当然，正如我之前所说，这只是一个提示，因此浏览器可能仍然决定提供元数据或整个文件。
-
-
 
 该属性的作用与其他示例中的 `preload` 一样，适用于 audio：
 
@@ -1488,8 +1491,11 @@ function fastForward() {
 此属性用于确定网络活动。它返回 0 到 3 的 4 个数字，对应以下状态：
 
 - 0. NETWORK_EMPTY – 这意味着元素尚未初始化。
+
 - 1. NETWORK_IDLE – 这意味着已选择正确的音频/视频文件，但当前未使用网络。
+
 - 2. NETWORK_LOADING – 音频/视频正在下载中。
+
 - 3. NETWORK_NO_SOURCE - 给定的文件都不兼容，或者未提供任何文件。
 
 与之前的许多属性不同，`networkState` 是一个只读属性。以下代码展示了如何使用它：
@@ -1507,7 +1513,7 @@ function logNetworkState()  {
 
 让我们继续深入音频分析的领域，我们将在后面的章节中使用它来创建音频的可视化效果。为此，我们将使用 Web Audio API。
 
-该 API 基于节点的概念，每个节点获取当前音频（可以是原始版本，也可以已经经过任意数量的节点），然后对其进行某种处理。我说"某种"是有意含糊其辞的，节点可以以你想要的任何方式编码。一些默认的用法包括：声道分离与合并、振荡和增益控制。我特别喜欢的一个类比是 Stuart Memo 在他的"Web Audio API 简介"一文中解释的：API 节点的工作方式与在吉他上添加失真效果器和音箱完全一样，你可以移除任意节点或添加新节点，而无需做其他事情，只需更改连接线即可。现在，我们只需要使用 `AnalyserNode` 来看看音频内部到底发生了什么。从那里开始，我们将使用其他节点来了解发生了什么变化。
+该 API 基于节点的概念，每个节点获取当前音频（可以是原始版本，也可以已经经过任意数量的节点），然后对其进行某种处理。我说"某种"是有意含糊其辞的，节点可以以你想要的任何方式编码。一些默认的用法包括：声道分离与合并、振荡和增益控制。我特别喜欢的一个类比是 Stuart Memo 在他的"Web Audio API 简介"一文中解释的：API 节点的工作方式与在吉他上添加失真效果器和音箱完全一样，你可以移除任意节点或添加新节点，而需做其他事情，只需更改连接线即可。现在，我们只需要使用 `AnalyserNode` 来看看音频内部到底发生了什么。从那里开始，我们将使用其他节点来了解发生了什么变化。
 
 ## 分析音频
 
@@ -1529,11 +1535,7 @@ analyser.connect(ctx.destination);
 var ele = document.querySelector('audio');
 var ctx = new AudioContext();
 var analyser = ctx.createAnalyser();
-```
 
-
-
- ```
 var source = ctx.createMediaElementSource(ele);
 var volumeControl = ctx.createGainNode();
 source.connect(volumeControl);
@@ -1834,17 +1836,29 @@ function draw(freqData) {
 我们已经使用了一些 Web Audio API 节点，例如 MediaElementSource、GainNode 和 Analyser。以下是其他可用节点和方法的概览。
 
 | 节点名称 | 描述 |
+
 | --- | --- |
+
 | AnalyserNode | 获取有关音频当前状态的数据，例如频率。 |
+
 | AudioBufferSourceNode | 缓冲短音频资源，用作临但易于访问的存储。 |
+
 | BiquadFilterNode | 处理基本滤波器（称为低阶滤波器），例如低通/高通，其中频率在低于或高于给定值时被截止。 |
+
 | ChannelSplitterNode | 将每个声道拆分，以便你可以在进程图中单独使用它们以实现更精细的控制。 |
+
 | ChannelMergerNode | 使用此合并节点合并任何已拆分（或需要合并）的声道。 |
+
 | ConvolverNode | 应用线性卷积效果，这是声音可以被处理以模拟声学空间或高质量效果的方式。 |
+
 | DelayNode | 将输出（传递到进程图中的下一个节点）延迟特定的时间量。 |
+
 | GainNode | 通过将音频乘以增益属性来改变音频音量。 |
+
 | MediaElementAudioSourceNode | 允许你将媒体元素连接到 Web Audio API。 |
+
 | PannerNode | 在 3D 空间中特化声音。这通常在游戏中大量使用，但在其他地方也可能有用。 |
+
 | WaveShaperNode | 用于非线性失真。 |
 
 ### 视频处理
@@ -1901,13 +1915,11 @@ function drawInvertedFrame() {
 
 一如既往，此代码的完整列表可在本书附带的可下载文件中找到。
 
-
-
 # 摘要
 
 本章带你探索了网络上的音频和视频。你现在应该对不同编解码器有了扎实的理解，包括各自的优缺点。我也尝试深入讲解了 Web Audio API。希望通过与上一章的可视化内容相结合，而不是仅仅给你大量数字，能让你更好地理解并发现它的实用性。
 
-我鼓励你多做 Web Audio API 的实验，也尝试一下视频处理——你可以创造出很多非常有趣的效果，可能会在一般的网页设计和开发中派上用场（尤其是作为视觉辅助和精美的细节）。除了简单的网站，还有很多空间可以做成更具网络应用性质的东西，比如我们即将创建的媒体播放器。
+我鼓励你多做 Web Audio API 的实验，也尝试一下视�处理——你可以创造出很多非常有趣的效果，可能会在一般的网页设计和开发中派上用场（尤其是作为视觉辅助和精美的细节）。除了简单的网站，还有很多空间可以做成更具网络应用性质的东西，比如我们即将创建的媒体播放器。
 
 # 第4章 3D 入门
 
@@ -1947,8 +1959,11 @@ container.appendChild(renderer.domElement);
 接下来我们需要创建相机。我会在本章稍后讲解如何使用多个相机，但先从一个开始。和渲染器一样，有几种默认的相机类，而且通过继承抽象的 `Camera` 类来编写自己的相机类型也非常容易。内置的相机有 `OrthographicCamera` 和 `PerspectiveCamera`，我们可以用它们来提供场景的不同视图；通常你可以把透视视图看作 3D 视图，而正交视图显示的是 2D 视图。在这个例子中我们选择透视相机，因为我们只是想看看场景里有什么（一开始会是什么都没有），而不是特定的视图（比如俯视）。我们的 PerspectiveCamera 有四个参数，根据文档说明它们是
 
 - **fov**: 相机视锥体的垂直视野
+
 - **aspect**: 相机视锥体的宽高比
+
 - **near**: 相机视锥体的近裁剪面
+
 - **far**: 相机视锥体的远裁剪面
 
 如果你知道 frustum（视锥体）的含义，这就说得通了；在这里它简单地表示视野的部分。通常这些参数会存储为变量，但由于我们目前别处用不到它们，我决定直接将值作为参数写入，以减少代码行数。创建相机后，我们可以对其进行定位，现在先把相机的 z 轴设为 300，这样一旦我们添加一些网格，场景就能很好地呈现在视野中。
@@ -1978,8 +1993,6 @@ setInterval(logic, 1000/60);
 ## 添加网格
 
 一个基础场景相当无聊，而且说实话，没什么用。所以让我们通过了解可用的网格类型来给场景增添一些趣味。不过首先，我们需要一些灯光，这样我们才能看到物体（这就像在黑暗的房间里——物体在场景中，但你看不见它们）。我会很快解释灯光的类型，但现在我们可以先使用简单的 DirectionalLight，它的用法就像台灯一样，指向特定方向而不是覆盖整个场景。我选择使用这种类型的灯光，是因为它能让我们很容易立即看到阴影。默认的方向灯是白色的，强度为 1；默认情况下灯光指向场景中心 (0,0,0)。需要注意的是，虽然方向灯有一个名为 position 的属性，但这只是灯光指向的方向，而光源本身并没有实际位置（它是无限的）。我决定将灯光向相机方向放置，这样我们就能在物体周围看到简洁漂亮的阴影。
-
-
 
  ```
 var directionalLight = new THREE.DirectionalLight();
@@ -2090,25 +2103,45 @@ setInterval(logic, 1000/60);
 ## 表 4-1. Three.js 中可用的几何体
 
 | 名称 | 构造函数 | 说明 |
+
 |------|-------------|-------|
+
 | CircleGeometry | CircleGeometry (radius, segments, thetaStart, thetaLength) | theta 参数用于创建分段；通过修改它们，可以指定特定的圆弧。 |
+
 | ConvexGeometry | ConvexGeometry (vertices) | |
+
 | CubeGeometry | CubeGeometry (width, height, depth, widthSegments, heightSegments, depthSegment) | |
+
 | CylinderGeometry | CylinderGeometry (radiusTop, radiusBottom, height, radiusSegments, heightSegments, openEnded) | |
-| ExtrudeGeometry | ExtrudeGeometry (shapes, options) | 这个几何体有很多选项，我将在本表之后详细介绍。 |
+
+| ExtrudeGeometry | ExtrudeGeometry (shapes, options) | 这个几何体有很多选项，我将在本表之后详�介绍。 |
+
 | IcosahedronGeometry | IcosahedronGeometry (radius, detail) | |
+
 | LatheGeometry | LatheGeometry (points, segments, phiStart, phiLength) | |
+
 | OctahedronGeometry | OctahedronGeometry (radius, detail) | |
+
 | ParametricGeometry | ParametricGeometry (parametricFunction, uSegments, ySegments, useTris) | |
+
 | PlaneGeometry | PlaneGeometry (width, height, widthSegments, heightSegments) | |
+
 | PolyhedronGeometry | PolyhedronGeometry (vertices, faces, radius, detail) | |
+
 | RingGeometry | RingGeometry (innerRadius, outerRadius, thetaSegments, phiSegments, thetaStart, thetaLength) | |
+
 | ShapeGeometry | ShapeGeometry (shapes, options) | |
+
 | SphereGeometry | SphereGeometry (radius, widthSegments, heightSegments, phiStart, phiLength, thetaStart, thetaLength) | 我们已经介绍过球体了，但和圆形一样，也有一些偶尔可能有用的额外选项。 |
+
 | TetrahedronGeometry | TetrahedronGeometry (radius, detail) | |
+
 | TextGeometry | TextGeometry (text, parameters) | 用于创建 3D 文字，我将在本章后面介绍。 |
+
 | TorusGeometry | TorusGeometry (radius, tube, radialSegments, tubularSegments, arc) | |
+
 | TorusKnotGeometry | TorusKnotGeometry (radius, tube, radialSegments, tubularSegments, p, q, heightScale) | |
+
 | TubeGeometry | TubeGeometry (path, segments, radius, radiusSegments, closed, debug) | |
 
 ## 挤出（Extrusion）
@@ -2130,18 +2163,31 @@ var shape = new THREE.Shape( path );
 正如我之前提到的，**ExtrudeGeometry** 有很多选项来定义所需的挤出类型，如表 4-2 所示。
 
 | 选项 | 说明 |
+
 |--------|-------------|
+
 | curveSegments | 路径上的点数，默认为 12。 |
+
 | steps | 每次挤出中的细分数。默认为 32。 |
-| amount | 这是要进行的挤出次数，基本上是形状的大小，默认为 100。 |
+
+| amount | 这是要进行的挤出次数，基本上是形状的大量，默认为 100。 |
+
 | bevelEnabled | 启用倒角，这会倒圆连接挤出边缘与形状表面的顶点。默认为 *true*。 |
+
 | bevelThickness | 倒角的厚度，默认为 6。 |
+
 | bevelSize | 这是倒角开始位置到边缘的距离。默认为 bevelThickness 减 2。 |
+
 | bevelSegments | 倒角的分段数，类似于球体，控制倒角的质量。默认为 3。 |
+
 | extrudePath | 形状中应进行挤出的特定路径。 |
+
 | frames | 这是一个 Frenet 标架数组，暴露样条的切线、法线和副法线。这超出了本书的范围，但默认会自动生成标架。 |
+
 | material | 这是正面和背面使用的材质索引，没有默认值。 |
+
 | extrudeMaterial | 这是挤出面使用的材质索引，没有默认值。 |
+
 | uvGenerator | 这允许你指定 UV 生成器。默认使用 **THREE.ExtrudeGeometry.WorldUVGenerator**。 |
 
 > **注意** 这些选项可能会随着库的版本变化而变化，尤其是默认值。
@@ -2170,8 +2216,6 @@ function logic() {
 }
 ```
 
-
-
 图 4-2 显示了添加了旋转后的拉伸形状。
 
 ![](img/dece54b614d0e868811b83f9273c55df_63_0.png)
@@ -2196,15 +2240,25 @@ scene.add(text);
 **表 4-3.** *显示 TextGeometry 可用的选项*
 
 | 选项 | 描述 |
+
 | --- | --- |
+
 | size | 文字的大小，默认为 150。 |
+
 | height | 拉伸文字的厚度。默认为 50。 |
+
 | curveSegments | 曲线上的点数，默认为 12。 |
+
 | font | 字体的名称。默认为 Helvetiker。 |
+
 | weight | 这是字体的粗细。可以是任何有效的 CSS font-weight，例如 normal 和 bold。默认为 normal。 |
+
 | style | 与 weight 类似，style 允许任何有效的 CSS font-style，例如 normal 和 italic。默认为 normal。 |
+
 | bevelEnabled | 启用斜面，它会使连接拉伸边缘和形状面的顶点变圆。默认为 false。 |
+
 | bevelThickness | 斜面的厚度，默认为 6。 |
+
 | bevelSize | 这是从边缘开始斜面的距离；默认为 bevelThickness 减去 2。 |
 
 这些选项应该很容易理解，因为它们大多来自我们已经讨论过的 CSS 字体选项或 ExtrudedGeometry。不过，我会向你展示一个如何使用这些选项的简单示例：
@@ -2230,7 +2284,11 @@ scene.add(text);
 我将介绍一些更常用的光照类型；当然还有其他类型，你也可以创建自己的光照，其中一些我们稍后可能会简要提及。每种类型的光都有许多属性和参数，虽然有些比其他的多，但这里有一些你应该熟悉的：
 
 - **强度（Intensity）：** 光的强度表示其亮度，数值范围从 0 到 1，1 表示光的实际颜色，0 表示不可见（就好像它被关闭了一样）。通常默认为 1。有些光没有强度属性（至少在撰写本文时是这样），但你可以通过将每个 RGB 颜色乘以一个强度变量来模拟它。
-- **十六进制颜色（Hex）：** 这是一个必须采用十六进制形式的颜色（例如白色为 0xffffff）。通常默认为白色。
+
+- **十六进制颜色（Hex）：** 这是一个必须采用十六进形式的颜色（例如白色为 0xffffff）。通常默认为白色。
+
+
+
 - **阴影（Shadows）：** 关于阴影有很多属性，例如光源是否投射阴影。在我介绍完每种类型的光之后，我会讨论这些。
 
 在本章中，我们一直使用 `DirectionalLight` 作为场景中唯一的光源。正如我之前解释的，`DirectionalLight` 是一种朝特定方向投射并影响该方向上每个对象的光源，无论距离光源多远。我还应该提醒你，我之前说过的 `DirectionalLight` 并没有实际的位置，你设置的位置实际上是它将光导向场景原点的位置。`DirectionalLight` 的语法是
@@ -2283,7 +2341,7 @@ scene.add(lightDebug);
 你已经看到了一些使用的材质，例如 Phong、Lambert 和 Basic——但它们是什么呢？每种类型的材质都指定了所使用的着色类型。这是基于现实生活中的材质及其之间的差异，例如在相同的光照下，塑料瓶与闪亮的罐子由于反射、透明度等不同而呈现不同的外观。无法模拟我们在现实生活中发现的精确条件，但我们可以通过修改一些属性和使用不同的着色器来达到非常接近的效果。在撰写本文时，Three.js 为我们提供了表 4-4 中所示的内置材质。
 
 | 材质 | 描述 |
-|----------|-------------|
+|------|------|
 | `LineBasicMaterial` | `LineBasicMaterial` 用于创建直线，默认情况下为白色且 1 像素宽。 |
 | `LineDashedMaterial` | 这与 `LineBasicMaterial` 类似，但用于创建虚线，对于调试很有用（但不限于此），如你所知，它不应是场景的一部分。 |
 | `MeshBasicMaterial` | 根据 wireframe 属性（默认为 false），此材质用于绘制平面或线框面，并且不受光照影响。由于开销最小，通常在其他材质之上使用它来绘制线框。它也常用于应用纹理（图像）。 |
@@ -2293,11 +2351,10 @@ scene.add(lightDebug);
 | `ParticleBasicMaterial` | 这是粒子系统使用的材质。颜色默认为白色。 |
 | `ShaderMaterial` | 如果你想编写自己的着色器（本书不会涉及），那么这是你可以使用的材质。它提供了 GLSL 的属性，例如 `fragmentShader`、`vertexShader` 和 `uniforms`。 |
 
-
-
 表 4-4 中还缺少两种材质：**MeshLambertMaterial** 和 **MeshPhongMaterial**。我将这两个材质单独拿出来讲解，因为它们比较相似，而且涉及很多渲染技术（不适合放在列表中）。我们已经使用过 Lambert 作为通用的 3D 材质，但我还没有解释它是什么。根据目前 Three.js 文档的简单说明，这两种材质的区别如下：
 
 - **Lambert**：用于非光泽（朗伯）表面，按顶点计算。
+
 - **Phong**：用于光泽表面，按像素计算。
 
 这通常足以让你决定在不同情况下使用哪种材质，但我认为更完整的理解很重要，因此我将简要解释它们的技术差异，并鼓励你进一步了解它们的细节。
@@ -2406,7 +2463,7 @@ function drawNode(n) {
 
 ```javascript
 function drawEdges(node) {
- allo  var line_material = new THREE.LineBasicMaterial( { color: 0xffffff, transparent: true, opacity: 0.1, linewidth:0.5 } );
+  var line_material = new THREE.LineBasicMaterial( { color: 0xffffff, transparent: true, opacity: 0.1, linewidth:0.5 } );
   for (var i = 0; i < node.edges.length; i++) {
     var tmp_geo = new THREE.Geometry();
     tmp_geo.vertices.push(node.position);
@@ -2440,15 +2497,16 @@ function drawGraph() {
 
 # 第四章 3D 入门
 
-
-
 **图 4-3.** 节点图
 
 我鼓励你摆弄这些代码，将其变成自己的东西。以下是一些扩展该图的想法：
 
 - 使用 API 来可视化实时数据（Twitter、政府开放数据等）。
+
 - 根据数据更改节点的大小和/或颜色。
+
 - 为悬停或点击节点和/或边时添加文本覆盖层。
+
 - 改进导航。要导航一个包含数千个节点的图是很困难的。什么效果最好——方向键？鼠标？点击移动？这是一个探索规模的好方法。
 
 有很多方法可以使用相机（其中一些在本章前面已经解释过）来导航图形。目前我只是使用了简单的相机旋转技术，这已经包含在代码中。
@@ -2579,11 +2637,9 @@ scene.add(text_object);
 
 那么我们从头开始，什么是音符？简单地说，音符是具有特定波长（导致音高的频率）的声波。音符按音高从 A 到 G 按字母顺序命名（嗯……算是吧），所以 D 比 C 高。我说"算是吧"是因为音符实际上是以八度从 C 到 C 循环的，所以 A 比同一个八度的 C 高，但比上面一个八度的 C 低。每个频率可以用赫兹（hz）表示（包括语言上和实践上）。由于在钢琴上的位置，频率为 261.63hz 的 C 被称为**中央 C**，通常用作计算相对值的标准音符。例如，一个容易记住的频率是 440hz 的"中央 C 之上的 A"。
 
-因为每个八度都有相同音符的不同频率，而且我们已经知道音符本身就是一个频率，所以每个八度之间必定存在联系，否则它们本质上不可能是同一个音符。这个联系就是比率；每个八度的比率为 2:1，所以音符的波长是它前面八度的两倍。因此，从中央 C 之上的 A 到中央 C 之下的 A，我们可以简单地计算 440/2 = 220hz。这种关系是和声背后的基本概念。每个音符可以用一个代表八度的数字来标记，原因显而易见，例如中央 C 是 C3。
+因为每个八度都有相同音符的不同频率，而且我们已经知道音符本身就是一个频率，所以每个八度之间必定存在联系，否则它们本质上不可能是同一个音符。这个联系就是比率；每个八度的比率为 2:1，所以音符的波长是它前面八度的两倍。因此，从中央 C 之上的 A 到中央 C 之下的 A，我们可以简单的计算 440/2 = 220hz。这种关系是和声背后的基本概念。每个音符可以用一个代表八度的数字来标记，原因显而易见，例如中央 C 是 C3。
 
 如果你想到钢琴，你会记得看到黑键以一定的模式分布在白键上方；这些键用来弹奏音符之间的半音（或半步），其比率为 2^(1/12)。高于某个音符的半音是它的**升音**，低于某个音符的半音是它的**降音**。所以 466.16 被称为 **A#**（A 升音）或 **Bb**（B 降音）。这些半音是"等音"最常见的例子，因为它们技术上是两个相同的音符，唯一的区别是音乐进行的方向。
-
-
 
 我们没有钢琴，没有吉他，也没有任何其他乐器，那么我们如何计划制作音乐呢？当我解释什么是音符时，我将其频率称为*wavelength*（波长），因为它是由声波产生的。你可能知道，所有声波都是通过振动产生的。所以我们只需要最后一块拼图，一个振荡器；这是所有声音合成的基础，因为它允许我们仅用一个扬声器就能产生声波。*Sound envelope*（声音包络）是声音合成中常用的一个术语，它定义了波的声音，该术语涵盖了声音的四个组成部分：起音（attack）、衰减（decay）、延音（sustain）和释音（release）。通过操控声音包络，你可以开始控制声音。想想钢琴和三角铁的区别，它们都有相当高的延音（也就是说，它们会共鸣相当长一段时间），但三角铁听起来是"叮"的一声，而钢琴则持续更长时间（当然取决于你按音符的时间长短），所以钢琴的起音比三角铁更多。实际上，由于涉及的物理知识太多（例如木质钢琴的特性），很难完美地合成任何乐器，但通过操控每个音符，它为你提供了一种尝试通过简单地振荡你选择的波形来复制音乐声音的方法。
 
@@ -2596,8 +2652,11 @@ scene.add(text_object);
 这四种波形是
 
 - **正弦波：** 这条曲线遵循数学函数正弦的形状。
+
 - **方波：** 方波类似于二进制，因为它要么在一个频率上，要么在另一个频率上。
+
 - **三角波：** 三角波与正弦波相似，但不够平滑。这会产生相当尖锐的声音。
+
 - **锯齿波：** 这些波是以前所有波的组合。这种波具有三角波缓慢的尖锐声音，直到达到峰值，然后重置到原始频率，很像方波。
 
 ## 创建一个键盘
@@ -2639,7 +2698,7 @@ for (var i = 0; i < 15; i++)  {
 
 > ***图 5-2.*** *由三个八度组成的键盘布局*
 
-现在我们已经创建了键盘布局，我们需要添加事件处理程序，以便在播放声音时高亮显示被按下的键。因为我们有两种输入类型（键盘和鼠标），所以需要相当多的事件处理程序。SVG.js 允许我们轻松地为每个键绑定事件处理程序，这使得通过绑定 mousedown 和 mouseup 到键来处理鼠标变得容易。keypress 和 keyup 事件是通过向 window 添加事件监听器来处理的，这是处理事件的正常方式。要将键绑定到音符，我们需要为顶行的黑键和中排的白键设置数组。我们还需要为每种键准备两个数组，因为 keypress 和 keyup 对每个键有不同的 id。为了获得正确的音符，因为电脑键盘上没有足够的键来对应所有音符，我们需要将音符位置（使用 S 到 K 作为一个八度）加到八度中的键数乘以当前八度上；这意味着对于黑键我们使用 i + octave * 5，对于白键我们使用 i + octave * 7。对于鼠标事件，我们需要使用闭包来保持计数器，因为我们需要在我们刚才制作的 for 循环中绑定每个键的事件，但如果我们不使用闭包就这样做，它会使用 i = 21 而不是正确的值。当键被按下时，它需要改变颜色，然后在键释放后变回（这在使用鼠标或键盘时都是如此）。对于声音，我们将使用名为 playSound(n) 和 stopSound(n) 的函数，其中 n 是闭包之前的 i 的计数。这些更改如清单 5-1 所示。
+现在我们已经创建了键盘布局，我们需要添加事件处理程序，以便在播放声音时高亮显示被按下的键。因为我们有两种输入类型（键盘和鼠标），所以需要相当多的事件处理程序。SVG.js 允许我们轻松地为每个键绑定事件处理程序，这使得通过绑定 mousedown 和 mouseup 到键来处理鼠标变得容易。keypress 和 keyup 事件是通过向 window 添加事件监听器来处理的，这是处理事件的正常方式。要将键绑定到音符，我们需要为顶行的黑键和中排的白键设置数组。我们还需要为每种键准备两个数组，因为 keypress 和 keyup 对每个键有不同的 id。为了获得正确的音符，因为电脑键键盘上没有足够的键来对应所有音符，我们需要将音符位置（使用 S 到 K 作为一个八度）加到八度中的键数乘以当前八度上；这意味着对于黑键我们使用 i + octave * 5，对于白键我们使用 i + octave * 7。对于鼠标事件，我们需要使用闭包来保持计数器，因为我们需要在我们刚才制作的 for 循环中绑定每个键的事件，但如果我们不使用闭包就这样做，它会使用 i = 21 而不是正确的值。当键被按下时，它需要改变颜色，然后在键释放后变回（这在使用鼠标或键盘时都是如此）。对于声音，我们将使用名为 playSound(n) 和 stopSound(n) 的函数，其中 n 是闭包之前的 i 的计数。这些更改如清单 5-1 所示。
 
 ### 清单 5-1.
 
@@ -2711,15 +2770,11 @@ window.addEventListener('keypress', function(e) {
     }
     for (var i = 0; i < blackKeyPress.length; i++)  {
         if (e.keyCode == blackKeyPress[i]) {
-```
-
-
-
-```
-        var n = i + (octave * 5);
-        var key = SVG.get("bkey"+n);
-        key.fill({ color: '#f06' });
-        playSound(n, true);
+            var n = i + (octave * 5);
+            var key = SVG.get("bkey"+n);
+            key.fill({ color: '#f06' });
+            playSound(n, true);
+        }
     }
 }
 if (e.keyCode == 97 && octave > 0) --octave;
@@ -2756,8 +2811,11 @@ var blackNotes = [138.59, 155.56, 185, 207.65, 233.08, 277.18, 311.13, 369.99, 4
 正如你在设置琴键的代码中看到的，`playSound` 和 `stopSound` 函数都接受 `i` 和 `black` 作为参数，这样我们就能知道正在演奏的音符的位置和包含该音符频率的数组。在 `playSound` 内部，我们选择振荡器并设置频率和类型，然后当然使用 `osc.noteOn(0)` 将其打开。
 
 - Sine wave = 0
+
 - Square wave = 1
+
 - Sawtooth wave = 2
+
 - Triangle wave = 3
 
 我选择了锯齿波，出于个人偏好，但你可以都试试，看看你觉得哪个好！修改后的代码如下所示：
@@ -2894,8 +2952,6 @@ document.querySelector("#record").addEventListener('click', function() {
 }
 ```
 
-
-
 ```
 else {
     recordEnd = Date.now();
@@ -2973,7 +3029,7 @@ function drawTimeline() {
         text.attr({ fill: "#fff", id: "text"+i });
 
         clippings[i].draggable();
-        clippings[i].dragend = (function(text)_vadd_pagination_0785
+        clippings[i].dragend = (function(text) {
             return function() {
                 if (this.y() < 0)
                     this.move(this.x(), 0);
@@ -3004,7 +3060,7 @@ function drawTimeline() {
 
 # 音乐播放器
 
-到目前为止，我们已经对曲折的声音和图形之路进行了一次简短的游览。我们从 canvas 开始，探索了 2D 和动画的世界；从那里我们进入了视频和音频 HTML 元素以及 Web Audio API 的世界，使用 canvas 通过创建频谱图等工具来可视化音乐。然后又是图形领域，一头扎进 3D 世界，在那里我们玩转了各种光照和材质类型，以了解事物如何相互影响。第 5 章似乎完全摒弃了图形（当然除了使用 SVG），纯粹专注于音乐，通过 JavaScript 生成音符，不需要任何插件或音频文件，只需要实现 Web Audio API 的浏览器。然而，我想更专注于音频文件，从第 3 章扩展（在那里我们研究了使用的编解码器并介绍了 Web Audio API），并创建我一直提到的那个媒体播放器。
+到目前为止，我们已经对曲折的声音和图形之路进行了一次简短的游览。我们从 canvas 开始，探索了 2D 和动画的世界；从那里我们进入了视频和音频 HTML 元素以及 Web Audio API 的世界，使用 canvas 通过创建频谱图等工具来可视化音乐。然后又是图形领域，一头扎进 3D 世界，在那里我们玩转了各种光照和材质类型，以了解事物如何相互影响。第 5 章似乎完全摒弃了图形（当然除了使用 SVG），纯粹专注于音乐，通过 JavaScript 生成音符，不需要任何插件或音音频文件，只需要实现 Web Audio API 的浏览器。然而，我想更专注于音频文件，从第 3 章扩展（在那里我们研究了使用的编解码器并介绍了 Web Audio API），并创建我一直提到的那个媒体播放器。
 
 本章将收拾前几章的所有松散线头。我们将制作一个媒体播放器，其中包含上一章的音乐创作功能，以及创建一个 3D 可视化器（基于 Steven Wittens 的 js1k 演示），它不像频谱图那样是一个工具，而更像是你可能在 Winamp 等媒体播放器上看到的艺术作品。
 
@@ -3014,13 +3070,11 @@ function drawTimeline() {
 
 ## 规格说明
 
-我们的音乐播放器必须是纯客户端的，因此除了任何通过 URL 播放音乐的主机之外，不应依赖服务器。必须有选择音乐来源的选项，包括	local_278_v1机器和 Tomahawk 等服务。当然，与任何媒体播放器一样，必须有暂停、播放和停止按钮，以及至少一个播放列表的功能。正如我已经提到的，我们将把音乐创作应用和 3D 可视化器集成到媒体播放器中。这些功能将集成到应用中，但还有很大的空间可以进一步扩展应用，例如开发插件系统来分离功能。
+我们的音乐播放器必须是纯客户端的，因此除了任何通过 URL 播放音乐的主机之外，不应依赖服务器。必须有选择音乐来源的选项，包括	_local_278_v1机器和 Tomahawk 等服务。当然，与任何媒体播放器一样，必须有暂停、播放和停止按钮，以及至少一个播放列表的功能。正如我已经提到的，我们将把音乐创作应用和 3D 可视化器集成到媒体播放器中。这些功能将集成到应用中，但还有很大的空间可以进一扩展应用，例如开发插件系统来分离功能。
 
 ## 从哪里开始
 
 现在我们需要思考组织数据和界面的最佳方式，使它们不会过于紧密耦合，但又能相互影响。有很多方法可以实现这一点，但由于 Backbone 在这方面非常流行，我建议我们使用 Backbone。我不会假设你之前有任何相关知识，但这也不是关于它的教程，所以我会在需要时快速解释它的每个部分。
-
-
 
 ## 播放列表
 
@@ -3058,7 +3112,7 @@ var playlists = new Playlists();
 
 ## 视图
 
-我们使用 Backbone.View.extend() 创建视图来展示模型和集合。视图是一种封装模型所有方法和事件处理器的方式，使每个模型能够自行管理，而无需处理大量不同的数据。更重要的是，视图还是将模型中的数据连接到模板的方式，这些模板用于生成将数据呈现在页面上的 HTML。通常，一个视图对应一个模型，因此你只需定义一个模型和一个视图。遗憾的是，视图可以处理集合，但只能将其作为一个整体模型来处理。我们需要创建处理模型视图的列表视图，以便每个模型视图都可以绑定事件，而不是绑定到整个集合上。因此，要实现既包含播放列表名称列表又包含播放列表本身的界面，我们需要为两者各创建一个列表视图，并为每个单独的模型创建一个视图。我决定将列表视图命名为 PlaylistListView 和 TrackListView，以便清楚地表明它们是列表视图。当然，我必须选择 TrackList 而不是 Playlist，以免名称重复，并且这样其含义也稍微更明显一些。每个列表都有一个表示其模型的视图，即 PlaylistView 和 TrackView，每个列表视图中可以根据需要包含任意数量的模型视图。图 6-1 图形化地展示了这些视图之间的关系。
+我们使用 Backbone.View.extend() 创建视图来展示模型和集合。视图是一种封装模型所有方法和事件处理器的方式，使每个模型能够自行管理，而无需处大量不同的数据。更重要的是，视图还是将模型中的数据连接到模板的方式，这些模板用于生成将数据呈现在页面上的 HTML。通常，一个视图对应一个模型，因此你只需定义一个模型和一个视图。遗憾的是，视图可以处理集合，但只能将其作为一个整体模来处理。我们需要创建处理模型视图的列表视图，以便每个模型视图都可以绑定事件，而不是绑定到整个集合上。因此，要实现既包含播放列表名称列表又包含播放列表本身的界面，我们需要为两者各创建一个列表视图，并为每个单独的模型创建一个视图。我决定将列表视图命名为 PlaylistListView 和 TrackListView，以便清楚地表明它们是列表视图。当然，我必须选择 TrackList 而不是 Playlist，以免名称重复，并且这样其含义也稍微更明显一些。每个列表都有一个表示其模型的视视图，即 PlaylistView 和 TrackView，每个列表视图中可以根据需要包含任意数量的模型视图。图 6-1 图形化地展示了这些视图之间的关系。
 
 ![](img/dece54b614d0e868811b83f9273c55df_90_0.png)
 
@@ -3133,7 +3187,7 @@ var TrackListView = Backbone.View.extend({
 });
 ```
 
-单个视图的工作方式类似，但它们只需渲染自身，而无需渲染集合的内容。这些视图还使用 underscore 模板将数据渲染到页面。每个视图都有双击事件，会为 PlaylistView 触发一个名为 play 的函数。play 函数触发一个事件，使 App 播放播放列表中的第一首曲目，而 TrackView 上的 play 函数用于播放指定的曲目。
+单个视图的工作方式类似，但它们只需渲染自身，而无需渲染集合的内容。这些视图还使用 underscore 模板将数据渲染到页面。每个视视都有双击事件，会为 PlaylistView 触发一个名为 play 的函数。play 函数触发一个事件，使 App 播放播放列表中的第一首曲目，而 TrackView 上的 play 函数用于播放指定的曲目。
 
 ```
 var PlaylistView = Backbone.View.extend({
@@ -3185,7 +3239,7 @@ var TrackView = Backbone.View.extend({
 
 ## Player 对象
 
-你会注意到我在 player 上调用了一个函数，这个对象就是负责管理声音的对象。默认情况下，该对象将 el 存储为快速访问 $("#player")（即音频元素）的方式，它还将当前曲目的 id 存储为 track，默认值为 null。state 默认值为 "paused"，用于判断曲目是否正在播放。要更改曲目，我们只需要一个 setTrack 函数，将 track 设置为新的曲目 id。当然，播放器需要能够播放音乐，因此需要一个 play 函数；它需要将曲目 id 作为可选参数，这样就可以将其添加到音频元素的 src 中。
+你会注意到我在 player 上调用了一个函数，这个对象就是负责管理声音的对象。默认情况下，该对象将 el 存储为快速访问 $("#player")（即音频元素）的方式，它还将当前曲目的 id 存储为 track，默认值为 null。state 默认值为 "paused"，用于判断曲目是否正在播放。要更改曲目，我们只需要一个 setTrack 函数，将 track 设置为新的曲目 id。当然，播放器需要能够播放音乐，因此需要一个 play 函数；它需要将曲目 id 作为可选参数，这样就可以将其添到音频元素的 src 中。
 
 ```
 var Player = Backbone.View.extend({
@@ -3228,8 +3282,6 @@ var player = new Player();
 
 好的，我们已经编写了大量代码来构建应用的基础，但目前它实际上还不能做任何事情，因为这些代码还没有关联在一起。正是这个视图负责了解当前播放列表，并管理所有视图之间（以及任何不在视图中的元素之间）的交互。由于页面上每种列表视图始终只有一个，因此 AppView 将列表视图作为单例处理，以确保每种列表视图在使用时只有一个实例。
 
-
-
 到目前为止，我们只需要一个基本界面，包含每个视图的元素以及两个用于触发新建播放列表和添加曲目提示的链接。这些元素只是普通的 HTML 元素，可以像不使用 Backbone 时一样使用，唯一的区别是我们还需要将依赖项（包括 Backbone）作为脚本引入。
 
 ```
@@ -3269,6 +3321,8 @@ var player = new Player();
 
 AppView 负责处理与 DOM 的交互；在 Backbone 中，事件通过定义事件类型、选择器来查找元素，然后是一个值，即应触发的函数名称。AppView 将使用我们之前在本章创建的模型（例如播放列表）。你可以在下面的代码中看到事件监听器是如何设置的，以及我们将用来开发 AppView 的结构。
 
+
+
 ```
 var AppView = Backbone.View.extend({
     el: $("#app"),
@@ -3277,26 +3331,26 @@ var AppView = Backbone.View.extend({
     trackListView : new TrackListView(),
     playlistListView : new PlaylistListView(),
 
-      events: {
+    events: {
         "click #clear-completed": "clearCompleted",
         "click #toggle-all": "toggleAllComplete",
         "click #new-playlist": "createPlaylist",
         "click #new-track": "createTrack",
         "click #togglePlaying" : "togglePlay"
-      },
-      initialize: function() { },
-      changePlaylist: function(id) { },
-      createPlaylist: function(e) { },
-      createTrack: function(url) { },
-      handleDrop: function(e) { },
-      play: function()  { },
-      preventDefault: function(e) { },
-      render: function() { },
-      renderTracks: function() { },
-      renderPlaylists: function() { },
-      togglePlay: function()  { }
-  });
-  var App = new AppView;
+    },
+    initialize: function() { },
+    changePlaylist: function(id) { },
+    createPlaylist: function(e) { },
+    createTrack: function(url) { },
+    handleDrop: function(e) { },
+    play: function()  { },
+    preventDefault: function(e) { },
+    render: function() { },
+    renderTracks: function() { },
+    renderPlaylists: function() { },
+    togglePlay: function()  { }
+});
+var App = new AppView;
 ```
 
 在 initialize 函数中，我们将设置 Backbone 事件（与 DOM 事件相对），当模型上触发事件时调用函数。第一个函数是 renderPlaylists，其目的是每当播放列表需要更改时，可以在 playlistListView 上渲染以更新页面上的播放列表。还有另一个用于渲染的函数叫做 render，它作为一个通用函数来同时渲染播放列表和曲目。render 函数调用 renderPlaylists 和 renderTracks。后者的作用是确保要渲染的播放列表（即播放列表中的实际曲目）具有 currentPlaylist 中保存的当前 id。然而，它应该始终已经是正确的，因为要在首先更改播放列表时，我们有一个 changePlaylist 函数，它既更改 currentPlaylist id，也更改 trackListView 的播放列表模型。
@@ -3417,47 +3471,102 @@ drawTimeline();
 
 ## 音乐可视化
 
-到目前为止，我们所讲的大部分内容都有规则可循，例如设计模式或音乐理论。但这一步不同。你可以将音乐可视化视为一种艺术，我们所使用的数学大多 loosely 基于三角函数等概念，通过调整数字来让可视化效果看起来有趣。我深受 Steven Wittens ([http://www.acko.net](http://www.acko.net)) 的启发，他一直都活跃在这个领域，撰写文章、在会议上演讲以及制作演示，所有这些都使用数学来创造有趣的效果。在这一节中，我修改了 Steven 的 js1k 参赛作品，以配合音乐播放器使用，因为他已经写了一篇深入的文章 ([http://ack(Math.sin(h + i + time * .15) + 1)) + "," + Math.round(distance * (h + Math.sin(i - 1) + 1)) + "," + Math.round(distance * (h + Math.sin(i - 1.3) + 1)) + ")";
-                    if (z3 > 0.1) {
-                        if (lastPointVisible) {
-                            g.stroke();
-                        }
-                        else {
-                            lastPointVisible = true;
-                        }
-                    }
-                    else {
-                        lastPointVisible = false;
-                    }
-                    g.beginPath();
-                    g.moveTo(x,y);
-                }
+到目前为止，我们所讲的大部分内容都有规则可循，例如设计模式或音乐理论。但这一步不同。你可以将音乐可视化视为一种艺术，我们所使用的数学大多 loosely 基于三角函数等概念，通过调整数字来让可视化效果看起来有趣。我深受 Steven Wittens ([http://www.acko.net](http://www.acko.net)) 的启发，他一直都活跃在这个领域，撰写文章、在会议上演讲以及制作演示，所有这些都使用数学来创造有趣的效果。在这一节中，我修改了 Steven 的 js1k 参赛作品，以配合音乐播放器使用，因为他已经写了一篇深入的文章 ([http://acko.net/blog/js1k-demo-the-making-of](http://acko.net/blog/js1k-demo-the-making-of))。
+
+```
+function draw() {
+
+    g.clearRect(0,0,width,height);
+
+    g.globalCompositeOperation = "lighter";
+
+    g.lineWidth = 3;
+
+    for (var i = 0; i < points.length; i++) {
+
+        var point = points[i];
+
+        var x = point.x;
+
+        var y = point.y;
+
+        var h = Math.floor(point.h);
+
+        var distance = point.distance;
+
+        var z1 = Math.round(distance * (h + Math.sin(i) + 1));
+
+        var z2 = Math.round(distance * (h + Math.sin(i - 0.3) + 1));
+
+        var z3 = Math.round(distance * (h + Math.sin(i - 0.6) + 1));
+
+        g.beginPath();
+
+        g.moveTo(x,y);
+
+        g.lineTo(x + Math.round(distance * (h + Math.sin(h + i + time * .15) + 1)), y + Math.round(distance * (h + Math.sin(i - 1) + 1)) + "," + Math.round(distance * (h + Math.sin(i - 1.3) + 1)));
+
+        if (z3 > 0.1) {
+
+            if (lastPointVisible) {
+
+                g.stroke();
+
             }
+
+            else {
+
+                lastPointVisible = true;
+
+            }
+
         }
+
+        else {
+
+            lastPointVisible = false;
+
+        }
+
+        g.beginPath();
+
+        g.moveTo(x,y);
+
     }
+
 }
+
 ```
 
 ```
 function getAverage(freqData) {
+
     var average = 0;
+
     for (var i = 0; i < freqData.length; i++) {
+
         average += freqData[i];
+
     }
+
     average = average / freqData.length;
+
     return average;
+
 }
+
 ```
 
 ```
 function interpolate(a,b) {
+
     return a + (b-a) * 0.04;
+
 }
+
 ```
 
 开头部分只是像通常使用 canvas 时一样的设置代码，获取上下文和尺寸。然而在这些代码之后，有一行非常强大的代码：`g.globalCompositeOperation = "lighter"`。如果你有计算机图形技术层面的经验，或者在 Photoshop（或其他图形软件）中使用过混合模式，那么你就会对这是什么有所了解。合成操作是一种合成形式（与裁剪并列），用于根据多个形状的重叠方式来操作它们（基于许多常见算法）。合成操作本身被称为 Porter-Duff 算符（以其发明者命名），但在 canvas 中使用时有略微不同的名称。合成操作有很多种。这里我们使用的是 **lighter**，它使形状的任何重叠区域的颜色变为重叠形状的更亮混合。默认值是 source-over。表 6-1 是可用操作的完整列表（来自 canvas 规范）：
-
-**表 6-1。**
 
 | 操作名称 | Porter-Duff 算符 | 描述 |
 | :--- | :--- | :--- |
@@ -3472,8 +3581,6 @@ function interpolate(a,b) {
 | lighter | A plus B | 显示源图像和目标图像的和，颜色值趋近于 255（100%）为上限。 |
 | copy | A（忽略 B） | 显示源图像而不是目标图像。 |
 | xor | A xor B | 源图像和目标图像的异或。 |
-
-
 
 接下来的代码部分使用一个比例来缩放和转换画布。严格来说，这并不是必需的。但我还是决定保留它，因为这是一个有趣的优化方法。基本上，我们不会绘制整个画布的坐标，而是将它们绘制在 –1 到 1 之间，这样性能会更好，因为转换画布比逐个绘制整个画布更简单、更快。`lastPointVisible` 这个布尔值是另一个轻微的优化，它只用于渲染前景，这样背景中看不到的部分就不会被渲染。从这里开始，我们需要使用 `requestAnimationFrame`，原因和之前一样，是为了保持流畅，并且只在需要时才进行处理（当然这是非常密集的代码）。RAF 调用一个 `draw` 函数来绘制每一帧。顺便问一下，你看到这些模式了吗？每个项目都可以简化为几种模式，这就是为什么我使用一些你可能永远不需要构建的示例——无论如何，这些概念都会很有用！
 
@@ -3497,9 +3604,10 @@ function interpolate(a,b) {
 
 ### 安装 Node.js
 
-显然，要使用 Node.js 编写任何东西，你需要先安装它。安装方法有很多种。你可以使用包管理器，例如 apt-get、yum 或 Homebrew（取决于你使用的操作系统），但这些并不总是最新的版本。在 Node.js 网站 [www.nodejs.org](http://www.nodejs.org) 上，你可以下载最新版本的可执行文件，或者从源代码构建。或者，你也可以使用 [www.github.com/creationix/nvm](http://www.github.com/creationix/nvm) 上的 Node Version Manager (nvm)，如果你正在处理许多并非都使用最新版本的代码库，这尤其有用。Node 自带一个名为 npm 的内置包管理器，它通过一个名为 package.json 的文件来处理依赖关系，因此你不需要自己安装 Express 和 Socket.IO，只需将其放入该文件即可。当你准备好安装包时，在包含 package.json 的文件夹中运行 npm install。
+显然，要使用 Node.js 编写任何东西，你需要先安装它。安装方法有很多种。你可以使用包管理器，例如 apt-get、yum 或 Homebrew（取决于你使用的操作系统），但这些并不总是最新的版本。在 Node.js 网站 [www.nodejs.org](http://www.nodejs.org) 上，你可以下载最新版本的可执文件，或者从源代码构建。或者，你也可以使用 [www.github.com/creationix/nvm](http://www.github.com/creationix/nvm) 上的 Node Version Manager (nvm)，如果你正在处理许多并非都使用最新版本的代码库，这尤其有用。Node 自带一个名为 npm 的内置包管理器，它通过一个名为 package.json 的文件来处理依赖关系，因此你不需要自己安装 Express 和 Socket.IO，只需将其放入该文件即可。当你准备好安装包时，在包含 package.json 的文件夹中运行 npm install。
 
 ```
+
 {
     "name": "javascript-creativity-chatroom",
     "description": "A chatroom made in chapter 7 of the JavaScript Creativity book.",
@@ -3530,20 +3638,23 @@ function interpolate(a,b) {
 
 这正是 npm 介入并让事情变得更好的地方。由于 Node.js 中 `node_modules` 文件夹的特性，npm 会查看你 package.json 中的 "dependencies" 和 "devDependencies" 对象，并将每个依赖下载到你的 `node_modules` 文件夹。它还会下载你的模块的所有依赖，以及你的模块的模块的所有依赖，依此类推。"dependencies" 和 "devDependencies" 之间的区别在于，npm 不会安装其他模块的 devDependencies，只会安装 dependencies。默认情况下，npm 将所有内容安装到本地的 `node_modules` 文件夹中。这并不总是你想要的，所以如果你使用 `npm install -g <module>` 安装模块，那么它会全局安装（通常在 `$HOME/.node_modules/` 中）。这非常有用，因为你可以用它来安装用 Node.js 编写的命令行程序。例如，我在开发项目时使用 Remy Sharp 的 nodemon 作为运行 node 服务器的另一种方式，因为默认的 `node [文件名]` 方法在服务器运行时不会监视已更新的文件。要安装 nodemon，请运行 `npm -g install nodemon`，然后运行 `nodemon [文件名]` 通过 nodemon 运行服务器。有关 nodemon 的更多信息，请访问 [www.remy.github.io/nodemon/](http://www.remy.github.io/nodemon/)。
 
-
-
-Node.js 最简单的例子当然是 Hello World。为了提供一个网页，我们需要 require 一个名为 http 的模块，它让我们能够处理 HTTP 的底层细节。该模块是一个核心模块，所以我们使用列表中的第一个定义。一旦 require 了 HTTP，我们就将其存储在一个名为 http 的变量中。然后我们使用 http 上的一个名为 createServer 的方法；它有一个回调函数，可以让你发送响应（也称为网页）。要创建被服务的网页，我们首先使用 response.writeHead 来写入响应头。需要提供的第一个参数是 HTTP 状态码 200（OK）。第二个参数是实际的响应头，在这个示例中我们只写入 "Hello World"，所以 Content-Type 可以是 text/plain，如果你想向页面中写入一些 HTML 内容，你也可以选择使用 text/html。要写入实际的内容，只需使用 response.write。写完响应后，使用 response.end() 来结束响应。现在你已经有了一个服务器，但要真正地提供页面，你需要告诉它在某个端口上监听活动（在本例中为 8080 端口）。
+Node.js 最简单的例子当然是 Hello World。为了提供一个网页，我们需要 require 一个名为 http 的模块，它让我们能够处理 HTTP 的底层细节。该模块是一个核心模块，所以我们使用列表中的第一个定义。一旦 require 了 HTTP，我们就将其存储在一个名为 http 的变量中。然后我们使用 http 上的一个名为 createServer 的方法；它有一个回调函数，可以让你发送响应（也称为网页）。要创建被服务的网页，我们首先使用 response.writeHead 来写入响应头。需要提供的第一个参数是 HTTP 状态码 200（OK）。第二个参是实际的响应头，在这个示例中我们只写入 "Hello World"，所以 Content-Type 可以是 text/plain，如果你想向页面中写入一些 HTML 内容，你也可以选择使用 text/html。要写入实际的内容，只需使用 response.write。写完响应后，使用 response.end() 来结束响应。现在你已经有了一个服务器，但要真正地提供页面，你需要告诉它在某个端口上监听活动（在本例中为 8080 端口）。
 
 ```
 var http = require("http");
+
 http.createServer(function(request, response) {
+
   response.writeHead(200, {"Content-Type": "text/plain"});
+
   response.write("Hello World");
+
   response.end();
+
 }).listen(8080);
 ```
 
-既然你已经知道了如何 require 一个模块并对其进行操作，接下来让我们编写一个简单的自定义模块，利用我之前提到的 module.exports。该模块会将我们的 Hello World 代码封装到一个名为 helloworld.js 的文件中，然后在 server.js 中将其作为一个名为 hello 的变量进行 require，并调用其中的 server 方法。
+既然你已经知道了如何 require 一个模块并对其进行操作，接下来让我们编写一个简单的自定模块，利用我之前提到的 module.exports。该模块会将我们的 Hello World 代码封装到一个名为 helloworld.js 的文件中，然后在 server.js 中将其作为一个名为 hello 的变量进行 require，并调用其中的 server 方法。
 
 ## helloworld.js
 
@@ -3551,11 +3662,17 @@ http.createServer(function(request, response) {
 var http = require("http");
 
 function hello() {
+
   http.createServer(function(request, response) {
+
     response.writeHead(200, {"Content-Type": "text/html"});
+
     response.write("Hello World");
+
     response.end();
+
   }).listen(8080);
+
 }
 
 module.exports.server = hello;
@@ -3565,6 +3682,7 @@ module.exports.server = hello;
 
 ```
 var hello = require('./helloworld.js');
+
 hello.server();
 ```
 
@@ -3592,16 +3710,27 @@ Express.js 使你能够更轻松地进入网站开发中实际编写代码的阶
 
 ```
 var http = require('http');
+
 http.createServer(function(request, response) {
+
     var url = request.url;
+
     response.writeHead(200, {"Content-Type": "text/html"});
+
     if (url == '/hello') {
+
         response.write("Hello World!");
+
     }
+
     else {
+
         response.write("Goodbye cruel world!");
+
     }
+
     response.end();
+
 }).listen(8080);
 ```
 
@@ -3609,13 +3738,21 @@ http.createServer(function(request, response) {
 
 ```
 var express = require('express');
+
 var app = express();
+
 app.get('/hello', function(request, response) {
+
     response.send("Hello World!");
+
 });
+
 app.get('/*', function(request, response) {
+
     response.send("Goodbye cruel world!");
+
 });
+
 app.listen(8080);
 ```
 
@@ -3623,8 +3760,11 @@ app.listen(8080);
 
 ```
 var app = require('express')(),
+
     server = require('http').createServer(app),
+
     io = require('socket.io').listen(server);
+
 server.listen(8080);
 ```
 
@@ -3632,37 +3772,41 @@ server.listen(8080);
 
 ```
 <!doctype html>
+
 <html>
+
     <head>
+
         <title>Chatroom</title>
+
     </head>
+
     <body>
+
         <label for="nickname">Nickname:</label><input type="text" id="nickname"></input>
+
         <div id="messages"></div>
+
         <textarea id="message"></textarea>
+
         <a id="send">Send</a>
+
     </body>
+
 </html>
 ```
 
-现在你需要使用路由（正如我们在 Hello World 示例中所做的那样）来告诉浏览器去哪里获取内容。对于这个聊天室，我们希望可以访问多个房间，一个不错的做法是将聊天室的名称（或一个随机标识符）放在房间的 URL 中。Express 提供了一种简便的方法来获取这个名称，即作为路径段（也称为命名参数），但因为这个聊天室不需要多个视图，我们可以将所有页面都指向 index.html。我们也可以使用通配符来实现这一点，而不是使用命名参数，但使用命名参数是一个介绍“将路径用作参数”这一概念的好方法。它还能够强制要求包含聊天室 id，因为在没有 id 的情况下它不会提供该页面；这意味着如果想要添加一个主页，就需要使用单独的路由。
+现在你需要使用路由（正如我们在 Hello World 示例中所做的那样）来告诉浏览器去哪里获取内容。对于这个聊天室，我们希望可以访多个房间，一个不错的做法是将聊天室的名称（或一个随机标识符）放在房间的 URL 中。Express 提供了一种简便的方法来获取这个名称，即作为路径段（也称为命名参数），但因为这个聊天室不需要多个视图，我们可以将所有页面都指向 index.html。我们也可以使用通配符来实现这一点，而不是使用命名参数，但使用命名参数是一个介绍“将路径用作参数”这一概念的好方法。它还能够强制要求包含聊天室 id，因为在没有 id 的情况下它不会提供该页面；这意味着如果想要添加一个主页，就需要使用单独的路由。
 
 ```
 app.get('/:id?', function (req, res) {
+
     res.sendfile(__dirname + '/index.html');
+
 });
 ```
 
 当然，这是一个相当无用的聊天室。让我们编写用于处理消息的服务端代码。使用 Socket.IO 时，我们需要检查连接，使用 io.sockets.on('connection', function (socket) {}); 作为所有连接的事件处理器，然后加入 URL 路径段中命名的那个房间。与 Express 不同，获取标识符需要使用 var room = socket.handshake.headers.referer，因为 Express 的 .get 方法在路由完成之后就不可用了。获取标识符的其他方式包括：从客户端发送路径段过来，或者最初使用 res.local（作用域限定在请求/响应周期内的变量）来提供，并将其作为客户端的全局变量暴露出来。使用 socket.handshake 方式虽然代码比较长，但在本例中，它是一种避免从客户端发送信息的好方法。
-
-
-
-```markdown
-第7章 ■ 使用Node.js实现实时协作
-
-将标识符存储在名为`room`的变量中后，我们现在可以使用`socket.join(room);`来加入一个与该ID同名的Socket.IO房间。这些房间本质上是将正确的消息发送给正确人员的一种方式，只有房间成员才能收到该特定房间的消息。
-
-要检查消息或当用户离开房间时，我们使用`socket`上的事件处理器。通过Socket.IO的每次通信都被归类为一条消息，不要与聊天室中书写的那些消息混淆。发送消息被称为`emit`（发射）。为了让聊天室中的消息能够相互发送，我们首先在客户端（我很快会讲到）将消息`emit`到服务器，然后服务器再将其发送给连接到该房间的其他客户端。要向房间广播消息，我们使用`io.sockets.in(room).emit(key, value);`。对于聊天室消息，我们使用字符串`'message'`作为键（key），数据则作为值（value）通过事件监听器的`data`参数传递。对于离开房间，键是`'leave'`。
 
 ```
 io.sockets.on('connection', function (socket) {
@@ -3677,7 +3821,7 @@ io.sockets.on('connection', function (socket) {
 });
 ```
 
-这就是基础聊天室服务器的全部内容，你可以从清单7-1中看到代码是多么简洁。我们现在需要做的就是，在客户端设置事件处理器，在消息发送时进行`emit`，这样，利用Socket.IO房间的强大功能和我们刚刚编写的代码，它将自动实时地将消息发送给同一房间的任何人！无需担心AJAX或长轮询（long polling），Socket.IO使用的是当前可用的最佳方法（大多数现代浏览器使用Web Sockets，但其他浏览器会回退到相应的方法）。不使用AJAX是我在本章决定不使用jQuery或任何类似库的最大因素之一，尽管对于更大的项目，你可能需要使用它们。
+这就是基础聊天室服务器的全部内容，你可以从清单7-1中看到代码是多么简洁。我们现在需要做的就是，在客户端设置事件处理器，在消息发送时进行 emit，这样，利用Socket.IO房间的强大功能和我们刚刚编写的代码，它将自动实时地将消息发送给同一房间的任何人！无需担心AJAX或长轮询（long polling），Socket.IO使用的是当前可用的最佳方法（大多数现代浏览器使用Web Sockets，但其他浏览器会回退到相应的方法）。不使用AJAX是我在本章决定不使用jQuery或任何类似库的最大因素之一，尽管对于更大的项目，你可能需要使用它们。
 
 清单7-1.
 
@@ -3704,8 +3848,6 @@ io.sockets.on('connection', function (socket) {
 </script>
 ```
 
-110
-
 **注意** 要在客户端使用Socket.IO，你必须包含`<script src="/socket.io/socket.io.js"></script>`，不过你无需担心其位置，因为Node.js会自动处理它。
 
 ## 总结
@@ -3716,7 +3858,7 @@ io.sockets.on('connection', function (socket) {
 
 ## 使用WebRTC实现视频对视频
 
-我们聊天室的自然发展是视频对视频（video-to-video），就像Skype和Google Hangouts使用的那种，但直到最近，这比听起来要困难得多。为什么？是的，你猜对了……需要插件（即Flash）。直到2012年，在网络开始近20年之后，来自网络摄像头的原生视频流才开始逐渐进入浏览器。既然WebRTC开始得到广泛支持，那么学习如何使用它就变得很有价值。我不会假装它很简单——它并不简单——但是，一旦你弄清楚了它的工作原理，它确实是有道理的。
+我们聊天室的自然发展是视频对视频（video-to-video），就像Skype和Google Hangouts使用的那种，但直到最近，这比听起来要困难得多。为什么？是的，你猜对了……需要插件（即Flash）。直到2012年，在网络开始近20年之后，来自网络摄像头的原生视�流才开始逐渐进入浏览器。既然WebRTC开始得到广泛支持，那么学习如何使用它就变得很有价值。我不会假装它很简单——它并不简单——但是，一旦你弄清楚了它的工作原理，它确实是有道理的。
 
 ### WebRTC简介
 
@@ -3748,7 +3890,9 @@ navigator.getUserMedia( {audio: true, video: true},
 正如我在本章开头提到的，WebRTC是一套规范。它由以下三个API组成：
 
 - 媒体流API（Media Stream API）
+
 - 对等连接API（PeerConnection API）
+
 - 数据通道API（DataChannel API）
 
 媒体流API主要涵盖了我之前解释的`getUserMedia()`方法。它需要自己的规范，因为尽管它非常易于使用，但对于浏览器实现者来说却很复杂。对等连接也很复杂，因为HTML API中以前从未有任何类型的对等网络。它为我们提供了一个简单的API来使用，而不是陷入网络复杂的工作细节中。
@@ -3772,47 +3916,66 @@ io = require('socket.io').listen(server);
 io.set('log level', 1); // Removes debug logs
 server.listen(8080);
 ```
-```
-
-
 
 ```
+
 app.get('/:id', function (req, res) {
+
     res.sendfile(__dirname + '/index.html');
+
 });
 
 io.sockets.on('connection', function (socket) {
+
     var room = socket.handshake.headers.referer;
+
     socket.join(room);
+
     socket.on('message', function (data) {
+
         io.sockets.in(room).emit('message', data);
+
     });
+
     socket.on('leave', function (room) {
+
         socket.leave(room);
+
     });
+
 });
+
 ```
 
 我们需要保留所有这些内容，尽管其中某些部分会被编辑。在诸如此类可能相当复杂的应用中，我倾向于为每个 socket 赋予一个唯一标识符。为此我使用了 node-uuid，所以我们需要在文件顶部导入它。然后在新 socket 连接的代码中，我们将 uuid.v1() 的输出赋给 socket.id。当然我们需要让客户端知道它已经被分配了一个 id，因此我们触发一个 'assigned_id' 消息，将该 id 发送给客户端。
 
 ```
 var express = require('express'),
+
     http = require('http'),
+
     uuid = require("node-uuid"),
+
     app = express(),
+
     server = http.createServer(app),
+
     io = require('socket.io').listen(server);
 
 io.sockets.on('connection', function (socket) {
 
     var room = socket.handshake.headers.referer;
+
     console.log('JOINED', room);
+
     socket.join(room);
+
     socket.id = uuid.v1();
 
     socket.emit('assigned_id', socket.id);
 
     // 其他所有代码都放在这里
+
 });
 ```
 
@@ -3820,8 +3983,11 @@ io.sockets.on('connection', function (socket) {
 
 ```
 socket.on('assigned_id', function(data) {
+
     console.log('assigned id' + data);
+
     socket.id = data;
+
 });
 ```
 
@@ -3829,76 +3995,115 @@ socket.on('assigned_id', function(data) {
 
 ```
 socket.on('received_offer', function(data) {
+
     console.log("received_offer %j", data);
+
     io.sockets.in(room).emit('received_offer', data);
+
 });
 
 socket.on('received_candidate', function(data) {
+
     console.log("received_candidate %j", data);
+
     io.sockets.in(room).emit('received_candidate', data);
+
 });
 
 socket.on('received_answer', function(data) {
+
     console.log("received_answer %j", data);
+
     io.sockets.in(room).emit('received_answer', data);
+
 });
 ```
 
 你必须记住，整个代码会在两个客户端上同时运行，所以 c1 会将 received_offer 发送给 c2，但 c2 同样也会将它发送给 c1。这正是我们判断双方都已就绪的方式。当 c2 收到 offer 时，它会将其对等连接的远端描述（remote description）设置为 c1 所发送的那个（c1 的本地描述成为 c2 的远端描述，反之亦然）。然后它会创建一个 answer，将其本地描述（同样从回调中获取）发送回去；这一步看起来似乎并不必要，因为双方都已经拥有了对方的描述，但它可以看作是一种确认。它还在客户端设置一个名为 connected 的布尔变量为 true，以避免此过程重复执行并导致无限循环。在每个客户端上，对等连接会在本地描述被设置完成后注册一个 ICE 候选（ICE candidate）就绪的事件；这会触发一个事件，由客户端通过 pc.onIceCandidate() 处理，然后通过触发之前提到的 'received_candidate' 消息将更多数据（以 SDP 形式，我稍后会解释）发送给服务器。当然，c2 现在会接收到该 SDP，并使用它将 c1 作为 ICE 候选添加到对等连接中。
 
-如果一切按计划进行，c1 和 c2 现在就能够看到彼此了。嗯，前提是我们已经实现了客户端代码。我的解释可能看起来相当令人困惑，那是因为我想准确地解释它究竟是如何工作的，而不仅仅是说服务器需要传递一些消息。它基本上与第 7 章中介绍的概念相同，也是你在编写 node.js 代码时会经常使用的一种模式。代码清单 8-1 给出了服务器端的代码，其中包含一条用于平滑关闭连接的消息，以及另一条用于显示房间内客户端数量的消息：
+如果一切按计划进行，c1 和 c2 现在就能够看到彼此了。嗯，前提是我们已经实现了客户端代码。我的解释可能看起来相当令人困惑，那是因为我想准确地解释它究竟是如何工作的，而不仅仅是说服器需要传递一些消息。它基本上与第 7 章中介绍的概念相同，也是你在编写 node.js 代码时会经常使用的一种模式。代码清单 8-1 给出了服务器端的代码，其中包含一条用于平滑关闭连接的消息，以及另一条用于显示房间内客户端数量的消息：
 
 **代码清单 8-1.** Server.js
 
 ```
 var express = require('express'),
+
     http = require('http'),
+
     uuid = require ("node-uuid"),
+
     app = express(),
+
     server = http.createServer(app),
+
     io = require('socket.io').listen(server);
+
 io.set('log level', 1); // 关闭调试日志
+
 app.use(express.static('public'));
+
 server.listen(8080);
 
 app.get('/:id?', function (req, res) {
+
     res.sendfile(__dirname + '/index.html');
+
 });
+
 ```
 
 ```
+
 io.sockets.on('connection', function(socket) {
+
     var room = socket.handshake.headers.referer;
+
     console.log('JOINED', room);
+
     socket.join(room);
+
     socket.id = uuid.v1();
 
     socket.emit('assigned_id', socket.id);
 
     socket.on('debug_clients', function(data) {
+
         socket.emit('room_count', io.sockets.manager.rooms['/' + room].length);
+
     });
 
     io.sockets.in(room).emit('room_count', io.sockets.manager.rooms['/' + room].length);
 
     socket.on('received_offer', function(data) {
+
         console.log(" received_offer %j", data);
+
         io.sockets.in(room).emit('received_offer', data);
+
     });
 
     socket.on('received_candidate', function(data) {
+
         console.log(" received_candidate %j", data);
+
         io.sockets.in(room).emit('received_candidate', data);
+
     });
 
     socket.on('received_answer', function(data) {
+
         console.log(" received_answer %j", data);
+
         io.sockets.in(room).emit('received_answer', data);
+
     });
 
     socket.on('close', function() {
+
         console.log("closed %j", room);
+
         io.sockets.in(room).emit('closed', room);
+
     });
 
 });
@@ -3940,8 +4145,6 @@ NAT 是硬件路由器（以及一些商用交换机）背后的技术，它使�
 
 NAT 穿透 是对一组以用户友好的方式绕过这种限制的方法的统称。如果没有 NAT 穿透技术，用户将不得不在防火墙上手动打开端口以允许入站通信，并将该端口信息提供给其他连接方。一些常见的 NAT 穿透技术包括：反向代理（Reverse Proxies）、Socket Secure（SOCKS）、通用即插即用（UPnP）以及 UDP 打洞（UDP Hole Punching）。
 
-
-
 ## STUN/TURN
 
 STUN（Session Traversal Utilities for NAT，NAT 会话穿透工具）和 TURN（Traversal Using Relays around NAT，使用中继穿透 NAT）都是信令协议，常被 ICE 用作 NAT 穿透的工具。如果你希望自行搭建服务器，它们各自都有开源实现。我在撰写本章时使用的两个（你只需要一个，但可以将它们组成一个数组以便备用）分别由 Google 和 Mozilla 运行，地址是 `stun:stun.l.google.com:19302` 和 `stun:stun.services.mozilla.com`。你会注意到这两个服务器都是 STUN。这主要是因为它们是我最先发现的可靠免费服务器。两者之间的主要区别在于，TURN 使用中继技术，因此数据是通过服务器中继转发到达客户端的。不过它的好处在于 TURN 构建在 STUN 之上，因此总是先尝试使用 STUN，如果失败再使用中继。TURN 的另一个优点是它能处理对称型 NAT（Symmetric NAT），而 STUN 不行。
@@ -3952,15 +4155,25 @@ STUN（Session Traversal Utilities for NAT，NAT 会话穿透工具）和 TURN�
 
 ```
 v=0
+
 o=- 6888311506875211333 2 IN IP4 127.0.0.1
+
 s=-
+
 t=0 0
+
 a=group:BUNDLE audio video
+
 a=msid-semantic: WMS YuWoiIj3TGBXItoUd2iqCWMbt7FnkBqSNpP96
+
 m=audio 1 RTP/SAVPF 111 103 104 0 8 107 106 105 13 126
+
 c=IN IP4 0.0.0.0
+
 a=rtcp:1 IN IP4 0.0.0.0
+
 a=ice-ufrag:qbj6LYoXCSHnUUuq
+
 a=ice-pwd:/eziXfWhziBTVpMy1TLU2M3
 ```
 
@@ -4020,42 +4233,68 @@ a=ice-pwd:/eziXfWhziBTVpMy1TLU2M3
 
 ```
 var socket = io.connect('http://localhost');
+
 var pc = new RTCPeerConnection(servers, mediaConstraints);
+
 var initConnection = false;
 
 socket.on('room_count', function(data) {
+
   room_count = data;
+
   console.log('ROOM COUNT', data);
+
   if (room_count > 1)
+
     initConnection = true;
+
 });
 
 function broadcast() {
+
   getUserMedia({audio: true, video: true}, function(s) {
+
     pc.addStream(s);
+
     console.log("GOT MEDIA");
+
     vid1.src = URL.createObjectURL(s);
+
     vid1.play();
+
     if (initConnection) start();
+
   }, function(error) {throw error;});
+
 };
 
 window.onload = function() {
+
   broadcast();
+
 };
+
 ```
 
 在 start() 中，我们需要创建 offer，这是通过对等连接的 pc.createOffer() 来实现的。该方法本身会通过参数提供可访问的 SDP，然后我们就可以使用它来设置本地描述，并向服务器发送一个包含该 SDP 的 'received_offer' 消息。
 
 ```
 function start() {
+
   console.log('STARTING');
+
   // this initializes the peer connection
+
   pc.createOffer(function(description) {
+
     console.log(description);
+
     pc.setLocalDescription(description);
+
     socket.emit('received_offer', JSON.stringify(description));
+
   }, null, mediaConstraints);
+
 };
 ```
 
@@ -4063,11 +4302,17 @@ function start() {
 
 ```
 var mediaConstraints = {
+
   'mandatory': {
+
     'OfferToReceiveAudio':true,
+
     'OfferToReceiveVideo':true
+
   },
+
   'optional': [{'DtlsSrtpKeyAgreement': 'true'}]
+
 };
 ```
 
@@ -4075,16 +4320,27 @@ var mediaConstraints = {
 
 ```
 socket.on('received_offer', function(data) {
+
   data = JSON.parse(data);
+
   console.log('received offer');
+
   if (data.type == "offer") {
+
     pc.setRemoteDescription(new RTCSessionDescription(data));
+
     pc.createAnswer(function(data) {
+
       console.log('sending answer', data);
+
       pc.setLocalDescription(data);
+
       socket.emit('received_answer', data );
+
     }, null, mediaConstraints);
+
   }
+
 });
 ```
 
@@ -4092,18 +4348,21 @@ socket.on('received_offer', function(data) {
 
 ```
 socket.on('received_answer', function(data) {
+
   console.log('received answer', data);
+
   if(!connected && data.type == "answer") {
+
     var description = new RTCSessionDescription(data);
-```
 
+    console.log("Setting remote description", description);
 
+    pc.setRemoteDescription(description);
 
-```
-console.log("Setting remote description", description);
-pc.setRemoteDescription(description);
-connected = true;
-}
+    connected = true;
+
+  }
+
 });
 ```
 
@@ -4113,1034 +4372,86 @@ connected = true;
 
 ```
 socket.on('received_candidate', function(data) {
+
   console.log('received candidate', data);
+
   data = JSON.parse(data);
 
   var candidate = new RTCIceCandidate({
+
     sdpMLineIndex: data.label,
+
     candidate: data.candidate
+
   });
+
   pc.addIceCandidate(candidate);
+
 });
 
 pc.onicecandidate = function(e) {
+
   console.log("oniceCandidate", e);
+
   if(e.candidate) {
+
     socket.emit('received_candidate', JSON.stringify({
+
       label: e.candidate.sdpMLineIndex,
+
       id: e.candidate.sdpMid,
+
       candidate: e.candidate.candidate
+
     }));
+
   }
+
 };
+
 ```
 
 既然两个对等连接都已经拥有了所有需要的候选者，我们基本就要完成了。一旦一切就绪，addstream 事件将会被触发，让我们将远程视频流放入 video 元素中（在本例中，是 vid2）。
 
 ```
 pc.onaddstream = function(e) {
+
   console.log('start remote video stream');
+
   console.log(e);
+
   vid2.src = URL.createObjectURL(e.stream);
-  vid2.play();
-};
-```
 
-值得注意的是，没有关闭连接的用户会看到远程视频冻结在最后一帧传送的画面上，你确认可以通过在 'close' 消息上设置事件处理器来显示连接已断开。代码的最终版本可以在 Apress 网站 www.apress.com/9781430259442 上找到，也可以在我自己的网站 shanehudson.net/javascript-creativity 上找到。
 
-## 总结
 
-希望你享受这一章，WebRTC 是那些一开始 quite confusing 的技术之一，而且在浏览器实现层面（如 SDP）非常复杂，但一旦你理解了它，实际上就相当简单了。它也极其强大。我们这里做了最明显的用例，因为这是最有用的入门方式，但 WebRTC（尤其如果你想放弃信令，而用其他方式寻找其他客户端）作为一种通用的对等 P2P 技术非常有用；例如，你可以在游戏中或原型应用中，希望用户连接而无需服务器的开销。访问用户的摄像头也极其强大，正如你将在下一章看到的，我们开始探索计算机视觉的领域。
+进入`/path/to/xxx`目录，找到`xxx.json`。
 
-## 第 9 章
+在表达式`cvar = avar + bvar`中，加法运算符（`+`）将`avar`与`bvar`相加，得到它们的和`cvar`
 
-## 运动检测
+在`List.of(arg0, arg1, arg2)`中，`List`接口的工厂方法`of()`接受一系列的元素，返回包含它们的只读列表。
 
-## 运动检测简介
-
-到目前为止，本书中我们已经介绍了多种具有明显应用的技术，你可以不用太多创造力就能实现，这些技术以前可能不可能，但现在实现起来并不难，比如上一章的视频对视频聊天。我现在想深入探讨计算机视觉领域，这是我的个人兴趣之一，而且有多种应用方式。因为本书既不是关于高级计算机视觉，也不是面向学术界/研究实验室的，所以我们坚持使用相对基础的算法，避免任何需要训练的人工智能，比如人脸识别。
-
-在本章中，我们重点讨论运动检测，因为它与 WebRTC 结合得很好，而且可能是基础计算机视觉中最有用的方面。在下一章中，我们将创建一个可以用运动检测来演奏的乐器，并且可以与其他人通过 WebRTC 一起演奏，这应该会很好地把整本书串联起来。不过现在，想想你还可以用运动检测做其他什么应用，比如家庭安防，甚至只是视觉效果。
-
-## 视频操作样板代码
-
-正如你现在已经注意到的，大多数这类项目都遵循类似的模式。我在这里快速介绍一下我们将在本章大部分（如果不是全部）代码中用于视频操作的模式。我们首先为 window.URL 和 navigator.getUserMedia 设置 shim，在本章中，我决定使用一个变量来存储与浏览器兼容的方法，而不是像上一章那样使用完整的 polyfill（因为完整的 WebRTC 堆栈比 getUserMedia 支持得更少）。
+之后我们这样调用`cmd`命令：`cmd arg0 arg1 arg2`。
 
 ```
-window.URL = window.URL || window.webkitURL;
-navigator.getUserMedia = navigator.getUserMedia ||
-                       navigator.webkitGetUserMedia ||
-                       navigator.mozGetUserMedia ||
-                       navigator.msGetUserMedia;
-
-if (navigator.getUserMedia === undefined) {
-    throw new Error("Browser doesn't support getUserMedia");
-}
-```
-
-现在我们需要设置页面，在本例中，让 video 和 canvas 元素在浏览器窗口中为全尺寸。只需将 video 元素设置为自动播放，获取 canvas 的上下文，并初始化视频流。为了绘制帧，我们连接流并添加一个事件监听器，在视频准备就绪时调用 draw()（例如，'canplay'）。现在有一个小问题，正常情况下这可以正常工作，但某些版本的 Firefox（在撰写本文时都是相当常用的版本）存在一个 bug，会导致 drawImage 在视频帧大小设置之前运行。错误是 NS_ERROR_NOT_AVAILABLE，为了防止它，我们可以使用 try catch。当然，在生产代码中，建议进行彻底的错误处理，所以这应该不是什么大问题。
-
-在 try catch 块内，我们需要将 video 元素的图像绘制到 canvas 上下文中。为了获取可以操作的数据，我们需要使用 ctx.getImageData(0, 0, w, h) 获取帧，它有一个 data 属性可用于检索和修改帧。以下是样板代码。注意，有一个注释显示了在哪里操作数据。
-
-```
-function setup() {
-  videoElement = document.querySelector("video");
-  videoElement.width = w = window.innerWidth;
-  videoElement.height = h = window.innerHeight;
-  videoElement.autoplay = true;
-
-  canvas = document.querySelector('canvas');
-  canvas.width = w;
-  canvas.height = h;
-  ctx = canvas.getContext('2d');
-
-  navigator.getUserMedia({video: true}, function (stream) {
-      videoElement.src = window.URL.createObjectURL(stream);
-      videoElement.addEventListener('canplay', draw);
-  }, function() {});
-}
-
-function draw() {
-  if (videoElement.paused || videoElement.ended) {
-      return;
-  }
-  try {
-      ctx.drawImage(videoElement, 0, 0, w, h);
-      manip = ctx.getImageData(0, 0, w, h);
-      var data = manip.data;
-
-      // Manipulate the frame by modifying data
-
-      ctx.putImageData(manip, 0, 0);
-      requestAnimationFrame(draw);
-  }
-  catch (e) {
-      if (e.name == "NS_ERROR_NOT_AVAILABLE") {
-          setTimeout(draw, 0);
-      }
-      else {
-          throw e;
-      }
-  }
-}
-```
-
-## 基本视频操作
-
-你应该记得，早在第 3 章中，我们通过简单地遍历像素来操作视频，但因为那是在本书的开头，我将快速地再讲一遍。这次，让我们只是反转像素，这样我们就可以轻松地看到操作是如何工作的，而不用担心用于创建效果的确切算法。
-
-反转帧的函数是 `invertFrame`，并以 `data` 作为参数，对 `invertFrame` 的调用应该放在样板代码中注释所在的位置，data 参数应该来自 data 变量。请注意，我们将返回 data 变量，以便它直接影响样板代码中的 `manip.data`（因为这是实际的帧）。我们以 `Uint8ClampedArray` 的形式开始处理数据。这意味着数组包含无符号整数（即正数），并且它们被限制为 8 位（一个字节），因为 2^8 是 256，所以数组中任何索引的最大数字是 255（当然，是由于从 0 开始计数）。
-
-**注意** 数组由 RGBA 颜色组成，所以你应该每四个索引迭代一次，以获得每种颜色的开头。
-
-所以当我们遍历数组时，我们从每种颜色的开头开始，因此需要（通常，除非你只想找红色）检查绿色和蓝色的索引（分别检查 `data[i+1]` 和 `data[i+2]`）。要反转颜色，我们需要用 255 减去每种颜色的当前值（例如，让白色变成黑色）。
-
-```
-function invertFrame(data) {
-
-    // Iterate through each pixel, inverting it
-    for (var i = 0; i < data.length; i += 4) {
-        var r = data[i],
-            g = data[i+1],
-            b = data[i+2];
-        data[i] = 255 - r;
-        data[i+1] = 255 - g;
-        data[i+2] = 255 - b;
-    }
-
-    return data;
-}
-```
-
-参见清单 9-1，了解如何与样板代码结合。
-
-*清单 9-1.*
-
-```
-window.URL = window.URL || window.webkitURL;
-navigator.getUserMedia  = navigator.getUserMedia ||
-                          navigator.webkitGetUserMedia ||
-                          navigator.mozGetUserMedia ||
-                          navigator.msGetUserMedia;
-if (navigator.getUserMedia === undefined) {
-    throw new Error("Browser doesn't support getUserMedia");
-}
-```
-
-```javascript
-var videoElement, canvas, ctx, manip, w, h;
-
-window.addEventListener('DOMContentLoaded', setup);
-
-function setup() {
-    videoElement = document.querySelector("video");
-    videoElement.width = w = window.innerWidth;
-    videoElement.height = h = window.innerHeight;
-    videoElement.autoplay = true;
-
-    canvas = document.querySelector('canvas');
-    canvas.width = w;
-    canvas.height = h;
-    ctx = canvas.getContext('2d');
-
-    navigator.getUserMedia({video: true}, function (stream) {
-        videoElement.src = window.URL.createObjectURL(stream);
-        videoElement.addEventListener('canplay', draw);
-    }, function() {});
-}
-
-function draw() {
-    if (videoElement.paused || videoElement.ended) {
-        return;
-    }
-    try {
-        ctx.drawImage(videoElement, 0, 0, w, h);
-        manip = ctx.getImageData(0, 0, w, h);
-        var data = manip.data;
-
-        data = invertFrame(data);
-
-        ctx.putImageData(manip, 0, 0);
-        requestAnimationFrame(draw);
-    }
-    catch (e) {
-        if (e.name == "NS_ERROR_NOT_AVAILABLE") {
-            setTimeout(draw, 0);
-        }
-        else {
-            throw e;
-        }
-    }
-}
-
-function invertFrame(data) {
-    // Iterate through each pixel, inverting it
-    for (var i = 0; i < data.length; i += 4) {
-        var r = data[i],
-            g = data[i+1],
-            b = data[i+2];
-
-        data[i] = 255 - r;
-        data[i+1] = 255 - g;
-        data[i+2] = 255 - b;
-    }
-
-    return data;
-}
-```
-
-## 运动检测
-
-既然你已经复习了视频处理的相关知识，下面就让我们深入探讨视频中检测运动的第一个示例。这是一个计算机视觉任务，虽然（本例中）是完全朴素的——不涉及人工智能，也没有特别复杂的算法——但却非常实用。仔细想想，运动检测本质上就是显示帧之间的差异。我们可以让它变得更复杂，例如进行优化、跨多帧检测，或者追踪运动轨迹，但眼下我们先只找出差异部分。
-
-这个操作相当简单：你获取当前帧的数据并存储起来，这样在下一帧时，你就同时拥有了新数据和旧数据。拥有这两份数据后，你就可以对它们进行比较，找出不同的像素。然而，如果你这么做，很快会发现摄像头每一帧看到的画面并不完全相同，看起来好像背景中也有大量的运动。为了规避这个问题，你可以使用一个阈值来调整检测精度。由于我们没有使用任何人工智能，这个阈值可以是任意一个效果不错的数值（我在测试时 15 这个值效果就很好）。在图 9-1 中，你可以看到由于我使用的这个任意阈值，所呈现出的我头部运动的轮廓。如果我们正在开发人工智能，它会尝试找到最有可能作为我们所寻找的运动类型的像素，比如手的轮廓，或者更简单地说是聚集在一起的像素群，而不是单个像素点（因为我们感兴趣的任何目标都不会只有一个像素大小！）。
-
-![图 9-1](img/dece54b614d0e868811b83f9273c55df_126_0.png)
-
-***图 9-1.*** *一张截图，展示了我在移动时被检测到的面部大致轮廓*
-
-在 try 语句块内部，我们对样板代码稍作修改，让它检查 oldData 是否为 null（这应该是它的初始值）。如果它不为 null，则进行相应处理；如果为 null，则从 data.manip 赋值当前数据给它。
-
-```javascript
-bctx.drawImage(videoElement, 0, 0, w, h);
-manip = bctx.getImageData(0, 0, w, h);
-var data = manip.data;
-if (oldData != null) {
-    data = motionDetection(data, oldData);
-    ctx.putImageData(manip, 0, 0);
-    oldData = null;
-}
-else {
-    oldData = manip.data;
-}
-
-requestAnimationFrame(draw);
-```
-
-motionDetection 函数的工作原理正如前面所解释的：它接收当前帧的数据以及前一帧的数据（尽管这可以通过多种方式进行优化或做得更复杂，所以不一定是仅仅前一帧），然后对它们进行比较，对每一个发生运动且在阈值范围内的像素，绘制一个红色像素。
-
-```javascript
-function motionDetection(data, oldData) {
-
-    // Iterate through each pixel, changing to 255 if it has not changed
-    for( var y = 0 ; y < h; y++ ) {
-        for( var x = 0 ; x < w; x++ ) {
-            var indexOld = (y * w + x) * 4,
-                    oldr = oldData[indexOld],
-                    oldg = oldData[indexOld+1],
-                    oldb = oldData[indexOld+2],
-                    olda = oldData[indexOld+3];
-            var indexNew = (y * w + x) * 4,
-                    r = data[indexNew],
-                    g = data[indexNew+1],
-                    b = data[indexNew+2],
-                    a = data[indexNew+3];
-
-
-            if (oldr > r - 15 || oldg > g - 15 || oldb > b - 15)
-            {
-                data[indexNew] = 255;
-                data[indexNew+1] = 255;
-                data[indexNew+2] = 255;
-                data[indexNew+3] = 255;
-                detected = true;
-            }
-
-            else
-            {
-                data[indexNew] = 255;
-                data[indexNew+1] = 0;
-                data[indexNew+2] = 0;
-                data[indexNew+3] = 255;
-            }
-        }
-    }
-
-    return data;
-}
-```
-
-## 运动追踪
-
-好的，检测运动是一回事，但除非你正在打造一个报警系统或在进行艺术创作，否则单凭它本身用处不大。通常情况下，你希望要么让计算机足够智能以识别目标对象是什么（对于机器人来说尤其如此），或者更常见的是，仅仅想知道同一个对象的位置——这就叫做追踪。我们生成的图像能够显示运动，但它并没有尝试将运动归组为一个对象。实现这一点的方法有很多种，比如基于颜色进行校准，寻找具有正确平均颜色的区域，或者你可以使用人工智能，训练它去寻找特定的对象。
-
-虽然颜色校准比使用人工智能更容易，但它会带来很多问题，而且如果你想要结果可靠，那涉及的数学很快就会变得过于复杂，远超书中一章所能涵盖的范围。因此，我们采取两种方法之间的折中方案，使用一个名为 js-objectDetect 的库（由 Martin Tschirsich 编写，可以在 GitHub 上找到：[https://github.com/mtschirs/js-objectdetect](https://github.com/mtschirs/js-objectdetect)），它基于 OpenCV 物体检测器构建，并可以使用已经训练好的分类器。在介绍代码之前，我们先来看看这个库实际的工作原理。
-
-## 类 Haar 特征
-
-大多数图像处理算法都需要一种在图像中检测特征的方法，而实现这一点的途径有很多种。最常见的（因为它们在 Viola-Jones 算法中的使用）是所谓的类 Haar 特征。它们以 Alfréd Haar 在 1909 年提出的原始 Haar 小波为基础。*小波*是一种将数据切分为不同频率，然后对数据进行缩放和分析以寻找模式的数学函数。它是信号处理中的一项重要工具，相较于傅里叶变换（我们在第 3 章使用过），它的优势在于能够对数据进行缩放。类 Haar 特征可以看作是 Haar 小波的一种更具体的表现形式，因为你可以使用不同大小的黑白矩形将它们可视化（如图 9-2 所示）。
-
-![图 9-2](img/dece54b614d0e868811b83f9273c55df_129_0.png)
-
-它们之所以使用黑白矩形，而不是设计成与所寻找的特征相似的形状，是因为大多数物体都具有共同的阴影模式（例如眼睛和鼻子之间的阴影）。它们通过使用区域求和表（summed area tables）来高效工作，生成所谓的积分图像（integral image），这样就可以快速查找矩形内所有像素的总和，而无需每次都进行重新计算。单独使用时，类 Haar 特征并不是特别有用，但当它们作为 Viola-Jones 算法（使用移动窗口进行搜索）的一部分时，便变得不可或缺。
-
-## Viola-Jones
-
-你或许已经从上一节中猜到了，为 js-objectDetect 和 OpenCV 物体检测器提供支持的算法，是基于 Paul Viola 和 Michael Jones 在 2001 年撰写的一篇论文（后来由 Rainer Lienhart 进行了改进），通常简称为 Viola-Jones。我不会深入探讨这个算法的细节，因为它相当复杂，但如果你对计算机视觉或人工智能有着浓厚的兴趣，那么阅读一下这篇论文也许是值得的。原文论文确实包含一些相当高深的数学内容，但它的表述方式并不至于让人难以理解。该算法的基本原理是：取两组图像——正样本和负样本；通过使用一个小型窗口遍历每一张图像，尝试将窗口中的内容与类 Haar 特征进行匹配，以此来训练算法。和所有训练一样，训练集越大，结果就会越准确。
-
-这篇论文将该算法描述为一个"视觉目标检测框架"，因此它可以通过多种不同的方式实现。该论文包含三大主要贡献，它们可以被视为任何基于 Viola-Jones 的人脸检测算法的主要组成部分。第一个组成部分是积分图像，正如我之前所解释的，这是类 Haar 特征如此高效的原因。第二个组成部分是基于 AdaBoost 的学习算法。他们提出的、对人脸检测至关重要的最后一个组成部分是级联分类器，
-
-which are used to quickly discard the background of the image. It is quite interesting to note that the algorithm used for detection is the same as the one used for training, so there is no extra step required to actually use the classifiers. The classifiers are the outcomes of the training and we will be using predefined cascades so that training is not required (because it needs a large data set and can take a long time). The js-objectDetect library includes some classifiers as samples (including mouth, eye, and hand classifiers, not just faces), so we shall be using those for this chapter. There are two types of cascade classifier, stump and tree. A stump is a single node of a tree and is usually best to use due to the balance between accuracy and efficiency, so the js-objectDetect library only works with stump cascades that are stored as JSON.
-
-## Using js-objectDetect
-
-The library makes it very easy to use the Viola-Jones algorithm, which is extremely powerful, without even needing to install OpenCV (a large C++ framework for computer vision). It is licensed under GPL so you can freely read the code and modify it. It is also well commented, so if you are interested in the implementation details of the Viola-Jones algorithm, then it is definitely a good place to start. In the next chapter we will be using object detection as input but for this chapter, to demonstrate tracking, we will be drawing a rectangle around a face instead. Facial detection is a common use of computer vision because it is the basis of most more advanced computer vision topics, such as facial recognition or eye tracking.
-
-> **Note** As with motion detection, tracking is still dependent on the 2D image produced by the webcam, so it may not be completely accurate and does require good lighting and only one face to track.
-
-It is actually extremely easy to use js-objectDetect for facial detection; it just requires the library to be included and a small bit of JavaScript to run it. It does not use canvas, so the getUserMedia can be set up directly with a video element rather than worrying about canvas contexts. The library is of course included in the download that complements this book. I have included a div with the class cursor; this is the box that surrounds the face that has been detected.
-
-```html
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Webcam Stuff</title>
-    <style>
-        html, body { margin: 0; padding: 0; }
-        video { position: absolute; top: 0; left: 0; }
-    </style>
-</head>
-<body>
-    <video></video>
-    <div class="cursor"></div>
-
-    <script src="js-objectDetect/compatibility.js"></script>
-    <script src="js-objectDetect/smoother.js"></script>
-
-    <script src="js-objectDetect/objectdetect.js"></script>
-    <script src="js-objectDetect/objectdetect.frontalface.js"></script>
-    <script src="js-objectDetect/jquery.js"></script>
-    <script src="js-objectDetect/jquery.objectdetect.js"></script>
-
-    <script src="script.js"></script>
-</body>
-</html>
-```
-
-The JavaScript required (within script.js) is comprised of a set-up function that handles the dimensions of the video element as well as the getUserMedia that calls the draw function to run the detection on each frame. There is also a jQuery function that is used to actually draw the square around the face. This works by getting dimensions from the library and modifies the css of the div to fit it.
-
-```javascript
-window.URL = window.URL || window.webkitURL;
-navigator.getUserMedia  =  navigator.getUserMedia ||
-                          navigator.webkitGetUserMedia ||
-                          navigator.mozGetUserMedia ||
-                          navigator.msGetUserMedia;
-if (navigator.getUserMedia === undefined) {
-    if (console !== undefined) {
-      console.log("Browser doesn't support getUserMedia");
-    }
-}
-
-window.addEventListener('DOMContentLoaded', setup);
-
-function setup()  {
-    videoElement = document.querySelector("video");
-    videoElement.width = w = window.innerWidth;
-    videoElement.height = h = window.innerHeight;
-    videoElement.autoplay = true;
-
-    navigator.getUserMedia({video: true}, function (stream) {
-        videoElement.src = window.URL.createObjectURL(stream);
-        videoElement.addEventListener('canplay', draw);
-    }, function() {});
-}
-```
-
-```javascript
-$.fn.highlight = function(rect, color) {
-    $('.cursor').css({
-      "border":  "2px solid " + color,
-      "position": "absolute",
-      "left":    ($(this).offset().left + rect[0]) + "px",
-      "top":     ($(this).offset().top  + rect[1]) + "px",
-      "width":   rect[2] + "px",
-      "height":  rect[3] + "px",
-      "z-index": 2
-    });
-}
-```
-
-```javascript
-function draw() {
-    $("video").objectdetect("all", {classifier: objectdetect.frontalface}, function(faces) {
-        for (var i = 0; i < faces.length; ++i) {
-            $(this).highlight(faces[i], "red");
-        }
-    });
-
-    requestAnimationFrame(draw);
-}
-```
-
-## Summary
-
-I hope that from this chapter you have gained a deeper understanding of how to manipulate video in real time and use it to produce useful solutions. Motion detection and object tracking are the two key starting points of computer vision. Although there may not currently be many use-cases for computer vision on the web, we are starting to see more and more of it, such as detecting faces in photos to tag people. Some companies (*ahem* Facebook) are going as far as facial recognition, which has its basis in facial detection. Many people consider computer vision to be incredibly complicated, something that only academia need to be interested in, but that's just not the case. I highly recommend you to look further into this topic, much of it is beyond the scope of this book but if you take a look at the appendix you will find some extra information and useful resources for further reading. The next chapter builds on some of the concepts in this chapter, although we will be using a fairly naïve algorithm for detecting the movement of a finger so that we can use it to play a note on the keyboard that we built earlier in the book. Hopefully you can see that either by writing naïve algorithms or using libraries other people have already worked on, it is not as difficult to get started with computer vision as most people think it is and it is even more accessible now that it can be achieved, without relying on C++ or other more difficult languages, using HTML5 and JavaScript!
-
-[content]
-这些分类器的作用是快速舍弃图像的背景。有趣的是，用于检测的算法与用于训练的算法是相同的，因此实际使用分类器时不需要额外的步骤。分类器是训练的产物，我们将使用预定义的级联，这样就不需要进行训练（因为训练需要大量数据集，而且可能耗时很长）。js-objectDetect 库包含一些作为示例的分类器（包括嘴部、眼睛和手部分类器，而不仅仅是脸部），因此本章我们将使用这些示例。级联分类器有两种类型：stump 和 tree。stump 是树的一个单一节点，由于在准确性和效率之间的良好平衡，通常是最佳选择，因此 js-objectDetect 库仅适用于以 JSON 格式存储的 stump 级联。
-
-## 使用 js-objectDetect
-
-该库使得使用极为强大的 Viola-Jones 算法变得非常容易，甚至无需安装 OpenCV（一个用于计算机视觉的大型 C++ 框架）。它采用 GPL 许可证，因此你可以自由阅读和修改其代码。它的注释也很完善，所以如果你对 Viola-Jones 算法的实现细节感兴趣，那么它绝对是一个很好的起点。在下一章中，我们将使用目标检测作为输入，但在本章中，为了演示追踪，我们将改为在脸部周围绘制一个矩形。面部检测是计算机视觉中的一种常见应用，因为它是大多数更高级计算机视觉主题（如人脸识别或眼动追踪）的基础。
-
-> **注意** 与运动检测一样，追踪仍然依赖于网络摄像头生成的 2D 图像，因此可能并不完全准确，并且需要良好的光照以及只能追踪一张人脸。
-
-实际上，使用 js-objectDetect 进行面部检测非常简单；只需引入库并编写少量 JavaScript 代码即可运行。它不使用 canvas，因此 getUserMedia 可以直接与 video 元素一起设置，而无需担心 canvas 上下文。该库当然包含在本书配套的下载资源中。我包含了一个 class 为 cursor 的 div；这就是包围已检测到的人脸的方框。
-
-```html
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Webcam Stuff</title>
-    <style>
-        html, body { margin: 0; padding: 0; }
-        video { position: absolute; top: 0; left: 0; }
-    </style>
-</head>
-<body>
-    <video></video>
-    <div class="cursor"></div>
-
-    <script src="js-objectDetect/compatibility.js"></script>
-    <script src="js-objectDetect/smoother.js"></script>
-
-    <script src="js-objectDetect/objectdetect.js"></script>
-    <script src="js-objectDetect/objectdetect.frontalface.js"></script>
-    <script src="js-objectDetect/jquery.js"></script>
-    <script src="js-objectDetect/jquery.objectdetect.js"></script>
-
-    <script src="script.js"></script>
-</body>
-</html>
-```
-
-所需的 JavaScript（在 script.js 中）由一个设置函数组成，该函数处理 video 元素的尺寸以及 getUserMedia，后者调用 draw 函数以对每一帧运行检测。还有一个 jQuery 函数用于实际在脸部周围绘制方框。它的工作原理是从库中获取尺寸，并修改 div 的 css 以使其适配。
-
-```javascript
-window.URL = window.URL || window.webkitURL;
-navigator.getUserMedia  =  navigator.getUserMedia ||
-                          navigator.webkitGetUserMedia ||
-                          navigator.mozGetUserMedia ||
-                          navigator.msGetUserMedia;
-if (navigator.getUserMedia === undefined) {
-    if (console !== undefined) {
-      console.log("Browser doesn't support getUserMedia");
-    }
-}
-
-window.addEventListener('DOMContentLoaded', setup);
-
-function setup()  {
-    videoElement = document.querySelector("video");
-    videoElement.width = w = window.innerWidth;
-    videoElement.height = h = window.innerHeight;
-    videoElement.autoplay = true;
-
-    navigator.getUserMedia({video: true}, function (stream) {
-        videoElement.src = window.URL.createObjectURL(stream);
-        videoElement.addEventListener('canplay', draw);
-    }, function() {});
-}
-```
-
-```javascript
-$.fn.highlight = function(rect, color) {
-    $('.cursor').css({
-      "border":  "2px solid " + color,
-      "position": "absolute",
-      "left":    ($(this).offset().left + rect[0]) + "px",
-      "top":     ($(this).offset().top  + rect[1]) + "px",
-      "width":   rect[2] + "px",
-      "height":  rect[3] + "px",
-      "z-index": 2
-    });
-}
-```
-
-```javascript
-function draw() {
-    $("video").objectdetect("all", {classifier: objectdetect.frontalface}, function(faces) {
-        for (var i = 0; i < faces.length; ++i) {
-            $(this).highlight(faces[i], "red");
-        }
-    });
-
-    requestAnimationFrame(draw);
-}
-```
-
-### 小结
-
-希望通过本章，你对如何实时操控视频并利用它产生实用的解决方案有了更深入的理解。运动检测和目标追踪是计算机视觉的两个关键起点。尽管目前网络上的计算机视觉用例可能还不多，但我们正看到越来越多的应用，例如在照片中检测人脸以便给人加标签。一些公司（*咳*，比如 Facebook）甚至更进一步做人脸识别，这正是建立在人脸检测基础上的。许多人认为计算机视觉极其复杂，是只有学术界才需要关注的东西，但事实并非如此。我强烈建议你进一步深入研究这个话题，其中很多内容超出了本书的范围，但如果你查看附录，你会发现一些额外的信息和有用的延伸阅读资源。下一章将基于本章的部分概念，尽管我们将使用一个相当朴素的算法来检测手指的移动，以便用它来演奏我们在本书前面构建的键盘上的一个音符。希望你能看到，无论是编写朴素算法还是利用他人已编写的库，开始学习计算机视觉并不像大多数人想象的那么困难，而且由于可以借助 HTML5 和 JavaScript 实现，而无需依赖 C++ 或其他更复杂的语言，它如今变得更加触手可及！
-
-# 第 10 章
-
-# 使用手势与浏览器交互
-
-本章旨在整合你迄今学到的所有内容，打造一个雄心勃勃的音乐创作 Web 应用，它允许多个人同时使用计算机生成的音频演奏乐器，仅需 JavaScript、Node.js 以及一些 HTML5 API 即可实现。哦，还需要使用网络摄像头，让你用空中的手指进行输入。
-
-我相信你能想象，这是一项非常庞大的任务。本章将带你完成该应用的一个基础版本，并允许你按自己的意愿对其进行扩展。例如，与其追踪所有手指以便正常演奏键盘，不如用一个光标，通过指向相应方向来实现左右移动，或者指向中间来模拟一次按键。
-
-## 将键盘放在服务端
-
-我们将基于第 5 章中的键盘来构建这个项目。目前，键盘的设置允许你同时演奏多个音符（这是一个不错的开始），但我们需要对其进行修改，使多人能够演奏多个音符。当然，即使两个人演奏同一个音符，它也只应播放一次。这是理想的，因为这意味着每个人只需要一组振荡器，因此当用户 B 开始演奏一个音符时，它将使用用户 A 正在使用的那组振荡器来演奏。
-
-之前我们在 stopSound 中关闭振荡器，但这可能会引发竞态条件（即事情并不总是按你预期的顺序发生），并且由于无法重新启动一个已停止的振荡器，最好将其删除（在这种情况下，我们将其设置为 null）并创建一个新的（反正我们以前就是这样做的）。为了更方便地检查振荡器是否存在，我修改了数组初始化循环，将索引设置为 null，而不是一开始创建新的振荡器。
-
-```javascript
-// White Keys
-var o = new Array(21);
-for (var i = 0; i < 21; i++) {
-    o[i] = null;
-}
-
-// Black Keys
-var ob = new Array(15);
-for (var i = 0; i < 15; i++) {
-    ob[i] = null;
-}
+if (condVar > someVal) {console.log("xxx")}
 ```
 
 
 
-## 第10章 ■ 使用手势与浏览器交互
+window.AudioContext = window.webkitAudioContext;
 
-```
-function stopSound(i, black)  {
-    var osc;
-    if (black) {
-        osc = ob[i];
-    } else {
-        osc = o[i];
-    }
-    if ((black && ob[i] !== null) || (!black && o[i] !== null)) {
-        osc.noteOff(0);
-        osc.disconnect();
-        if (black) {
-            ob[i] = null;
-        } else {
-            o[i] = null;
-        }
-    }
-}
-```
+actx = new AudioContext();
 
-`playSound` 函数现在需要仅在没有振荡器已经在该按键上时才播放新声音；否则会导致一些问题，例如无法停止其播放，或者只会播放很短的时间。我还稍微整理了一下代码，避免在不需要的情况下重复检查相同的条件。需要注意的是，我将 `ctx` 改为了 `actx`，这样它显然就是一个音频上下文（Audio Context），可以避免与计算机视觉中使用的画布上下文（Canvas Context）混淆。
-
-```
-var gainNode = actx.createGainNode();
-gainNode.connect(actx.destination);
-```
-
-```
-function playSound(i, black) {
-    if ((black && ob[i] === null) || (!black && o[i] === null)) {
-        var osc = actx.createOscillator();
-        var freq;
-        if (black)  {
-            freq = blackNotes[i];
-        }
-        else  {
-            freq = whiteNotes[i];
-        }
-        osc.type = 3;
-        osc.frequency.value = freq;
-        osc.connect(gainNode);
-        osc.noteOn(0);
-        if (black) {
-            ob[i] = osc;
-        } else {
-            o[i] = osc;
-        }
-    }
-}
-```
-
-138
-
-现在键盘的设置稍微好了一些，我们可以编写服务器代码了。Socket.IO 允许你以非常好的方式定义客户端与服务器之间所有通信的结构；每一条消息都是一个任务，通常会被传递给其他客户端。键盘有两个任务：播放声音和停止播放声音。我们所需要的只是设置几个监听器来监听播放或停止声音的消息。
-
-```
-socket.on('play_sound', function (data) {
-    data.color = socket.color;
-    console.log("play sound %j", data);
-    socket.broadcast.to(room).emit('play_sound', data);
-});
-
-socket.on('stop_sound', function (data) {
-    console.log("stop sound %j", data);
-    socket.broadcast.to(room).emit('stop_sound', data);
-});
-```
-
-你可能已经注意到，我们向房间中的所有人发送了一个颜色；这样他们就能轻松看到其他人按下的按键。我没有使用数据库或其他方式来唯一地创建这些颜色，而是在套接字最初连接时生成一个随机颜色。我通过生成一个随机数并将其乘以 16777215 来实现这一点，这本质上等同于对白色的十六进制颜色（#ffffff）进行位移操作。
-
-```
-socket.color = '#'+ ('00000' + Math.floor(Math.random()*16777215).toString(16)).slice(-6);
-```
-
-就是这样！服务器端其余的代码与第7章中的相同。
-
-*server.js*
-
-```
-var express = require('express'),
-    http = require('http'),
-    uuid = require('node-uuid'),
-    app = express(),
-    server = http.createServer(app),
-    io = require('socket.io').listen(server);
-io.set('log level', 1); // Removes debug logs
-app.use(express.static('public'));
-server.listen(8080);
-
-app.get('/:id', function (req, res) {
-    res.sendfile(__dirname + '/index.html');
-});
-
-io.sockets.on('connection', function (socket) {
-
-    var room = socket.handshake.headers.referer;
-    console.log('JOINED', room);
-    socket.join(room);
-    socket.id = uuid.v1();
-    socket.color = '#'+ ('00000' + Math.floor(Math.random()*16777215).toString(16)).slice(-6);
-
-    io.sockets.in(room).emit('room_count', io.sockets.manager.rooms['/' + room].length);
-
-// WebRTC signalling
-socket.on('received_offer', function(data) {
-    console.log("received_offer %j", data);
-    io.sockets.in(room).emit('received_offer', data);
-});
-
-socket.on('received_candidate', function(data) {
-    console.log("received_candidate %j", data);
-    io.sockets.in(room).emit('received_candidate', data);
-});
-
-socket.on('received_answer', function(data) {
-    console.log("received_answer %j", data);
-    io.sockets.in(room).emit('received_answer', data);
-});
-
-// Chatroom messages
-socket.on('message', function (data) {
-    io.sockets.in(room).emit('message', data);
-});
-
-// Music
-socket.on('play_sound', function (data) {
-    data.color = socket.color;
-    console.log("play sound %j", data);
-    socket.broadcast.to(room).emit('play_sound', data);
-});
-
-socket.on('stop_sound', function (data) {
-    console.log("stop sound %j", data);
-    socket.broadcast.to(room).emit('stop_sound', data);
-});
-
-// Close socket and let others know
-socket.on('close', function () {
-    console.log("closed %j", room);
-    io.sockets.in(room).emit('closed', room);
-    socket.leave(room);
-});
-```
-
-在客户端，我们需要既要发送消息，也要处理接收到的消息。首先，让我们设置颜色。当收到 `'color'` 消息时（当你一步一步分解时，这真的很简单！），我们设置一个名为 `color` 的变量。
-
-```
-socket.on('color', function(data) {
-    color = data;
-})
-```
-
-当接收到播放或停止消息时，我们需要调用相应的函数；在播放时，我们还需要将特定按键的颜色设置为与发送该消息的人相关的颜色。在停止时，颜色应恢复为黑色或白色。
-
-```
-socket.on('play_sound', function(data) {
-    if (data.black) {
-        bkeys[data.i].fill({ color: data.color });
-    } else {
-        keys[data.i].fill({ color: data.color });
-    }
-    playSound(data.i, data.black);
-});
-```
-
-```
-socket.on('stop_sound', function(data) {
-    if (data.black) {
-        bkeys[data.i].fill({ color: '#000' });
-    } else {
-        keys[data.i].fill({ color: '#fff' });
-    }
-    stopSound(data.i, data.black);
-});
-```
-
-要发送消息，我们只需发送 `i` 和 `black` 变量，以及颜色。这些变量需要在每次按键被按下时发送——包括通过鼠标、键盘和摄像头的输入。需要注意的是，我们不会仅在 `playSound` 或 `stopSound` 中发送消息，因为它们会在接收到消息时被调用，这会导致循环引用。在添加了发送的消息之后，所有输入的代码如下所示：
-
-```
-var keys = [];
-var cursor = [];
-for (var i = 0; i < 21; i++)  {
-    keys[i] = keyboard.rect(width/21, height);
-    keys[i].move(width/21 * i, 0);
-    keys[i].attr({ fill: '#fff', stroke: '#000', id: "key"+i });
-    keys[i].mousedown ((function(n) {
-        return function()  {
-            var key = SVG.get("key"+n);
-            key.fill({ color: '#f06' });
-            socket.emit('play_sound', { "i":n,"black":false});
-            playSound(n, false);
-        }
-    })(i));
-
-    keys[i].mouseup((function(n)  {
-        return function() {
-            keys[n].fill({ color: '#fff' });
-            socket.emit('stop_sound', { "i":n,"black":false});
-            stopSound(n, false);
-        }
-    })(i));
-
-    cursor[i] = keyboard.circle(width/21);
-    cursor[i].attr({ fill: '#ff0000' });
-    cursor[i].move(width/21 * i, height / 1.5);
-    cursor[i].hide();
-}
-```
-
-```
-var bkeys = [];
-var prev = 0;
-for (var i = 0; i < 15; i++) {
-    bkeys[i] = keyboard.rect(width/42, height / 1.7);
-    bkeys[i].attr({ fill: '#000', stroke: '#000', id: "bkey"+i });
-    bkeys[i].move(prev + (width/(21*1.3)), 0);
-    prev = prev + width/21;
-    if (i == 1 || i == 4 || i == 6 || i == 9 || i == 11) {
-        prev += width/21;
-    }
-
-    bkeys[i].mousedown ((function(n) {
-        return function() {
-            var key = SVG.get("bkey"+n);
-            key.fill({ color: '#f06' });
-            socket.emit('play_sound', { "i":n,"black":true});
-            playSound(n, true);
-        }
-    })(i));
-
-    bkeys[i].mouseup((function(n) {
-        return function() {
-            bkeys[n].fill({ color: '#000' });
-            socket.emit('stop_sound', { "i":n,"black":true});
-            stopSound(n, true);
-        }
-    })(i));
-}
-```
-
-```
-window.addEventListener('keypress', function(e) {
-    for (var i = 0; i < keyboardPressKeys.length; i++) {
-        if (e.keyCode == keyboardPressKeys[i]) {
-            var n = i + octave * 7;
-            var key = SVG.get("key"+n);
-            key.fill({ color: '#f06' });
-            socket.emit('play_sound', { "i":n,"black":false, "color":color});
-            playSound(n, false);
-        }
-    }
-    for (var i = 0; i < blackKeyPress.length; i++) {
-        if (e.keyCode == blackKeyPress[i]) {
-            var n = i + (octave * 5);
-            var key = SVG.get("bkey"+n);
-            key.fill({ color: '#f06' });
-            socket.emit('play_sound', { "i":n,"black":true, "color":color});
-```
-
-
-
- ```
-playSound(n, true);
-}
-if (e.keyCode == 97 && octave > 0) {
-    --octave;
-}
-if (e.keyCode == 108 && octave < 2) {
-    ++octave;
-}
-});
-```
-
-```
-window.addEventListener('keyup', function(e) {
-    console.log(e.keyCode);
-    for (var i = 0; i < keyboardKeys.length; i++)  {
-        if (e.keyCode == keyboardKeys[i]) {
-            var key = SVG.get("key"+(i+octave*7));
-            key.fill({ color: '#fff' });
-            socket.emit('stop_sound', { "i":i+octave*7,"black":false, "color":color });
-            stopSound(i+octave*7, false);
-        }
-    }
-    for (var i = 0; i < blackKeys.length; i++)  {
-        if (e.keyCode == blackKeys[i]) {
-            var n = i + octave * 5;
-            var key = SVG.get("bkey"+n);
-            key.fill({ color: '#000' });
-            socket.emit('stop_sound', { "i":n,"black":true, "color":color });
-            stopSound(n, true);
-        }
-    }
-});
-```
-
-所以现在，每当在键盘上按下按键时，它就会播放给房间里的所有人。这是一个很好的例子，说明了你如何从一个简单的聊天室发展到更高级的东西，而实际工作原理上的差异却很小。图 11-1 展示了两个音符被演奏的示例，按键 Dimitry-Fedosov 琴键被填充上用户独有的颜色。
-
-![Art: dece54b614d0e868811b83f9273c55df_139_0.png](img/dece54b614d0e868811b83f9273c55df_139_0.png)
-
-*图 11-1. 用用户自己的颜色演奏的键盘*
-
-## 用网络摄像头控制音乐
-
-为键盘添加运动控制只需要实现上一章的步骤。我们从捕获网络摄像头的两帧图像开始，并分析它们以找出两帧之间的运动。请记住，我们并没有使用任何人工智能来完成这项工作，所以你可能需要调整参数数字，以使其对你的光照条件和与屏幕的距离（以及你身后的运动）准确。
-
-为了找到运动，我们遍历第二帧的像素并将它们与前一帧进行比较。如果它们不同，则将颜色改为黑色，否则将其设为白色。在这个示例 Product-service 中，我们只需要 X 轴上的运动，所以每当检测到运动时，我们加上与运动的 X 位置对应的宽度百分比。例如，`motionX += 100*(x/w);`。一旦所有内容都被检查完毕，我们可以将其除以计数来找到平均 X 位置。由于简单的数学运算，这并不完全准确，但足以找到运动的指示。根据画布的方向，你可能需要反转数字来正确镜像运动：`motionX = 100 - motionX`。
-
-现在，我们可以检查 `motionX` 是否在我们正在寻找的特定运动范围内。在这个例子中，我们想要左右移动光标，如果运动在中间三分之一处则按下按键。所以如果 `motionX` 小于 100/3，则向左移动。如果在 100/3 和 (100/3)*2 之间，则按下按键，或者如果大于 (100/3)*2，则向右移动。
-
-这个示例仅适用于白键，但你也可以很容易地将其扩展到包括黑键，通过同时查找 Y 轴上的运动。
-
-```
-function motionDetection(data, oldData) {
-    var motionX = 0;
-    var count = 0;
-
-    // Iterate through each pixel, changing to 255 if it has not changed
-    for( var y = 0 ; y < h; y++ ) {
-        for( var x = 0 ; x < w; x++ ) {
-            var indexOld = (y * w + x) * 4,
-                oldr = oldData[indexOld],
-                oldg = oldData[indexOld+1],
-                oldb = oldData[indexOld+2],
-                olda = oldData[indexOld+3];
-            var indexNew = (y * w + x) * 4,
-                r = data[indexNew],
-                g = data[indexNew+1],
-                b = data[indexNew+2],
-                a = data[indexNew+3];
-
-            if (oldr > r - 30 || oldg > g - 30 || oldb > b - 30)
-            {
-                data[indexNew] = 255;
-                data[indexNew+1] = 255;
-                data[indexNew+2] = 255;
-                data[indexNew+3] = 255;
-            }
-            else
-            {
-                data[indexNew] = 0;
-                data[indexNew+1] = 0;
-                data[indexNew+2] = 0;
-                data[indexNew+3] = 255;
-            }
-        }
-    }
-}
-```
-
-```
-                    motionX += 100*(x/w); // motionX = The percentage of W than X is at
-                    count++;
-                }
-            }
-        }
-
-        motionX = motionX / count;
-        motionX = 100 - motionX;
-        if (motionX > 0)  {
-            if (motionX > 100/3 && motionX < (100救救我/3)*2)  {
-                if (o[i] === null)
-                    playSound(currentCursor, false);
-                console.log('2');
-            }
-            if (motionX >  (100/3)*2)  {
-                if (currentCursor + 1 < keys.length)  {
-                    cursor[currentCursor].hide();
-                    stopSound(currentCursor, false);
-                    currentCursor++;
-                    cursor[currentCursor].show();
-                }
-                console.log('3');
-            }
-            if (motionX < 100/3) {
-                if (currentCursor - 1 >=0)  {
-                    cursor[currentCursor].hide();
-                    stopSound(currentCursor, false);
-                    currentCursor--;
-                    cursor[currentCursor].show();
-                }
-                console.log('1');
-            }
-        }
-        return data;
-    }
-```
-
-光标是一个红色的圆点，它与琴键同时创建；它不是沿着琴键移动光标，而是隐藏并只显示正确的那一个。
-
-```
-cursor[i] = keyboard.circle(width/21);
-cursor[i].attr({ fill: '#ff0000' });
-cursor[i].move(width/21 * i, height / 1.5);
-cursor[i].hide();
-```
-
-现在，项目应该都能正常工作了。你可以在下面的清单 11-1 以及 Apress 网站 www.apress.com/9781430259442 或我自己的网站 www.shanehudson.net/javascript-creativity 上的下载中找到完整的代码。
-
-## 第 10 章 使用手势与浏览器交互
-
-**清单 11-1.** server.js
-
-```
-var express = require('express'),
-    http = require('http'),
-    uuid = require ("node-uuid"),
-    app = express(),
-    server = http.createServer(app),
-    io = require('socket.io').listen(server);
-io.set('log level', 1); // Removes debug logs
-app.use(express.static('public'));
-server.listen(8080);
-
-app.get('/:id', function (req, res) {
-    res.sendfile(__dirname + '/index.html');
-});
-
-io.sockets.on('connection', function (socket) {
-
-    var room = socket.handshake.headers.referer;
-    console.log('JOINED', room);
-    socket.join(room);
-    socket.id = uuid.v1();
-    socket.color = '#'+ ('000000' + Math.floor(Math.random()*16777215).toString(16)).slice(-6);
-
-    io.sockets.in(room).emit('room_count', io.sockets.manager.rooms['/' + room].length);
-
-    // WebRTC signalling
-    socket.on('received_offer', function(data) {
-        console.log("received_offer %j", data);
-        io.sockets.in(room).emit('received_offer', data);
-    });
-
-    socket.on('received_candidate', function(data) {
-        console.log("received_candidate %j", data);
-        io.sockets.in(room).emit('received_candidate', data);
-    });
-
-    socket.on('received_answer', function(data) {
-        console.log("received_answer %j", data);
-        io.sockets.in(room).emit('received_answer', data);
-    });
-
-    // Chatroom messages
-    socket.on('message', function (data) {
-        io.sockets.in(room).emit('message', data);
-    });
-```
-
-### 第 10 章 ■ 使用手势与浏览器交互
-
-```
-// Music
-socket.on('play_sound', function (data) {
-    data.color = socket.color;
-    console.log("play sound %j", data);
-    socket.broadcast.to(room).emit('play_sound', data);
-});
-
-socket.on('stop_sound', function (data) {
-    console.log("stop sound %j", data);
-    socket.broadcast.to(room).emit('stop_sound', data);
-});
-
-// Close socket and let others know
-socket.on('close', function () {
-    console.log("closed %j", room);
-    io.sockets.in(room).emit('closed', room);
-    socket.leave(room);
-});
-
-});
-```
-
-### script.js
-
-```
-var socket = io.connect('http://localhost:8080');
-try {
-    if (! window.AudioContext) {
-        if (window.webkitAudioContext) {
-            window.AudioContext = window.webkitAudioContext;
-        }
-    }
-
-    actx = new AudioContext();
-}
 catch(e) {
     console.log('Web Audio API is not supported in this browser');
 }
 
 window.URL = window.URL || window.webkitURL;
+
 navigator.getUserMedia = navigator.getUserMedia ||
                          navigator.webkitGetUserMedia ||
                          navigator.mozGetUserMedia;
+
 if (navigator.getUserMedia === undefined) {
     if (console !== undefined) {
         console.log("Browser doesn't support getUserMedia");
@@ -5151,27 +4462,20 @@ var videoElement, canvas, ctx, manip, w, h;
 var oldData = null;
 
 window.addEventListener('DOMContentLoaded', setup);
-```
 
-
-
-```javascript
 function setup() {
     videoElement = document.querySelector("video");
     videoElement.width = w = window.innerWidth;
     videoElement.height = h = window.innerHeight;
     videoElement.autoplay = true;
-
     canvas = document.createElement('canvas');
     canvas.width = w;
     canvas.height = h;
     ctx = canvas.getContext('2d');
-
     bcanvas = document.createElement('canvas');
     bcanvas.width = w;
     bcanvas.height = h;
     bctx = bcanvas.getContext('2d');
-
     navigator.getUserMedia({video: true}, function (stream) {
         videoElement.src = window.URL.createObjectURL(stream);
         videoElement.addEventListener('canplay', draw);
@@ -5181,20 +4485,16 @@ function setup() {
 var width = window.innerWidth;
 var height = window.innerHeight;
 var keyboard = SVG('keyboard');
-
 var keyboardKeys = [83,68,70,71,72,74,75];
 var blackKeys = [69,82,89,85,73];
-
 var keyboardPressKeys = [115,100,102,103,104,106,107];
 var blackKeyPress = [101, 114, 121, 117, 105];
-
 var octave = 1; // where octave 1 = middle C
-
 var currentCursor = 10;
 var color;
-
 var keys = [];
 var cursor = [];
+
 for (var i = 0; i < 21; i++) {
     keys[i] = keyboard.rect(width/21, height);
     keys[i].move(width/21 * i, 0);
@@ -5207,7 +4507,6 @@ for (var i = 0; i < 21; i++) {
             playSound(n, false);
         }
     })(i));
-
     keys[i].mouseup((function(n) {
         return function() {
             keys[n].fill({ color: '#fff' });
@@ -5215,7 +4514,6 @@ for (var i = 0; i < 21; i++) {
             stopSound(n, false);
         }
     })(i));
-
     cursor[i] = keyboard.circle(width/21);
     cursor[i].attr({ fill: '#ff0000' });
     cursor[i].move(width/21 * i, height / 1.5);
@@ -5224,6 +4522,7 @@ for (var i = 0; i < 21; i++) {
 
 var bkeys = [];
 var prev = 0;
+
 for (var i = 0; i < 15; i++) {
     bkeys[i] = keyboard.rect(width/42, height / 1.7);
     bkeys[i].attr({ fill: '#000', stroke: '#000', id: "bkey"+i });
@@ -5232,7 +4531,6 @@ for (var i = 0; i < 15; i++) {
     if (i == 1 || i == 4 || i == 6 || i == 9 || i == 11) {
         prev += width/21;
     }
-
     bkeys[i].mousedown ((function(n) {
         return function() {
             var key = SVG.get("bkey"+n);
@@ -5241,7 +4539,6 @@ for (var i = 0; i < 15; i++) {
             playSound(n, true);
         }
     })(i));
-
     bkeys[i].mouseup((function(n) {
         return function() {
             bkeys[n].fill({ color: '#000' });
@@ -5312,7 +4609,6 @@ for (var i = 0; i < 15; i++) {
 
 var PI_2 = Math.PI*2;
 var SAMPLE_RATE = 44100;
-
 var whiteNotes = [130.82, 146.83, 164.81, 174.61, 196, 220, 246.94, 261.63, 293.66, 329.63, 349.23, 392, 440, 493.88, 523.25, 587.33, 659.26, 698.46, 783.99, 880, 987.77];
 var blackNotes = [138.59, 155.56, 185, 207.65, 233.08, 277.18, 311.13, 369.99, 415.3, 466.16, 554.37, 622.25, 739.99, 830.61, 932.33];
 
@@ -5322,8 +4618,7 @@ function playSound(i, black) {
         var freq;
         if (black) {
             freq = blackNotes[i];
-        }
-        else  {
+        } else {
             freq = whiteNotes[i];
         }
         osc.type = 3;
@@ -5353,16 +4648,12 @@ socket.on('color', function(data)  {
 
 socket.on('play_sound', function(data) {
     if (data.black)
-        b郁金[data.i].fill({ color: data.color });
+        bkeys[data.i].fill({ color: data.color });
     else
         keys[data.i].fill({ color: data.color });
     playSound(data.i, data.black);
 });
-```
 
-## 第10章 ■ 使用手势与浏览器交互
-
-```javascript
 socket.on('stop_sound', function(data) {
     if (data.black)
         bkeys[data.i].fill({ color: '#000' });
@@ -5383,18 +4674,14 @@ function draw() {
             data = motionDetection(data, oldData);
             ctx.putImageData(manip, 0, 0);
             oldData = null;
-        }
-        else {
+        } else {
             oldData = manip.data;
         }
-
         requestAnimationFrame(draw);
-    }
-    catch (e) {
+    } catch (e) {
         if (e.name == "NS_ERROR_NOT_AVAILABLE") {
             setTimeout(draw, 0);
-        }
-        else {
+        } else {
             throw e;
         }
     }
@@ -5403,8 +4690,6 @@ function draw() {
 function motionDetection(data, oldData) {
     var motionX = 0;
     var count = 0;
-
-    // 遍历每个像素，如果没有变化则将其设为255
     for (var y = 0; y < h; y++) {
         for (var x = 0; x < w; x++) {
             var indexOld = (y * w + x) * 4,
@@ -5417,31 +4702,24 @@ function motionDetection(data, oldData) {
                 g = data[indexNew+1],
                 b = data[indexNew+2],
                 a = data[indexNew+3];
-
-            if (oldr > r - 30 || oldg > g - 30 || oldb > b - 30)
-            {
+            if (oldr > r - 30 || oldg > g - 30 || oldb > b - 30) {
                 data[indexNew] = 255;
                 data[indexNew+1] = 255;
                 data[indexNew+2] = 255;
                 data[indexNew+3] = 255;
-            }
-            else
-            {
+            } else {
                 data[indexNew] = 0;
-                data[indexNew+1] Clarify= 0;
+                data[indexNew+1] = 0;
                 data[indexNew+2] = 0;
                 data[indexNew+3] = 255;
-
-                motionX += 100*(x/w); // motionX = X位置占宽度W的百分比
+                motionX += 100*(x/w);
                 count++;
             }
         }
     }
-
     motionX = motionX / count;
     motionX = 100 - motionX;
     var key = SVG.get("key"+currentCursor);
-
     if (motionX > 0)  {
         if (motionX > 100/3 && motionX < (100/3)*2)  {
             if (o[i] === null)  {
@@ -5465,681 +4743,11 @@ function motionDetection(data, oldData) {
                 cursor[currentCursor].hide();
                 key.fill({ color: '#fff' });
                 stopSound(currentCursor, false);
-```
-
-
-
-currentCursor--;
-        cursor[currentCursor].show();
-      }
-      console.log('1');
+                currentCursor--;
+                cursor[currentCursor].show();
+            }
+            console.log('1');
+        }
     }
-  }
-  return data;
+    return data;
 }
-
-在图 11-2 中，你可以看到一个通过摄像头动作检测来控制光标（圆形）按下键盘按键的例子。
-
-![通过摄像头使用光标控制键盘](img/dece54b614d0e868811b83f9273c55df_150_0.png)
-
-### 小结
-
-本章主要讲的是将前面各章讲解的技术综合起来，因为之前的章节已经解释了各种技术。希望本章对你有所帮助，同时也让你了解到，只要循序渐进，完成一些相当酷的事情是多么容易。你从一个在画布中滑动的方块开始，到如今可以挥动双手让浏览器发出声音。
-
-你有很多种方式可以改进这个项目，例如让摄像头也能控制黑键（你可以通过在 X 轴之外同时检测 Y 轴上的动作来实现）。或者你也可以直接去制作其他东西——但要记住，通过动手摆弄代码学到的东西最多，而不只是读书。希望你喜欢阅读本书。附录提供了一些被认为超出本书主体范围的额外信息，以及进一步阅读的建议。
-
-# 附录
-
-为本书筛选内容是一件困难的事，书名是 *JavaScript Creativity*，它可以无限延伸下去！因此这个附录的结构会比较松散，包含一些我想提及但无法放入本书主体部分的零散内容。
-
-## 未来
-
-我们正处于 web 的一个非常好的节点，不再受多年来习以为常的诸多限制（古老的浏览器、拨号上网等）的束缚，但更重要的是，我们现在能访问到的资源比以前更多。浏览器不仅有了更好的 CSS；它们现在还具备本地存储和设备 API 等功能。本书中我们大量使用了 Web Audio API 和 WebRTC，但还有很多其他的 API。我写这本书用的笔记本电脑（一台 Macbook Pro）配有一个加速度计，我可以用 JavaScript 读取它。这可能不是有史以来最有用的东西，但总有人能想出巧妙的用途（测量我写这本书时正在乘坐的火车的 G 力，也许？）。
-
-我将本书命名为 *JavaScript Creativity*，并不是因为你可以在 canvas 中制作漂亮的东西（尽管这仍然是一个令人难以置信的功能），而是因为如今你可以用富有创意的方式来使用 web 技术。一个通过摄像头控制的钢琴，可以实时生成音符？它远非完美，但我们做到了！一个使用 GPS 为你提供所在地区相关新闻的网站？完全可以实现。在第 2 章中，我们将照片转换成了线条画，并将其变成了一个涂色书应用——就在几年前，这些事情还是完全不可能的。
-
-有很多功能正在被添加到 web 中（或至少在规范中被讨论），它们并没有明确的使用场景。当然，每个功能被提出都是有原因的，但有些功能（例如设备近距离感应）可以用于许多有趣的非明显用途。这非常好，这就是"JavaScript 创意"。事实上，我见过能够导航建筑物、避开障碍物甚至飞行的机器人——所有这些都是用 JavaScript 编写的。
-
-创造未来技术的关键——并且一直是——提出"如果……会怎样"的问题。如果我能用手指控制键盘会怎样？如果新闻网站知道我的位置会怎样？并非一切都有显而易见的答案，我过去甚至争论过并非所有东西都应该被造出来。但考虑各种情况和想法总是值得的，即使它们起初看起来荒诞不经。
-
-## 延伸阅读
-
-在撰写本书的过程中，我遇到了一些非常有趣的文章和书籍，你可能会感兴趣。它们并不都与本书的章节直接相关，但可能值得一读。有些非常技术性，例如 JavaScript 的复杂性或特定算法，而另一些则更具概念性。正如我在本书中所说的，你不应该学习如何制作特定项目，而应该学习如何在各种情况下运用这些技术，因此概念性和高层次的文章（尽管不在本书的直接范围内）值得一读。我会在我的网站 www.shanehudson.net/javascript-creativity/ 上保持更新的列表，以及本书的其他资源。
-
-## 算法
-
-本书通篇提到了许多算法，还有很多其他值得了解的算法，如果你对更理论性的一面感兴趣的话。通常情况下，你可以使用预先写好的算法，例如我们在第 9 章使用的 `js-objectdetect` 库，但你们中的许多人可能会（像我一样）渴望了解所用技术的来龙去脉。由于算法大多发表在学术期刊上，可能难以在网上获取，但通常有在线文章解释这些算法（常为大学讲座所写）。我将简要概述几个我建议你进一步了解的算法，但会避免触及数学方面的内容。
-
-在第 2 章中，我们使用了一个简单的边缘检测算法将照片转换为线条画。我们通过计算每个像素的邻域平均值并将其与阈值比较来实现这一点。我相信你能想象到，这是非常低效的。最终效果够用了，但远非完美。在该章中我提到，有一种更好的方法叫做 Canny 边缘检测，由 John F. Canny 于 1986 年开发。这是一个五步算法。第一步是应用高斯滤波器，一种模糊形式，来平滑边缘以减少噪点；例如，这可以平滑桌子的木纹，使其更容易检测桌子的边缘。第二步是寻找梯度。这些梯度使用 Sobel 算子来找到，它可以帮助你找到梯度的大小和方向。下一步被称为"非极大值抑制"，本质上意味着将模糊的边缘转换为清晰的边缘；这基本上通过移除所有低梯度值来实现。第四步使用阈值。我们在简单的边缘检测算法中也使用了阈值；它们有助于降低噪点的可能性。我们的版本与 Canny 的区别在于，他使用两个阈值，称为双阈值，使非常高的值和非常低的值都算作边缘，但中间的任何值很可能是噪点。这使得它能够更准确地找到不明显的边缘。最后，为了尽可能排除噪点，只有与强边缘相连的弱边缘才会被计入。
-
-说到算法，我想快速提醒你一下我们在第 3 章通过 Web Audio API 使用的快速傅里叶变换（FFT）。你不需要自己实现它，因为 FFT 是 Web Audio API 规范的一部分，所以我不会详细讲解（此外，它涉及大量数学），但值得记住，而且你们中的一些人可能热衷于深入研究傅里叶变换。本质上，这些变换在与音频一起使用时（还有许多其他应用），用于根据一小段音频获取频率数据。我们用音频可视化来展示它，但这只是对如此原始数据进行直接操作的冰山一角。
-
-各章中提到的最后一个算法是 Viola-Jones 物体识别框架（它被归类为框架，因为原始论文没有描述算法的实现，只描述了所需组件），在解释它时我还简要描述了类 Haar 特征。这里我不会进一步解释，但请务必进一步了解 Viola-Jones，甚至尝试自己实现它。
-
-## 链接
-
-本书中我链接了各种资源，我将它们收集在这里以便查找。
-
--   [www.apress.com/9781430259442](www.apress.com/9781430259442)——这是本书在 Apress 的官方页面。源代码可以在这里下载。
--   [www.shanehudson.net/javascript-creativity](www.shanehudson.net/javascript-creativity)——这是我为本书制作的页面。我会尽量保持更新，作为本书的配套资源。源代码也可以在这里获取。
-
-## 第 1 章
-
--   [www.html5please.com](www.html5please.com)——HTML5 Please 提供有用的建议，说明某个功能是否应该用于生产环境，或者是否有可用的 polyfill。
--   [www.caniuse.com](www.caniuse.com)——Can I Use 直接提供浏览器支持数据，精确到浏览器版本，以及实现与规范之间的不一致之处。
-
-
-
- ## 第3章
-- www.incompetech.com/music/royalty-free – Incompetech 拥有丰富的免版税音乐资源。
-
-## 第4章
-- mrdoob.github.io/three.js/ – Three.js 是一个广泛使用的 WebGL 封装库，用于在网页中实现 3D 效果。
-- typeface.neocracy.org – 在这里可以找到 Three.js 默认使用的 Helvetiker 字体。
-
-## 第5章
-- www.svgjs.com – 这是一个轻量级 SVG 库，我们在第5章中用它来创建音乐播放器中的时间轴。
-- github.com/mattdiamond/Recorder.js – Matt Diamond 的 Recorder.js 是一个使用 Web Workers 来录制 Web Audio API 节点的脚本。
-
-## 第6章
-- www.acko.net – Steven Wittens 的网站本身就是一件杰作，充满了关于数学和网络图形的精彩文章。
-- www.acko.net/blog/js1k-demo-the-making-of – Steven 的这篇文章是第6章的基础，我强烈推荐你阅读。
-
-## 第7章
-- www.nodejs.org – 这是 Node.js 的官方网站，本书中所有服务器端代码都使用该语言。
-- www.github.com/creationix/nvm – 推荐使用 Node 版本管理器（NVM）来管理多个 Node.js 版本。
-- www.nodejs.org/api/index.html – 这是 Node.js 文档，也可以从 Node.js 主站首页找到。
-
-## 第8章
-- www.ietf.org/rfc/rfc5245.txt – RFC 5245 详细介绍了交互式连接建立（ICE）。内容较为深奥，但在处理 WebRTC 时非常有用。
-
-## 第9章
-- www.github.com/mtschirs/js-objectdetect – 这个库由 Martin Tschirsich 编写，是基于 Viola-Jones 算法的 JavaScript 实现。它能让你轻松进行对象检测，而无需深陷实现细节。
-
-## 索引
-
-## A
-- **算法**, 156
-- **动画**, 11
-  - 巧妙的动画
-    - 群体行为（flocking boids）, 18, 22
-    - 同伴（flockmates）, 18
-    - flockRadius, 19
-    - 辅助函数, 21
-    - setup(), 18
-- **音频与视频**
-  - 属性与特性, 39
-    - autoplay, 40
-    - 缓冲部分, 42
-    - controls, 39
-    - duration 属性, 42
-    - loop 属性, 41
-    - 网络活动, 43
-    - 播放速率, 43
-    - played 属性, 41
-    - preload, 40
-    - volume 属性, 43
-  - 音频实现, 38
-  - 浏览器兼容性, 38
-  - **编解码器**, 35-36
-    - AC-3, 37
-    - 高级音频编码（AAC）, 37
-    - H.264, 37
-    - MP3, 37
-    - Theora, 37
-    - Vorbis, 37
-    - VP8, 37
-  - 容器格式
-    - 高级系统格式（ASF）, 36
-    - 音视频交错格式（AVI）, 36
-    - 定义, 35
-    - Matroska, 36
-    - MP4, 35
-    - Ogg, 36
-    - QuickTime 文件格式/MOV, 36
-    - 波形音频文件格式（WAV）, 36
-    - WebM, 35
-  - 视频编码, 38
-  - 视频实现, 39
-  - **Web Audio API**
-    - 音频分析, 44
-    - createMediaElementSource, 44
-    - 定义, 44
-    - 快速傅里叶变换（FFT）, 45
-    - 频率可视化, 46
-    - getFloatFrequencyData/getByteFrequencyData, 45
-    - 视频处理, 52
-    - 节点, 51
-    - 频谱图, 48
-- 音视频交错格式（AVI）, 36
-
-## B
-- **断点**
-  - 条件断点, 4
-  - DOM 断点, 4
-  - 事件, 4
-  - 异常, 4
-- 浏览器兼容性, 2
-
-## C
-- **Canvas**
-  - 弹跳方块
-    - 群体行为（flocking boids）, 17
-    - 方向变量, 17
-  - 笛卡尔坐标系, 11
-  - 帧性能分析, 8
-  - getContext, 11
-  - 线性插值（lerp）, 13
-  - mousemove
-    - 回调函数, 14
-    - 约束条件, 15
-    - ctx.beginPath(), 29
-    - 画笔, 29
-    - 微小变化, 15
-    - useCapture, 14
-  - 矩形, 12
-  - requestAnimationFrame（rAF）
-    - 设计模式, 13
-    - DOM 元素, 12
-  - var ctx = canvas.getContext(), 11
-- CSS, 2
-
-## D
-- 调试, 2
-- 拖放
-  - 样板代码, 25
-  - e.dataTransfer.files[0], 26
-  - FileReader, 26
-  - findEdges 变量, 27
-  - ImageData.data, 27
-  - onload 事件处理器, 26
-  - preventDefault 方法, 25
-  - Uint8ClampedArray, 27
-
-## E
-- 发射（Emitting）, 110
-
-## F, G, H
-- 每秒帧数（FPS）, 6
-- 未来展望, 155
-
-## I
-- 交互式连接建立（ICE）, 117
-  - iceConnectionState, 118
-  - iceGatheringState, 118
-
-## J, K, L
-- JavaScript 控制台
-  - 提示符, 3
-  - 源代码
-    - 断点, 4
-    - 实时编辑, 4
-  - 变量, 3
-
-## M
-- 运动检测, 130
-  - 帧, 129
-  - Haar 小波, 131
-  - js-objectDetect, 133
-  - 跟踪, 131
-  - 视频处理, 125
-    - ctx.getImageData(0, 0, w, h), 126
-    - invertFrame, 127
-    - manip.data, 127
-    - navigator.getUserMedia, 125
-  - 基于 Viola-Jones 的人脸检测算法, 132
-  - WebRTC, 125
-- 运动跟踪, 131
-- 音乐创作
-  - 键盘
-    - 客户端代码, 140
-    - 全局 playSound 函数, 138
-    - 服务器端代码, 139
-    - Socket.IO, 139
-    - stopSound 函数, 137, 141
-  - 动作控制
-    - 黑键, 144
-    - 帧, 144
-- 音乐播放器
-  - AppView, 94-95
-    - changePlaylist 函数, 96
-    - createTrack 函数, 96
-    - initialize 函数, 96
-    - render 函数, 96
-  - backbone, 89
-  - 创建
-    - localStorage 记录, 98
-    - recordSound 函数, 98
-  - 事件监听器, 97
-  - handleDrop 函数, 97
-  - player 对象, 94
-  - 播放列表
-    - 模型和集合类, 90
-    - 视图, 90
-  - 规格说明, 89
-  - 可视化
-    - draw 函数, 103
-    - lastPointVisible 布尔值, 103
-    - 操作, 102
-    - 程序实现, 99
-- 音乐理论
-  - 键盘
-    - mousemove, 80
-    - 八度音阶, 80
-    - 振荡器, 82
-    - osc.noteOn(0), 82
-    - 参数, 82
-    - QWERTY 键盘, 79
-    - 录制, 83
-    - 声音管理, 83
-    - 时间轴（参见 Timeline）
-    - var keyboard = SVG('keyboard'), 79
-  - 音高, 77
-  - 节奏, 77
-  - 速度, 77
-  - 波形
-    - 定义, 78
-    - 锯齿波, 78
-    - 正弦波, 78
-    - 方波, 78
-    - 三角波, 78
-  - 波长
-    - 频率, 77
-    - 半音, 77
-    - 声音包络, 78
-  - Web Audio API, 77
-
-## N, O
-- 网络地址转换器（NAT）, 117
-- Node.js
-  - 聊天室消息, 109–110
-  - 核心模块, 106
-  - Lagos createServer, 107
-  - 依赖项, 106
-  - 开发依赖项（devDependencies）, 106
-  - 独立模块, 106
-  - 发射（Emitting）, 110
-  - express() 函数, 109
-  - Express.js, 108
-  - index.html, 109
-  - module.exports, 106–107
-  - nodemon, 106
-  - Node 版本管理器（NVM）, 105
-  - package.json, 105
-  - response.end(), 107
-  - response.writeHead, 107
-  - server 方法, 107
-  - Socket.IO, 108, 110
-- Node 版本管理器（NVM）, 105
-
-## P
-- 播放列表
-  - Backbone.Collection.extend(), 90
-  - 模型
-    - Backbone.Model.extend(), 90
-    - Playlist 模型, 90
-    - Track 模型, 90
-  - 视图
-    - Backbone.View.extend(), 90
-    - play 函数, 93
-    - PlaylistListView, 91
-    - renderItem, 91
-    - TrackListView, 91
-
-## Q, R
-- QuickTime 文件格式/MOV, 36
-
-## S
-- 会话描述协议（SDP）, 119
-- NAT 会话穿越工具（STUN）, 119
-
-## T, U
-- 3D, 55
-  - 坐标轴, 55
-  - 数据可视化, 67
-    - 添加数据, 72
-    - 数据表示, 74
-    - drawEdges() 函数, 70
-    - drawGraph() 函数, 73
-    - drawNode() 函数, 70
-    - 节点图, 67
-  - 定义, 55
-  - 网格, 56
-  - 标准笛卡尔坐标图, 55
-  - Three.js, 56（参见 Three.js）
-    - 添加网格
-      - 代码实现, 58
-      - DirectionalLight, 57
-      - PolyhedronGeometry, 61
-      - THREE.MeshLambertMaterial, 58
-      - THREE.SphereGeometry, 58
-    - 内置材质, 66
-    - ExtrudeGeometry, 63
-      - 代码实现, 62
-      - 选项, 62
-      - 路径, 61
-      - THREE.Shape 构造函数, 61
-    - 几何体, 60
-    - 光照, 64
-      - AmbientLight, 65
-      - DirectionalLight, 65
-      - DirectionalLightHelper, 66
-      - hex, 65
-      - intensity, 65
-      - PointLight, 65
-      - 阴影, 65
-      - SpotLightHelper, 66
-    - MeshLambertMaterial, 67
-    - MeshPhongMaterial, 67
-    - 场景构建
-      - CanvasRenderer, 56
-      - 视锥体（frustum）, 57
-      - OrthographicCamera, 56
-      - PerspectiveCamera, 57
-      - renderer.render, 57
-      - WebGLRenderer, 56
-    - TextGeometry
-      - Hello World 创建, 63
-      - 选项, 64
-- 时间轴（Timeline）, 84
-  - 音频片段, 87
-  - DOM 操作, 5
-  - draggable(), 87
-  - 清空, 86
-  - 事件, 6
-  - 每秒帧数（FPS）, 6
-  - 帧, 7
-  - 内存, 7-8
-  - 提示符, 85
-  - 录制类, 85
-- 通过 NAT 中继穿越（TURN）, 119
-
-## V
-- 基于 Viola-Jones 的人脸检测算法, 132
-
-## W, X, Y, Z
-- Web Audio API
-  - 定义, 44
-  - 频率可视化
-    - 代码实现, 47
-    - getByteFrequencyData, 46
-    - setInterval, 46
-    - volumeChange 函数, 46
-  - 视频处理
-    - 反色视频, 53
-    - requestAnimationFrame, 52
-  - 节点, 51
-  - 频谱图
-    - 代码实现, 50
-    - onaudioprocess, 48-49
-    - requestAnimationFrame, 48
-- WebRTC
-  - 客户端代码, 120
-    - addstream 事件, 123
-    - client.js.file, 123
-    - createObjectURL() 方法, 121
-    - getUserMedia() 方法, 121
-    - mediaConstraints, 122
-    - pc.createOffer() 方法, 121
-    - received_answer 消息, 122
-    - received_candidate, 123
-    - received_offer 消息, 122
-    - RTCSessionDescription, 122
-  - 代码实现, 114
-  - getUserMedia() 方法, 113
-  - 服务器, 114
-  - 规范
-    - Data Channel API, 114
-    - Media Stream API, 114
-    - Peer Connection API, 114
-  - 技术
-    - 交互式连接建立（ICE）, 117
-    - NAT 穿越, 118
-    - 会话描述协议（SDP）, 119
-    - STUN/TURN, 119
-
-
-
-# JavaScript 创意编程
-
-探索 JavaScript 与 HTML5 的现代能力
-
-Shane Hudson
-
-APress
-
-JavaScript Creativity: Exploring the Modern Capabilities of JavaScript and HTML5
-
-Copyright © 2014 by Shane Hudson
-
-This work is subject to copyright. All rights are reserved by the Publisher, whether the whole or part of the material is concerned, specifically the rights of translation, reprinting, reuse of illustrations, recitation, broadcasting, reproduction on microfilms or in any other physical way, and transmission or information storage and retrieval, electronic adaptation, computer software, or by similar or dissimilar methodology now known or hereafter developed. Exempted from this legal reservation are brief excerpts in connection with reviews or scholarly analysis or material supplied specifically for the purpose of being entered and executed on a computer system, for exclusive use by the purchaser of the work. Duplication of this publication or parts thereof is permitted only under the provisions of the Copyright Law of the Publisher's location, in its current version, and permission for use must always be obtained from Springer. Permissions for use may be obtained through RightsLink at the Copyright Clearance Center. Violations are liable to prosecution under the respective Copyright Law.
-
-ISBN-13 (pbk): 978-1-4302-5944-2
-
-ISBN-13 (electronic): 978-1-4302-5945-9
-
-Trademarks names, logos, and images may appear in this book. Rather than use a trademark symbol with every occurrence of a trademarked name, logo, or image we use the names, logos, and images only in an editorial fashion and to the benefit of the trademark owner, with no intention of infringement of the trademark.
-
-The use in this publication of trade names, trademarks, service marks, and similar terms, even if they are not identified as such, is not to be taken as an expression of opinion as to whether or not they are subject to proprietary rights.
-
-While the advice and information in this book are believed to be true and accurate at the date of publication, neither the authors nor the editors nor the publisher can accept any legal responsibility for any errors or omissions that may be made. The publisher makes no warranty, express or implied, with respect to the material contained herein.
-
-- Publisher: Heinz Weinheimer
-- Lead Editor: Louise Corrigan
-- Technical Reviewer: Keith Cirkel
-- Editorial Board: Steve Anglin, Mark Beckner, Ewan Buckingham, Gary Cornell, Louise Corrigan, Jim DeWolf, Jonathan Gennick, Jonathan Hassell, Robert Hutchinson, Michelle Lowman, James Markham, Matthew Moodie, Jeff Olson, Jeffrey Pepper, Douglas Pundick, Ben Renow-Clarke, Dominic Shakeshaft, Gwenan Spearing, Matt Wade, Steve Weiss
-- Coordinating Editors: Christine Ricketts and Mark Powers
-- Copy Editor: Linda Seifert
-- Compositor: SPI Global
-- Indexer: SPI Global
-- Artist: SPI Global
-- Cover Designer: Anna Ishchenko
-
- Distributed to the book trade worldwide by Springer Science+Business Media New York, 233 Spring Street, 6th Floor, New York, NY 10013. Phone 1-800-SPRINGER, fax (201) 348-4505, e-mail orders-ny@springer-sbm.com, or visit www.springeronline.com. Apress Media, LLC is a California LLC and the sole member (owner) is Springer Science + Business Media Finance Inc (SSBM Finance Inc). SSBM Finance Inc is a Delaware corporation.
-
-For information on translations, please e-mail rights@apress.com, or visit www.apress.com.
-
-Apress and friends of ED books may be purchased in bulk for academic, corporate, or promotional use. eBook versions and licenses are also available for most titles. For more information, reference our Special Bulk Sales–eBook Licensing web page at www.apress.com/bulk-sales.
-
-Any source code or other supplementary material referenced by the author in this text is available to readers at www.apress.com. For detailed information about how to locate your book's source code, go to www.apress.com/source-code/.
-
-Dedicated to my parents: John and Michelle
-
-# 目录
-
-- **关于作者** .................................................................................................. xiii
-- **关于技术审校者** ................................................................................ xv
-- **致谢** ...................................................................................................... xvii
-- **前言** ........................................................................................................................ xix
-
-- **第一章：引言** .............................................................................................. 1
-  - 你需要了解的内容 .......................................................................................... 2
-    - CSS ........................................................................................................................ 2
-    - 调试 ............................................................................................................ 2
-    - 浏览器兼容性 ....................................................................................... 2
-    - JavaScript 控制台 .............................................................................................. 3
-    - 来源 ................................................................................................................ 4
-    - 时间线 ............................................................................................................... 5
-    - Canvas 分析 .................................................................................................... 8
-  - 小结 ...................................................................................................................... 9
-
-- **第二章：Canvas 与动画基础** ........................................................... 11
-  - 什么是 Canvas？ ........................................................................................................ 11
-    - RequestAnimationFrame ..................................................................................... 12
-    - 线性插值 .............................................................................................. 13
-    - 跟随鼠标 .................................................................................................. 14
-    - 弹跳盒子 ......................................................................................................... 17
-  - "巧妙"的动画 ...................................................................................................... 18
-
-## 第三章：音频与视频基础 ........................................................................................... 35
-
-- 容器与编解码器 ................................................................................................................... 35
-  - 容器 ............................................................................................................................... 35
-  - 编解码器 ............................................................................................................................. 36
-  - 视频编码 .................................................................................................................... 38
-  - 浏览器兼容性 .......................................................................................................... 38
-- 使用 `<audio>` 和 `<video>` 元素 ........................................................................... 38
-  - `<audio>` ................................................................................................................................. 38
-  - `<video>` ................................................................................................................................. 39
-- 属性与特性 ............................................................................................................. 39
-  - Controls ................................................................................................................................ 39
-  - Autoplay ................................................................................................................................. 40
-  - Preload ................................................................................................................................... 40
-  - Loop ...................................................................................................................................... 41
-  - Played ................................................................................................................................... 41
-  - Buffered ................................................................................................................................. 42
-  - Duration ................................................................................................................................ 42
-  - Volume ................................................................................................................................ 43
-  - Playback Rate ..................................................................................................................... 43
-  - Network State ........................................................................................................................ 43
-- Web Audio API ............................................................................................................................... 44
-  - 音频分析 .................................................................................................................. 44
-  - 频率可视化 ...................................................................................................... 46
-  - 频谱图 .......................................................................................................................... 48
-  - Web Audio API 节点 ........................................................................................................... 51
-- 视频操作 ..................................................................................................................... 52
-- 小结 ......................................................................................................................................... 54
-
-
-
-# 目录
-
-## 第4章：3D入门
-
-- 3D基础
-  - Three.js
-  - 数据可视化
-- 本章小结
-
-## 第5章：在浏览器中创作音乐
-
-- 音乐理论
-  - 创建键盘
-- 本章小结
-
-## 第6章：音乐播放器
-
-- 媒体播放器
-  - 产品规格
-  - 从何入手
-  - 播放列表
-  - 播放器对象
-  - 主应用视图
-  - 拖放功能
-  - 集成音乐创作
-  - 音乐可视化
-- 本章小结
-
-## 第7章：使用Node.js进行实时协作
-
-- 创建聊天室
-  - 安装Node.js
-  - Socket.IO与Express
-- 本章小结
-
-## 第8章：使用WebRTC实现视频通话
-
-- WebRTC简介
-  - GetUserMedia()
-  - 技术规格
-  - 服务器
-  - 从何入手？
-- WebRTC背后的技术
-  - ICE
-  - NAT穿透
-  - STUN/TURN
-  - SDP
-- 客户端代码
-- 本章小结
-
-## 第9章：运动检测
-
-- 运动检测简介
-  - 视频处理模板代码
-  - 基础视频处理
-  - 运动检测
-- 运动追踪
-  - 类Haar特征
-  - Viola–Jones算法
-  - 使用js-objectDetect
-- 本章小结
-
-## 第10章：使用手势与浏览器交互
-
-- 将键盘功能移至服务端
-- 用摄像头控制音乐
-- 本章小结
-
-## 第11章：附录
-
-- 未来展望
-- 延伸阅读
-  - 算法
-
-## 链接
-
-- 第1章
-- 第3章
-- 第4章
-- 第5章
-- 第6章
-- 第7章
-- 第8章
-- 第9章
-
-## 索引
-
-## 关于作者
-
-**Shane Hudson**是一名Web开发者，对前沿Web技术和Web标准有着浓厚兴趣。他在JavaScript方面经验丰富，曾参与开发多个高度交互的网站和副业项目。他还对人工智能和计算机视觉领域感兴趣。你可以通过电子邮件[shane@shanehudson.net](mailto:shane@shanehudson.net)或在Twitter上[@ShaneHudson](https://twitter.com/ShaneHudson)联系他。
-
-## 关于技术审校者
-
-**Keith Cirkel**是来自英国伦敦的JavaScript顾问，专注于编写开源JavaScript库和相关文献。欲了解更多关于他的工作，请访问[http://keithcirkel.co.uk](http://keithcirkel.co.uk)，或通过GitHub[github.com/keithamus](github.com/keithamus)以及Twitter[twitter.com/keithamus](twitter.com/keithamus)联系他。
-
-# 致谢
-
-直到我写这本书，我才真正理解为什么每位作者的致谢都会说"没有……这本书就不可能完成"。如果没有这些在我写作过程中帮助我的人，我早就放弃了，也不会有这本书。
-
-我首先要感谢Louise Corrigan，我出色的编辑，感谢她所做的一切。最初我只是随口问她应该找谁谈写书的事，短短几个月后我就签了合同。在整个过程中，她一直鼓励我（有很多次我都想停止写作），并帮助完善每一章的构思。没有Louise，我确信这本书只会是我脑海中的一丝幻想，而现在你正把它捧在手中。谢谢你，Louise，谢谢你对我的信任。
-
-在开始写书之前，我完全不知道协调编辑这个职位意味着什么。Mark Powers和Christine Ricketts是我的两位协调编辑，他们都是了不起的人。我写这本书的时间远超预期，但Mark和Christine都出色地确保了整个过程尽可能顺利。
-
-我还非常感谢Apress的另一位员工Linda Seifert，她对整本书进行了文字编辑。虽然我现在写了一本书，但我仍然是一名程序员，所以Lida就像魔术师一样，将我的文字串变成了值得出版的句子。
-
-我知道还有很多人在幕后为这本书工作，我与他们的接触很少。 تک所以我也想对这些人说声谢谢。
-
-Keith Cirkel是我整本书的技术审校者，我真的非常幸运。Keith是个很棒的人，也是一位出色的程序员。他不断给我提出建议，不仅改进代码，还改进章节的流畅度。很多代码都是深夜写就的，他能发现很多改进代码的方法，而不仅仅是测试代码是否能无错运行。
-
-除了与我一起工作于本书的人，还有一些人值得对他们给予本书的各种支持表示感谢。首先是Ryan Lamvohee，一位来自澳大利亚的程序员。我从未与Ryan见过面，但他是我最早在网上认识的程序员，从那以后一直支持我。正是因为Ryan对编程创作音乐的兴趣，我才得以学到第5章中关于JavaScript音乐理论的许多内容。Ryan还在本书初期提供了很大帮助，为示例项目开发构思。
-
-我当然还要感谢Jeremy Keith为本书撰写前言。我非常希望Jeremy来写这个前言，但没想到他真的会答应！他是一位出色的作家，思想深邃，是Web界真正的宝贵财富。当我问他想在自己的名字旁边放什么头衔时，我原以为会是与Clearleft相关的内容（他是创始人之一）。结果他要了"Web大使"。如果是其他人，我可能会对这个头衔有所保留——但Jeremy确实当之无愧。
-
-Stuart Memo是第5章的另一位灵感来源，他曾做过一场题为"JavaScript是新朋克摇滚"的精彩演讲，我强烈推荐你去看看。Stuart还用Web Audio API做了很多其他有趣的事情，所以请访问他的网站：[www.stuartmemo.com](http://www.stuartmemo.com)。最初，我打算自己写一个3D音乐可视化，但无论我怎么做，都无法（至少在我拥有的时间内）超越Steven Wittens已经详细解释过的那个。所以当Steven允许我在书中使用他的可视化效果时，我非常感激。我强烈推荐你阅读他解释可视化背后数学原理的文章，以及Steven精彩网站上的其他文章：[www.acko.net](http://www.acko.net)。
-
-
-
-# 致谢
-
-马特·戴蒙德（Matt Diamond）和基思·诺曼（Keith Norman）对本书的撰写也提供了极大的帮助。马特编写了 Recorder.js 脚本，该脚本使得 Web Audio API 节点的录制成为可能，他还帮助我解决了一些使用过程中的问题。基思·诺曼编写了我在第 8 章中使用的 Web RTC 基础代码，并帮助审阅了我的代码。
-
-在本书的撰写过程中，我得到了家人和朋友的大力支持，尤其是我的父母（我将此书献给他们）。每个人都为我感到高兴，并努力让我保持热情。我要特别感谢肯特大学计算机学院和普利茅斯海洋实验室遥感系的每一位同事，感谢他们一贯的支持。我还要感谢我的室友埃德·格里尔（Edd Greer）和西尔瓦娜·马略尔·霍亚（Silvana Mallor Hoya），他们忍受了我随时随刻的工作状态，并帮助我将这本书完成。还有许多人我希望能在此致谢，但最后的感谢要送给萨姆·哈钦斯（Sam Hutchings），他是我的一位朋友，我认为他是一位文字大师。他帮助我润色了一些措辞，也是帮助我保持热情的又一人，没有他，我无法完成这本书的写作。最后，感谢 Twitter 上每一位忍受了我写作过程中不断抱怨的人！
-
-## 前言
-
-万维网似乎永远在追赶。回想 90 年代，网络在与 CD-ROM 的竞争中显得力不从心——至少在技术所能实现的层面上。CD-ROM 提供着更丰富的交互性、更出色的视觉效果，以及使用音频的可能。但从长远来看，这并不重要。CD-ROM 根本无法与万维网那浩瀚无垠的规模相抗衡。
-
-后来，Macromedia（以及后来的 Adobe）Flash 与网络正面交锋。网络似乎在动画、音频和视频方面再次无法与其竞争对手匹敌。然而，网络又一次比它那更加 flashy 的对手更持久。
-
-最近，我们在移动领域看到了同样的故事重演。与原生应用相比，网页似乎无法提供同样丰富的交互体验。但即便如此，我怀疑当原生应用的热潮消退很久之后，网络依然会势头不减。
-
-这些专有技术——CD-ROM、Flash、原生应用——每一种都可以被解读为对开放网络的威胁，但我更愿意将它们视为网络的*研发部门*。总会存在某种竞争技术在表面上看似要与网络争夺主导地位。实际上，这些技术恰恰展示了 Web 开发者希望从浏览器和标准机构获得什么样的功能。如果没有 Flash，我们甚至会有 CSS 动画吗？如果没有原生应用，是否会有如此多的精力投入到设备 API 的接入工作上？
-
-网络永远会在某些技术上落后于其他技术，但这没有关系。随着时间的推移，网络的功能特性不断增长，同时始终保持着**向后兼容性**（这是那些竞争技术所严重欠缺的）。网络功能特性的增长有时可能显得 painfully slow，但偶尔退一步看看我们已走了多远，是非常值得的。
-
-这本书就像一张快照，捕捉了如今浏览器所能实现的前沿技术。我们所取得的进步可能会让你感到惊讶。它确实让我感到惊讶。对于我们现在能够在音频、视频和动画方面取得的成就，我有些*目瞪口呆*。而没有人能比沙恩·哈德逊（Shane Hudson）更能让你感到震撼的了。他就像 Web 开发领域的*少年天才*。（回去问你的父母吧。）
-
-所以，坐稳了，准备好迎接一场 wild ride。沙恩·哈德逊将带你到达技术的最前沿。
-
-——杰里米·基思（Jeremy Keith）
-网络大使

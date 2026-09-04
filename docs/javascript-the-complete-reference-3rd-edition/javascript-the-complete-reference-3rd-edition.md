@@ -1,19 +1,14 @@
+
 # JavaScript 完全参考（第3版）
-
-
-
-
-
 
 ![](img/7d4f4e4d6313b85d5c45a6e65271397a_0_0.png)
 
-
-
 作者：
+
 Steven Bright
 
-
 Steven Bright 的其他著作：
+
 - CorelDraw 教程：CorelDRAW 基础
 - 工具与功能列表：工程工具手册
 - Microsoft Word 基础：分步指南
@@ -25,8 +20,6 @@ Steven Bright 的其他著作：
 ## 如何使用本书
 
 本书是一份关于 JavaScript 用途（主要用于网站开发）的文档。请遵循分步指南，以充分利用本书的价值。请逐章节阅读，当你读到最后一页时，你会感到很有收获。你需要像 Dreamweaver 这样的网页制作软件或 Notepad++ 这样的网页编辑软件，以及 Google Chrome 和 Mozilla Firefox 等网页浏览器来预览你的工作。
-
-
 
 ## 引言
 
@@ -42,15 +35,18 @@ JavaScript 是一种脚本语言。它是用于网页、个人电脑、笔记本
 
 尽管 JavaScript 和 Java 在外表上有许多强相似之处，包括语言名称、语法和对标准库的支持，但它们是两种不同的语言，在设计上有很大差异。
 
-请注意以下几：
+请注意以下几点：
 
 - JavaScript 代码对大小写敏感
 - 单词之间的空格和制表符会被忽略
-- JavaScript 语句以分号 (;) 结束
+- JavaScript 语句以分号 (`;`) 结束
 - 换行会被忽略，语句内部除外
-- 每个单词的首字母大写（第一个单词除外），例如 userFirstName
+- 每个单词的首字母大写（第一个单词除外），例如 `userFirstName`
 - 要声明变量，使用关键字 `var` 和变量名：`var username`。要给变量赋值，添加等号和值：`var userName = "Smith"`
-`var price = 100`
+
+```
+var price = 100
+```
 
 ## JavaScript 语法
 
@@ -69,7 +65,7 @@ document.write(myDate)
 解释
 
 - `<script>` 标签即 `<script> </script>` 告诉浏览器在它们之间期待一个脚本。
-- `<!-- ------>`: 这些是普通的 HTML 注释标签，但在 JavaScript 中，它用于告诉不支持 JavaScript 或禁用了 JavaScript 的浏览器忽略之间的代码。这可以防止代码被写入到用户的文档中。
+- `<!-- ------>`：这些是普通的 HTML 注释标签，但在 JavaScript 中，它用于告诉不支持 JavaScript 或禁用了 JavaScript 的浏览器忽略之间的代码。这可以防止代码被写入到用户的文档中。
 - `Document.write`：这部分负责将实际文本写入用户的浏览器中。
 - 将你的脚本放在何处：你可以将脚本放在 `head` 部分、`body` 部分，或者作为外部文件。
 
@@ -90,7 +86,7 @@ JavaScript 在网页开发中使用的基本用途是：
 
 JavaScript 有两种类型：内部和外部脚本。
 
-### 内联 JavaScript：
+### 内联 JavaScript
 
 示例：
 
@@ -100,35 +96,7 @@ alert("WELCOME!");
 </script>
 ```
 
-### 外部 JavaScript：
-
-你使用 `<SCRIPT>` 的 `SRC` 属性来调用外部文件。
-
-### 内联 JavaScript：
-
-示例：
-
-```html
-<script>
-alert("WELCOME!");
-</script>
-```
-
-### 外部 JavaScript：
-
-你使用 `<SCRIPT>` 的 `SRC` 属性来调用外部文件。
-
-### 内联 JavaScript：
-
-示例：
-
-```html
-<script>
-alert("WELCOME!");
-</script>
-```
-
-### 外部 JavaScript：
+### 外部 JavaScript
 
 你使用 `<SCRIPT>` 的 `SRC` 属性来调用外部文件。
 
@@ -142,10 +110,10 @@ alert("WELCOME!");
 
 JavaScript 可以以不同的方式显示：
 
-- window.alert()
-- document.write()
-- console.log()
-- innerHTML
+- `window.alert()`
+- `document.write()`
+- `console.log()`
+- `innerHTML`
 
 示例：
 
@@ -226,10 +194,6 @@ alert("Hello\nHow are You?");
 </script>
 ```
 
-
-
-
-
 ## 日期和时间
 
 ### 时间
@@ -243,7 +207,7 @@ function time() {
 </script>
 ```
 
-上述语法被插入到 head 部分，并由插入到 body 函数中的 `time` 函数调用，即下方的 `<script>time()</script>`：
+上述语法被插入到 `head` 部分，并由插入到 `body` 函数中的 `time` 函数调用，即下方的 `<script>time()</script>`：
 
 欢迎 Sadiku Monday。现在是
 
@@ -269,7 +233,7 @@ document.write(myDate)
 </script>
 ```
 
-上述语法被插入到 head 部分，并由插入到 body 函数中的 `time` 函数调用，即下方的：
+上述语法被插入到 `head` 部分，并由插入到 `body` 函数中的 `time` 函数调用，即下方的：
 
 ```html
 <script>
@@ -279,7 +243,7 @@ date()
 
 ## 函数
 
-函数是在当被调用时执行执行的 own块。函数写在花括号内，前面带有“function”关键字。
+函数是在当被调用时执行执行的代码块。函数写在花括号内，前面带有“function”关键字。
 
 示例：
 
@@ -292,7 +256,7 @@ alert("Welcome " + name + ", the " + job);
 </script>
 ```
 
-上面是一个函数，当用户点击下方的 onclick 事件处理器时它会被调用。
+上面是一个函数，当用户点击下方的 `onclick` 事件处理器时它会被调用。
 
 ```html
 <button onclick="myFunction('Sadiku Monday', 'Engineer')">尝试一下</button>
@@ -300,7 +264,7 @@ alert("Welcome " + name + ", the " + job);
 
 ## 事件处理器
 
-整合到 HTML 源代码中并根据特定操作执行预定义函数或命令的命令被称为事件处理器。所有事件处理器都以 `on..` 开头，例如onclick、onabort、onfocus、onchange、onload、onmouseover 都是事件处理器。
+整合到 HTML 源代码中并根据特定操作执行预定义函数或命令的命令被称为事件处理器。所有事件处理器都以 `on..` 开头，例如 `onclick`、`onabort`、`onfocus`、`onchange`、`onload`、`onmouseover` 都是事件处理器。
 
 ### onload
 
@@ -324,30 +288,42 @@ alert("You clicked the " + element + " element!")
 </script>
 ```
 
-上述语法被插入到 head 部分，并由插入到 body 函数中的 hello 函数调用。
+上述语法被插入到 `head` 部分，并由插入到 `body` 函数中的 hello 函数调用。
 
+```html
 <form>
+
 <input type="radio" name="Radio" onclick="message('Radio Button 1')">选项 1<br>
+
 <input type="radio" name="Radio" onclick="message('Radio Button 2')">选项 2<br>
+
 <input type="checkbox" onclick="message('Check Button')">复选框<br>
+
 <input type="submit" value="Send" onclick="message('Send Button')">
+
 <input type="reset" value="Reset" onclick="message('Reset Button')">
+
 <input type="button" value="Mine" onclick="message('My very own Button')">
+
 </form>
+```
 
 ### onMouseOver
 
-当用户在下方事件中的图像上悬停鼠标（onMouseOver）时告知用户：
+当用户在下方事件中的图像上悬停鼠标（`onMouseOver`）时告知用户：
+
+```html
 <a href="index.html" onmouseover="alert('you onMouseOver the image'); return false">
 <img src="images/cdw.jpg" width="100" height="30">
 </a>
+```
 
 其他还有：
 
-- onBlur
-- onMouseOver
-- onFocus
-- onChange
+- `onBlur`
+- `onMouseOver`
+- `onFocus`
+- `onChange`
 
 ## 使用 JavaScript 在 HTML 文档中使用颜色
 
@@ -366,10 +342,13 @@ function color(background, foreground, new_link, visited_link, active_link){
 ```
 
 这是普通文本。
+
+```html
 <a href="Page2.htm">我还没有访问过 Page 2。</a><br>
 <a href="Page3.htm">但我已经访问过 Page 3。</a><br>
 <a href="Page4.htm">我正在点击这个链接。</a><p>
 <a href="javascript:color('orange','gray','green','yellow','blue')">改变颜色<|a|>
+```
 
 ## 重复执行
 
@@ -394,7 +373,7 @@ document.write("</td></tr>");
 </script>
 ```
 
-上面的被插入到 head 部分并在下方调用：
+上面的被插入到 `head` 部分并在下方调用：
 
 ```html
 <script>
@@ -442,14 +421,6 @@ document.write(fact);
 </script>
 ```
 
-
-
-
-
-<input name="myInput" type="text" size="10"><br />
-
-<input name="myInput" type="text" size="10"><br />
-
 ## 事件对象：光标的坐标是什么？
 
 ```javascript
@@ -466,11 +437,13 @@ alert("X coords: " + x + ", Y coords: " + y)
 </script>
 ```
 
-为了允许用户在页面的任何地方获取光标的坐标，请在 head 部分链接调用 `show_coords` 函数：
-<body onmousedown="show_coords(event)">
+为了允许用户在页面的任何地方获取光标的坐标，请在 `head` 部分链接调用 `show_coords` 函数：
 
+```html
+<body onmousedown="show_coords(event)">
 <p>在文档中点击。警告框将显示光标的 x 和 y 坐标。</p>
-</</body>
+</body>
+```
 
 ## 事件对象：按下按键的 Unicode 编码是什么？
 
@@ -486,6 +459,7 @@ alert(event.keyCode)
 ```
 
 使用上述代码，在键盘上按下一个按键。警告框将显示所按按键的 Unicode 编码。
+
 <p>在键盘上按下一个按键。警告框将显示按下按键的 Unicode 编码。</p>
 
 ## 事件对象：点击了哪个元素？
@@ -509,11 +483,13 @@ alert("You clicked on a " + tname + " element.")
 </script>
 ```
 
-通过在下面的代码调用 head 部分中的 `whichElement` 函数可以获取点击的元素：
+通过在下面的代码调用 `head` 部分中的 `whichElement` 函数可以获取点击的元素：
 
+```html
 <body onmousedown="whichElement(event)">
-
 <p>在文档的某处点击。警告框将显示你点击的元素的标签名（tag name）。</p>
+</body>
+```
 
 ### 这是一个标题
 
@@ -541,29 +517,40 @@ JavaScript 变量是存储数据的容器。这些变量必须按照下面的说
 示例
 
 - 1. 声明变量
+
+```
 var s = 9;
 var w = 39;
 var person = "Steven Bright";
 var price = $2.99;
 var pi = 3.14;
+```
+
 - 2. m = 9;
+
+```
 var n = 23;
 var p = m + n;
 let p = 9+23 = 32
+```
+
 - 3. m = 12;
+
+```
 var n = 40;
 var p = m - n;
 let p = 12-40 = -28
+```
 
 注意：m 存储值 9，n 存储值 23，p 存储值 32。
 
-## 构建变量名的规则：
+## 构建变量名的规则
 
 构建变量名（唯一标识符）的通用规则如下，在命名你的 JavaScript 变量时请确保注意这些规则：
 
 - 命名可以包含字母、数字、下划线和美元符号。
 - 命名必须以字母开头。
-- 命名也可以以 $ 开头。
+- 命名也可以以 `$` 开头。
 - 命名区分大小写（y 和 Y 是不同的变量）。
 - 保留 word（如 JavaScript 关键字）不能用名称。
 
@@ -575,13 +562,13 @@ let p = 12-40 = -28
 
 | 运算符 | 描述 |
 | :--- | :--- |
-| + | 加法 |
-| - | 减法 |
-| * | 乘法 |
-| / | 除法 |
-| % | 取模 |
-| ++ | 自增 |
-| -- | 自减 |
+| `+` | 加法 |
+| `-` | 减法 |
+| `*` | 乘法 |
+| `/` | 除法 |
+| `%` | 取模 |
+| `++` | 自增 |
+| `--` | 自减 |
 
 ### JavaScript 赋值运算符
 
@@ -591,12 +578,12 @@ let p = 12-40 = -28
 
 | 运算符 | 用途 |
 | :--- | :--- |
-| = | x = y 等于 x = y |
-| += | x += y 等于 x = x + y |
-| -= | x -= y 等于 x = x - y |
-| *= | x *= y 等于 x = x * y |
-| /= | x /= y 等于 x = x / y |
-| %= | x %= y 等于 x = x % y |
+| `=` | `x = y` 等于 `x = y` |
+| `+=` | `x += y` 等于 `x = x + y` |
+| `-=` | `x -= y` 等于 `x = x - y` |
+| `*=` | `x *= y` 等于 `x = x * y` |
+| `/=` | `x /= y` 等于 `x = x / y` |
+| `%=` | `x %= y` 等于 `x = x % y` |
 
 示例
 
@@ -605,9 +592,11 @@ var x = 10;
 x += 5;
 x = x + y same as x = x+y
 ```
+
 在此情况下 y = 5
 
 因此，
+
 x = 10+5 = 15.
 
 ### JavaScript 字符串运算符
@@ -620,6 +609,7 @@ x = 10+5 = 15.
 var txt1 = "The";
 txt1 += "room";
 ```
+
 txt1 的结果将是 The room
 
 ## 字符串与数字相加
@@ -632,6 +622,7 @@ txt1 的结果将是 The room
 var w = "steven";
 w += 5;
 ```
+
 w 的结果将是 steven5
 
 ## JavaScript 布尔值
@@ -640,8 +631,8 @@ JavaScript 布尔值表示两个值之一：真或假。这暗示了真实的或
 
 示例
 
-- 1. Boolean(57>34) // 返回 true
-- 2. Boolean(45) // 返回 false
+- 1. `Boolean(57>34)` // 返回 true
+- 2. `Boolean(45)` // 返回 false
 
 ## 比较与条件
 
@@ -649,27 +640,28 @@ JavaScript 布尔值表示两个值之一：真或假。这暗示了真实的或
 
 示例
 
-- 1. var y = 0;
-Boolean(y); // 返回 false
-- 2. var y = null;
-Boolean(y); // 返回 false
-- 3. var y = false;
-Boolean(y); // 返回 false
+- 1. `var y = 0;` `Boolean(y);` // 返回 false
+- 2. `var y = null;` `Boolean(y);` // 返回 false
+- 3. `var y = false;` `Boolean(y);` // 返回 false
 
 ## JavaScript Math
 
 Math 对象允许对数字执行数学任务。
 
 ### Math.round()
+
 将数字舍入到最接近的整数：
 
 ### Math.min()
+
 找到列表中的最小值：
 
 ### Math.max()
+
 找到列表中的最大值：
 
 ### Math.random()
+
 返回一个 0（包含）到 1（不包含）之间的随机数：
 
 ## JavaScript 在网页之外的使用
@@ -686,7 +678,7 @@ Opera 扩展、Google Chrome、Apple Dashboard、Microsoft 小组件、OpenOffic
 
 谢谢！
 
-**Steven Bright**
+Steven Bright
 
 作者
 
@@ -694,13 +686,13 @@ Opera 扩展、Google Chrome、Apple Dashboard、Microsoft 小组件、OpenOffic
 
 Steven Bright 是一位技术专家、图形设计师、网页开发者和博客作者。他还是以下书籍的作者：
 
-《CorelDraw How: The Fundamental of CorelDRAW》
-《Tools and Function Lists: Engineering Tools Manual》
-《Microsoft Word Fundamental: A Step by Step Guide》
-《Web Design and Development Technology: Website How》
-《The Best of Microsoft PowerPoint: Brand Exposure Techniques》
-《Hacking Through Microsoft Excel Skills: A Step by Step Approach》
-《The wave of Change: Adams Aliyu Oshiomhole: Why he is the man we to Create the Atmosphere of Change we Desire to Build a Successful, Great and Powerful Nation》
+- 《CorelDraw How: The Fundamental of CorelDRAW》
+- 《Tools and Function Lists: Engineering Tools Manual》
+- 《Microsoft Word Fundamental: A Step by Step Guide》
+- 《Web Design and Development Technology: Website How》
+- 《The Best of Microsoft PowerPoint: Brand Exposure Techniques》
+- 《Hacking Through Microsoft Excel Skills: A Step by Step Approach》
+- 《The wave of Change: Adams Aliyu Oshiomhole: Why he is the man we to Create the Atmosphere of Change we Desire to Build a Successful, Great and Powerful Nation》
 
 联系 Steven Bright
 
@@ -710,9 +702,6 @@ Facebook: http://www.facebook.com/steven.bright.9022
 
 博客：
 
-http://ebookstrati.blogspot.com
-
-http://computerskillworld.blogspot.com
-
-http://hackingthroughsuccess.blogspot.com
-
+- http://ebookstrati.blogspot.com
+- http://computerskillworld.blogspot.com
+- http://hackingthroughsuccess.blogspot.com

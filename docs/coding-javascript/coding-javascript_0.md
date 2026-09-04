@@ -1,11 +1,11 @@
-# JavaScript 编程
 
+# JavaScript 编程
 
 # 前言
 
 作为一名开发者，我曾以为自己足够了解 HTML 和 CSS。我错了。我不得不一次又一次地回到基础。这就是我编写本书的原因。此外，我觉得 JavaScript 也应该包含在内。
 
-首先，我们从一些 HTML 基础开始。你可能之前见过其中一些内容，但我认为复习一下很有帮助。然后我们介绍一些 HTML5 的变化。我们会涉及一些主要变化。最后，我们通过讨论表格、div 和 span 来结束 HTML 部分。这些内容曾不止一次让我困惑……
+首先，我们从一些 HTML 基础开始。你可能之前见过其中一些内容，但我认为复习一下很有帮助。然后我们介绍一些 HTML5 的变化。我们会涉及一些主要变化。最后，我们通过讨论表格、`div` 和 `span` 来结束 HTML 部分。这些内容曾不止一次让我困惑……
 
 第二部分专门介绍 CSS。这有助于让事情变得更有条理。我们涵盖 CSS 基础、盒模型和 CSS3。与 HTML5 类似，它也有一些有趣的更新。
 
@@ -13,7 +13,7 @@
 
 # I. HTML
 
-在第一部分，我们从 HTML 基础开始。我们回顾 HTML、HTML5 以及 div 和 span 的基础知识。
+在第一部分，我们从 HTML 基础开始。我们回顾 HTML、HTML5 以及 `div` 和 `span` 的基础知识。
 
 ## 1. 面向可靠人士的针对性 HTML 基础
 
@@ -39,7 +39,7 @@
 </html>
 ```
 
-我们从`DOCTYPE`开始声明这是 HTML。然后我们有 HTML 的开始标签。在底部，你也会看到 HTML 的结束标签。body 也有类似的开始和结束标签。
+我们从`DOCTYPE`开始声明这是 HTML。然后我们有 HTML 的开始标签。在底部，你也会看到 HTML 的结束标签。`body`也有类似的开始和结束标签。
 
 ### 标题
 
@@ -97,13 +97,17 @@ HTML 为我们提供了两种列表选项：有序列表和无序列表。
 #### 有序列表
 
 *   苹果
+
 *   浆果
+
 *   醋栗
 
 #### 无序列表
 
 *   胡萝卜
+
 *   芹菜
+
 *   洋葱
 
 如果在浏览器中打开文件，效果如下。
@@ -128,7 +132,7 @@ HTML 和其他事物一样。有不同版本可供使用。HTML5 是当前版本
 
 ### 新元素
 
-HTML5 中有新元素。添加了 section 标签来帮助组织文档。
+HTML5 中有新元素。添加了`section`标签来帮助组织文档。
 
 ```
 <section>
@@ -137,14 +141,11 @@ HTML5 中有新元素。添加了 section 标签来帮助组织文档。
 </section>
 ```
 
-
-
-
-与这个标签类似，我们还可以使用 `header` 和 `footer` 标签。它们能有效地组织大块 HTML，使其更易读。
+与这个标签类似，我们还可以使用`header`和`footer`标签。它们能有效地组织大块 HTML，使其更易读。
 
 ### 表单
 
-为了简化表单创建，HTML5 增加了一些功能。下面展示 `datetime-local` 输入表单元素。
+为了简化表单创建，HTML5 增加了一些功能。下面展示`datetime-local`输入表单元素。
 
 ```
 type="datetime-local">
@@ -188,7 +189,7 @@ HTML5 是一系列改进，使网络得到更好的利用。从新元素到图�
 
 ### 表格
 
-HTML 的 `table` 经常被诟病，但它确实能用。在我职业生涯早期，表格是主流方式。下面是一个展示基本语法的示例。
+HTML 的`table`经常被诟病，但它确实能用。在我职业生涯早期，表格是主流方式。下面是一个展示基本语法的示例。
 
 ```
 <html>
@@ -205,7 +206,7 @@ HTML 表格示例
 
 ### Div
 
-`div` 元素是 division（分区）的缩写。它创建一个 HTML 的块级区域。我们可以用 CSS 为 `div` 设置样式，并用 JavaScript 操作它。
+`div`元素是 division（分区）的缩写。它创建一个 HTML 的块级区域。我们可以用 CSS 为`div`设置样式，并用 JavaScript 操作它。
 
 ```
 <html>
@@ -217,15 +218,15 @@ HTML 表格示例
 <p>We have broken out of the div.</p>
 ```
 
-我们有一个示例，其中 `div` 显示为浅蓝色。这样你可以看到 `div` 的起始和结束位置。![](img/image-66x9o3mn.png)
+我们有一个示例，其中`div`显示为浅蓝色。这样你可以看到`div`的起始和结束位置。![](img/image-66x9o3mn.png)
 
 Div 元素示例
 
-在图片中，你可以看到 `div` 的边界以及页面的其余部分。如果应用样式，它只会作用于 `div` 元素内部。
+在图片中，你可以看到`div`的边界以及页面的其余部分。如果应用样式，它只会作用于`div`元素内部。
 
 ### Span
 
-`span` 是一个内联容器，可以添加到 HTML 文档中。`div` 是块级元素，而 `span` 是内联元素。这些区别你可能需要记住。
+`span`是一个内联容器，可以添加到 HTML 文档中。`div`是块级元素，而`span`是内联元素。这些区别你可能需要记住。
 
 ```
 <html>
@@ -234,11 +235,11 @@ Div 元素示例
 <p>The tree is <span style="color:green;font-weight:bold">green</span>.</p>
 ```
 
-这里使用了两个 `span` 元素。我们通过样式来改变颜色并将字体加粗。![](img/image-6sjq2645.png)
+这里使用了两个`span`元素。我们通过样式来改变颜色并将字体加粗。![](img/image-6sjq2645.png)
 
 HTML Span 示例
 
-我们可以看到代码的效果。下次你需要为 HTML 添加容器时，可以探索这三种方式。`table`、`div` 和 `span` 各有优缺点。先尝试一个简单的示例，看看哪种最符合需求。
+我们可以看到代码的效果。下次你需要为 HTML 添加容器时，可以探索这三种方式。`table`、`div`和`span`各有优缺点。先尝试一个简单的示例，看看哪种最符合需求。
 
 # II CSS
 
@@ -272,7 +273,7 @@ p    {font-family: verdana; font-size: 20px;}
 </html>
 ```
 
-这是一个添加了样式的简单 HTML 文件。这里我们为 HTML 的 body 设置了背景颜色。然后为 `h1` 标题更改颜色并居中文本。对于段落，我们更改了字体和大小。效果如下：![](img/image-b4ninz0r.png)
+这是一个添加了样式的简单 HTML 文件。这里我们为 HTML 的`body`设置了背景颜色。然后为`h1`标题更改颜色并居中文本。对于段落，我们更改了字体和大小。效果如下：![](img/image-b4ninz0r.png)
 
 带内部 CSS 的 HTML 示例
 
@@ -280,7 +281,7 @@ HTML 最初只用于文本，而 CSS 是为了添加样式而创建的。如果�
 
 ### 引入方式
 
-上面我们展示了一个内部 CSS 的示例。`style` 标签被添加到 HTML 中。我们也可以创建一个外部文档来存放 CSS。
+上面我们展示了一个内部 CSS 的示例。`style`标签被添加到 HTML 中。我们也可以创建一个外部文档来存放 CSS。
 
 ```
 <html>
@@ -341,8 +342,11 @@ h1 {
 每个元素周围都有一个盒子。有时你能看到它，有时它似乎消失了。
 
 - 内容（Content）——盒子里的内容，文本或图像
+
 - 内边距（Padding）——内容周围的区域，透明
+
 - 边框（Border）——围绕内边距和内容
+
 - 外边距（Margin）——边框外部的区域，也是透明的
 
 下面是一个示例。
@@ -398,9 +402,6 @@ div {
 </html>
 ```
 
-
-
-
 这个盒子宽 300 像素，高 50 像素。每边内边距为 10 像素，总共 20 像素。每边边框为 5 像素，总共 10 像素。该元素的总宽度也是 330 像素。当我们运行这段代码时，你会看到以下内容。![](img/image-y36z3ef7.jpg)
 
 ## CSS 盒模型数学示例
@@ -449,6 +450,8 @@ lang="en">
 
 #### CSS3 盒子阴影示例
 
+
+
 CSS3 为 CSS 带来了一些重大更新。随着网络的发展，还会有新的更新。作为一个热爱学习的人，看到网络的变化令人兴奋。它正变得越来越易用和强大。
 
 # 第三部分 JavaScript
@@ -469,7 +472,7 @@ JavaScript 从卑微的起点发展成为一种现代编程语言。从浏览器
 
 让我们看一些基本代码。这是一个显示一些 JavaScript 的 HTML 文件。将这段代码保存到你的本地机器上。
 
-```
+```html
 html>
 
 # Test 1
@@ -477,15 +480,21 @@ html>
 ## Test 2
 ```
 
+普通文本
 
+当我们运行这段代码时，会看到这个。![](img/image-4c1lfvpn.png)
 
-普通文本 当我们运行这段代码时，会看到这个。![](img/image-4c1lfvpn.png) JavaScript 弹窗消息 点击确定后，你会看到这个。![](img/image-gnuv96fx.png) HTML 截图
+JavaScript 弹窗消息
+
+点击确定后，你会看到这个。![](img/image-gnuv96fx.png)
+
+HTML 截图
 
 ### 语句
 
 语句是 JavaScript 的基本指令。我们可以创建一些变量，然后为它们赋值。
 
-```
+```javascript
 let a, b, c;  // 创建三个变量的语句
 a = 2;     // 将值 2 赋给变量 a 的语句
 b = 3;     // 将值 3 赋给变量 b 的语句
@@ -494,7 +503,7 @@ c = a + b;   // 将 a 加 b 的结果赋给 c 的语句
 
 分号位于语句末尾。不过，我们也可以将多个语句写在一起。
 
-```
+```javascript
 a = 2; b = 3;
 ```
 
@@ -504,7 +513,7 @@ a = 2; b = 3;
 
 当我们想要执行某个任务时，可以创建一个函数。如果需要将两个数相加，我们既可以在代码中直接实现，也可以创建一个函数。
 
-```
+```javascript
 // 两数相加
 num3 = num1 + num2;
 // 两数相加的函数
@@ -515,7 +524,7 @@ function sumTwoNumbers(num1, num2) {
 
 在这个例子中，我们执行了相同的代码，一个在函数内，一个不在函数内。使用函数是有价值的。我们可以重复调用它。此外，我们还可以轻松地添加一些错误检查。
 
-```
+```javascript
 // 两数相加的函数
 function sumTwoNumbers(num1, num2) {
   return num1 + num2;
@@ -525,13 +534,21 @@ let sum = sumTwoNumbers(6,4);
 
 如果你想调用函数，可以像这个例子一样操作。这里我们传入了两个数字。这些数字也可以用变量来替代。
 
-最后，我们简单探讨了为什么要使用 JavaScript。然后我们开始编写代码。通过使用语句和函数，我们开始了解其内部机制。自己试试吧！你不会后悔的。8 看，我发现了 JavaScript 变量和值的这些惊人好处 ![](img/image-v1u8nzyh.jpg)9 首先，最简单的 JavaScript 函数基础是最吸引人的 ![](img/image-s1jmvrty.jpg)
+最后，我们简单探讨了为什么要使用 JavaScript。然后我们开始编写代码。通过使用语句和函数，我们开始了解其内部机制。自己试试吧！你不会后悔的。
+
+## 8 看，我发现了 JavaScript 变量和值的这些惊人好处
+
+![](img/image-v1u8nzyh.jpg)
+
+## 9 首先，最简单的 JavaScript 函数基础是最吸引人的
+
+![](img/image-s1jmvrty.jpg)
 
 照片由 Stanley Dai 拍摄于 Unsplash
 
 函数是核心所在，所有工作都在这里完成。我们需要计算地板的面积吗？这需要用到函数。
 
-```
+```javascript
 function calculateFlooring(length, width) {
   return length * width;
 }
@@ -549,7 +566,7 @@ function calculateFlooring(length, width) {
 
 在第一个函数示例中，我们计算了地板材料。让我们退一步，让它更简单。我们可以在屏幕上打印一些内容。
 
-```
+```javascript
 function greetTom() {
   alert("Hello Tom!");
 }
@@ -561,7 +578,7 @@ function greetTom() {
 
 代码看起来不错，但如果不调用它，什么也不会发生。如何调用呢？很高兴你问这个问题。这里有一个例子。
 
-```
+```javascript
 function greetTom() {
   alert("Hello Tom!");
 }
@@ -575,7 +592,7 @@ greetTom();
 
 在第一个例子中，我们从一个计算地板材料的函数开始。它需要两个参数。
 
-```
+```javascript
 function calculateFlooring(length, width) {
   return length * width;
 }
@@ -584,7 +601,7 @@ calculateFlooring(12,10);
 
 我们可以传入两个数字来获取所需的地板材料。在这个例子中，我们硬编码了值。你通常不会这样做，甚至永远不会。
 
-```
+```javascript
 function calculateFlooring(length, width) {
   return length * width;
 }
@@ -597,7 +614,7 @@ calculateFlooring(length,width);
 
 返回计算结果很有用。如果不返回，函数的作用就会大打折扣。我们只需要使用 `return`。我们在计算地板材料的函数中已经这样做了。不过，我们需要赋值或打印它。
 
-```
+```javascript
 function calculateFlooring(length, width) {
   return length * width;
 }
@@ -607,7 +624,11 @@ totalFlooring = calculateFlooring(length,width);
 
 现在，我们可以在应用程序的后续部分使用这个值。前面的例子没有使用返回的值。如果你以后不需要它，这始终是一个选项。
 
-函数可以为我们做很多事情。它们为我们的代码提供了容器。然后我们可以调用它们并传递参数。除此之外，它们还可以返回数据。如果你需要更多信息，这里有一些进一步的资料。10 用这些简单的 JavaScript 条件语句避免痛苦的错误 ![](img/image-dviabf1w.jpg)
+函数可以为我们做很多事情。它们为我们的代码提供了容器。然后我们可以调用它们并传递参数。除此之外，它们还可以返回数据。如果你需要更多信息，这里有一些进一步的资料。
+
+## 10 用这些简单的 JavaScript 条件语句避免痛苦的错误
+
+![](img/image-dviabf1w.jpg)
 
 照片由 Artur Aldyrkhanov 拍摄于 Unsplash
 
@@ -617,7 +638,7 @@ totalFlooring = calculateFlooring(length,width);
 
 `if` 语句以一个条件开始。如果条件为真，则执行后面的语句。
 
-```
+```javascript
 if(pizzaArrives) {
   openTheDoor();
 }
@@ -629,7 +650,7 @@ if(pizzaArrives) {
 
 有时你有两种不同的行动方案。我们可以将 `else` 语句与 `if` 一起使用。假设你在烹饪汉堡。
 
-```
+```javascript
 if(sideCooked) {
   flipBurger();
 } else {
@@ -641,7 +662,7 @@ if(sideCooked) {
 
 如果你需要检查两个条件，也可以使用 `if else if`。
 
-```
+```javascript
 if(sideCooked) {
   flipBurger();
 } else if(otherSideCooked) {
@@ -657,7 +678,7 @@ if(sideCooked) {
 
 用于 `if` 语句的运算符必须解析为 `true` 或 `false`。这里有很多选项供你使用。根据经验，你需要测试并找到正确的那个。
 
-```
+```javascript
 if(9>5) { alert("Greater than"); }// 大于
 if(5<8) { alert("Less than"); } // 小于
 if(9>=6) { alert("Greater than equal to"); } // 大于等于
@@ -667,7 +688,7 @@ if(4!=6) { alert("Not equal to"); } // 不等于
 
 还有两个逻辑运算符：逻辑与（`&&`）和逻辑或（`||`）。它们经常被使用，但不要被吓到。
 
-```
+```javascript
 const value1 = 4;
 const value2= -3;
 console.log(value1 > 0 && value2 > 0); // 预期输出：false
@@ -680,7 +701,7 @@ console.log(value1 > 0 || value2 > 0); // 预期输出：true
 
 `switch` 语句计算表达式以确定执行哪个语句。然后它运行代码，直到遇到 `break` 语句。下面是一个例子，告诉我们你想要鞋子的价格。
 
-```
+```javascript
 const shoes = 'Reebok';
 switch (shoes) {
   case 'Nike':
@@ -698,7 +719,7 @@ switch (shoes) {
 
 这段代码应该在控制台输出“Adidas and Reebok are $100 a pair.”。如果不添加 `break` 语句，`switch` 语句可能会变得棘手。
 
-```
+```javascript
 const shoes = 'Nike';
 switch (shoes) {
   case 'Nike':
@@ -714,7 +735,11 @@ switch (shoes) {
 
 在这个例子中，我们从 Nike 语句中移除了 `break`。你知道会发生什么吗？它会输出“Nike shoes are $200.”，然后输出“Adidas and Reebok are $100 a pair.”。这种类型的 bug 对于初学者来说很常见。不要感到难过。你现在也是俱乐部的一员了！
 
-条件语句是 JavaScript 的基础。与其他语言类似，它允许我们快速提供解决方案。`if/else` 和 `switch` 很容易使用。11 JavaScript 有巨大的循环，会让你大开眼界 ![](img/image-flo62x5w.jpg)
+条件语句是 JavaScript 的基础。与其他语言类似，它允许我们快速提供解决方案。`if/else` 和 `switch` 很容易使用。
+
+## 11 JavaScript 有巨大的循环，会让你大开眼界
+
+![](img/image-flo62x5w.jpg)
 
 照片由 Kier in Sight Archives 拍摄于 Unsplash
 
@@ -726,18 +751,14 @@ switch (shoes) {
 
 如果我们有一个书籍数组，想要打印出来。我们可以使用以下循环。
 
-```
+```javascript
 for (let i = 0; i < books.length; i++) {
   text += books[i] + "
 ```
 
-
-
-
-
 ### 循环
 
-for 循环有三个基本部分：起始、条件和步进。
+`for` 循环有三个基本部分：起始、条件和步进。
 
 #### 起始
 
@@ -753,9 +774,9 @@ for 循环有三个基本部分：起始、条件和步进。
 
 #### while
 
-如果我的狗 Baxter 想吃东西，我想创建一个循环，在它饿的时候喂它。while 循环可以做到这一点。下面是一个示例。
+如果我的狗 Baxter 想吃东西，我想创建一个循环，在它饿的时候喂它。`while` 循环可以做到这一点。下面是一个示例。
 
-```
+```javascript
 let baxterHungry = true;
 while (baxterHungry) {
   console.log(feedBaxter);
@@ -763,13 +784,13 @@ while (baxterHungry) {
 }
 ```
 
-我们将变量设置为 true。然后喂狗，直到它变成 false。while 循环会评估我们给定的条件。它需要解析为 true 或 false。如果为 true，则执行循环内的代码。然后再次评估条件。一旦条件变为 false，循环停止。
+我们将变量设置为 `true`。然后喂狗，直到它变成 `false`。`while` 循环会评估我们给定的条件。它需要解析为 `true` 或 `false`。如果为 `true`，则执行循环内的代码。然后再次评估条件。一旦条件变为 `false`，循环停止。
 
 #### do-while
 
-for 和 while 循环先检查条件，然后运行代码语句。do-while 的不同之处在于它先运行代码，然后检查条件。它不太常见，但在特殊情况下很有用。
+`for` 和 `while` 循环先检查条件，然后运行代码语句。`do-while` 的不同之处在于它先运行代码，然后检查条件。它不太常见，但在特殊情况下很有用。
 
-```
+```javascript
 let donutsEaten = 0;
 do {
   console.log("Donuts eaten " + donutsEaten);
@@ -778,9 +799,9 @@ do {
 console.log("I'm full of Donuts!");
 ```
 
-do-while 循环一直运行直到条件为 false——与我们讨论过的另外两种循环相反。输出结果如下所示。
+`do-while` 循环一直运行直到条件为 `false`——与我们讨论过的另外两种循环相反。输出结果如下所示。
 
-```
+```text
 Donuts eaten 0
 Donuts eaten 1
 Donuts eaten 2
@@ -789,7 +810,7 @@ Donuts eaten 4
 I'm full of Donuts!
 ```
 
-当你需要循环执行代码时，JavaScript 为你提供了几种选择。与其他编程语言一样，它有 for、while 和 do-while 循环。只要确保它符合你的需求即可。
+当你需要循环执行代码时，JavaScript 为你提供了几种选择。与其他编程语言一样，它有 `for`、`while` 和 `do-while` 循环。只要确保它符合你的需求即可。
 
 ## 12 个令人惊讶的改进版 JavaScript 变量作用域，你需要了解
 
@@ -807,7 +828,7 @@ I'm full of Donuts!
 
 全局作用域中的项在任何地方都是可见的。在我们的示例中，我们在函数内部和外部创建了一个可见的变量。
 
-```
+```javascript
 let myGlobalVariable = "TheBigGlobalVariable";
 function logOutGlobalVariable() {
   console.log(myGlobalVariable);
@@ -821,7 +842,7 @@ logOutGlobalVariable();
 
 局部变量仅在函数内部可见。下面是一个尝试的示例。
 
-```
+```javascript
 let myGlobalVariable = "TheBigGlobalVariable";
 function logOutGlobalVariable() {
   console.log(myGlobalVariable);
@@ -834,7 +855,7 @@ console.log(localVariable);
 
 如果我们运行这段代码，最后一行会报错。
 
-```
+```text
 console.log(localVariable);
       ^
 ReferenceError: localVariable is not defined
@@ -846,7 +867,7 @@ ReferenceError: localVariable is not defined
 
 局部作用域在函数内部，而块级作用域在大括号内部。有时你会创建大括号来标识某些代码。让我们来看一个例子，说明我的意思。
 
-```
+```javascript
 console.log("here");
 {
   let blockScopeVariable = 0;
@@ -862,7 +883,9 @@ console.log(blockScopeVariable); // won't work
 
 作用域可能会令人困惑，并导致一些错误。随着你对 JavaScript 经验的增加，你可以尽早发现它们。例如，看看这段代码片段：
 
-```
+
+
+```javascript
 const colors = ['red', 'blue', 'white'];
 for (let i = 0, var l = colors.length; i < l; i++) {
   console.log(colors[i]); // 'red', 'blue', 'white'
@@ -887,7 +910,7 @@ JavaScript 作用域有几个你需要记住的基本原则。全局作用域在
 
 我们如何定义闭包？嗯，这篇文章是这样定义的。“JavaScript 中的闭包是一种词法作用域形式，用于将函数外部作用域中的变量保留在函数内部作用域中。”
 
-```
+```javascript
 function outerFunction() {
   var x = 10;
   function innerFunction() {
@@ -911,7 +934,7 @@ console.log(inner());
 
 术语“词法作用域”指的是变量定义的位置，以及它可以在哪里被引用或不能引用。
 
-```
+```javascript
 let x = 10
 let myFunc = function (){
 let y = 20;
@@ -953,7 +976,7 @@ JavaScript 最初并不是面向对象的。它经过修改变得更加强大。
 
 JavaScript 对象代表真实的事物，比如我高中时的汽车。让我们在这里用一些属性来创建它。
 
-```
+```javascript
 // Create an object:
 const car = {
 type:"Chevrolet",
@@ -969,7 +992,7 @@ JavaScript 对象是该语言允许的众多数据类型之一。如你所见，
 
 他们对此进行了深入探讨。我只想指出几个关键区别。对象是可变的，而原始类型是不可变的。可变意味着它们可以被改变。
 
-```
+```javascript
 // Create an object:
 const car = {
 type:"Chevrolet",
@@ -980,13 +1003,13 @@ model:"Malibu",
 let ball = "basketball"; // primitive
 ```
 
-在我们之前的例子基础上，我们有 car 对象和 ball 原始类型。前者可以被改变，而后者不能。作为一个老 Java 程序员，这非常熟悉。
+在我们之前的例子基础上，我们有 `car` 对象和 `ball` 原始类型。前者可以被改变，而后者不能。作为一个老 Java 程序员，这非常熟悉。
 
 ### 构造函数
 
 对象可以使用构造函数创建。继续以汽车为主题，让我们创建两个汽车对象，这样你就能看到它的样子。
 
-```
+```javascript
 // Constructor function for Car objects
 function Car(make, model, year) {
   this.make = make;
@@ -998,20 +1021,20 @@ const myCar = new Car("Ford", "Pinto", "1971");
 const yourCar = new Car("Dodge", "Charger", "1977");
 ```
 
-这类似于我们之前的例子。我们在这里使用 function 关键字来指定构造函数。同时，我们也使用 new 关键字来创建对象。
+这类似于我们之前的例子。我们在这里使用 `function` 关键字来指定构造函数。同时，我们也使用 `new` 关键字来创建对象。
 
 ### 属性
 
 我们创建了两个带有许多值的汽车对象。这些被称为属性。如果我们想将它们打印到日志中，可以这样做。
 
-```
+```javascript
 console.log(myCar.make);
 console.log(myCar.model);
 ```
 
 这是一种访问值的方式。或者你也可以这样做。
 
-```
+```javascript
 console.log(myCar["make"]);
 console.log(myCar["model"]);
 ```
@@ -1022,7 +1045,7 @@ console.log(myCar["model"]);
 
 JavaScript 对象有一些内置方法。例如，其中之一是 `keys()` 方法。它将键转换为数组。
 
-```
+```javascript
 // Initialize an object
 const car = {
 make: 'Ford',
@@ -1038,7 +1061,7 @@ console.log(keys);
 
 还有一个 `values()` 方法。
 
-```
+```javascript
 // Initialize an object
 const game = {
   id: 1,
@@ -1055,11 +1078,11 @@ console.log(values);
 
 这结合循环遍历它们会很有帮助。还有其他方法。这篇文章回顾了更多内置方法。
 
-### this
+### `this`
 
 JavaScript 将 `this` 保留为关键字。它用于引用当前对象。下面是一个示例。
 
-```
+```javascript
 // Create an object:
 const car = {
   make: "Dodge",
@@ -1091,26 +1114,26 @@ JavaScript 数组在一个集合中存储多个对象。它们还提供一些常
 
 在 JavaScript 中有几种创建数组的方法。
 
-```
+```javascript
 const bread = ["white", "wheat", "sourdough"];
 ```
 
 这是一个面包数组。我们在声明时设置了值。
 
-```
+```javascript
 const fruits = [];
 fruits.push("banana", "apple", "peach");
 ```
 
 这个数组先声明，然后我们将水果推入数组。
 
-```
+```javascript
 const cars = new Array("Chevy", "Jaguar", "Porsche", "Fiat");
 ```
 
 如本例所示，可以使用 `new` 关键字。
 
-```
+```javascript
 let arrOfManyTypes = ['abc', 1, 2, 3, true, 'xyz'];
 ```
 
@@ -1120,21 +1143,21 @@ let arrOfManyTypes = ['abc', 1, 2, 3, true, 'xyz'];
 
 我们可以使用内置方法修改数组。`toString()` 可以将其转换为字符串以便打印。
 
-```
+```javascript
 const bread = ["white", "wheat", "sourdough"];
 console.log(bread.toString()); // white,wheat,sourdough
 ```
 
 `join` 方法也会将元素连接在一起，类似于 `toString`。
 
-```
+```javascript
 const bread = ["white", "wheat", "sourdough"];
 console.log(bread.join('-')); // white-wheat-sourdough
 ```
 
 我们之前使用的 `push` 方法可以修改数组。
 
-```
+```javascript
 const fruits = [];
 fruits.push("banana", "apple", "peach");
 ```
@@ -1145,7 +1168,7 @@ fruits.push("banana", "apple", "peach");
 
 我不想让你错过 JavaScript 数组是从零开始的。有些语言从 1 开始，而 JavaScript 在这方面类似于 Java。
 
-```
+```javascript
 let tomsArray = [11, 22, 33, 44, 55];
 console.log(tomsArray[0]); // prints 11
 ```
@@ -1168,7 +1191,7 @@ console.log(tomsArray[0]); // prints 11
 
 有时我们需要将数字转换为字符串，反之亦然。也许你需要处理来自用户或其他系统的输入。JavaScript 中的类型转换是一个手动过程。
 
-```
+```javascript
 const inputYear = "1992";
 console.log(Number(inputYear), inputYear); // 1992 "1992"
 console.log(String(73), 73); // 73 73
@@ -1183,7 +1206,7 @@ console.log(Number("Tom")); // NaN
 
 JavaScript 具有自动运行的类型强制转换。这里有几个例子可以分享。第一个例子将数字 43 转换为字符串。
 
-```
+```javascript
 console.log('I am ' + 43 + ' years old'); // I am 43 years old
 console.log(2 + 3 + 4 + '5'); // 95
 console.log('10' - '4' - '3' - 2 + '5'); // 15
@@ -1205,7 +1228,7 @@ console.log('10' - '4' - '3' - 2 + '5'); // 15
 
 当我们想创建一个字符串时，可以像这样操作。
 
-```
+```javascript
 let myFirstString = "My First String";
 ```
 
@@ -1215,7 +1238,7 @@ let myFirstString = "My First String";
 
 正如我们之前所做的，我们可以通过几种不同的方式创建字符串。让我们回顾一些不同的方法。
 
-```
+```javascript
 let mySecondString = "My Second String";
 let stringSingleQuite = 'Example using single quotes';
 let backTicksToo = `We can use back ticks too`;
@@ -1227,7 +1250,7 @@ let backTicksToo = `We can use back ticks too`;
 
 JavaScript 允许字符串是原始类型或对象。
 
-```
+```javascript
 let primitiveString = "This is a primitive";
 let objectString = new String("This is an object.");
 ```
@@ -1238,44 +1261,46 @@ let objectString = new String("This is an object.");
 
 JavaScript 中有大量可用于字符串的函数。我们可以看几个。
 
-##### length
+#### `length`
 
 我们可以使用 `length` 函数获取字符串的长度。
 
-```
+```javascript
 let sampleText = "A long time ago in a galaxy far far away...";
 let length = sampleText.length;
 ```
 
 这经常与循环一起使用。
 
-##### indexOf
+#### `indexOf`
 
-`indexOf` 可以给出单词或字母的位置。
 
-```
+
+`indexOf`可以给出单词或字母的位置。
+
+```javascript
 let sentence = "A quick brown fox jumped over the lazy dog.";
 let foxIndex = text.indexOf("fox");
 ```
 
-使用 `indexOf` 和 `slice` 函数可以帮助你拆分字符串。
+使用`indexOf`和`slice`函数可以帮助你拆分字符串。
 
-##### slice
+### `slice`
 
-如果你需要提取字符串的一部分，`slice` 函数会派上用场。
+如果你需要提取字符串的一部分，`slice`函数会派上用场。
 
-```
+```javascript
 let animals = "Fox, Horse, Cow";
 let farmAnimals = animals.slice(5);
 ```
 
 我们取这个字符串的最后两个单词，创建一个新字符串。
 
-#### 比较
+### 比较
 
 在 JavaScript 中比较字符串有两种类型。严格比较和宽松比较，它们有细微差别。
 
-```
+```javascript
 let str1 = "IowaBasketball";
 let str2 = "Basketball";
 console.log(str1 === str2); // false
@@ -1283,7 +1308,7 @@ console.log(str1 === str2); // false
 
 这是一个严格比较的例子。
 
-```
+```javascript
 let num1= 23;
 let num2 = '23';
 // Loose Equality
@@ -1292,7 +1317,7 @@ console.log(num1 == num2); // true
 console.log(num1 === num2); // false
 ```
 
-这里我们比较了两种类型。宽松相等有效，而严格相等无效。还有 `localCompare` 可以考虑。
+这里我们比较了两种类型。宽松相等有效，而严格相等无效。还有`localCompare`可以考虑。
 
 我们只是触及了表面。我认为我们已经为你提供了 JavaScript 字符串的一个很好的概述。从创建到我们可以使用的函数，你已经了解了基本情况。作为作业，花些时间编写字符串代码，填补你的理解。
 
@@ -1300,7 +1325,7 @@ console.log(num1 === num2); // false
 
 ![](img/image-ke1o0wdf.jpg)
 
-照片由 Nick Hillier 拍摄于 Unsplash
+照片由 Nick Hillier 拍摄于 Unsplash。
 
 你有没有得到过一件均码的衬衫？对我们中的一些人来说，它看起来像一件又大又宽松的睡衣。而对另一些人来说，它看起来像 smedium。
 
@@ -1310,71 +1335,71 @@ JavaScript 只有一个数字供我们使用。所以我们不必像在 Java 或
 
 所以我们可以在 JavaScript 中做这样的事情。
 
-```
+```javascript
 let num1 = 1.234;  // A number with decimals
 let num2 = 5;   // A number without decimals
 ```
 
 我们可以使用小数，也可以使用整数。
 
-```
+```javascript
 let bigNum = 423e6;  // 423000000
 let smallNum = 552e-5; // 0.00552
 ```
 
 当数字变大时，我们也可以使用科学记数法。这两个例子向我们展示了如何做到这一点。
 
-#### Number()
+### `Number()`
 
 我们也可以使用数字构造函数来创建。
 
-```
+```javascript
 Number(999);
 Number("999");
 ```
 
 这两个例子都创建了一个数字。我们可以传递一个字符串或一个数字。
 
-```
+```javascript
 Number(true); // 1
 Number(false); // 0
 Number(new Date()); // 1712747922911
 Number("sdfs:"); // NaN
 ```
 
-在这些例子中，你可以看到 `true` 和 `false` 解析为数字。日期也被转换为数字。然而，字母不能解析为数字。因此，它打印出“NaN”。这是“Not a Number”的缩写，参考指南分享了更多信息。
+在这些例子中，你可以看到`true`和`false`解析为数字。日期也被转换为数字。然而，字母不能解析为数字。因此，它打印出“NaN”。这是“Not a Number”的缩写，参考指南分享了更多信息。
 
-#### 精度
+### 精度
 
 JavaScript 数字是 64 位浮点数。这遵循 IEEE 754 标准。整数精确到 15 位。
 
-```
+```javascript
 let num = 123456789012345;
 ```
 
 最大小数位数为 18。
 
-```
+```javascript
 let dec = 0.123456789012345678;
 ```
 
-#### 方法
+### 方法
 
 JavaScript 为数字提供了相当多的方法。我将在这里介绍几个。
 
-```
+```javascript
 const num = Math.PI.toFixed(2);
 console.log(num); // 3.14
 ```
 
-`toFixed` 方法会将数字四舍五入到给定的小数位数。这里我们还使用了 `Math.PI` 常量。还有其他 Math 常量，详见
+`toFixed`方法会将数字四舍五入到给定的小数位数。这里我们还使用了`Math.PI`常量。还有其他 Math 常量，详见
 
-```
+```javascript
 const num = Math.PI.toPrecision(6);
 console.log(num); // 3.14159
 ```
 
-`toPrecision` 方法会给出我们要求的数字位数。所以如果你需要设置显示多少位有效数字，这个方法会起作用。
+`toPrecision`方法会给出我们要求的数字位数。所以如果你需要设置显示多少位有效数字，这个方法会起作用。
 
 在处理 JavaScript 数字时有很多选择。虽然它们是一种一刀切的方法，但确实有效。在使用它们时测试一下极限。
 
@@ -1382,19 +1407,19 @@ console.log(num); // 3.14159
 
 ![](img/image-gs6nsyaw.jpg)
 
-照片由 Nick Fewings 拍摄于 Unsplash
+照片由 Nick Fewings 拍摄于 Unsplash。
 
 编程要求我们随着技术的变化而学习。JavaScript 也不例外。多年来它经历了巨大的变化。JavaScript 箭头函数是 2015 年发生的重大变化的一部分。
 
 ### JavaScript 箭头函数
 
-它们是函数表达式的简洁替代品。它们没有 `this`、`super` 等的绑定。箭头函数也不能用作构造函数。
+它们是函数表达式的简洁替代品。它们没有`this`、`super`等的绑定。箭头函数也不能用作构造函数。
 
 箭头函数并非 JavaScript 原生。这一变化是 ES6 的一部分。这是该语言的一个重大变化。
 
 举个例子，在箭头函数之前，第一个例子是函数表达式，而第二个是函数声明。
 
-```
+```javascript
 // function expression
 message = function() {
   return "A message from Tom";
@@ -1407,7 +1432,7 @@ function functionDeclaration() {
 
 在 ES6 及更高版本中，我们可以这样做。
 
-```
+```javascript
 message = () => {
   return "A message from Tom";
 }
@@ -1415,7 +1440,7 @@ message = () => {
 
 如果只有一个语句返回值，你可以这样做。
 
-```
+```javascript
 message = () => "A message from Tom";
 ```
 
@@ -1425,7 +1450,7 @@ message = () => "A message from Tom";
 
 这是一个向箭头函数传递参数的例子。
 
-```
+```javascript
 const yearUntilRetirement = birthYear => {
   const age = 2024 - birthYear;
   const retirement = 65 - age;
@@ -1438,7 +1463,7 @@ console.log(yearUntilRetirement(1985)); // 26
 
 总结一下，在这个例子中我们看到了所有三种函数类型。
 
-```
+```javascript
 // function expression
 message = function() {
   return "A message from Tom";
@@ -1457,7 +1482,7 @@ message = () => "A message from Tom";
 
 ![](img/image-qzftwjos.jpg)
 
-照片由 Markus Winkler 拍摄于 Unsplash
+照片由 Markus Winkler 拍摄于 Unsplash。
 
 我必须承认，JavaScript 中的相等性可能令人困惑。直到我花时间回顾它们，我才完全理解其中的差异。三个等号对我来说看起来很奇怪。
 
@@ -1467,7 +1492,7 @@ message = () => "A message from Tom";
 
 这里有四个例子为你描绘一幅图景。仔细看第三个例子。那个可能会让你困惑。这四个例子应该能帮助你理解它是如何工作的。
 
-```
+```javascript
 console.log(1 === 1);
 // Example 1: Expected output: true
 console.log('hello' === 'hello');
@@ -1484,7 +1509,7 @@ console.log(0 === false);
 
 在看了相等性的例子之后，这些就很容易理解了。就像在幼儿园学习反义词一样，我们看到了一种模式。这里还有四个代码例子。
 
-```
+```javascript
 console.log(1 !== 1);
 // Example 1: Expected output: false
 console.log('hello' !== 'hello');
@@ -1501,7 +1526,7 @@ console.log(0 !== false);
 
 最后，让我们比较严格与宽松。仅用三个变量，我们就可以探索一些关键区别。
 
-```
+```javascript
 const zero = 0;
 const zeroObj = new String("0");
 const zeroStr = "0";
@@ -1513,7 +1538,7 @@ console.log(zeroObj === zeroStr); // false
 console.log(zeroObj == zeroStr); // true
 ```
 
-我们有 `zero` 作为数字、字符串和对象。你可以看到两种相等性之间的巨大差异。出于这个原因，许多开发者建议不要使用宽松相等。它可能导致一些难以诊断的 bug。
+我们有`zero`作为数字、字符串和对象。你可以看到两种相等性之间的巨大差异。出于这个原因，许多开发者建议不要使用宽松相等。它可能导致一些难以诊断的 bug。
 
 在编写 JavaScript 时，请确保你理解严格和宽松相等。如果有疑问，请查看这篇关于严格和宽松（或常规）相等性的详尽解释。了解这一点很有帮助，我在这里犯过错误，它非常有帮助。
 
@@ -1521,7 +1546,7 @@ console.log(zeroObj == zeroStr); // true
 
 ![](img/image-va9zn9vn.jpg)
 
-照片由 Alina Grubnyak 拍摄于 Unsplash
+照片由 Alina Grubnyak 拍摄于 Unsplash。
 
 开发者几乎在我们所做的每件事中都使用数据。我们与多种类型的数据交互，从数据库或 XML 到 JSON。JavaScript 与之配合得很好，因为这是其初衷。
 
@@ -1533,13 +1558,13 @@ JSON（JavaScript 对象表示法）是一种轻量级的数据交换格式。�
 
 XML 更重量级且不太人类可读，而 JSON 试图扭转这一点。当然，我们可以让你自己决定。这里有一个例子。
 
-```
+```json
 '{"developer":"Tom", "linesOfCode": 12000, "repo":"accounting", "ide": null}'
 ```
 
-这个对象有几个属性：developer、linesOfCode、repo 和 ide。基本结构是键值对。如果我们想在 JavaScript 中访问这些属性，可以这样做。
+这个对象有几个属性：`developer`、`linesOfCode`、`repo`和`ide`。基本结构是键值对。如果我们想在 JavaScript 中访问这些属性，可以这样做。
 
-```
+```javascript
 let developer = obj.developer;
 let linesOfCode = obj.linesOfCode;
 let repository = obj.repo;
@@ -1551,7 +1576,7 @@ let repository = obj.repo;
 
 这两种数据类型可以在很多领域使用。如果我们看一些类似的例子，可以正面比较它们。我们可以用两种格式创建一个客户数组。
 
-```
+```json
 {"customers":[
   { "business":"ABC Inc.", "city":"Ducktown" },
   { "business":"Delta LTD", "city":"Jimmyville" },
@@ -1559,7 +1584,7 @@ let repository = obj.repo;
 ]}
 ```
 
-```
+```xml
   <business>ABC</business> Inc. <city>Ducktown</city>
   <business>Delta</business> LTD <city>Jimmyville</city>
   <business>XYZ</business> Company <city>New</city> Heights
@@ -1573,7 +1598,7 @@ JSON 主要用于表示调用 API 的数据。许多开发者更喜欢它而不�
 
 下面是一个用 JSON 调用 API 的例子。
 
-```
+```json
 [
   {"command" : "ServerInfoService.getVersion"},
   {"command" : "Examples.echo","args" : {"echo" : "Some text."}}
@@ -1582,7 +1607,7 @@ JSON 主要用于表示调用 API 的数据。许多开发者更喜欢它而不�
 
 服务可能会返回这样的响应。
 
-```
+```json
 [ {
   "result" : {
     "version" : "9.0.9000"
@@ -1602,7 +1627,7 @@ JSON 主要用于表示调用 API 的数据。许多开发者更喜欢它而不�
 
 ![](img/image-hlmsas3p.jpg)
 
-照片由 Scott Webb 拍摄于 Unsplash
+照片由 Scott Webb 拍摄于 Unsplash。
 
 小时候，我喜欢拆东西。我的手表、收音机，任何我能拿到的东西。我仍然对事物的工作原理感到好奇。不过，我现在尽量不再弄坏东西了。
 
@@ -1610,9 +1635,9 @@ JSON 主要用于表示调用 API 的数据。许多开发者更喜欢它而不�
 
 ### 展开运算符
 
-JavaScript 中的展开运算符是（`...`），用于将数组展开为单独的元素。
+JavaScript 中的展开运算符是`...`，用于将数组展开为单独的元素。
 
-```
+```javascript
 let numbers = [1,2,3,4,5];
 let maximum = Math.max(...numbers);
 let minimum = Math.min(...numbers);
@@ -1622,7 +1647,7 @@ console.log(minimum); // 1
 
 这里我们将其与 Math 运算符一起使用，以获取数组的最大值和最小值。这只是展开运算符的一个方便用途。
 
-```
+```javascript
 const policeSongs = ["King of Pain", "Wrapped Around Your Finger"];
 const stingSongs = ["Fields of Gold", ...policeSongs, "Desert Rose"];
 console.log(stingSongs); // ["Fields of Gold","King of Pain", "Wrapped Around Your Finger", "Desert Rose"]
@@ -1634,7 +1659,7 @@ console.log(stingSongs); // ["Fields of Gold","King of Pain", "Wrapped Around Yo
 
 剩余运算符允许函数处理不同的参数配置。它可以帮助设置数组或重构对象。
 
-```
+```javascript
 function total(...num) {
   let tot = 0;
   for (const n of numbers) {
@@ -1645,23 +1670,25 @@ function total(...num) {
 console.log (total(11, 22, 33, 44)); // 110
 ```
 
-这个 `total` 函数可以处理传递给它的多个参数。剩余运算符实现了这一功能。
+这个`total`函数可以处理传递给它的多个参数。剩余运算符实现了这一功能。
 
 ### 对象解构
 
 如果你有一个数组，可能需要解包其中的部分。为此，你可以使用对象解构。
 
-```
+```javascript
 const atariGames = ['Pitfall', 'Space Invaders', 'E.T.'];
 const [great, good, awful] = atariGames;
 ```
 
 这将三个 Atari 游戏分别赋值给一个单独的对象。如果需要，你可以省略一个，像这样留空。
 
-```
+```javascript
 const atariGames = ['Pitfall', 'Space Invaders', 'E.T.'];
 const [great, , awful] = atariGames;
 ```
+
+
 
 在这种情况下，我们只使用了第一个和最后一个游戏。
 
@@ -1681,11 +1708,10 @@ Tom 学会了如何解决技术中的挑战性问题并领导技术团队。他�
 
 你可以通过以下方式联系我：
 
-- http://codeiseasy.co
-- https://x.com/TomHenricksen
-- https://www.linkedin.com/in/tomhenricksen
+- `http://codeiseasy.co`
+- `https://x.com/TomHenricksen`
+- `https://www.linkedin.com/in/tomhenricksen`
 
 订阅我的通讯：
 
-- https://t.co/NkolrQgXHM
-
+- `https://t.co/NkolrQgXHM`

@@ -1,12 +1,5 @@
+
 # 儿童的 JavaScript：编程趣味入门指南
-
-
-
-
-
-
-
-
 
 # 关于作者
 
@@ -14,11 +7,11 @@ Nick Morgan 是 Twitter 的一名前端工程师。他喜欢所有的编程语�
 
 # 关于插画师
 
-Miran Lipovaca 是 *Learn You a Haskell for Great Good!* 的作者。他喜欢拳击、弹贝斯吉，当然还有画画。他对跳舞的骨架和数字 71 非常着迷，当他走过自动门时，他假装自己是在用意念开启它们。
+Miran Lipovaca 是 *Learn You a Haskell for Great Good!* 的作者。他喜欢拳击、弹贝斯吉他，当然还有画画。他对跳舞的骨架和数字 71 非常着迷，当他走过自动门时，他假装自己是在用意念开启它们。
 
 # 关于技术审查员
 
-Angus Croll 是 *If Hemingway Wrote JavaScript* 的作者，他对比 JavaScript 和文学同样痴迷。他在 Twitter 的 UI 框架团队工作，在那里他共同编写了 Flight 框架。他撰写了影响巨大的 *JavaScript, JavaScript* 博客，并在全球各地的会议上演讲。他的特 为 @angustweets。
+Angus Croll 是 *If Hemingway Wrote JavaScript* 的作者，他对 JavaScript 和文学同样痴迷。他在 Twitter 的 UI 框架团队工作，在那里他共同编写了 `Flight` 框架。他撰写了影响巨大的 *JavaScript, JavaScript* 博客，并在全球各地的会议上演讲。他的特 为 @angustweets。
 
 # 致谢
 
@@ -78,18 +71,15 @@ JavaScript 是一门非常棒的编程语言，因为它无处不在。Chrome、
 
 **第 9 章** 介绍了 jQuery，这是一个让你使用 JavaScript 轻松控制网页的工具。
 
-**第 10 章** 向你展示如何使用超时、、间隔和事件处理程序让你的代码更具交互性。
+**第 10 章** 向你展示如何使用超时、间隔和事件处理程序让你的代码更具交互性。
 
+**第 11 章** 使用函数、jQuery 和事件处理器来创建一个名为[第 11 章]的游戏。
 
+**第 12 章** 教授了一种名为`面向对象编程`的编程风格。
 
+**第 13 章** 引入了 `canvas` 元素，允许你使用 JavaScript 在网页上绘制图形。
 
-[第 11 章] 使用函数、jQuery 和事件处理器来创建一个名为[第 11 章]的游戏。
-
-[第 12 章] 教授了一种名为`面向对象编程`的编程风格。
-
-[第 13 章] 引入了 `canvas` 元素，允许你使用 JavaScript 在网页上绘制图形。
-
-[第 14 章] 基于你在[第 10 章]中学习的动画技术，让你可以使用 `canvas` 创建动画，而[第 15 章] 将向你展示如何用键盘控制这些 `canvas` 动画。
+**第 14 章** 基于你在[第 10 章]中学习的动画技术，让你可以使用 `canvas` 创建动画，而[第 15 章] 将向你展示如何用键盘控制这些 `canvas` 动画。
 
 在[第 16 章]和[第 17 章]中，你将使用在前 15 章中学到的所有知识来编写一个完整的贪吃蛇游戏！
 
@@ -105,7 +95,7 @@ JavaScript 是一门非常棒的编程语言，因为它无处不在。Chrome、
 
 # 第 1 章 什么是 JavaScript？
 
-计算机是极其强大的机器，能够完成惊人的壮，例如下国际象棋、提供数千个网页或在几秒钟内完成数百万复杂的计算。但深层次上，计算机其实相当笨。计算机只能执行我们人类告诉它们做的事情。我们使用计算机程序来告诉计算机如何运行，程序只是计算机需要遵循的指令集。没有程序，计算机什么也做不了！
+计算机是极其强大的机器，能够完成惊人的壮举，例如下国际象棋、提供数千个网页或在几秒钟内完成数百万复杂的计算。但深层次上，计算机其实相当笨。计算机只能执行我们人类告诉它们做的事情。我们使用计算机程序来告诉计算机如何运行，程序只是计算机需要遵循的指令集。没有程序，计算机什么也做不了！
 
 ## 认识 JavaScript
 
@@ -114,15 +104,16 @@ JavaScript 是一门非常棒的编程语言，因为它无处不在。Chrome、
 Gmail、Facebook 和 Twitter 等网站使用 JavaScript 让发送邮件、发表评论或浏览网站变得更容易。例如，当你在 Twitter 上阅读 @nostarch 的推文并向下滚动，看到页面底部出现更多推文时，那就是 JavaScript 在起作用。你必须访问几个网站才能发现 JavaScript 为什么令人兴奋。
 
 * JavaScript 让你播放音乐并创建视觉效果。例如，你可以穿过由 Ellie Goulding 的歌曲“Lights”（http://lights.helloenjoy.com/）创建的交互式音乐视频，如图 1-1 所示。
+
 * JavaScript 让你为他人构建工具来让他们创作艺术。Patatap (`http://www.patatap.com/`) 是一种虚拟的“鼓机”，可以创建各种酷炫的声音——以及随之产生的酷炫动画——如图 1-2 所示。
 
-![带有说明的图像](img/`) 是经典游戏乒乓（Pong）的 3D 重制，看起来有点像气气冰。你可以和朋友或电脑生成的熊对战，如图 1-3 所示。
+* CubeSlam (`http://www.cubeslam.com/`) 是经典游戏乒乓（Pong）的 3D 重制，看起来有点像气泡冰。你可以和朋友或电脑生成的熊对战，如图 1-3 所示。
 
-![ CubeSlam 游戏完全用 JavaScript 编写的！
+![CubeSlam 游戏完全用 JavaScript 编写的！](img/1-3.png)
 
 ## 为什么要学习 JavaScript？
 
-JavaScript 不是世界上唯一的编程语言——事实上，世界上有成百上千种编程语言。但学习 JavaScript 有有很多。首先，它比许多其他编程语言更容易学习（也更有趣）。但最好的可能是，为了编写和运行 JavaScript 程序，你只需要像 Internet Explorer、Mozilla Firefox 或 Google Chrome 这样的网页浏览器。每个网页浏览器都带有一个 JavaScript `解释器`，它能理解如何读取 JavaScript 程序。
+JavaScript 不是世界上唯一的编程语言——事实上，世界上有成百上千种编程语言。但学习 JavaScript 有很多理由。首先，它比许多其他编程语言更容易学习（也更有趣）。但最好的可能是，为了编写和运行 JavaScript 程序，你只需要像 Internet Explorer、Mozilla Firefox 或 Google Chrome 这样的网页浏览器。每个网页浏览器都带有一个 JavaScript `解释器`，它能理解如何读取 JavaScript 程序。
 
 一旦你写了一个 JavaScript 程序，你就可以发送链接给别人，他们也可以在电脑的浏览器中运行它！
 
@@ -138,7 +129,7 @@ JavaScript 不是世界上唯一的编程语言——事实上，世界上有成
 
 Chrome 控制台会为你的代码文本染色；例如，你输入的文本将是蓝色的，输出将根据其类型着色。在书中，我们在任何使用控制台的地方对代码文本使用类似的颜色。
 
-![Google Chrome 的 JavaScript 控制台 1-4
+![Google Chrome 的 JavaScript 控制台](img/1-4.png)
 
 你在光标处输入代码并按回车键时，JavaScript 应该运行（或`执行`）你的代码并在下一行显示结果（如果有）。例如，在控制台中输入以下内容：
 
@@ -163,12 +154,9 @@ Chrome 控制台会为你的代码文本染色；例如，你输入的文本将�
 =^.^=
 ```
 
-
-
-
 与我们的加法程序不同，这个 JavaScript 程序将占据多行。要在控制台中输入该程序，你必须在每行的末尾按 `SHIFT-ENTER` 来添加新行。（如果你只按 `ENTER`，`Chrome` 将尝试执行你所写的内容，程序将无法按预期运行。我警告过你计算机是愚笨的！）
 
-![image with no caption](img/httpatomoreillycomsourcenostarchimages2161709.png.jpg)
+![image with no caption](img/1-5.png)
 
 在你的浏览器控制台中输入以下内容：
 
@@ -200,13 +188,13 @@ drawCats(10); // You can put any number here instead of 10.
 
 如果你犯了任何输入错误，你的输出可能看起来非常不同，或者你会得到一个错误。这就是我说的计算机是愚笨的的意思——即使是一段简单的代码，也必须完美，计算机才能理解你想让它做什么！
 
-![image with no caption](img/httpatomoreillycomsourcenostarchimages2161711.png.jpg)
+![image with no caption](img/1-6.png)
 
 目前我不会详细介绍这段代码是如何*工作*的（我们将在第 8 章 中回到这个程序），但让我们来看看这个程序以及普通 JavaScript 程序的某些特性。
 
 ## 语法
 
-我们的程序包含了许多符号，包括括号 `()`、分号 `;`、大括号 `{}`、加号 `+`，以及几个看起来可能有些神秘的单词（如 `var` 和 `console.log()`）。这些都是 JavaScript `语法`(#pr08.html_gloss01_039) 的一部分——也就是说 JavaScript 关于如何组合符号和单词以创建运行程序的规则。
+我们的程序包含了许多符号，包括括号 `()`、分号 `;`、大括号 `{}`、加号 `+`，以及几个看起来可能有些神秘的单词（如 `var` 和 `console.log()`）。这些都是 JavaScript `语法` 的一部分——也就是说 JavaScript 关于如何组合符号和单词以创建运行程序的规则。
 
 当你学习一种新的编程语言时，最困难的部分之一就是习惯如何编写给计算机的不同类型的指令的规则。当你刚开始时，很容易忘记何时包含括号，或者混淆包含某些值的顺序。但随着你的练习，你将开始逐渐掌握它。
 
@@ -220,7 +208,7 @@ drawCats(10); // You can put any number here instead of 10.
 // Draw as many cats as you want!
 ```
 
-这被称为`注释`(#pr08.html_gloss01_007)。程序员使用注释是为了让其他程序员更容易阅读和理解代码。计算机完全忽略注释。JavaScript 中的注释以两个正斜杠（////`开头。斜杠后的所有内容（在同一行内）都会被 JavaScript 解释器忽略，因此注释对程序的执行不会产生任何影响——它们只是为了提供描述。
+这被称为`注释`。程序员使用注释是为了让其他程序员更容易阅读和理解代码。计算机完全忽略注释。JavaScript 中的注释以两个正斜杠（`//`）开头。斜杠后的所有内容（在同一行内）都会被 JavaScript 解释器忽略，因此注释对程序的执行不会产生任何影响——它们只是为了提供描述。
 
 在本书的代码中，你会看到描述代码正在发生什么的的注释。当你编写自己的代码时，请添加你自己的注释。这样当你以后查看代码时，你的注释将提醒你代码是如何运行的以及每一步发生了什么。
 
@@ -255,11 +243,11 @@ as you want!
 
 在下一章中，你将开始学习 JavaScript 的基础，从你可以处理的三种基本信息类型开始：数字、字符串和布尔。
 
-![image with no caption](img/httpatomoreillycomsourcenostarchimages2161713.png.jpg)
+![image with no caption](img/1-7.png)
 
-# 第 2 章. 数据类型和变量
+# 第 2 章 数据类型和变量
 
-编程完全关于处理数据，但*什么是*数据呢？`数据`(#pr08.html_gloss01_039)是我们存储在程序中的信息。
+编程完全关于处理数据，但*什么是*数据呢？`数据`是我们存储在程序中的信息。
 
 ## 数字和运算符
 
@@ -283,11 +271,7 @@ JavaScript 允许你执行基础数学运算，如加、减、乘、除。为了
 
 这变得有点复杂，因为这个计算的结果（答案）将取决于 JavaScript 执行每个操作的顺序。在数学中，规则是乘法和除法始终在加法和减法之前进行，JavaScript 也遵循这条规则。
 
-![运算顺序：乘法、除法、加法、减法](img/httpatomoreillycomsourcenostarchimages2161717.png.jpg)
-
-
-
-
+![运算顺序：乘法、除法、加法、减法](img/2-1.png)
 
 运算符顺序
 
@@ -304,7 +288,7 @@ JavaScript 允许你执行基础数学运算，如加、减、乘、除。为了
 11
 ```
 
-这不对！你手里只有 8 块糖果，不能给每个兄弟姐妹 11 块！问题在于 JavaScript 在执行加法之前会执行除法，所以它先用 8 除以 1（等于 8），然后加上 3，结果是 11。为了修复这个问题并让 JavaScript 先执行加法，我们可以使用括号`*()`：
+这不对！你手里只有 8 块糖果，不能给每个兄弟姐妹 11 块！问题在于 JavaScript 在执行加法之前会执行除法，所以它先用 8 除以 1（等于 8），然后加上 3，结果是 11。为了修复这个问题并让 JavaScript 先执行加法，我们可以使用括号`()`：
 
 ```
 8 / (1 + 3);
@@ -313,7 +297,7 @@ JavaScript 允许你执行基础数学运算，如加、减、乘、除。为了
 
 这样就对了！每个兄弟姐妹分 2 块糖果。括号强制 JavaScript 在将 8 除以 4 之前先计算 1 加 3。
 
-![image with no caption](img/httpatomoreillycomsourcenostarchimages2161719.png.jpg)
+![image with no caption](img/2-2.png)
 
 ### 试一试！
 
@@ -332,7 +316,7 @@ JavaScript 允许你执行基础数学运算，如加、减、乘、除。为了
 
 JavaScript 允许你使用变量 为值命名。你可以把变量想象成一个可以放入一件东西的盒子。如果你在里面放入了其他东西，第一件东西就会消失。
 
-要创建一个新变量，使用关键字 `var`，后面跟着变量名。`关键字 是 JavaScript 中具有特殊含义的单词。在这种情况下，当我们输入 `var` 时，JavaScript 知道我们即将输入一个新变量的名字。例如，这里是如何创建一个名为 `nick` 的新变量：
+要创建一个新变量，使用关键字 `var`，后面跟着变量名。`关键字` 是 JavaScript 中具有特殊含义的单词。在这种情况下，当我们输入 `var` 时，JavaScript 知道我们即将输入一个新变量的名字。例如，这里是如何创建一个名为 `nick` 的新变量：
 
 ```
 var nick;
@@ -357,7 +341,7 @@ age;
 12
 ```
 
-酷！不过变量的值并不是固定不变的（它们被称为变量是因为它们的值可以`变化`），如果你想更新它，只需再次使用 `=` `=`：
+酷！不过变量的值并不是固定不变的（它们被称为变量是因为它们的值可以`变化`），如果你想更新它，只需再次使用 `=`：
 
 ```
 age = 13;
@@ -392,7 +376,7 @@ JavaScript 变量名的另一个棘手问题是它们不能包含空格，这意
 
 解决这种问题的一种常用方法是每个单词的首字母都大写，如 `NumberOfCandies`。（这种约定被称为`驼峰命名法`，因为它据说看起来像骆驼背上的驼峰。）
 
-![image with no caption](img/httpatomoreillycomsourcenostarchimages2161721.png.jpg)
+![image with no caption](img/2-3.png)
 
 标准做法是变量以小写字母开头，所以除了第一个单词外，每个单词都大写，例如：`numberOfCandies`。（我将在书中遵循这种版本的驼峰命名法，但你可以随心所欲！）
 
@@ -406,10 +390,10 @@ JavaScript 变量名的另一个棘手问题是它们不能包含空格，这意
 
 ```
 var secondsInAMinute = 60;
-  var minutesInAnHour = 60;
-  var secondsInHour = secondsInAMinute * minutesInAnHour;
+var minutesInAnHour = 60;
+var secondsInHour = secondsInAMinute * minutesInAnHour;
 ➊ secondsInHour;
-  3600
+3600
 ```
 
 ### 一天的秒数
@@ -417,21 +401,17 @@ var secondsInAMinute = 60;
 现在我们创建一个名为 `hoursInADay` 的变量，并将其设置为 `24`。接下来我们创建变量 `secondsInADay` 并将其等于 `secondsInHour` 乘以 `hoursInADay`。当我们在➊ 处询问值 `secondsInADay` 时，我们得到了 `86400`，这就是一天的秒数。
 
 ```
- var hoursInADay = 24;
-  var secondsInADay = secondsInHour * hoursInADay;
+var hoursInADay = 24;
+var secondsInADay = secondsInHour * hoursInADay;
 ➊ secondsInADay;
-  86400
+86400
 ```
 
-![image with no caption](img/httpatomoreillycomsourcenostarchimages2161723.png.jpg)
+![image with no caption](img/2-4.png)
 
 ### 一年的秒数
 
 最后，我们创建变量 `daysInAYear` 和 `secondsInAYear`。变量 `daysInAYear` 被赋值为 `365`，变量 `secondsInAYear` 被赋值为 `secondsInADay` 乘以 `daysInAYear`。最后，我们询问 `secondsInAYear` 的值，它是 `31536000`（超过 3100 万）！
-
-
-
-
 
 ```
 var daysInAYear = 365;
@@ -463,7 +443,7 @@ age * secondsInAYear;
 
 作为一名程序员，你经常需要将包含数字的变量值增加或减少 1。例如，你可能有一个变量，用于记录你今天收到了多少次击掌。每当有人和你击掌时，你就想让该变量增加 1。
 
-增加 1 称为 `incrementing`(#pr08.html_gloss01_020)，减少 1 称为 `decrementing`(#pr08.html_gloss01_012)。你使用运算符 `++` 和 `--` 来进行递增和递减。
+增加 1 称为 `incrementing`，减少 1 称为 `decrementing`。你使用运算符 `++` 和 `--` 来进行递增和递减。
 
 ```
 var highFives = 0;
@@ -489,7 +469,7 @@ highFives;
 
 在这个例子中，我们再次将 `highFives` 设置为 `0`。当我们调用 `highFives++` 时，变量递增了，但打印出的值是递增发生*之前*的值。你可以在最后（两次递增后）看到，如果我们请求 `highFives` 的值，得到的是 `2`。
 
-![image with no caption](img/httpatomoreillycomsourcenostarchimages2161725.png.jpg)
+![image with no caption](img/2-5.png)
 
 ## += (加赋值) 和 –= (减赋值)
 
@@ -518,7 +498,7 @@ score -= 3;
 
 在击败怪物后，我们撞上了一颗陨石，`score` 减少了 3。同样，`score -= 3` 等于 `score = score - 3`。因为此时 `score` 是 `17`，所以 `score - 3` 等于 `14`，该值被重新赋值给 `score`。
 
-试试看！
+### 试试看！
 
 还有一些与 `+=` 和 `-=` 类似的运算符。例如，还有 `*=` 和 `/=`。你认为它们是做什么的？尝试一下：
 
@@ -540,7 +520,7 @@ balloons /= 4;
 
 ## 字符串
 
-到为止，我们一直在处理数字。现在让我们来看另一种数据类型：`strings`(#pr08.html_gloss01_003)。字符串是字符的序列，可以是字母、数字、标点符号和空格。在 JavaScript 中，字符串用引号括起来。你可以使用单引号 `'` 或双引号 `"`。例如：
+到为止，我们一直在处理数字。现在让我们来看另一种数据类型：`strings`。字符串是字符的序列，可以是字母、数字、标点符号和空格。在 JavaScript 中，字符串用引号括起来。你可以使用单引号 `'` 或双引号 `"`。例如：
 
 ```
 var greeting = "Hello";
@@ -615,7 +595,7 @@ str.slice(6); // "World"
 str.slice(-5); // "World"
 ```
 
-字符串是不可变的（immutable 这意味着这意味着如果你尝试修改字符串中的某个字符，它不会发生变化：
+字符串是不可变的（immutable），这意味着如果你尝试修改字符串中的某个字符，它不会发生变化：
 
 ```javascript
 var str = "Hello";
@@ -630,10 +610,6 @@ var str = "Hello";
 str = "J" + str.slice(1);
 str; // "Jello"
 ```
-
-
-
-
 
 要从字符串的特定位置获取字符，请使用方括号 `[ ]`。只需获取字符串或包含字符串的变量，并将你想要的字符数字放在末尾的一对方括号中。例如，要获取 `myName` 的第一个字符，使用 `myName[0]`，如下：
 
@@ -666,7 +642,7 @@ codeWord1[1] + codeWord2[1] + codeWord3[1] + codeWord4[1];
 
 要“切下”一个大字符串的一部分，你可以使用 `slice`。例如，你可能想获取一段长电影评论的第一部分，作为预告展示在你的网站上。要使用 `slice`，在字符串（或包含字符串的变量）后加一个点，然后是 `slice` 单词以及圆括号。在括号内部，输入你想要切分的字符串的起始位置和结束位置，并用逗号分隔。图 2-2 显示了如何使用 `slice`。
 
-![如何使用 slice 获取字符串中的字符](img/httpatomoreillycomsourcenostarchimages2161729.png.jpg)
+![如何使用 slice 获取字符串中的字符](img/2-6.png)
 
 图 2-2. 如何使用 `slice` 获取字符串中的字符。
 
@@ -680,7 +656,7 @@ longString.slice(3, 14);
 
 括号中的第一个数字是开始切分的字符索引，第二个数字是切分中最后一个字符*之后*的字符索引。图 2-3 显示了它提取了哪些字符，起始值（`3`）和停止值（`14`）用蓝色高亮显示。
 
-![在上面的示例中，slice 获取了灰色框中显示的字符](img/httpatomoreillycomsourcenostarchimages2161731.png)
+![在上面的示例中，slice 获取了灰色框中显示的字符](img/2-7.png)
 
 图 2-3. 在上面的示例中，`slice` 获取了灰色框中显示的字符。
 
@@ -727,15 +703,44 @@ longString.slice(3);
 ➍ var firstCharacterUpper = firstCharacter.toUpperCase();
 ➎ var restOfString = lowerString.slice(1);
 ➏ firstCharacterUpper + restOfString;
-  "Hello there, how are you doing?"
+"Hello there, how are you doing?"
 ```
 
 让我们逐行分析一遍。在 ➊，我们创建了一个名为 `sillyString` 的新变量并保存我们想要的字符串。在 ➋，我们创建了一个名为 `lowerString` 的新变量并保存我们想要的字符串。在 ➌，我们创建了一个名为 `firstCharacter` 的新变量并保存我们想要的字符。在 ➍，我们创建了一个名为 `firstCharacterUpper` 的新变量并保存我们想要的字符。在 ➎，我们创建了一个名为 `restOfString` 的新变量并保存我们想要的字符串。在 ➏，我们将 `firstCharacterUpper` 和 `restOfString` 相加。
 
+## 布尔值
 
+`Boolean`（布尔值）是一种只有两个值的数据类型：`true`（真）和 `false`（假）。布尔值通常用于回答“是”或“否”的问题。例如，“今天是周末吗？”这个问题的答案是一个布尔值。
 
+```
+var isWeekend = true;
+var isWeekday = false;
+```
 
-[content]
+## 逻辑运算符
+
+JavaScript 有三个逻辑运算符：`&&`（与）、`||`（或）和 `!`（非）。你可以用它们来组合布尔值。
+
+### && (与)
+
+`&&` 运算符的意思是“与”。如果两个布尔值都是 `true`，那么 `&&` 的结果就是 `true`。否则，结果是 `false`。
+
+```
+true && true; // true
+true && false; // false
+false && true; // false
+false && false; // false
+```
+
+例如，假设你正在准备去上学。你需要洗过澡*并且*带上背包才能出门。我们可以用 JavaScript 来检查你是否准备好了：
+
+```
+var hadShower = true;
+var hasBackpack = true;
+hadShower && hasBackpack;
+true
+```
+
 现在 JavaScript 告诉我们 `hadShower && hasBackpack` 是 `true`。你准备好上学校了！
 
 ### || (或)
@@ -803,7 +808,7 @@ true
 
 我们可以使用大于运算符（`>`）来查看一个数字是否大于另一个数字。例如，为了查看游客身高（65 英寸）是否大于高度限制（60 英寸），我们可以将变量 `height` 设置为 `65`，将变量 `heightRestriction` 设置为 `60`，然后使用 `>` 来比较两者：
 
-![image with no caption](img/httpatomoreillycomsourcenostarchimages2161737.png.jpg)
+![image with no caption](img/2-8.png)
 
 ```
 var height = 65;
@@ -862,7 +867,7 @@ true
 
 要找出两个数字是否完全相同，请使用三等号（`===`），它的意思是等于。但注意不要将 `===` 与单等号（`=`）混淆，因为 `===` 的意思是“这两个数字相等吗？”而 `=` 的意思是“将右侧的值保存到左侧的变量”。换句话说，`===` 是提问，而 `=` 是给变量赋值。
 
-![image with no caption](img/httpatomoreillycomsourcenostarchimages2161739.png.jpg)
+![image with no caption](img/2-9.png)
 
 当你使用 `=` 时，变量名必须在左侧，你想要保存到该变量的值必须在右侧。另一方面，`===` 仅用于比较两个值以查看它们是否相同，所以哪个值在哪个边并不重要。
 
@@ -881,7 +886,7 @@ mySecretNumber === grouchoGuess;
 true
 ```
 
-变量 `mySecretNumber` 存储了你的秘密数字。`chicoGuess`、`harpoGuess` 和 `grouchoGuess` 代表你朋友的猜测（不，是 `chicoGuess`、`harpoGuess` 和 `grouchoGuess` 代表你朋友的猜测），我们使用 `===` 来检查每个猜测是否与你的秘密数字相同。你的第三个朋友 Groucho 通过猜 5 赢了。
+变量 `mySecretNumber` 存储了你的秘密数字。`chicoGuess`、`harpoGuess` 和 `grouchoGuess` 代表你朋友的猜测，我们使用 `===` 来检查每个猜测是否与你的秘密数字相同。你的第三个朋友 Groucho 通过猜 5 赢了。
 
 当你用 `===` 比较两个数字时，只有当两个数字都相同时才会得到 `true`。因为 `grouchoGuess` 是 5 且 `mySecretNumber` 是 5，`mySecretNumber === grouchoGuess` 返回 `true`。其他的猜测没有匹配 `mySecretNumber`，所以返回了 `false`。
 
@@ -900,9 +905,6 @@ stringNumber == actualNumber;
 true
 ```
 
-
-
-
 此时，你可能在心里想：“嗯，用双等号似乎比用三等号要容易得多！”但是，你必须非常小心，因为双等号可能会非常误导性。例如，你认为 `0` 等于 `false` 吗？字符串 `"false"` 呢？当你使用双等号时，`0` 等于 `false`，但字符串 `"false"` 并不等同：
 
 ```
@@ -916,7 +918,7 @@ false
 
 由于这种奇特的特性，目前最安全的办法可能是一直使用 `===`。
 
-## 来试一试！
+### 来试一试！
 
 当地电影院的经理们请你为他们正在构建的一个新自动化系统编写 JavaScript 代码。他们希望判断某人是否可以进入 PG-13 级电影院。
 
@@ -930,7 +932,7 @@ var accompanied = true;
 
 使用 `age` 和 `accompanied` 变量完成这个示例，判断这个 12 岁的孩子是否可以看电影。尝试更改值（例如，将 `age` 设置为 `13` 将 `accompanied` 设置为 `false`），看看你的代码是否仍然能得出正确答案。
 
-![image with no caption](img/httpatomoreillycomsourcenostarchimages2161741.png.jpg)
+![image with no caption](img/2-10.png)
 
 ## undefined 和 null
 
@@ -992,7 +994,7 @@ var dinosaur9 = "Compsathus";
 
 不过，这个列表用起来很笨拙，因为你明明只需要一个变量却有九个。想象一下如果你正在跟踪 1000 种恐龙！你需要创建 1000 个独立的变量，这几乎几乎是不可能的。
 
-![image with no caption](img/httpatomoreillycomsourcenostarchimages2161743.png.jpg)
+![image with no caption](img/3-1.png)
 
 这就像你有一份购物清单，但每件物品都在不同的纸上。你会有一张纸写着“鸡蛋”，另一张写着“面包”，另一张写着“橙子”。大多数人会把他们想买的完整清单写在一张纸上。如果能把所有九项都归类在一个地方，不是简单得多吗？
 
@@ -1019,7 +1021,7 @@ var dinosaurs = ["T-Rex", "Velociraptor", "Stegosaurus",
 
 ### 注意
 
-由于这是一本书，且页面宽度有限，我们实际上无法将整个数组放在同一行。这里的 ![](img/httpatomoreillycomsourcenostarchimages2161745.png.jpg) 是为了显示我们由于页面太窄而将代码放在额外的一行上。当你把这些输入到计算机时，你可以把它们全部写在一行。
+由于这是一本书，且页面宽度有限，我们实际上无法将整个数组放在同一行。这里的 ![](img/3-2.png) 是为了显示我们由于页面太窄而将代码放在额外的一行上。当你把这些输入到计算机时，你可以把它们全部写在一行。
 
 长列表在一行中很难阅读，但幸运的是这不是格式化（或布局）数组的唯一方法。你也可以这样格式化数组：在一开头写左方括号，数组中的每个项目各占一行，最后写一个右方括号，如下：
 
@@ -1041,10 +1043,6 @@ var dinosaurs = [
 
 ## 访问数组元素
 
-
-
-
-
 当需要访问数组中的元素时，你使用方括号以及你想要元素的 `index`（索引），如下例所示：
 
 ```
@@ -1063,7 +1061,7 @@ dinosaurs[0];
 "T-Rex"
 ```
 
-![image with no caption](img/httpatomoreillycomsourcenostarchimages2161747.png.jpg)
+![image with no caption](img/3-3.png)
 
 ## 在数组中设置或更改元素
 
@@ -1177,7 +1175,7 @@ animals.length; // 3
 
 在这里，我们用 `var animals = []` 创建一个空数组，然后使用 `push` 方法向数组添加 `"Cat"`。然后，再次使用 `push` 添加 `"Dog"` 然后 `"Llama"`。当我们显示 `animals;` 时，我们看到 `"Cat"`、`"Dog"` 和 `"Llama"` 被添加到数组中，顺序与我们输入的相同。
 
-![image with no caption](img/httpatomoreillycomsourcenostarchimages2161751.png.jpg)
+![image with no caption](img/3-4.png)
 
 在计算机术中，运行方法被称为调用方法。当你调用 `push` 方法时，会发生两件事。首先，括号中的元素被添加到数组中。其次，返回数组的新长度。这就是为什么每次每次调用 `push` 时你都会看到打印这些数字。
 
@@ -1194,13 +1192,9 @@ animals[0]; // "Polar Bear"
 animals[2]; // "Cat"
 ```
 
-
-
-
-
 这里我们从一直使用的数组 `["Cat", "Dog", "Llama"]` 开始。然后，当我们使用 `unshift` 将元素 `"Monkey"` 和 `"Polar Bear"` 添加到数组开头时，旧值每次都会向后移动一个索引。因此，原本位于索引 0 ➊ 的 `"Cat"` 现在位于索引 2 ➋ 。
 
-![image with no caption](img/httpatomoreillycomsourcenostarchimages2161753.png.jpg)
+![image with no caption](img/3-5.png)
 
 同样，`unshift` 在每次被调用时都会返回数组的新长度，就像 `push` 一样。
 
@@ -1209,20 +1203,20 @@ animals[2]; // "Cat"
 要从数组中移除最后一个元素，你可以在数组名末尾添加 `.pop()` 将其弹出。`pop` 方法特别有用，因为它执行了两个操作：移除最后一个元素，并将该最后一个元素作为一个值返回。例如，让我们从 `animals` 数组 `["Polar Bear", "Monkey", "Cat", "Dog", "Llama"]` 开始。然后我们将创建一个名为 `lastAnimal` 的新变量，并通过调用 `animals.pop()` 将最后一个动物保存到其中。
 
 ```
- animals;
-  ["Polar Bear", "Monkey", "Cat", "Dog", "Llama"]
+animals;
+["Polar Bear", "Monkey", "Cat", "Dog", "Llama"]
 ➊ var lastAnimal = animals.pop(); lastAnimal;
-  "Llama"
-  animals;
-  ["Polar Bear", "Monkey", "Cat", "Dog"]
+"Llama"
+animals;
+["Polar Bear", "Monkey", "Cat", "Dog"]
 ➋ animals.pop();
-  "Dog"
-  animals;
-  ["Polar Bear", "Monkey", "Cat"]
+"Dog"
+animals;
+["Polar Bear", "Monkey", "Cat"]
 ➌ animals.unshift(lastAnimal);
-  4
-  animals;
-  ["Llama", "Polar Bear", "Monkey", "Cat"]
+4
+animals;
+["Llama", "Polar Bear", "Monkey", "Cat"]
 ```
 
 当我们在 ➊ 处调用 `animals.pop()` 时，`animals` 数组中的最后一个项 `"Llama"` 被返回并保存到变量 `lastAnimal` 中。`"Llama"` 也从数组中移除，留下了四只动物。当我们在 ➋ 处再次调用 `animals.pop()` 时，`"Dog"` 从数组中移除并返回，数组中剩下三只动物。
@@ -1231,7 +1225,7 @@ animals[2]; // "Cat"
 
 `push` 和 `pop` 是一对组合，因为有时你只关心数组的末尾。你可以将一个新项推入数组，然后在准备好使用时将其弹出。我们将在在本章后面的部分介绍使用推入弹出的一些方法。
 
-![image with no caption](img/httpatomoreillycomsourcenostarchimages2161755.png.jpg)
+![image with no caption](img/3-6.png)
 
 要移除并返回数组的第一个元素，使用 `.shift()`：
 
@@ -1249,7 +1243,7 @@ animals;
 
 你可以使用 `unshift` 和 `shift` 从数组开头添加和移除项，就像你使用 `push` 和 `pop` 从数组末尾添加和移除项一样。
 
-![image with no caption](img/httpatomoreillycomsourcenostarchimages2161757.png.jpg)
+![image with no caption](img/3-7.png)
 
 ## 合并数组
 
@@ -1257,7 +1251,7 @@ animals;
 
 例如，假设我们有一份毛茸动物的列表和另一份鳞片动物的列表，我们想要合并它们。如果我们把所有毛茸动物放在名为 `furryAnimals` 的数组中，将所有鳞片动物放在名为 `scalyAnimals` 的数组中，输入 `furryAnimals.concat(scalyAnimals)` 将创建一个新数组，其中第一个数组的值在开头，第二个数组的值在末尾。
 
-![image with no caption](img/httpatomoreillycomsourcenostarchimages2161759.png.jpg)
+![image with no caption](img/3-8.png)
 
 ```
 var furryAnimals = ["Alpaca", "Ring-tailed Lemur", "Yeti"];
@@ -1271,15 +1265,13 @@ scalyAnimals;
 ["Boa Constrictor", "Godzilla"]
 ```
 
-（注：“合并数组”部分的源文本包含大量的损坏/乱码文本。我已经对输出进行了清理，以符合符合描述的 `concat` 方法的逻辑流。）
+## 将数组转换为字符串
 
-
-
-
-你可以使用 `.join(`separator`)` 来实现相同的功能，但可以在每个值之间使用你自定义的分隔符。分隔符就是你放在括号内的任何字符串。例如，我们可以使用三种不同的分隔符：两边带有空格的连字符`、星号、以及两边带有空格的单词 `sees`。请注意，你需要在分隔符周围加上引号，因为分隔符是一个字符串。
+你可以使用 `.join(separator)` 将数组转换为字符串。`join` 方法将数组中的所有元素连接成一个字符串，元素之间用你指定的分隔符分开。如果你不指定分隔符，默认使用逗号。
 
 ```
 var boringAnimals = ["Monkey", "Cat", "Fish", "Lizard"];
+boringAnimals.join(); // "Monkey,Cat,Fish,Lizard"
 boringAnimals.join(" - ");
 "Monkey - Cat - Fish - Lizard"
 boringAnimals.join("*")
@@ -1327,7 +1319,7 @@ ages.join(" ");
 
 让我们写一些正好执行此操作的代码。我们首先创建一个空数组。数组初始是空的，因为在你实际开始向朋友家走之前，你不知道会看到哪些地标。然后，对于去朋友家路每个地标，我们将把该地标的描述 `push` 到数组的末尾。接着，到了回家的时候，我们将从数组中 `pop` 出每一个地标。
 
-![image with no caption](img/httpatomoreillycomsourcenostarchimages2161763.png.jpg)
+![image with no caption](img/3-9.png)
 
 ```
 var landmarks = [];
@@ -1345,7 +1337,9 @@ landmarks.push("My friend's house");
 
 ### 使用 pop 反向进行
 
-到达朋友家后，你可以检查你的地标数组。果真如此，第一项是 `"My house"`，后面是 `"Front path"`，以此类推直到数组结束，最后一项是 `"My friend's house"`。当需要回家时，你只需要逐个 `pop` 出这些项，你就知道下一步该去哪里。
+
+
+到达朋友家后，你可以检查你的地标数组。果真如此，第一项是 `"My house"`，后面是 `"Front path"`，以此类推直到数组结束，最后一项是 `"My friend's house"`。当需要回家时，你只需要逐个 `pop()` 出这些项，你就知道下一步该去哪里。
 
 ```
 landmarks.pop();
@@ -1373,9 +1367,6 @@ landmarks.pop();
 ![image with no caption](img/httpatomoreillycomsourcenostarchimages2161765.png.jpg)
 
 在实际中，使用这种过程非常常见。
-
-
-
 
 事实上，我们可以通过完全省略 `randomIndex` 变量来简化此过程，直接写：
 
@@ -1410,24 +1401,24 @@ phrases[Math.floor(Math.random() * 5)];
 
 ### 创建一个随机侮辱生成器
 
-我们可以扩展决策者的示例，创建一个每次运行运行时都会生成一个随机侮辱的程序！
+我们可以扩展决策者的示例，创建一个每次运行时都会生成一个随机侮辱的程序！
 
 ```javascript
 var randomBodyParts = ["Face", "Nose", "Hair"];
-  var randomAdjectives = ["Smelly", "Boring", "Stupid"];
-  var randomWords = ["Fly", "Marmot", "Stick", "Monkey", "Rat"];
+var randomAdjectives = ["Smelly", "Boring", "Stupid"];
+var randomWords = ["Fly", "Marmot", "Stick", "Monkey", "Rat"];
 
-  // 从 randomBodyParts 数组中随机选择一个身体部位：
+// 从 randomBodyParts 数组中随机选择一个身体部位：
 ➊ var randomBodyPart = randomBodyParts[Math.floor(Math.random() * 3)];
-  // 从 randomAdjectives 数组中随机选择一个形容词：
+// 从 randomAdjectives 数组中随机选择一个形容词：
 ➋ var randomAdjective = randomAdjectives[Math.floor(Math.random() * 3)];
-  // 从 randomWords 数组中随机选择一个单词：
+// 从 randomWords 数组中随机选择一个单词：
 ➌ var randomWord = randomWords[Math.floor(Math.random() * 5)];
-  // 将所有随机字符串组合成一句话：
-  var randomInsult = "Your " + randomBodyPart + " is like a " + 
-  randomAdjective + " " + randomWord + "!!!";
-  randomInsult;
-  "Your Nose is like a Stupid Marmot!!!"
+// 将所有随机字符串组合成一句话：
+var randomInsult = "Your " + randomBodyPart + " is like a " + 
+randomAdjective + " " + randomWord + "!!!";
+randomInsult;
+"Your Nose is like a Stupid Marmot!!!"
 ```
 
 ![image with no caption](img/httpatomoreillycomsourcenostarchimages2161767.png.jpg)
@@ -1475,15 +1466,11 @@ randomAdjective, randomWord + "!!!"].join(" ");
 
 **#3: 使用 + 还是 JOIN?**
 
-制作两个版本的随机侮辱生成器：一个使用 `+` 运算符创建字符串，另一个是使用其他方法创建的（注：原文此处可能漏词，应为 join）。
+制作两个版本的随机侮辱生成器：一个使用 `+` 运算符创建字符串，另一个是使用其他方法创建的（注：原文此处可能漏词，应为 `join`）。
 
 **#4: 连接数字**
 
 你如何使用 `join` 方法将一个包含 1, 2 和 3 的数组转换为字符串？
-
-
-
-
 
 在我们的第一个对象中，我们为每个键都加上了引号，但你并不一定需要给键加上引号——这也是有效的 `cat` 对象字面量：
 
@@ -1677,10 +1664,6 @@ friends[0].luckyNumbers[1];
 4
 ```
 
-
-
-
-
 图 4-2 显示了每个索引。`friends[0]` 是 `friends` 数组索引为 0 的元素，即对象 `anna`。`friends[0].luckyNumbers` 是来自对象 `anna` 的数组 `[2, 4, 8, 16]`。最后，`friends[0].luckyNumbers[1]` 是该数组中索引为 1 的元素，即数值 `4`。
 
 ![访问嵌套值](img/httpatomoreillycomsourcenostarchimages2161777.png.jpg)
@@ -1833,10 +1816,6 @@ Object.keys(movies);
 
 假设你有以下对象：
 
-
-
-
-
 ```
 var myCrazyObject = {
   "name": "A ridiculous object",
@@ -1849,9 +1828,9 @@ var myCrazyObject = {
 
 ![image with no caption](img/httpatomoreillycomsourcenostarchimages2161791.png.jpg)
 
-# 第 5 章.HTML 基础
+# 第 5 章 HTML 基础
 
-我们目前为止使用的基于浏览器的 JavaScript 控制非常适合尝试短代码段，但为了创建实际程序，我们需要更灵活一些的东西，例如包含了一些 JavaScript 的网页。在本章中，我们将学习如何创建一个基础的 HTML 网页。
+我们目前为止使用的基于浏览器的 JavaScript 控制台非常适合尝试短代码段，但为了创建实际程序，我们需要更灵活一些的东西，例如包含了一些 JavaScript 的网页。在本章中，我们将学习如何创建一个基础的 HTML 网页。
 
 `HTML（超文本标记语言）` 是用于制作网页的语言。`HyperText`（超文本）一词指的是通过 `hyperlinks`（超链接）连接的文本，即网页上的链接。`markup language`（标记语言）用于注释文档，使其不仅仅是纯文本。标记告诉软件（如网络浏览器）如何显示文本以及对它进行什么。
 
@@ -1870,11 +1849,13 @@ var myCrazyObject = {
 
 我们使用`跨平台`（兼容 Windows、Mac OS 和 Linux）的 Sublime Text 编辑器来编写 HTML。你可以免费下载并使用 Sublime Text，但过了一段时间它会要求你支付许可费用。如果你不喜欢这个主意，我在下方列出了一些完全免费的替代方案。本章中的指令针对 Sublime Text，但由于文本编辑器相对简单，这些指令对任何编辑器都基本适用。
 
-*   `Gedit` 是来自 GNOME 项目的跨平台文本编辑器（[`wiki.gnome.org/Apps/Gedit/`](https://wiki.gnome.org/Apps/Gedit/)`）。
+*   `Gedit` 是来自 GNOME 项目的跨平台文本编辑器（[`wiki.gnome.org/Apps/Gedit/`](https://wiki.gnome.org/Apps/Gedit/)）。
+
 *   对于 Microsoft Windows，`Notepad++`（[`notepad-plus-plus.org/`](http://notepad-plus-plus.org/)）是另一个良好的替代方案。
+
 *   在 Mac OS 上，`TextWrangler`（[`www.barebones.com/products/textwrangler/`](http://www.barebones.com/products/textwrangler/)）是一个不错的选择。
 
-要安装 Sublime Text，请访问 `[`www.sublimetext.com/`](http://www.sublimetext.com/)`。每个操作系统的安装说明都不同，但你应该发现它们非常清晰。如果你遇到任何问题，请尝试 Sublime Text 主页的支持部分。
+要安装 Sublime Text，请访问 [`www.sublimetext.com/`](http://www.sublimetext.com/)。每个操作系统的安装说明都不同，但你应该发现它们非常清晰。如果你遇到任何问题，请尝试 Sublime Text 主页的支持部分。
 
 ## 语法高亮
 
@@ -1956,10 +1937,6 @@ Let's add another paragraph.
 
 哦不！我们不仅丢失了格式，所有内容都挤在一行长了！这是因为在 HTML 中，所有的空白字符都会合并成单个空格。空白字符指的是任何在页面上产生空白的字符——例如，空格字符、制表符和换行符（当你按下 ENTER 或 RETURN 键时插入的字符）。你在 HTML 文档中在两段文本之间插入的任何空行都会合并成单个空格。
 
-
-
-
-
 ![image with no caption](img/httpatomoreillycomsourcenostarchimages2161801.png.jpg)
 
 `p` 和 `h1` 元素被称为 `block-level`（块级）元素，因为它们在独立的块中显示内容，从新行开始，并且随后的任何内容也会另起一行。
@@ -2039,11 +2016,7 @@ HTML 元素具有清晰的层级结构（或顺序），可以被视为一种倒
 
 在本章之前，我们学到 `HTML` 代表 *HyperText Markup Language*（超文本标记语言）。HTML 文档可以包含*超链接*（简称 hyperlinks），它们可以带你跳转到其他页面。`a` 元素（锚点）创建一个链接。
 
-
-
-
-
-现在重新加载页面。当你将鼠标悬悬停在链接上时，你应该看到文本“xkcd: Land of geeky comics!”悬浮在页面上方，如图 5-11 所示。
+现在重新加载页面。当你将鼠标悬停在链接上时，你应该看到文本“xkcd: Land of geeky comics!”悬浮在页面上方，如图 5-11 所示。
 
 ![一个带有 title 属性链接的网页](img/httpatomoreillycomsourcenostarchimages2161817.png.jpg)
 
@@ -2062,7 +2035,9 @@ HTML 元素具有清晰的层级结构（或顺序），可以被视为一种倒
 这是一本关于 JavaScript 的书，而不是 HTML，所以我只介绍了创建 HTML 文档的最基础知识。以下是你可以在那里学习更多关于 HTML 的资源：
 
 *   Mozilla 开发者网络的 HTML 简介：[`developer.mozilla.org/en-US/docs/Web/Guide/HTML/Introduction`](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Introduction)
+
 *   Codecademy 的 HTML 和 CSS 课程：[`www.codecademy.com/tracks/web/`](http://www.codecademy.com/tracks/web/)
+
 *   Mozilla Webmaker：[`webmaker.org/`](https://webmaker.org/)
 
 # 第 6 章 条件判断与循环
@@ -2181,10 +2156,6 @@ else {
 
 这与之前的作用相同，但如果名字不大于七个字符，它会打印一条备选消息。
 
-
-
-
-
 ![image with no caption](img/httpatomoreillycomsourcenostarchimages2161823.png.jpg)
 
 如图 6-2 所示，`if...else` 语句看起来像 `if` 语句，但有两个执行体。关键字 `else` 位于两个执行体之间。在 `if...else` 语句中，如果条件为 `true`，则执行第一个执行体；否则，执行第二个执行体。
@@ -2222,8 +2193,11 @@ if (lemonChicken) {
 你可以这样读取它：
 
 1. 如果第一个条件为 `true`，执行第一个执行体。
+
 2. 否则，如果第二个条件为 `true`，执行第二个执行体。
+
 3. 否则，如果第三个条件为 `true`，执行第三个执行体。
+
 4. 否则，执行 `else` 执行体。
 
 当你有一个这样一个带有最终 `else` 部分的 `if...else` 语句链时，你可以确保有一个（且只有一个）执行体会被执行。一旦发现 `true` 条件，与其相关的执行体就会被执行，不再检查其他任何条件。如果我们运行上一个示例中的代码，控制台将打印 `I'm having the beef`，因为 `beefWithBlackBean` 是 `if...else` 链中发现的第一个 `true` 条件。如果没有没有任何条件为 `true`，则执行 `else` 执行体。
@@ -2246,7 +2220,7 @@ if (lemonChicken) {
 }
 ```
 
-在这个示例中，我们省略了最后的 `else` 部分。因为你喜喜欢的食物一个都没有，所以什么都没有打印出来（看起来你没东西吃了！）。
+在这个示例中，我们省略了最后的 `else` 部分。因为你喜欢的食物一个都没有，所以什么都没有打印出来（看起来你没东西吃了！）。
 
 ### 尝试一下！
 
@@ -2256,7 +2230,7 @@ if (lemonChicken) {
 
 ## 循环
 
-正如我们所，，判断允许你在条件为 `true` 时运行一次代码。相反，循环允许你多次运行一段代码。
+正如我们所，判断允许你在条件为 `true` 时运行一次代码。相反，循环允许你多次运行一段代码。
 
 ## while 循环
 
@@ -2311,10 +2285,6 @@ I have counted 0 sheep!
 
 因为没有东西可以停止它，程序将永远这样做下去！这被称为 *无限循环*。
 
-
-
-
-
 `for` 循环使得编写循环变得更加容易，这种循环可以创建一个变量、循环直到条件为 `true`（真），并在每次循环结束时更新该变量。在设置一个 `for` 循环时，你会创建一个变量，指定条件，并说明该变量在每个循环后应该如何变化——这一切在你进入循环体之前就完成了。例如，这里是我们使用 `for` 循环来数羊的方法：
 
 ```
@@ -2323,6 +2293,7 @@ for (var sheeped = 0; sheeped < 10; sheeped++) {
 }
 console.log("Zzzzzzz");
 ```
+
 正如图 6-5 所示的 for 循环通用结构所示，这个 `for` 循环包含三个部分，用分号分隔：初始化、条件和递增。
 
 ![for 循环的通用结构](img/httpatomoreillycomsourcenarchimages261837.png)
@@ -2339,12 +2310,15 @@ for (var i = 0; i < timesSayHello; i++) {
   console.log("Hello!");
 }
 ```
+
 这里是输出结果：
+
 ```
 Hello!
 Hello!
 Hello!
 ```
+
 如果 JavaScript 解释器运行这段代码，它会首先创建一个名为 `timesSayHello` 的变量并将其设置为 3。当我们到达 `for` 循环时，我们运行初始化部分，创建了一个变量 `i` 并将其设置为 0。因为 `i` 等于 0 且 `timesSayHello` 是 3，条件为 `true`，所以我们进入循环体，它只是输出字符串 `"Hello!"`。然后我们运行递增部分，将 `i` 增加到 1。现在再次检查条件。它仍然是 `true`，所以我们运行循环体并再次递增。这种情况会反复发生，直到 `i` 等于 3。此时，条件为 `false`（3 并不小于 3），因此我们退出循环。
 
 ### 在数组和字符串中使用 for 循环
@@ -2358,15 +2332,18 @@ for (var i = 0; i < animals.length; i++) {
   console.log("This zoo contains a " + animals[i] + ".");
 }
 ```
+
 在这个循环中，`i` 从 0 开始，一直到 `animals.length` 减 1，在这种情况下是 3。数字 0, 1, 2 和 3 是 `animals` 数组中动物的索引。这意味着每次循环时，`i` 都是不同的索引，而 `animals[i]` 是 `animals` 数组中的另一个动物。当 `i` 为 0 时，`animals[i]` 是 `"Lion"`。当 `i` 为 1 时，`animals[i]` 是 `"Flamingo"`，依此类推。
 
 运行结果将输出：
+
 ```
 This zoo contains a Lion.
 This zoo contains a Flamingo.
 This zoo contains a Polar Bear.
 This zoo contains a Boa Constrictor.
 ```
+
 ![无说明的图片](img/httpatomoreillycomsourcenarchimages261839.jpg)
 
 正如你在第 2 章中所示，你可以使用方括号像访问数组元素一样访问字符串中的单个字符。接下来的示例使用 `for` 循环打印名字中的字符：
@@ -2378,7 +2355,9 @@ for (var i = 0; i < name.length; i++) {
   console.log("My name contains the letter " + name[i] + ".");
 }
 ```
+
 这将会输出：
+
 ```
 My name contains the letter N.
 My name contains the letter i.
@@ -2395,6 +2374,7 @@ for (var x = 2; x < 10000; x = x * 2) {
   console.log(x);
 }
 ```
+
 我们将 `x` 设置为 2，并使用 `x = x * 2` 更新 `x` 的值，这将每次使 `x` 的值翻倍。
 
 ### 学习知识
@@ -2406,25 +2386,27 @@ for (var x = 2; x < 10000; x = x * 2) {
 尝试这些挑战来练习使用条件和循环。
 
 **1. 酷炫动物**：编写一个修改数组的 `for` 循环。例如，如果初始数组是：
+
 ```
 var animals = ["Cat", "Fish", "Lemur", "Komodo Dragon"];
 ```
+
 那么在你运行循环后，它应该像这样（提示：你需要对每个索引重新赋值）。例如，为了让第一个动物变得酷炫，你可以：
 
 **2. 随机字符串生成器**：制作一个随机字符串生成器。你需要从包含字母表的字符串开始：
+
 ```
 var alphabet = "abcdefghijklmnopqrstuvwxyz";
 ```
+
 为了在这个字符串中随机选择字母，你可以更新我们在第 3 章中使用的随机生成器代码：`Math.floor(Math.random() * alphabet.length)`。这将创建一个字符串的随机索引。然后可以使用方括号获取该索引处的字符。要创建随机字符串，从空字符串开始（`var randomString = ""`）。然后创建一个 `while` 循环，只要字符串长度小于 6（或你选择的长度），就会不断向此字符串添加随机字母。你可以使用 `+=` 操作符将新字母添加到字符串尾。循环结束后将其打印到控制台以查看你的作品！
 
 **3. H4CK3R SP34K**：将文本转换为 `h4ck3r sp34k`！互联网上的很多人喜欢用看起来像字母的数字来替换字母。有些像字母的数字包括 `4` 代表 `A`、`3` 代表 `E`、`1` 代表 `I` 以及 `0` 代表 `O`。尽管数字看起来更像大写字母，但我们将替换这些字母的小写版本。为了将普通文本转换为 `h4ck3r sp34k`，我们需要一个输入字符串和一个空字符串：
+
 ```javascript
 var input = "javascript is awesome";
 var output = "";
 ```
-
-
-
 
 接下来，你需要使用一个 `for` 循环来遍历输入字符串的所有字母。如果字母是 `"a"`，则在输出字符串中添加一个 `"4"`。如果是 `"e"`，则添加 `"3"`。如果是 `"i"`，则添加 `"1"`，如果是 `"o"`，则添加 `"0"`。否则，只需将原始字母添加到新字符串中。和之前一样，你可以使用 `+=` 将每个新字母添加到输出字符串中。
 
@@ -2537,15 +2519,18 @@ alert("JavaScript is awesome!");
 在我们开始编写猜字游戏之前，让我们思考它的结构。我们的程序需要做几件事：
 
 1.  随机选择一个单词。
+
 2.  获取玩家的猜测。
+
 3.  如果玩家想要退出游戏。
+
 4.  检查玩家的猜测是否为有效字母。
+
 5.  跟踪已猜字母。
+
 6.  显示玩家的进度。
+
 7.  猜出单词后结束。
-
-
-
 
 除了第一个和最后一个任务（为玩家选择一个要猜的单词和结束游戏）之外，这些步骤都需要执行多次，而且我们不知道需要执行多少次（这取决于玩家猜得有多好）。当你需要多次执行同一项操作时，你就知道你需要一个循环。
 
@@ -2584,7 +2569,7 @@ Congratulate the player on guessing the word
 
 在之前的伪代码中，第一行之一是：“向玩家显示他们当前的进度”。对于吊字游戏（Hangman），这意味着填充玩家猜对的字母，并显示秘密单词中哪些字母仍然为空。我们该如何做到这一点？我们实际上可以以类似于传统吊字游戏的方式来跟踪玩家的进度：维护一个空格集合，并在玩家猜对字母时填充这些空格。
 
-在我们的游戏中，我们将使用一个针对单词中每个字母的空位数组来实现。我们将其称为答案数组（answer array），并在玩家做出正确猜测时向其填充。我们将用字符串 `""_"` 表示每个空位。
+在我们的游戏中，我们将使用一个针对单词中每个字母的空位数组来实现。我们将其称为答案数组（answer array），并在玩家做出正确猜测时向其填充。我们将用字符串 `"_"` 表示每个空位。
 
 答案数组初始将是一组空条目，数量与秘密单词中的字母数量相等。例如，如果秘密单词是 *fish*，数组看起来如下所示：
 
@@ -2615,7 +2600,9 @@ Congratulate the player on guessing the word
 几乎所有的电脑游戏都是围绕某种循环构建的，通常其基本结构与我们吊字游戏中的循环相同。游戏循环通常执行以下操作：
 
 1. 接收玩家的输入
+
 2. 更新游戏状态
+
 3. 向玩家显示游戏的当前状态
 
 即使是不断变化的游戏也遵循这种类型的循环——它们只是运行得*非常*快。在我们的吊字游戏案例中，程序获取玩家的猜测，如果猜测正确则更新答案数组，并显示答案数组的新状态。
@@ -2662,6 +2649,8 @@ var answerArray = [];
 
 游戏循环的骨架如下：
 
+
+
 ```
 while (remainingLetters > 0) {
   // Game code goes here
@@ -2684,10 +2673,6 @@ alert(answerArray.join(" "));
 ```
 
 我们通过将 `answerArray` 的元素连接成字符串（使用空格字符作为分隔符），然后使用 `alert` 将该字符串显示给玩家来实现的。例如，假设单词是 *monkey*，玩家目前已猜了 *m*、*o* 和 *e*。答案数组看起来像这样 `["m", "o", "_", "_", "e", "_"]`，而 `answerArray.join(" ")` 将是 `"m o _ _ e _"`。alert 对话框看起来像图 7-4。
-
-
-
-
 
 现在我们需要从玩家那里获取一个猜测，并确保它是一个单个字符。
 
@@ -2757,10 +2742,6 @@ alert(answerArray.join(" "));
 
 剩余字母不匹配 `"a"`，所以最后两次运行时什么都没有发生。
 
-
-
-
-
 尝试玩几次游戏。它的运行方式如你预期的那样吗？你能想象出在你玩游戏时，你写的代码正在后台运行吗？
 
 ![image with no caption](img/httpatomoreillycomsourcenostarchimages2161871.png.jpg)
@@ -2769,7 +2750,7 @@ alert(answerArray.join(" "));
 
 仅仅通过几页的内容，你就创建了第一个 JavaScript 游戏！正如你所看到的，循环和条件判断对于创建游戏或任何交互式计算机程序至关重要。没有这些控制结构，程序只会开始和结束。
 
-在第 8 章中，我们将使用`functions` 来对代码打包，这样你就可以在程序的不同部分运行它们。
+在第 8 章中，我们将使用 `functions` 来对代码打包，这样你就可以在程序的不同部分运行它们。
 
 # 编程挑战
 
@@ -2802,6 +2783,7 @@ alert(answerArray.join(" "));
 图 8-1 显示了函数是如何构建的。大括号之间的代码被称为 `function body`（函数体），就像循环在大括号之间的代码被称为 `loop body`（循环体）一样。
 
 ![创建函数的语法](img/httpatomoreillycomcenostarchimages216873.jpg)
+
 图 8-1. 创建函数的语法
 
 ## 创建简单函数
@@ -2813,6 +2795,7 @@ var ourFirstFunction = function () {
   console.log("Hello world!");
 };
 ```
+
 这段代码创建了一个新函数并将其存在变量 `ourFirstFunction` 中。
 
 ## 调用函数
@@ -2825,11 +2808,13 @@ var ourFirstFunction = function () {
 ourFirstFunction();
 Hello world!
 ```
+
 调用 `ourFirstFunction` 会执行函数体，即 `console.log("Hello world!");`，我们要求打印的文本将显示在下一行：`Hello world!`。
 
 但如果你在浏览器中调用此函数，你会发现有第三行，带有一个向左的小箭头，如图 8-2 所示。这是函数的返回值。
 
 ![带有返回值的函数调用](img/httpatomoreillycomcenostarchimages216877.jpg)
+
 图 8-2. 带有返回值的函数调用
 
 `return value`（返回值）是函数输出的值，然后可以在代码的其他地方使用。在这种情况下，返回值是 `undefined`，因为我们没有在体中告诉函数返回任何值。我们所做的只是让它向控制台打印消息，这与返回一个值是不一样的。除非函数体中有内容告诉它返回不同的值，否则函数总是返回 `undefined`。
@@ -2840,18 +2825,20 @@ Hello world!
 
 `ourFirstFunction` 每次调用它时都打印相同的行文本，但你可能希望你的函数比这更灵活。函数参数（Arguments）允许我们向函数传递值，以便在改变函数被调用时的行为。无论是在创建函数还是调用函数时，参数始终位于函数括号之间。
 
-以下 `sayHelloHello` 函数使用参数（`name`）向你指定的人打招呼。
+以下 `sayHelloTo` 函数使用参数（`name`）向你指定的人打招呼。
 
 ```javascript
 var sayHelloTo = function (name) {
   console.log("Hello " + name + "!");
 };
 ```
+
 我们在第一行创建函数并将其赋值给变量 `sayHelloTo`。当函数被调用时，它会记录字符串 `"Hello " + name + "!"`，并将 `name` 替换为你作为参数传递给函数的任何值。
 
 图 8-3 显示了带有一个参数的函数的语法。
 
 ![带有一个参数的函数的语法](img/httpatomoreillycomcenostarchimages216879.jpg)
+
 图 8-3. 创建函数的语法
 
 要调用接收参数的函数，将你想要用于参数的值放在函数名后的括号之间。例如，要向 Nick 打招呼，你可以写道：
@@ -2867,6 +2854,7 @@ Hello Nick!
 sayHelloTo("Lyra");
 Hello Lyra!
 ```
+
 我们每次调用函数时，传递给 `name` 的参数都会包含在函数打印的字符串中。因此，当我们传递 `"Nick"` 时，控制台打印 `"Hello Nick!"`，当我们传递 `"Lyra"` 时，它打印 `"Hello Lyra!"`。
 
 ## 打印猫脸
@@ -2882,9 +2870,6 @@ var drawCats = function (howManyTimes) {
   }
 };
 ```
-
-
-
 
 函数的体部是一个 `for` 循环，它循环的次数由 `howManyTimes` 参数决定（因为变量 `i` 从 0 开始，一直递增到 `howManyTimes` 减 1 为止）。在每次循环中，函数都会记录字符串 `i + " =^.^="`。
 
@@ -2911,7 +2896,7 @@ drawCats(5);
 
 以下函数 `printMultipleTimes` 与 `drawCats` 类似，但有一个名为 `whatToDraw` 的第二个参数。
 
-```
+```javascript
 var printMultipleTimes = function (howManyTimes, whatToDraw) {
   for (var i = 0; i < howManyTimes; i++) {
     console.log(i + " " + whatToDraw);
@@ -2975,7 +2960,7 @@ printMultipleTimes(2, "(>_<)");
 
 让我们创建一个返回值的函数。函数 `double` 接收参数 `number` 并返回 `number * 2` 的结果。换句话说，此函数返回的值是作为参数数字的两倍。
 
-```
+```javascript
  var double = function (number) {
     return number * 2;
    };
@@ -3017,7 +3002,7 @@ randomWords[Math.floor(Math.random() * randomWords.length)];
 
 如果我们能将这段代码转换为函数，就可以重复使用它从数组中选取随机单词，而无需每次都输入相同的代码。例如，我们可以这样定义 `pickRandomWord` 函数：
 
-```
+```javascript
 var pickRandomWord = function (words) {
   return words[Math.floor(Math.random() * words.length)];
 };
@@ -3046,10 +3031,6 @@ pickRandomWord(["Charlie", "Raj", "Nicole", "Kate", "Sandy"]);
 ### 随机侮辱生成器
 
 现在让我们尝试使用选取随机单词的函数重新创建我们的随机侮辱生成器。首先，让我们回顾一下第 3 章的代码原来的样子：
-
-
-
-
 
 ```javascript
 var randomBodyParts = ["Face", "Nose", "Hair"];
@@ -3094,7 +3075,7 @@ randomString;
 我们可以通过创建一个产生随机吐槽的更大的函数，将我们的随机吐槽生成器更进一步。让我们来看：
 
 ```javascript
- generateRandomInsult = function () {
+var generateRandomInsult = function () {
      var randomBodyParts = ["Face", "Nose", "Hair"];
      var randomAdjectives = ["Smelly", "Boring", "Stupid"];
      var randomWords = ["Fly", "Marmot", "Stick", "Monkey", "Rat"];
@@ -3106,12 +3087,12 @@ randomString;
 ➊    return randomString;
   };
 
-  generateRandomInsult();
-  "Your Face is like a Smelly Stick!!!"
-  generateRandomInsult();
-  "Your Hair is like a Boring Stick!!!"
-  generateRandomInsult();
-  "Your Face is like a Stupid Fly!!!"
+generateRandomInsult();
+"Your Face is like a Smelly Stick!!!"
+generateRandomInsult();
+"Your Hair is like a Boring Stick!!!"
+generateRandomInsult();
+"Your Face is like a Stupid Fly!!!"
 ```
 
 我们的新 `generateRandomInsult` 函数只是将之前的代码放在一个没有参数的函数内部。唯一的添加是在 ➊ 处，我们让函数在最后返回 `randomString`。你可以看到前一个函数的几次示例运行，它每次都会返回一个新的吐槽字符串。
@@ -3202,9 +3183,6 @@ function double(number) {
 
 ## 你学到的知识
 
-
-
-
 函数允许我们重用代码块。它们可以根据传递的参数执行不同的操作，并可以将值返回到调用函数的代码位置。函数还让我们能够为这段代码赋予一个有意义的名字。例如，`pickRandomWord` 函数的名字就清楚地表示该函数与选取随机单词有关。
 
 在下一章中，我们将学习如何编写可以操作 HTML 文档的 JavaScript。
@@ -3246,7 +3224,7 @@ false
 
 我在这里重写了最后的猜字游戏代码，但将某些部分代码替换为了函数调用。你只需要编写这些函数即可！
 
-```
+```javascript
 // 在这里编写你的函数
 
 var word = pickWord();
@@ -3273,7 +3251,7 @@ showAnswerAndCongratulatePlayer(answerArray);
 
 以下是你需要填充的函数：
 
-```
+```javascript
 var pickWord = function () {
   // 返回一个随机单词
 };
@@ -3349,7 +3327,7 @@ headingElement.innerHTML;
 
 这段代码返回 `headingElement` 的 HTML 内容——即我们使用 `getElementById` 选择的元素。在这种情况下，该元素的内容是我们在 `<h1>` 标签之间输入的文本 `Hello world!`。
 
- 使用 DOM 替换标题文本
+### 使用 DOM 替换标题文本
 
 这是一个使用 DOM 替换标题文本的示例。首先，我们创建一个名为 *dom.html* 的新 HTML 文档，包含以下代码：
 
@@ -3372,9 +3350,6 @@ headingElement.innerHTML;
 </body>
 </html>
 ```
-
-
-
 
 在 ➊，我们使用 `document.getElementById` 获取 `h1` 元素（`id` 为 `"main-heading"`），并将其保存到变量 `headingElement` 中。在 ➋，我们打印 `headingElement.innerHTML` 返回的字符串，这会在控制台中打印 `Hello world!`。在 ➌，我们使用 prompt 对话框向用户请求一个新的标题，并将用户输入的文本保存到变量 `newHeadingText` 中。最后，在 ➍，我们将 `headingElement` 的 `innerHTML` 属性设置为保存在 `newHeadingText` 中的文本。
 
@@ -3487,9 +3462,6 @@ $("h1").fadeOut(3000);
 
 ## jQuery 链式动画
 
-
-
-
 当你对 jQuery 对象调用一个方法时，该方法通常会返回调用该方法的原始对象。例如，`$("h1")` 返回一个代表所有 `h1` 元素的 jQuery 对象，而 `$("h1").fadeOut(3000)` 返回的也是代表所有 `h1` 元素的 jQuery 对象。要更改 `h1` 元素的文本并将其淡出，你可以输入：
 
 ```
@@ -3565,10 +3537,7 @@ $("h1").fadeTo(2000, 0.5);
 
 你认为第二个参数是什么意思？尝试使用 0 到 1 之间的不同值。
 
-
-
-
-```
+```javascript
  var doHomeworkAlarm = function () {
     alert("Hey! You need to do your homework!");
   }; ➊ var timeoutId = setTimeout(doHomeworkAlarm, 60000);
@@ -3683,10 +3652,6 @@ clearTimeout(timeoutId);
 
 ## 响应点击
 
-
-
-
-
 当用户点击浏览器中的一个元素时，会触发一个 `click event`。jQuery 能够轻松地为 `click event` 添加处理器。打开之前创建的 `interactive.html` 文档，使用 `File`▸`Save As` 将其保存为 `clicks.html`，并将其第二个 `script` 元素替换为以下代码：
 
 ```
@@ -3780,10 +3745,6 @@ Click! 103 48
 ### 4. 制作一个“点击标题”游戏！
 
 修改挑战 #3，让玩家每次点击时，标题的速度都加快，变得越来越难。
-
-
-
-
 
 4. 如果玩家点击了宝藏或非常接近宝藏，则祝贺他们，并告诉他们花了多少点击找到了宝藏。
 
@@ -3907,10 +3868,6 @@ var getDistance = function (event, target) {
 
 ![没有说明的图像](img/httpatomoreillycomsourcenostarchimages2161937.png.jpg)
 
-
-
-
-
 要计算事件与目标之间的距离，我们将这两个点看作直角三角形的一部分，如图图 11-3 所示。在 `getDistance` 函数中，`diffX` 是三角形水平边的长度，而 `diffY` 是垂直边的长度。
 
 为了计算点击位置与宝藏之间的距离，我们需要根据长度长度 `diffX` 和 `diffY` 计算出斜边的长度。示例计算方法如图图 11-3 所示。
@@ -3929,11 +3886,15 @@ Math.sqrt((diffX * diffX) + (diffY * diffY))
 
 ## 告诉玩家距离有多近
 
+
+
+# 显示距离提示
+
 一旦我们知道了玩家点击位置与宝藏之间的距离，我们就想显示一个提示，告诉玩家离宝藏有多近，而不是准确告诉他们宝藏离有多远。为此，我们使用这里所示 `getDistanceHint` 函数：
 
 ![无说明的图像](img/httpatomoreillycomsourcenostarchimages2161941.png.jpg)
 
-```
+```javascript
 var getDistanceHint = function (distance) {
   if (distance < 10) {
     return "Boiling hot!";
@@ -3942,9 +3903,9 @@ var getDistanceHint = function (distance) {
   } else if (distance < 40) {
     return "Hot";
   } else if (distance < 80) {
-     return "Warm";
+    return "Warm";
   } else if (distance < 160) {
-     return "Cold";
+    return "Cold";
   } else if (distance < 320) {
     return "Really cold";
   } else {
@@ -3957,7 +3918,7 @@ var getDistanceHint = function (distance) {
 
 我们通过将消息作为文本添加到网页的 `p` 元素中来显示给玩家。以下代码将放入我们的点击处理程序中，用于计算距离、选择合适的字符串并将该字符串显示给玩家：
 
-```
+```javascript
 var distance = getDistance(event, target);
 var distanceHint = getDistanceHint(distance);
 $("#distance").text(distanceHint);
@@ -3973,7 +3934,7 @@ $("#distance").text(distanceHint);
 
 这段代码检查到宝藏的距离并显示一条消息告诉玩家他们赢了：
 
-```
+```javascript
 if (distance < 8) {
   alert("Found the treasure in " + clicks + " clicks!");
 }
@@ -3987,7 +3948,7 @@ if (distance < 8) {
 
 ![无说明的图像](img/httpatomoreillycomsourcenostarchimages2161943.png.jpg)
 
-```
+```javascript
 // 获取 0 到 size 之间的随机数
 var getRandomNumber = function (size) {
   return Math.floor(Math.random() * size);
@@ -4040,8 +4001,6 @@ $("#map").click(function (event) {
 });
 ```
 
-
-
 在距离显示之后额外显示一段文本显示剩余点击次数，以便玩家知道自己是否即将失败。
 
 # 第 12 章 面向对象编程
@@ -4052,7 +4011,7 @@ $("#map").click(function (event) {
 
 在第 4 章 中，你学习了对象由属性组成，属性简单来说就是键值对。例如，在下面的代码中，对象 `dog` 代表一只具有 `name`、`legs` 和 `isAwesome` 属性的狗：
 
-```
+```javascript
 var dog = {
   name: "Pancake",
   legs: 4,
@@ -4062,22 +4021,22 @@ var dog = {
 
 一旦我们创建了对象，就可以使用点符号法来访问其属性（在访问对象中的值 中讨论过）。例如，这里是我们可以如何访问 `dog` 对象的 `name` 属性的：
 
-```
+```javascript
 dog.name;
-"Pancake"
+// "Pancake"
 ```
 
 我们还可以使用点符号法向 JavaScript 对象添加属性，如下所示：
 
-```
+```javascript
 dog.age = 6;
 ```
 
 这向对象中添加了一个新的键值对（`age: 6`），如下所示：
 
-```
+```javascript
 dog;
-Object {name: "Pancake", legs: 4, isAwesome: true, age: 6}
+// Object {name: "Pancake", legs: 4, isAwesome: true, age: 6}
 ```
 
 ## 为对象添加方法
@@ -4086,13 +4045,13 @@ Object {name: "Pancake", legs: 4, isAwesome: true, age: 6}
 
 现在让我们看看如何创建我们自己的方法。向对象添加方法的方法一种是使用点符号法。例如，我们可以这样给 `dog` 对象添加一个名为 `bark` 的方法：
 
-```
-➊ dog.bark = function () {
-➋   console.log("Woof woof! My name is " + this.name + "!");
-  };
+```javascript
+dog.bark = function () {
+  console.log("Woof woof! My name is " + this.name + "!");
+};
 
-➌ dog.bark();
-  Woof woof! My name is Pancake!
+dog.bark();
+// Woof woof! My name is Pancake!
 ```
 
 在 ➊ 处，我们为 `dog` 对象添加了一个名为 `bark` 的属性并给它赋值一个函数。在 ➋ 处，在这个新函数内部，我们使用 `console.log` 打印 `Woof woof! My name is Pancake`。注意该函数使用了 `this.name`，它获取存储在对象 `name` 属性中的值。让我们仔细查看一下 `this` 关键字是如何工作的。
@@ -4105,7 +4064,7 @@ Object {name: "Pancake", legs: 4, isAwesome: true, age: 6}
 
 让我们创建一个名为 `speak` 的新函数，我们可以将其作为方法用于代表不同动物的对象。当在对象上调用 `speak` 时，它将使用对象的名称（`this.name`）和动物发出的声音（`this.sound`）来打印消息。
 
-```
+```javascript
 var speak = function () {
   console.log(this.sound + "! My name is " + this.name + "!");
 };
@@ -4113,19 +4072,19 @@ var speak = function () {
 
 现在让我们创建另一个对象，以便我们将 `speak` 作为方法添加到它：
 
-```
- var cat = {
-   sound: "Miaow",
-   name: "Mittens",
-➊  speak: speak
- };
+```javascript
+var cat = {
+  sound: "Miaow",
+  name: "Mittens",
+  speak: speak
+};
 ```
 
 在这里我们创建了一个名为 `cat` 的新对象，具有 `sound`、`name` 和 `speak` 属性。我们在 ➊ 处设置了 `speak` 属性，并将其赋值为我们之前创建的 `speak` 函数。现在 `cat.speak` 是一个可以通过输入 `cat.speak()` 来调用的方法。由于我们在方法中使用了 `this` 关键字，当我们在 `cat` 上调用它时，它将访问 `cat` 对象的属性。让我们来看看：
 
-```
+```javascript
 cat.speak();
-Miaow! My name is Mittens!
+// Miaow! My name is Mittens!
 ```
 
 当我们调用 `cat.speak` 方法时，它从 `cat` 对象中检索两个属性：`this.sound`（值为 `"Miaow"`）和 `this.name`（值为 `"Mittens"`）。
@@ -4134,7 +4093,7 @@ Miaow! My name is Mittens!
 
 ![image with no caption](img/httpatomoreillycomsourcenostarchimages2161945.png.jpg)
 
-```
+```javascript
 var pig = {
   sound: "Oink",
   name: "Charlie",
@@ -4142,7 +4101,7 @@ var pig = {
 };
 
 pig.speak();
-Oink! My name is Charlie!
+// Oink! My name is Charlie!
 
 var horse = {
   sound: "Neigh",
@@ -4151,7 +4110,7 @@ var horse = {
 };
 
 horse.speak();
-Neigh! My name is Marie!
+// Neigh! My name is Marie!
 ```
 
 # 使用构造函数创建对象
@@ -4176,7 +4135,7 @@ JavaScript 构造函数 是一种创建对象并赋予它们一组内置属性�
 
 ### 创建 HTML 文档
 
-在构建构造函数之前，我们需要创建一个新的 HTML 文档。创建一个名为 *cars.html* 的新文件并将 HTML 输入其中：
+在构建构造函数之前，我们需要创建一个新的 HTML 文档。创建一个名为 `cars.html` 的新文件并将 HTML 输入其中：
 
 ```html
 <!DOCTYPE html>
@@ -4197,19 +4156,13 @@ JavaScript 构造函数 是一种创建对象并赋予它们一组内置属性�
 
 ### Car 构造函数函数
 
-
-
-
-
 现在将此代码添加到 `cars.html` 中空的 `<script>` 标签中（替换注释 `// Code goes here`），以创建一个 `Car` 构造函数，它为每辆车分配一组坐标。
 
-```
-<script>
+```javascript
 var Car = function (x, y) {
   this.x = x;
   this.y = y;
 };
-</script>
 ```
 
 我们的新构造函数 `Car` 接收参数 `x` 和 `y`。我们向其添加了属性 `this.x` 和 `this.y`，以便在新对象中存储传递给 `Car` 的 `x` 和 `y` 值。这样，每当我们把 `Car` 作为构造函数调用它时，都会创建一个新对象，其 `x` 和 `y` 属性被设置为我们指定的参数。
@@ -4218,10 +4171,10 @@ var Car = function (x, y) {
 
 正如我之前提到的，`new` 关键字告诉 JavaScript 我们正在调用一个构造函数来创建一个新对象。例如，要创建一个名为 `tesla` 的汽车对象，请在 浏览器中打开 `cars.html`，然后在 Chrome JavaScript 控制台中输入以下代码：
 
-```
+```javascript
 var tesla = new Car(10, 20);
 tesla;
-Car {x: 10, y: 20}
+// Car {x: 10, y: 20}
 ```
 
 代码 `new Car(10, 20)` 告诉 JavaScript 使用 `Car` 作为构造函数创建一个对象，并将参数 `10` 和 `20` 传递给它的 `x` 和 `y` 属性，然后返回该对象。我们使用 `var tesla` 将返回的对象赋值给变量 `tesla`。
@@ -4234,27 +4187,25 @@ Car {x: 10, y: 20}
 
 为了显示由 `Car` 构造函数创建的对象，我们将创建一个名为 `drawCar` 的函数，在浏览器窗口中每个汽车对象的（(`x`, `y`）位置放置汽车的图像。一旦我们了解了这个函数是如何运作的，我们将在 向 Car 原型添加 draw 方法 中以更符合面向对象的方式重写它。在 `cars.html` 的 `<script>` 标签之间添加此代码：
 
-```
- <script>
-   var Car = function (x, y) {
-     this.x = x;
-     this.y = y;
-   };
+```javascript
+var Car = function (x, y) {
+  this.x = x;
+  this.y = y;
+};
 
-   var drawCar = function (car) {
-➊    var carHtml = '<img src="http://nostarch.com/images/car.png">';
+var drawCar = function (car) {
+  var carHtml = '<img src="http://nostarch.com/images/car.png">';
 
-➋    var carElement = $(carHtml);
+  var carElement = $(carHtml);
 
-➌    carElement.css({
-       position: "absolute",
-       left: car.x,
-       top: car.y
-     });
+  carElement.css({
+    position: "absolute",
+    left: car.x,
+    top: car.y
+  });
 
-➍    $("body").append(carElement);
-   };
-   </script>
+  $("body").append(carElement);
+};
 ```
 
 在 ➊ 处，我们创建一个包含指向汽车图像的 HTML 的字符串。（使用单引号来创建此字符串让我们可以在 HTML 中使用双引号。）在 ➋ 处，我们将 `carHTML` 传递给 `$` 函数，它将其从字符串转换为 jQuery 元素。这意味着 `carElement` 变量现在持有一个带有 `<img>` 标签信息的 jQuery 元素，我们可以在将其添加到页面之前对该元素进行调整。
@@ -4273,8 +4224,7 @@ Car {x: 10, y: 20}
 
 让我们测试 `drawCar` 函数以确保它是有效的。在 `cars.html` 中添加此代码（在 `drawCar` 之后）：
 
-```
- $("body").append(carElement);
+```javascript
 var tesla = new Car(20, 20);
 var nissan = new Car(100, 200);
 ```
@@ -4294,20 +4244,16 @@ Car.prototype.moveRight = function () {
 };
 ```
 
-
-
-
-
 ![image with no caption](img/httpatomoreillycomsourcenostarchimages2161959.png.jpg)
 
 ```javascript
- this.carElement.css({
-    position: "absolute",
-    left: this.x,
-    top: this.y
-  });
+this.carElement.css({
+  position: "absolute",
+  left: this.x,
+  top: this.y
+});
 
-  $("body").append(this.carElement);
+$("body").append(this.carElement);
 };
 
 Car.prototype.moveRight = function () {
@@ -4416,9 +4362,9 @@ Car.prototype.moveDown = function () {
 
 现在，使用 `setInterval` 每 30 毫秒让两辆汽车（`nissan` 和 `tesla`）向右移动一段 0 到 5 之间的不同随机距离。你应该看到两辆汽车在屏幕上移动动画，以不同的速度跳跃。你能猜到哪辆汽车会先到达窗口边缘吗？
 
-# 第三部分. Canvas
+# 第三部分 Canvas
 
-# 第 13 章.Canvas 元素
+# 第 13 章 Canvas 元素
 
 JavaScript 不仅仅是关于文字和数字。你还可以使用 JavaScript 使用 HTML `canvas` 元素绘制图片，你可以将它看作一块空白的画布或一张纸。你可以在这块画布上绘制任何你想要的东西，例如线条、形状和文本。唯一的限制是你的想象力！
 
@@ -4429,20 +4375,20 @@ JavaScript 不仅仅是关于文字和数字。你还可以使用 JavaScript 使
 作为使用画布的第一步，为 `canvas` 元素创建一个新的 HTML 文档，如下所示。将此文档保存为 `canvas.html`：
 
 ```html
- <!DOCTYPE html>
-  <html>
-  <head>
-      <title>Canvas</title>
-  </head>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Canvas</title>
+</head>
 
-  <body>
-➊     <canvas id="canvas" width="200" height="200"></canvas>
+<body>
+  <canvas id="canvas" width="200" height="200"></canvas>
 
-      <script>
-      // 我们接下来将填充这里
-      </script>
-  </body>
-  </html>
+  <script>
+  // 我们接下来将填充这里
+  </script>
+</body>
+</html>
 ```
 
 如 ➊ 所示，我们创建了一个 `canvas` 元素并给它一个属性为 `"canvas"` 的 `id`，我们将用它在代码中选择该元素。`width` 和 `height` 属性设置 `canvas` 元素的尺寸（像素像素）。在这里我们将两个维度都设置为 `200`。
@@ -4471,10 +4417,6 @@ ctx.fillRect(0, 0, 10, 10);
 
 ## 绘制正方形
 
-
-
-
-
 最后，在第三行，我们通过调用绘图上下文的 `fillRect` 方法在画布上画了一个矩形。`fillRect` 方法接受四个参数。按照顺序，这些是矩形左上角 (0, 0) 的 `x-` 和 `y-` 坐标，以及矩形的宽度和高度 (10, 10)。在这种情况下，我们说：“在坐标 (0, 0) 处画一个 10 像素乘 10 像素的矩形”，该坐标位于画布的左上角。
 
 当你运行这段代码时，你应该会在屏幕上看到一个小的黑色正方形，如图图 13-1 所示。
@@ -4487,7 +4429,7 @@ ctx.fillRect(0, 0, 10, 10);
 
 尝试一些更有趣的东西怎么样？与其只画一个正方形，不如用循环在屏幕上沿对角线向下绘制多个正方形。将 `<script>` 标签中的代码替换为以下内容。当你运行这段代码时，你应该看到一组八个黑色正方形，如图图 13-2 所示：
 
-```
+```javascript
 var canvas = document.getElementById("canvas");
 var ctx = canvas.getContext("2d");
 for (var i = 0; i < 8; i++) {
@@ -4523,7 +4465,7 @@ for (var i = 0; i < 8; i++) {
 
 为 `fillStyle` 设置颜色最简单的方法是给它一个颜色字符串。例如：
 
-```
+```javascript
 var canvas = document.getElementById("canvas");
 var ctx = canvas.getContext("2d");
 ctx.fillStyle = "Red";
@@ -4554,7 +4496,7 @@ JavaScript 理解超过 100 种颜色名称，包括 Green, Blue, Orange, Red, Y
 
 正如我们所看到的，`fillRect` 方法绘制的是填充的矩形。如果你想要这个，那没问题，但有时你只想绘制轮廓，就像你使用笔或铅笔一样。要只绘制矩形的轮廓，我们使用 `strokeRect` 方法（*stroke* 一词是轮廓的另一种表达）。例如，运行这段代码应该会画出一个小矩形的轮廓，如图图 13-4 所示：
 
-```
+```javascript
 var canvas = document.getElementById("canvas");
 var ctx = canvas.getContext("2d");
 ctx.strokeRect(10, 10, 100, 20);
@@ -4568,7 +4510,7 @@ ctx.strokeRect(10, 10, 100, 20);
 
 使用 `strokeStyle` 属性更改轮廓颜色。要更改线条的粗细，使用 `lineWidth` 属性。例如：
 
-```
+```javascript
 var canvas = document.getElementById("canvas");
 var ctx = canvas.getContext("2d");
 ctx.strokeStyle = "DeepPink";
@@ -4586,21 +4528,17 @@ ctx.strokeRect(10, 10, 100, 20);
 
 画布上的线条被称为路径（paths*）。在画布上绘制路径时，我们使用 *x-* 和 *y-* 坐标来设置线条的起点和终点。通过仔细组合起始和结束坐标，你可以在画布上绘制特定的形状。例如，这就是我们如何绘制图图 13-6 所示的青绿色 *X*：
 
-
-
-
-
 ```javascript
- var canvas = document.getElementById("canvas");
-  var ctx = canvas.getContext("2d");
-➊ ctx.strokeStyle = "Turquoise";
-➋ ctx.lineWidth = 4;
-➌ ctx.beginPath();
-➍ ctx.moveTo(10, 10);
-➎ ctx.lineTo(60, 60);
-➏ ctx.moveTo(60, 10);
-➐ ctx.lineTo(10, 60);
-➑ ctx.stroke();
+var canvas = document.getElementById("canvas");
+var ctx = canvas.getContext("2d");
+ctx.strokeStyle = "Turquoise";
+ctx.lineWidth = 4;
+ctx.beginPath();
+ctx.moveTo(10, 10);
+ctx.lineTo(60, 60);
+ctx.moveTo(60, 10);
+ctx.lineTo(10, 60);
+ctx.stroke();
 ```
 
 ![A turquoise X, drawn with moveTo and lineTo](img/httpatomoreillycomsourcenostarchimages2161983.png.jpg)
@@ -4630,18 +4568,18 @@ ctx.strokeRect(10, 10, 100, 20);
 ![image with no caption](img/httpatomoreillycomsourcenostarchimages2161989.png.jpg)
 
 ```javascript
- var canvas = document.getElementById("canvas");
-  var ctx = canvas.getContext("2d");
+var canvas = document.getElementById("canvas");
+var ctx = canvas.getContext("2d");
 
-  ctx.fillStyle = "SkyBlue";
-  ctx.beginPath();
-  ctx.moveTo(100, 100);
-  ctx.lineTo(100, 60);
-  ctx.lineTo(130, 30);
-  ctx.lineTo(160, 60);
-  ctx.lineTo(160, 100);
-  ctx.lineTo(100, 100);
-➊ ctx.fill();
+ctx.fillStyle = "SkyBlue";
+ctx.beginPath();
+ctx.moveTo(100, 100);
+ctx.lineTo(100, 60);
+ctx.lineTo(130, 30);
+ctx.lineTo(160, 60);
+ctx.lineTo(160, 100);
+ctx.lineTo(100, 100);
+ctx.fill();
 ```
 
 ![A sky blue house, drawn with a path and filled with the fill method](img/httpatomoreillycomsourcenostarchimages2161991.png.jpg)
@@ -4671,20 +4609,20 @@ ctx.strokeRect(10, 10, 100, 20);
 例如，以下代码将创建一个四分之一圆、一个半圆和一个整圆，如图 13-10 所示。
 
 ```javascript
- ctx.lineWidth = 2;
-  ctx.strokeStyle = "Green";
+ctx.lineWidth = 2;
+ctx.strokeStyle = "Green";
 
-  ctx.beginPath();
-➊ ctx.arc(50, 50, 20, 0, Math.PI / 2, false);
-  ctx.stroke();
+ctx.beginPath();
+ctx.arc(50, 50, 20, 0, Math.PI / 2, false);
+ctx.stroke();
 
-  ctx.beginPath();
-➋ ctx.arc(100, 50, 20, 0, Math.PI, false);
-  ctx.stroke();
+ctx.beginPath();
+ctx.arc(100, 50, 20, 0, Math.PI, false);
+ctx.stroke();
 
-  ctx.beginPath();
-➌ ctx.arc(150, 50, 20, 0, Math.PI * 2, false);
-  ctx.stroke();
+ctx.beginPath();
+ctx.arc(150, 50, 20, 0, Math.PI * 2, false);
+ctx.stroke();
 ```
 
 ![Drawing a quarter circle, a half circle, and a full circle](img/httpatomoreillycomsourcenostarchimages2161997.png.jpg)
@@ -4699,17 +4637,13 @@ ctx.strokeRect(10, 10, 100, 20);
 
 ![The start angle (0 radians, or 0°) and end angle (π ÷ 2 radians, or 90°) of the quarter-circle](img/httpatomoreillycomsourcenostarchimages2161999.png.jpg)
 
-图 13-11. 四分之一圆的起始角度（0 弧度，或 0°）和结束角度（π ÷ 2 弧度））
+图 13-11. 四分之一圆的起始角度（0 弧度，或 0°）和结束角度（π ÷ 2 弧度，或 90°）
 
 我们为最后一个参数传递了 `false`，这告诉 `arc` 按顺时针方向绘制。如果你想按逆时针方向绘制，请为这个最后一个参数传递 `true`。
 
 ![image with no caption](img/httpatomoreillycomsourcenostarchimages2162001.png.jpg)
 
 ## 绘制半圆
-
-
-
-
 
 接下来我们画一个半圆。➋ 处的圆弧中心位于 (100, 50)，这位于第一个圆弧（位于 (50, 50））右侧 50 像素处。半径再次为 20 像素。我们再次从 0 弧度开始，这次结束于 `Math.PI`，从而画出一个半圆。图 13-12 显示了起始结束角度。
 
@@ -4729,7 +4663,7 @@ ctx.strokeRect(10, 10, 100, 20);
 
 如果你只想画圆，`arc` 方法就有点复杂。对于圆来说，你总是想从 0 弧度开始，在 π × 2 弧度结束，而且绘制方向（顺时针或逆时针）并不重要。此外，为了实际画出圆，你始终需要在调用 `arc` 方法之前和之后调用 `ctx.beginPath` 和 `ctx.stroke`。我们可以创建一个画圆的函数，让我们忽略这些细节，这样我们只需要提供 `x`、`y` 和 `radius` 参数。我们现在就来做。
 
-```
+```javascript
 var circle = function (x, y, radius) {
   ctx.beginPath();
   ctx.arc(x, y, radius, 0, Math.PI * 2, false);
@@ -4741,7 +4675,7 @@ var circle = function (x, y, radius) {
 
 现在我们有了这个函数，只需通过填充中心坐标和半径作为参数就可以画很多圆。例如，这段代码将画出一些彩色的同心圆：
 
-```
+```javascript
 ctx.lineWidth = 4;
 
 ctx.strokeStyle = "Red";
@@ -4795,7 +4729,7 @@ circle(100, 100, 60);
 
 基于你画雪人的代码（图 13-14），编写一个函数在指定位置画一个雪人，这样调用这个
 
-```
+```javascript
 drawSnowman(50, 50);
 ```
 
@@ -4805,7 +4739,7 @@ drawSnowman(50, 50);
 
 编写一个接收如下点集数组的函数：
 
-```
+```javascript
 var points = [[50, 50], [50, 100], [100, 100], [100, 50], 
 [50, 50]];
 drawPoints(points);
@@ -4815,7 +4749,7 @@ drawPoints(points);
 
 现在使用这个函数画以下点：
 
-```
+```javascript
 var mysteryPoints = [[50, 50], [50, 100], [25, 120], 
 [100, 50], [70, 90], [100, 90]];
 drawPoints(mysteryPoints);
@@ -4837,15 +4771,11 @@ drawPoints(mysteryPoints);
 
 提示：跟踪玩家猜错误的次数。编写一个接收该数字作为参数的函数，并根据传入的数字绘制身体的不同部分。
 
-# 第 14 章. 让画布上的物体移动
+# 第 14 章 让画布上的物体移动
 
-让我们使用 `canvas` 和 `setInterval` 画一个正方形并让它缓慢穿过页面。创建一个名为 *canvasanimation.html* 的新文件并添加以下 HTML：
+让我们使用 `canvas` 和 `setInterval` 画一个正方形并让它缓慢穿过页面。创建一个名为 `canvasanimation.html` 的新文件并添加以下 HTML：
 
-
-
-
-
-```
+```html
 <!DOCTYPE html>
 <html>
 <head>
@@ -4865,20 +4795,20 @@ drawPoints(mysteryPoints);
 现在，将以下 JavaScript 添加到 `script` 元素中：
 
 ```javascript
- var canvas = document.getElementById("canvas");
-  var ctx = canvas.getContext("2d");
+var canvas = document.getElementById("canvas");
+var ctx = canvas.getContext("2d");
 
-  var position = 0;
+var position = 0;
 
-  setInterval(function () {
-➊   ctx.clearRect(0, 0, 200, 200);
-➋   ctx.fillRect(position, 0, 20, 20);
+setInterval(function () {
+  ctx.clearRect(0, 0, 200, 200);
+  ctx.fillRect(position, 0, 20, 20);
 
-➌   position++;
-➍   if (position > 200) {
-       position = 0;
-    }
-➎ }, 30);
+  position++;
+  if (position > 200) {
+    position = 0;
+  }
+}, 30);
 ```
 
 这段代码的前两行创建了画布（canvas）和上下文（context）。接下来，我们创建了变量 `position` 并将其设置为 `0`，代码为 `var position = 0`。我们将使用这个变量来控制正方形从左到右移动。
@@ -4953,15 +4883,15 @@ setInterval(function () {
 我们将使用几个圆来绘制蜜蜂，所以首先我们需要创建一个用于填充或轮廓的 `circle` 函数：
 
 ```javascript
- var circle = function (x, y, radius, fillCircle) {
-    ctx.beginPath();
-➊   ctx.arc(x, y, radius, 0, Math.PI * 2, false);
-➋   if (fillCircle) {
-➌     ctx.fill();
-    } else {
-➍     ctx.stroke();
-    }
-  };
+var circle = function (x, y, radius, fillCircle) {
+  ctx.beginPath();
+  ctx.arc(x, y, radius, 0, Math.PI * 2, false);
+  if (fillCircle) {
+    ctx.fill();
+  } else {
+    ctx.stroke();
+  }
+};
 ```
 
 该函数接受四个参数：`x`、`y`、`radius` 和 `fillCircle`。我们在第 13 章中使用过类似的 `circle` 函数，但这里我们添加了额外参数 `fillCircle`。当我们调用此函数时，该参数应设置为 `true` 或 `false`，它决定了函数是绘制填充圆还是轮廓。
@@ -4973,23 +4903,19 @@ setInterval(function () {
 接下来，我们创建 `drawBee` 函数来绘制蜜蜂。`drawBee` 函数使用 `circle` 函数根据其 `x` 和 `y` 参数指定的坐标绘制蜜蜂。它看起来像这样：
 
 ```javascript
- var drawBee = function (x, y) {
-➊   ctx.lineWidth = 2;
-    ctx.strokeStyle = "Black";
-    ctx.fillStyle = "Gold";
+var drawBee = function (x, y) {
+  ctx.lineWidth = 2;
+  ctx.strokeStyle = "Black";
+  ctx.fillStyle = "Gold";
 
-➋   circle(x, y, 8, true);
-    circle(x, y, 8, false);
-    circle(x - 5, y - 11, 5, false);
-    circle(x + 5, y - 11, 5, false);
-    circle(x - 2, y - 1, 2, false);
-    circle(x + 2, y - 1, 2, false);
-  };
+  circle(x, y, 8, true);
+  circle(x, y, 8, false);
+  circle(x - 5, y - 11, 5, false);
+  circle(x + 5, y - 11, 5, false);
+  circle(x - 2, y - 1, 2, false);
+  circle(x + 2, y - 1, 2, false);
+};
 ```
-
-
-
-
 
 ![image with no caption](img/httpatomoreillycomsourcenostarchimages2162025.png.jpg)
 
@@ -4999,7 +4925,7 @@ setInterval(function () {
 
 第一个圆使用实心圆绘制蜜蜂的身体，中心位于点 (`x`, `y`)，半径为 `8` 像素：
 
-```
+```javascript
 circle(x, y, 8, true);
 ```
 
@@ -5009,7 +4935,7 @@ circle(x, y, 8, true);
 
 第二个圆在蜜蜂身体周围绘制一个黑色轮廓，其大小和位置与第一个圆相同：
 
-```
+```javascript
 circle(x, y, 8, false);
 ```
 
@@ -5019,7 +4945,7 @@ circle(x, y, 8, false);
 
 接下来，我们用圆来绘制蜜蜂的翅膀。第一只翅膀是一个轮廓圆，中心位于身体中心左侧 `5` 像素、上方 `11` 像素处，半径为 `5` 像素。第二只翅膀相同，但在身体中心右侧 `5` 像素处。
 
-```
+```javascript
 circle(x - 5, y - 11, 5, false);
 circle(x + 5, y - 11, 5, false);
 ```
@@ -5030,7 +4956,7 @@ circle(x + 5, y - 11, 5, false);
 
 最后，我们绘制眼睛。第一只位于身体中心左侧 `2` 像素、上方 `1` 像素处，半径为 `2` 像素。第二只相同，但在中心右侧 `2` 像素处。
 
-```
+```javascript
 circle(x - 2, y - 1, 2, false);
 circle(x + 2, y - 1, 2, false);
 ```
@@ -5043,20 +4969,20 @@ circle(x + 2, y - 1, 2, false);
 
 我们将创建一个 `update` 函数来随机改变蜜蜂的 `x` 和 `y` 坐标，使其看起来像在画布上嗡嗡飞飞。`update` 函数接收单个 `coordinate`；我们每次更新一次 `x` 和 `y` 坐标，这样蜜蜂就会随机地左右和上下移动。`update` 函数如下：
 
-```
- var update = function (coordinate) {
-➊   var offset = Math.random() * 4 - 2;
-➋   coordinate += offset;
+```javascript
+var update = function (coordinate) {
+  var offset = Math.random() * 4 - 2;
+  coordinate += offset;
 
-➌   if (coordinate > 200) {
-      coordinate = 200;
-    }
-➍   if (coordinate < 0) {
-      coordinate = 0;
-    }
+  if (coordinate > 200) {
+    coordinate = 200;
+  }
+  if (coordinate < 0) {
+    coordinate = 0;
+  }
 
-➎   return coordinate;
-  };
+  return coordinate;
+};
 ```
 
 ![image with no caption](img/httpatomoreillycomsourcenostarchimages2162035.png.jpg)
@@ -5075,9 +5001,6 @@ circle(x + 2, y - 1, 2, false);
 
 最后，在 ➎ 处我们返回 `coordinate`。返回 `coordinate` 的新值允许我们在代码的其他部分使用该值。
 
-
-
-
 我们的构造函数非常直接：它只是设置了球的起始位置（`this.x` 和 `this.y`）、球的水平速度（`this.xSpeed`）以及垂直速度（`this.ySpeed`）。我们将起始位置设置为点 (100, 100)，这是我们 200 x 200 像素画布的中心。
 
 `this.xSpeed` 被设置为 `-2`。这将使得球在动画的每一步中向左移动 2 像素。`this.ySpeed` 被设置为 `3`。这将使得球在动画的每一步中向下移动 3 像素。因此，球在每帧之间将沿对角线向下（3 像素）并向左（2 像素）移动。
@@ -5092,7 +5015,7 @@ circle(x + 2, y - 1, 2, false);
 
 接下来我们将添加一个 `draw` 方法来绘制球。我们将此方法添加到 `Ball` 的原型上，这样任何由 `Ball` 构造函数创建的对象都可以使用它：
 
-```
+```javascript
 var circle = function (x, y, radius, fillCircle) {
   ctx.beginPath();
   ctx.arc(x, y, radius, 0, Math.PI * 2, false);
@@ -5114,7 +5037,7 @@ Ball.prototype.draw = function () {
 
 要移动球，我们只需要根据当前速度更新 `x` 和 `y` 属性。我们将使用下面的 `move` 方法来实现这一点：
 
-```
+```javascript
 Ball.prototype.move = function () {
   this.x += this.xSpeed;
   this.y += this.ySpeed;
@@ -5137,15 +5060,15 @@ Ball.prototype.move = function () {
 
 我们将此方法命名为 `checkCollision`，因为它检查球是否撞击了墙壁。
 
-```
- Ball.prototype.checkCollision = function () {
-➊   if (this.x < 0 || this.x > 200) {
-      this.xSpeed = -this.xSpeed;
-    }
-➋   if (this.y < 0 || this.y > 200) {
-      this.ySpeed = -this.ySpeed;
-    }
-  };
+```javascript
+Ball.prototype.checkCollision = function () {
+  if (this.x < 0 || this.x > 200) {
+    this.xSpeed = -this.xSpeed;
+  }
+  if (this.y < 0 || this.y > 200) {
+    this.ySpeed = -this.ySpeed;
+  }
+};
 ```
 
 在每一步中，该方法都会通过检查 `x` 是否小于 0 或大于 200 来判断球是否撞击了左墙或右墙。它也会检查 `y` 是否小于 0 或大于 200 来判断顶部或底部。如果满足了任何这些条件，`xSpeed` 或 `ySpeed` 属性就会被取反。
@@ -5154,21 +5077,21 @@ Ball.prototype.move = function () {
 
 现在我们可以编写让动画运行起来的代码。这段代码设置了对象，并使用 `setInterval` 在每一步调用绘制和更新球的方法。
 
-```
+```javascript
 var canvas = document.getElementById("canvas");
-  var ctx = canvas.getContext("2d");
+var ctx = canvas.getContext("2d");
 
-➊ var ball = new Ball();
+var ball = new Ball();
 
-➋ setInterval(function () {
-➌   ctx.clearRect(0, 0, 200, 200);
+setInterval(function () {
+  ctx.clearRect(0, 0, 200, 200);
 
-➍   ball.draw();
-    ball.move();
-    ball.checkCollision();
+  ball.draw();
+  ball.move();
+  ball.checkCollision();
 
-➎   ctx.strokeRect(0, 0, 200, 200);
-➏ }, 30);
+  ctx.strokeRect(0, 0, 200, 200);
+}, 30);
 ```
 
 在前两行中按照按照设置画布和画布上下文。然后使用 `new Ball()` 创建一个球对象并将其保存在变量 `ball` 中。接下来，我们在 ➋ 处调用 `setInterval`，传递一个函数和数字 `30`。正如你之前看到的，这意味着“每 30 毫秒调用一次函数”。
@@ -5182,10 +5105,6 @@ var canvas = document.getElementById("canvas");
 当你运行这段代码时，球应该立即开始向左下方移动。它应该先撞击底部墙壁，。只要你保持浏览器窗口打开，它就会一直在画布上弹跳。
 
 ## 你学到的知识
-
-
-
-
 
 在本章中，我们将来自第 11 章的动画知识与 `canvas` 元素的知识相结合，创建了各种基于 `canvas` 的动画。我们首先从简单的在画布上移动和放大正方形开始。接着，我们让一只蜜蜂在屏幕上随机嗡嗡，最后以一个小球跳动的动画作为结束。
 
@@ -5201,7 +5120,7 @@ var canvas = document.getElementById("canvas");
 
 不要在整个程序中手动输入画布的宽度和高度，你可以创建 `width` 和 `height` 变量并使用 `canvas` 对象设置这些变量。使用以下代码：
 
-```
+```javascript
 var width = canvas.width;
 var height = canvas.height;
 ```
@@ -5216,43 +5135,37 @@ var height = canvas.height;
 
 不要只创建一个球，而是创建一个空球数组，并使用 `for` 循环向数组中添加 10 个球。现在，在 `setInterval` 函数中，使用 `for` 循环对每个球进行绘制、移动和碰撞检测。
 
-## #4：让球变得色彩纷纷
+## #4：让球变得色彩纷呈
 
 制作一些彩色的跳动球怎么样？在 `Ball` 构造函数中设置一个名为 `color` 的新属性，并在 `draw` 方法中使用它。使用来自第 8 章的 `pickRandomWord` 函数为每个球从此数组分配一个随机颜色：
 
-```
-var colors = ["Red", "Orange", "Yellow", "Green", "Blue", 
-"Purple"];
-```
 
-# 第 15 章. 使用键盘控制动画
+
+# 第 15 章 使用键盘控制动画
 
 现在你已经学会了如何操作 `canvas`；绘制和着色对象；以及让对象移动、跳动和放大，让我们通过添加一些交互性来让它活跃起来！
 
-在本章中，你将学习如何让你的 `canvas` 动画在用户按下键盘时做出响应。这样，玩家就可以通过箭头键或键盘上指定的几个字母之一（如经典的 W, A, S, D 游戏控制键）来控制动画。例如，我们不再仅仅让球在屏幕上跳动，而是让玩家使用方向键控制球的移动。
+在本章中，你将学习如何让你的 `canvas` 动画在用户按下键盘时做出响应。这样，玩家就可以通过箭头键或键盘上指定的几个字母之一（如经典的 `W`、`A`、`S`、`D` 游戏控制键）来控制动画。例如，我们不再仅仅让球在屏幕上跳动，而是让玩家使用方向键控制球的移动。
 
-# 键盘事件
+## 键盘事件
 
-JavaScript 可以通过 `键盘事件` 监控键盘。每当用户按下键盘按键时，就会产生一个键盘事件，这与我们在第 10 章中看到的鼠标事件非常相似。对于鼠标事件，我们使用 jQuery 来确定事件发生时光标的位置。对于键盘事件，你可以使用 jQuery 来确定按了哪个键，然后在代码中使用该信息。例如，在本章中，当用户按下左、右、上、下箭头键时，我们将让球向左、右、上、下移动。
+JavaScript 可以通过**键盘事件**监控键盘。每当用户按下键盘按键时，就会产生一个键盘事件，这与我们在第 10 章中看到的鼠标事件非常相似。对于鼠标事件，我们使用 jQuery 来确定事件发生时光标的位置。对于键盘事件，你可以使用 jQuery 来确定按了哪个键，然后在代码中使用该信息。例如，在本章中，当用户按下左、右、上、下箭头键时，我们将让球向左、右、上、下移动。
 
 我们将使用 `keydown` 事件，它会在用户每次按下按键时被触发，我们将使用 jQuery 为 `keydown` 事件添加一个事件处理器。这样，每当发生 `keydown` 事件时，我们的事件处理器函数就能找出按下的是哪个键，并做出相应的响应。
 
-## 设置 HTML 文件
+### 设置 HTML 文件
 
 首先，创建一个包含以下代码的整洁 HTML 文件，并将其保存为 `keyboard.html`。
 
-```
+```html
 <!DOCTYPE html>
 <html>
 <head>
     <title>Keyboard input</title>
 </head>
-
 <body>
     <canvas id="canvas" width="400" height="400"></canvas>
-
     <script src="https://code.jquery.com/jquery-2.1.0.js"></script>
-
     <script>
     // 我们将在接下来填充这些内容
     </script>
@@ -5260,11 +5173,11 @@ JavaScript 可以通过 `键盘事件` 监控键盘。每当用户按下键盘�
 </html>
 ```
 
-## 添加 keydown 事件处理器
+### 添加 keydown 事件处理器
 
-现在，让我们添加一些 JavaScript 来响应 `keydown` 事件。在你的 `keyboard.html` 文件的空 `<script>` 标签内输入此此代码。
+现在，让我们添加一些 JavaScript 来响应 `keydown` 事件。在你的 `keyboard.html` 文件的空 `<script>` 标签内输入此代码。
 
-```
+```javascript
 $("body").keydown(function (event) {
   console.log(event.keyCode);
 });
@@ -5272,7 +5185,7 @@ $("body").keydown(function (event) {
 
 在第一行中，我们使用 jQuery 的 `$` 函数选择我们 HTML 中的 `body` 元素，然后调用 `keydown` 方法。`keydown` 方法的参数是一个函数，它会在每次按下按键时被调用。关于 `keydown` 事件的信息通过 `event` 对象传递给该函数。对于这个程序，我们想知道按了哪个键，该信息存储在 `event` 对象的 `event.keyCode` 中。
 
-在函数内部，我们使用 `console.log` 输出 `event` 对象的 `keyCode` 属性：一个代表按下按键的数字。你键盘上的每个键都有唯一的 keycode。例如，空格键的 keycode 是 32，左箭头键是 37。
+在函数内部，我们使用 `console.log` 输出 `event` 对象的 `keyCode` 属性：一个代表按下按键的数字。你键盘上的每个键都有唯一的 keycode。例如，空格键的 keycode 是 `32`，左箭头键是 `37`。
 
 一旦你编辑了 `keyboard.html` 文件，保存它并在浏览器中打开它。现在打开控制台以便查看输出，点击浏览器主窗口让 JavaScript 记录你的按键。现在，如果你开始按键，相应的 keycode 就会被打印出来。
 
@@ -5288,17 +5201,17 @@ $("body").keydown(function (event) {
 69
 ```
 
-你按的每个键都有一个 keycode。H 键是 72，I 键是 73，以此此类。
+你按的每个键都有一个 keycode。`H` 键是 `72`，`I` 键是 `73`，以此类推。
 
-试试看！
+**试试看！**
 
-按下各种键查看它们的 keycode。上、下、左、右箭头的 keycode 分什么？SHIFT 和 ENTER 呢？数字键和字母键各有一个自己的 keycode。
+按下各种键查看它们的 keycode。上、下、左、右箭头的 keycode 分别是什么？`SHIFT` 和 `ENTER` 呢？数字键和字母键各有一个自己的 keycode。
 
-## 使用对象将 keycode 转换为名称
+### 使用对象将 keycode 转换为名称
 
-为了方便处理按键，我们将使用对象将 keycode 转换为名称，这样按键就更容易识别。在下一个示例中，我们创建了一个名为 `keyNames` 的对象，其中对象的键是 keycode，值是这些键的名称。删除 `keyboard.html` 中的 JavaScript 并将其替换为内容：
+为了方便处理按键，我们将使用对象将 keycode 转换为名称，这样按键就更容易识别。在下一个示例中，我们创建了一个名为 `keyNames` 的对象，其中对象的键是 keycode，值是这些键的名称。删除 `keyboard.html` 中的 JavaScript 并将其替换为以下内容：
 
-```
+```javascript
 var keyNames = {
     32: "space",
     37: "left",
@@ -5308,26 +5221,23 @@ var keyNames = {
   };
 
   $("body").keydown(function (event) {
-➊   console.log(keyNames[event.keyCode]);
+    console.log(keyNames[event.keyCode]);
   });
 ```
 
-首先，我们创建了 `keyNames` 对象，并填充了 keycode 32, 37, 38, 39 和 40。`keyNames` 对象使用键值对将 keycode（如 32, 37 等）与相应的标签（例如空格键的 `"space"` 和左方向箭头键的 `"left"`）匹配起来。
+首先，我们创建了 `keyNames` 对象，并填充了 keycode `32`、`37`、`38`、`39` 和 `40`。`keyNames` 对象使用键值对将 keycode（如 `32`、`37` 等）与相应的标签（例如空格键的 `"space"` 和左方向箭头键的 `"left"`）匹配起来。
 
-然后我们可以使用此对象根据 keycode 查找键的名称。例如，要查找 keycode 32，输入 `keyNames[32]`。这将返回字符串 `"space"`。
+然后我们可以使用此对象根据 keycode 查找键的名称。例如，要查找 keycode `32`，输入 `keyNames[32]`。这将返回字符串 `"space"`。
 
-在 ➊ 处，我们在 `keydown` 事件处理器中使用 `keyNames` 对象获取刚刚按下的键的名称。如果 `event.keyCode` 引用的事件 keycode 匹配 `keyNames` 对象中的某个键，该函数将记录该键的名称。如果没有匹配的键，此代码将记录 `undefined`。
+在事件处理器中，我们使用 `keyNames` 对象获取刚刚按下的键的名称。如果 `event.keyCode` 引用的事件 keycode 匹配 `keyNames` 对象中的某个键，该函数将记录该键的名称。如果没有匹配的键，此代码将记录 `undefined`。
 
+在浏览器中加载 `keyboard.html`。打开控制台，点击浏览器主窗口，并尝试按下几个键。如果你按了 `keyNames` 对象中的五个键之一（方向键或空格键），程序应该打印出该键的名称。否则，它将打印 `undefined`。
 
+**尝试一下！**
 
+在 `keyNames` 对象中添加更多的键值对，以便它能够将更多的键转换为名称。插入 `SHIFT`、`ENTER`/`RETURN` 和 `ALT`/`OPTION` 的键码和名称。
 
-
-在浏览器中加载 `keyboard.html`。打开控制台，点击浏览器主窗口，并尝试按下几个键。如果你按了 `keyName` 对象中的五个键之一（方向键或空格键），程序应该打印出该键的名称。否则，它将打印 `undefined`。
-
-### 尝试一下！
-在 `keyNames` 对象中添加更多的键值对，以便它能够将更多的键转换为名称。插入 `SHIFT`、`ENTER/RETURN` 和 `ALT/OPTION` 的键码和名称。
-
-# 使用键盘移动小球
+## 使用键盘移动小球
 
 现在我们已经可以确定按下的是哪个键，我们可以编写一个程序，使用键盘来控制球的移动。我们的程序将画一个球并让它向右移动。按下方向键将改变球的方向，按下空格键将停止它的移动。如果球移出了画布的边缘，它将绕到另一侧。例如，如果球移出了画布的右边缘，它将再次从左边缘出现并继续向相同的方向移动，如图 15-1 所示。
 
@@ -5339,11 +5249,11 @@ var keyNames = {
 
 ![无标题图像](img/httpatomoreillycomsourcenostarchimages2162059.png.jpg)
 
-## 设置画布
+### 设置画布
 
 首先，我们需要设置画布和上下文对象。打开 `keyboard.html`，并将第二组 `<script>` 标签之间的 JavaScript 代码替换为以下代码：
 
-```
+```javascript
 var canvas = document.getElementById("canvas");
 var ctx = canvas.getContext("2d");
 var width = canvas.width;
@@ -5352,7 +5262,7 @@ var height = canvas.height;
 
 在第一行中，我们使用 `document.getElementById` 选择 `canvas` 元素。在第二行中，我们在画布上调用 `getContext` 来获取上下文对象。然后，在 `var width` 和 `var height` 行中，我们将 `canvas` 元素的宽度和高度存储在变量 `width` 和 `height` 中。这样，当我们需要画布尺寸时，就可以使用这些变量，而不需要手动输入数字。现在，如果我们选择更改画布的大小，只需编辑 HTML，JavaScript 代码应该仍然可以工作。
 
-## 定义 circle 函数
+### 定义 circle 函数
 
 接下来，我们为球定义与在第 14 章 中使用的相同的 `circle` 函数。在上一节代码之后添加此函数：
 
@@ -5368,7 +5278,7 @@ var circle = function (x, y, radius, fillCircle) {
 };
 ```
 
-## 创建 Ball 构造函数
+### 创建 Ball 构造函数
 
 现在我们将创建一个 `Ball` 构造函数。我们将使用这个构造函数来创建移动的球对象。我们将移动这个球的技术与我们在第 14 章 中使用的相同——使用 `xSpeed` 和 `ySpeed` 属性来控制球的水平和垂直速度。在 `circle` 函数之后添加此代码：
 
@@ -5381,36 +5291,33 @@ var Ball = function () {
 };
 ```
 
-我们将 `x` 和 `y` 值（球的位置）设置为 `width / 2` 和 `height / 2`，这样球将从画布的中心开始。我们还将 `this.xSpeed` 设置为 `5`，`this.ySpeed` 设置为 `0`。这意味着球将通过向右移动开始动画（也就是说在每个动画步骤中，它的 `x` 位置增加 5 像素，而 `y` 位置保持不变）。
+我们将 `x` 和 `y` 值（球的位置）设置为 `width / 2` 和 `height / 2`，这样球将从画布的中心开始。我们还将 `this.xSpeed` 设置为 `5`，`this.ySpeed` 设置为 `0`。这意味着球将通过向右移动开始动画（也就是说在每个动画步骤中，它的 `x` 位置增加 `5` 像素，而 `y` 位置保持不变）。
 
-## 定义 move 方法
+### 定义 move 方法
 
 在这一节中，我们将定义 `move` 方法。我们将此方法添加到 `Ball.prototype` 中，根据其当前位置、`xSpeed` 和 `ySpeed` 将球移动到新位置。在 `Ball` 构造函数之后添加此方法：
 
-![无标题图像](img/httpatomoreillycomsourcenostarchimages2162061.png.jpg)
-
 ```javascript
- Ball.prototype.move = function () {
-    this.x += this.xSpeed;
-    this.y += this.ySpeed;
+Ball.prototype.move = function () {
+  this.x += this.xSpeed;
+  this.y += this.ySpeed;
 
-    if (this.x < 0) {
-      this.x = width;
-    } else if (this.x > width) {
-      this.x = 0;
-    } if (this.y < 0) {
-      this.y = height;
-    } else if (this.y > height) {
-      this.y = 0;
-    }
-  };
+  if (this.x < 0) {
+    this.x = width;
+  } else if (this.x > width) {
+    this.x = 0;
+  }
+  if (this.y < 0) {
+    this.y = height;
+  } else if (this.y > height) {
+    this.y = 0;
+  }
+};
 ```
 
-## 定义 draw 方法
+### 定义 draw 方法
 
 我们将使用 `draw` 方法来画球。在 `move` 方法之后添加此代码：
-
-![无标题图像](img/httpatomoreillycomsourcenostarchimages2162062.png.jpg)
 
 ```javascript
 Ball.prototype.draw = function () {
@@ -5418,19 +5325,16 @@ Ball.prototype.draw = function () {
 };
 ```
 
-## 创建 setDirection 方法
+### 创建 setDirection 方法
 
 现在我们必须创建一种设置球的方向的方法。我们将通过一个名为 `setDirection` 的方法来实现。该方法将由我们的 `keydown` 处理程序调用，你将在下一节中看到它。
 
-
-
-
 接下来的代码段使用 `Ball` 构造函数创建一个 `ball` 对象，并监听 `keydown` 事件来设置小球的方向。将此代码添加到 `setDirection` 方法之后：
 
-```
-➊ var ball = new Ball();
+```javascript
+var ball = new Ball();
 
-➋ var keyActions = {
+var keyActions = {
     32: "stop",
     37: "left",
     38: "up",
@@ -5438,23 +5342,23 @@ Ball.prototype.draw = function () {
     40: "down"
   };
 
-➌ $("body").keydown(function (event) {
-➍   var direction = keyActions[event.keyCode];
-➎   ball.setDirection(direction);
-  });
+$("body").keydown(function (event) {
+  var direction = keyActions[event.keyCode];
+  ball.setDirection(direction);
+});
 ```
 
-在 ➊ 处，我们通过调用 `new Ball()` 创建了一个球对象。在 ➋ 处，我们创建一个 `keyActions` 对象，用它来将键码转换为对应的方向。这个对象与我们在 Using an Object to Convert Keycodes into Names 中创建的 `keyNames` 对象相同，不同之处对于 32（空格键的键码），我们将标签 `"space"` 替换为 `"stop"`，因为我们希望空格键让球停止移动。
+我们通过调用 `new Ball()` 创建了一个球对象。我们创建一个 `keyActions` 对象，用它来将键码转换为对应的方向。这个对象与我们在“使用对象将 keycode 转换为名称”中创建的 `keyNames` 对象相同，不同之处在于对于 `32`（空格键的键码），我们将标签 `"space"` 替换为 `"stop"`，因为我们希望空格键让球停止移动。
 
-在 ➌ 处，我们使用 jQuery 的 `$` 函数选择 `body` 元素，然后调用 `keydown` 方法来监听 `keydown` 事件。传递给 `keydown` 方法的会在每次按下按键时被调用。
+我们使用 jQuery 的 `$` 函数选择 `body` 元素，然后调用 `keydown` 方法来监听 `keydown` 事件。传递给 `keydown` 方法的函数会在每次按下按键时被调用。
 
-在该函数内部，我们在 ➍ 处使用 `keyActions[event.keyCode]` 查找被按下按键的标签，并将该标签赋值给 `direction` 变量。这会将 `direction` 变量设置为一个方向：按下左箭头键为 `"left"`，按下右箭头键为 `"right"`，按下上箭头键为 `"up"`，按下下箭头键为 `"down"`，按下空格键为 `"stop"`。如果按下任何其他按键，`direction` 将被设置为 `undefined`，动画不会受到影响。
+在该函数内部，我们使用 `keyActions[event.keyCode]` 查找被按下按键的标签，并将该标签赋值给 `direction` 变量。这会将 `direction` 变量设置为一个方向：按下左箭头键为 `"left"`，按下右箭头键为 `"right"`，按下上箭头键为 `"up"`，按下下箭头键为 `"down"`，按下空格键为 `"stop"`。如果按下任何其他按键，`direction` 将被设置为 `undefined`，动画不会受到影响。
 
-最后，在 ➎ 处，我们调用 `ball` 对象的 `setDirection` 方法并传入方向字符串。正如你之前看到的，`setDirection` 会根据新方向更新小球的 `xSpeed` 和 `ySpeed` 属性。
+最后，我们调用 `ball` 对象的 `setDirection` 方法并传入方向字符串。正如你之前看到的，`setDirection` 会根据新方向更新小球的 `xSpeed` 和 `ySpeed` 属性。
 
-## 让球动起来
+### 让球动起来
 
-现在我们唯一要做的事就是让球动起来。以下代码看起来应该很熟悉，因为它与我们在第 14 章](#ch14.html "第 14 章 在画布上让物体移动") 中使用的代码非常相似。它使用了我们在之前的章节动画代码中见过的 `setInterval` 函数来定期更新小球的位置。将此代码添加到上一节代码之后：
+现在我们唯一要做的事就是让球动起来。以下代码看起来应该很熟悉，因为它与我们在第 14 章中使用的代码非常相似。它使用了我们在之前的章节动画代码中见过的 `setInterval` 函数来定期更新小球的位置。将此代码添加到上一节代码之后：
 
 ```javascript
 setInterval(function () {
@@ -5467,11 +5371,11 @@ setInterval(function () {
 }, 30);
 ```
 
-我们使用 `setInterval` 每隔 30 毫秒调用一次动画函数。该函数首先使用 `clearRect` 清空整个画布，然后调用球的 `draw` 和 `move` 方法。正如我们所看到的，`draw` 方法只是在球的当前位置画一个圆，而 `move` 方法根据其 `xSpeed` 和 `ySpeed` 属性更新球的位置。最后，它使用 `strokeRect` 绘制边框，这样我们就能看到画布的边缘。
+我们使用 `setInterval` 每隔 `30` 毫秒调用一次动画函数。该函数首先使用 `clearRect` 清空整个画布，然后调用球的 `draw` 和 `move` 方法。正如我们所看到的，`draw` 方法只是在球的当前位置画一个圆，而 `move` 方法根据其 `xSpeed` 和 `ySpeed` 属性更新球的位置。最后，它使用 `strokeRect` 绘制边框，这样我们就能看到画布的边缘。
 
 ![image with no caption](img/httpatomoreillycomsourcenostarchimages2162067.png.jpg)
 
-## 汇总
+### 汇总
 
 现在我们已经过过了所有的代码，为了方便起见，这里是完整的列表。
 
@@ -5569,15 +5473,22 @@ setInterval(function () {
 }, 30);
 ```
 
-## 运行代码
+### 运行代码
 
-现在我们的程序完成了。当你运行它，你应该看到一个黑球在画布上移动，如图图 15-3 所示。当它到达右侧时，它应该绕到左侧。当你按下箭头键时，球应该改变方向，按下空格键会让它停止。
+现在我们的程序完成了。当你运行它，你应该看到一个黑球在画布上移动，如图 15-3 所示。当它到达右侧时，它应该绕到左侧。当你按下箭头键时，球应该改变方向，按下空格键会让它停止。
 
-![216069.png.jpg)### 注意*如果动画没有按预期对键做出响应，请点击页面以确保程序可以访问你的按键输入。*![image with no caption](img/216071.png.jpg)
+![216069.png.jpg)
+
+> **注意**  
+> 如果动画没有按预期对键做出响应，请点击页面以确保程序可以访问你的按键输入。
+
+![image with no caption](img/216071.png.jpg)
 
 ## 学到的知识
 
-在本章中，你学习了如何编写对键盘事件做出响应的程序。我们使用这些知识创建了一个移动的球，其中球的方向由键盘设置。现在我们可以在画布上绘图、创建动画并根据用户输入更新这些动画，我们可以创建一个简单的画布游戏了！在下一章中，我们将重新创建经典的贪蛇游戏，结合我们目前学到的所有内容。
+在本章中，你学习了如何编写对键盘事件做出响应的程序。我们使用这些知识创建了一个移动的球，其中球的方向由键盘设置。现在我们可以在画布上绘图、创建动画并根据用户输入更新这些动画，我们可以创建一个简单的画布游戏了！在下一章中，我们将重新创建经典的贪吃蛇游戏，结合我们目前学到的所有内容。
+
+![无说明的图像](img/httpatomoreillycomsourcenostarchimages2162107.png.jpg)
 
 # 编程挑战
 
@@ -5589,35 +5500,35 @@ setInterval(function () {
 
 ### #2 控制速度
 
-球目前每帧动画都移动 5 像素。这是因为 `setDirection` 总是将 `xSpeed` 或 `ySpeed` 设置为 `-5` 或 `5`。为 `Ball` 构造函数创建一个新属性 `speed`，并将其设置为 `5`。然后在 `setDirection` 中用它来代替数字 `5`。
+球目前每帧动画都移动 `5` 像素。这是因为 `setDirection` 总是将 `xSpeed` 或 `ySpeed` 设置为 `-5` 或 `5`。为 `Ball` 构造函数创建一个新属性 `speed`，并将其设置为 `5`。然后在 `setDirection` 中用它来代替数字 `5`。
 
 现在，修改你的代码，允许使用数字键将速度设置为 `1` 到 `9`。提示：创建一个名为 `speeds` 的对象，并根据 `keydown` 事件来确定新的（如果有）`speed`。
 
 ### #3 灵活控制
 
-修改你的代码，当你按下 Z 键时球会减慢，按下 X 键时球会加速。一旦实现，使用 C 让球变小，使用 V 让它变大。
+修改你的代码，当你按下 `Z` 键时球会减慢，按下 `X` 键时球会加速。一旦实现，使用 `C` 让球变小，使用 `V` 让它变大。
 
-如果速度低于 0 会发生什么？大小也是如此。在代码中添加检查确保速度和大小永远不会低于 0。
+如果速度低于 `0` 会发生什么？大小也是如此。在代码中添加检查确保速度和大小永远不会低于 `0`。
 
+---
 
+# 第 16 章 制作贪吃蛇游戏：第 1 部分
 
+在本章和下一章中，我们将构建自己版本的经典街机游戏——贪吃蛇。在贪吃蛇游戏中，玩家使用键盘控制蛇向上、向下、向左或向右移动。当蛇在游戏区域移动时，会出现苹果。当蛇到达苹果时，它会吃掉苹果并变长。但如果蛇撞到墙壁或自己的身体，游戏就会结束。
 
-
-在本章和下一章中，我们将构建自己版本的经典街机游戏——贪蛇。在贪蛇游戏中，玩家使用键盘控制蛇向上、向下、向左或向右移动。当蛇在游戏区域移动时，会出现苹果。当蛇到达苹果时，它会吃掉苹果并变长。但如果蛇撞到墙壁或自己的身体，游戏就会结束。
-
-在创建这个游戏时，你将结合目前为止学的许多工具和技术，包括 `jQuery` 和 `canvas`，以及动画和交互性。在本章中，我们将查看游戏的通用结构，并介绍绘制边界、分数以及结束游戏的代码。在第 17 章]中，我们将编写蛇和苹果的代码，然后将所有内容整合以完成游戏。
+在创建这个游戏时，你将结合目前为止学的许多工具和技术，包括 `jQuery` 和 `canvas`，以及动画和交互性。在本章中，我们将查看游戏的通用结构，并介绍绘制边界、分数以及结束游戏的代码。在第 17 章中，我们将编写蛇和苹果的代码，然后将所有内容整合以完成游戏。
 
 ![image with no caption](img/httpatomoreillycomsourcenostarchimages2162073.png.jpg)
 
-# 游戏玩法
+## 游戏玩法
 
 图 16-1 显示了我们完成后的游戏样子。在游戏运行期间，我们需要在屏幕上跟踪并绘制四个项目：边界（灰色）、分数（黑色）、蛇（蓝色）和苹果（石柠绿）。
 
 ![Our Snake game](img/httpatomoreillycomsourcenostarchimages2162075.png.jpg)
 
-图 16-1. 我们的贪蛇游戏
+图 16-1. 我们的贪吃蛇游戏
 
-# 游戏结构
+## 游戏结构
 
 在开始编写代码之前，让我们来看看游戏的整体结构。这段伪代码描述了我们的程序需要执行的操作：
 
@@ -5633,7 +5544,8 @@ setInterval(function () {
   按当前方向移动蛇
   如果蛇撞到墙壁或自己 {
     结束游戏
-  } 如果如果蛇吃了苹果 {
+  }
+  如果蛇吃了苹果 {
     分数加 1
     将苹果移动到新位置
     让蛇变长
@@ -5643,24 +5555,24 @@ setInterval(function () {
   }
   绘制苹果
   绘制边界
-  }
+}
 
 当用户按下按键时 {
     如果按键是箭头 {
       更新蛇的方向
-         }
-  }
+    }
+}
 ```
 
 在本章和下一章中，我们将编写代码来执行这些步骤的每一步。但首先，让我们聊聊这个程序的主要部分，并规划我们将用于它们的一些 JavaScript 工具。
 
 ![image with no caption](img/httpatomoreillycomsourcenostarchimages2162077.png.jpg)
 
-## 使用 setInterval 使游戏动画化
+### 使用 setInterval 使游戏动画化
 
-如伪代码所示，每隔 100 毫秒，我们需要调用一系列函数和方法，来更新并绘制游戏板上的所有内容。就像我们在第 14 章和第 15 章中所做的那样，我们将使用 `setInterval` 通过定期调用这些函数来使游戏动画化。这是我们最终程序中对 `setInterval` 的调用方式所示：
+如伪代码所示，每隔 `100` 毫秒，我们需要调用一系列函数和方法，来更新并绘制游戏板上的所有内容。就像我们在第 14 章和第 15 章中所做的那样，我们将使用 `setInterval` 通过定期调用这些函数来使游戏动画化。这是我们最终程序中对 `setInterval` 的调用方式所示：
 
-```
+```javascript
 var intervalId = setInterval(function () {
   ctx.clearRect(0, 0, width, height);
   drawScore();
@@ -5673,40 +5585,37 @@ var intervalId = setInterval(function () {
 
 在传递给 `setInterval` 的函数中，第一行使用 `clearRect` 清除画布，以便我们可以绘制动画的下一步。接下来我们看到了几个函数和方法调用。注意，这些调用都大致与上一页中伪代码列表中的步骤相对应。
 
-还要注意，我们将间隔 ID 保存在变量 `intervalId` 中。当游戏结束且我们想要停止动画时，我们需要该间隔 ID（参见结束游戏）。
+还要注意，我们将间隔 ID 保存在变量 `intervalId` 中。当游戏结束且我们想要停止动画时，我们需要该间隔 ID（参见“结束游戏”）。
 
-## 创建游戏对象
+### 创建游戏对象
 
 对于这个程序，我们将使用在第 12 章中学的面向对象风格来表示游戏中的两个主要对象：蛇和苹果。我们将为这些对象每个创建一个构造函数（分别为 `Snake` 和 `Apple`），并在这些构造函数的原型上添加方法（如 `move` 和 `draw`）。
 
-我们还将把游戏板划分为网格，然后创建一个名为 `Block` 的构造函数，我们将用它创建代表网格中正格的对象。我们将使用这些块对象来表示蛇节的位置，并使用单个块对象来存储苹果的当前位置。这些块还将拥有方法，让我们绘制蛇的节和苹果。
+我们还将把游戏板划分为网格，然后创建一个名为 `Block` 的构造函数，我们将用它创建代表网格中正方格的对象。我们将使用这些块对象来表示蛇节的位置，并使用单个块对象来存储苹果的当前位置。这些块还将拥有方法，让我们绘制蛇的节和苹果。
 
-## 设置键盘控制
+### 设置键盘控制
 
 在早期的伪代码中，有一部分专门响应用户的按键按下。为了允许玩家使用键盘上的方向键控制蛇，我们将使用 `jQuery` 来响应按键按下，就像我们在第 15 章中所做的那样。我们将通过查找键码来识别所按下的键，然后根据此设置蛇的方向。
 
 ![image with no caption](img/httpatomoreillycomsourcenostarchimages2162079.png.jpg)
 
-# 游戏设置
+## 游戏设置
 
 现在我们已经概述了程序将如何工作，让我们开始编写代码吧！在本章中，我们将从设置 HTML、画布以及整个程序所需的某些变量开始。然后我们将处理此游戏所需的几个简单的函数：一个用于绘制边界周围的边界，一个用于在屏幕上绘制分数，以及一个用于结束游戏。在下一章中，我们将为蛇和苹果创建构造函数和方法，为箭头按键创建事件处理程序，并将所有内容整合以完成游戏。
 
-## 创建 HTML
+### 创建 HTML
 
 要开始编写我们的游戏代码，将以下内容输入你的文本编辑器并将其保存为 `snake.html`。
 
-```
- <!DOCTYPE html>
+```html
+<!DOCTYPE html>
 <html>
 <head>
     <title>Snake!</title>
 </head>
-
 <body>
     <canvas id="canvas" width="400" height="400"></canvas>
-
     <script src="https://code.jquery.com/jquery-2.1.0.js"></script>
-
     <script>
         // 我们接下来将填充这里
     </script>
@@ -5714,27 +5623,28 @@ var intervalId = setInterval(function () {
 </html>
 ```
 
-在 ➊ 处，我们创建一个 400 x 400 像素的 `canvas` 元素。这是我们绘制所有内容的地方。我们在 ➋ 处包含 jQuery 库，随后是 ➌ 处的另一对 `<script>` 标签，我们将添加控制游戏的 JavaScript。让我们现在开始编写这些 JavaScript。
+我们创建一个 `400 x 400` 像素的 `canvas` 元素。这是我们绘制所有内容的地方。我们包含 jQuery 库，随后是另一对 `<script>` 标签，我们将添加控制游戏的 JavaScript。让我们现在开始编写这些 JavaScript。
 
-## 定义 canvas, ctx, width 和 height
+### 定义 canvas, ctx, width 和 height
 
 首先，我们将定义变量 `canvas` 和 `ctx`，这将允许我们在画布上绘制，以及变量 `width` 和 `height`，用于获取 `canvas` 的宽度和高度。
 
-```
+```javascript
 var canvas = document.getElementById("canvas");
-var ctx = ctx.getContext("2d");
+var ctx = canvas.getContext("2d");
 
 var width = canvas.width;
 var height = canvas.height;
 ```
 
-HTML 中的代码将宽度和高度设置为 400 像素；如果你在 HTML 中更改这些维度，`width` 和 `height` 将匹配新维度。
+HTML 中的代码将宽度和高度设置为 `400` 像素；如果你在 HTML 中更改这些维度，`width` 和 `height` 将匹配新维度。
 
-## 将画布划分为块
+### 将画布划分为块
 
-接下来，我们将创建变量来帮助将画布看作 10x10 像素块的网格，如图 16-2 所示。虽然网格是不可见的（也就是说，游戏实际上不会显示它），但游戏中的所有内容都将与其对齐绘制。
+接下来，我们将创建变量来帮助将画布看作 `10x10` 像素块的网格，如图 16-2 所示。虽然网格是不可见的（也就是说，游戏实际上不会显示它），但游戏中的所有内容都将与其对齐绘制。
 
-![image with no caption](img/httpatomoreillycomsourcenostarchimages2162081.png.jpg)![A 10-pixel grid showing the block layout of the game](img/httpatomoreillycomsourcenostarchimages2162083.png)
+![image with no caption](img/httpatomoreillycomsourcenostarchimages2162081.png.jpg)
+![A 10-pixel grid showing the block layout of the game](img/httpatomoreillycomsourcenostarchimages2162083.png)
 
 图 16-2. 显示游戏块布局的 10 像素网格
 
@@ -5742,48 +5652,45 @@ HTML 中的代码将宽度和高度设置为 400 像素；如果你在 HTML 中�
 
 我们将使用这些变量在我们的画布上创建块：
 
-```
+```javascript
 var blockSize = 10;
 var widthInBlocks = width / blockSize;
 var heightInBlocks = height / blockSize;
 ```
 
+我们创建一个名为 `blockSize` 的变量并设置为 `10`，因为我们希望方块的高度和宽度都为 `10` 像素。我们创建了 `widthInBlocks` 和 `heightInBlocks` 变量。我们将 `widthInBlocks` 设置为画布宽度除以方块大小，这告诉我们画布有多少个方块宽。同样地，`heightInBlocks` 告诉我们画布有多少个方块高。目前画布的宽和高均为 `400` 像素，因此 `widthInBlocks` 和 `heightInBlocks` 都将为 `40`。如果你数一下图 16-2（包括边框）中的正方形数量，你会发现它的宽高都是 `40` 个方块。
 
-
-
-在 ➊ 处，我们创建一个名为 `blockSize` 的变量并设置为 `10`，因为我们希望方块的高度和宽度都为 10 像素。在 ➋ 处，我们创建了 `widthInBlocks` 和 `heightInBlocks` 变量。我们将 `widthInBlocks` 设置为画布宽度除以方块大小，这告诉我们画布有多少个方块宽。同样地，`heightInBlocks` 告诉我们画布有多少个方块高。目前画布的宽和高均为 400 像素，因此 `widthInBlocks` 和 `heightInBlocks` 都将为 `40`。如果你数一下图 16-2（包括边框）中的正方形数量，你会发现它的宽高都是 40 个方块。
-
-## 定义 score 变量
+### 定义 score 变量
 
 最后，我们定义了 `score` 变量。
 
-```
+```javascript
 var score = 0;
 ```
 
-我们将使用 `score` 变量来跟踪玩家的分数。因为这是程序的开始部分，我们将 `score` 设置为 `0`。每当蛇吃到一个苹果时，我们就将其加 1。
+我们将使用 `score` 变量来跟踪玩家的分数。因为这是程序的开始部分，我们将 `score` 设置为 `0`。每当蛇吃到一个苹果时，我们就将其加 `1`。
 
 ![没有标题的图像](img/httpatomoreillycomsourcenostarchimages2162085.png.jpg)
 
-## 绘制边框
+### 绘制边框
 
-接下来，我们将创建一个 `drawBorder` 函数在画布周围绘制一个边框。我们将这个边框设置为一个方块（10 像素）厚。
+接下来，我们将创建一个 `drawBorder` 函数在画布周围绘制一个边框。我们将这个边框设置为一个方块（`10` 像素）厚。
 
-我们的函数将绘制四个长矩形，每个对应边框的一个边。每个矩形的厚度为 `blockSize`（10 像素），并占据画布的完整宽度或高度。
+我们的函数将绘制四个长矩形，每个对应边框的一个边。每个矩形的厚度为 `blockSize`（`10` 像素），并占据画布的完整宽度或高度。
 
+```javascript
+var drawBorder = function () {
+  ctx.fillStyle = "Gray";
+  ctx.fillRect(0, 0, width, blockSize);
+  ctx.fillRect(0, height - blockSize, width, blockSize);
+  ctx.fillRect(0, 0, blockSize, height);
+  ctx.fillRect(width - blockSize, 0, blockSize, height);
+};
 ```
- var drawBorder = function () {
-    ctx.fillStyle = "Gray";
-➊   ctx.fillRect(0, 0, width, blockSize);
-➋   ctx.fillRect(0, height - blockSize, width, blockSize);
-➌   ctx.fillRect(0, 0, blockSize, height);
-➍   ctx.fillRect(width - blockSize, 0, blockSize, height);
-  };
-```
 
-首先，我们将 `fillStyle` 设置为灰色，因为我们希望边框是灰色的。然后，在 ➊ 处，我们绘制边框的顶部。在这里，我们绘制了一个从 (0, 0)——画布的左上角开始的矩形，宽度为 `width`（400 像素），高度为 `blockSize`（10 像素）。
+首先，我们将 `fillStyle` 设置为灰色，因为我们希望边框是灰色的。然后，我们绘制边框的顶部。在这里，我们绘制了一个从 `(0, 0)`——画布的左上角开始的矩形，宽度为 `width`（`400` 像素），高度为 `blockSize`（`10` 像素）。
 
-接下来，在 ➋ 处，我们绘制边框的底部。这是一个位于坐标 (0, `height - blockSize`) 或 (0, 390) 处的矩形。这是距离画布底部向上 10 像素的位置，位于左侧。和顶部边框一样，这个矩形的宽度为 `width`，高度为 `blockSize`。
+接下来，我们绘制边框的底部。这是一个位于坐标 `(0, height - blockSize)` 或 `(0, 390)` 处的矩形。这是距离画布底部向上 `10` 像素的位置，位于左侧。和顶部边框一样，这个矩形的宽度为 `width`，高度为 `blockSize`。
 
 图 16-3 显示了顶部和底部边框的样子。
 
@@ -5791,62 +5698,62 @@ var score = 0;
 
 图 16-3. 上和底部边框
 
-在 ➌ 处我们绘制左侧边框，在 ➍ 处我们绘制右侧边框。图 16-4 显示了这两个边缘的添加。
+我们绘制左侧边框，并绘制右侧边框。图 16-4 显示了这两个边缘的添加。
 
 ![左右边框（顶部和底部边框显示为较浅的灰色）](img/httpatomoreillycomsourcenostarchimages2162089.png.jpg)
 
 图 16-4. 左右边框（顶部和底部边框显示为较浅的灰色）
 
-## 显示分数
+### 显示分数
 
-现在让我们写一个 `drawScore` 函数在画布的左上角显示分数，如图 16-1 所示。此函数将使用 `fillText` 上文方法在画布上添加文本。`fillText` 方法接收一个文本字符串以及你想显示该文本的 *x-* 和 *y-* 坐标。例如，
+现在让我们写一个 `drawScore` 函数在画布的左上角显示分数，如图 16-1 所示。此函数将使用 `fillText` 上下文方法在画布上添加文本。`fillText` 方法接收一个文本字符串以及你想显示该文本的 *x-* 和 *y-* 坐标。例如，
 
-```
+```javascript
 ctx.fillText("Hello world!", 50, 50);
 ```
 
-将在你的画布的 (50, 50) 坐标处写入字符串 `Hello world!`。图 16-5 绘制的字符串 Hello world!") 显示了它那样的样子。
+将在你的画布的 `(50, 50)` 坐标处写入字符串 `"Hello world!"`。图 16-5 绘制的字符串 `"Hello world!"` 显示了它那样的样子。
 
 ![在点 (50, 50) 绘制的字符串 Hello world!](img/httpatomoreillycomsourcenostarchimages2162091.png.jpg)
 
-图 16-5. 在点 (50, 50) 绘制的字符串 `Hello world!`
+图 16-5. 在点 `(50, 50)` 绘制的字符串 `"Hello world!"`
 
-嘿，看，我们在画布上打印了文本！但如果我们想通过调整大小和字体或更改对齐方式来对文本的外观进行更多控制呢？对于我们贪蛇游戏中的分数，我们可能想使用不同的字体，让文本更大，并确保文本精确地出现在左上角，就在边框下方。所以在写我们的 `drawScore` 函数之前，让我们更多地了解 `fillText` 方法并看看在画布上自定义文本的方法。
+嘿，看，我们在画布上打印了文本！但如果我们想通过调整大小和字体或更改对齐方式来对文本的外观进行更多控制呢？对于我们贪吃蛇游戏中的分数，我们可能想使用不同的字体，让文本更大，并确保文本精确地出现在左上角，就在边框下方。所以在写我们的 `drawScore` 函数之前，让我们更多地了解 `fillText` 方法并看看在画布上自定义文本的方法。
 
-### 设置基线
+#### 设置基线
 
-决定文本出现位置的位置被称为*基线*（baseline）。默认情况下，文本的左下角与基线对齐。为了改变文本相对于基线出现的位置，我们可以更改 `textBaseline` 属性。该属性的默认值为 `"bottom"`，但你也可以将 `textBaseline` 设置为 `"top"` 或 `"middle"`。图 16-6 显示了对于这些选项的结果。
+决定文本出现位置的位置被称为**基线**（baseline）。默认情况下，文本的左下角与基线对齐。为了改变文本相对于基线出现的位置，我们可以更改 `textBaseline` 属性。该属性的默认值为 `"bottom"`，但你也可以将 `textBaseline` 设置为 `"top"` 或 `"middle"`。图 16-6 显示了对于这些选项的结果。
 
 例如，要在基线下方运行你的文本，输入：
 
-```
+```javascript
 ctx.textBaseline = "top";
 ```
 
-现在，当你调用 `fillText` 时，文本将位于 (50, 50) 下方，正如图 16-7 所示。同样，为了更改文本相对于基线的水平位置，你可以将 `textAlign` 属性设置为 `"left"`、`"center"` 或 `"right"`。图 16-8 显示了结果。
+现在，当你调用 `fillText` 时，文本将位于 `(50, 50)` 下方，正如图 16-7 所示。同样，为了更改文本相对于基线的水平位置，你可以将 `textAlign` 属性设置为 `"left"`、`"center"` 或 `"right"`。图 16-8 显示了结果。
 
-### 设置大小和字体
+#### 设置大小和字体
 
 我们可以通过设置绘图上下文的 `font` 属性来更改绘制文本的大小和字体。此列表显示了一些可以使用的字体：
 
+```javascript
+ctx.font = "20px Courier";
+ctx.fillText("Courier", 50, 50);
+
+ctx.font = "24px Comic MS";
+ctx.fillText("Comic Sans", 50, 100);
+
+ctx.font = "18px Arial";
+ctx.fillText("Arial", 50, 150);
 ```
-➊ ctx.font = "20px Courier";
-  ctx.fillText("Courier", 50, 50);
 
-  ctx.font = "24px Comic MS";
-  ctx.fillText("Comic Sans", 50, 100);
+`font` 属性接收一个包含大小和你想使用的字体名称的字符串。例如，我们将 `font` 属性设置为 `"20px Courier"`，这意味着文本将以 `20` 像素的大小和 Courier 字体绘制。图 16-9 显示了这些不同字体在画布上绘制时的样子。
 
-  ctx.font = "18px Arial";
-  ctx.fillText("Arial", 50, 150);
-```
-
-`font` 属性接收一个包含大小你想使用的字体名称的字符串。例如，在 ➊ 处我们将 `font` 属性设置为 `"20px Courier"`，这意味着文本将以 20 像素的大小和 Courier 字体绘制。图 16-9 显示了这些不同字体在画布上绘制时的样子。
-
-## 编写 drawScore 函数
+### 编写 drawScore 函数
 
 现在我们可以开始编写 `drawScore` 函数，它在画布上绘制显示当前分数的字符串。
 
-```
+```javascript
 var drawScore = function () {
   ctx.font = "20px Courier";
   ctx.fillStyle = "Black";
@@ -5856,26 +5763,23 @@ var drawScore = function () {
 };
 ```
 
-
-
-
-此函数将字体设置为 20 像素的 Courier (`20px Courier`)，使用 `fillStyle` 将颜色设置为黑色，使用 `textAlign` 属性将文本左对齐，然后将 `textBaseline` 属性设置为 `"top"`。
+此函数将字体设置为 `20` 像素的 Courier (`"20px Courier"`)，使用 `fillStyle` 将颜色设置为黑色，使用 `textAlign` 属性将文本左对齐，然后将 `textBaseline` 属性设置为 `"top"`。
 
 接下来，我们调用 `fillText` 并传入字符串 `"Score: " + score`。
 
-`score` 变量以数字形式存储玩家的当前分数。我们在游戏开始时将初始分数设为 `0`（在定义分数变量）中），所以最初它将显示为 `"Score: 0"`。
+`score` 变量以数字形式存储玩家的当前分数。我们在游戏开始时将初始分数设为 `0`（在“定义分数变量”中），所以最初它将显示为 `"Score: 0"`。
 
-当我们调用 `fillText` 时，我们将 `x` 和 `y` 坐标设置为 `blockSize`。由于我们将 `blockSize` 设置为 `10`，这会将分数的基准点设置为 (10, 10)，该点正好位于边框左上角的内部。由于我们将 `textBaseline` 设置为 `"top"`，文本将出现在该基准点正下方，如图 16-10 所示所示。
+当我们调用 `fillText` 时，我们将 `x` 和 `y` 坐标设置为 `blockSize`。由于我们将 `blockSize` 设置为 `10`，这会将分数的基准点设置为 `(10, 10)`，该点正好位于边框左上角的内部。由于我们将 `textBaseline` 设置为 `"top"`，文本将出现在该基准点正下方，如图 16-10 所示。
 
 ![分数文本的位置](img/httpatomoreillycomsourcenostarchimages2162103.png.jpg)
 
 图 16-10. 分数文本的位置
 
-# 结束游戏
+## 结束游戏
 
 当蛇撞到墙或撞到自己时，我们将调用 `gameOver` 函数来结束游戏。`gameOver` 函数使用 `clearInterval` 停止游戏，并在画布上写入“Game Over”字样。以下是 `gameOver` 函数的内容：
 
-```
+```javascript
 var gameOver = function () {
   clearInterval(intervalId);
   ctx.font = "60px Courier";
@@ -5886,9 +5790,9 @@ var gameOver = function () {
 };
 ```
 
-首先，我们通过调用 `clearInterval` 并传入变量 `intervalId` 来停止游戏。这取消了我们在使用 setInterval 制作动画中创建的 `setInterval` 动画函数。
+首先，我们通过调用 `clearInterval` 并传入变量 `intervalId` 来停止游戏。这取消了我们在“使用 setInterval 制作动画”中创建的 `setInterval` 动画函数。
 
-接下来，我们将字体设置为黑色的 60 像素 Courier，将文本居中，并将 `textBaseline` 属性设置为 `"middle"`。然后我们调用 `fillText`，告诉它使用 `width / 2` 作为 `x` 位置，`height / 2` 作为 `y` 位置来绘制字符串 `"Game Over"`。生成的“Game Over”文本将位于画布的中心位置，如图 16-11 所示所示。
+接下来，我们将字体设置为黑色的 `60` 像素 Courier，将文本居中，并将 `textBaseline` 属性设置为 `"middle"`。然后我们调用 `fillText`，告诉它使用 `width / 2` 作为 `x` 位置，`height / 2` 作为 `y` 位置来绘制字符串 `"Game Over"`。生成的“Game Over”文本将位于画布的中心位置，如图 16-11 所示。
 
 ![蛇撞击左墙后的“Game Over”屏幕](img/httpatomoreillycomsourcenostarchimages2162105.png.jpg)
 
@@ -5896,7 +5800,7 @@ var gameOver = function () {
 
 ## 你学到的知识
 
-在本章中，我们查看了贪蛇游戏的整体轮览以及制作游戏所需的一些函数。你学习了如何在画布上绘制文本，以及如何自定义它的大小、字体和位置。
+在本章中，我们查看了贪吃蛇游戏的整体概览以及制作游戏所需的一些函数。你学习了如何在画布上绘制文本，以及如何自定义它的大小、字体和位置。
 
 在下一章中，我们将通过编写蛇和苹果的代码以及处理键盘事件来完成游戏。
 
@@ -5908,11 +5812,11 @@ var gameOver = function () {
 
 ## #1：整合在一起
 
-虽然我还没有展示游戏的全部代码，但你可以运行绘制边框和分数的代码。取用你的 HTML 文件（来自创建 HTML），并添加设置画布、创建分数、绘制边框和绘制分数的代码。现在你只需要调用 `drawBorder` 和 `drawScore` 就能看到边框和分数。它看起来应该和图 16-10 所示一样。你也可以尝试 `gameOver` 函数，但在调用该函数之前，你需要删除 `clearInterval(intervalId);` 这一行。你还没有创建 `intervalId` 变量，所以现在如果你在不移除该行的情况下调用该函数，它将产生错误。
+虽然我还没有展示游戏的全部代码，但你可以运行绘制边框和分数的代码。取用你的 HTML 文件（来自“创建 HTML”），并添加设置画布、创建分数、绘制边框和绘制分数的代码。现在你只需要调用 `drawBorder` 和 `drawScore` 就能看到边框和分数。它看起来应该和图 16-10 所示一样。你也可以尝试 `gameOver` 函数，但在调用该函数之前，你需要删除 `clearInterval(intervalId);` 这一行。你还没有创建 `intervalId` 变量，所以现在如果你在不移除该行的情况下调用该函数，它将产生错误。
 
 ## #2：让分数动起来
 
-编写你自己的 `setInterval` 调用，使用一个函数每 100 毫秒将分数加 1，然后使用 `drawScore` 函数绘制更新后的分数。记住，你每次都需要使用画布上下文上的 `clearRect` 方法来清除画布。
+编写你自己的 `setInterval` 调用，使用一个函数每 `100` 毫秒将分数加 `1`，然后使用 `drawScore` 函数绘制更新后的分数。记住，你每次都需要使用画布上下文上的 `clearRect` 方法来清除画布。
 
 ## #3：在吊字游戏中添加文本
 
@@ -5920,29 +5824,31 @@ var gameOver = function () {
 
 ![无说明的图像](img/httpatomoreillycomsourcenostarchimages2162109.png.jpg)
 
-提示：为了给每个字母下划线，我使用了长 30 像素的描线，每个线之间间隔 10 像素。
+提示：为了给每个字母下划线，我使用了长 `30` 像素的描线，每个线之间间隔 `10` 像素。
 
 如果想增加挑战性，请如右侧所示，将错误的猜测划掉。
 
-# 第 17 章：制作贪蛇游戏：部分 2
+---
 
-在本章中，我们将完成贪蛇游戏的构建。在第 16 章中，我们设置了游戏区域并涵盖了游戏的基本工作原理。现在我们将创建代表游戏中蛇和苹果的对象，并编写一个键盘事件处理器，以便玩家可以使用方向键控制蛇。最后，我们将查看程序的完整代码列表。
+# 第 17 章 制作贪吃蛇游戏：第 2 部分
+
+在本章中，我们将完成贪吃蛇游戏的构建。在第 16 章中，我们设置了游戏区域并涵盖了游戏的基本工作原理。现在我们将创建代表游戏中蛇和苹果的对象，并编写一个键盘事件处理器，以便玩家可以使用方向键控制蛇。最后，我们将查看程序的完整代码列表。
 
 在我们为此游戏创建蛇和苹果对象时，我们将使用在第 12 章中学习的面向对象编程技术为每个对象创建构造函数和方法。我们的蛇对象和苹果对象都依赖于一个更基础的区块对象，我们将用它来代表游戏网格上的一个区块。让我们从构建那个简单区块对象的构造函数开始。
 
-# 构建区块构造函数
+## 构建区块构造函数
 
-在本节中，我们将定义一个 `Block` 构造函数，用于创建代表隐藏游戏网格上对象的对象的每个。每个属性 `col`（*column* 的缩写）和 `row`，它们将存储该特定区块在网格上的位置。图 17-1 所示显示了这个网格，其中一些列和行被标记了数字。尽管这个网格实际上出现在屏幕上，但我们的游戏设计使苹果和蛇段始终与它对齐。
+在本节中，我们将定义一个 `Block` 构造函数，用于创建代表隐藏游戏网格上对象的对象的每个。每个属性 `col`（*column* 的缩写）和 `row`，它们将存储该特定区块在网格上的位置。图 17-1 所示显示了这个网格，其中一些列和行被标记了数字。尽管这个网格实际上不出现在屏幕上，但我们的游戏设计使苹果和蛇段始终与它对齐。
 
 ![Block 构造函数使用的列和行号](img/httpatomoreillycomsourcenostarchimages216211.png.jpg)
 
 图 17-1. Block 构造函数使用的列和行号
 
-在图 17-1 中，包含绿色苹果的区块位于第 10 列第 10 行。蛇头（苹果左侧）位于第 8 列第 10 行。
+在图 17-1 中，包含绿色苹果的区块位于第 `10` 列第 `10` 行。蛇头（苹果左侧）位于第 `8` 列第 `10` 行。
 
 以下是 `Block` 构造函数的代码：
 
-```
+```javascript
 var Block = function (col, row) {
   this.col = col;
   this.row = row;
@@ -5951,34 +5857,30 @@ var Block = function (col, row) {
 
 列和行值作为参数传递给 `Block` 构造函数，并保存在新对象的 `col` 和 `row` 属性中。
 
-现在我们可以使用此构造函数来创建一个代表游戏网格上特定区块的对象。例如，这里是我们如何创建一个代表第 5 列第 5 行区块的对象：
+现在我们可以使用此构造函数来创建一个代表游戏网格上特定区块的对象。例如，这里是我们如何创建一个代表第 `5` 列第 `5` 行区块的对象：
 
-```
+```javascript
 var sampleBlock = new Block(5, 5);
 ```
 
-## 添加 drawSquare 方法
+### 添加 drawSquare 方法
 
 到为止，这个区块对象允许我们代表网格上的一个位置，但要让某个东西出现在该位置，我们需要在画布上绘制它。接下来，我们将添加两个方法 `drawSquare` 和 `drawCircle`，它们将允许我们在网格上的特定区块中分别绘制正方形或圆形。首先，是 `drawSquare` 方法：
 
-
-
-
-
 ```javascript
- Block.prototype.drawSquare = function (color) {
-➊   var x = this.col * blockSize;
-➋   var y = this.row * blockSize;
-   ctx.fillStyle = color;
-   ctx.fillRect(x, y, blockSize, blockSize);
-  };
+Block.prototype.drawSquare = function (color) {
+  var x = this.col * blockSize;
+  var y = this.row * blockSize;
+  ctx.fillStyle = color;
+  ctx.fillRect(x, y, blockSize, blockSize);
+};
 ```
 
 在第 12 章中我们学习了，如果你将方法附加到构造函数的 `prototype` 属性上，这些方法将对使用该构造函数创建的任何对象可用。因此，通过向 `Block.prototype` 添加 `drawSquare` 方法，我们使得任何块对象都能使用该方法。
 
 ![image with no caption](img/httpatomoreillycomsourcenostarchimages2162113.png.jpg)
 
-该方法根据块对象的 `col` 和 `row` 属性在指定位置绘制一个正方形。它接受一个参数 `color`，用于确定正形的颜色。要使用 `canvas` 绘制正方形，我们需要提供正方形左上角的 `x` 和 `y` 位置。在 ➊ 和 ➋ 处，我们通过将 `col` 和 `row` 属性乘以 `blockSize` 来计算当前块的 `x` 和 `y` 值。然后，我们将绘图上下文的 `fillStyle` 属性设置为方法的 `color`。最后，我们调用 `ctx.fillRect`，传递计算出的 `x` 和 `y` 值，以及作为正方形宽和高的 `blockSize`。以下是我们在第 3 列第 4 行创建一个块并绘制它的方法：
+该方法根据块对象的 `col` 和 `row` 属性在指定位置绘制一个正方形。它接受一个参数 `color`，用于确定正方形的颜色。要使用 `canvas` 绘制正方形，我们需要提供正方形左上角的 `x` 和 `y` 位置。我们通过将 `col` 和 `row` 属性乘以 `blockSize` 来计算当前块的 `x` 和 `y` 值。然后，我们将绘图上下文的 `fillStyle` 属性设置为方法的 `color`。最后，我们调用 `ctx.fillRect`，传递计算出的 `x` 和 `y` 值，以及作为正方形宽和高的 `blockSize`。以下是我们在第 `3` 列第 `4` 行创建一个块并绘制它的方法：
 
 ```javascript
 var sampleBlock = new Block(3, 4);
@@ -5987,11 +5889,11 @@ sampleBlock.drawSquare("LightBlue");
 
 图 17-2 显示了在画布上绘制的这个正方形，以及正方形测量值的计算方法。
 
-![Calculating the values for drawing a square](img/httpatomoreillycomsourcenarchimages2162115.png.jpg)
+![Calculating the values for drawing a square](img/httpatomoreillycomsourcenostarchimages2162115.png.jpg)
 
 图 17-2. 计算绘制正方形的数值
 
-# 添加 drawCircle 方法
+### 添加 drawCircle 方法
 
 现在处理 `drawCircle` 方法。它与 `drawSquare` 方法非常相似，但它绘制的是一个填充圆而不是正方形。
 
@@ -6006,9 +5908,9 @@ Block.prototype.drawCircle = function (color) {
 
 首先，我们通过创建两个新变量 `centerX` 和 `centerY` 来计算圆心的位置。与之前一样，我们将 `col` 和 `row` 属性乘以 `blockSize`，但这次我们还要加上 `blockSize / 2`，因为我们需要圆心的像素坐标，而圆心位于块的中间（如图 17-3 所示）。我们像 `drawSquare` 一样，将上下文的 `fillStyle` 设置为 `color` 参数，然后调用我们可靠的 `circle` 函数，传递 `centerX` 和 `centerY` 作为 `x` 和 `y` 坐标，传递 `blockSize / 2` 作为半径，并传递 `true` 告诉函数填充圆。这是我们在第 14 章中定义的同一个 `circle` 函数，因此我们必须在该程序中再次包含该函数的定义（如你在最终代码中所所示）。
 
-![image with no caption](img/httpatomoreillycomsourcenarchimages2162117.png.jpg)
+![image with no caption](img/httpatomoreillycomsourcenostarchimages2162117.png.jpg)
 
-以下是我们在第 4 列第 3 行绘制圆的方法：
+以下是我们在第 `4` 列第 `3` 行绘制圆的方法：
 
 ```javascript
 var sampleCircle = new Block(4, 3);
@@ -6017,11 +5919,11 @@ sampleCircle.drawCircle("LightGreen");
 
 图 17-3 显示了该圆以及中心点和半径的计算过程。
 
-![Calculating the values for drawing a circle](img/httpatomoreillycomsourcenarchimages2162119.png.jpg)
+![Calculating the values for drawing a circle](img/httpatomoreillycomsourcenostarchimages2162119.png.jpg)
 
 图 17-3. 计算绘制圆的数值
 
-# 添加 equal 方法
+### 添加 equal 方法
 
 在我们的游戏中，我们需要知道两个块是否位于相同的位置。例如，如果苹果和蛇头位于相同位置，则意味着蛇吃到了苹果。反之，如果蛇头和蛇尾位于相同位置，则说明蛇与自己碰撞了。
 
@@ -6035,47 +5937,41 @@ Block.prototype.equal = function (otherBlock) {
 
 这个方法非常直观：如果两个块（`this` 和 `otherBlock`）具有相同的 `col` 和 `row`，则它们位置相同。
 
-[/content]
-
-### 第二部分翻译
-
-[content]
-
-# 创建 Snake
+## 创建 Snake
 
 现在我们要创建蛇。我们将蛇的位置存储在一个名为 `segments` 的数组中，该数组包含块对象。为了移动蛇，我们在数组开头添加一个新的块并移除末尾的块。`segments` 数组的第一个元素将代表蛇头。
 
-![image with no caption](img/httpatomoreillycomsourcenarchimages2162121.png.jpg)
+![image with no caption](img/httpatomoreillycomsourcenostarchimages2162121.png.jpg)
 
-## 编写 Snake 构造函数
+### 编写 Snake 构造函数
 
 首先我们需要一个构造函数来创建蛇：
 
 ```javascript
- var Snake = function () {
-➊   this.segments = [
-      new Block(7, 5),
-      new Block(6, 5),
-      new Block(5, 5)
-    ];
-➋   this.direction = "right";
-➌   this.nextDirection = "right";
-  };
+var Snake = function () {
+  this.segments = [
+    new Block(7, 5),
+    new Block(6, 5),
+    new Block(5, 5)
+  ];
+  this.direction = "right";
+  this.nextDirection = "right";
+};
 ```
 
-### 定义 Snake segments
+#### 定义 Snake segments
 
-`segments` 属性 ➊ 是一个包含块对象的数组。当我们开始游戏时，该数组将包含 (7, 5)、(6, 5) 和 (5, 5) 的三个块。图 17-4 显示了蛇的这三个初始片段。
+`segments` 属性是一个包含块对象的数组。当我们开始游戏时，该数组将包含 `(7, 5)`、`(6, 5)` 和 `(5, 5)` 的三个块。图 17-4 显示了蛇的这三个初始片段。
 
-![The initial blocks that make up the snake](img/httpatomoreillycomsourcenarchimages2162123.png.jpg)
+![The initial blocks that make up the snake](img/httpatomoreillycomsourcenostarchimages2162123.png.jpg)
 
 图 17-4. 构成蛇的初始块
 
-### 设置移动方向
+#### 设置移动方向
 
-`direction` 属性 ➋ 存储当前的方向。我们的构造函数还增加了 `nextDirection` 属性 ➌，它存储蛇在下一帧移动的方向。该属性将在玩家按下方向键时由我们的 `keydown` 事件处理器进行更新（参见添加 keydown 事件处理器）。目前，构造函数将这两个属性都设置为 `"right"`，因此在游戏开始时蛇将向右移动。
+`direction` 属性存储当前的方向。我们的构造函数还增加了 `nextDirection` 属性，它存储蛇在下一帧移动的方向。该属性将在玩家按下方向键时由我们的 `keydown` 事件处理器进行更新（参见“添加 keydown 事件处理器”）。目前，构造函数将这两个属性都设置为 `"right"`，因此在游戏开始时蛇将向右移动。
 
-## 绘制 Snake
+### 绘制 Snake
 
 要绘制蛇，我们只需要遍历其 `segments` 数组中的每个块，调用我们之前创建的 `drawSquare` 方法。这将为蛇的每个片段绘制一个正方形。
 
@@ -6087,100 +5983,97 @@ Snake.prototype.draw = function () {
 };
 ```
 
-
-
-
-
 `draw` 方法使用 `for` 循环来操作 `segments` 数组中的每个块对象。在每次循环中，这段代码会获取当前的分段（`this.segments[i]`）并对其调用 `drawSquare("Blue")`，从而在相应的块中绘制一个蓝色的正方形。
 
 如果你想测试 `draw` 方法，可以运行以下代码，它将使用 `Snake` 构造函数创建一个新对象，并调用它的 `draw` 方法：
 
-``````javascript
+```javascript
 var snake = new Snake();
 snake.draw();
 ```
 
-# 移动蛇
+### 移动蛇
 
 我们将创建一个 `move` 方法，让蛇沿着它的当前方向移动一个方格。为了移动蛇，我们先添加一个新的头部分段（通过向 `segments` 数组的开头添加一个新的块对象），然后从 `segments` 数组的末尾移除尾部分段。
 
-`move` 方法还会调用一个 `checkCollision` 方法，来检查新头部是否与蛇的其余部分或墙壁碰撞，以及新头部是否吃了苹果。如果新头部与身体或墙壁碰撞，我们将通过调用我们在 第 16 章 中创建的 `gameOver` 函数来结束游戏。如果蛇吃了苹果，我们将增加并将并将移动到一个新位置。
+`move` 方法还会调用一个 `checkCollision` 方法，来检查新头部是否与蛇的其余部分或墙壁碰撞，以及新头部是否吃了苹果。如果新头部与身体或墙壁碰撞，我们将通过调用我们在第 16 章中创建的 `gameOver` 函数来结束游戏。如果蛇吃了苹果，我们将增加分数并将苹果移动到一个新位置。
 
 ![没有说明的](img/httpatomoreillycomsourcenostarchimages2162125.png.jpg)
 
-## 添加 move 方法
+#### 添加 move 方法
 
 `move` 方法如下：
 
 ```javascript
- Snake.prototype.move = function () {
-➊   var head = this.segments[0];
-➋   var newHead;
+Snake.prototype.move = function () {
+  var head = this.segments[0];
+  var newHead;
 
-➌   this.direction = this.nextDirection;
+  this.direction = this.nextDirection;
 
-➍   if (this.direction === "right") {
-      newHead = new Block(head.col + 1, head.row);
-    } else if (this.direction === "down") {
-      newHead = new Block(head.col, head.row + 1);
-    } else if (this.direction === "left") {
-      newHead = new Block(head.col - 1, head.row);
-    } else if (this.direction === "up") {
-      newHead = new Block(head.col, head.row - 1);
-    }
-�➎   if (this.checkCollision(newHead)) {
-      gameOver();
-      return;
-    }
+  if (this.direction === "right") {
+    newHead = new Block(head.col + 1, head.row);
+  } else if (this.direction === "down") {
+    newHead = new Block(head.col, head.row + 1);
+  } else if (this.direction === "left") {
+    newHead = new Block(head.col - 1, head.row);
+  } else if (this.direction === "up") {
+    newHead = new Block(head.col, head.row - 1);
+  }
 
-➏   this.segments.unshift(newHead);
+  if (this.checkCollision(newHead)) {
+    gameOver();
+    return;
+  }
 
-➐   if (newHead.equal(apple.position)) {
-      score++;
-      apple.move();
-    } else {
-      this.segments.pop();
-    }
-  };
+  this.segments.unshift(newHead);
+
+  if (newHead.equal(apple.position)) {
+    score++;
+    apple.move();
+  } else {
+    this.segments.pop();
+  }
+};
 ```
 
 让我们逐条分析这个方法。
 
-### 创建新头部
+##### 创建新头部
 
-在 ➊ 处，我们将 `this.segments` 数组的第一个元素保存在变量 `head` 中。在这个方法中我们会多次引用蛇的第一个分段，因此使用这个变量可以减少一些打字量并让代码更易读。现在，我们不需要反复输入 `this.segments[0]`，只需输入 `head` 即可。
+我们将 `this.segments` 数组的第一个元素保存在变量 `head` 中。在这个方法中我们会多次引用蛇的第一个分段，因此使用这个变量可以减少一些打字量并让代码更易读。现在，我们不需要反复输入 `this.segments[0]`，只需输入 `head` 即可。
 
-在 ➋ 处，我们创建了变量 `newHead`，用它来存储蛇的新头部块（即我们即将添加的部分）。
+我们创建了变量 `newHead`，用它来存储蛇的新头部块（即我们即将添加的部分）。
 
-在 ➌ 处，我们将 `this.direction` 设置为 `this.nextDirection`，这会更新蛇的移动方向，以匹配最近按下的方向键。（当我们详细查看 `keydown` 事件处理程序时，会看到它是如何工作的。）
+我们将 `this.direction` 设置为 `this.nextDirection`，这会更新蛇的移动方向，以匹配最近按下的方向键。（当我们详细查看 `keydown` 事件处理程序时，会看到它是如何工作的。）
 
 ![没有说明的](img/httpatomoreillycomsourcenostarchimages2162127.png.jpg)
 
-#### Direction 和 nextDirection
+###### Direction 和 nextDirection
 
 蛇的 `direction` 属性在动画的每一步中只会被更新一次，因为 `move` 方法每一步只被调用一次。另一方面，`nextDirection` 属性会在玩家按下方向键时随时更新（所以如果他们按得很快，理论上该属性在每个动画步骤中可能会改变多次）。通过保持这两个属性分离，我们可以确保如果玩家在两个动画步骤之间快速按了两个方向键，蛇也不会发生反向转弯。
 
-从 ➍ 开始，我们使用 `if...else` 语句链来确定蛇的方向。在每种情况下，我们都为蛇创建一个新头部并将其保存在变量 `newHead` 中。根据移动方向，我们在现有头部的行或列上加或减 1，以便将新头部直接放置在旧头部旁边（取决于蛇的移动方向：右、左、上或下）。例如，图 17-5 显示了当 `this.nextDirection` 设置为 `"down"` 时，新头部是如何添加到蛇身上的。
+我们使用 `if...else` 语句链来确定蛇的方向。在每种情况下，我们都为蛇创建一个新头部并将其保存在变量 `newHead` 中。根据移动方向，我们在现有头部的行或列上加或减 `1`，以便将新头部直接放置在旧头部旁边（取决于蛇的移动方向：右、左、上或下）。例如，图 17-5 显示了当 `this.nextDirection` 设置为 `"down"` 时，新头部是如何添加到蛇身上的。
 
 ![当 this.nextDirection 为 "down" 时创建 newHead](img/httpatomoreillycomsourcenostarchimages2162129.png.jpg)
 
-图 17-5。当 `this.nextDirection` 为 `"down"` 时创建 `newHead`。
+图 17-5. 当 `this.nextDirection` 为 `"down"` 时创建 `newHead`。
 
-### 检查碰撞并添加头部
+##### 检查碰撞并添加头部
 
-在 ➎ 处，我们调用 `checkCollision` 方法来判断蛇是否与墙壁或自身碰撞。稍后我们会查看该方法的代码，但正如你猜的，如果蛇与某些物体碰撞，该方法将返回 `true`。如果发生这种情况，`if` 语句体将调用 `gameOver` 函数来结束游戏并在画布上打印“Game Over”。
+我们调用 `checkCollision` 方法来判断蛇是否与墙壁或自身碰撞。稍后我们会查看该方法的代码，但正如你猜的，如果蛇与某些物体碰撞，该方法将返回 `true`。如果发生这种情况，`if` 语句体将调用 `gameOver` 函数来结束游戏并在画布上打印“Game Over”。
 
 调用 `gameOver` 之后的 `return` 关键字会提前退出 `move` 方法，跳过之后的任何代码。只有在 `checkCollision` 返回 `true` 时我们才会到达 `return` 关键字，所以如果蛇没有与任何物体碰撞，我们就执行该方法的剩余部分。
 
-只要蛇没有与物体碰撞，我们在 ➏ 处通过使用 `unshift` 将 `newHead` 添加到 `segments` 数组的开头，从而将新头部添加到蛇的前部。更多关于 `unshift` 方法如何在数组上工作的信息，请参见向数组添加元素。
+只要蛇没有与物体碰撞，我们通过使用 `unshift` 将 `newHead` 添加到 `segments` 数组的开头，从而将新头部添加到蛇的前部。更多关于 `unshift` 方法如何在数组上工作的信息，请参见“向数组添加元素”。
 
-### 吃苹果
+##### 吃苹果
 
-在 ➐ 处，我们使用 `equal` 方法比较 `newHead` 和 `apple.position`。如果两个块位于位置，`equal` 方法将返回 `true`，这意味着蛇吃了苹果。
+我们使用 `equal` 方法比较 `newHead` 和 `apple.position`。如果两个块位于同一位置，`equal` 方法将返回 `true`，这意味着蛇吃了苹果。
 
-如果蛇吃了苹果，增加分数并调用苹果的 `move` 方法将其移动到新位置。如果蛇没有吃苹果，我们就对 `this.segments` 调用 `pop`。这会在移除尾部的同时保持蛇的大小不变（因为 `move` 已经在头部添加了一个分段）。（等等，原文实际上说是：）
+如果蛇吃了苹果，增加分数并调用苹果的 `move` 方法将其移动到新位置。如果蛇没有吃苹果，我们就对 `this.segments` 调用 `pop`。这会在移除尾部的同时保持蛇的大小不变（因为 `move` 已经在头部添加了一个分段）。
 
-我们还没有定义 `apple`，所以这个方法目前的形式无法完全工作。如果你想测试它，可以删除 ➐ 处的整个 `if...else` 语句，并将其替换为这一行：
+我们还没有定义 `apple`，所以这个方法目前的形式无法完全工作。如果你想测试它，可以删除整个 `if...else` 语句，并将其替换为这一行：
 
 ```javascript
 this.segments.pop();
@@ -6188,7 +6081,7 @@ this.segments.pop();
 
 然后你只需要定义 `checkCollision` 方法，我们接下来就会这样做。
 
-## 添加 checkCollision 方法
+#### 添加 checkCollision 方法
 
 每当我们为蛇头部设置新位置时，都必须检查碰撞。碰撞检测是游戏机制中非常常见的步骤，通常是游戏编程中较复杂的方面之一。幸运的是，在我们的贪吃蛇游戏中它相对简单。
 
@@ -6197,80 +6090,76 @@ this.segments.pop();
 这里是 `checkCollision` 方法：
 
 ```javascript
- Snake.prototype.checkCollision = function (head) {
-➊   var leftCollision = (head.col === 0);
-    var topCollision = (head.row === 0);
-    var rightCollision = (head.col === widthInBlocks - 1);
-    var bottomCollision = (head.row === heightInBlocks - 1);
+Snake.prototype.checkCollision = function (head) {
+  var leftCollision = (head.col === 0);
+  var topCollision = (head.row === 0);
+  var rightCollision = (head.col === widthInBlocks - 1);
+  var bottomCollision = (head.row === heightInBlocks - 1);
 
-➋   var wallCollision = leftCollision || topCollision || 
+  var wallCollision = leftCollision || topCollision || 
       rightCollision || bottomCollision;
 
-➌   var selfCollision = false;
+  var selfCollision = false;
 
-➍   for (var i = 0; i < this.segments.length; i++) {
-      if (head.equal(this.segments[i])) {
-➎       selfCollision = true;
-      }
+  for (var i = 0; i < this.segments.length; i++) {
+    if (head.equal(this.segments[i])) {
+      selfCollision = true;
     }
+  }
 
-➏   return wallCollision || selfCollision;
-  };
+  return wallCollision || selfCollision;
+};
 ```
 
-### 检查墙壁碰撞
+##### 检查墙壁碰撞
 
+我们创建变量 `leftCollision` 并将其设置为 `head.col === 0` 的值。如果蛇撞到了左侧墙，该变量将为 `true`；也就是说，当它位于第 `0` 列时。同样，下一行中的变量 `topCollision` 检查蛇头所在的行数，以判断它是否撞到了上墙。
 
+之后，我们通过检查蛇头的列值是否等于 `widthInBlocks - 1` 来检查是否与右侧墙发生碰撞。由于 `widthInBlocks` 被设置为 `40`，因此此操作是检查蛇头是否在第 `39` 列，这对应于右墙，正如你在之前的图 17-1 中所示。然后，我们对 `bottomCollision` 执行相同的操作，检查蛇头的 `row` 属性是否等于 `heightInBlocks - 1`。
 
-
-
-在 ➊ 处，我们创建变量 `leftCollision` 并将其设置为 `head.col === 0` 的值。如果蛇撞到了左侧墙，该变量将为 `true`；也就是说，当它位于第 0 列时。同样，下一行中的变量 `topCollision` 检查蛇头所在的行数，以判断它是否撞到了上墙。
-
-之后，我们通过检查蛇头的列值是否等于 `widthInBlocks - 1` 来检查是否与右侧墙发生碰撞。由于 `widthInBlocks` 被设置为 `40`，因此此操作是检查蛇头是否在第 39 列，这对应于右墙，正如你在之前的图 17-1 中所示。然后，我们对 `bottomCollision` 执行相同的操作，检查蛇头的 `row` 属性是否等于 `heightInBlocks - 1`。
-
-在 ➋ 处，我们使用 `||`（或）运算符通过检查 `leftCollision` 或 `topCollision` 或 `rightCollision` 或 `bottomCollision` 是否为 `true` 来确定蛇是否与墙碰撞。我们将布尔结果保存在变量 `wallCollision` 中。
+我们使用 `||`（或）运算符通过检查 `leftCollision` 或 `topCollision` 或 `rightCollision` 或 `bottomCollision` 是否为 `true` 来确定蛇是否与墙碰撞。我们将布尔结果保存在变量 `wallCollision` 中。
 
 ![image with no caption](img/httpatomoreillycomsourcenostarchimages2162133.png.jpg)
 
-### 检查自我碰撞
+##### 检查自我碰撞
 
-为了确定蛇是否与自己发生碰撞，我们在 ➌ 处创建了一个名为 `selfCollision` 的变量，并将其初始设置为 `false`。然后于 ➍ 处，我们使用一个 `for` 循环遍历蛇的所有片段，使用 `head.equal(this.segments[i])` 来确定新头部是否与任何片段处于同一位置。头部和其他所有片段都是块（blocks），因此我们可以使用为块对象定义的 `equal` 方法来查看它们是否处于同一位置。如果我们发现蛇的任何片段与新头部处于同一位置，我们就知道蛇与自己发生了碰撞，并将 `selfCollision` 设置为 `true`（在 ➎ 处）。
+为了确定蛇是否与自己发生碰撞，我们创建了一个名为 `selfCollision` 的变量，并将其初始设置为 `false`。然后，我们使用一个 `for` 循环遍历蛇的所有片段，使用 `head.equal(this.segments[i])` 来确定新头部是否与任何片段处于同一位置。头部和其他所有片段都是块，因此我们可以使用为块对象定义的 `equal` 方法来查看它们是否处于同一位置。如果我们发现蛇的任何片段与新头部处于同一位置，我们就知道蛇与自己发生了碰撞，并将 `selfCollision` 设置为 `true`。
 
-最后，在 ➏ 处，我们返回 `wallCollision || selfCollision`，如果蛇撞到了墙或自身，该结果将为 `true`。
+最后，我们返回 `wallCollision || selfCollision`，如果蛇撞到了墙或自身，该结果将为 `true`。
 
-# 使用键盘设置蛇的方向
+## 使用键盘设置蛇的方向
 
 接下来，我们将编写代码，让玩家使用键盘设置蛇的方向。我们将添加一个 `keydown` 事件处理器来检测箭头键何时被按下，并将蛇的方向设置为匹配该按键。
 
-## 添加 keydown 事件处理器
+### 添加 keydown 事件处理器
 
 这段代码处理键盘事件：
 
-```
-➊ var directions = {
+```javascript
+var directions = {
     37: "left",
     38: "up",
     39: "right",
     40: "down"
   };
 
-➋ $("body").keydown(function (event) {
-    var newDirection = directions[event.keyCode];
-➌   if (newDirection !== undefined) {
-       snake.setDirection(newDirection);
-    }
-  });
+$("body").keydown(function (event) {
+  var newDirection = directions[event.keyCode];
+  if (newDirection !== undefined) {
+    snake.setDirection(newDirection);
+  }
+});
 ```
 
-在 ➊ 处，我们创建一个对象，将箭头键的键（keycodes）转换为指示其代表方向的字符串（这个对象与我们在响应键盘 中使用的 `keyActions` 对象非常相似）。在 ➋ 处，我们为 `body` 元素上的 `keydown` 事件附加了一个事件处理器。当用户按下按键时（只要他们先点击了网页内部），该处理器就会被调用。
+我们创建一个对象，将箭头键的键码转换为指示其代表方向的字符串（这个对象与我们在“响应键盘”中使用的 `keyActions` 对象非常相似）。我们为 `body` 元素上的 `keydown` 事件附加了一个事件处理器。当用户按下按键时（只要他们先点击了网页内部），该处理器就会被调用。
 
-该处理器首先将事件的键转换为方向字符串，然后将该字符串保存在变量 `newDirection` 中。如果键不是 37、38、39 或 40（我们关心的箭头键的键），`directions[event.keyCode]` 将会为 `undefined`。
+该处理器首先将事件的键转换为方向字符串，然后将该字符串保存在变量 `newDirection` 中。如果键不是 `37`、`38`、`39` 或 `40`（我们关心的箭头键的键码），`directions[event.keyCode]` 将会为 `undefined`。
 
-在 ➌ 处，我们检查 `newDirection` 是否不等于 `undefined`。如果它不为 `undefined`，我们就调用蛇的 `setDirection` 方法，并传递 `newDirection` 字符串。（因为这个 `if` 语句中没有 `else` 分支，如果 `newDirection` 是 `undefined`，那么我们就直接忽略这次按键。）
+我们检查 `newDirection` 是否不等于 `undefined`。如果它不为 `undefined`，我们就调用蛇的 `setDirection` 方法，并传递 `newDirection` 字符串。（因为这个 `if` 语句中没有 `else` 分支，如果 `newDirection` 是 `undefined`，那么我们就直接忽略这次按键。）
 
 这段代码还无法工作，因为我们还没有在蛇上定义 `setDirection` 方法。现在来定义它。
 
-## 添加 setDirection 方法
+### 添加 setDirection 方法
 
 `setDirection` 方法获取从刚才查看的键盘处理器传的新方向，并用它更新蛇的方向。该方法还防止玩家做出会导致蛇立即撞到自己的转向。例如，如果蛇正在向右移动，然后它在没有向上或向下避让的情况下突然向左转，它将与自己发生碰撞。我们将这些称为“非法转向”，因为我们不允许玩家做出这些转向。例如，图 17-6 显示了蛇向右移动时的有效方向和一个非法方向。
 
@@ -6282,85 +6171,81 @@ this.segments.pop();
 
 以下是 `setDirection` 方法的代码。
 
-```
- Snake.prototype.setDirection = function (newDirection) {
-➊   if (this.direction === "up" && newDirection === "down") {
-      return;
-    } else if (this.direction === "right" && newDirection === "left") {
-      return;
-    } else if (this.direction === "down" && newDirection === "up") {
-      return;
-    } else if (this.direction === "left" && newDirection === "right") {
-      return;
-    }
-➋   this.nextDirection = newDirection;
-  };
+```javascript
+Snake.prototype.setDirection = function (newDirection) {
+  if (this.direction === "up" && newDirection === "down") {
+    return;
+  } else if (this.direction === "right" && newDirection === "left") {
+    return;
+  } else if (this.direction === "down" && newDirection === "up") {
+    return;
+  } else if (this.direction === "left" && newDirection === "right") {
+    return;
+  }
+  this.nextDirection = newDirection;
+};
 ```
 
-➊ 处的 `if...else` 语句有四个部分，用于处理我们想要防止的四个非法转向。第一部分说，如果蛇正在向上移动（`this.direction` 为 `"up"`）且玩家按下向下箭头键（`newDirection` 为 `"down"`），我们应该通过 `return` 提前退出方法。语句的其他部分以相同的方式处理其他非法转向。
+`if...else` 语句有四个部分，用于处理我们想要防止的四个非法转向。第一部分说，如果蛇正在向上移动（`this.direction` 为 `"up"`）且玩家按下向下箭头键（`newDirection` 为 `"down"`），我们应该通过 `return` 提前退出方法。语句的其他部分以相同的方式处理其他非法转向。
 
 只有当 `newDirection` 是一个有效的新方向时，`setDirection` 方法才会到达最后一行；否则，其中一个 `return` 语句将停止方法。
 
-如果 `newDirection` 被允许，我们在 ➋ 处将其设置为蛇的 `nextDirection` 属性。
+如果 `newDirection` 被允许，我们将其设置为蛇的 `nextDirection` 属性。
 
-# 创建苹果
+## 创建苹果
 
 在这个游戏中，我们将苹果表示为一个包含三个组件的对象：一个 `position` 属性，持有作为块对象的苹果位置；一个 `draw` 方法，我们将用它来绘制苹果；以及一个 `move` 方法，一旦苹果被蛇吃掉，我们将用它来赋予苹果一个新的位置。
 
-## 编写苹果构造函数
+### 编写苹果构造函数
 
 构造函数简单地将苹果的 `position` 属性设置为一个新的块对象。
 
-```
+```javascript
 var Apple = function () {
   this.position = new Block(10, 10);
 };
 ```
 
-这在第 10 列第 10 行创建一个块对象，并将其分配给苹果的 `position` 属性。我们将使用这个构造函数在游戏开始创建一个苹果对象。
+这在第 `10` 列第 `10` 行创建一个块对象，并将其分配给苹果的 `position` 属性。我们将使用这个构造函数在游戏开始创建一个苹果对象。
 
-## 绘制苹果
+### 绘制苹果
 
 我们将使用这个 `draw` 方法来绘制苹果：
 
-```
+```javascript
 Apple.prototype.draw = function () {
   this.position.drawCircle("LimeGreen");
 };
 ```
 
-苹果的 `draw` 方法非常简单，因为所有的工作由 `drawCircle` 方法完成（在添加 drawCircle 方法 中创建）。要绘制苹果，我们只需调用苹果 `position` 属性上的 `drawCircle` 方法，传递颜色 `"LimeGreen"` 以便在指定的块中画一个绿色圆形。
+苹果的 `draw` 方法非常简单，因为所有的工作由 `drawCircle` 方法完成（在“添加 drawCircle 方法”中创建）。要绘制苹果，我们只需调用苹果 `position` 属性上的 `drawCircle` 方法，传递颜色 `"LimeGreen"` 以便在指定的块中画一个绿色圆形。
 
 要测试绘制苹果，请运行以下代码：
 
-```
+```javascript
 var apple = new Apple();
 apple.draw();
 ```
 
-## 移动苹果
+### 移动苹果
 
 `move` 方法将苹果移动到游戏区域内的随机新位置（也就是说，画布上除边界以外的任何块）。每当蛇吃掉苹果时，我们都会调用此方法，以便苹果在新的位置重新出现。
 
-
-
-
-
 ```javascript
 Apple.prototype.move = function () {
-  ➊ var randomCol = Math.floor(Math.random() * (widthInBlocks - 2)) + 1;
+  var randomCol = Math.floor(Math.random() * (widthInBlocks - 2)) + 1;
   var randomRow = Math.floor(Math.random() * (heightInBlocks - 2)) + 1;
   this.position = new Block(randomCol, randomRow);
 };
 ```
 
-在 `➊` 处创建了变量 `randomCol` 和 `randomRow`。这些变量将被设置为可游戏区域内的随机列值和行值。正如在图 17-1 中所示，可游戏区域的列和行范围从 1 到 38，因此我们需要在该范围内选取两个随机数。
+创建了变量 `randomCol` 和 `randomRow`。这些变量将被设置为可游戏区域内的随机列值和行值。正如在图 17-1 中所示，可游戏区域的列和行范围从 `1` 到 `38`，因此我们需要在该范围内选取两个随机数。
 
-为了生成这些随机数，我们可以调用 `Math.floor(Math.random() * 38)`，这将得到一个 0 到 37 之间的随机数，然后将结果加 1 以得到 1 到 38 之间的数字（关于 `Math.floor` 和 `Math.random` 如何工作的更多信息，请参见 `Decision Maker`）。
+为了生成这些随机数，我们可以调用 `Math.floor(Math.random() * 38)`，这将得到一个 `0` 到 `37` 之间的随机数，然后将结果加 `1` 以得到 `1` 到 `38` 之间的数字（关于 `Math.floor` 和 `Math.random` 如何工作的更多信息，请参见“Decision Maker”）。
 
-这正是我们在 `➊` 处创建随机列值时所的操作，但我们没有编写 `38`，而是编写了 `(widthInBlocks - 2)`。这意味着以后更改了游戏的大小，就不需要修改此代码。我们使用相同的方法获取随机行值，即 `Math.floor(Math.random() * (heightInBlocks - 2)) + 1`。
+这正是我们创建随机列值时所做的操作，但我们没有编写 `38`，而是编写了 `(widthInBlocks - 2)`。这意味着以后更改了游戏的大小，就不需要修改此代码。我们使用相同的方法获取随机行值，即 `Math.floor(Math.random() * (heightInBlocks - 2)) + 1`。
 
-最后，在 `➋` 处，我们使用随机列和行值创建一个新的块对象，并将该块保存到 `this.position` 中。这意味着苹果的位置将更新为游戏区域内某个新随机位置。
+最后，我们使用随机列和行值创建一个新的块对象，并将该块保存到 `this.position` 中。这意味着苹果的位置将更新为游戏区域内某个新随机位置。
 
 你可以如下测试 `move` 方法：
 
@@ -6370,9 +6255,11 @@ apple.move();
 apple.draw();
 ```
 
-# 整合所有内容
+## 整合所有内容
 
 我们的游戏完整代码包含了几乎 200 行 JavaScript！组装完成后，它看起来如下所示：
+
+
 
 ```javascript
 // 设置 canvas
@@ -6515,9 +6402,6 @@ Snake.prototype.checkCollision = function (head) {
 };
 ```
 
-
-
-
 这段代码由多个部分组成。第一部分位于➊处，是设置游戏所有变量的地方，包括 `canvas`、`context`、`width` 和 `height`（我们在第 16 章 中查看过这些内容）。接下来，在➋处，是所有的独立函数：`drawBorder`、`drawScore`、`gameOver` 和 `circle`。
 
 ➌处是 `Block` 构造函数的代码，随后是它的 `drawSquare`、`drawCircle` 和 `equal` 方法。然后，在➍处，我们有 `Snake` 构造函数及其所有的方法。之后，在➎处是 `Apple` 构造函数及其 `draw` 和 `move` 方法。
@@ -6546,19 +6430,19 @@ Snake.prototype.checkCollision = function (head) {
 
 以下是你改进并为游戏添加功能的几种方法。
 
-### #1：让游戏变大
+## #1：让游戏变大
 
 将游戏尺寸改为 500 像素方形。你需要在哪里修改代码才能使其在 500 像素下运行？
 
-### #2：给蛇上色
+## #2：给蛇上色
 
 我们的蛇有点无聊：身体的每一段都是蓝色的。如果你交替颜色来创建条纹，它看起来可能更像真实的蛇。例如，让头部变成绿色，然后在身体其余部分蓝色和黄色之间交替，或者选择你自己的颜色。
 
-### #3：让游戏随着玩而加速
+## #3：让游戏随着玩而加速
 
 修改游戏，使得每当蛇吃到苹果时，游戏就会加速。要做到这一点，你需要修改代码使用 `setTimeout` 代替 `setInterval`，因为 `setInterval` 会以固定的间隔不断调用函数，且无法更改。相反，你可以通过 `setTimeout` 重复调用函数，并在每次调用时更改超时延迟：
 
-```
+```javascript
 var animationTime = 100;
 var gameLoop = function () {
   // 绘制和更新游戏的代码应该放在这里
@@ -6572,7 +6456,7 @@ gameLoop();
 
 （这里需要记住的另一点是，你需要找到一种新方法在游戏结束时停止循环。你会怎么做？）
 
-### #4：修复 APPLE.MOVE 方法
+## #4：修复 APPLE.MOVE 方法
 
 每当你移动苹果时，它都会移动到一个新的随机位置，但按照目前的写法，没有任何机制阻止苹果移动到蛇已经占据的方格上。为了防止这种情况，请修改 `move` 方法以考虑蛇身体部分当前的位置。（提示：使用 `while` 循环不断调用 `move`，直到它选取到一个未被蛇占据的位置。）
 
@@ -6584,9 +6468,9 @@ gameLoop();
 
 我们在书中看了很多 JavaScript，但关于这种语言你还有很多可以学习的内容。这些书籍和网站将帮助你了解更多 JavaScript 的细节：
 
-* `JavaScript: The Good Parts` 作者 Douglas Crockford (O’Reilly Media, 2008)
-* `Eloquent JavaScript, 2nd Edition,* 作者 Marijn Haverbeke (No Starch Press, 2014)
-* `JavaScript: The Definitive Guide, 4th Edition,* 作者 David Flanagan (O’Reilly Media, 2001)
+* `JavaScript: The Good Parts` 作者 Douglas Crockford (O'Reilly Media, 2008)
+* `Eloquent JavaScript, 2nd Edition` 作者 Marijn Haverbeke (No Starch Press, 2014)
+* `JavaScript: The Definitive Guide, 4th Edition` 作者 David Flanagan (O'Reilly Media, 2001)
 * Mozilla 开发者网络的 JavaScript 资源：`https://developer.mozilla.org/en-US/docs/Web/JavaScript/`
 * Codecademy JavaScript 课程：`http://www.codecademy.com/en/tracks/javascript/`
 
@@ -6611,16 +6495,12 @@ CSS（Cascading Style Sheets 层级样式表）是用于控制网页外观的语
 
 ## 使用 Node.js 进行服务端代码
 
-
-
-
-
-网页运行在`web servers`（Web 服务器）上。服务器存储网页所有的 HTML、CSS 和 JavaScript，并允许人们通过互联网访问该页面。你还可以为服务器编写程序（称为`server-side` 服务端代码），以便服务器在每次加载网页时生成新的 HTML 文件。例如，当你访问`[http://twitter.com/]` 时，服务器上会运行一个程序，该程序会为你的信息流查找最新的推文，生成一个包含这些推文的 HTML 文件，并将该文件发送到你的浏览器。
+网页运行在 `web servers`（Web 服务器）上。服务器存储网页所有的 HTML、CSS 和 JavaScript，并允许人们通过互联网访问该页面。你还可以为服务器编写程序（称为 `server-side` 服务端代码），以便服务器在每次加载网页时生成新的 HTML 文件。例如，当你访问 `http://twitter.com/` 时，服务器上会运行一个程序，该程序会为你的信息流查找最新的推文，生成一个包含这些推文的 HTML 文件，并将该文件发送到你的浏览器。
 
 Node.js 允许你使用 JavaScript 编写服务端代码。通过以下链接了解更多关于 Node.js 的信息：
 
-*   Node.js 文档：`[http://nodejs.org/]`
-*   Node 入门书籍：`[http://www.nodebeginner.org/]`
+* Node.js 文档：`http://nodejs.org/`
+* Node 入门书籍：`http://www.nodebeginner.org/`
 
 # 图形化编程
 
@@ -6630,221 +6510,251 @@ Node.js 允许你使用 JavaScript 编写服务端代码。通过以下链接了
 
 我们在本书中学习了 `canvas` 元素的基础知识，但你还可以用它做更多事情。这里是一些你可以用来进一步学习的教程和游戏：
 
-*   Mozilla 开发者网络（MDN）的 Canvas 教程：`[https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial/]`
-*   Crunchzilla 的 Code Monster：`[http://www.crunchzilla.com/code-monster/]`
+* Mozilla 开发者网络（MDN）的 Canvas 教程：`https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial/`
+* Crunchzilla 的 Code Monster：`http://www.crunchzilla.com/code-monster/`
 
 ## 使用 Raphaël 使用 SVG
 
 SVG 是一种图像格式，允许你绘制形状并让它们动画，而无需为每个动画步骤从头开始绘制。SVG 编程可能很难上手，但如果你使用名为 Raphaël 的 JavaScript 库，就会简单得多。以下是一些学习 Raphaël 的资源：
 
-*   Raphaël 网站：`[http://raphaeljs.com/]`
-*   Raphaël JS 简介：`[http://code.tutsplus.com/tutorials/an-introduction-to-the-raphael-js-library--net-7186/]`
+* Raphaël 网站：`http://raphaeljs.com/`
+* Raphaël JS 简介：`http://code.tutsplus.com/tutorials/an-introduction-to-the-raphael-js-library--net-7186/`
 
 # 3D 编程
 
-记得在`第 13 章`中，我们通过调用 `canvas.getContext("2d")` 告诉 `canvas` 我们想创建一个 2D 绘图上下文吗？使用 `canvas` 进行 3D 图形也是可能的。这是另一个更容易使用库的领域之一，因此我建议使用 three.js 库。这里是一些学习 three.js 的资源：
+记得在 `第 13 章` 中，我们通过调用 `canvas.getContext("2d")` 告诉 `canvas` 我们想创建一个 2D 绘图上下文吗？使用 `canvas` 进行 3D 图形也是可能的。这是另一个更容易使用库的领域之一，因此我建议使用 three.js 库。这里是一些学习 three.js 的资源：
 
-*   three.js 手册：`[http://threejs.org/docs/index.html#Manual]`
-*   three.js 入门指南：`[http://blog.teamtreehouse.com/the-beginners-guide-to-three-js/]`
+* three.js 手册：`http://threejs.org/docs/index.html#Manual`
+* three.js 入门指南：`http://blog.teamtreehouse.com/the-beginners-guide-to-three-js/`
 
 # 机器人编程
 
 你甚至可以使用 JavaScript 控制机器人！例如，Parrot AR.Drone 是一种你可以使用 Node.js 控制的微型飞行直升机。或者你可以查看 Johnny-Five，这是一个 JavaScript 库，允许你使用 Node.js 控制设备，如 Arduino（一种用于许多自制电子产品和机器人项目的流行微控制器）。以下是一些学习如何 JavaScript 控制机器人和其他设备的资源：
 
-*   node-ar-drone：`[https://github.com/felixge/node-ar-drone/]`
-*   NodeCopter：`[http://nodecopter.com/]`
-*   NodeBots：`[http://nodebots.io/]`
-*   Johnny-Five：`[https://github.com/rwaldron/johnny-five/]`
+* node-ar-drone：`https://github.com/felixge/node-ar-drone/`
+* NodeCopter：`http://nodecopter.com/`
+* NodeBots：`http://nodebots.io/`
+* Johnny-Five：`https://github.com/rwaldron/johnny-five/`
 
 # 音频编程
 
 JavaScript 还允许你使用 Web Audio API（`application programming interface` 的缩写）在浏览器中进行高级音频编程。你可以使用 Web Audio API 制作音效，甚至创建自己的音乐！这里是一些学习更多 Web Audio API 的资源：
 
-*   Mozilla 开发者网络（MDN）的 Web Audio API：`[https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API/]`
-*   HTML5 Rocks：入门 Web Audio API：`[http://www.html5rocks.com/en/tutorials/webaudio/intro/]`
+* Mozilla 开发者网络（MDN）的 Web Audio API：`https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API/`
+* HTML5 Rocks：入门 Web Audio API：`http://www.html5rocks.com/en/tutorials/webaudio/intro/`
 
 # 游戏编程
 
 如果你想在 JavaScript 中进行更多游戏编程，可能想尝试使用 `game engine`（游戏引擎）。游戏引擎是代码集合，处理游戏的许多底层问题（如键盘和鼠标输入），让你专注于让游戏与众不同的部分。这里是一些你可以查看以了解更多游戏编程和游戏引擎的资源：
 
-*   Crafty 游戏引擎：`[http://craftyjs.com/]`
-*   Pixi 渲染器：`[https://github.com/GoodBoyDigital/pixi.js]`
-*   HTML5 游戏引擎：`[http://html5gameengine.com/]`
-*   Udacity HTML5 游戏开发：`[https://www.udacity.com/course/cs255]`
-*   Chris Strom 著《儿童 3D 游戏编程》（Pragmatic Programmers, 2013）
+* Crafty 游戏引擎：`http://craftyjs.com/`
+* Pixi 渲染器：`https://github.com/GoodBoyDigital/pixi.js`
+* HTML5 游戏引擎：`http://html5gameengine.com/`
+* Udacity HTML5 游戏开发：`https://www.udacity.com/course/cs255`
+* Chris Strom 著《儿童 3D 游戏编程》（Pragmatic Programmers, 2013）
 
 # 使用 JSFiddle 共享你的代码
 
-如果你想向世界分享你编写的所有出色的 JavaScript 呢？有很多方法可以实现。简单的方法之一是 JSFiddle (`[http://jsfiddle.net/]`）。只需在框中输入你的 JavaScript，在框中添加任何需要的 HTML，然后点击 Run 运行你的程序。要共享它，点击 Save，这会给你一个可以与任何人共享的 URL。
+如果你想向世界分享你编写的所有出色的 JavaScript 呢？有很多方法可以实现。简单的方法之一是 JSFiddle (`http://jsfiddle.net/`)。只需在框中输入你的 JavaScript，在框中添加任何需要的 HTML，然后点击 Run 运行你的程序。要共享它，点击 Save，这会给你一个可以与任何人共享的 URL。
 
 # 术语表
 
 计算机编程世界充满了各种特殊术语和定义，可能需要时间才能掌握。在这个术语表中，你将找到书中使用的许多编程术语的定义。当你阅读这本书时，如果遇到不理解的术语，可以在这里查找简短的解释。
 
-argument（参数）
+**argument（参数）**
 
 可以传递给函数的数值。
 
-array（数组）
+**array（数组）**
 
 JavaScript 值的列表。在数组中，每个值都有一个索引，即该值的数字编号位置。第一个值位于 0，下一个值位于 1，依此类推。
 
-attribute（属性）
+**attribute（属性）**
 
 HTML 元素中的键值对。你可以使用 HTML 属性来控制元素的某些方面，例如元素链接到何处或元素的大小。
 
-Boolean（布尔值）
+**Boolean（布尔值）**
 
 可以是 `true` 或 `false` 的值。
 
-call（调用）
+**call（调用）**
 
 执行或运行一个函数。在 JavaScript 中调用函数时，你输入函数名后跟一对括号（括号内可以包含任何参数）。
 
-camel case（驼峰命名法）
+**camel case（驼峰命名法）**
 
-一种常见的变量命名方式，其中每个单词的首字母（除第一个单词外）大大写，然后将所有单词连接成一个长单词，例如：`myCamelCaseVariable`。
+一种常见的变量命名方式，其中每个单词的首字母（除第一个单词外）大写，然后将所有单词连接成一个长单词，例如：`myCamelCaseVariable`。
 
-comment（注释）
+**comment（注释）**
 
 程序中不被 JavaScript 解释器执行的文本——注释只是为了向阅读代码的人描述程序。
 
-control structure（控制结构）
+**control structure（控制结构）**
 
 一种控制代码运行何时以及运行频率的方法。示例包括条件语句（通过检查条件来控制代码何时运行）和循环（重复执行某段代码若干次）。
 
-conditional statement（条件语句）
+**conditional statement（条件语句）**
 
 在检查条件后执行代码的语句。如果条件为 `true`，则语句将执行一段代码；如果条件为 `false`，它将执行另一段代码或完全停止。示例包括 `if` 语句和 `if...else` 语句。
 
-constructor（构造函数）
+**constructor（构造函数）**
 
 用于创建多个对象的函数，以便它们共享内置属性。
 
-data（数据）
+**data（数据）**
 
 我们在计算机程序中存储和操纵的信息。
 
-decrement（递减）
+**decrement（递减）**
 
 减少变量的值（通常减去 1）。
 
-dialog（对话框）
+**dialog（对话框）**
 
 一个小型弹窗。你可以使用 JavaScript 在浏览器中打开不同类型的对话框，例如 alert（显示消息）或 prompt（提问并接收输入）。
 
-document object model (DOM)（文档对象模型）
-
-
-
-
+**document object model (DOM)（文档对象模型）**
 
 Web 浏览器组织和跟踪网页上 HTML 元素的方式。这些元素以树形结构组织，称为 `DOM 树`。JavaScript 和 jQuery 提供了与 `DOM` 交互的方法，用于创建和修改元素。
 
-### element（元素）
+**element（元素）**
+
 HTML 页面的一部分，例如页眉、段落或主体。元素由起始标记和结束标记（决定元素的类型）标记，并包含其之间的所有内容。`DOM 树`由这些元素组成。
 
-### event（事件）
+**event（事件）**
+
 在浏览器中发生的动作，例如用户的鼠标点击或键盘按下。我们可以通过事件处理器来检测并响应这些事件。
 
-### event handler（事件处理器）
+**event handler（事件处理器）**
+
 每当某个 HTML 元素中发生特定事件时就会调用的函数。例如，在第 11 章游戏中，我们创建了一个事件处理器函数，每当用户点击地图图像时该函数就会调用。
 
-### execute（执行）
+**execute（执行）**
+
 运行一段代码，例如程序或函数。
 
-### function（函数）
+**function（函数）**
+
 将多个语句封装在一起的代码，以便它们一起执行。函数使得在程序的不同部分重复某些操作变得容易。函数可以接受参数作为输入，并输出一个返回值。
 
-### increment（递增）
+**increment（递增）**
+
 增加变量的值（通常为加 1）。
 
-### index（索引）
+**index（索引）**
+
 指示数组内部值位置的数字。索引可以访问数组中的特定值。
 
-### infinite loop（无限循环）
-永远停止停止的循环（通常会导致解释器崩溃）。如果循环条件设置错误，就会发生此错误。
+**infinite loop（无限循环）**
 
-### interpreter（解释器）
+永远不停止的循环（通常会导致解释器崩溃）。如果循环条件设置错误，就会发生此错误。
+
+**interpreter（解释器）**
+
 读取并运行代码的软件。浏览器包含一个 JavaScript 解释器，我们在整本书中使用它来运行 JavaScript。
 
-### jQuery
+**jQuery**
+
 一个 JavaScript 库，提供了许多实用的方法用于修改和操作网页上的 DOM 元素。
 
-### key-value pair（键值对）
+**key-value pair（键值对）**
+
 由一个字符串（称为 `key`）与特定的值（可以是任何类型的值）匹配而成的对。键值对位于 JavaScript 对象内部，用于定义对象的属性和方法。
 
-### keyword（关键字）
-JavaScript 中具有特殊含义的单词（例如 `for`、`return` 或 `function`）。关键字不能用变量名。
+**keyword（关键字）**
 
-### library（库）
+JavaScript 中具有特殊含义的单词（例如 `for`、`return` 或 `function`）。关键字不能用作变量名。
+
+**library（库）**
+
 JavaScript 代码的集合，我们可以将其加载到网页中，以提供额外的函数和方法。在本书中，我们使用 `jQuery` 库，它为我们更方便操作 DOM 的函数和方法。
 
-### loop（循环）
+**loop（循环）**
+
 多次执行一段代码的方式。
 
-### method（方法）
+**method（方法）**
+
 作为对象属性的函数。
 
-### null（空）
+**null（空）**
+
 一种特殊值，用于指示变量被故意留空。
 
-### object（对象）
-一组键值对。每个键都是一个字符串，可以与任何 JavaScript 值配对。你可以可以使用键来检索对象中与之配对的任何值。
+**object（对象）**
 
-### object-oriented programming（面向对象编程）
+一组键值对。每个键都是一个字符串，可以与任何 JavaScript 值配对。你可以使用键来检索对象中与之配对的任何值。
+
+**object-oriented programming（面向对象编程）**
+
 一种利用对象和方法来组织代码并表示程序最重要特征的编程风格。
 
-### programming language（编程语言）
+**programming language（编程语言）**
+
 程序员用来告诉计算机做什么的语言。JavaScript 是一种编程语言，但还有许多其他语言。
 
-### property（属性）
+**property（属性）**
+
 对象中键值对的名称。
 
-### prototype（原型）
+**prototype（原型）**
+
 构造函数的属性。添加到构造函数原型上的任何方法将对由该构造函数创建的所有对象可用。
 
-### return（返回）
+**return（返回）**
+
 离开函数并返回调用该函数的代码的行为。当函数到达其体末尾或遇到 `return` 关键字（用于提前退出函数）时，函数会返回。当函数返回时，它会输出一个返回值（如果未指定特定的返回值，则仅返回空值 `undefined`）。
 
-### selector string（选择器字符串）
+**selector string（选择器字符串）**
+
 表示一个或多个 HTML 元素的字符串。我们可以将此字符串传递给 jQuery 的 `$` 函数来选择这些元素。
 
-### string（字符串）
-由引号括的字符列表，用于表示计算机程序中的文本。
+**string（字符串）**
 
-### syntax（语法）
+由引号括起的字符列表，用于表示计算机程序中的文本。
+
+**syntax（语法）**
+
 关键字、标点符号和其他字符组合以形成可运行的 JavaScript 程序的方式。
 
-### tag（标签）
+**tag（标签）**
+
 用于创建 HTML 元素的标记。所有元素从起始标记开始，大多数元素以结束标记结束。这些标记决定了创建什么类型的元素，起始标记可以包含元素的属性。
 
-### text editor（文本编辑器）
+**text editor（文本编辑器）**
+
 用于编写和编辑纯文本的计算机程序，没有任何字体样式或颜色等特殊格式。良好的文本编辑器对于编写纯文本的程序很有帮助。
 
-### undefined（未定义）
+**undefined（未定义）**
+
 当属性或变量等内容没有分配任何特定值时，JavaScript 使用的值。
 
-### variable（变量）
+**variable（变量）**
+
 给 JavaScript 值命名的方式。在给变量赋值后，你稍后可以使用变量名来检索该值。
 
-### whitespace（空白字符）
+**whitespace（空白字符）**
+
 不可见字符，如空格、换行符和制表符。
 
 # Updates
-访问 [`www.nostarch.com/javascriptforkids`](http://www.nostarch.com/javascriptforkids) 获取更新、错和其他信息。
+
+访问 `www.nostarch.com/javascriptforkids` 获取更新、勘误和其他信息。
 
 # 为好奇的孩子提供更多智能书籍！
 
 ![image with no caption](img/httpatomoreillycomsourcenostarchimages2162139.png.jpg)
 
-**少儿 Python Python**
+**少儿 Python**
 
 **编程的趣味介绍**
 
 作者 JASON R. BRIGGS
+
 2012 年 12 月, 344 页, $34.95
+
 ISBN 978-1-59327-407-8
+
 *全彩*
 
 ![image with no caption](img/httpatomoreillycomsourcenostarchimages2162141.png.jpg)
@@ -6854,8 +6764,11 @@ ISBN 978-1-59327-407-8
 **编程导论**
 
 作者 ERIC WEINSTIN
+
 2014 年 12 月, 360 页, $29.95
+
 ISBN 978-1-59327-566-2
+
 *全彩*
 
 ![image with no caption](img/httpatomoreillycomsourcenostarchimages2162143.png.jpg)
@@ -6865,19 +6778,25 @@ ISBN 978-1-59327-566-2
 **消化系统**
 
 作者 GOMORI and HYUN-DONG HAN
+
 2013 年 10 月, 184 页, $17.95
+
 ISBN 978-1-59327-471-9
+
 *全彩*
 
 ![image with no caption](img/httpatomoreillycomsourcenostarchimages2162145.png.jpg)
 
-**ELOQUENT JAVCRIPT, 2ND EDITION**
+**ELOQUENT JAVASCRIPT, 2ND EDITION**
 
 **现代编程导论**
 
-作者 MARIJ HAVERBE
+作者 MARIJN HAVERBEKE
+
 2014 年 12 月, 400 页, $39.95
+
 ISBN 978-1-59327-584-6
+
 *全彩*
 
 ![image with no caption](img/httpatomoreillycomsourcenostarchimages2162147.png.jpg)
@@ -6885,19 +6804,24 @@ ISBN 978-1-59327-584-6
 **漫画数据库指南**
 
 作者 TAKAHASHI, SHOKO AZUMA, and TREND-PRO CO., LTD.
+
 2009 年 1 月, 224 页, $19.95
+
 ISBN 978-1-59327-190-9
+
 800.420.7240 or 415.863.9900 | sales@nostarch.com | www.nostarch.com
 
 # Index
 
 ### 关于数字索引的说明
+
 索引条目中的链接显示为该条目所在的章节标题。由于某些章节有多个索引标记，一个条目有多个链接并不稀奇。点击任何链接都将直接带你进入正文中标记出现的地方。
 
 ### 符号
+
 ! (非), 什么是 JavaScript?
 
-" (双引号), `+= (加等赋值) 和 –= (减等赋值)](#ch02.html_iddle011), 创建对象
+" (双引号), `+=` (加等赋值) 和 `-=` (减等赋值), 创建对象
 
 # (选择器字符串中的 id), 使用 jQuery 替换标题
 
@@ -6912,10 +6836,6 @@ $ (jQuery 函数), 使用 jQuery 替换标题
 () (括号), 数字和运算符, 从字符串中获取单个字符, 调用函数
 
 * (乘法), 数字和运算符
-
-
-
-
 
 `*=` (乘法并赋值), `+=` (加法并赋值) 和 `-=` (减法并赋值), 编程挑战
 
@@ -7005,148 +6925,107 @@ arc 方法，绘制线条或路径
 
 用于参数，向函数传递多个参数
 
-ch,,.html0iddle0055)
+### B
 
-000) , [), 你为什么要关心数组？,](#ch03.html_iddle1055)
+括号，查找字符串的长度, 对象, 访问对象中的值
 
- 创建数组, 访问数组元素, 在数组中混合数据类型,](#ch03.html_iddle1044)
+花括号，对象, 访问对象中的值
 
- 无需引号的键
+方括号，查找字符串的长度（参见方括号）
 
-无需引号的键](#ch04.html_iddle1029) (参见点表示法)
-
-无需引号的键](#ch04.html_iddle1045)
-
-
-
-
-
-- 括号，查找字符串的长度, 对象, 访问对象中的值
-- 花括号，对象, 访问对象中的值
-- 方括号，查找字符串的长度（参见方括号）
-- `break` 关键字，处理玩家输入
+`break` 关键字，处理玩家输入
 
 ### C
 
-- 这里的，查找数组的长度, 调用函数, 向函数传递参数, 术表
-- 函数，调用函数, 向函数传递参数, 术表
-- 方法，查找数组的长度
-- 驼命名法，命名变量, 术表
-- canvas 元素，画布元素, 画布元素, 选择并保存 canvas 元素, 绘制多个正方形, 绘制矩形轮廓, 绘制线条或路径, 绘制线条或路径, 填充路径, 让画布上的物体移动, 在页面上移动, 清空画布, 动画正方形的大小, 动画正方形的大小, 小蹦球！, CSS
-- 动画，让画布上的物体移动, 在页面上移动, 动画正方形的大小, 动画正方形的大小, 小蹦球！
-- 蹦蹦球，小蹦球！
-- 改变大小，动画正方形的大小
-- 水平移动，在页面上移动
-- 随机蜜，动画正方形的大小
-- 圆形和弧，填充路径
-- 清空，清空画布
-- 颜色，绘制多个正方形
-- 创建，画布元素
-- 线条和路径，绘制线条或路径, 绘制线条或路径
-- 绘制，绘制线条或路径
-- 填充，绘制线条或路径
-- 矩形和正方形，选择并保存 canvas 元素, 绘制矩形轮廓
-- 绘制，选择并保存 canvas 元素
-- 轮廓化，绘制矩形轮廓
-- 资源，CSS
-- 级联样式表 (CSS)，CSS
-- 链式 if...else 语句，链式 if...else 语句
-- 链式 jQuery 动画，链式 jQuery 动画
-- Chrome 浏览器和控制台，编写 JavaScript
-- `clearInterval` 函数，使用 setInterval 多次调用代码
-- `clearRect` 上文方法，在页面上移动
-- `clearTimeout` 函数，使用 setTimeout 延迟代码
-- 点击事件，响应用户操作
-- 类型转换，创建提示框
-- 碰撞检测，移动球, 检查碰撞并添加头部
-- 冒号 (:)，创建对象
-- 逗号 (,)，向函数传递多个参数
-- 注释，语法, 更新游戏状态, 术表
-- `concat` 方法，从数组中移除元素
-- 条件（控制结构中的），if 语句, 链式 if...else 语句, while 循环, 防止死循环
-- `for` 循环，防止死循环
-- `if` 语句，if 语句
-- `if...else` 语句，链式 if...else 语句
-- `while` 循环，while 循环
-- 条件，条件判断和循环, 在 HTML 中嵌入 JavaScript, 在 HTML 中嵌入 JavaScript, if 语句, 使用 return 提前退出函数, 术表
-- `if` 语句，在 HTML 中嵌入 JavaScript
-- `if...else` 语句，在 HTML 中嵌入 JavaScript, if 语句, 使用 return 提前退出函数
-- `confirm` 函数，创建提示框
-- `console`，编写 JavaScript, 创建提示框, 创建数组, 创建对象, 在 HTML 中嵌入 JavaScript, 画布元素, 画布元素, 选择并保存 canvas 元素, 绘制多个正方形, 绘制矩形轮廓, 绘制线条或路径, 绘制线条或路径, 填充路径, 让画布上的物体移动, 在页面上移动, 清空画布, 动画正方形的大小, 动画正方形的大小, 小蹦球！, CSS
-- 动画，让画布上的物体移动, 在页面上移动, 动画正方形的大小, 动画正方形的大小, 小蹦球！
-- 蹦蹦球，小蹦球！
-- 改变大小，动画正方形的大小
-- 水平移动，在页面上移动
-- 随机蜜，动画正方形的大小
-- 圆形和弧，填充路径
-- 清空，清空画布
-- 颜色，绘制多个正方形
-- 创建，画布元素
-- 线条和路径，绘制线条或路径, 绘制线条或路径
-- 绘制，绘制线条或路径
-- 填充，绘制线条或路径
-- 矩形和正方形，选择并保存 canvas 元素, 绘制矩形轮廓
-- 绘制，选择并保存 canvas 元素
-- 轮廓化，绘制矩形轮廓
-- 资源，CSS
+调用，查找数组的长度, 调用函数, 向函数传递参数, 术表
 
-等等，输入文本有很多重复。我将根据提供的类别重新格式化它。
+函数，调用函数, 向函数传递参数, 术表
 
-[content]
-*   **括号**：查找字符串的长度
-*   **花括号**：对象, 访问对象中的值
-*   **方括号**：查找字符串的长度（参见方括号）
-*   **`break` 关键字**：处理玩家输入
+方法，查找数组的长度
 
-### C
-*   **调用**：查找数组的长度, 调用函数, 向函数传递参数, 术表
-*   **函数**：调用函数, 向函数传递参数, 术表
-*   **方法**：查找数组的长度
-*   **驼命名法**：命名变量, 术表
-*   **canvas 元素**：画布元素, 画布元素, 选择并保存 canvas 元素, 绘制多个正方形, 绘制矩形轮廓, 绘制线条或路径, 绘制线条或路径, 填充路径, 让画布上的物体移动, 在页面上移动, 清空画布, 动画正方形的大小, 动画正方形的大小, 小蹦球！, CSS
-*   **动画**：让画布上的物体移动, 在页面上移动, 动画正方形的大小, 动画正方形的大小, 小蹦球！
-*   **蹦蹦球**：小蹦球！
-*   **改变大小**：动画正方形的大小
-*   **水平移动**：在页面上移动
-*   **随机蜜**：动画正方形的大小
-*   **圆形和弧**：填充路径
-*   **清空**：清空画布
-*   **颜色**：绘制多个正方形
-*   **创建**：画布元素
-*   **线条和路径**：绘制线条或路径, 绘制线条或路径
-*   **绘制**：绘制线条或路径
-*   **填充**：绘制线条或路径
-*   **矩形和正方形**：选择并保存 canvas 元素, 绘制矩形轮廓
-*   **绘制**：选择并保存 canvas 元素
-*   **轮廓化**：绘制矩形轮廓
-*   **资源**：CSS
-*   **级联样式表 (CSS)**：CSS
-*   **链式 if...else 语句**：链式 if...else 语句
-*   **链式 jQuery 动画**：链式 jQuery 动画
-*   **Chrome 浏览器和控制台**：编写 JavaScript
-*   **`clearInterval` 函数**：使用 setInterval 多次调用代码
-*   **`clearRect` 上文方法**：在页面上移动
-*   **`clearTimeout` 函数**：使用 setTimeout 延迟代码
-*   **点击事件**：响应用户操作
-*   **类型转换**：创建提示框
-*   **碰撞检测**：移动球, 检查碰撞并添加头部
-*   **冒号 (:)**：创建对象
-*   **逗号 (,)**：向函数传递多个参数
-*   **注释**：语法, 更新游戏状态, 术表
-*   **`concat` 方法**：从数组中移除元素
-*   **条件（控制结构中的）**：if 语句, 链式 if...else 语句, while 循环, 防止死循环
-*   **`for` 循环**：防止死循环
-*   **`if` 语句**：if 语句
-*   **`if...else` 语句**：链式 if...else 语句
-*   **`while` 循环**：while 循环
-*   **条件判断**：条件判断和循环, 在 HTML 中嵌入 JavaScript, 在 HTML 中嵌入 JavaScript, if 语句, 使用 return 提前退出函数, 术表
-*   **`if` 语句**：在 HTML 中嵌入 JavaScript
-*   **`if...else` 语句**：在 HTML 中嵌入 JavaScript, if 语句, 使用 return 提前退出函数
-*   **`confirm` 函数**：创建提示框
-*   **`console`**：编写 JavaScript, 创建提示框, 创建数组, 创建对象, 在 HTML 中嵌入 JavaScript, 画布元素, 画布元素, 选择并保存 canvas 元素, 绘制多个正方形, 绘制矩形轮廓, 绘制线条或路径, 绘制线条或路径, 填充路径, 让画布上的物体移动, 在页面上移动, 清空画布, 动画正方形的大小, 动画正方形的大小, 小蹦球！, CSS
+驼峰命名法，命名变量, 术表
 
+canvas 元素，画布元素, 画布元素, 选择并保存 canvas 元素, 绘制多个正方形, 绘制矩形轮廓, 绘制线条或路径, 绘制线条或路径, 填充路径, 让画布上的物体移动, 在页面上移动, 清空画布, 动画正方形的大小, 动画正方形的大小, 小蹦球！, CSS
 
+动画，让画布上的物体移动, 在页面上移动, 动画正方形的大小, 动画正方形的大小, 小蹦球！
 
+蹦蹦球，小蹦球！
+
+改变大小，动画正方形的大小
+
+水平移动，在页面上移动
+
+随机蜜，动画正方形的大小
+
+圆形和弧，填充路径
+
+清空，清空画布
+
+颜色，绘制多个正方形
+
+创建，画布元素
+
+线条和路径，绘制线条或路径, 绘制线条或路径
+
+绘制，绘制线条或路径
+
+填充，绘制线条或路径
+
+矩形和正方形，选择并保存 canvas 元素, 绘制矩形轮廓
+
+绘制，选择并保存 canvas 元素
+
+轮廓化，绘制矩形轮廓
+
+资源，CSS
+
+级联样式表 (CSS)，CSS
+
+链式 if...else 语句，链式 if...else 语句
+
+链式 jQuery 动画，链式 jQuery 动画
+
+Chrome 浏览器和控制台，编写 JavaScript
+
+`clearInterval` 函数，使用 setInterval 多次调用代码
+
+`clearRect` 上下文方法，在页面上移动
+
+`clearTimeout` 函数，使用 setTimeout 延迟代码
+
+点击事件，响应用户操作
+
+类型转换，创建提示框
+
+碰撞检测，移动球, 检查碰撞并添加头部
+
+冒号 (:)，创建对象
+
+逗号 (,)，向函数传递多个参数
+
+注释，语法, 更新游戏状态, 术表
+
+`concat` 方法，从数组中移除元素
+
+条件（控制结构中的），if 语句, 链式 if...else 语句, while 循环, 防止死循环
+
+`for` 循环，防止死循环
+
+`if` 语句，if 语句
+
+`if...else` 语句，链式 if...else 语句
+
+`while` 循环，while 循环
+
+条件判断，条件判断和循环, 在 HTML 中嵌入 JavaScript, 在 HTML 中嵌入 JavaScript, if 语句, 使用 return 提前退出函数, 术表
+
+`if` 语句，在 HTML 中嵌入 JavaScript
+
+`if...else` 语句，在 HTML 中嵌入 JavaScript, if 语句, 使用 return 提前退出函数
+
+`confirm` 函数，创建提示框
+
+`console`，编写 JavaScript, 创建提示框, 创建数组, 创建对象, 在 HTML 中嵌入 JavaScript, 画布元素, 画布元素, 选择并保存 canvas 元素, 绘制多个正方形, 绘制矩形轮廓, 绘制线条或路径, 绘制线条或路径, 填充路径, 让画布上的物体移动, 在页面上移动, 清空画布, 动画正方形的大小, 动画正方形的大小, 小蹦球！, CSS
 
 向对象添加键，通过向对象中添加值
 
@@ -7156,7 +7035,7 @@ ch,,.html0iddle0055)
 
 双等号 (`==`) 运算符，等于
 
-双引号 (")，` `+=` (加赋值) 和 `-=` (减赋值)，创建对象
+双引号 (")，`+=` (加赋值) 和 `-=` (减赋值)，创建对象
 
 绘图上下文（用于 canvas），选择和保存 canvas 元素
 
@@ -7198,7 +7077,7 @@ ch,,.html0iddle0055)
 
 `fillRect` 上下文方法，Canvas 元素, 绘制线条或路径, 清除画布, 定义 `score` 变量, 构建块构造函数
 
-`fillStyle` 上下文属性，绘制多个正方形, 绘制蜜, 定义 `score` 变量, 编写 `drawScore` 函数, 构建块构造函数
+`fillStyle` 上下文属性，绘制多个正方形, 绘制蜜蜂, 定义 `score` 变量, 编写 `drawScore` 函数, 构建块构造函数
 
 `fillText` 上下文方法，显示得分, 设置文本基线
 
@@ -7232,45 +7111,43 @@ ch,,.html0iddle0055)
 
 函数，函数, 调用函数, 调用函数, 向函数传递参数, 向函数传递参数, 向函数传递多个参数, 向函数传递多个参数, 简化代码, 提前返回, 提前返回, 使用 if...else 语句, 词汇表, 词汇表, 词汇表
 
-参数，向函数传递参数](#ch08.html_iddle1252), 向函数传递多个参数
+参数，向函数传递参数, 向函数传递多个参数
 
-调用，调用函数](#ch08.html_iddle1254), 调用函数
+调用，调用函数, 调用函数
 
-返回，提前返回](#ch08.html_iddle1258), 提前返回
+返回，提前返回, 提前返回
 
-简化，简化代码](#ch08.html_iddle1263)
+简化，简化代码
 
-使用，使用 if...else 语句](#ch08.html_iddle1262)
+使用，使用 if...else 语句
 
 ### G
 
-游戏，编写 JavaScript](#ch01.html_iddle1269), 图形编程
+游戏，编写 JavaScript, 图形编程
 
 `getContext` 上下文方法，Canvas 元素
 
-`getElementById`使用 id 元素](#ch09.html_iddle1267), Canvas 元素
+`getElementById` 使用 id 元素, Canvas 元素
 
 Google Chrome 浏览器，编写 JavaScript
 
-大于 (`>`) 运算符，逻辑运算符](#ch02.html_iddle1271)
+大于 (`>`) 运算符，逻辑运算符
 
 ### H
 
-h1 元素，标签与元素](#ch05.html_iddle1272)
+h1 元素，标签与元素
 
-Hangman 游戏，创建 Hangman 游戏](#ch07.html_iddle1273), 为什么使用 alert of console?, 设计游戏, 代码游戏循环, 代码游戏循环, 响应玩家输入, 更新游戏状态, 编程挑战, 编程挑战, 编程挑战
+Hangman 游戏，创建 Hangman 游戏, 为什么使用 alert of console?, 设计游戏, 代码游戏循环, 代码游戏循环, 响应玩家输入, 更新游戏状态, 编程挑战, 编程挑战, 编程挑战
 
-用于...的代码，更新游戏状态](#ch07.html_iddle1275)
+用于...的代码，更新游戏状态
 
-使用函数创建，编程挑战](#ch08.html_iddle1276)
+使用函数创建，编程挑战
 
-设计，为什么使用 alert of console?](#ch07.html_iddle1277)
+设计，为什么使用 alert of console?
 
-显示玩家进度，代码游戏循环](#ch07.html_iddle1278), 编程挑战, 编程挑战, [Canvas 元素](#ch13.html_iddle1286
+显示玩家进度，代码游戏循环, 编程挑战, 编程挑战
 
-
-
-
+Canvas 元素
 
 hide jQuery 方法，jQuery 链式动画
 
@@ -7370,9 +7247,9 @@ keydown 事件，用键盘控制动画, 响应键盘, 用键盘设置蛇的方�
 
 库，使用 jQuery 处理 DOM 树, 术表
 
-`lineTo` 上文方法，绘制线条或路径
+`lineTo` 上下文方法，绘制线条或路径
 
-`lineWidth` 上文属性，绘制轮廓, 绘制蜜
+`lineWidth` 上下文属性，绘制轮廓, 绘制蜜蜂
 
 链接，HTML 基础, HTML 层级
 
@@ -7384,7 +7261,7 @@ keydown 事件，用键盘控制动画, 响应键盘, 用键盘设置蛇的方�
 
 for 循环，防止无限循环
 
-while 循环，ch06.html_iddle1373]
+while 循环，while 循环
 
 ### M
 
@@ -7410,11 +7287,11 @@ while 循环，ch06.html_iddle1373]
 
 `mousemove` 事件，mousemove 事件, 编程挑战
 
-`moveTo` 上文方法，绘制线条或路径
+`moveTo` 上下文方法，绘制线条或路径
 
 乘法，数字和运算符
 
-乘法赋值 (*=) 运算符，+= (加赋值) 和 –= (减赋值)](#ch02.html_iddle1390), 编程挑战
+乘法赋值 (*=) 运算符，`+=` (加赋值) 和 `-=` (减赋值), 编程挑战
 
 音乐编程，结识 JavaScript, 音频编程
 
@@ -7424,11 +7301,7 @@ while 循环，ch06.html_iddle1373]
 
 Node.js，CSS
 
-
-
-
-
-`not` (!) 运算符，[`||` (或)]](#ch02.html_iddle1397)
+`not` (!) 运算符，`||` (或)
 
 `null` 值，双等号, 创建提示符, 词表
 
@@ -7440,7 +7313,7 @@ Node.js，CSS
 
 `Object.keys` 方法，访问对象中的值, 存储你的电影信息
 
-对象，对象, 对象, 不带引号的键, 访问对象中的值, 向对象添加值, 结合数组与对象, 在控制台中中探索对象, 在控制台中中探索对象, 面向对象编程, 面向对象编程, 在多个对象之间共享方法, 使用原型自定义对象, 词表
+对象，对象, 对象, 不带引号的键, 访问对象中的值, 向对象添加值, 结合数组与对象, 在控制台中探索对象, 在控制台中探索对象, 面向对象编程, 面向对象编程, 在多个对象之间共享方法, 使用原型自定义对象, 词表
 
 访问其中的，不带引号的键
 
@@ -7466,7 +7339,7 @@ offset jQuery 方法，使用 setInterval 动画元素, mousemove 事件, 绘制
 
 运算符，数字与运算符
 
-`or` (`||`) 运算符，[`&&` (与)]](#ch02.html_iddle1426), 结合逻辑运算符
+`or` (`||`) 运算符，`&&` (与), 结合逻辑运算符
 
 ### P
 
@@ -7478,7 +7351,7 @@ offset jQuery 方法，使用 setInterval 动画元素, mousemove 事件, 绘制
 
 点 (`.`)，不带引号的键（参见点表示法）
 
-`pi` (`π`),绘制弧和圆
+`pi` (`π`)，绘制弧和圆
 
 纯文本，HTML 基础
 
@@ -7496,19 +7369,19 @@ offset jQuery 方法，使用 setInterval 动画元素, mousemove 事件, 绘制
 
 `push` 方法，数组的长度, 寻找回家的路
 
-勾股达定理，点击之间的距离
+勾股定理，点击之间的距离
 
 ### Q
 
 队列（数据），通过 pop 反向
 
-引号，[`+=` (加赋值) 和 `-=` (减赋值)]](#ch02.html_iddle1456), 对象
+引号，`+=` (加赋值) 和 `-=` (减赋值), 对象
 
 ### R
 
 弧度，路径
 
-随机数生成，使用 `Math.random()`](#ch03.html_iddle1459)
+随机数生成，使用 `Math.random()`
 
 `return` 关键字，函数的返回值, 使用函数简化代码, 词表
 
@@ -7534,88 +7407,127 @@ offset jQuery 方法，使用 setInterval 动画元素, mousemove 事件, 绘制
 
 使用键盘输入，响应键盘
 
+### D
 
+绘制，构建块构造函数, 添加 drawSquare 方法
 
+### C
 
+圆，添加 drawSquare 方法
 
-## D
-- 绘制，构建块构造函数, 添加 drawSquare 方法
+正方形，构建块构造函数
 
-## C
-- 圆，添加 drawSquare 方法
-- 正方形，构建块构造函数
-- 创建蛇，创建蛇
-- 创建块，制作贪吃蛇游戏：第 2 部分
-- 使用数组创建，你为什么要关心数组？
-- 创建对象，对象
-- 更改大小，分割字符串
+创建蛇，创建蛇
 
-## E
-- 结束游戏，结束游戏, 添加 equal 方法
+创建块，制作贪吃蛇游戏：第 2 部分
 
-## G
-- 游戏网格，创建 HTML, 定义分数变量, 制作贪吃蛇游戏：第 2 部分
-- 游戏玩法，制作贪吃蛇游戏：第 1 部分
-- 从字符串中获取单个字符，查找字符串长度
-- 查找长度，合并字符串
-- 查找数组中元素的索引，查找数组中元素的索引
-- 合并，合并字符串
+使用数组创建，你为什么要关心数组？
 
-## A
-- 添加边框，定义分数变量
-- 使用数组添加元素，访问数组元素
-- 使用字符串访问字符，查找字符串长度
-- 使用数组访问元素，创建数组, 在数组中混合数据类型
-- 使用对象访问值，无需引号的键
-- 从...访问单个字符，查找字符串长度
-- 作为对象键，对象, 创建对象, 无需引号的键
+创建对象，对象
 
-## S
-- 平方，使用勾股定理
-- src 属性，使用 jQuery 处理 DOM 树, 使用 HTML 创建网页
-- 栈（数据结构），通过 pop 反向操作
-- 起始标签，标签和元素
-- 正方形（隐含）
-- 语句，数据类型和变量
-- 字符串，数据类型和变量, `+=` (加等赋值) 和 `-=` (减等赋值](#ch02.html_iddle1520), 合并字符串, 合并字符串, 查找字符串长度, 从字符串中获取单个字符, 分割字符串, 查找数组中元素的索引, 对象, 创建对象, 无需引号的键, 在数组和字符串中使用 for 循环, 处理玩家输入
-- 切，从字符串中获取单个字符
-- 设置，创建 HTML
-- 设置方向，使用键盘设置蛇的方向
-- 蛇，创建蛇, 绘制蛇, 使用键盘设置蛇的方向
-- stroke context 方法，绘制线条或路径, 新的 circle 函数
-- strokeRect context 方法，绘制矩形轮廓, 使用偏移值更改坐标, 小球反弹
-- strokeStyle context 属性，绘制矩形轮廓, 绘制蜜蜂
-- 方括号，[], 查找字符串长度, 你为什么要关心数组？, 创建数组, 访问数组元素, 在数组中混合数据类型, 无需引号的键
+更改大小，分割字符串
 
-## H
-- HTML 代码，设置键盘控制
-- 处理玩家输入，[ch07.html_iddle1527]
+### E
 
-## M
-- 移动，绘制蛇
-- 在数组中混合数据类型，ch03.html_iddle1508
+结束游戏，结束游戏, 添加 equal 方法
 
-## L
-- 遍历...的每个字符，在数组和字符串中使用 for 循环, 处理玩家输入
+### G
 
-## T
-- 将数组转换为，查找数组中元素的索引
+游戏网格，创建 HTML, 定义分数变量, 制作贪吃蛇游戏：第 2 部分
 
-## U
-- 使用勾股定理，[ch11.html_iddle1512]
-- 在数组和字符串中使用 for 循环，ch06.html_iddle1526]
+游戏玩法，制作贪吃蛇游戏：第 1 部分
 
+从字符串中获取单个字符，查找字符串长度
 
+查找长度，合并字符串
 
+查找数组中元素的索引，查找数组中元素的索引
 
+合并，合并字符串
+
+### A
+
+添加边框，定义分数变量
+
+使用数组添加元素，访问数组元素
+
+使用字符串访问字符，查找字符串长度
+
+使用数组访问元素，创建数组, 在数组中混合数据类型
+
+使用对象访问值，无需引号的键
+
+从...访问单个字符，查找字符串长度
+
+作为对象键，对象, 创建对象, 无需引号的键
+
+### S
+
+平方，使用勾股定理
+
+src 属性，使用 jQuery 处理 DOM 树, 使用 HTML 创建网页
+
+栈（数据结构），通过 pop 反向操作
+
+起始标签，标签和元素
+
+正方形（隐含）
+
+语句，数据类型和变量
+
+字符串，数据类型和变量, `+=` (加等赋值) 和 `-=` (减等赋值), 合并字符串, 合并字符串, 查找字符串长度, 从字符串中获取单个字符, 分割字符串, 查找数组中元素的索引, 对象, 创建对象, 无需引号的键, 在数组和字符串中使用 for 循环, 处理玩家输入
+
+切片，从字符串中获取单个字符
+
+设置，创建 HTML
+
+设置方向，使用键盘设置蛇的方向
+
+蛇，创建蛇, 绘制蛇, 使用键盘设置蛇的方向
+
+stroke context 方法，绘制线条或路径, 新的 circle 函数
+
+strokeRect context 方法，绘制矩形轮廓, 使用偏移值更改坐标, 小球反弹
+
+strokeStyle context 属性，绘制矩形轮廓, 绘制蜜蜂
+
+方括号，`[]`, 查找字符串长度, 你为什么要关心数组？, 创建数组, 访问数组元素, 在数组中混合数据类型, 无需引号的键
+
+### H
+
+HTML 代码，设置键盘控制
+
+处理玩家输入
+
+### M
+
+移动，绘制蛇
+
+在数组中混合数据类型
+
+### L
+
+遍历...的每个字符，在数组和字符串中使用 for 循环, 处理玩家输入
+
+### T
+
+将数组转换为，查找数组中元素的索引
+
+### U
+
+使用勾股定理
+
+在数组和字符串中使用 for 循环
 
 版权所有。未经版权所有者和出版者的事先书面许可，不得以任何形式或任何手段（电子或机械，包括复印、录音或通过任何信息存储或检索系统）复制或传输本书。
 
 ### 出版信息
+
 - ISBN-10: 1-59327-408-4
 - ISBN-13: 978-1-59327-408-5
 
 ### 鸣谢
+
 - **出版者：** William Pollock
 - **制作编辑：** Riley Hoffman
 - **封面插画：** Tina Salameh
@@ -7627,20 +7539,25 @@ offset jQuery 方法，使用 setInterval 动画元素, mousemove 事件, 绘制
 - **校对员：** Paula L. Fleming
 
 ### 联系方式
+
 有关分销、译本或批量销售的信息，请直接联系 No Starch Press, Inc.：
 
 **No Starch Press, Inc.**
+
 245 8th Street, San Francisco, CA 94103
+
 phone: 415.863.9900; info@nostarch.com
+
 [www.nostarch.com](http://www.nostarch.com)
 
 美国国会图书馆控制号：2014953113
 
 ### 法律声明
+
 No Starch Press 和 No Starch Press 标志是 No Starch Press, Inc. 的注册商标。此处提到的其他产品和公司名称可能是其各自所有者的商标。我们并未在每次出现商标名称时都使用商标符号，而是仅以编辑方式使用这些名称，并为了商标所有者的利益，无侵犯商标的意图。
 
-本书中的信息按“原样”提供，不提供任何保证。虽然在编写本书时已采取了一切措施，但对于因书中包含的信息直接或间接导致或据称导致导致的任何损失或损害，作者或 No Starch Press, Inc. 均不对任何个人或实体承担任何责任。
+本书中的信息按“原样”提供，不提供任何保证。虽然在编写本书时已采取了一切措施，但对于因书中包含的信息直接或间接导致或据称导致的任何损失或损害，作者或 No Starch Press, Inc. 均不对任何个人或实体承担任何责任。
 
 No Starch Press
-2014-12-02T10:57:26-08:00
 
+2014-12-02T10:57:26-08:00

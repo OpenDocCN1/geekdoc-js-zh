@@ -1,30 +1,31 @@
+
 # 探索 Web 组件：使用标准技术构建可复用 UI Web 组件
 
-# 献给
+## 献给
 
-*我的家人，他们在写作过程中给予我支持并包容我。*
+我的家人，他们在写作过程中给予我支持并包容我。
 
-# 关于作者
+## 关于作者
 
 **安德烈亚·基亚雷利** 是一位软件工程师和技术作者，在软件开发行业拥有超过 20 年的经验。在他的职业生涯中，安德烈亚以不同的方式（作为独立承包商、公司所有者、员工）担任过多种角色（软件开发人员、架构师、培训师、技术作家）。
 
-在他参与的项目中，他使用过多种编程语言和技术：从 .NET 到 Node.js，从 C# 到 JavaScript，从 SQL Server 到 MongoDB，从 IIS 到 nginx。
+在他参与的项目中，他使用过多种编程语言和技术：从`.NET`到`Node.js`，从`C#`到`JavaScript`，从`SQL Server`到`MongoDB`，从`IIS`到`nginx`。
 
-最近，他专注于 JavaScript 生态系统，包括服务器端和客户端。
+最近，他专注于`JavaScript`生态系统，包括服务器端和客户端。
 
 他曾为许多在线和离线杂志撰稿，并撰写了几本书。
 
-目前，他在 Auth0 担任研发内容工程师。
+目前，他在`Auth0`担任研发内容工程师。
 
-# 关于审校者
+## 关于审校者
 
-**阿坎克莎·辛哈** 是一位技术经理，在软件开发的多个渐进式角色中拥有超过 12 年的经验。她的工作领域涵盖数字营销、技术和保险。她是 Cognizant 工具与自动化团队的创始成员之一，为科技巨头运营团队服务。
+**阿坎克莎·辛哈** 是一位技术经理，在软件开发的多个渐进式角色中拥有超过 12 年的经验。她的工作领域涵盖数字营销、技术和保险。她是`Cognizant`工具与自动化团队的创始成员之一，为科技巨头运营团队服务。
 
-作为从零开始构建机器人和工具生态系统的贡献者，她探索了 Web 开发、UI/UX 以及机器学习、聊天机器人、云计算、自然语言处理等最新技术。她的技能包括 JavaScript、Google Cloud、Google App Script、AngularJS、TypeScript、Python、Chrome 扩展、GSuites、HTML & CSS 和 Unix Shell 脚本。自然语言、聊天机器人、Big Query 和机器学习是她的兴趣领域，她已在这些领域完成了多个原型。
+作为从零开始构建机器人和工具生态系统的贡献者，她探索了 Web 开发、UI/UX 以及机器学习、聊天机器人、云计算、自然语言处理等最新技术。她的技能包括`JavaScript`、`Google Cloud`、`Google App Script`、`AngularJS`、`TypeScript`、`Python`、`Chrome`扩展、`GSuites`、`HTML & CSS`和`Unix Shell`脚本。自然语言、聊天机器人、`Big Query`和机器学习是她的兴趣领域，她已在这些领域完成了多个原型。
 
-她拥有 RTM Nagpur 大学的电气与电子工程学士学位，并曾任职于 Cognizant Technology Solutions。
+她拥有`RTM Nagpur`大学的电气与电子工程学士学位，并曾任职于`Cognizant Technology Solutions`。
 
-# 致谢
+## 致谢
 
 我要感谢一些人，是他们让这本书成为现实。
 
@@ -34,11 +35,11 @@
 
 最后，我要感谢 BPB 团队，感谢他们耐心等待我那些总是迟交的章节。
 
-# 前言
+## 前言
 
-近年来，Web 用户界面的设计不断发展，逐渐变得与原生图形用户界面非常相似。这种演变主要得益于一些流行的库，它们推广了构建用户界面的可组合方法。其中，React 和 Angular 可以说是这种 Web 用户界面设计新方式的主要影响者。
+近年来，Web 用户界面的设计不断发展，逐渐变得与原生图形用户界面非常相似。这种演变主要得益于一些流行的库，它们推广了构建用户界面的可组合方法。其中，`React`和`Angular`可以说是这种 Web 用户界面设计新方式的主要影响者。
 
-然而，尽管这些库为 Web 开发带来了创新，但它们也创造了一些相对孤立的世界。使用 React 的开发者只能与其他 React 应用程序共享和复用他们的组件。同样，Angular 开发者只能与 Angular 项目共享和复用他们的组件。当然，其他 UI 库也是如此。
+然而，尽管这些库为 Web 开发带来了创新，但它们也创造了一些相对孤立的世界。使用`React`的开发者只能与其他`React`应用程序共享和复用他们的组件。同样，`Angular`开发者只能与`Angular`项目共享和复用他们的组件。当然，其他 UI 库也是如此。
 
 这种孤立并非 Web 的本意。恰恰相反，Web 技术应该是开放和可互操作的。我们如何解决由不同方法实现相同高层设计所造成的碎片化问题？
 
@@ -50,64 +51,52 @@ Web 组件所依赖的技术集允许开发者创建组件，这些组件可用�
 
 本书的 10 章将让您探索以下主题：
 
-**第 1 章** 介绍了基于组件的设计方法来构建用户界面，以及 Web 组件背后的基本概念。
+- **第 1 章** 介绍了基于组件的设计方法来构建用户界面，以及 Web 组件背后的基本概念。
+- **第 2 章** 讨论了如何扩展现有的标准 HTML 元素以自定义其行为。
+- **第 3 章** 描述了如何创建自定义元素，即从头开始构建的自定义 HTML 元素，而不扩展标准元素。
+- **第 4 章** 解释了如何管理自定义元素的属性和特性，以及如何应用最佳实践来保持它们同步。
+- **第 5 章** 重点介绍如何通过监听事件和创建自己的事件来丰富 Web 组件的交互性。
+- **第 6 章** 展示了如何通过利用 Shadow DOM 为 Web 组件实现封装。此功能允许您在任何页面上包含您的组件，而无需担心外部 CSS 或 JavaScript 的副作用。
+- **第 7 章** 讨论了如何使用 HTML 模板来简化组件的标记管理。
+- **第 8 章** 描述了分发和导入包含 Web 组件的模块的不同策略。它还展示了如何扩展它们以创建新组件。
+- **第 9 章** 讨论了 Web 组件如何与其他 UI 库和框架集成。它展示了如何以很少的工作量将它们集成到`React`、`Angular`和`Vue`应用程序中。它还展示了如何通过用`Angular`、`Vue`和`React`编写来创建 Web 组件。
+- **第 10 章** 描述了一些库，例如`LitElement`、`Hybrids`、`Slim`和`Stencil`，它们可以帮助开发者构建 Web 组件。
 
-**第 2 章** 讨论了如何扩展现有的标准 HTML 元素以自定义其行为。
+## 下载代码包和彩色图片
 
-**第 3 章** 描述了如何创建自定义元素，即从头开始构建的自定义 HTML 元素，而不扩展标准元素。
-
-**第 4 章** 解释了如何管理自定义元素的属性和特性，以及如何应用最佳实践来保持它们同步。
-
-**第 5 章** 重点介绍如何通过监听事件和创建自己的事件来丰富 Web 组件的交互性。
-
-**第 6 章** 展示了如何通过利用 Shadow DOM 为 Web 组件实现封装。此功能允许您在任何页面上包含您的组件，而无需担心外部 CSS 或 JavaScript 的副作用。
-
-**第 7 章** 讨论了如何使用 HTML 模板来简化组件的标记管理。
-
-**第 8 章** 描述了分发和导入包含 Web 组件的模块的不同策略。它还展示了如何扩展它们以创建新组件。
-
-**第 9 章** 讨论了 Web 组件如何与其他 UI 库和框架集成。它展示了如何以很少的工作量将它们集成到 React、Angular 和 Vue 应用程序中。它还展示了如何通过用 Angular、Vue 和 React 编写来创建 Web 组件。
-
-**第 10 章** 描述了一些库，例如 LitElement、Hybrids、Slim 和 Stencil，它们可以帮助开发者构建 Web 组件。
-
-# 下载代码包和彩色图片：
-
-请点击以下链接下载本书的 ***代码包*** 和 ***彩色图片***：
+请点击以下链接下载本书的**代码包**和**彩色图片**：
 
 # [`rebrand.ly/62bc7`](https://rebrand.ly/62bc7)
 
-# 勘误
-
-
-
+## 勘误
 
 我们为 BPB Publications 的工作感到无比自豪，并遵循最佳实践确保内容的准确性，为订阅者提供沉浸式的阅读体验。读者是我们的镜子，我们利用他们的反馈来反思并改进出版过程中可能出现的任何人为错误。为了让我们保持质量，并帮助我们联系到因任何意外错误而遇到困难的读者，请通过以下邮箱联系我们：
 
-**errata@bpbonline.com**
+`errata@bpbonline.com`
 
 BPB Publications 大家庭非常感谢您的支持、建议和反馈。
 
-您知道吗？BPB 提供每本已出版书籍的电子版，包括 PDF 和 ePub 文件？您可以升级到电子版，网址为 **[www.bpbonline.com](http://www.bpbonline.com)**，作为纸质书客户，您有权享受电子版折扣。如需了解更多详情，请通过 **business@bpbonline.com** 与我们联系。
+您知道吗？BPB 提供每本已出版书籍的电子版，包括 PDF 和 ePub 文件？您可以升级到电子版，网址为 **[www.bpbonline.com](http://www.bpbonline.com)**，作为纸质书客户，您有权享受电子版折扣。如需了解更多详情，请通过 `business@bpbonline.com` 与我们联系。
 
 在 **[www.bpbonline.com](http://www.bpbonline.com)**，您还可以阅读一系列免费技术文章，注册各种免费新闻通讯，并享受 BPB 书籍和电子书的独家折扣和优惠。
 
-# BPB 正在寻找像您一样的作者
+## BPB 正在寻找像您一样的作者
 
 如果您有兴趣成为 BPB 的作者，请访问 [**www.bpbonline.com**](http://www.bpbonline.com/) 并立即申请。我们已与成千上万的开发者和技术专业人士合作，就像您一样，帮助他们与全球技术社区分享见解。您可以进行一般申请，申请我们正在招募作者的特定热门主题，或提交您自己的想法。
 
-本书的代码包也托管在 GitHub 上，地址为 **[`github.com/bpbpublications/Exploring-Web-Components`](https://github.com/bpbpublications/Exploring-Web-Components)**。如果代码有更新，将在现有的 GitHub 仓库中更新。
+本书的代码包也托管在`GitHub`上，地址为 **[`github.com/bpbpublications/Exploring-Web-Components`](https://github.com/bpbpublications/Exploring-Web-Components)**。如果代码有更新，将在现有的`GitHub`仓库中更新。
 
 我们还有来自丰富书籍和视频目录的其他代码包，可在 **[`github.com/bpbpublications`](https://github.com/bpbpublications)** 获取。快去看看吧！
 
-# 盗版
+## 盗版
 
-如果您在互联网上发现任何形式的非法复制我们作品的情况，我们将不胜感激，请提供位置地址或网站名称。请通过 **business@bpbonline.com** 联系我们，并附上材料链接。
+如果您在互联网上发现任何形式的非法复制我们作品的情况，我们将不胜感激，请提供位置地址或网站名称。请通过 `business@bpbonline.com` 联系我们，并附上材料链接。
 
-# 如果您有兴趣成为作者
+## 如果您有兴趣成为作者
 
-如果您有擅长的主题，并且有兴趣撰写或参与一本书，请访问 [**www.bpbonline.com**](http://www.bpbonline.com/)。
+如果您有擅长的主题，并且有兴趣撰写或参与一本书，请访问 [**www.bpbonline.com](http://www.bpbonline.com/)**。
 
-# 评论
+## 评论
 
 请留下评论。当您阅读并使用本书后，为什么不在您购买它的网站上留下评论呢？潜在读者可以看到并利用您公正的意见做出购买决定，我们 BPB 可以了解您对我们产品的看法，我们的作者也可以看到您对他们书籍的反馈。谢谢！
 
@@ -115,7 +104,7 @@ BPB Publications 大家庭非常感谢您的支持、建议和反馈。
 
 # 第 1 章：Web 组件入门
 
-Web 作为构建应用程序的平台已经是一个既成事实。在这个平台上，HTML 和 CSS 等标准技术的主要目标是定义**用户界面（UI）**，而 JavaScript 则支持交互性和客户端业务逻辑。这些是这些技术的传统角色，但并非总是如此。近年来，对自定义 UI 元素的需求催生了主要基于 JavaScript 控制的库和框架的诞生。其中，React、Angular、Vue 等强大的库允许您使用 JavaScript 创建 UI 元素。但是，用一个库构建的 UI 元素不能在另一个库的上下文中使用。因此，通常如果您需要在不同上下文中使用相同的组件，您需要重新实现它。
+Web 作为构建应用程序的平台已经是一个既成事实。在这个平台上，HTML 和 CSS 等标准技术的主要目标是定义**用户界面（UI）**，而`JavaScript`则支持交互性和客户端业务逻辑。这些是这些技术的传统角色，但并非总是如此。近年来，对自定义 UI 元素的需求催生了主要基于 JavaScript 控制的库和框架的诞生。其中，`React`、`Angular`、`Vue`等强大的库允许您使用`JavaScript`创建 UI 元素。但是，用一个库构建的 UI 元素不能在另一个库的上下文中使用。因此，通常如果您需要在不同上下文中使用相同的组件，您需要重新实现它。
 
 这是创建 UI 元素的唯一方法吗？有没有一种方法可以创建通用且可重用的 UI 元素，而不管您用于构建应用程序的框架是什么？
 
@@ -125,11 +114,11 @@ Web 作为构建应用程序的平台已经是一个既成事实。在这个平�
 
 ## 结构
 
-*   UI、组件和应用程序
-*   什么是 Web 组件？
-*   使用 Web 组件
-*   浏览器支持
-*   使用 polyfill
+- UI、组件和应用程序
+- 什么是 Web 组件？
+- 使用 Web 组件
+- 浏览器支持
+- 使用 polyfill
 
 ## 目标
 
@@ -169,20 +158,17 @@ UI 是屏幕上显示的一组项目，帮助用户与应用程序交互。这�
 
 无论如何，您应该记住几个标准来识别一个 UI 元素或一组 UI 元素作为一个组件：
 
-
-
-
-*   它们应具有特定且一致的职责
-*   它们应可复用
+- 它们应具有特定且一致的职责。
+- 它们应可复用。
 
 如果你观察上图中带边框的项目，它们标识了具有特定职责的页面区域：
 
-*   顶部栏允许用户管理其账户
-*   顶部栏下方的项目允许用户对网站执行全局操作，例如搜索词语或导航到不同区域
-*   导航区域下方的区域旨在邀请用户捐赠
-*   包含最新新闻链接的区域
-*   注册区域
-*   特定任务区域
+- 顶部栏允许用户管理其账户。
+- 顶部栏下方的项目允许用户对网站执行全局操作，例如搜索词语或导航到不同区域。
+- 导航区域下方的区域旨在邀请用户捐赠。
+- 包含最新新闻链接的区域。
+- 注册区域。
+- 特定任务区域。
 
 如果你考虑这些区域，可能会意识到它们是一种自包含的单元。你可以移动页面上的项目，并用新布局重新排列页面。你也可以在另一个页面上复用它们中的每一个，甚至可能在任何其他网站上复用它们。
 
@@ -214,8 +200,8 @@ UI 是屏幕上显示的一组项目，帮助用户与应用程序交互。这�
 
 上一节中进行的 UI 分解相当通用。它适用于任何类型的 UI。但让我们限制在 Web UI 实现上：
 
-*   你有多希望将每个检测到的组件直接映射到对应的 HTML 元素？
-*   你有多希望用更具描述性的 HTML 标记来定义上一节中显示的主页？
+- 你有多希望将每个检测到的组件直接映射到对应的 HTML 元素？
+- 你有多希望用更具描述性的 HTML 标记来定义上一节中显示的主页？
 
 请看以下标记：
 
@@ -280,30 +266,27 @@ UI 是屏幕上显示的一组项目，帮助用户与应用程序交互。这�
 
 如上一节所示，分解 Web UI 似乎非常自然且可取。这是一种有效的方法，可以同时创建结构良好的 UI 和可复用的 UI 元素。此外，由于组件是一个通用概念，你可以通过组合其他组件来创建新组件，甚至可以将整个应用程序视为一个组件。
 
-多年来，开发者一直在寻找一种自主扩展 HTML 功能的方法，以创建高级 UI 元素。他们的努力成果包括*jQuery UI、React、Angular、Vue*等库。所有这些库都提供了遵循组件模型创建 UI 元素的方法。
+多年来，开发者一直在寻找一种自主扩展 HTML 功能的方法，以创建高级 UI 元素。他们的努力成果包括`jQuery UI`、`React`、`Angular`、`Vue`等库。所有这些库都提供了遵循组件模型创建 UI 元素的方法。
 
 这些库中有许多非常流行，每个库都提出了自己的创建 UI 组件的方法，并且每个库都以某种方式尝试将 UI 元素映射到标记。然而，它们有一些缺点：
 
-*   它们不是标准
-*   它们不被浏览器原生支持
-*   它们不可互操作
+- 它们不是标准。
+- 它们不被浏览器原生支持。
+- 它们不可互操作。
+
+
 
 换句话说，使用这些库创建的 UI 组件只能用于支持相同库的项目。你不能用 React 创建一个组件并在 Angular 应用程序中使用它。如果你想创建一个既能在 React 应用程序中又能在 Angular 应用程序中使用的 UI 元素，你需要实现该元素的两个版本。
 
 Web 组件试图通过允许你使用浏览器原生支持的标准技术创建 UI 元素来克服这些缺点。
 
-Web 组件是一组标准规范，用于创建可在网页和应用程序中复用的自定义 HTML 元素。这项技术原理的首次提及可追溯到*2011 年*，在阿姆斯特丹 Fronteers 会议上*Alex Russell*的演讲中。他的提议被 W3C 采纳，并于*2012 年*发布了第一份*工作草案*。此后，标准化过程对原始想法进行了多次修改，因此我们随着时间的推移得到了两个不同版本的规范，分别标识为*v0*和*v1*。目前，Web 组件不再基于单独的规范，而是引用 HTML 和**文档对象模型（DOM）**的标准，它们现在已成为这些标准不可分割的一部分。
+Web 组件是一组标准规范，用于创建可在网页和应用程序中复用的自定义 HTML 元素。这项技术原理的首次提及可追溯到`2011 年`，在阿姆斯特丹 Fronteers 会议上`Alex Russell`的演讲中。他的提议被 W3C 采纳，并于`2012 年`发布了第一份`工作草案`。此后，标准化过程对原始想法进行了多次修改，因此我们随着时间的推移得到了两个不同版本的规范，分别标识为`v0`和`v1`。目前，Web 组件不再基于单独的规范，而是引用 HTML 和**文档对象模型（DOM）**的标准，它们现在已成为这些标准不可分割的一部分。
 
 Web 组件基于 Web 技术的三个标准特性：
 
-*   **自定义元素：** 它们代表一组 JavaScript API，用于创建与特定 HTML 标签关联的自定义 DOM 元素。
-
-
-
-
-
-* **Shadow DOM（影子 DOM）：** 一组 JavaScript API，用于管理组件特定的 DOM，独立于网页的 DOM。
-* **HTML 模板（HTML templates）：** 这是对 HTML 规范的一种集成，允许你定义一些标记片段，这些片段在页面加载时不会被解释，而是在运行时被实例化。
+- **自定义元素：** 它们代表一组 JavaScript API，用于创建与特定 HTML 标签关联的自定义 DOM 元素。
+- **Shadow DOM（影子 DOM）：** 一组 JavaScript API，用于管理组件特定的 DOM，独立于网页的 DOM。
+- **HTML 模板（HTML templates）：** 这是对 HTML 规范的一种集成，允许你定义一些标记片段，这些片段在页面加载时不会被解释，而是在运行时被实例化。
 
 借助 Web Components 技术，你可以扩展标准 HTML 元素，使其拥有自定义的外观和行为。你还可以创建自己的 HTML 标签，并在 HTML 页面中像标准元素一样使用它。所有这些都可以独立于你用来构建应用程序的 JavaScript 库或框架来完成。
 
@@ -321,11 +304,11 @@ Web 组件基于 Web 技术的三个标准特性：
 
 为了演示如何使用第三方开发的 Web Component，我们将引用一个允许你通过一定数量的星星进行评分的组件，类似于你在许多电子商务网站上看到的 UI 元素。
 
-请查看 *GitHub* 上这个简单项目的文档，以了解更多关于该组件的信息 **- [`github.com/andychiare/rating-component`](https://github.com/andychiare/rating-component)**。
+请查看`GitHub`上这个简单项目的文档，以了解更多关于该组件的信息 - [`github.com/andychiare/rating-component`](https://github.com/andychiare/rating-component)。
 
 让我们从创建一个空的 HTML 页面开始，并引用组件的代码，如下面的标记所示：
 
-```
+```html
 <!DOCTYPE html>
 <html lang=”en”>
 <head>
@@ -337,13 +320,13 @@ Web 组件基于 Web 技术的三个标准特性：
 </html>
 ```
 
-如你所见，我们添加了一个 script 元素，指向 `myRatings.js` JavaScript 文件的公共 URL。该文件包含了组件的定义，但目前我们对实现不感兴趣。我们只想在网页上使用这个组件。
+如你所见，我们添加了一个`script`元素，指向`myRatings.js` JavaScript 文件的公共 URL。该文件包含了组件的定义，但目前我们对实现不感兴趣。我们只想在网页上使用这个组件。
 
 **这是将库包含到项目中最简单的方法，但如果你的应用程序需要构建步骤，你也可以使用包管理器。我们稍后会深入讨论这一点。**
 
-现在，你可以像使用标准元素一样，在 HTML 的 body 中直接使用 `my-rating` 标签：
+现在，你可以像使用标准元素一样，在 HTML 的 body 中直接使用`my-rating`标签：
 
-```
+```html
 <!DOCTYPE html>
 <html lang=”en”>
 <head>
@@ -356,9 +339,9 @@ Web 组件基于 Web 技术的三个标准特性：
 </html>
 ```
 
-`my-rating` 元素具有 `max-value` 和 `value` 属性，分别用于设置要显示的最大星星数量和表示你评分的当前星星值。
+`my-rating`元素具有`max-value`和`value`属性，分别用于设置要显示的最大星星数量和表示你评分的当前星星值。
 
-如你所见，`my-rating` 标签的使用方式与任何标准 HTML 标签相同，最重要的是，你无需安装任何 UI 框架即可获得此行为。
+如你所见，`my-rating`标签的使用方式与任何标准 HTML 标签相同，最重要的是，你无需安装任何 UI 框架即可获得此行为。
 
 要查看此标记的图形结果，你只需在 Web 浏览器中打开 HTML 页面。你应该会看到类似下面的页面：
 
@@ -366,9 +349,9 @@ Web 组件基于 Web 技术的三个标准特性：
 
 **图 1.5**
 
-**在这个特定的简单案例中，你可以使用 Web 浏览器从文件系统打开 HTML 页面。但通常情况下，最好使用 Web 服务器来提供页面服务。你可以选择任何你喜欢的 Web 服务器。我们建议使用 `http-server`，这是一个在 Node.js 环境中运行的零配置 Web 服务器。**
+**在这个特定的简单案例中，你可以使用 Web 浏览器从文件系统打开 HTML 页面。但通常情况下，最好使用 Web 服务器来提供页面服务。你可以选择任何你喜欢的 Web 服务器。我们建议使用`http-server`，这是一个在 Node.js 环境中运行的零配置 Web 服务器。**
 
-**要在你的机器上安装 `http-server`，首先确保你已经安装了 Node.js，然后在终端窗口中输入以下命令：**
+**要在你的机器上安装`http-server`，首先确保你已经安装了 Node.js，然后在终端窗口中输入以下命令：**
 
 `npm install http-server -g`
 
@@ -376,7 +359,7 @@ Web 组件基于 Web 技术的三个标准特性：
 
 `http-server`
 
-**此命令将启动 Web 服务器，然后你可以通过将浏览器指向 http://localhost:8080 来查看你的页面。**
+**此命令将启动 Web 服务器，然后你可以通过将浏览器指向`http://localhost:8080`来查看你的页面。**
 
 现在，当你点击其中一颗星星时，你点击的星星及其左侧的星星会变为填充状态，而右侧的星星会变为空白状态。这表示你的评分。
 
@@ -384,7 +367,7 @@ Web 组件基于 Web 技术的三个标准特性：
 
 你也可以通过 JavaScript 以编程方式使用该组件。例如，考虑以下代码：
 
-```
+```html
 <!DOCTYPE html>
 <html lang=”en”>
 <head>
@@ -404,11 +387,11 @@ myRating.value = 2;
 </html>
 ```
 
-在这个例子中，我们为元素分配了标识符 `myRatingComponent`，并通过使用 `getElementById()` 方法通过 JavaScript 访问它。我们还为属性 `maxValue` 和 `value` 分配了新值，它们分别对应于 `max-value` 和 `value` 属性。这允许你在网页上拥有不同的初始外观。
+在这个例子中，我们为元素分配了标识符`myRatingComponent`，并通过使用`getElementById()`方法通过 JavaScript 访问它。我们还为属性`maxValue`和`value`分配了新值，它们分别对应于`max-value`和`value`属性。这允许你在网页上拥有不同的初始外观。
 
 除了设置组件属性的初始值之外，你还可以将其视为一个普通的 HTML 元素。例如，你可以为其附加一个事件处理程序，如下例所示：
 
-```
+```html
 <!DOCTYPE html>
 <html lang=”en”>
 <head>
@@ -431,7 +414,7 @@ alert(“Thanks for your feedback!”);
 </html>
 ```
 
-这里我们处理了 click 事件，以便当用户给出评分时，会显示一条感谢消息：
+这里我们处理了`click`事件，以便当用户给出评分时，会显示一条感谢消息：
 
 ![](img/Fig_1.6.jpg)
 
@@ -443,9 +426,9 @@ alert(“Thanks for your feedback!”);
 
 Web Components 所依赖的技术是标准化的，也就是说，它们旨在被 Web 浏览器原生支持。不幸的是，尽管这些规范已经存在了一段时间，但直到最近它们才开始被大多数 Web 浏览器广泛采用。
 
-为了了解这些技术最近和当前在主流浏览器中的支持状况，让我们看看 caniuse.com **([`caniuse.com/`](https://caniuse.com/))** 的一些数据，这是一个监控 Web 技术采用情况的网站。
+为了了解这些技术最近和当前在主流浏览器中的支持状况，让我们看看`caniuse.com`（[`caniuse.com/`](https://caniuse.com/)）的一些数据，这是一个监控 Web 技术采用情况的网站。
 
-第一组数据与 **Custom Elements（自定义元素）** 的支持有关。在撰写本文时，它们总结如下：
+第一组数据与**Custom Elements（自定义元素）**的支持有关。在撰写本文时，它们总结如下：
 
 ![](img/Fig_1.7.jpg)
 
@@ -457,23 +440,19 @@ Web Components 所依赖的技术是标准化的，也就是说，它们旨在�
 
 ![](img/Fig_1.8.jpg)
 
-
-
-
-
 **图 1.8**
 
 如你所见，**94.44%** 的受追踪浏览器支持该技术，仅有 **0.24%** 提供部分支持。
 
-最后，我们来看一下关于 **Shadow DOM** 支持的数据：
+最后，我们来看一下关于**Shadow DOM**支持的数据：
 
 ![](img/Fig_1.9.jpg)
 
 **图 1.9**
 
-该技术拥有较高的支持率 **(89.25%)**，但并非完全支持。此外，**13.16%** 的受追踪浏览器提供部分支持。
+该技术拥有较高的支持率**(89.25%)**，但并非完全支持。此外，**13.16%** 的受追踪浏览器提供部分支持。
 
-综上所述，从 caniuse.com 获取的数据中，我们意识到最新版本的 Chrome、Firefox 和 Edge 对 Web Components 技术提供了广泛且稳定的支持。同时，移动浏览器也对其有良好的支持。
+综上所述，从`caniuse.com`获取的数据中，我们意识到最新版本的 Chrome、Firefox 和 Edge 对 Web Components 技术提供了广泛且稳定的支持。同时，移动浏览器也对其有良好的支持。
 
 然而，即使支持 Web Components 的技术正获得越来越广泛的支持，你也不能忽视某些浏览器（如 Opera 和 Safari）仍仅提供部分支持，而且用户并不总是使用最新版本的浏览器。
 
@@ -491,11 +470,11 @@ Web Components 所依赖的技术是标准化的，也就是说，它们旨在�
 
 为了解决某些浏览器缺乏支持或仅部分支持的问题，你可以通过以下 URL 引入开源社区提供的 polyfills：[`github.com/webcomponents/polyfills`](https://github.com/webcomponents/polyfills)
 
-你可以使用完整的 `WebComponentsJS` polyfill 套件，也可以选择单独使用它们——用于自定义元素、Shadow DOM 或 HTML 模板的 polyfill。此外，你可以选择通过 `npm` 将它们安装到开发环境中，或者通过 unpkg.com 内容分发网络（CDN）的未打包版本将其包含在 HTML 页面中，地址为 [`unpkg.com/browse/@webcomponents/webcomponentsjs/`](https://unpkg.com/browse/@webcomponents/webcomponentsjs/)。
+你可以使用完整的`WebComponentsJS` polyfill 套件，也可以选择单独使用它们——用于自定义元素、Shadow DOM 或 HTML 模板的 polyfill。此外，你可以选择通过`npm`将它们安装到开发环境中，或者通过 unpkg.com 内容分发网络（CDN）的未打包版本将其包含在 HTML 页面中，地址为[`unpkg.com/browse/@webcomponents/webcomponentsjs/`](https://unpkg.com/browse/@webcomponents/webcomponentsjs/)。
 
 让我们看看如何通过使用未打包版本来利用这些 polyfill。为此，我们将考虑前面章节中展示的评分组件示例，并添加未打包的 polyfill。以下是新的标记：
 
-```
+```html
 <!DOCTYPE html>
 <html lang=”en”>
 <head>
@@ -509,11 +488,11 @@ Web Components 所依赖的技术是标准化的，也就是说，它们旨在�
 </html>
 ```
 
-注意在评分组件脚本之前包含的脚本。它加载了 `webcomponents-bundle.js` 脚本，该脚本为不支持 Web Components 技术的浏览器模拟这些技术。该脚本提供了一组通过特性检测激活的 polyfill；也就是说，只有当当前浏览器原生不支持相应特性时，才会执行其代码。尽管这种方法确保了浏览器特性的高效使用，但当浏览器提供部分 Web Components 技术支持时，加载该脚本实现的所有 polyfill 是不必要的。它应该只加载那些受支持的 polyfill。
+注意在评分组件脚本之前包含的脚本。它加载了`webcomponents-bundle.js`脚本，该脚本为不支持 Web Components 技术的浏览器模拟这些技术。该脚本提供了一组通过特性检测激活的 polyfill；也就是说，只有当当前浏览器原生不支持相应特性时，才会执行其代码。尽管这种方法确保了浏览器特性的高效使用，但当浏览器提供部分 Web Components 技术支持时，加载该脚本实现的所有 polyfill 是不必要的。它应该只加载那些受支持的 polyfill。
 
-为了解决这个问题，你可以使用另一个脚本，该脚本根据当前浏览器缺失的功能仅加载必要的 polyfill。这个脚本叫做 `webcomponents-loader.js`，你可以用它代替 `webcomponents-bundle.js`，如下代码所示：
+为了解决这个问题，你可以使用另一个脚本，该脚本根据当前浏览器缺失的功能仅加载必要的 polyfill。这个脚本叫做`webcomponents-loader.js`，你可以用它代替`webcomponents-bundle.js`，如下代码所示：
 
-```
+```html
 <!DOCTYPE html>
 <html lang=”en”>
 <head>
@@ -529,7 +508,7 @@ Web Components 所依赖的技术是标准化的，也就是说，它们旨在�
 
 这将仅加载最少的可用 polyfill，以支持在部分支持的浏览器中启用 Web Components 的功能。
 
-当然，这些 polyfill 无法保证在任何浏览器中都能实现 Web Components 技术。它们的支持目标是比较新的浏览器，所以不要指望它们能在例如 *Internet Explorer 8* 上工作。
+当然，这些 polyfill 无法保证在任何浏览器中都能实现 Web Components 技术。它们的支持目标是比较新的浏览器，所以不要指望它们能在例如`Internet Explorer 8`上工作。
 
 ## 结论
 
@@ -541,47 +520,33 @@ Web Components 所依赖的技术是标准化的，也就是说，它们旨在�
 
 ## 问题
 
-1.  什么是组件？
+1. 什么是组件？
+2. 为什么组件在设计 UI 时很有用？
+3. 什么是 Web Components？
+4. Web Components 依赖哪些标准技术？
+5. 与其他流行的 UI JavaScript 库相比，它们提供了哪些优势？
+6. 如何缓解旧浏览器缺乏 Web Components 技术支持的问题？
 
-2.  为什么组件在设计 UI 时很有用？
-
-3.  什么是 Web Components？
-
-4.  Web Components 依赖哪些标准技术？
-
-5.  与其他流行的 UI JavaScript 库相比，它们提供了哪些优势？
-
-6.  如何缓解旧浏览器缺乏 Web Components 技术支持的问题？
-
-# 第 2 章
-
-## 扩展 HTML 元素
+# 第 2 章：扩展 HTML 元素
 
 在上一章中，我们开始了解 Web Components 并学习了如何使用它们。在本章中，你将学习如何构建自己的 Web Components。我们将首先简要讨论你需要设置的开发环境。然后，我们将介绍关于自定义元素的基本概念，并了解如何通过自定义标准行为来扩展原生 HTML 元素。在本章中，我们将创建一个自定义元素来说明这些新概念。
 
+
+
 ## 结构
 
-*   设置开发环境
-
-*   自定义元素
-
-*   扩展原生元素
-
-*   Web 组件命名规则
-
-*   使用基于原生元素的自定义元素
-
-*   扩展原生元素的好处
+- 设置开发环境
+- 自定义元素
+- 扩展原生元素
+- Web 组件命名规则
+- 使用基于原生元素的自定义元素
+- 扩展原生元素的好处
 
 ## 目标
 
 本章将为你提供基础知识，以便在创建 Web Component 时决定使用哪种开发环境。你将了解什么是自定义元素以及应该使用哪种类型。你将能够通过扩展现有标准 HTML 元素来创建新的自定义元素，并在不同的开发环境中使用它。你还将学习命名 Web Component 时应遵循的规则，并了解扩展标准 HTML 元素所带来的好处。
 
 ## 设置开发环境
-
-
-
-
 
 在上一章中，我们通过 `<script>` 元素简单引用实现 Web 组件的文件，将其嵌入到 HTML 页面中。当时我们并未关心所使用的开发环境。
 
@@ -593,7 +558,7 @@ Web Components 所依赖的技术是标准化的，也就是说，它们旨在�
 
 选择编辑器始终是个人偏好问题。为了开发你的 Web 组件，你可以使用任何编辑器。你可以非常简约，例如使用操作系统自带的普通文本编辑器。然而，这可能不是最舒适的选择。
 
-也许你可以使用更高级的编辑器或**集成开发环境（IDE）**，它们提供的功能远不止编写代码。通常，这些工具提供语法高亮、代码补全、代码片段、调试支持等功能。当然，这些功能以及其他特性有助于提高你的生产力。
+也许你可以使用更高级的编辑器或集成开发环境（IDE），它们提供的功能远不止编写代码。通常，这些工具提供语法高亮、代码补全、代码片段、调试支持等功能。当然，这些功能以及其他特性有助于提高你的生产力。
 
 你可以在众多高级编辑器或 IDE 中进行选择：Atom、Sublime Text、Visual Studio Code 等，仅举几例。使用你已经熟悉或感到舒适的工具即可。
 
@@ -611,13 +576,10 @@ Web Components 所依赖的技术是标准化的，也就是说，它们旨在�
 
 通常，开发者选择构建他们的 JavaScript 应用程序是出于几个原因。以下是一些最常见的动机：
 
-*   **转译**：此过程由工具（转译器）执行，将原始 JavaScript 代码转换为另一种形式，但仍然是 JavaScript。这种转换可能有多种原因。最重要的原因是将现代 JavaScript 代码转换为旧式 JavaScript，以便它也能在旧浏览器中运行。此外，转译允许你在代码中使用最新的 JavaScript 特性，即使你的浏览器尚未支持它们。同时，它也允许你运行非标准代码，如 JavaScript 语言扩展等。
-
-*   **减小应用程序体积**：此过程执行一些优化，例如移除未使用或不可达的代码（摇树优化），并将原始代码转换为更紧凑的版本（压缩）。目标是减小最终应用程序的体积，以便在网络中更快地传输。
-
-*   **打包**：打包过程将多个文件合并为一个或更少的文件。这使得浏览器在加载你的应用程序时执行更少的 HTTP 请求。
-
-*   **代码拆分**：这与打包过程相反。它允许你将应用程序的代码拆分为多个文件（包），以便按需加载。这优化了网络带宽的使用和应用程序的启动时间。
+- **转译**：此过程由工具（转译器）执行，将原始 JavaScript 代码转换为另一种形式，但仍然是 JavaScript。这种转换可能有多种原因。最重要的原因是将现代 JavaScript 代码转换为旧式 JavaScript，以便它也能在旧浏览器中运行。此外，转译允许你在代码中使用最新的 JavaScript 特性，即使你的浏览器尚未支持它们。同时，它也允许你运行非标准代码，如 JavaScript 语言扩展等。
+- **减小应用程序体积**：此过程执行一些优化，例如移除未使用或不可达的代码（摇树优化），并将原始代码转换为更紧凑的版本（压缩）。目标是减小最终应用程序的体积，以便在网络中更快地传输。
+- **打包**：打包过程将多个文件合并为一个或更少的文件。这使得浏览器在加载你的应用程序时执行更少的 HTTP 请求。
+- **代码拆分**：这与打包过程相反。它允许你将应用程序的代码拆分为多个文件（包），以便按需加载。这优化了网络带宽的使用和应用程序的启动时间。
 
 这些是将构建步骤应用于应用程序开发过程的主要原因。根据特定应用程序的需求，可能还有其他原因。例如，你可能对样式转换应用预处理步骤，例如将 Sass 样式表转换为 CSS，或进行图像处理等。
 
@@ -625,21 +587,25 @@ Web Components 所依赖的技术是标准化的，也就是说，它们旨在�
 
 ### Web 组件构建器项目
 
-为了本书的目的，也为了你自己的任何开发目的，你可以从以下 GitHub 仓库下载一个基于 Webpack 的预配置构建项目：**[`github.com/andychiare/web-components-builder`](https://github.com/andychiare/web-components-builder)。**
+为了本书的目的，也为了你自己的任何开发目的，你可以从以下 GitHub 仓库下载一个基于 Webpack 的预配置构建项目：[`github.com/andychiare/web-components-builder`](https://github.com/andychiare/web-components-builder)。
 
 该项目名为 Web Components Builder，作为 Web 组件开发环境的项目模板。请确保你的计算机上安装了 Node.js，因为它依赖于该运行时。
 
 你可以使用 git 获取 Web Components Builder 项目的副本。只需在终端窗口中输入以下命令：
 
-`git clone` [`https://github.com/andychiare/web-components-builder.git`](https://github.com/andychiare/web-components-builder.git)
+```bash
+git clone https://github.com/andychiare/web-components-builder.git
+```
 
 你将获得项目内容，存放在名为 `web-components-builder` 的文件夹中。现在，进入该文件夹并输入以下命令安装所需的依赖项：
 
-`npm install`
+```bash
+npm install
+```
 
 此命令将在项目级别下载并安装 Webpack 以及所有必需的库。
 
-**在本书的其余部分，当我们提到克隆并初始化 Web Components Builder 项目的副本时，我们将引用上述的** `git clone` **和** `npm install` **命令。**
+在本书的其余部分，当我们提到克隆并初始化 Web Components Builder 项目的副本时，我们将引用上述的 `git clone` 和 `npm install` 命令。
 
 该项目附带了一个示例 Web 组件，即我们在第一章中使用的评分组件。下图显示了项目初始化后的文件和文件夹结构：
 
@@ -651,7 +617,9 @@ Web Components 所依赖的技术是标准化的，也就是说，它们旨在�
 
 要查看示例 Web 组件的运行效果，只需输入以下命令：
 
-`npm start`
+```bash
+npm start
+```
 
 几秒钟后，项目构建完成，你可以打开浏览器并访问 `http://localhost:8080`。你应该会看到类似下图所示的页面：
 
@@ -661,10 +629,9 @@ Web Components 所依赖的技术是标准化的，也就是说，它们旨在�
 
 当你对你构建的 Web 组件感到满意时，可以创建该组件的生产就绪版本。如前所述，这意味着转译代码以获得更广泛的兼容性、减小体积、打包等。因此，通过输入以下命令来构建你的组件：
 
-`npm run build`
-
-
-
+```bash
+npm run build
+```
 
 几秒钟后，你将在 `dist` 文件夹中获得构建过程的结果。在 Web Components Builder 项目中，这一过程的结果还包括我们在第一章中讨论过的 polyfills，因此你的 Web Component 也能被较旧的浏览器所支持。
 
@@ -678,9 +645,8 @@ Web Components 所依赖的技术是标准化的，也就是说，它们旨在�
 
 你可以创建两种类型的自定义元素：
 
-*   自定义原生元素
-
-*   自主自定义元素
+- 自定义原生元素
+- 自主自定义元素
 
 自定义原生元素是基于现有标准元素构建的自定义元素。基本上，它们扩展了标准 HTML 元素（如 `<img>`、`<button>`、`<input>` 等）的功能。
 
@@ -694,18 +660,19 @@ Web Components 所依赖的技术是标准化的，也就是说，它们旨在�
 
 为了实现这一目标，创建一个名为 `secureLink.js` 的文件，并将以下代码放入其中：
 
-```
+```javascript
 class SecureLink extends HTMLAnchorElement {
-connectedCallback() {
-this.addEventListener("click", (e) => {
-if (!this.href.startsWith("https")) {
-if (!confirm("您即将导航到一个不安全的网站。是否继续？")) {
-e.preventDefault();
+  connectedCallback() {
+    this.addEventListener("click", (e) => {
+      if (!this.href.startsWith("https")) {
+        if (!confirm("您即将导航到一个不安全的网站。是否继续？")) {
+          e.preventDefault();
+        }
+      }
+    })
+  }
 }
-}
-})
-}
-}
+
 customElements.define("secure-link", SecureLink, {extends: "a"});
 ```
 
@@ -719,17 +686,17 @@ customElements.define("secure-link", SecureLink, {extends: "a"});
 
 你在 JavaScript 文件中看到的最后一条语句如下：
 
-`customElements.define("secure-link", SecureLink, {extends: "a"});`
+```javascript
+customElements.define("secure-link", SecureLink, {extends: "a"});
+```
 
 这条语句起着至关重要的作用。它将 `SecureLink` 类添加到当前浏览器窗口的自定义元素注册表中。`customElements` 集合的 `define()` 方法执行此注册，它接受以下参数：
 
-*   **自定义元素的名称**：这是一个字符串，定义了在 HTML 标记中标识我们元素的名称。在我们的例子中，新元素将与 `secure-link` 名称关联。
+- **自定义元素的名称**：这是一个字符串，定义了在 HTML 标记中标识我们元素的名称。在我们的例子中，新元素将与 `secure-link` 名称关联。
+- **实现自定义元素的类**：在我们的例子中，我们直接传递了 `SecureLink` 类。
+- **选项**：一个可选对象，定义了元素的定义方式。目前仅支持 `extends` 选项：它指定要扩展的内置元素的名称。
 
-*   **实现自定义元素的类**：在我们的例子中，我们直接传递了 `SecureLink` 类。
-
-*   **选项**：一个可选对象，定义了元素的定义方式。目前仅支持 `extends` 选项：它指定要扩展的内置元素的名称。
-
-**请确保不要忘记注册你的 Web Component。仅定义类不足以创建你的组件。**
+请确保不要忘记注册你的 Web Component。仅定义类不足以创建你的组件。
 
 如你所见，注册我们的 Web Component 非常简单。但你可能想知道为什么我们需要通过传递 `{extends: "a"}` 对象来指定我们正在扩展 `<a>` 元素。毕竟，我们刚刚通过扩展内置的 `HTMLAnchorElement` 类定义了 `SecureLink` 类。
 
@@ -737,7 +704,7 @@ customElements.define("secure-link", SecureLink, {extends: "a"});
 
 另一方面，当你想要通过扩展原生元素来创建自己的自定义元素时，你需要知道要扩展的基类是什么。以下是常见 HTML 元素及其基类的列表：
 
-| **元素** | **基类** |
+| 元素 | 基类 |
 | --- | --- |
 | `<a>` | `HTMLAnchorElement` |
 | `<audio>` | `HTMLAudioElement` |
@@ -771,36 +738,32 @@ customElements.define("secure-link", SecureLink, {extends: "a"});
 
 **表 2.1**
 
-完整列表请参考以下地址的官方文档：**[`html.spec.whatwg.org/multipage/indices.html#element-interfaces`](https://html.spec.whatwg.org/multipage/indices.html#element-interfaces)**。
+完整列表请参考以下地址的官方文档：[`html.spec.whatwg.org/multipage/indices.html#element-interfaces`](https://html.spec.whatwg.org/multipage/indices.html#element-interfaces)。
 
-### Web Components 命名规则
+### Web 组件命名规则
 
 在了解如何使用我们刚刚定义的 Web Component 之前，我们先花点时间讨论一下如何命名你的元素。
 
-**请注意，自定义元素的名称并不是实现它的类的名称。**
+请注意，自定义元素的名称并不是实现它的类的名称。
 
 类名标识自定义元素的实现，而自定义元素的名称是你传递给 `customElements.define()` 方法的字符串。它在 HTML 标记中标识你的自定义元素。
-
-
-
-
 
 在上一节描述的示例中，我们将自定义元素命名为 `secure-link`。名称中包含连字符并非偶然。实际上，根据规范，自定义元素的名称必须包含一个连字符。因此，`securelink` 不是有效名称，而 `secure-link` 是有效的。
 
 这种技巧让 HTML 解析器能够区分常规元素和自定义元素，并避免与未来新增的标准标签产生冲突。然而，即使包含至少一个连字符的名称对自定义元素来说是合法的，你也不能使用以下任何名称：
 
-*   `annotation-xml`
-*   `color-profile`
-*   `font-face`
-*   `font-face-src`
-*   `font-face-uri`
-*   `font-face-format`
-*   `font-face-name`
-*   `missing-glyph`
+- `annotation-xml`
+- `color-profile`
+- `font-face`
+- `font-face-src`
+- `font-face-uri`
+- `font-face-format`
+- `font-face-name`
+- `missing-glyph`
 
 这些是 SVG 和 MathML 的保留名称。
 
-自定义元素名称中必须包含连字符的要求，让你有机会以某种命名空间的方式命名元素，并避免与第三方创建的自定义元素冲突。即使这不是强制要求，你也应该考虑为自定义元素名称添加一个希望唯一的**前缀**。例如，如果你正在构建自己的自定义元素库，并希望将其命名为 foo，你可以使用 `foo-` 前缀来命名元素。这样你就可以得到像 `foo-input`、`foo-link`、`foo-image` 等名称。
+自定义元素名称中必须包含连字符的要求，让你有机会以某种命名空间的方式命名元素，并避免与第三方创建的自定义元素冲突。即使这不是强制要求，你也应该考虑为自定义元素名称添加一个希望唯一的前缀。例如，如果你正在构建自己的自定义元素库，并希望将其命名为 foo，你可以使用 `foo-` 前缀来命名元素。这样你就可以得到像 `foo-input`、`foo-link`、`foo-image` 等名称。
 
 ### 使用基于原生元素的自定义元素
 
@@ -810,7 +773,9 @@ customElements.define("secure-link", SecureLink, {extends: "a"});
 
 在你的网站中使用组件的最简单方法是将 JavaScript 脚本包含在 HTML 页面中，如下所示：
 
-```
+
+
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -824,13 +789,13 @@ customElements.define("secure-link", SecureLink, {extends: "a"});
 
 然后，要使用你的组件，你需要在 HTML 页面的 body 中添加以下代码：
 
-```
+```html
 <a is="secure-link" href="http://www.wikipedia.org">Wikipedia</a>
 ```
 
 如你所见，这里我们使用 Web 组件的方式与第一章中介绍的 `my-rating` 组件不同。在 `my-rating` 组件的情况下，我们将该名称用作标签，而这里我们将组件名称用作 `<a>` HTML 元素的 `is` 属性的值。这是从标记角度区分自主自定义元素和自定义原生元素的宏观差异。这里我们要表达的是，我们的元素是一个 `<a>` HTML 元素，并附加了 `secure-link` 扩展提供的额外功能。在下一节中，我们将更深入地讨论这种方法背后的原因，以及使用自定义原生元素的好处。现在，我们先记下这一点，看看新页面的效果，其完整代码如下所示：
 
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -863,7 +828,7 @@ customElements.define("secure-link", SecureLink, {extends: "a"});
 
 为了使这个场景更具体，请克隆并初始化我们之前提到的 Web Components Builder 项目，然后开始一个新项目。现在，将根文件夹中 HTML 页面的内容替换为以下标记：
 
-```
+```html
 <!DOCTYPE html>
 <html>
 <head>
@@ -879,7 +844,7 @@ customElements.define("secure-link", SecureLink, {extends: "a"});
 
 现在，将上一节创建的 `secureLink.js` 文件（包含原生自定义元素实现）添加到 `src` 文件夹中。最后，将 `index.js` 文件的内容替换为以下代码：
 
-```
+```javascript
 import "./secureLink";
 
 window.onload = function() {
@@ -898,19 +863,15 @@ window.onload = function() {
 
 让我们重点看一下 `secure-link` 组件实例是如何创建的。示例中使用的语句如下：
 
-```
+```javascript
 const secureLink = document.createElement("a", {is:"secure-link"});
 ```
 
-我们使用了 document 对象的典型 `createElement()` 方法，并指定了要创建元素的标签名称。然而，与通常的方式不同，我们动态创建了一个 HTML 元素；在这种情况下，我们添加了第二个参数。这个参数是一个对象，指定了我们想要创建的 `<a>` 元素是由 `secure-link` 定义自定义的。这使我们能够获得 Web 组件的一个实例。
+我们使用了 `document` 对象的典型 `createElement()` 方法，并指定了要创建元素的标签名称。然而，与通常的方式不同，我们动态创建了一个 HTML 元素；在这种情况下，我们添加了第二个参数。这个参数是一个对象，指定了我们想要创建的 `<a>` 元素是由 `secure-link` 定义自定义的。这使我们能够获得 Web 组件的一个实例。
 
 **某些浏览器允许你将字符串作为** `createElement()` **方法的第二个参数。这是为了向后兼容旧版本的自定义元素规范。**
 
 **这种方法已被弃用，因此请使用基于对象的方法。**
-
-
-
-
 
 现在，打开终端窗口，进入项目根目录，输入 `npm start` 命令来运行你的组件。如果你打开浏览器并访问 `http://localhost:8080`，应该会看到与之前相同的结果：一个指向维基百科主页的链接，点击时会警告你关于安全性的问题。
 
@@ -920,7 +881,7 @@ const secureLink = document.createElement("a", {is:"secure-link"});
 
 答案是肯定的，但有一些注意事项。以下代码是我们之前定义的 `secure-link` 元素的等效实现：
 
-```
+```javascript
 function SecureLink() {
 
 return Reflect.construct(HTMLAnchorElement, [], this.constructor);
@@ -956,7 +917,7 @@ customElements.define("secure-link", SecureLink, {extends: "a"});
 
 如你所见，我们定义了 `SecureLink()` 函数，为其原型分配了从 `HTMLAnchorElement` 继承所需的所有内容，并附加了 `connectedCallback()` 方法。这段代码比基于类的版本略显冗长。但这并不是唯一需要注意的地方。你应该注意到 `SecureLink()` 函数是如何定义其对 `HTMLAnchorElement` 的继承关系的：
 
-```
+```javascript
 function SecureLink() {
 
 return Reflect.construct(HTMLAnchorElement, [], this.constructor);
@@ -972,15 +933,17 @@ return Reflect.construct(HTMLAnchorElement, [], this.constructor);
 
 在创建 Web 组件时，通过扩展原生元素来创建自定义元素应该是首选方法。事实上，这种方法为你带来了几个好处：
 
-*   **与旧版浏览器的兼容性**：不支持 Web 组件技术的浏览器仍然可以访问组件的基本功能。例如，考虑本章中创建的 `secure-link` 组件及其在 HTML 页面中的使用：
+- **与旧版浏览器的兼容性**：不支持 Web 组件技术的浏览器仍然可以访问组件的基本功能。例如，考虑本章中创建的 `secure-link` 组件及其在 HTML 页面中的使用：
 
-    `<a is="secure-link" href="http://www.wikipedia.org">Wikipedia</a>`
+  ```html
+  <a is="secure-link" href="http://www.wikipedia.org">Wikipedia</a>
+  ```
 
-    如果浏览器无法解析 `is` 属性，它将被忽略。因此，你将失去链接上的安全检查，但组件仍然可以正常工作，只是一个普通的链接。
+  如果浏览器无法解析 `is` 属性，它将被忽略。因此，你将失去链接上的安全检查，但组件仍然可以正常工作，只是一个普通的链接。
 
-*   **在禁用 JavaScript 时的可用性**：当然，当用户在浏览器中禁用 JavaScript 时，你会得到与上一点相同的保守行为。你仍然拥有一个没有扩展功能的普通链接。
+- **在禁用 JavaScript 时的可用性**：当然，当用户在浏览器中禁用 JavaScript 时，你会得到与上一点相同的保守行为。你仍然拥有一个没有扩展功能的普通链接。
 
-*   **编码简单**：扩展原生元素通常只需要几行代码。你只需要实现想要添加到原生元素中的功能，而它的标准行为是免费获得的。这与自主自定义元素的实现不同，我们将在下一章中看到。
+- **编码简单**：扩展原生元素通常只需要几行代码。你只需要实现想要添加到原生元素中的功能，而它的标准行为是免费获得的。这与自主自定义元素的实现不同，我们将在下一章中看到。
 
 鉴于这些好处，当你准备创建自己的 Web 组件时，应该始终问自己：它能否作为原生元素的扩展来实现？如果可能，这应该是首选方案。
 
@@ -994,37 +957,25 @@ return Reflect.construct(HTMLAnchorElement, [], this.constructor);
 
 ## 问题
 
-1.  构建流程在开发环境中带来了哪些好处？
+1. 构建流程在开发环境中带来了哪些好处？
+2. 什么是自定义元素？
+3. 自定义原生元素和自主自定义元素有什么区别？
+4. `customElements.define()` 方法的作用是什么？
+5. 命名自定义原生元素有哪些限制？
+6. 如何在 HTML 页面的标记中使用自定义原生元素？
+7. 如何在带有构建流程的开发环境中使自定义原生元素可用？
+8. 将 Web 组件实现为自定义原生元素有哪些好处？
 
-2.  什么是自定义元素？
-
-3.  自定义原生元素和自主自定义元素有什么区别？
-
-4.  `customElements.define()` 方法的作用是什么？
-
-5.  命名自定义原生元素有哪些限制？
-
-6.  如何在 HTML 页面的标记中使用自定义原生元素？
-
-7.  如何在带有构建流程的开发环境中使自定义原生元素可用？
-
-8.  将 Web 组件实现为自定义原生元素有哪些好处？
-
-# 第 3 章
-
-## 创建自定义 Web 组件
+# 第 3 章：创建自定义 Web 组件
 
 在上一章中，我们学习了如何自定义标准 HTML 元素。在本章中，我们将更进一步，创建不严格基于已知 HTML 元素的 Web 组件。这种 Web 组件被称为**自主自定义元素**，它将让你构建全新的组件，其行为完全由你的想象力决定。像往常一样，你将通过构建一个具体的自主自定义元素来学习如何创建这种类型的组件。在本章中，你将搭建组件的基础，我们将在本书的其余部分中完成它。
 
 ## 结构
 
-*   从头开始创建 Web 组件
-
-*   添加 CSS 和标记的基本技术
-
-*   Web 组件的生命周期
-
-*   使用自定义 Web 组件
+- 从头开始创建 Web 组件
+- 添加 CSS 和标记的基本技术
+- Web 组件的生命周期
+- 使用自定义 Web 组件
 
 ## 目标
 
@@ -1033,10 +984,6 @@ return Reflect.construct(HTMLAnchorElement, [], this.constructor);
 ## 从头开始创建 Web 组件
 
 从上一章中，你已经知道如何通过扩展原生 HTML 元素来构建自己的 Web 组件。你学会了改变现有标准 HTML 元素的行为以适应你的需求是多么简单。
-
-
-
-
 
 然而，并非你为 Web 应用或网站设想的 UI 元素总能通过简单扩展原生 HTML 元素来实现。尽管我们说过，在实现自己的 Web Component 时，扩展原生 HTML 元素应是首选方案，但有些情况下，你需要的 UI 组件与任何原生 HTML 元素都不相似，或是原生元素的组合。这时，你需要实现自己的自主自定义元素。
 
@@ -1056,7 +1003,7 @@ return Reflect.construct(HTMLAnchorElement, [], this.constructor);
 
 让我们开始构建我们的 cookie 提醒组件，并在此过程中学习自主自定义元素。因此，假设你已经初始化了 Web Component 项目，打开 `src` 文件夹中的 `index.js` 文件，并将其内容替换为以下代码：
 
-```
+```javascript
 class CookieAlert extends HTMLElement {
 constructor() {
 super();
@@ -1068,7 +1015,7 @@ this.innerText = "This website uses cookies to ensure you get the best experienc
 customElements.define("cookie-alert", CookieAlert);
 ```
 
-如前一章所述，自主自定义元素是从头开始构建的元素。它不扩展标准的、众所周知的 `HTML 元素`，但无论如何，它是作为一个扩展 `HTMLElement` 的类来实现的。`HTMLElement` 类是任何 HTML 元素的基类。它赋予你的组件被添加到 DOM 的能力，以及一些我们稍后会发现的更多功能。
+如前一章所述，自主自定义元素是从头开始构建的元素。它不扩展标准的、众所周知的 HTML 元素，但无论如何，它是作为一个扩展 `HTMLElement` 的类来实现的。`HTMLElement` 类是任何 HTML 元素的基类。它赋予你的组件被添加到 DOM 的能力，以及一些我们稍后会发现的更多功能。
 
 如你所见，`CookieAlert` 类有一个构造函数，它调用了基类的 `super()` 方法。根据规范，这对于使你的自定义元素正常工作非常重要。因此，在实现自主自定义元素时，不要忘记调用它。
 
@@ -1078,7 +1025,9 @@ customElements.define("cookie-alert", CookieAlert);
 
 下一步是通过更改 `index.html` 页面的内容来使用这个简单的组件。因此，打开项目根文件夹中的 `index.html` 文件，并将其内容替换为以下标记：
 
-```
+
+
+```html
 <!DOCTYPE html>
 <html>
 <head>
@@ -1111,7 +1060,7 @@ customElements.define("cookie-alert", CookieAlert);
 
 因此，让我们开始更改 `src` 文件夹中 `index.js` 文件的内容，如下代码所示：
 
-```
+```javascript
 const styleMarkup = ‘
 <style>
 .container {
@@ -1156,7 +1105,7 @@ customElements.define("cookie-alert", CookieAlert);
 
 以下是使用 DOM API 构建组件 UI 的示例：
 
-```
+```javascript
 const styleRules = ‘
 .container {
 color: rgb(255, 255, 255);
@@ -1182,10 +1131,6 @@ const style = document.createElement("style");
 style.appendChild(document.createTextNode(styleRules));
 ```
 
-
-
-
-
 ```javascript
 this.appendChild(style);
 const span = document.createElement("span");
@@ -1205,7 +1150,7 @@ customElements.define("cookie-alert", CookieAlert);
 
 **这里我们介绍了两种构建 Web 组件外观的方法——一种基于字符串表示的标记，另一种基于 DOM API 的使用。虽然这两种方法在我们提供的示例中都能正常工作，但它们并不是构建组件 UI 的最佳实践。**
 
-**我们将在 *第 7 章* 中讨论 HTML 模板时，看到一种更好的方法。**
+**我们将在第 7 章中讨论 HTML 模板时，看到一种更好的方法。**
 
 ## Web 组件的生命周期
 
@@ -1267,7 +1212,7 @@ customElements.define("cookie-alert", CookieAlert);
 
 实际上，你可以通过不同的方式组合这些步骤来获得自定义元素的实例。下表总结了这些可能的组合：
 
-| **步骤 1** | **步骤 2** | **步骤 3** | **步骤 4** | **状态** |
+| 步骤 1 | 步骤 2 | 步骤 3 | 步骤 4 | 状态 |
 |---|---|---|---|---|
 | 类定义 | 自定义元素注册 | 实例创建 | 附加到 DOM | 已创建 |
 | 类定义 | 实例创建 | 自定义元素注册 | 附加到 DOM | 已升级 |
@@ -1314,11 +1259,7 @@ constructor() {
 const cookieAlert = new CookieAlert();
 ```
 
-
-
-
-
-```
+```javascript
 document.body.appendChild(cookieAlert);
 const div = document.createElement("div");
 document.body.appendChild(div);
@@ -1333,7 +1274,7 @@ div.appendChild(cookieAlert);
 
 让我们看看 `CookieAlert` 组件的 `connectedCallback()` 方法：
 
-```
+```javascript
 connectedCallback() {
 this.createComponent();
 }
@@ -1341,7 +1282,7 @@ this.createComponent();
 
 它只是调用了 `createComponent()` 方法，该方法操作 DOM 以附加自定义元素的 UI 元素。提醒一下，以下是 `createComponent()` 方法的代码：
 
-```
+```javascript
 createComponent() {
 const style = document.createElement("style");
 style.appendChild(document.createTextNode(styleRules));
@@ -1359,7 +1300,7 @@ this.appendChild(div);
 
 我们可以通过检查是否已经完成来避免执行这些不必要的工作，如下例所示：
 
-```
+```javascript
 connectedCallback() {
 if (!this.initialized) {
 this.createComponent();
@@ -1378,13 +1319,15 @@ this.initialized = true;
 
 在这里，你只需要了解这个方法及其总体目标。此外，这个方法会接收三个参数，为你提供更多关于正在发生什么的信息：
 
-*   受影响的属性名称
-*   该属性的旧值
-*   该属性的新值
+- 受影响的属性名称
+- 该属性的旧值
+- 该属性的新值
 
 因此，通常你会像下面这样实现 `attributeChangedCallback()` 方法：
 
-```
+
+
+```javascript
 attributeChangedCallback(name, oldValue, newValue) {
 …
 }
@@ -1392,22 +1335,22 @@ attributeChangedCallback(name, oldValue, newValue) {
 
 如前所述，我们将在下一章更详细地介绍如何使用这个反应。
 
-### adoptedCallback() 反应
+### `adoptedCallback()` 反应
 
 当你的自定义元素被采纳到新文档中时，你可能需要实现 `adoptedCallback()` 方法。元素的采纳有一个非常特定的用例。当元素通过 `document.adoptNode()` 方法从一个文档移动到另一个文档时，就会发生这种情况。这通常发生在你处理 `iframe` 时，如下例所示：
 
-```
-const iframe = document.querySelector(“iframe”);
-const iframeFirstImage = iframe.contentDocument.querySelector(“img”);
+```javascript
+const iframe = document.querySelector("iframe");
+const iframeFirstImage = iframe.contentDocument.querySelector("img");
 const adoptedImage = document.adoptNode(iframeFirstImage);
 document.body.appendChild(adoptedImage);
 ```
 
-这段代码获取当前文档中第一个 `iframe` 的第一个图片元素，并将其追加到当前文档的 body 中。请注意，原始元素会从源文档中移除。
+这段代码获取当前文档中第一个 `iframe` 的第一个图片元素，并将其追加到当前文档的 `body` 中。请注意，原始元素会从源文档中移除。
 
 当你的自定义元素以这种方式移动时，`adoptedCallback()` 方法会被调用。注意，元素的采纳不会销毁并重新创建元素，因此它的构造函数不会被调用。
 
-### disconnectedCallback() 反应
+### `disconnectedCallback()` 反应
 
 当你的自定义元素从 DOM 中移除时，会调用 `disconnectedCallback()` 方法。你可以定义此方法，以便在元素从当前文档中消失之前执行操作。通常，它用于释放资源和添加清理逻辑，例如通知其他组件该元素正在从 DOM 中移除、停止定时器、取消订阅 DOM 事件或全局应用程序服务等。
 
@@ -1417,15 +1360,15 @@ document.body.appendChild(adoptedImage);
 
 为了澄清这个概念，请考虑以下代码：
 
-```
+```javascript
 const cookieAlert = new CookieAlert();
 document.body.appendChild(cookieAlert);
-document.body.getElementByTagName(“cookie-alert”).remove();
+document.body.getElementByTagName("cookie-alert").remove();
 ```
 
 这段代码创建了一个 `cookieAlert` 自定义元素的实例，将其添加到 DOM 中，然后将其从 DOM 中移除。最后一条语句导致系统查找并执行 `disconnectedCallback()` 方法。请注意，`cookieAlert` 实例已从 DOM 中移除，但并未被销毁。事实上，你可以通过以下语句再次将其追加到 DOM 中：
 
-```
+```javascript
 document.body.appendChild(cookieAlert);
 ```
 
@@ -1435,10 +1378,10 @@ document.body.appendChild(cookieAlert);
 
 当你的组件从 DOM 中移除时，一个好的做法是移除它订阅的事件监听器。以下代码展示了如何做到这一点：
 
-```
+```javascript
 disconnectedCallback() {
-this.getElementById(“clickableItem”)
-.removeEventListener(“click”, this.handleClick);
+  this.getElementById("clickableItem")
+    .removeEventListener("click", this.handleClick);
 }
 ```
 
@@ -1446,34 +1389,34 @@ this.getElementById(“clickableItem”)
 
 ## 使用自定义 Web 组件
 
-
-
-
-
 在前面的章节中，我们创建了 cookie 提醒自定义元素，并了解了如何在 HTML 页面中使用它。实际上，使用自主自定义元素相当简单。一旦你定义了实现它的类，并用标签名注册了它，你只需在 HTML 页面的标记中使用该标签名，如下所示：
 
-```
+```html
 <!DOCTYPE html>
 <html>
 <head>
-<title>使用 Webpack 构建系统的 Web 组件</title>
-<script src="./wc-polyfills/webcomponents-loader.js"></script>
-<script src="./bundle.js"></script>
+  <title>使用 Webpack 构建系统的 Web 组件</title>
+  <script src="./wc-polyfills/webcomponents-loader.js"></script>
+  <script src="./bundle.js"></script>
 </head>
 <body>
-<h1>这是你的 Web 组件</h1>
-<cookie-alert></cookie-alert>
+  <h1>这是你的 Web 组件</h1>
+  <cookie-alert></cookie-alert>
 </body>
 </html>
 ```
 
 有趣的是，你的自定义元素会变得与任何其他标准 HTML 元素难以区分。由于你的组件派生自 `HTMLElement`，你可以使用所有 HTML 元素共有的特性，而无需编写额外的代码。例如，你可以使用 `hidden` 属性，如下所示：
 
-`<cookie-alert hidden></cookie-alert>`
+```html
+<cookie-alert hidden></cookie-alert>
+```
 
 你的组件将像任何其他具有 `hidden` 属性的标准元素一样，不会在页面上显示。此外，你还可以附加事件监听器，如下所示：
 
-`<cookie-alert onclick=”alert(‘你点击了！’)”></cookie-alert>`
+```html
+<cookie-alert onclick="alert('你点击了！')"></cookie-alert>
+```
 
 当你点击组件时，会弹出一个包含你传入消息的警告窗口，如下图所示：
 
@@ -1483,7 +1426,8 @@ this.getElementById(“clickableItem”)
 
 标准 HTML 元素的所有通用属性都会自动在你的自定义元素中可用。以下是最常见的一些属性列表：
 
-| **属性** | **描述** |
+| 属性 | 描述 |
+| --- | --- |
 | `hidden` | 指示元素是否隐藏 |
 | `id` | 元素的标识符 |
 | `innerHTML` | 表示元素内部内容的标记 |
@@ -1492,9 +1436,9 @@ this.getElementById(“clickableItem”)
 | `onfocus` | 聚焦事件（即元素获得焦点时）的事件处理程序 |
 | `onclick` | 点击事件的事件处理程序 |
 | `onmousedown` | `mousedown` 事件（即用户按下鼠标按钮时）的事件处理程序 |
-| `onmouseover` | mouseover 事件（即用户将鼠标指针移到元素上时）的事件处理程序 |
+| `onmouseover` | `mouseover` 事件（即用户将鼠标指针移到元素上时）的事件处理程序 |
 | `onmouseup` | `mouseup` 事件（即用户释放鼠标按钮时）的事件处理程序 |
-| `onresize` | resize 事件（即当前浏览器窗口大小改变时）的事件处理程序 |
+| `onresize` | `resize` 事件（即当前浏览器窗口大小改变时）的事件处理程序 |
 | `style` | 表示元素内联样式的 CSS 声明 |
 | `title` | 通常当鼠标悬停在元素上时以工具提示弹出窗口显示的文本 |
 
@@ -1508,14 +1452,16 @@ this.getElementById(“clickableItem”)
 
 假设你的组件已分配了一个标识符，如下例所示：
 
-`<cookie-alert id=”myCookieAlert”></cookie-alert>`
+```html
+<cookie-alert id="myCookieAlert"></cookie-alert>
+```
 
 你可以使用以下 JavaScript 代码隐藏此组件：
 
-```
+```javascript
 window.onload = function() {
-const cookieAlert = document.getElementById("myCookieAlert");
-cookieAlert.hidden = true;
+  const cookieAlert = document.getElementById("myCookieAlert");
+  cookieAlert.hidden = true;
 };
 ```
 
@@ -1523,19 +1469,19 @@ cookieAlert.hidden = true;
 
 类似地，你可以通过 JavaScript 使用以下代码添加点击事件的处理程序：
 
-```
+```javascript
 window.onload = function() {
-const cookieAlert = document.getElementById("myCookieAlert");
-cookieAlert.onclick = () => alert(“你点击了！”);
+  const cookieAlert = document.getElementById("myCookieAlert");
+  cookieAlert.onclick = () => alert("你点击了！");
 };
 ```
 
 在这种情况下，我们使用了自定义元素的 `onclick` 属性，该属性映射到 `onclick` 属性。另一种方法是使用 `addEventListener()` 方法，如下例所示：
 
-```
+```javascript
 window.onload = function() {
-const cookieAlert = document.getElementById("myCookieAlert");
-cookieAlert.addEventListener(“click”, () => alert(“你点击了！”));
+  const cookieAlert = document.getElementById("myCookieAlert");
+  cookieAlert.addEventListener("click", () => alert("你点击了！"));
 };
 ```
 
@@ -1543,7 +1489,8 @@ cookieAlert.addEventListener(“click”, () => alert(“你点击了！”));
 
 以下是你的自定义元素从 `HTMLElement` 继承的最常见方法：
 
-| **方法** | **描述** |
+| 方法 | 描述 |
+| --- | --- |
 | `addEventListener` | 在元素上为特定事件类型注册事件处理程序 |
 | `getAttribute` | 根据属性名称返回元素属性的值 |
 | `getElementsByClassName` | 返回元素所有具有给定 CSS 类的后代元素的集合 |
@@ -1570,25 +1517,14 @@ cookieAlert.addEventListener(“click”, () => alert(“你点击了！”));
 
 ## 问题
 
-1.  注册自主自定义元素和注册自定义原生元素有什么区别？
-
-2.  什么是自定义元素反应？
-
-3.  Web 组件可能有哪些反应？
-
-4.  组件的创建和升级之间有什么区别？
-
-5.  操作 DOM 的最佳反应是什么？
-
-6.  `adoptedCallback()` 反应在何时被调用？
-
-7.  `disconnectedCallback()` 反应在何时被调用？
-
-8.  为什么自主自定义元素即使你没有实现它们，也会有一些可用的属性、属性和方法？
-
-
-
-
+1. 注册自主自定义元素和注册自定义原生元素有什么区别？
+2. 什么是自定义元素反应？
+3. Web 组件可能有哪些反应？
+4. 组件的创建和升级之间有什么区别？
+5. 操作 DOM 的最佳反应是什么？
+6. `adoptedCallback()` 反应在何时被调用？
+7. `disconnectedCallback()` 反应在何时被调用？
+8. 为什么自主自定义元素即使你没有实现它们，也会有一些可用的属性、属性和方法？
 
 # 第 4 章：管理属性和特性
 
@@ -1598,10 +1534,10 @@ cookieAlert.addEventListener(“click”, () => alert(“你点击了！”));
 
 ## 结构
 
-*   特性与属性
-*   管理属性
-*   同步特性与属性
-*   注意事项与建议
+- 特性与属性
+- 管理属性
+- 同步特性与属性
+- 注意事项与建议
 
 ## 目标
 
@@ -1621,21 +1557,21 @@ cookieAlert.addEventListener(“click”, () => alert(“你点击了！”));
 
 如前所述，当浏览器解析一个 HTML 元素时，它会构建一个对应的 DOM 对象。它还会分析元素的特性，将其值赋给对应 DOM 对象的属性。当然，浏览器能够识别 HTML 元素中的标准特性，在这种情况下，它知道如何处理该特性并将其值赋给对应的对象属性。例如，考虑以下标记：
 
-```
-<p id=”myPar”>这是一个段落</p>
+```html
+<p id="myPar">这是一个段落</p>
 ```
 
 浏览器将生成一个 `HTMLParagraphElement` 对象，并将值 `myPar` 赋给它的 `id` 属性。它知道 `HTMLParagraphElement` 对象有一个与 HTML 特性 `id` 对应的 `id` 属性，因此可以将后者映射到前者。
 
 注意，HTML 元素并不共享相同的标准特性。例如，`<input>` 元素有 `type` 特性，而 `<div>` 元素没有。因此，特性与属性之间的映射必须逐个元素进行。这意味着，如果你向 HTML 元素添加一个非标准特性，它不会在 DOM 对象上生成对应的属性。为了更好地说明，你可以编写以下标记：
 
-```
-<p id=”myPar” type=”special”>这是一个段落</p>
+```html
+<p id="myPar" type="special">这是一个段落</p>
 ```
 
 但 `HTMLParagraphElement` 对象不会获得 `type` 属性。不过，你仍然可以通过 DOM API 访问 HTML 特性。实际上，每个 DOM 对象都有以下方法，允许你处理特性：
 
-| **方法** | **描述** |
+| 方法 | 描述 |
 | --- | --- |
 | `hasAttribute()` | 检查特性是否存在 |
 | `getAttribute()` | 获取特性的值 |
@@ -1646,10 +1582,10 @@ cookieAlert.addEventListener(“click”, () => alert(“你点击了！”));
 
 例如，你可以通过以下代码访问上述标记中段落的非标准特性 `type`：
 
-```
-const myPar = document.getElementById(“myPar”);
-if (myPar.hasAttribute(“type”)) {
-  console.log(myPar.getAttribute(“type”));
+```javascript
+const myPar = document.getElementById("myPar");
+if (myPar.hasAttribute("type")) {
+  console.log(myPar.getAttribute("type"));
 }
 ```
 
@@ -1657,9 +1593,9 @@ if (myPar.hasAttribute(“type”)) {
 
 你还可以使用 `attributes` 属性，它包含 HTML 元素所有特性的列表。列表中的每个元素都是一个表示特性的对象。你可以通过使用 `attributes` 属性来重现前面代码片段的行为，如下所示：
 
-```
-const myPar = document.getElementById(“myPar”);
-const typeAttribute = myPar.attributes.getNamedItem(“type”);
+```javascript
+const myPar = document.getElementById("myPar");
+const typeAttribute = myPar.attributes.getNamedItem("type");
 if (typeAttribute) {
   console.log(typeAttribute.value);
 }
@@ -1673,37 +1609,39 @@ if (typeAttribute) {
 
 为了结束对 HTML 元素特性的概述，你应该注意两个重要特性：
 
-*   特性名称不区分大小写
-*   特性的值始终是字符串
+- 特性名称不区分大小写。
+- 特性的值始终是字符串。
 
 这意味着，例如，以下标记是等价的：
 
+```html
+<p id="myPar">这是一个段落</p>
+<p ID="myPar">这是一个段落</p>
+<p Id="myPar">这是一个段落</p>
 ```
-<p id=”myPar”>这是一个段落</p>
-<p ID=”myPar”>这是一个段落</p>
-<p Id=”myPar”>这是一个段落</p>
-```
+
+
 
 此外，你可以通过 JavaScript 以以下等价方式检索特性的值：
 
-```
-const typeAttribute = myPar.attributes.getNamedItem(“type”);
-const typeAttribute = myPar.attributes.getNamedItem(“Type”);
-const typeAttribute = myPar.attributes.getNamedItem(“TYPE”);
+```javascript
+const typeAttribute = myPar.attributes.getNamedItem("type");
+const typeAttribute = myPar.attributes.getNamedItem("Type");
+const typeAttribute = myPar.attributes.getNamedItem("TYPE");
 ```
 
 另外，无论你以何种方式获取或设置特性的值，它都将是一个字符串。考虑以下示例：
 
-```
-const typeAttribute = myPar.attributes.getNamedItem(“type”);
+```javascript
+const typeAttribute = myPar.attributes.getNamedItem("type");
 console.log(typeAttribute.value + 1);
 ```
 
 你在控制台得到的输出将是特性值与字符串 1 的拼接。如果 `type` 特性的值是一个数字字符串，则需要由你将其转换为数字。当你为特性赋值时也是如此，如下代码所示：
 
-```
-const myPar = document.getElementById(“myPar”);
-myPar.setAttribute(“type”, 123);
+```javascript
+const myPar = document.getElementById("myPar");
+myPar.setAttribute("type", 123);
 ```
 
 即使你赋的是一个数值，它也会被转换为字符串。
@@ -1714,28 +1652,29 @@ myPar.setAttribute(“type”, 123);
 
 DOM 对象是常规的 JavaScript 对象，因此我们可以像处理任何其他对象一样处理它们。例如，我们可以为其属性赋值，或添加新的属性和方法。以下代码展示了如何向 `HTMLParagraphElement` 对象添加新属性和新方法：
 
-```
-const myPar = document.getElementById(“myPar”);
-myPar.myProperty = “这是一个新属性！”;
+```javascript
+const myPar = document.getElementById("myPar");
+myPar.myProperty = "这是一个新属性！";
 myPar.getContent = () => myPar.innerHTML;
 ```
 
-
-
-
 向 DOM 对象添加新属性不会影响 HTML，但通过 JavaScript 进行自定义时可能很有用。例如，我们可以为图像分配文本或数字信息，以便稍后检索。
 
-**请注意，尽管技术上可行，但向 DOM 对象添加新属性可能并非好主意。新属性可能与标准 DOM 的未来演变产生冲突。**
+请注意，尽管技术上可行，但向 DOM 对象添加新属性可能并非好主意。新属性可能与标准 DOM 的未来演变产生冲突。
 
 与 HTML 属性不同，DOM 属性是区分大小写的。这意味着 DOM 属性的名称始终相同，与对应属性的大小写无关。换句话说，如果你的标记如下所示：
 
-`<p ID=”myPar”>这是一个段落</p>`
+```html
+<p ID="myPar">这是一个段落</p>
+```
 
 对应的 DOM 属性仍然是 `id`。
 
 同样，与 HTML 属性不同，DOM 属性是有类型的。例如，考虑以下标记：
 
-`<p ID=”myPar” hidden style=”color:red”>这是一个段落</p>`
+```html
+<p ID="myPar" hidden style="color:red">这是一个段落</p>
+```
 
 与 `hidden` 属性对应的 `hidden` 属性具有布尔值。而 `style` 属性则是一个对象。
 
@@ -1751,13 +1690,16 @@ myPar.getContent = () => myPar.innerHTML;
 
 例如，你可以更安全地向段落元素添加非标准属性，如下所示：
 
-`<p id=”myPar” data-type=”special”>这是一个段落</p>`
+```html
+<p id="myPar" data-type="special">这是一个段落</p>
+```
 
 任何 data 属性都会映射到对应 DOM 对象的 `dataset` 属性。因此，你可以检索 `data-type` 属性的值，如下面的代码片段所示：
 
-`const myPar = document.getElementById(“myPar”);`
-
-`console.log(myPar.dataset.type);`
+```javascript
+const myPar = document.getElementById("myPar");
+console.log(myPar.dataset.type);
+```
 
 如你所见，在这种情况下，`data-type` 属性生成了 `dataset.type` 属性。
 
@@ -1767,7 +1709,9 @@ myPar.getContent = () => myPar.innerHTML;
 
 然而，这条规则也有一些例外。考虑以下示例：
 
-`<input id="myName" type="text" value="John" />`
+```html
+<input id="myName" type="text" value="John" />
+```
 
 最初，`value` 属性和 `HTMLInputElement` 对象对应的属性具有相同的值。但如果用户更改了文本框的值，属性和属性之间就会出现不同的值。具体来说，`HTMLInputElement` 对象的 `value` 属性将获取用户输入的新值，而属性将继续保持初始值。这种行为的原因很简单——这样，当用户在表单中点击“重置”按钮时，可以恢复原始值。所以，这只是一个实际原因。
 
@@ -1779,8 +1723,8 @@ myPar.getContent = () => myPar.innerHTML;
 
 让我们开始修改我们的 cookie 警告组件，添加一个允许用户指定其 `message` 的属性。我们将向自定义元素添加一个 `message` 属性，这不过就是向任何标准 JavaScript 类添加属性。因此，让我们回顾一下到目前为止定义的 `CookieAlert` 类的代码：
 
-```
-const styleRules = ‘
+```javascript
+const styleRules = `
 .container {
 color: rgb(255, 255, 255);
 background-color: rgb(35, 122, 252);
@@ -1793,7 +1737,7 @@ position:fixed;
 left:0px;
 bottom:0px;
 }
-‘;
+`;
 class CookieAlert extends HTMLElement {
 constructor() {
 super();
@@ -1818,7 +1762,7 @@ customElements.define("cookie-alert", CookieAlert);
 
 作为添加属性的第一步，让我们在类构造函数中为 `_message` 属性分配一个默认值，如下面的代码所示：
 
-```
+```javascript
 constructor() {
 super();
 this._message = "This website uses cookies to ensure you get the best experience";
@@ -1827,7 +1771,7 @@ this._message = "This website uses cookies to ensure you get the best experience
 
 现在，让我们在 `createComponent()` 方法中构建 UI 时使用 `_message` 属性来分配默认消息：
 
-```
+```javascript
 createComponent() {
 const style = document.createElement("style");
 style.appendChild(document.createTextNode(styleRules));
@@ -1843,13 +1787,13 @@ this.appendChild(div);
 
 这些更改不会影响 cookie 警告组件的当前行为。`_message` 属性充当要显示的消息的存储。它并不是我们组件的实际属性，而应该是私有属性。我们使用众所周知的约定，即对于应视为私有的属性，使用 `_` 前缀命名。
 
-**在撰写本文时，实际的私有属性是 ECMAScript 委员会提出的实验性功能。浏览器的支持有限，但某些转译器可以配置使用它们。**
+在撰写本文时，实际的私有属性是 ECMAScript 委员会提出的实验性功能。浏览器的支持有限，但某些转译器可以配置使用它们。
 
-**在本书的其余部分，我们将继续使用基于 `_` 前缀的命名约定来表示私有属性。**
+在本书的其余部分，我们将继续使用基于 `_` 前缀的命名约定来表示私有属性。
 
 为了定义实际属性，让我们向类中添加以下代码：
 
-```
+```javascript
 get message() {
 return this._message;
 }
@@ -1862,143 +1806,87 @@ this._message = value;
 
 虽然 getter 可以满足 `message` 属性的需求，但 setter 还不够。我们希望当 setter 接收到 `message` 的值时，UI 会更新为这个新消息。因此，让我们对 `message` 属性的 setter 进行一些修改，并添加一个新方法，如下面的代码片段所示：
 
-```
+```javascript
 get message() {
 return this._message;
 }
 ```
 
-
-
-
-
-```
+```javascript
 set message(value) {
-
 this._message = value;
-
 this.updateMessage();
-
 }
 ```
 
-```
+```javascript
 updateMessage() {
-
 this.querySelector("span").innerText = this._message;
-
 }
 ```
 
 如你所见，这里我们添加了 `updateMessage()` 方法，它将私有属性 `_message` 的新值赋给 UI，并在 setter 中调用了它。实际上，我们也可以在 `createComponent()` 方法内部使用 `updateMessage()` 方法来改进代码。因此，经过一些重构后，`CookieAlert` 类如下所示：
 
-```
-const styleRules = ‘
-
+```javascript
+const styleRules = `
 .container {
-
 color: rgb(255, 255, 255);
-
 background-color: rgb(35, 122, 252);
-
 padding: 1em 1.8em;
-
 width: 100%;
-
 font-family: Helvetica,Calibri,Arial,sans-serif;
-
 }
-
 .footer {
-
 position:fixed;
-
 left:0px;
-
 bottom:0px;
-
 }
-
-‘;
-
+`;
 class CookieAlert extends HTMLElement {
-
 constructor() {
-
 super();
-
 this._message = "This website uses cookies to ensure you get the best experience";
-
 }
-
 connectedCallback() {
-
 this.createComponent();
-
 }
-
 get message() {
-
 return this._message;
-
 }
-
 set message(value) {
-
 this._message = value;
-
 this.updateMessage();
-
 }
-
 createComponent() {
-
 const style = document.createElement("style");
-
 style.appendChild(document.createTextNode(styleRules));
-
 this.appendChild(style);
-
 const span = document.createElement("span");
-
 const div = document.createElement("div");
-
 div.classList.add("container", "footer");
-
 div.appendChild(span);
-
 this.appendChild(div);
-
 this.updateMessage();
-
 }
-
 updateMessage() {
-
 this.querySelector("span").innerText = this._message;
-
 }
-
 }
-
 customElements.define("cookie-alert", CookieAlert);
 ```
 
 现在，我们的组件拥有一个 `message` 属性，允许用户通过 JavaScript 设置自定义文本。这意味着我们现在可以将 cookie 提醒组件放入 HTML 页面中，如下例所示：
 
-```
+```html
 <cookie-alert id="myAlert"></cookie-alert>
 ```
 
 在同一页面中，我们可以添加一个脚本，通过 JavaScript 设置自定义文本，如下代码所示：
 
-```
+```javascript
 window.onload = function() {
-
 const myAlert = document.getElementById("myAlert");
-
 myAlert.message = "We use cookies, but respect your privacy!";
-
 };
 ```
 
@@ -2018,15 +1906,11 @@ myAlert.message = "We use cookies, but respect your privacy!";
 
 以下代码展示了如何将 `message` 属性的值映射到 `message` 特性：
 
-```
+```javascript
 set message(value) {
-
 this._message = value;
-
 this.setAttribute("message", value);
-
 this.updateMessage();
-
 }
 ```
 
@@ -2040,39 +1924,32 @@ this.updateMessage();
 
 也就是说，你需要知道特性值何时发生变化。因此，第一步是在 Web 组件类中添加静态 getter `observedAttributes()`，声明你想要监视的特性，如下代码片段所示：
 
-```
+```javascript
 static get observedAttributes() {
-
 return ["message"];
-
 }
 ```
 
-这个 getter 返回一个数组，包含组件想要观察的特性名称。在我们的例子中，只有 message 特性。`observedAttributes` 属性向浏览器提供了我们感兴趣的特性列表，当其中任何一个特性的值发生变化时，我们会收到通知。
+这个 getter 返回一个数组，包含组件想要观察的特性名称。在我们的例子中，只有 `message` 特性。`observedAttributes` 属性向浏览器提供了我们感兴趣的特性列表，当其中任何一个特性的值发生变化时，我们会收到通知。
 
 完成这个初步步骤后，你需要捕获浏览器在观察的特性值发生变化时发送的通知。为此，你需要实现 `attributeChangedCallback()` 方法。正如你在前一章中记得的，这是 Web 组件生命周期中的一种反应。当任何观察的特性发生变化时，它将被调用。以下是 cookie 提醒组件中该方法的实现：
 
-```
+```javascript
 attributeChangedCallback(name, oldValue, newValue) {
-
 if (oldValue !== newValue) {
-
 if (name === "message") {
-
 this._message = newValue;
-
 this.updateMessage();
-
 }
-
 }
-
 }
 ```
 
-这段代码将更改内部的 `_message` 属性，并通过 `updateMessage()` 方法显示新值。
 
-这些更改允许你使用 `<cookie-alert>` 元素的 message 特性来设置自定义的 `message`，而无需任何 JavaScript 代码，如下例所示：
+
+这段代码将更改内部的`_message`属性，并通过`updateMessage()`方法显示新值。
+
+这些更改允许你使用`<cookie-alert>`元素的`message`特性来设置自定义的`message`，而无需任何 JavaScript 代码，如下例所示：
 
 ```
 <cookie-alert message="We use cookies, but respect your privacy!”></cookie-alert>
@@ -2088,9 +1965,6 @@ this.updateMessage();
 
 如前所述，特性只接受字符串。你不能传递任何其他数据类型。将字符串转换为对应属性类型的责任在于 getter 和 setter 方法。当然，你也不能将丰富的数据（如对象和数组）赋值给特性。如果你希望允许为 Web 组件分配丰富的数据，你应该通过方法或属性来接受这些数据。
 
-
-
-
 你可能会倾向于通过序列化对象表示的属性来接受丰富数据。或者，你也可能考虑通过序列化将特性中的丰富数据映射到对应的属性。这种方法存在一些缺陷。最明显的缺点是，为了同步特性和属性而进行序列化和反序列化，对于大型对象来说代价非常高。此外，在序列化过程中，你会丢失对象中可能存在的任何对象引用。换句话说，作为最佳实践，你应该只允许特性包含丰富数据，或者将其作为方法的参数接受。永远不要在 Web 组件的属性中接受或映射丰富数据。
 
 ## 结论
@@ -2103,31 +1977,19 @@ this.updateMessage();
 
 ## 问题
 
-1.  标准 HTML 元素的特性与属性之间有什么区别？
-
-2.  属性可能的数据类型有哪些？
-
-3.  特性可能的数据类型有哪些？
-
-4.  如果你向标准 HTML 元素添加一个未知属性，会发生什么？
-
-5.  向 HTML 元素添加非标准属性的最佳方式是什么？
-
-6.  HTML 元素的属性集合是否只包含标准属性？
-
-7.  你使用哪个 DOM 方法将特性的值映射到对应的属性？
-
-8.  你可以使用哪个自定义元素反应来捕获属性的变化？
-
-9.  你如何请求浏览器通知属性值的变化？
-
-10. 如果你的特性的数据类型不是 `string`，谁负责转换来自对应属性的值？
-
+1. 标准 HTML 元素的特性与属性之间有什么区别？
+2. 属性可能的数据类型有哪些？
+3. 特性可能的数据类型有哪些？
+4. 如果你向标准 HTML 元素添加一个未知属性，会发生什么？
+5. 向 HTML 元素添加非标准属性的最佳方式是什么？
+6. HTML 元素的属性集合是否只包含标准属性？
+7. 你使用哪个 DOM 方法将特性的值映射到对应的属性？
+8. 你可以使用哪个自定义元素反应来捕获属性的变化？
+9. 你如何请求浏览器通知属性值的变化？
+10. 如果你的特性的数据类型不是`string`，谁负责转换来自对应属性的值？
 11. 为什么你不应该将丰富数据分配给属性？
 
-# 第 5 章
-
-## 处理事件
+# 第 5 章：处理事件
 
 事件是 UI 开发的重要组成部分。它们允许你管理用户与应用程序的交互，并对特定的系统行为做出反应。在本章中，我们将探讨如何让 Web 组件监听事件、处理事件以及创建自定义事件。在简要回顾 DOM 事件管理之后，你将学习如何将 Web 组件与标准事件监听集成。你还将了解如何处理事件传播，以及如何生成不带事件数据和带事件数据的自定义事件。最后，你将看到如何通过移除所有已注册的事件监听器来实现更好的系统资源管理，这是最佳实践之一。
 
@@ -2135,13 +1997,10 @@ this.updateMessage();
 
 ## 结构
 
-*   事件管理基础
-
-*   监听标准事件
-
-*   创建自定义事件
-
-*   移除事件监听器
+- 事件管理基础
+- 监听标准事件
+- 创建自定义事件
+- 移除事件监听器
 
 ## 目标
 
@@ -2155,32 +2014,28 @@ this.updateMessage();
 
 你有三种方式将处理程序与事件关联：
 
-*   在 JavaScript 代码中使用 `addEventListener()` 方法
+- 在 JavaScript 代码中使用`addEventListener()`方法
+- 在 HTML 标记中使用特定的属性
+- 使用 HTML 元素的特定特性
 
-*   在 HTML 标记中使用特定的属性
-
-*   使用 HTML 元素的特定特性
-
-使用属性和特性为 HTML 元素分配事件处理程序相当直接且方便。然而，`addEventListener()` 方法提供了一种更高级的事件管理方式。例如，它允许你为同一事件添加多个处理程序。它还允许你控制处理程序在事件传播流程中的位置，我们稍后会看到。
+使用属性和特性为 HTML 元素分配事件处理程序相当直接且方便。然而，`addEventListener()`方法提供了一种更高级的事件管理方式。例如，它允许你为同一事件添加多个处理程序。它还允许你控制处理程序在事件传播流程中的位置，我们稍后会看到。
 
 当事件触发时，一个包含事件本身细节的对象会被传递给处理程序。你可以在处理程序中使用这个对象，如下例所示：
 
-```
+```javascript
 const button = document.getElementById("myButton");
 button.addEventListener("click", (event) => {
-console.log('You clicked the button "${event.target.innerHTML}"');
+  console.log('You clicked the button "${event.target.innerHTML}"');
 });
 ```
 
-在这个例子中，我们使用了事件对象的 `target` 属性。它表示事件触发的 HTML 元素。我们使用了这个 HTML 元素的 `innerHTML` 特性来在浏览器控制台中显示被点击按钮的文本。
+在这个例子中，我们使用了事件对象的`target`属性。它表示事件触发的 HTML 元素。我们使用了这个 HTML 元素的`innerHTML`特性来在浏览器控制台中显示被点击按钮的文本。
 
 当事件发生时，它会沿着特定路径穿过 DOM。这个路径被称为**事件传播**流程，分为三个阶段：
 
-*   **捕获阶段**：在此阶段，事件从 DOM 的根节点传播到实际的目标元素。
-
-*   **目标阶段**：在此阶段，事件到达目标元素。
-
-*   **冒泡阶段**：在此阶段，事件从目标元素开始向上遍历 DOM 树，直到再次到达根节点；因此，它会经过捕获阶段中经过的相同节点。
+- **捕获阶段**：在此阶段，事件从 DOM 的根节点传播到实际的目标元素。
+- **目标阶段**：在此阶段，事件到达目标元素。
+- **冒泡阶段**：在此阶段，事件从目标元素开始向上遍历 DOM 树，直到再次到达根节点；因此，它会经过捕获阶段中经过的相同节点。
 
 下面的图片来自 W3C 规范，展示了这三个阶段中的事件传播：
 
@@ -2192,36 +2047,39 @@ console.log('You clicked the button "${event.target.innerHTML}"');
 
 理解这个流程有助于防止奇怪的行为，并在管理事件时发现可能的问题。
 
-如果你出于某种原因希望你的处理程序在事件传播的捕获阶段执行，你可以利用 `addEventListener()` 方法的第三个参数。下面的例子展示了如何做到这一点：
+如果你出于某种原因希望你的处理程序在事件传播的捕获阶段执行，你可以利用`addEventListener()`方法的第三个参数。下面的例子展示了如何做到这一点：
 
-```
+```javascript
 const button = document.getElementById("myButton");
 const handler = (event) => {
-console.log('You clicked the button "${event.target.innerHTML}"');
+  console.log('You clicked the button "${event.target.innerHTML}"');
 };
 button.addEventListener("click", handler, true);
 ```
 
-`addEventListener()` 方法的第三个参数是一个 `Boolean` 值，指定处理程序是否必须在捕获阶段执行。其默认值为 `false`，阻止处理程序在捕获阶段执行。
+`addEventListener()`方法的第三个参数是一个`Boolean`值，指定处理程序是否必须在捕获阶段执行。其默认值为`false`，阻止处理程序在捕获阶段执行。
 
-在处理事件时，我们有机会改变事件流。例如，我们可以通过使用事件对象的 `stopPropagation()` 方法来决定停止事件流。下面是一个如何使用该方法的示例：
+在处理事件时，我们有机会改变事件流。例如，我们可以通过使用事件对象的`stopPropagation()`方法来决定停止事件流。下面是一个如何使用该方法的示例：
 
+```javascript
+const button = document.getElementById("myButton");
 
+button.addEventListener("click", (event) => {
+  event.stopPropagation();
+  console.log('The event stops at button “${event.target.innerHTML}”');
+});
+```
 
+你也可以通过为`event`对象的`cancelBubble`属性赋一个布尔值来达到同样的效果，如下面的代码片段所示：
 
-`const button = document.getElementById("myButton");`
-`button.addEventListener("click", (event) => {`
-`event.stopPropagation();`
-`console.log(‘The event stops at button “${event.target.innerHTML}”‘);`
-`});`
+```javascript
+const button = document.getElementById("myButton");
 
-你也可以通过为 `event` 对象的 `cancelBubble` 属性赋一个布尔值来达到同样的效果，如下面的代码片段所示：
-
-`const button = document.getElementById("myButton");`
-`button.addEventListener("click", (event) => {`
-`event.cancelBubble = true;`
-`console.log(‘The event stops at button “${event.target.innerHTML}”‘);`
-`});`
+button.addEventListener("click", (event) => {
+  event.cancelBubble = true;
+  console.log('The event stops at button “${event.target.innerHTML}”');
+});
+```
 
 有了关于 DOM 事件管理的总结，我们来看看它如何融入 Web Components 的上下文中。
 
@@ -2229,81 +2087,81 @@ button.addEventListener("click", handler, true);
 
 让我们看看如何让一个 Web 组件处理标准事件，即可能发生在标准 HTML 元素上的典型 DOM 事件。带着这个目标，我们想要通过添加一个“关闭”按钮来丰富我们的 cookie 提醒组件。这个按钮允许用户隐藏当前网页底部的横幅。当用户点击该按钮时，cookie 提醒将消失。
 
-让我们看看包含 `<cookie-alert>` 元素的页面的 HTML 标记：
+让我们看看包含`<cookie-alert>`元素的页面的 HTML 标记：
 
-```
+```html
 <!DOCTYPE html>
 <html>
 <head>
-<title>Web Components with Webpack Build System</title>
-<script src="./wc-polyfills/webcomponents-loader.js"></script>
-<script src="./bundle.js"></script>
+  <title>Web Components with Webpack Build System</title>
+  <script src="./wc-polyfills/webcomponents-loader.js"></script>
+  <script src="./bundle.js"></script>
 </head>
 <body>
-<h1>Here is your Web Component</h1>
-<cookie-alert message="We use cookies, but respect your privacy!"></cookie-alert>
+  <h1>Here is your Web Component</h1>
+  <cookie-alert message="We use cookies, but respect your privacy!"></cookie-alert>
 </body>
 </html>
 ```
 
 这与我们在前一章介绍属性和属性管理时使用的标记相同。
 
-现在，让我们编辑 `index.js` 文件，对其中的代码进行一些修改。首先，添加一条新的 CSS 规则来格式化我们的新按钮。`styleRules` 常量将如下所示：
+现在，让我们编辑`index.js`文件，对其中的代码进行一些修改。首先，添加一条新的 CSS 规则来格式化我们的新按钮。`styleRules`常量将如下所示：
 
-```
+```javascript
 const styleRules = ‘
 .container {
-color: rgb(255, 255, 255);
-background-color: rgb(35, 122, 252);
-padding: 1em 1.8em;
-width: 100%;
-font-family: Helvetica,Calibri,Arial,sans-serif;
+  color: rgb(255, 255, 255);
+  background-color: rgb(35, 122, 252);
+  padding: 1em 1.8em;
+  width: 100%;
+  font-family: Helvetica,Calibri,Arial,sans-serif;
 }
 .footer {
-position:fixed;
-left:0px;
-bottom:0px;
+  position:fixed;
+  left:0px;
+  bottom:0px;
 }
 .button {
-color: rgb(255, 255, 255);
-background-color: transparen
-border-color: rgb(255, 255, 255);
-padding: 5px 40px;
-margin-right: 50px;
-cursor: pointer;
-float:righ
+  color: rgb(255, 255, 255);
+  background-color: transparen
+  border-color: rgb(255, 255, 255);
+  padding: 5px 40px;
+  margin-right: 50px;
+  cursor: pointer;
+  float:righ
 }
 ‘;
 ```
 
-如你所见，我们只是添加了一个 `button` CSS 类，定义了一些图形属性。
+如你所见，我们只是添加了一个`button`CSS 类，定义了一些图形属性。
 
-现在，让我们将实际的按钮添加到 Web 组件的标记中。因此，我们将 `createComponent()` 方法修改如下：
+现在，让我们将实际的按钮添加到 Web 组件的标记中。因此，我们将`createComponent()`方法修改如下：
 
-```
+```javascript
 createComponent() {
-const style = document.createElement("style");
-style.appendChild(document.createTextNode(styleRules));
-this.appendChild(style);
-const span = document.createElement("span");
-const div = document.createElement("div");
-div.classList.add("container", "footer");
-div.appendChild(span);
-const closeButton = document.createElement("button");
-closeButton.classList.add("button");
-closeButton.innerText = "Close";
-closeButton.addEventListener("click", ()=>{
-this.style.visibility = "hidden";
-});
-div.appendChild(closeButton);
-this.appendChild(div);
-this.updateMessage();
+  const style = document.createElement("style");
+  style.appendChild(document.createTextNode(styleRules));
+  this.appendChild(style);
+  const span = document.createElement("span");
+  const div = document.createElement("div");
+  div.classList.add("container", "footer");
+  div.appendChild(span);
+  const closeButton = document.createElement("button");
+  closeButton.classList.add("button");
+  closeButton.innerText = "Close";
+  closeButton.addEventListener("click", ()=>{
+    this.style.visibility = "hidden";
+  });
+  div.appendChild(closeButton);
+  this.appendChild(div);
+  this.updateMessage();
 }
 ```
 
-我们添加了几条语句，用于创建一个 `<button>` HTML 元素，为其分配 `button` 类和文本“关闭”，附加一个事件监听器，并将该按钮追加到容器 `<div>` 中。
+我们添加了几条语句，用于创建一个`<button>`HTML 元素，为其分配`button`类和文本“关闭”，附加一个事件监听器，并将该按钮追加到容器`<div>`中。
 
-就我们的目标而言，这些语句中相关的部分是事件监听器的附加。如你所见，我们使用了按钮的标准 `addEventListener()` 方法来为 `click` 事件分配一个监听器，就像你对任何标准 HTML 元素所做的那样。这个特定的监听器通过更改其 `visibility` 属性的值来隐藏整个 Web 组件。
+就我们的目标而言，这些语句中相关的部分是事件监听器的附加。如你所见，我们使用了按钮的标准`addEventListener()`方法来为`click`事件分配一个监听器，就像你对任何标准 HTML 元素所做的那样。这个特定的监听器通过更改其`visibility`属性的值来隐藏整个 Web 组件。
 
 如果我们运行项目，将看到以下页面：
 
@@ -2315,80 +2173,79 @@ this.updateMessage();
 
 因此，你现在知道了如何监听和处理可能发生在组成 Web 组件的各个元素上的标准事件。
 
-请注意，你的 Web 组件本身作为一个整体也可以监听标准事件。记住它继承自 `HTMLElement`。因此，你可以监听可能发生在组件整个表面上的任何事件，而不仅仅是组成它的单个元素。
+请注意，你的 Web 组件本身作为一个整体也可以监听标准事件。记住它继承自`HTMLElement`。因此，你可以监听可能发生在组件整个表面上的任何事件，而不仅仅是组成它的单个元素。
 
-例如，你可以实现一个视觉效果，当用户的鼠标指针悬停在组件区域时，改变横幅的背景颜色。为了实现这个效果，让我们在 `createComponent()` 方法中添加几条语句。该方法的新版本将如下所示：
+例如，你可以实现一个视觉效果，当用户的鼠标指针悬停在组件区域时，改变横幅的背景颜色。为了实现这个效果，让我们在`createComponent()`方法中添加几条语句。该方法的新版本将如下所示：
 
-```
+```javascript
 createComponent() {
-const style = document.createElement("style");
-style.appendChild(document.createTextNode(styleRules));
-this.appendChild(style);
-const span = document.createElement("span");
-const div = document.createElement("div");
-div.classList.add("container", "footer");
-div.appendChild(span);
-const closeButton = document.createElement("button");
-closeButton.classList.add("button");
-closeButton.innerText = "Close";
-closeButton.addEventListener("click", ()=>{
-this.style.visibility = "hidden";
-});
-div.appendChild(closeButton);
-this.appendChild(div);
-this.addEventListener("mouseover", ()=> {
-div.style.backgroundColor = "rgb(35, 122, 152)";
-});
-this.addEventListener("mouseout", ()=> {
-div.style.backgroundColor = "";
-});
-this.updateMessage();
+  const style = document.createElement("style");
+  style.appendChild(document.createTextNode(styleRules));
+  this.appendChild(style);
+  const span = document.createElement("span");
+  const div = document.createElement("div");
+  div.classList.add("container", "footer");
+  div.appendChild(span);
+  const closeButton = document.createElement("button");
+  closeButton.classList.add("button");
+  closeButton.innerText = "Close";
+  closeButton.addEventListener("click", ()=>{
+    this.style.visibility = "hidden";
+  });
+  div.appendChild(closeButton);
+  this.appendChild(div);
+  this.addEventListener("mouseover", ()=> {
+    div.style.backgroundColor = "rgb(35, 122, 152)";
+  });
+  this.addEventListener("mouseout", ()=> {
+    div.style.backgroundColor = "";
+  });
+  this.updateMessage();
 }
 ```
 
-我们在 `createComponent()` 方法的代码中添加的两条新语句使用了 `this` 关键字，直接将两个事件监听器添加到 Web 组件上。第一个事件监听器捕获 `mouseover` 事件，第二个处理 `mouseout` 事件。在前一种情况下，我们更改容器 `<div>` 的背景颜色。在后一种情况下，我们将此背景颜色重置为容器 CSS 类中定义的默认颜色。
+我们在`createComponent()`方法的代码中添加的两条新语句使用了`this`关键字，直接将两个事件监听器添加到 Web 组件上。第一个事件监听器捕获`mouseover`事件，第二个处理`mouseout`事件。在前一种情况下，我们更改容器`<div>`的背景颜色。在后一种情况下，我们将此背景颜色重置为容器 CSS 类中定义的默认颜色。
 
 ### 事件传播
 
-我们在上一节中解释的事件管理向我们展示了作为 Web 组件开发者，我们如何捕获标准事件并处理它。但是，如果用户在我们的 Web 组件上指定了他们自己的事件处理程序，会发生什么？例如，假设用户像下面的标记那样向 `onclick` 属性添加了一个处理程序：
+我们在上一节中解释的事件管理向我们展示了作为 Web 组件开发者，我们如何捕获标准事件并处理它。但是，如果用户在我们的 Web 组件上指定了他们自己的事件处理程序，会发生什么？例如，假设用户像下面的标记那样向`onclick`属性添加了一个处理程序：
 
-```
+```html
 <cookie-alert
-message="We use cookies, but respect your privacy!"
-onclick="alert('You clicked!')">
+  message="We use cookies, but respect your privacy!"
+  onclick="alert('You clicked!')">
 </cookie-alert>
 ```
 
-当然，用户可以这样做。由于 cookie 提醒继承自 `HTMLElement`，它也继承了像 `onclick` 这样的标准事件钩子。因此，当用户点击横幅的任何部分时，都会显示警告。
+当然，用户可以这样做。由于 cookie 提醒继承自`HTMLElement`，它也继承了像`onclick`这样的标准事件钩子。因此，当用户点击横幅的任何部分时，都会显示警告。
 
-请注意，即使用户点击了“关闭”按钮，用户的警告也会显示。这是因为事件传播流程。一旦点击事件到达目标元素（即关闭按钮），它就进入冒泡阶段。在此阶段，事件会经过按钮的所有父元素，直到到达并执行用户的 `onclick` 处理程序。
+请注意，即使用户点击了“关闭”按钮，用户的警告也会显示。这是因为事件传播流程。一旦点击事件到达目标元素（即关闭按钮），它就进入冒泡阶段。在此阶段，事件会经过按钮的所有父元素，直到到达并执行用户的`onclick`处理程序。
+
+
 
 也许你想知道是否有办法阻止用户向标准事件添加处理程序。在尝试找到解决方案之前，先问问自己是否想要这样做。你想阻止用户附加他们的事件处理程序吗？毕竟，任何标准元素都允许你附加标准事件处理程序。为什么你的组件要不同呢？
 
 无论如何，如果你想阻止用户添加他们的事件处理程序，或者更确切地说，忽略它们，你应该在 Web 组件创建时立即添加一个特殊的事件监听器。换句话说，对于我们的点击事件示例，你应该像下面这样修改组件的构造函数：
 
-```
+```js
 constructor() {
-super();
-this._message = "This website uses cookies to ensure you get the best experience";
-this.addEventListener("click", (e) => {
-e.stopImmediatePropagation();
-});
+  super();
+  this._message = "This website uses cookies to ensure you get the best experience";
+  this.addEventListener("click", (e) => {
+    e.stopImmediatePropagation();
+  });
 }
 ```
-
-
-
 
 我们添加的点击事件处理器会在事件本身冒泡阶段传递给用户处理器之前停止事件传播。因此，实际上这避免了用户的点击处理器被执行。
 
 ## 创建自定义事件
 
-到目前为止，我们学习了如何捕获构建组件元素上触发的事件以及如何处理它们。在这种情况下，我们通过应用自己的逻辑（描述 Web 组件内部行为的逻辑）来响应用户或系统生成的事件。通常，事件也是组件的自定义点，是一种允许用户定义他们对组件发生事件做出反应的方式。这就是 HTML 元素为我们提供事件的原因：它们使我们能够决定事件发生时如何响应。例如，按钮上发生的 click 事件允许我们决定做什么。那么，在构建 Web 组件时，我们如何提供类似的行为呢？
+到目前为止，我们学习了如何捕获构建组件元素上触发的事件以及如何处理它们。在这种情况下，我们通过应用自己的逻辑（描述 Web 组件内部行为的逻辑）来响应用户或系统生成的事件。通常，事件也是组件的自定义点，是一种允许用户定义他们对组件发生事件做出反应的方式。这就是 HTML 元素为我们提供事件的原因：它们使我们能够决定事件发生时如何响应。例如，按钮上发生的`click`事件允许我们决定做什么。那么，在构建 Web 组件时，我们如何提供类似的行为呢？
 
-从某种角度来看，我们已经有一种方法允许用户向我们的 Web 组件附加事件处理器。由于我们的组件继承自 `HTMLElement` 类，所有标准事件都会发生在我们的组件上，用户可以利用标准方式处理它们——`onclick`、`onblur` 等属性和特性，以及 `addEventListener()` 方法。顺便说一句，这正是我们在上一节中想要阻止的行为。
+从某种角度来看，我们已经有一种方法允许用户向我们的 Web 组件附加事件处理器。由于我们的组件继承自`HTMLElement`类，所有标准事件都会发生在我们的组件上，用户可以利用标准方式处理它们——`onclick`、`onblur`等属性和特性，以及`addEventListener()`方法。顺便说一句，这正是我们在上一节中想要阻止的行为。
 
-因此，对于整个 Web 组件的标准事件，我们不需要做任何特殊处理。事件管理系统默认工作。但我们可以触发特定于我们 Web 组件的事件。例如，当用户点击 cookie 警告消息或点击 `Close` 按钮时，我们可以提供不同的事件。或者我们可以在 cookie 警告组件中添加一个新的 `Accept` 按钮，并生成一个特定事件，通知用户已接受我们的 cookie 政策。
+因此，对于整个 Web 组件的标准事件，我们不需要做任何特殊处理。事件管理系统默认工作。但我们可以触发特定于我们 Web 组件的事件。例如，当用户点击 cookie 警告消息或点击`Close`按钮时，我们可以提供不同的事件。或者我们可以在 cookie 警告组件中添加一个新的`Accept`按钮，并生成一个特定事件，通知用户已接受我们的 cookie 政策。
 
 在本节的剩余部分，我们将实现接受按钮场景，以说明如何生成用户可自行处理的自定义事件。
 
@@ -2396,11 +2253,11 @@ e.stopImmediatePropagation();
 
 首先，让我们在 cookie 警告 Web 组件中添加接受按钮。
 
-`Close` 按钮仅隐藏当前会话的 cookie 警告。当用户再次访问我们的网页或应用程序时，cookie 警告仍会显示其消息。而接受按钮会将一条信息存储到 cookie 中，告知用户已接受网站的 cookie 政策。每次 cookie 警告组件被添加到 DOM 时，都会读取此 cookie。该 cookie 的存在将阻止 cookie 警告显示。
+`Close`按钮仅隐藏当前会话的 cookie 警告。当用户再次访问我们的网页或应用程序时，cookie 警告仍会显示其消息。而接受按钮会将一条信息存储到 cookie 中，告知用户已接受网站的 cookie 政策。每次 cookie 警告组件被添加到 DOM 时，都会读取此 cookie。该 cookie 的存在将阻止 cookie 警告显示。
 
-让我们通过向 `createComponent()` 方法添加以下代码来创建 `Accept` 按钮：
+让我们通过向`createComponent()`方法添加以下代码来创建`Accept`按钮：
 
-```
+```js
 createComponent() {
   //…
   const acceptButton = document.createElement("button");
@@ -2415,11 +2272,11 @@ createComponent() {
 }
 ```
 
-如您所见，我们以与之前添加 `Close` 按钮相同的方式添加了一个新按钮。但这次，点击事件处理器还调用了 `setCookie()` 函数。该函数负责创建存储用户接受网站政策的 cookie。
+如您所见，我们以与之前添加`Close`按钮相同的方式添加了一个新按钮。但这次，点击事件处理器还调用了`setCookie()`函数。该函数负责创建存储用户接受网站政策的 cookie。
 
-`setCookie()` 函数作为模块的私有函数实现，位于包含 `CookieAlert` 类定义的同一 `index.js` 文件中。换句话说，它不是 `CookieAlert` 类的方法。以下是其实现：
+`setCookie()`函数作为模块的私有函数实现，位于包含`CookieAlert`类定义的同一`index.js`文件中。换句话说，它不是`CookieAlert`类的方法。以下是其实现：
 
-```
+```js
 function setCookie(cookieName, cookieValue, expirationDays) {
   var d = new Date();
   d.setTime(d.getTime() + (expirationDays*24*60*60*1000));
@@ -2428,9 +2285,9 @@ function setCookie(cookieName, cookieValue, expirationDays) {
 }
 ```
 
-此函数的细节超出了 Web 组件技术的范围。为完整起见，我们还提供了 `getCookie()` 函数的实现，该函数允许我们根据名称检索 cookie：
+此函数的细节超出了 Web 组件技术的范围。为完整起见，我们还提供了`getCookie()`函数的实现，该函数允许我们根据名称检索 cookie：
 
-```
+```js
 function getCookie(cookieName) {
   var name = cookieName + "=";
   var decodedCookie = decodeURIComponent(document.cookie);
@@ -2448,9 +2305,9 @@ function getCookie(cookieName) {
 }
 ```
 
-为了使此 cookie 影响 Web 组件的行为，我们需要在 cookie 警告组件附加到 DOM 时分析其内容。因此，我们将 `connectedCallback()` 方法修改如下：
+为了使此 cookie 影响 Web 组件的行为，我们需要在 cookie 警告组件附加到 DOM 时分析其内容。因此，我们将`connectedCallback()`方法修改如下：
 
-```
+```js
 connectedCallback() {
   const cookiesAccepted = getCookie("cookiesAccepted")
   if (cookiesAccepted === "y") {
@@ -2461,7 +2318,7 @@ connectedCallback() {
 }
 ```
 
-首先，我们获取 `cookiesAccepted` cookie。如果其值为 y，则隐藏组件，甚至不创建其 UI。否则，照常创建 UI。
+首先，我们获取`cookiesAccepted` cookie。如果其值为 y，则隐藏组件，甚至不创建其 UI。否则，照常创建 UI。
 
 通过这些更改，当用户尚未接受网站 cookie 政策时，横幅将如下所示：
 
@@ -2469,7 +2326,7 @@ connectedCallback() {
 
 **图 5.3**
 
-除了 `Close` 按钮，我们现在还有了 `Accept` 按钮。如果我们点击 `Close` 按钮并重新加载页面，将再次看到 cookie 警告。如果我们点击 `Accept` 按钮并重新加载页面，将不再看到 cookie 警告。
+除了`Close`按钮，我们现在还有了`Accept`按钮。如果我们点击`Close`按钮并重新加载页面，将再次看到 cookie 警告。如果我们点击`Accept`按钮并重新加载页面，将不再看到 cookie 警告。
 
 ### 创建事件
 
@@ -2477,9 +2334,9 @@ connectedCallback() {
 
 ### 分发简单事件
 
-为了实现这一目标，我们可以利用标准机制来创建自定义 DOM 事件。这意味着我们可以使用 `CustomEvent` 类创建事件，并使用 `dispatchEvent()` 方法触发它。让我们看看在创建 Web 组件 UI 时如何应用它们：
+为了实现这一目标，我们可以利用标准机制来创建自定义 DOM 事件。这意味着我们可以使用`CustomEvent`类创建事件，并使用`dispatchEvent()`方法触发它。让我们看看在创建 Web 组件 UI 时如何应用它们：
 
-```
+```js
 createComponent() {
   //…
   const acceptButton = document.createElement("button");
@@ -2495,38 +2352,40 @@ createComponent() {
 }
 ```
 
-在上面的代码中，我们在 `Accept` 按钮的 `click` 处理器中添加了一条语句。该语句简单地创建并分发 `accepted` 事件。
+在上面的代码中，我们在`Accept`按钮的`click`处理器中添加了一条语句。该语句简单地创建并分发`accepted`事件。
 
-*你可以使用 `Event` 类或 `CustomEvent` 类来创建事件。前者允许你创建一个简单的事件（就像我们刚刚演示的那样），而后者还允许你传递一些数据。在上面的例子中，我们使用了 `CustomEvent` 类，因为我们稍后将传递与事件关联的数据。*
+你可以使用`Event`类或`CustomEvent`类来创建事件。前者允许你创建一个简单的事件（就像我们刚刚演示的那样），而后者还允许你传递一些数据。在上面的例子中，我们使用了`CustomEvent`类，因为我们稍后将传递与事件关联的数据。
 
-因此，当用户点击 `Accept` 按钮时，将触发 `accepted` 事件。在这种情况下，使用我们 Web 组件的开发人员可以通过添加事件监听器来处理此事件，就像处理任何标准事件一样。以下代码展示了如何在包含 `cookie-alert` 组件的页面中实现这一点：
+因此，当用户点击`Accept`按钮时，将触发`accepted`事件。在这种情况下，使用我们 Web 组件的开发人员可以通过添加事件监听器来处理此事件，就像处理任何标准事件一样。以下代码展示了如何在包含`cookie-alert`组件的页面中实现这一点：
 
-```
+```js
 const cookieAlert = document.querySelector("cookie-alert");
 cookieAlert.addEventListener("accepted", () => alert("感谢您接受我们的 cookie 政策！"));
 ```
 
 当用户接受 cookie 管理政策时，此事件监听器将显示一条感谢消息。
 
-### 'this' 的含义
+### `this`的含义
 
-在继续之前，有必要提一下关于 `this` 关键字使用的一个非常重要的注意事项。
+在继续之前，有必要提一下关于`this`关键字使用的一个非常重要的注意事项。
 
-为了生成 `accepted` 事件，我们编写了以下代码：
+为了生成`accepted`事件，我们编写了以下代码：
 
+```js
+acceptButton.addEventListener("click", ()=>{
 
-
-
-
-`acceptButton.addEventListener("click", ()=>{
     this.style.visibility = "hidden";
+
     setCookie("cookiesAccepted", "y", 365);
+
     this.dispatchEvent(new CustomEvent("accepted"));
-});`
 
-在 `click` 事件处理器的函数体内，我们使用了 `this` 关键字来设置 `visibility` 值并派发 `accepted` 事件。请注意，这里我们使用的是箭头函数，因此 `this` 关键字静态地指向当前的 cookie 提示组件。如果你像下面的例子那样使用标准函数，将会得到意想不到的行为：
-
+});
 ```
+
+在`click`事件处理器的函数体内，我们使用了`this`关键字来设置`visibility`值并派发`accepted`事件。请注意，这里我们使用的是箭头函数，因此`this`关键字静态地指向当前的 cookie 提示组件。如果你像下面的例子那样使用标准函数，将会得到意想不到的行为：
+
+```js
 acceptButton.addEventListener("click", function(){
     this.style.visibility = "hidden";
     setCookie("cookiesAccepted", "y", 365);
@@ -2534,13 +2393,13 @@ acceptButton.addEventListener("click", function(){
 });
 ```
 
-实际上，在这种情况下，`this` 关键字动态地指向监听器所附加的对象，即“接受”按钮。因此，使用这段代码，你会看到“接受”按钮消失，而 `accepted` 事件的监听器不会执行。
+实际上，在这种情况下，`this`关键字动态地指向监听器所附加的对象，即“接受”按钮。因此，使用这段代码，你会看到“接受”按钮消失，而`accepted`事件的监听器不会执行。
 
 ### 传递数据
 
-现在，让我们继续看看如何改进事件管理。默认情况下，事件对象会被传递给事件监听器。这允许开发者检查它并根据其内容做出决策。到目前为止，我们触发的 `accepted` 事件并没有向监听器提供任何特殊信息。我们可以通过向生成的事件添加细节来提供一些信息。下面的代码展示了如何实现这种增强：
+现在，让我们继续看看如何改进事件管理。默认情况下，事件对象会被传递给事件监听器。这允许开发者检查它并根据其内容做出决策。到目前为止，我们触发的`accepted`事件并没有向监听器提供任何特殊信息。我们可以通过向生成的事件添加细节来提供一些信息。下面的代码展示了如何实现这种增强：
 
-```
+```js
 createComponent() {
     //…
     const acceptButton = document.createElement("button");
@@ -2560,33 +2419,33 @@ createComponent() {
 }
 ```
 
-如你所见，这里我们向 `CustomEvent` 构造函数添加了第二个参数。这个参数是一个对象，其 `detail` 属性包含了我们想要传递给监听器的数据。在这个例子中，我们传递了已创建的 cookie 的名称（`acceptedCookieName` 属性）以及 cookie 的有效期天数（`acceptedCookieExpiration` 属性）。
+如你所见，这里我们向`CustomEvent`构造函数添加了第二个参数。这个参数是一个对象，其`detail`属性包含了我们想要传递给监听器的数据。在这个例子中，我们传递了已创建的 cookie 的名称（`acceptedCookieName`属性）以及 cookie 的有效期天数（`acceptedCookieExpiration`属性）。
 
 让我们看看作为使用 cookie 提示组件的开发者，如何利用这些数据：
 
-```
+```js
 const cookieAlert = document.querySelector("cookie-alert");
 cookieAlert.addEventListener("accepted", (event) =>
     alert('Thanks for accepting our cookie policy.\nYou need to confirm again in ${event.detail.acceptedCookieExpiration} days.'));
 ```
 
-在上面的例子中，`accepted` 事件监听器有一个 `event` 参数。当然，这个参数代表我们用 `CustomEvent` 构造函数创建的事件。因此，通过使用 `event.detail` 属性，感谢消息可以显示 cookie 有效期的天数引用。下图展示了当用户点击“接受”按钮时你应该看到的内容：
+在上面的例子中，`accepted`事件监听器有一个`event`参数。当然，这个参数代表我们用`CustomEvent`构造函数创建的事件。因此，通过使用`event.detail`属性，感谢消息可以显示 cookie 有效期的天数引用。下图展示了当用户点击“接受”按钮时你应该看到的内容：
 
 ![](img/Figure_5.4.jpg)
 
 **图 5.4**
 
-### 添加 onevent 属性
+### 添加 `onevent` 属性
 
-除了 `addEventListener()` 方法之外，标准事件还允许你通过特殊的属性（如 `onclick`、`onblur`、`onmouseover` 等）在 HTML 标记中指定处理程序。如你所知，这些 onevent 属性允许你附加一个字符串，表示在特定事件发生时执行的代码。为了让你的 Web 组件尽可能符合标准 HTML 元素，你可能希望为其添加这类属性。不幸的是，这个功能并非免费。你需要自己实现对这些属性的支持，而且这并不简单。
+除了`addEventListener()`方法之外，标准事件还允许你通过特殊的属性（如`onclick`、`onblur`、`onmouseover`等）在 HTML 标记中指定处理程序。如你所知，这些`onevent`属性允许你附加一个字符串，表示在特定事件发生时执行的代码。为了让你的 Web 组件尽可能符合标准 HTML 元素，你可能希望为其添加这类属性。不幸的是，这个功能并非免费。你需要自己实现对这些属性的支持，而且这并不简单。
 
-为了了解如何管理 onevent 属性，让我们看看如何为我们的 cookie 提示 Web 组件添加对 `onaccepted` 属性的支持。请记住，添加这类属性与添加任何典型属性并无不同。此外，最佳实践是在为组件添加属性时也添加一个类似的属性。这模仿了标准 HTML 元素的常见行为，并让用户找到他们习惯的东西。
+为了了解如何管理`onevent`属性，让我们看看如何为我们的 cookie 提示 Web 组件添加对`onaccepted`属性的支持。请记住，添加这类属性与添加任何典型属性并无不同。此外，最佳实践是在为组件添加属性时也添加一个类似的属性。这模仿了标准 HTML 元素的常见行为，并让用户找到他们习惯的东西。
 
-**请记住，根据规范，onevent 属性和属性只允许你为特定事件分配一个事件处理程序。如果你需要为一个事件附加多个处理程序，应该使用 `addEventListener()` 方法。**
+请记住，根据规范，`onevent`属性和属性只允许你为特定事件分配一个事件处理程序。如果你需要为一个事件附加多个处理程序，应该使用`addEventListener()`方法。
 
 因此，作为第一步，让我们添加一个内部属性来保存当前的处理程序：
 
-```
+```js
 constructor() {
     super();
     this._message = "This website uses cookies to ensure you get the best experience";
@@ -2594,11 +2453,11 @@ constructor() {
 }
 ```
 
-我们在组件的构造函数中添加了一条语句，将 `null` 值赋给 `_onAcceptedListener` 内部属性。
+我们在组件的构造函数中添加了一条语句，将`null`值赋给`_onAcceptedListener`内部属性。
 
-现在，我们可以为 `onaccepted` 属性添加 setter 和 getter，如下面的代码片段所示：
+现在，我们可以为`onaccepted`属性添加 setter 和 getter，如下面的代码片段所示：
 
-```
+```js
 get onaccepted() {
     return this._onAcceptedListener;
 }
@@ -2614,21 +2473,23 @@ set onaccepted(listener) {
 }
 ```
 
-getter 简单地返回内部 `_onAcceptedListener` 属性的值，而 setter 则稍微复杂一些。它检查内部 `_onAcceptedListener` 属性是否已经有一个赋值。如果是，则移除之前分配的监听器。这一步避免了为该事件添加另一个监听器。下一步检查传入值的类型是否为函数。这确保了 setter 只接受函数。一旦我们确定传入的值是函数，就将其赋给内部 `_onAcceptedListener` 属性。同时，通过 `addEventListener()` 方法为其创建一个 `accepted` 事件的监听器。
+
+
+`getter` 简单地返回内部 `_onAcceptedListener` 属性的值，而 `setter` 则稍微复杂一些。它检查内部 `_onAcceptedListener` 属性是否已经有一个赋值。如果是，则移除之前分配的监听器。这一步避免了为该事件添加另一个监听器。下一步检查传入值的类型是否为函数。这确保了 `setter` 只接受函数。一旦我们确定传入的值是函数，就将其赋给内部 `_onAcceptedListener` 属性。同时，通过 `addEventListener()` 方法为其创建一个 `accepted` 事件的监听器。
 
 此时，我们将 `onaccepted` 属性添加到被观察的属性中，如下面的代码所示：
 
-```
+```javascript
 static get observedAttributes() {
     return ["message", "onaccepted"];
 }
 ```
 
-**尽管你可以为 onevent 属性使用任何名称，但应遵循基于 `on` 前缀与事件名称拼接的标准约定。**
+尽管你可以为 `onevent` 属性使用任何名称，但应遵循基于 `on` 前缀与事件名称拼接的标准约定。
 
 最后，我们需要通过修改 `attributeChangedCallback()` 方法来管理 `onaccepted` 属性的变化：
 
-```
+```javascript
 attributeChangedCallback(name, oldValue, newValue) {
     if (oldValue !== newValue) {
         if (name === "message") {
@@ -2650,9 +2511,9 @@ attributeChangedCallback(name, oldValue, newValue) {
 
 请记住，与 `onaccepted` 属性不同，`onaccepted` 属性的值类型始终是字符串。此外，用户可以为 `onaccepted` 属性分配任何语句，而不仅仅是函数。因此，为了正确地将属性值赋给 `onaccepted` 属性，我们需要使用 `Function()` 构造函数创建一个函数。如果向 `onaccepted` 属性传递了一个假值，则将 `null` 值赋给 `onaccepted` 属性，从而移除任何之前的处理程序。
 
-现在，我们的 cookie 提示组件支持 `onaccepted` 属性。因此，我们可以像下面的例子那样将事件处理程序附加到它上面：
+现在，我们的 Cookie 提示组件支持 `onaccepted` 属性。因此，我们可以像下面的例子那样将事件处理程序附加到它上面：
 
-```
+```html
 <!DOCTYPE html>
 <html>
 <head>
@@ -2663,11 +2524,7 @@ attributeChangedCallback(name, oldValue, newValue) {
         function handleAccepted(event) {
 ```
 
-
-
-
-
-```
+```javascript
 alert('感谢您接受我们的 Cookie 政策。\n 您需要在${event.detail.acceptedCookieExpiration}天后再次确认。');
 }
 </script>
@@ -2686,7 +2543,7 @@ onaccepted="handleAccepted(event)">
 
 尽管属性的管理方式相当令人满意，但您应该注意此实现中的一个重要问题。考虑我们如何将事件处理程序赋值给 `onaccepted` 属性：
 
-```
+```javascript
 this.onaccepted = new Function("event", '${newValue}');
 handleAccepted(event)
 function(event) {
@@ -2696,7 +2553,7 @@ handleAccepted(event)
 
 然而，这种方法施加了一个限制——用户必须在其事件处理程序中将事件名称指定为参数。假设用户指定了不同的名称，如下例所示：
 
-```
+```javascript
 handleAccepted(e)
 function(event) {
 handleAccepted(e)
@@ -2711,11 +2568,11 @@ handleAccepted(e)
 
 事件监听器会消耗系统资源。在不再需要时移除它们有助于优化资源管理。
 
-正如*第 3 章，创建自定义 Web 组件*中所述，您应该使用 `disconnectedCallback()` 回调来释放为 Web 组件分配的资源。您还记得，当组件从 DOM 中移除时，会调用此回调。这意味着您的 Web 组件的事件监听器不再有存在的理由，因此您可以移除它们。但是，要移除事件监听器，您需要持有对它们的引用。那么，让我们看看可以采用哪种策略来正确管理 Web 组件的事件监听器生命周期。
+正如第 3 章《创建自定义 Web 组件》中所述，您应该使用 `disconnectedCallback()` 回调来释放为 Web 组件分配的资源。您还记得，当组件从 DOM 中移除时，会调用此回调。这意味着您的 Web 组件的事件监听器不再有存在的理由，因此您可以移除它们。但是，要移除事件监听器，您需要持有对它们的引用。那么，让我们看看可以采用哪种策略来正确管理 Web 组件的事件监听器生命周期。
 
 首先，我们需要一个存储事件监听器注册信息的地方。我们可以为此定义一个内部属性：
 
-```
+```javascript
 constructor() {
 super();
 this._message = "本网站使用 Cookie 以确保您获得最佳体验";
@@ -2726,7 +2583,7 @@ this._eventListeners = [];
 
 如上述代码所示，我们修改了 Cookie 提示的构造函数，添加了 `_eventListeners` 内部属性。该属性是一个数组，包含描述事件监听器注册信息的对象。每当我们添加一个事件监听器时，都需要向 `_eventListeners` 属性添加一个对象。以下示例展示了如何修改 `CreateComponent()` 方法的代码，以添加“关闭”按钮：
 
-```
+```javascript
 const closeButton = document.createElement("button");
 closeButton.classList.add("button");
 closeButton.innerText = "关闭";
@@ -2740,11 +2597,11 @@ div.appendChild(closeButton);
 
 我们将隐藏 Cookie 提示的箭头函数赋值给 `clickHandler` 常量。然后，使用它创建事件监听器。最后，向 `_eventListeners` 数组添加一个对象，其中包含指向关闭按钮元素的指针、事件名称以及监听器的引用。此操作表示事件监听器的内部注册。
 
-**每当您在 Web 组件中添加事件监听器时，都应执行内部注册操作。为了提高代码的可读性和可维护性，最好为此创建一个通用函数。**
+每当您在 Web 组件中添加事件监听器时，都应执行内部注册操作。为了提高代码的可读性和可维护性，最好为此创建一个通用函数。
 
 已注册监听器的移除发生在 `connectedCallback()` 方法中，如下代码片段所示：
 
-```
+```javascript
 disconnectedCallback() {
 this._eventListeners.forEach((registration) => {
 registration.object
@@ -2764,18 +2621,16 @@ registration.object
 
 ## 问题
 
-1.  处理事件的三种标准方法是什么？
-2.  DOM 事件传播的阶段有哪些？
-3.  Web 组件可以监听哪些标准事件？
-4.  如何防止用户向您的 Web 组件附加事件监听器？
-5.  自定义事件的构造函数是什么？
-6.  如何在自定义事件中传递数据？
-7.  为什么应该移除在 Web 组件中注册的事件监听器？
-8.  移除组件事件监听器的最佳 Web 组件回调是什么？
+1. 处理事件的三种标准方法是什么？
+2. DOM 事件传播的阶段有哪些？
+3. Web 组件可以监听哪些标准事件？
+4. 如何防止用户向您的 Web 组件附加事件监听器？
+5. 自定义事件的构造函数是什么？
+6. 如何在自定义事件中传递数据？
+7. 为什么应该移除在 Web 组件中注册的事件监听器？
+8. 移除组件事件监听器的最佳 Web 组件回调是什么？
 
-# 第 6 章
-
-### 使用影子 DOM
+# 第 6 章：使用影子 DOM
 
 Web 组件旨在用于并非总是由我们控制的 HTML 页面。用户可能会将您的组件放在他们的网页上，而您不知道该页面是如何工作的。在某些情况下，您可能会遇到一些与您为组件设计的行为产生的不必要干扰。
 
@@ -2785,13 +2640,9 @@ Web 组件旨在用于并非总是由我们控制的 HTML 页面。用户可能�
 
 ## 结构
 
-*   Web 组件与 DOM
-*   影子 DOM
-*   开放与封闭影子 DOM
-
-
-
-
+- Web 组件与 DOM
+- 影子 DOM
+- 开放与封闭影子 DOM
 
 ## 目标
 
@@ -2807,9 +2658,9 @@ Web 组件旨在用于并非总是由我们控制的 HTML 页面。用户可能�
 
 `DOM` 是页面上 HTML 元素的基于对象的表示。这意味着 HTML 页面中的每个元素都由 DOM 树中的一个对象表示。标准 HTML 元素和自定义元素都是如此。然而，由于自定义元素通常由 HTML 元素和其他自定义元素构建而成，最终其所有组成项都会出现在 DOM 树中。
 
-考虑一个包含 cookie 提醒 Web 组件的典型 HTML 页面：
+考虑一个包含 Cookie 提醒 Web 组件的典型 HTML 页面：
 
-```
+```html
 <!DOCTYPE html>
 <html>
 <head>
@@ -2846,7 +2697,7 @@ Web 组件旨在用于并非总是由我们控制的 HTML 页面。用户可能�
 
 虽然前面的例子可能是使用你组件的开发者的选择，但当你的组件被插入到任意复杂度的页面中时，还可能出现其他陷阱。例如，考虑如下 HTML 页面：
 
-```
+```html
 <!DOCTYPE html>
 <html>
 <head>
@@ -2878,7 +2729,7 @@ background-color: red !importan
 
 此外，考虑以下标记：
 
-```
+```html
 <!DOCTYPE html>
 <html>
 <head>
@@ -2915,7 +2766,9 @@ background-color: gray;
 
 更糟糕的是，假设你向这个 HTML 页面添加了几行 JavaScript，如下所示：
 
-```
+
+
+```html
 <!DOCTYPE html>
 <html>
 <head>
@@ -2958,17 +2811,13 @@ btn.disabled = true;
 
 因此，我们刚刚发现，当前 cookie 提醒组件的实现无法免受外部干扰。由于封装是组件的一项必要特性，我们该如何解决这个恼人的问题呢？
 
-
-
-
-
 **需要明确的是，DOM 的全局可访问性并非 Web Components 技术本身的问题。这是标准 DOM 的特性，并且会影响你用基于浏览器的技术构建的任何类型的组件，包括 Angular、React、Vue 等框架。**
 
-解决这种封装问题的传统方法是将代表组件的 DOM 部分嵌入到一个独立的 DOM 中，即一个独立的 HTML 页面中。然后通过 `iframe` 将该页面附加到主页面。例如，*Google* 允许开发者嵌入其地图和 *YouTube* 视频时，就采用了这种典型方法。
+解决这种封装问题的传统方法是将代表组件的 DOM 部分嵌入到一个独立的 DOM 中，即一个独立的 HTML 页面中。然后通过 `iframe` 将该页面附加到主页面。例如，Google 允许开发者嵌入其地图和 YouTube 视频时，就采用了这种典型方法。
 
 要将此解决方案应用于我们的 Cookie 提醒组件，我们需要重新组织组件的代码，以便创建一个 `iframe`，将该 `iframe` 作为组件的主容器，并将其他所有元素附加到 `iframe` 页面的 DOM 中。实际上，组件的 `createComponent()` 方法应该类似于以下代码：
 
-```
+```javascript
 createComponent() {
 const iframe = document.createElement("iframe");
 iframe.style.border = 0;
@@ -2999,21 +2848,21 @@ this.updateMessage();
 
 影子 DOM 是一组标准 API，允许你将一个私有的 DOM 附加到任何 HTML 元素上。这个私有 DOM 与页面 DOM 类似，但其内部结构不受全局 DOM 状态的影响。
 
-当你将组件附加到 DOM 时，它的影子 DOM 会附加到全局 DOM 上，但保持私有。下图来自 *Mozilla 开发者网络文档，直观地展示了* 这一过程：
+当你将组件附加到 DOM 时，它的影子 DOM 会附加到全局 DOM 上，但保持私有。下图来自 Mozilla 开发者网络文档，直观地展示了这一过程：
 
 ![](img/Figure_6.4.jpg)
 
 **图 6.4**
 
-**[来源](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_shadow_DOM)**
+[来源](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_shadow_DOM)
 
 从这张图中，你可以看到影子 DOM 有特定的术语。让我们尝试定义一些常用术语。
 
-*   **影子 DOM**：这是一种对象模型技术和 API，允许你将一个私有的 DOM 附加到 HTML 元素上。
-*   **影子树**：与 HTML 元素关联的私有节点树；该树无法从全局 DOM 直接访问。
-*   **光树**：这是一个常规的节点子树。
-*   **影子宿主**：拥有关联影子树的 HTML 元素。
-*   **影子根**：影子树的根节点。
+- **影子 DOM**：这是一种对象模型技术和 API，允许你将一个私有的 DOM 附加到 HTML 元素上。
+- **影子树**：与 HTML 元素关联的私有节点树；该树无法从全局 DOM 直接访问。
+- **光树**：这是一个常规的节点子树。
+- **影子宿主**：拥有关联影子树的 HTML 元素。
+- **影子根**：影子树的根节点。
 
 这些术语可能看起来有些令人困惑，但我们将通过实际使用影子 DOM 来理解，希望你的疑问会随之消散。
 
@@ -3021,7 +2870,7 @@ this.updateMessage();
 
 让我们看看如何通过使用影子 DOM 为我们的 Cookie 提醒组件添加封装。第一步，你需要在组件的构造函数中启用它。以下是新版本构造函数的样子：
 
-```
+```javascript
 constructor() {
 super();
 this._message = "This website uses cookies to ensure you get the best experience";
@@ -3034,7 +2883,7 @@ this._onAcceptedListener = null;
 
 考虑 `createComponent()` 方法的新版本：
 
-```
+```javascript
 createComponent() {
 const style = document.createElement("style");
 style.appendChild(document.createTextNode(styleRules));
@@ -3072,7 +2921,7 @@ this.updateMessage();
 
 我们还需要调整之前附加到组件上的任何元素的引用。例如，我们需要对 `updateMessage()` 方法进行如下修改：
 
-```
+```javascript
 updateMessage() {
 this.shadowRoot.querySelector("span").innerText = this._message;
 }
@@ -3096,13 +2945,9 @@ this.shadowRoot.querySelector("span").innerText = this._message;
 
 我们说过，使用影子 DOM 后，Web 组件的内部结构无法直接访问。这意味着 Web 组件的内部结构受到保护，免受由 CSS 规则或操作通用 HTML 元素的 JavaScript 代码可能造成的外部干扰。
 
-
-
-
-
 然而，Web 组件的内部结构仍然可以通过影子宿主元素的 `shadowRoot` 属性访问。例如，你可以使用以下代码禁用 HTML 页面中 cookie 提醒组件的按钮：
 
-```
+```javascript
 const cookieAlert = document.querySelector("cookie-alert");
 const componentDOM = cookieAlert.shadowRoo
 let buttons = componentDOM.querySelectorAll("button");
@@ -3123,7 +2968,7 @@ btn.disabled = true;
 
 以下代码展示了如何更改 cookie 提醒构造函数以启用封闭的影子 DOM：
 
-```
+```javascript
 constructor() {
 super();
 this._message = "This website uses cookies to ensure you get the best experience";
@@ -3138,11 +2983,11 @@ this._onAcceptedListener = null;
 
 请注意，像示例中那样使用 `this._shadowRoot` 属性，你的组件的影子 DOM 并非完全不可访问。遍历组件属性的用户会弄清楚 `_shadowRoot` 属性的含义，并仍然使用它来访问其内部结构。要尝试锁定组件的影子 DOM，你应该将其赋值给一个局部变量、一个 `WeakMap` 或一个私有属性（当私有属性成为标准并被广泛支持时）。
 
-**请记住，封闭的影子 DOM 并非安全措施。用户仍然可以影响你组件的影子 DOM，甚至只需使用影子宿主元素的** `attachShadow()` **方法即可。**
+**请记住，封闭的影子 DOM 并非安全措施。用户仍然可以影响你组件的影子 DOM，甚至只需使用影子宿主元素的 `attachShadow()` 方法即可。**
 
 因此，我们将 cookie 提醒组件的封闭影子 DOM 赋值给了对 `_shadowRoot` 属性的引用。从现在开始，任何对内部 DOM 的操作都将通过这个属性进行。以下是 `createComponent()` 方法的修订代码：
 
-```
+```javascript
 createComponent() {
 const style = document.createElement("style");
 style.appendChild(document.createTextNode(styleRules));
@@ -3178,7 +3023,9 @@ this.updateMessage();
 
 此外，`updateMessage()` 方法也需要更改，以引用 `this._shadowRoot` 属性：
 
-```
+
+
+```javascript
 updateMessage() {
 this._shadowRoot.querySelector("span").innerText = this._message;
 }
@@ -3206,25 +3053,21 @@ this._shadowRoot.querySelector("span").innerText = this._message;
 
 ## 问题
 
-1.  什么是封装？
-2.  为什么封装是组件的一个理想特性？
-3.  为什么全局 DOM 不支持封装？
-4.  提供某种封装形式的传统方法是什么？
-5.  什么是影子 DOM？
-6.  影子宿主和影子根之间的区别是什么？
-7.  为你的 Web 组件添加影子 DOM 支持的方法是什么？
-8.  如何防止用户访问影子 DOM？
-9.  开放和封闭影子 DOM 之间的区别是什么？
+1. 什么是封装？
+2. 为什么封装是组件的一个理想特性？
+3. 为什么全局 DOM 不支持封装？
+4. 提供某种封装形式的传统方法是什么？
+5. 什么是影子 DOM？
+6. 影子宿主和影子根之间的区别是什么？
+7. 为你的 Web 组件添加影子 DOM 支持的方法是什么？
+8. 如何防止用户访问影子 DOM？
+9. 开放和封闭影子 DOM 之间的区别是什么？
 
 # 第 7 章
 
 ## 使用 HTML 模板
 
 尽管并非严格必需，但大多数 Web 组件都有一个 UI 来显示数据和图形，并允许用户与之交互。我们在前几章中学习了如何为我们的 Web 组件创建 UI，并对我们的 cookie 提醒组件应用了几种不同的技术。
-
-
-
-
 
 在本章中，我们将分析迄今为止用于实现 Web 组件 UI 的技术，并探索一种基于原生 HTML 模板的新替代方法。我们将讨论这种方法带来的好处，并展示如何将其应用于 cookie 警告组件。
 
@@ -3234,8 +3077,8 @@ this._shadowRoot.querySelector("span").innerText = this._message;
 
 ## 结构
 
-*   介绍模板
-*   使用插槽组合标记
+- 介绍模板
+- 使用插槽组合标记
 
 ## 目标
 
@@ -3243,7 +3086,7 @@ this._shadowRoot.querySelector("span").innerText = this._message;
 
 ## 介绍模板
 
-在*第 3 章，创建自定义 Web 组件*中，我们开始通过表示所需标记的字符串来构建 cookie 警告组件的用户界面。这里我们回顾一下当时定义的两个常量：
+在第 3 章“创建自定义 Web 组件”中，我们开始通过表示所需标记的字符串来构建 cookie 警告组件的用户界面。这里我们回顾一下当时定义的两个常量：
 
 ```javascript
 const styleMarkup = '
@@ -3389,15 +3232,11 @@ const myTemplate = document.getElementById("myTemplate").conten
 document.body.appendChild(myTemplate.cloneNode(true));
 ```
 
-
-
-
-
 我们通过 `content` 属性获取模板的内容，使用 `cloneNode()` 方法克隆它，并将结果追加到当前文档的 body 中。注意，传递给 `cloneNode()` 方法的 `true` 值表示执行深度克隆操作，即克隆节点及其属性和所有后代节点。
 
 你也可以使用 `importNode()` 方法获得相同的结果，如下例所示：
 
-```
+```javascript
 const myTemplate = document.getElementById("myTemplate").conten
 document.body.appendChild(document.importNode(myTemplate, true));
 ```
@@ -3405,12 +3244,11 @@ document.body.appendChild(document.importNode(myTemplate, true));
 你可能会疑惑为什么要克隆模板的内容，为什么不能直接将模板的内容附加到文档的 DOM 中。这至少有两个原因。
 
 1. 这是模板元素设计上的行为。模板的节点结构并不是 DOM 的活动结构。它只是一组冻结的节点，仅用作创建其他节点的参考。毕竟，这就是模板的意义所在。
-
 2. 第二个原因：它基于一个实际考虑，即模板可以（并且应该）被多个组件或同一组件的多个实例共享。想象一下，如果你可以直接使用模板的结构。你拿到模板，根据你的需求进行定制（例如，更改一些文本或添加另一个元素），然后将其附加到 DOM 中。如果另一个组件使用了同一个模板，它就会受到你对模板所做的更改的影响。在大多数情况下，这不是期望的效果。
 
 最后一点是关于嵌套模板。我们说过，一个模板可能包含另一个模板。以下是这样一个模板的示例：
 
-```
+```html
 <template id="myTemplate">
 <ul>
 <template id="nestedTemplate">
@@ -3457,7 +3295,7 @@ document.body.appendChild(document.importNode(myTemplate, true));
 
 我们做的第一件事是将 `styleRules` 常量声明替换为以下内容：
 
-```
+```javascript
 const template = document.createElement('template');
 template.innerHTML = `
 <style>
@@ -3497,7 +3335,7 @@ float:righ
 
 然后，我们将构造函数修改如下：
 
-```
+```javascript
 constructor() {
 super();
 this._message = "This website uses cookies to ensure you get the best experience";
@@ -3509,11 +3347,13 @@ this._onAcceptedListener = null;
 
 这里我们在附加影子 DOM 之后立即添加了模板激活语句。注意，我们不是将克隆的模板内容添加到 DOM，而是添加到当前组件的影子 DOM。你可能会疑惑为什么我们在构造函数中这样做。由于模板结构是静态的，也就是说，它不依赖于外部参数，我们可以在组件实例化时使用它，这样当我们需要自定义它时，它就已经准备好了。
 
-在*第 3 章，创建自定义 Web 组件*中，我们说过不能在组件的构造函数中访问 DOM。然而，你看到这里我们通过 `appendChild()` 方法添加节点。请注意，这里你操作的是影子 DOM，即你刚刚附加的组件的私有 DOM。一旦影子 DOM 附加到你的组件，你就可以访问它。但是，你仍然不能从构造函数访问全局 DOM，因为在这个阶段，你的组件已经创建，但尚未添加到全局 DOM 中。
 
-由于我们使用了原生模板，我们不再需要 `createComponent()` 方法。该方法之前是用基于 DOM 的方法创建 UI 的。现在，UI 是通过在构造函数中将模板内容添加到 DOM 来构建的。此时我们需要做的只是通过添加事件监听器或根据用户参数自定义外观来初始化 UI。
 
-那么，让我们用这个方法替换 `createComponent()` 方法：
+在第 3 章，创建自定义 Web 组件中，我们说过不能在组件的构造函数中访问 DOM。然而，你看到这里我们通过`appendChild()`方法添加节点。请注意，这里你操作的是影子 DOM，即你刚刚附加的组件的私有 DOM。一旦影子 DOM 附加到你的组件，你就可以访问它。但是，你仍然不能从构造函数访问全局 DOM，因为在这个阶段，你的组件已经创建，但尚未添加到全局 DOM 中。
+
+由于我们使用了原生模板，我们不再需要`createComponent()`方法。该方法之前是用基于 DOM 的方法创建 UI 的。现在，UI 是通过在构造函数中将模板内容添加到 DOM 来构建的。此时我们需要做的只是通过添加事件监听器或根据用户参数自定义外观来初始化 UI。
+
+那么，让我们用这个方法替换`createComponent()`方法：
 
 ```
 initComponent() {
@@ -3535,9 +3375,9 @@ this.updateMessage();
 }
 ```
 
-`initComponent()` 方法为关闭和接受按钮分配事件监听器，并调用 `updateMessage()` 来反映通过 message 属性或属性传递的值。
+`initComponent()`方法为关闭和接受按钮分配事件监听器，并调用`updateMessage()`来反映通过`message`属性或属性传递的值。
 
-此时，`connectedCallback()` 方法变为如下形式：
+此时，`connectedCallback()`方法变为如下形式：
 
 ```
 connectedCallback() {
@@ -3550,16 +3390,13 @@ this.initComponent();
 }
 ```
 
-如你所见，我们调用的是 `initComponent()` 方法而不是 `createComponent()` 方法。
+如你所见，我们调用的是`initComponent()`方法而不是`createComponent()`方法。
 
-最后，为了适应新的模板标记，我们需要用这个新版本替换旧的 `updateMessage()` 方法：
+最后，为了适应新的模板标记，我们需要用这个新版本替换旧的`updateMessage()`方法：
 
 ```
 updateMessage() {
 ```
-
-
-
 
 ```
 this.shadowRoot.getElementById("message").innerText = this._message;
@@ -3572,7 +3409,7 @@ this.shadowRoot.getElementById("message").innerText = this._message;
 
 模板为我们提供了一种很好的方式，将声明式方法（用于定义 Web 组件的 UI）与效率结合起来。但从本质上讲，它们似乎只提供了内部好处。也就是说，它允许你（组件开发者）编写更少的代码，并以高效的方式渲染组件的 UI。但它并没有为你提供向组件添加新功能的机会。
 
-当然，目前看来确实如此。你可以利用原生模板来获得 HTML 元素的组合。这意味着你可以允许组件的用户在其标签内嵌入他们自己的标记。许多标准 HTML 元素都支持元素组合。想想那些允许你拥有内部标记的元素。例如，考虑用于分组其他 HTML 元素的 `<div>` 元素；或者允许你在其标签内添加格式化文本的 `<p>` 元素，如下面的代码片段所示：
+当然，目前看来确实如此。你可以利用原生模板来获得 HTML 元素的组合。这意味着你可以允许组件的用户在其标签内嵌入他们自己的标记。许多标准 HTML 元素都支持元素组合。想想那些允许你拥有内部标记的元素。例如，考虑用于分组其他 HTML 元素的`<div>`元素；或者允许你在其标签内添加格式化文本的`<p>`元素，如下面的代码片段所示：
 
 ```
 <p>
@@ -3580,13 +3417,13 @@ this.shadowRoot.getElementById("message").innerText = this._message;
 </p>
 ```
 
-这个例子简单展示了 `<p>` 元素如何允许你嵌入文本以及 `<b>` 和 `<i>` 元素。如果你的组件也能做到这一点，那该多好啊！
+这个例子简单展示了`<p>`元素如何允许你嵌入文本以及`<b>`和`<i>`元素。如果你的组件也能做到这一点，那该多好啊！
 
 在本节中，我们将探讨如何为 Web 组件实现类似的效果。
 
 ### 启用格式化文本
 
-让我们首先尝试定义我们希望 cookie 提醒组件具备的功能。到目前为止，我们允许用户通过 `message` 属性和特性来指定自定义消息。这很棒，但无法让用户指定格式化文本。我们希望允许用户像下面的例子那样指定格式化文本：
+让我们首先尝试定义我们希望 cookie 提醒组件具备的功能。到目前为止，我们允许用户通过`message`属性和特性来指定自定义消息。这很棒，但无法让用户指定格式化文本。我们希望允许用户像下面的例子那样指定格式化文本：
 
 ```
 <!DOCTYPE html>
@@ -3605,7 +3442,7 @@ this.shadowRoot.getElementById("message").innerText = this._message;
 </html>
 ```
 
-我们在 `<cookie-alert>` 标签内放置了一些 HTML 格式的文本。我们希望获得与 `<p>` 元素类似的结果。
+我们在`<cookie-alert>`标签内放置了一些 HTML 格式的文本。我们希望获得与`<p>`元素类似的结果。
 
 幸运的是，这并不难实现，而且不需要编写太多代码。我们只需按如下方式更改模板的标记即可：
 
@@ -3623,11 +3460,11 @@ template.innerHTML = ‘
 ‘;
 ```
 
-如你所见，我们简单地将 HTML 标记中的 `<span id=”message”></span>` 元素替换为 `<slot id=”message”></slot>` 元素。
+如你所见，我们简单地将 HTML 标记中的`<span id=”message”></span>`元素替换为`<slot id=”message”></slot>`元素。
 
-那么，这个新的 `<slot>` 元素是什么呢？
+那么，这个新的`<slot>`元素是什么呢？
 
-`<slot>` 元素允许你在模板中定义一个占位符。这个占位符可以由组件的用户通过嵌入在组件标签内的任何标记片段来填充。这正是我们在上面的标记中所做的，我们指定了格式化文本作为要显示的消息。
+`<slot>`元素允许你在模板中定义一个占位符。这个占位符可以由组件的用户通过嵌入在组件标签内的任何标记片段来填充。这正是我们在上面的标记中所做的，我们指定了格式化文本作为要显示的消息。
 
 如果你使用这个小的改动运行组件项目，你将得到以下结果：
 
@@ -3637,7 +3474,7 @@ template.innerHTML = ‘
 
 如你所见，cookie 提醒组件显示的消息中，“cookies”和“privacy”这两个词以粗体显示。
 
-你可以通过嵌入内容为 `<slot>` 元素提供默认标记，如下例所示：
+你可以通过嵌入内容为`<slot>`元素提供默认标记，如下例所示：
 
 ```
 <slot id=”message”>这是<b>默认</b>消息</slot>
@@ -3645,17 +3482,17 @@ template.innerHTML = ‘
 
 如果使用组件时未提供标记，则会显示默认消息。
 
-你可能注意到，组件模板中的 `<slot>` 元素具有 `id` 属性。这并不是使占位符工作所必需的。我们添加它是为了保持现有行为，即保留通过 `message` 属性和特性指定消息的可能性。换句话说，`<slot>` 元素也扮演了它所替换的 `<span>` 元素的角色。
+你可能注意到，组件模板中的`<slot>`元素具有`id`属性。这并不是使占位符工作所必需的。我们添加它是为了保持现有行为，即保留通过`message`属性和特性指定消息的可能性。换句话说，`<slot>`元素也扮演了它所替换的`<span>`元素的角色。
 
-但请注意，如果你在存在嵌入标记的情况下为 `message` 属性或特性赋值，则会显示嵌入的标记。
+但请注意，如果你在存在嵌入标记的情况下为`message`属性或特性赋值，则会显示嵌入的标记。
 
 ### 命名插槽
 
-`<slot>` 元素为你的组件打开了新的可能性。当然，你可以在组件标签内指定任何标记，而不仅仅是定义格式化文本的标记。例如，你还可以嵌入其他 Web 组件。
+`<slot>`元素为你的组件打开了新的可能性。当然，你可以在组件标签内指定任何标记，而不仅仅是定义格式化文本的标记。例如，你还可以嵌入其他 Web 组件。
 
-我们上面展示的例子只使用了一个占位符，由组件模板中唯一的 `<slot>` 元素标识。这个插槽的出现就是技术上所谓的**未命名默认插槽**。
+我们上面展示的例子只使用了一个占位符，由组件模板中唯一的`<slot>`元素标识。这个插槽的出现就是技术上所谓的**未命名默认插槽**。
 
-你可以在模板中插入多个 `<slot>` 元素。并且你可以通过为每个插槽的 `name` 属性赋值来标识它们。例如，你可以有一个像下面这样的模板：
+你可以在模板中插入多个`<slot>`元素。并且你可以通过为每个插槽的`name`属性赋值来标识它们。例如，你可以有一个像下面这样的模板：
 
 ```
 const template = document.createElement('template');
@@ -3668,7 +3505,7 @@ template.innerHTML = ‘
 ‘;
 ```
 
-这里有三个由名称标识的插槽。标记与这些插槽所代表的占位符之间的匹配是通过 `slot` 属性完成的，如下例所示：
+这里有三个由名称标识的插槽。标记与这些插槽所代表的占位符之间的匹配是通过`slot`属性完成的，如下例所示：
 
 ```
 <my-custom-element>
@@ -3678,7 +3515,7 @@ template.innerHTML = ‘
 </my-custom-element>
 ```
 
-此示例中的每个 HTML 元素将替换模板中具有相同 `name` 值（与 `slot` 属性值匹配）的对应 `<slot>` 元素。因此，生成的标记将类似于以下内容：
+此示例中的每个 HTML 元素将替换模板中具有相同`name`值（与`slot`属性值匹配）的对应`<slot>`元素。因此，生成的标记将类似于以下内容：
 
 ```
 <div>
@@ -3688,7 +3525,7 @@ template.innerHTML = ‘
 </div>
 ```
 
-你还可以组合命名和未命名的 `<slot>` 元素，如下例所示：
+你还可以组合命名和未命名的`<slot>`元素，如下例所示：
 
 ```
 const template = document.createElement('template');
@@ -3702,7 +3539,7 @@ template.innerHTML = ‘
 ‘;
 ```
 
-最后一个 `<slot>` 元素没有 `name` 属性。这个插槽将被所有没有 `slot` 属性的顶级元素替换。例如，考虑以下 Web 组件标记：
+最后一个`<slot>`元素没有`name`属性。这个插槽将被所有没有`slot`属性的顶级元素替换。例如，考虑以下 Web 组件标记：
 
 ```
 <my-custom-element>
@@ -3730,9 +3567,9 @@ template.innerHTML = ‘
 </div>
 ```
 
-如你所见，未命名插槽会捕获所有没有 `slot` 属性的元素，无论它们原来的位置如何。这个未命名插槽被称为**默认插槽**。
+如你所见，未命名插槽会捕获所有没有`slot`属性的元素，无论它们原来的位置如何。这个未命名插槽被称为**默认插槽**。
 
-**你只能有一个默认插槽。如果你有多个未命名插槽，只有第一个会成为默认插槽，并且它会捕获所有没有 `slot` 属性的顶级元素。**
+**你只能有一个默认插槽。如果你有多个未命名插槽，只有第一个会成为默认插槽，并且它会捕获所有没有`slot`属性的顶级元素。**
 
 ### 使用命名插槽
 
@@ -3747,19 +3584,15 @@ template.innerHTML = ‘
 …
 </style>
 <div class="container footer">
+<slot id="message" name="message"></slot>&nbsp;
+<slot name="reference"></slot>
+<button id="closeButton" class="button">Close</button>
+<button id= "acceptButton" class="button">Accept</button>
+</div>
+‘;
 ```
 
-
-
-
-`<slot id="message" name="message"></slot>&nbsp;`
-`<slot name="reference"></slot>`
-`<button id="closeButton" class="button">Close</button>`
-`<button id= "acceptButton" class="button">Accept</button>`
-`</div>`
-`‘;`
-
-我们为现有的 `<slot>` 元素添加了 `name` 属性，并新增了一个名为 `reference` 的插槽。我们希望用户能够像之前一样，为组件的主消息指定格式化的标记，同时也能为 cookie 管理策略的详细参考提供标记。
+我们为现有的`<slot>`元素添加了`name`属性，并新增了一个名为`reference`的插槽。我们希望用户能够像之前一样，为组件的主消息指定格式化的标记，同时也能为 cookie 管理策略的详细参考提供标记。
 
 以下是使用这些插槽的示例：
 
@@ -3781,13 +3614,13 @@ template.innerHTML = ‘
 </html>
 ```
 
-在 `<cookie-alert>` 标签内有两个 `<span>` 元素。每个 `<span>` 元素都引用了模板中定义的插槽。运行项目后，你将看到以下结果：
+在`<cookie-alert>`标签内有两个`<span>`元素。每个`<span>`元素都引用了模板中定义的插槽。运行项目后，你将看到以下结果：
 
 ![](img/Figure_7.2.jpg)
 
 **图 7.2**
 
-你会看到用户提供的两条消息。当然，用户需要提供所有相关资源，例如链接中指定的 `privacy.html` 文件。
+你会看到用户提供的两条消息。当然，用户需要提供所有相关资源，例如链接中指定的`privacy.html`文件。
 
 这一切都归功于插槽机制。无需其他代码！
 
@@ -3797,7 +3630,7 @@ template.innerHTML = ‘
 
 从 Web 组件开发者的角度来看，我们介绍了原生模板，并发现它们为我们提供了一种声明式的方法来定义 UI。原生 HTML 模板还提供了一种高效的方式来渲染 HTML 元素。我们使用原生模板方法重新设计了之前开发的 cookie 提醒组件。
 
-从 Web 组件使用者的角度来看，我们发现原生模板允许他们用自定义标记来组合我们的 Web 组件。我们可以通过使用 `<slot>` 元素来实现这种组合。插槽允许我们定义占位符，用户可以在其中以非常简单的方式添加自定义标记。
+从 Web 组件使用者的角度来看，我们发现原生模板允许他们用自定义标记来组合我们的 Web 组件。我们可以通过使用`<slot>`元素来实现这种组合。插槽允许我们定义占位符，用户可以在其中以非常简单的方式添加自定义标记。
 
 通过本章学到的功能，你将能够为你的 Web 组件构建灵活、高效且可维护的 UI，几乎无需编写任何 JavaScript 代码。
 
@@ -3805,27 +3638,19 @@ template.innerHTML = ‘
 
 ## 问题
 
-1.  在 HTML 页面的标记中，可以在哪里添加 `<template>` 元素？
-
-2.  能否在模板的标记中包含像 `<li>` 这样的元素，而不包含其父元素 `<ol>` 或 `<ul>`？
-
-3.  使用模板与使用字符串定义 UI 标记有什么区别？
-
-4.  模板生成的 DOM 是“惰性的”是什么意思？
-
-5.  如何激活模板？
-
-6.  为什么使用模板比通过 DOM API 构建 UI 更高效？
-
-7.  什么是插槽？
-
-8.  命名插槽与未命名插槽有什么区别？
-
-9.  一个模板中可以插入多少个未命名插槽？
-
+1. 在 HTML 页面的标记中，可以在哪里添加`<template>`元素？
+2. 能否在模板的标记中包含像`<li>`这样的元素，而不包含其父元素`<ol>`或`<ul>`？
+3. 使用模板与使用字符串定义 UI 标记有什么区别？
+4. 模板生成的 DOM 是“惰性的”是什么意思？
+5. 如何激活模板？
+6. 为什么使用模板比通过 DOM API 构建 UI 更高效？
+7. 什么是插槽？
+8. 命名插槽与未命名插槽有什么区别？
+9. 一个模板中可以插入多少个未命名插槽？
 10. 什么是默认插槽？
 
 # 第 8 章
+
 ## 分发与扩展 Web 组件
 
 在前几章中，我们学习了如何构建 Web 组件，并发现了在不同开发场景中更适用的方法。然而，我们构建的组件旨在用于一个或多个 Web 应用或网站，由我们自己或其他开发者使用。这促使我们思考如何提供我们的组件，使其能够轻松添加到其他项目中。
@@ -3836,9 +3661,8 @@ template.innerHTML = ‘
 
 ## 结构
 
-*   分发策略
-
-*   扩展组件
+- 分发策略
+- 扩展组件
 
 ## 目标
 
@@ -3854,11 +3678,13 @@ template.innerHTML = ‘
 
 ### 基于脚本的策略
 
-我们可以用来分发 cookie 提醒组件的第一个策略是将其作为脚本提供。这意味着你需要提供一个包含实现该组件的相关 JavaScript 代码的文件，以便潜在用户可以通过 `<script>` 标签将其包含到他们的项目中。
+我们可以用来分发 cookie 提醒组件的第一个策略是将其作为脚本提供。这意味着你需要提供一个包含实现该组件的相关 JavaScript 代码的文件，以便潜在用户可以通过`<script>`标签将其包含到他们的项目中。
 
 让我们看看使用此策略分发组件的选项，并讨论这种方法的优缺点。
 
 ### 无需构建步骤
+
+
 
 将 Web 组件作为脚本分发的最简单方法是提供源代码，无需任何构建步骤。要将此方法应用于我们的 cookie 提醒组件，你只需分发 Web Components Builder 项目中 `src` 文件夹下的 `index.js` 文件。也许为了更容易识别，你可以将 `index.js` 文件重命名为 `cookie-alert.js`。这样，你可以通过允许用户下载或通过 CDN 提供来分发它。
 
@@ -3866,7 +3692,7 @@ template.innerHTML = ‘
 
 一旦用户获取了脚本或托管在 CDN 上的脚本 URL，他们只需将该脚本包含到他们的 HTML 页面中。例如，以下 HTML 描述了一个包含 `cookie-alert.js` 脚本并在其 body 中使用 Web 组件的页面：
 
-```
+```html
 <!DOCTYPE html>
 <html>
 <head>
@@ -3884,10 +3710,6 @@ template.innerHTML = ‘
 正如预期的那样，通过这种方法，你可以在 HTML 标记中使用 `<cookie-alert>` 标签。
 
 ### 需要构建步骤
-
-
-
-
 
 Web 组件构建项目允许您为生产环境构建组件，即准备分发给用户。与上一节描述的源代码分发方式相比，构建步骤为您的脚本带来了一些优势。
 
@@ -3933,7 +3755,7 @@ Web 组件构建项目允许您为生产环境构建组件，即准备分发给�
 
 让我们看看如何通过将组件实现为标准 ECMAScript 模块来解决这两个问题。我们只需对包含组件定义的脚本进行一项更改：在类定义前加上 `export default` 语句。cookie 提醒组件的脚本文件内容如下所示：
 
-```
+```javascript
 const template = document.createElement('template');
 template.innerHTML = '…';
 export default class CookieAlert extends HTMLElement {
@@ -3966,9 +3788,6 @@ function setCookie(cookieName, cookieValue, expirationDays) {
 
 基于脚本的策略对于以 HTML 为中心的应用程序或网站来说是一种好方法。然而，现代 Web 应用程序开发采用 JavaScript 优先的方法。考虑单页应用（SPA）架构：它使用一个 HTML 页面，其内容由 JavaScript 代码在运行时生成。这是大多数 JavaScript 框架和库（如 React、Angular、Vue 等）支持的方法，但也适用于原生 JavaScript。使用这种方法，HTML 页面只是将应用程序 JavaScript 代码附加到浏览器的锚点。应用程序本身的大部分逻辑、UI 和基础设施都由 JavaScript 代码提供。
 
-
-
-
 在此上下文中，构建工具链至关重要，而且在绝大多数情况下，开发环境都基于 Node.js 运行时。如你所知，在这种环境中，添加外部组件或库的常用方法是使用包管理器（如 `npm` 或 `yarn`）安装包。那么，假设我们想以包的形式向用户提供 cookie 提醒组件。我们该如何实现呢？让我们一起来探索。
 
 #### 利用 GitHub 仓库
@@ -3977,7 +3796,7 @@ function setCookie(cookieName, cookieValue, expirationDays) {
 
 准备好要发布到 GitHub 仓库的代码后，请确保你的 `package.json` 文件配置正确。以下是我们 cookie 提醒组件的 `package.json` 文件示例：
 
-```
+```json
 {
   "name": "cookie-alert-demo",
   "version": "1.0.0",
@@ -4024,7 +3843,7 @@ function setCookie(cookieName, cookieValue, expirationDays) {
 
 一旦代码安装到 `node_modules` 文件夹中，用户就可以像使用标准包一样导入该组件。例如，该组件可以动态附加到 HTML 页面的 body 中，如下所示：
 
-```
+```javascript
 import CookieAlert from 'cookie-alert-demo';
 const cookieAlert = new CookieAlert();
 document.body.appendChild(cookieAlert);
@@ -4064,7 +3883,7 @@ document.body.appendChild(cookieAlert);
 
 最后，我们按如下方式实现这个新组件：
 
-```
+```javascript
 import CookieAlert from 'cookie-alert-demo';
 
 class MyCookieAlert extends CookieAlert {
@@ -4115,7 +3934,7 @@ customElements.define("my-cookie-alert", MyCookieAlert);
 
 `MyCookieAlert` 类的构造函数调用 `super()` 并将内部属性 `_hasCloseButton` 初始化为 `false`：
 
-```
+```javascript
 constructor() {
   super();
   this._hasCloseButton = false;
@@ -4124,7 +3943,9 @@ constructor() {
 
 这意味着这个 cookie 提醒组件的变体默认不应显示“关闭”按钮。然后，我们定义了 `hasCloseButton` 属性的 getter 和 setter：
 
-```
+
+
+```javascript
 get hasCloseButton() {
   return this._hasCloseButton;
 }
@@ -4138,21 +3959,18 @@ set hasCloseButton(value) {
 
 setter 调用 `toggleCloseButton()` 方法来更改按钮的可见性。该方法与基础组件的 shadow DOM 交互以管理按钮的可见性：
 
-```
+```javascript
 toggleCloseButton(visible) {
   const closeButton = super.shadowRoot.getElementById("closeButton");
   closeButton.style.display = (visible? "block": "none");
 }
 ```
 
-
-
-
 如你所见，关闭按钮的可见性会根据作为参数传入的布尔值而变化。注意使用 `super` 来访问基类的 Shadow DOM。当然，这是可行的，因为 cookie 提示的 Shadow DOM 被定义为 open。
 
 然后，我们观察 `closebutton` 属性并管理其值的变化：
 
-```
+```javascript
 static get observedAttributes() {
     return ["closebutton"];
 }
@@ -4172,7 +3990,7 @@ attributeChangedCallback(name, oldValue, newValue) {
 
 `connectedCallback()` 反应调用其基类的相同方法，并根据内部属性 `_hasCloseButton` 的值设置按钮的可见性：
 
-```
+```javascript
 connectedCallback() {
     super.connectedCallback();
     this.toggleCloseButton(this._hasCloseButton);
@@ -4183,7 +4001,7 @@ connectedCallback() {
 
 最后一步当然是注册 `MyCookieAlert` Web 组件：
 
-```
+```javascript
 customElements.define("my-cookie-alert", MyCookieAlert);
 ```
 
@@ -4193,7 +4011,7 @@ customElements.define("my-cookie-alert", MyCookieAlert);
 
 以下标记展示了 `my-cookie-alert` 标签最基本的用法：
 
-```
+```html
 <!DOCTYPE html>
 <html>
 <head>
@@ -4216,7 +4034,7 @@ customElements.define("my-cookie-alert", MyCookieAlert);
 
 如果你希望显示“关闭”按钮，只需添加值为 true 的 `closebutton` 属性，如下例所示：
 
-```
+```html
 <my-cookie-alert closebutton="true"></my-cookie-alert>
 ```
 
@@ -4228,19 +4046,19 @@ customElements.define("my-cookie-alert", MyCookieAlert);
 
 在管理 `closebutton` 属性的值时，我们曾指出空字符串值与 true 值具有相同的含义。这允许我们将该属性用作开关属性，就像许多原生属性（例如 `enabled` 或 `checked`）一样。因此，你可以通过以下方式获得与将 true 值赋给 `closebutton` 属性相同的结果：
 
-```
+```html
 <my-cookie-alert closebutton></my-cookie-alert>
 ```
 
 为了完整概述此组件，请记住以下标记与不使用 `closebutton` 属性具有相同的含义：
 
-```
+```html
 <my-cookie-alert closebutton="false"></my-cookie-alert>
 ```
 
 像往常一样，你可以通过 JavaScript 使用 `hasCloseButton` 属性获得与之前相同的结果。例如，以下代码强制显示关闭按钮：
 
-```
+```javascript
 const myCookieAlert = document.querySelector("my-cookie-alert");
 myCookieAlert.hasCloseButton = true;
 ```
@@ -4257,15 +4075,15 @@ myCookieAlert.hasCloseButton = true;
 
 ## 问题
 
-1.  将 Web 组件作为传统脚本分发的主要缺点是什么？
-2.  在分发组件之前对代码应用构建步骤的主要好处是什么？
-3.  如何克服将 Web 组件作为传统脚本分发的缺点？
-4.  如何将 Web 组件的代码转换为模块？
-5.  如何使用 `<script>` 标签导入模块？
-6.  为什么需要包来分发你的 Web 组件？
-7.  发布 `npm` 包所需的最少 `package.json` 字段有哪些？
-8.  如何将你的 GitHub 仓库作为 `npm` 包共享？
-9.  如何从 GitHub 仓库安装 `npm` 包？
+1. 将 Web 组件作为传统脚本分发的主要缺点是什么？
+2. 在分发组件之前对代码应用构建步骤的主要好处是什么？
+3. 如何克服将 Web 组件作为传统脚本分发的缺点？
+4. 如何将 Web 组件的代码转换为模块？
+5. 如何使用 `<script>` 标签导入模块？
+6. 为什么需要包来分发你的 Web 组件？
+7. 发布 `npm` 包所需的最少 `package.json` 字段有哪些？
+8. 如何将你的 GitHub 仓库作为 `npm` 包共享？
+9. 如何从 GitHub 仓库安装 `npm` 包？
 10. 如何将你的 `npm` 包发布到公共 npm 注册表？
 11. 如何扩展现有的 Web 组件？
 
@@ -4273,38 +4091,35 @@ myCookieAlert.hasCloseButton = true;
 
 ## Web 组件与其他 UI 框架
 
-在本书中，你已经了解到 Web 组件背后的技术允许你自定义标准 HTML 元素并创建自定义 HTML 元素。当我们在*第 1 章“Web 组件入门”*中介绍它们时，我们说过 Web 组件的主要优势之一是它们的互操作性。即无论你使用什么库或框架来构建 UI，它们都能在 HTML 页面或 Web 应用程序中工作。这是一个巨大的优势，允许你创建通用的 UI 组件，并以与使用 HTML 元素相同的方式使用它们。
+在本书中，你已经了解到 Web 组件背后的技术允许你自定义标准 HTML 元素并创建自定义 HTML 元素。当我们在第 1 章“Web 组件入门”中介绍它们时，我们说过 Web 组件的主要优势之一是它们的互操作性。即无论你使用什么库或框架来构建 UI，它们都能在 HTML 页面或 Web 应用程序中工作。这是一个巨大的优势，允许你创建通用的 UI 组件，并以与使用 HTML 元素相同的方式使用它们。
 
-在本章中，我们将展示几个实际示例，说明 Web 组件与 UI 框架之间的互操作性是如何实现的。我们将看到如何以极少的努力将它们集成到 *React、Angular* 和 Vue 应用程序中。我们还将探讨一些关于如何通过 *Angular、Vue* 和 *React* 编写 Web 组件的方向。
+在本章中，我们将展示几个实际示例，说明 Web 组件与 UI 框架之间的互操作性是如何实现的。我们将看到如何以极少的努力将它们集成到 React、Angular 和 Vue 应用程序中。我们还将探讨一些关于如何通过 Angular、Vue 和 React 编写 Web 组件的方向。
 
 ## 结构
 
-*   Web 组件集成
-*   Web 组件与 React
-*   Web 组件与 Angular
-*   Web 组件与 Vue
-*   使用 UI 框架构建 Web 组件
+- Web 组件集成
+- Web 组件与 React
+- Web 组件与 Angular
+- Web 组件与 Vue
+- 使用 UI 框架构建 Web 组件
 
 ## 目标
 
 本章的目标是演示如何将 Web 组件集成到使用 JavaScript UI 框架构建的网站和应用程序中。
 
-你将学习如何在用 *React、Angular* 和 *Vue* 创建的应用程序中使用你的组件。你还将发现如何将这些框架构建的组件包装到自定义元素中。
+你将学习如何在用 React、Angular 和 Vue 创建的应用程序中使用你的组件。你还将发现如何将这些框架构建的组件包装到自定义元素中。
 
 ## Web 组件集成
 
 你用 Web 组件技术构建的 HTML 元素作为标准 HTML 元素工作。这意味着无论你在哪里可以使用 HTML 元素，你都可以使用 Web 组件。这种可能性带来一个很棒的特性——无论你为 Web 应用程序或网站使用什么库，你都可以在任何地方使用你的 Web 组件。互操作性是 Web 组件令人惊叹的主要优势。
 
-
-
-
-与使用 *React、Angular、Vue* 等框架创建的组件不同，Web 组件并不绑定于特定的库或框架。例如，如果你用 React 创建了一个 UI 组件，那么该组件只能在基于 React 的应用中使用。而 Web 组件可以轻松集成到几乎任何 UI 库构建的应用中。这让你无需为不同的组件库重复实现相同的组件，我们稍后会看到这一点。
+与使用 React、Angular、Vue 等框架创建的组件不同，Web 组件并不绑定于特定的库或框架。例如，如果你用 React 创建了一个 UI 组件，那么该组件只能在基于 React 的应用中使用。而 Web 组件可以轻松集成到几乎任何 UI 库构建的应用中。这让你无需为不同的组件库重复实现相同的组件，我们稍后会看到这一点。
 
 **库和框架是不同的概念。库是一组专注于特定编程功能的函数，应用可以调用它们。框架则是一组支持应用开发不同方面的函数。尽管存在这些差异，我们在此将互换地讨论库和框架。**
 
 在深入 Web 组件集成的细节之前，请记住：Web 组件并不是另一个 UI 框架——它们是原生的 UI 框架。Web 组件并非现有 UI 框架的替代品——它们可以共存。你无需切换到 Web 组件并放弃你的 UI 框架。你可以根据需要将它们引入你的应用。Web 组件与框架无关——它们可以集成到任何框架中。一次编写，随处使用。
 
-为了实际演示如何在基于 UI JavaScript 框架构建的应用中使用 Web 组件，我们将把前几章创建的 cookie 提醒组件集成到基于 *React、Angular* 和 *Vue* 的应用中。
+为了实际演示如何在基于 UI JavaScript 框架构建的应用中使用 Web 组件，我们将把前几章创建的 cookie 提醒组件集成到基于 React、Angular 和 Vue 的应用中。
 
 **在接下来的章节中，我们假设你熟悉 React、Angular 或 Vue。如果不熟悉，请参考官方文档以获取有关这些框架的更多信息。**
 
@@ -4320,13 +4135,14 @@ myCookieAlert.hasCloseButton = true;
 
 如前一章所述，这会直接从组件的 GitHub 仓库安装 `cookie-alert-demo` 包。现在，要在 React 应用中导入并使用该组件，请编辑 `src/App.js` 文件并将其内容修改如下：
 
-```
+```javascript
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import 'cookie-alert-demo';
 
 function App() {
+  const message = "We use cookies, but respect your privacy!";
   return (
     <div className="App">
       <header className="App-header">
@@ -4343,7 +4159,7 @@ function App() {
           Learn React
         </a>
       </header>
-      <cookie-alert></cookie-alert>
+      <cookie-alert message={message}></cookie-alert>
     </div>
   );
 }
@@ -4363,7 +4179,7 @@ export default App;
 
 当然，你可能希望在 React 应用中自定义 cookie 提醒。例如，你可能想更改默认消息。你可以通过将新的 `message` 字符串赋值给组件的 `message` 属性来实现，就像在任何 HTML 页面中一样。但是，你的消息可能是在运行时创建的，你可能想知道如何将此值赋给属性。以下代码展示了如何将常量值赋给 `message` 属性：
 
-```
+```javascript
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
@@ -4403,7 +4219,9 @@ export default App;
 
 查看以下代码，了解如何通过 `ref` 访问 `message` 属性：
 
-```
+
+
+```javascript
 import React, {useRef, useEffect} from 'react';
 import logo from './logo.svg';
 import './App.css';
@@ -4444,7 +4262,7 @@ export default App;
 
 你可以采用相同的方法来处理 cookie 提醒组件生成的事件。以下代码展示了如何为 `accepted` 事件添加事件处理程序：
 
-```
+```javascript
 useEffect(() => {
   cookieAlert.current.message = "We use cookies, but respect your privacy!";
   cookieAlert.current.addEventListener("accepted", () => alert("Thanks for accepting our cookie policy!"));
@@ -4452,9 +4270,6 @@ useEffect(() => {
 ```
 
 如你所见，你在之前创建的效果中添加了事件监听器。
-
-
-
 
 即使在 React 应用中使用 Web Components 是可行的，你也不能期望它们遵循这个流行库的声明式编程模型。Web Components 使用典型的 DOM 编程方式，通常是命令式的。因此，在 React 应用中使用 Web Components 时，你不应期望它们像 React 组件那样工作。例如，Web Components 生成的事件可能无法在 React 组件结构中正确传播。此外，React 组件的典型响应性也无法得到保证。
 
@@ -4480,7 +4295,7 @@ useEffect(() => {
 
 此时，你应该注意一个问题。我们的 cookie 提醒组件是用 JavaScript 编写的，而 Angular 应用的默认语言是 TypeScript。因此，为了避免错误，你需要在 `tsconfig.json` 配置文件中添加 `"allowJs"` 设置作为 TypeScript 编译器选项。你的 `tsconfig.json` 文件应该类似于以下内容：
 
-```
+```json
 {
   "compileOnSave": false,
   "compilerOptions": {
@@ -4498,7 +4313,7 @@ useEffect(() => {
 
 为此，打开 `src/app/app.module.ts` 文件，并将其内容修改如下：
 
-```
+```typescript
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { AppComponent } from './app.component';
@@ -4523,7 +4338,7 @@ export class AppModule { }
 
 让我们先看看如何在 `AppComponent` 组件的模板中使用 cookie 提醒组件。编辑 `src/app/app.component.ts` 文件，将其内容修改如下：
 
-```
+```typescript
 import { Component } from '@angular/core';
 import 'cookie-alert-demo';
 
@@ -4562,7 +4377,7 @@ export class AppComponent {
 
 就像我们在 React 中所做的那样，让我们看看如何使用不同的方法自定义提醒消息。为 `message` 属性赋值是最简单的方法。以下代码展示了如何应用这种基本方法：
 
-```
+```typescript
 import { Component } from '@angular/core';
 import 'cookie-alert-demo';
 
@@ -4581,7 +4396,7 @@ export class AppComponent {
 
 如你所见，没什么特别的。但是，如果你想将计算出的值作为提醒中显示的文本，该怎么办？考虑以下示例：
 
-```
+```typescript
 import { Component } from '@angular/core';
 import 'cookie-alert-demo';
 
@@ -4603,7 +4418,7 @@ export class AppComponent {
 
 要处理 Web Component 生成的事件，请看以下代码：
 
-```
+```typescript
 import { Component } from '@angular/core';
 import 'cookie-alert-demo';
 
@@ -4633,7 +4448,7 @@ export class AppComponent {
 
 当使用旨在用于 Angular 表单的 Web Components 时，你需要特别注意。例如，考虑这样一种情况：你有一个作为 Web Component 创建的自定义输入元素，并且你想在表单中使用它，如下例所示：
 
-```
+```html
 <form [formGroup]="form" (ngSubmit)="send()">
   <custom-input
     type="text"
@@ -4645,19 +4460,16 @@ export class AppComponent {
 
 在这个例子中，我们在 Angular 表单中使用了虚构的 `<custom-input>` Web Component。默认情况下，Angular 会增强标准 HTML `input` 元素，使其能够与表单 API 交互。Angular 表单会在其子元素中寻找一个 `value accessor`，即一种允许你访问控件值的特性。`value accessor` 是一个实现了 `ControlValueAccessor` 接口的指令，它允许原生 HTML 元素与 Angular 表单通信。因此，Angular 通过附加这个 `value accessor` 来操作标准 HTML 元素。
 
-
-
-
 然而，Angular 对你的 Web 组件一无所知。因此，你需要自行向组件添加一个 `value accessor`。这基本上意味着要向组件添加 `ngDefaultControl` 指令，如下代码所示：
 
-```
+```html
 <form [formGroup]="form" (ngSubmit)="send()">
-<custom-input
-type="text"
-label="Enter your data"
-ngDefaultControl>
-</custom-input>
-<input type="submit" value="Submit">
+  <custom-input
+    type="text"
+    label="Enter your data"
+    ngDefaultControl>
+  </custom-input>
+  <input type="submit" value="Submit">
 </form>
 ```
 
@@ -4681,15 +4493,15 @@ ngDefaultControl>
 
 与 Angular 的情况类似，Vue 会尝试将非标准元素视为 Vue 组件。当然，这会导致错误，因为编译器找不到实现 `<cookie-alert>` 标签的 Vue 组件。因此，你需要告诉 Vue 忽略 `<cookie-alert>` 元素。为此，打开 `src/main.js` 文件，并按以下代码片段更新其内容：
 
-```
+```javascript
 import Vue from 'vue'
 import App from './App.vue'
 Vue.config.productionTip = false
 Vue.config.ignoredElements=[
-'cookie-alert'
+  'cookie-alert'
 ]
 new Vue({
-render: h => h(App),
+  render: h => h(App),
 }).$mount('#app')
 ```
 
@@ -4697,47 +4509,52 @@ render: h => h(App),
 
 现在，打开 `src/App.vue` 组件，并按以下代码修改模板和脚本部分的内容：
 
-```
+```vue
 <template>
-<div id="app">
-<img alt="Vue logo" src="./assets/logo.png">
-<HelloWorld msg="Welcome to Your Vue.js App"/>
-<cookie-alert></cookie-alert>
-</div>
+  <div id="app">
+    <img alt="Vue logo" src="./assets/logo.png">
+    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <cookie-alert></cookie-alert>
+  </div>
 </template>
+
 <script>
 import HelloWorld from './components/HelloWorld.vue'
 import 'cookie-alert-demo'
+
 export default {
-name: 'App',
-components: {
-HelloWorld
-}
+  name: 'App',
+  components: {
+    HelloWorld
+  }
 }
 </script>
+
 <style>
 #app {
-font-family: Avenir, Helvetica, Arial, sans-serif;
--webkit-font-smoothing: antialiased;
--moz-osx-font-smoothing: grayscale;
-text-align: center;
-color: #2c3e50;
-margin-top: 60px;
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  margin-top: 60px;
 }
 </style>
 ```
 
-在脚本部分，你导入了 `cookie-alert-demo` 模块。在模板部分，你直接使用了 `<cookie-alert>` 标签。
 
-要查看这些更改的效果，运行 `npm run serve` 命令，并在浏览器中访问 `http://localhost:8080` 地址。你将看到类似下图的页面：
+
+在脚本部分，你导入了`cookie-alert-demo`模块。在模板部分，你直接使用了`<cookie-alert>`标签。
+
+要查看这些更改的效果，运行`npm run serve`命令，并在浏览器中访问`http://localhost:8080`地址。你将看到类似下图的页面：
 
 ![](img/Figure_9.3.jpg)
 
 **图 9.3**
 
-自定义 cookie 提醒组件与 Angular 中的操作一样简单。要分配不同的文本消息，你可以为组件的 `message` 属性设置所需的值，如下代码片段所示：
+自定义 cookie 提醒组件与 Angular 中的操作一样简单。要分配不同的文本消息，你可以为组件的`message`属性设置所需的值，如下代码片段所示：
 
-```
+```html
 <template>
 <div id="app">
 <img alt="Vue logo" src="./assets/logo.png">
@@ -4748,9 +4565,9 @@ margin-top: 60px;
 //…
 ```
 
-如果你想为 cookie 提醒组件的 `message` 属性赋值，可以像下面这个示例那样操作：
+如果你想为 cookie 提醒组件的`message`属性赋值，可以像下面这个示例那样操作：
 
-```
+```vue
 <template>
 <div id="app">
 <img alt="Vue logo" src="./assets/logo.png">
@@ -4776,11 +4593,11 @@ cookieMessage: 'We use cookies, but respect your privacy!'
 //…
 ```
 
-在这个示例中，你为 App 组件创建了一个 `cookieMessage` 属性，并使用典型的 Vue 绑定语法将其赋值给 message 属性。
+在这个示例中，你为`App`组件创建了一个`cookieMessage`属性，并使用典型的 Vue 绑定语法将其赋值给`message`属性。
 
-类似地，要处理 cookie 提醒组件的 accepted 事件，请向 App 组件添加一个 `showThanks()` 方法，并使用 @ 前缀将其赋值给 `accepted` 事件。以下代码展示了具体实现：
+类似地，要处理 cookie 提醒组件的`accepted`事件，请向`App`组件添加一个`showThanks()`方法，并使用`@`前缀将其赋值给`accepted`事件。以下代码展示了具体实现：
 
-```
+```vue
 <template>
 <div id="app">
 <img alt="Vue logo" src="./assets/logo.png">
@@ -4815,35 +4632,29 @@ alert("Thanks for accepting our cookie policy!");
 
 ## 使用 UI 框架构建 Web 组件
 
-上一节指导你在使用三种流行 UI 框架（*React、Angular 和 Vue*）构建的应用中使用了 Web 组件。我们看到了将 Web 组件与这些框架集成通常相当容易。但我们也注意到，根据具体框架的不同，你需要留意一些注意事项来解决某些问题。
+上一节指导你在使用三种流行 UI 框架（`React`、`Angular`和`Vue`）构建的应用中使用了 Web 组件。我们看到了将 Web 组件与这些框架集成通常相当容易。但我们也注意到，根据具体框架的不同，你需要留意一些注意事项来解决某些问题。
 
-你可以通过应用通用策略更系统地处理这些问题。例如，你可以用 *React、Angular* 或 *Vue* 组件包装你的 Web 组件。这样，你将集成问题封装在框架组件定义中，从而提供更好的集成体验。但这并没有改变将 Web 组件与其他 UI 框架集成的总体方法。
+你可以通过应用通用策略更系统地处理这些问题。例如，你可以用`React`、`Angular`或`Vue`组件包装你的 Web 组件。这样，你将集成问题封装在框架组件定义中，从而提供更好的集成体验。但这并没有改变将 Web 组件与其他 UI 框架集成的总体方法。
 
 某些 UI 框架提供了一种使用其语法和语义来创建 Web 组件的方法，而不是直接使用 JavaScript 和 DOM。你可能会问为什么。以下是两个可能的原因：
 
-*   **利用 UI 框架特性：** 如果你决定使用 UI 框架（比如 Angular）创建 Web 组件，你可以利用你的 Angular 知识以及框架提供的特性。这可能会简化开发，并在一定程度上避免你了解实现 Web 组件的细节。
-
-*   **分发基于框架的组件：** 假设你有一个 Vue 组件，并希望将其提供给其他非 Vue 应用使用。你可以通过 Vue 创建你的 Web 组件并进行分发。这相当于将你的 Vue 组件包装在 Web 组件中。
+- **利用 UI 框架特性：** 如果你决定使用 UI 框架（比如 Angular）创建 Web 组件，你可以利用你的 Angular 知识以及框架提供的特性。这可能会简化开发，并在一定程度上避免你了解实现 Web 组件的细节。
+- **分发基于框架的组件：** 假设你有一个 Vue 组件，并希望将其提供给其他非 Vue 应用使用。你可以通过 Vue 创建你的 Web 组件并进行分发。这相当于将你的 Vue 组件包装在 Web 组件中。
 
 以上可能是使用最流行的 UI 框架之一来创建 Web 组件的两个原因。然而，你至少应该注意以下注意事项：
 
-*   **增加复杂性：** 在 Web 组件技术之上应用一层抽象会增加复杂性。你可能会因为不同的管理方式而遇到问题。而且，由于这一额外层，你可能会遇到性能问题。
-
-*   **增加依赖：** 你用来实现 Web 组件的 UI 框架会成为依赖项，即使它可能只包含框架本身的一个子集。想象一下，如果一个应用有多个使用不同库构建的 Web 组件，会发生什么。
+- **增加复杂性：** 在 Web 组件技术之上应用一层抽象会增加复杂性。你可能会因为不同的管理方式而遇到问题。而且，由于这一额外层，你可能会遇到性能问题。
+- **增加依赖：** 你用来实现 Web 组件的 UI 框架会成为依赖项，即使它可能只包含框架本身的一个子集。想象一下，如果一个应用有多个使用不同库构建的 Web 组件，会发生什么。
 
 因此，即使可以创建 Web 组件或包装现有的基于框架的组件，也要问问自己，这对你的目标来说是否是一个好的选择。
 
-
-
-
-
-在接下来的章节中，我们将快速了解如何使用 `React`、`Angular` 和 `Vue` 创建 Web 组件。我们提供的示例非常简单，并非详尽无遗，但足以让你了解使用这些框架构建 Web 组件的基本思路。
+在接下来的章节中，我们将快速了解如何使用`React`、`Angular`和`Vue`创建 Web 组件。我们提供的示例非常简单，并非详尽无遗，但足以让你了解使用这些框架构建 Web 组件的基本思路。
 
 ### 使用 React 构建 Web 组件
 
-使用 React 创建 Web 组件，只需将 React 组件封装在一个继承自 `HTMLElement` 的标准类中，并注册相应的标签名即可。下面我们来看如何为一个基本的 React 组件定义封装器，例如：
+使用 React 创建 Web 组件，只需将 React 组件封装在一个继承自`HTMLElement`的标准类中，并注册相应的标签名即可。下面我们来看如何为一个基本的 React 组件定义封装器，例如：
 
-```
+```jsx
 import React from 'react';
 
 function MyComponent() {
@@ -4855,11 +4666,11 @@ function MyComponent() {
 export default MyComponent;
 ```
 
-这段代码定义了一个简单的 React 组件——它只显示一个包含文本的 `<div>`。
+这段代码定义了一个简单的 React 组件——它只显示一个包含文本的`<div>`。
 
 你可以按如下方式将该组件封装在 Web 组件定义中：
 
-```
+```jsx
 import React from 'react';
 import ReactDOM from 'react-dom';
 import MyComponent from './MyComponent';
@@ -4885,17 +4696,17 @@ class MyComponentWC extends HTMLElement {
 window.customElements.define('my-component', MyComponentWC);
 ```
 
-如你所见，这是自定义元素 `MyComponentWC` 的标准定义。其中包含了继承 `HTMLElement` 类的类定义，以及 `my-component` 标签名的注册。
+如你所见，这是自定义元素`MyComponentWC`的标准定义。其中包含了继承`HTMLElement`类的类定义，以及`my-component`标签名的注册。
 
-有趣的部分发生在类定义中。你可以看到 `connectedCallback()` 反应调用了 `mountReactComponent()` 方法。该方法负责将 `MyComponent` React 组件挂载到 DOM 中。如果挂载点不存在，它会创建一个 `<div>` 作为挂载点，并将影子 DOM 附加到该 `<div>` 上。然后，它会在挂载点渲染 React 组件。
+有趣的部分发生在类定义中。你可以看到`connectedCallback()`反应调用了`mountReactComponent()`方法。该方法负责将`MyComponent` React 组件挂载到 DOM 中。如果挂载点不存在，它会创建一个`<div>`作为挂载点，并将影子 DOM 附加到该`<div>`上。然后，它会在挂载点渲染 React 组件。
 
-`disconnectedCallback()` 反应会将 React 组件从挂载点卸载。
+`disconnectedCallback()`反应会将 React 组件从挂载点卸载。
 
 ### 使用 Angular 构建 Web 组件
 
-要使用 Angular 创建 Web 组件，你可以利用 Angular Elements 模块，稍后你将看到这一点。假设你在 `src/app/my-component/my-component.component.ts` 文件中实现了以下 Angular 组件：
+要使用 Angular 创建 Web 组件，你可以利用 Angular Elements 模块，稍后你将看到这一点。假设你在`src/app/my-component/my-component.component.ts`文件中实现了以下 Angular 组件：
 
-```
+```typescript
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -4913,13 +4724,13 @@ export class MyWebcomponentComponent implements OnInit {
 
 你需要通过运行以下命令将 Angular Elements 包添加到项目中：
 
-```
+```bash
 ng add @angular/elements
 ```
 
-然后，将 `app.module.ts` 中的代码修改如下：
+然后，将`app.module.ts`中的代码修改如下：
 
-```
+```typescript
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule, Injector } from '@angular/core';
 import { createCustomElement } from '@angular/elements';
@@ -4945,15 +4756,15 @@ export class AppModule {
 }
 ```
 
-你从 Angular Elements 模块导入了 `createCustomElement()` 函数，并导入了上面展示的 Angular 组件。然后，你将 `MyComponentComponent` 声明为项目的入口组件，并为 `AppModule` 类定义了构造函数。构造函数的主体从 Angular 组件创建了一个自定义元素，并像往常一样注册了 `my-component` 标签名。
+你从 Angular Elements 模块导入了`createCustomElement()`函数，并导入了上面展示的 Angular 组件。然后，你将`MyComponentComponent`声明为项目的入口组件，并为`AppModule`类定义了构造函数。构造函数的主体从 Angular 组件创建了一个自定义元素，并像往常一样注册了`my-component`标签名。
 
 最后，启动应用程序的手动引导。这一步是启动 Angular 渲染过程所必需的。
 
 ### 使用 Vue 构建 Web 组件
 
-使用 Vue 创建 Web 组件的过程相当直接。与 Angular 类似，Vue 提供了一个模块，简化了将 Vue 组件封装到自定义元素中的任务。假设你在 `src/components/MyComponent.vue` 文件中实现了一个非常简单的 Vue 组件，如下所示：
+使用 Vue 创建 Web 组件的过程相当直接。与 Angular 类似，Vue 提供了一个模块，简化了将 Vue 组件封装到自定义元素中的任务。假设你在`src/components/MyComponent.vue`文件中实现了一个非常简单的 Vue 组件，如下所示：
 
-```
+```html
 <template>
   <div>
     I am the component
@@ -4961,9 +4772,9 @@ export class AppModule {
 </template>
 ```
 
-这是一个非常简单的组件，但足以满足我们的目的。将 Vue 项目的 `main.js` 文件修改如下：
+这是一个非常简单的组件，但足以满足我们的目的。将 Vue 项目的`main.js`文件修改如下：
 
-```
+```javascript
 import Vue from 'vue'
 import wrap from '@vue/web-component-wrapper';
 import MyComponent from './components/MyComponent.vue';
@@ -4972,11 +4783,11 @@ const CustomElement = wrap(Vue, MyComponent);
 window.customElements.define('my-component', CustomElement);
 ```
 
-除了 `MyComponent` 组件外，这段代码还从 `web-component-wrapper` 模块导入了 `wrap()` 函数。它应用这个 `wrap()` 函数从 Vue 组件获取一个自定义元素，并注册相应的 `my-component` 标签名。
+除了`MyComponent`组件外，这段代码还从`web-component-wrapper`模块导入了`wrap()`函数。它应用这个`wrap()`函数从 Vue 组件获取一个自定义元素，并注册相应的`my-component`标签名。
 
 ## 结论
 
-在本章中，你了解了如何将我们在本书中构建的 Cookie 提醒组件，应用到使用 `React`、`Angular` 和 `Vue` 创建的应用中。你发现，在使用 JavaScript UI 框架构建的应用中使用 Web 组件，就像使用标准 HTML 元素一样简单。不过，你可能需要做一些调整，以便更好地将组件与框架的内部行为集成。
+在本章中，你了解了如何将我们在本书中构建的 Cookie 提醒组件，应用到使用`React`、`Angular`和`Vue`创建的应用中。你发现，在使用 JavaScript UI 框架构建的应用中使用 Web 组件，就像使用标准 HTML 元素一样简单。不过，你可能需要做一些调整，以便更好地将组件与框架的内部行为集成。
 
 你还探索了如何通过封装基于这些框架的组件来创建 Web 组件。你了解到，即使这是可行的，你也应该仔细评估是否值得这样做。
 
@@ -4986,21 +4797,14 @@ window.customElements.define('my-component', CustomElement);
 
 ## 问题
 
-1.  Web 组件的互操作性是什么意思？
-
-2.  如何在 React 应用中通过编程方式访问 Web 组件？
-
-3.  如何在 React 中处理 Web 组件的事件？
-
-4.  为什么在使用 Web 组件的 Angular 应用中需要 `CUSTOM_ELEMENTS_SCHEMA` 模块？
-
-5.  如何在 Angular 中配置 `TypeScript` 编译器以支持基于 JavaScript 的 Web 组件？
-
-6.  如何避免 Vue 在遇到 Web 组件的标签名时抛出错误？
-
-7.  为什么你想要使用 JavaScript UI 框架创建 Web 组件？
-
-8.  使用 JavaScript UI 框架构建 Web 组件可能会带来哪些缺点？
+1. Web 组件的互操作性是什么意思？
+2. 如何在 React 应用中通过编程方式访问 Web 组件？
+3. 如何在 React 中处理 Web 组件的事件？
+4. 为什么在使用 Web 组件的 Angular 应用中需要`CUSTOM_ELEMENTS_SCHEMA`模块？
+5. 如何在 Angular 中配置`TypeScript`编译器以支持基于 JavaScript 的 Web 组件？
+6. 如何避免 Vue 在遇到 Web 组件的标签名时抛出错误？
+7. 为什么你想要使用 JavaScript UI 框架创建 Web 组件？
+8. 使用 JavaScript UI 框架构建 Web 组件可能会带来哪些缺点？
 
 # 第 10 章
 
@@ -5010,19 +4814,15 @@ window.customElements.define('my-component', CustomElement);
 
 然而，你可能已经注意到，使用这些技术构建组件的某些步骤可能繁琐、重复或复杂。换句话说，创建 Web 组件的过程还有优化的空间。如果你想简化构建 Web 组件的过程，可以自己动手，也可以使用第三方工具。第一种情况可能具有挑战性，需要深入了解 JavaScript 和 DOM。第二种情况可以让你以更简单的方式创建组件，但需要你学习一种基于标准技术的新抽象。
 
-
-
-
-
-在本章中，我们将探讨几种最常用的工具，它们可以改善你的开发体验并提升工作效率。你将获得关于如何使用 Polymer 项目中的 `LitElement`、Hybrids、Slim 和 Stencil 的通用但实用的概述。
+在本章中，我们将探讨几种最常用的工具，它们可以改善你的开发体验并提升工作效率。你将获得关于如何使用 Polymer 项目中的`LitElement`、Hybrids、Slim 和 Stencil 的通用但实用的概述。
 
 ## 结构
 
-*   简化 Web Components 构建
-*   Polymer 与 LitElement
-*   Hybrids
-*   Slim
-*   Stencil
+- 简化 Web Components 构建
+- Polymer 与 LitElement
+- Hybrids
+- Slim
+- Stencil
 
 ## 目标
 
@@ -5034,23 +4834,25 @@ window.customElements.define('my-component', CustomElement);
 
 关于 Web Components 最常见的批评之一是认为它们过于底层。要正确使用 Web Components 所依赖的技术，你需要熟练掌握 DOM 及其行为。实际上，我们已经看到构建 Web Components 需要应对一些挑战。例如，以下是创建健壮且与 DOM 集成的 Web Component 时必须执行的一些底层任务：
 
-*   属性与特性的映射
-*   事件处理与触发
-*   事件监听器的创建与移除
-*   Shadow DOM 的创建与操作
-*   模板定义
+- 属性与特性的映射
+- 事件处理与触发
+- 事件监听器的创建与移除
+- Shadow DOM 的创建与操作
+- 模板定义
 
 这些只是你需要掌握的少数特性。其中一些活动需要深入了解 DOM；另一些则只是需要更多代码。
 
-你可能会考虑自行简化组件定义。例如，你可以通过扩展标准的 `HTMLElement` 类来定义自己的基类。这个类将处理 Shadow DOM 操作、属性与特性映射以及其他常见任务。这样，你的组件将扩展你的基类而非 `HTMLElement`，从而免费获得一些常见任务。
+你可能会考虑自行简化组件定义。例如，你可以通过扩展标准的`HTMLElement`类来定义自己的基类。这个类将处理 Shadow DOM 操作、属性与特性映射以及其他常见任务。这样，你的组件将扩展你的基类而非`HTMLElement`，从而免费获得一些常见任务。
 
-这正是许多旨在简化 Web Components 构建过程的库所采用的方法。在本章的剩余部分，我们将探讨一些最知名的库：`LitElement`、Hybrids、Slim 和 Stencil。我们不会深入探讨这些库，而是提供一个轻量级的概述，以便从高层次了解它们所提出的方法。我们将使用每个库重新定义你在之前章节中用原生技术构建的 cookie 提醒组件。这样，你将有机会比较每个库所提出的开发模型。
+
+
+这正是许多旨在简化 Web Components 构建过程的库所采用的方法。在本章的剩余部分，我们将探讨一些最知名的库：`LitElement`、`Hybrids`、`Slim` 和 `Stencil`。我们不会深入探讨这些库，而是提供一个轻量级的概述，以便从高层次了解它们所提出的方法。我们将使用每个库重新定义你在之前章节中用原生技术构建的 cookie 提醒组件。这样，你将有机会比较每个库所提出的开发模型。
 
 我们将采用标准方法使用每个库，以便逐步介绍它们的特性。对于每个库，我们将首先介绍创建 Web Component 的基本基础设施。然后，我们将看到如何为 UI 创建模板。之后，我们将探讨如何管理属性和特性，以及如何处理和触发事件。最后，我们将了解组件的生命周期。
 
 ### Polymer 与 LitElement
 
-**Polymer** 是一个项目和一个库的名称，由 Google 推广，旨在将 Web Components 变为现实。该项目始于 2013 年，在 Web Components 宣布后不久，但浏览器当时尚未支持它们。该项目旨在让开发者能够支持 Web Components 的原则。同名的库分多个版本发布，并提供了许多 polyfill 来支持核心技术和视觉设计。当大多数主流浏览器对 Web Components 支持不佳时，Polymer 提供了一种开发 Web Components 的方式。
+`Polymer` 是一个项目和一个库的名称，由 Google 推广，旨在将 Web Components 变为现实。该项目始于 2013 年，在 Web Components 宣布后不久，但浏览器当时尚未支持它们。该项目旨在让开发者能够支持 Web Components 的原则。同名的库分多个版本发布，并提供了许多 polyfill 来支持核心技术和视觉设计。当大多数主流浏览器对 Web Components 支持不佳时，Polymer 提供了一种开发 Web Components 的方式。
 
 2018 年 5 月，Polymer 团队宣布了该库开发中的一些重要变化。特别是，他们宣布项目的重点将转向 `LitElement` 库。该库是 Polymer 的一部分，并提供对定义 Web Component 的支持。换句话说，Polymer 项目认识到原生 Web Components 支持的时机已经成熟。
 
@@ -5062,7 +4864,7 @@ LitElement 的诞生与 `lit-html` 库密切相关。这是一个轻量级且可
 
 你可以独立于 `LitElement` 使用 `lit-html` 库。它提倡一种函数式方法来创建 HTML 模板，允许你使用紧凑的语法创建模板，如下例所示：
 
-```
+```javascript
 html`<h1>欢迎 ${name}</h1>`
 ```
 
@@ -5070,13 +4872,13 @@ html`<h1>欢迎 ${name}</h1>`
 
 它的优势在于可以定义返回 `lit-html` 模板的函数，如下例所示：
 
-```
+```javascript
 const helloTemplate = (name) => html`<h1>欢迎 ${name}</h1>`;
 ```
 
 `helloTemplate()` 函数会计算模板字面量，但当然，它不会渲染到 DOM 中。要生成模板的元素，你必须使用 `render()` 函数，如下所示：
 
-```
+```javascript
 render(helloTemplate("John"), document.body);
 ```
 
@@ -5092,7 +4894,7 @@ render(helloTemplate("John"), document.body);
 
 假设你有一个基于 Node.js 开发环境的 Web Component 项目，使用 `LitElement` 的第一步是在终端窗口中输入以下命令来安装它：
 
-```
+```bash
 npm install lit-element
 ```
 
@@ -5100,7 +4902,7 @@ npm install lit-element
 
 安装库后，你可以通过编写以下代码来实现我们的 cookie 提醒组件的基本基础设施：
 
-```
+```javascript
 import { LitElement, html, css } from 'lit-element';
 
 export default class CookieAlert extends LitElement {
@@ -5112,11 +4914,11 @@ customElements.define("cookie-alert", CookieAlert);
 
 你从库中导入了 `LitElement` 类以及 HTML 和 CSS 标签模板字面量。顺便提一下，HTML 标签模板字面量与 `lit-html` 库中的函数相同。然后，你注意到这里我们扩展了 `LitElement` 基类，而不是通常的 `HTMLElement` 类。这个类提供了库的支持，以简化组件定义，我们稍后会看到。
 
-**`LitElement` 库也支持基于装饰器的方法来定义 Web Components。然而，由于装饰器仍然不是官方支持的标准，你需要使用特定的转译器，比如经过适当配置的 TypeScript 或 Babel。在本节中，我们不会使用这种方法，但会在过程中展示一些此类语法的示例。**
+`LitElement` 库也支持基于装饰器的方法来定义 Web Components。然而，由于装饰器仍然不是官方支持的标准，你需要使用特定的转译器，比如经过适当配置的 TypeScript 或 Babel。在本节中，我们不会使用这种方法，但会在过程中展示一些此类语法的示例。
 
 通过使用基于装饰器的语法，之前的类定义将如下所示：
 
-```
+```javascript
 import { LitElement, html, css, customElement } from 'lit-element';
 
 @customElement("cookie-alert")
@@ -5129,13 +4931,9 @@ export default class CookieAlert extends LitElement {
 
 #### 模板与 UI
 
-
-
-
-
 在搭建好定义组件的基本基础设施后，让我们用以下代码实现 cookie 提示组件的 UI：
 
-```
+```javascript
 import { LitElement, html, css } from 'lit-element';
 
 export default class CookieAlert extends LitElement {
@@ -5219,9 +5017,9 @@ customElements.define("cookie-alert", CookieAlert);
 
 #### 属性和特性
 
-下一步是添加 message 属性，并将其与同名的特性同步。你可以通过向 `CookieAlert` 类添加以下代码轻松实现：
+下一步是添加 `message` 属性，并将其与同名的特性同步。你可以通过向 `CookieAlert` 类添加以下代码轻松实现：
 
-```
+```javascript
 import { LitElement, html, css } from 'lit-element';
 
 export default class CookieAlert extends LitElement {
@@ -5267,7 +5065,7 @@ reflect: true
 
 基于装饰器的语法允许你拥有紧凑的属性定义，如下面的代码片段所示：
 
-```
+```javascript
 import { LitElement, html, css } from 'lit-element';
 
 @customElement("cookie-alert")
@@ -5297,7 +5095,7 @@ message = "本网站使用 cookie 以确保您获得最佳体验";
 
 为了完成 cookie 提示组件的实现，我们需要处理并触发事件。为此，我们对 `render()` 方法中的 UI 模板做了一些小改动：
 
-```
+```javascript
 import { LitElement, html, css } from 'lit-element';
 
 export default class CookieAlert extends LitElement {
@@ -5331,7 +5129,7 @@ return html`
 
 `accept()` 方法与我们在原始组件中使用的监听器具有相同的实现：
 
-```
+```javascript
 import { LitElement, html, css } from 'lit-element';
 
 export default class CookieAlert extends LitElement {
@@ -5365,7 +5163,7 @@ acceptedCookieExpiration: 365}
 
 为了完成组件实现，我们必须添加管理接受 cookie 的代码：
 
-```
+```javascript
 import { LitElement, html, css } from 'lit-element';
 
 export default class CookieAlert extends LitElement {
@@ -5401,13 +5199,15 @@ this.style.visibility = "hidden";
 
 要在基于 Node 的项目中使用 `Hybrid`，请在终端窗口中输入以下命令进行安装：
 
-`npm install hybrids`
+```bash
+npm install hybrids
+```
 
 #### 基本基础设施
 
 让我们通过重新实现 cookie 提示组件来探索 `Hybrid` 库的基本功能。以下代码展示了定义 Web 组件的基本元素：
 
-```
+```javascript
 import { html, define } from 'hybrids';
 
 export const CookieAlert = {
@@ -5421,12 +5221,11 @@ define("cookie-alert", CookieAlert);
 
 #### 模板和 UI
 
+要定义组件的用户界面，你需要在 `CookieAlert` 配置对象中添加一个 `render()` 方法。该方法返回一个通过使用 `html()` 函数标记模板字面量而获得的带标签的模板字面量，如下例所示：
 
 
 
-要定义组件的用户界面，你需要在`CookieAlert`配置对象中添加一个`render()`方法。该方法返回一个通过使用`html()`函数标记模板字面量而获得的带标签的模板字面量，如下例所示：
-
-```
+```javascript
 import { html, define } from 'hybrids';
 
 export const CookieAlert = {
@@ -5502,11 +5301,11 @@ define("cookie-alert", CookieAlert);
 
 Hybrids 使用的 HTML 模板引擎类似于`lit-html`库的`html()`函数。然而，即使语法非常相似，其实现方式却不同。
 
-#### 属性和特性
+### 属性和特性
 
 要向组件添加属性和特性，你需要将其定义附加到`CookieAlert`对象上。最简单的方式是，你可以像下面这样向 cookie alert 组件添加`message`属性：
 
-```
+```javascript
 import { html, define } from 'hybrids';
 
 export const CookieAlert = {
@@ -5544,7 +5343,7 @@ define("cookie-alert", CookieAlert);
 
 通常，Hybrids 库允许你提供一个属性描述符来定义属性。属性描述符是一个普通对象，其一般形式如下所示：
 
-```
+```javascript
 const MyElement = {
 
 propertyName: {
@@ -5576,7 +5375,7 @@ observe: (host, value, lastValue) => {…},
 
 Hybrids 为你提供了一些内置的属性工厂，即返回预定义属性配置的函数。`property()`函数就是这些工厂之一。它允许你按以下方式定义属性：
 
-```
+```javascript
 import { html, define } from 'hybrids';
 
 export const CookieAlert = {
@@ -5592,15 +5391,15 @@ define("cookie-alert", CookieAlert);
 
 `property()`工厂返回`message`属性的标准配置，并带有默认字符串值。它还将该属性与同名的特性（attribute）连接起来。
 
-**当组件被添加到 DOM 时，特性的值仅被赋值给对应的属性一次。这意味着特性应仅用于在 HTML 标记中设置静态值。对特性的更改不会自动反映到对应的属性中。**
+当组件被添加到 DOM 时，特性的值仅被赋值给对应的属性一次。这意味着特性应仅用于在 HTML 标记中设置静态值。对特性的更改不会自动反映到对应的属性中。
 
-我们上面使用的方法，即简单地将字符串赋值给`message`属性，只是使用`property()`工厂的一种快捷方式。在 Hybrid 术语中，这种快捷方式被称为**翻译**。
+我们上面使用的方法，即简单地将字符串赋值给`message`属性，只是使用`property()`工厂的一种快捷方式。在 Hybrid 术语中，这种快捷方式被称为翻译。
 
 总结一下，你有多种方式来定义属性。每种方式取决于你对属性定义所需的灵活性程度。
 
 为了完成对属性和特性的概述，你需要知道 Web 组件配置对象中的每一项都是独立的。这意味着没有内部状态，对属性的任何引用都必须显式。这就是为什么上面 cookie alert 定义的`render()`方法将`{message}`对象作为参数的原因：
 
-```
+```javascript
 render: ({message}) => html‘
 
 <style>
@@ -5626,11 +5425,11 @@ render: ({message}) => html‘
 
 由于你需要在 UI 模板中使用`message`属性，你必须显式地传递它。更一般地说，你必须传递一个包含所有需要在`render()`方法中使用的属性的对象。
 
-#### 事件
+### 事件
 
 要在 Web 组件的模板中添加事件监听器，你可以简单地使用在标准 HTML 元素上使用的`onevent`语法。例如，要处理 cookie alert 组件两个按钮的点击事件，你可以像下面这样做：
 
-```
+```html
 <div class="container footer">
 
 <slot id="message" name="message">${message}</slot>&nbsp;
@@ -5662,7 +5461,7 @@ Accept
 
 你为第一个按钮的`onclick`属性分配了一个箭头函数，为第二个按钮分配了`accept()`函数。`accept()`函数是在当前模块中定义的一个普通函数，如下所示：
 
-```
+```javascript
 function accept(host) {
 
 host.style.visibility = "hidden";
@@ -5684,13 +5483,13 @@ acceptedCookieExpiration: 365}
 
 这里唯一需要注意的主要事情是`host`参数。如前所述，它代表组件的当前实例。
 
-#### 生命周期
+### 生命周期
 
 为了完成我们的 cookie alert 组件的实现，我们需要在组件被添加到 DOM 时检查是否设置了接受 cookie。为了实现这一点，我们需要重新安排`message`属性定义，以便在组件被添加到 DOM 时进行拦截。实际上，Hybrids 库没有针对组件生命周期的全局事件。这些事件是基于每个属性的。
 
 因此我们重新定义`message`属性定义如下：
 
-```
+```javascript
 export const CookieAlert = {
 
 message: {
@@ -5716,9 +5515,7 @@ render: ({message}) => html‘
 
 `checkCookie()`函数定义如下：
 
-
-
-```
+```javascript
 function checkCookie(host) {
 const cookiesAccepted = getCookie("cookiesAccepted")
 if (cookiesAccepted === "y") {
@@ -5727,11 +5524,11 @@ host.style.visibility = "hidden";
 }
 ```
 
-再次注意，传入的 `host` 参数代表当前组件实例。
+再次注意，传入的`host`参数代表当前组件实例。
 
-如果你想在组件从 DOM 中移除时执行某些代码，`connect()` 方法必须返回要执行的函数。这样，`connect()` 方法注册了一个函数，该函数将在 `disconnectedCallback()` 反应运行时执行。
+如果你想在组件从 DOM 中移除时执行某些代码，`connect()`方法必须返回要执行的函数。这样，`connect()`方法注册了一个函数，该函数将在`disconnectedCallback()`反应运行时执行。
 
-### Slim 库
+## Slim 库
 
 Slim 库旨在通过减少你需要编写的代码量来简化 Web Components 的定义。它基于类的方式，但提供了略有不同的模型和生命周期事件。
 
@@ -5739,11 +5536,11 @@ Slim 库旨在通过减少你需要编写的代码量来简化 Web Components �
 
 `npm install slim-js`
 
-#### 基本架构
+### 基本架构
 
 与其他库一样，让我们从组件的基本定义开始实现 cookie 提醒组件：
 
-```
+```javascript
 import {Slim} from 'slim-js';
 
 Slim.tag(
@@ -5754,17 +5551,17 @@ get useShadow() { return true }
 });
 ```
 
-从 `slim-js` 模块导入的 `Slim` 对象允许你完成创建 Web Component 所需的一切。它的 `tag()` 方法接受三个参数：
+从`slim-js`模块导入的`Slim`对象允许你完成创建 Web Component 所需的一切。它的`tag()`方法接受三个参数：
 
-* 与组件关联的标签名称。
-* 定义组件 UI 模板的标记。
-* 定义组件逻辑的类。
+- 与组件关联的标签名称。
+- 定义组件 UI 模板的标记。
+- 定义组件逻辑的类。
 
-如你所见，定义我们组件的 `CookieAlert` 类继承了该类。在这个基本示例中，你可能注意到我们添加了 `useShadow()` 获取器，它返回 true 值。这个获取器使 Slim 能够为组件使用 Shadow DOM。实际上，默认情况下，基于 Slim 的组件不使用 Shadow DOM。
+如你所见，定义我们组件的`CookieAlert`类继承了该类。在这个基本示例中，你可能注意到我们添加了`useShadow()`获取器，它返回 true 值。这个获取器使 Slim 能够为组件使用 Shadow DOM。实际上，默认情况下，基于 Slim 的组件不使用 Shadow DOM。
 
 该库还提供了一种基于装饰器的语法。在这种情况下，cookie 提醒组件基本架构的等效代码如下：
 
-```
+```javascript
 import {Slim} from 'slim-js';
 import {tag, template} from 'slim-js/Decorators';
 
@@ -5777,11 +5574,11 @@ class CookieAlert extends Slim {
 
 非常简单且紧凑！
 
-#### 模板与 UI
+### 模板与 UI
 
-使用 `Slim` 创建组件的 UI 只需指定表示你想要使用的模板的字符串。例如，以下代码展示了如何为 cookie 提醒组件添加基本的 UI 标记：
+使用`Slim`创建组件的 UI 只需指定表示你想要使用的模板的字符串。例如，以下代码展示了如何为 cookie 提醒组件添加基本的 UI 标记：
 
-```
+```javascript
 import {Slim} from 'slim-js';
 
 Slim.tag(
@@ -5822,11 +5619,11 @@ get useShadow() { return true }
 
 稍后我们会看到，这个模板允许你指定占位符。
 
-#### 属性与特性
+### 属性与特性
 
-在 `Slim` 中，组件属性就是类定义中的属性。如果你想初始化它，需要在构造函数中进行。以下代码展示了如何为 cookie 提醒组件实现 `message` 属性：
+在`Slim`中，组件属性就是类定义中的属性。如果你想初始化它，需要在构造函数中进行。以下代码展示了如何为 cookie 提醒组件实现`message`属性：
 
-```
+```javascript
 import {Slim} from 'slim-js';
 
 Slim.tag(
@@ -5849,11 +5646,11 @@ get useShadow() { return true }
 });
 ```
 
-你可以看到，属性在构造函数中定义并初始化。注意构造函数中也调用了 `super()`。一旦定义了 `message` 属性，你就可以在 UI 模板中通过双花括号来使用它。
+你可以看到，属性在构造函数中定义并初始化。注意构造函数中也调用了`super()`。一旦定义了`message`属性，你就可以在 UI 模板中通过双花括号来使用它。
 
-然而，在这种情况下，`message` 属性并未绑定到 `message` 特性。要将属性映射到特性，你需要使用基于装饰器的语法，如下例所示：
+然而，在这种情况下，`message`属性并未绑定到`message`特性。要将属性映射到特性，你需要使用基于装饰器的语法，如下例所示：
 
-```
+```javascript
 import {Slim} from 'slim-js';
 import {tag, template, attribute} from 'slim-js/Decorators';
 
@@ -5866,15 +5663,17 @@ message
 }
 ```
 
-在这种情况下，你使用了与公共 `message` 属性关联的 `@attribute` 装饰器。
+在这种情况下，你使用了与公共`message`属性关联的`@attribute`装饰器。
 
-**请注意，在撰写本文时，使用装饰器和属性定义的 JavaScript 语法尚未正式成为受支持的标准。要使用它们，你需要使用特定的转译器，如 TypeScript 或经过适当配置的 Babel。**
+请注意，在撰写本文时，使用装饰器和属性定义的 JavaScript 语法尚未正式成为受支持的标准。要使用它们，你需要使用特定的转译器，如 TypeScript 或经过适当配置的 Babel。
 
-#### 事件
+### 事件
 
 处理事件很容易。你可以将事件名称作为属性添加到模板中的 HTML 元素，并将你定义为类方法的事件监听器与之关联。为了更好地解释，请看以下代码：
 
-```
+
+
+```javascript
 import {Slim} from 'slim-js';
 
 Slim.tag(
@@ -5909,15 +5708,15 @@ acceptedCookieExpiration: 365}
 });
 ```
 
-这里，关闭和接受按钮具有 `click` 属性。每个属性都分配了一个字符串：`hide` 和 `accept`。这些是你附加到 `CookieAlert` 类的方法名称。这些方法是 click 事件的事件监听器。
+这里，关闭和接受按钮具有 `click` 属性。每个属性都分配了一个字符串：`hide` 和 `accept`。这些是你附加到 `CookieAlert` 类的方法名称。这些方法是 `click` 事件的事件监听器。
 
 还要注意，生成自定义事件的机制保持不变。
 
-#### 生命周期
+### 生命周期
 
 为了完成我们的实现，我们需要在显示提醒之前检查用户是否已接受 cookie 政策。我们知道，这意味着我们需要检查接受 cookie 是否已设置。为了确保在渲染消息之前进行检查，我们必须在 `BeforeCreated` 生命周期事件中执行此操作，如下所示：
 
-```
+```javascript
 import {Slim} from 'slim-js';
 
 Slim.tag(
@@ -5939,17 +5738,13 @@ this.message = "This website uses cookies to ensure you get the best experience"
 
 当 `BeforeCreated` 事件发生时，会调用 `onBeforeCreated()` 方法。`Slim` 为其组件生成几个生命周期事件。要管理它们，你应该实现以下方法：
 
-* `onBeforeCreated()`：此方法在组件创建之前执行。
+- `onBeforeCreated()`：此方法在组件创建之前执行。
+- `onCreated()`：此方法在组件创建后执行。
+- `onAdded()`：此方法在组件添加到 DOM 时运行。
+- `onRender()`：此方法在 UI 渲染或更新时执行。
+- `onRemoved()`：此方法在组件从 DOM 中移除时运行。
 
-
-
-
-*   `onCreated()`：此方法在组件创建后执行。
-*   `onAdded()`：此方法在组件添加到 DOM 时运行。
-*   `onRender()`：此方法在 UI 渲染或更新时执行。
-*   `onRemoved()`：此方法在组件从 DOM 中移除时运行。
-
-### Stencil
+## Stencil
 
 Stencil 是一种提供不同方式来构建 Web 组件的工具。我们在本章中探讨的库为你提供了一种抽象，可以简化或丰富 Web 组件的定义。然而，你构建的组件依赖于库本身：库的代码必须包含在最终生成的组件中。
 
@@ -5965,11 +5760,11 @@ Stencil 是一种提供不同方式来构建 Web 组件的工具。我们在本�
 
 项目结构创建完成后，你会看到几个文件夹和多个文件。我们不会分析整个结构，而是专注于类定义和 CSS 样式。请参考 Stencil 官方文档以获取更多详细信息。
 
-#### 基本基础设施
+### 基本基础设施
 
 Stencil 组件的基本定义如下所示：
 
-```
+```typescript
 import { Component, h } from '@stencil/core';
 
 @Component({
@@ -5986,9 +5781,9 @@ export class CookieAlert {
 
 这几行代码突出了 Stencil 的一些关键特性：
 
-*   它使用 TypeScript 而不是纯 JavaScript
-*   它使用 JSX
-*   它使用装饰器
+- 它使用 TypeScript 而不是纯 JavaScript。
+- 它使用 JSX。
+- 它使用装饰器。
 
 `CookieAlert` 类的定义使用了 `@Component` 装饰器进行注解。这个装饰器将该类标记为 Web 组件定义，类似于 Angular 对其组件的处理方式。
 
@@ -5998,11 +5793,11 @@ export class CookieAlert {
 
 在模块顶部导入的 `h()` 函数是必需的，它允许 Stencil 将 JSX 转换为虚拟 DOM 元素。
 
-#### 模板和 UI
+### 模板和 UI
 
 至此，你已经知道如何为组件构建 UI：将标记定义为 `render()` 方法返回的 JSX 表达式，如下所示：
 
-```
+```typescript
 import { Component, h } from '@stencil/core';
 
 @Component({
@@ -6024,7 +5819,7 @@ export class CookieAlert {
 
 由于组件定义引用了 `cookie-alert.css` 文件，请创建该文件并将常规 CSS 代码放入其中：
 
-```
+```css
 .container {
   color: rgb(255, 255, 255);
   background-color: rgb(35, 122, 252);
@@ -6052,11 +5847,11 @@ export class CookieAlert {
 
 通过这些更改，你已经准备好了 cookie 警告组件的基本结构。
 
-#### 属性和特性
+### 属性和特性
 
 要向 cookie 警告组件添加 `message` 属性，让我们修改之前的代码如下：
 
-```
+```typescript
 import { Component, Prop, h } from '@stencil/core';
 
 @Component({
@@ -6081,7 +5876,7 @@ export class CookieAlert {
 
 我们为 `message` 属性使用了 `@Prop` 装饰器并对其进行了初始化。然后通过 `this.message` 表达式在 JSX 标记中使用了该属性。
 
-**使用** `@Prop` **装饰器定义的属性默认情况下是不可变的。这意味着它的值无法从组件逻辑内部更新。如果你想覆盖此行为，需要为该装饰器设置 mutable 选项** `(@Prop({mutable: true})).`
+使用 `@Prop` 装饰器定义的属性默认情况下是不可变的。这意味着它的值无法从组件逻辑内部更新。如果你想覆盖此行为，需要为该装饰器设置 `mutable` 选项 `@Prop({mutable: true})`。
 
 到目前为止创建的 `message` 属性与同名的特性相关联。但是，对属性的更改不会映射到特性。如果你需要这种行为，需要启用反射，如下代码所示：
 
@@ -6089,11 +5884,11 @@ export class CookieAlert {
 
 这样，对属性的更改将与相应的特性同步。
 
-#### 事件
+### 事件
 
 让我们开始了解如何通过处理关闭按钮上的点击事件来管理和生成事件。这是所需的代码：
 
-```
+```typescript
 import { Component, Element, Prop, h } from '@stencil/core';
 
 @Component({
@@ -6126,7 +5921,7 @@ export class CookieAlert {
 
 要处理接受按钮上的点击事件，我们可以将上述代码更改如下：
 
-```
+```typescript
 import { Component, Element, Prop, Event, EventEmitter, h } from '@stencil/core';
 
 @Component({
@@ -6144,91 +5939,75 @@ export class CookieAlert {
       <slot name="message">{this.message}</slot>&nbsp;
       <slot name="reference"></slot>
       <button id="closeButton"
-```
+        class="button"
+        onClick={()=>this.element.style.visibility = "hidden"}>
+        Close
+      </button>
+      <button id= "acceptButton"
+        class="button"
+        onClick={()=>this.accept()}>
+        Accept
+      </button>
+    </div>;
+  }
 
-
-
-
-
-```
-class="button"
-onClick={()=>this.element.style.visibility = "hidden"}>
-Close
-</button>
-<button id= "acceptButton"
-class="button"
-onClick={()=>this.accept()}>
-Accept
-</button>
-</div>;
-}
-accept() {
-this.element.style.visibility = "hidden";
-setCookie("cookiesAccepted", "y", 365);
-this.accepted.emit({
-detail:{
-acceptedCookieName: "cookiesAccepted",
-acceptedCookieExpiration: 365}
-});
+  accept() {
+    this.element.style.visibility = "hidden";
+    setCookie("cookiesAccepted", "y", 365);
+    this.accepted.emit({
+      detail:{
+        acceptedCookieName: "cookiesAccepted",
+        acceptedCookieExpiration: 365
+      }
+    });
+  }
 }
 ```
 
-在这个例子中，我们定义了 `accept()` 方法，并在 `onClick` 监听器中使用了它。有趣的是，我们如何生成 accepted 事件。我们使用了 `@Event` 装饰器来声明 accepted 事件发射器，并通过其 `emit()` 方法创建它。
+在这个例子中，我们定义了 `accept()` 方法，并在 `onClick` 监听器中使用了它。有趣的是，我们如何生成 `accepted` 事件。我们使用了 `@Event` 装饰器来声明 `accepted` 事件发射器，并通过其 `emit()` 方法创建它。
 
 `Stencil` 还提供了 `@Listen` 装饰器，允许你监听组件上的事件。
 
-#### 生命周期
+### 生命周期
 
 和往常一样，构建 cookie 警告组件的最后一步是检查用户是否接受了 cookie 策略。我们可以通过添加 `connectedCallback()` 方法来实现，就像我们在纯 JavaScript 版本的组件中所做的那样。
 
 `connectedCallback()` 方法如下所示：
 
-```
+```javascript
 connectedCallback() {
-const cookiesAccepted = getCookie("cookiesAccepted")
-if (cookiesAccepted === "y") {
-this.element.style.visibility = "hidden";
-}
+  const cookiesAccepted = getCookie("cookiesAccepted")
+  if (cookiesAccepted === "y") {
+    this.element.style.visibility = "hidden";
+  }
 }
 ```
 
 除了标准的 `connectedCallback()` 和 `disconnectedCallback()` 反应之外，`Stencil` 还提供了其他几个生命周期方法：
 
-*   `connectedCallback()`：当组件被附加到 DOM 时调用。
-
-*   `componentWillLoad()`：在组件第一次被附加到 DOM 后立即调用一次。
-
-*   `componentDidLoad()`：在组件加载完成且第一次 `render()` 运行后立即调用一次。
-
-*   `componentWillRender()`：在每次 `render()` 执行之前调用。
-
-*   `componentDidRender()`：在每次 `render()` 执行之后调用。
-
-*   `componentWillUpdate()`：当组件即将更新时调用。
-
-*   `componentDidUpdate()`：在组件更新之后调用。
-
-*   `disconnectedCallback()`：当组件从 DOM 中移除时调用。
+- `connectedCallback()`：当组件被附加到 DOM 时调用。
+- `componentWillLoad()`：在组件第一次被附加到 DOM 后立即调用一次。
+- `componentDidLoad()`：在组件加载完成且第一次 `render()` 运行后立即调用一次。
+- `componentWillRender()`：在每次 `render()` 执行之前调用。
+- `componentDidRender()`：在每次 `render()` 执行之后调用。
+- `componentWillUpdate()`：当组件即将更新时调用。
+- `componentDidUpdate()`：在组件更新之后调用。
+- `disconnectedCallback()`：当组件从 DOM 中移除时调用。
 
 ## 结论
 
+
+
 本章通过概述 Web Components 周围不断发展的生态系统来结束本书。你了解到 Web Component 技术的某些特性可能被视为底层特性，需要 DOM 知识和重复代码。我们在本章中探讨的库旨在简化开发体验。
 
-你探索了来自 `Polymer` 项目的 `LitElement`，并使用了其依赖于 `LitElement` 基类的开发方法。你遇到了 `Hybrids`，它提出了一种基于普通对象和纯函数的函数式方法。此外，你还应用了 `Slim` 库的极简类模型。最后，你使用了 `Stencil`，其语法介于 Angular 和 React 之间，用于生成纯 JavaScript 的 Web Components。
+你探索了来自`Polymer`项目的`LitElement`，并使用了其依赖于`LitElement`基类的开发方法。你遇到了`Hybrids`，它提出了一种基于普通对象和纯函数的函数式方法。此外，你还应用了`Slim`库的极简类模型。最后，你使用了`Stencil`，其语法介于 Angular 和 React 之间，用于生成纯 JavaScript 的 Web Components。
 
 ## 问题
 
-1.  为什么应该使用库来创建 Web Components？
-
-2.  `Polymer` 项目与 `LitElement` 库之间有什么关系？
-
-3.  `lit-html` 库的目的是什么？
-
-4.  `LitElement` 库提供的构建 Web Components 的通用方法是什么？
-
-5.  `Hybrids` 库的总体理念是什么？
-
-6.  `Stencil` 与本章分析的其他库之间的主要区别是什么？
-
-7.  `Stencil` 提出的语法受什么启发？
-
+1. 为什么应该使用库来创建 Web Components？
+2. `Polymer`项目与`LitElement`库之间有什么关系？
+3. `lit-html`库的目的是什么？
+4. `LitElement`库提供的构建 Web Components 的通用方法是什么？
+5. `Hybrids`库的总体理念是什么？
+6. `Stencil`与本章分析的其他库之间的主要区别是什么？
+7. `Stencil`提出的语法受什么启发？

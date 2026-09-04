@@ -1,6 +1,5 @@
-# 运算符 - 分组
 
-# 运算符分组
+# 运算符 - 分组
 
 ## 缓冲
 
@@ -10,7 +9,7 @@
 buffer([breakObservable]) 
 ```
 
-Buffer 本身意味着我们等待直到`breakObservable`发生才发出任何值。一个例子是以下内容：
+`Buffer`本身意味着我们等待直到`breakObservable`发生才发出任何值。一个例子是以下内容：
 
 ```
 let breakWhen$ = Rx.Observable.timer(1000);
@@ -27,11 +26,10 @@ stream$.subscribe((data) => console.log( 'values',data ));
 
 **自动完成**
 
-处理`buffer()`运算符时最明显的情况是`自动完成`。但是`自动完成`是如何工作的呢？让我们逐步看一下
+处理`buffer()`运算符时最明显的情况是`自动完成`。但是`自动完成`是如何工作的呢？让我们逐步看一下：
 
-+   用户输入按键
-
-+   基于这些按键击键进行搜索。然而，重要的是搜索本身是在您输入时进行的，无论是因为您输入了 x 个字符还是更常见的方法是让您完成输入并进行搜索，您可能正在输入时进行编辑。因此，让我们迈出这样一个解决方案的第一步：
++ 用户输入按键
++ 基于这些按键击键进行搜索。然而，重要的是搜索本身是在您输入时进行的，无论是因为您输入了 x 个字符还是更常见的方法是让您完成输入并进行搜索，您可能正在输入时进行编辑。因此，让我们迈出这样一个解决方案的第一步：
 
 ```
 let input = document.getElementById('example');
@@ -47,7 +45,7 @@ let stream$ = input$
 stream$.subscribe((data) => console.log( 'values',data )); 
 ```
 
-我们捕获`keyup`事件。我们还使用了一个`debounce()`运算符，它基本上表示; 一旦您停止输入 x 毫秒，我将发出值。然而，这个解决方案只是迈出的第一步，因为它报告了实际键入的确切键。一个更好的解决方案是捕获输入元素的实际内容，并执行一个 ajax 调用，所以让我们看一个更精细的解决方案：
+我们捕获`keyup`事件。我们还使用了一个`debounce()`运算符，它基本上表示；一旦您停止输入 x 毫秒，我将发出值。然而，这个解决方案只是迈出的第一步，因为它报告了实际键入的确切键。一个更好的解决方案是捕获输入元素的实际内容，并执行一个 ajax 调用，所以让我们看一个更精细的解决方案：
 
 ```
 let input = document.getElementById('example');
@@ -104,13 +102,13 @@ btnBuffered$.subscribe((data) => console.log( 'values',data ));
 
 ## bufferTime
 
-`bufferTime()`的签名是
+`bufferTime()`的签名是：
 
 ```
 bufferTime([ms]) 
 ```
 
-这个想法是记录在那个时间片段内发生的一切并输出所有值。下面是在 1 秒时间片段内记录输入上的所有活动的示例。
+这个想法是记录在那个时间片段内发生的一切并输出所有值。下面是在 1 秒时间片段内记录输入上的所有活动的示例：
 
 ```
 let input = document.getElementById('example');

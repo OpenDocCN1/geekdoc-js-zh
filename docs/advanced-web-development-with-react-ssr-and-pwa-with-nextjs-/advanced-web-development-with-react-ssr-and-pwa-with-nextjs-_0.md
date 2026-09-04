@@ -1,16 +1,17 @@
-# React 高级Web开发：使用React高级概念的Next.js SSR和PWA
 
-# 谨以此书献给
+# React 高级 Web 开发：使用 React 高级概念的 Next.js SSR 和 PWA
 
-*我的家人与朋友*
+## 谨以此书献给
 
-*我的妈妈、爸爸、妹妹以及亲密的朋友们，他们始终相信我。*
+我的家人与朋友
 
-# 关于作者
+我的妈妈、爸爸、妹妹以及亲密的朋友们，他们始终相信我。
+
+## 关于作者
 
 **Mehul Mohan** 是一位企业家、开发者和安全研究员。目前，他在 BITS Pilani 攻读计算机科学学士学位。他是 WWDC'19 学者，并运营着 codedamn——一个供人们学习编程的平台。你经常能在他的 YouTube 频道 codedamn 上看到他制作编程教程，该频道拥有超过 10 万订阅者。他曾因作为安全研究员的贡献而受到 Google、Microsoft、Sony 等公司的表彰。
 
-# 关于审校者
+## 关于审校者
 
 一位自我驱动、富有魅力的程序员，目前在美国 Verizon 担任技术分析师，专注于前端编程。参与了将 Verizon 网站页面从 Angular 迁移到 React Js 的工作。拥有印度 Mody 科技大学计算机科学学位。
 
@@ -20,7 +21,7 @@
 
 还曾在 HCL 和 C-DOT 实习。喜欢在线贡献开源项目。空闲时间喜欢做自由职业项目。爱好：探索全球新地方、结识新朋友、阅读关于太空的内容。
 
-# 致谢
+## 致谢
 
 我想感谢一些人在我撰写本书期间给予的持续支持。首先，我要感谢我的妈妈——Ritu Mohan 女士和我的爸爸——Vinay Kumar Mohan 先生，无论何时何地，他们总是在我需要的时候陪伴在我身边。
 
@@ -28,7 +29,7 @@
 
 最后，我要感谢 BPB Publications 的 Nrip Jain 先生，感谢他给我这个机会为他们撰写我的第一本书。
 
-# 前言
+## 前言
 
 随着 Web 在过去 5-6 年间的飞速发展，基于市场上已有的最佳实践进行构建，而不是从头开始，是理所当然的选择。React 就是这样一个工具，用于构建高度响应和可扩展的 Web 应用，它包含了行业最佳实践，并被像 Facebook 这样的互联网前端所使用。因此，开发者提升自己的 Web 开发技能，将 React 纳入自己的技能库变得极为重要。
 
@@ -42,7 +43,7 @@
 
 **第 3 章** 将介绍在 React 中创建组件的两种方式，并讨论 React 对组件采用的现代方法——函数式方式。我们还将在此章节中使用 hooks，并探讨为什么它们比其对应物——类——更有意义。
 
-**第 4 章** 介绍 React 中的状态管理。我们将讨论使用 React 管理状态的可能选项。我们将了解使用 Redux 管理状态，以及使用最新的 hooks——useContext 和 useReducer 来模拟 Redux 存储。
+**第 4 章** 介绍 React 中的状态管理。我们将讨论使用 React 管理状态的可能选项。我们将了解使用 Redux 管理状态，以及使用最新的 hooks——`useContext` 和 `useReducer` 来模拟 Redux 存储。
 
 **第 5 章** 介绍 React 中的服务端渲染，我们将了解什么是 SSR 以及它是如何工作的。我们将在本章中从头开始实现 SSR，并讨论其优缺点。
 
@@ -54,23 +55,19 @@
 
 **第 9 章** 本章涵盖前沿的 React 特性以及一些关于 React 底层工作原理的信息。
 
-# 下载代码
+## 下载代码
 
-捆绑包和彩色图片：
+### 捆绑包和彩色图片
 
-
-
-
-
-请点击链接下载本书的 ***代码包*** 和 **彩色图片**：
+请点击链接下载本书的代码包和彩色图片：
 
 # [`rebrand.ly/5eino1r`](https://rebrand.ly/5eino1r)
 
-# 勘误
+## 勘误
 
 在 BPB Publications，我们对自己的工作深感自豪，并遵循最佳实践确保内容的准确性，为读者提供沉浸式的阅读体验。我们的读者如同镜子，我们借助他们的反馈来反思并改进出版过程中可能出现的任何人为错误。为了保持质量，并帮助我们联系到可能因任何意外错误而遇到困难的读者，请通过以下邮箱联系我们：
 
-**errata@bpbonline.com**
+`errata@bpbonline.com`
 
 BPB Publications 大家庭非常感谢您的支持、建议和反馈。
 
@@ -82,27 +79,26 @@ React 就是生态系统中的一员。React 自称是“用于构建用户界�
 
 我们将快速浏览 React 基础知识，然后进入中高级主题，这些主题将真正让你领略 React 的精髓，并最终帮助你开始使用 React 编写可用于生产环境的应用程序。
 
-简单来说，React 是一个**用户界面**（**UI**）库。我们来分解一下：
+简单来说，React 是一个用户界面（UI）库。我们来分解一下：
 
-1.  React 本身说它是一个库，这意味着它不会试图将所有东西都打包在一起。相反，你可以选择项目中需要的功能并加以实现。
+1. React 本身说它是一个库，这意味着它不会试图将所有东西都打包在一起。相反，你可以选择项目中需要的功能并加以实现。
+2. React 说它是一个 UI 库，用于构建用户可见的界面。这意味着什么？简单来说，就是创建和维护用户在屏幕上看到的内容。
 
-2.  React 说它是一个 UI 库，用于构建用户可见的界面。这意味着什么？简单来说，就是创建和维护用户在屏幕上看到的内容。
+## 结构
 
-### 结构
+- 引言
+- 理解 React
+- 对 React 作为 UI 库工作原理的基本理解
+- 声明式编程与命令式编程
+- 后续 React 主题的速查表
 
-*   引言
-*   理解 React
-*   对 React 作为 UI 库工作原理的基本理解
-*   声明式编程与命令式编程
-*   后续 React 主题的速查表
-
-### 目标
+## 目标
 
 在本入门章节中，我们将了解 React 究竟做了什么，以及为什么值得关注。我们将从表面上看它如何作为 UI 库工作，以及 React 的声明式方法在创建更好的 UI 系统方面有多么强大。最后，我们将开始 React 编程，但本章结尾会提供一些笔记，这些笔记作为 JavaScript 的复习资料可能会很方便。
 
 ## React 基于组件
 
-React 使用了*组件*。其理念很简单——React 说，与其把所有代码都写在同一处（就像我们编写简单 HTML 页面时通常做的那样），不如将页面的不同（通常是独立的）部分拆分成不同的组件。这大大提高了代码的可维护性，并允许开发者拥有更快、更干净的代码库。我们将有专门的章节来讲解组件的使用，因为它是 React 的核心。
+React 使用了组件。其理念很简单——React 说，与其把所有代码都写在同一处（就像我们编写简单 HTML 页面时通常做的那样），不如将页面的不同（通常是独立的）部分拆分成不同的组件。这大大提高了代码的可维护性，并允许开发者拥有更快、更干净的代码库。我们将有专门的章节来讲解组件的使用，因为它是 React 的核心。
 
 ## React 是声明式的
 
@@ -110,8 +106,8 @@ React 使用了*组件*。其理念很简单——React 说，与其把所有代
 
 当你编写代码时，你可以指定：
 
-1.  你想做什么？
-2.  你想怎么做？
+1. 你想做什么？
+2. 你想怎么做？
 
 如果你同时指定了这两者，那么你就在使用命令式编程实践。如果你只指定了你想做什么，那么你就在使用声明式编程方式。这里有一个简单的例子。
 
@@ -119,11 +115,10 @@ React 使用了*组件*。其理念很简单——React 说，与其把所有代
 
 声明式编程有其优缺点，但优点几乎总是大于缺点：
 
-1.  声明式代码可以利用高度优化的算法。由于“如何做”对最终用户是抽象的，声明式代码下的命令式模型可以使用非常复杂的代码来提供显著的性能提升，同时为用户提供简单的声明式方式来使用相同的功能。
+1. 声明式代码可以利用高度优化的算法。由于“如何做”对最终用户是抽象的，声明式代码下的命令式模型可以使用非常复杂的代码来提供显著的性能提升，同时为用户提供简单的声明式方式来使用相同的功能。
+2. 声明式编程带来了其他好处，如代码可扩展性、更少的错误和更易理解的代码。
 
-2.  声明式编程带来了其他好处，如代码可扩展性、更少的错误和更易理解的代码。
-
-回到 React，它是**声明式**的。这意味着你只需告诉 React“什么”你想做，而不是“如何”做。React 在底层以非常优化的方式为你管理一切。
+回到 React，它是声明式的。这意味着你只需告诉 React“什么”你想做，而不是“如何”做。React 在底层以非常优化的方式为你管理一切。
 
 我们将在最后一章详细讨论 React 虚拟 DOM、协调以及其他可选的高级功能在底层是如何工作的。
 
@@ -135,14 +130,17 @@ React 使用了*组件*。其理念很简单——React 说，与其把所有代
 
 对于很多人来说，`this` 在 JavaScript 中出奇地复杂。请记住，在函数中，`this` 总是指向该函数的调用方式，但箭头函数除外，其中 `this` 是词法作用域的：
 
-```
+```javascript
 function myName() {
-return this.myname
+  return this.myname
 }
-const myNameButArrow = () =>console.log(this.myname)
-const person1 = { myname: “Mehul”, myName }
-const person2 = { myname: “James”, myName }
-const person3 = { myname: “Enzo”, myName: myNameButArrow }
+
+const myNameButArrow = () => console.log(this.myname)
+
+const person1 = { myname: "Mehul", myName }
+const person2 = { myname: "James", myName }
+const person3 = { myname: "Enzo", myName: myNameButArrow }
+
 console.log(person1.myName())
 console.log(person2.myName())
 console.log(person3.myName())
@@ -158,15 +156,16 @@ console.log(person3.myName())
 
 箭头函数允许你编写更小的函数，对 `this` 进行词法作用域绑定，并且不能使用 `new` 关键字实例化：
 
-```
+```javascript
 const obj = {
-myFunction: function() {
-return this
-},
-coolFunction: () => {
-return this
+  myFunction: function() {
+    return this
+  },
+  coolFunction: () => {
+    return this
+  }
 }
-}
+
 console.log(obj.myFunction()) // 输出原始 obj
 console.log(obj.coolFunction()) // 输出 window（全局对象）
 ```
@@ -177,39 +176,37 @@ console.log(obj.coolFunction()) // 输出 window（全局对象）
 
 **图 1.2：** 输出
 
-### .map
+### `.map`
 
 `.map` 允许你操作数组而不改变原始数组——也就是说，`.map` 对数组中的每个元素进行操作，并返回一个新数组，该数组由你在传递给 `.map` 的函数中返回的元素组成。
 
 下面是一个快速示例，说明 map 在这种情况下如何工作：
 
-```
+```javascript
 const arr = [{
-name: “Mehul Mohan”,
-country: “India”
+  name: "Mehul Mohan",
+  country: "India"
 }, {
-name: “James Paul”,
-country: “USA”
+  name: "James Paul",
+  country: "USA"
 }]
-const component = arr.map(name =>arr.name)
+
+const component = arr.map(name => arr.name)
+
 console.log(component) // 输出 [“Mehul Mohan”, “James Paul”]
 console.log(arr) // 输出原始对象
 ```
 
 上面的代码输出了更改后的数组，正如你对 map 函数的预期。然而，这并不会修改原始数组。
 
-### .reduce
+### `.reduce`
 
 `.reduce` 允许你将数组缩减为单个值。这是通过一个累加器和当前迭代的值来实现的。让我们看一个例子来理解：
 
-```
-x = [1,2,3,4,5]
+```javascript
+x = [1, 2, 3, 4, 5]
 x.reduce((acc, val) => acc + val, 0)
 ```
-
-
-
-
 
 在前面的示例中，`reduce` 接受一个函数，该函数每次被调用时都会传入两个值：累加器（accumulator）和当前值（current value）。你在函数中返回的任何内容都会成为下一次函数调用的累加器值。你还可以选择将初始累加器值作为第二个参数传递给 `.reduce` 函数。如果未提供该参数，累加器将初始化为数组的第一个元素，并从第二个元素开始对数组进行归约。
 
@@ -219,66 +216,92 @@ ES6 中的类仅仅是函数的语法糖。JavaScript 并非面向对象语言�
 
 以下是 ES6 类的一个示例：
 
-```
+```javascript
 class ILoveNumbers {
   constructor(num) {
     this.anothernum = num
   }
+
   getNum() {
     console.log(this.anothernum)
   }
-};
+}
 
 class IHateNumbers extends ILoveNumbers {
   constructor(num) {
-    super(num**num)
+    super(num ** num)
     this.num = num
   }
+
   getNum() {
     console.log(this.num)
   }
+
   getNumFromParent() {
     console.log(super.getNum())
   }
-};
+}
 
 let obj = new IHateNumbers(5)
+
 obj.getNum() // 5
 obj.getNumFromParent() // 3125
 ```
 
 关于上述代码的一些重要注意事项：
 
-1.  这里我们创建了一个简单的类 `ILoveNumbers`，它只存储一个数字。
+1. 这里我们创建了一个简单的类 `ILoveNumbers`，它只存储一个数字。
+2. 我们创建了另一个类 `IHateNumbers`，它继承自前一个类。在基于类的语法中，“扩展”仅仅意味着你将父类（函数）添加到了当前类（函数）的原型链中。
+3. 我们使用了一个特殊的关键字 `super`。通过 `super`，我们可以访问父类。请记住，在方法中使用 `super` 时，`super` 指向的是定义该方法的对象的原型链。这意味着，如果我将 `IHateNumbers` 的原型链更改为其他内容，那么 `super.getFav()` 将无法按预期工作。考虑以下代码：
 
-2.  我们创建了另一个类 `IHateNumbers`，它继承自前一个类。在基于类的语法中，“`扩展`”仅仅意味着你将父类（函数）添加到了当前类（函数）的原型链中。
+```javascript
+class C1 {
+  method() {
+    return 1
+  }
+}
 
-3.  我们使用了一个特殊的关键字 `super`。通过 `super`，我们可以访问父类。请记住，在方法中使用 `super` 时，`super` 指向的是**定义该方法的对象的原型链**。这意味着，如果我将 `IHateNumbers` 的原型链更改为其他内容，那么 `super.getFav()` 将无法按预期工作。考虑以下代码：
+class C2 extends C1 {
+  method() {
+    return super.method()
+  }
+}
 
-    ```
-    class C1{ method() { return 1 } }
-    class C2 extends C1{ method() { return super.method() } }
-    class C3{ method() { return 3 } }
-    class C4 extends C3{ method() { return 4 } }
-    const obj = new C4
-    console.log(obj.method()) // 输出 4
-    C4.prototype.method = C2.prototype.method
-    console.log(obj.method()) // 输出 1
-    ```
+class C3 {
+  method() {
+    return 3
+  }
+}
 
-4.  这里你可以清楚地看到，`super.method()` 并没有调用 `C3` 的方法，而是调用了 `C1` 的方法。然而，如果你将 `C4` 的方法定义为返回 `super.method()`，它就会调用 `C3` 的方法。
+class C4 extends C3 {
+  method() {
+    return 4
+  }
+}
+
+const obj = new C4
+
+console.log(obj.method()) // 输出 4
+
+C4.prototype.method = C2.prototype.method
+
+console.log(obj.method()) // 输出 1
+```
+
+4. 这里你可以清楚地看到，`super.method()` 并没有调用 `C3` 的方法，而是调用了 `C1` 的方法。然而，如果你将 `C4` 的方法定义为返回 `super.method()`，它就会调用 `C3` 的方法。
 
 ## 闭包（Closures）
 
-闭包是 JavaScript 中实现的一个基本概念，它既极其强大又非常优美。用一句话来定义闭包：*函数会记住*。作为计算机科学家，我们普遍认为当函数返回时，它们会清除所有与之关联的局部变量信息。但当你使用闭包时，情况就不同了。例如，考虑以下代码：
+闭包是 JavaScript 中实现的一个基本概念，它既极其强大又非常优美。用一句话来定义闭包：函数会记住。作为计算机科学家，我们普遍认为当函数返回时，它们会清除所有与之关联的局部变量信息。但当你使用闭包时，情况就不同了。例如，考虑以下代码：
 
-```
+```javascript
 function a() {
   let value = 1
   return () => value++
 }
 
 const func = a()
+
 func() // 1
 func() // 2
 func() // 3
@@ -290,21 +313,20 @@ func() // 3
 
 随着你阅读本书的深入，你会意识到与 React 框架本身相比，你总是需要用到更多的 JavaScript。虽然我们上面已经讨论了一些常见的 JavaScript 主题，但如果你对 JavaScript 基础知识的巩固和夯实感兴趣，我们建议你进一步阅读以下主题。由于本书并非核心 JS 书籍，我们不会过多关注仅限于 JavaScript 的主题，但你随时可以利用这个列表来学习更多内容：
 
-1.  解构（Destructuring）
+1. 解构（Destructuring）
+2. 展开运算符（Spread operator）
+3. ES6 导入/导出模块语法（ES6 import/export module syntax）
+4. 异步/等待（Async/Await）
 
-2.  展开运算符（Spread operator）
 
-3.  ES6 导入/导出模块语法（ES6 import/export module syntax）
 
-4.  异步/等待（Async/Await）
+### 5. JavaScript 中的可选链（Optional chaining）
 
-5.  JavaScript 中的可选链（Optional chaining）
+### 6. 空值合并（Nullish Coalescing）
 
-6.  空值合并（Nullish Coalescing）
+### 7. 原型继承模型（Prototypal inheritance model）
 
-7.  原型继承模型（Prototypal inheritance model）
-
-8.  提升/变量作用域（Hoisting/variable scoping）
+### 8. 提升/变量作用域（Hoisting/variable scoping）
 
 ## 结论
 
@@ -320,17 +342,12 @@ func() // 3
 
 ### 结构
 
-*   选择文本编辑器
-
-*   安装 Node 和 NPM
-
-*   搭建 React 项目的方法
-
-*   React 的 Hello World
-
-*   JSX
-
-*   转向 TypeScript 用于 React
+- 选择文本编辑器
+- 安装 Node 和 NPM
+- 搭建 React 项目的方法
+- React 的 Hello World
+- JSX
+- 转向 TypeScript 用于 React
 
 ### 目标
 
@@ -356,10 +373,6 @@ func() // 3
 
 一旦你的文本编辑器安装并准备就绪（这通常需要 5-10 分钟），就该安装 Node 和 npm 了。如果你的系统上已经安装了它们，可以跳过本节。Node 基本上是将 JavaScript 引擎（负责在机器上运行你编写的 JavaScript 的代码）作为本地应用程序放在你的计算机上，而不是仅仅嵌入在 Web 浏览器中。而 npm 是其包管理器，用于添加和删除包和依赖项。
 
-
-
-
-
 #### Windows
 
 对于 Windows，请按照以下步骤安装最新稳定版本的 node 和 npm：
@@ -368,7 +381,7 @@ func() // 3
 2. 下载 **Windows 安装程序 (.msi)** 文件。根据你的操作系统选择 32 位或 64 位版本。
 3. 按照向导指示完成安装。
 4. 通过从**开始**菜单打开 `cmd` 来验证安装。
-5. 在 cmd 中输入 `node -v`，检查是否显示一个数字。
+5. 在 `cmd` 中输入 `node -v`，检查是否显示一个数字。
 
 #### Linux
 
@@ -454,32 +467,24 @@ document.getElementById('root')
    ```
 
 2. 然后执行 `npm init -y`，这将在该目录中创建一个 `package.json` 文件。该文件负责处理你的项目依赖。
-
 3. 然后执行 `npm install react react-dom --save`。
-
 4. 这将安装 react 和 react DOM 库（就像我们上面讨论的那样），并将它们标记为“生产所需”依赖（也就是说，即使在发布应用程序时，我们也需要 React 和 `ReactDOM`）。
-
 5. 最后，执行 `npm install webpack webpack-dev-server webpack-cli @babel/core babel-loader @babel/preset-env @babel/preset-react html-webpack-plugin --save-dev`。
-
 6. 这将安装所有的 `devDependencies`，即你在编码应用程序时需要的依赖，但在生产环境中不需要。现在我们来分解这些依赖的用途：
 
-   * **Webpack**：Webpack 是一个模块打包系统。简单来说，它组合你的各种资源（JS、CSS 等），以便你可以以可维护的方式（即整洁且不同的文件）自由编写代码，并随后自动化代码的组合和压缩。
-   * `webpack-cli` 使 webpack 能够执行此操作。
-   * `webpack-dev-server` 使我们能够启动一个服务器来查看代码的输出。
-   * `html-webpack-plugin` 允许我们动态生成一个 HTML 页面，供 React 脚本运行。别担心，我们主要处理 JavaScript 文件，因此我们不需要静态创建 HTML 文件。
-   * `@babel` 包将 JSX 转换转换为正常的、可执行的 JavaScript 代码（更多关于 JSX 的内容见下文）。
+   - **Webpack**：Webpack 是一个模块打包系统。简单来说，它组合你的各种资源（JS、CSS 等），以便你可以以可维护的方式（即整洁且不同的文件）自由编写代码，并随后自动化代码的组合和压缩。
+   - `webpack-cli` 使 webpack 能够执行此操作。
+   - `webpack-dev-server` 使我们能够启动一个服务器来查看代码的输出。
+   - `html-webpack-plugin` 允许我们动态生成一个 HTML 页面，供 React 脚本运行。别担心，我们主要处理 JavaScript 文件，因此我们不需要静态创建 HTML 文件。
+   - `@babel` 包将 JSX 转换转换为正常的、可执行的 JavaScript 代码（更多关于 JSX 的内容见下文）。
 
 7. 完成后，在命令行中进入你的项目目录，执行 `touch .babelrc`。
-
 8. 这将创建一个名为 `.babelrc` 的点文件（注意文件名前面的点）。
-
 9. 在其中粘贴以下内容：`{ "presets": ["@babel/preset-env", "@babel/preset-react"] }`。
-
 10. 这告诉 babel 在处理 React 代码之前使用以下预设。简单来说，它加载了一组预定义的规则，告诉 babel 如何处理 JSX。
-
 11. 最后，由于 webpack 是我们项目的主要打包工具，我们需要告诉 webpack 让 babel 处理相应文件的“方向盘”。具体做法如下：
 
-    * 在你的项目根目录中创建一个名为 `webpack.config.js` 的文件，并在其中写入以下内容：
+    - 在你的项目根目录中创建一个名为 `webpack.config.js` 的文件，并在其中写入以下内容：
 
       ```javascript
       const path = require('path');
@@ -487,65 +492,59 @@ document.getElementById('root')
       module.exports = {
         entry: path.join(__dirname, 'src/index.js'),
         output: {
+          path: path.join(__dirname, 'bundle'),
+          filename: 'bundle.js'
+        },
+        module: {
+          rules: [
+            {
+              test: /\.(js|jsx)$/,
+              exclude: /node_modules/,
+              use: ['babel-loader']
+            }
+          ]
+        },
+        mode: process.env.NODE_ENV || 'development',
+        resolve: {
+          extensions: ['*', '.js', '.jsx']
+        },
+        devServer: {
+          contentBase: path.join(__dirname, 'src')
+        },
+        plugins: [new HtmlWebpackPlugin({
+          template: path.join(__dirname, 'src/index.html')
+        })]
+      };
       ```
 
+    - 这简单地告诉 webpack：嘿，webpack，当你处理 `.js` 或 `.jsx` 文件时，加载 babel。
+    - 当我们想要查看输出时，需要启动一个 webpack 开发服务器，因此我们将以下内容添加到 `package.json` 文件的 `scripts` 键中：`"start": "webpack-dev-server --open"`。
+    - 现在，我们将为此创建一个静态 HTML 文件，用于 `src/index.html`：
 
+      ```html
+      <!DOCTYPE html>
+      <html lang="en">
+      <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>React Hello World!</title>
+      </head>
+      <body>
+      <div id="root"></div>
+      </body>
+      </html>
+      ```
 
+    - 最后，让我们创建 `src/index.js` 并在其中写入以下内容：
 
-```
-path: path.join(__dirname, 'bundle'),
-filename: 'bundle.js'
-},
-module: {
-rules: [
-{
-test: /\.(js|jsx)$/,
-exclude: /node_modules/,
-use: ['babel-loader']
-}
-]
-},
-mode: process.env.NODE_ENV || 'development',
-resolve: {
-extensions: ['*', '.js', '.jsx']
-},
-devServer: {
-contentBase: path.join(__dirname, 'src')
-},
-plugins: [new HtmlWebpackPlugin({
-template: path.join(__dirname, 'src/index.html')
-})]
-};
-```
+      ```javascript
+      import React from 'react'
+      import ReactDOM from 'react-dom'
+      ReactDOM.render(<div>Hello World</div>, document.getElementById('root'))
+      ```
 
-*   这简单地告诉 webpack：嘿，webpack，当你处理 `.js` 或 `.jsx` 文件时，加载 babel。
-*   当我们想要查看输出时，需要启动一个 webpack 开发服务器，因此我们将以下内容添加到 `package.json` 文件的 `scripts` 键中：`"start": "webpack-dev-server --open"`。
-*   现在，我们将为此创建一个静态 HTML 文件，用于 `src/index.html`：
-
-    ```html
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>React Hello World!</title>
-    </head>
-    <body>
-    <div id="root"></div>
-    </body>
-    </html>
-    ```
-
-*   最后，让我们创建 `src/index.js` 并在其中写入以下内容：
-
-    ```javascript
-    import React from 'react'
-    import ReactDOM from 'react-dom'
-    ReactDOM.render(<div>Hello World</div>, document.getElementById('root'))
-    ```
-
-*   就是这样！现在，在你的项目根目录下运行 `npm start`。你的浏览器应该会打开，屏幕上应该会出现 Hello World。
+    - 就是这样！现在，在你的项目根目录下运行 `npm start`。你的浏览器应该会打开，屏幕上应该会出现 Hello World。
 
 然而，在本课程中，我们将使用 `create-react-app` 方法，因为它抽象了所有 webpack 和 babel 配置，让我们能够专注于编写 React 代码。
 
@@ -569,6 +568,8 @@ JSX 是一种不同的语法。它允许你利用 HTML 标记的简洁性，同�
 
 React 将 JSX 编译为普通的 ES5 代码。考虑以下示例：
 
+
+
 `const elem = <div className="a-classy-div">JSX seems so cool!</div>`
 
 这个示例被编译为以下内容：
@@ -583,14 +584,14 @@ React 将 JSX 编译为普通的 ES5 代码。考虑以下示例：
 
 现在我们已经用 React 启动并运行了一个基本的 JavaScript 项目，是时候引入 TypeScript 了。我们不会立即深入 TypeScript 的所有类型转换、接口等特性。相反，我们只会使用 TypeScript 的最佳部分（即自动完成和无错误代码实践），并在整本书中使用它。以下是启动 TypeScript 项目的方法：
 
-*   删除我们之前创建的 JS hello world 文件夹。
-*   假设你已经按照上述说明安装了 create-react-app 工具，在命令行中写入 `create-react-app hello-world-ts --typescript`。
-*   这将使用 TypeScript 初始化你的 React 项目。
-*   最终的文件结构应如下所示：
+- 删除我们之前创建的 JS hello world 文件夹。
+- 假设你已经按照上述说明安装了 `create-react-app` 工具，在命令行中写入 `create-react-app hello-world-ts --typescript`。
+- 这将使用 TypeScript 初始化你的 React 项目。
+- 最终的文件结构应如下所示：
 
-    ![](img/image11.jpg)
+  ![](img/image11.jpg)
 
-    **图 2.1：** 文件结构
+  **图 2.1：** 文件结构
 
 最后，我们准备好使用 React 了！
 
@@ -602,32 +603,32 @@ React 将 JSX 编译为普通的 ES5 代码。考虑以下示例：
 
 ## 组件
 
-组件是 React 的基础部分。其理念如下：网页上的所有内容都可以分解为可重用的视图，称为组件。这些组件可以相互链接，可以完全独立，可以感知其父组件，或者也可以对其环境完全“*无感知*”。
+组件是 React 的基础部分。其理念如下：网页上的所有内容都可以分解为可重用的视图，称为组件。这些组件可以相互链接，可以完全独立，可以感知其父组件，或者也可以对其环境完全“无感知”。
 
 让我们进一步了解如何使用它们。
 
 ### 结构
 
-*   关于组件
-*   类组件与函数式组件
-*   函数式组件
-    *   Props
-    *   Children
-    *   Hooks
-        *   `useState`
-        *   `useEffect`
-        *   `useCallback`
-    *   自定义 Hooks
-*   类组件
-    *   Props
-    *   State
-    *   生命周期方法
-        *   `getDerivedStateFromProps`
-        *   `Render`
-        *   `getSnapshotBeforeUpdate`
-        *   `componentDidMount`
-        *   `componentDidUpdate`
-*   结论
+- 关于组件
+- 类组件与函数式组件
+- 函数式组件
+  - Props
+  - Children
+  - Hooks
+    - `useState`
+    - `useEffect`
+    - `useCallback`
+  - 自定义 Hooks
+- 类组件
+  - Props
+  - State
+  - 生命周期方法
+    - `getDerivedStateFromProps`
+    - `Render`
+    - `getSnapshotBeforeUpdate`
+    - `componentDidMount`
+    - `componentDidUpdate`
+- 结论
 
 ### 目标
 
@@ -641,12 +642,7 @@ React 将 JSX 编译为普通的 ES5 代码。考虑以下示例：
 
 基于类的组件在 React 中已经存在了很长时间。事实上，几乎一直以来，它都是创建具有自身状态的工作 React 组件的唯一方式。随着 hooks 的引入，这种情况发生了变化，我们将在下一节中介绍 hooks。然而，以下是 hooks 出现后关于类组件和函数式组件的一些要点：
 
-1.  函数式组件（hooks 出现后）显然是 React 中创建组件的更好方式，因为它们比类更清晰，避免了在基于类的组件代码中常见的许多陷阱（例如 `this` 的绑定），避免了状态突变，并使用副作用而非基于生命周期的模型。
-
-
-
-
-
+1. 函数式组件（hooks 出现后）显然是 React 中创建组件的更好方式，因为它们比类更清晰，避免了在基于类的组件代码中常见的许多陷阱（例如 `this` 的绑定），避免了状态突变，并使用副作用而非基于生命周期的模型。
 2. React 核心团队也推荐优先使用钩子，原因如上所述。尽管基于类的组件短期内不会消失，但我们都同意函数组件是 React 库未来发展的方向。
 
 话虽如此，学习超出实际使用范围的知识总是有好处的。我们将快速介绍基于类的组件，然后深入探讨函数组件，后者现在是更重要的方面。但首先，让我们从函数组件开始。
@@ -655,7 +651,7 @@ React 将 JSX 编译为普通的 ES5 代码。考虑以下示例：
 
 函数组件在 React 中已经存在很长时间了。在进一步讨论之前，让我们先看看这个 Hello World 的 React 代码：
 
-```
+```javascript
 import React from 'react'
 import ReactDOM from 'react-dom'
 
@@ -668,7 +664,7 @@ ReactDOM.render(<App />, document.getElementById('root'))
 
 你可以看到，这里我们使用了一个名为 `App` 的函数作为 React 组件。那么，如何知道它是一个 React 组件呢？当你将其用作 JSX（例如 `<App />`）时，它会被编译成以下内容：
 
-```
+```javascript
 import React from 'react';
 import ReactDOM from 'react-dom';
 
@@ -682,7 +678,6 @@ ReactDOM.render(React.createElement(App, null), document.getElementById('root'))
 那么这里发生了什么？
 
 1. 你在 JSX 中编写的所有内容都会被编译成等效的 React 调用（我们在第 1 章中讨论过）。JSX 只是前面示例的语法糖。
-
 2. `React.createElement` 返回一个 JavaScript 对象，看起来像这样：
 
    ![](img/image7.jpg)
@@ -695,7 +690,7 @@ ReactDOM.render(React.createElement(App, null), document.getElementById('root'))
 
 传递 props（properties 的缩写）是一种常见场景，你几乎总是会用它来将数据传递给子组件。React 的工作方式是父组件将数据传递给子组件。当然，使用 Context API 你可以神奇地将数据向下传递多层（稍后会详细介绍），但 props 提供了最简单的数据传递方式。让我们看一个例子：
 
-```
+```typescript
 interface props {
   name: string
 }
@@ -715,7 +710,7 @@ ReactDOM.render(<App name="Mehul" />, document.getElementById('root'))
 
 React 组件有一个特殊的 prop 叫做 `children`，它基本上包含在自定义组件的开始和结束标签之间传递的任何内容。我提到的是“任何内容”而不是“传递的组件”，因为你可以传递任何你喜欢的东西——组件、字符串、函数等等。请看下面的例子：
 
-```
+```typescript
 const App: React.FC<{ name: string }> = props => {
   return <div>
     Hello {props.name}
@@ -728,7 +723,7 @@ const App: React.FC<{ name: string }> = props => {
 
 我们可以这样调用这个组件：
 
-```
+```jsx
 <App name="Mehul">
   <p>Hey there!</p>
 </App>
@@ -736,7 +731,7 @@ const App: React.FC<{ name: string }> = props => {
 
 这是使用 `children` prop 的一种方式。另一种方式是通过函数来使用它们。看这个例子：
 
-```
+```typescript
 const App: React.FC<{ name: string, children(one: string, two: string): JSX.Element }> = props => {
   return <div>
     Hello {props.name}
@@ -749,7 +744,7 @@ const App: React.FC<{ name: string, children(one: string, two: string): JSX.Elem
 
 然后我们这样使用这个组件：
 
-```
+```jsx
 <App name="Mehul">
   {(one: string, two: string) => <p>Hey there! Passed attributes: { one } { two }</p>}
 </App>
@@ -758,22 +753,20 @@ const App: React.FC<{ name: string, children(one: string, two: string): JSX.Elem
 以下是上一个示例的快速总结：
 
 1. 我们创建了自定义的 `children` 类型，它接收两个字符串参数并返回一个 `JSX.Element`（即那个 `<p>` 标签）。
-
 2. 在组件中，我们将 `props.children` 作为函数使用，并传入两个值来调用它（而不是简单地渲染它）。
-
 3. 父组件使用子组件传递给父组件的值来渲染子组件。这是一种巧妙的方法，可以将少量数据从子组件传递给父组件；通常数据是从父组件传递给子组件，但通过这种方式你可以实现相反的效果。
 
-事实上，我们刚才所做的被称为**渲染 props** 方法。它指的是当 prop（在我们的例子中是 `children`）是一个函数而不是 JSX 元素或常规值时，进行数据传递的方式。
+事实上，我们刚才所做的被称为**渲染 props**方法。它指的是当 prop（在我们的例子中是 `children`）是一个函数而不是 JSX 元素或常规值时，进行数据传递的方式。
 
 ### Hooks
 
-在 React 16.8 之前，仅使用函数无法创建有状态的函数组件。你看到了问题所在，除非像类组件那样，否则无法使用任何 *state* 对象。但随着 hooks 的引入，这种情况发生了变化。通过 hooks 引入状态可以带来很多好处。函数组件现在可以*记住*它们的上下文。让我们从 React 中现在可用的各种有用的 hooks 以及如何使用它们开始。
+在 React 16.8 之前，仅使用函数无法创建有状态的函数组件。你看到了问题所在，除非像类组件那样，否则无法使用任何 `state` 对象。但随着 hooks 的引入，这种情况发生了变化。通过 hooks 引入状态可以带来很多好处。函数组件现在可以“记住”它们的上下文。让我们从 React 中现在可用的各种有用的 hooks 以及如何使用它们开始。
 
 #### useState
 
 `useState` 钩子允许你将类中的 `this.state` 和 `this.setState` 功能引入函数组件。以下是一个快速示例，展示如何使用它们：
 
-```
+```javascript
 function App() {
   const [name, setName] = useState('Mehul')
   return <p>Hello {name}</p>
@@ -788,7 +781,7 @@ function App() {
 
 这里我们可以清楚地看到数组的第一个值是 `getter`，第二个值是一个 `function`。当调用这个函数时，它会更新我们的 `setter` 变量，类似于调用 `this.setState` 的效果。让我们看一个简单的例子：
 
-```
+```javascript
 function App() {
   const [name, setName] = useState('Mehul')
   setTimeout(() => {
@@ -800,102 +793,29 @@ function App() {
 
 当你运行这段代码时，你会看到名字每秒都会变为一个 0 到 1 之间的随机数。请注意，通常约定使用 `X` 和 `setX` 作为 `getter` 和 `setter` 的变量名。当然，你可以使用任何你喜欢的名字，但我建议遵循这个约定，因为它便于区分。
 
-#### useState 不是同步的
-
-这意味着，每当你调用 `useState` 时，不能保证在调用之后使用 `getter` 就能获得更新后的值。例如，考虑这个例子：
-
-```
-const App: React.FC = props => {
-  const [currentNumber, setCurrentNumber] = useState(Math.random())
-  function changeState() {
-    setCurrentNumber(Math.random())
-    console.log('New number => ${currentNumber}')
-  }
-  return <button onClick={changeState}>Click Me { currentNumber }</button>
-}
-```
-
-以下是代码的输出：
-
-![](img/image4.jpg)
-
-**图 3.3**
-
-如果你使用这个组件，你会看到控制台中显示的内容与 UI 中反映的内容不一致。这是因为 `useState` 是异步运行的，不会立即更新变量。
-
-
-
-
-
-现在还有一个问题：如果 `setX` 不是异步的，这意味着如果变量的下一个状态依赖于前一个状态，我们就不能直接在 `setX` 内部使用 `X`！幸运的是，React 允许你在 `setX` 中传入一个函数，该函数的第一个参数保证是最新的值。让我们通过这个例子来进一步了解：
-
-```
-const App: React.FC = props => {
-
-const [counter, setCounter] = useState(0)
-
-function add() {
-
-setCounter(counter => counter + 1)
-
-}
-
-function sub() {
-
-setCounter(counter => counter - 1)
-
-}
-
-return <>
-
-<p>{ counter }</p>
-
-<button onClick={add}>++</button>
-
-<button onClick={sub}>--</button>
-
-</>
-
-}
-```
-
-这里需要注意几点：
-
-1.  我们可以使用匿名的 JSX 元素（即 `<>` 和 `</>`）——这不会在 DOM 结构中显示。
-
-2.  我们可以在 `setX` 中传入一个函数，而不是更新后的值。如果你传入一个函数，React 会使用最新的状态变量值调用该函数，然后该函数返回的值将被设置为最新的状态。
-
-一个通用的经验法则是：如果你的状态更新涉及基于前一个状态的结果，请使用函数参数的方式；否则，你可以直接传入新值。
-
 #### useStatecallback
 
 在基于类的组件中，`this.setState` 有一个回调函数，当你希望等待状态变量更新后再触发某个操作时可以使用它。在 hooks 中，这并不那么直接，不过你可以使用另一个 hook 来实现相同的效果。现在让我们来看看这个 hook。
 
 #### useEffect
 
-这个 hook 允许你在某些内容*变化*时执行一段代码。可以把 `useEffect` 看作是 React 内置基础设施上的一个自定义监听实现。
+这个 hook 允许你在某些内容“变化”时执行一段代码。可以把 `useEffect` 看作是 React 内置基础设施上的一个自定义监听实现。
 
 下面是一个非常简单的 `useEffect` 示例：
 
-```
+```javascript
 const App: React.FC = props => {
 
-const [counter, setCounter] = useState(0)
+  const [counter, setCounter] = useState(0)
 
-useEffect(() => {
+  useEffect(() => {
+    document.title = 'Counter is at ' + counter
+  })
 
-document.title = 'Counter is at ' + counter
-
-})
-
-return <>
-
-<p>{ counter }</p>
-
-<button onClick={() =>setCounter(c => c + 1)}>Increment</button>
-
-</>
-
+  return <>
+    <p>{ counter }</p>
+    <button onClick={() =>setCounter(c => c + 1)}>Increment</button>
+  </>
 }
 ```
 
@@ -905,29 +825,27 @@ return <>
 
 你很快就会发现 `useEffect` 可能会对性能造成一定负担，因为即使没有任何变化，它也会在每次渲染时反复运行我们传入的函数。让我们看看下面的例子：
 
-```
+
+
+```tsx
 const [counter1, setCounter1] = useState(0)
 
 const [counter2, setCounter2] = useState(0)
 
 useEffect(() => {
+  document.title = 'Counter is at ' + counter1
 
-document.title = 'Counter is at ' + counter1
-
-console.log('Effect called')
-
+  console.log('Effect called')
 })
 
 return <>
+  <span>{ counter1 }</span>&nbsp;
 
-<span>{ counter1 }</span>&nbsp;
+  <span>{ counter2 }</span>
 
-<span>{ counter2 }</span>
+  <button onClick={() => setCounter1(c => c + 1)}>Increment Counter 1</button>
 
-<button onClick={() => setCounter1(c => c + 1)}>Increment Counter 1</button>
-
-<button onClick={() => setCounter2(c => c + 1)}>Increment Counter 2</button>
-
+  <button onClick={() => setCounter2(c => c + 1)}>Increment Counter 2</button>
 </>
 ```
 
@@ -937,15 +855,13 @@ return <>
 
 **图 3.4**
 
-显然，我们从未更新 counter1，但 React 仍然在每次重新渲染时调用我们的 `useEffect` 函数。我们可以做得更好。我们可以告诉 React，某个 effect 只使用一组特定的变量（以数组形式传入），只有当这些变量发生变化时，React 才应该再次调用 effect 函数。否则，调用就没有意义（因为状态变量的值没有变化）。为此，我们可以向 `useEffect` hook 传入第二个参数，即该 effect 的依赖项。让我们再次看同一个例子，但这次将 counter1 作为依赖项添加进去：
+显然，我们从未更新`counter1`，但 React 仍然在每次重新渲染时调用我们的`useEffect`函数。我们可以做得更好。我们可以告诉 React，某个 effect 只使用一组特定的变量（以数组形式传入），只有当这些变量发生变化时，React 才应该再次调用 effect 函数。否则，调用就没有意义（因为状态变量的值没有变化）。为此，我们可以向`useEffect` hook 传入第二个参数，即该 effect 的依赖项。让我们再次看同一个例子，但这次将`counter1`作为依赖项添加进去：
 
-```
+```tsx
 useEffect(() => {
+  document.title = 'Counter is at ' + counter1
 
-document.title = 'Counter is at ' + counter1
-
-console.log('Effect called')
-
+  console.log('Effect called')
 }, [counter1])
 ```
 
@@ -955,37 +871,29 @@ console.log('Effect called')
 
 **图 3.5**
 
-你看，现在我们只看到一次 **Effect called**，因为 effect 在首次渲染后初始执行一次。除此之外，只要 counter1 没有被修改，effect 函数就不会运行。
+你看，现在我们只看到一次`Effect called`，因为 effect 在首次渲染后初始执行一次。除此之外，只要`counter1`没有被修改，effect 函数就不会运行。
 
-#### useEffect 清理
+#### `useEffect` 清理
 
-`useEffect` hook 为你提供了一个选项，可以在组件卸载或重新渲染（并再次调用 `useEffect`）之前，清理你想要移除的任何订阅。也就是说，在前面的例子中，你可以使用 `useEffect` 的清理函数，在组件新状态渲染时调用一个函数。让我们看一个例子来更好地理解：
+`useEffect` hook 为你提供了一个选项，可以在组件卸载或重新渲染（并再次调用`useEffect`）之前，清理你想要移除的任何订阅。也就是说，在前面的例子中，你可以使用`useEffect`的清理函数，在组件新状态渲染时调用一个函数。让我们看一个例子来更好地理解：
 
-```
+```tsx
 const App: React.FC = props => {
+  const [counter, setCounter] = useState(0)
 
-const [counter, setCounter] = useState(0)
+  useEffect(() => {
+    document.title = 'Counter is at ' + counter
 
-useEffect(() => {
+    return function cleanup() {
+      console.log('This will fire whenever this function gets called next/the component unmounts. Counter is ${counter} right now')
+    }
+  }, [counter])
 
-document.title = 'Counter is at ' + counter
+  return <>
+    <span>{ counter }</span>
 
-return function cleanup() {
-
-console.log('This will fire whenever this function gets called next/the component unmounts. Counter is ${counter} right now')
-
-}
-
-}, [counter])
-
-return <>
-
-<span>{ counter }</span>
-
-<button onClick={() =>setCounter(c => c + 1)}>Increment Counter</button>
-
-</>
-
+    <button onClick={() =>setCounter(c => c + 1)}>Increment Counter</button>
+  </>
 }
 ```
 
@@ -995,7 +903,7 @@ return <>
 
 **图 3.6**
 
-但一旦我点击 **Increment** 计数器，控制台就会出现一些有趣的内容：
+但一旦我点击`Increment`计数器，控制台就会出现一些有趣的内容：
 
 ![](img/image5.jpg)
 
@@ -1003,58 +911,48 @@ return <>
 
 好的！我们看到屏幕上计数器实际是 1。但在控制台中，我们收到的日志显示计数器值为 0。我们遗漏了什么吗？这是 bug 吗？实际上不是，这是预期的行为。
 
-你可以看到，`cleanup` 函数的目的是在*新实例*创建之前移除你想要清除的任何内容。因此，React 需要调用旧 `useEffect` 函数的 `cleanup` 函数，以便它能够访问旧的订阅变量及其环境。React 显然不应该触发最新 `useEffect` 函数的 `cleanup` 函数，因为它还不需要清理，对吧？
+你可以看到，`cleanup`函数的目的是在*新实例*创建之前移除你想要清除的任何内容。因此，React 需要调用旧`useEffect`函数的`cleanup`函数，以便它能够访问旧的订阅变量及其环境。React 显然不应该触发最新`useEffect`函数的`cleanup`函数，因为它还不需要清理，对吧？
 
-#### useCallback
+#### `useCallback`
 
-还记得我们如何在 `useEffect` hook 中传入依赖项数组，让 React 知道我们关心的变量吗？这可以让 React 在不需要时避免反复运行 effect 函数。但是，你在 `useEffect` 函数内部调用的函数呢？很容易遗漏像这样的情况：
+还记得我们如何在`useEffect` hook 中传入依赖项数组，让 React 知道我们关心的变量吗？这可以让 React 在不需要时避免反复运行 effect 函数。但是，你在`useEffect`函数内部调用的函数呢？很容易遗漏像这样的情况：
 
-```
+```tsx
 const [result, setResult] = useState(null)
 
 const [url, setUrl] = useState(null)
 
 async function someAsyncOperation() {
+  // 更多代码
 
-// 更多代码
-
-return await fetch(url)
-
+  return await fetch(url)
 }
 
 useEffect(() => {
+  // 一些长代码…
 
-// 一些长代码…
-
-someAsyncOperation().then(r => {
-
-setResult(r)
-
-})
-
+  someAsyncOperation().then(r => {
+    setResult(r)
+  })
 }, [])
 ```
 
-哎呀！你能指出这段代码中可能出现的问题吗？你看，虽然从 effect 函数来看似乎不需要依赖项（因为我们没有直接使用任何状态变量），但仔细一看，我们实际上在 `someAsyncOperation` 函数内部使用了状态变量 `url`！这意味着，如果某处调用了 `setResult`，effect 函数不会重新运行，因此不会重新获取 URL，从而产生有 bug 的输出。
+哎呀！你能指出这段代码中可能出现的问题吗？你看，虽然从 effect 函数来看似乎不需要依赖项（因为我们没有直接使用任何状态变量），但仔细一看，我们实际上在`someAsyncOperation`函数内部使用了状态变量`url`！这意味着，如果某处调用了`setResult`，effect 函数不会重新运行，因此不会重新获取 URL，从而产生有 bug 的输出。
 
+这种情况可能发生，并且随着代码库的增长通常很难注意到。那么如何确保你不会忘记在`useEffect`钩子中添加依赖项呢？你不需要这样做。你应该将函数作为依赖项传递，因为这样更合理！你看，实际函数`someAsyncOperation`的行为会因状态变量`url`的变化而改变，因此它才应该被添加为依赖项。这不仅简化了事情，而且更符合逻辑。
 
+然而，React 无法在不实际执行函数并查看结果的情况下将函数与之前的版本进行比较，但一旦你执行了函数，就没有必要再回头了。还记得我们在`useEffect`中是如何解决类似问题的吗？是的，依赖数组来救场！但是，如何为独立函数指定依赖数组呢？
 
+这里，你可以使用一个名为`useCallback`的新钩子。这个钩子允许你创建记忆化函数，只有当传递给它的依赖数组发生变化时，函数的标识才会改变。以下是上面相同的示例，但这次使用了记忆化函数：
 
-
-这种情况可能发生，并且随着代码库的增长通常很难注意到。那么如何确保你不会忘记在 `useEffect` 钩子中添加依赖项呢？你不需要这样做。你应该将函数作为依赖项传递，因为这样更合理！你看，实际函数 `someAsyncOperation` 的行为会因状态变量 `url` 的变化而改变，因此它才应该被添加为依赖项。这不仅简化了事情，而且更符合逻辑。
-
-然而，React 无法在不实际执行函数并查看结果的情况下将函数与之前的版本进行比较，但一旦你执行了函数，就没有必要再回头了。还记得我们在 `useEffect` 中是如何解决类似问题的吗？是的，依赖数组来救场！但是，如何为独立函数指定依赖数组呢？
-
-这里，你可以使用一个名为 `useCallback` 的新钩子。这个钩子允许你创建记忆化函数，只有当传递给它的依赖数组发生变化时，函数的标识才会改变。以下是上面相同的示例，但这次使用了记忆化函数：
-
-```
+```tsx
 const someAsyncOperation = useCallback(async () => {
   // 更多代码
   return await fetch(url)
 }, [url])
 ```
 
-```
+```tsx
 useEffect(() => {
   // 一些长代码....
   someAsyncOperation().then(r => {
@@ -1063,15 +961,15 @@ useEffect(() => {
 }, [someAsyncOperation])
 ```
 
-这里，我们可以看到我们现在将 `someAsyncOperation` 作为主要副作用函数的依赖项传递，并将 `url` 作为 `someAsyncOperation` 函数本身的依赖项传递。这保持了秩序，并允许你编写可读且干净的代码。
+这里，我们可以看到我们现在将`someAsyncOperation`作为主要副作用函数的依赖项传递，并将`url`作为`someAsyncOperation`函数本身的依赖项传递。这保持了秩序，并允许你编写可读且干净的代码。
 
 React 还有更多内置钩子，我们将在接下来的章节中逐步了解。
 
 #### 自定义钩子
 
-既然我们已经对 React 钩子及其底层工作原理有了实用的了解，那么为自己的用例创建简单的自定义钩子就相当简单了。让我们从一个简单的例子开始。还记得我们说过 `useState` 在状态更新时不提供回调函数吗？让我们将其实现为一个自定义钩子。
+既然我们已经对 React 钩子及其底层工作原理有了实用的了解，那么为自己的用例创建简单的自定义钩子就相当简单了。让我们从一个简单的例子开始。还记得我们说过`useState`在状态更新时不提供回调函数吗？让我们将其实现为一个自定义钩子。
 
-```
+```tsx
 import { useState, useEffect } from 'react'
 
 const useStateCB = (initState: any, cb: Function) => {
@@ -1083,15 +981,15 @@ const useStateCB = (initState: any, cb: Function) => {
 export default useStateCB
 ```
 
-我们可以创建一个名为 `useStateCB.ts` 的文件，内容如上，然后导入这个*钩子*并在任何地方使用它！那么它是如何工作的呢？
+我们可以创建一个名为`useStateCB.ts`的文件，内容如上，然后导入这个*钩子*并在任何地方使用它！那么它是如何工作的呢？
 
-当你调用 `useStateCB("test", updatedState => console.log(updatedState))` 时，你实际上是在设置两个钩子——原始的 `useState` 钩子和 `useEffect` 钩子。`useEffect` 钩子用于*监视*我们的 `useState` 钩子，一旦*状态*发生变化，我们就用新状态调用传入的回调函数。还记得吗？`useEffect` 钩子每次渲染时总是使用最新的状态值运行。通过这种方式，你可以使用一些基本的钩子来定制满足自己需求的自定义钩子。
+当你调用`useStateCB("test", updatedState => console.log(updatedState))`时，你实际上是在设置两个钩子——原始的`useState`钩子和`useEffect`钩子。`useEffect`钩子用于*监视*我们的`useState`钩子，一旦*状态*发生变化，我们就用新状态调用传入的回调函数。还记得吗？`useEffect`钩子每次渲染时总是使用最新的状态值运行。通过这种方式，你可以使用一些基本的钩子来定制满足自己需求的自定义钩子。
 
 ### 类组件
 
 以下是一个用 TypeScript + React 编写的基于类的组件的简单示例：
 
-```
+```tsx
 import React from 'react'
 import ReactDOM from 'react-dom'
 
@@ -1104,13 +1002,13 @@ class App extends React.Component<{}, {}> {
 ReactDOM.render(<App />, document.getElementById('root'))
 ```
 
-这里，我们创建了一个名为 `App` 的组件，它继承了 `React.Component` 类。查看后你会发现，`React.Component` 类提供了许多有用的功能，使我们能够在基于类的组件中使用生命周期方法和状态。我们可以在这里指定 props 和 state 的类型 `<{}, {}>`。
+这里，我们创建了一个名为`App`的组件，它继承了`React.Component`类。查看后你会发现，`React.Component`类提供了许多有用的功能，使我们能够在基于类的组件中使用生命周期方法和状态。我们可以在这里指定 props 和 state 的类型`<{}, {}>`。
 
 #### Props
 
 我们在函数式组件中讨论过 props，以及它们如何作为组件可以传递给其子组件的一小部分数据，以及组件如何定义自身。以下是另一个接收 prop 的示例：
 
-```
+```tsx
 class App extends React.Component<{ prop1: string }, {}> {
   render() {
     return <p>Hello World. Prop1 says {this.props.prop1}</p>
@@ -1120,19 +1018,19 @@ class App extends React.Component<{ prop1: string }, {}> {
 ReactDOM.render(<App prop1="something" />, document.getElementById('root'))
 ```
 
-我们使用 TypeScript 指定了可以接收的 props 的类型，然后在渲染组件时传递了 `prop1`。最后，我们使用 `this.props` 对象访问了传递的 prop。`this.props` 对象由 React 填充，键是 props 的名称，值是传递给它们的值。
+我们使用 TypeScript 指定了可以接收的 props 的类型，然后在渲染组件时传递了`prop1`。最后，我们使用`this.props`对象访问了传递的 prop。`this.props`对象由 React 填充，键是 props 的名称，值是传递给它们的值。
 
 就像在函数式方式中一样，你可以传递任何东西，甚至函数，作为 props，因为 JavaScript 拥有一等函数。
 
-此外，我们看到有一个名为 `render` 的方法，它负责 React 显示的 UI。无论你在基于类的组件中做什么，从 render 方法返回的内容是唯一会在屏幕上对用户可见的内容（除非你尝试直接自己修改 DOM——这在使用 React 时当然是一种不好的做法）。
+此外，我们看到有一个名为`render`的方法，它负责 React 显示的 UI。无论你在基于类的组件中做什么，从`render`方法返回的内容是唯一会在屏幕上对用户可见的内容（除非你尝试直接自己修改 DOM——这在使用 React 时当然是一种不好的做法）。
 
 #### State
 
-在类组件中管理状态非常直接。开箱即用，React 允许你创建一个名为 `state` 的特殊变量。React 还提供了一个 `setState` 函数，允许 React 修改状态对象（并随后重新渲染）。如果你想知道这个实现来自哪里，可以看到我们继承了 `React.Component` 类，该类包含了上述功能。
+在类组件中管理状态非常直接。开箱即用，React 允许你创建一个名为`state`的特殊变量。React 还提供了一个`setState`函数，允许 React 修改状态对象（并随后重新渲染）。如果你想知道这个实现来自哪里，可以看到我们继承了`React.Component`类，该类包含了上述功能。
 
 以下是一个简单的示例，演示了基于类的组件中的状态：
 
-```
+```tsx
 class App extends React.Component<{}, { name: string }> {
   state = {
     name: 'Mehul'
@@ -1143,9 +1041,9 @@ class App extends React.Component<{}, { name: string }> {
 }
 ```
 
-这里我们再次看到，我们可以用 TypeScript 指定状态的类型，然后继续用默认值初始化状态。那么区别在哪里呢？区别在于我们开始使用 `this.setState` 函数时。调用该函数后，React 会更新我们的状态对象，并自动重新渲染，必要时将更新应用到组件。例如：
+这里我们再次看到，我们可以用 TypeScript 指定状态的类型，然后继续用默认值初始化状态。那么区别在哪里呢？区别在于我们开始使用`this.setState`函数时。调用该函数后，React 会更新我们的状态对象，并自动重新渲染，必要时将更新应用到组件。例如：
 
-```
+```tsx
 class App extends React.Component<{}, { num: number }> {
   state = {
     num: Math.random()
@@ -1161,28 +1059,25 @@ class App extends React.Component<{}, { num: number }> {
 }
 ```
 
-点击 `p` 标签时，我们会看到状态变量改变了 `num` 属性，并将其设置为一个新的 `Math.random` 值。看看它与函数式组件有何不同。在函数式组件中，状态永远不会被修改，而是在新的渲染中，钩子返回不同（且更新后）的值。然而，在基于类的组件中，React 本身会修改 `this` 关键字，以根据正确的行为更新 props 和 state。这表明，尽管函数式组件和基于类的组件可能看起来只是彼此的语法糖，但它们在核心工作方式上有着根本的不同。
+点击`p`标签时，我们会看到状态变量改变了`num`属性，并将其设置为一个新的`Math.random`值。看看它与函数式组件有何不同。在函数式组件中，状态永远不会被修改，而是在新的渲染中，钩子返回不同（且更新后）的值。然而，在基于类的组件中，React 本身会修改`this`关键字，以根据正确的行为更新 props 和 state。这表明，尽管函数式组件和基于类的组件可能看起来只是彼此的语法糖，但它们在核心工作方式上有着根本的不同。
 
 ### 生命周期方法
 
 React 提供了一系列生命周期方法，让你可以将代码放入其中，并完全控制组件的渲染机制。让我们从这些方法开始，并在每个组件中看一个简单的示例。此外，我们可以探讨它们与钩子的区别，以及钩子可能的行为替代方案。
 
-#### constructor
+#### `constructor`
 
-如果你有面向对象编程的背景，你会知道 `constructor` 是创建对象时运行的第一个方法。尽管 JavaScript 不遵循基于类的继承，但它在 ES6 中引入的类的语法糖与这种模式非常相似。
-
-
-
+如果你有面向对象编程的背景，你会知道`constructor`是创建对象时运行的第一个方法。尽管 JavaScript 不遵循基于类的继承，但它在 ES6 中引入的类的语法糖与这种模式非常相似。
 
 这不是 React 提供的生命周期方法，而是语言本身。不过，你可以在这里完成所有初始化工作，即初始化状态、设置全局事件监听器（如窗口大小变化等），并为组件的挂载做好准备。
 
-#### static getDerivedStateFromProps
+#### `static getDerivedStateFromProps`
 
-该方法在 v16.3 中新增，允许你在需要时根据 props 更新 state。`getDerivedStateFromProps` 方法在首次挂载和后续挂载的 render 方法之前运行。它是静态方法，你不应在此方法中执行副作用（如动画或网络请求）。
+该方法在 v16.3 中新增，允许你在需要时根据 props 更新 state。`getDerivedStateFromProps`方法在首次挂载和后续挂载的`render`方法之前运行。它是静态方法，你不应在此方法中执行副作用（如动画或网络请求）。
 
 实际上，React 文档建议在大多数情况下你不需要实现这个生命周期方法。大部分工作可以通过我们接下来要讨论的其他方法完成：
 
-```
+```tsx
 static getDerivedStateFromProps(props, state) {
   if (props.email !== state.email) {
     return {
@@ -1193,23 +1088,23 @@ static getDerivedStateFromProps(props, state) {
 }
 ```
 
-可以看到，如果没有更新，我们返回 `null`，表示我们不打算更新组件的 state。你返回的任何内容都将作为组件的 state 进行更新。
+可以看到，如果没有更新，我们返回`null`，表示我们不打算更新组件的 state。你返回的任何内容都将作为组件的 state 进行更新。
 
-#### render
+#### `render`
 
-这是基于类的 React 组件中唯一必须存在的方法。这是因为 React 是一个 UI 库，使用组件的目的是向用户输出一些视觉信息。因此，如果你使用 React 组件，必须定义 `render` 方法。从此方法返回的任何内容都会显示在屏幕上。以下是一个简单示例：
+这是基于类的 React 组件中唯一必须存在的方法。这是因为 React 是一个 UI 库，使用组件的目的是向用户输出一些视觉信息。因此，如果你使用 React 组件，必须定义`render`方法。从此方法返回的任何内容都会显示在屏幕上。以下是一个简单示例：
 
-```
+```tsx
 render() {
   return <p>Hello world!</p>
 }
 ```
 
-#### getSnapshotBeforeUpdate
+#### `getSnapshotBeforeUpdate`
 
-React 在实际将内容写入浏览器（即 DOM）之前会调用此方法。此时，render 已被调用，但 DOM 尚未更新。同样，如文档所述，此方法仅用于特定场景，但了解可用的方法总是好的。你需要从此方法返回一个“快照”值，然后在另一个名为 `componentDidUpdate` 的生命周期方法中访问它。示例如下：
+React 在实际将内容写入浏览器（即 DOM）之前会调用此方法。此时，`render`已被调用，但 DOM 尚未更新。同样，如文档所述，此方法仅用于特定场景，但了解可用的方法总是好的。你需要从此方法返回一个“快照”值，然后在另一个名为`componentDidUpdate`的生命周期方法中访问它。示例如下：
 
-```
+```tsx
 getSnapshotBeforeUpdate(prevProps, prevState) {
   if (prevProps.prop1 !== this.props.prop1) {
     return "Prop mismatch";
@@ -1218,17 +1113,19 @@ getSnapshotBeforeUpdate(prevProps, prevState) {
 }
 ```
 
-返回 `null` 表示没有需要捕获的快照。然后我们可以在 `componentDidUpdate` 中访问它，如下所示。
+返回`null`表示没有需要捕获的快照。然后我们可以在`componentDidUpdate`中访问它，如下所示。
 
-#### componentDidMount
+#### `componentDidMount`
 
-当 React 完成组件的挂载后，会调用 `componentDidMount` 方法。但别急！此时组件对用户仍然不可见，因为它尚未写入 DOM。那么“挂载”是什么意思呢？它意味着组件已挂载到 React 的虚拟 DOM 中，并准备推送到真实 DOM。此时，如果你调用 `setState`，React 会重新渲染组件，但不会显示组件的中间状态。
+当 React 完成组件的挂载后，会调用`componentDidMount`方法。但别急！此时组件对用户仍然不可见，因为它尚未写入 DOM。那么“挂载”是什么意思呢？它意味着组件已挂载到 React 的虚拟 DOM 中，并准备推送到真实 DOM。此时，如果你调用`setState`，React 会重新渲染组件，但不会显示组件的中间状态。
 
-#### componentDidUpdate
+#### `componentDidUpdate`
 
-当你的组件更新时，React 会调用此方法。在初始挂载时，此方法不会被调用。它接收三个参数——`prevProps`、`prevState` 和 `snapshot`，分别代表之前的 props、之前的组件 state 以及来自 `getSnapshotBeforeUpdate` 方法的快照（如上所述）。以下是一个简单示例：
+当你的组件更新时，React 会调用此方法。在初始挂载时，此方法不会被调用。它接收三个参数——`prevProps`、`prevState`和`snapshot`，分别代表之前的 props、之前的组件 state 以及来自`getSnapshotBeforeUpdate`方法的快照（如上所述）。以下是一个简单示例：
 
-```
+
+
+```javascript
 componentDidUpdate(prevProps, prevState, snapshot) {
   if (this.props.id !== prevProps.id) {
     // 发起新的网络请求并更新 state
@@ -1236,7 +1133,7 @@ componentDidUpdate(prevProps, prevState, snapshot) {
 }
 ```
 
-#### componentWillUnmount
+#### `componentWillUnmount`
 
 顾名思义，此方法在组件被卸载时触发。这是清理全局事件监听器、取消网络请求和定时器等的最佳位置。这是 React 在组件生命周期中最后调用的方法。
 
@@ -1252,17 +1149,12 @@ componentDidUpdate(prevProps, prevState, snapshot) {
 
 ## 问题
 
-1.  类组件和函数式组件有什么区别？
-
-2.  将以下代码转译为有效的 JS：`<p><span>Hello</span> World</p>`
-
-3.  `useState` 是同步的吗？为什么是/为什么不是？
-
-4.  `useEffect` 钩子的依赖数组有什么作用？
-
-5.  `useEffect` 钩子在组件渲染/更新之前还是之后运行？
-
-6.  为什么钩子没有“生命周期方法”的概念？它与基于类的生命周期模型在根本上有什么不同？
+1. 类组件和函数式组件有什么区别？
+2. 将以下代码转译为有效的 JS：`<p><span>Hello</span> World</p>`
+3. `useState` 是同步的吗？为什么是/为什么不是？
+4. `useEffect` 钩子的依赖数组有什么作用？
+5. `useEffect` 钩子在组件渲染/更新之前还是之后运行？
+6. 为什么钩子没有“生命周期方法”的概念？它与基于类的生命周期模型在根本上有什么不同？
 
 # 第四章
 
@@ -1274,12 +1166,12 @@ componentDidUpdate(prevProps, prevState, snapshot) {
 
 ### 结构
 
-*   组件之间的通信
-*   使用 Context API
-    *   `createContext`
-    *   `useContext`
-*   `useReducer` 钩子
-*   Redux 作为替代方案
+- 组件之间的通信
+- 使用 Context API
+  - `createContext`
+  - `useContext`
+- `useReducer` 钩子
+- Redux 作为替代方案
 
 ### 目标
 
@@ -1293,49 +1185,52 @@ componentDidUpdate(prevProps, prevState, snapshot) {
 
 让我们看看本章将学习的一些常见通信方式：
 
-*   Props（父组件向子组件传递数据）
-*   Refs（从父组件调用子组件方法）
-*   Context API
-*   Redux（集中式状态）（后续章节）
+- Props（父组件向子组件传递数据）
+- Refs（从父组件调用子组件方法）
+- Context API
+- Redux（集中式状态）（后续章节）
 
 有趣的是，通过一点技巧，可以使用 Context API 实现双向通信，但 Redux 是真正解耦且集中的状态存储。Redux 是中高级应用的首选，因为它具有单向数据流（注意！这并不意味着它只能单向通信）、集中式状态共享和出色的调试工具。我们先来看看 props。
 
 ### Prop 逐层传递
 
-
-
-
 假设你的 React 应用中有一个 UI 主题，其中包含颜色和字体大小等值。当然，这些值需要被相应的输入字段和文本区域访问。然而，在元素层级中首先找到这些输入字段是一项繁琐的任务。你需要将 `fontSize` 属性一路向下传递到输入字段，即使中间的所有组件都不需要知道它。让我们看看这是什么。
 
 这是在组件之间共享数据最朴素的技术。你使用 props 将数据向下传递给子组件。考虑这个非常简单的例子：
 
-```
-import React from ‘react’
-import ReactDOM from ‘react-dom’
+```tsx
+import React from 'react'
+import ReactDOM from 'react-dom'
+
 const App: React.FC<{ name: string, age: number }> = props => {
-return <div>
-<p>We’ve got all of your information!</p>
-<Profile name={props.name} age={props.age} />
-</div>
+  return <div>
+    <p>We’ve got all of your information!</p>
+    <Profile name={props.name} age={props.age} />
+  </div>
 }
+
 const Profile: React.FC<{ name: string, age: number }> = props => {
-return <div>
-<p>Here’s a complete information about you</p>
-<p>We save everything in our databases</p>
-<NameFormatter name={props.name} />
-<AgeFormatter age={props.age} />
-</div>
+  return <div>
+    <p>Here’s a complete information about you</p>
+    <p>We save everything in our databases</p>
+    <NameFormatter name={props.name} />
+    <AgeFormatter age={props.age} />
+  </div>
 }
-constNameFormatter: React.FC<{ name: string }> = props => {
-return <p>Like you can see, here’s your name: <TextField value={props.name} type=”text” /></p>
+
+const NameFormatter: React.FC<{ name: string }> = props => {
+  return <p>Like you can see, here’s your name: <TextField value={props.name} type="text" /></p>
 }
-constAgeFormatter: React.FC<{ age: number }> = props => {
-return <p>Your age is: <TextField value={props.age} type=”number” /></p>
+
+const AgeFormatter: React.FC<{ age: number }> = props => {
+  return <p>Your age is: <TextField value={props.age} type="number" /></p>
 }
-constTextField: React.FC<{ value: any, type: string }> = props => {
-return <input type={props.type} value={props.value} />
+
+const TextField: React.FC<{ value: any, type: string }> = props => {
+  return <input type={props.type} value={props.value} />
 }
-ReactDOM.render(<App name=”Mehul” age={20} />, document.getElementById(‘root’))
+
+ReactDOM.render(<App name="Mehul" age={20} />, document.getElementById('root'))
 ```
 
 如果你观察这里，你会意识到组件 `App` 和 `Profile` 从来不需要知道 props `name` 和 `age`。只有 `NameFormatter` 和 `AgeFormatter` 需要各自的值来正确渲染 UI。然而，由于 props `name` 和 `age` 在 `App` 组件层级可用，为了到达 `NameFormatter` 和 `AgeFormatter` 组件层级，你需要将它们“钻取”下去。
@@ -1350,55 +1245,73 @@ React 中的 Ref 指的是创建对某物的引用。`ref` 是 React 的一个�
 
 这是 `Parent.tsx` 文件：
 
-```
+```tsx
 // Parent.tsx
-import React, { useRef } from ‘react’
-import ReactDOM from ‘react-dom’
-import ChildInput, { ChildInputHandles } from ‘./Child’
+import React, { useRef } from 'react'
+import ReactDOM from 'react-dom'
+import ChildInput, { ChildInputHandles } from './Child'
+
 const Parent: React.FC = () => {
-const ref = useRef<ChildInputHandles>(null)
-function setChildFocus() {
-if (ref.current) {
-ref.current.setFocus()
+  const ref = useRef<ChildInputHandles>(null)
+
+  function setChildFocus() {
+    if (ref.current) {
+      ref.current.setFocus()
+    }
+  }
+
+  return <div>
+    <ChildInput ref={ref} defaultValue="Hello World" />
+    <button onClick={setChildFocus}>Set focus to input</button>
+  </div>
 }
-}
-return <div>
-<ChildInput ref={ref} defaultValue=”Hello World” />
-<button onClick={setChildFocus}>Set focus to input</button>
-</div>
-}
-ReactDOM.render(<Parent />, document.getElementById(‘root’))
+
+ReactDOM.render(<Parent />, document.getElementById('root'))
 ```
 
 以及 `Child.tsx` 文件：
 
-```
+```tsx
 // Child.tsx
-import React, { RefForwardingComponent, forwardRef, useImperativeHandle, useRef } from ‘react’
+import React, {
+  RefForwardingComponent,
+  forwardRef,
+  useImperativeHandle,
+  useRef
+} from 'react'
+
 export interface ChildInputHandles {
-setFocus(): void
+  setFocus(): void
 }
+
 export interface ChildInputProps {
-defaultValue: string
+  defaultValue: string
 }
-constChildInput: RefForwardingComponent<ChildInputHandles, ChildInputProps> = (props, ref) => {
-constinputRef = useRef<HTMLInputElement>(null)
-useImperativeHandle(ref, () => ({
-setFocus() {
-if (inputRef.current) {
-inputRef.current.focus()
+
+const ChildInput: RefForwardingComponent<
+  ChildInputHandles,
+  ChildInputProps
+> = (props, ref) => {
+  const inputRef = useRef<HTMLInputElement>(null)
+
+  useImperativeHandle(ref, () => ({
+    setFocus() {
+      if (inputRef.current) {
+        inputRef.current.focus()
+      }
+    }
+  }))
+
+  return <input {...props} defaultValue={props.defaultValue} ref={inputRef} />
 }
-}
-}))
-return <input {…props} defaultValue={props.defaultValue} ref={inputRef} />
-}
+
 export default forwardRef(ChildInput)
 ```
 
 让我们看看这里发生了什么：
 
 1. 在 `Parent.tsx` 文件中，我们首先导入 `ChildRef` 组件，并使用 `useRef` 钩子为其提供一个 `ref`。我们使用 `<ChildInputHandles>` 来类型化我们可以通过 `ourref.current` 变量访问的方法和 props。
-2. 在 Parent 中有一个 `setChildFocus` 方法，它实际上使用 refs 穿透到子组件并调用指定的函数，即子组件内部的 `setFocus`。
+2. 在 `Parent` 中有一个 `setChildFocus` 方法，它实际上使用 refs 穿透到子组件并调用指定的函数，即子组件内部的 `setFocus`。
 3. 在 `ChildInput` 组件中，我们将其类型化为 `RefForwardingComponent`，作为 TypeScript 类型来类型化接收的 props 以及通过 `ref` 转发可用的 props。
 4. 我们使用另一个名为 `useImperativeHandle` 的钩子，它接受我们传递的 ref（参见 `ChildInput` 组件的第二个参数），并绑定某些方法，我们可以在父组件中直接在该 `ref` 上调用这些方法。
 5. 最后，我们在 Child 内部使用一个常规的 `inputRef` ref，以便在 Child 组件内部的 `setFocus` 定义中实际启用焦点。
@@ -1415,156 +1328,180 @@ export default forwardRef(ChildInput)
 
 这是我们的 `index.tsx` 文件：
 
-```
-import React from ‘react’
-import ReactDOM from ‘react-dom’
-import Component1 from ‘./Component1’
-ReactDOM.render(<Component1 />, document.getElementById(‘root’))
+```tsx
+import React from 'react'
+import ReactDOM from 'react-dom'
+import Component1 from './Component1'
+
+ReactDOM.render(<Component1 />, document.getElementById('root'))
 ```
 
 这是我们的 `Component1.tsx` 文件：
 
-```
-import React from ‘react’
-import Header from ‘./Header’
-import Content from ‘./Content’
-import Footer from ‘./Footer’
-import ‘./global.css’
-constComponent1: React.FC = () => {
-return (
-<div>
-<Header />
-<Content />
-<Footer />
-</div>
-)
+```tsx
+import React from 'react'
+import Header from './Header'
+import Content from './Content'
+import Footer from './Footer'
+import './global.css'
+
+const Component1: React.FC = () => {
+  return (
+    <div>
+      <Header />
+      <Content />
+      <Footer />
+    </div>
+  )
 }
+
 export default Component1
 ```
 
 这是我们的 `Header.tsx` 文件：
 
-```
-import React from ‘react’
+```tsx
+import React from 'react'
+
 const Header: React.FC = () => {
-return (
-<header>
-<h1>Welcome to my site!</h1>
-<p>Hello mehul</p>
-</header>
-)
+  return (
+    <header>
+      <h1>Welcome to my site!</h1>
+      <p>Hello mehul</p>
+    </header>
+  )
 }
+
 export default Header
 ```
 
 这是我们的 `Content.tsx` 文件：
 
-```
-import React from ‘react’
-import Sidebar from ‘./Sidebar’
-import RightArticle from ‘./RightArticle’
+```tsx
+import React from 'react'
+import Sidebar from './Sidebar'
+import RightArticle from './RightArticle'
+
 const Content: React.FC = () => {
-return (
-<section>
-<Sidebar />
-<RightArticle />
-</section>
-)
+  return (
+    <section>
+      <Sidebar />
+      <RightArticle />
+    </section>
+  )
 }
+
 export default Content
 ```
 
 这是我们的 `Sidebar.tsx` 文件：
 
-```
-import React from ‘react’
+```tsx
+import React from 'react'
+
 const Sidebar: React.FC = () => {
-return (
-<aside>
-<h2>Wow this is a nice sidebar</h2>
-<p>See my logo</p>
-<imgsrc=”https://codedamn.com/assets/images/red-logo.png” />
-</aside>
-)
+  return (
+    <aside>
+      <h2>Wow this is a nice sidebar</h2>
+      <p>See my logo</p>
+      <img src="https://codedamn.com/assets/images/red-logo.png" />
+    </aside>
+  )
 }
+
 export default Sidebar
 ```
 
 这是我们的 `RightArticle.tsx` 文件：
 
+```tsx
+import React from 'react'
+
+const RightArticle: React.FC = () => {
+  return (
+    <article>
+      <h2>This is my site!</h2>
+      <p>It is very nice</p>
+      <p>The mode right now is: light</p>
+      <button>Click here to turn on dark mode</button>
+    </article>
+  )
+}
+
+export default RightArticle
 ```
-import React from ‘react’
-```
-
-
-
-
-
-`constRightArticle: React.FC = () => {`
-`return (`
-`<article>`
-`<h2>This is my site!</h2>`
-`<p>It is very nice</p>`
-`<p>The mode right now is: light</p>`
-`<button>Click here to turn on dark mode</button>`
-`</article>`
-`)`
-`}`
-`export default RightArticle`
 
 这是我们的 `Footer.tsx` 文件：
 
-`import React from ‘react’`
-`const Footer: React.FC = () => {`
-`return (`
-`<footer>`
-`<p>Copyright &copy; Me.</p>`
-`<imgsrc=”https://codedamn.com/assets/images/red-logo.png” />`
-`</footer>`
-`)`
-`}`
-`export default Footer`
+```tsx
+import React from 'react'
+
+const Footer: React.FC = () => {
+  return (
+    <footer>
+      <p>Copyright &copy; Me.</p>
+      <img src="https://codedamn.com/assets/images/red-logo.png" />
+    </footer>
+  )
+}
+
+export default Footer
+```
 
 最后，为了添加一些 CSS，这是我们的样式表 `global.css`：
 
-`* {`
-`margin: 0;`
-`padding: 0;`
-`font-family: Arial;`
-`}`
-`header {`
-`text-align: center;`
-`padding: 10px;`
-`border-bottom: 1px solid #eee;`
-`}`
-`section {`
-`min-height: 80vh;`
-`display: flex;`
-`width: 960px;`
-`margin: 10px auto;`
-`justify-content: space-between;`
-`}`
-`article {`
-`flex-grow: 1;`
-`margin-left: 10px;`
-`background: rgb(226, 226, 226);`
-`}`
-`aside {`
-`max-width: 250px;`
-`background: rgb(226, 226, 226);`
-`}`
-`img {`
-`height: 80px;`
-`}`
-`footer {`
-`display: flex;`
-`flex-direction: row-reverse;`
-`justify-content: center;`
-`align-items: center;`
-`}`
-`footer img {`
+```css
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial;
+}
+
+header {
+  text-align: center;
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+section {
+  min-height: 80vh;
+  display: flex;
+  width: 960px;
+  margin: 10px auto;
+  justify-content: space-between;
+}
+
+article {
+  flex-grow: 1;
+  margin-left: 10px;
+  background: rgb(226, 226, 226);
+}
+
+aside {
+  max-width: 250px;
+  background: rgb(226, 226, 226);
+}
+
+img {
+  height: 80px;
+}
+
+footer {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+}
+
+footer img {
+```
+
+
+
 `height: 50px;`
+
 `margin-right: 20px;`
+
 `}`
 
 这大致会在你的屏幕上渲染出类似这样的效果：
@@ -1581,7 +1518,7 @@ import React from ‘react’
 
 请注意，我们使用的是 `create-react-app`。
 
-好的，现在你可以看到我们有一个按钮，上面写着**点击此处开启暗色模式**。点击后，我们会向 body 添加 **dark** 类，CSS 会处理后续样式。但其他变化呢？比如，如果我们处于暗色模式，我们希望将 logo 从红色改为白色，向 Header 组件传递已登录（假设）用户的用户名，并确保 article 组件知道全局暗色模式状态。
+好的，现在你可以看到我们有一个按钮，上面写着**点击此处开启暗色模式**。点击后，我们会向 `body` 添加 `dark` 类，CSS 会处理后续样式。但其他变化呢？比如，如果我们处于暗色模式，我们希望将 `logo` 从红色改为白色，向 `Header` 组件传递已登录（假设）用户的用户名，并确保 `article` 组件知道全局暗色模式状态。
 
 让我们使用 Context API 来填补这些空白。我们将创建一个上下文，用于不同的组件。
 
@@ -1589,7 +1526,7 @@ import React from ‘react’
 
 基于之前的工作，让我们看看我们的 `Component1.tsx` 文件：
 
-```
+```tsx
 import React, { createContext, useState } from ‘react’
 import Header from ‘./Header’
 import Content from ‘./Content’
@@ -1634,7 +1571,7 @@ constComponent1: React.FC = () => {
 export default Component1
 ```
 
-你看，我们在组件定义之外添加了另一个名为 context 的变量，其值为 `createContext({})`。
+你看，我们在组件定义之外添加了另一个名为 `context` 的变量，其值为 `createContext({})`。
 
 这会创建一个消费者和提供者，你可以在整个应用中使用它们来访问数据。让我们看看如何操作。
 
@@ -1648,7 +1585,7 @@ export default Component1
 
 我们更新后的 `Header.tsx` 文件：
 
-```
+```tsx
 import React, { useContext } from ‘react’
 import { StateContext } from ‘./Component1’
 
@@ -1666,9 +1603,9 @@ const Header: React.FC = () => {
 export default Header
 ```
 
-看看访问 name 是多么方便！一旦我们添加动态功能，事情就变得更有趣了。让我们先修改 CSS 文件以支持暗色模式：
+看看访问 `name` 是多么方便！一旦我们添加动态功能，事情就变得更有趣了。让我们先修改 CSS 文件以支持暗色模式：
 
-```
+```css
 /* 现有 CSS 代码 */
 /* 暗色模式 */
 .dark {
@@ -1685,7 +1622,7 @@ export default Header
 
 现在，让我们让 `RightArticle.tsx` 上的按钮生效：
 
-```
+```tsx
 import React, { useContext } from ‘react’
 import { StateContext } from ‘./Component1’
 
@@ -1717,7 +1654,7 @@ export default RightArticle
 
 `Sidebar.tsx`
 
-```
+```tsx
 import React, { useContext } from ‘react’
 import { StateContext } from ‘./Component1’
 
@@ -1738,7 +1675,7 @@ export default Sidebar
 
 以及 `Footer.tsx`：
 
-```
+```tsx
 import React, { useContext } from ‘react’
 import { StateContext } from ‘./Component1’
 
@@ -1758,7 +1695,7 @@ export default Footer
 
 就是这样！你可以看到父组件向子组件传递值是多么容易，子组件修改值后父组件也能相应调整。这就是网站在亮色和暗色模式下的样子：
 
-亮色模式
+#### 亮色模式
 
 ![](img/image13.jpg)
 
@@ -1776,7 +1713,7 @@ export default Footer
 
 这是我们的 `state.ts` 文件：
 
-```
+```tsx
 import { createContext } from ‘react’
 
 type Context = {
@@ -1819,11 +1756,7 @@ export constdefaultState = initialState
 
 这个文件里有很多内容！让我们看看发生了什么：
 
-1.  首先，有一个名为 `stateFunc` 的普通函数，它接收 state 和 action 作为输入。
-
-
-
-
+1. 首先，有一个名为 `stateFunc` 的普通函数，它接收 `state` 和 `action` 作为输入。
 
 2. 动作对象由 `type`（字符串）和 `payload`（任意值）组成。（你可以通过为 `type` 和 `payload` 指定更严格的类型来进一步缩小范围）。
 
@@ -1837,7 +1770,7 @@ export constdefaultState = initialState
 
 现在，回到 `Component1.tsx` 文件，它看起来像这样：
 
-```
+```tsx
 import React, { useReducer } from 'react'
 import Header from './Header'
 import Content from './Content'
@@ -1863,7 +1796,7 @@ export default Component1
 
 `useState` 和 `useReducer` 之间的一个主要区别是：使用 `useState` 时，第二个函数是状态的设置器，也就是说，在 `useState` 中，无论你传入什么参数，它都会被设置为状态；而在 `useReducer` 中，每当你调用 `dispatch` 方法时，`useReducer` 会调用你的 reducer，然后 reducer 方法返回的任何内容都会被设置为状态。考虑以下代码：
 
-```
+```tsx
 const [state, setState] = useState(0)
 setState(1) // ← 将状态变量设置为 1
 
@@ -1879,7 +1812,7 @@ dispatch({ type: 'do something', value: 100 }) // 现在 reducer 被调用
 
 **Footer.tsx**：
 
-```
+```tsx
 import React, { useContext } from 'react'
 import { context } from './state'
 
@@ -1898,7 +1831,7 @@ export default Footer
 
 **Header.tsx**：
 
-```
+```tsx
 import React, { useContext } from 'react'
 import { context } from './state'
 
@@ -1917,7 +1850,7 @@ export default Header
 
 **RightArticle.tsx**：
 
-```
+```tsx
 import React, { useContext } from 'react'
 import { context } from './state'
 
@@ -1945,9 +1878,11 @@ const RightArticle: React.FC = () => {
 export default RightArticle
 ```
 
-看到上面我们是如何使用 `dispatch` 函数的吗？它会调用我们的 reducer，而 reducer 会修改状态，然后状态会传播到使用它的组件中！
 
-还有 `Sidebar.tsx`：
+
+看到上面我们是如何使用`dispatch`函数的吗？它会调用我们的 reducer，而 reducer 会修改状态，然后状态会传播到使用它的组件中！
+
+还有`Sidebar.tsx`：
 
 ```
 import React, { useContext } from 'react'
@@ -1969,9 +1904,9 @@ export default Sidebar
 
 完成所有这些更改后，我们会发现屏幕上仍然显示相同的输出。但请考虑一下：现在在应用程序中实现更多有状态的功能变得非常容易。例如，假设你想通过点击按钮来更改登录用户名。
 
-你只需在任何组件中获取 `dispatch` 方法，并分发一个带有类型（比如 `CHANGE_USERNAME`）和任意负载的动作。
+你只需在任何组件中获取`dispatch`方法，并分发一个带有类型（比如`CHANGE_USERNAME`）和任意负载的动作。
 
-然后在另一个完全不同的文件 `state.tsx` 中，你可以在 reducer 中添加当动作是 `CHANGE_USERNAME` 时要执行的操作，如下所示：
+然后在另一个完全不同的文件`state.tsx`中，你可以在 reducer 中添加当动作是`CHANGE_USERNAME`时要执行的操作，如下所示：
 
 ```
 switch(type) {
@@ -1994,8 +1929,8 @@ switch(type) {
 ## 问题
 
 1. 什么是 React 的 Context API？
-2. `useReducer` 钩子是如何工作的？
-3. 什么是 `Context.Consumer`？`Context.Provider` 与 `Context.Consumer` 有何不同？
+2. `useReducer`钩子是如何工作的？
+3. 什么是`Context.Consumer`？`Context.Provider`与`Context.Consumer`有何不同？
 
 # 第 5 章
 
@@ -2007,24 +1942,24 @@ switch(type) {
 
 ### 结构
 
-* 服务端渲染
-* 为什么需要它
-* 使用 SSR 的 Hello World
-* `ReactDOMServer` 如何工作
-* 向 SSR 添加更多组件
-* 路由
-* 水合 `ReactDOM`
-* 获取数据
+- 服务端渲染
+- 为什么需要它
+- 使用 SSR 的 Hello World
+- `ReactDOMServer`如何工作
+- 向 SSR 添加更多组件
+- 路由
+- 水合`ReactDOM`
+- 获取数据
 
 ### 目标
 
-本章旨在向你介绍使用 React 进行服务端渲染的概念，并讨论为什么如果你刚开始一个项目并且需要 SEO 和性能达到不可妥协的水平，这是一个不错的选择。我们将通过创建一个非常简单的项目来演示如何使用 React SSR 实现 Hello World，然后逐步添加更多功能。最后，我们将给出强有力的论据，说明为什么选择像 `Next.js` 这样的服务端渲染框架来构建基于 React 的中大型 SSR 应用是一个好主意。
+本章旨在向你介绍使用 React 进行服务端渲染的概念，并讨论为什么如果你刚开始一个项目并且需要 SEO 和性能达到不可妥协的水平，这是一个不错的选择。我们将通过创建一个非常简单的项目来演示如何使用 React SSR 实现 Hello World，然后逐步添加更多功能。最后，我们将给出强有力的论据，说明为什么选择像`Next.js`这样的服务端渲染框架来构建基于 React 的中大型 SSR 应用是一个好主意。
 
 ### 服务端上的 React
 
 目前，当你使用 React 应用程序时，会发生以下情况：
 
-1. 你访问页面（假设是 [`example.com`](http://example.com)）
+1. 你访问页面（假设是[`example.com`](http://example.com)）。
 2. 页面向远程服务器发出请求。
 3. 远程服务器只向你发送一个像这样的简单 HTML 响应：
 
@@ -2032,20 +1967,11 @@ switch(type) {
 
 **图 5.1**
 
-
-
-
-
 4. 你的浏览器理解这个请求，如果仔细观察，你会发现请求中没有任何可读内容。它只是链接到一堆 CSS 和 JS 文件。
-
 5. 你的浏览器下载这些 JS 文件。
-
 6. 你的浏览器解析并运行这些 JS 文件（实际上是你编写的 React 代码）。
-
 7. 根据 React 代码，你的浏览器向服务器发出另一个 HTTP 请求，以获取 React 应用所需的数据。
-
 8. 最后，当数据可用时，首次有意义的内容渲染完成并呈现给用户。
-
 9. 此时 DOM 中填充了你期望看到的所有 HTML。以下是一个来自 codedamn.com 的使用 React 的示例：
 
 服务器实际返回的响应：
@@ -2062,7 +1988,7 @@ switch(type) {
 
 这种方法当然没问题。但还有另一种方式。你选择 React 是因为其灵活性和健壮性，这些特性隐藏在底层。但如果你希望页面完全渲染，而不是让浏览器为每个请求来回奔波呢？
 
-这时，**服务端渲染**（**SSR**）就派上用场了。顾名思义，服务端渲染意味着你的服务器将 React 代码渲染成你上面看到的类似 DOM 的代码，这样浏览器就可以直接渲染，无需或只需极少的 JS 支持。在此之前，我们先回答一些关于 SSR 的常见问题。
+这时，服务端渲染（SSR）就派上用场了。顾名思义，服务端渲染意味着你的服务器将 React 代码渲染成你上面看到的类似 DOM 的代码，这样浏览器就可以直接渲染，无需或只需极少的 JS 支持。在此之前，我们先回答一些关于 SSR 的常见问题。
 
 ### 什么是服务端渲染？
 
@@ -2073,7 +1999,6 @@ switch(type) {
 如果客户端渲染这么好，为什么在 2020 年代我们还要考虑服务端渲染呢？SSR 有其不可忽视的优势，其中包括：
 
 1. SEO：搜索引擎喜欢读取 HTML 标记并从中理解页面内容。大多数搜索引擎（除了像 Google 这样的高级引擎）无法真正解释大量 JavaScript，因此必须严重依赖你的“源代码”内容。而对于客户端网站，源代码几乎不包含任何内容，因此搜索引擎无法索引你的网站，从而影响排名。
-
 2. 性能：使用 SSR 时性能明显提升。由于 SSR 在交付前已经渲染了页面，你无需担心 JS 代码中不同浏览器支持、不同设备支持 API 等问题，因为大部分代码根本不会交付给客户端。
 
 因此，为了与搜索引擎兼容，实现 SSR 至关重要，这样你就能两全其美。
@@ -2084,31 +2009,29 @@ switch(type) {
 
 ### ReactDOM
 
-当我们执行 `ReactDOM.render(<App />, element)` 时，实际上是在告诉 React 将 DOM 树（你在 Web 应用中看到的 UI）与宿主树（JavaScript 中包含的 React 代码）进行匹配。
+当我们执行`ReactDOM.render(<App />, element)`时，实际上是在告诉 React 将 DOM 树（你在 Web 应用中看到的 UI）与宿主树（JavaScript 中包含的 React 代码）进行匹配。
 
-我们之前讨论过 `App` 如何展开成一个嵌套对象（本质上是一棵树）。`ReactDOM` 是该特定树的渲染器之一。你能想到其他例子吗？React Native 可以被视为另一个完整的渲染器。
+我们之前讨论过`App`如何展开成一个嵌套对象（本质上是一棵树）。`ReactDOM`是该特定树的渲染器之一。你能想到其他例子吗？React Native 可以被视为另一个完整的渲染器。
 
-还有另一个渲染器叫做 `ReactDOMServer`。顾名思义，`ReactDOMServer` 允许你编写 React 代码，然后不是将其渲染到浏览器环境中，而是在服务器上将其渲染为字符串，作为（接近）静态标记发送给客户端。
+还有另一个渲染器叫做`ReactDOMServer`。顾名思义，`ReactDOMServer`允许你编写 React 代码，然后不是将其渲染到浏览器环境中，而是在服务器上将其渲染为字符串，作为（接近）静态标记发送给客户端。
 
 现在让我们配置第一个服务端渲染的 React 应用。
 
 ### SSR 项目配置
 
-1. 创建一个名为 `react-ssr` 的空目录。
+1. 创建一个名为`react-ssr`的空目录。
+2. 在终端中，`cd`进入该目录。
+3. 执行`npm init -y`以使用默认的`npm`配置初始化项目。
 
-2. 在终端中，`cd` 进入该目录。
-
-3. 执行 `npm init -y` 以使用默认的 `npm` 配置初始化项目。
-
-   先安装相关的 `npm` 包，运行以下命令：
+   先安装相关的`npm`包，运行以下命令：
 
    `npm install react react-dom express --save`
 
-   其他 `dev` 依赖包括：
+   其他`dev`依赖包括：
 
    `npm install @babel/core @babel/preset-react @babel/register webpack webpack-cli --save-dev`
 
-   此时，你的 `package.json` 中的 `dependencies` 和 `devDependencies` 部分应大致如下：
+   此时，你的`package.json`中的`dependencies`和`devDependencies`部分应大致如下：
 
    ```
    "dependencies": {
@@ -2126,7 +2049,7 @@ switch(type) {
    },
    ```
 
-4. 好了。依赖项正确设置后，我们来编写一些代码。以下是我们的 `index.js` 文件：
+4. 好了。依赖项正确设置后，我们来编写一些代码。以下是我们的`index.js`文件：
 
    ```
    index.js
@@ -2138,11 +2061,11 @@ switch(type) {
    require( "./src/server" )
    ```
 
-   这将是我们脚本的入口点。你可以看到我们直接在脚本文件中使用了 `@babel/register` 包。这允许我们在 Node 脚本中直接使用 JSX。
+   这将是我们脚本的入口点。你可以看到我们直接在脚本文件中使用了`@babel/register`包。这允许我们在 Node 脚本中直接使用 JSX。
 
-5. 虽然也可以通过 `.babelrc` 配置 babel 来解析服务器文件，但我们现在保持简单，采用最简方法。
+5. 虽然也可以通过`.babelrc`配置 babel 来解析服务器文件，但我们现在保持简单，采用最简方法。
 
-好了，设置好 `index.js` 文件后，我们来看 `server.js` 文件：
+好了，设置好`index.js`文件后，我们来看`server.js`文件：
 
 ```
 // server.js
@@ -2178,23 +2101,19 @@ function template(reactDom) {
 
 好的！我们来分解一下这个文件中发生的事情：
 
-1. 首先，我们引入必要的模块：`express` 模块和 `react` 模块。
-
-2. 我们还引入了 `react-dom`，但注意，我们引入的是 `react-dom/server` 而不是 `react-dom`。
-
-3. 这让我们能够使用名为 `renderToString` 的方法，该方法顾名思义：不是将宿主树（JS 中的 vDOM 表示）渲染到实际的 DOM，而是将其渲染为简单的字符串。
-
-4. 最后，我们使用 `res.send` 将响应发送回客户端。
-
+1. 首先，我们引入必要的模块：`express`模块和`react`模块。
+2. 我们还引入了`react-dom`，但注意，我们引入的是`react-dom/server`而不是`react-dom`。
+3. 这让我们能够使用名为`renderToString`的方法，该方法顾名思义：不是将宿主树（JS 中的 vDOM 表示）渲染到实际的 DOM，而是将其渲染为简单的字符串。
+4. 最后，我们使用`res.send`将响应发送回客户端。
 5. 注意，我们使用模板函数将构建好的字符串注入到响应中。
 
-一旦我们使用 `node index.js` 启动服务器，就能看到正确的响应：
+一旦我们使用`node index.js`启动服务器，就能看到正确的响应：
 
 ![](img/image121.jpg)
 
 **图 5.4**
 
-在上面的截图中，你可以看到服务器发送了 **Hello**，这实际上是运行 React 代码的结果：
+在上面的截图中，你可以看到服务器发送了**Hello**，这实际上是运行 React 代码的结果：
 
 ![](img/image81.jpg)
 
@@ -2203,9 +2122,6 @@ function template(reactDom) {
 当你查看页面的源代码时，如上图所示，你会发现这实际上是由服务器发送的，而不是由客户端渲染的。
 
 ### 编写更多组件
-
-
-
 
 我们上面已经用 React SSR 完成了基本的 Hello World，这是第一次使用 React 进行服务端渲染。现在让我们添加更多组件。先从首页和关于页面开始：
 
@@ -2220,7 +2136,7 @@ function Home(props) {
 module.exports = Home
 ```
 
-以及 `About.js` 页面：
+以及`About.js`页面：
 
 ```javascript
 const React = require('react')
@@ -2232,17 +2148,17 @@ function About(props) {
 module.exports = About
 ```
 
-但你是否发现了上面的问题？我们如何将它们链接起来？也就是说，当你在首页点击那个链接时，关于页面应该打开；同样，当你直接访问 `/about` 端点时，它应该直接提供那个特定页面。让我们来做一些路由。
+但你是否发现了上面的问题？我们如何将它们链接起来？也就是说，当你在首页点击那个链接时，关于页面应该打开；同样，当你直接访问`/about`端点时，它应该直接提供那个特定页面。让我们来做一些路由。
 
 ### SSR 中的路由
 
 路由是当今 Web 应用最重要的方面之一，尤其是当应用稍微复杂时。它允许你在不同的 URL 路径上提供不同的内容。
 
-首先安装 react-router 包，它将帮助我们实现路由。
+首先安装`react-router`包，它将帮助我们实现路由。
 
 `npm install react-router-dom --save`
 
-安装完成后，我们就可以做一些改动了。让我们稍微修改一下 `server.js` 文件：
+安装完成后，我们就可以做一些改动了。让我们稍微修改一下`server.js`文件：
 
 ```javascript
 // server.js
@@ -2282,9 +2198,9 @@ function template(reactDom) {
 
 好了！让我们看看这里改了什么：
 
-*   我们从 `react-router-dom` 包中引入了 `StaticRouter`、`Switch` 和 `Route` 模块。
-*   `StaticRouter` 是一个简单的路由器，其位置永远不会改变。这没问题，因为我们只是在服务器上渲染 React 字符串，不涉及用户交互。
-*   然后我们定义了 `Switch` 来匹配第一个路由，接着是 `Route`，它包含了在特定路由上显示哪个组件的额外信息。
+- 我们从`react-router-dom`包中引入了`StaticRouter`、`Switch`和`Route`模块。
+- `StaticRouter`是一个简单的路由器，其位置永远不会改变。这没问题，因为我们只是在服务器上渲染 React 字符串，不涉及用户交互。
+- 然后我们定义了`Switch`来匹配第一个路由，接着是`Route`，它包含了在特定路由上显示哪个组件的额外信息。
 
 如果我们现在访问页面，它会显示首页：
 
@@ -2292,13 +2208,15 @@ function template(reactDom) {
 
 **图 5.6**
 
-但如果你访问 `/about` 路由，它仍然只显示相同的首页组件，如下面的截图所示：
+但如果你访问`/about`路由，它仍然只显示相同的首页组件，如下面的截图所示：
 
 ![](img/image23.jpg)
 
 **图 5.7**
 
-上面的截图仍然显示渲染的是 `Home` 组件。这是为什么？仔细看，我们的 `StaticRouter` 虽然是静态的，但仍然需要知道正确的位置才能解析正确的路由。我们在静态路由器上缺少了 location 属性。另外，对于 Express，`req.url` 提供了请求的路径（即 `/about` 或 `/` 或 `/test`），这正是我们需要传递给 `StaticRouter` 的内容。让我们在 `server.js` 文件中做如下修改：
+上面的截图仍然显示渲染的是`Home`组件。这是为什么？仔细看，我们的`StaticRouter`虽然是静态的，但仍然需要知道正确的位置才能解析正确的路由。我们在静态路由器上缺少了`location`属性。另外，对于 Express，`req.url`提供了请求的路径（即`/about`或`/`或`/test`），这正是我们需要传递给`StaticRouter`的内容。让我们在`server.js`文件中做如下修改：
+
+
 
 ```javascript
 <StaticRouter location={req.url}>
@@ -2309,19 +2227,19 @@ function template(reactDom) {
 </StaticRouter>
 ```
 
-所以我们只是给 `StaticRouter` 添加了 `location={req.url}`。完成这一步后，现在如果你直接访问 `/about`，我们将得到 `/about` 组件：
+所以我们只是给`StaticRouter`添加了`location={req.url}`。完成这一步后，现在如果你直接访问`/about`，我们将得到`/about`组件：
 
 ![](img/image32.jpg)
 
 **图 5.8**
 
-在上面的截图中，我们看到问题已经解决。它正确地渲染了 `About` 组件在正确的 URL 路径上。到目前为止一切顺利。但我们还可以做得更好。
+在上面的截图中，我们看到问题已经解决。它正确地渲染了`About`组件在正确的 URL 路径上。到目前为止一切顺利。但我们还可以做得更好。
 
 ### 客户端 React
 
 React 是一个客户端库。然而，在上述 SSR React 中，我们看到我们可以使用基于静态路由器的系统在服务器上编写类似 React 的标记，并将其发送到客户端机器。但在这个过程中，我们丢失了前端的实际“React”代码。让我们把它找回来。
 
-让我们创建另一个名为 `client.js` 的文件，并在其中编写以下代码：
+让我们创建另一个名为`client.js`的文件，并在其中编写以下代码：
 
 ```javascript
 import React from 'react'
@@ -2329,7 +2247,8 @@ import ReactDOM from 'react-dom'
 import Home from './components/Home'
 import About from './components/About'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
-constjsx = (
+
+const jsx = (
   <Router>
     <Switch>
       <Route path="/" component={Home} exact={true} />
@@ -2337,41 +2256,48 @@ constjsx = (
     </Switch>
   </Router>
 )
+
 const app = document.getElementById('root')
 ReactDOM.hydrate(jsx, app)
 ```
 
-我们将把这个文件与 `server.js` 放在一起。为了明确文件结构，以下是到目前为止所有文件的组织：
+我们将把这个文件与`server.js`放在一起。为了明确文件结构，以下是到目前为止所有文件的组织：
 
 ![](img/image111.jpg)
 
 **图 5.9**
 
-上面的截图显示了项目中的文件结构。你在前面的代码中可能已经注意到，我们使用了 `ReactDOM.hydrate` 而不是 `ReactDOM.render`，我们将在本节后面讨论这一点。
+上面的截图显示了项目中的文件结构。你在前面的代码中可能已经注意到，我们使用了`ReactDOM.hydrate`而不是`ReactDOM.render`，我们将在本节后面讨论这一点。
 
-首先，让我们设置其他东西。我们还将修改 server.js 文件以包含我们的 client.js 文件。最终 `server.js` 文件应该如下所示：
+首先，让我们设置其他东西。我们还将修改`server.js`文件以包含我们的`client.js`文件。最终`server.js`文件应该如下所示：
 
 ```javascript
 const express = require("express")
 const app = express()
 const React = require("react")
-constReactDOMServer = require("react-dom/server")
+const ReactDOMServer = require("react-dom/server")
 const { StaticRouter, Switch, Route } = require("react-router-dom")
 const Home = require('./components/Home')
 const About = require('./components/About')
+
 app.use(express.static(path.resolve(__dirname, '../dist')))
+
 app.get('/*', (req, res) => {
   console.log(req.url)
-  constjsx = <StaticRouter location={req.url}>
+
+  const jsx = <StaticRouter location={req.url}>
     <Switch>
       <Route path="/" component={Home} exact={true} />
       <Route path="/about" component={About} exact={true} />
     </Switch>
   </StaticRouter>
-  constreactDom = ReactDOMServer.renderToString(jsx)
+
+  const reactDom = ReactDOMServer.renderToString(jsx)
   res.send(template(reactDom))
-});
+})
+
 app.listen(1337)
+
 function template(reactDom) {
   return '
 <!DOCTYPE html>
@@ -2395,16 +2321,17 @@ function template(reactDom) {
 
 ### ReactDOM.hydrate
 
-我们没有使用 `ReactDOM.render`，而是使用了 `ReactDOM.hydrate`。顾名思义，`ReactDOM.hydrate` 只是*水合*现有的布局，它不会创建布局并替换 DOM 中的内容。`ReactDOM.hydrate` 知道布局字符串来自服务器，因此它只需要将客户端 JS（即事件和监听器）与来自服务器的 HTML 代码同步。因此，我们使用了 hydrate 方法。
+我们没有使用`ReactDOM.render`，而是使用了`ReactDOM.hydrate`。顾名思义，`ReactDOM.hydrate`只是*水合*现有的布局，它不会创建布局并替换 DOM 中的内容。`ReactDOM.hydrate`知道布局字符串来自服务器，因此它只需要将客户端 JS（即事件和监听器）与来自服务器的 HTML 代码同步。因此，我们使用了 hydrate 方法。
 
-这里需要注意一件有趣的事情：`ReactDOM.hydrate` 期望你在前端（client.js 中）提供的布局与后端（`server.js`）提供的布局接近，否则会给你带来问题。
+这里需要注意一件有趣的事情：`ReactDOM.hydrate`期望你在前端（`client.js`中）提供的布局与后端（`server.js`）提供的布局接近，否则会给你带来问题。
 
 最后，让我们为前端设置 webpack，以便我们可以使用 import/export 语法，并实际在前端使用 React。
 
-我们之前已经安装了 webpack，所以直接创建一个 webpack.config.js 文件，如下所示：
+我们之前已经安装了 webpack，所以直接创建一个`webpack.config.js`文件，如下所示：
 
 ```javascript
 const path = require('path')
+
 module.exports = {
   mode: 'development',
   devtool: 'source-map',
@@ -2416,31 +2343,27 @@ module.exports = {
       {
         test: /\.jsx?$/,
         exclude: /(node_modules|bower_components)/,
+        loader: "babel-loader",
+      }
+    ],
+  },
+  output: {
+    path: path.resolve(__dirname, 'dist'),
+    filename: '[name].bundle.js',
+  }
+}
 ```
-
-
-
-
-`loader: "babel-loader",`
-`}`
-`],`
-`},`
-`output: {`
-`path: path.resolve(__dirname, 'dist'),`
-`filename: '[name].bundle.js',`
-`}`
-`}`
 
 好了！让我们快速看一下 webpack 配置文件中发生了什么：
 
-*   我们将入口点设置为 `src/client.js` 文件。
-*   我们只有一条规则，每当遇到 JS 或 JSX 文件时，让 `babel-loader` 处理它。
-*   Babel 加载器将使用我们接下来要创建的 `.babelrc` 文件。
-*   最后，将文件输出到 `dist` 目录中，文件名为 `app.bundle.js`（`[name]` 会被替换为 `app`，即入口点的键）。
+- 我们将入口点设置为`src/client.js`文件。
+- 我们只有一条规则，每当遇到 JS 或 JSX 文件时，让`babel-loader`处理它。
+- Babel 加载器将使用我们接下来要创建的`.babelrc`文件。
+- 最后，将文件输出到`dist`目录中，文件名为`app.bundle.js`（`[name]`会被替换为`app`，即入口点的键）。
 
-而我们的 `.babelrc` 文件将如下所示：
+而我们的`.babelrc`文件将如下所示：
 
-```
+```json
 {
   "presets": [
     "@babel/preset-react"
@@ -2449,20 +2372,20 @@ module.exports = {
 }
 ```
 
-请记住，我们之前已经安装过这些内容，所以可以直接使用。最后，让我们进入 `package.json` 并创建两个脚本：
+请记住，我们之前已经安装过这些内容，所以可以直接使用。最后，让我们进入`package.json`并创建两个脚本：
 
-```
+```json
 "scripts": {
-  "server": "nodemonindex.js",
+  "server": "nodemon index.js",
   "client": "webpack --watch --progress"
 }
 ```
 
-这里，我们定义了两个脚本，一个用于启动 Express 服务器，另一个用于构建客户端的更改（这些更改需要由 webpack/babel 编译后，浏览器才能读取）。
+这里，我们定义了两个脚本，一个用于启动 Express 服务器，另一个用于构建客户端的更改（这些更改需要由 webpack/Babel 编译后，浏览器才能读取）。
 
-打开两个不同的终端，在第一个终端中运行 `npm run server`，在第二个终端中运行 `npm run client`。
+打开两个不同的终端，在第一个终端中运行`npm run server`，在第二个终端中运行`npm run client`。
 
-最后，再次访问 `http://localhost:1337` 并查看源代码：
+最后，再次访问`http://localhost:1337`并查看源代码：
 
 ![](img/image61.jpg)
 
@@ -2474,13 +2397,13 @@ module.exports = {
 
 **图 5.11**
 
-请看上面的截图；它显示了 `app.bundle.js` 文件的内容。太棒了！那么我们现在如何使用它呢？嗯，你可以看到我们已经在 `client.js` 和 `server.js` 文件之间共享了 `components` 文件夹，因此我们做的一次更改会在两个空间中重新渲染。
+请看上面的截图；它显示了`app.bundle.js`文件的内容。太棒了！那么我们现在如何使用它呢？嗯，你可以看到我们已经在`client.js`和`server.js`文件之间共享了`components`文件夹，因此我们做的一次更改会在两个空间中重新渲染。
 
 所以，让我们继续，不再使用直接指向关于页面的锚链接，而是使用 React Router，这样当用户点击超链接时，能提供无缝的体验。
 
-将 `Home.js` 文件更新为：
+将`Home.js`文件更新为：
 
-```
+```javascript
 // Home.js
 const React = require('react')
 const { Link } = require('react-router-dom')
@@ -2494,7 +2417,7 @@ function Home(props) {
 module.exports = Home
 ```
 
-现在，当你访问主页并点击关于链接时，页面不会像之前那样重新加载，而是无需刷新即可导航到 `/about` 路由。同样，如果你直接访问 `/about` 页面，服务器只会获取 `/about` 页面的内容，并且这些内容同样会在源代码中可见。
+现在，当你访问主页并点击关于链接时，页面不会像之前那样重新加载，而是无需刷新即可导航到`/about`路由。同样，如果你直接访问`/about`页面，服务器只会获取`/about`页面的内容，并且这些内容同样会在源代码中可见。
 
 这就是服务端渲染！
 
@@ -2502,13 +2425,15 @@ module.exports = Home
 
 尽管使用 React 进行 SSR 很棒，但有时你会遇到某些困难，因为有些东西只在浏览器环境中可用，有些只在 Node 环境中可用。其中之一就是如何获取数据。
 
-让我们使用一个名为 `isomorphic-fetch` 的包，它允许我们在两种环境中使用 `fetch`：
+让我们使用一个名为`isomorphic-fetch`的包，它允许我们在两种环境中使用`fetch`：
 
-`npm install isomorphic-fetch --save`
-
-现在，让我们修改 `Home.js` 文件，使其看起来像这样：
-
+```bash
+npm install isomorphic-fetch --save
 ```
+
+现在，让我们修改`Home.js`文件，使其看起来像这样：
+
+```javascript
 // Home.js
 const React = require('react')
 const { Link } = require('react-router-dom')
@@ -2535,7 +2460,7 @@ function Home(props) {
 module.exports = Home
 ```
 
-注意这里；我们使用了 hooks。由于 `useEffect` 钩子在组件挂载后运行，其中的代码无论如何都不会在服务器上执行。所以我们可以直接使用 `fetch` 而不需要 `isomorphic-fetch` 库，但暂时我们还是继续使用它。
+注意这里；我们使用了 hooks。由于`useEffect`钩子在组件挂载后运行，其中的代码无论如何都不会在服务器上执行。所以我们可以直接使用`fetch`而不需要`isomorphic-fetch`库，但暂时我们还是继续使用它。
 
 然后我们最终获取数据并在客户端显示：
 
@@ -2547,9 +2472,9 @@ module.exports = Home
 
 ### 在服务器上获取数据
 
-思路是，我们将通过一个属性暴露特定组件所需的任何数据，然后在实际将 JSX 渲染为字符串之前，解析所有的 Promise 和数据获取。最后，以某种方式同步状态和 React 代码。让我们简要看看如何实现。让我们看看更新后的 `Home.js` 文件。请稍等一下：
+思路是，我们将通过一个属性暴露特定组件所需的任何数据，然后在实际将 JSX 渲染为字符串之前，解析所有的 Promise 和数据获取。最后，以某种方式同步状态和 React 代码。让我们简要看看如何实现。让我们看看更新后的`Home.js`文件。请稍等一下：
 
-```
+```javascript
 // Home.js
 const React = require('react')
 const { Link } = require('react-router-dom')
@@ -2583,16 +2508,16 @@ module.exports = Home
 
 让我们通过以下几点来理解上述代码的作用：
 
-*   好了。这里，我们添加了一些检查，看数据是否已经可用。
-*   首先，我们使用 `process.env.BROWSER` 检查是否在浏览器环境中（我们稍后会在 webpack 中配置这个）。
-*   如果是浏览器，我们希望从全局 window 对象加载状态（我们会设置好这个）。
-*   `Home.name` 返回 "Home"，即函数名。
+- 好了。这里，我们添加了一些检查，看数据是否已经可用。
+- 首先，我们使用`process.env.BROWSER`检查是否在浏览器环境中（我们稍后会在 webpack 中配置这个）。
+- 如果是浏览器，我们希望从全局 window 对象加载状态（我们会设置好这个）。
+- `Home.name`返回"Home"，即函数名。
 
-我们还为 `Home` 组件添加了 `asyncData` 属性，稍后将用于在服务器上预取数据。
+我们还为`Home`组件添加了`asyncData`属性，稍后将用于在服务器上预取数据。
 
-让我们也更新 `About.js` 文件：
+让我们也更新`About.js`文件：
 
-```
+```javascript
 const React = require('react')
 const { Link } = require('react-router-dom')
 const { useState, useEffect } = React
@@ -2622,11 +2547,13 @@ About.asyncData = 'https://jsonplaceholder.typicode.com/posts/2'
 module.exports = About
 ```
 
-与 `Home.js` 类似，我们在 `About.js` 文件中也在获取更多数据。此外，我们为 `About` 组件附加了一个 `asyncData` 属性，稍后将用到。
+与`Home.js`类似，我们在`About.js`文件中也在获取更多数据。此外，我们为`About`组件附加了一个`asyncData`属性，稍后将用到。
 
-另外，当 webpack 构建我们的脚本时，我们需要访问 `process.env.BROWSER` 变量，因此我们将在 `webpack.config.js` 文件中添加它。最终我们的 `webpack.config.js` 文件将如下所示：
+另外，当 webpack 构建我们的脚本时，我们需要访问`process.env.BROWSER`变量，因此我们将在`webpack.config.js`文件中添加它。最终我们的`webpack.config.js`文件将如下所示：
 
-```
+
+
+```js
 const path = require('path')
 const webpack = require('webpack')
 
@@ -2652,10 +2579,7 @@ module.exports = {
 }
 ```
 
-
-
-
-```
+```js
 plugins: [
   new webpack.DefinePlugin({
     'process.env': {
@@ -2665,9 +2589,9 @@ plugins: [
 ]
 ```
 
-完成这一步后，我们来看看需要在 `server.js` 文件中做哪些修改：
+完成这一步后，我们来看看需要在`server.js`文件中做哪些修改：
 
-```
+```js
 const express = require("express")
 const app = express()
 const React = require("react")
@@ -2721,19 +2645,19 @@ window.componentsData = ${JSON.stringify(data)}
 }
 ```
 
-好了！这个文件里发生了什么？
+## 好了！这个文件里发生了什么？
 
-*   首先，我们将所有组件收集到一个名为 `components` 的数组中。
-*   然后，我们创建一个 Promise 数组。最终，这个数组将包含多个未完成的 fetch 请求。
-*   这里，我们从 `components` 数组开始，创建一个新的对象数组，每个对象包含要 fetch 的链接（`asyncData` 链接）和组件的名称（在 JavaScript 中，`Function.name` 会返回该函数的名称）。
-*   我们使用名称将其链接到特定组件。
-*   最后，我们过滤这个数组，移除那些没有需要 fetch 的 `async` 数据的元素。
-*   完成后，我们进行最终的映射，在其中 fetch 所有数据并返回 promise。注意，在 fetch 请求中，我将 `item.name` 作为 `asyncData` 对象的键，将 `json`（远程服务器返回的结果）作为 `asyncData` 对象的值。
-*   此时，`promises` 包含了所有并行进行的 fetch 请求。现在，我们需要等待所有 fetch 请求完成，然后再将数据发送回客户端。
-*   因此，我们使用 `Promise.all` 等待所有 Promise 解析。完成后，我们构建 `ReactDOM` 并将其发送给客户端。
-*   对于客户端，我们执行正常的 `hydrate`，但同时也通过一个 script 标签发送客户端状态，如 HTML 部分末尾所示。
+- 首先，我们将所有组件收集到一个名为`components`的数组中。
+- 然后，我们创建一个 Promise 数组。最终，这个数组将包含多个未完成的 fetch 请求。
+- 这里，我们从`components`数组开始，创建一个新的对象数组，每个对象包含要 fetch 的链接（`asyncData`链接）和组件的名称（在 JavaScript 中，`Function.name`会返回该函数的名称）。
+- 我们使用名称将其链接到特定组件。
+- 最后，我们过滤这个数组，移除那些没有需要 fetch 的`async`数据的元素。
+- 完成后，我们进行最终的映射，在其中 fetch 所有数据并返回 promise。注意，在 fetch 请求中，我将`item.name`作为`asyncData`对象的键，将`json`（远程服务器返回的结果）作为`asyncData`对象的值。
+- 此时，`promises`包含了所有并行进行的 fetch 请求。现在，我们需要等待所有 fetch 请求完成，然后再将数据发送回客户端。
+- 因此，我们使用`Promise.all`等待所有 Promise 解析。完成后，我们构建`ReactDOM`并将其发送给客户端。
+- 对于客户端，我们执行正常的`hydrate`，但同时也通过一个 script 标签发送客户端状态，如 HTML 部分末尾所示。
 
-完成这些操作后，你会看到前端不再有 `fetching` 数据的过程。页面立即加载，并且在 DevTools 中看不到 fetch 请求，因为所有数据都已经从服务器端提供给我们：
+完成这些操作后，你会看到前端不再有`fetching`数据的过程。页面立即加载，并且在 DevTools 中看不到 fetch 请求，因为所有数据都已经从服务器端提供给我们：
 
 ![](img/image14.jpg)
 
@@ -2741,95 +2665,88 @@ window.componentsData = ${JSON.stringify(data)}
 
 在上面的截图中，你可以看到没有向远程服务器发送数据请求，因为当服务器发送数据时，前端已经拥有了这些数据。太棒了！但即使采用这种方法，我们仍然遇到一些问题：
 
-我们构建的树在服务器端和客户端渲染之间变得不一致。这是因为，当 React 代码在服务器端渲染时，它不知道 `process.env.BROWSER`，因此不会预填充状态变量，从而使用了那个 `Loading` 片段。然而，在客户端，当 React 重新水合数据时，它已经在全局作用域中拥有了数据，因此它会用实际数据重新水合，从而造成不一致，React 也会在控制台中向我们报告这一点：
+我们构建的树在服务器端和客户端渲染之间变得不一致。这是因为，当 React 代码在服务器端渲染时，它不知道`process.env.BROWSER`，因此不会预填充状态变量，从而使用了那个`Loading`片段。然而，在客户端，当 React 重新水合数据时，它已经在全局作用域中拥有了数据，因此它会用实际数据重新水合，从而造成不一致，React 也会在控制台中向我们报告这一点：
 
 ![](img/image71.jpg)
 
 **图 5.14**
 
-*   在上面的截图中，你可以看到 React 抱怨 DOM 不匹配，即它期望的内容与服务器实际发送的内容不一致。
-*   另一个问题是，我们 fetch 了所有组件的 `async` 数据，尽管我们只需要 fetch 当前活动组件的 `async` 数据。
-*   我们也没有处理嵌套组件的问题，即许多嵌套组件需要彼此之间的 `async` 数据。
-*   单个组件可能需要来自不同来源的多个 `async` 数据；我们也没有处理这种情况。
+- 在上面的截图中，你可以看到 React 抱怨 DOM 不匹配，即它期望的内容与服务器实际发送的内容不一致。
+- 另一个问题是，我们 fetch 了所有组件的`async`数据，尽管我们只需要 fetch 当前活动组件的`async`数据。
+- 我们也没有处理嵌套组件的问题，即许多嵌套组件需要彼此之间的`async`数据。
+- 单个组件可能需要来自不同来源的多个`async`数据；我们也没有处理这种情况。
 
 ## 结论
 
-请记住，我们之前讨论过，使用 React 进行 SSR 并非易事；你需要处理许多边缘情况才能使其正常工作。因此，自己修复每一个小细节是不可行的。所以，我们将使用某些框架，这些框架会为我们抽象掉许多细节，让我们能够更专注于代码本身，而不是这些需要实现的小细节。在接下来的章节中，我们将讨论 Next.js，这是一个流行的 React 框架，用于创建生产就绪的服务器端渲染应用程序。
+请记住，我们之前讨论过，使用 React 进行 SSR 并非易事；你需要处理许多边缘情况才能使其正常工作。因此，自己修复每一个小细节是不可行的。所以，我们将使用某些框架，这些框架会为我们抽象掉许多细节，让我们能够更专注于代码本身，而不是这些需要实现的小细节。在接下来的章节中，我们将讨论`Next.js`，这是一个流行的 React 框架，用于创建生产就绪的服务器端渲染应用程序。
 
 ## 问题
 
-1.  服务器端渲染与普通的客户端 React 代码有何不同？
-2.  PHP 是一种服务器端渲染语言吗？为什么是/为什么不是？
-3.  Babel 的作用是什么？
-4.  `StaticRouter` 和普通 `Router` 有什么区别？
-5.  `ReactDOM.render` 和 `ReactDOM.hydrate` 有什么区别？
-6.  同构 JavaScript 是什么意思？
+1. 服务器端渲染与普通的客户端 React 代码有何不同？
+2. PHP 是一种服务器端渲染语言吗？为什么是/为什么不是？
+3. Babel 的作用是什么？
+4. `StaticRouter`和普通`Router`有什么区别？
+5. `ReactDOM.render`和`ReactDOM.hydrate`有什么区别？
+6. 同构 JavaScript 是什么意思？
 
 # 第 6 章
 
 ## Next.js 简介
 
-在上一章中，我们学习了很多关于从零开始使用 React 进行服务器端渲染的知识，并看到了仅仅为了让客户端和服务器端机器之间的简单结果同步，需要多少工具配置。现在，让我们进入 Next.js，看看它是什么，以及为什么它是一个很好的选择。
+在上一章中，我们学习了很多关于从零开始使用 React 进行服务器端渲染的知识，并看到了仅仅为了让客户端和服务器端机器之间的简单结果同步，需要多少工具配置。现在，让我们进入`Next.js`，看看它是什么，以及为什么它是一个很好的选择。
 
 ### 结构
 
-*   什么是 Next.js
-*   安装
-*   默认设置
-*   Next.js 中的页面
-*   静态资源
-*   路由
-*   组件
-*   CSS
+- 什么是 Next.js
+- 安装
+- 默认设置
+- Next.js 中的页面
+- 静态资源
+- 路由
+- 组件
+- CSS
 
 ### 目标
 
-本章旨在向你介绍 `Next.js`，这是一个为 React 构建的服务器端渲染框架。`Next.js` 将大大简化你作为开发者的工作流程，从而将更多精力投入到应用程序的逻辑和目的上，减少在基础设施部分上的精力。我们将学习它是什么，如何设置以及如何有效地使用它。
+本章旨在向你介绍`Next.js`，这是一个为 React 构建的服务器端渲染框架。`Next.js`将大大简化你作为开发者的工作流程，从而将更多精力投入到应用程序的逻辑和目的上，减少在基础设施部分上的精力。我们将学习它是什么，如何设置以及如何有效地使用它。
 
 ### 什么是 Next.js？
 
-`Next.js` 是一个用于使用 React 构建服务器端应用程序的框架。框架提供了许多开箱即用的功能。`Next.js` 提供了路由、页面管理、服务器端渲染、缓存等解决方案，并且非常容易设置。
+`Next.js`是一个用于使用 React 构建服务器端应用程序的框架。框架提供了许多开箱即用的功能。`Next.js`提供了路由、页面管理、服务器端渲染、缓存等解决方案，并且非常容易设置。
 
-你可以将 `Next.js` 的易用性与 `create-react-app` 相提并论。就像手动设置 React 项目很繁琐一样，在上一章中，我们看到手动设置 React SSR 项目同样繁琐。`Next.js` 来救场了！
+你可以将`Next.js`的易用性与`create-react-app`相提并论。就像手动设置 React 项目很繁琐一样，在上一章中，我们看到手动设置 React SSR 项目同样繁琐。`Next.js`来救场了！
 
 ### 为什么选择 Next.js？
 
 根据其官方网站，以下是一些解释为什么它是一个好选择的要点：
 
-1.  服务器渲染：这是使用 Next.js 的主要原因。
-2.  静态导出：这意味着你可以通过几次点击和命令生成网站的静态包（并非所有情况都可行）。
-3.  CSS-in-JS：CSS in JS 是一种流行的技术，人们直接在 JS 中编写样式。有些人对此不以为然，但社区或多或少地认可它，并围绕它开发了许多解决方案。Next.js 支持所有这些方案。
-4.  零配置：设置起来就像 `create-react-app` 一样简单。我们将在几分钟内用 Next.js 准备好我们的 Hello World 应用。
-
-
-
-
-5. 完全可扩展：你可以控制 `babel` 和 `webpack` 配置。一旦能够控制这些，你几乎可以掌控项目的每一个细节。
-
+1. 服务器渲染：这是使用 Next.js 的主要原因。
+2. 静态导出：这意味着你可以通过几次点击和命令生成网站的静态包（并非所有情况都可行）。
+3. CSS-in-JS：CSS in JS 是一种流行的技术，人们直接在 JS 中编写样式。有些人对此不以为然，但社区或多或少地认可它，并围绕它开发了许多解决方案。Next.js 支持所有这些方案。
+4. 零配置：设置起来就像`create-react-app`一样简单。我们将在几分钟内用 Next.js 准备好我们的 Hello World 应用。
+5. 完全可扩展：你可以控制`babel`和`webpack`配置。一旦能够控制这些，你几乎可以掌控项目的每一个细节。
 6. 生产就绪：它是一个开源且高度优化的框架，目前已相当成熟，可用于创建生产级的 React 应用。
 
-如果你愿意采用基于 React 的 SSR 解决方案，以上是选择 `Next.js` 的众多理由中的一部分。
+如果你愿意采用基于 React 的 SSR 解决方案，以上是选择`Next.js`的众多理由中的一部分。
 
 ### 安装
 
-让我们开始为项目设置 `Next.js`。
+让我们开始为项目设置`Next.js`。
 
-1. 创建一个名为 `react-ssr-next` 的目录
-
-2. 使用命令行，`cd` 进入该目录
-
+1. 创建一个名为`react-ssr-next`的目录。
+2. 使用命令行，`cd`进入该目录。
 3. 运行以下命令：
 
-   ```
+   ```bash
    npm init -y
    npm install react react-dom next --save
    ```
 
-   这些命令基本上会设置好你的 `package.json` 文件并安装所需的依赖。你是否注意到我们总共只需要三个包？就是 `react`、`react-dom` 和 `next` 包！
+   这些命令基本上会设置好你的`package.json`文件并安装所需的依赖。你是否注意到我们总共只需要三个包？就是`react`、`react-dom`和`next`包！
 
-4. 最后，继续修改 `package.json` 文件中的 `scripts` 部分，使其如下所示：
+4. 最后，继续修改`package.json`文件中的`scripts`部分，使其如下所示：
 
-   ```
+   ```json
    "scripts": {
      "dev": "next",
      "build": "next build",
@@ -2837,9 +2754,9 @@ window.componentsData = ${JSON.stringify(data)}
    }
    ```
 
-   因此，你的 `package.json` 文件大致如下（版本号可能不同）：
+   因此，你的`package.json`文件大致如下（版本号可能不同）：
 
-   ```
+   ```json
    {
      "name": "nextjs",
      "version": "1.0.0",
@@ -2861,11 +2778,10 @@ window.componentsData = ${JSON.stringify(data)}
    }
    ```
 
-5. 现在，在根文件夹中创建一个 `pages` 目录。这是 `Next.js` 框架所要求的。
+5. 现在，在根文件夹中创建一个`pages`目录。这是`Next.js`框架所要求的。
+6. 接着，在同一目录下执行`npm run dev`。
 
-6. 接着，在同一目录下执行 `npm run dev`。
-
-   它会启动 `Next.js` 进程。但由于我们的 `pages` 目录为空，目前还没有页面可提供。
+   它会启动`Next.js`进程。但由于我们的`pages`目录为空，目前还没有页面可提供。
 
    不过，它会给我们一个包含大量信息的 URL：`http://localhost:3000`：
 
@@ -2873,42 +2789,44 @@ window.componentsData = ${JSON.stringify(data)}
 
    **图 6.1**
 
-   在上面的截图中，我们可以看到运行 `npm run dev` 会启动一个开发用的 `Next.js` 服务器供我们使用。
+   在上面的截图中，我们可以看到运行`npm run dev`会启动一个开发用的`Next.js`服务器供我们使用。
 
-7. 然而，导航到 `localhost:3000` 时，你会看到一个 404 页面。这是因为我们的 `pages` 目录为空，`Next.js` 尚未提供任何内容。
+7. 然而，导航到`localhost:3000`时，你会看到一个 404 页面。这是因为我们的`pages`目录为空，`Next.js`尚未提供任何内容。
 
 ### Next.js 默认配置
 
-此时，我们已经正确设置并运行了 `Next.js`。为了避免一开始就处理大量配置，`Next.js` 锁定了一些默认配置。让我们逐一了解。
+此时，我们已经正确设置并运行了`Next.js`。为了避免一开始就处理大量配置，`Next.js`锁定了一些默认配置。让我们逐一了解。
 
 ### 页面
 
-我们之前创建了 `pages` 文件夹。这个文件夹名称并非我随意取的。你在该文件夹中创建的任何文件名，都会成为应用中的一个路由！让我们从一个简单的 `index.js` 页面开始，它是应用的根页面：
+我们之前创建了`pages`文件夹。这个文件夹名称并非我随意取的。你在该文件夹中创建的任何文件名，都会成为应用中的一个路由！让我们从一个简单的`index.js`页面开始，它是应用的根页面：
 
-在 `pages/index.js` 文件中，编写以下简单的 React 组件：
+在`pages/index.js`文件中，编写以下简单的 React 组件：
 
-```
+```js
 // pages/index.js
 export default () => <h1>Hello World</h1>
 ```
 
-就这样！刷新 `localhost:3000` 页面（由于热重载已开启，它会自动刷新），然后我们就看到了：
+就这样！刷新`localhost:3000`页面（由于热重载已开启，它会自动刷新），然后我们就看到了：
 
 ![](img/image15.jpg)
 
 **图 6.2**
 
-在上面的截图中，我们可以看到使用 `Next.js` 成功在屏幕上输出了 Hello World。
+在上面的截图中，我们可以看到使用`Next.js`成功在屏幕上输出了 Hello World。
 
 查看源代码，我们会看到以下内容：
 
-```
+```html
 <!DOCTYPE html><html><head><meta charSet="utf-8"/><meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1"/><meta name="next-head-count" content="2"/><link rel="preload" href="/_next/static/development/pages/index.js?ts=1569413352906" as="script"/><link rel="preload" href="/_next/static/development/pages/_app.js?ts=1569413352906" as="script"/><link rel="preload" href="/_next/static/runtime/webpack.js?ts=1569413352906" as="script"/><link rel="preload" href="/_next/static/runtime/main.js?ts=1569413352906" as="script"/></head><body><div id="__next"><h1>Hello World</h1></div><script src="/_next/static/development/dll/dll_397dc449097af0b4e992.js?ts=1569413352906"></script><script id="__NEXT_DATA__" type="application/json">{"dataManager":"[]","props":{"pageProps":{}},"page":"/","query":{},"buildId":"development","nextExport":true,"autoExport":true}</script><script async="" data-next-page="/" src="/_next/static/development/pages/index.js?ts=1569413352906"></script><script async="" data-next-page="/_app" src="/_next/static/development/pages/_app.js?ts=1569413352906"></script><script src="/_next/static/runtime/webpack.js?ts=1569413352906" async=""></script><script src="/_next/static/runtime/main.js?ts=1569413352906" async=""></script></body></html>
 ```
 
 其中大部分是开发环境和热重载脚本。但我们可以清楚地看到 Hello World 标记已渲染在源代码中，而不是通过客户端 JavaScript 动态创建。嘿，这就是服务端渲染！
 
-现在创建一个 `about.js` 文件：
+现在创建一个`about.js`文件：
+
+
 
 ```
 // pages/about.js
@@ -2926,25 +2844,25 @@ const AboutMe = () => {
 export default AboutMe
 ```
 
-基本上就是这样！保存文件并访问 `localhost:3000/about`，你会看到以下页面：
+基本上就是这样！保存文件并访问`localhost:3000/about`，你会看到以下页面：
 
 ![](img/image62.jpg)
 
 **图 6.3**
 
-上面的页面展示了我们在 `about.js` 文件中作为 React 组件编写的内容，无需任何额外配置。`Next.js` 在底层处理了路由。
+上面的页面展示了我们在`about.js`文件中作为 React 组件编写的内容，无需任何额外配置。`Next.js`在底层处理了路由。
 
 ### 热代码重载
 
-你看，当我们修改代码时，如果 Next 服务器正在运行（使用 `npm run dev` 命令），我们无需手动前往浏览器刷新更改。`Next.js` 会自动与文件系统通信，检测是否有任何更改，如果有，它会重新构建并将消息推送到浏览器以获取新更改并相应更新。
+你看，当我们修改代码时，如果 Next 服务器正在运行（使用`npm run dev`命令），我们无需手动前往浏览器刷新更改。`Next.js`会自动与文件系统通信，检测是否有任何更改；如果有，它会重新构建并将消息推送到浏览器以获取新更改并相应更新。
 
 当你使用 Next 时，这是开箱即用的功能。
 
 ### 静态文件服务
 
-`Next.js` 还可以通过一个特殊目录名称来提供静态文件（图片、视频、字体等）。在项目根目录下创建一个名为 `static` 的目录。你放在此目录下的任何内容都会在 `/static/` 路由下提供。
+`Next.js`还可以通过一个特殊目录名称来提供静态文件（图片、视频、字体等）。在项目根目录下创建一个名为`static`的目录。你放在此目录下的任何内容都会在`/static/`路由下提供。
 
-让我们尝试在 `public/static` 文件夹中放置一张图片。最终的文件夹结构如下：
+让我们尝试在`public/static`文件夹中放置一张图片。最终的文件夹结构如下：
 
 ![](img/image112.jpg)
 
@@ -2952,33 +2870,30 @@ export default AboutMe
 
 上面的截图显示了文件结构应该是什么样子。
 
-完成后，你应该能够导航到 `localhost:3000/static/profile.jpeg`：
+完成后，你应该能够导航到`localhost:3000/static/profile.jpeg`：
 
 ![](img/image33.jpg)
 
 **图 6.5**
 
-你可以将所有静态资源放在项目中的 `static` 目录中。
+你可以将所有静态资源放在项目中的`static`目录中。
 
-在 Next 的早期版本中，你必须将所有静态资源放在根目录的 `static` 文件夹中。现在，你可以将任何内容放在 `public` 文件夹中，它将在根 URL 路径下可用。但为了明确哪些资源是静态的，我们仍然会将静态资源存储在 `public/static` 路径下。
+在 Next 的早期版本中，你必须将所有静态资源放在根目录的`static`文件夹中。现在，你可以将任何内容放在`public`文件夹中，它将在根 URL 路径下可用。但为了明确哪些资源是静态的，我们仍然会将静态资源存储在`public/static`路径下。
 
 ### 路由
 
-在 `Next.js` 中，路由非常简单，至少基本路由是这样。上面我们看到了路由如何工作的基本演示——只需在文件夹内创建 JavaScript 文件。但我们还需要将这些页面*链接*起来。该怎么做呢？
+在`Next.js`中，路由非常简单，至少基本路由是这样。上面我们看到了路由如何工作的基本演示——只需在文件夹内创建 JavaScript 文件。但我们还需要将这些页面链接起来。该怎么做呢？
 
-当然，我们可以使用常规的锚标签进行链接，但请记住，就像原始的 React SSR 一样，这会导致完全重定向，而我们不希望这样，仅仅是因为我们有能力在后台获取更新数据并使用 React 更新 UI，这正是使用 React 的全部意义！所以，让我们使用 `Next.js` 中的 `Link`。
+当然，我们可以使用常规的锚标签进行链接，但请记住，就像原始的 React SSR 一样，这会导致完全重定向，而我们不希望这样，仅仅是因为我们有能力在后台获取更新数据并使用 React 更新 UI，这正是使用 React 的全部意义！所以，让我们使用`Next.js`中的`Link`。
 
 ### Link
 
+来自`Next.js`的`Link` API 允许你执行导航，就像我们使用`react-router-dom`包中的`Link`组件一样。
 
-
-
-来自 `Next.js` 的 `Link` API 允许你执行导航，就像我们使用 `react-router-dom` 包中的 `Link` 组件一样。
-
-以下是使用方法。我们将更新 `index.js` 文件，将其链接到关于页面：
+以下是使用方法。我们将更新`index.js`文件，将其链接到关于页面：
 
 ```
-// pages/index.js
+/ pages/index.js
 import Link from 'next/link'
 const Home = () => {
 return <div id="home">
@@ -2991,52 +2906,53 @@ export default Home
 
 以下是具体说明：
 
-*   首先，我们导入要使用的 `Link` 组件。
-*   接着，我们用 `Link` 组件包裹希望作为超链接的文本。
-*   注意，我们将 `href` 属性赋予 `Link` 组件，并在其内部再次使用了 `anchor` 标签。这一点很重要，我们稍后会讲到。
-*   最后，在 `href` 属性中，我们传递了要导航到的链接。让我们看看它生成的输出：
+- 首先，我们导入要使用的`Link`组件。
+- 接着，我们用`Link`组件包裹希望作为超链接的文本。
+- 注意，我们将`href`属性赋予`Link`组件，并在其内部再次使用了`anchor`标签。这一点很重要，我们稍后会讲到。
+- 最后，在`href`属性中，我们传递了要导航到的链接。让我们看看它生成的输出：
 
-    ![](img/image91.jpg)
+  ![](img/image91.jpg)
 
-    **图 6.6**
+  **图 6.6**
 
-    上面的截图展示了 `Link` 组件在渲染时如何被转换为 HTML 中的常规 `anchor` 标签。
-*   太棒了！我们可以看到超链接出现在源代码中。但通过使用 `Link` 组件，`Next.js` 还自动利用 HTML5 history API 处理了客户端导航，我们无需编写任何代码。
-*   现在，当你点击 **About** 链接时，它会无缝导航到关于页面。
+  上面的截图展示了`Link`组件在渲染时如何被转换为 HTML 中的常规`anchor`标签。
 
-现在，让我们进一步探索这个 `Link` 组件，以及它与我们习惯在 `react-router-dom` 中看到的组件有何不同。
+- 太棒了！我们可以看到超链接出现在源代码中。但通过使用`Link`组件，`Next.js`还自动利用 HTML5 history API 处理了客户端导航，我们无需编写任何代码。
+- 现在，当你点击**About**链接时，它会无缝导航到关于页面。
 
-### `Link` 只是一个高阶组件
+现在，让我们进一步探索这个`Link`组件，以及它与我们习惯在`react-router-dom`中看到的组件有何不同。
 
-如果你来自 `react-router-dom` 的 `Link` 组件，你可能会将这个 `Link` 与那个混淆。在 `react-router-dom` 中，你可以直接向该组件传递 props，它会变成一个超链接并使用这些 props（如 `className`、`onClick` 等）。但 `Next.js` 提供的 `Link` API 只是一个高阶组件，也就是说，它只是将你的子组件绑定到 history API 变化的点击事件上。它不会将你提供的 props 传递给子组件，因此你必须对子组件进行任何所需的修改，而不是在 `Link` 组件上。
+### `Link`只是一个高阶组件
 
-例如，考虑以下代码片段。这是为 `anchor` 标签分配 class 的错误方式：
+如果你来自`react-router-dom`的`Link`组件，你可能会将这个`Link`与那个混淆。在`react-router-dom`中，你可以直接向该组件传递 props，它会变成一个超链接并使用这些 props（如`className`、`onClick`等）。但`Next.js`提供的`Link` API 只是一个高阶组件，也就是说，它只是将你的子组件绑定到 history API 变化的点击事件上。它不会将你提供的 props 传递给子组件，因此你必须对子组件进行任何所需的修改，而不是在`Link`组件上。
+
+例如，考虑以下代码片段。这是为`anchor`标签分配 class 的错误方式：
 
 ```
 <p>Click <Link href="/about" className="mylink"><a>here</a></Link> to go to about page</p>
 ```
 
-实际上，如果你运行上述代码，你会发现 `anchor` 标签并没有被附加 `myLink` 类。
+实际上，如果你运行上述代码，你会发现`anchor`标签并没有被附加`myLink`类。
 
-这是为 `anchor` 标签添加 class 的正确方式：
+这是为`anchor`标签添加 class 的正确方式：
 
 ```
 <p>Click <Link href="/about"><a className="mylink">here</a></Link> to go to about page</p>
 ```
 
-### 关于 `Link` 的更多内容
+### 关于`Link`的更多内容
 
-`Link` 组件基本上会为其子元素附加一个 `onClick` 事件。因此，如果子元素支持 `onClick` 事件，`Link` 就能正常工作。考虑以下情况：
+`Link`组件基本上会为其子元素附加一个`onClick`事件。因此，如果子元素支持`onClick`事件，`Link`就能正常工作。考虑以下情况：
 
 ```
 <Link href="/about"><imgsrc="/static/profile.jpeg" /></Link>
 ```
 
-在这种情况下，`Link` 会正常工作，导航也会发生，但 HTML 标记中不会出现带有 `href` 属性的 `a` 标签，这可能对 SEO 不利。
+在这种情况下，`Link`会正常工作，导航也会发生，但 HTML 标记中不会出现带有`href`属性的`a`标签，这可能对 SEO 不利。
 
-因此，你应该将上面的 `img` 标签包裹在 `anchor` 标签中。
+因此，你应该将上面的`img`标签包裹在`anchor`标签中。
 
-如果你希望 `Next.js` 在 `anchor` 标签以外的标签上显示 `href` 属性（用于调试目的），你可以像这样向 `Link` 组件传递 `passHref` 属性：
+如果你希望`Next.js`在`anchor`标签以外的标签上显示`href`属性（用于调试目的），你可以像这样向`Link`组件传递`passHref`属性：
 
 ```
 <Link href="/about" passHref>
@@ -3052,9 +2968,9 @@ export default Home
 
 这在调试时很有用，当你想要找出点击特定元素时页面将被重定向到的链接时。
 
-### `Next.js` 组件
+### `Next.js`组件
 
-页面没问题，但可复用的代码片段呢？我们显然可以创建组件文件，并将其包含在其他页面中。让我们创建一个名为 **components** 的目录，但请记住，与 pages 或 static 不同，这次目录的名称并不重要。以下是一个简单的示例：
+页面没问题，但可复用的代码片段呢？我们显然可以创建组件文件，并将其包含在其他页面中。让我们创建一个名为`components`的目录，但请记住，与 pages 或 static 不同，这次目录的名称并不重要。以下是一个简单的示例：
 
 ```
 // components/Header.js
@@ -3072,7 +2988,7 @@ const Header = () => (
 export default Header
 ```
 
-现在，让我们在 `index.js` 文件中使用上面创建的 `Header` 组件：
+现在，让我们在`index.js`文件中使用上面创建的`Header`组件：
 
 ```
 // pages/index.js
@@ -3088,7 +3004,7 @@ return <div id="home">
 export default Home
 ```
 
-`About.js` 文件：
+`About.js`文件：
 
 ```
 // pages/about.js
@@ -3115,17 +3031,17 @@ export default AboutMe
 
 上面的截图展示了此时文件结构应该是什么样子。
 
-现在你会看到，我们能够在两个页面（`About` 和 `Home`）上复用 `Header` 组件。
+现在你会看到，我们能够在两个页面（`About`和`Home`）上复用`Header`组件。
 
 另外，请注意，如上所述，组件只是一个选择，你可以随意命名这个文件夹，仍然可以使用它（因为我们使用相对路径来引用该文件夹）。
 
-### `Next.js` + CSS
+### `Next.js`+ CSS
 
-在 `Next.js` 框架中使用 CSS 有多种方式，如今在应用程序中你总会用到 CSS。让我们探索一些常见的方法。
+在`Next.js`框架中使用 CSS 有多种方式，如今在应用程序中你总会用到 CSS。让我们探索一些常见的方法。
 
 ### Styled JSX
 
-这种方法要求你直接在 JSX 模板中编写 CSS。让我们先看一个示例。修改我们的 `Header` 组件以包含一些样式：
+这种方法要求你直接在 JSX 模板中编写 CSS。让我们先看一个示例。修改我们的`Header`组件以包含一些样式：
 
 ```
 // Header.js
@@ -3173,9 +3089,9 @@ export default Header
 
 上面的截图展示了 Chrome DevTools 中的输出 DOM 树。
 
-请注意，即使我们没有为 `header/anchor` 元素分配任何类，`Next.js` 也自动为我们做了这件事，以实现样式的局部作用域。这样，即使不同组件中有相同的元素，你也可以为它们设置不同的样式，而无需担心样式冲突。当你直接通过标签名或使用非常常见的类（如“container”、“block”等）来定位元素时，这非常有用。
+请注意，即使我们没有为`header/anchor`元素分配任何类，`Next.js`也自动为我们做了这件事，以实现样式的局部作用域。这样，即使不同组件中有相同的元素，你也可以为它们设置不同的样式，而无需担心样式冲突。当你直接通过标签名或使用非常常见的类（如“container”、“block”等）来定位元素时，这非常有用。
 
-但如果你确实想要全局定位呢？例如，在顶层文件中编写相同的样式以使其全局生效？为此，我们可以包含 `global` 属性。请查看以下示例：
+但如果你确实想要全局定位呢？例如，在顶层文件中编写相同的样式以使其全局生效？为此，我们可以包含`global`属性。请查看以下示例：
 
 ```
 import Link from 'next/link'
@@ -3206,41 +3122,36 @@ margin-right: 30px;
 export default Header
 ```
 
-
-
 这与上面的示例完全相同，唯一的区别是现在我们在 style 标签中有一个全局属性。尽管 HTML 部分仍然包含自定义作用域的语法，但 CSS 部分现在是真正的全局样式，正如你在渲染输出中看到的：
 
 ![](img/image43.jpg)
 
 **图 6.10**
 
-上面的截图展示了我们的 `Next.js` 代码如何渲染锚点标签。
+上面的截图展示了我们的`Next.js`代码如何渲染锚点标签。
 
-看，在右侧的样式部分，我们只是针对了 `anchor` 标签，而不是与之关联的长类名。这意味着我们正在针对页面上的所有锚点标签。
+看，在右侧的样式部分，我们只是针对了`anchor`标签，而不是与之关联的长类名。这意味着我们正在针对页面上的所有锚点标签。
 
 ### 导入 CSS 文件
 
 老实说，对我来说，直接在 JSX 中编写 CSS 有点难以接受，我希望将它们分开以保持清晰。此外，在单独的文件中，你可以获得更好的语法高亮和错误处理。让我们看看如何在页面中设置导入 CSS 文件。
 
-与 `styled-jsx` 不同，CSS 导入默认并未内置于 `Next.js` 中，因为实现方式有很多种。让我们先安装 `@zeit/next-css` 包。按照以下步骤操作：
+与`styled-jsx`不同，CSS 导入默认并未内置于`Next.js`中，因为实现方式有很多种。让我们先安装`@zeit/next-css`包。按照以下步骤操作：
 
-1.  在你的项目根目录中，执行 `npmi @zeit/next-css --save`
+1. 在你的项目根目录中，执行`npmi @zeit/next-css --save`。
+2. 现在，我们需要在项目的根目录中创建一个`next.config.js`文件。文件内容如下：
 
-2.  现在，我们需要在项目的根目录中创建一个 `next.config.js` 文件。文件内容如下：
+   ```
+   // next.config.js
+   constwithCSS = require(‘@zeit/next-css’)
+   module.exports = withCSS({})
+   ```
 
-    ```
-    // next.config.js
-    constwithCSS = require(‘@zeit/next-css’)
-    module.exports = withCSS({})
-    ```
+3. 此时重启你的开发服务器。
+4. 你可以在`withCSS`函数中传递额外选项，例如使用 CSS 模块。
+5. 完成后，让我们将样式移到单独的文件中。
 
-3.  此时重启你的开发服务器
-
-4.  你可以在 `withCSS` 函数中传递额外选项，例如使用 CSS 模块
-
-5.  完成后，让我们将样式移到单独的文件中
-
-以下是我们的 `Header.js` 组件最终的样子：
+以下是我们的`Header.js`组件最终的样子：
 
 ```
 // components/Header/index.js
@@ -3259,7 +3170,7 @@ const Header = () => (
 export default Header
 ```
 
-而 `style.css` 文件的内容如下：
+而`style.css`文件的内容如下：
 
 ```
 // components/Header/style.css
@@ -3284,7 +3195,7 @@ color: yellow;
 
 **图 6.11**
 
-上面的截图展示了我们刚刚编写的 `Header` 组件文件所产生的输出。
+上面的截图展示了我们刚刚编写的`Header`组件文件所产生的输出。
 
 此外，components 目录的文件结构也有所变化。见下方：
 
@@ -3294,7 +3205,7 @@ color: yellow;
 
 上面的截图展示了当前的文件结构。
 
-太棒了！现在让我们使用 CSS 模块。我们可以将网站的行为切换为使用 CSS 模块，这意味着类名将被随机化，从而避免不同组件中相同类名之间的冲突。让我们看看如何实现。将 `next.config.js` 文件修改为以下内容：
+太棒了！现在让我们使用 CSS 模块。我们可以将网站的行为切换为使用 CSS 模块，这意味着类名将被随机化，从而避免不同组件中相同类名之间的冲突。让我们看看如何实现。将`next.config.js`文件修改为以下内容：
 
 ```
 // next.config.js
@@ -3304,7 +3215,7 @@ cssModules: true
 })
 ```
 
-完成此操作并重启服务器后，你会看到你的“About”链接不再是黄色，尽管它在 HTML 标记中有一个 special 类。这是因为现在启用了 CSS 模块，类名“special”已被 CSS 模块系统重写。现在，要将类应用于特定元素，你必须使用导入的样式。按如下方式修改 `Header.js` 文件：
+完成此操作并重启服务器后，你会看到你的“About”链接不再是黄色，尽管它在 HTML 标记中有一个 special 类。这是因为现在启用了 CSS 模块，类名“special”已被 CSS 模块系统重写。现在，要将类应用于特定元素，你必须使用导入的样式。按如下方式修改`Header.js`文件：
 
 ```
 import Link from ‘next/link’
@@ -3322,43 +3233,41 @@ const Header = () => (
 export default Header
 ```
 
+
+
 现在应该可以工作了！查看 HTML 标记，类名是完全随机的。这基本上就是 webpack CSS 加载器，你还可以使用 webpack 文档中的选项进一步自定义它：[`github.com/webpack-contrib/css-loader`](https://github.com/webpack-contrib/css-loader)。
 
 ## 结论
 
-本章介绍了 Next.js 框架，帮助我们理解了一些核心概念，以便开始使用它并设置其某些方面。
+本章介绍了 `Next.js` 框架，帮助我们理解了一些核心概念，以便开始使用它并设置其某些方面。
 
-我们了解了 Next.js 是什么，如何用它引导第一个项目，并深入了解了发送到浏览器的响应是如何真正渲染为 HTML 的。
+我们了解了 `Next.js` 是什么，如何用它引导第一个项目，并深入了解了发送到浏览器的响应是如何真正渲染为 HTML 的。
 
-在下一章中，我们将看到如何进一步使用这个框架，并更深入地了解 Next.js 的工作原理，以及如何根据我们的需求调整框架。
+在下一章中，我们将看到如何进一步使用这个框架，并更深入地了解 `Next.js` 的工作原理，以及如何根据我们的需求调整框架。
 
 ## 问题
 
-1.  Next.js 与上一章中我们在服务器端运行 React 的方式有何不同？
-
-2.  假设在 `pages/myroute/index.js` 有一个组件。在开发模式下运行时，它是否可以在 `localhost:3000/myroute` 访问？
-
-3.  如何在根路径（即 `localhost:3000/robots.txt`）托管 `robots.txt` 文件？你应该将文件放在哪里？
-
-4.  Next.js 的 Link 与 `react-router-dom` 的 Link 有什么区别？
-
-5.  列出一些在 Next.js 组件中使用 CSS 的方法。
+1. `Next.js` 与上一章中我们在服务器端运行 React 的方式有何不同？
+2. 假设在 `pages/myroute/index.js` 有一个组件。在开发模式下运行时，它是否可以在 `localhost:3000/myroute` 访问？
+3. 如何在根路径（即 `localhost:3000/robots.txt`）托管 `robots.txt` 文件？你应该将文件放在哪里？
+4. `Next.js` 的 `Link` 与 `react-router-dom` 的 `Link` 有什么区别？
+5. 列出一些在 `Next.js` 组件中使用 CSS 的方法。
 
 # 第七章
 
 ## 更多 Next.js 内容
 
-在上一章中，我们学习了 Next.js，了解了它是什么，以及如何用它快速搭建一个基本的 SSR React 项目。然而，应用程序通常比这更复杂，需要处理许多细节和难点。在本章中，我们将探索 Next.js 的一些精细部分，并了解如何将它们整合到我们的代码中。这很重要，因为大多数应用程序有时需要根据自身需求进行自定义调整或更改。让我们深入探讨。
+在上一章中，我们学习了 `Next.js`，了解了它是什么，以及如何用它快速搭建一个基本的 SSR React 项目。然而，应用程序通常比这更复杂，需要处理许多细节和难点。在本章中，我们将探索 `Next.js` 的一些精细部分，并了解如何将它们整合到我们的代码中。这很重要，因为大多数应用程序有时需要根据自身需求进行自定义调整或更改。让我们深入探讨。
 
 ### 结构
 
-*   创建 Next.js 项目
-*   Redux 简介
-*   在 Next.js 中设置 Redux
-*   TypeScript + Next
-*   使用 Next.js 创建 API 端点
-*   Next.js 自定义文件
-*   动态路由
+- 创建 `Next.js` 项目
+- Redux 简介
+- 在 `Next.js` 中设置 Redux
+- TypeScript + `Next`
+- 使用 `Next.js` 创建 API 端点
+- `Next.js` 自定义文件
+- 动态路由
 
 ### 目标
 
@@ -3372,27 +3281,22 @@ export default Header
 
 首先，让我们从创建一个全新的 `Next.js` 项目开始。这很简单，我们在上一章已经做过。以下是本项目需要注意的一些关键点：
 
-*   对于这个项目，目前我们需要一个登录页面、一个注册页面和一个仪表盘页面。
-*   为简单起见，我们将登录页面作为我们的首页。
-*   但在开始之前，让我们先为 Next.js 切换到 TypeScript（就像我们之前对 React 所做的那样）。
+- 对于这个项目，目前我们需要一个登录页面、一个注册页面和一个仪表盘页面。
+- 为简单起见，我们将登录页面作为我们的首页。
+- 但在开始之前，让我们先为 `Next.js` 切换到 TypeScript（就像我们之前对 React 所做的那样）。
 
 ### 切换到 TypeScript
 
 TypeScript 已被证明是一种非常可靠的规模化编写 JavaScript 的方法，几乎所有达到一定规模后的代码库都会遇到常见的 JavaScript 陷阱，比如缺乏类型检查支持。TypeScript 在这方面非常有用。它编译成 JavaScript，同时允许我们使用最适合开发者的 JavaScript 版本进行编写。
 
-*   要创建一个 TypeScript 项目，我们直接使用 `npx` 中的 `create-next-app` 工具
-*   进入你想要设置 Next.js（或者我们应该称之为 `Next.ts` 项目）的目录
-*   运行以下命令：
+- 要创建一个 TypeScript 项目，我们直接使用 `npx` 中的 `create-next-app` 工具。
+- 进入你想要设置 `Next.js`（或者我们应该称之为 `Next.ts` 项目）的目录。
+- 运行以下命令：
 
-    `npx create-next-app --example with-typescript my-custom-app`
+  `npx create-next-app --example with-typescript my-custom-app`
 
-
-
-
-
-*   它的作用是拉取 `create-next-app` 包，并使用提供的参数运行它。它会拉取一个使用 TypeScript 的示例仓库，然后创建名为 `my-custom-app` 的项目，并自动处理所有 `npm` 安装和 `package.json` 相关事宜。
-
-*   完成后，在文本编辑器中打开该项目。
+- 它的作用是拉取 `create-next-app` 包，并使用提供的参数运行它。它会拉取一个使用 TypeScript 的示例仓库，然后创建名为 `my-custom-app` 的项目，并自动处理所有 `npm` 安装和 `package.json` 相关事宜。
+- 完成后，在文本编辑器中打开该项目。
 
 此时你的文件结构应该如下所示：
 
@@ -3416,7 +3320,7 @@ Redux 是一个通用的状态管理工具，可以作为 React 的选项之一�
 
 在 `Next.js` 中，`getInitialProps` 用于在组件渲染之前，根据自定义逻辑填充 props。该方法在客户端和服务器端都会执行。让我们看一些代码来更好地理解。修改我们项目中的 `about.ts` 文件：
 
-```
+```typescript
 // about.ts
 import * as React from 'react'
 import Link from 'next/link'
@@ -3469,101 +3373,101 @@ export default AboutPage
 
 我们从 `index.ts` 页面开始，它将是我们的登录页面：
 
-1.  下面是一个 `index.ts` 文件的快速示例：
+1. 下面是一个 `index.ts` 文件的快速示例：
 
-    ```
-    // pages/index.ts
-    import React, { useState } from 'react'
-    import { NextPage } from 'next'
-    import './styles.css'
-    const IndexPage: NextPage = () => {
-    const [username, setUsername] = useState<string>('')
-    const [password, setPassword] = useState<string>('')
-    return (
-    <form method="POST">
-    <div className="box">
-    <h1>Login</h1>
-    <input type="text" placeholder="Username" className="field" value={username} onChange={e =>setUsername(e.target.value)} />
-    <input type="password" placeholder="Password" className="field" value={password} onChange={e =>setPassword(e.target.value)} />
-    <div className="btn">Sign In</div>
-    </div>
-    </form>
-    )
-    }
-    export default IndexPage
-    ```
+   ```typescript
+   // pages/index.ts
+   import React, { useState } from 'react'
+   import { NextPage } from 'next'
+   import './styles.css'
+   const IndexPage: NextPage = () => {
+   const [username, setUsername] = useState<string>('')
+   const [password, setPassword] = useState<string>('')
+   return (
+   <form method="POST">
+   <div className="box">
+   <h1>Login</h1>
+   <input type="text" placeholder="Username" className="field" value={username} onChange={e =>setUsername(e.target.value)} />
+   <input type="password" placeholder="Password" className="field" value={password} onChange={e =>setPassword(e.target.value)} />
+   <div className="btn">Sign In</div>
+   </div>
+   </form>
+   )
+   }
+   export default IndexPage
+   ```
 
-    上面的组件只是创建了一个简单的受控登录表单，我们很快就会看到。
+   上面的组件只是创建了一个简单的受控登录表单，我们很快就会看到。
 
-2.  与 `index.js` 文件关联的 `styles.css` 文件应为：
+2. 与 `index.js` 文件关联的 `styles.css` 文件应为：
 
-    ```
-    // styles.css
-    * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    outline: 0;
-    }
-    body {
-    font-family: 'Open Sans', sans-serif;
-    background: #3498db;
-    margin: 0 auto 0 auto;
-    width: 100%;
-    text-align: center;
-    margin: 20px 0px 20px 0px;
-    }
-    p {
-    font-size: 12px;
-    text-decoration: none;
-    color: #ffffff;
-    }
-    h1 {
-    font-size: 1.5em;
-    color: #525252;
-    }
-    .box {
-    background: white;
-    width: 300px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border-radius: 6px;
-    padding: 20px;
-    box-shadow: 0 0 5px black;
-    }
-    .field {
-    background: #ecf0f1;
-    border: #ccc 1px solid;
-    border-bottom: #ccc 2px solid;
-    padding: 8px;
-    width: 100%;
-    color: #AAA;
-    margin-top: 10px;
-    font-size: 1em;
-    border-radius: 4px;
-    }
-    .btn {
-    background: #2ecc71;
-    width: 100%;
-    cursor: pointer;
-    padding: 5px 0;
-    color: white;
-    border-radius: 4px;
-    border: #27ae60 1px solid;
-    margin-top: 20px;
-    font-weight: 800;
-    font-size: 0.8em;
-    }
-    .btn:hover {
-    background: #2CC06B;
-    }
-    ```
+   ```css
+   // styles.css
+   * {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   outline: 0;
+   }
+   body {
+   font-family: 'Open Sans', sans-serif;
+   background: #3498db;
+   margin: 0 auto 0 auto;
+   width: 100%;
+   text-align: center;
+   margin: 20px 0px 20px 0px;
+   }
+   p {
+   font-size: 12px;
+   text-decoration: none;
+   color: #ffffff;
+   }
+   h1 {
+   font-size: 1.5em;
+   color: #525252;
+   }
+   .box {
+   background: white;
+   width: 300px;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   border-radius: 6px;
+   padding: 20px;
+   box-shadow: 0 0 5px black;
+   }
+   .field {
+   background: #ecf0f1;
+   border: #ccc 1px solid;
+   border-bottom: #ccc 2px solid;
+   padding: 8px;
+   width: 100%;
+   color: #AAA;
+   margin-top: 10px;
+   font-size: 1em;
+   border-radius: 4px;
+   }
+   .btn {
+   background: #2ecc71;
+   width: 100%;
+   cursor: pointer;
+   padding: 5px 0;
+   color: white;
+   border-radius: 4px;
+   border: #27ae60 1px solid;
+   margin-top: 20px;
+   font-weight: 800;
+   font-size: 0.8em;
+   }
+   .btn:hover {
+   background: #2CC06B;
+   }
+   ```
 
 注意，我是从另一个文件导入 `styles.css` 的，因此我们还需要在项目根目录中有一个自定义的 `next.config.js` 文件（如上一章所述）：
 
-```
+```javascript
 // next.config.js
 const withCSS = require('@zeit/next-css')
 module.exports = withCSS({})
@@ -3589,11 +3493,11 @@ module.exports = withCSS({})
 
 ### 使用 Next.js 的 API
 
-当我们启动 TypeScript 演示时，你一定注意到在 `pages` 文件夹下有一个名为 `api` 的文件夹。这个文件夹很特殊。在 Next.js v9 之前，我们必须设置自己的服务器来处理 API 调用。这很麻烦，因为维护两个服务于单一目的的 Node 服务器很累人。但现在，`Next.js` 原生支持处理 API 调用。我们稍后还会介绍动态路由。
+当我们启动 TypeScript 演示时，你一定注意到在 `pages` 文件夹下有一个名为 `api` 的文件夹。这个文件夹很特殊。在 `Next.js` v9 之前，我们必须设置自己的服务器来处理 API 调用。这很麻烦，因为维护两个服务于单一目的的 Node 服务器很累人。但现在，`Next.js` 原生支持处理 API 调用。我们稍后还会介绍动态路由。
 
 删除 `api` 文件夹中已有的内容，创建一个名为 `login` 的新文件夹，并在其中创建一个名为 `index.ts` 的文件。其内容应如下所示：
 
-```
+```typescript
 // pages/api/login/index.ts
 import { NextApiRequest, NextApiResponse } from 'next'
 export default async (req: NextApiRequest, res: NextApiResponse) => {
@@ -3614,24 +3518,19 @@ return res.json({ status: 'error', message: 'Invalid login' })
 
 好了！那么这个文件中发生了什么？
 
-*   我们在 `pages/api/login/index.ts` 下创建了一个文件。
-*   在这个文件中，我们导出了一个函数，而不是一个 React 组件。这是因为这是我们的 API 端点，我们可以在其中编写逻辑。
+- 我们在 `pages/api/login/index.ts` 下创建了一个文件。
+- 在这个文件中，我们导出了一个函数，而不是一个 React 组件。这是因为这是我们的 API 端点，我们可以在其中编写逻辑。
+- `Next.js` 为我们传递了两个参数供我们使用。第一个是 `req`（请求处理器），第二个是 `res`（响应处理器）。
+- 第一个参数 `req` 包含了当前请求到达该特定端点的所有相关信息。这可能包括 POST 请求体数据、身份验证 Cookie、自定义标头等。
+- 第二个参数 `res` 可由你（开发者）写入。它提供了一些方法，调用这些方法会在底层生成一个 HTTP 响应，API 端点应将该响应发送回客户端。
+- 如果你曾经在 `Node.js` 中使用过 Express，那么这可能会非常熟悉。
+- 首先，我们从 `req.body` 中提取用户名和密码。`req` 处理器上的 `body` 属性将包含我们从客户端发送到服务器的任何内容。由于我们期望的是 JSON 请求，我们可以直接解构它。
+- 获取到这些值后，我们对其进行校验。
+- 如果两者都是 admin，则进行身份验证（目前如此）。
+- 如果不是，则发送自定义错误消息。
+- 注意，我们使用 `res.json()` 方法发送响应。如果查看 `NextApiResponse` 的类型声明，我们会发现 `res` 对象支持以下方法：
 
-
-
-
-
-*   `Next.js` 为我们传递了两个参数供我们使用。第一个是 `req`（请求处理器），第二个是 `res`（响应处理器）。
-*   第一个参数 `req` 包含了当前请求到达该特定端点的所有相关信息。这可能包括 POST 请求体数据、身份验证 Cookie、自定义标头等。
-*   第二个参数 `res` 可由你（开发者）写入。它提供了一些方法，调用这些方法会在底层生成一个 HTTP 响应，API 端点应将该响应发送回客户端。
-*   如果你曾经在 `Node.js` 中使用过 Express，那么这可能会非常熟悉。
-*   首先，我们从 `req.body` 中提取用户名和密码。`req` 处理器上的 `body` 属性将包含我们从客户端发送到服务器的任何内容。由于我们期望的是 JSON 请求，我们可以直接解构它。
-*   获取到这些值后，我们对其进行校验。
-*   如果两者都是 admin，则进行身份验证（目前如此）。
-*   如果不是，则发送自定义错误消息。
-*   注意，我们使用 `res.json()` 方法发送响应。如果查看 `NextApiResponse` 的类型声明，我们会发现 `res` 对象支持以下方法：
-
-```
+```typescript
 export declare type NextApiResponse<T = any> = ServerResponse& {
   /**
    * Send data ‘any’ data in response
@@ -3645,27 +3544,29 @@ export declare type NextApiResponse<T = any> = ServerResponse& {
 };
 ```
 
-*   正如注释所述，`send` 只是将原始文本发送回客户端。
-*   `json` 方法接收对象，将其序列化为 JSON 字符串，设置适当的 Content-Type 标头，然后发送给客户端。
-*   如果你还想设置自定义状态码（默认为 200 OK），可以使用附加的 `status` 方法。
+- 正如注释所述，`send` 只是将原始文本发送回客户端。
+- `json` 方法接收对象，将其序列化为 JSON 字符串，设置适当的 Content-Type 标头，然后发送给客户端。
+- 如果你还想设置自定义状态码（默认为 200 OK），可以使用附加的 `status` 方法。
 
 现在，让我们更新首页的 `index.tsx` 文件，将数据发送回服务器 API：
 
-```
+
+
+```tsx
 // pages/index.tsx
-import React, { useState } from ‘react’
-import { NextPage } from ‘next’
-import ‘./styles.css’
+import React, { useState } from 'react'
+import { NextPage } from 'next'
+import './styles.css'
 
 const IndexPage: NextPage = () => {
-  const [username, setUsername] = useState<string>(‘’)
-  const [password, setPassword] = useState<string>(‘’)
+  const [username, setUsername] = useState<string>('')
+  const [password, setPassword] = useState<string>('')
 
   async function submitForm() {
-    const req = await fetch(‘/api/login’, {
-      method: ‘POST’,
+    const req = await fetch('/api/login', {
+      method: 'POST',
       headers: {
-        ‘Content-Type’: ‘application/json’
+        'Content-Type': 'application/json'
       },
       body: JSON.stringify({ username, password })
     })
@@ -3674,12 +3575,12 @@ const IndexPage: NextPage = () => {
   }
 
   return (
-    <form method=”POST”>
-      <div className=”box”>
+    <form method="POST">
+      <div className="box">
         <h1>Login</h1>
-        <input type=”text” placeholder=”Username” className=”field” value={username} onChange={e =>setUsername(e.target.value)} />
-        <input type=”password” placeholder=”Password” className=”field” value={password} onChange={e =>setPassword(e.target.value)} />
-        <div className=”btn” onClick={submitForm}>Sign In</div>
+        <input type="text" placeholder="Username" className="field" value={username} onChange={e => setUsername(e.target.value)} />
+        <input type="password" placeholder="Password" className="field" value={password} onChange={e => setPassword(e.target.value)} />
+        <div className="btn" onClick={submitForm}>Sign In</div>
       </div>
     </form>
   )
@@ -3688,7 +3589,7 @@ const IndexPage: NextPage = () => {
 export default IndexPage
 ```
 
-我们添加了一个名为 `submitForm` 的新函数，当点击“登录”按钮时触发。结果如下：
+我们添加了一个名为`submitForm`的新函数，当点击“登录”按钮时触发。结果如下：
 
 登录失败：
 
@@ -3706,19 +3607,21 @@ export default IndexPage
 
 上面的截图展示了用户登录成功的情况。
 
-太棒了！我们刚刚使用 `Next.js` 实现了第一个 API 端点。现在，让我们继续将这些数据放入 Redux 存储中。现在开始实现 Redux。这很重要，因为我们希望将服务器传递的数据用于不同的页面/组件，而集中式存储将帮助我们实现这一点。
+太棒了！我们刚刚使用`Next.js`实现了第一个 API 端点。现在，让我们继续将这些数据放入 Redux 存储中。现在开始实现 Redux。这很重要，因为我们希望将服务器传递的数据用于不同的页面/组件，而集中式存储将帮助我们实现这一点。
 
 ### 设置 Redux + Next.js
 
-首先，安装 `redux` 和 `next-redux-wrapper`，它们将为 `Next.js` 项目提供 `Redux.js` 包装器。使用以下命令在系统上安装该包：
+首先，安装`redux`和`next-redux-wrapper`，它们将为`Next.js`项目提供`Redux.js`包装器。使用以下命令在系统上安装该包：
 
-`npm install react-redux redux next-redux-wrapper --save`
+```bash
+npm install react-redux redux next-redux-wrapper --save
+```
 
 接下来，我们将设置 Redux 存储。回想一下我们在 Context API 中如何设置默认状态。这与那些行非常相似。存储基本上是一个集中式位置，所有组件都可以在其中存储数据并从该特定区域检索数据。
 
 由于它是集中式的并且与组件解耦，因此读取/写入该区域的值可能会出现问题；因此，必须有一种简化的方式来仅访问组件需要读取的值。
 
-类似地，如果你想写入（更新）Redux 状态，你不能直接操作。你必须为其编写一个**归约器**，即用于归约状态的东西。一旦你为存储编写了归约器，你就可以编写**调度器**。这些函数被称为调度器，因为它们将某些动作分派给这些归约器，而归约器在接收到这些动作后，会根据接收到的动作相应地更新状态。下图简要展示了 Redux 架构的工作原理：
+类似地，如果你想写入（更新）Redux 状态，你不能直接操作。你必须为其编写一个归约器，即用于归约状态的东西。一旦你为存储编写了归约器，你就可以编写调度器。这些函数被称为调度器，因为它们将某些动作分派给这些归约器，而归约器在接收到这些动作后，会根据接收到的动作相应地更新状态。下图简要展示了 Redux 架构的工作原理：
 
 ![](img/image113.jpg)
 
@@ -3726,9 +3629,9 @@ export default IndexPage
 
 如果这让你感到困惑，别担心。当我们再次通过代码来讲解时，一切都会变得清晰得多。现在，让我们看看归约器代码：
 
-1.  在项目目录下的 `redux` 文件夹中创建一个名为 `reducer.ts` 的文件（创建 `redux` 文件夹）。以下是归约器代码：
+1. 在项目目录下的`redux`文件夹中创建一个名为`reducer.ts`的文件（创建`redux`文件夹）。以下是归约器代码：
 
-```
+```ts
 // reducer.ts
 type Action = {
   type: string
@@ -3751,9 +3654,9 @@ const defaultState: State = {
 
 const reducer = (state: State = defaultState, action: Action) => {
   switch (action.type) {
-    case ‘SET_USER_DETAILS’:
+    case 'SET_USER_DETAILS':
       return {
-        …state,
+        ...state,
         user: <UserDetails>action.payload
       }
     default:
@@ -3764,15 +3667,15 @@ const reducer = (state: State = defaultState, action: Action) => {
 export default reducer
 ```
 
-在这里，你可以看到我们正在创建一个 Redux 存储和归约器。如上所述，`store` 是存储数据的地方，而归约器是一个函数，它使用某些分派的动作来更新存储。让我们了解这段代码是如何工作的：
+在这里，你可以看到我们正在创建一个 Redux 存储和归约器。如上所述，`store`是存储数据的地方，而归约器是一个函数，它使用某些分派的动作来更新存储。让我们了解这段代码是如何工作的：
 
-*   首先，我们定义了一些 TypeScript 类型。
-*   然后我们创建了一个 `reducer` 函数。
-*   `reducer` 函数接受两个参数，第一个是实际的应用程序状态，在 `redux` 调用归约器之前，它会由 redux 自动填充。
-*   第二个参数是动作。我们的任务只是通过 `dispatcher` 函数分派这些动作。Redux 会自动调用 `reducer` 函数。
-*   这个动作实际上是一个对象，包含一个类型和负载。
-*   `type` 属性定义了该动作应该更新什么。
-*   `payload` 属性是你可以传递给归约器以更新状态的一些附加数据。
+- 首先，我们定义了一些 TypeScript 类型。
+- 然后我们创建了一个`reducer`函数。
+- `reducer`函数接受两个参数，第一个是实际的应用程序状态，在`redux`调用归约器之前，它会由 redux 自动填充。
+- 第二个参数是动作。我们的任务只是通过`dispatcher`函数分派这些动作。Redux 会自动调用`reducer`函数。
+- 这个动作实际上是一个对象，包含一个类型和负载。
+- `type`属性定义了该动作应该更新什么。
+- `payload`属性是你可以传递给归约器以更新状态的一些附加数据。
 
 文件结构如下所示：
 
@@ -3782,24 +3685,20 @@ export default reducer
 
 上面的截图展示了当前的文件结构。
 
-2.  完成后，现在我们必须将 Redux 集成到我们的应用中。我们使用特殊的 `pages/_app.js`（实际上是 `_app.tsx`）文件来实现这一点。现在我们来讨论一下。
+2. 完成后，现在我们必须将 Redux 集成到我们的应用中。我们使用特殊的`pages/_app.js`（实际上是`_app.tsx`）文件来实现这一点。现在我们来讨论一下。
 
-### _app.js 文件
+### `_app.js`文件
 
 根据文档：
 
-*   `Next.js` 使用 `App` 组件来初始化页面
-*   要覆盖，请创建 `./pages/_app.js` 文件并覆盖 `App` 类
+- `Next.js`使用`App`组件来初始化页面。
+- 要覆盖，请创建`./pages/_app.js`文件并覆盖`App`类。
 
-基本上，这个文件允许你覆盖 `Next.js` 用于提供页面的一些默认配置。由于我们希望 Redux 在每个页面上都可用，我们可以将 Redux 的 Provider（就像我们包装 Context API provider 一样）包装在这个特定文件中。
+基本上，这个文件允许你覆盖`Next.js`用于提供页面的一些默认配置。由于我们希望 Redux 在每个页面上都可用，我们可以将 Redux 的 Provider（就像我们包装 Context API provider 一样）包装在这个特定文件中。
 
-因为我们使用的是 TypeScript，所以我们将创建一个名为 `_app.tsx` 的文件。让我们继续创建它：
+因为我们使用的是 TypeScript，所以我们将创建一个名为`_app.tsx`的文件。让我们继续创建它：
 
-
-
-
-
-```
+```tsx
 // pages/_app.tsx
 
 import React from 'react'
@@ -3812,9 +3711,9 @@ import { NextComponentType, NextPageContext } from 'next/dist/next-server/lib/ut
 
 let devTools = (f: any) => f
 
-if(process.browser) {
+if (process.browser) {
   const _window = window as any
-  if(_window.__REDUX_DEVTOOLS_EXTENSION__) {
+  if (_window.__REDUX_DEVTOOLS_EXTENSION__) {
     devTools = _window.__REDUX_DEVTOOLS_EXTENSION__()
   }
 }
@@ -3843,13 +3742,13 @@ export default withRedux(makeStore)(MyApp)
 
 让我们来看看这个文件中发生了什么：
 
-*   我们从 `redux` 包中导入了 `createStore` 和 `Store`。`Store` 是我们将要使用的 store 的接口。
-*   我们获取了 `withRedux` 高阶组件（HOC）。
-*   然后我们注册了 redux devtools 以确保其正常工作。为此，你必须在浏览器中安装 Redux DevTools Chrome 扩展。你可以在扩展商店免费找到它。
-*   接着，我们像编写一个普通的 Next 页面一样编写文件，并带有类型化的 props。
-*   看到我们从 `MyApp` 的 props 中解构了 `Component`、`pageProps` 和 `store` 吗？这是因为这个文件在每次页面发送之前由 `Next.js` 运行，你可以在页面渲染（或发送）之前对其进行修改。
-*   我们只是将原本要发送的原始 `Component` 包裹在 react-redux 包提供的 `Provider` 组件中。
-*   `next-redux-wrapper` 包在底层初始化了客户端和服务端的 store，并处理了技术细节。
+- 我们从`redux`包中导入了`createStore`和`Store`。`Store`是我们将要使用的 store 的接口。
+- 我们获取了`withRedux`高阶组件（HOC）。
+- 然后我们注册了 redux devtools 以确保其正常工作。为此，你必须在浏览器中安装 Redux DevTools Chrome 扩展。你可以在扩展商店免费找到它。
+- 接着，我们像编写一个普通的 Next 页面一样编写文件，并带有类型化的 props。
+- 看到我们从`MyApp`的 props 中解构了`Component`、`pageProps`和`store`吗？这是因为这个文件在每次页面发送之前由`Next.js`运行，你可以在页面渲染（或发送）之前对其进行修改。
+- 我们只是将原本要发送的原始`Component`包裹在 react-redux 包提供的`Provider`组件中。
+- `next-redux-wrapper`包在底层初始化了客户端和服务端的 store，并处理了技术细节。
 
 此时，如果你查看你的应用程序，并下载 Chrome 的 Redux DevTools 扩展，在 Chrome DevTools 中，你应该会看到 Redux 正在工作，并且你会得到一个空的 redux 用户 store：
 
@@ -3863,9 +3762,9 @@ export default withRedux(makeStore)(MyApp)
 
 ### 派发 Redux Actions
 
-为了改变 Redux store 中的状态，我们需要派发 actions。Actions 通知 Redux 条件发生了变化，状态应该以某种方式被修改。然而，并非每次派发都必须更新状态。让我们创建一个名为 `redux/actions.ts` 的新文件，其中包含以下代码：
+为了改变 Redux store 中的状态，我们需要派发 actions。Actions 通知 Redux 条件发生了变化，状态应该以某种方式被修改。然而，并非每次派发都必须更新状态。让我们创建一个名为`redux/actions.ts`的新文件，其中包含以下代码：
 
-```
+```ts
 import { UserDetails } from './reducer'
 
 export const setUserDetails = (payload: UserDetails) => {
@@ -3873,9 +3772,9 @@ export const setUserDetails = (payload: UserDetails) => {
 }
 ```
 
-现在，我们将在根页面中使用这个 action。让我们将 `pages/index.tsx` 更新为以下内容：
+现在，我们将在根页面中使用这个 action。让我们将`pages/index.tsx`更新为以下内容：
 
-```
+```tsx
 import React, { useState } from 'react'
 import { NextPage } from 'next'
 import './styles.css'
@@ -3928,10 +3827,10 @@ export default connect(mapStateToProps, { setUserDetails })(IndexPage)
 
 那么，这个文件中发生了什么？让我们看看：
 
-*   我们导入了刚刚创建的 `action` 函数。
-*   登录时，我们现在调用一个以某种方式作为组件 props 接收到的函数。怎么做到的？我们马上会看到。
-*   然后我们创建了一个叫做 `mapStateToProps` 的东西。对于 Redux，我们可以从中央 store 中提取我们想要的某些值。还记得我们的 reducer 名称是 user 吗？我们解构（ES6 解构）了 user reducer，并尝试提取 name 属性（如果存在的话）。
-*   最后，我们导出了组件，但不是直接导出 `IndexPage`，而是将其包裹在一个高阶组件中。第一个参数是我们创建的 `mapStateToProps`。第二个参数是我们传递的方法，这些方法将在我们的 props 中可用。当你调用这些方法时，这些方法的返回值会被派发到 Redux store。现在，其中一个 reducer 会捕获该 action（通过其 type），并相应地更新状态。
+- 我们导入了刚刚创建的`action`函数。
+- 登录时，我们现在调用一个以某种方式作为组件 props 接收到的函数。怎么做到的？我们马上会看到。
+- 然后我们创建了一个叫做`mapStateToProps`的东西。对于 Redux，我们可以从中央 store 中提取我们想要的某些值。还记得我们的 reducer 名称是 user 吗？我们解构（ES6 解构）了 user reducer，并尝试提取 name 属性（如果存在的话）。
+- 最后，我们导出了组件，但不是直接导出`IndexPage`，而是将其包裹在一个高阶组件中。第一个参数是我们创建的`mapStateToProps`。第二个参数是我们传递的方法，这些方法将在我们的 props 中可用。当你调用这些方法时，这些方法的返回值会被派发到 Redux store。现在，其中一个 reducer 会捕获该 action（通过其 type），并相应地更新状态。
 
 现在你会看到，当我们使用正确的凭据（用户名和密码均为 admin）登录时，我们的名字会替换在登录表单中，如果你检查 Redux DevTools，你会看到相应的 action 也被派发了，从而更新了 Redux 状态：
 
@@ -3941,15 +3840,17 @@ export default connect(mapStateToProps, { setUserDetails })(IndexPage)
 
 上面的截图展示了正确地向我们的 Redux store 派发了一个 action。
 
-但即使对于这个页面，我们还可以做更多！当 React 引入 hooks 时，Redux 也很快引入了 hooks 支持！因此，我们可以直接使用提供的 Redux hooks 从 store 中获取所需的值，而不是使用 `connect` 函数将中央 store 与组件连接起来。
+但即使对于这个页面，我们还可以做更多！当 React 引入 hooks 时，Redux 也很快引入了 hooks 支持！因此，我们可以直接使用提供的 Redux hooks 从 store 中获取所需的值，而不是使用`connect`函数将中央 store 与组件连接起来。
 
 类似地，如果我们想要派发 actions，我们也可以通过 Redux 提供的 dispatcher（通过 hook）来派发它们。让我们修改上面的文件，改用 hooks。
 
-### useSelector 和 useDispatch
+### `useSelector`和`useDispatch`
 
-这两个 hooks 允许我们在 React 中使用 hooks 来使用 Redux（几乎就像你使用 `useContext` 一样）。让我们看看上面的文件如何用 hooks 编写：
+这两个 hooks 允许我们在 React 中使用 hooks 来使用 Redux（几乎就像你使用`useContext`一样）。让我们看看上面的文件如何用 hooks 编写：
 
-```
+
+
+```jsx
 import React, { useState } from 'react'
 import { NextPage } from 'next'
 import './styles.css'
@@ -3993,14 +3894,9 @@ export default IndexPage
 
 以下是发生的事情：
 
-
-
-
-*   显然，我们可以看到这段代码比上面的代码更简洁、更清晰，而且我们避免了在主组件上方不使用高阶组件（HoC）时产生的额外组件层级。
-
-*   `useDispatch()` 钩子只是返回一个 dispatch 函数，我们需要用它来包裹我们的 dispatch 方法。请记住，`setUserDetails` 函数实际上返回一个普通对象，而我们实际上只是将第一个参数作为一个普通 JSON 对象传递给 dispatch。我们之前不需要调用 dispatch 的原因是因为当我们将其传递给 `connect` 方法时，Redux 在底层已经完成了这项工作。
-
-*   `useSelector()` 钩子允许你传入一个函数，该函数可以过滤出你想要提取的值。`useSelector()` 默认在变化时执行浅比较，如果浅比较检测到任何变化，就会重新渲染组件。就我们目前的情况而言，我们的 user 对象从 null 变为一个定义明确的对象，所以应该没问题。
+- 显然，我们可以看到这段代码比上面的代码更简洁、更清晰，而且我们避免了在主组件上方不使用高阶组件（HoC）时产生的额外组件层级。
+- `useDispatch()` 钩子只是返回一个 dispatch 函数，我们需要用它来包裹我们的 dispatch 方法。请记住，`setUserDetails` 函数实际上返回一个普通对象，而我们实际上只是将第一个参数作为一个普通 JSON 对象传递给 dispatch。我们之前不需要调用 dispatch 的原因是因为当我们将其传递给 `connect` 方法时，Redux 在底层已经完成了这项工作。
+- `useSelector()` 钩子允许你传入一个函数，该函数可以过滤出你想要提取的值。`useSelector()` 默认在变化时执行浅比较，如果浅比较检测到任何变化，就会重新渲染组件。就我们目前的情况而言，我们的 user 对象从 null 变为一个定义明确的对象，所以应该没问题。
 
 现在，如果我们查看输出，应该没有任何区别，一切正常。这就是我们如何在 React + Redux 中使用钩子的方式。
 
@@ -4016,16 +3912,16 @@ export default IndexPage
 
 我们暂时保持仪表盘页面简单，只需在 `dashboard/index.tsx` 文件中放入以下代码：
 
-```
-import React from ‘react’
-import { NextPage } from ‘next’
-import { useSelector } from ‘react-redux’
+```tsx
+import React from 'react'
+import { NextPage } from 'next'
+import { useSelector } from 'react-redux'
 
 const DashboardPage: NextPage = () => {
-  const user = useSelector((state: any) =>state.user)
-  if(!user) return <p>User not available</p>
+  const user = useSelector((state: any) => state.user)
+  if (!user) return <p>User not available</p>
   return (
-    <div id=”dashboard”>
+    <div id="dashboard">
       <h1>Hello {user.name}</h1>
       <p>Your favorite quote: {user.favQuote}</p>
     </div>
@@ -4041,46 +3937,46 @@ export default DashboardPage
 
 为了有条件地将用户重定向到不同的页面，我们将使用 `next/router` 中的 Router 包。让我们继续使用它：
 
-```
+```tsx
 // pages/index.tsx
-import React, { useState } from ‘react’
-import { NextPage } from ‘next’
-import ‘./styles.css’
-import { useSelector, useDispatch } from ‘react-redux’
-import { setUserDetails } from ‘../redux/actions’
-import Router from ‘next/router’
+import React, { useState } from 'react'
+import { NextPage } from 'next'
+import './styles.css'
+import { useSelector, useDispatch } from 'react-redux'
+import { setUserDetails } from '../redux/actions'
+import Router from 'next/router'
 
 const IndexPage: NextPage = () => {
   const dispatch = useDispatch()
-  const name = useSelector((state: any) =>state.user&& state.user.name)
-  const [username, setUsername] = useState<string>(‘’)
-  const [password, setPassword] = useState<string>(‘’)
+  const name = useSelector((state: any) => state.user && state.user.name)
+  const [username, setUsername] = useState<string>('')
+  const [password, setPassword] = useState<string>('')
 
   async function submitForm() {
-    const req = await fetch(‘/api/login’, {
-      method: ‘POST’,
+    const req = await fetch('/api/login', {
+      method: 'POST',
       headers: {
-        ‘Content-Type’: ‘application/json’
+        'Content-Type': 'application/json'
       },
       body: JSON.stringify({ username, password })
     })
     const json = await req.json()
-    if(json.status === ‘ok’) {
+    if (json.status === 'ok') {
       dispatch(setUserDetails(json.data))
-      `Router.push(‘/dashboard’)`
+      Router.push('/dashboard')
     } else {
-      alert(‘Incorrect Login’)
+      alert('Incorrect Login')
     }
   }
 
   return (
-    <form method=”POST”>
-      <div className=”box”>
+    <form method="POST">
+      <div className="box">
         <h1>Login</h1>
-        {name || ‘na’}
-        <input type=”text” placeholder=”Username” className=”field” value={username} onChange={e =>setUsername(e.target.value)} />
-        <input type=”password” placeholder=”Password” className=”field” value={password} onChange={e =>setPassword(e.target.value)} />
-        <div className=”btn” onClick={submitForm}>Sign In</div>
+        {name || 'na'}
+        <input type="text" placeholder="Username" className="field" value={username} onChange={e => setUsername(e.target.value)} />
+        <input type="password" placeholder="Password" className="field" value={password} onChange={e => setPassword(e.target.value)} />
+        <div className="btn" onClick={submitForm}>Sign In</div>
       </div>
     </form>
   )
@@ -4109,9 +4005,9 @@ export default IndexPage
 
 并在其中写入以下代码：
 
-```
-import React from ‘react’
-import { NextPage } from ‘next’
+```tsx
+import React from 'react'
+import { NextPage } from 'next'
 
 const PathPage: NextPage = () => {
   return (
@@ -4130,16 +4026,16 @@ export default PathPage
 
 上面的截图展示了浏览器中嵌套路由的示例。
 
-你还需要了解的另一件事是，你可以将 `path3` 创建为文件夹，并将上述代码放在 `path3/index.tsx` 中，效果是一样的。在 Next.js 9+ 中，我们还支持动态路由。让我们看看它是什么以及如何工作。
+你还需要了解的另一件事是，你可以将 `path3` 创建为文件夹，并将上述代码放在 `path3/index.tsx` 中，效果是一样的。在 `Next.js 9+` 中，我们还支持动态路由。让我们看看它是什么以及如何工作。
 
 ### 动态路由
 
-Next.js 最近引入了动态路由，这为匹配大量 URL 打开了大门，而不仅仅是我们在 `pages` 目录中一直使用的静态路由。让我们在 `pages/` 目录中创建一个名为 `users/index.tsx` 的文件。我们还将创建一个名为 `users/[param].tsx` 的文件。以下是两者的代码：
+`Next.js` 最近引入了动态路由，这为匹配大量 URL 打开了大门，而不仅仅是我们在 `pages` 目录中一直使用的静态路由。让我们在 `pages/` 目录中创建一个名为 `users/index.tsx` 的文件。我们还将创建一个名为 `users/[param].tsx` 的文件。以下是两者的代码：
 
-```
+```tsx
 // pages/users/index.tsx
-import React from ‘react’
-import { NextPage } from ‘next’
+import React from 'react'
+import { NextPage } from 'next'
 
 const UsersPage: NextPage = () => {
   return (
@@ -4152,10 +4048,10 @@ export default UsersPage
 
 以及另一个文件：
 
-```
+```tsx
 // pages/users/[param].tsx
-import React from ‘react’
-import { NextPage } from ‘next’
+import React from 'react'
+import { NextPage } from 'next'
 
 const UsersPageDynamic: NextPage = () => {
   return (
@@ -4180,26 +4076,25 @@ export default UsersPageDynamic
 
 但我们知道我们没有名为 `users/abcd` 的文件。那么，这里发生了什么？
 
-*   当你用方括号命名文件时（就像我们对 `[param].tsx` 所做的那样），这意味着 `Next.js` 会将其视为匹配任何放在不同路由下的内容。
+- 当你用方括号命名文件时（就像我们对 `[param].tsx` 所做的那样），这意味着 `Next.js` 会将其视为匹配任何放在不同路由下的内容。
+- 那么文件名呢？实际上，我们可以使用参数（即文件名）来提取有关路由的信息。让我们修改 `[param].tsx` 文件以更好地反映这一点：
 
-*   那么文件名呢？实际上，我们可以使用参数（即文件名）来提取有关路由的信息。让我们修改 `[param].tsx` 文件以更好地反映这一点：
+  ```tsx
+  // pages/users/[param].tsx
+  import React from 'react'
+  import { NextPage } from 'next'
+  import { useRouter } from 'next/router'
 
-    ```
-    // pages/users/[param].tsx
-    import React from ‘react’
-    import { NextPage } from ‘next’
-    import { useRouter } from ‘next/router’
+  const UsersPageDynamic: NextPage = () => {
+    const router = useRouter()
+    console.log(router)
+    return (
+      <h1>Just a regular file too {router.query.param}</h1>
+    )
+  }
 
-    const UsersPageDynamic: NextPage = () => {
-      const router = useRouter()
-      console.log(router)
-      return (
-        <h1>Just a regular file too {router.query.param}</h1>
-      )
-    }
-
-    export default UsersPageDynamic
-    ```
+  export default UsersPageDynamic
+  ```
 
 有了这个，如果我访问 URL `http://localhost:3000/users/mehul`，我应该在控制台中看到以下内容：
 
@@ -4209,18 +4104,16 @@ export default UsersPageDynamic
 
 让我们讨论一下为什么会这样：
 
-*   你可以看到，在 URL 中，`param` 的值是 `mehul`，这反映在屏幕上，因为使用了 `router.query.param`。
-
-*   在右侧的控制台中，我们可以获取 `useRouter` 钩子返回的所有信息。我们可以看到 `param` 是 `query` 属性中的其中之一。这直接来自文件名。如果你将文件命名为其他名称，它也会是其他名称。
-
-
-
+- 你可以看到，在 URL 中，`param` 的值是 `mehul`，这反映在屏幕上，因为使用了 `router.query.param`。
+- 在右侧的控制台中，我们可以获取 `useRouter` 钩子返回的所有信息。我们可以看到 `param` 是 `query` 属性中的其中之一。这直接来自文件名。如果你将文件命名为其他名称，它也会是其他名称。
 
 好的。现在我们了解了动态路由，就能更轻松地处理像创建社交媒体网站这样的用例——你可以在 URL 中访问任何人的个人资料。接下来，让我们在我们的应用中快速实现一个注册页面。
 
 ### 注册页面
 
 让我们使用 `Next.js` 创建一个路径 `/register`：
+
+
 
 ```typescript
 // pages/register/index.tsx
@@ -4276,7 +4169,7 @@ export default RegisterPage
 
 在这里，我们只是从用户那里获取所有需要的信息，并将其发送到我们的 API 后端。
 
-然后我们直接从 `IndexPage` 复制粘贴样式：
+然后我们直接从`IndexPage`复制粘贴样式：
 
 ```css
 // pages/register/styles.css
@@ -4349,7 +4242,7 @@ h1 {
 }
 ```
 
-现在让我们创建 `api/register` 端点：
+现在让我们创建`api/register`端点：
 
 ```typescript
 // api/register/index.ts
@@ -4367,9 +4260,9 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
 }
 ```
 
-在这里，你可以看到我使用了一个名为 `userlist.ts` 的文件，并通过它调用一些工具函数。在真实网站中，这实际上会是一个数据库，但为了简单起见，我们可以使用一个内存中的数据结构（一个 JS 对象）来临时存储注册信息。
+在这里，你可以看到我使用了一个名为`userlist.ts`的文件，并通过它调用一些工具函数。在真实网站中，这实际上会是一个数据库，但为了简单起见，我们可以使用一个内存中的数据结构（一个 JS 对象）来临时存储注册信息。
 
-`userlist.ts` 文件的内容如下：
+`userlist.ts`文件的内容如下：
 
 ```typescript
 type DataType = {
@@ -4402,64 +4295,51 @@ const methods = {
 export default methods
 ```
 
-这个文件不言自明。我们暴露了一系列方法来操作我们在用户数组中维护的动态用户列表。由于 Node 的导出是单例的（即对同一文件的多次导入指向内存中的同一个 `object/array`），我们可以预期它是一致的。
+这个文件不言自明。我们暴露了一系列方法来操作我们在用户数组中维护的动态用户列表。由于 Node 的导出是单例的（即对同一文件的多次导入指向内存中的同一个`object/array`），我们可以预期它是一致的。
 
 好了！现在我们可以继续在前端注册一些带有自定义引言的账户了！作为练习，尝试进一步完善这个应用，包括在所有页面上进行身份验证检查，并在用户登录时获取数据。
 
 ## 结论
 
-在本章中，我们花了必要的时间深入 `Next.js` 生态系统。我们还深入研究了 `Redux`，将 `redux` 与 `Next.js` 集成，使用 `Next` 进行路由，以及如何在不脱离 `Next.js` 框架的情况下创建 API。现在我们掌握了足够的知识，可以用 `Next.js` 创建从基础到中等复杂度的服务端渲染后端。在下一章中，我们将进一步了解在渐进式 Web 应用领域，使用 `React` 技术可以实现哪些功能。
+在本章中，我们花了必要的时间深入`Next.js`生态系统。我们还深入研究了`Redux`，将`redux`与`Next.js`集成，使用`Next`进行路由，以及如何在不脱离`Next.js`框架的情况下创建 API。现在我们掌握了足够的知识，可以用`Next.js`创建从基础到中等复杂度的服务端渲染后端。在下一章中，我们将进一步了解在渐进式 Web 应用领域，使用`React`技术可以实现哪些功能。
 
 ## 问题
 
-1.  `TypeScript` 和 `JavaScript` 有什么区别？所有有效的 `JavaScript` 也都是有效的 `TypeScript` 吗？
-
-2.  什么是 `Redux`？它是如何工作的？
-
-3.  `Next.js` 中的 `getInitialProps` 有什么作用？
-
-4.  `Next.js` 中的 `pages` 文件夹和 `api` 文件夹有什么区别？
-
-5.  `Redux` 中的 `reducer` 是什么意思？
-
-6.  `_app.js` 文件的作用是什么？`Next.js` 中还有另一个名为 `_document.js` 的文件。你能找出它的作用吗？
-
-7.  嵌套路由和动态路由有什么区别？在 `Next v9.x` 中，动态路由可以嵌套吗？
+1. `TypeScript`和`JavaScript`有什么区别？所有有效的`JavaScript`也都是有效的`TypeScript`吗？
+2. 什么是`Redux`？它是如何工作的？
+3. `Next.js`中的`getInitialProps`有什么作用？
+4. `Next.js`中的`pages`文件夹和`api`文件夹有什么区别？
+5. `Redux`中的`reducer`是什么意思？
+6. `_app.js`文件的作用是什么？`Next.js`中还有另一个名为`_document.js`的文件。你能找出它的作用吗？
+7. 嵌套路由和动态路由有什么区别？在`Next v9.x`中，动态路由可以嵌套吗？
 
 # 第 8 章
 
 ## 渐进式 Web 应用
 
-在上一章中，我们学习了 `Next.js` 技术，以及它如何推动当今 `React` 的 `SSR` 世界。当 Web 应用遇到原生应用时，一种不同类型的应用诞生了，那就是渐进式 Web 应用。在本章中，我们将全面了解 `PWA`，并学习如何使用 `React` 作为主要前端库来创建一个 PWA。
+在上一章中，我们学习了`Next.js`技术，以及它如何推动当今`React`的`SSR`世界。当 Web 应用遇到原生应用时，一种不同类型的应用诞生了，那就是渐进式 Web 应用。在本章中，我们将全面了解`PWA`，并学习如何使用`React`作为主要前端库来创建一个 PWA。
 
 ### 结构
 
-*   什么是 `渐进式 Web 应用`（`PWA`）
-*   `PWA` 入门
-*   `manifest.json` 文件
-*   服务工作线程
-*   使用 `Next.js` 的 `PWA`
-*   使用 `Next.js` 的自定义服务器
+- 什么是`渐进式 Web 应用`（`PWA`）
+- `PWA`入门
+- `manifest.json`文件
+- 服务工作线程
+- 使用`Next.js`的`PWA`
+- 使用`Next.js`的自定义服务器
 
 ### 目标
 
-在本章中，我们的主要目标是理解什么是渐进式 Web 应用，以及如何将它们集成到我们的 `React` 和 `Next.js` 项目中。在此过程中，我们将进一步了解这些技术。
+在本章中，我们的主要目标是理解什么是渐进式 Web 应用，以及如何将它们集成到我们的`React`和`Next.js`项目中。在此过程中，我们将进一步了解这些技术。
 
 ### 什么是渐进式 Web 应用？
 
 渐进式 Web 应用本质上仍然是 Web 应用，但更胜一筹。它利用现代 Web 功能来提供出色的用户体验，类似于使用原生应用时的体验。渐进式 Web 应用的一些特性：
 
-1.  响应式：显然，你的应用应该适配所有屏幕和尺寸。幸运的是，如今创建一个响应式网站（或将现有网站转换为响应式设计）并不太难，除非代码非常陈旧。
-
-
-
-
+1. 响应式：显然，你的应用应该适配所有屏幕和尺寸。幸运的是，如今创建一个响应式网站（或将现有网站转换为响应式设计）并不太难，除非代码非常陈旧。
 2. 独立于互联网：你的 PWA 将使用称为服务工作线程（稍后详细介绍）的东西，使其能够在离线或低速互联网连接下工作。
-
 3. HTTPS：PWA 仅适用于 HTTPS。
-
 4. 可安装：你的 PWA 可以像普通应用一样安装在手机上（以及作为 Chrome 浏览器应用）。
-
 5. 可链接：可以通过一个简单的 URL 分享。
 
 #### Hello World
@@ -4476,7 +4356,7 @@ export default methods
 
 让我们看看`src/index.tsx`文件中以下加粗的行：
 
-```
+```typescript
 import React from ‘react’;
 import ReactDOM from ‘react-dom’;
 import ‘./index.css’;
@@ -4489,7 +4369,7 @@ ReactDOM.render(<App />, document.getElementById(‘root’));
 serviceWorker.unregister();
 ```
 
-我们正在导入一个名为`serviceWorker`的文件。稍后我们会介绍服务工作线程是什么，但现在，让我们将`unregister`方法调用改为 register，并使用以下命令构建应用：
+我们正在导入一个名为`serviceWorker`的文件。稍后我们会介绍服务工作线程是什么，但现在，让我们将`unregister`方法调用改为`register`，并使用以下命令构建应用：
 
 `npm run build`
 
@@ -4505,7 +4385,7 @@ serviceWorker.unregister();
 
 `php -S localhost:1234`
 
-确保在命令行中位于 build 文件夹内运行所有这些命令，因为它们将作为`http://localhost:1234`的根目录。
+确保在命令行中位于`build`文件夹内运行所有这些命令，因为它们将作为`http://localhost:1234`的根目录。
 
 现在，让我们继续访问站点`localhost:1234`。除了两件事之外，没有什么特别的。如果我们查看 Chrome 开发者工具中的**网络请求**选项卡，我们会看到一些特殊文件被请求，它们前面有一个齿轮图标（称为服务工作线程）：
 
@@ -4541,7 +4421,9 @@ serviceWorker.unregister();
 
 而`manifest.json`文件内容如下：
 
-```
+
+
+```json
 {
   “short_name”: “React App”,
   “name”: “Create React App Sample”,
@@ -4571,26 +4453,26 @@ serviceWorker.unregister();
 
 让我们快速浏览这些属性：
 
-*   `short_name`/`name`：用于命名你的应用程序。至少必须指定其中一个（可以同时指定两者）。如果同时指定，`short_name`将用于空间有限的地方，例如工具栏（你可以在上面的截图中看到，工具栏显示的是标题 React App，而不是 Create React App Sample）。
+- `short_name`/`name`：用于命名你的应用程序。至少必须指定其中一个（可以同时指定两者）。如果同时指定，`short_name`将用于空间有限的地方，例如工具栏（你可以在上面的截图中看到，工具栏显示的是标题 React App，而不是 Create React App Sample）。
 
-*   `icons`：正如属性名所说，这些是用于你的应用程序的图标，也是最终用户看到的图标。
+- `icons`：正如属性名所说，这些是用于你的应用程序的图标，也是最终用户看到的图标。
 
-*   `start_url`：此 URL 是应用程序启动时应打开的 URL。通常，你只需将其保留为根 URL，或者可以传入一些查询参数来跟踪应用程序何时被打开。例如，传入`/?utm_source=app_opened`可以让你跟踪 PWA 被打开的次数。
+- `start_url`：此 URL 是应用程序启动时应打开的 URL。通常，你只需将其保留为根 URL，或者可以传入一些查询参数来跟踪应用程序何时被打开。例如，传入`/?utm_source=app_opened`可以让你跟踪 PWA 被打开的次数。
 
-*   `display`：这允许你设置应用程序的启动方式。因为 PWA 毕竟是一个 Web 应用，它只在浏览器实例中启动。以下是可用的值及其作用：
+- `display`：这允许你设置应用程序的启动方式。因为 PWA 毕竟是一个 Web 应用，它只在浏览器实例中启动。以下是可用的值及其作用：
 
-| **值** | **描述** |
+| 值 | 描述 |
 | --- | --- |
 | `fullscreen` | 以全屏模式打开应用 |
 | `standalone` | 以类似原生应用窗口的方式打开应用 |
 | `minimal-ui` | 类似于全屏，但提供更多用于控制导航的 UI 元素 |
 | `browser` | 在浏览器中打开你的 URL |
 
-如果你想要我们刚才看到的“添加到主屏幕”提示，你的 display 值应仅设置为 standalone：
+如果你想要我们刚才看到的“添加到主屏幕”提示，你的 `display` 值应仅设置为 `standalone`。
 
-*   `theme_color`：这是应用程序工具栏的颜色。
+- `theme_color`：这是应用程序工具栏的颜色。
 
-*   `background_color`：这是应用启动时的启动屏幕背景颜色（适用于手机）。
+- `background_color`：这是应用启动时的启动屏幕背景颜色（适用于手机）。
 
 实际上，你可以使用在线工具（如[`app-manifest.firebaseapp.com/`](https://app-manifest.firebaseapp.com/)）轻松生成自己的`manifest.json`文件。
 
@@ -4612,7 +4494,7 @@ serviceWorker.unregister();
 
 让我们看看我们的`build`文件夹。在`build`文件夹中，有一个名为`service-worker.js`的文件，它在顶部导入了以下两个脚本：
 
-```
+```javascript
 importScripts(“https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js”);
 importScripts(
   “/precache-manifest.01aeacade56ec22296e752a5407421fc.js”
@@ -4623,10 +4505,7 @@ importScripts(
 
 第二个脚本是由`create-react-app`生成的文件，如果你打开它，你会看到它包含你的应用程序正在使用的静态资源（HTML 文件、CSS 文件、JavaScript 文件和图像）及其绝对 URL 路径。最后，`service-worker.js`文件包含以下代码片段：
 
-
-
-
-```
+```javascript
 self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 workbox.routing.registerNavigationRoute(workbox.precaching.getCacheKeyForURL("/index.html"), {
@@ -4634,44 +4513,48 @@ blacklist: [/^\/_/,/\/[^\/?]+\.[^\/]+$/],
 });
 ```
 
-简而言之，这段脚本将 `precache-manifest` 文件中描述的所有路由注册到 Service Worker，并指示其缓存这些资源。由于 React 应用本质上是**单页应用**（**SPA**），我们使用 `workbox.routing` API 的 `registerNavigationRoute` 方法，将 `index.html` 文件发送到用户访问应用时触发的任何路由上。这样，React 就能重新接管路由系统，并使用 `react-router` 或任何现有实现进行必要的内部路由。
+简而言之，这段脚本将 `precache-manifest` 文件中描述的所有路由注册到 Service Worker，并指示其缓存这些资源。由于 React 应用本质上是**单页应用**（SPA），我们使用 `workbox.routing` API 的`registerNavigationRoute`方法，将`index.html`文件发送到用户访问应用时触发的任何路由上。这样，React 就能重新接管路由系统，并使用`react-router`或任何现有实现进行必要的内部路由。
 
 ### 使用 Next.js 实现 PWA
 
-现在，我们对 PWA 是什么以及其基本工作原理有了不错的理解，接下来将重点讨论如何使用 `Next.js` 实现 PWA。
+现在，我们对 PWA 是什么以及其基本工作原理有了不错的理解，接下来将重点讨论如何使用`Next.js`实现 PWA。
 
-首先，创建一个简单的 `Next.js` 项目。你可以像前几章那样手动设置 `Next.js`，也可以直接使用方便的 `create-next-app` 工具，如下所示：
+首先，创建一个简单的`Next.js`项目。你可以像前几章那样手动设置`Next.js`，也可以直接使用方便的`create-next-app`工具，如下所示：
 
 ![](img/image93.jpg)
 
 **图 8.7**
 
-这基本上会像之前一样初始化我们的设置。完成后，我们需要安装另一个名为 `next-offline` 的包。这将为我们的应用启用 Service Worker 支持，并最终支持 PWA。
+这基本上会像之前一样初始化我们的设置。完成后，我们需要安装另一个名为`next-offline`的包。这将为我们的应用启用 Service Worker 支持，并最终支持 PWA。
 
-`npm install --save next-offline`
-
-这将安装 `next-offline` 包。完成后，在项目中创建一个名为 `next.config.js` 的新文件，并在其中写入以下内容：
-
+```bash
+npm install --save next-offline
 ```
+
+这将安装`next-offline`包。完成后，在项目中创建一个名为`next.config.js`的新文件，并在其中写入以下内容：
+
+```javascript
 // next.config.js
 constwithOffline = require('next-offline')
 constnextConfig = {}
 module.exports = withOffline(nextConfig)
 ```
 
-`next-offline` 包使用了大量默认配置，默认情况下我们可以安全地沿用这些配置。基本上，`withOffline` 函数的作用是：在准备 `Next.js` 的打包文件时，注入一个带有传入选项的 Service Worker 脚本。让我们使用 `npm run build` 构建项目。在 `build` 文件夹中，我们会在 `main-<hash>.js` 文件中看到类似以下压缩片段：
+`next-offline`包使用了大量默认配置，默认情况下我们可以安全地沿用这些配置。基本上，`withOffline`函数的作用是：在准备`Next.js`的打包文件时，注入一个带有传入选项的 Service Worker 脚本。让我们使用`npm run build`构建项目。在`build`文件夹中，我们会在`main-<hash>.js`文件中看到类似以下压缩片段：
 
-`navigator.serviceWorker.register("/service-worker.js",{scope:"/"}).then….`
+```javascript
+navigator.serviceWorker.register("/service-worker.js",{scope:"/"}).then….
+```
 
-现在，就像我们之前对 React 应用所做的那样，我们需要提供 `service-worker.js` 文件。别担心，我们不需要自己编写它，因为它同样是由 Next 自动创建的！但我们确实需要将其在 `/service-worker.js` URL 上提供，而且你知道，在 Next 中，静态文件是通过 `static` 目录提供的。
+现在，就像我们之前对 React 应用所做的那样，我们需要提供`service-worker.js`文件。别担心，我们不需要自己编写它，因为它同样是由 Next 自动创建的！但我们确实需要将其在`/service-worker.js` URL 上提供，而且你知道，在 Next 中，静态文件是通过`static`目录提供的。
 
-虽然我们可以将 Service Worker 文件移动到 `static` 目录，并通过上述配置更改 Service Worker 的路径，但我们将继续尝试将所有对 `/service-worker.js` 的请求重定向到文件系统中的文件，并通过创建自定义服务器让 Next 处理其余请求。
+虽然我们可以将 Service Worker 文件移动到`static`目录，并通过上述配置更改 Service Worker 的路径，但我们将继续尝试将所有对`/service-worker.js`的请求重定向到文件系统中的文件，并通过创建自定义服务器让 Next 处理其余请求。
 
 #### 自定义 Next.js 服务器
 
-在项目根目录创建一个名为 `server.js` 的文件，并在其中写入以下内容：
+在项目根目录创建一个名为`server.js`的文件，并在其中写入以下内容：
 
-```
+```javascript
 const { createServer } = require('http')
 const { join } = require('path')
 const { parse } = require('url')
@@ -4699,36 +4582,41 @@ console.log('> Ready on http://localhost:${3000}')
 
 这段代码直接取自 Next 官方文档，但让我们看看这里发生了什么：
 
-*   由于此脚本由 `node` 直接执行，不会经过 `webpack` 或 `babel`，因此这里必须使用 CommonJS 导入。
-*   然后我们从 `http` 包中引入 Node 的 `createServer` 方法来创建自定义服务器。
-*   我们还导入了 `next` 包。以下是 `next` API 的工作方式。
+- 由于此脚本由`node`直接执行，不会经过`webpack`或`babel`，因此这里必须使用 CommonJS 导入。
 
-##### next(config: object)
+- 然后我们从`http`包中引入 Node 的`createServer`方法来创建自定义服务器。
 
-`config` 对象包含以下内容：
+- 我们还导入了`next`包。以下是`next` API 的工作方式。
 
-*   `dev`：布尔值，表示开发/生产模式（`默认值：false`）
-*   `dir`：项目所在位置（`默认值：'.'`）
-*   `quiet`：是否隐藏包含服务器信息的错误消息（`默认值：false`）
-*   `conf`：Next.js 配置对象（与从 `next.config.js` 文件中读取的对象相同）
+##### `next(config: object)`
 
-这返回给我们一个 `app` 对象，该对象关联了一系列用于自定义路由的方法。不过我们只关注 `getRequestHandler` 和 `serveStatic`。
+`config`对象包含以下内容：
 
-##### getRequestHandler()
+- `dev`：布尔值，表示开发/生产模式（`默认值：false`）
 
-此方法基本上允许 Next 像默认方式一样处理路由，因此，当我们不希望执行自定义逻辑时，我们将使用 `createServer` 方法中适当的 `req` 和 `res` 对象调用此方法。
+- `dir`：项目所在位置（`默认值：'.'`）
 
-它返回另一个函数 `handle`，可以使用来自服务器的请求和响应对象调用该函数。
+- `quiet`：是否隐藏包含服务器信息的错误消息（`默认值：false`）
 
-##### serveStatic()
+- `conf`：Next.js 配置对象（与从`next.config.js`文件中读取的对象相同）
 
-我们使用另一个名为 `url` 的包将 URL 解析为不同部分——`hostname`、`pathname`、`protocol`、`port` 等。
+这返回给我们一个`app`对象，该对象关联了一系列用于自定义路由的方法。不过我们只关注`getRequestHandler`和`serveStatic`。
 
-最后，我们检查路径名是否与 `/service-worker.js` 匹配。如果匹配，则使用 `app.serveStatic()` 方法。基本上，我们传入 `req` 和 `res` 对象以及解析静态资源的路径。在我们的例子中，`service-worker.js` 文件作为直接子文件存在于 `.next` 文件夹中，因此我们直接使用 `path.join` 获取路径。
+##### `getRequestHandler()`
 
-完成后，我们还需要对 `package.json` 文件进行一些修改。JSON 文件中的 `scripts` 部分应如下所示：
+此方法基本上允许 Next 像默认方式一样处理路由，因此，当我们不希望执行自定义逻辑时，我们将使用`createServer`方法中适当的`req`和`res`对象调用此方法。
 
-```
+它返回另一个函数`handle`，可以使用来自服务器的请求和响应对象调用该函数。
+
+##### `serveStatic()`
+
+我们使用另一个名为`url`的包将 URL 解析为不同部分——`hostname`、`pathname`、`protocol`、`port`等。
+
+最后，我们检查路径名是否与`/service-worker.js`匹配。如果匹配，则使用`app.serveStatic()`方法。基本上，我们传入`req`和`res`对象以及解析静态资源的路径。在我们的例子中，`service-worker.js`文件作为直接子文件存在于`.next`文件夹中，因此我们直接使用`path.join`获取路径。
+
+完成后，我们还需要对`package.json`文件进行一些修改。JSON 文件中的`scripts`部分应如下所示：
+
+```json
 “scripts”: {
 “dev”: “node server.js”,
 “build”: “next build”,
@@ -4736,9 +4624,9 @@ console.log('> Ready on http://localhost:${3000}')
 }
 ```
 
-最后，像上次一样创建一个 `manifest.json` 文件，将其放在 `.next` 文件夹中，并为其添加自定义路由。因此 `manifest.json` 文件将如下所示：
+最后，像上次一样创建一个`manifest.json`文件，将其放在`.next`文件夹中，并为其添加自定义路由。因此`manifest.json`文件将如下所示：
 
-```
+```json
 {
 “short_name”: “React App”,
 “name”: “Create React App Sample”,
@@ -4766,9 +4654,9 @@ console.log('> Ready on http://localhost:${3000}')
 }
 ```
 
-而我们的 `server.js` 文件将如下所示：
+而我们的`server.js`文件将如下所示：
 
-```
+```javascript
 const { createServer } = require('http')
 const { join } = require('path')
 const { parse } = require('url')
@@ -4794,13 +4682,9 @@ console.log('> Ready on http://localhost:${3000}')
 })
 ```
 
-别忘了也将图标放在 `.next` 文件夹中！最后，为了提供 `manifest.json` 文件，我们需要在每个页面中将其作为 `link` 标签包含（就像上面 React 示例中那样）。让我们使用 `Next.js` 中的 `_document.js` 文件来实现。
+别忘了也将图标放在`.next`文件夹中！最后，为了提供`manifest.json`文件，我们需要在每个页面中将其作为`link`标签包含（就像上面 React 示例中那样）。让我们使用`Next.js`中的`_document.js`文件来实现。
 
-##### _document.js
-
-
-
-
+##### `_document.js`
 
 `pages`文件夹内的这个文件允许我们在各个位置（如页面头部）注入自定义标记。我们将使用以下文件来注入`manifest.json`：
 
@@ -4845,6 +4729,8 @@ export default MyDocument
 
 ![](img/p192.jpg)
 
+
+
 **图 8.10**
 
 ## 结论
@@ -4853,11 +4739,11 @@ export default MyDocument
 
 ## 问题
 
-1.  什么是 PWA？
-2.  PWA 与原生应用或混合应用有何不同？
-3.  Service Worker 和 Web Worker 有什么区别？
-4.  在 Next.js 框架中，`_document.js`文件的作用是什么？
-5.  自定义 Next.js 服务器与在 Next.js 中编程的自定义 API 端点有何不同？
+1. 什么是 PWA？
+2. PWA 与原生应用或混合应用有何不同？
+3. Service Worker 和 Web Worker 有什么区别？
+4. 在 Next.js 框架中，`_document.js` 文件的作用是什么？
+5. 自定义 Next.js 服务器与在 Next.js 中编程的自定义 API 端点有何不同？
 
 # 第 9 章
 
@@ -4867,13 +4753,13 @@ export default MyDocument
 
 ### 结构
 
-*   React 的工作原理
-    *   协调器
-    *   渲染器
-*   并发模式
-*   并发模式的工作原理
-*   选择加入并发模式
-*   React Suspense
+- React 的工作原理
+  - 协调器
+  - 渲染器
+- 并发模式
+- 并发模式的工作原理
+- 选择加入并发模式
+- React Suspense
 
 ### 目标
 
@@ -4939,7 +4825,7 @@ React.createElement("div", {
 
 React 的第二部分是 React 渲染器。现在，DOM 是能够使用 React 的主机环境之一。还有其他主机环境，比如 React Native（用于移动端），或者 React Hardware。渲染器基本上允许协调器与主机环境通信。
 
-例如，对于 DOM，我们知道元素是通过浏览器暴露的`document.createElement` API 创建的。但对于移动端主机（比如 Android）来说，情况可能并非如此。在那里，你必须使用其他方式在屏幕上创建 UI 元素，但这会影响协调器吗？不会！这就是为什么将协调器和渲染器拆分成不同的包是一个很好的决定。当你为网页安装 React 时，你会安装`react`和`react-dom`这两个包。在这里，`react`包基本上是协调器，而`react-dom`包是渲染器。
+例如，对于 DOM，我们知道元素是通过浏览器暴露的 `document.createElement` API 创建的。但对于移动端主机（比如 Android）来说，情况可能并非如此。在那里，你必须使用其他方式在屏幕上创建 UI 元素，但这会影响协调器吗？不会！这就是为什么将协调器和渲染器拆分成不同的包是一个很好的决定。当你为网页安装 React 时，你会安装 `react` 和 `react-dom` 这两个包。在这里，`react` 包基本上是协调器，而 `react-dom` 包是渲染器。
 
 ### 从类组件迁移
 
@@ -4949,15 +4835,10 @@ React 的第二部分是 React 渲染器。现在，DOM 是能够使用 React �
 
 ### 并发模式
 
-React 中的并发模式是一种全新的 React 工作方式。在计算机科学中，并发通常意味着基于时间分片执行多个任务。React 一旦完成 vDOM 差异计算，就必须将这些更改提交到 DOM。计算 vDOM 中的更改是非阻塞的，即使现在也是如此，并且这是 React 内部的工作方式（通过调用浏览器中的`requestIdleCallback`函数利用浏览器的空闲时间，并在其他主机环境中使用不同的线程），然而提交阶段，即写入 DOM，是同步的。并发模式的一些显著特性：
+React 中的并发模式是一种全新的 React 工作方式。在计算机科学中，并发通常意味着基于时间分片执行多个任务。React 一旦完成 vDOM 差异计算，就必须将这些更改提交到 DOM。计算 vDOM 中的更改是非阻塞的，即使现在也是如此，并且这是 React 内部的工作方式（通过调用浏览器中的 `requestIdleCallback` 函数利用浏览器的空闲时间，并在其他主机环境中使用不同的线程），然而提交阶段，即写入 DOM，是同步的。并发模式的一些显著特性：
 
-1.  **可中断渲染**：考虑一个包含大量项目的大列表，你可以对项目进行筛选。如果你曾经使用过这样的应用程序，你会知道它可能会变得卡顿和延迟，除非有某种`debounce`函数，该函数在用户停止输入之前不会运行搜索 JavaScript 逻辑（例如，检查最后一次按键是否在 200 毫秒之前）。并发模式通过使渲染可被高优先级中断中断来解决这个问题。用户与输入字段交互是比 React 渲染更新视图更高优先级的中断，因此 React 暂停其执行并释放主线程来处理输入。
-
-2.  **加载序列**：你是否见过这样的应用程序：即使你处于快速连接中，加载旋转器也只会出现一瞬间？并发模式也解决了这个问题。
-
-
-
-
+1. **可中断渲染**：考虑一个包含大量项目的大列表，你可以对项目进行筛选。如果你曾经使用过这样的应用程序，你会知道它可能会变得卡顿和延迟，除非有某种 `debounce` 函数，该函数在用户停止输入之前不会运行搜索 JavaScript 逻辑（例如，检查最后一次按键是否在 200 毫秒之前）。并发模式通过使渲染可被高优先级中断中断来解决这个问题。用户与输入字段交互是比 React 渲染更新视图更高优先级的中断，因此 React 暂停其执行并释放主线程来处理输入。
+2. **加载序列**：你是否见过这样的应用程序：即使你处于快速连接中，加载旋转器也只会出现一瞬间？并发模式也解决了这个问题。
 
 ### 3. 并发
 
@@ -4969,13 +4850,13 @@ React 中的并发模式是一种全新的 React 工作方式。在计算机科�
 
 React 的并发模式目前是可选加入的。要使用它，不要使用：
 
-```
+```javascript
 ReactDOM.render(<Component />, container)
 ```
 
 而是使用以下方式：
 
-```
+```javascript
 ReactDOM.createRoot(container).render(<Component />)
 ```
 
@@ -4985,7 +4866,7 @@ ReactDOM.createRoot(container).render(<Component />)
 
 React 自带 Suspense，这是一个组件，用于处理应用中某部分因某种原因被挂起的情况。基本上，Suspense 允许你的应用等待某个东西。这个“东西”可以是任何异步操作——无论是 I/O 密集型还是内存密集型。让我们看看如何利用它来处理代码。请看下面的示例：
 
-```
+```javascript
 import React from 'react'
 
 constProfilePage = React.lazy(() => import('./ProfilePage')); // 懒加载
@@ -5005,7 +4886,7 @@ constProfilePage = React.lazy(() => import('./ProfilePage')); // 懒加载
 
 这才是真正有趣的地方。Suspense 允许你像使用同步数据一样获取数据。这仍然是实验性的，所以我们不会深入代码细节。另外，如果你在未来阅读本书，请务必检查更新后的代码，因为 API 可能已经发生了变化。让我们看一些代码！
 
-```
+```javascript
 // 这不是一个 Promise。它是来自 Suspense 集成的特殊对象。
 const resource = fetchProfileData();
 
@@ -5041,15 +4922,13 @@ function ProfileTimeline() {
 
 这段代码包含了很多内容。让我们逐一分析。
 
-*   首先，我们创建了一个 `resource`。这是特殊的。它既不是 Promise 也不是普通对象。这个对象由 React 创建，我们可以像同步拥有数据一样使用它。如果数据不可用，React 会自动在树中搜索最近的 Suspense 组件，并让它显示 fallback 加载器。我们稍后会讨论这个代码！（该代码高度实验性，很可能发生变化，所以请不要在未来使用它）。
-
-*   然后我们使用 `resource.posts.read()` 从 resource 中读取数据。注意，这是同步执行的。在内部，如果数据不存在，`read()` 方法实际上会在底层抛出异常，供 `Suspense` 组件捕获，这样后续执行就不会进行。如果数据可用，则返回数据。
-
-*   最后，我们在组件中正常使用它。
+- 首先，我们创建了一个 `resource`。这是特殊的。它既不是 Promise 也不是普通对象。这个对象由 React 创建，我们可以像同步拥有数据一样使用它。如果数据不可用，React 会自动在树中搜索最近的 Suspense 组件，并让它显示 fallback 加载器。我们稍后会讨论这个代码！（该代码高度实验性，很可能发生变化，所以请不要在未来使用它）。
+- 然后我们使用 `resource.posts.read()` 从 resource 中读取数据。注意，这是同步执行的。在内部，如果数据不存在，`read()` 方法实际上会在底层抛出异常，供 `Suspense` 组件捕获，这样后续执行就不会进行。如果数据可用，则返回数据。
+- 最后，我们在组件中正常使用它。
 
 现在我们来讨论 resource 是如何创建的。以下是 `fetchProfileData` 当前的 `unstable` 实现：
 
-```
+```javascript
 import { unstable_createResource } from 'react-cache'
 
 function fetchProfileData() {
@@ -5072,11 +4951,7 @@ function fetchProfileData() {
 
 ## 问题
 
-1.  协调器（reconciler）和渲染器（renderer）有什么区别？react-native 是协调器还是渲染器？
-
-2.  基于类的组件在由父组件/宿主更新时会改变 state 和 props，而函数组件则不会。请找出函数组件在底层是如何工作的。（提示：函数组件使用 hooks，每次渲染都会返回一个新值）
-
-3.  并发模式与普通 React 模式有何不同？
-
-4.  Suspense 的主要本质是什么？（提示：等待某个东西）
-
+1. 协调器（reconciler）和渲染器（renderer）有什么区别？react-native 是协调器还是渲染器？
+2. 基于类的组件在由父组件/宿主更新时会改变 state 和 props，而函数组件则不会。请找出函数组件在底层是如何工作的。（提示：函数组件使用 hooks，每次渲染都会返回一个新值）
+3. 并发模式与普通 React 模式有何不同？
+4. Suspense 的主要本质是什么？（提示：等待某个东西）

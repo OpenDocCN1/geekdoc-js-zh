@@ -1,88 +1,11 @@
+
 # Android Web Apps 高级指南：使用 HTML5、CSS3 和 Javascript 开发 Android 应用
-
-
-
-
-
-
-![](img/6c8091bf3a3d21ca91f25f8caed8840f_0_0.png)
-
-
-
 
 为了方便起见，Apress 将部分前言材料放置在索引之后。请使用“书签”和“目录览”链接访问这些内容。
 
-![](img/6c8091bf3a3d21ca91f25f8caed8840f_1_0.png)
-
-
-
-
-
-![](img/6c8091bf3a3d21ca91f25f8caed8840f_3_0.png)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 - 添加一个简单的加载旋转器......................................................................... 112
+
 - 修饰操作栏 (Action Bar)....................................................................... 118
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 # 关于作者
 
@@ -94,15 +17,9 @@ Damon Oehman 是一位经验丰富的软件开发者和技术经理，目前住�
 
 Sébastien Blanc 是一位高级 Java 软件工程师。他工作于荷兰 IT 公司 E-id (www.e-id.nl)。此外，Sébastien 花费时间为移动 Web 应用提供专业知识。他经常在会议上演讲，并坚信基于 Web 的移动应用的成功。和 Damon 一样，在不编码时，Seb 喜欢与家人共度的时光。
 
-
-
-
-
 # 关于技术审查员
 
 Kunal Mittal 索尼影视娱乐公司（Sony Pictures Entertainment）的技术执行总监，负责 SOA、身份管理和内容管理计划。他为不同的业务业务部门提供集中的工程服务，并领导将新平台和技术引入索尼影视企业 IT 环境的工作。
-
-![](img/6c8091bf3a3d21ca91f25f8caed8840f_11_0.png)
 
 Kunal 是一位企业家，帮助初创公司定义其技术战略、产品路线图和开发计划。凭借他与全球多个开发合作伙伴建立的深厚关系，他能够帮助初创公司甚至大型公司建立合适的开发合作伙伴关系。他通常以顾问或咨询 CTO 的身份工作，并活跃于项目管理和技术架构职能。他撰写并编辑了多本关于 IEEE、云计算和移动技术的书籍及文章。他拥有软件工程硕士学位，并是持有飞行执照的私人飞行员。
 
@@ -137,6 +54,7 @@ JavaScript 是一种许多开发者“既爱又恨”的语言。有些人甚至
 # 本书使用了哪些技术？
 
 在书中，我们处理了大量的（大量的）JavaScript 代码。显然也有相当多的 HTML 和 CSS，但 JavaScript 才是移动 Web 应用开发的语言。
+
 如果你以前没有接触过 JavaScript，我们并不会完全把你投入深水区，但我们建议你找一些学习材料，因为这并不是一本 JavaScript 基础书籍。我们还广泛使用了出色的 jQuery JavaScript 库，让开发过程通常变得更轻松。如果这对你来说是新事物，我们建议也手头准备一个 jQuery 教程。如果你有 PrototypeTools 或 jQuery 的其他“竞争对手”的经验，那么你应该能够相对轻松地适应书中的示例代码。
 
 对于移动 Web 应用（以及其他富含 JavaScript 的 Web 应用），学习如何构建你的应用程序以提高可读性和维护性至关重要。这就是我们选择在书中通过几个小型应用程序规模的项目，而不是各种函数的代码片段的原因之一。这将让你熟悉移动 Web 应用开发的不同技术方面，并让你理解如何有效地组合成一个真实世界的移动 Web 应用。
@@ -158,8 +76,11 @@ JavaScript 是一种许多开发者“既爱又恨”的语言。有些人甚至
 在本章中，我们将从高层面上概述几个主题，以便你尽快开始构建：
 
 - Android 平台功能的概述
+
 - 哪些功能可以通过浏览器访问（无论是通过默认还是通过 PhoneGap 等桥接框架）
+
 - 配置开发环境以编写书中的示例和你自己的应用程序
+
 - Android 开发工具包自带工具的概述，以及协助你构建 Web 应用的支持工具
 
 ## 理解 Android 平台功能
@@ -167,12 +88,6 @@ JavaScript 是一种许多开发者“既爱又恨”的语言。有些人甚至
 Android 操作系统（OS）被设计为通用的移动设备操作系统（包括智能手机和平板电脑）。计划是 Android 为多个设备制造商提供服务，制造商可以在此进行定制和开发。这一愿景在很大程度上已经实现，许多制造商已经制造了预装 Android 的设备，并成为了开放手机联盟（http://openhandsetalliance.com）的成员。
 
 然而，Android 并不是唯一的操作系统，这意味着原生 Android 应用程序为了支持另一个（非 Android）移动设备而重写。这导致你必须为支持的每个平台管理持续的移动应用程序开发。虽然大型公司的
-
-
-
-
-
-# 第 1 章：入门
 
 世界其他地方可能负担得起这样做，但对于较小的组织或初创公司来说可能非常困难。这就是开发移动 Web 应用的吸引之处——编写一次应用程序即可在多个设备上运行。
 
@@ -182,13 +97,13 @@ Android 操作系统（OS）被设计为通用的移动设备操作系统（包�
 
 ## 桥接框架 (Bridging Framework)
 
-桥接框架为开发者提供了一种构建可以部署到移动设备的 Web 应用的技术。该框架还通过封装器（通常是 JavaScript）到原生 API，访问原生设备的部分功能（如加速度计和摄像头）。
+桥接框架为开发者提供了一种构建可以部署到移移动设备的 Web 应用的技术。该框架还通过封装器（通常是 JavaScript）到原生 API，访问原生设备的部分功能（如加速度计和摄像头）。
 
 在本书中，我们将通过一些使用 PhoneGap (http://phonegap.com) 来桥接这些某些原生功能的示例。虽然 PhoneGap 是最早的框架之一，但还有许多其他的桥接框架。不过，在书中，我们专注于 PhoneGap，因为它为移动 Web 应用的原生部署提供了一种稳定且轻量的封装方法。
 
 关于移动 Web 应用框架的更多信息，我针对该主题写了几篇不同的博客文章。特别是下面这篇文章包含了一些贡献者对项目的评论，有助于展示它们各自的优势领域：http://distractable.net/coding/iphone-android-web-app-frameworks。
 
-虽然我必须在书中详细介绍每种框架，但这里的重点是构建移动 Web 应用。从我的角度来看，这些是可以部署到 Web 端并通过设备浏览器访问的应用程序。增加桥接框架应该是可选的附加项，而不是要求。考虑到这种特定的用例，PhoneGap 是一个明显的获胜者。
+虽然我必须在书中详�介绍每种框架，但这里的重点是构建移动 Web 应用。从我的角度来看，这些是可以部署到 Web 端并通过设备浏览器访问的应用程序。增加桥接框架应该是可选的附加项，而不是要求。考虑到这种特定的用例，PhoneGap 是一个明显的获胜者。
 
 ## 设备连接
 
@@ -199,7 +114,9 @@ Android 操作系统（OS）被设计为通用的移动设备操作系统（包�
 简单来说，从 Web 的角度来看，移动设备可以有三个层级的连接：
 
 - 高带宽连接（例如 WiFi）
+
 - 低带宽连接（例如 3G）
+
 - 有限或无连接（离线）
 
 目前，在构建纯 Web 应用时，你只能检测到是否有连接（而不会实际尝试下载或类似操作测试连接速度）。这与构建原生 Android 应用程序不同，因为这些应用程序可以访问原生 API，提供有关设备当前连接类型和质量所需的信息。
@@ -221,8 +138,10 @@ Android 操作系统（OS）被设计为通用的移动设备操作系统（包�
 Android 系统通过不同的实现支持地理位置检测，包括 GPS（全球定位系统）和基站三角测法，此外还有使用 IP 嗅探技术确定位置的 Internet 服务。在原生 API 级别，地理定位在 `android.location` 包中实现：
 
 ```
-http://developer.android.com/reference/android/location/package-summary.html，并且大多数桥接框架从原生 API 暴露了此功能。
+http://developer.android.com/reference/android/location/package-summary.html
 ```
+
+并且大多数桥接框架从原生 API 暴露了此功能。
 
 由于 HTML5 正在获得认可并已部分实现（完全实现在将在未来几年内规范定稿后出现），我们也可以直接在浏览器中访问位置信息，而不需要桥接框架。这是通过使用 HTML5 Geolocation API (https://www.w3.org/TR/geolocation-API) 实现的。有关 HTML5 地理定位 API 的更多信息，请参阅第 6 章。
 
@@ -233,14 +152,23 @@ http://developer.android.com/reference/android/location/package-summary.html，�
 **表 1-1 Android SDK 支持的传感器**
 
 | 传感器 | PhoneGap 支持 |
+
 | :--- | :--- |
+
 | 加速度计 (Accelerometer) | 是 |
+
 | 陀螺仪 (Gyroscope) | 否 |
+
 | 光线 (Light) | 否 |
+
 | 磁场 (Magnetic field) | 否 |
+
 | 角度 (Orientation) | 是 |
+
 | 压力 (Pressure) | 否 |
+
 | 接近传感器 (Proximity) | 否 |
+
 | 温度 (Temperature) | 是 |
 
 选择原生开发而非 Web 开发的最具说服力的论点之一是可以访问随着技术进步不断添加到移动设备的大量传感器。此外，PhoneGap 是一个开源框架，并提供了编写插件的能力（尽管很难找到相关信息），因此访问额外的传感器是可能的。
@@ -253,7 +181,7 @@ SQLite 正迅速成为嵌入式数据库的事实标准，当涉及到 Web 技�
 
 新的 HTML5 标准为与外部服务交互的数据提供了机制。这些新的 API——HTML5 Web Storage (http://dev.w3.org/html5/webstorage) 和 Web SQL Database (http://dev.w3.org/html5/webdatabase)——提供了一些优秀的工具来帮助你的应用程序在离线会话中工作。我们将在第 3 章深入研究这些 API。
 
-## 支持 (Camera Support)
+## 摄像头支持 (Camera Support)
 
 在触摸成为移动设备主要的追求特征之一之前，拥有合理的摄像头无疑影响了决策。这反映在实际上使用摄像头的原生应用程序中。在原生层面，对摄像头的访问通过 `android.hardware.Camera` 类实现（参见 http://developer.android.com/reference/android/hardware/Camera.html）；然而，在浏览器中无法访问——HTML Media Capture 正在进行（参见 www.w3.org/TR/capture-api）。
 
@@ -262,7 +190,6 @@ SQLite 正迅速成为嵌入式数据库的事实标准，当涉及到 Web 技�
 ## 消息与推送通知 (Messaging and Push Notifications)
 
 在 Android 2.2 中，一种名为云端消息 (C2DM)(http://code.google.com/android/c2dm/index.html) 的服务已在原生实现。该服务允许原生开发者为他们的应用程序注册用于
-
 
 通常被称为推送通知（push notifications），当有新内容或发生变化时，移动用户将收到通知。
 
@@ -282,7 +209,7 @@ Android 操作系统实现了一个基于 WebKit 的浏览器。WebKit（http://
 
 自苹果发布 iOS 4 以来，Android 和 iOS 设备上的进程处理方式处理相似；在此之前，Android 和 iPhone 应用程序在用户“退出”它们时的行为存在相当大的差异。在 iPhone 上，一旦你离开应用程序，它基本上就会停止运行——这意味着在后台实际上没有能力进行任何操作。在 Android 上，如果用户在不退出的情况下离开了应用程序（包括 Web 应用），它将继续在后台执行。
 
-为了验证这一点，我们在 Android 设备上运行了代码，以确保当应用程序（在此例中为浏览器）不是活动应用程序时，请求仍然会传进来。
+为了验证这一点，我们在 Android 设备上运行了代码，以确保当应用程序（在此例中为浏览器）不是活动应用程时，请求仍然会传进来。
 
 ```html
 <html>
@@ -308,13 +235,21 @@ Android 操作系统实现了一个基于 WebKit 的浏览器。WebKit（http://
 **表 1-2. Android OS 特性与浏览器访问矩阵**
 
 | 设备特性 | OS 版本支持 | 浏览器访问 |
+
 |---|---|--|
+
 | 连接检测 | ≥ 1.5 | 桥接 (Bridge) |
+
 | 地理 (GPS) | ≥ 1.5 | 是 |
+
 | 硬件传感器 | ≥ 1.5 | 桥接 (Bridge) |
+
 | 触摸屏和触摸事件 | ≥ 1.5 | 部分 |
+
 | 本地存储和数据库 | ≥ 1.5 | 是 |
+
 | 消息/通知 | ≥ 2.2 | 否 |
+
 | 相机 | ≥ 1.5 | 桥接 (Bridge) |
 
 ## 准备开发环境
@@ -334,7 +269,9 @@ Eclipse 是一个专为 Java 开发定制的 IDE，Android 团队为 Eclipse 提
 有了文本编辑器现在是设置目录了，我建议构建如下目录结构：
 
 - PROJECT_WORKING_DIR
+
 - img
+
 - js
 
 重用的 CSS、图像和 JavaScript 资源将分别存储在 css、img 和 js 文件夹中。随着我们的进展，我们将为每个章节在 snippets 下构建文件夹。
@@ -367,14 +304,12 @@ sudo port install mongoose
 
 由于 Mongoose 如此轻量，在 Linux 系统上从源码编译 Mongoose 实际上非常简单。以下指令适用于
 
-
-
-
 ## 第一章：入门
 
 本文使用的是 Ubuntu 系统，但仅需进行微调即可将其适配其他 Linux 系统。
 
 首先，通过 wget 下载 Mongoose 源码：
+
 http://mongoose.getcode.com/files/mongoose-2.8.tgz。
 
 接下来，解压下载的压缩包：
@@ -414,18 +349,24 @@ sudo cp mongoose /usr/local/bin/
 # / 索引
 
 | 名称 | 大小 |
+
 | --- | --- |
+
 | 上级目录 (Parent directory) | - |
+
 | css/ | 2010年8月25日 20:53 [DIRECTORY] |
+
 | img/ | 2010年8月25日 20:53 [DIRECTORY] |
+
 | js/ | 2010年8月25日 20:53 [DIRECTORY] |
+
 | snippets/ | 2010年8月25日 20:53 [DIRECTORY] |
 
 图 1–1。运行 Mongoose 时，你应该能看到之前创建的文件夹目录列表。
 
 # 其他方法
 
-你也可以将文件复制到模拟的 SD 卡镜像中，并使用 `file:/sdcard/<fileupload>` 语法从镜像中加载它们。如果你对如何创建 SD 卡镜像以及在它们之间之间复制文件感兴趣，我建议查看以下 URL 中的信息：http://developer.android.com/guide/developing/tools/emulator.html#sdcard。
+你也可以将文件复制到模拟的 SD 卡镜像中，并使用 `file:/sdcard/<fileupload>` 语法从镜像中加载它们。如果你对如何创建 SD 卡镜像以及在它们之间复制文件感兴趣，我建议查看以下 URL 中的信息：http://developer.android.com/guide/developing/tools/emulator.html#sdcard。
 
 # 模拟器
 
@@ -433,13 +374,11 @@ sudo cp mongoose /usr/local/bin/
 
 # 创建 Android 虚拟设备
 
-使用 Android SDK 提供的 GUI 工具创建 Android 虚拟设备 (AVD) 是非常直观的。首先，找到 android 可执行文件并运行它。可执行文件的位置取决于 SDK 的安装路径，但本质上你是在 SDK 目录下的 tools 文件夹中寻找文件（Windows 上的 android.exe）。这将启动 Android SDK 和 AVD Manager，如图 1-2 所示。![](img/6c8091bf3a3d21ca91f25f8caed8840f_26_0.png)
+使用 Android SDK 提供的 GUI 工具创建 Android 虚拟设备 (AVD) 是非常直观的。首先，找到 android 可执文件并运行它。可执行文件的位置取决于 SDK 的安装路径，但本质上你是在 SDK 目录下的 tools 文件夹中寻找文件（Windows 上的 android.exe）。这将启动 Android SDK 和 AVD Manager，如图 1-2 所示。![](img/6c8091bf3a3d21ca91f25f8caed8840f_26_0.png)
 
 **图 1-2. SDK 和 AVD Manager**
 
-我们将为运行示例创建一个设备。不需要太复杂的，只需要运行带有 2.1 或更高版本 SDK 的标准模拟器即可。按下 Add 按钮开始创建镜像。完成后，你应该能看到与图 1–3 类似的界面。
-
-![](img/6c8091bf3a3d21ca91f25f8caed8840f_27_0.png)
+我们将为运行示例创建一个设备。不需要太复杂的，只需要运行带有 2.1 或更高版本 SDK 的标准模拟器即可。按下 Add 按钮开始创建镜像。完成后，你应该能看到与图 1–3 类似的界面。![](img/6c8091bf3a3d21ca91f25f8caed8840f_27_0.png)
 
 **图 1-3.** 为模拟器创建一个新的 AVD
 
@@ -449,29 +388,15 @@ sudo cp mongoose /usr/local/bin/
 
 - 我们正在开发的目标 Android API。在编写时，Android OS 2.1 和 2.2 版本的市场渗透率最高，1.5 和 1.6 较少（参见 http://developer.android.com/resources/dashboard/platform-versions.html）。在书的示例中，我们主要使用 2.1 模拟器工作。通过使用 2.1 版本模拟器而不是 2.2 版本模拟器，我们可以确保代码在两个版本的操作系统上都能运行——但尽可能在多个版本的操作系统上进行测试仍然很重要。
 
-- SD 卡的大小。如果你想，也可以指定现有的 SD 卡镜像，但运行书中的示例并不需要它。我建议只指定一个 50MB 左右的大小。
+- SD 卡的大量。如果你想，也可以指定现有的 SD 卡镜像，但运行书中的示例并不需要它。我建议只指定一个 50MB 左右的大小。
 
 其他信息（如 skin 值，等同于屏幕分辨率）将根据 API 版本选择自动填充，但你可以根据需要调整这些选项。书中的所有示例都是为 320x480 的标准移动设备屏幕尺寸设计的。
 
-> 注意：书中的某些示例说明了标准 dpi（每英寸点数）和高 dpi 之间的区别，以及这将如何影响你的应用程序。对于这些示例，你需要一个屏幕分辨率比标准高的 AVD。在配置此设备时，选择一个如 WVGA800（或类似）的分辨率来模拟高密度 dpi 设备。
+> 注意：书中的某些示例说明了标准 dpi（每英寸点数）和高 dpi 之间的区别，以及这将如何影响你的应用程序。对于这些示例，你需要一个屏幕分辨率比标准高的 AVD。在配置此设备时，选择一个如 WVGA800（或类似）的分率来模拟高密度 dpi 设备。
 
 # 启动模拟器
 
 一旦创建了 AVD，就可以点击设备右侧的 start 按钮启动设备。无论何种方式，一旦你运行了命令（不需要命令行选项），你就应该能够浏览到 http://localhost:8080/ 并看到你之前设置的文件夹的目录文件列表（如图 1–1 所示）。
-
-# / 索引
-
-| 名称 | 大小 |
-| --- | --- |
-| 上级目录 (Parent directory) | - |
-| css/ | 2010年8月25日 20:53 [DIRECTORY] |
-| img/ | 2010年8月25日 20:53 [DIRECTORY] |
-| js/ | 2010年8月25日 20:53 [DIRECTORY] |
-| snippets/ | 2010年8月25日 20:53 [DIRECTORY] |
-
-图 1–1。运行 Mongoose 时，你应该能看到之前创建的文件夹目录列表。
-
-*(注：原文中存在大量重复段落，此处已按要求保留逻辑结构并翻译所有重复的文本内容。)*
 
 # 其他方法
 
@@ -491,53 +416,7 @@ sudo cp mongoose /usr/local/bin/
 
 **图 1-3.** 为模拟器创建一个新的 AVD
 
-在创建新的 AVD 文件时，你需要提供至少三三条信息：
-
-- 设备名称（不允许包含空格）。这里创建了一个名为 "android_web_apps" 的设备。这是从命令行启动模拟器时使用的名称。
-
-- 我们正在开发的目标 Android API。在编写时，Android OS 2.1 和 2.2 版本的市场渗透率最高，1.5 和 1.6 较少（参见 http://developer.android.com/resources/dashboard/platform-versions.html）。在书的示例中，我们主要使用 2.1 模拟器工作。通过使用 2.1 版本模拟器而不是 2.2 版本模拟器，我们可以确保代码在两个版本的操作系统上都能运行——但尽可能在多个版本的操作系统上进行测试仍然很重要。
-
-- SD 卡的大小。如果你想，也可以指定现有的 SD 卡镜像，但运行书中的示例并不需要它。我建议只指定一个 50MB 左右的大小。
-
-其他信息（如 skin 值，等同于屏幕分辨率）将根据 API 版本选择自动填充，但你可以根据需要调整这些选项。书中的所有示例都是为 320x480 的标准移动设备屏幕尺寸设计的，所以我建议使用那个尺寸。
-
-> 注意：书中的某些示例说明了标准 dpi（每英寸点数）和高 dpi 之间的区别，以及这将如何影响你的应用程序。对于这些示例，你需要一个屏幕分辨率比标准高的 AVD。在配置此设备时，选择一个如 WVGA800（或类似）的分率来模拟高密度 dpi 设备。
-
-# 启动模拟器
-
-一旦创建了 AVD，就可以点击设备右侧的 start 按钮启动设备。无论何种方式，一旦你运行了命令（不需要命令行选项），你就应该能够浏览到 http://localhost:8080/ 并看到你之前设置的文件夹的目录文件列表（如图 1–1 所示）。
-
-# / 索引
-
-| 名称 | 大小 |
-| --- | --- |
-| 上级目录 (Parent directory) | - |
-| css/ | 2010年8月25日 20:53 [DIRECTORY] |
-| img/ | 2010年8月25日 20:53 [DIRECTORY] |
-| js/ | 2010年8月25日 20:53 [DIRECTORY] |
-| snippets/ | 2010年8月25日 20:53 [DIRECTORY] |
-
-图 1–1。运行 Mongoose 时，你应该能看到之前创建的文件夹目录列表。
-
-# 其他方法
-
-你也可以将文件复制到模拟的 SD 卡镜像中，并使用 `file:/sdcard/<fileupload>` 语法从镜像中加载它们。如果你对如何创建 SD 卡镜像以及在它们之间复制文件感兴趣，我建议查看以下 URL 中的信息：http://developer.android.com/guide/developing/tools/emulator.html#sdcard。
-
-# 模拟器
-
-为了测试示例，你将需要一个 Android 手机或 SDK 附带的 Android 模拟器。如果你还没有 SDK，可以从 http://developer.android.com/sdk 下载。按照 Android 网站上的说明操作，但安装 Eclipse 和 ADT 插件除外（除非你已经安装了并熟悉使用它）。一旦安装了 Android SDK，就可以在 SDK 安装目录下的 tools 文件夹中找到模拟器和相关工具。
-
-# 创建 Android 虚拟设备
-
-使用 Android SDK 提供的 GUI 工具创建 Android 虚拟设备 (AVD) 是非常直观的。首先，找到 android 可执行文件并运行它。可执行文件的位置取决于 SDK 的安装路径，但本质上你是在 SDK 目录下的 tools 文件夹中寻找文件（Windows 上的 android.exe）。这将启动 Android SDK 和 AVD Manager，如图 1-2 所示。![](img/6c8091bf3a3d21ca91f25f8caed8840f_26_0.png)
-
-**图 1-2.  模拟器**
-
-我们将为运行示例创建一个设备。不需要太复杂的，只需要运行带有 2.1 或更高版本 SDK 的标准模拟器即可。按下 Add 按钮开始创建镜像。完成后，你应该能看到与图 1–3 类似的界面。![](img/6c8091bf3a3d21ca91f25f8caed8840f_27_0.png)
-
-**图 1-3.** 为模拟器创建一个新的 AVD
-
-在创建新的 AVD 文件时，你需要提供至少三三三条信息：
+在创建新的 AVD 文件时，你需要提供至少三条信息：
 
 - 设备名称（不允许包含空格）。这里创建了一个名为 "android_web_apps" 的设备。这是从命令行启动模拟器时使用的名称。
 
@@ -558,6 +437,7 @@ sudo cp mongoose /usr/local/bin/
 本文使用的是 Ubuntu 系统，但仅需进行微调即可将其适配其他 Linux 系统。
 
 首先，通过 wget 下载 Mongoose 源码：
+
 http://mongoose.getcode.com/files/mongoose-2.8.tgz。
 
 接下来，解压下载的压缩包：
@@ -597,11 +477,17 @@ sudo cp mongoose /usr/local/bin/
 # / 索引
 
 | 名称 | 大小 |
+
 | --- | --- |
+
 | 上级目录 (Parent directory) | - |
+
 | css/ | 2010年8月25日 20:53 [DIRECTORY] |
+
 | img/ | 2010年8月25日 20:53 [DIRECTORY] |
+
 | js/ | 2010年8月25日 20:53 [DIRECTORY] |
+
 | snippets/ | 2010年8月25日 20:53 [DIRECTORY] |
 
 图 1–1。运行 Mongoose 时，你应该能看到之前创建的文件夹目录列表。
@@ -610,11 +496,11 @@ sudo cp mongoose /usr/local/bin/
 
 # 其他方法
 
-你也可以将文件复制到模拟的 SD 卡镜像中，并使用 `file:/sdcard/<fileupload>` 语法从镜像中加载它们。如果你对如何创建 SD 卡镜像以及在它们之间之间复制文件感兴趣，我建议查看以下 URL 中的信息：http://developer.android.com/guide/developing/tools/emulator.html#sdcard。
+你也可以将文件复制到模拟的 SD 卡镜像中，并使用 `file:/sdcard/<fileupload>` 语法从镜像中加载它们。如果你对如何创建 SD 卡镜像以及在它们之间复制文件感兴趣，我建议查看以下 URL 中的信息：http://developer.android.com/guide/developing/tools/emulator.html#sdcard。
 
 # 模拟器
 
-为了测试示例，你将需要一个 Android 手机或 SDK 附带的 Android 模拟器。如果你还没有 SDK，可以从 http://developer.android.com/sdk 下载。按照 Android 网站上的说明操作，但安装 Eclipse 和 ADT 插件除外（除非你已经安装了并熟悉使用它）。一旦安装了 Android SDK，就可以在 SDK 安装目录下的 tools 文件夹中找到模拟器和相关工具。
+为了测试示例，你将需要一个 Android 手机或 SDK 附带的 Android 模拟器。如果你还没有 SDK，可以从 http://developer.android.com/sdk 下载。按照 Android 网站上的说明操作，但安装 Eclipse 和 ADT 插件除外（除非你已经安装了并熟悉使用它）。一旦安装了 Android SDK，就可以在 SDK 安量目录下的 tools 文件夹中找到模拟器和相关工具。
 
 # 创建 Android 虚拟设备
 
@@ -626,7 +512,7 @@ sudo cp mongoose /usr/local/bin/
 
 **图 1-3.** 为模拟器创建一个新的 AVD
 
-在创建新的 AVD 文件时，你需要提供至少三三条信息：
+在创建新的 AVD 文件时，你需要提供至少三条信息：
 
 - 设备名称（不允许包含空格）。这里创建了一个名为 "android_web_apps" 的设备。这是从命令行启动模拟器时使用的名称。
 
@@ -641,10 +527,6 @@ sudo cp mongoose /usr/local/bin/
 # 启动模拟器
 
 一旦创建了 AVD，就可以点击设备右侧的 start 按钮启动设备。无论何种方式，一旦你运行了命令（不需要命令行选项），你就应该能够浏览到 http://localhost:8080/ 并看到你之前设置的文件夹的目录文件列表（如图 1–1 所示）。
-
-
-
-
 
 注意：当你在自己的机器上浏览开发 Web 服务器时，你可能习惯使用 `localhost`（或 `127.0.0.1`），但你可能需要通过机器在本地网络中的 IP 地址来访问服务器。Mongoose 在这方面非常有帮助，它可以非常乐意从与你的机器关联的任何 IP（包括 127.0.0.1）提供网页服务。
 
@@ -680,7 +562,7 @@ sudo cp mongoose /usr/local/bin/
 
 ## 用于移动 Web 的 HTML
 
-移动 Web 的 HTML 与桌面端是相同的——只是屏幕尺寸较小（在大多数阶段下是如此）。此外，鉴于移动设备通过移动宽带连接浏览时带宽受限，因此更多地关注性能的优化。
+移动 Web 的 HTML 与桌面端是相同的——只是屏幕尺寸较小（在大多数阶段下是如此）。此外，鉴于移动设备通过移动宽带连接浏览时带宽受限，因此更多的关注性能的优化。
 
 本章的重点是进入移动 Web 应用开发所需的技巧和工具，主要是从应用程序呈现的角度来看。
 
@@ -717,6 +599,7 @@ sudo cp mongoose /usr/local/bin/
 虽然浏览器成功渲染了页面，但它有几点没有做得很好：
 
 - 页面上的文字非常小；这是因为浏览器假设它是为桌面屏幕分辨率构建的，因此应用了一些缩放，以确保页面能够正确适应。
+
 - 因为浏览器认为页面是为桌面设计的，所以它没有进行针对移动端的优化。
 
 当你想要让人们能够有效地使用你的网页时，就需要为移动端优化你的网页。这尤其重要。现在你了解了这些事情后，让我们看看移动浏览器是如何处理缩放的。
@@ -738,24 +621,29 @@ HTML viewport meta 标签是由 Apple 为 iPhone 引入的，用于告诉移动�
 ## 表 2-1. viewport 标签参数及其影响
 
 | 参数 | 概述 | 有效值 |
+
 | --- | --- | --- |
+
 | width | 指定视口的宽度。可以是特定的像素值（不推荐）或描述所需区域的关键词。 | device-width: 设备的屏幕宽度。视口的绝对数值。 |
+
 | height | 指定视口的高度。 | device-height: 设备的屏幕高度。视口的绝对数值。 |
-| user-scalable | 指定用户是否允许调整屏幕缩放。 | 1, yes 或 true: 允许用户缩放。0, no 或 false: 不允许用户缩放。 |
+
+| user-scalable | 指指定用户是否允许调整屏幕缩放。 | 1, yes 或 true: 允许用户缩放。0, no 或 false: 不允许用户缩放。 |
+
 | initial-scale | 指定显示的初始缩放值。 | 表示在页面首次加载时应用的缩放值。1.0 表示 1 个视口像素等同于 1 个屏幕像素。 |
+
 | minimum-scale | 指定可以应用于显示的最小缩放。 | 0 到 10.0 之间的值。 |
+
 | maximum-scale | 指定可以应用于的最大的最大放。 | 0 到 10.0 之间的值。 |
+
 | target-dpi | 告知设备 Web 页面/应用程序具体针对什么屏幕密度。 | device-dpi: 将视口密度设置为设备的 dpi 密度。high-dpi、medium-dpi 或 low-dpi。70 到 400 之间的数值，指定设备的特定像素密度。 |
 
 > * dpi（每英寸点）是每英寸像素数的测量标准（DPI 代表 Dots Per Inch）。Android 平台适应不同像素密度的设备，并大致将其分为高、中、低密度。
 
-
-
-
-
 > 注意：值得一读 John Gruber 写的文章《像素不是像素，像素不再像素》，这篇文章探讨了移动设备屏幕密度增加的问题，以及随着我们不断发展，这对 Web 开发者将产生的影响（见 www.quirirksmode.org/blog/archives/2010/04/a_pixel_is_not_pixel.）。
 
 考虑到这些额外的配置参数，下面的视口 meta 声明为跨平台设备兼容性提供了额外的健壮性：
+
 `<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0" />`
 
 目前，我们不会指定 `target-density-dpi`，我会在稍后讨论 HTML5 canvas 时介绍此设置，以便你理解它对显示器的影响。
@@ -768,7 +656,7 @@ HTML viewport meta 标签是由 Apple 为 iPhone 引入的，用于告诉移动�
 
 ## 自动隐藏地址栏
 
-本书的目标是为你提供成功构建能够与原生应用竞争的 Web 应用所需的技巧，因此在你的应用中显示 URL 并无助于说服人们。取决于你部署应用的方向（记住，可以使用像 PhoneGap¹ 等工具将移动 Web 应用部署为原生应用），你能够自动隐藏 URL 栏，或者可能需要实现一些变通方案来实现它的隐藏。
+本书的目标是为你提供成功构建能够与原生应用竞争的 Web 应用所需的技巧，因此在你的应用中显示 URL 并无助于说服人们。取决于你部署应用的方向（记住，可以使用像 PhoneGap¹ 等工将移动 Web 应用部署为原生应用），你能够自动隐藏 URL 栏，或者可能需要实现一些变通方案来实现它的隐藏。
 
 如果你构建的是一个部署在线并主要通过移动浏览器访问的应用程序，则需要一种变通方案。目前，最有效的变通方案是让浏览器在页面加载完成后滚动到屏幕顶部这之所以有效，是因为浏览器在查看页面时的垂直滚动行为是先滚过 URL 栏，然后通过其余内容。因此，在窗口加载完成后执行 `window.scrollTo(0, 1)` 即可达到效果。目前，我们只需将其添加到 body 加载标签中即可，例如：
 
@@ -785,7 +673,9 @@ HTML viewport meta 标签是由 Apple 为 iPhone 引入的，用于告诉移动�
 为了简单起见，我们最初在待办事项应用程序中为一个“任务”设置三个属性：
 
 - 名称
+
 - 描述
+
 - 截止日期（和时间）
 
 我们现在需要创建一个非常简单的表单，允许用户提供这些细节。下面的 HTML 代码（同样非常简单）创建了这样一个表单：
@@ -902,7 +792,6 @@ input[type=submit] {
 
 上述 CSS 大约 75% 是 CSS1 和 CSS2 的混合体，它们已经存在一段时间了。然而，其中也有少量的 CSS3，且大部分内容是非常新的。此样式表包含了一些 WebKit 特有的 CSS3 定义，这些定义是
 
-
 使我们能够在不使用外部图像资源的情况下，让我们的表单看起来非常美观。
 
 > 注意：CSS3 规范（类似于 HTML5 规范）尚未最终定稿。因此，这里的 CSS3 定义是使用专有的 -webkit 前缀实现的（针对 WebKit 浏览器族，其他浏览器将实现它们自己的专有前缀）。这表明 WebKit 的人员有信 CSS3 规范的这些部分最终会被采纳。一旦 CSS3 规范确定下来，-webkit 前缀将被舍弃并被标准名称取代。
@@ -913,15 +802,18 @@ input[type=submit] {
 
 ## 外观 (-webkit-appearance)
 
-此 CSS3 属性用于告诉浏览器我们希望显示何种类型的原生控件。可以指定许多不同的控件类型。对于本示例以及许多其他实例，最简单的方法是将外观设置为 `none`，并通过周围元素来应用外观和感受。
+此 CSS3 属性用于告诉浏览器我们希望显示何种类型的原生控件。可以指许多不同的控件类型。对于本示例以及许多其他实例，最简单的方法是将外观设置为 `none`，并通过周围元素来应用外观和感受。
 
 ## 圆角 (-webkit-border-radius)
 
 border-radius 属性为你的 HTML 元素应用边框提供了一种非常简单且漂亮的方法。除了可以使用此属性指定元素所有角的角半径外，你还可以使用以下属性为每个单独角指定特定且不同的半径：
 
 - border-bottom-left-radius
+
 - border-bottom-right-radius
+
 - border-top-left-radius
+
 - border-top-right-radius
 
 半径属性可以接受一个参数，用于指定整体角半径，也可以接受两个参数，分别指定角（们）的水平半径和垂直半径。
@@ -931,8 +823,11 @@ border-radius 属性为你的 HTML 元素应用边框提供了一种非常简单
 box-shadow 属性用于在不需要外部图像资源的情况下为 HTML 元素应用阴影——非常棒。该属性接受四个参数，允许你指定阴影的外观：
 
 - 水平偏移：这定义了阴影在水平方向上相对于控件的位置。正值将阴影放置在控件的右侧，负值将其放置在左侧。
+
 - 垂直偏移：这指定垂直轴的半径。正值将阴影放置在下方，负值将其放置在上方。
+
 - 模糊半径：这指定模糊效果的半径。基本上，数字越大，阴影越大且淡出越明显；数字越小，阴影越小、越清晰。
+
 - 阴影颜色：这指定阴影的颜色——这很言而易见，尽管并不如此。通常情况下，你在这里使用灰色系，但可以使用颜色来创建发光效果。
 
 ## 渐变填充样式 (-webkit-gradient)
@@ -940,12 +835,15 @@ box-shadow 属性用于在不需要外部图像资源的情况下为 HTML 元素
 我们在表单中使用了阴影和圆角；现在我们来看下渐变，它可以捕捉许多当前移动应用程序的视觉吸引力。CSS3 中的渐变不是作为 CSS3 属性实现的，而是作为一种填充样式——它们非常强大且完全可配置。我确定在 CSS3 书中会有整章专门讲解渐变，所以我不会尝试涵盖所有的细节。基本上，渐变有两种：线性渐变和径向渐变。本章的示例使用了线性渐变，因此我在这里介绍它。指定线性渐变至少需要五个参数（才能实际产生渐变效果），但可以使用更多参数来指定额外的颜色。
 
 - 渐变类型：这是你将显示的渐变类型——线性或径向。
+
 - 点 1：这是渐变的起始点。它是一对用空格分隔的值，指定位置。我们在示例中使用了名称（左上和左下），但此外可以使用数值（0.0 到 1.0 范围内）或百分比。
+
 - 点 2：这是渐变的结束点。
 
 ## 第 2 章：构建移动 HTML 输入表单
 
 - 停止点 1：这是起始停止点。使用 `color-stop` 函数定义颜色停止点。该函数接受两个参数。第一个参数指定 1 和 2 之间使用颜相对位置。你可以使用数字或百分比来定义位置。0.0 等于“在点 1”，1.0 等于“在点 2”。使用百分比时，0.0 等于 0，1.0 等于 100 百比。第二个参数用于定义在指定位置将要使用的颜色。
+
 - 停止点 2：这是下一个停止点。要创建渐变效果只需要两个停止点，但也可以指定更多。
 
 当你查看前面的代码示例中的示例时，这就会更有意义了。然而，如果没有的话，我建议你直接翻到参考部分查看一些渐变样本。
@@ -982,12 +880,11 @@ h1.fancy {
 
 ## 为不同屏幕尺寸编码
 
-由 Android 系统驱动的设备具有各种尺寸，这意味着我们真的希望构建的表单和应用程序能够调整外观，以最好地利用可用屏幕空间。大多数情况下，这是通过使用响应式尺寸规范（例如百分比）而不是特定的绝对值（例如像素）来实现的。虽然这可能确保表单在所有屏幕尺寸下看起来都体面，但它不能保证它一定好看。对于这些情况，我们需要为不同的设备尺寸提供自定义样式表。这异常地简单，可以通过在 `link` 标签的 `media` 属性中指定相应的设备宽度来实现。例如，以下代码将为宽度 480 像素的设备包含 `smallscreen.css`，为更大的尺寸包含 `largescreen.css`。
+由 Android 系统驱动的设备具有各种尺寸，这意味着我们真的希望构建的表单和应用程序能够调整外观，以最好地利用可用屏幕空间。大多数情况下，这是通过使用响应式尺寸规范（例如百分比）而不是特定的绝对值（例如像素）来实现的。虽然这可能确保表单在所有屏幕尺寸下看起来都体面，但它不能保证它一定好看。对于这些情况，我们需要为不同的设备尺寸提供自定样式表。这异常地简单，可以通过在 `link` 标签的 `media` 属性中指定相应的设备宽度来实现。例如，以下代码将为宽度 480 像素的设备包含 `smallscreen.css`，为更大的尺寸包含 `largescreen.css`。
 
 <link media="only screen and (max-device-width: 480px)" href="smallscreen.css" type="text/css" rel="stylesheet" />
+
 <link media="only screen and (min-device-width: 481px)" href="largescreen.css" type="text/css" rel="stylesheet" />
-
-
 
 TIP：在编写比简单应用复杂的内容时，我建议使用三个样式表（而不是如所示的两个）。如果你能有效地将 CSS 样式分为不与屏幕大小无关的样式和取决于屏幕大小的样式，那么从长远来看，你管理代码将变得更容易。
 
@@ -1035,6 +932,7 @@ TIP：在编写比简单应用复杂的内容时，我建议使用三个样式�
 ```
 
 > 注意：我没有包含此示例的 CSS，因为这不是练习的重点。不过，你可以在 URL 处查看源代码：
+
 http://sidelab.com/code/pawa/snippets/02/orientation-monitor.css
 
 接下来是 `orientation-monitor.js` 的代码：
@@ -1087,14 +985,23 @@ $("#rotation-class").html(rotationText);
 ![](img/6c8091bf3a3d21ca91f25f8caed8840f_50_0.png)
 
 | 事件详情 | |
+
 |---|---|
+
 | Type: | orientationchange |
+
 | 窗口详情 | |
+
 | Width: | 480 |
+
 | Height: | 241 |
+
 | Orientation: | 90 |
+
 | 检测结果 | |
+
 | Orientation: | landscape |
+
 | Rotation Class: | right |
 
 **图 2–8。** 显示横屏模式信息部分的方向监测器。
@@ -1116,6 +1023,8 @@ $(window).bind(canDetect ? "orientationchange" : "resize", function(evt) {
 
 接下来，我们将引入 jQuery，这样我们可以写得更简洁。如果你已经熟悉 jQuery，可能值得快速过一遍 jQuery 教程（可以在 [jQuery 教程](http://docs.jquery.com/Tutorials/) 找到一份详尽的教程列表），否则此练习中使用的 JavaScript 看起来会有些困惑）。
 
+
+
 ```javascript
 $(document).ready(function() {
   var canDetect = "orientationchange" in window;
@@ -1139,24 +1048,24 @@ $(document).ready(function() {
     });
     // 在此阶段我们只能依赖宽度和高度
 
-// 根据宽高比计算方向
-var aspectRatio = 1;
-if (window.innerHeight != 0) {
-  aspectRatio = window.innerWidth / window.innerHeight;
-} // 如果
+    // 根据宽高比计算方向
+    var aspectRatio = 1;
+    if (window.innerHeight != 0) {
+      aspectRatio = window.innerWidth / window.innerHeight;
+    }
 
-// 根据宽高比确定方向
-var orientation = aspectRatio <= 1 ? "portrait" : "landscape";n// 如果事件是方向变化事件，我们可以依靠
-var rotationText = "orientationchange"
-if (event.type == "orientationchange") {
-  rotationText = ROTATION_CLASSES[window.toString()];
-} // 如果
+    // 根据宽高比确定方向
+    var orientation = aspectRatio <= 1 ? "portrait" : "landscape";
+    var rotationText = "orientationchange";
+    if (evt.type == "orientationchange") {
+      rotationText = ROTATION_CLASSES[window.orientation.toString()];
+    }
 
- // 显示我们从显示中确定的详情
-$("#orientation").html(orientation);
-$("#rotation-class").html(rotationText);
-}, 500);
-));
+    // 显示我们从显示中确定的详情
+    $("#orientation").html(orientation);
+    $("#rotation-class").html(rotationText);
+  }, 500);
+});
 ```
 
 等待，OCR 文本有一些重复和中断。让我根据逻辑流提供一个干净的合并版本：
@@ -1173,7 +1082,6 @@ var canDetect = "orientationchange" in window;
 
 （注：提供的 OCR 文本在 49-51 页之间存在大量重叠/重复的代码块。我将它们合并到一个逻辑流中进行最终输出。）
 
-[content]
 TIP：在编写比简单应用复杂的内容时，我建议使用三个样式表（如所示的两个）。如果你能有效地将 CSS 样式分为不与屏幕大小无关的样式和取决于屏幕大小的样式，那么从长远来看，你管理代码将变得更容易。
 
 使用这种方法，前一个示例将有一个核心样式表（例如 `allscreens.css`），它被引入 HTML 文档但没有在 `link` 标签中包含设备宽度规则。所有不依赖屏幕大小的 CSS 都将移动到此文件中，而 `small.css` 和 `largescreen.css` 文件将仅特定特定规则。
@@ -1195,7 +1103,7 @@ TIP：在编写比简单应用复杂的内容时，我建议使用三个样式�
 首先是页面 HTML：
 
 ```html
-<html
+<html>
 <head>
   <title>Orientation Checker</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0; user-scalable=0" />
@@ -1204,7 +1112,7 @@ TIP：在编写比简单应用复杂的内容时，我建议使用三个样式�
   <script type="javascript" src="orientation-monitor.js"></script>
 </head>
 <body>
-  <h1 class="simple">Orientation Monitor</h1>h1
+  <h1 class="simple">Orientation Monitor</h1>
   <ul>
     <li class="header">Event Details
       <li><label>Type:</label><span id="event-type"></span></li>
@@ -1220,6 +1128,7 @@ TIP：在编写比简单应用复杂的内容时，我建议使用三个样式�
 ```
 
 > 注意：我没有包含此示例的 CSS，因为这不是练习的重点。不过，你可以在 URL 处查看源代码：
+
 http://sidelab.com/code/pawa/snippets/02/orientation-monitor.css
 
 接下来是 `orientation-monitor.js` 的代码：
@@ -1247,24 +1156,24 @@ $(document).ready(function() {
     });
     // 在此阶段我们只能依赖宽度和高度
 
-// 根据宽高比计算方向
-var aspectRatio = 1;
-if (window.innerHeight != 0) {
-  aspectRatio = window.innerWidth / window.innerHeight;
-} // 如果
+    // 根据宽高比计算方向
+    var aspectRatio = 1;
+    if (window.innerHeight != 0) {
+      aspectRatio = window.innerWidth / window.innerHeight;
+    }
 
-// 根据宽高比确定方向
-var orientation = aspectRatio <= 1 ? "portrait" : "landscape";n// 如果事件是方向变化事件，我们可以依靠
-var rotationText = "orientationchange"
-if (event.type == "orientationchange") {
-  rotationText = ROTATION_CLASSES[window.toString()];
-} // 如果
+    // 根据宽高比确定方向
+    var orientation = aspectRatio <= 1 ? "portrait" : "landscape";
+    var rotationText = "orientationchange";
+    if (evt.type == "orientationchange") {
+      rotationText = ROTATION_CLASSES[window.orientation.toString()];
+    }
 
- // 显示我们从显示中确定的详情
-$("#orientation").html(orientation);
-$("#rotation-class").html(rotationText);
-}, 500);
-));
+    // 显示我们从显示中确定的详情
+    $("#orientation").html(orientation);
+    $("#rotation-class").html(rotationText);
+  }, 500);
+});
 ```
 
 一旦你实现了代码，模拟器或设备将显示如图 2–8 所示的屏幕。
@@ -1272,14 +1181,23 @@ $("#rotation-class").html(rotationText);
 ![](img/6c8091bf3a3d21ca91f25f8caed8840f_50_0.png)
 
 | 事件详情 | |
+
 |---|---|
+
 | Type: | orientationchange |
+
 | 窗口详情 | |
+
 | Width: | 480 |
+
 | Height: | 241 |
+
 | Orientation: | 90 |
+
 | 检测结果 | |
+
 | Orientation: | landscape |
+
 | Rotation Class: | right |
 
 **图 2–8。** 显示横屏模式信息部分的方向监测器。
@@ -1292,14 +1210,11 @@ var canDetect = "orientationchange" in window;
 
 然后我们使用 jQuery 的 `bind` 方法根据之前的检测将我们绑定到相关事件。我使用三元运算符（或 Elvis 运算符）来减少击键次数。（如果你不喜欢 Elvis，我深抱歉，但我喜欢，所以我预计会看到更多它的身影。）
 
-
-
-
 ## 第二章：构建移动端 HTML 输入表单
 
 考虑一下我们打算如何在应用程序中提供验证反馈，因为这并不是我们能够直接原样运用的东西。
 
-我知道之前提到过这一点，但我们需要再次考虑有限的屏幕空间。此外，如果你来自桌面端 Web 应用程序的背景，你还必须接受在你的 Web 应用中没有悬停提示（hover tips）以及相关的鼠标悬停（mouseover）类型功能。
+我知道之前提到过这一点，但我们需要再次考虑有限的屏空间。此外，如果你来自桌面端 Web 应用程序的背景，你还必须接受在你的 Web 应用中没有悬停提示（hover tips）以及相关的鼠标悬停（mouseover）类型功能。
 
 因此，我们需要一种有效的方法来传达验证错误，既不会占用过多的屏幕空间，又能为用户提供足够的细节来修复其输入的数据问题。
 
@@ -1422,7 +1337,9 @@ ul.errors-inline {
 在提供反馈方面，我们已经完成了大部分；剩下的只需要引入 jQuery 插件并让它工作。设置 jQuery 插件需要以下步骤：
 
 1. 将 jquery validate 库引入我们的 HTML
-2. 为我们想要验证的输入字段类添加一些验证信息
+
+2. 为我们想要验证的输入字段类添加一些验信息
+
 3. 为我们的表单调用自定义方法以覆盖默认的验证行为
 
 让我们从对 HTML 的调整开始：
@@ -1453,8 +1370,6 @@ ul.errors-inline {
 </html>
 ```
 
-
-
 ```javascript
 displayErrors();
 });
@@ -1479,7 +1394,9 @@ displayErrors();
 本质上，HTML5 规范中实现了三种不同类型的客户端存储机制：
 
 - Web 存储（Web storage）：通常被称为 HTML5 本地存储（local storage），用于存储键值对的客户端机制。它简单但非常强大（参见 http://www.w3.org/TR/webstorage/）。
+
 - SQL 数据库（SQL database）：它提供了对类似 SQLite 数据库的访问，这是服务器上传统关系型数据库系统（RDBMS）的客户端替代方案（参见 http://www.w3.org/TR/webdatabase/）。
+
 - 索引数据库（Indexed database）：由 W3C 提出的一项草案规范，旨在取代目前实现的 Web SQL 规范，旨在提供“存储简单值和分层对象的记录数据库”（参见 http://www.w3.org/TR/IndexedDB/）。
 
 在本章中，我们将重点关注上述列出的两个存储 API，并为它们分别提供概述和示例代码。
@@ -1495,131 +1412,11 @@ displayErrors();
 `localStorage` 和 `sessionStorage` 对象都实现了 `Storage` 接口，并提供了以下方法：
 
 - getItem
+
 - setState
+
 - removeItem
-- clear
 
-这些方法捕获了 `Storage` API 的大部分功能，虽然它们看起来很简单，但它们开启了一些极佳的机会。神奇之处在于你可以将任何对象保存到存储中。你只需要提供一个键以便稍后访问值，就可以了。
-
-在简单的情况下，你可能简单地将字符串或其他简单类型的值保存到存储中。考虑以下代码：
-
-```javascript
-localStorage.setItem("preferences-bgcolor", "#333333");
-localStorage.setItem("preferences-textcolor", "#FFFFFF");
-```
-
-这在 `localStorage` 中创建了两个值，用于跟踪应用程序的背景颜色和文本颜色偏好。你可以通过以下代码在 `localStorage` 中存储单个对象来实现相同的结果：
-
-```javascript
-localStorage.setItem("preferences", {
-bgcolor: "#333333",
-textcolor: "#FFFFFF"
-});
-```
-
-你可以通过简单调用 `getItem` 来获取偏好对象：
-
-```javascript
-var preferences = localStorage.getItem("preferences");
-```
-
-然后你应该能够从 `preferences` 对象访问背景颜色和文本颜色偏好。让我们现在试一下。只需显示警告框来展示背景颜色：
-
-```javascript
-alert(preferences.bgcolor);
-```
-
-嗯，这真让人尴尬。根据你阅读这本书时浏览器所使用的 Web Storage API 实现方式，你可能发现之前的调用只是显示了一条如如图 3–1 所示的 JavaScript 警告消息。
-
-![](img/6c8091bf3a3d21ca)
-
-由于根据你阅读这本书时浏览器所使用的 Web Storage API 实现方式，你可能发现之前的调用只是显示了一条...（此处重复）
-
-`localStorage` 和 `sessionStorage` 对象都实现了 `Storage` 接口，并提供了以下方法：
-
-- getItem
-- setState
-- removeItem
-- clear
-
-这些方法捕获了 `Storage` API 的大部分功能，虽然它们看起来很简单，但它们开启了一些极佳的机会。神奇之处在于你可以将任何对象保存到存储中。你只需要提供一个键以便稍后访问值，就可以了。
-
-在简单的情况下，你可能简单地将字符串或其他简单类型的值保存到存储中。考虑以下代码：
-
-```javascript
-localStorage.setItem("preferences-bgcolor", "#333333");
-localStorage.setItem("preferences-textcolor", "#FFFFFF");
-```
-
-你可以通过以下代码在 `localStorage` 中存储单个对象来实现相同的结果：
-
-```javascript
-localStorage.setItem("preferences", {
-bgcolor: "#333333",
-textcolor: "#FFFFFF"
-});
-```
-
-你可以通过简单调用 `getItem` 来获取偏好对象：
-
-```javascript
-var preferences = localStorage.getItem("preferences");
-```
-
-然后你应该能够从 `preferences` 对象访问背景颜色和文本颜色偏好。让我们现在试一下。只需显示警告框来展示背景颜色：
-
-```javascript
-alert(preferences.bgcolor);
-```
-
-嗯，这真让人尴尬。根据你阅读这本书时浏览器所使用的 Web Storage API 实现方式，你可能发现之前的调用只是显示了一条如如图 3–1 所示的 JavaScript 警告消息。
-
-![](img/6c8091bf3a3d21ca)
-
-...（注：由于原文文本中存在大量重复段落，翻译已根据“不要重复输出原文”的原则进行了去重，保留核心逻辑翻译）
-
-```javascript
-displayErrors();
-});
-```
-
-完成此操作后，应用程序的行为将与之前完全一致，但它不再显示模拟数据，而是将显示由 `jQuery.validate` 插件生成的错误消息。
-
-## 总结
-
-本章应该已经让你熟悉了构建移动端 Web 应用的基本要求。它涵盖了视口（viewport）元标签，并探索了一些可以在 Android 的 WebKit 浏览器中使用的 CSS3样式，用于创建整洁的用户界面。它还涵盖了为移动设备创建 Web 应用时需要考虑的一些额外事项，包括设备方向变化以及在设计屏幕空间有限的应用时面临的额外限制。最后，我们引入了 `jQuery validate` 插件，以便在应用程序中实现强大的表单验证功能，而无需从零开始编写。
-
-在下一章中，我们将学习使用 HTML5 提供的各种客户端存储机制来保存数据。这将涉及到让代码编写变得更加严谨，因此，我将在代码示例中开始使用 JavaScript 模块模式（module pattern）。使用模块模式将为我们在 JavaScript 中构建更复杂的应用程序提供坚实的基础，虽然这需要一点时间适应，但投入是非常值得的。
-
-## 第 3 章
-
-## HTML5 存储 API
-
-在上一章中，我们学习了创建一个简单的移动 Web 页面以及为我们的待办事项应用程序创建一个简单的“创建任务”表单。在本章中，我们将查看在设备本地存储数据的选项。HTML5 引入了一些允许此类客户端存储的 API。
-
-在此前在编写 Web 应用时，如果你需要将数据保存到数据库，则需要使用服务器端脚本（PHP、Python、Ruby 等）来完成。HTML5 API 的一些新兴元素为这种需求提供了客户端侧的替代方案，研究这些元素以及如何有效地使用它们将是本章的重点。
-
-本质上，HTML5 规范中实现了三种不同类型的客户端存储机制：
-
-- Web 存储（Web storage）：通常被称为 HTML5 本地存储（local storage），用于存储键值对的客户端机制。它简单但非常强大（参见 http://www.w3.org/TR/webstorage/）。
-- SQL 数据库（SQL database）：它提供了对类似 SQLite 数据库的访问，这是服务器上传统关系型数据库系统（RDBMS）的客户端替代方案（参见 http://www.w3.org/TR/webdatabase/）。
-- 索引数据库（Indexed database）：由 W3C 提出的一项草案规范，旨在取代目前实现的 Web SQL 规范，旨在提供“存储简单值和分层对象的记录数据库”（参见 http://www.w3.org/TR/IndexedDB/）。
-
-在本章中，我们将重点关注上述列出的两个存储 API，并为它们分别提供概述和示例代码。
-
-尽管 W3C 已经提出 Indexed DB API 来取代 Web SQL 数据库，但目前还没有哪个 Android 版本发布了对该规范的支持。因此，我们关注了你现在就可以实施的两个 API：Web 存储和 Web SQL 数据库。
-
-# 第 3 章：HTML5 存储 API
-
-我们认为 WebKit 浏览器（如在 Android 上原生使用的 浏览器）在未来一段时间内将继续支持 Web SQL 数据库，因此尽管 W3C 表示他们不会对该标准进行任何修订，你应该可以放心地使用该规范。
-
-## Web Storage API
-
-`localStorage` 和 `sessionStorage` 对象都实现了 `Storage` 接口，并提供了以下方法：
-
-- getItem
-- setState
-- removeItem
 - clear
 
 这些方法捕获了 `Storage` API 的大部分功能，虽然它们看起来很简单，但它们开启了一些极佳的机会。神奇之处在于你可以将任何对象保存到存储中。你只需要提供一个键以便稍后访问值，就可以了。
@@ -1669,9 +1466,94 @@ displayErrors();
 
 完成此操作后，应用程序的行为将与之前完全一致，但它不再显示模拟数据，而是将显示由 `jQuery.validate` 插件生成的错误消息。
 
+## 总结
 
+本章应该已经让你熟悉了构建移动端 Web 应用的基本要求。它涵盖了视口（viewport）元标签，并探索了一些可以在 Android 的 WebKit 浏览器中使用的 CSS3样式，用于创建整洁的用户界面。它还涵盖了为移动设备创建 Web 应用时需要考虑的一些额外事项，包括设备方向变化以及在设计屏幕空间有限的应用时面临的额外限制。最后，我们引入了 `jQuery validate` 插件，以便在应用程序中实现强大的表单验证功能，而无需从零开始编写。
 
+在下一章中，我们将学习使用 HTML5 提供的各种客户端存储机制来保存数据。这将涉及到让代码编写变得更加严谨，因此，我将在代码示例中开始使用 JavaScript 模块模式（module pattern）。使用模块模式将为我们在 JavaScript 中构建更复杂的应用程序提供坚实的基础，虽然这需要一点时间适应，但投入是非常值得的。
 
+## 第 3 章
+
+## HTML5 存储 API
+
+在上一章中，我们学习了创建一个简单的移动 Web 页面以及为我们的待办事项应用程序创建一个简单的“创建任务”表单。在本章中，我们将查看在设备本地存储数据的选项。HTML5 引入了一些允许此类客户端存储的 API。
+
+在此前在编写 Web 应用时，如果你需要将数据保存到数据库，则需要使用服务器端脚本（PHP、Python、Ruby 等）来完成。HTML5 API 的一些新兴元素为这种需求提供了客户端侧的替代方案，研究这些元素以及如何有效地使用它们将是本章的重点。
+
+本质上，HTML5 规范中实现了三种不同类型的客户端存储机制：
+
+- Web 存储（Web storage）：通常被称为 HTML5 本地存储（local storage），用于存储键值对的客户端机制。它简单但非常强大（参见 http://www.w3.org/TR/webstorage/）。
+
+- SQL 数据库（SQL database）：它提供了对类似 SQLite 数据库的访问，这是服务器上传统关系型数据库系统（RDBMS）的客户端替代方案（参见 http://www.w3.org/TR/webdatabase/）。
+
+- 索引数据库（Indexed database）：由 W3C 提出的一项草案规范，旨在取代目前实现的 Web SQL 规范，旨在提供“存储简单值和分层对象的记录数据库”（参见 http://www.w3.org/TR/IndexedDB/）。
+
+在本章中，我们将重点关注上述列出的两个存储 API，并为它们分别提供概述和示例代码。
+
+尽管 W3C 已经提出 Indexed DB API 来取代 Web SQL 数据库，但目前还没有哪个 Android 版本发布了对该规范的支持。因此，我们关注了你现在就可以实施的两个 API：Web 存储和 Web SQL 数据库。
+
+# 第 3 章：HTML5 存储 API
+
+我们认为 WebKit 浏览器（如在 Android 上原生使用的 浏览器）在未来一段时间内将继续支持 Web SQL 数据库，因此尽管 W3C 表示他们不会对该标准进行任何修订，你应该可以放心地使用该规范。
+
+## Web Storage API
+
+`localStorage` 和 `sessionStorage` 对象都实现了 `Storage` 接口，并提供了以下方法：
+
+- getItem
+
+- setState
+
+- removeItem
+
+- clear
+
+这些方法捕获了 `Storage` API 的大部分功能，虽然它们看起来很简单，但它们开启了一些极佳的机会。神奇之处在于你可以将任何对象保存到存储中。你只需要提供一个键以便稍后访问值，就可以了。
+
+在简单的情况下，你可能简单地将字符串或其他简单类型的值保存到存储中。考虑以下代码：
+
+```javascript
+localStorage.setItem("preferences-bgcolor", "#333333");
+localStorage.setItem("preferences-textcolor", "#FFFFFF");
+```
+
+这在 `localStorage` 中创建了两个值，用于跟踪应用程序的背景颜色和文本颜色偏好。你可以通过以下代码在 `localStorage` 中存储单个对象来实现相同的结果：
+
+```javascript
+localStorage.setItem("preferences", {
+bgcolor: "#333333",
+textcolor: "#FFFFFF"
+});
+```
+
+你可以通过简单调用 `getItem` 来获取偏好对象：
+
+```javascript
+var preferences = localStorage.getItem("preferences");
+```
+
+然后你应该能够从 `preferences` 对象访问背景颜色和文本颜色偏好。让我们现在试一下。只需显示警告框来展示背景颜色：
+
+```javascript
+alert(preferences.bgcolor);
+```
+
+嗯，这真让人尴尬。根据你阅读这本书时浏览器所使用的 Web Storage API 实现方式，你可能发现之前的调用只是显示了一条如如图 3–1 所示的 JavaScript 警告消息。
+
+![](img/6c8091bf3a3d21ca)
+
+由于根据你阅读这本书时浏览器所使用的 Web Storage API 实现方式，你可能发现之前的调用只是显示了一条如如图 3–1 所示的 JavaScript 警告消息。
+
+![](img/6c8091bf3a3d21ca)
+
+...（注：由于原文文本中存在大量重复段落，翻译已根据“不要重复输出原文”的原则进行了去重，保留核心逻辑翻译）
+
+```javascript
+displayErrors();
+});
+```
+
+完成此操作后，应用程序的行为将与之前完全一致，但它不再显示模拟数据，而是将显示由 `jQuery.validate` 插件生成的错误消息。
 
 # 第 3 章：HTML5 存储 API
 
@@ -1721,22 +1603,31 @@ var module = {
 ...
 ```
 
-虽然我们不会对上述代码进行详细解释，但感兴趣的人可以看到我们如何将 HTML5 存储接口的 get 和 set 方法封装成 PROWEBWAPS.Storage 模块的静态 get 和 set 方法。我们使用了一些 jQuery 工具函数和正则表达式来判断是否需要使用 JSON 来存储/检索数据，如果是的话，我们就会
+虽然我们不会对上述代码进行详细解释，但感兴趣的人可以看到我们如何将 HTML5 存储接口的 get 和 set 方法封装成 PROWEBWAPS.Storage 模块的静态 get 和 set 方法。我们使用了一些 jQuery 工具函数和正则表达来判断是否需要使用 JSON 来存储/检索数据，如果是的话，我们就会
 
 比上述代码工作原理（一旦拆解开它相对简单）更重要的是我们将将如何使用它。基本上，我们现在有了三个函数可以供我们进行更复杂的存储操作，以与 HTML5 Web Storage 功能交互：
 
 - PROWEBWAPS.Storage.get(key, scope)
+
   - key 是用于标识条目的字符串值。
+
   - scope 可以可选地指定为 "session"（作为一个字符串），如果你想将数据存储在 session storage 而不是 local storage。
+
 - PROWEBWAPS.Storage.set(key, value, scope)
+
   - 与 get 方法一样，key 是用于标识条目的字符串值。
+
   - value 是我们希望保存到 Web Storage 的数据（这可以是简单值、数组、对象等）。数组和对象将使用 JSON 进行序列化，然后存储为字符串。
+
   - scope（可选）指定哪个键值将将保存到 session 或 local storage。向此参数传递空值意味着该值将将保存到 local storage。
+
 - PROWEBWAPS.Storage.remove(key, scope)
+
   - key 是用于指定要从存储中删除的条目的字符串值。
+
   - scope 参数（如果提供）将指定使用 session 还是 local storage。如果没有提供任何值，则默认使用 local storage。
 
-现在我们已经有了这些功能，让我们看看如何使用我们的 PROWEBWAPS.Storage 函数来存储 JavaScript 对象和数组。我们将通过创建 web-test.js 文件来实现，该文件将用于支持此本地测试应用程序：
+现在我们已经有了这些功能，让我们看看如何使用我们的 PROWEBWAPS.Storage 函数来存储 JavaScript 对象和数组。我们将通过创建 web-test.js 文件来实现，该文件将用于支持此本地测试应用程：
 
 ```javascript
 $(document).ready(function() {
@@ -1821,10 +1712,8 @@ $("#clear").click(function() {
 
 **图 3–2.** Web Storage 测试应用程序页面
 
-
-
-
 虽然我们在这里不会详细介绍代码，但如果你对我们之前关于使用 Web Storage 的 Web SQL 数据库保存对象的示例感兴趣，我们已经在以下位置提供了一个示例实现：
+
 https://sidelab.com/pawa/snippets/03/webstorage-test-webdb.js。
 
 鉴于内容非常多，我们将重点关注实现本地数据库读取和使用 Web SQL Database API。这将在下一个示例中介绍。
@@ -1870,6 +1759,7 @@ Storage: function() {
 ## 第三章：HTML5 存储 API
 
 - 创建/打开一个名为 todolist 的客户端数据库，并确保所需的 task 表存在（如果需要则创建它）
+
 - 在 task 表中保存待办事项项
 
 然后我们创建一个在其他语言中可能被称为 DTO（数据传输对象）的 POJO（普通 Java 对象），用于捕获待办事项项的细节。在未来的练习中，我们将这些这些称为 POJOs，因为这个缩写对 JavaScript 的适用程度几乎和 Java 一样好。
@@ -1944,11 +1834,15 @@ $("#taskhandler").validate({
 为了避免重复编写相同的代码从表单中提取值并将其映射到对象，你可以使用类似下面的代码来使该过程更加精简（前提是你对表单字段、对象属性等使用一致的命名）。
 
 保存待办事项现在简单的三个步骤：
+
 1. 从表单中获取值
+
 2. 创建新项
+
 3. 请求 Storage 保存
 
 虽然我们在这里不会详细介绍代码，但如果你对之前关于使用 Web Storage 的 Web SQL 数据库保存对象的示例感兴趣，我们已经在以下位置提供了一个示例实现：
+
 https://sidelab.com/pawa/snippets/03/webstorage-test-webdb.js。
 
 鉴于内容非常多，我们将重点关注实现本地数据库读取和使用 Web SQL Database API。这将在下一个示例中介绍。
@@ -1956,6 +1850,7 @@ https://sidelab.com/pawa/snippets/03/webstorage-test-webdb.js。
 ## 第三章：HTML5 Storage API
 
 - 创建/打开一个名为 todolist 的客户端数据库，并确保所需的 task 表存在（如果需要则创建它）
+
 - 在 task 表中保存待办事项项
 
 我们我们创建一个在其他语言中可能被称为 DTO（数据传输对象）的 POJO（普通 Java 对象），用于捕获待办事项项的细节。在未来的练习中，我们将这些称为 POJOs，因为这个缩写对 JavaScript 的适用程度几乎和 Java 一样好。
@@ -1996,7 +1891,7 @@ getFormValues: function(form) {
 
   // 使用 jQuery 遍历表单值
   $(form).find(":input").each(function() {
-    // 获取字段名称
+    // �获取字段名称
     var fieldName = this.name.replace(/^(\w+)\]$/, "$1");
 
     // 设置字段的值
@@ -2028,11 +1923,15 @@ $("#taskhandler").validate({
 ```
 
 保存待办事项现在简单的三个步骤：
+
 1. 从表单中获取值
+
 2. 创建新项
+
 3. 请求 Storage 保存
 
 等待，虽然我们在这里不会详细介绍代码，但如果你对之前关于使用 Web Storage 的 Web SQL 数据库保存对象的示例感兴趣，我们已经在以下位置提供了一个示例实现：
+
 https://sidelab.com/pawa/snippets/03/webstorage-test-webdb.js。
 
 鉴于内容非常多，我们将重点关注实现本地数据库读取和使用 Web SQL Database API。这将在下一个示例中介绍。
@@ -2040,6 +1939,7 @@ https://sidelab.com/pawa/snippets/03/webstorage-test-webdb.js。
 ## 第三章：HTML5 API
 
 - 创建/打开一个名为 todolist 的客户端数据库，并确保所需的 task 表存在（如果需要则创建它）
+
 - 在 task 表中保存待办事项项
 
 我们我们创建一个在其他语言中可能被称为 DTO（数据传输对象）的 POJO（普通 Java 对象），用于捕获待办事项项的细节。在未来的练习中，我们将这些称为 POJOs，因为这个缩写对 JavaScript 的适用程度几乎和 Java 一样好。
@@ -2110,9 +2010,6 @@ $("#taskhandler").validate({
   }
 });
 ```
-
-
-
 
 ## 数据库版本控制与升级
 
@@ -2281,7 +2178,7 @@ db.changeVersion("1.0", "1.1", function(transaction) {
 
 既然数据现在已保存到客户端数据库，让我们创建一个显示屏幕，以便我们可以跟踪所有必须做的事情（唉）。我们将致力于构建一个显示下五件需要完成的事情（按日期排序）的显示器。
 
-一旦完成了这一步，我们的待办事项应用程序将拥有多个屏幕。虽然可以使用单独的 HTML 来实现这些，但会导致不必要的页面加载。这是最好避免的，因此我们将使用类似 jqTouch (http://jqtouch.com) 和 IUI (http://code.google.com/p/jui) 的工具创建一个包含多个应用程序屏幕的单个 HTML 文档。
+一旦完成了这一步，我们的待办事项应用程序将拥有多个屏幕。虽然可以使用单独的 HTML 来实现这些，但会导致不必要的页面加载。这是最好避免的，因此我们将使用类似 jqTouch (http://jqtouch.com) 和 IUI (http://code.google.com/p/jui) 的工具创建一个包含多个应用程屏幕的单个 HTML 文档。
 
 ### 单 HTML 文件，多页面 
 
@@ -2319,11 +2216,12 @@ div#main {
 **修正：我发现你提供的输入文本在最后部分存在重复和逻辑混乱，以下是基于你提供的有效文本的最终纯翻译：**
 
 [content]
+
 ## 数据库版本控制与升级
 
 Web SQL 的 HTML 实现已经经过了非常周密的考虑，并提供了一种机制，在我们部署应用程序的新版本时对我们的客户端数据库应用版本更改。这涉及到使用 `changeVersion` 方法来指定旧版本、新版本以及要执行的事务回调函数，以便应用从一个版本移动到下一个版本所需的任何更新。此外，还可以利用可选的错误和成功回调函数来监控并对特定的响应条件做出响应。
 
-例如，在接下来的章节中，我们将为待办事项应用程序添加一些功能，允许用户将项目标记为已完成。。这显然是一个好主意，但数据库显然缺少一个用于存储完成标记或日期的位置。现在是时候修复并创建我们数据库的 1.1 版本了。
+例如，在接下来的章节中，我们将为待办事项应用程序添加一些功能，允许用户将项目标记为已完成。这显然是一个好主意，但数据库显然缺少一个用于存储完成标记或日期的位置。现在是时候修复并创建我们数据库的 1.1 版本了。
 
 以下代码展示我们如何将 `TODOlistStorage` 模块中原始的 `openDatabase` 调用替换为一个可以处理数据库 1.1 版本或 1.0 版本的调用，并适当升级 1.0 版本：
 
@@ -2407,9 +2305,6 @@ div#main {
 </div>
 ```
 
-
-
-
 ## 第四章：构建多页应用
 
 ```javascript
@@ -2428,6 +2323,8 @@ return submodule;
 应用程序将使用 `PROWEBAPPS.ViewManager.define` 来定义一个带有关联操作的新视图（我们很快会看到一个示例）。静态函数 `define` 允许我们向视图管理器注册新视图，而 `activate` 则将模块变量 `activeView` 设置为匹配指定的视图。然后我们调用 `switchView`，根据活动视图的变化来更新 UI 元素。
 
 扩展 `switchView` 存根（stub），我们实现了以下私有函数来实现视图切换：
+
+
 
 ```javascript
 function getView(view) {
@@ -2485,6 +2382,7 @@ jQuery(menu).find("").click(function(event) {
 在此阶段，私有函数 `switchView` 有两个目的：
 
 - 如果存在，则隐藏当前视图并显示新视图。注意在新元素上调用了 jQuery 的 `trigger` 方法。我们将在本章稍后部分使用它。
+
 - 检查 `#menu` 元素是否存在。如果存在，则相应地填充指向活动视图相关操作的链接。一旦构建好菜单，将使用 jQuery 点击函数来处理在点击链接时查找并执行操作。
 
 ## 实现视图操作
@@ -2553,14 +2451,16 @@ ChangeViewAction: function(args) {
 乍看之下，前面的代码有点困惑，让我们逐步分析并理解正在发生什么：
 
 1. 我们首先检查是否定义了 target；如果没有，则抛出异常。
+
 2. 如果没有定义 label，我们将其赋值为 target。
+
 3. 如果 target 有效，我们创建一个带有函数的 `ViewAction`。
 
 ```javascript
 TODOLIST = (function() {
   // 定义 module
   var module = {
-    // 定义 main 视图
+    // 定义 main 视视图
     main: new module.ViewAction({
       id: "main",
       actions: [
@@ -2597,10 +2497,6 @@ TODOLIST = (function() {
 
 （注：用户要求提供 `[content]` 内部的最终文本）。
 
-
-
-
-
 # 第 4 章：构建多页应用
 
 ## 75
@@ -2614,8 +2510,11 @@ TODOLIST = (function() {
 截止日期：5 天后
 
 - 完成任务
+
 - 开始工作
+
 - 显示所有任务
+
 - 添加新增
 
 图 4-4。我们应用的主界面显示出明显的样式缺失。
@@ -2687,7 +2586,7 @@ ul.buttons li a {
 
 ![](img/6c8091bf3a3d21ca91f25f8caed8840f_88_0.png)
 
-应用所有样式后，这将生成静态的 HTML 屏幕，如图 4–6 所示。它看起来开始像样的了。
+应用所有样料后，这将生成静态的 HTML 屏幕，如图 4–6 所示。它看起来开始像样的了。
 
 # 第 4 章：构建多页应用
 
@@ -2786,7 +2685,9 @@ Storage: (function() {
 在这里我们添加了三个方法：
 
 - `completeTasks`：返回标记为完成的任务。注意我们使用了 `getTasks` 的 `extraClauses` 参数来限制结果集。
+
 - `getTasksPriorityOrder`：按截止日期返回未完成的任务。注意这里使用 JavaScript 的 `sort` 方法对结果进行排序。虽然我们通常会在 SQL 中使用 `ORDER BY` 语句来实现，但由于某些不匹配，在 JavaScript 中实现更简单（尽管效率较低）。
+
 - `getImportantTask`：从 `getTasksPriorityOrder` 方法返回第一个任务。
 
 我们需要修改 `saveTask` 方法，以便我们在创建新任务之外还能更新现有任务。
@@ -2830,10 +2731,6 @@ saveTask: function(task, callback) {
   });
 }
 ```
-
-
-
-
 
 注意：如果你接触 JavaScript 回调函数的时间不长，可能需要一些时间来适应这里的异步行为。简单来说，我们需要跳出线性思维。与其认为“A 发生了，B 发生了，然后 C 发生了”，我们应该认为是“A 发生了，我们启动了 B，C 发生了，B 准备好了，于是它完成了”。这确实需要一些时间来适应。
 
@@ -2964,10 +2861,15 @@ function showTaskDetails(selector, task) {
 ## 第 4 章：构建多页应用程序
 
 | 待事项 | 已完成 |
+
 | :--- | :--- |
+
 | 你没有需要完成的任务 | 任务：已逾期 |
+
 | 显示所有任务 | 我已经做过的 |
+
 | 添加新 | 60 天后到 |
+
 | | 开始工作 |
 
 图 4–7：主屏幕
@@ -2975,10 +2877,6 @@ function showTaskDetails(selector, task) {
 图 4–8：任务列表设计原型
 
 ## 构建屏幕
-
-
-
-
 
 ## 第 4 章：构建移动应用
 
@@ -3003,19 +2901,31 @@ function populateTaskList() {
 ## 所有任务
 
 -   修剪草坪
+
   - 24
+
   - 04
+
   - 2010
+
   草已经长得非常高了。
+
   必须得做点什么。
+
 -   重构示例代码
+
   - 05
+
   - 10
+
   - 2010
+
   我希望在示例中加入更多动画。
+
   重构一下，让元素能上下移动 :)
 
 完成任务
+
 完成任务
 
 **图 4-9.** 未应用样式的“所有任务”显示。在还没有 CSS 之前我们做了什么？
@@ -3109,9 +3019,13 @@ padding: 1px 0 0;
 ## 第 4 章：构建多页面应用
 
 | 所有任务 | | 所有任务 |
+
 |---|---|---|
+
 | 修剪草坪 24 APR 2010 | 修剪草坪 24 APR 2010 |
+
 | 重构示例代码 05 OCT 2010 | 重构示例代码 05 OCT 2010 |
+
 | | 我希望在示例中加入更多动画。重构一下，让元素能上下移动 ) 完成任务 |
 
 **图 4–10. 应用样式后，它看起来开始像那么了。**
@@ -3143,8 +3057,6 @@ function toggleDetailsDisplay(listItem) {
 
 从这里开始，真正需要的是完成任务的功能——考虑到我们在主屏幕上已经做过了，这应该很简单。你还可以添加额外的 CSS 来显示任务是否已期。
 
-
-
 ```javascript
 // if the view stack is active, then add a back action
 if (viewStack.length > 0) {
@@ -3169,13 +3081,13 @@ function getAction(view, actionId) {
     }
   }
   return null;
-}
 }()()
 ```
 
 你可以看到为 `viewStack` 和 `backAction` 添加了两个额外的变量。此外，`getViewActions` 和 `getAction` 函数也经过了修改以正确处理返回操作行为。在 `getViewActions` 中，该函数会检查 `viewStack` 是否包含任何项，如果是，则将 `backAction` 包含在当前视图显示的操作列表中。`getAction` 方法的更改为函数提供了一种机制，即使在没有显式定义的情况下也能提供 `backAction` 处理器。
 
 最后一块拼图。我们需要在 `PROWEBAPPS.ViewManager` 模块中一个方法，允许我们手动触发返回：
+
 ViewManager: function() {
 
 ```javascript
@@ -3214,7 +3126,7 @@ return subModule;
 
 你将学习到使用前沿技术，例如 NoSQL 云托管解决方案，这些存储系统不依赖于传统的关系形式，而是提供了一种处理数据存储的新方法。我们目前有很多解决方案可以为你封装这些新技术的复杂性，让你专注于应用程序的核心开发。
 
-但此并非如此——使用在线存储框架提供了一种在云端托管你的移动应用程序的方法，让全世界都能使用该程序。原生应用程序运行在设备内部，而移动 Web 应用需要托管。也就是说，它们的页面是从远程位置提供的——一个与移动原生浏览器通信的服务器。虽然你可以将应用程序托管在现有的经典 Web 托管供应商之一，但在在本章中，我们将查看一种强大且负担得起的替代云托管解决方案。该解决方案将允许你同时托管存储机制和应用程序本身。
+但此并非如此——使用在线存储框架提供了一种在云端托管你的移动应用程的方法，让全世界都能使用该程序。原生应用程序运行在设备内部，而移动 Web 应用需要托管。也就是说，它们的页面是从远程位置提供的——一个与移动原生浏览器通信的服务器。虽然你可以将应用程序托管在现有的经典 Web 托管供应商之一，但在在本章中，我们将查看一种强大且负担得起的替代云托管解决方案。该解决方案将允许你同时托管存储机制和应用程序本身。
 
 ## 探索在线存储选项
 
@@ -3225,7 +3137,9 @@ return subModule;
 我们到底在在线存储解决方案中寻找的是什么？一个作为通用同步解决方案的方案将需要以下功能：
 
 - 避免复杂且某种程度上老派的三层架构
+
 - 某些用户身份验证
+
 - 一个让其变得容易实现的支持库
 
 此外，考虑到我们希望以最好的方式关注我们的应用程序，我们将更深入地探讨上述概述的特性。
@@ -3235,7 +3149,9 @@ return subModule;
 经典的 Web 应用基于三层架构：
 
 - 前端层，包含 HTML、样式和其他资源
+
 - 后端层，由应用服务器托管（如 Tomcat 或 JBoss）
+
 - 数据库供应商，如 MySQL、Oracle 或 SQL Server
 
 ## 用户身份验证
@@ -3246,22 +3162,21 @@ return subModule;
 
 理想情况下，我们正在寻找一种可以获取本地存储数据并进行同步以将其推送到云端的解决方案。一旦这些数据在线，我们就可以从桌面应用程序，或者运行 Android 或 Chrome 的平板电脑使用它们。
 
-在此阶段，该领域的方案特别难以寻找，因为跨平台 Web 应用对大多数人来说很新。另一个选项是编写自己的同步库。这应该不会太难，因为我们的需求非常简单，而且你在上一章中已经看到了如何与离线数据库通信。
+在此阶段，该领域的方案特别难以寻找，因为跨平台 Web 应对大多数人来说很新。另一个选项是编写自己的同步库。这应该不会太难，因为我们的需求非常简单，而且你在上一章中已经看到了如何与离线数据库通信。
 
 # 可能的同步解决方案
 
 一个很好地满足我们需求的解决方案是 jsonengine。它是它最有价值的特性之一：
 
 - 它运行在 Google App Engine 上（一种云解决方案）。
+
 - 它不需要后端脚本。
+
 - 它使用 Google 机制提供身份管理。
+
 - 除了作为数据存储解决方案，还可以从 jsonengine 内部托管和提供应用程序代码。
 
 正如名称所示，jsonengine 使用 JSON 格式存储其数据。这很有用，因为我们的应用程序高度基于 JavaScript，并且使用 JSON2 库可以轻松操作 JSON 对象。
-
-
-
-
 
 ## 开始使用 Google App Engine
 
@@ -3274,11 +3189,12 @@ Google App Engine 是一种平台即服务（PaaS）解决方案，它与其他�
 因此，在使用 jsonengine 之前，你必须设置 Google App Engine。你要做的第一件事是下载 Google App Engine 框架，以便在将其放入云端之前在本地测试并部署你的应用程序。Google App Engine 提供了两种不同的框架：
 
 - * 基于 Python 的 SDK
+
 - 基于 Java 的 SDK
 
 由于 jsonengine 是基于 Java 的，我们将使用基于 Java 的版本。如果你没有任何 Java 知识，也不用担心——这并不是必要的。我们只需要部署 jsonengine，所以你不需要对其进行任何配置或实现。
 
-让我们从安装 Google App Engine 开始。首先，下载二进制文件，你可以在这里找到：
+让我们从安装 Google App Engine 开始。首先，下载二进文件，你可以在这里找到：
 
 ```
 http://code.google.com/appengine/downloads.html
@@ -3315,18 +3231,31 @@ dev_appserver location=/to/you/war/folder
 让我们进行快速测试，以确保 jsonengine 确实除了 JSON 数据外还提供 Web 资源。将第 4 章的示例代码放入你的文件夹中。这应该产生以下文件夹结构：
 
 - JSONEngine-
+
 - war
+
   - css-
+
     - prousi.css
+
   - js
+
     - jquery-1.4.2.min.js
+
     - jquery.validate.js
+
     - json2.js
+
     - prowebapps.js
+
 - snippets-
+
   - 04-
+
     - todolist.html
+
     - todolist.css
+
     - todolist.js
 
 浏览到 http://localhost:8080/snippets/04/todolist.html，你将看到你的应用程序正在运行。
@@ -3335,7 +3264,7 @@ dev_appserver location=/to/you/war/folder
 
 停止你的服务器，通过在命令之后、war 文件夹路径之前添加以下参数 -a 0.0.0.0 来重启它。完成后，你就可以使用本地机器的 IP 从模拟器或移动设备访问应用程序。
 
-> 注意：如果你在后台运行 Mongoose，AppEngine 服务器将无法绑定到替代地址。在这种情况下，只需关闭 Mongoose 服务器然后重新启动 AppEngine dev 服务器即可。
+> 注意：如果你在后台运行 Mongoose，AppEngine 服务器将无法绑�到替代地址。在这种情况下，只需关闭 Mongoose 服务器然后重新启动 AppEngine dev 服务器即可。
 
 ## 选择同步模式
 
@@ -3346,7 +3275,9 @@ dev_appserver location=/to/you/war/folder
 由于 jsonengine 期望 JSON 格式的输入，我们必须将离线数据转换为 JSON 格式。全局流程非常简单：
 
 - 1. 选择所有记录。
+
 - 2. 将它们解析为 JSON 格式。
+
 - 3. 将它们发送到 jsonengine。
 
 ```javascript
@@ -3386,18 +3317,18 @@ function synchronizeOnline(callback) {
 
 让我们关注循环，那里是有趣事情发生的地方。首先，我们使用 JSON 库将从数据库检索的 Task 对象序列化为 JSON 字符串。接下来，我们使用 jQuery 的 post 函数将序列化数据（使用 POST 请求）发送到 jsonengine 进行存储。
 
-
-
-
-
 ## 第5章：与云端同步
 
 你可以看到我们的 `post` 调用接受三个参数：
 
 - 第一个参数是我们要发送 POST 请求的 url。在这种情况下，我们的存储 URL 与应用程序相同；我们只是在它前面加上前缀 `_je`（代表 "JSON storage"）——这只是 jsonengine 的约定。
+
 - 我们的下一个参数包含了我们要通过 `jsonengine` 发送的数据。为了让 `jsonengine` 能够有效地保存我们的数据，它需要两个要素：
+
   - 一个文档 (`_doc`）——这是要存储的数据。
-  - 一个文档 ID (`_docid`）——我们要存储的文档的唯一键。jsonengine 足够智能，可以检测 `docid` 是否已经存在，并将创建一个新记录或更新现有记录。
+
+  - 一个文档 ID (`_docid`）——我们要存储的文档的唯一键。jsonengine 足够智能，可以检浀 `docid` 是否已经存在，并将创建一个新记录或更新现有记录。
+
 - 最后，我们为 `post` 函数提供了一个成功回调函数，它会在请求成功完成后被调用。
 
 这里正在发生了什么？首先，我们正在使用 jQuery 的 `post` 函数。当我们需要处理网络通信时，这是 jQuery 最强大的函数之一。该函数将执行一个 HTTP POST 请求，当然，我们传递了一个参数数组：(`/je/tasks`, `{taskid,docid:task.id}, success callback`)。
@@ -3543,10 +3474,6 @@ $("#info").html("已完成 " + updateCount + " 个任务").show();
 
 **图 5–2.** 视觉反馈
 
-
-
-
-
 有趣的部分在于页面加载时调用的这个 JavaScript 函数。我们正在使用 jQuery 的 `get` 函数——其语法与 `post` 函数几乎相同，但我们现在正在对参数进行排序。结果是一个 JSON 文档数组。JSON 文档是 Task 实例的 JSON 字符串表示。我们只需要遍历该数组并更新 HTML 表格以添加新行即可。
 
 在这一特定情况下，我们将所有新行都收集到一个字符串中，并使用 jQuery 的 `html` 函数通过单一调用来替换表格主体（`tbody`）。虽然我们也可以同样容易地在发现每一行时就追加它，但通过尝试尽可能减少更新 HTML 的次数，我们提高了应用程序的运行速度。虽然在像这样的小页面上你可能察觉不到，但这是一个值得养成的好习惯。
@@ -3569,7 +3496,9 @@ td {
 ![](img/6c8091bf3a3d21ca91f25f8caed8840f_120_0.png)
 
 | 姓名 | 描述 | 日期 |
+
 |---|---|---|
+
 | 分析石头 | 旧石器时代分析，样本 4506 | 2010-11-26T23:00:00.000Z |
 
 **图 5–3。** 显示同步任务的桌面应用程序
@@ -3586,23 +3515,23 @@ td {
 
 ## 在云端部署你的应用程序
 
-好了，现在是时候上线了，让全世界都能使用你的移动应用程序。但首先，你需要一个 Google 账户（或 Gmail 账户）。一旦你拥有它，就可以通过登录访问 Google App Engine：https://appengine.google.com。从那里，你可以创建一个新应用程序，并选择一个应用程序标识符（这将是访问你应用的 URL）以及一个标题。在上传我们的应用程序之前，你必须确保应用程序标识符与本地应用程序中定义的相匹配。要做到这一点，打开 `war/web-ipping-web.xml` 文件并检查这一行：
+好了，现在是时候上线了，让全世界都能使用你的移动应用程序。但首先，你需要一个 Google 账户（或 Gmail 账户）。一旦你拥有它，就可以通过登录访问 Google App Engine：https://appengine.google.com。从那里，你可以创建一个新应用程序，并选择一个应用程序标识符（这将是访问你应用的 URL）以及一个标题。在上传我们的应用程序之前，你必须确保应用程标识符与本地应用程序中定义的相匹配。要做到这一点，打开 `war/web-ipping-web.xml` 文件并检查这一行：
 
 `<application>jsonengine</application>`
 
 将 `jsonengine` 替换为你之前刚刚选择的应用程序 ID。现在你已经准备好部署你的应用程序了——进入你的 Google App Engine SDK 文件夹并输入以下命令（在 Windows 上）：
 
 ```bash
-appcfg.cmd update location/to/you/war/folder
+appcmd.cmd update location/to/you/war/folder
 ```
 
 在 Mac 和 Linux 上，输入以下命令：
 
 ```bash
-appcfg.sh update location/to/you/war/folder
+appcmd.sh update location/to/you/war/folder
 ```
 
-在提示处输入你的 Google 用户名和密码。如果上传过程成功，你会看到“Update completed successfully。”就这样！我们的应用程序已经在云端了——导航到你的页面：http://my-app-id.appspot.com/snippets/05/todolist-readonly.html。
+在提示处输入你的 Google 用户名和密码。如果上传过程成功，你会看到“Update completed successfully.”就这样！我们的应用程序已经在云端了——导航到你的页面：http://my-app-id.appspot.com/snippets/05/todolist-readonly.html。
 
 ## 总结
 
@@ -3635,10 +3564,6 @@ appcfg.sh update location/to/you/war/folder
 ### 添加简单的加载动画
 
 （注：由于原文文本中存在部分段落重复，此处译文已根据逻辑进行了整合，确保不重复输出。）
-
-
-
-
 
 ```html
 <div id="spinner">
@@ -3718,7 +3643,7 @@ $(document).ready(function() {
 });
 ```
 
-确保你的应用程序中有足够的任务并浏览到“所有任务”视图，如图 6–2 所示；你应该能够滚动任务而标题栏随之移动。
+确保你的应用程序中有足够的任务并浏览到“所有任务”视视图，如图 6–2 所示；你应该能够滚动任务而标题栏随之移动。
 
 ![](img/6c8091bf3a3d21ca91f25f8caed8840f_128_0.png) 图2. 带有固定头部和页脚的可滚动 div
 
@@ -3798,20 +3723,31 @@ function showMap(position) {
 ### 表 6–1. Position 对象
 
 | 属性名 | 类型 |
+
 |---|---|
+
 | coords | Coordinates |
+
 | timestamp | DOMTimestamp |
 
 ### 表 6–2. Coordinates 对象
 
 | 属性名 | 类型 |
+
 | --- | --- |
+
 | longitude | double |
+
 | latitude | double |
+
 | altitude | double |
+
 | accuracy | double |
+
 | altitudeAccuracy | double |
+
 | heading | double |
+
 | speed | double |
 
 这看起来似乎有很多信息，但目前我们真正感兴趣的是两个属性：经度和纬度，这足够确定地理位置并最终将其显示在地图上。所以，`position.coords.longitude` 和 `position.coords.latitude` 是我们想要处理的属性。
@@ -3847,8 +3783,6 @@ $(document).ready(function() {
 }
 ```
 
-
-
 ```css
 background: -webkit-gradient(linear, left top, left bottom, color-stop(0.0, #71d90f), color-stop(0.7, #539e08);
 -webkit-border-radius: 4px;
@@ -3870,6 +3804,8 @@ display: none;
 // 为应用程序打开/创建一个数据库（预期大小 ~ 100K）
 var db = null;
 ```
+
+
 
 ```javascript
 try {
@@ -3978,11 +3914,17 @@ saveTask: function(task, callback) {
 通过添加这些参数，我们需要在根目录下创建一个名为 `cache.manifest` 的空文件，它以 `CACHE MANIFEST` 开始。下一步是列出我们想要缓存的所有资源：
 
 - snippets/06/html
+
 - snippets/06/css
+
 - snippets/06/todolist.css
+
 - js/jquery-1.4.min.js
+
 - js/jquery.validate.js
+
 - js/prowebapps.js
+
 - snippets/06/iscroll.js
 
 这些是运行清单所需的资源：
@@ -4049,9 +3991,6 @@ online.png offline.png
 
 我们说 `online.png` 永远不会被缓存；然而，如果我们没有连接，我们就提供由 `FALLBACK` 关键字定义的备用文件 `offline.png`。我们说 `online.png` 永远不会被缓存；然而，如果我们没有连接，我们就提供一个备用文件 `offline.png`，由 `FALLBACK` 关键字定义。
 
-
-
-
 刷新你的应用程序，你应该能看到类似于图 6–6 的内容。
 
 ![](img/6c8091bf3a3d21ca91f25f8caed8840f_137_0.png)
@@ -4111,13 +4050,16 @@ $.ajax({
 在本章中，我们将稍微暂停构建完整的移动 Web 应用，通过触摸事件和 HTML5 canvas 探索交互性。在整个章节中，我们将查看：
 
 - 触摸事件以及它们与桌面浏览器鼠标事件的相似与不同之处
+
 - HTML5 canvas 绘制和动画，包括在使用 canvas 和动画时的一些简单最佳实践
+
 - 一些更高级的动画技术，例如如何通过各种技术产生更真实的动画
+
 - 在 Android 上使用 canvas 需要注意的一些当前问题，包括不同 Android OS 版本之间 canvas 行为的差异
 
 ## HTML5 Canvas 简介
 
-HTML5 canvas 是你构建通用 Web 应用程序工具中非常酷的补充。canvas 元素为开发者提供了一种将自定义绘制区域集成到 HTML 布局中的方法。这特别有用，并让开发者能够在其页面实现更多事情，无论是添加一些交互性还是显示图表。
+HTML5 canvas 是你构建通用 Web 应用程序工具中非常酷的补充。canvas 元素为开发者提供了一种将自定绘制区域集成到 HTML 布局中的方法。这特别有用，并让开发者能够在其页面实现更多事情，无论是添加一些交互性还是显示图表。
 
 虽然并不是所有浏览器都支持 canvas 标签，但 Android 的 WebKit 浏览器支持。这让我们有机会在应用程序中探索它，并可能纯使用 Web 技术为 Android 编写简单的游戏。虽然 Flash (www.adobe.com) 有局限，但 canvas 提供了一个强大的替代方案。
 
@@ -4171,9 +4113,6 @@ $(document).ready(function() {
   window.scrollTo(0, 0);
 });
 ```
-
-
-
 
 ## 在画布上进行交互式绘制
 
@@ -4252,11 +4191,14 @@ document.body.addEventListener("mouseup", function(evt) {
 
 在过渡到使用触摸事件之前，让我们先查看事件命名规范，如表 7–1 所示。
 
-**表 7–1。** 触摸事件如何与相应的鼠标事件对应
+**表 7–1。** 触摸事件如何与相应的鼠事件对应
 
 | 交互样式 | 开始事件 | “继续”事件 | 结束事件 |
+
 |---|---|---|---|
+
 | 鼠标 | mousedown | mouseover | mouseup |
+
 | 触摸 | touchdown | touchmove | touchup |
 
 这些函数的命名为我们理解处理触摸事件和鼠标事件之间的区别提供了线索。鼠标和触摸事件都有“按下（down）”和“释放（up）”事件，分别表示交互的开始和结束。
@@ -4316,7 +4258,7 @@ document.body.addEventListener("touchend", function(evt) {
 
 要测试此代码，请使用兼容 HTML5 的桌面浏览器运行它。如前面的章节所述，Chrome 是一个很好的选择，因为它基于 WebKit 并且具有一些非常出色的工具支持。图 7–2 显示了鼠标交互后的示例绘图。
 
-> 注意：你可能觉得奇怪，为什么在这一本关于移动开发的开发书中，我们却要在桌面浏览器中运行代码。嗯，在先前的示例中，我们处理的是鼠标事件，因此需要桌面浏览器。此外，随着你开始更多地从事移动 Web 应用开发，你会发现桌面浏览器是你开发过程中的重要组成部分。在此阶段，移动浏览器上几乎没有开发工具支持，因此不要忘记将你的桌面级 WebKit 浏览器作为你开发工具集的重要组成部分。
+> 注意：你可能觉得奇怪，为什么在这一本关于移动开发的开发书中，我们却要在桌面浏览器中运行代码。嗯，在先前的示例中，我们处理的是鼠标事件，因此需要桌面浏览器。此外，随着你开始更多地从事移动 Web 应用开发，你会发现桌面浏览器是你开发过程中的重要组成部分。在此阶段，移动浏览器上几乎没有开发工支持，因此不要忘记将你的桌面级 WebKit 浏览器作为你开发工具集的重要组成部分。
 
 ![](img/6c8091bf3a3d21ca91f25f8caed8840f_147_0.png)
 
@@ -4346,10 +4288,6 @@ function() {
 
   function resetCanvas() {
 ```
-
-
-
-
 
 # 第 7 章：探索交互性
 
@@ -4391,7 +4329,7 @@ animate();
 
 - 1. 保存画布上下文。保存画布上下文会保存有关当前画布状态的信息，这些信息是可以恢复的。当你编写想要与其他绘图代码集的代码时，这一点尤为重要。如果不保存和恢复画布状态，很有可能会影响正在进行类似更改的其他绘图代码。
 
-- 2. 清除背景。绘制动画帧的第一步通常涉及清除上一帧绘制的内容。然而，随着你对在画布上绘图越来越熟悉，你可能想要限制这样做，以挤榨动画的性能。但对于我们在这里所做的，清除背景是理想的。
+- 2. 清除背景。绘制动画帧的第一步通常涉及清除上一帧绘制的内容。然而，随着你对在画布上绘图越来�熟悉，你可能想要限制这样做，以挤榨动画的性能。但对于我们在这里所做的，清除背景是理想的。
 
 - 3. 调整画布参数。在向画布绘图之前，你可能想要更改描边（stroke）、样式（style）以及颜色。
 
@@ -4426,7 +4364,7 @@ while (ii < drops.length) {
   context.arc(drops[ii].x, drops[ii].y, drops[ii].size, 0, 2 * Math.PI);
   context.stroke();
 
-  // 增加水滴的大小
+  // 增加水滴的大 size
   drops[ii].size += 2;
 
   // 如果水滴超过其最大大小，将其移除
@@ -4458,10 +4396,6 @@ finally {
 内部块中的第一个调用是调用 `context.clearRect` 来清除画布背景。这涵盖了我们流程中的第 2 步，但正如之前提到的，在某些情况下你可能想要移除它以优化性能。
 
 我们现在移动到第 3 步，即调整用于显示的画布参数。在我们的示例中，我们正在调整 `strokeStyle` 和 `lineWidth` 参数。
-
-
-
-
 
 # 第 7 章：探索交互性
 
@@ -4661,10 +4595,6 @@ var module = {
     };
 ```
 
-
-
-
-
 ```javascript
 }
 );
@@ -4676,11 +4606,14 @@ nreturn module;
 }}();
 ```
 
-在前面的代码中，我们添加了 Penner 作品中提供的许多缓动函数中的两个。每个缓动函数都接受四个参数：
+在前面的代件中，我们添加了 Penner 作品中提供的许多缓动函数中的两个。每个缓动函数都接受四个参数：
 
 - t: 动画的已过时间
+
 - b: 起始值，或者我们正在平滑处理的值
+
 - c: 变化值，或者结束值与起始值之间的差
+
 - d: 动画的持续时间
 
 例如，以下代码将告诉我们，如果我们从 0 平滑到 500，在 600 毫秒处，进行一个持续 2 秒的动画，该值应该是多少：
@@ -4789,7 +4722,7 @@ document.body.addEventListener("touchstart", function(evt) {
 
 > 注意：Penner 的大多数缓动方程有三种变体：In、Out 和 InOut。In 变体会在动画开始时应用缓动，对于我们的汽车来说，这意味着它将从慢开始加速。缓动意味着当动画接近其最终值时，值将应用缓动效果，这正是我们汽车想要的——让它减速到停止。InOut 缓动函数在动画的开始和结束都应用缓动。我们建议尝试不同的变体，以感受它们是如何工作的。
 
-##向 PROWEBAPPS 中添加额外的缓动函数
+##向 PROWEBAPPS 中添加额的缓动函数
 
 Penner 的大多数缓动方程有三种变体：In、Out 和 InOut。In 变体会在动画开始时应用缓动，对于我们的汽车来说，这意味着它将从慢开始加速。缓动意味着当动画接近其最终值时，值将应用缓动效果，这正是我们汽车想要的——让它减速到停止。InOut 缓动函数在动画的开始和结束都应用缓动。我们建议尝试不同的变体，以感受它们是如何工作的。
 
@@ -4798,13 +4731,10 @@ Penner 的大多数缓动方程有三种变体：In、Out 和 InOut。In 变体�
 用极少的代码实现惊人的效果：
 
 - translate：`translate` 方法将画布的原点移动到指定位置。
+
 - rotate：`rotate` 方法绕原点旋转画布。
 
 > 注意：一旦开始进行变换，你就不需要跟踪所做的各种变换。这就是为什么我们建议养成使用画布 `save` 和 `restore` 方法的方法，因为它们可以避免你手动撤销状态更改。
-
-
-
-
 
 ![](img/6c8091bf3a3d21ca91f25f8caed8840f_166_0.png)
 
@@ -4813,13 +4743,17 @@ Penner 的大多数缓动方程有三种变体：In、Out 和 InOut。In 变体�
 我们来快速浏览一下这个 `animate` 函数实现的代码：
 
 - 1. 在清空画布后，调用了 `translate` 方法，并将画布的原点设置为画布的中心。
+
 - 2. 接着调用 `rotate` 方法，传递应该应用的旋转角度（弧度为单位）。
+
 - 3. 接下来，指定了画布的 `fillStyle`，并调用 `fillRect` 方法在画布中心绘制一个实红色正方形。
+
 - 4. 随后增加了 `angle` 变量的值，以便下次绘制正方形时使用。
 
 在画布上进行变换操作时，记住以下几点非常重要：
 
 - `translate` 方法会移动画布的原点，这意味着随后的所有变换操作和任何绘制操作现在都相对于你平移后的点。
+
 - 在执行变换之前调用 `context.save()`，并在之后使用 `context.restore()`，将有助于使变换变得易管理。虽然并不总是适用，但在变换操作后将原点移回固定点将使你的绘制代码更容易于管理和跟踪。
 
 ## 变换与我们的汽车动画
@@ -4963,6 +4897,7 @@ setInterval(animate, 20);
 在画布上进行变换操作时，记住以下几点非常重要：
 
 - `translate` 方法会移动画布的原点，这意味着随后的所有变换操作和任何绘制操作现在都相对于你平移后的点。
+
 - 在执行变换之前调用 `context.save()`，并在之后使用 `context.restore()`，将有助于使变换变得易管理。虽然并不总是适用，但在变换操作后将原点移回固定点将使你的绘制代码更容易于管理和跟踪。
 
 # 第7章：探索交互性
@@ -4975,10 +4910,6 @@ setInterval(animate, 20);
 
 在书结束之前我们还会再次处理画布，但在下一章中，我们将开始探索移动地图和基于位置的服务。有很多内容需要学习，但学习过程将会非常有趣。
 
-
-
-
-
 # 第 8 章
 
 ## 基于位置的服务与移动地图
@@ -4989,7 +4920,7 @@ setInterval(animate, 20);
 
 ## 基于位置的服务
 
-“基于位置的服务”（location-based service）一词通常用于定义一种根据地理位置提供数据的信息服务（更多信息请参见 http://en.wikipedia.org/wiki/location-based_service）。基于位置的服务最近越来越流行，随着更多的消费者获得具有位置感知移动设备，这种服务将继续保持增长。
+“基于位置的服务”（location-based service）一词通常用于定义一种根据地理位置提供数据的信息服务（更多信息请参见 http://en.wikipedia.org/wiki/location-based_service）。基于位置的服务最近越来�流行，随着更多的消费者获得具有位置感知移动设备，这种服务将继续保持增长。
 
 使用基于位置的服务的一个极佳示例是搜索距离当前位置的 ATM（自动取款机）。图 8–1 显示了 Android 上原生 Google Maps 应用显示此类信息的示例。
 
@@ -5077,14 +5008,12 @@ setInterval(animate, 20);
 前面的代码示例演示了获取一个简单地图需要多少 JavaScript 代码。本质上，这是一个三步骤的过程：
 
 - 在你的 Web 应用中包含 Google Maps API。所需的脚本位于 https://maps.googleapis.com/maps/api/js，并接受一个 sensor 参数。在示例中，我们为 sensor 参数传递了 false 值，但如果我们像在第 6 章那样使用 Geolocation API 检测了用户的位置，我们就会将此值传递为 true。
+
 - 定义一个初始化地图的函数。其主要目的是创建一个 google.maps.Map 类的实例。构造函数接受两个参数：第一个是创建后将包含地图的 div；第二个是影响地图初始化的选项对象。
+
 - 最后，将函数（initMap）挂钩到文档 body 的 onload 事件上。
 
 一旦完成所有这些（结合我们的标准样板模板），将显示类似于图 8–4 的屏幕。
-
-
-
-
 
 ## Tile5: 一种替代性的 HTML5 地图 API
 
@@ -5145,7 +5074,9 @@ function initMap() {
 此示例的实现与之前的 Google Maps 示例非常相似：
 
 1. 从 Tile5 网站引入了 Tile5 库文件。包含了核心 `tile5.js` 库，它提供了地图绘制的通用功能。我们还引入了两个额外文件 `tile5.osm.js` 和 `tile5.cloudmade.js`，它们提供了与 CloudMade 以及其他基于 OpenStreetMap 服务通信所需的代码。
+
 2. 定义了一个函数来初始化地图。在 Tile5 中，这涉及创建一个 `T5.Map` 实例，并告知它将要附加的 HTML5 元素，同时告知将用于提供地图瓦片的提供者。一旦创建了地图实例，就会调用 `gotoPosition` 方法，指示 Tile5 在特定的纬度和经度按缩放级别绘制地图。
+
 3. 正如 Google 示例所示，在响应 `body onload` 事件时调用了 `initMap` 函数。
 
 这生成了如图 8–5 所示的屏幕。
@@ -5155,7 +5086,9 @@ function initMap() {
 此示例的实现与之前的 Google Maps 示例非常相似：
 
 1. 从 Tile5 网站引入了 Tile5 库文件。包含了核心 `tile5.js` 库，它提供了地图绘制的通用功能。我们还引入了两个额外文件 `tile5.osm.js` 和 `tile5.cloudmade.js`，它们提供了与 CloudMade 以及其他基于 OpenStreetMap 服务通信所需的代码。
+
 2. 定义了一个函数来初始化地图。在 Tile5 中，这涉及创建一个 `T5.Map` 实例，并告知它将要附加的 HTML5 元素，同时告知将用于提供地图瓦片的提供者。一旦创建了地图实例，就会调用 `gotoPosition` 方法，指示 Tile5 在特定的纬度和经度按缩放级别绘制地图。
+
 3. 正如 Google 示例所示，在响应 `body onload` 事件时调用了 `initMap` 函数。
 
 这生成了如图 8–5 所示的屏幕。
@@ -5164,10 +5097,6 @@ function initMap() {
 
 如果你具有构建集成 Google Maps 的桌面应用程序和网站的经验，那么你可能已经在考虑如何为标记显示信息窗口了。虽然这样做非常简单，但对于移动地图来说通常并不合适，如图 8–7 所示。
 
-
-
-
-
 ## 第 8 章：基于位置的服务与移动地图
 
 ![](img/6c8091bf3a3d21ca91f25f8caed8840f_183_0.png)
@@ -5175,6 +5104,8 @@ function initMap() {
 **图 8-7。** 虽然这种方式对于桌面端地图应用非常好用，但信息窗口（info window）并不适用于移动网页。
 
 虽然不是必须的，但如果你想亲自查看结果，这里是与图 8-7 所示截图对应的代码：
+
+
 
 ```javascript
 function initMap() {
@@ -5217,7 +5148,9 @@ function initMap() {
 讨论如何不显示标记详情固然很好，但显然这对于构建一个包含移动地图的移动网页应用没有帮助。因此，让我们来看一些替代方案：
 
 - 我们可以在用户点击该标记时，立即将用户带到该标记的详情页。
+
 - 我们可以尝试创建一个较小的自定义信息窗口，它占用屏幕空间且不需要“关闭”按钮——当点击另一个大钉时，窗口会自动关闭。
+
 - 我们可以重新设计界面，在显示器的顶部或底部显示标记详情，并可能提供一个“更多详情”按钮，将用户带到标记的完整详情页。
 
 考虑到这些选项，第三种可能是最好的，因此我们将采用该方案，并看看可以做什么来重构界面，为继续构建我们的应用程序奠定基础。
@@ -5237,10 +5170,15 @@ function initMap() {
 界面有六个主要组件：
 
 - 1. 应用程序标题栏。我们对此应用恢复了简单样式，因为它更适合全屏地图配合，而且我们真的不想在如此有限的屏幕空间上浪费像素。
+
 - 2. 当前选中的标记标题。此栏在点击标记时显示，并显示被点击标记的标题。激活标记显示在元素 4 中。根据应用程序的不同，实际标记可以用于带用户进入所选标记的详细信息页。在这种情况下，标题应该带有下划线，以指示它也是一个链接。
+
 - 3. 标记切换选择控件。包含这些导航控件是为了提供一种在标记之间导航的替代机制。与其需要逐个点击标记，可以使用导航控件在标记之间移动并更改激活标记的选择。
+
 - 4. 激活标记。这是最近被点击的或通过导航控件导航到的标记。
+
 - 5. 非激活标记。非激活标记显示为灰色，而激活标记显示为蓝色。
+
 - 6. 缩放控件。由 Google Maps Android API 提供，目前 Android 的 Web 浏览器尚不支持多点触摸事件。如果你在 iPhone 上加载显示，缩放控件将不会显示；然而，具有类似单触摸限制的其他设备很可能会显示这些控件。
 
 我们不需要进行任何工作即可让这些缩放控件显示，但重要的是记住它们显示在地图的底部，屏幕的这部分已经被考虑在内。
@@ -5306,10 +5244,6 @@ window.onload = initMap;
 </body>
 </html>
 ```
-
-
-
-
 
 3. 我们为 `#marker-nav` 元素应用了一些外观样式。再次，我们使用了绝对定位来确保导航栏与占据整个屏幕的 Google 地图良好配合。请注意在 `width`、`padding` 和 `margin` 的 CSS 规则中使用了百分比定位。在此处使用百分比可以最大限度地确保我们的地图模板能够在不同尺寸的屏幕上运行。
 
@@ -5379,103 +5313,172 @@ MAPAPP =
 
 # 在样板代码中实现 UI 导航
 
-按照要求布局界面后，我们现在将完善应用程序界面的其他部分。首先，我们将对 HTML 进行一些简单的修改，包含一个子 `div`，这将赋予我们选择标记、标记标题以及关于该标记更多信息的能力。
+按照要求布局界面后，我们现在将完善应用程界面的其他部分。首先，我们将对 HTML 进行一些简单的修改，包含一个子 `div`，这将赋予我们选择标记、标记标题以及关于该标记更多信息的能力。
 
 `mapp.html` 的修改如下：
 
 ```html
+
 <!DOCTYPE html>
+
 <body>
+
   <div id="marker-nav">
+
     <img src="../img/navigation-arrow.png" class="left disabled" />
+
     <span class="marker-title">Text</span>
+
     <img src="../img/navigation-arrow.png" class="right" />
+
   </div>
+
   <div id="marker-detail" class="child-screen">
+
     <div class="content">Some Text</div>
+
     <button class="close">Close</button>
+
   </div>
+
 </body>
+
 </html>
+
 ```
 
 `marker-div` 被添加在 `body` 标签之前，在我们之前创建的 `marker-nav` `div` 之后。对 HTML 进行这些更改会破坏地图显示，因此需要额外的 CSS 规则来让一切恢复正常显示。将以下 CSS 添加到 `mapp.css` 文件的末尾：
 
 ```css
+
 div.child-screen {
+
   background: rgba(255, 255, 255, 0.75);
+
   width: 100%;
+
   height: 100%;
+
   left: 0px;
+
   position: absolute;
+
   z-index: 91;
+
 }
 
 div.child-screen .content {
+
   margin: 50px 10px 0;
+
 }
 
 div.child-screen button.close {
+
   height: 30px;
+
   position: absolute;
+
   bottom: 10px;
+
   left: 10px;
+
   right: 10px;
+
   display: block;
+
 }
+
 ```
 
 注意，CSS 规则规定类为 `child-screen` 的 `div` 将以绝对定位显示，并且高度和宽度为 100%。这意味着这些 `div` 元素像地图一样，显示时将占据整个屏幕。在 HTML 首次渲染时阻止这种屏幕显示的是 100% 的绝对位置（如**加粗**处所示）。它与 `overflow: hidden` CSS 配合工作。当显示 HTML 时，类为 `child-screen` 的 `div` 将以绝对定位显示，并且高度和宽度为 100%。这意味着这些 `div` 元素像地图一样，显示时将占据整个屏幕。在 HTML 首次渲染时阻止这种屏幕显示的是 100% 的绝对位置（如**加粗**处所示）。它与 `overflow: hidden` CSS 配合工作。当我们需要显示时，类为 `child-screen` 的 `div` 将以绝对定位显示。我们需要隐藏的 `div` 将与 `overflow: hidden` CSS 配合工作。为了让显示，我们需要以下 JavaScript。整合早期的 JavaScript Google Maps 逻辑如下。整合早期的 JavaScript Google Maps 逻辑如下：
 
 ```javascript
+
 MAPAPP =
+
 (function() {
+
   // initialize constants
+
   var DEFAULT_ZOOM = 8;
 
   // initialize variables
+
   var map = null,
+
   markers = [];
 
   function addMarker(position, title, content) {
+
     // create a new marker and display it on the map
+
     var marker = new google.maps.Marker({
+
       position: position,
+
       map: map,
+
       title: title
+
     });
 
     // add the marker to the array of markers
+
     markers.push(marker);
 
     // capture touch click events for the created marker
+
     google.maps.event.addListener(marker, 'click', function() {
+
       // update the navbar title using jQuery
+
       $('#marker-nav .marker-title').html(marker.getTitle());
+
     });
+
   } // addMarker
 
   var module = {
+
     addMarker: addMarker,
 
     init: function(zoom, zoomLevel) {
+
       // define the required options
+
       var myOptions = {
+
         zoom: zoomLevel ? zoomLevel : DEFAULT_ZOOM,
+
         center: position,
+
         mapTypeControl: false,
+
         streetControl: false,
+
         TypeId: google.maps.TypeId.ROADMAP
+
       };
+
       // initialize the map
+
       map = new google.maps.Map(
+
         document.getElementById("map_canvas"),
+
         myOptions
+
       );
+
       return module;
+
     }
+
   };
+
 })();
+
 ```
 
 （注：由于原文中存在大量重复的段落和混乱的结构，翻译已根据“不要重复输出原文”的原则，对逻辑内容进行了去重和整合翻译。）
@@ -5499,14 +5502,23 @@ MAPAPP =
 这将需要你在测试样板 HTML 代码 (mapapp.html) 中添加几个额外的标记以确保功能正常工作，所以让我们来这样做吧。将页面中 `initialize` 函数的内容替换为以下脚本：
 
 ```
+
 function initialize() {
+
   var latlng = new google.maps.LatLng(-33.866, 151.209);
+
   MAPAPP.init(latlng, 13);
+
   MAPAPP.addMarker(latlng, 'Sydney', 'Sydney Australia');
+
   MAPAPP.addMarker(new google.maps.LatLng(-33.859, 151.209), 'The Rocks');
+
   MAPAPP.addMarker(new google.maps.LatLng(-33.857, 151.215), 'Sydney Opera House');
+
   MAPAPP.addMarker(new google.maps.LatLng(-33.865, 151.211), 'Circular Quay');
+
 }
+
 ```
 
 这将向显示中添加总共四个标记。在没有任何额外代码的情况下，这将创建一个与图 8–11 所示类似的显示。
@@ -5517,37 +5529,58 @@ function initialize() {
 
 现在是时候为标记实现一些图标，而不是使用默认指示器。这将允许我们使用两个独立的图标，并指示用户哪一个是当前选中的标记。两个标记图像文件为 `active.png` 和 `pin-inactive.png`，可以从 GitHub  `prowebapps-code` 仓库（http://github.com/sidelab/prowebapps-code）的 `img` 目录下载。
 
-以下代码显示了为了启用自定义图标所需的 `addMarker` 和 `activateMarker` 函数修改。当添加第一个标记时，该标记将被自动激活。
+以下代码显示了为了启用自定图标所需的 `addMarker` 和 `activateMarker` 函数修改。当添加第一个标记时，该标记将被自动激活。
 
 ```
+
 function activateMarker(marker, content) {
+
   // 遍历标记并设置为激活图像
+
   for (var i = 0; i < markers.length; i++) {
+
     markers[i].setIcon('../../img/pin-inactive.png');
+
   }
+
   // for
 
   // 更新指定标记的图标为激活图像
+
   marker.setIcon('../../img/pin-active.png');
+
 }
 
 function addMarker(position, title, content) {
+
   // 创建新标记并在地图上显示它
+
   var marker = new google.maps.Marker({
+
     position: position,
+
     map: map,
+
     title: title,
+
     icon: '../../img/pin-inactive.png'
+
   });
 
   // 将标记添加到标记数组中
+
   markers.push(marker);
 
   // 如果是第一个标记，自动激活
+
   if (markers.length == 1) {
+
     activateMarker(marker, content);
+
   }
+
 }
+
 ```
 
 完成上述代码修改后，现在可以区分当前选中的标记和非激活标记了。我们现在可以在下一节中实现通过标记之间进行导航。地图显示应该如图 8–12 所示。
@@ -5565,14 +5598,23 @@ function addMarker(position, title, content) {
 接下来的部分内容并不多，因为这只是在标记数组中跟踪激活标记的位置并相应地更新导航控制。为了做到这一点，我们首先需要一个工具函数来告诉我们标记在标记数组中的位置。以下代码获取了一个 `MarkerIndex` 函数，它应该包含在 `map.js` 代码中 `init` 函数之前。
 
 ```
+
 function getMarkerIndex(marker) {
+
   for (var ii = 0; ii < markers.length; ii++) {
+
     if (markers[ii] === marker) {
+
       return ii;
+
     }
+
   }
+
   return -1;
+
 }
+
 ```
 
 
@@ -5588,27 +5630,39 @@ function getMarkerIndex(marker) {
 `sort` 函数完成后，我们只需要修改 `MAPAPP.updateDisplay` 函数来整合排序逻辑：
 
 ```javascript
+
 MAPAPP = (function() {
 
 var module = {
 
   updateDisplay: function() {
+
     // 获取第一个标记
+
     var firstMarker = markers.length > 0 ? markers[0] : null;
 
     // 对标记进行排序
+
     sortMarkers();
 
     // 如果列表中至少有一个标记，
+
     // 初始化第一个标记
+
     if (firstMarker) {
+
       activateMarker(firstMarker);
+
     } // 如果
+
   }
+
 };
 
   return module;
+
 })();
+
 ```
 
 本质上，该函数被修改为保存数组中的第一个标记（因为假设这是最重要的标记，并且可能应该是第一个选中的），然后对其进行排序。如果保存了初始标记，则激活该标记。图 8–14 显示了实现排序代码和修改后的 `MAPAPP.updateDisplay` 函数后的显示结果。
@@ -5686,7 +5740,7 @@ PhoneGap 只是许多桥接框架之一。虽然*桥接框架*（bridging framew
 
 虽然我们不会详细介绍 Sample 目录中的所有文件和文件夹，因为大部分与原生封装器应用（wrapper application）有关，但有些部分值得进一步解释：
 
-- AndroidManifest.xml：此文件被原生 Android 应用以多种方式使用，指定了应用程序所需的设备权限类型以及运行应用程序使用的类。
+- AndroidManifest.xml：此文件被原生 Android 应用以多种方式使用，指定了应用程所需的设备权限类型以及运行应用程序使用的类。
 
 - assets/www/：此目录包含在 PhoneGap 原生封装器 WebView 中的的 HTML、CSS 和 JavaScript 文件（更多信息请参阅 `http://developer.android.com/reference/android/webkit/WebView.html`）。请特别注意这里的 `phonegap.js` 文件。你的网页需要包含此文件才能访问 Gap 的桥接功能（bridging）。我们很快会详细介绍这一点。
 
@@ -5719,7 +5773,9 @@ PhoneGap 只是许多桥接框架之一。虽然*桥接框架*（bridging framew
 只需在命令行中运行以下命令，并将复制的示例目录作为当前目录：
 
 ```
+
 android update project -p ./
+
 ```
 
 这会为项目创建一个 `local.properties` 文件，其中包含一个单一属性 `sdk.dir`。它告诉 Ant 在哪里可以找到 Android SDK，从而找到构建示例应用所需的构建工具。
@@ -5731,30 +5787,55 @@ android update project -p ./
 ![](img/6c8091bf3a3d21ca91f25f8caed8840f_210_0.png)
 
 ```bash
+
 damacisample damed ant
+
 BuildFile:/Volumes/development/projects/books-pwebapps-code/bridges/build.xml
+
 [setup] Android SDK Tools Revision 5
+
 [setup] Project Target: Google APIs
+
 [setup] Vendor: Google Inc.
+
 [setup] Platform Version: 2.2
+
 [setup] API level: 8
+
 [setup]
+
 [setup]
+
 [setup] Resolving library dependencies:
+
 [setup]
+
 [setup] Ordered libraries:
+
 [setup] WARNING: Attribute minSdkVersion in AndroidManifest.xml (2) is lower than the project ta get API level (0)
+
 [setup] Importing rules files: tools/ant/ant_r3.xml
+
 [echo] Ant Build targets Available:
+
 [echo] help
+
 [echo] clean: Removes output files created by other.
+
 [echo] compile: Projects/*.java generates files into .class files.
+
 [echo] debug: Builds and signs it with a debug key.
+
 [echo] release: Builds and signs it with a debug key.
+
 [echo] install: Installs the package onto the device.
+
 [echo] uninstall: Uninstalls the application from the device.
+
 BUILD SUCCESSFUL
+
 Total time: 0 seconds damacample
+
 ```
 
 > **图 9-3**。运行 Ant 提供了如何构建的信息。现在 Ant 配置正确，以下内容最值得关注：
@@ -5788,7 +5869,9 @@ emulator 执行文件用于从命令行直接启动 Android 模拟器。通过�
 在命令行中运行以下命令，并将创建的示例目录作为当前目录：
 
 ```
+
 ant debug
+
 ```
 
 这将指示 Ant 执行 `build.xml` 文件中的 debug 和 install 目标。如果构建过程成功完成，你将看到魔术字样“BUILD SUCCESSFUL”（图 9–5），此时你应该能够在模拟器中找到并运行示例 PhoneGap 应用。
@@ -5839,35 +5922,61 @@ http://code.google.com/p/android/issues/detail?id=12987。
 PhoneGap 示例应用程序中用于监控加速度计的代码在此所示：
 
 ```javascript
+
 var accelerationWatch = false;
 
 var toggleAccel = function() {
+
   if (accelerationWatch) {
+
     navigator.accelerometer.clearWatch(accelerationWatch);
+
     updateAcceleration({
+
       x: "",
+
       y: "",
+
       z: ""
+
     });
+
     accelerationWatch = false;
+
   } else {
+
     accelerationWatch = true;
+
     var options = new Object();
+
     options.frequency = 1000;
+
     accelerationWatch = navigator.accelerometer.watchAcceleration(
+
       updateAcceleration, function(ex) {
+
         navigator.accelerometer.clearWatch(accel_watch_id);
+
         alert("acc fail " + ex.name + ": " + ex.message + "");
+
       })
+
     );
+
   }
+
 };
 
 function updateAcceleration(a) {
+
   document.getElementById('x').innerHTML = roundNumber(a.x);
+
   document.getElementById('y').innerHTML = roundNumber(a.y);
+
   document.getElementById('z').innerHTML = roundNumber(a.z);
+
 }
+
 ```
 
 前面的代码定义了一个函数 `toggleAccel`，它在点击“切换加速度计”按钮（如图 9–7 所示）时调用。如所示，代码相当简单，数据是通过 JavaScript 调用 `accelerometer.watchAcceleration` 方法从加速度计中获取的，该方法已附加到全局 `navigator` 对象上。
@@ -5902,12 +6011,6 @@ function updateAcceleration(a) {
 
 第三个也是最后一个参数指定了可以使用选项。
 
-第一个参数用于成功回调；当从设备获取加速度计读数时调用它。执行执行时，回调函数将接收一个单一对象参数，该对象包含 x,y 和 z 属性值。在示例应用程序中，这些值通过 `updateAcceleration` 函数在显示上更新。
-
-第二个参数用于失败回调，如果 PhoneGap 在尝试获取加速度计数据时收到错误，则触发该回调。
-
-第三个也是最后一个参数指定了可以使用选项。
-
 （注：此处原文存在大量重复描述，已按要求完整翻译）
 
 （文本继续...）
@@ -5917,21 +6020,33 @@ function updateAcceleration(a) {
 PhoneGap 的另一个实用功能是能够从设备获取照片。这可以通过以下代码看到：
 
 ```javascript
+
 function showPic() {
+
   navigator.camera.getPicture(successHandler, failureHandler, {
+
     quality: 50,
+
     destinationType: Camera.DestinationType.DATA_URI,
+
     sourceType: Camera.PictureSourceType.CAMERA
+
   });
+
 }
 
 function successHandler(data) {
+
   document.getElementById('img').src = "data:image/jpeg;base64," + data;
+
 }
 
 function failureHandler(error) {
+
   alert("error: " + error);
+
 }
+
 ```
 
 
@@ -5942,7 +6057,7 @@ function failureHandler(error) {
 
 **注意**：之前，我们提到了使用数据 URL 和文件 URL。通常，HTML 中的图像是从文件或 HTTP URI 字符串加载的——例如，file://resources/test.jpg 和 http://test.com/test.jpg 分别是文件和 HTTP URI 的示例。虽然这些是将图像（或其他资源）加载到 HTML 文档的最常见方式，但它们并不是唯一的方法。
 
-Data URIs 提供了一种引用外部资源的替代方案，并能够能够封装应该的的实际数据。在开发移动 Web 应用程序时，Data URIs 特别有用，因为资源数据可以包含在 CSS 中，或者复制到本地存储中用于缓存。这反过来减少了显示页面所需的远程请求数量，从而极大地提高了移动 Web 应用的速度。
+Data URIs 提供了一种引用外部资源的替代方案，并能够能够封装应该的的实际数据。在开发移动 Web 应用程序时，Data URIs 特别有用，因为资源数据可以包含在 CSS 中，或者复制到本地存储中用于缓存。这反过来减少了显示页面所需的远程请请数量，从而极大地提高了移动 Web 应用的速度。
 
 关于数据 URI 格式的更多信息，Mozilla 开发者中心提供了很好的解释（请参阅 [https://developer.mozilla.org/en/The_data_URL_scheme](https://developer.mozilla.org/en/The_data_URL_scheme)）。
 
@@ -5951,16 +6066,22 @@ Data URIs 提供了一种引用外部资源的替代方案，并能够能够封�
 我们将学习的 PhoneGap 示例项目示例涉及它如何暴露允许你让手机蜂响或振动的函数。这相当简单，而且使其运行起来的代码也非常简洁。让我们来看一下：
 
 ```
+
 var beep = function() {
+
   navigator.notification.beep(2);
+
 }
 
 var vibrate = function() {
+
   navigator.notification.vibrate(0);
+
 }
+
 ```
 
-为简单而感到高兴吧！在前面的代码中，PhoneGap 将一个通知对象挂载到全局 navigator 对象上，并提供了许多方法。我们在这里访问的两个方法是 beep 和 vibrate。
+为简单而感到高兴吧！在前面的代码中，PhoneGap 将一个通知对象挂载到全局 navigator 对象上，并提供了许多方法。我们在这里访问的两个方法是 beep和 vibrate。
 
 beep 方法接受一个参数，指定我们希望手机蜂响的次数。vibrate 方法也接受一个参数；但在这种情况下，我们指定了手机振动的时间（以毫秒计）。虽然这个示例非常简单，但我们不应该低估使用设备执行这些操作的有用性。当结合跟踪用户位置并在后台运行应用程序的能力时，我们可以在应用程序中实现非常实用的功能——特别是如果我们恰好在编写一个地理社交游戏。我们将在下一章开始研究我们的游戏。
 
@@ -5981,7 +6102,9 @@ beep 方法接受一个参数，指定我们希望手机蜂响的次数。vibrat
 首先，我们需要更改构建过程中创建的原生执行文件的名称。这是通过 android 命令行工具完成的——这与我们之前生成 local.properties 文件时类似。在 maptest 目录下运行以下命令：
 
 ```
+
 android update project -n maptest -p /
+
 ```
 
 运行此命令应该产生与图 9-10 显示类似的输出。
@@ -5999,11 +6122,17 @@ android update project -n maptest -p /
 以下是你完成更改后文件的样子，粗体文本突出了更改：
 
 ```
+
 <?xml version="1.0" encoding="utf-8"?>
+
 <resources>
+
   <string name="app_name">MapTest</string>
+
   <string name="go">Snap</string>
+
 </resources>
+
 ```
 
 此时，你应该能够构建并将应用程序安装到模拟器中，并将其显示为“MapTest”而不是“Sample”。所以，让我们现在试一下吧。正如我们之前处理示例应用程序时一样，我们将使用 Ant 来构建并将应用程序安装到模拟器或设备：
@@ -6031,19 +6160,29 @@ ant debug install
 以下是你完成必要的更改后 MapTest.java 文件的示例：
 
 ```
+
 package com.pewebapps.maptest;
 
 import android.app.Activity;
+
 import android.os.Bundle;
+
 import com.phonegap.*;
 
 public class MapTest extends DroidGap {
+
     @Override
+
     public void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
+
         super.loadUrl("file:///android_asset/www/index.html");
+
     }
+
 }
+
 ```
 
 一旦 Java 文件被修改，我们就完成了一半。现在我们只需要更新根目录下的 AndroidManifest.xml 文件以反映我们所做的更改。再次，这涉及到将 com.phonegap.Sample 引用从 Sample 引用改为 MapTest。
@@ -6051,11 +6190,17 @@ public class MapTest extends DroidGap {
 以下是更改后 AndroidManifest.xml 文件的示例。修改过的部分已加粗：
 
 ```
+
 <?xml version="1.0" encoding="utf-8"?>
+
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+
     package="com.pewebapps.maptest" android:versionName="1.1"
+
     android:versionCode="1">
+
     <supports-screens
+
 ```
 
 
@@ -6063,43 +6208,77 @@ public class MapTest extends DroidGap {
 
 
 ```xml
+
 android:largeScreens="true"
+
 android:normalScreens="true"
+
 android:smallScreens="true"
+
 android:resizable="true"
+
 android:anyDensity="true"
+
 ```
 
 ```xml
+
 <uses-permission android:name="android.permission.CAMERA" />
+
 <uses-permission android:name="android.permission.VIBRATE" />
+
 <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
 <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
 <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+
 <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
 <uses-permission android:name="android.permission.INTERNET" />
+
 <uses-permission android:name="android.permission.RECEIVE_SMS" />
+
 <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
 <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+
 <uses-permission android:name="android.permission.READ_CONTACTS" />
+
 <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+
 <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
 <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
 ```
 
 ```xml
+
 <application android:icon="@drawable/icon" android:label="@string/app_name">
+
   <activity android:name=".MapTest" android:debugable="true"
+
     android:label="@string/app_name"
+
     android:configChanges="orientation|keyboardhidden">
+
     <intent-filter>
+
       <action android:name="android.intent.action.MAIN" />
+
       <category android:name="android.intent.category.LAUNCHER" />
+
     </intent-filter>
+
   </activity>
+
 </application>
+
 <uses-sdk android:minSdkVersion="2" />
+
 </manifest>
+
 ```
 
 这些就足够了。确保你已经修正了任何拼写错误，重新构建应用程序并尝试在模拟器中运行。如果你在此过程某个环节出现了错误，将显示类似图 9–12 的屏幕。
@@ -6123,7 +6302,7 @@ android:anyDensity="true"
 在这里，我们将逐步完成嵌入应用程序的过程：
 
 - 1. 将 mapapp.html、mapapp.css 和 mapapp.js 文件从 snippets 目录复制到新 MapTest 项目的 assets/www 文件夹。
-- 2. 将包含 mapapp.html 文件的整个 img 目录复制到 assets/www 文件夹。这将导致四张图片存储在 assets/www/img 目录。
+- 2. 将包含 mapapp.html 文件的整个 img 目录复到 assets/www 文件夹。这将导致四张图片存储在 assets/www/img 目录。
 - 3. 将 jquery-1.4.js 复制到 assets/www 文件夹。
 - 4. 删除 assets/www 文件夹中的 index.html 和 index.css。
 - 5. 将 mapapp.html 重命名为 index.html
@@ -6150,7 +6329,9 @@ android:anyDensity="true"
 如果你得到了不同的结果且地图没有按预期显示，请尝试运行以下命令并查找可能的 JavaScript 错误：
 
 ```
+
 adb logcat
+
 ```
 
 例如，图 9–15 显示了包含在 index.html 文件中的 jQuery JavaScript 未正确更新时的示例输出。
@@ -6159,35 +6340,63 @@ adb logcat
 # 219
 
 ```
+
 adb         bash         emulator      bash         Python
+
 Terminal -- 100x40
+
 D/dalvikvm 678: Heapworker shutting down
+
 D/dalvikvm 678: Heapworker has shut down
+
 D/Jdwp 678: Jdwp shutting down.
+
 D/dalvikvm 678: Debugger attached; object registry has 1 entries
-D/AndroidRuntime 678: ERROR: error attach failed
+
 D/dalvikvm 521: Starting thread com.phonegap.browwmaps.mapest
+
 D/dalvikvm 678: Linearalloc 0 used 623916 of 524288 (119%)
+
 D/ResourceType 521: Resources don't contain package for resource number 0x07000s5
+
 D/ResourceType 521: Resources don't contain package for resource number 0x07002031
+
 D/ResourceType 521: Resources don't contain package for resource number 0x07002020
+
 D/ResourceType 521: Resources don't contain package for resource number 0x07000001
+
 D/dalvikvm 102: GC freed 123 objects / 6880 bytes in 199ms
+
 D/dalvikvm 51: GC freed 520 objects / 50480 bytes in 144ms
+
 D/ResourceType 521: Resources don't contain package for resource number 0x07000s5
+
 D/ResourceType 521: Resources don't contain package for resource number 0x07002031
+
 D/ResourceType 521: Resources don't contain package for resource number 0x07002020
+
 D/ResourceType 521: Resources don't contain package for resource number 0x07000001
+
 D/dalvikvm 220: GC freed 46 objects / 2160 bytes in 86ms
+
 D/ActivityManager 521: Starting activity; Intent{action=android.intent.action.MAIN category=android.intent.category.LAUNCHER data= component=com.phonegap.browwmaps.mapest/.Map}
+
 D/ActivityManager 527: Start proc;com.phonegap.browwmaps.mapest/com.phonegap.browwmaps.mapest/.Map
+
 Test-pid=688: Gid=(1010, 3083, 1815)
+
 Test-pid=688: Activity stopped for 1000 ms
+
 D/ActivityManager 522: Displayed activity com.phonegap.browwmaps.mapest/.Map: 1641 ms (total 1641 ms)
+
 D/dalvikvm 688: GC freed 4029 objects / 331704 bytes in 111ms
+
 D/dalvikvm 105: GC freed 297 objects / 15523 bytes in 152ms
+
 D/dalvikvm 688: GC freed 3783 objects / 47048 bytes in 133ms
+
 D/dalvikvm 688: GC freed 6898 objects / 68112 bytes in 92ms
+
 ```
 
 图 9-15. 为了记录 JavaScript 错误，adb logcat 是值得推荐的。
@@ -6211,43 +6420,72 @@ D/dalvikvm 688: GC freed 6898 objects / 68112 bytes in 92ms
 
 本质上，JSONP 是浏览器强制执行的**同源策略**（http://en.wikipedia.org/wiki/Same-origin_policy）的一种绕过方案。为了说明这个问题，我们将通过一个示例。对于此示例，我们将使用 WebKit Inspector（调试工具详情见附录 A）。如果你使用的是 Chrome，请查看“查看 > 开发者”菜单。其他浏览器提供了类似的工具。
 
-示例本身非常简单——我们向时间线端点发送请求，然后解析响应，用获取的推文填充 `#tweets` 元素。
+示例本身非常简单——我们向时间线端点发送请请求，然后解析响应，用获取的推文填充 `#tweets` 元素。
 
 等待，OCR 文本中间有一些乱码。根据提供的 JSONP 上下重新对齐逻辑流：
 
 为了说明这个问题，我们将通过一个小示例。例如，考虑以下代码：
 
 ```html
+
 <html>
+
 <script src="../js/query-1.2.min.js"></script>
+
 <script>
+
 function showData(data) {
+
   var tweets = '';
 
   if (!data) {
+
     tweets = '<li><strong>无法获取推文。</strong></li>';
+
   } else {
+
     for (var ii = 0; ii < data.length; ii++) {
+
       tweets += '<li>' + data[ii].text + '</li>>';
+
     } // for
+
   }
+
 }
+
 $('#tweets').html(tweets);
+
 // showData
+
 $(document).ready(function() {
+
   // 向 Twitter 服务器发送请求
+
   $.ajax({
+
     url: 'http://api.twitter.com/1/statuses/public.json',
+
     dataType: 'json',
+
     success: showData
+
   });
+
 });
+
 </script>
+
 <body>
+
 <ul id="tweets">
+
 </ul>
+
 </body>
+
 </html>
+
 ```
 
 示例本身非常简单——我们向 Twitter 公开时间线端点发送请求，然后解析响应，用获取的推文填充 `#tweets` 元素。
@@ -6278,38 +6516,65 @@ $(document).ready(function() {
 好了，让我们更新我们的 Twitter 示例来使用 JSONP，看看我们能否理解正在发生了什么。
 
 ```html
+
 <<html>
+
 <script src="../js/jquery-1.4.2.min.js"></script>
+
 <script>
+
 function showData(data) {
+
   var tweetItems = '';
 
 if (!data) {
+
   tweetItems = '<li><strong>Count could not retrieve tweets.</strong></li>';
+
 } else {
+
   for (var ii = 0; ii < data.length; ii++) {
+
   tweetItems = '<li>' + data[ii].text + '</li>';
+
   }
+
 } // for
+
 }
 
 $('#tweets').html(tweetItems);
+
 // showData
+
 $(document).ready(function() {
+
   // 向 geonames 服务器发送请求
+
   $.ajax({
+
     url: 'http://api.twitter.com/1/statuses/public_timeline.json',
+
     dataType: 'json',
+
     success: showData
+
   });
+
 });
+
 </script>
+
 <body>
+
   <ul id="tweets">
-    
+
   </ul>
+
 </body>
+
 </</html>
+
 ```
 
 前面的代码显示了为了让我们的测试应用程序通过 JSONP 而不是 JSON 进行通信而所需的修改。你可以在这里看到，jQuery 非常出色地将 JSONP 的复杂性从我们身后屏蔽掉了。`$.ajax` 函数图 10-3 显示了修改后的函数生成的输出示例。
@@ -6321,22 +6586,30 @@ $(document).ready(function() {
 既然我们已经看了让 jQuery 发送 JSONP 请求是多么简单，让我们快速看看背后发生了什么。为了实现这一点，我们将为 `twitter-test.html` 文件创建一个副本，并将之前的 `showData` 函数替换为以下代码：
 
 ```javascript
+
 function showData() {
+
   var tweetItems = '';
 
   for (var i = 0; i < document.scripts.length; i++) {
+
     var script = document.scripts[i];
 
     if (script.src) {
+
       tweetItems += '<li>' + script.src + '</li>';
+
     } // if
+
   } // for
 
   $('#tweets').html(tweetItems);
-}
-```
 
-因此，我们现在不是将推文文本输出到 HTML，而是写入页面当前包含的任何脚本的源文件位置。图 10–4 显示了这种效果的示例。
+}
+
+
+
+因此，我们现在不是将推文文本输出到 HTML，而是写入页面当前包含的任何脚本的源文件位置。图 10–4 显示了这种效了这种效果的示例。
 
 ![](img/6c8091bf3a3d21ca91f25f8caed8840f_236_0.png)
 
@@ -6387,10 +6660,15 @@ YQL 非常好的点之一是它使用了数据表。这些数据表提供了如�
 在 Foursquare 例，以下是一个旨在与 venues API 端点交互的 YQL 查询：
 
 ```sql
+
 select *
+
 from foursquare.venues
+
 where geolat="33.7722869"
+
 and geolong="-84.3970668"
+
 ```
 
 
@@ -6452,12 +6730,15 @@ img/6c8091bf3a3d21ca91f25f8caed8840f_241_0.png
 在进入编码之前，只需要对以下内容进行一些整理：
 
 ```
+
 MOUNDZ = (function() {
 
   var module = {
 
 };
+
   return module;
+
 ```
 
 接下来将 `mapp.js` 和 `mapp.css` 分别重命名为 `moundz.js` 和 `moundz.css`。最后，对 `index` 进行以下更新：
@@ -6467,36 +6748,67 @@ MOUNDZ = (function() {
 - 将 `MAPAPP` 替换为 `MOUNDZ`。
 
 ```html
+
 <!DOCTYPE html>
+
 <head>
+
   <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+
   <link rel="stylesheet" media="screen" href="moundz.css" />
+
   <script type="text/javascript" src="jquery-1.4.2.min.js"></script>
+
   <script type="text/javascript" src="moundz.js"></script>
+
   <!-- <script type="text/javascript" src="phonepage.js"></script>
+
   <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+
   <script type="text/javascript">
+
   function initialize() {
+
     var lat = new google.maps.Lat(-33.866, 151.209);
+
     MOUNDZ.init(lat, 13);
+
     MOUNDZ.updatedDisplay();
+
   }
+
 </script>
+
 </head>
+
 <body onload="initialize()">
+
   <h1 class="simple floating">Moundz</h1>
+
   <div id="map_canvas" style="width:100%;height:100%"></div>
+
   <div id="marker-nav">
+
     <img src="navigation-arrow.png" class="left disabled" />
+
     <span class="marker-title">Test Text</span>
+
     <img src="navigation-arrow.png" class="right" />
+
   </div>
+
   <div id="marker-detail">
+
     <div class="content">Some Test Content</div>
+
     <button class="close">Close</button>
+
   </div>
+
 </body>
+
 </html>
+
 ```
 
 在完成应用程序模板完成后，我们已经准备好开始组合游戏的各个元素了。
@@ -6525,36 +6837,59 @@ Geomeriner 中的每个 Web 服务都遵循 `:://api.geomeriner.net/api-version/
 我们现在为我们的 MOUNDZ 模块添加一些功能，以便我们能够通过 Geomeriner API 获取这些资源：
 
 ```javascript
+
 MOUNDZ = (function() {
+
 // 初始化常量
+
 var DEFAULT ZOOM = 8,
+
 GEOMINER_MOUNDZ_URL = 'http://api.geomeriner.net/v1/moundz';
 
 ...
 
 findResources(callback) {
+
 // 获取地图中心位置
+
 var center = map.getCenter(); 
+
 $.ajax({
+
   url: GEOMINER_MOUNDZ_URL + '/resources',
+
   dataType: 'json',
+
   data: {
+
     lat: center.lat(),
+
     lng: center.lng()
+
   },
+
   success: function(data) {
+
     processResourceSearch(data);
+
     if (callback) {
+
       callback();
+
     } // if
+
   }
+
 });
+
 }); // // findResources
+
 ...
 
 var module = {
 
 addMarker: addMarker,
+
 clearMarkers: clearMarkers,
 
 findResources: findResources,
@@ -6566,39 +6901,61 @@ findResources: findResources,
 return module;
 
 )();
+
 ```
 
 前面的代码显示了所需的修改。我们正在向 MOUNDZ 模块添加一个 `findResources` 函数，该函数将查找当前地图位置上的资源。该函数的大部分是一个使用 JSONP 的 Ajax 调用，正如我们之前在第一次接触 JSONP 时访问 GeoNames 数据所使用的那样。当我们从 Geom 收到成功结果时，这些结果将被传递给 `processResourceSearch` 函数。让我们来看这个函数及其相关代码。
 
 ```javascript
+
 function markResourceSearch(resource, deposits) {
+
   for (var i = 0; i < deposits.length; i++) {
+
     // 为资源储层添加标记
+
     addMarker(
+
       new google.maps.LatLng(deposits[i].lat, deposits[i].lng),
+
       deposits[i].name,
+
       '<div class="resinfo">' + deposits[i].total +
+
       ' resources at this location</div>'
+
     );
+
   }
+
 }
 
  // markResources
+
 ```
 
 ```javascript
+
 function processResourceSearch(data) {
+
   // 清除所有现有标记
+
   clearMarkers();
 
   // 遍历资源类型并打点
+
   for (var i = 0; i < data.resourceTypes.length; i++) {
+
     var resType = data.resourceTypes[i];
 
     // 标记资源
+
     markResources(resType.typeName, resType.deposits);
+
   }
+
 } // processResourceSearch
+
 ```
 
 这段代码中的两个函数作为内部函数包含在 MOUND 模块中。正如你在 `findResources` 函数中看到的，当我们收到 Geom API 的成功响应时，就会调用 `processResourceSearch`。当这种情况发生时，现有的标记将被移除，并为 API 获取的每个不同资源类型添加新标记。
@@ -6612,15 +6969,25 @@ function processResourceSearch(data) {
 我们现在需要做的是调整 `index.html` 文件，以便在页面加载时调用 MOUNDZ 模块的 `findResources` 函数：
 
 ```html
+
 <script type="javascript">
+
 function initialize() {
+
   var latlng = new google.maps.LatLng(-33.866, 151.209);
+
   MOUNDZ.init(latlng, 17);
+
   MOUNDZ.findResources(function() {
+
     MOUNDZ.updateDisplay();
+
   });
+
 } // initialize
+
 </script>
+
 ```
 
 目前，我们将跳过位置检测部分，仅为了检查一切是否运行正常。这使得我们只需要对初始化进行简单的更改（**加粗部分**）。此外，我们将缩放级别从 17 增加到 13，这更符合我们从 Geomeriner 获取返回的结果（多亏于初始案例中 Gowalia 的帮助）。图 10–9 显示了如果一切按照计划进行，我们将看到的示例。
@@ -6638,49 +7005,81 @@ function initialize() {
 这实际上非常简单，将涉及按照下面的方式将 `index.html` 中使用的所有代码替换为 `moundz.js` 中的 `run` 函数：
 
 ```javascript
+
 MOUNDZ = (function() {
+
   ...
+
   // 初始化变量
+
   var map = null,
+
   GEOMINER_MOUNDZ_URL = 'http://api.geomeriner.net/v1/moundz';
 
   ...
+
   if (watchId != 0) {
+
     return;
+
   }
+
   // 创建 watch
+
   watchId = navigator.geolocation.watchPosition(function(position)
+
         var = = google.maps.LatLng(
+
       position.coords.latitude,
+
       position..););
 
     if (map) {
+
       map.panTo(pos);
+
     } else {
+
       map.init(pos, zoomLevel);
+
     }
+
   }, function(error) {
+
     console.log(error);
+
   }, {
+
     enableAccuracy:true
+
   });
 
   ...
+
   function run(zoomLevel) {
+
     if (watchId != 0) {
+
       navigator.geolocation.clearWatch(watchId);
+
     }
+
     ...
+
   }
 
   var module = {
+
     ...
+
     run: run,
+
   };
 
   return module;
 
 )();
+
 ```
 
 
@@ -6695,7 +7094,7 @@ MOUNDZ = (function() {
 
 **图 10–11.** 在模拟器中模拟了地理位置数据后，你应该看到与上方图像类似的界面。
 
-随着我们的应用程序开始追踪位置并提供周围资源的信息，现在是时候实现更多游戏功能了。
+随着我们的应用程序开始追踪位置并提供周囆资源的信息，现在是时候实现更多游戏功能了。
 
 ## 实现用户登录
 
@@ -6718,24 +7117,43 @@ MOUNDZ = (function() {
 为我们的应用程序创建一个欢迎屏幕是一个相当简单的练习（至少从外观上来说）。首先，让我们修改 index.html 文件的 HTML：
 
 ```html
+
 <!DOCTYPE html>
+
 <html>
+
 <head>
+
 </head>
+
 <body onload="initialize">
+
 <div id="splash">
+
 <strong>Welcome to</strong>
+
 <img src="img/moundz_logo.png" />
+
 <p class="hint">
+
 点击下方的 'Sign in with Twitter' 按钮开始游戏。
+
 </p>
+
 <span id="login"></span
+
 </div>
+
 <div id="app">
+
 ...
+
 </div>
+
 </body>
+
 </html>
+
 ```
 
 对 HTML 的修改非常简单，唯一需要注意的是，#splash div 已作为另一个与 #app div 并列的顶层容器被添加。此页面使用的 Moundz 标志图像可以从以下 URL 的 powebapps GitHub 仓库下载：https://github.com/sidelab/powebapps-code/tree/master/moundz/img。
@@ -6749,46 +7167,81 @@ MOUNDZ = (function() {
 现在通过向 moundz.css 文件添加 CSS 来解决这个问题：
 
 ```css
+
 /* 应用程序窗口样式 */
+
 #app {
+
   height: 100%;
+
   width: 100%;
+
   display: none;
+
 }
+
 /* 启动屏样式 */
+
 #splash {
+
   height: 100%;
+
   width: 80%;
+
   background: -webkit-gradient(linear, left top, left bottom, from(#c4c8b7), to(#cdd87));
+
   padding: 0 10%;
+
 }
+
 #splash > * {
+
   display: block;
+
   margin: 0 auto;
+
   text-align: center;
+
 }
 
 #splash strong {
+
   color: hsla(0, 10%, 30%, 0.6);
+
   font-size: 2.0em;
+
   text-shadow: hsla(0, 10%, 90%, 0.8) 0 1px 0px;
+
   padding: 20px 0 0;
+
 }
 
 #splash p.hint {
+
   -webkit-border-radius: 4px;
+
   background: hsla(0, 10%, 30%, 0.5);
+
   margin: 5px;
+
   padding: 10px;
+
   color: white;
+
   font-size: 0.8em;
+
 }
 
 #login {
+
   position: fixed;
+
   width: 80%;
+
   bottom: 20px;
+
 }
+
 ```
 
 有了这些 CSS 之后，欢迎屏幕变得好看多了，如如图 10–13 所示。
@@ -6812,29 +7265,51 @@ MOUNDZ = (function() {
 我们现在开始为集成 Twitter Anywhere 准备应用程序。后续步骤是在我们的 `index.html` 页面中包含所需的 JavaScript 库，并指令 Twitter Anywhere 库在您指定的 #login 区域创建一个登录按钮。
 
 ```javascript
+
 <!DOCTYPE html>
+
 <html>
+
 <head>
+
 <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
+
 <script type="text/javascript" src="http://platform.twitter.com/anywhere.js?id=K7bHaackov8QfEHWURY7Qv=1"></script>
+
 <script type="text/javascript">
+
 twttr.anywhere(function (T) {
+
 nT("#login").connectButton();
+
 });
+
 </script>
+
 <script type="text/javascript">
+
 function initialize() { 
+
 MOUNDZ.run();
+
 ```
 
 ```javascript
+
 // // initialize
+
 </script>
+
 </head>
+
 <body onload="initialize()">
+
 ...
+
 </</body>>
+
 </html>
+
 ```
 
 在前述代码中用粗体形式显示了脚本的包含，使用了 Moundz 应用程序示例。这应该在屏幕底部创建一个漂亮的登录按钮（在经过一些浏览器活动之后）。结果显示在图 10–15 中。
@@ -6843,7 +7318,7 @@ MOUNDZ.run();
 
 **图 10–15.** Moundz 欢迎界面上应该出现一个“连接 Twitter”（Connect with Twitter）按钮。
 
-要登录您的应用程序，请点击“连接 Twitter”按钮。此时，Twitter Anywhere 解决方案在移动设备上的用户体验开始下降。图 10–16 显示了 Twitter 上的相应登录界面。
+要登录您的应用程请点击“连接 Twitter”按钮。此时，Twitter Anywhere 解决方案在移动设备上的用户体验开始下降。图 10–16 显示了 Twitter 上的相应登录界面。
 
 # 第 10 章：与社交 API 集成
 
@@ -6863,7 +7338,7 @@ MOUNDZ.run();
 
 **图 10-17.** 一旦您完成与 Twitter 的身份验证过程，登录按钮将被一个“已连接 Twitter”（Connected with Twitter）图像取代。
 
-从这里开始，剩下的工作就是绑定由 Twitter Anywhere API 提供的事件处理器，以便我们的网页能够对身份验证过程成功完成做出响应。处理这些事件在 Twitter Anywhere 文档中有详细介绍（http://dev.twitter.com/anywhere/begin#login-signup）。虽然实现这种方法可能是为我们的应用程序提供登录功能的简单方法，但遗憾的是，它有一些缺点：
+从这里开始，剩下的工作就是绑定由 Twitter Anywhere API 提供的事件处理器，以便我们的网页能够对身份验证过程成功完成做出响应。处理这些事件在 Twitter Anywhere 文档中有详�介绍（http://dev.twitter.com/anywhere/begin#login-signup）。虽然实现这种方法可能是为我们的应用程序提供登录功能的简单方法，但遗憾的是，它有一些缺点：
 
 - - 正如所示，Twitter 为我们的用户提供的登录界面没有针对移动端进行优化，这导致了糟糕的用户体验。
 
@@ -6876,7 +7351,9 @@ MOUNDZ.run();
 如果您的应用程序有一个尝试管理某些应用状态的服务器端组件（Moundz 就是如此），您可能会遇到额外问题。虽然将用户的 Twitter ID 传输到服务器以协助管理该状态不会让他们面临任何巨大风险，但这并不是最稳健的解决方案。坦率地说，Twitter API 团队已经在处理，并提供了一种名为“桥接代码”（Bridge Code）的机制来连接客户端和服务器。可以在以下 URL 的演示中找到关于实现它的更多信息：
 
 ```
+
 http://slideshare.net/themattharris/twitterapi-at-socialapp-workshop-482964
+
 ```
 
 ## Geomeriner 的替代 Twitter 身份验证
@@ -6884,99 +7361,51 @@ http://slideshare.net/themattharris/twitterapi-at-socialapp-workshop-482964
 如果我们为应用程序使用 Twitter Anywhere API 就太好了，但由于我们要使用 PhoneGap 将应用程序封装并在市场分发，这目前是不行的——至少是目前。在本节中，我们将研究使用 Geomeriner API 实现的一些替代方案。让我们从将 Geomeriner 库包含到 `index.html` 开始：
 
 ```javascript
+
 <!DOCTYPE html>
+
 <html>
+
 <head>
+
 <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
+
 <script type="text/javascript" src="http://platform.twitter.com/anywhere.js?id=K7bHaackov8QfEHWURY7Qv=1"></script>
+
 <script type="text/javascript">
+
 twttr.anywhere(function (T) {
+
 nT("#login").connectButton();
+
 });
+
 </script>
+
 <script type="text/javascript">
+
 function initialize() { 
+
 MOUNDZ.run();
+
 ```
 
 ```javascript
+
 // // initialize
+
 </script>
+
 </head>
+
 <body onload="initialize()">
+
 ...
+
 </</body>>
+
 </html>
-```
 
-在前述代码中用包含了显示了脚本的包含。这应该在屏幕底部创建一个漂亮的登录按钮（在经过一些浏览器活动之后）。结果显示在图 10–15 中。
-
-![](img/6c8091bf3a3d21ca91f25f8caed8840f_257_0.png)
-
-**图 10–15.** Moundz 欢迎界面上应该出现一个“连接 Twitter”按钮。
-
-要登录您的应用程序，请点击“连接 Twitter”按钮。此时，Twitter Anywhere 解决方案在移动设备上的用户体验开始下降。图 10–16 显示了 Twitter 上的登录界面。
-
-# 第 10 章：与社交 API 集成
-
-![](img/6c8091bf3a3d21ca91f25f8caed8840f_258_0.png)
-
-图 10–16。当重定向到 Twitter 站点进行登录时，我们收到的是桌面登录/权限界面。
-
-我们希望避免向用户展示非移动端优化的界面，虽然在这里我们能做的较少，但我们将在本章的晚些部分研究另一种方法。一旦用户完成登录过程（或授权过程，如果他们已经登录），他们将返回到应用程序界面。由于 Twitter Anywhere 为身份验证过程打开了一个新窗口，该新窗口将会被关闭。Moundz 欢迎界面现在应该与图 10–17 相似。
-
-# 第 10 章：与社交 API 集成
-
-# 249
-
-![](img/6c8091bf3a3d21ca91f25f8caed8840f_259_0.png)
-
-**图 10-17.** 一旦您完成与 Twitter 的身份验证过程，登录按钮将被一个“已连接 Twitter”图像取代。
-
-从这里开始，剩下的工作就是绑定由 Twitter Anywhere API 提供的事件处理器，以便我们的网页能够对身份验证过程成功完成做出响应。处理这些事件在 Twitter Anywhere 文档中有详细介绍（http://dev.twitter.com/anywhere/begin#login-signup）。虽然实现这种方法可能是为我们的应用程序提供登录功能的简单方法，但遗憾的是，它有一些缺点：
-
-- - 正如所示，Twitter 为我们的用户提供的登录界面没有针对移动端进行优化，这导致了糟糕的用户体验。
-
-- - 通用的 Twitter Anywhere 身份验证过程需要回调 URL 才能成功完成。这对于部署到 Web 服务器的移动应用程序效果良好，但对于使用 PhoneGap 封装的移动应用程序无效。这些应用程序从基于文件的 URL（如本章早些时候讨论），这阻止了 Anywhere API 完成其签名过程。
-
-虽然第一个问题很重要，但第二个问题有点是致命的。没有对应用程序进行原生部署封装的选项将使你错失很大一部分潜在的应用市场。我们需要一种替代方案。
-
-# 第 10 章：与社交 API 集成
-
-如果您的应用程序有一个尝试管理某些应用状态的服务器端组件（Moundz 就是如此），您可能会遇到额外问题。虽然将用户的 Twitter ID 传输到服务器以协助管理该状态不会让他们面临任何巨大风险，但这并不是最稳健的解决方案。坦率地说，Twitter API 团队已经在处理，并提供了一种名为“桥接代码”（Bridge Code）的机制来连接客户端和服务器。可以在以下 URL 的演示中找到关于实现它的更多信息：
-
-```
-http://slideshare.net/themattharris/twitterapi-at-socialapp-workshop-482964
-```
-
-## Geomeriner 的替代 Twitter 身份验证
-
-如果我们为应用程序使用 Twitter Anywhere API 就太好了，但由于我们要使用 PhoneGap 将应用程序封装并在市场分发，这目前是不行的——至少是目前。在本节中，我们将研究使用 Geomeriner API 实现的一些替代方案。让我们从将 Geomeriner 库包含到 `index.html` 开始：
-
-```javascript
-<!DOCTYPE html>
-<html>
-<head>
-<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
-<script type="text/javascript" src="http://platform.twitter.com/anywhere.js?id=K7bHaackov8QfEHWURY7Qv=1"></script>
-<script type="text/javascript">
-twttr.anywhere(function (T) {
-nT("#login").connectButton();
-});
-</script>
-<script type="text/javascript">
-function initialize() { 
-MOUNDZ.run();
-```
-
-```javascript
-// // initialize
-</script>
-</head>
-<body onload="initialize()">
-...
-</</body>>
-</html>
 ```
 
 在前述代码中用包含了显示了脚本的包含。这应该在屏幕底部创建一个漂亮的登录按钮（在经过一些浏览器活动之后）。结果显示在图 10–15 中。
@@ -7016,7 +7445,9 @@ MOUNDZ.run();
 如果您的应用程序有一个尝试管理某些应用状态的服务器端组件（Moundz 就是如此），您可能会遇到额外问题。虽然将用户的 Twitter ID 传输到服务器以协助管理该状态不会让他们面临任何巨大风险，但这并不是最稳健的解决方案。坦率地说，Twitter API 团队已经在处理，并提供了一种名为“桥接代码”（Bridge Code）的机制来连接客户端和服务器。可以在以下 URL 的演示中找到关于实现它的更多信息：
 
 ```
+
 http://slideshare.net/themattharris/twitterapi-at-socialapp-workshop-482964
+
 ```
 
 ## Geomeriner 的替代 Twitter 身份验证
@@ -7024,29 +7455,51 @@ http://slideshare.net/themattharris/twitterapi-at-socialapp-workshop-482964
 如果我们为应用程序使用 Twitter Anywhere API 就太好了，但由于我们要使用 PhoneGap 将应用程序封装并在市场分发，这目前是不行的——至少是目前。在本节中，我们将研究使用 Geomeriner API 实现的一些替代方案。让我们从将 Geomeriner 库包含到 `index.html` 开始：
 
 ```javascript
+
 <!DOCTYPE html>
+
 <html>
+
 <head>
+
 <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
+
 <script type="text/javascript" src="http://platform.twitter.com/anywhere.js?id=K7bHaackov8QfEHWURY7Qv=1"></script>
+
 <script type="text/javascript">
+
 twttr.anywhere(function (T) {
+
 nT("#login").connectButton();
+
 });
+
 </script>
+
 <script type="text/javascript">
+
 function initialize() { 
+
 MOUNDZ.run();
+
 ```
 
 ```javascript
+
 // // initialize
+
 </script>
+
 </head>
+
 <body onload="initialize()">
+
 ...
+
 </</body>>
+
 </html>
+
 ```
 
 在前述代码中用包含了显示了脚本的包含。这应该在屏幕底部创建一个漂亮的登录按钮（在经过一些浏览器活动之后）。结果显示在图 10–15 中。
@@ -7058,27 +7511,41 @@ MOUNDZ.run();
 要登录您的应用程序，请点击“连接 Twitter”按钮。此时，Twitter Anywhere 解决方案在移动设备上的用户体验开始下降。图 10–16 显示了 Twitter 上的登录界面。
 
 ```javascript
+
 var module = {
+
   init: function(zoomLevel) {
+
     // initialize geomeriner
+
     geomeriner = new GEINER.Bridge({
+
       app: 'moundz',
+
       login: '#login'
+
     });
 
     geomeriner.bind('authenticated', function(evt) {
+
       $('#splash').hide();
+
       $('#app').show();
 
       run(zoomLevel);
+
     });
 
     // initialize the screen
+
     initScreen();
+
   },
 
   return module;
+
 }();
+
 ```
 
 我们对 MOUNDZ 模块做了一些小改动，这在接入 Geomeriner API 的同时有助于整理结构：
@@ -7089,22 +7556,37 @@ var module = {
 - 4. 最后，我们使用 jQuery bind 函数监听“authenticated”事件，该事件标记用户已完成登录过程。响应此事件，我们将关闭欢迎界面并显示主应用视图。
 
 ```javascript
+
 function gotoPosition(position, zoomLevel) {
+
   // define the options
+
   var myOptions = {
+
     zoom: zoomLevel ? DEFAULT_ZOOM : 0,
+
     center: position,
+
     mapControl: false,
+
     streetViewControl: false,
+
     mapTypeId: google.maps.ROADMAP
+
   };
+
 }
 
 // initialize the map
+
 map = new google.maps.Map(
+
   document.getElementById("map_canvas"),
+
   myOptions
+
 );
+
 ```
 
 
@@ -7121,7 +7603,7 @@ map = new google.maps.Map(
 
 考虑到我们接受与 Twitter 的连接，我们将通过 Geomeriner API 返回到我们的应用程序。在此期间，监控登录过程的客户端 Geomeriner API 脚本将运行，一旦确定过程成功完成，欢迎屏幕将被隐藏，用户将像之前在应用程序中那样引导至主应用程序屏幕。
 
-> 注意：此解决方案的一个方面不如使用 Twitter Anywhere 那么优雅，是由于在我们进行身份验证过程中，应用程序显示为“Geomeriner”而不是“Mound2”。虽然 Geomeriner 的未来版本可能会使用不同的 OAuth 参数来显示来自应用程序自身的请求，但当前版本并没有这样做。
+> 注意：此解决方案的一个方面不如使用 Twitter Anywhere 那么优雅，是由于在我们进行身份验证过程中，应用程序显示为“Geomeriner”而不是“Mound2”。虽然 Geomeriner 的未来版本可能会使用不同的 OAuth 参数来显示来自应用程序自身的请请求，但当前版本并没有这样做。
 
 如果你正在构建一个不是地理社交游戏的应用程序，但对我们如何使用 Geomeriner 实现替代登录机制感兴趣，那么在 GitHub 上 fork Geomeriner 项目 可能是值得的，该项目位于以下 URL：https://github.com/sidelab/geomeriner。
 
@@ -7188,33 +7670,55 @@ map = new google.maps.Map(
 为了做到这一点，我们需要对 Moundz 源文件进行一些修改。在 index.html 文件中注释掉（或删除）splash 元素：
 
 ```html
+
 <!DOCTYPE html>
+
 <html>
+
 <head>
+
 </head>
+
 <body onload="initialize()">
+
 <!--
+
 <div id="splash">
+
   <strong>Welcome to/
-```
-
-
-
-
 
 ```
+
+
+
+
+
+```
+
 <img src="imgmundz_logo.png" />
+
 <p class="hint">
+
   点击“使用 Twitter 登录”按钮开始开始游戏。
+
 </p>
+
 <span id="login"></</span>
+
 </div
+
 <!--
+
 <div id="app">
+
   <div>
+
   </div>
+
 </body>
+
 </html>
+
 ```
 ```,
 
@@ -7266,41 +7770,67 @@ null,
 ```接下来，修改 `MOUNDZ.init` 函数并注释掉身份验证处理程序。此外，在 `init` 函数的主体中放置 `run` 函数的调用，以便应用程序能够正确初始化。
 
 ```javascript
+
 MOUNDZ = (function() {
+
   var module = {
+
     init: function(zoomLevel) {
+
       // 初始化 geominer 桥接
+
       geomer = new GEOMINER.Bridge({
+
         app: 'moundz',
+
         login: '#login'
+
       });
+
     },
+
     $(geomer).bind('authenticated', function(evt) {
+
       $('#splash').hide();
+
       $('#app').show();
+
     })
+
     run(zoomlevel);
+
   };
-  // 初始化屏幕
+
+  // 初始化屏Screen
+
   initScreen();
 
   // 运行应用程序
+
   run(zoomlevel, new google.maps.LatLng(-33.86, 151.21));
 
-
 };
+
   return module;
+
 }();
+
 ```
 
 好了，我们快要完成了。最后，对 `moundz.css` 文件进行一个简单的更改，使 `#App` 视图在应用程序启动时默认显示。
 
 ```css
+
 #app {
+
   height: 100%;
+
   width: 100%;
+
   display: none;
+
 }
+
 ```
 
 虽然我们稍后在集成各种框架时可能需要修改此 CSS，但如果知道我们的起点代码运行正常，将会很好。如果一切按计划进行，你的 Moundz 应用程序应该启动并看起来像图 11–1。
@@ -7365,11 +7895,17 @@ MOUNDZ = (function() {
 最后，在 `index.html` 中对 `moundz.css` 文件进行一个简单的更改，使 #App 视图在应用程序启动时默认显示。
 
 ```css
+
 #app {
+
   height: 100%;
+
   width: 100%;
+
   display: none;
+
 }
+
 ```
 
 虽然我们以后在集成各种框架时可能需要修改此 CSS，但如果知道我们的起点代码运行正常，将会很好。如果一切按计划进行，你的 Moundz 应用程序应该启动并看起来像图 11–1。
@@ -7379,40 +7915,69 @@ MOUNDZ = (function() {
 由于 Jo 是一个声明式 UI 框架，我们需要移除大部分现有 HTML。通过调用适当的 Jo（数量惊人少），将生成相应的 HTML。所以，首先移除以下代码示例中**加粗并斜体**显示的 HTML：
 
 ```html
+
 <!DOCTYPE html>
+
 <html>
+
 <head></head>
+
 <body onload="initialize()">
+
 <!-- 从此处开始删除
+
 <div id="app">
+
   <h1 class="floating floating">Mundz</h1>
+
   <div class="map-canvas" style="width:100%; height:100px"></div>
+
   <div id="marker-nav">
+
     <img src="img/navigation-arrow.png" class="left desired" />
+
     <span class="marker-title">Test Text</span>
+
     <img src="img/navigation-arrow.png" class="right" />
+
   </div>
+
   <div id="marker-detail" class="child-screen">
+
     <div class="content">Some Text Content</div>
+
     <button class="close">Close</button>
+
   </div>
+
 </div>
+
 </div>
+
 到此处结束（或者直接留注释）--
+
 </body>
+
 </html>
+
 ```
 
 在移除代码后，你也可以移除之前的启动页 HTML 或将其注释掉，我们留下一个包含空 `body` 标签的 HTML 文档。这是 Jo 喜欢的工作的理想画布。现在我们将添加 Jo 来创建所需的元素。通过以下代码替换 `initScreen` 中的代码（并定义一些额外的变量）：
 
 ```
+
 MOUNDZ = (function() {
+
   // 初始化常量
+
   var DEFAULT_ZOOM = 8,
+
   GEOMINER_MOUNDZ_URL = 'http://api.geominer.net/v1/mundz';
 
   // 初始化变量
+
   var geomeriner = null,
+
 ```
 
 
@@ -7420,84 +7985,141 @@ MOUNDZ = (function() {
 
 
 ```javascript
+
 // new jo variables
+
 container = null,
+
 mapCard = null,
+
 detailCard = null,
+
 resourceButton = null,
+
 navbar = null,
+
 stack = null,
+
 toolbar = null,
+
 map = null,
+
 posWatchId = 0;
+
 ...
+
 ```
 
 ```javascript
+
 function initScreen() {
+
   var stackHeight;
+
   jo.load();
 
   // create a stack that we will use for paging
+
   stack = new joStack();
 
   // create the navbar for the app
+
   navbar = new joNavbar('Jo Moundz');
+
   navbar.setStack(stack);
 
   // define the resource details button
+
   resourceButton = new joButton("Resource");
 
   // attach the select event handler
+
   resourceButton.selectEvent.subscribe(function() {
+
     // when the navbar is pushed, then show the detail card
+
     stack.push(detailCard);
+
   });
 
   // create the toolbar
+
   toolbar = new joToolbar([
+
     new joFlexrow([
+
       new joButton("Previous").selectEvent.subscribe(function() {
+
         activateMarker(markers[markerIndex - 1]);
+
       }),
+
       resourceButton,
+
       new joButton("Next").selectEvent.subscribe(function() {
+
         activateMarker(markers[markerIndex + 1]);
+
       })
+
     ])
+
   ]);
+
 }
+
 ```
 
 ```javascript
+
   // create the wrapper to the body
+
   container = new joScreen([
+
     navbar,
+
     toolbar,
+
     stack
+
   ]);
 
   // now that the screen is created, calculate the available height
+
   stackHeight = stack.container.getBoundingClientRect().height -
+
     toolbar.container.getBoundingRect().height -
+
     navbar.container.getBoundingRect().height;
 
   // create the map card
+
   mapCard = new joCard({
+
     joDOM.create('div', {
+
       id: 'map_canvas',
+
       height: stackHeight + 'px'
+
     })
+
   });
+
 ```
 
 ```javascript
+
   // create the detail card
+
   detailCard = new joCard();
+
 ```
 
 ```javascript
+
   // add the map to the view
+
   stack.push(mapCard);
 
 }
@@ -7512,7 +8134,7 @@ initScreen();
 
 - 3. 接下来，我们创建了一个 `joNavBar`，它将为我们的应用程序提供标题栏，并在适当的时间处理返回按钮（例如，当栈中添加了多个卡片时）。然后我们还创建了一个 `joToolbar`，它将包含我们用于导航标记的按钮。
 
-- 4. 定义了顶层控制控件后，我们接着告诉 Jo 应该将这些控件放在哪里。这是通过创建一个 `joScreen` 对象并将数组中的两个控件传递给它来实现的。到此时，我们已经有了一个可以操作的界面，但还没有地图。
+- 4. 定义了顶层控制控件后，我们接着告诉 Jo 应该将这些控件放在哪里。这是通过创建一个 `joScreen` 对象并将数组中的两个控件传递给它来实现的。到此时，我们已经有了一个可以操作的界面，但还没有地 map。
 
 - 5. 为了添加地图，我们创建了一个新的 `joCard` 来承载地图。我们的工作级别比通常用于 Jo 的级别要低，访问 `joDOM` 工具来手动创建一个 `div`，Google Maps 将在该 `div` 中生成地图。
 
@@ -7526,9 +8148,6 @@ initScreen();
 
 ## 267
 
-
-
-
 # 第 11 章：移动 UI 框架对比
 
 271
@@ -7539,7 +8158,7 @@ initScreen();
 
 在 jTouch 文件中有两个值得关注的目录。第一个是 `jtouch`，包含了使用 jTouch 时需要的核心 JavaScript 和 CSS 文件；第二个是 `themes` 目录，包含了用于自定义 jTouch 应用视觉效果的 CSS 和图像资源。
 
-jTouch 在其 `demos` 目录中也提供了示例——如果你想查看 jTouch 能做什么，这些非常值得一看。
+jTouch 在其 `demos` 目�中也提供了示例——如果你想查看 jTouch 能做什么，这些非常值得一看。
 
 对于我们的 Moundz jTouch 应用，我们需要将 `jtouch` 和 `themes` 目录复制到我们的 jTouch 挑战目录。图 11–8 显示了复制文件后该文件夹的结构样式。
 
@@ -7616,9 +8235,14 @@ function initialize() {
 在我们的案例，我们做了以下更改：
 
 - 1. 我们将顶层的 `#app` div 替换为顶层的 `#jqt` div。
+
 - 2. 我们用 `#jqt` div 创建了“页面” div 来存放我们的应用程序页面。我们有一个用于地图和一个用于详情。
-- 3. 接下来，我们在详情视图中添加了返回按钮以允许返回导航。
+
+- 3. 接下来，我们在详情视视图中添加了返回按钮以允许返回导航。
+
 - 4. 我们移动了标记导航控件以处理标记之间的切换。
+
+
 
 如果你已经对 `moundz.js` 应用了这些更改，应用程序应该正常工作。
 
@@ -7626,9 +8250,6 @@ function initialize() {
 function initScreen() {
   jTouch = new jTouch();
 ```
-
-
-
 
 ## jQuery Mobile
 
@@ -7754,10 +8375,6 @@ function initialize() {
 
 随着我们带有 `data-role` 属性的修改后的 HTML 就绪，jQuery Mobile 可以开始处理我们的应用程序布局。图 11–14 显示了从前面的 `index.html` 文件生成的 UI 示例。
 
-
-
-
-
 ![](img/6c8091bf3a3d21ca91f25f8caed8840f_293_0.png)
 
 图 11–14. 使用 jQuery Mobile 的初步工作产生了页眉和页脚，但并没有产生多少地图。
@@ -7785,7 +8402,7 @@ function initScreen() {
 
 图 11–15. jQuery Mobile Moundz 界面开始成型。
 
-随着界面开始成型，我们只需要对 `moundz.js` 进行一些进一步修改，使其与我们的移动 HTML 配合工作。首先，我们将更新 `activateMarker` 函数来更新页面页脚上的中间按钮：
+随着界面开始成型，我们只需要对 `moundz.js` 进行一些进一修改，使其与我们的移动 HTML 配合工作。首先，我们将更新 `activateMarker` 函数来更新页面页脚上的中间按钮：
 
 ```javascript
 function activateMarker(marker) {
@@ -7893,10 +8510,6 @@ function updateMarkerNav(markerIndex) {
 图 11–17. Sencha Touch 1.0 发布目录结构
 
 Sencha Touch 分发包含大量文件，包括库的源代码和一些处理该库时非常有用的工具。我们将
-
-
-
-
 
 # 第 11 章：移动 UI 框架对比
 
@@ -8061,8 +8674,6 @@ return new Ext.Toolbar({
 });
 ```
 
-
-
 ```javascript
 layout: {
   pack: 'justify'
@@ -8074,7 +8685,7 @@ layout: {
   html: '<h1>Moundz</h1>'
 },
   xtype: 'spacer'
-]]
+]];
 );
 // // createHeader
 ```
@@ -8118,112 +8729,13 @@ function createFooter() {
 
 在这段代码中，我们创建了另一个设置在屏幕底部的 `Ext.Toolbar`。对于工具栏项目，我们指定了三个按钮，分别用于前进、后退以及另一个用于带我们进入资源详情页。
 
-每个按钮都分配了适当的事件处理器：`Next` 和 `Previous` 按钮会激活标记列表中的相应标记，而显示资源标题的按钮在点击时会将用户带到详情页。
+每个按钮都分配了适当的事件处理器：`Next` 和 `Previous` 按钮会激活标记列表中的相应标记，而显示资源标title的按钮在点击时会将用户带到详情页。
 
 如果一切顺利，将显示一个与图 11–19 类似的屏幕。
 
 ![](img/6c8091bf3a3d21ca91f25f8caed8840f_305_0.png)
 
-图 11–19。Sencha Touch 中 UI 的初始显示轻松地显示地图——令人印象深刻。
-
-如你所见，我们布局的应用程序是适配屏幕大小的。因此，当我们必须做一些额外工作来设置 UI 时，将地图控件集成到 Sencha Touch 中让这里变得简单。我们现在需要继续用合适的位置初始化地图，并在地图上显示一些标记。
-
-为了让地图与现有的 Moundz 应用代码集成，我们需要对 `gotoPosition` 函数进行一些修改。
-
-```javascript
-function gotoPosition(position, zoomLevel) {
-  // 定义所需的选项
-  var options = {
-    zoom: zoomLevel || DEFAULT_ZOOM,
-    center: position,
-    mapTypeControl: false,
-    streetViewControl: false,
-    mapTypeId: google.maps.MapTypeId.ROADMAP};
-}
-```
-
-```javascript
-/*
-// 初始化地图
-map = new google.maps.Map(
-  document.getElementById("map_canvas"),
-myOptions);
-```
-
-# 第 11 章：移动 UI 框架对比
-
-```javascript
-/*
-// 保存对地图控件的引用
-map = Ext.getMap('main_map').map;
-
-// 设置地图选项
-map.setOptions(myOptions);
-// gotoPosition
-```
-
-在前面的代码中，我们执行了三件事：
-
-- 1. 我们注释掉了为我们创建 Google 地图控件的代码；这不再是需要了，因为 Sencha Touch 已经为我们创建了一个。
-- 2. 我们获取 Sencha Touch 创建的地图的引用，并将其保存到 MOUNDZ 模块的 map 变量中。我们在其他函数调用该变量时，现有功能就可以正常工作。
-- 3. 我们更新了地图选项，以匹配我们自己创建地图时提供的选项。
-
-完成这些后，你应该得到一个与图 11–20 类似的显示。
-
-![](img/6c8091bf3a3d21ca91f25f8caed8840f_306.png)
-
-图 11-20。Sencha Touch 版本的 Moundz 现在显示了标记。
-
-我们只需要对 MOUNDZ 模块中的函数进行一些更改，以使应用程序状态与 UI 控件同步。我们将从 `activateMarker` 函数开始：
-
-```javascript
-MOUNDZ = (function() {
-```
-
-```javascript
-// 初始化常量
-var DEFAULT_ZOOM = 8,
-GEOMINER_MOUNDZ_URL = 'http://api.geominer.net/v1/moundz';
-```
-
-```javascript
-// 初始化变量
-var geominer = null,
-...
-markerIndex = 0,
-postwatchId = 0;
-```
-
-```javascript
-/* 私有函数 */
-function activateMarker(marker) {
-  // 遍历标记并设置为非激活状态
-  for (var ii = 0; ii < markers.length; ii++) {
-    markers[ii].seticon('img/inactive.png');
-  } // for
-
-  // 更新指定标记的图标为激活状态
-  marker.seticon('img/active.png');
-
-  // 更新指定标记的标题
-  mainPanel.setActiveItem(marker.id);
-
-  // 更新指定标记的位置
-  map.setCenter(marker.position);
-} // activateMarker
-```
-
-```javascript
-}();
-```在这段代码中，我们创建了另一个设置在屏幕底部的 `Ext.Toolbar`。对于工具栏项目，我们指定了三个按钮，分别用于前进、后退以及另一个带我们进入资源详情页。
-
-每个按钮都分配了适当的事件处理器：`Next` 和 `Previous` 按钮会激活标记列表中的相应标记，而显示资源标题的按钮在点击时会将用户带到详情页。
-
-如果一切顺利，将显示一个与图 11–19 类似的屏幕。
-
-![](img/6c8091bf3a3d21ca91f25f8caed8840f_305.png)
-
-图 11–19。Sencha Touch 中 UI 的初始显示轻松地显示地图——令人印象深刻。
+**图 11–19。** Sencha Touch 中 UI 的初始显示轻松地显示地图——令人印象深刻。
 
 如你所见，我们布局的应用程序是适配屏幕大小的。因此，当我们必须做一些额外工作来设置 UI 时，将地图控件集成到 Sencha Touch 中让这里变得简单。我们现在需要继续用合适的位置初始化地图，并在地图上显示一些标记。
 
@@ -8302,7 +8814,7 @@ function activateMarker(marker) {
   // 更新指定标记的图标为激活状态
   marker.seticon('img/active.png');
 
-  // 更新指定标记的标题
+  // 更新指标记的标题
   mainPanel.setActiveItem(marker.id);
 
   // 更新指定标记的位置
@@ -8313,10 +8825,6 @@ function activateMarker(marker) {
 ```javascript
 }();
 ```
-
-
-
-
 
 # 第 12 章：应用程序的打磨与发布
 
@@ -8337,7 +8845,7 @@ function activateMarker(marker) {
 | mounzd-jm | 12/11/2010 10:00 AM | |
 | images | 12/11/2010 11:35 AM | |
 | downloads | 16/11/2010 07:45 PM | |
-| pro-android-web-apps | | | |
+| pro-android-web-apps | | |
 | index.html | jquery-1.4.2.min | 14/06/2010 11:48 AM | 74 KB |
 | jquery-1.4.4.min | 25/05/2010 03:52 PM | 82 KB |
 | jquery-mobile-1.0a2.css | 12/11/2010 11:35 AM | 53 KB |
@@ -8444,9 +8952,13 @@ div.noauth {
 }
 
 ```css
+
 #marker-nav span.has-detail {
+
   text-decoration: underline;
+
 }
+
 ```
 
 一旦这些更改完成，在模拟器中运行 Moundzd 应该像之前那样显示。图 12–2 显示了你应该看到的示例。
@@ -8456,27 +8968,43 @@ div.noauth {
 虽然屏幕显示正确，但功能尚未按预期工作。尝试验证将再次让你返回启动界面，因为在上一章中我们只是禁用了 Bridge 实例上的身份验证事件。然而，重启非常简单，如下代码所示：
 
 ```javascript
+
 MOUNDZ = (function() {
+
   var module = {
+
     addMarker: addMarker,
+
     clearMarkers: clearMarkers,
 
     findResources: findResources,
 
     init: function(zoomLevel) {
+
       // 初始化 google bridge
+
       geomer = new Bridge({
+
         app: 'moundz',
+
         login: 'login'
+
       });
+
     }
+
   })(geomer).bind('authenticated', function(evt) {
+
     $('#splash').hide();
+
     $('.noauth').removeClass('noauth');
+
   });
 
   // 运行应用
+
   run(zoomLevel, google.maps.LatLng(-33.86, 151.21));
+
 });
 
 ```javascript
@@ -8526,10 +9054,6 @@ HTML 不需要任何更改，只需将以下 CSS 添加到 `mounzd.css`文件的
   -webkit-box-pack: center;
 }
 ```
-
-
-
-
 
 注意：使用 CSS3 flexbox 布局是一个很好的选择，但当你查看代码和 HTML 元素时，可能会疑惑为什么没有使用简单的 `text-align` 规则。事实上，在 particular 特定情况下是可以的；然而，考虑到 jQuery Mobile 已经设置的一些其他 CSS 规则，它并不能产生同样美观的效果。
 
@@ -8597,7 +9121,7 @@ function activateMarker(marker) {
   .find('.ui-btn-text').
   .html(marker.getTitle());
 
-  // 更新激活标记的标题
+  // 更新激活标记的标title
   currentResource = marker.getTitle();
 
   // 更新标记导航控制
@@ -8671,10 +9195,6 @@ return module;
 ![](img/6c8091bf3a3d21ca91f25f8caed8840f_320_0.png)
 
 **图 12-6.** jQuery Mobile 提供了一个非常简洁的 UI。
-
-
-
-
 
 ## 第 12 章：发布应用的打磨与打包
 
@@ -8801,7 +9321,7 @@ MOUNDZ = (function() {
 首先，我们需要为 Moundz 创建目录。正如第 9 章所示，这通过复制现有项目简单完成。图 12–10 显示了你操作后的样子。
 
 | 名称 | 修改日期 | 大小 |
-| :--- | :--- | :--- |
+|:--- | :--- | :--- |
 | maptest | 02/11/2010 2:46 PM | -- |
 | moundz | 02/11/2010 2:46 PM | -- |
 | AndroidManifest.xml | 02/11/2010 4:25 PM | 4 KB |
@@ -8816,10 +9336,6 @@ MOUNDZ = (function() {
 | sample | 02/11/2010 2:46 PM | -- |
 
 图 12-10. 正如第 9 章所述，启动一个新的 PhoneGap 项目是一个简单的复制操作。
-
-
-
-
 
 ## 第 12 章：应用的打磨与发布打包
 
@@ -8838,6 +9354,7 @@ MOUNDZ = (function() {
 我们在第 9 章中没有涵盖的内容是除了名称引用之外的自定义 PhoneGap 应用程序其他部分。如果我们要把应用程序部署到 Android 市场，为我们的应用程序提供自定义图标而不是简单地使用 PhoneGap 默认图标，可能是一个好主意。
 
 关于图标，Google 提供了一些出色的文档，涵盖了应用程序中图标的一些要做和不要做的事项。这绝对值得一读，可以在以下 URL 找到：
+
 http://developer.android.com/guide/practices/ui_guidelines/icon_design.html
 
 此外，如果你可以使用 Photoshop (http://adobe.com/photoshop)，Google 还提供了一个用于构建应用程序图标的有用模板，该模板可以在上段落中提到的图标设计指南中找到。
@@ -8864,7 +9381,7 @@ http://developer.android.com/guide/practices/ui_guidelines/icon_design.html
 
 ## 调整应用程序权限
 
-如果你曾经安装过原生 Android 应用程序，你可能对在完成安装程序之前告知应用程序正在请求哪些权限的屏幕非常熟悉。图 12–15 显示了原生 Gowalla 应用程序权限安装屏幕的截图，让你对这类应用程序在安装时请求的权限类型有所了解。
+如果你曾经安装过原生 Android 应用程序，你可能对在完成安装程序之前告知应用程序正在请请哪些权限的屏幕非常熟悉。图 12–15 显示了原生 Gowalla 应用程序权限安装屏幕的截图，让你对这类应用程序在安装时请求的权限类型有所了解。
 
 ![](img/6c8091bf3a3d21ca91f25f8caed8840f_332_0.png)
 
@@ -8891,15 +9408,11 @@ http://developer.android.com/guide/practices/ui_guidelines/icon_design.html
 <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 ```
 
-
-
-
-
 # 第 12 章：为发布对应用程序进行优化与封装
 
 4. 此时，用户被隐式地返回（当浏览器窗口关闭时，最后一个浏览器窗口重新获得焦点）到我们的 Moundz 应用程序。在后台，Moundz 一直与 Gemini API 保持通信，并已确定我们已通过身份验证。然后，它将我们带到应用地图。
 
-一旦 Moundz 被封装在原生应用中，该过程会在第 3 步失败，这是因为 PhoneGap 内部处理打开新窗口的方式导致的。本质上，你在 PhoneGap 应用中使用的 WebView 代表单个浏览器窗口，如果打开了任何需要新窗口的链接，将由原生浏览器（而不是应用程序本身）处理。这是可以理解的也是处理此类请求的正确方式；但当 Google 尝试在第 3 步关闭浏览器窗口时，这就会产生影响。本质上，它失败了，用户被留在原生浏览器的认证界面上，没有明显的方法返回——这并非最优的用户体验。
+一旦 Moundz 被封装在原生应用中，该过程会在第 3 步失败，这是因为 PhoneGap 内部处理打开新窗口的方式导致的。本质上，你在 PhoneGap 应用中使用的 WebView 代表单个浏览器窗口，如果打开了任何需要新窗口的链接，将由原生浏览器（而不是应用程序本身）处理。这是可以理解的也是处理此类请请的正确方式；但当 Google 尝试在第 3 步关闭浏览器窗口时，这就会产生影响。本质上，它失败了，用户被留在原生浏览器的认证界面上，没有明显的方法返回——这并非最优的用户体验。
 
 好消息是，我们能够实现一个通融方案；但是，我们必须在原生级别进行操作。别担心——这个过程非常简单，不涉及编写任何 Java 代码。
 
@@ -8912,6 +9425,8 @@ Android Intent 是在 Android 平台上应用程序之间传递消息的结构�
 如果你使用 Android 设备，那么你可能经历过这种情况——例如，如果你正在浏览一个网页，点击链接后，你被带到了其中一个原生 Android 应用中，就像魔法一样。Android Market 和 YouTube 都是这样使用 intent 的。
 
 那么，让我们看看让 Moundz 响应 intent 有多复杂。我们需要做的第一件事是修改位于 Android PhoneGap 项目根目录下的 MoundzManifest.xml 文件。在这个文件中，我们将为应用程序定义添加一个额外的 intent-filter（意图过滤器）：
+
+
 
 ```xml
 <application android:icon="drawable/icon" android:label="app_name"
@@ -8965,7 +9480,9 @@ android:debuggable="true"
 本质上，Boris 的插件提供了从 JavaScript 调用 Android intent 的能力，并在当应用程序拦截到 intent 时对其做出响应。该插件的安装非常简单：
 
 1. 从此 GitHub 仓库 https://github.com/borimus/phonegap-plugins/tree/master/Android/WebIntent 下载 WebIntent.java 和 webintent.js 文件。
+
 2. 将 webintent.js 文件放入 Moundz Phonegap 项目的 assets/www 文件夹中。
+
 3. 将 WebIntent.java 文件放入 Phonegap 项目中 src/com 文件夹下的新 borimus 目录中。
 
 图 17 显示了完成这些步骤后应用程序文件夹的截图。
@@ -8973,10 +9490,6 @@ android:debuggable="true"
 在插件文件进入项目后，是时候开始准备就绪工作了。该过程的第一步是在项目中引入 phonegap.js 文件，并同时为 webintent.js 文件添加脚本包含。
 
 此外，当我们修改 index.html 文件时，我们将移除 body 的 on 事件 事件处理程序，因为我们需要开始对代码进行一些 PhoneGap 特定的修改。
-
-
-
-
 
 ## 第 12 章：为发布打磨并打包 App
 
@@ -9070,61 +9583,95 @@ function parseUrlParams(url) {
 
 
 ```javascript
+
 for (var ii = 0; ii < keyPairs.length; ii++) {
+
   // 根据 = 分割对，因为我们只处理这个部分
+
   var pair = keyPairs[ii].split('=');
 
   // 更新参数
+
   params[pair[0]] = pair.length > 1 ? pair[1] : null;
+
 }
+
 return params;
+
 ```
 
 这可能不是世界上可读性代码（充斥着正则表达式和三元运算符），但它的目的很简单。例如，如果我们传递了 URL：http://test.com/test.htm?param1=foo&param2=bar，那么 `parseUrlParams` 返回一个对象：
 
 ```javascript
+
 {
+
   param1: 'foo',
+
   param2: 'bar'
+
 }
+
 ```
 
 一旦我们有了这种格式的查询字符串参数，就可以将其传递给 `init` 函数。我们修改后的 `init` 函数如下：
 
 ```javascript
+
 MOUNDZ = (function() {
+
 ...
+
 var module = {
+
   ...
+
   init: function(args) {
+
     // 初始化参数
+
     args = $.extend({
+
       zoomlevel: null,
+
     }, args);
 
     // 初始化 geomer
+
     geomer = new WebIntentBridge({
+
       app: 'moundz',
+
       login: '#login',
+
       returnUrl: 'content/moundz/',
+
     }, args));
 
-
     $(geomer).bind('authenticated', function(evt) {
+
       $('#splash').hide();
+
       $('.noauth').removeClass('noauth');
 
       // 运行应用
+
       run(args.zoomLevel);
+
     });
+
   }
+
 };
 
 // 初始化屏幕
+
 initScreen();
 
 return module;
+
 })();
+
 ```
 
 
@@ -9142,36 +9689,57 @@ return module;
 运行该命令后，将生成与图 12–18 所示相似的输出。
 
 ```
+
 --package-resources:
+
 [echo] Packaging resources
+
 [skipping] skipping full resource package..
+
 [null] skipping hidden file /Volumes/development/projects/books-code-powebapps-code/bridge/res/assets/DS_Store
+
 [null] skipping hidden file /Volumes/development/projects/books-code-powebapps-code/bridge/res/drawable/DS_Store
+
 [null] skipping hidden file /Volumes/development/projects/books-code-powebapps-code/bridge/res/drawable/DS_Store
+
 [null] skipping hidden file /Volumes/development/projects/books-code-powebapps-code/bridge/res/drawable/hdpi/DS_Store
+
 [null] skipping hidden file /Volumes/development/projects/books-code-powebapps-code/bridge/res/drawable/DS_Store
+
 [null] Warning: AndroidManifest.xml already defines debuggable (in http://schemas.android.com/apk/res/android) using existing value in manifest.
+
 --package-release:
+
 [abs] creating moundz-signed.apk for release...
+
 --release-report-for-password:
+
 --release-sign:
+
 [echo] No key.store and key.alias properties found in build.properties.
+
 [echo] Please sign /Volumes/development/projects/books-code-powebapps-code/bridges/moundz/bin/moundz-signed.apk manually
+
 [echo] and run zipalign from the Android SDK tools.
 
 BUILD SUCCESSFUL
+
 Total time: 12 seconds
+
 damons:moundz damos[]
+
 ```
 
 图 12-18。运行发布模式下构建的输出——关于签名的注释。
 
-在图中，您可能会注意到 Ant 构建生成的某些输出，提到没有可用的 `key.store` 或 `key.alias` 属性对我们的应用程序进行签名。这阻止了构建脚本成功对我们的应用程序进行签名，如果我们想分发应用程序，这是必须。
+在图中，您可能会注意到 Ant 构建生成的某些输出，提到没有可用的 `key.store` 或 `key.alias` 属性对我们的应用程进行签名。这阻止了构建脚本成功对我们的应用程序进行签名，如果我们想分发应用程序，这是必须。
 
 要对我们的应用程序进行签名，您做的的第一件事是生成一个私钥。这可以通过运行以下命令来实现（但是您应该将密钥库和别名都改为更符合您配置的内容）：
 
 ```
+
 keytool -genkey -v my-release-key.keystore -alias alias_name -keyalg RSA keystore 2048 -validity 10000
+
 ```
 
 运行此命令将显示与图 12–19 所示的输出。
@@ -9183,40 +9751,58 @@ keytool -genkey -v my-release-key.keystore -alias alias_name -keyalg RSA keystor
 创建密钥库后，我们现在可以修改您的 `build.properties` 文件并指定其位置，以便构建脚本作为构建过程的一部分对您的应用程序进行签名。根据您的应用程序需求，在添加 `key.store` 和 `key.alias` 属性后，此文件中不需要额外设置，我们的 `build.properties` 文件应该如下：
 
 ```
+
 key.store=/path/to/release-key.keystore
+
 key.alias=your_alias
+
 ```
 
 现在，有了这些设置，我们准备好尝试以发布模式重新构建应用程序。如果一切进展顺利，您应该会在构建过程中被提示输入密钥库和别名密码。提供正确的密码，您的应用程序将通过签名并准备好发布。图 12–20 显示了成功构建时生成的输出示例。
 
 ```
+
 [null] (skipping file /Volumes/development/projects/books-code-prowebbapps-bridz/res/drawable-os_Store)
+
 [null] (skipping file '/Volumes/development/projects/books-code-prowebbapps-bridz/res/drawable-hdpi_os_Store)
+
 [null] (skipping file /Volumes/development/projects/books-code-prowebbapps-bridz/res/drawable-ldpi_os_Store)
+
 [null] (skipping file file /Volumes/development/projects/books-code-prowebbapps-bridz/res/drawable-mdpi_hdpi
+
 [null] Warning: AndroidManifest.xml already defines debuggable (http://schemas.android.com/ak/res/) using existing value in manifest.
 
 -package-release:
+
 [apkbuilder] Creating mound-unsigned.apk for release...
 
 -release-prompt-for-password:
+
 [input] Please enter keystore password (store:/development/projects/mobile/release-key.keystore)
+
 [input] Please enter password for alias 'sidelab'
 
 -release-nosign:
+
 release:
+
 [echo] Signing final apk...
+
 [signjar] Signing JAR : /Volumes/development/projects/books-code-powebbapps-code/mundz/bin/mound-unsigned.apk TO /Volumes/development/projects/books-code-powebbapps-code/mundz/bin/mound-unsigned.apk as sidelab
+
 [echo] Running zip -al alias on final apk...
+
 [echo] Release Package: /Volumes/development/projects/books-code-powebbapps-code/mundzmoundrelease.apk.
 
 BUILD SUCCESSFUL
+
 Total time: 24 seconds
+
 damon:mundz damos
 
 **图 12-20**。在生成私钥并向构建脚本提供细节后，我们的构建过程成功签名了我们的应用程序。
 
-如果您查看 Moundz PhoneGap 文件夹中的 `bin` 文件夹，您将看到许多文件。最重要的就是 `release-apk`。图 12–21 显示了生成的输出示例。
+如果您查看 Moundz PhoneGap 文件夹中的 `bin` 文件夹，您将看到许多文件。最重要的就是 `release-apk`。图 12–21 显示了生成的输出。
 
 ![](img/6c8091bf3a3d21ca91f25f8caed8840f_343_0.png)
 
@@ -9325,10 +9911,6 @@ damon:mundz damos
 
 在下一章中，我们将通过查看移动计算的一些未来趋势来结束本书。希望这些内容能提供一些思考，甚至可能为您提供一些您想要探索的想法。
 
-
-
-
-
 ## 全球现象
 
 移动计算的普及不仅限于成熟市场。事实上，对于新兴市场和国家，由于解决方案的成本效益，移动宽带技术正在取代传统的“固定电话”进行部署。图 13-1 通过展示移动端 Twitter 客户端 Tweete (http://m.tweete.net) 的月流量图表，帮助说明了这一点。在这张特定的图表中，我们可以看到 Tweete 的大部分流量来自印度尼西亚。其主要原因是，像印度尼西亚这样的国家，移动宽带比固定宽带更普及，因此轻量级移动客户端可以比笨重的桌面端（以及未优化的）移动客户端获得更好的关注。
@@ -9362,6 +9944,7 @@ damon:mundz damos
 这些数据（源自 StatCounter: http://gs.statcounter.com）显示了几点：
 
 - Android 设备的使用量正在上升，但仍是市场的一小部分。
+
 - 虽然用于浏览网页的最流行移动平台是 iOS（iPhone, iPod Touch, iPad），但仍有许多活跃使用的浏览器不支持 HTML5 和 CSS3（例如，Opera Mini: www.opera.com/mobile）。
 
 为了帮助展示当前的 HTML5 与非 HTML5 设备的趋势，图 13-13 将数据简化为两类：支持 HTML5 和非 HTML5。
@@ -9384,7 +9967,7 @@ damon:mundz damos
 
 > 注意：虽然目前人们迷于使用原生技术进行移动开发，但我们坚信历史在移动设备上的重演将与桌面设备上完全一样。
 
-这确实是一个风险与回报权衡的情况，因为许多障碍阻碍了以 Web 为导的移动开发。我们认为社区已经向设备制造商传递了一个信息，即移动开发是重要的，是需要优先考虑的。我们也相信他们听到了这个信息，事情开始向好发展了。
+这确实是一个风险与回报权衡的情况，因为许多障碍阻碍了以 Web 为导的移开发。我们认为社区已经向设备制造商传递了一个信息，即移动开发是重要的，是需要优先考虑的。我们也相信他们听到了这个信息，事情开始向好发展了。
 
 ## 工具和库的改进
 
@@ -9393,36 +9976,58 @@ damon:mundz damos
 # 第 13 章：移动计算的未来
 
 | 平台 | 版本 | Native | Opera Mobile | Opera Mini | Fennec | Phonegap |
+
 |---|---|---|---|---|---|---|
+
 | iOS | | 8.5 | 9.5 | 10.0 | 4.0 | 1.1 |
-| | 2.2 | | | | | |
-| | 3.1.3, 3.2 | | | | | |
-| Symbian S60 | 3.1, 3.2 | | | | | |
+
+| | 2.2 | | | | | | |
+
+| | 3.1.3, 3.2 | | | | | | |
+
+| Symbian S60 | 3.1, 3.2 | | | | | | |
+
 | | 5.0 | | | | | | |
-| Symbian UIQ | 3.0, 3.1 | | | | | |
+
+| Symbian UIQ | 3.0, 3.1 | | | | | | |
+
 | | 3.2 | | | | | | |
+
 | Symbian Platform | 3.0 | | | | | | |
+
 | | 4.5 | | | | | | |
+
 | | 4.6, 4.7 | B | | | | | |
+
 | Blackberry OS | 5.0 | B | | | | | |
+
 | | 6.5.1 | | | | | A | C |
+
 | | 7.0 | | | | | | C |
+
 | Android | 1.5 | A | | | | | |
+
 | | 1.6 | A | | | | | |
+
 | | 2.1 | A | | | | | |
+
 | | 2.2 | | | | | A | C | A |
+
 | Windows Mobile | 6.1 | F | C | C | B | B | C | C |
+
 | | 6.5.1 | | | | | | |
+
 | | 7.0 | | | | | | |
+
 | webOS | 1.4.1 | A | | | | | | |
+
 | bada | 1.0 | A | | | | | | |
+
 | Maemo | 5.0 | C | | | B | | C | B |
+
 | MeeGo | 1.1 | A | | | | A | | A |
 
-此外，作为开发者，我们只能希望未来的移动 Web 开发工具有所改进。虽然集成开发环境 (IDE) 通常会对 Web 开发产生干扰，但为移动设备提供合适的测试和调试工具对于未来的移动 Web 开发将至关重要（就像 Firebug 对推动 Web 开发的发展一样）。
-
-
-
+此外，作为开发者，我们只能希望未来的移动 Web 开发工具有所改进。虽然集成开发环境 (IDE) 通常会对 Web 开发产生干扫，但为移动设备提供合适的测试和调试工具对于未来的移动 Web 开发将至关重要（就像 Firebug 对推动 Web 开发的发展一样）。
 
 使用 Chrome 等桌面浏览器可以完成很多工作，但针对特定设备的开发工具确实是不可替代的。
 
@@ -9433,9 +10038,10 @@ damon:mundz damos
 鉴于这是一本关于 Android Web 开发的书籍，这可能被认为是一个奇怪的评论，但让我们来看看围绕移动和桌面计算的一些行业趋势：
 
 - 人们对用 Web 操作系统替代当前的桌面操作系统表现出了浓厚兴趣。Web 操作系统的实现通常通过使用 Linux 之类的工具来与硬件的交互，然后通过 Web 呈现层为用户提供操作系统“桌面”。Web 操作系统的两个例子是 Google 的 Chrome/Chromium OS (www.chromium.org/chromium-os) 和 Joyent 的 Jolicloud (www.jolicicloud.com)。
+
 - 现代移动操作系统正在展现出持续的创新，它们在桌面平台被广泛采用之前，极有可能转向实现 Web 操作系统（正如 Palm 所展示的那样）。
 
-考虑到这些趋势和当前的 Palm webOS 架构，未来的移动设备架构将会是什么样？无疑，一种可能性是具有浓厚 Web 风格的设备架构，这如图 13-5 所示。
+考虑到这些趋势和当前的 Palm webOS 架构，未来的移动设备架构将会是什么样？毫无疑问，一种可能性是具有浓厚 Web 风格的设备架构，这如图 13-5 所示。
 
 ![](img/6c8091bf3a3d21ca91f25f8caed8840f_355_0.png)
 
@@ -9475,16 +10081,13 @@ damon:mundz damos
 
 如前，移动设备可以拥有许多硬件传感器。想象这些传感器能够（通过适当的隐私控制）与中央系统共享信息。这可能包括特定位置的天气和交通信息等数据。
 
-已经创建传感器网络的现有移动应用程序及其配套网站示例包括 Waze (http://waze.com) 和 NoiseTube (www.noisetube.net)。Waze 是一个移动应用程序，会在你在当地地区行驶时收集 GPS 读数。这些信息被反馈到 Waze 并用于生成可以在所有用户之间共享的地图信息。图 13-6 显示了 Waze 移动界面的截图，它目前实现为原生界面，但未来可以很容易实现为移动 Web 应用。
+已经创建传感器网络的现有移动应用程序及其配套网站示例包括 Waze (http://waze.com) 和 NoiseTube (www.noisetube.net)。Waze 是一个移动应用程序，会在你在当地地区行驶时收集 GPS 读数。这些信息被反馈到 Waze 并用于生成可以在所有用户之间共享的地 map 信息。图 13-6 显示了 Waze 移动界面的截图，它目前实现为原生界面，但未来可以很容易实现为移动 Web 应用。
 
 ![](img/6c8091bf3a3d21ca91f25f8caed8840f_358_0.png)
 
 **图 13-6. Waze 移动界面——不是 Web UI，但通过 HTML5 它可以实现。**
 
 Waze 是一个利用传感器收集信息的极佳示例。支持传感器网络的更通用的示例是一个名为 Pachube (www.pachube.com) 的平台网站/应用网络。图 13-7 显示了 Pachube 首页的截图，显示了向网络回馈信息的传感器数量。这些传感器通常是微型嵌入式设备，但也可以轻松地作为移动设备。
-
-
-
 
 ## 人类传感器
 
@@ -9532,7 +10135,7 @@ JSLint 会检查编码过程中发生的常见错误，例如缺少分号和“�
 
 # 使用 Google Chrome 开发者工具进行调试
 
-在过去的几年里，用于处理 JavaScript 的工具已经有了巨大的提高。第一个值得一提的是 Firebug，它在开发过程中实现了代码调试（参见 http://getfirebug.com）。其次，对于我们这些在移动领域工作的人来说，Chrome 和 Chromium 项目 (http://chromium.org) 正在进一步提升这种成熟度。
+在过去的几年里，用于处 JavaScript 的工具已经有了巨大的提高。第一个值得一提的是 Firebug，它在开发过程中实现了代码调试（参见 http://getfirebug.com）。其次，对于我们这些在移动领域工作的人来说，Chrome 和 Chromium 项目 (http://chromium.org) 正在进一步提升这种成熟度。
 
 在 Chrome 或 Chromium 中使用 Chrome 开发者工具 (www.chromium.org/devtools) 的主要优势是你再次使用了 WebKit 渲染引擎，这意味着你的 JavaScript 代码将以相同的方式解释。这为开发者在桌面和移动平台之间识别和调试问题提供了共同基础。
 
@@ -9565,9 +10168,6 @@ throw new Error("This is a test exception");
 
 要在运行代码的上下文中查看错误，只需点击屏幕右侧显示的带有下划线的文件即可。你将被带到资源（Resources）部分，那里显示了警告/错误是从生成的。
 
-
-
-
 调试和信息消息未显示。图 2 显示了资源（Resources）面的示例。
 
 ![](img/6c8091bf3a3d21ca91f25f8caed8840f_364_0.png)
@@ -9584,7 +10184,7 @@ throw new Error("This is a test exception");
 
 断点的功能就像你 DVD 播放器上的暂停按钮。它会让代码在你设置的任何地方停止运行。你可以在任何地方设置断点——只需点击行号，代码在到达该行时就会暂停。暂停代码执行有什么用呢？嗯，一旦进入断点，你就能立即获得脚本的快照，包括所有的变量。这非常有用，例如可以查看一个变量是否已设置或仍为空。你甚至可以在运行时更改变量的值。你还可以检查调用栈（call stack），这在你处理复杂的函数时会非常方便，并且可以确切知道是谁在调用谁。例如，如果你在由 `getNewTask()` 函数调用的 `retrieveTaskDetails()` 函数内部设置了断点，你将在调试工具中看到这种树形结构。
 
-在检查脚本后，你有不同的选项：单步（step over）、单步进入（step in）和停止（stop）。单步就像在视频暂停后按下 DVD 播放器上的播放按钮——你的脚本将继续运行直到到达结束或另一个断点。如果你的断点在一个在调用另一个函数的行上，可以使用单步进入。你可以进入此函数，脚本将冻结在该函数的第一条语句处。当然，你可以通过点击停止来随时停止脚本。
+在检查脚本后，你有不同的选项：单步（step over）、单步进入（step in）和停止（stop）。单步就像在视�暂停后按下 DVD 播放器上的播放按钮——你的脚本将继续运行直到到达结束或另一个断点。如果你的断点在一个在调用另一个函数的行上，可以使用单步进入。你可以进入此函数，脚本将冻结在该函数的第一条语句处。当然，你可以通过点击停止来随时停止脚本。
 
 ![](img/6c8091bf3a3d21ca91f25f8caed8840f_365_0.png)
 
@@ -9650,348 +10250,631 @@ adb logcat WebCore: *
 # 特殊字符
 
 - #alltasks div, 86
+
 - #app div, 242, 259, 301, 304
+
 - #ijqt container requirement, 273
+
 - #ijqt div element, 273–274
+
 - #login area, 246
+
 - #main div, 284
+
 - #main element, 82
+
 - #mapper div, 274
+
 - #marker-detail page, 309
+
 - #marker-detail content, 309
+
 - #marker-detail page, 274, 285
+
 - #marker-detail screen, 311
+
 - #marker-nav bar, 274
+
 - #marker-nav div, 287
+
 - #marker-nav element, 178, 275, 302, 305
+
 - #menu element, 70
+
 - #resisail div, 314
+
 - #splash div, 242, 301, 304
+
 - #tweets element, 222
+
 - #ajax function, 225
+
 - #extend function, 331
 
 - adb command, 200–201
+
 - adb devices command, 202
+
 - adb logcat, 357
+
 - adb tool, 357
+
 - adb View, 84
+
 - addMarkerFunction, 183, 186, 188–189, 309
+
 - adt plug-in, 11
+
 - ajax function, 229
+
 - All Tasks screen, building, 85–90
+
 - All Tasks view, 116
+
 - allscreens.css stylesheet, 35
+
 - altaskake view, 117
+
 - altitude property, 119
+
 - altitudeAccuracy property, 119
+
 - anchor tag, 70–285
+
 - android command-line tools, 198, 210
+
 - android debug bridge, debugging with, 357–358
+
 - android directory, 194–195
+
 - android file, 12
+
 - Android Virtual Devices (AVDs), creating, 12–14
+
 - Android web apps, 200
+
 - android.css stylesheet, 290
+
 - android.database.sqlite package, 5
+
 - android.exe file, 12
+
 - android.hardware.Camera class, 5
+
 - AndroidManifest.xml file, 196, 212, 214, 322–334
+
 - ANDROID_SDK/tools directory, 201
+
 - animate function, 138, 139, 152, 158
+
 - ANIMATION_DURATION constant, 152
+
 - animations, 137–148
+
 - with action bars, 116–117
+
 - canvas
+
 - drawing images, 142–148
+
 - transformations, 153–160
+
 - creating loops, 137–138
+
 - creating realistic movement, 149–152
+
 - and device DPI, 142–148
+
 - drawing frames for, 138–142
 
 # A
 
 - a 0.0.0.0 parameter, 100
+
 - accelerometer, data capture of PhoneGap sample application, 204–205
+
 - accelerometer.clearWatch function, 205
+
 - accelerometer.watch method, 205
+
 - accuracy property, 119
+
 - action bars, 116–117
+
 - action button, 66
+
 - actionCounter variable, 70
+
 - activateMain function, 105
+
 - activateMarker function, 183, 186, 188, 267–268, 276, 284–297, 309
+
 - activeView variable, 69
-
-
-
 
 # 索引
 
 - 画布路径, 141–142
+
 - 示例, 139–141
+
 - 加载动画器, 112–112
+
 - 用于可滚动内容, 115–116
+
 - ant 调试安装, 318
+
 - ant 调试模式, 210
+
 - ant 调试目标, 199
+
 - ant 发布命令, 332
+
 - api-version, 235
 
 - 桥接 (bridges), 已定义, 195
+
 - bridges/Sample 文件夹, 195
+
 - 桥接框架。参见 PhoneGap
+
 - 浏览器类别, 325
+
 - 浏览器, WebKit, 6
+
 - build.properties 文件, 333
+
 - build.xml 文件, 197, 201, 210
 
 - APIs（编程接口）
+
 - 地理位置 (Geolocation), W3C 规范, 118–122
+
 - HTML5 存储, 47–63
+
 - Appator, 194
+
 - 外观属性 (appearance property), 31
+
 - 应用定义, 324
+
 - 应用权限, 修改, 321–323
+
 - 应用编程接口。参见 APIs
 
 - CDM（云到设备消息）, 5
+
 - cache.manifest 文件, 123–124
+
 - 离线缓存, 124–125
+
 - manifest 文件, 122–124
-- 回调参数, 55
+
+- 回调参参数, 55
+
 - 相机, 在 PhoneGap 应用中, 205–208
+
 - 相机支持, 5
+
 - camera.DATA_URL, 值, 207
+
 - camera.addMarker 函数, 179
+
 - camera.init 函数, 197
+
 - arc 方法, 142
+
 - args 参数, 331
+
 - array_sort 方法, 80
+
 - assets/folder 文件夹, 196, 214, 216, 317
+
 - assets/img 目录, 214
+
 - 身份验证, 161
+
 - Mund 中的身份验证过程, 323–324
+
 - 身份验证事件, 203
+
 - 作者, 25–26
+
 - 自动售票机 (ATM), 161
+
 - 自动取款机 (ATM), 161
+
 - AVDs (Android 虚拟设备), 创建, 12–14
 
 - camera.getPicture, 206
+
 - camera.Pictures.CAMERA_VALUE, 值, 207
+
 - Camera.PictureObjectType.PHOTOLAR, 207
+
 - 画布 (canvas), 129–141
+
 - 动画, 137–148
+
 - 创建循环, 137–138
+
 - 及其设备 DPI, 142–148
+
 - 绘制帧, 138–142
+
 - 交互式绘制到, 132–137
+
 - 通过鼠标事件, 132–134
+
 - 路径, 141–142
+
 - 变换, 153–160
+
 - canvas 标签, 130
+
 - car-easing.js 文件, 150
+
 - car.js 文件, 143
+
 - car 变量, 152
+
 - challenge 目录, 271
+
 - changeVersion 方法, 62
+
 - ChangeView 类, 117
+
 - child-screen 类, 180
+
 - child-screen div, 181
+
 - Chrome 开发者工具, 58–59, 223, 352–353
+
 - class 属性, 33
+
 - className 属性, 117
 
 ## B
 
 - 返回按钮, 66
+
 - 返回链接 (back Link), 91
+
 - backAction 处理程序, 93
+
 - beep 方法, 208
+
 - beginPath 方法, 131, 142
-- bin 文件夹, 334
+
+- bin 文件夏, 334
+
 - bind 方法, 39, 45, 267
+
 - 模糊半径属性 (Blur radius property), 32
+
 - body onload 标签, 26
+
 - body 标签, 264, 289, 327
+
 - 圆角半径属性 (border-radius property), 31
+
 - Boris 目录, 327
+
 - 阴影属性 (box-shadow property), 32
+
 - 断点点 (breakpoint), 359
+
 - Bridge Code, 250
 
 - clear 处理程序, 54
+
 - clear 方法, 48
+
 - clearTimeout 函数, 38
+
 - clearWatch 方法, 240
+
 - 点击事件, 285, 287
+
 - 客户端数据库, 存储项, 96–101
 
 - 云端服务器, 同步, 95–110
+
 - Google App Engine, 98–102
+
 - 制作桌面界面, 110
+
 - 内联存储选项, 97
+
 - 更新用户界面, 103–106
 
 - 云到设备消息 (CDM), 5
+
 - com/phonegap/Sample 目录, 221
+
 - com/proverbaps/maptest, 目录, 216
-- com/phonegap/Sample 参考, 212
+
 - com/phonegap.Sample.Sample 类, 212
+
 - com.proverbaps.maptest, 212
-- 连接状态, 检测, 126–127
+
+- 连接状态, 检浫, 126–127
+
 - 货币, 2–3
 
 - 调试, 使用 Chrome 开发者工具, 消息和错误, 352–354
+
 - content/moundz, 325
+
 - context.clearRect 方法, 141
+
 - context.restore(), 155
+
 - context.save(), 141, 155
+
 - 坐标类型 (Coordinates type), 118
+
 - coords 属性, 18
+
 - 圆角属性, 112
 
 - CREATE TABLE 语句, 61
+
 - create-task-form.html, 64
+
 - createFooter, 294
+
 - createHeader, 292–294
+
 - creationCallback 参数, 55
 
 - Crockford Douglas, 50
+
 - css 目录, 263, 289
+
 - css.io 类, 264
+
 - 移动端 HTML 表单的 CSS 样式, 79–81
+
 - 不同屏幕尺寸, 34
+
 - 以及方向变化, 35–39
+
 - CSS 定义, 30–33
 
 - 外观属性 (appearance property), 31
+
 - 圆角半径属性, 31
+
 - 阴影属性, 32
+
 - 渐变填充, 32–33
+
 - currentResource 变量, 209, 311
+
 - currentTasks 变量, 86
 
 - data 属性, 282
+
 - data-icon-attribute, 282
+
 - data-icon-copy 属性, 306
+
 - data-id 属性, 282
+
 - data-role 属性, 282, 293
+
 - data-role 类型, 285
+
 - data-field="contain" 属性, 310
+
 - 数据传输对象 (DTO), 57
+
 - 数据库参数, 55
+
 - 数据库, 存储, 5
+
 - Date().getTime() 函数, 152
+
 - datetime 列, 61
+
 - datetime 类型, 61
+
 - 调试, 使用 Android 调试, 351–357
+
 - 在控制台中捕捉消息和错误, 352–354
+
 - 使用 Elements 标签检查 DOM, 356–357
+
 - 脚本调试, 354–356
+
 - 声明式框架, 移动 UI 框架, 325
+
 - 默认主题, 273
+
 - 默认函数, 69
+
 - DELETE 操作, 55
+
 - 部署应用, Moundz, 299–331
+
 - 以及 Android 意图, 324–326
+
 - 身份验证过程, 323–324
+
 - 使用 PhoneGap 插件处理意图, 326–331
+
 - 屏幕, 299–305
+
 - 修改应用权限, 321–323
+
 - 描述参数, 55
+
 - 桌面计算 vs. 移动计算, 339
+
 - 桌面界面, 服务, 109–110
+
 - 部署 json 实例, 107–109
+
 - destinationTypeValue, 207
+
 - 详情, 297
+
 - 开发者工具, 58–59
+
 - 开发, 8–16
+
 - 创建 AVDs, 12–14, 开始, 14–16
+
 - 模拟器, 11–16
+
 - 文本, 以及工作目录, 8–9
+
 - Web 服务器, 9–11
+
 - Mongoose, 9–10
+
 - SD 卡项, 11
+
 - 工作目录, 文本,
 
 - @android_web_apps 命令, 200
+
 - 模拟器命令, 201
+
 - 模拟器可执行文件, 200
+
 - 模拟器, 11–16
+
 - enableHighAccuracy , 240
+
 - endAngle 变量, 158
+
 - errorCallBack 参数, 55
+
 - estimatedSize 参数, 55
+
 - executeSql 方法, 55
+
 - Ext.Button 类, 293
+
 - Ext.Button 对象, 293
+
 - Ext.Panel, 290–291
+
 - extraGaussian 参数, Tasks, 79–80
+
 - Ext.setup 函数, 290
+
 - Ext.Toolbar 类, 293–294
 
 - 设备架构, 344–344
+
 - device-dpi 设置, 143
+
 - deviceReady 事件, 328–329
+
 - 目录, 以及文本, 8–9
+
 - displayErrors 函数, 41
+
 - div 元素, 257, 274, 283, 302
+
 - dockedItems 数组, 292
+
 - doc_taskJson, doc_task_id 参数, 102
+
 - DOM (文档对象模型), 使用 Elements 标签检查, 356–357
+
 - DOMTimestamp, 118
+
 - 每英寸像素 (DPI), 设备, 142–148
+
 - double 类型, 119
+
 - 下载 GooglePath, 194–195
+
 - DPI (每英寸像素), 设备, 142–148
+
 - drawable-dpi 文件夹, 320
+
 - drawable-ldpi 文件夹, 320
+
 - drawable-mpdi 文件夹, 320
+
 - 交互式绘制, 到 HTML5 画布, 132–137
+
 - 通过鼠标事件, 132–134
+
 - 通过触摸事件, 134–137
+
 - drawTo 方法, 131
+
 - draw 函数, 158
+
 - drops.html 文件, 137
+
 - drops.js 文件, 137
+
 - 数据传输对象 (DTO), 57
+
 - 字段, 61
 
 - fabric.js 库, 142
+
 - FALLBACK 关键字, 124
+
 - FALLBACK.NETWORK 关键字, 124
+
 - features, 7, 148
+
 - feedback, for form validation, 40–46
+
 - fillRect 方法, 155
+
 - findResources function, 236–240
+
 - for loop, 101–102, 236
+
 - form elements, for mobile HTML forms, 26–27
+
 - form validation, for mobile HTML forms overview, 39–40
+
 - providing feedback for, 40–46
+
 - foursquare app, 141
+
 - foursquare network, 163
+
 - frequency option, 205
 
 ## G
 
 - gather function, 315
+
 - gather for, 315
 
 ## E
+
 - Geolocation, W3C 规范, 118–122
+
 - geolocation element, 119
+
 - connecting to social APIs, 165
+
 - finding resources with, 238–341
 
 - Geolocation APIs, 118–122
+
 - geolocation element, 119
+
 - connecting to social APIs, 165
+
+
+
 - finding resources with, 238–341
 
 ## F
+
 - FALLBACK 关键字, 124
 - FALLBACK.NETWORK 关键字, 124
 - features, 7, 148
@@ -10003,7 +10886,8 @@ adb logcat WebCore: *
 - form validation, for mobile HTML forms overview, 39–40
 
 ## G
--- Google Chrome 开发者工具, 消息和错误, 352–354
+
+- Google Chrome 开发者工具, 消息和错误, 352–354
 - Google Maps API, 165–166
 - 添加标记到, 169–171
 - google.maps.LatLng 对象, 240
@@ -10011,10 +10895,6 @@ adb logcat WebCore: *
 - google.maps.Marker 类, 170
 - ToGo 方法, 276
 - gotoPosition 函数, 251, 295
-
-
-
-
 
 # 索引
 
@@ -10300,27 +11180,16 @@ adb logcat WebCore: *
 - processResourceSearch 函数, 236
 - 主动增强与多计算, 339–342
 - PaaS (平台即服务), 98
-
-
-
-
-
 # 索引 378
-
 PROWBAPPS.ViewAction 类, 70–71
 PROWBAPPS.ViewManager 模块, 68, 85, 91, 93
 PROWBAPPS.ViewManager.activate('main'), 94
 PROWBAPPS.ViewManager.back() 函数, 94
 PROWBAPPS.ViewManager.define 函数, 69
-
 推送通知与消息传递, 5-6
-
 # Q
-
 - 质量值 (quality value), 207
-
 # R
-
 - radius 属性, 31
 - readTransaction 方法, 55
 - ready 函数, 119
@@ -10351,9 +11220,7 @@ PROWBAPPS.ViewManager.define 函数, 69
 - rotation.html 文件, 154
 - rotation.js 文件, 154
 - run 函数, 71, 238–240–259–304, 331
-
 # S
-
 - sample-debug.apk, 210
 - 示例目录 (Sample directory), 195, 201
 - 示例 PhoneGap 文件夹 (Sample PhoneGap application folder), 196
@@ -10404,7 +11271,6 @@ PROWBAPPS.ViewManager.define 函数, 69
 - /snippets/01/helloworld.html 文件, 19
 - snippets 目录 (snippets directory), 19
 - snippets 样式表 (snippets stylesheet), 50
-
 - 社交 APIs (social APIs), 221–254
     - 连接, 221–231
     - 带有 Geomeriner API, 230–231
@@ -10414,7 +11280,6 @@ PROWBAPPS.ViewManager.define 函数, 69
     - 使用 QOL, 228–230
 - synchronizeOnline() 函数, 103, 114
 - synchronizeTasks 函数, 103
-
 - 击事件 (tap events), 285
 - 击处理程序 (tap handlers), 287
 - 无点击标记选择 (tapless marker selection), 187–190
@@ -10446,7 +11311,7 @@ PROWBAPPS.ViewManager.define 函数, 69
     - 带有 Geomeriner API 查找资源, 234–237
     - 使用地理定位跟踪位置, 238–241
     - 用户登录 (user login), 241–254
-    - 针对屏幕, 242–245
+    - 针对屏 screen, 242–245
     - 通过 Geomeriner 认证, 250–254
     - 使用 JavaScript 应用, 245–250
 - sort 函数, 191
@@ -10517,7 +11382,6 @@ PROWBAPPS.ViewManager.define 函数, 69
     - 功能, 77–78
 - ViewManager.activate 方法, 72, 78
 - viewport meta 标签 (viewport meta tag), 23–25, 143
-
 - ui-btn-text 类, 285
 - ui-btn-text span, 285
 - UI (用户界面) (user interfaces):
@@ -10526,7 +11390,6 @@ PROWBAPPS.ViewManager.define 函数, 69
     - 在...中实现导航, 180–184
     - 使用导航栏选择标记, 184–192
     - 与云服务同步的更新, 103–106
-
 - ul 元素, 44
 - ul (无序列表), 28
 - 卸载目标 (uninstall target), 199
@@ -10540,4 +11403,3 @@ PROWBAPPS.ViewManager.define 函数, 69
 - updateViewStack 函数, 91
 - Urbanspoon 应用, 162
 - URL 栏, 自动隐藏, 255
-

@@ -1,28 +1,26 @@
-# 前端代码练习场：HTML、CSS和JavaScript技能提升练习
 
-献给
+# 前端代码练习场：HTML、CSS 和 JavaScript 技能提升练习
+
+献给：
 
 亚历克西斯和塞巴斯蒂安·斯维基斯
 
-感谢你们的支持
+感谢你们的支持。
 
 ## 更改背景颜色
 
-描述：
+### 描述
 
 在本练习中，学生将创建一个简单的网页，其中包含一个按钮，点击该按钮可更改页面的背景颜色。本练习介绍基本的 DOM 操作和事件处理。
 
-涵盖主题：
+### 涵盖主题
 
-● HTML 结构
+- HTML 结构
+- CSS 样式
+- JavaScript 事件监听器
+- DOM 操作
 
-● CSS 样式
-
-● JavaScript 事件监听器
-
-● DOM 操作
-
-HTML：
+### HTML
 
 ```html
 <!DOCTYPE html>
@@ -40,7 +38,7 @@ HTML：
 </html>
 ```
 
-CSS：
+### CSS
 
 ```css
 body {
@@ -59,7 +57,7 @@ cursor: pointer;
 }
 ```
 
-JavaScript：
+### JavaScript
 
 ```javascript
 document.getElementById('changeColorButton').addEventListener('click', function() {
@@ -77,21 +75,18 @@ return color;
 
 ## 显示/隐藏文本
 
-描述：
+### 描述
 
 在本练习中，学生将创建一个网页，其中包含一个按钮，用于切换段落的可见性。本练习介绍使用 JavaScript 显示和隐藏元素的概念。
 
-涵盖主题：
+### 涵盖主题
 
-● HTML 结构
+- HTML 结构
+- CSS 样式
+- JavaScript 事件监听器
+- DOM 操作（显示/隐藏元素）
 
-● CSS 样式
-
-● JavaScript 事件监听器
-
-● DOM 操作（显示/隐藏元素）
-
-HTML：
+### HTML
 
 ```html
 <!DOCTYPE html>
@@ -110,7 +105,7 @@ HTML：
 </html>
 ```
 
-CSS：
+### CSS
 
 ```css
 body {
@@ -133,7 +128,7 @@ font-size: 18px;
 }
 ```
 
-JavaScript：
+### JavaScript
 
 ```javascript
 document.getElementById('toggleTextButton').addEventListener('click', function() {
@@ -148,21 +143,18 @@ text.style.display = 'none';
 
 ## 向列表添加项目
 
-描述：
-
-
-
+### 描述
 
 在本练习中，学生将创建一个包含输入字段和按钮的网页，用于向列表添加项目。本练习介绍如何创建新元素并将其附加到 DOM。
 
-涵盖主题：
+### 涵盖主题
 
 - HTML 结构
 - CSS 样式
 - JavaScript 事件监听器
 - DOM 操作（创建和附加元素）
 
-HTML：
+### HTML
 
 ```html
 <!DOCTYPE html>
@@ -182,7 +174,7 @@ HTML：
 </html>
 ```
 
-CSS：
+### CSS
 
 ```css
 body {
@@ -215,7 +207,7 @@ margin: 5px 0;
 }
 ```
 
-JavaScript：
+### JavaScript
 
 ```javascript
 document.getElementById('addItemButton').addEventListener('click', function() {
@@ -232,158 +224,223 @@ itemInput.value = '';
 
 ### 多项选择题
 
-在 JavaScript 中，用于检测按钮点击的事件监听器是什么？
+#### 1. 在 JavaScript 中，用于检测按钮点击的事件监听器是什么？
 
 a) `click`
+
 b) `mouseover`
+
 c) `keydown`
+
 d) `load`
 
-答案：a) `click` 解释：`click`事件监听器用于检测按钮被点击的时刻。
+**答案：**a) `click`
 
-如何使用 JavaScript 更改网页的背景颜色？
+**解释：**`click`事件监听器用于检测按钮被点击的时刻。
+
+#### 2. 如何使用 JavaScript 更改网页的背景颜色？
 
 a) `document.body.color`
+
 b) `document.body.backgroundColor`
+
 c) `document.body.style.backgroundColor`
+
 d) `document.body.style.color`
 
-答案：c) `document.body.style.backgroundColor` 解释：要更改背景颜色，需要使用`document.body.style.backgroundColor`。
+**答案：**c) `document.body.style.backgroundColor`
 
-哪个 CSS 属性用于隐藏 DOM 中的元素？
+**解释：**要更改背景颜色，需要使用`document.body.style.backgroundColor`。
+
+#### 3. 哪个 CSS 属性用于隐藏 DOM 中的元素？
 
 a) `visibility`
+
 b) `opacity`
+
 c) `display`
+
 d) `hidden`
 
-答案：c) `display` 解释：`display`属性可以设置为`none`来隐藏元素。
+**答案：**c) `display`
 
-如何使用 JavaScript 创建新的 HTML 元素？
+**解释：**`display`属性可以设置为`none`来隐藏元素。
+
+#### 4. 如何使用 JavaScript 创建新的 HTML 元素？
 
 a) `document.createElement()`
+
 b) `document.newElement()`
+
 c) `document.create()`
+
 d) `document.new()`
 
-答案：a) `document.createElement()` 解释：`document.createElement()`方法用于创建新的 HTML 元素。
+**答案：**a) `document.createElement()`
 
-在“向列表添加项目”练习中，哪个函数将新项目附加到列表？
+**解释：**`document.createElement()`方法用于创建新的 HTML 元素。
+
+#### 5. 在“向列表添加项目”练习中，哪个函数将新项目附加到列表？
 
 a) `append()`
+
 b) `addChild()`
+
 c) `appendChild()`
+
 d) `add()`
 
-答案：c) `appendChild()` 解释：`appendChild()`方法用于向父节点添加新的子元素。
+**答案：**c) `appendChild()`
 
-在“更改背景颜色”练习中，`getRandomColor`函数的目的是什么？
+**解释：**`appendChild()`方法用于向父节点添加新的子元素。
+
+#### 6. 在“更改背景颜色”练习中，`getRandomColor`函数的目的是什么？
 
 A) 更改文本颜色
+
 B) 生成随机背景颜色
+
 C) 更改字体大小
+
 D) 生成随机字体样式
 
-答案：B
-解释：`getRandomColor`函数生成一个随机颜色代码，用于更改页面的背景颜色。
+**答案：**B
 
-在“更改背景颜色”练习中，哪个事件监听器用于触发颜色变化？
+**解释：**`getRandomColor`函数生成一个随机颜色代码，用于更改页面的背景颜色。
+
+#### 7. 在“更改背景颜色”练习中，哪个事件监听器用于触发颜色变化？
 
 A) `mouseover`
+
 B) `keydown`
+
 C) `click`
+
 D) `scroll`
 
-答案：C
-解释：`click`事件监听器用于在按钮被点击时触发背景颜色变化。
+**答案：**C
 
-在“更改背景颜色”练习中，哪个 HTML 元素具有 ID `changeColorButton`？
+**解释：**`click`事件监听器用于在按钮被点击时触发背景颜色变化。
+
+#### 8. 在“更改背景颜色”练习中，哪个 HTML 元素具有 ID `changeColorButton`？
 
 A) `<body>`
+
 B) `<button>`
+
 C) `<div>`
+
 D) `<span>`
 
-答案：B
-解释：`<button>`元素具有 ID `changeColorButton`。
+**答案：**B
 
-在`getRandomColor`函数中，表达式`Math.floor(Math.random() * 16)`的作用是什么？
+**解释：**`<button>`元素具有 ID `changeColorButton`。
+
+#### 9. 在`getRandomColor`函数中，表达式`Math.floor(Math.random() * 16)`的作用是什么？
 
 A) 生成 0 到 16 之间的随机数。
+
 B) 生成 0 到 15 之间的随机数。
+
 C) 生成 1 到 16 之间的随机数。
+
 D) 生成 1 到 15 之间的随机数。
 
-答案：B
-解释：`Math.random()`生成 0 到 1 之间的随机数。乘以 16 并使用`Math.floor`将其向下取整为 0 到 15 之间的整数。
+**答案：**B
 
-在“显示/隐藏文本”练习中，段落的初始 CSS `display`属性值是什么？
+**解释：**`Math.random()`生成 0 到 1 之间的随机数。乘以 16 并使用`Math.floor`将其向下取整为 0 到 15 之间的整数。
+
+#### 10. 在“显示/隐藏文本”练习中，段落的初始 CSS `display`属性值是什么？
 
 A) `block`
+
 B) `inline`
+
 C) `flex`
+
 D) `none`
 
-答案：D
-解释：段落的初始 CSS `display`属性值设置为`none`，使其隐藏。
+**答案：**D
 
-在“显示/隐藏文本”练习中，切换文本可见性时检查的条件是什么？
+**解释：**段落的初始 CSS `display`属性值设置为`none`，使其隐藏。
+
+#### 11. 在“显示/隐藏文本”练习中，切换文本可见性时检查的条件是什么？
 
 A) 如果文本内容为空
+
 B) 如果文本的`display`为`none`
+
 C) 如果按钮被点击
+
 D) 如果文本的`display`为`block`
 
-答案：B
-解释：条件检查文本的`display`属性是否为`none`，以切换其可见性。
+**答案：**B
 
-在“显示/隐藏文本”练习中，当`toggleTextButton`被点击且文本已经可见时会发生什么？
+**解释：**条件检查文本的`display`属性是否为`none`，以切换其可见性。
+
+#### 12. 在“显示/隐藏文本”练习中，当`toggleTextButton`被点击且文本已经可见时会发生什么？
 
 A) 文本变为斜体
+
 B) 文本被隐藏
+
 C) 文本颜色改变
+
 D) 文本字体大小增加
 
-答案：B
-解释：如果文本已经可见，点击按钮会通过将`display`属性设置为`none`来隐藏文本。
+**答案：**B
 
-在“向列表添加项目”练习中，当`addItemButton`被点击时会发生什么？
+**解释：**如果文本已经可见，点击按钮会通过将`display`属性设置为`none`来隐藏文本。
+
+#### 13. 在“向列表添加项目”练习中，当`addItemButton`被点击时会发生什么？
 
 A) 添加一个新段落
+
 B) 添加一个新列表项
+
 C) 输入字段被清空
+
 D) B 和 C 都正确
 
-答案：D
-解释：当按钮被点击时，会添加一个新列表项，并且输入字段被清空。
+**答案：**D
 
-在“向列表添加项目”练习中，哪个 HTML 元素用于捕获用户的输入？
+**解释：**当按钮被点击时，会添加一个新列表项，并且输入字段被清空。
+
+#### 14. 在“向列表添加项目”练习中，哪个 HTML 元素用于捕获用户的输入？
 
 A) `<input>`
+
 B) `<textarea>`
+
 C) `<div>`
+
 D) `<span>`
 
-答案：A
-解释：`<input>`元素捕获用户的输入。
+**答案：**A
 
-在“向列表添加项目”练习中，使用什么方法创建新的列表项元素？
+**解释：**`<input>`元素捕获用户的输入。
+
+#### 15. 在“向列表添加项目”练习中，使用什么方法创建新的列表项元素？
 
 A) `document.createElement('li')`
+
 B) `document.createElement('div')`
+
 C) `document.createElement('p')`
+
 D) `document.createElement('span')`
 
-答案：A
-解释：`document.createElement('li')`方法用于创建新的列表项元素。
+**答案：**A
+
+**解释：**`document.createElement('li')`方法用于创建新的列表项元素。
 
 ## 显示当前日期和时间
 
-描述：
+### 描述
 
 在本练习中，学生将创建一个包含按钮的网页，点击按钮时显示当前日期和时间。本练习介绍如何使用 JavaScript 日期对象以及在网页上显示文本。
 
-涵盖主题：
+### 涵盖主题
 
 - HTML 结构
 - CSS 样式
@@ -391,7 +448,7 @@ D) `document.createElement('span')`
 - 使用 JavaScript Date 对象
 - DOM 操作
 
-HTML：
+### HTML
 
 ```html
 <!DOCTYPE html>
@@ -410,7 +467,7 @@ HTML：
 </html>
 ```
 
-CSS：
+### CSS
 
 ```css
 body {
@@ -433,7 +490,7 @@ font-size: 18px;
 }
 ```
 
-JavaScript：
+### JavaScript
 
 ```javascript
 document.getElementById('showDateTimeButton').addEventListener('click', function() {
@@ -445,18 +502,18 @@ document.getElementById('dateTimeDisplay').textContent = dateTimeString;
 
 ## 更改文本内容
 
-描述：
+### 描述
 
 在本练习中，学生将创建一个包含输入字段和按钮的网页。当按钮被点击时，段落中的文本内容会更新为输入字段中输入的文本。本练习介绍如何使用 JavaScript 动态更新文本内容。
 
-涵盖主题：
+### 涵盖主题
 
 - HTML 结构
 - CSS 样式
 - JavaScript 事件监听器
 - DOM 操作（更新文本内容）
 
-HTML：
+### HTML
 
 ```html
 <!DOCTYPE html>
@@ -465,12 +522,10 @@ HTML：
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Change Text Content</title>
+<link rel="stylesheet" href="styles.css">
 ```
 
-
-
-
-```
+```html
 <link rel="stylesheet" href="styles.css">
 
 </head>
@@ -490,9 +545,11 @@ HTML：
 </html>
 ```
 
-CSS:
+### CSS
 
-```
+
+
+```css
 body {
     font-family: Arial, sans-serif;
     display: flex;
@@ -523,7 +580,7 @@ p {
 
 JavaScript:
 
-```
+```javascript
 document.getElementById('changeTextButton').addEventListener('click', function() {
     const newText = document.getElementById('textInput').value;
     document.getElementById('textDisplay').textContent = newText;
@@ -532,25 +589,21 @@ document.getElementById('changeTextButton').addEventListener('click', function()
 
 ## 高亮列表项
 
-描述：
+### 描述
 
 在本练习中，学生将创建一个包含项目列表的网页。当点击某个项目时，其背景颜色会改变以突出显示。本练习介绍了事件委托和动态更新样式。
 
-涵盖主题：
+### 涵盖主题
 
-● HTML 结构
+- HTML 结构
+- CSS 样式
+- JavaScript 事件监听器
+- 事件委托
+- DOM 操作（更新样式）
 
-● CSS 样式
+### HTML
 
-● JavaScript 事件监听器
-
-● 事件委托
-
-● DOM 操作（更新样式）
-
-HTML:
-
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -571,9 +624,9 @@ HTML:
 </html>
 ```
 
-CSS:
+### CSS
 
-```
+```css
 body {
     font-family: Arial, sans-serif;
     display: flex;
@@ -601,9 +654,9 @@ li.highlight {
 }
 ```
 
-JavaScript:
+### JavaScript
 
-```
+```javascript
 document.getElementById('itemList').addEventListener('click', function(event) {
     if (event.target.tagName === 'LI') {
         const items = document.querySelectorAll('li');
@@ -615,23 +668,20 @@ document.getElementById('itemList').addEventListener('click', function(event) {
 
 ## 动态图片画廊
 
-描述：
+### 描述
 
 在本练习中，学生将创建一个简单的图片画廊。当点击缩略图时，将显示该图片的较大版本。本练习介绍了处理点击事件和动态更新图片源。
 
-涵盖主题：
+### 涵盖主题
 
-● HTML 结构
+- HTML 结构
+- CSS 样式
+- JavaScript 事件监听器
+- DOM 操作（更改图片源）
 
-● CSS 样式
+### HTML
 
-● JavaScript 事件监听器
-
-● DOM 操作（更改图片源）
-
-HTML:
-
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -654,9 +704,9 @@ HTML:
 </html>
 ```
 
-CSS:
+### CSS
 
-```
+```css
 body {
     font-family: Arial, sans-serif;
     display: flex;
@@ -686,9 +736,9 @@ body {
 }
 ```
 
-JavaScript:
+### JavaScript
 
-```
+```javascript
 document.querySelectorAll('.thumbnail').forEach(thumbnail => {
     thumbnail.addEventListener('click', function() {
         const largeImage = document.getElementById('largeImage');
@@ -699,23 +749,20 @@ document.querySelectorAll('.thumbnail').forEach(thumbnail => {
 
 ## 交互式计数器
 
-描述：
+### 描述
 
 在本练习中，学生将创建一个带有增加和减少计数按钮的交互式计数器。本练习介绍了根据用户输入更新 DOM。
 
-涵盖主题：
+### 涵盖主题
 
-● HTML 结构
+- HTML 结构
+- CSS 样式
+- JavaScript 事件监听器
+- DOM 操作（更新文本内容）
 
-● CSS 样式
+### HTML
 
-● JavaScript 事件监听器
-
-● DOM 操作（更新文本内容）
-
-HTML:
-
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -735,9 +782,9 @@ HTML:
 </html>
 ```
 
-CSS:
+### CSS
 
-```
+```css
 body {
     font-family: Arial, sans-serif;
     display: flex;
@@ -767,9 +814,9 @@ span {
 }
 ```
 
-JavaScript:
+### JavaScript
 
-```
+```javascript
 let count = 0;
 
 document.getElementById('incrementButton').addEventListener('click', function() {
@@ -785,25 +832,21 @@ document.getElementById('decrementButton').addEventListener('click', function() 
 
 ## 表单验证
 
-描述：
+### 描述
 
 在本练习中，学生将创建一个带有验证功能的简单表单。当点击提交按钮时，脚本将检查所有字段是否已填写，如果任何字段为空，则显示一条警告消息。本练习介绍了基本的表单验证。
 
-涵盖主题：
+### 涵盖主题
 
-● HTML 结构
+- HTML 结构
+- CSS 样式
+- JavaScript 事件监听器
+- 表单验证
+- DOM 操作（警告消息）
 
-● CSS 样式
+### HTML
 
-● JavaScript 事件监听器
-
-● 表单验证
-
-● DOM 操作（警告消息）
-
-HTML:
-
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -823,9 +866,9 @@ HTML:
 </html>
 ```
 
-CSS:
+### CSS
 
-```
+```css
 body {
     font-family: Arial, sans-serif;
     display: flex;
@@ -855,9 +898,9 @@ button {
 }
 ```
 
-JavaScript:
+### JavaScript
 
-```
+```javascript
 document.getElementById('myForm').addEventListener('submit', function(event) {
     const name = document.getElementById('name').value;
     const email = document.getElementById('email').value;
@@ -870,6 +913,8 @@ document.getElementById('myForm').addEventListener('submit', function(event) {
 
 ### 多项选择题
 
+#### 动态图片画廊
+
 在动态图片画廊练习中，使用什么方法为每个缩略图添加点击事件监听器？
 
 a) `addEventListener`
@@ -880,7 +925,9 @@ c) `onClick`
 
 d) `addListener`
 
-答案：a) `addEventListener` 解释：`addEventListener` 方法用于将事件处理程序附加到指定元素。
+答案：a) `addEventListener`
+
+解释：`addEventListener`方法用于将事件处理程序附加到指定元素。
 
 如何在 JavaScript 中更改图片元素的源？
 
@@ -892,9 +939,13 @@ c) `element.link`
 
 d) `element.url`
 
-答案：a) `element.src` 解释：图片元素的 `src` 属性用于获取或设置要显示的图片的 URL。
+答案：a) `element.src`
 
-在交互式计数器练习中，使用什么方法更新 span 元素的文本内容？
+解释：图片元素的`src`属性用于获取或设置要显示的图片的 URL。
+
+#### 交互式计数器
+
+在交互式计数器练习中，使用什么方法更新`span`元素的文本内容？
 
 a) `innerHTML`
 
@@ -904,7 +955,9 @@ c) `innerText`
 
 d) `value`
 
-答案：b) `textContent` 解释：`textContent` 属性用于设置或返回元素的文本内容。
+答案：b) `textContent`
+
+解释：`textContent`属性用于设置或返回元素的文本内容。
 
 在 JavaScript 中，哪个事件用于检测表单何时被提交？
 
@@ -916,12 +969,9 @@ c) `change`
 
 d) `input`
 
+答案：b) `submit`
 
-
-
-
-答案：b) `submit`  
-解释：当表单提交时，会触发 `submit` 事件。
+解释：当表单提交时，会触发`submit`事件。
 
 在表单验证练习中，如果验证失败，如何阻止表单提交？
 
@@ -933,12 +983,13 @@ c) `event.preventDefault`
 
 d) `event.prevent`
 
-答案：c) `event.preventDefault`  
-解释：`event.preventDefault` 方法用于阻止事件的默认行为被触发。
+答案：c) `event.preventDefault`
 
-动态图片库
+解释：`event.preventDefault`方法用于阻止事件的默认行为被触发。
 
-在动态图片库练习中，`forEach` 方法的主要用途是什么？
+## 动态图片库
+
+在动态图片库练习中，`forEach`方法的主要用途是什么？
 
 A) 选择具有特定类名的第一个元素
 
@@ -948,8 +999,9 @@ C) 更改所有缩略图的图片源
 
 D) 移除所有缩略图图片
 
-答案：B  
-解释：`forEach` 方法用于为每个缩略图图片应用事件监听器。
+答案：B
+
+解释：`forEach`方法用于为每个缩略图图片应用事件监听器。
 
 在动态图片库练习中，哪个事件触发大图的显示？
 
@@ -961,21 +1013,23 @@ C) 单击
 
 D) 按键
 
-答案：C  
-解释：当缩略图被单击时，`click` 事件触发大图的显示。
+答案：C
+
+解释：当缩略图被单击时，`click`事件触发大图的显示。
 
 在动态图片库练习中，大图的来源是如何更新的？
 
-A) 通过更改 `alt` 属性
+A) 通过更改`alt`属性
 
-B) 通过更改 `src` 属性
+B) 通过更改`src`属性
 
 C) 通过添加新的图片元素
 
 D) 通过移除旧的图片元素
 
-答案：B  
-解释：大图元素的 `src` 属性被更新为所单击缩略图的来源，文件名被修改为指向大图版本。
+答案：B
+
+解释：大图元素的`src`属性被更新为所单击缩略图的来源，文件名被修改为指向大图版本。
 
 在动态图片库练习中，缩略图图片具有哪个类名？
 
@@ -987,10 +1041,11 @@ C) `largeImage`
 
 D) `thumbnail`
 
-答案：D  
-解释：缩略图图片具有类名 `thumbnail`。
+答案：D
 
-交互式计数器
+解释：缩略图图片具有类名`thumbnail`。
+
+## 交互式计数器
 
 在交互式计数器练习中，当点击增加按钮时会发生什么？
 
@@ -1002,21 +1057,23 @@ C) 计数值重置为 0
 
 D) 计数值显示为负数
 
-答案：B  
+答案：B
+
 解释：点击增加按钮会使计数值增加 1。
 
 在交互式计数器练习中，当前计数值显示在哪里？
 
-A) 在 `<div>` 元素中
+A) 在`<div>`元素中
 
-B) 在 `<span>` 元素中
+B) 在`<span>`元素中
 
-C) 在 `<p>` 元素中
+C) 在`<p>`元素中
 
-D) 在 `<h1>` 元素中
+D) 在`<h1>`元素中
 
-答案：B  
-解释：当前计数值显示在 ID 为 `count` 的 `<span>` 元素中。
+答案：B
+
+解释：当前计数值显示在 ID 为`count`的`<span>`元素中。
 
 在交互式计数器练习中，使用哪个 JavaScript 方法来更新计数显示的文本内容？
 
@@ -1028,10 +1085,11 @@ C) `textContent`
 
 D) `appendChild`
 
-答案：C  
-解释：`textContent` 属性用于更新计数显示的文本内容。
+答案：C
 
-表单验证
+解释：`textContent`属性用于更新计数显示的文本内容。
+
+## 表单验证
 
 在表单验证练习中，使用哪个事件来验证表单？
 
@@ -1039,12 +1097,15 @@ A) 提交按钮的点击事件
 
 B) 输入字段的按键弹起事件
 
+
+
 C) 表单的提交事件
 
 D) 表单的更改事件
 
-答案：C  
-解释：当点击提交按钮时，表单的 `submit` 事件用于验证表单。
+答案：C
+
+解释：当点击提交按钮时，表单的`submit`事件用于验证表单。
 
 在表单验证练习中，如果验证失败，哪个方法阻止表单提交？
 
@@ -1056,8 +1117,9 @@ C) `stopImmediatePropagation()`
 
 D) `return false`
 
-答案：B  
-解释：如果验证失败，`preventDefault()` 方法阻止表单提交。
+答案：B
+
+解释：如果验证失败，`preventDefault()`方法阻止表单提交。
 
 在表单验证练习中，如果任何表单字段为空，会显示什么消息？
 
@@ -1069,7 +1131,8 @@ C) "无效输入"
 
 D) "提交失败"
 
-答案：B  
+答案：B
+
 解释：如果任何表单字段为空，会显示一条警告消息："请填写所有字段。"
 
 哪个 JavaScript 对象用于处理日期和时间？
@@ -1082,8 +1145,9 @@ c) `Calendar`
 
 d) `Clock`
 
-答案：b) `Date`  
-解释：`Date` 对象用于在 JavaScript 中处理日期和时间。
+答案：b) `Date`
+
+解释：`Date`对象用于在 JavaScript 中处理日期和时间。
 
 如何使用 JavaScript 更新 HTML 元素的文本内容？
 
@@ -1095,8 +1159,9 @@ c) `element.innerHTML`
 
 d) `element.updateText`
 
-答案：b) `element.textContent`  
-解释：`textContent` 属性用于设置或返回元素的文本内容。
+答案：b) `element.textContent`
+
+解释：`textContent`属性用于设置或返回元素的文本内容。
 
 什么是事件委托？
 
@@ -1108,7 +1173,8 @@ c) 一种移除事件监听器的方式
 
 d) 一种更改事件类型的属性
 
-答案：a) 一种为多个元素附加单个事件监听器的技术  
+答案：a) 一种为多个元素附加单个事件监听器的技术
+
 解释：事件委托是一种允许你为父元素附加单个事件监听器，以处理多个子元素事件的技术。
 
 在 JavaScript 中，哪个方法用于向元素添加新的 CSS 类？
@@ -1121,8 +1187,9 @@ c) `element.addClass()`
 
 d) `element.className.add()`
 
-答案：a) `element.classList.add()`  
-解释：`classList.add()` 方法用于向元素添加新类。
+答案：a) `element.classList.add()`
+
+解释：`classList.add()`方法用于向元素添加新类。
 
 在“高亮列表项”练习中，哪个事件属性用于识别被点击的元素？
 
@@ -1134,23 +1201,25 @@ c) `event.srcElement`
 
 d) `event.element`
 
-答案：a) `event.target`  
-解释：事件对象的 `target` 属性指向触发事件的元素。
+答案：a) `event.target`
 
-在“显示当前日期和时间”练习中，`new Date()` 构造函数的目的是什么？
+解释：事件对象的`target`属性指向触发事件的元素。
+
+在“显示当前日期和时间”练习中，`new Date()`构造函数的目的是什么？
 
 A) 格式化字符串
 
-B) 创建一个表示当前日期和时间的新 `Date` 对象
+B) 创建一个表示当前日期和时间的新`Date`对象
 
 C) 添加延迟
 
 D) 显示警告
 
-答案：B  
-解释：`new Date()` 构造函数创建一个表示当前日期和时间的新 `Date` 对象。
+答案：B
 
-在“显示当前日期和时间”练习中，哪个方法用于将 `Date` 对象转换为可读字符串？
+解释：`new Date()`构造函数创建一个表示当前日期和时间的新`Date`对象。
+
+在“显示当前日期和时间”练习中，哪个方法用于将`Date`对象转换为可读字符串？
 
 A) `toString()`
 
@@ -1160,8 +1229,9 @@ C) `toLocaleString()`
 
 D) `toUTCString()`
 
-答案：C  
-解释：`toLocaleString()` 方法将 `Date` 对象转换为表示日期和时间的可读格式字符串。
+答案：C
+
+解释：`toLocaleString()`方法将`Date`对象转换为表示日期和时间的可读格式字符串。
 
 在“显示当前日期和时间”练习中，哪个 HTML 元素用于显示日期和时间？
 
@@ -1173,8 +1243,9 @@ C) `<span>`
 
 D) `<h1>`
 
-答案：B  
-解释：ID 为 `dateTimeDisplay` 的 `<p>` 元素用于显示日期和时间。
+答案：B
+
+解释：ID 为`dateTimeDisplay`的`<p>`元素用于显示日期和时间。
 
 在“显示当前日期和时间”练习中，什么操作触发当前日期和时间的显示？
 
@@ -1186,10 +1257,11 @@ C) 双击按钮
 
 D) 页面加载
 
-答案：B  
-解释：点击 ID 为 `showDateTimeButton` 的按钮会触发当前日期和时间的显示。
+答案：B
 
-在“更改文本内容”练习中，当点击 `changeTextButton` 时会发生什么？
+解释：点击 ID 为`showDateTimeButton`的按钮会触发当前日期和时间的显示。
+
+在“更改文本内容”练习中，当点击`changeTextButton`时会发生什么？
 
 A) 段落中的文本更改为输入值
 
@@ -1199,8 +1271,9 @@ C) 输入字段被清空
 
 D) 段落被隐藏
 
-答案：A  
-解释：点击 `changeTextButton` 会将 ID 为 `textDisplay` 的段落的文本内容更新为输入字段中输入的值。
+答案：A
+
+解释：点击`changeTextButton`会将 ID 为`textDisplay`的段落的文本内容更新为输入字段中输入的值。
 
 在“更改文本内容”练习中，哪个 HTML 元素捕获用户的输入？
 
@@ -1212,8 +1285,9 @@ C) `<button>`
 
 D) `<div>`
 
-答案：B  
-解释：ID 为 `textInput` 的 `<input>` 元素捕获用户的输入。
+答案：B
+
+解释：ID 为`textInput`的`<input>`元素捕获用户的输入。
 
 在“更改文本内容”练习中，使用哪个方法来更新元素的文本内容？
 
@@ -1225,8 +1299,9 @@ C) `textContent`
 
 D) `value`
 
-答案：C  
-解释：`textContent` 属性用于更新段落元素的文本内容。
+答案：C
+
+解释：`textContent`属性用于更新段落元素的文本内容。
 
 在“高亮列表项”练习中，事件委托的目的是什么？
 
@@ -1238,8 +1313,9 @@ C) 为列表项设置样式
 
 D) 创建新的列表项
 
-答案：B  
-解释：事件委托用于处理整个列表（`<ul>` 元素）上的 `click` 事件，而不是为每个单独的列表项附加事件监听器。
+答案：B
+
+解释：事件委托用于处理整个列表（`<ul>`元素）上的`click`事件，而不是为每个单独的列表项附加事件监听器。
 
 在“高亮列表项”练习中，当点击列表项时，会添加哪个 CSS 类？
 
@@ -1251,25 +1327,23 @@ C) `highlight`
 
 D) `clicked`
 
-答案：C  
-解释：`highlight` 类被添加到被点击的列表项，以更改其背景颜色。
+答案：C
 
-
-
+解释：`highlight`类被添加到被点击的列表项，以更改其背景颜色。
 
 在“高亮列表项”练习中，JavaScript 代码如何确保一次只高亮一个列表项？
 
-A) 它在被点击的项上切换 `highlight` 类
+A) 它在被点击的项上切换`highlight`类
 
-B) 它将 `highlight` 类添加到被点击的项
+B) 它将`highlight`类添加到被点击的项
 
-C) 它在将 `highlight` 类添加到被点击的项之前，先从所有项中移除该类
+C) 它在将`highlight`类添加到被点击的项之前，先从所有项中移除该类
 
 D) 它改变被点击项的文本颜色
 
 答案：C
 
-解释：代码首先从所有列表项中移除 `highlight` 类，然后将其添加到被点击的项，以确保一次只高亮一个项。
+解释：代码首先从所有列表项中移除`highlight`类，然后将其添加到被点击的项，以确保一次只高亮一个项。
 
 ### 切换深色模式
 
@@ -1279,13 +1353,10 @@ D) 它改变被点击项的文本颜色
 
 **涵盖主题：**
 
-● HTML 结构
-
-● CSS 样式
-
-● JavaScript 事件监听器
-
-● DOM 操作（更改样式）
+- HTML 结构
+- CSS 样式
+- JavaScript 事件监听器
+- DOM 操作（更改样式）
 
 **HTML：**
 
@@ -1348,13 +1419,10 @@ document.body.classList.toggle('dark-mode');
 
 **涵盖主题：**
 
-● HTML 结构
-
-● CSS 样式
-
-● JavaScript 事件监听器
-
-● DOM 操作（过滤元素）
+- HTML 结构
+- CSS 样式
+- JavaScript 事件监听器
+- DOM 操作（过滤元素）
 
 **HTML：**
 
@@ -1436,13 +1504,10 @@ item.style.display = 'none';
 
 **涵盖主题：**
 
-● HTML 结构
-
-● CSS 样式
-
-● JavaScript 事件监听器
-
-● DOM 操作（显示/隐藏元素）
+- HTML 结构
+- CSS 样式
+- JavaScript 事件监听器
+- DOM 操作（显示/隐藏元素）
 
 **HTML：**
 
@@ -1533,13 +1598,10 @@ content.style.display = 'block';
 
 **涵盖主题：**
 
-● HTML 结构
-
-● CSS 样式
-
-● JavaScript 事件监听器
-
-● DOM 操作（显示/隐藏元素）
+- HTML 结构
+- CSS 样式
+- JavaScript 事件监听器
+- DOM 操作（显示/隐藏元素）
 
 **HTML：**
 
@@ -1567,603 +1629,544 @@ content.style.display = 'block';
 
 **CSS：**
 
+
+
 ```css
 body {
-font-family: Arial, sans-serif;
-display: flex;
-justify-content: center;
-align-items: center;
-height: 100vh;
-margin: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
 }
 
 button {
-padding: 10px 20px;
-font-size: 16px;
-cursor: pointer;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
 }
 
 .modal {
-display: none;
-position: fixed;
-z-index: 1;
-left: 0;
-top: 0;
-width: 100%;
-height: 100%;
-background-color: rgba(0, 0, 0, 0.5);
-justify-content: center;
-align-items: center;
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
 }
 
 .modal-content {
-background-color: white;
-padding: 20px;
-border-radius: 5px;
-width: 300px;
-text-align: center;
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  width: 300px;
+  text-align: center;
 }
 
 .close {
-position: absolute;
-top: 10px;
-right: 10px;
-cursor: pointer;
-font-size: 24px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  font-size: 24px;
 }
 ```
 
-**JavaScript：**
+## JavaScript
 
 ```javascript
 document.getElementById('openModalButton').addEventListener('click', function() {
-document.getElementById('modal').style.display = 'flex';
+  document.getElementById('modal').style.display = 'flex';
 });
 
 document.getElementById('closeModalButton').addEventListener('click', function() {
-document.getElementById('modal').style.display = 'none';
+  document.getElementById('modal').style.display = 'none';
 });
 ```
 
 ## 图片轮播
 
-**描述：**
+### 描述
 
 在本练习中，学生将创建一个简单的图片轮播，带有“上一张”和“下一张”按钮，用于浏览图片。本练习介绍了如何操作 DOM 以根据用户交互更改显示的内容。
 
-**涵盖主题：**
+### 涵盖主题
 
-● HTML 结构
+- HTML 结构
+- CSS 样式
+- JavaScript 事件监听器
+- DOM 操作（更改图片源）
 
-● CSS 样式
-
-● JavaScript 事件监听器
-
-● DOM 操作（更改图片源）
-
-**HTML：**
+### HTML
 
 ```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Image Carousel</title>
-<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Carousel</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<div class="carousel">
-<button id="prevButton">&lt;</button>
-<img id="carouselImage" src="image1.jpg" alt="Image Carousel">
-<button id="nextButton">&gt;</button>
-</div>
-<script src="script.js"></script>
+  <div class="carousel">
+    <button id="prevButton">&lt;</button>
+    <img id="carouselImage" src="image1.jpg" alt="Image Carousel">
+    <button id="nextButton">&gt;</button>
+  </div>
+  <script src="script.js"></script>
 </body>
 </html>
 ```
 
-**CSS：**
+### CSS
 
 ```css
 body {
-```
-
-
-
-
-```css
-font-family: Arial, sans-serif;
-
-display: flex;
-
-justify-content: center;
-
-align-items: center;
-
-height: 100vh;
-
-margin: 0;
-
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
 }
 
 .carousel {
-
-display: flex;
-
-align-items: center;
-
-gap: 10px;
-
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 button {
-
-padding: 10px 20px;
-
-font-size: 16px;
-
-cursor: pointer;
-
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
 }
 ```
 
-JavaScript：
+### JavaScript
 
 ```javascript
 const images = ['image1.jpg', 'image2.jpg', 'image3.jpg'];
 let currentIndex = 0;
+
 document.getElementById('prevButton').addEventListener('click', function() {
-    currentIndex = (currentIndex === 0) ? images.length - 1 : currentIndex - 1;
-    document.getElementById('carouselImage').src = images[currentIndex];
+  currentIndex = (currentIndex === 0) ? images.length - 1 : currentIndex - 1;
+  document.getElementById('carouselImage').src = images[currentIndex];
 });
+
 document.getElementById('nextButton').addEventListener('click', function() {
-    currentIndex = (currentIndex === images.length - 1) ? 0 : currentIndex + 1;
-    document.getElementById('carouselImage').src = images[currentIndex];
+  currentIndex = (currentIndex === images.length - 1) ? 0 : currentIndex + 1;
+  document.getElementById('carouselImage').src = images[currentIndex];
 });
 ```
 
 ## 倒计时器
 
-描述：
+### 描述
 
 在本练习中，学生将创建一个倒计时器，从指定的秒数开始倒计时，并在时间到时显示一个警告。本练习介绍了如何在 JavaScript 中使用定时器。
 
-涵盖主题：
+### 涵盖主题
 
-● HTML 结构
+- HTML 结构
+- CSS 样式
+- JavaScript 事件监听器
+- 使用 JavaScript 定时器（`setInterval` 和 `clearInterval`）
 
-● CSS 样式
-
-● JavaScript 事件监听器
-
-● 使用 JavaScript 定时器（`setInterval` 和 `clearInterval`）
-
-HTML：
+### HTML
 
 ```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Countdown Timer</title>
-<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Countdown Timer</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<input type="number" id="timeInput" placeholder="Enter seconds">
-<button id="startButton">Start Countdown</button>
-<p id="timerDisplay">0</p>
-<script src="script.js"></script>
+  <input type="number" id="timeInput" placeholder="Enter seconds">
+  <button id="startButton">Start Countdown</button>
+  <p id="timerDisplay">0</p>
+  <script src="script.js"></script>
 </body>
 </html>
 ```
 
-CSS：
+### CSS
 
 ```css
 body {
-font-family: Arial, sans-serif;
-display: flex;
-flex-direction: column;
-align-items: center;
-height: 100vh;
-justify-content: center;
-margin: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  justify-content: center;
+  margin: 0;
 }
+
 input {
-padding: 10px;
-font-size: 16px;
-margin-bottom: 10px;
+  padding: 10px;
+  font-size: 16px;
+  margin-bottom: 10px;
 }
+
 button {
-padding: 10px 20px;
-font-size: 16px;
-cursor: pointer;
-margin-bottom: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-bottom: 20px;
 }
+
 p {
-font-size: 24px;
+  font-size: 24px;
 }
 ```
 
-JavaScript：
+### JavaScript
 
 ```javascript
 let timer;
 let countdown;
+
 document.getElementById('startButton').addEventListener('click', function() {
-    clearInterval(timer);
-    const timeInput = document.getElementById('timeInput').value;
-    countdown = parseInt(timeInput, 10);
+  clearInterval(timer);
+
+  const timeInput = document.getElementById('timeInput').value;
+  countdown = parseInt(timeInput, 10);
+
+  document.getElementById('timerDisplay').textContent = countdown;
+
+  timer = setInterval(function() {
+    countdown--;
     document.getElementById('timerDisplay').textContent = countdown;
-    timer = setInterval(function() {
-        countdown--;
-        document.getElementById('timerDisplay').textContent = countdown;
-        if (countdown <= 0) {
-            clearInterval(timer);
-            alert('Time is up!');
-        }
-    }, 1000);
+
+    if (countdown <= 0) {
+      clearInterval(timer);
+      alert('Time is up!');
+    }
+  }, 1000);
 });
 ```
 
-### 多项选择题
+## 多项选择题
 
-在 JavaScript 中，用于切换元素上 CSS 类的方法是哪个？
+### 基础问题
 
-a) `addClass`
+#### 1. 在 JavaScript 中，用于切换元素上 CSS 类的方法是哪个？
 
-b) `removeClass`
+- a) `addClass`
+- b) `removeClass`
+- c) `toggleClass`
+- d) `classList.toggle`
 
-c) `toggleClass`
+**答案：** d) `classList.toggle`
 
-d) `classList.toggle`
+**解释：** `classList.toggle` 方法用于根据类是否已存在来添加或移除元素上的类。
 
-答案：d) `classList.toggle` 解释：`classList.toggle` 方法用于根据类是否已存在来添加或移除元素上的类。
+#### 2. 在“过滤列表项”练习中，哪个事件用于检测输入字段的变化？
 
-在“过滤列表项”练习中，哪个事件用于检测输入字段的变化？
+- a) `change`
+- b) `input`
+- c) `keyup`
+- d) `keydown`
 
-a) `change`
+**答案：** b) `input`
 
-b) `input`
+**解释：** 当 `<input>`、`<textarea>` 或 `<select>` 元素的值发生变化时，会触发 `input` 事件。
 
-c) `keyup`
+#### 3. 如何使用 JavaScript 选择 DOM 中的下一个兄弟元素？
 
-d) `keydown`
+- a) `previousElementSibling`
+- b) `nextElement`
+- c) `nextSibling`
+- d) `nextElementSibling`
 
-答案：b) `input` 解释：当 `<input>`、`<textarea>` 或 `<select>` 元素的值发生变化时，会触发 `input` 事件。
+**答案：** d) `nextElementSibling`
 
-如何使用 JavaScript 选择 DOM 中的下一个兄弟元素？
+**解释：** `nextElementSibling` 属性返回紧跟在指定元素之后的兄弟元素，如果指定元素没有下一个兄弟元素，则返回 `null`。
 
-a) `previousElementSibling`
+#### 4. 在“手风琴菜单”练习中，手风琴内容的初始显示样式是什么？
 
-b) `nextElement`
+- a) `block`
+- b) `inline`
+- c) `none`
+- d) `hidden`
 
-c) `nextSibling`
+**答案：** c) `none`
 
-d) `nextElementSibling`
+**解释：** 手风琴内容的初始显示样式设置为 `none`，表示内容默认隐藏。
 
-答案：d) `nextElementSibling` 解释：`nextElementSibling` 属性返回紧跟在指定元素之后的兄弟元素，如果指定元素没有下一个兄弟元素，则返回 `null`。
+#### 5. 哪个 CSS 属性常用于在动态更改样式时创建平滑过渡？
 
-在“手风琴菜单”练习中，手风琴内容的初始显示样式是什么？
+- a) `animation`
+- b) `transform`
+- c) `transition`
+- d) `duration`
 
-a) `block`
+**答案：** c) `transition`
 
-b) `inline`
+**解释：** `transition` 属性用于在 CSS 属性值动态变化时创建平滑过渡。
 
-c) `none`
+## 切换深色模式
 
-d) `hidden`
+#### 1. 在“切换深色模式”练习中，用于触发深色模式切换的事件监听器是哪个？
 
-答案：c) `none` 解释：手风琴内容的初始显示样式设置为 `none`，表示内容默认隐藏。
+- A) `mouseover`
+- B) `click`
+- C) `dblclick`
+- D) `keydown`
 
-哪个 CSS 属性常用于在动态更改样式时创建平滑过渡？
+**答案：** B
 
-a) `animation`
+**解释：** 当按钮被点击时，使用 `click` 事件监听器来触发深色模式切换。
 
-b) `transform`
+#### 2. 在“切换深色模式”练习中，哪个 CSS 类被添加到 body 元素以启用深色模式？
 
-c) `transition`
+- A) `dark`
+- B) `night-mode`
+- C) `dark-mode`
+- D) `dark-theme`
 
-d) `duration`
+**答案：** C
 
-答案：c) `transition` 解释：`transition` 属性用于在 CSS 属性值动态变化时创建平滑过渡。
+**解释：** CSS 类 `dark-mode` 被添加到 body 元素以启用深色模式。
 
-### 切换深色模式
+#### 3. 在“切换深色模式”练习中，哪个 CSS 属性被更改以在浅色和深色模式之间切换？
 
-在“切换深色模式”练习中，用于触发深色模式切换的事件监听器是哪个？
+- A) `color`
+- B) `background-color`
+- C) `font-size`
+- D) `margin`
 
-A) `mouseover`
+**答案：** B
 
-B) `click`
+**解释：** `background-color` 属性被更改以在浅色和深色模式之间切换。
 
-C) `dblclick`
+#### 4. 在“切换深色模式”练习中，CSS 中的过渡效果有什么作用？
 
-D) `keydown`
+- A) 它立即改变文本颜色
+- B) 它平滑地改变背景和文本颜色
+- C) 它增加字体大小
+- D) 它在改变颜色之前添加延迟
 
-答案：B
+**答案：** B
 
-解释：当按钮被点击时，使用 `click` 事件监听器来触发深色模式切换。
+**解释：** 过渡效果平滑地改变背景和文本颜色，使浅色和深色模式之间的切换更具视觉吸引力。
 
-在“切换深色模式”练习中，哪个 CSS 类被添加到 body 元素以启用深色模式？
+## 过滤列表项
 
-A) `dark`
+#### 1. 在“过滤列表项”练习中，哪个 JavaScript 事件用于触发列表项的过滤？
 
-B) `night-mode`
+- A) `click`
+- B) `input`
+- C) `change`
+- D) `mouseover`
 
-C) `dark-mode`
+**答案：** B
 
-D) `dark-theme`
+**解释：** 当用户在输入字段中键入时，使用 `input` 事件来触发列表项的过滤。
 
-答案：C
+#### 2. 在“过滤列表项”练习中，哪个方法用于将文本转换为小写以进行比较？
 
-解释：CSS 类 `dark-mode` 被添加到 body 元素以启用深色模式。
+- A) `toUpperCase()`
+- B) `toLowerCase()`
+- C) `trim()`
+- D) `substring()`
 
-在“切换深色模式”练习中，哪个 CSS 属性被更改以在浅色和深色模式之间切换？
+**答案：** B
 
-A) `color`
+**解释：** `toLowerCase()` 方法用于将文本转换为小写，以实现不区分大小写的比较。
 
-B) `background-color`
+#### 3. 在“过滤列表项”练习中，与过滤输入不匹配的列表项会发生什么？
 
-C) `font-size`
+- A) 它们被删除
+- B) 它们的文本颜色改变
+- C) 它们被隐藏
+- D) 它们被移动到列表底部
 
-D) `margin`
+**答案：** C
 
-答案：B
+**解释：** 与过滤输入不匹配的列表项通过将其 `display` 属性设置为 `none` 来隐藏。
 
-解释：`background-color` 属性被更改以在浅色和深色模式之间切换。
+## 手风琴菜单
 
-在“切换深色模式”练习中，CSS 中的过渡效果有什么作用？
+#### 1. 在“手风琴菜单”练习中，哪个 CSS 属性用于初始隐藏手风琴内容？
 
-A) 它立即改变文本颜色
+- A) `visibility`
+- B) `opacity`
+- C) `display`
+- D) `overflow`
 
-B) 它平滑地改变背景和文本颜色
+**答案：** C
 
-C) 它增加字体大小
+**解释：** `display` 属性设置为 `none` 以初始隐藏手风琴内容。
 
-D) 它在改变颜色之前添加延迟
+#### 2. 在“手风琴菜单”练习中，哪个事件监听器用于展开或折叠手风琴部分？
 
-答案：B
+- A) `mouseover`
+- B) `click`
+- C) `dblclick`
+- D) `focus`
 
-解释：过渡效果平滑地改变背景和文本颜色，使浅色和深色模式之间的切换更具视觉吸引力。
+**答案：** B
 
-### 过滤列表项
+**解释：** 当点击标题时，使用 `click` 事件监听器来展开或折叠手风琴部分。
 
-在“过滤列表项”练习中，哪个 JavaScript 事件用于触发列表项的过滤？
+#### 3. 在“手风琴菜单”练习中，JavaScript 代码如何确定要显示或隐藏哪个手风琴内容？
 
-A) `click`
+- A) 它使用特定的 ID
+- B) 它使用 `nextElementSibling` 属性
+- C) 它使用类名
+- D) 它使用属性选择器
 
-B) `input`
+**答案：** B
 
-C) `change`
+**解释：** 使用 `nextElementSibling` 属性来选择点击标题后面的内容元素，以显示或隐藏它。
 
-D) `mouseover`
+## 模态弹窗、图片轮播与倒计时器
 
-答案：B
+#### 1. 在“模态弹窗”练习中，哪个方法用于显示模态框？
 
-解释：当用户在输入字段中键入时，使用 `input` 事件来触发列表项的过滤。
+- a) `display = 'block'`
+- b) `display = 'flex'`
+- c) `show()`
+- d) `visible = true`
 
-在“过滤列表项”练习中，哪个方法用于将文本转换为小写以进行比较？
+**答案：** b) `display = 'flex'`
 
-A) `toUpperCase()`
+**解释：** 模态框通过设置 `display = 'flex'` 来显示，以便使用 Flexbox 居中。
 
-B) `toLowerCase()`
+#### 2. 在“图片轮播”练习中，哪个方法用于导航到下一张图片？
 
-C) `trim()`
+- a) `nextImage()`
+- b) `next()`
+- c) `src = nextImage`
+- d) `addEventListener`
 
-D) `substring()`
+**答案：** d) `addEventListener`
 
-答案：B
+**解释：** `addEventListener` 方法用于处理导航到下一张图片的点击事件。
 
-解释：`toLowerCase()` 方法用于将文本转换为小写，以实现不区分大小写的比较。
+#### 3. 在“倒计时器”练习中，哪个函数用于按设定间隔重复执行代码？
 
-在“过滤列表项”练习中，与过滤输入不匹配的列表项会发生什么？
+- a) `setTimeout`
+- b) `setInterval`
+- c) `clearInterval`
+- d) `setTimer`
 
-A) 它们被删除
+**答案：** b) `setInterval`
 
-B) 它们的文本颜色改变
+**解释：** `setInterval` 函数用于按指定间隔重复执行代码。
 
-C) 它们被隐藏
+#### 4. 在倒计时器练习中，如何停止倒计时？
 
-D) 它们被移动到列表底部
+- a) `stop()`
+- b) `clearInterval()`
+- c) `endTimer()`
+- d) `reset()`
 
-答案：C
+**答案：** b) `clearInterval()`
 
-解释：与过滤输入不匹配的列表项通过将其 `display` 属性设置为 `none` 来隐藏。
+**解释：** `clearInterval` 函数用于停止计时器的继续执行。
 
-### 手风琴菜单
+#### 5. 在图片轮播练习中，当当前图片的索引超过图片数组的长度时会发生什么？
 
-在“手风琴菜单”练习中，哪个 CSS 属性用于初始隐藏手风琴内容？
+- a) 轮播停止。
+- b) 索引重置为 0。
+- c) 索引保持不变。
+- d) 抛出错误。
 
-A) `visibility`
+**答案：** b) 索引重置为 0。
 
-B) `opacity`
+**解释：** 当索引超过图片数组的长度时，它会重置为 0，以循环回到第一张图片。
 
-C) `display`
+#### 6. 在创建模态弹窗练习中，模态框的初始 CSS display 属性值是什么？
 
-D) `overflow`
+- A) `block`
+- B) `none`
+- C) `flex`
+- D) `inline`
 
-答案：C
+**答案：** B
 
-解释：`display` 属性设置为 `none` 以初始隐藏手风琴内容。
+**解释：** 模态框的初始 CSS display 属性值为 `none`，表示默认隐藏。
 
-在“手风琴菜单”练习中，哪个事件监听器用于展开或折叠手风琴部分？
+#### 7. 在创建模态弹窗练习中，什么事件触发模态框出现？
 
-A) `mouseover`
+- A) 鼠标悬停
+- B) 点击打开模态框按钮
+- C) 双击
+- D) 鼠标移出
 
-B) `click`
+**答案：** B
 
-C) `dblclick`
+**解释：** 点击打开模态框按钮会触发模态框出现。
 
-D) `focus`
+#### 8. 哪个 CSS 属性使模态框显示在其他元素之上？
 
-答案：B
+- A) `position: absolute`
+- B) `z-index: 1`
+- C) `visibility: visible`
+- D) `position: fixed`
 
-解释：当点击标题时，使用 `click` 事件监听器来展开或折叠手风琴部分。
+**答案：** D
 
-在“手风琴菜单”练习中，JavaScript 代码如何确定要显示或隐藏哪个手风琴内容？
+**解释：** `position: fixed` 属性确保模态框显示在其他元素之上，并相对于视口保持固定位置。
 
-A) 它使用特定的 ID
+#### 9. 在创建模态弹窗练习中，如何关闭模态框？
 
-B) 它使用 `nextElementSibling` 属性
+- A) 点击模态框外部
+- B) 点击模态框内部的关闭按钮
+- C) 按下 Escape 键
+- D) 双击模态框
 
-C) 它使用类名
+**答案：** B
 
-D) 它使用属性选择器
+**解释：** 通过点击模态框内部的关闭按钮来关闭模态框。
 
-答案：B
+#### 10. 在图片轮播练习中，使用哪个 JavaScript 数组来存储图片？
 
-解释：使用 `nextElementSibling` 属性来选择点击标题后面的内容元素，以显示或隐藏它。
+- A) `pictures`
+- B) `photos`
+- C) `slides`
+- D) `images`
 
-在“模态弹窗”练习中，哪个方法用于显示模态框？
+**答案：** D
 
-a) `display = 'block'`
+**解释：** 数组 `images` 用于存储轮播图片的文件名。
 
-b) `display = 'flex'`
+#### 11. 在图片轮播练习中，点击“下一张”按钮时会发生什么？
 
-c) `show()`
+- A) 显示下一张图片
+- B) 显示上一张图片
+- C) 轮播停止
+- D) 显示第一张图片
 
-d) `visible = true`
+**答案：** A
 
-答案：b) `display = 'flex'` 解释：模态框通过设置 `display = 'flex'` 来显示，以便使用 Flexbox 居中。
+**解释：** 点击“下一张”按钮会显示轮播中的下一张图片。
 
-在“图片轮播”练习中，哪个方法用于导航到下一张图片？
+#### 12. 在图片轮播练习中，点击“上一张”按钮时，当前图片索引如何更新？
 
-a) `nextImage()`
+- A) 增加 1
+- B) 减少 1
+- C) 重置为 0
 
-b) `next()`
 
-c) `src = nextImage`
-
-d) `addEventListener`
-
-答案：d) `addEventListener` 解释：`addEventListener` 方法用于处理导航到下一张图片的点击事件。
-
-在“倒计时器”练习中，哪个函数用于按设定间隔重复执行代码？
-
-a) `setTimeout`
-
-b) `setInterval`
-
-c) `clearInterval`
-
-d) `setTimer`
-
-答案：b) `setInterval` 解释：`setInterval` 函数用于按指定间隔重复执行代码。
-
-
-
-
-答案：b) `setInterval` 解释：`setInterval` 函数用于重复执行更新倒计时器的代码。
-
-在倒计时器练习中，如何停止倒计时？
-
-a) `stop()`
-
-b) `clearInterval()`
-
-c) `endTimer()`
-
-d) `reset()`
-
-答案：b) `clearInterval()` 解释：`clearInterval` 函数用于停止计时器的继续执行。
-
-在图片轮播练习中，当当前图片的索引超过图片数组的长度时会发生什么？
-
-a) 轮播停止。
-
-b) 索引重置为 0。
-
-c) 索引保持不变。
-
-d) 抛出错误。
-
-答案：b) 索引重置为 0。解释：当索引超过图片数组的长度时，它会重置为 0，以循环回到第一张图片。
-
-在创建模态弹窗练习中，模态框的初始 CSS display 属性值是什么？
-
-A) `block`
-
-B) `none`
-
-C) `flex`
-
-D) `inline`
-
-答案：B 解释：模态框的初始 CSS display 属性值为 `none`，表示默认隐藏。
-
-在创建模态弹窗练习中，什么事件触发模态框出现？
-
-A) 鼠标悬停
-
-B) 点击打开模态框按钮
-
-C) 双击
-
-D) 鼠标移出
-
-答案：B 解释：点击打开模态框按钮会触发模态框出现。
-
-哪个 CSS 属性使模态框显示在其他元素之上？
-
-A) `position: absolute`
-
-B) `z-index: 1`
-
-C) `visibility: visible`
-
-D) `position: fixed`
-
-答案：D 解释：`position: fixed` 属性确保模态框显示在其他元素之上，并相对于视口保持固定位置。
-
-在创建模态弹窗练习中，如何关闭模态框？
-
-A) 点击模态框外部
-
-B) 点击模态框内部的关闭按钮
-
-C) 按下 Escape 键
-
-D) 双击模态框
-
-答案：B 解释：通过点击模态框内部的关闭按钮来关闭模态框。
-
-在图片轮播练习中，使用哪个 JavaScript 数组来存储图片？
-
-A) `pictures`
-
-B) `photos`
-
-C) `slides`
-
-D) `images`
-
-答案：D 解释：数组 `images` 用于存储轮播图片的文件名。
-
-在图片轮播练习中，点击“下一张”按钮时会发生什么？
-
-A) 显示下一张图片
-
-B) 显示上一张图片
-
-C) 轮播停止
-
-D) 显示第一张图片
-
-答案：A 解释：点击“下一张”按钮会显示轮播中的下一张图片。
-
-在图片轮播练习中，点击“上一张”按钮时，当前图片索引如何更新？
-
-A) 增加 1
-
-B) 减少 1
-
-C) 重置为 0
 
 D) 设置为最后一个索引
 
-答案：B 解释：点击“上一张”按钮会将当前图片索引减 1，如果索引为 0，则循环到最后一张图片。
+答案：B
+
+解释：点击“上一张”按钮会将当前图片索引减 1，如果索引为 0，则循环到最后一张图片。
 
 在图片轮播练习中，哪个元素显示当前图片？
 
@@ -2175,7 +2178,9 @@ C) `<img>`
 
 D) `<p>`
 
-答案：C 解释：ID 为 `carouselImage` 的 `<img>` 元素显示当前图片。
+答案：C
+
+解释：ID 为 `carouselImage` 的 `<img>` 元素显示当前图片。
 
 在倒计时器练习中，使用哪个 JavaScript 函数来重复执行倒计时？
 
@@ -2187,7 +2192,9 @@ C) `clearInterval`
 
 D) `requestAnimationFrame`
 
-答案：B 解释：`setInterval` 函数用于每秒重复执行倒计时。
+答案：B
+
+解释：`setInterval` 函数用于每秒重复执行倒计时。
 
 在倒计时器练习中，当倒计时归零时会发生什么？
 
@@ -2199,22 +2206,24 @@ C) 计时器继续倒计时到负数
 
 D) 计时器从初始值重新开始
 
-答案：B 解释：当倒计时归零时，计时器停止并显示提示，表示时间已到。
+答案：B
+
+解释：当倒计时归零时，计时器停止并显示提示，表示时间已到。
 
 ## 灯箱图片查看器
 
-**描述：**
+### 描述
 
 在本练习中，学生将创建一个灯箱图片查看器，点击缩略图时在覆盖层中显示图片。点击图片外部或关闭按钮将关闭灯箱。本练习介绍如何处理多个事件和动态类操作。
 
-**涉及主题：**
+### 涉及主题
 
 - HTML 结构
 - CSS 样式
 - JavaScript 事件监听器
 - DOM 操作（显示/隐藏元素、更改类）
 
-**HTML：**
+### HTML
 
 ```html
 <!DOCTYPE html>
@@ -2240,7 +2249,7 @@ D) 计时器从初始值重新开始
 </html>
 ```
 
-**CSS：**
+### CSS
 
 ```css
 body {
@@ -2289,7 +2298,7 @@ color: white;
 }
 ```
 
-**JavaScript：**
+### JavaScript
 
 ```javascript
 document.querySelectorAll('.thumbnail').forEach(thumbnail => {
@@ -2312,18 +2321,18 @@ this.classList.remove('active');
 
 ## 工具提示悬停效果
 
-**描述：**
+### 描述
 
 在本练习中，学生将创建在悬停特定文本元素时出现的工具提示。本练习介绍鼠标事件和创建动态元素。
 
-**涉及主题：**
+### 涉及主题
 
 - HTML 结构
 - CSS 样式
 - JavaScript 事件监听器
 - DOM 操作（创建和定位元素）
 
-**HTML：**
+### HTML
 
 ```html
 <!DOCTYPE html>
@@ -2342,7 +2351,7 @@ this.classList.remove('active');
 </html>
 ```
 
-**CSS：**
+### CSS
 
 ```css
 body {
@@ -2377,7 +2386,7 @@ opacity: 1;
 }
 ```
 
-**JavaScript：**
+### JavaScript
 
 ```javascript
 document.querySelectorAll('.tooltip').forEach(item => {
@@ -2391,10 +2400,7 @@ item.addEventListener('mouseleave', function() {
 const tooltipText = this.querySelector('.tooltiptext');
 ```
 
-
-
-
-```
+```javascript
 if (tooltipText) {
   tooltipText.remove();
 }
@@ -2402,18 +2408,18 @@ if (tooltipText) {
 
 ## 可折叠区域
 
-**描述：**
+### 描述
 
 在本练习中，学生将创建可折叠区域，点击标题时展开或折叠。本练习介绍如何切换可见性和动态更改样式。
 
-**涉及主题：**
+### 涉及主题
 
 - HTML 结构
 - CSS 样式
 - JavaScript 事件监听器
 - DOM 操作（切换可见性）
 
-**HTML：**
+### HTML
 
 ```html
 <!DOCTYPE html>
@@ -2442,7 +2448,7 @@ if (tooltipText) {
 </html>
 ```
 
-**CSS：**
+### CSS
 
 ```css
 body {
@@ -2466,7 +2472,7 @@ body {
 }
 ```
 
-**JavaScript：**
+### JavaScript
 
 ```javascript
 document.querySelectorAll('.collapsible-header').forEach(header => {
@@ -2483,18 +2489,18 @@ document.querySelectorAll('.collapsible-header').forEach(header => {
 
 ## 拖拽排序列表
 
-**描述：**
+### 描述
 
 在本练习中，学生将创建一个拖拽排序列表，通过拖放来重新排列项目。本练习介绍拖放事件和动态更新 DOM。
 
-**涉及主题：**
+### 涉及主题
 
 - HTML 结构
 - CSS 样式
 - JavaScript 拖放事件
 - DOM 操作（重新排列元素）
 
-**HTML：**
+### HTML
 
 ```html
 <!DOCTYPE html>
@@ -2518,7 +2524,7 @@ document.querySelectorAll('.collapsible-header').forEach(header => {
 </html>
 ```
 
-**CSS：**
+### CSS
 
 ```css
 body {
@@ -2543,7 +2549,7 @@ li {
 }
 ```
 
-**JavaScript：**
+### JavaScript
 
 ```javascript
 const list = document.getElementById('draggableList');
@@ -2585,11 +2591,11 @@ list.addEventListener('drop', function(event) {
 
 ## 简易计算器
 
-**描述：**
+### 描述
 
 在本练习中，学生将创建一个简易计算器，能够执行基本的算术运算（加、减、乘、除）。本练习介绍如何处理表单输入并使用 JavaScript 进行计算。
 
-**涉及主题：**
+### 涉及主题
 
 - HTML 结构
 - CSS 样式
@@ -2597,7 +2603,9 @@ list.addEventListener('drop', function(event) {
 - 处理表单输入
 - 执行计算
 
-**HTML：**
+### HTML
+
+
 
 ```html
 <!DOCTYPE html>
@@ -2635,7 +2643,7 @@ list.addEventListener('drop', function(event) {
 </html>
 ```
 
-**CSS：**
+## CSS
 
 ```css
 body {
@@ -2646,6 +2654,7 @@ body {
   height: 100vh;
   margin: 0;
 }
+
 .calculator {
   display: flex;
   flex-direction: column;
@@ -2655,6 +2664,7 @@ body {
   padding: 20px;
   background-color: #f9f9f9;
 }
+
 #display {
   width: 200px;
   padding: 10px;
@@ -2664,11 +2674,13 @@ body {
   border: 1px solid #ccc;
   border-radius: 5px;
 }
+
 .buttons {
   display: grid;
   grid-template-columns: repeat(4, 50px);
   gap: 10px;
 }
+
 button {
   width: 50px;
   height: 50px;
@@ -2677,7 +2689,7 @@ button {
 }
 ```
 
-**JavaScript：**
+## JavaScript
 
 ```javascript
 let display = document.getElementById('display');
@@ -2738,18 +2750,18 @@ equals.addEventListener('click', function() {
 
 ## 标签页导航
 
-**描述：**
+### 描述
 
 在本练习中，学生将创建一个标签页导航界面，点击标签时显示对应内容并隐藏其他内容。本练习介绍如何使用 JavaScript 在内容区域之间切换。
 
-**涉及主题：**
+### 涉及主题
 
 - HTML 结构
 - CSS 样式
 - JavaScript 事件监听器
 - DOM 操作（显示/隐藏元素）
 
-**HTML：**
+### HTML
 
 ```html
 <!DOCTYPE html>
@@ -2763,33 +2775,20 @@ equals.addEventListener('click', function() {
 <body>
   <div class="tabs">
     <button class="tab-button active" data-tab="tab1">Tab 1</button>
-```
+    <button class="tab-button" data-tab="tab2">Tab 2</button>
+    <button class="tab-button" data-tab="tab3">Tab 3</button>
+  </div>
 
+  <div class="tab-content" id="tab1">Content for Tab 1</div>
+  <div class="tab-content" id="tab2">Content for Tab 2</div>
+  <div class="tab-content" id="tab3">Content for Tab 3</div>
 
-
-
-
-```html
-<button class="tab-button" data-tab="tab2">Tab 2</button>
-
-<button class="tab-button" data-tab="tab3">Tab 3</button>
-
-</div>
-
-<div class="tab-content" id="tab1">Content for Tab 1</div>
-
-<div class="tab-content" id="tab2">Content for Tab 2</div>
-
-<div class="tab-content" id="tab3">Content for Tab 3</div>
-
-<script src="script.js"></script>
-
+  <script src="script.js"></script>
 </body>
-
 </html>
 ```
 
-CSS:
+### CSS
 
 ```css
 body {
@@ -2828,7 +2827,7 @@ body {
 }
 ```
 
-JavaScript:
+### JavaScript
 
 ```javascript
 document.querySelectorAll('.tab-button').forEach(button => {
@@ -2843,19 +2842,19 @@ document.querySelectorAll('.tab-button').forEach(button => {
 
 ## 随机名言生成器
 
-**描述：**
+### 描述
 
 在本练习中，学生将创建一个随机名言生成器，每次点击按钮时显示一条新名言。本练习介绍如何使用数组和随机选择元素。
 
-**涵盖主题：**
+### 涵盖主题
 
-● HTML 结构  
-● CSS 样式  
-● JavaScript 事件监听器  
-● 数组  
-● DOM 操作（更新文本内容）
+- HTML 结构
+- CSS 样式
+- JavaScript 事件监听器
+- 数组
+- DOM 操作（更新文本内容）
 
-HTML:
+### HTML
 
 ```html
 <!DOCTYPE html>
@@ -2876,7 +2875,7 @@ HTML:
 </html>
 ```
 
-CSS:
+### CSS
 
 ```css
 body {
@@ -2904,7 +2903,7 @@ button {
 }
 ```
 
-JavaScript:
+### JavaScript
 
 ```javascript
 const quotes = [
@@ -2923,18 +2922,18 @@ document.getElementById('newQuoteButton').addEventListener('click', function() {
 
 ## 实时字符计数器
 
-**描述：**
+### 描述
 
 在本练习中，学生将创建一个实时字符计数器，当用户在文本区域输入时自动更新。本练习介绍如何使用输入事件和动态更新 DOM。
 
-**涵盖主题：**
+### 涵盖主题
 
-● HTML 结构  
-● CSS 样式  
-● JavaScript 事件监听器  
-● DOM 操作（更新文本内容）
+- HTML 结构
+- CSS 样式
+- JavaScript 事件监听器
+- DOM 操作（更新文本内容）
 
-HTML:
+### HTML
 
 ```html
 <!DOCTYPE html>
@@ -2955,7 +2954,7 @@ HTML:
 </html>
 ```
 
-CSS:
+### CSS
 
 ```css
 body {
@@ -2989,7 +2988,7 @@ p {
 }
 ```
 
-JavaScript:
+### JavaScript
 
 ```javascript
 document.getElementById('textInput').addEventListener('input', function() {
@@ -2998,113 +2997,167 @@ document.getElementById('textInput').addEventListener('input', function() {
 });
 ```
 
+
+
 ### 多项选择题
 
 在灯箱图片查看器练习中，哪种方法用于在点击图片外部时关闭灯箱？
 
-a) `event.stopPropagation`  
-b) `event.preventDefault`  
-c) `event.target`  
+a) `event.stopPropagation`
+
+b) `event.preventDefault`
+
+c) `event.target`
+
 d) `event.currentTarget`
 
-答案：c) `event.target` 解释：`event.target` 属性用于判断点击是否发生在图片外部，从而关闭灯箱。
+答案：c) `event.target`
+
+解释：`event.target` 属性用于判断点击是否发生在图片外部，从而关闭灯箱。
 
 在工具提示悬停效果练习中，使用哪个 CSS 属性来创建平滑的过渡效果？
 
-a) `transform`  
-b) `animation`  
-c) `transition`  
+a) `transform`
+
+b) `animation`
+
+c) `transition`
+
 d) `visibility`
 
-答案：c) `transition` 解释：`transition` 属性用于创建工具提示可见性和不透明度的平滑过渡效果。
+答案：c) `transition`
+
+解释：`transition` 属性用于创建工具提示可见性和不透明度的平滑过渡效果。
 
 在工具提示悬停效果练习中，如何将工具提示文本动态添加到元素中？
 
-a) 使用 `innerHTML`  
-b) 使用 `textContent`  
-c) 使用 `createElement` 和 `appendChild`  
+a) 使用 `innerHTML`
+
+b) 使用 `textContent`
+
+c) 使用 `createElement` 和 `appendChild`
+
 d) 使用 `insertAdjacentHTML`
 
-答案：c) 使用 `createElement` 和 `appendChild` 解释：工具提示文本通过 `createElement` 和 `appendChild` 方法动态创建并添加。
+答案：c) 使用 `createElement` 和 `appendChild`
+
+解释：工具提示文本通过 `createElement` 和 `appendChild` 方法动态创建并添加。
 
 如何在 JavaScript 中切换元素的可见性？
 
-a) `style.visibility`  
-b) `style.display`  
-c) `classList.toggle`  
+a) `style.visibility`
+
+b) `style.display`
+
+c) `classList.toggle`
+
 d) 以上全部
 
-答案：d) 以上全部 解释：根据所需效果，可以使用 `style.visibility`、`style.display` 或 `classList.toggle` 来切换可见性。
+答案：d) 以上全部
+
+解释：根据所需效果，可以使用 `style.visibility`、`style.display` 或 `classList.toggle` 来切换可见性。
 
 在可折叠区域练习中，切换哪个 CSS 属性来显示或隐藏内容？
 
-a) `visibility`  
-b) `opacity`  
-c) `display`  
+a) `visibility`
+
+b) `opacity`
+
+c) `display`
+
 d) `height`
 
-答案：c) `display` 解释：`display` 属性在 `block` 和 `none` 之间切换，以显示或隐藏可折叠内容。
+答案：c) `display`
+
+解释：`display` 属性在 `block` 和 `none` 之间切换，以显示或隐藏可折叠内容。
 
 在拖放列表练习中，哪个 HTML 属性使元素可拖动？
 
-a) `draggable`  
-b) `movable`  
-c) `sortable`  
+a) `draggable`
+
+b) `movable`
+
+c) `sortable`
+
 d) `dropzone`
 
-答案：a) `draggable` 解释：`draggable` 属性用于指定元素可拖动。
+答案：a) `draggable`
+
+解释：`draggable` 属性用于指定元素可拖动。
 
 在拖放列表练习中，当可拖动元素被放下时触发哪个事件？
 
-a) `dragend`  
-b) `dragstart`  
-c) `drop`  
+a) `dragend`
+
+b) `dragstart`
+
+c) `drop`
+
 d) `dragenter`
 
-答案：c) `drop` 解释：当可拖动元素被放下时触发 `drop` 事件。
+答案：c) `drop`
+
+解释：当可拖动元素被放下时触发 `drop` 事件。
 
 在简单计算器练习中，使用什么方法将按钮的值添加到显示屏？
 
-a) `innerHTML`  
-b) `textContent`  
-c) `value`  
+a) `innerHTML`
+
+b) `textContent`
+
+c) `value`
+
 d) `appendChild`
 
-答案：c) `value` 解释：使用 `value` 属性将按钮的值添加到显示屏。
+答案：c) `value`
+
+解释：使用 `value` 属性将按钮的值添加到显示屏。
 
 在简单计算器练习中，如何清除显示屏？
 
-a) `display.clear()`  
-b) `display.value = ''`  
-c) `display.reset()`  
+a) `display.clear()`
+
+b) `display.value = ''`
+
+c) `display.reset()`
+
 d) `display.textContent = ''`
 
-答案：b) `display.value = ''` 解释：通过将 `value` 属性设置为空字符串来清除显示屏。
+答案：b) `display.value = ''`
+
+解释：通过将 `value` 属性设置为空字符串来清除显示屏。
 
 在标签页导航练习中，如何显示当前激活的标签页内容？
 
-a) `style.display = 'block'`  
-b) `classList.add('active')`  
-c) `innerHTML`  
+a) `style.display = 'block'`
+
+b) `classList.add('active')`
+
+c) `innerHTML`
+
 d) `textContent`
 
-答案：b) `classList.add('active')` 解释：通过使用 `classList.add('active')` 添加 `active` 类来显示当前激活的标签页内容。
+答案：b) `classList.add('active')`
+
+解释：通过使用 `classList.add('active')` 添加 `active` 类来显示当前激活的标签页内容。
 
 在随机名言生成器练习中，使用什么方法从数组中随机选择一条名言？
 
-a) `Math.random()`  
-b) `Math.floor()`  
-c) `Array.prototype.random()`  
+a) `Math.random()`
+
+b) `Math.floor()`
+
+c) `Array.prototype.random()`
+
 d) `Math.ceil()`
 
-答案：a) `Math.random()` 解释：使用 `Math.random()` 方法生成随机数，并使用 `Math.floor()` 将其转换为数组索引范围内的整数。
+答案：a) `Math.random()`
+
+解释：使用 `Math.random()` 方法生成随机数，并使用 `Math.floor()` 将其转换为数组索引范围内的整数。
 
 在实时字符计数器练习中，使用什么事件来更新字符计数？
 
 a) `change`
-
-
-
 
 b) `input`
 
@@ -3112,7 +3165,9 @@ c) `keydown`
 
 d) `keyup`
 
-答案：b) `input` 解释：`input` 事件在每次 `input` 或 `textarea` 的值发生变化时触发，非常适合实时更新。
+答案：b) `input`
+
+解释：`input` 事件在每次 `input` 或 `textarea` 的值发生变化时触发，非常适合实时更新。
 
 在实时字符计数器练习中，字符计数是如何显示给用户的？
 
@@ -3124,7 +3179,9 @@ c) `value`
 
 d) `appendChild`
 
-答案：b) `textContent` 解释：`textContent` 属性用于更新段落元素中显示的字符计数。
+答案：b) `textContent`
+
+解释：`textContent` 属性用于更新段落元素中显示的字符计数。
 
 在灯箱图片查看器练习中，灯箱的初始显示属性是什么？
 
@@ -3408,21 +3465,18 @@ D) 通过更新文本区域的 `placeholder`
 
 ## 简单待办事项列表
 
-描述：
+### 描述
 
 在本练习中，学生将创建一个简单的待办事项列表，可以添加新任务并将其标记为已完成。本练习介绍了表单处理、动态向 DOM 添加元素以及更新样式。
 
-涵盖主题：
+### 涵盖主题
 
-● HTML 结构
+- HTML 结构
+- CSS 样式
+- JavaScript 事件监听器
+- DOM 操作（添加和更新元素）
 
-● CSS 样式
-
-● JavaScript 事件监听器
-
-● DOM 操作（添加和更新元素）
-
-HTML：
+### HTML
 
 ```html
 <!DOCTYPE html>
@@ -3447,7 +3501,7 @@ HTML：
 </html>
 ```
 
-CSS：
+### CSS
 
 ```css
 body {
@@ -3484,17 +3538,13 @@ color: grey;
 }
 ```
 
-JavaScript：
+### JavaScript
 
 ```javascript
 document.getElementById('todoForm').addEventListener('submit', function(event) {
 event.preventDefault();
 const taskInput = document.getElementById('taskInput');
 ```
-
-
-
-
 
 ```javascript
 const taskText = taskInput.value;
@@ -3520,11 +3570,11 @@ taskInput.value = '';
 
 ## 图片轮播
 
-描述：
+### 描述
 
 在本练习中，学生将创建一个每隔几秒自动切换图片的图片轮播。本练习介绍如何使用定时器以及动态更新 DOM。
 
-涵盖主题：
+### 涵盖主题
 
 - HTML 结构
 - CSS 样式
@@ -3532,7 +3582,7 @@ taskInput.value = '';
 - DOM 操作（更改图片源）
 - 定时器的使用
 
-HTML：
+### HTML
 
 ```html
 <!DOCTYPE html>
@@ -3552,7 +3602,7 @@ HTML：
 </html>
 ```
 
-CSS：
+### CSS
 
 ```css
 body {
@@ -3575,7 +3625,7 @@ display: block;
 }
 ```
 
-JavaScript：
+### JavaScript
 
 ```javascript
 const images = ['image1.jpg', 'image2.jpg', 'image3.jpg'];
@@ -3589,18 +3639,20 @@ setInterval(showNextImage, 3000); // 每 3 秒切换图片
 
 ## 交互式常见问题解答
 
-描述：
+### 描述
 
 在本练习中，学生将创建一个交互式常见问题解答（FAQ）区域，点击问题即可显示答案。本练习介绍如何切换可见性以及动态更新样式。
 
-涵盖主题：
+### 涵盖主题
 
 - HTML 结构
 - CSS 样式
 - JavaScript 事件监听器
 - DOM 操作（切换可见性）
 
-HTML：
+### HTML
+
+
 
 ```html
 <!DOCTYPE html>
@@ -3631,7 +3683,7 @@ HTML：
 </html>
 ```
 
-CSS：
+### CSS
 
 ```css
 body {
@@ -3663,7 +3715,7 @@ background-color: #fff;
 }
 ```
 
-JavaScript：
+### JavaScript
 
 ```javascript
 document.querySelectorAll('.faq-question').forEach(question => {
@@ -3680,11 +3732,11 @@ answer.style.display = 'block';
 
 ## 货币转换器
 
-描述：
+### 描述
 
 在本练习中，学生将创建一个货币转换器，根据预定义的汇率将金额从一种货币转换为另一种货币。本练习介绍如何使用表单、处理用户输入以及执行计算。
 
-涵盖主题：
+### 涵盖主题
 
 - HTML 结构
 - CSS 样式
@@ -3692,7 +3744,7 @@ answer.style.display = 'block';
 - 处理表单输入
 - 执行计算
 
-HTML：
+### HTML
 
 ```html
 <!DOCTYPE html>
@@ -3722,7 +3774,7 @@ HTML：
 </html>
 ```
 
-CSS：
+### CSS
 
 ```css
 body {
@@ -3751,7 +3803,7 @@ font-size: 16px;
 }
 ```
 
-JavaScript：
+### JavaScript
 
 ```javascript
 const exchangeRates = {
@@ -3771,11 +3823,11 @@ document.getElementById('resultDisplay').textContent = `Converted Amount: ${conv
 
 ## 石头剪刀布游戏
 
-描述：
+### 描述
 
 在本练习中，学生将创建一个简单的石头剪刀布游戏，用户可以与电脑对战。本练习介绍如何处理用户输入、生成随机选择以及实现游戏逻辑。
 
-涵盖主题：
+### 涵盖主题
 
 - HTML 结构
 - CSS 样式
@@ -3783,7 +3835,7 @@ document.getElementById('resultDisplay').textContent = `Converted Amount: ${conv
 - 处理用户输入
 - 实现游戏逻辑
 
-HTML：
+### HTML
 
 ```html
 <!DOCTYPE html>
@@ -3809,7 +3861,7 @@ HTML：
 </html>
 ```
 
-CSS：
+### CSS
 
 ```css
 body {
@@ -3840,7 +3892,7 @@ cursor: pointer;
 }
 ```
 
-JavaScript：
+### JavaScript
 
 ```javascript
 const choices = ['rock', 'paper', 'scissors'];
@@ -3860,25 +3912,18 @@ result = 'You win!';
 } else {
 result = 'You lose!';
 }
-```
-
-
-
-
-
-```javascript
 document.getElementById('resultDisplay').textContent = `You chose ${userChoice}. Computer chose ${computerChoice}. ${result}`;
-
+});
 });
 ```
 
 ## 带暂停和重置功能的倒计时器
 
-描述：
+### 描述
 
 在本练习中，学生将创建一个可以暂停和重置的倒计时器。本练习介绍了如何使用定时器、控制其执行以及动态更新 DOM。
 
-涵盖的主题：
+### 涵盖的主题
 
 - HTML 结构
 - CSS 样式
@@ -3886,7 +3931,7 @@ document.getElementById('resultDisplay').textContent = `You chose ${userChoice}.
 - 使用定时器
 - DOM 操作（更新文本内容）
 
-HTML：
+### HTML
 
 ```html
 <!DOCTYPE html>
@@ -3913,7 +3958,7 @@ HTML：
 </html>
 ```
 
-CSS：
+### CSS
 
 ```css
 body {
@@ -3953,7 +3998,7 @@ margin: 0;
 }
 ```
 
-JavaScript：
+### JavaScript
 
 ```javascript
 let timer;
@@ -3994,315 +4039,109 @@ isPaused = false;
 
 ### 多项选择题
 
-在简单待办事项列表练习中，哪个事件用于处理表单提交？
+#### 1. 在简单待办事项列表练习中，哪个事件用于处理表单提交？
 
 a) `click`
+
 b) `submit`
+
 c) `change`
+
 d) `input`
 
-答案：b) `submit` 解释：`submit` 事件用于在向待办事项列表添加新任务时处理表单提交。
+**答案：** b) `submit`
 
-在简单待办事项列表练习中，使用什么方法来切换任务的 completed 类？
+**解释：** `submit` 事件用于在向待办事项列表添加新任务时处理表单提交。
+
+#### 2. 在简单待办事项列表练习中，使用什么方法来切换任务的 `completed` 类？
 
 a) `classList.add`
+
 b) `classList.remove`
+
 c) `classList.toggle`
+
 d) `classList.change`
 
-答案：c) `classList.toggle` 解释：`classList.toggle` 方法用于在点击任务时添加或移除 completed 类。
+**答案：** c) `classList.toggle`
 
-在图片轮播练习中，图片多久更换一次？
+**解释：** `classList.toggle` 方法用于在点击任务时添加或移除 `completed` 类。
+
+#### 3. 在图片轮播练习中，图片多久更换一次？
 
 a) 每秒
+
 b) 每 2 秒
+
 c) 每 3 秒
+
 d) 每 5 秒
 
-答案：c) 每 3 秒 解释：`setInterval` 函数用于每 3 秒更换一次图片。
 
-在交互式常见问题解答练习中，如何显示或隐藏答案？
+
+答案：c) 每 3 秒
+
+解释：`setInterval` 函数用于每 3 秒更换一次图片。
+
+## 交互式常见问题解答
+
+### 1. 如何显示或隐藏答案？
 
 a) 通过更改 `innerHTML`
+
 b) 通过更改 `textContent`
+
 c) 通过切换 `display` 属性
+
 d) 通过使用 `visibility` 属性
 
-答案：c) 通过切换 `display` 属性 解释：`display` 属性在 `block` 和 `none` 之间切换，以显示或隐藏常见问题解答的答案。
+答案：c) 通过切换 `display` 属性
 
-在交互式常见问题解答练习中，常见问题解答答案的初始 display 属性是什么？
+解释：`display` 属性在 `block` 和 `none` 之间切换，以显示或隐藏常见问题解答的答案。
+
+### 2. 常见问题解答答案的初始 `display` 属性是什么？
 
 a) `block`
+
 b) `inline`
+
 c) `none`
+
 d) `hidden`
 
-答案：c) `none` 解释：常见问题解答答案的初始 display 属性设置为 `none`，表示默认隐藏。
+答案：c) `none`
 
-在货币转换器练习中，如何显示转换后的金额？
+解释：常见问题解答答案的初始 `display` 属性设置为 `none`，表示默认隐藏。
 
-a) 使用 `innerHTML`
-b) 使用 `textContent`
-c) 使用 `value`
-d) 使用 `appendChild`
-
-答案：b) 使用 `textContent` 解释：`textContent` 属性用于在结果显示元素中显示转换后的金额。
-
-在石头剪刀布游戏练习中，使用什么方法为计算机生成随机选择？
-
-a) `Math.random()`
-b) `Math.floor()`
-c) `Array.prototype.random()`
-d) `Math.ceil()`
-
-答案：a) `Math.random()` 解释：`Math.random()` 方法用于生成一个随机数，然后用于为计算机选择随机选项。
-
-在带暂停和重置功能的倒计时器练习中，哪个函数用于重复执行倒计时逻辑？
-
-a) `setTimeout`
-b) `setInterval`
-c) `clearInterval`
-d) `setTimer`
-
-答案：b) `setInterval` 解释：`setInterval` 函数用于每隔一秒重复执行倒计时逻辑。
-
-在带暂停和重置功能的倒计时器练习中，如何暂停计时器？
-
-a) 通过清除间隔
-b) 通过设置暂停标志
-c) 通过重置计时器
-d) 通过使用 `pause()` 方法
-
-答案：b) 通过设置暂停标志 解释：通过将 `isPaused` 标志设置为 `true` 来暂停计时器，这会停止倒计时而不清除间隔。
-
-在石头剪刀布游戏练习中，什么决定用户是否获胜？
-
-a) 用户的选择与计算机的选择相同
-b) 用户的选择击败了计算机的选择
-c) 计算机的选择与用户的选择相同
-d) 计算机的选择击败了用户的选择
-
-答案：b) 用户的选择击败了计算机的选择 解释：根据石头剪刀布的规则，如果用户的选择击败了计算机的选择，则用户获胜。
-
-在简单待办事项列表练习中，哪个事件阻止了默认的表单提交？
-
-A) `click`
-B) `submit`
-C) `load`
-D) `input`
-
-答案：B 解释：`submit` 事件用于在添加新任务时阻止默认的表单提交。
-
-在简单待办事项列表练习中，点击任务时会发生什么？
-
-A) 任务被删除
-B) 任务被编辑
-C) 通过切换类，任务被标记为已完成
-D) 任务被移动到列表顶部
-
-答案：C 解释：点击任务会切换 completed 类，将其标记为已完成或未完成。
-
-在简单待办事项列表练习中，哪个 HTML 元素用于显示任务列表？
-
-A) `<div>`
-B) `<ol>`
-C) `<ul>`
-D) `<section>`
-
-答案：C 解释：`<ul>` 元素用于显示任务列表。
-
-在图片轮播练习中，哪个函数用于每隔几秒更换图片？
-
-A) `setTimeout`
-B) `clearInterval`
-C) `setInterval`
-D) `requestAnimationFrame`
-
-答案：C 解释：`setInterval` 函数用于每 3 秒更换一次图片。
-
-在图片轮播练习中，如何显示数组中的下一张图片？
-
-A) 通过递增当前索引
-B) 通过递减当前索引
-C) 通过随机选择
-D) 通过反向遍历数组
-
-答案：A 解释：递增当前索引以显示数组中的下一张图片。
-
-在图片轮播练习中，哪个事件监听器用于启动图片轮播？
-
-A) `click`
-B) `load`
-C) `mouseover`
-D) `resize`
-
-答案：B 解释：`load` 事件监听器被隐式使用，因为 `setInterval` 函数在页面加载后自动运行。
-
-在交互式常见问题解答练习中，哪个事件用于切换答案的可见性？
+### 3. 哪个事件用于切换答案的可见性？
 
 A) `mouseover`
+
 B) `click`
+
 C) `dblclick`
+
 D) `mouseenter`
 
-答案：B 解释：`click` 事件用于在点击问题时切换答案的可见性。
+答案：B
 
-在交互式常见问题解答练习中，更改哪个 CSS 属性以显示或隐藏答案？
+解释：`click` 事件用于在点击问题时切换答案的可见性。
+
+### 4. 更改哪个 CSS 属性以显示或隐藏答案？
 
 A) `visibility`
+
 B) `opacity`
+
 C) `display`
+
 D) `height`
 
 答案：C
 
-
-
-
-
 解释：`display` 属性在 `none` 和 `block` 之间切换，以显示或隐藏答案。
 
-在货币转换器练习中，使用哪个事件监听器来处理表单提交？
-
-A) `input`
-
-B) `change`
-
-C) `submit`
-
-D) `click`
-
-答案：C
-
-解释：使用 `submit` 事件监听器来处理表单提交。
-
-在货币转换器练习中，如何计算转换后的金额？
-
-A) 使用预定义的汇率
-
-B) 使用用户输入的汇率
-
-C) 通过从 API 获取实时汇率
-
-D) 硬编码结果
-
-答案：A
-
-解释：转换后的金额使用存储在对象中的预定义汇率进行计算。
-
-在石头剪刀布游戏练习中，如何确定电脑的选择？
-
-A) 通过用户输入
-
-B) 通过预定义的顺序
-
-C) 从数组中随机选择
-
-D) 总是选择石头
-
-答案：C
-
-解释：电脑的选择是通过从选项数组中随机选择来确定的。
-
-在石头剪刀布游戏练习中，什么事件触发游戏逻辑？
-
-A) `hover`
-
-B) `click`
-
-C) `keydown`
-
-D) `submit`
-
-答案：B
-
-解释：当用户点击他们的选择时，`click` 事件触发游戏逻辑。
-
-在倒计时器练习中，哪个函数用于重复更新倒计时？
-
-A) `setTimeout`
-
-B) `setInterval`
-
-C) `clearTimeout`
-
-D) `requestAnimationFrame`
-
-答案：B
-
-解释：使用 `setInterval` 函数重复更新倒计时。
-
-在倒计时器练习中，如何暂停计时器？
-
-A) 通过清除间隔
-
-B) 通过设置标志变量
-
-C) 通过重置倒计时值
-
-D) 通过禁用开始按钮
-
-答案：B
-
-解释：通过将标志变量（`isPaused`）设置为 true 来暂停计时器。
-
-在倒计时器练习中，点击重置按钮会发生什么？
-
-A) 倒计时继续
-
-B) 倒计时归零
-
-C) 倒计时暂停
-
-D) 倒计时从初始输入值重新开始
-
-答案：B
-
-解释：点击重置按钮会将倒计时归零并停止计时器。
-
-在简易待办事项列表练习中，哪个 HTML 元素用于提交新任务？
-
-A) `<button>`
-
-B) `<input>`
-
-C) `<form>`
-
-D) `<div>`
-
-答案：C
-
-解释：使用 `<form>` 元素提交新任务。
-
-在简易待办事项列表练习中，使用什么属性确保任务输入字段不为空？
-
-A) `required`
-
-B) `placeholder`
-
-C) `maxlength`
-
-D) `pattern`
-
-答案：A
-
-解释：使用 `required` 属性确保在提交前任务输入字段不为空。
-
-在图片轮播练习中，图片多久变化一次？
-
-A) 每秒
-
-B) 每 2 秒
-
-C) 每 3 秒
-
-D) 每 5 秒
-
-答案：C
-
-解释：图片每 3 秒变化一次，由 `setInterval` 中的间隔定义。
-
-在交互式常见问题解答练习中，每个常见问题项中的答案包含在哪个 HTML 元素中？
+### 5. 每个常见问题项中的答案包含在哪个 HTML 元素中？
 
 A) `<p>`
 
@@ -4316,7 +4155,7 @@ D) `<section>`
 
 解释：答案包含在问题 `<div>` 之后的 `<div>` 元素中。
 
-在交互式常见问题解答练习中，用户如何显示问题的答案？
+### 6. 用户如何显示问题的答案？
 
 A) 通过悬停在问题上
 
@@ -4330,27 +4169,327 @@ D) 通过右键点击问题
 
 解释：用户通过点击问题来显示答案。
 
+## 货币转换器
+
+### 1. 如何显示转换后的金额？
+
+a) 使用 `innerHTML`
+
+b) 使用 `textContent`
+
+c) 使用 `value`
+
+d) 使用 `appendChild`
+
+答案：b) 使用 `textContent`
+
+解释：`textContent` 属性用于在结果显示元素中显示转换后的金额。
+
+### 2. 使用哪个事件监听器来处理表单提交？
+
+A) `input`
+
+B) `change`
+
+C) `submit`
+
+D) `click`
+
+答案：C
+
+解释：使用 `submit` 事件监听器来处理表单提交。
+
+### 3. 如何计算转换后的金额？
+
+A) 使用预定义的汇率
+
+B) 使用用户输入的汇率
+
+C) 通过从 API 获取实时汇率
+
+D) 硬编码结果
+
+答案：A
+
+解释：转换后的金额使用存储在对象中的预定义汇率进行计算。
+
+## 石头剪刀布游戏
+
+### 1. 使用什么方法为计算机生成随机选择？
+
+a) `Math.random()`
+
+b) `Math.floor()`
+
+c) `Array.prototype.random()`
+
+d) `Math.ceil()`
+
+答案：a) `Math.random()`
+
+解释：`Math.random()` 方法用于生成一个随机数，然后用于为计算机选择随机选项。
+
+### 2. 什么决定用户是否获胜？
+
+a) 用户的选择与计算机的选择相同
+
+b) 用户的选择击败了计算机的选择
+
+c) 计算机的选择与用户的选择相同
+
+d) 计算机的选择击败了用户的选择
+
+答案：b) 用户的选择击败了计算机的选择
+
+解释：根据石头剪刀布的规则，如果用户的选择击败了计算机的选择，则用户获胜。
+
+### 3. 如何确定电脑的选择？
+
+A) 通过用户输入
+
+B) 通过预定义的顺序
+
+C) 从数组中随机选择
+
+D) 总是选择石头
+
+答案：C
+
+解释：电脑的选择是通过从选项数组中随机选择来确定的。
+
+### 4. 什么事件触发游戏逻辑？
+
+A) `hover`
+
+B) `click`
+
+C) `keydown`
+
+D) `submit`
+
+答案：B
+
+解释：当用户点击他们的选择时，`click` 事件触发游戏逻辑。
+
+## 倒计时器
+
+### 1. 哪个函数用于重复执行倒计时逻辑？
+
+a) `setTimeout`
+
+b) `setInterval`
+
+c) `clearInterval`
+
+d) `setTimer`
+
+答案：b) `setInterval`
+
+解释：`setInterval` 函数用于每隔一秒重复执行倒计时逻辑。
+
+### 2. 如何暂停计时器？
+
+a) 通过清除间隔
+
+b) 通过设置暂停标志
+
+c) 通过重置计时器
+
+d) 通过使用 `pause()` 方法
+
+答案：b) 通过设置暂停标志
+
+解释：通过将 `isPaused` 标志设置为 `true` 来暂停计时器，这会停止倒计时而不清除间隔。
+
+### 3. 哪个函数用于重复更新倒计时？
+
+A) `setTimeout`
+
+B) `setInterval`
+
+C) `clearTimeout`
+
+D) `requestAnimationFrame`
+
+答案：B
+
+解释：使用 `setInterval` 函数重复更新倒计时。
+
+### 4. 如何暂停计时器？
+
+A) 通过清除间隔
+
+B) 通过设置标志变量
+
+C) 通过重置倒计时值
+
+D) 通过禁用开始按钮
+
+答案：B
+
+解释：通过将标志变量（`isPaused`）设置为 `true` 来暂停计时器。
+
+### 5. 点击重置按钮会发生什么？
+
+A) 倒计时继续
+
+B) 倒计时归零
+
+C) 倒计时暂停
+
+D) 倒计时从初始输入值重新开始
+
+答案：B
+
+解释：点击重置按钮会将倒计时归零并停止计时器。
+
+## 简单待办事项列表
+
+### 1. 哪个事件阻止了默认的表单提交？
+
+A) `click`
+
+B) `submit`
+
+C) `load`
+
+D) `input`
+
+答案：B
+
+解释：`submit` 事件用于在添加新任务时阻止默认的表单提交。
+
+### 2. 点击任务时会发生什么？
+
+A) 任务被删除
+
+B) 任务被编辑
+
+C) 通过切换类，任务被标记为已完成
+
+D) 任务被移动到列表顶部
+
+答案：C
+
+解释：点击任务会切换 `completed` 类，将其标记为已完成或未完成。
+
+### 3. 哪个 HTML 元素用于显示任务列表？
+
+A) `<div>`
+
+B) `<ol>`
+
+C) `<ul>`
+
+D) `<section>`
+
+答案：C
+
+解释：`<ul>` 元素用于显示任务列表。
+
+### 4. 哪个 HTML 元素用于提交新任务？
+
+A) `<button>`
+
+B) `<input>`
+
+C) `<form>`
+
+D) `<div>`
+
+答案：C
+
+解释：使用 `<form>` 元素提交新任务。
+
+### 5. 使用什么属性确保任务输入字段不为空？
+
+A) `required`
+
+B) `placeholder`
+
+C) `maxlength`
+
+D) `pattern`
+
+答案：A
+
+解释：使用 `required` 属性确保在提交前任务输入字段不为空。
+
+## 图片轮播
+
+### 1. 哪个函数用于每隔几秒更换图片？
+
+A) `setTimeout`
+
+B) `clearInterval`
+
+C) `setInterval`
+
+D) `requestAnimationFrame`
+
+答案：C
+
+解释：`setInterval` 函数用于每 3 秒更换一次图片。
+
+### 2. 如何显示数组中的下一张图片？
+
+A) 通过递增当前索引
+
+B) 通过递减当前索引
+
+C) 通过随机选择
+
+D) 通过反向遍历数组
+
+答案：A
+
+解释：递增当前索引以显示数组中的下一张图片。
+
+### 3. 哪个事件监听器用于启动图片轮播？
+
+A) `click`
+
+B) `load`
+
+C) `mouseover`
+
+D) `resize`
+
+答案：B
+
+解释：`load` 事件监听器被隐式使用，因为 `setInterval` 函数在页面加载后自动运行。
+
+### 4. 图片多久变化一次？
+
+A) 每秒
+
+B) 每 2 秒
+
+C) 每 3 秒
+
+D) 每 5 秒
+
+答案：C
+
+解释：图片每 3 秒变化一次，由 `setInterval` 中的间隔定义。
+
 ## 温度转换器
 
-描述：
+### 描述
 
 在本练习中，学生将创建一个温度转换器，用于在摄氏度和华氏度之间转换温度。本练习介绍如何处理用户输入和执行计算。
 
-涵盖主题：
+### 涵盖主题
 
-●       HTML 结构
+- HTML 结构
+- CSS 样式
+- JavaScript 事件监听器
+- 处理表单输入
+- 执行计算
 
-●       CSS 样式
+### HTML
 
-●       JavaScript 事件监听器
-
-●       处理表单输入
-
-●       执行计算
-
-HTML：
-
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -4377,9 +4516,9 @@ HTML：
 </html>
 ```
 
-CSS：
+### CSS
 
-```
+```css
 body {
 font-family: Arial, sans-serif;
 display: flex;
@@ -4406,9 +4545,9 @@ font-size: 16px;
 }
 ```
 
-JavaScript：
+### JavaScript
 
-```
+```javascript
 document.getElementById('converterForm').addEventListener('submit', function(event) {
 event.preventDefault();
 const temperature = parseFloat(document.getElementById('temperatureInput').value);
@@ -4425,23 +4564,20 @@ document.getElementById('resultDisplay').textContent = `Converted Temperature: $
 
 ## 购物清单
 
-描述：
+### 描述
 
 在本练习中，学生将创建一个购物清单，可以添加和删除项目。本练习介绍如何处理表单输入、动态添加和删除 DOM 元素。
 
-涵盖主题：
+### 涵盖主题
 
-●       HTML 结构
+- HTML 结构
+- CSS 样式
+- JavaScript 事件监听器
+- DOM 操作（添加和删除元素）
 
-●       CSS 样式
+### HTML
 
-●       JavaScript 事件监听器
-
-●       DOM 操作（添加和删除元素）
-
-HTML：
-
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -4464,9 +4600,9 @@ HTML：
 </html>
 ```
 
-CSS：
+### CSS
 
-```
+```css
 body {
 font-family: Arial, sans-serif;
 display: flex;
@@ -4505,9 +4641,9 @@ font-size: 16px;
 }
 ```
 
-JavaScript：
+### JavaScript
 
-```
+```javascript
 document.getElementById('shoppingForm').addEventListener('submit', function(event) {
 event.preventDefault();
 const itemInput = document.getElementById('itemInput');
@@ -4529,29 +4665,18 @@ itemInput.value = '';
 
 ## 亮色/暗色模式切换
 
-描述：
+### 描述
 
 在本练习中，学生将创建一个亮色/暗色模式切换按钮，用于在亮色和暗色模式之间切换网页主题。本练习介绍如何切换 CSS 类并动态更新样式。
 
-涵盖主题：
+### 涵盖主题
 
-●       HTML 结构
+- HTML 结构
+- CSS 样式
+- JavaScript 事件监听器
+- DOM 操作（切换类）
 
-●       CSS 样式
-
-●       JavaScript 事件监听器
-
-●       DOM 操作（切换类）
-
-HTML：
-
-
-
-
-
-## 浅色/深色模式切换
-
-HTML:
+### HTML
 
 ```html
 <!DOCTYPE html>
@@ -4571,7 +4696,9 @@ HTML:
 </html>
 ```
 
-CSS:
+### CSS
+
+
 
 ```css
 body {
@@ -4616,11 +4743,11 @@ document.body.classList.toggle('light-mode');
 
 ## 秒表
 
-**描述：**
+### 描述
 
 在本练习中，学生将创建一个可以开始、停止和重置的秒表。本练习介绍如何使用定时器、控制其执行以及动态更新 DOM。
 
-**涉及主题：**
+### 涉及主题
 
 - HTML 结构
 - CSS 样式
@@ -4737,11 +4864,11 @@ isRunning = false;
 
 ## 密码强度检查器
 
-**描述：**
+### 描述
 
 在本练习中，学生将创建一个密码强度检查器，根据输入的密码提供强度反馈。本练习介绍如何处理表单输入并根据输入值提供实时反馈。
 
-**涉及主题：**
+### 涉及主题
 
 - HTML 结构
 - CSS 样式
@@ -4832,11 +4959,11 @@ document.getElementById('strengthDisplay').textContent = `Password Strength: ${s
 
 ## 小费计算器
 
-**描述：**
+### 描述
 
 在本练习中，学生将创建一个小费计算器，根据用户输入计算小费金额和总账单。本练习介绍如何处理用户输入并执行计算。
 
-**涉及主题：**
+### 涉及主题
 
 - HTML 结构
 - CSS 样式
@@ -4924,25 +5051,19 @@ document.getElementById('totalAmountDisplay').textContent = `Total Amount: $${to
 
 ## 颜色选择器
 
-**描述：**
+### 描述
 
 在本练习中，学生将创建一个颜色选择器，根据从输入中选择的颜色更改 div 的背景颜色。本练习介绍如何使用输入元素并动态更新样式。
 
-**涉及主题：**
+### 涉及主题
 
-
-
-
-
-## 颜色选择器
-
-涵盖主题：
 - HTML 结构
 - CSS 样式
 - JavaScript 事件监听器
 - DOM 操作（更新样式）
 
 HTML：
+
 ```html
 <!DOCTYPE html>
 <html lang="en">
@@ -4964,6 +5085,7 @@ HTML：
 ```
 
 CSS：
+
 ```css
 body {
 font-family: Arial, sans-serif;
@@ -4989,6 +5111,7 @@ border: 1px solid #ccc;
 ```
 
 JavaScript：
+
 ```javascript
 document.getElementById('colorInput').addEventListener('input', function() {
 const color = this.value;
@@ -4998,16 +5121,21 @@ document.getElementById('colorBox').style.backgroundColor = color;
 
 ## 单词计数器
 
-描述：
+### 描述
+
 在此练习中，学生将创建一个单词计数器，用于统计文本区域输入中的单词数量，并实时显示计数。本练习介绍如何处理输入事件以及动态更新 DOM。
 
-涵盖主题：
+### 涵盖主题
+
 - HTML 结构
 - CSS 样式
 - JavaScript 事件监听器
 - DOM 操作（更新文本内容）
 
 HTML：
+
+
+
 ```html
 <!DOCTYPE html>
 <html lang="en">
@@ -5029,6 +5157,7 @@ HTML：
 ```
 
 CSS：
+
 ```css
 body {
 font-family: Arial, sans-serif;
@@ -5059,6 +5188,7 @@ margin: 0;
 ```
 
 JavaScript：
+
 ```javascript
 document.getElementById('textInput').addEventListener('input', function() {
 const text = this.value.trim();
@@ -5067,141 +5197,95 @@ document.getElementById('wordCount').textContent = `Words: ${wordCount}`;
 });
 ```
 
-### 多项选择题
+## 多项选择题
+
+### 温度转换器
 
 在温度转换器练习中，转换后的温度如何显示？
+
 a) 使用 `innerHTML`
+
 b) 使用 `textContent`
+
 c) 使用 `value`
+
 d) 使用 `appendChild`
 
-答案：b) 使用 `textContent` 解释：`textContent` 属性用于在结果显示元素中显示转换后的温度。
+答案：b) 使用 `textContent`
 
-在购物清单练习中，使用什么方法向购物清单添加新项目？
-a) `appendChild`
-b) `insertAdjacentHTML`
-c) `innerHTML`
-d) `textContent`
-
-答案：a) `appendChild` 解释：`appendChild` 方法用于向购物清单添加新的列表项元素。
-
-在亮/暗模式切换练习中，使用什么方法切换主题？
-a) `toggle`
-b) `classList.toggle`
-c) `classList.add`
-d) `classList.remove`
-
-答案：b) `classList.toggle` 解释：`classList.toggle` 方法用于通过切换相应的 CSS 类来在亮模式和暗模式之间切换。
-
-在购物清单练习中，如何从购物清单中移除一个项目？
-a) 设置 `display: none`
-b) 设置 `visibility: hidden`
-c) 使用 `remove` 方法
-d) 设置 `innerHTML = ''`
-
-答案：c) 使用 `remove` 方法 解释：`remove` 方法用于从购物清单中移除列表项元素。
-
-在秒表练习中，使用什么方法每 10 毫秒更新一次显示？
-a) `setTimeout`
-b) `setInterval`
-c) `requestAnimationFrame`
-d) `clearInterval`
-
-答案：b) `setInterval` 解释：`setInterval` 函数用于每 10 毫秒重复执行更新显示的函数。
-
-在密码强度检查器练习中，使用什么函数来确定密码的强度？
-a) `checkPassword`
-b) `validatePassword`
-c) `checkStrength`
-d) `passwordStrength`
-
-答案：c) `checkStrength` 解释：`checkStrength` 函数用于根据特定标准确定输入密码的强度。
-
-在小费计算器练习中，如何计算小费金额？
-a) `(billAmount * tipPercentage / 100)`
-b) `(billAmount + tipPercentage / 100)`
-c) `(billAmount * (tipPercentage / 100) + billAmount)`
-d) `(billAmount / tipPercentage * 100)`
-
-答案：a) `(billAmount * tipPercentage / 100)` 解释：小费金额通过将账单金额乘以小费百分比再除以 100 来计算。
-
-在秒表练习中，如何启动计时器？
-a) 将 `isRunning` 设置为 true
-b) 调用 `startTime` 函数
-c) 初始化计时器变量
-d) 设置 `startTime` 并使用 `setInterval`
-
-答案：d) 设置 `startTime` 并使用 `setInterval` 解释：通过设置 `startTime` 并使用 `setInterval` 更新经过的时间和显示来启动计时器。
-
-在密码强度检查器练习中，使用哪些标准来确定密码的强度？
-a) 长度、数字和特殊字符的存在
-b) 长度、大写和小写字母、数字和特殊字符的存在
-c) 长度、空格和标点符号的存在
-d) 长度、字母的存在和大小写敏感性
-
-答案：b) 长度、大写和小写字母、数字和特殊字符的存在 解释：密码的强度根据其长度以及大写和小写字母、数字和特殊字符的存在来确定。
-
-在颜色选择器练习中，使用哪种输入类型来选择颜色？
-a) `text`
-b) `color`
-c) `range`
-d) `checkbox`
-
-答案：b) `color` 解释：`color` 输入类型用于提供颜色选择器界面。
-
-在单词计数器练习中，使用什么事件来更新单词计数？
-a) `change`
-b) `input`
-c) `keyup`
-d) `keydown`
-
-答案：b) `input` 解释：每当输入或文本区域的值发生变化时，会触发 `input` 事件，非常适合实时更新。
-
-在颜色选择器练习中，如何更新颜色框的背景颜色？
-a) 更改 `innerHTML`
-b) 更改 `textContent`
-c) 更改 `value`
-d) 更改 `style.backgroundColor`
-
-答案：d) 更改 `style.backgroundColor` 解释：`style.backgroundColor` 属性用于根据所选颜色更新颜色框的背景颜色。
-
-在单词计数器练习中，如何计算单词数量？
-a) 通过统计字符数
-b) 通过按逗号分割文本
-c) 通过按空格分割文本
-d) 通过按换行符分割文本
-
-答案：c) 通过按空格分割文本 解释：单词数量通过按空格分割文本并统计结果数组元素来计算。
+解释：`textContent` 属性用于在结果显示元素中显示转换后的温度。
 
 在温度转换器练习中，使用什么事件监听器来处理表单提交？
+
 A) `input`
+
 B) `change`
+
 C) `submit`
+
 D) `click`
 
-答案：C 解释：`submit` 事件监听器用于处理表单提交，从而执行温度转换。
+答案：C
+
+解释：`submit` 事件监听器用于处理表单提交，从而执行温度转换。
 
 在温度转换器练习中，哪个函数将摄氏度转换为华氏度？
+
 A) `(temperature * 5/9) + 32`
+
 B) `(temperature * 9/5) + 32`
+
 C) `(temperature - 32) * 9/5`
+
 D) `(temperature - 32) * 5/9`
 
-答案：B 解释：公式 `(temperature * 9/5) + 32` 将摄氏度转换为华氏度。
+答案：B
+
+解释：公式 `(temperature * 9/5) + 32` 将摄氏度转换为华氏度。
 
 在温度转换器练习中，温度输入字段使用什么类型？
+
 A) `text`
+
 B) `number`
+
 C) `range`
+
 D) `date`
 
 答案：B
 
-
-
-
-
 说明：温度输入使用数字输入字段，以确保输入为数值。
+
+### 购物清单
+
+在购物清单练习中，使用什么方法向购物清单添加新项目？
+
+a) `appendChild`
+
+b) `insertAdjacentHTML`
+
+c) `innerHTML`
+
+d) `textContent`
+
+答案：a) `appendChild`
+
+解释：`appendChild` 方法用于向购物清单添加新的列表项元素。
+
+在购物清单练习中，如何从购物清单中移除一个项目？
+
+a) 设置 `display: none`
+
+b) 设置 `visibility: hidden`
+
+c) 使用 `remove` 方法
+
+d) 设置 `innerHTML = ''`
+
+答案：c) 使用 `remove` 方法
+
+解释：`remove` 方法用于从购物清单中移除列表项元素。
 
 在“购物清单”练习中，用于向购物列表添加新项的事件监听器是哪个？
 
@@ -5231,6 +5315,22 @@ D) 单击该项旁边的移除按钮
 
 说明：单击该项旁边的移除按钮会触发将其从购物列表中移除。
 
+### 亮/暗模式切换
+
+在亮/暗模式切换练习中，使用什么方法切换主题？
+
+a) `toggle`
+
+b) `classList.toggle`
+
+c) `classList.add`
+
+d) `classList.remove`
+
+答案：b) `classList.toggle`
+
+解释：`classList.toggle` 方法用于通过切换相应的 CSS 类来在亮模式和暗模式之间切换。
+
 在“明暗模式切换”练习中，用于切换明暗模式的事件监听器是哪个？
 
 A) `mouseover`
@@ -5258,6 +5358,36 @@ D) `white-mode` 和 `black-mode`
 答案：C
 
 说明：切换 `light-mode` 和 `dark-mode` 这两个 CSS 类来实现明暗模式切换。
+
+### 秒表
+
+在秒表练习中，使用什么方法每 10 毫秒更新一次显示？
+
+a) `setTimeout`
+
+b) `setInterval`
+
+c) `requestAnimationFrame`
+
+d) `clearInterval`
+
+答案：b) `setInterval`
+
+解释：`setInterval` 函数用于每 10 毫秒重复执行更新显示的函数。
+
+在秒表练习中，如何启动计时器？
+
+a) 将 `isRunning` 设置为 true
+
+b) 调用 `startTime` 函数
+
+c) 初始化计时器变量
+
+d) 设置 `startTime` 并使用 `setInterval`
+
+答案：d) 设置 `startTime` 并使用 `setInterval`
+
+解释：通过设置 `startTime` 并使用 `setInterval` 更新经过的时间和显示来启动计时器。
 
 在“秒表”练习中，用于重复更新秒表显示的函数是哪个？
 
@@ -5287,6 +5417,36 @@ D) 秒表从上一次时间重新开始
 
 说明：点击重置按钮会将经过时间重置为零并停止计时器。
 
+### 密码强度检查器
+
+在密码强度检查器练习中，使用什么函数来确定密码的强度？
+
+a) `checkPassword`
+
+b) `validatePassword`
+
+c) `checkStrength`
+
+d) `passwordStrength`
+
+答案：c) `checkStrength`
+
+解释：`checkStrength` 函数用于根据特定标准确定输入密码的强度。
+
+在密码强度检查器练习中，使用哪些标准来确定密码的强度？
+
+a) 长度、数字和特殊字符的存在
+
+b) 长度、大写和小写字母、数字和特殊字符的存在
+
+c) 长度、空格和标点符号的存在
+
+d) 长度、字母的存在和大小写敏感性
+
+答案：b) 长度、大写和小写字母、数字和特殊字符的存在
+
+解释：密码的强度根据其长度以及大写和小写字母、数字和特殊字符的存在来确定。
+
 在“密码强度检查器”练习中，密码使用什么类型的输入字段？
 
 A) `text`
@@ -5314,6 +5474,22 @@ D) 用正则表达式检查密码
 答案：B
 
 说明：通过检查是否存在不同类型的字符（例如小写字母、大写字母、数字、特殊字符）以及密码长度来确定密码强度。
+
+### 小费计算器
+
+在小费计算器练习中，如何计算小费金额？
+
+a) `(billAmount * tipPercentage / 100)`
+
+b) `(billAmount + tipPercentage / 100)`
+
+c) `(billAmount * (tipPercentage / 100) + billAmount)`
+
+d) `(billAmount / tipPercentage * 100)`
+
+答案：a) `(billAmount * tipPercentage / 100)`
+
+解释：小费金额通过将账单金额乘以小费百分比再除以 100 来计算。
 
 在“小费计算器”练习中，用于处理表单提交的事件监听器是哪个？
 
@@ -5343,6 +5519,36 @@ D) `billAmount - (tipPercentage / 100)`
 
 说明：小费金额计算公式为 `billAmount * (tipPercentage / 100)`。
 
+### 颜色选择器
+
+在颜色选择器练习中，使用哪种输入类型来选择颜色？
+
+a) `text`
+
+b) `color`
+
+c) `range`
+
+d) `checkbox`
+
+答案：b) `color`
+
+解释：`color` 输入类型用于提供颜色选择器界面。
+
+在颜色选择器练习中，如何更新颜色框的背景颜色？
+
+a) 更改 `innerHTML`
+
+b) 更改 `textContent`
+
+c) 更改 `value`
+
+d) 更改 `style.backgroundColor`
+
+答案：d) 更改 `style.backgroundColor`
+
+解释：`style.backgroundColor` 属性用于根据所选颜色更新颜色框的背景颜色。
+
 在“颜色选择器”练习中，用于选择颜色的输入字段类型是什么？
 
 A) `text`
@@ -5371,6 +5577,36 @@ D) `change`
 
 说明：当用户选择颜色时，使用 `input` 事件监听器改变 div 的背景颜色。
 
+### 单词计数器
+
+在单词计数器练习中，使用什么事件来更新单词计数？
+
+a) `change`
+
+b) `input`
+
+c) `keyup`
+
+d) `keydown`
+
+答案：b) `input`
+
+解释：每当输入或文本区域的值发生变化时，会触发 `input` 事件，非常适合实时更新。
+
+在单词计数器练习中，如何计算单词数量？
+
+a) 通过统计字符数
+
+b) 通过按逗号分割文本
+
+c) 通过按空格分割文本
+
+d) 通过按换行符分割文本
+
+答案：c) 通过按空格分割文本
+
+解释：单词数量通过按空格分割文本并统计结果数组元素来计算。
+
 在“单词计数器”练习中，用于更新单词计数的事件是哪个？
 
 A) `keypress`
@@ -5398,6 +5634,8 @@ D) 统计句子数
 答案：C
 
 说明：通过按空格分割文本并统计结果数组的长度来计算单词数。
+
+### DOM 操作
 
 在 DOM 中创建新 HTML 元素使用什么方法？
 
@@ -5443,23 +5681,19 @@ D) `event.stopImmediatePropagation()`
 
 ## 带本地存储的待办事项列表
 
-描述：
+### 描述
 
 在本练习中，学生将创建一个待办事项列表，该列表将任务保存到本地存储中，以便在页面刷新后仍然保留。本练习介绍了如何使用本地存储、处理表单输入以及动态更新 DOM。
 
-涵盖的主题：
+### 涵盖的主题
 
-● HTML 结构
+- HTML 结构
+- CSS 样式
+- JavaScript 事件监听器
+- 本地存储
+- DOM 操作（添加、更新和删除元素）
 
-● CSS 样式
-
-● JavaScript 事件监听器
-
-● 本地存储
-
-● DOM 操作（添加、更新和删除元素）
-
-HTML：
+### HTML
 
 ```html
 <!DOCTYPE html>
@@ -5484,7 +5718,7 @@ HTML：
 </html>
 ```
 
-CSS：
+### CSS
 
 ```css
 body {
@@ -5525,56 +5759,62 @@ font-size: 16px;
 }
 ```
 
-JavaScript：
+### JavaScript
+
+
 
 ```javascript
 document.addEventListener('DOMContentLoaded', function() {
-const taskList = document.getElementById('taskList');
-const tasks = JSON.parse(localStorage.getItem('tasks')) || [];
-tasks.forEach(task => {
-addTaskToDOM(task);
-});
-document.getElementById('todoForm').addEventListener('submit', function(event) {
-event.preventDefault();
-const taskInput = document.getElementById('taskInput');
-const taskText = taskInput.value;
-if (taskText === '') return;
-addTaskToDOM(taskText);
-tasks.push(taskText);
-localStorage.setItem('tasks', JSON.stringify(tasks));
-taskInput.value = '';
-});
-function addTaskToDOM(taskText) {
-const li = document.createElement('li');
-li.textContent = taskText;
-const removeButton = document.createElement('button');
-removeButton.textContent = 'Remove';
-removeButton.classList.add('remove');
-removeButton.addEventListener('click', function() {
-li.remove();
-const index = tasks.indexOf(taskText);
-tasks.splice(index, 1);
-localStorage.setItem('tasks', JSON.stringify(tasks));
-});
-li.appendChild(removeButton);
-taskList.appendChild(li);
-}
+  const taskList = document.getElementById('taskList');
+  const tasks = JSON.parse(localStorage.getItem('tasks')) || [];
+
+  tasks.forEach(task => {
+    addTaskToDOM(task);
+  });
+
+  document.getElementById('todoForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    const taskInput = document.getElementById('taskInput');
+    const taskText = taskInput.value;
+
+    if (taskText === '') return;
+
+    addTaskToDOM(taskText);
+    tasks.push(taskText);
+    localStorage.setItem('tasks', JSON.stringify(tasks));
+    taskInput.value = '';
+  });
+
+  function addTaskToDOM(taskText) {
+    const li = document.createElement('li');
+    li.textContent = taskText;
+
+    const removeButton = document.createElement('button');
+    removeButton.textContent = 'Remove';
+    removeButton.classList.add('remove');
+
+    removeButton.addEventListener('click', function() {
+      li.remove();
+
+      const index = tasks.indexOf(taskText);
+      tasks.splice(index, 1);
+      localStorage.setItem('tasks', JSON.stringify(tasks));
+    });
+
+    li.appendChild(removeButton);
+    taskList.appendChild(li);
+  }
 });
 ```
 
-### BMI 计算器
+# BMI 计算器
 
-描述：
-
-
-
-
-
-## BMI 计算器
+## 描述
 
 在此练习中，学生将创建一个 BMI（身体质量指数）计算器，根据用户输入的体重和身高计算 BMI。本练习介绍如何处理表单输入和执行计算。
 
-涵盖主题：
+## 涵盖主题
 
 - HTML 结构
 - CSS 样式
@@ -5582,84 +5822,90 @@ taskList.appendChild(li);
 - 处理表单输入
 - 执行计算
 
-HTML:
+## HTML
 
 ```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>BMI Calculator</title>
-<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BMI Calculator</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<div class="calculator-container">
-<h1>BMI Calculator</h1>
-<form id="bmiForm">
-<input type="number" id="weightInput" placeholder="Enter weight in kg" required>
-<input type="number" id="heightInput" placeholder="Enter height in cm" required>
-<button type="submit">Calculate</button>
-</form>
-<p id="bmiDisplay">Your BMI: </p>
-</div>
-<script src="script.js"></script>
+  <div class="calculator-container">
+    <h1>BMI Calculator</h1>
+    <form id="bmiForm">
+      <input type="number" id="weightInput" placeholder="Enter weight in kg" required>
+      <input type="number" id="heightInput" placeholder="Enter height in cm" required>
+      <button type="submit">Calculate</button>
+    </form>
+    <p id="bmiDisplay">Your BMI: </p>
+  </div>
+  <script src="script.js"></script>
 </body>
 </html>
 ```
 
-CSS:
+## CSS
 
 ```css
 body {
-font-family: Arial, sans-serif;
-display: flex;
-justify-content: center;
-align-items: center;
-height: 100vh;
-margin: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
 }
+
 .calculator-container {
-text-align: center;
-background-color: #f0f0f0;
-padding: 20px;
-border-radius: 10px;
-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+
 form {
-display: flex;
-flex-direction: column;
-gap: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
+
 input, button {
-padding: 10px;
-font-size: 16px;
+  padding: 10px;
+  font-size: 16px;
 }
+
 p {
-font-size: 18px;
-margin: 0;
+  font-size: 18px;
+  margin: 0;
 }
 ```
 
-JavaScript:
+## JavaScript
 
 ```javascript
 document.getElementById('bmiForm').addEventListener('submit', function(event) {
-event.preventDefault();
-const weight = parseFloat(document.getElementById('weightInput').value);
-const height = parseFloat(document.getElementById('heightInput').value) / 100;
-const bmi = (weight / (height * height)).toFixed(2);
-document.getElementById('bmiDisplay').textContent = `Your BMI: ${bmi}`;
+  event.preventDefault();
+
+  const weight = parseFloat(document.getElementById('weightInput').value);
+  const height = parseFloat(document.getElementById('heightInput').value) / 100;
+  const bmi = (weight / (height * height)).toFixed(2);
+
+  document.getElementById('bmiDisplay').textContent = `Your BMI: ${bmi}`;
 });
 ```
 
-## 数字时钟
+# 数字时钟
 
-描述：
+## 描述
 
 在此练习中，学生将创建一个数字时钟，显示当前时间并每秒更新。本练习介绍如何处理日期和时间，以及动态更新 DOM。
 
-涵盖主题：
+## 涵盖主题
 
 - HTML 结构
 - CSS 样式
@@ -5667,72 +5913,76 @@ document.getElementById('bmiDisplay').textContent = `Your BMI: ${bmi}`;
 - 处理日期和时间
 - DOM 操作（更新文本内容）
 
-HTML:
+## HTML
 
 ```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Digital Clock</title>
-<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Digital Clock</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<div class="clock-container">
-<h1>Digital Clock</h1>
-<p id="clockDisplay">00:00:00</p>
-</div>
-<script src="script.js"></script>
+  <div class="clock-container">
+    <h1>Digital Clock</h1>
+    <p id="clockDisplay">00:00:00</p>
+  </div>
+  <script src="script.js"></script>
 </body>
 </html>
 ```
 
-CSS:
+## CSS
 
 ```css
 body {
-font-family: Arial, sans-serif;
-display: flex;
-justify-content: center;
-align-items: center;
-height: 100vh;
-margin: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
 }
+
 .clock-container {
-text-align: center;
-background-color: #f0f0f0;
-padding: 20px;
-border-radius: 10px;
-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+
 #clockDisplay {
-font-size: 36px;
-margin-top: 20px;
+  font-size: 36px;
+  margin-top: 20px;
 }
 ```
 
-JavaScript:
+## JavaScript
 
 ```javascript
 function updateClock() {
-const now = new Date();
-const hours = now.getHours().toString().padStart(2, '0');
-const minutes = now.getMinutes().toString().padStart(2, '0');
-const seconds = now.getSeconds().toString().padStart(2, '0');
-document.getElementById('clockDisplay').textContent = `${hours}:${minutes}:${seconds}`;
+  const now = new Date();
+  const hours = now.getHours().toString().padStart(2, '0');
+  const minutes = now.getMinutes().toString().padStart(2, '0');
+  const seconds = now.getSeconds().toString().padStart(2, '0');
+
+  document.getElementById('clockDisplay').textContent = `${hours}:${minutes}:${seconds}`;
 }
+
 setInterval(updateClock, 1000);
 updateClock(); // Initial call to display clock immediately
 ```
 
-## 响应式导航菜单
+# 响应式导航菜单
 
-描述：
+## 描述
 
 在此练习中，学生将创建一个响应式导航菜单，在较小屏幕上折叠为汉堡菜单。本练习介绍使用 CSS 进行响应式设计以及处理 JavaScript 中的点击事件。
 
-涵盖主题：
+## 涵盖主题
 
 - HTML 结构
 - CSS 样式
@@ -5740,118 +5990,130 @@ updateClock(); // Initial call to display clock immediately
 - 响应式设计
 - DOM 操作（切换类）
 
-HTML:
+## HTML
 
 ```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Responsive Navigation Menu</title>
-<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Navigation Menu</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<nav class="navbar">
-<div class="brand-title">Brand</div>
-<a href="#" class="toggle-button">
-<span class="bar"></span>
-<span class="bar"></span>
-<span class="bar"></span>
-</a>
-<div class="navbar-links">
-<ul>
-<li><a href="#">Home</a></li>
-<li><a href="#">About</a></li>
-<li><a href="#">Services</a></li>
-<li><a href="#">Contact</a></li>
-</ul>
-</div>
-</nav>
-<script src="script.js"></script>
+  <nav class="navbar">
+    <div class="brand-title">Brand</div>
+    <a href="#" class="toggle-button">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </a>
+    <div class="navbar-links">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  <script src="script.js"></script>
 </body>
 </html>
 ```
 
-CSS:
+## CSS
 
 ```css
 body {
-font-family: Arial, sans-serif;
-margin: 0;
+  font-family: Arial, sans-serif;
+  margin: 0;
 }
+
 .navbar {
-display: flex;
-justify-content: space-between;
-align-items: center;
-background-color: #333;
-padding: 10px 20px;
-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  padding: 10px 20px;
+  color: white;
 }
+
 .brand-title {
-font-size: 1.5rem;
+  font-size: 1.5rem;
 }
+
 .navbar-links ul {
-list-style: none;
-padding: 0;
+  list-style: none;
+  padding: 0;
 }
+
 .navbar-links li {
-display: inline;
-padding: 0 20px;
+  display: inline;
+  padding: 0 20px;
 }
+
 .navbar-links a {
-color: white;
-text-decoration: none;
+  color: white;
+  text-decoration: none;
 }
+
 .toggle-button {
-display: none;
-flex-direction: column;
-cursor: pointer;
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
 }
+
 .toggle-button .bar {
-width: 25px;
-height: 3px;
-background-color: white;
-margin: 4px 0;
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 4px 0;
 }
+
 @media (max-width: 768px) {
-.toggle-button {
-display: flex;
-}
-.navbar-links {
-display: none;
-width: 100%;
-}
-.navbar-links ul {
-width: 100%;
-display: flex;
-flex-direction: column;
-}
-.navbar-links li {
-text-align: center;
-padding: 10px 0;
-}
-.navbar-links.active {
-display: flex;
-}
+  .toggle-button {
+    display: flex;
+  }
+
+  .navbar-links {
+    display: none;
+    width: 100%;
+  }
+
+  .navbar-links ul {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .navbar-links li {
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  .navbar-links.active {
+    display: flex;
+  }
 }
 ```
 
-JavaScript:
+## JavaScript
 
 ```javascript
 document.querySelector('.toggle-button').addEventListener('click', function() {
-document.querySelector('.navbar-links').classList.toggle('active');
+  document.querySelector('.navbar-links').classList.toggle('active');
 });
 ```
 
-## 测验应用
+# 测验应用
 
-描述：
+## 描述
 
 在此练习中，学生将创建一个简单的测验应用，显示问题并评估答案。本练习介绍如何处理用户输入、动态更新 DOM 以及提供反馈。
 
-涵盖主题：
+## 涵盖主题
 
 - HTML 结构
 - CSS 样式
@@ -5859,150 +6121,143 @@ document.querySelector('.navbar-links').classList.toggle('active');
 - DOM 操作（更新元素）
 - 处理用户输入
 
-HTML:
+## HTML
 
 ```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Quiz Application</title>
-<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz Application</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<div class="quiz-container">
-<h1>Quiz Application</h1>
-<div id="quiz"></div>
-<button id="submit">Submit</button>
-<div id="results"></div>
-</div>
-<script src="script.js"></script>
+  <div class="quiz-container">
+    <h1>Quiz Application</h1>
+    <div id="quiz"></div>
+    <button id="submit">Submit</button>
+    <div id="results"></div>
+  </div>
+  <script src="script.js"></script>
 </body>
 </html>
 ```
 
-CSS:
+## CSS
 
 ```css
 body {
-font-family: Arial, sans-serif;
-display: flex;
-justify-content: center;
-align-items: center;
-height: 100vh;
-margin: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
 }
+
 .quiz-container {
-text-align: center;
-background-color: #f0f0f0;
-padding: 20px;
-border-radius: 10px;
-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-width: 300px;
+  text-align: center;
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
 }
+
 button {
-padding: 10px 20px;
-font-size: 16px;
-cursor: pointer;
-margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 20px;
 }
 ```
 
-JavaScript:
+## JavaScript
 
 ```javascript
 const quizContainer = document.getElementById('quiz');
 const resultsContainer = document.getElementById('results');
 const submitButton = document.getElementById('submit');
+
 const myQuestions = [
-{
-question: "What is the capital of France?",
-answers: {
-a: "Berlin",
-b: "Madrid",
-c: "Paris"
-},
-correctAnswer: "c"
-},
-{
-question: "Who is the CEO of Tesla?",
-answers: {
-a: "Jeff Bezos",
-b: "Elon Musk",
-c: "Bill Gates"
-},
-correctAnswer: "b"
-},
-{
-question: "What is the smallest planet in our solar system?",
-answers: {
-a: "Mars",
-b: "Venus",
-c: "Mercury"
-},
-correctAnswer: "c"
-}
+  {
+    question: "What is the capital of France?",
+    answers: {
+      a: "Berlin",
+      b: "Madrid",
+      c: "Paris"
+    },
+    correctAnswer: "c"
+  },
+  {
+    question: "Who is the CEO of Tesla?",
+    answers: {
+      a: "Jeff Bezos",
+      b: "Elon Musk",
+      c: "Bill Gates"
+    },
+    correctAnswer: "b"
+  },
+  {
+    question: "What is the smallest planet in our solar system?",
+    answers: {
+      a: "Mars",
+      b: "Venus",
+      c: "Mercury"
+    },
+    correctAnswer: "c"
+  }
 ];
+
 function buildQuiz() {
-const output = [];
-myQuestions.forEach((currentQuestion, questionNumber) => {
-const answers = [];
-for (letter in currentQuestion.answers) {
-answers.push(
-`<label>
-<input type="radio" name="question${questionNumber}" value="${letter}">
-${letter} :
-${currentQuestion.answers[letter]}
-</label>`
-);
+  const output = [];
+
+  myQuestions.forEach((currentQuestion, questionNumber) => {
+    const answers = [];
+
+    for (letter in currentQuestion.answers) {
+      answers.push(
+        `<label>
+          <input type="radio" name="question${questionNumber}" value="${letter}">
+          ${letter} :
+          ${currentQuestion.answers[letter]}
+        </label>`
+      );
+    }
+
+    output.push(
+      `<div class="question"> ${currentQuestion.question} </div>
+      <div class="answers"> ${answers.join('')} </div>`
+    );
+  });
 }
-output.push(
-`<div class="question"> ${currentQuestion.question} </div>
-<div class="answers"> ${answers.join('')} </div>`
-);
-});
 ```
 
 
 
-
-
-```
+```javascript
 quizContainer.innerHTML = output.join('');
-
 }
 
 function showResults() {
-
 const answerContainers = quizContainer.querySelectorAll('.answers');
-
 let numCorrect = 0;
 
 myQuestions.forEach((currentQuestion, questionNumber) => {
-
 const answerContainer = answerContainers[questionNumber];
-
 const selector = `input[name=question${questionNumber}]:checked`;
-
 const userAnswer = (answerContainer.querySelector(selector) || {}).value;
 
 if (userAnswer === currentQuestion.correctAnswer) {
-
 numCorrect++;
-
 answerContainers[questionNumber].style.color = 'green';
-
 } else {
-
 answerContainers[questionNumber].style.color = 'red';
-
 }
-
 });
 
 resultsContainer.innerHTML = `${numCorrect} out of ${myQuestions.length}`;
-
 }
 
 buildQuiz();
@@ -6012,21 +6267,21 @@ submitButton.addEventListener('click', showResults);
 
 ### 番茄钟计时器
 
-描述：
+#### 描述
 
 在本练习中，学生将创建一个包含工作时段和休息时段的番茄钟计时器。本练习介绍如何使用定时器、处理用户输入以及动态更新 DOM。
 
-涵盖主题：
+#### 涵盖主题
 
-●       HTML 结构
-●       CSS 样式
-●       JavaScript 事件监听器
-●       使用定时器
-●       DOM 操作（更新文本内容）
+- HTML 结构
+- CSS 样式
+- JavaScript 事件监听器
+- 使用定时器
+- DOM 操作（更新文本内容）
 
-HTML：
+#### HTML
 
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6049,9 +6304,9 @@ HTML：
 </html>
 ```
 
-CSS：
+#### CSS
 
-```
+```css
 body {
 font-family: Arial, sans-serif;
 display: flex;
@@ -6083,9 +6338,9 @@ cursor: pointer;
 }
 ```
 
-JavaScript：
+#### JavaScript
 
-```
+```javascript
 let timer;
 let timeLeft = 1500; // 25 minutes
 let isRunning = false;
@@ -6125,22 +6380,22 @@ updateDisplay();
 
 ### 带历史记录的计算器
 
-描述：
+#### 描述
 
 在本练习中，学生将创建一个能保存计算历史记录的简易计算器。本练习介绍如何处理用户输入、执行计算以及更新 DOM。
 
-涵盖主题：
+#### 涵盖主题
 
-●       HTML 结构
-●       CSS 样式
-●       JavaScript 事件监听器
-●       处理用户输入
-●       执行计算
-●       DOM 操作（添加和更新元素）
+- HTML 结构
+- CSS 样式
+- JavaScript 事件监听器
+- 处理用户输入
+- 执行计算
+- DOM 操作（添加和更新元素）
 
-HTML：
+#### HTML
 
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6179,9 +6434,9 @@ HTML：
 </html>
 ```
 
-CSS：
+#### CSS
 
-```
+```css
 body {
 font-family: Arial, sans-serif;
 display: flex;
@@ -6233,9 +6488,9 @@ border-radius: 5px;
 }
 ```
 
-JavaScript：
+#### JavaScript
 
-```
+```javascript
 let display = document.getElementById('display');
 let buttons = Array.from(document.getElementsByClassName('number'));
 let operators = Array.from(document.getElementsByClassName('operator'));
@@ -6300,22 +6555,22 @@ currentOperator = null;
 
 ### 自定义倒计时器
 
-描述：
+#### 描述
 
 在本练习中，学生将创建一个倒计时器，用户可以输入自定义的倒计时时间。本练习介绍如何处理表单输入、使用定时器以及动态更新 DOM。
 
-涵盖主题：
+#### 涵盖主题
 
-●       HTML 结构
-●       CSS 样式
-●       JavaScript 事件监听器
-●       处理表单输入
-●       使用定时器
-●       DOM 操作（更新文本内容）
+- HTML 结构
+- CSS 样式
+- JavaScript 事件监听器
+- 处理表单输入
+- 使用定时器
+- DOM 操作（更新文本内容）
 
-HTML：
+#### HTML
 
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6339,10 +6594,7 @@ HTML：
 </html>
 ```
 
-CSS：
-
-
-
+#### CSS
 
 ```css
 body {
@@ -6387,7 +6639,9 @@ p {
 }
 ```
 
-JavaScript:
+#### JavaScript
+
+
 
 ```javascript
 let timer;
@@ -6430,19 +6684,19 @@ document.getElementById('resetButton').addEventListener('click', resetTimer);
 
 ### 自定义分账小费计算器
 
-描述：
+#### 描述
 
 在本练习中，学生将创建一个小费计算器，根据用户输入的账单金额、小费百分比和人数，计算每人应付的小费金额和总账单。本练习介绍如何处理多个表单输入并执行计算。
 
-涵盖主题：
+#### 涵盖主题
 
-* HTML 结构
-* CSS 样式
-* JavaScript 事件监听器
-* 处理表单输入
-* 执行计算
+- HTML 结构
+- CSS 样式
+- JavaScript 事件监听器
+- 处理表单输入
+- 执行计算
 
-HTML:
+#### HTML
 
 ```html
 <!DOCTYPE html>
@@ -6471,7 +6725,7 @@ HTML:
 </html>
 ```
 
-CSS:
+#### CSS
 
 ```css
 body {
@@ -6508,7 +6762,7 @@ p {
 }
 ```
 
-JavaScript:
+#### JavaScript
 
 ```javascript
 document.getElementById('calculatorForm').addEventListener('submit', function(event) {
@@ -6527,380 +6781,362 @@ document.getElementById('calculatorForm').addEventListener('submit', function(ev
 
 ### 多项选择题
 
+#### 带本地存储的待办事项列表
+
 在“带本地存储的待办事项列表”练习中，用于将任务存储到本地存储的方法是？
 
-a) `localStorage.setItem`
+- a) `localStorage.setItem`
+- b) `localStorage.save`
+- c) `localStorage.store`
+- d) `localStorage.addItem`
 
-b) `localStorage.save`
+**答案：**a) `localStorage.setItem`
 
-c) `localStorage.store`
-
-d) `localStorage.addItem`
-
-答案：a) `localStorage.setItem` 解释：`localStorage.setItem` 方法用于将任务以字符串形式存储到本地存储中。
-
-在“BMI 计算器”练习中，用于计算 BMI 的公式是？
-
-a) `weight / height`
-
-b) `weight / (height * height)`
-
-c) `weight * height`
-
-d) `(weight + height) / 2`
-
-答案：b) `weight / (height * height)` 解释：BMI 的计算方式是用体重（千克）除以身高（米）的平方。
-
-在“数字时钟”练习中，用于每秒更新时间的方法是？
-
-a) `setTimeout`
-
-b) `setInterval`
-
-c) `requestAnimationFrame`
-
-d) `clearInterval`
-
-答案：b) `setInterval` 解释：`setInterval` 函数用于每 1000 毫秒（1 秒）重复执行 `updateClock` 函数。
+**解释：**`localStorage.setItem` 方法用于将任务以字符串形式存储到本地存储中。
 
 在“带本地存储的待办事项列表”练习中，如何从待办列表中移除任务？
 
-a) 调用 `removeChild` 方法
+- a) 调用 `removeChild` 方法
+- b) 设置 `display: none`
+- c) 使用 `remove` 方法
+- d) 设置 `innerHTML = ''`
 
-b) 设置 `display: none`
+**答案：**c) 使用 `remove` 方法
 
-c) 使用 `remove` 方法
-
-d) 设置 `innerHTML = ''`
-
-答案：c) 使用 `remove` 方法 解释：`remove` 方法用于从 DOM 中移除列表项元素，并更新本地存储。
-
-在“BMI 计算器”练习中，身高输入使用的单位是？
-
-a) 米
-
-b) 英寸
-
-c) 英尺
-
-d) 厘米
-
-答案：d) 厘米 解释：身高输入以厘米为单位，然后转换为米用于 BMI 计算。
-
-在“响应式导航菜单”练习中，用于切换导航菜单的事件是？
-
-a) `mouseover`
-
-b) `click`
-
-c) `dblclick`
-
-d) `mouseout`
-
-答案：b) `click` 解释：当点击汉堡图标时，使用 `click` 事件来切换导航菜单。
-
-在“响应式导航菜单”练习中，`@media (max-width: 768px)` 的作用是？
-
-a) 为宽度大于 768px 的屏幕应用样式
-
-b) 为宽度小于 768px 的屏幕应用样式
-
-c) 禁用宽度大于 768px 的屏幕的样式
-
-d) 禁用宽度小于 768px 的屏幕的样式
-
-答案：b) 为宽度小于 768px 的屏幕应用样式 解释：`@media (max-width: 768px)` CSS 媒体查询为宽度为 768px 或更小的屏幕应用样式。
-
-在“问答应用”练习中，如何获取用户选择的答案？
-
-a) 使用 `querySelector`
-
-b) 使用 `getElementById`
-
-c) 使用 `innerHTML`
-
-d) 使用 `textContent`
-
-答案：a) 使用 `querySelector` 解释：`querySelector` 方法用于从单选按钮中选择用户选择的答案。
-
-在“问答应用”练习中，`numCorrect` 变量代表什么？
-
-a) 错误答案的数量
-
-b) 问题的总数
-
-c) 正确答案的数量
-
-d) 得分百分比
-
-答案：c) 正确答案的数量 解释：`numCorrect` 变量记录用户选择的正确答案数量。
-
-在“番茄钟计时器”练习中，计时器的初始时间设置为？
-
-a) 20 分钟
-
-b) 25 分钟
-
-c) 30 分钟
-
-d) 15 分钟
-
-答案：b) 25 分钟 解释：番茄钟计时器的初始时间设置为 25 分钟（1500 秒）。
-
-在“带历史记录的计算器”练习中，如何显示计算历史？
-
-a) 使用 `innerHTML`
-
-b) 使用 `textContent`
-
-c) 使用 `appendChild`
-
-d) 使用 `insertAdjacentHTML`
-
-答案：c) 使用 `appendChild` 解释：通过创建列表项并使用 `appendChild` 将其追加到历史元素中来显示计算历史。
-
-在“自定义时间倒计时器”练习中，用于启动计时器的事件是？
-
-a) `click`
-
-b) `input`
-
-c) `change`
-
-d) `submit`
-
-答案：a) `click` 解释：当点击开始按钮时，使用 `click` 事件来启动计时器。
-
-
-
-
-在番茄钟练习中，`isRunning` 变量代表什么？
-
-a) 剩余时间
-
-b) 初始时间
-
-c) 计时器状态
-
-d) 当前间隔
-
-答案：c) 计时器状态 解释：`isRunning` 变量表示计时器当前是否正在运行。
-
-在带历史记录的计算器练习中，用于清除显示的方法是什么？
-
-a) `innerHTML = ''`
-
-b) `textContent = ''`
-
-c) `value = ''`
-
-d) `removeChild`
-
-答案：c) `value = ''` 解释：将显示输入的 `value` 属性设置为空字符串以清除显示。
-
-在带自定义分摊的小费计算器练习中，人均金额如何计算？
-
-a) `(totalAmount / tipPercentage)`
-
-b) `(billAmount / numberOfPeople)`
-
-c) `(totalAmount / numberOfPeople)`
-
-d) `(billAmount + tipAmount) / numberOfPeople`
-
-答案：c) `(totalAmount / numberOfPeople)` 解释：人均金额通过总金额除以人数计算得出。
-
-在带自定义分摊的小费计算器练习中，计算小费需要哪些输入字段？
-
-a) 账单金额和人数
-
-b) 账单金额和小费百分比
-
-c) 小费百分比和人数
-
-d) 账单金额、小费百分比和人数
-
-答案：d) 账单金额、小费百分比和人数 解释：需要账单金额、小费百分比和人数来计算小费金额、总金额和人均金额。
-
-带本地存储的待办事项列表
+**解释：**`remove` 方法用于从 DOM 中移除列表项元素，并更新本地存储。
 
 页面加载时，使用什么事件从本地存储加载任务？
 
-A) `load`
+- A) `load`
+- B) `DOMContentLoaded`
+- C) `click`
+- D) `submit`
 
-B) `DOMContentLoaded`
+**答案：**B
 
-C) `click`
-
-D) `submit`
-
-答案：B 解释：使用 `DOMContentLoaded` 事件确保在 DOM 完全加载后从本地存储加载任务。
+**解释：**使用 `DOMContentLoaded` 事件确保在 DOM 完全加载后从本地存储加载任务。
 
 使用什么方法从本地存储中检索项目？
 
-A) `localStorage.get`
+- A) `localStorage.get`
+- B) `localStorage.retrieve`
+- C) `localStorage.getItem`
+- D) `localStorage.fetch`
 
-B) `localStorage.retrieve`
+**答案：**C
 
-C) `localStorage.getItem`
-
-D) `localStorage.fetch`
-
-答案：C 解释：使用 `localStorage.getItem` 方法从本地存储中检索项目。
+**解释：**使用 `localStorage.getItem` 方法从本地存储中检索项目。
 
 任务如何存储在本地存储中？
 
-A) 纯文本
+- A) 纯文本
+- B) JSON 字符串
+- C) XML
+- D) HTML
 
-B) JSON 字符串
+**答案：**B
 
-C) XML
-
-D) HTML
-
-答案：B 解释：任务以 JSON 字符串的形式存储在本地存储中，这允许存储数组等复杂数据结构。
+**解释：**任务以 JSON 字符串的形式存储在本地存储中，这允许存储数组等复杂数据结构。
 
 在删除任务后，使用什么方法更新本地存储中的任务列表？
 
-A) `localStorage.updateItem`
+- A) `localStorage.updateItem`
+- B) `localStorage.removeItem`
+- C) `localStorage.setItem`
+- D) `localStorage.saveItem`
 
-B) `localStorage.removeItem`
+**答案：**C
 
-C) `localStorage.setItem`
+**解释：**在修改任务列表后，使用 `localStorage.setItem` 方法更新本地存储中的任务列表。
 
-D) `localStorage.saveItem`
+#### BMI 计算器
 
-答案：C 解释：在修改任务列表后，使用 `localStorage.setItem` 方法更新本地存储中的任务列表。
+在“BMI 计算器”练习中，用于计算 BMI 的公式是？
 
-BMI 计算器
+- a) `weight / height`
+- b) `weight / (height * height)`
+- c) `weight * height`
+- d) `(weight + height) / 2`
+
+**答案：**b) `weight / (height * height)`
+
+**解释：**BMI 的计算方式是用体重（千克）除以身高（米）的平方。
 
 在 BMI 计算器练习中，计算 BMI 的公式是什么？
 
-A) `(weight / height)`
+- A) `(weight / height)`
+- B) `(weight / (height * height))`
+- C) `(height / weight)`
+- D) `(weight * height)`
 
-B) `(weight / (height * height))`
+**答案：**B
 
-C) `(height / weight)`
+**解释：**BMI 使用公式 `(weight / (height * height))` 计算，其中体重以千克为单位，身高以米为单位。
 
-D) `(weight * height)`
+在“BMI 计算器”练习中，身高输入使用的单位是？
 
-答案：B 解释：BMI 使用公式 `(weight / (height * height))` 计算，其中体重以千克为单位，身高以米为单位。
+- a) 米
+- b) 英寸
+- c) 英尺
+- d) 厘米
+
+**答案：**d) 厘米
+
+**解释：**身高输入以厘米为单位，然后转换为米用于 BMI 计算。
 
 在 BMI 计算器练习中，身高输入的单位是什么？
 
-A) 英寸
+- A) 英寸
+- B) 米
+- C) 厘米
+- D) 英尺
 
-B) 米
+**答案：**C
 
-C) 厘米
+**解释：**身高输入以厘米为单位，在 BMI 计算中会转换为米。
 
-D) 英尺
+#### 数字时钟
 
-答案：C 解释：身高输入以厘米为单位，在 BMI 计算中会转换为米。
+在“数字时钟”练习中，用于每秒更新时间的方法是？
 
-数字时钟
+- a) `setTimeout`
+- b) `setInterval`
+- c) `requestAnimationFrame`
+- d) `clearInterval`
+
+**答案：**b) `setInterval`
+
+**解释：**`setInterval` 函数用于每 1000 毫秒（1 秒）重复执行 `updateClock` 函数。
 
 在数字时钟练习中，用于每秒重复更新时钟显示的方法是什么？
 
-A) `setTimeout`
+- A) `setTimeout`
+- B) `setInterval`
+- C) `requestAnimationFrame`
+- D) `clearInterval`
 
-B) `setInterval`
+**答案：**B
 
-C) `requestAnimationFrame`
-
-D) `clearInterval`
-
-答案：B 解释：使用 `setInterval` 方法每秒重复更新时钟显示。
+**解释：**使用 `setInterval` 方法每秒重复更新时钟显示。
 
 在数字时钟练习中，使用什么 JavaScript 对象获取当前时间？
 
-A) `Date`
+- A) `Date`
+- B) `Time`
+- C) `Clock`
+- D) `Moment`
 
-B) `Time`
+**答案：**A
 
-C) `Clock`
+**解释：**使用 `Date` 对象获取当前时间。
 
-D) `Moment`
+#### 响应式导航菜单
 
-答案：A 解释：使用 `Date` 对象获取当前时间。
+在“响应式导航菜单”练习中，用于切换导航菜单的事件是？
 
-响应式导航菜单
+- a) `mouseover`
+- b) `click`
+- c) `dblclick`
+- d) `mouseout`
+
+**答案：**b) `click`
+
+**解释：**当点击汉堡图标时，使用 `click` 事件来切换导航菜单。
+
+在“响应式导航菜单”练习中，`@media (max-width: 768px)` 的作用是？
+
+- a) 为宽度大于 768px 的屏幕应用样式
+- b) 为宽度小于 768px 的屏幕应用样式
+- c) 禁用宽度大于 768px 的屏幕的样式
+- d) 禁用宽度小于 768px 的屏幕的样式
+
+**答案：**b) 为宽度小于 768px 的屏幕应用样式
+
+**解释：**`@media (max-width: 768px)` CSS 媒体查询为宽度为 768px 或更小的屏幕应用样式。
 
 在响应式导航菜单练习中，用于根据屏幕宽度应用样式的 CSS 规则是什么？
 
-A) `@import`
+- A) `@import`
+- B) `@keyframes`
+- C) `@media`
+- D) `@viewport`
 
-B) `@keyframes`
+**答案：**C
 
-C) `@media`
-
-D) `@viewport`
-
-答案：C 解释：使用 `@media` 规则根据屏幕宽度应用样式。
+**解释：**使用 `@media` 规则根据屏幕宽度应用样式。
 
 在响应式导航菜单练习中，用于切换导航菜单的事件监听器是什么？
 
-A) `mouseover`
+- A) `mouseover`
+- B) `click`
+- C) `dblclick`
+- D) `keydown`
 
-B) `click`
+**答案：**B
 
-C) `dblclick`
+**解释：**当点击汉堡按钮时，使用 `click` 事件监听器切换导航菜单。
 
-D) `keydown`
+#### 问答应用
 
-答案：B 解释：当点击汉堡按钮时，使用 `click` 事件监听器切换导航菜单。
+在“问答应用”练习中，如何获取用户选择的答案？
 
-测验应用
+- a) 使用 `querySelector`
+- b) 使用 `getElementById`
+- c) 使用 `innerHTML`
+- d) 使用 `textContent`
+
+**答案：**a) 使用 `querySelector`
+
+**解释：**`querySelector` 方法用于从单选按钮中选择用户选择的答案。
+
+在“问答应用”练习中，`numCorrect` 变量代表什么？
+
+- a) 错误答案的数量
+- b) 问题的总数
+- c) 正确答案的数量
+- d) 得分百分比
+
+**答案：**c) 正确答案的数量
+
+**解释：**`numCorrect` 变量记录用户选择的正确答案数量。
+
+#### 测验应用
 
 在测验应用练习中，用于显示测验问题和答案的 HTML 元素是什么？
 
-A) `<form>`
+- A) `<form>`
+- B) `<div>`
+- C) `<ul>`
+- D) `<table>`
 
-B) `<div>`
+**答案：**B
 
-C) `<ul>`
-
-D) `<table>`
-
-答案：B 解释：使用 `<div>` 元素显示测验问题和答案。
+**解释：**使用 `<div>` 元素显示测验问题和答案。
 
 在测验应用练习中，用于构建测验界面的函数是什么？
 
-A) `displayQuiz`
+- A) `displayQuiz`
+- B) `showQuiz`
+- C) `buildQuiz`
+- D) `renderQuiz`
 
-B) `showQuiz`
+**答案：**C
 
-C) `buildQuiz`
-
-D) `renderQuiz`
-
-答案：C 解释：调用 `buildQuiz` 函数来构建测验界面。
+**解释：**调用 `buildQuiz` 函数来构建测验界面。
 
 在测验应用练习中，如何评估用户的答案？
 
-A) 通过将输入值与预定义答案进行比较
+- A) 通过将输入值与预定义答案进行比较
+- B) 通过检查表单提交中的值
+- C) 通过遍历单选按钮并检查选中的值
+- D) 通过使用服务器端脚本
 
-B) 通过检查表单提交中的值
+**答案：**C
 
-C) 通过遍历单选按钮并检查选中的值
+**解释：**通过遍历单选按钮并检查选中的值来评估用户的答案。
 
-D) 通过使用服务器端脚本
+#### 番茄钟计时器
 
-答案：C 解释：通过遍历单选按钮并检查选中的值来评估用户的答案。
+在“番茄钟计时器”练习中，计时器的初始时间设置为？
+
+- a) 20 分钟
+- b) 25 分钟
+- c) 30 分钟
+- d) 15 分钟
+
+**答案：**b) 25 分钟
+
+**解释：**番茄钟计时器的初始时间设置为 25 分钟（1500 秒）。
+
+在番茄钟练习中，`isRunning` 变量代表什么？
+
+- a) 剩余时间
+- b) 初始时间
+- c) 计时器状态
+- d) 当前间隔
+
+**答案：**c) 计时器状态
+
+**解释：**`isRunning` 变量表示计时器当前是否正在运行。
 
 在番茄钟练习中，用于更新计时器显示的函数是什么？
 
-A) `showTimer`
+- A) `showTimer`
+- B) `displayTimer`
 
-B) `displayTimer`
+#### 带历史记录的计算器
 
-C) `updateDisplay`
+在“带历史记录的计算器”练习中，如何显示计算历史？
 
-D) `refreshDisplay`
+- a) 使用 `innerHTML`
+- b) 使用 `textContent`
+- c) 使用 `appendChild`
+- d) 使用 `insertAdjacentHTML`
 
-答案：C 解释：使用 `updateDisplay` 函数更新计时器显示。
+**答案：**c) 使用 `appendChild`
 
-在番茄钟练习中，如何启动计时器？
+**解释：**通过创建列表项并使用 `appendChild` 将其追加到历史元素中来显示计算历史。
+
+在带历史记录的计算器练习中，用于清除显示的方法是什么？
+
+- a) `innerHTML = ''`
+- b) `textContent = ''`
+- c) `value = ''`
+- d) `removeChild`
+
+**答案：**c) `value = ''`
+
+**解释：**将显示输入的 `value` 属性设置为空字符串以清除显示。
+
+#### 自定义时间倒计时器
+
+在“自定义时间倒计时器”练习中，用于启动计时器的事件是？
+
+- a) `click`
+- b) `input`
+- c) `change`
+- d) `submit`
+
+**答案：**a) `click`
+
+**解释：**当点击开始按钮时，使用 `click` 事件来启动计时器。
+
+#### 自定义分摊小费计算器
+
+在带自定义分摊的小费计算器练习中，人均金额如何计算？
+
+- a) `(totalAmount / tipPercentage)`
+- b) `(billAmount / numberOfPeople)`
+- c) `(totalAmount / numberOfPeople)`
+- d) `(billAmount + tipAmount) / numberOfPeople`
+
+**答案：**c) `(totalAmount / numberOfPeople)`
+
+**解释：**人均金额通过总金额除以人数计算得出。
+
+在带自定义分摊的小费计算器练习中，计算小费需要哪些输入字段？
+
+- a) 账单金额和人数
+- b) 账单金额和小费百分比
+- c) 小费百分比和人数
+- d) 账单金额、小费百分比和人数
+
+**答案：**d) 账单金额、小费百分比和人数
+
+**解释：**需要账单金额、小费百分比和人数来计算小费金额、总金额和人均金额。
+
+
+
+`C) updateDisplay`
+
+`D) refreshDisplay`
+
+答案：`C`  
+解释：使用`updateDisplay`函数更新计时器显示。
+
+## 计时器与计算器练习
+
+### 在番茄钟练习中，如何启动计时器？
 
 A) 通过设置超时
 
@@ -6910,9 +7146,10 @@ C) 通过设置间隔
 
 D) 通过使用递归
 
-答案：C 解释：使用 `setInterval` 启动计时器，每秒更新计时器显示。
+答案：`C`  
+解释：使用`setInterval`启动计时器，每秒更新计时器显示。
 
-在带历史记录的计算器练习中，计算历史如何存储？
+### 在带历史记录的计算器练习中，计算历史如何存储？
 
 A) 在数据库中
 
@@ -6922,9 +7159,10 @@ C) 在数组中
 
 D) 在会话存储中
 
-答案：C 解释：计算历史存储在数组中，并显示在 DOM 中。
+答案：`C`  
+解释：计算历史存储在数组中，并显示在`DOM`中。
 
-在带历史记录的计算器练习中，用于清除显示的事件监听器是什么？
+### 在带历史记录的计算器练习中，用于清除显示的事件监听器是什么？
 
 A) `click`
 
@@ -6934,9 +7172,10 @@ C) `mouseover`
 
 D) `keydown`
 
-答案：A 解释：当点击清除按钮时，使用 `click` 事件监听器清除显示。
+答案：`A`  
+解释：当点击清除按钮时，使用`click`事件监听器清除显示。
 
-在带自定义时间的倒计时器练习中，用于启动倒计时器的函数是什么？
+### 在带自定义时间的倒计时器练习中，用于启动倒计时器的函数是什么？
 
 A) `beginTimer`
 
@@ -6946,9 +7185,10 @@ C) `startTimer`
 
 D) `runTimer`
 
-答案：C 解释：使用 `startTimer` 函数启动倒计时器。
+答案：`C`  
+解释：使用`startTimer`函数启动倒计时器。
 
-在带自定义时间的倒计时器练习中，用于清除间隔的方法是什么？
+### 在带自定义时间的倒计时器练习中，用于清除间隔的方法是什么？
 
 A) `stopInterval`
 
@@ -6958,9 +7198,10 @@ C) `clearInterval`
 
 D) `resetInterval`
 
-答案：C 解释：使用 `clearInterval` 方法清除间隔并停止计时器。
+答案：`C`  
+解释：使用`clearInterval`方法清除间隔并停止计时器。
 
-在带自定义分摊的小费计算器练习中，用于处理表单提交的事件监听器是什么？
+### 在带自定义分摊的小费计算器练习中，用于处理表单提交的事件监听器是什么？
 
 A) `click`
 
@@ -6970,25 +7211,23 @@ C) `submit`
 
 D) `input`
 
-答案：C 解释：使用 `submit` 事件监听器处理表单提交，触发小费和总金额的计算。
+答案：`C`  
+解释：使用`submit`事件监听器处理表单提交，触发小费和总金额的计算。
 
-### 动态表格筛选
+## 动态表格筛选
 
-描述：
+### 描述
 
-在本练习中，学生将创建一个动态表格筛选器，允许用户根据输入筛选行。本练习介绍如何处理输入事件以及动态更新 DOM 以显示或隐藏表格行。
+在本练习中，学生将创建一个动态表格筛选器，允许用户根据输入筛选行。本练习介绍如何处理输入事件以及动态更新`DOM`以显示或隐藏表格行。
 
-涵盖主题：
+### 涵盖主题
 
-● HTML 结构
+- HTML 结构
+- CSS 样式
+- JavaScript 事件监听器
+- `DOM`操作（根据输入筛选元素）
 
-● CSS 样式
-
-● JavaScript 事件监听器
-
-● DOM 操作（根据输入筛选元素）
-
-HTML：
+### HTML
 
 ```html
 <!DOCTYPE html>
@@ -7028,33 +7267,19 @@ HTML：
 <td>Chicago</td>
 </tr>
 <tr>
+<td>艾米丽·戴维斯</td>
+<td>22</td>
+<td>休斯顿</td>
+</tr>
+</tbody>
+</table>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
 ```
 
-
-
-
-
-<td>艾米丽·戴维斯</td>
-
-<td>22</td>
-
-<td>休斯顿</td>
-
-</tr>
-
-</tbody>
-
-</table>
-
-</div>
-
-<script src="script.js"></script>
-
-</body>
-
-</html>
-
-CSS：
+### CSS
 
 ```css
 body {
@@ -7098,7 +7323,7 @@ thead {
 }
 ```
 
-JavaScript：
+### JavaScript
 
 ```javascript
 document.getElementById('filterInput').addEventListener('input', function() {
@@ -7117,20 +7342,20 @@ document.getElementById('filterInput').addEventListener('input', function() {
 });
 ```
 
-### 模态弹窗
+## 模态弹窗
 
-**描述：**
+### 描述
 
-在本练习中，学生将创建一个可以通过按钮打开和关闭的模态弹窗。本练习介绍如何处理点击事件、切换类以及动态更新 DOM。
+在本练习中，学生将创建一个可以通过按钮打开和关闭的模态弹窗。本练习介绍如何处理点击事件、切换类以及动态更新`DOM`。
 
-**涵盖主题：**
+### 涵盖主题
 
 - HTML 结构
 - CSS 样式
 - JavaScript 事件监听器
-- DOM 操作（显示和隐藏元素）
+- `DOM`操作（显示和隐藏元素）
 
-**HTML：**
+### HTML
 
 ```html
 <!DOCTYPE html>
@@ -7157,7 +7382,7 @@ document.getElementById('filterInput').addEventListener('input', function() {
 </html>
 ```
 
-**CSS：**
+### CSS
 
 ```css
 body {
@@ -7212,7 +7437,7 @@ button {
 }
 ```
 
-**JavaScript：**
+### JavaScript
 
 ```javascript
 document.getElementById('openModalButton').addEventListener('click', function() {
@@ -7231,21 +7456,21 @@ window.addEventListener('click', function(event) {
 });
 ```
 
-### 带计次的秒表
+## 带计次的秒表
 
-**描述：**
+### 描述
 
-在本练习中，学生将创建一个带计次功能的秒表。本练习介绍如何使用定时器、处理用户输入以及动态更新 DOM。
+在本练习中，学生将创建一个带计次功能的秒表。本练习介绍如何使用定时器、处理用户输入以及动态更新`DOM`。
 
-**涵盖主题：**
+### 涵盖主题
 
 - HTML 结构
 - CSS 样式
 - JavaScript 事件监听器
 - 定时器操作
-- DOM 操作（添加和更新元素）
+- `DOM`操作（添加和更新元素）
 
-**HTML：**
+### HTML
 
 ```html
 <!DOCTYPE html>
@@ -7273,7 +7498,7 @@ window.addEventListener('click', function(event) {
 </html>
 ```
 
-**CSS：**
+### CSS
 
 ```css
 body {
@@ -7322,7 +7547,7 @@ li {
 }
 ```
 
-**JavaScript：**
+### JavaScript
 
 ```javascript
 let timer;
@@ -7374,21 +7599,24 @@ document.getElementById('lapButton').addEventListener('click', lapStopwatch);
 updateDisplay();
 ```
 
-### 带优先级的待办事项列表
+## 带优先级的待办事项列表
 
-**描述：**
+### 描述
 
-在本练习中，学生将创建一个为每个任务设置优先级的待办事项列表。本练习介绍如何处理表单输入、动态更新 DOM 以及使用 CSS 根据优先级设置元素样式。
+在本练习中，学生将创建一个为每个任务设置优先级的待办事项列表。本练习介绍如何处理表单输入、动态更新`DOM`以及使用 CSS 根据优先级设置元素样式。
 
-**涵盖主题：**
+### 涵盖主题
 
 - HTML 结构
 - CSS 样式
 - JavaScript 事件监听器
-- DOM 操作（添加、更新和删除元素）
+- `DOM`操作（添加、更新和删除元素）
+
+
+
 - 处理表单输入
 
-**HTML：**
+## HTML
 
 ```html
 <!DOCTYPE html>
@@ -7418,7 +7646,7 @@ updateDisplay();
 </html>
 ```
 
-**CSS：**
+## CSS
 
 ```css
 body {
@@ -7458,109 +7686,74 @@ ul {
 li {
   padding: 10px;
   margin: 5px 0;
-```
-
-
-
-
-
-```css
-background-color: #fff;
-
-border: 1px solid #ccc;
-
-border-radius: 5px;
-
-display: flex;
-
-justify-content: space-between;
-
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
 }
 
 li.high {
-
-border-left: 5px solid red;
-
+  border-left: 5px solid red;
 }
 
 li.medium {
-
-border-left: 5px solid orange;
-
+  border-left: 5px solid orange;
 }
 
 li.low {
-
-border-left: 5px solid green;
-
+  border-left: 5px solid green;
 }
 
 button.remove {
-
-background: none;
-
-border: none;
-
-color: red;
-
-cursor: pointer;
-
-font-size: 16px;
-
+  background: none;
+  border: none;
+  color: red;
+  cursor: pointer;
+  font-size: 16px;
 }
 ```
 
+## JavaScript
+
 ```javascript
 document.getElementById('todoForm').addEventListener('submit', function(event) {
+  event.preventDefault();
 
-event.preventDefault();
+  const taskInput = document.getElementById('taskInput');
+  const prioritySelect = document.getElementById('prioritySelect');
+  const taskText = taskInput.value;
+  const priority = prioritySelect.value;
 
-const taskInput = document.getElementById('taskInput');
+  if (taskText === '') return;
 
-const prioritySelect = document.getElementById('prioritySelect');
+  const li = document.createElement('li');
+  li.textContent = taskText;
+  li.classList.add(priority);
 
-const taskText = taskInput.value;
+  const removeButton = document.createElement('button');
+  removeButton.textContent = 'Remove';
+  removeButton.classList.add('remove');
 
-const priority = prioritySelect.value;
+  removeButton.addEventListener('click', function() {
+    li.remove();
+  });
 
-if (taskText === '') return;
+  li.appendChild(removeButton);
+  document.getElementById('taskList').appendChild(li);
 
-const li = document.createElement('li');
-
-li.textContent = taskText;
-
-li.classList.add(priority);
-
-const removeButton = document.createElement('button');
-
-removeButton.textContent = 'Remove';
-
-removeButton.classList.add('remove');
-
-removeButton.addEventListener('click', function() {
-
-li.remove();
-
-});
-
-li.appendChild(removeButton);
-
-document.getElementById('taskList').appendChild(li);
-
-taskInput.value = '';
-
-prioritySelect.value = 'medium';
-
+  taskInput.value = '';
+  prioritySelect.value = 'medium';
 });
 ```
 
-### 多项选择题测验应用
+# 多项选择题测验应用
 
-描述：
+## 描述
 
 在此练习中，学生将创建一个显示多项选择题并根据用户答案提供反馈的测验应用。本练习介绍如何处理用户输入、动态更新 DOM 以及提供反馈。
 
-涵盖主题：
+## 涵盖主题
 
 - HTML 结构
 - CSS 样式
@@ -7568,138 +7761,151 @@ prioritySelect.value = 'medium';
 - DOM 操作（更新元素）
 - 处理用户输入
 
-HTML：
+## HTML
 
 ```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Quiz App</title>
-<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz App</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<div class="quiz-container">
-<h1>Quiz App</h1>
-<div id="quiz"></div>
-<button id="submit">Submit</button>
-<div id="results"></div>
-</div>
-<script src="script.js"></script>
+  <div class="quiz-container">
+    <h1>Quiz App</h1>
+    <div id="quiz"></div>
+    <button id="submit">Submit</button>
+    <div id="results"></div>
+  </div>
+  <script src="script.js"></script>
 </body>
 </html>
 ```
 
-CSS：
+## CSS
 
 ```css
 body {
-font-family: Arial, sans-serif;
-display: flex;
-justify-content: center;
-align-items: center;
-height: 100vh;
-margin: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
 }
+
 .quiz-container {
-text-align: center;
-background-color: #f0f0f0;
-padding: 20px;
-border-radius: 10px;
-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-width: 300px;
+  text-align: center;
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
 }
+
 button {
-padding: 10px 20px;
-font-size: 16px;
-cursor: pointer;
-margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 20px;
 }
 ```
 
-JavaScript：
+## JavaScript
 
 ```javascript
 const quizContainer = document.getElementById('quiz');
 const resultsContainer = document.getElementById('results');
 const submitButton = document.getElementById('submit');
+
 const myQuestions = [
-{
-question: "What is the capital of France?",
-answers: {
-a: "Berlin",
-b: "Madrid",
-c: "Paris"
-},
-correctAnswer: "c"
-},
-{
-question: "Who is the CEO of Tesla?",
-answers: {
-a: "Jeff Bezos",
-b: "Elon Musk",
-c: "Bill Gates"
-},
-correctAnswer: "b"
-},
-{
-question: "What is the smallest planet in our solar system?",
-answers: {
-a: "Mars",
-b: "Venus",
-c: "Mercury"
-},
-correctAnswer: "c"
-}
+  {
+    question: "What is the capital of France?",
+    answers: {
+      a: "Berlin",
+      b: "Madrid",
+      c: "Paris"
+    },
+    correctAnswer: "c"
+  },
+  {
+    question: "Who is the CEO of Tesla?",
+    answers: {
+      a: "Jeff Bezos",
+      b: "Elon Musk",
+      c: "Bill Gates"
+    },
+    correctAnswer: "b"
+  },
+  {
+    question: "What is the smallest planet in our solar system?",
+    answers: {
+      a: "Mars",
+      b: "Venus",
+      c: "Mercury"
+    },
+    correctAnswer: "c"
+  }
 ];
+
 function buildQuiz() {
-const output = [];
-myQuestions.forEach((currentQuestion, questionNumber) => {
-const answers = [];
-for (letter in currentQuestion.answers) {
-answers.push(
-`<label>
-<input type="radio" name="question${questionNumber}" value="${letter}">
-${letter} :
-${currentQuestion.answers[letter]}
-</label>`
-);
+  const output = [];
+
+  myQuestions.forEach((currentQuestion, questionNumber) => {
+    const answers = [];
+
+    for (letter in currentQuestion.answers) {
+      answers.push(
+        `<label>
+          <input type="radio" name="question${questionNumber}" value="${letter}">
+          ${letter} :
+          ${currentQuestion.answers[letter]}
+        </label>`
+      );
+    }
+
+    output.push(
+      `<div class="question"> ${currentQuestion.question} </div>
+      <div class="answers"> ${answers.join('')} </div>`
+    );
+  });
+
+  quizContainer.innerHTML = output.join('');
 }
-output.push(
-`<div class="question"> ${currentQuestion.question} </div>
-<div class="answers"> ${answers.join('')} </div>`
-);
-});
-quizContainer.innerHTML = output.join('');
-}
+
 function showResults() {
-const answerContainers = quizContainer.querySelectorAll('.answers');
-let numCorrect = 0;
-myQuestions.forEach((currentQuestion, questionNumber) => {
-const answerContainer = answerContainers[questionNumber];
-const selector = `input[name=question${questionNumber}]:checked`;
-const userAnswer = (answerContainer.querySelector(selector) || {}).value;
-if (userAnswer === currentQuestion.correctAnswer) {
-numCorrect++;
-answerContainers[questionNumber].style.color = 'green';
-} else {
-answerContainers[questionNumber].style.color = 'red';
+  const answerContainers = quizContainer.querySelectorAll('.answers');
+  let numCorrect = 0;
+
+  myQuestions.forEach((currentQuestion, questionNumber) => {
+    const answerContainer = answerContainers[questionNumber];
+    const selector = `input[name=question${questionNumber}]:checked`;
+    const userAnswer = (answerContainer.querySelector(selector) || {}).value;
+
+    if (userAnswer === currentQuestion.correctAnswer) {
+      numCorrect++;
+      answerContainers[questionNumber].style.color = 'green';
+    } else {
+      answerContainers[questionNumber].style.color = 'red';
+    }
+  });
+
+  resultsContainer.innerHTML = `${numCorrect} out of ${myQuestions.length}`;
 }
-});
-resultsContainer.innerHTML = `${numCorrect} out of ${myQuestions.length}`;
-}
+
 buildQuiz();
 submitButton.addEventListener('click', showResults);
 ```
 
-### 简单绘图应用
+# 简单绘图应用
 
-描述：
+## 描述
 
-在此练习中，学生将创建一个简单的绘图应用，用户可以使用鼠标在画布上绘图。本练习介绍如何使用 HTML5 `<canvas>`元素、处理鼠标事件以及绘制形状。
+在此练习中，学生将创建一个简单的绘图应用，用户可以使用鼠标在画布上绘图。本练习介绍如何使用 HTML5 `<canvas>` 元素、处理鼠标事件以及绘制形状。
 
-涵盖主题：
+## 涵盖主题
 
 - HTML 结构
 - CSS 样式
@@ -7707,76 +7913,87 @@ submitButton.addEventListener('click', showResults);
 - Canvas API
 - 处理鼠标事件
 
-HTML：
+## HTML
 
 ```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Simple Drawing App</title>
-<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Drawing App</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<div class="drawing-container">
-<h1>Simple Drawing App</h1>
-<canvas id="drawingCanvas" width="600" height="400"></canvas>
-</div>
-<script src="script.js"></script>
+  <div class="drawing-container">
+    <h1>Simple Drawing App</h1>
+    <canvas id="drawingCanvas" width="600" height="400"></canvas>
+  </div>
+  <script src="script.js"></script>
 </body>
 </html>
 ```
 
-CSS：
+## CSS
 
 ```css
 body {
-font-family: Arial, sans-serif;
-display: flex;
-justify-content: center;
-align-items: center;
-height: 100vh;
-margin: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
 }
+
 .drawing-container {
-text-align: center;
+  text-align: center;
 }
+
 canvas {
-border: 1px solid #000;
-cursor: crosshair;
+  border: 1px solid #000;
+  cursor: crosshair;
 }
 ```
 
-JavaScript：
+## JavaScript
 
 ```javascript
 const canvas = document.getElementById('drawingCanvas');
 const ctx = canvas.getContext('2d');
 let drawing = false;
+
 canvas.addEventListener('mousedown', () => drawing = true);
 canvas.addEventListener('mouseup', () => drawing = false);
 canvas.addEventListener('mouseout', () => drawing = false);
 canvas.addEventListener('mousemove', draw);
+
 function draw(event) {
-if (!drawing) return;
-ctx.lineWidth = 2;
-ctx.lineCap = 'round';
-ctx.strokeStyle = '#000';
-ctx.lineTo(event.clientX - canvas.offsetLeft, event.clientY - canvas.offsetTop);
-ctx.stroke();
-ctx.beginPath();
-ctx.moveTo(event.clientX - canvas.offsetLeft, event.clientY - canvas.offsetTop);
+  if (!drawing) return;
+
+  ctx.lineWidth = 2;
+  ctx.lineCap = 'round';
+  ctx.strokeStyle = '#000';
+  ctx.lineTo(
+    event.clientX - canvas.offsetLeft,
+    event.clientY - canvas.offsetTop
+  );
+  ctx.stroke();
+  ctx.beginPath();
+  ctx.moveTo(
+    event.clientX - canvas.offsetLeft,
+    event.clientY - canvas.offsetTop
+  );
 }
 ```
 
-### 带计圈功能的秒表
+# 带计圈功能的秒表
 
-描述：
+## 描述
 
 在此练习中，学生将创建一个带计圈功能的秒表，允许用户记录圈数时间。本练习介绍如何使用定时器、处理按钮点击以及动态更新 DOM。
 
-涵盖主题：
+## 涵盖主题
 
 - HTML 结构
 - CSS 样式
@@ -7784,35 +8001,37 @@ ctx.moveTo(event.clientX - canvas.offsetLeft, event.clientY - canvas.offsetTop);
 - 使用定时器
 - DOM 操作（添加和更新元素）
 
-HTML：
+## HTML
 
 ```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Stopwatch with Laps</title>
-<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stopwatch with Laps</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<div class="stopwatch-container">
-<h1>Stopwatch with Laps</h1>
-<p id="stopwatchDisplay">00:00:00</p>
-<div class="buttons">
-<button id="startButton">Start</button>
-<button id="lapButton">Lap</button>
-<button id="resetButton">Reset</button>
-</div>
-<h2>Lap Times</h2>
-<ul id="laps"></ul>
-</div>
-<script src="script.js"></script>
+  <div class="stopwatch-container">
+    <h1>Stopwatch with Laps</h1>
+    <p id="stopwatchDisplay">00:00:00</p>
+    <div class="buttons">
+      <button id="startButton">Start</button>
+      <button id="lapButton">Lap</button>
+      <button id="resetButton">Reset</button>
+    </div>
+    <h2>Lap Times</h2>
+    <ul id="laps"></ul>
+  </div>
+  <script src="script.js"></script>
 </body>
 </html>
 ```
 
-CSS：
+## CSS
+
+
 
 ```css
 body {
@@ -7855,7 +8074,7 @@ border-bottom: 1px solid #ccc;
 }
 ```
 
-JavaScript：
+## JavaScript
 
 ```javascript
 let timer;
@@ -7865,101 +8084,57 @@ let isRunning = false;
 function updateDisplay() {
 const display = document.getElementById('stopwatchDisplay');
 const time = new Date(elapsedTime);
-```
-
-
-
-
-
-```javascript
 const minutes = time.getUTCMinutes().toString().padStart(2, '0');
-
 const seconds = time.getUTCSeconds().toString().padStart(2, '0');
-
 const milliseconds = Math.floor(time.getUTCMilliseconds() / 10).toString().padStart(2, '0');
-
 display.textContent = `${minutes}:${seconds}:${milliseconds}`;
-
 }
-
 function startStopwatch() {
-
 if (!isRunning) {
-
 startTime = Date.now() - elapsedTime;
-
 timer = setInterval(function() {
-
 elapsedTime = Date.now() - startTime;
-
 updateDisplay();
-
 }, 10);
-
 isRunning = true;
-
 }
-
 }
-
 function resetStopwatch() {
-
 clearInterval(timer);
-
 elapsedTime = 0;
-
 updateDisplay();
-
 isRunning = false;
-
 document.getElementById('laps').innerHTML = '';
-
 }
-
 function lapStopwatch() {
-
 if (isRunning) {
-
 const lapTime = document.getElementById('stopwatchDisplay').textContent;
-
 const li = document.createElement('li');
-
 li.textContent = lapTime;
-
 document.getElementById('laps').appendChild(li);
-
 }
-
 }
-
 document.getElementById('startButton').addEventListener('click', startStopwatch);
-
 document.getElementById('resetButton').addEventListener('click', resetStopwatch);
-
 document.getElementById('lapButton').addEventListener('click', lapStopwatch);
-
 updateDisplay();
 ```
 
-### 费用追踪器
+## 费用追踪器
 
-描述：
+### 描述
 
 在本练习中，学生将创建一个费用追踪器，允许用户添加带有描述和金额的费用。本练习介绍如何处理表单输入、动态更新 DOM 以及计算总计。
 
-涵盖主题：
+### 涵盖主题
 
-●       HTML 结构
+- HTML 结构
+- CSS 样式
+- JavaScript 事件监听器
+- DOM 操作（添加和更新元素）
+- 处理表单输入
 
-●       CSS 样式
-
-●       JavaScript 事件监听器
-
-●       DOM 操作（添加和更新元素）
-
-●       处理表单输入
-
-HTML：
+### HTML
 
 ```html
 <!DOCTYPE html>
@@ -7986,7 +8161,7 @@ HTML：
 </html>
 ```
 
-CSS：
+### CSS
 
 ```css
 body {
@@ -8040,7 +8215,7 @@ margin-top: 20px;
 }
 ```
 
-JavaScript：
+### JavaScript
 
 ```javascript
 document.getElementById('expenseForm').addEventListener('submit', function(event) {
@@ -8076,25 +8251,21 @@ document.getElementById('totalAmount').textContent = `Total: $${total.toFixed(2)
 }
 ```
 
-### 带分段计时的秒表
+## 带分段计时的秒表
 
-描述：
+### 描述
 
 在本练习中，学生将创建一个带分段计时功能的秒表，允许用户记录分段时间。本练习介绍如何使用定时器、处理按钮点击以及动态更新 DOM。
 
-涵盖主题：
+### 涵盖主题
 
-●       HTML 结构
+- HTML 结构
+- CSS 样式
+- JavaScript 事件监听器
+- 使用定时器
+- DOM 操作（添加和更新元素）
 
-●       CSS 样式
-
-●       JavaScript 事件监听器
-
-●       使用定时器
-
-●       DOM 操作（添加和更新元素）
-
-HTML：
+### HTML
 
 ```html
 <!DOCTYPE html>
@@ -8122,7 +8293,7 @@ HTML：
 </html>
 ```
 
-CSS：
+### CSS
 
 ```css
 body {
@@ -8165,7 +8336,7 @@ border-bottom: 1px solid #ccc;
 }
 ```
 
-JavaScript：
+### JavaScript
 
 ```javascript
 let timer;
@@ -8211,9 +8382,9 @@ document.getElementById('splitButton').addEventListener('click', splitStopwatch)
 updateDisplay();
 ```
 
-### 多项选择题
+## 多项选择题
 
-在动态表格筛选练习中，用于筛选表格行的事件是哪个？
+### 1. 在动态表格筛选练习中，用于筛选表格行的事件是哪个？
 
 a) `change`
 
@@ -8223,9 +8394,11 @@ c) `click`
 
 d) `keydown`
 
-答案：b) `input` 解释：当用户在筛选输入框中输入时，使用 `input` 事件实时筛选表格行。
+**答案：**b) `input`
 
-在模态弹窗练习中，用于显示模态弹窗的方法是哪个？
+**解释：**当用户在筛选输入框中输入时，使用`input`事件实时筛选表格行。
+
+### 2. 在模态弹窗练习中，用于显示模态弹窗的方法是哪个？
 
 a) `display = 'block'`
 
@@ -8235,226 +8408,341 @@ c) `style.visibility = 'visible'`
 
 d) `style.opacity = 1`
 
-答案：b) `classList.add('active')` 解释：通过向模态元素添加 active 类，使用 `classList.add('active')` 方法显示模态弹窗。
+**答案：**b) `classList.add('active')`
 
+**解释：**通过向模态元素添加`active`类，使用`classList.add('active')`方法显示模态弹窗。
 
-
-
-
-在“带计圈功能的秒表”练习中，哪个函数用于定期更新显示？
+### 3. 在“带计圈功能的秒表”练习中，哪个函数用于定期更新显示？
 
 a) `setTimeout`
+
 b) `setInterval`
+
+
+
 c) `requestAnimationFrame`
+
 d) `setImmediate`
 
-答案：b) `setInterval` 解释：`setInterval` 函数用于每 10 毫秒定期更新显示。
+答案：b) `setInterval`
+
+解释：`setInterval` 函数用于每 10 毫秒定期更新显示。
 
 在“带计圈功能的秒表”练习中，如何计算经过的时间？
 
 a) `Date.now() - startTime`
+
 b) `startTime - Date.now()`
+
 c) `new Date().getTime() - startTime`
+
 d) `startTime - new Date().getTime()`
 
-答案：a) `Date.now() - startTime` 解释：经过的时间是通过当前时间（`Date.now()`）减去 `startTime` 计算得出的。
+答案：a) `Date.now() - startTime`
+
+解释：经过的时间是通过当前时间（`Date.now()`）减去`startTime`计算得出的。
 
 在“模态弹窗”练习中，当用户点击模态内容外部时会发生什么？
 
 a) 什么也不会发生
+
 b) 模态内容被隐藏
+
 c) 模态弹窗被关闭
+
 d) 模态内容被最小化
 
-答案：c) 模态弹窗被关闭 解释：当用户点击模态内容外部时，通过从模态元素中移除 active 类来关闭模态弹窗。
+答案：c) 模态弹窗被关闭
+
+解释：当用户点击模态内容外部时，通过从模态元素中移除`active`类来关闭模态弹窗。
 
 在“带优先级的待办事项列表”练习中，优先级级别如何应用于任务？
 
 a) 通过更改文本颜色
+
 b) 通过添加边框
+
 c) 通过添加 CSS 类
+
 d) 通过更改字体大小
 
-答案：c) 通过添加 CSS 类 解释：优先级级别通过根据所选优先级级别添加 CSS 类来应用于任务。
+答案：c) 通过添加 CSS 类
+
+解释：优先级级别通过根据所选优先级级别添加 CSS 类来应用于任务。
 
 在“多项选择题测验应用”练习中，如何检索用户选择的答案？
 
-a) 使用 `getElementById`
-b) 使用 `querySelector`
-c) 使用 `innerHTML`
-d) 使用 `textContent`
+a) 使用`getElementById`
 
-答案：b) 使用 `querySelector` 解释：`querySelector` 方法用于从单选按钮中检索用户选择的答案。
+b) 使用`querySelector`
+
+c) 使用`innerHTML`
+
+d) 使用`textContent`
+
+答案：b) 使用`querySelector`
+
+解释：`querySelector`方法用于从单选按钮中检索用户选择的答案。
 
 在“带优先级的待办事项列表”练习中，哪个事件用于处理表单提交？
 
 a) `click`
+
 b) `submit`
+
 c) `change`
+
 d) `input`
 
-答案：b) `submit` 解释：`submit` 事件用于在添加带有优先级的新任务时处理表单提交。
+答案：b) `submit`
+
+解释：`submit`事件用于在添加带有优先级的新任务时处理表单提交。
 
 在“简易绘图应用”练习中，哪个事件用于开始在画布上绘图？
 
 a) `click`
+
 b) `mousedown`
+
 c) `mouseup`
+
 d) `mousemove`
 
-答案：b) `mousedown` 解释：当鼠标按钮按下时，`mousedown` 事件用于开始在画布上绘图。
+答案：b) `mousedown`
+
+解释：当鼠标按钮按下时，`mousedown`事件用于开始在画布上绘图。
 
 在“带计圈功能的秒表”练习中，调用哪个函数来记录计圈时间？
 
 a) `startStopwatch`
+
 b) `resetStopwatch`
+
 c) `lapStopwatch`
+
 d) `updateDisplay`
 
-答案：c) `lapStopwatch` 解释：调用 `lapStopwatch` 函数来记录计圈时间并将其添加到计圈时间列表中。
+答案：c) `lapStopwatch`
 
-在“简易绘图应用”练习中，`ctx.lineTo` 方法的作用是什么？
+解释：调用`lapStopwatch`函数来记录计圈时间并将其添加到计圈时间列表中。
+
+在“简易绘图应用”练习中，`ctx.lineTo`方法的作用是什么？
 
 a) 设置线条的起点
+
 b) 绘制一条到指定坐标的线条
+
 c) 清除画布
+
 d) 用颜色填充画布
 
-答案：b) 绘制一条到指定坐标的线条 解释：`ctx.lineTo` 方法在画布上绘制一条到指定坐标的线条。
+答案：b) 绘制一条到指定坐标的线条
 
-在“带计圈功能的秒表”练习中，`elapsedTime` 变量的作用是什么？
+解释：`ctx.lineTo`方法在画布上绘制一条到指定坐标的线条。
+
+在“带计圈功能的秒表”练习中，`elapsedTime`变量的作用是什么？
 
 a) 存储秒表的总经过时间
+
 b) 存储秒表的开始时间
+
 c) 存储秒表的计圈时间
+
 d) 存储计时器的间隔 ID
 
-答案：a) 存储秒表的总经过时间 解释：`elapsedTime` 变量用于存储秒表的总经过时间，该时间会定期更新并显示。
+答案：a) 存储秒表的总经过时间
+
+解释：`elapsedTime`变量用于存储秒表的总经过时间，该时间会定期更新并显示。
 
 在“费用追踪器”练习中，如何计算总金额？
 
 a) 通过求和费用列表中的金额
+
 b) 通过相乘费用列表中的金额
+
 c) 通过相除费用列表中的金额
+
 d) 通过相减费用列表中的金额
 
-答案：a) 通过求和费用列表中的金额 解释：总金额是通过对费用列表中所有费用的金额求和计算得出的。
+答案：a) 通过求和费用列表中的金额
+
+解释：总金额是通过对费用列表中所有费用的金额求和计算得出的。
 
 在“带分段计时功能的秒表”练习中，使用什么函数来记录分段时间？
 
 a) `startStopwatch`
+
 b) `resetStopwatch`
+
 c) `splitStopwatch`
+
 d) `updateDisplay`
 
-答案：c) `splitStopwatch` 解释：`splitStopwatch` 函数用于记录并显示秒表中的分段时间。
+答案：c) `splitStopwatch`
+
+解释：`splitStopwatch`函数用于记录并显示秒表中的分段时间。
 
 在“费用追踪器”练习中，如何将任务添加到费用列表？
 
-a) 通过设置 `innerHTML`
-b) 通过设置 `textContent`
-c) 通过使用 `appendChild`
-d) 通过使用 `innerText`
+a) 通过设置`innerHTML`
 
-答案：c) 通过使用 `appendChild` 解释：通过创建列表项元素并使用 `appendChild` 将其追加到费用列表中来添加任务。
+b) 通过设置`textContent`
+
+c) 通过使用`appendChild`
+
+d) 通过使用`innerText`
+
+答案：c) 通过使用`appendChild`
+
+解释：通过创建列表项元素并使用`appendChild`将其追加到费用列表中来添加任务。
 
 在“带本地存储的待办事项列表”练习中，使用什么事件来确保在 DOM 完全加载后从本地存储加载任务？
 
 A) `load`
+
 B) `DOMContentLoaded`
+
 C) `window.onload`
+
 D) `ready`
 
-答案：B) `DOMContentLoaded` 解释：`DOMContentLoaded` 事件用于确保在 DOM 完全加载后加载任务，从而实现准确的任务显示。
+答案：B) `DOMContentLoaded`
+
+解释：`DOMContentLoaded`事件用于确保在 DOM 完全加载后加载任务，从而实现准确的任务显示。
 
 在“带本地存储的待办事项列表”练习中，任务如何存储在本地存储中？
 
 A) 作为纯文本
+
 B) 作为 JSON 字符串
+
 C) 作为数组
+
 D) 作为对象
 
-答案：B) 作为 JSON 字符串 解释：任务以 JSON 字符串形式存储，以便轻松保存和检索复杂的数据结构。
+答案：B) 作为 JSON 字符串
+
+解释：任务以 JSON 字符串形式存储，以便轻松保存和检索复杂的数据结构。
 
 在“带本地存储的待办事项列表”练习中，使用什么方法来更新本地存储中的任务列表？
 
 A) `localStorage.saveItem`
+
 B) `localStorage.updateItem`
+
 C) `localStorage.setItem`
+
 D) `localStorage.putItem`
 
-答案：C) `localStorage.setItem` 解释：`localStorage.setItem` 方法用于更新本地存储中的任务列表。
+答案：C) `localStorage.setItem`
+
+解释：`localStorage.setItem`方法用于更新本地存储中的任务列表。
 
 在“BMI 计算器”练习中，身高输入使用什么单位？
 
 A) 英寸
+
 B) 米
+
 C) 厘米
+
 D) 英尺
 
-答案：C) 厘米 解释：身高输入以厘米为单位，然后转换为米以进行 BMI 计算。
+答案：C) 厘米
+
+解释：身高输入以厘米为单位，然后转换为米以进行 BMI 计算。
 
 在“数字时钟”练习中，使用什么方法每秒更新时钟显示？
 
 A) `setTimeout`
+
 B) `setInterval`
+
 C) `requestAnimationFrame`
+
 D) `clearInterval`
 
-答案：B) `setInterval` 解释：`setInterval` 方法用于每秒更新时钟显示。
+答案：B) `setInterval`
+
+解释：`setInterval`方法用于每秒更新时钟显示。
 
 在“响应式导航菜单”练习中，哪个 CSS 规则用于根据屏幕宽度应用样式？
 
 A) `@import`
+
 B) `@media`
+
 C) `@keyframes`
+
 D) `@font-face`
 
-答案：B) `@media` 解释：CSS 中的 `@media` 规则用于根据屏幕宽度应用样式，从而实现响应式设计。
+答案：B) `@media`
+
+解释：CSS 中的`@media`规则用于根据屏幕宽度应用样式，从而实现响应式设计。
 
 在“测验应用”练习中，如何显示测验问题和答案？
 
-A) 使用 `<div>` 元素
-B) 使用 `<table>` 元素
-C) 使用 `<form>` 元素
-D) 使用 `<span>` 元素
+A) 使用`<div>`元素
 
-答案：A) 使用 `<div>` 元素 解释：使用 `<div>` 元素显示测验问题和答案，有效构建界面。
+B) 使用`<table>`元素
+
+C) 使用`<form>`元素
+
+D) 使用`<span>`元素
+
+答案：A) 使用`<div>`元素
+
+解释：使用`<div>`元素显示测验问题和答案，有效构建界面。
 
 在“番茄钟计时器”练习中，使用什么方法来停止计时器？
 
 A) `clearTimeout`
+
 B) `clearInterval`
+
 C) `stopTimer`
+
 D) `pauseTimer`
 
-答案：B) `clearInterval` 解释：`clearInterval` 方法通过清除间隔来停止计时器。
+答案：B) `clearInterval`
+
+解释：`clearInterval`方法通过清除间隔来停止计时器。
 
 在“自定义时间倒计时器”练习中，如何从表单中读取用户的输入时间？
 
-A) 使用 `parseFloat`
-B) 使用 `parseInt`
-C) 使用 `Number`
-D) 使用 `getValue`
+A) 使用`parseFloat`
 
-答案：B) 使用 `parseInt` 解释：使用 `parseInt` 读取用户的输入时间，以确保输入被视为整数。
+B) 使用`parseInt`
+
+C) 使用`Number`
+
+D) 使用`getValue`
+
+答案：B) 使用`parseInt`
+
+解释：使用`parseInt`读取用户的输入时间，以确保输入被视为整数。
 
 在“动态表格筛选”练习中，哪个事件用于触发表格行的筛选？
 
 A) `click`
+
 B) `input`
+
 C) `change`
+
 D) `keyup`
 
-答案：B) `input` 解释：`input` 事件用于根据用户在筛选字段中的输入触发表格行的筛选。
+答案：B) 使用`input`
+
+解释：`input`事件用于根据用户在筛选字段中的输入触发表格行的筛选。
 
 ## 带用户输入的倒计时器
 
-描述：
+### 描述
 
 在此练习中，学生将创建一个倒计时器，允许用户输入秒数并启动计时器。本练习介绍如何处理表单输入、使用计时器以及动态更新 DOM。
 
-涵盖的主题：
+### 涵盖的主题
 
 - HTML 结构
 - CSS 样式
@@ -8463,19 +8751,13 @@ D) `keyup`
 - 处理表单输入
 - DOM 操作（更新文本内容）
 
-HTML：
+### HTML
 
 ```html
 <!DOCTYPE html>
 ```
 
-
-
-
-
-## 带用户输入的倒计时器
-
-### HTML
+### 完整 HTML
 
 ```html
 <html lang="en">
@@ -8565,9 +8847,12 @@ updateDisplay();
 
 ## 交互式测验应用
 
-**描述：** 在本练习中，学生将创建一个交互式测验应用，显示多项选择题并提供即时反馈。本练习介绍如何处理表单输入、动态更新 DOM 以及提供反馈。
+### 描述
 
-**涵盖主题：**
+在本练习中，学生将创建一个交互式测验应用，显示多项选择题并提供即时反馈。本练习介绍如何处理表单输入、动态更新 DOM 以及提供反馈。
+
+### 涵盖主题
+
 - HTML 结构
 - CSS 样式
 - JavaScript 事件监听器
@@ -8626,75 +8911,88 @@ margin-top: 20px;
 
 ### JavaScript
 
+
+
+
 ```javascript
 const quizContainer = document.getElementById('quiz');
 const resultsContainer = document.getElementById('results');
 const submitButton = document.getElementById('submit');
 const myQuestions = [
-{
-question: "What is the capital of France?",
-answers: {
-a: "Berlin",
-b: "Madrid",
-c: "Paris"
-},
-correctAnswer: "c"
-},
-{
-question: "Who is the CEO of Tesla?",
-answers: {
-a: "Jeff Bezos",
-b: "Elon Musk",
-c: "Bill Gates"
-},
-correctAnswer: "b"
-},
-{
-question: "What is the smallest planet in our solar system?",
-answers: {
-a: "Mars",
-b: "Venus",
-c: "Mercury"
-},
-correctAnswer: "c"
-}
+  {
+    question: "What is the capital of France?",
+    answers: {
+      a: "Berlin",
+      b: "Madrid",
+      c: "Paris"
+    },
+    correctAnswer: "c"
+  },
+  {
+    question: "Who is the CEO of Tesla?",
+    answers: {
+      a: "Jeff Bezos",
+      b: "Elon Musk",
+      c: "Bill Gates"
+    },
+    correctAnswer: "b"
+  },
+  {
+    question: "What is the smallest planet in our solar system?",
+    answers: {
+      a: "Mars",
+      b: "Venus",
+      c: "Mercury"
+    },
+    correctAnswer: "c"
+  }
 ];
+
 function buildQuiz() {
-const output = [];
-myQuestions.forEach((currentQuestion, questionNumber) => {
-const answers = [];
-for (letter in currentQuestion.answers) {
-answers.push(
-`<label>
-<input type="radio" name="question${questionNumber}" value="${letter}">
-${letter} :
-${currentQuestion.answers[letter]}
-</label>`
-);
+  const output = [];
+
+  myQuestions.forEach((currentQuestion, questionNumber) => {
+    const answers = [];
+
+    for (letter in currentQuestion.answers) {
+      answers.push(
+        `<label>
+          <input type="radio" name="question${questionNumber}" value="${letter}">
+          ${letter} :
+          ${currentQuestion.answers[letter]}
+        </label>`
+      );
+    }
+
+    output.push(
+      `<div class="question"> ${currentQuestion.question} </div>
+      <div class="answers"> ${answers.join('')} </div>`
+    );
+  });
+
+  quizContainer.innerHTML = output.join('');
 }
-output.push(
-`<div class="question"> ${currentQuestion.question} </div>
-<div class="answers"> ${answers.join('')} </div>`
-);
-});
-quizContainer.innerHTML = output.join('');
-}
+
 function showResults() {
-const answerContainers = quizContainer.querySelectorAll('.answers');
-let numCorrect = 0;
-myQuestions.forEach((currentQuestion, questionNumber) => {
-const answerContainer = answerContainers[questionNumber];
-const selector = `input[name=question${questionNumber}]:checked`;
-const userAnswer = (answerContainer.querySelector(selector) || {}).value;
-if (userAnswer === currentQuestion.correctAnswer) {
-numCorrect++;
-answerContainers[questionNumber].style.color = 'green';
-} else {
-answerContainers[questionNumber].style.color = 'red';
+  const answerContainers = quizContainer.querySelectorAll('.answers');
+  let numCorrect = 0;
+
+  myQuestions.forEach((currentQuestion, questionNumber) => {
+    const answerContainer = answerContainers[questionNumber];
+    const selector = `input[name=question${questionNumber}]:checked`;
+    const userAnswer = (answerContainer.querySelector(selector) || {}).value;
+
+    if (userAnswer === currentQuestion.correctAnswer) {
+      numCorrect++;
+      answerContainers[questionNumber].style.color = 'green';
+    } else {
+      answerContainers[questionNumber].style.color = 'red';
+    }
+  });
+
+  resultsContainer.innerHTML = `${numCorrect} out of ${myQuestions.length}`;
 }
-});
-resultsContainer.innerHTML = `${numCorrect} out of ${myQuestions.length}`;
-}
+
 buildQuiz();
 submitButton.addEventListener('click', showResults);
 ```
@@ -8704,6 +9002,7 @@ submitButton.addEventListener('click', showResults);
 **描述：** 在本练习中，学生将创建一个购物清单，将商品保存到本地存储中，以便在页面刷新后仍然保留。本练习介绍如何处理表单输入、动态更新 DOM 以及使用本地存储。
 
 **涵盖主题：**
+
 - HTML 结构
 - CSS 样式
 - JavaScript 事件监听器
@@ -8717,21 +9016,21 @@ submitButton.addEventListener('click', showResults);
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Shopping List with Local Storage</title>
-<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopping List with Local Storage</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<div class="list-container">
-<h1>Shopping List</h1>
-<form id="shoppingForm">
-<input type="text" id="itemInput" placeholder="Enter a new item" required>
-<button type="submit">Add Item</button>
-</form>
-<ul id="itemList"></ul>
-</div>
-<script src="script.js"></script>
+  <div class="list-container">
+    <h1>Shopping List</h1>
+    <form id="shoppingForm">
+      <input type="text" id="itemInput" placeholder="Enter a new item" required>
+      <button type="submit">Add Item</button>
+    </form>
+    <ul id="itemList"></ul>
+  </div>
+  <script src="script.js"></script>
 </body>
 </html>
 ```
@@ -8740,49 +9039,56 @@ submitButton.addEventListener('click', showResults);
 
 ```css
 body {
-font-family: Arial, sans-serif;
-display: flex;
-justify-content: center;
-align-items: center;
-height: 100vh;
-margin: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
 }
+
 .list-container {
-text-align: center;
-background-color: #f0f0f0;
-padding: 20px;
-border-radius: 10px;
-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-width: 300px;
+  text-align: center;
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
 }
+
 form {
-display: flex;
-flex-direction: column;
-gap: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
-input, button {
-padding: 10px;
-font-size: 16px;
+
+input,
+button {
+  padding: 10px;
+  font-size: 16px;
 }
+
 ul {
-list-style-type: none;
-padding: 0;
+  list-style-type: none;
+  padding: 0;
 }
+
 li {
-padding: 10px;
-margin: 5px 0;
-background-color: #fff;
-border: 1px solid #ccc;
-border-radius: 5px;
-display: flex;
-justify-content: space-between;
+  padding: 10px;
+  margin: 5px 0;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
 }
+
 button.remove {
-background: none;
-border: none;
-color: red;
-cursor: pointer;
-font-size: 16px;
+  background: none;
+  border: none;
+  color: red;
+  cursor: pointer;
+  font-size: 16px;
 }
 ```
 
@@ -8790,38 +9096,49 @@ font-size: 16px;
 
 ```javascript
 document.addEventListener('DOMContentLoaded', function() {
-const itemList = document.getElementById('itemList');
-const items = JSON.parse(localStorage.getItem('items')) || [];
-items.forEach(item => {
-addItemToDOM(item);
-});
-document.getElementById('shoppingForm').addEventListener('submit', function(event) {
-event.preventDefault();
-const itemInput = document.getElementById('itemInput');
-const itemText = itemInput.value;
-if (itemText === '') return;
-addItemToDOM(itemText);
-items.push(itemText);
-localStorage.setItem('items', JSON.stringify(items));
-itemInput.value = '';
-});
-function addItemToDOM(itemText) {
-const li = document.createElement('li');
-li.textContent = itemText;
-const removeButton = document.createElement('button');
-removeButton.textContent = 'Remove';
-removeButton.classList.add('remove');
-removeButton.addEventListener('click', function() {
-li.remove();
-const index = items.indexOf(itemText);
-if (index !== -1) {
-items.splice(index, 1);
-localStorage.setItem('items', JSON.stringify(items));
-}
-});
-li.appendChild(removeButton);
-itemList.appendChild(li);
-}
+  const itemList = document.getElementById('itemList');
+  const items = JSON.parse(localStorage.getItem('items')) || [];
+
+  items.forEach(item => {
+    addItemToDOM(item);
+  });
+
+  document.getElementById('shoppingForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    const itemInput = document.getElementById('itemInput');
+    const itemText = itemInput.value;
+
+    if (itemText === '') return;
+
+    addItemToDOM(itemText);
+    items.push(itemText);
+    localStorage.setItem('items', JSON.stringify(items));
+    itemInput.value = '';
+  });
+
+  function addItemToDOM(itemText) {
+    const li = document.createElement('li');
+    li.textContent = itemText;
+
+    const removeButton = document.createElement('button');
+    removeButton.textContent = 'Remove';
+    removeButton.classList.add('remove');
+
+    removeButton.addEventListener('click', function() {
+      li.remove();
+
+      const index = items.indexOf(itemText);
+
+      if (index !== -1) {
+        items.splice(index, 1);
+        localStorage.setItem('items', JSON.stringify(items));
+      }
+    });
+
+    li.appendChild(removeButton);
+    itemList.appendChild(li);
+  }
 });
 ```
 
@@ -8829,13 +9146,9 @@ itemList.appendChild(li);
 
 **描述：**（原文未提供进一步内容。）
 
-
-
-
-
 在本练习中，学生将创建一个响应式导航栏，该导航栏在小屏幕上会折叠成汉堡菜单。本练习介绍了如何处理 CSS 媒体查询、JavaScript 事件监听器和 DOM 操作。
 
-涵盖主题：
+**涵盖主题：**
 
 - HTML 结构
 - CSS 样式
@@ -8843,124 +9156,137 @@ itemList.appendChild(li);
 - JavaScript 事件监听器
 - DOM 操作（切换类）
 
-HTML：
+### HTML
 
 ```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Responsive Navbar</title>
-<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Navbar</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<nav class="navbar">
-<div class="brand-title">Brand</div>
-<a href="#" class="toggle-button">
-<span class="bar"></span>
-<span class="bar"></span>
-<span class="bar"></span>
-</a>
-<div class="navbar-links">
-<ul>
-<li><a href="#">Home</a></li>
-<li><a href="#">About</a></li>
-<li><a href="#">Services</a></li>
-<li><a href="#">Contact</a></li>
-</ul>
-</div>
-</nav>
-<script src="script.js"></script>
+  <nav class="navbar">
+    <div class="brand-title">Brand</div>
+    <a href="#" class="toggle-button">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </a>
+    <div class="navbar-links">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  <script src="script.js"></script>
 </body>
 </html>
 ```
 
-CSS：
+### CSS
 
 ```css
 body {
-font-family: Arial, sans-serif;
-margin: 0;
-padding: 0;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
 }
+
 .navbar {
-display: flex;
-justify-content: space-between;
-align-items: center;
-background-color: #333;
-padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  padding: 10px;
 }
+
 .brand-title {
-font-size: 1.5em;
-color: white;
+  font-size: 1.5em;
+  color: white;
 }
+
 .navbar-links {
-height: 100%;
+  height: 100%;
 }
+
 .navbar-links ul {
-display: flex;
-margin: 0;
-padding: 0;
-list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
+
 .navbar-links li {
-margin-left: 10px;
+  margin-left: 10px;
 }
+
 .navbar-links a {
-color: white;
-text-decoration: none;
-padding: 5px 10px;
+  color: white;
+  text-decoration: none;
+  padding: 5px 10px;
 }
+
 .toggle-button {
-display: none;
-flex-direction: column;
-cursor: pointer;
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
 }
+
 .toggle-button .bar {
-width: 25px;
-height: 3px;
-background-color: white;
-margin: 2px 0;
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 2px 0;
 }
+
 @media (max-width: 768px) {
-.toggle-button {
-display: flex;
-}
-.navbar-links {
-display: none;
-width: 100%;
-}
-.navbar-links ul {
-flex-direction: column;
-}
-.navbar-links ul li {
-text-align: center;
-}
-.navbar-links.active {
-display: flex;
-}
+  .toggle-button {
+    display: flex;
+  }
+
+  .navbar-links {
+    display: none;
+    width: 100%;
+  }
+
+  .navbar-links ul {
+    flex-direction: column;
+  }
+
+  .navbar-links ul li {
+    text-align: center;
+  }
+
+  .navbar-links.active {
+    display: flex;
+  }
 }
 ```
 
-JavaScript：
+### JavaScript
 
 ```javascript
 const toggleButton = document.querySelector('.toggle-button');
 const navbarLinks = document.querySelector('.navbar-links');
 
 toggleButton.addEventListener('click', () => {
-navbarLinks.classList.toggle('active');
+  navbarLinks.classList.toggle('active');
 });
 ```
 
-### 猜数字游戏
+## 猜数字游戏
 
-描述：
+### 描述
 
 在本练习中，学生将创建一个猜数字游戏，用户需要猜测某个范围内随机生成的数字。本练习介绍了如何处理表单输入、生成随机数以及提供反馈。
 
-涵盖主题：
+**涵盖主题：**
 
 - HTML 结构
 - CSS 样式
@@ -8969,66 +9295,74 @@ navbarLinks.classList.toggle('active');
 - 处理表单输入
 - DOM 操作（更新文本内容）
 
-HTML：
+### HTML
 
 ```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Random Number Guessing Game</title>
-<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Random Number Guessing Game</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<div class="game-container">
-<h1>Random Number Guessing Game</h1>
-<form id="guessForm">
-<input type="number" id="guessInput" placeholder="Enter your guess" required>
-<button type="submit">Submit Guess</button>
-</form>
-<p id="resultDisplay">Guess a number between 1 and 100.</p>
-</div>
-<script src="script.js"></script>
+  <div class="game-container">
+    <h1>Random Number Guessing Game</h1>
+    <form id="guessForm">
+      <input type="number" id="guessInput" placeholder="Enter your guess" required>
+      <button type="submit">Submit Guess</button>
+    </form>
+    <p id="resultDisplay">Guess a number between 1 and 100.</p>
+  </div>
+  <script src="script.js"></script>
 </body>
 </html>
 ```
 
-CSS：
+### CSS
 
 ```css
 body {
-font-family: Arial, sans-serif;
-display: flex;
-justify-content: center;
-align-items: center;
-height: 100vh;
-margin: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
 }
+
 .game-container {
-text-align: center;
-background-color: #f0f0f0;
-padding: 20px;
-border-radius: 10px;
-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+
 form {
-display: flex;
-flex-direction: column;
-gap: 10px;
-margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
 }
-input, button {
-padding: 10px;
-font-size: 16px;
+
+input,
+button {
+  padding: 10px;
+  font-size: 16px;
 }
+
 p {
-font-size: 18px;
-margin-top: 20px;
+  font-size: 18px;
+  margin-top: 20px;
 }
 ```
 
-JavaScript：
+### JavaScript
+
+
+
 
 ```javascript
 const randomNumber = Math.floor(Math.random() * 100) + 1;
@@ -9037,26 +9371,26 @@ const guessInput = document.getElementById('guessInput');
 const resultDisplay = document.getElementById('resultDisplay');
 
 guessForm.addEventListener('submit', function(event) {
-event.preventDefault();
-const userGuess = parseInt(guessInput.value);
-if (userGuess === randomNumber) {
-resultDisplay.textContent = 'Congratulations! You guessed the correct number.';
-} else if (userGuess < randomNumber) {
-resultDisplay.textContent = 'Too low! Try again.';
-} else if (userGuess > randomNumber) {
-resultDisplay.textContent = 'Too high! Try again.';
-}
-guessInput.value = '';
+  event.preventDefault();
+  const userGuess = parseInt(guessInput.value);
+  if (userGuess === randomNumber) {
+    resultDisplay.textContent = 'Congratulations! You guessed the correct number.';
+  } else if (userGuess < randomNumber) {
+    resultDisplay.textContent = 'Too low! Try again.';
+  } else if (userGuess > randomNumber) {
+    resultDisplay.textContent = 'Too high! Try again.';
+  }
+  guessInput.value = '';
 });
 ```
 
 ### 井字棋游戏
 
-描述：
+#### 描述
 
 在本练习中，学生将创建一个简单的井字棋游戏，两名玩家可以相互对战。本练习介绍了如何处理点击事件、动态更新 DOM 以及检查获胜条件。
 
-涵盖主题：
+#### 涵盖主题
 
 - HTML 结构
 - CSS 样式
@@ -9065,87 +9399,92 @@ guessInput.value = '';
 - DOM 操作（更新元素）
 - 检查获胜条件
 
-HTML：
+#### HTML
 
 ```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Tic-Tac-Toe Game</title>
-<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tic-Tac-Toe Game</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<div class="game-container">
-<h1>Tic-Tac-Toe</h1>
-<div id="gameBoard">
-<div class="cell" data-cell></div>
-<div class="cell" data-cell></div>
-<div class="cell" data-cell></div>
-<div class="cell" data-cell></div>
-<div class="cell" data-cell></div>
-<div class="cell" data-cell></div>
-<div class="cell" data-cell></div>
-<div class="cell" data-cell></div>
-<div class="cell" data-cell></div>
-</div>
-<p id="gameStatus">Player X's turn</p>
-<button id="restartButton">Restart Game</button>
-</div>
-<script src="script.js"></script>
+  <div class="game-container">
+    <h1>Tic-Tac-Toe</h1>
+    <div id="gameBoard">
+      <div class="cell" data-cell></div>
+      <div class="cell" data-cell></div>
+      <div class="cell" data-cell></div>
+      <div class="cell" data-cell></div>
+      <div class="cell" data-cell></div>
+      <div class="cell" data-cell></div>
+      <div class="cell" data-cell></div>
+      <div class="cell" data-cell></div>
+      <div class="cell" data-cell></div>
+    </div>
+    <p id="gameStatus">Player X's turn</p>
+    <button id="restartButton">Restart Game</button>
+  </div>
+  <script src="script.js"></script>
 </body>
 </html>
 ```
 
-CSS：
+#### CSS
 
 ```css
 body {
-font-family: Arial, sans-serif;
-display: flex;
-justify-content: center;
-align-items: center;
-height: 100vh;
-margin: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
 }
+
 .game-container {
-text-align: center;
-background-color: #f0f0f0;
-padding: 20px;
-border-radius: 10px;
-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+
 #gameBoard {
-display: grid;
-grid-template-columns: repeat(3, 100px);
-grid-template-rows: repeat(3, 100px);
-gap: 5px;
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(3, 100px);
+  gap: 5px;
 }
+
 .cell {
-width: 100px;
-height: 100px;
-background-color: white;
-display: flex;
-justify-content: center;
-align-items: center;
-font-size: 36px;
-cursor: pointer;
-border: 1px solid #ccc;
+  width: 100px;
+  height: 100px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 36px;
+  cursor: pointer;
+  border: 1px solid #ccc;
 }
+
 button {
-padding: 10px 20px;
-font-size: 16px;
-cursor: pointer;
-margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 20px;
 }
+
 p {
-font-size: 18px;
-margin-top: 20px;
+  font-size: 18px;
+  margin-top: 20px;
 }
 ```
 
-JavaScript：
+#### JavaScript
 
 ```javascript
 const cells = document.querySelectorAll('[data-cell]');
@@ -9154,14 +9493,14 @@ const restartButton = document.getElementById('restartButton');
 let isXTurn = true;
 
 const winningCombinations = [
-[0, 1, 2],
-[3, 4, 5],
-[6, 7, 8],
-[0, 3, 6],
-[1, 4, 7],
-[2, 5, 8],
-[0, 4, 8],
-[2, 4, 6]
+  [0, 1, 2],
+  [3, 4, 5],
+  [6, 7, 8],
+  [0, 3, 6],
+  [1, 4, 7],
+  [2, 5, 8],
+  [0, 4, 8],
+  [2, 4, 6]
 ];
 
 startGame();
@@ -9169,62 +9508,58 @@ startGame();
 restartButton.addEventListener('click', startGame);
 
 function startGame() {
-isXTurn = true;
-gameStatus.textContent = "Player X's turn";
-cells.forEach(cell => {
-cell.classList.remove('x');
-cell.classList.remove('o');
-cell.removeEventListener('click', handleClick);
-cell.addEventListener('click', handleClick, { once: true });
-});
+  isXTurn = true;
+  gameStatus.textContent = "Player X's turn";
+  cells.forEach(cell => {
+    cell.classList.remove('x');
+    cell.classList.remove('o');
+    cell.removeEventListener('click', handleClick);
+    cell.addEventListener('click', handleClick, { once: true });
+  });
 }
 
 function handleClick(e) {
-const cell = e.target;
-const currentClass = isXTurn ? 'x' : 'o';
-placeMark(cell, currentClass);
-if (checkWin(currentClass)) {
-endGame(false);
-} else if (isDraw()) {
-endGame(true);
-} else {
-swapTurns();
-updateStatus();
-}
+  const cell = e.target;
+  const currentClass = isXTurn ? 'x' : 'o';
+  placeMark(cell, currentClass);
+  if (checkWin(currentClass)) {
+    endGame(false);
+  } else if (isDraw()) {
+    endGame(true);
+  } else {
+    swapTurns();
+    updateStatus();
+  }
 }
 
 function placeMark(cell, currentClass) {
-cell.classList.add(currentClass);
+  cell.classList.add(currentClass);
 }
 
 function swapTurns() {
-isXTurn = !isXTurn;
+  isXTurn = !isXTurn;
 }
 
 function updateStatus() {
-gameStatus.textContent = isXTurn ? "Player X's turn" : "Player O's turn";
+  gameStatus.textContent = isXTurn ? "Player X's turn" : "Player O's turn";
 }
 
 function checkWin(currentClass) {
-return winningCombinations.some(combination => {
-return combination.every(index => {
-return cells[index].classList.contains(currentClass);
-});
-});
+  return winningCombinations.some(combination => {
+    return combination.every(index => {
+      return cells[index].classList.contains(currentClass);
+    });
+  });
 }
 
 function isDraw() {
-return [...cells].every(cell => {
-// 注意：原文此处未完整，但保留原样
-});
+  return [...cells].every(cell => {
+    // 注意：原文此处未完整，但保留原样
+  });
 }
 ```
 
-
-
-
-
-```
+```javascript
 return cell.classList.contains('x') || cell.classList.contains('o');
 
 });
@@ -9248,268 +9583,281 @@ gameStatus.textContent = isXTurn ? "Player X wins!" : "Player O wins!";
 
 ### 计算器
 
-描述：
+#### 描述
 
 在此练习中，学生将创建一个简单的计算器，执行基本的算术运算（加法、减法、乘法、除法）。本练习介绍如何处理按钮点击、执行计算以及动态更新 DOM。
 
-涵盖主题：
+#### 涵盖主题
 
-●       HTML 结构
+- HTML 结构
+- CSS 样式
+- JavaScript 事件监听器
+- 处理按钮点击
+- 执行计算
+- DOM 操作（更新文本内容）
 
-●       CSS 样式
+#### HTML
 
-●       JavaScript 事件监听器
-
-●       处理按钮点击
-
-●       执行计算
-
-●       DOM 操作（更新文本内容）
-
-HTML：
-
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Calculator</title>
-<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<div class="calculator-container">
-<h1>Calculator</h1>
-<div id="calculator">
-<div id="display">0</div>
-<button class="btn" data-value="7">7</button>
-<button class="btn" data-value="8">8</button>
-<button class="btn" data-value="9">9</button>
-<button class="btn" data-value="/">/</button>
-<button class="btn" data-value="4">4</button>
-<button class="btn" data-value="5">5</button>
-<button class="btn" data-value="6">6</button>
-<button class="btn" data-value="*">*</button>
-<button class="btn" data-value="1">1</button>
-<button class="btn" data-value="2">2</button>
-<button class="btn" data-value="3">3</button>
-<button class="btn" data-value="-">-</button>
-<button class="btn" data-value="0">0</button>
-<button class="btn" data-value=".">.</button>
-<button class="btn" id="clear">C</button>
-<button class="btn" data-value="+">+</button>
-<button class="btn" id="equals">=</button>
-</div>
-</div>
-<script src="script.js"></script>
+  <div class="calculator-container">
+    <h1>Calculator</h1>
+    <div id="calculator">
+      <div id="display">0</div>
+      <button class="btn" data-value="7">7</button>
+      <button class="btn" data-value="8">8</button>
+      <button class="btn" data-value="9">9</button>
+      <button class="btn" data-value="/">/</button>
+      <button class="btn" data-value="4">4</button>
+      <button class="btn" data-value="5">5</button>
+      <button class="btn" data-value="6">6</button>
+      <button class="btn" data-value="*">*</button>
+      <button class="btn" data-value="1">1</button>
+      <button class="btn" data-value="2">2</button>
+      <button class="btn" data-value="3">3</button>
+      <button class="btn" data-value="-">-</button>
+      <button class="btn" data-value="0">0</button>
+      <button class="btn" data-value=".">.</button>
+      <button class="btn" id="clear">C</button>
+      <button class="btn" data-value="+">+</button>
+      <button class="btn" id="equals">=</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
 </body>
 </html>
 ```
 
-CSS：
+#### CSS
 
-```
+```css
 body {
-font-family: Arial, sans-serif;
-display: flex;
-justify-content: center;
-align-items: center;
-height: 100vh;
-margin: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
 }
+
 .calculator-container {
-text-align: center;
-background-color: #f0f0f0;
-padding: 20px;
-border-radius: 10px;
-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+
 #calculator {
-display: grid;
-grid-template-columns: repeat(4, 50px);
-gap: 10px;
+  display: grid;
+  grid-template-columns: repeat(4, 50px);
+  gap: 10px;
 }
+
 #display {
-grid-column: span 4;
-padding: 20px;
-background-color: #fff;
-border: 1px solid #ccc;
-text-align: right;
-font-size: 24px;
-border-radius: 5px;
+  grid-column: span 4;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  text-align: right;
+  font-size: 24px;
+  border-radius: 5px;
 }
+
 .btn {
-padding: 20px;
-font-size: 18px;
-cursor: pointer;
-background-color: #fff;
-border: 1px solid #ccc;
-border-radius: 5px;
+  padding: 20px;
+  font-size: 18px;
+  cursor: pointer;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
 }
+
 .btn:hover {
-background-color: #e0e0e0;
+  background-color: #e0e0e0;
 }
 ```
 
-JavaScript：
+#### JavaScript
 
-```
+```javascript
 const display = document.getElementById('display');
 const buttons = Array.from(document.getElementsByClassName('btn'));
+
 buttons.forEach(button => {
-button.addEventListener('click', function() {
-const value = this.getAttribute('data-value');
-if (value === null) return;
-switch(value) {
-case 'C':
-display.textContent = '0';
-break;
-case '=':
-try {
-display.textContent = eval(display.textContent);
-} catch {
-display.textContent = 'Error';
-}
-break;
-default:
-if (display.textContent === '0' || display.textContent === 'Error') {
-display.textContent = value;
-} else {
-display.textContent += value;
-}
-}
+  button.addEventListener('click', function() {
+    const value = this.getAttribute('data-value');
+    if (value === null) return;
+    switch(value) {
+      case 'C':
+        display.textContent = '0';
+        break;
+      case '=':
+        try {
+          display.textContent = eval(display.textContent);
+        } catch {
+          display.textContent = 'Error';
+        }
+        break;
+      default:
+        if (display.textContent === '0' || display.textContent === 'Error') {
+          display.textContent = value;
+        } else {
+          display.textContent += value;
+        }
+    }
+  });
 });
-});
+
 document.getElementById('clear').addEventListener('click', () => {
-display.textContent = '0';
+  display.textContent = '0';
 });
+
 document.getElementById('equals').addEventListener('click', () => {
-try {
-display.textContent = eval(display.textContent);
-} catch {
-display.textContent = 'Error';
-}
+  try {
+    display.textContent = eval(display.textContent);
+  } catch {
+    display.textContent = 'Error';
+  }
 });
 ```
 
 ### 待办事项列表
 
-描述：
+#### 描述
 
 在此练习中，学生将创建一个简单的待办事项列表，允许用户添加和删除任务。本练习介绍如何处理表单输入、动态更新 DOM 以及管理项目列表。
 
-涵盖主题：
+#### 涵盖主题
 
-●       HTML 结构
+- HTML 结构
+- CSS 样式
+- JavaScript 事件监听器
+- 处理表单输入
+- DOM 操作（添加和删除元素）
+- 管理项目列表
 
-●       CSS 样式
+#### HTML
 
-●       JavaScript 事件监听器
-
-●       处理表单输入
-
-●       DOM 操作（添加和删除元素）
-
-●       管理项目列表
-
-HTML：
-
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>To-Do List</title>
-<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To-Do List</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<div class="todo-container">
-<h1>To-Do List</h1>
-<form id="todoForm">
-<input type="text" id="taskInput" placeholder="Enter a new task" required>
-<button type="submit">Add Task</button>
-</form>
-<ul id="taskList"></ul>
-</div>
-<script src="script.js"></script>
+  <div class="todo-container">
+    <h1>To-Do List</h1>
+    <form id="todoForm">
+      <input type="text" id="taskInput" placeholder="Enter a new task" required>
+      <button type="submit">Add Task</button>
+    </form>
+    <ul id="taskList"></ul>
+  </div>
+  <script src="script.js"></script>
 </body>
 </html>
 ```
 
-CSS：
+#### CSS
 
-```
+
+
+```css
 body {
-font-family: Arial, sans-serif;
-display: flex;
-justify-content: center;
-align-items: center;
-height: 100vh;
-margin: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
 }
+
 .todo-container {
-text-align: center;
-background-color: #f0f0f0;
-padding: 20px;
-border-radius: 10px;
-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-width: 300px;
+  text-align: center;
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
 }
+
 form {
-display: flex;
-flex-direction: column;
-gap: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
-input, button {
-padding: 10px;
-font-size: 16px;
+
+input,
+button {
+  padding: 10px;
+  font-size: 16px;
 }
+
 ul {
-list-style-type: none;
-padding: 0;
+  list-style-type: none;
+  padding: 0;
 }
+
 li {
-padding: 10px;
-margin: 5px 0;
-background-color: #fff;
-border: 1px solid #ccc;
-border-radius: 5px;
-display: flex;
-justify-content: space-between;
+  padding: 10px;
+  margin: 5px 0;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
 }
+
 button.remove {
-background: none;
-border: none;
-color: red;
-cursor: pointer;
-font-size: 16px;
+  background: none;
+  border: none;
+  color: red;
+  cursor: pointer;
+  font-size: 16px;
 }
 ```
 
-JavaScript：
+## JavaScript
 
-```
-document.getElementById('todoForm').addEventListener('submit', function(event) {
-event.preventDefault();
-const taskInput = document.getElementById('taskInput');
-const taskText = taskInput.value;
-if (taskText === '') return;
-const li = document.createElement('li');
-li.textContent = taskText;
-const removeButton = document.createElement('button');
-removeButton.textContent = 'Remove';
-removeButton.classList.add('remove');
-removeButton.addEventListener('click', function() {
-li.remove();
-});
-li.appendChild(removeButton);
-document.getElementById('taskList').appendChild(li);
-taskInput.value = '';
+```javascript
+document.getElementById('todoForm').addEventListener('submit', function (event) {
+  event.preventDefault();
+
+  const taskInput = document.getElementById('taskInput');
+  const taskText = taskInput.value;
+
+  if (taskText === '') return;
+
+  const li = document.createElement('li');
+  li.textContent = taskText;
+
+  const removeButton = document.createElement('button');
+  removeButton.textContent = 'Remove';
+  removeButton.classList.add('remove');
+
+  removeButton.addEventListener('click', function () {
+    li.remove();
+  });
+
+  li.appendChild(removeButton);
+  document.getElementById('taskList').appendChild(li);
+  taskInput.value = '';
 });
 ```
 
-### 多项选择题
+## 多项选择题
 
 在“随机数字猜谜游戏”练习中，当用户猜对数字时会发生什么？
 
@@ -9521,7 +9869,9 @@ c) 页面重新加载
 
 d) 生成一个新的随机数字
 
-答案：b) 显示祝贺消息 解释：当用户猜对数字时，会显示一条祝贺消息。
+答案：b) 显示祝贺消息
+
+解释：当用户猜对数字时，会显示一条祝贺消息。
 
 在“井字棋游戏”练习中，使用哪个方法来检查获胜条件？
 
@@ -9533,7 +9883,9 @@ c) `placeMark`
 
 d) `swapTurns`
 
-答案：a) `checkWin` 解释：`checkWin` 方法通过将当前棋盘状态与获胜组合进行比较，来检查是否有玩家获胜。
+答案：a) `checkWin`
+
+解释：`checkWin` 方法通过将当前棋盘状态与获胜组合进行比较，来检查是否有玩家获胜。
 
 在“随机数字猜谜游戏”练习中，使用哪个事件来处理表单提交？
 
@@ -9545,7 +9897,9 @@ c) `change`
 
 d) `input`
 
-答案：b) `submit` 解释：`submit` 事件用于处理表单提交并处理用户的猜测。
+答案：b) `submit`
+
+解释：`submit` 事件用于处理表单提交并处理用户的猜测。
 
 在“井字棋游戏”练习中，当游戏以平局结束时会发生什么？
 
@@ -9557,7 +9911,9 @@ c) 游戏高亮显示获胜组合
 
 d) 游戏停止响应
 
-答案：b) 游戏显示平局消息 解释：当游戏以平局结束时，会显示一条表示平局的消息。
+答案：b) 游戏显示平局消息
+
+解释：当游戏以平局结束时，会显示一条表示平局的消息。
 
 在“计算器”练习中，使用哪个事件来处理按钮点击？
 
@@ -9569,7 +9925,9 @@ c) `change`
 
 d) `input`
 
-答案：a) `click` 解释：`click` 事件用于处理按钮点击并执行相应操作。
+答案：a) `click`
+
+解释：`click` 事件用于处理按钮点击并执行相应操作。
 
 在“待办事项列表”练习中，当点击任务的“删除”按钮时会发生什么？
 
@@ -9581,7 +9939,9 @@ c) 任务被编辑
 
 d) 任务被标记为已完成
 
-答案：b) 任务从列表中移除 解释：点击“删除”按钮会将任务从列表中移除。
+答案：b) 任务从列表中移除
+
+解释：点击“删除”按钮会将任务从列表中移除。
 
 在“待办事项列表”练习中，`taskInput` 元素的用途是什么？
 
@@ -9589,332 +9949,397 @@ a) 输入任务描述
 
 b) 输入任务截止日期
 
+c) 显示任务总数
 
+d) 移除一个任务
 
+答案：a) 输入任务描述
 
-c) 显示任务总数  
-d) 移除一个任务  
+解释：`taskInput` 元素用于输入要添加到列表中的新任务的描述。
 
-答案：a) 输入任务描述  
-解释：`taskInput` 元素用于输入要添加到列表中的新任务的描述。  
+在倒计时器练习中，哪个 HTML 标签用于创建表单？
 
-在倒计时器练习中，哪个 HTML 标签用于创建表单？  
-a) `<div>`  
-b) `<form>`  
-c) `<input>`  
-d) `<button>`  
+a) `<div>`
 
-答案：b) `<form>`  
-解释：`<form>` 标签用于创建供用户输入的 HTML 表单。  
+b) `<form>`
 
-在倒计时器练习中，使用哪个事件监听器来阻止表单的默认行为？  
-a) `click`  
-b) `change`  
-c) `submit`  
-d) `input`  
+c) `<input>`
 
-答案：c) `submit`  
-解释：使用 `submit` 事件监听器来阻止表单的默认行为，并通过 JavaScript 处理表单提交。  
+d) `<button>`
 
-在倒计时器练习中，使用什么方法将用户输入转换为整数？  
-a) `parseFloat()`  
-b) `toString()`  
-c) `parseInt()`  
-d) `Number()`  
+答案：b) `<form>`
 
-答案：c) `parseInt()`  
-解释：`parseInt()` 方法用于将用户输入转换为整数。  
+解释：`<form>` 标签用于创建供用户输入的 HTML 表单。
 
-在倒计时器练习中，哪个函数被重复调用来更新计时器显示？  
-a) `setTimeout()`  
-b) `clearInterval()`  
-c) `setInterval()`  
-d) `updateDisplay()`  
+在倒计时器练习中，使用哪个事件监听器来阻止表单的默认行为？
 
-答案：c) `setInterval()`  
-解释：`setInterval()` 函数被重复调用，每秒更新一次计时器显示。  
+a) `click`
 
-在交互式测验应用练习中，使用什么标签来包含问题和答案？  
-a) `<form>`  
-b) `<div>`  
-c) `<span>`  
-d) `<section>`  
+b) `change`
 
-答案：b) `<div>`  
-解释：`<div>` 标签用于包含问题和答案。  
+c) `submit`
 
-在交互式测验应用练习中，如何指示正确答案？  
-a) 通过更改背景颜色  
-b) 通过添加勾选图标  
-c) 通过将文本颜色更改为绿色  
-d) 通过在答案下方显示一条消息  
+d) `input`
 
-答案：c) 通过将文本颜色更改为绿色  
-解释：正确答案通过将文本颜色更改为绿色来指示。  
+答案：c) `submit`
 
-使用什么方法将购物清单项目存储在本地存储中？  
-a) `localStorage.getItem()`  
-b) `localStorage.setItem()`  
-c) `localStorage.save()`  
-d) `localStorage.store()`  
+解释：使用 `submit` 事件监听器来阻止表单的默认行为，并通过 JavaScript 处理表单提交。
 
-答案：b) `localStorage.setItem()`  
-解释：`localStorage.setItem()` 方法用于将购物清单项目存储在本地存储中。  
+在倒计时器练习中，使用什么方法将用户输入转换为整数？
 
-页面加载时，使用哪个事件监听器从本地存储加载项目？  
-a) `load`  
-b) `DOMContentLoaded`  
-c) `ready`  
-d) `initialize`  
+a) `parseFloat()`
 
-答案：b) `DOMContentLoaded`  
-解释：`DOMContentLoaded` 事件监听器用于在页面加载时从本地存储加载项目。  
+b) `toString()`
 
-在响应式导航栏练习中，哪个 CSS 属性用于在较小屏幕上隐藏导航链接？  
-a) `visibility`  
-b) `display`  
-c) `opacity`  
-d) `position`  
+c) `parseInt()`
 
-答案：b) `display`  
-解释：通过将 `display` 属性设置为 `none`，可以在较小屏幕上隐藏导航链接。  
+d) `Number()`
 
-在响应式导航栏练习中，切换哪个类来显示或隐藏导航栏链接？  
-a) `show`  
-b) `toggle`  
-c) `active`  
-d) `visible`  
+答案：c) `parseInt()`
 
-答案：c) `active`  
-解释：当点击汉堡菜单时，切换 `active` 类来显示或隐藏导航栏链接。  
+解释：`parseInt()` 方法用于将用户输入转换为整数。
 
-### 闪卡应用  
+在倒计时器练习中，哪个函数被重复调用来更新计时器显示？
 
-描述：  
+a) `setTimeout()`
 
-在此练习中，学生将创建一个闪卡应用，显示问题并在点击时揭示答案。本练习介绍如何处理点击事件、管理状态以及动态更新 DOM。  
+b) `clearInterval()`
 
-涵盖主题：  
+c) `setInterval()`
 
-● HTML 结构  
-● CSS 样式  
-● JavaScript 事件监听器  
-● 处理点击事件  
-● DOM 操作（更新文本内容）  
-● 状态管理  
+d) `updateDisplay()`
 
-HTML：  
+答案：c) `setInterval()`
+
+解释：`setInterval()` 函数被重复调用，每秒更新一次计时器显示。
+
+在交互式测验应用练习中，使用什么标签来包含问题和答案？
+
+a) `<form>`
+
+b) `<div>`
+
+c) `<span>`
+
+d) `<section>`
+
+答案：b) `<div>`
+
+解释：`<div>` 标签用于包含问题和答案。
+
+在交互式测验应用练习中，如何指示正确答案？
+
+a) 通过更改背景颜色
+
+b) 通过添加勾选图标
+
+c) 通过将文本颜色更改为绿色
+
+d) 通过在答案下方显示一条消息
+
+答案：c) 通过将文本颜色更改为绿色
+
+解释：正确答案通过将文本颜色更改为绿色来指示。
+
+使用什么方法将购物清单项目存储在本地存储中？
+
+a) `localStorage.getItem()`
+
+b) `localStorage.setItem()`
+
+c) `localStorage.save()`
+
+d) `localStorage.store()`
+
+答案：b) `localStorage.setItem()`
+
+解释：`localStorage.setItem()` 方法用于将购物清单项目存储在本地存储中。
+
+页面加载时，使用哪个事件监听器从本地存储加载项目？
+
+a) `load`
+
+b) `DOMContentLoaded`
+
+c) `ready`
+
+d) `initialize`
+
+答案：b) `DOMContentLoaded`
+
+解释：`DOMContentLoaded` 事件监听器用于在页面加载时从本地存储加载项目。
+
+在响应式导航栏练习中，哪个 CSS 属性用于在较小屏幕上隐藏导航链接？
+
+a) `visibility`
+
+b) `display`
+
+c) `opacity`
+
+d) `position`
+
+答案：b) `display`
+
+解释：通过将 `display` 属性设置为 `none`，可以在较小屏幕上隐藏导航链接。
+
+在响应式导航栏练习中，切换哪个类来显示或隐藏导航栏链接？
+
+a) `show`
+
+b) `toggle`
+
+c) `active`
+
+d) `visible`
+
+答案：c) `active`
+
+解释：当点击汉堡菜单时，切换 `active` 类来显示或隐藏导航栏链接。
+
+## 闪卡应用
+
+### 描述
+
+在此练习中，学生将创建一个闪卡应用，显示问题并在点击时揭示答案。本练习介绍如何处理点击事件、管理状态以及动态更新 DOM。
+
+### 涵盖主题
+
+- HTML 结构
+- CSS 样式
+- JavaScript 事件监听器
+- 处理点击事件
+- DOM 操作（更新文本内容）
+- 状态管理
+
+### HTML
 
 ```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Flashcard App</title>
-<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flashcard App</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<div class="flashcard-container">
-<h1>Flashcard App</h1>
-<div id="flashcard" class="flashcard">
-<p id="flashcardContent">Click to reveal the answer</p>
-</div>
-<button id="nextButton">Next</button>
-</div>
-<script src="script.js"></script>
+  <div class="flashcard-container">
+    <h1>Flashcard App</h1>
+    <div id="flashcard" class="flashcard">
+      <p id="flashcardContent">Click to reveal the answer</p>
+    </div>
+    <button id="nextButton">Next</button>
+  </div>
+  <script src="script.js"></script>
 </body>
 </html>
 ```
 
-CSS：  
+### CSS
 
 ```css
 body {
-font-family: Arial, sans-serif;
-display: flex;
-justify-content: center;
-align-items: center;
-height: 100vh;
-margin: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
 }
+
 .flashcard-container {
-text-align: center;
-background-color: #f0f0f0;
-padding: 20px;
-border-radius: 10px;
-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+
 .flashcard {
-width: 300px;
-height: 200px;
-background-color: white;
-border: 1px solid #ccc;
-border-radius: 10px;
-display: flex;
-justify-content: center;
-align-items: center;
-font-size: 24px;
-cursor: pointer;
-margin-bottom: 20px;
+  width: 300px;
+  height: 200px;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  cursor: pointer;
+  margin-bottom: 20px;
 }
+
 button {
-padding: 10px 20px;
-font-size: 16px;
-cursor: pointer;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
 }
 ```
 
-JavaScript：  
+### JavaScript
 
 ```javascript
 const flashcards = [
-{ question: 'What is the capital of France?', answer: 'Paris' },
-{ question: 'What is 2 + 2?', answer: '4' },
-{ question: 'What is the capital of Spain?', answer: 'Madrid' }
+  { question: 'What is the capital of France?', answer: 'Paris' },
+  { question: 'What is 2 + 2?', answer: '4' },
+  { question: 'What is the capital of Spain?', answer: 'Madrid' }
 ];
+
 let currentFlashcardIndex = 0;
+
 const flashcardContent = document.getElementById('flashcardContent');
 const flashcard = document.getElementById('flashcard');
+
 function showFlashcard(index) {
-flashcardContent.textContent = flashcards[index].question;
-flashcard.dataset.flipped = 'false';
+  flashcardContent.textContent = flashcards[index].question;
+  flashcard.dataset.flipped = 'false';
 }
+
 flashcard.addEventListener('click', () => {
-if (flashcard.dataset.flipped === 'false') {
-flashcardContent.textContent = flashcards[currentFlashcardIndex].answer;
-flashcard.dataset.flipped = 'true';
-} else {
-flashcardContent.textContent = flashcards[currentFlashcardIndex].question;
-flashcard.dataset.flipped = 'false';
-}
+  if (flashcard.dataset.flipped === 'false') {
+    flashcardContent.textContent = flashcards[currentFlashcardIndex].answer;
+    flashcard.dataset.flipped = 'true';
+  } else {
+    flashcardContent.textContent = flashcards[currentFlashcardIndex].question;
+    flashcard.dataset.flipped = 'false';
+  }
 });
+
 document.getElementById('nextButton').addEventListener('click', () => {
-currentFlashcardIndex = (currentFlashcardIndex + 1) % flashcards.length;
-showFlashcard(currentFlashcardIndex);
+  currentFlashcardIndex = (currentFlashcardIndex + 1) % flashcards.length;
+  showFlashcard(currentFlashcardIndex);
 });
+
 showFlashcard(currentFlashcardIndex);
 ```
 
-### 带反馈的测验应用  
+## 带反馈的测验应用
 
-描述：  
+### 描述
 
-在此练习中，学生将创建一个带反馈的测验应用，显示多项选择题并根据用户的答案提供反馈。本练习介绍如何处理用户输入、动态更新 DOM 以及提供反馈。  
+在此练习中，学生将创建一个带反馈的测验应用，显示多项选择题并根据用户的答案提供反馈。本练习介绍如何处理用户输入、动态更新 DOM 以及提供反馈。
 
-涵盖主题：  
+### 涵盖主题
 
-● HTML 结构  
-● CSS 样式  
-● JavaScript 事件监听器  
-● DOM 操作（更新元素）  
-● 处理用户输入  
+- HTML 结构
+- CSS 样式
+- JavaScript 事件监听器
+- DOM 操作（更新元素）
+- 处理用户输入
 
-HTML：  
+### HTML
 
 ```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Quiz App with Feedback</title>
-<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz App with Feedback</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<div class="quiz-container">
-<h1>Quiz App</h1>
-<div id="quiz"></div>
-<button id="submit">Submit</button>
-<div id="results"></div>
-</div>
-<script src="script.js"></script>
+  <div class="quiz-container">
+    <h1>Quiz App</h1>
+    <div id="quiz"></div>
+    <button id="submit">Submit</button>
+    <div id="results"></div>
+  </div>
+  <script src="script.js"></script>
 </body>
 </html>
 ```
 
-CSS：  
+### CSS
 
 ```css
 body {
-font-family: Arial, sans-serif;
-display: flex;
-justify-content: center;
-align-items: center;
-height: 100vh;
-margin: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
 }
+
 .quiz-container {
-text-align: center;
-background-color: #f0f0f0;
-padding: 20px;
-border-radius: 10px;
-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-width: 300px;
+  text-align: center;
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
 }
+
 button {
-padding: 10px 20px;
-font-size: 16px;
-cursor: pointer;
-margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 20px;
 }
 ```
 
-JavaScript：  
+### JavaScript
+
+
 
 ```javascript
 const quizContainer = document.getElementById('quiz');
 const resultsContainer = document.getElementById('results');
 const submitButton = document.getElementById('submit');
 const myQuestions = [
-{
-question: "What is the capital of France?",
-answers: {
-a: "Berlin",
-b: "Madrid",
-c: "Paris"
-},
-correctAnswer: "c"
-},
-{
-question: "Who is the CEO of Tesla?",
-answers: {
-a: "Jeff Bezos",
-b: "Elon Musk",
-c: "Bill Gates"
-},
-correctAnswer: "b"
-},
-{
-question: "What is the smallest planet in our solar system?",
-answers: {
-a: "Mars",
-b: "Venus",
-c: "Mercury"
-},
-correctAnswer: "c"
-}
+  {
+    question: "What is the capital of France?",
+    answers: {
+      a: "Berlin",
+      b: "Madrid",
+      c: "Paris"
+    },
+    correctAnswer: "c"
+  },
+  {
+    question: "Who is the CEO of Tesla?",
+    answers: {
+      a: "Jeff Bezos",
+      b: "Elon Musk",
+      c: "Bill Gates"
+    },
+    correctAnswer: "b"
+  },
+  {
+    question: "What is the smallest planet in our solar system?",
+    answers: {
+      a: "Mars",
+      b: "Venus",
+      c: "Mercury"
+    },
+    correctAnswer: "c"
+  }
 ];
+
 function buildQuiz() {
-const output = [];
-myQuestions.forEach((currentQuestion, questionNumber) => {
-const answers = [];
-for (letter in currentQuestion.answers) {
-answers.push(
-`<label>
-<input type="radio" name="question${questionNumber}" value="${letter}">
-${letter} :
-${currentQuestion.answers[letter]}
-</label>`
-);
+  const output = [];
+
+  myQuestions.forEach((currentQuestion, questionNumber) => {
+    const answers = [];
+
+    for (letter in currentQuestion.answers) {
+      answers.push(
+        `<label>
+          <input type="radio" name="question${questionNumber}" value="${letter}">
+          ${letter} :
+          ${currentQuestion.answers[letter]}
+        </label>`
+      );
+    }
+
+    output.push(
+      `<div class="question"> ${currentQuestion.question} </div>`
+    );
+  });
 }
-output.push(
-`<div class="question"> ${currentQuestion.question} </div>
 ```
-
-
-
-
 
 ### 带优先级的待办事项列表
 
@@ -9924,128 +10349,142 @@ output.push(
 
 **涵盖主题：**
 
-● HTML 结构
+- HTML 结构
+- CSS 样式
+- JavaScript 事件监听器
+- DOM 操作（添加、更新和删除元素）
+- 处理表单输入
 
-● CSS 样式
-
-● JavaScript 事件监听器
-
-● DOM 操作（添加、更新和删除元素）
-
-● 处理表单输入
-
-**HTML：**
+#### HTML
 
 ```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>To-Do List with Priorities</title>
-<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To-Do List with Priorities</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<div class="todo-container">
-<h1>To-Do List</h1>
-<form id="todoForm">
-<input type="text" id="taskInput" placeholder="Enter a new task" required>
-<select id="prioritySelect" required>
-<option value="high">High</option>
-<option value="medium">Medium</option>
-<option value="low">Low</option>
-</select>
-<button type="submit">Add Task</button>
-</form>
-<ul id="taskList"></ul>
-</div>
-<script src="script.js"></script>
+  <div class="todo-container">
+    <h1>To-Do List</h1>
+    <form id="todoForm">
+      <input type="text" id="taskInput" placeholder="Enter a new task" required>
+      <select id="prioritySelect" required>
+        <option value="high">High</option>
+        <option value="medium">Medium</option>
+        <option value="low">Low</option>
+      </select>
+      <button type="submit">Add Task</button>
+    </form>
+    <ul id="taskList"></ul>
+  </div>
+  <script src="script.js"></script>
 </body>
 </html>
 ```
 
-**CSS：**
+#### CSS
 
 ```css
 body {
-font-family: Arial, sans-serif;
-display: flex;
-justify-content: center;
-align-items: center;
-height: 100vh;
-margin: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
 }
+
 .todo-container {
-text-align: center;
-background-color: #f0f0f0;
-padding: 20px;
-border-radius: 10px;
-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-width: 300px;
+  text-align: center;
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
 }
+
 form {
-display: flex;
-flex-direction: column;
-gap: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
-input, select, button {
-padding: 10px;
-font-size: 16px;
+
+input,
+select,
+button {
+  padding: 10px;
+  font-size: 16px;
 }
+
 ul {
-list-style-type: none;
-padding: 0;
+  list-style-type: none;
+  padding: 0;
 }
+
 li {
-padding: 10px;
-margin: 5px 0;
-background-color: #fff;
-border: 1px solid #ccc;
-border-radius: 5px;
-display: flex;
-justify-content: space-between;
+  padding: 10px;
+  margin: 5px 0;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
 }
+
 li.high {
-border-left: 5px solid red;
+  border-left: 5px solid red;
 }
+
 li.medium {
-border-left: 5px solid orange;
+  border-left: 5px solid orange;
 }
+
 li.low {
-border-left: 5px solid green;
+  border-left: 5px solid green;
 }
+
 button.remove {
-background: none;
-border: none;
-color: red;
-cursor: pointer;
-font-size: 16px;
+  background: none;
+  border: none;
+  color: red;
+  cursor: pointer;
+  font-size: 16px;
 }
 ```
 
-**JavaScript：**
+#### JavaScript
 
 ```javascript
 document.getElementById('todoForm').addEventListener('submit', function(event) {
-event.preventDefault();
-const taskInput = document.getElementById('taskInput');
-const prioritySelect = document.getElementById('prioritySelect');
-const taskText = taskInput.value;
-const priority = prioritySelect.value;
-if (taskText === '') return;
-const li = document.createElement('li');
-li.textContent = taskText;
-li.classList.add(priority);
-const removeButton = document.createElement('button');
-removeButton.textContent = 'Remove';
-removeButton.classList.add('remove');
-removeButton.addEventListener('click', function() {
-li.remove();
-});
-li.appendChild(removeButton);
-document.getElementById('taskList').appendChild(li);
-taskInput.value = '';
-prioritySelect.value = 'medium';
+  event.preventDefault();
+
+  const taskInput = document.getElementById('taskInput');
+  const prioritySelect = document.getElementById('prioritySelect');
+  const taskText = taskInput.value;
+  const priority = prioritySelect.value;
+
+  if (taskText === '') return;
+
+  const li = document.createElement('li');
+  li.textContent = taskText;
+  li.classList.add(priority);
+
+  const removeButton = document.createElement('button');
+  removeButton.textContent = 'Remove';
+  removeButton.classList.add('remove');
+
+  removeButton.addEventListener('click', function() {
+    li.remove();
+  });
+
+  li.appendChild(removeButton);
+  document.getElementById('taskList').appendChild(li);
+
+  taskInput.value = '';
+  prioritySelect.value = 'medium';
 });
 ```
 
@@ -10057,123 +10496,134 @@ prioritySelect.value = 'medium';
 
 **涵盖主题：**
 
-● HTML 结构
+- HTML 结构
+- CSS 样式
+- JavaScript 事件监听器
+- 处理表单输入
+- 使用定时器
+- DOM 操作（更新文本内容）
 
-● CSS 样式
-
-● JavaScript 事件监听器
-
-● 处理表单输入
-
-● 使用定时器
-
-● DOM 操作（更新文本内容）
-
-**HTML：**
+#### HTML
 
 ```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Countdown Timer with Pause/Resume</title>
-<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Countdown Timer with Pause/Resume</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<div class="timer-container">
-<h1>Countdown Timer</h1>
-<form id="timerForm">
-<input type="number" id="secondsInput" placeholder="Enter seconds" required>
-<button type="submit">Start Timer</button>
-</form>
-<p id="timerDisplay">0:00</p>
-<button id="pauseButton" disabled>Pause</button>
-<button id="resumeButton" disabled>Resume</button>
-</div>
-<script src="script.js"></script>
+  <div class="timer-container">
+    <h1>Countdown Timer</h1>
+    <form id="timerForm">
+      <input type="number" id="secondsInput" placeholder="Enter seconds" required>
+      <button type="submit">Start Timer</button>
+    </form>
+    <p id="timerDisplay">0:00</p>
+    <button id="pauseButton" disabled>Pause</button>
+    <button id="resumeButton" disabled>Resume</button>
+  </div>
+  <script src="script.js"></script>
 </body>
 </html>
 ```
 
-**CSS：**
+#### CSS
 
 ```css
 body {
-font-family: Arial, sans-serif;
-display: flex;
-justify-content: center;
-align-items: center;
-height: 100vh;
-margin: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
 }
+
 .timer-container {
-text-align: center;
-background-color: #f0f0f0;
-padding: 20px;
-border-radius: 10px;
-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+
 form {
-display: flex;
-flex-direction: column;
-gap: 10px;
-margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
 }
-input, button {
-padding: 10px;
-font-size: 16px;
+
+input,
+button {
+  padding: 10px;
+  font-size: 16px;
 }
+
 p {
-font-size: 36px;
-margin-top: 20px;
+  font-size: 36px;
+  margin-top: 20px;
 }
 ```
 
-**JavaScript：**
+#### JavaScript
 
 ```javascript
 let timer;
 let timeLeft;
 let isPaused = false;
+
 document.getElementById('timerForm').addEventListener('submit', function(event) {
-event.preventDefault();
-clearInterval(timer);
-timeLeft = parseInt(document.getElementById('secondsInput').value);
-isPaused = false;
-startTimer();
-document.getElementById('pauseButton').disabled = false;
-document.getElementById('resumeButton').disabled = true;
+  event.preventDefault();
+
+  clearInterval(timer);
+  timeLeft = parseInt(document.getElementById('secondsInput').value);
+  isPaused = false;
+  startTimer();
+
+  document.getElementById('pauseButton').disabled = false;
+  document.getElementById('resumeButton').disabled = true;
 });
+
 document.getElementById('pauseButton').addEventListener('click', function() {
-clearInterval(timer);
-isPaused = true;
-document.getElementById('pauseButton').disabled = true;
-document.getElementById('resumeButton').disabled = false;
+  clearInterval(timer);
+  isPaused = true;
+
+  document.getElementById('pauseButton').disabled = true;
+  document.getElementById('resumeButton').disabled = false;
 });
+
 document.getElementById('resumeButton').addEventListener('click', function() {
-if (isPaused) {
-startTimer();
-document.getElementById('pauseButton').disabled = false;
-document.getElementById('resumeButton').disabled = true;
-}
+  if (isPaused) {
+    startTimer();
+
+    document.getElementById('pauseButton').disabled = false;
+    document.getElementById('resumeButton').disabled = true;
+  }
 });
+
 function startTimer() {
-timer = setInterval(function() {
-if (timeLeft > 0) {
-timeLeft--;
-updateDisplay();
-} else {
-clearInterval(timer);
-alert('Time is up!');
+  timer = setInterval(function() {
+    if (timeLeft > 0) {
+      timeLeft--;
+      updateDisplay();
+    } else {
+      clearInterval(timer);
+      alert('Time is up!');
+    }
+  }, 1000);
 }
-}, 1000);
-}
+
 function updateDisplay() {
-const minutes = Math.floor(timeLeft / 60).toString().padStart(1, '0');
-const seconds = (timeLeft % 60).toString().padStart(2, '0');
-document.getElementById('timerDisplay').textContent = `${minutes}:${seconds}`;
+  const minutes = Math.floor(timeLeft / 60).toString().padStart(1, '0');
+  const seconds = (timeLeft % 60).toString().padStart(2, '0');
+
+  document.getElementById('timerDisplay').textContent = `${minutes}:${seconds}`;
 }
+
 updateDisplay();
 ```
 
@@ -10185,67 +10635,67 @@ updateDisplay();
 
 **涵盖主题：**
 
-● HTML 结构
+- HTML 结构
+- CSS 样式
+- JavaScript 事件监听器
+- DOM 操作（更新元素）
+- 处理用户输入
 
-● CSS 样式
-
-● JavaScript 事件监听器
-
-● DOM 操作（更新元素）
-
-● 处理用户输入
-
-**HTML：**
+#### HTML
 
 ```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Quiz App</title>
-<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz App</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<div class="quiz-container">
-<h1>Quiz App</h1>
-<div id="quiz"></div>
-<button id="submit">Submit</button>
-<div id="results"></div>
-</div>
-<script src="script.js"></script>
+  <div class="quiz-container">
+    <h1>Quiz App</h1>
+    <div id="quiz"></div>
+    <button id="submit">Submit</button>
+    <div id="results"></div>
+  </div>
+  <script src="script.js"></script>
 </body>
 </html>
 ```
 
-**CSS：**
+#### CSS
 
 ```css
 body {
-font-family: Arial, sans-serif;
-display: flex;
-justify-content: center;
-align-items: center;
-height: 100vh;
-margin: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
 }
+
 .quiz-container {
-text-align: center;
-background-color: #f0f0f0;
-padding: 20px;
-border-radius: 10px;
-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-width: 300px;
+  text-align: center;
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
 }
+
 button {
-padding: 10px 20px;
-font-size: 16px;
-cursor: pointer;
-margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 20px;
 }
 ```
 
-**JavaScript：**
+#### JavaScript
+
+
 
 ```javascript
 const quizContainer = document.getElementById('quiz');
@@ -10276,141 +10726,82 @@ buildQuiz();
 submitButton.addEventListener('click', showResults);
 ```
 
-
-
-
-
 ```javascript
 const submitButton = document.getElementById('submit');
 
 const myQuestions = [
-
-{
-
-question: "What is the capital of France?",
-
-answers: {
-
-a: "Berlin",
-
-b: "Madrid",
-
-c: "Paris"
-
-},
-
-correctAnswer: "c"
-
-},
-
-{
-
-question: "Who is the CEO of Tesla?",
-
-answers: {
-
-a: "Jeff Bezos",
-
-b: "Elon Musk",
-
-c: "Bill Gates"
-
-},
-
-correctAnswer: "b"
-
-},
-
-{
-
-question: "What is the smallest planet in our solar system?",
-
-answers: {
-
-a: "Mars",
-
-b: "Venus",
-
-c: "Mercury"
-
-},
-
-correctAnswer: "c"
-
-}
-
+  {
+    question: "What is the capital of France?",
+    answers: {
+      a: "Berlin",
+      b: "Madrid",
+      c: "Paris"
+    },
+    correctAnswer: "c"
+  },
+  {
+    question: "Who is the CEO of Tesla?",
+    answers: {
+      a: "Jeff Bezos",
+      b: "Elon Musk",
+      c: "Bill Gates"
+    },
+    correctAnswer: "b"
+  },
+  {
+    question: "What is the smallest planet in our solar system?",
+    answers: {
+      a: "Mars",
+      b: "Venus",
+      c: "Mercury"
+    },
+    correctAnswer: "c"
+  }
 ];
 
 function buildQuiz() {
+  const output = [];
 
-const output = [];
+  myQuestions.forEach((currentQuestion, questionNumber) => {
+    const answers = [];
 
-myQuestions.forEach((currentQuestion, questionNumber) => {
-
-const answers = [];
-
-for (letter in currentQuestion.answers) {
-
-answers.push(
-
-`<label>
-
+    for (letter in currentQuestion.answers) {
+      answers.push(
+        `<label>
 <input type="radio" name="question${questionNumber}" value="${letter}">
-
 ${letter} :
-
 ${currentQuestion.answers[letter]}
-
 </label>`
+      );
+    }
 
-);
-
-}
-
-output.push(
-
-`<div class="question"> ${currentQuestion.question} </div>
-
+    output.push(
+      `<div class="question"> ${currentQuestion.question} </div>
 <div class="answers"> ${answers.join('')} </div>`
+    );
+  });
 
-);
-
-});
-
-quizContainer.innerHTML = output.join('');
-
+  quizContainer.innerHTML = output.join('');
 }
 
 function showResults() {
+  const answerContainers = quizContainer.querySelectorAll('.answers');
+  let numCorrect = 0;
 
-const answerContainers = quizContainer.querySelectorAll('.answers');
+  myQuestions.forEach((currentQuestion, questionNumber) => {
+    const answerContainer = answerContainers[questionNumber];
+    const selector = `input[name=question${questionNumber}]:checked`;
+    const userAnswer = (answerContainer.querySelector(selector) || {}).value;
 
-let numCorrect = 0;
+    if (userAnswer === currentQuestion.correctAnswer) {
+      numCorrect++;
+      answerContainers[questionNumber].style.color = 'green';
+    } else {
+      answerContainers[questionNumber].style.color = 'red';
+    }
+  });
 
-myQuestions.forEach((currentQuestion, questionNumber) => {
-
-const answerContainer = answerContainers[questionNumber];
-
-const selector = `input[name=question${questionNumber}]:checked`;
-
-const userAnswer = (answerContainer.querySelector(selector) || {}).value;
-
-if (userAnswer === currentQuestion.correctAnswer) {
-
-numCorrect++;
-
-answerContainers[questionNumber].style.color = 'green';
-
-} else {
-
-answerContainers[questionNumber].style.color = 'red';
-
-}
-
-});
-
-resultsContainer.innerHTML = `${numCorrect} out of ${myQuestions.length}`;
-
+  resultsContainer.innerHTML = `${numCorrect} out of ${myQuestions.length}`;
 }
 
 buildQuiz();
@@ -10418,13 +10809,13 @@ buildQuiz();
 submitButton.addEventListener('click', showResults);
 ```
 
-### 带截止日期的待办事项列表
+## 带截止日期的待办事项列表
 
-描述：
+### 描述
 
 在此练习中，学生将创建一个包含每项任务截止日期的待办事项列表。本练习介绍如何处理表单输入、动态更新 DOM 以及管理项目列表。
 
-涵盖主题：
+### 涵盖主题
 
 - HTML 结构
 - CSS 样式
@@ -10433,114 +10824,128 @@ submitButton.addEventListener('click', showResults);
 - DOM 操作（添加和删除元素）
 - 管理项目列表
 
-HTML：
+### HTML
 
 ```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>To-Do List with Due Dates</title>
-<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To-Do List with Due Dates</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<div class="todo-container">
-<h1>To-Do List</h1>
-<form id="todoForm">
-<input type="text" id="taskInput" placeholder="Enter a new task" required>
-<input type="date" id="dueDateInput" required>
-<button type="submit">Add Task</button>
-</form>
-<ul id="taskList"></ul>
-</div>
-<script src="script.js"></script>
+  <div class="todo-container">
+    <h1>To-Do List</h1>
+    <form id="todoForm">
+      <input type="text" id="taskInput" placeholder="Enter a new task" required>
+      <input type="date" id="dueDateInput" required>
+      <button type="submit">Add Task</button>
+    </form>
+    <ul id="taskList"></ul>
+  </div>
+  <script src="script.js"></script>
 </body>
 </html>
 ```
 
-CSS：
+### CSS
 
 ```css
 body {
-font-family: Arial, sans-serif;
-display: flex;
-justify-content: center;
-align-items: center;
-height: 100vh;
-margin: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
 }
+
 .todo-container {
-text-align: center;
-background-color: #f0f0f0;
-padding: 20px;
-border-radius: 10px;
-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-width: 300px;
+  text-align: center;
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
 }
+
 form {
-display: flex;
-flex-direction: column;
-gap: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
-input, button {
-padding: 10px;
-font-size: 16px;
+
+input,
+button {
+  padding: 10px;
+  font-size: 16px;
 }
+
 ul {
-list-style-type: none;
-padding: 0;
+  list-style-type: none;
+  padding: 0;
 }
+
 li {
-padding: 10px;
-margin: 5px 0;
-background-color: #fff;
-border: 1px solid #ccc;
-border-radius: 5px;
-display: flex;
-justify-content: space-between;
+  padding: 10px;
+  margin: 5px 0;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
 }
+
 button.remove {
-background: none;
-border: none;
-color: red;
-cursor: pointer;
-font-size: 16px;
+  background: none;
+  border: none;
+  color: red;
+  cursor: pointer;
+  font-size: 16px;
 }
 ```
 
-JavaScript：
+### JavaScript
 
 ```javascript
 document.getElementById('todoForm').addEventListener('submit', function(event) {
-event.preventDefault();
-const taskInput = document.getElementById('taskInput');
-const dueDateInput = document.getElementById('dueDateInput');
-const taskText = taskInput.value;
-const dueDate = dueDateInput.value;
-if (taskText === '' || dueDate === '') return;
-const li = document.createElement('li');
-li.textContent = `${taskText} - Due: ${dueDate}`;
-const removeButton = document.createElement('button');
-removeButton.textContent = 'Remove';
-removeButton.classList.add('remove');
-removeButton.addEventListener('click', function() {
-li.remove();
-});
-li.appendChild(removeButton);
-document.getElementById('taskList').appendChild(li);
-taskInput.value = '';
-dueDateInput.value = '';
+  event.preventDefault();
+
+  const taskInput = document.getElementById('taskInput');
+  const dueDateInput = document.getElementById('dueDateInput');
+  const taskText = taskInput.value;
+  const dueDate = dueDateInput.value;
+
+  if (taskText === '' || dueDate === '') return;
+
+  const li = document.createElement('li');
+  li.textContent = `${taskText} - Due: ${dueDate}`;
+
+  const removeButton = document.createElement('button');
+  removeButton.textContent = 'Remove';
+  removeButton.classList.add('remove');
+
+  removeButton.addEventListener('click', function() {
+    li.remove();
+  });
+
+  li.appendChild(removeButton);
+  document.getElementById('taskList').appendChild(li);
+
+  taskInput.value = '';
+  dueDateInput.value = '';
 });
 ```
 
-### 带分类的 BMI 计算器
+## 带分类的 BMI 计算器
 
-描述：
+### 描述
 
 在此练习中，学生将创建一个 BMI（身体质量指数）计算器，根据用户输入的体重和身高计算 BMI 并显示 BMI 分类。本练习介绍如何处理表单输入、执行计算以及动态更新 DOM。
 
-涵盖主题：
+### 涵盖主题
 
 - HTML 结构
 - CSS 样式
@@ -10549,97 +10954,107 @@ dueDateInput.value = '';
 - 执行计算
 - DOM 操作（更新文本内容）
 
-HTML：
+### HTML
 
 ```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>BMI Calculator with Category</title>
-<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BMI Calculator with Category</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<div class="calculator-container">
-<h1>BMI Calculator</h1>
-<form id="bmiForm">
-<input type="number" id="weightInput" placeholder="Enter weight in kg" required>
-<input type="number" id="heightInput" placeholder="Enter height in cm" required>
-<button type="submit">Calculate</button>
-</form>
-<p id="bmiDisplay">Your BMI: </p>
-<p id="categoryDisplay">Category: </p>
-</div>
-<script src="script.js"></script>
+  <div class="calculator-container">
+    <h1>BMI Calculator</h1>
+    <form id="bmiForm">
+      <input type="number" id="weightInput" placeholder="Enter weight in kg" required>
+      <input type="number" id="heightInput" placeholder="Enter height in cm" required>
+      <button type="submit">Calculate</button>
+    </form>
+    <p id="bmiDisplay">Your BMI: </p>
+    <p id="categoryDisplay">Category: </p>
+  </div>
+  <script src="script.js"></script>
 </body>
 </html>
 ```
 
-CSS：
+### CSS
 
 ```css
 body {
-font-family: Arial, sans-serif;
-display: flex;
-justify-content: center;
-align-items: center;
-height: 100vh;
-margin: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
 }
+
 .calculator-container {
-text-align: center;
-background-color: #f0f0f0;
-padding: 20px;
-border-radius: 10px;
-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+
 form {
-display: flex;
-flex-direction: column;
-gap: 10px;
-margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
 }
-input, button {
-padding: 10px;
-font-size: 16px;
+
+input,
+button {
+  padding: 10px;
+  font-size: 16px;
 }
+
 p {
-font-size: 18px;
-margin-top: 10px;
+  font-size: 18px;
+  margin-top: 10px;
 }
 ```
 
-JavaScript：
+### JavaScript
 
 ```javascript
 document.getElementById('bmiForm').addEventListener('submit', function(event) {
-event.preventDefault();
-const weight = parseFloat(document.getElementById('weightInput').value);
-const height = parseFloat(document.getElementById('heightInput').value) / 100;
-const bmi = (weight / (height * height)).toFixed(2);
-document.getElementById('bmiDisplay').textContent = `Your BMI: ${bmi}`;
-let category = '';
-if (bmi < 18.5) {
-category = 'Underweight';
-} else if (bmi < 24.9) {
-category = 'Normal weight';
-} else if (bmi < 29.9) {
-category = 'Overweight';
-} else {
-category = 'Obesity';
-}
-document.getElementById('categoryDisplay').textContent = `Category: ${category}`;
+  event.preventDefault();
+
+  const weight = parseFloat(document.getElementById('weightInput').value);
+  const height = parseFloat(document.getElementById('heightInput').value) / 100;
+  const bmi = (weight / (height * height)).toFixed(2);
+
+  document.getElementById('bmiDisplay').textContent = `Your BMI: ${bmi}`;
+
+  let category = '';
+
+  if (bmi < 18.5) {
+    category = 'Underweight';
+  } else if (bmi < 24.9) {
+    category = 'Normal weight';
+  } else if (bmi < 29.9) {
+    category = 'Overweight';
+  } else {
+    category = 'Obesity';
+  }
+
+  document.getElementById('categoryDisplay').textContent = `Category: ${category}`;
 });
 ```
 
 ## 带本地存储的待办事项列表
 
-描述：
+### 描述
 
 在此练习中，学生将创建一个待办事项列表，将项目保存到本地存储中，以便在页面刷新后仍然保留。本练习介绍如何处理表单输入、动态更新 DOM 以及使用本地存储。
 
-涵盖主题：
+### 涵盖主题
 
 - HTML 结构
 - CSS 样式
@@ -10648,50 +11063,49 @@ document.getElementById('categoryDisplay').textContent = `Category: ${category}`
 - DOM 操作（添加、更新和删除元素）
 - 处理表单输入
 
-HTML：
+### HTML
 
 ```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Todo List with Local Storage</title>
-<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Todo List with Local Storage</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<div class="todo-container">
-<h1>Todo List</h1>
-<form id="todoForm">
-<input type="text" id="taskInput" placeholder="Enter a new task" required>
-<button type="submit">Add Task</button>
-</form>
-<ul id="taskList"></ul>
-</div>
-<script src="script.js"></script>
+  <div class="todo-container">
+    <h1>Todo List</h1>
+    <form id="todoForm">
+      <input type="text" id="taskInput" placeholder="Enter a new task" required>
+      <button type="submit">Add Task</button>
+    </form>
+    <ul id="taskList"></ul>
+  </div>
+  <script src="script.js"></script>
 </body>
 </html>
 ```
 
-CSS：
+### CSS
 
 ```css
 body {
-font-family: Arial, sans-serif;
-display: flex;
-justify-content: center;
-align-items: center;
-height: 100vh;
-margin: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
 }
+
 .todo-container {
-text-align: center;
-background-color: #f0f0f0;
-padding: 20px;
-border-radius: 10px;
+  text-align: center;
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 10px;
 ```
-
-
 
 
 
@@ -10776,9 +11190,10 @@ itemList.appendChild(li);
 
 ### 字符计数器
 
-**描述：** 在本练习中，学生将创建一个字符计数器，用于显示文本区域中输入的字符数。本练习介绍了如何处理输入事件以及动态更新 DOM。
+**描述：**在本练习中，学生将创建一个字符计数器，用于显示文本区域中输入的字符数。本练习介绍了如何处理输入事件以及动态更新 DOM。
 
 **涵盖的主题：**
+
 - HTML 结构
 - CSS 样式
 - JavaScript 事件监听器
@@ -10786,6 +11201,7 @@ itemList.appendChild(li);
 - DOM 操作（更新文本内容）
 
 **HTML：**
+
 ```html
 <!DOCTYPE html>
 <html lang="en">
@@ -10807,6 +11223,7 @@ itemList.appendChild(li);
 ```
 
 **CSS：**
+
 ```css
 body {
 font-family: Arial, sans-serif;
@@ -10839,6 +11256,7 @@ margin-top: 10px;
 ```
 
 **JavaScript：**
+
 ```javascript
 document.getElementById('textInput').addEventListener('input', function() {
 const charCount = this.value.length;
@@ -10849,113 +11267,214 @@ document.getElementById('charCountDisplay').textContent = `Characters: ${charCou
 ### 多项选择题
 
 在带有本地存储的购物清单练习中，项目保存在哪里以在页面刷新后保持持久化？
+
 a) Session storage
+
 b) Cookies
+
 c) Local storage
+
 d) IndexedDB
-答案：c) Local storage 解释：项目保存在本地存储中，以便即使在页面刷新后也能保持持久化。
+
+答案：c) Local storage
+
+解释：项目保存在本地存储中，以便即使在页面刷新后也能保持持久化。
 
 在带有本地存储的购物清单练习中，当点击某个项目的“Remove”按钮时会发生什么？
+
 a) 该项目被划掉
+
 b) 该项目从列表和本地存储中移除
+
 c) 该项目被编辑
+
 d) 该项目被标记为已完成
-答案：b) 该项目从列表和本地存储中移除 解释：点击“Remove”按钮会将项目从列表和本地存储中移除。
+
+答案：b) 该项目从列表和本地存储中移除
+
+解释：点击“Remove”按钮会将项目从列表和本地存储中移除。
 
 在响应式导航栏练习中，使用哪种方法来显示或隐藏导航栏链接？
+
 a) `add`
+
 b) `remove`
+
 c) `toggle`
+
 d) `replace`
-答案：c) `toggle` 解释：通过切换`active`类，`toggle`方法用于显示或隐藏导航栏链接。
+
+答案：c) `toggle`
+
+解释：通过切换`active`类，`toggle`方法用于显示或隐藏导航栏链接。
 
 在响应式导航栏练习中，`@media (max-width: 768px)`查询的作用是什么？
+
 a) 为小于 768px 的屏幕应用样式
+
 b) 为大于 768px 的屏幕应用样式
+
 c) 隐藏导航栏
+
 d) 更改导航栏的颜色
-答案：a) 为小于 768px 的屏幕应用样式 解释：`@media (max-width: 768px)`查询为小于 768px 的屏幕应用样式，使导航栏具有响应性。
+
+答案：a) 为小于 768px 的屏幕应用样式
+
+解释：`@media (max-width: 768px)`查询为小于 768px 的屏幕应用样式，使导航栏具有响应性。
 
 在闪卡应用练习中，点击闪卡时会发生什么？
+
 a) 闪卡内容被隐藏
+
 b) 显示下一张闪卡
+
 c) 答案被揭示
+
 d) 闪卡被移除
-答案：c) 答案被揭示 解释：点击闪卡时，问题的答案会被揭示。
+
+答案：c) 答案被揭示
+
+解释：点击闪卡时，问题的答案会被揭示。
 
 在闪卡应用练习中，`nextButton`的作用是什么？
+
 a) 揭示答案
+
 b) 打乱闪卡顺序
+
 c) 显示下一张闪卡
+
 d) 重置闪卡
-答案：c) 显示下一张闪卡 解释：`nextButton`用于显示列表中的下一张闪卡。
+
+答案：c) 显示下一张闪卡
+
+解释：`nextButton`用于显示列表中的下一张闪卡。
 
 在带反馈的测验应用练习中，如何获取用户选择的答案？
+
 a) 使用`getElementById`
+
 b) 使用`querySelector`
+
 c) 使用`innerHTML`
+
 d) 使用`textContent`
-答案：b) 使用`querySelector` 解释：`querySelector`方法用于从单选按钮中获取用户选择的答案。
+
+答案：b) 使用`querySelector`
+
+解释：`querySelector`方法用于从单选按钮中获取用户选择的答案。
 
 在带优先级的待办事项列表练习中，`prioritySelect`元素的作用是什么？
+
 a) 允许用户输入新任务
+
 b) 从列表中移除任务
+
 c) 设置新任务的优先级
+
 d) 显示任务列表
-答案：c) 设置新任务的优先级 解释：`prioritySelect`元素允许用户设置添加到列表中的新任务的优先级。
+
+答案：c) 设置新任务的优先级
+
+解释：`prioritySelect`元素允许用户设置添加到列表中的新任务的优先级。
 
 在测验应用练习中，使用什么事件来处理测验提交？
+
 a) `click`
+
 b) `submit`
+
 c) `change`
+
 d) `input`
-答案：a) `click` 解释：`click`事件用于处理测验提交并计算结果。
+
+答案：a) `click`
+
+解释：`click`事件用于处理测验提交并计算结果。
 
 在测验应用练习中，如何获取用户选择的答案？
+
 a) 使用`getElementById`
+
 b) 使用`querySelector`
+
 c) 使用`innerHTML`
+
 d) 使用`textContent`
-答案：b) 使用`querySelector` 解释：`querySelector`方法用于从单选按钮中获取用户选择的答案。
+
+答案：b) 使用`querySelector`
+
+解释：`querySelector`方法用于从单选按钮中获取用户选择的答案。
 
 在字符计数器练习中，使用什么事件来更新字符计数？
+
 a) `click`
+
 b) `submit`
+
 c) `change`
+
 d) `input`
-答案：d) `input` 解释：`input`事件用于在用户输入文本时更新字符计数。
+
+答案：d) `input`
+
+解释：`input`事件用于在用户输入文本时更新字符计数。
 
 在闪卡应用练习中，哪个 HTML 元素用于显示闪卡内容？
+
 a) `<div>`
+
 b) `<p>`
+
 c) `<span>`
+
 d) `<section>`
-答案：b) `<p>` 解释：ID 为`flashcardContent`的`<p>`元素用于显示闪卡的内容。
+
+答案：b) `<p>`
+
+解释：ID 为`flashcardContent`的`<p>`元素用于显示闪卡的内容。
 
 在闪卡应用练习中，使用什么 JavaScript 方法来处理闪卡上的点击事件以揭示答案？
+
 a) `addEventListener`
+
 b) `removeEventListener`
+
 c) `attachEvent`
+
 d) `setTimeout`
-答案：a) `addEventListener` 解释：`addEventListener`方法用于处理闪卡上的点击事件。
+
+答案：a) `addEventListener`
+
+解释：`addEventListener`方法用于处理闪卡上的点击事件。
 
 在闪卡应用练习中，如何切换闪卡内容在问题和答案之间？
+
 a) 通过更改 CSS 类
+
 b) 通过切换`innerHTML`属性
+
 c) 通过切换`textContent`属性
+
 d) 通过切换`dataset`属性
-答案：d) 通过切换`dataset`属性 解释：切换`dataset.flipped`属性以在问题和答案之间切换。
+
+答案：d) 通过切换`dataset`属性
+
+解释：切换`dataset.flipped`属性以在问题和答案之间切换。
 
 在带反馈的测验应用练习中，哪个 HTML 元素用于包含测验问题和答案？
+
 a) `<div>`
+
 b) `<form>`
+
 c) `<section>`
+
 d) `<article>`
-答案：a) `<div>` 解释：ID 为`quiz`的`<div>`元素用于包含测验问题和答案。
 
+答案：a) `<div>`
 
-
-
+解释：ID 为`quiz`的`<div>`元素用于包含测验问题和答案。
 
 在带反馈的测验应用练习中，使用什么方法来检查用户的答案？
 
@@ -10969,7 +11488,7 @@ d) `getElementsByClassName`
 
 答案：a) `querySelectorAll`
 
-解释：`querySelectorAll` 方法用于选择所有答案容器以检查用户的答案。
+解释：`querySelectorAll`方法用于选择所有答案容器以检查用户的答案。
 
 在带优先级的待办事项列表练习中，使用哪个 HTML 元素来输入任务优先级？
 
@@ -10983,7 +11502,7 @@ d) `<button>`
 
 答案：b) `<select>`
 
-解释：`<select>` 元素用于输入任务优先级。
+解释：`<select>`元素用于输入任务优先级。
 
 在带优先级的待办事项列表练习中，如何根据优先级对任务进行样式设置？
 
@@ -11011,7 +11530,7 @@ d) `clearInterval`
 
 答案：b) `setInterval`
 
-解释：`setInterval` 函数用于以设定的时间间隔重复调用一个函数。
+解释：`setInterval`函数用于以设定的时间间隔重复调用一个函数。
 
 在带暂停/恢复功能的倒计时器练习中，点击“暂停”按钮会发生什么？
 
@@ -11103,6 +11622,7 @@ align-items: center;
 height: 100vh;
 margin: 0;
 }
+
 .quiz-container {
 text-align: center;
 background-color: #f0f0f0;
@@ -11111,14 +11631,17 @@ border-radius: 10px;
 box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 width: 300px;
 }
+
 .question {
 margin-bottom: 20px;
 }
+
 button {
 padding: 10px 20px;
 font-size: 16px;
 cursor: pointer;
 }
+
 #resultDisplay {
 margin-top: 20px;
 font-size: 18px;
@@ -11126,6 +11649,8 @@ font-size: 18px;
 ```
 
 **JavaScript：**
+
+
 
 ```javascript
 document.getElementById('quizForm').addEventListener('submit', function(event) {
@@ -11311,34 +11836,28 @@ margin-top: 20px;
 document.getElementById('reverserForm').addEventListener('submit', function(event) {
 event.preventDefault();
 const textInput = document.getElementById('textInput').value;
-```
-
-
-
-
-
-```
 const reversedText = textInput.split('').reverse().join('');
-
 document.getElementById('reversedTextDisplay').textContent = `Reversed Text: ${reversedText}`;
-
 });
 ```
 
 ### 互动故事
 
-**描述：**  
+**描述：**
+
 在此练习中，学生将创建一个互动故事，用户通过选择影响故事结局。本练习介绍如何处理按钮点击、使用数组以及动态更新 DOM。
 
-**涵盖主题：**  
-● HTML 结构  
-● CSS 样式  
-● JavaScript 事件监听器  
-● 处理按钮点击  
-● 使用数组  
-● DOM 操作（更新文本内容）
+**涵盖主题：**
+
+- HTML 结构
+- CSS 样式
+- JavaScript 事件监听器
+- 处理按钮点击
+- 使用数组
+- DOM 操作（更新文本内容）
 
 **HTML：**
+
 ```html
 <!DOCTYPE html>
 <html lang="en">
@@ -11361,6 +11880,7 @@ document.getElementById('reversedTextDisplay').textContent = `Reversed Text: ${r
 ```
 
 **CSS：**
+
 ```css
 body {
 font-family: Arial, sans-serif;
@@ -11387,6 +11907,7 @@ margin-top: 10px;
 ```
 
 **JavaScript：**
+
 ```javascript
 const storyText = document.getElementById('storyText');
 const option1 = document.getElementById('option1');
@@ -11431,18 +11952,21 @@ option2.style.display = 'none';
 
 ### 带本地存储的任务列表
 
-**描述：**  
+**描述：**
+
 在此练习中，学生将创建一个任务列表，该列表将任务保存到本地存储中，以便在页面刷新后仍然保留。本练习介绍如何处理表单输入、动态更新 DOM 以及使用本地存储。
 
-**涵盖主题：**  
-● HTML 结构  
-● CSS 样式  
-● JavaScript 事件监听器  
-● 本地存储  
-● DOM 操作（添加、更新和删除元素）  
-● 处理表单输入
+**涵盖主题：**
+
+- HTML 结构
+- CSS 样式
+- JavaScript 事件监听器
+- 本地存储
+- DOM 操作（添加、更新和删除元素）
+- 处理表单输入
 
 **HTML：**
+
 ```html
 <!DOCTYPE html>
 <html lang="en">
@@ -11467,6 +11991,7 @@ option2.style.display = 'none';
 ```
 
 **CSS：**
+
 ```css
 body {
 font-family: Arial, sans-serif;
@@ -11516,6 +12041,9 @@ font-size: 16px;
 ```
 
 **JavaScript：**
+
+
+
 ```javascript
 document.addEventListener('DOMContentLoaded', function() {
 const taskList = document.getElementById('taskList');
@@ -11557,18 +12085,21 @@ taskList.appendChild(li);
 
 ### 带优先级的待办事项列表
 
-**描述：**  
+**描述：**
+
 在此练习中，学生将创建一个待办事项列表，允许用户添加不同优先级的任务。本练习介绍如何处理表单输入、动态更新 DOM 以及根据优先级对元素进行排序。
 
-**涵盖主题：**  
-● HTML 结构  
-● CSS 样式  
-● JavaScript 事件监听器  
-● 处理表单输入  
-● DOM 操作（添加和排序元素）  
-● 使用数组
+**涵盖主题：**
+
+- HTML 结构
+- CSS 样式
+- JavaScript 事件监听器
+- 处理表单输入
+- DOM 操作（添加和排序元素）
+- 使用数组
 
 **HTML：**
+
 ```html
 <!DOCTYPE html>
 <html lang="en">
@@ -11598,6 +12129,7 @@ taskList.appendChild(li);
 ```
 
 **CSS：**
+
 ```css
 body {
 font-family: Arial, sans-serif;
@@ -11641,23 +12173,14 @@ button.remove {
 background: none;
 border: none;
 color: red;
-```
-
-
-
-
-
-```
 cursor: pointer;
-
 font-size: 16px;
-
 }
 ```
 
-JavaScript:
+**JavaScript：**
 
-```
+```javascript
 document.getElementById('todoForm').addEventListener('submit', function(event) {
     event.preventDefault();
     const taskInput = document.getElementById('taskInput');
@@ -11697,27 +12220,22 @@ function sortTasks() {
 
 ### 随机颜色生成器
 
-描述：
+**描述：**
 
 在本练习中，学生将创建一个随机颜色生成器，每次点击按钮时页面背景颜色都会改变。本练习介绍如何处理按钮点击、生成随机颜色以及动态更新 DOM。
 
-涵盖主题：
+**涵盖主题：**
 
-● HTML 结构
+- HTML 结构
+- CSS 样式
+- JavaScript 事件监听器
+- 处理按钮点击
+- 生成随机颜色
+- DOM 操作（更新样式）
 
-● CSS 样式
+**HTML：**
 
-● JavaScript 事件监听器
-
-● 处理按钮点击
-
-● 生成随机颜色
-
-● DOM 操作（更新样式）
-
-HTML：
-
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11736,9 +12254,9 @@ HTML：
 </html>
 ```
 
-CSS：
+**CSS：**
 
-```
+```css
 body {
     font-family: Arial, sans-serif;
     display: flex;
@@ -11763,9 +12281,9 @@ button {
 }
 ```
 
-JavaScript：
+**JavaScript：**
 
-```
+```javascript
 document.getElementById('colorButton').addEventListener('click', function() {
     const randomColor = `#${Math.floor(Math.random() * 16777215).toString(16)}`;
     document.body.style.backgroundColor = randomColor;
@@ -11774,226 +12292,233 @@ document.getElementById('colorButton').addEventListener('click', function() {
 
 ### 多项选择题
 
+#### 带截止日期的待办事项列表
+
 在“带截止日期的待办事项列表”练习中，当点击任务的“移除”按钮时会发生什么？
 
-a) 任务被划掉
+- a) 任务被划掉
+- b) 任务从列表中移除
+- c) 任务被编辑
+- d) 任务被标记为已完成
 
-b) 任务从列表中移除
+答案：b) 任务从列表中移除
 
-c) 任务被编辑
-
-d) 任务被标记为已完成
-
-答案：b) 任务从列表中移除 解释：点击“移除”按钮会将任务从列表中移除。
+解释：点击“移除”按钮会将任务从列表中移除。
 
 在“带截止日期的待办事项列表”练习中，`dueDateInput` 元素的用途是什么？
 
-a) 输入任务描述
+- a) 输入任务描述
+- b) 输入任务截止日期
+- c) 显示任务总数
+- d) 移除任务
 
-b) 输入任务截止日期
+答案：b) 输入任务截止日期
 
-c) 显示任务总数
+解释：`dueDateInput` 元素用于输入要添加到列表的新任务的截止日期。
 
-d) 移除任务
-
-答案：b) 输入任务截止日期 解释：`dueDateInput` 元素用于输入要添加到列表的新任务的截止日期。
+#### 带分类的 BMI 计算器
 
 在“带分类的 BMI 计算器”练习中，什么 BMI 值被认为是“正常体重”？
 
-a) BMI < 18.5
+- a) BMI < 18.5
+- b) 18.5 ≤ BMI < 24.9
+- c) 24.9 ≤ BMI < 29.9
+- d) BMI ≥ 29.9
 
-b) 18.5 ≤ BMI < 24.9
+答案：b) 18.5 ≤ BMI < 24.9
 
-c) 24.9 ≤ BMI < 29.9
-
-d) BMI ≥ 29.9
-
-答案：b) 18.5 ≤ BMI < 24.9 解释：BMI 值在 18.5 到 24.9 之间被认为是“正常体重”。
+解释：BMI 值在 18.5 到 24.9 之间被认为是“正常体重”。
 
 在“带分类的 BMI 计算器”练习中，使用什么事件来处理表单提交？
 
-a) `click`
+- a) `click`
+- b) `submit`
+- c) `change`
+- d) `input`
 
-b) `submit`
+答案：b) `submit`
 
-c) `change`
+解释：使用 `submit` 事件来处理表单提交并执行 BMI 计算。
 
-d) `input`
-
-答案：b) `submit` 解释：使用 `submit` 事件来处理表单提交并执行 BMI 计算。
+#### 带本地存储的待办事项列表
 
 在“带本地存储的待办事项列表”练习中，当任务被移除时会发生什么？
 
-a) 任务被隐藏
+- a) 任务被隐藏
+- b) 任务从 DOM 和本地存储中移除
+- c) 任务被标记为已完成
+- d) 任务被编辑
 
-b) 任务从 DOM 和本地存储中移除
+答案：b) 任务从 DOM 和本地存储中移除
 
-c) 任务被标记为已完成
-
-d) 任务被编辑
-
-答案：b) 任务从 DOM 和本地存储中移除 解释：当任务被移除时，它会从 DOM 和本地存储中删除。
+解释：当任务被移除时，它会从 DOM 和本地存储中删除。
 
 在“带本地存储的待办事项列表”练习中，任务存储在哪里以便页面刷新后仍然保留？
 
-a) Cookies
+- a) Cookies
+- b) 会话存储
+- c) 本地存储
+- d) IndexedDB
 
-b) 会话存储
+答案：c) 本地存储
 
-c) 本地存储
+解释：任务存储在本地存储中，以便即使在页面刷新后也能保留。
 
-d) IndexedDB
-
-答案：c) 本地存储 解释：任务存储在本地存储中，以便即使在页面刷新后也能保留。
+#### 简单测验应用
 
 在“简单测验应用”练习中，使用什么事件来处理表单提交？
 
-a) `click`
+- a) `click`
+- b) `submit`
+- c) `input`
+- d) `change`
 
-b) `submit`
+答案：b) `submit`
 
-c) `input`
-
-d) `change`
-
-答案：b) `submit` 解释：使用 `submit` 事件来处理表单提交并计算测验分数。
-
-在“随机数生成器”练习中，使用什么函数来生成随机数？
-
-a) `Math.random()`
-
-b) `Math.floor()`
-
-c) `Math.random()` 和 `Math.floor()`
-
-d) `Math.ceil()`
-
-答案：c) `Math.random()` 和 `Math.floor()` 解释：`Math.random()` 函数生成一个 0 到 1 之间的随机数，`Math.floor()` 用于获取指定范围内的整数。
-
-在“文本反转器”练习中，使用什么方法来反转输入文本？
-
-a) `reverse()`
-
-b) `split()`
-
-c) `split().reverse().join()`
-
-d) `join()`
-
-答案：c) `split().reverse().join()` 解释：使用 `split().reverse().join()` 方法将输入文本拆分为数组，反转数组，然后重新连接成字符串。
+解释：使用 `submit` 事件来处理表单提交并计算测验分数。
 
 在“简单测验应用”练习中，如何计算用户的分数？
 
-a) 通过检查所选答案是否与正确答案匹配
+- a) 通过检查所选答案是否与正确答案匹配
+- b) 通过统计问题数量
+- c) 通过计算完成测验所花费的时间
+- d) 通过将用户的答案与最高分进行比较
 
-b) 通过统计问题数量
+答案：a) 通过检查所选答案是否与正确答案匹配
 
-c) 通过计算完成测验所花费的时间
+解释：用户的分数是通过检查每个问题的所选答案是否与正确答案匹配来计算的。
 
-d) 通过将用户的答案与最高分进行比较
+#### 随机数生成器
 
-答案：a) 通过检查所选答案是否与正确答案匹配 解释：用户的分数是通过检查每个问题的所选答案是否与正确答案匹配来计算的。
+在“随机数生成器”练习中，使用什么函数来生成随机数？
+
+- a) `Math.random()`
+- b) `Math.floor()`
+- c) `Math.random()` 和 `Math.floor()`
+- d) `Math.ceil()`
+
+答案：c) `Math.random()` 和 `Math.floor()`
+
+解释：`Math.random()` 函数生成一个 0 到 1 之间的随机数，`Math.floor()` 用于获取指定范围内的整数。
 
 在“随机数生成器”练习中，用户需要输入什么值？
 
-a) 一个数字
+- a) 一个数字
+- b) 最小值和最大值
+- c) 一个数字范围
+- d) 一个布尔值
 
-b) 最小值和最大值
+答案：b) 最小值和最大值
 
-c) 一个数字范围
+解释：用户需要输入最小值和最大值来定义随机数生成的范围。
 
-d) 一个布尔值
+#### 文本反转器
 
-答案：b) 最小值和最大值 解释：用户需要输入最小值和最大值来定义随机数生成的范围。
+在“文本反转器”练习中，使用什么方法来反转输入文本？
+
+- a) `reverse()`
+- b) `split()`
+- c) `split().reverse().join()`
+- d) `join()`
+
+答案：c) `split().reverse().join()`
+
+解释：使用 `split().reverse().join()` 方法将输入文本拆分为数组，反转数组，然后重新连接成字符串。
+
+#### 互动故事
 
 在“互动故事”练习中，使用什么事件来处理用户的选择？
 
-a) `click`
+- a) `click`
+- b) `submit`
+- c) `input`
+- d) `change`
 
-b) `submit`
+答案：a) `click`
 
-c) `input`
-
-d) `change`
-
-答案：a) `click` 解释：使用 `click` 事件来处理用户的选择并更新故事。
+解释：使用 `click` 事件来处理用户的选择并更新故事。
 
 在“互动故事”练习中，当用户点击“走左边的小路”时会发生什么？
 
-a) 故事结束
+- a) 故事结束
+- b) 用户被要求打开或离开一个宝箱
+- c) 用户遇到一只熊
+- d) 用户回家
 
-b) 用户被要求打开或离开一个宝箱
+答案：b) 用户被要求打开或离开一个宝箱
 
-c) 用户遇到一只熊
+解释：点击“走左边的小路”会引导用户到一个宝箱，并提供打开或离开的选项。
 
-d) 用户回家
-
-答案：b) 用户被要求打开或离开一个宝箱 解释：点击“走左边的小路”会引导用户到一个宝箱，并提供打开或离开的选项。
+#### 图片轮播
 
 在“图片轮播”练习中，使用什么事件来浏览图片？
 
-a) `mouseover`
+- a) `mouseover`
+- b) `click`
+- c) `submit`
+- d) `input`
 
-b) `click`
+答案：b) `click`
 
-c) `submit`
+解释：使用 `click` 事件来处理图片轮播的导航按钮。
 
-d) `input`
-
-答案：b) `click` 解释：使用 `click` 事件来处理图片轮播的导航按钮。
+#### 带本地存储的任务列表
 
 在“带本地存储的任务列表”练习中，任务存储在哪里以便页面刷新后仍然保留？
 
-a) Cookies
+- a) Cookies
+- b) 会话存储
+- c) 本地存储
+- d) IndexedDB
 
-b) 会话存储
+答案：c) 本地存储
 
-c) 本地存储
-
-d) IndexedDB
-
-答案：c) 本地存储 解释：任务存储在本地存储中，以便即使在页面刷新后也能保留。
+解释：任务存储在本地存储中，以便即使在页面刷新后也能保留。
 
 在“带本地存储的任务列表”练习中，当点击任务的“移除”按钮时会发生什么？
 
-a) 任务被标记为已完成
+- a) 任务被标记为已完成
+- b) 任务被编辑
+- c) 任务从 DOM 和本地存储中移除
+- d) 任务被移动到列表末尾
 
-b) 任务被编辑
+答案：c) 任务从 DOM 和本地存储中移除
 
-c) 任务从 DOM 和本地存储中移除
+解释：当任务的“移除”按钮被点击时，它从 DOM 和本地存储中删除。
 
-
-
-
-d) 任务被移动到列表末尾
-
-答案：c) 任务从 DOM 和本地存储中移除 解释：当任务的“移除”按钮被点击时，它从 DOM 和本地存储中删除。
+#### 带优先级的待办事项列表
 
 在“带优先级的待办事项列表”练习中，用于存储每个任务优先级的属性是什么？
 
-a) `data-task`
+- a) `data-task`
+- b) `data-priority`
+- c) `task-priority`
+- d) `priority-level`
 
-b) `data-priority`
+答案：b) `data-priority`
 
-c) `task-priority`
+解释：`data-priority` 属性用于存储每个任务的优先级。
 
-d) `priority-level`
-
-答案：b) `data-priority` 解释：`data-priority` 属性用于存储每个任务的优先级。
+#### 随机颜色生成器
 
 在“随机颜色生成器”练习中，用于生成随机颜色的方法是什么？
 
-a) `Math.random()`
+- a) `Math.random()`
+- b) `Math.floor()`
+- c) `Math.random()` 和 `Math.floor()`
+- d) `Math.ceil()`
 
-b) `Math.floor()`
 
-c) `Math.random()` 和 `Math.floor()`
 
-d) `Math.ceil()`
+答案：c) `Math.random()` 和 `Math.floor()`
 
-答案：c) `Math.random()` 和 `Math.floor()` 解释：`Math.random()` 方法生成一个随机数，`Math.floor()` 用于将其转换为整数并创建有效的十六进制颜色代码。
+解释：`Math.random()` 方法生成一个随机数，`Math.floor()` 用于将其转换为整数并创建有效的十六进制颜色代码。
 
-在“带优先级的待办事项列表”练习中，任务在列表中如何排序？
+## 练习题
+
+### 带优先级的待办事项列表
+
+任务在列表中如何排序？
 
 a) 按字母顺序
 
@@ -12003,9 +12528,13 @@ c) 按优先级
 
 d) 按任务描述长度
 
-答案：c) 按优先级 解释：任务按优先级在列表中排序，高优先级任务出现在中优先级和低优先级任务之前。
+答案：c) 按优先级
 
-在“随机颜色生成器”练习中，什么事件触发背景颜色变化？
+解释：任务按优先级在列表中排序，高优先级任务出现在中优先级和低优先级任务之前。
+
+### 随机颜色生成器
+
+什么事件触发背景颜色变化？
 
 a) 页面加载
 
@@ -12015,9 +12544,13 @@ c) 按钮点击
 
 d) 鼠标悬停
 
-答案：c) 按钮点击 解释：背景颜色变化由按钮点击事件触发。
+答案：c) 按钮点击
 
-在“简单测验应用”练习中，用于处理表单提交的事件类型是什么？
+解释：背景颜色变化由按钮点击事件触发。
+
+### 简单测验应用
+
+用于处理表单提交的事件类型是什么？
 
 a) `change`
 
@@ -12027,9 +12560,11 @@ c) `submit`
 
 d) `input`
 
-答案：c) `submit` 解释：表单提交通过监听表单元素上的 `submit` 事件来处理。
+答案：c) `submit`
 
-在“简单测验应用”练习中，如何评估用户的答案？
+解释：表单提交通过监听表单元素上的 `submit` 事件来处理。
+
+如何评估用户的答案？
 
 a) 通过比较标签的文本内容
 
@@ -12039,9 +12574,13 @@ c) 通过计算选中的单选输入的数量
 
 d) 通过验证表单输入值
 
-答案：b) 通过检查选中的单选输入的值 解释：通过检查选中的单选输入的值并与正确答案进行比较来评估用户的答案。
+答案：b) 通过检查选中的单选输入的值
 
-在“随机数生成器”练习中，用于生成随机数的 JavaScript 方法是什么？
+解释：通过检查选中的单选输入的值并与正确答案进行比较来评估用户的答案。
+
+### 随机数生成器
+
+用于生成随机数的 JavaScript 方法是什么？
 
 a) `Math.random()`
 
@@ -12051,9 +12590,11 @@ c) `Math.ceil()`
 
 d) `Math.round()`
 
-答案：a) `Math.random()` 解释：`Math.random()` 方法用于生成一个介于 0（包含）和 1（不包含）之间的随机数。
+答案：a) `Math.random()`
 
-在“随机数生成器”练习中，用于显示生成的随机数的 HTML 元素是什么？
+解释：`Math.random()` 方法用于生成一个介于 0（包含）和 1（不包含）之间的随机数。
+
+用于显示生成的随机数的 HTML 元素是什么？
 
 a) `<div>`
 
@@ -12063,9 +12604,13 @@ c) `<span>`
 
 d) `<h1>`
 
-答案：b) `<p>` 解释：带有 ID `randomNumberDisplay` 的 `<p>` 元素用于显示生成的随机数。
+答案：b) `<p>`
 
-在“文本反转器”练习中，用于反转文本的字符串方法是什么？
+解释：带有 ID `randomNumberDisplay` 的 `<p>` 元素用于显示生成的随机数。
+
+### 文本反转器
+
+用于反转文本的字符串方法是什么？
 
 a) `split()`
 
@@ -12075,9 +12620,11 @@ c) `join()`
 
 d) 以上全部
 
-答案：d) 以上全部 解释：通过使用 `split()` 将文本拆分为字符数组，使用 `reverse()` 反转数组，再使用 `join()` 将数组重新组合成字符串来反转文本。
+答案：d) 以上全部
 
-在“文本反转器”练习中，用于输入文本的 HTML 元素是什么？
+解释：通过使用 `split()` 将文本拆分为字符数组，使用 `reverse()` 反转数组，再使用 `join()` 将数组重新组合成字符串来反转文本。
+
+用于输入文本的 HTML 元素是什么？
 
 a) `<input>`
 
@@ -12087,9 +12634,13 @@ c) `<div>`
 
 d) `<p>`
 
-答案：b) `<textarea>` 解释：带有 ID `textInput` 的 `<textarea>` 元素用于输入要反转的文本。
+答案：b) `<textarea>`
 
-在“互动故事”练习中，故事选项如何呈现给用户？
+解释：带有 ID `textInput` 的 `<textarea>` 元素用于输入要反转的文本。
+
+### 互动故事
+
+故事选项如何呈现给用户？
 
 a) 使用单选按钮
 
@@ -12099,9 +12650,11 @@ c) 使用按钮
 
 d) 使用超链接
 
-答案：c) 使用按钮 解释：故事选项通过按钮呈现给用户，允许他们做出影响故事结局的选择。
+答案：c) 使用按钮
 
-在“互动故事”练习中，用于处理用户选择的事件监听器是什么？
+解释：故事选项通过按钮呈现给用户，允许他们做出影响故事结局的选择。
+
+用于处理用户选择的事件监听器是什么？
 
 a) `submit`
 
@@ -12111,9 +12664,13 @@ c) `click`
 
 d) `change`
 
-答案：c) `click` 解释：当用户点击按钮时，使用 `click` 事件监听器来处理用户的选择。
+答案：c) `click`
 
-在“使用本地存储的任务列表”练习中，任务如何保存以在页面重新加载后持久存在？
+解释：当用户点击按钮时，使用 `click` 事件监听器来处理用户的选择。
+
+### 使用本地存储的任务列表
+
+任务如何保存以在页面重新加载后持久存在？
 
 a) 使用 cookies
 
@@ -12123,9 +12680,11 @@ c) 使用会话存储
 
 d) 使用数据库
 
-答案：b) 使用本地存储 解释：任务保存到本地存储中，以便在页面刷新后仍然存在。
+答案：b) 使用本地存储
 
-在“使用本地存储的任务列表”练习中，用于从 DOM 和本地存储中移除任务的 JavaScript 方法是什么？
+解释：任务保存到本地存储中，以便在页面刷新后仍然存在。
+
+用于从 DOM 和本地存储中移除任务的 JavaScript 方法是什么？
 
 a) `removeChild()`
 
@@ -12135,15 +12694,17 @@ c) `splice()`
 
 d) `delete()`
 
-答案：b) `remove()` 解释：使用 `remove()` 方法从 DOM 中移除任务元素，同时使用 `splice()` 从本地存储数组中移除该任务。
+答案：b) `remove()`
 
-### 单位转换器
+解释：使用 `remove()` 方法从 DOM 中移除任务元素，同时使用 `splice()` 从本地存储数组中移除该任务。
 
-描述：
+## 单位转换器
+
+### 描述
 
 在此练习中，学生将创建一个单位转换器，用于在不同测量单位（例如长度、重量）之间进行转换。本练习介绍了处理表单输入、执行计算以及动态更新 DOM。
 
-涵盖主题：
+### 涵盖主题
 
 - HTML 结构
 - CSS 样式
@@ -12152,7 +12713,7 @@ d) `delete()`
 - 执行计算
 - DOM 操作（更新文本内容）
 
-HTML：
+### HTML
 
 ```html
 <!DOCTYPE html>
@@ -12189,7 +12750,7 @@ HTML：
 </html>
 ```
 
-CSS：
+### CSS
 
 ```css
 body {
@@ -12223,7 +12784,7 @@ margin-top: 20px;
 }
 ```
 
-JavaScript：
+### JavaScript
 
 ```javascript
 document.getElementById('converterForm').addEventListener('submit', function(event) {
@@ -12247,13 +12808,13 @@ document.getElementById('resultDisplay').textContent = `Converted Value: ${conve
 });
 ```
 
-### 单词反转器
+## 单词反转器
 
-描述：
+### 描述
 
 在此练习中，学生将创建一个单词反转器，用于反转给定句子中每个单词的字母顺序。本练习介绍了处理表单输入、字符串操作以及动态更新 DOM。
 
-涵盖主题：
+### 涵盖主题
 
 - HTML 结构
 - CSS 样式
@@ -12262,7 +12823,7 @@ document.getElementById('resultDisplay').textContent = `Converted Value: ${conve
 - 字符串操作
 - DOM 操作（更新文本内容）
 
-HTML：
+### HTML
 
 ```html
 <!DOCTYPE html>
@@ -12270,9 +12831,6 @@ HTML：
 <head>
 <meta charset="UTF-8">
 ```
-
-
-
 
 ### 单词反转器
 
@@ -12344,11 +12902,14 @@ document.getElementById('reverserForm').addEventListener('submit', function(even
 });
 ```
 
-### 交互式待办事项列表
+## 交互式待办事项列表
 
-**描述：** 在本练习中，学生将创建一个交互式待办事项列表，允许用户添加、标记完成和删除任务。本练习介绍如何处理表单输入、管理状态以及动态更新 DOM。
+### 描述
 
-**涵盖主题：**
+在本练习中，学生将创建一个交互式待办事项列表，允许用户添加、标记完成和删除任务。本练习介绍如何处理表单输入、管理状态以及动态更新 DOM。
+
+### 涵盖主题
+
 - HTML 结构
 - CSS 样式
 - JavaScript 事件监听器
@@ -12356,7 +12917,7 @@ document.getElementById('reverserForm').addEventListener('submit', function(even
 - 管理状态
 - DOM 操作（添加、更新和删除元素）
 
-#### HTML
+### HTML
 
 ```html
 <!DOCTYPE html>
@@ -12381,7 +12942,7 @@ document.getElementById('reverserForm').addEventListener('submit', function(even
 </html>
 ```
 
-#### CSS
+### CSS
 
 ```css
 body {
@@ -12434,7 +12995,9 @@ li.completed {
 }
 ```
 
-#### JavaScript
+### JavaScript
+
+
 
 ```javascript
 document.getElementById('todoForm').addEventListener('submit', function(event) {
@@ -12471,6 +13034,7 @@ function addTaskToDOM(taskText) {
 **描述：** 在本练习中，学生将创建一个倒计时器，允许用户开始、停止和重置倒计时。本练习介绍如何处理按钮点击、使用计时器以及动态更新 DOM。
 
 **涵盖主题：**
+
 - HTML 结构
 - CSS 样式
 - JavaScript 事件监听器
@@ -12601,6 +13165,7 @@ updateDisplay();
 **描述：** 在本练习中，学生将创建一个交互式测验，呈现多项选择题并在最后显示得分。本练习介绍如何处理表单输入、管理状态以及动态更新 DOM。
 
 **涵盖主题：**
+
 - HTML 结构
 - CSS 样式
 - JavaScript 事件监听器
@@ -12625,9 +13190,6 @@ updateDisplay();
 ```
 
 （注：原文在此处截断，后续内容缺失，故仅输出已有部分。）
-
-
-
 
 HTML:
 
@@ -12744,25 +13306,20 @@ loadQuestion();
 
 ### 随机背景颜色
 
-描述：
+#### 描述
 
 在本练习中，学生将创建一个按钮，每次点击时，页面背景颜色会变为随机颜色。本练习介绍了处理按钮点击、生成随机颜色以及动态更新 DOM。
 
-涵盖主题：
+#### 涵盖主题
 
-● HTML 结构
+- HTML 结构
+- CSS 样式
+- JavaScript 事件监听器
+- 处理按钮点击
+- 生成随机颜色
+- DOM 操作（更新样式）
 
-● CSS 样式
-
-● JavaScript 事件监听器
-
-● 处理按钮点击
-
-● 生成随机颜色
-
-● DOM 操作（更新样式）
-
-HTML:
+#### HTML
 
 ```html
 <!DOCTYPE html>
@@ -12783,7 +13340,7 @@ HTML:
 </html>
 ```
 
-CSS:
+#### CSS
 
 ```css
 body {
@@ -12808,7 +13365,7 @@ button {
 }
 ```
 
-JavaScript:
+#### JavaScript
 
 ```javascript
 document.getElementById('colorButton').addEventListener('click', function() {
@@ -12819,25 +13376,22 @@ document.getElementById('colorButton').addEventListener('click', function() {
 
 ### 数字猜谜游戏
 
-描述：
+#### 描述
 
 在本练习中，学生将创建一个数字猜谜游戏，用户需要猜一个介于 1 到 100 之间的随机数字。本练习介绍了处理表单输入、生成随机数字以及动态更新 DOM。
 
-涵盖主题：
+#### 涵盖主题
 
-● HTML 结构
+- HTML 结构
+- CSS 样式
+- JavaScript 事件监听器
+- 处理表单输入
+- 生成随机数字
+- DOM 操作（更新文本内容）
 
-● CSS 样式
+#### HTML
 
-● JavaScript 事件监听器
 
-● 处理表单输入
-
-● 生成随机数字
-
-● DOM 操作（更新文本内容）
-
-HTML:
 
 ```html
 <!DOCTYPE html>
@@ -12862,7 +13416,7 @@ HTML:
 </html>
 ```
 
-CSS:
+## CSS
 
 ```css
 body {
@@ -12896,7 +13450,7 @@ p {
 }
 ```
 
-JavaScript:
+## JavaScript
 
 ```javascript
 const randomNumber = Math.floor(Math.random() * 100) + 1;
@@ -12917,222 +13471,215 @@ document.getElementById('guessForm').addEventListener('submit', function(event) 
 });
 ```
 
-### 多项选择题
+## 多项选择题
+
+### 1. 单位转换器练习中的表单提交事件
 
 在单位转换器练习中，用于处理表单提交的事件是什么？
 
-a) `click`
+- a) `click`
+- b) `submit`
+- c) `input`
+- d) `change`
 
-b) `submit`
+**答案：** b) `submit`
 
-c) `input`
+**解释：** `submit` 事件用于处理表单提交并执行单位转换。
 
-d) `change`
-
-答案：b) `submit` 解释：`submit` 事件用于处理表单提交并执行单位转换。
+### 2. 单词反转器练习中的字母反转方法
 
 在单词反转器练习中，用于反转每个单词字母的方法是什么？
 
-a) `reverse()`
+- a) `reverse()`
+- b) `split()`
+- c) `split().reverse().join()`
+- d) `join()`
 
-b) `split()`
+**答案：** c) `split().reverse().join()`
 
-c) `split().reverse().join()`
+**解释：** `split().reverse().join()` 方法用于将单词拆分为字符，反转它们，然后重新组合成单词。
 
-d) `join()`
-
-答案：c) `split().reverse().join()` 解释：`split().reverse().join()` 方法用于将单词拆分为字符，反转它们，然后重新组合成单词。
+### 3. 单位转换器练习中的转换率定义
 
 在单位转换器练习中，转换率是如何定义的？
 
-a) 作为变量
+- a) 作为变量
+- b) 作为对象
+- c) 作为数组
+- d) 作为字符串
 
-b) 作为对象
+**答案：** b) 作为对象
 
-c) 作为数组
+**解释：** 转换率被定义为一个对象，其中包含每个度量单位的嵌套对象。
 
-d) 作为字符串
-
-答案：b) 作为对象 解释：转换率被定义为一个对象，其中包含每个度量单位的嵌套对象。
+### 4. 单词反转器练习中的句子输入元素
 
 在单词反转器练习中，用于捕获句子的输入元素是什么？
 
-a) `input`
+- a) `input`
+- b) `textarea`
+- c) `select`
+- d) `button`
 
-b) `textarea`
+**答案：** b) `textarea`
 
-c) `select`
+**解释：** `textarea` 元素用于捕获用户输入的句子。
 
-d) `button`
-
-答案：b) `textarea` 解释：`textarea` 元素用于捕获用户输入的句子。
+### 5. 交互式待办事项列表中的完成类
 
 在交互式待办事项列表练习中，当任务标记为完成时，添加了什么类？
 
-a) `done`
+- a) `done`
+- b) `finished`
+- c) `completed`
+- d) `checked`
 
-b) `finished`
+**答案：** c) `completed`
 
-c) `completed`
+**解释：** 当任务标记为完成时，会添加 `completed` 类，用于对任务应用删除线样式。
 
-d) `checked`
-
-答案：c) `completed` 解释：当任务标记为完成时，会添加 `completed` 类，用于对任务应用删除线样式。
+### 6. 数字猜谜游戏中的随机数字生成方法
 
 在数字猜谜游戏练习中，用于生成随机数字的方法是什么？
 
-a) `Math.random()`
+- a) `Math.random()`
+- b) `Math.floor()`
+- c) `Math.ceil()`
+- d) `Math.round()`
 
-b) `Math.floor()`
+**答案：** a) `Math.random()`
 
-c) `Math.ceil()`
+**解释：** `Math.random()` 方法用于生成 0 到 1 之间的随机数字，然后缩放并向下取整，得到 1 到 100 之间的数字。
 
-d) `Math.round()`
-
-答案：a) `Math.random()` 解释：`Math.random()` 方法用于生成 0 到 1 之间的随机数字，然后缩放并向下取整，得到 1 到 100 之间的数字。
+### 7. 单位转换器练习中的表单提交事件类型
 
 在单位转换器练习中，用于处理表单提交的事件类型是什么？
 
-a) `change`
+- a) `change`
+- b) `click`
+- c) `submit`
+- d) `input`
 
-b) `click`
+**答案：** c) `submit`
 
-c) `submit`
+**解释：** 表单提交通过监听表单元素上的 `submit` 事件来处理，以防止默认表单提交并执行转换。
 
-d) `input`
-
-答案：c) `submit`
-
-解释：表单提交通过监听表单元素上的 `submit` 事件来处理，以防止默认表单提交并执行转换。
+### 8. 单位转换器练习中的结果显示元素
 
 在单位转换器练习中，哪个 HTML 元素用于显示转换后的值？
 
-a) `<div>`
+- a) `<div>`
+- b) `<span>`
+- c) `<p>`
+- d) `<h1>`
 
-b) `<span>`
+**答案：** c) `<p>`
 
+**解释：** 带有 ID `resultDisplay` 的 `<p>` 元素用于显示转换后的值。
 
-
-
-c) `<p>`
-
-d) `<h1>`
-
-答案：c) `<p>`
-
-解释：带有 ID `resultDisplay` 的 `<p>` 元素用于显示转换后的值。
+### 9. 单词反转练习中的单词反转方法
 
 在单词反转练习中，用于反转每个单词的方法是哪个？
 
-a) `split()`
+- a) `split()`
+- b) `reverse()`
+- c) `join()`
+- d) 以上全部
 
-b) `reverse()`
+**答案：** d) 以上全部
 
-c) `join()`
+**解释：** 要反转每个单词，首先使用 `split()` 将文本拆分为单词数组，然后使用 `reverse()` 反转每个单词，最后使用 `join()` 将单词重新组合成字符串。
 
-d) 以上全部
-
-答案：d) 以上全部
-
-解释：要反转每个单词，首先使用 `split()` 将文本拆分为单词数组，然后使用 `reverse()` 反转每个单词，最后使用 `join()` 将单词重新组合成字符串。
+### 10. 单词反转练习中的文本输入元素
 
 在单词反转练习中，用于输入文本的 HTML 元素是哪个？
 
-a) `<input>`
+- a) `<input>`
+- b) `<textarea>`
+- c) `<div>`
+- d) `<p>`
 
-b) `<textarea>`
+**答案：** b) `<textarea>`
 
-c) `<div>`
+**解释：** 带有 ID `textInput` 的 `<textarea>` 元素用于输入将要反转的句子。
 
-d) `<p>`
-
-答案：b) `<textarea>`
-
-解释：带有 ID `textInput` 的 `<textarea>` 元素用于输入将要反转的句子。
+### 11. 交互式待办事项列表中的完成标记方式
 
 在交互式待办事项列表练习中，如何将任务标记为已完成？
 
-a) 通过更改文本内容
+- a) 通过更改文本内容
+- b) 通过向任务元素添加一个类
+- c) 通过移除任务元素
+- d) 通过更改任务元素的颜色
 
-b) 通过向任务元素添加一个类
+**答案：** b) 通过向任务元素添加一个类
 
-c) 通过移除任务元素
+**解释：** 通过切换任务元素上的 `completed` 类来将任务标记为已完成，该类会应用删除线样式。
 
-d) 通过更改任务元素的颜色
-
-答案：b) 通过向任务元素添加一个类
-
-解释：通过切换任务元素上的 `completed` 类来将任务标记为已完成，该类会应用删除线样式。
+### 12. 交互式待办事项列表中的表单提交事件监听器
 
 在交互式待办事项列表练习中，用于处理表单提交的事件监听器是哪个？
 
-a) `change`
+- a) `change`
+- b) `click`
+- c) `submit`
+- d) `input`
 
-b) `click`
+**答案：** c) `submit`
 
-c) `submit`
+**解释：** 使用 `submit` 事件监听器来处理表单提交，以向列表中添加新任务。
 
-d) `input`
-
-答案：c) `submit`
-
-解释：使用 `submit` 事件监听器来处理表单提交，以向列表中添加新任务。
+### 13. 倒计时器中的停止计时器方法
 
 在倒计时器练习中，用于停止计时器的方法是哪个？
 
-a) `clearTimeout()`
+- a) `clearTimeout()`
+- b) `clearInterval()`
+- c) `stopInterval()`
+- d) `stopTimeout()`
 
-b) `clearInterval()`
+**答案：** b) `clearInterval()`
 
-c) `stopInterval()`
+**解释：** `clearInterval()` 方法用于通过清除 `setInterval()` 设置的间隔来停止计时器。
 
-d) `stopTimeout()`
-
-答案：b) `clearInterval()`
-
-解释：`clearInterval()` 方法用于通过清除 `setInterval()` 设置的间隔来停止计时器。
+### 14. 倒计时器中的剩余时间显示元素
 
 在倒计时器练习中，用于显示剩余时间的 HTML 元素是哪个？
 
-a) `<div>`
+- a) `<div>`
+- b) `<span>`
+- c) `<p>`
+- d) `<h1>`
 
-b) `<span>`
+**答案：** c) `<p>`
 
-c) `<p>`
+**解释：** 带有 ID `timerDisplay` 的 `<p>` 元素用于显示剩余时间。
 
-d) `<h1>`
-
-答案：c) `<p>`
-
-解释：带有 ID `timerDisplay` 的 `<p>` 元素用于显示剩余时间。
+### 15. 交互式测验中的答案评估方式
 
 在交互式测验练习中，如何评估用户的答案？
 
-a) 通过比较标签的文本内容
+- a) 通过比较标签的文本内容
+- b) 通过检查选中的单选输入的值
+- c) 通过计算选中的单选输入的数量
+- d) 通过验证表单输入值
 
-b) 通过检查选中的单选输入的值
+**答案：** b) 通过检查选中的单选输入的值
 
-c) 通过计算选中的单选输入的数量
+**解释：** 通过检查选中的单选输入的值并将其与正确答案进行比较来评估用户的答案。
 
-d) 通过验证表单输入值
-
-答案：b) 通过检查选中的单选输入的值
-
-解释：通过检查选中的单选输入的值并将其与正确答案进行比较来评估用户的答案。
+### 16. 交互式测验中的问题显示元素
 
 在交互式测验练习中，用于显示测验问题的 HTML 元素是哪个？
 
-a) `<div>`
+- a) `<div>`
+- b) `<ul>`
+- c) `<p>`
+- d) `<form>`
 
-b) `<ul>`
+**答案：** a) `<div>`
 
-c) `<p>`
-
-d) `<form>`
-
-答案：a) `<div>`
-
-解释：带有 ID `quiz` 的 `<div>` 元素用于显示测验问题。
+**解释：** 带有 ID `quiz` 的 `<div>` 元素用于显示测验问题。
 
 ## 致谢
 
@@ -13156,5 +13703,4 @@ Laurence Svekis 是一位杰出的 Web 开发者、教育家和创新者，在 W
 
 作为畅销书作者，Laurence 的出版物以清晰易懂的教学风格，为 Web 开发和编程提供了宝贵的实用见解。除了教育和写作角色外，他还是一位富有远见的企业家，致力于推动解决实际问题的 Web 技术。他的广泛贡献使他成为 Web 开发和数字学习领域的关键人物，激励着广大受众探索数字世界。
 
-更多信息，请访问 https://basescripts.com/
-
+更多信息，请访问 <https://basescripts.com/>

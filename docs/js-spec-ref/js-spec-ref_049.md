@@ -1,13 +1,7 @@
+
 # 6.10 Performance API
 
-*   performance.timing 对象
-*   performance.now()
-*   performance.mark()
-*   performance.getEntries()
-*   performance.navigation 对象
-*   参考链接
-
-Performance API 用于精确度量、控制、增强浏览器的性能表现。这个 API 为测量网站性能，提供以前没有办法做到的精度。
+## Performance API 用于精确度量、控制、增强浏览器的性能表现。这个 API 为测量网站性能，提供以前没有办法做到的精度。
 
 比如，为了得到脚本运行的准确耗时，需要一个高精度时间戳。传统的做法是使用 Date 对象的 getTime 方法。
 
@@ -27,7 +21,7 @@ console.log("任务运行时间：" + latency);
 
 目前，所有主要浏览器都已经支持 performance 对象，包括 Chrome 20+、Firefox 15+、IE 10+、Opera 15+。
 
-## performance.timing 对象
+### performance.timing 对象
 
 performance 对象的 timing 属性指向一个对象，它包含了各种与浏览器性能有关的时间数据，提供浏览器处理网页各个阶段的耗时。比如，performance.timing.navigationStart 就是浏览器处理当前网页的启动时间。
 
@@ -68,7 +62,7 @@ performance.timing 对象包含以下属性（全部为只读）：
 
 *   domainLookupEnd：返回域名查询结束时的 Unix 毫秒时间戳。如果使用持久连接，或者信息是从本地缓存获取的，则返回值等同于 fetchStart 属性的值。
 
-*   connectStart：返回 HTTP 请求开始向服务器发送时的 Unix 毫秒时间戳。如果使用持久连接（persistent connection），则返回值等同于 fetchStart 属性的值。
+*   connectStart：返回 HTTP 请请求开始向服务器发送时的 Unix 毫秒时间戳。如果使用持久连接（persistent connection），则返回值等同于 fetchStart 属性的值。
 
 *   connectEnd：返回浏览器与服务器之间的连接建立时的 Unix 毫秒时间戳。如果建立的是持久连接，则返回值等同于 fetchStart 属性的值。连接建立指的是所有握手和认证过程全部结束。
 
@@ -78,7 +72,7 @@ performance.timing 对象包含以下属性（全部为只读）：
 
 *   responseStart：返回浏览器从服务器收到（或从本地缓存读取）第一个字节时的 Unix 毫秒时间戳。
 
-*   responseEnd：返回浏览器从服务器收到（或从本地缓存读取）最后一个字节时（如果在此之前 HTTP 连接已经关闭，则返回关闭时）的 Unix 毫秒时间戳。
+*   responseEnd：返回浏览器从服务器收到（或从本地缓存读取）最后一个字节时（如果在此 HTTP 连接已经关闭，则返回关闭时）的 Unix 毫秒时间戳。
 
 *   domLoading：返回当前网页 DOM 结构开始解析时（即 Document.readyState 属性变为“loading”、相应的 readystatechange 事件触发时）的 Unix 毫秒时间戳。
 
@@ -101,7 +95,7 @@ var t = performance.timing;
 var pageLoadTime = t.loadEventEnd - t.navigationStart;
 ```
 
-## performance.now()
+### performance.now()
 
 performance.now 方法返回当前网页自从 performance.timing.navigationStart 到当前时间之间的微秒数（毫秒的千分之一）。也就是说，它的精度可以达到 100 万分之一秒。
 
@@ -125,7 +119,7 @@ var end = performance.now();
 console.log('耗时：' + (end - start) + '微秒。');
 ```
 
-## performance.mark()
+### performance.mark()
 
 mark 方法用于为相应的视点做标记。
 
@@ -136,12 +130,12 @@ window.performance.mark('mark_fully_loaded');
 clearMarks 方法用于清除标记，如果不加参数，就表示清除所有标记。
 
 ```js
-window.peformance.clearMarks('mark_fully_loaded');
+window.performance.clearMarks('mark_fully_loaded');
 
 window.performance.clearMarks();
 ```
 
-## performance.getEntries()
+### performance.getEntries()
 
 浏览器获取网页时，会对网页中每一个对象（脚本文件、样式表、图片文件等等）发出一个 HTTP 请求。performance.getEntries 方法以数组形式，返回这些请求的时间统计信息，有多少个请求，返回数组就会有多少个成员。
 
@@ -160,7 +154,7 @@ window.performance.getEntries()[0]
 
 上面代码返回第一个 HTTP 请求（即网页的 HTML 源码）的时间统计信息。该信息以一个高精度时间戳的对象形式返回，每个属性的单位是微秒（microsecond），即百万分之一秒。
 
-## performance.navigation 对象
+### performance.navigation 对象
 
 除了时间信息，performance 还可以提供一些用户行为信息，主要都存放在 performance.navigation 对象上面。
 
@@ -185,6 +179,9 @@ window.performance.getEntries()[0]
 ## 参考链接
 
 *   Mozilla Developer Network, [Navigation Timing](https://developer.mozilla.org/en-US/docs/Navigation_timing)
+
 *   W3C, [Navigation Timing](http://www.w3.org/TR/navigation-timing/)
+
 *   W3C, [HTML5, A vocabulary and associated APIs for HTML and XHTML](http://www.w3.org/TR/html5/browsers.html)
+
 *   Matt West, [Timing JavaScript Code with High Resolution Timestamps](http://blog.teamtreehouse.com/timing-javascript-code-high-resolution-timestamps)

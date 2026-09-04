@@ -1,61 +1,47 @@
+
 # JavaScript 语言入门指南：自学方法——JSON 与 AngularJS 准备
-
-
 
 ![](img/00035.jpeg)
 
-
-
-
-
 致我的家人、朋友、所有的读者、亚马逊以及亚马逊的支持工作人员……
+
 *非常感谢！*
 
 由于书中提供了所有资源和所有链接练习题，本电子书在使用免费的 `Kindle Reading App` 时效果最佳。
+
 你可以通过以下链接下载 Amazon Kindle Reading App：
+
 [amazon.com/gp/digital/fiona/kcp-landing-page](https://www.amazon.com/gp/digital/fiona/kcp-landing-page)
 
-### indexOf( )
+## indexOf()
 
 *   `indexOf()` 方法返回项目的位置。
 *   如果项目不存在，它返回 -1。
 
+在数组 `var y = ["grape", "apple", "banana"];` 中：
 
-
-
-在数组
-
-`var y = ["grape", "apple", "banana"];` 中
-
-`y.indexOf("banana");` <-- 返回 2（位置 2）
-
-`y.indexOf("chestnut");` <--- 返回 -1（表示“未找到”）
+*   `y.indexOf("banana");` <-- 返回 2（位置 2）
+*   `y.indexOf("chestnut");` <--- 返回 -1（表示“未找到”）
 
 **示例：**
 
-在
-
-`var y = ["grape", "apple", "banana"];` 中
-
-我们可以检查 `chestnut` 是否存在，并编写一个脚本与用户对话：
+在 `var y = ["grape", "apple", "banana"];` 中，我们可以检查 `chestnut` 是否存在，并编写一个脚本与用户对话：
 
 ```javascript
-if(y.indexOf("chestnut") < 0) {
-  console.log( "Not found, would you like to add it?");
+if (y.indexOf("chestnut") < 0) {
+  console.log("Not found, would you like to add it?");
 }
 ```
 
-输出为：
-
-“Not found, would you like to add it?”
+输出为：“Not found, would you like to add it?”
 
 然后我们将编写一个脚本将 `chestnut` 添加到数组中，就像我们在之前的实验工作中所做的那样。
 
-* `< 0` 的部分用于检查 `indexOf` 是否为 -1，这意味着该项目不存在。
-* 反之，`index` 为 0 或以上，则意味着该项目已经在数组中。
-* 每个 `index` 对应一个项目的位置。
+*   `< 0` 的部分用于检查 `indexOf` 是否为 -1，这意味着该项目不存在。
+*   反之，`index` 为 0 或以上，则意味着该项目已经在数组中。
+*   每个 `index` 对应一个项目的位置。
 
-### pop() and shift()
+## pop() 和 shift()
 
 `push()` 的相反方法是 `pop()`，`push()` 是用于向数组顶部或最右侧添加项目的方法。
 
@@ -63,7 +49,7 @@ if(y.indexOf("chestnut") < 0) {
 
 `pop()` 从数组的最末端处移除一个项目。
 
-在
+在：
 
 ```javascript
 var y = ["grape", "apple", "banana"];
@@ -91,24 +77,20 @@ y.push("banana");
 y.unshift("grape");
 ```
 
-现在数组 `y` 回到了原始状态：
+现在数组 `y` 回到了原始状态：`["grape", "apple", "banana"]`。
 
-`["grape", "apple", "banana"]`
-
-### slice()
+## slice()
 
 `slice()` 方法从一个数组中提取特定项目，并以相同的格式类型（数组）输出这些项目。这意味着，如果我们通过将其赋值给另一个变量来捕获输出，我们就创建了另一个数组。
 
 **join() 和 slice() 之间的区别是什么？**
 
-* `join()` 将输出转换为 `string` 值。我们使用括号来确定字符串单词将如何分隔。
-* `slice()` 将输出从数组转换为另一个数组。由于我们不需要确定如何分隔项目（因为它们已经是分开的），我们利用括号传递一些其他参数，如下所示：
-
-`myArray.slice(0,4);` <-- 0 是输出中包含的第一个位置，4 是被排除在输出外的第一个位置。
+*   `join()` 将输出转换为 `string` 值。我们使用括号来确定字符串单词将如何分隔。
+*   `slice()` 将输出从数组转换为另一个数组。由于我们不需要确定如何分隔项目（因为它们已经是分开的），我们利用括号传递一些其他参数，如下所示：`myArray.slice(0,4);` <-- 0 是输出中包含的第一个位置，4 是被排除在输出外的第一个位置。
 
 **示例：**
 
-在
+在：
 
 ```javascript
 var fruits = ["apples", "bananas", "blueberries", "grapes", "avocado", "peaches"];
@@ -120,149 +102,106 @@ var fruits = ["apples", "bananas", "blueberries", "grapes", "avocado", "peaches"
 var pickedFruits = fruits.slice(0,4);
 ```
 
-数组 `pickedFruits` 现在包含：
+数组 `pickedFruits` 现在包含：`["apples", "bananas", "blueberries", "grapes"]`
 
-`["apples", "bananas", "blueberries", "grapes"]`
-
-* 两个参数 (0,4) 有以下含义：
-    * 第一个参数代表要提取的第一个位置。
-    * 第二个参数代表从提取中被排除的第一个位置。
+*   两个参数 (0,4) 有以下含义：
+    *   第一个参数代表要提取的第一个位置。
+    *   第二个参数代表从提取中被排除的第一个位置。
 
 (0,1) 将只提取 `apples`，因为它排除了位于位置 1 的 bananas。
 
-(1,4) 将提取 `bananas, blueberries, grapes`，因为它从位置 1（位置一）即 `bananas` 开始提取，并从位置 4（即 `avocado`）处排除。
+(1,4) 将提取 `bananas, blueberries, grapes`，因为它从位置 1（即 `bananas`）开始提取，并从位置 4（即 `avocado`）处排除。
 
-关于关于 `slice` 的更多高级技巧，请参考我的电子书 [JavaScript Objects Functions and Arrays Explained](http://www.amazon.com/JavaScript-Objects-Functions-Arrays-Explained-ebook/dp/B00GDEPBZQ/)。
+关于 `slice` 的更多高级技巧，请参考我的电子书 [JavaScript Objects Functions and Arrays Explained](http://www.amazon.com/JavaScript-Objects-Functions-Arrays-Explained-ebook/dp/B00GDEPBZQ/)。
 
-### splice()
+## splice()
 
 数组方法 `splice()` 非常有趣。你还记得 `push()` 和 `unshift()` 吗？它们是将项目添加到数组的末尾或开头，对吧？
 
-* `splice()` 在数组的特定位置添加项目。
+*   `splice()` 在数组的特定位置添加项目。
 
 让我们看看它是如何工作的。根据你在括号中使用的参数数量，你可以执行以下操作：
 
 **a) 删除项目模式：**
 
 当你只使用两个参数时，你以以下方式提供 `index` 位置：
-* *第一个参数*：操作开始的位置（包含在），
-* *第二个参数*：将移除多少个项目。
 
-在某种程度上，只有两个参数意味着删除，因为没有要添加的内容。
+*   *第一个参数*：操作开始的位置（包含在内），
+*   *第二个参数*：将移除多少个项目。
 
-`splice(0,3)`（解释见页面下方）
+在某种程度上，只有两个参数意味着删除，因为没有要添加的内容。`splice(0,3)`（解释见页面下方）
 
 **b) 添加项目模式：**
 
-如果你插入了两个以上的参数，第三个及后续的参数是待插入的数据，在这种情况下，JavaScript 假设你想将项目插入数组中。
-
-`splice(2,0, "yellow")`
+如果你插入了两个以上的参数，第三个及后续的参数是待插入的数据，在这种情况下，JavaScript 假设你想将项目插入数组中。`splice(2,0, "yellow")`
 
 在仅添加模式下，第二个参数为零。
 
 **c) 替换项目模式：**
 
-如果你插入两个以上的参数且第二个参数大于零，它将移除项目并插入新项目。
-
-`splice(2,1, "yellow")`
+如果你插入两个以上的参数且第二个参数大于零，它将移除项目并插入新项目。`splice(2,1, "yellow")`
 
 ### Splice 实验
 
-让我们尝试几个示例来说说明 `splice()` 的概念。
+让我们尝试几个示例来说明 `splice()` 的概念。
 
-使用 `splice()` **删除**项目：
+**使用 `splice()` 删除项目：**
 
-1- 在你的控制台中声明以下数组：
+1.  在你的控制台中声明以下数组：
 
 ```javascript
 var x = ["blue","red","green","violet","brown"];
 ```
 
-2- 从位置 0 开始删除 3 个项目，即 *blue*。
-
-从删除中排除位置 3，即 *violet*：`x.splice(0,3);`
-
-
+2.  从位置 0 开始删除 3 个项目，即 *blue*。从删除中排除位置 3，即 *violet*：`x.splice(0,3);`
 
 我们刚刚从数组 `x` 中删除了 `blue`、`red`、`green`。
 
-### 3 调用数组：`x;`
+3.  调用数组：`x;`
 
 它返回 `["violet", "brown"]`，因为位置 0,1,2 处的原始项目被删除了。
 
-### 使用 `splice()` 添加项目
+**使用 `splice()` 添加项目**
 
-4- 让我们把项目添加回数组，从位置零开始，并且不删除任何项目作为交换：`x.splice(0,0, "blue","red","green");`
+4.  让我们把项目添加回数组，从位置零开始，并且不删除任何项目作为交换：`x.splice(0,0, "blue","red","green");`
 
-5- 调用数组：`x;` 返回 `["blue", "red", "green", "violet", "brown"]`。
+5.  调用数组：`x;` 返回 `["blue", "red", "green", "violet", "brown"]`。
 
 我们从位置零开始并添加了所有列出的项目，且删除了零项目。
 
-你可能在编程中不会频繁使用 `splice()`，但它是理解理解并在需要时调用的极棒工具。
+你可能在编程中不会频繁使用 `splice()`，但它是理解并在需要时调用的极棒工具。
 
 我们还有许多更多可以在数组使用的方法。一次性学习所有方法会让人力不从心。获取我的另一本关于 JavaScript 库方法的[书](http://www.amazon.com/JavaScript-Objects-Functions-Arrays-Explained-ebook/dp/B00GDEPBZQ/)作为参考，并易于解释它们如何运作，可能是一个好主意。如果我觉得在这里一次性包含所有方法会有帮助，我就会那样做了。当然，你总是可以搜索，并希望不要被互联网上某些虚假的解释所困扰或偏离主题。了解这些工具是成为该领域大师的重要一步。
 
 ## 2.12 实验作业 9
 
-注意：如果你想和我一起做这个练习，请跳过接 14 步。
+注意：如果你想和我一起做这个练习，请跳过第 14 步。
 
 留出此页供以后练习。
 
-1- 以以下数组 `y` 为例并对数组排序：
+1.  以以下数组 `y` 为例并对数组排序：
 
 ```javascript
 var y = ["grape", "apple", "banana"];
 ```
 
-2- 现在将排序后的数组 `y` 的内容赋值给新数组 `mySort`。
-
-3- 通过在控制台显示其内容来测试 `mySort`。
-
-4- 现在，以字符串格式显示数组 `mySort`，并用 1 个空格分隔项目。提示：使用 `join()`。
-
-5- 现在，不要只是显示它，而是将 `mySort` 中的项目赋值给新变量 `z`，但使用字符串格式。
-
-使用空格、正斜杠和空格的组合作为分隔符。
-
-6- 调用 `z`。
-
-7- 使用 `indexOf()` 方法找到数组 `y` 中 "banana" 的位置。
-
-8- 测试 "banana" 是否存在于数组 `y` 中（使用 if 条件语句），并使用 `console.log()` 在屏幕上显示以下消息：
-
-"*banana is contained in array y*"
-
-9- 使用与上一个练习相同的方法查找 "chestnut"，然后显示两条消息，一个用于 `if()`，另一个用于 `else`，如下：
-
-"*chestnut is contained in array y*"
-
-else: "*chestnut is not found in array y*".
-
-10- 使用 `pop()` 移除数组 `mySort` 的最后一个项目：
-
-11- 使用 `shift()` 移除数组 `mySort` 的第一个项目：
-
-12- 数组 `mySort` 现在应该只包含 "banana"。
-
-添加 "chestnut" 作为最后一个项目。
-
-使用 `push()`。
-
-`mySort` 现在应该有 2 个项目，`["banana", "chestnut"]`。
-
-13- 使用 `splice()` 在数组 `mySort` 的位置 1 处插入 "apple"（作为第二个项目）。不要删除任何现有项目。
-
-`mySort` 现在应该包含 `["banana", "apple", "chestnut"]`。
-
-14- 使用 `slice()` 创建一个名为 `newArray` 的新数组，包含 `mySort` 数组中第二和第三项目 ("apple" 和 "chestnut") 的副本。
-
-`newArray` 现在应该包含 `["apple", "chestnut"]`。
-
-（参见我在下一页的结果。)
+2.  现在将排序后的数组 `y` 的内容赋值给新数组 `mySort`。
+3.  通过在控制台显示其内容来测试 `mySort`。
+4.  现在，以字符串格式显示数组 `mySort`，并用 1 个空格分隔项目。提示：使用 `join()`。
+5.  现在，不要只是显示它，而是将 `mySort` 中的项目赋值给新变量 `z`，但使用字符串格式。使用空格、正斜杠和空格的组合作为分隔符。
+6.  调用 `z`。
+7.  使用 `indexOf()` 方法找到数组 `y` 中 "banana" 的位置。
+8.  测试 "banana" 是否存在于数组 `y` 中（使用 if 条件语句），并使用 `console.log()` 在屏幕上显示以下消息："*banana is contained in array y*"
+9.  使用与上一个练习相同的方法查找 "chestnut"，然后显示两条消息，一个用于 `if()`，另一个用于 `else`，如下："*chestnut is contained in array y*" else: "*chestnut is not found in array y*".
+10. 使用 `pop()` 移除数组 `mySort` 的最后一个项目：
+11. 使用 `shift()` 移除数组 `mySort` 的第一个项目：
+12. 数组 `mySort` 现在应该只包含 "banana"。添加 "chestnut" 作为最后一个项目。使用 `push()`。`mySort` 现在应该有 2 个项目，`["banana", "chestnut"]`。
+13. 使用 `splice()` 在数组 `mySort` 的位置 1 处插入 "apple"（作为第二个项目）。不要删除任何现有项目。`mySort` 现在应该包含 `["banana", "apple", "chestnut"]`。
+14. 使用 `slice()` 创建一个名为 `newArray` 的新数组，包含 `mySort` 数组中第二和第三项目 ("apple" 和 "chestnut") 的副本。`newArray` 现在应该包含 `["apple", "chestnut"]`。（参见我在下一页的结果。）
 
 ### 实验作业 9 答案
 
-1- 以以下数组 `y` 为例并对数组排序：
+1.  以以下数组 `y` 为例并对数组排序：
 
 ```javascript
 var y = ["grape", "apple", "banana"];
@@ -271,13 +210,13 @@ y.sort();
 
 它返回 `["apple", "banana", "grape"]`。
 
-2- 将排序数组 `y` 的内容赋值给新数组 `mySort`：
+2.  将排序数组 `y` 的内容赋值给新数组 `mySort`：
 
 ```javascript
 var mySort = y.sort();
 ```
 
-3- 测试 `mySort`：
+3.  测试 `mySort`：
 
 ```javascript
 mySort;
@@ -285,7 +224,7 @@ mySort;
 
 它返回 `["apple", "banana", "grape"]`。
 
-4- 现在以字符串格式显示数组 `mySort`，并用 1 个空格分隔项目。提示：使用 `join()`：
+4.  现在以字符串格式显示数组 `mySort`，并用 1 个空格分隔项目。提示：使用 `join()`：
 
 ```javascript
 mySort.join(" ");
@@ -297,15 +236,15 @@ mySort.join(" ");
 console.log(mySort.join(" "));
 ```
 
-它以字符串格式返回 "*apple banana grape*"。
+它以字符串格式返回 "apple banana grape"。
 
-5- 现在，不要只是显示它，而是将 `mySort` 中的项目赋值给新变量 `z`，但使用字符串格式。使用空格、正斜杠和空格的组合作为分隔符：
+5.  现在，不要只是显示它，而是将 `mySort` 中的项目赋值给新变量 `z`，但使用字符串格式。使用空格、正斜杠和空格的组合作为分隔符：
 
 ```javascript
 var z = mySort.join(" / ");
 ```
 
-6- 调用 `z`：
+6.  调用 `z`：
 
 ```javascript
 z;
@@ -313,7 +252,7 @@ z;
 
 返回 "apple / banana / grape"。
 
-7- 使用 `indexOf()` 方法找到数组 `y` 中 "banana" 的位置：
+7.  使用 `indexOf()` 方法找到数组 `y` 中 "banana" 的位置：
 
 ```javascript
 y.indexOf("banana");
@@ -321,33 +260,29 @@ y.indexOf("banana");
 
 它返回 1，这意味着 "banana" 存在于位置 1（第二个项目）。
 
-8- 测试 "banana" 是否存在于数组 `y` 中（使用 if 条件语句），并使用 `console.log()` 在屏幕上显示以下消息：
+8.  测试 "banana" 是否存在于数组 `y` 中（使用 if 条件语句），并使用 `console.log()` 在屏幕上显示以下消息：
 
 ```javascript
-if(y.indexOf("banana") >=0){
+if (y.indexOf("banana") >= 0) {
   console.log("banana is contained in array y");
 }
 ```
 
-返回 "*banana is contained in array y*"。
+返回 "banana is contained in array y"。
 
-9- 使用与上一个练习相同的方法查找 "chestnut"。然后显示两条消息，一个用于 `if()`，另一个用于 `else`，如下：
-
-"*chestnut is contained in array y*"
-
-else: "*chestnut is not found in array y*"：
+9.  使用与上一个练习相同的方法查找 "chestnut"。然后显示两条消息，一个用于 `if()`，另一个用于 `else`，如下："chestnut is contained in array y" else: "chestnut is not found in array y"：
 
 ```javascript
-if(y.indexOf("chestnut") >=0){
+if (y.indexOf("chestnut") >= 0) {
   console.log("chestnut is contained in array y");
 } else {
   console.log("chestnut is not found in array y");
 }
 ```
 
-返回 "*chestnut is not found in array y*"。
+返回 "chestnut is not found in array y"。
 
-10- 使用 `pop()` 移除数组 `mySort` 的最后一个项目：
+10. 使用 `pop()` 移除数组 `mySort` 的最后一个项目：
 
 ```javascript
 mySort.pop();
@@ -355,7 +290,7 @@ mySort.pop();
 
 它移除了 "grape"。
 
-11- 使用 `shift()` 移除数组 `mySort` 的第一个项目：
+11. 使用 `shift()` 移除数组 `mySort` 的第一个项目：
 
 ```javascript
 mySort.shift();
@@ -363,7 +298,7 @@ mySort.shift();
 
 它移除了 "apple"。
 
-12- `mySort` 现在应该只包含 "banana"。添加 "chestnut" 作为最后一个项目。使用 `push()`：
+12. `mySort` 现在应该只包含 "banana"。添加 "chestnut" 作为最后一个项目。使用 `push()`：
 
 ```javascript
 mySort.push("chestnut");
@@ -371,7 +306,7 @@ mySort.push("chestnut");
 
 `mySort` 现在应该有 2 个项目，`["banana", "chestnut"]`。
 
-13- 使用 `splice()` 在数组 `mySort` 的位置 1 处插入 "apple"（作为第二个项目）。不要删除任何现有项目。
+13. 使用 `splice()` 在数组 `mySort` 的位置 1 处插入 "apple"（作为第二个项目）。不要删除任何现有项目。
 
 ```javascript
 mySort.splice(1,0,"apple");
@@ -379,7 +314,7 @@ mySort.splice(1,0,"apple");
 
 `mySort` 现在应该包含 `["banana", "apple", "chestnut"]`。
 
-14- 使用 `slice()` 创建一个名为 `newArray` 的新数组，包含 `mySort` 数组中第二和第三项目 ("apple" 和 "chestnut") 的副本：
+14. 使用 `slice()` 创建一个名为 `newArray` 的新数组，包含 `mySort` 数组中第二和第三项目 ("apple" 和 "chestnut") 的副本：
 
 ```javascript
 var newArray = mySort.slice(1,3);
@@ -393,86 +328,53 @@ var newArray = mySort.slice(1,3);
 
 ### 构建从数组获取变量的机制
 
-此练习将复变量赋值、创建包含变量元素的数组，以及函数声明、变量重新赋值和 indexOf 的用法。
+此练习将复习变量赋值、创建包含变量元素的数组，以及函数声明、变量重新赋值和 `indexOf` 的用法。
 
 思路是调用函数并选择一种语言作为参数。然后，根据所选的语言，显示正确的句子。这听起来有趣吗？
 
-示例：
-
-当调用 `show(english);` 时
-
-显示：“**The quick brown fox jumped over the lazy dog**”。注意 `english` 没有被引号包裹（它是小写的）。这告诉我们它是一个变量名，而不是字符串。
+示例：当调用 `show(english);` 时，显示：“The quick brown fox jumped over the lazy dog”。注意 `english` 没有被引号包裹（它是小写的）。这告诉我们它是一个变量名，而不是字符串。
 
 我使用了 [谷歌翻译](https://translate.google.com/) 将我的句子从英语翻译成葡萄牙语和西班牙语。如果对母语者听起来奇怪，请见谅，这是出于好意。
 
 方便链接 [jsbeautify](http://jsbeautifier.org/)
 
-***请独立完成练习。
+***请独立完成练习。最后将提供我的文件链接。也将提供中间文件以便你检查工作。***
 
-    最后将提供我的文件链接。
+1.  定义三个名为 `english`、`portuguese`、`spanish` 的变量。分别为每个变量分配以下句子：（方便复制粘贴链接：[原始文件](http://icontemp.com/jpl/fox.txt) | bit.ly/1mpqCsr）
+    *   "The quick brown fox jumped over the lazy dog"
+    *   "A ligeira raposa marrom saltou sobre o cão preguiçoso"
+    *   "El rápido zorro marrón saltó sobre el perro perezoso"
 
-    也将提供中间文件以便你检查工作。***
+2.  声明一个名为 `langVersion` 的数组，包含以下元素：`english`、`portuguese`、`spanish`。记住，由于这些名称已经声明为变量，我们不应该给它们加引号，只需用逗号隔开即可。这个数组的目的是按顺序保存每个变量。我们不能直接使用这些变量而忘记数组吗？是的，可以。然而，在大型程序中，这些变量将与其他许多变量一起保存，通过创建一个数组，我们列出了与语言翻译相关的变量，这些变量可以被进一步地操作、编辑、删除，甚至成为更大语言组的一部分。当然，还有其他方法可以实现，但现在我们正在练习数组，这是一项非常重要的练习。
 
-1- 定义三个名为 `english`、`portuguese`、`spanish` 的变量。
+3.  声明另一个名为 `sentence` 的变量，其数值值为 `0`。这个变量将用于存储我们要从数组所有语言中选择的语言索引位置。我们之所以给这个变量赋值为零，是为了提前告诉 JavaScript 该变量将是数值型的。在实际上，JavaScript 会根据需要更改值的类型，但声明我们的意图是一个良好的习惯，即使这种意图可能只是有助于检查代码的人员，而不是帮助 JavaScript 处理它。（步骤 1、2、3 的方便复制/粘贴链接：[原始文件](http://icontemp.com/jpl/fox1.txt) | bit.ly/1Dt7fnS）
 
-分别为每个变量分配以下句子：
+4.  在你当前代码下方，创建一个名为 `show` 的函数。该函数的目的是根据我们在调用函数时选择的语言，显示正确的句子。该句子将从语言数组中选取。
 
-（方便复制粘贴链接：[原始文件](http://icontemp.com/jpl/fox.txt) | bit.ly/1mpqCsr )
-
-"*The quick brown fox jumped over the lazy dog*"
-
-"*A ligeira raposa marrom saltou sobre o cão preguiçoso*"
-
-
-
-
-"*El rápido zorro marrón saltó sobre el perro perezoso*"
-
-### 2- 声明一个名为 `langVersion` 的数组，包含以下元素：`english`、`portuguese`、`spanish`。
-
-记住，由于这些名称已经声明为变量，我们不应该给它们加引号，只需用逗号隔开即可。
-
-这个数组的目的是按顺序保存每个变量。我们不能直接使用这些变量而忘记数组吗？是的，可以。然而，在大型程序中，这些变量将与其他许多变量一起保存，通过创建一个数组，我们列出了与语言翻译相关的变量，这些变量可以被进一步地操作、编辑、删除，甚至成为更大语言组的一部分。当然，还有其他方法可以实现，但现在我们正在练习数组，这是一项非常重要的练习。
-
-### 3- 声明另一个名为 `sentence` 的变量，其数值值为 `0`。
-
-这个变量将用于存储我们要从数组所有语言中选择的语言索引位置。
-
-我们之所以给这个变量赋值为零，是为了提前告诉 JavaScript 该变量将是数值型的。在实际上，JavaScript 会根据需要更改值的类型，但声明我们的意图是一个良好的习惯，即使这种意图可能只是有助于检查代码的人员，而不是帮助 JavaScript 处理它。
-
-(步骤 1、2、3 的方便复制/粘贴链接：[原始文件](http://icontemp.com/jpl/fox1.txt) | bit.ly/1Dt7fnS )
-
-### 4- 在你当前代码下方，创建一个名为 `show` 的函数。
-
-该函数的目的是根据我们在调用函数时选择的语言，显示正确的句子。该句子将从语言数组中选取。
-
-```
+```javascript
 function show() {}
 ```
 
-### 5-为函数引入一个名为 `language` 的输入参数。
+5.  为函数引入一个名为 `language` 的输入参数。
+6.  在函数体第 1 行，将已声明的变量 `sentence` 重新赋值为选中语言的索引位置。我们通过 `indexOf()` 来查找位置，如下：
 
-### 6- 在函数体第 1 行，将已声明的变量 `sentence` 重新赋值为选中语言的索引位置。我们通过 `indexOf()` 来查找位置，如下：
-
-```
+```javascript
 sentence = langVersion.indexOf(language);
 ```
 
 稍后，当我们调用函数时（例如 `show(portugese)`），参数 `language` 将由传递给函数的任何语言参数替换。`indexOf(language)` 将为变量 `sentence` 分配该语言正确的数组地址。
 
-### 7- 最后，在下一行且仍在函数体内部，编写一个 `console.log` 来在有人调用函数时显示所选变量的内容：
+7.  最后，在下一行且仍在函数体内部，编写一个 `console.log` 来在有人调用函数时显示所选变量的内容：
 
-```
+```javascript
 console.log(langVersion[sentence]);
 ```
 
 从步骤 6 我们知道，变量 `sentence` 是数组中某项的索引位置。
 
-### 8- 将你的代码粘贴到控制台（Console）并调用函数 `show()` 来测试每个句子
+8.  将你的代码粘贴到控制台并调用函数 `show()` 来测试每个句子（注意：如果你遇到错误，请感谢上天获得调试的机会，因为这是一项非常好的习惯）：
 
-（注意：如果你遇到错误，请感谢上获得调试的机会，因为这是一项非常好的习惯）：
-
-```
+```javascript
 show(english);
 show(portugese);
 show(spanish);
@@ -480,72 +382,34 @@ show(spanish);
 
 你可能会在输出句子后看到 `undefined` 词。这在测试控制台中是正常的。它只是告诉我们函数 `show()` 没有显式地返回任何内容，因此它会自动返回 `undefined`，因为 JavaScript 函数总是会返回某些内容的。
 
-查看以下链接中的最终版本：
-
-[论坛](http://jsplain.com/javascript/index.php/Thread/18-Lab-10/) | [原始文本](http://icontemp.com/jpl/fox2.txt)。
-
-bit.ly/1r0Ho2D | bit.ly/1mCJogu
+查看以下链接中的最终版本：[论坛](http://jsplain.com/javascript/index.php/Thread/18-Lab-10/) | [原始文本](http://icontemp.com/jpl/fox2.txt)。bit.ly/1r0Ho2D | bit.ly/1mCJogu
 
 **旁记：**
 
 *   如果某些地方不清楚，在自觉地提出问题之前不要继续进行。停下来，后退一步，尝试观察每一行代码试图做什么。如果需要，就尝试 100 次。然后，当你认为你知道不明白什么时，继续进行，看看在查看整个脚本时，理解是否会在作业结束时产生。如果你有任何疑问，不要放过。概念需要思考；我们不能直接跳过它们并认为以后会掌握它们。
-
 *   另一方面，理解是分层的，但我们需要自觉地确保，即使我们没有完全掌握某事的观点也能继续我们的道路。在继续之前，先问自己一个问题并给自己一个诚实的回答。人们说，提问的行为本身就是答案的一半，很多时候当我们正确描述问题时，答案就会变得显而易见。
 
 ### 将法语添加到数组
 
 突然有人抱怨没有“快速棕色狐狸”的法语版本。
 
-### 1- 如果你的控制台还开着，在提示符处添加一个变量 `french`：
-
-```
-var french =
-```
-
-不要担心在脚本的最末尾。我们只是在测试东西。注意 `french` 是小写的。
-
-变量以小写字母开头。
-
-### 2- 将以下行赋值给变量 `french`：
-
-"*Le renard brun rapide saute par dessus le chien paresseux*"
-
-[原始文件](http://icontemp.com/jpl/fox3.txt). | bit.ly/1wGvYQS.
-
-### 3- 现在，使用 `push()` 方法将变量 `french` 插入数组 `langVersion` 中。
-
-```
-langVersion.push(french);
-```
-
-### 4- 通过调用以下代码测试脚本
-
-```
-show(french);
-```
-
-*   在此处查看最终版本：
-    [论坛](http://jsplain.com/javascript/index.php/Thread/18-Lab-10/) | [原始文本](http://icontemp.com/jpl/fox2.txt)。
+1.  如果你的控制台还开着，在提示符处添加一个变量 `french`：`var french =` 不要担心在脚本的最末尾。我们只是在测试东西。注意 `french` 是小写的。变量以小写字母开头。
+2.  将以下行赋值给变量 `french`："Le renard brun rapide saute par dessus le chien paresseux" [原始文件](http://icontemp.com/jpl/fox3.txt). | bit.ly/1wGvYQS.
+3.  现在，使用 `push()` 方法将变量 `french` 插入数组 `langVersion` 中：`langVersion.push(french);`
+4.  通过调用以下代码测试脚本：`show(french);`
+    *   在此处查看最终版本：[论坛](http://jsplain.com/javascript/index.php/Thread/18-Lab-10/) | [原始文本](http://icontemp.com/jpl/fox2.txt)。
 
 ### 打印数组
 
-你还记得如何创建 *for* 循环吗？在这个项目中我们将 *console.log* 数组元素。
+你还记得如何创建 `for` 循环吗？在这个项目中我们将 `console.log` 数组元素。
 
-### 1- 创建一个打印数组的 for 循环。
+1.  创建一个打印数组的 `for` 循环。我将使用常用的命名法 `i` 作为变量，并将 `langVersion.length` 作为循环的限制条件。
+2.  在循环体中，`console.log` 内容。这是通过动态访问 `langVersion[i]` 实现的，它是循环重复时的当前位置。
 
-我将使用常用的命名法 `i` 作为变量，并将 `langVersion.length` 作为循环的限制条件。
+*   数组最后一个项的位置始终是 `array.length - 1`。不需要死记这个事实，只需要理解位置是从零开始计数的。如果我们以后需要手动向数组添加项，这非常好。对于自动添加新项，我们可以使用 `push()` 将它们插入末尾，或使用 `unshift()` 将它们放在开头，或者如果我们想在特定位置插入项，可以使用 `splice()`。另一方面，删除项时，如果项在末尾使用 `pop()`，在开头使用 `shift()`，如果想从特定位置删除项，则使用多功能的 `splice()`。
+*   至于扫描数组，我们通过 `for` 循环遍历数组以打印其内容，我们也知道 JavaScript 库还有许多其他方法可以用于进一步处理数组。其中一些方法在本书中已经介绍过，其他更高级的方法可以在我的电子书“[JavaScript 详解](http://www.amazon.com/JavaScript-Objects-Functions-Arrays-Explained-ebook/dp/B00GDEPBZQ/)”中阅读。
 
-### 2- 在循环体中，*console.log* 内容。
-
-这是通过动态访问 `langVersion[i]` 实现的，它是循环重复时的当前位置。
-
-
-
-
-
--   数组最后一个项的位置始终是 `array 长度减 1`。不需要死记这个事实，只需要理解位置是从零开始计数的。如果我们以后需要手动向数组添加项，这非常好。对于自动添加新项，我们可以使用 `push()` 将它们插入末尾，或使用 `unshift()` 将它们放在开头，或者如果我们想在特定位置插入项，可以使用 `splice()`。另一方面，删除项时，如果项在末尾使用 `pop()`，在开头使用 `shift()`，如果想从特定位置删除项，则使用多功能的 `splice()`。
-
--   至于扫描数组，我们通过 `for loop` 遍历数组以打印其内容，我们也知道 JavaScript 库还有许多其他方法可以用于进一步处理数组。其中一些方法在本书中已经介绍过，其他更高级的方法可以在我的电子书“[JavaScript 详解](http://www.amazon.com/JavaScript-Objects-Functions-Arrays-Explained-ebook/dp/B00GDEPBZQ/)”中阅读。
+## 对象（Objects）：无序列表
 
 在本主题中，我们将学习 `unordered lists`（无序列表）的操作。
 
@@ -557,29 +421,21 @@ show(french);
 
 在正式数组中，我们不需要命名地址或口袋标签，因为在数字上是假设的，例如：
 
-```
+```javascript
 var myArray = ["duck", "lettuce", "sapphire"];
 ```
 
 对于 `unordered` 列表，我们需要标记项的位置，我的意思是存储项的口袋。这对于某些应用是有益的：
 
-```
+```javascript
 var x = {"animal": "duck", "vegetable": "lettuce", "mineral": "sapphire"};
 ```
 
-注意对每个项的赋值是如何进行的：`"animal": "duck"`，
+注意对每个项的赋值是如何进行的：`"animal": "duck"`，`animal` 是标签，`duck` 是值。有一个 `冒号` `:` 分隔两者，而不是 `=`。我们使用 `大括号` 来包裹列表，而不是保留给 `arrays` 的 `方括号`。
 
-`animal` 是标签，`duck` 是值。
+*   **请注意：** 包裹标签的引号是可选的，但包裹字符串值的引号不是可选的，因为在我们的示例中我们使用的是字符串值。关于这一点稍后会介绍。
 
-有一个 `冒号` `:` 分隔两者，而不是 `=`。
-
-我们使用 `大括号` 来包裹列表，而不是保留给 `arrays` 的 `方括号`。
-
-*   **请注意：** 包裹标签的引号是可选的，但包裹字符串值的引号不是的，因为在我们的示例中我们使用的是字符串值。
-
-关于这一点稍后会介绍。
-
-### 哈希表（Hashes）、对象（objects）、关联数组、无序列表
+### 哈希表、对象、关联数组、无序列表
 
 在 JavaScript 中，所有这些名称都是同义词。每种编程语言使用不同的术语来表示无序列表。
 
@@ -607,67 +463,30 @@ JavaScript 在这方面非常多功能。值列表的大小可以随时缩小或
 
 **同时声明对象并赋值值：**
 
-```
+```javascript
 var x = {"animal": "duck", "vegetable": "lettuce", "mineral": "sapphire"};
 ```
 
-***我们上面有什么？***
+**我们上面有什么？**
 
 我们有一个名为 `x` 的变量，它指向一个 `object` 类型的数据结构。我们知道它是对象是因为包裹数据的大括号：`{ }`。
 
 变量 `x` 和数据结构本身位于内存中独立的（且不同的）部分。它们是相互独立的。这种内存独立性也适用于 `arrays` 和 `functions`，但当我们声明一个简单的 `string` 或 `numeric` 变量时，变量名和值之间没有分离；它们与变量名位于相同位置。我们稍后会对此进行更多介绍。
 
-
-
-
-
 作为一个有趣的现象，请注意 `JavaScript` 是如何将新项放在最后一个项右侧的。然而，这些项放在哪里实际上并不重要，因为与 `arrays` 不同，我们访问这些项时不需要此类信息。
 
-## 5- 现在我们将添加一些`numeric keys`（数字键），来看看会发生什么
+### 使用括号表示法添加项
 
-（不是一种常见的实现方式）：
+1.  创建一个新的空对象：`var crazyList = { };`
+2.  让我们通过将值赋值给键标签来添加一些值：`crazyList["flower"] = "daisy";` 现在 `crazyList` 包含 `{"flower": "daisy"}`。
+3.  添加另一个键值对：`crazyList["drink"] = "water";` 现在 `crazyList` 包含：`{"flower": "daisy", "drink": "water"}`。
+4.  现在我们将添加一些 `numeric keys`（数字键），来看看会发生什么（不是一种常见的实现方式）：`crazyList[2] = "front teeth";` `crazyList` 现在持有有 3 个项：`{"2": "front teeth", "flower": "daisy", "drink": "water"}` 你看到数字键是如何被放置在所有 `string` 类型键的左侧了吗？再次，这对我们没有意义，因为这并不一致。
+5.  让我们添加另外两个数字键：`crazyList["1"] = "flying bird";` 以及 `crazyList[3] = "is a crowd";` 现在 `crazyList` 包含：`{"1": "flying bird", "2": "front teeth", "3": "is a crowd", "flower": "daisy", "drink": "water"}` 所以我们看到，当键是数字时，项会被放在左侧，并且按数字顺序排列。当键是字符串值时，项会被放在最后一个最右侧的项之后。此外注意我是如何给 `["1"]` 加引号的。这只是为了说明，当涉及到数字键时，它们可以加引号也可以不加。这取决于你。
+    *   键值对的顺序位置对我们目前来说没有价值。这只是作为一个有趣的现象被提到的。请不要尝试记忆这种特性，因为这是一个无序列表，我们将根据需要调用它们的标签来选取项。
 
-```javascript
-crazyList[2] = "front teeth";
-```
+### 在对象上使用点表示法
 
-`crazyList` 现在持有有 3 个项：
-
-`{"2": "front teeth", "flower": "daisy", "drink": "water"}`
-
-你看到数字键是如何被放置在所有 `string` 类型键的左侧了吗？
-
-再次，这对我们没有意义，因为这并不一致。
-
-## 6- 让我们添加另外两个数字键：
-
-```javascript
-crazyList["1"] = "flying bird";
-```
-
-以及
-
-```javascript
-crazyList[3] = "is a crowd";
-```
-
-现在 `crazyList` 包含：
-
-`{"1": "flying bird", "2": "front teeth", "3": "is a crowd", "flower": "daisy", "drink": "water"}`
-
-所以我们看到，当键是数字时，项会被放在左侧，并且按数字顺序排列。当键是字符串值时，项会被放在最后一个最右侧的项之后。
-
-此外注意我是如何给 `["1"]` 加引号的。这只是为了说明，当涉及到数字键时，它们可以加引号也可以不加。这取决于你。
-
-*   键值对的顺序位置对我们目前来说没有价值。这只是作为一个有趣的现象被提到的。请不要尝试记忆这种特性，因为这是一个无序列表，我们将根据需要调用它们的标签来选取项。
-
-### 在对象上使用点表示法（dot notation）
-
-在在上一个示例中，我们使用了括号表示法（bracket notation）来调用与每个对象属性（值）相对应的标签。
-
-我们 也可以使用 `dot notation`（点表示法）来表示对象的属性。
-
-这实际上是访问对象项的一种非常方法。事实上，我们需要非常熟悉这两种写法，因为尽管 `dot notation` 很流行，但有时它无法使用。另一方面，如果你只使用括号表示法，你的代码看起来将与标准不同，别人会问你为什么用这种风格编写。学习如何用 `dot notation` 写某些表达式，用括号表示法写其他表达式是值得的。实践会告诉你何时该使用哪一个。
+在上一个示例中，我们使用了括号表示法来调用与每个对象属性（值）相对应的标签。我们也可以使用 `dot notation`（点表示法）来表示对象的属性。这实际上是访问对象项的一种非常常用的方法。事实上，我们需要非常熟悉这两种写法，因为尽管 `dot notation` 很流行，但有时它无法使用。另一方面，如果你只使用括号表示法，你的代码看起来将与标准不同，别人会问你为什么用这种风格编写。学习如何用 `dot notation` 写某些表达式，用括号表示法写其他表达式是值得的。实践会告诉你何时该使用哪一个。
 
 **关于这两种编码风格之间的差异，你应该了解这些：**
 
@@ -681,47 +500,10 @@ crazyList[3] = "is a crowd";
 
 让我们用 `dot notation` 代替 `bracket notation` 重复之前的示例：
 
-1- 创建一个新的空对对象：
-
-```javascript
-var crazyList = { };
-```
-
-2- 让我们通过将值赋值给键标签来添加一些值：
-
-```javascript
-crazyList.flower = "daisy";
-```
-
-现在 `crazyList` 包含 `{flower: "daisy"}`
-
-注意在 `dot notation` 中键是不带引号编写的。这是因为 `flower` 已经在内存中声明为对象 `crazyList` 属性的键。然而在括号表示法中，我们总是给键的字符串名称加上引号，如 "flower"。在 `dot notation` 中引号是无效的。
-
-`crazyList."flower"` 将导致错误
-
-3- 添加另一个键值对：
-
-```javascript
-crazyList.drink = "water";
-```
-
-现在 `crazyList` 包含：`{flower: "daisy", drink: "water"}`
-
-4- 使用点语法添加数字键：
-
-```javascript
-crazyList.2 = "front teeth";
-```
-
-我们得到了如下错误：
-
-`SyntaxError: Unexpected number`
-
-点语法中不允许使用数字。它需要像这样处理：
-
-```javascript
-crazyList[2] = "front teeth";
-```
+1.  创建一个新的空对象：`var crazyList = { };`
+2.  让我们通过将值赋值给键标签来添加一些值：`crazyList.flower = "daisy";` 现在 `crazyList` 包含 `{flower: "daisy"}`。注意在 `dot notation` 中键是不带引号编写的。这是因为 `flower` 已经在内存中声明为对象 `crazyList` 属性的键。然而在括号表示法中，我们总是给键的字符串名称加上引号，如 `"flower"`。在 `dot notation` 中引号是无效的。`crazyList."flower"` 将导致错误。
+3.  添加另一个键值对：`crazyList.drink = "water";` 现在 `crazyList` 包含：`{flower: "daisy", drink: "water"}`。
+4.  使用点语法添加数字键：`crazyList.2 = "front teeth";` 我们得到了如下错误：`SyntaxError: Unexpected number`。点语法中不允许使用数字。它需要像这样处理：`crazyList[2] = "front teeth";`
 
 **总结：**
 
@@ -731,7 +513,7 @@ crazyList[2] = "front teeth";
 var z = { };
 ```
 
-然后我们可以通过通过 `dot notation` 或 `bracket notation` 提供 `key` 和 `value` 来添加项：
+然后我们可以通过 `dot notation` 或 `bracket notation` 提供 `key` 和 `value` 来添加项：
 
 ```javascript
 z.rent = 750;
@@ -752,178 +534,91 @@ var b = {"color": "red", "fabric": "cotton"};
 
 ### 跨越多行的对象声明
 
-到为止，我们的对象都是简短的单行。然而在大多数情况下，对象更为复杂，并跨越几行代码。
+到为止，我们的对象都是简短的单行。然而在大多数情况下，对象更为复杂，并跨越几行代码。单行对象和多行对象之间没有区别。第二种编写对象的方式更符合视觉，但 `JavaScript` 并不在乎哪一种。
 
-单行对象和多行对象之间没有区别。第二种编写对象的方式更符合视觉，但 `JavaScript` 并不在乎哪一种。
+1.  这是一个多行语法风格的示例。请沿行编写代码。以台式电脑作为一个对象为例；我们可以说显示器、键盘和鼠标是台式电脑的一些属性。然后我们也可以说 Firefox 和 Chrome 浏览器，以及 Microsoft Word 是台式电脑的方法，因为这些属性具有功能性，它们在物理意义上并不存在，我们需要像调用函数一样调用它们才能使用它们。它们代表了台式电脑的一些方法。它们的存在是基于某些程序例程的执行。当我们提到“执行”时，会立即想到函数，但函数和方法之间是有区别的：
+    *   一个方法可能包含一个或多个函数。
+    *   你看出区别了吗？一个函数可以是一个对象的方法，但它本身并不一定是一个方法。方法是一组功能的集合，用于代表对象完成某任务。例如，打印目录列表的方法、更新对象内容的方法、排序内容的方法，或者识别请求对象内容的人的方法等。
 
-1-这是一个多行语法风格的示例。请沿行编写代码。
+### 为我们的汽车对象添加一个方法
 
-
-
-
-以台式电脑作为一个对象为例；我们可以说显示器、键盘和鼠标是台式电脑的一些属性。然后我们也可以说 Firefox 和 Chrome 浏览器，以及 Microsoft Word 是台式电脑的方法，因为这些属性具有功能性，它们在物理意义上并不存在，我们需要像调用函数一样调用它们才能使用它们。它们代表了台式电脑的一些方法。它们的存在是基于某些程序例程的执行。
-
-当我们提到“执行”时，会立即想到函数，但函数和方法之间是有区别的：
-
-- 一个方法可能包含一个或多个函数。
-
-你看出区别了吗？一个函数可以是一个对象的方法，但它本身并不一定是一个方法。方法是一组功能的集合，用于代表对象完成某任务。例如，打印目录列表的方法、更新对象内容的方法、排序内容的方法，或者识别请求对象内容的人的方法等。
-
-### 为我们的汽车对象（car）添加一个方法
-
-2- 如果你一直在跟着我写代码，请在 `rating: 9,` 后面添加一个新逗号，因为我们正要添加另一个属性，即方法 `printRating`。（使用[编辑器](http://jsbeautifier.org/)）。
-
-3- 为标签 `printRating` 分配一个函数，在屏幕上打印以下消息：
-
-`"The car rates " + car.rating + " out of 10"`
+2.  如果你一直在跟着我写代码，请在 `rating: 9,` 后面添加一个新逗号，因为我们正要添加另一个属性，即方法 `printRating`。（使用[编辑器](http://jsbeautifier.org/)）。
+3.  为标签 `printRating` 分配一个函数，在屏幕上打印以下消息：`"The car rates " + car.rating + " out of 10"`
 
 ![](img/00015.jpeg)
 
 图 15 查看[原始文件](http://icontemp.com/jpl/car2.txt) | bit.ly/1C6I5d5。
 
-4- 我们来玩玩这个对象。将上一个原始文件的对象脚本（或自己的脚本）粘贴到控制台（Console）中。
-
-5- 打印汽车的评分：
-
-```javascript
-car.printRating();
-```
-
-注意我们如何从对象`call()`一个方法。它的起始方式与调用任何其他属性相似，但我们添加了一对括号 `()`，这创建了一个函数动作。如果我们排除括号会发生什么？它只会打印键名 `printRating` 的内容，即该函数的显式描述。当我们想要将相同的功能赋值给另一个变量时，这有时会很有用，但为了获得动作，我们需要使用括号。
-
-6- 括号表示法（bracket notation）呢？我们该如何使用`括号表示法`调用方法 `printRating`？方法最好用`点表示法`（dot notation）调用，因为它的语法更简单，你就会知道原因，但理解其逻辑是有好的，逻辑如下：
-
-```javascript
-car["printRating"]();
-```
-
-没有点语法那么漂亮，对吧？注意括号是在中括号之外。所以这是点语法主要被使用的一个领域。括号语法更多地保留给属性的**动态调用**。我们在 `for` 循环中使用括号语法，是因为在其中，每个属性都需要随着循环的进行被动态访问。
-
-让我们动手吧！
+4.  我们来玩玩这个对象。将上一个原始文件的对象脚本（或自己的脚本）粘贴到控制台中。
+5.  打印汽车的评分：`car.printRating();` 注意我们如何从对象 `call()` 一个方法。它的起始方式与调用任何其他属性相似，但我们添加了一对括号 `()`，这创建了一个函数动作。如果我们排除括号会发生什么？它只会打印键名 `printRating` 的内容，即该函数的显式描述。当我们想要将相同的功能赋值给另一个变量时，这有时会很有用，但为了获得动作，我们需要使用括号。
+6.  括号表示法呢？我们该如何使用 `bracket notation` 调用方法 `printRating`？方法最好用 `dot notation` 调用，因为它的语法更简单，你就会知道原因，但理解其逻辑是有好的，逻辑如下：`car["printRating"]();` 没有点语法那么漂亮，对吧？注意括号是在中括号之外。所以这是点语法主要被使用的一个领域。括号语法更多地保留给属性的**动态调用**。我们在 `for` 循环中使用括号语法，是因为在其中，每个属性都需要随着循环的进行被动态访问。
 
 ### 遍历对象
 
 假设你知道一个对象的存在，但你并不确定它包含哪些属性。你可以遍历该对象来找到它的属性。
 
-### 引入 for in 循环
+#### 引入 for in 循环
 
-这个循环是为我们一直讨论的对象编写的：
-
-在此处查看原始文件：[原始文件](http://icontemp.com/jpl/car2.txt) | bit.ly/1C6I5d5
+这个循环是为我们一直讨论的对象编写的：在此处查看原始文件：[原始文件](http://icontemp.com/jpl/car2.txt) | bit.ly/1C6I5d5
 
 循环结构如下：
 
 ```javascript
-for(var k in car){
+for (var k in car) {
   console.log(k);
 }
 ```
 
-`for in` 循环是普通`for 循环`的一种变体，从某种意义上说，JavaScript 库中预编程了一些功能。让我们逐行探索：
+`for in` 循环是普通 `for` 循环的一种变体，从某种意义上说，JavaScript 库中预编程了一些功能。让我们逐行探索：
 
-`for(var k in car)` --- `k` 是程序员引入的变量。它的目的是在每次循环计数中临时获取并持有`键标签`（key label）（即与每个循环周期中的位置编号匹配的标签）。
+`for (var k in car)` --- `k` 是程序员引入的变量。它的目的是在每次循环计数中临时获取并持有 `键标签`（key label）（即与每个循环周期中的位置编号匹配的标签）。
 
 让我解释一下：在某种意义上，对象就像数组。唯一的区别是键的映射方式。在数组中，JavaScript 将每个位置映射为位置 0、1、2、3 等。但在使用键的无序列表或对象中，JavaScript 将内部位置（无论是哪个位置）映射到最初为任何给定数据值声明的键。
 
 所以，变量 `k` 的目的是计算每个位置（每个周期一次），同时获取与给定计数对应的键名，以便我们获取分配给它的数据值。并不是 `k` 完成了这一切，而是 JavaScript 提供了此类信息并将其存储在 `k` 中。
 
-至于名字 `k`，我们可以使用任何名字，例如 `i`，但 `k` 更有意义，因为事实上，JavaScript 会将`键` 值临时存储在变量 `k` 中，每次循环迭代存储一个键。所以字母 `k` 让我们想起存储在那里的是什么，一个临时位置实例。你可能在字段或其他文本中看到它是 `key`、`prop` 或 `property`。
+至于名字 `k`，我们可以使用任何名字，例如 `i`，但 `k` 更有意义，因为事实上，JavaScript 会将 `键` 值临时存储在变量 `k` 中，每次循环迭代存储一个键。所以字母 `k` 让我们想起存储在那里的是什么，一个临时位置实例。你可能在字段或其他文本中看到它是 `key`、`prop` 或 `property`。（我为什么要告诉你这些？因为我不希望你开始阅读网络文章后就认为有一千种不同的 `for in` 循环。只有一种 `for in` 循环，只是每个开发者对临时变量命名都很有创意）。
 
-（我为什么要告诉你这些？因为我不希望你开始阅读网络文章后就认为有一千种不同的 `for in` 循环。只有一种 `for in` 循环，只是每个开发者对临时变量命名都很有创意）。
-
-回到“`for k in car`”，在这个例子中我们知道对象名称 `car`。然而，我们可以将其泛化并使用 `for in` 循环打印键名。我们将在另一个练习中尝试这一点。
-
-
-
-
-如果你在好奇的话，我并不清楚 `Outback` 的评分，数字 9 仅仅是为了练习目的。
+回到“`for k in car`”，在这个例子中我们知道对象名称 `car`。然而，我们可以将其泛化并使用 `for in` 循环打印键名。我们将在另一个练习中尝试这一点。（如果你在好奇的话，我并不清楚 `Outback` 的评分，数字 9 仅仅是为了练习目的。）
 
 ## 2.15 实验作业 11 - 重做实验 10
 
 你还记得在 `Lab 10` 中我们用英语、葡萄牙语、西班牙语和法语显示“那只敏捷的棕色狐狸跳过了懒狗”吗？
 
-有四个变量：`english`、`portuese`、`spanish` 和 `french`。然后我们将变量加入了一个变量名数组。
-
-我们遇到的问题是尝试将数组内容以变量名或 `key-value` 对的形式列出来，例如：
-
-`english: “The quick brown fox jumps over the lazy dog”`
-
-我们无法从数组中动态显示变量名，只能显示值本身。这是因为 JavaScript 将变量视为一个 `expression` 并给了我们评估结果，即变量内部的数据。（表达式将在下一个主题中进一步解释）。
+有四个变量：`english`、`portuese`、`spanish` 和 `french`。然后我们将变量加入了一个变量名数组。我们遇到的问题是尝试将数组内容以变量名或 `key-value` 对的形式列出来，例如：`english: “The quick brown fox jumps over the lazy dog”` 我们无法从数组中动态显示变量名，只能显示值本身。这是因为 JavaScript 将变量视为一个 `expression` 并给了我们评估结果，即变量内部的数据。（表达式将在下一个主题中进一步解释）。
 
 好了，现在我们可以做到了！我们要做的只是不再声明独立的变量，而是将它们声明为对象的属性。
 
 **我们开始吧：**
 
-1- 创建一个名为 `langVersion` 的对象。
-
-2- 为此对象分配四个属性键：`english`、`portuese`、`spanish`、`french`。
-
-3- 对于每个键，根据以下文本添加正确的值：
-
-[原始文件](http://icontemp.com/jpl/fox5a.txt) | bit.ly/1rt9dzZ
-
-不要声明变量，请像原始文件中所示使用属性键。
-
-4- 现在你应该拥有了一个完整的对象。
-
-接下来，在对象外部创建一个 `for in` 循环，打印对象的内容。每个属性的显示应该看起来像这样：
-
-`english: "The quick brown fox jumped over the lazy dog";`
-
-*   在此处查看我的结果：
-    [论坛](http://jsplain.com/javascript/index.php/Thread/23-Lab-11/) | bit.ly/1tWQddJ
-    或者[原始文件](http://icontemp.com/jpl/fox5.txt) 版本 | bit.ly/1ofRRkS。
+1.  创建一个名为 `langVersion` 的对象。
+2.  为此对象分配四个属性键：`english`、`portuese`、`spanish`、`french`。
+3.  对于每个键，根据以下文本添加正确的值：[原始文件](http://icontemp.com/jpl/fox5a.txt) | bit.ly/1rt9dzZ。不要声明变量，请像原始文件中所示使用属性键。
+4.  现在你应该拥有了一个完整的对象。接下来，在对象外部创建一个 `for in` 循环，打印对象的内容。每个属性的显示应该看起来像这样：`english: "The quick brown fox jumped over the lazy dog";`
+    *   在此处查看我的结果：[论坛](http://jsplain.com/javascript/index.php/Thread/23-Lab-11/) | bit.ly/1tWQddJ 或者[原始文件](http://icontemp.com/jpl/fox5.txt) 版本 | bit.ly/1ofRRkS。
 
 ### 将 for in 循环转换为对象方法
 
-5- 一旦你完成了项目并且一切运行正常，请重构 `for in` 循环，使其成为对象 `langVersion` 的内部方法如下：
+5.  一旦你完成了项目并且一切运行正常，请重构 `for in` 循环，使其成为对象 `langVersion` 的内部方法如下：
+    *   a) 在对象的原始最后一个属性后添加一个新的 `comma`，这样你就可以在它下方编写另一个属性。
+    *   b) 给这个新属性一个命名为 `list` 的标签，以便稍后调用该方法，
+    *   c) 然后写一个函数作为 `list` 的值。在函数内部放置你当前的 `for in` 循环。
+6.  将你的小程序粘贴到控制台并调用该方法查看其如何打印：`langVersion.list();`
+    *   在此处将你的结果与我的对比：[论坛](http://jsplain.com/javascript/index.php/Thread/24-Lab-11b/) | bit.ly/1uUYgbd [原始文件](http://icontemp.com/jpl/fox6.txt) | bit.ly/1rl24Bl
+    *   *你的列表显示了包括方法及其内部脚本在内的所有属性对吧？*
 
-*a)* 在对象的原始最后一个属性后添加一个新的`comma`，这样你就可以在它下方编写另一个属性。
+我们可以微调 `list method` 以过滤掉作为列表一部分打印的方法。如果你想从打印列表中删除方法，可以使用 `conditional statement`（条件语句）过滤掉任何非 `string` 类型的内容，因为 `list()` 是一个函数。其背后的逻辑如下：“如果属性的类型是 'string'，则打印它”。你还记得如何使用 `typeof` 吗？我们在实验 1 中涵盖过它：当我们写下 `typeof "tony";` JavaScript 回复 "string"。
 
-*b)* 给这个新属性一个命名为 `list` 的标签，以便稍后调用该方法，
-
-*c)* 然后写一个函数作为 `list` 的值。
-
-在函数内部放置你当前的 `for in` 循环。
-
-6- 将你的小程序粘贴到控制台（Console）并调用该方法查看其如何打印：
-
-`langVersion.list();`
-
-*   在此处将你的结果与我的对比：
-    [论坛](http://jsplain.com/javascript/index.php/Thread/24-Lab-11b/) | bit.ly/1uUYgbd
-    [原始文件](http://icontemp.com/jpl/fox6.txt) | bit.ly/1rl24Bl
-*你的列表显示了包括方法及其内部脚本在内的所有属性对吧？*
-
-我们可以微调 `list method` 以过滤掉作为列表一部分打印的方法。
-
-如果你想从打印列表中删除方法，可以使用 `conditional statement`（条件语句）过滤掉任何非 `string` 类型的内容，因为 `list()` 是一个函数。其背后的逻辑如下：“如果属性的类型是 'string'，则打印它”。
-
-你还记得如何使用 `typeof` 吗？我们在实验 1 中涵盖过它：
-
-当我们写下：
-
-`typeof "tony";`
-
-JavaScript 回复 "string"。
-
-7- 再次重构循环，使得
+7.  再次重构循环，使得：
 
 ```javascript
 if (typeof langVersion[k] === "string") {
 ```
 
 使用 `console.log` 输出所需的内容。这个操作不需要 `else`。
+*   在此处将你的结果与我的对比：[论坛](http://jsplain.com/javascript/index.php/Thread/25-Lab-11c/) | bit.ly/1tWSDsR [原始文件](http://icontemp.com/jpl/fox7.txt) | bit.ly/1pqbvtZ
 
-*   在此处将你的结果与我的对比：
-    [论坛](http://jsplain.com/javascript/index.php/Thread/25-Lab-11c/) | bit.ly/1tWSDsR
-    [原始文件](http://icontemp.com/jpl/fox7.txt) | bit.ly/1pqbvtZ
-
-**总结来说**，有时需要使用 `array data structure`，而时候使用 `object data structure` 更合适。到底，数组和对象都是 JavaScript 库中身着不同服饰的 `lists`。
-
-在数组中我们使用常规的 `for loop`，在对象中我们使用 `for in loop`，这是一种预配置好的打印标签名称且不需要声明长度值的 for 循环。
-
-如果你想进一步练习，请访问新论坛，我会在那里扩展这个主题。另外，我的其他 [eBook](http://www.amazon.com/JavaScript-Objects-Functions-Arrays-Explained-ebook/dp/B00GDEPBZQ/) 有许多现实中的练习，可以强化并扩展这个主题。
+**总结来说**，有时需要使用 `array data structure`，而时候使用 `object data structure` 更合适。到底，数组和对象都是 JavaScript 库中身着不同服饰的 `lists`。在数组中我们使用常规的 `for loop`，在对象中我们使用 `for in loop`，这是一种预配置好的打印标签名称且不需要声明长度值的 for 循环。如果你想进一步练习，请访问新论坛，我会在那里扩展这个主题。另外，我的其他 [eBook](http://www.amazon.com/JavaScript-Objects-Functions-Arrays-Explained-ebook/dp/B00GDEPBZQ/) 有许多现实中的练习，可以强化并扩展这个主题。
 
 实验结束
 
@@ -933,23 +628,13 @@ if (typeof langVersion[k] === "string") {
 
 ## 3.1 盘点我们学过的东西
 
-给我 5 分钟，我会告诉我知道的一切！
-
-有时候感觉就是这样，对吧？
+给我 5 分钟，我会告诉我知道的一切！有时候感觉就是这样，对吧？
 
 好了，我们涵盖了许多：变量的目的；赋值给 `var` 的数据类型；我们如何引入变量作为引用；我们看到了 `array` 作为列表；如何使用 `for loop` 数组；我们使用了 `push()` 和 `unshift()` 向数组中插入新项，以及 `pop()` 和 `shift()` 从数组中删除项。我们还实验了使用 `splice()` 在数组的特定位置删除、替换或添加新项，以及如何通过 `slice()` 复制数组部分。数组排序以及如何使用 `join()` 将数组转换为字符串。最后但同样重要的是，我们看到 `indexOf()` 可以查找特定项的位置，或者检查项是否已插入数组。在短时间内学了这么多！
 
 **那对象呢？**
 
-我们知道 JavaScript 中的几乎所有内容都是某种对象，但通常我们谈论对象是指键键的无序列表。对象中的项被称为属性，可以通过点语法或括号语法访问。某些属性被称为方法，因为它们代表功能。for in loop 是 for loop 的一种变体，专门用于遍历对象。临时计数器用于动态存储每个属性的键名，以便我们对数据进行操作，例如打印到屏幕。我们知道点语法不适用于动态表示的属性。此外，当我们打印属性列表时，可以通过 `typeof` 验证创建一个输出条件来过滤掉方法。
-
-
-
-
-
-从函数输出数据的另一种方法是在内部重新赋值一个外部变量，因为函数可以访问外部变量。对于 `console.log()`，它只是在屏幕上显示数据的一种方法，并且始终是 `string type` 格式。
-
-好了，简而言之，这包含了近 200 页的有趣内容。
+我们知道 JavaScript 中的几乎所有内容都是某种对象，但通常我们谈论对象是指键值的无序列表。对象中的项被称为属性，可以通过点语法或括号语法访问。某些属性被称为方法，因为它们代表功能。`for in loop` 是 `for loop` 的一种变体，专门用于遍历对象。临时计数器用于动态存储每个属性的键名，以便我们对数据进行操作，例如打印到屏幕。我们知道点语法不适用于动态表示的属性。此外，当我们打印属性列表时，可以通过 `typeof` 验证创建一个输出条件来过滤掉方法。从函数输出数据的另一种方法是在内部重新赋值一个外部变量，因为函数可以访问外部变量。对于 `console.log()`，它只是在屏幕上显示数据的一种方法，并且始终是 `string type` 格式。好了，简而言之，这包含了近 200 页的有趣内容。
 
 ## 3.2 更多关于函数
 
@@ -957,16 +642,14 @@ if (typeof langVersion[k] === "string") {
 
 在本书中，我们一直在非正式地使用“表达式”（expression）和“语句”（statement）这两个术语。现在是时候停下来思考这些术语了，因为它们有特定的含义。
 
-- 语句（`statement`）是一个完整的命令，指示计算机执行特定任务。它通常写在一行（但并非总是如此），并以分号（`semicolon`）结束。
+*   语句（`statement`）是一个完整的命令，指示计算机执行特定任务。它通常写在一行（但并非总是如此），并以分号（`semicolon`）结束。
 
 **语句示例：**
 
 ```javascript
 var z = 1 + 2 + 3;
-
 console.log("Hello World");
-
-if(z > 2) {
+if (z > 2) {
   console.log("yes it is");
 }
 ```
@@ -982,7 +665,7 @@ return 3 + 4;
 很多时候语句被组合成一组多个语句，在这种情况下，我们使用大括号来包裹组合语句：
 
 ```javascript
-if(z > 2) {
+if (z > 2) {
   console.log("yes it is");
   console.log("z is greater than 2");
   console.log("z is also the last word of the alphabet");
@@ -1002,17 +685,16 @@ var x = 4;
 ```
 
 在上面，`var x = 4;` 既是一个语句也是一个表达式。实际上我们有两个表达式。JavaScript 查看代码并将表达式细分为：
-
-1- `x`，在求值时结果为 4，以及
-2- `4`，其结果为它本身。JavaScript 查看一个 4，并将其表达为 4 的结果。
+1.  `x`，在求值时结果为 4，以及
+2.  `4`，其结果为它本身。JavaScript 查看一个 4，并将其表达为 4 的结果。
 
 ```javascript
-if( 10 < 11) { // do something; }
+if (10 < 11) { // do something; }
 ```
 
-在上面，`if(10 < 11)` 是一个表达式，因为 JavaScript 并没有看到字面量 `10<11`，它只看到 `true` 或 `false`（二择一）。JavaScript 并不真正关心 `10<11` 本身，它查看它并在内部将其替换为布尔值 `true`。
+在上面，`if (10 < 11)` 是一个表达式，因为 JavaScript 并没有看到字面量 `10<11`，它只看到 `true` 或 `false`（二择一）。JavaScript 并不真正关心 `10<11` 本身，它查看它并在内部将其替换为布尔值 `true`。
 
-- 这是理解该语言的一个非常重要的概念：我们编写表达式，而 JavaScript 存储它们表达式求值的结果。
+*   这是理解该语言的一个非常重要的概念：我们编写表达式，而 JavaScript 存储它们表达式求值的结果。
 
 当然，10 和 11 本身是独立的表达式，但它们没有 `10<11` 的组合那么重要。JavaScript 解释它并将其保存为纯粹的 `true`。
 
@@ -1023,7 +705,7 @@ if( 10 < 11) { // do something; }
 以以下函数为例：
 
 ```javascript
-function x (num1, num2){
+function x (num1, num2) {
   return num1 + num2;
 }
 ```
@@ -1038,9 +720,9 @@ x(2,4);
 
 当我们用参数 2 和 4 调用函数 `x` 时，它是如何求值为 6 的？
 
-- `num1` 变成一个表达式，求值为 2。
-- `num2` 变成一个表达式，求值为 4。
-- `num1 + num2` 变成一个表达式，求值为 6。
+*   `num1` 变成一个表达式，求值为 2。
+*   `num2` 变成一个表达式，求值为 4。
+*   `num1 + num2` 变成一个表达式，求值为 6。
 
 表达式求算是真正理解 JavaScript（或任何其他语言）的一个重要概念。
 
@@ -1050,8 +732,7 @@ x(2,4);
 
 ```javascript
 var x = 33;
-
-function y (){ }
+function y () { }
 ```
 
 接下来，我们将看到如何将函数作为值赋值给变量，并回答你可能有的几个常见问题。
@@ -1074,49 +755,32 @@ var x = function { return 5; };
 
 *等一下，我还是不明白。我没有像之前那样在函数声明中看到分号。为什么这一个要加分号？*
 
-分号与函数声明无关。分号是语句结束的地方，它从 `if` 开始，在 `..thing;` 结束。（注：此处原文逻辑似乎有误，翻译已按字意保留）
-
-（注：由于原文后部分段落存在逻辑混乱或重复描述迹象，翻译已遵循原文句意进行对齐）
-
-
-
-
+分号与函数声明无关。分号是语句结束的地方。（注：原文此处逻辑似有重复，已按语义整理）
 
 为了巩固这个概念，这里有一个与我们的示例无关的问题：
 
-7- 表达式 `if(10 > 5)` 的值是多少？
+7.  表达式 `if (10 > 5)` 的值是多少？
+    *   答案：`true`。当我们写下 `(10 > 5)` 时，JavaScript 看到 `true`。顺便说一下，对于 JavaScript 来说，`if()` 语句中的表达式实际上是一个**问题**。
 
-*答案*: `true`
+### 气球概念
 
-当我们写下 `(10 > 5)` 时，JavaScript 看到 `true`。顺便说一下，对于 JavaScript 来说，`if()`语句中的表达式实际上是一个**问题**。
+问题：*如果一个函数是由三根绳子 z、a、b 拴着的气球，如果我们剪断绳子 z，气球会发生什么？*
 
-## 气球概念
-
-问题：
-
-*如果一个函数是由三根绳子 z、a、b 拴着的气球，如果我们剪断绳子 z，气球会发生什么？*
-
-答案：
-
-气球不会发生，它会保持不变，因为 `a` 和 `b` 仍然拉着气球。
-
-如果我们把 `a` 和 `b` 都剪掉呢？气球会飞走。
-
-如果气球是我们的函数，它也会飞走，并进入[垃圾回收](http://en.wikipedia.org/wiki/Garbage_collection_%28computer_science%29)模式，被浏览器从内存中清除。
+答案：气球不会发生，它会保持不变，因为 `a` 和 `b` 仍然拉着气球。如果我们把 `a` 和 `b` 都剪掉呢？气球会飞走。如果气球是我们的函数，它也会飞走，并进入[垃圾回收](http://en.wikipedia.org/wiki/Garbage_collection_%28computer_science%29)模式，被浏览器从内存中清除。
 
 在接下来的练习中，我们将练习函数*表达式*（赋值给变量的）而不是函数声明（我们最初学习的语法样式）。请记住，任何一个函数都会产生相同的结果，但熟悉这两种风格是非常重要的。
 
-字体 函数参数和参数
+### 函数参数和参数
 
-函数可以有*输入参数*，这样当我们调用函数时，就可以传入*数据参数*。很多时候，程序员对这两个含义使用同一个术语，即参数（parameter）或参数（argument），并且这种用法被接受了，但定义如下：当我们调用函数时，我们将参数传递给参数。参数是一个物理实体、一个接口、一种输入机制，也是一个在函数执行执行完毕后就会被删除的临时变量。
+函数可以有*输入参数*，这样当我们调用函数时，就可以传入*数据参数*。很多时候，程序员对这两个含义使用同一个术语，即参数（parameter）或参数（argument），并且这种用法被接受了，但定义如下：当我们调用函数时，我们将参数传递给参数。参数是一个物理实体、一个接口、一种输入机制，也是一个在函数执行完毕后就会被删除的临时变量。
 
 我们调用函数时，数据参数的顺序将始终与函数括号中输入参数的物理顺序一致。
 
 例如：
 
 ```javascript
-var x = function(num1, num2){
-return num1 - num2;
+var x = function (num1, num2) {
+  return num1 - num2;
 };
 ```
 
@@ -1139,200 +803,32 @@ x(3, 5);
 简之，当我们调用函数时，需要遵守参数的顺序。
 
 *   如果我们调用函数并传入三个参数而不是两个，会发生什么？
-    ```javascript
-    x(5, 3, 4);
-    ```
-    结果将是 `2`，因为 5-3 = 2。最后一个参数 (4) 被忽略了，因为函数内部没有对其进行任何处理的规定。
-
-*   即使函数硬编码了两个输入参数，如果我们只用一个参数调用会会什么？
-    ```javascript
-    x(5);
-    ```
-    在我们情况下，它返回 `NaN`，这是 JavaScript 的属性，代表“不是数字”（Not-a-Number）或无效数字。这是因为输出变成了 `5 – num2` 的减法，而 `num2` 没有被赋值给任何内容，保持为 `"undefined"`，这是它的原始值。
-
-例如，在：
 
 ```javascript
-var x = function(input1, input2){
-return input1 + input2;
-};
+x(5, 3, 4);
 ```
 
-如果用两个参数调用函数：
-
-```javascript
-x("Tony", "deAraujo");
-```
-
-我得到输出 `"TonydeAraujo"`。
-
-另一方面，如果我只用一个参数，它会假设第一个输入参数，而其他输入参数将是 `undefined`：
-
-```javascript
-x("Tony");
-```
-
-它输出 `"Tonyundefined"`。
-
-*   我们可以在函数中编写多达 256 个输入参数。
-
-不要死记所有这些，只需花时间理解它并继续即可。
-
-### 对象参数
-
-程序员将输入参数写入函数中，是因为他们希望拥有某种数据输入序列，而且在大多数情况下这种效果非常好。
-
-然而，JavaScript 函数有另一种方式通过对象来接受参数，这个对象属于函数（且仅属于函数）：`arguments` 对象（注意使用复数形式名称）。
-
-`arguments` 对象在某种意义上类似于数组，因为可以通过数值访问，但它不是一个功能完整的数组，因为它只从数组家族[继承](http://en.wikipedia.org/wiki/Prototype-based_programming)了部分功能，而不是整个库的所有功能。
-
-**让我们看看这个对象是如何工作的**。
-
-```javascript
-var x = function(){
-return arguments[0] + arguments[1].toUpperCase();
-};
-```
-
-上面的函数没有指定输入参数。然而，当我们调用函数时，它会输出我们给它的第一个参数，以及大写形式的第二个参数，后者位于位置 1（记住，位置和数组一样从 0 开始）：
-
-```javascript
-x("tony", "dearaujo");
-```
-
-它返回："tonyDEARAUJO"
-
-所以我们仍然可以按照意愿编写函数，而不需要指定输入参数。只需使用 `arguments 对象` 通过数值访问每个数据元素即可。
-
-我会在另一本[书](http://www.amazon.com/JavaScript-Objects-Functions-Arrays-Explained-ebook/dp/B00GDEPBZQ/)中更详细地介绍 `arguments` 对象，虽然那本书已经写写了。
-
-## 3.3 使用函数操作变量
-
-### 值传递
-
-输入参数是由程序员写入函数中的，因为他们希望拥有某种数据输入序列，在大多数情况下，这种方式运行得很好。
-
-然而，JavaScript 函数有另一种方式通过一个对象来接受参数，这个对象属于函数（且仅属于函数）：`arguments` 对象。
-
-`arguments` 对象在某种意义上类似于数组，因为可以通过数值访问，但它不是一个功能完整的数组，因为它只从数组家族[继承](http://en.wikipedia.org/wiki/Prototype-based_programming)了部分功能，而不是整个库的所有功能。
-
-**让我们看看这个对象是如何工作的**。
-
-```javascript
-var x = function(){
-return arguments[0] + arguments[1].toUpperCase();
-};
-```
-
-上面的函数没有指定输入参数。然而，当我们调用函数时，它会输出我们给它的第一个参数，以及大写形式的第二个参数，后者位于位置 1（记住，位置和数组一样从 0 开始）：
-
-```javascript
-x("tony", "dearaujo");
-```
-
-它返回："tonyDEARAUJO"
-
-所以我们仍然可以按照意愿编写函数，而不需要指定输入参数。只需使用 `arguments 对象` 通过数值访问每个数据元素即可。
-
-我会在另一本[书](http://www.amazon.com/JavaScript-Objects-Functions-Arrays-Explained-ebook/dp/B00GDEPBZQ/)中更详细地介绍 `arguments` 对象，虽然那本书已经写写了。
-
-## 3.3 使用函数操作变量
-
-### 值传递
-
-输入参数是由程序员写入函数中的，因为他们希望拥有某种数据输入序列，在大多数情况下，这种方式运行得很好。
-
-然而，JavaScript 函数有另一种方式通过一个对象来接受参数，这个对象属于函数（且仅属于函数）：`arguments` 对象（注意使用复数形式名称）。
-
-`arguments` 对象在某种意义上类似于数组，因为可以通过数值访问，但它不是一个功能完整的数组，因为它只从数组家族[继承](http://en.wikipedia.org/wiki/Prototype-based_programming)了部分功能，而不是整个库的所有功能。
-
-**让我们看看这个对象是如何工作的**。
-
-（注：此处由于文本出现了重复，我将根据要求跳过重复部分，直接逻辑翻译）
-
-## 气球概念
-
-问题：
-
-*如果一个函数是由三根绳子 z、a、b 拴着的气球，如果我们剪断绳子 z，气球会发生什么？*
-
-答案：
-
-气球不会发生，它会保持不变，因为 `a` 和 `b` 仍然拉着气球。
-
-如果我们把 `a` 和 `b` 都剪掉呢？气球会飞走。
-
-如果气球是我们的函数，它也会飞走，并进入[垃圾回收](http://en.wikipedia.org/wiki/Garbage_collection_%28computer_science%29)模式，被浏览器从内存中清除。
-
-在接下来的练习中，我们将练习函数*表达式*（赋值给变量的）而不是函数声明（我们最初学习的语法样式）。请记住，任何一个函数都会产生相同的结果，但熟悉这两种风格是非常重要的。
-
-### 函数参数和参数
-
-函数可以有*输入参数*，这样当我们调用函数时，就可以传入*数据参数*。很多时候，程序员对这两个含义使用同一个术语，即参数（parameter）或参数（argument），并且这种用法被接受了，但定义如下：当我们调用函数时，我们将参数传递给参数。参数是一个物理实体、一个接口、一种输入机制，也是一个在函数执行执行完毕后就会被删除的临时变量。
-
-我们调用函数时，数据参数的顺序将始终与函数括号中输入参数的物理顺序一致。
-
-例如：
-
-```javascript
-var x = function(num1, num2){
-return num1 - num2;
-};
-```
-
-将数据输入到输入 `num1` 和 `num2` 的顺序很重要，因为函数的内部程序是按照输入参数的布局顺序进行连接的：
-
-```javascript
-x(5, 3);
-```
-
-它将返回值 `2`，因为 5 – 3 = 2。
-
-然而，如果我们调用函数并反过来书写参数：
-
-```javascript
-x(3, 5);
-```
-
-函数将返回值 `-2`，因为 3 - 5 = -2。
-
-简之，当我们调用函数时，需要遵守参数的顺序。
-
-*   如果我们调用函数并传入三个参数而不是两个，会发生什么？
-    ```javascript
-    x(5, 3, 4);
-    ```
-    结果将是 `2`，因为 5-3 = 2。最后一个参数 (4) 被忽略了，因为函数内部没有对其进行任何处理的规定。
+结果将是 `2`，因为 5-3 = 2。最后一个参数 (4) 被忽略了，因为函数内部没有对其进行任何处理的规定。
 
 *   即使函数硬编码了两个输入参数，如果我们只用一个参数调用会发生什么？
-    ```javascript
-    x(5);
-    ```
-    在我们情况下，它返回 `NaN`，这是 JavaScript 的属性，代表“不是数字”（Not-a-Number）或无效数字。这是因为输出变成了 `5 – num2` 的减法，而 `num2` 没有被赋值给任何内容，保持为 `"undefined"`，这是它的原始值。
+
+```javascript
+x(5);
+```
+
+在我们情况下，它返回 `NaN`，这是 JavaScript 的属性，代表“不是数字”（Not-a-Number）或无效数字。这是因为输出变成了 `5 – num2` 的减法，而 `num2` 没有被赋值给任何内容，保持为 `"undefined"`，这是它的原始值。
 
 例如，在：
 
 ```javascript
-var x = function(input1, input2){
-return input1 + input2;
+var x = function (input1, input2) {
+  return input1 + input2;
 };
 ```
 
-如果用两个参数调用函数：
+如果用两个参数调用函数：`x("Tony", "deAraujo");` 我得到输出 `"TonydeAraujo"`。
 
-```javascript
-x("Tony", "deAraujo");
-```
-
-我得到输出 `"TonydeAraujo"`。
-
-另一方面，如果我只用一个参数，它会假设第一个输入参数，而其他输入参数将是 `undefined`：
-
-```javascript
-x("Tony");
-```
-
-它输出 `"Tonyundefined"`。
+另一方面，如果我只用一个参数，它会假设第一个输入参数，而其他输入参数将是 `undefined`：`x("Tony");` 它输出 `"Tonyundefined"`。
 
 *   我们可以在函数中编写多达 256 个输入参数。
 
@@ -1340,17 +836,15 @@ x("Tony");
 
 ### 对象参数
 
-输入参数是由程序员写入函数中的，是因为他们希望拥有某种数据输入序列，而且在大多数情况下这种效果非常好。
-
-然而，JavaScript 函数有另一种方式通过一个对象来接受参数，这个对象属于函数（且仅属于函数）：`arguments` 对象（注意使用复数形式名称）。
+程序员将输入参数写入函数中，是因为他们希望拥有某种数据输入序列，而且在大多数情况下这种效果非常好。然而，JavaScript 函数有另一种方式通过对象来接受参数，这个对象属于函数（且仅属于函数）：`arguments` 对象（注意使用复数形式名称）。
 
 `arguments` 对象在某种意义上类似于数组，因为可以通过数值访问，但它不是一个功能完整的数组，因为它只从数组家族[继承](http://en.wikipedia.org/wiki/Prototype-based_programming)了部分功能，而不是整个库的所有功能。
 
-**让我们看看这个对象是如何工作的**。
+**让我们看看这个对象是如何工作的。**
 
 ```javascript
-var x = function(){
-return arguments[0] + arguments[1].toUpperCase();
+var x = function () {
+  return arguments[0] + arguments[1].toUpperCase();
 };
 ```
 
@@ -1362,154 +856,110 @@ x("tony", "dearaujo");
 
 它返回："tonyDEARAUJO"
 
-所以我们仍然可以按照意愿编写函数，而不需要指定输入参数。只需使用 `arguments 对象` 通过数值访问每个数据元素即可。
+所以我们仍然可以按照意愿编写函数，而不需要指定输入参数。只需使用 `arguments` 对象通过数值访问每个数据元素即可。
 
-我会在另一本[书](http://www.amazon.com/JavaScript-Objects-Functions-Arrays-Explained-ebook/dp/B00GDEPBZQ/)中更详细地介绍 `arguments` 对象，虽然那本书已经写写了。
+我会在另一本[书](http://www.amazon.com/JavaScript-Objects-Functions-Arrays-Explained-ebook/dp/B00GDEPBZQ/)中更详细地介绍 `arguments` 对象，虽然那本书已经写完了。
 
 ## 3.3 使用函数操作变量
 
-### 值传递
+### 值传递与引用传递
 
-输入参数是由程序员写入函数中的，因为他们希望拥有某种数据输入序列，在大多数情况下，这种方式运行得很好。
+当我们将一个变量赋值给另一个变量时，例如 `var a = b;`，如果 `b` 是基本类型（数字、字符串、布尔值），这是**按值传递**。这意味着创建了数据的副本。如果我们稍后修改 `b`，`a` 不会改变。
 
-然而，JavaScript 函数有另一种方式通过一个对象来接受参数，这个对象属于函数（且仅属于函数）：`arguments` 对象（注意使用复数形式名称）。
+```javascript
+var b = 33;
+var a = b;
+b = 44;
+a; // 仍然是 33
+```
 
-（注：原文在提供的部分存在大量重复，此处翻译已根据要求去重，并确保逻辑通。）
+然而，如果 `b` 是一个对象、数组或函数，这是**按引用传递**。这里没有复制；这些变量只是指向同一数据。如果我们修改其中一个变量指向的数据内容，另一个变量也会看到变化。
 
+```javascript
+var b = [1, 2, 3];
+var a = b;
+b.push(4);
+a; // [1, 2, 3, 4]
+```
 
-
-
-这被称为`引用传递数据`。这里没有复制；这些变量只是指向同一数据。如果我们删除了其中一个变量或将其赋值为其他内容，数据仍然保持不变，因为还有另一个变量在原地持有它，就像气球发生的情况一样。
+这被称为 `引用传递数据`。这里没有复制；这些变量只是指向同一数据。如果我们删除了其中一个变量或将其赋值为其他内容，数据仍然保持不变，因为还有另一个变量在原地持有它，就像气球发生的情况一样。
 
 ### 函数是闭合的结构
 
 在 JavaScript 中，函数是唯一的[数据结构](http://en.wikipedia.org/wiki/Data_structure)能够保护其数据免受外部世界的影响。
 
-这意味着什么？
-
-这意味着如果我们在函数内部声明一个变量，它无法从全局作用域（函数外部）可见。
+这意味着什么？这意味着如果我们在函数内部声明一个变量，它无法从全局作用域（函数外部）可见。
 
 如果我们把全局作用域与外部世界进行比较，全局作用域本身也是一个内部作用域，例如不同标签页上的另一个网页。我们在网页上进行的所有操作都是在封装整个页面的 `window` 对象下进行的。这与微软的 Windows 名称没有关系。这里的 `window` 指的是显示页面的浏览器外壳，在任何计算机系统中，它都被称为 `window`。
 
-对于网页而言，`window` 对象就是页面的外部世界或`全局作用域`。在 `window` 对象下声明任何内容都是 `window` 对象的属性或方法。
+对于网页而言，`window` 对象就是页面的外部世界或 `全局作用域`。在 `window` 对象下声明任何内容都是 `window` 对象的属性或方法。我们实际上可以认为 `window` 对象是一个创建其内部所有其他内容的函数。
 
-我们实际上可以认为 `window` 对象是一个创建其内部所有其他内容的函数。
+当我们声明一个变量时，例如：`var x = 33;` 我们在全局作用域中创建了这个变量，这意味着变量 `x` 的父级是 `window` 对象。要调用这个变量，我们写道：`x;` 它会显示 33。但我们也可以像下面的示例那样调用它，效果是一样的：`window.x;` 通过使用点符号语法，我们确保调用的是正确的变量 `x`，而不是来自“遥远星系”的其他 `x`。在大多数情况下，`window` 是被理解的，我们不需要写出它，正如我们在整书中看到的那样。
 
-当我们声明一个变量时，例如：
+那么，那些不同的星系又是什么？你可能会问。还记得我说我们可以把 `window` 对象看作一个巨大的函数，它将所有的网页功能都包含在内部，并保护它们免受其他网页的影响吗？嗯，我当时没有完全那样说的，但它的作用目的是每个函数都充当其自身数据的保护性父级。在 JavaScript 中，函数是闭合的数据结构。
 
-```
-var x = 33;
-```
-
-我们在全局作用域中创建了这个变量，这意味着变量 `x` 的父级是 `window` 对象。要调用这个变量，我们写道：
-
-```
-x;
-```
-
-它会显示 33。但我们也可以像下面的示例那样调用它，效果是一样的：
-
-```
-window.x;
-```
-
-通过使用点符号语法，我们确保调用的是正确的变量 `x`，而不是来自“遥远星系”的其他 `x`。在大多数情况下，`window` 是被理解的，我们不需要写出它，正如我们在整书中看到的那样。
-
-那么，那些不同的星系又是什么？你可能会问。
-
-还记得我说我们可以把 `window` 对象看作一个巨大的函数，它将所有的网页功能都包含在内部，并保护它们免受其他网页的影响吗？
-
-嗯，我当时没有完全那样说的，但它的作用目的是每个函数都充当其自身数据的保护性父级。在 JavaScript 中，函数是闭合的数据结构。
-
-我们实际上可以在函数内部声明另一个变量 `x`，因为 JavaScript 会接受它而不会产生冲突，即使知道已经有一个声明为全局变量的 `x`。这是因为全局作用域看不到函数内部的 `x`。
-
-然而，函数可以看到外部变量 `x`。没错！函数可以访问全局变量，因为函数是它们的兄弟关系。函数可以看到外部变量世界，但外部世界看不到函数内部的内容。函数的兄弟姐妹可以看到该函数，但它们看不到函数内部的东西。好消息是，JavaScript 总是会选择被调用的最接近的标识符。我的意思是，如果我们在函数内部调用 `x`，JavaScript 将捕取第一个看到的 `x`，即函数内部的那个。所以，即使函数外部有另一个 `x`，并且知道函数有权访问它，但只要我们从函数内部引用 `x`，内部的 `x` 始终是 JavaScript 的首选。
+我们实际上可以在函数内部声明另一个变量 `x`，因为 JavaScript 会接受它而不会产生冲突，即使知道已经有一个声明为全局变量的 `x`。这是因为全局作用域看不到函数内部的 `x`。然而，函数可以看到外部变量 `x`。没错！函数可以访问全局变量，因为函数是它们的兄弟关系。函数可以看到外部变量世界，但外部世界看不到函数内部的内容。函数的兄弟姐妹可以看到该函数，但它们看不到函数内部的东西。好消息是，JavaScript 总是会选择被调用的最接近的标识符。我的意思是，如果我们在函数内部调用 `x`，JavaScript 将捕取第一个看到的 `x`，即函数内部的那个。所以，即使函数外部有另一个 `x`，并且知道函数有权访问它，但只要我们从函数内部引用 `x`，内部的 `x` 始终是 JavaScript 的首选。
 
 例如：
 
-```
-var x = 33; var test = function(){
+```javascript
+var x = 33;
+var test = function () {
   var x = 5;
   return x;
 };
 ```
 
-调用函数 `test`：
+调用函数 `test`：`test();` 它返回 5。
 
-```
-test();
-```
-
-它返回 5。
-
-那么，如果我们想在函数内部使用外部 `x` 的值，我们该如何引用外部的 `x` 呢？
-
-会考虑到 `window.x`。
-
-我们接下来将看到如何从函数内部访问全局的 `x`。
+那么，如果我们想在函数内部使用外部 `x` 的值，我们该如何引用外部的 `x` 呢？会考虑到 `window.x`。我们接下来将看到如何从函数内部访问全局的 `x`。
 
 ### “This” 作为对象占位符
 
-如果我们想返回外部变量 `x`，而不是像上一个示例那样返回内部 `x` 呢？
+如果我们想返回外部变量 `x`，而不是像上一个示例那样返回内部 `x` 呢？在这种情况下，我们必须使用点符号语法来引用全局的 `x`：
 
-在这种情况下，我们必须使用点符号语法来引用全局的 `x`：
-
-```
-var x = 33; var test = function(){
-var x = 5;
-return window.x;
+```javascript
+var x = 33;
+var test = function () {
+  var x = 5;
+  return window.x;
 };
-
-test();
+test(); // 返回 33
 ```
 
 现在它返回 33，这是外部的 `x`，而不是内部值为 5 的变量。这是因为 `window.x` 指的是全局变量 `x`，它是 `window` 对象的子级。
 
-由于 JavaScript 是动态的，而且由于我们应该编写尽可能可移植的代码（适用于任何对象，而不只是 `window` 对象），程序员们想出了一个通用占位符，用来正确引用当前调用变量的对象。
-
-这个占位符就是单词 `this`。
+由于 JavaScript 是动态的，而且由于我们应该编写尽可能可移植的代码（适用于任何对象，而不只是 `window` 对象），程序员们想出了一个通用占位符，用来正确引用当前调用变量的对象。这个占位符就是单词 `this`。
 
 如果我们把表达式 `window.x` 替换为 `this.x`，在执行时 JavaScript 将搜索拥有所调用属性的对象，并将占位符 `this` 替换为正确的名称，在我们的案例中就是 `window` 对象。
 
-但你可能会问，函数 `test` 不也是一个对象吗？如果是，那么 `this.x` 的所有者不是函数本身，而是 `window` 对象吗？
-
-并不是 true（但这是一个好问题）。调用函数 `test()` 这一行为的所有者是谁？
-
-答：`window` 对象拥有 `test()` 命令。
+但你可能会问，函数 `test` 不也是一个对象吗？如果是，那么 `this.x` 的所有者不是函数本身，而是 `window` 对象吗？并不是 true（但这是一个好问题）。调用函数 `test()` 这一行为的所有者是谁？答：`window` 对象拥有 `test()` 命令。
 
 现在如果函数 `test(){}` 是其他对象内部的方法，那么 `this` 就不再代表 `window` 了，它将代表另一个对象。
 
 作为一个例子，请看这个示例：
 
-```
-var x = 33; var myObject = {
-x: 7,
-test: function () {
-var x = 5;
-return this.x;
-}
+```javascript
+var x = 33;
+var myObject = {
+  x: 7,
+  test: function () {
+    var x = 5;
+    return this.x;
+  }
 };
 ```
 
-在这里，我们有一个值为 33 的全局 `x`，一个属于 `myObject` 值为 7 的 `x`，以及函数内部一个值为 5 的 `x`。
-
-当我们调用方法 `test()` 时：
-
-```
-myObject.test();
-```
-
-它打印出 7，这是第二个 `x`，它属于 `myObject`。`window` 不再是 `this.x` 的直接所有者，因为 `myObject` 是。我之前强调过 `this` 是“在执行时”赋值的，不仅是因为替换发生在执行时，还因为拥有属性的对象可能会从属性声明的时间到属性被调用的时间发生变化。JavaScript 是一种动态语言，我们需要对什么是动态的的假设保持谨慎。在我们编写更多脚本时，我们将看到所有权的发生以及如何处理每种情况（想了解更多内容，请阅读 [JavaScript Objects and Arrays Explained](http://www.amazon.com/JavaScript-Objects-Arrays-Explained/dp/B00GPBZQ/)）。
+在这里，我们有一个值为 33 的全局 `x`，一个属于 `myObject` 值为 7 的 `x`，以及函数内部一个值为 5 的 `x`。当我们调用方法 `test()` 时：`myObject.test();` 它打印出 7，这是第二个 `x`，它属于 `myObject`。`window` 不再是 `this.x` 的直接所有者，因为 `myObject` 是。我之前强调过 `this` 是“在执行时”赋值的，不仅是因为替换发生在执行时，还因为拥有属性的对象可能会从属性声明的时间到属性被调用的时间发生变化。JavaScript 是一种动态语言，我们需要对什么是动态的的假设保持谨慎。在我们编写更多脚本时，我们将看到所有权的发生以及如何处理每种情况（想了解更多内容，请阅读 [JavaScript Objects and Arrays Explained](http://www.amazon.com/JavaScript-Objects-Arrays-Explained/dp/B00GPBZQ/)）。
 
 这里是用更可移植格式编写的原始函数，其中 `this` 替换了 `window`：
 
-```
+```javascript
 var x = 33;
-var test = function(){
+var test = function () {
   var x = 5;
   return this.x;
 };
-
 test(); // 返回 33 而不是 5
 ```
 
@@ -1517,161 +967,128 @@ test(); // 返回 33 而不是 5
 
 ### A 部分：表达式、语句、参数
 
-（我的答案链接将发布在页面末尾。你实际上可以导航到论坛来作答问题，因为在点击单个答案按钮之前答案是见的。）
+（我的答案链接将发布在页面末尾。你实际上可以导航到论坛来作答问题，因为在点击单个答案按钮之前答案是不可见的。）
 
-让我们回顾一下在本节中涵盖的概念。请在查看我的答案之前尝试回答所有问题。
+让我们回顾一下在本节中涵盖的概念。请在查看我的答案之前尝试回答所有问题。通常，*表达式*是 JavaScript 总结成一个单元的东西，而*语句*是一个表示命令并以分号终止的完整句子。
 
-通常，*表达式*是 JavaScript 总结成一个单元的东西，而*语句*是一个表示命令并以分号终止的完整句子。
-
-1- 在下面的示例中，哪些是表达式？哪些是语句？
+1.  在下面的示例中，哪些是表达式？哪些是语句？
 
 ```javascript
-if(10 < 11) {
+if (10 < 11) {
   console.log("I love JavaScript");
 }
 ```
 
-2- 在接接的函数赋值中，变量 `addTwo` 的值是什么？带后缀括号的 `addTwo()` 的值是多少？
+2.  在接下来的函数赋值中，变量 `addTwo` 的值是什么？带后缀括号的 `addTwo()` 的值是多少？
 
 ```javascript
-var addTwo = function (){
+var addTwo = function () {
   return 3 + 2;
 };
 ```
 
-3- 在上述源码的声明中，`addTwo` 的哪个部分被称为***匿名***函数？
+3.  在上述源码的声明中，`addTwo` 的哪个部分被称为**匿名**函数？
+4.  关于问题 2 中的函数赋值，如果我将变量 `addTwo` 赋值给新变量 `x`，然后稍后我将 `addTwo` 重新赋值为数字 `33`，那么变量 `x` 和变量 `x()` 的值将变成什么？
+5.  什么是函数输入参数？我们为什么到底需要参数？
+6.  `arguments` 对象是函数原生的。我们该如何编写两个 `console.log` 语句，一个显示 `arguments` 对象中的第一个值，另一个显示函数 `arguments` 对象中的第三个值？
+    *   答案和进一步的解释可以在这里找到：[论坛](http://jsplain.com/javascript/index.php/Thread/27-Lab-12a/) | bit.ly/1qqmwvg
 
+### B 部分：按值和按引用传递数据
 
+（我的答案链接将在本页末尾发布。你可以跳转到论坛在脑中回答问题，因为在点击单个答案按钮之前答案是不可见的）
 
+1.  在下方，我声明了两个变量。变量 `b` 的值为 33，变量 `a` 被赋值为变量 `b` 的值：
 
-4- 关于问题 2 中的函数赋值，如果我将变量 `addTwo` 赋值给新变量 `x`，然后稍后我将 `addTwo` 重新赋值为数字 `33`，那么变量 `x` 和变量 `x()` 的值将变成什么？
-
-5- 什么是函数输入参数？我们为什么到底需要参数？
-
-6- `arguments` 对象是函数原生的。我们该如何编写两个 `console.log` 语句，一个显示 `arguments` 对象中的第一个值，另一个显示函数 `arguments` 对象中的第三个值？
-
-*   答案和进一步的解释可以在这里找到：
-
-    [论坛](http://jsplain.com/javascript/index.php/Thread/27-Lab-12a/) | bit.ly/1qqmwvg
-
-### B：按值和按引用传递数据
-
-(*我的答案链接将在本页末尾发布。你可以跳转到论坛在脑中回答问题，因为在点击单个答案按钮之前答案是不可见的*)
-
-1- 在下方，我声明了两个变量。变量 `b` 的值为 33，变量 `a` 被赋值为变量 `b` 的值：
-
-```
+```javascript
 var b = 33;
 var a = b;
 ```
 
 a) 这是*按值*赋值还是*按引用*赋值？
-
 b) 如果我给 `b` 加 1，变量 `a` 的值会发生什么变化？
 
-2- 在下方，我声明并赋值了两个变量。第一个变量 `c` 被赋值为一个数组。第二个变量 `d` 被赋值为一个函数。
+2.  在下方，我声明并赋值了两个变量。第一个变量 `c` 被赋值为一个数组。第二个变量 `d` 被赋值为一个函数。
 
 ```javascript
 var c = [1,2,3];
-var d = function(){ return 9;};
+var d = function () { return 9; };
 ```
 
 a) 突然，我将 `c` 的赋值给 `d`，例如 `d = c;`。现在 `d` 的值是什么？重新赋值后，`d` 原来的值发生了什么？
-
 b) 如果我将 `c` 重新赋值为 `null`，那么 `d` 的值是多少？
 
 ```javascript
 c = null;
 ```
 
-3- 在以下脚本中，当我们调用函数 `myCastle()` 时，输出是什么？
+3.  在以下脚本中，当我们调用函数 `myCastle()` 时，输出是什么？
 
 ```javascript
 var f = 33;
-var myCastle = function() {
+var myCastle = function () {
   var f = "Santarem";
   return f;
 };
 myCastle();
 ```
 
-4- 你会如何重写脚本以输出外部变量 `f` 而不是内部变量 `f`？
+4.  你会如何重写脚本以输出外部变量 `f` 而不是内部变量 `f`？
+5.  在普通网页中，哪个对象作为所有全局变量的父对象？
+6.  JavaScript 中的什么数据结构具有以私有方式封装元素的能力？
+    *   答案和进一步的解释可以在这里找到：[论坛](http://jsplain.com/javascript/index.php/Thread/28-Lab-12b/) | bit.ly/1rm2pUg
 
-5- 在普通网页中，哪个对象作为所有全局变量的父对象？
+### C 部分：在字符串中查找并替换单词
 
-6- JavaScript 中的什么数据结构具有以私有方式封装元素的能力？
-
-*   答案和进一步的解释可以在这里找到：
-
-    [论坛](http://jsplain.com/javascript/index.php/Thread/28-Lab-12b/) | bit.ly/1rm2pUg
-
-### C：在字符串中查找并替换单词
-
-项目的目标是创建一个机制，在段落中找到一个单词并将其替换另一个单词。想法是将以下段落中的 *brown* 替换为 *red*：
-
-"The quick **brown** fox jumps over the lazy dog."
+项目的目标是创建一个机制，在段落中找到一个单词并将其替换另一个单词。想法是将以下段落中的 *brown* 替换为 *red*："The quick **brown** fox jumps over the lazy dog."
 
 要使用的工具如下：
 
 *   几个用作辅助的变量名：
-
-    `paragraph` – 赋值给原始段落。
-
-    `tempArray` – 赋值为字符串转换为数组的结果。
-
-    `oldWord` – 赋值为单词 "brown"，即我们为了替换而搜索的单词。
-
-    `newWord` – 赋值为单词 "red"，即我们想要用作替换的单词。
-
-*   `split()`，将字符串转换为独立单词的数组。
-
-    分割字符串的结果将赋值给名为 `tempArray` 的数组。
-
-    （将字符串句子转换为单词数组的原因是为了我们可以定位到想要替换的单词）。
-
+    *   `paragraph` – 赋值给原始段落。
+    *   `tempArray` – 赋值为字符串转换为数组的结果。
+    *   `oldWord` – 赋值为单词 "brown"，即我们为了替换而搜索的单词。
+    *   `newWord` – 赋值为单词 "red"，即我们想要用作替换的单词。
+*   `split()`，将字符串转换为独立单词的数组。分割字符串的结果将赋值给名为 `tempArray` 的数组。（将字符串句子转换为单词数组的原因是为了我们可以定位到想要替换的单词）。
 *   一个 `for` 循环。循环将遍历数组以找到目标单词并替换它。
-
 *   `join()`，它稍后将数组转换回字符串。
 
-我们首先拆分为数组，然后搜索并替换，然后转换回字符串并将结果赋值回变量 `paragraph`。
-
-最后，我们使用 `console.log` 打印变量 `paragraph` 以显示最终结果。
-
-这听起来可能很复杂，但在完成后之后就会变得简单。
+我们首先拆分为数组，然后搜索并替换，然后转换回字符串并将结果赋值回变量 `paragraph`。最后，我们使用 `console.log` 打印变量 `paragraph` 以显示最终结果。这听起来可能很复杂，但在完成后之后就会变得简单。
 
 这里有一份指南：
 
-1. 声明原始字符串变量。
-2. 将变量转换为单个单词。
-3. 引入需要查找的单词。
-4. 引入用于替换现有单词的新单词。
-5. 遍历数组以查找并替换该单词。
-6. 通过将修改后的数组赋值给原始变量将其转换回字符串。
-7. 显示你的结果。
+1.  声明原始字符串变量。
+2.  将变量转换为单个单词。
+3.  引入需要查找的单词。
+4.  引入用于替换现有单词的新单词。
+5.  遍历数组以查找并替换该单词。
+6.  通过将修改后的数组赋值给原始变量将其转换回字符串。
+7.  显示你的结果。
 
 花时间思考。如果你需要编辑器，使用 *jsbeautifier.org* 来编写你的脚本。然后将其粘贴到控制台进行测试。
 
-*   若要快速查看或获取进一步解释以及我的项目最终版本，请参考：
+*   若要快速查看或获取进一步解释以及我的项目最终版本，请参考：[论坛](http://jsplain.com/javascript/index.php/Thread/27-Lab-12a/) | bit.ly/1qqmwvg
 
-    [论坛](http://jsplain.com/javascript/index.php/Thread/27-Lab-12a/) | bit.ly/1qqmwvg
+### D 部分：使用函数
 
-### D：使用函数
 
-关于问题 2 中的函数赋值，如果我将变量 `addTwo` 赋值给新变量 `x`，然后稍后我将 `addTwo` 重新赋值为数字 `33`，那么变量 `x` 和变量 `x()` 的值将变成什么？
 
-5- 什么是函数输入参数？我们为什么到底需要参数？
+# 关于问题 2 中的函数赋值
 
-6- `arguments` 对象是函数原生的。我们该如何编写两个 `console.log` 语句，一个显示 `arguments` 对象中的第一个值，另一个显示函数 `arguments` 对象中的第三个值？
+如果我将变量 `addTwo` 赋值给新变量 `x`，然后稍后我将 `addTwo` 重新赋值为数字 `33`，那么变量 `x` 和变量 `x()` 的值将变成什么？
+
+## 5- 什么是函数输入参数？我们为什么到底需要参数？
+
+## 6- `arguments` 对象是函数原生的。我们该如何编写两个 `console.log` 语句，一个显示 `arguments` 对象中的第一个值，另一个显示函数 `arguments` 对象中的第三个值？
 
 *   答案和进一步的解释可以在这里找到：
 
     [论坛](http://jsplain.com/javascript/index.php/Thread/27-Lab-12a/) | bit.ly/1qqmwvg
 
-### B：按值和按引用传递数据
+# B：按值和按引用传递数据
 
 (*我的答案链接将在本页末尾发布。你可以跳转到论坛在脑中回答问题，因为在点击单个答案按钮之前答案是不可见的*)
 
-1- 在下方，我声明了两个变量。变量 `b` 的值为 33，变量 `a` 被赋值为变量 `b` 的值：
+## 1- 在下方，我声明了两个变量。变量 `b` 的值为 33，变量 `a` 被赋值为变量 `b` 的值：
 
 ```
 var b = 33;
@@ -1682,7 +1099,7 @@ a) 这是这是*按值*赋值还是*按引用*赋值？
 
 b) 如果我给 `b` 加 1，变量 `a` 的值会发生什么变化？
 
-2- 在下方，我声明并赋值了两个变量。第一个变量 `c` 被赋值为一个数组。第二个变量 `d` 被赋值为一个函数。
+## 2- 在下方，我声明并赋值了两个变量。第一个变量 `c` 被赋值为一个数组。第二个变量 `d` 被赋值为一个函数。
 
 ```javascript
 var c = [1,2,3];
@@ -1697,7 +1114,7 @@ b) 如果我将 `c` 重新赋值为 `null`，那么 `d` 的值是多少？
 c = null;
 ```
 
-3- 在以下脚本中，当我们调用函数 `myCastle()` 时，输出是什么？
+## 3- 在以下脚本中，当我们调用函数 `myCastle()` 时，输出是什么？
 
 ```javascript
 var f = 33;
@@ -1708,17 +1125,17 @@ var myCastle = function() {
 myCastle();
 ```
 
-4- 你会如何重写脚本以输出外部变量 `f` 而不是内部变量 `f`？
+## 4- 你会如何重写脚本以输出外部变量 `f` 而不是内部变量 `f`？
 
-5- 在普通网页中，哪个对象作为所有全局变量的父对象？
+## 5- 在普通网页中，哪个对象作为所有全局变量的父对象？
 
-6- JavaScript 中的什么数据结构具有以私有方式封装元素的能力？
+## 6- JavaScript 中的什么数据结构具有以私有方式封装元素的能力？
 
 *   答案和进一步的解释可以在这里找到：
 
     [论坛](http://jsplain.com/javascript/index.php/Thread/28-Lab-12b/) | bit.ly/1rm2pUg
 
-### C：在字符串中查找并替换单词
+# C：在字符串中查找并替换单词
 
 项目的目标是创建一个机制，在段落中找到一个单词并将其替换另一个单词。想法是将以下段落中的 *brown* 替换为 *red*：
 
@@ -1755,11 +1172,17 @@ myCastle();
 这里有一份指南：
 
 1. 声明原始字符串变量。
+
 2. 将变量转换为单个单词。
+
 3. 引入需要查找的单词。
+
 4. 引入用于替换现有单词的新单词。
+
 5. 遍历数组以查找并替换该单词。
+
 6. 通过将修改后的数组赋值给原始变量将其转换回字符串。
+
 7. 显示你的结果。
 
 花时间思考。如果你需要编辑器，使用 *jsbeautifier.org* 来编写你的脚本。然后将其粘贴到控制台进行测试。
@@ -1768,7 +1191,7 @@ myCastle();
 
     [论坛](http://jsplain.com/javascript/index.php/Thread/27-Lab-12a/) | bit.ly/1qqmwvg
 
-### E：提高搜索和替换的可移植性
+# E：提高搜索和替换的可移植性
 
 在之前的项目中我们创建了自动查找和替换，但它只适用于 `paragraph`。如果有一个可移植的函数，以便将其应用于其他变量甚至字符串就太好了。
 
@@ -1776,13 +1199,9 @@ myCastle();
 
 为了使项目具有移植性，我们需要添加第三个输入参数，一个代表目标变量或任何字符串的参数。
 
-1- 我们需要做的只是添加第三个参数，并将函数内部所有的 `paragraph` 实例名称替换为这个新的输入参数的名称。
+## 1- 我们需要做的只是添加第三个参数，并将函数内部所有的 `paragraph` 实例名称替换为这个新的输入参数的名称。
 
 我将我的输入参数命名为 `data`。
-
-
-
-
 
 你可以使用上述 `if`、`else` 的强大组合来实现任何可能的结果。
 
@@ -1816,25 +1235,32 @@ BREAK 并结束。
 
 欲了解更多信息，请访问 `forum` 上的[这篇文章](http://jsplain.com/javascript/index.php/Thread/20-How-does-a-switch-statement-work-in-JavaScript/) | bit.ly/1r4XRCL。让我们用 switch 练习一下。
 
-## 3.6 实验 13
+# 3.6 实验 13
 
-### 13a: Switch - 使用布尔匹配
+## 13a: Switch - 使用布尔匹配
 
-此脚本将使用一个具有 4 种可能结果的 `switch`。用户将尝试猜一个数字，程序将显示以下反馈消息之一：`too low`、`too high`、`right!` 或 `That’s not a number`：
+此脚本将使用一个具有 4 种可能结果的 `switch`。用户将尝试猜一个数字，程序将显示以下反馈消息之一：`too low`、`too high`、`right!` 或 `That's not a number`：
 
 1. 在名为 `guessNum` 的函数内部创建一个 `switch`。
+
 2. 该函数接收一个输入参数 `num`。
+
 3. `switch` 应该硬接连接到 `true`。
 
 示例：`switch(true)`
 
 4. `cases` 应该具有以下条件：
+
 - `num <= 3` 显示 "too low"
+
 - `num >= 5` 显示 "too high"
+
 - `num === 4` 显示 "right, the number was 4"
+
 - 对于 `default` 使用 "*That's not a number*"
 
 5. 通过传递数字参数来调用函数，例如：
+
 ```
 guessNum(2);
 guessNum(7);
@@ -1843,62 +1269,82 @@ guessNum("a");
 ```
 
 - 欲快速查看或进一步解释以及我该项目的最终版本，请参考[论坛板块](http://jsplain.com/javascript/index.php/Thread/32-Lab-13a/) | bit.ly/1qqwkWc 或直接查看[原始文件](http://icontemp.com/jpl/switch1.txt) | bit.ly/1r50ODq
+
 - 表达式表达式`num <= 3` 将转换为 `true` 或 `false`。所有其他 `cases` 也是如此，因此 switch 要匹配的应该是布尔值 `true`。
 
-### 13b: Switch - 使用字面量匹配
+## 13b: Switch - 使用字面量匹配
 
 在下一个项目中，我们将使用以下内容：
 
 - 一个名为 `myFavColor` 的函数，
+
 - 使用 `prompt()` 获取用户输入，并将其转换为小写以匹配其中一个 `cases`。（JavaScript 是区分大小写敏感的）。
+
 - 使用一些 `confirm()` 输出，这样我们就不总是使用 `console.log`，
+
 - 以及关于 `color` 的一些有意义语句。
 
 语句如下（你可以随时编写自己的，或从这个[原始文件](http://icontemp.com/jpl/colors1.txt) | bit.ly/1ypn1A2）复制）：
 
 - 绿色是平衡与成长的颜色。
+
 - 蓝色是信任与和平的颜色。
+
 - 靛蓝色是直角的颜色。
+
 - 紫色是想象的颜色。
+
 - 橙色是社交沟通与乐观的颜色。
+
 - 不起，系统中还没有这种颜色！
 
 1. 请记住：创建函数的目的是再次调用程序而无需重新输入。它在测试目的和现实生活中都非常好。因此，整个 `switch` 应该封装在一个函数中。请自由选择你喜欢的函数样式：函数声明或赋值给变量的函数表达式。
 
 我将使用第一种：
+
 ```javascript
 function myFavColor() {}
 ```
 
 2. 在函数内部，`prompt()` 将赋值给变量 `color`。
+
 3. `switch` 表达式应该是 `color` 的值：
+
 ```javascript
 switch (color) {
 ```
+
 4. 每个 `case` 都应该是小写：
+
 ```javascript
 case "green":
 ```
+
 5. 每个 `case` 的输出应该是一个 `confirm()` 后面跟着一个 `break`：
+
 ```javascript
 confirm("Green is the color of balance and growth.");
 break;
 ```
+
 6. 当没有颜色匹配时，`default` 执行接管（不需要 break）：
+
 ```javascript
 default:
 confirm("Sorry, that color is not in the system yet!");
 ```
+
 7. 最后，不要忘记两个闭合括号：一个用于 `switch`，另一个用于函数（如代码所示所示）。
 
 - 欲快速查看或进一步解释以及我该项目的最终版本，请参考[论坛板块](http://jsplain.com/javascript/index.php/Thread/33-Lab-13b/) | bit.ly/Zca 或直接查看[原始文件](http://icontemp.com/jpl/colors2.txt) | bit.ly/1DwVBsd
 
 要测试你的脚本，只需调用函数：
+
 ```javascript
 myFavColor();
 ```
 
-### 13c: 一个循环执行的 switch 程序
+## 13c: 一个循环执行的 switch 程序
 
 有时我们希望脚本反复运行，例如在游戏中，直到我们特意决定退出。
 
@@ -1918,13 +1364,11 @@ myFavColor();
 
 - 欲快速查看或进一步解释以及我该项目的最终版本，请参考[论坛板块](http://jsplain.com/javascript/index.php/Thread/34-Lab-13c/) | bit.ly/1ogVffh 或直接查看[原始文件](http://icontemp.com/jpl/colors3.txt) | bit.ly/1vdaYQT
 
-### 13d: 使用 while 循环重复脚本
+## 13d: 使用 while 循环重复脚本
 
 我们还没有涵盖过 `while` 循环。我们涵盖过的循环只有用于数组的 `for` 循环和用于对象的 `for in` 循环。
 
 `while` 循环是一种无限运行的循环，直到某些触发条件使其退出。
-
-
 
 `while` 循环的一个流行例子是扫描计算机键盘的机制。`while` 循环会持续从键盘读取输入，直到收到某个按键的信号，该信号反过来触发另一个机制。
 
@@ -1960,6 +1404,7 @@ while(this Boolean expression is true){
 它看起来比我们之前做的脚本更专业，如果你对创建游戏感兴趣，这会变得非常有用。
 
 * 在你编写了你自己的版本后，可以与[论坛板块](http://jsplain.com/javascript/index.php/Thread/35-Lab-13d/) | bit.ly/1DwVNYo 上的代码进行对比。
+
 * 或者直接查看[原始文件](http://icontemp.com/jpl/colors4.txt) | bit.ly/1sWgeWf
 
 # 第四部分：进入第三境界
@@ -2029,10 +1474,6 @@ JSON 格式在语法上与我们创建列表相同，无论是作为数组的数
 在以 JSON 格式编写时，我们必须将键（key）封装在双引号中。由于我们从一开始就使用了双引号，所以在这方面应该没有问题。
 
 如果键没有封装在双引号中，JSON 将报错。单引号是不起作用的。
-
-
-
-
 
 ### 简介
 
@@ -2149,10 +1590,6 @@ employees.staff.push({"firstName":"Loren", "lastName":"Santos", "age":29});
 - 调用 employees 属性 management 查看它包含什么：
 
 ![](img/00022.jpeg)
-
-
-
-
 
 太棒了！现在让我们来看处理 JSON 数据结构的两种有用方法。
 
@@ -2308,9 +1745,6 @@ var myEmployees = JSON.parse(myString);
 
 注意：如果被解析的数据不是有效的 JSON，你将得到错误。
 
-
-
-
 非数组对象的属性不保证以特定的顺序进行字符串化（这是很合理的，因为键值对并不真正需要数值顺序）。在字符串化时，请不要依赖同一个对象内属性的顺序。
 
 ### 总结
@@ -2320,9 +1754,13 @@ var myEmployees = JSON.parse(myString);
 以下是一些实用的链接：
 
 * [JSON.org](http://www.json.org/)，官方网站。
+
 * [JSONLint](http://jsonlint.com/)，JSON 验证工具。
+
 * [维基百科](https://en.wikipedia.org/wiki/JSON)，独立的资源参考资料。
+
 * [莫智拉基金会](https://developer.mozilla.org/en-US/docs/Glossary/JSON)，一个很好的术语表和资源中心。
+
 * [JSON vs XML](http://www.json.org/xml.html) —— 由 JSON.org 编写的这两种技术的对比。
 
 在在我们继续之前，请让我简要介绍另一种让 JSON 真正大放异彩的技术：NoSQL。
@@ -2387,9 +1825,6 @@ AngularJS 如何扩展 HTML 能力的？
 
 如果我们希望对整个页面进行扫描和映射，我们将相同的指令应用到 HTML 标签上，而不是应用到 `DIV`。实际上，任何可以作为容器的 HTML 标签都可以变成一个 Angular 增强元素，而完全不会影响页面的其他部分。我们可以使用段落标签、表单标签或有序列表。但在大多数情况下，AngularJS 是如此友好的，我们我们并不介意将其关联。
 
-
-
-
 指令（Directive）是为现有标准语法引入新功能的东西。它扩展了语法的能力，就像是“教老狗学新技巧”一样。通过在现有的 HTML 标签上挂载指令，该标签的行为会根据 Angular 库中以该指令命命的内容而发生改变。在某些情况下，指令指定了全局行为，而在另一些情况下，它们只影响局部区域，例如一段程序代码。
 
 AngularJS 通过称为指令（directives）的构造结构向浏览器教授了新语法。
@@ -2435,6 +1870,7 @@ AngularJS 通过称为指令（directives）的构造结构向浏览器教授了
 这是另一种编写无名称指令的方法，而不是直接写一个 `ng-app`。
 
 *   **注意：** 除非该名称作为 `Module`（模块）存在，否则不要包含名称，因为 AngularJS 将无法工作。我们还没有介绍模块，所以目前我们只单独使用 `ng-app` 本身，即使在生产环境中这样做也是完全没问题的。
+
 *   **注意：** 注意 `ng-app=""` 引号之间没有空格。空格会被视为一个名称（即使是空的），并且必须创建一个该名称下的模块。再次，我们现在只单独使用 `ng-app` 本身即可。
 
 ### 不再有 DOM 操作任务
@@ -2508,9 +1944,6 @@ HTML 脚本与之前相同。我们只是将单词 hello 替换成了第 11 行�
 
 在双括号内的任何内容都将由 JavaScript 求值。
 
-
-
-
 我没有写任何 JavaScript 代码。AngularJS 处理了内部过程。这是一种更高层次的抽象编程。我们仍然需要了解 JavaScript 吗？当然需要！当我们超出这个简单的测试时，你对 JavaScript 的知识将变得非常重要。
 
 ### 我必须始终在网页上包含我的表达式吗？
@@ -2522,6 +1955,7 @@ HTML 脚本与之前相同。我们只是将单词 hello 替换成了第 11 行�
 让我们引入另一个指令，以便我们有更多的工具可以玩。
 
 - `ng-app` 指令初始化 AngularJS 。
+
 - `ng-init` 指令初始化一些用于应用程序的 `data`。
 
 让我们看看 `ng-init` 在最简单的形式下工作：
@@ -2599,7 +2033,9 @@ a) `"green": "green is the color of balance and growth.",` `"blue": "blue is the
 然后我们将在浏览器上得到以下显示：
 
 b) The color green is the color of balance and growth.
+
 The color blue is the color of trust and peace.
+
 The color indigo is the color of intuition.
 
 我们将要使用的指令是：`ng-app`、`ng-init=' '` 以及用于输出显示评估的双大括号 `{{ }}` 表达式。
@@ -2617,6 +2053,7 @@ The color indigo is the color of intuition.
 如果你没有使用起始原始文件，请确保执行了以下操作：
 
 a) 在 HTML 起始标签中插入一个指令，允许 AngularJS 管理你的网页。
+
 b) 在 BODY 容器底部插入 AngularJS 库的 URL。
 
 2- 在 `ng-app` 指令之后，但在 HTML 起始标签内部，添加 `ng-init=' '`，在 ' ' 内部插入一个名为 `colors` 的对象，其属性如上一页演示 `a` 下描述的。
@@ -2644,9 +2081,6 @@ b) 在 BODY 容器底部插入 AngularJS 库的 URL。
 至于总数 24，它应该是矩形的周长。你可以使用自己的公式。我将使用 `length * 2 + width * 2` 作为我的表达式。
 
 完成你的脚本后，请将其与我的进行对比：[forum](http://jsplain.com/javascript/index.php/Thread/37-Lab-14b) | bit.ly/1rkKW8 | [raw file](http://icontemp.com/jpl/ang14/ang8.txt) | [html](http://icontemp.com/jpl/ang14/ang8.html)
-
-
-
 
 ## 5.5 进一步深入模块化
 
@@ -2766,9 +2200,6 @@ b) **我们希望 AngularJS 显示某些动态数据的区域**。这个区域�
 
 c) **我们创建 JavaScript 代码的区域**。我们将此区域称为 `controller`（控制器）。该区域被 `<script></script>` 标签包围，就像框架链接一样。此时控制器的思想是存储我们使用 `ng-init` 时存储的数据和功能。控制器是一个函数，在函数内部有我们的动态数据。记住，我们使用函数来存储可以在调用时运行的代码。
 
-
-
-
 我们将从之前的练习中移除 `ng-init`，并将数据插入到控制器中，但首先，让我们先看看控制器的基本结构。从一个空控制器的图像开始：
 
 ![](img/00031.jpeg)
@@ -2830,8 +2261,11 @@ AngularJS 奇迹地将我们在控制器内部编写并分配给对象 `$scope` 
 这是我们在添加模块 `myFirstAppModule` 之后留下的原始[原始文件](http://icontemp.com/jpl/ang14/ang8b.txt)。
 
 1- 将控制器添加到脚本容器中，位于模块声明下方一行，如图 30 所示。
+
 2- 将 `length` 和 `width` 分配给 `$scope`，如图 31 所示，然后从你的页面中移除 `ng-init`。
+
 3- 将你的段落封装在 DIV 中，并将该 DIV 分配给控制器，如图 33 所示。
+
 4- 测试你的 HTML Angular 应用。这里有我自己的版本：
 
 [原始文件](http://icontemp.com/jpl/ang14/ang8c.txt) | [html](http://icontemp.com/jpl/ang14/ang8c.html)。
@@ -2874,8 +2308,11 @@ $scope.myPerimeter = {
 这里是我的示例食谱：
 
 *   **模块名称**：`myAppModule`
+
 *   **控制器名称**：`myController`
+
 *   **显示结果的变量**：`result`（提示：它在控制器中是 `$scope.result`）。
+
 *   **动态显示的句子**：*100 华氏度等于 37.778 摄氏度。*
 
 注意：在调用函数时，确保将原始的 `f2c(212)` 改为 `f2c(100)`。
@@ -2885,6 +2322,7 @@ $scope.myPerimeter = {
 请自己完成。这里是总结指南：
 
 1- 创建你的 HTML 骨架。
+
 这是我们的启动文件：[原始文件](http://icontemp.com/jpl/ang14/ang1.txt)。
 
 2- 链接 AngularJS（如果你使用的是启动文件，这已经完成了）。
@@ -2898,10 +2336,6 @@ $scope.myPerimeter = {
 6- 向控制器中添加华氏度到摄氏度的转换函数。
 
 这里有几种替代方案。让我解释一下：
-
-
-
-
 
 a) 首先在此处获取原始 JavaScript 脚本副本：[原始文件](http://icontemp.com/jpl/f2c.txt)。
 
@@ -2951,23 +2385,9 @@ f) 如果我们使用选项 (e)，我们就可以这样在视图中应用变量 
 <p>100 degrees Fahrenheit is {{YOUR CODE HERE}} Celsius.</p>
 ```
 
-9- 在显示 `YOUR CODE HERE` 的地方，根据你在 (c) 或 (e) 中编写的控制器 JavaScript 方式，将其替换为选项 (d) 或选项 (f)。
 
-10- 保存并测试你的应用。显示结果应该是：
 
-100 degrees Fahrenheit is 37.77777777777778 Celsius
-
-完成后，将其与我此处的结果进行对比：
-
-[论坛](http://jsplain.com/javascript/index.php/Thread/42-Lab-15c/) | bit.ly/1ruKCKT
-
-[原始文件](http://icontemp.com/jpl/ang14/angc3m.txt) |
-
-[html](http://icontemp.com/jpl/ang14/angc3m.html) |
-
-建议：尝试将其他一些 JavaScript 练习转换为 Angular。你可能得不到完美的解决方案，但将获得大量的练习。
-
-### 将控制器放在单独的文件中
+## 将控制器放在单独的文件中
 
 现在我们已经从逻辑上分离了控制器和视图单元（它们都是模块的一部分），我们可以安全地将 `controller` 和 `module configuration` 放在单独的文件中。这绝不是故事的结束，也许只是开始。
 
@@ -2977,37 +2397,35 @@ f) 如果我们使用选项 (e)，我们就可以这样在视图中应用变量 
 
 [原始文件](http://icontemp.com/jpl/ang14/angc3m.txt) |
 
-1- 使用不同的名称保存它，例如 `f2cfinal.html`。
+1. 使用不同的名称保存它，例如 `f2cfinal.html`。
 
 现在我们可以编辑该文件：
 
-2- 复制并剪切（删除）`<script></script>` 内部所有控制器和模块配置的所有内容。只保留 `SCRIPT` 标签，以便我们可以添加指向单独文件的链接。
+2. 复制并剪切（删除）`<script></script>` 内部所有控制器和模块配置的所有内容。只保留 `SCRIPT` 标签，以便我们可以添加指向单独文件的链接。
 
-3- 将内容粘贴到新文件中并保存为 `mycontroller.js`（或任何其他名称）。
+3. 将内容粘贴到新文件中并保存为 `mycontroller.js`（或任何其他名称）。
 
 注意 `.js` 扩展名。确保该文件与 `f2cfinal.html` 在同一个文件夹中。
 
-4- 回到 `f2cfinal.html`，在属于控制器的起始 `SCRIPT` 标签中，输入新文件的路径，应包含 script 标签在内的内容：
+4. 回到 `f2cfinal.html`，在属于控制器的起始 `SCRIPT` 标签中，输入新文件的路径，应包含 script 标签在内的内容：
 
 ```html
 <script src="mycontroller.js"></script>
 ```
 
-5- 保存并测试。
+5. 保存并测试。
 
 与我此处的结果对比：
 
 [原始文件](http://icontemp.com/jpl/ang14/f2cfinal.txt) |
-
 [.js 文件](http://icontemp.com/jpl/ang14/mycontroller.js) |
-
 [html](http://icontemp.com/jpl/ang14/angc3m.html) |
 
-### 附加信息
+## 附加信息
 
 有关控制器的更新和进一步探索（本电子书涵盖的内容之外），请访问 JSplain.com 上的文章：[控制器的笔记](http://jsplain.com/javascript/index.php/Thread/145-AngularJs-controllers-things-we-should-know/)。
 
-### ng-model
+## ng-model
 
 AngularJS 有时可以非常简单。
 
@@ -3027,7 +2445,7 @@ AngularJS 有时可以非常简单。
 
 在论坛中，你会找到一个在线演示以及其下方的脚本。请阅读每行代码的解释：
 
-[论坛板块](http://jsplain.com/javascript/index.php/Thread/45-Fahrenheit-to-Celsius-ng-model) | bit.ly/ZQieYU. 
+[论坛板块](http://jsplain.com/javascript/index.php/Thread/45-Fahrenheit-to-Celsius-ng-model) | bit.ly/ZQieYU.
 
 在阅读了论坛中的描述并玩玩演示后，请回到这里进行实验工作。我们将在不到 10 分钟内完成这个项目，保证！
 
@@ -3038,35 +2456,39 @@ AngularJS 有时可以非常简单。
 AngularJS 很多时候可以节省我们数小时的工作，随着他们的不断改进，它变得越来越好。对于这项工作，我们只需要几个工具（以及对 `ng-model` 的介绍）：
 
 a) 库链接
+
 b) 一个 `ng-app` 指令
+
 c) 一个 `ng-model` 指令
+
 d) 几个大括号
+
 e) 两个 HTML 输入框
 
 准备好开始了吗？
 
-1- 获取我们的基础 HTML：[原始文件](http://icontemp.com/jpl/ang14/ang1.txt)
+1. 获取我们的基础 HTML：[原始文件](http://icontemp.com/jpl/ang14/ang1.txt)
 
-2- 保存为 `conversions.html`。
+2. 保存为 `conversions.html`。
 
-3- 在 BODY 中，将 `hello` 替换为一个包含其他 DIV 的 DIV：
+3. 在 BODY 中，将 `hello` 替换为一个包含其他 DIV 的 DIV：
 
 ```html
 <div>
   <div></div>
   <div>
 </div>
-``` (此处补充闭合标签)
+```
 
-4- 如果你没有使用我的启动文件，请确保在你的起始标签（或包裹视图的 DIV）上包含 `ng-app` 指令。
+4. 如果你没有使用我的启动文件，请确保在你的起始标签（或包裹视图的 DIV）上包含 `ng-app` 指令。
 
-5- 在步骤 3 的顶层 DIV 上，声明 `ng-init` 来初始化变量，如下所示（`init` 是因为我们将不使用控制器）：
+5. 在步骤 3 的顶层 DIV 上，声明 `ng-init` 来初始化变量，如下所示（`init` 是因为我们将不使用控制器）：
 
 ```html
 <div ng-init="f=32;c=0">
 ```
 
-6- 为了测试，我们在 DIV 容器内（任何 DIV 容器）写一些大括号：
+6. 为了测试，我们在 DIV 容器内（任何 DIV 容器）写一些大括号：
 
 ```html
 {{f -c + f}}
@@ -3079,9 +2501,9 @@ e) 两个 HTML 输入框
 
 一旦脚本正常运行，删除大括号并继续项目。早期测试总是一个好主意，可以节省大量时间和头疼。在进入下一个实现阶段之前，我们应该分阶段测试。
 
-7- 下一步是设计第一个输入框。
+7. 下一步是设计第一个输入框。
 
-在第二对 DIV 创建的容器内部，编写一个类型为 `number` 的输入框。（关于输入框：[HTML input](https://en.wikipedia.org/wiki/Form_%28HTML%29) | bit.ly/1qy2lvA))
+在第二对 DIV 创建的容器内部，编写一个类型为 `number` 的输入框。（关于输入框：[HTML input](https://en.wikipedia.org/wiki/Form_%28HTML%29) | bit.ly/1qy2lvA)
 
 同时在左侧包含描述。这是我的示例：
 
@@ -3089,20 +2511,16 @@ e) 两个 HTML 输入框
 
 注意：你可能习惯使用自合标签如 `/>`。两种方式都可以。随着 HTML5 的出现，我倾向于不使用自合标签。
 
-8- 太极了，现在让我们为输入框添加 `ng-model` 并将其赋值给变量 `f`：
+8. 太极了，现在让我们为输入框添加 `ng-model` 并将其赋值给变量 `f`：
 
 `Fahrenheit to Celsius: <input type="number" ng-model="f">`
 
+如果你已经阅读了我在 `forum` `demo` 中关于 `ng-model` 的解释，你就会知道 `ng-model` 指令是一个保存用户输入数据的对象，并将其链接（或绑定）到分配给此 `ng-model` 的变量，即该声明中的 `="someName"` 部分（类似于 JavaScript 中将 `prompt()` 赋值给变量的操作）。在这种情况下，变量是 `f`，尽管它的默认值为 32，但得益于 `ng-model` 提供的绑定，可以通过用户在该文本框中输入的数据进行更改。
 
+* 不要混淆这些术语：`model`（模型）与 `module`（模块）。
+* `Module` 是应用程序。`Model` 是保存数据并将其绑定到某些变量的小对象。一个 `Module` 中可能包含数百个这样的小模型。
 
-
-
-如果你已经阅读了我在 `forum` `demo` 中关于 `ng-model` 的解释，你就会知道 `ng-model` 指令是一个保存用户输入数据的对象，并将其链接（或绑定）到分配给此 `ng-model` 的变量，即该声明中的 ` =”someName”` 部分（类似于 JavaScript 中将 `prompt()` 赋值给变量的操作）。在这种情况下，变量是 `f`，尽管它的默认值为 32，但得益于 `ng-model` 提供的绑定，可以通过用户在该文本框中输入的数据进行更改。
-
-*   不要混淆这些术语：`model`（模型）与 `module`（模块）。
-*   `Module` 是应用程序。`Model` 是保存数据并将其绑定到某些变量的小对象。一个 `Module` 中可能包含数百个这样的小模型。
-
-### 9- 让我们在 HTML 输入框右侧添加`双大括号` 来完成这一行。
+### 9. 让我们在 HTML 输入框右侧添加`双大括号` 来完成这一行。
 
 在大括号内包含从华氏度转换为摄氏度的公式：
 
@@ -3118,7 +2536,7 @@ e) 两个 HTML 输入框
 Fahrenheit to Celsius: <input type="number" ng-model="f"> {{(f-32) * 5 / 9}}c
 ```
 
-### 10- 保存并测试。
+### 10. 保存并测试。
 
 此时，所有的 DIV 应该看起来如下：
 
@@ -3131,7 +2549,7 @@ Fahrenheit to Celsius: <input type="number" ng-model="f"> {{(f-32) * 5 / 9}}c
 </div>
 ```
 
-### 11- 现在，让我们为 `Celsius to Fahrenheit`（摄氏度转华氏度）的转换写一个输入框。
+### 11. 现在，让我们为 `Celsius to Fahrenheit`（摄氏度转华氏度）的转换写一个输入框。
 
 在下一个一个 DIV 容器中编写以下代码：
 
@@ -3141,7 +2559,7 @@ Fahrenheit to Celsius: <input type="number" ng-model="f"> {{(f-32) * 5 / 9}}c
 </div>
 ```
 
-### 12- 测试一下，测试两种转换。
+### 12. 测试一下，测试两种转换。
 
 最终结果可以在 [论坛公告板](http://jsplain.com/javascript/index.php/Thread/45-Fahrenheit-to-Celsius-ng-model) | bit.ly/ZQieYU 看到。
 
@@ -3152,9 +2570,10 @@ Fahrenheit to Celsius: <input type="number" ng-model="f"> {{(f-32) * 5 / 9}}c
 **这里是一些可能的转换公式：**
 
 a) 开尔文度转华氏度：`(K - 273.15) * 9/5 + 32`
+
 b) 开尔文度转摄氏度：`K - 273.15`
 
-# 更多项目构 id
+## 更多项目构想
 
 如需更多项目想法，请访问为本书创建的论坛公告板上的链接：
 
@@ -3170,27 +2589,27 @@ b) 开尔文度转摄氏度：`K - 273.15`
 
 **用于模块/控制器 (Modules/Controllers):**
 
-*   [ng-app](https://docs.angularjs.org/api/ng/directive/ngApp), 或 `data-ng-app` 或 `ng-app="appName"`
-*   [ng-controller](https://docs.angularjs.org/api/ng/directive/ngController)
+* [ng-app](https://docs.angularjs.org/api/ng/directive/ngApp)，或 `data-ng-app` 或 `ng-app="appName"`
+* [ng-controller](https://docs.angularjs.org/api/ng/directive/ngController)
 
 **用于数据绑定 (Data Binding):**
 
-*   [ng-init](https://docs.angularjs.org/api/ng/directive/ngInit)
-*   [ng-model](https://docs.angularjs.org/api/ng/directive/ngModel)
-*   [ng-bind](https://docs.angularjs.org/api/ng/directive/ngBind)
+* [ng-init](https://docs.angularjs.org/api/ng/directive/ngInit)
+* [ng-model](https://docs.angularjs.org/api/ng/directive/ngModel)
+* [ng-bind](https://docs.angularjs.org/api/ng/directive/ngBind)
 
 **用于 DOM 遍历 (DOM Traversing):**
 
-*   [ng-hide](https://docs.angularjs.org/api/ng/directive/ngHide)
-*   [ng-show](https://docs.angularjs.org/api/ng/directive/ngShow)
-*   [ng-view](https://docs.angularjs.org/api/ngRoute/directive/ngView)
-*   [ng-repeat](https://docs.angularjs.org/api/ng/directive/ngRepeat)
+* [ng-hide](https://docs.angularjs.org/api/ng/directive/ngHide)
+* [ng-show](https://docs.angularjs.org/api/ng/directive/ngShow)
+* [ng-view](https://docs.angularjs.org/api/ngRoute/directive/ngView)
+* [ng-repeat](https://docs.angularjs.org/api/ng/directive/ngRepeat)
 
 **用于事件 (Events):**
 
-*   [ng-mouseenter](https://docs.angularjs.org/api/ng/directive/ngMouseenter)
-*   [ng-click](https://docs.angularjs.org/api/ng/directive/ngClick)
-*   [ng-keypress](https://docs.angularjs.org/api/ng/directive/ngKeypress)
+* [ng-mouseenter](https://docs.angularjs.org/api/ng/directive/ngMouseenter)
+* [ng-click](https://docs.angularjs.org/api/ng/directive/ngClick)
+* [ng-keypress](https://docs.angularjs.org/api/ng/directive/ngKeypress)
 
 如需模块和控制器配置的快速示例，请查看我们此处的一个练习：
 
@@ -3213,4 +2632,3 @@ b) 开尔文度转摄氏度：`K - 273.15`
 **更新：** 如果你想做更多 AngularJS 练习，有一本新的补充练习电子书。请查看：
 
 [AngularJS 补充：过滤器的简单项目](http://www.amazon.com/JavaScript-Objects-Functions-Arrays-Explained-ebook/dp/B00GDEPBZQ/)
-

@@ -1,17 +1,5 @@
-# 7.13 WebRTC
 
-*   概述
-*   getUserMedia
-    *   概述
-    *   范例：获取摄像头
-    *   范例：捕获麦克风声音
-    *   捕获的限定条件
-    *   MediaStreamTrack.getSources()
-    *   RTCPeerConnectionl，RTCDataChannel
-        *   RTCPeerConnectionl
-        *   RTCDataChannel
-        *   外部函数库
-    *   参考链接
+# 7.13 WebRTC
 
 ## 概述
 

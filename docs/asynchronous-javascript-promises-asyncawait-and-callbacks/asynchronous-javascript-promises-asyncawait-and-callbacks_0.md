@@ -1,8 +1,7 @@
+
 # 异步JavaScript：Promise、Async/Await和回调
 
 ## 前言
-
-❧
 
 欢迎阅读《异步 JavaScript：Promise、Async/Await 与回调》！本书是您掌握 JavaScript 异步编程的必备指南，而异步编程正是创建动态交互式 Web 应用最关键的部分之一。无论您是在构建简单的网站还是复杂的系统，理解异步 JavaScript 都将让您能够高效处理 API 调用、文件处理以及事件驱动流程等任务。
 
@@ -10,9 +9,9 @@
 
 JavaScript 本质上是单线程的，这意味着它一次只能执行一个任务。为了防止阻塞用户界面或延迟关键操作，JavaScript 依赖异步编程来处理耗时任务，例如获取数据、处理大文件或等待用户操作。掌握异步 JavaScript 至关重要，因为：
 
-*   它能带来更流畅、响应更迅速的用户体验。
-*   它能让你处理 API 请求和数据处理等真实场景。
-*   它能让你为使用大量异步模式的现代框架和库做好准备。
+- 它能带来更流畅、响应更迅速的用户体验。
+- 它能让你处理 API 请求和数据处理等真实场景。
+- 它能让你为使用大量异步模式的现代框架和库做好准备。
 
 理解回调、Promise 和 `async/await` 等概念，将使你能够为任何应用编写高效、可维护且健壮的代码。
 
@@ -20,9 +19,9 @@ JavaScript 本质上是单线程的，这意味着它一次只能执行一个任
 
 本书面向：
 
-*   希望学习 JavaScript 异步编程基础的初学者。
-*   希望加深对 Promise 和 `async/await` 理解的中级开发者。
-*   旨在构建可扩展、高性能应用的 Web 开发者。
+- 希望学习 JavaScript 异步编程基础的初学者。
+- 希望加深对 Promise 和 `async/await` 理解的中级开发者。
+- 旨在构建可扩展、高性能应用的 Web 开发者。
 
 如果你曾为回调而苦恼，或觉得 Promise 令人困惑，本书将为你提供所需的清晰解释。
 
@@ -30,12 +29,12 @@ JavaScript 本质上是单线程的，这意味着它一次只能执行一个任
 
 学完本书后，你将能够：
 
-*   理解异步编程在 JavaScript 中的工作原理。
-*   有效使用回调，并克服回调地狱的挑战。
-*   使用 Promise，包括链式调用、错误处理和高级方法。
-*   使用 `async/await` 简化异步代码。
-*   调试和优化异步 JavaScript 以获得更好的性能。
-*   使用异步模式构建真实应用。
+- 理解异步编程在 JavaScript 中的工作原理。
+- 有效使用回调，并克服回调地狱的挑战。
+- 使用 Promise，包括链式调用、错误处理和高级方法。
+- 使用 `async/await` 简化异步代码。
+- 调试和优化异步 JavaScript 以获得更好的性能。
+- 使用异步模式构建真实应用。
 
 本书包含实用示例、动手项目以及最佳实践，帮助你立即应用所学技能。
 
@@ -43,19 +42,19 @@ JavaScript 本质上是单线程的，这意味着它一次只能执行一个任
 
 本书采用循序渐进的方法：
 
-1.  我们将从异步编程及其在 JavaScript 中的作用开始介绍。
-2.  你将学习如何使用回调、Promise 和 `async/await`。
-3.  本书将指导你处理常见的异步场景和调试技术。
-4.  你将通过动手项目（如创建天气应用和实现重试机制）来应用所学知识。
-5.  最后，你将探索高级主题，并为异步 JavaScript 的未来做好准备。
+1. 我们将从异步编程及其在 JavaScript 中的作用开始介绍。
+2. 你将学习如何使用回调、Promise 和 `async/await`。
+3. 本书将指导你处理常见的异步场景和调试技术。
+4. 你将通过动手项目（如创建天气应用和实现重试机制）来应用所学知识。
+5. 最后，你将探索高级主题，并为异步 JavaScript 的未来做好准备。
 
 每一章都建立在前一章的基础上，确保学习体验顺畅而全面。
 
 ### 为什么选择本书？
 
-*   **对初学者友好**：清晰的解释和示例让复杂主题易于理解。
-*   **动手学习**：项目和练习巩固学习成果，并提供真实经验。
-*   **内容全面**：涵盖从基础到高级技术和最佳实践的所有内容。
+- **对初学者友好**：清晰的解释和示例让复杂主题易于理解。
+- **动手学习**：项目和练习巩固学习成果，并提供真实经验。
+- **内容全面**：涵盖从基础到高级技术和最佳实践的所有内容。
 
 ### 致谢
 
@@ -71,10 +70,7 @@ JavaScript 本质上是单线程的，这意味着它一次只能执行一个任
 
 WebLighters Studio
 
-
 ## 引言
-
-❧
 
 在 Web 开发不断演变的格局中，JavaScript 已成为一股强大的力量，使开发者能够创建动态、交互且响应迅速的应用。现代 JavaScript 的核心是一个至关重要的概念，它彻底改变了我们编写和组织代码的方式：异步编程。本章将深入探讨异步 JavaScript 的世界，探索其基本概念、演变过程以及实际应用。
 
@@ -83,9 +79,6 @@ WebLighters Studio
 而异步编程则允许多件乐器同时演奏，创造出和谐高效的表演。在 JavaScript 的语境中，这意味着可以并发执行多个操作，而不会阻塞主执行线程。其结果是应用更加响应迅速、性能更佳，能够优雅高效地处理复杂任务。
 
 在本章中，我们将探索异步 JavaScript 的细微之处，从最初的回调，到 Promise 提供的优雅解决方案，再到现代的 `async/await` 语法。我们将揭示异步编程为何成为开发者工具箱中不可或缺的工具，以及它如何应对构建可扩展、响应式 Web 应用的挑战。
-
-
-
 
 那么，系好安全带，准备潜入异步 JavaScript 的迷人世界吧。无论你是经验丰富的开发者想要精进技能，还是初学者渴望掌握这些核心概念，本章都将为你提供知识和工具，助你精通 JavaScript 异步编程的艺术。
 
@@ -97,19 +90,13 @@ WebLighters Studio
 
 在 Web 开发领域，异步 JavaScript 之所以重要，有以下几个令人信服的理由：
 
-1.  **增强用户体验**：异步操作可防止用户界面在处理耗时任务时冻结或无响应。例如，从服务器加载数据时，异步代码允许用户在后台获取数据的同时继续与应用交互。
-
-2.  **提升性能**：通过并发执行多个操作，异步 JavaScript 能显著减少应用的整体执行时间。这对于严重依赖外部资源或 API 的应用尤为关键。
-
-3.  **高效利用资源**：异步编程能更好地利用系统资源。JavaScript 引擎无需在等待长时间运行的操作完成时阻塞主线程，而是可以继续执行其他任务，最大化 CPU 使用率和内存效率。
-
-4.  **可扩展性**：随着应用复杂度和规模的增长，异步编程对于维持性能和响应性至关重要。它使开发者能够处理大量并发操作，而不会影响应用的稳定性或用户体验。
-
-5.  **实时能力**：许多现代 Web 应用需要实时功能，如实时更新、聊天功能或协作编辑。异步 JavaScript 是这些能力的基石，允许客户端与服务器之间无缝通信，同时不阻塞主线程。
-
-6.  **错误处理与韧性**：异步编程模式提供了健壮的机制来处理错误并管理异步操作的流程。这使应用更具韧性，能够优雅地处理故障和意外情况。
-
-7.  **与现代 Web API 的兼容性**：许多现代 Web API（如用于发起 HTTP 请求的 Fetch 或文件系统访问 API）都基于异步模式设计。理解并善用异步 JavaScript 对于有效使用这些 API 以及构建现代 Web 应用至关重要。
+1. **增强用户体验**：异步操作可防止用户界面在处理耗时任务时冻结或无响应。例如，从服务器加载数据时，异步代码允许用户在后台获取数据的同时继续与应用交互。
+2. **提升性能**：通过并发执行多个操作，异步 JavaScript 能显著减少应用的整体执行时间。这对于严重依赖外部资源或 API 的应用尤为关键。
+3. **高效利用资源**：异步编程能更好地利用系统资源。JavaScript 引擎无需在等待长时间运行的操作完成时阻塞主线程，而是可以继续执行其他任务，最大化 CPU 使用率和内存效率。
+4. **可扩展性**：随着应用复杂度和规模的增长，异步编程对于维持性能和响应性至关重要。它使开发者能够处理大量并发操作，而不会影响应用的稳定性或用户体验。
+5. **实时能力**：许多现代 Web 应用需要实时功能，如实时更新、聊天功能或协作编辑。异步 JavaScript 是这些能力的基石，允许客户端与服务器之间无缝通信，同时不阻塞主线程。
+6. **错误处理与韧性**：异步编程模式提供了健壮的机制来处理错误并管理异步操作的流程。这使应用更具韧性，能够优雅地处理故障和意外情况。
+7. **与现代 Web API 的兼容性**：许多现代 Web API（如用于发起 HTTP 请求的 Fetch 或文件系统访问 API）都基于异步模式设计。理解并善用异步 JavaScript 对于有效使用这些 API 以及构建现代 Web 应用至关重要。
 
 为了说明异步 JavaScript 的重要性，我们来看一个实际例子。假设你正在构建一个天气应用，需要从多个 API 获取数据——当前天气状况、5 天预报和空气质量信息。在同步世界中，你的代码可能如下所示：
 
@@ -167,11 +154,9 @@ console.log("计时器已启动，继续执行...");
 
 虽然回调提供了一种处理异步操作的方式，但它们也带来了一系列挑战：
 
-1.  **回调地狱**：随着应用变得复杂，开发者经常发现自己在回调中嵌套回调，导致代码结构深度嵌套、难以阅读，俗称“回调地狱”或“厄运金字塔”。
-
-2.  **错误处理**：错误管理变得繁琐，因为每个回调通常需要自己的错误处理逻辑。
-
-3.  **控制反转**：通过将回调传递给其他函数，开发者放弃了对回调何时以及如何执行的控制，可能导致意外行为。
+1. **回调地狱**：随着应用变得复杂，开发者经常发现自己在回调中嵌套回调，导致代码结构深度嵌套、难以阅读，俗称“回调地狱”或“厄运金字塔”。
+2. **错误处理**：错误管理变得繁琐，因为每个回调通常需要自己的错误处理逻辑。
+3. **控制反转**：通过将回调传递给其他函数，开发者放弃了对回调何时以及如何执行的控制，可能导致意外行为。
 
 尽管存在这些缺点，回调在 JavaScript 中作为处理异步操作的主要方法持续了许多年。
 
@@ -181,36 +166,32 @@ Promise 作为一种强大的抽象概念出现，旨在解决回调的局限性
 
 Promise 相比回调具有多个优势：
 
-
-
-
-
-1.  链式调用：Promise 可以链式组合，从而实现更线性、更易读的代码结构。
-2.  更好的错误处理：Promise 通过 `.catch()` 方法提供了一种标准化的错误处理方式。
-3.  组合：多个 Promise 可以轻松地通过 `Promise.all()` 或 `Promise.race()` 等方法组合使用。
+1. 链式调用：Promise 可以链式组合，从而实现更线性、更易读的代码结构。
+2. 更好的错误处理：Promise 通过 `.catch()` 方法提供了一种标准化的错误处理方式。
+3. 组合：多个 Promise 可以轻松地通过 `Promise.all()` 或 `Promise.race()` 等方法组合使用。
 
 以下是一个 Promise 如何简化异步代码的示例：
 
 ```
-function  fetchUserData(userId) {
-  return  new  Promise((resolve, reject) => {
+function fetchUserData(userId) {
+  return new Promise((resolve, reject) => {
     // Simulating an API call
     setTimeout(() => {
-      const  user  = { id:  userId, name:  "John Doe" };
+      const user = { id: userId, name: "John Doe" };
       resolve(user);
     }, 1000);
   });
 }
 
 fetchUserData(123)
-  .then(user  => {
+  .then(user => {
     console.log("User data:", user);
-    return  fetchUserPosts(user.id);
+    return fetchUserPosts(user.id);
   })
-  .then(posts  => {
+  .then(posts => {
     console.log("User posts:", posts);
   })
-  .catch(error  => {
+  .catch(error => {
     console.error("An error occurred:", error);
   });
 ```
@@ -226,11 +207,11 @@ fetchUserData(123)
 让我们用 `async`/`await` 重写之前的示例：
 
 ```
-async  function  getUserData(userId) {
+async function getUserData(userId) {
   try {
-    const  user  =  await  fetchUserData(userId);
+    const user = await fetchUserData(userId);
     console.log("User data:", user);
-    const  posts  =  await  fetchUserPosts(user.id);
+    const posts = await fetchUserPosts(user.id);
     console.log("User posts:", posts);
   } catch (error) {
     console.error("An error occurred:", error);
@@ -246,14 +227,14 @@ getUserData(123);
 
 随着 JavaScript 的不断发展，新的模式和 API 不断涌现，进一步增强了异步编程的能力：
 
-1.  异步迭代器和生成器：允许对数据流进行异步迭代，为处理异步数据源提供了强大的方式。
-2.  可观察模式：像 RxJS 这样的库引入了可观察模式，它扩展了 Promise 的概念，可以处理随时间变化的多个值，非常适合基于事件的场景。
-3.  Web Workers：虽然严格来说不是异步编程特性，但 Web Workers 允许 JavaScript 在后台线程中运行脚本，从而在 Web 应用中实现真正的并行处理。
-4.  顶层 await：最新版本的 JavaScript 允许在模块的顶层（async 函数外部）使用 `await`，进一步简化了异步代码的组织。
+1. 异步迭代器和生成器：允许对数据流进行异步迭代，为处理异步数据源提供了强大的方式。
+2. 可观察模式：像 RxJS 这样的库引入了可观察模式，它扩展了 Promise 的概念，可以处理随时间变化的多个值，非常适合基于事件的场景。
+3. Web Workers：虽然严格来说不是异步编程特性，但 Web Workers 允许 JavaScript 在后台线程中运行脚本，从而在 Web 应用中实现真正的并行处理。
+4. 顶层 await：最新版本的 JavaScript 允许在模块的顶层（async 函数外部）使用 `await`，进一步简化了异步代码的组织。
 
 随着本章的深入，我们将更详细地探讨这些现代异步模式，让你全面了解处理 JavaScript 异步操作的工具。
 
-JavaScript 异步编程的演变反映了该语言的适应性以及社区对改善开发者体验和应用性能的承诺。从最初的回调到优雅的 `async`/`await` 语法乃至更远，这一演变的每一步都为 JavaScript 开发带来了新的可能性和效率。随着我们继续本章的学习，我们将深入探讨这些概念，为你提供知识和技能，以便在你的项目中充分利用异步 JavaScript 的全部力量。
+JavaScript 异步编程的演变反映了该语言的适应性以及社区对改善开发者体验和应用性能的承诺。从最初的回调到优雅的 `async/await` 语法乃至更远，这一演变的每一步都为 JavaScript 开发带来了新的可能性和效率。随着我们继续本章的学习，我们将深入探讨这些概念，为你提供知识和技能，以便在你的项目中充分利用异步 JavaScript 的全部力量。
 
 ### 异步 JavaScript 的常见用例
 
@@ -263,27 +244,29 @@ JavaScript 异步编程的演变反映了该语言的适应性以及社区对改
 
 异步 JavaScript 最常见和关键的用例之一是进行 API 调用和处理网络请求。在 Web 应用中，经常需要从外部源获取数据或向服务器发送数据。这些操作所需的时间可能因网络状况、服务器响应时间和传输数据量而异。
 
-异步 JavaScript 允许你发起这些请求而不阻塞主线程，确保应用在等待数据时保持响应。以下是一个使用 Fetch API 和 `async`/`await` 的示例：
+异步 JavaScript 允许你发起这些请求而不阻塞主线程，确保应用在等待数据时保持响应。以下是一个使用 Fetch API 和 `async/await` 的示例：
 
-```
-async  function  fetchUserData(userId) {
+
+
+```javascript
+async function fetchUserData(userId) {
   try {
-    const  response  =  await  fetch(`https://api.example.com/users/${userId}`);
+    const response = await fetch(`https://api.example.com/users/${userId}`);
     if (!response.ok) {
-      throw  new  Error('Failed to fetch user data');
+      throw new Error('Failed to fetch user data');
     }
-    const  userData  =  await  response.json();
-    return  userData;
+    const userData = await response.json();
+    return userData;
   } catch (error) {
     console.error('Error fetching user data:', error);
-    throw  error;
+    throw error;
   }
 }
 
 // Usage
-async  function  displayUserProfile(userId) {
+async function displayUserProfile(userId) {
   try {
-    const  user  =  await  fetchUserData(userId);
+    const user = await fetchUserData(userId);
     updateUIWithUserData(user);
   } catch (error) {
     showErrorMessage('Failed to load user profile');
@@ -293,29 +276,29 @@ async  function  displayUserProfile(userId) {
 
 在这个示例中，`fetchUserData` 函数进行异步 API 调用来获取用户数据。`displayUserProfile` 函数使用这些数据更新 UI，整个过程不会阻塞主线程或冻结用户界面。
 
-#### 2. 文件操作
+## 2. 文件操作
 
 在处理文件系统时，尤其是在 Node.js 环境或浏览器中使用文件系统访问 API 时，异步操作至关重要。读取或写入大文件可能非常耗时，如果同步执行这些操作，会导致性能低下和应用无响应。
 
 以下是在 Node.js 中异步读取文件的示例：
 
-```
-const  fs  =  require('fs').promises;
+```javascript
+const fs = require('fs').promises;
 
-async  function  readConfigFile(filePath) {
+async function readConfigFile(filePath) {
   try {
-    const  content  =  await  fs.readFile(filePath, 'utf8');
-    return  JSON.parse(content);
+    const content = await fs.readFile(filePath, 'utf8');
+    return JSON.parse(content);
   } catch (error) {
     console.error('Error reading config file:', error);
-    throw  error;
+    throw error;
   }
 }
 
 // Usage
-async  function  initializeApp() {
+async function initializeApp() {
   try {
-    const  config  =  await  readConfigFile('./config.json');
+    const config = await readConfigFile('./config.json');
     startApplication(config);
   } catch (error) {
     console.error('Failed to initialize application:', error);
@@ -325,34 +308,34 @@ async  function  initializeApp() {
 
 这种异步方法允许应用在读取可能较大的配置文件时保持响应。
 
-#### 3. 数据库操作
+## 3. 数据库操作
 
 在处理数据库时，无论是传统的 SQL 数据库还是 NoSQL 解决方案，查询、插入或更新数据等操作都可能需要相当长的时间。异步 JavaScript 对于高效处理这些操作至关重要，尤其是在需要处理多个并发请求的服务器端应用中。
 
 以下是一个使用假设的异步数据库库的示例：
 
-```
-const  db  =  require('async-db-library');
+```javascript
+const db = require('async-db-library');
 
-async  function  getUserOrders(userId) {
+async function getUserOrders(userId) {
   try {
-    await  db.connect();
-    const  orders  =  await  db.query('SELECT * FROM orders WHERE user_id = ?', [userId]);
-    return  orders;
+    await db.connect();
+    const orders = await db.query('SELECT * FROM orders WHERE user_id = ?', [userId]);
+    return orders;
   } catch (error) {
     console.error('Error fetching user orders:', error);
-    throw  error;
+    throw error;
   } finally {
-    await  db.disconnect();
+    await db.disconnect();
   }
 }
 
 // Usage
-async  function  processUserOrders(userId) {
+async function processUserOrders(userId) {
   try {
-    const  orders  =  await  getUserOrders(userId);
-    for (const  order  of  orders) {
-      await  processOrder(order);
+    const orders = await getUserOrders(userId);
+    for (const order of orders) {
+      await processOrder(order);
     }
     notifyUserOrdersProcessed(userId);
   } catch (error) {
@@ -361,19 +344,15 @@ async  function  processUserOrders(userId) {
 }
 ```
 
-
-
-
-
 这种异步方式使应用程序能够高效处理数据库操作，即使面对大型数据集或复杂查询也不例外。
 
-#### 4. 定时器与时间间隔
+## 4. 定时器与时间间隔
 
 JavaScript 的 `setTimeout` 和 `setInterval` 函数本质上是异步的，常用于调度任务或创建重复事件。虽然这些函数使用回调，但可以轻松地封装在 `Promise` 中，或与 `async/await` 配合使用，以实现更结构化的代码。
 
 以下是一个使用 `async/await` 创建简单番茄钟定时器的示例：
 
-```
+```javascript
 function sleep(ms) {
   return new Promise(resolve => setTimeout(resolve, ms));
 }
@@ -401,13 +380,13 @@ startWorkSession();
 
 此示例展示了如何利用异步编程创建基于时间的功能，同时不阻塞其他代码的执行。
 
-#### 5. 事件处理与用户交互
+## 5. 事件处理与用户交互
 
 虽然许多 DOM 事件是同步处理的，但在某些场景下，异步编程对管理用户交互非常有益，尤其是当这些交互触发耗时操作时。
 
 考虑一个搜索功能，用户在输入时查询 API：
 
-```
+```javascript
 const searchInput = document.getElementById('search-input');
 const resultsContainer = document.getElementById('results-container');
 
@@ -439,13 +418,13 @@ searchInput.addEventListener('input', debouncedSearch);
 
 在此示例中，搜索函数被防抖并以异步方式执行，避免了不必要的 API 调用，即使在处理可能较慢的网络请求时也能确保流畅的用户体验。
 
-#### 6. 动画与图形
+## 6. 动画与图形
 
 在处理复杂动画或图形处理时，异步 JavaScript 可以通过将密集型任务分解为多个帧处理的小块，帮助维持流畅的性能。
 
 以下是一个使用 `requestAnimationFrame` API 的简单示例：
 
-```
+```javascript
 async function animateElement(element, targetOpacity, duration) {
   const startOpacity = parseFloat(getComputedStyle(element).opacity);
   const startTime = performance.now();
@@ -485,94 +464,91 @@ fadeElementsSequentially(Array.from(elements));
 
 随着你继续探索异步 JavaScript 的世界，你可能会发现更多可以应用这些技术来改善应用程序性能和用户体验的场景。关键在于识别异步操作的机会，并利用适当的工具和模式来有效实现它们。
 
-### 本书你将学到什么
+## 本书你将学到什么
 
 当我们踏上这段关于异步 JavaScript 的全面旅程时，你将解锁一个知识宝库，彻底改变你处理 Web 开发的方式。本书旨在带你从异步编程的基础知识，到高级技术和最佳实践，使你掌握构建高效、可扩展且响应迅速的应用程序的技能。
 
 以下是你在后续章节中可以期待学习的内容概览：
 
-#### 1. 异步 JavaScript 基础
+### 1. 异步 JavaScript 基础
 
 我们将从打下坚实基础开始，探索支撑 JavaScript 异步编程的核心概念。你将深入理解：
 
-*   JavaScript 事件循环及其如何管理异步操作
-*   同步与异步代码执行的区别
-*   非阻塞 I/O 的概念及其在 Web 开发中的重要性
-*   异步编程如何有助于创建响应式用户界面
+- JavaScript 事件循环及其如何管理异步操作
+- 同步与异步代码执行的区别
+- 非阻塞 I/O 的概念及其在 Web 开发中的重要性
+- 异步编程如何有助于创建响应式用户界面
 
-#### 2. 回调函数：构建基石
+### 2. 回调函数：构建基石
 
 虽然回调可能看起来像是过去的遗留物，但理解它们对于掌握异步 JavaScript 至关重要。在本节中，你将学习：
 
-*   回调函数的构成及其如何实现异步操作
-*   有效使用回调的常见模式
-*   管理回调地狱并提高代码可读性的策略
-*   使用回调时的错误处理技术
+- 回调函数的构成及其如何实现异步操作
+- 有效使用回调的常见模式
+- 管理回调地狱并提高代码可读性的策略
+- 使用回调时的错误处理技术
 
-#### 3. Promise：异步编程的新时代
+### 3. Promise：异步编程的新时代
 
 `Promise` 彻底改变了异步 JavaScript，我们将深入探讨其机制和用法：
 
-*   `Promise` 的生命周期和状态（`pending`、`fulfilled`、`rejected`）
-*   创建、链式调用和组合 `Promise`
-*   使用 `.catch()` 和 `.finally()` 进行 `Promise` 错误处理
-*   高级 `Promise` 方法，如 `Promise.all()`、`Promise.race()` 和 `Promise.allSettled()`
+- `Promise` 的生命周期和状态（`pending`、`fulfilled`、`rejected`）
+- 创建、链式调用和组合 `Promise`
+- 使用 `.catch()` 和 `.finally()` 进行 `Promise` 错误处理
+- 高级 `Promise` 方法，如 `Promise.all()`、`Promise.race()` 和 `Promise.allSettled()`
 
-#### 4. Async/Await：同步风格的异步代码
+### 4. Async/Await：同步风格的异步代码
 
 `async/await` 语法为异步 JavaScript 带来了前所未有的清晰度。你将掌握：
 
-*   `async/await` 与 `Promise` 的关系
-*   使用 `async/await` 编写清晰易读的异步代码
-*   使用 `try/catch` 块处理异步函数中的错误
-*   将 `async/await` 与 `Promise` 方法结合，实现强大的异步工作流
+- `async/await` 与 `Promise` 的关系
+- 使用 `async/await` 编写清晰易读的异步代码
+- 使用 `try/catch` 块处理异步函数中的错误
+- 将 `async/await` 与 `Promise` 方法结合，实现强大的异步工作流
 
-#### 5. 高级异步模式
+### 5. 高级异步模式
 
 我们将探索前沿的异步模式和技术：
 
-*   用于处理异步数据流的异步迭代器和生成器
-*   Observable 模式与响应式编程概念
-*   实现自定义异步抽象
-*   利用 Web Workers 在浏览器中实现真正的并行处理
+- 用于处理异步数据流的异步迭代器和生成器
+- Observable 模式与响应式编程概念
+- 实现自定义异步抽象
+- 利用 Web Workers 在浏览器中实现真正的并行处理
 
-#### 6. 实际应用与最佳实践
+### 6. 实际应用与最佳实践
 
 理论与实践相结合，我们将知识应用于实际场景：
 
-*   为 API 调用构建健壮的错误处理和重试机制
-*   为异步操作实现高效的缓存策略
-*   在高性能应用程序中管理并发和速率限制
-*   测试异步代码并确保可靠性的技术
+- 为 API 调用构建健壮的错误处理和重试机制
+- 为异步操作实现高效的缓存策略
+- 在高性能应用程序中管理并发和速率限制
+- 测试异步代码并确保可靠性的技术
 
-#### 7. 性能优化与调试
-
-
-
+### 7. 性能优化与调试
 
 学习如何微调异步代码以获得最佳性能：
 
-*   对异步操作进行性能分析和识别瓶颈
-*   最小化不必要的异步开销的技术
-*   使用浏览器开发者工具和 Node.js 调试器调试异步代码
-*   异步环境中错误跟踪和日志记录的最佳实践
+- 对异步操作进行性能分析和识别瓶颈
+- 最小化不必要的异步开销的技术
+- 使用浏览器开发者工具和 Node.js 调试器调试异步代码
+- 异步环境中错误跟踪和日志记录的最佳实践
 
-### 8\. 现代框架中的异步 JavaScript
+### 8. 现代框架中的异步 JavaScript
 
 探索流行的 JavaScript 框架和库如何利用异步模式：
 
-*   React 中使用 Hooks 和 Suspense 进行异步状态管理
-*   Vue.js 组件和 Vuex 中处理异步操作
-*   Angular 使用 RxJS 和 Observables 进行异步编程的方法
-*   Next.js 及其他元框架中的无服务器函数和异步模式
+- React 中使用 Hooks 和 Suspense 进行异步状态管理
+- Vue.js 组件和 Vuex 中处理异步操作
+- Angular 使用 RxJS 和 Observables 进行异步编程的方法
+- Next.js 及其他元框架中的无服务器函数和异步模式
 
-### 9\. 异步 JavaScript 的未来
+### 9. 异步 JavaScript 的未来
 
 最后，我们将展望新兴趋势和未来发展：
 
-*   与异步编程相关的即将推出的 ECMAScript 提案
-*   WebAssembly 对异步 JavaScript 的潜在影响
-*   在异步操作背景下探索函数式响应式编程等新范式
+- 与异步编程相关的即将推出的 ECMAScript 提案
+- WebAssembly 对异步 JavaScript 的潜在影响
+- 在异步操作背景下探索函数式响应式编程等新范式
 
 通过阅读本书，你将全面理解异步 JavaScript，从其历史根源到前沿技术。你将掌握编写高效、可维护且可扩展的异步代码所需的知识和技能，自信地应对复杂的编程挑战。
 
@@ -584,7 +560,7 @@ fadeElementsSequentially(Array.from(elements));
 
 # 第 1 章：理解异步 JavaScript
 
-# ​❧​
+# ❧
 
 ## 同步与异步编程
 
@@ -596,8 +572,10 @@ fadeElementsSequentially(Array.from(elements));
 
 让我们看一个 JavaScript 中的简单示例来说明同步执行：
 
-```
-console.log("First"); console.log("Second"); console.log("Third");
+```javascript
+console.log("First");
+console.log("Second");
+console.log("Third");
 ```
 
 在这段代码片段中，输出将始终是：
@@ -609,6 +587,8 @@ Second
 Third
 
 程序按顺序执行每个 `console.log` 语句，等待每个语句完成后才继续下一个。这种可预测的线性流程是同步编程的标志。
+
+
 
 虽然同步代码易于理解和推理，但它可能导致性能问题，尤其是在处理耗时操作时。例如，如果有一个函数需要从服务器获取数据，同步执行会强制整个程序等待数据检索完成，可能导致用户界面冻结或无响应。
 
@@ -628,11 +608,11 @@ console.log("End");
 
 这段代码的输出将是：
 
+```
 Start
-
 End
-
 Timeout completed
+```
 
 注意 "End" 在超时消息之前被记录，尽管它在代码中出现得更晚。这是因为 `setTimeout` 是一个异步函数，不会阻塞后续代码的执行。
 
@@ -642,15 +622,15 @@ JavaScript 中的异步编程由回调、Promise 以及最近的 async/await 语
 
 异步编程提供了几个优势：
 
-1.  性能提升：通过不阻塞主线程，异步代码可以更好地利用系统资源。
-2.  增强用户体验：即使执行耗时任务，应用程序也能保持响应。
-3.  可扩展性：异步操作对于处理服务器端应用程序中的多个并发请求至关重要。
+1. 性能提升：通过不阻塞主线程，异步代码可以更好地利用系统资源。
+2. 增强用户体验：即使执行耗时任务，应用程序也能保持响应。
+3. 可扩展性：异步操作对于处理服务器端应用程序中的多个并发请求至关重要。
 
 然而，异步编程也带来了一系列挑战：
 
-1.  复杂性：异步代码可能更难阅读和推理，尤其是在处理多个相互依赖的异步操作时。
-2.  错误处理：管理异步代码中的错误需要特别注意和技术。
-3.  竞态条件：不当处理异步操作可能导致竞态条件和不可预测的行为。
+1. 复杂性：异步代码可能更难阅读和推理，尤其是在处理多个相互依赖的异步操作时。
+2. 错误处理：管理异步代码中的错误需要特别注意和技术。
+3. 竞态条件：不当处理异步操作可能导致竞态条件和不可预测的行为。
 
 随着我们深入探索异步 JavaScript 的世界，我们将研究各种技术和最佳实践，以利用其力量同时减轻其挑战。
 
@@ -661,9 +641,6 @@ JavaScript 异步特性的核心是事件循环，这是一个关键机制，使
 ### JavaScript 的单线程特性
 
 在深入事件循环之前，必须理解 JavaScript 是一种单线程语言。这意味着它只有一个调用栈，一次只能做一件事。在纯同步的世界中，这意味着长时间运行的操作会阻塞整个程序，导致性能低下和用户界面无响应。
-
-
-
 
 然而，JavaScript 的运行环境（无论是浏览器还是 Node.js）提供了处理异步操作的机制，而不会阻塞主线程。这就是事件循环发挥作用的地方。
 
@@ -712,10 +689,10 @@ Timeout
 
 这个示例展示了事件循环的几个关键方面：
 
-* 同步代码会立即执行。
-* 异步操作被委托给 Web API。
-* 微任务（如 Promise 回调）优先于常规任务（如 `setTimeout` 回调）。
-* 事件循环在调用栈为空时持续检查要执行的任务。
+- 同步代码会立即执行。
+- 异步操作被委托给 Web API。
+- 微任务（如 Promise 回调）优先于常规任务（如 `setTimeout` 回调）。
+- 事件循环在调用栈为空时持续检查要执行的任务。
 
 ### 事件循环的非阻塞特性
 
@@ -727,8 +704,8 @@ Timeout
 
 虽然事件循环的核心概念相同，但在不同的 JavaScript 环境中，其实现可能略有差异：
 
-* 浏览器：浏览器中的事件循环与渲染过程紧密相关。任务通常在动画帧之间处理，以确保视觉更新流畅。
-* Node.js：Node.js 的事件循环基于 libuv 库，并包含用于处理 I/O 操作、定时器和其他系统级任务的额外阶段。
+- 浏览器：浏览器中的事件循环与渲染过程紧密相关。任务通常在动画帧之间处理，以确保视觉更新流畅。
+- Node.js：Node.js 的事件循环基于 libuv 库，并包含用于处理 I/O 操作、定时器和其他系统级任务的额外阶段。
 
 理解这些环境特定的细微差别，对于在不同 JavaScript 上下文中优化性能至关重要。
 
@@ -850,14 +827,8 @@ fetchData((error, data) => {
 从回调到 Promise 再到 async/await 的演进，代表了 JavaScript 中异步编程的发展历程：
 
 1. 回调：最初的方法，简单但在嵌套场景中容易变得复杂。
-
-
-
-
-
-2.  **Promise**：引入了一种更结构化的方式来处理异步操作，允许更好的错误处理和链式调用。
-
-3.  **Async/Await**：基于 Promise 构建，提供了一种语法糖，使异步代码看起来和行为更像同步代码。
+2. Promise：引入了一种更结构化的方式来处理异步操作，允许更好的错误处理和链式调用。
+3. Async/Await：基于 Promise 构建，提供了一种语法糖，使异步代码看起来和行为更像同步代码。
 
 下面是一个快速对比：
 
@@ -983,7 +954,9 @@ greet("Bob", afterGreeting);
 
 回调也可以接收参数，允许你将数据从主函数传递给回调。这在需要处理或操作异步操作的结果时特别有用。
 
-```
+
+
+```javascript
 function fetchUserData(userId, callback) {
   // 模拟 API 调用
   setTimeout(() => {
@@ -999,13 +972,13 @@ function displayUserInfo(user) {
 fetchUserData(123, displayUserInfo);
 ```
 
-在这个例子中，`fetchUserData` 模拟从 API 获取用户数据。一旦数据被“获取”，它就会调用 `displayUserInfo` 回调函数，并将用户对象作为参数传递。
+在这个例子中，`fetchUserData`模拟从 API 获取用户数据。一旦数据被“获取”，它就会调用`displayUserInfo`回调函数，并将用户对象作为参数传递。
 
 ### 回调中的错误处理
 
 在处理异步操作时，处理潜在的错误至关重要。Node.js 和许多 JavaScript 库中常见的一种模式是使用错误优先的回调风格，其中回调的第一个参数保留给错误对象。
 
-```
+```javascript
 function readFile(filename, callback) {
   // 模拟文件读取，可能出错
   setTimeout(() => {
@@ -1029,89 +1002,78 @@ readFile("example.txt", handleFileContents);
 readFile("nonexistent.txt", handleFileContents);
 ```
 
-在这个例子中，`readFile` 模拟异步读取文件。如果文件不存在，它会使用错误对象调用回调。`handleFileContents` 函数在处理文件内容之前首先检查是否有错误。
+在这个例子中，`readFile`模拟异步读取文件。如果文件不存在，它会使用错误对象调用回调。`handleFileContents`函数在处理文件内容之前首先检查是否有错误。
 
 通过遵循这些模式和最佳实践，你可以使用回调编写更健壮、更可维护的异步代码。然而，正如我们将在下一节中看到的，过度依赖回调也会带来一系列问题。
 
 ## 回调地狱的问题
 
-
-
-
-
 随着应用程序复杂性的增加以及异步操作数量的增多，开发者常常会面临一个被称为“回调地狱”或“厄运金字塔”的挑战。当多个异步操作相互嵌套时，就会产生深度嵌套的回调函数，导致代码难以阅读、理解和维护。
 
 我们来看一个示例以说明这个问题：
 
-```
-function  getUserData(userId, callback) {
+```javascript
+function getUserData(userId, callback) {
+  // 模拟获取用户数据的 API 调用
+  setTimeout(() => {
+    const user = { id: userId, name: "Alice" };
+    callback(null, user);
+  }, 1000);
+}
 
-  // 模拟获取用户数据的 API 调用   setTimeout(() => {const  user  = { id:  userId, name:  "Alice" };callback(null, user);
+function getUserPosts(userId, callback) {
+  // 模拟获取用户帖子的 API 调用
+  setTimeout(() => {
+    const posts = [
+      { id: 1, title: "First Post" },
+      { id: 2, title: "Second Post" }
+    ];
+    callback(null, posts);
+  }, 1000);
+}
 
-  }, 1000);
+function getPostComments(postId, callback) {
+  // 模拟获取帖子评论的 API 调用
+  setTimeout(() => {
+    const comments = [
+      { id: 101, text: "Great post!" },
+      { id: 102, text: "Thanks for sharing" }
+    ];
+    callback(null, comments);
+  }, 1000);
+}
 
-} function  getUserPosts(userId, callback) {
+// 使用嵌套回调获取用户数据、帖子及评论
+getUserData(123, (error, user) => {
+  if (error) {
+    console.error("Error fetching user data:", error);
+    return;
+  }
 
-  // 模拟获取用户帖子的 API 调用   setTimeout(() => {const  posts  = [
+  console.log("User:", user);
 
-      { id:  1, title:  "First Post" },
+  getUserPosts(user.id, (error, posts) => {
+    if (error) {
+      console.error("Error fetching user posts:", error);
+      return;
+    }
 
-      { id:  2, title:  "Second Post" }
+    console.log("Posts:", posts);
 
-    ];callback(null, posts);
+    getPostComments(posts[0].id, (error, comments) => {
+      if (error) {
+        console.error("Error fetching post comments:", error);
+        return;
+      }
 
-  }, 1000);
-
-} function  getPostComments(postId, callback) {
-
-  // 模拟获取帖子评论的 API 调用   setTimeout(() => {const  comments  = [
-
-      { id:  101, text:  "Great post!" },
-
-      { id:  102, text:  "Thanks for sharing" }
-
-    ];callback(null, comments);
-
-  }, 1000);
-
-} // 使用嵌套回调获取用户数据、帖子及评论 getUserData(123, (error, user) => {if (error) {
-
-    console.error("Error fetching user data:", error);
-
-    return;
-
-  }
-
-  console.log("User:", user);
-
-  getUserPosts(user.id, (error, posts) => {if (error) {
-
-      console.error("Error fetching user posts:", error);
-
-      return;
-
-    }
-
-    console.log("Posts:", posts);
-
-    getPostComments(posts[0].id, (error, comments) => {if (error) {
-
-        console.error("Error fetching post comments:", error);
-
-        return;
-
-      }
-
-      console.log("Comments:", comments);
-
-      // 更多嵌套回调可能接踵而至...     });
-
-  });
-
+      console.log("Comments:", comments);
+      // 更多嵌套回调可能接踵而至...
+    });
+  });
 });
 ```
 
-在这个示例中，我们有三个异步函数：`getUserData`、`getUserPosts` 和 `getPostComments`。为了获取用户数据、他们的帖子以及第一条帖子的评论，我们需要将这些函数调用嵌套在彼此的回调中。
+在这个示例中，我们有三个异步函数：`getUserData`、`getUserPosts`和`getPostComments`。为了获取用户数据、他们的帖子以及第一条帖子的评论，我们需要将这些函数调用嵌套在彼此的回调中。
 
 这种嵌套带来了几个问题：
 
@@ -1134,48 +1096,37 @@ function  getUserData(userId, callback) {
 
 提高回调可读性的最简单方法之一是使用命名函数而不是匿名函数。这种方法有助于分离关注点，并使代码更具自文档性。
 
-```
-function  handleUserData(error, user) {
+```javascript
+function handleUserData(error, user) {
+  if (error) {
+    console.error("Error fetching user data:", error);
+    return;
+  }
 
-  if (error) {
+  console.log("User:", user);
+  getUserPosts(user.id, handleUserPosts);
+}
 
-    console.error("Error fetching user data:", error);
+function handleUserPosts(error, posts) {
+  if (error) {
+    console.error("Error fetching user posts:", error);
+    return;
+  }
 
-    return;
+  console.log("Posts:", posts);
+  getPostComments(posts[0].id, handlePostComments);
+}
 
-  }
+function handlePostComments(error, comments) {
+  if (error) {
+    console.error("Error fetching post comments:", error);
+    return;
+  }
 
-  console.log("User:", user);
+  console.log("Comments:", comments);
+}
 
-  getUserPosts(user.id, handleUserPosts);
-
-} function  handleUserPosts(error, posts) {
-
-  if (error) {
-
-    console.error("Error fetching user posts:", error);
-
-    return;
-
-  }
-
-  console.log("Posts:", posts);
-
-  getPostComments(posts[0].id, handlePostComments);
-
-} function  handlePostComments(error, comments) {
-
-  if (error) {
-
-    console.error("Error fetching post comments:", error);
-
-    return;
-
-  }
-
-  console.log("Comments:", comments);
-
-} getUserData(123, handleUserData);
+getUserData(123, handleUserData);
 ```
 
 通过使用命名函数，我们扁平化了代码结构，使其更易于阅读和维护。每个函数现在都有明确的职责，操作流程也更加清晰。
@@ -1184,127 +1135,104 @@ function  handleUserData(error, user) {
 
 另一种有效的策略是将复杂操作分解为更小、更易于管理的函数。这不仅提高了可读性，还增强了代码的可重用性和可测试性。
 
-```
-function  fetchUserDataAndPosts(userId, callback) {
+```javascript
+function fetchUserDataAndPosts(userId, callback) {
+  getUserData(userId, (error, user) => {
+    if (error) {
+      callback(error);
+      return;
+    }
 
-  getUserData(userId, (error, user) => {if (error) {
+    getUserPosts(user.id, (error, posts) => {
+      if (error) {
+        callback(error);
+        return;
+      }
 
-      callback(error);
+      callback(null, { user, posts });
+    });
+  });
+}
 
-      return;
+function fetchPostComments(postId, callback) {
+  getPostComments(postId, (error, comments) => {
+    if (error) {
+      callback(error);
+      return;
+    }
 
-    }
+    callback(null, comments);
+  });
+}
 
-    getUserPosts(user.id, (error, posts) => {if (error) {
+function processUserInfo(userId, callback) {
+  fetchUserDataAndPosts(userId, (error, result) => {
+    if (error) {
+      callback(error);
+      return;
+    }
 
-        callback(error);
+    fetchPostComments(result.posts[0].id, (error, comments) => {
+      if (error) {
+        callback(error);
+        return;
+      }
 
-        return;
+      callback(null, {
+        user: result.user,
+        posts: result.posts,
+        comments: comments
+      });
+    });
+  });
+}
 
-      }
+processUserInfo(123, (error, result) => {
+  if (error) {
+    console.error("Error processing user info:", error);
+    return;
+  }
 
-      callback(null, { user, posts });
-
-    });
-
-  });
-
-} function  fetchPostComments(postId, callback) {
-
-  getPostComments(postId, (error, comments) => {if (error) {
-
-      callback(error);
-
-      return;
-
-    }
-
-    callback(null, comments);
-
-  });
-
-} function  processUserInfo(userId, callback) {
-
-  fetchUserDataAndPosts(userId, (error, result) => {if (error) {
-
-      callback(error);
-
-      return;
-
-    }
-
-    fetchPostComments(result.posts[0].id, (error, comments) => {if (error) {
-
-        callback(error);
-
-        return;
-
-      }
-
-      callback(null, {
-
-        user:  result.user,
-
-        posts:  result.posts,
-
-        comments:  comments });
-
-    });
-
-  });
-
-} processUserInfo(123, (error, result) => {if (error) {
-
-    console.error("Error processing user info:", error);
-
-    return;
-
-  }
-
-  console.log("User Info:", result);
-
+  console.log("User Info:", result);
 });
 ```
 
-在这个重构版本中，我们创建了独立的函数来获取用户数据和帖子（`fetchUserDataAndPosts`）以及获取帖子评论（`fetchPostComments`）。主函数 `processUserInfo` 现在协调这些操作，从而得到更清晰、更模块化的代码。
+在这个重构版本中，我们创建了独立的函数来获取用户数据和帖子（`fetchUserDataAndPosts`）以及获取帖子评论（`fetchPostComments`）。主函数`processUserInfo`现在协调这些操作，从而得到更清晰、更模块化的代码。
 
 ### 3. 控制流库
 
-对于涉及多个异步操作的更复杂场景，控制流库会非常有用。像 `async.js` 这样的库提供了更有效管理异步代码的工具。
+对于涉及多个异步操作的更复杂场景，控制流库会非常有用。像`async.js`这样的库提供了更有效管理异步代码的工具。
 
-以下是使用 `async.js` 的示例：
+以下是使用`async.js`的示例：
 
-```
-const  async  =  require('async'); async.waterfall([
+```javascript
+const async = require("async");
 
-  (callback) =>  getUserData(123, callback),
+async.waterfall([
+  (callback) => getUserData(123, callback),
 
-  (user, callback) =>  getUserPosts(user.id, (error, posts) =>  callback(error, user, posts)),
+  (user, callback) =>
+    getUserPosts(user.id, (error, posts) =>
+      callback(error, user, posts)
+    ),
 
-  (user, posts, callback) =>  getPostComments(posts[0].id, (error, comments) =>  callback(error, user, posts, comments))
+  (user, posts, callback) =>
+    getPostComments(posts[0].id, (error, comments) =>
+      callback(error, user, posts, comments)
+    )
+], (error, user, posts, comments) => {
+  if (error) {
+    console.error("Error:", error);
+    return;
+  }
 
-], (error, user, posts, comments) => {if (error) {
-
-    console.error("Error:", error);
-
-    return;
-
-  }
-
-  console.log("User:", user);
-
-  console.log("Posts:", posts);
-
-  console.log("Comments:", comments);
-
+  console.log("User:", user);
+  console.log("Posts:", posts);
+  console.log("Comments:", comments);
 });
 ```
 
-`async.waterfall` 函数允许我们定义一系列相互依赖结果的异步操作。这种方法为管理复杂的异步流程提供了更线性、更易读的结构。
-
-
-
-
+`async.waterfall`函数允许我们定义一系列相互依赖结果的异步操作。这种方法为管理复杂的异步流程提供了更线性、更易读的结构。
 
 ### 4. Promise
 
@@ -1312,7 +1240,7 @@ const  async  =  require('async'); async.waterfall([
 
 以下是一个简短的示例，展示了使用 Promise 后代码可能的样子：
 
-```
+```javascript
 function getUserData(userId) {
   return new Promise((resolve, reject) => {
     // 模拟 API 调用
@@ -1367,15 +1295,17 @@ getUserData(123)
 
 ### 5. Async/Await
 
-在 Promise 的基础上，async/await 语法（我们将在后面深入探讨）提供了一种更接近同步代码的异步编程方式：
+在 Promise 的基础上，`async/await`语法（我们将在后面深入探讨）提供了一种更接近同步代码的异步编程方式：
 
-```
+```javascript
 async function processUserInfo(userId) {
   try {
     const user = await getUserData(userId);
     console.log("User:", user);
+
     const posts = await getUserPosts(user.id);
     console.log("Posts:", posts);
+
     const comments = await getPostComments(posts[0].id);
     console.log("Comments:", comments);
   } catch (error) {
@@ -1386,15 +1316,15 @@ async function processUserInfo(userId) {
 processUserInfo(123);
 ```
 
-这个 async/await 版本的代码看起来几乎像同步代码，使其极其易读且易于理解。
+这个`async/await`版本的代码看起来几乎像同步代码，使其极其易读且易于理解。
+
+
 
 通过应用这些重构技巧，我们可以显著提升异步 JavaScript 代码的可读性和可维护性。虽然回调函数仍然是 JavaScript 中的一个重要概念，但理解这些模式以及 Promise 和 async/await 等更新的异步模式，对于在现代 JavaScript 应用中编写干净、高效且可维护的代码至关重要。
 
 在接下来的章节中，我们将深入探讨 Promise 和 async/await，探索这些更高级的异步模式如何进一步增强我们编写清晰且强大的异步 JavaScript 代码的能力。
 
 # 第 3 章：Promise
-
-# ​❧​
 
 ## JavaScript 中的 Promise 是什么？
 
@@ -1412,7 +1342,7 @@ Promise 的引入标志着 JavaScript 处理异步操作的一次重大演变。
 
 让我们更深入地了解 Promise 的结构：
 
-```
+```javascript
 const myPromise = new Promise((resolve, reject) => {
   // 异步操作在这里
   if (/* 操作成功 */) {
@@ -1435,13 +1365,13 @@ Promise 的强大之处在于它能够表示一个可能不会立即获得、但
 2. **已完成**：异步操作成功完成时 Promise 的状态。
 3. **已拒绝**：异步操作失败时 Promise 的状态。
 
-让我们更详细地探讨每种状态：
+让我们更详细地探讨每种状态。
 
 ### 待定状态
 
 当 Promise 被创建时，它处于待定状态。该状态表示与 Promise 关联的异步操作仍在进行中。在此状态下，Promise 被认为是未解决的。
 
-```
+```javascript
 const pendingPromise = new Promise((resolve, reject) => {
   // 需要时间的异步操作
   setTimeout(() => {
@@ -1459,7 +1389,7 @@ console.log(pendingPromise); // Promise {<pending>}
 
 当 Promise 所代表的异步操作成功完成时，它会转换到已完成状态。当 Promise 完成时，意味着在 Promise 执行器中调用了 `resolve` 函数。
 
-```
+```javascript
 const fulfilledPromise = new Promise((resolve, reject) => {
   resolve("成功！");
 });
@@ -1475,7 +1405,7 @@ fulfilledPromise.then((result) => {
 
 当 Promise 所代表的异步操作遇到错误或失败时，它会进入已拒绝状态。这发生在 Promise 执行器中调用了 `reject` 函数时。
 
-```
+```javascript
 const rejectedPromise = new Promise((resolve, reject) => {
   reject(new Error("操作失败"));
 });
@@ -1492,10 +1422,6 @@ rejectedPromise.catch((error) => {
 理解这些状态至关重要，因为它们决定了你如何与 Promise 交互。用于处理 Promise 结果的方法（`then()`、`catch()`、`finally()`）直接与这些状态相关。
 
 ## 创建与消费 Promise
-
-
-
-
 
 创建和使用 Promise 是现代 JavaScript 开发中的基本技能。让我们详细探讨这两个方面。
 
@@ -1516,7 +1442,7 @@ const myPromise = new Promise((resolve, reject) => {
 });
 ```
 
-在这个示例中，我们创建了一个根据 `success` 变量立即 resolve 或 reject 的 Promise。在实际场景中，Promise 通常会包装一个异步操作，例如 API 调用或数据库查询。
+在这个示例中，我们创建了一个根据 `success` 变量立即 `resolve` 或 `reject` 的 Promise。在实际场景中，Promise 通常会包装一个异步操作，例如 API 调用或数据库查询。
 
 下面是一个模拟异步操作的更实际的示例：
 
@@ -1535,7 +1461,7 @@ function fetchUserData(userId) {
 }
 ```
 
-这个函数返回一个 Promise，如果 `userId` 是 123，则 resolve 并返回用户数据，否则 reject 并返回错误。
+这个函数返回一个 Promise，如果 `userId` 是 123，则 `resolve` 并返回用户数据，否则 `reject` 并返回错误。
 
 ### 使用 Promise
 
@@ -1592,11 +1518,11 @@ fetchUserData(123)
 
 通过理解如何创建和使用 Promise，你可以编写更健壮、更易读的异步代码，有效管理复杂操作及其潜在结果。
 
-## 使用 .then()、.catch() 和 .finally()
+## 使用 `.then()`、`.catch()` 和 `.finally()`
 
 `.then()`、`.catch()` 和 `.finally()` 方法是 JavaScript 中处理 Promise 的重要工具。它们允许你处理 Promise 的不同状态，并控制异步操作的流程。让我们详细探讨每个方法。
 
-### .then() 方法
+### `.then()` 方法
 
 `.then()` 方法用于指定 Promise 被兑现时应执行的操作。它接受最多两个参数：
 
@@ -1629,7 +1555,7 @@ fetchUserData(123)
 
 在这个示例中，我们首先获取用户数据，然后使用该数据获取用户的帖子。每个 `.then()` 返回一个新的 Promise，允许我们链式调用这些操作。
 
-### .catch() 方法
+### `.catch()` 方法
 
 `.catch()` 方法用于处理 Promise 链中发生的任何错误。它等同于 `.then(null, errorHandlingFunction)`，但更易读，是推荐的处理错误的方式。
 
@@ -1662,7 +1588,7 @@ fetchUserData(123)
 
 在这个示例中，如果 `fetchUserData()`、`fetchUserPosts()` 或 `analyzeUserActivity()` 中发生错误，都会被末尾的单个 `.catch()` 捕获。
 
-### .finally() 方法
+### `.finally()` 方法
 
 `.finally()` 方法用于指定一个回调，无论 Promise 被兑现还是被拒绝，该回调都会执行。这对于在成功和失败情况下都需要执行的清理操作非常有用。
 
@@ -1696,7 +1622,7 @@ fetchData()
   });
 ```
 
-在这个示例中，无论数据获取是否成功，我们都使用 `.finally()` 将 `isLoading` 设置为 false 并更新 UI 中的加载指示器。
+在这个示例中，无论数据获取是否成功，我们都使用 `.finally()` 将 `isLoading` 设置为 `false` 并更新 UI 中的加载指示器。
 
 通过有效使用 `.then()`、`.catch()` 和 `.finally()`，你可以在异步 JavaScript 代码中创建健壮的错误处理和控制流，从而构建更可靠、更易维护的应用程序。
 
@@ -1730,108 +1656,124 @@ fetchUserData(123)
   });
 ```
 
-
-
-
-
 这种嵌套结构很快就会变得难以阅读和维护，尤其是在添加更多异步操作时。
 
 ### 实现 Promise 链式调用
 
-Promise 链式调用利用了 `.then()` 总是返回一个新 promise 的特性。这让你能够以扁平、更易读的结构来链式调用多个异步操作：
+Promise 链式调用利用了 `.then()` 总是返回一个新 Promise 的特性。这让你能够以扁平、更易读的结构来链式调用多个异步操作：
 
-```
+
+
+```javascript
 fetchUserData(123)
-  .then((userData) => {console.log("User data:", userData);
-    return  fetchUserPosts(userData.id);
+  .then((userData) => {
+    console.log("User data:", userData);
+    return fetchUserPosts(userData.id);
   })
-  .then((posts) => {console.log("User posts:", posts);
-    return  analyzeUserActivity(posts);
+  .then((posts) => {
+    console.log("User posts:", posts);
+    return analyzeUserActivity(posts);
   })
-  .then((activityReport) => {console.log("User activity report:", activityReport);
+  .then((activityReport) => {
+    console.log("User activity report:", activityReport);
   })
-  .catch((error) => {console.error("An error occurred:", error);
+  .catch((error) => {
+    console.error("An error occurred:", error);
   });
 ```
 
 在这个链式版本中：
 
-1. 我们首先调用 `fetchUserData()`。
-2. 当它解析时，我们记录用户数据并返回 `fetchUserPosts()` 的结果。
-3. 当 `fetchUserPosts()` 解析时，我们记录帖子并返回 `analyzeUserActivity()` 的结果。
+1. 我们首先调用`fetchUserData()`。
+2. 当它解析时，我们记录用户数据并返回`fetchUserPosts()`的结果。
+3. 当`fetchUserPosts()`解析时，我们记录帖子并返回`analyzeUserActivity()`的结果。
 4. 最后，我们记录活动报告。
-5. 如果在任何阶段发生错误，都会被末尾的单个 `.catch()` 捕获。
+5. 如果在任何阶段发生错误，都会被末尾的单个`.catch()`捕获。
 
 这种结构比嵌套版本更易读、更易维护。
 
 ### 在链中返回 Promise
 
-有效 Promise 链式调用的一个关键方面是，在执行异步操作时，确保从 `.then()` 回调中返回 promise。这允许链中的下一个 `.then()` 等待该操作完成：
+有效 Promise 链式调用的一个关键方面是，在执行异步操作时，确保从`.then()`回调中返回 promise。这允许链中的下一个`.then()`等待该操作完成：
 
-```
+```javascript
 fetchUserData(123)
-  .then((userData) => {console.log("User data:", userData);
+  .then((userData) => {
+    console.log("User data:", userData);
     // 返回 fetchUserPosts 的 promise
-    return  fetchUserPosts(userData.id);
+    return fetchUserPosts(userData.id);
   })
-  .then((posts) => {console.log("User posts:", posts);
+  .then((posts) => {
+    console.log("User posts:", posts);
     // 返回 analyzeUserActivity 的 promise
-    return  analyzeUserActivity(posts);
+    return analyzeUserActivity(posts);
   })
-  .then((activityReport) => {console.log("User activity report:", activityReport);
+  .then((activityReport) => {
+    console.log("User activity report:", activityReport);
   })
-  .catch((error) => {console.error("An error occurred:", error);
+  .catch((error) => {
+    console.error("An error occurred:", error);
   });
 ```
 
-如果你忘记返回 promise，下一个 `.then()` 会立即执行，很可能在异步操作完成之前。
+如果你忘记返回 promise，下一个`.then()`会立即执行，很可能在异步操作完成之前。
 
 ### 在链中处理错误
 
-在 Promise 链中，错误会沿着链向下传播，直到遇到 `.catch()`。这意味着你可以将 `.catch()` 处理程序放置在链中的关键位置：
+在 Promise 链中，错误会沿着链向下传播，直到遇到`.catch()`。这意味着你可以将`.catch()`处理程序放置在链中的关键位置：
 
-```
+```javascript
 fetchUserData(123)
-  .then((userData) => {console.log("User data:", userData);
-    return  fetchUserPosts(userData.id);
+  .then((userData) => {
+    console.log("User data:", userData);
+    return fetchUserPosts(userData.id);
   })
-  .then((posts) => {console.log("User posts:", posts);
-    return  analyzeUserActivity(posts);
+  .then((posts) => {
+    console.log("User posts:", posts);
+    return analyzeUserActivity(posts);
   })
-  .catch((error) => {console.error("Error fetching data:", error);
+  .catch((error) => {
+    console.error("Error fetching data:", error);
     // 返回默认的活动报告
-    return { activity:  "low", reason:  "Error occurred" };
-  }).then((activityReport) => {console.log("User activity report:", activityReport);
+    return { activity: "low", reason: "Error occurred" };
   })
-  .catch((error) => {console.error("An unexpected error occurred:", error);
+  .then((activityReport) => {
+    console.log("User activity report:", activityReport);
+  })
+  .catch((error) => {
+    console.error("An unexpected error occurred:", error);
   });
 ```
 
-在这个例子中，如果在 `fetchUserData()` 或 `fetchUserPosts()` 期间发生错误，它会被第一个 `.catch()` 捕获，该处理程序返回一个默认的活动报告。然后链继续执行到最后的 `.then()`。如果在 `analyzeUserActivity()` 或最后的 `.then()` 中发生错误，它会被最后一个 `.catch()` 捕获。
+在这个例子中，如果在`fetchUserData()`或`fetchUserPosts()`期间发生错误，它会被第一个`.catch()`捕获，该处理程序返回一个默认的活动报告。然后链继续执行到最后的`.then()`。如果在`analyzeUserActivity()`或最后的`.then()`中发生错误，它会被最后一个`.catch()`捕获。
 
 ### 链中的并行操作
 
-有时你可能希望并行执行多个异步操作，并等待它们全部完成。你可以在链中使用 `Promise.all()` 来实现这一点：
+有时你可能希望并行执行多个异步操作，并等待它们全部完成。你可以在链中使用`Promise.all()`来实现这一点：
 
-```
+```javascript
 fetchUserData(123)
-  .then((userData) => {console.log("User data:", userData);
-    return  Promise.all([
+  .then((userData) => {
+    console.log("User data:", userData);
+    return Promise.all([
       fetchUserPosts(userData.id),
       fetchUserComments(userData.id),
     ]);
   })
-  .then(([posts, comments]) => {console.log("User posts:", posts);
+  .then(([posts, comments]) => {
+    console.log("User posts:", posts);
     console.log("User comments:", comments);
-    return  analyzeUserActivity(posts, comments);
+    return analyzeUserActivity(posts, comments);
   })
-  .then((activityReport) => {console.log("User activity report:", activityReport);
+  .then((activityReport) => {
+    console.log("User activity report:", activityReport);
   })
-  .catch((error) => {console.error("An error occurred:", error);
+  .catch((error) => {
+    console.error("An error occurred:", error);
   });
 ```
 
-在这个例子中，`fetchUserPosts()` 和 `fetchUserComments()` 并行执行，一旦两者都完成，链继续执行。
+在这个例子中，`fetchUserPosts()`和`fetchUserComments()`并行执行，一旦两者都完成，链继续执行。
 
 通过有效使用 Promise 链式调用，你可以编写更易读、易理解和易维护的异步代码。它允许你以线性、直观的方式表达复杂的异步操作序列，极大地改善了 JavaScript 代码的结构和清晰度。
 
@@ -1839,192 +1781,211 @@ fetchUserData(123)
 
 # 第 4 章：高级 Promise
 
-# ❧
+## 使用`Promise.all`和`Promise.race`处理多个 Promise
 
-## 使用 `Promise.all` 和 `Promise.race` 处理多个 Promise
-
-在异步 JavaScript 的世界中，开发者经常需要同时处理多个 Promise。无论是从多个 API 获取数据、处理多个文件，还是协调复杂的异步操作，高效管理多个 Promise 的能力都至关重要。这时，`Promise.all` 和 `Promise.race` 就派上了用场，它们提供了强大而优雅的工具来处理 Promise 集合。
+在异步 JavaScript 的世界中，开发者经常需要同时处理多个 Promise。无论是从多个 API 获取数据、处理多个文件，还是协调复杂的异步操作，高效管理多个 Promise 的能力都至关重要。这时，`Promise.all`和`Promise.race`就派上了用场，它们提供了强大而优雅的工具来处理 Promise 集合。
 
 ### `Promise.all`：集体解析器
 
-想象一下，你正在构建一个需要从三个不同数据源显示信息的仪表板。每次数据获取都是一个异步操作，由 Promise 表示。你希望仅在所有数据都可用时才更新仪表板。这正是 `Promise.all` 的完美应用场景。
+想象一下，你正在构建一个需要从三个不同数据源显示信息的仪表板。每次数据获取都是一个异步操作，由 Promise 表示。你希望仅在所有数据都可用时才更新仪表板。这正是`Promise.all`的完美应用场景。
 
-`Promise.all` 接收一个可迭代对象（通常是数组）的 Promise，并返回一个新的 Promise。这个新 Promise 在所有输入的 Promise 都解析时解析，或者在任何输入 Promise 拒绝时拒绝。让我们看一个实际示例：
+`Promise.all`接收一个可迭代对象（通常是数组）的 Promise，并返回一个新的 Promise。这个新 Promise 在所有输入的 Promise 都解析时解析，或者在任何输入 Promise 拒绝时拒绝。让我们看一个实际示例：
 
-```
-const  fetchUserData  = () =>  new  Promise(resolve  =>  setTimeout(() =>  resolve({ name:  'John Doe', age:  30 }), 1000));
-const  fetchUserPosts  = () =>  new  Promise(resolve  =>  setTimeout(() =>  resolve(['Post 1', 'Post 2', 'Post 3']), 1500));
-const  fetchUserFriends  = () =>  new  Promise(resolve  =>  setTimeout(() =>  resolve(['Alice', 'Bob', 'Charlie']), 2000));
+```javascript
+const fetchUserData = () =>
+  new Promise((resolve) =>
+    setTimeout(() => resolve({ name: "John Doe", age: 30 }), 1000)
+  );
+
+const fetchUserPosts = () =>
+  new Promise((resolve) =>
+    setTimeout(() => resolve(["Post 1", "Post 2", "Post 3"]), 1500)
+  );
+
+const fetchUserFriends = () =>
+  new Promise((resolve) =>
+    setTimeout(() => resolve(["Alice", "Bob", "Charlie"]), 2000)
+  );
 
 Promise.all([fetchUserData(), fetchUserPosts(), fetchUserFriends()])
-  .then(([userData, userPosts, userFriends]) => {console.log('User Data:', userData);
-    console.log('User Posts:', userPosts);
-    console.log('User Friends:', userFriends);
+  .then(([userData, userPosts, userFriends]) => {
+    console.log("User Data:", userData);
+    console.log("User Posts:", userPosts);
+    console.log("User Friends:", userFriends);
     // 使用所有数据更新仪表板
   })
-  .catch(error  =>  console.error('An error occurred:', error));
+  .catch((error) => console.error("An error occurred:", error));
 ```
 
-在这个例子中，我们有三个返回 Promise 的函数，模拟了不同响应时间的 API 调用。`Promise.all` 等待所有这些 Promise 解析，然后执行 `then` 块。解析后的值以数组形式传递，我们通过解构来方便地访问。
+在这个例子中，我们有三个返回 Promise 的函数，模拟了不同响应时间的 API 调用。`Promise.all`等待所有这些 Promise 解析，然后执行`then`块。解析后的值以数组形式传递，我们通过解构来方便地访问。
 
-`Promise.all` 的强大之处在于它能够并发处理多个异步操作，与顺序执行相比，可能节省大量时间。然而，需要注意的是，如果数组中的任何 Promise 拒绝，整个 `Promise.all` 会立即以该错误拒绝，从而短路整个过程。
+`Promise.all`的强大之处在于它能够并发处理多个异步操作，与顺序执行相比，可能节省大量时间。然而，需要注意的是，如果数组中的任何 Promise 拒绝，整个`Promise.all`会立即以该错误拒绝，从而短路整个过程。
 
 ### `Promise.race`：快速竞争者
 
-虽然 `Promise.all` 等待所有 Promise 完成，但在某些场景下，你可能希望一旦有任何 Promise 解析（或拒绝）就立即继续。这正是 `Promise.race` 的用武之地。顾名思义，`Promise.race` 在 Promise 之间发起一场竞赛，一旦某个 Promise 完成（无论是解析还是拒绝），它就立即完成。
+虽然`Promise.all`等待所有 Promise 完成，但在某些场景下，你可能希望一旦有任何 Promise 解析（或拒绝）就立即继续。这正是`Promise.race`的用武之地。顾名思义，`Promise.race`在 Promise 之间发起一场竞赛，一旦某个 Promise 完成（无论是解析还是拒绝），它就立即完成。
 
+考虑这样一种情况：你正在为 API 调用实现超时机制。你希望要么获取 API 响应，要么在耗时过长时取消操作。下面展示了如何使用`Promise.race`来实现这一点：
 
+```javascript
+const fetchData = new Promise((resolve) => {
+  setTimeout(() => resolve("数据获取成功"), 3000);
+});
 
+const timeout = new Promise((_, reject) => {
+  setTimeout(() => reject(new Error("请求超时")), 2000);
+});
 
-
-考虑这样一种情况：你正在为 API 调用实现超时机制。你希望要么获取 API 响应，要么在耗时过长时取消操作。下面展示了如何使用 `Promise.race` 来实现这一点：
-
-```
-const  fetchData  =  new  Promise(resolve  => {setTimeout(() =>  resolve('数据获取成功'), 3000);
-
-}); const  timeout  =  new  Promise((_, reject) => {setTimeout(() =>  reject(new  Error('请求超时')), 2000);
-
-}); Promise.race([fetchData, timeout])
-
-  .then(result  =>  console.log(result))
-
-  .catch(error  =>  console.error(error.message));
+Promise.race([fetchData, timeout])
+  .then((result) => console.log(result))
+  .catch((error) => console.error(error.message));
 ```
 
-在这个例子中，`Promise.race` 会以最先敲定的 promise 为准。如果 `fetchData` 在超时之前解决，我们会看到成功消息。然而，由于超时被设置为在 `fetchData` 解决之前触发，我们实际上会看到超时错误。
+在这个例子中，`Promise.race`会以最先敲定的 promise 为准。如果`fetchData`在超时之前解决，我们会看到成功消息。然而，由于超时被设置为在`fetchData`解决之前触发，我们实际上会看到超时错误。
 
-`Promise.race` 特别适用于实现超时、处理来自多个服务器的第一个响应，或者在冗余操作中选择最快的可用选项。
+`Promise.race`特别适用于实现超时、处理来自多个服务器的第一个响应，或者在冗余操作中选择最快的可用选项。
 
-## `Promise.allSettled` 和 `Promise.any` 的作用
+## `Promise.allSettled`和`Promise.any`的作用
 
-随着 JavaScript 的不断发展，新的方法被引入以更细致地处理 promise。其中两个方法是 `Promise.allSettled` 和 `Promise.any`，它们各自在管理多个 promise 时服务于独特的用例。
+随着 JavaScript 的不断发展，新的方法被引入以更细致地处理 promise。其中两个方法是`Promise.allSettled`和`Promise.any`，它们各自在管理多个 promise 时服务于独特的用例。
 
 ### `Promise.allSettled`：全面的报告者
 
-`Promise.allSettled` 在 ES2020 中引入，它接收一个可迭代的 promise 集合，并等待所有 promise 敲定，无论它们是兑现还是拒绝。当你想要知道一组中每个 promise 的结果，而不关心它们各自的成功或失败时，这个方法特别有用。
+`Promise.allSettled`在 ES2020 中引入，它接收一个可迭代的 promise 集合，并等待所有 promise 敲定，无论它们是兑现还是拒绝。当你想要知道一组中每个 promise 的结果，而不关心它们各自的成功或失败时，这个方法特别有用。
 
 考虑一个场景：你正在批量处理一组操作，并且想要知道每个操作的结果，无论成功与否：
 
-```
-const  promises  = [Promise.resolve(1),
+```javascript
+const promises = [
+  Promise.resolve(1),
+  Promise.reject("发生错误"),
+  new Promise((resolve) => setTimeout(() => resolve(3), 1000)),
+];
 
-  Promise.reject('发生错误'),
-
-  new  Promise(resolve  =>  setTimeout(() =>  resolve(3), 1000))
-
-]; Promise.allSettled(promises)
-
-  .then(results  => {results.forEach((result, index) => {if (result.status  ===  'fulfilled') {
-
-        console.log(`Promise ${index  +  1} 以值兑现:`, result.value);
-
-      } else {console.log(`Promise ${index  +  1} 因原因拒绝:`, result.reason);
-
-      }
-
-    });
-
-  });
+Promise.allSettled(promises).then((results) => {
+  results.forEach((result, index) => {
+    if (result.status === "fulfilled") {
+      console.log(`Promise ${index + 1} 以值兑现:`, result.value);
+    } else {
+      console.log(`Promise ${index + 1} 因原因拒绝:`, result.reason);
+    }
+  });
+});
 ```
 
 输出结果大致如下：
 
-```
+```text
 Promise 1 以值兑现: 1
 Promise 2 因原因拒绝: 发生错误
 Promise 3 以值兑现: 3
 ```
 
-当你需要执行多个独立操作，并且想要知道每个操作的结果（无论某些操作是否可能失败）时，`Promise.allSettled` 非常宝贵。这在批量更新等场景中特别有用，你希望尽可能多地处理项目并报告所有结果。
+当你需要执行多个独立操作，并且想要知道每个操作的结果（无论某些操作是否可能失败）时，`Promise.allSettled`非常宝贵。这在批量更新等场景中特别有用，你希望尽可能多地处理项目并报告所有结果。
 
 ### `Promise.any`：乐观的敲定者
 
-`Promise.any` 在 ES2021 中引入，它接收一个可迭代的 promise 集合，并返回一个单一的 promise，该 promise 会在集合中的任何一个 promise 兑现时立即解决。如果所有 promise 都被拒绝，它会以一个包含所有拒绝原因的 `AggregateError` 拒绝。
+`Promise.any`在 ES2021 中引入，它接收一个可迭代的 promise 集合，并返回一个单一的 promise，该 promise 会在集合中的任何一个 promise 兑现时立即解决。如果所有 promise 都被拒绝，它会以一个包含所有拒绝原因的`AggregateError`拒绝。
 
 这个方法非常适合你有多个备选方案并且只关心第一个成功结果的场景。让我们看一个例子：你试图从多个服务器获取数据，并且希望使用第一个成功的响应：
 
+```javascript
+const server1 = new Promise((resolve, reject) => {
+  setTimeout(() => reject(new Error("服务器 1 失败")), 1000);
+});
+
+const server2 = new Promise((resolve) => {
+  setTimeout(() => resolve("来自服务器 2 的数据"), 2000);
+});
+
+const server3 = new Promise((resolve) => {
+  setTimeout(() => resolve("来自服务器 3 的数据"), 3000);
+});
+
+Promise.any([server1, server2, server3])
+  .then((result) => console.log("第一个成功响应:", result))
+  .catch((error) => {
+    if (error instanceof AggregateError) {
+      console.error("所有服务器都失败了:", error.errors);
+    }
+  });
 ```
-const  server1  =  new  Promise((resolve, reject) =>  setTimeout(() =>  reject(new  Error('服务器 1 失败')), 1000)); const  server2  =  new  Promise(resolve  =>  setTimeout(() =>  resolve('来自服务器 2 的数据'), 2000)); const  server3  =  new  Promise(resolve  =>  setTimeout(() =>  resolve('来自服务器 3 的数据'), 3000)); Promise.any([server1, server2, server3])
 
-  .then(result  =>  console.log('第一个成功响应:', result))
+在这个例子中，尽管`server1`拒绝了，`Promise.any`会以来自`server2`的数据解决，因为它是第一个成功解决的 promise。如果所有 promise 都被拒绝，catch 块会捕获一个包含所有拒绝原因的`AggregateError`。
 
-  .catch(error  => {if (error  instanceof  AggregateError) {
-
-      console.error('所有服务器都失败了:', error.errors);
-
-    }
-
-  });
-```
-
-在这个例子中，尽管 `server1` 拒绝了，`Promise.any` 会以来自 `server2` 的数据解决，因为它是第一个成功解决的 promise。如果所有 promise 都被拒绝，catch 块会捕获一个包含所有拒绝原因的 `AggregateError`。
-
-`Promise.any` 特别适用于你有后备选项并希望使用第一个可用的成功结果的场景，例如尝试多个 CDN、API 端点或数据源。
+`Promise.any`特别适用于你有后备选项并希望使用第一个可用的成功结果的场景，例如尝试多个 CDN、API 端点或数据源。
 
 ## 管理 Promise 拒绝与错误处理
 
 在使用 promise 时，正确的错误处理至关重要。未处理的 promise 拒绝可能导致静默失败和难以调试的问题。让我们探讨一些有效管理 promise 拒绝的最佳实践和技术。
 
-### catch 块的重要性
+### `catch`块的重要性
 
-始终在 promise 链后链式调用 `catch` 块以处理潜在错误：
+始终在 promise 链后链式调用`catch`块以处理潜在错误：
 
-```
+```javascript
 fetchData()
-
-  .then(processData)
-
-  .then(displayResults)
-
-  .catch(error  => {console.error('发生错误:', error);
-
-    // 适当地处理错误   });
+  .then(processData)
+  .then(displayResults)
+  .catch((error) => {
+    console.error("发生错误:", error);
+    // 适当地处理错误
+  });
 ```
 
-这确保了 `fetchData`、`processData` 或 `displayResults` 中抛出的任何错误都会被捕获并处理。
+这确保了`fetchData`、`processData`或`displayResults`中抛出的任何错误都会被捕获并处理。
 
 ### 重新抛出错误
 
-有时，你可能希望处理错误但仍然将其向上传播到链中。你可以通过在 `catch` 块中重新抛出错误来实现这一点：
+有时，你可能希望处理错误但仍然将其向上传播到链中。你可以通过在`catch`块中重新抛出错误来实现这一点：
+
+
+
+进入`/path/to/xxx`目录，找到`xxx.json`。
+
+在表达式`cvar = avar + bvar`中，加法运算符（`+`）将`avar`与`bvar`相加，得到它们的和`cvar`。
+
+在`List.of(arg0, arg1, arg2)`中，`List`接口的工厂方法`of()`接受一系列的元素，返回包含它们的只读列表。
+
+之后我们这样调用`cmd`命令：`cmd arg0 arg1 arg2`。
+
+```
+if (condVar > someVal) {console.log("xxx")}
+```
+
+---
 
 ```
 fetchData()
-
-  .then(processData)
-
-  .catch(error  => {console.error('处理数据时出错:', error);
-
-    // 执行一些清理或日志记录     throw  error; // 重新抛出错误   })
-
-  .then(displayResults)
-
-  .catch(error  => {console.error('显示结果时出错:', error);
-
-    showErrorMessage(error);
-
-  });
+  .then(processData)
+  .catch(error => {
+    console.error('处理数据时出错:', error);
+    // 执行一些清理或日志记录
+    throw error; // 重新抛出错误
+  })
+  .then(displayResults)
+  .catch(error => {
+    console.error('显示结果时出错:', error);
+    showErrorMessage(error);
+  });
 ```
 
 ### 使用 `finally` 进行清理
 
-`finally` 方法对于执行无论 promise 是兑现还是拒绝都应发生的清理操作非常有用：
+`finally`方法对于执行无论 promise 是兑现还是拒绝都应发生的清理操作非常有用：
 
 ```
-showLoadingSpinner(); fetchData()
-
-  .then(processData)
-
-  .then(displayResults)
-
-  .catch(error  => {console.error('发生错误:', error);
-
-    showErrorMessage(error);
-
-  })
-
-  .finally(() => {hideLoadingSpinner();
-
-  });
+showLoadingSpinner();
+fetchData()
+  .then(processData)
+  .then(displayResults)
+  .catch(error => {
+    console.error('发生错误:', error);
+    showErrorMessage(error);
+  })
+  .finally(() => {
+    hideLoadingSpinner();
+  });
 ```
 
 ### 自定义错误类型
@@ -2032,35 +1993,32 @@ showLoadingSpinner(); fetchData()
 创建自定义错误类型有助于区分不同类型的错误并适当地处理它们：
 
 ```
-class  NetworkError  extends  Error {constructor(message) {
+class NetworkError extends Error {
+  constructor(message) {
+    super(message);
+    this.name = 'NetworkError';
+  }
+}
 
-    super(message);
+class ValidationError extends Error {
+  constructor(message) {
+    super(message);
+    this.name = 'ValidationError';
+  }
+}
 
-    this.name  =  'NetworkError';
-
-  }
-
-} class  ValidationError  extends  Error {constructor(message) {
-
-    super(message);
-
-    this.name  =  'ValidationError';
-
-  }
-
-} fetchData()
-
-  .then(validateData)
-
-  .then(processData)
-
-  .catch(error  => {if (error  instanceof  NetworkError) {
-
-      // 处理网络错误 } else  if (error  instanceof  ValidationError) {
-
-      // 处理验证错误 } else {// 处理其他类型的错误     }
-
-  });
+fetchData()
+  .then(validateData)
+  .then(processData)
+  .catch(error => {
+    if (error instanceof NetworkError) {
+      // 处理网络错误
+    } else if (error instanceof ValidationError) {
+      // 处理验证错误
+    } else {
+      // 处理其他类型的错误
+    }
+  });
 ```
 
 ### 全局未处理拒绝处理
@@ -2070,16 +2028,17 @@ class  NetworkError  extends  Error {constructor(message) {
 在 Node.js 中：
 
 ```
-process.on('unhandledRejection', (reason, promise) => {console.error('未处理的拒绝，promise:', promise, '原因:', reason);
-
-  // 应用程序特定的日志记录、抛出错误或其他逻辑 });
+process.on('unhandledRejection', (reason, promise) => {
+  console.error('未处理的拒绝，promise:', promise, '原因:', reason);
+  // 应用程序特定的日志记录、抛出错误或其他逻辑
+});
 ```
 
 在浏览器中：
 
 ```
-window.addEventListener('unhandledrejection', event  => {console.error('未处理的拒绝（promise:', event.promise, '原因:', event.reason, '）');
-
+window.addEventListener('unhandledrejection', event => {
+  console.error('未处理的拒绝（promise:', event.promise, '原因:', event.reason, '）');
 });
 ```
 
@@ -2097,9 +2056,6 @@ window.addEventListener('unhandledrejection', event  => {console.error('未处�
 2. 转到 Sources 面板。
 3. 在与 promise 相关的代码中设置断点。
 4. 当断点被触发时，你会看到 Call Stack 面板。展开它以查看异步堆栈跟踪。
-
-
-
 
 此功能可帮助你理解异步操作的流程，并定位可能出现问题的地方。
 
@@ -2135,7 +2091,7 @@ console.log(myPromise);
 
 ### 使用 `console.trace()`
 
-在 Promise 链中插入 `console.trace()` 以在特定点记录堆栈跟踪：
+在 Promise 链中插入`console.trace()`以在特定点记录堆栈跟踪：
 
 ```
 fetchData()
@@ -2157,9 +2113,9 @@ fetchData()
 
 1. 右键单击要添加断点的行号。
 2. 选择“添加条件断点”或“添加日志点”。
-3. 对于日志点，输入类似 `数据已接收：${JSON.stringify(data)}` 的消息。
+3. 对于日志点，输入类似`数据已接收：${JSON.stringify(data)}`的消息。
 
-这允许你添加调试信息，而无需用 `console.log` 语句使代码变得杂乱。
+这允许你添加调试信息，而无需用`console.log`语句使代码变得杂乱。
 
 ### 使用网络标签
 
@@ -2171,7 +2127,7 @@ fetchData()
 
 通过掌握这些 DevTools 功能，你可以显著提高调试涉及 Promise 的复杂异步代码的能力。请记住，有效的调试通常需要结合这些技术，并采用系统化的方法来隔离和理解当前问题。
 
-总之，本章深入探讨了在 JavaScript 中使用 Promise 的高级方面。我们探索了用于处理多个 Promise 的强大方法，如 `Promise.all` 和 `Promise.race`，并介绍了更新的 `Promise.allSettled` 和 `Promise.any` 以实现更精细的控制。我们涵盖了错误处理和拒绝管理的最佳实践，这对于编写健壮的异步代码至关重要。最后，我们为你提供了使用现代浏览器 DevTools 调试 Promise 的实用技巧。
+总之，本章深入探讨了在 JavaScript 中使用 Promise 的高级方面。我们探索了用于处理多个 Promise 的强大方法，如`Promise.all`和`Promise.race`，并介绍了更新的`Promise.allSettled`和`Promise.any`以实现更精细的控制。我们涵盖了错误处理和拒绝管理的最佳实践，这对于编写健壮的异步代码至关重要。最后，我们为你提供了使用现代浏览器 DevTools 调试 Promise 的实用技巧。
 
 随着你继续使用异步 JavaScript，这些高级概念和调试技术将在创建高效、可靠且可维护的代码方面证明其价值。请记住，掌握 Promise 是一个持续学习和实践的过程。你遇到的每一个复杂异步场景都是应用这些概念并进一步磨练你在 JavaScript 中管理异步操作复杂舞蹈技能的机会。
 
@@ -2179,11 +2135,11 @@ fetchData()
 
 ## async 和 await 简介
 
-异步编程已成为现代 JavaScript 开发的重要组成部分，它允许开发者编写非阻塞代码，处理耗时操作而不会冻结整个应用程序。虽然 Promise 相对于基于回调的异步编程提供了显著改进，但 ECMAScript 2017（ES8）中引入的 `async` 和 `await` 关键字彻底改变了我们在 JavaScript 中编写异步代码的方式。
+异步编程已成为现代 JavaScript 开发的重要组成部分，它允许开发者编写非阻塞代码，处理耗时操作而不会冻结整个应用程序。虽然 Promise 相对于基于回调的异步编程提供了显著改进，但 ECMAScript 2017（ES8）中引入的`async`和`await`关键字彻底改变了我们在 JavaScript 中编写异步代码的方式。
 
-`async` 和 `await` 关键字提供了一种更直观、更易读的方式来处理 Promise，使异步代码看起来和行为更像同步代码。这种基于 Promise 的语法糖允许开发者编写更易于理解、维护和调试的异步代码。
+`async`和`await`关键字提供了一种更直观、更易读的方式来处理 Promise，使异步代码看起来和行为更像同步代码。这种基于 Promise 的语法糖允许开发者编写更易于理解、维护和调试的异步代码。
 
-让我们从理解 `async` 和 `await` 的基本语法和用法开始：
+让我们从理解`async`和`await`的基本语法和用法开始：
 
 ```
 async function fetchData() {
@@ -2193,11 +2149,11 @@ async function fetchData() {
 }
 ```
 
-在这个例子中，我们定义了一个名为 `fetchData` 的 `async` 函数。函数声明前的 `async` 关键字表示该函数将始终返回一个 Promise，即使我们没有显式返回一个。在函数内部，我们使用 `await` 关键字暂停函数的执行，直到 `fetch` 返回的 Promise 被解决。一旦解决，响应将存储在 `response` 变量中，然后我们可以继续执行下一行。
+在这个例子中，我们定义了一个名为`fetchData`的`async`函数。函数声明前的`async`关键字表示该函数将始终返回一个 Promise，即使我们没有显式返回一个。在函数内部，我们使用`await`关键字暂停函数的执行，直到`fetch`返回的 Promise 被解决。一旦解决，响应将存储在`response`变量中，然后我们可以继续执行下一行。
 
-`await` 关键字只能在 `async` 函数内部使用。它允许你编写看起来同步的异步代码，从而更容易推理和理解程序的流程。
+`await`关键字只能在`async`函数内部使用。它允许你编写看起来同步的异步代码，从而更容易推理和理解程序的流程。
 
-以下是通常如何使用 `async` 函数：
+以下是通常如何使用`async`函数：
 
 ```
 async function main() {
@@ -2208,18 +2164,19 @@ async function main() {
     console.error('发生错误：', error);
   }
 }
+
 main();
 ```
 
-在这个例子中，我们定义了另一个名为 `main` 的 `async` 函数。在此函数内部，我们 `await` `fetchData()` 的结果。`await` 关键字确保 `main` 的执行暂停，直到 `fetchData` 完成并返回数据。如果在 `fetchData` 执行期间发生错误，它将被 `catch` 块捕获。
+在这个例子中，我们定义了另一个名为`main`的`async`函数。在此函数内部，我们`await` `fetchData()`的结果。`await`关键字确保`main`的执行暂停，直到`fetchData`完成并返回数据。如果在`fetchData`执行期间发生错误，它将被`catch`块捕获。
 
-使用 `async/await` 的关键好处之一是它允许你使用传统的 `try/catch` 块来处理错误，我们将在本章后面更详细地探讨这一点。
+使用`async/await`的关键好处之一是它允许你使用传统的`try/catch`块来处理错误，我们将在本章后面更详细地探讨这一点。
 
-需要注意的是，虽然 `async/await` 使异步代码看起来同步，但它实际上并不会使代码同步运行。异步操作仍在后台运行，允许在等待异步操作完成时执行其他代码。
+需要注意的是，虽然`async/await`使异步代码看起来同步，但它实际上并不会使代码同步运行。异步操作仍在后台运行，允许在等待异步操作完成时执行其他代码。
 
 ## 将 Promise 重构为 Async/Await
 
-现在我们对 `async/await` 有了基本了解，让我们看看如何将基于 Promise 的代码重构为使用这种新语法。这种重构通常会产生更易读且更易于推理的代码。
+现在我们对`async/await`有了基本了解，让我们看看如何将基于 Promise 的代码重构为使用这种新语法。这种重构通常会产生更易读且更易于推理的代码。
 
 考虑以下基于 Promise 的代码：
 
@@ -2239,14 +2196,15 @@ function fetchUserData(userId) {
       throw error;
     });
 }
+
 fetchUserData(123)
   .then(result => console.log(result))
   .catch(error => console.error('错误：', error));
 ```
 
-这段代码获取用户数据，然后获取该用户的帖子。虽然它可以工作，但嵌套的 `.then()` 调用可能会变得难以阅读和维护，尤其是当操作的复杂性增加时。
+这段代码获取用户数据，然后获取该用户的帖子。虽然它可以工作，但嵌套的`.then()`调用可能会变得难以阅读和维护，尤其是当操作的复杂性增加时。
 
-让我们使用 `async/await` 重构这段代码：
+让我们使用`async/await`重构这段代码：
 
 ```
 async function fetchUserData(userId) {
@@ -2261,31 +2219,33 @@ async function fetchUserData(userId) {
     throw error;
   }
 }
+
 async function main() {
-  // ...（后续内容未提供）
+  try {
+    const result = await fetchUserData(123);
+    console.log(result);
+  } catch (error) {
+    console.error('Error:', error);
+  }
 }
+
+main();
 ```
-
-
-
-
-
-`try {const result = await fetchUserData(123); console.log(result); } catch (error) { console.error('Error:', error); } } main();`
 
 在这个重构版本中，我们做了几项改进：
 
-1. 函数现在声明为 `async`，允许我们在其内部使用 `await`。
-2. 我们使用 `await` 等待每个 Promise 完成，使代码读起来更像同步代码。
-3. 错误处理通过 `try/catch` 块完成，这比链式调用 `.catch()` 方法更熟悉且更易读。
+1. 函数现在声明为`async`，允许我们在其内部使用`await`。
+2. 我们使用`await`等待每个 Promise 完成，使代码读起来更像同步代码。
+3. 错误处理通过`try/catch`块完成，这比链式调用`.catch()`方法更熟悉且更易读。
 4. 原始基于 Promise 的代码的嵌套结构被扁平化，使得函数的逻辑流程更易于理解。
 
 重构后的代码不仅可读性更强，而且更易于修改和扩展。例如，如果我们需要在 API 调用之间添加另一个 API 调用或执行一些数据处理，只需在函数中的适当位置插入新代码即可。
 
-值得注意的是，虽然 `async/await` 提供了一种更直观的方式来处理 Promise，但它并不能完全取代 Promise。实际上，`async` 函数总是返回 Promise，而 `await` 只能与 Promise 一起使用。这意味着即使主要使用 `async/await`，理解 Promise 仍然至关重要。
+值得注意的是，虽然`async/await`提供了一种更直观的方式来处理 Promise，但它并不能完全取代 Promise。实际上，`async`函数总是返回 Promise，而`await`只能与 Promise 一起使用。这意味着即使主要使用`async/await`，理解 Promise 仍然至关重要。
 
 ## 在异步函数中使用 Try/Catch 处理错误
 
-使用 `async/await` 的一个显著优势是能够使用熟悉的 `try/catch` 块来处理错误。这种错误处理方法对许多开发者来说更直观，尤其是那些来自具有类似构造的语言的开发者。
+使用`async/await`的一个显著优势是能够使用熟悉的`try/catch`块来处理错误。这种错误处理方法对许多开发者来说更直观，尤其是那些来自具有类似构造的语言的开发者。
 
 让我们更详细地探讨异步函数中的错误处理：
 
@@ -2318,24 +2278,26 @@ async function processData() {
 processData();
 ```
 
-在这个例子中，我们有两个异步函数：`fetchData` 和 `processData`。让我们分解一下错误处理：
+在这个例子中，我们有两个异步函数：`fetchData`和`processData`。让我们分解一下错误处理：
 
-1. 在 `fetchData` 中，我们使用 `try/catch` 块来捕获在 fetch 操作或解析 JSON 响应期间可能发生的任何错误。
-2. 我们还检查 `response.ok` 属性来处理 HTTP 错误（如 404 Not Found 或 500 Internal Server Error）。如果响应不 ok，我们抛出一个自定义错误。
-3. 如果发生错误，它会被 `catch` 块捕获。我们记录错误，然后重新抛出它，以便调用函数在必要时处理它。
-4. 在 `processData` 中，我们在另一个 `try/catch` 块中调用 `fetchData`。这允许我们处理 `fetchData` 抛出的任何错误，以及处理数据时可能发生的任何错误。
+1. 在`fetchData`中，我们使用`try/catch`块来捕获在 fetch 操作或解析 JSON 响应期间可能发生的任何错误。
+2. 我们还检查`response.ok`属性来处理 HTTP 错误（如 404 Not Found 或 500 Internal Server Error）。如果响应不 ok，我们抛出一个自定义错误。
+3. 如果发生错误，它会被`catch`块捕获。我们记录错误，然后重新抛出它，以便调用函数在必要时处理它。
+4. 在`processData`中，我们在另一个`try/catch`块中调用`fetchData`。这允许我们处理`fetchData`抛出的任何错误，以及处理数据时可能发生的任何错误。
 
 这种错误处理方法提供了几个好处：
 
 - 它更易读，并且遵循许多开发者从其他编程语言中熟悉的结构。
-- 它允许细粒度的错误处理。你可以在单个函数中使用多个 `try/catch` 块来处理异步操作不同阶段的错误。
+- 它允许细粒度的错误处理。你可以在单个函数中使用多个`try/catch`块来处理异步操作不同阶段的错误。
 - 它使得在出错时更容易添加清理或回退逻辑。
 
-然而，重要的是要记住 `async/await` 仍然是建立在 Promise 之上的。这意味着异步函数中未处理的错误将导致未处理的 Promise 拒绝，如果管理不当可能会引发问题。始终确保你有适当的错误处理，尤其是在应用程序的顶层。
+
+
+然而，重要的是要记住`async/await`仍然是建立在 Promise 之上的。这意味着异步函数中未处理的错误将导致未处理的 Promise 拒绝，如果管理不当可能会引发问题。始终确保你有适当的错误处理，尤其是在应用程序的顶层。
 
 以下是一个如何在顶层处理错误的示例：
 
-```
+```javascript
 process.on('unhandledRejection', (reason, promise) => {
   console.error('Unhandled Rejection at:', promise, 'reason:', reason);
   // 应用程序特定的日志记录、抛出错误或其他逻辑
@@ -2353,19 +2315,19 @@ async function main() {
 main();
 ```
 
-在这个例子中，我们设置了一个全局处理程序来处理未处理的 Promise 拒绝，它可以捕获任何从我们的 `try/catch` 块中漏掉的错误。我们还将主应用程序逻辑包装在 `try/catch` 块中，以捕获传播到顶层的任何错误。
+在这个例子中，我们设置了一个全局处理程序来处理未处理的 Promise 拒绝，它可以捕获任何从我们的`try/catch`块中漏掉的错误。我们还将主应用程序逻辑包装在`try/catch`块中，以捕获传播到顶层的任何错误。
 
 通过结合这些错误处理技术，你可以创建健壮的异步代码，在应用程序的各个级别优雅地处理错误。
 
 ## 将 Async/Await 与 Promise.all 结合使用
 
-虽然 `async/await` 提供了一种处理顺序异步操作的好方法，但有时你需要同时执行多个异步操作。这时 `Promise.all` 就派上了用场，它可以与 `async/await` 有效结合，创建强大且高效的异步代码。
+虽然`async/await`提供了一种处理顺序异步操作的好方法，但有时你需要同时执行多个异步操作。这时`Promise.all`就派上了用场，它可以与`async/await`有效结合，创建强大且高效的异步代码。
 
-`Promise.all` 接受一个 Promise 数组，并返回一个新的 Promise，该 Promise 在所有输入的 Promise 都解决时解决，或者在任何输入的 Promise 拒绝时拒绝。当你需要并行运行多个独立的异步操作时，这特别有用。
+`Promise.all`接受一个 Promise 数组，并返回一个新的 Promise，该 Promise 在所有输入的 Promise 都解决时解决，或者在任何输入的 Promise 拒绝时拒绝。当你需要并行运行多个独立的异步操作时，这特别有用。
 
-让我们看一个结合 `async/await` 和 `Promise.all` 的示例：
+让我们看一个结合`async/await`和`Promise.all`的示例：
 
-```
+```javascript
 async function fetchUserData(userId) {
   const response = await fetch(`https://api.example.com/users/${userId}`);
   return response.json();
@@ -2411,14 +2373,14 @@ async function main() {
 main();
 ```
 
-在这个例子中，我们有三个独立的函数来获取与用户相关的不同类型的数据：`fetchUserData`、`fetchUserPosts` 和 `fetchUserComments`。每个函数都是异步的，并返回一个 Promise。
+在这个例子中，我们有三个独立的函数来获取与用户相关的不同类型的数据：`fetchUserData`、`fetchUserPosts`和`fetchUserComments`。每个函数都是异步的，并返回一个 Promise。
 
-`getUserInfo` 函数演示了如何将 `Promise.all` 与 `async/await` 结合使用：
+`getUserInfo`函数演示了如何将`Promise.all`与`async/await`结合使用：
 
-1. 我们将一个 Promise 数组传递给 `Promise.all`。每个 Promise 通过调用我们的一个 fetch 函数创建。
-2. 我们对 `Promise.all` 使用 `await`，这会暂停 `getUserInfo` 的执行，直到所有 Promise 都解决（或其中一个拒绝）。
+1. 我们将一个 Promise 数组传递给`Promise.all`。每个 Promise 通过调用我们的一个 fetch 函数创建。
+2. 我们对`Promise.all`使用`await`，这会暂停`getUserInfo`的执行，直到所有 Promise 都解决（或其中一个拒绝）。
 3. 我们使用数组解构将每个 Promise 的结果分配给单独的变量。
-4. 如果任何 Promise 拒绝，`catch` 块将处理该错误。
+4. 如果任何 Promise 拒绝，`catch`块将处理该错误。
 
 这种方法有几个优点：
 
@@ -2426,58 +2388,41 @@ main();
 - 代码保持清晰易读，明确表达了并行获取多条信息的意图。
 - 错误处理简单直接，可以捕获任何并行操作中发生的错误。
 
+需要注意的是，虽然`Promise.all`会并发执行 Promise，但只要其中任何一个输入 Promise 被拒绝，它就会立即拒绝。如果你希望所有 Promise 无论成功还是失败都能完成，可以使用`Promise.allSettled`代替。
 
+以下是使用`Promise.allSettled`的示例：
 
+```javascript
+async function getUserInfoWithAllSettled(userId) {
+  try {
+    const results = await Promise.allSettled([
+      fetchUserData(userId),
+      fetchUserPosts(userId),
+      fetchUserComments(userId)
+    ]);
 
-需要注意的是，虽然 `Promise.all` 会并发执行 Promise，但只要其中任何一个输入 Promise 被拒绝，它就会立即拒绝。如果你希望所有 Promise 无论成功还是失败都能完成，可以使用 `Promise.allSettled` 代替。
-
-以下是使用 `Promise.allSettled` 的示例：
-
-```
-async  function  getUserInfoWithAllSettled(userId) {
-
-  try {const  results  =  await  Promise.allSettled([
-
-      fetchUserData(userId),
-
-      fetchUserPosts(userId),
-
-      fetchUserComments(userId)
-
-    ]);
-
-    return  results.map(result  => {if (result.status  ===  'fulfilled') {
-
-        return  result.value;
-
-      } else {console.error('Operation failed:', result.reason);
-
-        return  null;
-
-      }
-
-    });
-
-  } catch (error) {
-
-    console.error('An unexpected error occurred:', error);
-
-    throw  error;
-
-  }
-
+    return results.map(result => {
+      if (result.status === 'fulfilled') {
+        return result.value;
+      } else {
+        console.error('Operation failed:', result.reason);
+        return null;
+      }
+    });
+  } catch (error) {
+    console.error('An unexpected error occurred:', error);
+    throw error;
+  }
 }
 ```
 
 在这个版本中，即使一个或多个 fetch 操作失败，函数仍然会返回一个包含所有操作结果的数组，让你能够更优雅地处理部分失败的情况。
 
-将 `async/await` 与 `Promise.all`（或 `Promise.allSettled`）结合使用，可以编写高效、并发且易于阅读和理解的异步代码。当处理多个独立的异步操作时（例如并行发起多个 API 调用或同时处理多个文件），这种组合尤为强大。
+将`async/await`与`Promise.all`（或`Promise.allSettled`）结合使用，可以编写高效、并发且易于阅读和理解的异步代码。当处理多个独立的异步操作时（例如并行发起多个 API 调用或同时处理多个文件），这种组合尤为强大。
 
-随着你对 `async/await` 和 Promise 越来越熟悉，你会发现这种组合为处理 JavaScript 应用中的复杂异步工作流提供了灵活而强大的工具集。
+随着你对`async/await`和 Promise 越来越熟悉，你会发现这种组合为处理 JavaScript 应用中的复杂异步工作流提供了灵活而强大的工具集。
 
 # 第 6 章：常见模式与用例
-
-# ​❧​
 
 在异步 JavaScript 编程的世界中，某些模式和用例显得尤为常见且实用。本章将探讨四种这样的模式：从 API 异步获取数据、管理异步代码的顺序执行与并行执行、为失败请求实现重试机制，以及在代码执行中创建有意延迟。每种模式都针对开发者在处理异步操作时经常遇到的特定挑战，掌握它们将显著提升你编写高效、健壮且响应迅速的 JavaScript 应用的能力。
 
@@ -2489,77 +2434,64 @@ async  function  getUserInfoWithAllSettled(userId) {
 
 Fetch API 作为 HTML5 标准的一部分引入，提供了一种强大且灵活的方式来发起 HTTP 请求。它返回一个 Promise，因此天然适合异步操作。以下是一个基本示例，展示如何使用 Fetch API 从假设的天气 API 中检索数据：
 
-```
-function  getWeatherData(city) {
+```javascript
+function getWeatherData(city) {
+  return fetch(`https://api.weatherapp.com/forecast?city=${city}`)
+    .then(response => {
+      if (!response.ok) {
+        throw new Error('Network response was not ok');
+      }
+      return response.json();
+    })
+    .then(data => {
+      console.log('Weather data:', data);
+      return data;
+    })
+    .catch(error => {
+      console.error('There was a problem fetching the weather data:', error);
+    });
+}
 
-  return  fetch(`https://api.weatherapp.com/forecast?city=${city}`)
-
-    .then(response  => {if (!response.ok) {
-
-        throw  new  Error('Network response was not ok');
-
-      }
-
-      return  response.json();
-
-    })
-
-    .then(data  => {console.log('Weather data:', data);
-
-      return  data;
-
-    })
-
-    .catch(error  => {console.error('There was a problem fetching the weather data:', error);
-
-    });
-
-} getWeatherData('New York');
+getWeatherData('New York');
 ```
 
-在这个示例中，我们定义了一个函数 `getWeatherData`，它接受一个城市名称作为参数。它使用 Fetch API 向假设的天气 API 发起 GET 请求。`fetch` 函数返回一个 Promise，该 Promise 在收到服务器响应时被解决。然后我们链式调用 `.then()` 方法来处理响应：
+在这个示例中，我们定义了一个函数`getWeatherData`，它接受一个城市名称作为参数。它使用 Fetch API 向假设的天气 API 发起 GET 请求。`fetch`函数返回一个 Promise，该 Promise 在收到服务器响应时被解决。然后我们链式调用`.then()`方法来处理响应：
 
-1.  第一个 `.then()` 检查响应是否成功（`response.ok`）。如果不成功，则抛出错误。如果成功，则解析响应中的 JSON。
-
-2.  第二个 `.then()` 记录解析后的数据并将其返回以供进一步使用。
-
-3.  最后的 `.catch()` 处理 fetch 操作或前面 `.then()` 块中发生的任何错误。
+1. 第一个`.then()`检查响应是否成功（`response.ok`）。如果不成功，则抛出错误。如果成功，则解析响应中的 JSON。
+2. 第二个`.then()`记录解析后的数据并将其返回以供进一步使用。
+3. 最后的`.catch()`处理 fetch 操作或前面`.then()`块中发生的任何错误。
 
 ### 使用 Async/Await 编写更简洁的代码
 
-虽然基于 Promise 的方法效果不错，但 `async/await` 语法通常能带来更清晰、更易读的代码，尤其是在处理多个异步操作时。以下是使用 `async/await` 重写的相同示例：
+虽然基于 Promise 的方法效果不错，但`async/await`语法通常能带来更清晰、更易读的代码，尤其是在处理多个异步操作时。以下是使用`async/await`重写的相同示例：
 
-```
-async  function  getWeatherData(city) {
+```javascript
+async function getWeatherData(city) {
+  try {
+    const response = await fetch(`https://api.weatherapp.com/forecast?city=${city}`);
 
-  try {const  response  =  await  fetch(`https://api.weatherapp.com/forecast?city=${city}`);
+    if (!response.ok) {
+      throw new Error('Network response was not ok');
+    }
 
-    if (!response.ok) {
+    const data = await response.json();
+    console.log('Weather data:', data);
+    return data;
+  } catch (error) {
+    console.error('There was a problem fetching the weather data:', error);
+  }
+}
 
-      throw  new  Error('Network response was not ok');
-
-    }
-
-    const  data  =  await  response.json();
-
-    console.log('Weather data:', data);
-
-    return  data;
-
-  } catch (error) {
-
-    console.error('There was a problem fetching the weather data:', error);
-
-  }
-
-} // Usage (async () => {const  weatherData  =  await  getWeatherData('New York');
-
-  // Do something with weatherData })();
+// Usage
+(async () => {
+  const weatherData = await getWeatherData('New York');
+  // Do something with weatherData
+})();
 ```
 
-在这个版本中，我们使用 `async` 关键字定义了一个异步函数。在函数内部，我们使用 `await` 暂停执行，直到 `fetch` 返回的 Promise 被解决。这让我们能够以更接近同步代码的风格编写代码，许多开发者认为这种风格更易于阅读和理解。
+在这个版本中，我们使用`async`关键字定义了一个异步函数。在函数内部，我们使用`await`暂停执行，直到`fetch`返回的 Promise 被解决。这让我们能够以更接近同步代码的风格编写代码，许多开发者认为这种风格更易于阅读和理解。
 
-`try/catch` 块提供了一种干净的方式来处理 fetch 操作或解析 JSON 时可能发生的错误。这种方法集中了错误处理，使其更易于管理和调试。
+`try/catch`块提供了一种干净的方式来处理 fetch 操作或解析 JSON 时可能发生的错误。这种方法集中了错误处理，使其更易于管理和调试。
 
 ### 处理多个 API 调用
 
@@ -2569,33 +2501,37 @@ async  function  getWeatherData(city) {
 
 有时，一个 API 调用的结果是进行下一个调用所必需的。在这种情况下，你需要顺序执行这些调用。以下是一个示例，我们先获取用户资料，然后利用该信息获取他们的最新帖子：
 
-```
-async  function  getUserDataAndPosts(userId) {
+```javascript
+async function getUserDataAndPosts(userId) {
+  try {
+    // First, fetch the user profile
+    const userResponse = await fetch(`https://api.example.com/users/${userId}`);
 
-  try {// First, fetch the user profile     const  userResponse  =  await  fetch(`https://api.example.com/users/${userId}`);
+    if (!userResponse.ok) {
+      throw new Error('Failed to fetch user data');
+    }
 
-    if (!userResponse.ok) throw  new  Error('Failed to fetch user data');
+    const userData = await userResponse.json();
 
-    const  userData  =  await  userResponse.json();
+    // Then, use the user's ID to fetch their posts
+    const postsResponse = await fetch(`https://api.example.com/posts?userId=${userData.id}`);
 
-    // Then, use the user's ID to fetch their posts     const  postsResponse  =  await  fetch(`https://api.example.com/posts?userId=${userData.id}`);
+    if (!postsResponse.ok) {
+      throw new Error('Failed to fetch user posts');
+    }
 
-    if (!postsResponse.ok) throw  new  Error('Failed to fetch user posts');
+    const postsData = await postsResponse.json();
 
-    const  postsData  =  await  postsResponse.json();
+    return { user: userData, posts: postsData };
+  } catch (error) {
+    console.error('Error fetching user data and posts:', error);
+  }
+}
 
-    return { user:  userData, posts:  postsData };
-
-  } catch (error) {
-
-    console.error('Error fetching user data and posts:', error);
-
-  }
-
-} // Usage (async () => {const  userDataAndPosts  =  await  getUserDataAndPosts(123);
-
-  console.log(userDataAndPosts);
-
+// Usage
+(async () => {
+  const userDataAndPosts = await getUserDataAndPosts(123);
+  console.log(userDataAndPosts);
 })();
 ```
 
@@ -2603,41 +2539,32 @@ async  function  getUserDataAndPosts(userId) {
 
 #### 并行 API 调用
 
-当 API 调用彼此独立时，你可以通过并行执行它们来提高性能。`Promise.all()` 方法非常适合这种场景：
+当 API 调用彼此独立时，你可以通过并行执行它们来提高性能。`Promise.all()`方法非常适合这种场景：
 
-```
-async  function  getWeatherForMultipleCities(cities) {
+```javascript
+async function getWeatherForMultipleCities(cities) {
+  try {
+    const weatherPromises = cities.map(city =>
+      fetch(`https://api.weatherapp.com/forecast?city=${city}`)
+        .then(response => response.json())
+    );
 
-  try {const  weatherPromises  =  cities.map(city  => fetch(`https://api.weatherapp.com/forecast?city=${city}`)
+    const weatherData = await Promise.all(weatherPromises);
+    return weatherData;
+  } catch (error) {
+    console.error('Error fetching weather data:', error);
+  }
+}
 
-        .then(response  =>  response.json())
-
-    );
-
-    const  weatherData  =  await  Promise.all(weatherPromises);
-
-    return  weatherData;
-
-  } catch (error) {
-
-    console.error('Error fetching weather data:', error);
-
-  }
-
-} // Usage (async () => {const  cities  = ['New York', 'London', 'Tokyo', 'Sydney'];
-
-  const  allWeatherData  =  await  getWeatherForMultipleCities(cities);
-
-  console.log(allWeatherData);
-
+// Usage
+(async () => {
+  const cities = ['New York', 'London', 'Tokyo', 'Sydney'];
+  const allWeatherData = await getWeatherForMultipleCities(cities);
+  console.log(allWeatherData);
 })();
 ```
 
-
-
-
-
-在这个示例中，我们创建了一个由 `Promise` 组成的数组，每个 `Promise` 代表对不同城市的 fetch 操作。然后我们使用 `Promise.all()` 来等待所有这些 `Promise` 完成。这种方法允许所有 API 调用并发执行，与顺序调用相比，可以显著节省时间。
+在这个示例中，我们创建了一个由`Promise`组成的数组，每个`Promise`代表对不同城市的 fetch 操作。然后我们使用`Promise.all()`来等待所有这些`Promise`完成。这种方法允许所有 API 调用并发执行，与顺序调用相比，可以显著节省时间。
 
 ## 异步代码的顺序执行与并行执行
 
@@ -2652,6 +2579,8 @@ async  function  getWeatherForMultipleCities(cities) {
 3. API 调用，其中一次调用的响应是进行下一次调用所必需的。
 
 以下是一个多步骤表单提交过程中顺序执行的示例：
+
+
 
 ```javascript
 async function submitMultiStepForm(userData) {
@@ -2694,7 +2623,7 @@ async function sendWelcomeEmail(email) { /* ... */ }
 })();
 ```
 
-在这个示例中，表单提交过程中的每一步都依赖于前一步的成功完成。我们对每个异步操作使用 `await`，确保它们按正确的顺序执行。
+在这个示例中，表单提交过程中的每一步都依赖于前一步的成功完成。我们对每个异步操作使用`await`，确保它们按正确的顺序执行。
 
 ### 并行执行
 
@@ -2737,7 +2666,7 @@ async function fetchDashboardData(userId) {
 })();
 ```
 
-在这个示例中，我们使用 `Promise.all()` 并行获取用户个人资料数据、帖子和分析数据。这种方法比顺序调用更高效，因为它允许三个请求同时进行。
+在这个示例中，我们使用`Promise.all()`并行获取用户个人资料数据、帖子和分析数据。这种方法比顺序调用更高效，因为它允许三个请求同时进行。
 
 ### 结合顺序执行与并行执行
 
@@ -2786,7 +2715,7 @@ async function processCollectedData(userData, posts, friends) {
 在这个示例中：
 
 1. 我们首先顺序获取用户数据。
-2. 然后，使用 `Promise.all()` 并行获取帖子和好友数据。
+2. 然后，使用`Promise.all()`并行获取帖子和好友数据。
 3. 最后，顺序处理收集到的数据。
 
 这种方法允许我们在可能的情况下优化性能（通过并行获取帖子和好友数据），同时仍然保持必要的操作顺序（先获取用户数据，最后处理收集到的数据）。
@@ -2825,52 +2754,38 @@ async function fetchWithRetry(url, options = {}, maxRetries = 3) {
 })();
 ```
 
-在这个示例中，`fetchWithRetry` 会尝试获取数据最多 `maxRetries` 次。如果所有尝试都失败，它会抛出最后一次遇到的错误。
+在这个示例中，`fetchWithRetry`会尝试获取数据最多`maxRetries`次。如果所有尝试都失败，它会抛出最后一次遇到的错误。
 
 ### 指数退避
 
-
-
-
 一种更复杂的重试策略是使用指数退避。这种方法会增加重试尝试之间的延迟，从而减轻服务器负载并提高请求成功的几率。
 
-```
-async  function  fetchWithExponentialBackoff(url, options  = {}, maxRetries  =  5) {
+```javascript
+async function fetchWithExponentialBackoff(url, options = {}, maxRetries = 5) {
+  for (let i = 0; i < maxRetries; i++) {
+    try {
+      const response = await fetch(url, options);
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+      }
+      return await response.json();
+    } catch (error) {
+      if (i === maxRetries - 1) throw error;
+      const delay = Math.pow(2, i) * 1000; // Exponential backoff
+      console.log(`Attempt ${i + 1} failed. Retrying in ${delay}ms...`);
+      await new Promise(resolve => setTimeout(resolve, delay));
+    }
+  }
+}
 
-  for (let  i  =  0; i  <  maxRetries; i++) {
-
-    try {const  response  =  await  fetch(url, options);
-
-      if (!response.ok) {
-
-        throw  new  Error(`HTTP error! status: ${response.status}`);
-
-      }
-
-      return  await  response.json();
-
-    } catch (error) {
-
-      if (i  ===  maxRetries  -  1) throw  error;
-
-      const  delay  =  Math.pow(2, i) *  1000; // Exponential backoff       console.log(`Attempt ${i  +  1} failed. Retrying in ${delay}ms...`);
-
-      await  new  Promise(resolve  =>  setTimeout(resolve, delay));
-
-    }
-
-  }
-
-} // Usage (async () => {try {const  data  =  await  fetchWithExponentialBackoff('https://api.example.com/data');
-
-    console.log('Fetched data:', data);
-
-  } catch (error) {
-
-    console.error('Failed to fetch data after multiple attempts:', error);
-
-  }
-
+// Usage
+(async () => {
+  try {
+    const data = await fetchWithExponentialBackoff('https://api.example.com/data');
+    console.log('Fetched data:', data);
+  } catch (error) {
+    console.error('Failed to fetch data after multiple attempts:', error);
+  }
 })();
 ```
 
@@ -2880,49 +2795,34 @@ async  function  fetchWithExponentialBackoff(url, options  = {}, maxRetries  =  
 
 为了防止多个客户端在服务器故障后同时重试，通常会在重试延迟中添加一些随机性（抖动）：
 
-```
-async  function  fetchWithBackoffAndJitter(url, options  = {}, maxRetries  =  5) {
+```javascript
+async function fetchWithBackoffAndJitter(url, options = {}, maxRetries = 5) {
+  for (let i = 0; i < maxRetries; i++) {
+    try {
+      const response = await fetch(url, options);
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+      }
+      return await response.json();
+    } catch (error) {
+      if (i === maxRetries - 1) throw error;
+      const baseDelay = Math.pow(2, i) * 1000;
+      const jitter = Math.random() * 1000;
+      const delay = baseDelay + jitter;
+      console.log(`Attempt ${i + 1} failed. Retrying in ${delay}ms...`);
+      await new Promise(resolve => setTimeout(resolve, delay));
+    }
+  }
+}
 
-  for (let  i  =  0; i  <  maxRetries; i++) {
-
-    try {const  response  =  await  fetch(url, options);
-
-      if (!response.ok) {
-
-        throw  new  Error(`HTTP error! status: ${response.status}`);
-
-      }
-
-      return  await  response.json();
-
-    } catch (error) {
-
-      if (i  ===  maxRetries  -  1) throw  error;
-
-      const  baseDelay  =  Math.pow(2, i) *  1000;
-
-      const  jitter  =  Math.random() *  1000;
-
-      const  delay  =  baseDelay  +  jitter;
-
-      console.log(`Attempt ${i  +  1} failed. Retrying in ${delay}ms...`);
-
-      await  new  Promise(resolve  =>  setTimeout(resolve, delay));
-
-    }
-
-  }
-
-} // Usage (async () => {try {const  data  =  await  fetchWithBackoffAndJitter('https://api.example.com/data');
-
-    console.log('Fetched data:', data);
-
-  } catch (error) {
-
-    console.error('Failed to fetch data after multiple attempts:', error);
-
-  }
-
+// Usage
+(async () => {
+  try {
+    const data = await fetchWithBackoffAndJitter('https://api.example.com/data');
+    console.log('Fetched data:', data);
+  } catch (error) {
+    console.error('Failed to fetch data after multiple attempts:', error);
+  }
 })();
 ```
 
@@ -2932,55 +2832,55 @@ async  function  fetchWithBackoffAndJitter(url, options  = {}, maxRetries  =  5)
 
 在某些情况下，你可能只想针对特定类型的错误进行重试。例如，你可能在网络错误或服务器错误（5xx 状态码）时重试，但不在客户端错误（4xx 状态码）时重试。
 
-```
-async  function  fetchWithConditionalRetry(url, options  = {}, maxRetries  =  3) {
 
-  for (let  i  =  0; i  <  maxRetries; i++) {
 
-    try {const  response  =  await  fetch(url, options);
+`async function fetchWithConditionalRetry(url, options = {}, maxRetries = 3) {`
 
-      if (response.ok) {
+`  for (let i = 0; i < maxRetries; i++) {`
 
-        return  await  response.json();
+`    try {const response = await fetch(url, options);`
 
-      }
+`      if (response.ok) {`
 
-      if (response.status  >=  400  &&  response.status  <  500) {
+`        return await response.json();`
 
-        // Don't retry client errors         throw  new  Error(`Client error! status: ${response.status}`);
+`      }`
 
-      }
+`      if (response.status >= 400 && response.status < 500) {`
 
-      throw  new  Error(`Server error! status: ${response.status}`);
+`        // Don't retry client errors         throw new Error(\`Client error! status: ${response.status}\`);`
 
-    } catch (error) {
+`      }`
 
-      if (i  ===  maxRetries  -  1  ||  error.message.includes('Client error')) {
+`      throw new Error(\`Server error! status: ${response.status}\`);`
 
-        throw  error;
+`    } catch (error) {`
 
-      }
+`      if (i === maxRetries - 1 || error.message.includes('Client error')) {`
 
-      console.log(`Attempt ${i  +  1} failed. Retrying...`);
+`        throw error;`
 
-      await  new  Promise(resolve  =>  setTimeout(resolve, 1000));
+`      }`
 
-    }
+`      console.log(\`Attempt ${i + 1} failed. Retrying...\`);`
 
-  }
+`      await new Promise(resolve => setTimeout(resolve, 1000));`
 
-} // Usage (async () => {try {const  data  =  await  fetchWithConditionalRetry('https://api.example.com/data');
+`    }`
 
-    console.log('Fetched data:', data);
+`  }`
 
-  } catch (error) {
+`} // Usage (async () => {try {const data = await fetchWithConditionalRetry('https://api.example.com/data');`
 
-    console.error('Failed to fetch data:', error);
+`    console.log('Fetched data:', data);`
 
-  }
+`  } catch (error) {`
 
-})();
-```
+`    console.error('Failed to fetch data:', error);`
+
+`  }`
+
+`})();`
 
 该实现对于客户端错误（4xx 状态码）会立即抛出错误而不重试，而对于服务器错误（5xx 状态码）和网络错误则会进行重试。
 
@@ -2997,92 +2897,92 @@ async  function  fetchWithConditionalRetry(url, options  = {}, maxRetries  =  3)
 
 ### 使用带 Promise 的 setTimeout
 
-创建延迟最基本的方法是将 `setTimeout` 包装在 `Promise` 中：
+创建延迟最基本的方法是将`setTimeout`包装在`Promise`中：
 
 ```
-function  delay(ms) {
+function delay(ms) {
 
-  return  new  Promise(resolve  =>  setTimeout(resolve, ms));
+  return new Promise(resolve => setTimeout(resolve, ms));
 
-} // Usage async  function  exampleWithDelay() {
+} // Usage async function exampleWithDelay() {
 
-  console.log('Starting');
+  console.log('Starting');
 
-  await  delay(2000); // Wait for 2 seconds   console.log('Two seconds have passed');
+  await delay(2000); // Wait for 2 seconds   console.log('Two seconds have passed');
 
-  await  delay(1000); // Wait for 1 more second   console.log('One more second has passed');
+  await delay(1000); // Wait for 1 more second   console.log('One more second has passed');
 
 } exampleWithDelay();
 ```
 
-这个 `delay()` 函数返回一个在指定毫秒数后解决的 `Promise`。通过使用 `await`，我们可以轻松地在异步函数中引入延迟。
+这个`delay()`函数返回一个在指定毫秒数后解决的`Promise`。通过使用`await`，我们可以轻松地在异步函数中引入延迟。
 
 ### 创建 Sleep 函数
 
-我们可以创建一个更具表达力的 `sleep()` 函数，模拟其他编程语言中的行为：
+我们可以创建一个更具表达力的`sleep()`函数，模拟其他编程语言中的行为：
 
 ```
-async  function  sleep(seconds) {
+async function sleep(seconds) {
 
-  await  new  Promise(resolve  =>  setTimeout(resolve, seconds  *  1000));
+  await new Promise(resolve => setTimeout(resolve, seconds * 1000));
 
-} // Usage async  function  countdownWithSleep() {
+} // Usage async function countdownWithSleep() {
 
-  for (let  i  =  5; i  >  0; i--) {
+  for (let i = 5; i > 0; i--) {
 
-    console.log(i);
+    console.log(i);
 
-    await  sleep(1);
+    await sleep(1);
 
-  }
+  }
 
-  console.log('Liftoff!');
+  console.log('Liftoff!');
 
 } countdownWithSleep();
 ```
 
-这个 `sleep()` 函数接受等待的秒数，使其比指定毫秒数更直观。
+这个`sleep()`函数接受等待的秒数，使其比指定毫秒数更直观。
 
 ### 实现定时重试机制
 
-我们可以将 `delay()` 函数与重试机制结合，为 API 调用创建定时重试：
+我们可以将`delay()`函数与重试机制结合，为 API 调用创建定时重试：
 
 ```
-async  function  fetchWithTimedRetry(url, options  = {}, maxRetries  =  3, delayMs  =  1000) {
+async function fetchWithTimedRetry(url, options = {}, maxRetries = 3, delayMs = 1000) {
 
-  for (let  i  =  0; i  <  maxRetries; i++) {
+  for (let i = 0; i < maxRetries; i++) {
 
-    try {const  response  =  await  fetch(url, options);
+    try {const response = await fetch(url, options);
 
-      if (!response.ok) {
+      if (!response.ok) {
 
-        throw  new  Error(`HTTP error! status: ${response.status}`);
+        throw new Error(\`HTTP error! status: ${response.status}\`);
 
-      }
+      }
 
-      return  await  response.json();
+      return await response.json();
 
-    } catch (error) {
+    } catch (error) {
 
-      if (i  ===  maxRetries  -  1) throw  error;
+      if (i === maxRetries - 1) throw error;
 
-      console.log(`Attempt ${i  +  1} failed. Retrying in ${delayMs}ms...`);
+      console.log(\`Attempt ${i + 1} failed. Retrying in ${delayMs}ms...\`);
 
-      await  delay(delayMs);
+      await delay(delayMs);
 
-    }
+    }
 
-  }
+  }
 
-} // Usage (async () => {try {const  data  =  await  fetchWithTimedRetry('https://api.example.com/data');
+} // Usage (async () => {try {const data = await fetchWithTimedRetry('https://api.example.com/data');
 
-    console.log('Fetched data:', data);
+    console.log('Fetched data:', data);
 
-  } catch (error) {
+  } catch (error) {
 
-    console.error('Failed to fetch data after multiple attempts:', error);
+    console.error('Failed to fetch data after multiple attempts:', error);
 
-  }
+  }
 
 })();
 ```
@@ -3094,82 +2994,78 @@ async  function  fetchWithTimedRetry(url, options  = {}, maxRetries  =  3, delay
 在进行 API 调用时，延迟对于实现速率限制至关重要。以下是一个简单速率限制器的示例：
 
 ```
-class  RateLimiter {constructor(limit, interval) {
+class RateLimiter {constructor(limit, interval) {
 
-    this.limit  =  limit;
+    this.limit = limit;
 
-    this.interval  =  interval;
+    this.interval = interval;
 
-    this.queue  = [];this.lastRun  =  Date.now();
+    this.queue = [];this.lastRun = Date.now();
 
-  }
+  }
 
-  async  run(fn) {
+  async run(fn) {
 
-    this.queue.push(fn);
+    this.queue.push(fn);
 
-    await  this.process();
+    await this.process();
 
-  }
+  }
 
-  async  process() {
+  async process() {
 
-    if (this.queue.length  ===  0) return;
+    if (this.queue.length === 0) return;
 
-    const  now  =  Date.now();
+    const now = Date.now();
 
-    if (now  -  this.lastRun  <  this.interval) {
+    if (now - this.lastRun < this.interval) {
 
-      await  delay(this.interval  - (now  -  this.lastRun));
+      await delay(this.interval - (now - this.lastRun));
 
-    }
+    }
 
-    const  fn  =  this.queue.shift();
+    const fn = this.queue.shift();
 
-    this.lastRun  =  Date.now();
+    this.lastRun = Date.now();
 
-    await  fn();
+    await fn();
 
-    if (this.queue.length  >  0) {
+    if (this.queue.length > 0) {
 
-      await  this.process();
+      await this.process();
 
-    }
+    }
 
-  }
+  }
 
-} // Usage const  limiter  =  new  RateLimiter(1, 1000); // 1 request per second   async  function  fetchWithRateLimit(url) {
+} // Usage const limiter = new RateLimiter(1, 1000); // 1 request per second   async function fetchWithRateLimit(url) {
 
-  return  limiter.run(() =>  fetch(url).then(res  =>  res.json()));
+  return limiter.run(() => fetch(url).then(res => res.json()));
 
-} // Example usage (async () => {for (let  i  =  0; i  <  5; i++) {
+} // Example usage (async () => {for (let i = 0; i < 5; i++) {
 
-    const  data  =  await  fetchWithRateLimit(`https://api.example.com/data/${i}`);
+    const data = await fetchWithRateLimit(\`https://api.example.com/data/${i}\`);
 
-    console.log(`Fetched data ${i}:`, data);
+    console.log(\`Fetched data ${i}:\`, data);
 
-  }
+  }
 
 })();
 ```
 
-
-
-
-
-这个 `RateLimiter` 类确保函数（在此例中为 API 调用）在调用之间按指定延迟执行，从而有效限制它们的调用频率。
+这个`RateLimiter`类确保函数（在此例中为 API 调用）在调用之间按指定延迟执行，从而有效限制它们的调用频率。
 
 ### 创建定时动画
 
 延迟可用于创建定时动画或事件序列。以下是一个简单的打字动画示例：
 
 ```javascript
-async  function  typeText(element, text, delay  =  100) {
-  for (let  char  of  text) {
-    element.textContent  +=  char;
-    await  sleep(delay);
+async function typeText(element, text, delay = 100) {
+  for (let char of text) {
+    element.textContent += char;
+    await sleep(delay);
   }
-} // 用法（在浏览器环境中） const  outputElement  =  document.getElementById('output'); typeText(outputElement, 'Hello, world!', 150);
+} // 用法（在浏览器环境中） const outputElement = document.getElementById('output'); typeText(outputElement, 'Hello, world!', 150);
 ```
 
 该函数通过每次向元素的文本内容添加一个字符来模拟打字，并在每个字符之间添加延迟。
@@ -3177,8 +3073,6 @@ async  function  typeText(element, text, delay  =  100) {
 总之，在异步 JavaScript 中创建延迟是一项强大的技术，可应用于多种场景，从管理 API 调用到创建用户界面效果。通过将延迟与其他异步模式结合，你可以创建更健壮、更高效且更友好的应用程序。
 
 # 第 7 章：异步代码中的错误处理
-
-# ❧
 
 在异步 JavaScript 编程的世界中，错误处理在创建健壮可靠的应用程序中扮演着至关重要的角色。作为开发者，我们必须准备好优雅地处理意外情况、网络故障以及异步操作中可能出现的其他潜在问题。本章深入探讨了使用 Promise 和 Async/Await 进行错误处理的最佳实践，介绍了优雅降级和回退技术，并提供了有效调试异步错误的见解。
 
@@ -3190,99 +3084,99 @@ async  function  typeText(element, text, delay  =  100) {
 
 Promise 提供了一种处理异步操作的强大方式，并且内置了错误处理能力。以下是一些在基于 Promise 的代码中有效管理错误的关键技术：
 
-1.  使用 `.catch()` 进行错误处理
+1. 使用`.catch()`进行错误处理
 
-    `.catch()` 方法是处理 Promise 链中错误的主要方式。它允许你指定一个回调函数，该函数将在前面的 Promise 链中发生任何错误时执行。
+   `.catch()`方法是处理 Promise 链中错误的主要方式。它允许你指定一个回调函数，该函数将在前面的 Promise 链中发生任何错误时执行。
 
-    ```javascript
-    fetchData()
-      .then(processData)
-      .then(displayResults)
-      .catch(error  => {console.error('发生错误：', error);
-        // 优雅地处理错误   });
-    ```
+   ```javascript
+   fetchData()
+     .then(processData)
+     .then(displayResults)
+     .catch(error => {console.error('发生错误：', error);
+       // 优雅地处理错误   });
+   ```
 
-2.  避免 Promise 构造函数反模式
+2. 避免 Promise 构造函数反模式
 
-    在创建新的 Promise 时，重要的是避免常见的反模式，即不必要地包装已有的返回 Promise 的函数：
+   在创建新的 Promise 时，重要的是避免常见的反模式，即不必要地包装已有的返回 Promise 的函数：
 
-    ```javascript
-    // 反模式：不必要的 Promise 包装
-    function  fetchData() {
-      return  new  Promise((resolve, reject) => {axios.get('/api/data')
-          .then(response  =>  resolve(response.data))
-          .catch(error  =>  reject(error));
-      });
-    }
+   ```javascript
+   // 反模式：不必要的 Promise 包装
+   function fetchData() {
+     return new Promise((resolve, reject) => {axios.get('/api/data')
+         .then(response => resolve(response.data))
+         .catch(error => reject(error));
+     });
+   }
 
-    // 更好的方法：直接返回 Promise
-    function  fetchData() {
-      return  axios.get('/api/data').then(response  =>  response.data);
-    }
-    ```
+   // 更好的方法：直接返回 Promise
+   function fetchData() {
+     return axios.get('/api/data').then(response => response.data);
+   }
+   ```
 
-3.  利用 `Promise.all()` 处理多个异步操作
+3. 利用`Promise.all()`处理多个异步操作
 
-    当处理多个异步操作时，`Promise.all()` 是一个强大的工具。然而，正确处理错误非常重要：
+   当处理多个异步操作时，`Promise.all()`是一个强大的工具。然而，正确处理错误非常重要：
 
-    ```javascript
-    Promise.all([fetchUser(), fetchPosts(), fetchComments()])
-      .then(([user, posts, comments]) => {// 处理结果   })
-      .catch(error  => {console.error('发生错误：', error);
-        // 优雅地处理错误   });
-    ```
+   ```javascript
+   Promise.all([fetchUser(), fetchPosts(), fetchComments()])
+     .then(([user, posts, comments]) => {// 处理结果   })
+     .catch(error => {console.error('发生错误：', error);
+       // 优雅地处理错误   });
+   ```
 
 ### Async/Await 错误处理
 
 Async/Await 提供了一种更接近同步代码的编写异步代码的方式，但实现适当的错误处理机制至关重要。以下是一些使用 Async/Await 进行错误处理的最佳实践：
 
-1.  使用 try/catch 块
+1. 使用 try/catch 块
 
-    在 Async/Await 中处理错误的主要方法是使用 try/catch 块：
+   在 Async/Await 中处理错误的主要方法是使用 try/catch 块：
 
-    ```javascript
-    async  function  fetchAndProcessData() {
-      try {const  data  =  await  fetchData();
-        const  processedData  =  await  processData(data);
-        return  displayResults(processedData);
-      } catch (error) {
-        console.error('发生错误：', error);
-        // 优雅地处理错误   }
-    }
-    ```
+   ```javascript
+   async function fetchAndProcessData() {
+     try {const data = await fetchData();
+       const processedData = await processData(data);
+       return displayResults(processedData);
+     } catch (error) {
+       console.error('发生错误：', error);
+       // 优雅地处理错误   }
+   }
+   ```
 
-2.  将 Async/Await 与 `Promise.all()` 结合使用
+2. 将 Async/Await 与`Promise.all()`结合使用
 
-    当使用 Async/Await 处理多个异步操作时，可以将其与 `Promise.all()` 结合以实现高效的错误处理：
+   当使用 Async/Await 处理多个异步操作时，可以将其与`Promise.all()`结合以实现高效的错误处理：
 
-    ```javascript
-    async  function  fetchAllData() {
-      try {const [user, posts, comments] =  await  Promise.all([
-          fetchUser(),
-          fetchPosts(),
-          fetchComments()
-        ]);
-        // 处理结果 } catch (error) {
-        console.error('发生错误：', error);
-        // 优雅地处理错误   }
-    }
-    ```
+   ```javascript
+   async function fetchAllData() {
+     try {const [user, posts, comments] = await Promise.all([
+         fetchUser(),
+         fetchPosts(),
+         fetchComments()
+       ]);
+       // 处理结果 } catch (error) {
+       console.error('发生错误：', error);
+       // 优雅地处理错误   }
+   }
+   ```
 
-3.  避免不必要的 try/catch 块
+3. 避免不必要的 try/catch 块
 
-    虽然 try/catch 块对于错误处理至关重要，但重要的是避免将每个 await 语句都包裹在单独的 try/catch 块中。相反，应将相关操作分组在一起：
+   虽然 try/catch 块对于错误处理至关重要，但重要的是避免将每个 await 语句都包裹在单独的 try/catch 块中。相反，应将相关操作分组在一起：
 
-    ```javascript
-    async  function  processUserData() {
-      try {const  user  =  await  fetchUser();
-        const  posts  =  await  fetchPosts(user.id);
-        const  comments  =  await  fetchComments(posts);
-        return { user, posts, comments };
-      } catch (error) {
-        console.error('处理用户数据时出错：', error);
-        // 优雅地处理错误   }
-    }
-    ```
+   ```javascript
+   async function processUserData() {
+     try {const user = await fetchUser();
+       const posts = await fetchPosts(user.id);
+       const comments = await fetchComments(posts);
+       return { user, posts, comments };
+     } catch (error) {
+       console.error('处理用户数据时出错：', error);
+       // 优雅地处理错误   }
+   }
+   ```
 
 ## 优雅降级和回退
 
@@ -3290,52 +3184,52 @@ Async/Await 提供了一种更接近同步代码的编写异步代码的方式�
 
 ### 实现回退机制
 
-1.  缓存数据回退
+1. 缓存数据回退
 
-    当从 API 获取数据时，最好实现一个缓存机制，当 API 不可达时可以作为回退：
+   当从 API 获取数据时，最好实现一个缓存机制，当 API 不可达时可以作为回退：
 
-    ```javascript
-    async  function  fetchData() {
-      try {const  response  =  await  fetch('/api/data');
-        const  data  =  await  response.json();
-        localStorage.setItem('cachedData', JSON.stringify(data));
-        return  data;
-      } catch (error) {
-        console.warn('获取新数据失败，使用缓存数据');
-        const  cachedData  =  localStorage.getItem('cachedData');
-        if (cachedData) {
-          return  JSON.parse(cachedData);
-        }
-        throw  new  Error('没有可用数据');
-      }
+
+
+```javascript
+async function fetchData() {
+  try {
+    const response = await fetch('/api/data');
+    const data = await response.json();
+    localStorage.setItem('cachedData', JSON.stringify(data));
+    return data;
+  } catch (error) {
+    console.warn('获取新数据失败，使用缓存数据');
+    const cachedData = localStorage.getItem('cachedData');
+    if (cachedData) {
+      return JSON.parse(cachedData);
     }
-    ```
-
-2.  默认值
-
-    为缺失或错误的数据提供默认值有助于保持一致的用户体验：
-
-    ```javascript
-    async  function  fetchUserProfile(userId) {
-      try {const  response  =  await  fetch(`/api/users/${userId}`);
-        const  user  =  await  response.json();
-        return {name:  user.name  ||  '未知用户',
-          email:  user.email  ||  'N/A',
-          avatar:  user.avatar  ||  'default-avatar.png' };
-      } catch (error) {
-        console.error('获取用户资料时出错：', error);
-        return {name:  '未知用户',
-          email:  'N/A',
-    ```
-
-
-
-
-```
-      avatar:  'default-avatar.png' };
-
+    throw new Error('没有可用数据');
   }
+}
+```
 
+## 默认值
+
+为缺失或错误的数据提供默认值有助于保持一致的用户体验：
+
+```javascript
+async function fetchUserProfile(userId) {
+  try {
+    const response = await fetch(`/api/users/${userId}`);
+    const user = await response.json();
+    return {
+      name: user.name || '未知用户',
+      email: user.email || 'N/A',
+      avatar: user.avatar || 'default-avatar.png'
+    };
+  } catch (error) {
+    console.error('获取用户资料时出错：', error);
+    return {
+      name: '未知用户',
+      email: 'N/A',
+      avatar: 'default-avatar.png'
+    };
+  }
 }
 ```
 
@@ -3343,105 +3237,83 @@ Async/Await 提供了一种更接近同步代码的编写异步代码的方式�
 
 ### 优雅降级策略
 
-1. 渐进增强
+#### 1. 渐进增强
 
 使用基础 JavaScript 实现应用程序的核心功能，然后通过更高级的异步特性进行增强。这确保了连接较慢或使用旧版浏览器的用户仍能访问基本功能：
 
-```
-function  loadComments() {
+```javascript
+function loadComments() {
+  const commentsContainer = document.getElementById('comments');
+  commentsContainer.innerHTML = 'Loading comments...';
 
-  const  commentsContainer  =  document.getElementById('comments');
-
-  commentsContainer.innerHTML  =  'Loading comments...';
-
-  if ('fetch'  in  window) {
-
+  if ('fetch' in window) {
     fetchCommentsAsync(commentsContainer);
-
-  } else {fetchCommentsXHR(commentsContainer);
-
+  } else {
+    fetchCommentsXHR(commentsContainer);
   }
+}
 
-} async  function  fetchCommentsAsync(container) {
-
-  try {const  response  =  await  fetch('/api/comments');
-
-    const  comments  =  await  response.json();
-
+async function fetchCommentsAsync(container) {
+  try {
+    const response = await fetch('/api/comments');
+    const comments = await response.json();
     renderComments(container, comments);
-
   } catch (error) {
-
-    container.innerHTML  =  'Failed to load comments. Please try again later.';
-
+    container.innerHTML = 'Failed to load comments. Please try again later.';
   }
+}
 
-} function  fetchCommentsXHR(container) {
-
-  const  xhr  =  new  XMLHttpRequest();
-
+function fetchCommentsXHR(container) {
+  const xhr = new XMLHttpRequest();
   xhr.open('GET', '/api/comments');
 
-  xhr.onload  =  function() {
-
-    if (xhr.status  ===  200) {
-
-      const  comments  =  JSON.parse(xhr.responseText);
-
+  xhr.onload = function () {
+    if (xhr.status === 200) {
+      const comments = JSON.parse(xhr.responseText);
       renderComments(container, comments);
-
-    } else {container.innerHTML  =  'Failed to load comments. Please try again later.';
-
+    } else {
+      container.innerHTML = 'Failed to load comments. Please try again later.';
     }
-
   };
 
-  xhr.onerror  =  function() {
-
-    container.innerHTML  =  'Failed to load comments. Please try again later.';
-
+  xhr.onerror = function () {
+    container.innerHTML = 'Failed to load comments. Please try again later.';
   };
 
   xhr.send();
-
 }
 ```
 
-此示例演示了如何为不支持 Fetch API 的浏览器提供回退机制，确保可以使用 `XMLHttpRequest` 作为替代方案加载评论。
+此示例演示了如何为不支持 Fetch API 的浏览器提供回退机制，确保可以使用`XMLHttpRequest`作为替代方案加载评论。
 
-2. 离线支持
+#### 2. 离线支持
 
 使用 Service Worker 实现离线支持，缓存关键资源并提供基本的离线体验：
 
-```
-// service-worker.js self.addEventListener('install', event  => {event.waitUntil(
-
-    caches.open('my-app-cache').then(cache  => {return  cache.addAll([
-
+```javascript
+// service-worker.js
+self.addEventListener('install', event => {
+  event.waitUntil(
+    caches.open('my-app-cache').then(cache => {
+      return cache.addAll([
         '/',
-
         '/index.html',
-
         '/styles.css',
-
         '/app.js',
-
-        '/offline.html' ]);
-
+        '/offline.html'
+      ]);
     })
-
   );
+});
 
-}); self.addEventListener('fetch', event  => {event.respondWith(
-
-    caches.match(event.request).then(response  => {return  response  ||  fetch(event.request).catch(() => {return  caches.match('/offline.html');
-
+self.addEventListener('fetch', event => {
+  event.respondWith(
+    caches.match(event.request).then(response => {
+      return response || fetch(event.request).catch(() => {
+        return caches.match('/offline.html');
       });
-
     })
-
   );
-
 });
 ```
 
@@ -3453,57 +3325,46 @@ function  loadComments() {
 
 ### 控制台日志记录与错误追踪
 
-1. 战略性控制台日志记录
+#### 1. 战略性控制台日志记录
 
 在异步代码中实现详细的控制台日志记录，以跟踪执行流程并识别错误发生的位置：
 
-```
-async  function  fetchAndProcessData() {
-
-  try {console.log('Fetching data...');
-
-    const  data  =  await  fetchData();
-
+```javascript
+async function fetchAndProcessData() {
+  try {
+    console.log('Fetching data...');
+    const data = await fetchData();
     console.log('Data fetched successfully:', data);
 
     console.log('Processing data...');
-
-    const  processedData  =  await  processData(data);
-
+    const processedData = await processData(data);
     console.log('Data processed successfully:', processedData);
 
     console.log('Displaying results...');
-
-    return  displayResults(processedData);
-
+    return displayResults(processedData);
   } catch (error) {
-
     console.error('An error occurred:', error);
-
     console.error('Error stack:', error.stack);
 
-    // Handle the error gracefully   }
-
+    // Handle the error gracefully
+  }
 }
 ```
 
 这种方法帮助你追踪执行路径，并快速识别异步链中错误发生的位置。
 
-2. 错误对象属性
+#### 2. 错误对象属性
 
 利用 Error 对象的属性来收集更多关于错误的信息：
 
-```
-try {// Asynchronous operations } catch (error) {
-
+```javascript
+try {
+  // Asynchronous operations
+} catch (error) {
   console.error('Error name:', error.name);
-
   console.error('Error message:', error.message);
-
   console.error('Error stack:', error.stack);
-
   console.error('Error cause:', error.cause);
-
 }
 ```
 
@@ -3511,48 +3372,46 @@ try {// Asynchronous operations } catch (error) {
 
 ### 浏览器开发者工具与调试
 
-1. 异步堆栈跟踪
+#### 1. 异步堆栈跟踪
 
 现代浏览器的开发者工具提供了异步堆栈跟踪，让你能够看到导致错误的完整异步调用链：
 
-```
-async  function  operationA() {
+```javascript
+async function operationA() {
+  await operationB();
+}
 
-  await  operationB();
+async function operationB() {
+  await operationC();
+}
 
-} async  function  operationB() {
+async function operationC() {
+  throw new Error('Something went wrong in operationC');
+}
 
-  await  operationC();
-
-} async  function  operationC() {
-
-  throw  new  Error('Something went wrong in operationC');
-
-} operationA().catch(error  =>  console.error(error));
+operationA().catch(error => console.error(error));
 ```
 
 在浏览器开发者工具中调试此代码时，你将看到一个包含所有三个函数的堆栈跟踪，帮助你理解错误的完整上下文。
 
-2. 断点与逐步调试
+#### 2. 断点与逐步调试
 
 在浏览器的开发者工具中使用断点和逐步调试，在异步流程的各个点暂停执行并检查应用程序的状态：
 
-```
-async  function  fetchUserData(userId) {
+```javascript
+async function fetchUserData(userId) {
+  const response = await fetch(`/api/users/${userId}`);
+  const userData = await response.json();
+  return processUserData(userData);
+}
 
-  const  response  =  await  fetch(`/api/users/${userId}`);
+async function processUserData(userData) {
+  // Set a breakpoint on the next line
+  const processedData = await someComplexProcessing(userData);
+  return processedData;
+}
 
-  const  userData  =  await  response.json();
-
-  return  processUserData(userData);
-
-} async  function  processUserData(userData) {
-
-  // Set a breakpoint on the next line   const  processedData  =  await  someComplexProcessing(userData);
-
-  return  processedData;
-
-} fetchUserData(123).then(displayUserProfile).catch(handleError);
+fetchUserData(123).then(displayUserProfile).catch(handleError);
 ```
 
 通过设置断点并使用逐步调试，你可以在异步操作的每个阶段检查变量状态、调用栈以及其他相关信息。
@@ -3561,81 +3420,67 @@ async  function  fetchUserData(userId) {
 
 对于生产环境，考虑实现错误监控与日志记录服务，以跟踪和分析异步错误：
 
-1. Sentry 集成
+#### 1. Sentry 集成
 
 Sentry 是一个流行的错误监控服务，可以轻松集成到你的 JavaScript 应用程序中：
 
-```
-import  *  as  Sentry  from  "@sentry/browser"; Sentry.init({
+```javascript
+import * as Sentry from "@sentry/browser";
 
-  dsn:  "YOUR_SENTRY_DSN",
-
+Sentry.init({
+  dsn: "YOUR_SENTRY_DSN",
   integrations: [new Sentry.BrowserTracing()],
+  tracesSampleRate: 1.0
+});
 
-  tracesSampleRate:  1.0,
-
-}); async  function  fetchData() {
-
-  try {const  response  =  await  fetch('/api/data');
-
-    return  response.json();
-
+async function fetchData() {
+  try {
+    const response = await fetch('/api/data');
+    return response.json();
   } catch (error) {
-
     Sentry.captureException(error);
-
-    throw  error;
-
+    throw error;
   }
-
 }
 ```
 
 此集成允许你实时追踪错误，接收详细的错误报告，并深入了解应用程序中错误的频率和影响。
 
-2. 自定义错误日志记录
+#### 2. 自定义错误日志记录
 
 实现一个自定义错误日志记录系统，将错误详情发送到你的服务器进行分析：
 
-```
-async  function  logError(error, context) {
-
-  const  errorLog  = {message:  error.message,
-
-    stack:  error.stack,
-
-    context:  context,
-
-    timestamp:  new  Date().toISOString()
-
+```javascript
+async function logError(error, context) {
+  const errorLog = {
+    message: error.message,
+    stack: error.stack,
+    context: context,
+    timestamp: new Date().toISOString()
   };
 
-  try {await  fetch('/api/log-error', {
-
-      method:  'POST',
-
-      headers: { 'Content-Type': 'application/json' },body:  JSON.stringify(errorLog)
-
+  try {
+    await fetch('/api/log-error', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(errorLog)
     });
-
   } catch (logError) {
-
     console.error('Failed to log error:', logError);
-
   }
+}
 
-} async  function  fetchUserProfile(userId) {
-
-  try {const  response  =  await  fetch(`/api/users/${userId}`);
-
-    return  response.json();
-
+async function fetchUserProfile(userId) {
+  try {
+    const response = await fetch(`/api/users/${userId}`);
+    return response.json();
   } catch (error) {
-
-    await  logError(error, { userId, operation:  'fetchUserProfile' });throw  error;
-
+    await logError(error, {
+      userId,
+      operation: 'fetchUserProfile'
+    });
+    throw error;
   }
-
 }
 ```
 
@@ -3643,14 +3488,9 @@ async  function  logError(error, context) {
 
 通过实施这些调试技术，并利用浏览器开发者工具和错误监控服务的能力，你可以显著提高识别、理解和解决 JavaScript 应用程序中异步错误的能力。
 
-
-
-
 总之，异步代码中的有效错误处理对于构建健壮且可靠的 JavaScript 应用程序至关重要。通过遵循 Promise 和 Async/Await 的最佳实践、实现优雅降级和回退策略，并利用强大的调试技术，你可以创建能够优雅处理意外情况、即使在错误或网络故障面前也能提供流畅用户体验的应用程序。请记住，错误处理是一个持续的过程，根据实际使用情况和反馈不断改进你的方法，将使应用程序更具弹性和用户友好性。
 
 # 第 8 章：调试异步 JavaScript
-
-# ​❧​
 
 调试异步 JavaScript 可能是一项具有挑战性的任务，即使对于经验丰富的开发者也是如此。非线性的执行流程以及潜在的竞态条件，使得追踪问题并理解事件顺序变得困难。在本章中，我们将探讨有效调试异步 JavaScript 代码的各种技术和工具，重点介绍如何使用断点、检查调用栈以及利用浏览器开发者工具。我们还将讨论常见错误及其避免方法，确保你能够从容应对最复杂的异步调试场景。
 
@@ -3662,9 +3502,11 @@ async  function  logError(error, context) {
 
 为了有效调试异步代码，了解在哪里以及如何设置断点非常重要。以下是一些关键策略：
 
-1.  `Promise` 断点：在 `Promise` 执行器、`.then()` 回调和 `.catch()` 处理程序中设置断点。这允许你在 Promise 链的关键点暂停执行。
+#### 1. `Promise` 断点
 
-```
+在`Promise`执行器、`.then()`回调和`.catch()`处理程序中设置断点。这允许你在 Promise 链的关键点暂停执行。
+
+```javascript
 const fetchData = () => {
   return new Promise((resolve, reject) => {
     // 在此处设置断点以检查 Promise 的创建
@@ -3685,9 +3527,11 @@ fetchData()
   });
 ```
 
-2.  Async/Await 断点：在异步函数内部放置断点，特别是在 await 表达式之前和之后。这有助于你跟踪控制权让出和恢复时的执行流程。
+#### 2. Async/Await 断点
 
-```
+在异步函数内部放置断点，特别是在`await`表达式之前和之后。这有助于你跟踪控制权让出和恢复时的执行流程。
+
+```javascript
 async function processData() {
   try {
     // 在此处设置断点以检查 await 之前的状态
@@ -3701,11 +3545,17 @@ async function processData() {
 }
 ```
 
-3.  事件循环断点：在浏览器开发者工具中，你可以针对事件循环中的特定事件设置断点，例如 `setTimeout`、`setInterval` 和 `XHR` 请求。这对于调试与时间相关的问题特别有用。
+#### 3. 事件循环断点
 
-4.  条件断点：使用条件断点仅在满足特定条件时暂停执行。这在调试复杂异步流程中的特定场景时很有帮助。
+在浏览器开发者工具中，你可以针对事件循环中的特定事件设置断点，例如`setTimeout`、`setInterval`和`XHR`请求。这对于调试与时间相关的问题特别有用。
 
-```
+
+
+#### 4. 条件断点
+
+使用条件断点仅在满足特定条件时暂停执行。这在调试复杂异步流程中的特定场景时很有帮助。
+
+```javascript
 // 在开发者工具中，在此行设置条件断点
 // 条件为：data.status === 'error'
 processApiResponse(data);
@@ -3715,17 +3565,14 @@ processApiResponse(data);
 
 调用栈是理解代码执行上下文的关键工具。然而，在处理异步 JavaScript 时，调用栈可能难以解释。以下是如何在调试异步代码时有效使用调用栈：
 
-1.  理解异步调用栈：现代浏览器的开发者工具在调用栈视图中提供了“异步”选项。启用此选项可以看到完整的异步调用栈，包括异步操作的起源。
-
-2.  追踪 Promise 链：当在 Promise 链中的断点处暂停时，调用栈会显示当前函数及其调用者。利用这一点可以回溯 Promise 链，理解你是如何到达当前点的。
-
-3.  Async/Await 调用栈：在调试 async/await 代码时，调用栈会显示异步函数及其调用者。这使得理解以更同步风格编写的异步代码的执行流程变得更加容易。
-
-4.  事件循环和微任务队列：请记住，调用栈只显示当前的执行上下文。异步操作可能会被排队到微任务队列或事件循环中，在它们被执行之前不会出现在调用栈中。
+1. **理解异步调用栈**：现代浏览器的开发者工具在调用栈视图中提供了“异步”选项。启用此选项可以看到完整的异步调用栈，包括异步操作的起源。
+2. **追踪 Promise 链**：当在 Promise 链中的断点处暂停时，调用栈会显示当前函数及其调用者。利用这一点可以回溯 Promise 链，理解你是如何到达当前点的。
+3. **Async/Await 调用栈**：在调试 `async`/`await` 代码时，调用栈会显示异步函数及其调用者。这使得理解以更同步风格编写的异步代码的执行流程变得更加容易。
+4. **事件循环和微任务队列**：请记住，调用栈只显示当前的执行上下文。异步操作可能会被排队到微任务队列或事件循环中，在它们被执行之前不会出现在调用栈中。
 
 以下是一个调试异步函数时调用栈可能呈现的示例：
 
-```
+```javascript
 async function fetchUserData(userId) {
   const response = await fetch(`/api/users/${userId}`);
   const userData = await response.json();
@@ -3746,7 +3593,7 @@ displayUserProfile(123);
 
 如果你在 `fetchUserData` 函数内部设置了一个断点，调用栈可能看起来像这样：
 
-```
+```text
 fetchUserData
 async function (anonymous)
 displayUserProfile
@@ -3762,21 +3609,17 @@ async function (anonymous)
 
 ### Promise 检查
 
-1.  `Promise` 状态：在控制台和源代码面板中，你可以检查 `Promise` 对象以查看其当前状态（待定、已完成或已拒绝）以及其解析或拒绝的值。
-
-2.  异步调用栈：在调用栈视图中启用“异步”选项，可以看到完整的异步调用栈，包括 `Promise` 创建和解析的起源。
-
-3.  `Promise` 链可视化：某些开发者工具（如 Chrome）在源代码面板中提供了 `Promise` 链的可视化表示，使理解复杂的异步流程更加容易。
+1. **`Promise` 状态**：在控制台和源代码面板中，你可以检查 `Promise` 对象以查看其当前状态（待定、已完成或已拒绝）以及其解析或拒绝的值。
+2. **异步调用栈**：在调用栈视图中启用“异步”选项，可以看到完整的异步调用栈，包括 `Promise` 创建和解析的起源。
+3. **`Promise` 链可视化**：某些开发者工具（如 Chrome）在源代码面板中提供了 `Promise` 链的可视化表示，使理解复杂的异步流程更加容易。
 
 ### 异步函数调试
 
-1.  跳过异步操作：使用调试器中的“单步跳过”按钮来跳过 await 表达式，从而可以像调试同步函数一样调试异步函数。
+1. **跳过异步操作**：使用调试器中的“单步跳过”按钮来跳过 `await` 表达式，从而可以像调试同步函数一样调试异步函数。
+2. **异步断点**：在 `await` 表达式之前和之后设置断点，以检查异步流程中关键点的应用程序状态。
+3. **异步控制台**：使用带有 `await` 的 `console.log()` 语句直接在控制台中记录异步值：
 
-2.  异步断点：在 await 表达式之前和之后设置断点，以检查异步流程中关键点的应用程序状态。
-
-3.  异步控制台：使用带有 await 的 `console.log()` 语句直接在控制台中记录异步值：
-
-```
+```javascript
 async function fetchData() {
   const response = await fetch('/api/data');
   console.log(await response.json());
@@ -3787,19 +3630,12 @@ async function fetchData() {
 
 当处理涉及 API 调用的异步代码时，开发者工具中的网络面板成为宝贵的资源：
 
-1.  请求检查：检查每个 API 请求的详细信息，包括标头、负载和计时信息。
-
-2.  响应分析：检查响应数据、状态码和标头，以确保你的 API 按预期运行。
-
-3.  节流：使用网络节流来模拟较慢的连接，并测试你的异步代码在不同网络条件下的行为。
-
-4.  重放 XHR：使用“重放 XHR”功能重新运行特定的 API 请求，而无需重新加载整个页面，这对于调试特定的 API 相关问题非常有用。
+1. **请求检查**：检查每个 API 请求的详细信息，包括标头、负载和计时信息。
+2. **响应分析**：检查响应数据、状态码和标头，以确保你的 API 按预期运行。
+3. **节流**：使用网络节流来模拟较慢的连接，并测试你的异步代码在不同网络条件下的行为。
+4. **重放 XHR**：使用“重放 XHR”功能重新运行特定的 API 请求，而无需重新加载整个页面，这对于调试特定的 API 相关问题非常有用。
 
 以下是一个如何结合使用网络面板和断点来调试 API 调用的示例：
-
-
-
-
 
 ```javascript
 async function fetchUserData(userId) {
@@ -3808,6 +3644,7 @@ async function fetchUserData(userId) {
   const userData = await response.json();
   return userData;
 }
+
 fetchUserData(123).then(data => {
   console.log(data);
 }).catch(error => {
@@ -3849,6 +3686,7 @@ function fetchData() {
       // 适当地处理错误
     });
 }
+
 // 或者使用 async/await：
 async function fetchData() {
   try {
@@ -3893,6 +3731,7 @@ fetchUserData(userId)
   .catch(error => {
     console.error('数据获取链中出错:', error);
   });
+
 // 或者使用 async/await：
 async function fetchUserDataChain(userId) {
   try {
@@ -3941,6 +3780,7 @@ function fetchData() {
       .catch(error => reject(error));
   });
 }
+
 // 或者直接返回 Promise 链来简化：
 function fetchData() {
   return fetch('/api/data')
@@ -3961,6 +3801,7 @@ function processItems(items) {
     const result = await processItem(item);
     console.log(result);
   });
+
   console.log('所有项目已处理'); // 这会在项目实际处理之前就打印出来
 }
 ```
@@ -3975,12 +3816,14 @@ async function processItems(items) {
   results.forEach(result => console.log(result));
   console.log('所有项目已处理');
 }
+
 // 或者：
 async function processItems(items) {
   for (const item of items) {
     const result = await processItem(item);
     console.log(result);
   }
+
   console.log('所有项目已处理');
 }
 ```
@@ -3994,11 +3837,14 @@ async function processItems(items) {
 ```javascript
 function blockingOperation() {
   const start = Date.now();
+
   while (Date.now() - start < 5000) {
     // 阻塞事件循环 5 秒
   }
+
   console.log('阻塞操作完成');
 }
+
 setTimeout(() => console.log('这应该先运行'), 0);
 blockingOperation();
 console.log('这第二个运行');
@@ -4017,6 +3863,7 @@ function nonBlockingOperation() {
     }, 5000);
   });
 }
+
 setTimeout(() => console.log('这先运行'), 0);
 nonBlockingOperation().then(() => console.log('这最后运行'));
 console.log('这第二个运行');
@@ -4028,7 +3875,7 @@ console.log('这第二个运行');
 
 # 第 9 章：异步 JavaScript 的未来
 
-# ​❧​
+# ❧
 
 当我们展望异步 JavaScript 的未来时，我们发现自己正处于令人兴奋的新范式和大功率工具的前沿，这些工具将彻底改变我们在应用程序中处理并发操作的方式。在本章中，我们将探讨三个塑造异步编程格局的前沿概念：可观察对象与响应式编程、用于多线程的 Web Workers，以及即将重新定义我们处理异步任务方式的新兴特性。
 
@@ -4056,11 +3903,7 @@ const observable = new Observable(subscriber => {
 });
 ```
 
-
-
-
-
-```
+```javascript
 }); console.log('Just before subscribe'); observable.subscribe({
   next(x) { console.log('Got value '  +  x); },
   error(err) { console.error('Something wrong occurred: '  +  err); },
@@ -4070,13 +3913,15 @@ const observable = new Observable(subscriber => {
 
 在这个示例中，我们创建了一个 `Observable`，它会发出一系列值。`subscribe` 方法用于监听这些值。输出结果将是：
 
-Just before subscribe  
-Got value 1  
-Got value 2  
-Got value 3  
-Just after subscribe  
-Got value 4  
+```text
+Just before subscribe
+Got value 1
+Got value 2
+Got value 3
+Just after subscribe
+Got value 4
 Done
+```
 
 请注意，`Observable` 可以随时间发出多个值，订阅者可以对每个发出的值做出响应。
 
@@ -4084,115 +3929,119 @@ Done
 
 使用 Observable 进行响应式编程具有以下几个优势：
 
-1.  可组合性：Observable 可以通过丰富的操作符轻松组合、转换和操作。
-2.  惰性求值：Observable 只有在被订阅时才会开始产生值，从而实现高效的资源管理。
-3.  取消订阅：可以取消对 Observable 的订阅，从而对资源使用进行细粒度控制。
-4.  错误处理：Observable 内置了错误处理机制，使得在异步操作中管理和恢复错误更加容易。
+1. **可组合性**：Observable 可以通过丰富的操作符轻松组合、转换和操作。
+2. **惰性求值**：Observable 只有在被订阅时才会开始产生值，从而实现高效的资源管理。
+
+
+
+3. 取消订阅：可以取消对`Observable`的订阅，从而对资源使用进行细粒度控制。
+
+4. 错误处理：`Observable`内置了错误处理机制，使得在异步操作中管理和恢复错误更加容易。
 
 让我们看一个更复杂的示例，展示响应式编程的强大之处：
 
 ```
-import { fromEvent, interval } from  'rxjs';
-import { debounceTime, map, takeUntil } from  'rxjs/operators';
+import { fromEvent, interval } from 'rxjs';
+import { debounceTime, map, takeUntil } from 'rxjs/operators';
 
-const  input  =  document.getElementById('search-input');
-const  button  =  document.getElementById('stop-button');
+const input = document.getElementById('search-input');
+const button = document.getElementById('stop-button');
 
-const  searchInput$  =  fromEvent(input, 'input').pipe(
-  map(event  =>  event.target.value),
+const searchInput$ = fromEvent(input, 'input').pipe(
+  map(event => event.target.value),
   debounceTime(300)
 );
 
-const  stopClick$  =  fromEvent(button, 'click');
+const stopClick$ = fromEvent(button, 'click');
 
-const  search$  =  searchInput$.pipe(
+const search$ = searchInput$.pipe(
   takeUntil(stopClick$)
 );
 
 search$.subscribe(
-  value  =>  console.log(`Searching for: ${value}`),
-  err  =>  console.error(err),
-  () =>  console.log('Search stopped')
+  value => console.log(`Searching for: ${value}`),
+  err => console.error(err),
+  () => console.log('Search stopped')
 );
 ```
 
-在这个示例中，我们从用户输入事件创建了一个 `Observable`，对输入进行防抖以避免过多的 API 调用，并允许用户停止搜索操作。这展示了 Observable 如何轻松处理复杂的异步场景。
+在这个示例中，我们从用户输入事件创建了一个`Observable`，对输入进行防抖以避免过多的 API 调用，并允许用户停止搜索操作。这展示了`Observable`如何轻松处理复杂的异步场景。
 
 ### 响应式编程库
 
-虽然 Observable 还不是 JavaScript 的原生特性，但有几个库提供了强大的实现：
+虽然`Observable`还不是 JavaScript 的原生特性，但有几个库提供了强大的实现：
 
-1.  `RxJS`：JavaScript 中最流行的响应式编程库，提供了丰富的操作符和工具。
-2.  `Bacon.js`：一个较小的库，专注于函数式响应式编程。
-3.  `Most.js`：一个高性能的响应式编程库，API 表面极小。
+1. `RxJS`：JavaScript 中最流行的响应式编程库，提供了丰富的操作符和工具。
+2. `Bacon.js`：一个较小的库，专注于函数式响应式编程。
+3. `Most.js`：一个高性能的响应式编程库，API 表面极小。
 
 随着 JavaScript 生态系统的不断发展，我们可以期待语言本身对响应式编程概念提供更多原生支持。
 
 ## JavaScript 多线程的 Web Workers 概述
 
-JavaScript 长期以来一直被称为单线程语言，所有操作都在主线程上运行。这可能导致性能问题，尤其是在处理计算密集型任务时。Web Workers 应运而生，它是一个强大的 API，允许 JavaScript 利用多个线程，为并发编程开辟了新的可能性。
+JavaScript 长期以来一直被称为单线程语言，所有操作都在主线程上运行。这可能导致性能问题，尤其是在处理计算密集型任务时。`Web Workers`应运而生，它是一个强大的 API，允许 JavaScript 利用多个线程，为并发编程开辟了新的可能性。
 
 ### 什么是 Web Workers？
 
-Web Workers 为 Web 内容提供了一种在后台线程中运行脚本的简单方法。工作线程可以执行任务而不干扰用户界面。一旦创建，工作线程可以通过向创建它的 JavaScript 代码指定的事件处理程序发送消息来进行通信。
+`Web Workers`为 Web 内容提供了一种在后台线程中运行脚本的简单方法。工作线程可以执行任务而不干扰用户界面。一旦创建，工作线程可以通过向创建它的 JavaScript 代码指定的事件处理程序发送消息来进行通信。
 
 让我们看一个创建和使用 Web Worker 的基本示例：
 
 ```
 // 主脚本 (main.js)
-const  worker  =  new  Worker('worker.js');
-worker.onmessage  =  function(event) {
+const worker = new Worker('worker.js');
+worker.onmessage = function(event) {
   console.log('Received from worker:', event.data);
 };
 worker.postMessage('Hello, Worker!');
 
 // 工作线程脚本 (worker.js)
-self.onmessage  =  function(event) {
+self.onmessage = function(event) {
   console.log('Received in worker:', event.data);
   self.postMessage('Hello, Main thread!');
 };
 ```
 
-在这个示例中，我们创建了一个在单独线程中运行的 `Worker`。主脚本和工作线程可以通过来回发送消息进行通信。
+在这个示例中，我们创建了一个在单独线程中运行的`Worker`。主脚本和工作线程可以通过来回发送消息进行通信。
 
 ### Web Workers 的类型
 
-Web Workers 主要有三种类型：
+`Web Workers`主要有三种类型：
 
-1.  专用 Workers：这些工作线程由单个脚本使用。它们是最常见的类型，通过 `Worker()` 构造函数创建。
-2.  共享 Workers：这些工作线程可以被运行在不同窗口、IFrame 等中的多个脚本访问，只要它们与工作线程位于同一域中。它们通过 `SharedWorker()` 构造函数创建。
-3.  服务 Workers：这些工作线程充当 Web 应用程序、浏览器和网络之间的代理服务器。它们主要用于高级缓存策略和实现离线体验。
+1. 专用 Workers：这些工作线程由单个脚本使用。它们是最常见的类型，通过`Worker()`构造函数创建。
+2. 共享 Workers：这些工作线程可以被运行在不同窗口、IFrame 等中的多个脚本访问，只要它们与工作线程位于同一域中。它们通过`SharedWorker()`构造函数创建。
+3. 服务 Workers：这些工作线程充当 Web 应用程序、浏览器和网络之间的代理服务器。它们主要用于高级缓存策略和实现离线体验。
 
 ### Web Workers 的使用场景
 
-Web Workers 特别适用于需要在主线程不被阻塞的情况下执行繁重计算的场景。一些常见的使用场景包括：
+`Web Workers`特别适用于需要在主线程不被阻塞的情况下执行繁重计算的场景。一些常见的使用场景包括：
 
-1.  复杂计算：执行密集的数学运算或数据处理。
-2.  图像/视频处理：对媒体文件应用滤镜或变换。
-3.  数据获取与解析：处理大型数据集或进行多次 API 调用。
-4.  实时数据分析：处理流式数据或执行连续计算。
+1. 复杂计算：执行密集的数学运算或数据处理。
+2. 图像/视频处理：对媒体文件应用滤镜或变换。
+3. 数据获取与解析：处理大型数据集或进行多次 API 调用。
+4. 实时数据分析：处理流式数据或执行连续计算。
 
 让我们看一个更高级的示例，其中我们使用 Web Worker 执行计算密集型任务：
 
 ```
 // 主脚本 (main.js)
-const  worker  =  new  Worker('fibonacci-worker.js');
-worker.onmessage  =  function(event) {
+const worker = new Worker('fibonacci-worker.js');
+worker.onmessage = function(event) {
   console.log(`Fibonacci(${event.data.n}) = ${event.data.result}`);
 };
-for (let  i  =  0; i  <  45; i++) {
-  worker.postMessage({ type:  'calculate', n:  i });
+for (let i = 0; i < 45; i++) {
+  worker.postMessage({ type: 'calculate', n: i });
 }
 
 // 工作线程脚本 (fibonacci-worker.js)
-function  fibonacci(n) {
-  if (n  <=  1) return  n;
-  return  fibonacci(n  -  1) +  fibonacci(n  -  2);
+function fibonacci(n) {
+  if (n <= 1) return n;
+  return fibonacci(n - 1) + fibonacci(n - 2);
 }
-self.onmessage  =  function(event) {
-  if (event.data.type  ===  'calculate') {
-    const  result  =  fibonacci(event.data.n);
-    self.postMessage({ n:  event.data.n, result:  result });
+self.onmessage = function(event) {
+  if (event.data.type === 'calculate') {
+    const result = fibonacci(event.data.n);
+    self.postMessage({ n: event.data.n, result: result });
   }
 };
 ```
@@ -4203,12 +4052,12 @@ self.onmessage  =  function(event) {
 
 虽然 Web Workers 功能强大，但它们也有一些限制：
 
-1.  无法访问 DOM：工作线程不能直接操作 DOM。所有 UI 更新必须在主线程上完成。
-2.  有限的 Window 对象访问：工作线程只能访问有限的 window API 集合。
-3.  通信开销：在主线程和工作线程之间传递大量数据可能代价高昂。
-4.  独立的全局作用域：每个工作线程运行在自己的全局作用域中，与 window 作用域分离。
+1. 无法访问 DOM：工作线程不能直接操作 DOM。所有 UI 更新必须在主线程上完成。
+2. 有限的 Window 对象访问：工作线程只能访问有限的`window` API 集合。
+3. 通信开销：在主线程和工作线程之间传递大量数据可能代价高昂。
+4. 独立的全局作用域：每个工作线程运行在自己的全局作用域中，与`window`作用域分离。
 
-尽管存在这些限制，Web Workers 为处理 JavaScript 应用程序中的 CPU 密集型任务提供了稳健的解决方案，从而实现了更流畅的用户体验和更高效的系统资源利用。
+尽管存在这些限制，`Web Workers`为处理 JavaScript 应用程序中的 CPU 密集型任务提供了稳健的解决方案，从而实现了更流畅的用户体验和更高效的系统资源利用。
 
 ## JavaScript 异步编程的新兴特性
 
@@ -4216,55 +4065,47 @@ JavaScript 语言及其生态系统在不断演进，新的特性和提案旨在
 
 ### 顶层 Await
 
-最受期待的特性之一是顶层 await，它允许在模块的异步函数之外使用 `await` 关键字。该特性已在现代浏览器中实现，并且是 ECMAScript 2022 规范的一部分。
+最受期待的特性之一是顶层`await`，它允许在模块的异步函数之外使用`await`关键字。该特性已在现代浏览器中实现，并且是 ECMAScript 2022 规范的一部分。
 
-以下是顶层 await 的使用示例：
+以下是顶层`await`的使用示例：
 
 ```
 // data-fetcher.js
-const  response  =  await  fetch('https://api.example.com/data');
-const  data  =  await  response.json();
+const response = await fetch('https://api.example.com/data');
+const data = await response.json();
 export { data };
 
 // main.js
-import { data } from  './data-fetcher.js';
+import { data } from './data-fetcher.js';
 console.log(data); // 导入的数据已经解析完成
 ```
-
-
-
 
 此功能简化了依赖异步操作的模块初始化，无需复杂的变通方法或立即执行的异步函数。
 
 ### 异步迭代器和生成器
 
-异步迭代器和生成器提供了一种更直观的方式来处理异步数据流。它们允许你使用 `for-await-of` 循环遍历异步数据源。
+异步迭代器和生成器提供了一种更直观的方式来处理异步数据流。它们允许你使用`for-await-of`循环遍历异步数据源。
 
 以下是一个异步生成器的示例：
 
 ```
-async  function*  fetchPages(urls) {
-
-  for (const  url  of  urls) {
-
-    const  response  =  await  fetch(url);
-
-    yield  await  response.text();
-
-  }
-
+async function* fetchPages(urls) {
+  for (const url of urls) {
+    const response = await fetch(url);
+    yield await response.text();
+  }
 }
 
-(async () => {const  urls  = ['https://example.com/page1',
+(async () => {
+  const urls = [
+    'https://example.com/page1',
+    'https://example.com/page2',
+    'https://example.com/page3'
+  ];
 
-    'https://example.com/page2',
-
-    'https://example.com/page3' ];for await (const  page  of  fetchPages(urls)) {
-
-    console.log(page);
-
-  }
-
+  for await (const page of fetchPages(urls)) {
+    console.log(page);
+  }
 })();
 ```
 
@@ -4272,25 +4113,27 @@ async  function*  fetchPages(urls) {
 
 ### AbortController 和 AbortSignal
 
-`AbortController` 和 `AbortSignal` API 提供了一种标准化的方式来中止异步操作。虽然现代浏览器已经实现了它们，但其使用正变得越来越广泛，并集成到各种 API 中。
+`AbortController`和`AbortSignal` API 提供了一种标准化的方式来中止异步操作。虽然现代浏览器已经实现了它们，但其使用正变得越来越广泛，并集成到各种 API 中。
 
-以下是如何在 Fetch API 中使用 `AbortController` 的示例：
+以下是如何在 Fetch API 中使用`AbortController`的示例：
 
 ```
-const  controller  =  new  AbortController(); const  signal  =  controller.signal; setTimeout(() =>  controller.abort(), 5000); // Abort after 5 seconds   try {const  response  =  await  fetch('https://api.example.com/data', { signal });const  data  =  await  response.json();
+const controller = new AbortController();
+const signal = controller.signal;
 
-  console.log(data);
+setTimeout(() => controller.abort(), 5000); // Abort after 5 seconds
 
+try {
+  const response = await fetch('https://api.example.com/data', { signal });
+  const data = await response.json();
+
+  console.log(data);
 } catch (err) {
-
-  if (err.name  ===  'AbortError') {
-
-    console.log('Fetch aborted');
-
-  } else {console.error('Fetch error:', err);
-
-  }
-
+  if (err.name === 'AbortError') {
+    console.log('Fetch aborted');
+  } else {
+    console.error('Fetch error:', err);
+  }
 }
 ```
 
@@ -4303,32 +4146,26 @@ const  controller  =  new  AbortController(); const  signal  =  controller.signa
 以下是其可能的使用方式：
 
 ```
-async  function  fetchData() {
+async function fetchData() {
+  try {
+    const response = await fetch('https://api.example.com/data');
 
-  try {const  response  =  await  fetch('https://api.example.com/data');
+    if (!response.ok) {
+      throw new Error('API request failed', { cause: response.statusText });
+    }
 
-    if (!response.ok) {
+    return await response.json();
+  } catch (err) {
+    throw new Error('Failed to fetch data', { cause: err });
+  }
+}
 
-      throw  new  Error('API request failed', { cause:  response.statusText });
-
-    }return  await  response.json();
-
-  } catch (err) {
-
-    throw  new  Error('Failed to fetch data', { cause:  err });
-
-  }
-
-} try {const  data  =  await  fetchData();
-
-  console.log(data);
-
+try {
+  const data = await fetchData();
+  console.log(data);
 } catch (err) {
-
-  console.error(err.message);
-
-  console.error('Caused by:', err.cause);
-
+  console.error(err.message);
+  console.error('Caused by:', err.cause);
 }
 ```
 
@@ -4336,13 +4173,13 @@ async  function  fetchData() {
 
 ### 异步上下文追踪
 
-目前有一些关于更好追踪异步上下文方式的提案和讨论，类似于 Node.js 中 `async_hooks` 的工作方式。这可能会带来改进的调试工具和更强大的库来管理异步状态。
+目前有一些关于更好追踪异步上下文方式的提案和讨论，类似于 Node.js 中`async_hooks`的工作方式。这可能会带来改进的调试工具和更强大的库来管理异步状态。
 
 虽然仍处于早期阶段，但此类功能可能允许实现以下内容：
 
-*   跨异步边界的日志自动关联
-*   在复杂异步场景中更高效的资源管理
-*   保留异步上下文的改进错误堆栈跟踪
+- 跨异步边界的日志自动关联
+- 在复杂异步场景中更高效的资源管理
+- 保留异步上下文的改进错误堆栈跟踪
 
 ### 未来展望
 
@@ -4350,18 +4187,16 @@ async  function  fetchData() {
 
 一些可能进一步发展的领域包括：
 
-1.  增强的可观察对象：对可观察对象或类似响应式编程结构的潜在原生支持。
-2.  改进的并发模型：新的 API 或语言特性，以更好地利用多核处理器。
-3.  高级异步模式：对更复杂异步模式（如 Saga 或状态机）的语言级支持。
-4.  与 Web API 的更好集成：更一致、更强大的方式来处理各种异步 Web API。
+1. 增强的可观察对象：对可观察对象或类似响应式编程结构的潜在原生支持。
+2. 改进的并发模型：新的 API 或语言特性，以更好地利用多核处理器。
+3. 高级异步模式：对更复杂异步模式（如 Saga 或状态机）的语言级支持。
+4. 与 Web API 的更好集成：更一致、更强大的方式来处理各种异步 Web API。
 
 作为开发者，了解这些新兴特性并参与讨论，有助于塑造异步 JavaScript 的未来。通过拥抱新出现的范式和工具，我们可以构建更健壮、高效且可维护的应用程序，突破 Web 开发的可能性边界。
 
 总之，异步 JavaScript 的未来光明且充满可能性。从可观察对象和响应式编程的强大功能，到 Web Workers 的并发能力，再到即将出现的令人兴奋的新特性，开发者拥有不断扩展的工具箱来应对现代 Web 开发的挑战。展望未来，关键在于有效利用这些工具，始终关注性能、可维护性以及 JavaScript 生态系统中不断演进的最佳实践。
 
 # 第 10 章：动手实践迷你项目
-
-# ❧
 
 欢迎来到第 10 章，我们将深入探讨三个激动人心的迷你项目，帮助你巩固对异步 JavaScript 概念的理解。这些项目旨在让你亲身体验 Promise、async/await 和 API 调用在实际应用中的使用。学完本章后，你将更深刻地理解这些概念如何在实践场景中协同工作。
 
@@ -4376,35 +4211,35 @@ async  function  fetchData() {
 ```
 <!DOCTYPE html>
 
-<html  lang="en">
+<html lang="en">
 
 <head>
 
-    <meta  charset="UTF-8">
+    <meta charset="UTF-8">
 
-    <meta  name="viewport"  content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Weather App</title>
+    <title>Weather App</title>
 
-    <link  rel="stylesheet"  href="styles.css">
+    <link rel="stylesheet" href="styles.css">
 
 </head>
 
 <body>
 
-    <div  class="container">
+    <div class="container">
 
-        <h1>Weather App</h1>
+        <h1>Weather App</h1>
 
-        <input  type="text"  id="cityInput"  placeholder="Enter city name">
+        <input type="text" id="cityInput" placeholder="Enter city name">
 
-        <button  id="getWeather">Get Weather</button>
+        <button id="getWeather">Get Weather</button>
 
-        <div  id="weatherInfo"></div>
+        <div id="weatherInfo"></div>
 
-    </div>
+    </div>
 
-    <script  src="app.js"></script>
+    <script src="app.js"></script>
 
 </body>
 
@@ -4414,92 +4249,94 @@ async  function  fetchData() {
 接下来，添加一些基本的 CSS 使应用看起来更美观：
 
 ```
-body {font-family: Arial, sans-serif;
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
 
-    display: flex;
+.container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
 
-    justify-content: center;
+input,
+button {
+    margin: 10px 0;
+    padding: 5px;
+}
 
-    align-items: center;
-
-    height: 100vh;
-
-    margin: 0;
-
-    background-color: #f0f0f0;
-
-} .container {background-color: white;
-
-    padding: 20px;
-
-    border-radius: 5px;
-
-    box-shadow: 0  2px  5px  rgba(0, 0, 0, 0.1);
-
-} input, button {margin: 10px  0;
-
-    padding: 5px;
-
-} #weatherInfo {margin-top: 20px;
-
+#weatherInfo {
+    margin-top: 20px;
 }
 ```
 
 ### 实现天气应用
 
-现在，创建我们的 app.js 文件并实现天气应用：
+现在，创建我们的`app.js`文件并实现天气应用：
 
+
+
+```javascript
+const API_KEY = 'your_api_key_here'; // Replace with your actual API key
+const BASE_URL = 'https://api.openweathermap.org/data/2.5/weather';
+const cityInput = document.getElementById('cityInput');
+const getWeatherButton = document.getElementById('getWeather');
+const weatherInfo = document.getElementById('weatherInfo');
+
+async function getWeather(city) {
+    try {
+        const response = await fetch(`${BASE_URL}?q=${city}&appid=${API_KEY}&units=metric`);
+
+        if (!response.ok) {
+            throw new Error('City not found');
+        }
+
+        const data = await response.json();
+
+        return data;
+    } catch (error) {
+        throw error;
+    }
+}
+
+function displayWeather(data) {
+    const { name, main, weather } = data;
+
+    weatherInfo.innerHTML = `
+        <h2>${name}</h2>
+        <p>Temperature: ${main.temp}°C</p>
+        <p>Feels like: ${main.feels_like}°C</p>
+        <p>Humidity: ${main.humidity}%</p>
+        <p>Weather: ${weather[0].description}</p>
+    `;
+}
+
+getWeatherButton.addEventListener('click', async () => {
+    const city = cityInput.value.trim();
+
+    if (!city) {
+        weatherInfo.textContent = 'Please enter a city name';
+        return;
+    }
+
+    try {
+        weatherInfo.textContent = 'Loading...';
+
+        const weatherData = await getWeather(city);
+
+        displayWeather(weatherData);
+    } catch (error) {
+        weatherInfo.textContent = `Error: ${error.message}`;
+    }
+});
 ```
-const  API_KEY  =  'your_api_key_here'; // Replace with your actual API key const  BASE_URL  =  'https://api.openweathermap.org/data/2.5/weather'; const  cityInput  =  document.getElementById('cityInput'); const  getWeatherButton  =  document.getElementById('getWeather'); const  weatherInfo  =  document.getElementById('weatherInfo'); async  function  getWeather(city) {
-
-    try {const  response  =  await  fetch(`${BASE_URL}?q=${city}&appid=${API_KEY}&units=metric`);
-
-        if (!response.ok) {
-
-            throw  new  Error('City not found');
-
-        }
-
-        const  data  =  await  response.json();
-
-        return  data;
-
-    } catch (error) {
-
-        throw  error;
-
-    }
-
-} function  displayWeather(data) {
-
-    const { name, main, weather } =  data;
-```
-
-
-
-
-`weatherInfo.innerHTML` = `
-    <h2>${name}</h2>
-    <p>Temperature: ${main.temp}°C</p>
-    <p>Feels like: ${main.feels_like}°C</p>
-    <p>Humidity: ${main.humidity}%</p>
-    <p>Weather: ${weather[0].description}</p>
-`;
-
-`getWeatherButton.addEventListener('click', async () => {`
-    `const city = cityInput.value.trim();`
-    `if (!city) {`
-        `weatherInfo.textContent = 'Please enter a city name';`
-        `return;`
-    `}`
-    `try {`
-        `weatherInfo.textContent = 'Loading...';`
-        `const weatherData = await getWeather(city);`
-        `displayWeather(weatherData);`
-    `} catch (error) {`
-        `weatherInfo.textContent = \`Error: ${error.message}\`;`
-    `}`
-`});`
 
 在这个实现中，我们使用了 `async/await` 来处理异步 API 调用。`getWeather` 函数被标记为 `async`，允许我们在发起 `fetch` 请求时使用 `await` 关键字。与传统的 Promise 链相比，这使我们的代码更具可读性，也更易于理解。
 
@@ -4509,7 +4346,7 @@ const  API_KEY  =  'your_api_key_here'; // Replace with your actual API key cons
 
 ### 测试天气应用
 
-要测试天气应用，你需要从 OpenWeatherMap（https://openweathermap.org/）注册一个免费的 API 密钥。获得 API 密钥后，将 `app.js` 文件中的 `'your_api_key_here'` 替换为你的实际 API 密钥。
+要测试天气应用，你需要从 OpenWeatherMap（<https://openweathermap.org/>）注册一个免费的 API 密钥。获得 API 密钥后，将 `app.js` 文件中的 `'your_api_key_here'` 替换为你的实际 API 密钥。
 
 现在，当你在浏览器中打开 HTML 文件时，应该会看到一个输入框，你可以在其中输入城市名称。点击“获取天气”按钮将获取并显示该城市的当前天气信息。
 
@@ -4554,6 +4391,7 @@ body {
     padding: 20px;
     background-color: #f4f4f4;
 }
+
 .container {
     max-width: 800px;
     margin: auto;
@@ -4562,6 +4400,7 @@ body {
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
+
 button {
     padding: 10px 15px;
     margin: 10px 5px;
@@ -4571,9 +4410,11 @@ button {
     border-radius: 3px;
     cursor: pointer;
 }
+
 button:hover {
     background-color: #0056b3;
 }
+
 .movie {
     background-color: #f9f9f9;
     border: 1px solid #ddd;
@@ -4581,6 +4422,7 @@ button:hover {
     margin-bottom: 10px;
     border-radius: 3px;
 }
+
 .movie h2 {
     margin-top: 0;
 }
@@ -4601,26 +4443,32 @@ const movieList = document.getElementById('movieList');
 
 async function fetchMovie(id) {
     const response = await fetch(`${BASE_URL}/movie/${id}?api_key=${API_KEY}`);
+
     if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`);
     }
+
     return await response.json();
 }
 
 function displayMovie(movie) {
     const movieElement = document.createElement('div');
+
     movieElement.classList.add('movie');
+
     movieElement.innerHTML = `
         <h2>${movie.title}</h2>
         <p>Release Date: ${movie.release_date}</p>
         <p>Overview: ${movie.overview}</p>
     `;
+
     movieList.appendChild(movieElement);
 }
 
 async function fetchMoviesSequentially() {
     movieList.innerHTML = '<p>Fetching movies sequentially...</p>';
     console.time('Sequential');
+
     for (const id of movieIds) {
         try {
             const movie = await fetchMovie(id);
@@ -4629,19 +4477,23 @@ async function fetchMoviesSequentially() {
             console.error(`Error fetching movie ${id}:`, error);
         }
     }
+
     console.timeEnd('Sequential');
 }
 
 async function fetchMoviesInParallel() {
     movieList.innerHTML = '<p>Fetching movies in parallel...</p>';
     console.time('Parallel');
+
     const moviePromises = movieIds.map(id => fetchMovie(id));
+
     try {
         const movies = await Promise.all(moviePromises);
         movies.forEach(displayMovie);
     } catch (error) {
         console.error('Error fetching movies:', error);
     }
+
     console.timeEnd('Parallel');
 }
 
@@ -4652,7 +4504,6 @@ fetchParallelButton.addEventListener('click', fetchMoviesInParallel);
 在这个实现中，我们创建了两个主要函数：`fetchMoviesSequentially` 和 `fetchMoviesInParallel`。这两个函数演示了获取多条数据的两种不同方法：
 
 1. **顺序获取**：在 `fetchMoviesSequentially` 中，我们使用 `for...of` 循环配合 `await` 逐个获取电影。当操作顺序重要，或者需要在继续下一个请求之前处理每个结果时，这种方法很有用。
-
 2. **并行获取**：在 `fetchMoviesInParallel` 中，我们使用 `Promise.all` 同时获取所有电影。当处理独立请求时，这种方法通常更快，因为它允许并发处理。
 
 我们还加入了 `console.time` 和 `console.timeEnd` 调用来测量这两种方法的性能差异。
@@ -4663,17 +4514,13 @@ fetchParallelButton.addEventListener('click', fetchMoviesInParallel);
 
 ### 测试电影数据库应用
 
-要测试电影数据库应用，你需要从 TMDB（https://www.themoviedb.org/documentation/api）注册一个免费的 API 密钥。获得 API 密钥后，将 `app.js` 文件中的 `'your_api_key_here'` 替换为你的实际 API 密钥。
+要测试电影数据库应用，你需要从 TMDB（<https://www.themoviedb.org/documentation/api>）注册一个免费的 API 密钥。获得 API 密钥后，将 `app.js` 文件中的 `'your_api_key_here'` 替换为你的实际 API 密钥。
 
 当你在浏览器中打开 HTML 文件时，应该会看到两个按钮：“Fetch Sequentially”（顺序获取）和“Fetch in Parallel”（并行获取）。点击这些按钮将使用相应的方法获取电影数据，并在页面上显示结果。
 
 这个项目演示了如何使用 `async/await` 和 `Promise.all` 处理多个异步操作，包括顺序和并行方式。它还展示了如何组织代码来处理 API 调用、处理结果并相应地更新 UI。
 
 ## 项目 3：为失败的 API 请求创建重试机制
-
-
-
-
 
 在这个最终项目中，我们将实现一个用于处理失败 API 请求的重试机制。这是实际应用中的常见需求，因为网络条件可能不可靠，或者服务可能经历临时中断。
 
@@ -4711,6 +4558,7 @@ body {
     padding: 20px;
     background-color: #f4f4f4;
 }
+
 .container {
     max-width: 600px;
     margin: auto;
@@ -4719,6 +4567,7 @@ body {
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
+
 button {
     padding: 10px 15px;
     margin: 10px 0;
@@ -4728,9 +4577,11 @@ button {
     border-radius: 3px;
     cursor: pointer;
 }
+
 button:hover {
     background-color: #0056b3;
 }
+
 #result {
     margin-top: 20px;
     padding: 10px;
@@ -4743,6 +4594,8 @@ button:hover {
 ### 实现重试机制
 
 现在，让我们创建 `app.js` 文件并实现重试机制：
+
+
 
 ```javascript
 const fetchDataButton = document.getElementById('fetchData');
@@ -4789,13 +4642,11 @@ fetchDataButton.addEventListener('click', handleFetchData);
 在这个实现中，我们创建了一个重试机制，在失败时多次尝试获取数据。以下是关键组件的分解：
 
 1. `simulateAPICall`：此函数模拟一个 API 调用，具有随机延迟和 50% 的失败概率。在实际场景中，这将被替换为实际的 API 调用。
-
 2. `fetchWithRetry`：这是重试机制的核心。它接受两个参数：
-   - `retries`：重试次数（默认为 3）
-   - `delay`：重试之间的初始延迟（毫秒，默认为 1000ms）
-
+   - `retries`：重试次数（默认为 3）。
+   - `delay`：重试之间的初始延迟（毫秒，默认为 1000ms）。
+   
    该函数尝试调用 `simulateAPICall`。如果成功，则返回结果。如果失败且还有剩余重试次数，则等待指定的延迟，然后递归调用自身，重试次数减一，延迟加倍（实现指数退避策略）。
-
 3. `handleFetchData`：当点击“Fetch Data”按钮时调用此函数。它调用 `fetchWithRetry` 并更新 UI 显示结果或错误消息。
 
 指数退避策略（每次重试延迟加倍）是重试机制中的常见方法。它有助于避免立即重试请求压垮服务器，并给服务器更多时间在尝试之间恢复。
@@ -4814,9 +4665,9 @@ fetchDataButton.addEventListener('click', handleFetchData);
 
 在本章中，我们探索了三个动手项目，展示了异步 JavaScript 概念的实际应用：
 
-1. 使用 Async/Await 进行 API 调用的天气应用
-2. 电影数据库应用的顺序和并行数据获取
-3. 为失败的 API 请求创建重试机制
+1. 使用 Async/Await 进行 API 调用的天气应用。
+2. 电影数据库应用的顺序和并行数据获取。
+3. 为失败的 API 请求创建重试机制。
 
 这些项目为你提供了使用 `async`/`await`、处理 API 调用、管理多个异步操作以及实现错误处理和重试逻辑的实践经验。这些都是构建健壮、真实世界应用的关键技能，能够处理异步操作和网络请求的复杂性。
 
@@ -4850,10 +4701,6 @@ async function fetchUserDataAndPosts(userId) {
   ));
 }
 ```
-
-
-
-
 
 `return { user, posts, comments };`
 
@@ -4915,9 +4762,7 @@ fetchData()
 清晰且一致的命名约定可以显著提高异步代码的可读性。以下是一些指导原则：
 
 1. 对于返回 Promise 或 `async` 的函数，考虑使用 `fetchX`、`getX` 或 `loadX` 等前缀来表示它们是异步操作。
-
 2. 对于保存 Promise 的变量名，可以使用 `Promise` 或 `Async` 等后缀来明确它们不是已解析的值。
-
 3. 使用 `.then()` 回调时，为参数命名以清晰表示它们代表什么。
 
 ```javascript
@@ -4954,6 +4799,7 @@ function fetchUserData(userId) {
         });
     });
 }
+
 // 使用 async/await
 async function fetchUserData(userId) {
   const userResponse = await fetch(`/api/users/${userId}`);
@@ -4987,6 +4833,7 @@ getData(function(a) {
     });
   });
 });
+
 // 更好的方法：使用 Promise
 getData()
   .then(a => getMoreData(a))
@@ -4995,6 +4842,7 @@ getData()
   .then(d => getMoreData(d))
   .then(e => console.log(e))
   .catch(error => console.error(error));
+
 // 更好的方法：使用 async/await
 async function fetchAllData() {
   try {
@@ -5019,6 +4867,7 @@ async function fetchAllData() {
 fetch('https://api.example.com/data')
   .then(response => response.json())
   .then(data => console.log(data));
+
 // 更好的方法：处理错误
 fetch('https://api.example.com/data')
   .then(response => {
@@ -5034,6 +4883,8 @@ fetch('https://api.example.com/data')
 ### 不必要的 async/await 使用
 
 虽然 `async`/`await` 功能强大，但并非总是必要。不必要地使用它可能导致效率较低的代码。
+
+
 
 ```javascript
 // 反模式：不必要的 async/await
@@ -5085,33 +4936,24 @@ async function fetchAllData() {
   const users = await fetchUsers();
   const posts = await fetchPosts();
   const comments = await fetchComments();
-```
-
-
-
-
-
-```
   return { users, posts, comments };
-
-} // Better approach: Parallel execution async  function  fetchAllData() {
-
-  const [users, posts, comments] =  await  Promise.all([
-
-    fetchUsers(),
-
-    fetchPosts(),
-
-    fetchComments()
-
-  ]);
-
-  return { users, posts, comments };
-
 }
 ```
 
-通过使用 `Promise.all()`，我们可以并发执行这些独立操作，从而可能节省大量时间。
+```javascript
+// 更好的方法：并行执行
+async function fetchAllData() {
+  const [users, posts, comments] = await Promise.all([
+    fetchUsers(),
+    fetchPosts(),
+    fetchComments()
+  ]);
+
+  return { users, posts, comments };
+}
+```
+
+通过使用`Promise.all()`，我们可以并发执行这些独立操作，从而可能节省大量时间。
 
 ## 测试与调试异步函数
 
@@ -5123,111 +4965,102 @@ async function fetchAllData() {
 
 以下是一个使用 Jest 的示例：
 
-```
-// Function to test async  function  fetchUser(id) {
-
-  const  response  =  await  fetch(`https://api.example.com/users/${id}`);
+```javascript
+// Function to test
+async function fetchUser(id) {
+  const response = await fetch(`https://api.example.com/users/${id}`);
 
   if (!response.ok) {
-
-    throw  new  Error('Failed to fetch user');
-
+    throw new Error('Failed to fetch user');
   }
 
-  return  response.json();
+  return response.json();
+}
 
-} // Test test('fetchUser returns user data', async () => {const  userData  = { id:  1, name:  'John Doe' };global.fetch  =  jest.fn(() => Promise.resolve({
+// Test
+test('fetchUser returns user data', async () => {
+  const userData = { id: 1, name: 'John Doe' };
 
-      ok:  true,
-
-      json: () =>  Promise.resolve(userData),
-
+  global.fetch = jest.fn(() =>
+    Promise.resolve({
+      ok: true,
+      json: () => Promise.resolve(userData)
     })
-
   );
 
-  const  user  =  await  fetchUser(1);
+  const user = await fetchUser(1);
 
   expect(user).toEqual(userData);
+});
 
-}); test('fetchUser throws error for failed request', async () => {global.fetch  =  jest.fn(() => Promise.resolve({
-
-      ok:  false,
-
+test('fetchUser throws error for failed request', async () => {
+  global.fetch = jest.fn(() =>
+    Promise.resolve({
+      ok: false
     })
-
   );
 
-  await  expect(fetchUser(1)).rejects.toThrow('Failed to fetch user');
-
+  await expect(fetchUser(1)).rejects.toThrow('Failed to fetch user');
 });
 ```
 
-在这些测试中，我们模拟了全局的 `fetch` 函数以控制其行为。测试函数中的 `async` 关键字以及调用 `fetchUser` 时的 `await` 关键字确保了测试会等待异步操作完成。
+在这些测试中，我们模拟了全局的`fetch`函数以控制其行为。测试函数中的`async`关键字以及调用`fetchUser`时的`await`关键字确保了测试会等待异步操作完成。
 
 ### 调试异步代码
 
 调试异步代码可能比较棘手，因为执行过程并非线性。以下是一些让调试更轻松的技巧：
 
-1.  策略性地使用 `console.log`：在异步代码的关键位置放置 `console.log` 语句，以跟踪执行流程。
+1. **策略性地使用`console.log`**：在异步代码的关键位置放置`console.log`语句，以跟踪执行流程。
 
-```
-async  function  fetchData() {
-
+```javascript
+async function fetchData() {
   console.log('Starting fetchData');
 
-  try {const  response  =  await  fetch('https://api.example.com/data');
+  try {
+    const response = await fetch('https://api.example.com/data');
 
     console.log('Fetch completed', response.status);
 
-    const  data  =  await  response.json();
+    const data = await response.json();
 
     console.log('Data parsed', data);
 
-    return  data;
-
+    return data;
   } catch (error) {
-
     console.error('Error in fetchData', error);
-
-    throw  error;
-
+    throw error;
   }
-
 }
 ```
 
-2.  利用浏览器开发者工具：现代浏览器开发者工具为调试异步代码提供了出色的支持。你可以设置断点、单步执行异步函数，并检查调用栈。
+2. **利用浏览器开发者工具**：现代浏览器开发者工具为调试异步代码提供了出色的支持。你可以设置断点、单步执行异步函数，并检查调用栈。
 
-3.  使用异步堆栈跟踪：Node.js 和现代浏览器支持异步堆栈跟踪，这有助于追踪异步代码中错误的来源。
+3. **使用异步堆栈跟踪**：Node.js 和现代浏览器支持异步堆栈跟踪，这有助于追踪异步代码中错误的来源。
 
-4.  错误处理：如前所述，正确的错误处理对于调试至关重要。始终在异步函数中捕获并记录错误。
+4. **错误处理**：如前所述，正确的错误处理对于调试至关重要。始终在异步函数中捕获并记录错误。
 
-5.  使用调试库：像 `debug` 这样的库有助于进行更复杂的调试，尤其是在 Node.js 环境中。
+5. **使用调试库**：像`debug`这样的库有助于进行更复杂的调试，尤其是在 Node.js 环境中。
 
-```
-const  debug  =  require('debug')('myapp:fetchData'); async  function  fetchData() {
+```javascript
+const debug = require('debug')('myapp:fetchData');
 
+async function fetchData() {
   debug('Starting fetchData');
 
-  try {const  response  =  await  fetch('https://api.example.com/data');
+  try {
+    const response = await fetch('https://api.example.com/data');
 
     debug('Fetch completed: %O', response);
 
-    const  data  =  await  response.json();
+    const data = await response.json();
 
     debug('Data parsed: %O', data);
 
-    return  data;
-
+    return data;
   } catch (error) {
-
     debug('Error in fetchData: %O', error);
-
-    throw  error;
-
+    throw error;
   }
-
 }
 ```
 
@@ -5235,19 +5068,17 @@ const  debug  =  require('debug')('myapp:fetchData'); async  function  fetchData
 
 处理异步代码时，了解操作的性能特征通常很重要。大多数浏览器的开发者工具都包含一个“性能”选项卡，允许你记录和分析 JavaScript 代码（包括异步操作）的执行情况。
 
-你还可以使用 `performance.now()` 方法来测量特定操作的持续时间：
+你还可以使用`performance.now()`方法来测量特定操作的持续时间：
 
-```
-async  function  measureOperation() {
+```javascript
+async function measureOperation() {
+  const start = performance.now();
 
-  const  start  =  performance.now();
+  await someAsyncOperation();
 
-  await  someAsyncOperation();
+  const end = performance.now();
 
-  const  end  =  performance.now();
-
-  console.log(`Operation took ${end  -  start} milliseconds`);
-
+  console.log(`Operation took ${end - start} milliseconds`);
 }
 ```
 
@@ -5255,32 +5086,37 @@ async  function  measureOperation() {
 
 当异步代码的结果依赖于不可控事件的顺序或时序时，就可能出现竞态条件。它们可能特别难以调试。以下是一个潜在竞态条件的示例：
 
-```
-let  data; async  function  fetchData() {
+```javascript
+let data;
 
-  const  response  =  await  fetch('https://api.example.com/data');
+async function fetchData() {
+  const response = await fetch('https://api.example.com/data');
+  data = await response.json();
+}
 
-  data  =  await  response.json();
+function processData() {
+  console.log(data); // 如果 fetchData 尚未完成，这里可能是 undefined
+}
 
-} function  processData() {
-
-  console.log(data); // 如果 fetchData 尚未完成，这里可能是 undefined } fetchData(); processData();
+fetchData();
+processData();
 ```
 
 为了避免此类问题，请确保在使用数据之前数据已经可用。你可以使用 Promise 或 async 函数来协调操作：
 
-```
-async  function  fetchAndProcessData() {
-
-  const  response  =  await  fetch('https://api.example.com/data');
-
-  const  data  =  await  response.json();
+```javascript
+async function fetchAndProcessData() {
+  const response = await fetch('https://api.example.com/data');
+  const data = await response.json();
 
   processData(data);
+}
 
-} function  processData(data) {
+function processData(data) {
+  console.log(data); // 现在我们可以确定数据已经可用
+}
 
-  console.log(data); // 现在我们可以确定数据已经可用 } fetchAndProcessData();
+fetchAndProcessData();
 ```
 
 通过遵循这些最佳实践并注意常见陷阱，你可以编写更健壮、可读性更高且更易于维护的异步 JavaScript 代码。请记住，关键在于保持代码模块化、一致地处理错误、使用合适的调试工具，并始终留意操作的异步特性。通过练习，你会发现处理异步 JavaScript 变得更加直观，甚至令人愉悦，从而为创建响应迅速且高效的 Web 应用开辟新的可能性。
@@ -5293,87 +5129,121 @@ async  function  fetchAndProcessData() {
 
 ## 为使用 RxJS 进行高级异步编程做准备
 
-虽然 `Promises` 和 `async/await` 已经彻底改变了 JavaScript 中的异步编程，但还有更强大的工具可用于处理复杂的异步操作。其中一个工具是 `RxJS`（JavaScript 的响应式扩展），这是一个使用可观察序列来组合异步和基于事件的程序的库。
+虽然`Promises`和`async/await`已经彻底改变了 JavaScript 中的异步编程，但还有更强大的工具可用于处理复杂的异步操作。其中一个工具是`RxJS`（JavaScript 的响应式扩展），这是一个使用可观察序列来组合异步和基于事件的程序的库。
 
 ### 理解 Observable
 
-`RxJS` 的核心是 `Observable` 的概念。`Observable` 是一种强大的抽象，可以表示随时间变化的数据或事件流。与 `Promises` 不同，`Promises` 解析为单个值，而 `Observables` 可以随时间发出多个值。
+`RxJS`的核心是`Observable`的概念。`Observable`是一种强大的抽象，可以表示随时间变化的数据或事件流。与`Promises`不同，`Promises`解析为单个值，而`Observables`可以随时间发出多个值。
 
-让我们看一个简单的例子来说明 `Observables` 的强大之处：
+让我们看一个简单的例子来说明`Observables`的强大之处：
 
-```
-import { Observable } from  'rxjs'; const  observable  =  new  Observable(subscriber  => {subscriber.next(1);
+```javascript
+import { Observable } from 'rxjs';
 
+const observable = new Observable(subscriber => {
+  subscriber.next(1);
   subscriber.next(2);
-
   subscriber.next(3);
 
-  setTimeout(() => {subscriber.next(4);
-
+  setTimeout(() => {
+    subscriber.next(4);
     subscriber.complete();
-
   }, 1000);
+});
 
-}); console.log('Just before subscribe'); observable.subscribe({
+console.log('Just before subscribe');
 
-  next(x) { console.log('Got value '  +  x); },
+observable.subscribe({
+  next(x) {
+    console.log('Got value ' + x);
+  },
+  error(err) {
+    console.error('Something wrong occurred: ' + err);
+  },
+  complete() {
+    console.log('Done');
+  }
+});
 
-  error(err) { console.error('Something wrong occurred: '  +  err); },
-
-  complete() { console.log('Done'); }
-
-}); console.log('Just after subscribe');
+console.log('Just after subscribe');
 ```
 
-在这个例子中，我们创建了一个 `Observable`，它发出四个值：1、2 和 3 立即发出，然后在一秒延迟后发出 4。`subscribe` 方法允许我们定义当新值发出（`next`）、发生错误（`error`）以及 `Observable` 完成（`complete`）时发生的情况。
+在这个例子中，我们创建了一个`Observable`，它发出四个值：1、2 和 3 立即发出，然后在一秒延迟后发出 4。`subscribe`方法允许我们定义当新值发出（`next`）、发生错误（`error`）以及`Observable`完成（`complete`）时发生的情况。
 
 ### 操作符：RxJS 的力量
 
+RxJS 最强大的特性之一是其丰富的操作符集。这些操作符允许你以多种方式转换、组合和操作 Observable。以下是一个使用`map`和`filter`操作符的示例：
 
+```javascript
+import { of } from 'rxjs';
+import { map, filter } from 'rxjs/operators';
 
+const numbers$ = of(1, 2, 3, 4, 5);
 
-RxJS 最强大的特性之一是其丰富的操作符集。这些操作符允许你以多种方式转换、组合和操作 Observable。以下是一个使用 `map` 和 `filter` 操作符的示例：
-
+numbers$
+  .pipe(
+    filter(n => n % 2 === 0),
+    map(n => n * n)
+  )
+  .subscribe(x => console.log(x));
 ```
-import { of } from  'rxjs'; import { map, filter } from  'rxjs/operators'; const  numbers$  =  of(1, 2, 3, 4, 5); numbers$.pipe(
-  filter(n  =>  n  %  2  ===  0),
-  map(n  =>  n  *  n)
-).subscribe(x  =>  console.log(x));
-```
 
-在这个示例中，我们创建了一个数字的 `Observable`，过滤掉奇数，对剩下的偶数进行平方运算，然后输出结果。输出将是 4 和 16。
+在这个示例中，我们创建了一个数字的`Observable`，过滤掉奇数，对剩下的偶数进行平方运算，然后输出结果。输出将是 4 和 16。
 
 ### 处理复杂的异步场景
 
 RxJS 在处理复杂异步场景时真正大放异彩。例如，考虑一个需要发起多个 API 调用并合并其结果的情况：
 
-```
-import { forkJoin, from } from  'rxjs'; import { mergeMap, map } from  'rxjs/operators'; function  getUser(id) {
-  return  from(fetch(`https://api.example.com/users/${id}`).then(res  =>  res.json()));
-} function  getUserPosts(userId) {
-  return  from(fetch(`https://api.example.com/posts?userId=${userId}`).then(res  =>  res.json()));
-} getUser(1).pipe(
-  mergeMap(user  =>  forkJoin({
-    user:  of(user),
-    posts:  getUserPosts(user.id)
-  })),
-  map(({ user, posts }) => ({...user,
-    posts }))
-).subscribe(
-  result  =>  console.log(result),
-  error  =>  console.error(error)
-);
+```javascript
+import { forkJoin, from, of } from 'rxjs';
+import { mergeMap, map } from 'rxjs/operators';
+
+function getUser(id) {
+  return from(
+    fetch(`https://api.example.com/users/${id}`)
+      .then(res => res.json())
+  );
+}
+
+function getUserPosts(userId) {
+  return from(
+    fetch(`https://api.example.com/posts?userId=${userId}`)
+      .then(res => res.json())
+  );
+}
+
+getUser(1)
+  .pipe(
+    mergeMap(user =>
+      forkJoin({
+        user: of(user),
+        posts: getUserPosts(user.id)
+      })
+    ),
+    map(({ user, posts }) => ({
+      ...user,
+      posts
+    }))
+  )
+  .subscribe(
+    result => console.log(result),
+    error => console.error(error)
+  );
 ```
 
 在这个示例中，我们首先获取一个用户，然后获取其帖子，最后合并结果。RxJS 使得组合这些异步操作并优雅地处理错误变得简单。
 
 ### 为什么要学习 RxJS？
 
-1.  **强大的抽象**：RxJS 提供了一种统一的方式来处理异步数据，无论是来自用户事件、HTTP 请求还是 WebSocket 连接。
-2.  **可组合性**：RxJS 操作符可以链式组合，轻松创建复杂的数据流。
-3.  **错误处理**：RxJS 提供了健壮的错误处理机制，使得在复杂异步场景中管理错误更加容易。
-4.  **取消操作**：与 `Promise` 不同，RxJS 的 `Observable` 可以轻松取消，这对于防止内存泄漏和不必要的计算至关重要。
-5.  **基于时间的操作**：RxJS 内置了对基于时间操作的支持，非常适合涉及防抖、节流或周期性更新的场景。
+1. **强大的抽象**：RxJS 提供了一种统一的方式来处理异步数据，无论是来自用户事件、HTTP 请求还是 WebSocket 连接。
+
+2. **可组合性**：RxJS 操作符可以链式组合，轻松创建复杂的数据流。
+
+3. **错误处理**：RxJS 提供了健壮的错误处理机制，使得在复杂异步场景中管理错误更加容易。
+
+4. **取消操作**：与`Promise`不同，RxJS 的`Observable`可以轻松取消，这对于防止内存泄漏和不必要的计算至关重要。
+
+5. **基于时间的操作**：RxJS 内置了对基于时间操作的支持，非常适合涉及防抖、节流或周期性更新的场景。
 
 随着你在异步 JavaScript 领域的深入探索，学习 RxJS 将为你打开新的可能性，并提供强大的工具来处理最复杂的异步场景。
 
@@ -5385,15 +5255,21 @@ import { forkJoin, from } from  'rxjs'; import { mergeMap, map } from  'rxjs/ope
 
 React 作为一个视图库，并没有内置的异步操作解决方案。然而，它提供了与异步 JavaScript 配合良好的钩子和模式。
 
-#### 用于副作用的 `useEffect`
+#### 用于副作用的`useEffect`
 
-`useEffect` 钩子通常用于处理副作用，包括异步操作：
+`useEffect`钩子通常用于处理副作用，包括异步操作：
+
+
 
 ```
-import  React, { useState, useEffect } from  'react'; function  UserProfile({ userId }) {const [user, setUser] =  useState(null);
-  useEffect(() => {async  function  fetchUser() {
-      try {const  response  =  await  fetch(`https://api.example.com/users/${userId}`);
-        const  data  =  await  response.json();
+import React, { useState, useEffect } from 'react';
+function UserProfile({ userId }) {
+  const [user, setUser] = useState(null);
+  useEffect(() => {
+    async function fetchUser() {
+      try {
+        const response = await fetch(`https://api.example.com/users/${userId}`);
+        const data = await response.json();
         setUser(data);
       } catch (error) {
         console.error('Failed to fetch user:', error);
@@ -5406,20 +5282,23 @@ import  React, { useState, useEffect } from  'react'; function  UserProfile({ us
 }
 ```
 
-在这个示例中，我们使用 `useEffect` 钩子在组件挂载或 `userId` 变化时获取用户数据。异步函数 `fetchUser` 定义在 effect 内部，以避免使 effect 本身成为异步（这是不允许的）。
+在这个示例中，我们使用`useEffect`钩子在组件挂载或`userId`变化时获取用户数据。异步函数`fetchUser`定义在 effect 内部，以避免使 effect 本身成为异步（这是不允许的）。
 
-#### 用于可复用异步逻辑的自定义钩子
+### 用于可复用异步逻辑的自定义钩子
 
 React 鼓励创建自定义钩子来封装可复用的逻辑，包括异步操作：
 
 ```
-import { useState, useEffect } from  'react'; function  useFetch(url) {
-  const [data, setData] =  useState(null);
-  const [loading, setLoading] =  useState(true);
-  const [error, setError] =  useState(null);
-  useEffect(() => {async  function  fetchData() {
-      try {const  response  =  await  fetch(url);
-        const  json  =  await  response.json();
+import { useState, useEffect } from 'react';
+function useFetch(url) {
+  const [data, setData] = useState(null);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
+  useEffect(() => {
+    async function fetchData() {
+      try {
+        const response = await fetch(url);
+        const json = await response.json();
         setData(json);
         setLoading(false);
       } catch (error) {
@@ -5430,21 +5309,23 @@ import { useState, useEffect } from  'react'; function  useFetch(url) {
     fetchData();
   }, [url]);
   return { data, loading, error };
-} // 使用 function  UserList() {
-  const { data:  users, loading, error } =  useFetch('https://api.example.com/users');
+}
+// 使用
+function UserList() {
+  const { data: users, loading, error } = useFetch('https://api.example.com/users');
   if (loading) return <div>Loading...</div>;
   if (error) return <div>Error: {error.message}</div>;
   return (
     <ul>
-      {users.map(user  => (
-        <li  key={user.id}>{user.name}</li>
+      {users.map(user => (
+        <li key={user.id}>{user.name}</li>
       ))}
     </ul>
   );
 }
 ```
 
-这个自定义的 `useFetch` 钩子封装了发起异步请求并管理其状态的逻辑。它可以在不同组件中复用，促进了代码复用和关注点分离。
+这个自定义的`useFetch`钩子封装了发起异步请求并管理其状态的逻辑。它可以在不同组件中复用，促进了代码复用和关注点分离。
 
 ### Vue 中的异步模式
 
@@ -5455,33 +5336,43 @@ Vue 与 React 类似，在其基于组件的架构中提供了处理异步操作
 Vue 的侦听器非常适合在数据变化时触发异步操作：
 
 ```
-export  default {data() {
-    return {userId:  1,
-      user:  null }
-  },watch: {userId: {handler: async  function(newId) {
-        try {const  response  =  await  fetch(`https://api.example.com/users/${newId}`);
-          this.user  =  await  response.json();
+export default {
+  data() {
+    return {
+      userId: 1,
+      user: null
+    }
+  },
+  watch: {
+    userId: {
+      handler: async function(newId) {
+        try {
+          const response = await fetch(`https://api.example.com/users/${newId}`);
+          this.user = await response.json();
         } catch (error) {
           console.error('Failed to fetch user:', error);
         }
       },
-      immediate:  true }
+      immediate: true
+    }
   }
 }
 ```
 
-在这个示例中，侦听器会在 `userId` 变化时获取用户数据，并且在组件创建时立即执行（由于 `immediate: true`）。
+在这个示例中，侦听器会在`userId`变化时获取用户数据，并且在组件创建时立即执行（由于`immediate: true`）。
 
 #### 异步组件
 
 Vue 支持异步组件，这对于代码分割和懒加载特别有用：
 
 ```
-const  AsyncComponent  = () => ({component:  import('./AsyncComponent.vue'),
-  loading:  LoadingComponent,
-  error:  ErrorComponent,
-  delay:  200,
-  timeout:  3000 })
+const AsyncComponent = () => ({
+  component: import('./AsyncComponent.vue'),
+  loading: LoadingComponent,
+  error: ErrorComponent,
+  delay: 200,
+  timeout: 3000
+})
 ```
 
 这会创建一个异步加载的组件。Vue 会在加载过程中显示一个加载组件，如果加载失败或超时则显示错误组件。
@@ -5491,24 +5382,36 @@ const  AsyncComponent  = () => ({component:  import('./AsyncComponent.vue'),
 Vue 3 的组合式 API 提供了一种灵活的方式来组织和复用异步逻辑：
 
 ```
-import { ref, onMounted } from  'vue'  export  function  useFetch(url) {
-  const  data  =  ref(null)
-  const  error  =  ref(null)
-  async  function  fetchData() {
-    try {const  response  =  await  fetch(url)
-      data.value  =  await  response.json()
+import { ref, onMounted } from 'vue'
+
+export function useFetch(url) {
+  const data = ref(null)
+  const error = ref(null)
+
+  async function fetchData() {
+    try {
+      const response = await fetch(url)
+      data.value = await response.json()
     } catch (err) {
-      error.value  =  err }
-  }onMounted(fetchData)
-  return { data, error, refresh:  fetchData }
-} // 在组件中使用 export  default {setup() {
-    const { data, error, refresh } =  useFetch('https://api.example.com/users')
+      error.value = err
+    }
+  }
+
+  onMounted(fetchData)
+
+  return { data, error, refresh: fetchData }
+}
+
+// 在组件中使用
+export default {
+  setup() {
+    const { data, error, refresh } = useFetch('https://api.example.com/users')
     return { data, error, refresh }
   }
 }
 ```
 
-这个 `useFetch` 组合式函数封装了发起异步请求的逻辑，并且可以轻松地在不同组件中复用。
+这个`useFetch`组合式函数封装了发起异步请求的逻辑，并且可以轻松地在不同组件中复用。
 
 ## 深化 JavaScript 性能优化知识
 
@@ -5516,28 +5419,30 @@ import { ref, onMounted } from  'vue'  export  function  useFetch(url) {
 
 ### 微任务与宏任务
 
-理解微任务（如 `Promise` 回调）和宏任务（如 `setTimeout` 回调）之间的区别，对于预测和优化异步代码的执行顺序至关重要。
-
-
-
-
-`console.log('Script start'); setTimeout(() => console.log('setTimeout'), 0); Promise.resolve().then(() => console.log('Promise')); console.log('Script end'); // 输出:`
+理解微任务（如`Promise`回调）和宏任务（如`setTimeout`回调）之间的区别，对于预测和优化异步代码的执行顺序至关重要。
 
 ```
+console.log('Script start');
+setTimeout(() => console.log('setTimeout'), 0);
+Promise.resolve().then(() => console.log('Promise'));
+console.log('Script end');
+// 输出:
 // Script start
 // Script end
 // Promise
 // setTimeout
 ```
 
-在这个例子中，尽管 `setTimeout` 在 `Promise` 之前被调用，但 `Promise` 的回调会先执行，因为它是一个微任务。
+在这个例子中，尽管`setTimeout`在`Promise`之前被调用，但`Promise`的回调会先执行，因为它是一个微任务。
 
 ## 避免内存泄漏
 
 在处理异步代码时，尤其是在长时间运行的应用程序中，注意潜在的内存泄漏非常重要。常见的泄漏来源包括：
 
 1. 被遗忘的定时器和间隔：当不再需要定时器和间隔时，务必清除它们。
-2. 未解决的 Promise：一个从未完成（解决或拒绝）的 `Promise` 可能会阻止其关联资源的垃圾回收。
+
+2. 未解决的 Promise：一个从未完成（解决或拒绝）的`Promise`可能会阻止其关联资源的垃圾回收。
+
 3. 持有引用的闭包：注意异步函数中的闭包，它们可能不必要地长时间持有大对象。
 
 ## 优化网络请求
@@ -5558,6 +5463,7 @@ const debouncedSearch = debounce(searchAPI, 300);
 ```
 
 2. 缓存：实现缓存策略以避免不必要的网络请求。
+
 3. 请求批处理：将多个请求分组以减少网络开销。
 
 ## 用于 CPU 密集型任务的 Web Workers
@@ -5589,7 +5495,7 @@ Web Workers 允许你在后台线程中运行脚本，即使在密集计算期�
 
 当我们结束本章和本书时，请记住掌握异步 JavaScript 的旅程仍在继续。Web 开发的格局在不断演变，新的工具、框架和最佳实践层出不穷。
 
-通过建立本书中探讨的 Promise、`async`/`await` 和回调的基础知识，并扩展到 RxJS、框架特定模式和性能优化等高级主题，你将能够很好地应对 JavaScript 项目中的复杂异步挑战。
+通过建立本书中探讨的 Promise、`async`/`await`和回调的基础知识，并扩展到 RxJS、框架特定模式和性能优化等高级主题，你将能够很好地应对 JavaScript 项目中的复杂异步挑战。
 
 记住保持好奇心，持续练习，并毫不犹豫地深入研究文档和开源项目。你在理解和处理异步操作方面培养的技能将在 JavaScript 开发的各个领域（从前端界面到后端服务）为你提供帮助。
 
@@ -5601,7 +5507,7 @@ Web Workers 允许你在后台线程中运行脚本，即使在密集计算期�
 
 ## 附录 A：Promise 和 Async/Await 语法快速参考
 
-在本附录中，我们将提供 JavaScript 中 Promise 和 `async`/`await` 语法的全面快速参考指南。这将作为开发人员的便捷资源，帮助他们快速回忆 JavaScript 异步编程的核心概念和语法。
+在本附录中，我们将提供 JavaScript 中 Promise 和`async`/`await`语法的全面快速参考指南。这将作为开发人员的便捷资源，帮助他们快速回忆 JavaScript 异步编程的核心概念和语法。
 
 ### Promise 语法
 
@@ -5661,7 +5567,7 @@ Promise.race([promise1, promise2, promise3])
 
 ### Async/Await 语法
 
-`async`/`await` 是建立在 Promise 之上的语法糖，为异步操作提供了更接近同步代码的结构。以下是 `async`/`await` 语法的快速参考：
+`async`/`await`是建立在 Promise 之上的语法糖，为异步操作提供了更接近同步代码的结构。以下是`async`/`await`语法的快速参考：
 
 ```
 // 异步函数声明
@@ -5711,11 +5617,11 @@ async function errorHandling() {
 }
 ```
 
-本快速参考指南提供了最常见的 Promise 和 `async`/`await` 语法模式的简明概述。开发人员可以将其用作速查表，快速回忆 JavaScript 中这些异步编程结构的使用方式。
+本快速参考指南提供了最常见的 Promise 和`async`/`await`语法模式的简明概述。开发人员可以将其用作速查表，快速回忆 JavaScript 中这些异步编程结构的使用方式。
 
 ## 附录 B：常见异步 JavaScript 场景及其解决方案
 
-在本附录中，我们将探讨异步 JavaScript 编程中遇到的几种常见场景，并提供使用 Promise 和 `async`/`await` 的解决方案。这些示例将作为开发人员在项目中遇到类似挑战时的实用参考。
+在本附录中，我们将探讨异步 JavaScript 编程中遇到的几种常见场景，并提供使用 Promise 和`async`/`await`的解决方案。这些示例将作为开发人员在项目中遇到类似挑战时的实用参考。
 
 ### 场景 1：顺序 API 调用
 
@@ -5743,7 +5649,9 @@ function sequentialApiCalls() {
 
 **使用 Async/Await 的解决方案：**
 
-```
+
+
+```javascript
 async function sequentialApiCalls() {
   try {
     const userData = await fetchUserData(userId);
@@ -5762,26 +5670,25 @@ async function sequentialApiCalls() {
 
 **使用 Promise 的解决方案：**
 
-```
+```javascript
 function parallelApiCalls() {
   const userPromise = fetchUserData(userId);
   const postsPromise = fetchAllPosts();
   const commentsPromise = fetchAllComments();
+
+  return Promise.all([userPromise, postsPromise, commentsPromise])
+    .then(([userData, posts, comments]) => {
+      console.log('All data fetched:', { userData, posts, comments });
+    })
+    .catch(error => {
+      console.error('Error in parallel calls:', error);
+    });
+}
 ```
 
+**使用 Async/Await 的解决方案：**
 
-
-
-
-`return Promise.all([userPromise, postsPromise, commentsPromise])`
-`.then(([userData, posts, comments]) => {console.log('All data fetched:', { userData, posts, comments });`
-`}).catch(error => {console.error('Error in parallel calls:', error);`
-`});`
-`}`
-
-使用 Async/Await 的解决方案：
-
-```
+```javascript
 async function parallelApiCalls() {
   try {
     const [userData, posts, comments] = await Promise.all([
@@ -5802,7 +5709,7 @@ async function parallelApiCalls() {
 
 **使用 Promise 的解决方案：**
 
-```
+```javascript
 function retryApiCall(maxAttempts = 3, delay = 1000) {
   return new Promise((resolve, reject) => {
     let attempts = 0;
@@ -5826,7 +5733,7 @@ function retryApiCall(maxAttempts = 3, delay = 1000) {
 
 **使用 Async/Await 的解决方案：**
 
-```
+```javascript
 async function retryApiCall(maxAttempts = 3, delay = 1000) {
   let attempts = 0;
   while (attempts < maxAttempts) {
@@ -5850,7 +5757,7 @@ async function retryApiCall(maxAttempts = 3, delay = 1000) {
 
 **使用 Promise 和 AbortController 的解决方案：**
 
-```
+```javascript
 function cancellableApiCall(url) {
   const controller = new AbortController();
   const signal = controller.signal;
@@ -5868,8 +5775,10 @@ function cancellableApiCall(url) {
     cancel: () => controller.abort()
   };
 }
+
 // 使用示例
 const { promise, cancel } = cancellableApiCall('https://api.example.com/data');
+
 // 取消操作
 cancel();
 ```
@@ -5880,7 +5789,7 @@ cancel();
 
 **使用 Promise 的解决方案：**
 
-```
+```javascript
 function debounce(func, delay) {
   let timeoutId;
   return function (...args) {
@@ -5896,6 +5805,7 @@ function debounce(func, delay) {
     });
   };
 }
+
 // 使用示例
 const debouncedSearch = debounce(searchApi, 300);
 inputElement.addEventListener('input', async (e) => {
@@ -5908,19 +5818,19 @@ inputElement.addEventListener('input', async (e) => {
 });
 ```
 
-这些场景及其解决方案展示了如何使用 Promise 和 Async/Await 处理 JavaScript 中常见的异步编程挑战。通过学习和改编这些示例，开发者可以提高编写高效且健壮的异步代码的能力。
+这些场景及其解决方案展示了如何使用`Promise`和`Async/Await`处理 JavaScript 中常见的异步编程挑战。通过学习和改编这些示例，开发者可以提高编写高效且健壮的异步代码的能力。
 
 ## 附录 C：异步编程的练习与解答
 
-在本附录中，我们将提供一组练习，旨在巩固你对 JavaScript 异步编程概念的理解。每个练习都包含问题描述，以及使用 Promise 和 Async/Await 的解决方案。这些练习将帮助你在实际场景中应用本书所学的概念。
+在本附录中，我们将提供一组练习，旨在巩固你对 JavaScript 异步编程概念的理解。每个练习都包含问题描述，以及使用`Promise`和`Async/Await`的解决方案。这些练习将帮助你在实际场景中应用本书所学的概念。
 
 ### 练习 1：延迟问候
 
-**问题：** 创建一个函数，接收一个名字作为输入，并返回一个 Promise。该 Promise 应在随机延迟（1 到 5 秒之间）后解析，并返回一条问候消息。
+**问题：** 创建一个函数，接收一个名字作为输入，并返回一个`Promise`。该`Promise`应在随机延迟（1 到 5 秒之间）后解析，并返回一条问候消息。
 
 **Promise 解决方案：**
 
-```
+```javascript
 function delayedGreeting(name) {
   return new Promise((resolve) => {
     const delay = Math.floor(Math.random() * 4000) + 1000; // 随机延迟 1-5 秒
@@ -5929,6 +5839,7 @@ function delayedGreeting(name) {
     }, delay);
   });
 }
+
 // 使用示例
 delayedGreeting("Alice")
   .then(message => console.log(message))
@@ -5937,12 +5848,13 @@ delayedGreeting("Alice")
 
 **Async/Await 解决方案：**
 
-```
+```javascript
 async function delayedGreeting(name) {
   const delay = Math.floor(Math.random() * 4000) + 1000;
   await new Promise(resolve => setTimeout(resolve, delay));
   return `Hello, ${name}! Sorry for the ${delay/1000} second delay.`;
 }
+
 // 使用示例
 async function greet() {
   try {
@@ -5952,6 +5864,7 @@ async function greet() {
     console.error(error);
   }
 }
+
 greet();
 ```
 
@@ -5961,7 +5874,7 @@ greet();
 
 **Promise 解决方案：**
 
-```
+```javascript
 function fetchUserDataAndPosts(userId) {
   const userDataPromise = fetch(`https://api.example.com/users/${userId}`)
     .then(response => response.json());
@@ -5975,6 +5888,7 @@ function fetchUserDataAndPosts(userId) {
       };
     });
 }
+
 // 使用示例
 fetchUserDataAndPosts(123)
   .then(result => console.log(result))
@@ -5983,7 +5897,7 @@ fetchUserDataAndPosts(123)
 
 **Async/Await 解决方案：**
 
-```
+```javascript
 async function fetchUserDataAndPosts(userId) {
   try {
     const [userData, userPosts] = await Promise.all([
@@ -5998,6 +5912,7 @@ async function fetchUserDataAndPosts(userId) {
     throw new Error('Error fetching data: ' + error.message);
   }
 }
+
 // 使用示例
 async function fetchAndLogUserData() {
   try {
@@ -6007,6 +5922,7 @@ async function fetchAndLogUserData() {
     console.error(error);
   }
 }
+
 fetchAndLogUserData();
 ```
 
@@ -6016,7 +5932,7 @@ fetchAndLogUserData();
 
 **Promise 解决方案：**
 
-```
+```javascript
 function sequentialApiCalls(initialId) {
   return fetch(`https://api.example.com/step1/${initialId}`)
     .then(response => {
@@ -6050,254 +5966,246 @@ function sequentialApiCalls(initialId) {
 
 
 
-
-
-```
+```javascript
 } // 用法 sequentialApiCalls(1)
 
-  .then(result  =>  console.log('成功:', result))
+  .then(result => console.log('成功:', result))
 
-  .catch(error  =>  console.error('失败:', error));
-
-Async/Await 解决方案：
-
-async  function  sequentialApiCalls(initialId) {
-
-  try {const  response1  =  await  fetch(`https://api.example.com/step1/${initialId}`);
-
-    if (!response1.ok) throw  new  Error('步骤 1 出错');
-
-    const  data1  =  await  response1.json();
-
-    const  response2  =  await  fetch(`https://api.example.com/step2/${data1.nextId}`);
-
-    if (!response2.ok) throw  new  Error('步骤 2 出错');
-
-    const  data2  =  await  response2.json();
-
-    const  response3  =  await  fetch(`https://api.example.com/step3/${data2.finalId}`);
-
-    if (!response3.ok) throw  new  Error('步骤 3 出错');
-
-    const  finalData  =  await  response3.json();
-
-    console.log('最终结果:', finalData);
-
-    return  finalData;
-
-  } catch (error) {
-
-    console.error('顺序调用出错:', error.message);
-
-    throw  error;
-
-  }
-
-} // 用法 async  function  runSequentialCalls() {
-
-  try {const  result  =  await  sequentialApiCalls(1);
-
-    console.log('成功:', result);
-
-  } catch (error) {
-
-    console.error('失败:', error);
-
-  }
-
-} runSequentialCalls();
+  .catch(error => console.error('失败:', error));
 ```
+
+## Async/Await 解决方案
+
+```javascript
+async function sequentialApiCalls(initialId) {
+  try {
+    const response1 = await fetch(`https://api.example.com/step1/${initialId}`);
+
+    if (!response1.ok) throw new Error('步骤 1 出错');
+
+    const data1 = await response1.json();
+
+    const response2 = await fetch(`https://api.example.com/step2/${data1.nextId}`);
+
+    if (!response2.ok) throw new Error('步骤 2 出错');
+
+    const data2 = await response2.json();
+
+    const response3 = await fetch(`https://api.example.com/step3/${data2.finalId}`);
+
+    if (!response3.ok) throw new Error('步骤 3 出错');
+
+    const finalData = await response3.json();
+
+    console.log('最终结果:', finalData);
+
+    return finalData;
+  } catch (error) {
+    console.error('顺序调用出错:', error.message);
+    throw error;
+  }
+}
+
+// 用法
+async function runSequentialCalls() {
+  try {
+    const result = await sequentialApiCalls(1);
+
+    console.log('成功:', result);
+  } catch (error) {
+    console.error('失败:', error);
+  }
+}
+
+runSequentialCalls();
+```
+
 ### 练习 4：实现超时机制
 
 问题：创建一个函数，包装一个异步操作并添加超时机制。如果操作在指定时间内未完成，则应拒绝并返回超时错误。
 
-Promise 解决方案：
+#### Promise 解决方案
 
+```javascript
+function withTimeout(asyncOperation, timeoutMs) {
+  return new Promise((resolve, reject) => {
+    const timeoutId = setTimeout(() => {
+      reject(new Error('操作超时'));
+    }, timeoutMs);
+
+    asyncOperation()
+      .then(result => {
+        clearTimeout(timeoutId);
+        resolve(result);
+      })
+      .catch(error => {
+        clearTimeout(timeoutId);
+        reject(error);
+      });
+  });
+}
+
+// 用法
+function slowOperation() {
+  return new Promise(resolve =>
+    setTimeout(() => resolve('操作完成'), 3000)
+  );
+}
+
+withTimeout(slowOperation, 5000)
+  .then(result => console.log(result))
+  .catch(error => console.error(error.message));
+
+withTimeout(slowOperation, 2000)
+  .then(result => console.log(result))
+  .catch(error => console.error(error.message));
 ```
-function  withTimeout(asyncOperation, timeoutMs) {
 
-  return  new  Promise((resolve, reject) => {const  timeoutId  =  setTimeout(() => {reject(new  Error('操作超时'));
+#### Async/Await 解决方案
 
-    }, timeoutMs);
+```javascript
+async function withTimeout(asyncOperation, timeoutMs) {
+  const timeoutPromise = new Promise((_, reject) =>
+    setTimeout(() => reject(new Error('操作超时')), timeoutMs)
+  );
 
-    asyncOperation()
+  try {
+    return await Promise.race([asyncOperation(), timeoutPromise]);
+  } catch (error) {
+    throw error;
+  }
+}
 
-      .then(result  => {clearTimeout(timeoutId);
+// 用法
+async function slowOperation() {
+  await new Promise(resolve => setTimeout(resolve, 3000));
 
-        resolve(result);
+  return '操作完成';
+}
 
-      })
+async function testTimeout() {
+  try {
+    const result1 = await withTimeout(() => slowOperation(), 5000);
 
-      .catch(error  => {clearTimeout(timeoutId);
+    console.log(result1);
 
-        reject(error);
+    const result2 = await withTimeout(() => slowOperation(), 2000);
 
-      });
+    console.log(result2);
+  } catch (error) {
+    console.error(error.message);
+  }
+}
 
-  });
-
-} // 用法 function  slowOperation() {
-
-  return  new  Promise(resolve  =>  setTimeout(() =>  resolve('操作完成'), 3000));
-
-} withTimeout(slowOperation, 5000)
-
-  .then(result  =>  console.log(result))
-
-  .catch(error  =>  console.error(error.message)); withTimeout(slowOperation, 2000)
-
-  .then(result  =>  console.log(result))
-
-  .catch(error  =>  console.error(error.message));
+testTimeout();
 ```
-Async/Await 解决方案：
 
-```
-async  function  withTimeout(asyncOperation, timeoutMs) {
-
-  const  timeoutPromise  =  new  Promise((_, reject) => setTimeout(() =>  reject(new  Error('操作超时')), timeoutMs)
-
-  );
-
-  try {return  await  Promise.race([asyncOperation(), timeoutPromise]);
-
-  } catch (error) {
-
-    throw  error;
-
-  }
-
-} // 用法 async  function  slowOperation() {
-
-  await  new  Promise(resolve  =>  setTimeout(resolve, 3000));
-
-  return  '操作完成';
-
-} async  function  testTimeout() {
-
-  try {const  result1  =  await  withTimeout(() =>  slowOperation(), 5000);
-
-    console.log(result1);
-
-    const  result2  =  await  withTimeout(() =>  slowOperation(), 2000);
-
-    console.log(result2);
-
-  } catch (error) {
-
-    console.error(error.message);
-
-  }
-
-} testTimeout();
-```
 ### 练习 5：实现带指数退避的重试机制
 
 问题：创建一个函数，为不可靠的 API 调用实现带指数退避的重试机制。该函数应在指定次数内重试操作，并在每次尝试之间增加延迟。
 
-Promise 解决方案：
+#### Promise 解决方案
 
+```javascript
+function retryWithBackoff(
+  operation,
+  maxRetries = 3,
+  baseDelay = 1000
+) {
+  return new Promise((resolve, reject) => {
+    let attempts = 0;
+
+    function attempt() {
+      operation()
+        .then(resolve)
+        .catch(error => {
+          attempts++;
+
+          if (attempts >= maxRetries) {
+            reject(new Error(`操作在 ${maxRetries} 次尝试后失败`));
+          } else {
+            const delay = baseDelay * Math.pow(2, attempts - 1);
+
+            console.log(
+              `第 ${attempts} 次尝试失败。将在 ${delay}ms 后重试...`
+            );
+
+            setTimeout(attempt, delay);
+          }
+        });
+    }
+
+    attempt();
+  });
+}
+
+// 用法
+function unreliableApiCall() {
+  return new Promise((resolve, reject) => {
+    if (Math.random() < 0.7) {
+      reject(new Error('API 调用失败'));
+    } else {
+      resolve('API 调用成功');
+    }
+  });
+}
+
+retryWithBackoff(unreliableApiCall, 5, 1000)
+  .then(result => console.log(result))
+  .catch(error => console.error(error.message));
 ```
-function  retryWithBackoff(operation, maxRetries  =  3, baseDelay  =  1000) {
 
-  return  new  Promise((resolve, reject) => {let  attempts  =  0;
+#### Async/Await 解决方案
 
-    function  attempt() {
+```javascript
+async function retryWithBackoff(
+  operation,
+  maxRetries = 3,
+  baseDelay = 1000
+) {
+  for (let attempts = 1; attempts <= maxRetries; attempts++) {
+    try {
+      return await operation();
+    } catch (error) {
+      if (attempts === maxRetries) {
+        throw new Error(`操作在 ${maxRetries} 次尝试后失败`);
+      }
 
-      operation()
+      const delay = baseDelay * Math.pow(2, attempts - 1);
 
-        .then(resolve)
+      console.log(
+        `第 ${attempts} 次尝试失败。将在 ${delay}ms 后重试...`
+      );
 
-        .catch(error  => {attempts++;
+      await new Promise(resolve => setTimeout(resolve, delay));
+    }
+  }
+}
 
-          if (attempts  >=  maxRetries) {
+// 用法
+async function unreliableApiCall() {
+  if (Math.random() < 0.7) {
+    throw new Error('API 调用失败');
+  }
 
-            reject(new  Error(`操作在 ${maxRetries} 次尝试后失败`));
+  return 'API 调用成功';
+}
 
-          } else {const  delay  =  baseDelay  *  Math.pow(2, attempts  -  1);
+async function testRetry() {
+  try {
+    const result = await retryWithBackoff(
+      unreliableApiCall,
+      5,
+      1000
+    );
 
-            console.log(`第 ${attempts} 次尝试失败。将在 ${delay}ms 后重试...`);
+    console.log(result);
+  } catch (error) {
+    console.error(error.message);
+  }
+}
 
-            setTimeout(attempt, delay);
-
-          }
-
-        });
-
-    }
-
-    attempt();
-
-  });
-
-} // 用法 function  unreliableApiCall() {
-
-  return  new  Promise((resolve, reject) => {if (Math.random() <  0.7) {
-
-      reject(new  Error('API 调用失败'));
-
-    } else {resolve('API 调用成功');
-
-    }
-
-  });
-
-} retryWithBackoff(unreliableApiCall, 5, 1000)
-
-  .then(result  =>  console.log(result))
-
-  .catch(error  =>  console.error(error.message));
+testRetry();
 ```
-Async/Await 解决方案：
 
-```
-async  function  retryWithBackoff(operation, maxRetries  =  3, baseDelay  =  1000) {
-
-  for (let  attempts  =  1; attempts  <=  maxRetries; attempts++) {
-
-    try {return  await  operation();
-
-    } catch (error) {
-
-      if (attempts  ===  maxRetries) {
-
-        throw  new  Error(`操作在 ${maxRetries} 次尝试后失败`);
-
-      }
-
-      const  delay  =  baseDelay  *  Math.pow(2, attempts  -  1);
-
-      console.log(`第 ${attempts} 次尝试失败。将在 ${delay}ms 后重试...`);
-
-      await  new  Promise(resolve  =>  setTimeout(resolve, delay));
-
-    }
-
-  }
-
-} // 用法 async  function  unreliableApiCall() {
-
-  if (Math.random() <  0.7) {
-
-    throw  new  Error('API 调用失败');
-
-  }
-
-  return  'API 调用成功';
-
-} async  function  testRetry() {
-
-  try {const  result  =  await  retryWithBackoff(unreliableApiCall, 5, 1000);
-
-    console.log(result);
-
-  } catch (error) {
-
-    console.error(error.message);
-
-  }
-
-} testRetry();
-```
 这些练习为在 JavaScript 中应用异步编程概念提供了实际场景。通过解决这些问题并研究解决方案，开发者可以提升处理复杂异步操作、错误管理以及实现超时和重试等常见模式的能力。基于 Promise 和 Async/Await 解决方案的并排对比也有助于理解每种方法的优势和使用场景。
-

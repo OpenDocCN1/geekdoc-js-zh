@@ -1,20 +1,20 @@
-# 初学者指南 JQUERY：JavaScript：jQuery 教程：jQuery 的最佳特性：JavaScript, PHP, CSS, HTML
 
-
-
+# 初学者指南：jQuery 教程与最佳特性
 
 ## 引言
 
-在异步 JavaScript 和 XML (`AJAX`) 宇宙出现之前，在网页上处理创建的方式有些不寻常。信息字段接收数据，数据通常通过点击提交按钮进行收集，随后，你的页面会通过真实的 `POST` 或 `GET` 参数进行重新加载。对于那些尚未加入真实 AJAX 临时潮流的人来说——这确实可能是你以后会用上的一种方法。对于某些能力来说，这在目前可能是一个非凡的决定。无论如何，越来越多的人正在接受一种非并发的方式来处理他们的开发实践。得益于 JQuery 这个奇迹，这从未像现在这样来得简单。
+在异步 JavaScript 和 XML (`AJAX`) 出现之前，网页数据处理方式较为传统：信息字段接收数据，通过点击提交按钮收集，随后页面带 `POST` 或 `GET` 参数重新加载。对于未采用 AJAX 的开发者，这在某些场景下仍是可行方案。但越来越多的人转向异步开发模式，得益于 jQuery，这变得前所未有的简单。
 
-AJAX 允许 Web 开发者处理输入信息，而无需重新加载页面、重新加载页面的特定部分，等等。要开始使用，你需要下载 `JQuery` 库并在你网站的 `<head>` 部分中引用它。这非常简单。另一种方法是直接引用 Google 提供的免费 `JQuery` 库——它们始终保持着最新的稳定版本。定期查询更新并更新你的内容引用。
+AJAX 允许开发者在无需重新加载页面或页面特定部分的情况下处理输入信息。起步需下载 `jQuery` 库并在网站 `<head>` 部分引用，或直接引用 Google 托管的免费 `jQuery` 库（始终保持最新稳定版）。建议定期检查更新并更新引用。
 
-当你准备好这些代码后，你就准备好开始使用 `JQuery` 库了。我们来创建一个包含名称和电话号码的超基础地址录吧。你在这里直接需要两个 `div`，一个包含结构，另一个包含我们目前保存的所有名称和电话号码。
+准备就绪后，我们创建一个包含姓名和电话号码的基础通讯录。页面需两个 `div`：一个包含表单结构，另一个显示已保存的数据。
 
-### 标题：
+### 表单结构
+
+姓名：<br>
 电话：
 
-好了，既然结构在位置内，这是一个引入一些 JQuery 的绝佳机会。该业务的主要收获是理解真实的 `$(document).ready()` 函数。设置在真实函数内的所有代码将在 DOM 构建完成后、但在页面内容通常被加载之前立即被堆栈（执行）。请查看下方的注释代码并尝试理解它。
+结构就位后，引入 jQuery 核心概念：`$(document).ready()` 函数。该函数内的代码将在 DOM 构建完成后、页面内容完全加载前立即执行。请参考下方注释代码：
 
 ```javascript
 $(document).ready(function() {
@@ -22,7 +22,7 @@ $(document).ready(function() {
     $('#addressData').load('phoneNumbers.php');
 
     $('#submitMe').click(function() {
-        // 当客户端点击提交按钮时执行的函数
+        // 当用户点击提交按钮时执行的函数
         var enteredName = $('#name').val();
         var enteredPhone = $('#phone').val();
 
@@ -30,297 +30,307 @@ $(document).ready(function() {
             // 在请求成功执行后执行的函数
             alert('加载完成。');
         });
+    });
+});
 ```
 
-在你的 `phone numbers.PHP` 文件中，你应该检查 `GET` 参数是否已设置。如果它们已设置并提交，则在你的数据库中执行 `INSERT`，然后从数据库中 `SELECT` 你的电脑信息并显示。如果没有设置，只需在数据库中 `SELECT` 你的信息并显示。
+在 `phoneNumbers.php` 中，需检查 `GET` 参数是否已设置。若已设置并提交，执行数据库 `INSERT` 操作，再 `SELECT` 信息并显示；若未设置，仅 `SELECT` 显示。
 
-通俗逻辑如下：
-- 当文档可以编写时，从 `phoneNumbers.PHP` 加载数据库中保存的号码并将其输出放在 `address data` `div` 中。
-- 当个人点击提交按钮时，将字段信息发送到 `phone numbers.PHP`。
-- PHP 内容将执行数据库插入并在添加后返回新鲜出炉的信息。
-- 这些细节被堆叠到 `address data` `div` 中。
-- 请求完成后，显示一个警告框告诉顾客请求已成功。
+核心逻辑如下：
 
-你现在拥有的是在提交排序时简单重新加载单个 `div` 的基本案例，而不是期望重新加载整个页面。你会发现这部分特定文档的其他方法，但为了学习，我是手动编写的。
+- 文档就绪时，从 `phoneNumbers.php` 加载数据库号码并输出至 `addressData` `div`。
+- 用户点击提交按钮时，将表单信息发送至 `phoneNumbers.php`。
+- PHP 脚本执行数据库插入并返回最新信息。
+- 信息加载至 `addressData` `div`。
+- 请求完成后，弹窗提示成功。
 
-## 创建你的第一个 JQuery 插件
+这实现了表单提交时仅重新加载单个 `div` 而非整个页面。文档可能有其他实现方式，此处为教学手动编写。
 
-### 为什么要创建一个 jQuery 模块
+## 创建你的第一个 jQuery 插件
 
-偶尔，在你的代码中提供一些通用的功能是有帮助的。你可能需要一个单一函数，它可以访问一个 `jQuery` 选择器并在该选择器上执行特定操作。或者相反，你可能在其中一个任务中编写了一个工具函数，现在你需要能够将其有效地移动到不同的任务中。无论如何，编写一个模块都是你的最佳选择。`jquery` 是不可错的。它是跨平台的、易于学习的，并让你非常容易使用界面。它还带有许多实用的模块，可以完成你想要的任何事情。
+### 为什么要创建 jQuery 插件
 
-然而，偶尔仅仅有很多是不够的，想象一种你找不到适合你要求的完美模块的情况。或者，可能存在一个模块，但它太大了，而你只需要它的部分。方案可能是亲力而编写自己的东西。毕竟，这听起来比实际的要复杂。这个简短的练习将介绍编写基础模块的方法，包括一些选项，甚至执行一个回调。
+有时需在代码中复用通用功能：可能需要一个函数访问 `jQuery` 选择器并对其执行特定操作；或将项目中的工具函数高效迁移至其他项目。编写插件是最佳选择。jQuery 跨平台、易学、易用，且拥有大量实用插件。
+
+但现有插件可能无法完美匹配需求，或体积过大仅需部分功能。解决方案是自行编写。这听起来复杂实则简单。本教程将介绍编写基础插件的方法，包含选项配置与回调执行。
 
 ### 设置
 
-你可以下载此练习的完整项目。我们将制作一个简单的手风琴（accordion）模块。我们来创建一个 `js` 记录并将其放在网站的 `"js"` 目录中。所有 `js` 模块文档的习惯做法是以 `"jquery speck"` 开头，后面跟着真实的模块名，所以我们将命名为 `"jquery.simpleaccordion.js"`。
+可下载本教程完整项目。我们将制作一个简单的手风琴插件。在网站 `"js"` 目录下创建 `js` 文件，按惯例命名为 `"jquery.simpleaccordion.js"`（以 `"jquery."` 开头加插件名）。
 
-- 我们网站注册中 js 目录下的模块文档
-
-现在我们必须将我们的模块文档与 `jQuery` 库一起包含到我们的基础 HTML 页面(`index.html`) 中。从 Google 正地引入 `jQuery` 库是最佳实践，因为它们在全球范围内分布，而不是你的单个工作区域：对于大多数人意味着更快的响应时间。从 Google 包含 `jQuery` 的另一个优势是，当客人访问你的网站时，他们现在已经在本地作用域中拥有 `jQuery` 内容。
+需在基础 HTML 页面 (`index.html`) 中引入插件文件与 `jQuery` 库。推荐从 Google CDN 引入 `jQuery`：全球分发节点带来更快响应，且用户访问时可能已缓存。
 
 ### jQuery 插件结构
 
-jQuery 提供了所有必要的工具帮助你开发我们的模块。尽管如此，为了保持 JavaScript 的良好实践，我们应该确保一切都在本地作用域内。我们从 jQuery 模块的基本框架开始：
+jQuery 提供开发插件所需工具。为遵循 JavaScript 良好实践，确保代码在局部作用域内。基础框架如下：
 
 ```javascript
 (function($) {
     $.fn.simpleAccordion = function() {
-        // ：基础手风琴模块的代码
-    }
+        // 基础手风琴插件代码
+    };
 }(jQuery));
 ```
 
+准备就绪，开始编码。
 
+## 为插件添加功能
 
+jQuery 允许使用任意选择器。插件需处理多种组件类型，利用 `this` 关键字遍历每个组件应用功能，无需关心具体类型。
 
+## 准备 HTML 部分 - 构建折叠面板
 
-既然所有的部分都已就绪，让我们开始动手吧！
-
-## 为我们的插件添加功能
-
-jQuery 的惊人之处在于它允许你使用任何需要的选择器。在任何情况下，你应该记住，我们的模块可以管理几种不同的组件类型。利用 `this` 关键字允许我们的插件通过遍历每个组件来应用相关功能，而无需关注组件类型。
-
-## 准备 HTML 部分 -构建折叠面板
-
-由于我们正在构建一个折叠面板，我们需要为它准备 HTML 结构，如下：
+构建手风琴需如下 HTML 结构：
 
 ### 标题 1
+
 Cras dolor elit, porttitor air conditioning diam bibendum, eleifend aliquam erat.
 
 ### 标题 2
+
 Donec blandit risus nec est tristique interdum.
 
 ### 标题 3
+
 Fusce sit amet arcu id justo malesuada faucibus.
 
 ### 标题 4
+
 Aliquam tincidunt lobortis sem at porttitor.
 
-这是一个基础的折叠面板结构，包含四个标题和它们各自的内容区域。因此，我们的想法是让模块将这段 HTML 代码转换为实用的折叠面板，用户可以在其中展开和折叠不同的区域。在进一步通知之前，它的外观应该是这样的：
+基础结构包含四个标题及对应内容区。插件将把此 HTML 转换为可交互的手风琴，用户可展开/折叠区域。初始外观如下：
 
-为了美观起，我们应该包含一些简单的样式。代码如下：
+为美观添加基础样式：
 
 ```css
 .accordion {
   width: 600px;
-  outskirt: 1px strong #ccc;
-  outskirt base: none;
+  border: 1px solid #ccc;
+  border-bottom: none;
 }
-.accordion dt,.accordion dd {
-  outskirt base: 1px strong #ccc;
-  edge: 0px;
+.accordion dt, .accordion dd {
+  border-bottom: 1px solid #ccc;
+  margin: 0px;
 }
 .accordion dt {
-  foundation: rgba(193, 221, 252, 0.24);
+  background: rgba(193, 221, 252, 0.24);
   cursor: pointer;
-  cushioning: 8px 4px; text dimension: 14px;
-  textual style weight: strong;
+  padding: 8px 4px;
+  font-size: 14px;
+  font-weight: bold;
 }
 .accordion dd {
-  cushioning: 12px 8px;
+  padding: 12px 8px;
 }
 ```
 
-现在我们的折叠面板结构应该像这样：
+应用样式后手风琴结构如下：
 
 ## jQuery 部分 - 让它运行起来！
 
-为了给模块添加实用性，我们将修改 JS 并包含以下代码：
+修改 JS 文件添加核心功能代码：
 
 ```javascript
 (function($) {
   $.fn.simpleAccordion = function(options) {
     return this.each(function() {
       var dts = $(this).children('dt');
-      dts.click(accordionClick); dts.each(reset);
+      dts.click(accordionClick);
+      dts.each(reset);
     });
 
     function accordionClick() {
       $(this).siblings('dt').each(hide);
       $(this).next().slideDown('fast');
-      return bogus;
+      return false;
     }
 
-    function stow away() {
+    function hide() {
       $(this).next().slideUp('fast');
     }
 
     function reset() {
       $(this).next().hide();
     }
-  }
+  };
 })(jQuery);
 ```
 
-现在让我们来说过一下这段代码在做什么。首先，你必须理解 jQuery 是一个扩展 JavaScript 语言的库。在创建任何 jQuery 模块时，你基本上是在扩展 jQuery 库，而 jQuery 正在扩展 JavaScript。真正理解你的模块如何扩展 jQuery 库需要对 JavaScript 的模型属性有深入理解。尽管没有被直接使用，但 JavaScript 模型属性是通过 jQuery 属性 `fn` 在后台使用的，`fn` 是本地 JavaScript 模型属性的 jQuery 别名。
+代码解析：首先理解 jQuery 是扩展 JavaScript 的库。创建插件本质上是在扩展 jQuery 库，而 jQuery 扩展了 JavaScript。深入理解需掌握 JavaScript 原型属性，虽未直接使用，但 jQuery 的 `fn` 属性是原生 `prototype` 的别名，后台利用原型机制。简单说，通过 `fn` 扩展插件。
 
-简单来说，你通过利用 `fn` 从 jQuery 扩展了你的模块。
+### 插件选项配置
 
-### "你的模块名称"
+插件可接受选项参数。相比传多个参数，使用 `options` 对象传递多属性是 jQuery 标准做法。最佳实践是用 `defaults` 对象设置默认值。`defaults` 与 `options` 均为纯对象，包含允许传递的属性。添加选项演示：
 
-此外，我们可以为模块添加选项。一个 jQuery 模块可以包含默认值和选项。选项是你传递给模块的参数。与发送几个参数相比，使用 `choices` 对象可以发送多个属性，这是 jQuery 的标准做法。在模块中允许选项时，最佳实践是使用 `defaults` 对象设置默认选项。就像 `choices` 一样，`defaults` 是一个严格的对象，它应该包含你允许传递给模块的属性。我们应该快速为我们的模块添加几个选项，以展示这是有多简单。
-
-我们将传递一个边界选项，以便在折叠面板首次折叠时让其主区域打开。
+传入 `open` 选项控制手风琴初始化时首个面板是否展开。
 
 ```javascript
 (function($) {
   $.fn.simpleAccordion = function(options) {
-    var state = $.extend({}, {open: false}, choices);
+    var settings = $.extend({}, {open: false}, options);
     return this.each(function() {
       var dts = $(this).children('dt');
-      dts.click(accordionClick); dts.each(reset);
-      if(state.open)
-        $(this).children('dt:firstchild').next().show();
+      dts.click(accordionClick);
+      dts.each(reset);
+      if(settings.open)
+        $(this).children('dt:first-child').next().show();
     });
 
     function accordionClick() {
       $(this).siblings('dt').each(hide);
       $(this).next().slideDown('fast');
-      return bogus;
+      return false;
     }
 
-    function cover up() {
+    function hide() {
       $(this).next().slideUp('fast');
     }
 
     function reset() {
       $(this).next().hide();
     }
-  }
+  };
 })(jQuery);
 ```
 
-你可能注意到，我们使用了 `open: false` 的默认估计，所以如果没有传递任何选项，模块将预期在首次折叠时折叠面板是关闭的。当模块获取选项时，你可以依赖 `$.extend` 方法来进行实际合并。`$.extend` 方法的作用是合并至少两个项目。
+注意：默认值 `open: false` 意味着无选项传入时首个面板折叠。`$.extend` 合并对象：合并目标对象 `{}`、默认值 `{open: false}` 和用户传入的 `options`。
 
 ## jQuery 效果优于 Flash 动画的优势
 
-jQuery 是一种非常棒的编程工具，可以为网页添加精美的动画。jQuery 已经存在很久了。使用 Flash 的活动出现在大量网站中。然而，Flash 在方面存在一些今天尚未解决的问题。这些问题通过 jQuery 得到了更好的解决。并不是所有 Flash 能实现的动画都能通过 jQuery 实现，但持续的进展和新模块已经激励了开发者用 jQuery 效果替换许多 Flash 效果。让我们来聊 jQuery 效果相比 Flash 的优势。
+jQuery 是为网页添加精美动画的优秀工具。Flash 动画曾广泛存在，但存在未解之痛点，jQuery 更好地解决了这些问题。虽非所有 Flash 动画可由 jQuery 实现，但持续进步与新插件推动开发者以 jQuery 替代 Flash。以下是 jQuery 效果相比 Flash 的优势：
 
-### 1. jQuery 效果的加载速度比 Flash 制作的更快
-执行 jQuery 效果不需要额外的模块。99% 的程序都支持 JavaScript。一个完美的 JavaScript 程序就足够执行 jQuery 了。由于不包含额外的模块，jQuery 效果的加载速度比 Flash 快得多。请记住，Flash 需要外部模块才能执行。如果程序没有正确形式的 Flash 模块来执行特定活动，那么模块将在动画开始之前堆栈。这使得整个 Flash 的运行生命周期低于 jQuery。
+### 1. 加载速度更快
 
-### 2. 进的 jQuery 效果制作并不困难
-要使用 jQuery 制作高级的效果，开发者必须在 Action 内容方面拥有深厚的知识（Action 是 Flash 使用的脚本技术）。相反，制作高级的 jQuery 效果非常简单。jQuery 官网提供了许多尖端模块。事实上，即使是初级软件工程师也可以在 Web 应用中有效地下载并使用它们。
+执行 jQuery 效果无需额外插件。99% 浏览器支持 JavaScript，完整的 JS 引擎即可运行 jQuery。无额外插件加载，速度远超 Flash。Flash 需外部插件，若浏览器缺失特定版本，插件会在动画开始前加载，导致 Flash 整个生命周期耗时更长。
 
-### 3. jQuery 移动效果优于 Flash 制作
-jQuery 比 Flash 更现代。因此，与 Flash 相比，jQuery 具有更好的适应性。实际上，许多著名的移动框架尚未支持 Flash 动画。而 jQuery 在各种移动框架和程序中都能无缝执行。
+### 2. 高级效果制作更容易
 
+Flash 高级效果需深厚的 ActionScript（Flash 脚本技术）知识。反之，jQuery 高级效果制作极简。官网提供大量尖端插件，即使初级工程师也能高效下载应用于 Web 应用。
 
+### 3. 移动端表现更优
 
+jQuery 比 Flash 更现代，适应性更强。许多主流移动框架不支持 Flash 动画，而 jQuery 在各类移动框架和浏览器中无缝运行。
 
+# jQuery 插件生态
 
-# jQuery 模块
+jQuery 插件数量庞大且持续更新。插件是提供核心 `jQuery` 库额外功能的库文件。分类下有海量插件，开发者可按需筛选。插件持续更新以适配操作系统和浏览器新进展。
 
-jQuery 模块数量丰富，并且在不断更新。jQuery 模块是库文档，提供了可以添加到到核心 `jQuery` 库的额外功能。在插件分类下有许多模块。软件工程师可以查阅并选择一个完全符合其需求的模块。此外，这些模块会不断更新，以适应操作系统和程序开发的新进展。
+## jQuery JavaScript 教程
 
-## jQuery Javascript 教程
+`jQuery` 是广泛使用的 `JavaScript` 库，简化网站结构化开发。设计师偏爱 `jQuery` 而非原生 `JavaScript`，因其先进特性与简易性。实现同等功能，`jQuery` 代码量远少于 `JavaScript`（专家估计 1 行顶 20 行）。
 
-`jQuery` 是一个被广泛使用的 `Javascript` 库，因为它让网站的结构化变得简单。用迷人的颜色和格式设计网站是一件很有趣的事。设计师们倾向于使用 `jQuery` 而不是 `Javascript`，因为它具有许多先进特性，而且利用 `jQuery` 创建网页或应用程序非常简单。`jQuery` 的代码量比 `javascript` 少得多。专家们认为，在 `jQuery` 中用一行代码就能实现的结果，在 `Javascript` 中可能需要 20 行。
+`jQuery` 用于：选择页面元素、创建排版布局、通过修改外观/样式/可见性/文本/HTML 控制元素。体积小、执行快。还能将客户端脚本从 HTML 标记中分离。区别于其他 JS 库，`jQuery` 内置大量功能。灵活性是亮点，兼容 `Internet Explorer`、`Mozilla Firefox`、`Safari` 等不同内核浏览器，免去为每个浏览器编写单独代码的麻烦。
 
-`jQuery` 可用于选择页面组件，创建组件的排列布局，通过更改它们的外观、样式、可见性、文本，甚至是它们的 `HTML` 来控制组件的排列布局。`jQuery` 并不大，执行其结果需要一些投入。它还被用于将客户端内容从 `HTML` 标记中分离。与其他 `javascript` 库完全不同，`jQuery` 包含了许多可以使用的功能。灵活性是 `jQuery` 的优秀特性之一，它可以很好地用于各种程序，如 `Internet Explorer`、`Mozilla Firefox` 或 `Safari`。由于这些每个程序的工作方式都不相同，我们有时被迫为每个程序编写单独的代码。
+`jQuery` 消除重复造轮子，处理事件、执行动画、无痛引入 `Ajax` 支持。特效出色：简单代码实现切换、淡入淡出、滑动等。
 
-`jQuery` 消除了任务重复的困难性。它还可以用于处理事件、执行动画，并毫无复杂地将 `Ajax` 支持引入 Web 应用程序。同样，利用 `jQuery` 可以提供的特效是非常出的。人们可以使用简单的代码实现切换、模糊、响应。
-
-学习 `jQuery` 既有趣又简单，因为内容易于理解。特别是对于熟悉 `Javascript` 的人来说，发现学习 `jQuery` 将轻而易举。网上有无数在线教程可以学习 `jQuery`。许多地方以易于理解的结构提供 `jQuery` 教程，并可以附带模型。它们为每个特性、功能等提供了完美安排的语法结构，分类在不同的分类下，使用户户立即看到内容。没有多少教程还带有“尝试一下”选项，除了通过模型理解外，它还允许用户尝试检查特效或结果。
+学习 `jQuery` 趣味且易上手，尤其对熟悉 `JavaScript` 者。网上有海量在线教程，结构清晰、分类详尽、附带示例、语法参考，部分提供“尝试一下”在线运行功能。
 
 ## jQuery 的最佳特性
 
-历久弥新的 `jQuery`。`jQuery` 将 `JavaScript` 代码提升到了前所未有的水平。如果你使用 `JavaScript`，你可能已经很熟悉 `jQuery`。卓越的模型包括 Google 指南、`Facebook` 和 `Twitter`。
+历久弥新的 `jQuery` 将 `JavaScript` 代码推向新高度。用过 `JavaScript` 者大多熟知 `jQuery`。典型用户包括 Google、Facebook、Twitter。
 
-## 是什么造了 jQuery
+## 什么造就了 jQuery
 
-有了 `jQuery` 在你身边，它会让 `JavaScript` 部分更快，使用更少的代码。最受欢迎的元素是使用更少代码创建应用程序的灵活性。`JavaScript` 是 `jQuery` 的生产者，因为 `jQuery` 是用 `JavaScript` 写的。`jQuery` 代码有两种完全不同的类型：压缩记录和压缩文档。
+`jQuery` 让 `JavaScript` 编写更快、代码更少。核心优势：少代码实现灵活应用。`JavaScript` 是 `jQuery` 的基石（`jQuery` 由 `JavaScript` 编写）。`jQuery` 代码有两种形式：压缩版（生产环境）和未压缩版（开发调试）。
 
-## 允许下载
+## 免费下载
 
-`JQuery` 开放下载并免费使用。你的库模块同样可用。
+`jQuery` 开源免费，插件库同样免费可用。
 
-## jQuery 的理想选择
+## jQuery 的典型应用场景
 
-以下是一些你可以使用 `jQuery` 完成的任务。动画、数据库查询和幻灯片是其中的结果。
-- **制作动画**：你可以制作滑动效果和模糊效果。
-- **制作幻灯片**：创建图像或图片幻灯片是最著名的特性之一。
-- **下拉菜单**：创建带有动画的级联下拉菜单的灵活性。
-- **DOM 操作**：你可以使用基本内容包含、更改请求或删除网页上的内容。
-- **MySQL 查询**：你可以在无需刷新页面的情况下向数据库发送 `MySQL` 问题。
-- **结构验证**：你可以将其用于你的结构验证。
-- **简化**：为你的网站客户创建直观的界面是有趣且令人兴奋的。
+动画、数据库查询、幻灯片等。
 
-## 运行
+- **制作动画**：滑动、淡入淡出效果。
+- **制作幻灯片**：图片轮播是最著名特性之一。
+- **下拉菜单**：带动画的级联下拉菜单。
+- **DOM 操作**：简单脚本包含、修改、删除页面内容。
+- **MySQL 查询**：无需刷新页面发送 `MySQL` 查询（配合后端 AJAX 实现）。
+- **表单验证**：客户端表单验证。
+- **交互简化**：创建直观用户界面。
 
-`JavaScript` 在 Web 程序兼容性上一直存在问题，但 `jQuery` 有更高的成功率。`JQuery` 永远不会以任何形式改变 `JavaScript`，但它会变得更加有用，并且对设计师来说变得更加普通。
+## 兼容性运行
 
-## 针对你的浏览器 JavaScript 问题启动调查
+`JavaScript` 长期面临浏览器兼容性问题，`jQuery` 成功率更高。`jQuery` 不改变 `JavaScript` 本质，但让其更好用、更普及。
 
-修复 `JavaScript` 问题并不困难，但有时很难确定问题的根源。各种问题都会导致 `JavaScript` 问题，因此你需要完成一些侦探工作来识别罪魁祸首并修复错误。
+# 针对浏览器 JavaScript 问题的排查指南
 
-### 活动脚本如何修复 JavaScript 错误
+修复 `JavaScript` 错误不难，但定位根因常需侦探般排查。多种因素导致错误，需逐步识别并修复。
 
-浏览网页时始终开启活动脚本。你还需要确保启用了 `ActiveX 控件` 和 `Java` 小程序。这些关键选项对于 `JavaScript` 正常工作至关重要。如果你在使用 `JavaScript` 时遇到困难，那么你必须确保已启用动态脚本。这里是步骤：
+### 如何启用活动脚本修复 JavaScript 错误
 
-**Web Explorer 8 (Windows)**
+浏览网页时需确保启用活动脚本、`ActiveX 控件` 和 `Java` 小程序，这些是 `JavaScript` 正常运行的关键。若遇困难，请按以下步骤启用：
+
+**Internet Explorer 8 (Windows)**
+
 - 选择“工具”菜单。
-- 点击“Web 选项”。
-- 选择“安全”。
-- 选择“自定义级别”。
-- 勾选“启用活动脚本”旁边的复框。
+- 点击“Internet 选项”。
+- 选择“安全”选项卡。
+- 点击“自定义级别”。
+- 勾选“启用活动脚本”复选框。
 
 **Mozilla Firefox 3.5 (Windows)**
-- 从菜单栏选择“工具”。
-- 点击“备选项”。
-- 选择名为“内容”的标签页。
-- 勾选“启用 JavaScript”旁边的框。
-- 点击确定。关闭 Mozilla，然后重新打开。
 
-字体 破坏心情的错误警告
+- 菜单栏选择“工具”。
+- 点击“选项”。
+- 选择“内容”标签页。
+- 勾选“启用 JavaScript”复选框。
+- 点击确定。关闭 Firefox 重新打开。
 
-如果烦人的警告不断骚扰你，但你的程序完全运行正常，那么你可能只需要禁用 JavaScript 错误警告。某些错误警告会导致你的电脑死机。它们还会干扰程序的实用性。在 `Internet Explorer` 中实现这一点非常简单。遵循以下方法：
+### 禁用烦人的错误警告
 
-**Web Explorer 8 (Windows)**
+若错误警告频繁骚扰但浏览器运行正常，可禁用 JS 错误通知。某些警告会导致死机或干扰功能。在 `Internet Explorer` 中操作：
+
+**Internet Explorer 8 (Windows)**
+
 - 选择“工具”菜单。
-- 点击“Web 选项”。
-- 选择“高级”。
-- 取消选择“对每个脚本错误显示通知”旁边的框框
-- 关闭 Mozilla，然后重新打开。
+- 点击“Internet 选项”。
+- 选择“高级”选项卡。
+- 取消勾选“对每个脚本错误显示通知”复选框。
+- 关闭浏览器重新打开。
 
-如果一个网页看起来包含大量的 JavaScript 错误，那么它值得用另一个程序测试该网页。实际上，你应该始终使用不同的程序测试 JavaScript 错误。如果两个程序经历了类似的错误，那么几乎可以网页本身是 JavaScript 错误的来源。
+若网页包含大量 JS 错误，建议用其他浏览器测试。应始终用不同浏览器交叉验证。若多浏览器均报错，基本可判定网页本身是错误源。
 
-### 为了快速解决，运行注册表清理程序
+### 尝试运行注册表清理程序快速修复
 
-如果你无法摆脱这些 JavaScript 错误，请使用注册表清理程序。清理程序通过过滤你的整个错误库来工作。它随后迅速解决每个未创建的错误。
+若无法消除 JS 错误，可使用注册表清理工具。其扫描整个注册表并快速修复无效项。
 
+掌握修复 JS 问题的方法，提升浏览器性能表现。
 
+# 如何解决 `javascript:void(0)` 问题
 
-
-为了断开并修复这些错误，请熟悉修复你的 JavaScript 问题的方法，以便改进你程序的展示效果。
-
-# 如何解决 JavaScript Void(0) 问题
-
-许多网页客户端在尝试点击连接时遇到此问题，并在程序状态栏上看到此错误代码，导致连接无法正常工作。这是一种在处理网页页面加载 JavaScript 遇到问题时，在浏览器中偶尔显示的错误消息。尽管此错误消息会在不同的事件中触发，但对于不同的客户端，真实原因可能是多种，因此了解此错误消息背后的最潜在原因对于解决这些问题至关重要。
+许多用户点击链接时遇此问题，浏览器状态栏显示错误代码导致链接失效。这是页面加载 JS 遇阻时偶尔显示的错误消息。触发场景多样，根因各异，了解潜在原因对解决至关重要。
 
 ### 1. 弹出窗口拦截器
-此错误消息的一个重要原因是弹出窗口拦截器阻止了 JavaScript，同时阻止了在不同位置以广告形式打开的窗口。解决这个问题包括根据你的需求更改弹出窗口拦截器的设置，并以此禁用拦截器。你甚至可以下载另一个弹出窗口拦截程序，或者阅读弹出窗口拦截器的产品评论，以评估它们是否确实导致了这些错误消息。
+
+拦截器阻止 JS 执行的同时拦截广告弹窗。解决：调整拦截器设置或暂时禁用；或更换拦截器、查阅评测确认是否为罪魁祸首。
 
 ### 2. 网络代理服务器
-网络代理服务器（用于访问不同的受限网站）的崩溃也会同时阻塞不同的内容。可以通过不使用代理服务器本身，或者使用功能更强且不会干预内容下载的代理服务器来避免此问题。同样，检查代理服务器与不同网页及内容的兼容性。
 
-### 3. 不恰的 JavaScript
-编写不当的 JavaScript 也可能导致此错误消息。解决方法是将此错误告知网站管理员，让他们重写 JavaScript。
+代理服务器故障或拦截内容。解决：不使用代理、或换用不干扰下载的代理；检查代理与网页内容兼容性。
+
+### 3. 不当的 JavaScript 编写
+
+错误的 JS 代码导致报错。解决：通知网站管理员重写 JS。
 
 ### 4. JavaScript 被禁用
-JavaScript 可能在你的程序中被禁用，应该将其启用。要在 `IE` 中启用，请转到工具菜单下网络选项中的安全选项的“脚本”选项卡；要在 `Firefox` 中启用，请转到工具菜单并在网页设置中启用 JavaScript 选项。
+
+浏览器中 JS 被禁用。启用方法：
+- **IE**：工具 > Internet 选项 > 安全 > 自定义级别 > 脚本 > 启用。
+- **Firefox**：工具 > 选项 > 内容 > 勾选“启用 JavaScript”。
 
 ### 5. 浏览器升级
-网页浏览器使用 JavaScript 时有时也会损坏，这需要更换或基本升级你的互联网浏览器。
 
-有一种简单的方法可以让你从根本上真正避免 `javascript: void(0)` 错误消息，因为我们知道 `javascript: void(0)` 会导致某些程序异常地显示你的网站页面，而且当连接没有附加 URL 时，经常发生 `javascript: void(0)` 表达式，程序不知道如何响应并恢复错误消息。因此，请使用 `return false;` 语句让程序不要查找 URL。
+浏览器 JS 引擎损坏，需修复或升级浏览器。
 
-尝试在任何文字处理程序中打开报告：
-1. 在记录中找到 `javascript: void(0)` 引用。
-2. 将连接中的 `#` 替换为标点 `.`。
-3. 在表达式中添加 `return false` 语句，使连接引用显示为链接。
-4. 将 `call function()` 替换为你的函数名；
-5. 最后保存并关闭文档。
+### 根治 `javascript:void(0)` 的简单方法
 
-MALINA PRONTO
+因 `javascript:void(0)` 导致某些浏览器异常渲染页面，且当链接无 `href` URL 时常触发此表达式（浏览器不知如何响应）。解决：使用 `return false;` 阻止默认行为。
+
+操作步骤（在文本编辑器中打开文件）：
+
+1. 查找 `javascript:void(0)` 引用。
+2. 将链接中的 `#` 替换为实际 URL 或 `#`。
+3. 在 `onclick` 表达式中添加 `return false;`，使链接引用变为：`<a href="#" onclick="callFunction(); return false;">链接</a>`。
+4. 将 `callFunction()` 替换为实际函数名。
+5. 保存并关闭文件。

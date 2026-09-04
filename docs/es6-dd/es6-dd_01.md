@@ -1,6 +1,8 @@
+
+
 # 深入浅出 ES6（一）：ES6 是什么
 
-作者 Jason Orendorff ，译者 刘振涛
+作者 Jason Orendorff，译者 刘振涛
 
 **编者按：**ECMAScript 6 离我们越来越近了，作为它最重要的方言，Javascript 也即将迎来语法上的重大变革，InfoQ 特开设“[深入浅出 ES6](http://www.infoq.com/cn/es6-in-depth/)”专栏，来看一下 ES6 将给我们带来哪些新内容。本专栏文章来自[Mozilla Web 开发者博客](https://hacks.mozilla.org/category/es6-in-depth/)，由作者授权翻译并发布。
 
@@ -10,10 +12,10 @@
 
 编程语言 JavaScript 是 ECMAScript 的实现和扩展，由 ECMA（一个类似 W3C 的标准组织）参与进行标准化。ECMAScript 定义了：
 
-*   [语言语法](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Lexical_grammar) – 语法解析规则、关键字、语句、声明、运算符等。
-*   [类型](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures) – 布尔型、数字、字符串、对象等。
-*   [原型和继承](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Inheritance_and_the_prototype_chain)
-*   内建对象和函数的[标准库](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects) – [JSON](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON)、[Math](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math)、[数组方法](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)、[对象自省方法](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)等。
+- [语言语法](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Lexical_grammar) – 语法解析规则、关键字、语句、声明、运算符等。
+- [类型](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures) – 布尔型、数字、字符串、对象等。
+- [原型和继承](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Inheritance_and_the_prototype_chain)
+- 内建对象和函数的[标准库](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects) – [JSON](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON)、[Math](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math)、[数组方法](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)、[对象自省方法](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)等。
 
 ECMAScript 标准不定义 HTML 或 CSS 的相关功能，也不定义类似 DOM（文档对象模型）的[Web API](https://developer.mozilla.org/en-US/docs/Web/API)，这些都在独立的标准中进行定义。ECMAScript 涵盖了各种环境中 JS 的使用场景，无论是浏览器环境还是类似[node.js](http://nodejs.org/)的非浏览器环境。
 
@@ -21,7 +23,7 @@ ECMAScript 标准不定义 HTML 或 CSS 的相关功能，也不定义类似 DOM
 
 上周，ECMAScript 语言规范第 6 版最终草案提请 Ecma 大会审查，这意味着什么呢？
 
-这意味着在今年夏天，**我们将迎来最新的****JavaScript****核心语言标准**。
+这意味着在今年夏天，**我们将迎来最新的 JavaScript 核心语言标准**。
 
 这无疑是一则重磅新闻。早在 2009 年，上一版 ES5 刚刚发布，自那时起，ES 标准委员会一直在紧锣密鼓地筹备新的 JS 语言标准——ES6。
 
@@ -36,7 +38,7 @@ ECMAScript 标准的历史版本分别是 1、2、3、5。
 ES4 饱受争议，当标准委员会最终停止开发 ES4 时，其成员同意发布一个相对谦和的 ES5 版本，随后继续制定一些更具实质性的新特性。这一明确的协商协议最终命名为“Harmony”，因此，ES5 规范中包含这样两句话：
 
 > ECMAScript 是一门充满活力的语言，并在不断进化中。
-> 
+
 > 未来版本的规范中将持续进行重要的技术改进。
 
 这一声明许下了一个未来的承诺。

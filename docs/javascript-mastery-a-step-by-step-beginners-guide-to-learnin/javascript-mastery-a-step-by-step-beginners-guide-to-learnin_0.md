@@ -1,66 +1,64 @@
+
 # JavaScript 精通：JavaScript 编程学习初学者指南
-
-
 
 ![](img/cover.jpg)
 
 ![img](img/cover.jpg)
 
-
-
-
-
-
-
 ## 引言
+
 JavaScript 是一种遵循 ECMAScript 规范的卓越且解释密的编程语言。配合 HTML 和 CSS，JavaScript 是万维网的重要技术之一。JavaScript 促进了交互式网页的，是 Web 应用的重要组成部分。几乎每个网站都使用了 JavaScript，并且所有的主流浏览器都包含 JavaScript 引擎以便正常运行。Brendan Eich 在 1995 年任职 Netscape Communications 时开发了 JavaScript。JavaScript 辅助函数式、事件驱动、基于原型和面向对象的编程风格。JavaScript 通过确认用户在客户端执行的操作来升级 Web 用户界面。您可以将 JavaScript 引擎插入不同类型的主机软件中，包括数据库、Web 服务器以及与 Web 无相关的程序（如文字处理器）。
 
 本书将进一步解释 JavaScript 的概念，旨在帮助您在没有压力的情况下学习和理解 JavaScript 语言。学习 JavaScript 需要 HTML 知识、文本编辑器、浏览器以及 CSS。要开始学习过程，必要的工具之一是文本编辑器，它是编写代码必需的。您还需要浏览器。
 
 ## 第一章：什么是 JavaScript
+
 JavaScript 简称 `JS`，是一种由所有主流浏览器引入并采用的高级编程语言。JavaScript 可以通过添加滑块、弹出窗口等特殊效果来创建交互式网页。CSS 则决定了背景颜色、类型、字体大小等。
 
 ### 客户端 JavaScript
+
 客户端 JavaScript 是 JavaScript 的常见形式。脚本必须插入 HTML 文档或由其引用，以便浏览器解释代码。它允许网页动态地包含交互式内容。用户在提交表单以及判断所有输入是否有效时会使用 JavaScript 代码。
 
 ### JavaScript 的优势
+
 * 通过 JavaScript，用户可以在页面发送到服务器之前对输入进行组织，这自动减轻了服务器的负载。
 * JavaScript 能够对页面做出快速响应。在访问者查看输入是否有错误之前，页面无需重新加载。
 * JavaScript 用于构建活动界面，当鼠标悬停在上面时会产生反应。
 
 ### JavaScript 的局限性
+
 JavaScript 编程语言缺乏以下基本功能：
+
 * 出于考虑，客户端 JavaScript 不读取或写入文件
 * 用于网络应用程序的 JavaScript
 * JavaScript 不具备多处理器能力。
 
 ### JavaScript 开发工具
+
 您不需要昂贵的开发工具来编写 JavaScript。您可以使用简单的文本编辑器编写，例如 Microsoft FrontPage、Adobe Dreamweaver MX、Adobe HomeSite 5 等。
 
 ### JavaScript 的位置
+
 JavaScript 代码可以插入到 HTML 文档的任何位置。但是，您可能想像这样在 HTML 文件中插入 JavaScript 代码：
 
 ```html
 <head>
-  <script></script>
+  <script</script>
 </head>
 <body>
-  <script></script>
+  <script</script>
 </body>
 ```
 
 在 `<head>` 部分包含外部文件脚本：
+
 ```html
 <head>
-  <script src="filename.js"></script>
+  <script src="filename.js</script>
 </head>
 ```
 
-## JavaScript 章节
-
-
-
-
+### JavaScript 章节
 
 在某些情况下，当你想让脚本在任何特殊事件上运行（例如点击按钮时的操作）时，你可以像下面这样将脚本放置在 `head` 部分：
 
@@ -82,7 +80,7 @@ function sayHi() {
 </html>
 ```
 
-### 在 `<body>...</</body>` 区域中使用 JavaScript
+### 在 `<body></body>` 区域中使用 JavaScript
 
 有时，你希望脚本立即运行并在内容页面上创建一个脚本，将脚本插入到 `<body>` 区域内。代码应该像这样：
 
@@ -134,7 +132,7 @@ document.write("Hello World")
 ```html
 <html>
 <head>
-<script type="text/javascript" src="filename.js"></script>
+<script type="text/javascript" src="filename.js</script>
 </head>
 <body>
   .......
@@ -150,14 +148,17 @@ document.write("Hello World")
 
 ### 练习
 
-如何在 HTML 文档中将 JavaScript 代码插入到 head、body 并包含外部文件脚本？
+如何在 HTML 文档中将 JavaScript 代码插入到 `head`、`body` 并包含外部文件脚本？
 
 ### 答案
 
-head 部分脚本为 `<head></head>`。
-body 部分脚本为 `<body></body>`。
-body 内部的脚本为 `<body></body>` 和 `<head></head>`。
-在 `<head>...</head>` 中包含外部文件脚本使用 `script` 标签。
+`head` 部分脚本为 `<head</head>`。
+
+`body` 部分脚本为 `<body</body>`。
+
+`body` 内部的脚本为 `<body</body>` 和 `<head</head>`。
+
+在 `<head></head>` 中包含外部文件脚本使用 `script` 标签。
 
 ---
 
@@ -181,7 +182,7 @@ body 内部的脚本为 `<body></body>` 和 `<head></head>`。
 
 ### 特殊数字
 
-JavaScript 包含三个独特的值，它们的行为不像数字但被视为数字。`Infinity` 和 `-Infinity` 是前两个，表示正无穷和负无穷，最后一个值是 `NaN`。`NaN` 表示“不是一个数字”（not a number），尽管它是一个 Number 类型的值。
+JavaScript 包含三个独特的值，它们的行为不像数字但被视为数字。`Infinity` 和 `-Infinity` 是前两个，表示正无穷和负无穷，最后一个值是 `NaN`。`NaN` 表示"不是一个数字"（not a number），尽管它是一个 Number 类型的值。
 
 ### 字符串
 
@@ -216,7 +217,7 @@ console.log(-(10 - 2))
 
 ### 布尔值
 
-布尔是一种仅在两种可能性之间区别的值，例如“开启”和“关闭”等。布尔只包含真（true）和假（false）。
+布尔是一种仅在两种可能性之间区别的值，例如"开启"和"关闭"等。布尔只包含真（`true`）和假（`false`）。
 
 ### 比较
 
@@ -230,7 +231,7 @@ console.log(3 < 2)
 // → false
 ```
 
-`>` 和 `<` 字符分别代表“大于”和“小于”的符号。你可以在布尔值中使用二进制运算符来确定包含的值是真还是假。
+`>` 和 `<` 字符分别代表"大于"和"小于"的符号。你可以在布尔值中使用二进制运算符来确定包含的值是真还是假。
 
 你可以以相同的方式比较字符串。
 
@@ -239,7 +240,7 @@ console.log("Aardvark" < "Zoroaster")
 // → true
 ```
 
-你可以按照字母顺序指示字符串，大写字母通常“小于”小写字母，所以 "Z" < "a"，而且排序中也存在非字母字符。当 JavaScript 想要比较字符串时，它从左到右识别字符，逐个区分 Unicode 代码。
+你可以按照字母顺序指示字符串，大写字母通常"小于"小写字母，所以 "Z" < "a"，而且排序中也存在非字母字符。当 JavaScript 想要比较字符串时，它从左到右识别字符，逐个区分 Unicode 代码。
 
 以下是其他相关的运算符 `<=`, `>=`, `==` 和 `!=`。
 
@@ -251,7 +252,7 @@ console.log("Apple" == "Orange")
 // → false
 ```
 
-在 JavaScript 中，只有一个值不等于它自己，即 `NaN`（“不是数字”）。
+在 JavaScript 中，只有一个值不等于它自己，即 `NaN`（"不是数字"）。
 
 ```
 console.log(NaN == NaN)
@@ -260,11 +261,7 @@ console.log(NaN == NaN)
 
 ### 逻辑运算符
 
-
-
-
-
-`Boolean.values()`，它们分别是“与”（and）、“或”（or）和“与非”（and not）。`&&` 运算符表示逻辑“与”，其结果取决于输入的值是 `true` 还是 `false`。
+`Boolean.values()`，它们分别是"与"（and）、"或"（or）和"与非"（and not）。`&&` 运算符表示逻辑"与"，其结果取决于输入的值是 `true` 还是 `false`。
 
 ```javascript
 console.log(true && false)
@@ -276,7 +273,7 @@ console.log(true && true)
 // → true
 ```
 
-`||` 运算符表示逻辑“或”。如果给定的值为 `true`，则该运算符输出 `true`。
+`||` 运算符表示逻辑"或"。如果给定的值为 `true`，则该运算符输出 `true`。
 
 ```javascript
 console.log(false || true)
@@ -288,7 +285,7 @@ console.log(false || false)
 // → false
 ```
 
-感叹号 `!` 表示“非”（Not）。它是一个反转设定值的运算符，它将 `true` 变为 `false`，将 `false` 变为 `true`。
+感叹号 `!` 表示"非"（Not）。它是一个反转设定值的运算符，它将 `true` 变为 `false`，将 `false` 变为 `true`。
 
 `||`  own 所有运算符中优先级最低的，然后是 `&&`、比较运算符（`>`、`==` 等）等。下面的示例说明括号是必要的：
 
@@ -296,7 +293,7 @@ console.log(false || false)
 1 + 1 == 2 && 10 * 10 > 50
 ```
 
-空值
+### 空值
 
 `Null` 和 `undefined` 是仅两种用于指示重要值不存在的特殊值类型。它们包含零数据。
 
@@ -363,7 +360,7 @@ console.log("Kate" || "user")
 
 我们将开始扩展 JavaScript 语言命令，不仅是句子片段和名词。
 
-## 表达式与语句
+### 表达式与语句
 
 产生值的代码块被称为表达式（expression）。单个值精确地写为 `22`，或者心理分析也被称为表达式。二元运算符中设置为两个表达式的表达式或括号内的表达式都是表达式。表达式可以像人类语言翻译一样适应其他表达式。它使我们能够开发出任意复杂计算的表达式。当一个表达式类似于句子片段时，JavaScript 语句将完成该句子。语句列表被称为程序，最易访问的语句类型是以分号结尾的一行代码。
 
@@ -376,7 +373,7 @@ console.log("Kate" || "user")
 
 通过此功能，语句可以独立存在，并且可以添加一个偶尔更改屏幕颜色的特性，或修改机器的内部状态以影响其后的语句。
 
-## 绑定（Bindings）
+### 绑定（Bindings）
 
 JavaScript 使用变量绑定来持有值，例如：
 
@@ -425,17 +422,13 @@ console.log(greeting + name);
 
 `const` 单词意味着常量。它描述了一个绝对绑定，在其生命周期内指向其设定值。这些单词通常用于声明一个名称对应一个值，以便以后方便引用。
 
+尽管像 `const`，`class`，`default`，`break`，`continue`，`delete`，`do`，`else`，`any`，`word`，`can`，`be`，`called`，`binding`，`name`，`also`，`consist`，`of`，`digits`，`but`，`not`，`begin`，`statement`，`with`，`figure` 等某些单词包含了美元符号 `$`、下划线 `_` 或任何特殊字符或标点符号。
 
-
-
-
-尽管像 `const`，`class`,`default`,`break`,`continue`,`delete`,`do`,`else`,`any`,`word`, `can`, `be`,`called`, `binding`, `name`, `also`, `consist`, `of`, `digits`,`but`, `not`, `begin`, `statement`, `with`, `figure` 等某些单词包含了美元符号 `$`、下划线 `_` 或任何特殊字符或标点符号。
-
-## 环境
+### 环境
 
 在特定时刻存在的绑定和值被称为环境。当你启动程序时，环境持有一个语言标准，并通常包含与系统环境产生交互的绑定。例如，浏览器带有可以与启动的网站通信，以及读取键盘和鼠标输入的函数。
 
-## 函数
+### 函数
 
 封装在值中的一段程序代码称为函数，这些值被添加以启动被封装的程序。例如，一个为用户输入显示小对话框的函数。
 
@@ -445,11 +438,11 @@ prompt("Enter a passcode");
 
 执行函数的过程被称为调用（calling）、唤起（invoking）或应用（applying）。调用函数是通过在提供函数值的表达式后插入括号来实现的。括号中的值传递给函数内的程序。定义的值被设置为函数的参数。
 
-### console.log 函数
+#### console.log 函数
 
 在上面的示例中，我们使用 `console.log` 来输出值。所有主流浏览器都利用 `console.log` 函数将其参数输出到输出文本的设备。在现代浏览器中，输出通常位于 JavaScript 的 `console` 中，默认是不可见的；你可以点击键盘上的 `F12` 命令，或者 Mac 上的 `command-option-I`。绑定名不容纳字符，但 `console.log` 可以，因为它是从 `console` 绑定值中声明 `log` 属性的表达式。
 
-###返回值
+#### 返回值
 
 函数用于产生副作用。它们也可以提供不需要副作用的值。例如，`Calculate.max` 函数将接收一组数字参数，并返回最大值。
 
@@ -465,7 +458,7 @@ console.log(Math.min(2, 4) + 100);
 // → 102
 ```
 
-## 控制流
+### 控制流
 
 当程序中有多个语句时，它们以故事的形式从代码的开始到结束执行。这种类型的程序由两种语句组成：第一个向用户索要数字，而第二个显示数字的平方并在第一个之后立即执行。
 
@@ -474,11 +467,11 @@ let Number = Number(prompt("Select A Digit"));
 console.log("Your Digit is the square root of " + Number * Number);
 ```
 
-一个值通过 `number` 函数转换为数字并输出字符串值。 
+一个值通过 `number` 函数转换为数字并输出字符串值。
 
-### 条件执行
+#### 条件执行
 
-键盘用于在 JavaScript 中开发条件执行。你可能希望某些代码在 `if` 且*仅当*特定条件为真时执行。让我们在输入是数字时才显示其平方。
+键盘用于在 JavaScript 中开发条件执行。你可能希望某些代码在 `if` 且`仅当`特定条件为真时执行。让我们在输入是数字时才显示其平方。
 
 ```javascript
 let theNumber = Number(prompt("Select A Digit"));
@@ -511,7 +504,7 @@ if (!Number.isNaN(theNumber)) {
 }
 ```
 
-如果有两个以上的路径可供，你可以“链式”多个 `if/else` 对。以下是一个示例：
+如果有两个以上的路径可供，你可以"链式"多个 `if/else` 对。以下是一个示例：
 
 ```javascript
 let num = Number(prompt("Pick A Number"));
@@ -527,7 +520,7 @@ if (num < 10) {
 
 程序确认 `num` 是否小于 10，如果是，它会选择该分支，然后显示 "Small"。如果 `num` 大于 10，它会选择 `else` 分支，该分支包含它自己的第二个 `if` 语句。
 
-### while 和循环
+#### while 和循环
 
 这是编写从 0 到 12 所有偶数的程序的方法。
 
@@ -572,7 +565,7 @@ console.log(result);
 // → 1024
 ```
 
-### for 循环
+#### for 循环
 
 许多循环遵循 `while` 循环模式，创建一个计数绑定来跟踪循环进度。然后带有测试表达式的 `while` 循环检查计数器是否达到设定值。
 
@@ -581,10 +574,6 @@ for (let number = 0; number <= 10; number = number + 4) {
   console.log(number);
 }
 ```
-
-
-
-
 
 括号内必须包含关键字后的两个分号，第一个分号之前的部分通过描述一个绑定来分离循环。另一部分是决定循环是否继续的语句。以下是使用 `for` 替替 `while` 来计算 `2¹⁰` 的代码：
 
@@ -596,10 +585,10 @@ for (let counter = 0; counter < 10; counter = counter + 1) {
 }
 
 console.log(result);
-```
 // → 1024
+```
 
-### 跳出循环
+#### 跳出循环
 
 除了让循环条件变为 `false` 之外，还有其他其他方法可以结束循环。`break` 可以影响跳出受限循环。`break` 语句会执行此程序，直到找到第一个大于等于 `20` 且能被 `7` 整除的数字。
 
@@ -610,20 +599,24 @@ for (let current = 20; current = current + 1; current++) {
     break;
   }
 }
-```
 // → 21
+```
 
 `%` 运算符用于检查一个数字是否能被另一个数字整除。如果整除，则余数为零。示例中的 `for` 在循环结束时不会进行检查，这意味着直到循环内的 `break` 语句变为无限且不停止。
 
-### 简洁地更新绑定
+#### 简洁地更新绑定
 
 当你处于循环中时，程序会定期更新绑定以根据其上一个值存储一个值。
 
-`counter = counter + 1;`
+```
+counter = counter + 1;
+```
 
 JavaScript 提供了一种快捷方式。
 
-`counter += 1;`
+```
+counter += 1;
+```
 
 相关的快捷函数也适用于 `for` 的其他几个运算符，例如 `result *= 2` 用于乘以结果，或 `counter -= 1` 用于倒序计数。这使我们能够优化我们的计数示例。
 
@@ -635,9 +628,12 @@ for (let number = 0; number <= 12; number += 2) {
 
 对于 `counter += 1` 和 `counter -= 1`，这里有更短的等价：
 
-`counter++` 和 `counter--`。
+```
+counter++
+counter--
+```
 
-### 使用 switch 进行值分发
+#### 使用 switch 进行值分发
 
 使用 `switch` 对值进行分发可能如下：
 
@@ -670,7 +666,7 @@ switch (prompt("天气是什么样的？")) {
 }
 ```
 
-### 命名规范
+#### 命名规范
 
 名称绑定不允许空格，但它支持使用多个单词来定义绑定值。当用不同单词绑定名称时，可以使用以下几种类型：
 
@@ -679,7 +675,7 @@ switch (prompt("天气是什么样的？")) {
 * `FuzzyLittleTurtle`
 * `fuzzyLittleTurtle`
 
-### 注释
+#### 注释
 
 有时，原始代码并没有传递你想让程序发送给读者的每一条信息，或者以人们认为难以理解的方式传播信息。其他时候，你觉得应该给程序附带一些类似的想法，注释就发挥了这一功能。注释是程序中包含的一段文本，但计算机会忽略它。要编写单行注释，请使用双斜杠字符 `//`，后跟注释文本。
 
@@ -708,16 +704,11 @@ let x = "abc";
 console.log(x.length);
 ```
 
-
-
-
 ```javascript
 // 可可见代码
 
 console.log(x + z);
 ```
-
-# 40
 
 ### 嵌套作用域
 
@@ -822,9 +813,6 @@ console.log("Bye");
 
 `greetings` 调用影响控制跳转到函数的开头。`console.log` 调用完成其任务并夺回控制权，返回函数。
 
-
-
-
 ```javascript
 } else {
   return base * power(base, exponent - 1);
@@ -853,9 +841,8 @@ function findSolution(target) {
 }
 
 console.log(findSolution(24));
+// → (((1 * 3) + 5) * 3)
 ```
-
-`// → (((1 * 3) + 5) * 3)`
 
 内部函数 `find` 接受两个参数：数字 `current` 和记录获取该数字过程的字符串。如果找到了解决方案，它会返回一个显示通往 `target` 路径的字符串；如果没有找到，返回值将是 `null`。为了实现这一点，函数执行三个动作中的一个。如果你的 `current` 数字等于 `target`，你可以通过返回的 `current` 历史记录获取它。有时数字会大于 `target`，你不需要探索这个选项，因为加法和减法只会增加数字，因此返回 `null`。如果你仍低于 `target` 数字，则会通过两次调用自身来开启两条路径，一个用于加法，另一个用于乘法。如果第一次调用返回了有效内容，很好；否则返回第二次调用，无论提供的是字符串还是 `null` 都没有关系。下面是函数如何产生效果的示例。此示例搜索数字 `13`：
 
@@ -874,6 +861,7 @@ find(13, "((((((1 + 5) + 5) + 5) * 3) - 5) / 3) + 5) + 5)")
 找到了！缩进表示了栈中的所有发现。函数可以通过两种方式引入程序中。第一种是多次编写相似的代码，这可以在不重复编写的情况下实现更多功能，并留出自己的函数。你可以从命名函数并编写函数体开始。下面是一个示例。我们将编写一个产生两个数字的程序——农场上可用鸡的数量：
 
 `7` 头牛
+
 `11` 只鸡
 
 ```javascript
@@ -967,10 +955,6 @@ let Ah = a => a % 3;
 
 ### 答案
 
-
-
-
-
 如果你想处理大量的数字数据，你必须在机器内存中表示这些数字数据。例如，你需要表示一组类似于 `2`、`3`、`5`、`7` 和 `11` 的数字。现在让我们充分利用字符串，因为字符串可以包含大量数据。我们将使用 `2`、`3`、`5`、`7`、`11` 作为表示。JavaScript 语言提供了一种用于存储值序列的独特类型，称为 `array`。我们将 `array` 写为方括号内的值列表 `list`，并用逗号分隔。
 
 ```javascript
@@ -1003,7 +987,7 @@ null.length;
 
 在 JavaScript 中，评估属性的两种主要方法是使用点号（.）和方括号。`value.x` 和 `value[x]` 可以求值 `value` 上的属性，但并不特定是同一个属性。你使用 `x` 的方式与使用点号的方式不同。
 
-如果你想使用点号，你在点号后输入的文本是属性的名称。如果你打算使用方括号，则方括号内的表达式会被访问以获取属性名。`value.x` 交付的是 `value` 中名为“x”的属性，而 `value[x]` 则访问表达式 `x` 并利用其结果，将其转换为字符串作为属性名。如果你想要获取的属性名为 `color`，你应该输入 `value.color`。你可以从绑定 `i` 调用的值中提取属性，输入 `value[i]`。属性的名称是字符串，但点表示法仅对有效的绑定名有效。因此，如果你想评估一个名为 `2` 或 `John Doe` 的属性，请使用方括号：`value[2]` 或 `value["John Doe"]`。
+如果你想使用点号，你在点号后输入的文本是属性的名称。如果你打算使用方括号，则方括号内的表达式会被访问以获取属性名。`value.x` 交付的是 `value` 中名为"x"的属性，而 `value[x]` 则访问表达式 `x` 并利用其结果，将其转换为字符串作为属性名。如果你想要获取的属性名为 `color`，你应该输入 `value.color`。你可以从绑定 `i` 调用的值中提取属性，输入 `value[i]`。属性的名称是字符串，但点表示法仅对有效的绑定名有效。因此，如果你想评估一个名为 `2` 或 `John Doe` 的属性，请使用方括号：`value[2]` 或 `value["John Doe"]`。
 
 `array` 内的元素存储为 `array` 的属性，这些属性使用数字作为属性名。数组的 `length` 属性决定它包含多少项。该属性的名称是一个有效的绑定名。输入 `array.length` 来确定 `array` 的长度，这比输入 `array["length"]` 要简单得多。
 
@@ -1142,10 +1126,6 @@ let journal = [
 ];
 ```
 
-
-
-
-
 ```javascript
 {
   events: ["weekend", "cycling", "break", "peanuts", "beer"],
@@ -1155,7 +1135,7 @@ let journal = [
 ];
 ```
 
-# 可变性
+## 可变性
 
 我们讨论过不同的值，如 `Booleans`、`strings` 和 `Numbers`，这些值的值很难改变，尽管它们可以通过组合来获取新的值。`Objects`（对象）与值不同，它允许属性改变；可以在不同的时间为单个对象值创建不同的内容。
 
@@ -1193,7 +1173,7 @@ score = {visitors: 1, home: 1};
 
 当使用 JavaScript 的 `==` 运算符来区分对象时，它使用身份来执行该任务。如果对象包含相同的值，它将返回 `true`。区分多个对象将返回 `false`，即使它们的属性是类似的。
 
-# 狼人日志
+## 狼人日志
 
 现在，你启动了 JavaScript 解释器，并创建了记录日记所需的环境。
 
@@ -1216,7 +1196,9 @@ addEntry(["weekend", "cycling", "break", "peanuts", "beer"], true);
 
 让我们用事件 `eating pizza`（吃披萨）为例，将其插入频率表中，其中每个数字代表总次数，我们在测量中使用该组合。我们将表格命名为 `n`，并使用下面的公式计算 `φ`：
 
-`φ = n11n00A - n10n01 / sqrt(n1•n0•n•1n•0)` 
+```
+φ = n11n00A - n10n01 / sqrt(n1•n0•n•1n•0)
+```
 
 注释 `n01` 表示第一个变量变为 `false(0)` 且第二个变量变为 `true(1)` 的测量次数。披萨表 `n01` 值为 `9`。
 
@@ -1224,7 +1206,7 @@ addEntry(["weekend", "cycling", "break", "peanuts", "beer"], true);
 
 披萨表中，除法线上方将是 `1×76−4×9 = 40`，下方将是 `5×85×10×80` 的平方根，或 `√340000`。结果将是 `φ ≈ 0.069`，这是极小的。因此，吃披萨对转换没有影响。
 
-# 计算相关性
+## 计算相关性
 
 JavaScript 允许用四元素数组 `([76, 9, 4, 1])` 表示一个二二表格。其他表示法如持有两个二二元素的数组 `[[76, 9], [4, 1]]`，或包含如 `"11"` 和 `"01"` 属性名的对象，以及扁平数组，都会产生一个访问短索引的表达式。我们将数组索引解释为二位二进制数，其中高位引用 `squirrel` 变量，而低位引用 `event` 表。例如，二进制数 `10` 指的是 `"did turn into a squirrel"` 情况，但 `events` 没有出现。它发生了四次，二进制为十进制 `2`，数字存储在索引 `2`。该函数从数组计算 `φ` 系数：
 
@@ -1272,10 +1254,6 @@ for (let entry of journal) {
 
 使用 `of` 循环类型，循环将跨越 `of` 之后指定的元素。这种循环用于现代 JavaScript。
 
-
-
-
-
 ```javascript
 }
 
@@ -1293,14 +1271,19 @@ for (let event of journalEvents(JOURNAL)) {
 
   console.log(event + ":", phi(tableFor(event, JOURNAL)));
 }
-```
 
 // A→ carrot: 0.0140970969
+
 // A→ exercise: 0.0685994341
+
 // A→ weekend: 0.1371988681
+
 // A→ bread: -0.0757554019
+
 // A→ pudding: -0.0648203724
+
 // A and so on...
+```
 
 ```javascript
 let us = filter(results) to 仅显示大于 0.1 或小于 -0.1 的相关性。
@@ -1316,15 +1299,21 @@ for (let event of journalEvents(JOURNAL)) {
   }
 
 }
-```
 
 // A→ weekend: 0.1371988681
+
 // A→ brushedTeeth: -0.3805211953
+
 // A→ candy: 0.1296407447
+
 // A→ work: -0.1371988681
+
 // A→ spaghetti: 0.2425356250
+
 // A→ reading: 0.1106828054
+
 // A→ peanuts: 0.5902679812
+```
 
 在相关性因子中，一个比另一个更强。吃 `peanuts` 有极大的概率变成 `squirrel`，因此刷牙有显著的负面影响。这里有一点发现：
 
@@ -1525,8 +1514,6 @@ console.log(max(...numbers));
 // A→ 7
 ```
 
-
-
 随机数生成器乘以 10 并输出一个大于或等于 0 且小于 10 的数字。记住 `Math.floor` 向取整，输出将是 0 到 9 之间的任意数字。`Math` 对象包含了几个函数，类似于 `Math.ceil`（向上取整到整数）、`Math.round`（四舍五入到最近的整数）以及 `Math.abs`（该函数返回数字的值）。
 
 ### 解构
@@ -1564,7 +1551,7 @@ console.log(name);
 
 ### JSON
 
-JSON 代表 JavaScript 对象表示，用于 Web 的通信格式和数据存储。JSON 与 JavaScript 数组和对象的编写风格非常相似，尽管存在一些限制。它的属性名应该包含在双引号内，它只允许简单的数据表达式、绑定等。JSON 不允许注释。这里是一个用 JSON 数据表示的日志条目示例：
+JSON 代表 JavaScript 对象表示，用于 Web 的通信格式和数据存储。JSON 与 JavaScript 数组和对象的编写风格非常相似，尽管存在一些限制。它的属性名应该包含在双引号内，它只允许简单的数据表达式、绑定等。JSON 不允许评论。这里是一个用 JSON 数据表示的日志条目示例：
 
 ```json
 {
@@ -1599,14 +1586,20 @@ console.log(JSON.parse(string).events);
 编写一个 JavaScript 函数来获取数组中的第一项。设置参数 `n` 将返回数组的前 `n` 个元素。
 
 数据：
+
 ```javascript
 console.log(arrayClone([1, 2, 4, 0]));
 console.log(arrayClone([1, 2, 4, 0]));
 ```
-[1, 2, 4, 0]
+
+```
 [1, 2, 4, 0]
 
+[1, 2, 4, 0]
+```
+
 解决方案
+
 ![0035.jpg](img/0035.jpg) ![0184.jpg](img/0184.jpg)
 
 ## 第 6 章：高阶函数
@@ -1628,9 +1621,9 @@ console.log(total);
 console.log(sum(range(1, 10)));
 ```
 
-抽象
+### 抽象
 
-涉及到 JavaScript 语言时，词汇使用了“抽象”这一术语。抽象用于详细描述并赋予用户在更高层次讨论问题的能力。让我们区分两个食谱。
+涉及到 JavaScript 语言时，词汇使用了"抽象"这一术语。抽象用于详细描述并赋予用户在更高层次讨论问题的能力。让我们区分两个食谱。
 
 第一个：人拿着半个洋葱，使用刀，并将其放入汤中。
 
@@ -1701,9 +1694,6 @@ console.log(greaterThan10(11));
 
 你也可以拥有转换其他函数的函数。
 
-
-
-
 ```javascript
 function Anoisy(f) {
   return A(...args) A=>{
@@ -1717,8 +1707,11 @@ function Anoisy(f) {
 
 `noisy(Math.min)(3, A2, A1);`
 
+```
 // A→ calling Awith A[3, A2, A1]
+
 // A→ called Awith A[3, A2, A1], returned A1
+```
 
 你也可以编写产生产生一组新控制流的函数。
 
@@ -1728,25 +1721,27 @@ function unless(test, Athen) {
 }
 ```
 
-85
-
 ```javascript
 repeat(3, An A=>{
   unless(n A% A2== A1, () A=>{
     console.log(n, "is even");
   });
 });
-```
 
 // A→ A0 Is even
+
 // A→ A2 Is even
+```
 
-这个方法是一个内置数组方法 `forEach`，它作为一个高阶函数产生了一个类似于/of 循环的循环。
 
-`["A", "B"].forEach(l A=>console.log(l));`
 
-// A→ AA
-// A→ AB
+这个方法是一个内置数组方法`forEach`，它作为一个高阶函数产生了一个类似于`for/of`循环的循环。
+
+```javascript
+["A", "B"].forEach(l => console.log(l));
+// → A
+// → B
+```
 
 ### 过滤数组
 
@@ -1754,8 +1749,8 @@ repeat(3, An A=>{
 
 ```javascript
 function filter(array, test) {
-  let passed A= [];
-  for (let element Aof array) {
+  let passed = [];
+  for (let element of array) {
     if (test(element)) {
       passed.push(element);
     }
@@ -1764,128 +1759,138 @@ function filter(array, test) {
 }
 ```
 
-`console.log(filter(SCRIPTS, script A=> script.living));`
+```javascript
+console.log(filter(SCRIPTS, script => script.living));
+// → [{name: "Adlam", ...}, ...]
+```
 
-// A→ A[{name: "Adlam", ...}, ...]
+此函数利用名为`test`的参数（一个函数值）来填充计算过程中的空白。它决定了哪些元素应该被接收。
 
-此函数利用名为 `test` 的参数（一个函数值）来填充计算过程中的空白。它决定了哪些元素应该被接收。
+### 使用`map`进行转换
 
-### 使用 `map` 进行转换
-
-`map` 方法通过为数组的每一个元素设置一个函数来更改数组，并根据返回值创建一个新数组。新数组的长度与输入数组相同，但其内容通过该函数进行了映射。
+`map`方法通过为数组的每一个元素设置一个函数来更改数组，并根据返回值创建一个新数组。新数组的长度与输入数组相同，但其内容通过该函数进行了映射。
 
 ```javascript
 function map(array, transform) {
-  let mapped A= [];
-  for (let element Aof array) {
+  let mapped = [];
+  for (let element of array) {
     mapped.push(transform(element));
   }
   return mapped;
 }
 ```
 
-`let rtlScripts A= ASCRIPTS.filter(s A=> s.direction=="rtl");`
+```javascript
+let rtlScripts = SCRIPTS.filter(s => s.direction == "rtl");
+console.log(map(rtlScripts, s => s.name));
+// → ["Adlam", "Arabic", "Imperial Aramaic", ...]
+```
 
-`console.log(map(rtlScripts, s A=> s.name));`
+类似于`forEach`和`filter`。
 
-// A→ A["Adlam", "Arabic", "Imperial Aramaic", ...]
+### 使用`reduce`进行汇总
 
-类似于 `forEach` 和 `filter`。
-
-### 使用 `reduce` 进行汇总
-
-当你对数字求加时，从零开始并将每个元素加到总和中。`reduce` 的参数是一个 `map` 函数组合和一个初始值 A。这个函数比 `filter` 和 `map` 容易理解得多。如下：
+当你对数字求加时，从零开始并将每个元素加到总和中。`reduce`的参数是一个`combine`函数和一个初始值。这个函数比`filter`和`map`容易理解得多。如下：
 
 ```javascript
 function reduce(array, combine, begin) {
-  let current A= begin;
-  for (let items Aof array) {
-    existing A= combine(existing, element);
+  let current = begin;
+  for (let element of array) {
+    current = combine(current, element);
   }
-  return existing;
+  return current;
 }
 ```
 
-`console.log(reduce([0,1, A2, A3, A4], (a, b) A=> a+b, 0));`
+```javascript
+console.log(reduce([0, 1, 2, 3, 4], (a, b) => a + b, 0));
+// → 10
+```
 
-// A→ A10
+此函数类似于标准的数组方法`reduce`，并提供了更多的舒适性。
 
-此函数类似于标准的数组方法 `reduce`，并提供了更多的舒适性。
+```javascript
+console.log([1, 2, 3, 4].reduce((a, b) => a + b));
+// → 10
+```
 
-`console.log([1,2,3,4].reduce((a, b) A=> a+b));`
-
-// A→ A10
-
-如果你想利用 `reduce` 来搜索字符更多的脚本，可以这样写：
+如果你想利用`reduce`来搜索字符更多的脚本，可以这样写：
 
 ```javascript
 function characterCount(script) {
-  return script.ranges.reduce((count, [from, to]) A=>{
-    return count A+ (to-from);
+  return script.ranges.reduce((count, [from, to]) => {
+    return count + (to - from);
   }, 0);
 }
 ```
 
-`console.log(SCRIPTS.reduce((a, b) A=>{
-  return characterCount(a) <characterCount(b)? Ab:a;
-}));`
-
-// A→ A{name: "Han", ...}
+```javascript
+console.log(SCRIPTS.reduce((a, b) => {
+  return characterCount(a) < characterCount(b) ? b : a;
+}));
+// → {name: "Han", ...}
+```
 
 ### 可组合性
 
 花点时间思考，如果没有高阶函数，我们的代码列表会变成什么样。
 
 ```javascript
-let biggest A= null;
-for (let script Aof ASCRIPTS) {
-  if (biggest==null || characterCount(biggest) < characterCount(script)) {
-    biggest=script;
+let biggest = null;
+for (let script of SCRIPTS) {
+  if (biggest == null || characterCount(biggest) < characterCount(script)) {
+    biggest = script;
   }
 }
 ```
 
-`console.log(biggest);`
-
-// A→ A{name: "Han", ...}
+```javascript
+console.log(biggest);
+// → {name: "Han", ...}
+```
 
 当你想要组合操作时，可以使用高阶函数。例如，这里有一行代码用于在数据集中搜索人类脚本中存活和灭绝的平均年份。
 
 ```javascript
 function average(array) {
-  return array.reduce((a, b) A=> a+b) / array.length;
+  return array.reduce((a, b) => a + b) / array.length;
 }
 ```
 
-`console.log(Math.round(average(
-  SCRIPTS.filter(s A=> s.living).map(s A=> s.year))));`
+```javascript
+console.log(Math.round(average(
+  SCRIPTS.filter(s => s.living).map(s => s.year)
+)));
+// → 1165
+```
 
-// A→ A1165
-
-`console.log(Math.round(average(
-  SCRIPTS.filter(s A=> !s.living).map(s A=> s.year))));`
-
-// A→ A204
+```javascript
+console.log(Math.round(average(
+  SCRIPTS.filter(s => !s.living).map(s => s.year)
+)));
+// → 204
+```
 
 这段代码显示灭绝脚本比存活脚本更老。
 
 让我们从整个脚本开始，过滤掉死亡（或存活），提取年份，计算平均值并完成结果。你也可以将这些计算写在一个大循环中：
 
 ```javascript
-let total A=0, count A=0;
-for (let script Aof ASCRIPTS) {
+let total = 0, count = 0;
+for (let script of SCRIPTS) {
   if (script.living) {
-    total+=script.year;
-    count+=1;
+    total += script.year;
+    count += 1;
   }
 }
 ```
 
-`console.log(Math.round(total/count));`
+```javascript
+console.log(Math.round(total / count));
+// → 1165
+```
 
-// A→ A1165
-
-我们的两个例子并不完全相同，第一个在执行 `map` 和 `filter` 时创建一个新数组，而第二个只计算数字。
+我们的两个例子并不完全相同，第一个在执行`map`和`filter`时创建一个新数组，而第二个只计算数字。
 
 ### 字符串与字符代码
 
@@ -1895,9 +1900,9 @@ for (let script Aof ASCRIPTS) {
 
 ```javascript
 function characterScript(code) {
-  for (let script Aof ASCRIPTS) {
-    if (script.ranges.some(([from, to]) A=>{
-      return code>=from && code<to;
+  for (let script of SCRIPTS) {
+    if (script.ranges.some(([from, to]) => {
+      return code >= from && code < to;
     })) {
       return script;
     }
@@ -1906,44 +1911,39 @@ function characterScript(code) {
 }
 ```
 
-`console.log(characterScript(121));`
-
-// A→ A{name: "Latin", ...}
-
-另一个高阶函数是相同的方法。此方法获取一个 `test` 函数并判断数组中的任何组件是否让该函数返回真。
-
-JavaScript 字符串有一些操作，如使用 `length` 属性获取长度，以及通过括号评估内容。
-
-两个 emoji 字符，马
-`let horseShoe A= "🐴👟";`
-
-`console.log(horseShoe.length);`
-
-// A→ A4
-
-`console.log(horseShoe[0]);`
-
-// A→ half-character
-
-`console.log(horseShoe.charCodeAt(0));`
-
-// A→ A55357 (半字符的代码)
-
-`console.log(horseShoe.codePointAt(0));`
-
-// A→ A128052 (emoji 的实际代码)`
-
-JavaScript 的 `charCodeAt` 方法提供一个完整的字符。尽管参数 仍然是代码单元序列的索引。如果你使用 `codePointAt` 遍历字符串，它产生真实的字符而不是单元。
-
 ```javascript
-let roseDragon A= "🌹🐉";
-for (let char Aof roseDragon) {
-  console.log(char);
-}
+console.log(characterScript(121));
+// → {name: "Latin", ...}
 ```
 
-// A→ 🌹
-// A→ 🐉
+另一个高阶函数是相同的方法。此方法获取一个`test`函数并判断数组中的任何组件是否让该函数返回真。
+
+JavaScript字符串有一些操作，如使用`length`属性获取长度，以及通过括号评估内容。
+
+两个emoji字符，马
+
+```javascript
+let horseShoe = "🐴👟";
+console.log(horseShoe.length);
+// → 4
+console.log(horseShoe[0]);
+// → half-character
+console.log(horseShoe.charCodeAt(0));
+// → 55357 (半字符的代码)
+console.log(horseShoe.codePointAt(0));
+// → 128052 (emoji的实际代码)
+```
+
+JavaScript的`charCodeAt`方法提供一个完整的字符。尽管参数仍然是代码单元序列的索引。如果你使用`codePointAt`遍历字符串，它产生真实的字符而不是单元。
+
+```javascript
+let roseDragon = "🌹🐉";
+for (let char of roseDragon) {
+  console.log(char);
+}
+// → 🌹
+// → 🐉
+```
 
 ### 识别文本
 
@@ -1951,12 +1951,12 @@ for (let char Aof roseDragon) {
 
 ```javascript
 function countBy(items, groupName) {
-  let counts A= [];
-  for (let item Aof items) {
-    let name A= groupName(item);
-    let known A= counts.findIndex(c A=> c.number==name);
-    if (known A==-1) {
-      counts.push({number:name, count:0});
+  let counts = [];
+  for (let item of items) {
+    let name = groupName(item);
+    let known = counts.findIndex(c => c.name == name);
+    if (known == -1) {
+      counts.push({name: name, count: 0});
     } else {
       counts[known].count++;
     }
@@ -1965,14 +1965,12 @@ function countBy(items, groupName) {
 }
 ```
 
-`console.log(countBy([0,1,2,3,4,5], n A=> n>2));`
+```javascript
+console.log(countBy([0, 1, 2, 3, 4, 5], n => n > 2));
+// → [{name: false, count: 2}, {name: true, count: 3}]
+```
 
-// A→ A[{number: false, count:2}, {number: true, count:3}]
-
-
-
-
-`findIndex` 方法与 `indexOf` 相似。该方法用于搜索使指定 `function` 返回 `true` 的第一个 `value`（value），并且当未找到 `zero` 个元素时返回 `-1`。你可以使用 `countBy` 来确定文本 `block` 中使用了哪种脚本（script）。
+`findIndex`方法与`indexOf`相似。该方法用于搜索使指定`function`返回`true`的第一个`value`，并且当未找到元素时返回`-1`。你可以使用`countBy`来确定文本中使用了哪种脚本。
 
 ```javascript
 function textScripts(text) {
@@ -1986,7 +1984,7 @@ function textScripts(text) {
   if (total == 0) return "No scripts found";
 
   return scripts.map(({name, count}) => {
-    return `${Math.round(count * 100 / total)}%${name}`;
+    return `${Math.round(count * 100 / total)}% ${name}`;
   }).join(", ");
 }
 
@@ -1994,61 +1992,59 @@ console.log(textScripts('英国的狗说"woof", 俄罗斯的狗说"тяв"'));
 // → 61% Han, 22% Latin, 17% Cyrillic
 ```
 
-该 `function` 通过使用 `characterScript` 按 `name` 计算字符，为其附加一个 `name`，并对没有任何脚本的字符返回字符串 `"none"`。如果你想计算百分比，需要确定 `reduce` 方法可以处理的属于 `script` 的字符总数 `total`。如果找到 `zero` 个字符，`function` 将返回 `"none"` 字符串。
+该`function`通过使用`characterScript`按`name`计算字符，为其附加一个`name`，并对没有任何脚本的字符返回字符串`"none"`。如果你想计算百分比，需要确定`reduce`方法可以处理的属于`script`的字符总数`total`。如果找到`zero`个字符，`function`将返回`"No scripts found"`字符串。
 
 ### 总结
 
-能够将 `function` `values` 传递给多个 `functions` 是 `JavaScript` 的一个重要方面。它允许编写在计算之间留有“间隙”的函数。声明这些函数的代码可以通过提供 `function` `values` 来包含这些间隙。`Arrays` 提供了几个重要的高阶方法。使用 `forEach` 遍历 `array` 中的元素。使用 `filter` 方法返回一个包含通过 `predicate` `function` 测试元素的新 `array`。使用 `map` 通过 `function` 设置每个 `item` 来更改 `array`。使用 `reduce` 将 `array` 的每个组件合并为一个单个 `value`。
+能够将`function` `values`传递给多个`functions`是`JavaScript`的一个重要方面。它允许编写在计算之间留有"间隙"的函数。声明这些函数的代码可以通过提供`function` `values`来包含这些间隙。`Arrays`提供了几个重要的高阶方法。使用`forEach`遍历`array`中的元素。使用`filter`方法返回一个包含通过`predicate` `function`测试元素的新`array`。使用`map`通过`function`设置每个`item`来更改`array`。使用`reduce`将`array`的每个组件合并为一个单个`value`。
 
 ### 练习
 
-编写一个 `JavaScript` `function`，它接收一个保存的数字 `array`，并搜索第二低和第二高的 `numbers`。
+编写一个`JavaScript` `function`，它接收一个保存的数字`array`，并搜索第二低和第二高的`numbers`。
 
 ### 答案
 
 ![00160.jpg](img/00160.jpeg)![00139.jpg](img/00139.jpeg)
 
-## 第 7 章：对象的秘密生活
+## 第7章：对象的秘密生活
 
-在涉及编程语言时，有一套将 `objects` 作为程序组织基本思想的技术，它们被称为面向对象编程。这一概念将在本章中进一步解释。
+在涉及编程语言时，有一套将`objects`作为程序组织基本思想的技术，它们被称为面向对象编程。这一概念将在本章中进一步解释。
 
 ### 封装
 
-面向对象编程的主要意义是将程序拆分为小部分，并确保每个部分管理自己的区域。几个相似的程序片段通过 `interfaces` 相互通信，`interfaces` 是受限制的 `functions` 集合或绑定，在更高层次上产生核心功能，同时隐藏具体的执行细节。通过 `objects` 展示这种类型的程序片段，它们的布局包含一组特定的 `properties` 和 `methods`。布局中的属性是 `public`（公共的），而外部代码是 `private`（私有的）。在注释或文档定义可访问的布局。通常在属性名开头使用下划线（`_`）来表示 `private` `properties`。同时，将布局从执行中分离出来被称为“封装”。
+面向对象编程的主要意义是将程序拆分为小部分，并确保每个部分管理自己的区域。几个相似的程序片段通过`interfaces`相互通信，`interfaces`是受限制的`functions`集合或绑定，在更高层次上产生核心功能，同时隐藏具体的执行细节。通过`objects`展示这种类型的程序片段，它们的布局包含一组特定的`properties`和`methods`。布局中的属性是`public`（公共的），而外部代码是`private`（私有的）。在注释或文档定义可访问的布局。通常在属性名开头使用下划线（`_`）来表示`private` `properties`。同时，将布局从执行中分离出来被称为"封装"。
 
 ### 方法
 
-方法是获取 `function` `values` 的 `properties`。
+方法是获取`function` `values`的`properties`。
 
 ```javascript
 let rabbit = {};
-
 rabbit.speak = function(line) {
-  console.log(`The Arabbit says '${line}'`);
+  console.log(`The ${this.type} rabbit says '${line}'`);
 };
-
 rabbit.speak("I'm alive.");
-// → The Arabbit says 'I'm alive.'
+// → The rabbit says 'I'm alive.'
 ```
 
-当你把 `function` 作为 `method` 调用时，绑定会在其体内调用它，并将其指向调用它的 `object`。
+当你把`function`作为`method`调用时，绑定会在其体内调用它，并将其指向调用它的`object`。
 
 ```javascript
 function speak(line) {
-  console.log(`The ${this.type} Arabbit says '${line}'`);
+  console.log(`The ${this.type} rabbit says '${line}'`);
 }
 
 let whiteRabbit = {type: "white", speak};
 let hungryRabbit = {type: "hungry", speak};
 
-whiteRabbit.speak("Oh Amy Whiskers," + "how late it's getting!");
-// → The white Arabbit says 'Oh Amy Whiskers, how late it's getting!'
+whiteRabbit.speak("Oh my whiskers," + "how late it's getting!");
+// → The white rabbit says 'Oh my whiskers, how late it's getting!'
 
 hungryRabbit.speak("I could use a carrot right now.");
-// → The hungry Arabbit says 'I could use a carrot right now.'
+// → The hungry rabbit says 'I could use a carrot right now.'
 ```
 
-箭头函数 `functions` 不绑定它们自己的 `this`。你可以编写以下代码：
+箭头函数`functions`不绑定它们自己的`this`。你可以编写以下代码：
 
 ```javascript
 function normal() {
@@ -2061,46 +2057,40 @@ normal.call({coords: [0, 2, 3], length: 5});
 
 ### 原型
 
-留意 `this`。
+留意`this`。
 
 ```javascript
 let empty = {};
-
 console.log(empty.toString);
 // → function toString() { ... }
-```
-
-```javascript
 console.log(empty.toString());
 // → [object Object]
 ```
 
-`empty` 的 `prototype` 是 `Object.prototype`。许多 `JavaScript` 对象包含一个 `prototype`，因此它们继承自 `Object.prototype`。
+`empty`的`prototype`是`Object.prototype`。许多`JavaScript`对象包含一个`prototype`，因此它们继承自`Object.prototype`。
 
 ```javascript
 console.log(Object.getPrototypeOf({}) === Object.prototype);
 // → true
-
 console.log(Object.getPrototypeOf(Object.prototype));
-// →
+// → null
 ```
 
-对象的 `prototype` 默认是 `Object.prototype`。但 `Functions` 继承自 `Function.prototype`，而 `arrays` 继承自 `Array.prototype`。
+对象的`prototype`默认是`Object.prototype`。但`Functions`继承自`Function.prototype`，而`arrays`继承自`Array.prototype`。
 
 ```javascript
 console.log(Object.getPrototypeOf(Math.max) === Function.prototype);
 // → true
-
 console.log(Object.getPrototypeOf([]) === Array.prototype);
 // → true
 ```
 
-对象的 `prototype` 可以被设置或更改。使用 `Object.create` 构建一个具有特定 `prototype` 的对象。
+对象的`prototype`可以被设置或更改。使用`Object.create`构建一个具有特定`prototype`的对象。
 
 ```javascript
 let protoRabbit = {
   speak(line) {
-    console.log(`The ${this.type} Arabbit says '${line}'`);
+    console.log(`The ${this.type} rabbit says '${line}'`);
   }
 };
 
@@ -2108,12 +2098,12 @@ let killerRabbit = Object.create(protoRabbit);
 killerRabbit.type = "killer";
 
 killerRabbit.speak("SKREEE!");
-// → The killer Arabbit says 'SKREEE!'
+// → The killer rabbit says 'SKREEE!'
 ```
 
 ### 类
 
-JavaScript 的 `prototype` 系统可以被描述辅助方法 `classes`。`class` 描述了一个对象类型的形状、它的 `properties` 和 `methods`。`Prototypes` 用于描述每个实例共享相似 `values`（如 `methods`）的属性。如果你想构建一个 `class` 的实例，创建一个继承自普通 `Prototype` 的对象。确保它包含了应该包含在该 `class` 实例中的 `properties`。以下是 `constructor` 函数。
+JavaScript的`prototype`系统可以被描述辅助方法`classes`。`class`描述了一个对象类型的形状、它的`properties`和`methods`。`Prototypes`用于描述每个实例共享相似`values`（如`methods`）的属性。如果你想构建一个`class`的实例，创建一个继承自普通`Prototype`的对象。确保它包含了应该包含在该`class`实例中的`properties`。以下是`constructor`函数。
 
 ```javascript
 function Rabbit(type) {
@@ -2121,28 +2111,24 @@ function Rabbit(type) {
 }
 
 Rabbit.prototype.speak = function(line) {
-  console.log(`The ${this.type} Arabbit says '${line}'`);
+  console.log(`The ${this.type} rabbit says '${line}'`);
 };
 
 let weirdRabbit = new Rabbit("weird");
 ```
 
-
-
-
-`Function.prototype` 拥有 `constructor`、`name`、`length`、`prototype`、`util`、`for`、`instances`、`built` 和 `through`。
+`Function.prototype`拥有`constructor`、`name`、`length`、`prototype`等属性。
 
 ```javascript
 console.log(Object.getPrototypeOf(Rabbit) == Function.prototype);
-// A→ true
-
+// → true
 console.log(Object.getPrototypeOf(weirdRabbit) == Rabbit.prototype);
-// A→ true
+// → true
 ```
 
 ### 类注解
 
-JavaScript `classes` 是带有 `prototype` 属性的 `constructor` 函数。以下是一个示例：
+JavaScript `classes`是带有`prototype`属性的`constructor`函数。以下是一个示例：
 
 ```javascript
 class Rabbit {
@@ -2150,15 +2136,15 @@ class Rabbit {
     this.type = type;
   }
   speak(line) {
-    console.log(`The ${this.type} Rabbit says '${line}'`);
+    console.log(`The ${this.type} rabbit says '${line}'`);
   }
 }
+
+let killerRabbit = new Rabbit("killer");
+let blackRabbit = new Rabbit("black");
 ```
 
-`let killerRabbit = new Rabbit("killer");`
-`let blackRabbit = new Rabbit("black");`
-
-`class` 关键字以类声明开始，允许你可以在特定位置描述 `constructor` 和一组方法。`Class` 声明允许将方法、可以作为函数调用的属性以及函数包含在 `prototype` 中。当你使用表达式时，它并不描述一个绑定，而是提供 `constructor` 作为值。你可以从表达式中排除类名。
+`class`关键字以类声明开始，允许你可以在特定位置描述`constructor`和一组方法。`Class`声明允许将方法、可以作为函数调用的属性以及函数包含在`prototype`中。当你使用表达式时，它并不描述一个绑定，而是提供`constructor`作为值。你可以从表达式中排除类名。
 
 ```javascript
 let object = new class {
@@ -2167,49 +2153,49 @@ let object = new class {
   }
 };
 console.log(object.getWord());
-// A→ hello
+// → hello
 ```
 
 ### 覆盖派生属性
 
-当属性被添加到 `object` 时（无论该属性在 `prototype` 中是否可用），该属性都会被添加到 `object` 中。如果 `prototype` 中存在具有相似名称的赋值属性，它不会影响该 `object`。
+当属性被添加到`object`时（无论该属性在`prototype`中是否可用），该属性都会被添加到`object`中。如果`prototype`中存在具有相似名称的赋值属性，它不会影响该`object`。
 
 ```javascript
 Rabbit.prototype.teeth = "small";
 console.log(killerRabbit.teeth);
-// A→ small
+// → small
 
 killerRabbit.teeth = "long, sharp, and bloody";
 console.log(killerRabbit.teeth);
-// A→ long, sharp, and bloody
+// → long, sharp, and bloody
 
 console.log(blackRabbit.teeth);
-// A→ small
+// → small
 
 console.log(Rabbit.prototype.teeth);
-// A→ small
+// → small
 ```
 
-覆盖属性用于将标准函数和数组原型存储为单独的 `toString` 方法。
+覆盖属性用于将标准函数和数组原型存储为单独的`toString`方法。
 
 ```javascript
 console.log(Array.prototype.toString == Object.prototype.toString);
-// A→ false
+// → false
 
 console.log([1, 3].toString());
-// A→ 1,3
+// → 1,3
 ```
 
-在数组上调用 `toString` 会得到一个与对它调用 `join(",")` 关联的结果。它在数组包含的值之间放置一个逗号。如果你在数组上调用 `Object.prototype.toString`，它将提供一个单独的字符串。
+在数组上调用`toString`会得到一个与对它调用`join(",")`关联的结果。它在数组包含的值之间放置一个逗号。如果你在数组上调用`Object.prototype.toString`，它将提供一个单独的字符串。
 
 ```javascript
 console.log(Object.prototype.toString.call([1, 3]));
-// A→ [object Array]
+// → [object Array]
 ```
 
-字体 映射 (Maps)
+### 映射 (Maps)
 
-`map` 是一种将值与其他值连接起来的数据布局。如果你想将名称映射到年龄，可以这样写你的代码：
+`map`是一种将值与其他值连接起来的数据布局。如果你想将名称映射到年龄，可以这样写你的代码：
 
 ```javascript
 let ages = {
@@ -2217,15 +2203,17 @@ let ages = {
   Liang: 22,
   Júlia: 62
 };
-console.log(`Julia is ${ages["Julia"]}`);
-// A→ Julia is 62
+console.log(`Júlia is ${ages["Júlia"]}`);
+// → Júlia is 62
 
-console.log("Is Jack's age known?", "Jack" in ages); // A→ Is Jack's age known? false
+console.log("Is Jack's age known?", "Jack" in ages);
+// → Is Jack's age known? false
 
-console.log("Is toString's age known?", "toString" in ages); // A→ Is toString's age known? true
+console.log("Is toString's age known?", "toString" in ages);
+// → Is toString's age known? true
 ```
 
-`Object` 属性名应该是字符串。如果你想要一个键不能转换为字符串的映射，请不要使用 `object` 作为映射。JavaScript 包含一个名为 `Map` 的类。它保存映射关系并允许不同类型的键。
+`Object`属性名应该是字符串。如果你想要一个键不能转换为字符串的映射，请不要使用`object`作为映射。JavaScript包含一个名为`Map`的类。它保存映射关系并允许不同类型的键。
 
 ```javascript
 let ages = new Map();
@@ -2233,89 +2221,80 @@ ages.set("Boris", 39);
 ages.set("Liang", 22);
 ages.set("Júlia", 62);
 console.log(`Júlia is ${ages.get("Júlia")}`);
-// A→ Júlia is 62
+// → Júlia is 62
 
-console.log("Is Jack's age known?", ages.has("Jack")); // A→ Is Jack's age known? false
+console.log("Is Jack's age known?", ages.has("Jack"));
+// → Is Jack's age known? false
 
-console.log(ages.has("toString")); // A→ false
+console.log(ages.has("toString"));
+// → false
 ```
 
-`get`、`set` 和 `has` 方法是 `map` 对象布局的主体。`Object.keys` 仅返回对象的自身的键。你可以使用 `hasOwnProperty` 方法作为选项。
+`get`、`set`和`has`方法是`map`对象布局的主体。`Object.keys`仅返回对象的自身的键。你可以使用`hasOwnProperty`方法作为选项。
 
 ```javascript
-console.log({x: 1}.hasOwnProperty("x")); // A→ true
+console.log({x: 1}.hasOwnProperty("x"));
+// → true
 
-console.log({x: 1}.hasOwnProperty("toString")); // A→ false
+console.log({x: 1}.hasOwnProperty("toString"));
+// → false
 ```
 
 ### 多态 (Polymorphism)
 
-当在 `object` 上调用字符串函数时，会调用该对象上的 `toString` 方法以从其构建有意义的字符串。你可以定义自己的 `toString` 版本，以便它们可以构建出比“[[object Object]]”包含更多重要数据的字符串。以下是一个示例：
+当在`object`上调用字符串函数时，会调用该对象上的`toString`方法以从其构建有意义的字符串。你可以定义自己的`toString`版本，以便它们可以构建出比"[[object Object]]"包含更多重要数据的字符串。以下是一个示例：
 
 ```javascript
 Rabbit.prototype.toString = function() {
-  return `a ${this.type} Rabbit`;
+  return `a ${this.type} rabbit`;
 };
 console.log(String(blackRabbit));
-// A→ a black Rabbit
+// → a black rabbit
 ```
 
-`Symbols` 是使用 `Symbol` 函数构建的唯一值，不能构建两次。
+`Symbols`是使用`Symbol`函数构建的唯一值，不能构建两次。
 
 ```javascript
 let sym = Symbol("name");
-console.log(sym == Symbol("name")); // A→ false
+console.log(sym == Symbol("name"));
+// → false
 
 Rabbit.prototype[sym] = 55;
-console.log(blackRabbit[sym]); // A→ 55```
-
-传递给 `Symbol` 的字符串在将其转换为字符串时会被附上。它们是独特的。
-
-```javascript
-let sym = Symbol("name");
-console.log(sym == Symbol("name")); // A→ false
-
-Rabbit.prototype[sym] = 55;
-console.log(blackRabbit[sym]); // A→ 55
-```
-*(抱歉，由于原文中存在部分重复内容，此处已根据“不要重复输出原文”的原则进行修正，如下：)*
-
-`Symbols` 是使用 `Symbol` 函数构建的唯一值，不能构建两次。
-
-```javascript
-let sym = Symbol("name");
-console.log(sym == Symbol("name")); // A→ false
-
-Rabbit.prototype[sym] = 55;
-console.log(blackRabbit[sym]); // A→ 55
+console.log(blackRabbit[sym]);
+// → 55
 ```
 
-传递给 `Symbol` 的字符串在将其转换为字符串时会被附上。它们是独特的。
+传递给`Symbol`的字符串在将其转换为字符串时会被附上。它们是独特的。
 
-通过使用方括号包裹属性名，可以在 `object` 类上附加 `Symbol` 属性。以下我们引用。
+通过使用方括号包裹属性名，可以在`object`类上附加`Symbol`属性。以下我们引用。
 
 ```javascript
 const toStringSymbol = Symbol("toString");
 Array.prototype[toStringSymbol] = function() {
   return `${this.length} cm of yarn`;
 };
-console.log([1, 2].toString()); // A→ 1,2
+console.log([1, 2].toString());
+// → 1,2
 
-console.log([1, 2][toStringSymbol]()); // A→ 2 cm of yarn
+console.log([1, 2][toStringSymbol]());
+// → 2 cm of yarn
 ```
 
-`iterator` 接口在调用 `Symbol.iterator` 属性时返回一个 `object`。它返回一个包含下一个值的 `next` 方法。
+`iterator`接口在调用`Symbol.iterator`属性时返回一个`object`。它返回一个包含下一个值的`next`方法。
 
 ```javascript
 let okIterator = "OK"[Symbol.iterator]();
-console.log(okIterator.next()); // A→ {value: "O", done: false}
+console.log(okIterator.next());
+// → {value: "O", done: false}
 
-console.log(okIterator.next()); // A→ {value: "K", done: false}
+console.log(okIterator.next());
+// → {value: "K", done: false}
 
-console.log(okIterator.next()); // A→ {value: undefined, done: true}
+console.log(okIterator.next());
+// → {value: undefined, done: true}
 ```
 
-让我们实现一个数据结构。我们将构建一个 `matrix` 类，作为一个二维数组。类的 `content` 存储在一个包含 `width × height` 个元素的数组中。这些元素按行存储。`constructor` 函数获取 `width`、`height` 和一个可选的 `element` 函数，用于设置初始值。使用 `get` 和 `set` 方法来获取和更新矩阵中的元素。
+让我们实现一个数据结构。我们将构建一个`matrix`类，作为一个二维数组。类的`content`存储在一个包含`width × height`个元素的数组中。这些元素按行存储。`constructor`函数获取`width`、`height`和一个可选的`element`函数，用于设置初始值。使用`get`和`set`方法来获取和更新矩阵中的元素。
 
 ```javascript
 class Matrix {
@@ -2323,9 +2302,9 @@ class Matrix {
     this.width = width;
     this.height = height;
     this.content = [];
-    for (let Ay = 0; Ay < height; Ay++) {
-      for (let Ax = 0; Ax < width; Ax++) {
-        this.content[Ay * width + Ax] = element(Ax, Ay);
+    for (let y = 0; y < height; y++) {
+      for (let x = 0; x < width; x++) {
+        this.content[y * width + x] = element(x, y);
       }
     }
   }
@@ -2338,166 +2317,136 @@ class Matrix {
 }
 ```
 
-以下是一个可迭代 `Matrix` 类的示例：
+以下是一个可迭代`Matrix`类的示例：
 
 ```javascript
 Matrix.prototype[Symbol.iterator] = function() {
-
-
-
-
-
-```javascript
-return new AMatrixIterator(this);
-
+  return new MatrixIterator(this);
 };
 ```
 
-我们可以使用 `new`, `of`, `loop`, `over`, `as`, `matrix`, `with`, `for/of`。
+我们可以使用`for/of`循环遍历`matrix`。
 
 ```javascript
-let matrix = new AMatrix(2, 2, (x, y) => `value ${x},${y}`);
-
+let matrix = new Matrix(2, 2, (x, y) => `value ${x},${y}`);
 for (let {x, y, value} of matrix) {
-
   console.log(x, y, value);
-
 }
+// → 0 0 value 0,0
+// → 1 0 value 1,0
+// → 0 1 value 0,1
+// → 1 1 value 1,1
 ```
 
-// A→ 0 0 value 0,0
-// A→ 1 0 value 1,0
-// A→ 0 1 value 0,1
-// A→ 1 1 value 1,1
+### 静态方法、Getter和Setter
 
-### 静态方法、Getter 和 Setter
-
-布局（Layouts）由方法组成，但你也可以附加存储值的非函数属性，类似于 `Map` 或包含 `size` 属性的 `object`，该属性决定了其中保存了多少键。一个被评估的属性可以隐藏方法调用。这些方法被称为 getter（get），你可以通过在类声明或对象表达式中的方法名开头编写 "get" 来描述它们。
+布局（Layouts）由方法组成，但你也可以附加存储值的非函数属性，类似于`Map`或包含`size`属性的`object`，该属性决定了其中保存了多少键。一个被评估的属性可以隐藏方法调用。这些方法被称为getter，你可以通过在类声明或对象表达式中的方法名开头编写"get"来描述它们。
 
 ```javascript
 let varyingSize = {
-
   get size() {
-
     return Math.floor(Math.random() * 100);
-
   }
-
 };
 
 console.log(varyingSize.size);
+// → 73
 
-// A→ 73
 console.log(varyingSize.size);
-
-// A→ 49
+// → 49
 ```
 
-当你想要使用对象的 `size` 属性时，你会调用关联的方法。当你有一个 setter 的属性时，也可以执行类似的任务。
+当你想要使用对象的`size`属性时，你会调用关联的方法。当你有一个setter的属性时，也可以执行类似的任务。
 
 ```javascript
 class Temperature {
-
   constructor(celsius) {
     this.celsius = celsius;
   }
-
   get fahrenheit() {
     return this.celsius * 1.8 + 32;
   }
-
   set fahrenheit(value) {
     this.celsius = (value - 32) / 1.8;
   }
-
   static fromFahrenheit(value) {
     return new Temperature((value - 32) / 1.8);
   }
-
 }
 ```
 
 ```javascript
 let temp = new Temperature(22);
-
 console.log(temp.fahrenheit);
+// → 71.6
 
-// A→ 71.6
 temp.fahrenheit = 86;
-
 console.log(temp.celsius);
-
-// A→ 30
+// → 30
 ```
 
-`Temperature` 类允许你读取和写入摄氏度或华氏度的温度，但它只保存摄氏度，并在 `fahrenheit` getter 和 setter 中进行摄氏度之间的转换。在类声明中，`static`（静态）方法写在它们保存到 `constructor`（构造函数）之前之前。因此，你可以通过 `Temperature.fromFahrenheit(100)` 来通过华氏度构建温度。
+`Temperature`类允许你读取和写入摄氏度或华氏度的温度，但它只保存摄氏度，并在`fahrenheit` getter和setter中进行摄氏度之间的转换。在类声明中，`static`（静态）方法写在它们保存到`constructor`（构造函数）之前。因此，你可以通过`Temperature.fromFahrenheit(100)`来通过华氏度构建温度。
 
 ### 继承
 
-某些矩阵是非对称的。当通过其左上角到右下角的对角线对非对称矩阵进行反射时，它不会改变。设置在 `x,y` 处的值与 `y,x` 处的值相同。使用 JavaScript 的 `prototype` 系统来构建一个新类，新类的 `prototype` 从旧原型获取，但为该方法设置了新的定义。这在面向对象编程中被称为继承。下面是一个插图：
+某些矩阵是非对称的。当通过其左上角到右下角的对角线对非对称矩阵进行反射时，它不会改变。设置在`x,y`处的值与`y,x`处的值相同。使用JavaScript的`prototype`系统来构建一个新类，新类的`prototype`从旧原型获取，但为该方法设置了新的定义。这在面向对象编程中被称为继承。下面是一个插图：
 
 ```javascript
-class AsymmetricMatrix extends AMatrix {
-
+class AsymmetricMatrix extends Matrix {
   constructor(size, element = (x, y) => undefined) {
     super(size, size, (x, y) => {
       if (x < y) return element(y, x);
       else return element(x, y);
     });
   }
-
   set(x, y, value) {
     super.set(x, y, value);
     if (x != y) {
       super.set(y, x, value);
     }
   }
-
 }
 ```
 
 ```javascript
 let matrix = new AsymmetricMatrix(5, (x, y) => `${x},${y}`);
-
 console.log(matrix.get(2, 3));
-
-// A→ 3,2
+// → 3,2
 ```
 
-### `instanceof` 运算符
+### `instanceof`运算符
 
-了解一个对象是否是从某个特定的 `instanceof` 获取的重要的。
+了解一个对象是否是从某个特定的`instanceof`获取的是重要的。
 
 ```javascript
 console.log(new AsymmetricMatrix(2) instanceof AsymmetricMatrix);
+// → true
 
-// A→ true
-console.log(new AsymmetricMatrix(2) instanceof AMatrix);
+console.log(new AsymmetricMatrix(2) instanceof Matrix);
+// → true
 
-// A→ true
-console.log(new AMatrix(2, 2) instanceof AsymmetricMatrix);
+console.log(new Matrix(2, 2) instanceof AsymmetricMatrix);
+// → false
 
-// A→ false
 console.log([1] instanceof Array);
-
-// A→ true
+// → true
 ```
 
-该运算符将扫描所继承的类型。因此，`AsymmetricMatrix` 是 `AMatrix` 的实例。你也可以将此方法应用于标准构造函数，如 `Array`。
+该运算符将扫描所继承的类型。因此，`AsymmetricMatrix`是`Matrix`的实例。你也可以将此方法应用于标准构造函数，如`Array`。
 
 ### 总结
 
-在本章中，我们意识到对象执行的操作不仅仅是持有它们的属性。它们还由也是对象的原型（prototype）组成。只要 `prototype` 拥有该属性，它们的行为就像包含了它们本身没有提供的属性一样。简单对象使用 `Object`。`Prototype` 代表它们的原型。我们还讨论了构造函数，它们是函数，名称通常以大写字母开头，并配合 `new` 运算符用于构建新对象。新对象的 `prototype` 将是构造函数中 `prototype` 属性内部的对象。`class` 语法提供了一种描述构造函数及其原型的方法。我们还触及了 getter、setter、静态方法以及 `instanceof` 运算符。
+在本章中，我们意识到对象执行的操作不仅仅是持有它们的属性。它们还由也是对象的原型组成。只要`prototype`拥有该属性，它们的行为就像包含了它们本身没有提供的属性一样。简单对象使用`Object`。`Prototype`代表它们的原型。我们还讨论了构造函数，它们是函数，名称通常以大写字母开头，并配合`new`运算符用于构建新对象。新对象的`prototype`将是构造函数中`prototype`属性内部的对象。`class`语法提供了一种描述构造函数及其原型的方法。我们还触及了getter、setter、静态方法以及`instanceof`运算符。
 
 ### 练习
 
-编写一个 JavaScript 程序，通过迭代器函数和一个主种子值创建一个数组。
+编写一个JavaScript程序，通过迭代器函数和一个主种子值创建一个数组。
 
 ### 答案
 
 ![0019](https://example.com/images/0019.jpg)
 
-## 第 8 章：机器人
+## 第8章：机器人
 
 在本章中，我们将使用一个迭代器函数和一个主种子值创建一个数组。
 
@@ -2505,314 +2454,7 @@ console.log([1] instanceof Array);
 
 ![0019](https://example.com/images/0019.jpg)
 
-## 第 8 章：机器人
-
-在本章中，我们将使用一个迭代器函数和一个主种子值创建一个数组。
-
-### 答案
-
-![0019](https://example.com/images/0019.jpg)
-
-## 第 8 章：机器人
-
-在本章中，我们将使用一个迭代器函数和一个主种子值创建一个数组。
-
-### 答案
-
-![0019](https://example.com/images/0019.jpg)
-
-## 第 8 章：机器人
-
-在本章中，我们将使用一个迭代器函数和一个主种子值创建一个数组。
-
-### 答案
-
-![0019](https://example.com/images/0019.jpg)
-
-## 第 8 章：机器人
-
-在本章中，我们将使用一个迭代器函数和一个主种子值创建一个数组。
-
-### 答案
-
-![0019](https://example.com/images/0019.jpg)
-
-## 第 8 章：机器人
-
-在本章中，我们将使用一个迭代器函数和一个主种子值创建一个数组。
-
-### 答案
-
-![0019](https://example.com/images/0019.jpg)
-
-## 第 8 章：机器人
-
-在本章中，我们将使用一个迭代器函数和一个主种子值创建一个数组。
-
-### 答案
-
-![0019](https://example.com/images/0019.jpg)
-
-## 第 8 章：机器人
-
-在本章中，我们将使用一个迭代器函数和一个主种子值创建一个数组。
-
-### 答案
-
-（注：由于提供的原始文本中“第 8 章：机器人”部分存在重复，此处按要求仅翻译核心逻辑内容，以下为正文翻译：）
-
-`Temperature` 类允许你读取和写入摄氏度或华氏度的温度，但它只保存摄氏度，并在 `fahrenheit` getter 和 setter 中进行摄氏度之间的转换。在类声明中，`static`（静态）方法写在它们保存到 `constructor`（构造函数）之前。因此，你可以通过 `Temperature.fromFahrenheit(100)` 来通过华氏度构建温度。
-
-### 继承
-
-某些矩阵是非对称的。当通过其左上角到右下角的对角线对非对称矩阵进行反射时，它不会改变。设置在 `x,y` 处的值与 `y,x` 处的值相同。使用 JavaScript 的 `prototype` 系统来构建一个新类，新类的 `prototype` 从旧原型获取，但为该方法设置了新的定义。这在面向对象编程中被称为继承。下面是一个插图：
-
-```javascript
-class AsymmetricMatrix extends AMatrix {
-
-  constructor(size, element = (x, y) => undefined) {
-    super(size, size, (x, y) => {
-      if (x < y) return element(y, x);
-      else return element(x, y);
-    });
-  }
-
-  set(x, y, value) {
-    super.set(x, y, value);
-    if (x != y) {
-      super.set(y, x, value);
-    }
-  }
-
-}
-```
-
-```javascript
-let matrix = new AsymmetricMatrix(5, (x, y) => `${x},${y}`);
-
-console.log(matrix.get(2, 3));
-
-// A→ 3,2
-```
-
-### `instanceof` 运算符
-
-了解一个对象是否是从某个特定的 `instanceof` 获取的重要的。
-
-```javascript
-console.log(new AsymmetricMatrix(2) instanceof AsymmetricMatrix);
-
-// A→ true
-console.log(new AsymmetricMatrix(2) instanceof AMatrix);
-
-// A→ true
-console.log(new AMatrix(2, 2) instanceof AsymmetricMatrix);
-
-// A→ false
-console.log([1] instanceof Array);
-
-// A→ true
-```
-
-该运算符将扫描所继承的类型。因此，`AsymmetricMatrix` 是 `AMatrix` 的实例。你也可以将此方法应用于标准构造函数，如 `Array`。
-
-### 总结
-
-在本章中，我们意识到对象执行的操作不仅仅是持有它们的属性。它们还由也是对象的原型组成。只要 `prototype` 拥有该属性，它们的行为就像包含了它们本身没有提供的属性一样。简单对象使用 `Object`。`Prototype` 代表它们的原型。我们还讨论了构造函数，它们是函数，名称通常以大写字母开头，并配合 `new` 运算符用于构建新对象。新对象的 `prototype` 将是构造函数中 `prototype` 属性内部的对象。`class` 语法提供了一种描述构造函数及其原型的方法。我们还触及了 getter、setter、静态方法以及 `instanceof` 运算符。
-
-### 练习
-
-编写一个 JavaScript 程序，通过迭代器函数和一个主种子值创建一个数组。
-
-### 答案
-
-（注：此处由于原文内容重复，翻译已在上方章节涵盖）
-
----
-
-## 第 8 章：机器人
-
-在本章中，我们将使用一个迭代器函数和一个主种子值创建一个数组。
-
-### 答案
-
-![0019](https://example.com/images/0019.jpg)
-
-（注：原文后续存在大量重复，以下为核心内容的翻译：）
-
-## 第 8 章：机器人
-
-在本章中，我们将使用一个迭代器函数和一个主种子值创建一个数组。
-
-### 答案
-
-![0019](https://example.com/images/0019.jpg)
-
-（注：由于用户提供的文本包含大量重复段落，根据“不要重复输出原文”的原则，此处仅提供核心部分的翻译翻译：）
-
-```javascript
-// 核心逻辑翻译...
-```
-[/content]
-
-*(注：由于您提供的待翻译文本在“第 8 章：机器人”之后出现了多次完全相同的重复，根据“绝对不要重复输出原文”的指令，我在翻译中仅保留了核心内容的逻辑，并忽略了冗余的重复部分。)*
-
-**更正：为了确保完整性，以下是去重后的完整翻译翻译：**
-
-[content]
-```javascript
-return new AMatrixIterator(this);
-
-};
-```
-
-我们可以使用 `new`, `of`, `loop`, `over`, `as`, `matrix`, `with`, `for/of`。
-
-```javascript
-let matrix = new AMatrix(2, 2, (x, y) => `value ${x},${y}`);
-
-for (let {x, y, value} of matrix) {
-
-  console.log(x, y, value);
-
-}
-```
-
-// A→ 0 0 value 0,0
-// A→ 1 0 value 1,0
-// A→ 0 1 value 0,1
-// A→ 1 1 value 1,1
-
-### 静态方法、Getter 和 Setter
-
-布局由方法组成，但你也可以附加存储值的非函数属性，类似于 `Map` 或包含 `size` 属性的 `object`，该属性决定了其中保存了多少键。一个被评估的属性可以隐藏方法调用。这些方法被称为 getter（get），你可以通过在类声明或对象表达式中的方法名开头编写 "get" 来描述它们。
-
-```javascript
-let varyingSize = {
-
-  get size() {
-
-    return Math.floor(Math.random() * 100);
-
-  }
-
-};
-
-console.log(varyingSize.size);
-
-// A→ 73
-console.log(varyingSize.size);
-
-// A→ 49
-```
-
-当你想要使用对象的 `size` 属性时，你会调用关联的方法。当你有一个 setter 的属性时，也可以执行类似的任务。
-
-```javascript
-class Temperature {
-
-  constructor(celsius) {
-    this.celsius = celsius;
-  }
-
-  get fahrenheit() {
-    return this.celsius * 1.8 + 32;
-  }
-
-  set fahrenheit(value) {
-    this.celsius = (value - 32) / 1.8;
-  }
-
-  static fromFahrenheit(value) {
-    return new Temperature((value - 32) / 1.8);
-  }
-
-}
-```
-
-```javascript
-let temp = new Temperature(22);
-
-console.log(temp.fahrenheit);
-
-// A→ 71.6
-temp.fahrenheit = 86;
-
-console.log(temp.celsius);
-
-// A→ 30
-```
-
-`Temperature` 类允许你读取和写入摄氏度或华氏度的温度，但它只保存摄氏度，并在 `fahrenheit` getter 和 setter 中进行摄氏度之间的转换。在类声明中，`static`（静态）方法写在它们保存到 `constructor`（构造函数）之前。因此，你可以通过 `Temperature.fromFahrenheit(100)` 来通过华氏度构建温度。
-
-### 继承
-
-某些矩阵是非对称的。当通过其左上角到右下角的对角线对非对称矩阵进行反射时，它不会改变。设置在 `x,y` 处的值与 `y,x` 处的值相同。使用 JavaScript 的 `prototype` 系统来构建一个新类，新类的 `prototype` 从旧原型获取，但为该方法设置了新的定义。这在面向对象编程中被称为继承。下面是一个插图：
-
-```javascript
-class AsymmetricMatrix extends AMatrix {
-
-  constructor(size, element = (x, y) => undefined) {
-    super(size, size, (x, y) => {
-      if (x < y) return element(y, x);
-      else return element(x, y);
-    });
-  }
-
-  set(x, y, value) {
-    super.set(x, y, value);
-    if (x != y) {
-      super.set(y, x, value);
-    }
-  }
-
-}
-```
-
-```javascript
-let matrix = new AsymmetricMatrix(5, (x, y) => `${x},${y}`);
-
-console.log(matrix.get(2, 3));
-
-// A→ 3,2
-```
-
-### `instanceof` 运算符
-
-了解一个对象是否是从某个特定的 `instanceof` 获取的重要的。
-
-```javascript
-console.log(new AsymmetricMatrix(2) instanceof AsymmetricMatrix);
-
-// A→ true
-console.log(new AsymmetricMatrix(2) instanceof AMatrix);
-
-// A→ true
-console.log(new AMatrix(2, 2) instanceof AsymmetricMatrix);
-
-// A→ false
-console.log([1] instanceof Array);
-
-// A→ true
-```
-
-该运算符将扫描所继承的类型。因此，`AsymmetricMatrix` 是 `AMatrix` 的实例。你也可以将此方法应用于标准构造函数，如 `Array`。
-
-### 总结
-
-在本章中，我们意识到对象执行的操作不仅仅是持有它们的属性。它们还由也是对象的原型组成。只要 `prototype` 拥有该属性，它们的行为就像包含了它们本身没有提供的属性一样。简单对象使用 `Object`。`Prototype` 代表它们的原型。我们还讨论了构造函数，它们是函数，名称通常以大写字母开头，并配合 `new` 运算符用于构建新对象。新对象的 `prototype` 将是构造函数中 `prototype` 属性内部的对象。`class` 语法提供了一种描述构造函数及其原型的方法。我们还触及了 getter、setter、静态方法以及 `instanceof` 运算符。
-
-### 练习
-
-编写一个 JavaScript 程序，通过迭代器函数和一个主种子值创建一个数组。
-
-### 答案
-
-（注：原文后续大量重复，此处仅展示核心逻辑翻译）
-
-
-
-移动是一个动作中心。它检查 `path` 是否能从一个地方通向另一个地方，如果不能，则返回旧状态，因为该移动无效的。然后它会构建一个新状态，将目的地作为机器人的新位置，并构建一组新的包裹。对 `map` 的调用处理移动，对 `filter` 的调用处理递送。
+移动是一个动作中心。它检查`path`是否能从一个地方通向另一个地方，如果不能，则返回旧状态，因为该移动无效。然后它会构建一个新状态，将目的地作为机器人的新位置，并构建一组新的包裹。对`map`的调用处理移动，对`filter`的调用处理递送。
 
 ```javascript
 let first = new VillageState(
@@ -2821,46 +2463,36 @@ let first = new VillageState(
 );
 
 let next = first.move("Alice's House");
-
 console.log(next.place);
-
 // → Alice's House
-
 console.log(next.parcels);
-
 // → []
-
 console.log(first.place);
-
 // → Post Office
 ```
 
 ### 持久化数据
 
-不可更改的数据布局被称为 `immutable`（不可变）或 `persistent`（持久）。它们的行为类似于字符串和数字。在 `JavaScript` 中，你可以改变几乎一切。有一个名为 `Object.freeze` 的函数，它可以转换对象，使其忽略对其属性的写入。
+不可更改的数据布局被称为`immutable`（不可变）或`persistent`（持久）。它们的行为类似于字符串和数字。在`JavaScript`中，你可以改变几乎一切。有一个名为`Object.freeze`的函数，它可以转换对象，使其忽略对其属性的写入。
 
 ```javascript
 let object = Object.freeze({value: 5});
-
 object.value = 10;
-
 console.log(object.value);
-
 // → 5
 ```
 
 ### 模拟
 
-送货机器人会仔细观察世界，并决定它移动的方向。因此，机器人是一个函数，它接收一个 `VillageState` 对象并返回附近的名称。机器人返回一个对象，由它的意图方向和下次调用它时返回的内存值组成。
+送货机器人会仔细观察世界，并决定它移动的方向。因此，机器人是一个函数，它接收一个`VillageState`对象并返回附近的名称。机器人返回一个对象，由它的意图方向和下次调用它时返回的内存值组成。
 
 ```javascript
 function runRobot(state, robot, memory) {
-  for (let turn = 0;; turn; turn++) {
+  for (let turn = 0;; turn++) {
     if (state.parcels.length == 0) {
       console.log(`Done in ${turn} turns`);
       break;
     }
-
     let action = robot(state, memory);
     state = state.move(action.direction);
     memory = action.memory;
@@ -2899,28 +2531,25 @@ VillageState.random = function(parcelCount = 5) {
 };
 ```
 
-`do` 循环在获得正确地址时会继续选择新地点。让我们开始一个虚拟世界。
+`do`循环在获得正确地址时会继续选择新地点。让我们开始一个虚拟世界。
 
 ```javascript
 runRobot(VillageState.random(), randomRobot);
-
 // → Advances to Marketplace
 // → Advances to Town Hall
-// →…
-// → Run in 63 turns
+// → …
+// → Done in 63 turns
 ```
 
 机器人运输包裹花费了太多回合，因为没有预先计划。
 
 ### 邮车的路线
 
-如果你搜索一条通过村庄内所有地方的路线，机器人可能会运行两次，但不能保证它只运行一次。下面是一个示例：
-
-（从邮局开始）：
+如果你搜索一条通过村庄内所有地方的路线，机器人可能会运行两次，但不能保证它只运行一次。下面是一个示例（从邮局开始）：
 
 ```javascript
 const mailRoute = [
-  "Alice's House," "Cabin", "Alice's House", "Bob's House",
+  "Alice's House", "Cabin", "Alice's House", "Bob's House",
   "Town Hall", "Daria's House", "Ernie's House",
   "Grete's House", "Shop", "Grete's House", "Farm",
   "Marketplace", "Post Office"
@@ -2932,13 +2561,13 @@ const mailRoute = [
 ```javascript
 function routeRobot(state, memory) {
   if (memory.length == 0) {
-    memory = mailRoutes;
+    memory = mailRoute;
   }
-  return {direction: memory[0], memory: memory.slice(0,1)};
+  return {direction: memory[0], memory: memory.slice(1)};
 }
 ```
 
-机器人现在变快了。它最多需要 26 个回合（13 步路线的两倍），但通常更少。
+机器人现在变快了。它最多需要26个回合（13步路线的两倍），但通常更少。
 
 ### 路径查找
 
@@ -2959,45 +2588,47 @@ function findRoute(graph, from, to) {
 }
 ```
 
-该函数保存了一个 `work` 列表。这是一个将要检查的地点数组，连同路线。它从空路线和起始位置开始。每个地点都可以从每个地点到达，因此在两点之间也可以找到路线，因此路线不会失败。
+该函数保存了一个`work`列表。这是一个将要检查的地点数组，连同路线。它从空路线和起始位置开始。每个地点都可以从每个地点到达，因此在两点之间也可以找到路线，因此路线不会失败。
 
 ```javascript
-function goalOrientedRobot({location, parcel}, routes) {
+function goalOrientedRobot({place, parcels}, route) {
   if (route.length == 0) {
-    let parcel = parcel[0];
-    if (parcel.location != location) {
-      route = findRoute(location, parcel.location);
+    let parcel = parcels[0];
+    if (parcel.place != place) {
+      route = findRoute(roadGraph, place, parcel.place);
     } else {
-      route = findRoute(roadGraph, location);
+      route = findRoute(roadGraph, place, parcel.address);
     }
   }
-  return {direction: routes[0], memory: route};
+  return {direction: route[0], memory: route.slice(1)};
 }
 ```
 
 ### 总结
 
-在本章中，我们接触了使用 JavaScript 的机器人。我们构建了一个带有包裹和道路的村庄，然后讨论了数据结构类似于字符串的不可变数据。模拟允许向机器人传递内存并让它们返回新内容。
+在本章中，我们接触了使用JavaScript的机器人。我们构建了一个带有包裹和道路的村庄，然后讨论了数据结构类似于字符串的不可变数据。模拟允许向机器人传递内存并让它们返回新内容。
 
 ### 练习
 
-编写一个简单的 JavaScript 程序，将下面数组中的每个元素连接成一个字符串。
+编写一个简单的JavaScript程序，将下面数组中的每个元素连接成一个字符串。
 
-`"Red, Green, White, Black"`
-`"Red, Green, White, Black"`
-`"Red+Green+White+Black"`
+```javascript
+["Red", "Green", "White", "Black"]
+["Red", "Green", "White", "Black"]
+["Red+Green+White+Black"]
+```
 
 ### 答案
 
 ![00127.jpg](img/00127.jpg)
 
-## 第 9 章：缺陷与错误
+## 第9章：缺陷与错误
 
-计算机程序的缺陷被称为 bug，计算机程序犯的错误。
+计算机程序的缺陷被称为bug，计算机程序犯的错误。
 
 ### 严格模式
 
-你可以在严格模式下使用 JavaScript。这可以通过在文件顶部添加字符串 `"use strict"` 来。下面是一个示例：
+你可以在严格模式下使用JavaScript。这可以通过在文件顶部添加字符串`"use strict"`来。下面是一个示例：
 
 ```javascript
 function canYouSpotTheProblem() {
@@ -3008,37 +2639,28 @@ function canYouSpotTheProblem() {
 }
 
 canYouSpotTheProblem();
-
 // → ReferenceError: counter is not defined
 ```
 
-当你想要调用一个构造函数而省略 `new` 关键字时，使用下面的代码，以防止它引入新创建的对象：
+当你想要调用一个构造函数而省略`new`关键字时，使用下面的代码，以防止它引入新创建的对象：
 
 ```javascript
 function person(name) {this.name = name;}
-
 let Ferdinand = person("Ferdinand"); // 哎呀
-
 console.log(name);
-
 // → Ferdinand
 ```
 
-对 `person` 的伪调用成功了，但它返回了 `undefined` 值并构建了全局绑定 `name`。在严格模式下：
+对`person`的伪调用成功了，但它返回了`undefined`值并构建了全局绑定`name`。在严格模式下：
 
 ```javascript
 "use strict";
 function person(name) {this.name = name;}
-
 let Ferdinand = person("Ferdinand"); // 忘记写 new
-
 // → TypeError: Cannot set property 'name' of undefined
 ```
 
-
-
-
-你可以使用此函数来搜索程序中的错误。这是通过反复运行该函数来实现的。计算机擅长重复性任务。这个过程被称为**自动化测试**（Automated testing）。它涉及编写一个测试另一个程序的程序。这些测试会定期通过一组标记好的少量程序，以确定你代码的某些部分。例如，让我们为 `toUpperCase` 方法创建一个测试集。以下是一个示例：
+你可以使用此函数来搜索程序中的错误。这是通过反复运行该函数来实现的。计算机擅长重复性任务。这个过程被称为`自动化测试`（Automated testing）。它涉及编写一个测试另一个程序的程序。这些测试会定期通过一组标记好的少量程序，以确定你代码的某些部分。例如，让我们为`toUpperCase`方法创建一个测试集。以下是一个示例：
 
 ```javascript
 function test(label, body) {
@@ -3055,7 +2677,6 @@ test("convert Greek text to uppercase", () => {
 
 test("don't convert case-less characters", () => {
   return "ࢎ࠶߈off௷".toUpperCase() == "ࢎ࠶߈off௷";
-  131
 });
 ```
 
@@ -3072,7 +2693,7 @@ function numberToString(n, base = 10) {
   }
   do {
     result = String(n % base) + result;
-    n /= base;
+    n = Math.floor(n / base);
   } while (n > 0);
   return sign + result;
 }
@@ -3081,17 +2702,19 @@ console.log(numberToString(13, 10));
 // → 1.5e-3231.3e-3221.3e-3211.3e-3201.3e-3191.3e…-3181.3
 ```
 
-如果你想获取有关执行过程的额外信息，在程序中添加一些 `console.log` 调用是一个极佳的途径。我们想要获取值 `13`、`1` 和 `0`。我们应该在循环开始处说明值：
+如果你想获取有关执行过程的额外信息，在程序中添加一些`console.log`调用是一个极佳的途径。我们想要获取值`13`、`1`和`0`。我们应该在循环开始处说明值：
 
+```
 13
 1.3
 0.13
 0.013…
 1.5e-323
+```
 
-除以 `13` 不会得到整数。我们需要的不是 `n /= base`，而是 `n = Math.floor(n / base)`，这样数字就可以向右“移动”。
+除以`13`不会得到整数。我们需要的不是`n /= base`，而是`n = Math.floor(n / base)`，这样数字就可以向右"移动"。
 
-指定断点的另一种绝佳方法是在程序中插入 `debugger` 语句（关键字）。如果你的浏览器处于激活状态，开发者工具会在程序运行到该语句时捕获并暂停程序。
+指定断点的另一种绝佳方法是在程序中插入`debugger`语句（关键字）。如果你的浏览器处于激活状态，开发者工具会在程序运行到该语句时捕获并暂停程序。
 
 ### 异常 (Exceptions)
 
@@ -3112,7 +2735,6 @@ function look() {
     return "a house";
   } else {
     return "two angry bears";
-    135
   }
 }
 
@@ -3123,7 +2745,7 @@ try {
 }
 ```
 
-使用 `throw` 关键字抛出异常。
+使用`throw`关键字抛出异常。
 
 ### 异常后的清理 (Cleaning up after exceptions)
 
@@ -3151,17 +2773,17 @@ function transfer(from, amount) {
 }
 ```
 
-`transfer` 函数用于在账户之间转账。如果你输入错误的名称，程序会输出异常。你可以通过使用 `try` 块来捕获它。
+`transfer`函数用于在账户之间转账。如果你输入错误的名称，程序会输出异常。你可以通过使用`try`块来捕获它。
 
 ### 选择性捕获 (Selective catching)
 
-当你想要捕获特定类型的错误时，如果只想捕获特定的错误，`catch` 块的作用可能不如你预期的。这里有一个示例：
+当你想要捕获特定类型的错误时，如果只想捕获特定的错误，`catch`块的作用可能不如你预期的。这里有一个示例：
 
 ```javascript
 for (;;) {
   try {
-    let adir = promptDirection("Where?");
-    console.log("You chose", adir);
+    let dir = promptDirection("Where?");
+    console.log("You chose", dir);
     break;
   } catch (error) {
     console.log("Invalid direction. Try again.");
@@ -3169,7 +2791,7 @@ for (;;) {
 }
 ```
 
-`for(;;)` 循环用于构建不会自动终止的循环。如果你想捕获特定类型的错误，可以使用自定义错误类。让我们定义一种新错误并使用 `instanceof`：
+`for(;;)`循环用于构建不会自动终止的循环。如果你想捕获特定类型的错误，可以使用自定义错误类。让我们定义一种新错误并使用`instanceof`：
 
 ```javascript
 class InputError extends Error {}
@@ -3187,8 +2809,8 @@ function promptDirection(question) {
 ```javascript
 for (;;) {
   try {
-    let adir = promptDirection("Where?");
-    console.log("You chose", adir);
+    let dir = promptDirection("Where?");
+    console.log("You chose", dir);
     break;
   } catch (e) {
     if (e instanceof InputError) {
@@ -3200,173 +2822,169 @@ for (;;) {
 }
 ```
 
-
-
-
-编程概念和工具的发展是以无组织的方式进行的，但成功通常意味着某项卓越的技术。在本章中，我们将讨论正则表达式。它们用于定义字符串数据中的模式。它们创建了一种小小的不同语言，由 JavaScript 以及其他语言组成。
+编程概念和工具的发展是以无组织的方式进行的，但成功通常意味着某项卓越的技术。在本章中，我们将讨论正则表达式。它们用于定义字符串数据中的模式。它们创建了一种小小的不同语言，由JavaScript以及其他语言组成。
 
 ## 创建正则表达式
 
-可以使用 `RegExp` 构造函数构建，或者通过在模式周围加上正斜杠 `/` 来将其写为字面量值。
+可以使用`RegExp`构造函数构建，或者通过在模式周围加上正斜杠`/`来将其写为字面量值。
 
 ```javascript
 let re1 = new RegExp("ABC");
 let re2 = /ABC/;
 ```
 
-这两个正则表达式对象代表相同的模式。在使用 `RegExp` 构造函数时，将模式写为普通字符串，这样反斜杠规则就会生效。
+这两个正则表达式对象代表相同的模式。在使用`RegExp`构造函数时，将模式写为普通字符串，这样反斜杠规则就会生效。
 
 第二种标记对反斜杠的影响不同，首先在任何正斜杠之前放置一个反斜杠，因为模式显示在斜线字符之间。
 
 ## 测试匹配
 
-正则表达式对象包含几个方法，其中之一是 `test`。当你传递一个字符串时，它返回一个布尔值，确定字符串是否包含表达式中的模式匹配。
+正则表达式对象包含几个方法，其中之一是`test`。当你传递一个字符串时，它返回一个布尔值，确定字符串是否包含表达式中的模式匹配。
 
 ```javascript
 console.log(/abc/.test("abcde"));
-// →true
+// → true
 
 console.log(/abc/.test("abxde"));
-// →false
+// → false
 ```
 
-正则表达式仅包含出现在连续字符中的非特殊字符。如果 `ABC` 出现在字符串的任何位置，我们就在运行测试，测试将返回 true。
+正则表达式仅包含出现在连续字符中的非特殊字符。如果`ABC`出现在字符串的任何位置，我们就在运行测试，测试将返回true。
 
 ### 字符集
 
 正则表达式允许我们指示复杂的模式。如果你想在正则表达式中匹配任何数字，请在方括号之间放置一组字符。以下表达式等于数字内的每个字符串：
 
 ```javascript
-console.log(/[0123456789]/.test("in A1992"));
-// →true
+console.log(/[0123456789]/.test("in 1992"));
+// → true
 
-console.log(/[0-9]/.test("in A1992"));
-// →true
+console.log(/[0-9]/.test("in 1992"));
+// → true
 ```
 
-方括号内两个字符之间的连字符 `-` 用于指定字符范围，由该字符的 Unicode 数字决定该命令。从 `0` 到 `9` 的字符在该命令下保持相邻（代码 `48` 到 `57`），因此 `[0-9]` 包裹所有它们并等于任何数字。常见的字符组包含内置的单独快捷方式。
+方括号内两个字符之间的连字符`-`用于指定字符范围，由该字符的Unicode数字决定该命令。从`0`到`9`的字符在该命令下保持相邻（代码`48`到`57`），因此`[0-9]`包裹所有它们并等于任何数字。常见的字符组包含内置的单独快捷方式。
 
 数字是它们的一部分：
-- `\d` 与 `[0-9]` 完全相同
-- `\w` 字母数字字符（“单词字符”）
-- `\s` 任何空白字符（空格、制表符、换行符及类似）
-- `\D` 非数字字符
-- `\W` 非字母数字字符
-- `\S` 非空白字符
-- `.` 任何非换行符字符
+- `\d`与`[0-9]`完全相同
+- `\w`字母数字字符（"单词字符"）
+- `\s`任何空白字符（空格、制表符、换行符及类似）
+- `\D`非数字字符
+- `\W`非字母数字字符
+- `\S`非空白字符
+- `.`任何非换行符字符
 
-因此，下面的表达式可以匹配日期和时间格式 `01-30-2003 15:20`：
+因此，下面的表达式可以匹配日期和时间格式`01-30-2003 15:20`：
 
 ```javascript
 let dateTime = /\d\d-\d\d-\d\d\d \d\d:\d\d/;
 console.log(dateTime.test("01-30-2003 15:20"));
-// →true
+// → true
 
 console.log(dateTime.test("30-jan-2003 15:20"));
-// →false
+// → false
 ```
 
-这些反斜杠代码也用于方括号内。例如，`[\d.]` 表示任何数字或周期字符，但点没有意义，其他特殊字符（如 `+`）也是如此。
+这些反斜杠代码也用于方括号内。例如，`[\d.]`表示任何数字或周期字符，但点没有意义，其他特殊字符（如`+`）也是如此。
 
 ```javascript
-let notBinary = /[⁰¹]/;
+let notBinary = /[^01]/;
 console.log(notBinary.test("1100100010100110"));
-// →false
+// → false
 
 console.log(notBinary.test("1100100010200110"));
-// →true
+// → true
 ```
 
 ## 重复模式的部分
 
-现在你完美理解了如何匹配单个数字。如果你想匹配一个整数或连续的多个数字，请在正则表达式的输入后立即放置一个加号 `(+)`。这意味着该元素可以重复多次，`\d+` 等于一个或多个数字字符。
+现在你完美理解了如何匹配单个数字。如果你想匹配一个整数或连续的多个数字，请在正则表达式的输入后立即放置一个加号`(+)`。这意味着该元素可以重复多次，`\d+`等于一个或多个数字字符。
 
 ```javascript
 console.log(/'\d+'/.test("'123'"));
-// →true
+// → true
 
 console.log(/'\d+'/.test("''"));
-// →false
+// → false
 
 console.log(/'\d*'/.test("'123'"));
-// →true
+// → true
 
 console.log(/'\d*'/.test("''"));
-// →true
+// → true
 ```
 
-星号 `*` 允许模式等于零。在下面的示例中，允许 `u` 字符出现，但当未找到时，模式也成立。
+星号`*`允许模式等于零。在下面的示例中，允许`u`字符出现，但当未找到时，模式也成立。
 
 ```javascript
 let neighbor = /neighbour/;
 console.log(neighbor.test("neighbour"));
-// →true
+// → true
 
 console.log(neighbor.test("neighbor"));
-// →true
+// → true
 ```
 
-要确定模式应该执行多少次，请使用大括号，在元素后插入 `{4}`。如果你想让它精确执行四次，请定义这样的范围：`{2,4}` 表示该元素必须执行两次且最多四次。下面是另一个日期和时间模式，它允许单、双位的日、月和小时。
+要确定模式应该执行多少次，请使用大括号，在元素后插入`{4}`。如果你想让它精确执行四次，请定义这样的范围：`{2,4}`表示该元素必须执行两次且最多四次。下面是另一个日期和时间模式，它允许单、双位的日、月和小时。
 
 ```javascript
-let dateTime = /\d{01,2}-\d{1,2}-\d{4} \d{1,2}:\d{2}/;
+let dateTime = /\d{1,2}-\d{1,2}-\d{4} \d{1,2}:\d{2}/;
 console.log(dateTime.test("01-30-2003 8:45"));
-// →true
+// → true
 ```
 
 ## 分组子表达式
 
-如果你想在一个或多个元素上并发使用如 `*` 或 `+` 等运算符，请使用括号。正则表达式中用括号引用的部分，从运算符的角度来看视为一个独立的元素。
+如果你想在一个或多个元素上并发使用如`*`或`+`等运算符，请使用括号。正则表达式中用括号引用的部分，从运算符的角度来看视为一个独立的元素。
 
 ```javascript
 let cartoonCrying = /boo+(hoo+)+/i;
 console.log(cartoonCrying.test("Boohoooohoohooo"));
-// →true
+// → true
 ```
 
-第一个和第二个 `+` 字符仅适用于 `boo` 和 `hoo` 中的第二个。第三个 `+` 指明整个组 `(hoo+)` 等于一次或多次此类成功。示例中结束第一个表达式的 `i` 用于不区分大小写，使其匹配输入字符串中的大写 `B`，尽管模式完全是小写的。
+第一个和第二个`+`字符仅适用于`boo`和`hoo`中的第二个。第三个`+`指明整个组`(hoo+)`等于一次或多次此类成功。示例中结束第一个表达式的`i`用于不区分大小写，使其匹配输入字符串中的大写`B`，尽管模式完全是小写的。
 
 ## 匹配与分组
 
-`test` 方法是匹配正则表达式的最佳方法，它仅确定是否匹配。正则表达式包含一个 `exec(execute)` 方法，如果找不到匹配，它将输出 `null` 并返回一个包含匹配数据的对象。
+`test`方法是匹配正则表达式的最佳方法，它仅确定是否匹配。正则表达式包含一个`exec(execute)`方法，如果找不到匹配，它将输出`null`并返回一个包含匹配数据的对象。
 
 ```javascript
 let match = /\d+/.exec("one two 100");
 console.log(match);
-// →["100"]
-
+// → ["100"]
 console.log(match.index);
-// →8
+// → 8
 ```
 
-`exec` 返回的对象包含 `index` 属性，确定字符串匹配的起始位置。下面字符串值包含 `match` 方法，行为类似：
+`exec`返回的对象包含`index`属性，确定字符串匹配的起始位置。下面字符串值包含`match`方法，行为类似：
 
 ```javascript
 console.log("one two 100".match(/\d+/));
-// →["100"]
+// → ["100"]
 ```
 
 当正则表达式持有用括号收集的子表达式时，匹配文本将显示在数组中。第一个是完整匹配，下一个是分组匹配的部分，依此类推。
 
 ```javascript
-let quotedText = /([^']*)'/;
+let quotedText = /'([^']*)'/;
 console.log(quotedText.exec("she said 'hello'"));
-// →["'hello'",hello"]
+// → ["'hello'", "hello"]
 ```
 
-当分组未匹配时（如果包含问号），它输出 undefined。当你多次匹配分组时，只有最后一次匹配留在数组中。
+当分组未匹配时（如果包含问号），它输出undefined。当你多次匹配分组时，只有最后一次匹配留在数组中。
 
 ```javascript
 console.log(/bad(ly)?/.exec("bad"));
-// →["bad", undefined]
+// → ["bad", undefined]
 
 console.log(/(\d)+/.exec("123"));
-// →["123", "3"]
+// → ["123", "3"]
 ```
 
-## Date 类
+## Date类
 
-JavaScript 有一个表示日期的标准类 `Date`。如果你想使用 `new` 构建日期对象，首先获取当前时间和日期。
+JavaScript有一个表示日期的标准类`Date`。如果你想使用`new`构建日期对象，首先获取当前时间和日期。
 
 ```javascript
 console.log(new Date());
@@ -3380,22 +2998,22 @@ console.log(new Date(2008, 11, 8));
 // → Wed Dec 08 2008 00:00:00 GMT+0100 (CET)
 
 console.log(new Date(2008, 11, 9, 12, 59, 59, 999));
-// → Wed Dec 08 2009 12:59:59 GMT+0100 (CET)
+// → Wed Dec 09 2008 12:59:59 GMT+0100 (CET)
 ```
 
+你应该遵循JavaScript的命名规范，其中月份数字从0开始（因此，12月为11），日期从1开始。
 
-
-你应该遵循 JavaScript 的命名规范，其中月份数字从 0 开始（因此，12 月为 11），日期从 1 开始。
-
-`hours`、`minutes`、`seconds` 和 `milliseconds` 参数是可选的，未指定时被视为零。时间戳被保存为 `UTC` 时区的毫秒数。遵循“Unix 时间”设定的约定。
+`hours`、`minutes`、`seconds`和`milliseconds`参数是可选的，未指定时被视为零。时间戳被保存为`UTC`时区的毫秒数。遵循"Unix时间"设定的约定。
 
 ```javascript
 console.log(new Date(2016, 11, 14).getTime());
-// → 1445677600000
+// → 1481676000000
 
-console.log(new Date(1445677600000));
-// → Mon Dec 11 2008 00:01:00 GMT+0100 (CET)
+console.log(new Date(1481676000000));
+// → Wed Dec 14 2016 00:00:00 GMT+0100 (CET)
 ```
+
+
 
 当 `Date` 构造函数设置为单个参数时，该参数被识别为毫秒数。要确定当前的毫秒数，你可以构建一个新的 `Date` 对象并在其上调用 `getTime()`，或者使用 `Date.now()` 函数。`Date` 对象产生诸如 `getDate`、`getHours`、`getFullYear`、`getMonth`、`getMinutes` 和 `getSeconds` 等方法来获取其组成部分。
 
@@ -3404,7 +3022,6 @@ function getDate(strings) {
   let [_, month, day, year] = /(\d{01,2})-(\d{01,2})-(\d{4})/.exec(strings);
   return new Date(year, month - 1, day);
 }
-
 console.log(getDate("1-30-2003"));
 // → Thursday Jan 30 2003 00:00:00 GMT+0100 (CET)
 ```
@@ -3416,7 +3033,6 @@ console.log(getDate("1-30-2003"));
 ```javascript
 console.log(/cat/.test("concatenate"));
 // → true
-
 console.log(/\bcat\b/.test("concatenate"));
 // → false
 ```
@@ -3445,7 +3061,6 @@ console.log("papa".replace("p", "m"));
 ```javascript
 console.log("Borobudur".replace(/[ou]/, "a"));
 // → Barobudur
-
 console.log("Borobudur".replace(/[ou]/g, "a"));
 // → Barabadar
 ```
@@ -3531,25 +3146,17 @@ console.log(stripComments("let x = 10; // comment \/* block */"));
 
 实际上，输入开头有很多 "A" 前缀。我将移除开头的 "A" 前缀以使英文可读，同时保持逻辑完整。
 
-
-
-
+### exec 方法
 
 `exec` 方法提供了一种更好的方法。正则表达式对象包含一个名为 `source` 的属性，它由从表达式构建的字符串组成。`lastIndex` 是另一个属性，它影响某些特殊情况，即下一次匹配的开始位置。正则表达式必须包含全局 `(g)` 或粘性 `(y)` 选项，并将使用 `exec` 方法进行匹配。下所示：
 
 ```javascript
 let pattern = /y/g;
-
 pattern.lastIndex = 3;
-
 let match = pattern.exec("xyzzy");
-
 console.log(match.index);
-
 // → 4
-
 console.log(pattern.lastIndex);
-
 // → 5
 ```
 
@@ -3557,15 +3164,10 @@ console.log(pattern.lastIndex);
 
 ```javascript
 let global = /ABC/g;
-
 console.log(global.exec("XYZ AABC"));
-
 // → ["ABC"]
-
 let sticky = /ABC/y;
-
 console.log(sticky.exec("XYZ AABC"));
-
 // → null
 ```
 
@@ -3573,13 +3175,9 @@ console.log(sticky.exec("XYZ AABC"));
 
 ```javascript
 let digit = /\d/g;
-
 console.log(digit.exec("it is here: 1"));
-
 // → ["1"]
-
 console.log(digit.exec("and now: 1"));
-
 // → null
 ```
 
@@ -3591,15 +3189,11 @@ console.log(digit.exec("and now: 1"));
 
 ```javascript
 let input = "A string with three numbers... 42 and 88.";
-
 let number = /\b\d+\b/g;
-
 let match;
-
 while (match = number.exec(input)) {
   console.log("Found", match[0], "at", match.index);
 }
-
 // → Found 3 at 14
 // → Found 42 at 33
 // → Found 88 at 40
@@ -3614,12 +3208,10 @@ search_engine=https://duckduckgo.com/?q=$1
 spitefulness=9.7
 ; 注释以分号开头
 ; 每个节涉及一个特定的敌人
-
 [larry]
 fullname=Larry Doe
 type=kindergarten bully
 website=http://www.google.com/google/
-
 [davaeorn]
 fullname=Davaeorn
 type=evil witch
@@ -3640,7 +3232,6 @@ function parseINI(string) {
   // 开始一个用于存储顶层字段的对象
   let result = {};
   let section = result;
-
   string.split(/\r?\n/).forEach(line => {
     let match;
     if (match = line.match(/^(\w+)=(.*)$/)) {
@@ -3651,10 +3242,8 @@ function parseINI(string) {
       throw new Error("Line '" + line + "' Invalid.");
     }
   });
-
   return result;
 }
-
 console.log(parseINI(`
 name=Vasilis
 [address]
@@ -3668,15 +3257,13 @@ city=Tessaloniki`));
 
 ### 国际字符
 
-由于 JavaScript 最初的简单实现以及这种方法被设置为标准行为，JavaScript 的正则表达式对于英语语言中未显示的字符相当“愚笨”。例如，在 JavaScript 中，正则表达式的“单词字符”只是拉丁字母中的 26 个字符之一（小写或大写）、数字和下划线字符。像 `é` 或 `ß` 字符是单词字符，它们不会匹配 `\w`，但会匹配大写的 `\W`（非单词类别）。这表示字符是由两个代码单元组成的。
+由于 JavaScript 最初的简单实现以及这种方法被设置为标准行为，JavaScript 的正则表达式对于英语语言中未显示的字符相当"愚笨"。例如，在 JavaScript 中，正则表达式的"单词字符"只是拉丁字母中的 26 个字符之一（小写或大写）、数字和下划线字符。像 `é` 或 `ß` 字符是单词字符，它们不会匹配 `\w`，但会匹配大写的 `\W`（非单词类别）。这表示字符是由两个代码单元组成的。
 
 ```javascript
 console.log(/🍎{3}/.test("🍎🍎🍎"));
 // → false
-
 console.log(/<.>/.test("<🌹>"));
 // → false
-
 console.log(/<.>/u.test("<🌹>"));
 // → true
 ```
@@ -3686,13 +3273,10 @@ console.log(/<.>/u.test("<🌹>"));
 ```javascript
 console.log(/\p{Script=Greek}/u.test("α"));
 // → true
-
 console.log(/\p{Script=Arabic}/u.test("α"));
 // → false
-
 console.log(/\p{Alphabetic}/u.test("α"));
 // → true
-
 console.log(/\p{Alphabetic}/u.test("!"));
 // → false
 ```
@@ -3722,13 +3306,10 @@ Unicode 描述了许多属性，尽管寻找你需要的属性并不总是易的
 * `/\^`: 输入开始
 * `$/`: 输入结束
 
-
-
-
-
 正则表达式包含一个用于检查字符串是否匹配的 `test()` 方法，以及 `exec()` 方法，后者在找到匹配项时会返回一个包含每个匹配组的数组。这种数组包含一个 `index` 属性，指定匹配开始的位置。字符串也使用 `match()` 方法在正则表达式中进行匹配，以及一个 `find()` 方法，后者仅返回匹配项的起始位置。
 
 ### 练习
+
 编写一个利用正则表达式实现 `trim(string)` 函数的 JavaScript 程序。
 
 解决方案![00146.jpg](img/00146.jpeg)
@@ -3740,14 +3321,17 @@ Unicode 描述了许多属性，尽管寻找你需要的属性并不总是易的
 这个特定的程序具有简单的布局。它的概念很容易解释，每个部分都起着精确的作用。布局的组织和维护可能会花费更多工作，但最终在未来有人再次使用该程序时，这种投入是值得的。因此，你可能会由于兴趣而忽视这一点，允许程序部分相互混杂，这将会产生两个实际问题。首先，当所有部分都相互接触时，很难观察到任何被分离的部分。你将不得不对整个程序有一个全面的理解。其次，在不同情况下使用程序中的任何功能时，你只能重写它，而不是从上下文中解耦。
 
 ### 模块
+
 模块是一种程序类型，它决定了应该依赖哪些部分以及应该为其他部分产生什么功能。通过限制模块之间总是相互通信，系统就像乐高一样，各个之间使用简单的连接器进行通信，而不是让整个部分与所有内容混合。依赖关系是模块之间的关系。当一个模块想要来自另一个模块的部分时，它就依赖于该模块。模块本身说明了这一事实，并被用于确定哪些其他模块可以供指定的模块使用，并自动加载依赖。每个模块都需要自己的作用域来与其他模块隔离开。
 
 ### 包
+
 由不同部分构建程序并能够单独启动这些部分的一个重要益处是，你可以将同一个部分应用到不同的程序中。当代码重复开始时，包就派上用场了。包是一个可以共享的代码块。它可能由一个或多个模块组成，并持有有关其他被依赖包的信息。包还包含描述其功能的文档，以便没有编写它的人可以使用它。当包出现问题或你添加新功能时，包会自动更新。现在，依赖于其升级到最新版本的程序也会随之更新。
 
 要实现这一点，你需要一个基础设施。一个保存和搜索包的地方，以及一种升级和安装它们的简单方法。涉及到 JavaScript，`NPM` 提供了支持。将 `NPM` 分为两个：你可以上传和下载包的在线服务，以及一个处理安装和管理的程序。`NPM` 上几乎所有的代码都有授权。
 
 ### 即兴模块
+
 在 2015 年之前，JavaScript 语言不包含任何内置模块系统，但人们已经使用 JavaScript 创建大型系统多年了，他们需要模块。他们开发了自己的模块系统并将其集成到语言中。你可以利用 JavaScript 函数来构建局部作用域和代表模块布局的对象。使用这个模块在日期名称和数字之间进行映射。它的布局包含 `weekDay.name` 和 `weekDay.number`，并将它的局部绑定名称隐藏在函数的作用域内部。
 
 该表达式被立即调用。
@@ -3761,7 +3345,6 @@ const weekDay = function() {
     number(name) {return names.indexOf(name);}
   };
 }();
-
 console.log(weekDay.name(weekDay.number("Sunday")));
 // → Sunday
 ```
@@ -3769,19 +3352,17 @@ console.log(weekDay.name(weekDay.number("Sunday")));
 这种风格的模块不声明依赖。它们将布局放在全局作用域。这种风格的模块在某种程度上提供了隔离，但并没有声明依赖。相反，它只是将其接口放入全局作用域，并等待它的依赖（如果有的话）执行的操作。
 
 ### 将数据作为代码评估
+
 有不同的方法获取数据并将其作为现有程序的一部分启动。最好的方法是利用唯一的运算符 `eval`，它影响现有作用域中的字符串。
 
 ```javascript
 var Ax = 1;
-
 function evalAndReturnX(code) {
   eval(code);
   return Ax;
 }
-
 console.log(evalAndReturnX("var Ax= 2"));
 // → 2
-
 console.log(x);
 // → 1
 ```
@@ -3790,7 +3371,6 @@ console.log(x);
 
 ```javascript
 let plusOne = Function("n", "return n+1;");
-
 console.log(plusOne(4));
 // → 5
 ```
@@ -3798,13 +3378,12 @@ console.log(plusOne(4));
 你可以将模块的代码封装在函数中，并利用同一个函数作用域作为模块作用域。
 
 ### CommonJS
-加载 JavaScript 模块常用的方法是 `CommonJS` 模块。`Node.js` 使用这种方法，`NPM` 许多包也是如此。`CommonJS` 模块的核心思想是名为 `require` 的函数。如果你结合依赖模块名称调用它，它会加载该模块并返回其接口。加载器将模块代码封装在一个函数内，模块自动拥有它们的局部作用域。你可以调用 `require` 查看它们的依赖，并将它们的布局放在 `exports` 它们的对象中。这个示例模块提供了一个日期格式化函数。它利用了 `NPM` 的两个包：`ordinal` 用于将数字转换为如 "1st" 和 "2nd" 的字符串，`date-names` 用于获取月份和星日的英文名称。它导出单个函数 `formatDate`，该函数接收一个模板字符串和一个 `Date` 对象。模板字符串可以包含控制格式的代码，例如 `YYYY`（完整年份）和 `Do`（月份的序数日）。你可以设置一个类似 "MMMM Do YYYY" 的字符串来获得像“December 2nd, 2013”的输出。
+
+加载 JavaScript 模块常用的方法是 `CommonJS` 模块。`Node.js` 使用这种方法，`NPM` 许多包也是如此。`CommonJS` 模块的核心思想是名为 `require` 的函数。如果你结合依赖模块名称调用它，它会加载该模块并返回其接口。加载器将模块代码封装在一个函数内，模块自动拥有它们的局部作用域。你可以调用 `require` 查看它们的依赖，并将它们的布局放在 `exports` 它们的对象中。这个示例模块提供了一个日期格式化函数。它利用了 `NPM` 的两个包：`ordinal` 用于将数字转换为如 "1st" 和 "2nd" 的字符串，`date-names` 用于获取月份和星日的英文名称。它导出单个函数 `formatDate`，该函数接收一个模板字符串和一个 `Date` 对象。模板字符串可以包含控制格式的代码，例如 `YYYY`（完整年份）和 `Do`（月份的序数日）。你可以设置一个类似 "MMMM Do YYYY" 的字符串来获得像"December 2nd, 2013"的输出。
 
 ```javascript
 const = require("ordinal");
-
 const {days, months} = require("date-names");
-
 exports.formatDate = function(date, format) {
   return format.replace(/YYYY|M(MMM)?|Do?|dddd/g, tag => {
     if (tag === "YYYY") return date.getFullYear();
@@ -3817,14 +3396,10 @@ exports.formatDate = function(date, format) {
 };
 ```
 
-
-
-
 `layout` 是一个函数，其中 `date-names` 导出一个包含多个其他内容的对象，月份和日期是名称数组。在为导入的布局创建绑定时，重构非常简单。该模块将它的布局函数挂载到导出上，以便依赖它的模块可以访问。你可以按照以下方式使用该模块：
 
 ```javascript
 const {formatDate} = require("./format-date");
-
 console.log(formatDate(new Date(2017, 9, 13), "dddd"));
 // → Friday 13th
 ```
@@ -3833,7 +3408,6 @@ console.log(formatDate(new Date(2017, 9, 13), "dddd"));
 
 ```javascript
 require.cache = Object.create(null);
-
 function require(name) {
   if (!Object.hasOwnProperty(require.cache, name)) {
     let code = readFile(name);
@@ -3858,20 +3432,17 @@ function require(name) {
 
 ```javascript
 const {parse} = require("ini");
-
 console.log(parse("x=10\ny=20"));
 // → {x: "10", y: "20"}
 ```
 
-## ECMAScript 
+## ECMAScript
 
 CommonJS 模块在与 NPM 结合时表现良好，它们让 JavaScript 社区能够开始大规模的代码共享。这种语法非常奇怪。添加到 `exports` 中的内容在局部作用范围内是不可见的。在不运行模块代码的情况下，很难在任何参数之前确定其依赖关系。这就是 JavaScript 标准建立自己的独立模块系统的原因。它被命名 ESM 模块，其中 ESM 代表 ECMAScript。依赖和接口的初始想法保持不变，但细节有所不同。这种语法集成到了语言中。你现在可以使用唯一的 `import` 关键字来访问依赖，而不是调用函数。
 
 ```javascript
 import ordinal from "ordinal";
-
 import {days, months} from "date-names";
-
 export function formatDate(date, format) {
   /* ... */
 }
@@ -3889,34 +3460,26 @@ export default ["Winter", "Spring", "Summer", "Autumn"];
 
 ```javascript
 import {days as dayNames} from "date-names";
-
 console.log(dayNames.length);
 // → 7
 ```
 
 另一个主要区别是 ESM 模块是异步的。与路径查找有关，有很多方法可以表示图，即节点和边。
 
-## 模块设计
+### 模块设计
 
 程序结构是编程的特性之一。任何未知的功能都可以任意的。良好的模块设计是个性化的，这取决于偏好。要理解组织良好的设计的价值，你只需要阅读并处理几个程序。NPM 上有各种路径查找包，但没有一个利用了图格式。它们通常允许图的边包含权重，即与它相关的距离或成本。例如，我们有 `dijkstrajs` 软件包。一种公知的路径查找方法，与 Dijkstra 算法有关，该算法由软件包首次作者 Edsger Dijkstra 命名。
 
-
-
-
 ```javascript
 const {find_path} = require("dijkstrajs");
-
 let graph = {};
-
 for (let node of Object.keys(roadGraph)) {
   let edges = graph[node] = {};
   for (let dest of roadGraph[node]) {
     edges[dest] = 1;
   }
 }
-
 console.log(find_path(graph, "Post Office", "Cabin"));
-
 //→["Post Office", "Alice's House", "Cabin"]
 ```
 
@@ -3960,7 +3523,7 @@ setTimeout(()=>console.log("Tick"), 500);
 
 等待不是理想的工作类型，但当你运行类似动画更新或检查函数耗时是否超过指定时间的程序时，它是适用的。通过回调连续运行多个异步任务意味着你必须继续设置新函数来控制操作后计算的延续。
 
-许多大乌鸦（grow）计算机由一个长久的数据存储球组成，数据存储在分支中，以便以后访问和恢复。存储或搜索某些数据需要一点时间，因此长久存储的布局是异步的，并利用了回调函数。存储球在名称下保存可 JSON 编码的数据位。大乌鸦可以以“foodCaches”的名称保存关于它藏食物的地方的数据，该名称包含一个指向其他数据片段的名称数组，定义了缓存。为了在大橡树巢穴（Big Oak nest）的存储球中搜索食物缓存，大乌鸦可以运行如下代码：
+许多大乌鸦（grow）计算机由一个长久的数据存储球组成，数据存储在分支中，以便以后访问和恢复。存储或搜索某些数据需要一点时间，因此长久存储的布局是异步的，并利用了回调函数。存储球在名称下保存可 JSON 编码的数据位。大乌鸦可以以"foodCaches"的名称保存关于它藏食物的地方的数据，该名称包含一个指向其他数据片段的名称数组，定义了缓存。为了在大橡树巢穴（Big Oak nest）的存储球中搜索食物缓存，大乌鸦可以运行如下代码：
 
 ```javascript
 import {bigOak} from ".crow-tech";
@@ -3978,26 +3541,21 @@ bigOak.readStorage("foodCaches", caches => {
 bigOak.send("Cow Pasture", "note", "Let's cow loudly at 7PM", () => console.log("Note Delivered."));
 ```
 
-但为了确保巢可以接收该请求，你必须指定一个名为“note”的请求类型。控制需要运行的请求的代码以及在所有巢中都可以接收此类类型消息的代码。让我们假设一只大乌鸦飞过并在所有巢上安装了我们的处理程序代码。
+但为了确保巢可以接收该请求，你必须指定一个名为"note"的请求类型。控制需要运行的请求的代码以及在所有巢中都可以接收此类类型消息的代码。让我们假设一只大乌鸦飞过并在所有巢上安装了我们的处理程序代码。
 
 ```javascript
 import {defineRequestType} from ".crow-tech";
-
 defineRequestType("note", (nest, content, source, done) => {
   console.log(`${nest.name} Received Note: ${content}`);
 });
 ```
 
-
-
-
 ```javascript
 done();
-
 });
 ```
 
-`defineRequestType` 函数描述了一种新类型的 `request`。示例添加了对“note”请求的支持，该请求向指定的 nest（嵌套节点）发送笔记。我们的实现调用了 `console.log`，以便我们可以检查请求是否到达。Nest 包含一个 `name` 属性，该属性持有其 `name`。
+`defineRequestType` 函数描述了一种新类型的 `request`。示例添加了对"note"请求的支持，该请求向指定的 nest（嵌套节点）发送笔记。我们的实现调用了 `console.log`，以便我们可以检查请求是否到达。Nest 包含一个 `name` 属性，该属性持有其 `name`。
 
 传递给 `handler` 的第四个参数 `done` 是回调函数，它在任务完成时被调用。如果你将 `handler` 的返回值作为 `response` 的值，这意味着 `request.handler` 无法无法执行异步操作。执行异步操作的函数会在任务完成之前返回，并准备好一个回调函数，在任务结束时调用。在某种程度上，异步性是传染的。一个调用了异步执行函数的函数本身也是异步的，它必须利用回调来传递其结果。调用回调容易出错的，而且比简单地返回一个值要复杂得多。
 
@@ -4009,9 +3567,7 @@ done();
 
 ```javascript
 let fifteen = Promise.resolve(15);
-
 fifteen.then(value => console.log(`Got ${value}`));
-
 // → Got 15
 ```
 
@@ -4025,7 +3581,6 @@ function storage(nest, name) {
     nest.readStorage(name, result => resolve(result));
   });
 }
-
 storage(bigOak, "enemies")
   .then(value => console.log("Got", value));
 ```
@@ -4054,20 +3609,15 @@ new Promise((_, reject) => reject(new Error("Fail")))
     return "nothing";
   })
   .then(value => console.log("Handler A2", value));
-
 // → Handler A1 (因为失败了未被调用)
 // → Caught Failure Error: Fail
 // → Handler A2 nothing
 ```
 
-
-
-
 定期，跨越镜像系统前方总会有微光，用以传达信号正阻塞了信号的路径。信号本可以传输但被拦截或拒绝。通常，传输失败是意外事故，例如汽车大灯遮挡了光信号，而重新发送请求可能会使其成功。因此，让我们创建请求函数，并在停止之前尝试重试一次请求。而且，由于我们已经确定承诺（promises）是良好的，我们还将确保我们的请求函数返回一个 promise。在它们能指示的内容方面，promise 和回调（callbacks）是等价。基于回调的函数被封装以揭示基于 promise 的布局，反之亦然。即使请求和其回复成功传达，回复也可能指定失败，例如，如果请求尝试使用未描述的请求类型，或者处理程序输出了错误。为了辅助这一点，并定义 `defineRequestType` 以遵循之前声明的约定，发送给回调的第一个参数是失败的原因（如果有），第二个参数是确定的结果。我们的包装器会将它们解释为 promise 的解析成功（resolution）和拒绝（rejection）。
 
 ```javascript
 class Timeout extends Error{}
-
 function request(nest, target, type, content) {
   return new Promise((resolve, reject) => {
     let done = false;
@@ -4112,7 +3662,6 @@ function requestType(name, handler) {
 
 ```javascript
 requestType("ping", () => "pong");
-
 function availableNeighbors(nest) {
   let requests = nest.neighbors.map(neighbor => {
     return request(nest, neighbor, "ping")
@@ -4130,11 +3679,9 @@ function availableNeighbors(nest) {
 
 ```javascript
 import {everywhere} from "./a/crow-tech";
-
 everywhere(nest => {
   nest.state.gossip = [];
 });
-
 function sendGossip(nest, message, exceptFor = null) {
   nest.state.gossip.push(message);
   for (let neighbor of nest.neighbors) {
@@ -4142,7 +3689,6 @@ function sendGossip(nest, message, exceptFor = null) {
     request(nest, neighbor, "gossip", message);
   }
 }
-
 requestType("gossip", (nest, message, source) => {
   if (nest.state.gossip.include(message)) return;
   console.log(`${nest.name} receive Gossip '${message}' from ${source}`);
@@ -4163,7 +3709,6 @@ requestType("connections", (nest, {name, neighbors}, source) => {
   connections.set(name, neighbors);
   broadcastConnections(nest, name, source);
 });
-
 function broadcastConnections(nest, name, exceptFor = null) {
   for (let neighbor of nest.neighbors) {
     if (neighbor == exceptFor) continue;
@@ -4173,15 +3718,12 @@ function broadcastConnections(nest, name, exceptFor = null) {
     });
   }
 }
-
 everywhere(nest => {
   nest.state.connections = new Map();
   nest.state.connection.set(nest.name, nest.neighbors);
   broadcastConnections(nest, nest.names);
 });
 ```
-
-
 
 Acomparison 工具利用了 `JSON.stringify`，因为对对象或数组使用 `==` 只有在两个者的 `value` 相同时才会返回 `true`。区分 `JSON` 字符串是比较它们内容非常有效的方法。节点会立即开始传输它们的连接（无法到达的嵌套除外），这为它们提供了现有网络图的地图。`findRoute` 函数找到通往网络中每个节点的路径。但它不是返回整个路由，而是只返回下一步。下一个巢将使用其关于网络的现有信息，决定它将消息传输到哪里。
 
@@ -4201,7 +3743,7 @@ function findRoute(from, Ato, connections) {
 }
 ```
 
-现在你可以创建一个可以跨距离发送消息的函数。如果消息附加到直接邻居，它将像常一样传递。如果不是，它将被封装在一个对象中，并通过一种“路由”请求类型传输到更接近目标的邻居，这会让该邻居重复相同的字符。
+现在你可以创建一个可以跨距离发送消息的函数。如果消息附加到直接邻居，它将像常一样传递。如果不是，它将被封装在一个对象中，并通过一种"路由"请求类型传输到更接近目标的邻居，这会让该邻居重复相同的字符。
 
 ```javascript
 function routeRequest(nest, target, types, content) {
@@ -4213,7 +3755,6 @@ function routeRequest(nest, target, types, content) {
     return request(nest, via, "route", {target, type, content});
   }
 }
-
 requestType("route", (nest, {target, type, content}) => {
   return routeRequest(nest, target, type, content);
 });
@@ -4227,18 +3768,15 @@ requestType("route", (nest, {target, type, content}) => {
 
 ```javascript
 requestType("storage", (nest, name) => storage(nest, name));
-
 function findInStorage(nest, name) {
   return storage(nest, name).then(found => {
     if (found != null) return found;
     else return findInRemoteStorage(nest, name);
   });
 }
-
 function network(nest) {
   return Array.from(nest.state.connections.keys());
 }
-
 function findInRemoteStorage(nest, name) {
   let sources = network(nest).filter(n => n != nest.name);
   function next() {
@@ -4286,7 +3824,6 @@ function* powers(n) {
     yield current;
   }
 }
-
 for (let power of powers(3)) {
   if (power > 50) break;
   console.log(power);
@@ -4305,8 +3842,6 @@ Group.prototype[Symbol.iterator] = function*() {
   }
 };
 ```
-
-
 
 异步程序一个接一个地执行。每一个动作都会开始并安排一段代码来执行，直到该动作完成或失败。
 
@@ -4330,9 +3865,7 @@ let start = Date.now();
 setTimeout(() => {
   console.log("Timeout At", Date.now() - start);
 }, 20);
-
 while (Date.now() < start + 50) {}
-
 console.log("Wasted time until", Date.now() - start);
 // → Wasted time until 50
 // → Timeout at 55
@@ -4356,7 +3889,6 @@ function anyStorage(nest, source, name) {
   if (source == Nest.names) return storage(nest, name);
   else return routeRequest(nest, source, "storage", name);
 }
-
 async function chicks(nest, year) {
   let list = "";
   await Promise.all(network(nest).map(async name => {
@@ -4395,10 +3927,7 @@ async function chicks(nest, year) {
 
 ## 第 13 章：解析
 
-
-
-
-语言的一致性意味着 JavaScript 中的操作符（如 `>`）在本文语言中被称为绑定（bindings），其用法与其他函数类似。此外，语法包含一个“零块”概念，因此需要一种结构来表示连续运行多个项。解析器利用数据布局来定义一个包含表达式对象的程序。每个对象都包含一个 `type` 属性来表示表达式类型，以及其他几个属性来确定其内容。类型为 `"value"` 的表达式表示字符串或数字。它们的 `value` 属性由它们所代表的字符串或数字组成。类型为 `"word"` 的表达式用于标识符（名称）。这类类型的对象包含一个 `name` 属性，以字符串形式持有标识符的标题。而 `"apply"` 表达式表示应用。它们包含一个 `operator` 属性，用于引用被调用的表达式，以及一个 `args` 属性，该属性包含一个参数表达式的数组。
+语言的一致性意味着 JavaScript 中的操作符（如 `>`）在本文语言中被称为绑定（bindings），其用法与其他函数类似。此外，语法包含一个"零块"概念，因此需要一种结构来表示连续运行多个项。解析器利用数据布局来定义一个包含表达式对象的程序。每个对象都包含一个 `type` 属性来表示表达式类型，以及其他几个属性来确定其内容。类型为 `"value"` 的表达式表示字符串或数字。它们的 `value` 属性由它们所代表的字符串或数字组成。类型为 `"word"` 的表达式用于标识符（名称）。这类类型的对象包含一个 `name` 属性，以字符串形式持有标识符的标题。而 `"apply"` 表达式表示应用。它们包含一个 `operator` 属性，用于引用被调用的表达式，以及一个 `args` 属性，该属性包含一个参数表达式的数组。
 
 新程序中的 `> (x, 5)` 部分如下：
 
@@ -4421,7 +3950,6 @@ async function chicks(nest, year) {
 function parseExpression(program) {
   program = skipSpace(program);
   let match, expr;
-
   if (match = /^"([^"]*)"/.exec(program)) {
     expr = {type: "value", value: match[1]};
   } else if (match = /^\d+\b/.exec(program)) {
@@ -4431,10 +3959,8 @@ function parseExpression(program) {
   } else {
     throw new SyntaxError("Unexpected Syntax: " + program);
   }
-
   return parseApply(expr, program.slice(match[0].length));
 }
-
 function skipSpace(string) {
   let first = string.search(/\S/);
   if (first == -1) return "";
@@ -4448,7 +3974,6 @@ function skipSpace(string) {
 
 ```javascript
 const specialForms = Object.create(null);
-
 function evaluate(expr, scope) {
   if (expr.type == "value") {
     return expr.value;
@@ -4555,9 +4080,6 @@ topScope.true = true;
 topScope.false = false;
 ```
 
-
-
-
 为了提供基础的算术运算符和比较运算符，我们将函数值加入一个作用域。我们将在循环中对几个运算符函数使用函数，而不是逐个声明它们。
 
 ```javascript
@@ -4594,9 +4116,8 @@ do(define(total, +(total, count)),
 define(count, +(count, 1)))),
 print(total))
 `);
-```
-
 // → 55
+```
 
 这个概念解释了从 1 到 10 的数字和，正如蛋里所示的那样。
 
@@ -4612,25 +4133,42 @@ specialForms.fun = (args, scope) => {
   let body = args[args.length - 1];
   let param = args.slice(0, args.length - 1).map(expr => {
     if (expr.type != "word") {
+
+
+
+```javascript
       throw new SyntaxError("Parameter names must be words");
+
     }
+
     return expr.name;
+
   });
 
   return function() {
+
     if (arguments.length != param.length) {
+
       throw new TypeError("Wrong number of arguments");
+
     }
+
     let localScope = Object.create(scope);
+
     for (let i = 0; i < arguments.length; i++) {
+
       localScope[param[i]] = arguments[i];
+
     }
+
     return evaluate(body, localScope);
+
   };
+
 };
 ```
 
-`egg functions` 有它们自己的局部作用域。由 `fun` 形式提供的函数构建了这个局部作用域并将参数绑定到其上。它随后在该作用域中访问函数体并返回结果。
+`egg functions` 有它们自己的局部作用域。由`fun`形式提供的函数构建了这个局部作用域并将参数绑定到其上。它随后在该作用域中访问函数体并返回结果。
 
 ```javascript
 run(`
@@ -4655,7 +4193,7 @@ print(pow(2, 10)))
 
 ### Summary
 
-我们在本章中涵盖了解析、函数、特殊形式和评估器。符号或语法是编程的每一个重要方面。`parser` 读取文本并提供一种显示文本中程序布局的数据结构。如果文本创建了无效程序，`parser` 将指示错误。
+我们在本章中涵盖了解析、函数、特殊形式和评估器。符号或语法是编程的每一个重要方面。`parser`读取文本并提供一种显示文本中程序布局的数据结构。如果文本创建了无效程序，`parser`将指示错误。
 
 ### Exercise
 
@@ -4668,4 +4206,3 @@ print(pow(2, 10)))
 ## Conclusion
 
 本书包含了与 JavaScript 编程语言相关的重要信息。书中的信息将帮助你理解和练习各种 JavaScript 运算符、循环、条件语句、函数、变量作用域、类型等。随着课程接近尾声，你将对 JavaScript 语言有良好的理解，因为你已经学习了 JavaScript 和形式，你将理解 jQuery、框架和调试脚本的基础。给程序员的最好建议就是坚持练习，因为那是掌握所学知识的唯一途径。
-

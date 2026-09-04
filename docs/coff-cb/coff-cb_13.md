@@ -1,3 +1,4 @@
+
 # 十三、设计模式
 
 ## 适配器模式
@@ -6,12 +7,12 @@
 
 想象你去国外旅行，一旦你意识到你的电源线插座与酒店房间墙上的插座不兼容时，幸运的是你记得带你的电源适配器。它将一边连接你的电源线插座另一边连接墙壁插座，允许它们之间进行通信。
 
-同样的情况也可能会出现在代码中，当两个 ( 或更多 ) 实例 ( 类、模块等 ) 想跟对方通信，但其通信协议 ( 例如，他们所使用的语言交流 ) 不同。在这种情况下，[Adapter](http://en.wikipedia.org/wiki/Adapter_pattern) 模式更方便。它会充当翻译，从一边到另一边。
+同样的情况也可能会出现在代码中，当两个（或更多）实例（类、模块等）想跟对方通信，但其通信协议（例如，他们所使用的语言交流）不同。在这种情况下，`Adapter`模式更方便。它会充当翻译，从一边到另一边。
 
 ### 解决方案
 
 ```js
- # a fragment of 3-rd party grid component
+# a fragment of 3-rd party grid component
 
 class AwesomeGrid
     constructor: (@datasource)->
@@ -97,7 +98,7 @@ saver.save data
 
 ### 讨论
 
-桥接模式可以帮助你将特定实现的代码置于看不见的地方，这样你就可以专注于你的程序中的具体代码。在上面的示例中,应用程序的其余部分可以称为 saver.save data ，不考虑文件的最终结束。
+桥接模式可以帮助你将特定实现的代码置于看不见的地方，这样你就可以专注于你的程序中的具体代码。在上面的示例中，应用程序的其余部分可以称为`saver.save data`，不考虑文件的最终结束。
 
 ## 生成器模式
 
@@ -109,7 +110,7 @@ saver.save data
 
 创建一个生成器封装对象的产生过程。
 
-[Todo.txt](http://todotxt.com/) 格式提供了一个先进的但还是纯文本的方法来维护待办事项列表。手工输入每个项目有损耗且容易出错，然而 TodoTxtBuilder 类可以解决我们的麻烦：
+`Todo.txt`格式提供了一个先进的但还是纯文本的方法来维护待办事项列表。手工输入每个项目有损耗且容易出错，然而`TodoTxtBuilder`类可以解决我们的麻烦：
 
 ```js
 class TodoTxtBuilder
@@ -149,7 +150,7 @@ workBuilder.newTodo "Remind Sean about the failing unit tests", contexts: ["meet
 
 ### 讨论
 
-TodoTxtBuilder 类负责所有文本的生成，让程序员关注每个工作项的独特元素。此外，命令行工具或 GUI 可以插入这个代码且之后仍然保持支持，提供轻松、更高版本的格式。
+`TodoTxtBuilder`类负责所有文本的生成，让程序员关注每个工作项的独特元素。此外，命令行工具或`GUI`可以插入这个代码且之后仍然保持支持，提供轻松、更高版本的格式。
 
 ### 前期建设
 
@@ -183,9 +184,8 @@ builder.newTodo "Fill gas tank"
 
 ### 练习
 
-*   扩大 project- 和 context-tag 生成代码来过滤掉重复的条目。
-
-*   一些 Todo.txt 用户喜欢在任务描述中插入项目和上下文的标签。添加代码来识别这些标签和过滤器的结束标记。
+*   扩大`project-`和`context-tag`生成代码来过滤掉重复的条目。
+*   一些`Todo.txt`用户喜欢在任务描述中插入项目和上下文的标签。添加代码来识别这些标签和过滤器的结束标记。
 
 ## 命令模式
 
@@ -195,7 +195,7 @@ builder.newTodo "Fill gas tank"
 
 ### 解决方案
 
-使用 [Command pattern](http://en.wikipedia.org/wiki/Command_pattern) 传递函数的引用。
+使用`Command pattern`传递函数的引用。
 
 ```js
  # Using a private variable to simulate external scripts or modules
@@ -226,9 +226,9 @@ incrementers.value() # => 6
 
 ### 讨论
 
-以函数作为一级的对象且从 Javascript 函数的变量范围中继承，CoffeeScript 使语言模式几乎看不出来。事实上，任何函数传递回调函数可以作为一个*命令*。
+以函数作为一级的对象且从`Javascript`函数的变量范围中继承，`CoffeeScript`使语言模式几乎看不出来。事实上，任何函数传递回调函数可以作为一个*命令*。
 
-jqXHR 对象返回 jQuery AJAX 方法使用此模式。
+`jqXHR`对象返回`jQuery AJAX`方法使用此模式。
 
 ```js
 jqxhr = $.ajax
@@ -310,9 +310,11 @@ processor.processString exampleText
 
 ### 讨论
 
-TextProcessor 服务有修饰的作用，可将个人、专业文本处理器绑定在一起。这使 miniMarkdown 和 stripComments 组件只专注于处理一行文本。未来的开发人员只需要编写函数返回一个字符串，并将它添加到阵列的处理器即可。
+`TextProcessor`服务有修饰的作用，可将个人、专业文本处理器绑定在一起。这使`miniMarkdown`和`stripComments`组件只专注于处理一行文本。未来的开发人员只需要编写函数返回一个字符串，并将它添加到阵列的处理器即可。
 
-我们甚至可以修改现有的修饰对象动态：
+
+
+我们甚至可以动态修改现有的修饰对象：
 
 ```js
 smilies =
@@ -345,9 +347,9 @@ processor.processors.shift()
 
 ### 解决方案
 
-使用 [工厂方法（Factory Method)](http://en.wikipedia.org/wiki/Factory_method_pattern) 模式和选择对象都是动态生成的。
+使用[工厂方法（Factory Method）](http://en.wikipedia.org/wiki/Factory_method_pattern)模式，选择对象都是动态生成的。
 
-你需要将一个文件加载到编辑器，但是直到用户选择文件时你才知道它的格式。一个类使用[工厂方法 ( Factory Method )](http://en.wikipedia.org/wiki/Factory_method_pattern) 模式可以根据文件的扩展名提供不同的解析器。
+你需要将一个文件加载到编辑器，但是直到用户选择文件时你才知道它的格式。一个类使用[工厂方法（Factory Method）](http://en.wikipedia.org/wiki/Factory_method_pattern)模式，可以根据文件的扩展名提供不同的解析器。
 
 ```js
 class HTMLParser
@@ -382,19 +384,19 @@ factory.makeParser("example.json").type # => "JSON parser"
 
 ### 讨论
 
-在这个示例中，你可以关注解析的内容，忽略细节文件的格式。更先进的工厂方法，例如，搜索版本控制文件中的数据本身，然后返回一个更精确的解析器(例如，返回一个 HTML5 解析器而不是 HTML v4 解析器)。
+在这个示例中，你可以关注解析的内容，忽略文件格式的细节。更先进的工厂方法，例如搜索版本控制文件中的数据本身，然后返回一个更精确的解析器（例如，返回一个 HTML5 解析器而不是 HTML v4 解析器）。
 
 ## 解释器模式
 
 ### 问题
 
-其他人需要以控制方式运行你的一部分代码。相对地，你选择的语言不能以一种简洁的方式表达问题域。
+其他人需要以可控方式运行你的一部分代码。相对地，你选择的语言不能以一种简洁的方式表达问题域。
 
 ### 解决方案
 
-使用解释器模式来创建一个你翻译为特定代码的领域特异性语言（ domain-specific language ）。
+使用解释器模式来创建一个你翻译为特定代码的领域特异性语言（domain-specific language）。
 
-我们来做个假设，例如用户希望在你的应用程序中执行数学运算。你可以让他们正向运行代码来演算指令（eval）但这会让他们运行任意代码。相反，你可以提供一个小型的“堆栈计算器（stack calculator）”语言，用来做单独分析，以便只运行数学运算，同时报告更有用的错误信息。
+我们来做个假设，例如用户希望在你的应用程序中执行数学运算。你可以让他们运行代码来演算指令（eval），但这会让他们运行任意代码。相反，你可以提供一个小型的“堆栈计算器（stack calculator）”语言，用来做单独分析，以便只运行数学运算，同时报告更有用的错误信息。
 
 ```js
 class StackCalculator
@@ -523,7 +525,7 @@ send toasted ham turkey sandwich to 'Rachel' # => "Rachel requested a toasted, w
 send toasted turkey ham swiss sandwich to 'Matt' # => "Matt requested a toasted, white bread sandwich with swiss, ham and turkey"
 ```
 
-这个实例可以允许功能层实现返回修改后的对象，从而外函数可以依次修改它。示例通过借用动词和介词的用法，把自然语法提供给结构，当被正确使用时，会像自然语句一样结束。这样，利用 CoffeeScript 语言技能和你现有的语言技能可以帮助你关于捕捉代码的问题。
+这个实例可以允许功能层实现返回修改后的对象，从而外函数可以依次修改它。示例通过借用动词和介词的用法，把自然语法提供给结构，当被正确使用时，会像自然语句一样结束。这样，利用 CoffeeScript 语言技能和你现有的语言技能，可以帮助你解决捕捉代码的问题。
 
 ## 备忘录模式
 
@@ -533,7 +535,7 @@ send toasted turkey ham swiss sandwich to 'Matt' # => "Matt requested a toasted,
 
 ### 解决方案
 
-使用备忘录模式[（Memento Pattern）](http://en.wikipedia.org/wiki/Memento_pattern)来跟踪一个对象的变化。使用这个模式的类会输出一个存储在其他地方的备忘录对象。
+使用[备忘录模式（Memento Pattern）](http://en.wikipedia.org/wiki/Memento_pattern)来跟踪一个对象的变化。使用这个模式的类会输出一个存储在其他地方的备忘录对象。
 
 如果你的应用程序可以让用户编辑文本文件，例如，他们可能想要撤销上一个动作。你可以在用户改变文件之前保存文件现有的状态，然后回滚到上一个位置。
 
@@ -565,17 +567,17 @@ pt.text # => "The original string"
 
 ### 讨论
 
-备忘录对象由 PreserveableText#save 返回，为了安全保护，分别地存储着重要的状态信息。你可以序列化备忘录以便来保证硬盘中的“撤销”缓冲或者是那些被编辑的图片等数据密集型对象。
+备忘录对象由`PreserveableText#save`返回，为了安全保护，分别地存储着重要的状态信息。你可以序列化备忘录，以便保证硬盘中的“撤销”缓冲，或者保存那些被编辑的图片等数据密集型对象。
 
 ## 观察者模式
 
 ### 问题
 
-当一个事件发生时你不得不向一些对象发布公告。
+当一个事件发生时，你不得不向一些对象发布公告。
 
 ### 解决方案
 
-使用观察者模式[（Observer Pattern）](http://en.wikipedia.org/wiki/Observer_pattern)。
+使用[观察者模式（Observer Pattern）](http://en.wikipedia.org/wiki/Observer_pattern)。
 
 ```js
 class PostOffice
@@ -605,7 +607,7 @@ postOffice.notifyNewItemReleased "Mens Health"
 
 ### 讨论
 
-这里你有一个观察者对象（ PostOffice ）和可观察对象( MagazineSubscriber, NewspaperSubscriber ）。为了通报发布新的周期性可观察对象的事件，应该对 PostOffice 进行订阅。每一个被订阅的对象都存储在 PostOffice 的内部订阅数组中。当新的实体周期发布时每一个订阅者都会收到通知。
+这里你有一个观察者对象（`PostOffice`）和可观察对象（`MagazineSubscriber`、`NewspaperSubscriber`）。为了通报发布新的周期性可观察对象的事件，应该对`PostOffice`进行订阅。每一个被订阅的对象都存储在`PostOffice`的内部订阅数组中。当新的实体周期发布时，每一个订阅者都会收到通知。
 
 ## 单件模式
 
@@ -617,7 +619,9 @@ postOffice.notifyNewItemReleased "Mens Health"
 
 公有类只包含获得一个实例的方法。实例被保存在该公共对象的闭包中，并且总是有返回值。
 
-这很奏效因为 CoffeeScript 允许你在一个类的声明中定义可执行的状态。但是，因为大多数 CoffeeScript 编译成一个 [IIFE](http://benalman.com/news/2010/11/immediately-invoked-function-expression/) 包，如果这个方式适合你，你就不需要在类的声明中放置私有的类。之后的内容可能对开发模块化代码有所帮助，例如 [CommonJS](http://www.commonjs.org/)（Node.js）或 [Require.js](http://requirejs.org/) 中可见（见实例讨论）。
+这很奏效，因为 CoffeeScript 允许你在一个类的声明中定义可执行的状态。但是，因为大多数 CoffeeScript 编译成一个[IIFE](http://benalman.com/news/2010/11/immediately-invoked-function-expression/)包，如果这个方式适合你，你就不需要在类的声明中放置私有的类。之后的内容可能对开发模块化代码有所帮助，例如[CommonJS](http://www.commonjs.org/)（Node.js）或[Require.js](http://requirejs.org/)中可见（见实例讨论）。
+
+
 
 ```js
 class Singleton
@@ -649,9 +653,9 @@ Singleton.PrivateClass # => undefined
 
 ### 讨论
 
-通过上面的实例我们可以看到，所有的实例是如何从同一个 Singleton 类的实例中输出的。你也可以看到，私有类和实例变量都无法在 Singleton class 外被访问到。 Singleton class 的本质是提供一个静态方法得到只返回一个私有类的实例。它也对外界也隐藏私有类，因此你无法创建一个自己的私有类。
+通过上面的实例我们可以看到，所有的实例是如何从同一个`Singleton`类的实例中输出的。你也可以看到，私有类和实例变量都无法在`Singleton class`外被访问到。`Singleton class`的本质是提供一个静态方法，只返回一个私有类的实例。它也对外界隐藏私有类，因此你无法创建一个自己的私有类。
 
-隐藏或使私有类在内部运作的想法是更受偏爱的。尤其是由于缺省的 CoffeeScript 将编译的代码封装在自己的 IIFE（闭包）中，你可以定义类而无须担心会被文件外部访问到。在这个实例中，注意，用惯用的模块导出特点来强调模块中可被公共访问的部分。（请看 “[导出到全局命名空间](http://stackoverflow.com/questions/4214731/coffeescript-global-variables)” 中对此理解更深入的讨论）。
+隐藏或使私有类在内部运作的想法是更受偏爱的。尤其是由于缺省的 CoffeeScript 将编译的代码封装在自己的 IIFE（闭包）中，你可以定义类而无须担心会被文件外部访问到。在这个实例中，注意，用惯用的模块导出特点来强调模块中可被公共访问的部分。（请看“[导出到全局命名空间](http://stackoverflow.com/questions/4214731/coffeescript-global-variables)”中对此理解更深入的讨论）。
 
 ```js
 root = exports ? this
@@ -679,7 +683,7 @@ class Singleton
 root.Singleton = Singleton
 ```
 
-我们可以注意到 coffeescript 是如此简单地实现这个设计模式。为了更好地参考和讨论 JavaScript 的实现，请看[初学者必备 JavaScript 设计模式](http://addyosmani.com/resources/essentialjsdesignpatterns/book/)。
+我们可以注意到 CoffeeScript 是如此简单地实现这个设计模式。为了更好地参考和讨论 JavaScript 的实现，请看[初学者必备 JavaScript 设计模式](http://addyosmani.com/resources/essentialjsdesignpatterns/book/)。
 
 ## 策略模式
 
@@ -756,11 +760,11 @@ sorter.sort unsortedList
 
 ### 讨论
 
-“没有作战计划在第一次接触敌人时便能存活下来。” 用户如是，但是我们可以运用从变化的情况中获得的知识来做出适应改变。在示例末尾，例如，数组中的最新项是乱序排列的，知道了这个细节，我们便可以通过切换算法来加速排序，只要简单地重赋值就可以了。
+“没有作战计划在第一次接触敌人时便能存活下来。”用户如是，但是我们可以运用从变化的情况中获得的知识来做出适应改变。在示例末尾，例如，数组中的最新项是乱序排列的，知道了这个细节，我们便可以通过切换算法来加速排序，只要简单地重赋值就可以了。
 
 ### 练习
 
-*   将 StringSorter 扩展为 AlwaysSortedArray 类来实现规则序列的所有功能，但是要基于插入方法自动分类新的项（例如 push 对比 shift）。
+* 将`StringSorter`扩展为`AlwaysSortedArray`类来实现规则序列的所有功能，但是要基于插入方法自动分类新的项（例如`push`对比`shift`）。
 
 ## 模板方法模式
 
@@ -770,7 +774,7 @@ sorter.sort unsortedList
 
 ### 解决方案
 
-使用模板方法（ Template Method ）在父类中描述算法的结构，再授权一个或多个具体子类来具体地进行实现。
+使用模板方法（Template Method）在父类中描述算法的结构，再授权一个或多个具体子类来具体地进行实现。
 
 例如，想象你希望模拟各种类型的文件的生成，并且每个文件要包含一个标题和正文。
 
@@ -800,6 +804,6 @@ doc.produceDocument() for doc in docs
 
 ### 讨论
 
-在这个实例中，算法用两个步骤来描述文件的生成：其一是产生文件的标题，另一步是生成文件的正文。父类中是实现每一个步骤的空的方法，多态性使得每一个具体的子类可以通过重写一步步的方法来实现对方法不同的利用。在本实例中，DocWithHeader 实现了正文和标题的步骤， DocWithoutHeader 只是实现了正文的步骤。
+在这个实例中，算法用两个步骤来描述文件的生成：其一是产生文件的标题，另一步是生成文件的正文。父类中是实现每一个步骤的空的方法，多态性使得每一个具体的子类可以通过重写一步步的方法来实现对方法不同的利用。在本实例中，`DocWithHeader`实现了正文和标题的步骤，`DocWithoutHeader`只是实现了正文的步骤。
 
-不同类型文件的生成就是简单的将文档对象存储在一个数组中，简单的遍历每个文档对象并调用其 produceDocument 方法的问题。
+不同类型文件的生成就是简单地将文档对象存储在一个数组中，简单地遍历每个文档对象并调用其`produceDocument`方法的问题。

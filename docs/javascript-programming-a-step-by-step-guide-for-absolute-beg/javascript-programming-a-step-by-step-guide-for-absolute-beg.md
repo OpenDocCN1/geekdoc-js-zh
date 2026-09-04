@@ -1,89 +1,48 @@
+
 # JavaScript 编程：初学者循步进阶指南
 
+## 本书目标
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-本书目标
 以下是本书的目标：
+
 - 帮助你了解如何开始 JavaScript 编程。
 - 帮助你理解组成 JavaScript 脚本语言的语法和结构。
 - 帮助你从 JavaScript 初学者变为专业人士。
 - 帮助你理解如何使用 JavaScript 提高网站应用程序的交互性。
 
-本书读者
+## 本书读者
+
 作者针对以下群体：
+
 - 任何 JavaScript 编程或通用计算机编程的初学者。
 - 任何需要提高 JavaScript 技能的人员。
-- 寻找以最简单最简单的方法向学生解释 JavaScript 的教授、讲师或导师。
+- 寻找以最简单的方法向学生解释 JavaScript 的教授、讲师或导师。
 - 学生和学者，特别是关注计算机编程和 Web 开发的人员。
 
-学习本书需要什么？请确保你拥有以下物品：
+## 学习本书需要什么？
+
+请确保你拥有以下物品：
+
 - 一个文本编辑器（如记事本）。
 - 一个现代 Web 浏览器。
 
-书中内容什么？
+## 书中内容
+
 本书分为若干章节，每章探索 JavaScript 脚本语言的不同功能。作者提供了 JavaScript 代码，每段代码执行不同的任务。每段代码旁都提供了相应的解释，以帮助读者理解代码各行的含义。此外，还提供了显示每段代码应有输出的截图。作者使用了简单的语言，以便零基础学者轻松理解。
 
-关于作者
-Brian Jenkins 拥有计算机科学博士学位。他曾针对磁记录系统和远距离光通信系统进行编码研究。拥有二十年教授新手编程的经验，作为这一代最有才华的 IT 专家之一，Brian 博士担任研究专家，兼生物信息学家。自2015年以来，Brian 与妻子和女儿住在日内瓦。他正在编写一系列关于计算机编程和数据科学的书籍。
+## 关于作者
 
-“JavaScript 是一种坏部分过多的语言。” Douglas Crockford
+Brian Jenkins 拥有计算机科学博士学位。他曾针对磁记录系统和远距离光通信系统进行编码研究。拥有二十年教授新手编程的经验，作为这一代最有才华的 IT 专家之一，Brian 博士担任研究专家，兼生物信息学家。自 2015 年以来，Brian 与妻子和女儿住在日内瓦。他正在编写一系列关于计算机编程和数据科学的书籍。
 
-引言
+> “JavaScript 是一种坏部分过多的语言。” —— Douglas Crockford
+
+## 引言
+
 JavaScript 是一种每个 Web 开发者都应该熟悉的脚本语言。JavaScript 为 Web 开发领域带来了许多变化。它为 Web 开发者提供了一种让网页更具交互性的方法。这是大多数访问者所寻找的。如果你了解如检查用户填写表单时输入的详情是否正确等验证，JavaScript 是实现此类功能的最佳语言。它是 WWW（万维网）的技术之一。JavaScript 的优点是它受所有现代浏览器的支持。这意味着你不需要安装任何插件即可运行其脚本。你可以轻松开始编写和运行 JavaScript 脚本，因为你只需要基础元素，如文本编辑器和浏览器。
 
+---
 
-
-
-
-
-15
-
-献给我的妻子和女儿，你们是我每天的幸福，也是我最真挚的爱！
-
-
-
-
-
-
-
-
-
-
-
-- setInterval (138)
-
-
-
-
-
-
-
-21
-
-第 15章 多媒体
-第 16章 错误处理
-第 17章 正则表达式
-第 18章 图像地图
-第 19章 页面重定向
-结论
-
-23
-
-## 第1章 JavaScript 基础
+## 第 1 章 JavaScript 基础
 
 ### 什么是 JavaScript？
 
@@ -93,8 +52,6 @@ JavaScript 程序被称为脚本（scripts）。你可以在网页的 HTML 内�
 
 JavaScript 是一种基于对象的脚本语言，可以被所有现代浏览器解释。这意味着所有浏览器都自带 JavaScript 引擎。这增加了 JavaScript 的普及程度，使其成为当今最流行的脚本语言。
 
-24
-
 ### 环境搭建
 
 为了编写、测试和运行你的 JavaScript 代码，你需要以下工具：
@@ -102,10 +59,7 @@ JavaScript 是一种基于对象的脚本语言，可以被所有现代浏览器
 - 编辑器
 - 浏览器
 
-你甚至可以使用像记事本这样的基础文本编辑器来编写 JavaScript 代码。然而，获取一个高级文本编辑器对你大有，它可以提供语法错误高亮、自动补全等功能。此类编辑器的示例包括 Visual Studio、Eclipse、Atom 等。这些可以帮助你提高开发速度。你也可以使用一些在线 JavaScript 编辑器来编写脚本。jsfiddle.net 就是一个很好的例子。对于浏览器，你可以根据喜好安装任何类型的浏览器。此类浏览器包括 Chrome、Internet Explorer、Safari、Firefox 等。JavaScript 可以在运行于任何操作系统上的浏览器上工作。
-
-JavaScript 编程
-25
+你甚至可以使用像记事本这样的基础文本编辑器来编写 JavaScript 代码。然而，获取一个高级文本编辑器对你大有裨益，它可以提供语法错误高亮、自动补全等功能。此类编辑器的示例包括 Visual Studio、Eclipse、Atom 等。这些可以帮助你提高开发速度。你也可以使用一些在线 JavaScript 编辑器来编写脚本，`jsfiddle.net` 就是一个很好的例子。对于浏览器，你可以根据喜好安装任何类型的浏览器。此类浏览器包括 Chrome、Internet Explorer、Safari、Firefox 等。JavaScript 可以在运行于任何操作系统上的浏览器上工作。
 
 ### 示例
 
@@ -123,7 +77,7 @@ document.write("");
 </html>
 ```
 
-JavaScript 让网页具有交互性！`script` 标签指定了我们正在使用 JavaScript。这有助于浏览器识别它所类型的数据。代码简单地调用了 JavaScript 的 `document.write` 方法，打印我们传递给它的文本。该方法用于使用 JavaScript 显示动态内容。如我们在上面所述，我们可以在三个地方添加代码。以下代码演示了如何在 `<body>` 和 `</body>` 标签之间添加代码：
+JavaScript 让网页具有交互性！`script` 标签指定了我们正在使用 JavaScript。这有助于浏览器识别它所处理的数据类型。代码简单地调用了 JavaScript 的 `document.write()` 方法，打印我们传递给它的文本。该方法用于使用 JavaScript 显示动态内容。如我们在上面所述，我们可以在三个地方添加代码。以下代码演示了如何在 `<body>` 和 `</body>` 标签之间添加代码：
 
 ```html
 <html>
@@ -137,49 +91,29 @@ document.write("");
 </html>
 ```
 
-JavaScript 编程
-26
-
 这是另一个示例，显示我们可以显示警框（alert box）：
-
-我们调用了 `alert` 方法，它会显示一个带有指定消息的警框。在这种情况下，消息将是 Hello World。JavaScript 代码也可以添加在 `head` 标签内。这里有一个示例：
 
 ```html
 <html>
 <head>
 <script type="">
 function hello() {
-alert("Hello World");
+  alert("Hello World");
 }
 </script>
 </head>
 <body>
 <p>JavaScript</p>
 <form>
-<input type="button" value="" onclick="hello"/>
+<input type="button" value="" onclick="hello()"/>
 </form>
 </body>
 </html>
 ```
 
+我们在 `script` 标签内创建了一个名为 `hello()` 的方法。该方法在被调用时应该返回一个带有 Hello World 消息的警框。我们在 `<body>` 标签内创建了一个带有按钮的表单。`onclick` 属性指定了点击按钮时调用的方法。运行代码后你应该得到如下结果：
 
-我们在 `script` 标签内创建了一个名为 `hello` 的方法。该方法在被调用时应该返回一个带有 Hello World 消息的警框。我们在 `<body>` 标签内创建了一个带有按钮的表单。`onclick` 属性指定了点击按钮时调用的方法。运行代码后你应该得到如下结果：
-
-点击我
 点击“点击我”按钮。你将看到带有 Hello World 消息的警框。
-
-
-
-
-
-</head>
-<body>
-<p>JavaScript</p>
-<form>
-<input type="" value="" onclick="" />
-</form>
-</body>
-</html>
 
 JavaScript 文件的文件名是在 script 标签内通过 `src` 参数指定的。
 
@@ -187,7 +121,7 @@ JavaScript 文件的文件名是在 script 标签内通过 `src` 参数指定的
 
 注释为我们提供了一种传递信息的方式。注释有助于引导用户、添加描述代码的信息、建议或警告，让读者更容易解释代码。JavaScript 引擎会忽略注释，这意味着它会跳过这些内容。
 
-JavaScript 注释可以跨越单行或多行。要写单行注释，请在其前面加上双斜杠（//）。例如：
+JavaScript 注释可以跨越单行或多行。要写单行注释，请在其前面加上双斜杠（`//`）。例如：
 
 ```javascript
 var x = 3;
@@ -200,21 +134,23 @@ document.write(x);
 var x = 5;
 var y = 25;
 var z = 60;
-document.write(z);//打印这些内容
+document.write(z); // 打印这些内容
 ```
 
-多行注释包含在 `/*` 和 `*/`（一个斜杠和一个星号）之间。这也可以用于单行注释。例如：
+多行注释包含在 `/*` 和 `*/` 之间。这也可以用于单行注释。例如：
 
 ```javascript
-/* 这是一个多行 
-注释，引擎会 
+/* 这是一个多行
+注释，引擎会
 跳过它 */
 document.write("Be syly");
 ```
 
-### 大写敏感
+### 大小写敏感
 
 JavaScript 是一种大小写敏感的脚本语言。这意味着名为 `x` 的变量与名为 `X` 的变量不同。名为 `age` 的变量与名为 `Age`、`AGE` 等变量不同。
+
+---
 
 ## 第 2 章 弹出消息
 
@@ -240,7 +176,9 @@ alert(true);
 
 当您运行代码时，它将显示第一个带有字符串 "Hello World!" 的 alert 框。点击 OK 按钮，它将显示一个带有 123 的 alert。再次点击 OK 按钮，它将显示一个带有 `true` 的 alert 框。这表明 alert 框可以显示任何类型的消息。
 
-有时，需要用户给出确认以继续操作。例如，您可能希望在完成处理之前，让用户确认删除或更新某些详情。这可以使用 JavaScript 提供的 `confirm()` 函数来实现。该函数将向用户显示一个弹出框，其中包含两个按钮，即 OK 和 Cancel。下一步由用户点击的按钮决定的。
+### Confirm 框（确认框）
+
+有时，需要用户给出确认以继续操作。例如，您可能希望在完成处理之前，让用户确认删除或更新某些详情。这可以使用 JavaScript 提供的 `confirm()` 函数来实现。该函数将向用户显示一个弹出框，其中包含两个按钮，即 OK 和 Cancel。下一步由用户点击的按钮决定。
 
 例如：
 
@@ -248,15 +186,15 @@ alert(true);
 <html>
 <body>
 <h1>confirm()</h1>
-<p id=""></p>
+<p id="demo"></p>
 <script>
 var userChoice;
-if (confirm("")) == true) { // 注意：此处原文代码有一个多余的括号 */
+if (confirm("") == true) {
     userChoice = "OK";
 } else {
     userChoice = "Canceled!";
 }
-document.getElementById("").innerHTML = userChoice;
+document.getElementById("demo").innerHTML = userChoice;
 </script>
 </body>
 </html>
@@ -264,7 +202,7 @@ document.getElementById("").innerHTML = userChoice;
 
 ### Prompt 框（提示框）
 
-在某些情况下，您可能需要接收用户的输入并用它在页面上执行后续操作。例如，您可能需要根据用户想要结算贷款的月数来计算每月还款金额。在这种情况下，可以使用 JavaScript 提供的 `prompt()` 函数。该函数应接受两个字符串参数。第一个是显示的消息，第二个是当消息显示后输入文本框中的默认值：`prompt(message, defaultValue);`。
+在某些情况下，您可能需要接收用户的输入并用它在页面上执行后续操作。例如，您可能需要根据用户想要结算贷款的月数来计算每月还款金额。在这种情况下，可以使用 JavaScript 提供的 `prompt()` 函数。该函数应接受两个字符串参数。第一个是显示的消息，第二个是当消息显示后输入文本框中的默认值：`prompt(message, defaultValue)`。
 
 例如：
 
@@ -272,17 +210,20 @@ document.getElementById("").innerHTML = userChoice;
 <html>
 <body>
 <h1>prompt()</h1>
-<p id=""></p>
+<p id="demo"></p>
 <script>
 var age = prompt("Enter your age:", "26");
-document.getElementById("").innerHTML = age;
+document.getElementById("demo").innerHTML = age;
 </script>
 </body>
 </html>
 ```
 
+---
 
-变量是存储位置的名称。根据它的名称，它可以变化。变量持有变化的值。在 JavaScript 中，我们使用 `var` 关键字来声明变量。每个变量必须赋予一个唯一的名称。您可以在声明时为变量赋值。这可以通过等号（=）完成。以下是 JavaScript 中声明初始化变量的语法：
+## 第 3 章 变量
+
+变量是存储位置的名称。根据它的名称，它可以变化。变量持有变化的值。在 JavaScript 中，我们使用 `var` 关键字来声明变量。每个变量必须赋予一个唯一的名称。您可以在声明时为变量赋值。这可以通过等号（`=`）完成。以下是 JavaScript 中声明初始化变量的语法：
 
 ```javascript
 var variableName;
@@ -299,7 +240,7 @@ var z = 30;
 
 我们使用了 `var` 关键字声明了三个变量。其中两个变量已经赋值。注意这是在声明时完成的。
 
-我们也可以在一行中声明多个变量，并用逗号（,）隔开。演示如下：
+我们也可以在一行中声明多个变量，并用逗号（`,`）隔开。演示如下：
 
 ```javascript
 var x = 1, y = "a";
@@ -314,11 +255,6 @@ y = "a";
 
 但是，我不建议您不使用 `var` 关键字声明任何变量。这是因为您可能会在不知情的情况下覆盖一个全局变量。如果不使用 `var` 关键字声明变量，它将自动成为全局变量，无论它在何处声明。
 
-
-
-
-37
-
 以下示例演示了如何在 JavaScript 中使用变量：
 
 ```html
@@ -332,27 +268,27 @@ document.write(c);
 
 代码将返回两个变量值之和，结果为 23。
 
-## 局部变量
+### 局部变量
 
-这些是在块或函数内部定义的变量。它们只能在定义它们的块或函数内部内部被访问。
+这些是在块或函数内部定义的变量。它们只能在定义它们的块或函数内部被访问。
 
 这是一个示例：
 
 ```html
 <script>
-function xyz(){
+function xyz() {
   var a = 10;
 }
 </script>
 ```
 
-变量 `a` 只能在函数 `xyz` 内部访问。
+变量 `a` 只能在函数 `xyz()` 内部访问。
 
 这是另一个局部变量声明的示例：
 
 ```html
 <script>
-function xyz(){
+function xyz() {
   var a = 16;
 }
 </script>
@@ -360,6 +296,7 @@ function xyz(){
 
 上述示例中的变量 `a` 只能在其声明的块内部被访问。
 
+### 全局变量
 
 这些可以在任何函数中访问的变量。全局变量通常在函数外部声明或通过 JavaScript 的 `window` 对象声明。
 
@@ -380,13 +317,14 @@ y();
 ```
 
 代码将返回：
+
+```text
 12 12
+```
 
 代码演示了函数可以从不同的函数中引用，且其值将保持不变。
 
 如果你需要在函数内部声明全局变量，则必须使用 `window` 对象。例如：
-
-这种变量可以在任何函数中声明，并从任何函数中访问。
 
 ```html
 <script>
@@ -400,7 +338,7 @@ xy();
 </script>
 ```
 
-我们在函数 `xy` 中声明了变量 `val` 并为其赋值为 12。然后我们从函数 `xz` 访问了同一个变量。这返回了值 12。在函数外部声明变量后，它会被内部添加到 `window` 对象中。该对象可以同时通过 `window` 对象访问。
+这种变量可以在任何函数中声明，并从任何函数中访问。我们在函数 `xy()` 中声明了变量 `val` 并为其赋值为 12。然后我们从函数 `xz()` 访问了同一个变量。这返回了值 12。在函数外部声明变量后，它会被内部添加到 `window` 对象中。该对象可以同时通过 `window` 对象访问。
 
 这是一个示例：
 
@@ -413,17 +351,23 @@ function y() {
 </script>
 ```
 
+---
+
+## 第 4 章 数据类型
+
 每种编程语言都支持多种数据类型。它们代表可以在编程语言中操作的值类型。JavaScript 支持 3 种原始数据类型，包括：
 
-- 数字，例如 1、8、345 等。
-- 字符串，即文本，例如 "My name" 等。
-- 布尔值，可以可以为 true 或 false。
+- 数字，例如 `1`、`8`、`345` 等。
+- 字符串，即文本，例如 `"My name"` 等。
+- 布尔值，可以为 `true` 或 `false`。
 
 JavaScript 还能支持 2 种简单数据类型，即 `null` 和 `undefined`。它还有一种名为 `object` 的复合数据类型。注意，在 JavaScript 中，整数和浮点数没有区别。在 JavaScript 中，所有数字都以浮点值的形式表示。
 
-## 比较变量
+---
 
-在 JavaScript 中，可以用不同的方式比较变量。我们可以使用双等号 (==) 来比较两个变量是否相等。
+## 第 5 章 比较变量
+
+在 JavaScript 中，可以用不同的方式比较变量。我们可以使用双等号（`==`）来比较两个变量是否相等。
 
 示例：
 
@@ -437,11 +381,9 @@ if (x == y) {
 </script>
 ```
 
-执行时，脚本将显示一个带有 "x equals y" 文本的弹出窗口，如下所示：这是当两个值相等时（即 10）。如果不相等，脚本执行后将什么都不会发生。
+执行时，脚本将显示一个带有 "x equals y" 文本的弹出窗口。这是当两个值相等时（即 10）。如果不相等，脚本执行后将什么都不会发生。
 
 除了数字之外，我们也可以像下面所示比较字符串：
-
-注意，在进行比较时，我们使用双等号 (==)。如果你使用单等号 (=)，则等号右侧的值将成为左侧变量的值。这里给出一个示例：
 
 ```html
 <script>
@@ -453,9 +395,13 @@ if (lastname == "Doe") {
 </script>
 ```
 
-## 第 4 章 - 运算符
+注意，在进行比较时，我们使用双等号（`==`）。如果你使用单等号（`=`），则等号右侧的值将成为左侧变量的值。
 
-JavaScript 支持运算符的使用。运算符对一个或多个操作数执行操作以产生结果。例如：在上面的示例中，2 和 3 是操作数，而 + 是运算符。2 是左操作数，3 是右操作数。`+` 运算符将将两者相加得到结果 5。
+---
+
+## 第 6 章 运算符
+
+JavaScript 支持运算符的使用。运算符对一个或多个操作数执行操作以产生结果。例如：在上面的示例中，`2` 和 `3` 是操作数，而 `+` 是运算符。`2` 是左操作数，`3` 是右操作数。`+` 运算符将两者相加得到结果 `5`。
 
 让我们讨论一下 JavaScript 支持的各种类型的运算符。
 
@@ -463,9 +409,9 @@ JavaScript 支持运算符的使用。运算符对一个或多个操作数执行
 
 这些类型的运算符帮助我们连接一个或多个条件。以下是 JavaScript 支持的逻辑运算符：
 
-- && - 与运算符（AND）。它检查两个操作数是否非零。如果是，则返回 1，否则返回 0。
-- || - 或运算符（OR）。它检查是否任一个操作数为非零。如果是，则返回 1，否则返回 0。
-- ! - 非运算符（NOT）。用于反转操作数或条件的布尔结果。
+- `&&` - 与运算符（AND）。它检查两个操作数是否非零。如果是，则返回 `1`，否则返回 `0`。
+- `||` - 或运算符（OR）。它检查是否任一个操作数为非零。如果是，则返回 `1`，否则返回 `0`。
+- `!` - 非运算符（NOT）。用于反转操作数或条件的布尔结果。
 
 例如：
 
@@ -495,41 +441,43 @@ if (!x) {
 </html>
 ```
 
-
-
-
 代码打印以下结果：
 
+```text
 逻辑运算符
 false
 true
 false
 true
 false
+```
 
 在上面的示例中，我们使用了变量 `x` 和 `y` 的值来运行各种逻辑运算符。
 
-## 算术运算符
+### 算术运算符
 
-在 JavaScript 中，你可以对变量执行算术操作。这些操作包括加法 (+)、减法 (-)、乘法 (*)、取模运算 (%)、自增 (++)、自减 (--) 等。
+在 JavaScript 中，你可以对变量执行算术操作。这些操作包括加法（`+`）、减法（`-`）、乘法（`*`）、取模运算（`%`）、自增（`++`）、自减（`--`）等。
 
 示例：
+
 ```html
 <script type="text/javascript">
-var First="Edwin";
-var Last="Peter";
-var Name=First+Last;//Name=EdwinPeter
-b=10/2;
-c=(10/2)*2;
-d=10/(1*2);
+var First = "Edwin";
+var Last = "Peter";
+var Name = First + Last; // Name = EdwinPeter
+b = 10 / 2;
+c = (10 / 2) * 2;
+d = 10 / (1 * 2);
 </script>
 ```
 
 各行的结果已在注释部分显示，即 `//` 之后。两个正斜杠即 `//` 表示 JavaScript 中注释的开始。
 
+### 赋值运算符
+
 这些是帮助我们为变量赋值的运算符。它们包括以下：
 
-- `= `：将右操作数的值赋值给左操作数。
+- `=`：将右操作数的值赋值给左操作数。
 - `+=`：将左、右操作数的值相加，然后将获得的结果赋值给左操作数。
 - `-=`：从左操作数的值中减去右操作数的值，然后将获得的结果赋值给左操作数。
 - `*=`：将左、右操作数的值相乘，然后将获得的结果赋值给左操作数。
@@ -537,6 +485,7 @@ d=10/(1*2);
 - `%=`：获取左操作数除以右操作数的模，然后将得到的模结果赋值给左操作数。
 
 这里是一个示例：
+
 ```html
 <html>
 <body>
@@ -548,33 +497,38 @@ d=10/(1*2);
 <p id="e"></p>
 <p id="f"></p>
 <script type="text/javascript">
-var a=bb;
-document.getElementById("a").innerHTML=a;
-document.getElementById("b").innerHTML=a;
-a=1;
-document.getElementById("c").innerHTML=a;
-a*=5;
-document.getElementById("d").innerHTML=a;
-a/=5;
-document.getElementById("e").innerHTML=a;
-a=5;
-document.getElementById("f").innerHTML=a;
+var a = 10;
+document.getElementById("a").innerHTML = a;
+document.getElementById("b").innerHTML = a;
+a += 1;
+document.getElementById("c").innerHTML = a;
+a *= 5;
+document.getElementById("d").innerHTML = a;
+a /= 5;
+document.getElementById("e").innerHTML = a;
+a %= 2;
+document.getElementById("f").innerHTML = a;
 </script>
 </body>
 </html>
 ```
 
 代码将返回以下结果：
-bb
-bb
-1
-5
-1
-50
 
-表达式 `a = b;` 将变量 `a` 的值从 10 改变为 20。这就是为什么第一条语句打印了 20。然后我们开始处理 `a` 为 20 的值。表达式 `a += 1;` 将 `a` 的值增加了 1，因此它变成了 21。这成了变量 `a` 的新值。表达式 `a -= 1;` 从变量 `a` 的当前值（21）中减去 1，返回 20。表达式 `a *= 5;` 将变量 `a` 的值（20）乘以 5，返回 100。这成了变量 `a` 的新值。表达式 `a /= 5;` 将变量 `a` 的值除以 5，返回 20。这成了变量 `a` 的新值。表达式 `a %= 2;` 返回变量 `a` 的值除以 2 的余数，返回 0。
+```text
+10
+10
+11
+55
+11
+1
+```
 
-## 第 5 章 - 决策
+表达式 `a = 10;` 初始化变量 `a`。表达式 `a += 1;` 将 `a` 的值增加了 1，因此它变成了 11。表达式 `a *= 5;` 将变量 `a` 的值（11）乘以 5，返回 55。表达式 `a /= 5;` 将变量 `a` 的值除以 5，返回 11。表达式 `a %= 2;` 返回变量 `a` 的值除以 2 的余数，返回 1。
+
+---
+
+## 第 7 章 决策
 
 JavaScript 带有决策语句，有助于控制程序的流程。通过这些语句，所采取的操作基于所满足的条件。JavaScript 支持以下决策语句：
 
@@ -589,16 +543,17 @@ if (condition) {
 ```
 
 示例：
+
 ```html
 <script>
-var x=10;
-if (x>5) {
+var x = 10;
+if (x > 5) {
   alert(10);
 }
 </script>
 ```
-代码执行后将返回：
-第一个 if 条件为假，因此其代码块被跳过。第二个条件为真，因此执行了其代码块，并产生上述输出。
+
+代码执行后将返回弹窗 `10`。
 
 ### If...else 语句
 
@@ -613,20 +568,25 @@ if (condition) {
 ```
 
 示例：
+
 ```html
 <script>
-var x=18;
-if (x%2==0){
+var x = 18;
+if (x % 2 == 0) {
   document.write("even number");
-} else{
-  document.write("yes");
+} else {
+  document.write("odd number");
 }
 </script>
 ```
-在上面的代码中，我们正在检查变量 `x` 的值是否为偶数。代码返回：
-an even number
 
-表达式 `x%2==0` 检查 `x` 除以 2 的余数。如果余数为 0，则 `x` 是偶数，否则它是奇数。
+在上面的代码中，我们正在检查变量 `x` 的值是否为偶数。代码返回：
+
+```text
+even number
+```
+
+表达式 `x % 2 == 0` 检查 `x` 除以 2 的余数。如果余数为 0，则 `x` 是偶数，否则它是奇数。
 
 ### If...else if 语句
 
@@ -645,39 +605,36 @@ if (expression1) {
 ```
 
 示例：
+
 ```html
 <script>
-var grade="B";
-if (grade=="A"){
+var grade = "B";
+if (grade == "A") {
   document.write("Excellent!");
-} else if (grade=="B"){
+} else if (grade == "B") {
   document.write("Good!");
-} else if (grade=="C"){
+} else if (grade == "C") {
   document.write("Fair");
 } else {
   document.write("Poor");
 }
 </script>
 ```
+
 `grade` 的值为 B。所有要执行的语句都是条件求值为真的语句。代码将返回："Good!"
 
+### Switch 语句
 
-
-
-
-## Switch 语句
-
-该语句帮助我们根据各种条件执行执行多样化的操作。当你有许多取决于单个变量值的分支时，它非常适用。
+该语句帮助我们根据各种条件执行多样化的操作。当你有许多取决于单个变量值的分支时，它非常适用。
 
 通过 switch 语句，一个表达式会根据表达式的值来评估要执行的各种语句。JavaScript 解释器必须根据表达式的值检查每一个 case，直到找到匹配项为止。如果没有找到匹配项，则选择默认项。它的语法如下：
 
 ```javascript
-switch (expression)
-{
+switch (expression) {
   case 1:
     code
     break;
-  case 1:
+  case 2:
     code
     break;
   default:
@@ -686,6 +643,7 @@ switch (expression)
 ```
 
 例如：
+
 ```html
 <script>
 var name = "ODIE";
@@ -705,11 +663,16 @@ switch (name) {
 document.write(output);
 </script>
 ```
+
 代码执行后将返回以下内容：
-Your name is Nicholas
 
+```text
+unknown
+```
 
-## 第 6 章 - JavaScript 循环
+---
+
+## 第 8 章 JavaScript 循环
 
 当你需要重复执行代码（无论次数是已知还是未知）时，循环是非常有用的。通过循环，你可以自动化那些手动执行可能非常繁琐的任务。
 
@@ -722,14 +685,14 @@ Your name is Nicholas
 这种循环用于固定次数地迭代代码块。当你清楚要迭代某个代码块的次数时，它非常适用。循环采用以下语法：
 
 ```javascript
-for (initializer; condition; increment)
-{
+for (initializer; condition; increment) {
 }
 ```
 
 初始化器（initializer）设置了一个我们需要开始的计数器变量。条件（condition）指定了执行下次迭代必须满足的标准。增量（increment）可以增加或减少计数器。
 
 这里是一个 for 循环的示例：
+
 ```html
 <script>
 for (x = 0; x < 5; x++) {
@@ -737,9 +700,15 @@ for (x = 0; x < 5; x++) {
 }
 </script>
 ```
-循环中的变量 x 首先初始化为 0。条件规定 x 的值应该小于 5。在增量部分，变量 x 的值每次迭代都会增加 1。这意味着循环应该从 0 运行到 4，产生如下结果：
+
+循环中的变量 `x` 首先初始化为 0。条件规定 `x` 的值应该小于 5。在增量部分，变量 `x` 的值每次迭代都会增加 1。这意味着循环应该从 0 运行到 4，产生如下结果：
+
+```text
+01234
+```
 
 这是另一个示例：
+
 ```html
 <head>
   <title>Length Converter</title>
@@ -755,24 +724,24 @@ for (x = 0; x < 5; x++) {
       document.write("<tr><td>" + length + "</td><td>" + length * 100 + "</td></tr>");
     }
     </script>
-  
-
-</body></html>
+  </table>
+</body>
+</html>
 ```
 
-使用了一个循环在转换米时迭代一组值。在此处，我们每次迭代将值增加特定的特定值（注：原文此处缺失了数字，根据语境推断），而不是增加 1。代码返回了一个如下所示的填充好的表格：
+使用了一个循环在转换米时迭代一组值。代码返回了一个填充好的表格。
 
 ### While 循环
 
 这种循环可以用于无限次地迭代代码。当你不确定执行循环的确切次数时，它非常适用。只要指定的条件为真，循环就会执行。一旦条件变为假，循环的执行就会停止。它采用以下语法：
 
 ```javascript
-while (variable <= final_value)
-{
+while (variable <= final_value) {
 }
 ```
 
 例如：
+
 ```html
 <script>
 var x = 0;
@@ -781,9 +750,15 @@ while (x <= 5) {
 }
 </script>
 ```
-只要变量 x 的值不大于 5，while 循环就会运行。代码返回以下：
+
+只要变量 `x` 的值不大于 5，while 循环就会运行。代码返回以下：
+
+```text
+0 1 2 3 4 5
+```
 
 这是另一个示例：
+
 ```html
 <head>
   <title>Length</title>
@@ -802,11 +777,13 @@ while (x <= 5) {
     }
     </script>
   </table>
-</body></html>
+</body>
+</html>
 ```
-只要 length 的值小于或等于 2，上面的循环就会一直运行。一旦循环发现违反了这一条件，它就会停止。
 
-### Do 循环
+只要 `length` 的值小于或等于 2，上面的循环就会一直运行。一旦循环发现违反了这一条件，它就会停止。
+
+### Do...While 循环
 
 这是一个用于无限次的良好循环。然而，无论条件如何，代码必须执行一次。它的语法如下：
 
@@ -816,7 +793,8 @@ do {
 } while (condition);
 ```
 
-while 循环可能永远不运行，但 do while 循环至少运行一次。这里是一个示例：
+while 循环可能永远不运行，但 do...while 循环至少运行一次。这里是一个示例：
+
 ```html
 <script>
 var x = 0;
@@ -827,10 +805,7 @@ do {
 </script>
 ```
 
-
-
-
-## break 语句
+### break 语句
 
 通过此语句，可以提前退出循环并跳出大括号。执行将到循环之后的块。
 
@@ -838,47 +813,64 @@ do {
 
 ```html
 <script type="text/javascript">
-var p=0;
-document.write(
+var p = 0;
 while (p < 20) {
-if (p == 5){
-break;
-}
-document.write(p + "<br>");
-p++;
+  if (p == 5) {
+    break;
+  }
+  document.write(p + "<br>");
+  p++;
 }
 document.write("After");
 </script>
 ```
 
-这就是在 `while` 循环中使用 `break` 语句的方法。p 的最大值本应为 20。然而，我们指示 JavaScript 解释器在 p 的值为 5 时跳出。循环的执行将在该处停止；输出应显示所示的 2 到 5 的数字：
+这就是在 `while` 循环中使用 `break` 语句的方法。`p` 的最大值本应为 20。然而，我们指示 JavaScript 解释器在 `p` 的值为 5 时跳出。循环的执行将在该处停止；输出应显示 0 到 4 的数字：
 
-开始循环
-退出循环
+```text
+0
+1
+2
+3
+4
+After
+```
 
-## continue 语句
+### continue 语句
 
 通过 `continue` 语句，我们可以中断当前的循环，然后处理下一个值。假设你需要将一个数字除以从 -5 到 +5 之间的任意数字。你需要跳过除以 0 的除法，因为这是非法的。可以使用 `continue` 语句来跳过它。实现方式如下：
 
 ```html
 <script type="text/javascript">
-for (p=-5; p<=5; p++) {
-if (p==0){
-continue;
-}
-document.write((10/p)+"<br>");
+for (p = -5; p <= 5; p++) {
+  if (p == 0) {
+    continue;
+  }
+  document.write((10 / p) + "<br>");
 }
 </script>
 ```
 
 通过这种实现，整数 10 将不会除以 0。代码将返回以下结果：
 
+```text
 -2
 -2.5
--3.3
-我们跳过了除以 0 的操作，因为如果从 1 继续，将会产生错误。
+-3.33...
+-5
+-10
+10
+5
+3.33...
+2.5
+2
+```
 
-## 第 7 章 - JavaScript 函数
+我们跳过了除以 0 的操作，因为如果不跳过，将会产生错误。
+
+---
+
+## 第 9 章 JavaScript 函数
 
 JavaScript 函数用于执行操作。函数是将代码组合在一起的好方法。此类代码在它们应执行的任务应该是相关的。你只需要将代码组合在一起并分配一个唯一的名称。从该点起，你可以根据需要多次调用该代码，有助于代码复用。
 
@@ -889,97 +881,90 @@ JavaScript 函数用于执行操作。函数是将代码组合在一起的好方
 JavaScript 函数的定义和调用采用以下语法：
 
 ```javascript
-function <function name>()
-{
+function functionName() {
 };
 
-<function name>();
+functionName();
 ```
 
 如所示，函数被赋予了一个名称，在调用函数以执行其预期任务时会使用该名称。
 
-函数有一个位于大括号 {} 内部的体。以下是一个示例：
+函数有一个位于大括号 `{}` 内部的体。以下是一个示例：
 
 ```html
 <script type="text/javascript">
-function HelloFunction()
-{
-document.write("Hello World");
+function HelloFunction() {
+  document.write("Hello World");
 }
 HelloFunction();
 </script>
 ```
 
-我们定义了一个名为 `HelloWorld` 的函数。在函数体内，我们规定了函数应该打印文本 Hello。在函数体之后，我们通过其名称调用了它。代码返回以下内容：
+我们定义了一个名为 `HelloFunction()` 的函数。在函数体内，我们规定了函数应该打印文本 Hello World。在函数体之后，我们通过其名称调用了它。代码返回以下内容：
 
-HelloWorld
+```text
+Hello World
+```
 
 注意我们调用上述函数的方法。该函数将在网页加载时立即被调用。然而，很多时候我们需要通过点击按钮来调用函数。
 
 ```html
 <script type="text/javascript">
-function HelloFunction()
-{
-alert("Hello World");
+function HelloFunction() {
+  alert("Hello World");
 }
 </script>
-<input type="button" value="Hello" onclick="HelloFunction();
+<input type="button" value="Hello" onclick="HelloFunction()">
 </body>
 ```
 
-我们使用了之前的函数。但是，我们创建了一个带有 Hello 文字的按钮。`onclick` 属性规定了点击按钮后应该发生什么。它规定点击按钮后应该调用 `HelloFunction`。运行代码并点击按钮。你将得到带有必要消息的警告框：Hello World
+我们使用了之前的函数。但是，我们创建了一个带有 Hello 文字的按钮。`onclick` 属性规定了点击按钮后应该发生什么。它规定点击按钮后应该调用 `HelloFunction()`。运行代码并点击按钮。你将得到带有必要消息的警告框：Hello World
 
-## 函数参数
+### 函数参数
 
 函数可以接受一个或多个参数，也称为参数。参数应由调用代码提供，并可以在函数内部使用。JavaScript 以作为动态脚本语言而闻名，因此函数参数可以接受任何数据类型的参数。考虑以下示例：
 
 ```html
 <script type="text/javascript">
-function MyFunction(arg1, arg2)
-{
-alert(arg1 + " " + arg2);
+function MyFunction(arg1, arg2) {
+  alert(arg1 + " " + arg2);
 }
 MyFunction(10, 12);
-MyFunction("Hello", "");
+MyFunction("Hello", "World");
 </script>
 ```
 
-我们创建了一个名为 `MyFunction` 的函数，接受两个参数，即 `arg1` 和 `arg2`。函数的作用是将这两个参数的值与文本拼接并在警告框中显示它们。然后我们又调用了三次同一个函数，每次传递不同的参数。运行代码后，第一个对话框如下：
+我们创建了一个名为 `MyFunction()` 的函数，接受两个参数，即 `arg1` 和 `arg2`。函数的作用是将这两个参数的值与文本拼接并在警告框中显示它们。然后我们又调用了两次同一个函数，每次传递不同的参数。运行代码后，第一个对话框如下：
 
+```text
 You passed 10 and 12
+```
 
 注意，参数将按照你指定的顺序传递给函数。这里是另一个示例：
 
 ```html
 <script type="text/javascript">
-function calculateCube(x)
-{
-return (x * x * x);
+function calculateCube(x) {
+  return (x * x * x);
 }
 </script>
-<input type="button" value="Calculate Cube" onclick="alert(calculateCube(3));"
+<input type="button" value="Calculate Cube" onclick="alert(calculateCube(3))">
 ```
 
-我们创建了一个带有 Calculate Cube 文字的按钮。点击时，这会调用 `calculateCube` 函数。在参数中，我们指定了函数并向其传递了参数 3。这意味着它应该返回 3 的立方，即 27。只需运行程序并点击 Calculate 按钮。注意，在调用函数时，你可以传递更多或更少的参数。如果你传递的参数比函数预少，其余部分将保持未定义（undefined）。如果你传递更多参数，多余的将被忽略。以下示例演示这一点：
+我们创建了一个带有 Calculate Cube 文字的按钮。点击时，这会调用 `calculateCube()` 函数。在参数中，我们指定了函数并向其传递了参数 3。这意味着它应该返回 3 的立方，即 27。只需运行程序并点击 Calculate 按钮。注意，在调用函数时，你可以传递更多或更少的参数。如果你传递的参数比函数预期少，其余部分将保持未定义（`undefined`）。如果你传递更多参数，多余的将被忽略。以下示例演示这一点：
 
 ```html
 <script type="text/javascript">
-function MyFunction(arg1, arg2)
-{
-alert(arg1 + " " + arg2);
+function MyFunction(arg1, arg2) {
+  alert(arg1 + " " + arg2);
 }
 MyFunction(10, 12);
-MyFunction("Hello", "");
+MyFunction("Hello", "World");
 MyFunction(10);
 </script>
 ```
 
-
-
-
-JavaScript 编程
-
-## Arguments 对象
+### Arguments 对象
 
 任何 JavaScript 函数都可以使用 `arguments` 对象。该对象为每个参数都持有一个值。它类似于数组。你可以像访问数组一样使用索引来访问它的值。然而，该对象不支持数组方法。
 
@@ -988,11 +973,11 @@ JavaScript 编程
 ```html
 <script>
 function MyFunction(arg1, arg2) {
-  alert(arguments[0] + arguments[1]);
+  alert(arguments[0] + " " + arguments[1]);
 }
 MyFunction(0, 'e');
-MyFunction('');
-MyFunction(i);
+MyFunction('a', 'b');
+MyFunction(1, 2);
 </script>
 ```
 
@@ -1003,7 +988,7 @@ MyFunction(i);
 ```html
 <script>
 function MyFunction() {
-  for(var x = 0; x < arguments.length; x++) {
+  for (var x = 0; x < arguments.length; x++) {
     alert(arguments[x]);
   }
 }
@@ -1012,6 +997,8 @@ MyFunction("Nice", "day");
 ```
 
 函数被传递了两个参数，我们在 `for` 循环中使用变量 `x` 遍历了这些参数。
+
+### 返回值
 
 在 JavaScript 中，函数可以使用 `return` 关键字返回零或一个值。
 
@@ -1050,11 +1037,17 @@ document.write(MyFunction());
 ```
 
 该代码将打印以下内容：
-- undefined
+
+```text
+22
+undefined
+```
 
 我们创建了一个名为 `Addition()` 的函数，它相加并返回两个变量 `x` 和 `y` 的和。调用代码能够获取返回值并将其赋值给变量。我们还定义了第二个名为 `Product()` 的函数，它不返回任何内容，因此它的结果是 `undefined`。
 
-在 JavaScript 中，我们可以让一个函数返回另一个函数。这是一个这是一个示例：
+### 函数返回函数
+
+在 JavaScript 中，我们可以让一个函数返回另一个函数。这是一个示例：
 
 ```html
 <html>
@@ -1070,17 +1063,17 @@ document.write(MyFunction());
     }
     var db = myfunction(2);
     document.getElementById("p1").innerHTML = db(2);
-    document.getElementById("p2").innerHTML = db();
+    document.getElementById("p2").innerHTML = db(3);
   </script>
 </body>
 </html>
 ```
 
-名为 `myfunction` 的函数正在返回名为 `product` 的函数。
+名为 `myfunction()` 的函数正在返回名为 `product()` 的函数。
 
-## 匿名函数
+### 匿名函数
 
-在 JavaScript 中，我们可以定义一个没有名字函数。这种函数被称为匿名函数。你必须为你的匿名函数分配一个变量。
+在 JavaScript 中，我们可以定义一个没有名字的函数。这种函数被称为匿名函数。你必须为你的匿名函数分配一个变量。
 
 例如：
 
@@ -1117,7 +1110,7 @@ message("Nicholas");
 
 代码将显示两次 "Hello World" 和一次 "Hi Nicholas"。要从一个弹框移动到另一个弹框，请点击 OK 按钮。
 
-## 嵌套函数
+### 嵌套函数
 
 JavaScript 函数可以拥有一个或多个内部函数。嵌套函数应该在外部函数的作用范围内。内部函数允许访问外部函数的参数和变量。然而，外部函数无法访问在其内部函数定义的变量。
 
@@ -1136,18 +1129,18 @@ OuterFunc("Nicholas");
 ```
 
 我们定义了一个名为 `OuterFunc()` 的外部函数。该函数接受一个参数 `name`。虽然 `name` 参数属于外部函数，但内部函数成功地访问了它。代码应该打印以下内容：
+
+```text
 Hi Nicholas
+```
 
+---
 
-
-
-JavaScript 编程
-
-## 第8 章：JavaScript 对象
+## 第 10 章 JavaScript 对象
 
 ### 数组
 
-JavaScript 中的对象是一个既有状态又有行为的实体。在 JavaScript 中，一切都被被视为对象。数组是一种表示相似类型元素的对象。它具有固定的大小，且元素按顺序存储。在 JavaScript 中有 3 种构造数组的方法：
+JavaScript 中的对象是一个既有状态又有行为的实体。在 JavaScript 中，一切都被视为对象。数组是一种表示相似类型元素的对象。它具有固定的大小，且元素按顺序存储。在 JavaScript 中有 3 种构造数组的方法：
 
 - 数组字面量
 - 数组实例
@@ -1157,15 +1150,18 @@ JavaScript 中的对象是一个既有状态又有行为的实体。在 JavaScri
 
 使用数组字面量创建数组采用以下语法：
 
-`var nameOfArray=[val1,val2.....]`
+```javascript
+var nameOfArray = [val1, val2, ...];
+```
 
 值用方括号 `[]` 添加，并用逗号分隔。
 
 示例：
+
 ```html
 <script type="javascript">
-var array1=['Nicholas', 'Samuel', 'Vickie'];
-for (j=0;j<array1.length; j++) {
+var array1 = ['Nicholas', 'Samuel', 'Vickie'];
+for (j = 0; j < array1.length; j++) {
     document.write(array1[j]);
 }
 </script>
@@ -1173,37 +1169,44 @@ for (j=0;j<array1.length; j++) {
 
 我们创建了一个包含三个值的数组 `array1`，这些值是人的名字。我们使用 `for` 循环来遍历数组的值，然后将它们打印出来。`.length` 属性通常返回数组的长度。执行后，数组中的值将如下所示：
 
+```text
 Nicholas
 Samuel
 Vickie
+```
 
 #### 直接创建数组
 
 可以通过下面提供的语法直接创建数组：
 
-`var nameOfArray=new Array();`
+```javascript
+var nameOfArray = new Array();
+```
 
 通过 `new` 关键字，会创建一个数组的实例。
 
 示例：
+
 ```html
 <script type="javascript">
 var x;
-var array2=new Array();
-array2[0]='Nicholas';
-array2[1]='Samuel';
-array2[2]='Vickie';
-for (x=0);x<array2.length;x++) {
+var array2 = new Array();
+array2[0] = 'Nicholas';
+array2[1] = 'Samuel';
+array2[2] = 'Vickie';
+for (x = 0; x < array2.length; x++) {
     document.write(array2[x]);
 }
 </script>
 ```
 
-在示例中，我们使用 `new` 关键字创建了名为 `array2` 的数组。下一步是向数组填充元素。请注意，数组元素的位置使用索引表示。数组中的第一个元素位于索引 0，第二个元素位于索引 1，以此此类推。
+在示例中，我们使用 `new` 关键字创建了名为 `array2` 的数组。下一步是向数组填充元素。请注意，数组元素的位置使用索引表示。数组中的第一个元素位于索引 0，第二个元素位于索引 1，以此类推。
 
 考虑下面这一行：
 
-`array2[1]='Samuel';`
+```javascript
+array2[1] = 'Samuel';
+```
 
 该行代码表示我们要在名为 `array2` 的数组的索引 1 处存储元素“Samuel”。然后我们使用变量 `x` 来遍历数组的这些元素并打印它们。
 
@@ -1213,8 +1216,8 @@ for (x=0);x<array2.length;x++) {
 
 ```html
 <script type="javascript">
-var array3=new Array('Nicholas', 'Samuel', 'Vickie');
-for (x=0;x<array3.length;x++) {
+var array3 = new Array('Nicholas', 'Samuel', 'Vickie');
+for (x = 0; x < array3.length; x++) {
     document.write(array3[x]);
 }
 </script>
@@ -1226,132 +1229,147 @@ for (x=0;x<array3.length;x++) {
 
 JavaScript 带有许多内置数组方法，我们可以操作数组元素。让我们讨论这些方法：
 
-#### concat
+#### concat()
 
-`concat` 方法合并数组并返回单个字符串。数组可以是两个或多个。注意，初始数组的元素不会被改变。
-
-在上面的示例中，我们合并了两个数组。三个数组的合并可以如下所示获取：
+`concat()` 方法合并数组并返回新数组。数组可以是两个或多个。注意，初始数组的元素不会被改变。
 
 ```html
 <script type="javascript">
-var array1=['Nicholas', 'Samuel'];
-var array2=['Vickie'];
-var array3=['Joel'];
-var output=array1.concat(array2,array3);
+var array1 = ['Nicholas', 'Samuel'];
+var array2 = ['Vickie'];
+var array3 = ['Joel'];
+var output = array1.concat(array2, array3);
 document.writeln(output);
 </script>
 ```
 
 该代码将返回以下输出：
 
-#### copyWithin
+```text
+Nicholas,Samuel,Vickie,Joel
+```
+
+#### copyWithin()
 
 当使用此方法时，它会将给定数组的一部分复制到自身的元素中并返回修改后的数组。注意，修改后数组的长度不会改变。
 
 该方法采用下面提供的语法：
 
-`array.copyWithin(target,start,end)`
+```javascript
+array.copyWithin(target, start, end)
+```
 
-`target` 是复制元素将发生的位置。`start` 参数是可选的。它表示方法开始复制元素的索引。它的默认值是 0，意味着复制从索引 0 开始，即数组的第一个元素。`end` 参数也是可选的。它表示方法停止复制过程的索引。它有一个默认值 `array.length-1`，即数组中的最后一个元素。
+`target` 是复制元素将发生的位置。`start` 参数是可选的。它表示方法开始复制元素的索引。它的默认值是 0，意味着复制从索引 0 开始，即数组的第一个元素。`end` 参数也是可选的。它表示方法停止复制过程的索引。它有一个默认值 `array.length - 1`，即数组中的最后一个元素。
 
 该方法返回一个修改后的数组。考虑下面提供的示例：
 
 ```html
 <script type="javascript">
-var array1=['Nicholas', 'Samuel', 'Vickie'];
-var output=array1.copyWithin();
+var array1 = ['Nicholas', 'Samuel', 'Vickie'];
+var output = array1.copyWithin(0, 1);
 document.writeln(output);
 </script>
 ```
 
-
-
-JavaScript 编程
-
-96
-
-发生的情况是第 1 个元素和第 3 个元素之间的元素被复制到了索引 0。这就是为什么 Nicholas 元素被 James 元素替换了。数组的其余元素没有受到影响。
+发生的情况是索引 1 处的元素被复制到了索引 0。这就是为什么 `Nicholas` 元素被 `Samuel` 元素替换了。数组的其余元素没有受到影响。
 
 让我们看看如何只提供目标索引和起始索引：
 
+```html
 <script>
 var array1 = ["Nicholas", "Jane", "Alice", "Alice"];
 var output = array1.copyWithin(0, 2);
 document.writeln(output);
 </script>
+```
 
 代码应该返回以下内容：
-James. Jane. Alice. Alice
+
+```text
+Alice, Alice, Alice, Alice
+```
 
 我们也可以只提供目标索引：
 
+```html
 <script>
 var array1 = ["Nicholas", "Jane", "Alice", "Alice"];
 var output = array1.copyWithin(2);
 document.writeln(output);
 </script>
-
-JavaScript 编程
-
-97
+```
 
 代码将返回以下结果：
-Nicholas. James. Nicholas. James Jane
 
-此方法用于用某些指定的静态值填充数组元素。使用它时，原始数组会被修改。如果没有元素满足条件，该方法将返回 `undefined`。它采用以下语法：
+```text
+Nicholas, Jane, Nicholas, Jane
+```
 
+#### fill()
+
+此方法用于用某些指定的静态值填充数组元素。使用它时，原始数组会被修改。它采用以下语法：
+
+```javascript
 array.fill(value[, start[, end]])
+```
 
 `value` 参数表示要填充的静态值。`start` 参数是可选的。它是从填充开始的索引。它的默认值为 0，即数组中的第一个元素。`end` 参数也是可选的。它表示停止填充值的索引。该方法返回一个被修改后的数组。
 
 考虑以下示例：
 
+```html
 <script>
 var array1 = ["Nicholas", "Jane", "Alice", "Alice"];
 var output = array1.fill("Joel");
 document.writeln(array1);
 </script>
-
-JavaScript 编程
-
-98
+```
 
 代码将返回：
-Joel Joel Joel Joel
+
+```text
+Joel,Joel,Joel,Joel
+```
 
 数组中的所有值都被替换为 Joel。让我们看看如何提供或指定起始索引：
 
+```html
 <script>
 var array1 = ["Nicholas", "Jane", "Alice", "Alice"];
 var output = array1.fill("Joel", 2);
 document.writeln(array1);
 </script>
+```
 
 在上面的示例中，填充将从索引 2 之后的元素开始。代码应该返回：
-Nicholas. Jane. Joel Joel
+
+```text
+Nicholas,Jane,Joel,Joel
+```
 
 接下来的示例演示了我们如何同时指定起始和结束索引：
 
+```html
 <script>
 var array1 = ["Nicholas", "Jane", "Alice", "Alice"];
 var output = array1.fill("Joel", 2, 4);
 document.writeln(array1);
 </script>
+```
 
-JavaScript 编程
-
-99
-
-every()
+#### every()
 
 此方法的目的是检查所有数组元素是否满足给定的条件。如果所有数组元素都满足条件，该方法将返回 `true`，否则返回 `false`。该方法采用以下语法：
 
-array.every(callback[, index[, thisArg]])
+```javascript
+array.every(callback[, thisArg])
+```
 
-`callback` 是测试条件的函数。`current-value` 表示数组的当前元素。`index` 参数是可选的，它表示当前元素的索引。`arr` 参数表示我们要应用 `every` 函数的数组。`thisArg` 是可选参数。这是在执行 `callback` 期间使用的值。该方法返回一个布尔值。
+`callback` 是测试条件的函数。`currentValue` 表示数组的当前元素。`index` 参数是可选的，它表示当前元素的索引。`array` 参数表示我们要应用 `every` 函数的数组。`thisArg` 是可选参数。这是在执行 `callback` 期间使用的值。该方法返回一个布尔值。
 
 考虑以下示例：
 
+```html
 <script>
 var marks = [20, 25, 30, 35, 40];
 function confirm(x) {
@@ -1359,13 +1377,11 @@ function confirm(x) {
 }
 document.writeln(marks.every(confirm));
 </script>
+```
 
-JavaScript 编程
+代码返回 `true`。我们定义了一个包含一组整数值的数组，即 `marks`。所有的 marks 都大于 10。`confirm` 的目的是检查所有 marks 是否都大于 10。由于这是真的，`every()` 函数返回 `true`。让我们将其中一个值改为小于 10，并看看会发生什么：
 
-100
-
-代码返回 `true`。我们定义了一个包含一组整数值的数组，即 `marks`。所有的 marks 都大于 10。`confirm` 的目的是检查所有 marks 是否都大于 10。由于这是真的，`every` 函数返回 `true`。让我们将其中一个值改为小于 10，并看看会发生什么：
-
+```html
 <script>
 var marks = [20, 5, 30, 35, 40];
 function confirm(x) {
@@ -1373,42 +1389,31 @@ function confirm(x) {
 }
 document.writeln(marks.every(confirm));
 </script>
+```
 
 代码将返回 `false`，因为索引 1 处的 marks 小于 10，即 5。
 
-JavaScript 编程
+在下面的示例中，我们正在检查数组中元素的索引：
 
-101
-
-在下面的示例中，我们正在检查数组中元素的数量：
-
+```html
 <script>
 var marks = [20, 25, 30, 35, 40];
 function confirm(item, index) {
   return index < 3;
 }
 document.writeln(marks.every(confirm));
-document.writeln(marks.every(confirm));
 </script>
-
-`callback` 是测试条件的函数。`current-value` 表示数组的当前元素。`index` 参数是可选的，它表示当前元素的索引。`arr` 参数表示我们要应用 `find` 函数的数组。`thisArg` 是可选参数。这是在执行 `callback` 期间使用的值。
-
-JavaScript 编程
-
-102
-
-此方法将返回数组中满足指定条件的第一个元素。它采用以下语法：
-
-array.find(callback[, index[, thisArg]])
+```
 
 输出如注释所示。在第一次执行中，我们传递了一个包含两个元素的数组。由于我们只有两个，这将带给我们 `true`。在第二种情况下，我们的数组有 5 个元素。由于这些超过了 3 个，它将返回 `false`。
 
+#### find()
 
+此方法将返回数组中满足指定条件的第一个元素。它采用以下语法：
 
-
-JavaScript 编程
-
-103
+```javascript
+array.find(callback[, thisArg])
+```
 
 ```javascript
 function checkPrime(item) {
@@ -1417,21 +1422,23 @@ function checkPrime(item) {
       return false;
     }
   }
-  return true;
+  return item > 1;
 }
 
-document.writeln([-, 5, 7, 11].find(checkPrime));
+document.writeln([4, 5, 7, 11].find(checkPrime));
 ```
 
-该函数将找到质数 11。
+该函数将找到质数 5。
 
-forEach
+#### forEach()
 
 此方法帮助我们为数组中的每个元素调用一次特定的函数。它采用如下语法：
 
-array.forEach(callback(current-value, index, arr))
+```javascript
+array.forEach(callback(currentValue, index, array))
+```
 
-`callback` 是用于测试条件的函数。`current-value` 表示数组的当前元素。`index` 参数是可选的，它表示当前元素的索引。`arr` 参数表示要应用函数的数组。`thisArg` 是一个可选参数，它是执行回调期间用作 `this` 的值。
+`callback` 是用于测试条件的函数。`currentValue` 表示数组的当前元素。`index` 参数是可选的，它表示当前元素的索引。`array` 参数表示要应用函数的数组。`thisArg` 是一个可选参数，它是执行回调期间用作 `this` 的值。
 
 ```javascript
 var array = ["Java", "C", "Python"];
@@ -1440,10 +1447,13 @@ array.forEach(function(values) {
 });
 ```
 
-我们使用了 `forEach` 方法来访问并打印数组元素。代码将打印以下内容：
+我们使用了 `forEach()` 方法来访问并打印数组元素。代码将打印以下内容：
+
+```text
 Java
 C
 Python
+```
 
 我们也可以使用相同的函数来创建一个斐波那契序列。
 
@@ -1458,11 +1468,21 @@ array.forEach(function(item) {
 
 该代码将返回数组元素的斐波那契序列。注意，斐波那契是元素的顺序累加。以下是输出：
 
-pop
+```text
+1
+2
+4
+7
+12
+```
+
+#### pop()
 
 此方法将从数组中删除最后一个元素并返回该元素。它具有改变数组长度的效果。其简单语法所示：
 
+```javascript
 array.pop()
+```
 
 ```javascript
 var array = ["Java", "C", "Python"];
@@ -1472,9 +1492,12 @@ document.writeln(array);
 ```
 
 该代码将返回以下内容：
+
+```text
 初始数组: Java,C,Python
 弹出的项目: Python
 最终数组: Java,C
+```
 
 我们可以使用 `for` 循环来弹出所有数组元素。例如：
 
@@ -1487,17 +1510,22 @@ for (var i = 0; i < len; i++) {
 ```
 
 代码将打印以下内容：
+
+```text
 弹出的元素: Python
 弹出的元素: C
 弹出的元素: Java
+```
+
+#### reverse()
 
 此方法的影响是改变数组项目的排序方式，并按反序返回项目。
 
-reverse()
-
 数组的第一个元素将变成最后一个，而最后一个元素将变成第一个元素。其简单语法所示：
 
+```javascript
 array.reverse()
+```
 
 它返回按反序排列的数组原始项目。
 
@@ -1508,11 +1536,16 @@ document.writeln(rv);
 ```
 
 该代码将返回以下输出：
-Python
-C
-Java
+
+```text
+Python,C,Java
+```
 
 数组元素已按反序顺序返回。
+
+---
+
+## 第 11 章 字符串
 
 在 JavaScript 中，字符串是字符的序列。在 JavaScript 中，我们可以通过两种方式创建字符串：使用字面量和使用字符串对象。
 
@@ -1523,7 +1556,7 @@ var string_name = "Hello";
 document.write(string_name);
 ```
 
-要使用字符串对象创建字符串，请使用 `new` 关键字。语法应所示：
+要使用字符串对象创建字符串，请使用 `new` 关键字。语法应如下所示：
 
 ```javascript
 var string_name = new String("Hello");
@@ -1537,15 +1570,20 @@ document.write(st);
 ```
 
 代码将返回以下结果：
-Hello.this is a string
+
+```text
+Hello
+```
 
 让我们讨论与 JavaScript 字符串相关的各种方法：
 
-charAt()
+### charAt()
 
 此方法有助于找到位于特定索引处的字符值。索引从 0 开始到 n-1，其中 n 是字符串中字符的总数。索引值不能为负值，不能等于或大于字符串的长度。该方法采用如下语法：
 
-String.charAt(index)
+```javascript
+string.charAt(index)
+```
 
 索引代表字符。
 
@@ -1561,27 +1599,17 @@ var st = "JavaScript";
 document.writeln(st.charAt());
 ```
 
-代码将仅打印字符串的第一个字符，即 J。
+代码将仅打印字符串的第一个字符，即 `J`。
 
-```javascript
-var array = ["Java", "C", "Python"];
-document.writeln(array.pop());
-document.writeln(array.pop());
-document.write(();
-```
-
-concat()
+### concat()
 
 此方法有助于将两个或多个字符串连接在一起形成一个单个字符串。注意，该方法不会以任何方式更改原始字符串。该方法采用如下语法：
 
-string.concat(string1, string2, ...n)
+```javascript
+string.concat(string1, string2, ...)
+```
 
-注意方法的参数参数是要连接的字符串。
-
-
-
-
-JavaScript 编程
+注意方法的参数是要连接的字符串。
 
 考虑下面的示例：
 
@@ -1592,9 +1620,10 @@ document.writeln(a.concat(b));
 ```
 
 代码执行后将返回以下内容：
-Hello World
 
-JavaScript
+```text
+Hello World
+```
 
 我们创建了字符串 `a` 和 `b` 并使用 `concat()` 方法将它们结合。下面的示例演示了我们如何将三个字符串结合：
 
@@ -1603,7 +1632,7 @@ JavaScript
 var a = "Hello ";
 var b = "World";
 var c = " JavaScript";
-document.writeln(a.concat(b,c));
+document.writeln(a.concat(b, c));
 </script>
 ```
 
@@ -1614,10 +1643,11 @@ document.writeln(a.concat(b,c));
 var a = "Far";
 var b = " ";
 var c = "3Away";
-document.writeln(a.concat(b+c));
+document.writeln(a.concat(b + c));
 </script>
 ```
-![](img/9481f3f28a383c4a6640042d4f3a3962_112_0.png) ![](img/9481f3f28a383c4a6640042d4f3a3962_112_1.png)
+
+### indexOf()
 
 此方法可以用于搜索并返回字符串中某个字符的位置。始终记住，字符串字符从索引 0 开始。如果未找到该字符，该方法将返回 -1。
 
@@ -1638,7 +1668,6 @@ var st = "Hello JavaScript";
 document.write(st.indexOf("a", 8));
 </script>
 ```
-![](img/9481f3f28a383c4a6640042d4f3a3962_113_0.png) ![](img/9481f3f28a383c4a6640042d4f3a3962_113_1.png)
 
 代码返回 9。这是因为我们规定搜索应该从索引 8 开始而不是从索引 0 开始。
 
@@ -1665,7 +1694,6 @@ document.write(st.indexOf("s", 6));
 ```
 
 现在搜索将从索引 6 开始而不是从索引 0 开始。
-![](img/9481f3f28a383c4a6640042d4f3a3962_114_0.png) ![](img/9481f3f28a383c4a6640042d4f3a3962_114_1.png)
 
 我们可以尝试搜索一个不存在的元素并看看会发生什么：
 
@@ -1676,13 +1704,15 @@ document.write(st.indexOf("Java", 1));
 </script>
 ```
 
-脚本将返回 -1。这是因为我们没有 "Language" 字符串。然而，我们有一个 "language"小写）。
+脚本将返回 6。因为 "Java" 从索引 6 开始。
 
 ### search()
 
 该方法用于在字符串中搜索正则表达式。如果没有找到匹配项，该方法将返回 -1。该方法通常具有下面的语法：
 
-`string.search(regexp)`
+```javascript
+string.search(regexp)
+```
 
 参数 `regexp` 表示要搜索的表达式。该方法通常返回你正在搜索的字符的位置。考虑下面的示例：
 
@@ -1692,9 +1722,8 @@ var st = "Hello JavaScript";
 document.write(st.search("Java"));
 </script>
 ```
-![](img/9481f3f28a383c4a6640042d4f3a3962_115_0.png) ![](img/9481f3f28a383c4a6640042d4f3a3962_115_1.png)
 
-代码返回 6。字符串 "language" 从索引 6 开始。注意，search 方法是区分大小写的。接面的示例演示了这一点：
+代码返回 6。字符串 "Java" 从索引 6 开始。注意，search 方法是区分大小写的。下面的示例演示了这一点：
 
 ```html
 <script>
@@ -1703,7 +1732,7 @@ document.write(st.search("Script"));
 </script>
 ```
 
-代码返回 6。这是因为它正在搜索一个大写的 S。为了忽略搜索的大小写敏感性，我们可以如下所示使用 `i` 标志：
+代码返回 10。这是因为它正在搜索一个大写的 S。为了忽略搜索的大小写敏感性，我们可以如下所示使用 `i` 标志：
 
 ```html
 <script>
@@ -1712,7 +1741,7 @@ document.write(st.search(/script/i));
 </script>
 ```
 
-代码现在返回 5 而不是 6。这是因为搜索不再区分大小写了。现在让我们搜索一个字符串中不存在的正则表达式，看看会发生什么：
+代码现在返回 6 而不是 10。这是因为搜索不再区分大小写了。现在让我们搜索一个字符串中不存在的正则表达式，看看会发生什么：
 
 ```html
 <script>
@@ -1720,15 +1749,16 @@ var st = "Hello JavaScript";
 document.write(st.search(/programming/));
 </script>
 ```
-![](img/9481f3f28a383c4a6640042d4f3a3962_116_0.png) ![](img/9481f3f28a383c4a6640042d4f3a3962_116_1.png)
 
 代码返回 -1，因为没有找到该正则表达式。
 
 ### match()
 
-该方法帮助我们将字符串与正则表达式匹配。match() 方法可以使用全局搜索修饰符来获取所有匹配元素，否则该方法将只返回找到的元素。match() 方法采用以下语法：
+该方法帮助我们将字符串与正则表达式匹配。`match()` 方法可以使用全局搜索修饰符来获取所有匹配元素，否则该方法将只返回找到的第一个元素。`match()` 方法采用以下语法：
 
-`string.match(regexp)`
+```javascript
+string.match(regexp)
+```
 
 `regexp` 是你需要搜索的正则表达式。考虑下面的示例：
 
@@ -1738,9 +1768,8 @@ var st = "Hello JavaScript";
 document.write(st.match(/Java/));
 </script>
 ```
-![](img/9481f3f28a383c4a6640042d4f3a3962_117_0.png) ![](img/9481f3f28a383c4a6640042d4f3a3962_117_1.png)
 
-代码将返回 Java：我们可以演示如何使用全局搜索进行搜索：
+代码将返回 `["Java", index: 6, input: "Hello JavaScript", groups: undefined]`。我们可以演示如何使用全局搜索进行搜索：
 
 ```html
 <script>
@@ -1749,7 +1778,7 @@ document.write(st.match(/Java/g));
 </script>
 ```
 
-match() 方法是区分大小写的。然而，我们可以通过使用忽略标志将其关闭。演示所示：
+`match()` 方法是区分大小写的。然而，我们可以通过使用忽略标志将其关闭。演示所示：
 
 ```html
 <script>
@@ -1758,12 +1787,11 @@ document.write(st.match(/java/gi));
 </script>
 ```
 
-代码返回 Java：
-![](img/9481f3f28a383c4a6640042d4f3a3962_118_0.png) ![](img/9481f3f28a383c4a6640042d4f3a3962_118_1.png)
+代码返回 `["Java", index: 6, input: "Hello JavaScript", groups: undefined]`。这表明搜索不再像以前那样区分大小写。
 
-这表明搜索不再像以前那样区分大小写。
+---
 
-## 第9章 - JavaScript 事件
+## 第 12 章 JavaScript 事件
 
 事件是 JavaScript 可以检测到的动作。一个很好的例子是 `onmouseover` 事件，当鼠标移动到某些对象上时，JavaScript 会检测到它。`onload` 事件在网页加载后触发。在 JavaScript 中，事件和函数一起使用。函数在事件发生后触发。其他事件示例包括关闭窗口、按键、调整窗口大小等。
 
@@ -1776,44 +1804,24 @@ document.write(st.match(/java/gi));
 <head>
 <script type="text/javascript">
 function helloFunc() {
-alert();
+  alert("Hello World!");
 }
 </script>
 </head>
-```
-
-
-
-JavaScript 编程
-
-```html
 <body>
 <p>点击下方的按钮</p>
 <form>
-<input type="button" onclick="helloFun()" value=""/>
+<input type="button" onclick="helloFunc()" value="点击这里"/>
 </form>
 </body>
-</</html>
+</html>
 ```
 
-120
+在示例中，创建了一个简单的表单。点击“点击这里”按钮将调用函数 `helloFunc()`。一旦点击，你将看到如下所示的弹窗：
 
-在示例中，创建了一个简单的表单。它应该如下所示：
-
-点击下方的按钮
-
-| | 点击这里 |
-| :--- | :--- |
-
-点击“点击这里”按钮将调用函数 `helloFun`。一旦点击，你将看到如下所示的弹窗：
-
+```text
 Hello World!
-
-![](img/9481f3f28a383c4a6640042d4f3a3962_121_0.png) ![](img/9481f3f28a383c4a6640042d4f3a3962_121_1.png)
-
-JavaScript 编程
-
-121
+```
 
 ### onsubmit 事件
 
@@ -1822,29 +1830,24 @@ JavaScript 编程
 示例：
 
 ```html
-<html
+<html>
 <head>
 <script type="text/javascript">
 function formValidation() {
-    return either true or false
+    return true; // 或 false
 }
 </script>
 </head>
 <body>
 <form method="post" onsubmit="return formValidation()">
 <input type="text" value="5"/>
+<input type="submit" value="提交"/>
 </form>
 </body>
-</</html>
+</html>
 ```
 
-![](img/9481f3f28a383c4a6640042d4f3a3962_122_0.png) ![](img/9481f3f28a383c4a6640042d4f3a3962_122_1.png)
-
-JavaScript 编程
-
-122
-
-一旦点击提交按钮，将调用 `formValidation` 方法。
+一旦点击提交按钮，将调用 `formValidation()` 方法。
 
 ### onmouseout 和 onmouseover
 
@@ -1853,7 +1856,7 @@ JavaScript 编程
 示例：
 
 ```html
-<html
+<html>
 <head>
 <script type="text/javascript">
 function overObject() {
@@ -1865,81 +1868,58 @@ function outOfObject() {
 </script>
 </head>
 <body>
-```
-
-![](img/9481f3f28a383c4a6640042d4f3a3962_123_0.png) ![](img/9481f3f28a383c4a6640042d4f3a3962_123_1.png)
-
-JavaScript 编程
-
-128
-
-```html
 <p>将你的鼠标移入区域内并观察：</p>
 <div onmouseover="overObject()" onmouseout="outOfObject()">
 <h2>区域</h2>
 </div>
 </body>
-</</html>
+</html>
 ```
 
 该代码执行时会产生以下结果：
 
+```text
 将你的鼠标移入区域内并观察：
-
 区域
+```
 
-按照指示移动你的鼠标并看发生了什么。它将变为：
+按照指示移动你的鼠标并看发生了什么。
 
-| 鼠标悬停 | 鼠标移出 |
-| :--- | :--- | :--- |
-
-我们定义了两个函数，即 `overObject` 和 `outOfObject`。这两个函数在接下来的行中被调用：
+我们定义了两个函数，即 `overObject()` 和 `outOfObject()`。这两个函数在接下来的行中被调用：
 
 ```html
 <div onmouseover="overObject()" onmouseout="outOfObject()">
 ```
 
-一旦鼠标移到区域内，将调用 `overObject` 方法。一旦鼠标移出对象，将调用 `outOfObject` 方法。
+一旦鼠标移到区域内，将调用 `overObject()` 方法。一旦鼠标移出对象，将调用 `outOfObject()` 方法。
 
-![](img/9481f3f28a383c4a6640042d4f3a3962_124_0.png) ![](img/9481f3f28a383c4a6640042d4f3a3962_124_1.png)
-
-JavaScript 编程
-
-124
-
-`onmouseover="overObject()"` 指示 JavaScript 在鼠标移入区域时调用 `overObject` 函数，而 `onmouseout="outOfObject()"` 指示 JavaScript 解释器在鼠标移出区域时调用 `outOfObject` 函数。
+`onmouseover="overObject()"` 指示 JavaScript 在鼠标移入区域时调用 `overObject()` 函数，而 `onmouseout="outOfObject()"` 指示 JavaScript 解释器在鼠标移出区域时调用 `outOfObject()` 函数。
 
 这是另一个在悬停后改变文本颜色的示例：
 
 ```html
-<html
+<html>
 <body onmouseover="overObject()" onmouseout="outOfObject()">
 将光标移到这里
 </body>
-</</html>
+</html>
 ```
 
 当你将鼠标光标移到文本上，文本颜色将变为黄色。如果你移开光标，文本颜色将变为黑色。
 
+### onload 和 onunload 事件
+
 这两个事件在用户进入或离开页面时被调用。我们可以使用 `onload` 事件来检查访问者的浏览器类型和版本。
-
-![](img/9481f3f28a383c4a6640042d4f3a3962_125_0.png) ![](img/9481f3f28a383c4a6640042d4f3a3962_125_1.png)
-
-JavaScript 编程
-
-125
-
-`onload` 事件用于检查访问浏览器的类型和版本。
 
 以下是另一个在页面加载时根据 Cookie 处理的示例：
 
 ```html
-<html
+<html>
 <body onload="inspectCookies()">
 <script>
 function inspectCookies() {
     var txt = "";
-    if (navigator.cookie) {
+    if (navigator.cookieEnabled) {
         txt = "Enabled";
     } else {
         txt = "Disabled";
@@ -1948,21 +1928,17 @@ function inspectCookies() {
 }
 </script>
 </body>
-</</html>
+</html>
 ```
 
 运行上述代码，结果将取决于浏览器是否启用了 Cookie。
 
-![](img/9481f3f28a383c4a6640042d4f3a3962_126_0.png) ![](img/9481f3f28a383c4a6640042d4f3a3962_126_1.png)
-
-JavaScript 编程
-
-126
+### onchange 事件
 
 `change` 事件通常用于表单字段。以下示例展示了如何使用该方法：
 
 ```html
-<html
+<html>
 <head>
 <script type="text/javascript">
 function test() {
@@ -1977,24 +1953,16 @@ function test() {
 </html>
 ```
 
-运行该代码后，你将看到如下表单：
-
-姓名
-
-在输入框内输入小字母并点击外部，你会注意到你的姓名被转换为大写。
-
-![](img/9481f3f28a383c4a6640042d4f3a3962_127_0.png) ![](img/9481f3f28a383c4a6640042d4f3a3962_127_1.png)
-
-JavaScript 编程
-
-127
+运行该代码后，你将看到如下表单。在输入框内输入小写字母并点击外部，你会注意到你的姓名被转换为大写。
 
 `toUpperCase()` 方法在用户更改输入框的内容后被调用。
+
+### onfocus 事件
 
 `onload` 被使用时，会显示一个警告。例如：
 
 ```html
-<html
+<html>
 <head>
 <script type="text/javascript">
 function displayMessage() {
@@ -2007,16 +1975,10 @@ function displayMessage() {
 </html>
 ```
 
-![](img/9481f3f28a383c4a6640042d4f3a3962_128_0.png) ![](img/9481f3f28a383c4a6640042d4f3a3962_128_1.png)
-
-JavaScript 编程
-
-128
-
 页面加载后，`onload` 事件可以让输入框在获得焦点时改变颜色。这里有一个示例：
 
 ```html
-<html
+<html>
 <head>
 <script type="text/javascript">
 function myFunc(col) {
@@ -2032,29 +1994,18 @@ function myFunc(col) {
 </html>
 ```
 
-![](img/9481f3f28a383c4a6640042d4f3a3962_129_0.png) ![](img/9481f3f28a383c4a6640042d4f3a3962_129_1.png)
-
-JavaScript 编程
-
-129
-
 执行该代码你将得到以下结果：
 
+```text
 姓名：
-
 点击输入框内看它的颜色变化。
+```
 
-输入框的颜色将变为绿色。
+输入框的颜色将变为黄色。
 
-![](img/9481f3f28a383c4a6640042d4f3a3962_130_0.png) ![](img/9481f3f28a383c4a6640042d4f3a3962_130_1.png)
+---
 
-
-
-
-
-JavaScript 编程
-
-## 第 10 章 JavaScript 验证
+## 第 13 章 JavaScript 验证
 
 通过 JavaScript，用户可以在提交表单之前对其进行验证。最初，表单验证是在服务器端完成的。用户填写表单并发送到服务器。如果发现详情错误，服务器必须将其发回给用户进行修改。这个过程太耗时了。
 
@@ -2062,8 +2013,10 @@ JavaScript 编程
 
 示例：
 
+
+
 ```html
-<html
+<html>
 <head>
 </head>
 <script type="text/javascript">
@@ -2103,7 +2056,7 @@ You MUST enter your name!
 
 现在，输入你的姓名但不输入密码。你将得到以下警告框：
 
-You MUST enter a password with 8 characters and above... 这意味着你必须输入 8 个字符及以上的密码。你现在可以输入短密码并查看验证是否正常工作。输入一个少于 8 个字符的密码然后点击 Login 按钮。你仍然会收到上面的对话框。我们创建了一个名为 detailsForm 的表单。该表单要求用户输入姓名和密码。我们创建了 formValidation 方法来验证表单中输入的值。必须提供用户名，而密码不能少于 8 个字符。属性 onsubmit="return formValidation()" 意味着一旦用户点击“Login”按钮，就会调用 formValidation 方法来验证表单中输入的详情。如果不符合要求，它将返回 false，因此用户必须重新输入详情。
+You MUST enter a password with 8 characters and above... 这意味着你必须输入 8 个字符及以上的密码。你现在可以输入短密码并查看验证是否正常工作。输入一个少于 8 个字符的密码然后点击 Login 按钮。你仍然会收到上面的对话框。我们创建了一个名为 `detailsForm` 的表单。该表单要求用户输入姓名和密码。我们创建了 `formValidation` 方法来验证表单中输入的值。必须提供用户名，而密码不能少于 8 个字符。属性 `onsubmit="return formValidation()"` 意味着一旦用户点击“Login”按钮，就会调用 `formValidation` 方法来验证表单中输入的详情。如果不符合要求，它将返回 false，因此用户必须重新输入详情。
 
 ### 验证重复输入密码
 
@@ -2169,8 +2122,8 @@ Input must be a number!
 
 JavaScript 可用于验证电子邮件地址。以下是有效电子邮件地址的属性：
 
-- 它必须包含 @ 和点（dot）符号
-- 在 @ 之前和之后都应该有字符
+- 它必须包含 `@` 和点（dot）符号
+- 在 `@` 之前和之后都应该有字符
 - 在点（dot）之后必须至少有两个字符。
 
 示例：
@@ -2189,17 +2142,12 @@ function emailValidation() {
 </script>
 ```
 
-
-
-
-
-JavaScript编程
-139
-
+```html
 <form name="form1" method="post" action="" onsubmit="validate()">
 Email: <input type="text" name="email"/><br/>
 <input type="submit" value="Submit Mail"/>
 </form>
+```
 
 代码执行后返回以下内容：
 
@@ -2208,16 +2156,16 @@ Email: | 提交邮件 |
 尝试输入一个无效的电子邮件地址并点击提交邮件按钮。看看会发生什么。你应该得到以下警报框：
 
 请提供有效的电子邮件地址
+
 在位置:-1
+
 点位置:-1
-带图片的验证
+
+### 带图片的验证
 
 你可能需要根据输入是否正确来显示不同的图片。
 
 ![](img/9481f3f28a383c4a6640042d4f3a3962_140_0.png) ![](img/9481f3f28a383c4a6640042d4f3a3962_140_1.png)
-
-JavaScript编程
-140
 
 可以通过 JavaScript 如下方式实现：
 
@@ -2258,7 +2206,9 @@ function formValidation() {
 脚本执行后返回此简单表单：
 
 输入姓名：
+
 输入密码：
+
 登录
 
 ![](img/9481f3f28a383c4a6640042d4f3a3962_142_0.png) ![](img/9481f3f28a383c4a6640042d4f3a3962_142_1.png)
@@ -2266,9 +2216,13 @@ function formValidation() {
 在不输入用户名或密码的情况下点击登录按钮。你会在相关消息旁边看到图片。
 
 输入姓名：
+
 请提供你的姓名
+
 输入密码：
+
 密码长度应至少为 8 个字符
+
 登录
 
 ![](img/9481f3f28a383c4a6640042d4f3a3962_143_0.png) ![](img/9481f3f28a383c4a6640042d4f3a3962_143_1.png)
@@ -2292,6 +2246,7 @@ function formValidation() {
 DOM 是获取输入字段值的好方法。很多时候，你需要从用户那里获取输入。可以使用以下属性完成：`document.form.name.value`。
 
 其中 `document` 是代表我们根元素的 html 文档。
+
 - `form` 是带有字段的表单名称。
 - `name` 是输入文本的名称。
 - `value` 是一个返回输入文本值的属性。
@@ -2318,6 +2273,7 @@ function readValue() {
 运行代码时，它会给你这个简单的表单：
 
 输入姓名：| 点击这里
+
 在输入字段中输入你的姓名并点击这里按钮。看看会发生什么。
 
 ![](img/9481f3f28a383c4a6640042d4f3a3962_146_0.png) ![](img/9481f3f28a383c4a6640042d4f3a3962_146_1.png)
@@ -2351,9 +2307,6 @@ function computeSquare() {
 
 ![](img/9481f3f28a383c4a6640042d4f3a3962_147_0.png) ![](img/9481f3f28a383c4a6640042d4f3a3962_147_1.png)
 
-JavaScript编程
-148
-
 这应该在弹出框中返回数字的平方：
 
 在示例中，我们定义了 `computeSquare` 方法，它帮助我们获取输入到文本字段的数字。考虑以下行：
@@ -2369,13 +2322,6 @@ JavaScript编程
 需要名称。
 
 ![](img/9481f3f28a383c4a6640042d4f3a3962_149_0.png) ![](img/9481f3f28a383c4a6640042d4f3a3962_149_1.png)
-
-
-
-
-
-JavaScript 编程
-149
 
 示例：
 
@@ -2405,9 +2351,6 @@ function getNumber() {
 
 ![](img/9481f3f28a383c4a6640042d4f3a3962_150_0.png) ![](img/9481f3f28a383c4a6640042d4f3a3962_150_1.png)
 
-JavaScript 编程
-150
-
 点击“Available Options”按钮查看发生了什么。将显示如下弹出窗口：
 
 总选项数：2
@@ -2415,6 +2358,7 @@ JavaScript 编程
 我们创建了两个带有 Yes 和 No 选项的单选按钮。注意，这两个输入类型被赋予了相同的名称，即 option。
 
 考虑以下行：
+
 `var options=document.getElementsByName("option");`
 
 该行帮助我们统计名称为 option 的元素数量。如输出所示，该数量应该是 2。
@@ -2426,9 +2370,6 @@ JavaScript 编程
 `document.getElementsByTagName("name")`
 
 ![](img/9481f3f28a383c4a6640042d4f3a3962_151_0.png) ![](img/9481f3f28a383c4a6640042d4f3a3962_151_1.png)
-
-JavaScript 编程
-151
 
 例如：
 
@@ -2453,8 +2394,11 @@ function allparagraphs() {
 代码执行后返回以下内容：
 
 这是一个段落
+
 这是一个段落
+
 这是一个段落
+
 这是一个段落
 
 | 总段落数 |
@@ -2463,9 +2407,6 @@ function allparagraphs() {
 
 ![](img/9481f3f28a383c4a6640042d4f3a3962_152_0.png) ![](img/9481f3f28a383c4a6640042d4f3a3962_152_1.png)
 
-JavaScript 编程
-152
-
 点击“Total Paragraphs”按钮查看发生了什么。你将看到以下弹出窗口：
 
 段落总数为：4
@@ -2473,6 +2414,7 @@ JavaScript 编程
 这意味着代码能够数出我们拥有的段落数量。
 
 主要逻辑在于以下行：
+
 `var pgs=document.getElementsByTagName("p");`
 
 我们将标签 "p" 作为参数传递给方法，该标签代表一个段落。有四个标签为 "p" 的元素，所以输出应该是 4 个段落。这里是另一个例子：
@@ -2501,9 +2443,6 @@ function count3() {
 ```
 
 ![](img/9481f3f28a383c4a6640042d4f3a3962_153_0.png) ![](img/9481f3f28a383c4a6640042d4f3a3962_153_1.png)
-
-JavaScript 编程
-153
 
 代码执行后返回以下输出：
 
@@ -2544,8 +2483,6 @@ function displayform() {
 
 ### innerText
 
-###Text
-
 我们可以使用此属性向 HTML 页面添加动态属性。注意，当使用此属性时，你的文本被解释为普通文本而非 HTML 内容。该属性的一个良好场景是需要根据长度编写密码强度、编写验证信息等。例如：
 
 ```html
@@ -2584,14 +2521,6 @@ function validatePass() {
 
 这就是该属性的强大之处。
 
-
-
-
-
-JavaScript 编程
-
-159
-
 ## 动画
 
 通过 JavaScript，我们可以对元素实现动画。我们可以根据公式使用 JavaScript 移动页面上的元素，如 `<img> />`、`<div>` 等。以下是 JavaScript 动画中常用的常用方法：
@@ -2602,15 +2531,12 @@ JavaScript 编程
 通过 JavaScript，人们可以设置 DOM 对象的某些属性，例如它在屏幕上的位置。可以使用 `top` 和 `left` 属性来设置对象的位置。下文所示：
 
 `object.style.left = 点或像素单位的距离；或使用字符串“距离屏幕顶部的距离!";`
+
 `object.style.top = 点或像素单位的距离;`
 
 ![](img/9481f3f28a383c4a6640042d4f3a3962_160_0.png) ![](img/9481f3f28a383c4a6640042d4f3a3962_160_1.png)
 
-JavaScript 编程
-
-160
-
-## 手动动画
+### 手动动画
 
 在下面的示例中，我们将使图像向右移动动画：
 
@@ -2641,35 +2567,35 @@ window.onload = init;
 ```
 
 你应当在以下这一行中使用你图片的正确名称：
+
 `<img id="myImage" src="house.jpg" />`
 
 在我的案例中，我有一个名为 `house.jpg` 的 `.jpg` 图片。当我运行代码时，它会返回以下内容：
 
 点击按钮移动图像
+
 | Move Image |
 
 ![](img/9481f3f28a383c4a6640042d4f3a3962_162_0.png) ![](img/9481f3f28a383c4a6640042d4f3a3962_162_1.png)
 
-JavaScript 编程
-
-162
-
 点击“Move Image”按钮。图像在每次点击时应向右移动。如下所示：
 
 点击按钮移动图像
+
 | Move Image |
 
 考虑脚本中的这一行：
+
 `image = document.getElementById('myImage');`
 
 我们正在通过其 ID 获取图像，然后将其赋值给变量 `image`。`init()` 方法帮助我们设置图像在窗口上的初始位置。该方法会在窗口加载完成时被调用。`moveImage()` 函数将在点击后将图像向右移动 10 像素。要让图像向左移动，则应将值设置为负数。在这种情况下，动画是手动的，因为我们必须点击按钮。
 
-## 自动动画
+### 自动动画
 
 为了使元素动画过程自动化，我们可以使用 JavaScript 提供的 `setTimeout()` 函数。示例：
 
 ```html
-<html
+<html>
 <head>
 <script type="text/javascript">
 var image = null;
@@ -2705,18 +2631,14 @@ window.onload = init;
 
 ![](img/9481f3f28a383c4a6640042d4f3a3962_164_0.png) ![](img/9481f3f28a383c4a6640042d4f3a3962_164_1.png)
 
-JavaScript 编程
-
-165
-
 点击“Animate”按钮。动画应该开始。当你点击 Stop 按钮时，动画将停止。`animateImage()` 方法调用 `setTimeout` 方法，在 20 毫秒后设置图像的位置。这将导致图像的动画。`stopAnimation()` 方法有助于清除由 `setTimeout()` 方法设置的计时器。对象（即图像）被设回初始位置。
 
-## 鼠标悬停 (Rollover)
+### 鼠标悬停 (Rollover)
 
 我们可以在 JavaScript 中使用鼠标图像来实现图像的悬停切换。一旦你将鼠标移动到图像上，它将变为另一张图像。示例：
 
 ```html
-<html
+<html>
 <head>
 <script type="text/javascript">
 if (document.images) {
@@ -2740,10 +2662,6 @@ if (document.images) {
 
 ![](img/9481f3f28a383c4a6640042d4f3a3962_167_0.png) ![](img/9481f3f28a383c4a6640042d4f3a3962_167_1.png)
 
-JavaScript 编程
-
-167
-
 ## 第 12 章 - 浏览器对象模型
 
 BOM（浏览器对象模型）用于与浏览器进行交互。默认的浏览器对象是 `window`，这意味着你可以直接调用所有窗口函数，或者通过指定 `window.` 来调用。我们已经讨论过这一点，所以不再重复。除了 `window` 对象外，还有许多其他的 BOM 对象。让我们来讨论它们：
@@ -2756,64 +2674,53 @@ BOM（浏览器对象模型）用于与浏览器进行交互。默认的浏览�
 
 它也可以如下所示访问：
 
-
-
-JavaScript 编程
-168
-
 该对象只有一个属性，即 `length`，它返回历史记录 URL 的长度。history 对象包含 3 个方法，包括：
 
-- forward(-); 它将加载下一个页面
-- back(); 它将加载上一个页面
-- go(?); 它将加载指定页码的页面。
+- `forward(-);` - 它将加载下一个页面
+- `back();` - 它将加载上一个页面
+- `go(?);` - 它将加载指定页码的页面。
 
 ![](img/9481f3f28a383c4a6640042d4f3a3962_169_0.png) ![](img/9481f3f28a383c4a6640042d4f3a3962_169_1.png)
 
-JavaScript 编程
-169
-
 history 对象可以以以下多种方式使用：
 
-1. history.back(); // 用于上上一页
-2. history.forward(); // 用于后一页
-3. history.go(2); // 用于后第 2 页
-4. history.go(-2); // 用于上第 2 页
+1. `history.back();` // 用于上上一页
+2. `history.forward();` // 用于后一页
+3. `history.go(2);` // 用于后第 2 页
+4. `history.go(-2);` // 用于上第 2 页
 
 ## Navigator 对象
 
 该对象用于检测浏览器。它可以帮助获取有关浏览器的信息，如 appName、userAgent、appCodeName 等。navigator 对象是 window 的一个属性，我们可以如下方式访问它：
 
-window.navigator
+`window.navigator`
 
 也可以通过如下方式访问：
 
-navigator
+`navigator`
 
 该对象带有各种属性，包括：
 
-- appName- 返回应用名称
-- appCodeName- 返回代码代号
-- appVersion- 返回版本号
-- cookieEnabled- 如果启用了浏览器 cookie 则返回 true，否则返回 false
+- `appName` - 返回应用名称
+- `appCodeName` - 返回代码代号
+- `appVersion` - 返回版本号
+- `cookieEnabled` - 如果启用了浏览器 cookie 则返回 true，否则返回 false
 
 ![](img/9481f3f28a383c4a6640042d4f3a3962_170_0.png) ![](img/9481f3f28a383c4a6640042d4f3a3962_170_1.png)
 
-JavaScript 编程
-170
-
-- language- 返回语言。仅在 Firefox 和 Netscape 中支持。
-- userAgent- 返回用户代理字符串。
-- userLanguage- 返回用户的语言。仅在 IE 中支持。
-- systemLanguage- 返回系统语言。仅在 IE 中支持。
-- Plugins- 返回插件。仅在 Firefox 和 Netscape 中支持。
-- mimeTypes[]- 返回 mime 类型的数组。仅在 Firefox 和 Netscape 中支持。
-- online- 如果浏览器在线则返回 true，否则返回 false。
-- platform- 返回平台，例如 Win32。
+- `language` - 返回语言。仅在 Firefox 和 Netscape 中支持。
+- `userAgent` - 返回用户代理字符串。
+- `userLanguage` - 返回用户的语言。仅在 IE 中支持。
+- `systemLanguage` - 返回系统语言。仅在 IE 中支持。
+- `Plugins` - 返回插件。仅在 Firefox 和 Netscape 中支持。
+- `mimeTypes[]` - 返回 mime 类型的数组。仅在 Firefox 和 Netscape 中支持。
+- `online` - 如果浏览器在线则返回 true，否则返回 false。
+- `platform` - 返回平台，例如 Win32。
 
 navigator 对象具有以下方法：
 
-- javaEnabled()- 检查是否已启用 java。
-- tlsEnabled()- 检查是否已启用 tls。自 JavaScript 1.2 起被弃用。
+- `javaEnabled()` - 检查是否已启用 java。
+- `tlsEnabled()` - 检查是否已启用 tls。自 JavaScript 1.2 起被弃用。
 
 请考虑下面的 navigator 对象示例：
 
@@ -2827,37 +2734,41 @@ document.writeln(""+navigator.platform);
 ```
 
 该代码返回以下详情：
+
 appName: Netscape
+
 appCodeName: Mozilla
+
 appVersion: 5.0 (Windows)
+
 language: en-US
+
 cookieEnabled: true
+
 userAgent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:52.0) Gecko/2010101 Firefox/52.0
+
 platform: Win32
 
 注意，输出取决于操作系统的类型、你使用的浏览器以及其他细节。
 
 ![](img/9481f3f28a383c4a6640042d4f3a3962_171_0.png) ![](img/9481f3f28a383c4a6640042d4f3a3962_171_1.png)
 
-JavaScript 编程
-172
-
 ## Screen
 
 此 JavaScript 对象保存有关浏览器屏幕的信息。你可以用它显示屏幕的细节，如高度、宽度、像素深度、颜色深度等。它是 window 对象的属性，因此我们如下访问：
 
-window.screen
+`window.screen`
 
 我们也可以通过如下方式访问：
 
 该对象有许多属性，包括：
 
-- width- 返回浏览器屏幕的宽度
-- height- 返回浏览器屏幕的高度
-- availWidth- 输出可用宽度
-- availHeight- 打印可用高度
-- colorDepth- 返回颜色深度
-- pixelDepth- 返回像素深度。
+- `width` - 返回浏览器屏幕的宽度
+- `height` - 返回浏览器屏幕的高度
+- `availWidth` - 输出可用宽度
+- `availHeight` - 打印可用高度
+- `colorDepth` - 返回颜色深度
+- `pixelDepth` - 返回像素深度。
 
 下面的示例显示了如何使用该对象：
 
@@ -2871,11 +2782,17 @@ document.writeln(+screen.colorDepth);
 ```
 
 代码执行后返回如下：
+
 screen height: 768
+
 screen width: 1366
+
 screen availHeight: 728
+
 screen availWidth: 1366
+
 screen pixelDepth: 24
+
 screen colorDepth: 24
 
 有时，你可能需要将特定网页的内容发送到打印机。这可以通过添加用户需要点击的按钮来实现。
@@ -2884,7 +2801,7 @@ screen colorDepth: 24
 
 ## 打印
 
-有时，你可能需要将特定网页的内容发送到打印机。这可以通过添加用户需要点击的按钮来实现。这可以使用 window 的 print 方法实现。当调用 window.print() 时，当前页面将被打印。
+有时，你可能需要将特定网页的内容发送到打印机。这可以通过添加用户需要点击的按钮来实现。这可以使用 window 的 print 方法实现。当调用 `window.print()` 时，当前页面将被打印。
 
 ```html
 <html>
@@ -2896,38 +2813,26 @@ screen colorDepth: 24
 
 ![](img/9481f3f28a383c4a6640042d4f3a3962_173_0.png) ![](img/9481f3f28a383c4a6640042d4f3a3962_173_1.png)
 
-JavaScript 编程
-174
-
-## 第13章 Cookies
+## 第 13 章 Cookies
 
 Cookies 指存储在计算机文本文件中的数据。在浏览期间，网页发送到用户的浏览器，而 Web 服务器会忘记这些。Cookies 有助于记住用户信息。一旦用户访问了网页，cookie 就可以帮助存储他的姓名。用户下次访问页面时会被记住。它们以如下键值对的形式保存：
 
 username=John Joel
 
-document.cookie 可用于 cookie 的创建、删除和读取。还可以以 UTC 添加过期日期。关闭浏览器后，cookie 将被删除。
+`document.cookie` 可用于 cookie 的创建、删除和读取。还可以以 UTC 添加过期日期。关闭浏览器后，cookie 将被删除。
 
 ![](img/9481f3f28a383c4a6640042d4f3a3962_174_0.png) ![](img/9481f3f28a383c4a6640042d4f3a3962_174_1.png)
 
-JavaScript 编程
-175
-
 ![](img/9481f3f28a383c4a6640042d4f3a3962_175_0.png) ![](img/9481f3f28a383c4a6640042d4f3a3962_175_1.png)
-
-JavaScript 编程
-176
 
 ![](img/9481f3f28a383c4a6640042d4f3a3962_176_0.png) ![](img/9481f3f28a383c4a6640042d4f3a3962_176_1.png)
 
-
-
-
-JavaScript 编程 193
-
 示例：
+
 `document.cookie` = `这就是你如何指定 cookie 的过期日期。也可以指定 cookie 的路径。`
 
 示例：
+
 `document.cookie` = 下面的脚本演示了这一点：
 
 ```html
@@ -2955,17 +2860,18 @@ Name: <input type="text" name="field" />
 ```
 
 该代码在执行后将返回以下表单：
+
 Enter name [ ] Create Cookie
 
 在字段中输入名称，然后点击“Create Cookie”按钮。
+
 你将看到：
+
 Creating Cookies: name=John;name=Joel
 
 cookie 将被创建。你将在计算机上拥有一个你输入的名称的 cookie。如果你需要一次创建多个 cookie，请用逗号分隔它们。
 
-JavaScript 编程 178
-
-读取 Cookie
+### 读取 Cookie
 
 可以使用 `document.cookie` 对象读取 cookie。cookie 的名称会被传递给该对象。当你需要访问 cookie 时，可以随时使用该字符串。字符串 `document.cookie` 以 `name=value` 对的形式存储 cookie，并用分号分隔。name 表示 cookie 的名称，而 value 表示字符串值。
 
@@ -2989,9 +2895,7 @@ function ReadCookies() {
 </script>
 ```
 
-JavaScript 编程 179
-
-删除 Cookie
+### 删除 Cookie
 
 有时，你可能不需要读取某个 cookie。这时你就删除它。删除 cookie 涉及给它分配一个早于当前日日期。
 
@@ -3015,18 +2919,17 @@ Enter name: <input type="text" name="field" />
 ```
 
 在示例中，我们通过将 cookie 的过期日期设置为一个月前来删除该 cookie。该逻辑在代码的以下行中实现：
-`time.setMonth(time.getMonth() - 1);`
 
-JavaScript 编程 180
+`time.setMonth(time.getMonth() - 1);`
 
 ## 第 14 章 面向对象编程
 
 JavaScript 支持面向对象编程的概念。让我们讨论一下：
 
--   JavaScript 类是一种特殊的函数。
--   类可以像函数表达式一样被定义。
--   JavaScript 类有许多成员，包括方法或构造函数。
--   JavaScript 类在严格模式下执行。因此，任何带有静错误或异常的代码都会抛出错误。
+- JavaScript 类是一种特殊的函数。
+- 类可以像函数表达式一样被定义。
+- JavaScript 类有许多成员，包括方法或构造函数。
+- JavaScript 类在严格模式下执行。因此，任何带有静错误或异常的代码都会抛出错误。
 
 类语法由两个部分组成：声明和表达式。要声明一个类，我们使用 `class` 声明。这是通过 `class` 关键字后跟类名来实现。JavaScript 的命名规范要求类名必须大写字母开头。
 
@@ -3051,30 +2954,22 @@ student2.detail();
 ```
 
 该代码执行后返回以下内容：
+
 John: Joel
+
 Mercy: George
 
 我们创建了一个名为 `Student` 的类。然后我们初始化了一个带有两个参数 `admission` 和 `name` 的构造函数。接着我们创建了一个名为 `detail` 的方法，它应该返回学生的详细信息，包括入学号和姓名。
 
 考虑代码中提取的两行：
+
 `var student1 = new Student("John", "Joel");`
+
 `var student2 = new Student("Mercy", "George");`
 
 我们所的操作被称为实例化。我们只是在创建 `Student` 类型的实例/对象。这意味着 `student1` 是 `Student` 的一个实例，因此它可以访问 `Student` 类中定义的所有属性。这同样适用于 `student2`。每个学生的详细信息已作为参数传递。最后我们调用了 `detail()` 方法来返回每个学生的详细信息。
 
 在这种情况下，`length` 提供了数组长度。
-
-JavaScript 编程 181
-JavaScript 编程 182
-JavaScript 编程 183
-JavaScript 编程 184
-JavaScript 编程 185
-JavaScript 编程 186
-JavaScript 编程 187
-
-
-
-JavaScript 编程
 
 以下示例中演示了这一点：
 
@@ -3119,7 +3014,7 @@ student2.detail();
 
 上面的代码也无法运行，因为我们声明了两次类。
 
-## 类表达式
+### 类表达式
 
 类也可以使用类表达式（class expression）来定义。在这种情况下，类名不是强制性的。这意味着你可以有一个命名的或未名的类表达式。类表达式允许你获取类的名称。然而，类声明（class declaration）不允许这样做。
 
@@ -3138,6 +3033,7 @@ document.writeln(stud.name);
 ```
 
 执行后，代码将返回以下内容：
+
 undefined
 
 类被赋值给了一个变量而不是被命名。通过类表达式，我们可以重新声明类。
@@ -3178,6 +3074,7 @@ document.writeln(stud.name);
 ```
 
 代码成功运行并返回以下内容：
+
 Student
 
 现在让我们尝试按照如下编写代码：
@@ -3196,7 +3093,7 @@ document.writeln(Student.name);
 
 代码将生成一个错误。
 
-## 对象
+### 对象
 
 JavaScript 中的对象是一个既有状态又有行为的实体，即属性和方法。对象的示例可以是椅子、鼠标、键盘、笔等。
 
@@ -3206,7 +3103,7 @@ JavaScript 是基于对象工作的。它将一切都视为对象。它是基于
 - 直接创建 Object 的实例（通过 `new` 关键字）
 - 使用对象构造函数（通过 `new` 关键字）
 
-### 对象字面量
+#### 对象字面量
 
 使用对象字面量创建对象，我们使用下面的语法：使用冒号（:）来分隔属性和值。
 
@@ -3222,11 +3119,12 @@ document.write(student.admission + student.name + student.age);
 ```
 
 代码返回以下结果：
+
 380John Joel28
 
 输出清晰地显示 JavaScript 解释器能够理解这种语法的含义，即属性在前，值在后。这就是为什么它能够获取我们想要访问的属性值。
 
-### 创建对象实例
+#### 创建对象实例
 
 这是通过以下语法实现的：注意我们使用了 `new` 关键字来创建对象。
 
@@ -3242,7 +3140,7 @@ document.write(stud.admission + stud.name + stud.age);
 
 下面的示例演示了我们如何直接创建一个对象：
 
-### 使用对象构造函数
+#### 使用对象构造函数
 
 这涉及创建一个带有参数的函数。每个参数值都可以通过 `this` 关键字赋值给当前对象，`this` 表示当前对象。考虑以下示例：
 
@@ -3254,13 +3152,6 @@ function stud(admission, name, age) {
 }
 </script>
 ```
-
-
-
-
-## JavaScript 编程
-
-### 197
 
 ```javascript
 <script>
@@ -3282,6 +3173,7 @@ document.write(s.admission + " " + s.name + " " + s.age);
 ```
 
 该代码执行后返回如下：
+
 4380 John Joel 28
 
 JavaScript 允许我们在对象中定义方法。但在定义方法之前，我们应该首先定义一个与方法同名的属性。接下来的示例展示了我们如何在对象中定义一个方法：
@@ -3306,19 +3198,18 @@ document.write(s.admission + " " + s.name + " " + s.age);
 ```
 
 代码后将返回如下结果：
+
 4380 John Joel 29
 
 我们定义了 `updateAge` 方法，它可以帮助我们更改学生的年龄。在示例中，学生的年龄已从 28 更新为 29。
 
-## 原型 (Prototype)
+### 原型 (Prototype)
 
 JavaScript 语言基于原型工作，允许对象从相互获取特征和属性。在这里，每个对象都有一个原型对象。在 JavaScript 中创建一个函数后，`prototype` 属性会自动添加到该函数中。该属性是一个持有构造函数（constructor）属性的原型对象。
 
-### 199
-
 这里是 JavaScript 中创建原型对象的语法：在创建对象后，对应的函数会被加载到内存中。这意味着每个对象都有一个函数的新副本。因此，所有函数都会一次性加载到内存中。
 
-### 原型链 (Prototype Chaining)
+#### 原型链 (Prototype Chaining)
 
 每个 JavaScript 对象都有一个原型对象，并从那里获取方法和属性。一个对象的原型可能有另一个原型对象，而该原型也可以获取方法和属性，以此此类推。我们可以将其视为原型链。接下来的示例演示了我们如何向构造函数添加一个新方法：
 
@@ -3341,6 +3232,7 @@ document.writeln(student2.fullName());
 ```
 
 代码返回如下结果：
+
 `fullName` 函数结合了 `firstName` 和 `lastName` 以返回学生的全名。
 
 让我们创建另一个示例，演示如何向构造函数添加一个新属性：
@@ -3362,7 +3254,9 @@ document.writeln(student2.firstName + " " + student2.lastName + " " + student2.s
 ```
 
 代码应返回如下结果：
+
 John Joel ABC
+
 Mary George ABC
 
 我们为原型了 school。
@@ -3386,6 +3280,7 @@ document.writeln(stud.admission + " " + stud.name);
 ```
 
 代码后返回如下结果：
+
 4380 John
 
 注意构造方法用大括号 `{}` 表示。在构造方法体内部创建了各种属性。
@@ -3409,6 +3304,7 @@ document.writeln(StaticTest.show());
 ```
 
 代码将打印：
+
 method has been invoked
 
 `show()` 方法使用 `static` 关键字声明，使其成为静态方法。让我们看看如何调用多个静态方法：
@@ -3430,15 +3326,12 @@ document.writeln(StaticTest.show2());
 ```
 
 该代码执行后将返回：
+
 method has been invoked
+
 method invoked again
 
 我们创建了两个静态方法，`show1()` 和 `show2()`。我们调用了它们以获得上所示的结果。
-
-
-
-
-JavaScript 编程
 
 我们可以创建多个同名的静态方法并调用它们。下文所示：
 
@@ -3470,7 +3363,9 @@ var st=new StaticTest();
 ```
 
 代码返回以下结果：
+
 静态方法已调用
+
 静态方法已调用
 
 静态方法方法也可以从非静态方法内部调用。例如：
@@ -3491,9 +3386,10 @@ st.show();
 ```
 
 代码返回以下结果：
+
 静态方法已调用
 
-## 封装
+### 封装
 
 封装是指将数据与作用于该数据的函数绑定的过程。它是控制数据和验证数据的一种良好方法。
 
@@ -3528,6 +3424,7 @@ document.writeln(st.getStudentName()+st.getScore());
 ```
 
 代码执行后将返回以下结果：
+
 John 78
 
 让我们看看如何验证学生的分：
@@ -3564,6 +3461,7 @@ document.writeln(st.getStudentName()+st.getScore());
 ```
 
 分数在 `setScore()` 方法中进行了验证。如果分数不在 0 到 100 之间，它将是无效分数。我们将分数设置为 105。代码的执行返回以下结果：
+
 无效分数
 
 让我们修改分数并将其设置为 78：
@@ -3600,6 +3498,7 @@ document.writeln(st.getStudentName()+st.getScore());
 ```
 
 代码执行后返回以下结果：
+
 John 78
 
 我们也可以使用基于原型的方法来实现封装，如下所示：
@@ -3629,7 +3528,7 @@ var st=new Student("John",78);
 document.writeln(st.name+st.score);
 ```
 
-## 继承
+### 继承
 
 通过这一 JavaScript 特性，我们可以基于已有的类创建新类。它为子类提供了一种使用属于父类的方法和属性的方法。
 
@@ -3650,6 +3549,7 @@ document.writeln(c.getDate()+"-"+c.getMonth()+1)+-"+c.getFullYear());
 ```
 
 代码将返回所示输出：
+
 今天是：20-2-2019
 
 代码返回今天的日期。另一个示例：
@@ -3667,12 +3567,10 @@ document.writeln(c.getFullYear());
 </script>
 ```
 
-
-
-JavaScript 编程
-
 执行后代码返回以下内容：
+
 年份是：1958
+
 这表明该方法能够成功提取出提供日期的年份部分。
 
 这里另一个示例，其中我们正在创建一个子类来继承父类：
@@ -3699,6 +3597,7 @@ document.writeln(m.manufacturer + " " + m.name + " " + m.year);
 ```
 
 代码返回以下结果：
+
 Toyota Harner 2012
 
 让我们演示如何实现基于原型的继承，在这种情况下，我们不需要使用 `extends` 和 `class` 关键字：
@@ -3725,7 +3624,7 @@ document.writeln(model.getManufacturer() + " " + model.name + " " + model.year);
 </script>
 ```
 
-## 多态
+### 多态
 
 这是面向对象编程范式的一个关键特性，它允许以不同的方式执行同一个操作。通过多态，我们可以在各种 JavaScript 对象上调用同一个方法。JavaScript 不是一种类型安全的语言；因此，任何数据类型的成员都可以传递给方法。考虑下面的示例：
 
@@ -3749,7 +3648,9 @@ ch.show();
 ```
 
 代码将返回以下内容：
+
 Parent class invoked
+
 Child class invoked
 
 这里另一个示例：
@@ -3776,7 +3677,9 @@ p.forEach(function(message) {
 ```
 
 `show()` 方法的行为根据调用它的对象而有所不同。代码打印出以下输出：
+
 Parent class invoked
+
 Child class invoked
 
 我们可以实现相同的示例，但这次通过基于原型的方法。演示所示：
@@ -3823,8 +3726,6 @@ for (var x=0; x<navigator.plugins.length; x++) {
 }
 </script>
 
-``` 
-
 一旦执行，该脚本将向你显示浏览器上安装的所有插件列表。每个插件都表示为数组中的一个条目。每个条目具有以下属性：
 - name：指定插件的名称。
 - filename：这是一个可执行文件，用于在安装插件时加载它。
@@ -3847,57 +3748,11 @@ var vid = navigator.mimeTypes["video"];
 if (vid) {
   document.write("<embed src='" + vid + "' width='300' height='200'>");
 } else {
-  document.write("<img src='img.gif' width='300' height='200'>");
-}
-</script>
 ```
 
-`<embed>` 标签帮助我们嵌入了一些多媒体文件。通过 JavaScript，我们能够控制多媒体。
-
-示例：
-
-```html
-<script type="text/javascript">
-function playMedia() {
-  if (!document.game.IsPlaying()) {
-    document.game.Play();
-  }
-}
-function stopMedia() {
-  if (document.game.IsPlaying()) {
-    document.game.StopPlay();
-  }
-}
-function rewindMedia() {
-  if (document.game.IsPlaying()) {
-    document.game.Rewind();
-  }
-}
-</script>
-</head>
-<body>
-  <embed id="game" src="" width="300" height="200" loop pluginspage="" swliveconnect=""></embed>
-  <form name="" method="get">
-    <input type="button" value="Play" onclick="playMedia()">
-    <input type="button" value="Stop" onclick="stopMedia()">
-    <input type="button" value="Rewind" onclick="rewindMedia()">
-  </form>
-</body>
-```
-
-确保你添加了游戏位置的 URL。执行脚本，你将看到播放、停止和重回按钮。
 
 
-
-
-
-JavaScript 编程
-
-播放 | 停止 | 重播
-
-此示例可以在任何浏览器上运行。
-
-第 16 章 错误处理
+## 第 16 章 错误处理
 
 JavaScript 是我们拥有的弱类型语言之一。它没有编译阶段。错误通常在编程过程中发生。你可以尝试访问未定义的变量或函数。错误被分为语法错误、运行时错误和逻辑错误。让我们来讨论它们。
 
@@ -3911,7 +3766,7 @@ JavaScript 是我们拥有的弱类型语言之一。它没有编译阶段。错
 </script>
 ```
 
-JavaScript 语句应该以分号结束。"window.print()"语句没有以分号结束，因此这将导致语法错误。如果一个语句存在语法错误，与其处于同一线程中的所有语句都会受到影响。其他线程将正常执行。
+JavaScript 语句应该以分号结束。`window.print()` 语句没有以分号结束，因此这将导致语法错误。如果一个语句存在语法错误，与其处于同一线程中的所有语句都会受到影响。其他线程将正常执行。
 
 ### 运行时错误
 
@@ -3925,7 +3780,7 @@ JavaScript 语句应该以分号结束。"window.print()"语句没有以分号�
 </script>
 ```
 
-在解释期间，不会产生错误，因为脚本具有正确的语法。但在运行时会抛出异常，因为脚本将调用一个未知的方法，即 printFile() 方法。
+在解释期间，不会产生错误，因为脚本具有正确的语法。但在运行时会抛出异常，因为脚本将调用一个未知的方法，即 `printFile()` 方法。
 
 ### 逻辑错误
 
@@ -3947,7 +3802,7 @@ try {
 </script>
 ```
 
-try 块后面应该紧跟 catch 或 finally 块。当 try 块中发生异常时，异常将被添加到 ex 中，然后执行 catch 块。finally 块是可选的，它在 try/catch 之后会无条件地执行。
+`try` 块后面应该紧跟 `catch` 或 `finally` 块。当 `try` 块中发生异常时，异常将被添加到 `ex` 中，然后执行 `catch` 块。`finally` 块是可选的，它在 `try/catch` 之后会无条件地执行。
 
 示例：
 
@@ -3969,11 +3824,11 @@ function checkFunction() {
 </script>
 ```
 
-在我们的案例中，我们使用 try 和 catch 来验证我们的输入字段。输入应该是 10 到 20 之间的数字。如果不符合这一规定，将抛出异常并由 try 和 catch 处理。
+在我们的案例中，我们使用 `try` 和 `catch` 来验证我们的输入字段。输入应该是 10 到 20 之间的数字。如果不符合这一规定，将抛出异常并由 `try` 和 `catch` 处理。
 
 ### finally 语句
 
-该语句指定了在 try 和 catch 之后执行的代码，无论结果如何都必须执行。以下是它的语法：
+该语句指定了在 `try` 和 `catch` 之后执行的代码，无论结果如何都必须执行。以下是它的语法：
 
 ```javascript
 try {
@@ -4008,7 +3863,9 @@ function checkFunction() {
 </script>
 ```
 
-JavaScript 有一个名为 RegExp 的类，有助于程序员处理正则表达式。通过这个类，人们可以对某些文本执行模式匹配、替换和搜索函数。要定义正则表达式，我们使用 RegExp 构造函数。如下所示：
+## 第 17 章 正则表达式
+
+JavaScript 有一个名为 `RegExp` 的类，有助于程序员处理正则表达式。通过这个类，人们可以对某些文本执行模式匹配、替换和搜索函数。要定义正则表达式，我们使用 `RegExp` 构造函数。如下所示：
 
 ```javascript
 expression = new RegExp("pattern");
@@ -4020,7 +3877,7 @@ expression = new RegExp("pattern");
 
 ### exec()
 
-该方法将在字符串中搜索匹配 regexp 的文本。如果找到匹配，结果将以数组返回，否则将返回 null。
+该方法将在字符串中搜索匹配 `regexp` 的文本。如果找到匹配，结果将以数组返回，否则将返回 `null`。
 
 该方法具有以下语法：
 
@@ -4036,7 +3893,6 @@ regexp.exec(search_string);
   var reg = new RegExp("\\.");
   var output = reg.exec(text);
   document.write("+" + output);
-
   reg = new RegExp(":");
   output = reg.exec(text);
   document.write("." + output);
@@ -4046,24 +3902,18 @@ regexp.exec(search_string);
 代码执行后返回以下输出：
 
 第一次测试，返回的值为 15: express
-第二次测试。返回的值为 null
+第二次测试。返回的值为 `null`
 我们首先搜索了字符串 express，它在 expressions 中被找到了。其次，我们搜索了字符串 language，它在我们的句子中没有被找到。
 
 ### test()
 
-该方法在字符串中搜索匹配 regexp 的文本。如果找到匹配，它将返回 true，否则将返回 false。该方法具有以下语法：
+该方法在字符串中搜索匹配 `regexp` 的文本。如果找到匹配，它将返回 `true`，否则将返回 `false`。该方法具有以下语法：
 
 ```javascript
 regexp.test(search_string);
 ```
 
 参数 `search_string` 是要搜索的字符串。
-
-
-
-
-JavaScript 编程
-237
 
 ```javascript
 var reg = new RegExp("nameertipaths");
@@ -4074,10 +3924,10 @@ document.write("Output" + output);
 
 代码返回以下结果：
 第一次测试返回：
-true
-第二次测试返回： false
+`true`
+第二次测试返回： `false`
 
-在第一次测试中，找到了匹配项，因此输出为 true。在第二次测试中，没有找到匹配项，因此返回了 false。
+在第一次测试中，找到了匹配项，因此输出为 `true`。在第二次测试中，没有找到匹配项，因此返回了 `false`。
 
 ### search()
 
@@ -4109,10 +3959,10 @@ document.write("Output" + output);
 ```
 
 代码在执行后将返回以下结果：
-第一次测试返回： /ee/
-第二次测试返回： 'g'
+第一次测试返回： `/ee/`
+第二次测试返回： `'g'`
 
-## 第 18 章-图像映射 (Image Map)
+## 第 18 章 图像映射
 
 JavaScript 可用于创建客户端图像映射。要启用图像映射，我们使用 `<img />` 标签的 `usemap` 属性。我们使用 `<area>` 和 `<map>` 标签来定义它们。形成映射的图像通过 `<img />` 标签和一种名为 `usemap` 的特殊属性插入。该属性的值应与 `<map>` 元素中 `name` 属性值匹配，并且应以井号（#）开头。
 
@@ -4121,7 +3971,7 @@ JavaScript 可用于创建客户端图像映射。要启用图像映射，我们
 考虑以下示例：
 
 ```html
-<html
+<html>
 <head>
 <script type="javascript">
 function showLanguage(name) {
@@ -4144,7 +3994,7 @@ function showLanguage(name) {
 
 代码执行后给了我一个界面。我得到的结果取决于下所示我指向的部分：
 
-## 第 19 章-页面重重 (Page Redirection)
+## 第 19 章 页面重定向
 
 有时你会遇到这样的情况：你点击某个 URL 访问特定页面 X，但内部被重定向到了另一个页面 Y。这就是页面重定向的工作原理。你有许多理由可能需要将用户重定向到另一个页面。一个很好的例子是你移动到一个新域名时。你可以使用页面重定向将访问者引导到新网站。在这种情况下，你只需要维护旧域名，然后添加一个带有页面重定向功能的页面，这样任何访问你旧域名的人都会被带到你的新网站。
 
@@ -4153,7 +4003,7 @@ function showLanguage(name) {
 客户端页面重定向可以在 JavaScript 中轻松实现。要做到这一点，你只需要在代码的头部添加一行即可。这将完成重定向。让我们演示一下：
 
 ```html
-<html
+<html>
 <head>
 <script type="javascript">
 function RedirectFunction() {
@@ -4170,16 +4020,6 @@ function RedirectFunction() {
 </html>
 ```
 
-
-JavaScript 编程
-
-247
-
-</form>
-
-</body>
-</html>
-
 代码执行后将返回以下内容：
 
 点击下方的按钮进行重定向
@@ -4190,19 +4030,14 @@ JavaScript 编程
 
 在重定向到新页面之前，你可以向访问者显示消息。不过，加载新页面需要一点延迟。让我们演示如何实现这一功能：
 
-<html
+```html
+<html>
 <head>
 <script type="">
 function RedirectFunction()
 {
 window.location = "";
 }
-![](img/9481f3f28a383c4a6640042d4f3a3962_248_0.png) ![](img/9481f3f28a383c4a6640042d4f3a3962_248_1.png)
-
-JavaScript 编程
-
-248
-
 document.write('');
 setTimeout('RedirectFunction',10);
 </script>
@@ -4210,6 +4045,7 @@ setTimeout('RedirectFunction',10);
 <body>
 </body>
 </html>
+```
 
 运行代码后，你将看到以下消息：
 
@@ -4219,12 +4055,11 @@ setTimeout('RedirectFunction',10);
 
 正如我们之前提到的，页面重定向可以根据用户的浏览器进行。以下示例演示了如何实现操作：
 
-<html
+```html
+<html>
 <head>
 <script type="">
-![](img/9481f3f28a383c4a6640042d4f3a3962_249_0.png) ![](img/9481f3f28a383c4a6640042d4f3a3962_249_1.png)
-
-<var browsertype = navigator.appName;
+var browsertype = navigator.appName;
 if(browsertype == "Netscape") {
 window.location = "http://javascript.com";
 } else if (browsertype == "IE") {
@@ -4237,22 +4072,11 @@ window.location = "http://browser.com";
 <body>
 </body>
 </html>
+```
 
 用户将根据他们使用的浏览器类型被重定向。注意，我们使用了 `if` 决策语句将用户重定向到不同的页面。
 
-![](img/9481f3f28a383c4a6640042d4f3a3962_250_0.png) ![](img/9481f3f28a383c4a6640042d4f3a3962_250_1.png)
-
-JavaScript 编程
-
-250
-
-![](img/9481f3f28a383c4a6640042d4f3a3962_251_0.png) ![](img/9481f3f28a383c4a6640042d4f3a3962_251_1.png)
-
-JavaScript 编程
-
-251
-
-结论
+## 结论
 
 本指南到此结束。JavaScript 是一种非常强大的脚本语言。JavaScript 是一种解释型脚本语言。该语言通常在客户端执行。这使其成为 Web 开发过程中验证的最佳语言。Web 开发者使用 JavaScript 来验证 Web 表单中的电子邮件地址、电话号码和其他信息的有效性。
 
@@ -4262,29 +4086,4 @@ JavaScript 改变了工作方式。最初，在填写表单后，必须将其提
 - 网页加载
 - 等
 
-![](img/9481f3f28a383c4a6640042d4f3a3962_252_0.png) ![](img/9481f3f28a383c4a6640042d4f3a3962_252_1.png)
-
-JavaScript 编程
-
-252
-
-![](img/9481f3f28a383c4a6640042d4f3a3962_253_0.png) ![](img/9481f3f28a383c4a6640042d4f3a3962_253_1.png)
-
-JavaScript 编程
-
-253
-
-![](img/9481f3f28a383c4a6640042d4f3a3962_254_0.png) ![](img/9481f3f28a383c4a6640042d4f3a3962_254_1.png)
-
-JavaScript 编程
-
-254
-
-![](img/9481f3f28a383c4a6640042d4f3a3962_255_0.png) ![](img/9481f3f28a383c4a6640042d4f3a3962_255_1.png)
-
-JavaScript 编程
-
-255
-
-更多信息可以在 www.testing.com 获取 美国制造 
-
+更多信息可以在 `www.testing.com` 获取 美国制造

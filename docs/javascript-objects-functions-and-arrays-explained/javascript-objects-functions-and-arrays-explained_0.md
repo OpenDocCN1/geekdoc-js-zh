@@ -1,33 +1,33 @@
+
 # JavaScript 对象、函数与数组详解
-
-
 
 ![](img/00084.jpeg)
 
-
-
 最后更新：2014 年 6 月
+
 小更新：2015 年 1 月
 
 最后更新：2014 年 6 月
 
-为您的电脑下载亚马逊免费阅读器应用：[Kindle 阅读器应用](http://www.amazon.com/gp/feature.html?ie=UTF8&docId=1000493771)。 
+为您的电脑下载亚马逊免费阅读器应用：[Kindle 阅读器应用](http://www.amazon.com/gp/feature.html?ie=UTF8&docId=1000493771)。
+
 在 [亚马逊](http://www.amazon.com/Tony-de-Araujo/e/B00D7V08WY/) 上查看作者个人简介。
 
 “卓越不是一种技能，而是一种态度。”
+
 -- 索伦·克尔凯郭尔 (Soren Kierkegaard)
 
 向所有我学习过的老师、作者和同学们表示诚挚的感谢。
-向我世界各地的家人和朋友表示衷心的感谢！
 
+向我世界各地的家人和朋友表示衷心的感谢！
 
 # 前言
 
-即使关于 JavaScript 对象的文献已经丰富且读者可以轻松获得，这本书仍然填补了空白。`JavaScript Objects Functions and Arrays Explained` 挑战了教学语法的书籍与涵盖语言特定实现的书籍之间的真空空白。这种全面的方法重新审视了 JavaScript 对象的基础，而没有要求任何人记忆在 JavaScript 实现真实世界中很少使用的结构。它从最简单的形式到更复杂的范式对对象进行剖。它使用简单的插图，让读者专注于主题本身。尽管大多数书籍销售发生在美国，但这本书也使用国际英语编写，任何地道的表达都带有指向合适解释的链接。
+即使关于 JavaScript 对象的文献已经丰富且读者可以轻松获得，这本书仍然填补了空白。《JavaScript Objects Functions and Arrays Explained》挑战了教学语法的书籍与涵盖语言特定实现的书籍之间的真空空白。这种全面的方法重新审视了 JavaScript 对象的基础，而没有要求任何人记忆在 JavaScript 实现真实世界中很少使用的结构。它从最简单的形式到更复杂的范式对对象进行剖析。它使用简单的插图，让读者专注于主题本身。尽管大多数书籍销售发生在美国，但这本书也使用国际英语编写，任何地道的表达都带有指向合适解释的链接。
 
-`JavaScript Objects Functions and Arrays Explained` 关乎概念，而不是关于奇特脚本的实现，那些脚本可能会让学生在有机会理解主题背后的理念之前就失去兴趣。因为 JavaScript 是一种非常复杂的语言，作者选择了简化而非削减某些对许多读者来说可能是新的领域。一个例子是 `closures`（闭包）。作者以一种极简而有效的方式处理闭包，通过插图和简化的脚本，使概念不被代码本身的力量所淹没。
+《JavaScript Objects Functions and Arrays Explained》关乎概念，而不是关于奇特脚本的实现，那些脚本可能会让学生在有机会理解主题背后的理念之前就失去兴趣。因为 JavaScript 是一种非常复杂的语言，作者选择了简化而非削减某些对许多读者来说可能是新的领域。一个例子是 `closures`（闭包）。作者以一种极简而有效的方式处理闭包，通过插图和简化的脚本，使概念不被代码本身的力量所淹没。
 
-作者的意图是以他初开始学习这种语言时希望找到的方式来接触 JavaScript。这本书不是为非常初学者准备的，因为它没有涵盖基础语法规则。然而，`如果你以前在其他地方接触过基础知识`，那么你在理解书面材料将不会有任何问题。另一方面，如果你来自不同的语言或需要复习，`对呈现的脚本总会有逐行的解释，`。
+作者的意图是以他初开始学习这种语言时希望找到的方式来接触 JavaScript。这本书不是为非常初学者准备的，因为它没有涵盖基础语法规则。然而，`如果你以前在其他地方接触过基础知识`，那么你在理解书面材料将不会有任何问题。另一方面，如果你来自不同的语言或需要复习，`对呈现的脚本总会有逐行的解释`。
 
 对于初级初学者或如果你需要复习，在尝试阅读这本书之前，请参考以下电子书：
 
@@ -37,7 +37,7 @@
 
 这本书不仅仅是为`新`开发者编写的。它也是为那些已经参与 JavaScript 但缺乏时间寻找关于 JavaScript 为什么这样运行的详细解释的人准备的。这本书是作者数百小时研究和实验室测试的成果，旨在给每位读者提供`一些`值得借鉴的内容。
 
-`JavaScript Objects Functions and Arrays Explained` 将为你提供进入更复杂书籍所需的基础：它将开启许多理解之门，而不会冒犯任何人的智。
+《JavaScript Objects Functions and Arrays Explained》将为你提供进入更复杂书籍所需的基础：它将开启许多理解之门，而不会冒犯任何人的智。
 
 **欢迎阅读《JavaScript Objects Functions and Arrays Explained》第二版。**
 
@@ -45,7 +45,7 @@
 
 亲爱的读者：
 
-感谢选择阅读 `JavaScript Objects Functions and Arrays Explained`。在有这么多优秀书籍的情况下，感到被欢迎进入你的内心世界是一份真正的荣誉，也是一种谦卑的体验，我将在写作中努力，让你的阅读物有所值。
+感谢选择阅读《JavaScript Objects Functions and Arrays Explained》。在有这么多优秀书籍的情况下，感到被欢迎进入你的内心世界是一份真正的荣誉，也是一种谦卑的体验，我将在写作中努力，让你的阅读物有所值。
 
 这本书采用的是实践型（hands-on）方法。理论与实验将相结合，以对概念产生充分的理解。你可能决定快速阅读材料，或仅将其作为参考。然而，这本书也可以被`执行`。我建议先采取最后一种方法，之后再随机阅读。
 
@@ -75,13 +75,10 @@
 
 除此之外，作者确认材料是实时的且符合他的书籍目标。
 
-
-
-
-
 在书中，作者使用了 Google Chrome 的 JavaScript 控制台，以及 `Opera` 和 `Epic`。
 
 在浏览器中，我们可以通过点击访问控制台：
+
 - Windows 用户使用 `CTRL+SHIFT+j`
 - Mac 用户使用 `CMD+OPT+j`
 
@@ -157,9 +154,6 @@ JavaScript 是一种**基于原型的**面向对象语言。它不是一种基�
 
 **Null** 另一方面通常是*对象*的*占位符*，它在 JavaScript 中被认为是基本类型是因为早期 ECMAScript 标准的一个错误。由于历史原因，它仍然是一个基本类型。它也恰好只有*一个*值，*null*。在上一张图中可以说变量 ***y*** 的值为 null。值为 *null* 的变量最终会从内存中擦除（稍后会详细介绍）。
 
-
-
-
 `Boolean` 类型表示一个逻辑实体，它具有`两个`值，即 `true` 和 `false`。
 
 `String` 原始类型非常特殊！通常在其他语言中，字符串被视为`引用类型`，但在 JavaScript 中，字符串是`原始（Primitive）`类型。
@@ -202,31 +196,29 @@ var tony = new Object();
 
 **B) 原型（Prototype）** – 另一个继承属性是 `Prototype`，它是一个内置接口。`Prototype` 充当对象从父对象继承属性和方法的`脐带`或管道。“Protos”或父级是源，当前对象从链中上方某处的另一个对象那里继承属性/方法。该源。这种链接的有用用性超过了当前对象本身，因为较低层级的其他对象也可能从它们的祖父对象继承特征。和构造函数一样，原型链链接仅用于检索。它对更新原型没有影响。这意味着当前对象中的任何更改都不会改变其原型或父级源。我们也可以将原型视为对象被授权使用的所有方法的列表。该对象的每个新实例都会继承这个列表。我们稍后将对原型进行一些实验工作。
 
-**![](img/00002.jpeg)**
+![](img/00002.jpeg)
+
 图 2
 
 不要从`继承`属性和方法的角度来考虑 JavaScript。要从`接口`的角度来考虑它。某些对象拥有方法。这些方法可以与管道下游的其他对象建立接口，其他对象可以使用它们来创建自己的功能，这些功能可能与父对象相似，也可能不相似。
 
-### 2- 对象方法
+### 2. 对象方法
 
 至于`继承的方法`（我们的示例对象 `tony`），它“通过指向”从其父对象“Object”对象继承`方法`。
 
 （不需要记忆。我们将在过程中自然地涵盖这个主题。只需理解即可。）
 
-**a) hasOwnProperty**–（将 `hasOwnProperty` 看作一个问题，JavaScript 提供结果作为答案）。此方法`不`检查继承链的`向上`或`向下`。它只验证问题对象是否创建了`自己的`属性（例如属性‘writer’：`object_name.hasOwnProperty('writer');`？ 如果它存在`并且如果`它是被创建的，而不是从链中向上继承的，则返回 true）。
+**a) `hasOwnProperty`** –（将 `hasOwnProperty` 看作一个问题，JavaScript 提供结果作为答案）。此方法`不`检查继承链的`向上`或`向下`。它只验证问题对象是否创建了`自己的`属性（例如属性‘writer’：`object_name.hasOwnProperty('writer');`？ 如果它存在`并且如果`它是被创建的，而不是从链中向上继承的，则返回 true）。
 
 `tony.hasOwnProperty("toString");` 返回什么吗？返回 `false`，因为这属于它的父对象。注意：我们很快就会在控制台上尝试这个。
 
-**b) isPrototypeOf**- `isPrototypeOf` 方法允许我们检查一个对象是否直接从另一个对象获取其`魔法`。我们需要包含“prototype”一词才能使用此方法。换句话说，“`ObjectOne.isPrototypeOf(ObjectTwo)`”将不起作用，因为 JavaScript 不知道我们对该命令指的是什么。我们需要更具体一点，并这样写：`ObjectOne.prototype.isPrototypeOf(ObjectTwo);`？ 如果 `objectOne` 是 `objectTwo` 的`原型`，则返回 true。这等于说 `objectTwo` 是从 `objectOne` 建模的。“建模”节省了内存，因为无论 `objectOne` 拥有哪些属性，在实例化 `objectTwo` 时都不会重新创建，因为它们已经存在（注意：稍后我们将看到这完全取决于我们如何编写脚本）。
+**b) `isPrototypeOf`** - `isPrototypeOf` 方法允许我们检查一个对象是否直接从另一个对象获取其`魔法`。我们需要包含“prototype”一词才能使用此方法。换句话说，“`ObjectOne.isPrototypeOf(ObjectTwo)`”将不起作用，因为 JavaScript 不知道我们对该命令指的是什么。我们需要更具体一点，并这样写：`ObjectOne.prototype.isPrototypeOf(ObjectTwo);`？ 如果 `objectOne` 是 `objectTwo` 的`原型`，则返回 true。这等于说 `objectTwo` 是从 `objectOne` 建模的。“建模”节省了内存，因为无论 `objectOne` 拥有哪些属性，在实例化 `objectTwo` 时都不会重新创建，因为它们已经存在（注意：稍后我们将看到这完全取决于我们如何编写脚本）。
 
-**c) propertyIsEnumerable** - 此方法用于确定对象中的指定属性是否`足够可见`（被列出）以便在脚本（如 for...in 循环）中进行枚举。`它实际上列出了对象自身的属性`，因为自身的属性是可以枚举的，但所有继承的属性不在 `enumerable`（可枚举）列表中，不会出现在 for...in 循环中。
+**c) `propertyIsEnumerable`** - 此方法用于确定对象中的指定属性是否`足够可见`（被列出）以便在脚本（如 for...in 循环）中进行枚举。`它实际上列出了对象自身的属性`，因为自身的属性是可以枚举的，但所有继承的属性不在 `enumerable`（可枚举）列表中，不会出现在 for...in 循环中。
 
+**d) `toString()`** - 每个对象都有一个 `toString()` 方法。当对象需要表示为文本值时（例如我们执行 `alert(object)` 或 `console.log` 它时），该方法会被调用。当需要对象的字符串表示时，会发生字符串转换。
 
-
-
-### d) `toString()` - 每个对象都有一个 `toString()` 方法。当对象需要表示为文本值时（例如我们执行 `alert(object)` 或 `console.log` 它时），该方法会被调用。当需要对象的字符串表示时，会发生字符串转换。
-
-### e) `valueOf()` - JavaScript 返回指定对象的原始值。`myobject.valueOf()` 可能返回 `Array`、`Boolean`、`Date`、`Function`、`Number`、`Object` 或 `String`。JavaScript 在内部根据需要使用此方法，但也可以刻意调用它。`Math` 和 `Error` 对象没有内置的 `valueOf` 方法。
+**e) `valueOf()`** - JavaScript 返回指定对象的原始值。`myobject.valueOf()` 可能返回 `Array`、`Boolean`、`Date`、`Function`、`Number`、`Object` 或 `String`。JavaScript 在内部根据需要使用此方法，但也可以刻意调用它。`Math` 和 `Error` 对象没有内置的 `valueOf` 方法。
 
 回到属性：
 
@@ -248,7 +240,7 @@ var tony = new Object();
 
 ## 1.4.1 实验 1
 
-是时候启动你最喜欢的 JavaScript 控制台进行一些实验工作了。在这个项目中，我将使用 Google Chrome 的控制台。在浏览器中，你可以点击快捷键 Windows 的 `CRTL+SHIFT+j`，Mac 的 `CMD+OPT+j`，或按照以下步骤操作：
+是时候启动你最喜欢的 JavaScript 控制台进行一些实验工作了。在这个项目中，我将使用 Google Chrome 的控制台。在浏览器中，你可以点击快捷键 Windows 的 `CTRL+SHIFT+j`，Mac 的 `CMD+OPT+j`，或按照以下步骤操作：
 
 a) 打开 Chrome。在右上角找到三条横线的按钮并点击。
 
@@ -260,80 +252,95 @@ b) 在“工具”部分，点击“JavaScript 控制台”。
 
 输入绿色代码，然后按 Enter 键。特别注意步骤 9..15：
 
-1- `typeof 1;`
-```
-// 结果为 “number”。当然，1 是一个数字！注意控制台是如何自动完成 `typeof` 关键字的。除非你想将其转换为字符串类型，否则永远不要给数字加引号。
-```
+1. `typeof 1;`
 
-2- `typeof x;`
-```
-// 结果为 “undefined”。x 未定义。
-```
+   ```
+   // 结果为 “number”。当然，1 是一个数字！注意控制台是如何自动完成 `typeof` 关键字的。除非你想将其转换为字符串类型，否则永远不要给数字加引号。
+   ```
 
-3- `typeof tony;`
-```
-// 结果为 “undefined”。JavaScript 不会闹着！
-```
+2. `typeof x;`
 
-4- `typeof "tony";`
-```
-// 结果为 “string”。啊，现在我们在说 JS 术语了！引号让变成了字符串。
-```
+   ```
+   // 结果为 “undefined”。x 未定义。
+   ```
 
-5- `typeof true;`
-```
-// 结果为 “boolean”。true 是保留字。JavaScript 是大小敏感的。
-```
+3. `typeof tony;`
 
-6- `typeof "true";`
-```
-// 结果为 “string” 你知道为什么吗？虽然 `true` 是保留字，但 “true” 以字符串形式存在。
-```
+   ```
+   // 结果为 “undefined”。JavaScript 不会闹着！
+   ```
 
-7- `var y = 123;`
-```
-// (回车) 然后输入： 
-```
+4. `typeof "tony";`
 
-8- `typeof y;`
-```
-// 结果为 “number”。
-```
+   ```
+   // 结果为 “string”。啊，现在我们在说 JS 术语了！引号让变成了字符串。
+   ```
 
-9- `var z = new Object;`
-```
-// O 大写。点击 (回车)，然后输入：
-```
+5. `typeof true;`
 
-10- `typeof z;`
-```
-// 结果为 “object”。
-```
+   ```
+   // 结果为 “boolean”。true 是保留字。JavaScript 是大小敏感的。
+   ```
 
-11- `var b = z;`
-```
-// (回车)，然后输入：
-```
+6. `typeof "true";`
 
-12- `typeof b;`
-```
-// 结果为 “object”。现在 z 和 b 都指向同一个对象。现在让我们重新分配 z：
-```
+   ```
+   // 结果为 “string” 你知道为什么吗？虽然 `true` 是保留字，但 “true” 以字符串形式存在。
+   ```
 
-13- `z = 123;`
-```
-// (回车) 然后输入：
-```
+7. `var y = 123;`
 
-14- `typeof z;`
-```
-// 结果现在是 “number”。z 不再指向该对象。它在栈中代表数字 123。
-```
+   ```
+   // (回车) 然后输入：
+   ```
 
-15- `typeof b;`
-```
-// 结果仍然是 “object”。由于符号 b 保持其活跃，对象仍然存在。
-```
+8. `typeof y;`
+
+   ```
+   // 结果为 “number”。
+   ```
+
+9. `var z = new Object;`
+
+   ```
+   // O 大写。点击 (回车)，然后输入：
+   ```
+
+10. `typeof z;`
+
+    ```
+    // 结果为 “object”。
+    ```
+
+11. `var b = z;`
+
+    ```
+    // (回车)，然后输入：
+    ```
+
+12. `typeof b;`
+
+    ```
+    // 结果为 “object”。现在 z 和 b 都指向同一个对象。现在让我们重新分配 z：
+    ```
+
+13. `z = 123;`
+
+    ```
+    // (回车) 然后输入：
+    ```
+
+14. `typeof z;`
+
+    ```
+    // 结果现在是 “number”。z 不再指向该对象。它在栈中代表数字 123。
+    ```
+
+15. `typeof b;`
+
+    ```
+    // 结果仍然是 “object”。由于符号 b 保持其活跃，对象仍然存在。
+    ```
 
 在练习 9 中，我们将 `z` 声明为一个新 Object（稍后会详细介绍）。注意 Object 中的 o 是大写的。所有 JavaScript 原生对象都大大写开头。
 
@@ -341,22 +348,25 @@ b) 在“工具”部分，点击“JavaScript 控制台”。
 
 让我们启动 JavaScript 控制台（我使用的是 Chrome）并编写以下代码：
 
-1- `var x = "hat";`
-```
-// 再声明一个变量：
-```
+1. `var x = "hat";`
 
-2- `var color = "green";`
+   ```
+   // 再声明一个变量：
+   ```
 
-3- `typeof x;`
-```
-// 结果为 “string”。（目前为止没什么新奇！）
-```
+2. `var color = "green";`
 
-4- `typeof color;`
-```
-// 结果为 “string”。与上面相同）。
-```
+3. `typeof x;`
+
+   ```
+   // 结果为 “string”。（目前为止没什么新奇！）
+   ```
+
+4. `typeof color;`
+
+   ```
+   // 结果为 “string”。与上面相同）。
+   ```
 
 你知道 JavaScript 中几乎一切都是对象，对吧？
 
@@ -364,16 +374,13 @@ b) 在“工具”部分，点击“JavaScript 控制台”。
 
 尝试另一个变量。但这一次让我们给它再添加几个属性。注意下一步步骤 1 中大括号后面的分号。我们正在声明一个名为 shirt 的变量。*变量声明始终以分号结束，即使在大括号之后也是如此*。分号告诉 JavaScript 语句已结束，没有更多需要声明的了：
 
-1- `var shirt={color: "white", size: "M", material: "cotton"};`
+1. `var shirt={color: "white", size: "M", material: "cotton"};`
 
-2- `typeof shirt;`
-```
-// 结果为 “object”
-```
+2. `typeof shirt;`
 
-
-
-
+   ```
+   // 结果为 “object”
+   ```
 
 注意：因为每个标签（例如“color:”）在技术上都是字符串，所以在在声明时将它们写在双引号内也是良好的习惯。使用单引号的效果相同，但请坚持使用双引号，因为一旦你接触 JSON，这种编写方式会更加严格，所以从一开始就开始习惯它吧。在将来，我会将它们写在引号内。
 
@@ -381,16 +388,19 @@ b) 在“工具”部分，点击“JavaScript 控制台”。
 
 让我们访问它的数据：
 
-3- `shirt.color;` //结果为“white”。
-4- `shirt.size;` //结果为“M”。
-5- `shirt.material;` //结果为“cotton”。
+3. `shirt.color;` //结果为“white”。
+
+4. `shirt.size;` //结果为“M”。
+
+5. `shirt.material;` //结果为“cotton”。
 
 这个变量继承了来自 **Object 模板**的**属性**和**方法**。通过使用**点语法（Dot syntax）**，我们可以访问它的值。毕竟，一个对象无非一组通过*变量名*结合在一起并指向数据的映射键值（key-value）项。
 
 我们也可以使用**中括号语法（bracket syntax）**代替**点语法**。如下：
 
-6- `shirt["color"];` //结果为“white”。
-7- `Shirt["material"];` //结果为“cotton”。
+6. `shirt["color"];` //结果为“white”。
+
+7. `Shirt["material"];` //结果为“cotton”。
 
 这取决于你试图实现什么，以及你对语法的偏好。中括号语法更通用，因为如果我们有一个要使用的数字*键*，可以使用它，而点语法不接受数字。我们将在以后更高级的实验中看到这一点。
 
@@ -408,37 +418,47 @@ b) 在“工具”部分，点击“JavaScript 控制台”。
 
 让我们继续……
 
-8- `var shelf = {"books": 20, "CDs": 57, "Magazines": 19};`
-9- `shelf.CDs;` //结果为 57。
-10- `shelf.books;` //结果为 20 现在尝试以下操作：
-11- `shelf.books = 21;` //增加了一个。
+8. `var shelf = {"books": 20, "CDs": 57, "Magazines": 19};`
+
+9. `shelf.CDs;` //结果为 57。
+
+10. `shelf.books;` //结果为 20 现在尝试以下操作：
+
+11. `shelf.books = 21;` //增加了一个。
 
 你也可以这样做：`shelf["books"] = 21;`
-12- `shelf.books;` //结果为 21。
+
+12. `shelf.books;` //结果为 21。
 
 我们刚刚通过更改 `shelf` 变量中 `books` 的值，向*架子（shelf）*增加了 1 本书。
 
 让我们测试一下：
-13- `shelf; //结果为 Object {books: 21, CDs: 57, Magazines: 19}.`
+
+13. `shelf; //结果为 Object {books: 21, CDs: 57, Magazines: 19}.`
 
 我们还可以向对象*添加*（赋值）新项：
-14- `shelf.audioBooks = 11;` 或 `shelf["audioBooks"] = 11;`
+
+14. `shelf.audioBooks = 11;` 或 `shelf["audioBooks"] = 11;`
 
 调用对象：
-15- `shelf; //结果为：Object {books: 21, CDs: 57, Magazines: 19, audioBooks: 11} `
+
+15. `shelf; //结果为：Object {books: 21, CDs: 57, Magazines: 19, audioBooks: 11} `
 
 如你所见，*变量*可以指向一组键值对数据，使该集合成为对象。然而，即使是普通字符串（尽管基本值），也从 Object 继承属性和方法，因为几乎一切都是对象。
 
 看以下示例：
 
-16- `var x = “tony”;` 然后编写以下代码：
-17- `typeof x; //结果为“string”。`
-18- `x.length; //结果为 4。（length 是从哪里来的？）`
-19- `x.substring(0,3); //结果为“ton”。`
+16. `var x = “tony”;` 然后编写以下代码：
+
+17. `typeof x; //结果为“string”。`
+
+18. `x.length; //结果为 4。（length 是从哪里来的？）`
+
+19. `x.substring(0,3); //结果为“ton”。`
 
 `0` 参数代表子字符串中**第一个包含**的字符，而 `3` 参数代表**第一个排除**的字符。我们将在后面的章节中介绍更多关于长度和子字符串的内容。
 
-**练习 18 ... 19 发生了什么？** 
+**练习 18 ... 19 发生了什么？**
 
 记得图 3 吗？似乎尽管 JavaScript 没有将“tony”移动到堆中将其转换为“官方”对象，但由于**对象包装（object wrapping）**，字符串仍然拥有可用的属性和方法。在 JavaScript 中，最好的办法就是仅仅将其看作对象。从这个角度来看代码更有意义。
 
@@ -448,16 +468,13 @@ b) 在“工具”部分，点击“JavaScript 控制台”。
 
 ## 1.5.1 实验 3
 
-1- 在简单的编辑器中编写此函数（我使用的是*记事本*）并将其复制到 JavaScript 控制台（你也可以点击**原始文件**链接复制我的文件）：
+1. 在简单的编辑器中编写此函数（我使用的是*记事本*）并将其复制到 JavaScript 控制台（你也可以点击**原始文件**链接复制我的文件）：
 
-![](img/00004.jpeg)
+   ![](img/00004.jpeg)
 
-图 4 [原始文件](http://icontemp.com/joagi/scripts/4.txt)。[ icontemp.com/joagi/scripts/4.txt ]
+   图 4 [原始文件](http://icontemp.com/joagi/scripts/4.txt)。[ icontemp.com/joagi/scripts/4.txt ]
 
 **注意分号**。这是一个**函数定义**语句，意味着我们正在定义变量 `addMe100`，它指向堆上的某个未命名函数对象，该对象反过来会向传递给它的任何*参数*加 100。
-
-
-
 
 我们通过括号内的占位符（称为 `parameter`，它实际上是一个类似数组的对象，最多可以持有 `up` 到 255 个参数）向函数传递 `data in`（这些数据在传入时被称为 `arguments`，最多可以传递高达 255 种不同的参数）。我们使用 `return` 语句从函数传出 `data out`。`return` 还充当了 `break` 的作用，一旦解释器处理了 `return`，函数内部将不再处理后续代码。`Return` 是函数处理过程中发生的最后件事。随后，函数实例会被销毁，除非有另一个指针保持其存（关于这一点稍后会详细介绍）。
 
@@ -521,7 +538,7 @@ function y( ){ };
 
 除此之外，**使用 [anonymous](http://en.wikipedia.org/wiki/Function_literal) 函数是完全可以的，而且是一种非常强大的技术**，如果实现得当（jQuery 大量使用了匿名函数）。
 
-## 1.7 第一次复
+## 1.7 第一次复习
 
 *   JavaScript 是一种 `prototype-based` 语言。
 *   就像类一样，原型（prototyping）避免了代码的重复，从而节省内存并简化了脚本。
@@ -558,8 +575,6 @@ function y( ){ };
 
 到目前，我们已经知道新对象如何从大对象（JavaScript 对象模板）继承某些方法和属性，但我们当然可以添加新的或覆盖现有的。我们将在实验课程中练习不同的技术。
 
-
-
 但等一下！如果没有指向对象的变量，那么如果该对象是从零创建的或从另一个对象实例化的，它就不存在了。那么像 `native` 对象、`built in` 对象或`the Global object`（全局对象）本身这样的持久对象又是呢？
 
 这些对象始终存在。它们处于待命状态，随时准备被另一个变量调用。**持久化库永远不会消失**。
@@ -584,10 +599,8 @@ function y( ){ };
 
 其他对象由**宿主环境**提供，该环境与 ECMAScript 接口以完成整个 JavaScript 功能。在浏览器中，其他对象来自 [DOM](http://en.wikipedia.org/wiki/Document_Object_Model)（文档环境）和 BOM（浏览器环境）。
 
-
-
-
 -   与某些其他流行语言不同，JavaScript 代码块内部没有作用域保护，除非该代码块是一个函数。这将在 EcmaScript 6 引入 `let` 后发生变化。在 JavaScript 中，函数会保护其变量，但只有当这些变量在声明时使用 `var` 前缀进行定义时才会生效。
+
 -   虽然在全局作用域中可以省略 `var` 关键字，因为该变量在作用域链中一直可用，但在声明变量时始终写下它是一个良好的习惯，以防止 JavaScript 解释器产生混淆和误读。`var 将变量绑定到其直接所属的作用域中`。在最新的 ECMAScript 5 中，省略 `var` 实际上会抛出错误。
 
 ## 1.10 Window 对象 – 简介
@@ -610,38 +623,37 @@ function y( ){ };
 
 8. 在你的文本编辑器中编写以下代码，然后粘贴到控制台（提供原始文件）：
 
-![](img/00009.jpeg)
+   ![](img/00009.jpeg)
 
-图 9 [原始文件](http://icontemp.com/joagi/scripts/9.txt)。 icontemp.com/joagi/scripts/9.txt ]
+   图 9 [原始文件](http://icontemp.com/joagi/scripts/9.txt)。 icontemp.com/joagi/scripts/9.txt ]
 
 9. `x;` // 返回 `function(){var text2 = "hello JavaScript";};`
 
 记住，`x` 指向一个恰好是函数的表达式。我们在这里没有调用该函数，因为我们没有使用括号作为后缀。
 
 10. `window.x;` // 返回 `function(){var text2 = "hello JavaScript";};`
-
 11. `text2;` // 返回 `text2 is not defined`。（`text2` 在全局作用域中不存在。）
-
 12. `window.text2;` // 返回 `undefined`。与上述相同。Window 识别函数 `x`，但不识别该函数的局部变量。
 
-1- 考虑以下循环，其中 `i` 被用作临时计数器 ([原始文件](http://icontemp.com/joagi/scripts/f1.txt))。 icontemp.com/joagi/scripts/f1.txt ]
+1. 考虑以下循环，其中 `i` 被用作临时计数器 ([原始文件](http://icontemp.com/joagi/scripts/f1.txt))。 icontemp.com/joagi/scripts/f1.txt ]
 
-```javascript
-for (var i = 0; i<5; i++){ console.log(i); }
-```
-// 返回 0,1,2,3,4
+   ```javascript
+   for (var i = 0; i<5; i++){ console.log(i); }
+   ```
 
-运行之后我们不再需要变量 `i` 了，对吧？
+   // 返回 0,1,2,3,4
 
-2- 调用 `i`：`i;` 返回 5（这不太好，它在不必要地占用内存）。
+   运行之后我们不再需要变量 `i` 了，对吧？
 
-3- 现在尝试在函数内部编写相同的循环：
+2. 调用 `i`：`i;` 返回 5（这不太好，它在不必要地占用内存）。
 
-查看 [原始文件](http://icontemp.com/joagi/scripts/f2.txt)。我们使用 `y` 代替 `i` 只是为了避免混淆。 icontemp.com/joagi/scripts/f2.txt ]
+3. 现在尝试在函数内部编写相同的循环：
 
-4- 现在，如果我们尝试调用 `y`（与之前的 `i` 一样），我们会得到一个错误：
+   查看 [原始文件](http://icontemp.com/joagi/scripts/f2.txt)。我们使用 `y` 代替 `i` 只是为了避免混淆。 icontemp.com/joagi/scripts/f2.txt ]
 
-`y;` // 返回 y is not defined.
+4. 现在，如果我们尝试调用 `y`（与之前的 `i` 一样），我们会得到一个错误：
+
+   `y;` // 返回 y is not defined.
 
 函数实际上有效地隔离并销毁了临时变量。我们仍然需要担心 `x`，因为它指向函数，但 `x` 对我们来说更直观，我们可以将其赋值为 `null`。无论哪种，这里的主意是说明函数如何将变量从全局对象隔离开（并开始考虑可能的[内存泄漏](http://en.wikipedia.org/wiki/Memory_leak)）。
 
@@ -653,28 +665,28 @@ for (var i = 0; i<5; i++){ console.log(i); }
 
 **尝试一下：**
 
-13- `window.color = "green";`
+13. `window.color = "green";`
 
 注意：这实际上是在声明一个名为 `color` 的变量。这与排除 `window` 单独声明变量是一样的，因为假设 `window` 是存在的。然而，由于我们正在理解概念，请写上 `window` 以强化背后的概念。
 
-14- `window.mood = "happy";`
-15- `window.gender = "female";`
-16- `color;` // 返回 “*green*”。
-17- `mood;` // 返回 “*happy*”。
-18- `gender;` // 返回 “*female*”。
-19- `this.color;` // 返回 green.（等等……）
+14. `window.mood = "happy";`
+15. `window.gender = "female";`
+16. `color;` // 返回 “*green*”。
+17. `mood;` // 返回 “*happy*”。
+18. `gender;` // 返回 “*female*”。
+19. `this.color;` // 返回 green.（等等……）
 
 ## 1.10.2 作用域示例
 
 让我们确保我们理解了 `scope`（全局）和 `function scope`（局部）。
 
-1- 按照如下方式声明变量，然后声明一个函数：
+1. 按照如下方式声明变量，然后声明一个函数：
 
-![](img/00010.jpeg)**
+   ![](img/00010.jpeg)**
 
-图 10 [原始文件](http://icontemp.com/joagi/scripts/16.txt)。 icontemp.com/joagi/scripts/16.txt ]
+   图 10 [原始文件](http://icontemp.com/joagi/scripts/16.txt)。 icontemp.com/joagi/scripts/16.txt ]
 
-1- 调用函数 `x`：`x();`
+1. 调用函数 `x`：`x();`
 
 它应该返回：`my is Subaru` `"the other is Ford"`
 
@@ -684,29 +696,21 @@ for (var i = 0; i<5; i++){ console.log(i); }
 
 在第 6 行，我们通过包含全局变量的完整路径来解决冲突：`window.car`。为了使用同名变量，我们需要 `window` 前缀。这种做法是为了演示目的，但在现实生活中确实会发生。这种语法为变量分配了正确的目标。
 
-2- **尝试使用 "this"** 看看会发生什么。将第 6 行的 `window` 替换为 `this`：
+2. **尝试使用 "this"** 看看会发生什么。将第 6 行的 `window` 替换为 `this`：
 
+1. 声明变量：`var x = "ninja";`
+2. 添加属性 color：`x.color = "green";` 控制台返回“green”（所以它一定接受了，对吧过）让我们测试一下看：
+3. 输入 `x.color;` 返回“undefined”。**发生了什么？** 它没有保存它。**为了保存一个*属性*，我们应该将其作为引用值发送到堆（heap）中**。让我们 true 吧……
 
+4. 声明另一个变量，但这次通过在堆中创建表达式将其赋值给对象（括号会为你完成此操作）：
 
+   `var y = { };`
 
+5. 现在尝试像之前一样添加属性：`y.color = "green";`
+6. 调用属性：`y.color;` // 控制台返回“green”。好了，*我们入门成功了！*
+7. 为了好玩，用 window 再次调用它：
 
-1- 声明变量：`var x = "ninja";`
-
-2- 添加属性 color：`x.color = "green";` 控制台返回“green”（所以它一定接受了，对吧过）让我们测试一下看：
-
-3- 输入 `x.color;` 返回“undefined”。**发生了什么？** 它没有保存它。**为了保存一个*属性*，我们应该将其作为引用值发送到堆（heap）中**。让我们 true 吧……
-
-4- 声明另一个变量，但这次通过在堆中创建表达式将其赋值给对象（括号会为你完成此操作）：
-
-`var y = { };`
-
-5- 现在尝试像之前一样添加属性：`y.color = "green";`
-
-6- 调用属性：`y.color;` // 控制台返回“green”。好了，*我们入门成功了！*
-
-7- 为了好玩，用 window 再次调用它：
-
-`window.y.color;` // 返回“green”。
+   `window.y.color;` // 返回“green”。
 
 **你认为发生了什么？**
 
@@ -718,15 +722,11 @@ for (var i = 0; i<5; i++){ console.log(i); }
 
 我们的第一个变量 `x` 包含值“**ninja**”。让我们将“ninja”赋值给第二个变量：
 
-8- 声明新变量 `z` 并将其赋值给 `x`：`var z = x;`
-
-9- 测试 `z`：`z;` // 返回“ninja”
-
-10- 现在将 `x` 改为 **samurai**：`x = "samurai";`
-
-11- 测试 `x`：`x;` // 返回“samurai”。
-
-12- 测试 `z`：`z;` // 返回“**ninja**”。
+8. 声明新变量 `z` 并将其赋值给 `x`：`var z = x;`
+9. 测试 `z`：`z;` // 返回“ninja”
+10. 现在将 `x` 改为 **samurai**：`x = "samurai";`
+11. 测试 `x`：`x;` // 返回“samurai”。
+12. 测试 `z`：`z;` // 返回“**ninja**”。
 
 **你认为发生了什么？**
 
@@ -742,23 +742,21 @@ for (var i = 0; i<5; i++){ console.log(i); }
 
 你的控制台中应该仍然有你的**对象** `y`（如果没有，请按照上面的步骤 4 和 5 重新创建一个）。
 
-13- 测试 `y` 以确保无：`y;` 它应该返回 *Object {color: "green"}*
-
-14- 将新变量 `b` 赋值给 ***y***：`var b = y;`
-
-15- 测试 `b`：`b;` // 它应该返回 *Object {color: "green"}*。
+13. 测试 `y` 以确保无：`y;` 它应该返回 *Object {color: "green"}*
+14. 将新变量 `b` 赋值给 ***y***：`var b = y;`
+15. 测试 `b`：`b;` // 它应该返回 *Object {color: "green"}*。
 
 现在 `y` 和 `b` 指向同一个对象*源***。
 
-16-为 `y` 添加一个新颜色：
+16. 为 `y` 添加一个新颜色：
 
-`y.color2 = "red";`
+    `y.color2 = "red";`
 
-17- 测试 `y`：
+17. 测试 `y`：
 
-`y;` // 返回 *Object {color: "green", color2: "red"}*
+    `y;` // 返回 *Object {color: "green", color2: "red"}*
 
-18- 测试 `b`：`b;` // 返回 *Object {color: "green", color2: "red"}*
+18. 测试 `b`：`b;` // 返回 *Object {color: "green", color2: "red"}*
 
 如所示，当我们将第二个变量赋值给引用值时，引用值并被复制。
 
@@ -768,25 +766,18 @@ for (var i = 0; i<5; i++){ console.log(i); }
 
 让我们试一下：
 
-19- 重新赋值 `y`：`y = {"color": "violet"}`
+19. 重新赋值 `y`：`y = {"color": "violet"}`
+20. 测试它：`y;` // 返回 *Object {color: "violet"}*
+21. 测试 `b`：`b;` // b 保持不变：*Object {color: "green", color2: "red"}*。
+22. 让我们练习**取消引用**对象，首先给 `b` 赋值另一个变量：
 
-20- 测试它：`y;` // 返回 *Object {color: "violet"}*
+    `var c = b;`
 
-21- 测试 `b`：`b;` // b 保持不变：*Object {color: "green", color2: "red"}*。
-
-22- 让我们练习**取消引用**对象，首先给 `b` 赋值另一个变量：
-
-`var c = b;`
-
-23- 测试 `c;` // 返回 *Object {color: "green", color2: "red"}*
-
-24- 取消引用 `b`：`b = null;`
-
-25- 测试 `c`：`c;` // 返回 *Object {color: "green", color2: "red"}*
-
-26- 取消引用 `c`：`c = null;`
-
-27- 测试 `c`：`c;` // 返回 null
+23. 测试 `c;` // 返回 *Object {color: "green", color2: "red"}*
+24. 取消引用 `b`：`b = null;`
+25. 测试 `c`：`c;` // 返回 *Object {color: "green", color2: "red"}*
+26. 取消引用 `c`：`c = null;`
+27. 测试 `c`：`c;` // 返回 null
 
 对象终于被发送到了**垃圾回收（Garbage Collection）**，它将被处置，因为栈中没有引用指向它。它将在下一次内存扫描时被删除。
 
@@ -818,10 +809,6 @@ for (var i = 0; i<5; i++){ console.log(i); }
 
 对你目前所学内容的正面评价是作者继续写作的动力，我们不胜感激。
 
-
-
-
-
 [花时间完成它](http://www.amazon.com/Tony-de-Araujo/e/B00D7V08WY)。
 
 感谢！[ amazon.com/Tony-de-Araujo/e/B00D7V08WY ]
@@ -840,7 +827,7 @@ for (var i = 0; i<5; i++){ console.log(i); }
 
 到目前为止，我们一直在讨论作为 JavaScript 原始值的字符串。字符串是`immutable`的（固定值），它们存储在栈（Stack）中。如果我们编辑一个字符串，该变量将被另一个长度较短或较长但名称相同的字符串变量替换。由于无法进行编辑，之前的字符串会被自动丢弃。
 
-然而，确实存在 `String` 对象。原型（prototype）就在那里，光彩夺丽，并带有各种功能完备，以便在需要时被调用。实际上，JavaScript 会根据需要调用 `String` 对象并在需要将字符串封装成对象。你想查找一个字符串变量的长度吗？JavaScript 回道：“没问题，先生/女士，我为您搞定了！”。
+然而，确实存在 `String` 对象。原型（prototype）就在那里，光彩夺目，并带有各种功能完备，以便在需要时被调用。实际上，JavaScript 会根据需要调用 `String` 对象并在需要将字符串封装成对象。你想查找一个字符串变量的长度吗？JavaScript 回道：“没问题，先生/女士，我为您搞定了！”。
 
 `String` 对象的所有方法和属性对原始值都是自动可用的。无需实例化对象。
 
@@ -866,7 +853,7 @@ var x = "bananas";
 
 ### a) String 属性，如 length、prototype、constructor：
 
-1- **length**
+1. **length**
 
 根据字符串长度返回一个数字：
 
@@ -874,7 +861,7 @@ var x = "bananas";
 x.length; // 返回 7
 ```
 
-2- **prototype**
+2. **prototype**
 
 原型属性用于向现有对象添加属性和方法。让我们向 `String` 对象添加一个属性，看看 “x” 是否继承了该对象（我假设你的控制台中还有上一个练习留下的 `x`），字符串的 S 大写：
 
@@ -887,6 +874,7 @@ String.prototype.feelings = "love bananas"; // 注意 string 的 S 是大写的�
 将 `prototype` 命令想象成向工具菜单中添加新东西。我们可以把这个菜单的名字称为 `prototype`，而允许添加新属性和方法的动词也是 `prototype`。
 
 **现在测试一下它：**
+
 ```javascript
 x.feelings; // 它应该返回 "love bananas"。
 ```
@@ -904,6 +892,7 @@ x.feelings; // 它应该返回 "love bananas"。
 让我们试一下：声明以下变量：`var y = "oranges";`
 
 打印它的 feelings：
+
 ```javascript
 y.feelings; // 返回 “love bananas”
 ```
@@ -915,6 +904,7 @@ y.feelings; // 返回 “love bananas”
 尝试这个：`var z = 123;`
 
 然后是这个：
+
 ```javascript
 z.feelings; // 返回 undefined
 ```
@@ -930,11 +920,13 @@ z.feelings; // 返回 undefined
 图 13 [原始文件](http://icontemp.com/joagi/scripts/18.txt)。 [ icontemp.com/joagi/scripts/18.txt ]
 
 现在让我们通过编写来调用它：
+
 ```javascript
 x.repeat( ); // 它返回 "bananasbananas"，这是调用它的占位符。
 ```
 
 再尝试：
+
 ```javascript
 y.repeat(); // 返回 "orangesoranges"。
 ```
@@ -957,10 +949,6 @@ x.__proto__ // 每边有两个下划线
 Object.getPrototypeOf(x);
 ```
 
-
-
-
-
 为了练习，请通过 `prototype` 属性为 `String` 对象添加一些属性和方法，并对其中的每一个都调用 `x`。创造性练习是巩固概念的途径。不要忘记 `x` 是 `window` 的属性。`x` 是一个继承了 `String` 方法的字符串，但它也是 `window` 的属性。我们可以使用 `dot` 作为前缀编写所有脚本，例如：`window.feelings;` 甚至可以是 `window["feelings"];`，这意味着指向 `window` 上的 `location` 地址。
 
 ### 构造函数
@@ -979,6 +967,7 @@ Object.getPrototypeOf(x);
 4. 尝试另一个方法：`x.charCodeAt(2);` // 返回 110，即 Unicode 编码点。`charCodeAt` 与 ASCII 字符编码直接对。。关于 Unicode 的信息请阅读此处：[Mozilla](https://developer.mozilla.org/en-US/docs/Web/Guide/Values,_and_literals) 或 [Wikipedia](https://en.wikipedia.org/wiki/Unicode)。
 
 更多信息，请参考以下 ECMASCRIPT 5 页面：
+
 - `15.5.4.4 String.prototype.charAt`
 - `15.5.4.5 String.prototype.charCodeAt` (`charCodeAt` 的代码范围从 0 到 65535)。
 
@@ -997,6 +986,7 @@ String.fromCharCode(110, 111, 112); // 返回 nop
 ```
 
 更多信息，请参考以下 ECMASCRIPT 5 页面：
+
 - `15.5.3.2 String.prototype.fromCharCode`
 
 ### `concat()`
@@ -1020,6 +1010,7 @@ h = h.concat(x, y); // 返回 "Read this: bananas are good for you!"
 出于性能考虑，JavaScript 中连接字符串字符串的方式是使用 `+` 或 `+=`。然而 `+` 比 `+=` 慢，因为引擎会为每两个由 `+` 分隔的字符串创建一个新的临时字符串。使用哪种方法？取决于你根据现有代码想要实现的目标。有多种选择是一件好事。
 
 更多信息，请参考以下 ECMASCRIPT 5 页面：
+
 - `15.5.4.6 String.prototype.concat`
 
 ### `indexOf()` 和 `lastIndexOf()`
@@ -1054,10 +1045,6 @@ if(aba.indexOf("brown") !== -1)
 
 这意味着，如果单词存在，则执行此操作，否则执行另一个操作。查看以下原始文件获取两种条件的示例：[raw file](http://icontemp.com/joagi/scripts/indexof.txt)。
 
-
-
-
-
 请注意这些方法是如何使用`[驼峰命名](http://en.wikipedia.org/wiki/CamelCase)`语法的。
 
 欲更多信息，请参考以下 ECMASCRIPT 5 页面：
@@ -1065,7 +1052,7 @@ if(aba.indexOf("brown") !== -1)
 - [15.5.4.7 String.prototype.indexOf](http://www.ecma-international.org/ecma-262/5.1/#sec-15.5.4.7).
 - [15.5.4.8 String.prototype.lastIndexOf](http://www.ecma-international.org/ecma-262/5.1/#sec-15.5.4.8).
 
-## 2.1.6 match()
+## 2.1.6 `match()`
 
 该方法在字符串中搜索与`regular expression`匹配的内容，并将所有匹配项作为`Array`返回。
 
@@ -1113,7 +1100,7 @@ fruits; // 返回 "Apples and bananas":
 
 - [String.prototype.match (regexp)](http://www.ecma-international.org/ecma-262/5.1/#sec-15.5.4.10).
 
-## 2.1.7 replace()
+## 2.1.7 `replace()`
 
 另一种搜索方法是 `replace()`，它在字符串中搜索特定值并返回一个`new string`，其中找到的值被第二个参数中指定的值所替换。我们也可以使用正则表达式进行搜索。
 
@@ -1128,7 +1115,7 @@ xyz = xyz.replace("delicious","tasty");
 
 - [String.prototype.replace (searchValue, replaceValue)](http://www.ecma-international.org/ecma-262/5.1/#sec-15.5.4.11).
 
-## 2.1.8 search()
+## 2.1.8 `search()`
 
 `search()` 方法在未找到匹配项时返回负一 `(-1)`，如果找到匹配项，则返回`position number`。
 
@@ -1164,13 +1151,16 @@ xyz.search(/a/i); // 返回位置 0。这里使用了带有 "i" 标志的`regula
 
 - [15.5.4.12 String.prototype.search](http://www.ecma-international.org/ecma-262/5.1/#sec-15.5.4.12).
 
-## 2.1.9 slice()
+## 2.1.9 `slice()`
 
-`slice()` 方法从字符串中提取文本并返回一个`new string`。原始字符串的文本不会受到影响，除非方法应用于自身。我们必须将此切片赋值给另一个变量以便重用。该方法最多使用两个参数。第一个参数指示从哪里开始切片，第二个参数指示排除到哪个位置。
+
+
+`slice()` 方法从字符串中提取文本并返回一个 `new string`。原始字符串的文本不会受到影响，除非方法应用于自身。我们必须将此切片赋值给另一个变量以便重用。该方法最多使用两个参数。第一个参数指示从哪里开始切片，第二个参数指示排除到哪个位置。
 
 示例脚本：
 
 1. 声明一个变量：
+
 ```javascript
 var xpt = "red,blue,black";
 ```
@@ -1182,11 +1172,12 @@ var xpt2 = xpt.slice(4,8);
 ```
 
 3. 调用 xpt2：
+
 ```javascript
 xpt2; // 返回 “blue”，包含位置 4，排除位置 8（逗号）。
 ```
 
-- **使用负数：** 另一种方式，如果在第二个参数上应用负数，它的含义会改变：现在意味着从右侧开始`excluding`指定的字符数量。逗号和空格被视为字符。
+- **使用负数：** 另一种方式，如果在第二个参数上应用负数，它的含义会改变：现在意味着从右侧开始 `excluding` 指定的字符数量。逗号和空格被视为字符。
 
 4. 示例：排除最后的颜色（包括逗号在左侧）：
 
@@ -1195,9 +1186,11 @@ var xpt3 = xpt.slice(0,-6);
 ```
 
 5. 调用变量：
+
 ```javascript
 xpt3; // 返回 “red, blue, white”。
 ```
+
 换句话说，它包含了从位置零开始的所有字符，除了最后的 6 个。如果我们在左侧输入了其他数字，就可以排除某些字符。
 
 - **仅使用一个参数：** 当使用单个正参数时，它代表包含的起始字符位置，延伸到结尾。
@@ -1221,6 +1214,7 @@ var x = xpt.slice(-3); // 返回 "black" 中的 "ack"。从右向左数 3 个字
 ```javascript
 "ecmascript".slice(1); // 返回 "cmascript"。
 ```
+
 这实际上用于移除第一个字符并将其替换为另一个大写字符，我们稍后在介绍 `toUpperCase()` 时会看到。
 
 欲更多信息，请参考以下 ECMASCRIPT 5 页面：
@@ -1237,11 +1231,11 @@ var x = xpt.slice(-3); // 返回 "black" 中的 "ack"。从右向左数 3 个字
 var abc = "green yellow red black";
 ```
 
-词汇：在计算机科学中，`delimiter`（分隔符）是标记`unit of data`开始或结束的符号（或字符序列）。在下面的示例 1|2|3 中，分隔符是管道符号 `|`。在这里，“1, 2, 3, 4”的分隔符是逗号，依此类推。
+词汇：在计算机科学中，`delimiter`（分隔符）是标记 `unit of data` 开始或结束的符号（或字符序列）。在下面的示例 1|2|3 中，分隔符是管道符号 `|`。在这里，“1, 2, 3, 4”的分隔符是逗号，依此类推。
 
-分割字符串时我们首先需要确定的是，我们将使用什么作为`delimiter`来分离`units of data`。
+分割字符串时我们首先需要确定的是，我们将使用什么作为 `delimiter` 来分离 `units of data`。
 
-在我们的情况下，我们将使用单词之间的`blank space`作为分隔符。这意味着`split()` 方法将获取两个分隔符之间的所有内容，创建一个包含切分数据的数组。
+在我们的情况下，我们将使用单词之间的 `blank space` 作为分隔符。这意味着 `split()` 方法将获取两个分隔符之间的所有内容，创建一个包含切分数据的数组。
 
 2. 让我们用空格作为分隔符将变量 `abc` 分分成单独的单词，并将其放入新变量 `abc2` 中：
 
@@ -1254,11 +1248,8 @@ var abc2 = abc.split(" ");
 ```javascript
 abc2; // 返回 ["green", "yellow", "red", "black"].
 ```
+
 空格被消除，每个单词在新的数组中变得变得独立。
-
-
-
-
 
 请记住，分隔符不会包含在新数组中。如果我们想使用 `"d"` 作为分隔符来分割 `abcdefg`，那么 `"d"` 将不会被包含，新数组将看起来像这样：`[abc, efg]`。如果你想尝试一下，请确保给 `"d"` 加上引号因为它是一个字符串。示例：
 
@@ -1266,7 +1257,7 @@ abc2; // 返回 ["green", "yellow", "red", "black"].
 var y = x.split("d");
 ```
 
-`split()` 方法可以使用`第二个参数`。第一个参数是`delimiter`（分隔不同单元的字符），第二个参数是`limiter`（限制器），表示要包含的单元数量，换句话说，就是数组的`length`。
+`split()` 方法可以使用 `第二个参数`。第一个参数是 `delimiter`（分隔不同单元的字符），第二个参数是 `limiter`（限制器），表示要包含的单元数量，换句话说，就是数组的 `length`。
 
 让我们尝试一下：
 
@@ -1280,13 +1271,13 @@ abc3; // 返回 ["green", "yellow", "red"], 它排除了“black”。
 
 6- abc3 的长度是多少？`abc3.length;` // 返回 3
 
-**注意：** 使用 `split()` 时，我们必须传递至少一个参数，即分隔符。如果我们不向 `split` 函数传递分隔符，结果仍然是一个数组，但数组中的项目数量将为一个。所以从某种意义上说，`split()` 可以作为另一种将`length`为 1 的`字符串转换为数组`的方法，但可能并不是一个很常用的方法。
+**注意：** 使用 `split()` 时，我们必须传递至少一个参数，即分隔符。如果我们不向 `split` 函数传递分隔符，结果仍然是一个数组，但数组中的项目数量将为一个。所以从某种意义上说，`split()` 可以作为另一种将 `length` 为 1 的 `字符串转换为数组` 的方法，但可能并不是一个很常用的方法。
 
 正则表达式让 `split` 变成了一个非常强大的方法。花时间学习正则表达式是一项非常值得的投入。这里关于该主题的另一个链接：[Wikipedia](http://en.wikipedia.org/wiki/Regular_expression)。
 
 **欲需更多信息，请参考以下 ECMASCRIPT 5 页面：**
 
-- [15.5.4.14 String.prototype.split](http://www.ecma-international.org/ecma-262/5.1/#sec-15.5.4.14)。
+- [15.5.4.14 String.prototype.split](http://www.ecma-international.org/ecma-262/5.1/#sec-15.5.4.14).
 
 ## 2.1.11 substr()
 
@@ -1296,7 +1287,7 @@ abc3; // 返回 ["green", "yellow", "red"], 它排除了“black”。
 
 **何时使用 slice 何时使用 substr？**
 
-当你知道第一个要`包含`的字符的位置数和第一个要`排除`的字符的位置时，使用 `slice()`。当你知道需要提取内容的字符`length`时，使用 `substr()`。无论使用哪种方法，你都需要知道要包含的第一个字符的位置。
+当你知道第一个要 `包含` 的字符的位置数和第一个要 `排除` 的字符的位置时，使用 `slice()`。当你知道需要提取内容的字符 `length` 时，使用 `substr()`。无论使用哪种方法，你都需要知道要包含的第一个字符的位置。
 
 在 `substr()` 中，`(4,9)` 意味着提取从 4 开始（从 0 开始并计算空格，这意味着第 5 个字符）并停止于 12（包含），这意味着第 13 个字符，对应于 `4 + 9`。
 
@@ -1318,7 +1309,7 @@ xpt2; // 返回 " blue, wh".
 
 如果你记得，之前用于 slice 的相同数字 `(4,9)` 给了我们“blue”。`slice 4/9` 意味着从 4 开始（0 索引）并排除 9，给了我们“blue”。现在，通过使用 `substr`，`(4, 9)` 意味着从 4 开始（0 索引）并向右扩展 9 个字符，给了我们“blue, wh”。
 
-**注意：** 在 `substr` 中，第二个数字 9 是要提取的字符数。在 `slice` 中，第二个数字 9 代表第一个要排除的`position`（位置数）。
+**注意：** 在 `substr` 中，第二个数字 9 是要提取的字符数。在 `slice` 中，第二个数字 9 代表第一个要排除的 `position`（位置数）。
 
 ![](img/00014.jpeg)
 
@@ -1332,7 +1323,7 @@ Substr 未在 ecma-262 中发布。然而它现在位于附录 B（上面的链�
 
 ## 2.1.12 substr() vs substring()
 
-这里情况变得有一点混乱，因为 `substr` 和 `substring` 的名字看起来非常相似。实际上，它们的工作方式是不同的，意义在于`substring 已经被 slice 取代`。
+这里情况变得有一点混乱，因为 `substr` 和 `substring` 的名字看起来非常相似。实际上，它们的工作方式是不同的，意义在于 `substring 已经被 slice 取代`。
 
 曾几何时，JavaScript 开发者想要实现负数作为从字符串末尾数到某个特定位置的手段。问题在于为了向后兼容，因此他们决定想出一个不同的方法名称 `slice()`，并保留了原来的名称 `substring`。
 
@@ -1342,7 +1333,7 @@ Substr 未在 ecma-262 中发布。然而它现在位于附录 B（上面的链�
 
 **欲需更多信息，请参考以下 ECMASCRIPT 5 页面：**
 
-- [15.5.4.15 String.prototype.substring](http://www.ecma-international.org/ecma-262/5.1/#sec-15.5.4.15)。
+- [15.5.4.15 String.prototype.substring](http://www.ecma-international.org/ecma-262/5.1/#sec-15.5.4.15).
 
 ## 2.1.13 toLowerCase() and toUpperCase()
 
@@ -1388,8 +1379,9 @@ p:first-letter { text-transform:capitalize; }
 
 **欲需更多信息，请参考以下 ECMASCRIPT 5 页面：**
 
-- [15.5.4.16 String.prototype.toLowerCase](http://www.ecma-international.org/ecma-262/5.1/#sec-15.5.4.16)。
-- [15.5.4.17 String.prototype.toUpperCase](http://www.ecma-international.org/ecma-262/5.1/#sec-15.5.4.17)。
+- [15.5.4.16 String.prototype.toLowerCase](http://www.ecma-international.org/ecma-262/5.1/#sec-15.5.4.16).
+
+- [15.5.4.17 String.prototype.toUpperCase](http://www.ecma-international.org/ecma-262/5.1/#sec-15.5.4.17).
 
 ## 2.1.14 trim()
 
@@ -1437,11 +1429,7 @@ str1; // 返回带有所有空白字符的原始字符串。
 
 7- 现在当你再次调用 `str1` 时，它将是完全修剪过的，周围没有空格。
 
-`trim()` 方法可能无法被如 *IE8* 及更早版本的浏览器识别。如果这是一个问题，请尝试使用 jQuery 版本。
-
-
-
-
+`trim()` 方法可能无法被如 `IE8` 及更早版本的浏览器识别。如果这是一个问题，请尝试使用 jQuery 版本。
 
 - [15.5.4.20 String.prototype.trim](http://www.ecma-international.org/ecma-262/5.1/#sec-15.5.4.20).
 
@@ -1449,7 +1437,7 @@ str1; // 返回带有所有空白字符的原始字符串。
 
 String 方法 `valueOf()` 将对象转换为原始值。这通常是自动完成的，因此我们很少手动调用它。在书中我们有时会用到它。
 
-所有包括 `String` 在内的对象都继承自对象 `Object`，并且所有对象都从 `Object.prototype` 继承属性和方法，除非它们被新对象重写。`valueOf()` 方法继承自 `Object`，但每个**内置对象**（如 `String`）都重写了它，以便能够返回一个与其类型相匹配的值。
+所有包括 `String` 在内的对象都继承自对象 `Object`，并且所有对象都从 `Object.prototype` 继承属性和方法，除非它们被新对象重写。`valueOf()` 方法继承自 `Object`，但每个 `内置对象`（如 `String`）都重写了它，以便能够返回一个与其类型相匹配的值。
 
 当我们调用 `valueOf` 时，它返回的值如下：
 
@@ -1486,7 +1474,7 @@ JavaScript 根据它当前需要使用什么以及正在处理什么类型的对
 
 ## 总结：String 对象方法
 
-在 ECMAScript 中，`Object` 构造函数能够在需要时自动将**所有原始类型装箱**为对象类型。
+在 ECMAScript 中，`Object` 构造函数能够在需要时自动将 `所有原始类型装箱` 为对象类型。
 
 这就像是，当 `Object` 看到原始值被用作对象时，它会这样对其进行*装箱*：
 
@@ -1545,9 +1533,6 @@ ijk[2] = "blue";
 a) **数组属性**如 `length`、`prototype` 和 `constructor`。
 
 `constructor` 属性在介绍 `String` 对象时已经解释过。我们将在后后的章节创建自己的对象时，在实验工作中探索*构造函数*。
-
-
-
 
 数组的 `length` 属性用法与 `String` 对象的长度完全一样。毕竟，字符串不就像数组一样，是一个有序字符的列表，对吧？然而，使用字符串有其理由，使用数组也有其理由。我们可以显示或打印字符串，但要打印数组，我们需要遍历每一个项。我们还可以更改数组的元素，但要更改字符串上的字符就要稍微复杂一些。这就是为什么有时我们需要将数组转换为字符串，而另时候又又将字符串转换为数组。你还记得我们如何使用 `split()` 将字符串转换为数组吗？相反的操作可以通过 `join()` 完成，我们将在本章介绍到 Array 方法时涵盖该方法。
 
@@ -1653,10 +1638,6 @@ a) `Array methods` 如 `concat()`, `join`, `reverse()`, `sort()`, `pop()`, `push
 
 反转 **abc**：
 
-
-
-
-
 `abc.reverse();` // 返回 ["grapes", "bananas", "apples", "blue", "white", "red"]。
 
 更多信息，请参考以下 ECMASCRIPT 5 页面：
@@ -1673,11 +1654,11 @@ a) `Array methods` 如 `concat()`, `join`, `reverse()`, `sort()`, `pop()`, `push
 
 因为 JavaScript 知道排序可能会出现问题，所以它允许在 `sort()` 括号中传递一个比较函数作为参数。这个函数是*回调函数*的一个示例。它之所以命名为回调，是因为 JS 回调你之前提供的函数。（见下方图片中的函数）。
 
-`sort()` 方法处理你的`回调函数`，该函数会比较数组中的每两个项目并做出决定。然后，它会将放在最后（last）的项目与数组上的下一个（next）项目进行比较，依此类推。
+`sort()` 方法处理你的 `回调函数`，该函数会比较数组中的每两个项目并做出决定。然后，它会将放在最后（last）的项目与数组上的下一个（next）项目进行比较，依此类推。
 
 这是选择标准：
 
-当函数比较的结果（`减法`）为`负数`时，第一个项目将位于被比较的第二个项目`之前`（不进行交换）。当结果为`零`时，两个项目`相等`，排序不会发生变化。当结果为`正`数时，`第一个`个项目将与第二个项目交换，使后者变为第一个。
+当函数比较的结果（`减法`）为 `负数` 时，第一个项目将位于被比较的第二个项目 `之前`（不进行交换）。当结果为 `零` 时，两个项目 `相等`，排序不会发生变化。当结果为 `正` 数时，`第一个` 个项目将与第二个项目交换，使后者变为第一个。
 
 2- 让我们声明一个数字数组来看它是如何运作的：
 
@@ -1689,7 +1670,7 @@ a) `Array methods` 如 `concat()`, `join`, `reverse()`, `sort()`, `pop()`, `push
 
 图 19 [原始文件](http://icontemp.com/joagi/scripts/6.txt).[ icontemp.com/joagi/scripts/6.txt ]
 
-我们将*传递*函数 `compareMe` 到 `sort()` 方法中。这将*触发* JavaScript *注意*每个数组元素在通过函数时的结果。然后将做出决定在相应的位置放置该项目。当 `num1` 低于 `num2` 时，结果为`负`。如果它们`相等`，结果为`零`。当 `num1` `高于` `num2` 时，结果为`正`。JavaScript 将根据其`内部表`进行排序。该函数与此决定无关；函数只是通过提供其计算结果来帮助做出决定。`sort()` 机制完成了其余工作。此函数就像一个过滤器，在数字排序之前给每个项目给出一个排名。
+我们将 `传递` 函数 `compareMe` 到 `sort()` 方法中。这将 `触发` JavaScript `注意` 每个数组元素在通过函数时的结果。然后将做出决定在相应的位置放置该项目。当 `num1` 低于 `num2` 时，结果为 `负`。如果它们 `相等`，结果为 `零`。当 `num1` `高于` `num2` 时，结果为 `正`。JavaScript 将根据其 `内部表` 进行排序。该函数与此决定无关；函数只是通过提供其计算结果来帮助做出决定。`sort()` 机制完成了其余工作。此函数就像一个过滤器，在数字排序之前给每个项目给出一个排名。
 
 4- 现在我们可以正确地对数字进行排序了：
 
@@ -1711,7 +1692,7 @@ a) `Array methods` 如 `concat()`, `join`, `reverse()`, `sort()`, `pop()`, `push
 
 ## 2.2.5 pop() and push()
 
-数组方法 `pop()` 会*弹出*数组的`最后一个元素`，并且它会*减少*数组长度一个，因为两者是同时发生的。
+数组方法 `pop()` 会*弹出*数组的 `最后一个元素`，并且它会*减少*数组长度一个，因为两者是同时发生的。
 
 1- 再次创建我们的水果数组 `abc`（或从此[原始文件](http://icontemp.com/joagi/scripts/225.txt）复制）：[ icontemp.com/joagi/scripts/225.txt ]
 
@@ -1735,7 +1716,7 @@ a) `Array methods` 如 `concat()`, `join`, `reverse()`, `sort()`, `pop()`, `push
 
 在某种意义上，数组的作用就像一个栈，以“后进先出”的方式限制项目的插入和移除。`pop()` 和 `push()` 对于插入和移除项目非常实用，而无需引用它们的特定位置。我们总是知道操作发生在数组的末尾。
 
-7- 我们可以 `push()`**多个项目**（手动或在循环）：
+7- 我们可以 `push()` **多个项目**（手动或在循环）：
 
 `abc.push("peaches","cherries", "apricots");`
 
@@ -1759,13 +1740,9 @@ a) `Array methods` 如 `concat()`, `join`, `reverse()`, `sort()`, `pop()`, `push
 
 ## 2.2.6 shift() and unshift()
 
-`shift()` 和 `unshift()` 方法与 `pop()` 和 `push()` 相似，但它们不是作用最后一个元素，而是作用数组的**第一个元素**。
+`shift()` 和 `unshift()` 方法与 `pop()` 和 `push()` 相似，但它们不是作用最后一个元素，而是作用数组的 **第一个元素**。
 
-将数组想象成一个[Pez](https://en.wikipedia.org/wiki/Pez_Candy)糖果分配器。当我们把糖放入分配器顶部时，我们需要将其推进去。当我们移除一颗糖果时，我们将其弹出（pop）。相反，当我们把一颗糖果放入底部时，我们需要 `unshift` 将其他的向上移动一个槽，它们的位置从原始位置移动了一个位置，因此它们失去了位置“排名”。
-
-
-
-
+将数组想象成一个 [Pez](https://en.wikipedia.org/wiki/Pez_Candy) 糖果分配器。当我们把糖放入分配器顶部时，我们需要将其推进去。当我们移除一颗糖果时，我们将其弹出（pop）。相反，当我们把一颗糖果放入底部时，我们需要 `unshift` 将其他的向上移动一个槽，它们的位置从原始位置移动了一个位置，因此它们失去了位置“排名”。
 
 这里是我们的数组示例：`var abc = ["apples", "bananas", "blue", "grapes", "red", "white"];`
 
@@ -1787,7 +1764,7 @@ a) `Array methods` 如 `concat()`, `join`, `reverse()`, `sort()`, `pop()`, `push
 
 ## 2.2.7 slice( )
 
-就像在 String 对象中一样，`slice(()` 方法从一个数组中提取项并返回一个包含提取数据的新数组。旧数组中元素的更改不会受到影响，除非该方法应用于同一个数组上。
+就像在 String 对象中一样，`slice()` 方法从一个数组中提取项并返回一个包含提取数据的新数组。旧数组中元素的更改不会受到影响，除非该方法应用于同一个数组上。
 
 此方法接受两个参数。第一个数字表示要切片的第一个元素（从 0 开始）。第二个数字表示不被切片的第一个元素。（[原始文件](http://icontemp.com/joagi/scripts/225.txt))。[ icontemp.com/joagi/scripts/225.txt ]
 
@@ -1795,7 +1772,7 @@ a) `Array methods` 如 `concat()`, `join`, `reverse()`, `sort()`, `pop()`, `push
 
 `["apples", "bananas", "blue", "grapes", "red", "white"]`
 
-2- 让我们通过基于 `abc` 创建一个新数组，但排除“red”和“white”，来应用 `slice(()`：`var abc2 = abc.slice(0,4);`
+2- 让我们通过基于 `abc` 创建一个新数组，但排除“red”和“white”，来应用 `slice()`：`var abc2 = abc.slice(0,4);`
 
 // 从 0 开始并排除位置 4 及以后。
 
@@ -1803,7 +1780,7 @@ a) `Array methods` 如 `concat()`, `join`, `reverse()`, `sort()`, `pop()`, `push
 
 **slice() 中的负数：**
 
-`slice(()()` 的功能远比我们刚刚经历的更多。通过使用负数，我们可以从数组长度的末尾（最右位置）到开始选择元素。让我们来看几个例子来解释这个令人困惑的话：
+`slice()` 的功能远比我们刚刚经历的更多。通过使用负数，我们可以从数组长度的末尾（最右位置）到开始选择元素。让我们来看几个例子来解释这个令人困惑的话：
 
 4- 我们的数组 `abc` 是
 
@@ -1897,10 +1874,6 @@ c) 替换元素模式。如果添加模式中的第二个参数是零以外的�
 
 8- 调用数组 `newArray`：`newArray;` // 返回 ["blue", "red", "green"]。
 
-
-
-
-
 数组方法 `forEach()` 随着 ECMAScript 5 引入，当时新增了九种新方法来帮助开发者创建搜索和操作数组内容的方法。这些方法执行了以前需要复杂迭代循环的操作。新增的九种方法是：`indexOf`、`lastIndexOf`、`every`、`some`、`forEach`、`map`、`filter`、`reduce`、`reduceRight`。这些方法都是我即将讨论的 `forEach()` 方法的变体。
 
 `forEach()` 对数组上的每个元素执行指定的操作。做什么由程序员编写一个函数，并作为 `forEach()` 机制的参数传入。
@@ -1921,7 +1894,7 @@ var g = ["red", "blue", "white"];
 
 图 22 [原始文件](http://icontemp.com/joagi/scripts/20.txt).[ icontemp.com/joagi/scripts/20.txt ]
 
-这里使用的函数最多可以包含 3 个参数。第一个参数（如上例所示）指向数组数据。你还记得在**原始值和引用值**（More Primitive and Reference Values）章节中，我们提到过如何通过函数参数指向引用类型值（如数组）吗？如果需要复习，请回顾该课程章节。
+这里使用的函数最多可以包含 3 个参数。第一个参数（如上例所示）指向数组数据。你还记得在 **原始值和引用值** 章节中，我们提到过如何通过函数参数指向引用类型值（如数组）吗？如果需要复习，请回顾该课程章节。
 
 这个 `forEach` “宏”为我们节省了大量的代码，例如我们以前用这种编写脚本：
 
@@ -1951,7 +1924,7 @@ for (var i = 0; i < array.length; i ++)
 
 **欲更多信息，请参考以下 ECMASCRIPT 5 页面：**
 
-· [15.4.4.18 Array.prototype.forEach](http://www.ecma-international.org/ecma-262/5.1/#sec-15.4.4.18)。
+· [15.4.4.18 Array.prototype.forEach](http://www.ecma-international.org/ecma-262/5.1/#sec-15.4.4.18).
 
 ## 2.3.2 map()
 
@@ -2013,11 +1986,9 @@ var xyz = [2,30,40,60];
 
 **欲更多信息，请参考以下 ECMASCRIPT 5 页面：**
 
-· [15.4.4.16 Array.prototype.every](http://www.ecma-international.org/ecma-262/5.1/#sec-15.4.4.16)。
+· [15.4.4.16 Array.prototype.every](http://www.ecma-international.org/ecma-262/5.1/#sec-15.4.4.16).
 
-
-
-
+## 2.3.4 some()
 
 当涉及到“全或无”的逻辑时，`some()` 方法是 `every()` 方法的相反操作。如果数组中任何一个元素符合查询条件，它将返回 `true`。与 `every()` 一样，它不会改变原始数据，只读取数据并报告结果。对相关数据的操作由我们来决定。
 
@@ -2131,137 +2102,7 @@ var qaz = [2,4,6,8];
 
 在 JavaScript 归约方法中，当存在 `initValue` 时，匿名函数的第一个参数（我称之为 `previousValue`）从 `initValue` 的值开始。函数的第二个参数（我称之为 `currentValue`）则从第一个项的值开始。
 
-如果 `initValue` 存在，函数迭代将从 `initValue` 的值开始。
-
-在 JavaScript 归约方法中，当存在 `initValue` 时，匿名函数的第一个参数（我称之为 `previousValue`）从 `initValue` 的值开始。函数的第二个参数（我称之为 `currentValue`）则从第一个项的值开始。
-
 通常情况下 `initValue` 不存在，在这种情况下，第一个参数 `previousValue` 从第一个项的值开始，第二个参数 `currentValue` 从第二个项的值开始。
-
-如果 `initValue` 存在，函数迭代将从 `initValue` 的值开始。
-
-在 JavaScript 归约方法中，当存在 `initValue` 时，匿名函数的第一个参数（我称之为 `previousValue`）从 `initValue` 的值开始。函数的第二个参数（我称之为 `currentValue`）则从第一个项的值开始。
-
-通常情况下 `initValue` 不存在，在这种情况下，第一个参数 `previousValue` 从第一个项的值开始，第二个参数 `currentValue` 从第二个项的值开始。
-
-如果 `initValue` 存在，函数迭代将从 `initValue` 的值开始。
-
-在 JavaScript 归约方法中，当存在 `initValue` 时，匿名函数的第一个参数（我称之为 `previousValue`）从 `initValue` 的值开始。函数的第二个参数（我称之为 `currentValue`）则从第一个项的值开始。
-
-（注：此处原文存在大量重复段落，已按要求根据翻译逻辑进行处理）
-
-如果 `initValue` 存在，函数迭代将从 `initValue` 的值开始。
-
-在 JavaScript 归约方法中，当存在 `initValue` 时，匿名函数的第一个参数（我称之为 `previousValue`）从 `initValue` 的值开始。函数的第二个参数（我称之为 `currentValue`）则从第一个项的值开始。
-
-通常情况下 `initValue` 不存在，在这种情况下，第一个参数 `previousValue` 从第一个项的值开始，第二个参数 `currentValue` 从第二个项的值开始。
-
-如果 `initValue` 存在，函数迭代将从 `initValue` 的值开始。
-
-在 JavaScript 归约方法中，当存在 `initValue` 时，匿名函数的第一个参数（我称之为 `previousValue`）从 `initValue` 的值开始。函数的第二个参数（我称之为 `currentValue`）则从第一个项的值开始。
-
-（注：由于原文严重重复，以下为后续核心逻辑翻译）
-
-`reduce()` 方法允许一个带有最多四个参数的回调函数：
-
-a) `previousValue` - 上一次调用回调函数时产生的值。
-
-b) `currentValue` - 当前迭代（位置）处元素的值。
-
-c) 可选的 `current index`，或正在遍历的对象的位置。你可以将索引作为参数排除在外，或者在需要影响计算过程时包含它。
-
-让我们看一个例子。我们将声明一个包含偶数的数组。然后我们将声明一个变量来使用 `reduce()` 数组中所有数字相乘的结果。
-
-1- 声明数组 `qaz`：
-
-```javascript
-var qaz = [2,4,6,8];
-```
-
-2- 声明变量 `addQAZ`并将 `qaz` 赋值给该变量，在 `reduce()` 方法的帮助下，左值和右值相乘：
-
-![](img/00030.jpeg)
-
-图 30 [原始文件](http://icontemp.com/joagi/scripts/26.txt).[ icontemp.com/joagi/scripts/26.txt ]
-
-3- 调用 `addQAZ;`
-
-```javascript
-// 返回 384.
-```
-
-在第一次迭代中，`previousValue` 是 2（第一个元素），`currentValue` 是 4。
-
-如果 `initValue` 存在，函数迭代将从 `initValue` 的值开始。
-
-在 JavaScript 归约方法中，当存在 `initValue` 时，匿名函数的第一个参数（我称之为 `previousValue`）从 `initValue` 的值开始。函数的第二个参数（我称之为 `currentValue`）则从第一个项的值开始。
-
-如果 `initValue` 存在，函数迭代将从 `initValue` 的值开始。
-
-在 JavaScript 归约方法中，当存在 `initValue` 时，匿名函数的第一个参数（我称之为 `previousValue`）从 `initValue` 的值开始。函数的第二个参数（我称之为 `currentValue`）则从第一个项的值开始。
-
-如果 `initValue` 存在，函数迭代将从 `initValue` 的值开始。
-
-在 JavaScript 归约方法中，当存在 `initValue` 时，匿名函数的第一个参数（我称之为 `previousValue`）从 `initValue` 的值开始。函数的第二个参数（我称之为 `currentValue`）则从第一个项的值开始。
-
-（注：原文重复部分已略过以确保输出不重复）
-
-在第一次迭代中，`previousValue` 是 2（第一个元素），`currentValue` 是 4。
-
-如果 `initValue` 存在，函数迭代将从 `initValue` 的值开始。
-
-在 JavaScript 归约方法中，当存在 `initValue` 时，匿名函数的第一个参数（我称之为 `previousValue`）从 `initValue` 的值开始。函数的第二个参数（我称之为 `currentValue`）则从第一个项的值开始。
-
-（注：原文重复部分已略过）
-
-在第一次迭代中，`previousValue` 是 2（第一个元素），`currentValue` 是 4。
-
-如果 `initValue` 存在，函数迭代将从 `initValue` 的值开始。
-
-在 JavaScript 归约方法中，当存在 `initValue` 时，匿名函数的第一个参数（我称之为 `previousValue`）从 `initValue` 的值开始。函数的第二个参数（我称之为 `currentValue`）则从第一个项的值开始。
-
-（注：原文重复部分已略过）
-
-在第一次迭代中，`previousValue` 是 2（第一个元素），`currentValue` 是 4。
-
-如果 `initValue` 存在，函数迭代将从 `initValue` 的值开始。
-
-在 JavaScript 归约方法中，当存在 `initValue` 时，匿名函数的第一个参数（我称之为 `previousValue`）从 `initValue` 的值开始。函数的第二个参数（我称之为 `currentValue`）则从第一个项的值开始。
-
-（注：原文重复部分已略过）
-
-在第一次迭代中，`previousValue` 是 2（第一个元素），`currentValue` 是 4。
-
-如果 `initValue` 存在，函数迭代将从 `initValue` 的值开始。
-
-在 JavaScript 归约方法中，当存在 `initValue` 时，匿名函数的第一个参数（我称之为 `previousValue`）从 `initValue` 的值开始。函数的第二个参数（我称之为 `currentValue`）则从第一个项的值开始。
-
-（注：原文重复部分已略过）
-
-在第一次迭代中，`previousValue` 是 2（第一个元素），`currentValue` 是 4。
-
-如果 `initValue` 存在，函数迭代将从 `initValue` 的值开始。
-
-在 JavaScript 归约方法中，当存在 `initValue` 时，匿名函数的第一个参数（我称之为 `previousValue`）从 `initValue` 的值开始。函数的第二个参数（我称之为 `currentValue`）则从第一个项的值开始。
-
-（注：原文重复部分已略过）
-
-在第一次迭代中，`previousValue` 是 2（第一个元素），`currentValue` 是 4。
-
-如果 `initValue` 存在，函数迭代将从 `initValue` 的值开始。
-
-在 JavaScript 归约方法中，当存在 `initValue` 时，匿名函数的第一个参数（我称之为 `previousValue`）从 `initValue` 的值开始。函数的第二个参数（我称之为 `currentValue`）则从第一个项的值开始。
-
-（注：原文重复部分已略过）
-
-在第一次迭代中，`previousValue` 是 2（第一个元素），`currentValue` 是 4。
-
-如果 `initValue` 存在，函数迭代将从 `initValue` 的值开始。
-
-在 JavaScript 归约方法中，当存在 `initValue` 时，匿名函数的第一个参数（我称之为 `previousValue`）从 `initValue` 的值开始。函数的第二个参数（我称之为 `currentValue`）则从第一个项的值开始。
-
-（注：原文重复部分已略过）
-
-（注：由于原文文本存在大量无意义重复段落，译文已根据核心逻辑精简并确保不重复输出）
 
 ## 2.4.3 reduceRight( )
 
@@ -2275,48 +2116,6 @@ var qaz = [2,4,6,8];
 
 在 JavaScript 归约方法中，当存在 `initValue` 时，匿名函数的第一个参数（我称之为 `previousValue`）从 `initValue` 的值开始。函数的第二个参数（我称之为 `currentValue`）则从第一个项的值开始。
 
-（注：原文重复部分已略过）
-
-在第一次迭代中，`previousValue` 是 2（第一个元素），`currentValue` 是 4。
-
-（注：原文重复部分已略过）
-
-在第一次迭代中，`previousValue` 是 2（第一个元素），`currentValue` 是 4。
-
-（注：此处为原文中重复逻辑的翻译内容）
-
-`reduce()` 方法允许一个带有最多四个参数的回调函数：
-
-a) `previousValue` - 上一次调用回调函数时产生的值。
-
-b) `currentValue` - 当前迭代（位置）处元素的值。
-
-c) 可选的 `current index`，或正在遍历的对象的位置。你可以将索引作为参数排除在外，或者在需要影响计算过程时包含它。
-
-让我们看一个例子。我们将声明一个包含偶数的数组。然后我们将声明一个变量来使用 `reduce()` 数组中所有数字相乘的结果。
-
-1- 声明数组 `qaz`：
-
-```javascript
-var qaz = [2,4,6,8];
-```
-
-2- 声明变量 `addQAZ`并将 `qaz` 赋值给该变量，在 `reduce()` 方法的帮助下，左值和右值相乘：
-
-![](img/00030.jpeg)
-
-图 30 [原始文件](http://icontemp.com/joagi/scripts/26.txt).[ icontemp.com/joagi/scripts/26.txt ]
-
-3- 调用 `addQAZ;`
-
-```javascript
-// 返回 384.
-```
-
-在第一次迭代中，`previousValue` 是 2（第一个元素），`currentValue` 是 4。
-
-（注：由于原文文本存在大量无意义重复段落，译文已根据核心逻辑精简并确保不重复输出）
-
 ## 2.4.4 位置方法
 
 除了*迭代*和*归约*方法外，JavaScript 还有两个新方法用于定位数组中的项：`indexOf()` 和 `lastIndexOf()`。
@@ -2324,9 +2123,6 @@ var qaz = [2,4,6,8];
 `indexOf()` 从左向右开始，而 `lastIndexOf()` 从右向左开始。
 
 它们的工作原理相同，并提供相同的引用位置位置。
-
-
-
 
 然而，由于它们只报告第一个匹配的项，如果数组中有两个相似的项，`lastIndexOf` 将找到最后一个“第一个”匹配项，并报告那一个。
 
@@ -2394,6 +2190,8 @@ var qaz = [2,4,6,8];
 
 ### 搜索标准总结。
 
+
+
 以下是 `indexOf` 和 `lastIndexOf` 的总结。这是为了以后的参考而写的。不要试图背诵这些规则，只需在日后需要实现该方法时查阅它们即可。
 
 - **indexOf() 方法的搜索标准：**
@@ -2440,13 +2238,9 @@ b) 使用负数的 `lastIndexOf()` 用于偏置第一个要搜索的元素，偏
 
 Length 是一个重要的属性，因为它通过循环遍历每个现有的参数元素来方便迭代。
 
+`arguments` 对象就像函数的局部变量。它只在函数中真正起作用。它由函数本身或函数内部的任何子函数调用（如后文所示，在应用了正确的绑定后）。你不能显式地创建 `arguments` 对象，因为它只有在函数开始执行时才会变为可用。这个 `arguments` 对象拥有一个容量可达 255 个元素的数组。
 
-
-
-
-`arguments object` 就像函数的局部变量。它只在函数中真正起作用。它由函数本身或函数内部的任何子函数调用（如后文所示，在应用了正确的绑定后）。你不能显式地创建 arguments 对象，因为它只有在函数开始执行时才会变为可用。这个 `arguments` 对象拥有一个容量可达 255 个元素的数组。
-
-参数 `parameters` 的数量在函数括号内单独声明。然而，为了向函数中传递数据，我们并不真的需要形式化`formalize`这些参数的`declaration`。这完全取决于内部代码如何请求这些输入数据。考虑以下示例：
+参数 `parameters` 的数量在函数括号内单独声明。然而，为了向函数中传递数据，我们并不真的需要形式化 `formalize` 这些参数的 `declaration`。这完全取决于内部代码如何请求这些输入数据。考虑以下示例：
 
 1- 声明一个没有参数的函数 `x` 并返回对象 `arguments`：
 
@@ -2460,7 +2254,7 @@ Length 是一个重要的属性，因为它通过循环遍历每个现有的参�
 
 2- 使用更多值调用函数：`x(1,2,3,4,5,6,7,8,9);` // 返回 `[1, 2, 3, 4, 5, 6, 7, 8, 9]`
 
-尽管 `arguments` 看起来像数组，但我们知道它不是真正的数组。然而，如果我们想要，实际上可以使用数组的 `slice()` 方法将其转换为数组（如果需要，请复习上一章：`2.2.7 slice( )`），一旦转换，我们就可以使用其数据进行进一步处理。
+尽管 `arguments` 看起来像数组，但我们知道它不是真正的数组。然而，如果我们想要，实际上可以使用数组的 `slice()` 方法将其转换为数组（如果需要，请复习上一章：`2.2.7 slice()`），一旦转换，我们就可以使用其数据进行进一步处理。
 
 作为一个例子，让我们利用之前获得的一些知识，通过数组 `reduce()` 方法来乘以所有参数。让我们试一下：
 
@@ -2542,9 +2336,9 @@ Length 是一个重要的属性，因为它通过循环遍历每个现有的参�
 
 10- 使用水果调用函数：`f("banana","apple","grape","peach");` // 返回香蕉是水果，苹果是水果，葡萄是水果，桃子是水果。
 
-总结来说，新的 arguments 对象结合函数的形式参数开启了巨大的可能性。
+总结来说，新的 `arguments` 对象结合函数的形式参数开启了巨大的可能性。
 
-当你需要特定的输入序列时使用形式参数，在需要创意脚本时使用 arguments 对象。
+当你需要特定的输入序列时使用形式参数，在需要创意脚本时使用 `arguments` 对象。
 
 最后两个练习对某些读者来说可能有点难，但请不要在这里停止。在接几个主题中一切都会变得清晰。给它机会吧。
 
@@ -2561,6 +2355,7 @@ Length 是一个重要的属性，因为它通过循环遍历每个现有的参�
 2- 我们将 `ara` 赋值给 `ujo`，然后将 `ujo` 赋值给 `tony`：
 
 `var ujo = ara;`
+
 `var tony = ujo;`
 
 *我们做了什么？*
@@ -2579,9 +2374,6 @@ Length 是一个重要的属性，因为它通过循环遍历每个现有的参�
 
 `ara = null;`
 
-
-
-
 ## 3.1.5 词法作用域 (Lexical Scope)
 
 Lexical（词法）是指“引用事物的词”或“事物的清单”。在没有闭包的语言中，局部变量的生命周期随着作用域的执行而结束。然而，在像 JavaScript 这样的语言中，只要有闭包包裹它们，变量在代码执行完成后仍然会存在。
@@ -2591,14 +2383,12 @@ Lexical（词法）是指“引用事物的词”或“事物的清单”。在�
 下图插图了一组嵌套函数及其作用域环境，也称为词法（或静态）作用域，“每一个内部层级都可以访问其外部层”：
 
 ![](img/0045.jpeg)
+
 图 45
-
-
-
 
 **这是一个核心概念：** 每当我们调用一个函数来评估一个参数时，我们都在创建一个具有全新的完整可用变量列表和其他资源的新函数。当函数返回时，这些列表会被擦除。
 
-**变量搜索：** 对于每一个不同的作用域，都会创建一个名为 `activation object`（激活对象）的列表。激活对象是所有可用变量的列表。激活对象保存在`heap`（堆）中，使其持续时间比在临时栈中更长。这就是`interpreter`（解释器）在查找变量时遍历的`chain`（链）。它从局部作用域，即脚本执行的最内层作用域开始；如果不在，就向上一步；如果那里也没有，就继续向上，直到到达该脚本作用域环境的末端。找到的第一个具有 `given name` 的变量就是要使用的那个。即使在链的其他地方有同名的变量，一旦解释器找到了第一个目标，它永远不会再去那里。
+**变量搜索：** 对于每一个不同的作用域，都会创建一个名为 `activation object`（激活对象）的列表。激活对象是所有可用变量的列表。激活对象保存在 `heap`（堆）中，使其持续时间比在临时栈中更长。这就是 `interpreter`（解释器）在查找变量时遍历的 `chain`（链）。它从局部作用域，即脚本执行的最内层作用域开始；如果不在，就向上一步；如果那里也没有，就继续向上，直到到达该脚本作用域环境的末端。找到的第一个具有 `given name` 的变量就是要使用的那个。即使在链的其他地方有同名的变量，一旦解释器找到了第一个目标，它永远不会再去那里。
 
 实际上每个函数都可以被视为一个 `closure`（闭包），因为函数可以访问全局变量，还可以访问外部函数的变量（如果有的话，父函数，而不是兄弟函数）。如果闭包不是函数及其整个作用域内所有可用变量的结合，它还能是什么呢？在不再需要时务必 `return` 你的闭包函数，以便垃圾回收工作工作并在长期来看节省内存。避免[内存泄漏](http://en.wikipedia.org/wiki/Memory_leak)。
 
@@ -2616,7 +2406,7 @@ Lexical（词法）是指“引用事物的词”或“事物的清单”。在�
 
 `inner` 函数可以访问 `outer` 函数的 `variables`（变量）和 `parameters`（参数），以及全局变量。
 
-然而，内部函数并没有`direc`t 直接访问外部函数的 `arguments object`；只有在当 `arguments` 被指定为形式参数时才可以。
+然而，内部函数并没有 `direct` 直接访问外部函数的 `arguments object`；只有在当 `arguments` 被指定为形式参数时才可以。
 
 记住这一点很重要，因为如果你没有意识到，这可能会让你困惑。
 
@@ -2640,13 +2430,13 @@ Lexical（词法）是指“引用事物的词”或“事物的清单”。在�
 
 图 47 [原始文件](http://icontemp.com/joagi/scripts/36.txt).[ icontemp.com/joagi/scripts/36.txt ]
 
-在上面的示例中需要记住的是，我们正尝试使用内部函数来访问外部函数的参数 `object`，而不是外部函数的形式参数（例如括号中的“num”）。最后一个例子（第 22 - 27 行）运行良好，是因为我们通过`将内部函数绑定`到外部函数的参数对象上（第 24 行），从内部函数内部访问了外部参数对象。
+在上面的示例中需要记住的是，我们正尝试使用内部函数来访问外部函数的参数 `object`，而不是外部函数的形式参数（例如括号中的“num”）。最后一个例子（第 22 - 27 行）运行良好，是因为我们通过 `将内部函数绑定` 到外部函数的参数对象上（第 24 行），从内部函数内部访问了外部参数对象。
 
 记住，内部函数可以访问外部函数的变量。函数的 `formal parameter`（形式参数）充当 `temporary variable`（临时变量）。然而，当我们尝试访问 `object arguments` 本身（它不被视为参数）时，我们需要指定我们说的是哪个对象，因为内部函数也有自己的参数对象，而且那个具有优先级。
 
 ## 3.1.7 “this”变量
 
-让我们揭开 `this` 关键字的另一层含义。在之前的章节中，我们提到过 `this` 的用法就像我们使用代词“whose”一样。你可以把“this”想成一个指向`上一个提到的对象`值的变量，或者说是脚本在其作用域下运行的那个。让我们启动 JS 控制台来玩玩“this”这个概念：
+让我们揭开 `this` 关键字的另一层含义。在之前的章节中，我们提到过 `this` 的用法就像我们使用代词“whose”一样。你可以把“this”想成一个指向 `上一个提到的对象` 值的变量，或者说是脚本在其作用域下运行的那个。让我们启动 JS 控制台来玩玩“this”这个概念：
 
 1- 创建一个变量 `x` 和一个打印 `x + m` 的简单函数：
 
@@ -2686,10 +2476,6 @@ Lexical（词法）是指“引用事物的词”或“事物的清单”。在�
 
 - 通过加 20 调用函数（和之前一样）：`y(20);` // 返回 10365，运行得良好。它加了 `outer x` + `m` + `inner x`。
 
-
-
-
-
 所以 `this` 只是指向其父对象的快捷方式。在大多数情况下，只要我们记住这个概念，就不会出错。使用 `this` 的动为了可移植性。它允许创建通用脚本，并根据在任何给定时间调用的主体，将其应用于不同的主体。每当我们引用一个属性（变量）而没有使用对象名作为点前缀（或用 `this` 代替）时，会被理解为该对象首先是一个本地对象，其次是脚本所属作用范围下的全局对象。
 
 至于我们示例中的 `this`，即使我们使用了内部函数（见下图），`this.x` 仍然指向全局（window）属性 `x`：
@@ -2713,6 +2499,7 @@ Lexical（词法）是指“引用事物的词”或“事物的清单”。在�
 图 53
 
 1- 函数对象构造函数的基本结构如下：
+
 ```javascript
 function JobApplication() {
   // 属性放在这里；
@@ -2734,6 +2521,7 @@ function JobApplication() {
 在这里，我们创建了一个表单，允许申请者在填写表单时向函数插入职位。我们的第一个申请者到达了，我们从申请本上撕下一张表单供他填写。我的“撕下一页”，意思是创建一个申请的新实例。
 
 3- 我们以以下方式创建申请的新实例：
+
 ```javascript
 var tonyDeAraujo = new JobApplication("writer");
 ```
@@ -2741,6 +2529,7 @@ var tonyDeAraujo = new JobApplication("writer");
 创建了一个变量 `tonyDeAraujo`，并将一个新的 `JobApplication` 赋值给该变量，通过函数参数传入了“writer”这一职位。
 
 4- 在控制台中这样测试它：
+
 ```javascript
 tonyDeAraujo; // 返回 JobApplication {position: "writer"}
 ```
@@ -2750,6 +2539,7 @@ tonyDeAraujo; // 返回 JobApplication {position: "writer"}
 **tonyDeAraujo 是一个对象吗？**
 
 5- 让我们测试 tonyDeAraujo 是否一个对象：
+
 ```javascript
 typeof tonyDeAraujo; // 返回 "object"
 ```
@@ -2763,21 +2553,25 @@ typeof tonyDeAraujo; // 返回 "object"
 注意 `this` 如何将每个属性绑定到每个参数中，这意味着无论我们在填写另一个 JobApplication 实例时引入了什么信息，它将绑定到我们通过函数参数创建的实例名称上。注意显示赋值顺序的箭头：通过 age 参数传入的数据被赋值给 `this.age`。例如，如果新对象的名称是 tonyDeAraujo 且年龄为 39，则 `this.age` 变为 `tonyDeAraujo.age = 39`。
 
 7- 确保你将上述脚本粘贴到控制台中，然后让我们再次创建 tonyDeAraujo 的申请：
+
 ```javascript
 var tonyDeAraujo = new JobApplication("writer", "Tony", "deAraujo", 99);
 ```
 
 8- 调用申请者：
+
 ```javascript
 tonyDeAraujo; // 返回 JobApplication {position: "writer", firstName: "Tony", lastName: "deAraujo", age: 99}
 ```
 
 9- 让我们引入另一个申请者：
+
 ```javascript
 var lespaul = new JobApplication("guitarist", "Les", "Paul", 99);
 ```
 
 10- 调用申请者：
+
 ```javascript
 lespaul; // 返回 JobApplication {position: "guitarist", firstName: "Les", lastName: "Paul", age: 99}
 ```
@@ -2786,12 +2580,9 @@ lespaul; // 返回 JobApplication {position: "guitarist", firstName: "Les", last
 
 现在是时候为所有申请者创建通用方法了。我们从之前对原型的实验中知道，如果我们在 `new` 函数构造函数下将方法与属性名混合在一起，我们将会重复方法，这并不是我们想要做的。我们想要创建一个方法，然后让每个申请者使用同一个方法（通过引用）。
 
+为了让这些方法在意义上是唯一的（即它们只会被创建一次，然后被所有 `JobApplication` 实例使用），我们必须通过在 `prototype property`（原型属性）菜单中列出它们来创建。我们需要在 `函数外部` 创建它们，因为它们只会被建创建 `一次`，我们不需要在每次填写新申请表时重新创建它们。它们将一直在那里，准备好供每位新申请人调用。这就像是在说：“*感谢您注册成为新申请人。您现在可以享受我们的福利。以下是您现在符合的所有福利列表*”。
 
-
-
-为了让这些方法在意义上是唯一的（即它们只会被创建一次，然后被所有 `JobApplication` 实例使用），我们必须通过在 `prototype property`（原型属性）菜单中列出它们来创建。我们需要在`函数外部`创建它们，因为它们只会被建创建`一次`，我们不需要在每次填写新申请表时重新创建它们。它们将一直在那里，准备好供每位新申请人调用。这就像是在说：“*感谢您注册成为新申请人。您现在可以享受我们的福利。以下是您现在符合的所有福利列表*”。
-
-12 让我们创建一个方法来观察它是如何工作的。创建一个名为 `introduction` 的方法，每当我们对新申请人或现有申请人*调用* `introduction` 时，它都会自动显示一条消息。
+12 让我们创建一个方法来观察它是如何工作的。创建一个名为 `introduction` 的方法，每当我们对新申请人或现有申请人 *调用* `introduction` 时，它都会自动显示一条消息。
 
 这里是我们的 `introduction` 的两个示例：
 
@@ -2802,11 +2593,12 @@ lespaul; // 返回 JobApplication {position: "guitarist", firstName: "Les", last
 13 **我们如何做到这一点？** 我们通过创建以下 `prototype`（粘贴原始文件或手动重输它）来实现：
 
 ![](img/00056.jpeg)
+
 图 56 [原始文件](http://icontemp.com/joagi/scripts/47.txt).[ icontemp.com/joagi/scripts/47.txt ]
 
 `JobApplication.prototype.introduction` 意味着向 `JobApplication` 的 `prototype list` 菜单添加一个名为 `introduction` 的方法。然后，在右侧我们定义该方法，它显然是一个函数。将原型理解为向一个已有的对象模板添加方法，这样所有实例化对象都可以立即共享此功能。
 
-14 现在，在我们的示例中，每当我们需要*介绍*一位申请人时，我们通过用*点语法****绑定***对象和方法来调用函数的 `introduction` 方法。如下所示：
+14 现在，在我们的示例中，每当我们需要 *介绍* 一位申请人时，我们通过用 *点语法* **绑定** 对象和方法来调用函数的 `introduction` 方法。如下所示：
 
 ```
 tonyDeAraujo.introduction();
@@ -2817,9 +2609,10 @@ lespaul.introduction(); // 返回
 // 我的名字是 Les Paul。我 99 岁了，正在申请吉他手职位。
 ```
 
-15 让我们再添加一个方法：一种*列出特定申请人完整申请表的方法。
+15 让我们再添加一个方法：一种 *列出特定申请人完整申请表的方法。
 
 ![](img/00057.jpeg)
+
 图 57 [原始文件](http://icontemp.com/joagi/scripts/48.txt).[ icontemp.com/joagi/scripts/48.txt ]
 
 16 在其中一个申请人上调用方法：`tonyDeAraujo.listApplicant();` // 返回 `Name:` Tony deAraujo, `Age` 99
@@ -2831,14 +2624,16 @@ lespaul.introduction(); // 返回
 我们现在知道“`this`”在函数中使用时是多么强大和方便了。我们创建了一个申请表，并将其用于无限数量的申请人。希望你有机会用自己的名字进行测试，并添加了一些其他可能性。如果没有的话，请这样做以进行更多练习。练习是学习的关键。让我们回顾一些关键点：
 
 - **你 true 如何向对象原型声明一个新方法吗？** `objectName.prototype.methodName =`
-- 方法由一个或多个函数组成。我们将“`this`”附加到变量而不是对象名称上，以便使其具有通用性，从而可以应用于任何*实例*。
+
+- 方法由一个或多个函数组成。我们将“`this`”附加到变量而不是对象名称上，以便使其具有通用性，从而可以应用于任何 *实例*。
+
 - 虽然我们可以在函数构造函数内部创建方法原型，但我们选择将它们保持在外部，以避免每次从原始模板实例化新对象时都重复相同的方法。*让我们继续剥开这个洋葱……*
 
 ## 3.2 函数属性与方法
 
 ## 3.2.1 apply() 和 call()
 
-有时我们想要调用的对象在当前执行环境中并不是拥有我们函数的对象，由于“`this`”指的是调用时调用脚本所属的对象，它将阻止我们访问预期的目标，因为该目标不是当前指向脚本的对象。这时，`call()` 或 `apply()` 方法就变得有用了。JavaScript 库中的这两个机制允许我们从其他对象借用方法，而无需重新编写它们。这就像是从外部源**导入**到当前执行环境，并像点餐一样（这与[定食套餐](http://en.wikipedia.org/wiki/Table_d%27h%C3%B4te) 相反）。
+有时我们想要调用的对象在当前执行环境中并不是拥有我们函数的对象，由于“`this`”指的是调用时调用脚本所属的对象，它将阻止我们访问预期的目标，因为该目标不是当前指向脚本的对象。这时，`call()` 或 `apply()` 方法就变得有用了。JavaScript 库中的这两个机制允许我们从其他对象借用方法，而无需重新编写它们。这就像是从外部源 **导入** 到当前执行环境，并像点餐一样（这与 [定食套餐](http://en.wikipedia.org/wiki/Table_d%27h%C3%B4te) 相反）。
 
 我可视化 `call()` 的方式是记住 *call* 一词的含义之一，即“引用”、“或“视为”、“应用于”。`apply()` 也是如此。
 
@@ -2850,44 +2645,50 @@ lespaul.introduction(); // 返回
 
 让我们来看一个简单的示例来说明这个概念。
 
-在这个示例中，我们有两个对象以及一个*外部*方法，该方法与这两个对象没有任何引用。
+在这个示例中，我们有两个对象以及一个 *外部* 方法，该方法与这两个对象没有任何引用。
 
 我们要创建的两个对象命名为 `MailCustomer` 和 `WalkInCustomer`。
 
-我们的示例方法将命名为 `thankYouCard`，我们将用它向***所有***客户发送*感谢信*，无论他们的分类如何。
+我们的示例方法将命名为 `thankYouCard`，我们将用它向 ***所有*** 客户发送 *感谢信*，无论他们的分类如何。
 
 1- 创建 `MailCustomer` 对象：
 
 ![](img/00058.jpeg)
+
 图 58 [步骤 1-4 的原始文件](http://icontemp.com/joagi/scripts/49.txt).[ icontemp.com/joagi/scripts/49.txt ]
 
 2- 创建 `WalkInCustomer` 对象：
 
 ![](img/00059.jpeg)
+
 图 59
 
-3- 为这些客户类型的每一种**添加**一个人：
+3- 为这些客户类型的每一种 **添加** 一个人：
 
 ![](img/00060.jpeg)
+
 图 60
 
 4- 创建一个独立的 `thankYouCard` 方法：
 
 ![](img/00061.jpeg)
+
 图 61
 
-我们**没有**直接对我们的任何一个客户使用 `thankYouCard` 方法，因为“`this`”将是*undefined*：
+我们 **没有** 直接对我们的任何一个客户使用 `thankYouCard` 方法，因为 “`this`” 将是 *undefined*：
 
 ![](img/00062.jpeg)
+
 图 62
 
-但是，我们可以*使用*方法 `call()` 或 `apply()` 来绕过客户对象的‘this’，从而访问目标方法。
+但是，我们可以 *使用* 方法 `call()` 或 `apply()` 来绕过客户对象的 ‘this’，从而访问目标方法。
 
 **使用 call()**
 
 1- **使用** `call()` 为每个客户调用 *thankYouCard*：
 
 ![](img/00063.jpeg)
+
 图 63
 
 注意关键字 *mary* 是目标对象的名称。因此我们使用 call 形式 `call(this_object_name)`，或将此方法应用于 *this_object_name*。
@@ -2908,27 +2709,25 @@ thankYouCard.apply(john); // Hello, John! Thank you so much for your last purcha
 
 3- 对 **mary** 也是一样。
 
-**所示，当我们只使用一个参数时，call() 和 apply() 的作用完全相同**。上面的示例非常简单，目的是在这个主题上剥开*第一层洋葱*。
+**所示，当我们只使用一个参数时，call() 和 apply() 的作用完全相同**。上面的示例非常简单，目的是在这个主题上剥开 *第一层洋葱*。
 
 这两个方法可以接受多个参数：
 
-`call()` 接受**单个**参数。
+`call()` 接受 **单个** 参数。
 
-`apply()` 在第一个参数之后接受一个**数组**。
+`apply()` 在第一个参数之后接受一个 **数组**。
 
 我们稍将在其他脚本中使用它们。你注意到控制台实际上是如何帮助我们语法的了吗？在将代码编码到其他地方之前，在控制台上测试总是一个好主意。
 
 ## 3.2.2 为 call() 和 apply() 添加更多参数
 
-让我们通过根据收件人向问候中引入**性别**（例如**亲爱的小姐**或**亲爱的先生**）来为我们的 thankYouCard 添加更多功能：
+让我们通过根据收件人向问候中引入 **性别**（例如 **亲爱的小姐** 或 **亲爱的先生**）来为我们的 thankYouCard 添加更多功能：
 
-我们将修改 thankYouCard 以适应第二个参数，通过在函数中添加一个参数“***gender***”。请花几分钟分析脚本，然后将其粘贴到控制台：
+我们将修改 thankYouCard 以适应第二个参数，通过在函数中添加一个参数 “***gender***”。请花几分钟分析脚本，然后将其粘贴到控制台：
 
 ![](img/00064.jpeg)
+
 图 64 [原始文件](http://icontemp.com/joagi/scripts/54.txt).[ icontemp.com/joagi/scripts/54.txt ]
-
-
-
 
 ## 4- 现在我们可以用一种更正式的方式为每一位客户调用 `thankYouCard` 方法了。在我们编写下面的脚本时，请注意当前的 `call()` 函数与之前的 `call()` 函数之间的区别。第一个参数指向将要应用该方法的对象，它代表 `this`，而第二个参数应用了 `gender` 参数参数，该参数起到了占位符的作用：
 
@@ -2944,7 +2743,7 @@ thankYouCard.call(john, "Dear Mr.");
 
 “亲爱的先生，感谢您的购买！”
 
-## 5- 我们不能以相同的方式测试 `apply( ) 方法，因为如果第二个参数不是数组，它将会报错。**但是**，如果我们传入数组，它就能正常输出：
+## 5- 我们不能以相同的方式测试 `apply()` 方法，因为如果第二个参数不是数组，它将会报错。**但是**，如果我们传入数组，它就能正常输出：
 
 ```javascript
 thankYouCard.apply(mary, ["Dear Miss"]); // 返回
@@ -2958,11 +2757,11 @@ thankYouCard.apply(john, ["Dear Mr."]); // 返回
 
 “亲爱的先生，感谢您的购买！”
 
-**关于参数：** 第一个参数是目标对象，后续参数是 `this` 的属性。通过 `call( )` 或 `apply( )` 语法，我们可以为对象绑定 `this`。
+**关于参数：** 第一个参数是目标对象，后续参数是 `this` 的属性。通过 `call()` 或 `apply()` 语法，我们可以为对象绑定 `this`。
 
-### 如果我们想通过 `call( )` 来简化 `this` 会怎样？
+### 如果我们想通过 `call()` 来简化 `this` 会怎样？
 
-作为一个例子，我们可以通过调用 `call( )` 来简化 `this` 对象的脚本：
+作为一个例子，我们可以通过调用 `call()` 来简化 `this` 对象的脚本：
 
 (images/0065.jpeg)
 
@@ -2974,11 +2773,11 @@ thanks.call(mary, "Dear Miss"); // 返回
 
 “亲爱的小姐，感谢您的购买！”
 
-## 3.2 使用 `call( )` 和 `apply( )` 方法更多练习
+## 3.2 使用 `call()` 和 `apply()` 方法更多练习
 
-为了巩固理解，让我们看看更多使用 `call( )` 方法处理 `this` 占位符的例子。
+为了巩固理解，让我们看看更多使用 `call()` 方法处理 `this` 占位符的例子。
 
-1- 让我们通过 `call( )` 方法来对函数进行绑定 `this`：
+1- 让我们通过 `call()` 方法来对函数进行绑定 `this`：
 
 (images/0066.jpeg)
 
@@ -2990,7 +2789,7 @@ thanks.call(john, "Dear Mr."); // 返回
 
 “亲爱的先生，感谢您的购买！”
 
-2- 再次使用 `call( )` 传入一个 `this` 值：
+2- 再次使用 `call()` 传入一个 `this` 值：
 
 ```javascript
 show.call("Tony", 34568); // 返回
@@ -2998,7 +2797,7 @@ show.call("Tony", 34568); // 返回
 
 “Tony 有 34568 号。”
 
-3- 让我们尝试另一个类似的 `call( )` 参数：
+3- 让我们尝试另一个类似的 `call()` 参数：
 
 (images/0067.jpeg)
 
@@ -3018,7 +2817,7 @@ showLicense.call("Tony", 34568, "January 5, 2016"); // 返回
 
 “Tony 有 34568 号，于 2016 年 1 月 5 日过期。”
 
-`call( )` 方法会将第一个参数应用到 `this` 占位符（无论它在何处）。所有参数的类型都可以包括对象、字符串甚至是**函数**。
+`call()` 方法会将第一个参数应用到 `this` 占位符（无论它在何处）。所有参数的类型都可以包括对象、字符串甚至是 **函数**。
 
 在继续之前，让我们从不同的窗口来可视化 **call 函数**，以便更好地理解该主题。
 
@@ -3029,9 +2828,12 @@ showLicense.call("Tony", 34568, "January 5, 2016"); // 返回
 图 68
 
 - 第 1 到 3 行代表函数 `x`，有一个参数 `num`。
+
 - 第 5 行在参数 3 上调用函数，输出结果为 `num + 1 = 4`。
+
 - 在第 7 行，我们尝试通过 *call* 绑定 `x` 并传入 `num` 作为 3，但 JavaScript 假设 3 是第一个参数（`this`），而第二个参数为“无”。第二个参数应该是一个数字。所以我们得到了 NaN 错误。
-- 在第 9 行，我们将 `window`（函数 `x` 所在的对象）作为第一个参数，然后 3 终于被处理为 `call( )` 的第二个参数，从而变为 `num`。
+
+- 在第 9 行，我们将 `window`（函数 `x` 所在的对象）作为第一个参数，然后 3 终于被处理为 `call()` 的第二个参数，从而变为 `num`。
 
 这表明 `x(3)` 实际上是 `x.call(window, 3)` 的快捷方式。更好的是，回想我们之前的课程，更具体地说，`x(3)` 等同于：
 
@@ -3039,18 +2841,16 @@ showLicense.call("Tony", 34568, "January 5, 2016"); // 返回
 window.x.call(window, 3);
 ```
 
-
-
-
 `Math.random();` // 返回一个 0（包含）到 1（不包含）之间的随机数。它从计算机时钟获取种子。它返回 0… 0.9999。
 
-1- 在控制台中输入 `Math.random();` 并按回车后，按`方向向上` 将其调出，并反复尝试，直到你清楚它的工作原理。
+1- 在控制台中输入 `Math.random();` 并按回车后，按 `方向向上` 将其调出，并反复尝试，直到你清楚它的工作原理。
 
-由于由于 `Math.random() ` 小于 1，如果我们需要大于 1 的随机数，就需要给该方法加上一个常数。例如，如果我们加上 5，就会得到从 5（包含）到 6（不包含）的数字：
+由于由于 `Math.random()` 小于 1，如果我们需要大于 1 的随机数，就需要给该方法加上一个常数。例如，如果我们加上 5，就会得到从 5（包含）到 6（不包含）的数字：
 
 ```javascript
 Math.random() + 5;
-``` 
+```
+
  // 尝试几次。我们得到像 5.2907 等数字。
 
 假设我们想要 **1 到 10** 之间的随机数。我们将该方法的结果乘以 10 并加 1，以便从 1 开始：
@@ -3058,23 +2858,27 @@ Math.random() + 5;
 ```javascript
 Math.random() * 10 + 1;
 ```
+
  // 示例返回：7.784083819948137
 
-这引出了一个*相关话题*。在我的一次测试中，我得到了答案 10.575064114760607。这是因为 10 倍倍数加 1 使得随机输出从 1 到 10.999…。我们可以使用另一个方法去掉小数，以获得更整洁的输出：
+这引出了一个 *相关话题*。在我的一次测试中，我得到了答案 10.575064114760607。这是因为 10 倍倍数加 1 使得随机输出从 1 到 10.999…。我们可以使用另一个方法去掉小数，以获得更整洁的输出：
 
-`Math.floor()` 或 `Math.ceil()`。第一个将数字*向下*取整，第二个将它们*向上*取整。
+`Math.floor()` 或 `Math.ceil()`。第一个将数字 *向下* 取整，第二个将它们 *向上* 取整。
 
 我们如何将 `Math.floor()` 与 `Math.random()` 结合？
 
 **我们将第二个嵌套在第一个里面：** 
+
 ```javascript
 Math.floor(Math.random()*10+1);
 ```
+
  // 结果：向下取整到 1,7, 8, 4,10 等
 
 ```javascript
 Math.ceil(Math.random()*10+1);
 ```
+
  // 结果：向上取整到 2, 8, 9, 5, 11 等
 
 ## 人与机器
@@ -3086,10 +2890,12 @@ Math.ceil(Math.random()*10+1);
 图 70 [原始文件](http://icontemp.com/joagi/scripts/68.txt).[ icontemp.com/joagi/scripts/68.txt ]
 
 使用 1 到 5 之间的数字参数调用游戏几次，例如：
+
 ```javascript
 game(3);
 ```
- // 返回“人类胜利！”或“机器胜利”。
+
+ // 返回 “人类胜利！” 或 “机器胜利”。
 
 你可以通过给较小的数字积分、在人类使用最高数字时扣分、或者防止最高数字被使用超过一次等许多可能方法来改进游戏。这当然会让我们离开这个话题。
 
@@ -3097,7 +2903,7 @@ game(3);
 
 `Math.round()`。
 
-由于 `Math.floor` 总是向下取整，而 `Math.ceil` 总是向上取整，我们需要另一个方法根据*给定的值*来向上*或*向下取整。
+由于 `Math.floor` 总是向下取整，而 `Math.ceil` 总是向上取整，我们需要另一个方法根据 *给定的值* 来向上 *或* 向下取整。
 
 为此，JavaScript 有 `Math.round()`。不要与 `math.random()` 混淆。
 
@@ -3124,6 +2930,7 @@ Math.max(-5,-10);
 （记住，`apply()` 取数组作为第二个参数）：
 
 编写以下数组 `x`： 
+
 ```javascript
 var x = [3,6,9,1];
 ```
@@ -3131,13 +2938,8 @@ var x = [3,6,9,1];
 ```javascript
 Math.max.apply(null,x);
 ```
+
  // 返回 9。
-
-*(注：输入文本包含关于 Math.apply 和 Null 的大量重复块。我已根据指令处理了核心逻辑，在保持核心内容的同时优化了格式。）*
-
-
-
-
 
 `sampleDate.getMonth();` // 返回 0 - 11 的月份，0 表示 1 月。
 
@@ -3203,7 +3005,7 @@ JavaScript 日期库允许我们通过对日期进行操作、解析和格式化
 
 *   [Countdown.js](http://countdownjs.org/) - 一个简单的 JavaScript API，用于生成两个 Date 实例之间时间跨度的准确、直观的描述。
 
-*   [Moment.js](http://momentjs.com/) - 该库可以轻松地将任何给定日期转换为许多不同的格式，增加/减少日期、小时，并具有在语言环境下显示诸如“5 天后”等用户友好日期/时间的方法。
+*   [Moment.js](http://momentjs.com/) - 该库可以轻松地将任何给定日期转换为许多不同的格式，增加/减少日期、小时，并具有在语言环境下显示诸如 “5 天后” 等用户友好日期/时间的方法。
 
 *   [Cubism.js](http://square.github.io/cubism/) - 是用于 HTML 和 SVG 的 JavaScript 可视化库，用于实时显示时间序列。
 
@@ -3212,6 +3014,7 @@ JavaScript 日期库允许我们通过对日期进行操作、解析和格式化
 # 第五部分 – 战胜巨龙
 
 “伟大的成就不是出于冲动，
+
 而是一系列小事的汇聚。” *梵高*
 
 ## 5.1 作为对象的无序列表
@@ -3220,7 +3023,7 @@ JavaScript 日期库允许我们通过对日期进行操作、解析和格式化
 
 `var x = [77, 34, 23, "book"];`
 
-我们还知道在数组中，每个项目都从位置 0 开始向上排序。在我们的示例中，第一个位置（0 位）包含项目 77。第四个位置（在 3 位）包含一个名为“book”的字符串。
+我们还知道在数组中，每个项目都从位置 0 开始向上排序。在我们的示例中，第一个位置（0 位）包含项目 77。第四个位置（在 3 位）包含一个名为 “book” 的字符串。
 
 我们还记得看到过类似下面的脚本：
 
@@ -3254,7 +3057,7 @@ JavaScript 日期库允许我们通过对日期进行操作、解析和格式化
 
 图 73 [原始文件](http://icontemp.com/joagi/scripts/71.txt)。[ icontemp.com/joagi/scripts/71.txt ]
 
-像上面这样创建对象的方法，在我们没有打算基于它实例化其他对象时效果良好。如果我们打算将此对象作为其他对象的原型，那么最好通过一个带参数的函数来创建对象，就像我们在子章节 3.1.8 “作为对象构造函数的函数”中创建工作申请表那样。我们将很快再次讨论它。
+像上面这样创建对象的方法，在我们没有打算基于它实例化其他对象时效果良好。如果我们打算将此对象作为其他对象的原型，那么最好通过一个带参数的函数来创建对象，就像我们在子章节 3.1.8 “作为对象构造函数的函数” 中创建工作申请表那样。我们将很快再次讨论它。
 
 创建对象有很多方法。提到所有这些方法会引起不必要的困惑，实际上也会减慢学习过程以及获得实践经验的速度。不要让自己自己负担过重。在这里，少即是多！
 
@@ -3264,29 +3067,25 @@ JavaScript 日期库允许我们通过对日期进行操作、解析和格式化
 
 3- 打印 Fruits：`y.Fruits;` // 返回 "apple"
 
-**这里有一个愚蠢的故事：** “apple”是我最喜欢的水果。然而，任何人可以在我没看到时来到我的电脑前，将我喜欢的水果改成“lemon”。
+**这里有一个愚蠢的故事：** “apple” 是我最喜欢的水果。然而，任何人可以在我没看到时来到我的电脑前，将我喜欢的水果改成 “lemon”。
 
 4-（试一试）：`y.Fruits = "lemon";`
 
 然后某一天，另一个朋友来来访我，我向他展示我的 JavaScript 对象如何记住我喜欢的水果，
 
-5- 当我输入 fruits... `y.Fruits;` // 我得到了“lemon”!!!
+5- 当我输入 fruits... `y.Fruits;` // 我得到了 “lemon”!!!
 
-
-
-
-
-由于我没有领会那个笑话（我没有幽默感！），我决定也玩一个玩笑，通过“锁定”我的*收藏夹*来确保没有人能意外更改它们。
+由于我没有领会那个笑话（我没有幽默感！），我决定也玩一个玩笑，通过 “锁定” 我的 *收藏夹* 来确保没有人能意外更改它们。
 
 ### 我该如何锁定我的属性？
 
 嗯，你还记得作用域是基于函数的吗？
 
-如果你想复习这部分，请查看章节 **3.1.5 词法**作用域。
+如果你想复习这部分，请查看章节 **3.1.5 词法作用域**。
 
 我们可以通过函数来创建对象，就像我们之前为 `JobApplication` 做的那样，并将属性作为带有 `var` 前缀的变量，这样它们就变成了私有的，对吧？
 
-6- 使用 `function` 构造函数重写对象 `y`。如果你不想重新输入，可以复制[原始文件]：
+6- 使用 `function` 构造函数重写对象 `y`。如果你不想重新输入，可以复制 [原始文件]：
 
 ![](img/00074.jpeg)
 
@@ -3296,17 +3095,17 @@ JavaScript 日期库允许我们通过对日期进行操作、解析和格式化
 
 尝试 `y.Fruits;` // 返回 *undefined*
 
-我们已经把对象的属性私有化了；对我们自己来说太私有化了！我们想要[封装](http://en.wikipedia.org/wiki/Encapsulation_%28object-oriented_programming%29)，但不想感到幽闭恐惧。
+我们已经把对象的属性私有化了；对我们自己来说太私有化了！我们想要 [封装](http://en.wikipedia.org/wiki/Encapsulation_%28object-oriented_programming%29)，但不想感到幽闭恐惧。
 
-由于我们的对象现在被**封装**了（记住这个术语），我们需要创建一个方法从外部读取我们的属性。
+由于我们的对象现在被 **封装** 了（记住这个术语），我们需要创建一个方法从外部读取我们的属性。
 
 ### 如何从函数内部暴露私有变量的数据？
 
-我们通过创建一个返回数据的`内部函数`来暴露 `var 作用域属性`。我们之前这样做过，记得吗？你还记得*闭包*和那个有两个绳子的气球吗？内部函数可以访问外部函数的数据，并可以使用它或向外部世界展示它，充当银行[柜员](http://en.wikipedia.org/wiki/Bank_teller)那样的代理。
+我们通过创建一个返回数据的 `内部函数` 来暴露 `var 作用域属性`。我们之前这样做过，记得吗？你还记得 *闭包* 和那个有两个绳子的气球吗？内部函数可以访问外部函数的数据，并可以使用它或向外部世界展示它，充当银行 [柜员](http://en.wikipedia.org/wiki/Bank_teller) 那样的代理。
 
 ### 5.1.2 访问器方法
 
-学习下面第 6 行的`内部函数`，并阅读后面的注释：
+学习下面第 6 行的 `内部函数`，并阅读后面的注释：
 
 ![](img/00075.jpeg)
 
@@ -3314,9 +3113,9 @@ JavaScript 日期库允许我们通过对日期进行操作、解析和格式化
 
 上面的脚本是有意义的。我们创建了一个任意名为 `getFruit` 的方法，它返回我们的属性 `Fruits`。然而，它存在几个问题：
 
-a) 因为 `y` 是一个构造函数，我们无法以其当前的形式调用它的方法，因为对象构造函数只是对象的**蓝图**。这让我想起了 `Date Object`。我们需要*实例化*一个对象才能使用它的方法。此外，虽然不是强制性的，但按照命名惯例，我应该将 `y` 大写，但我不想让这让我们偏离实际主题：*a* 和 *b*。
+a) 因为 `y` 是一个构造函数，我们无法以其当前的形式调用它的方法，因为对象构造函数只是对象的 **蓝图**。这让我想起了 `Date Object`。我们需要 *实例化* 一个对象才能使用它的方法。此外，虽然不是强制性的，但按照命名惯例，我应该将 `y` 大写，但我不想让这让我们偏离实际主题：*a* 和 *b*。
 
-b) 一旦我们*实例化*一个*新**对象*，我们需要确保方法 `getFruit` 被应用于它（`this` 新对象），而不是任何其他对象。因此，我们需要在构造函数内部的方法中添加 `this` 前缀作为*占位符*。例如 `this.getfruit =`。
+b) 一旦我们 *实例化* 一个 *新* **对象**，我们需要确保方法 `getFruit` 被应用于它（`this` 新对象），而不是任何其他对象。因此，我们需要在构造函数内部的方法中添加 `this` 前缀作为 *占位符*。例如 `this.getfruit =`。
 
 8- 给 `getFruit` 添加一个 `this`：
 
@@ -3324,7 +3123,7 @@ b) 一旦我们*实例化*一个*新**对象*，我们需要确保方法 `getFru
 
 图 76 [原始文件](http://icontemp.com/joagi/scripts/74.txt).[ icontemp.com/joagi/scripts/74.txt ]
 
-在上面的脚本中，我们解决了问题 (b)。为了解决问题 (a)，我们需要实例化一个*新对象*。
+在上面的脚本中，我们解决了问题 (b)。为了解决问题 (a)，我们需要实例化一个 *新对象*。
 
 9- 从 `y` 实例化一个名为 `myOb` 的对象（或任何你喜欢的名称）：`var myOb = new y();`
 
@@ -3332,41 +3131,41 @@ b) 一旦我们*实例化*一个*新**对象*，我们需要确保方法 `getFru
 
 **总结：**
 
-当我们创建一个对象时，它的属性是公开的，这使得*读取*和*写入*属性变得更容易。然而，我们可以通过用 `var` 前缀初始化来保护我们的对象属性。一旦保护了对象的属性，从它们中*获取*数据的唯一方法就是通过`内部函数`，它也被称为**访问器方法**（因为它被允许访问属性）。虽然不是强制性的，但习惯上的做法是将这些访问器方法命名为 `getSomething`（“something”是属性名），因为它们通常被称为“**getters**（get 器）”方法。*这只是一个好习惯！*
+当我们创建一个对象时，它的属性是公开的，这使得 *读取* 和 *写入* 属性变得更容易。然而，我们可以通过用 `var` 前缀初始化来保护我们的对象属性。一旦保护了对象的属性，从它们中 *获取* 数据的唯一方法就是通过 `内部函数`，它也被称为 **访问器方法**（因为它被允许访问属性）。虽然不是强制性的，但习惯上的做法是将这些访问器方法命名为 `getSomething`（“something” 是属性名），因为它们通常被称为 “**getters** (get 器)” 方法。*这只是一个好习惯！*
 
 ### 5.1.3 变更方法
 
-如果我们想修改（修改）*保护*对象内部的某个属性怎么办？
+如果我们想修改（修改） *保护* 对象内部的某个属性怎么办？
 
-在我们决定保护对象属性之前，我们能够给任何对象属性（变量）**分配**一个**新值**，例如
+在我们决定保护对象属性之前，我们能够给任何对象属性（变量） **分配** 一个 **新值**，例如
 
 `object.property = "otherValue";`
 
-现在我们的属性也被标记了 `var`，并且位于 `function` 内部（*对象属性始终位于函数内部*），我们无法从外部直接修改它们，因为它们对于外部括号语法方法是不可见的。编辑私有属性的唯一方法是通过替我们执行操作的内部方法。这是一种[代理](http://en.wikipedia.org/wiki/Surrogacy)安排：
+现在我们的属性也被标记了 `var`，并且位于 `function` 内部（*对象属性始终位于函数内部*），我们无法从外部直接修改它们，因为它们对于外部括号语法方法是不可见的。编辑私有属性的唯一方法是通过替我们执行操作的内部方法。这是一种 [代理](http://en.wikipedia.org/wiki/Surrogacy) 安排：
 
-11- **创建第二个方法**来*设置*属性 `Fruits` 为一个不同的水果，如果你想修改它的话：
+11- **创建第二个方法** 来 *设置* 属性 `Fruits` 为一个不同的水果，如果你想修改它的话：
 
 ![](img/00077.jpeg)
 
 图 77 [原始文件](http://icontemp.com/joagi/scripts/75.txt).[ icontemp.com/joagi/scripts/75.txt ]
 
-`setFruit` 方法通过参数 `myFruit`（任意名称）接收输入参数，并将属性 `Fruits` 赋值为*新值*。
+`setFruit` 方法通过参数 `myFruit`（任意名称）接收输入参数，并将属性 `Fruits` 赋值为 *新值*。
 
-12- 现在既然我们已经修改了对象，请确保**重置****之前实例化的**对象 `myOb`，因为它仍然指向旧的 `y` 对象（在我们的情况下，你可能需要再次声明它）：
+12- 现在既然我们已经修改了对象，请确保 **重置** **之前实例化的** 对象 `myOb`，因为它仍然指向旧的 `y` 对象（在我们的情况下，你可能需要再次声明它）：
 
 `myOb = new y();`
 
-13- 接下来，将 `Fruits` 值从“apple”修改为“banana”：`myOb.setFruit("banana");`
+13- 接下来，将 `Fruits` 值从 “apple” 修改为 “banana”：`myOb.setFruit("banana");`
 
 14- 打印 `myOb` 的 `Fruits` 属性：`myOb.getFruit();` // 返回 "banana"。
 
-为了确保理解，当我们向控制台调用 `myOb` 时，从对象中看到的唯一*项目*是*公开*方法。由于 `var`，所有数据都被隐藏了：`myOb;` // 返回 y {getFruit: function, setFruit: function}
+为了确保理解，当我们向控制台调用 `myOb` 时，从对象中看到的唯一 *项目* 是 *公开* 方法。由于 `var`，所有数据都被隐藏了：`myOb;` // 返回 y {getFruit: function, setFruit: function}
 
-**完成对象：***(轮到你了！)*
+**完成对象：** *(轮到你了！)*
 
-*尝试*为另外两个属性：**Vegetables**（蔬菜）和 **Grains**（谷物）添加 getter 和 setter。不要忘记重置 *myOb* 或其他创建的对象。在控制台中可能需要重新声明 *myOb*。
+*尝试* 为另外两个属性：**Vegetables** (蔬菜) 和 **Grains** (谷物) 添加 getter 和 setter。不要忘记重置 *myOb* 或其他创建的对象。在控制台中可能需要重新声明 *myOb*。
 
-当你完成或如果需要查看结果时，你可以在[这里](http://icontemp.com/joagi/scripts/75a.txt)检查我的结果。[ icontemp.com/joagi/scripts/75a.txt ]
+当你完成或如果需要查看结果时，你可以在 [这里](http://icontemp.com/joagi/scripts/75a.txt) 检查我的结果。[ icontemp.com/joagi/scripts/75a.txt ]
 
 ### 5.1.4 练习与回顾：创建一个贷款对象
 
@@ -3374,7 +3173,7 @@ b) 一旦我们*实例化*一个*新**对象*，我们需要确保方法 `getFru
 
 图 78
 
-在这次代码练习中，我们将设计一个*虚拟的*贷款申请，以回顾在本章中为止涵盖的一些关键元素。
+在这次代码练习中，我们将设计一个 *虚拟的* 贷款申请，以回顾在本章中为止涵盖的一些关键元素。
 
 对象名称：`LoanApp`。
 
@@ -3386,15 +3185,11 @@ b) 一旦我们*实例化*一个*新**对象*，我们需要确保方法 `getFru
 
 a) 人通过声明姓名、收入和所需的贷款金额填写贷款申请。这是一个简单的应用：收入只是一个数字，允许我们进行基础计算。
 
-b) 将有一个方法（`submit`）计算个人（`income`）与请求贷款（`loanAmount`）之间的比例，简单的除法。如果人的收入至少是申请贷款的两倍，贷款将*立即*批准并发送如下消息：“*恭喜！您的贷款申请*” + `lanAmount` + “ *已获批准。*”。同时，变量（`approvalStatus`）将从“*invalid（无效）”变为“*Approved（已批准）”。
+b) 将有一个方法（`submit`）计算个人（`income`）与请求贷款（`loanAmount`）之间的比例，简单的除法。如果人的收入至少是申请贷款的两倍，贷款将 *立即* 批准并发送如下消息：“*恭喜！您的贷款申请*” + `lanAmount` + “ *已获批准。*”。同时，变量（`approvalStatus`）将从 “*invalid（无效）” 变为 “*Approved（已批准）”。
 
-否则，如果人的收入低于自动资格标准，这个人将收到如下消息：“*感谢提交贷款申请。我们将很快与您联系。*”。同时，变量（`approvalStatus`）将从“*invalid（无效）”变为“*On review（审核中）*”。
+否则，如果人的收入低于自动资格标准，这个人将收到如下消息：“*感谢提交贷款申请。我们将很快与您联系。*”。同时，变量（`approvalStatus`）将从 “*invalid（无效）” 变为 “*On review（审核中）*”。
 
 目前就是这样。在我们获得一个可运行的对象后将改进脚本。
-
-
-
-
 
 你可以按照我的指示进行，或者如果你愿意，也可以按照自己的节奏来，稍后再检查结果。我会在过程中添加一些注释。最好的可能是先完整执行一遍，然后你自己重新做一遍。
 
@@ -3434,7 +3229,7 @@ if(income/loanAmount >= 2){  //这会计算收入与贷款的比例。
 }
 ```
 
-**请在此处找到** **原始文件](http://icontemp.com/joagi/scripts/pre1.txt)**。[ icontemp.com/joagi/scripts/pre1.txt ]
+**请在此处找到** **原始文件** (http://icontemp.com/joagi/scripts/pre1.txt)。[ icontemp.com/joagi/scripts/pre1.txt ]
 
 4- 将脚本粘贴到 `console` 中，通过使用 `income` 和 `loanAmount` 之间的比例来测试函数 `submit`：`submit(5000, 1000);` // 返回 "Congratulations! Your application for a loan of 1000 has been approved"。
 
@@ -3522,7 +3317,7 @@ var tony = new LoanApp("Tony",5000,1000); // 通过通过！！
 
 [ icontemp.com/joagi/scripts/pre3.txt ]
 
-12- 将新的对象构造函数粘贴到控制台，通过重新实例化来**重置**对象 `tony`：
+12- 将新的对象构造函数粘贴到控制台，通过重新实例化来 **重置** 对象 `tony`：
 
 ```javascript
 var tony = new LoanApp("Tony",5000,1000);
@@ -3534,7 +3329,7 @@ var tony = new LoanApp("Tony",5000,1000);
 tony.getApprovalStatus(); // 仍然返回 “invalid”（为什么呢？）
 ```
 
-结果是“invalid”是因为它还没有从原始状态改变。我们还没有**提交**申请。
+结果是 “invalid” 是因为它还没有从原始状态改变。我们还没有 **提交** 申请。
 
 14- 提交申请：
 
@@ -3550,7 +3345,7 @@ tony.getApprovalStatus(); // 返回 "Approved"。
 
 ***还有件事……***
 
-我们还没有测试 `submit` 方法中的“**else**”。我们需要测试它以确保它确实有效。
+我们还没有测试 `submit` 方法中的 “**else**”。我们需要测试它以确保它确实有效。
 
 16- 为 Mary 创建另一个申请，并将其命名为 `mary`。她的收入也是 5000，但她想要 3000 的更大额贷款，这将延迟她的审批：
 
@@ -3574,7 +3369,7 @@ mary.getApprovalStatus(); // 返回 "On review".
 
 ### 第 3 部分：自动评估
 
-让我们再剥开一点这个洋葱。***如果***我们想要在实例化新对象时提交申请并立即获得*状态变化*怎样？
+让我们再剥开一点这个洋葱。***如果*** 我们想要在实例化新对象时提交申请并立即获得 *状态变化* 怎样？
 
 ### 5.1.5 如何自动评估并调用方法
 
@@ -3592,7 +3387,7 @@ function () {}();
 
 右侧的最后一对括号触发函数调用自己。
 
-上面编写的函数将运行得良好。它会在程序启动时调用自己。但是，如果我们在（调用之前）将整个函数*封装*在括号中，那么在视觉上告诉另一个程序员该函数会调用自己将更显式。
+上面编写的函数将运行得良好。它会在程序启动时调用自己。但是，如果我们在（调用之前）将整个函数 *封装* 在括号中，那么在视觉上告诉另一个程序员该函数会调用自己将更显式。
 
 像这样：
 
@@ -3602,17 +3397,13 @@ function () {}();
 
 // 返回 function ( ) { }
 
-**回到**我们的 `LoanApp` 对象，我们可以在 `submit` 方法上实现这种技术。这将使得方法在我们实例化一个新的 `LoanApp` 时立即运行，它将打印出状态*消息*并更新 `approvalStatus` 私有变量。
+**回到** 我们的 `LoanApp` 对象，我们可以在 `submit` 方法上实现这种技术。这将使得方法在我们实例化一个新的 `LoanApp` 时立即运行，它将打印出状态 *消息* 并更新 `approvalStatus` 私有变量。
 
 下面的图片显示了额外的括号放在哪里，也可以获取整个脚本的原始文件：
 
 ![](img/00079.jpeg)
 
 图 79 [raw 文件](http://icontemp.com/joagi/scripts/pre4.txt)（完整）。
-
-
-
-
 
 1- 将新的对象构造函数粘贴到控制台，并通过重新实例化来重置上次练习中的对象 `tony`：
 
@@ -3628,19 +3419,19 @@ var tony = new LoanApp("Tony",5000,1000);
 tony.getApprovalStatus(); // 返回 "Approved"。
 ```
 
-恭喜你！如果你感到有些困惑，是因为我们涵盖了非常大的领域。只要你理解了正在发生什么，就可以继续下一步。如果你仍然需要修补这里的某些概念，现在复习这一章可能是一个好主意，因为现在你对所涵盖的内容有了更广泛的视角。*重复*是学习 JavaScript 的秘诀。
+恭喜你！如果你感到有些困惑，是因为我们涵盖了非常大的领域。只要你理解了正在发生什么，就可以继续下一步。如果你仍然需要修补这里的某些概念，现在复习这一章可能是一个好主意，因为现在你对所涵盖的内容有了更广泛的视角。*重复* 是学习 JavaScript 的秘诀。
 
 ## 5.1.6 为原型创建新方法
 
 如果我们想为我们的 `LoanApp` 对象添加一个新方法怎么办？
 
-我们可以进入对象内部，像我们第一次创建 `LoanApp` 时那样硬编码该方法。然而，很多时候这并不是一种方便的方法。此外，这不是一种内存高效的实现，因为正如你从之前的章节中记得的，每当我们实例化一个*新*对象时，构造函数都会复制所有数据，而对于方法来说，这完全没有必要。
+我们可以进入对象内部，像我们第一次创建 `LoanApp` 时那样硬编码该方法。然而，很多时候这并不是一种方便的方法。此外，这不是一种内存高效的实现，因为正如你从之前的章节中记得的，每当我们实例化一个 *新* 对象时，构造函数都会复制所有数据，而对于方法来说，这完全没有必要。
 
 相反，我们只需要将新实例对象指向原始方法，并在需要时使用它。
 
 那么，最佳实践是将方法作为独立的原型链接进行添加。然而，如果你倾向于将它们封装在对象内部而不是让它们分开，我们有方法可以实现这一点，一旦我们完成对正确做法的介绍，很快就会涵盖其中一种实现方式。
 
-**问题：** 根据上面关于内存效率的描述，我们为什么把 `submit` 和 `getApprovalStatus` 方法包含在 `LoanApp` 对象内部而不是外部？这难道不是坏习惯吗？是的，看起来的确是。我们之所以这样做是因为我们正将这些方法作为**getters（访问器）**来访问私有数据。我们无法通过外部方法获取私有信息。我们总是尝试编写尽可能高效的代码。目前这是我们对 `LoanApp` 所能做的。
+**问题：** 根据上面关于内存效率的描述，我们为什么把 `submit` 和 `getApprovalStatus` 方法包含在 `LoanApp` 对象内部而不是外部？这难道不是坏习惯吗？是的，看起来的确是。我们之所以这样做是因为我们正将这些方法作为 **getters（访问器）** 来访问私有数据。我们无法通过外部方法获取私有信息。我们总是尝试编写尽可能高效的代码。目前这是我们对 `LoanApp` 所能做的。
 
 但在大多数情况下，新添加的方法将是单独创建的。
 
@@ -3691,10 +3482,12 @@ tony.summary(); // 返回 "Tony is applying for a loan of 1000"。
 我们决定重用 `LoanApp` 对象以节省时间和资源，只需对新对象构造函数进行如下几处更改：
 
 *   新应用程序名称为 `LoanApp2`。
+
 *   `bankBranch` 为 `Los Angeles`。
+
 *   额外的方法是 `getBankBranch`。
 
-我们将使用一种称为对象**伪装（masquerading）**的技术。
+我们将使用一种称为对象 **伪装（masquerading）** 的技术。
 
 ![](img/00080.jpeg)
 
@@ -3710,35 +3503,37 @@ function LoanApp2(personName, income, loanAmount){
 
 2- 通过临时变量 `x` 将 `LoanApp` 的继承赋予 `LoanApp2`（我选择 `x` 是为了清楚这一点：名字并不重要，但在现实生活中这个变量应该有一个更有描述性的名称）：
 
+
+
 ```javascript
 this.x = LoanApp; // 这里 x 继承了 LoanApp 的所有内容。
 ```
 
-3-接下来选择哪些属性需要继承 `LoanApp` 的方法，使用 `x` 作为中介：
+## 接下来选择哪些属性需要继承 `LoanApp` 的方法，使用 `x` 作为中介
 
 ```javascript
 this.x(personName, income, loanAmount);
 ```
 
-继承已经建立，JavaScript 已经记录，我们不再需要这个*temp*变量 `x` 了，因为我们希望一个对象之间实现“断开”。你还记得男孩女孩手中的风筝吗？还有闭包？现在 JavaScript 知道 `loanApp2` 与 `loanApp` 的属性和方法有连接，我们可以安全地“返回”或删除 `loanApp`，并保留这些好东西供 `loanApp2` 使用。
+继承已经建立，JavaScript 已经记录，我们不再需要这个临时变量 `x` 了，因为我们希望一个对象之间实现“断开”。你还记得男孩女孩手中的风筝吗？还有闭包？现在 JavaScript 知道 `loanApp2` 与 `loanApp` 的属性和方法有连接，我们可以安全地“返回”或删除 `loanApp`，并保留这些好东西供 `loanApp2` 使用。
 
 这里我们引入了一个新关键字：`delete`。`delete` 操作符从对象中删除属性。语法是 `delete object.property`，`delete` 不影响普通变量或函数，只影响对象。
 
-4- 删除 `x`：
+## 删除 `x`
 
 ```javascript
 delete this.x;
 ```
 
-现在我们可以添加新的功能。在删除 `x` *之后* 做的它的目的是防止在我们最初引入继承时从 `loanApp1` 到 `loanApp2` 的任何覆盖：
+现在我们可以添加新的功能。在删除 `x` 之后做的它的目的是防止在我们最初引入继承时从 `loanApp1` 到 `loanApp2` 的任何覆盖。
 
-5- 添加新的分行名称：
+## 添加新的分行名称
 
 ```javascript
 var bankBranch = "Los Angeles";
 ```
 
-6- 添加一个新方法由客户端返回分行名称：
+## 添加一个新方法由客户端返回分行名称
 
 ```javascript
 this.getBankBranch = function() {
@@ -3746,7 +3541,7 @@ this.getBankBranch = function() {
 };
 ```
 
-7- 关闭对象 `LoanApp2`：
+## 关闭对象 `LoanApp2`
 
 ```javascript
 } // （参见图片和原始文件链接）。
@@ -3758,42 +3553,45 @@ this.getBankBranch = function() {
 
 让我们测试我们的对象继承：
 
-8- 将原始的 `LoanApp` 粘贴到控制台（[raw file](http://icontemp.com/joagi/scripts/pre4.txt)）。[ icontemp.com/joagi/scripts/pre4.txt ]
+## 将原始的 `LoanApp` 粘贴到控制台
 
-9- 粘贴 `summary` 原型方法（供以后使用）。[raw file](http://icontemp.com/joagi/scripts/pre5.txt)）。[ icontemp.com/joagi/scripts/pre5.txt ]
+[raw file](http://icontemp.com/joagi/scripts/pre4.txt)。[ icontemp.com/joagi/scripts/pre4.txt ]
 
-10- 将新对象 `LoanApp2` 粘贴到控制台（[raw file](http://icontemp.com/joagi/scripts/pre6.txt)）。[ icontemp.com/joagi/scripts/pre6.txt ]
+## 粘贴 `summary` 原型方法（供以后使用）
 
+[raw file](http://icontemp.com/joagi/scripts/pre5.txt)。[ icontemp.com/joagi/scripts/pre5.txt ]
 
+## 将新对象 `LoanApp2` 粘贴到控制台
 
+[raw file](http://icontemp.com/joagi/scripts/pre6.txt)。[ icontemp.com/joagi/scripts/pre6.txt ]
 
-
-# 11- 为洛杉矶的 `LoanApp2` 创建用户（旧的 Tony 也可以）：
+### 为洛杉矶的 `LoanApp2` 创建用户（旧的 Tony 也可以）
 
 ```javascript
 var tony = new LoanApp2("Tony", 5000, 1000);
 ```
 
-# 12- 测试新方法 `getBankBranch`：
+### 测试新方法 `getBankBranch`
 
 ```javascript
-tony.getBankBranch(); // 返回 *Los Angeles*.
+tony.getBankBranch(); // 返回 Los Angeles。
 ```
 
-# 13- 测试继承自 New York 对象的方法：
+### 测试继承自 New York 对象的方法
 
 ```javascript
-tony.getApprovalStatus(); // 返回 “*Approved*”。```
+tony.getApprovalStatus(); // 返回 “Approved”。
+```
 
 现在让我们来使用另一个新操作符：`instanceof`。这个操作符对于验证对象的来源非常有用：
 
 ```javascript
-tony instanceof LoanApp2; //? 返回 *true*.
-tony instanceof LoanApp; // 返回 *false*. (如果 tony 来自洛杉矶)
-LoanApp2 instanceof LoanApp; // 返回 *false*. (LoanApp2 并不是 LoanApp 的实例，尽管它继承了后者的功能并添加了一些自己的功能。LoanApp 是一个构造函数。)
+tony instanceof LoanApp2; //? 返回 true。
+tony instanceof LoanApp; // 返回 false。 (如果 tony 来自洛杉矶)
+LoanApp2 instanceof LoanApp; // 返回 false。 (LoanApp2 并不是 LoanApp 的实例，尽管它继承了后者的功能并添加了一些自己的功能。LoanApp 是一个构造函数。)
 ```
 
-# 14- 如果你粘贴了第 9 步的外部方法，你还拥有了额外的原型方法 `summary`。让我们测试一下：
+### 如果你粘贴了第 9 步的外部方法，你还拥有了额外的原型方法 `summary`。让我们测试一下
 
 ```javascript
 tony.summary(); // 返回 "TypeError: Object #<LoanApp2> has no method 'summary'"
@@ -3803,28 +3601,32 @@ tony.summary(); // 返回 "TypeError: Object #<LoanApp2> has no method 'summary'
 
 就像我们创建外部原型方法一样，创建一个外部原型链，将 `LoanApp` 的所有原型方法链接到 `LoanApp2`。遵循第 15 步：
 
-# 15- 将以下脚本粘贴到控制台。它将立即供新申请人使用。但我们需要重置所有现有的申请人：
+### 将以下脚本粘贴到控制台。它将立即供新申请人使用。但我们需要重置所有现有的申请人
 
 ```javascript
 LoanApp2.prototype = new LoanApp();
 ```
 
-# 16- 现在我们可以实例化一个申请人了：
+### 现在我们可以实例化一个申请人了
 
 ```javascript
 var tony = new LoanApp2("Tony", 5000, 1000);
 ```
 
-# 17- 测试 `summary` 是否工作：
+### 测试 `summary` 是否工作
 
 ```javascript
 tony.summary();
-// 返回 "*Tony is applying for a loan of 1000*".
+// 返回 "Tony is applying for a loan of 1000"。
 ```
 
-“***我们发射成功了！！”。 **问题：** 如果我们现在将 `LoanApp` 为 null 会发生什么？还记得那个男孩和女孩拿着风筝吗？如果我们将旧的构造函数设置为 null，新的构造函数仍然持有继承的功能。但由于 `LoanApp` 不再可用，变量 `x` 将无法运行，因此我们无法实例化新的申请人！
+“我们发射成功了！！”
 
-换句话说，为了让 `loanApp2` 发挥其 100% 的功能，`loanApp` 和 `loanApp2` 需要共存。这就像是我们需要互联网服务来访问 Amazon 并从 Tony de Araujo 那里下载[新电子书](http://www.amazon.com/Tony-de-Araujo/e/B00D7V08WY/)（*抱歉，我忍不住！*）。**总结：** 将现有对象伪装成新对象是委托功能以避免代码重复极极方法。如果要继承的对象中存在在原型机制下创建的方法，则需要确保原型链链接到新的对象构造函数。洛杉矶的分行经理现在是一个非常快乐的人，我们也是如此！
+**问题：** 如果我们现在将 `LoanApp` 为 null 会发生什么？还记得那个男孩和女孩拿着风筝吗？如果我们将旧的构造函数设置为 null，新的构造函数仍然持有继承的功能。但由于 `LoanApp` 不再可用，变量 `x` 将无法运行，因此我们无法实例化新的申请人！
+
+换句话说，为了让 `loanApp2` 发挥其 100% 的功能，`loanApp` 和 `loanApp2` 需要共存。这就像是我们需要互联网服务来访问 Amazon 并从 Tony de Araujo 那里下载[新电子书](http://www.amazon.com/Tony-de-Araujo/e/B00D7V08WY/)（*抱歉，我忍不住！*）。
+
+**总结：** 将现有对象伪装成新对象是委托功能以避免代码重复极极方法。如果要继承的对象中存在在原型机制下创建的方法，则需要确保原型链链接到新的对象构造函数。洛杉矶的分行经理现在是一个非常快乐的人，我们也是如此！
 
 我们查看了对象创建，准确地说说是无序列表。我们看到了封装如何让代码更具功能性，并思考了继承如何通过链接对象链来节省内存和开发时间。这些是 JavaScript 对象范式中的两个重要概念，并且被频繁使用。
 
@@ -3838,28 +3640,28 @@ tony.summary();
 
 让我们创建一个简单的对象，说明如何在不导致内存过载的情况下在构造函数内部包含方法（另一种方案是像我们之前做的那样在外部原型化）。这个对象将被称为 `Player`，它包含两个属性：name 和 instrument。然后我们创建一个方法来显示关于玩家的摘要。足够简单对吧？
 
-### 1- 创建 `Player` 并将其粘贴到控制台：
+### 创建 `Player` 并将其粘贴到控制台
 
 ![](img/00082.jpeg)
+
 图 82 [原始文件](http://icontemp.com/joagi/scripts/79.txt)。 [ icontemp.com/joagi/scripts/79.txt ]
 
-### 2- 实例化一个玩家：
+### 实例化一个玩家
 
 ```javascript
 var jc = new Player("Coltrane", "saxophone");
 ```
 
-### 3- 调用 `jc`：
+### 调用 `jc`
 
 ```javascript
 jc; // 返回 Player {name: "Coltrane", instrument: "saxophone"}
 ```
 
-### 4- 测试方法 `summary`：
+### 测试方法 `summary`
 
 ```javascript
-jc.summary(); // 返回 "*Coltrane plays the saxophone*"
-
+jc.summary(); // 返回 "Coltrane plays the saxophone"
 ```
 
 对象运行正常。那么我们为什么要更改它呢？如果这个对象是独立存在的，我会让保持原样。然而，这不仅仅是一个对象；这是一个构造函数，这意味着我们将从它实例化许多对象。由于我们要实例化其他对象，我担心内存管理。为了不在每次创建新实例时都重复对象，我们需要将方法放在外部，但封装在一个检查它们是否已经存在的脚本中。
@@ -3870,7 +3672,7 @@ JavaScript 中的 `typeof` 运算符允许你探测其操作数的数据类型�
 
 这听起来很长！让我们看看它在实践中是如何运作的：
 
-### 5- 在方法（方法）之前向对象中添加以下 if 语句。我们正在询问名为 `_xyz` 的变量是否存在：
+### 在方法（方法）之前向对象中添加以下 if 语句。我们正在询问名为 `_xyz` 的变量是否存在
 
 ```javascript
 if (typeof Player._xyz === "undefined"){
@@ -3878,12 +3680,9 @@ if (typeof Player._xyz === "undefined"){
 
 现在我们包含我们的方法，然后将 `_xyz` 设置为 `true` 并关闭 `if` 语句（我会用插图再次解释一遍）。
 
+然而，我们不能直接写 `this.summary = function` 等。这样做行不通的。我们需要将方法发送到 `prototype chain`（原型链）中，以便它成为所有实例化对象的可用菜单的一部分，而不仅仅是原始对象。我们以前在构造函数之外做过这样做，也可以在构造函数内部完成。
 
-
-
-然而，我们不能直接写 `this.summary = function` 等。这样做行不通的。我们需要将方法发送到`prototype chain`（原型链）中，以便它成为所有实例化对象的可用菜单的一部分，而不仅仅是原始对象。我们以前在构造函数之外做过这样做，也可以在构造函数内部完成。
-
-请查看下一图获取详情以及*原始文件*：
+请查看下一图获取详情以及原始文件：
 
 ![](img/00083.jpeg)
 
@@ -3891,9 +3690,9 @@ if (typeof Player._xyz === "undefined"){
 
 在第 5 行中，我们包含了一个 `_xyz`（任意唯一命名的变量），它初始状态为 `undefined`，这允许了方法的实现。然后在第 10 行，我们设置了 `_xyz = true`，这将防止下一个对象实例重新复制该方法（方法）。当然，属性本身总是不同的，所以我们不需要担心这些问题。
 
-### 1. 再次测试对象实例以确保它正在正常工作：
+### 再次测试对象实例以确保它正在正常工作
 
-```
+```javascript
 var jc = new Player("Coltrane", "saxophone");
 ```
 
@@ -3957,6 +3756,7 @@ Tony de Araujo
 再次感谢你的支持！
 
 Tony de Araujo
+
 New Jersey，2013 年 11 月 | 2015 年 1 月
 
 # 附录
@@ -3975,24 +3775,24 @@ New Jersey，2013 年 11 月 | 2015 年 1 月
 
 5.  [JavaScript innerHTML: 三幕剧项目](http://www.amazon.com/JavaScript-innerHTML-Project-Projects-Mastering-ebook/dp/B00JAOLFZ6/) – 这本电子书也是一个单一项目，旨在介绍 `innerHTML`。它涵盖了在 HTML 中使用的 JavaScript 重要概念。这是一个周日下午非常有趣的话题。
 
-
-
-
-
 ### 6. [JavaScript 对象、函数与数组详解](http://www.amazon.com/JavaScript-Objects-Functions-Arrays-Explained-ebook/dp/B00GDEPBZQ/) – (**本电子书当前**)
+
 这是一本更高级的 JavaScript 书籍。书中，对变量、函数、数组和对象进行了更详细的解释。书中引入了内存管理概念，并解释了执行上下文、作用域和闭包的概念。该书还解释了 JavaScript 库中最实用的方法。这是一本非常值得常备的好书。
 
 ### 7. [面向每个人的 HTML - 网络素养的第一层](http://www.amazon.com/HTML-Everyone-First-Layer-Literacy-ebook/dp/B00DD24US0/)
+
 这是一本 HTML 入门书籍。如果你需要回顾基础概念，或者这是你第一次接触 HTML，这本书非常适合你。如果你已经了解 HTML，你可能会觉得这本书非常基础，因为它是一本入门书。
 
 这些书籍中的大多数已经翻译成葡萄牙语。你可以在我的[个人资料](http://www.amazon.com/Tony-de-Araujo/e/B00D7V08WY/)中找到葡萄牙语版本。请访问。`amazon.com/Tony-de-Araujo/e/B00D7V08WY`
 
 ### 未来项目
+
 - 更多 AngularJS
 - Typescript / ATscript / ECMAScript 6
 - C#
 
 ## 勘误与联系方式
+
 本书以电子书格式呈现。任何重大修改将通过 Amazon 发布。通常情况下，如果书籍经过修改，你可以进行升级，请咨询 Amazon，因为全球各地的规则和规定不同。所有其他细微的代码修改、错误纠正以及新的微小补充都将在书籍链接的原始文件中通知。这些文件将根据需要进行持续更新。
 
 我的邮箱是 tony@icontemp.com
@@ -4006,9 +3806,11 @@ New Jersey，2013 年 11 月 | 2015 年 1 月
 感谢，
 
 Tony de Araujo
+
 美国新泽西
 
 ## 版权
+
 Amazon、Google、Mozilla、ECMASCRIPT 以及书中使用的所有其他知名名称均归其所有所有，命名仅用于说明作者所编写的概念。
 
 版权所有 © Tony de Araujo 
@@ -4016,26 +3818,45 @@ Amazon、Google、Mozilla、ECMASCRIPT 以及书中使用的所有其他知名�
 “确保你的双脚站在正确的位置，然后站稳。” - 亚伯拉罕·林肯
 
 ### 小雨
+
 细雨，抚慰着我
+
 生命的点滴
+
 风与雷
+
 诱惑人类与鼠类
+
 树木与灌木
+
 来回移动
+
 颤抖、战栗、摇晃
+
 闪电让它们发光
+
 我以为我已经忘记
+
 但一切又回来了
+
 我所有的记忆再次浮现
+
 如点滴细雨
+
 它们在那里，鲜活完好
+
 带着它们的光辉，惊人的优雅
+
 我的母亲和我的父亲
+
 在辉煌的拥抱中
+
 那是多久以前的事
-在那么许多年之前
+
+在那么那些年之前
+
 我希望我早知道现在所知道的
+
 我会更多地去体验它！
 
 Tony de Araujo
-

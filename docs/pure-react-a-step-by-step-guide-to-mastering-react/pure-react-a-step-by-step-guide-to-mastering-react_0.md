@@ -1,13 +1,9 @@
+
 # Pure React：精通 React 逐步步指南
-
-
 
 ![](img/pure_react_cover.png)
 
 ![封面图片](img/pure_react_cover.png)
-
-
-
 
 # 简介
 
@@ -115,10 +111,6 @@ React 生态系统在这方面尤为严重：有 `React`、`Redux`、`Webpack`�
 
 到本书结束时，你将构建那些热门应用程序以及更多内容的副本。一旦你能够清晰地“以组件思考”，它们就会很快组合在一起，这种技能将随着你阅读本书而培养。
 
-
-
-
-
 我相信，至少在开始阶段，从小型项目中获得的学习价值比大型或全栈项目更多。以下是我表达的意思：彩色条代表学习产得最密集的时期，而间隙则是你正在做你已经掌握的事情：
 
 在某个时刻，大型项目的收益会递减。当你第一次几次使用文本输入框并必须将其连接起来以维护其状态时，你正在学习。到第十次时，它就变得无聊了。
@@ -140,9 +132,13 @@ React 生态系统在这方面尤为严重：有 `React`、`Redux`、`Webpack`�
 ### 工具
 
 *   `Node.js`（至少 v4.0，建议 >= 6）
+
 *   `NPM`（建议版本 >= 3）或 `yarn`
+
 *   `Google Chrome`（或其他某些现代浏览器）
+
 *   `React Developer Tools`
+
 *   你任选的文本编辑器或 IDE
 
 你需要 `Node` 和 `NPM`（或 `Yarn`）。访问 [`nodejs.org`](https://nodejs.org) 并下载最新的“Current”版本。在写作时，这是 v7.10.0。
@@ -156,8 +152,11 @@ React 生态系统在这方面尤为严重：有 `React`、`Redux`、`Webpack`�
 命令与 `NPM` 类似：
 
 *   安装所有包：`npm install` 或 `yarn`
+
 *   安装特定包：`npm install --save <package>` 或 `yarn add <package>`
+
 *   启动开发服务器：`npm start` 或 `yarn start`
+
 *   运行测试：`npm test` 或 `yarn test`
 
 与其在书中到处充斥“运行 `npm start`（或 `yarn start`）”之类的内容，我从现在起将只显示 `NPM` 命令。不过，如果你愿意，尽管使用 `Yarn`。你可以从 [`yarnpkg.com`](https://yarnpkg.com) 安装它。
@@ -174,9 +173,11 @@ React 生态系统在这方面尤为严重：有 `React`、`Redux`、`Webpack`�
 
 我不建议同时学习 `JavaScript` 和 `React`。当一切看起来都是新新的时候，很难区分“JavaScript”在哪里结束，“React”从哪里开始。如果你需要温习 `JS`，这里有一些良好的（且免费的！）资源：
 
-*   `Speaking JavaScript`（书籍）：http://speakingjs.com/
-*   `Exercism`（练习）：http://exercism.io/languages/javascript
-*   `You Don’t Know JS`（书丛）：https://github.com/getify/You-Dont-Know-JS
+*   `Speaking JavaScript`（书籍）：[http://speakingjs.com/](http://speakingjs.com/)
+
+*   `Exercism`（练习）：[http://exercism.io/languages/javascript](http://exercism.io/languages/javascript)
+
+*   `You Don’t Know JS`（书丛）：[https://github.com/getify/You-Dont-Know-JS](https://github.com/getify/You-Dont-Know-JS)
 
 对命令行有通俗的了解也会很有帮助。
 
@@ -205,8 +206,11 @@ $ sudo npm install -g create-react-app
 当出现出现问题时，请遵循以下步骤：
 
 1.  不要恐慌。
+
 2.  手动刷新页面。有时自动刷新机制会失效。
+
 3.  检查浏览器开发者控制台，手动刷新页面并修复你看到的任何错误。
+
 4.  检查运行 `npm start` 的命令行控制台。寻找任何错误并修复它们。
 
 在 Mac 的 `Chrome` 上打开开发者控制台，请按 `Option+Command+I`。在 Windows 或 Linux 的 `Chrome` 上，按 `Ctrl+Shift+I`。然后确保你处于“Console”（控制台）标签页。
@@ -273,10 +277,6 @@ ReactDOM.render(
 
 与 ES5 不同，我们不能简单地包含 `<script>` 标签并获取全局对象 `React`。因此，`import React from 'react'` 语句创建了一个名为 `React` 的新变量，其内容为 `react` 模块。
 
-
-
-
-
 字符串 ‘react’ 和 ‘react-dom’ 是重要的：它们对应于 `npm` 安装的模块名称。如果你熟悉 Node.js，`import React from 'react'` 等同于 `var React = require('react')`。
 
 ### 第 3 
@@ -309,6 +309,8 @@ ReactDOM.render([React Element], [DOM element]);
 
 # JSX：是什么以及为什么
 
+
+
 你可能注意到的关于 React 代码的第一点之一是，它看起来就像组件函数返回了 HTML。这种类 HTML 的语法实际上被称为 JSX。
 
 ## 什么是 JSX？
@@ -317,9 +319,9 @@ JSX 是为 React 发明的一种语法，看起来与 (X)HTML 非常相似。它
 
 ## JavaScript 里的 HTML？！
 
-在我甚至认真研究 React 之前，我就知道它混合了 HTML 和 JS，我认为那简直是*丑陋的*。我的意思是，这在否定*多年来*的最佳实践思维，对吧？自从 jQuery 的暗黑暗时代以来，我们就知道在 JS 内部直接对元素设置 `innerHTML` 是黑客行为而且性能糟糕——更不用说到处是安全漏洞了——那么为什么 React 却在重犯同样的错误呢？
+在我甚至认真研究 React 之前，我就知道它混合了 HTML 和 JS，我认为那简直是丑陋的。我的意思是，这在否定多年来的最佳实践思维，对吧？自从 jQuery 的暗黑暗时代以来，我们就知道在 JS 内部直接对元素设置`innerHTML`是黑客行为而且性能糟糕——更不用说到处是安全漏洞了——那么为什么 React 却在重犯同样的错误呢？
 
-你有没有注意到“HTML”周围没有引号？那是因为`它不是一个字符串。`。不加引号也不仅仅是一种技巧。React *并没有*在解析那个东西并将其转换为 HTML。
+你有没有注意到“HTML”周围没有引号？那是因为`它不是一个字符串。`不加引号也不仅仅是一种技巧。React 并没有在解析那个东西并将其转换为 HTML。
 
 我知道，我知道，它看起来像 HTML。但实际上，JSX 只是在创建 DOM 元素的函数调用之上的一种美妙的语法糖。
 
@@ -331,11 +333,9 @@ JSX 是为 React 发明的一种语法，看起来与 (X)HTML 非常相似。它
 
 这里有一些简单 JSX 的示例：
 
-```
+```jsx
 return <span>Hello!</span>;
 ```
-
-
 
 这里是编译器生成的 JavaScript：
 
@@ -343,21 +343,23 @@ return <span>Hello!</span>;
 return React.createElement(
   'span',
   {},
-  'Hello!');
+  'Hello!'
+);
 ```
 
-`React.createElement` 函数的签名如下：
+`React.createElement`函数的签名如下：
 
-```
+```javascript
 React.createElement(
   string|element,
   [propsObject],
-  [children...])
+  [children...]
+);
 ```
 
-`string|element` 可以是一个描述 HTML 或 SVG 标签的字符串（如 `'div'` 或 `'span'`），也可以是一个组件（如 `HelloWorld`，不带引号）。
+`string|element`可以是一个描述 HTML 或 SVG 标签的字符串（如`'div'`或`'span'`），也可以是一个组件（如`HelloWorld`，不带引号）。
 
-`propsObject` 和 `children` 是可选的，你也可以通过传递额外的参数提供多个子元素：
+`propsObject`和`children`是可选的，你也可以通过传递额外的参数提供多个子元素：
 
 ```javascript
 React.createElement(
@@ -379,7 +381,7 @@ React.createElement('div', {},
 );
 ```
 
-自己尝试一下！重写 `HelloWorld` 组件以调用 `React.createElement` 而不是返回 JSX。
+自己尝试一下！重写`HelloWorld`组件以调用`React.createElement`而不是返回 JSX。
 
 ```javascript
 function HelloWorld() {
@@ -400,7 +402,7 @@ function HelloWorld() {
 这是它被编译后的结果：
 
 ```javascript
-React.createElement('span', 
+React.createElement('span',
   { className: 'song-name' },
   props.song.name
 );
@@ -410,11 +412,11 @@ React.createElement('span',
 
 你的第一直觉可能是避免编写 JSX，因为你不喜欢“JS 中的 HTML”这种外观。也许你更愿意编写真正的 JavaScript 函数调用，因为这在某种程度上感觉更“纯粹”。我建议在放弃它之前诚实地尝试一下 JSX。
 
-写出 `React.createElement` 调用并不是 React 社区的常用方法。几乎所有的 React 开发者都使用 JSX，这意味着你在野外看到的代码（在 GitHub、Stack Overflow 等上）很可能是用它编写的。
+写出`React.createElement`调用并不是 React 社区的常用方法。几乎所有的 React 开发者都使用 JSX，这意味着你在野外看到的代码（在 GitHub、Stack Overflow 等上）很可能是用它编写的。
 
 ### 但是……关注点分离！
 
-这是大多数新手最关心的问题：那种觉得将 JS 与 HTML 混合在一起就是*错误*的胃里不安的感觉。它甚至可能让你感到*愤怒*。
+这是大多数新手最关心的问题：那种觉得将 JS 与 HTML 混合在一起就是错误的胃里不安的感觉。它甚至可能让你感到愤怒。
 
 在我开始使用 React 之前，我有同样的顾虑。花了一些时间（并写了几个小应用），我才开始理解这种不不洁混合的力量。不过不用担心，因为书中的练习将提供你所需的所有练习来掌握它。
 
@@ -440,14 +442,11 @@ React.createElement('span',
 
 但情况很少是那样。JS 代码及其相关的模板通常是紧密耦合的，自然如此——它们是同一枚硬币的两面。
 
-
-
-
 将代码拆分为单独的文件并不会自动导致关注点分离。
 
-老旧的 jQuery 这种情况也是如此。HTML 完全不知道 JavaScript 的存在，但由于 `jQuery` 选择器必须了解页面结构的某些信息，因此 JS 和 HTML 之间在事实上是紧密耦合的。如果结构发生了变化，代码也必须随之更改。
+老旧的 jQuery 这种情况也是如此。HTML 完全不知道 JavaScript 的存在，但由于`jQuery`选择器必须了解页面结构的某些信息，因此 JS 和 HTML 之间在事实上是紧密耦合的。如果结构发生了变化，代码也必须随之更改。
 
-如果你还没有注意到，我想证明的是：模板和视图逻辑实际上可以共存在同一个文件中，而且*这样做实际上可能更有意义*。
+如果你还没有注意到，我想证明的是：模板和视图逻辑实际上可以共存在同一个文件中，而且这样做实际上可能更有意义。
 
 你现在不需要相信我。只需在学习示例和练习时，将这个想法留存在脑子里。你可能会发现（就像我一样），将逻辑和视图合并会让代码更容易导航、更容易编写且更容易调试。当所有相关功能都在一个地方时，你在不同文件之间跳回的时间就会更少。
 
@@ -457,9 +456,9 @@ React.createElement('span',
 
 JSX 像 HTML 一样，允许将元素嵌套在内部。这可能并不意外。
 
-让我们重构之前的 `HelloWorld` 组件来演示组合是如何工作的。这里是原始的 `HelloWorld`：
+让我们重构之前的`HelloWorld`组件来演示组合是如何工作的。这里是原始的`HelloWorld`：
 
-```
+```jsx
 function HelloWorld() {
   return (
     <div>Hello World!</div>
@@ -467,7 +466,7 @@ function HelloWorld() {
 }
 ```
 
-暂时保持 `HelloWorld` 组件不变，创建两个*新*组件：一个命名为 `Hello`，另一个命名为 `World`。`Hello` 应该渲染 `<span>Hello</span>`，而 `World` 应该渲染 `<span>World</span>`。你基本上可以复制 `HelloWorld` 组件并只需更改文本和函数名即可。
+暂时保持`HelloWorld`组件不变，创建两个新组件：一个命名为`Hello`，另一个命名为`World`。`Hello`应该渲染`<span>Hello</span>`，而`World`应该渲染`<span>World</span>`。你基本上可以复制`HelloWorld`组件并只需更改文本和函数名即可。
 
 动手尝试自己做这个更改吧。我会等。
 
@@ -475,11 +474,11 @@ function HelloWorld() {
 
 ……
 
-懂了吗？实际*手打出这些内容*并亲自尝试是非常重要的！不要只是一边点头一边阅读，因为那样你是无法真正学会的。看着代码并想“这都合理，是的”是非常容易的。在你*尝试它*之前，你永远不知道自己是否内化了它。
+懂了吗？实际手打出这些内容并亲自尝试是非常重要的！不要只是一边点头一边阅读，因为那样你是无法真正学会的。看着代码并想“这都合理，是的”是非常容易的。在你尝试它之前，你永远不知道自己是否内化了它。
 
 你的两个新组件看起来应该是这样：
 
-```
+```jsx
 function Hello() {
   return <span>Hello</span>;
 }
@@ -489,9 +488,9 @@ function World() {
 }
 ```
 
-现在，更新 `HelloWorld` 组件以使用你刚刚创建的两个新组件。它看起来应该是这样：
+现在，更新`HelloWorld`组件以使用你刚刚创建的两个新组件。它看起来应该是这样：
 
-```
+```jsx
 function HelloWorld() {
   return (
     <div>
@@ -501,17 +500,17 @@ function HelloWorld() {
 }
 ```
 
-假设应用仍在运行，页面应该会自动刷新。如果没有，请手动刷新，并确保应用正在运行（如果未运行请运行 `npm start`）。
+假设应用仍在运行，页面应该会自动刷新。如果没有，请手动刷新，并确保应用正在运行（如果未运行请运行`npm start`）。
 
 你应该能看到和之前一样的“Hello World!”。我知道这看起来很简单，但我保证，这里有一些教训。
 
 ## 用括号包裹 JSX
 
-接下来的示例依赖于你应该已经过的 `Hello` 和 `World` 组件，所以在此继续之前请确保它们存在。
+接下来的示例依赖于你应该已经过的`Hello`和`World`组件，所以在此继续之前请确保它们存在。
 
-首先是一个关于格式的说明。你可能会注意到我将返回的 JSX 包裹在了括号 `()` 中。这并不是严格必须的，但如果你省略括号，起始标签必须与 return 语句在同一行，这看起来有点很奇怪：
+首先是一个关于格式的说明。你可能会注意到我将返回的 JSX 包裹在了括号`()`中。这并不是严格必须的，但如果你省略括号，起始标签必须与`return`语句在同一行，这看起来有点很奇怪：
 
-```
+```jsx
 function HelloWorld() {
   return <div>
     <Hello/> <World/>!
@@ -521,9 +520,9 @@ function HelloWorld() {
 
 为了好玩，尝试移除括号并观察发生了什么：
 
-```
+```jsx
 function HelloWorld() {
-  return 
+  return
     <div>
       <Hello/> <World/>!
     </div>;
@@ -536,7 +535,7 @@ function HelloWorld() {
 
 你可能还会看到一个关于“不可达代码（Unreachable code）”的警告。
 
-这是因为 JavaScript 假设你在 return 之后想要一个分号（因为了换行），这实际上将其变成了这样，它返回了 undefined：
+这是因为 JavaScript 假设你在`return`之后想要一个分号（因为了换行），这实际上将其变成了这样，它返回了 undefined：
 
 ```javascript
 function HelloWorld() {
@@ -551,9 +550,9 @@ function HelloWorld() {
 
 ### 返回单个元素
 
-注意在 `HelloWorld` 示例中，两个组件是如何包裹在一个 `<div>` 中的：
+注意在`HelloWorld`示例中，两个组件是如何包裹在一个`<div>`中的：
 
-```javascript
+```jsx
 function HelloWorld() {
   return (
     <div>
@@ -563,7 +562,7 @@ function HelloWorld() {
 }
 ```
 
-这是一个小练习：尝试移除 `<div>` 包装并看看发生了什么。你应该得到这个错误：
+这是一个小练习：尝试移除`<div>`包装并看看发生了什么。你应该得到这个错误：
 
 > `Adjacent JSX elements must be wrapped in an enclosing tag`
 
@@ -571,17 +570,17 @@ function HelloWorld() {
 
 ```javascript
 // 这个 JSX:
-  return (<Hello/> <World/>);
+return (<Hello/> <World/>);
 
 // 变成这个 JS:
-  return (
-    React.createElement(Hello, null) React.createElement(World, null)
-  );
+return (
+  React.createElement(Hello, null) React.createElement(World, null)
+);
 ```
 
 一次返回两个东西是没有意义的。所以这引出了这条非常重要的规则：
 
-> **组件函数必须返回单个元素。**
+> 组件函数必须返回单个元素。
 
 但等一下！你可以返回一个数组吗？毕竟这终是 JavaScript……
 
@@ -590,7 +589,7 @@ function HelloWorld() {
 return [<Hello/>, <World/>];
 
 // 会变成这个 JS
-// (注意括号)。
+// （注意括号）。
 // 它看起来是合法的...
 return [
   React.createElement(Hello, null),
@@ -606,9 +605,9 @@ return [
 
 ### JSX 中的 JavaScript
 
-你可以在 JSX 代码中插入真实的 JavaScript 表达式，事实上，你经常会这样做。使用像这样的单大括号 `{}` 包裹 JavaScript：
+你可以在 JSX 代码中插入真实的 JavaScript 表达式，事实上，你经常会这样做。使用像这样的单大括号`{}`包裹 JavaScript：
 
-```javascript
+```jsx
 function SubmitButton() {
   var buttonLabel = "Submit";
   return (
@@ -617,7 +616,7 @@ function SubmitButton() {
 }
 ```
 
-记住，这将被编译为 JavaScript，这意味着大括号内的 JS 必须是一个*表达式（expression）*。表达式产生值。这些是表达式：
+记住，这将被编译为 JavaScript，这意味着大括号内的 JS 必须是一个表达式（expression）。表达式产生值。这些是表达式：
 
 ```javascript
 1 + 2
@@ -626,7 +625,7 @@ aFunctionCall()
 aFunctionName
 ```
 
-每一个都会产生（即返回）一个单一的值。相比之下，*语句（statements）*不产生值且不能用在 JSX 中。这里是一些语句的示例：
+每一个都会产生（即返回）一个单一的值。相比之下，语句（statements）不产生值且不能用在 JSX 中。这里是一些语句的示例：
 
 ```javascript
 var a = 5
@@ -634,9 +633,9 @@ if(true) { 17; }
 while(i < 7) { i++ }
 ```
 
-这些内容没有一个产生值。`var a = 5` 声明了一个值为 5 的变量，但并没有*返回*该值。
+这些内容没有一个产生值。`var a = 5`声明了一个值为 5 的变量，但并没有返回该值。
 
-思考语句与表达式的另一种方法是：*表达式*可以位于赋值的右侧，但语句不能。
+思考语句与表达式的另一种方法是：表达式可以位于赋值的右侧，但语句不能。
 
 ```javascript
 // 这些不是合法的 JS:
@@ -652,7 +651,7 @@ a = if(true) { 17; }
 
 第一个是三元运算符（`?`）。像这样使用它：
 
-```javascript
+```jsx
 function ValidIndicator() {
   var isValid = true;
   return (
@@ -661,9 +660,9 @@ function ValidIndicator() {
 }
 ```
 
-你也可以像这样使用布尔运算符，例如 `&&`：
+你也可以像这样使用布尔运算符，例如`&&`：
 
-```javascript
+```jsx
 function ValidIndicator() {
   var isValid = true;
   return (
@@ -677,12 +676,9 @@ function ValidIndicator() {
 
 ### JSX 中的注释
 
-
-
-
 如果你需要向 JSX 块中添加注释，语法看起来可能会有点奇怪。记住，JavaScript 需要放在单大括号内。JSX 中的注释必须像这样放在 JavaScript 块中：
 
-```javascript
+```jsx
 function ValidIndicator() {
   var isValid = true;
   return (
@@ -701,17 +697,17 @@ function ValidIndicator() {
 
 ### 组件名称大写
 
-你编写组件必须以大写字母开头。这意味着要使用像 `UserList`、`Menu` 和 `SubmitButton` 这样的名称，而不是 `userList`、`menu` 和 `submitButton`。
+你编写组件必须以大写字母开头。这意味着要使用像`UserList`、`Menu`和`SubmitButton`这样的名称，而不是`userList`、`menu`和`submitButton`。
 
-在 JSX 中，以小写字母开头的组件被认为是内置的 HTML 或 SVG 元素（如 `div`、`ul`、`rect` 等）。
+在 JSX 中，以小写字母开头的组件被认为是内置的 HTML 或 SVG 元素（如`div`、`ul`、`rect`等）。
 
 早期版本的 React 维护了一个所有内置元素名称的“名单”，以便将它们与自定义区分开来。维护这个名单既耗时又容易出错——如果一个新的 SVG 元素进入了规范，在 React 更新该列表之前，你无法使用它。因此，他们删除了列表，并添加了这条规则。
 
 ### 关闭每个元素
 
-JSX 要求每个元素都必须关闭，类似于 XML 或 XHTML。这包括你可能习惯在 HTML5 中保持不关闭的元素，如 `<br>` 或 `<input>` 甚至是 `<li>`。
+JSX 要求每个元素都必须关闭，类似于 XML 或 XHTML。这包括你可能习惯在 HTML5 中保持不关闭的元素，如`<br>`或`<input>`甚至是`<li>`。
 
-```javascript
+```jsx
 // 应该这样做：
 return <br/>;
 return <input type='password' .../>;
@@ -726,6 +722,8 @@ return <li>text;
 ### 练习
 
 运行以下命令为这些练习创建一个新应用：
+
+
 
 ```bash
 $ create-react-app jsx-exercises
@@ -749,7 +747,9 @@ ReactDOM.render(
 
 你可以删除或忽略 `src/App*` 文件和图标。如果你没有显式 `import` 它们，它们就不会构建到你的应用中。
 
-1. 创建一个渲染此 JSX 的组件：
+## 练习
+
+### 1. 创建渲染 JSX 的组件
 
 ```jsx
 <div className='book'>
@@ -770,9 +770,13 @@ ReactDOM.render(
 </div>
 ```
 
-2. 观察 JSX 如何解释空白。尝试渲染这些布局（将 `.` 替换为空格字符）并注意输出（提示：开头和结尾的空格会被移除，换行符也是如此）：
+### 2. 观察 JSX 如何解释空白
 
-1. 单行
+尝试渲染这些布局（将 `.` 替换为空格字符）并注意输出。
+
+提示：开头和结尾的空格会被移除，换行符也是如此。
+
+#### 单行
 
 ```jsx
 <div>
@@ -781,7 +785,7 @@ Test
 </div>
 ```
 
-3. 空换行
+#### 空换行
 
 ```jsx
 <div>
@@ -793,7 +797,7 @@ Here
 </div>
 ```
 
-4. 带有换行符的空格
+#### 带有换行符的空格
 
 ```jsx
 <div>
@@ -802,7 +806,7 @@ Here
 </div>
 ```
 
-6. 当内容跨越多行时插入空格
+#### 当内容跨越多行时插入空格
 
 ```jsx
 <div>
@@ -812,9 +816,13 @@ Line2
 </div>
 ```
 
-3. 复制练习 1 中的组件，并将 JSX 替换为对 `React.createElement` 的调用。输出应该是相同的。
+### 3. 使用 `React.createElement`
 
-4. 从此组件返回相应的 JSX，以便当 `username` 为 `undefined` 或 `null` 时，渲染“Not logged in”。当 `username` 是字符串时，渲染“Hello, username”。
+复制练习 1 中的组件，并将 JSX 替换为对 `React.createElement` 的调用。输出应该是相同的。
+
+### 4. 根据 `username` 返回相应的 JSX
+
+从此组件返回相应的 JSX，以便当 `username` 为 `undefined` 或 `null` 时，渲染“Not logged in”。当 `username` 是字符串时，渲染“Hello, username”。
 
 ```javascript
 function Greeting() {
@@ -825,365 +833,10 @@ function Greeting() {
   //var username = false;
 }
 ```
+
 （注：提供的文本在练习结束处突然中断；上面的格式反映了所提供输入的结构。）
 
-[/content]***
 
-[content]
-# 示例：推文
-
-### 1. 草图
-
-这是我们要构建的内容。让我们从草图开始。这是我们要构建的草图：
-
-![推文的草图](img/file1.png)
-
-### 2. 拆分为组件
-
-下一步是将此草图拆分为组件。在部分周围画框，并考虑可重用性。想象你有三条推文，每条的内容都不同。会有什么变化？
-
-![已勾勒出组件](img/file2.png)
-
-### 3. 为组件命名
-
-现在我们已经将草图拆分成部分，可以为它们命名。
-
-![带有组件名称的推文](img/file3.png)
-
-这些每一个都将成为一个组件，其中 `Tweet` 是其他组件的父组件：
-
-*   Avatar
-*   NameWithHandle
-*   Time
-*   Message
-*   ReplyButton
-*   LikeButton
-*   RetweetButton
-*   MoreOptionsButton
-
-### 4. 构建
-
-现在知道了组件层级结构——让我们构建它。
-
-### 自顶向下，还是自底向上？
-
-有两种方法来处理这种情况。
-
-1. 从顶部开始。首先构建 `Tweet` 组件，然后构建它的子组件。构建 `Avatar`，然后 `NameWithHandle`，以此此类推。
-2. 从底部开始（树的“叶子”）。构建 `Avatar`，然后 `NameWithHandle`，以及其他子组件。验证它们在孤立状态下的运行情况。一旦全部完成，就将它们组装到 `Tweet` 组件中。
-
-那么什么是最好的方法呢？嗯，这*总是*如此吗？
-
-对于像这样简单的层级结构，差别并不不大。从顶部开始最容易，所以我们在这里将这样做。
-
-对于更复杂的层级结构，从底部开始。构建较小的部分，测试它们运行正常，并随着过程进行组合。这样你就可以确信小部分是正常的，并且根据归纳法，它们的组合也应该是正常的（至少在理论上如此）。
-
-
-
-
-例如，如果我们正在构建 Twitter，我们可能会从上到下地构建 `Tweet` 组件，然后将其整合到推文列表中，接着将该列表嵌入页面中，最后将该页面嵌入到更大的应用程序中。`Tweet` 可以从上到下构建，而较大的应用程序则可以自下而上构建。
-
-还有一种情况从下而上构建是好主意，那就是你有一个用其他框架（如 `Angular` 或 `Backbone`）编写的现有应用，你想用 `React` 重写它。在这种情况下，从顶部开始意义不大，因为它会对你的整个代码库产生连锁反应。
-
-从下而上开始是可控且易管理的。你可以构建应用程序的“叶节点”——即那些小的、封装好的部分。让它们运行起来，然后构建下一层，以此此类推，直到到达顶端。那时，如果你选择的话，可以可以将当前的框架替换为 `React`。
-
-重写时，自下而上开发的另一个优势是它非常符合 `React` 的单向数据流范式。由于 `React` 组件占据树的底部，而且你可以保证 `React` 组件只包含其他 `React` 组件，因此对于如何将数据传递到需要它的组件推理起来变得更容易。
-
-### 构建 Tweet 组件
-
-这里是我们的蓝图：
-
-![Tweet](img/file2.png)
-
-在这一节中，我们将构建一个简单的静态推文，从顶层组件 `Tweet` 开始。
-
-运行以下命令使用 `Create React App` 创建新项目：
-
-```
-$ create-react-app static-tweet && cd static-tweet
-```
-
-它为我们生成了一些在这里用不到到的文件，所以我们可以安全地删除它们：
-
-```bash
-$ rm src/App.* src/logo.svg
-```
-
-新生成的项目在 `public` 目录下包含一个 `index.html` 文件。通过在 `<head>` 标签内添加此行来引入 Font Awesome（全部写在一行）：
-
-```html
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-```
-
-我们还在 `src` 目录中有一个生成的 `index.css` 文件。打开它并将其内容替换为以下内容：
-
-```css
-.tweet {
-  border: 1px solid #ccc;
-  width: 564px;
-  min-height: 68px;
-  padding: 10px;
-  display: flex;
-  font-family: "Helvetica", arial, sans-serif;
-  font-size: 14px;
-  line-height: 18px;
-}
-```
-
-`index.js` 文件将与 Hello World 的版本非常相似。它基本上是一样的，只是把“Hello World”换成了“Tweet”。我承诺很快会让它变得更好。将 `src/index.js` 的内容替换为这些：
-
-```javascript
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-
-function Tweet() {
-  return (
-    <div className="tweet">
-      Tweet
-    </div>
-  );
-}
-
-ReactDOM.render(<Tweet/>,
-  document.querySelector('#root'));
-```
-
-这应该搞定了。像之前一样运行以下命令启动服务器：
-
-```bash
-$ npm start
-```
-
-页面应该渲染出类似这样的：
-
-![Tweet](img/file4.png)
-
-这并不是什么你没见过的东西。它是一个简单的组件，增加了一个特殊的 `className` 属性（或“prop”）。
-
-你可能注意到的另一个新现象是 `import './index.css'`，它将……一个 CSS 文件导入到了 JavaScript 文件？初看似乎很奇怪。
-
-发生的情况是，在后台，当 `Webpack` 构建我们的应用时，它看到了这个 CSS 导入并知道 `index.js` 依赖于 `index.css`。`Webpack` 读取 CSS 文件并将其包含在打包的 JavaScript 中（作为字符串），以发送给浏览器。
-
-你实际上可以在浏览器中看到这一点——打开开发者控制台，查看 Elements（元素）标签页，并注意到 `<head>` 下有一个我们没有放进去的 `<style>` 标签。它包含了 `index.css` 的内容。
-
-我们将在下一节中学习更多关于 props 的知识，但现在，只需将它们想象成 HTML 属性即可。大多数属性的命名与你熟悉的属性相同，但 `className` 的特殊之处在于，它的值会变成 DOM 节点上的 `class` 属性。
-
-回到我们的大纲。让我们构建 `Avatar` 组件。在 `index.js` 中添加组件函数：
-
-```javascript
-function Avatar() {
-  return (
-    <img
-      src="https://www.gravatar.com/avatar/nothing"
-      className="avatar"
-      alt="avatar" />
-  );
-}
-```
-
-稍后我们将查看将组件提取到文件中并通过 `import` 导入它们，但为了现在保持简单，我们把所有组件都放在 `index.js` 中。
-
-如果你想使用自己的 Gravatar，请访问 [daveceddia.com/gravatar](https://daveceddia.com/gravatar) 来查找它的 URL。
-
-接下来我们需要更改 `Tweet` 以渲染 `Avatar`：
-
-```javascript
-function Tweet() {
-  return (
-    <div className="tweet">
-      <Avatar/>
-      Tweet
-    </div>
-  );
-}
-```
-
-现在在 `index.css` 中给 `Avatar` 一些样式：
-
-```css
-.avatar {
-  width: 48px;
-  height: 48px;
-  border-radius: 5px;
-  margin-right: 10px;
-}
-```
-
-它变得越来越好了：
-
-![Tweet](img/file5.png)
-
-接下来我们将再创建两个组件，`Message` 和 `NameWithHandle`：
-
-```javascript
-function Message() {
-  return (
-    <div className="message">
-      less than 140 characters.
-    </div>
-  );
-}
-
-function NameWithHandle() {
-  return (
-    <span className="name-handle">
-      <span className="name">Name</span>
-      <span className="handle">@handle</span>
-    </span>
-  );
-}
-```
-
-如果现在刷新，什么都不会改变，因为我们仍然需要更新 `Tweet` 来使用这些组件：
-
-```javascript
-function Tweet() {
-  return (
-    <div className="tweet">
-      <Avatar/>
-      <div className="content">
-        <NameWithHandle/>
-        <Message/>
-      </div>
-    </div>
-  );
-}
-```
-
-现在可以渲染了，但很难看。为名称和处理一些 CSS 来修饰它：
-
-```css
-.name {
-  font-weight: bold;
-  margin-bottom: 0.5em;
-  margin-right: 0.3em;
-}
-
-.handle {
-  color: #8899a6;
-  font-size: 13px;
-}
-```
-
-![Tweet](img/file6.png)
-
-它看起来更像真实的推文了！接下来，添加 `Time` 和按钮（我们稍后会讨论这种新语法）：
-
-```javascript
-const Time = () => (
-  <span className="time">3h ago</span>
-);
-
-const ReplyButton = () => (
-  <i className="fa fa-reply reply-button"/>
-);
-
-const RetweetButton = () => (
-  <i className="fa fa-retweet retweet-button"/>
-);
-
-const LikeButton = () => (
-  <i className="fa fa-heart like-button"/>
-);
-
-const MoreOptionsButton = () => (
-  <i className="fa fa-ellipsis-h more-options-button"/>
-);
-```
-
-这些组件看起来不像你到目前编写的 `function`，但它们实际上仍然是函数。它们是*箭头函数*。这里有一个从普通 `function` 到箭头函数的演变过程，让你看到发生了什么：
-
-
-
-
-
-```javascript
-function LikeButton() {
-  return (
-    <i className="fa fa-heart like-button"/>
-  );
-}
-
-// 这可以被重写为一个
-// 匿名函数：
-
-const LikeButton = function() {
-  return (
-    <i className="fa fa-heart like-button"/>
-  );
-}
-
-// ...这可以转换为一个
-// 箭头函数：
-
-const LikeButton = () => {
-  return (
-    <i className="fa fa-heart like-button"/>
-  );
-}
-
-// 它可以进一步简化为：
-
-const LikeButton = () => (
-  <i className="fa fa-heart like-button"/>
-);
-
-// 如果它真的很简单，
-// 你甚至可以把它写成一行：
-
-const Hi = () => <<span>>Hi</span>;
-```
-
-箭头函数是编写组件的一种非常简洁的方式。函数本身就是 `() => { ... }` 部分。
-
-注意看在最后几个版本中没有 `return`：当一个箭头函数只包含一个表达式时，可以不带大括号编写。当不带大括号编写时，该唯一的表达式会被隐式返回。
-
-随着本书的进行，你将继续使用箭头函数，所以不要担心它们现在看起来很陌生。你会习惯的。
-
-### The let 和 const 关键字
-
-如果你熟悉 C 或 Java 等语言，那么你熟悉块级作用域（block scoping）。正如你可能知道的，JavaScript 的 `var` 实际上是函数作用域的，而不是块作用域。这长期以来一直是一个麻烦。
-
-ES6 增加了 `let` 和 `const` 作为声明块作用域变量的新方式。
-
-`let` 关键字定义了一个可变的（changeable）变量。你几乎可以在任何地方用它来代替 `var`。
-
-`const` 定义了一个常量。如果你尝试重新给变量赋值，它会报错，但值得注意的是，它并不能防止你修改变量内部的数据。这里有一个例子：
-
-```javascript
-const answer = 42;
-answer = 43;   // error!
-
-const numbers = [1, 2, 3];
-numbers[0] = 'this is fine'; // no error
-```
-
-使用 `const` 更多的是一种意图信号，而不是一种无懈可击的保护方案，但它仍然值得这样做。
-
-现在我们已经有了所有新组件，再次更新 `Tweet` 组件以包含它们：
-
-```javascript
-function Tweet() {
-  return (
-    <div className="tweet">
-      <Avatar/>
-      <div className="content">
-        <NameWithHandle/><Time/>
-        <Message/>
-        <div className="buttons">
-          <ReplyButton/>
-          <RetweetButton/>
-          <LikeButton/>
-          <MoreOptionsButton/>
-        </div>
-      </div>
-    </div>
-  );
-}
-```
-
-最后，添加更多样式来覆盖时间和按钮部分：
 
 ```css
 .time {
@@ -1216,30 +869,26 @@ function Tweet() {
 
 “但是……等一下，”我听到你在说。“我以为我们我们要。”
 
-
-
-
-
-你可以将 `{ name }` 理解为“从作为第一个参数传递的对象中提取 ‘name’ 键”。它也可以提取多个键：
+你可以将`{ name }`理解为“从作为第一个参数传递的对象中提取 ‘name’ 键”。它也可以提取多个键：
 
 ```javascript
-[](#cb67-1)const Hello = ({ firstName, lastName }) => (
-[](#cb67-2)  <span>Hello, {firstName} {lastName}</span>
-[](#cb67-3));
+const Hello = ({ firstName, lastName }) => (
+  <span>Hello, {firstName} {lastName}</span>
+);
 ```
 
 在实践中，props 经常使用这种解构语法来编写。需要你了解一下，它在函数参数之外也有效。例如，你可以用这种方式解构 props：
 
 ```javascript
-[](#cb68-1)const Hello = (props) => {
-[](#cb68-2)  const { name } = props;
-[](#cb68-3)  return (
-[](#cb68-4)    <span>Hello, {name}</span>
-[](#cb68-5)  );
-[](#cb68-6)}
+const Hello = (props) => {
+  const { name } = props;
+  return (
+    <span>Hello, {name}</span>
+  );
+}
 ```
 
-记住，如果箭头函数的体用大括号包围，则需要 `return`；如果函数体包含多行，则需要大括号。
+记住，如果箭头函数的体用大括号包围，则需要`return`；如果函数体包含多行，则需要大括号。
 
 ### 修改 Props
 
@@ -1253,147 +902,147 @@ function Tweet() {
 
 如果你不能更改 props，但需要向父组件传递某些信息，该如何操作？
 
-如果子组件需要向父组件发送数据，父组件可以注入一个 `function` 作为 prop，如下：
+如果子组件需要向父组件发送数据，父组件可以注入一个`function`作为 prop，如下：
 
 ```javascript
-[](#cb69-1)function handleAction(event) {
-[](#cb69-2)  console.log('Child did:', event);
-[](#cb69-3)}
-[](#cb69-4)
-[](#cb69-5)function Parent() {
-[](#cb69-6)  return (
-[](#cb69-7)    <Child onAction={handleAction}/>
-[](#cb69-8)  );
-[](#cb69-9)}
+function handleAction(event) {
+  console.log('Child did:', event);
+}
+
+function Parent() {
+  return (
+    <Child onAction={handleAction}/>
+  );
+}
 ```
 
-`Child` 组件接收一个名为 `onAction` 的 prop，它可以在需要发送数据或通知父组件事件时随时调用它。你会注意到内置的 `button` 元素接受一个 `onClick` prop，它会在按钮被点击时调用。我们稍后会深入探讨事件处理。
+`Child`组件接收一个名为`onAction`的 prop，它可以在需要发送数据或通知父组件事件时随时调用它。你会注意到内置的`button`元素接受一个`onClick` prop，它会在按钮被点击时调用。我们稍后会深入探讨事件处理。
 
 ```javascript
-[](#cb70-1)function Child({ onAction }) {
-[](#cb70-2)  return (
-[](#cb70-3)    <button onClick={onAction}/>
-[](#cb70-4)  );
-[](#cb70-5)}
+function Child({ onAction }) {
+  return (
+    <button onClick={onAction}/>
+  );
+}
 ```
 
 ## 示例：带 Props 的 Tweet
 
 现在你已经对 props 有了基本的了解，让我们来看看它们在实践中是如何运作的。
 
-我们将取第 5 章中的静态 `Tweet` 示例并对其进行重构，通过使用 props 显示动态数据。
+我们将取第 5 章中的静态`Tweet`示例并对其进行重构，通过使用 props 显示动态数据。
 
-对于这个示例，请复制 `static-tweet` 项目文件夹，这样我们就可以在不用破坏旧代码的情况下工作。我们还将启动一个开发服务器（如果它仍在运行，请停止它）。
+对于这个示例，请复制`static-tweet`项目文件夹，这样我们就可以在不用破坏旧代码的情况下工作。我们还将启动一个开发服务器（如果它仍在运行，请停止它）。
 
 ```bash
 $ cp -a static-tweet props-tweet && cd props-tweet
 $ npm start
 ```
 
-注意：不要使用 `cp -r`，因为它不会保留符号链接，并且会破坏 `npm start`。
+注意：不要使用`cp -r`，因为它不会保留符号链接，并且会破坏`npm start`。
 
-如果在复制项目后 `npm start` 命令失败了，请删除 `node_modules` 文件夹并运行 `npm install`。然后再次尝试 `npm start`。
+如果在复制项目后`npm start`命令失败了，请删除`node_modules`文件夹并运行`npm install`。然后再次尝试`npm start`。
 
-打开 `src/index.js`。首先，更新 `Tweet` 组件以如下所示接受一个 `tweet` prop。然后添加 `testTweet` 对象作为我们的假数据，并更新 `ReactDOM.render` 的调用，将 `testTweet` 对象传递给 `tweet` prop。
+打开`src/index.js`。首先，更新`Tweet`组件以如下所示接受一个`tweet` prop。然后添加`testTweet`对象作为我们的假数据，并更新`ReactDOM.render`的调用，将`testTweet`对象传递给`tweet` prop。
 
 在做出这些更改后刷新页面，并确保一切看起来和以前一样（目前应该还没有变化）。
 
 ```javascript
-[](#cb72-1)// add the { tweet } destructuring
-[](#cb72-2)function Tweet({ tweet }) {
-[](#cb72-3)  return (
-[](#cb72-4)    <div className="tweet">
-[](#cb72-5)      <Avatar/>
-[](#cb72-6)      <div className="content">
-[](#cb72-7)        <NameWithHandle/><Time/>
-[](#cb72-8)        <Message/>
-[](#cb72-9)        <div className="buttons">
-[](#cb72-10)          <ReplyButton/>
-[](#cb72-11)          <RetweetButton/>
-[](#cb72-12)          <LikeButton/>
-[](#cb72-13)          <MoreOptionsButton/>
-[](#cb72-14)        </div>
-[](#cb72-15)      </div>
-[](#cb72-16)    </div>
-[](#cb72-17)  );
-[](#cb72-18)}
-[](#cb72-19)
-[](#cb72-20)// ...
-[](#cb72-21)
-[](#cb72-22)var testTweet = {
-[](#cb72-23)  message: "Something about cats.",
-[](#cb72-24)  gravatar: "xyz",
-[](#cb72-25)  author: {
-[](#cb72-26)    handle: "catperson",
-[](#cb72-27)    name: "IAMA Cat Person"
-[](#cb72-28)  },
-[](#cb72-29)  likes: 2,
-[](#cb72-30)  retweets: 0,
-[](#cb72-31)  timestamp: "2016-07-30 21:24:37"
-[](#cb72-32)};
-[](#cb72-34)ReactDOM.render(<Tweet tweet={testTweet}/>,
-[](#cb72-35)  document.querySelector('#root'));
+// add the { tweet } destructuring
+function Tweet({ tweet }) {
+  return (
+    <div className="tweet">
+      <Avatar/>
+      <div className="content">
+        <NameWithHandle/><Time/>
+        <Message/>
+        <div className="buttons">
+          <ReplyButton/>
+          <RetweetButton/>
+          <LikeButton/>
+          <MoreOptionsButton/>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+// ...
+
+var testTweet = {
+  message: "Something about cats.",
+  gravatar: "xyz",
+  author: {
+    handle: "catperson",
+    name: "IAMA Cat Person"
+  },
+  likes: 2,
+  retweets: 0,
+  timestamp: "2016-07-30 21:24:37"
+};
+ReactDOM.render(<Tweet tweet={testTweet}/>,
+  document.querySelector('#root'));
 ```
 
 ### Avatar
 
-让我们开始将静态组件转换为接受 props，从 `Avatar` 开始。在 `Tweet` 的渲染方法中，替换这一行：
+让我们开始将静态组件转换为接受 props，从`Avatar`开始。在`Tweet`的渲染方法中，替换这一行：
 
 ```javascript
-[](#cb73-1)<Avatar/>
+<Avatar/>
 ```
 
 替换为这一行：
 
 ```javascript
-[](#cb74-1)<Avatar hash={tweet.gravatar}/>
+<Avatar hash={tweet.gravatar}/>
 ```
 
-这将 tweet 的 `gravatar` 属性传递给 `hash` prop。现在更新 `Avatar` 以使用这个新 prop：
+这将 tweet 的`gravatar`属性传递给`hash` prop。现在更新`Avatar`以使用这个新 prop：
 
 ```javascript
-[](#cb75-1)function Avatar({ hash }) {
-[](#cb75-2)  var url = `https://www.gravatar.com/avatar/${hash}`;
-[](#cb75-3)  return (
-[](#cb75-4)    <img
-[](#cb75-5)      src={url}
-[](#cb75-6)      className="avatar"
-[](#cb75-7)      alt="avatar" />
-[](#cb75-8)  );
-[](#cb75-9)}
+function Avatar({ hash }) {
+  var url = `https://www.gravatar.com/avatar/${hash}`;
+  return (
+    <img
+      src={url}
+      className="avatar"
+      alt="avatar" />
+  );
+}
 ```
 
-使用 ES6 解构作为 `hash` 传入的 Gravatar hash 被整合到 URL 中并作为 `hash` 传递给图像标签。
+使用 ES6 解构作为`hash`传入的 Gravatar hash 被整合到 URL 中并作为`hash`传递给图像标签。
 
 ### Message
 
-现在我们处理 `Message`。在 `Tweet` 中替换这一行：
+现在我们处理`Message`。在`Tweet`中替换这一行：
 
 ```javascript
-[](#cb76-1)<Message/>
+<Message/>
 ```
 
 替换为这一行：
 
 ```javascript
-[](#cb77-1)<Message text={tweet.message}/>
+<Message text={tweet.message}/>
 ```
 
-我们从 tweet 中提取了 `message` 并将其传递给 `Message` 组件。然后更新 `Message` 组件以使用 `text`：
+我们从 tweet 中提取了`message`并将其传递给`Message`组件。然后更新`Message`组件以使用`text`：
 
 ```javascript
-[](#cb78-1)function Message({ text }) {
-[](#cb78-2)  return (
-[](#cb78-3)    <div className="message">
-[](#cb78-4)      {text}
-[](#cb78-5)    </div>
-[](#cb78-6)  );
+function Message({ text }) {
+  return (
+    <div className="message">
+      {text}
+    </div>
+  );
 }
 ```
 
 ### NameWithHandle and Time
 
-这次我们将同时转换两个组件：`NameWithHandle` 和 `Time`。通过替换此行更新 `Tweet` 以传递相关数据：
+这次我们将同时转换两个组件：`NameWithHandle`和`Time`。通过替换此行更新`Tweet`以传递相关数据：
 
 ```javascript
 <NameWithHandle/><Time/>
@@ -1412,40 +1061,36 @@ $ npm start
 npm install moment --save
 ```
 
-我们需要在 `index.js` 顶部导入 Moment，因此在顶部添加此行：
+我们需要在`index.js`顶部导入 Moment，因此在顶部添加此行：
 
 ```javascript
-[](#cb82-1)import moment from 'moment';
+import moment from 'moment';
 ```
 
-现在更新 `NameWithHandle` 和 `Time` 组件。你会注意到 `Time` 使用了新的 `moment` 库。
+现在更新`NameWithHandle`和`Time`组件。你会注意到`Time`使用了新的`moment`库。
 
 ```javascript
-[](#cb83-1)function NameWithHandle({ author }) {
-[](#cb83-2)  const { name, handle } = author;
-[](#cb83-3)  return (
-[](#cb83-4)    <span className="name-with-handle">
-[](#cb83-5)      <span className="name">{name}</span>
-[](#cb83-6)      <span className="handle">@{handle}</span>
-[](#cb83-7)    </span>
-[](#cb83-8)  );
+function NameWithHandle({ author }) {
+  const { name, handle } = author;
+  return (
+    <span className="name-with-handle">
+      <span className="name">{name}</span>
+      <span className="handle">@{handle}</span>
+    </span>
+  );
 }
 
-[](#cb83-12)const Time = ({ time }) => {
-[](#cb83-13)  const timeString = moment(time).fromNow();
-[](#cb83-14)  return (
-[](#cb83-15)    <span className="time">
-[](#cb83-16)      {timeString}
-[](#cb83-17)    </span>
-[](#cb83-18)  );
+const Time = ({ time }) => {
+  const timeString = moment(time).fromNow();
+  return (
+    <span className="time">
+      {timeString}
+    </span>
+  );
 };
 ```
 
-
-
-
-
-在静态推文的示例中，`Time` 被写为一个箭头函数，所以我保留了它的写法。然而，因为现在它包含 2 条语句，它需要外层的大括号，这导致它需要一个 `return`。当然，你可以通过将 `moment(time).fromNow()` 直接移动到 `<span >` 内部来简化，这样你就可以移除 `return` 和大括号。这交由你决定。
+在静态推文的示例中，`Time`被写为一个箭头函数，所以我保留了它的写法。然而，因为现在它包含 2 条语句，它需要外层的大括号，这导致它需要一个`return`。当然，你可以通过将`moment(time).fromNow()`直接移动到`<span >`内部来简化，这样你就可以移除`return`和大括号。这交由你决定。
 
 ## 应该传递什么作为 Prop？
 
@@ -1453,25 +1098,25 @@ Props 可以接受各种类型：数字、布尔值、字符串、对象，甚�
 
 在这里的示例中，我们传递的是特定的数据片段。
 
-我们也可以直接传递 `tweet` 对象本身。例如，与其直接向 `Time` 组件传递时间戳，我们不如传递 `tweet` 并让它从推文中提取时间戳。为什么不那样做呢？这里有几点原因：
+我们也可以直接传递`tweet`对象本身。例如，与其直接向`Time`组件传递时间戳，我们不如传递`tweet`并让它从推文中提取时间戳。为什么不那样做呢？这里有几点原因：
 
-*   如果 `Time` 期望一个推文对象并提取出 `timestamp` 属性，那么它除了推文对象以外的任何地方都无法使用。如果你有一个具有名为“updated_at”时间戳属性的用户，并想用 `Time` 组件渲染它怎么办？嗯，你做不到，除非你临时凑出一个“看起来像”带有时间戳的推文临时对象。
+- 如果`Time`期望一个推文对象并提取出`timestamp`属性，那么它除了推文对象以外的任何地方都无法使用。如果你有一个具有名为“updated_at”时间戳属性的用户，并想用`Time`组件渲染它怎么办？嗯，你做不到，除非你临时凑出一个“看起来像”带有时间戳的推文临时对象。
 
-*   `Time` 组件将了解 `tweet` 对象的内部结构。这看起来可能不是什么大问题，直到你有 10 个这样的组件，而后端人员决定大写字母“S”的“timeStamp”比小写的“timestamp”看起来更好，现在你必须得更新所有这些组件。将数据结构的知识保持在尽可能少的地方，是一个好主意，这样可以降低更改成本。
+- `Time`组件将了解`tweet`对象的内部结构。这看起来可能不是什么大问题，直到你有 10 个这样的组件，而后端人员决定大写字母“S”的“timeStamp”比小写的“timestamp”看起来更好，现在你必须得更新所有这些组件。将数据结构的知识保持在尽可能少的地方，是一个好主意，这样可以降低更改成本。
 
 ## Props 命名指南
 
 俗话说：“计算机科学中有两件极其困难的事：缓存失效、命名以及差一错误（off-by-one errors）。”
 
-你为 props 选择的名字将影响组件的使用方式，以及组件之间的耦合方式。想象一下，如果我们编写 `Time` 来接收一个名为 `tweetTime` 的 prop。即使我们直接传递了时间戳（而不是整个推文对象），这作为 prop 名称仍然不是一个好的选择。为什么呢？
+你为 props 选择的名字将影响组件的使用方式，以及组件之间的耦合方式。想象一下，如果我们编写`Time`来接收一个名为`tweetTime`的 prop。即使我们直接传递了时间戳（而不是整个推文对象），这作为 prop 名称仍然不是一个好的选择。为什么呢？
 
-考虑一下当下一个开发者（可能是 3 周后的你）出现，并想在应用程序中与推文无关的新部分复用 `Time` 组件会发生什么。渲染结果会正常，但代码会很别扭。如果时间戳实际上并不属于某个推文，编写 `<Time tweetTime={timestamp}/>` 就表达了错误的意图。
+考虑一下当下一个开发者（可能是 3 周后的你）出现，并想在应用程序中与推文无关的新部分复用`Time`组件会发生什么。渲染结果会正常，但代码会很别扭。如果时间戳实际上并不属于某个推文，编写`<Time tweetTime={timestamp}/>`就表达了错误的意图。
 
-更有可能的是，开发者会查看 `Time`，看到它期望 `tweetTime`，然后决定不复用该组件——要么是因为他们假设它不适用于他们的目的，要么是因为他们担心底层实现可能会改变并破坏他们的代码。
+更有可能的是，开发者会查看`Time`，看到它期望`tweetTime`，然后决定不复用该组件——要么是因为他们假设它不适用于他们的目的，要么是因为他们担心底层实现可能会改变并破坏他们的代码。
 
 ### 剩余的组件
 
-让我们回到将 `Tweet` 及其子组件转换为使用 props。只剩下两个组件了：`RetweetButton` 和 `LikeButton`，它们需要显示转发和点赞的数量。目前，它们完全没有显示任何数字，只有一个图标。
+让我们回到将`Tweet`及其子组件转换为使用 props。只剩下两个组件了：`RetweetButton`和`LikeButton`，它们需要显示转发和点赞的数量。目前，它们完全没有显示任何数字，只有一个图标。
 
 修改这两行：
 
@@ -1487,7 +1132,7 @@ Props 可以接受各种类型：数字、布尔值、字符串、对象，甚�
 <LikeButton count={tweet.likes}/>
 ```
 
-然后，更新 `RetweetButton` 和 `LikeButton` 以接受新的 `count` prop 并渲染它们各自的数字：
+然后，更新`RetweetButton`和`LikeButton`以接受新的`count` prop 并渲染它们各自的数字：
 
 ```jsx
 function getRetweetCount(count) {
@@ -1554,15 +1199,17 @@ const LikeButton = ({ count }) => (
 
 让我们过一遍代码。尽管看起来不同，这些组件确定如何显示计数的逻辑是相同的。
 
+
+
 ### RetweetButton
 
-在 `RetweetButton` 中，计算被提取到一个名为 `getRetweetCount` 的独立函数中。它要么返回一个 `<span>` 元素要么返回 `null`。
+在`RetweetButton`中，计算被提取到一个名为`getRetweetCount`的独立函数中。它要么返回一个`<span>`元素要么返回`null`。
 
-注意，我们需要在图标和计数周围引入一个包裹的 span 元素。记住，React 组件只能返回单个元素（尝试移除 span 看看会发生什么）。
+注意，我们需要在图标和计数周围引入一个包裹的`span`元素。记住，React组件只能返回单个元素（尝试移除`span`看看会发生什么）。
 
-还要注意，当 JSX 中单大括号内的表达式求值结果 `null` 或 `false` 时，什么都不会被渲染。为了证明这一点，打开 Chrome 的开发者工具元素检查器，并检查点赞数为 0 的转发按钮：不应该看到任何“like-count” span。
+还要注意，当JSX中单大括号内的表达式求值结果`null`或`false`时，什么都不会被渲染。为了证明这一点，打开Chrome的开发者工具元素检查器，并检查点赞数为0的转发按钮：不应该看到任何“like-count”`span`。
 
-值得注意的是，`getRetweetCount` 函数可以写成一个组件——它几乎已经是一个组件了。它可能像这样：
+值得注意的是，`getRetweetCount`函数可以写成一个组件——它几乎已经是一个组件了。它可能像这样：
 
 ```jsx
 function Count({ count }) {
@@ -1585,15 +1232,15 @@ const RetweetButton = ({ count }) => (
 );
 ```
 
-函数必须重命名为以大写字母开头（记住组件名称必须大写字母开头），并且它的参数需要替换为解构赋值以提取 `count`。否则它看起来是一样的。那么在 `RetweetButton` 中使用它只是插入一些 JSX 的问题。
+函数必须重命名为以大写字母开头（记住组件名称必须大写字母开头），并且它的参数需要替换为解构赋值以提取`count`。否则它看起来是一样的。那么在`RetweetButton`中使用它只是插入一些JSX的问题。
 
 ### LikeButton
 
-对于 `LikeButton`，逻辑处理稍有不同。不是将逻辑提取到函数中，而是通过布尔运算符（`&&`）内联完成。但同样，它渲染一个 span 或 null。
+对于`LikeButton`，逻辑处理稍有不同。不是将逻辑提取到函数中，而是通过布尔运算符（`&&`）内联完成。但同样，它渲染一个`span`或`null`。
 
 ### 另一种选择
 
-这里有第三种选择，纯属好玩，它的微小不同在于它总是输出一个类名为“like-count”的 `<span>`，但内容可以是空的：
+这里有第三种选择，纯属好玩，它的微小不同在于它总是输出一个类名为“like-count”的`<span>`，但内容可以是空的：
 
 ```jsx
 const LikeButton = ({ count }) => (
@@ -1606,23 +1253,19 @@ const LikeButton = ({ count }) => (
 );
 ```
 
-如你所见，使用 JSX 有多种方法可以实现相同的功能。
+如你所见，使用JSX有多种方法可以实现相同的功能。
 
-# PropTypes
+## PropTypes
 
-## 文档与调试合为一
+### 文档与调试合为一
 
-我们已经看到了“props”是什么，以及它们是如何传递给 React 组件的——但如果你忘记传递其中一个 prop 会发生什么？
+我们已经看到了“props”是什么，以及它们是如何传递给React组件的——但如果你忘记传递其中一个prop会发生什么？
 
+结果，它将是`undefined`（未定义），这就像你忘记给一个普通的函数传递参数一样。这可能完全没问题，也可能导致代码崩溃的灾难（就像你忘记给一个普通的函数传递参数一样）。
 
+不过，React拥有一个秘密武器：`PropTypes`。
 
-
-
-结果，它将是 `undefined`（未定义），这就像你忘记给一个普通的函数传递参数一样。这可能完全没问题，也可能导致代码崩溃的灾难（就像你忘记给一个普通的函数传递参数一样）。
-
-不过，React 拥有一个秘密武器：`PropTypes`。
-
-当你创建一个组件时，你可以声明某些 props 是可选的或必须的，*并且*你还可以声明该 prop 期望的类型。这里有一个示例：
+当你创建一个组件时，你可以声明某些props是可选的或必须的，*并且*你还可以声明该prop期望的类型。这里有一个示例：
 
 ```javascript
 import PropTypes from 'prop-types';
@@ -1645,13 +1288,13 @@ Comment.propTypes = {
 }
 ```
 
-首先，注意到 `PropTypes` 必须从 `prop-types` 包中显式导入。这是 React 15.5 引入的更改。如果你在使用 Create React App，你应该已经安装了这个包，但如果没有，快速运行 `npm install --save prop-types` 即可修复。
+首先，注意到`PropTypes`必须从`prop-types`包中显式导入。这是React 15.5引入的更改。如果你在使用Create React App，你应该已经安装了这个包，但如果没有，快速运行`npm install --save prop-types`即可修复。
 
-接下来，注意到 `propTypes` 被设置为函数本身的一个属性。这种写法无论组件是函数、箭头函数，甚至是 ES6 类（我们稍后会看到）都有效。
+接下来，注意到`propTypes`被设置为函数本身的一个属性。这种写法无论组件是函数、箭头函数，甚至是ES6类（我们稍后会看到）都有效。
 
-最后，注意到 `propTypes` 属性以小写“p”开头，而导入的 `PropTypes` 以大写字母“P”开头。
+最后，注意到`propTypes`属性以小写“p”开头，而导入的`PropTypes`以大写字母“P”开头。
 
-通过这组 propTypes，`message` 和 `author` 是必须的，且必须是字符串。`likes` prop 是可选的，但如果提供了，它必须必须是一个数字。尝试用几种不同的方式渲染它，并每次都检查控制台：
+通过这组propTypes，`message`和`author`是必须的，且必须是字符串。`likes`prop是可选的，但如果提供了，它必须必须是一个数字。尝试用几种不同的方式渲染它，并每次都检查控制台：
 
 ```javascript
 <Comment author='somebody' message='a likable message' likes={1}/>
@@ -1661,7 +1304,7 @@ Comment.propTypes = {
 <Comment message='mystery author'/>
 ```
 
-如果你忘记了必的 prop，React 会在控制台中向你发出警告：
+如果你忘记了必的prop，React会在控制台中向你发出警告：
 
 ```javascript
 <Comment author='an_error'/>
@@ -1683,17 +1326,17 @@ Comment.propTypes = {
 
 那么：陷阱在哪里？所有这些良好的错误处理应该有一个陷阱对吧？
 
-嗯，某种程度上。PropTypes 的唯一陷阱在于*你必须记得声明它们*。提供 propTypes 是可选的，如果你没有为其中一个组件指定 propTypes，React 不会给你任何警告。
+嗯，某种程度上。PropTypes的唯一陷阱在于*你必须记得声明它们*。提供propTypes是可选的，如果你没有为其中一个组件指定propTypes，React不会给你任何警告。
 
-你可以发誓对编写这些 propTypes 变得超级勤奋，或者让一个 *linter*（代码检查器）工具来帮你检查。我推荐后者。
+你可以发誓对编写这些propTypes变得超级勤奋，或者让一个*linter*（代码检查器）工具来帮你检查。我推荐后者。
 
-ESLint 是一个流行的选择，并且有一个用于 ESLint 的 React 插件，它可以检查缺失的 PropTypes 以及 props 是否传递正确等问题。
+ESLint是一个流行的选择，并且有一个用于ESLint的React插件，它可以检查缺失的PropTypes以及props是否传递正确等问题。
 
-## 我如何验证你，让我来数数方法
+### 我如何验证你，让我来数数方法
 
-React 的 propTypes 允许你表达许多不同的验证。默认情况下，propType 验证是*可选的*。如果你想让它变为必选，在末尾添加 `.required`。
+React的propTypes允许你表达许多不同的验证。默认情况下，propType验证是*可选的*。如果你想让它变为必选，在末尾添加`.required`。
 
-首先，有标准 JavaScript 类型的验证器：
+首先，有标准JavaScript类型的验证器：
 
 * `PropTypes.array`
 * `PropTypes.bool`
@@ -1702,22 +1345,22 @@ React 的 propTypes 允许你表达许多不同的验证。默认情况下，pro
 * `PropTypes.object`
 * `PropTypes.string`
 
-你之前在 `Comment` 组件中看到了 `string` 和 `number` 验证器。其他的工作原理相同——验证传入的是数组、布尔值、函数或或其他任何内容。
+你之前在`Comment`组件中看到了`string`和`number`验证器。其他的工作原理相同——验证传入的是数组、布尔值、函数或或其他任何内容。
 
-还有用于 `node` 和 `element` 的验证器。`node` 是任何可以被渲染的内容，意味着数字、字符串、元素或这些内容的数组。`element` 是通过 JSX 或调用 `React.createElement` 创建的 React 元素：
+还有用于`node`和`element`的验证器。`node`是任何可以被渲染的内容，意味着数字、字符串、元素或这些内容的数组。`element`是通过JSX或调用`React.createElement`创建的React元素：
 
 * `PropTypes.node`
 * `PropTypes.element`
 
-有一个 `instanceOf` 验证器，用于检查 prop 是否是特定类的实例。它接受一个参数：
+有一个`instanceOf`验证器，用于检查prop是否是特定类的实例。它接受一个参数：
 
 * `PropTypes.instanceOf(SpecificClass)`
 
-你可以使用 `oneOf` 限制为特定值：
+你可以使用`oneOf`限制为特定值：
 
 * `PropTypes.oneOf(['person', 'place', 1234])`
 
-你可以验证 prop 是否是几种类型之一：
+你可以验证prop是否是几种类型之一：
 
 ```javascript
 PropTypes.oneOfType([
@@ -1729,13 +1372,13 @@ PropTypes.oneOfType([
 你可以验证它是否是特定类型的数组，或者是一个其属性为特定类型值的对象：
 
 * `PropTypes.arrayOf(PropTypes.string)`
-    * 会匹配：`['a', 'b', 'c']`
-    * 不匹配：`['a', 'b', 42]`
+  * 会匹配：`['a', 'b', 'c']`
+  * 不匹配：`['a', 'b', 42]`
 * `PropTypes.objectOf(PropTypes.number)`
-    * 会匹配：`{age: 27, birthMonth: 9}`
-    * 不匹配：`{age: 27, name: 'Joe'}`
+  * 会匹配：`{age: 27, birthMonth: 9}`
+  * 不匹配：`{age: 27, name: 'Joe'}`
 
-你可以验证一个对象是否具有特定的*形状*（shape），意味着它具有特定的属性。传递给此 prop 的对象允许拥有*额外*属性，但它至少必须包含形状描述中的那些属性。
+你可以验证一个对象是否具有特定的*形状*（shape），意味着它具有特定的属性。传递给此prop的对象允许拥有*额外*属性，但它至少必须包含形状描述中的那些属性。
 
 ```javascript
 PropTypes.shape({
@@ -1764,7 +1407,7 @@ person = {
 }
 ```
 
-这个 PropTypes `shape` 要求 `name` 和 `age` 键，所以如果我们遗漏了其中一个，它将无法通过。这会生成一个警告：
+这个PropTypes `shape`要求`name`和`age`键，所以如果我们遗漏了其中一个，它将无法通过。这会生成一个警告：
 
 ```javascript
 person = {
@@ -1781,9 +1424,9 @@ person = {
 }
 ```
 
-### 必选 Props
+### 必选Props
 
-任何 PropType 验证都可以通过在末尾添加 `.required` 变为必选。这些都是必选的：
+任何PropType验证都可以通过在末尾添加`.required`变为必选。这些都是必选的：
 
 ```javascript
 PropTypes.bool.isRequired
@@ -1794,17 +1437,13 @@ PropTypes.shape({
 }).isRequired
 ```
 
-记住，所有的 PropTypes 默认都是*可选的*，这意味着如果你忘记传递值或在 prop 名称中出现拼写错误，将不会获得控制台警告。在大多数情况下，你可能希望在你的 PropType 验证后附加 `.required`。
+记住，所有的PropTypes默认都是*可选的*，这意味着如果你忘记传递值或在prop名称中出现拼写错误，将不会获得控制台警告。在大多数情况下，你可能希望在你的PropType验证后附加`.required`。
 
 ### 自定义验证器
 
-如果内置的 PropType 验证器表达力不够，你可以编写自己的！该函数应该接收 `props`、`propName` 和 `componentName`，并在验证失败时返回一个 `Error`。注意是*返回*一个 Error，而不是*抛出*一个 Error。
+如果内置的PropType验证器表达力不够，你可以编写自己的！该函数应该接收`props`、`propName`和`componentName`，并在验证失败时返回一个`Error`。注意是*返回*一个Error，而不是*抛出*一个Error。
 
-一个用于检查传递的 prop 长度恰好为 3（字符串或数组）的自定义验证器看起来如下：
-
-
-
-
+一个用于检查传递的prop长度恰好为3（字符串或数组）的自定义验证器看起来如下：
 
 ```javascript
 function customValidator(props, propName, componentName) {
@@ -1843,36 +1482,36 @@ ReactDOM.render(
 );
 ```
 
-## 示例：带有 PropTypes 的推文
+### 示例：带有PropTypes的推文
 
-最后一次，让我们回到推文示例，看看 PropTypes 是如何应用到一组真实的组件的。
+最后一次，让我们回到推文示例，看看PropTypes是如何应用到一组真实的组件的。
 
 回想一下，结构如下：
 
 - `Tweet`
-    - `Avatar`
-    - `NameWithHandle`
-    - `Time`
-    - `Message`
-    - `ReplyButton`
-    - `RetweetButton`
-    - `LikeButton`
-    - `MoreOptionsButton`
+  - `Avatar`
+  - `NameWithHandle`
+  - `Time`
+  - `Message`
+  - `ReplyButton`
+  - `RetweetButton`
+  - `LikeButton`
+  - `MoreOptionsButton`
 
 而它看起来应该是这样的：
 
 ![Finished Tweet](img/file8.png)
 
-从下往上，为这些组件添加 PropTypes。复制一份之前的 `props-tweet` 代码，这样我们就可以放心地修改它了：
+从下往上，为这些组件添加PropTypes。复制一份之前的`props-tweet`代码，这样我们就可以放心地修改它了：
 
 ```bash
 $ cp -a props-tweet proptypes-tweet && cd proptypes-tweet
 $ npm start
 ```
 
-按钮是一个很好的开始点。`MoreOptionsButton` 完全不接收 props，所以我们不需要更改它。
+按钮是一个很好的开始点。`MoreOptionsButton`完全不接收props，所以我们不需要更改它。
 
-`LikeButton` 可以可选地接收一个 `count` prop，因此我们为为它添加一个 PropType：
+`LikeButton`可以可选地接收一个`count`prop，因此我们为它添加一个PropType：
 
 ```javascript
 const LikeButton = ({ count }) => (
@@ -1890,7 +1529,7 @@ LikeButton.propTypes = {
 };
 ```
 
-要验证它是否有效，进入 `Tweet` 组件，并尝试向 `LikeButton` 传递字符串而不是数字：
+要验证它是否有效，进入`Tweet`组件，并尝试向`LikeButton`传递字符串而不是数字：
 
 ```javascript
 // 将此内容：
@@ -1906,11 +1545,11 @@ LikeButton.propTypes = {
 
 很好！一切运行正常。
 
-将该行代码改回原来的样子，并为 `RetweetButton` 添加一个 `count` PropType。按钮是一个很好的开始点。`MoreOptionsButton` 完全不接收 props，所以我们不需要更改它。
+将该行代码改回原来的样子，并为`RetweetButton`添加一个`count`PropType。按钮是一个很好的开始点。`MoreOptionsButton`完全不接收props，所以我们不需要更改它。
 
-`LikeButton` 可以可选地接收一个 `count` prop，因此我们为它添加一个 PropType：
+`LikeButton`可以可选地接收一个`count`prop，因此我们为它添加一个PropType：
 
-要验证它是否有效，进入 `Tweet` 组件，并尝试向 `LikeButton` 传递字符串而不是数字：
+要验证它是否有效，进入`Tweet`组件，并尝试向`LikeButton`传递字符串而不是数字：
 
 如果你现在刷新（或等待浏览器自动刷新），你应该会在开发者控制台中看到类似这样的警告：
 
@@ -1918,34 +1557,35 @@ LikeButton.propTypes = {
 
 很好！一切运行正常。
 
-将该行代码改回原来的样子，并为 `RetweetButton` 添加一个 `count` PropType。按钮是一个很好的开始点。`MoreOptionsButton` 完全不接收 props，所以我们不需要更改它。（注：提供的源文本包含一些重复片段；我已经精简了核心逻辑流）。
 
-### 你应该写得多显式？
+
+将该行代码改回原来的样子，并为 `RetweetButton` 添加一个 `count` PropType。按钮是一个很好的开始点。`MoreOptionsButton` 完全不接收 props，所以我们不需要更改它。（注：提供的源文本包含一些重复片段；我已经精简了核心逻辑流。）
+
+## 你应该写得多显式？
 
 当对象很简单时，写出 `shape` 是很容易证明的。当对象更复杂时，你可能会开始怀疑这是否值得。答案取决于你的情况。
 
-### 作为文档的 PropTypes 关于关于 PropTypes 最后一点：除了有助于调试之外，它们还充当了良好的文档。当你几天、一周或一个月后回到一个组件时，PropTypes 将充当类似于“README”的角色。你不需要扫描代码来解码哪些 props 是必须的。
+## 作为文档的 PropTypes
 
-### 练习
+关于 `PropTypes` 最后一点：除了有助于调试之外，它们还充当了良好的文档。当你几天、一周或一个月后回到一个组件时，`PropTypes` 将充当类似于“README”的角色。你不需要扫描代码来解码哪些 `props` 是必须的。
+
+## 练习
 
 谁说你必须按照 Web 接口来建模组件？现实世界的对象也是很好的练习。你将在下面构建其中一些：
 
-1. 创建一个 `AddressLabel` 组件，它接收一个 `person` 对象作为 prop，并如下所示他们的姓名和地址：
+1. 创建一个 `AddressLabel` 组件，它接收一个 `person` 对象作为 `prop`，并如下所示他们的姓名和地址：
 
-```
+```text
 Full Name
 123 Fake St.
 Boston, MA 02118
 ```
 
-2. 创建一个 `Envelope` 组件，它接收 `toPerson` 和 `fromPerson` 作为 props，并使用练习 1 中的 `AddressLabel` 来显示发件地址和收件地址。确保也包含一个 `Stamp`！
+2. 创建一个 `Envelope` 组件，它接收 `toPerson` 和 `fromPerson` 作为 `props`，并使用练习 1 中的 `AddressLabel` 来显示发件地址和收件地址。确保也包含一个 `Stamp`！
 
 3. 根据此设计创建一个 `CreditCard` 组件。使用 CSS 或内联样式对其进行美化。接受一个 `cardInfo` prop，其中包含人的姓名、过期日期、信用卡号和银行名称。
 
-4. 创建一个 `Poster` 组件，它接收 `image`、`title` 和 `text` 作为 props。渲染类似下面图片的内容。搜索“demotivational posters”（反励志海报）来获取灵感。
-
-
-
+4. 创建一个 `Poster` 组件，它接收 `image`、`title` 和 `text` 作为 `props`。渲染类似下面图片的内容。搜索“demotivational posters”（反励志海报）来获取灵感。
 
 我们已经看到 JSX 如何像 HTML 一样表达嵌套组件。我们也看到自定义组件可以接受 `props` 作为参数，并使用这些 `props` 来渲染内容或将它们传递给子组件。
 
@@ -1953,7 +1593,7 @@ Boston, MA 02118
 
 假设你想创建一个可复用的 `IconButton` 组件，它看起来像这样：
 
-![IconButton](img/file14.png) 
+![IconButton](img/file14.png)
 
 你可能想象是这样使用它：
 
@@ -1975,9 +1615,9 @@ function IconButton() {
 }
 ```
 
-渲染出来的组件将是一个带有图标的按钮，*没有任何文本*。它看起来像这样：
+渲染出来的组件将是一个带有图标的按钮，**没有任何文本**。它看起来像这样：
 
-![IconButton](img/file15.png) 
+![IconButton](img/file15.png)
 
 通过微小的调整，我们可以将文本放在图标之后：
 
@@ -2004,7 +1644,7 @@ function IconButton({ children }) {
 
 ## 处理 Children
 
-React 提供了了一些实用函数来处理这种不透明的数据结构。
+React 提供了一些实用函数来处理这种不透明的数据结构。
 
 - `React.Children.map(children, function)`
 - `React.Children.forEach(children, function)`
@@ -2040,7 +1680,7 @@ propTypes: {
 }
 ```
 
-请注意，这期望一个单个 `React Element` 作为子元素。这意味着它必须是一个自定义组件，或者像 `<div>` 这样的标签。如果你传递字符串或数字，`PropTypes.element` 将发出警告。如果你需要允许元素*或*字符串，可以这样使用 `oneOfType` 验证器：
+请注意，这期望一个单个 `React Element` 作为子元素。这意味着它必须是一个自定义组件，或者像 `<div>` 这样的标签。如果你传递字符串或数字，`PropTypes.element` 将发出警告。如果你需要允许元素或字符串，可以这样使用 `oneOfType` 验证器：
 
 ```jsx
 propTypes: {
@@ -2059,7 +1699,7 @@ propTypes: {
 
 React 的 `children` prop 是类似的概念，但更强大，而且稍微更容易理解。
 
-## 一个更有有趣的示例
+## 一个更有趣的示例
 
 在上面的示例中，我们简单地插入了一些文本。如果我们想做一些更有表现力的事情，比如创建我们自定义的组件层次结构呢？
 
@@ -2099,7 +1739,7 @@ function Nav({ children }) {
 
 1. 创建一个组件来显示一个像这样的“错误框”：
 
-![An error box](img/file16.png) 
+![An error box](img/file16.png)
 
 调用该组件应该如下：
 
@@ -2113,7 +1753,7 @@ function Nav({ children }) {
 
 2. 每个 React 组件都有一个 `type` 属性，这意味着你可以通过 `React.Children.forEach` 遍历来检查子元素的类型。
 
-创建我们看过的 `Nav` 和 `NavItem` 组件。`NavItem` 应该接受 `url` prop 和链接文本作为子元素，然后渲染一个指向该 `url` 的锚点标签`<a>`）。
+创建我们看过的 `Nav` 和 `NavItem` 组件。`NavItem` 应该接受 `url` prop 和链接文本作为子元素，然后渲染一个指向该 `url` 的锚点标签 `<a>`。
 
 接下来，修改 `Nav` 组件以检查它的每个子元素是否都是 `NavItem`，如果发现其他类型的组件，则抛出异常。
 
@@ -2139,47 +1779,44 @@ function Nav({ children }) {
 
 3. 创建一个 `Dialog` 组件，它接受 `Title`、`Body` 和 `Footer` 组件作为子元素，所有都是可选的。`Dialog` 应该验证它的子元素是否为这些类型之一，并输出类似这样的内容：
 
-![A dialog](img/file17.png) 
+![A dialog](img/file17.png)
 
-可以自由 Bootstrap 的模态样式，或者创建自己的样式。
+可以自由使用 Bootstrap 的模态样式，或者创建自己的样式。
 
 # 示例：GitHub 文件列表
 
-你现在已经掌握了一些组件。你已经学习了 props 和 propTypes，并编写了一些 JSX。
+你现在已经掌握了一些组件。你已经学习了 `props` 和 `propTypes`，并编写了一些 JSX。
 
 在我们进入状态和交互之前，我想通过一个包含我们目前为止所学的所有内容的示例来演示一遍。这里也将涵盖一些新的技巧。
-
-
-
 
 考虑到这些，让我们创建一个新组件来还原 GitHub 的文件列表。这就是你在每个 GitHub 仓库顶部看到的内容：
 
 ![GitHub file list](img/file18.png)
 
-### 拆解组件
+## 拆解组件
 
 第一步是勾勒或高亮截图中的所有组件。基本上，我们在这里做的是在设计中的 `div` 元素周围画框。
 
 ![高亮后的 GitHub 组件](img/file19.png)
 
-### 为组件命名
+## 为组件命名
 
 一旦你决定了哪些部分将成为组件，就给它们命名。对于上面的高亮部分，我设计了这些名称（缩进是为了显示父子关系）：
 
-*   `FileList`
-*   `FileListItem`
-    *   `FileName`
-    *   `FileIcon`
-    *   `CommitMessage`
-    *   `Time`
+- `FileList`
+- `FileListItem`
+  - `FileName`
+  - `FileIcon`
+  - `CommitMessage`
+  - `Time`
 
-### 有什么是可以复用的吗？
+## 有什么是可以复用的吗？
 
 查看整个组件列表，看看是否能在任何地方节省你的工作。
 
 嘿，看！那个 `Time` 组件看起来和我们为 `Tweet` 写的那个非常相似。幸运的是，我们写的那个 `Time` 组件是通用的，它只接受时间而不是推文。我们可以在这里复用它。
 
-### 每个组件需要什么数据？
+## 每个组件需要什么数据？
 
 接下来，让我们确定每个组件渲染所需的数据。这将为每个组件确定出 `props` 和 `propTypes`。
 
@@ -2197,25 +1834,25 @@ function Nav({ children }) {
 
 最后，`Time` 将接收一个绝对时间 `time` 字符串。我们将复用为 `Tweet` 制作的 `Time` 组件，包括它的 `propTypes`。
 
-### 自顶向下向下还是自底而上？
+## 自顶向下还是自底而上？
 
 对于这一个，我们将从顶部开始向下进行。
 
-### 保持运行
+## 保持运行
 
 在构建组件时，这是一个应该努力的目标：确保它始终可以运行！
 
-你是否有过那样的经历：埋头写了很长时间代码，却从未运行过代码？避免地，当你第一次运行它时会出现某些问题。
+你是否有过那样的经历：埋头写了很长时间代码，却从未运行过代码？不可避免地，当你第一次运行它时会出现某些问题。
 
 这令人失望，并且会让你感到泄气。你最终不得不追踪大量的语法错误、逻辑错误以及任何其他问题，才能看到你的心血变为现实。
 
 所以当你编写时，尝试进行小幅更改，并频繁刷新。确保代码始终运行正常。
 
-### FileList
+## FileList
 
 我们已经有了足够的方向来开始工作。按照我们之前做几次的方法创建一个新项目：
 
-```
+```bash
 $ create-react-app github-file-list && cd github-file-list
 $ rm src/App.* src/logo.svg
 ```
@@ -2228,7 +1865,9 @@ $ rm src/App.* src/logo.svg
 
 创建 `FileList` 组件。为了尽可能采用简单且运行的方法，我们将渲染一个纯的文件名的无序列表。一旦它运行通了，我们就把列表项提取到 `FileListItem` 组件中。
 
-```
+
+
+```javascript
 [](#cb121-1)// 在此处放置导入
 [](#cb121-2)
 [](#cb121-3)const FileList = ({ files }) => (
@@ -2246,7 +1885,7 @@ $ rm src/App.* src/logo.svg
 [](#cb121-15)  files: PropTypes.array
 [](#cb121-16)};
 [](#cb121-17)
-[](#cb121-18)const testFiles = 
+[](#cb121-18)const testFiles =
 [  {
 [](#cb121-20)    id: 1,
 [](#cb121-21)    name: 'src',
@@ -2286,15 +1925,15 @@ $ rm src/App.* src/logo.svg
 
 ## “key” Prop
 
-`<tr>` 上的 `key` prop 是一个特殊的 prop，每当你渲染元素数组时都是必须的。React 使用它在重新渲染期间调和差异时区分组件。如果你想了解更多关于为什么 `key` 重要的细节，请阅读关于[调和算法](https://facebook.github.io/react/docs/reconciliation.html) 的官方文档。
+`<tr>` 上的 `key` prop 是一个特殊的 prop，每当你渲染元素数组时都是必须的。React 使用它在重新渲染期间调和差异时区分组件。如果你想了解更多关于为什么 `key` 重要的细节，请阅读关于[调和算法](https://facebook.github.io/react/docs/reconciliation.html)的官方文档。
 
 每当你使用 `map` 渲染数组时，你需要在最顶层元素上使用 `key`。React 在渲染之前会消耗 `key` prop，因此你传递 `key` 的组件实际上并不会接收到该 prop。
 
-在实践中，重要的是对于数组中的每个元素，`key` 应该是**稳定的（stable）**、**永久的（permanent）**且**唯一的（unique）**。
+在实践中，重要的是对于数组中的每个元素，`key` 应该是稳定的（stable）、永久的（permanent）且唯一的（unique）。
 
-*   **稳定 (Stable)**：无论元素在数组中的位置如何，它应该始终具有相同的 key。这意味着 `key={index}` 是一个坏主意。
-*   **永久 (Permanent)**：元素的 key 在不同渲染之间不能更改。这意味着 `key={Math.random()}` 是一个坏主意。
-*   **唯一 (Unique)**：没有两个元素应该有相同的 key。
+- **稳定（Stable）**：无论元素在数组中的位置如何，它应该始终具有相同的 key。这意味着 `key={index}` 是一个坏主意。
+- **永久（Permanent）**：元素的 key 在不同渲染之间不能更改。这意味着 `key={Math.random()}` 是一个坏主意。
+- **唯一（Unique）**：没有两个元素应该有相同的 key。
 
 如果一个项目有一个唯一的 ID，那么它是 `key` 的绝佳选择。如果项目没有 ID，尝试使用哈希函数，或者使用 [shortid](https://www.npmjs.com/package/shortid) 等库生成唯一 ID。
 
@@ -2302,13 +1941,9 @@ $ rm src/App.* src/logo.svg
 
 ### FileListItem
 
-通常情况下创建一个独立的组件来渲染列表中的单个项目是一个好主意，所以我们现在这样做。尽管这个示例很小，可以不管，但我们将将其提取出来以演示这个过程。
+通常情况下创建一个独立的组件来渲染列表中的单个项目是一个好主意，所以我们现在这样做。尽管这个示例很小，可以不管，但我们将其提取出来以演示这个过程。
 
 注意我们仍然需要传递 `key` prop。`key` 需要直接分配给数组中的顶层组件，而不是它们的子元素。
-
-
-
-
 
 ```javascript
 const FileList = ({ files }) => (
@@ -2358,9 +1993,11 @@ FileListItem.propTypes = {
 }
 ```
 
-如果你还没有添加，别忘记添加导入 CSS 文件的行（`import './index.css'`）。![FileList](img/file21.png) 
+如果你还没有添加，别忘记添加导入 CSS 文件的行（`import './index.css'`）。
 
-现在我们已经有了基本的结构，可以将剩余的组件添加到行组件中。`FileIcon`、`FileName`、`CommitMessage` 和 `Time`。
+![FileList](img/file21.png)
+
+现在我们已经有了基本的结构，可以将剩余的组件添加到行组件中：`FileIcon`、`FileName`、`CommitMessage` 和 `Time`。
 
 让我们先处理 `FileIcon` 和 `FileName`，因为它们是嵌套在一起的。在看后文之前，尝试自己编写代码。这是一个比较特殊的例子。
 
@@ -2397,11 +2034,11 @@ function getFileName(file) {
 
 这只是一个接收 `file` 并返回元素数组的函数。组件不能在不用元素包裹它们的情况下返回数组。为什么要这样写呢？
 
-问题在于我们正处于表格行 (`<tr>`) 内部，并且我们需要两个相邻的 `<td>`，但真正的组件不能在没有包装器的情况下返回裸露数组。
+问题在于我们正处于表格行（`<tr>`）内部，并且我们需要两个相邻的 `<td>`，但真正的组件不能在没有包装器的情况下返回裸露数组。
 
-你可以通过将 `FileIcon` 和 `FileName` 写为独立的组件来完全避免这个问题，每个组件都返回一个 `<td>` 单元格（而不是像我们现在这样将 `FileIcon` 嵌套在 `FileName` 内部）。这认为是比这种方法更好的解决方案！我之所以这样写是为了展示这种边缘情况，以防你遇到无法避免的情况。如果可能，请避免这种情况。
+你可以通过将 `FileIcon` 和 `FileName` 写为独立的组件来完全避免这个问题，每个组件都返回一个 `<td>` 单元格（而不是像我们现在这样将 `FileIcon` 嵌套在 `FileName` 内部）。这被认为是比这种方法更好的解决方案！我之所以这样写是为了展示这种边缘情况，以防你遇到无法避免的情况。如果可能，请避免这种情况。
 
-在编写时，React 16（又名 React Fiber）即将问世，并承诺解决从组件中返回多个元素的问题。你可以在 [`isfiberreadyyet.com/`](http://isfiberreadyyet.com/)  Fiber 的进展。
+在编写时，React 16（又名 React Fiber）即将问世，并承诺解决从组件中返回多个元素的问题。你可以在 [`isfiberreadyyet.com/`](http://isfiberreadyyet.com/) 查看 Fiber 的进展。
 
 注意我们在这里为 `key` 传递了硬编码的值。我不是刚刚说过不要这样做吗？
 
@@ -2496,9 +2133,6 @@ export default Time;
 import Time from './time';
 ```
 
-
-
-
 由于导入的是自己的文件而不是 `node_modules` 中的内容，因此路径需要是相对路径（`./time`），而不是简单的模块名（`time`）。
 
 然后，我们可以更新 `FileListItem`。注意 `Time` 不会渲染 `<td>`，所以我们必须将其包裹在其中：
@@ -2518,7 +2152,7 @@ FileListItem.propTypes = {
 };
 ```
 
-添加一点样式……：
+添加一点样式：
 
 ```css
 .age {
@@ -2561,50 +2195,50 @@ FileListItem.propTypes = {
 ### 练习
 
 1. 重构 GitHub 文件列表示例，让没有任何组件返回表格单元格（`<td>`）。每个组件都应该返回 `<span>` 或 `<div>`。这使得它们更具复用性，并且应该极大改进 `FileList` 内部的代码。如有必要修改 CSS。
-
-2. 在实际应用中，大多数时候你希望每个文件只有一个组件。有时，一个文件会包含几个相关的组件，且这些组件总是被一起使用（如之前的 `Nav`/`NavItem` 示例），否则它们应该是分开的。重构练习 1 中的代码，使用 `import` 和 `export` 将组件提取到单独的文件中
-
+2. 在实际应用中，大多数时候你希望每个文件只有一个组件。有时，一个文件会包含几个相关的组件，且这些组件总是被一起使用（如之前的 `Nav`/`NavItem` 示例），否则它们应该是分开的。重构练习 1 中的代码，使用 `import` 和 `export` 将组件提取到单独的文件中。
 3. 现在你知道如何使用 `Array` 的 `.map` 函数来创建列表了。复用之前的 `Tweet` 组件并创建一个推文列表。
 
 列表无处不在。有人说，大多数 Web 应用基本上只是一堆列表。请实现网络上这些网站的界面。遵循我们已经过的几次的流程——突出屏幕上哪些部分将作为组件，给它们命名，然后构建它们。
 
 ### 4. Trello
 
+
+
 尝试渲染单个卡片列表。为了更多练习，请并排渲染多个卡片列表。
 
-（截图来自 [`trello.com`](https://trello.com））
+（截图来自[`trello.com`](https://trello.com））
 
 ![Trello](img/file25.png)
 
-### 5. Hacker News
+## 5. Hacker News
 
 实现故事列表。为了更多练习，也请实现头部部分。
 
-（截图来自 [`news.ycombinator.com/news`](https://news.ycombinator.com/news））
+（截图来自[`news.ycombinator.com/news`](https://news.ycombinator.com/news））
 
 ![HN](img/file26.png)
 
-### 6. Pinterest
+## 6. Pinterest
 
-实现图片卡片列表。为了更多练习，也请实现头部（考虑复用之前的 `Nav` 和 `NavItem` 组件）。
+实现图片卡片列表。为了更多练习，也请实现头部（考虑复用之前的`Nav`和`NavItem`组件）。
 
-（截图来自 [`www.pinterest.com/aviationhd/`](https://www.pinterest.com/aviationhd/））
+（截图来自[`www.pinterest.com/aviationhd/`](https://www.pinterest.com/aviationhd/））
 
 ![Pinterest](img/file27.png)
 
-### 7. InternetRadio 流派云
+## 7. InternetRadio 流派云
 
 你能想出一个好的方法来调整按钮大小，让它们逐渐变大吗？
 
-（截图来自 [`www.internet-radio.com/`](https://www.internet-radio.com/））
+（截图来自[`www.internet-radio.com/`](https://www.internet-radio.com/））
 
 ![音乐流派](img/file28.png)
 
 # State
 
-到目前为止，我们一直使用 `props` 向组件传递数据。但 `props` 是只读的。如果你需要跟踪可以更改的数据怎么办？这就是 `state`（状态）用用场。
+到目前为止，我们一直使用`props`向组件传递数据。但`props`是只读的。如果你需要跟踪可以更改的数据怎么办？这就是`state`（状态）有用的地方。
 
-为了看到 `state` 有用，让我们回顾 Props 章节中的一个示例。这里有一个包含 `Child` 组件的 `Parent` 组件。`Parent` 传递了一个函数，`Child` 每次点击按钮时都会调用该函数：
+为了看到`state`有用，让我们回顾 Props 章节中的一个示例。这里有一个包含`Child`组件的`Parent`组件。`Parent`传递了一个函数，`Child`每次点击按钮时都会调用该函数：
 
 ## 示例：计数器
 
@@ -2628,13 +2262,13 @@ function Child({ onAction }) {
 }
 ```
 
-如果我们想让 `Parent` 跟踪按钮被点击的次数呢？换句话说，`Parent` 应该跟踪它的 `handleAction` 函数被调用了多少次。
+如果我们想让`Parent`跟踪按钮被点击的次数呢？换句话说，`Parent`应该跟踪它的`handleAction`函数被调用了多少次。
 
-为了这一点，`Parent` 需要 3 个新东西：一个计数器设置为 0 的 `initial state`、一次调用 `this.setState` 来增加计数器，以及一种显示当前计数的方法。
+为了这一点，`Parent`需要 3 个新东西：一个计数器设置为 0 的`initial state`、一次调用`this.setState`来增加计数器，以及一种显示当前计数的方法。
 
-但记住，函数组件是没有状态的。要让 `Parent` 具有状态，它需要被转换为 ES6 `class` 组件。
+但记住，函数组件是没有状态的。要让`Parent`具有状态，它需要被转换为 ES6`class`组件。
 
-这是 `Parent` 的新版本，重命名为 `CountingParent`——确保你更新了对 `ReactDOM.render` 的调用！
+这是`Parent`的新版本，重命名为`CountingParent`——确保你更新了对`ReactDOM.render`的调用！
 
 ```javascript
 class CountingParent extends React.Component {
@@ -2662,23 +2296,19 @@ class CountingParent extends React.Component {
 }
 ```
 
-`Child` 组件完全不需要更改。尝试一下吧！点击按钮。看着它递增。噢。啊。真棒的计数器。
+`Child`组件完全不需要更改。尝试一下吧！点击按钮。看着它递增。噢。啊。真棒的计数器。
 
 好了，也许增加一个数字并不是什么开创性的成就，但让我们看看这里发生了什么。
 
-当组件首次被实例化时，它的初始状态是通过 `state = {...}` 属性初始化器设置的。虽然这种语法不是 ES6 的正式部分，但它被 Babel 和 Create React App 支持，并在 React 社区中广泛使用。（另一种方法是在*构造函数*中设置初始状态，我们稍后会看到）。
+当组件首次被实例化时，它的初始状态是通过`state = {...}`属性初始化器设置的。虽然这种语法不是 ES6 的正式部分，但它被 Babel 和 Create React App 支持，并在 React 社区中广泛使用。（另一种方法是在构造函数中设置初始状态，我们稍后会看到）。
 
-接下来，你点击按钮，就像它要求你的那样。按钮的 `onClick` 处理程序被调用。在这种情况下，它是 `onAction` prop，它最终调用了 `CountingParent` 中的 `handleAction` 函数。`handleAction` 函数记录了一条消息，然后调用 `this.setState` 并传入一个描述新状态的对象。
+接下来，你点击按钮，就像它要求你的那样。按钮的`onClick`处理程序被调用。在这种情况下，它是`onAction` prop，它最终调用了`CountingParent`中的`handleAction`函数。`handleAction`函数记录了一条消息，然后调用`this.setState`并传入一个描述新状态的对象。
 
+`setState`函数将更新状态并重新渲染组件及其所有的子组件。因此，接下来发生的是：`CountingParent`的`render`函数被调用，它会查看`this.state.actionCount`，而此时该值已经增加到了 1。或者是 2，如果你疯狂点击那个按钮，它也可能是其他数字。
 
+请注意，每个组件实例都有自己的状态。如果你在页面上有两个`CountingParent`组件，它们将各自拥有从 0 开始并独立增加的计数器。你可以通过创建一个包含几个`CountingParent`的组件来向自己证明这一点：
 
-
-
-`setState` 函数将更新状态并重新渲染组件及其所有的子组件。因此，接下来发生的是：`CountingParent` 的 `render` 函数被调用，它会查看 `this.state.actionCount`，而此时该值已经增加到了 1。或者是 2，如果你疯狂点击那个按钮，它也可能是其他数字。
-
-请注意，每个组件实例都有自己的状态。如果你在页面上有两个 `CountingParent` 组件，它们将各自拥有从 0 开始并独立增加的计数器。你可以通过创建一个包含几个 `CountingParent` 的组件来向自己证明这一点：
-
-```
+```javascript
 const Page = () => (
   <div>
     <CountingParent/>
@@ -2688,19 +2318,19 @@ const Page = () => (
 );
 ```
 
-确保更新 `ReactDOM.render` 调用，以渲染一个 `Page` 而不是 `CountingParent`。现在点击这些按钮，观察计数器如何独立变化。
+确保更新`ReactDOM.render`调用，以渲染一个`Page`而不是`CountingParent`。现在点击这些按钮，观察计数器如何独立变化。
 
 ### 练习：重置按钮
 
-这里有一个快速练习：在 `CountingParent` 中添加一个“Reset（重置）” 按钮，在点击它时将计数器重置为 0。只需将 `button` 直接放在 `CountingParent` 内部即可。
+这里有一个快速练习：在`CountingParent`中添加一个“Reset（重置）”按钮，在点击它时将计数器重置为 0。只需将`button`直接放在`CountingParent`内部即可。
 
-一旦运行成功，重构你的代码，将“Reset” 按钮移动到 `Child` 中。
+一旦运行成功，重构你的代码，将“Reset”按钮移动到`Child`中。
 
 ## setState 是异步的
 
-我刚才骗了你。很抱歉。我暗示了 `setState` 函数会立即更新状态并调用 `render`。事实并非完全是那样的。`setState` 函数实际上是*异步的*。
+我刚才骗了你。很抱歉。我暗示了`setState`函数会立即更新状态并调用`render`。事实并非完全是那样的。`setState`函数实际上是异步的。
 
-如果你调用了 `setState` 并立即执行 `console.log(this.state)`，它很可能会打印出旧的状态，而不是你刚刚设置的那个。
+如果你调用了`setState`并立即执行`console.log(this.state)`，它很可能会打印出旧的状态，而不是你刚刚设置的那个。
 
 如果你需要设置状态并立即对该更改采取行动，可以这样传递一个回调函数：
 
@@ -2713,7 +2343,7 @@ this.setState({name: 'Joe'}, function() {
 
 ### 函数式 setState
 
-另一种让连续的状态更新按顺序执行的方法是使用 `setState` 的*函数式*形式，如下所示：
+另一种让连续的状态更新按顺序执行的方法是使用`setState`的函数式形式，如下所示：
 
 ```javascript
 this.setState((state, props) => {
@@ -2723,7 +2353,7 @@ this.setState((state, props) => {
 });
 ```
 
-在这种形式下，你向 `setState` 传递了一个函数。该函数接收当前状态和 props 作为参数，并预期返回想要的新状态。如果你连续运行几个这样的操作……
+在这种形式下，你向`setState`传递了一个函数。该函数接收当前状态和 props 作为参数，并预期返回想要的新状态。如果你连续运行几个这样的操作……
 
 ```javascript
 this.setState((state, props) => {
@@ -2743,13 +2373,13 @@ this.setState((state, props) => {
 });
 ```
 
-这将会按照预期的方式工作，最终将 `value` 增加 3。它之所以有效，是因为调用 `setState` 会按调用的顺序将更新“放入队列”，而当它们被执行时，它们接收的是最新的状态作为参数，而不是使用可能已经过时的 `this.state`。
+这将会按照预期的方式工作，最终将`value`增加 3。它之所以有效，是因为调用`setState`会按调用的顺序将更新“放入队列”，而当它们被执行时，它们接收的是最新的状态作为参数，而不是使用可能已经过时的`this.state`。
 
-`setState` 函数式风格的一个额外好处是，状态更新函数可以从类中提取出来并重用，因为它们是“纯”的——也就是说，它们只对参数进行操作，不会修改参数，并返回一个新值。“纯”函数没有副作用，这意味着使用相同的参数多次调用它将始终返回相同的结果。
+`setState`函数式风格的一个额外好处是，状态更新函数可以从类中提取出来并重用，因为它们是“纯”的——也就是说，它们只对参数进行操作，不会修改参数，并返回一个新值。“纯”函数没有副作用，这意味着使用相同的参数多次调用它将始终返回相同的结果。
 
 ## 浅合并与深合并
 
-当你调用 `setState` 时，无论是用对象调用还是用函数形式调用，结果都是它会将你对象中的属性与当前状态进行*浅合并*。这是它的工作原理。
+当你调用`setState`时，无论是用对象调用还是用函数形式调用，结果都是它会将你对象中的属性与当前状态进行浅合并。这是它的工作原理。
 
 “浅合并”行为意味着如果你有如下状态：
 
@@ -2764,7 +2394,7 @@ this.setState((state, props) => {
 }
 ```
 
-然后你执行 `this.setState({ score: 42 })`，新状态将是：
+然后你执行`this.setState({ score: 42 })`，新状态将是：
 
 ```javascript
 {
@@ -2777,9 +2407,9 @@ this.setState((state, props) => {
 }
 ```
 
-也就是说，它会将你传递给 `setState`（或从函数版本返回）的对象与现有状态进行*合并*。它不会抹除现有状态。
+也就是说，它会将你传递给`setState`（或从函数版本返回）的对象与现有状态进行合并。它不会抹除现有状态。
 
-相反，如果你运行 `this.setState({ user: { age: 4 } })`，那么它将用新对象替换整个 `user` 对象：
+相反，如果你运行`this.setState({ user: { age: 4 } })`，那么它将用新对象替换整个`user`对象：
 
 ```javascript
 {
@@ -2791,9 +2421,6 @@ this.setState((state, props) => {
 }
 ```
 
-
-
-
 适应 React 意味着要改变解决某些问题的方式。这让我想起在道路的另一侧驾驶的经历。
 
 我第一次经历这种事是在访问特尔克斯和凯科斯群岛（Turks and Caicos）。那里的车辆是左侧行驶。我来自美国，那里是右侧行驶，所以这需要进行一些“重新编程”。我在离开机场的路上差点丢了命。
@@ -2804,9 +2431,9 @@ this.setState((state, props) => {
 
 我讲这个故事是因为我在学习 React 时也有过类似的经历，我想很多其他人也是如此。
 
-向组件传递 props（就像该组件是一个函数一样）是有意义的我们的大脑习惯了这一点。它看起来和运行起来像 HTML。
+向组件传递 props（就像该组件是一个函数一样）是有意义的，我们的大脑习惯了这一点。它看起来和运行起来像 HTML。
 
-对于简单的情况，将数据向下`down`传递并将事件向上传递`up`的想法也很快就能被理解。这是在其他地方常用的“回调”模式，所以并不算陌生。向按钮传递一个 `onClick` 处理器是正常的。
+对于简单的情况，将数据向下`down`传递并将事件向上传递`up`的想法也很快就能被理解。这是在其他地方常用的“回调”模式，所以并不算陌生。向按钮传递一个`onClick`处理器是正常的。
 
 但当需要打开模态对话框时会发生什么？或者在角落显示 Growl 风格的通知？或者响应事件对图标进行动画处理？你可能会像我一样发现，这些命令式的、“基于事件的”事物在 React 的声明式世界中并不是自然而然的。
 
@@ -2816,27 +2443,27 @@ this.setState((state, props) => {
 
 这里有几个示例。
 
-#### 展开/折叠风琴琴（Accordion）控件
+#### 展开/折叠风琴（Accordion）控件
 
-**旧方法**：点击切换按钮通过调用其 `toggle` 函数来打开或关闭风琴琴。风琴琴知道自己是开启还是关闭状态。
+**旧方法**：点击切换按钮通过调用其`toggle`函数来打开或关闭风琴。风琴知道自己是开启还是关闭状态。
 
-**声明式方法**：风琴琴要么处于“打开”状态，要么处于“关闭”状态，我们将该信息存储在父组件状态中的标志中（*不是*在风琴琴内部）。我们通过传递 `isOpen` 作为 prop 来告诉风琴琴应该如何渲染。当 `isOpen` 为 `true` 时，它渲染为打开。当 `isOpen` 为 `false` 时，它渲染为关闭。
+**声明式方法**：风琴要么处于“打开”状态，要么处于“关闭”状态，我们将该信息存储在父组件状态中的标志中（不是在风琴内部）。我们通过传递`isOpen`作为 prop 来告诉风琴应该如何渲染。当`isOpen`为`true`时，它渲染为打开。当`isOpen`为`false`时，它渲染为关闭。
 
-```
+```javascript
 <Accordion isOpen={true}/>
 // 或
 <Accordion isOpen={false}/>
 ```
 
-这个例子非常简单。希望不要太绕脑。最大的变化在于，在 React 的声明式方法，展开/折叠状态存储在风琴琴*外部*，并作为 prop 传递进来。
+这个例子非常简单。希望不要太绕脑。最大的变化在于，在 React 的声明式方法中，展开/折叠状态存储在风琴外部，并作为 prop 传递进来。
 
 ### 打开和关闭对话框
 
 **旧方法**：点击按钮打开模态。点击它的关闭按钮关闭它。
 
-**声明式方法**：模态是否打开*是一个状态*。它要么处于“打开”状态，要么处于“关闭”状态。所以，如果它是“打开”，我们便渲染模态。如果它是“关闭”，我们就不渲染模态。此外，我们可以向模态传递一个 `onClose` 回调——这样*父组件*就可以决定当用户点击关闭时会发生什么。
+**声明式方法**：模态是否打开是一个状态。它要么处于“打开”状态，要么处于“关闭”状态。所以，如果它是“打开”，我们便渲染模态。如果它是“关闭”，我们就不渲染模态。此外，我们可以向模态传递一个`onClose`回调——这样父组件就可以决定当用户点击关闭时会发生什么。
 
-```
+```javascript
 <div>
   {this.state.isModalOpen &&
     <Modal onClose={this.handleClose}/>}
@@ -2845,9 +2472,9 @@ this.setState((state, props) => {
 
 ### 通知
 
-**旧方法**：当发生事件（如错误）时，调用通知库来显示弹出窗口，如 `toastr.error("Oh no!")`。
+**旧方法**：当发生事件（如错误）时，调用通知库来显示弹出窗口，如`toastr.error("Oh no!")`。
 
-**声明式方法**：将通知视为状态。可以有 0 个、1 个或 2 个通知……将它们存储在数组中。将一个 NotificationTray 组件放在应用的根部附近，并向它传递要显示的消息。你可以在根组件的状态中管理消息数组，并将 `addNotification` prop 传递给需要它的组件。
+**声明式方法**：将通知视为状态。可以有 0 个、1 个或 2 个通知……将它们存储在数组中。将一个`NotificationTray`组件放在应用的根部附近，并向它传递要显示的消息。你可以在根组件的状态中管理消息数组，并将`addNotification` prop 传递给需要它的组件。
 
 ### 为变化制作动画
 
@@ -2855,7 +2482,7 @@ this.setState((state, props) => {
 
 **旧方法**：你可能会使用 jQuery 来切换一个播放动画的类，或者使用 jQuery 直接对元素执行动画。
 
-**声明式方法**：你可以通过实现 `componentWillReceiveProps` *生命周期方法* 并比较旧值和新值来响应 props 的变化（你将在第 14 章中学习更多关于生命周期方法的知识）。如果发生了变化，你可以将“正在动画”的状态设置为 `true`。然后在 `render` 中，当“animating”为 `true` 时，添加一个执行动画的 CSS 类。当“animating”为 `false` 时，不添加该类。它可能是这样的：
+**声明式方法**：你可以通过实现`componentWillReceiveProps`生命周期方法并比较旧值和新值来响应 props 的变化（你将在第 14 章中学习更多关于生命周期方法的知识）。如果发生了变化，你可以将“正在动画”的状态设置为`true`。然后在`render`中，当“animating”为`true`时，添加一个执行动画的 CSS 类。当“animating”为`false`时，不添加该类。它可能是这样的：
 
 ```javascript
 class Badge extends Component {
@@ -2892,15 +2519,13 @@ class Badge extends Component {
 
 考虑页面上可以显示或隐藏的部分，比如像这样的侧边栏：
 
-![带有侧边栏的 UI](img/file29.png) 
+![带有侧边栏的 UI](img/file29.png)
 
-当你点击“隐藏”按钮时，侧边栏应该消失，这意味着将 `showSidebar` 标志设置为 `false`。这个标志应该存储在某个地方的状态中。但在哪里呢？
+当你点击“隐藏”按钮时，侧边栏应该消失，这意味着将`showSidebar`标志设置为`false`。这个标志应该存储在某个地方的状态中。但在哪里呢？
 
-选项 1，`showSidebar` 标志可以存在 `Sidebar` 组件中。这样 `Sidebar` 就“知道”自己是否打开。这与*不受控输入*（uncontrolled inputs）的工作原理类似，我们将在下一章看到。
+选项 1，`showSidebar`标志可以存在`Sidebar`组件中。这样`Sidebar`就“知道”自己是否打开。这与不受控输入（uncontrolled inputs）的工作原理类似，我们将在下一章看到。
 
-选项 2，`showSidebar` 标志可以放在父组件 `Layout` 中，由父组件来决定是否渲染 Sidebar：
-
-
+选项 2，`showSidebar`标志可以放在父组件`Layout`中，由父组件来决定是否渲染 Sidebar：
 
 
 
@@ -2991,7 +2616,7 @@ const Sidebar = ({
 
 现在你已经掌握了状态是如何运作的，我们可以聊聊输入了。React 中的输入有两种类型：受控和非受控。
 
-### # 受控输入
+### 受控输入
 
 它们之所以被称为“受控”的，是因为你负责它们的状态。你需要传递一个值和一个回调作为 props 传入。
 
@@ -3045,10 +2670,6 @@ class TrickInput extends React.Component {
 
 不过，这种方法非常强大。如果你想进行某种自定义验证或格式化，可以在 `handleChange` 函数中实现。现在，也许你的第一反应是对于一个简单的输入来说这需要很多代码。你没没错，但这种方法确实提供了很大的威力。不想让用户输入数字？在更新状态之前过滤掉数字即可。
 
-
-
-
-
 ```javascript
 class NoNumbersInput extends React.Component {
   // ...
@@ -3073,7 +2694,7 @@ class NoNumbersInput extends React.Component {
 
 ## 非受控输入
 
-当一个输入是“非受控的”（`uncontrolled）时，它管理自己的内部状态。因此，你可以像这样在页面上放置一个 `input`（不带 `value` 属性）：
+当一个输入是“非受控的”（`uncontrolled`）时，它管理自己的内部状态。因此，你可以像这样在页面上放置一个 `input`（不带 `value` 属性）：
 
 ```javascript
 const EasyInput = () => (
@@ -3163,24 +2784,21 @@ class LifecycleDemo extends React.Component {
 ReactDOM.render(<LifecycleDemo/>, document.querySelector('#root'));
 ```
 
-
-
-
 你会发现这两个页面非常相似。与之前的示例相比，这一个示例的组件粒度较粗。组件将拥有更大的 `render` 函数，并且其中包含更多的“内容”。你以后可以对它们进行拆分，有时避免在早期就将其抽象成微小的部分反而更好。
 
 以下是我们将构建的组件：
 
-*   `App`
-    *   `ItemPage`
-    *   `CartPage`
-    *   `Item`
-    *   `Nav`
+- `App`
+  - `ItemPage`
+  - `CartPage`
+  - `Item`
+  - `Nav`
 
 # 开始构建
 
 我们将从创建一个新项目开始：
 
-```
+```bash
 $ create-react-app shopper && cd shopper
 ```
 
@@ -3232,7 +2850,7 @@ export default Nav;
 
 启动应用并查看目前的效果：
 
-```
+```bash
 $ npm start
 ```
 
@@ -3292,35 +2910,13 @@ class App extends Component {
 
 现在，我们需要将 `handleTabChange` 函数传递给 `Nav`，连同 `activeTab` 以便它可以正确渲染。我们还将更新 `renderContent` 来显示激活的页面。
 
-```javascript
-class App extends Component {
-  // ...
 
-  renderContent() {
-    switch(this.state.activeTab) {
-      default:
-      case 0: return <span>Items</span>;
-      case 1: return <span>Cart</span>;
-    }
-  }
 
-  render() {
-    let {activeTab} = this.state;
-    return (
-      <div className="App">
-        <Nav activeTab={activeTab} handleTabChange={this.handleTabChange} />
-        <main className="App-content">
-          {this.renderContent()}
-        </main>
-      </div>
-    );
-  }
-}
-```
+## 更新导航组件
 
-将 `handleTabChange` 函数传递给 `Nav`，连同 `activeTab` 以便它可以正确渲染。我们还将更新 `renderContent` 来显示激活的页面。
+将`handleTabChange`函数传递给`Nav`，连同`activeTab`以便它可以正确渲染。我们还将更新`renderContent`来显示激活的页面。
 
-更新 `src/Nav.js` 中的 `Nav` 组件以使用代码：
+更新`src/Nav.js`中的`Nav`组件以使用代码：
 
 ```javascript
 const Nav = ({ activeTab, handleTabChange }) => (
@@ -3333,14 +2929,11 @@ const Nav = ({ activeTab, handleTabChange }) => (
 );
 ```
 
-
-
-
-在这里，`handleClick` 函数将只在组件首次渲染时被创建`once`。这解决了问题（`render` 不再创建函数），但代价是代码变得更加复杂（需要一个全新的组件！）。这是一种权衡，当你自己在自己的项目中遇到这个问题时，它是值得考虑的。
+在这里，`handleClick`函数将只在组件首次渲染时被创建`once`。这解决了问题（`render`不再创建函数），但代价是代码变得更加复杂（需要一个全新的组件！）。这是一种权衡，当你自己在自己的项目中遇到这个问题时，它是值得考虑的。
 
 ## 创建 ItemPage
 
-让我们关注待售列表。我们将创建一个新组件来显示这些数据。创建一个名为 `ItemPage.js` 的文件并输入以下内容：
+让我们关注待售列表。我们将创建一个新组件来显示这些数据。创建一个名为`ItemPage.js`的文件并输入以下内容：
 
 ```javascript
 import React from 'react';
@@ -3367,7 +2960,7 @@ export default ItemPage;
 
 这里没什么新内容：我们只是在遍历一个项目列表并渲染它们。由于单个项目的内容将比仅仅一个“名称”要复杂得多，我们稍后会将其提取到自己的组件中。
 
-此组件依赖于 `ItemPage.css`，该文件尚不存在。创建该文件并添加此 CSS 来设置样式：
+此组件依赖于`ItemPage.css`，该文件尚不存在。创建该文件并添加此CSS来设置样式：
 
 ```css
 .ItemPage-items {
@@ -3384,7 +2977,7 @@ export default ItemPage;
 
 即使我有可以返回真实数据的服务器，我也喜欢从静态数据开始。当没有动态部分时，你可以很快地从无到有。而且老实，当屏幕上有我可以调整的东西时，这更有趣。
 
-创建一个名为 `static-data.js` 的文件（在 `src` 目录下）并粘贴这段代码。
+创建一个名为`static-data.js`的文件（在`src`目录下）并粘贴这段代码。
 
 ```javascript
 let items = [
@@ -3423,14 +3016,14 @@ let items = [
 export {items};
 ```
 
-然后，我们将这些项目传递给新的 `ItemPage` 组件。回到 `App.js` 中，导入 `ItemPage` 和静态的 `items` 数据。
+然后，我们将这些项目传递给新的`ItemPage`组件。回到`App.js`中，导入`ItemPage`和静态的`items`数据。
 
 ```javascript
 import ItemPage from './ItemPage';
 import {items} from './static-data';
 ```
 
-然后更新 `renderContent` 函数以使用新的 ItemPage：
+然后更新`renderContent`函数以使用新的`ItemPage`：
 
 ```javascript
 class App extends Component {
@@ -3452,13 +3045,13 @@ class App extends Component {
 
 ## 创建 Item
 
-现在让我们创建真正的 `Item` 组件供 `ItemList` 使用。它将接收一个 `item` prop，我们还希望将其加入购物车，所以它也应该接收一个 `onAddToCart` prop。
+现在让我们创建真正的`Item`组件供`ItemList`使用。它将接收一个`item`prop，我们还希望将其加入购物车，所以它也应该接收一个`onAddToCart`prop。
 
 此组件将是无状态的。它的职责是显示项目，并在点击“加入购物车”按钮时让父组件知道。
 
-借鉴 GitHub 的示例，我们不会从此组件返回一个 `<li>`。我们不希望强制使用 `Item` 的用户将其放在 `<ul>` 内部。父组件可以根据自己的选择将此项目放入 `<li>` 中。
+借鉴GitHub的示例，我们不会从此组件返回一个`<li>`。我们不希望强制使用`Item`的用户将其放在`<ul>`内部。父组件可以根据自己的选择将此项目放入`<li>`中。
 
-基于这一点，创建 `src/Item.js` 和 `src/Item.css`。在 `src/Item.js` 中编写组件：
+基于这一点，创建`src/Item.js`和`src/Item.css`。在`src/Item.js`中编写组件：
 
 ```javascript
 import React from 'react';
@@ -3494,7 +3087,7 @@ Item.propTypes = {
 export default Item;
 ```
 
-现在让我们将其连接到 `ItemPage` 组件。在 `ItemPage.js` 中，将代码更新如下：
+现在让我们将其连接到`ItemPage`组件。在`ItemPage.js`中，将代码更新如下：
 
 ```javascript
 import React from 'react';
@@ -3523,13 +3116,13 @@ ItemPage.propTypes = {
 export default ItemPage;
 ```
 
-我们正在导入 `Item`，现在我们在 `<li>` 内部渲染 `Item` 组件而不仅仅是项目名称。新增加的是 `onAddToCart` prop 及其关联的贯。
+我们正在导入`Item`，现在我们在`<li>`内部渲染`Item`组件而不仅仅是项目名称。新增加的是`onAddToCart`prop及其关联的贯。
 
-在此时，代码将无法工作，并且会有一个关于缺少 `onAddToCart` prop 的警告。
+在此时，代码将无法工作，并且会有一个关于缺少`onAddToCart`prop的警告。
 
-为了完成传递 prop 的链，我们需要从 `App` 组件内部向 `ItemPage` 的 `onAddToCart` prop 传递一些内容。既然都这样了，我们不如真的把项目添加到购物车中！这需要在 state 中添加一个新的 `cart` 属性。
+为了完成传递prop的链，我们需要从`App`组件内部向`ItemPage`的`onAddToCart`prop传递一些内容。既然都这样了，我们不如真的把项目添加到购物车中！这需要在state中添加一个新的`cart`属性。
 
-让我们过一遍。首先，在 `App.js` 中，向初始状态添加一个 `cart` 属性，并将其初始化为空数组：
+让我们过一遍。首先，在`App.js`中，向初始状态添加一个`cart`属性，并将其初始化为空数组：
 
 ```javascript
 class App extends Component {
@@ -3541,11 +3134,7 @@ class App extends Component {
 }
 ```
 
-然后更新 `renderContent` 以传递一个函数作为 `onAddToCart` prop：
-
-
-
-
+然后更新`renderContent`以传递一个函数作为`onAddToCart`prop：
 
 ```javascript
 class App extends Component {
@@ -3569,7 +3158,7 @@ class App extends Component {
 }
 ```
 
-函数 `this.handleAddToCart` 还没有存在，所以接下来创建它。它将接受一个项目，并将将其添加到购物车中：
+函数`this.handleAddToCart`还没有存在，所以接下来创建它。它将接受一个项目，并将将其添加到购物车中：
 
 ```javascript
 class App extends Component {
@@ -3585,9 +3174,9 @@ class App extends Component {
 }
 ```
 
-这段代码的作用是将 `cart` 状态设置为当前购物车的副本，加上一个新项目。
+这段代码的作用是将`cart`状态设置为当前购物车的副本，加上一个新项目。
 
-这里使用了一些新的 ES6 语法：`...this.state.cart` 是 `spread`（展开）运算符，它会将给定的数组展开为它的各个项目。以下是展开运算符的一个示例：
+这里使用了一些新的ES6语法：`...this.state.cart`是`spread`（展开）运算符，它会将给定的数组展开为它的各个项目。以下是展开运算符的一个示例：
 
 ```javascript
 // 使用数组：
@@ -3600,11 +3189,11 @@ var o1 = {a: 1, b: 2};
 var o2 = {...o1, c: 3}; // => {a: 1, b: 2, c: 3}
 ```
 
-注意，数组的展开运算符正式是 ES6 的一部分，但对象的展开不是。然而，Babel 支持对象展开，而 Create React App 底层正使用 Babel 将我们的代码转换为浏览器兼容的 ES5。
+注意，数组的展开运算符正式是ES6的一部分，但对象的展开不是。然而，Babel支持对象展开，而Create React App底层正使用Babel将我们的代码转换为浏览器兼容的ES5。
 
 ### 以不可变的方式更新状态
 
-你可能在想……为什么不直接修改状态然后调用 `setState` 呢，像这样：
+你可能在想……为什么不直接修改状态然后调用`setState`呢，像这样：
 
 ```javascript
 this.state.cart.push(item.id);
@@ -3613,13 +3202,13 @@ this.setState({cart: this.state.cart});
 
 这是一个坏主意，原因有两个（尽管在这个示例中它可以运行）。
 
-你应该`永远不要`直接修改（mutate）状态或其子属性。不要执行 `this.state.something = x`，也不要执行 `this.state = x`。React 依赖于你在想要更改时调用 `this.setState`，以便它知道发生了了变化并触发重新渲染。如果你绕过了 `setState`，UI 将与数据不同步。
+你应该`永远不要`直接修改（mutate）状态或其子属性。不要执行`this.state.something = x`，也不要执行`this.state = x`。React依赖于你在想要更改时调用`this.setState`，以便它知道发生了了变化并触发重新渲染。如果你绕过了`setState`，UI将与数据不同步。
 
-直接修改状态会导致奇怪的 bug，以及难以优化的组件。
+直接修改状态会导致奇怪的bug，以及难以优化的组件。
 
-这是一个示例。记住，优化 React 组件的常用方法之一是使其变得“纯”，这意味着它只在 props 改变时才重新渲染。这可以通过扩展 `React.PureComponent` 而不是 `React.Component` 来自动完成，也可以通过手动实现 `shouldComponentUpdate` 周期方法来比较 `nextProps` 和当前的 props。如果 props 看起来一样，它就会跳过渲染并节省时间。
+这是一个示例。记住，优化React组件的常用方法之一是使其变得“纯”，这意味着它只在props改变时才重新渲染。这可以通过扩展`React.PureComponent`而不是`React.Component`来自动完成，也可以通过手动实现`shouldComponentUpdate`周期方法来比较`nextProps`和当前的props。如果props看起来一样，它就会跳过渲染并节省时间。
 
-这是一个渲染项目列表的简单组件。注意它扩展了 `React.PureComponent`。
+这是一个渲染项目列表的简单组件。注意它扩展了`React.PureComponent`。
 
 （如果你有示例代码，这段代码位于“impure-state”文件夹下。）
 
@@ -3641,7 +3230,9 @@ class ItemList extends React.PureComponent {
 }
 ```
 
-现在，有一个小型应用，它渲染 `ItemList` 并允许你以可变或不可变的方式向列表添加项目：
+现在，有一个小型应用，它渲染`ItemList`并允许你以可变或不可变的方式向列表添加项目。
+
+
 
 ```javascript
 class App extends Component {
@@ -3697,10 +3288,6 @@ class App extends Component {
 }
 ```
 
-
-
-
-
 ```css
 .Item {
   display: flex;
@@ -3755,7 +3342,7 @@ class App extends Component {
 
 这样看起来好多了：
 
-![带有样式效果](img/file40.png) 
+![带有样式效果](img/file40.png)
 
 ## 创建 CartPage
 
@@ -3848,7 +3435,7 @@ class App extends Component {
 }
 ```
 
-## reduce
+## `reduce`
 
 `reduce` 函数是如下代码的函数式简写：
 
@@ -3871,13 +3458,13 @@ let total = a.reduce((sum, value) => {
 
 `reduce` 函数接收一个回调函数和一个可选的初始值。回调函数会在数组的每个元素上被调用一次，并传递累加值和当前元素。
 
-## Object.keys
+## `Object.keys`
 
-`Object.keys` 返回对象中所有键的数组。例如 `Object.keys({a: 1, b: 2})` 将返回 `['a', 'b']`。对象没有像数组那样的内置 `forEach` 函数，所以 `Object.keys` 让遍历键变得更加容易。
+`Object.keys` 返回对象中所有键的数组。例如，`Object.keys({a: 1, b: 2})` 将返回 `['a', 'b']`。对象没有像数组那样的内置 `forEach` 函数，所以 `Object.keys` 让遍历键变得更加容易。
 
 ### 修改购物车
 
-此时此，“购物车”标签页应该可以工作了。点击“加入购物车”几个商品，然后切换到“购物车”标签页，商品应该在那那里了。我们仍然有“加入购物车”按钮，并且收到了关于 `onAddToCart` 的 propType 警告。接下来我们将修复这两个问题。
+此时，“购物车”标签页应该可以工作了。点击“加入购物车”几个商品，然后切换到“购物车”标签页，商品应该在那那里了。我们仍然有“加入购物车”按钮，并且收到了关于 `onAddToCart` 的 propType 警告。接下来我们将修复这两个问题。
 
 ![购物车已工作](img/file41.png)
 
@@ -3890,9 +3477,6 @@ let total = a.reduce((sum, value) => {
 一种想法：我们可以复制 `Item` 组件，将其重命名为 `CartItem`，并根据需要进行自定义。这种方法快速简单，但会导致代码重复。
 
 另一种想法：我们可以让 `Item` 接收一个 prop，告诉它它是“普通商品”还是“购物车商品”。使用该 prop，`Item` 将决定渲染“加入购物车”按钮还是“添加/移除”按钮。这种方法行得通，但很凌乱——`Item` 承担了多个职责。如果以后在第三种情况下需要重用 `Item`，我们可能会添加更多的条件逻辑，导致 `Item` 变得越来越难以理解和维护。
-
-
-
 
 第三种思路是将 `children` 传递给 `Item`，让它来决定将其放在哪里。这是我们将实现的思路。这使得 `Item` 具有很好的复用性。如果你想要“加入购物车”按钮，就将其传进去；如果你想要的是添加/删除按钮，也把它们传进去。让我们来看看它是如何运作的。
 
@@ -3922,7 +3506,7 @@ Item.propTypes = {
 
 在曾经有 `<button>` 的地方，我们现在用 `{children}` 代替。此外，`Item` 不再需要感知 `onAddToCart` 函数，因此我们删除了它的 propType。
 
-如果你在此时刷新页面，你会发现“加入购物车”按钮已经从购物车页面*以及*商品页面中消失了。为了修复这个问题，打开 `ItemPage.js` 并将 `<button>` 作为 `Item` 的子元素传递：
+如果你在此时刷新页面，你会发现“加入购物车”按钮已经从购物车页面以及商品页面中消失了。为了修复这个问题，打开 `ItemPage.js` 并将 `<button>` 作为 `Item` 的子元素传递：
 
 ```javascript
 function ItemPage({ items, onAddToCart }) {
@@ -4011,11 +3595,13 @@ class App extends Component {
 }
 ```
 
-我们使用了两次数组*展开*（spread）运算符，以避免变变状态。我们获取数组的左半部分（直到我们要删除的商品），并与数组的右半部分（被删除商品之后的所有内容）拼接。
+我们使用了两次数组展开（spread）运算符，以避免变变状态。我们获取数组的左半部分（直到我们要删除的商品），并与数组的右半部分（被删除商品之后的所有内容）拼接。
 
 这比允许变异要多一点工作，但这是一个值得养成的习惯。如果你将来开始使用 Redux，这将特别重要。Redux 极度依赖不可变性。
 
 为了完善添加/删除按钮，让我们给它们添加一些样式。在 `CartPage.css` 中添加此 CSS：
+
+
 
 ```css
 .CartPage-items {
@@ -4047,7 +3633,7 @@ class App extends Component {
 
 ![Cart is working](img/file42.png)
 
-### 练习
+## 练习
 
 1. 如果购物车能告诉我们准备在苹果产品上花费多少美元，而不是让我们猜会更好。在购物车页面底部添加一个“总计”，如下所示：
 
@@ -4076,7 +3662,7 @@ class App extends Component {
 
 遵循我们整本书以来的方法：列出截图中的组件，决定需要保留哪些状态以及哪些组件应该拥有这些状态，然后开始构建组件。
 
-Reddit 的 API 是公开的，不需要密钥。你可以使用静态数据，例如 http://www.reddit.com/r/reactjs.json 将将其保存到文件中并像我们在几个示例中所那样进行导入。
+Reddit 的 API 是公开的，不需要密钥。你可以使用静态数据，例如 `http://www.reddit.com/r/reactjs.json` 将将其保存到文件中并像我们在几个示例中所那样进行导入。
 
 5. 构建一个简化版的 Slack，模型基于此 UI：
 
@@ -4085,18 +3671,14 @@ Reddit 的 API 是公开的，不需要密钥。你可以使用静态数据，�
 它应该具备的功能有：
 
 * 频道列表
-
-
-
-
-*   用户列表
-*   为当前选中的通道或用户维护状态
-*   点击通道或用户进行选择
-*   一次只能选择一个通道或用户
-*   每个通道和用户都有自己的消息历史
-*   为每个通道生成一些虚假消息
-*   仅在选中通道或用户时，在底部显示输入框
-*   在输入框中输入并按回车键会将该消息添加到选中的通道/用户中，并清空输入。
+* 用户列表
+* 为当前选中的通道或用户维护状态
+* 点击通道或用户进行选择
+* 一次只能选择一个通道或用户
+* 每个通道和用户都有自己的消息历史
+* 为每个通道生成一些虚假消息
+* 仅在选中通道或用户时，在底部显示输入框
+* 在输入框中输入并按回车键会将该消息添加到选中的通道/用户中，并清空输入。
 
 # 接下来该去哪里
 
@@ -4169,4 +3751,3 @@ React 的力量之一是可以按照你喜欢的方式构建自己的技术栈�
 ## 感谢
 
 非常感谢你不仅购买而且完成了这本书。我很想知道你的想法——哪些做得好，哪些需要改进，或者对未来主题的任何建议。可以通过邮件 dave@daveceddia.com 联系我，或在 Twitter 上通过 @dceddia 联系我。
-

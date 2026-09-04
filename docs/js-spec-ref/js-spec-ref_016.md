@@ -1,33 +1,5 @@
-# 3.1 Object 对象
 
-*   概述
-*   Object 对象的方法
-    *   Object()
-    *   Object.keys()，Object.getOwnPropertyNames()
-    *   Object.observe()
-    *   其他方法
-    *   Object 实例对象的方法
-        *   Object.prototype.valueOf()
-        *   Object.prototype.toString()
-        *   toString()的应用：判断数据类型
-    *   对象的属性模型
-        *   属性的 attributes 对象，Object.getOwnPropertyDescriptor()
-        *   Object.defineProperty()，Object.defineProperties()
-        *   可枚举性（enumerable）
-        *   Object.getOwnPropertyNames()
-        *   Object.prototype.propertyIsEnumerable()
-        *   可配置性（configurable）
-        *   可写性（writable）
-        *   存取器（accessor）
-    *   控制对象状态
-        *   Object.preventExtensions 方法
-        *   Object.isExtensible 方法
-        *   Object.seal 方法
-        *   Object.isSealed 方法
-        *   Object.freeze 方法
-        *   Object.isFrozen 方法
-        *   局限性
-    *   参考链接
+# 3.1 Object 对象
 
 ## 概述
 
@@ -180,22 +152,31 @@ delete o.foo; // delete, 'foo', 2
 （1）对象属性模型的相关方法
 
 *   Object.getOwnPropertyDescriptor()：获取某个属性的 attributes 对象。
+
 *   Object.defineProperty()：通过 attributes 对象，定义某个属性。
+
 *   Object.defineProperties()：通过 attributes 对象，定义多个属性。
+
 *   Object.getOwnPropertyNames()：返回直接定义在某个对象上面的全部属性的名称。
 
 （2）控制对象状态的方法
 
 *   Object.preventExtensions()：防止对象扩展。
+
 *   Object.isExtensible()：判断对象是否可扩展。
+
 *   Object.seal()：禁止对象配置。
+
 *   Object.isSealed()：判断一个对象是否可配置。
+
 *   Object.freeze()：冻结一个对象。
+
 *   Object.isFrozen()：判断一个对象是否被冻结。
 
 （3）原型链相关方法
 
 *   Object.create()：生成一个新对象，并该对象的原型。
+
 *   Object.getPrototypeOf()：获取对象的 Prototype 对象。
 
 ## Object 实例对象的方法
@@ -205,10 +186,15 @@ delete o.foo; // delete, 'foo', 2
 Object 实例对象的方法，主要有以下六个。
 
 *   valueOf()：返回当前对象对应的值。
+
 *   toString()：返回当前对象对应的字符串形式。
+
 *   toLocalString()：返回当前对象对应的本地字符串形式。
+
 *   hasOwnProperty()：判断某个属性是否为当前对象自身的属性，还是继承自原型对象的属性。
+
 *   isPrototypeOf()：判断当前对象是否为另一个对象的原型。
+
 *   propertyIsEnumerable()：判断某个属性是否可枚举。
 
 本节介绍前两个方法，其他方法将在后文相关章节介绍。
@@ -294,10 +280,15 @@ o.toString() // "[object Object]"
 实例对象的 toString 方法，实际上是调用 Object.prototype.toString 方法。使用 call 方法，可以在任意值上调用 Object.prototype.toString 方法，从而帮助我们判断这个值的类型。不同数据类型的 toString 方法返回值如下：
 
 *   数值：返回[object Number]。
+
 *   字符串：返回[object String]。
+
 *   布尔值：返回[object Boolean]。
+
 *   undefined：返回[object Undefined]。
+
 *   null：返回[object Null]。
+
 *   对象：返回"[object " + 构造函数的名称 + "]" 。
 
 ```js
@@ -514,7 +505,9 @@ for (var i in o) {
 可枚举性（enumerable）用来控制所描述的属性，是否将被包括在 for...in 循环之中。具体来说，如果一个属性的 enumerable 为 false，下面三个操作不会取到该属性。
 
 *   for..in 循环
+
 *   Object.keys 方法
+
 *   JSON.stringify 方法
 
 因此，enumerable 可以用来设置“秘密”属性。
@@ -614,7 +607,7 @@ o.propertyIsEnumerable("p") // true
 o.propertyIsEnumerable("toString") // false
 ```
 
-上面代码中，用户自定义的 p 属性是可枚举的，而继承自原型对象的 toString 属性是不可枚举的。
+上面代码中，用户自定的 p 属性是可枚举的，而继承自原型对象的 toString 属性是不可枚举的。
 
 ### 可配置性（configurable）
 
@@ -693,7 +686,7 @@ o.p2 // 2
 
 上面代码中的对象 o 有两个属性，p1 是可配置的，p2 是不可配置的。结果，p2 就无法删除。
 
-需要注意的是，当使用 var 命令声明变量时，变量的 configurable 为 false。
+需要注意的是，当使用 var 命令声变量时，变量的 configurable 为 false。
 
 ```js
 var a1 = 1;
@@ -1108,9 +1101,15 @@ o.hello // undefined
 ## 参考链接
 
 *   Axel Rauschmayer, [Protecting objects in JavaScript](http://www.2ality.com/2013/08/protecting-objects.html)
+
 *   kangax, [Understanding delete](http://perfectionkills.com/understanding-delete/)
+
 *   Jon Bretman, [Type Checking in JavaScript](http://techblog.badoo.com/blog/2013/11/01/type-checking-in-javascript/)
+
 *   Cody Lindley, [Thinking About ECMAScript 5 Parts](http://tech.pro/tutorial/1671/thinking-about-ecmascript-5-parts)
+
 *   Bjorn Tipling, [Advanced objects in JavaScript](http://bjorn.tipling.com/advanced-objects-in-javascript)
+
 *   Javier Márquez, [Javascript properties are enumerable, writable and configurable](http://arqex.com/967/javascript-properties-enumerable-writable-configurable)
+
 *   Sella Rafaeli, [Native JavaScript Data-Binding](http://www.sellarafaeli.com/blog/native_javascript_data_binding): 使用存取函数实现 model 与 view 的双向绑定

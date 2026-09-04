@@ -1,19 +1,9 @@
+
 # JavaScript 算法
-
-
-
-![](img/title_page.jpg)
 
 ![JavaScript 算法](img/title_page.jpg)
 
-
-
-
-
 ![出版商标志](img/leanpub-logo.png)
-
-
-
 
 ## 指南
 
@@ -43,17 +33,7 @@
 
 ### 我们渴望听听你的反馈！
 
-你喜欢这本书吗？你觉得它有帮助吗？我们乐意将你的评价加入我们网站的证言列表中！请发送邮件至：us@fullstack.io。
-
-### 预发布版本
-
-这是本书的预发布版本。大部分但并非所有章节已经过编辑。
-
-### 加入我们的 Discord
-
-在官方的 newline Discord 频道中与其他读者一起聊天：
-
-点击加入：[`newline.co/discord/algorithms`](https://newline.co/discord/algorithms)
+你喜欢这本书吗？你觉得它有帮助吗？我们乐意将你的评价加入我们网站的证言列表中！请发送邮件至：`us@fullstack.io`。
 
 ### 引言
 
@@ -69,9 +49,9 @@
 
 ### 什么是算法
 
-在本书中，我们将编写 `algorithms` —— 即为我们解决特定问题的步骤集合。
+在本书中，我们将编写`algorithms`——即为我们解决特定问题的步骤集合。
 
-我们在日常生活中不断使用 `algorithms`。例如，如果我们在某条街上，想回到住在 20 层的公寓？为了实现这一目标，我们可以采取以下操作：
+我们在日常生活中不断使用`algorithms`。例如，如果我们在某条街上，想回到住在 20 层的公寓？为了实现这一目标，我们可以采取以下操作：
 
 ```
 1. 走路回到家里。
@@ -85,7 +65,7 @@
 让我们以上一节的“回家”问题为例。还有其他解决方法吗？有的，我们实现了不同的步骤（阅读“算法”部分）来实现该目标：
 
 ```
-1. 打一辆出租车送你回。。
+1. 打一辆出租车送你回家。
 2. 使用电梯上到第 20 层。
 ```
 
@@ -113,21 +93,18 @@
 
 大 O 表示定义了`输入大小 → 耗时`的时间复杂度以及`输入大小 → 消耗内存`的空间复杂度。它根据增长率来表征程序（函数）：相同增长率的不同程序可以使用相同的 O 表示。
 
-使用字母 O 是是因为程序（函数）的增长率也被称为函数的阶数（order of the function）。
+使用字母 O 是因为程序（函数）的增长率也被称为函数的阶数（order of the function）。
 
 #### 大 O 表示解释
 
 让我们通过上述“回家”算法来说明大 O 概念，特别是算法中的“爬楼梯”部分。
 
-想象我们有两个男人：一个是年轻且快速的奥运冠军，另一个是典型的中年男性。我们刚刚同意，我们希望爬楼梯算法的复杂度对这两个来说是相同的，因此它不应该取决于人的速度，而应该取决于他们爬得有多高。在计算机方面，我们的算法分析不取决于硬件，而取决于软件问题本身。这两个男人到达第 20 层需要走多少步？嗯，假设每层之间有 20 台阶。这意味着他们需要走 `20 * 20 = 400` 步才能到达第 20 层。让我们为 `n` 层进行泛化：
+想象我们有两个男人：一个是年轻且快速的奥运冠军，另一个是典型的中年男性。我们刚刚同意，我们希望爬楼梯算法的复杂度对这两个来说是相同的，因此它不应该取决于人的速度，而应该取决于他们爬得有多高。在计算机方面，我们的算法分析不取决于硬件，而取决于软件问题本身。这两个男人到达第 20 层需要走多少步？嗯，假设每层之间有 20 台阶。这意味着他们需要走`20 * 20 = 400`步才能到达第 20 层。让我们为`n`层进行泛化：
 
 ```
 输入：(20 * n) 步
 输出：(20 * n) 步（移动）
 ```
-
-
-
 
 你看到这里的规律了吗？爬楼梯的时间复杂度与楼层数呈线性依赖关系。在 Big O 语法中，这种关系写如下：
 
@@ -137,21 +114,21 @@ O(20 * n)
 
 这里有一个重要的规则需要理解：
 
-> 在使用 Big O 表示法描述复杂度时，我们必须始终舍非主导部分：`O(n + 1)` 变为 `O(n)`，`O(n + n²)` 变为 `O(n²)`，`O(n + log(n))` 变为 `O(n)`，以此此类推。
+> 在使用 Big O 表示法描述复杂度时，我们必须始终舍弃非主导部分：`O(n + 1)`变为`O(n)`，`O(n + n²)`变为`O(n²)`，`O(n + log(n))`变为`O(n)`，以此类推。
 
-为什么呢？因为 Big O 描述的是函数的阶，而不是它消耗的精确毫秒或兆字节。它描述的是趋势而非绝对值。因此，非主导常数并不重要。非主导常数是在 `n` 取值巨大时我们可以丢弃的部分。例如，在 `n = 10000` 的情况下，这两个部分中哪一个对最终结果的影响更大：`20` 还是 `n = 10000`？显而易见，`n` 对最终结果的影响是常数 `20` 的 `500` 倍。因此，我们可以舍弃它，“爬楼梯”算法的时间复杂度如下：
+为什么呢？因为 Big O 描述的是函数的阶，而不是它消耗的精确毫秒或兆字节。它描述的是趋势而非绝对值。因此，非主导常数并不重要。非主导常数是在`n`取值巨大时我们可以丢弃的部分。例如，在`n = 10000`的情况下，这两个部分中哪一个对最终结果的影响更大：`20`还是`n = 10000`？显而易见，`n`对最终结果的影响是常数`20`的`500`倍。因此，我们可以舍弃它，“爬楼梯”算法的时间复杂度如下：
 
 ```
 O(n)
 ```
 
-这是一个线性依赖的例子，但也存在其他类型的依赖关系：`O(log(n))`、`O(n * log(n))`、`O(n²)`、`O(2^n)`、`O(n!)` 等。
+这是一个线性依赖的例子，但也存在其他类型的依赖关系：`O(log(n))`、`O(n * log(n))`、`O(n²)`、`O(2^n)`、`O(n!)`等。
 
-查看算法分析中常用的函数图表，它们展示了每个函数的操作次数 `N` 与输入规模 `n` 的关系。
+查看算法分析中常用的函数图表，它们展示了每个函数的操作次数`N`与输入规模`n`的关系。
 
-![](img/01-algorithms-and-their-complexities----big-o-charts.png)
+![大 O 图表](img/01-algorithms-and-their-complexities----big-o-charts.png)
 
-所有这些图表向我们展示了函数的内时间和消耗取决于输入增长得有多快。两个不同的数组排序算法可能完成相同的排序任务，但一个耗时为 `O(n * log(n))`，另一个为 `O(n²)`。如果有选择，我们会倾向于选择第一个而不是第二个。
+所有这些图表向我们展示了函数的时间和消耗取决于输入增长得有多快。两个不同的数组排序算法可能完成相同的排序任务，但一个耗时为`O(n * log(n))`，另一个为`O(n²)`。如果有选择，我们会倾向于选择第一个而不是第二个。
 
 *使用 Big O 表示法，我们可以根据 Big O 值对算法（函数、程序）进行比较，而独立于它们运行的硬件。*
 
@@ -169,33 +146,33 @@ O(n)
 
 ## Big O 表示法示例
 
-让我们继续看其他一些 big o 表示法的例子。
+让我们继续看其他一些 Big O 表示法的例子。
 
 ### O(1) 示例
 
 让我们写一个将数字提升到指定幂的函数：
 
-```
- 1 /**
- 2  * 将数字提升到幂。
- 3  *
- 4  * 示例：
- 5  * number = 3
- 6  * power = 2
- 7  * output = 3² = 9
- 8  *
- 9  * @param {number} number
-10  * @param {number} power
-11  * @return {number}
-12  */
-13 export function fastPower(number, power) {
-14   return number ** power;
-15 }
+```javascript
+/**
+ * 将数字提升到幂。
+ *
+ * 示例：
+ * number = 3
+ * power = 2
+ * output = 3² = 9
+ *
+ * @param {number} number
+ * @param {number} power
+ * @return {number}
+ */
+export function fastPower(number, power) {
+  return number ** power;
+}
 ```
 
 `01-algorithms-and-their-complexities/fastPower.js`
 
-它的时间复杂和空间复杂度是多少？
+它的时间复杂度和空间复杂度是多少？
 
 思考函数的输入将如何影响它完成的操作次数。对于每一个输入，函数都只执行一次操作。这意味着该函数的时间复杂度为：
 
@@ -213,31 +190,8 @@ Space complexity: O(1)
 
 现在让我们用迭代的方式来实现相同的幂函数：
 
-```
- 1 /**
- 2  * 将数字提升到幂。
- 3  *
- 4  * 示例：
- 5  * number = 3
- 6  * power = 2
- 7  * output = 3² = 9
- 8  *
- 9  * @param {number} number
-10  * @param {number} power
-11  * @return {number}
-12  */
-13 export function fastPower(number, power) {
-14   return number ** power;
-15 }
-```
-
-*(注：原文中 O(n) 示例部分的代码存在重复 fast fastPower 的错误，此处已根据原文逻辑进行格式化处理。)*
-
-
-
-
 ```javascript
- /**
+/**
  * 从提供的字母中获取所有可能的组合。
  *
  * Example:
@@ -262,7 +216,7 @@ export function pairs(letters) {
 
 `01-algorithms-and-their-complexities/pairs.js`
 
-现在有两个嵌套的 `for()` 循环，它们的作用相当于循环内部代码的倍器。在循环内部，我们有执行时间为常数的 `O(1)` 代码 - 只是向数组中推送元素。因此，我们将时间复杂度计算为函数各个部分时间复杂度之和：`O(1) + letters.length * letters.length * O(1) + O(1)`。在去掉非主导部分后，我们得到最终的时间复杂度：
+现在有两个嵌套的`for()`循环，它们的作用相当于循环内部代码的倍器。在循环内部，我们有执行时间为常数的`O(1)`代码——只是向数组中推送元素。因此，我们将时间复杂度计算为函数各个部分时间复杂度之和：`O(1) + letters.length * letters.length * O(1) + O(1)`。在去掉非主导部分后，我们得到最终的时间复杂度：
 
 ```
 Time complexity: O(letters.length²)
@@ -270,7 +224,7 @@ Time complexity: O(letters.length²)
 
 这意味着我们的函数运行速度将根据我们提供的输入字母数量的平方成比例变慢。
 
-你可能还会注意到，提供给函数的字母越多，生成的组合就越多。所有这些组合都存储在 `pairs` 数组中。因此，该数组消耗的内存与字母数量的平方成正比。
+你可能还会注意到，提供给函数的字母越多，生成的组合就越多。所有这些组合都存储在`pairs`数组中。因此，该数组消耗的内存与字母数量的平方成正比。
 
 ```
 Space complexity: O(letters.length²)
@@ -287,7 +241,7 @@ Space complexity: O(letters.length²)
 让我们来看下面的示例。这里有一个将数组中所有元素乘以特定值的函数：
 
 ```javascript
- /**
+/**
  * 原地将数组中的所有值乘以特定值。
  *
  * Example:
@@ -322,10 +276,10 @@ Space complexity: O(array.length)
 Auxiliary space complexity: O(1)
 ```
 
-有时，修改函数参数是不可接受的。与其原地修改输入数组参数，我们可能可能想先克隆它。让我们看看如何更改数组乘法函数以防止修改输入参数。
+有时，修改函数参数是不可接受的。与其原地修改输入数组参数，我们可能想先克隆它。让我们看看如何更改数组乘法函数以防止修改输入参数。
 
 ```javascript
- /**
+/**
  * 在分配额外内存以防止修改输入数组的情况下，
  * 将数组中的所有值乘以特定值。
  *
@@ -338,7 +292,7 @@ Auxiliary space complexity: O(1)
  * @param {number} multiplier
  * @return {number[]}
  */
-export function multiplyArrayInPlace(array, multiplier) {
+export function multiplyArray(array, multiplier) {
   const result = [...array];
   for (let i = 0; i < result.length; i += 1) {
     result[i] *= multiplier;
@@ -350,108 +304,22 @@ export function multiplyArrayInPlace(array, multiplier) {
 
 `01-algorithms-and-their-complexities/multiplyArray.js`
 
-现在有两个嵌套的 `for()` 循环，它们的作用相当于循环内部代码的倍器。在循环内部，我们有执行时间为常数的 `O(1)` 代码 - 只是向数组中推送元素。因此，我们将时间复杂度计算为函数各个部分时间复杂度之和：`O(1) + letters.length * letters.length * O(1) + O(1)`。在去掉非主导部分后，我们得到最终的时间复杂度：
-
-```
-Time complexity: O(letters.length²)
-```
-
-这意味着我们的函数运行速度将根据我们提供的输入字母数量的平方成比例变慢。
-
-你可能还会注意到，提供给函数的字母越多，生成的组合就越多。所有这些组合都存储在 `pairs` 数组中。因此，该数组消耗的内存与字母数量的平方成正比。
-
-```
-Space complexity: O(letters.length²)
-```
-
-## 空间复杂度与辅助空间复杂度示例
-
-此外，除了空间复杂度，还有辅助空间复杂度。由于这两个术语经常被误用。
-
-它们之间的区别在于，辅助空间复杂度不包括我们存储输入数据所需的内存量。辅助空间复杂度仅显示算法解决问题需要多少`额外`的内存。相反，空间复杂度同时考虑了这两点：存储输入数据所需的内存量以及算法所需的额外内存量。
-
-> 空间复杂度 = 输入 + 辅助空间复杂度
-
-让我们来看下面的示例。这里有一个函数将数组中所有元素乘以特定值：
-
-```javascript
- /**
- * 原地将数组中的所有值乘以特定值。
- *
- * Example:
- * array = [1, 2, 3]
- * multiplier = 2
- * output = [2, 4, 6]
- *
- * @param {number[]} array
- * @param {number} multiplier
- * @return {number[]}
- */
-export function multiplyArrayInPlace(array, multiplier) {
-  for (let i = 0; i < array.length; i += 1) {
-    array[i] *= multiplier;
-  }
-
-  return array;
-}
-```
-
-`01-algorithms-and-their-complexities/multiplyArrayInPlace.js`
-
-该函数的空间复杂度与输入数组的大小成线性正比。因此，输入数组越大，该函数消耗的内存就越多。
-
-```
-Space complexity: O(array.length)
-```
-
-现在让我们分析额外空间。我们可以看到函数所有的操作都是原地完成的，没有分配任何`额外`内存。
-
-```
-Auxiliary space complexity: O(1)
-```
-
-有时，修改函数参数是不可接受的。与其原地修改输入数组参数，我们可能想先克隆它。让我们看看如何更改数组乘法函数以防止输入参数。
-
-```javascript
- /**
- * 在分配额外内存以防止修改输入数组的情况下，
- * 将数组中的所有值乘以特定值。
- *
- * Example:
- * array = [1, 2, 3]
- * multiplier = 2
- * output = [2, 4, 6]
- *
- * @param {number[]} array
- * @param {number} multiplier
- * @return {number[]}
- */
-export function multiplyArrayInPlace(array, multiplier) {
-  const result = [...array];
-  for (let i = 0; i < result.length; i += 1) {
-    result[i] *= multiplier;
-  }
-
-  return result;
-}
-```
-
 ## 链表
 
 链表是一个不按顺序存储的实体集合。相反，每个实体都有指向下一个实体的指针。
 
-![](img/02-linked-list----LinkedListNode.jpg)
+![链表节点](img/02-linked-list----LinkedListNode.jpg)
 
 这种结构允许在迭代期间进行高效的插入或删除。每个实体（也称为节点）由数据和指向下一个节点的链接组成。链表的缺点是访问时间是线性的。
 
 **链表的主要操作有：**
 
-*   `prepend` - 在链表开头添加节点
-*   `append` - 在链表末尾添加节点
-*   `delete` - 从链表中删除节点
-*   `deleteTail` - 从链表删除最后一个节点
-*   `deleteHead` - 从链表删除第一个节点
-*   `find` - 在链表中查找节点
+* `prepend` - 在链表开头添加节点
+* `append` - 在链表末尾添加节点
+* `delete` - 从链表中删除节点
+* `deleteTail` - 从链表删除最后一个节点
+* `deleteHead` - 从链表删除第一个节点
+* `find` - 在链表中查找节点
 
 ### 应用
 
@@ -461,31 +329,27 @@ export function multiplyArrayInPlace(array, multiplier) {
 
 我们的 LinkedList 实现由两部分组成：
 
-*   `LinkedListNode` 类
-*   `LinkedList` 类
+* `LinkedListNode`类
+* `LinkedList`类
 
 我们将在后续章节中探讨这些类的细节。
 
 #### `LinkedListNode`
 
-我们的 `LinkedListNode` 类将代表我们集合中的一个项目。`LinkedListNode` 有两个重要的属性：
+我们的`LinkedListNode`类将代表我们集合中的一个项目。`LinkedListNode`有两个重要的属性：
 
 1. `this.value`
 2. `this.next`
 
-`this.value` 包含了我们想要存储在节点中的实际值。`this.next` 是指向我们链表中下一个节点的指针。
+`this.value`包含了我们想要存储在节点中的实际值。`this.next`是指向我们链表中下一个节点的指针。
 
 ##### 什么是指针？
 
-JavaScript 中的对象是键值对的字典。键始终是字符串。当我们说 `LinkedListNode` 类中的 `next` 属性是“指针”时，我们真正的意思是 `this.next` 的值是对另一个 对象的引用——另一个 `LinkedListNode` 对象。
+JavaScript 中的对象是键值对的字典。键始终是字符串。当我们说`LinkedListNode`类中的`next`属性是“指针”时，我们真正的意思是`this.next`的值是对另一个对象的引用——另一个`LinkedListNode`对象。
 
 ##### `constructor`
 
-我们 `LinkedListNode` 构造方法设置了 `this.value` 和 `this.next` 的初始值——两者都设置为 `null`。
-
-
-
-
+我们`LinkedListNode`构造方法设置了`this.value`和`this.next`的初始值——两者都设置为`null`。
 
 ```javascript
 constructor(value, next = null) {
@@ -498,7 +362,7 @@ constructor(value, next = null) {
 
 ### `toString`
 
-我们的 `toString` 方法是一个便利方法，当我们想要查看链表中每个节点包含的内容时可以使用。
+我们的`toString`方法是一个便利方法，当我们想要查看链表中每个节点包含的内容时可以使用。
 
 ```javascript
 toString(callback) {
@@ -510,11 +374,11 @@ toString(callback) {
 
 ### `LinkedList`
 
-`LinkedList` 类包含了一些重要的方法，用于操作我们的 `LinkedListNode` 对象的集合。让我们来看看每个方法的作用：
+`LinkedList`类包含了一些重要的方法，用于操作我们的`LinkedListNode`对象的集合。让我们来看看每个方法的作用：
 
 #### `constructor`
 
-我们的 `LinkedList` 类包含两个属性：`this.head` 和 `this.tail`。这两个属性都指向一个 `LinkedListNode` 对象。它们是我们 `LinkedListNodes` 集合的开始和结束。
+我们的`LinkedList`类包含两个属性：`this.head`和`this.tail`。这两个属性都指向一个`LinkedListNode`对象。它们是我们`LinkedListNodes`集合的开始和结束。
 
 ```javascript
 constructor() {
@@ -530,7 +394,7 @@ constructor() {
 
 ### `prepend`
 
-`prepend` 方法将一个 `LinkedListNode` 对象添加到我们的 `LinkedList` 的开头。首先，我们创建一个新的 `LinkedListNode` 对象。
+`prepend`方法将一个`LinkedListNode`对象添加到我们的`LinkedList`的开头。首先，我们创建一个新的`LinkedListNode`对象。
 
 ```javascript
 prepend(value) {
@@ -540,7 +404,7 @@ prepend(value) {
 
 `02-linked-list/LinkedList.js`
 
-然后我们将 `this.head` 指向我们新创建的 `LinkedListNode` 对象。如果这是我们 `LinkedList` 中的第一个项，我们还必须将 `this.tail` 指向该新对象，因为它也是我们 `LinkedList` 中的最后一个项。
+然后我们将`this.head`指向我们新创建的`LinkedListNode`对象。如果这是我们`LinkedList`中的第一个项，我们还必须将`this.tail`指向该新对象，因为它也是我们`LinkedList`中的最后一个项。
 
 ```javascript
 this.head = newNode;
@@ -553,7 +417,7 @@ if (!this.tail) {
 
 `02-linked-list/LinkedList.js`
 
-最后，我们返回添加到我们的 `LinkedList` 中的值。
+最后，我们返回添加到我们的`LinkedList`中的值。
 
 ```javascript
 return this;
@@ -564,7 +428,7 @@ return this;
 
 ### `append`
 
-`append` 方法将一个 `LinkedListNode` 对象添加到我们的 `LinkedList` 的末尾。首先，我们创建一个新的 `LinkedListNode` 对象。
+`append`方法将一个`LinkedListNode`对象添加到我们的`LinkedList`的末尾。首先，我们创建一个新的`LinkedListNode`对象。
 
 ```javascript
 append(value) {
@@ -573,7 +437,7 @@ append(value) {
 
 `02-linked-list/LinkedList.js`
 
-如果我们的 `LinkedList` 中没有其他项，那么我们需要将 `this.head` 指向我们的新节点。
+如果我们的`LinkedList`中没有其他项，那么我们需要将`this.head`指向我们的新节点。
 
 ```javascript
 // 如果还没有头部，让新节点成为头部。
@@ -587,7 +451,7 @@ if (!this.head) {
 
 `02-linked-list/LinkedList.js`
 
-然后，我们获取 `this.tail` 的值，并将该对象的 `next` 属性设置为我们新创建的 `LinkedListNode` 对象。
+然后，我们获取`this.tail`的值，并将该对象的`next`属性设置为我们新创建的`LinkedListNode`对象。
 
 ```javascript
 const currentTail = this.tail;
@@ -597,7 +461,7 @@ currentTail.next = newNode;
 
 `02-linked-list/LinkedList.js`
 
-最后，我们将 `this.tail` 设置为新的 `LinkedListNode` 对象。
+最后，我们将`this.tail`设置为新的`LinkedListNode`对象。
 
 ```javascript
 this.tail = newNode;
@@ -610,7 +474,7 @@ return this;
 
 ### `delete`
 
-我们的 `delete` 方法在 `LinkedList` 中找到一个项并将其。首先，我们通过检查 `this.head` 是否为 `null` 来检查我们的 `LinkedList` 是否为空。如果是，我们返回 `null`。
+我们的`delete`方法在`LinkedList`中找到一个项并将其删除。首先，我们通过检查`this.head`是否为`null`来检查我们的`LinkedList`是否为空。如果是，我们返回`null`。
 
 ```javascript
 delete(value) {
@@ -621,7 +485,7 @@ delete(value) {
 
 `02-linked-list/LinkedList.js`
 
-如果我们的 `LinkedList` 包含项，我们会创建一个 `deletedNode` 变量，它将作为占位符，用于最终作为 `delete` 方法的结果返回节点。
+如果我们的`LinkedList`包含项，我们会创建一个`deletedNode`变量，它将作为占位符，用于最终作为`delete`方法的结果返回节点。
 
 ```javascript
 let deletedNode = null;
@@ -629,7 +493,7 @@ let deletedNode = null;
 
 `02-linked-list/LinkedList.js`
 
-在遍历 `LinkedList` 之前，我们首先检查 `this.head` 的值是否与我们要删除的值匹配。如果是，我们将 `deletedNode` 变量设置为 `this.head`，然后将 `this.head` 移动到 `LinkedList` 中的下一个项。
+在遍历`LinkedList`之前，我们首先检查`this.head`的值是否与我们要删除的值匹配。如果是，我们将`deletedNode`变量设置为`this.head`，然后将`this.head`移动到`LinkedList`中的下一个项。
 
 ```javascript
 // 如果必须删除头部，则让与头部不同的
@@ -642,7 +506,7 @@ while (this.head && this.head.value === value) {
 
 `02-linked-list/LinkedList.js`
 
-为了遍历 `LinkedList`，我们需要创建一个占位符变量 `currentNode` 来跟踪我们在 `LinkedList` 中的位置。我们将 `currentNode` 的值设置为 `this.head` 以确保我们从开始开始。
+为了遍历`LinkedList`，我们需要创建一个占位符变量`currentNode`来跟踪我们在`LinkedList`中的位置。我们将`currentNode`的值设置为`this.head`以确保我们从开始开始。
 
 ```javascript
 let currentNode = this.head;
@@ -650,10 +514,9 @@ let currentNode = this.head;
 
 `02-linked-list/LinkedList.js`
 
-然后我们检查 `currentNode` 不为 `null`。如果不是，我们就启动循环。当我们到达一个 `next` 为 `null` 的节点时，我们将跳出循环。
+然后我们检查`currentNode`不为`null`。如果不是，我们就启动循环。当我们到达一个`next`为`null`的节点时，我们将跳出循环。
 
 ```javascript
-if ( null)
 while (currentNode.next) {
   if (currentNode.next.value === value) {
     deletedNode = currentNode.next;
@@ -670,7 +533,7 @@ while (currentNode.next) {
 
 ### `deleteTail`
 
-对于我们的 `deleteTail` 方法，我们首先创建一个变量 `deletedTail` 并设置为 `this.tail`，以便在从方法返回时可以返回被删除的对象。
+对于我们的`deleteTail`方法，我们首先创建一个变量`deletedTail`并设置为`this.tail`，以便在从方法返回时可以返回被删除的对象。
 
 ```javascript
 deleteTail() {
@@ -681,10 +544,10 @@ deleteTail() {
 
 我们有两种情况需要编写代码：
 
-1. 我们的 `LinkedList` 中只有一个项
-2.  `LinkedList` 中有多个项
+1. 我们的`LinkedList`中只有一个项
+2. `LinkedList`中有多个项
 
-对于情况 1，`this.head.value` 和 `this.tail.value` 相同，因此我们将 `this.head` 和 `this.tail` 都设置为 `null` 并返回 `deletedTail`。
+对于情况 1，`this.head.value`和`this.tail.value`相同，因此我们将`this.head`和`this.tail`都设置为`null`并返回`deletedTail`。
 
 ```javascript
 if (this.head === this.tail) {
@@ -697,7 +560,7 @@ if (this.head === this.tail) {
 
 `02-linked-list/LinkedList.js`
 
-对于情况 2，我们需要遍历整个列表以获取倒数第二个 `LinkedListNode`。我们将通过检查 `currentNode.next.next` 值是否为 `null`，将倒数第二个 `LinkedListNode` 设置为 `this.tail`。如果 `currentNode.next.next` 为 `null`，我们就知道 `currentNode.next` 是我们要设置为 `this.tail` 的对象。
+对于情况 2，我们需要遍历整个列表以获取倒数第二个`LinkedListNode`。我们将通过检查`currentNode.next.next`值是否为`null`，将倒数第二个`LinkedListNode`设置为`this.tail`。如果`currentNode.next.next`为`null`，我们就知道`currentNode.next`是我们要设置为`this.tail`的对象。
 
 ```javascript
   // 如果链表中有很多节点...
@@ -721,265 +584,261 @@ if (this.head === this.tail) {
 
 ### `deleteHead`
 
-我们的 `deleteHead` 方法删除列表中的第一个项。与我们的 `deleteTail` 方法类似，我们有几种情况需要编写代码来删除 `LinkedList` 的头部：
+我们的`deleteHead`方法删除列表中的第一个项。与我们的`deleteTail`方法类似，我们有几种情况需要编写代码来删除`LinkedList`的头部：
 
 1. 列表中没有项
 2. 列表中只有 1 个项
 3. 列表中有多个项
 
+对于场景 1，我们检查`this.head`是否为`null`，如果是`null`，我们从方法中返回`null`。
 
-
-
-
-对于场景 1，我们检查 `this.head` 是否为 `null`，如果是 `null`，我们从方法中返回 `null`。
-
-```
-125   deleteHead() {
-126     if (!this.head) {
-127       return null;
-128     }
+```javascript
+deleteHead() {
+  if (!this.head) {
+    return null;
+  }
 ```
 
 `02-linked-list/LinkedList.js`
 
-对于场景 2 和 3，我们必须先创建一个变量：`deletedHead` 并将其设置为 `this.head`，这样当我们从此方法返回时，就可以返回被删除掉的对象。
+对于场景 2 和 3，我们必须先创建一个变量：`deletedHead`并将其设置为`this.head`，这样当我们从此方法返回时，就可以返回被删除掉的对象。
 
-```
-130     const deletedHead = this.head;
-```
-
-`02-linked-list/LinkedList.js`
-
-同样对于场景 2 和 3，我们将逻辑合并到一个 if/else 语句中。如果 `this.head.next` 不为 `null`，我们知道列表中有超过 1 个元素，我们将 `this.head.next` 设置为等于 `this.head`，这就删除了列表中的第一个元素。如果 `this.head.next` 为 `null`，那么我们知道列表中只有 1 个元素，我们将 `this.head` 和 `this.tail` 都设置为 `null`，因为我们的 `LinkedList` 中不再有更多元素了。
-
-```
-131     if (this.head.next) {
-132       this.head = this.head.next;
-133     } else {
-134       this.head = null;
-135       this.tail = null;
-136     }
+```javascript
+  const deletedHead = this.head;
 ```
 
 `02-linked-list/LinkedList.js`
 
-最后，我们从方法中返回我们的 `deletedHead` 对象：
+同样对于场景 2 和 3，我们将逻辑合并到一个 if/else 语句中。如果`this.head.next`不为`null`，我们知道列表中有超过 1 个元素，我们将`this.head.next`设置为等于`this.head`，这就删除了列表中的第一个元素。如果`this.head.next`为`null`，那么我们知道列表中只有 1 个元素，我们将`this.head`和`this.tail`都设置为`null`，因为我们的`LinkedList`中不再有更多元素了。
 
+```javascript
+  if (this.head.next) {
+    this.head = this.head.next;
+  } else {
+    this.head = null;
+    this.tail = null;
+  }
 ```
-139     return deletedHead;
-140   }
+
+`02-linked-list/LinkedList.js`
+
+最后，我们从方法中返回我们的`deletedHead`对象：
+
+```javascript
+  return deletedHead;
+}
 ```
 
 `02-linked-list/LinkedList.js`
 
 ### `find`
 
-`find` 方法遍历 `LinkedList` 中的项，并找到第一个与我们想要的值匹配的 `LinkedListNode` 对象。该方法接受一个包含两个键值对的对象：`value` 和 `callback`：
+`find`方法遍历`LinkedList`中的项，并找到第一个与我们想要的值匹配的`LinkedListNode`对象。该方法接受一个包含两个键值对的对象：`value`和`callback`：
 
-```
-148   find({ value = undefined, callback = undefined }) {
-```
-
-`02-linked-list/LinkedList.js`
-
-与我们之前的的方法一样，我们首先检查 `this.head` 是否为 `null`。如果是 `null`，我们从方法中返回，因为 `LinkedList` 是空的。
-
-```
-149     if (!this.head) {
-150       return null;
-151     }
+```javascript
+find({ value = undefined, callback = undefined }) {
 ```
 
 `02-linked-list/LinkedList.js`
 
-接下来，我们创建一个变量 `currentNode` 来跟踪我们在 `LinkedList` 中的位置，并将其设置为 `this.head` 以从 `LinkedList` 的开始。
+与我们之前的方法一样，我们首先检查`this.head`是否为`null`。如果是`null`，我们从方法中返回，因为`LinkedList`是空的。
 
-```
-152 
-```
-
-`02-linked-list/LinkedList.js`
-
-然后我们创建一个 `while` 循环来遍历 `LinkedList` 中的所有节点，并调用作为参数传递的 `callback` 函数，或者检查当前节点的值看是否匹配我们正在寻找的值。如果有匹配，我们就返回该节点。
-
-```
-155     while (currentNode) {
-156       // 如果指定了 callback，则尝试通过 callback 查找节点。
-157       if (callback && callback(currentNode.value)) {
-158         return currentNode;
-159       }
-160 
-161       // 如果指定了 value，则尝试通过值比较。
-162       if (value !== undefined && currentNode.value === value) {
-163         return currentNode;
-164       }
-165 
-166       currentNode = currentNode.next;
-167     }
+```javascript
+  if (!this.head) {
+    return null;
+  }
 ```
 
 `02-linked-list/LinkedList.js`
 
-最后，如果我们遍历了整个 `LinkedList` 且没有找到我们寻找的值，我们就返回 `null`。
+接下来，我们创建一个变量`currentNode`来跟踪我们在`LinkedList`中的位置，并将其设置为`this.head`以从`LinkedList`的开始。
 
-```
-169     return null;
+```javascript
+  let currentNode = this.head;
 ```
 
 `02-linked-list/LinkedList.js`
 
-在此之后，我们已经实现了 `LinkedList` 方法。现在我们将实现两个辅助方法来方便测试和调试 `LinkedList`：`toArray`
+然后我们创建一个`while`循环来遍历`LinkedList`中的所有节点，并调用作为参数传递的`callback`函数，或者检查当前节点的值看是否匹配我们正在寻找的值。如果有匹配，我们就返回该节点。
 
-`toArray` 方法将 `LinkedList` 中的所有项放入数组中。为了将它们放入数组，我们遍历 `LinkedList` 并并将每个项放入数组。
+```javascript
+  while (currentNode) {
+    // 如果指定了 callback，则尝试通过 callback 查找节点。
+    if (callback && callback(currentNode.value)) {
+      return currentNode;
+    }
 
+    // 如果指定了 value，则尝试通过值比较。
+    if (value !== undefined && currentNode.value === value) {
+      return currentNode;
+    }
+
+    currentNode = currentNode.next;
+  }
 ```
-175   toArray() {
-176     const nodes = [];
-177     let currentNode = this.head;
-178     while (currentNode) {
-179       nodes.push(currentNode);
-180       currentNode = currentNode.next;
-181     }
-182     return nodes;
-183   }
+
+`02-linked-list/LinkedList.js`
+
+最后，如果我们遍历了整个`LinkedList`且没有找到我们寻找的值，我们就返回`null`。
+
+```javascript
+  return null;
+```
+
+`02-linked-list/LinkedList.js`
+
+在此之后，我们已经实现了`LinkedList`方法。现在我们将实现两个辅助方法来方便测试和调试`LinkedList`：`toArray`和`toString`。
+
+### `toArray`
+
+`toArray`方法将`LinkedList`中的所有项放入数组中。为了将它们放入数组，我们遍历`LinkedList`并将每个项放入数组。
+
+```javascript
+toArray() {
+  const nodes = [];
+  let currentNode = this.head;
+  while (currentNode) {
+    nodes.push(currentNode);
+    currentNode = currentNode.next;
+  }
+  return nodes;
+}
 ```
 
 `02-linked-list/LinkedList.js`
 
 ### `toString`
 
-`toString` 方法遍历 `LinkedList` 并打印 `LinkedList` 的字符串表示。该方法遍历 `LinkedList` 并通过 `toString` 方法打印出字符串表示。对于 `LinkedList` 中的每个 `LinkedListNode`。
+`toString`方法遍历`LinkedList`并打印`LinkedList`的字符串表示。该方法遍历`LinkedList`并通过`toString`方法打印出字符串表示。对于`LinkedList`中的每个`LinkedListNode`。
 
-```
-191   toString() {
-192     let result = "";
-193     let currentNode = this.head;
-194     while (currentNode) {
-195       result += currentNode.value + " -> ";
-196       currentNode = currentNode.next;
-197     }
-198     return result + "null";
-199   }
+```javascript
+toString() {
+  let result = "";
+  let currentNode = this.head;
+  while (currentNode) {
+    result += currentNode.value + " -> ";
+    currentNode = currentNode.next;
+  }
+  return result + "null";
+}
 ```
 
 `02-linked-list/LinkedList.js`
 
+## 队列
 
+让我们来实现一个简单的消息系统，将所有需要处理的消息存储在队列中。在下面的代码中，我们实例化一个新的`Queue`对象，并使用与对象相关的方法对队列进行`enqueue`（入队）和`dequeue`（出队），同时使用`peek`查看下一个将是哪个消息。我们还使用`toString`和`isEmpty`方法来查看队列中当前的内容，并检查队列是否为空。
 
+```javascript
+// 首先，我们需要导入 Queue 类。
+import { Queue } from './Queue';
 
+// 然后，我们需要实例化队列。
+const messageQueue = new Queue();
 
-让我们来实现一个简单的消息系统，将所有需要处理的消息存储在队列中。在下面的代码中，我们实例化一个新的 `Queue` 对象，并使用与对象相关的方法对队列进行 `enqueue`（入队）和 `dequeue`（出队），同时使用 `peek` 查看下一个将是哪个消息。我们还使用 `toString` 和 `isEmpty` 方法来查看队列中当前的内容，并检查队列是否为空。
+// 现在队列是空的，没有消息需要处理。
+messageQueue.isEmpty(); // => true
+messageQueue.toString(); // => ''
 
-```
- 1 // 首先，我们需要导入 Queue 类。
- 2 import { Queue } from './Queue';
- 3 
- 4 // 然后，我们需要实例化队列。
- 5 const messageQueue = new Queue();
- 6 
- 7 // 现在队列是空的，没有消息需要处理。
- 8 messageQueue.isEmpty(); // => true
- 9 messageQueue.toString(); // => ''
-10 
-11 // 向队列添加一条新消息。
-12 messageQueue.enqueue('message_1');
-13 messageQueue.isEmpty(); // => false
-14 messageQueue.toString(); // => 'message_1'
-15 messageQueue.peek(); // => 'message_1'
-16 
-17 // 再添加一条消息。
-18 messageQueue.enqueue('message_2');
-19 messageQueue.isEmpty(); // => false
-20 messageQueue.toString(); // => 'message_1,message_2'
-21 messageQueue.peek(); // => 'message_2'
-22 
-23 // 现在来处理这些消息。
-24 messageQueue.dequeue(); // => 'message_1'
-25 messageQueue.dequeue(); // => 'message_2'
-26 
-27 messageQueue.isEmpty(); // => true
+// 向队列添加一条新消息。
+messageQueue.enqueue('message_1');
+messageQueue.isEmpty(); // => false
+messageQueue.toString(); // => 'message_1'
+messageQueue.peek(); // => 'message_1'
+
+// 再添加一条消息。
+messageQueue.enqueue('message_2');
+messageQueue.isEmpty(); // => false
+messageQueue.toString(); // => 'message_1,message_2'
+messageQueue.peek(); // => 'message_2'
+
+// 现在来处理这些消息。
+messageQueue.dequeue(); // => 'message_1'
+messageQueue.dequeue(); // => 'message_2'
+
+messageQueue.isEmpty(); // => true
 ```
 
 `03-queue/example.js`
 
-### Implementation
+### 实现
 
-队列可以用链表（Linked List）来实现。链表的结构和操作与队列相似。我们的 `LinkedList` 类拥有一个 `append` 方法和一个 `delete head` 方法，这两个方法对于实现队列都是非常有用的。我们将使用这些方法来构建 `Queue` 类中的 `enqueue` 和 `de-queue` 方法。
+队列可以用链表（Linked List）来实现。链表的结构和操作与队列相似。我们的`LinkedList`类拥有一个`append`方法和一个`deleteHead`方法，这两个方法对于实现队列都是非常有用的。我们将使用这些方法来构建`Queue`类中的`enqueue`和`dequeue`方法。
 
-首先，让我们导入 `LinkedList` 类：
+首先，让我们导入`LinkedList`类：
 
-```
-1 import LinkedList from '../02-linked-list/LinkedList';
+```javascript
+import LinkedList from '../02-linked-list/LinkedList';
 ```
 
 `03-queue/Queue.js`
 
 ### `constructor`
 
-在 `Queue` 类的构造函数中，我们创建了一个新的 `LinkedList` 对象用于存储数据：
+在`Queue`类的构造函数中，我们创建了一个新的`LinkedList`对象用于存储数据：
 
-```
-4   constructor() {
-5     // 我们将基于 LinkedList 实现 Queue。
-6     this.linkedList = new LinkedList();
-7   }
+```javascript
+constructor() {
+  // 我们将基于 LinkedList 实现 Queue。
+  this.linkedList = new LinkedList();
+}
 ```
 
 `03-queue/Queue.js`
 
 ### `enqueue`
 
-现在让我们来实现 `enqueue()` 操作。该方法将一个新元素添加到队列的末尾。我们将调用 `LinkedList` 对象的 `append` 方法将项目添加到队列末尾：
+现在让我们来实现`enqueue()`操作。该方法将一个新元素添加到队列的末尾。我们将调用`LinkedList`对象的`append`方法将项目添加到队列末尾：
 
-```
-30   /**
-31    * @param {*} value
-32    */
-33   enqueue(value) {
-34     // 入队意味着排队。因此，我们只需要在链表的开头
-35     // 添加新值即可。它需要等待
-36     // 直到所有之前的节点被处理完毕。
-37     this.linkedList.append(value);
-38   }
+```javascript
+/**
+ * @param {*} value
+ */
+enqueue(value) {
+  // 入队意味着排队。因此，我们只需要在链表的开头
+  // 添加新值即可。它需要等待
+  // 直到所有之前的节点被处理完毕。
+  this.linkedList.append(value);
+}
 ```
 
 `03-queue/Queue.js`
 
 ### `dequeue`
 
-当我们想要 `dequeue()` 元素时，我们从链表中取出第一个元素（链表的 `head`）并将其返回。我们调用 `LinkedList` 对象的 `removeHead` 方法，如果该方法返回的节点为 `null`，则返回 `null`。否则，返回节点的值。
+当我们想要`dequeue()`元素时，我们从链表中取出第一个元素（链表的`head`）并将其返回。我们调用`LinkedList`对象的`deleteHead`方法，如果该方法返回的节点为`null`，则返回`null`。否则，返回节点的值。
 
-```
-40   /**
-41    * @return {*}
-42    */
-43   dequeue() {
-44     // 尝试从链表中删除删除第一个节点（头部）。
-45     // 如果链表中没有头部（为空），则直接返回 null。
-46     const removedHead = this.linkedList.deleteHead();
-47     return removedHead ? removedHead.value : null;
-48   }
+```javascript
+/**
+ * @return {*}
+ */
+dequeue() {
+  // 尝试从链表中删除第一个节点（头部）。
+  // 如果链表中没有头部（为空），则直接返回 null。
+  const removedHead = this.linkedList.deleteHead();
+  return removedHead ? removedHead.value : null;
+}
 ```
 
 `03-queue/Queue.js`
 
 ### `peek`
 
-为了实现 `peek()` 操作，我们不会从列表中移除任何元素，只需从 `LinkedList` 对象的头部获取值并返回它。
+为了实现`peek()`操作，我们不会从列表中移除任何元素，只需从`LinkedList`对象的头部获取值并返回它。
 
-```
-17   /**
-18    * @return {*}
-19    */
-20   peek() {
-21     if (!this.linkedList.head) {
-22       // 如果链表为空，则没有内容可以查看。
-23       return null;
-24     }
-25 
-26     // 直接从链表末尾读取值而不删除它。
-27     return this.linkedList.head.value;
-28   }
+```javascript
+/**
+ * @return {*}
+ */
+peek() {
+  if (!this.linkedList.head) {
+    // 如果链表为空，则没有内容可以查看。
+    return null;
+  }
+
+  // 直接从链表末尾读取值而不删除它。
+  return this.linkedList.head.value;
+}
 ```
 
 `03-queue/Queue.js`
@@ -990,106 +849,110 @@ if (this.head === this.tail) {
 
 让我们实现一个检查队列是否为空的方法。为了做到这一点，我们只需要检查链表的头部并确保不存在元素：
 
-```
- 9   /**
-10    * @return {boolean}
-11    */
-12   isEmpty() {
-13     // 如果其链表没有头部，则队列队列为空。
-14     return !this.linkedList.head;
-15   }
+```javascript
+/**
+ * @return {boolean}
+ */
+isEmpty() {
+  // 如果其链表没有头部，则队列为空。
+  return !this.linkedList.head;
+}
 ```
 
 `03-queue/Queue.js`
 
 ### `toString`
 
-我们也来实现 `toString()` 方法来让队列的使用更加方便。它将接受一个可选的 `callback`。
+我们也来实现`toString()`方法来让队列的使用更加方便。它将接受一个可选的`callback`。
 
+```javascript
+/**
+ * @param {*} callback
+ * @return {string}
+ */
+toString(callback) {
+  // 队列的字符串表示。
+  return this.linkedList.toString(callback);
+}
 ```
-50   /**
-51    * @param {*} callback
-52    * @return {string}
-53    */
-54   toString(callback) {
-55     // 队列的字符串表示。
-56     return this.linkedList.toString(callback);
-57   }
-```
 
+`03-queue/Queue.js`
 
-
-
+## 栈
 
 对于栈来说，`searching`或`updating`元素等操作并不典型。我们只对操作栈顶端感兴趣。
 
 ### 应用
 
-`Stack` 数据结构用于解决许多算法任务，例如：
+`Stack`数据结构用于解决许多算法任务，例如：
 
-*   图的拓扑排序
-*   寻找图中的强连通分量
-*   汉诺塔问题
-*   记住部分完成的任务
-*   撤销（从操作中回溯）
-*   以及更多其他任务。
+* 图的拓扑排序
+* 寻找图中的强连通分量
+* 汉诺塔问题
+* 记住部分完成的任务
+* 撤销（从操作中回溯）
+* 以及更多其他任务。
 
 在递归算法中，栈通常非常有用，因为你需要在递归时将临时数据推入栈中，然后在回溯时将其移除。栈为这种操作提供了一种直观的方法。
 
-低级编程语言也使用栈数据结构在从一个函数调用另一个函数从内存中存储函数参数和局部变量。你可能通过臭名昭彰的“Stack Overflow”（栈溢出错误知道这一点。该错误与栈的使用有关，可能是由过深或无限递归引起的，在这种情况下，函数自调次数过多，导致存储变量和与每次调用相关信息的空间超过了栈的承受范围。
+低级编程语言也使用栈数据结构在从一个函数调用另一个函数时从内存中存储函数参数和局部变量。你可能通过臭名昭著的“Stack Overflow”（栈溢出）错误知道这一点。该错误与栈的使用有关，可能是由过深或无限递归引起的，在这种情况下，函数自调次数过多，导致存储变量和与每次调用相关信息的空间超过了栈的承受范围。
 
 ## 使用示例
 
-在我们继续实现 `Stack` 类之前，让我们假设我们已经实现了一个类，并尝试使用上面提到的基本方法。这将帮助我们更好地理解将要实现的内容。假设我们想用栈来反转数组：
+在我们继续实现`Stack`类之前，让我们假设我们已经实现了一个类，并尝试使用上面提到的基本方法。这将帮助我们更好地理解将要实现的内容。假设我们想用栈来反转数组：
 
+```javascript
+// 导入 Stack 类。
+import { Stack } from './Stack';
+
+// 创建栈实例。
+const stack = new Stack();
+
+// 创建我们想要反转的数组。
+const arrayToReverse = ['a', 'b', 'c'];
+
+stack.isEmpty(); // => true
+stack.toString(); // => ''
+stack.toArray(); // => []
+
+// 向栈添加项。
+stack.push(arrayToReverse[0]);
+stack.isEmpty(); // => false
+stack.toString(); // => 'a'
+stack.toArray(); // => ['a']
+
+// 向栈添加更多项。
+stack.push(arrayToReverse[1]);
+stack.push(arrayToReverse[2]);
+stack.toString(); // => 'c,b,a'
+stack.toArray(); // => ['c', 'b', 'a']
+
+// 检查下一步操作。
+stack.peek(); // => 'c'
+
+// 从栈中弹出。
+stack.pop(); // => 'c'
+stack.pop(); // => 'b'
+stack.pop(); // => 'a'
+
+stack.isEmpty(); // => true
 ```
- 1 // 导入 Stack 类。
- 2 import { Stack } from './Stack';
- 3 
- 4 // 创建栈实例。
- 5 const stack = new Stack();
- 6 
- 7 // 创建我们想要反转的数组。
- 8 const arrayToReverse = ['a', 'b', 'c'];
- 9
-10 stack.isEmpty(); // => true
-11 stack.toString(); // => ''
-12 stack.toArray(); // => []
-13 
-14 // 向栈添加项。
-15 stack.push(arrayToReverse[0]);
-16 stack.isEmpty(); // => false
-17 stack.toString(); // => 'a'
-18 stack.toArray(); // => ['a']
-19 
-20 // 向栈添加更多项。
-21 stack.push(arrayToReverse[1]);
-22 stack.push(arrayToReverse[2]);
-23 stack.toString(); // => 'c,b,a'
-24 stack.toArray(); // => ['c', 'b', 'a']
-25 
-26 // 检查下一步操作。
-27 stack.peek(); // => 'c'
-28 
-29 // 从栈中弹出。
-30 stack.pop(); // => 'c'
-31 stack.pop(); // => 'b'
-32 stack.pop(); // => 'a'
-33 
-34 stack.isEmpty(); // => true
-```
+
+`04-stack/example.js`
 
 # 实现
 
-栈可以用链表实现。我们可以使用 `LinkedList` 类中的 `append` 和 `deleteTail` 操作来实现栈的 `push` 和 `pop` 操作。其思路是：当你想要向栈 `push` 一个项时，将该项 `append` 到链表末尾；当你想要从栈中 `pop` 一个项时，`delete` 链表的尾部。由于我们要基于链表构建栈，让我们先开始导入它：
+栈可以用链表实现。我们可以使用`LinkedList`类中的`prepend`和`deleteHead`操作来实现栈的`push`和`pop`操作。其思路是：当你想要向栈`push`一个项时，将该项`prepend`到链表头部；当你想要从栈中`pop`一个项时，`delete`链表的头部。由于我们要基于链表构建栈，让我们先开始导入它：
 
 ```javascript
 import LinkedList from '../02-linked-list/LinkedList';
 ```
 
-#### constructor
+`04-stack/Stack.js`
 
-让我们创建 `Stack` 类：
+#### `constructor`
+
+让我们创建`Stack`类：
 
 ```javascript
 export class Stack {
@@ -1102,9 +965,11 @@ export class Stack {
 }
 ```
 
-#### push
+`04-stack/Stack.js`
 
-如果我们想向栈中推入某些东西，我们需要将数据 `append` 到链表的末尾。在这种情况下，栈顶就是链表的尾部：
+#### `push`
+
+如果我们想向栈中推入某些东西，我们需要将数据`prepend`到链表的头部。在这种情况下，栈顶就是链表的头部：
 
 ```javascript
 /**
@@ -1117,9 +982,11 @@ push(value) {
 }
 ```
 
-#### pop
+`04-stack/Stack.js`
 
-如果我们想从栈中弹出元素，我们需要 `delete` 链表尾部并返回它：
+#### `pop`
+
+如果我们想从栈中弹出元素，我们需要`delete`链表头部并返回它：
 
 ```javascript
 /**
@@ -1133,9 +1000,11 @@ pop() {
 }
 ```
 
-#### peek
+`04-stack/Stack.js`
 
-另一个常见的栈操作是检查栈顶是什么，而无需实际提取数据。在这种情况下，我们只需要读取链表的尾部：
+#### `peek`
+
+另一个常见的栈操作是检查栈顶是什么，而无需实际提取数据。在这种情况下，我们只需要读取链表的头部：
 
 ```javascript
 /**
@@ -1151,11 +1020,13 @@ peek() {
 }
 ```
 
-到此，我们已经完成了强制性的栈操作。现在，让我们继续实现一些辅助方法，这将使 `Stack` 类的使用更加方便。
+`04-stack/Stack.js`
 
-#### isEmpty
+到此，我们已经完成了强制性的栈操作。现在，让我们继续实现一些辅助方法，这将使`Stack`类的使用更加方便。
 
-实现 `isEmpty()` 方法来检查栈是否为空。要实现这一点，我们只需要检查链表是否有头部：
+#### `isEmpty`
+
+实现`isEmpty()`方法来检查栈是否为空。要实现这一点，我们只需要检查链表是否有头部：
 
 ```javascript
 /**
@@ -1167,12 +1038,15 @@ isEmpty() {
 }
 ```
 
-#### toArray
+`04-stack/Stack.js`
 
-另一个有用方法是 `toArray()`，将我们的栈转换为数组。要实现这一点，我们需要：
+#### `toArray`
+
+另一个有用方法是`toArray()`，将我们的栈转换为数组。要实现这一点，我们需要：
+
 1. 将链表转换为数组，
-2. 提取每个链表节点的值，因为我们不希望 `Stack` 类的使用者去处理链表节点。通过这样做，我们封装了类的实现，
-3. 反转链表数组，以便链表的尾部成为数组的第一个元素，头部成为数组的最后一个元素。这不是强制性的，但是为了方便起而做的。
+2. 提取每个链表节点的值，因为我们不希望`Stack`类的使用者去处理链表节点。通过这样做，我们封装了类的实现，
+3. 反转链表数组，以便链表的尾部成为数组的第一个元素，头部成为数组的最后一个元素。这不是强制性的，但是为了方便起见而做的。
 
 代码如下：
 
@@ -1187,9 +1061,11 @@ toArray() {
 }
 ```
 
-#### toString
+`04-stack/Stack.js`
 
-最后一个实现的方法是 `toString()`，它基于 `toArray()` 并将栈转换为字符串表示：
+#### `toString`
+
+最后一个实现的方法是`toString()`，它基于`toArray()`并将栈转换为字符串表示：
 
 ```javascript
 /**
@@ -1201,13 +1077,13 @@ toString(callback) {
 }
 ```
 
-最后一个大括号是 `Stack` 类的结束括号。到此时，我们 `Stack` 类的基础实现已经就绪。你可以在 `code/src/04-stack/Stack.js` 文件中找到完整的类代码示例。
+`04-stack/Stack.js`
 
+最后一个大括号是`Stack`类的结束括号。到此时，我们`Stack`类的基础实现已经就绪。你可以在`code/src/04-stack/Stack.js`文件中找到完整的类代码示例。
 
+### 参考文献
 
-
-
-Wikipedia 上的栈 <a href="https://en.wikipedia.org/wiki/Stack*(abstract_data_type)">https://en.wikipedia.org/wiki/Stack*(abstract_data_type)</a>
+Wikipedia 上的栈 [https://en.wikipedia.org/wiki/Stack_(abstract_data_type)](https://en.wikipedia.org/wiki/Stack_(abstract_data_type))
 
 YouTube 上的栈 [`www.youtube.com/watch?v=wjI1WNcIntg`](https://www.youtube.com/watch?v=wjI1WNcIntg)
 
@@ -1219,52 +1095,52 @@ YouTube 上的栈 [`www.youtube.com/watch?v=wjI1WNcIntg`](https://www.youtube.co
 
 `hash table`（或哈希映射）是一种实现`关联数组抽象数据类型`的数据结构，这种结构可以`将键映射到值`。例如，在`电话簿`（哈希表）中，你的`name`（键）可以作为你的`phone number`（值）的唯一标识符。在电话簿中处理手机的`常用操作`如下：
 
-```
- 1 //  HashTable 类。
- 2 import { HashTable } from './HashTable';
- 3 
- 4 // 创建哈希表实例。
- 5 const phoneBook = new HashTable();
- 6 
- 7 // 向电话簿添加几个联系人。
- 8 phoneBook.set('John Smith', '+112342345678');
- 9 phoneBook.set('Bill Jones', '+111111111111');
-10 
-11 // 现在我们可以在 O(1) 时间内访问每个联系人的电话。
-12 phoneBook.get('John Smith'); // => '+112342345678'
-13 phoneBook.get('Bill Jones'); // => '+111111111111'
-14 
-15 // 删除电话号码。
-16 phoneBook.delete('John Smith');
-17 phoneBook.get('John Smith'); // => undefined
+```javascript
+// HashTable 类。
+import { HashTable } from './HashTable';
+
+// 创建哈希表实例。
+const phoneBook = new HashTable();
+
+// 向电话簿添加几个联系人。
+phoneBook.set('John Smith', '+112342345678');
+phoneBook.set('Bill Jones', '+111111111111');
+
+// 现在我们可以在 O(1) 时间内访问每个联系人的电话。
+phoneBook.get('John Smith'); // => '+112342345678'
+phoneBook.get('Bill Jones'); // => '+111111111111'
+
+// 删除电话号码。
+phoneBook.delete('John Smith');
+phoneBook.get('John Smith'); // => undefined
 ```
 
 `src/05-hash-table/HashTable.js`
 
-理想情况下，哈希表允许我们以`O(1)` 的时间完成所有这些操作。相比之下，`Linked List`（链表）需要我们遍历列表中的`所有`节点来获取 John Smith 的电话号码，查找时间为 `O(n)`。
+理想情况下，哈希表允许我们以`O(1)`的时间完成所有这些操作。相比之下，`Linked List`（链表）需要我们遍历列表中的`所有`节点来获取 John Smith 的电话号码，查找时间为`O(n)`。
 
 极高效的查找是哈希表的主要优势。
 
-但在最坏的情况下，哈希表的查找时间可能会达到 `O(n)`。我们将在本章节的后后部分讨论这种情况。
+但在最坏的情况下，哈希表的查找时间可能会达到`O(n)`。我们将在本章节的后面部分讨论这种情况。
 
-那么，我们该如何在哈希表中实现快速的 `O(1)` 查找呢？我们分配一个包含`buckets`（桶）或`slots`（槽）的数组，用于存储所有的哈希表数据。然后，我们需要将值的键映射到存储该值的桶的特定数字（索引或地址）。通过这种方式，我们只需要通过桶地址在 `O(1)` 时间内访问即可在哈希表中创建、读取和删除记录。
+那么，我们该如何在哈希表中实现快速的`O(1)`查找呢？我们分配一个包含`buckets`（桶）或`slots`（槽）的数组，用于存储所有的哈希表数据。然后，我们需要将值的键映射到存储该值的桶的特定数字（索引或地址）。通过这种方式，我们只需要通过桶地址在`O(1)`时间内访问即可在哈希表中创建、读取和删除记录。
 
 构建哈希表存在某些局限性。桶的数量将有一个`固定大小`。这是因为任何程序都有特定的内存限制，我们不能假设为哈希表拥有无限的内存。
 
-我们要映射到桶地址的键的大小可能是`任意的`（例如，`John Smith` 或仅为 `Jimmy`）。在桶数量有限的情况下，我们如何将任意大小的键映射到一个数字（索引或地址）？提示已经隐藏在“Hash Table”这个数据结构的名称中了！那就是通过使用`hash function`（哈希函数）。
+我们要映射到桶地址的键的大小可能是`任意的`（例如，`John Smith`或仅为`Jimmy`）。在桶数量有限的情况下，我们如何将任意大小的键映射到一个数字（索引或地址）？提示已经隐藏在“Hash Table”这个数据结构的名称中了！那就是通过使用`hash function`（哈希函数）。
 
 ### 哈希函数 (Hash Function)
 
-`hash function` 是一种可以将`任意大小`的数据映射到`固定大小`数据的函数。哈希函数返回的值称为 `hash values`（哈希值）、`hash codes`（哈希码）、`digests` 或简称为 `hashes`。
+`hash function`是一种可以将`任意大小`的数据映射到`固定大小`数据的函数。哈希函数返回的值称为`hash values`（哈希值）、`hash codes`（哈希码）、`digests`或简称为`hashes`。
 
-在我们的情况下，哈希函数必须接受键（例如 `John Smith`）作为输入，并输出给定范围内的桶索引（例如，如果我们为桶分配一个大小为 5 的数组，则从 `0` 到 `5`）。在现实世界中，桶的数量要得多。它应该与我们要存储在哈希表中的信息量成比例。
+在我们的情况下，哈希函数必须接受键（例如`John Smith`）作为输入，并输出给定范围内的桶索引（例如，如果我们为桶分配一个大小为 5 的数组，则从`0`到`5`）。在现实世界中，桶的数量要多得多。它应该与我们要存储在哈希表中的信息量成比例。
 
 哈希函数由两部分组成：
 
-1. 将字符串转换为哈希码——理想情况下转换为键唯一数值表示。
-2. 使用模运算符将哈希码映射到特定的桶单元（因为桶的大小是的）。
+1. 将字符串转换为哈希码——理想情况下转换为键的唯一数值表示。
+2. 使用模运算符将哈希码映射到特定的桶单元（因为桶的大小是有限的）。
 
-![](img/05-hash-table----hash-function.png)
+![哈希函数](img/05-hash-table----hash-function.png)
 
 #### 哈希函数示例
 
@@ -1272,277 +1148,272 @@ YouTube 上的栈 [`www.youtube.com/watch?v=wjI1WNcIntg`](https://www.youtube.co
 
 > 什么是 ASCII 码？
 
-ASCII 代表美国信息交换标准（American Standard Code for Information Interchange），它是用数字表示英语字符的代码。计算机只理解 1 和 0，这种代码我们将输入的字母转换为计算机可以理解的数字。
+ASCII 代表美国信息交换标准（American Standard Code for Information Interchange），它是用数字表示英语字符的代码。计算机只理解 1 和 0，这种代码将我们输入的字母转换为计算机可以理解的数字。
 
-让我们创建一个名为 `hash` 的 JavaScript 函数，将键和桶的数量作为参数。
+让我们创建一个名为`hash`的 JavaScript 函数，将键和桶的数量作为参数。
 
-```
-13 export function hash(key, bucketsNumber) {
+```javascript
+export function hash(key, bucketsNumber) {
 ```
 
 `05-hash-table/hash.js`
 
-我们将遍历字符串中的每个字符，并使用 JavaScript 的 `charCodeAt` 方法获取 ASCII 值。我们将这些代码相加得到 `hashCode`。
+我们将遍历字符串中的每个字符，并使用 JavaScript 的`charCodeAt`方法获取 ASCII 值。我们将这些代码相加得到`hashCode`。
 
+```javascript
+  let hashCode = 0;
+  for (let characterIndex = 0; characterIndex < key.length; characterIndex++) {
+    hashCode += key.charCodeAt(characterIndex);
+  }
+
+  // 减少哈希值以适应桶的大小。
+  return hashCode % bucketsNumber;
+}
 ```
-14   let hashCode = 0;
-15   for (let characterIndex = 0; characterIndex < key.length; characterIndex++) {
-16     hashCode += key.charCodeAt(characterIndex);
-17   }
-18 
-19   // 减少哈数值以适应桶的大小。
-20   return hashCode % bucketsNumber;
-21 }
-```
+
+`05-hash-table/hash.js`
 
 ### 冲突解决 (Collision Resolution)
 
 理想情况下，哈希函数会将每个键分配到唯一的桶，但大多数哈希表设计采用不完美的哈希函数，这会导致哈希冲突，即哈希函数为多个键生成相同的索引。
 
-链链法（Separate chaining）是一种技术，我们将每个桶转换为链表。这样每个桶就可以存储多个值而不仅仅是一个。如果发生冲突，我们将新值附加到桶链表的尾部。
+分离链法（Separate chaining）是一种技术，我们将每个桶转换为链表。这样每个桶就可以存储多个值而不仅仅是一个。如果发生冲突，我们将新值附加到桶链表的尾部。
 
-![](img/05-hash-table----collisions.png)
+![冲突](img/05-hash-table----collisions.png)
 
-`read` 操作首先计算桶数，然后通过键在桶的链表中进行查找。在上面的示例中，使用链表获取 Billy Black 的电话号码所需的步骤如下：
+`read`操作首先计算桶数，然后通过键在桶的链表中进行查找。在上面的示例中，使用链表获取 Billy Black 的电话号码所需的步骤如下：
 
-1. 计算 `Billy Black` 键的哈希码。假设 `Billy Black` 键的哈希码为 `11`。
-2. 通过模运算计算桶索引。如果有 `5` 个桶，我们得到的桶索引为 `11 % 5 = 1`。
-3. 从索引 `1` 的单元获取链表，并遍历它的每个值，将每个值的键与我们需要键（在本例中为 `Billy Black`）进行比较。一旦找到具有 `Billy Black` 键的链表节点，我们就直接返回它。
+1. 计算`Billy Black`键的哈希码。假设`Billy Black`键的哈希码为`11`。
+2. 通过模运算计算桶索引。如果有`5`个桶，我们得到的桶索引为`11 % 5 = 1`。
+3. 从索引`1`的单元获取链表，并遍历它的每个值，将每个值的键与我们需要的键（在本例中为`Billy Black`）进行比较。一旦找到具有`Billy Black`键的链表节点，我们就直接返回它。
 
-
-
-
-哈希冲突是导致哈表基本操作（如 `read`、`write`、`update` 和 `delete`）的时间复杂度可能从 `O(1)` 降至 `O(n)` 的主要原因。在最坏的情况下，由于桶的数量较少且哈希函数不完美，所有值都可能存储在`one` 桶中。这将导致哈表变得像一个链表。
+哈希冲突是导致哈希表基本操作（如`read`、`write`、`update`和`delete`）的时间复杂度可能从`O(1)`降至`O(n)`的主要原因。在最坏的情况下，由于桶的数量较少且哈希函数不完美，所有值都可能存储在`一个`桶中。这将导致哈希表变得像一个链表。
 
 # 实现
 
-让我们结合上述哈希表基本操作以及分离链法冲突解决方法，并使用“链表”章节中的 `LinkedList` 类来实现哈希表。
+让我们结合上述哈希表基本操作以及分离链法冲突解决方法，并使用“链表”章节中的`LinkedList`类来实现哈希表。
 
-首先，我们需要导入链表类以便在哈希表中使用。哈希表中的每个桶将拥有一个 `LinkedList` 作为值，我们可以在其中存储每个键值对对应的值。
+首先，我们需要导入链表类以便在哈希表中使用。哈希表中的每个桶将拥有一个`LinkedList`作为值，我们可以在其中存储每个键值对对应的值。
 
-```
-1 import LinkedList from '../02-linked-list/LinkedList';
+```javascript
+import LinkedList from '../02-linked-list/LinkedList';
 ```
 
 `src/05-hash-table/HashTable.js`
 
 接下来，我们将设置桶的大小：
 
-```
-3 // 桶的数量直接影响冲突的数量。
-4 // 桶的数量越大，冲突就越少。
-5 // 为了演示，我们将哈希表的大小设置为一个
-6 // 较小的数字，以展示如何处理冲突。
-7 const defaultBucketsNumber = 32;
+```javascript
+// 桶的数量直接影响冲突的数量。
+// 桶的数量越大，冲突就越少。
+// 为了演示，我们将哈希表的大小设置为一个
+// 较小的数字，以展示如何处理冲突。
+const defaultBucketsNumber = 32;
 ```
 
 `src/05-hash-table/HashTable.js`
 
 ### `constructor`
 
-让我们从创建 `HashTable` 类开始：
+让我们从创建`HashTable`类开始：
 
-```
-9 export class HashTable {
-```
-
-`4-stack/Stack.js`
-
-在构造方法中，我们链联了许多函数。让我们分解每个部分发生的情况，以便更好地理解正在发生什么。
-
-```
-10   /**
-11    * @param {number} bucketsNumber - 存储哈表数据的桶的数量。
-12    *
-13    */
-14   constructor(bucketsNumber = defaultBucketsNumber) {
-15     // 创建特定大小的哈表，并在每个桶中填充空链表。
-16     this.buckets = Array(bucketsNumber).fill(null).map(() => new LinkedList());
-17   }
+```javascript
+export class HashTable {
 ```
 
 `src/05-hash-table/HashTable.js`
 
-首先，我们创建一个新数组并用 `bucketsNumber` 值初始化它：
+在构造方法中，我们串联了许多函数。让我们分解每个部分发生的情况，以便更好地理解正在发生什么。
 
+```javascript
+  /**
+   * @param {number} bucketsNumber - 存储哈希表数据的桶的数量。
+   */
+  constructor(bucketsNumber = defaultBucketsNumber) {
+    // 创建特定大小的哈希表，并在每个桶中填充空链表。
+    this.buckets = Array(bucketsNumber).fill(null).map(() => new LinkedList());
+  }
 ```
+
+`src/05-hash-table/HashTable.js`
+
+首先，我们创建一个新数组并用`bucketsNumber`值初始化它：
+
+```javascript
 this.buckets = new Array(bucketsNumber)
 ```
 
-然后，我们用 `null` 值填充数组，以便对其进行遍历：
+然后，我们用`null`值填充数组，以便对其进行遍历：
 
-```
+```javascript
 this.buckets = new Array(bucketsNumber).fill(null)
 ```
 
-最后，我们将数组中所有新创建的值都设置为一个 `LinkedList` 对象：
+最后，我们将数组中所有新创建的值都设置为一个`LinkedList`对象：
 
-```
+```javascript
 this.buckets = new Array(bucketsNumber).fill(null).map(() => new LinkedList());
 ```
 
 ### `hash`
 
-`hash()` 方法将字符串 `key` 转换为我们需要的桶索引，该索引用于存储指定 `key` 的值。如上所述，我们将使用一种简单的方法，根据键中每个字符的 ASCII 值之和来计算哈希。
+`hash()`方法将字符串`key`转换为我们需要的桶索引，该索引用于存储指定`key`的值。如上所述，我们将使用一种简单的方法，根据键中每个字符的 ASCII 值之和来计算哈希。
 
-```
-18   /**
-19    * 将键字符串转换为哈希数字。
-20    *
-21    * @param {string} key
-22    * @return {number}
-23    */
-24   hash(key) {
-25     let hashCode = 0;
-26 
-27     // 遍历所有键字符，并将它们的代码加到哈希中。
-28     for (let characterIndex = 0; characterIndex < key.length; characterIndex += 1) {
-29       hashCode += key.charCodeAt(characterIndex);
-30     }
-31 
-32     // 缩小哈希数字以适应桶表的大小。
-33     return hashCode % this.buckets.length;
-34   }
+```javascript
+  /**
+   * 将键字符串转换为哈希数字。
+   *
+   * @param {string} key
+   * @return {number}
+   */
+  hash(key) {
+    let hashCode = 0;
+
+    // 遍历所有键字符，并将它们的代码加到哈希中。
+    for (let characterIndex = 0; characterIndex < key.length; characterIndex += 1) {
+      hashCode += key.charCodeAt(characterIndex);
+    }
+
+    // 缩小哈希数字以适应桶表的大小。
+    return hashCode % this.buckets.length;
+  }
 ```
 
 `src/05-hash-table/HashTable.js`
 
-首先，我们使用 `for` 循环遍历所有字符并计算它们的和。
+首先，我们使用`for`循环遍历所有字符并计算它们的和。
 
-```
+```javascript
 for (let characterIndex = 0; characterIndex < key.length; characterIndex += 1) {
   hashCode += key.charCodeAt(characterIndex);
 }
 ```
 
-接下来，我们应用取模运算符 `%`，这将把我们生成的哈希范围限制在可用桶的数量之内：
+接下来，我们应用取模运算符`%`，这将把我们生成的哈希范围限制在可用桶的数量之内：
 
-```
+```javascript
 // 缩小哈希数字以适应桶表的大小。
 return hashCode % this.buckets.length;
 ```
 
-如果我们的 `hashCode` 值等于 97 且 `this.buckets.length` 等于 50，函数将返回 `97 % 50 = 47`。我们将使用索引为 47 的桶来存储键 ‘ab’ 的值。
+如果我们的`hashCode`值等于 97 且`this.buckets.length`等于 50，函数将返回`97 % 50 = 47`。我们将使用索引为 47 的桶来存储键`'ab'`的值。
 
 ### `set`
 
-我们根据键和值向哈表中添加元素。
+我们根据键和值向哈希表中添加元素。
 
-```
-36   /**
-37    * 通过键添加或更新值。
-38    *
-39    * @param {string} key
-40    * @param {*} value
-41    */
-42   set(key, value) {
-43     // 计算桶索引。
-44     const keyHash = this.hash(key);
-45     // 获取特定桶索引的链表。
-46     const bucketLinkedList = this.buckets[keyHash];
-47     // 在链表执行执行“按键查找”操作。
-48     const node = bucketLinkedList.find({ callback: nodeValue => nodeValue.key === key });
-50 
-51     // 检查带有指定键的值是否已存在于链表中。
-52     if (!node) {
-53       // 插入新节点。
-55       bucketLinkedList.append({ key, value });
-56     } else {
-57       // 更新现有节点。
-58       node.value = value;
-59     }
-60   }
+```javascript
+  /**
+   * 通过键添加或更新值。
+   *
+   * @param {string} key
+   * @param {*} value
+   */
+  set(key, value) {
+    // 计算桶索引。
+    const keyHash = this.hash(key);
+    // 获取特定桶索引的链表。
+    const bucketLinkedList = this.buckets[keyHash];
+    // 在链表中执行“按键查找”操作。
+    const node = bucketLinkedList.find({ callback: nodeValue => nodeValue.key === key });
+
+    // 检查带有指定键的值是否已存在于链表中。
+    if (!node) {
+      // 插入新节点。
+      bucketLinkedList.append({ key, value });
+    } else {
+      // 更新现有节点。
+      node.value = value;
+    }
+  }
 ```
 
 `src/05-hash-table/HashTable.js`
 
 我们开始计算键的哈希。该哈希值将指向桶索引。
 
-```
+```javascript
 const keyHash = this.hash(key);
 ```
 
 接下来，获取存储在桶中的链表。
 
-```
+```javascript
 const bucketLinkedList = this.buckets[keyHash];
 ```
 
-此时，我们需要检查正在尝试设置的值是否已存在于链表中。我们将使用 `find` 方法。
+此时，我们需要检查正在尝试设置的值是否已存在于链表中。我们将使用`find`方法。
 
-```
+```javascript
 const node = bucketLinkedList.find({ callback: nodeValue => nodeValue.key === key });
 ```
 
 ### `get`
 
-使用键从哈表中获取值的操作与 `set` 方法相似。唯一的区别是，在检查链表中是否存在该值后，返回其值或 `undefined`。
+使用键从哈希表中获取值的操作与`set`方法相似。唯一的区别是，在检查链表中是否存在该值后，返回其值或`undefined`。
 
-```
-61   /**
-62    * 通过键获取值。
-63    *
-64    * @param {string} key
-65    * @return {*}
-66    */
-67   get(key) {
-68     // 计算桶索引。
-69     const keyHash = this.hash(key);
-70     // 获取特定桶索引的链表。
-71     const bucketLinkedList = this.buckets[keyHash];
-72     // 在链表执行“按键查找”操作。
-73     const node = bucketLinkedList.find({ callback: nodeValue => nodeValue.key === key });
-74 
-75     // 检查带有指定键的值是否已存在于链表中。
-76     return node ? node.value.value : undefined;
-77   }
+```javascript
+  /**
+   * 通过键获取值。
+   *
+   * @param {string} key
+   * @return {*}
+   */
+  get(key) {
+    // 计算桶索引。
+    const keyHash = this.hash(key);
+    // 获取特定桶索引的链表。
+    const bucketLinkedList = this.buckets[keyHash];
+    // 在链表中执行“按键查找”操作。
+    const node = bucketLinkedList.find({ callback: nodeValue => nodeValue.key === key });
+
+    // 检查带有指定键的值是否已存在于链表中。
+    return node ? node.value.value : undefined;
+  }
 ```
 
 `src/05-hash-table/HashTable.js`
 
 ### `delete`
 
-当我们从哈表中删除值时，我们使用与 `set` 方法相似的一些步骤。我们首先计算提供的键的哈希，然后获取桶的链表。最后，我们检查要删除的值是否存在于链表中。如果存在，我们使用 `LinkedList` 的 delete 方法并返回 `true`。否则，我们返回 `false`，表示没有可删除的内容。
-
-
-
+当我们从哈希表中删除值时，我们使用与`set`方法相似的一些步骤。我们首先计算提供的键的哈希，然后获取桶的链表。最后，我们检查要删除的值是否存在于链表中。如果存在，我们使用`LinkedList`的`delete`方法并返回`true`。否则，我们返回`false`，表示没有可删除的内容。
 
 ```javascript
- 78   /**
+  /**
    * 根据键删除值。
-   * 
+   *
    * @param {string} key
    * @return {boolean}
    */
-   delete(key) {
-     // 计算哈桶索引。
-     const keyHash = this.hash(key);
-     // 获取特定哈桶索引的链表。
-     const bucketLinkedList = this.buckets[keyHash];
-     // 在链表中执行“按键查找”操作。
-     const node = bucketLinkedList.find({ callback: nodeValue => nodeValue.key === key });
- 
-     // 如果链表中存在该节点，则删除该节点。
-     if (node) {
-       bucketLinkedList.delete(node.value);
+  delete(key) {
+    // 计算哈希桶索引。
+    const keyHash = this.hash(key);
+    // 获取特定哈希桶索引的链表。
+    const bucketLinkedList = this.buckets[keyHash];
+    // 在链表中执行“按键查找”操作。
+    const node = bucketLinkedList.find({ callback: nodeValue => nodeValue.key === key });
 
-       return true;
-     }
+    // 如果链表中存在该节点，则删除该节点。
+    if (node) {
+      bucketLinkedList.delete(node.value);
 
-     return false;
-   }
+      return true;
+    }
+
+    return false;
+  }
 ```
 
 `src/05-hash-table/HashTable.js`
 
-目前我们的 `HashTable` 类的基本实现已经就绪。你可以在 `code/src/05-hash-table/HashTable.js` 文件中找到完整的类代码示例。
+目前我们的`HashTable`类的基本实现已经就绪。你可以在`code/src/05-hash-table/HashTable.js`文件中找到完整的类代码示例。
 
 ### 操作时间复杂度
 
-| 情况 | 搜索 | 插入 | 删除 |get |
+| 情况 | 搜索 | 插入 | 删除 | get |
 | --- | --- | --- | --- | --- |
-| **平均** | O(1) | O(1) | O(1) | 具有良好的哈希函数和足够的哈桶数量 |
-| **最坏情况** | O(n) | O(n) | O(n) | 哈希函数较差且哈桶数量过小 |
+| **平均** | O(1) | O(1) | O(1) | 具有良好的哈希函数和足够的哈希桶数量 |
+| **最坏情况** | O(n) | O(n) | O(n) | 哈希函数较差且哈希桶数量过小 |
 
 ### 示例
 
@@ -1554,19 +1425,21 @@ const node = bucketLinkedList.find({ callback: nodeValue => nodeValue.key === ke
 ### 测验
 
 * Q1: 哈希表与链表相比，主要优势是什么？
-* Q2: 哈希表中 `get()` 操作的时间复杂度是多少？
+* Q2: 哈希表中`get()`操作的时间复杂度是多少？
 * Q3: 哈希表中的冲突是什么？
 * Q4: 你知道哪些处理冲突的方法？
 
 ### 参考文献
 
 Wikipedia 上的哈希表 [`en.wikipedia.org/wiki/Hash_table`](https://en.wikipedia.org/wiki/Hash_table)
+
 YouTube 上的哈希表 [`www.youtube.com/watch?v=shs0KM3wKv8`](https://www.youtube.com/watch?v=shs0KM3wKv8)
+
 哈希表示例和测试用例 [`github.com/trekhleb/javascript-algorithms/tree/master/src/data-structures/hash-table`](https://github.com/trekhleb/javascript-algorithms/tree/master/src/data-structures/hash-table)
 
 ## 二叉搜索树 (BST)
 
-* *难度：中等*
+*难度：中等*
 
 在我们深入学习二叉搜索树主题之前，首先需要理解什么是`tree`（树）和二叉树数据结构。
 
@@ -1578,92 +1451,38 @@ YouTube 上的哈希表 [`www.youtube.com/watch?v=shs0KM3wKv8`](https://www.yout
 
 > 节点是计算机科学中使用的基本单元。节点是更大数据结构（如链表和树数据结构）的组成部分。节点包含数据，并可能链接到其他节点。节点之间的链接通常通过指针实现。-[Wikipedia](https://en.wikipedia.org/wiki/Node_(computer_science))
 
-树数据结构中的每个节点（根节点除外）都通过一条边与另一个另一个节点连接。所有节点形成`parent -> child`（父子）关系，树中没有循环。
+树数据结构中的每个节点（根节点除外）都通过一条边与另一个节点连接。所有节点形成`parent -> child`（父子）关系，树中没有循环。
 
 这里是一个树的示例：
 
-![](img/06-binary-search-tree----tree.png)
+![树](img/06-binary-search-tree----tree.png)
 
-在这个示例中，树由一组`nodes` {"a”, “b”, “c”, …, “i”}和一组`edges` {"ab”, “ac”, “bd”, …, “fi”}组成，在节点之间形成父子关系。节点“a”是树的`root`，它没有父节点但有两个`child`节点——“b”和“c”。示例中的节点“f”有一个`parent`“c”和三个子节点“g”、“h”和“i”。没有节点的节点被称为`leaf nodes`（叶子节点）。在示例中，节点“d”、“e”、“g”、“h”、“i”是叶子。
+在这个示例中，树由一组`nodes`{"a", "b", "c", …, "i"}和一组`edges`{"ab", "ac", "bd", …, "fi"}组成，在节点之间形成父子关系。节点"a"是树的`root`，它没有父节点但有两个`child`节点——"b"和"c"。示例中的节点"f"有一个`parent`"c"和三个子节点"g"、"h"和"i"。没有子节点的节点被称为`leaf nodes`（叶子节点）。在示例中，节点"d"、"e"、"g"、"h"、"i"是叶子。
 
 树的`size`（大小）是它包含的节点数量。在上面的示例中，树的大小为 9。
 
-节点的`height`（高度）是从它到最远叶节点的最长路径（边的数量）。根节点的高度就是`height of tree`。在上面的示例中，节点“c”的高度为 2，因为从它到最深叶节点有两条边。
+节点的`height`（高度）是从它到最远叶节点的最长路径（边的数量）。根节点的高度就是`height of tree`。在上面的示例中，节点"c"的高度为 2，因为从它到最深叶节点有两条边。
 
 ### 二叉树
 
 `二叉树`是每个节点最多有两个子节点的树。
 
-![](img/06-binary-search-tree----tree.png)
-
-`二叉树`是每个节点最多有两个子节点的树。
-
-![](img/06-binary-search-tree----tree.png)
-
-`二叉树`是每个节点最多有两个子节点的树。
-
-![](img/06-binary-search-tree----tree.png)
-
-`二叉树`是每个节点最多有两个子节点的树。
-
-![](img/06-binary-search-tree----tree.png)
-
-`二叉树`是每个节点最多有两个子节点的树。
-
-![](img/06-binary-search-tree----tree.png)
-
-`二叉树`是每个节点最多有两个子节点的树。
-
-![](img/06-binary-search-tree----tree.png)
-
-*(注：由于原文存在大量重复，此处已根据要求整理)*
-
-## 二叉搜索树 (BST)
-
-* *难度：中等*
-
-在我们深入二叉搜索树主题之前，首先需要理解什么是`tree`（树）和二叉树数据结构。
-
-### 树
-
-`tree data structure`被定义为节点的集合（从`root 节点`开始），其中每个节点都是由一个值和一个指向节点的引用列表（“子节点”）组成的数据结构，其限制条件是没有重复引用，且没有引用指向根节点。这些引用通常被称为`边`。
-
-#### 什么是节点？
-
-> 节点是计算机科学中使用的基本单元。节点是更大数据结构（如链表和树数据结构）的组成部分。节点包含数据，并可能链接到其他节点。节点之间的链接通常通过指针实现。-[Wikipedia](https://en.wikipedia.org/wiki/Node_(computer_science))
-
-树数据结构中的每个节点（根节点除外）都通过一条边与另一个另一个节点连接。所有节点形成`parent -> child`关系，树中没有循环。
-
-这里是一个树的示例：
-
-![](img/06-binary-search-tree----tree.png)
-
-在这个示例中，树由一组`nodes` {"a”, “b”, “c”, …, “i”}和一组`edges` {"ab”, “ac”, “bd”, …, “fi”}组成，在节点之间形成父子关系。节点“a”是树的`root`，它没有父节点但有两个`child`节点——“b”和“c”。示例中的节点“f”有一个`parent`“c”和三个子节点“g”、“h”和“i”。没有节点的节点被称为`leaf nodes`（叶子节点）。在示例中，节点“d”、“e”、“g”、“h”、“i”是叶子。
-
-树的`size`是它包含的节点数量。在上面的示例中，树的大小为 9。
-
-节点的`height`是从它到最远叶节点的最长路径（边的数量）。根节点的高度就是`height of tree`。在上面的示例中，节点“c”的高度为 2，因为从它到最深叶节点有两条边。
-
-### 二叉树
-
-`binary tree`是每个节点最多有两个子节点的树。
-
-![](img/06-binary-search-tree----tree.png)
+![二叉树](img/06-binary-search-tree----tree.png)
 
 ### 二叉搜索树
 
-`binary search tree` (或 `BST`) 是一种二叉树，其中每个节点（叶子节点除外）满足以下规则：
+`binary search tree`(或`BST`)是一种二叉树，其中每个节点（叶子节点除外）满足以下规则：
 
 * 节点`right subtree`的所有值必须`greater`节点本身，
 * 节点`left subtree`的所有值必须`less`节点本身。
 
-叶子节点的节点为`null`，因此我们不对它们应用这些规则。
+叶子节点的子节点为`null`，因此我们不对它们应用这些规则。
 
 这里是一个二叉搜索树的示例：
 
-![](img/06-binary-search-tree----binary-search-tree.png)
+![二叉搜索树](img/06-binary-search-tree----binary-search-tree.png)
 
-该树的根值为 `9`，其右子节点值为 `13`，大于根值。当我们向右子树移动时，发现右子树中的所有值都大于根节点。根节点的左子节点值为 `5`，小于根值。当我们向左子树移动时，发现左子树中的所有值都小于根节点。这些规则可以递归地应用于树中的所有节点。
+该树的根值为`9`，其右子节点值为`13`，大于根值。当我们向右子树移动时，发现右子树中的所有值都大于根节点。根节点的左子节点值为`5`，小于根值。当我们向左子树移动时，发现左子树中的所有值都小于根节点。这些规则可以递归地应用于树中的所有节点。
 
 ### 应用
 
@@ -1673,22 +1492,19 @@ YouTube 上的哈希表 [`www.youtube.com/watch?v=shs0KM3wKv8`](https://www.yout
 
 #### 搜索 (查找)
 
-二叉搜索树是排序的这一事实使得对树应用`binary search`方法并进行`fast lookup`成为可能。假设要在上面的树中查找值为 `7` 的节点。查找算法如下：
+二叉搜索树是排序的这一事实使得对树应用`binary search`方法并进行`fast lookup`成为可能。假设要在上面的树中查找值为`7`的节点。查找算法如下：
 
 1. 从根节点开始（将根节点视为当前节点）。
-2. 如果当前节点值大于 `7`，则向左（将左子节点变为当前节点）。否则，向右（将右子节点变为当前节点）。
+2. 如果当前节点值大于`7`，则向左（将左子节点变为当前节点）。否则，向右（将右子节点变为当前节点）。
 3. 重复步骤 1 和 2，直到找到节点或当前节点没有剩余子节点。
 
-![](img/06-binary-search-tree----binary-search-tree-lookup.png)
+![二叉搜索树查找](img/06-binary-search-tree----binary-search-tree-lookup.png)
 
-
-
-
-在每次查找迭代后，我们都会忽略大约一半的树（或子树），并关注另一半部分。通过每次只关注树的一半部分并在每次迭代中将搜索范围缩小一倍，查找操作的时间复杂度为 `O(log(n))`。
+在每次查找迭代后，我们都会忽略大约一半的树（或子树），并关注另一半部分。通过每次只关注树的一半部分并在每次迭代中将搜索范围缩小一倍，查找操作的时间复杂度为`O(log(n))`。
 
 ## 自平衡
 
-二叉搜索树中查找操作的性能紧密取决于树的形状。例如，如上所述，平衡的二叉搜索树在树中查找特定值需要 `O(log(n))` 时间。但对于病态的二叉搜索树，相同的操作需要 `O(n)` 时间，因为该树类似于链表。
+二叉搜索树中查找操作的性能紧密取决于树的形状。例如，如上所述，平衡的二叉搜索树在树中查找特定值需要`O(log(n))`时间。但对于病态的二叉搜索树，相同的操作需要`O(n)`时间，因为该树类似于链表。
 
 在添加或删除节点时保持二叉搜索树的平衡可以维持查找操作的快速性能。有几种数据结构构建在二叉搜索树之上，但具有每次修改后平衡树的额外功能：[AVL 树](https://github.com/trekhleb/javascript-algorithms/tree/master/src/data-structures/tree/avl-tree)、[红黑树](https://github.com/trekhleb/javascript-algorithms/tree/master/src/data-structures/tree/red-black-tree)等。
 
@@ -1698,7 +1514,7 @@ YouTube 上的哈希表 [`www.youtube.com/watch?v=shs0KM3wKv8`](https://www.yout
 
 要向二叉搜索树中插入一个新节点，我们需要递归地将当前节点值与新节点值进行比较。如果新节点值大于当前节点值，我们需要向右移动（将右子节点设置为当前节点）。否则，我们需要向左移动（将左子节点设置为当前节点）。一旦下一个子节点为空，意味着我们已经到达了叶子节点，并准备好将新节点放置在它的正确位置。
 
-![](img/06-binary-search-tree----binary-search-tree-insertion.png)
+![二叉搜索树插入](img/06-binary-search-tree----binary-search-tree-insertion.png)
 
 ## 移除
 
@@ -1710,234 +1526,235 @@ YouTube 上的哈希表 [`www.youtube.com/watch?v=shs0KM3wKv8`](https://www.yout
 
 这里是节点具有两个子节点时的最后一种情况的示例。
 
-![](img/06-binary-search-tree----binary-search-tree-removing.png)
+![二叉搜索树删除](img/06-binary-search-tree----binary-search-tree-removing.png)
 
 ## 遍历
 
 遍历是按照特定顺序访问树的所有节点。
 
-![](img/06-binary-search-tree----binary-search-tree-traversal.png)
+![二叉搜索树遍历](img/06-binary-search-tree----binary-search-tree-traversal.png)
 
 在本章中，我们将实现中序遍历，将二叉搜索树转换为排序数组。
 
 ## 使用示例
 
-在继续实现二叉搜索树的具体 JavaScript 代码之前，让我们先看一个 `BinarySearchTree` 类的用例，并描述我们将将如何使用它。
+在继续实现二叉搜索树的具体 JavaScript 代码之前，让我们先看一个`BinarySearchTree`类的用例，并描述我们将如何使用它。
 
-假设我们有一组购物商品。我们希望所有以下操作都能快速执行（在 `O(log(n))` 时间内）：按特定价格获取商品、插入新商品、移除现有商品、从集合中获取最便宜的商品、获取最昂贵的商品。
+假设我们有一组购物商品。我们希望所有以下操作都能快速执行（在`O(log(n))`时间内）：按特定价格获取商品、插入新商品、移除现有商品、从集合中获取最便宜的商品、获取最昂贵的商品。
 
+```javascript
+// 导入依赖项
+import BinarySearchTree from './BinarySearchTree';
+
+// 创建二叉搜索树实例。
+const bstCollection = new BinarySearchTree();
+
+// 将商品添加到我们的二叉搜索树中。
+// 我们将价格作为键。
+bstCollection.insert(220, { title: 'Phone' });
+bstCollection.insert(3455, { title: 'TV' });
+bstCollection.insert(8200, { title: 'Notebook' });
+bstCollection.insert(120, { title: 'Remote Control' });
+
+// 找到目前为止最便宜和最贵的商品。
+const minItem = bstCollection.findMin().data; // { title: 'Remote Control' }
+const maxItem = bstCollection.findMax().data; // { title: 'Notebook' }
+
+// 找到价格为 3455 的商品。
+const item = bstCollection.find(3455).data; // { title: 'TV' }
+
+// 按价格移除商品。
+bstCollection.remove(120);
+// 检查目前最便宜的商品是什么。
+const newMinItem = bstCollection.findMin().data; // { title: 'Phone' }
+
+// 现在我们可以以任何方式使用获取到的数据。
+// eslint-disable-next-line
+console.log(minItem, maxItem, item, newMinItem);
 ```
-1 // 导入依赖项
-2 import BinarySearchTree from './BinarySearchTree';
-3 
-4 // 创建二叉搜索树实例。
-5 const bstCollection = new BinarySearchTree();
-6 
-7 // 将商品添加到我们的二叉搜索树中。
-8 // 我们将价格作为键。
-9 bstCollection.insert(220, { title: 'Phone' });
-10 bstCollection.insert(3455, { title: 'TV' });
-11 bstCollection.insert(8200, { title: 'Notebook' });
-12 bstCollection.insert(120, { title: 'Remote Control' });
-13 
-14 // 找到目前为止最便宜和最贵的商品。
-15 const minItem = bstCollection.findMin().data; // { title: 'Remote Control' }
-16 const maxItem = bstCollection.findMax().data; // { title: 'Notebook' }
-17 
-18 // 找到价格为 8200 的商品。
-19 const item = bstCollection.find(3455).data; // { title: 'TV' }
-20 
-21 // 按价格移除商品。
-22 bstCollection.remove(120);
-23 // 检查目前最便宜的商品是什么。
-24 const newMinItem = bstCollection.findMin().data; // { title: 'Phone' }
-25 
-26 // 现在我们可以以任何方式使用获取到的数据。
-27 // eslint-disable-next-line
-28 console.log(minItem, maxItem, item, newMinItem);
-```
-06-binary-search-tree/example.js
+
+`06-binary-search-tree/example.js`
 
 # 实现
 
-我们将实现分为两个部分。首先，我们将实现 `BinarySearchTreeNode` 类，它将代表二叉搜索树的节点及其功能。该类将包含核心功能。然后，我们将实现 `BinarySearchTree` 类，它只是 `BinarySearchTreeNode` 类的封装，将使操作二叉搜索树变得简单一点。
+我们将实现分为两个部分。首先，我们将实现`BinarySearchTreeNode`类，它将代表二叉搜索树的节点及其功能。该类将包含核心功能。然后，我们将实现`BinarySearchTree`类，它只是`BinarySearchTreeNode`类的封装，将使操作二叉搜索树变得简单一点。
 
 ### BinarySearchTreeNode
 
-####构造函数
+#### 构造函数
 
 让我们创建这个类。
 
 ```javascript
-1 export default class BinarySearchTreeNode {
+export default class BinarySearchTreeNode {
 ```
-06-binary-search-tree/BinarySearchTreeNode.js
 
-我们的构造函数将接受 `value` 参数，我们将将其作为键来定义当前节点应该放在树的什么位置。所有的节点比较将使用此 `value` 参数进行。`data` 参数作为数据包，包含任何类型的数据。例如，它可能包含一个带有所有特定价格购物商品的链表，也可能包含一个带有名称、电话号码等的用户对象。
+`06-binary-search-tree/BinarySearchTreeNode.js`
 
-在构造函数中，我们将创建指向左、右子节点的指针以及一个指向父节点的指针。对于树中的根节点，父节点始终为 `null`。
+我们的构造函数将接受`value`参数，我们将将其作为键来定义当前节点应该放在树的什么位置。所有的节点比较将使用此`value`参数进行。`data`参数作为数据包，包含任何类型的数据。例如，它可能包含一个带有所有特定价格购物商品的链表，也可能包含一个带有名称、电话号码等的用户对象。
+
+在构造函数中，我们将创建指向左、右子节点的指针以及一个指向父节点的指针。对于树中的根节点，父节点始终为`null`。
 
 ```javascript
-2   /**
-3    * @param {*} value - 节点值。
-4    * @param {*} data - 节点数据（可以是任何内容）。
-5    */
-6   constructor(value = null, data = null) {
-7     this.left = null; // 指向左子节点的指针。
-8     this.right = null; // 指向右子节点的指针。
-9     this.parent = null; // 指向父节点的指针。
-10    this.value = value;
-11    this.data = data;
-12  }
+  /**
+   * @param {*} value - 节点值。
+   * @param {*} data - 节点数据（可以是任何内容）。
+   */
+  constructor(value = null, data = null) {
+    this.left = null; // 指向左子节点的指针。
+    this.right = null; // 指向右子节点的指针。
+    this.parent = null; // 指向父节点的指针。
+    this.value = value;
+    this.data = data;
+  }
 ```
-06-binary-search-tree/BinarySearchTreeNode.js
 
-#### find()
+`06-binary-search-tree/BinarySearchTreeNode.js`
 
-该方法通过 `value` 在整个树中查找节点。它执行了上文提到的二叉搜索查找操作。提醒一下，在二叉搜索树中通过键查找节点，我们需要递归地将其与当前节点进行比较，如果当前节点值比我们要找的值大，则向左移动（到左子节点）。否则，我们需要向右移动（到右节点）。相同的过程在下一个节点（左或右子节点）上重复。
+#### `find()`
+
+该方法通过`value`在整个树中查找节点。它执行了上文提到的二叉搜索查找操作。提醒一下，在二叉搜索树中通过键查找节点，我们需要递归地将其与当前节点进行比较，如果当前节点值比我们要找的值大，则向左移动（到左子节点）。否则，我们需要向右移动（到右节点）。相同的过程在下一个节点（左或右子节点）上重复。
 
 ```javascript
-168   /**
-169    * @param {*} value
-170    * @return {BinarySearchTreeNode}
-171    */
-172   find(value) {
-173     // 检查根节点。
-174     if (this.value === value) {
-175       return this;
-176     }
-177 
-178     if (value < this.value && this.left) {
-179       // 检查左节点。
-180       return this.left.find(value);
-181     }
-182 
-183     if (value > this.value && this.right) {
-184       // 检查右节点。
-185       return this.right.find(value);
-186     }
-187 
-188     return null;
-189   }
+  /**
+   * @param {*} value
+   * @return {BinarySearchTreeNode}
+   */
+  find(value) {
+    // 检查根节点。
+    if (this.value === value) {
+      return this;
+    }
+
+    if (value < this.value && this.left) {
+      // 检查左节点。
+      return this.left.find(value);
+    }
+
+    if (value > this.value && this.right) {
+      // 检查右节点。
+      return this.right.find(value);
+    }
+
+    return null;
+  }
 ```
-06-binary-search-tree/BinarySearchTreeNode.js
 
+`06-binary-search-tree/BinarySearchTreeNode.js`
 
+#### `insert()`
 
+该方法使用了其他辅助方法，如`setLeft()`和`setRight()`，这些方法将在下方实现。
 
+```javascript
+  /**
+   * @param {*} value
+   * @param {*} [data] - 节点数据（可以是任何内容）。
+   * @return {BinarySearchTreeNode}
+   */
+  insert(value, data) {
+    if (this.value === null) {
+      this.value = value;
+      this.data = data;
 
-该方法使用了其他辅助方法，如 `setLeft()` 和 `setRight()`，这些方法将在下方实现。
+      return this;
+    }
 
-```
-128   /**
-129    * @param {*} value
-130    * @param {*} [data] -节点数据（可以是任何内容）。
-131    * @return {BinarySearchTreeNode}
-132    */
-133   insert(value, data) {
-134     if (this.value === null) {
-135       this.value = value;
-136       this.data = data;
-137 
-138       return this;
-139     }
-140 
-141     if (value < this.value) {
-142       // 插入到左侧。
-143       if (this.left) {
-144         return this.left.insert(value, data);
-145       }
-146 
-147       const newNode = new BinarySearchTreeNode(value, data);
-148       this.setLeft(newNode);
-144 
-150       return newNode;
-151     }
-152 
-153     if (value > this.value) {
-154       // 插入到右侧。
-155       if (this.right) {
-156         return this.right.insert(value, data);
-157       }
-158 
-159       const newNode = new BinarySearchTreeNode(value, data);
-160       this.setRight(newNode);
-161 
-162       return newNode;
-163     }
-164 
-165     return this;
-166   }
+    if (value < this.value) {
+      // 插入到左侧。
+      if (this.left) {
+        return this.left.insert(value, data);
+      }
+
+      const newNode = new BinarySearchTreeNode(value, data);
+      this.setLeft(newNode);
+
+      return newNode;
+    }
+
+    if (value > this.value) {
+      // 插入到右侧。
+      if (this.right) {
+        return this.right.insert(value, data);
+      }
+
+      const newNode = new BinarySearchTreeNode(value, data);
+      this.setRight(newNode);
+
+      return newNode;
+    }
+
+    return this;
+  }
 ```
 
 `06-binary-search-tree/BinarySearchTreeNode.js`
 
 ### `remove()`
 
-在删除节点之前，我们先使用上面描述的 `find()` 函数在树中找到它。当我们找到正确的节点后，可能会出现以下几种情况：
+在删除节点之前，我们先使用上面描述的`find()`函数在树中找到它。当我们找到正确的节点后，可能会出现以下几种情况：
 
-- **删除叶子节点**：从父父节点中移除指向该节点的指针。
-- **删除只有一个子节点的节点**：将该唯一的子节点变为当前节点父节点的直接祖先。
+- **删除叶子节点**：从父节点中移除指向该节点的指针。
+- **删除只有一个子节点的节点**：将该唯一的子节点变为当前节点父节点的直接子节点。
 - **删除有两个子节点的节点**：找到下一个较大的值（右分支中的最小值），并用该下一个较大的值节点替换当前节点。
 
-该方法使用了其他辅助方法，如 `removeChild()`、`findMin()`、`setValue()`、`setRight()`、`replaceChild()` 和 `copyNode()`，这些方法将在下方实现。
+该方法使用了其他辅助方法，如`removeChild()`、`findMin()`、`setValue()`、`setRight()`、`replaceChild()`和`copyNode()`，这些方法将在下方实现。
 
-```
-221   /**
-222    * @param {*} value
-223    * @return {boolean}
-224    */
-225   remove(value) {
-226     const nodeToRemove = this.find(value);
-227 
-228     if (!nodeToRemove) {
-229       throw new Error('树中未找到该项目');
-230     }
-231 
-232     const { parent } = nodeToRemove;
-233 
-234     if (!nodeToRemove.left && !nodeToRemove.right) {
-235       // 节点是叶子节点，因此没有子节点。
-236       if (parent) {
-237         // 节点有父节点。只需从父节点移除指向该节点的指针。
-238         parent.removeChild(nodeToRemove);
-239       } else {
-240         // 节点没有父节点。只需擦除当前节点的值。
-241         nodeToRemove.setValue(undefined);
-242       }
-243     } else if (nodeToRemove.left && nodeToRemove.right) {
-244       // 节点有两个子节点。
-245       // 找到下一个较大的值（右分支中的最小值）
-246       // 并用该下一个较大的值替换当前值节点。
-247       const nextBiggerNode = nodeToRemove.right.findMin();
-248       if (nextBiggerNode !== nodeToRemove.right) {
-249         this.remove(nextBiggerNode.value);
-250         nodeToRemove.setValue(nextBiggerNode.value);
-251       } else {
-252         // 万一下一个右侧的值是下一个较大的值且它没有左\
-253         ft 子节点
-254         // 则只需用右侧节点替换要删除的节点。
-255         nodeToRemove.setValue(nodeToRemove.right.value);
-256         nodeToRemove.setRight(nodeToRemove.right.right);
-257       }
-258     } else {
-259       // 节点只有一个子节点。
-260       // 将该子节点变为当前节点父节点的直接节点。
-261       /** @var BinarySearchTreeNode */
-262       const childNode = nodeToRemove.left || nodeToRemove.right;
-263 
-264       if (parent) {
-265         parent.replaceChild(nodeToRemove, childNode);
-266       } else {
-267         BinarySearchTreeNode.copyNode(childNode, nodeToRemove);
-268       }
-269     }
-270 
-271     // 清除被删除节点的父节点。
-272     nodeToRemove.parent = null;
-273 
-274     return true;
-275   }
+```javascript
+  /**
+   * @param {*} value
+   * @return {boolean}
+   */
+  remove(value) {
+    const nodeToRemove = this.find(value);
+
+    if (!nodeToRemove) {
+      throw new Error('树中未找到该项目');
+    }
+
+    const { parent } = nodeToRemove;
+
+    if (!nodeToRemove.left && !nodeToRemove.right) {
+      // 节点是叶子节点，因此没有子节点。
+      if (parent) {
+        // 节点有父节点。只需从父节点移除指向该节点的指针。
+        parent.removeChild(nodeToRemove);
+      } else {
+        // 节点没有父节点。只需擦除当前节点的值。
+        nodeToRemove.setValue(undefined);
+      }
+    } else if (nodeToRemove.left && nodeToRemove.right) {
+      // 节点有两个子节点。
+      // 找到下一个较大的值（右分支中的最小值）
+      // 并用该下一个较大的值替换当前值节点。
+      const nextBiggerNode = nodeToRemove.right.findMin();
+      if (nextBiggerNode !== nodeToRemove.right) {
+        this.remove(nextBiggerNode.value);
+        nodeToRemove.setValue(nextBiggerNode.value);
+      } else {
+        // 万一下一个右侧的值是下一个较大的值且它没有左子节点
+        // 则只需用右侧节点替换要删除的节点。
+        nodeToRemove.setValue(nodeToRemove.right.value);
+        nodeToRemove.setRight(nodeToRemove.right.right);
+      }
+    } else {
+      // 节点只有一个子节点。
+      // 将该子节点变为当前节点父节点的直接节点。
+      /** @var BinarySearchTreeNode */
+      const childNode = nodeToRemove.left || nodeToRemove.right;
+
+      if (parent) {
+        parent.replaceChild(nodeToRemove, childNode);
+      } else {
+        BinarySearchTreeNode.copyNode(childNode, nodeToRemove);
+      }
+    }
+
+    // 清除被删除节点的父节点。
+    nodeToRemove.parent = null;
+
+    return true;
+  }
 ```
 
 `06-binary-search-tree/BinarySearchTreeNode.js`
@@ -1946,289 +1763,290 @@ YouTube 上的哈希表 [`www.youtube.com/watch?v=shs0KM3wKv8`](https://www.yout
 
 该方法对二叉搜索树进行中序遍历，返回一个排序后的数组。它首先遍历左子树，然后是根节点，最后是右子树。
 
-```
-276   /**
-277    * @return {Array}
-278    */
-279   traverseOrder() {
-280     let traverse = [];
-281     if (this.left) {
-282       traverse = traverse.concat(this.left.traverseOrder());
-283     }
-284     traverse.push(this.value);
-285 
-286     if (this.right) {
-287       traverse = traverse.concat(this.right.traverseOrder());
-288     }
-289     return traverse;
-290   }
+```javascript
+  /**
+   * @return {Array}
+   */
+  traverseOrder() {
+    let traverse = [];
+    if (this.left) {
+      traverse = traverse.concat(this.left.traverseOrder());
+    }
+    traverse.push(this.value);
+
+    if (this.right) {
+      traverse = traverse.concat(this.right.traverseOrder());
+    }
+    return traverse;
+  }
 ```
 
 `06-binary-search-tree/BinarySearchTreeNode.js`
 
 ### `setLeft()`
 
-该方法设置节点的左子节点。它会处理 `parent` 指针将其指向当前节点。
+该方法设置节点的左子节点。它会处理`parent`指针将其指向当前节点。
 
-```
-34   /**
-35    * @param {BinarySearchTreeNode} node
-36    * @return {BinarySearchTreeNode}
-37    */
-38   setLeft(node) {
-39     this.left = node;
-40     if (this.left) {
-41       this.left.parent = this;
-42     }
-43     return this;
-44   }
+```javascript
+  /**
+   * @param {BinarySearchTreeNode} node
+   * @return {BinarySearchTreeNode}
+   */
+  setLeft(node) {
+    this.left = node;
+    if (this.left) {
+      this.left.parent = this;
+    }
+    return this;
+  }
 ```
 
 `06-binary-search-tree/BinarySearchTreeNode.js`
 
 ### `setRight()`
 
-该方法设置节点的右子节点。它会处理 `parent` 指针将其指向当前节点。
+该方法设置节点的右子节点。它会处理`parent`指针将其指向当前节点。
 
-```
-55   /**
-56    * @param {BinarySearchTreeNode} node
-57    * @return {BinarySearchTreeNode}
-58    */
-59   setRight(node) {
-60     this.right = node;
-61     if (this.right) {
-62       this.right.parent = this;
-63     }
-64     return this;
-65   }
+```javascript
+  /**
+   * @param {BinarySearchTreeNode} node
+   * @return {BinarySearchTreeNode}
+   */
+  setRight(node) {
+    this.right = node;
+    if (this.right) {
+      this.right.parent = this;
+    }
+    return this;
+  }
 ```
 
 `06-binary-search-tree/BinarySearchTreeNode.js`
 
 ### `setData()`
 
-`setData` 是一个我们用于设置节点 `data` 的辅助函数。我们返回 `this` 对象以允许链式调用。此方法使得操作树更加方便。我们可以像这样做：`bst.setValue(5).setData('User name')`。
+`setData`是一个我们用于设置节点`data`的辅助函数。我们返回`this`对象以允许链式调用。此方法使得操作树更加方便。我们可以像这样做：`bst.setValue(5).setData('User name')`。
 
-```
-24   /**
-25    * @param {*} data
-26    * @return {BinarySearchTreeNode}
-27    */
-28   setData(data) {
-29     this.data = data;
-30 
-31     return this;
-32   }
+```javascript
+  /**
+   * @param {*} data
+   * @return {BinarySearchTreeNode}
+   */
+  setData(data) {
+    this.data = data;
+
+    return this;
+  }
 ```
 
 `06-binary-search-tree/BinarySearchTreeNode.js`
 
 ### `setValue()`
 
-`setValue` 是一个我们用于设置节点 `value` 的辅助函数。我们返回 `this` 对象以允许链式调用。
+`setValue`是一个我们用于设置节点`value`的辅助函数。我们返回`this`对象以允许链式调用。
 
-```
-14   /**
-15    * @param {*} value
-16    * @return {BinarySearchTreeNode}
-17    */
-18   setValue(value) {
-19     this.value = value;
-20 
-21     return this;
-22   }
+```javascript
+  /**
+   * @param {*} value
+   * @return {BinarySearchTreeNode}
+   */
+  setValue(value) {
+    this.value = value;
+
+    return this;
+  }
 ```
 
 `06-binary-search-tree/BinarySearchTreeNode.js`
 
 ### `contains()`
 
-这是一个辅助方法，返回 `true` 或 `false`，显示树中是否存在具有指定 `value` 的节点。
+这是一个辅助方法，返回`true`或`false`，显示树中是否存在具有指定`value`的节点。
 
+```javascript
+  /**
+   * @param {*} value
+   * @return {boolean}
+   */
+  contains(value) {
+    return !!this.find(value);
+  }
 ```
-191   /**
-192    * @param {*} value
-193    * @return {boolean}
-194    */
-195   contains(value) {
-196     return !!this.find(value);
-197   }
-```
 
+`06-binary-search-tree/BinarySearchTreeNode.js`
 
+### `removeChild()`
 
+此方法从当前节点中移除子节点。它通过`nodeToRemove`参数接收要删除的节点。然后，它会将要删除的节点与当前节点的左、右子节点进行比较，以决定移除哪一个。如果在子节点中找到了`nodeToRemove`，则将该子节点设置为`null`，函数返回`true`表示移除过程成功。否则，此方法返回`false`，意味着`nodeToRemove`不在当前节点的子节点中。
 
+```javascript
+  /**
+   * @param {BinarySearchTreeNode} nodeToRemove
+   * @return {boolean}
+   */
+  removeChild(nodeToRemove) {
+    if (this.left && this.left === nodeToRemove) {
+      this.left = null;
+      return true;
+    }
 
-此方法从当前节点中移除子节点。它通过 `nodeToRemove` 参数接收要删除的节点。然后，它会将要删除的节点与当前节点的左、右子节点进行比较，以决定移除哪一个。如果在子节点中找到了 `nodeToRemove`，则将该子节点设置为 `null`，函数返回 `true` 表示移除过程成功。否则，此方法返回 `false`，意味着 `nodeToRemove` 不在当前节点的节点中。
+    if (this.right && this.right === nodeToRemove) {
+      this.right = null;
+      return true;
+    }
 
-```
-76   /**
-77    * @param {BinarySearchTreeNode} nodeToRemove
-78    * @return {boolean}
-79    */
-80   removeChild(nodeToRemove) {
-81     if (this.left && this.left === nodeToRemove) {
-82       this.left = null;
-83       return true;
-84     }
-85 
-86     if (this.right && this.right === nodeToRemove) {
-87       this.right = null;
-88       return true;
-89     }
-90 
-91     return false;
-92   }
+    return false;
+  }
 ```
 
 `06-binary-search-tree/BinarySearchTreeNode.js`
 
 ### BinarySearchTree
 
-`BinarySearchTree` 类只是对 `BinarySearchTreeNode` 类的一个薄层封装，它隐藏了所有的辅助方法，并使得二叉搜索树（BST）的操作在语义上更加符合逻辑。
+`BinarySearchTree`类只是对`BinarySearchTreeNode`类的一个薄层封装，它隐藏了所有的辅助方法，并使得二叉搜索树（BST）的操作在语义上更加符合逻辑。
 
+```javascript
+import BinarySearchTreeNode from './BinarySearchTreeNode';
+
+export default class BinarySearchTree {
+  constructor() {
+    this.root = null;
+  }
+
+  /**
+   * 根据值查找节点。
+   * @param {*} value
+   * @return {BinarySearchTreeNode}
+   */
+  find(value) {
+    return this.root.find(value);
+  }
+
+  /**
+   * 查找最小值的节点。
+   * @return {BinarySearchTreeNode}
+   */
+  findMin() {
+    return this.root.findMin();
+  }
+
+  /**
+   * 查找最大值的节点。
+   * @return {BinarySearchTreeNode}
+   */
+  findMax() {
+    return this.root.findMax();
+  }
+
+  /**
+   * 在树中插入新节点。
+   * @param {*} value
+   * @param {*} data
+   * @return {BinarySearchTreeNode}
+   */
+  insert(value, data = null) {
+    this.root.insert(value, data);
+  }
+
+  /**
+   * 检查树是否包含特定值。
+   * @param {*} value
+   * @return {boolean}
+   */
+  contains(value) {
+    return this.root.contains(value);
+  }
+
+  /**
+   * 通过值从树中移除节点。
+   * @param {*} value
+   * @return {boolean}
+   */
+  remove(value) {
+    return this.root.remove(value);
+  }
+
+  /**
+   * 将树转换为字符串。
+   * @return {string}
+   */
+  toString() {
+    return this.root.toString();
+  }
+}
 ```
- 1 import BinarySearchTreeNode from './BinarySearchTreeNode';
- 2 export default class BinarySearchTree {
- 3   constructor() {
- 4     this.root = null;
- 5   }
- 6 
- 7   /**
- 8    * 根据值查找节点。
- 9    * @param {*} value
- 10    * @return {BinarySearchTreeNode}
- 11    */
- 12   find(value) {
- 13     return this.root.find(value);
- 14   }
- 15 
- 16   /**
- 17    * 查找最小值的节点。
- 18    * @return {BinarySearchTreeNode}
- 19    */
- 20   findMin() {
- 21     return this.root.findMin();
- 22   }
- 23 
- 24   /**
- 25    * 查找最大值的节点。
- 26    * @return {BinarySearchTreeNode}
- 27    */
- 28   findMax() {
- 29     return this.root.findMax();
- 30   }
- 31 
- 32   /**
- 33    * 在树中插入新节点。
- 34    * @param {*} value
- 35    * @param {*} data
- 36    * @return {BinarySearchTreeNode}
- 37    */
- 38   insert(value, data = null) {
- 39     this.root.insert(value, data);
- 40   }
- 41 
- 42   /**
- 43    * 检查树是否包含特定值。
- 44    * @param {*} value
- 45    * @return {boolean}
- 46    */
- 47   contains(value) {
- 48     return this.root.contains(value);
- 49   }
- 50 
- 51   /**
- 52    * 通过值从树中移除节点。
- 53    * @param {*} value
- 54    * @return {boolean}
- 55    */
- 56   remove(value) {
- 57     return this.root.remove(value);
- 58   }
- 59 
- 60   /**
- 61    * 将树转换为字符串。
- 62    * @return {string}
- 63    */
- 64   toString() {
- 65     return this.root.toString();
- 66   }
- 67 }
-```
 
+`06-binary-search-tree/BinarySearchTree.js`
 
+## 堆 (Heap)
 
+**堆属性**：如果`P`是子节点`C`的父节点，那么`P`的值要么`大于等于`（在**最大堆**中），要么`小于等于`（在**最小堆**中）`C`的键值。
 
+请看下面这个二叉**最小堆**示例。由于`1`是堆中最小的数字，它被放置在堆的根节点。根的所有孩子都大于根节点。子节点也是如此：根节点的左孩子比它的子节点小，以此类推。这棵树本身是一个完全二叉树，因为它所有的层都是满的（除了最后一层是从左到右填充的）。
 
-**堆属性**：如果 `P` 是子节点 `C` 的父节点，那么 `P` 的值要么`大于等于`（在**最大堆**中），要么`小于等于`（在**最小堆**中）`C` 的键值。
+![最小堆](img/07-heap----min-heap.png)
 
-请看下面这个二叉**最小堆**示例。由于 `1` 是堆中最小的数字，它被放置在堆的根节点。根的所有孩子都大于根节点。子节点也是如此：根节点的左孩子比它的子节点小，以此此类推。这棵树本身是一个完全二叉树，因为它所有的层都是满的（除了最后一层是从左到右填充的）。
+这是一个二叉**最大堆**示例。`100`是堆中所有数字中最大的，因此它被放在堆的根节点。根的所有孩子都小于根节点。子节点也是如此：根节点的左孩子比它的子节点小，以此类推。这棵树本身也是完全二叉树，因为它所有的层都是满的（除了最后一层是从左到右填充的）。
 
-![](img/07-heap----min-heap.png)
-
-这是一个二叉**最大堆**示例。`100` 是堆中所有数字中最大的，因此它被放在堆的根节点。根的所有孩子都小于根节点。子节点也是如此：根节点的左孩子比它的子节点小，以此此类推。这棵树本身也是完全二叉树，因为它所有的层都是满的（除了最后一层是从左到右填充的）。
-
-![](img/07-heap----max-heap.png)
+![最大堆](img/07-heap----max-heap.png)
 
 ### 应用
 
-堆的一个直接应用是**堆排序**算法（它是最好的排序方法之一，它是就地的且没有平方级最坏情况的）。二叉堆由 J. W. J. Williams 于 1964 年引入，是一种专门用于堆排序算法的数据结构。
+堆的一个直接应用是**堆排序**算法（它是最好的排序方法之一，它是就地的且没有平方级最坏情况）。二叉堆由 J. W. J. Williams 于 1964 年引入，是一种专门用于堆排序算法的数据结构。
 
 你可能已经从上面的插图中注意到，堆允许我们快速访问一组值的最小值/最大值。堆的这种属性使其在实现名为**优先级队列**的抽象数据类型时非常高效。在优先级队列中，高优先级的元素会在低优先级元素之前处理。通过在堆中存储元素的优先级，我们能够快速访问队列中下一个最重要的元素。
 
-堆也用于**图算法**，如 `Prim 最小生成树`算法和 `Dijkstra 最短路径`算法。
+堆也用于**图算法**，如`Prim 最小生成树`算法和`Dijkstra 最短路径`算法。
 
 ### 基础操作
 
 以下是通常在堆上执行的基本操作：
 
-*   **Peek**（查看） - 在不提取元素的情况下，返回堆的最小（对于最小堆）或最大（对于最大堆）元素。
-*   **Poll**（弹出） - 从堆中提取最小（对于最小堆）或最大（对于最大堆）元素。
-*   **Add**（添加） - 将新元素添加到堆中。
-*   **Remove**（移除） - 根据值从堆中移除元素。
+* **Peek**（查看） - 在不提取元素的情况下，返回堆的最小（对于最小堆）或最大（对于最大堆）元素。
+* **Poll**（弹出） - 从堆中提取最小（对于最小堆）或最大（对于最大堆）元素。
+* **Add**（添加） - 将新元素添加到堆中。
+* **Remove**（移除） - 根据值从堆中移除元素。
 
-在本章后面的部分，我们将介绍这些操作的具体实现，你将看到细节。但值得注意的是，对于修改堆的操作（如 `poll`、`add` 或 `remove`），我们首先尝试保持堆的**形状属性**。然后我们尝试修改堆的二叉树结构，使其也满足**堆属性**。因此还有两种常见的堆操作：**向上调整**（heapify up）和**向下调整**（heapify down）。这些操作是内部的，不直接使用。这两个操作的唯一目的是在堆修改后保持堆属性。
+在本章后面的部分，我们将介绍这些操作的具体实现，你将看到细节。但值得注意的是，对于修改堆的操作（如`poll`、`add`或`remove`），我们首先尝试保持堆的**形状属性**。然后我们尝试修改堆的二叉树结构，使其也满足**堆属性**。因此还有两种常见的堆操作：**向上调整**（heapify up）和**向下调整**（heapify down）。这些操作是内部的，不直接使用。这两个操作的唯一目的是在堆修改后保持堆属性。
 
 ## 使用示例
 
-在继续实际实现之前，让我们假设我们已经实现了一个 `MinHeap` 类并来使用它。这将帮助我们更好地理解即将实现的每个类方法的含义。
+在继续实际实现之前，让我们假设我们已经实现了一个`MinHeap`类并来使用它。这将帮助我们更好地理解即将实现的每个类方法的含义。
 
 ```javascript
- 1 // 导入 MinHeap 类。
- 2 import { MinHeap } from './MinHeap';
- 3 
- 4 // 创建最小堆实例。
- 5 const minHeap = new MinHeap();
- 6
- 7 minHeap.isEmpty(); // => true
- 8
- 9 // 向最小堆添加新元素。
-10 minHeap.add(5);
-11 minHeap.isEmpty(); // => false
-12 minHeap.peek(); // => 3
-13 minHeap.toString(); // => '5'
- 14 
-15 // 添加更多元素。
-16 minHeap.add(3);
-17 // Peek 操作将始终返回堆的最小元素。
-18 minHeap.peek(); // => 3
-19 minHeap.toString(); // => '3,5'
-20 
-21 minHeap.add(10);
-22 minHeap.peek(); // => 3
-23 minHeap.toString(); // => '3,5,10'
-24 
-25 // 从堆中提取最小值。
-26 minHeap.poll(); // => 3
-27 minHeap.peek(); // => 5
-28 minHeap.toString(); // => '5,10'
-29 
-30 // 从堆中移除元素。
-31 minHeap.remove(10);
-32 minHeap.peek(); // => 5
-33 minHeap.toString(); // => '5'
+// 导入 MinHeap 类。
+import { MinHeap } from './MinHeap';
+
+// 创建最小堆实例。
+const minHeap = new MinHeap();
+
+minHeap.isEmpty(); // => true
+
+// 向最小堆添加新元素。
+minHeap.add(5);
+minHeap.isEmpty(); // => false
+minHeap.peek(); // => 5
+minHeap.toString(); // => '5'
+
+// 添加更多元素。
+minHeap.add(3);
+// Peek 操作将始终返回堆的最小元素。
+minHeap.peek(); // => 3
+minHeap.toString(); // => '3,5'
+
+minHeap.add(10);
+minHeap.peek(); // => 3
+minHeap.toString(); // => '3,5,10'
+
+// 从堆中提取最小值。
+minHeap.poll(); // => 3
+minHeap.peek(); // => 5
+minHeap.toString(); // => '5,10'
+
+// 从堆中移除元素。
+minHeap.remove(10);
+minHeap.peek(); // => 5
+minHeap.toString(); // => '5'
 ```
 
 `07-heap/example.js`
@@ -2241,51 +2059,47 @@ YouTube 上的哈希表 [`www.youtube.com/watch?v=shs0KM3wKv8`](https://www.yout
 
 *堆的元素通常存储在数组中*。任何二叉树都可以存储在数组中，但二叉堆总是完全二叉树。
 
-![](img/07-heap-as-array.png)
+![堆作为数组](img/07-heap-as-array.png)
 
-将堆保存为数组后，我们可以轻松地找到任何节点的父节点和孩子。对于索引为 `i` 的节点，父节点位于索引 `floor((i - 1) / 2)`，左孩子位于 `2 * i + 1`，右孩子位于 `2 * i + 2`。
+将堆保存为数组后，我们可以轻松地找到任何节点的父节点和孩子。对于索引为`i`的节点，父节点位于索引`floor((i - 1) / 2)`，左孩子位于`2 * i + 1`，右孩子位于`2 * i + 2`。
 
 #### 在堆中存储对象
 
-有时需要在堆中存储对象不仅是数字。例如，我们可能希望堆中存储 `{name: 'Paul', priority: 5}` 和 `{name: 'Jane', priority: 3}` 用户对象，以便下次调用 `poll()` 方法时返回优先级更高的用户。为了实现这一点，我们需要提供一种在堆中比较对象的自定义方法。因此我们将实现一个通用的 `Comparator` 工具类，为对象比较提供通用接口。之后我们将使用 `Comparator` 工具类来实现 `MinHeap` 类。
+有时需要在堆中存储对象不仅是数字。例如，我们可能希望堆中存储`{name: 'Paul', priority: 5}`和`{name: 'Jane', priority: 3}`用户对象，以便下次调用`poll()`方法时返回优先级更高的用户。为了实现这一点，我们需要提供一种在堆中比较对象的自定义方法。因此我们将实现一个通用的`Comparator`工具类，为对象比较提供通用接口。之后我们将使用`Comparator`工具类来实现`MinHeap`类。
 
-###### `Comparator` 类
+###### `Comparator`类
 
 让我们声明这个类。
 
 ```javascript
-1 export default class Comparator {
+export default class Comparator {
 ```
 
-utils/comparator/Comparator.js
+`utils/comparator/Comparator.js`
 
 ##### `constructor`
 
-`Comparator` 构造函数接受一个比较回调函数作为参数。该函数接受两个值进行比较。如果两个对象相等，返回 `0`；如果第一个对象小于第二个，返回 `-1`；如果第一个对象大于第二个，返回 `1`。
+`Comparator`构造函数接受一个比较回调函数作为参数。该函数接受两个值进行比较。如果两个对象相等，返回`0`；如果第一个对象小于第二个，返回`-1`；如果第一个对象大于第二个，返回`1`。
 
-`Comparator` 类本身并不感知任何比较逻辑。它只是提供一个通用接口（即我们将在下面实现的方法）来工作。
+`Comparator`类本身并不感知任何比较逻辑。它只是提供一个通用接口（即我们将在下面实现的方法）来工作。
 
-`compareFunction` 是 `Comparator` 构造函数的可选参数。如果未提供 `compareFunction`，我们将回退到 `defaultCompareFunction()` 函数。
+`compareFunction`是`Comparator`构造函数的可选参数。如果未提供`compareFunction`，我们将回退到`defaultCompareFunction()`函数。
 
 ```javascript
-16   /**
-17    * @param {function(a: *, b: *)} [compareFunction] - 可能是自定义的比较函数，比\
-18    * 比如可以比较自定义对象。
-19    */
-20   constructor(compareFunction) {
-21     this.compare = compareFunction || Comparator.defaultCompareFunction;
-22   }
+  /**
+   * @param {function(a: *, b: *)} [compareFunction] - 可能是自定义的比较函数，
+   * 比如可以比较自定义对象。
+   */
+  constructor(compareFunction) {
+    this.compare = compareFunction || Comparator.defaultCompareFunction;
+  }
 ```
 
-utils/comparator/Comparator.js
+`utils/comparator/Comparator.js`
 
 ##### `defaultCompareFunction()`
 
-
-
-
-
-这是一个默认的回退比较函数，它将两个参数 `a` 和 `b` 视为字符串或数字，并对它们应用常用的比较运算符，如 `===`、`<` 和 `>`。
+这是一个默认的回退比较函数，它将两个参数`a`和`b`视为字符串或数字，并对它们应用常用的比较运算符，如`===`、`<`和`>`。
 
 ```javascript
   /**
@@ -2325,7 +2139,7 @@ utils/comparator/Comparator.js
 
 ### `lessThan()`
 
-此函数检查变量 `a` 是否小于 `b`。
+此函数检查变量`a`是否小于`b`。
 
 ```javascript
   /**
@@ -2343,7 +2157,7 @@ utils/comparator/Comparator.js
 
 ### `greaterThan()`
 
-此函数检查变量 `a` 是否大于 `b`。
+此函数检查变量`a`是否大于`b`。
 
 ```javascript
   /**
@@ -2361,7 +2175,7 @@ utils/comparator/Comparator.js
 
 ### `lessThanOrEqual()`
 
-此函数检查变量 `a` 是否小于或等于 `b`。
+此函数检查变量`a`是否小于或等于`b`。
 
 ```javascript
   /**
@@ -2379,7 +2193,7 @@ utils/comparator/Comparator.js
 
 ### `greaterThanOrEqual()`
 
-此函数检查变量 `a` 是否大于或等于 `b`。
+此函数检查变量`a`是否大于或等于`b`。
 
 ```javascript
   /**
@@ -2397,28 +2211,28 @@ utils/comparator/Comparator.js
 
 ### 类 `MinHeap`
 
-让我们继续实现 `MinHeap` 类。
+让我们继续实现`MinHeap`类。
 
-首先导入依赖项。我们将在类构造函数中使用 `Comparator` 实例，以便允许类的使用者更改堆元素之间的比较方式。
+首先导入依赖项。我们将在类构造函数中使用`Comparator`实例，以便允许类的使用者更改堆元素之间的比较方式。
 
 ```javascript
 // 导入依赖项。
 import Comparator from '../utils/comparator/Comparator';
 ```
 
-`4-stack/Stack.js`
+`07-heap/MinHeap.js`
 
 ### `constructor`
 
-让我们声明 `MinHeap` 类：
+让我们声明`MinHeap`类：
 
 ```javascript
 export class MinHeap {
 ```
 
-`4-stack/Stack.js`
+`07-heap/MinHeap.js`
 
-在类构造函数中，我们需要创建一个数组来存储所有堆数据。为了提高 `has()` 操作的性能，我们还创建了 `heapElements` Map，它将存储所有的堆元素，并允许我们在 `O(1)` 时间内检查元素是否存在于堆中。
+在类构造函数中，我们需要创建一个数组来存储所有堆数据。为了提高`has()`操作的性能，我们还创建了`heapElements` Map，它将存储所有的堆元素，并允许我们在`O(1)`时间内检查元素是否存在于堆中。
 
 ```javascript
   /**
@@ -2438,7 +2252,7 @@ export class MinHeap {
   }
 ```
 
-`4-stack/Stack.js`
+`07-heap/MinHeap.js`
 
 ### 辅助方法
 
@@ -2446,7 +2260,7 @@ export class MinHeap {
 
 #### `getLeftChildIndex`
 
-此辅助方法通过父节点索引返回左子节点的索引。如果 `i` 是父节点索引，那么左子节点的公式为 `2 * i + 1`。
+此辅助方法通过父节点索引返回左子节点的索引。如果`i`是父节点索引，那么左子节点的公式为`2 * i + 1`。
 
 ```javascript
   /**
@@ -2458,11 +2272,11 @@ export class MinHeap {
   }
 ```
 
-`4-stack/Stack.js`
+`07-heap/MinHeap.js`
 
 #### `getRightChildIndex`
 
-此辅助方法通过父节点索引返回右子节点的索引。如果 `i` 是父节点索引，那么右子节点的公式为 `2 * i + 2`。
+此辅助方法通过父节点索引返回右子节点的索引。如果`i`是父节点索引，那么右子节点的公式为`2 * i + 2`。
 
 ```javascript
   /**
@@ -2474,11 +2288,11 @@ export class MinHeap {
   }
 ```
 
-`4-stack/Stack.js`
+`07-heap/MinHeap.js`
 
 ### `getParentIndex`
 
-此辅助方法通过父节点索引返回子节点索引。如果 `i` 是子节点索引，那么父节点的公式为 `(i - 1) / 2`。
+此辅助方法通过子节点索引返回父节点索引。如果`i`是子节点索引，那么父节点的公式为`(i - 1) / 2`。
 
 ```javascript
   /**
@@ -2490,11 +2304,11 @@ export class MinHeap {
   }
 ```
 
-`4-stack/Stack.js`
+`07-heap/MinHeap.js`
 
 ### `hasParent`
 
-此辅助方法检查索引 `childIndex` 是否有父节点。如果 `floor((i - 1) / 2)` 为正数，则返回 `true`。
+此辅助方法检查索引`childIndex`是否有父节点。如果`floor((i - 1) / 2)`为正数，则返回`true`。
 
 ```javascript
   /**
@@ -2506,11 +2320,11 @@ export class MinHeap {
   }
 ```
 
-`4-stack/Stack.js`
+`07-heap/MinHeap.js`
 
 ### `has`
 
-此辅助方法检查 `item` 是否存在于堆中。
+此辅助方法检查`item`是否存在于堆中。
 
 ```javascript
   /**
@@ -2522,11 +2336,11 @@ export class MinHeap {
   }
 ```
 
-`4-stack/Stack.js`
+`07-heap/MinHeap.js`
 
 ### `hasLeftChild`
 
-此辅助方法检查索引 `parentIndex` 是否有左子节点。如果索引大于 `heapContainer` 的长度，则该节点没有左子节点。
+此辅助方法检查索引`parentIndex`是否有左子节点。如果索引大于`heapContainer`的长度，则该节点没有左子节点。
 
 ```javascript
   /**
@@ -2538,11 +2352,11 @@ export class MinHeap {
   }
 ```
 
-`4-stack/Stack.js`
+`07-heap/MinHeap.js`
 
 ### `hasRightChild`
 
-此辅助方法检查索引 `parentIndex` 是否有右子节点。如果索引大于 `heapContainer` 的长度，则意味着当前节点没有右子节点。
+此辅助方法检查索引`parentIndex`是否有右子节点。如果索引大于`heapContainer`的长度，则意味着当前节点没有右子节点。
 
 ```javascript
   /**
@@ -2554,7 +2368,7 @@ export class MinHeap {
   }
 ```
 
-`4-stack/Stack.js`
+`07-heap/MinHeap.js`
 
 ### `leftChild`
 
@@ -2570,7 +2384,7 @@ export class MinHeap {
   }
 ```
 
-`4-stack/Stack.js`
+`07-heap/MinHeap.js`
 
 ### `rightChild`
 
@@ -2586,7 +2400,7 @@ export class MinHeap {
   }
 ```
 
-`4-stack/Stack.js`
+`07-heap/MinHeap.js`
 
 ### `parent`
 
@@ -2602,11 +2416,11 @@ export class MinHeap {
   }
 ```
 
-`4-stack/Stack.js`
+`07-heap/MinHeap.js`
 
 ### `swap`
 
-此辅助方法交换 `heapContainer` 数组中的两个元素。
+此辅助方法交换`heapContainer`数组中的两个元素。
 
 ```javascript
   /**
@@ -2620,15 +2434,11 @@ export class MinHeap {
   }
 ```
 
-`4-stack/Stack.js`
+`07-heap/MinHeap.js`
 
 ### `isEmpty`
 
-此辅助方法检查 `heapContainer` 数组中是否至少有一个元素。
-
-
-
-
+此辅助方法检查`heapContainer`数组中是否至少有一个元素。
 
 ```javascript
 /**
@@ -2639,11 +2449,11 @@ isEmpty() {
 }
 ```
 
-### 4-stack/Stack.js
+`07-heap/MinHeap.js`
 
 ### `find`
 
-此辅助方法通过值查找堆中元素的位置。堆可能包含重复值，因此该方法返回一个位置数组，而不是仅仅是一个数字（我们正在搜索的元素的位置）。堆中两个元素之间的相等性通过使用 `comparator()` 函数进行检查。
+此辅助方法通过值查找堆中元素的位置。堆可能包含重复值，因此该方法返回一个位置数组，而不是仅仅是一个数字（我们正在搜索的元素的位置）。堆中两个元素之间的相等性通过使用`comparator()`函数进行检查。
 
 ```javascript
 /**
@@ -2664,11 +2474,11 @@ find(item, comparator = this.compare) {
 }
 ```
 
-### 4-stack/Stack.js
+`07-heap/MinHeap.js`
 
 ### `toString`
 
-此辅助方法通过直接调用 `heapContainer` 数组的 `toString()` 方法返回堆的字符串表示。
+此辅助方法通过直接调用`heapContainer`数组的`toString()`方法返回堆的字符串表示。
 
 ```javascript
 /**
@@ -2679,19 +2489,19 @@ toString() {
 }
 ```
 
-### 4-stack/Stack.js
+`07-heap/MinHeap.js`
 
 #### 保持堆属性的内部方法
 
-本节中的方法：`heapifyUp` 和 `heapifyDown` 负责在任何堆修改后保持堆属性。使用 `heapifyUp` 和 `heapifyDown` 的堆修改方法——`peek`、`poll`、`add`、`remove` 将下一节中解释。
+本节中的方法：`heapifyUp`和`heapifyDown`负责在任何堆修改后保持堆属性。使用`heapifyUp`和`heapifyDown`的堆修改方法——`peek`、`poll`、`add`、`remove`将在下一节中解释。
 
 ###### `heapifyUp`
 
 此方法确保在向最小堆添加新元素后，满足堆的属性。新元素可能比其父元素小。为了修复这种情况，我们取出堆容器中的最后一个元素（数组中的最后一个元素或树中左下角的元素），并将其向上移动，直到它相对于其父元素处于正确的顺序。
 
-![](img/07-heap----heapify-up.png)
+![向上调整](img/07-heap----heapify-up.png)
 
-我们还将通过向函数添加任意参数 `customStartIndex`，提供对堆中任何元素执行“上上调整”操作的可能性。我们在 `remove()` 方法中需要此功能。
+我们还将通过向函数添加任意参数`customStartIndex`，提供对堆中任何元素执行“向上调整”操作的可能性。我们在`remove()`方法中需要此功能。
 
 ```javascript
 /**
@@ -2700,7 +2510,7 @@ toString() {
 heapifyUp(customStartIndex) {
   // 取出堆容器中的最后一个元素（数组中的最后一个元素或树中左下角的元素）
   // 并将其向上移动，直到它相对于其父元素处于
-  //正确的顺序。
+  // 正确的顺序。
   let currentIndex = customStartIndex || this.heapContainer.length - 1;
 
   while (
@@ -2713,15 +2523,15 @@ heapifyUp(customStartIndex) {
 }
 ```
 
-### 4-stack/Stack.js
+`07-heap/MinHeap.js`
 
 ###### `heapifyDown`
 
-此方法确保在堆根被弹出后，满足堆的属性。在这种情况下，常见的行为是将堆的根替换为 `heapContainer` 的最后一个元素。但新的头部元素可能大于其子元素。在这种情况下，我们需要将父元素与其子元素进行比较，并将父元素与适当的子元素交换（最小堆取最小子元素，最大堆取最大子元素）。在交换后，我们需要对下一个子元素执行相同的操作。
+此方法确保在堆根被弹出后，满足堆的属性。在这种情况下，常见的行为是将堆的根替换为`heapContainer`的最后一个元素。但新的头部元素可能大于其子元素。在这种情况下，我们需要将父元素与其子元素进行比较，并将父元素与适当的子元素交换（最小堆取最小子元素，最大堆取最大子元素）。在交换后，我们需要对下一个子元素执行相同的操作。
 
-![](img/07-heap----heapify-down.png)
+![向下调整](img/07-heap----heapify-down.png)
 
-我们还将通过向函数添加任意参数 `customStartIndex`，提供对堆中任何元素执行“下调整”操作的可能性。我们在 `remove()` 方法中需要此功能。
+我们还将通过向函数添加任意参数`customStartIndex`，提供对堆中任何元素执行“向下调整”操作的可能性。我们在`remove()`方法中需要此功能。
 
 ```javascript
 /**
@@ -2729,7 +2539,7 @@ heapifyUp(customStartIndex) {
  */
 heapifyDown(customStartIndex = 0) {
   // 比较父元素与其子元素，并将父元素与适当的
-  // 子交换（MinHeap 取最小子元素，MaxHeap 取最大子元素）。
+  // 子元素交换（MinHeap 取最小子元素，MaxHeap 取最大子元素）。
   // 交换后对下一个子元素执行相同操作。
   let currentIndex = customStartIndex;
   let nextIndex = null;
@@ -2739,9 +2549,9 @@ heapifyDown(customStartIndex = 0) {
       this.hasRightChild(currentIndex)
       && this.compare.lessThanOrEqual(this.rightChild(currentIndex), this.leftChild(currentIndex))
     ) {
-      nextIndex = this.rightChild(currentIndex);
+      nextIndex = this.getRightChildIndex(currentIndex);
     } else {
-      nextIndex = this.leftChild(currentIndex);
+      nextIndex = this.getLeftChildIndex(currentIndex);
     }
 
     if (this.compare.lessThanOrEqual(this.heapContainer[currentIndex], this.heapContainer[nextIndex])) {
@@ -2754,7 +2564,7 @@ heapifyDown(customStartIndex = 0) {
 }
 ```
 
-### 4-stack/Stack.js
+`07-heap/MinHeap.js`
 
 #### 主方法
 
@@ -2762,7 +2572,7 @@ heapifyDown(customStartIndex = 0) {
 
 ###### `peek`
 
-此方法将返回堆的头部但不移除它。当我们只需要检查最小堆的最小元素时，它是很有用的。堆的头部是 `heapContainer` 数组的第一个元素。
+此方法将返回堆的头部但不移除它。当我们只需要检查最小堆的最小元素时，它是很有用的。堆的头部是`heapContainer`数组的第一个元素。
 
 ```javascript
 /**
@@ -2779,15 +2589,15 @@ peek() {
 }
 ```
 
-### 4-stack/Stack.js
+`07-heap/MinHeap.js`
 
 ###### `poll`
 
-此方法将移除并返回堆的头部。当我们需要获取最小堆的最小元素时，它是很有用的。堆的头部是 `heapContainer` 数组的第一个元素。
+此方法将移除并返回堆的头部。当我们需要获取最小堆的最小元素时，它是很有用的。堆的头部是`heapContainer`数组的第一个元素。
 
-在移除堆头部后，我们将 `heapContainer` 的最后一个元素移动到头部。此操作将保持形状属性（树必须是完全树）。但此时堆属性可能被违反，且最小堆的头部大于其子元素。为了修复这一点，我们调用 `heapifyDown()` 方法，它反过来将保持堆属性。我们将很快实现它。
+在移除堆头部后，我们将`heapContainer`的最后一个元素移动到头部。此操作将保持形状属性（树必须是完全树）。但此时堆属性可能被违反，且最小堆的头部大于其子元素。为了修复这一点，我们调用`heapifyDown()`方法，它反过来将保持堆属性。我们将很快实现它。
 
-![](img/07-heap----poll-from-heap.png)
+![从堆中弹出](img/07-heap----poll-from-heap.png)
 
 ```javascript
 /**
@@ -2807,108 +2617,105 @@ poll() {
   // 将最后一个元素移动到头部以保持形状属性。
   this.heapContainer[0] = this.heapContainer.pop();
 
-  // 为了保持堆属性，对堆进行下调整。
+  // 为了保持堆属性，对堆进行向下调整。
   this.heapifyDown();
 
   return item;
 }
 ```
 
-### 4-stack/Stack.js
+`07-heap/MinHeap.js`
 
 ###### `add`
 
-此方法向最小堆添加新元素。为了保持堆的形状属性，新元素被添加到 `heapContainer` 数组的末尾。在添加新元素后，新元素可能比其父元素小。在这种情况下，堆属性被违反。为了修复这一点，我们调用 `heapifyUp()` 方法，它会将新元素在树结构中向上移动，直到满足堆属性。
+此方法向最小堆添加新元素。为了保持堆的形状属性，新元素被添加到`heapContainer`数组的末尾。在添加新元素后，新元素可能比其父元素小。在这种情况下，堆属性被违反。为了修复这一点，我们调用`heapifyUp()`方法，它会将新元素在树结构中向上移动，直到满足堆属性。
 
-![](img/07-heap----add-to-heap.png)
-
-
-
-
+![向堆中添加](img/07-heap----add-to-heap.png)
 
 ```javascript
-221
-  /**
-   * @param {*} item
-   * @return {MinHeap}
-   */
-  add(item) {
-    // 将新元素添加到堆的末尾（保持形状属性）。
-    this.heapContainer.push(item);
+/**
+ * @param {*} item
+ * @return {MinHeap}
+ */
+add(item) {
+  // 将新元素添加到堆的末尾（保持形状属性）。
+  this.heapContainer.push(item);
 
-    // 将当前元素添加到堆元素映射中，以便快速访问。
-    this.heapElements.set(item, item);
+  // 将当前元素添加到堆元素映射中，以便快速访问。
+  this.heapElements.set(item, item);
 
-    // 如果元素小于其父节点，则通过向上堆化来确保
-    // 堆属性被保持。
-    this.heapifyUp();
+  // 如果元素小于其父节点，则通过向上堆化来确保
+  // 堆属性被保持。
+  this.heapifyUp();
 
-    return this;
-  }
+  return this;
+}
 ```
 
-`4-stack/Stack.js`
+`07-heap/MinHeap.js`
 
 #### `remove`
 
-该方法通过值从堆中删除元素。为了删除元素（s），我们需要执行以下操作：
+该方法通过值从堆中删除元素。为了删除元素，我们需要执行以下操作：
 
-*   在堆中找到所有具有指定值的元素（可能存在重复元素，且它们都需要被删除）
-*   遍历所有需要删除的元素。– 将堆的最后一个元素移动到空缺（被删除）的位置。– 对于刚刚移动的元素，我们需要获取它的新父节点和子节点，以决定是否违反了堆属性。– 如果违反了堆属性，我们需要调用 `heapifyUp()`（如果父节点大于新元素值）或 `heapifyDown()`（如果元素值大于其任何子节点的值）方法。
+* 在堆中找到所有具有指定值的元素（可能存在重复元素，且它们都需要被删除）
+* 遍历所有需要删除的元素。
+  – 将堆的最后一个元素移动到空缺（被删除）的位置。
+  – 对于刚刚移动的元素，我们需要获取它的新父节点和子节点，以决定是否违反了堆属性。
+  – 如果违反了堆属性，我们需要调用`heapifyUp()`（如果父节点大于新元素值）或`heapifyDown()`（如果元素值大于其任何子节点的值）方法。
 
-函数将返回 `this`，以便方便地进行如 `heap.remove(10).add(5)`get 链式命令。
+函数将返回`this`，以便方便地进行如`heap.remove(10).add(5)`的链式命令。
 
 ```javascript
-239
-  /**
-   * @param {*} item
-   * @param {Comparator} [comparator]
-   * @return {MinHeap}
-   */
-  remove(item, comparator = this.compare) {
-    // 找到需要删除元素的数量。
-    const numberOfItemsToRemove = this.find(item, comparator).length;
+/**
+ * @param {*} item
+ * @param {Comparator} [comparator]
+ * @return {MinHeap}
+ */
+remove(item, comparator = this.compare) {
+  // 找到需要删除元素的数量。
+  const numberOfItemsToRemove = this.find(item, comparator).length;
 
-    // 从堆元素映射中删除当前元素。
-    this.heapElements.delete(item);
+  // 从堆元素映射中删除当前元素。
+  this.heapElements.delete(item);
 
-    for (let iteration = 0; iteration < numberOfItemsToRemove; iteration += 1) {
-      // 每次删除后都需要重新找到要删除的元素索引，
-      // 因为索引在每次堆化过程后都会发生。
-      const indexToRemove = this.find(item, comparator).pop();
+  for (let iteration = 0; iteration < numberOfItemsToRemove; iteration += 1) {
+    // 每次删除后都需要重新找到要删除的元素索引，
+    // 因为索引在每次堆化过程后都会发生变化。
+    const indexToRemove = this.find(item, comparator).pop();
 
-      // 如果需要删除堆中的最后一个元素，直接删除即可。
-      // 之后不需要对堆进行堆化。
-      if (indexToRemove === (this.heapContainer.length - 1)) {
-        this.heapContainer.pop();
+    // 如果需要删除堆中的最后一个元素，直接删除即可。
+    // 之后不需要对堆进行堆化。
+    if (indexToRemove === (this.heapContainer.length - 1)) {
+      this.heapContainer.pop();
+    } else {
+      // 将堆中的最后一个元素移动到空缺（被删除）的位置。
+      this.heapContainer[indexToRemove] = this.heapContainer.pop();
+
+      // 获取父节点。
+      const parentItem = this.parent(indexToRemove);
+
+      // 如果没有父节点或者父节点与要删除的节点顺序正确，
+      // 则向下堆化。否则向上堆化。
+      if (
+        this.hasLeftChild(indexToRemove)
+        && (
+          !parentItem
+          || parentItem <= this.heapContainer[indexToRemove]
+        )
+      ) {
+        this.heapifyDown(indexToRemove);
       } else {
-        // 将堆中的最后一个元素移动到空缺（被删除）的位置。
-        this.heapContainer[indexToRemove] = this.heapContainer.pop();
-
-        // 获取父节点。
-        const parentItem = this.parent(indexToRemove);
-
-        // 如果没有父节点或者父节点与要删除的节点顺序正确，
-        // 则则向下堆化。否则向上堆化。
-        if (
-          this.hasLeftChild(indexToRemove)
-          && (
-            !parentItem
-            || parentItem <= this.heapContainer[indexToRemove]
-          )
-        ) {
-          this.heapifyDown(indexToRemove);
-        } else {
-          this.heapifyUp(indexToRemove);
-        }
+        this.heapifyUp(indexToRemove);
       }
     }
-
-    return this;
   }
+
+  return this;
+}
 ```
 
-`4-stack/Stack.js`
+`07-heap/MinHeap.js`
 
 ### 复杂度
 
@@ -2916,31 +2723,29 @@ poll() {
 | --- | --- | --- | --- |
 | O(1) | O(log(n)) | O(log(n)) | O(log(n)) |
 
-*Polling*（弹出）、从队列中添加和删除元素的时间复杂度为 `O(log(n))`，因为我们每次执行这些操作时，都需要对堆树重新进行堆化。这在最坏情况下会导致我们需要访问树分支中的所有元素。
+*Polling*（弹出）、从队列中添加和删除元素的时间复杂度为`O(log(n))`，因为我们每次执行这些操作时，都需要对堆树重新进行堆化。这在最坏情况下会导致我们需要访问树分支中的所有元素。
 
-*Peeking*（查看）的时间复杂度为 `O(1)`，因为我们只需要访问堆数组的第一个元素（根节点）。
+*Peeking*（查看）的时间复杂度为`O(1)`，因为我们只需要访问堆数组的第一个元素（根节点）。
 
 ### 问题示例
 
 以下是你在面试过程中可能会遇到的相关问题：
 
-*   [判断二叉树的完整性](https://leetcode.com/problems/check-completeness-of-a-binary-tree/)
-*   [二叉树插入器](https://leetcode.com/problems/complete-binary-tree-inserter/)
+* [判断二叉树的完整性](https://leetcode.com/problems/check-completeness-of-a-binary-tree/)
+* [二叉树插入器](https://leetcode.com/problems/complete-binary-tree-inserter/)
 
 ### 测验
 
 *Q1: 每个二叉堆必须满足哪两个约束？*
 
-*Q2: 当对堆执行 `poll` 操作并提取头部时，必须将什么值放在被提取元素的位置？*
+*Q2: 当对堆执行`poll`操作并提取头部时，必须将什么值放在被提取元素的位置？*
 
-*Q3: `MinHeap` 中 `poll()` 的时间复杂度是多少？*
+*Q3: `MinHeap`中`poll()`的时间复杂度是多少？*
 
-
-
-
+## 优先级队列
 
 ```javascript
- 1. 依赖。
+// 导入依赖。
 import { PriorityQueue } from './PriorityQueue';
 
 // 初始化一个空优先级队列。
@@ -2983,9 +2788,9 @@ console.log(sortedCities);
 
 `07-priority-queue/example.js`
 
-### Implementation
+### 实现
 
-我们将根据上面解释的 `MinHeap` 类来构建 `PriorityQueue` 类。`MinHeap` 类支持自定义比较函数。因此，我们将使用 `Comparator` 实例来修改 `MinHeap` 中的比较算法，使其比较元素的优先级而不是值。关于 `MinHeap` 和 `Comparator` 实现的更多细节，请参考本书的“堆（Heap）”章节。
+我们将根据上面解释的`MinHeap`类来构建`PriorityQueue`类。`MinHeap`类支持自定义比较函数。因此，我们将使用`Comparator`实例来修改`MinHeap`中的比较算法，使其比较元素的优先级而不是值。关于`MinHeap`和`Comparator`实现的更多细节，请参考本书的“堆（Heap）”章节。
 
 让我们导入将要到的依赖。
 
@@ -2997,7 +2802,7 @@ import Comparator from '../utils/comparator/Comparator';
 
 `07-priority-queue/PriorityQueue.js`
 
-让我们声明 `PriorityQueue` 类并继承自 `MinHeap` 类。
+让我们声明`PriorityQueue`类并继承自`MinHeap`类。
 
 ```javascript
 export class PriorityQueue extends MinHeap {
@@ -3007,11 +2812,11 @@ export class PriorityQueue extends MinHeap {
 
 #### `constructor()`
 
-在构造函数中，我们首先通过调用 `super()` 调用 `MinHeap` 类的父构造函数。
+在构造函数中，我们首先通过调用`super()`调用`MinHeap`类的父构造函数。
 
-接下来，我们将创建一个优先级映射 `this.priorities`。这个映射存储了所有优先级队列项的优先级值，并以元素本身作为键。例如 `this.priorities` 可能看起来像 `{itemA: 10, itemB: 14}`，其中 `itemA` 和 `itemB` 是元素键，`10` 和 `14` 是元素的优先级。
+接下来，我们将创建一个优先级映射`this.priorities`。这个映射存储了所有优先级队列项的优先级值，并以元素本身作为键。例如`this.priorities`可能看起来像`{itemA: 10, itemB: 14}`，其中`itemA`和`itemB`是元素键，`10`和`14`是元素的优先级。
 
-我们还会创建一个自定义的 `this.compare()` 函数。这是修改 `MinHeap` 行为的主要地方，使 `MinHeap` 方法遵循元素的优先级而不是元素的值。你可能会在这里看到我们提供了一个自定义的 `this.comparePriority()` 函数作为主比较函数。该函数将在下方解释。
+我们还会创建一个自定义的`this.compare()`函数。这是修改`MinHeap`行为的主要地方，使`MinHeap`方法遵循元素的优先级而不是元素的值。你可能会在这里看到我们提供了一个自定义的`this.comparePriority()`函数作为主比较函数。该函数将在下方解释。
 
 ```javascript
   constructor() {
@@ -3031,7 +2836,7 @@ export class PriorityQueue extends MinHeap {
 
 #### `comparePriority()`
 
-此函数根据它们的优先级比较两个元素。为此，它从 `this.priorities` 映射中获取元素 `a` 和 `b` 的优先级。如果两个优先级都相等，则返回 `0`；如果 `a` 比 `b` 不重要，则返回 `-1`（元素顺序不正确），否则返回 `1`（元素顺序正确）。
+此函数根据它们的优先级比较两个元素。为此，它从`this.priorities`映射中获取元素`a`和`b`的优先级。如果两个优先级都相等，则返回`0`；如果`a`比`b`不重要，则返回`-1`（元素顺序不正确），否则返回`1`（元素顺序正确）。
 
 ```javascript
   /**
@@ -3052,7 +2857,7 @@ export class PriorityQueue extends MinHeap {
 
 #### `compareValue()`
 
-此方法与 `comparePriority()` 相同，但它比较的是值而不是优先级。
+此方法与`comparePriority()`相同，但它比较的是值而不是优先级。
 
 ```javascript
   /**
@@ -3072,7 +2877,7 @@ export class PriorityQueue extends MinHeap {
 
 #### `add()`
 
-此方法根据它们的优先级将元素添加到优先级队列中。它首先将优先级值设置为 `this.priorities`，然后调用 `super.add()`。
+此方法根据它们的优先级将元素添加到优先级队列中。它首先将优先级值设置为`this.priorities`，然后调用`super.add()`。
 
 ```javascript
   /**
@@ -3082,7 +2887,7 @@ export class PriorityQueue extends MinHeap {
    */
   add(item, priority = 0) {
     this.priorities.set(item, priority);
-    super.add();
+    super.add(item);
   }
 ```
 
@@ -3090,7 +2895,7 @@ export class PriorityQueue extends MinHeap {
 
 #### `remove()`
 
-此方法从优先级队列中移除元素。它接受两个参数：要移除的 `item` 以及可选的 `customFindingComparator`（允许自定义在堆中搜索元素）。
+此方法从优先级队列中移除元素。它接受两个参数：要移除的`item`以及可选的`customFindingComparator`（允许自定义在堆中搜索元素）。
 
 ```javascript
   /**
@@ -3112,7 +2917,7 @@ export class PriorityQueue extends MinHeap {
 
 ```javascript
   /**
-   * 队列中元素的优先级。
+   * 更改队列中元素的优先级。
    * @param {*} item - 要重新调级的元素。
    * @param {number} priority - 新的优先级。
    * @return {PriorityQueue}
@@ -3126,17 +2931,15 @@ export class PriorityQueue extends MinHeap {
 
 `07-priority-queue/PriorityQueue.js`
 
-### Complexities
+### 复杂度
 
-由于 `PriorityQueue` 基于 `MinHeap` 类，且其主要方法只是通过修改比较函数来封装 `MinHeap` 类的主要方法，因此我们可以假设 `PriorityQueue` 类的时间复杂度与 `MinHeap` 类相同。此外注意，对 `this.priorities` 映射的所有操作都在 `O(1)` 时间内完成。
+由于`PriorityQueue`基于`MinHeap`类，且其主要方法只是通过修改比较函数来封装`MinHeap`类的主要方法，因此我们可以假设`PriorityQueue`类的时间复杂度与`MinHeap`类相同。此外注意，对`this.priorities`映射的所有操作都在`O(1)`时间内完成。
 
 | Peek | Poll | Add | Remove |
 | --- | --- | --- | --- |
 | O(1) | O(log(n)) | O(log(n)) | O(log(n)) |
 
-
-
-
+### 参考文献
 
 Wikipedia 上的优先级队列 [`en.wikipedia.org/wiki/Priority_queue`](https://en.wikipedia.org/wiki/Priority_queue)
 
@@ -3146,31 +2949,31 @@ YouTube 上的优先级队列 [`www.youtube.com/watch?v=wptevk0bshY`](https://ww
 
 ## 图
 
-- *难度：简单*
+*难度：简单*
 
-`Graph` 是顶点和边的集合，边连接了所有或部分顶点。
+`Graph`是顶点和边的集合，边连接了所有或部分顶点。
 
-`Graph` 可以是有向的 (`directed`) 或是无向的 (`undirected`)。在有向图中，每条边都有一个方向（类似于单行道）。你可以从起始节点访问终点，但反之则不行。在无向图中，边没有特定的方向（类似于双行道），因此任何两个连接在一起的顶点都可以相互访问。
+`Graph`可以是有向的(`directed`)或是无向的(`undirected`)。在有向图中，每条边都有一个方向（类似于单行道）。你可以从起始节点访问终点，但反之则不行。在无向图中，边没有特定的方向（类似于双行道），因此任何两个连接在一起的顶点都可以相互访问。
 
 ### 什么是顶点？
 
 > 顶点（vertex）是图中表示数据的基本单位。“节点”（node）和“顶点”（vertex）这两个术语可以通用，用于描述图中数据表示的方式。顶点（vertex 的复数）通过边连接。
 
-另一种说明有向图和无向图区别的方法是考虑社交网络。如果每个顶点都是一个“用户”，那么在有向图中每条边都是一种“关注”关系——你可以关注某人，但这并不意味着对方也会关注你。而在无向图中，边就像“朋友”关系——如果某人在你的朋友列表中，那么自动意味着也在也在人的朋友列表中。
+另一种说明有向图和无向图区别的方法是考虑社交网络。如果每个顶点都是一个“用户”，那么在有向图中每条边都是一种“关注”关系——你可以关注某人，但这并不意味着对方也会关注你。而在无向图中，边就像“朋友”关系——如果某人在你的朋友列表中，那么自动意味着你也在那个人的朋友列表中。
 
-![](img/08-graph----graph.png)
+![图](img/08-graph----graph.png)
 
-在上面的示例中，我们有三个不同的图，它们都包含顶点和边。所有的图都有顶点集合 `{A, B, C, D}` 且都有一个边集合。无向图有一个边集合：`{AB, BC, AC, CD}`。有向图也有一个边集合：`{AB, BC, CB, AC, CD}`。注意，为了在有向图中双向连接顶点 `B` 和 `C`，集合中有了两条边 `BC` 和 `CB`。
+在上面的示例中，我们有三个不同的图，它们都包含顶点和边。所有的图都有顶点集合`{A, B, C, D}`且都有一个边集合。无向图有一个边集合：`{AB, BC, AC, CD}`。有向图也有一个边集合：`{AB, BC, CB, AC, CD}`。注意，为了在有向图中双向连接顶点`B`和`C`，集合中有了两条边`BC`和`CB`。
 
-如果两个顶点通过一条边相互连接，我们称这些顶点为相邻的 (`adjacent`) 或“邻居” (`neighbors`)。例如，在上面的无向图中，顶点 `A` 和 `B` 是邻居，顶点 `A` 和 `C` 也是。但顶点 `B` 和 `D` 不是邻居，因为这些顶点通过多条边连接（`B` 连接到 `C`，`C` 再连接到 `D`）。
+如果两个顶点通过一条边相互连接，我们称这些顶点为相邻的(`adjacent`)或“邻居”(`neighbors`)。例如，在上面的无向图中，顶点`A`和`B`是邻居，顶点`A`和`C`也是。但顶点`B`和`D`不是邻居，因为这些顶点通过多条边连接（`B`连接到`C`，`C`再连接到`D`）。
 
-两个顶点之间的边序列称为路径 (`path`)。在上面的有图中没有从 `D` 到 `A` 的路径，但存在从 `A` 到 `D` 的路径，该路径是边的集合：`{AC, CD}`。
+两个顶点之间的边序列称为路径(`path`)。在上面的有向图中没有从`D`到`A`的路径，但存在从`A`到`D`的路径，该路径是边的集合：`{AC, CD}`。
 
-图中的所有顶点并不都需要连接。当存在无法到达的 (`unreachable`) 顶点时，我们将这种图称为不连通图 (`disconnected graph`)。如果图中每对顶点之间都有边，则被称为连通图 (`connected graph`)。
+图中的所有顶点并不都需要连接。当存在无法到达的(`unreachable`)顶点时，我们将这种图称为不连通图(`disconnected graph`)。如果图中每对顶点之间都有边，则被称为连通图(`connected graph`)。
 
-图也可以包含循环。如果一个图没有循环，则被称为无环图 (`acyclic graph`)。
+图也可以包含循环。如果一个图没有循环，则被称为无环图(`acyclic graph`)。
 
-加权图 (`weighted graph`) 是图中每条边都关联有一个权重的图。根据上下文，边权重可能代表不同的概念，如“距离”、“流量”、“成本”、“电阻”等。
+加权图(`weighted graph`)是图中每条边都关联有一个权重的图。根据上下文，边权重可能代表不同的概念，如“距离”、“流量”、“成本”、“电阻”等。
 
 ### 应用
 
@@ -3178,17 +2981,17 @@ YouTube 上的优先级队列 [`www.youtube.com/watch?v=wptevk0bshY`](https://ww
 - **社交网络 (Social networks)** 使用图进行朋友推荐算法。
 - **包管理器 (Package managers)** 使用图根据依赖关系计算安装包的正确顺序。
 - **搜索引擎 (Search engines)** 使用图分析页面相关性。在搜索引擎使用的图中，网页是一个顶点，从该网页到另一个网页的链接是有向边。
-- **网络提供商 (Network providers)** 使用图分析网络流量和安全性。在这种情况下，每个顶点都有一个 `IP` 地址，每条边代表在不同 IP 地址之间流动的网络包。
+- **网络提供商 (Network providers)** 使用图分析网络流量和安全性。在这种情况下，每个顶点都有一个`IP`地址，每条边代表在不同 IP 地址之间流动的网络包。
 
 ### 图表示
 
-图通常被表示为邻接列表 (`adjacency lists`) 或邻接矩阵 (`adjacency matrices`)。让我们以本章开始的图为例。
+图通常被表示为邻接列表(`adjacency lists`)或邻接矩阵(`adjacency matrices`)。让我们以本章开始的图为例。
 
-![](img/08-graph----graph.png)
+![图](img/08-graph----graph.png)
 
 #### 邻接矩阵
 
-具有 `n` 个顶点的图也可以表示为大小为 `n — n` 的二进制值（`0` 或 `1`）的邻接矩阵。在这样的矩阵中，位置 `(i, j)` 处的值 `1` 表示顶点 `i` 和 `j` 之间存在边。否则，如果值为 `0`，则这些顶点之间没有边。
+具有`n`个顶点的图也可以表示为大小为`n × n`的二进制值（`0`或`1`）的邻接矩阵。在这样的矩阵中，位置`(i, j)`处的值`1`表示顶点`i`和`j`之间存在边。否则，如果值为`0`，则这些顶点之间没有边。
 
 **无向图邻接矩阵示例**
 
@@ -3227,9 +3030,9 @@ YouTube 上的优先级队列 [`www.youtube.com/watch?v=wptevk0bshY`](https://ww
 
 图的一种流行表示方法是使用一个包含所有顶点的对象列表。
 
-![](img/08-graph----graph.png)
+![图](img/08-graph----graph.png)
 
-有时，不是使用顶点列表，而是使用 `Edge` 实体的列表。`Edge` 实体存储起始顶点、终点顶点和权重。当我们需要存储某些元数据时，这种方法可能更方便。
+有时，不是使用顶点列表，而是使用`Edge`实体的列表。`Edge`实体存储起始顶点、终点顶点和权重。当我们需要存储某些元数据时，这种方法可能更方便。
 
 ```javascript
 class Node {
@@ -3257,262 +3060,255 @@ class Graph {
 }
 ```
 
-我们还需要一个独立的 `Graph` 类来支持不连通的图。在本章中，我们将使用邻接列表方法来实现图。
+我们还需要一个独立的`Graph`类来支持不连通的图。在本章中，我们将使用邻接列表方法来实现图。
 
 #### 邻接矩阵与邻接列表对比
 
 图相关的算法可以交替使用邻接矩阵或邻接列表来实现。区别在于，根据对图执行的操作，一种实现图的方式可能比另一种更高效。
 
+### 使用示例
 
-
-
-
-在我们实现图的 JavaScript 版本之前，让我们先假设我们已经有了 `Graph`、`GraphVertex` 和 `GraphEdge` 类，并描述我们打算如何使用它们。
+在我们实现图的 JavaScript 版本之前，让我们先假设我们已经有了`Graph`、`GraphVertex`和`GraphEdge`类，并描述我们打算如何使用它们。
 
 假设我们想创建一个非常简单的社交网络模型。我们希望能够注册新用户、创建“朋友”关系，并查看特定用户的好友列表。
 
 ```javascript
- 11 // 导入依赖。
- 2 import Graph from './Graph';
- 3 import GraphVertex from './GraphVertex';
- 4 import GraphEdge from './GraphEdge';
- 5 
- 6 // 创建网络。
- 7 const network = new Graph();
- 8 
-9 // 创建用户。
-10 const bill = new GraphVertex('Bill');
-11 const mary = new GraphVertex('Mary');
-12 const john = new GraphVertex('John');
-13 const jane = new GraphVertex('Jane');
-14 
-15 // 在我们的网络中注册用户。
-16 network
-17   .addVertex(bill)
-18   .addVertex(mary)
-19   .addVertex(john)
-20   .addVertex(jane);
-21 
-22 // 检查用户是否注册成功。
-23 network.getVertexByKey('Bill'); // -> bill
-24 network.getVertexByKey('Mary'); // -> mary
-25 
-26 // 建立朋友连接。
-27 network
-28   .addEdge(new GraphEdge(bill, mary))
-29   .addEdge(new GraphEdge(john, jane))
-30   .addEdge(new GraphEdge(jane, mary));
-31 
-32 // 检查特定用户是否是朋友。
-33 network.findEdge(bill, mary); // -> GraphEdge 实体
-34 network.findEdge(john, jane); // -> GraphEdge 实体
-35 network.findEdge(bill, john); // -> null
-36 
-37 // 获取特定用户的所有朋友。
-38 // eslint-disable-next-line no-unused-expressions
-39 mary.getNeighbors().length; // -> 2
-40 mary.getNeighbors(); // -> [bill, jane]
+// 导入依赖。
+import Graph from './Graph';
+import GraphVertex from './GraphVertex';
+import GraphEdge from './GraphEdge';
+
+// 创建网络。
+const network = new Graph();
+
+// 创建用户。
+const bill = new GraphVertex('Bill');
+const mary = new GraphVertex('Mary');
+const john = new GraphVertex('John');
+const jane = new GraphVertex('Jane');
+
+// 在我们的网络中注册用户。
+network
+  .addVertex(bill)
+  .addVertex(mary)
+  .addVertex(john)
+  .addVertex(jane);
+
+// 检查用户是否注册成功。
+network.getVertexByKey('Bill'); // -> bill
+network.getVertexByKey('Mary'); // -> mary
+
+// 建立朋友连接。
+network
+  .addEdge(new GraphEdge(bill, mary))
+  .addEdge(new GraphEdge(john, jane))
+  .addEdge(new GraphEdge(jane, mary));
+
+// 检查特定用户是否是朋友。
+network.findEdge(bill, mary); // -> GraphEdge 实体
+network.findEdge(john, jane); // -> GraphEdge 实体
+network.findEdge(bill, john); // -> null
+
+// 获取特定用户的所有朋友。
+// eslint-disable-next-line no-unused-expressions
+mary.getNeighbors().length; // -> 2
+mary.getNeighbors(); // -> [bill, jane]
 ```
 
-08-graph/example.js
+`08-graph/example.js`
 
 # 实现
 
-我们将实现分为三个部分。首先，实现 `GraphEdge` 和 `GraphVertex` 类，然后将它们封装进 `Graph` 类中。
+我们将实现分为三个部分。首先，实现`GraphEdge`和`GraphVertex`类，然后将它们封装进`Graph`类中。
 
 ## GraphEdge
 
 让我们创建这个类。
 
 ```javascript
-1 export default class GraphEdge {
+export default class GraphEdge {
 ```
 
-08-graph/GraphEdge.js
+`08-graph/GraphEdge.js`
 
 ### `constructor`
 
-构造方法将接受 `startVertex`、`endVertex` 以及 `weight` 参数。边的实例将表示 `startVertex` 和 `endVertex` 之间的连接。对于有向图，参数的顺序（`startVertex` 和 `endVertex`）很重要，因为如果你还记得引言中提到的，有向图中的边是“单行道”——它们只能向一个方向。对于无向图，参数的顺序并不重要。
+构造方法将接受`startVertex`、`endVertex`以及`weight`参数。边的实例将表示`startVertex`和`endVertex`之间的连接。对于有向图，参数的顺序（`startVertex`和`endVertex`）很重要，因为如果你还记得引言中提到的，有向图中的边是“单行道”——它们只能向一个方向。对于无向图，参数的顺序并不重要。
 
 ```javascript
- 2   /**
- 3    * GraphEdge 构造函数。
- 4    * @param {GraphVertex} startVertex
- 5    * @param {GraphVertex} endVertex
- 6    * @param {number} [weight=1]
- 7    */
- 8   constructor(startVertex, endVertex, weight = 0) {
- 9     this.startVertex = startVertex;
-10     this.endVertex = endVertex;
-11     this.weight = weight;
-12   }
+  /**
+   * GraphEdge 构造函数。
+   * @param {GraphVertex} startVertex
+   * @param {GraphVertex} endVertex
+   * @param {number} [weight=1]
+   */
+  constructor(startVertex, endVertex, weight = 0) {
+    this.startVertex = startVertex;
+    this.endVertex = endVertex;
+    this.weight = weight;
+  }
 ```
 
-08-graph/GraphEdge.js
+`08-graph/GraphEdge.js`
 
 ### `getKey()`
 
-此方法将返回一个唯一的边键，它由起始顶点和终点顶点键组成。该键稍后将在 `Graph` 类中用于快速查找图的边。我们将在下方为 `GraphVertex` 实例实现 `getKey()` 方法。键值看起来像 `A_B`，这意味着这条边连接了顶点 `A` 和 `B`。
+此方法将返回一个唯一的边键，它由起始顶点和终点顶点键组成。该键稍后将在`Graph`类中用于快速查找图的边。我们将在下方为`GraphVertex`实例实现`getKey()`方法。键值看起来像`A_B`，这意味着这条边连接了顶点`A`和`B`。
 
 ```javascript
-14   /**
-15    * 获取边键的字符串表示。
-16    * @return {string}
-17    */
-18   getKey() {
-19     const startVertexKey = this.startVertex.getKey();
-20     const endVertexKey = this.endVertex.getKey();
-21 
-23     return `${startVertexKey}_${endVertexKey}`;
-23   }
+  /**
+   * 获取边键的字符串表示。
+   * @return {string}
+   */
+  getKey() {
+    const startVertexKey = this.startVertex.getKey();
+    const endVertexKey = this.endVertex.getKey();
+
+    return `${startVertexKey}_${endVertexKey}`;
+  }
 ```
 
-08-graph/GraphEdge.js
+`08-graph/GraphEdge.js`
 
 ### `toString()`
 
 此方法将返回边的字符串表示。为了简单起见，我们在这里返回边的键。
 
 ```javascript
-25   /**
-26    * 将边转换为字符串。
-27    * @return {string}
-28    */
-29   toString() {
-30     return this.getKey();
-31   }
+  /**
+   * 将边转换为字符串。
+   * @return {string}
+   */
+  toString() {
+    return this.getKey();
+  }
 ```
 
-08-graph/GraphEdge.js
+`08-graph/GraphEdge.js`
 
 ## GraphVertex
 
-我们将使用之前章节中的 `LinkedList` 类来存储顶点的所有相邻边。让我们先导入我们的依赖项。
+我们将使用之前章节中的`LinkedList`类来存储顶点的所有相邻边。让我们先导入我们的依赖项。
 
 ```javascript
-1 // 导入依赖。
-2 import LinkedList from '../02-linked-list/LinkedList';
+// 导入依赖。
+import LinkedList from '../02-linked-list/LinkedList';
 ```
 
-08-graph/GraphVertex.js
+`08-graph/GraphVertex.js`
 
 现在让我们创建一个类。
 
 ```javascript
-4 export default class GraphVertex {
+export default class GraphVertex {
 ```
 
-08-graph/GraphVertex.js
+`08-graph/GraphVertex.js`
 
 ### `constructor`
 
-构造方法将接受顶点的 `value`。此外，在此方法中，我们将使用 `LinkedList` 类创建一个空的 `edges` 列表，用于存储所有相邻边。
+构造方法将接受顶点的`value`。此外，在此方法中，我们将使用`LinkedList`类创建一个空的`edges`列表，用于存储所有相邻边。
 
 ```javascript
- 5   /**
- 6    * 顶点构造函数。
- 7    * @param {*} value
-8    */
-9   constructor(value) {
-10     this.value = value;
-11     this.edges = new LinkedList();
-12   }
+  /**
+   * 顶点构造函数。
+   * @param {*} value
+   */
+  constructor(value) {
+    this.value = value;
+    this.edges = new LinkedList();
+  }
 ```
 
-08-graph/GraphVertex.js
+`08-graph/GraphVertex.js`
 
 ### `addEdge()`
 
-此方法将新边添加到当前顶点。它通过追加操作来实现。该方法返回 `this` 以允许链式调用。
+此方法将新边添加到当前顶点。它通过追加操作来实现。该方法返回`this`以允许链式调用。
 
 ```javascript
-14   /**
-15    * 向顶点添加新边。
-16    * @param {GraphEdge} edge
-17    * @returns {GraphVertex}
-18    */
-19   addEdge(edge) {
-20     this.edges.append(edge);
-21 
-22     return this;
-23   }
+  /**
+   * 向顶点添加新边。
+   * @param {GraphEdge} edge
+   * @returns {GraphVertex}
+   */
+  addEdge(edge) {
+    this.edges.append(edge);
+
+    return this;
+  }
 ```
 
-08-graph/GraphVertex.js
+`08-graph/GraphVertex.js`
 
 ### `deleteEdge()`
 
-此方法从 `LinkedList` 中删除边。
+此方法从`LinkedList`中删除边。
 
 ```javascript
-25   /**
-26    * 删除顶点边。
-27    * @param {GraphEdge} edge
-28    */
-29   deleteEdge(edge) {
-30     this.edges.delete(edge);
-31   }
+  /**
+   * 删除顶点边。
+   * @param {GraphEdge} edge
+   */
+  deleteEdge(edge) {
+    this.edges.delete(edge);
+  }
 ```
 
-08-graph/GraphVertex.js
+`08-graph/GraphVertex.js`
 
 ### `getEdges()`
 
-此方法返回顶点的所有相邻边的数组。为了做到这一点，它将边的 `LinkedList` 转换为数组，然后使用 `map()` 函数遍历并提取值。这些值是顶点实体。
+此方法返回顶点的所有相邻边的数组。为了做到这一点，它将边的`LinkedList`转换为数组，然后使用`map()`函数遍历并提取值。这些值是顶点实体。
 
 ```javascript
-57   /**
-58    * 获取所有顶点边数组。
-59    * @return {GraphEdge[]}
-60    */
-61   getEdges() {
-62     return this.edges.toArray().map(linkedListNode => linkedListNode.value);
-63   }
+  /**
+   * 获取所有顶点边数组。
+   * @return {GraphEdge[]}
+   */
+  getEdges() {
+    return this.edges.toArray().map(linkedListNode => linkedListNode.value);
+  }
 ```
 
-08-graph/GraphVertex.js
+`08-graph/GraphVertex.js`
 
 ### `hasEdge()`
 
-此方法检查顶点是否有特定的边实例。为了做到这一点，它使用了 `LinkedList` 的 `find()` 方法。我们将一个函数作为参数传递给 `find()` 方法。在函数内部，我们通过严格比较 `===` 来查找正确的边。如果找到了边，我们通过双重 `!!` 将其转换为布尔值。
+此方法检查顶点是否有特定的边实例。为了做到这一点，它使用了`LinkedList`的`find()`方法。我们将一个函数作为参数传递给`find()`方法。在函数内部，我们通过严格比较`===`来查找正确的边。如果找到了边，我们通过双重`!!`将其转换为布尔值。
 
 ```javascript
-65   /**
-66    * 检查顶点是否连接了特定的边。
-67    * @param {GraphEdge} requiredEdge
-68    * @returns {boolean}
-69    */
-70   hasEdge(requiredEdge) {
-71     const edgeNode = this.edges.find({
-72       callback: edge => edge === requiredEdge,
-73     });
-74 
-75     return !!edgeNode;
-76   }
+  /**
+   * 检查顶点是否连接了特定的边。
+   * @param {GraphEdge} requiredEdge
+   * @returns {boolean}
+   */
+  hasEdge(requiredEdge) {
+    const edgeNode = this.edges.find({
+      callback: edge => edge === requiredEdge,
+    });
+
+    return !!edgeNode;
+  }
 ```
 
-08-graph/GraphVertex.js
+`08-graph/GraphVertex.js`
 
 ### `getNeighbors()`
 
 此方法返回当前顶点的所有相邻顶点的数组。为了做到这一点，我们需要：
 
-*   遍历所有相邻边，
+* 遍历所有相邻边，
+* 对于每条边，我们需要检查`startVertex`和`endVertex`，并返回不等于当前顶点的顶点。
 
-*   对于每条边，我们需要检查 `startVertex` 和 `endVertex`，并返回不等于当前顶点的顶点。
-
-我们需要这样做是因为我们无法保证当前顶点存储为边中的 `startVertex`。例如，考虑我们有顶点 *A* 和 *B* 以及边 *AB* 的情况。在这种情况下，边 *AB* 将被添加到顶点 *A* 和 *B* 中。对于顶点 *A*，它是边 *AB* 的 `startVertex`，但对于顶点 *B*，它是 `endVertex`。这两种情况都需要处理。
-
-
-
-
+我们需要这样做是因为我们无法保证当前顶点存储为边中的`startVertex`。例如，考虑我们有顶点*A*和*B*以及边*AB*的情况。在这种情况下，边*AB*将被添加到顶点*A*和*B*中。对于顶点*A*，它是边*AB*的`startVertex`，但对于顶点*B*，它是`endVertex`。这两种情况都需要处理。
 
 ```javascript
-33   /**
-    * 获取顶点邻居列表。
-    * @returns {GraphVertex[]}
-    */
-   getNeighbors() {
+  /**
+   * 获取顶点邻居列表。
+   * @returns {GraphVertex[]}
+   */
+  getNeighbors() {
     const edges = this.edges.toArray();
 
     /** @param {LinkedListNode} node */
@@ -3537,15 +3333,15 @@ class Graph {
 
 ##### `hasNeighbor()`
 
-此方法检查当前顶点是否具有特定的邻居顶点。为了实现这一点，它使用链表的 `find()` 方法来查找连接当前顶点与指定邻居顶点的边。然后，使用 `!!` 序列将 `find()` 操作的结果转换为布尔值。如果从当前顶点到指定的邻居顶点存在边，则该方法将返回 `true`。否则将返回 `false`。
+此方法检查当前顶点是否具有特定的邻居顶点。为了实现这一点，它使用链表的`find()`方法来查找连接当前顶点与指定邻居顶点的边。然后，使用`!!`序列将`find()`操作的结果转换为布尔值。如果从当前顶点到指定的邻居顶点存在边，则该方法将返回`true`。否则将返回`false`。
 
 ```javascript
-78   /**
-    * 检查特定顶点是否为当前顶点的邻居。
-    * @param {GraphVertex} vertex
-    * @returns {boolean}
-    */
-   hasNeighbor(vertex) {
+  /**
+   * 检查特定顶点是否为当前顶点的邻居。
+   * @param {GraphVertex} vertex
+   * @returns {boolean}
+   */
+  hasNeighbor(vertex) {
     const edgeToNeighbor = this.edges.find({
       callback: edge => edge.startVertex === vertex || edge.endVertex === vertex,
     });
@@ -3558,15 +3354,15 @@ class Graph {
 
 ##### `findEdge()`
 
-此方法查找连接当前顶点与指定顶点的边。为了实现这一点，它使用了 `LinkedList` 的 `find()` 方法并带有 `edgeFinder()` 回调函数。在 `edgeFinder()` 回调中，我们尝试寻找一个 `startVertex` 或 `endVertex` 被设置为来自 `findEdge()` 函数参数的指定 `vertex`对象的顶点。如果找到了该边，此方法将返回它的值。否则，将返回 `null`。
+此方法查找连接当前顶点与指定顶点的边。为了实现这一点，它使用了`LinkedList`的`find()`方法并带有`edgeFinder()`回调函数。在`edgeFinder()`回调中，我们尝试寻找一个`startVertex`或`endVertex`被设置为来自`findEdge()`函数参数的指定`vertex`对象的顶点。如果找到了该边，此方法将返回它的值。否则，将返回`null`。
 
 ```javascript
- 91   /**
-    * 查找连接当前顶点与指定顶点的边。
-    * @param {GraphVertex} vertex
-    * @returns {(GraphEdge|null)}
-    */
-   findEdge(vertex) {
+  /**
+   * 查找连接当前顶点与指定顶点的边。
+   * @param {GraphVertex} vertex
+   * @returns {(GraphEdge|null)}
+   */
+  findEdge(vertex) {
     const edgeFinder = (edge) => {
       return edge.startVertex === vertex || edge.endVertex === vertex;
     };
@@ -3581,14 +3377,14 @@ class Graph {
 
 ##### `deleteAllEdges()`
 
-此方法删除所有连接到当前顶点的边。它简单地遍历所有的边并对每条边执行 `deleteEdge()` 方法。
+此方法删除所有连接到当前顶点的边。它简单地遍历所有的边并对每条边执行`deleteEdge()`方法。
 
 ```javascript
-114   /**
-    * 删除所有连接到顶点的边。
-    * @return {GraphVertex}
-    */
-   deleteAllEdges() {
+  /**
+   * 删除所有连接到顶点的边。
+   * @return {GraphVertex}
+   */
+  deleteAllEdges() {
     this.getEdges().forEach(edge => this.deleteEdge(edge));
 
     return this;
@@ -3599,15 +3395,15 @@ class Graph {
 
 ##### `getKey()`
 
-此方法返回顶点的键（key）。我们使用顶点的值作为唯一键。稍后在 `Graph` 类中，我们需要这个键来将所有顶点存储在映射（map）中，以便快速查找顶点。
+此方法返回顶点的键（key）。我们使用顶点的值作为唯一键。稍后在`Graph`类中，我们需要这个键来将所有顶点存储在映射（map）中，以便快速查找顶点。
 
 ```javascript
-106   /**
-    * 获取顶点的字符串键。
-    * @returns {string}
-    */
-   getKey() {
-     return this.value;
+  /**
+   * 获取顶点的字符串键。
+   * @returns {string}
+   */
+  getKey() {
+    return this.value;
   }
 ```
 
@@ -3618,12 +3414,12 @@ class Graph {
 此方法创建顶点的字符串表示。我们打印顶点的值。
 
 ```javascript
-124   /**
-    * 获取图顶点的字符串表示。
-    * @returns {string}
-    */
-   toString() {
-     return `${this.value}`;
+  /**
+   * 获取图顶点的字符串表示。
+   * @returns {string}
+   */
+  toString() {
+    return `${this.value}`;
   }
 ```
 
@@ -3631,27 +3427,27 @@ class Graph {
 
 #### Graph
 
-最后，我们可以创建 `Graph` 类。这个类用于支持不连通的图，图中我们可能拥有多个不相连的顶点。
+最后，我们可以创建`Graph`类。这个类用于支持不连通的图，图中我们可能拥有多个不相连的顶点。
 
 ```javascript
-1 export default class Graph {
+export default class Graph {
 ```
 
 `08-graph/Graph.js`
 
 ##### `constructor`
 
-为了支持有向图和无向图，构造方法将接受一个 `isDirected` 标志。我们还创建了空的 `this.vertices` 和 `this.edges` 映射（对象），我们将它们用于存储所有添加到图中的顶点和边。
+为了支持有向图和无向图，构造方法将接受一个`isDirected`标志。我们还创建了空的`this.vertices`和`this.edges`映射（对象），我们将它们用于存储所有添加到图中的顶点和边。
 
 ```javascript
- 2   /**
-    * 图的构造函数。
-    * @param {boolean} isDirected
-    */
-   constructor(isDirected = false) {
-     this.vertices = {};
-     this.edges = {};
-     this.isDirected = isDirected;
+  /**
+   * 图的构造函数。
+   * @param {boolean} isDirected
+   */
+  constructor(isDirected = false) {
+    this.vertices = {};
+    this.edges = {};
+    this.isDirected = isDirected;
   }
 ```
 
@@ -3659,18 +3455,18 @@ class Graph {
 
 ##### `addVertex()`
 
-此方法向图添加一个顶点实例。它简单地在 `this.vertices` 对象中创建一个唯一的键，并将 `newVertex` 实例存储其中。
+此方法向图添加一个顶点实例。它简单地在`this.vertices`对象中创建一个唯一的键，并将`newVertex`实例存储其中。
 
 ```javascript
-12   /**
-    * 向图添加新顶点。
-    * @param {GraphVertex} newVertex
-    * @returns {Graph}
-    */
-   addVertex(newVertex) {
-     this.vertices[newVertex.getKey()] = newVertex;
+  /**
+   * 向图添加新顶点。
+   * @param {GraphVertex} newVertex
+   * @returns {Graph}
+   */
+  addVertex(newVertex) {
+    this.vertices[newVertex.getKey()] = newVertex;
 
-     return this;
+    return this;
   }
 ```
 
@@ -3678,16 +3474,16 @@ class Graph {
 
 ##### `getVertexByKey()`
 
-此方法根据键从 `this.vertices` 对象返回顶点。
+此方法根据键从`this.vertices`对象返回顶点。
 
 ```javascript
-23   /**
-    * 根据键获取顶点。
-    * @param {string} vertexKey
-    * @returns GraphVertex
-    */
-   getVertexByKey(vertexKey) {
-     return this.vertices[vertexKey];
+  /**
+   * 根据键获取顶点。
+   * @param {string} vertexKey
+   * @returns GraphVertex
+   */
+  getVertexByKey(vertexKey) {
+    return this.vertices[vertexKey];
   }
 ```
 
@@ -3695,15 +3491,15 @@ class Graph {
 
 ##### `getAllVertices()`
 
-此方法返回所有的顶点。为了实现这一点，它使用 `Object.values()` 方法将 `this.vertices` 对象转换为数组。
+此方法返回所有的顶点。为了实现这一点，它使用`Object.values()`方法将`this.vertices`对象转换为数组。
 
 ```javascript
-32   /**
-    * 获取所有顶点的列表。
-    * @return {GraphVertex[]}
-    */
-   getAllVertices() {
-     return Object.values(this.vertices);
+  /**
+   * 获取所有顶点的列表。
+   * @return {GraphVertex[]}
+   */
+  getAllVertices() {
+    return Object.values(this.vertices);
   }
 ```
 
@@ -3711,15 +3507,15 @@ class Graph {
 
 ##### `getAllEdges()`
 
-此方法返回所有的边的列表。为了实现这一点，它使用 `Object.values()` 方法将 `this.edges` 对象转换为数组。
+此方法返回所有的边的列表。为了实现这一点，它使用`Object.values()`方法将`this.edges`对象转换为数组。
 
 ```javascript
-40   /**
-    * 获取所有边的列表。
-    * @return {GraphEdge[]}
-    */
-   getAllEdges() {
-     return Object.values(this.edges);
+  /**
+   * 获取所有边的列表。
+   * @return {GraphEdge[]}
+   */
+  getAllEdges() {
+    return Object.values(this.edges);
   }
 ```
 
@@ -3729,24 +3525,20 @@ class Graph {
 
 此方法向图添加一个特定的边实例。在添加新边时，我们需要注意以下几点：
 
-*首先*，我们需要检查边中的某些（或所有）顶点是否已添加到图中。如果边的某些（或所有）顶点之前尚未添加到 `this.vertices` 对象，我们需要添加它们。我们使用 `getVertexByKey()` 方法来检查顶点是否存在。如果它返回 `undefined`，说明我们需要通过 `addVertex()` 方法创建一个顶点。
+*首先*，我们需要检查边中的某些（或所有）顶点是否已添加到图中。如果边的某些（或所有）顶点之前尚未添加到`this.vertices`对象，我们需要添加它们。我们使用`getVertexByKey()`方法来检查顶点是否存在。如果它返回`undefined`，说明我们需要通过`addVertex()`方法创建一个顶点。
 
-*其次*，我们需要检查该边是否已经添加到 `this.edges` 对象中。如果边已经添加，则抛出错误。否则，我们将边添加到 `this.edges` 对象中。
+*其次*，我们需要检查该边是否已经添加到`this.edges`对象中。如果边已经添加，则抛出错误。否则，我们将边添加到`this.edges`对象中。
 
-*最后*，如果图是有向的，我们只需要将此边添加到 `startVertex` 实例中。否则，该边将同时添加到 `startVertex` 和 `endVertex` 实例中。
-
-
-
-
+*最后*，如果图是有向的，我们只需要将此边添加到`startVertex`实例中。否则，该边将同时添加到`startVertex`和`endVertex`实例中。
 
 ```javascript
 /**
-  * 向图中添加一条新边。
-  * @param {GraphEdge} edge
-  * @returns {Graph}
-  */
+ * 向图中添加一条新边。
+ * @param {GraphEdge} edge
+ * @returns {Graph}
+ */
 addEdge(edge) {
-  // 尝试查找并结束起始顶点。
+  // 尝试查找起始和终点顶点。
   let startVertex = this.getVertexByKey(edge.startVertex.getKey());
   let endVertex = this.getVertexByKey(edge.endVertex.getKey());
 
@@ -3787,13 +3579,13 @@ addEdge(edge) {
 
 ### `deleteEdge()`
 
-此方法从图中删除特定的边。我们需要先从 `this.edges` 对象中删除该边。然后，我们还需要从相关的顶点（`startVertex` 和 `endVertex`）中将其删删除。
+此方法从图中删除特定的边。我们需要先从`this.edges`对象中删除该边。然后，我们还需要从相关的顶点（`startVertex`和`endVertex`）中将其删除。
 
 ```javascript
 /**
-  * 从图中删除特定的边。
-  * @param {GraphEdge} edge
-  */
+ * 从图中删除特定的边。
+ * @param {GraphEdge} edge
+ */
 deleteEdge(edge) {
   // 从边列表中删除边。
   if (this.edges[edge.getKey()]) {
@@ -3802,7 +3594,7 @@ deleteEdge(edge) {
     throw new Error('Edge not found in graph');
   }
 
-  // 尝试查找起始和终点顶点并从中它们删除边。
+  // 尝试查找起始和终点顶点并从中删除边。
   const startVertex = this.getVertexByKey(edge.startVertex.getKey());
   const endVertex = this.getVertexByKey(edge.endVertex.getKey());
 
@@ -3815,15 +3607,15 @@ deleteEdge(edge) {
 
 ### `findEdge()`
 
-此方法通过 `startVertex` 和 `endVertex` 实例查找边。它基本上是检查图中的两个顶点是否连接。为了做到这一点，它首先尝试在顶点列表中查找 `startVertex`。如果没有找到 `startVertex`，则方法返回 `null`。如果找到了 `startVertex`，它将尝试使用 `findEdge()` 方法查找连接 `startVertex` 和 `endVertex` 的边。
+此方法通过`startVertex`和`endVertex`实例查找边。它基本上是检查图中的两个顶点是否连接。为了做到这一点，它首先尝试在顶点列表中查找`startVertex`。如果没有找到`startVertex`，则方法返回`null`。如果找到了`startVertex`，它将尝试使用`findEdge()`方法查找连接`startVertex`和`endVertex`的边。
 
 ```javascript
 /**
-  * 通过起始顶点和终点顶点查找边。
-  * @param {GraphVertex} startVertex
-  * @param {GraphVertex} endVertex
-  * @return {(GraphEdge|null)}
-  */
+ * 通过起始顶点和终点顶点查找边。
+ * @param {GraphVertex} startVertex
+ * @param {GraphVertex} endVertex
+ * @return {(GraphEdge|null)}
+ */
 findEdge(startVertex, endVertex) {
   const vertex = this.getVertexByKey(startVertex.getKey());
 
@@ -3839,15 +3631,15 @@ findEdge(startVertex, endVertex) {
 
 ### `toString()`
 
-此方法返回图的字符串表示。为了实现这一点，它将 `this.vertices` 转换为图顶点实例的数组。然后将此数组转换为字符串。
+此方法返回图的字符串表示。为了实现这一点，它将`this.vertices`转换为图顶点实例的数组。然后将此数组转换为字符串。
 
-如果图包含两个键为 `'A'` 和 `'B'` 的顶点，该字符串看起来将像 `'A,B'`。
+如果图包含两个键为`'A'`和`'B'`的顶点，该字符串看起来将像`'A,B'`。
 
 ```javascript
 /**
-  * 将图转换为字符串。
-  * @return {string}
-  */
+ * 将图转换为字符串。
+ * @return {string}
+ */
 toString() {
   return Object.keys(this.vertices).toString();
 }
@@ -3861,11 +3653,12 @@ toString() {
 | --- | --- | --- | --- | --- |
 | 邻接列表 | O(1) | O(E+V) | O(1) | O(E) |
 | 邻接矩阵 | O(V²) | O(V²) | O(1) | O(1) |
-其中 `V` 是顶点数，`E` 是边数。
+
+其中`V`是顶点数，`E`是边数。
 
 ### 题目
 
-- [寻找小镇](https://leetcode.com/problems/find-the-town/)：你可能会遇到一些图相关的问题。
+- [寻找小镇法官](https://leetcode.com/problems/find-the-town-judge/)：你可能会遇到一些图相关的问题。
 - [克隆图](https://leetcode.com/problems/clone-graph/)
 - [课程表](https://leetcode.com/problems/course-schedule/)
 
@@ -3877,9 +3670,9 @@ toString() {
 
 ### 参考文献
 
-- 维基百科上的图：https://en.wikipedia.org/wiki/Graph
-- YouTube 上的图：https://www.youtube.com/watch?v=g
-- GitHub 上的算法：https://github.com/master/data
+- 维基百科上的图：[https://en.wikipedia.org/wiki/Graph](https://en.wikipedia.org/wiki/Graph)
+- YouTube 上的图：[https://www.youtube.com/watch?v=g](https://www.youtube.com/watch?v=g)
+- GitHub 上的算法：[https://github.com/master/data](https://github.com/master/data)
 
 ## 位运算
 
@@ -3890,14 +3683,16 @@ toString() {
 在计算机中，位（bit）是 0 或 1 的表示。二进制使用 0 或 1。
 
 我们如何得到二进制？我们将一个数字除以 2 得到：
+
 - 10 / 2 = 5
 - 5 / 2 = 2
 - 2 / 2 = 1
 - 1 / 2 = 0
 
-数字 10 在二进制中看起来像 `1010`。
+数字 10 在二进制中看起来像`1010`。
 
 JavaScript 使用 64 位来表示这些数字：
+
 ```
 0000000000000000000000000000000000000000000000000000000000001010
 ```
@@ -3922,33 +3717,33 @@ JavaScript 使用 64 位来表示这些数字：
 
 ### 应用
 
-在 JavaScript 中执行位运算时，数字会从 64 位数字转换为 32 位符号整数。例如，如果你对 6 使用 `~` 运算符：`~6`
+在 JavaScript 中执行位运算时，数字会从 64 位数字转换为 32 位符号整数。例如，如果你对 6 使用`~`运算符：`~6`
 
 6 在 64 位中看起来像：
+
 ```
 0000000000000000000000000000000000000000000000000000000000000110
 ```
 
-当你对这个数字执行 `NOT` 操作时，数字会被转换为 32 位符号整数：
+当你对这个数字执行`NOT`操作时，数字会被转换为 32 位符号整数：
+
 ```
 00000000000000000000000000000110
 ```
 
 操作结果看起来像这样：
+
 ```
 1111111111111111111111111111111111111111111111111111111111111001
 ```
 
-
-
-
-`~6` 的结果是 `-7`。为什么？当你使用 `NOT` 运算符来翻转所有位时，返回的数字是补码格式的有符号数。
+`~6`的结果是`-7`。为什么？当你使用`NOT`运算符来翻转所有位时，返回的数字是补码格式的有符号数。
 
 ## 什么是补码？
 
-补码是二进制数的一种格式，它是有符号数的略微修改版本。最高位（most significant bit）仍用于判断数字是正数还是负数，0 为正，1 为负。要计算补码格式下负数的值，需要反反所有位并加 1。对于有符号数，使用补码格式的优势在于不存在“双零”问题，正如下表所示：
+补码是二进制数的一种格式，它是有符号数的略微修改版本。最高位（most significant bit）仍用于判断数字是正数还是负数，0 为正，1 为负。要计算补码格式下负数的值，需要反转所有位并加 1。对于有符号数，使用补码格式的优势在于不存在“双零”问题，正如下表所示：
 
-| 十十进制 | 有符号数 | 补码 |
+| 十进制 | 有符号数 | 补码 |
 | --- | --- | --- |
 | +7 | 0111 | 0111 |
 | +6 | 0110 | 0110 |
@@ -3975,7 +3770,7 @@ JavaScript 使用 64 位来表示这些数字：
 
 ### 获取位 (Get Bit)
 
-要从二进制数获取相关的位，我们首先想将相关位移动到第零位，然后使用 `&` 运算判断该位是 1 还是 0。
+要从二进制数获取相关的位，我们首先想将相关位移动到第零位，然后使用`&`运算判断该位是 1 还是 0。
 
 例如，数字 5 的二进制形式如下：
 
@@ -3983,13 +3778,14 @@ JavaScript 使用 64 位来表示这些数字：
 
 如果我们想找到第二个位置位的值，首先将该位向右移动 2 位，如下：
 
-移动 1 –> `000010` 移动 2 –> `000001`
+移动 1 –> `000010`
+移动 2 –> `000001`
 
-一旦我们将位移动了正确的位数，就使用 `&`（与门）运算来判断该位是 1 还是 0。记住，当使用 `&` 运算时，只有当两个数字都是 1 时，运算结果才会返回 1。在这种情况下，当我们用数字 5 和 2 调用 `getBit` 函数时：
+一旦我们将位移动了正确的位数，就使用`&`（与门）运算来判断该位是 1 还是 0。记住，当使用`&`运算时，只有当两个数字都是 1 时，运算结果才会返回 1。在这种情况下，当我们用数字 5 和 2 调用`getBit`函数时：
 
 `let result = getBit(5,2)`
 
-`result` 等于 1。
+`result`等于 1。
 
 ```javascript
 /**
@@ -4008,11 +3804,14 @@ export default function getBit(number, bitPosition) {
 
 要在二进制数中设置某位，我们必须先将数字 1 移动到正确的位置，然后将其与该数字进行 OR（或）运算。
 
-要设置数字 5 的第 3 位，我们首先取数字 1，并将第 0 数字移动 3 次，如下：
+要设置数字 5 的第 3 位，我们首先取数字 1，并将第 0 位移动 3 次，如下：
 
-`000001` <– 1 的初始二进制表示 `000010` <– 移动 1 `000100` <– 移动 2 `001000` <– 移动 3
+`000001` <– 1 的初始二进制表示
+`000010` <– 移动 1
+`000100` <– 移动 2
+`001000` <– 移动 3
 
-然后我们与数字 5 执行 `|`（或）运算来设置该数字。
+然后我们与数字 5 执行`|`（或）运算来设置该数字。
 
 `000101` | `001000` = `001101`
 
@@ -4035,15 +3834,17 @@ export default function setBit(number, bitPosition) {
 
 例如，如果我们想清除数字 5 的第二个位置位，我们首先取数字 1 并将其位移动到第二个位置：
 
-`000001` <– 1 的初始二进制表示 `000010` <– 移动 1 `000100` <– 移动 2
+`000001` <– 1 的初始二进制表示
+`000010` <– 移动 1
+`000100` <– 移动 2
 
-然后我们对该数字使用 `~`（NOT）运算，得到如下结果：
+然后我们对该数字使用`~`（NOT）运算，得到如下结果：
 
-`11101`
+`111011`
 
-最后，我们与数字使用 `&` 运算来清除位：
+最后，我们与数字使用`&`运算来清除位：
 
-`000101` & `11101` = `000001`
+`000101` & `111011` = `000001`
 
 ```javascript
 /**
@@ -4061,7 +3862,7 @@ export default function clearBit(number, bitPosition) {
 
 ### 更新位 (Update Bit)
 
-该方法是 `clearBit` 和 `setBit` 方法的结合。
+该方法是`clearBit`和`setBit`方法的结合。
 
 ```javascript
 /**
@@ -4094,9 +3895,10 @@ Number: 4 = 000100
 isEven: true
 ```
 
-通过与 1 执行位 `AND` 运算，我们可以判断一个数字是偶数还是奇数。
+通过与 1 执行位`AND`运算，我们可以判断一个数字是偶数还是奇数。
 
-`000101` & `000001` === `000001` (奇数) `000100` & `000001` === `000000` (偶数)
+`000101` & `000001` === `000001` (奇数)
+`000100` & `000001` === `000000` (偶数)
 
 ```javascript
 /**
@@ -4124,7 +3926,10 @@ isPositive: false
 
 为了获取最高位，我们将最左位移动 31 次，然后与 1 进行 AND 运算以判断它是 1 还是 0。
 
-移动 1 –> `10000000000000000000000000000001` 移动 2 –> `01000000000000000000000000000000` …. 移动 31 –> `00000000000000000000000000000001`
+移动 1 –> `10000000000000000000000000000001`
+移动 2 –> `01000000000000000000000000000000`
+….
+移动 31 –> `00000000000000000000000000000001`
 
 `00000000000000000000000000000001` & `000001` = `000001` <– 正数
 
@@ -4134,7 +3939,7 @@ isPositive: false
  * @return {boolean}
  */
 export default function isPositive(number) {
-  // 0 既不是正数不是负数。
+  // 0 既不是正数也不是负数。
   if (number === 0) {
     return false;
   }
@@ -4149,7 +3954,8 @@ export default function isPositive(number) {
 
 该方法将原始数字向左移动一位。通过将所有位向左移动，可以将数字乘以二。
 
-`000101` <– 5 的初始二进制表示 `001010` <– 移动 1
+`000101` <– 5 的初始二进制表示
+`001010` <– 移动 1
 
 `001010` = 10
 
@@ -4169,13 +3975,10 @@ export default function multiplyByTwo(number) {
 
 要将二进制数除以二，我们将原始数字向右移动一位。通过将所有位向右移动，可以将该数字除以 2。
 
-5 的初始二进制表示 –> `000101` 移动 1 –> `000010`
+5 的初始二进制表示 –> `000101`
+移动 1 –> `000010`
 
 `000010` = 2
-
-
-
-
 
 ```javascript
 /**
@@ -4252,7 +4055,7 @@ a * b 可以写为以下格式：
   2a * (b + 1)/2 - a    如果 b 为奇数且为负数
 ```
 
-这种方法的优点是在每个递归步骤中，其中一个操作数都会减少到原值的一半。因此，运行时间复杂度为 `O(log(b))`，其中 `b` 是每个递归步骤中减半的操作数。
+这种方法的优点是在每个递归步骤中，其中一个操作数都会减少到原值的一半。因此，运行时间复杂度为`O(log(b))`，其中`b`是每个递归步骤中减半的操作数。
 
 ```javascript
 import multiplyByTwo from './multiplyByTwo';
@@ -4310,13 +4113,13 @@ export default function multiply(a, b) {
 19 = 2⁴ + 2¹ + 2⁰
 ```
 
-然后将数字 `x` 乘以 `19` 等同于：
+然后将数字`x`乘以`19`等同于：
 
 ```
 x * 19 = x * 2⁴ + x * 2¹ + x * 2⁰
 ```
 
-现在我们需要记住 `x * 2⁴` 等同于将 `x` 向左移动 `4` 位。
+现在我们需要记住`x * 2⁴`等同于将`x`向左移动`4`位。
 
 ```javascript
 /**
@@ -4353,9 +4156,15 @@ export default function multiplyUnsigned(number1, number2) {
 
 ### 计算置位
 
-此方法使用位运算符统计数字中的置位（1）。当数字大于 0 时，我们每次将数字向右移一位并与 1 进行 `AND` 运算，以确定该位是否设置。
+此方法使用位运算符统计数字中的置位（1）。当数字大于 0 时，我们每次将数字向右移一位并与 1 进行`AND`运算，以确定该位是否设置。
 
-5 的二进制表示 -> `000101` 置位计数：0 移 1 位 -> `00010` 置位计数：1 移 2 位 -> `00001` 置位计数：2 移 3 位 -> `00000`
+5 的二进制表示 -> `000101`
+置位计数：0
+移 1 位 -> `000010`
+置位计数：1
+移 2 位 -> `000001`
+置位计数：2
+移 3 位 -> `000000`
 
 数字现在为 0，停止循环。
 
@@ -4380,11 +4189,11 @@ export default function countSetBits(originalNumber) {
 }
 ```
 
-`09-bit-manipulation.js`
+`09-bit-manipulation/countSetBits.js`
 
 ### 计算位差异
 
-此方法确定两个数字之间不同的位。通过使用 `XOR` 运算，我们可以确定两个数字之间不同的位，然后使用 `countSetBits` 函数获取总数。
+此方法确定两个数字之间不同的位。通过使用`XOR`运算，我们可以确定两个数字之间不同的位，然后使用`countSetBits`函数获取总数。
 
 ```
 000101 ^ 000001 = 000100
@@ -4411,9 +4220,14 @@ export default function bitsDiff(numberA, numberB) {
 
 ### 计算数字有效位数
 
-为了计算有效位数，我们需要每次将 `1` 向左移一位，并查看移动后的数字是否大于输入数字。
+为了计算有效位数，我们需要每次将`1`向左移一位，并查看移动后的数字是否大于输入数字。
 
-5 = `000101` 1 的初始二进制表示 -> `000001` 位计数：0 移 1 位 -> `000010` (2 < 5) 移 2 位 -> `000100` (4 < 5) 移 3 位 -> `001000` (8 > 5)
+5 = `000101`
+1 的初始二进制表示 -> `000001`
+位计数：0
+移 1 位 -> `000010` (2 < 5)
+移 2 位 -> `000100` (4 < 5)
+移 3 位 -> `001000` (8 > 5)
 
 有效位数是：3。当我们移动 4 次时，它就大于 5 了。
 
@@ -4432,17 +4246,17 @@ export default function bitLength(number) {
 }
 ```
 
+`09-bit-manipulation/bitLength.js`
 
+### 参考文献
 
+YouTube 上的位操作 [`www.youtube.com/watch?v=NLKQEOgBAnw`](https://www.youtube.com/watch?v=NLKQEOgBAnw)
 
+YouTube 上的二进制中的负数 [`www.youtube.com/watch?v=4qH4unVtJkE`](https://www.youtube.com/watch?v=4qH4unVtJkE)
 
-# YouTube 上的位操作 [`www.youtube.com/watch?v=NLKQEOgBAnw`](https://www.youtube.com/watch?v=NLKQEOgBAnw)
+stanford.edu 上的位技巧 [`graphics.stanford.edu/~seander/bithacks.html`](https://graphics.stanford.edu/~seander/bithacks.html)
 
-# YouTube 上的二进制中的负数 [`www.youtube.com/watch?v=4qH4unVtJkE`](https://www.youtube.com/watch?v=4qH4unVtJkE)
-
-# stanford.edu 上的位技巧 [`graphics.stanford.edu/~seander/bithacks.html`](https://graphics.stanford.edu/~seander/bithacks.html)
-
-# 位操作示例与测试用例 [`github.com/trekhleb/javascript-algorithms/tree/master/src/algorithms/math/bits`](https://github.com/trekhleb/javascript-algorithms/tree/master/src/algorithms/math/bits)
+位操作示例与测试用例 [`github.com/trekhleb/javascript-algorithms/tree/master/src/algorithms/math/bits`](https://github.com/trekhleb/javascript-algorithms/tree/master/src/algorithms/math/bits)
 
 ## 阶乘
 
@@ -4450,14 +4264,13 @@ export default function bitLength(number) {
 
 ### 介绍
 
-在数学中，非负整数 `n` 的阶乘表示为 `n!`，是所有小于或等于 `n` 的正整数的乘积。例如：
+在数学中，非负整数`n`的阶乘表示为`n!`，是所有小于或等于`n`的正整数的乘积。例如：
 
 ```
-1 5! = 5 * 4 * 3 * 2 * 1 = 120
+5! = 5 * 4 * 3 * 2 * 1 = 120
 ```
 
 | n | n! |
-
 | --- | --- |
 | 0 | 1 |
 | 1 | 1 |
@@ -4482,7 +4295,12 @@ export default function bitLength(number) {
 
 你可以这样写出来：
 
-Sally, Susan, Sarah Sally, Sarah, Susan Susan, Sarah, Sally Susan, Sally, Sarah Sarah, Sally, Susan Sarah, Susan, Sally
+Sally, Susan, Sarah
+Sally, Sarah, Susan
+Susan, Sarah, Sally
+Susan, Sally, Sarah
+Sarah, Sally, Susan
+Sarah, Susan, Sally
 
 写下这个列表需要很短的时间，但如果我们有 10 个人或 20 个人呢？我们将花很长时间写出所有可能的组合。通过计算组中人数的阶乘，我们不需要写出每种组合。
 
@@ -4500,16 +4318,17 @@ Sally, Susan, Sarah Sally, Sarah, Susan Susan, Sarah, Sally Susan, Sally, Sarah 
 
 为了实现阶乘，我们使用三元运算符来确定是否继续调用我们的函数。
 
+```javascript
+/**
+ * @param {number} number
+ * @return {number}
+ */
+export default function factorialRecursive(number) {
+  return number > 1 ? number * factorialRecursive(number - 1) : 1;
+}
 ```
-1 /**
-2  * @param {number} number
-3  * @return {number}
-4  */
-5 export default function factorialRecursive(number) {
-6   return number > 1 ? number * factorialRecursive(number - 1) : 1;
-7 }
-```
-10-factorial/factorialRecursive.js
+
+`10-factorial/factorialRecursive.js`
 
 ##### 关于三元运算符的提示
 
@@ -4517,9 +4336,9 @@ JavaScript 中的三元运算符简化编写行数的方法。而不是 if/else 
 
 ```javascript
 if(someTrue){
-	return someValue;
+  return someValue;
 }else{
-	return aDifferentValue;
+  return aDifferentValue;
 }
 ```
 
@@ -4529,7 +4348,7 @@ if(someTrue){
 return someTrue ? someValue : aDifferentValue;
 ```
 
-三元运算符的第一部分是一个真/假表达式，第二部分（`?` 和 `:` 之间）是表达式为真时返回的值，最后部分是表达式为假时返回的内容。对于我们的 `factorial` 函数，三元运算符的第一部分（真/假表达式）决定我们正在使用的数字是否大于 1。
+三元运算符的第一部分是一个真/假表达式，第二部分（`?`和`:`之间）是表达式为真时返回的值，最后部分是表达式为假时返回的内容。对于我们的`factorial`函数，三元运算符的第一部分（真/假表达式）决定我们正在使用的数字是否大于 1。
 
 ```javascript
 number > 1
@@ -4548,9 +4367,13 @@ factorialRecursive(5);
 ```
 
 5 大于 1？是，返回 5 * factorial(4)
+
 4 大于 1？是，返回 4 * factorial(3)
+
 3 大于 1？是，返回 3 * factorial(2)
+
 2 大于 1？是，返回 2 * factorial(1)
+
 1 大于 1？否，返回 1 —— 这是我们的基准情况。我们完成了调用函数并返回了每次调用的值：
 
 最终结果：120
@@ -4563,47 +4386,52 @@ factorialRecursive(5);
 export default function factorial(number) {
   let result = 1;
 ```
-10-factorial/factorial.js
 
-接下来，我们创建一个从 2 开始的 `for` 循环，直到达到我们要计算的数字。
+`10-factorial/factorial.js`
+
+接下来，我们创建一个从 2 开始的`for`循环，直到达到我们要计算的数字。
 
 ```javascript
 for (let i = 2; i <= number; i++) {
 ```
-10-factorial/factorial.js
 
-在 `for` 循环内部，我们将 `i` 乘以 `result`：
+`10-factorial/factorial.js`
+
+在`for`循环内部，我们将`i`乘以`result`：
 
 ```javascript
 for (let i = 2; i <= number; i++) {
   result *= i;
 }
 ```
-10-factorial/factorial.js
 
-最后，当我们退出 `for` 循环时，我们返回结果。
+`10-factorial/factorial.js`
+
+最后，当我们退出`for`循环时，我们返回结果。
 
 ```javascript
 return result;
+}
 ```
-10-factorial/factorial.js
+
+`10-factorial/factorial.js`
 
 ### 问题示例
 
 以下是你在面试中可能会遇到的相关问题：
 
 * [笨拙阶乘](https://leetcode.com/problems/clumsy-factorial/)
-* [阶乘末尾零](https://leetcode.com/problems/factorial-zeroes/)
+* [阶乘末尾零](https://leetcode.com/problems/factorial-trailing-zeroes/)
 
 ### 测验
 
-Q1：在 6! 的递归实现中，`factorialRecursive` 函数会被调用几次？
+Q1：在 6! 的递归实现中，`factorialRecursive`函数会被调用几次？
 
 ### 参考文献
 
 维基百科上的阶乘 [`en.wikipedia.org/wiki/Factorial`](https://en.wikipedia.org/wiki/Factorial)
 
-阶乘实现示例与测试用例 [`github.com/trekhleb/javascript-algorithms/tree/master/src/algorithms/math/bits`](https://github.com/trekhleb/javascript-algorithms/tree/master/src/algorithms/math/bits)
+阶乘实现示例与测试用例 [`github.com/trekhleb/javascript-algorithms/tree/master/src/algorithms/math/factorial`](https://github.com/trekhleb/javascript-algorithms/tree/master/src/algorithms/math/factorial)
 
 ## 斐波那契数
 
@@ -4615,15 +4443,11 @@ Q1：在 6! 的递归实现中，`factorialRecursive` 函数会被调用几次�
 
 边长为连续斐波那契数的正方形铺
 
-![斐波那契](img/11-fibonacci----fibonaccumber.png)
+![斐波那契](img/11-fibonacci----fibonaccinumber.png)
 
-斐波那契
-
-斐波那契螺旋：通过连接斐波那契铺图中正方形的对角的角的圆弧创建的黄金螺旋近似；[4] 这使用了大小为 1, 1, 2, 3, 5, 8, 13 和 21 的正方形。
+斐波那契螺旋：通过连接斐波那契铺图中正方形的对角的圆弧创建的黄金螺旋近似；这使用了大小为 1, 1, 2, 3, 5, 8, 13 和 21 的正方形。
 
 ![斐波那契螺旋](img/11-fibonacci----fibonacci_spiral.png)
-
-斐波那契螺旋
 
 ### 应用
 
@@ -4639,58 +4463,56 @@ Q1：在 6! 的递归实现中，`factorialRecursive` 函数会被调用几次�
 export default function fibonacci(n) {
   const fibSequence = [1];
 ```
-11-fibonacci/fibonacci.js
 
-
-
+`11-fibonacci/fibonacci.js`
 
 然后我们创建两个变量，一个用于存储当前正在处理的数字，另一个用于存储上一个数字。
 
-```
-10   let currentValue = 1;
-11   let previousValue = 0;
+```javascript
+  let currentValue = 1;
+  let previousValue = 0;
 ```
 
 `11-fibonacci/fibonacci.js`
 
 如果我们只需要斐波那契数列中的第一个数字 (1)，那么直接返回数组：
 
-```
-13   if (n === 1) {
-14     return fibSequence;
-15   }
-```
-
-`11-fibonacci/fibonacci.js`
-
-如果我们想要获取斐波那契数列中第一个数字以外的数字，我们创建一个 `iterationsCounter` 变量来跟踪我们已经添加到数组中的数字。由于我们已经在数组中包含了 1，所以我们将 `iterationsCounter` 设置为 `n-1`：
-
-```
-16   let iterationsCounter = n - 1;
+```javascript
+  if (n === 1) {
+    return fibSequence;
+  }
 ```
 
 `11-fibonacci/fibonacci.js`
 
-然后我们创建一个 `while` 循环，该循环会持续运行直到 `iterationsCounter` 达到 0。我们将当前值和之前计算的值相加，并将结果放入数组中。
+如果我们想要获取斐波那契数列中第一个数字以外的数字，我们创建一个`iterationsCounter`变量来跟踪我们已经添加到数组中的数字。由于我们已经在数组中包含了 1，所以我们将`iterationsCounter`设置为`n-1`：
 
-```
-18   while (iterationsCounter) {
-19     currentValue += previousValue;
-20     previousValue = currentValue - previousValue;
-21 
-22     fibSequence.push(currentValue);
-23 
-24     iterationsCounter -= 1;
-25   }
+```javascript
+  let iterationsCounter = n - 1;
 ```
 
 `11-fibonacci/fibonacci.js`
 
-最后，当我们跳出 `while` 循环后，返回我们的数组。
+然后我们创建一个`while`循环，该循环会持续运行直到`iterationsCounter`达到 0。我们将当前值和之前计算的值相加，并将结果放入数组中。
 
+```javascript
+  while (iterationsCounter) {
+    currentValue += previousValue;
+    previousValue = currentValue - previousValue;
+
+    fibSequence.push(currentValue);
+
+    iterationsCounter -= 1;
+  }
 ```
-28   return fibSequence;
-29 }
+
+`11-fibonacci/fibonacci.js`
+
+最后，当我们跳出`while`循环后，返回我们的数组。
+
+```javascript
+  return fibSequence;
+}
 ```
 
 `11-fibonacci/fibonacci.js`
@@ -4699,54 +4521,57 @@ export default function fibonacci(n) {
 
 计算第 N 个斐波那契数与创建一个斐波那契数组非常相似。与其将数字放入数组中，当我们到达第 N 个数字时，直接返回它。
 
-```
- 7 export default function fibonacciNth(n) {
- 8   let currentValue = 1;
- 9   let previousValue = 0;
-10 
-11   if (n === 1) {
-12     return 1;
-13   }
-14 
-15   let iterationsCounter = n - 1;
-16 
-17   while (iterationsCounter) {
-18     currentValue += previousValue;
-19     previousValue = currentValue - previousValue;
-20 
-21     iterationsCounter -= 1;
-22   }
+```javascript
+export default function fibonacciNth(n) {
+  let currentValue = 1;
+  let previousValue = 0;
+
+  if (n === 1) {
+    return 1;
+  }
+
+  let iterationsCounter = n - 1;
+
+  while (iterationsCounter) {
+    currentValue += previousValue;
+    previousValue = currentValue - previousValue;
+
+    iterationsCounter -= 1;
+  }
+
+  return currentValue;
+}
 ```
 
 `11-fibonacci/fibonacciNth.js`
 
 ### 计算第 N 斐波那契数（使用 Binet 公式）
 
-Binet 公式是一种计算第 N 个斐波那契数的数学方法，而无需使用 `for` 或 `while` 循环。
+Binet 公式是一种计算第 N 个斐波那契数的数学方法，而无需使用`for`或`while`循环。
 
 首先，我们计算 5 的平方根并将其保存到变量中：
 
-```
-16   // 计算 √5 以在后续公式中使用。
-17   const sqrt5 = Math.sqrt(5);
-```
-
-`11-fibonacci/fibonacciNthClosedForm.js`
-
-接下来，我们计算 `φ` (≈ 1.61803) 的值并将其保存到变量中
-
-```
-18   // 计算 φ 常数 (≈ 1.61803)。
-19   const phi = (1 + sqrt5) / 2;
+```javascript
+  // 计算 √5 以在后续公式中使用。
+  const sqrt5 = Math.sqrt(5);
 ```
 
 `11-fibonacci/fibonacciNthClosedForm.js`
 
-最后，我们使用这两个值来计算第 N 个斐波那契数。你会注意到，我们使用了 EcmaScript 2017 中引入的幂运算符 (`**`)，而不是 `Math.pow()`。
+接下来，我们计算`φ`(≈ 1.61803)的值并将其保存到变量中
 
+```javascript
+  // 计算 φ 常数 (≈ 1.61803)。
+  const phi = (1 + sqrt5) / 2;
 ```
-21   // 使用 Binet 公式计算斐波那契数。
-22   return Math.floor((phi ** position) / sqrt5 + 0.5);
+
+`11-fibonacci/fibonacciNthClosedForm.js`
+
+最后，我们使用这两个值来计算第 N 个斐波那契数。你会注意到，我们使用了 EcmaScript 2017 中引入的幂运算符(`**`)，而不是`Math.pow()`。
+
+```javascript
+  // 使用 Binet 公式计算斐波那契数。
+  return Math.floor((phi ** position) / sqrt5 + 0.5);
 ```
 
 `11-fibonacci/fibonacciNthClosedForm.js`
@@ -4755,8 +4580,8 @@ Binet 公式是一种计算第 N 个斐波那契数的数学方法，而无需�
 
 以下是一些你在面试过程中可能会遇到的相关问题：
 
-*   [最长斐波那契数列长度](https://leetcode.com/problems/length-of-longest-fibonacci-subsequence/)
-*   [将数组拆分为斐波那契数列](https://leetcode.com/problems/split-array-into-fibonacci-sequence/)
+* [最长斐波那契数列长度](https://leetcode.com/problems/length-of-longest-fibonacci-subsequence/)
+* [将数组拆分为斐波那契数列](https://leetcode.com/problems/split-array-into-fibonacci-sequence/)
 
 ### 参考文献
 
@@ -4768,13 +4593,13 @@ YouTube 上的斐波那契数列 [`www.youtube.com/watch?v=T8xgfVzef_E`](https:/
 
 ## 素数测试
 
-*   **难度：简单**
+*难度：简单*
 
-**质数**（或称为**素数**）是一个大于 `1` 的自然数，它不能通过两个较小的自然数相积得到。
+**质数**（或称为**素数**）是一个大于`1`的自然数，它不能通过两个较小的自然数相乘得到。
 
 > 自然数是任何大于等于 0 且不是分数或小数的数字
 
-大于 1 的非质数自然数称为合数。例如，`5` 是质数，因为将其写为乘积的唯一方式（`1 — 5` 或 `5 — 1`）涉及 `5` 本身。然而，`6` 是合数，因为它是两个数字 `(2 — 3)` 的乘积。
+大于 1 的非质数自然数称为合数。例如，`5`是质数，因为将其写为乘积的唯一方式（`1 × 5`或`5 × 1`）涉及`5`本身。然而，`6`是合数，因为它是两个数字`(2 × 3)`的乘积。
 
 ### 素数测试
 
@@ -4795,7 +4620,7 @@ function isPrime(number) {
   if (number % 2 === 0) return false;
 ```
 
-接下来，我们检查该数字是否被其平方根范围任何奇数整除。如果任何数字的余数为 0，我们就知道它不是质数。
+接下来，我们检查该数字是否被其平方根范围内任何奇数整除。如果任何数字的余数为 0，我们就知道它不是质数。
 
 ```javascript
   const limit = Math.sqrt(number);
@@ -4813,21 +4638,24 @@ function isPrime(number) {
 我们使用数字的平方根，是因为任何大于数字平方根的数字都会有一个对应的小于平方根的数字被使用。例如，36 的平方根是 6。
 
 1 * 36 = 36
+
 2 * 18 = 36
+
 3 * 12 = 36
+
 4 * 9 = 36
+
 5 * 7.2 = 36
+
+
+
 6 * 6 = 36 – 第二个操作数小于 36 的平方根；我们不需要检查高于平方根的数字。
-
-
-
-
 
 素性测试示例及用例 [`github.com/trekhleb/javascript-algorithms/tree/master/src/algorithms/math/primality-test`](https://github.com/trekhleb/javascript-algorithms/tree/master/src/algorithms/math/primality-test)
 
 # 是否为 2 的幂
 
-* *难度：简单*
+*难度：简单*
 
 ### 任务
 
@@ -4936,6 +4764,7 @@ function isPrime(number) {
 以下是一些在面试中可能会遇到的的相关问题：
 
 * [4 的幂](https://leetcode.com/problems/power-of-four/)
+
 * [重排后的 2 的幂](https://leetcode.com/problems/reordered-power-of-2/)
 
 ### 测验
@@ -4949,10 +4778,6 @@ function isPrime(number) {
 GeeksForGeeks 上的位运算解 [`www.geeksforgeeks.org/program-to-find-whether-a-no-is-power-of-two/`](https://www.geeksforgeeks.org/program-to-find-whether-a-no-is-power-of-two/)
 
 Stanford 上的位运算解 [`www.graphics.stanford.edu/~seander/bithwise-operations/`](http://www.graphics.stanford.edu/~seander/bithwise-operations/) （注：原文 URL 不完整，已根据上下文修正）
-
-
-
-
 
 ```javascript
   /**
@@ -5099,9 +4924,6 @@ export default function linearSearch(array, seekElement, comparatorCallback) {
 }
 ```
 
-
-
-
 $2^x = n \implies x = \log(n)$
 
 这里的 `x` 是我们的时间复杂度。
@@ -5208,9 +5030,6 @@ export default function binarySearch(sortedArray, target, comparator) {
 }
 ```
 
-
-
-
 ![](img/17-cartesian-product----cartesian-product.png)
 
 两个集合 `A` 和 `B` 的积集 `A×B` 中的元素数量可以计算为集合 `A` 和 `B` 长度的乘积 `|A|×|B|`。在上面的示例中，我们有两个长度为 3 的集合。这两个集合的乘积包含 `3 * 3 = 9` 个元素。
@@ -5293,10 +5112,6 @@ export default function binarySearch(sortedArray, target, comparator) {
 ### 问题示例
 
 这里是一些你可能感兴趣的相关问题：
-
-
-
-
 
 我们将使用两种方法来实现幂集生成器：一种是我们在上面讨论过的位运算方法，另一种是将在下一节中描述的回溯方法。
 
@@ -5387,12 +5202,19 @@ if (combinationIndex & (1 << setElementIndex)) {
 所以，例如，让我们以深度优先的方式溯溯决策树：
 
 1. 在顶端，我们只有一个选择，就是添加空集合。记录 `{}`。
+
 2. 下一个可以添加的元素是 `a`。记录 `{a}`。
+
 3. 我们可以添加 `b`。记录 `{a, b}`。
+
 4. 我们可以添加 `c`。记录 `{a, b, c}`。
+
 5. 此时没有其他元素可以添加了。回溯！
+
 6. 当前子集是 `{a}`。
+
 7. 但我们可以添加 `c`。记录 `{a, c}`。
+
 8. 等等
 
 现在让我们尝试用代码实现这种方法：
@@ -5442,10 +5264,6 @@ if (combinationIndex & (1 << setElementIndex)) {
 
 ### 复杂度
 
-
-
-
-
 在位运算方法中，我们遍历 `2<sup>n</sup>` 个数字，对于每个数字，我们都会遍历大小为 `n` 的原始集合，以决定将哪些元素包含在子集中。因此，这种方法的**时间复杂度**为 `O(n * 2<sup>n</sup>)`，其中 `n` 是原始集合中元素的数量。
 
 ### 回溯法
@@ -5457,6 +5275,7 @@ if (combinationIndex & (1 << setElementIndex)) {
 以下是一些你在面试过程中可能会遇到的相关问题：
 
 * [子集](https://leetcode.com/problems/subsets/)
+
 * [子集 II](https://leetcode.com/problems/subsets-ii/description/)
 
 ### 测验答题
@@ -5520,10 +5339,6 @@ P = {
     {B, A},
 }
 ```
-
-
-
-
 
 在我们开始实现排列算法之前，让我们假设我们已经实现了 `permutateWithoutRepetitions()` 和 `permutateWithRepetitions()` 函数，并尝试使用它们。通过使用 `permutateWithRepetitions()`，我们将尝试生成锁的所有可能密码。而通过使用 `permutateWithoutRepetitions()`，我们将尝试生成三位参赛者比赛赛次结果的所有可能变体（假设数组中的 `0<sup>th</sup>` 位置表示该参赛者获得第一）。
 
@@ -5605,11 +5420,17 @@ P = {
 我们将通过递归来解决这个问题。例如，如果我们需要为大小为 `3` 的集合 `{A, B, C}` 找到所有重复排列，我们执行以下操作：
 
 * 记住集合中的第一个元素 `A`，
+
 * 为集合 `S = {A, B, C}` 找到大小为 `r = 1` 的所有排列，
+
 * 将 `A` 与上一步中所有较小的排列进行拼接，
+
 * 记住集合中的第二个元素 `B`，
+
 * 为集合 `S = {A, B, C}` 找到大小为 `r = 1` 的所有排列，
+
 * 将 `B` 与上一步中所有较小的排列进行拼接，
+
 * 依此类推……
 
 对于大小为 1 的排列，每个元素都是一个排列。因此，对于集合 `{A, B, C}`，大小为 `1` 的排列将是 `{A}`、`{B}` 和 `{C}`。这将是我们递归函数的基础情况。
@@ -5663,11 +5484,17 @@ P = {
 我们将通过递归解决这个问题。例如，如果我们需要找到大小为 3 的集合的所有非重复排列，我们执行以下操作：
 
 * 提取集合的第一个元素 `A`，
+
 * 为集合 `S = {B, C}` 找到大小为 `2` 的所有排列，
+
 * 将 `A` 与上一步中所有较小的排列进行拼接，
+
 * 提取集合的第二个元素 `B`，
+
 * 为集合 `S = {A, C}` 找到大小为 `2` 的所有排列，
+
 * 将 `B` 与上一步中所有较小的排列进行拼接，
+
 * 依此类推……
 
 对于大小为 1 的排列，每个元素都是一个排列。因此，对于集合 `{A, B, C}`，大小为 `1` 的排列将是 `{A}`、`{B}` 和 `{C}`。这将是我们递归函数的基础情况。这意味着通过每次迭代弹出一个元素，最终形成所有排列。单个元素的排列就是元素本身。
@@ -5711,10 +5538,6 @@ export default function permutateWithoutRepetitions(permutationOptions) {
 }
 ```
 
-
-
-
-
 # Q2: 如果我们需要从一个大小为 4 的集合生成所有大小为 `2` 的不重复排列，我们会有多少个排列？
 
 ### 参考文献
@@ -5757,6 +5580,7 @@ C = {
 现在，让我们尝试泛化这个例子，并找出大小为 `n` 的集合中有多少个不重复（大小为 `r`）的组合。我们可以通过以下两个步骤来实现：
 
 * 假设顺序**是**重要的（就像排列一样），并计算不重复的、为 `r` 的排列数量。
+
 * 之后假设顺序**不**重要，并消除所有重复的组合。
 
 从排列的章节中，我们已经知道大小为 `n` 的集合的大小为 `r` 的不重复排列数可以计算为 $P(n, r) = \frac{n!}{(n - r)!}$。如果我们处理集合 `S = {A, B, C}` 大小为 `r = 2` 的排列，我们将得到 $P(n, r) = \frac{n!}{(n - r)!} = \frac{3!}{(3 - 2)!} = 3! = 6$ 个排列：
@@ -5791,10 +5615,6 @@ P = {
 ```
 
 现在我们需要确定有多少个重复，并从我们的计算中消除它们。
-
-
-
-
 
 ```javascript
  1 // 依赖。
@@ -5869,11 +5689,17 @@ P = {
 这个问题可以通过递归解决。这意味着我们从较小尺寸的组合生成更大尺寸的组合。例如，如果我们需要为集合 `S = {A, B, C, D}` 生成所有不重复的尺寸为 `r = 3` 的组合，我们执行以下操作：
 
 * 从集合中提取第一个元素 `A`，
+
 * 为集合 `S = {B, C, D}` 找到所有尺寸为 `r = 2` 的组合，
+
 * 将 `A` 与上一步中所有较小的组合拼接在一起，
+
 * 从集合中提取第二个元素 `B`，
+
 * 为集合 `S = {C, D}` 找到所有尺寸为 `r = 2` 的组合，
+
 * 将 `B` 与上一步中所有较小的组合拼接在一起，
+
 * 依此类推……
 
 我们递归的基准情况是我们需要为一个集合生成尺寸为 `r = 1` 的组合。在这种情况下，集合中的每个元素都是我们寻找的组合，因此不需要进一步的递归调用。
@@ -5928,11 +5754,17 @@ P = {
 这个问题可以通过递归解决。这意味着我们从较小尺寸的组合生成更大尺寸的组合。例如，如果我们需要为集合 `S = {A, B, C, D}` 生成所有重复的尺寸为 `r = 3` 的组合，我们执行以下操作：
 
 * 第一个元素 `A`，
+
 * 为集合 `S = {B, C, D}` 找到所有尺寸为 `r = 2` 的组合，
+
 * 将 `A` 与上一步中所有较小的组合拼接在一起，
+
 * 第二个元素 `B`，
+
 * 为集合 `S = {C, D}` 找到所有尺寸为 `r = 2` 的组合，
+
 * 将 `B` 与上一步中所有较小的组合拼接在一起，
+
 * 依此类推……
 
 我们递归的基准情况是我们需要为一个集合生成尺寸为 `r = 1` 的组合。在这种情况下，集合中的每个元素都是我们寻找的组合，因此不需要进一步的递归调用。
@@ -6000,13 +5832,12 @@ P = {
 
 ### 参考文献
 
-
-
-
-
 - [Wikipedia 上的组合](https://en.wikipedia.org/wiki/Combination)
+
 - [“Math is Fun”上的组合](https://www.mathsisfun.com/combinatorics/combinations-permutations.html)
+
 - [Medium 上的组合](https://medium.com/@trekhleb/permutations-combinations-algorithms-cheat-sheet-68c14879aba5)
+
 - [组合示例与测试用例](https://github.com/trekhleb/javascript-algorithms/tree/master/src/algorithms/sets/combinations)
 
 ## 排序：快速排序 (Quicksort)
@@ -6028,7 +5859,9 @@ P = {
 该算法由三个递归（在子问题上重复）步骤组成：
 
 - **基准选择 (Pivot selection)**：从数组中选择一个元素，称为 `pivot`（通常取第一个、中间或最后一个）。
+
 - **分区 (Partitioning)**：将数组分成三个子数组：`left`（包含所有小于基准元素的元素）、`center`（包含所有等于基准元素的元素）和 `right`（包含所有大于基准元素的元素）。
+
 - **递归 (Recurse)**：为它们选择新的基准元素并进一步分区，对较小的数组 `left` 和 `right` 应用之前的两个步骤。我们不需要对 `center` 数组应用这些步骤，因为它已经是排序的并且包含了所有的相等元素。
 
 该算法的基准情况是排序仅有一个元素的数组。当数组中只有一个元素时，不需要进行排序，因此我们返回该值。
@@ -6098,10 +5931,6 @@ P = {
 
 由于我们希望 `quickSort()` 函数不仅对数字排序，还能对对象排序，因此我们将重用已经在“二分查找”章节中实现的 `Comparator` 工具类。请参考“二分查找”章节以获取 `Comparator` 类的实现细节。这是一个简单的类，通过 `equal()`、`lessThan()` 和 `greaterThan()` 方法为对象比较提供通用的接口。
 
-
-
-
-
 ```javascript
 /**
  * @param {*[]} originalArray - 需要排序的数组。
@@ -6162,7 +5991,9 @@ export default function quickSort(originalArray, comparatorCallback = null) {
 ### 复杂度
 
 | 最优 | 平均 | 最差 |
+
 | --- | --- | --- |
+
 | O(n * log(n)) | O(n * log(n)) | O(n<sup>) |
 
 时间复杂度为 `O(n²)` 的**最坏情况**可能会发生在：如果我们的数组已经按升序排列好，并且我们总是选择数组的第一个元素作为基准点。在这种情况下，经过分区步骤后，所有元素将位于 `right` 数组中，导致 `left` 数组为空。这种情况将在后续的所有递归分区中持续，我们最终会有 `(n - 1)` 个递归步骤，在这些步骤中会对子数组进行完整遍历，导致 `O(n²)` 的时间复杂度。
@@ -6174,6 +6005,7 @@ export default function quickSort(originalArray, comparatorCallback = null) {
 这里是你在面试过程中可能会遇到的一些相关问题：
 
 * [排序列表](https://leetcode.com/problems/sort-list/)
+
 * [数组中的第 K 大元素](https://leetcode.com/problems/kth-largest-element-in-an-array/)
 
 ### 测验
@@ -6199,7 +6031,9 @@ YouTube 上的快速排序 [`www.youtube.com/watch?v=SLauY6PpjW4`](https://www.y
 假设我们有一个节点树，并且想要：
 
 * 检查特定节点是否存在于树中
+
 * 检查两个节点是否相连
+
 * 访问树中的所有节点
 
 ### 算法
@@ -6219,14 +6053,12 @@ images/22-tree-depth-search.png)
 该算法可以通过递归使用**栈**来实现（关于此数据结构的深入解释，请参见栈章节）。使用栈进行深度优先搜索的思想如下：
 
 1. 选择起始节点并将其所有子节点放入栈中。
+
 2. 从栈中弹出节点以选择下一个访问节点，将其所有子节点放入栈中。
+
 3. 返回第 2 步（重复此过程直到栈为空）。
 
 ## 使用示例
-
-
-
-
 
 在开始实现深度优先搜索算法之前，让我们先假设我们已经实现了一个 `depthFirstSearch()` 函数。该函数允许我们遍历使用简单 `BinaryTreeNode` 类实现的二叉树节点。通过这种方式，我们将更好地理解想要传递给 `depthFirstSearch()` 函数的参数应该什么，以及我们期望从它得到的输出是什么。
 
@@ -6356,7 +6188,9 @@ images/22-tree-depth-search.png)
 这里是一些你在面试中可能会遇到的相关问题：
 
 *   [相同树](https://leetcode.com/problems/same-tree/)
+
 *   [二叉树的最大深度](https://leetcode.com/problems/maximum-depth-of-binary-tree/)
+
 *   [验证二叉搜索树](https://leetcode.com/problems/validate-binary-search-tree/)
 
 ### 测试
@@ -6371,10 +6205,6 @@ images/22-tree-depth-search.png)
 
 树的 DFS 示例和测试用例 [`github.com/trekhleb/javascript-algorithms/tree/master/src/algorithms/tree/depth-first-search`](https://github.com/trekhleb/javascript-algorithms/tree/master/src/algorithms/tree/depth-first-search)
 
-
-
-
-
 `广度优先搜索 (BFS)` 和 `深度优先搜索 (DFS)` 算法在某些方面非常相似，它们都是在遍历树，但实现方式不同。`BFS 这种方式是宽广`，它通过探索树中某一层上的所有节点，然后才向深一层并探索下一层的节点。`DFS 这种方式是深入`，它通过一直向下树的叶子节点来探索树的所有节点，然后回溯并尝试另一个分支，直到到达叶子节点。
 
 下面的图展示了使用广度优先搜索算法遍历二叉树的序列。
@@ -6384,7 +6214,9 @@ images/22-tree-depth-search.png)
 该算法可以使用 `queue` 实现（参见此书之前关于 `Queue` 数据结构的其中一个章节）。使用队列实现广度优先搜索算法的思路如下：
 
 1. 选取起始节点并将其放入节点队列。
+
 2. 从队列中弹出下一个节点，将其所有子节点添加到队列中以便稍后访问。
+
 3. 回到第 2 步（重复此过程直到队列为空）。
 
 ## 使用示例
@@ -6438,6 +6270,7 @@ images/22-tree-depth-search.png)
  42   [nodeA, nodeB, nodeC, nodeD, nodeE]
  43 */
 ```
+
 `23-tree-breadth-first-search/example.js`
 
 # 实现
@@ -6472,6 +6305,7 @@ images/22-tree-depth-search.png)
  25   }
  26 }
 ```
+
 `06-binary-search-tree/BinaryTreeNode.js`
 
 由于广度优先遍历使用队列来存储所有应该访问的节点，让我们先导入 `Queue` 类。
@@ -6480,6 +6314,7 @@ images/22-tree-depth-search.png)
 // 导入依赖项。
 import { Queue } from '../03-queue';
 ```
+
 `23-tree-breadth-first-search/breadthFirstSearch.js`
 
 由于我们要遍历二叉树，广度优先遍历使用队列来存储所有应该访问的节点，让我们先导入 `Queue` 类。
@@ -6487,9 +6322,13 @@ import { Queue } from '../03-queue';
 一旦我们实现了 `BinaryTreeNode` 类并导入了 `Queue`，我们就可以开始 `breadthFirstSearch()` 函数的实现，该函数将接收 `rootNode` 作为第一个参数，`visitNodeCallback` 作为第二个参数。在 `breadthFirstSearch()` 函数内部我们需要：
 
 1. 创建一个空队列实例 `nodeQueue`，
+
 2. 将 `rootNode` 放入队列以开始遍历，
+
 3. 从队列中弹出下一个节点并赋值给 `currentNode` 变量，
+
 4. 调用 `visitNodeCallback()` 回调以通知订阅者节点，
+
 5. 直到 `nodeQueue` 为空。
 
 以下是该函数的实现：
@@ -6527,6 +6366,7 @@ import { Queue } from '../03-queue';
 33   }
 34 }
 ```
+
 `23-tree-breadth-first-search/breadthFirstSearch.js`
 
 ### 复杂度
@@ -6539,15 +6379,12 @@ import { Queue } from '../03-queue';
 
 在最坏情况下，我们将有一个类似于链表的非平衡树（如果树的每个节点只有一个左孩子或右孩子）。由于我们使用队列来存储将被访问的节点列表，队列在最坏情况下可能包含树的所有节点。因此，在最坏情况下，我们的队列实例需要 `O(|N|)` 的辅助内存空间。
 
-
-
-
-
 Q2: 如何调整函数 `depthFirstSearch()` 以支持树节点拥有两个及以上的子节点？
 
 ### 参考文献
 
 - Wikipedia 上的度优先搜索 (BFS) [`en.wikipedia.org/wiki/Breadth-first_search`](https://en.wikipedia.org/wiki/Breadth-first_search)
+
 - 树的 BFS 示例和测试用例 [`github.com/trekhleb/javascript-algorithms/tree/master/src/algorithms/tree/breadth-first-search`](https://github.com/trekhleb/javascript-algorithms/tree/master/src/algorithms/tree/breadth-first-search)
 
 ## 图形。深度优先搜索。
@@ -6559,8 +6396,11 @@ Q2: 如何调整函数 `depthFirstSearch()` 以支持树节点拥有两个及以
 假设我们有一个图，并且想要：
 
 - 检查特定顶点是否存在于图中（即对顶点“John”执行 `search` 操作），
+
 - 检查两个节点是否连通（即：在顶点“Bill”和“Tom”之间 `find connection path`），
+
 - 通过访问图中的所有顶点来对顶点进行盘点（即将图转换为数组），
+
 - 等等（更多用例请参见下文的应用程序部分）。
 
 ![](img/24-graph-depth-first-search----graph.png)
@@ -6584,8 +6424,11 @@ Q2: 如何调整函数 `depthFirstSearch()` 以支持树节点拥有两个及以
 该算法可以使用 `stack` 递归实现（参见本书中关于 `Stack` 数据结构的之前的章节）。使用栈进行深度优先搜索的想法如下：
 
 1. 选择起始顶点并将其添加到栈中。
+
 2. 从栈中弹出下一个顶点并“访问”它（即：调用回调函数或对该顶点执行某些操作）。
+
 3. 将当前顶点的所有 `unvisited`（未访问）邻居推入栈中。
+
 4. 回到第 2 步（重复此过程直到栈为空）。
 
 也可以使用 **Hash map**（哈希表）数据结构来高效检查顶点是否已经过访问。顶点必须具有一个唯一的 `key` 值，用作哈希表的键。
@@ -6595,12 +6438,19 @@ Q2: 如何调整函数 `depthFirstSearch()` 以支持树节点拥有两个及以
 深度优先搜索算法是与其他图相关算法的构建模块，例如：
 
 - 寻找连通分量，
+
 - 拓排序，
+
 - 寻找图的桥，
+
 - 检测图中的环，
+
 - 路径查找，
+
 - 解决只有一个解的谜题（如迷宫），
+
 - 迷宫生成可能会使用随机深度优先搜索
+
 - 等等。
 
 ## 使用示例
@@ -6667,7 +6517,9 @@ Q2: 如何调整函数 `depthFirstSearch()` 以支持树节点拥有两个及以
 如上所述，`depthFirstSearch()` 函数接受三个参数：
 
 - `graph` - 要遍历的图（`Graph` 类的实例），
+
 - `startVertex` - 我们将作为起始点的顶点（`GraphVertex` 类的实例），
+
 - `enterVertexCallback` - 在每次访问顶点时调用的回调函数。
 
 **访问顶点记忆化**
@@ -6675,10 +6527,6 @@ Q2: 如何调整函数 `depthFirstSearch()` 以支持树节点拥有两个及以
 当我们为树实现深度优先搜索算法时，我们并不担心同一个节点在不同父节点处被访问两次的情况。这是因为树节点根据定义不能有两个或多个父节点，否则它就会变成图。因此，在树中我们只有一种进入节点的方式。但当我们处理图时，我们需要记住同一个图顶点可能会从许多邻居顶点被访问多次。这样同一个顶点可能会被多次添加到我们的遍历栈中。这使得整个遍历过程效率低下，甚至可能导致无限循环。这就是为什么我们在遍历图时需要标记所有访问过的顶点，以避免重复访问同一个顶点。我们将使用 `visitedVertices` 对象来实现。已访问图顶点的 `key` 值将是 `visitedVertices` 对象的键。这将帮助我们以 `O(1)` 时间高效地检查节点是否已经过访问。
 
 **递归闭包**
-
-
-
-
 
 在我们的 `depthFirstSearch()` 函数内部，让我们实现一个递归的 `depthFirstSearchRecursive()` 函数。该函数将包含主要的遍历逻辑。`depthFirstSearchRecursive()` 函数是一个闭包，这意味着它可以访问 `depthFirstSearch()` 函数的所有变量和参数。因此，我们只需要向它传递一个参数，该参数是当前正准备遍历的顶点（`currentVertex` 参数）。
 
@@ -6766,17 +6614,16 @@ Q2: 如何调整函数 `depthFirstSearch()` 以支持树节点拥有两个及以
 
 图的深度优先搜索算法的时间复杂度为 `O(|V| + |E|)`，其中 `|V|` 是图中顶点的总数，`|E|` 是图中边的总数。辅助空间复杂度为 `O(|V|)`。
 
-
-
-
-
 该算法可以使用 `queue` 实现（参见本书之前章节关于 `Queue` 数据结构的章节之一）。`Queue` 数据结构将为我们提供期望的 FIFO（先进先出）图顶点访问顺序，这样我们就会向宽度方向而非深度方向进行扩展。FIFO 顺序基本上意味着，一旦我们将当前顶点的所有邻居添加到 `Queue` 中，我们将首先在邻居之间进行移动，先访问第一个邻居，然后是第二个邻居，依此类推，最后移动到下一层邻居的子节点。这与我们实现深度优先遍历时使用的 `Stack` 的 LIFO（后进先出）方法相反，在深度优先遍历中，我们每次访问的是栈中添加的最后一个节点。通过这种方式，我们移动的不是从邻居到邻居，而是先从父节点到孩子。
 
 使用队列进行广度优先搜索的想法如下：
 
 1. 选择起始顶点并将其放入访问队列。
+
 2. 从队列中获取下一个顶点并“访问”它（即调用回调函数或对顶点执行某些操作）。
+
 3. 将当前顶点的所有 `unvisited` 邻居添加到队列中以便稍后访问。
+
 4. 回到步骤 2（重复此过程直到队列为空）。
 
 可以使用 `Hash map` 数据结构来高效地检查顶点是否已经被访问。顶点必须有一个唯一的 `key` 值，该值用作哈希映射的键。
@@ -6786,8 +6633,11 @@ Q2: 如何调整函数 `depthFirstSearch()` 以支持树节点拥有两个及以
 广度优先搜索算法用于寻找图中两个节点之间的最短路径。由于图可以表示现实世界的数据，如道路网络、社交网络、计算机网络，因此找到许多 BFS 算法的应用：
 
 * **GPS 导航** - 寻找从你的位置（图中的顶点）到特定城市（图中的另一个顶点）的最短路径（地图图中边的组合）。
+
 * **计算机网络** - 通过 P2P 客户端（即 Torrent 客户端）遍历点对点（P2P）网络，以找到所需文件的“最近”主机。
+
 * **社交网络** - 寻找与他人具有给定距离的人。
+
 * **网络爬虫** - 通过遵循从首页以及从内部页的链接来遍历网站内容。使用 BFS 可以设置网站爬取所需的特定深度。
 
 广度优先搜索算法还是其他图相关算法的构建模块，例如 Cheney 算法（复制垃圾收集）、Cuthill–McKee 网格编号、用于计算流网络最大流的 Ford–Fulkerson 方法等。
@@ -6843,9 +6693,6 @@ Q2: 如何调整函数 `depthFirstSearch()` 以支持树节点拥有两个及以
 38 // 输出将是：
 39 [bill, alice, john, kate, ann, tom, sam]
 ```
-
-
-
 
 ```javascript
 /**
@@ -6907,7 +6754,9 @@ export function breadthFirstSearch(graph, startVertex, enterVertexCallback) {
 在 `breadthFirstSearch()` 函数当前的实现中，我们使用了以下额外变量：
 
 * `vertexQueue` 队列 - 保存所有的 `|V|` 个图顶点，
+
 * `visitedVertices` 哈希表 - 保存所有的 `|V|` 个图顶点键，
+
 * `currentVertex` 变量 - 仅保留一个当前顶点实例。
 
 由于 `vertexQueue` 和 `visitedVertices` 变量最消耗空间，我们可以得出：breadthFirstSearch()` 函数的辅助空间复杂度为 `O(|V|)`，其中 `|V|` 是图中顶点的数量。
@@ -6917,12 +6766,15 @@ export function breadthFirstSearch(graph, startVertex, enterVertexCallback) {
 这里是你在面试过程中可能会遇到的一些相关问题：
 
 * [克隆图](https://leetcode.com/problems/clone-graph/)
+
 * [图是二分图吗？](https://leetcode.com/problems/is-graph-bipartite/)
+
 * [被围绕的区域](https://leetcode.com/problems/surrounded-regions/)
 
 ### 测验
 
 * *Q1: 图广度优先搜索算法的时间复杂度是多少？*
+
 * *Q2: 哪种数据结构最适合实现图广度优先搜索算法：栈（Stack）还是队列（Queue）？*
 
 ### 参考文献
@@ -6958,11 +6810,17 @@ Dijkstra 的原始变体寻找两个节点之间的最短路径，但更常见�
 该算法包含以下步骤：
 
 1. 为所有顶点分配一个**临时距离**值：将起始顶点设置为 `0`（因为我们已经到达了），并将所有其他顶点设置为无穷大 `Infinity`（此时它们看起来是不可及的）。
+
 2. 创建**已访问顶点集合**。我们将用它来避免遍历顶点时出现死循环。
+
 3. 创建一个**顶点访问队列**并将起始顶点放入队列。我们将使用以顶点距离作为优先因子的优先级队列（优先级在之前的章节中解释过）。到起始点的距离越短，优先级越高。
+
 4. **从队列中弹出最近的顶点**（距离源点最近的顶点）。优先级队列允许我们实现这一点。
+
 5. **遍历当前顶点的每个未访问邻居**。对于每个邻居，计算`到当前顶点的距离 + 当前顶点到邻居的距离`。如果此距离小于邻居的临时距离，则将其替换为新值。
+
 6. 当考虑完当前顶点的所有邻居后，**将当前顶点标记为已访问**。
+
 7. **返回步骤 4** 并重复，直到顶点访问队列为空。
 
 #### 算法中优先级队列的使用
@@ -6970,9 +6828,6 @@ Dijkstra 的原始变体寻找两个节点之间的最短路径，但更常见�
 在 Dijkstra 算法中，每当我们弹出要访问的顶点时（步骤 4），它必须是一个之前未访问过且*距离起始点距离最短*的节点。
 
 但我们如何实现这种基于距离的弹出操作呢？
-
-
-
 
 如果我们使用之前一个章节中实现的 `Queue` 类，那么 `Queue` 将遵循 FIFO（先入先出）顺序，但它不会考虑距离。例如，如果我们向队列中添加一个距离为 `20` 的顶点，然后向队列中添加一个距离为 `10` 的顶点，那么 `poll()` 操作将返回我们距离为 `20` 的顶点，因为它是先放入队列的——而不是距离较短的 `10` 顶点。因此，使用 `Queue` 是行不通的。
 
@@ -7077,6 +6932,7 @@ Dijkstra 的原始变体寻找两个节点之间的最短路径，但更常见�
 Dijkstra 算法可以应用于以下领域：
 
 *   在 **GIS（地理信息系统）** 中，寻找地图上地理位置之间的最短路径（交通和距离可以表示为图权重）。
+
 *   在 **计算机网络** 中（例如，点对点应用），寻找机器 A 和 B 之间的最短路径。
 
 ## 使用示例
@@ -7099,8 +6955,6 @@ Dijkstra 算法可以应用于以下领域：
   ...
 }
 ```
-
-
 
 这意味着从 `startVertex` 到键为 `Office` 的节点的最短距离为 `10`。从 `startVertex` 到键为 `A` 的节点的最短距离为 `4`。在这种情况下，到 `Home` 的最短距离为零，因为我们的 `startVertex` 键就是 `Home`，我们不需要做任何操作即可到达，因为我们已经在那里了。
 
@@ -7195,9 +7049,6 @@ Dijkstra 算法可以应用于以下领域：
 74 // 让我们找出最短距离的最短路径。
 75 // ...（剩余文本）
 ```
-
-
-
 
 4. 回到步骤 1 且顶点访问队列为空。队列是否为空通过使用 `PriorityQueue` 实例的 `isEmpty()` 方法进行检查。
 
@@ -7308,6 +7159,7 @@ Dijkstra 算法可以应用于以下领域：
 这里是一些相关问题：
 
 *   [网络延迟时间](https://leetcode.com/problems/network-delay-time/)
+
 *   [K 站内最廉价机票](https://leetcode.com/problems/cheapest-flights-within-stops/)
 
 ### 参考
@@ -7323,63 +7175,77 @@ Dijkstra 算法示例和测试用例 `https://github.com/trekhleb/javascript-alg
 **算法及其复杂度**
 
 *   Q1: 不是，时间复杂度显示函数时间与函数输入的速率（比例）。
+
 *   Q2: `O(log(n))` 更快。例如 `O(1000) = 1000`，但 `O(log(1000)) = 9`。
+
 *   Q3: 不，这不是真的。有时这是一种权衡，你通过消耗更多内存来让算法运行更快。
 
 **链表**
 
 *   Q1: 它是链表中下一个对象的引用。
+
 *   Q2: `deleteTail` 移除链表中的最后一个项，`deleteHead` 移除第一个。
 
 **队列**
 
 *   Q1: 队列是先进先出的。
+
 *   Q2: 队列的基本操作是 `peek()`、`enqueue()` 和 `dequeue()`。
+
 *   Q3: 时间复杂度是 `O(1)`。
 
 **栈**
 
 *   Q1: 栈是后进先出的。
+
 *   Q2: 栈的基本操作是 `peek()`、`push()` 和 `pop()`。
+
 *   Q3: 时间复杂度是 `O(1)`。
 
 **哈希表**
 
 *   Q1: 哈希表的主要优势是查找速度快。
+
 *   Q2: 时间复杂度为 `O(1)`（在良好的哈希函数和足够的桶数量的情况下）。
+
 *   Q3: 冲突是我们尝试将具有不同键的值保存到同一个桶时，可能是因为哈希函数不理想，也因为可用桶不足。
+
 *   Q4: 处理冲突的方法之一是链地址法，即我们使用链表在每个桶中存储信息。
 
 **二叉搜索树 (BST)**
 
-
-
-
-
 * **Q1:** 不是。根据定义，根节点是树中没有父节点的节点。
+
 * **Q2:** 是的，这是允许的。二叉树中的节点可能有零到两个子节点。
+
 * **Q3:** 平衡二叉搜索树将具有更快的 `O(log(n))` 查询。如果树是不平衡的，在最坏情况下（病态树），它的表现会像链表，查找时间为 `O(n)`。
 
 ## 二叉堆
 
 * **Q1:** “形状属性”和“堆属性”
+
 * **Q2:** 我们需要将堆的最后一个元素（树的最左下角元素）移动到头部，然后执行下堆化操作
+
 * **Q3:** `O(log(n))`
 
 ## 优先队列
 
 * **Q1:** 我们需要使用 `MaxHeap` 而不是 `MinHeap`。
+
 * **Q2:** `O(log(n))`
 
 ## 图
 
 * **Q1:** 是的。树是有有向连通无环图的一种特例。
+
 * **Q2:** 是的。在这种情况下，我们将得到一个仅包含两个顶点（vertices）的非连通图。
+
 * **Q3:** 表示图的两种常用方法：邻接表和邻接矩阵。
 
 ## 位操作
 
 * **Q1:** `111011`
+
 * **Q2:** `000101 & 111110 = 000100`
 
 ## 阶
@@ -7389,67 +7255,81 @@ Dijkstra 算法示例和测试用例 `https://github.com/trekhleb/javascript-alg
 ## 质性测试
 
 * **Q1:** 不是，`32/2` 的余数为 `0`
+
 * **Q2:** 是的，`31/2` 的余数为 `1`。`31` 的平方根是 `5.56776436283` – `31/3 = 10.3`, `31/4 = 7.75`, `31/5 = 6.2`
 
 ## 是否是 2 的幂
 
 * **Q1:** 是的，`32/2 = 16`，`16/2 = 8`，`8/2 = 4`，`4/2 = 2`，`2/2 = 1`
+
 * **Q2:** 不的，`01111 & 11110 = 01110`
 
 ## 搜索。线性搜索。
 
 * **Q1:** 最坏和平均情况下的时间复杂度为 `O(n)`。
+
 * **Q2:** 不。由于 `O(n)` 的时间复杂度，通常做法是将该算法应用于小型列表。
 
 ## 搜索。二分搜索。
 
 * **Q1:** 不是。从本质上说，二分搜索只适用于有序数组。否则我们无法每一步都放弃数组的一半。
+
 * **Q2:** 时间复杂度为 `O(log(n))`。这是因为我们在每次迭代中都会放弃数组的一半。
 
 ## 集合。笛卡尔积。
 
 * **Q1:** 它有 4 个元素：`['ac', 'ad', 'bc', 'bd']`。公式为 `|A| * |B|`。
+
 * **Q2:** 是的，可能的。如果有四个集合 `A`、`B`、`C` 和 `D`，那么笛卡尔积集的每个元素将由四个元素 `(a, b, c, d)` 组成。
+
 * **Q3:** 时间复杂度为 `O(|A|*|B|)`。
 
 ## 集合。幂集。
 
 * **Q1:** 是的，空集是幂集的一部分。
+
 * **Q2:** 它有 2<sup>4</sup>=16 个元素，其中 4 是原始集合 `{a, b, c, d}` 的大小。
 
 ## 集合。排列。
 
 * **Q1:** 是的，顺序很重要。这是排列与组合的区别性特征。
+
 * **Q2:** 我们将有 `4! / (4 - 2)! = 4! / 2! = 24 / 2 = 12` 种排列。
 
 ## 集合。组合。
 
 * **Q1:** 不是，顺序不重要。这是组合与排列的区别。
+
 * **Q2:** 我们将有 `4! / (2! * (4 - 2)!) = 4! / (2! * 2!) = 24 / 4 = 6` 种组合。
 
 ## 排序：快速排序
 
 * **Q1:** 快速排序的平均时间复杂度为 `O(n * log(n))`。
+
 * **Q2:** 我们只需要将大于基准元素的元素添加到左侧数组（而不是右侧），将小于基准元素的元素添加到右侧数组（而不是左侧）。
 
 ## 树。深度优先搜索。
 
 * **Q1:** DFS 的时间复杂度为 `O(|N|)`，其中 `|N|` 是树中的节点总数。*
+
 * **Q2:** 是的，我们可以通过使用之前实现的 `Stack` 类来避免递归。在这种情况下，每当我们访问一个节点时，我们需要将其所有的子节点（而不只是两个）都放入栈中。然后从栈顶获取下一个节点进行遍历。
 
 ## 树。广度优先搜索。
 
 * **Q1:** BFS 的时间复杂度为 `O(|N|)`，其中 `|N|` 是树中的节点总数。
+
 * **Q2:** 我们不需要在 `while` 循环中仅添加“左”和“右”子节点，我们需要获取节点的所有子节点并将它们添加到队列。
 
 ## 图。深度优先搜索。
 
 * **Q1:** 图的 DFS 时间复杂度为 `O(|V| + |E|)`（注：原文此处为|V|，通常指顶点），其中 `|V|` 是顶点总数，`|E|` 是边总数。
+
 * **Q2:** `Stack` 适合实现 DFS。
 
 ## 图。广度优先搜索。
 
 * **Q1:** 图的 BFS 时间复杂度为 `O(|V| + |E|)`，其中 `|V|` 是顶点总数，`|E|` 是边总数。
+
 * **Q2:** `Queue` 适合实现 BFS。
 
 ##附录 B：Big O 时间
@@ -7459,13 +7339,21 @@ Dijkstra 算法示例和测试用例 `https://github.com/trekhleb/javascript-alg
 下表包含了一些常见的 Big O 表示法及其针对不同规模的性能。这将告诉你不同算法的耗时间和内存消耗。
 
 | Big O 表示法 | 10 个元素的计算 | 100 个元素的计算 | 1000 个元素的计算 |
+
 | :--- | :--- | :--- | :--- |
+
 | `O(1)` | 1 | 1 | 1 |
+
 | `O(log(n))` | 3 | 6 | 9 |
+
 | `O(n)` | 10 | 100 | 1000 |
+
 | `O(n log(n))` | 30 | 600 | 9000 |
+
 | `O(n²)` | 100 | 10000 | 1000000 |
+
 | `O(2^n)` | 1024 | 1.26e+29 | 1.07e+301 |
+
 | `O(n!)` | 3628800 | 9.3e+157 | 4.02e+257 |
 
 附录 C：数据结构
@@ -7473,23 +7361,37 @@ Dijkstra 算法示例和测试用例 `https://github.com/trekhleb/javascript-alg
 ### 常用数据结构复杂度
 
 | 数据结构 | 访问 | 搜索 | 插入 | 删除 | 备注 |
+
 | :--- | :--- | :--- | :--- | :--- | :--- |
+
 | `Array` | 1 | n | n | n | |
+
 | `Stack` | n | n | 1 | 1 | |
+
 | `Queue` | n | n | 1 | 1 | |
+
 | `Linked List` | n | n | 1 | 1 | |
+
 | `Hash Table` | - | n | n | n | Perfect 哈希函数为 `O(1)` |
+
 | `Binary Search Tree` | n | n | n | n | 平衡树为 `O(log(n))` |
+
 | `B-Tree` | log(n) | log(n) | log(n) | log(n) | |
+
 | `Red-Black Tree` | log(n) | log(n) | log(n) | log(n) | |
+
 | `AVL Tree` | log(n) | log(n) | log(n) | log(n) | |
+
 | `Bloom Filter` | - | 1 | 1 | - | 搜索时存在误报 |
 
 ### 图操作复杂度
 
 | 实现 | 添加顶点 | 删除顶点 | 添加边 | 删除边 |
+
 | :--- | :--- | :--- | :--- | :--- |
+
 | 邻接表 | `O(1)` | `O(E+V)` | `O(1)` | `O(E)` |
+
 | 邻接矩阵 | `O(V²)` | `O(V²)` | `O(1)` | `O(1)` |
 
 其中：`V` - 图中的顶点数，`E` - 图中的边数
@@ -7497,21 +7399,33 @@ Dijkstra 算法示例和测试用例 `https://github.com/trekhleb/javascript-alg
 ### 堆操作复杂度
 
 | Peek | Poll | Add | Remove |
+
 | :--- | :--- | :--- | :--- |
+
 | `O(1)` | `O(log(n))` | `O(log(n))` | `O(log(n))` |
 
 附录 D：数组排序算法复杂度
 
 |  way | 最好 | 平均 | 最坏 | 内存 | 稳定性 | 备注 |
+
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+
 | `Bubble sort` | n | n² | n² | 1 | 是 | |
+
 | `Insertion sort` | n | n² | n² | 1 | 是 | |
+
 | `Selection sort` | n² | n² | n² | 1 | 否 | |
+
 | `Heap sort` | n log(n) | n log(n) | n log(n) | 1 | 否 | |
+
 | `Merge sort` | n log(n) | n log(n) | n log(n) | n | 是 | |
+
 | `Quick sort` | n log(n) | n log(n) | n² | log(n) | 否 | 快速排序通常在原地进行，使用 `O(log(n))` 栈空间 |
+
 | `Shell sort` | n log(n) | 取决于间隔序列 | n(log n)² | 1 | 否 | |
+
 | `Counting sort` | n + r | n + r | n + r | n + r | 是 | r - 数组中的最大数 |
+
 | `Radix sort` | n * k | n * k | n * k | n + k | 是 | k - 最长键的长度 |
 
  更新日志

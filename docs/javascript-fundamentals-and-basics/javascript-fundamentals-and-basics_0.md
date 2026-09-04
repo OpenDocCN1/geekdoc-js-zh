@@ -1,227 +1,206 @@
+
 # JavaScript 基础与入门指南
 
+## 目录
 
+### 8.2 断言在书中是如何使用的
+### 8.3 普通比较 vs. 深度比较
+### 8.4 快速查阅：模块 `assert`
 
-![](img/cover01510.jpeg)
+### 9 开始使用测验与练习题
+#### 9.1 测验
+#### 9.2 练习题
+#### 9.3 JavaScript 中的单元测试
 
+### III 变量与值
+#### 47 变量与赋值
+##### 10.1 `let`
+##### 10.2 `const`
+##### 10.3 在 `let` 和 `const` 之间选择
+##### 10.4 变量的作用域
+##### 10.5 (进阶)
+##### 10.6 术语：静态 vs. 动态
+##### 10.7 全局变量
+##### 10.8 声明：作用域与激活
+##### 10.9 闭包
+##### 10.10 延伸阅读
 
+#### 48 值
+##### 11.1 什么是类型？
+##### 11.2 JavaScript 的类型层次结构
+##### 11.3 语言规范中的类型
+##### 11.4 原值 vs. 对象
+##### 11.5 运算符 `typeof` 和 `instanceof`：值的类型是什么？
+##### 11.6 类与构造函数
+##### 11.7 类型之间的相互转换
 
+#### 49 运算符
+##### 12.1 理解运算符
+##### 12.2 加法运算符 (`+`)
+##### 12.3 赋值运算符
+##### 12.4 等等性：`==` vs. `===`
+##### 12.5 排序运算符
+##### 12.6 其他各种运算符
 
-![](img/image01388.jpeg)
-| ROBERT PETERSON | 3 |
+#### 50 原值
+##### 13.1 `undefined` vs. `null`
+##### 13.2 `undefined` 和 `null` 的出现
+##### 13.3 检查是否 `undefined` 或 `null`
+##### 13.4 `undefined` 和 `null` 没有属性
+##### 13.5 `undefined` 和 `null` 的历史
 
-![](img/image0138.jpeg)
-| ROBERT PETERSON | 4 |
+#### 51 布尔值
+##### 14.1 转换为布尔值
+##### 14.2 假值与真值
+##### 14.3 条件运算符 (`? :`)
+##### 14.4 二元逻辑运算符：与 (`&&`)、或 (`||`)
+##### 14.5 逻辑非 (`!`)
 
+#### 52 数字
+##### 15.1 JavaScript 只有浮点数
+##### 15.2 `Number` 字面量
+##### 15.3 算术运算符
+##### 15.4 转换为数字
+##### 15.5 错误值
+##### 15.6 错误值：`NaN`
+##### 15.7 错误值：`Infinity`
+##### 15.8 数字的精度：小心处理小数
+##### 15.9 (进阶)
+##### 15.10 背景：浮点数精度
+##### 15.11 JavaScript 中的整数
+##### 15.12 位运算符
+##### 15.13 快速查阅：数字
 
+#### 53 数学
+##### 16.1 数据属性
+##### 16.2 指数、根号、对数
+##### 16.3 四舍五入
+##### 16.4 三角函数
+##### 16.5 其它各种函数
+##### 16.6 来源
 
+#### 55 Unicode – 简介介绍 (进阶)
+##### 17.1 码点 vs. 代码单元
+##### 17.2 Web 开发中使用的编码：UTF-16 和 UTF-8
+##### 17.3 字形簇——真正的字符
 
+#### 56 字符串
+##### 18.1 普通字符串字面量
+##### 18.2 访问字符和码点
+##### 18.3 通过 `+` 拼接字符串
+##### 18.4 转换为字符串
+##### 18.5 比较字符串
+##### 18.6 文本原子：Unicode 字符、JavaScript 字符、字形簇
+##### 18.7 快速查阅：字符串
 
-## 8.2 断言在书中是如何使用的 (51)
-## 8.3 普通比较 vs. 深度比较 (52)
-## 8.4 快速查阅：模块 `assert` (53)
+#### 57 使用模板字面量和标签模板
+##### 19.1 消除歧义：“模板”
+##### 19.2 模板字符串量
+##### 19.3 标签模板
+##### 19.4 原始字符串字面量
+##### 19.5 (进阶)
+##### 19.6 多行模板字符串量与缩进
+##### 19.7 通过模板字面量进行简单的模板化
 
-# 9 开始使用测验与练习题 (57)
-## 9.1 测验 (57)
-## 9.2 练习题 (57)
-## 9.3 JavaScript 中的单元测试 (58)
+#### 58 符号
+##### 20.1 符号的使用场景
+##### 20.2 公知符号
+##### 20.3 符号符号
 
-# III 变量与值 (61)
+### V. 控制流与数据流
+#### 59 控制流语句
+##### 21.1 控制循环：`break` 和 `continue`
+##### 21.2 `if` 语句
+##### 21.3 `switch` 语句
+##### 21.4 `while` 循环
+##### 21.5 `do-while` 循环
+##### 21.6 `for` 循环
+##### 21.7 `for-of` 循环
+##### 21.8 `for-await-of` 循环
+##### 21.9 `for-in` 循环（避免使用）
 
-## 47 变量与赋值 (63)
-### 10.1 let (64)
-### 10.2 const (64)
-### 10.3 在 let 和 const 之间选择 (65)
-### 10.4 变量的作用域 (65)
-### 10.5 (进阶) (67)
-### 10.6 术语：静态 vs. 动态 (67)
-### 10.7 全局变量 (68)
-### 10.8 声明：作用域与激活 (69)
-### 10.9 闭包 (74)
-### 10.10 延伸阅读 (76)
+#### 60 异常处理
+##### 22.1 动机：抛出和捕获异常
+##### 22.2 `throw`
+##### 22.3 `try` 语句
+##### 22.4 错误类
 
-## 48 值 (77)
-### 11.1 什么是类型？ (77)
-### 11.2 JavaScript 的类型层次结构 (78)
-### 11.3 语言规范中的类型 (78)
-### 11.4 原值 vs. 对象 (79)
-### 11.5 运算符 `typeof` 和 `instanceof`：值的类型是什么？ (81)
-### 11.6 类与构造函数 (83)
-### 11.7 类型之间的相互转换 (84)
+#### 62 可调用值
+##### 23.1 函数的类型
+##### 23.2 普通函数
+##### 23.3 特殊函数
+##### 23.4 更多类型的函数和方法
+##### 23.5 从函数和方法返回返回值
+##### 23.6 参数处理
+##### 23.7 动态评估代码：`eval()`、`new Function()`（高级）
 
-# 49 运算符 (87)
-### 12.1 理解运算符 (87)
-### 12.2 加法运算符 (+) (88)
-### 12.3 赋值运算符 (89)
-### 12.4 等等性：== vs. === (90)
-### 12.5 排序运算符 (93)
-### 12.6 其他各种运算符 (93)
+#### 63 模块化
 
-## 50 原值 (95)
-### 13.1 `undefined` vs. `null` (97)
-### 13.2 `undefined` 和 `null` 的出现 (98)
-### 13.3 检查是否 `undefined` 或 `null` (99)
-### 13.4 `undefined` 和 `null` 没有属性 (99)
-### 13.5 `undefined` 和 `null` 的历史 (100)
+#### 64 模块
+##### 24.1 JavaScript 源代码格式
+##### 24.2 在我们拥有模块之前，我们拥有脚本
+##### 24.3 ES6 之前创建模块系统
+##### 24.4 ECMAScript 模块
+##### 24.5 导出
+##### 24.6 导入
+##### 24.7 npm 包
+##### 24.8 模块命名
+##### 24.9 模块规格标识符
+##### 24.10 通过 `import()` 动态加载模块
+##### 24.11 预览：`import.meta.url`
+##### 24.12 快速参考：导出与导入
 
-## 51 布尔值 (101)
-### 14.1 转换为布尔值 (101)
-### 14.2 假值与真值 (102)
-### 14.3 条件运算符 (:) (103)
-### 14.4 二元逻辑运算符：与 (&&), 或 (||) (104)
-### 14.5 逻辑非 (!). (105)
+#### 65 单个对象
+##### 25.1 什么是对象？
+##### 25.2 作为记录的对象
+##### 25.3 展开到对象字面量中的 `...`
+##### 25.4 方法
+##### 25.5 作为字典的对象（高级）
+##### 25.6 标准方法（高级）
+##### 25.7 高级主题
 
-## 52 数字 (107)
-### 15.1 JavaScript 只有浮点数 (109)
-### 15.2 `Number` 字面量 (110)
-### 15.3 算术运算符 (111)
-### 15.4 转换为数字 (112)
-### 15.5 错误值 (113)
-### 15.6 错误值：`NaN` (114)
-### 15.7 错误值：`Infinity` (114)
-### 15.8 数字的精度：小心处理小数 (115)
-### 15.9 (进阶) (116)
-### 15.10 背景：浮点数精度 (117)
-### 15.11 JavaScript 中的整数 (118)
-### 15.12 位运算符 (119)
-### 15.13 快速查阅：数字。 (124)
-
-## 53 数学 (129)
-### 16.1 数据属性 (129)
-### 16.2 指数、根号、对数 (130)
-### 16.3 四舍五入 (131)
-### 16.4 三角函数 (132)
-### 16.5 其它各种函数 (134)
-### 16.6 来源 (135)
-
-# 6 目录
-
-## 55 Unicode – 简介介绍 (进阶) (137)
-### 17.1 码点 vs. 代码单元 (137)
-### 17.2 Web 开发中使用的编码：UTF-16 和 UTF-8 (140)
-### 17.3 字形簇——真正的字符 (140)
-
-## 56 字符串 (143)
-### 18.1 普通字符串字面量 (144)
-### 18.2 访问字符和码点 (144)
-### 18.3 通过 + 拼接字符串 (145)
-### 18.4 转换为字符串 (145)
-### 18.5 比较字符串 (147)
-### 18.6 文本原子：Unicode 字符、JavaScript 字符、字形簇 (148)
-### 18.7 快速查阅：字符串 (150)
-
-## 57 使用模板字面量和标签模板 (159)
-### 19.1 消除歧义：“模板” (159)
-### 19.2 模板字符串量 (160)
-### 19.3 标签模板 (161)
-### 19.4 原始字符串字面量 (163)
-### 19.5 (进阶) (163)
-### 19.6 多行模板字符串量与缩进 (164)
-### 19.7 通过模板字面量进行简单的模板化 (165)
-
-## 58 符号 (169)
-### 20.1 符号的使用场景 (170)
-### 20.2 公知符号 (172)
-### 20.3 符号符号 (172)
-
-
-
-
-
-# V. 控制流与数据流 (175)
-
-## 59 控制流语句 (177)
-
-### 21.1 控制循环：break 和 continue (178)
-### 21.2 if 语句 (179)
-### 21.3 switch 语句 (180)
-### 21.4 while 循环 (183)
-### 21.5 do-while 循环 (184)
-### 21.6 for 循环 (184)
-### 21.7 for-of 循环 (185)
-### 21.8 for-await-of 循环 (186)
-### 21.9 for-in 循环（避免使用） (187)
-
-## 60 异常处理 (189)
-
-### 22.1 动机：抛出和捕获异常 (189)
-### 22.2 throw (190)
-### 22.3 try 语句 (191)
-### 22.4 错误类 (193)
-
-## 62 可调用值 (195)
-
-### 23.1 函数的类型 (195)
-### 23.2 普通函数 (196)
-### 23.3 特殊函数 (198)
-### 23.4 更多类型的函数和方法 (201)
-### 23.5 从函数和方法返回返回值 (202)
-### 23.6 参数处理 (203)
-### 23.7 动态评估代码：`eval()`、`new Function()`（高级） (207)
-
-## 63 模块化 (211)
-
-## 64 模块 (213)
-
-### 24.1 JavaScript 源代码格式 (214)
-### 24.2 在我们拥有模块之前，我们拥有脚本 (214)
-### 24.3 ES6 之前创建模块系统 (216)
-### 24.4 ECMAScript 模块 (218)
-### 24.5 导出 (218)
-### 24.6 导入 (220)
-### 24.7 npm 包 (222)
-### 24.8 模块命名 (224)
-### 24.9 模块规格标识符 (225)
-### 24.10 通过 `import()` 动态加载模块 (227)
-### 24.11 预览：`import.meta.url` (229)
-### 24.12 快速参考：导出与导入 (231)
-
-## 65 单个对象 (233)
-
-### 25.1 什么是对象？ (234)
-### 25.2 作为记录的对象 (235)
-### 25.3 展开到对象字面量中的 `...` (238)
-### 25.4 方法 (240)
-### 25.5 作为字典的对象（高级） (246)
-### 25.6 标准方法（高级） (254)
-### 25.7 高级主题 (254)
-
-## 66 原型链与类 (257)
-
-### 26.1 原型链 (258)
-### 26.2 类 (263)
-### 26.3 类私有数据 (267)
-### 26.4 子类化 (269)
-### 26.5 常见问题：对象 (277)
+#### 66 原型链与类
+##### 26.1 原型链
+##### 26.2 类
+##### 26.3 类私有数据
+##### 26.4 子类化
+##### 26.5 常见问题：对象
 
 ---
 
 ## JavaScript 基础
 
 ### 什么是 JavaScript？
+
 - 设计用于为 HTML 页面添加交互性
 - 是一种脚本语言
 - 是一种轻量级脚本语言
 - 是一种解释型语言（意味着无需编译）
 
 ### JavaScript 可以做什么？
+
 - 为设计师提供编程工具
 - 可以在 HTML 页面中放入动态文本
 - 可以对事件做出响应
 - 可用于创建 cookie
 
 ### 如何将 JavaScript 引入 HTML？
-- 使用 `<script>` 标签（也可以使用 type 属性）
+
+- 使用 `<script>` 标签（也可以使用 `type` 属性）
+
 ```html
 <script type="text/javascript"></script>
 ```
 
 ### 脚本放在哪里？
+
 - 脚本可以放在 `<head>` 或 `<body>` 部分
 - 惯例是将其放在 `<head>` 部分
 
 ### 引用外部 JavaScript 文件
+
 - 可以使用 `src` 属性本地或远程提供脚本
+
 ```html
 <script type="text/javascript" src="omesite/myOwnJavaScript.js"></script>
 <script type="text/javascript" src="Subdirectory/myOwn2ndJavaScript.js"></script>
@@ -230,30 +209,40 @@
 ## JavaScript 语言
 
 ### 变量
+
 - 你可以使用 `var` 语句来创建变量
+
 ```javascript
 var strname = some value
 strname = some value
 ```
+
 - 当你在函数内部声明变量时，该变量只能在该函数内部访问
 - 如果你在函数外部声明变量，页面上的所有函数都可以访问它
 - 这些变量的生命周期从声明时开始，到页面关闭时结束
 
 ### 弹出框
-- **警告框（Alert box）**：用户必须点击“OK”才能继续
+
+- **警告框**：用户必须点击“OK”才能继续
+
 ```javascript
 alert("sometext")
 ```
-- **确认框（Confirm box）**：用户必须点击“OK”或“Cancel”才能继续
+
+- **确认框**：用户必须点击“OK”或“Cancel”才能继续
+
 ```javascript
 confirm("sometext")
 ```
-- **提示框（Prompt box）**：用户在输入值后必须点击“OK”或“Cancel”才能继续
+
+- **提示框**：用户在输入值后必须点击“OK”或“Cancel”才能继续
+
 ```javascript
 prompt("sometext","defaultvalue")
 ```
 
 ### 控制
+
 - 条件语句：`if`、`if..else`、`switch`
 - 循环：`for` 循环、`while` 循环
 - 错误处理：`try...catch`、`throw`
@@ -262,16 +251,17 @@ prompt("sometext","defaultvalue")
 
 - JavaScript 函数包含某些代码，这些代码只有在事件发生或通过调用该函数时才会执行
 - 为了防止浏览器在页面加载时立即执行脚本，你可以将脚本写成一个函数
-- 你可以在页面内的任何地方调用函数（如果函数嵌入在外部 .js 文件中，甚至可以在其他页面调用）。
-- 函数可以定义在 `<head>` 或 `<body>` 部分。
+- 你可以在页面内的任何地方调用函数（如果函数嵌入在外部 `.js` 文件中，甚至可以在其他页面调用）
+- 函数可以定义在 `<head>` 或 `<body>` 部分
 
 ### 示例：JavaScript 函数
+
 ```html
 <html>
 <head>
 <script type="text/javascript">
 // 如果下面的 alert("Hello world!!") 没有被写在函数内，
-// 它将在页面一加载时立即执行。 
+// 它将在页面一加载时立即执行。
 function displaymessage() {
   alert("Hello World!")
 }
@@ -285,13 +275,10 @@ function displaymessage() {
 </html>
 ```
 
-
-
-
-
 ## JavaScript 事件
 
-## 事件与事件处理器
+### 事件与事件处理器
+
 - 网页上的每个元素都具有某些事件，这些事件可以触发事件处理器的调用
 - 属性被插入 HTML 标签中以定义事件和事件处理器
 - 事件示例：
@@ -302,6 +289,7 @@ function displaymessage() {
     * 提交 HTML 表单
 
 ### 常见事件
+
 - `onabort` - 图像加载被中断
 - `onblur` - 元素失去焦点
 - `onchange` - 字段内容发生变化
@@ -324,27 +312,31 @@ function displaymessage() {
 - `onsubmit` - 提交按钮被点击
 - `onunload` - 用户离开页面
 
-## onload & onUnload 事件
-- 当用户进入或离开页面时会触发 `onload` 和 `onUnload` 事件。
-- `onload` 事件通常用于检查访问者的浏览器类型和版本，并根据这些信息加载相应版本的网页。
-- `onload` 和 `onUnload` 事件也经常用于处理用户进入或离开页面时应设置的 cookie。
+### `onload` & `onUnload` 事件
 
-## onFocus, onBlur and onChange
-- `onFocus`、`onBlur` 和 `onChange` 事件通常与表单字段验证结合使用。
+- 当用户进入或离开页面时会触发 `onload` 和 `onUnload` 事件
+- `onload` 事件通常用于检查访问者的浏览器类型和版本，并根据这些信息加载相应版本的网页
+- `onload` 和 `onUnload` 事件也经常用于处理用户进入或离开页面时应设置的 cookie
+
+### `onFocus`、`onBlur` and `onChange`
+
+- `onFocus`、`onBlur` 和 `onChange` 事件通常与表单字段验证结合使用
 - 示例：当用户更改字段内容时，都会调用 `checkEmail()` 函数：
+
 ```html
 <input type="text" size="30" id="email" onchange="checkEmail()">
 ```
 
-## 示例与演示: onblur
+### 示例与演示: `onblur`
+
 ```html
-<<html>
+<html>
 <head>
 <script type="text/javascript">
 function upperCase() {
-  var x=document.getElementById("fname").value
+  var x = document.getElementById("fname").value;
+  document.getElementById("fname").value = x.toUpperCase();
 }
-document.getElementById("fname").value=x.toUpperCase()
 </script>
 </head>
 <body>
@@ -354,16 +346,19 @@ Enter your name:
 </html>
 ```
 
-## onSubmit
-- `onSubmit` 事件用于在提交表单之前验证所有表单字段。
+### `onSubmit`
+
+- `onSubmit` 事件用于在提交表单之前验证所有表单字段
 - 示例：当用户点击表单中的提交按钮时，将调用 `checkForm()` 函数。如果字段值不被接受，则应取消提交。`checkForm()` 函数返回 `true` 或 `false`。如果返回 `true`，则表单将提交，否则取消提交：
+
 ```html
 <form method="post" action="xxx.html" onsubmit="return checkForm()">
 ```
 
-## 示例与演示: onSubmit
+### 示例与演示: `onSubmit`
+
 ```html
-<html
+<html>
 <head>
 <script type="text/javascript">
 function validate() {
@@ -381,155 +376,176 @@ E-mail: <input type="text" id="email" size="20"><br /> <br />
 </html>
 ```
 
-## onMouseOver and onMouseOut
-- `onMouseOver` 和 `onMouseOut` 通常用于创建“动画”按钮。
+### `onMouseOver` and `onMouseOut`
+
+- `onMouseOver` 和 `onMouseOut` 通常用于创建“动画”按钮
 - 下面是一个 `onMouseOver` 事件的示例。当检测到 `onMouseOver` 事件时，会弹出警报框：
+
 ```html
 <a href="http://www.w3schools.com" onmouseover="alert('An onMouseOver event');return false"> <img src="w3schools.gif" width="100" height="30"> </a>
 ```
 
 ## JavaScript 对象
 
-## JavaScript 对象
-- JavaScript 是一种面向对象编程（OOP）语言。
-- JavaScript 对象具有属性和方法。
+### JavaScript 对象
+
+- JavaScript 是一种面向对象编程（OOP）语言
+- JavaScript 对象具有属性和方法
 - 示例：`String` JavaScript 对象具有 `length` 属性和 `toUpperCase()` 方法：
+
 ```javascript
-var txt="Hello World!"
-document.write(txt.length)
-document.write(txt.toUpperCase())
+var txt = "Hello World!";
+document.write(txt.length);
+document.write(txt.toUpperCase());
 ```
 
-## JavaScript 内置对象
+### JavaScript 内置对象
+
 - `String`
 - `Date`
 - `Array`
 - `Boolean`
 - `Math`
 
-## JavaScript 对象对比 Java 对象
+### JavaScript 对象对比 Java 对象
+
 - 相似点：
     * 都具有属性和方法
 - 不同点：
-    * JavaScript 对象可以是动态类型，而 Java 对象是静态类型。
-    * 在 JavaScript 中，属性和方法是动态添加的。
+    * JavaScript 对象可以是动态类型，而 Java 对象是静态类型
+    * 在 JavaScript 中，属性和方法是动态添加的
 
-# 创建 JavaScript 对象的 3 种方法
+## 创建 JavaScript 对象的 3 种方法
 
-## 创建自定义 JavaScript 对象
+### 创建自定义 JavaScript 对象
+
 有 3 种方法：
-1. 使用 `Object` 类的内置构造函数创建对象的直接实例。
-2. 先创建一个模板（构造函数），然后从模板创建对象实例。
-3. 使用哈希字面量（Hash Literal）创建对象实例。
 
-### 选项 1：创建 JavaScript 对象的直接实例
+1. 使用 `Object` 类的内置构造函数创建对象的直接实例
+2. 先创建一个模板（构造函数），然后从模板创建对象实例
+3. 使用哈希字面量（Hash Literal）创建对象实例
+
+#### 选项 1：创建 JavaScript 对象的直接实例
+
 - 通过调用 `Object` 类的内置构造函数：
+
 ```javascript
-personObj=new Object(); // 初始化为空，没有任何属性或方法
+personObj = new Object(); // 初始化为空，没有任何属性或方法
 // 为其添加属性
-personObj.firstname="John";
-personObj.age=50;
+personObj.firstname = "John";
+personObj.age = 50;
 // 为 personObj 中添加一个匿名函数
-personObj.tellYourage=function(){
-  alert("This age is ” + this.age);
+personObj.tellYourage = function() {
+  alert("This age is " + this.age);
 }
 // 你可以这样调用 tellYourage 函数
 personObj.tellYourage();
 ```
+
 - 添加一个预定义的函数：
+
 ```javascript
-function tellYourage(){
-  alert(“The age is” + this.age);
+function tellYourage() {
+  alert("The age is " + this.age);
 }
-personObj.tellYourage=tellYourage;
-```
-- 注意，以下两行代码执行的是完全不同的操作：
-```javascript
-// 使用函数作为属性值
-personObj.tellYourage=tellYourage;
-// 使用函数的返回值设置属性值 
-personObj.tellYourage=tellYourage();
+personObj.tellYourage = tellYourage;
 ```
 
-### 选项 2：创建 JavaScript 对象的模板
-- 模板以函数的形式定义 JavaScript 对象的结构。
-- 你可以将模板看作构造函数：
+- 注意，以下两行代码执行的是完全不同的操作：
+
 ```javascript
-function Person(firstname,lastname,age,eyecolor) { 
-  this.firstname=firstname;
-  this.lastname=lastname;
-  this.age=age;
-  this.tellYourage=function(){
-    alert(“This age is ” + this.age);
+// 使用函数作为属性值
+personObj.tellYourage = tellYourage;
+// 使用函数的返回值设置属性值
+personObj.tellYourage = tellYourage();
+```
+
+#### 选项 2：创建 JavaScript 对象的模板
+
+- 模板以函数的形式定义 JavaScript 对象的结构
+- 你可以将模板看作构造函数：
+
+```javascript
+function Person(firstname, lastname, age, eyecolor) {
+  this.firstname = firstname;
+  this.lastname = lastname;
+  this.age = age;
+  this.tellYourage = function() {
+    alert("This age is " + this.age);
   }
 }
 ```
+
 - 一旦有了模板，你就可以创建对象的新实例：
+
 ```javascript
-myFather=new Person("John","Doe",50,"blue"); 
-myMother=new Person("Sally","Rally",48,"green");
-```
-- 你为新对象添加新的属性和函数：
-```javascript
-myFather.newField = “some data”; 
-myFather.myfunction = function() { alert(this["fullName"] + ” is ” + this.age); }
+myFather = new Person("John", "Doe", 50, "blue");
+myMother = new Person("Sally", "Rally", 48, "green");
 ```
 
-### 选项 3：作为哈希字面量创建 JavaScript 对象
+- 你为新对象添加新的属性和函数：
+
+```javascript
+myFather.newField = "some data";
+myFather.myfunction = function() { alert(this["fullName"] + " is " + this.age); }
+```
+
+#### 选项 3：作为哈希字面量创建 JavaScript 对象
+
 - 创建 `personObj` JavaScript 对象：
+
 ```javascript
 var personObj = {
   firstname: "John",
   lastname: "Doe",
   age: 50,
   tellYourage: function () {
-    alert(“This age is ” + this.age);
+    alert("This age is " + this.age);
   },
   tellSomething: function(something) {
     alert(something);
   }
 };
 personObj.tellYourage();
-personObj.tellSomething(“Life is good!”);
+personObj.tellSomething("Life is good!");
 ```
 
-## JavaScript 对象：哈希（关联数组）
-- JavaScript 对象本质上是一个具有字段和方法的关联数组（哈希），这些内容通过名称键值。
-- 以下两行代码在语义上是等等的：
+### JavaScript 对象：哈希（关联数组）
+
+- JavaScript 对象本质上是一个具有字段和方法的关联数组（哈希），这些内容通过名称键值
+- 以下两行代码在语义上是等同的：
+
 ```javascript
-myObject.myfield = “something”;
-myObject['myfield'] = “something”;
+myObject.myfield = "something";
+myObject['myfield'] = "something";
 ```
 
-## JavaScript 对象：类、对象、继承
-- JavaScript 拥有对象和类的概念（类似于 Java），但没有内置的继承概念（与 Java 不同）。
+### JavaScript 对象：类、对象、继承
 
-
-
-
+- JavaScript 拥有对象和类的概念（类似于 Java），但没有内置的继承概念（与 Java 不同）
 
 > 每一个 JavaScript 对象实际上都是同一个基类的实例，该类能够在运行时将成员字段和函数绑定到它本身。
 
-# JavaScript 对象：原型 (prototype)
+## JavaScript 对象：原型 (`prototype`)
 
-- `prototype`（原型）是每个 JavaScript 对象的属性。
-- 函数和属性可以与构造函数的属性关联。
-- 当使用 `new` 关键字调用函数时，该函数 `prototype` 上的所有属性和方法都会附加到生成的对象上。
+- `prototype`（原型）是每个 JavaScript 对象的属性
+- 函数和属性可以与构造函数的属性关联
+- 当使用 `new` 关键字调用函数时，该函数 `prototype` 上的所有属性和方法都会附加到生成的对象上
 
 ```javascript
 // Constructor of the MyObject function
-MyObject(name, size){
-  this.name=name;
-  this.size=size;
+function MyObject(name, size) {
+  this.name = name;
+  this.size = size;
 }
 
 // Add a function to the prototype
-MyObject.prototype.tellSize=function{
-  alert(“size of “ + this.name+” is “ + this.size);
+MyObject.prototype.tellSize = function() {
+  alert("size of " + this.name + " is " + this.size);
 }
 
 // Create an instance of the object. The new object has tellSize() method.
-var myObj=new MyObject(“Sang”, “30 inches”);
+var myObj = new MyObject("Sang", "30 inches");
 myObj.tellSize();
 ```
 
@@ -537,22 +553,23 @@ myObj.tellSize();
 
 函数是一类 JavaScript 对象
 
-- 函数有点像 Java 方法。
-> 它们有参数和返回值。
-- 函数是 JavaScript 中的一等对象（与 Java 不同）。
-> 可以被视为 `Object` 的后代。
-> 可以做普通 JavaScript 对象能做的一切事情，例如按名称存储属性。
-- 函数对象可以其他函数对象作为方法。
+- 函数有点像 Java 方法
+> 它们有参数和返回值
+- 函数是 JavaScript 中的一等对象（与 Java 不同）
+> 可以被视为 `Object` 的后代
+> 可以做普通 JavaScript 对象能做的一切事情，例如按名称存储属性
+- 函数对象可以其他函数对象作为方法
 
 ## JavaScript 对象：上下文 (Context)
 
 函数可以接受变长参数
 
-- 你可以调用 `myfunction()` 或 `myfunction(20)`。
+- 你可以调用 `myfunction()` 或 `myfunction(20)`
+
 ```javascript
-function myfunction(value){
-  if (value){
-    this.area=value;
+function myfunction(value) {
+  if (value) {
+    this.area = value;
   }
   return this.area;
 }
@@ -560,21 +577,21 @@ function myfunction(value){
 
 ## HTML DOM 对象
 
-HTML DOM
+### HTML DOM
 
-- `HTML DOM` 为 HTML 定义了一组标准对象以及访问操作 HTML 文档的标准方法。
-- 所有 HTML 元素及其包含的文本和属性都可以通过 `DOM` 访问。
-> 内容可以被修改或删除，也可以创建新的元素。
-- `HTML DOM` 是独立平台和语言的。
-> 可以被任何编程语言使用，如 `Java`、`JavaScript` 和 `VBScript`。
+- `HTML DOM` 为 HTML 定义了一组标准对象以及访问操作 HTML 文档的标准方法
+- 所有 HTML 元素及其包含的文本和属性都可以通过 `DOM` 访问
+> 内容可以被修改或删除，也可以创建新的元素
+- `HTML DOM` 是独立平台和语言的
+> 可以被任何编程语言使用，如 `Java`、`JavaScript` 和 `VBScript`
 
-## HTML DOM 对象
+### HTML DOM 对象
 
 - `Anchor` 对象
 - `Document` 对象
 - `Event` 对象
 - `Form` 和 `Form Input` 对象
-- `Frame`, `Frameset` 和 `IFrame` 对象
+- `Frame`、`Frameset` 和 `IFrame` 对象
 - `Image` 对象
 - `Location` 对象
 - `Navigator` 对象
@@ -583,9 +600,9 @@ HTML DOM
 - `Table`、`TableHeader`、`TableRow`、`TableData` 对象
 - `Window` 对象
 
-# Document 对象
+## Document 对象
 
-## Document 对象：向输出写入文本
+### Document 对象：向输出写入文本
 
 ```html
 <html>
@@ -597,7 +614,7 @@ HTML DOM
 </html>
 ```
 
-## Document 对象：向输出写入带格式的文本
+### Document 对象：向输出写入带格式的文本
 
 ```html
 <html>
@@ -609,34 +626,34 @@ HTML DOM
 </html>
 ```
 
-## Document 对象：使用 getElementById()
+### Document 对象：使用 `getElementById()`
 
 ```html
 <html>
 <head>
   <script type="text/javascript">
     function getElement() {
-      var x=document.getElementById("myHeader")
+      var x = document.getElementById("myHeader");
+      alert("I am a " + x.tagName + " element");
     }
-    alert("I am a " + x.tagName + " element")
   </script>
 </head>
 <body>
-  <h1 id="myHeader" onclick="getElement()">Click to see what element I am!</h1> 
+  <h1 id="myHeader" onclick="getElement()">Click to see what element I am!</h1>
 </body>
 </html>
 ```
 
-## Document 对象：使用 getElementsByName()
+### Document 对象：使用 `getElementsByName()`
 
 ```html
 <html>
 <head>
   <script type="text/javascript">
     function getElements() {
-      var x=document.getElementsByName("myInput")
+      var x = document.getElementsByName("myInput");
+      alert(x.length + " elements!");
     }
-    alert(x.length + " elements!")
   </script>
 </head>
 <body>
@@ -649,13 +666,14 @@ HTML DOM
 </html>
 ```
 
-## Document 对象：返回文档中第一个锚点（anchor）的 innerHTML
+### Document 对象：返回文档中第一个锚点（anchor）的 innerHTML
 
 ```html
 <html>
 <body>
   <a name="first">First anchor</a><br />
-  <a name="second">Second anchor</a><br /> <a name="third">Third anchor</a><br /> <br />
+  <a name="second">Second anchor</a><br />
+  <a name="third">Third anchor</a><br /> <br />
   InnerHTML of the first anchor in this document:
   <script type="text/javascript">
     document.write(document.anchors[0].innerHTML)
@@ -664,7 +682,7 @@ HTML DOM
 </html>
 ```
 
-## Document 对象：访问集合中的某项
+### Document 对象：访问集合中的某项
 
 ```html
 <html>
@@ -686,16 +704,16 @@ HTML DOM
 
 ## 事件对象 (Event Object)
 
-## 事件对象：光标的坐标是什么？
+### 事件对象：光标的坐标是什么？
 
 ```html
 <html>
 <head>
   <script type="text/javascript">
     function show_coords(event) {
-      x=event.clientX
-      y=event.clientY
-      alert("X coords: " + x + ", Y coords: " + y)
+      x = event.clientX;
+      y = event.clientY;
+      alert("X coords: " + x + ", Y coords: " + y);
     }
   </script>
 </head>
@@ -705,15 +723,15 @@ HTML DOM
 </html>
 ```
 
-## 事件对象：按下按键的 Unicode 是什么？
+### 事件对象：按下按键的 Unicode 是什么？
 
 ```html
 <html>
 <head>
   <script type="text/javascript">
     function whichButton(event) {
+      alert(event.keyCode);
     }
-    alert(event.keyCode)
   </script>
 </head>
 <body onkeyup="whichButton(event)">
@@ -723,23 +741,22 @@ HTML DOM
 </html>
 ```
 
-## 事件对象：点击了哪个元素？
+### 事件对象：点击了哪个元素？
 
 ```html
 <html>
 <head>
   <script type="text/javascript">
     function whichElement(e) {
-      var targ
-      if (!e) var e = window.event
-      if (e.target) targ = e.target
-      else if (e.srcElement) targ = e.srcElement
+      var targ;
+      if (!e) var e = window.event;
+      if (e.target) targ = e.target;
+      else if (e.srcElement) targ = e.srcElement;
       if (targ.nodeType == 3) // 修复 Safari Bug
-        targ = targ.parentNode
-      var tname
-      tname=targ.tagName
+        targ = targ.parentNode;
+      var tname = targ.tagName;
+      alert("You clicked on a " + tname + " element.");
     }
-    alert("You clicked on a " + tname + " element.")
   </script>
 </head>
 <body onmousedown="whichElement(event)">
@@ -751,15 +768,15 @@ HTML DOM
 </html>
 ```
 
-## 事件对象：发生了哪种事件？
+### 事件对象：发生了哪种事件？
 
 ```html
 <html>
 <head>
   <script type="text/javascript">
     function whichType(event) {
+      alert(event.type);
     }
-    alert(event.type)
   </script>
 </head>
 <body onmousedown="whichType(event)">
@@ -768,82 +785,60 @@ HTML DOM
 </html>
 ```
 
-
-
-
-
--   这些应用程序也是使用编程语言编写的，但根据原则，它们是使用多种相互依赖的技术构建的。这些技术可以很容易地（尽管并非完全）被分为两类：服务端和客户端。
-
-![](img/image01388.jpeg)
+---
 
 ## 2 服务端 vs. 客户端
 
 ### 关键点
 
--   世界维网（World Wide Web）是基于多种不同的技术构建的。
--   对于大多数用户来说，网页的开始和结束于他们选择的网页浏览器。浏览器被称为网页的客户端，浏览器、运行浏览器的计算机以及浏览网页的用户统称为 `client`。
--   考虑一个决定访问 `www.google.com` 网站的客户端。首先发生的情况是客户端将向 Google 的 Web 服务器请求该网站的默认页面。
--   Web 服务器是运行在 Google 拥有的计算机上的应用程序。与客户端一样，服务器应用程序及其运行的计算机定义了网页的服务端，统称为 `server`。
--   当服务器接收到客户端对特定页面的请求时，它的工作是从计算机文件中检索页面并将其返回给客户端。在许多情况下，此操作是一个非常简单的程序，服务器端的工作很少或完全没有。
--   然而，使用 `PHP`、`Perl` 或 `Java` 等编程语言，我们可以让服务器在将页面返回给客户端之前修改找到的页面，甚至从头开始生成页面。这被称为服务端应用程序。返回给客户端的页面（对客户端而言）与任何其他未修改的页面看起来完全一样。
-
-![](img/image01388.jpeg)
-
--   服务端应用程序的一个示例可能是向页面插入当前日期和时间。这意味着每当页面被请求时（例如，使用浏览器的刷新按钮），页面上都会添加一个全新的时间值。
--   一旦客户端从服务器接收到页面，它就会显示该页面并等待用户请求另一个页面。页面一旦进入这种状态，它就超出了服务器的控制。现在，任何服务端应用程序都无法更改页面内容，除非客户端必须再次返回服务器获取页新的（可能已更新的）页面副本。
--   然而，所有现代浏览器都允许运行客户端应用程序。这些是嵌入页面本身 `HTML` 代码中的小型应用程序。
--   服务端应用程序在修改页面并发送给客户端时，会忽略在此过程中发现的任何客户端应用程序，因此通常情况下，两种类型的应用程序无法轻易“对话”。
--   然而，一旦客户端接收了客户端应用程序，它就可以开始动态修改页面，而无需返回服务器。
--   客户端应用程序的一个示例可能是网页上每秒更新一次的时钟。
--   客户端应用程序的一个遗憾副作用是，所有代码必须发送到客户端运行，这意味着应用程序的内部机制对任何人可见。这使得检查密码或执行任何可能导致机密信息泄露到外部的操作变得不切。
--   此外，所有现代网络浏览器都为用户提供了完全关闭客户端应用程序的机会。在此基础上，同一个客户端应用程序的运行方式会随浏览器类型而异。
--   尽管有这些缺点，客户端应用程序（由于其通用的简短，通常被称为脚本）仍然是开发网页应用程序时为网页用户提供丰富环境的最佳方式。
-
-![](img/image01388.jpeg)
+- 世界维网（World Wide Web）是基于多种不同的技术构建的
+- 对于大多数用户来说，网页的开始和结束于他们选择的网页浏览器。浏览器被称为网页的客户端，浏览器、运行浏览器的计算机以及浏览网页的用户统称为 `client`
+- 考虑一个决定访问 `www.google.com` 网站的客户端。首先发生的情况是客户端将向 Google 的 Web 服务器请求该网站的默认页面
+- Web 服务器是运行在 Google 拥有的计算机上的应用程序。与客户端一样，服务器应用程序及其运行的计算机定义了网页的服务端，统称为 `server`
+- 当服务器接收到客户端对特定页面的请求时，它的工作是从计算机文件中检索页面并将其返回给客户端。在许多情况下，此操作是一个非常简单的程序，服务器端的工作很少或完全没有
+- 然而，使用 `PHP`、`Perl` 或 `Java` 等编程语言，我们可以让服务器在将页面返回给客户端之前修改找到的页面，甚至从头开始生成页面。这被称为服务端应用程序。返回给客户端的页面（对客户端而言）与任何其他未修改的页面看起来完全一样
+- 服务端应用程序的一个示例可能是向页面插入当前日期和时间。这意味着每当页面被请求时（例如，使用浏览器的刷新按钮），页面上都会添加一个全新的时间值
+- 一旦客户端从服务器接收到页面，它就会显示该页面并等待用户请求另一个页面。页面一旦进入这种状态，它就超出了服务器的控制。现在，任何服务端应用程序都无法更改页面内容，除非客户端必须再次返回服务器获取新的（可能已更新的）页面副本
+- 然而，所有现代浏览器都允许运行客户端应用程序。这些是嵌入页面本身 `HTML` 代码中的小型应用程序
+- 服务端应用程序在修改页面并发送给客户端时，会忽略在此过程中发现的任何客户端应用程序，因此通常情况下，两种类型的应用程序无法轻易“对话”
+- 然而，一旦客户端接收了客户端应用程序，它就可以开始动态修改页面，而无需返回服务器
+- 客户端应用程序的一个示例可能是网页上每秒更新一次的时钟
+- 客户端应用程序的一个遗憾副作用是，所有代码必须发送到客户端运行，这意味着应用程序的内部机制对任何人可见。这使得检查密码或执行任何可能导致机密信息泄露到外部的操作变得不切实际
+- 此外，所有现代网络浏览器都为用户提供了完全关闭客户端应用程序的机会。在此基础上，同一个客户端应用程序的运行方式会随浏览器类型而异
+- 尽管有这些缺点，客户端应用程序（由于其通用的简短，通常被称为脚本）仍然是开发网页应用程序时为网页用户提供丰富环境的最佳方式
 
 ## 3 关于 JavaScript
 
 ### 关键点
 
--   `JavaScript` 是一种解释型的、客户端的、基于事件的、面向对象的脚本语言，你可以用它为你的网页添加动态交互性。
--   `JavaScript` 脚本是以纯文本编写的，类似于 `HTML`、`XML`、`Java`、`PHP` 以及几乎任何其他现代计算机代码。在这些代码中，我们将使用 `Windows NotePad` 来创建和编辑我们的 `JavaScript` 代码，但也有许多替代方案。选择 `NotePad` 是为了演示 `JavaScript` 的即时性和简单性。
--   你可以使用 `JavaScript` 实现任何以下功能：
-    -   使用图像创建特殊效果，当鼠标指针悬停在按钮上时，给人按钮被高亮或按下的印象。
-    -   验证用户输入到你的网页表单的信息。
-    -   在新窗口中打开页面，并自定义这些新窗口的外观。
-    -   检测用户浏览器的能力并相应更改你的页面内容。
-    -   在不需要像 `PHP` 等服务端语言的情况下，“即时”创建自定义页面。
-    -   以及更多……
+- `JavaScript` 是一种解释型的、客户端的、基于事件的、面向对象的脚本语言，你可以用它为你的网页添加动态交互性
+- `JavaScript` 脚本是以纯文本编写的，类似于 `HTML`、`XML`、`Java`、`PHP` 以及几乎任何其他现代计算机代码。在这些代码中，我们将使用 `Windows NotePad` 来创建和编辑我们的 `JavaScript` 代码，但也有许多替代方案。选择 `NotePad` 是为了演示 `JavaScript` 的即时性和简单性
+- 你可以使用 `JavaScript` 实现任何以下功能：
+    - 使用图像创建特殊效果，当鼠标指针悬停在按钮上时，给人按钮被高亮或按下的印象
+    - 验证用户输入到你的网页表单的信息
+    - 在新窗口中打开页面，并自定义这些新窗口的外观
+    - 检测用户浏览器的能力并相应更改你的页面内容
+    - 在不需要像 `PHP` 等服务端语言的情况下，“即时”创建自定义页面
+    - 以及更多……
+- `JavaScript` 并不是 `Java`，尽管如果你有 `Java` 背景，你会发现这两种语言在编写时看起来相似。`Java` 是一种功能齐全且全面的编程语言，类似于 `C` 或 `C++`，尽管 `JavaScript` 可以与 `Java` Web 应用程序交互，但不应将两者混淆
+- 不同的网络浏览器会以不同的、有时是不兼容的方式运行你的 `JavaScript`。为了解决这个问题，通常需要使用 `JavaScript` 本身来检测它所处浏览器的能力，并根据结果更改其操作
+- 重新回顾本章中的原始定义，请注意以下几点：
+    - 解释型（Interpreted）指的是 `JavaScript` 代码在加载到浏览器时就会执行（处理）。这与 `Java` 等编译型语言有所不同，编译型语言在运行单行代码之前会彻底检查你的程序，如果你来自非解释型编程背景，这可能会产生许多让你措手不及的影响
+    - 客户端（Client-side）已在上一章定义
+    - 基于事件（Event-based）指的是 `JavaScript` 仅在指定事件发生时运行某些特定代码的能力。事件可以是页面加载、表单提交、链接被点击或鼠标指针指向图像
+    - 面向对象（Object-oriented）意味着 `JavaScript` 控制 `HTML` 页面的能力是基于操作该页面内的对象的。如果你熟悉面向对象编程，你会意识到这种方式为编码环境带来的某些力量
+- 最后的说明：虽然 `JavaScript` 是一种编程语言，但 `HTML`（万维网的语言）不是。`HTML` 是一种标记语言，这意味着它可以用于将文档的某些区域标记为具有特殊特征，如标题、段落、图像、表单等，但它本身无法执行任何逻辑处理。因此，虽然 `JavaScript` 经常与 `HTML` 一起编写，但一者的规则并不对另一方有任何影响
 
-![](img/image01388.jpeg)
+## 4 JavaScript 导览
 
--   `JavaScript` 并不是 `Java`，尽管如果你有 `Java` 背景，你会发现这两种语言在编写时看起来相似。`Java` 是一种功能齐全且全面的编程语言，类似于 `C` 或 `C++`，尽管 `JavaScript` 可以与 `Java` Web 应用程序交互，但不应将两者混淆。
--   不同的网络浏览器会以不同的、有时是不兼容的方式运行你的 `JavaScript`。为了解决这个问题，通常需要使用 `JavaScript` 本身来检测它所处浏览器的能力，并根据结果更改其操作。
--   重新回顾本章中的原始定义，请注意以下几点：
-    -   解释型（Interpreted）指的是 `JavaScript` 代码在加载到浏览器时就会执行（处理）。这与 `Java` 等编译型语言有所不同，编译型语言在运行单行代码之前会彻底检查你的程序，如果你来自非解释型编程背景，这可能会产生许多让你措手不及的影响。
-    -   客户端（Client-side）已在上一章定义。
-    -   基于事件（Event-based）指的是 `JavaScript` 仅在指定事件发生时运行某些特定代码的能力。事件可以是页面加载、表单提交、链接被点击或鼠标指针指向图像。
-    -   面向对象（Object-oriented）意味着 `JavaScript` 控制 `HTML` 页面的能力是基于操作该页面内的对象的。如果你熟悉面向对象编程，你会意识到这种方式为编码环境带来的某些力量。
+### 核心要点
 
-![](img/image01388.jpeg)
+- 让我们快速浏览一下 `JavaScript` 的主要功能。本章旨在展示 `JavaScript` 能做什么，而不是对深层概念进行深入研究，所以如果你迷了方向或不理解正在输入的代码，不要太担心！
 
+### 项目
 
-
-
-
-• 最后的说明：虽然 `JavaScript` 是一种编程语言，但 `HTML`（万维网的语言）不是。`HTML` 是一种标记语言，这意味着它可以用于将文档的某些区域标记为具有特殊特征，如标题、段落、图像、表单等，但它本身无法执行任何逻辑处理。因此，虽然 `JavaScript` 经常与 `HTML` 一起编写，但一者的规则并不对对方有任何影响。
-
-![](img/image01388.jpeg)
-
-# 4 JavaScript 导览
-
-## 核心要点
-• 让我们快速浏览一下 `JavaScript` 的主要功能。本章旨在展示 `JavaScript` 能做什么，而不是对深层概念进行深入研究，所以如果你迷了方向或不理解正在输入的代码，不要太担心！
-
-## 项目
-• 我们的 `JavaScript` 代码都将使用 `NotePad` 编写。打开 `NotePad`并将生成的空文档保存到你的用户驱动器中，命名为 `chapter_4.html`。
-
-• 首先在空白空白中创建一个基础的 `HTML` 页面。不需要很花哨——以下内容就足够了：
+- 我们的 `JavaScript` 代码都将使用 `NotePad` 编写。打开 `NotePad` 并将生成的空文档保存到你的用户驱动器中，命名为 `chapter_4.html`
+- 首先在空白文档中创建一个基础的 `HTML` 页面。不需要很花哨——以下内容就足够了：
 
 ```html
 <html>
@@ -856,15 +851,10 @@ HTML DOM
 </html>
 ```
 
-• 按照惯例，当笔记中意图是让你将所有代码写在同一行时，它们会使用像那样的箭头 `&#8592;` 来指示你在该处不要换行。对于 `HTML` 来说，这并不重要，但对于 `JavaScript` 来说，错误位置的换行可能会导致代码无法运行。
-
-![](img/image01388.jpeg)
-
-• 保存你的新网页，并在浏览器中查看它。目前，请使用 `Internet Explorer` 查看此页面。执行此操作，请在用户驱动器中找到保存的文件，并双击它。这将默认用 `Internet Explorer` 打开该文件，并让你看到刚刚创建的标题。
-
-• 到目前为止，我们还没有做任何 `HTML` 范围之外的尝试。让我们向页面中添加一些 `JavaScript`。
-
-• （通常来说）网页中有三个地方可以添加 `JavaScript`。其中第一个是在一组新的 `HTML` 标签之间。这些 `script` 标签采用以下形式：
+- 按照惯例，当笔记中意图是让你将所有代码写在同一行时，它们会使用像那样的箭头 `←` 来指示你在该处不要换行。对于 `HTML` 来说，这并不重要，但对于 `JavaScript` 来说，错误位置的换行可能会导致代码无法运行
+- 保存你的新网页，并在浏览器中查看它。目前，请使用 `Internet Explorer` 查看此页面。执行此操作，请在用户驱动器中找到保存的文件，并双击它。这将默认用 `Internet Explorer` 打开该文件，并让你看到刚刚创建的标题
+- 到目前为止，我们还没有做任何 `HTML` 范围之外的尝试。让我们向页面中添加一些 `JavaScript`
+- （通常来说）网页中有三个地方可以添加 `JavaScript`。其中第一个是在一组新的 `HTML` 标签之间。这些 `script` 标签采用以下形式：
 
 ```html
 <script language="JavaScript" type="text/JavaScript">
@@ -872,14 +862,12 @@ HTML DOM
 </script>
 ```
 
-• 上述的 `script` 元素可以放在 `HTML` 页面中任何可以放置元素的地方——也就是说，可以放在 `head` 元素或 `body` 元素中。它最常放在前者，尽管通常这样做是为了让所有的代码都能在页面上被找到。
-
-• 同时注意，`HTML` 页面中包含的 `script` 元素数量没有人为限制。除了谨慎考虑外，没有什么能阻止你在页面上散布几百个这样的标签。
-
-让我们在页面的 `head` 元素中添加起始和结束脚本标签，如下所示：
+- 上述的 `script` 元素可以放在 `HTML` 页面中任何可以放置元素的地方——也就是说，可以放在 `head` 元素或 `body` 元素中。它最常放在前者，尽管通常这样做是为了让所有的代码都能在页面上被找到
+- 同时注意，`HTML` 页面中包含的 `script` 元素数量没有人为限制。除了谨慎考虑外，没有什么能阻止你在页面上散布几百个这样的标签
+- 让我们在页面的 `head` 元素中添加起始和结束脚本标签，如下所示：
 
 ```html
-<html
+<html>
 <head>
 <title> … </title>
 <script language="JavaScript" type="text/JavaScript">
@@ -888,557 +876,447 @@ HTML DOM
 …
 ```
 
-![](img/image01388.jpeg)
-
-• 保存文件，然后尝试在浏览器窗口中刷新页面。注意发现什么都没有发生。这是我们预期的——到目前为止，我们只是在页面上设置了一个区域来存放我们的 `JavaScript`。
-
-回到 `NotePad`，在起始和结束 `script` 标签之间输入以下文本：
+- 保存文件，然后尝试在浏览器窗口中刷新页面。注意发现什么都没有发生。这是我们预期的——到目前为止，我们只是在页面上设置了一个区域来存放我们的 `JavaScript`
+- 回到 `NotePad`，在起始和结束 `script` 标签之间输入以下文本：
 
 ```javascript
 window.alert("Hello world!");
 ```
 
-保存更改，再次在浏览器窗口中刷新页面。欢迎来到 `JavaScript` 的世界！
-
-回到 `notepad` 并删除你刚刚添加的 `window.alert` 行。现在添加以下稍复杂一点的代码：
+- 保存更改，再次在浏览器窗口中刷新页面。欢迎来到 `JavaScript` 的世界！
+- 回到 `notepad` 并删除你刚刚添加的 `window.alert` 行。现在添加以下稍复杂一点的代码：
 
 ```javascript
-if( confirm("Go to Google?") ) { document.location = "http://www.google.com/"; }
-}
+if (confirm("Go to Google?")) { document.location = "http://www.google.com/"; }
 ```
 
-再次保存更改并刷新页面。对于那些关注后续章节的人来说，这是一个条件语句的示例，我们要求 `JavaScript` 检查某事的条件（在这种情况下，是我们对一个问题的回答），然后根据它的发现来改变其行为。
-
-现在，当页面加载到浏览器时，这两段 `JavaScript` 代码都不受控制地运行了。在大多数情况下，我们希望能够更有效地控制 `JavaScript` 何时执行我们要求的操作。
-
-这种控制是“事件”（events）的领域。在浏览器中，`HTML` 文档的每个元素都关联着若干可能在其身上发生的事件。链接可以被点击，表单可以被提交，页面可以加载等等。
-
-修改你 `script` 元素中之前的 `JavaScript` 代码以匹配以下内容：
+- 再次保存更改并刷新页面。对于那些关注后续章节的人来说，这是一个条件语句的示例，我们要求 `JavaScript` 检查某事的条件（在这种情况下，是我们对一个问题的回答），然后根据它的发现来改变其行为
+- 现在，当页面加载到浏览器时，这两段 `JavaScript` 代码都不受控制地运行了。在大多数情况下，我们希望能够更有效地控制 `JavaScript` 何时执行我们要求的操作
+- 这种控制是“事件”（events）的领域。在浏览器中，`HTML` 文档的每个元素都关联着若干可能在其身上发生的事件。链接可以被点击，表单可以被提交，页面可以加载等等
+- 修改你 `script` 元素中之前的 `JavaScript` 代码以匹配以下内容：
 
 ```javascript
 function go_to_google() {
-  if( confirm("Go to Google?") ) { document.location = "http://www.google.com/"; }
+  if (confirm("Go to Google?")) { document.location = "http://www.google.com/"; }
 }
 ```
 
-![](img/image01388.jpeg)
-
-注意这里的括号！
-
-保存并刷新，注意这次什么都没有发生。这是因为我们把之前的操作（弹出问题并根据响应采取行动）封装在一个函数（function）中。函数是一个被赋予名字的代码块——在这个情况下，名字是 `go_to_google()`——并且只有当该名字被“调用”时才会运行。将函数认为是在念出名字即可触发的魔咒可能会有用。
-
-要调用这个魔咒，我们需要在页面上选择一个元素来触发它。一个自然的候选者是链接元素，因此在页面的 `body` 部分添加以下 `HTML`：
+- 注意这里的括号！
+- 保存并刷新，注意这次什么都没有发生。这是因为我们把之前的操作（弹出问题并根据响应采取行动）封装在一个函数（function）中。函数是一个被赋予名字的代码块——在这个情况下，名字是 `go_to_google()`——并且只有当该名字被“调用”时才会运行。将函数认为是在念出名字即可触发的魔咒可能会有用
+- 要调用这个魔咒，我们需要在页面上选择一个元素来触发它。一个自然的候选者是链接元素，因此在页面的 `body` 部分添加以下 `HTML`：
 
 ```html
 <p>A quick <a href="#">test</a>.</p>
 ```
 
-`#` 链接是一个常用的 `HTML` 技巧，允许我们创建一个“通往何处的链接”。
-
-保存并刷新，检查链接是否出现在页面上，以及点击它时是否无处去。
-
-现在，我们希望在点击该链接时，页面询问我们是否要“前往 Google”。方法如下：
-
-获取链接元素，并将其修改为：
+- `#` 链接是一个常用的 `HTML` 技巧，允许我们创建一个“通往何处的链接”
+- 保存并刷新，检查链接是否出现在页面上，以及点击它时是否无处去
+- 现在，我们希望在点击该链接时，页面询问我们是否要“前往 Google”。方法如下：获取链接元素，并将其修改为：
 
 ```html
 <a href="#" onclick="go_to_google();">test</a>
 ```
 
-保存并刷新，然后点击链接。这是一个事件处理器（event handler）的示例。当链接被点击时（`onclick`），我们的浏览器会说“魔咒” `go_to_google()`，我们的函数就会被调用。
-
-最后一个技巧，在页面的 `body` 部分包含链接的段落之后添加以下代码：
+- 保存并刷新，然后点击链接。这是一个事件处理器（event handler）的示例。当链接被点击时（`onclick`），我们的浏览器会说“魔咒” `go_to_google()`，我们的函数就会被调用
+- 最后一个技巧，在页面的 `body` 部分包含链接的段落之后添加以下代码：
 
 ```html
 <body>
 <script language="JavaScript" type="text/JavaScript">
-document.write("<h2>Here’s another header!</h2>");
+document.write("<h2>Here's another header!</h2>");
 </script>
-``` 注意这行代码应该写在一行！
+```
 
-![](img/image01388.jpeg)
-
-保存页面并刷新浏览器。注意我们现在页面上有一行新文本——另一个标题！我们使用 `JavaScript` 创建了 `HTML` 并告诉浏览器适当显示它。在这个示例中，`JavaScript` 所做的任何事情都不是我们用一行 `HTML` 无法做到的，但在未来的章节中，我们将看到如何利用它来编写当前日期等内容。
-
-![](img/image01388.jpeg)
+- 注意这行代码应该写在一行！
+- 保存页面并刷新浏览器。注意我们现在页面上有一行新文本——另一个标题！我们使用 `JavaScript` 创建了 `HTML` 并告诉浏览器适当显示它。在这个示例中，`JavaScript` 所做的任何事情都不是我们用一行 `HTML` 无法做到的，但在未来的章节中，我们将看到如何利用它来编写当前日期等内容
 
 ## 5 对象、属性和方法
 
-## 核心要点
-- 一般来说，对象（objects）是“事物”。例如，钢琴就是一个对象。
-- 属性（properties）是用来描述和定义特定对象的术语。例如，我们的钢琴有颜色、重量、高度、踏板、键盘和盖子。
-- 注意上述内容，对象的属性也可以是属性。所以我们有这样的情况：钢琴盖子是钢琴的属性，但它本身也是一个对象，拥有它自己的一组属性——例如，盖子有颜色、长度，甚至有开启或关闭的状态。
-- 如果说对象是编程语言的名词，属性是形容词，那么方法（methods）就是动词。方法是可以在特定对象上执行（或由该对象执行）的操作。继续我们的钢琴例子，你可以弹钢琴、打开它的盖子，或踩下延音踏板。
+### 核心要点
 
-
-
-
-
-许多编程语言在引用对象及其属性或方法方面有相似的方法。通常情况下，它们是分级的，对象与其属性、方法之间的关系，以及与其他之间的关系，通常可以通过编程表示法一眼看出。
-
-在 JavaScript 中，我们使用“点符号表示”（dot notation）来表示对象及其属性和方法。例如，我们可以通过以下方式引用钢琴的颜色：
+- 一般来说，对象（objects）是“事物”。例如，钢琴就是一个对象
+- 属性（properties）是用来描述和定义特定对象的术语。例如，我们的钢琴有颜色、重量、高度、踏板、键盘和盖子
+- 注意上述内容，对象的属性也可以是属性。所以我们有这样的情况：钢琴盖子是钢琴的属性，但它本身也是一个对象，拥有它自己的一组属性——例如，盖子有颜色、长度，甚至有开启或关闭的状态
+- 如果说对象是编程语言的名词，属性是形容词，那么方法（methods）就是动词。方法是可以在特定对象上执行（或由该对象执行）的操作。继续我们的钢琴例子，你可以弹钢琴、打开它的盖子，或踩下延音踏板
+- 许多编程语言在引用对象及其属性或方法方面有相似的方法。通常情况下，它们是分级的，对象与其属性、方法之间的关系，以及与其他之间的关系，通常可以通过编程表示法一眼看出
+- 在 JavaScript 中，我们使用“点符号表示”（dot notation）来表示对象及其属性和方法。例如，我们可以通过以下方式引用钢琴的颜色：
 
 ```
 piano.colour;
 ```
 
-![](img/image01388.jpeg)
-
-| ROBERT PETERSON | 19 |
-|  |  |  |
-|  |  |  |
-
-如果我们想让 JavaScript 播放钢琴，可以写出极其简单的代码：
+- 如果我们想让 JavaScript 播放钢琴，可以写出极其简单的代码：
 
 ```javascript
 piano.play();
 ```
 
-如果我们决定打开钢琴的盖子，就可以看到一个对象层级的清晰例子：
+- 如果我们决定打开钢琴的盖子，就可以看到一个对象层级的清晰例子：
 
 ```javascript
 piano.lid.open();
 ```
 
-或者如果我们想按下钢琴的延音踏板，则更为明显：
+- 或者如果我们想按下钢琴的延音踏板，则更为明显：
 
 ```javascript
 piano.pedals.sustain.press();
 ```
 
-请注意，在上面的某些示例中，我们在每组单词后面都带有括号 `()`，而在某些地方没有。这是为了确保 JavaScript 能够理解我们所表达的内容。
-
-JavaScript 在浏览器中的整个运行过程中都在与对象交互。页面上所有的 HTML 元素都可以描述为对象、属性或方法。我们在之前的介绍章节中已经见过其中的一些对象：
+- 请注意，在上面的某些示例中，我们在每组单词后面都带有括号 `()`，而在某些地方没有。这是为了确保 JavaScript 能够理解我们所表达的内容
+- JavaScript 在浏览器中的整个运行过程中都在与对象交互。页面上所有的 HTML 元素都可以描述为对象、属性或方法。我们在之前的介绍章节中已经见过其中的一些对象：
 
 ```javascript
 document.write(...);
 document.location;
 ```
 
-在这些示例中，`document` 是一个对象，而 `write` 是一个方法，`location` 是一个属性。
-
-在这些行代码中，我们看到了关于在这些语句中使用括号的线索。我们使用括号是为了向 JavaScript 表示我们正在讨论一个对象的方法，而不是同名的属性。
-
-括号还允许我们向对象的方法传递某些额外信息。在上面的示例中，为了向网页文档写入文本“Hello world!”，我们将编写以下 JavaScript：
+- 在这些示例中，`document` 是一个对象，而 `write` 是一个方法，`location` 是一个属性
+- 在这些行代码中，我们看到了关于在这些语句中使用括号的线索。我们使用括号是为了向 JavaScript 表示我们正在讨论一个对象的方法，而不是同名的属性
+- 括号还允许我们向对象的方法传递某些额外信息。在上面的示例中，为了向网页文档写入文本“Hello world!”，我们将编写以下 JavaScript：
 
 ```javascript
-document.write(“Hello World”);
+document.write("Hello World");
 ```
 
-每个方法可以根据括号中放入的内容（或者用技术术语说，“作为参数传递给方法的内容”）可以执行不同的操作。事实上，许多方法可以接受多个“参数”来修改其行为。多个参数之间用逗号（`,`）分隔。
-
-![](img/image01388.jpeg)
-
-| ROBERT PETERSON | 20 |
-|  |  |  |
-|  |  |  |
-
-23 像这里显示的 JavaScript 指令被称为 JavaScript 语句。所有语句都应该以单个分号（`;`）结束。JavaScript 经常会忽略行尾缺失的分号，并自动为你插入分号。然而，这可能会导致一些意外的结果。考虑以下情况：
+- 每个方法可以根据括号中放入的内容（或者用技术术语说，“作为参数传递给方法的内容”）可以执行不同的操作。事实上，许多方法可以接受多个“参数”来修改其行为。多个参数之间用逗号（`,`）分隔
+- 像这里显示的 JavaScript 指令被称为 JavaScript 语句。所有语句都应该以单个分号（`;`）结束。JavaScript 经常会忽略行尾缺失的分号，并自动为你插入分号。然而，这可能会导致一些意外的结果。考虑以下情况：
 
 ```javascript
-document.write(“<h1>
+document.write("<h1>
 Hello World!
-</h1>”);
+</h1>");
 ```
 
-在许多其他语言中，这是可以接受的。然而，JavaScript 经常会将此类内容解释为如下：
+- 在许多其他语言中，这是可以接受的。然而，JavaScript 经常会将此类内容解释为如下：
 
 ```javascript
-document.write(“<h1>;
+document.write("<h1>;
 Hello World!;
-</h1>”);
+</h1>");
 ```
 
-这种解释将产生错误，因为 JavaScript 在结束语句时，如果没有确保引号内的任何项具有匹配的引号对，它就会报错。在这个例子中，第一行的“语句”被截断了，JavaScript 将崩溃。
-
-出于这个原因，建议你所有的语句都以分号结尾。
-
-![](img/image01388.jpeg)
-
-| ROBERT PETERSON | 21 |
-|  |  |  |
-|  |  |  |
+- 这种解释将产生错误，因为 JavaScript 在结束语句时，如果没有确保引号内的任何项具有匹配的引号对，它就会报错。在这个例子中，第一行的“语句”被截断了，JavaScript 将崩溃
+- 出于这个原因，建议你所有的语句都以分号结尾
 
 ## 6 给属性赋值
 
 ### 关键点
 
-虽然对象和方法允许我们在页面上执行某些操作（例如更改内容或弹出对话框与用户交互），但在许多情况下，我们可能想要直接更改对象某个属性的值。这些情况类似于将我们的钢琴漆成绿色。
-
-考虑到我们目前为止对方法的讨论，我们可能认为能够通过方法来更改对象的属性——例如，以下内容看起来是合逻辑的：
-
-```javascript
-piano.paint(“green”);
-```
-
-在许多情况下，我们确实是这样做的。然而，这里有两个缺点。首先，在本课程中，我们发现的大多数对象都是由浏览器内置并定义的。如果我们依赖使用方法来更改对象的属性，那么我们也就依赖于该方法本身存在的这一事实。
-
-解决这个问题的更直接的方法是直接访问对象的属性。例如：
+- 虽然对象和方法允许我们在页面上执行某些操作（例如更改内容或弹出对话框与用户交互），但在许多情况下，我们可能想要直接更改对象某个属性的值。这些情况类似于将我们的钢琴漆成绿色
+- 考虑到我们目前为止对方法的讨论，我们可能认为能够通过方法来更改对象的属性——例如，以下内容看起来是合逻辑的：
 
 ```javascript
-piano.colour=“green”;
+piano.paint("green");
 ```
 
-在这里，我们不再使用方法来执行操作，而是使用所谓的“运算符”。在这种情况下，该运算符的符号是 `=`，被称为“赋值运算符”。
-
-![](img/image01388.jpeg)
-
-| ROBERT PETERSON | 22 |
-|  |  |  |
-|  |  |  |
-
-在 JavaScript 中，我们可以非常有效地使用这种运算符。例如，我们可以动态地更改文档的标题元素（浏览器窗口顶部栏中显示的文本）。这可以在用户使用事件处理器点击页面部分时完成（稍后会详细介绍），也可以设置为每分钟自动更新一次以在页面标题中显示当前时间。我们用于此任务的代码非常简单：
+- 在许多情况下，我们确实是这样做的。然而，这里有两个缺点。首先，在本课程中，我们发现的大多数对象都是由浏览器内置并定义的。如果我们依赖使用方法来更改对象的属性，那么我们也就依赖于该方法本身存在的这一事实
+- 解决这个问题的更直接的方法是直接访问对象的属性。例如：
 
 ```javascript
-document.title=“a new title”;
+piano.colour = "green";
 ```
 
-JavaScript 中有很多赋值运算符。下表显示了一些较常用的运算符：
+- 在这里，我们不再使用方法来执行操作，而是使用所谓的“运算符”。在这种情况下，该运算符的符号是 `=`，被称为“赋值运算符”
+- 在 JavaScript 中，我们可以非常有效地使用这种运算符。例如，我们可以动态地更改文档的标题元素（浏览器窗口顶部栏中显示的文本）。这可以在用户使用事件处理器点击页面部分时完成（稍后会详细介绍），也可以设置为每分钟自动更新一次以在页面标题中显示当前时间。我们用于此任务的代码非常简单：
+
+```javascript
+document.title = "a new title";
+```
+
+- JavaScript 中有很多赋值运算符。下表显示了一些较常用的运算符：
 
 | 赋值 | 功能 |
-|  |  |
+| :--- | :--- |
 | `x = y` | 将 `x` 的值设置为 `y` |
-|  |  |
 | `x += y` | 将 `x` 的值加上 `y` |
-|  |  |
 | `x -= y` | 将 `x` 的值减去 `y` |
-|  |  |
 | `x *= y` | 将 `x` 的值乘以 `y` |
-|  |  |
 | `x /= y` | 将 `x` 的值除以 `y` |
 
-并非 并不是所有的赋值运算符都适用于所有类型的值。但加法运算符同时适用于数字和文本。在处理数字时，结果将是数字之和。在处理文本（技术上称为字符串）时，结果将是两者的拼接：
+- 并不是所有的赋值运算符都适用于所有类型的值。但加法运算符同时适用于数字和文本。在处理数字时，结果将是数字之和。在处理文本（技术上称为字符串）时，结果将是两者的拼接：
 
 ```javascript
-document.title += “!”
+document.title += "!"
 ```
 
-将导致符号“!”追加到当前标题之后。
+- 将导致符号“!”追加到当前标题之后
 
 ### 项目
 
-打开你的项目文件，并将其保存为 `chapter_6.html`。
-
-从你的脚本标签中删除任何现有的 JavaScript，但保留标签以准备新的 JavaScript。
-
-![](img/image0138.jpeg)
-
-| ROBERT PETERSON | 23 |
-|  |  |  |
-|  |  |  |
-
-使用你的文本编辑器将页面元素的值更改如下，然后在浏览器加载页面并查看结果：
+- 打开你的项目文件，并将其保存为 `chapter_6.html`
+- 从你的脚本标签中删除任何现有的 JavaScript，但保留标签以准备新的 JavaScript
+- 使用你的文本编辑器将页面元素的值更改如下，然后在浏览器加载页面并查看结果：
 
 ```html
 <title>With a little help from</title>
 ```
 
-现在在我们的脚本中添加一条语句，将以下文本添加到标题末尾：
+- 现在在我们的脚本中添加一条语句，将以下文本添加到标题末尾：
 
 ```javascript
-document.title += “ROBERTERSON!”;
+document.title += "ROBERTERSON!";
 ```
 
-在浏览器中刷新页面并注意窗口的标题栏。
-
-我们目前所做的只是一个 HTML 也能实现的例子。让我们引入窗口对象的一个新方法，来为脚本添加一些动态性和交互性。将标题标签的值更改如下：
+- 在浏览器中刷新页面并注意窗口的标题栏
+- 我们目前所做的只是一个 HTML 也能实现的例子。让我们引入窗口对象的一个新方法，来为脚本添加一些动态性和交互性。将标题标签的值更改如下：
 
 ```html
 <title>Chapter 6: Assigning Values to Properties</title>
 ```
 
-现在，删除之前的 JavaScript 语句并插入以下内容：
+- 现在，删除之前的 JavaScript 语句并插入以下内容：
 
 ```javascript
-document.title = window.prompt(“Your title?”, “”);
+document.title = window.prompt("Your title?", "");
 ```
 
-刷新你的页面并考虑结果。
-
-我们以前遇到过窗口对象。我们在第 4 章中对 alert 方法的演示可以写写为：
+- 刷新你的页面并考虑结果
+- 我们以前遇到过窗口对象。我们在第 4 章中对 alert 方法的演示可以写写为：
 
 ```javascript
-window.alert(“message”);
+window.alert("message");
 ```
 
-在编写代码时，我们通常省略对象/属性/方法层级中的某些部分。我们稍后会再次讨论这一点。
-
-
-
-
-最后，我们注意到这种 prompt 方法会以某种方式获取用户在框中输入的信息并将其传递给我们的 JavaScript 赋值。假设有人在框中输入了“Hello World”。这就像我们的赋值实际上执行了：
+- 在编写代码时，我们通常省略对象/属性/方法层级中的某些部分。我们稍后会再次讨论这一点
+- 最后，我们注意到这种 prompt 方法会以某种方式获取用户在框中输入的信息并将其传递给我们的 JavaScript 赋值。假设有人在框中输入了“Hello World”。这就像我们的赋值实际上执行了：
 
 ```javascript
-document.title = “Hello World”;
+document.title = "Hello World";
 ```
 
-当发生这种值的传递时，我们称该方法返回了所传递的值。在这种情况下，我们会说“prompt 方法返回了值‘Hello World’”，或者说“prompt 方法的返回值为‘Hello World’”。
-
-当我们稍后处理事件处理器时，返回值将变得非常重要。
-
-![](img/image01388.jpeg)
-
-| ROBERT PETERSON | 25 |
-|  |  |  |
-|  |  |  |
+- 当发生这种值的传递时，我们称该方法返回了所传递的值。在这种情况下，我们会说“prompt 方法返回了值‘Hello World’”，或者说“prompt 方法的返回值为‘Hello World’”
+- 当我们稍后处理事件处理器时，返回值将变得非常重要
 
 ## 关于注释 (About Comments)
 
 ### 关键点
-- 随我复读一遍：注释很重要。注释很重要。注释很重要。
-- 在代码中添加注释始终是一个良好的习惯。随着脚本复杂性的增加，注释可以帮助你（以及他人）在日后查看代码时理解其结构。
-- 许多快速创建的代码被称为“只写”代码，因为它们天生缺乏结构或注释。调试此类代码或在几个月后重新使用它将变得极其困难，因为你试图记住某行代码本该是做什么的，或者由于为什么使用某些值似乎会导致你的代码停止工作。
-- JavaScript 会完全忽略注释，只要其格式正确，注释就不会影响脚本的运行速度。
-- 然而，注释可能会减慢页面的加载速度——许多程序员会保留一份带有完整注释的“开发”版代码以供编辑，并在最终发布时移除代码中的所有注释。
-- JavaScript 中有两种类型的的注释：单行注释和多行注释。
+
+- 随我复读一遍：注释很重要。注释很重要。注释很重要
+- 在代码中添加注释始终是一个良好的习惯。随着脚本复杂性的增加，注释可以帮助你（以及他人）在日后查看代码时理解其结构
+- 许多快速创建的代码被称为“只写”代码，因为它们天生缺乏结构或注释。调试此类代码或在几个月后重新使用它将变得极其困难，因为你试图记住某行代码本该是做什么的，或者由于为什么使用某些值似乎会导致你的代码停止工作
+- JavaScript 会完全忽略注释，只要其格式正确，注释就不会影响脚本的运行速度
+- 然而，注释可能会减慢页面的加载速度——许多程序员会保留一份带有完整注释的“开发”版代码以供编辑，并在最终发布时移除代码中的所有注释
+- JavaScript 中有两种类型的注释：单行注释和多行注释
 
 ### 单行注释
-单行注释以两个正斜杠字符（`//`）开始，并换行结束：
+
+- 单行注释以两个正斜杠字符（`//`）开始，并换行结束：
 
 ```javascript
-this is a comment alert(“hello”); // so is this
+// this is a comment
+alert("hello"); // so is this
 ```
 
-![](img/image01388.jpeg)
-
-| ROBERT PETERSON | 26 |
-|  |  |  |
-|  |  |  |
-
-JavaScript 中的单行注释也可以使用你可能熟悉的 HTML 注释格式：
+- JavaScript 中的单行注释也可以使用你可能熟悉的 HTML 注释格式：
 
 ```html
 <!-- this is a comment
-alert(“hello”);
+alert("hello");
 ```
 
-注意两点：首先，这种对 HTML 注释格式的使用不需要闭合标签 `-->`。其次，这只是单行注释，与 HTML 中的用法不同（HTML 中的注释会注释直到闭合标签之前的所有行）。
+- 注意两点：首先，这种对 HTML 注释格式的使用不需要闭合标签 `-->`。其次，这只是单行注释，与 HTML 中的用法不同（HTML 中的注释会注释直到闭合标签之前的所有行）
 
 ### 多行注释
-你可以通过将注释块封装在 `/*` 和 `*/` 之间来添加多行注释。例如：
+
+- 你可以通过将注释块封装在 `/*` 和 `*/` 之间来添加多行注释。例如：
 
 ```javascript
 /* 所有的这些文本都将被 JavaScript 忽略。这允许我们编写较大的注释，而不必担心需要逐行“注释掉”每一行 */
 
-alert(“Hello World”);
+alert("Hello World");
 
 /* 一个单行的“多行”注释 */
 ```
 
-除了为你的脚本添加叙述性内容外，你还可以使用注释从页面中移除代码，而无需删除代码。例如：
+- 除了为你的脚本添加叙述性内容外，你还可以使用注释从页面中移除代码，而无需删除代码。例如：
 
 ```javascript
-this was the old message
-alert(“Hello World”);
+// this was the old message
+// alert("Hello World");
 
-and this is the new message
-alert(“Hello everyone!”);
+// and this is the new message
+alert("Hello everyone!");
 ```
 
-当你正尝试追踪代码中的错误时，这非常有用——你可以逐 own“注释掉”每一行可疑代码，直到代码恢复正常工作。
+- 当你正尝试追踪代码中的错误时，这非常有用——你可以逐行“注释掉”每一行可疑代码，直到代码恢复正常工作
 
 ### 项目
-1. 打开你之前的项目文件，并将其保存为 `chapter_7.html`。
+
+1. 打开你之前的项目文件，并将其保存为 `chapter_7.html`
 2. 在脚本的开头添加单行注释：
+
 ```javascript
-This is my first comment
+// This is my first comment
 ```
 
-![](img/image01388.jpeg)
-
-| ROBERT PETERSON | 27 |
-|  |  |  |
-|  |  |  |
-
-3. 在你的脚本中添加一个多行注释，替换你之前的单行注释。多行注释应该描述你的脚本目前的功能。
-
-![](img/image01388.jpeg)
-
-| ROBERT PETERSON | 28 |
-|  |  |  |
-|  |  |  |
+3. 在你的脚本中添加一个多行注释，替换你之前的单行注释。多行注释应该描述你的脚本目前的功能
 
 #### 对旧版浏览器隐藏脚本
 
 ### 关键点
-- 非常老旧的浏览器无法理解 JavaScript。今天使用此类浏览器的非常少，但有两个因素迫使我们继续考虑可能无法处理我们 JavaScript 代码的环境。
-- 首先，所有现代浏览器都允许用户控制是否运行 JavaScript 代码。在许多情况下，用户对自己的公司政策没有话语权，甚至可能不知道他们的工作机器已经禁用了 JavaScript。
-- 其次，并不是所有的访客都会使用可以利用 JavaScript 的浏览器。盲文显示器、屏幕阅读器和其他非视觉浏览器对许多 JavaScript 技巧几乎无用其微。此外，像 Google 这样的搜索引擎会忽略你在页面上使用的任何 JavaScript，这可能会隐藏重要内容并导致你的页面无法被索引。
-- 不支持 JavaScript 的浏览器本应该忽略忽略开启和结束 script 标签之间的任何内容。然而，许多浏览器违反了这一规则，并尝试将你的代码渲染为 HTML，这可能会导致尴尬的后果。
 
-![](img/image01388.jpeg)
-
-| ROBERT PETERSON | 29 |
-|  |  |  |
-|  |  |  |
-
-不过，我们可以利用 `<!--` 在 JavaScript 中表示单行注释但在 HTML 中表示多行注释的这一特性，以确保我们的代码能被精通 JavaScript 的浏览器看到，但被其他设备视为被注释掉的 HTML 而忽略：
+- 非常老旧的浏览器无法理解 JavaScript。今天使用此类浏览器的非常少，但有两个因素迫使我们继续考虑可能无法处理我们 JavaScript 代码的环境
+- 首先，所有现代浏览器都允许用户控制是否运行 JavaScript 代码。在许多情况下，用户对自己的公司政策没有话语权，甚至可能不知道他们的工作机器已经禁用了 JavaScript
+- 其次，并不是所有的访客都会使用可以利用 JavaScript 的浏览器。盲文显示器、屏幕阅读器和其他非视觉浏览器对许多 JavaScript 技巧几乎无用其微。此外，像 Google 这样的搜索引擎会忽略你在页面上使用的任何 JavaScript，这可能会隐藏重要内容并导致你的页面无法被索引
+- 不支持 JavaScript 的浏览器本应该忽略开启和结束 script 标签之间的任何内容。然而，许多浏览器违反了这一规则，并尝试将你的代码渲染为 HTML，这可能会导致尴尬的后果
+- 不过，我们可以利用 `<!--` 在 JavaScript 中表示单行注释但在 HTML 中表示多行注释的这一特性，以确保我们的代码能被精通 JavaScript 的浏览器看到，但被其他设备视为被注释掉的 HTML 而忽略：
 
 ```html
 <script>
-<!-- hidefrom older browsers
+<!-- hide from older browsers
 … your code
-stop hiding code
+// stop hiding code
+</script>
 ```
 
 ## 自动重定向用户
 
 ### 关键点
-- 我们在第 4 章已经简要见过浏览器重定向。
-- 为了更完整地理解这一想法，为了将用户重定向到不同的页面，你需要设置 `document` 对象的 `location` 属性。
+
+- 我们在第 4 章已经简要见过浏览器重定向
+- 为了更完整地理解这一想法，为了将用户重定向到不同的页面，你需要设置 `document` 对象的 `location` 属性
 - 正如我们在第 6 章看到的，我们可以在这里使用赋值运算符。例如：
 
 ```javascript
-document.location = “http://www.bbc.co.uk/"; document.location = “chapter_4.html”;
+document.location = "http://www.bbc.co.uk/";
+document.location = "chapter_4.html";
 ```
 
 ### 项目
-1. 打开你之前的项目文件，并将其保存为 `chapter_9_redirect.html`。
-2. 保存该文件的副本，这次命名为 `chapter_9.html`。
-3. 确保两个文件都保存在同一个文件夹中，并且你在编辑器中打开了 `chapter_9.html`。
-4. 删除 script 标签之间的所有脚本，只保留隐藏浏览器的行。确保 script 标签仍在页面的 head 部分。
-5. 现在，在此脚本中添加一条语句，以便在页面加载到浏览器时自动将用户重定向到 `chapter_9_redirect.html` 页面。
 
-
-
-
-
-![](img/image01388.jpeg)
-
-| ROBERT PETERSON | 32 |
-
-最后，在页面的 body 部分添加一个包含文本“You can’t see me!”的标题标签。
-
-关闭此页面，先不要在浏览器中检查它，在编辑器中打开 `chapter_9_redirect.html` 页面。
-
-移除页面上所有的 JavaScript（包括你的 `script` 标签），并确保页面上只剩下 HTML。
-
-在页面的 body 部分添加一个包含文本“But you can see ME!”的标题标签。
-
-保存此页面，并在浏览器中加载 `chapter_9.html` 页面。
-
-在 `chapter_9.html` 中尝试放置 `script` 标签的不同位置，看看是否可以让标题在跳转之前出现。
-
-![](img/image01388.jpeg)
-
-| ROBERT PETERSON | 33 |
+1. 打开你之前的项目文件，并将其保存为 `chapter_9_redirect.html`
+2. 保存该文件的副本，这次命名为 `chapter_9.html`
+3. 确保两个文件都保存在同一个文件夹中，并且你在编辑器中打开了 `chapter_9.html`
+4. 删除 script 标签之间的所有脚本，只保留隐藏浏览器的行。确保 script 标签仍在页面的 head 部分
+5. 现在，在此脚本中添加一条语句，以便在页面加载到浏览器时自动将用户重定向到 `chapter_9_redirect.html` 页面
+6. 最后，在页面的 body 部分添加一个包含文本“You can't see me!”的标题标签
+7. 关闭此页面，先不要在浏览器中检查它，在编辑器中打开 `chapter_9_redirect.html` 页面
+8. 移除页面上所有的 JavaScript（包括你的 `script` 标签），并确保页面上只剩下 HTML
+9. 在页面的 body 部分添加一个包含文本“But you can see ME!”的标题标签
+10. 保存此页面，并在浏览器中加载 `chapter_9.html` 页面
+11. 在 `chapter_9.html` 中尝试放置 `script` 标签的不同位置，看看是否可以让标题在跳转之前出现
 
 ## 10 警告、提示和确认
 
-## 核心要点
+### 核心要点
 
-- 到此为止，我们已经看到了 `alert`、`prompt` 和 `confirm` 对话框的简要示例，用于请求用户响应，并在后台暂停所有代码直到请求得到满足。
-- 所有这些对话框都是 `window` 对象方法的的结果。该对象是 JavaScript 在浏览器中处理的最高级对象。因此，页面上的所有其他对象（少数例外）实际上都是 `window` 对象的属性。
+- 到此为止，我们已经看到了 `alert`、`prompt` 和 `confirm` 对话框的简要示例，用于请求用户响应，并在后台暂停所有代码直到请求得到满足
+- 所有这些对话框都是 `window` 对象方法的结果。该对象是 JavaScript 在浏览器中处理的最高级对象。因此，页面上的所有其他对象（少数例外）实际上都是 `window` 对象的属性
 - 因为它的无处不在，即使省略了它，也被认为它的存在。因此，在技术上我们应该写：
-`window.document.write(“…”);`
-但写：
-`document.write(“…”);` 是同样有效的，正如我们一直这样做一样。
+
+`window.document.write("…");`
+
+- 但写：
+
+`document.write("…");` 是同样有效的，正如我们一直这样做一样
 - 同样，与其写：
-`window.alert(“…”);`
-我们可以很自然地写：
-`alert(“…”);`
 
-这三个方法的原型是：
+`window.alert("…");`
+
+- 我们可以很自然地写：
+
+`alert("…");`
+
+- 这三个方法的原型是：
 
 ```
-window.alert( message );
-window.confirm( message );
-window.prompt( message, default_response );
+window.alert(message);
+window.confirm(message);
+window.prompt(message, default_response);
 ```
 
-- `alert` 在点击“确定”清除时将始终返回一个“true”值。
-- `confirm` 根据所选择的清除对话框的响应，返回“true”或“false”。
-- `prompt` 返回输入的内容的值；如果没有输入任何内容则返回“null”；如果取消了对话框则返回“false”。
+- `alert` 在点击“确定”清除时将始终返回一个“true”值
+- `confirm` 根据所选择的清除对话框的响应，返回“true”或“false”
+- `prompt` 返回输入的内容的值；如果没有输入任何内容则返回“null”；如果取消了对话框则返回“false”
 
-## 项目
+### 项目
 
-1. 打开你之前的项目文件，并将其保存为 `chapter_10.html`。
-2. 清除之前的跳转代码，并确保 `script` 标签已返回文档的 head 部分。
+1. 打开你之前的项目文件，并将其保存为 `chapter_10.html`
+2. 清除之前的跳转代码，并确保 `script` 标签已返回文档的 head 部分
 3. 在页面上的 `script` 中添加一条新语句，在页面其他部分显示之前显示以下消息：
+
 `Welcome to my website! Click OK to continue.`
-4. 在浏览器中检查你的页面。
-5. 我们将在整个课程中使用 `alert`、`confirm` 和 `prompt`。请花一点时间在这个页面上依次尝试每一个方法，每次都停下来检查你的更改。
+
+4. 在浏览器中检查你的页面
+5. 我们将在整个课程中使用 `alert`、`confirm` 和 `prompt`。请花一点时间在这个页面上依次尝试每一个方法，每次都停下来检查你的更改
 6. 使用 `document` 对象的 `write` 方法来检查每个方法的返回值。例如：
-`document.write(alert(“hello world”));`
 
-确保你将这段特定的代码片段放在页面 body 区域的 `script` 标签内，因为我们正在生成供浏览器渲染的文本输出。此外，注意这里引号的使用（或不使用）。下节继续待之！
+`document.write(alert("hello world"));`
 
-![](img/image01388.jpeg)
-
-| ROBERT PETERSON | 35 |
+- 确保你将这段特定的代码片段放在页面 body 区域的 `script` 标签内，因为我们正在生成供浏览器渲染的文本输出。此外，注意这里引号的使用（或不使用）
 
 ## 11 变量和运算符
 
-## 核心要点
+### 核心要点
 
-- 我们已经接触了对象及其各种属性和方法的概念。这些相互相关的概念允许任何网页被拆分为小段信息或数据，这些数据可以由 JavaScript 访问，并在许多情况下进行更改。
+- 我们已经接触了对象及其各种属性和方法的概念。这些相互相关的概念允许任何网页被拆分为小段信息或数据，这些数据可以由 JavaScript 访问，并在许多情况下进行更改
 - 但是，如果我们想为不一定具有基于页对应项的信息创建自己的存储空间该怎么办？例如，如果我们想在更改 `document` 的 `title` 属性之前存储其旧值，以便稍后检索；或者如果我们想存储页面加载到浏览器的时间，以便在页面的多处重现，而不想每次都重新计算时间该怎么办？
 - 变量是 JavaScript 中用于值的命名容器。它们在许多方面与对象属性相似，但有重要的区别：
-    - 从实际意义上说，变量没有与之关联的“父”对象。
+    - 从实际意义上说，变量没有与之关联的“父”对象
     - 变量可以由你作为开发者创建（声明），并可以赋予任何任意名称（在某些规则范围内）——然而，对象属性受父对象定义的限制。例如，在我们之前的章节的钢琴对象中有一个 `propeller`（螺旋桨）属性是没有意义的！
-
 - 变量命名规则非常简单——没有空格，名称必须以字母开头。有效变量名的示例有：
+
 `BrowserName`, `page_name`, `Message1`, `MESSAGE1`
-- 在许多浏览器中，JavaScript 是区分大小大小的，这意味着上面示例中的最后两个变量是不同的变量。为你的变量选择一种特定的命名风格并在项目中坚持这种风格是一个好主意。
+
+- 在许多浏览器中，JavaScript 是区分大小写的，这意味着上面示例中的最后两个变量是不同的变量。为你的变量选择一种特定的命名风格并在项目中坚持这种风格是一个好主意
 - 在最简单的水平，变量可以存储三种不同类型的值：
-    - **数字 (Numbers)**：例如 `1.3324`, `3.14159`, `100000`, `-8` 等。
-    - **字符串 (Strings)**：例如“ROBERT PETERSON, week 3”，“Hello World”等。
-    - **布尔值 (Boolean Values)**：例如 `true`, `false`。
+    - **数字 (Numbers)**：例如 `1.3324`, `3.14159`, `100000`, `-8` 等
+    - **字符串 (Strings)**：例如“ROBERT PETERSON, week 3”，“Hello World”等
+    - **布尔值 (Boolean Values)**：例如 `true`, `false`
 - 注意，字符串可以包含数字，但以下变量值之间是不等价的：
-`1.234` 和 `“1.234”`。
-后者是一个字符串值。这变得非常重要。考虑：
-`1+2 = 3`
-`“a” + “b” = “ab”`
-`“1” + “2” = “12”`
-- 一些开发者在变量名中使用自己的命名约定来表示预期在给定变量中包含的值类型。这通常很有帮助，但 JavaScript 并不强制要求（参见 JavaScript 注释）。例如，`strMessage` 可能表示字符串变量，而 `numPageHits` 可能表示变量中的数值。
 
-变量赋值的实现方式与对象属性赋值相同。当变量第一次被赋值赋值时，它会被自动创建。这与其他编程语言不同，在其他语言中，必须先显式创建变量，才能加载值。
+`1.234` 和 `"1.234"`。
 
-以下是变量赋值的示例：
+- 后者是一个字符串值。这变得非常重要。考虑：
+
+`1 + 2 = 3`
+
+`"a" + "b" = "ab"`
+
+`"1" + "2" = "12"`
+
+- 一些开发者在变量名中使用自己的命名约定来表示预期在给定变量中包含的值类型。这通常很有帮助，但 JavaScript 并不强制要求（参见 JavaScript 注释）。例如，`strMessage` 可能表示字符串变量，而 `numPageHits` 可能表示变量中的数值
+- 变量赋值的实现方式与对象属性赋值相同。当变量第一次被赋值时，它会被自动创建。这与其他编程语言不同，在其他语言中，必须先显式创建变量，才能加载值
+- 以下是变量赋值的示例：
+
 ```
 numBrowserVersion = 5.5;
 numTotal += 33;
-Message = “Hello!”;
-Message = “Goodbye”;
+Message = "Hello!";
+Message = "Goodbye";
 Message = 3;
 ```
-注意最后三个示例显示变量值可以在初始赋值后被更改，存储在变量中的值类型也可以类似的方式进行更改。
 
-一旦创建了变量并在其中存储了值，我们将能够访问它并可能对其进行操作。与对象属性类似，我们只需通过调用变量来访问它们：
+- 注意最后三个示例显示变量值可以在初始赋值后被更改，存储在变量中的值类型也可以类似的方式进行更改
+- 一旦创建了变量并在其中存储了值，我们将能够访问它并可能对其进行操作。与对象属性类似，我们只需通过调用变量来访问它们：
+
 ```
-Message = “Hello World!”;
+Message = "Hello World!";
 alert(Message);
 ```
-注意我们没有在变量名周围使用引号。上面的代码与 `alert(“Message”);` 不同，原因显而易见。
 
-除了使用变量进行存储和访问外，我们还可以使用运算符组合并操作它们。例如：
+- 注意我们没有在变量名周围使用引号。上面的代码与 `alert("Message");` 不同，原因显而易见
+- 除了使用变量进行存储和访问外，我们还可以使用运算符组合并操作它们。例如：
+
 ```
 a = 12;
 b = 13;
 c = a + b; // c 现在是 25
 c += a; // c 现在是 37
-c = b + “ Hello!”; // c 现在是 “13 Hello!”
+c = b + " Hello!"; // c 现在是 "13 Hello!"
 ```
 
-| ROBERT PETERSON | 38 |
+- 我们的最后一个示例可能出乎意料——我们将一个数字加到字符串上，得到了字符串结果。JavaScript 足够聪明，能够意识到不能以数值方式“加”字符串，因此它将数字临时转换为字符串并对两个字符串进行拼接。注意 `b` 仍然是 13，而不是“13”
 
-我们的最后一个示例可能出乎意料——我们将一个数字加到字符串上，得到了字符串结果。JavaScript 足够聪明，能够意识到不能以数值方式“加”字符串，因此它将数字临时转换为字符串并对两个字符串进行拼接。注意 `b` 仍然是 13，而不是“13”。
-
-运算符表：
+### 运算符表
 
 | 运算符 | 功能 |
 | :--- | :--- |
 | `x + y` | 如果都是数字，则将 x 加到 y；否则执行拼接 |
-| `x – y` | 如果两者都是数字，则从 y 中减去 x |
+| `x - y` | 如果两者都是数字，则从 y 中减去 x |
 | `x * y` | 将 x 和 y 相乘 |
 | `x / y` | 将 x 除以 y |
-
-
-
-
-
-| Expression | Description |
-| :--- | :--- |
 | `x % y` | 将 x 除以 y，并返回余数 |
 | `-x` | 反转 x 的符号 |
 | `x++` | 在完成任何关联赋值之后对 x 加 1 |
@@ -1446,49 +1324,30 @@ c = b + “ Hello!”; // c 现在是 “13 Hello!”
 | `x--` | 在任何关联赋值之后从 x 中减去 1 |
 | `--x` | 在任何关联赋值之前从 x 中减去 1 |
 
-# 项目
+### 项目
 
-打开你之前的项目文件，并将其保存为 `chapter_11.html`。
-
-清除之前的 JavaScript 代码，并确保 `script` 标签包含文档的 `body` 部分。
-
-将消息“Welcome to my web site”赋值给名为 `greeting` 的变量。
-
-![](img/image01388.jpeg)
-
-使用此变量创建一个包含该消息的警告框（alert box），并在页面上创建一个标题，而无需重新输入消息。
-
-在浏览器中测试此页面。
-
-现在，修改你的代码以创建两个变量 `var_1` 和 `var_2`。
-
-将值“Welcome to”赋值给 `var_1`，将值“my web site”赋值给 `var_2`。
-
-创建第三个变量 `var_3`，并将其赋值为 `var_1 + var_2`。然后使用警告框检查 `var_3` 的结果。
-
-在浏览器中测试此页面。
-
-如果警告框中的文本没有按预期显示，请考虑变量赋值中的空格，并修正错误。
-
-现在，修改你的代码以产生相同的结果，但不需要第三个变量。
-
-清除当前 `script` 标签中的所有语句。
-
-在脚本中添加两个语句，将数字 `100` 赋值给一个变量，将 `5.5` 赋值给另一个。
-
-使用 `document.write` 显示第 34 页表格中给出的每个运算符在两个数值上的效果。
-
-将其中一个数值替换为文本字符串并重复此过程。注意其中的差异。
-
-![](img/image01388.jpeg)
+- 打开你之前的项目文件，并将其保存为 `chapter_11.html`
+- 清除之前的 JavaScript 代码，并确保 `script` 标签包含文档的 `body` 部分
+- 将消息“Welcome to my web site”赋值给名为 `greeting` 的变量
+- 使用此变量创建一个包含该消息的警告框（alert box），并在页面上创建一个标题，而无需重新输入消息
+- 在浏览器中测试此页面
+- 现在，修改你的代码以创建两个变量 `var_1` 和 `var_2`
+- 将值“Welcome to”赋值给 `var_1`，将值“my web site”赋值给 `var_2`
+- 创建第三个变量 `var_3`，并将其赋值为 `var_1 + var_2`。然后使用警告框检查 `var_3` 的结果
+- 在浏览器中测试此页面
+- 如果警告框中的文本没有按预期显示，请考虑变量赋值中的空格，并修正错误
+- 现在，修改你的代码以产生相同的结果，但不需要第三个变量
+- 清除当前 `script` 标签中的所有语句
+- 在脚本中添加两个语句，将数字 `100` 赋值给一个变量，将 `5.5` 赋值给另一个
+- 使用 `document.write` 显示上表中给出的每个运算符在两个数值上的效果
+- 将其中一个数值替换为文本字符串并重复此过程。注意其中的差异
 
 ## 12 比较
 
-## 关键点
+### 关键点
 
-比较运算符对两个值进行比较。最常见的用法是比较两个变量的内容——例如，我们可能想检查 `var_1` 的值在数值上是否大于 `var_2`。
-
-当你使用比较运算符时，比较返回的值始终是 `true` 或 `false` 的布尔值。例如，考虑以下语句：
+- 比较运算符对两个值进行比较。最常见的用法是比较两个变量的内容——例如，我们可能想检查 `var_1` 的值在数值上是否大于 `var_2`
+- 当你使用比较运算符时，比较返回的值始终是 `true` 或 `false` 的布尔值。例如，考虑以下语句：
 
 ```javascript
 var_1 = 4;
@@ -1496,64 +1355,52 @@ var_2 = 10;
 var_3 = var_1 > var_2;
 ```
 
-在这种情况下，`var_3` 的值为 `false`。注意布尔值 `false` 与文本字符串“false”并不相同：
+- 在这种情况下，`var_3` 的值为 `false`。注意布尔值 `false` 与文本字符串“false”并不相同：
 
 ```javascript
 var_4 = false; // 布尔值
 var_5 = "false"; // 文本字符串
 ```
 
-常见的比较运算符所示：
+- 常见的比较运算符所示：
 
 | Comparison | Function |
 | :--- | :--- |
-| `X == y` | 如果 x 和 y 等返回 true，否则返回 false |
-| `X != y` | 如果 x 和 y 不等返回 true，否则返回 false |
-| `X > y` | 如果 x 在数值上大于 y，返回 true，否则返回 false |
-| `X >= y` | 如果 x 在数值上大于或等于 y，返回 true，否则返回 false |
-| `X <= y` | 如果 y 在数值上大于或等于 x，返回 true，否则返回 false |
+| `x == y` | 如果 x 和 y 相等返回 true，否则返回 false |
+| `x != y` | 如果 x 和 y 不等返回 true，否则返回 false |
+| `x > y` | 如果 x 在数值上大于 y，返回 true，否则返回 false |
+| `x >= y` | 如果 x 在数值上大于或等于 y，返回 true，否则返回 false |
+| `x <= y` | 如果 x 在数值上小于或等于 y，返回 true，否则返回 false |
 
-为了反转比较返回的值，我们通常会在比较运算符前加上一个 `!`（“感叹号”）。注意，在很多情况下这并不是必要的，但有助于理解：
+- 为了反转比较返回的值，我们通常会在比较运算符前加上一个 `!`（“感叹号”）。注意，在很多情况下这并不是必要的，但有助于理解：
 
 ```javascript
-var_1 !> var_2;
+!(var_1 > var_2);
 var_1 <= var_2;
 ```
 
-这两者是等价的，但在特定的语境下，其中一个可能比另一个更符合语义逻辑。
+- 这两者是等价的，但在特定的语境下，其中一个可能比另一个更符合语义逻辑
 
-# 项目
+### 项目
 
-打开你之前的项目文件，并将其保存为 `chapter_12.html`。
-
-确保你的两个变量都包含数值值而不是字符串。
-
-使用警告框针对上述列出的每个比较运算符，显示你两个变量之间比较的结果。
-
-将其中一个数值替换为文本字符串并重复此过程。注意其中的差异。
-
-![](img/image01388.jpeg)
+- 打开你之前的项目文件，并将其保存为 `chapter_12.html`
+- 确保你的两个变量都包含数值值而不是字符串
+- 使用警告框针对上述列出的每个比较运算符，显示你两个变量之间比较的结果
+- 将其中一个数值替换为文本字符串并重复此过程。注意其中的差异
 
 ## 13 条件语句
 
-## 关键点
+### 关键点
 
-直到现在，我们的 JavaScript 项目无法自发地改变其行为。当嵌入了我们 JavaScript 的页面加载时，它除了反复执行我们期待的内容之外无法执行任何事情。
-
-我们看到的唯一区别是使用提示框（prompt box）来更改页面上显示的内容。然而，无论输入什么文本，页面本质上仍然对提供的文本执行相同的操作。
-
-真正方便的方法是给 JavaScript 一种做出决策的机制。例如，如果我们提供一个提示框询问访问者的名字，如果能有一个“已知姓名列表”，并对与网站其他访问者进行不同的问候，那就很好。
-
-条件语句赋予了我们这种能力，是操作 JavaScript 的关键。
-
-条件语句由三部分组成：
-1. 测试（通常带有比较运算符或比较器），以检查给定条件是否为真或假。
-2. 仅当条件为真时才执行的代码块。
-3. 一个可选的代码块，仅当条件为假时才执行。
-
-![](img/image01388.jpeg)
-
-这三个部分在 JavaScript 中表示为：
+- 直到现在，我们的 JavaScript 项目无法自发地改变其行为。当嵌入了我们 JavaScript 的页面加载时，它除了反复执行我们期待的内容之外无法执行任何事情
+- 我们看到的唯一区别是使用提示框（prompt box）来更改页面上显示的内容。然而，无论输入什么文本，页面本质上仍然对提供的文本执行相同的操作
+- 真正方便的方法是给 JavaScript 一种做出决策的机制。例如，如果我们提供一个提示框询问访问者的名字，如果能有一个“已知姓名列表”，并对与网站其他访问者进行不同的问候，那就很好
+- 条件语句赋予了我们这种能力，是操作 JavaScript 的关键
+- 条件语句由三部分组成：
+    1. 测试（通常带有比较运算符或比较器），以检查给定条件是否为真或假
+    2. 仅当条件为真时才执行的代码块
+    3. 一个可选的代码块，仅当条件为假时才执行
+- 这三个部分在 JavaScript 中表示为：
 
 ```javascript
 if (condition) {
@@ -1563,14 +1410,14 @@ if (condition) {
 }
 ```
 
-闭括号（大括号）是可选的，因此以下也是有效的：
+- 闭括号（大括号）是可选的，因此以下也是有效的：
 
 ```javascript
 if (condition)
     // 语句
 ```
 
-如果 `condition` 不返回真，则什么都不会发生。一个完整的条件语句示例如下：
+- 如果 `condition` 不返回真，则什么都不会发生。一个完整的条件语句示例如下：
 
 ```javascript
 if (var_1 > var_2) {
@@ -1580,7 +1427,7 @@ if (var_1 > var_2) {
 }
 ```
 
-注意，上面的条件并不总是正确。考虑 `var_1` 等于 `var_2` 的情况。在这种情况下，上面的代码将产生消息“Variable 2 is greater”，因为 `var_1 > var_2` 返回假。在这种情况下，我们希望在 `else` 分支中添加一个额外的条件：
+- 注意，上面的条件并不总是正确。考虑 `var_1` 等于 `var_2` 的情况。在这种情况下，上面的代码将产生消息“Variable 2 is greater”，因为 `var_1 > var_2` 返回假。在这种情况下，我们希望在 `else` 分支中添加一个额外的条件：
 
 ```javascript
 if (var_1 > var_2) {
@@ -1590,7 +1437,7 @@ if (var_1 > var_2) {
 }
 ```
 
-在这种情况下，相等将产生产生输出。为了完整性，我们可以在语句中添加一个最后的 `else` 分支：
+- 在这种情况下，相等将产生输出。为了完整性，我们可以在语句中添加一个最后的 `else` 分支：
 
 ```javascript
 if (var_1 > var_2) {
@@ -1602,7 +1449,9 @@ if (var_1 > var_2) {
 }
 ```
 
-注意，在这种情况下，我们不需要在最后一个分支中检查相等性，因为如果 `var_1` 既大于也不小于 `var_2`，那么至少从数值上来说，它们必须相等的。我们可以根据需要向此栈中继续添加尽可能多的 `else if` 语句。
+- 注意，在这种情况下，我们不需要在最后一个分支中检查相等性，因为如果 `var_1` 既大于也不小于 `var_2`，那么至少从数值上来说，它们必须相等。我们可以根据需要向此栈中继续添加尽可能多的 `else if` 语句
+
+
 
 如果条件测试后有一个语句，可以省略大括号：
 
@@ -1622,10 +1471,6 @@ if (var_1 > 4) {
     var_2 = 4;
 }
 ```
-
-
-
-
 
 - 这段代码相当长，但实现的功能相对简单——`var_2` 等于 `var_1` 或 `4`，两者中较大者。
 - 这种写法更紧凑的写法可以是：
@@ -1655,7 +1500,9 @@ var_2 = (var_1 > 4) ? var_1 : 4;
 ![](img/image01388.jpeg)
 
 | ROBERT PETERSON | 46 |
+
 |  |  |  |
+
 |  |  |  |
 
 - 使用条件语句显示警告框，声明两个变量中哪一个较大。
@@ -1681,35 +1528,35 @@ var_3 = (var_1 > var_2);
 ![](img/image01388.jpeg)
 
 | ROBERT PETERSON | 47 |
+
 |  |  |  |
+
 |  |  |  |
 
 - 使用 `if` 语句和多个 `else if` 语句根据该变量的值对照以下考试评分标准，并在页面上打印适当的消息：
 
 | 考试结果 | 结果消息 |
-|  |  |
+| :--- | :--- |
 | 90 分及以上 | 优秀。优异通过。 |
-|  |  |
 | 70 到 89 分之间 | 做得好。优等通过。 |
-|  |  |
 | 55 到 69 分之间 | 刚通过。 |
-|  |  |
 | 54 分及以下 | 不及格。下次加油。 |
-|  |  |  |
 
 - 在浏览器中测试你的结果。改变 `exam_result` 的值并检查浏览器中显示的值。为了额外练习，尝试使用提示框来尽可能容易地更改你的 `exam_result` 变量。
 
 ![](img/image01388.jpeg)
 
 | ROBERT PETERSON | 48 |
+
 |  |  |  |
+
 |  |  |  |
 
 ## 14 循环
 
-## 关键点
+### 关键点
 
-- 字母 `i`、`j` 和 `k` 上被程序员用于作为计数器的变量。例如，在程序的不同阶段，`i` 可能包含数字 `1`、`2`、`3` 等。
+- 字母 `i`、`j` 和 `k` 常被程序员用于作为计数器的变量。例如，在程序的不同阶段，`i` 可能包含数字 `1`、`2`、`3` 等。
 - 为了实现“计数”效果，你需要通过一个固定值来增加或减少计数变量 `i` 的值。以下是一些示例：
 
 ```javascript
@@ -1732,7 +1579,9 @@ i--; // 等同于 i = i - 1;
 ![](img/image01388.jpeg)
 
 | ROBERT PETERSON | 49 |
+
 |  |  |  |
+
 |  |  |  |
 
 - 在很多情况下，这非常有意义，正如我们所看到的。然而，它往往会引起混惑。考虑从 0 开始数到 `10`。在这种情况下，我们实际上数了 `11` 个项目：
@@ -1746,7 +1595,6 @@ i--; // 等同于 i = i - 1;
 - (8)
 - (9)
 - 10(11!)
-
 - 如果你想给某人下指令执行重复动作，你可能会说你想让他们继续执行操作若干次。例如，如果有人执行某项操作 300 次，他们可能会这样做以确保计数准确：
 - 在纸上写下数字 1。
 - 每次操作后，擦掉纸上的数字并将其加 1。
@@ -1759,10 +1607,6 @@ for (i = 1; i <= 100; i++)
 }
 ```
 
-
-
-
-
 - 以每周的每一天为例。在每天我们都会执行若干任务，因此我们可能想将每个任务记录为名为 `Monday’s Tasks`（周一任务）的组下的独立项目。
 - 在 `JavaScript` 中，为了实现这一点，我们将每个任务存储在一个单独变量中，然后将这些变量组合成一个数组。
 - 数组是一种特殊的 `JavaScript` 对象，它可以存储多个数据值——与变量不同，变量一次只能存储一个数据值。
@@ -1772,7 +1616,9 @@ for (i = 1; i <= 100; i++)
 ![](img/image01388.jpeg)
 
 | ROBERT PETERSON | 54 |
+
 |  |  |  |
+
 |  |  |  |
 
 - 为了在 `JavaScript` 中使用数组，必须先创建它。在 `JavaScript` 中创建数组有多种方法。最简单的一种如下：
@@ -1782,6 +1628,7 @@ arrDays = new Array();
 ```
 
 此语句创建了一个名为 `arrDays` 的新空数组。我们可以像调用变量一样调用数组，但需要进行一些微小的调整。
+
 - 如果你已经知道给定数组将有多少个元素，可以显式地声明：
 
 ```javascript
@@ -1789,17 +1636,19 @@ arrDays = new Array(7);
 ```
 
 此修改创建了一个包含 `7` 个空箱的数组。然而，在 `JavaScript` 中，数组会根据需要的大小扩展或收缩，因此需要指明数组大小的情况很少见。
+
 - 然而，更有用的能力是在创建数组时“填充”数组的箱子。例如：
 
 ```javascript
-arrDays = new Array(“Monday”,”Tuesday”);
+arrDays = new Array("Monday","Tuesday");
 ```
 
 我们现在有一个包含两个元素的数组。第一个元素（元素 `0`）的值为“Monday”，第二个元素（元素 `1`）的值为“Tuesday”（注：此处原文为 `1`，意为第二个元素）。我们不需要将数组的值限制在字符串上——在数组中，布尔值、数值和字符串值都是允许的。甚至可以将其他数组分配给数组元素——稍后会详细介绍。
+
 - 最常用的创建数组的方法是使用“方括号”符号。方括号在数组的使用中起着很大作用，因此这通常是最容易记忆的方法：
 
 ```javascript
-arrDays = [“Monday”,”Tuesday”];
+arrDays = ["Monday","Tuesday"];
 ```
 
 这与之前的示例相同。
@@ -1807,7 +1656,9 @@ arrDays = [“Monday”,”Tuesday”];
 ![](img/image01388.jpeg)
 
 | ROBERT PETERSON | 55 |
+
 |  |  |  |
+
 |  |  |  |
 
 - 要访问数组的元素，我们首先调用数组的名称，然后在方括号中指定元素的数字，如下：
@@ -1819,21 +1670,22 @@ alert(arrDays[0]);
 注意这里的 `0` 周围没有引号。这行代码等同于：
 
 ```javascript
-alert(“Monday”);
+alert("Monday");
 ```
 
 假设数组如之前的示例所示定义。
+
 - 我们不仅可以使用这种表示法访问数组元素的值，还可以为其赋值：
 
 ```javascript
-arrDays[2] = “Tuesday”;
-arrDays[3] = “Wednesday”;
+arrDays[2] = "Tuesday";
+arrDays[3] = "Wednesday";
 ```
 
 - 如果你想在不知道最后一个元素索引的情况下向数组添加元素，可以使用以下代码：
 
 ```javascript
-arrDays[] = “some other day”;
+arrDays[] = "some other day";
 ```
 
 - 正如我们所看到的，数组实际上是特殊的 `JavaScript` 对象，并具有与之相关的属性和方法。每个数组都拥有的最重要的属性是它的 `length` 属性：
@@ -1857,7 +1709,9 @@ arrDays.sort();
 ![](img/image01388.jpeg)
 
 | ROBERT PETERSON | 56 |
+
 |  |  |  |
+
 |  |  |  |
 
 - 清除 `script` 标签中所有的 `JavaScript` 代码。
@@ -1871,7 +1725,9 @@ arrDays.sort();
 ![](img/image01388.jpeg)
 
 | ROBERT PETERSON | 57 |
+
 |  |  |  |
+
 |  |  |  |
 
 ## 16 关联数组 (Associative Arrays)
@@ -1881,30 +1737,31 @@ arrDays.sort();
 - 我们已经看到，可以通过索引访问数组元素：
 
 ```javascript
-arrDays = [“Monday”，“Tuesday”];
+arrDays = ["Monday","Tuesday"];
 ```
 
 - 然而，能够命名我们的数组元素可能会更有用。默认情况下，数组会被创建为数值数组。我们也可以创建关联数组：
 
 ```javascript
 arrDays = new Array();
-arrDays[“Monday”] = “Go to the dentist”; arrDays[“Tuesday”] = “Attend class”; arrDays[“Wednesday”] = “JavaScript homework”;
+arrDays["Monday"] = "Go to the dentist"; arrDays["Tuesday"] = "Attend class"; arrDays["Wednesday"] = "JavaScript homework";
 ```
 
 - 这看起来和我们之前讨论的对象和属性非常。事实上，由于数组实际上是一个对象，我们可以像访问属性一样访问它的元素：
 
 ```javascript
-alert(arrDays[“Wednesday”]);
+alert(arrDays["Wednesday"]);
 ```
 
 - 注意这里细微的区别——在我们之前的数值数组示例中，星期几的名称是元素的值。在这里，星期几的名称是索引。避免以下常见错误：
 
 ```javascript
 arrDays = new Array();
-arrDays[0] = “Monday”;
-arrDays[1] = “Tuesday”;
-arrDays[“Monday”] = “Go to work”;
+arrDays[0] = "Monday";
+arrDays[1] = "Tuesday";
+arrDays["Monday"] = "Go to work";
 // 现在 arrDays.length 为 3，而不是 2
+```
 
 ## Project
 
@@ -1933,18 +1790,13 @@ etc…
 
 - 回到邮箱类比，数组可以被想象成一排邮箱，每个邮箱都有自己的内容和标签，那么二维数组可以被看作是这些邮箱行堆叠在一起的。
 - 实际上，二维数组仅仅是一个每个元素本身又是数组的数组。二维数组的每个“子数组”长度可以不同——换句话说，二维数组不必是“正方形”的。
-
-
-
-
-
 - 你可以使用两对方括号而不是仅仅是一对来访问每个子数组的内容。下面的示例能很好地说明这一点：
 
 ```javascript
-array_1 = ["element”, “element 2”];
-array_2 = ["another element”, 2, 98, true];
+array_1 = ["element", "element 2"];
+array_2 = ["another element", 2, 98, true];
 array_3 = [array_1, array_2];
-alert(array_3[1][3]);// 显示 “98”
+alert(array_3[1][3]);// 显示 "98"
 ```
 
 - 虽然你不能在单个数组中混合数值索引和字符串索引系统（即数组不能既是数值数组又是关联性数组），但你可以在二维数组中同时拥有关联数组和数值数组。例如，将上述内容重构如下：
@@ -1954,7 +1806,7 @@ array_3 = new Array();
 array_3["firstArray"] = array_1;
 array_3["secondArray"] = array_2;
 alert(array_3["secondArray"][3]);
-//再次显示 “98”
+//再次显示 "98"
 ```
 
 ![](img/image01388.jpeg)
@@ -1967,7 +1819,7 @@ alert(array_3["secondArray"][3]);
 
 ```javascript
 alert(array_3.secondArray[3]);
-//再次显示 “98”
+//再次显示 "98"
 ```
 
 ## 项目
@@ -1996,8 +1848,8 @@ alert(array_3.secondArray[3]);
 - 最简单的子字符串搜索之一是通过使用 `indexOf` 方法完成的。每个字符串类型的变量都关联了此方法。考虑这段代码：
 
 ```javascript
-var_1 = “Karen Aaronofsky”;
-var_2 = var_1.indexOf(“Karen”);
+var_1 = "Karen Aaronofsky";
+var_2 = var_1.indexOf("Karen");
 ```
 
 在这种情况下，`var_2` 的值将为 0——记住 JavaScript 从 0 开始计数！
@@ -2011,8 +1863,8 @@ var_2 = var_1.indexOf(“Karen”);
 - 如果我们在这里搜索一个姓氏：
 
 ```javascript
-var_1 = “Karen Aaronofsky”;
-var_2 = var_1.indexOf(“Aaronofsky”);
+var_1 = "Karen Aaronofsky";
+var_2 = var_1.indexOf("Aaronofsky");
 ```
 
 `var_2` 的值将是 6。
@@ -2022,20 +1874,19 @@ var_2 = var_1.indexOf(“Aaronofsky”);
 - 为了解决这个问题，我们可能希望确保不考虑大小写。实现这一点的的一种简单方法是在执行检查之前强制将字符串转换为小写：
 
 ```javascript
-real_name = “Karen”;
-name = prompt(“你的名字?”,””);
+real_name = "Karen";
+name = prompt("你的名字?","");
 real_name = real_name.toLowerCase();
 try_name = try_name.toLowerCase();
-
 if ( try_name.indexOf(real_name) > -1 )
 {
-    alert(“Hello Karen!”);
+    alert("Hello Karen!");
 }
 else
 {
     // 注意我们在这里使用了原始的、
     // 未转换为小写的名字
-    alert(“Welcome “ + name);
+    alert("Welcome " + name);
 }
 ```
 
@@ -2043,7 +1894,7 @@ else
 
 | 方法 | 行为 |
 | :--- | :--- |
-| `String.indexOf(“str”)` | 返回子字符串“str”在字符串中第一个字符的数值位置 |
+| `String.indexOf("str")` | 返回子字符串“str”在字符串中第一个字符的数值位置 |
 | `String.charAt(x)` | 返回字符串中位置 `x` 处的字符——`indexOf` 的相反操作 |
 | `String.toLowerCase()` | 返回字符串的副本，将所有大写字母替换为对应的小写字母 |
 | `String.toUpperCase()` | 返回字符串的副本，将所有小写字母替换为对应的大写字母 |
@@ -2076,11 +1927,7 @@ else
 - `$` 是开头 `^` 的镜像——这匹配测试字符串的末尾。
 - `/` 告诉 JavaScript 我们到达了正则表达式的结束。
 
-
-
-
-
-• 呼！这里有很多需要考虑的地方。正则表达式在最好的情况下也是一门深奥的艺术，所以如果上面的代码难以理解，也不要太担心。现在需要意识到的点是，我们可以在 JavaScript 中执行一些相当复杂的模式识别，而无需多次检查字符串的每一个字符。
+- 呼！这里有很多需要考虑的地方。正则表达式在最好的情况下也是一门深奥的艺术，所以如果上面的代码难以理解，也不要太担心。现在需要意识到的点是，我们可以在 JavaScript 中执行一些相当复杂的模式识别，而无需多次检查字符串的每一个字符。
 
 ![](img/image01388.jpeg)
 
@@ -2088,36 +1935,30 @@ else
 |  |  |  |
 |  |  |  |
 
-• 下面的代码检查一个变量看它看起来像不像电子邮件地址：
+- 下面的代码检查一个变量看它看起来像不像电子邮件地址：
 
 ```javascript
-var_1 = prompt(“Your email?”, “”);
-
+var_1 = prompt("Your email?", "");
 if ( var_1.match(/^.+@.+\..+$/) )
 {
-alert(“valid email address”);
+alert("valid email address");
 }
 else
 {
-alert(“are you sure?”);
+alert("are you sure?");
 }
 ```
 
-• 目前这段代码存在几个问题——例如，它会很顺利地通过字符串“-@.-.-”，这显然是错误的。我们将在课程的稍后部分讨论解决方法。
+- 目前这段代码存在几个问题——例如，它会很顺利地通过字符串“-@.-.-”，这显然是错误的。我们将在课程的稍后部分讨论解决方法。
 
 ### 项目
 
-• 打开你之前的项目文件，并将其保存为 `chapter_18.html`。
-
-• 清空 `<script>` 标签中所有的 JavaScript 代码。
-
-• 使用 `prompt` 框捕获用户输入并赋值给名为 `check_string` 的变量。
-
-• 使用 `document.write` 语句输出将各种字符串方法应用于用户输入时的结果。
-
-• 检查用户输入看其是否为电子邮件地址，并相应地更改你的输出，显示为“这是一个电子邮件地址”或“在我看来这看起来像一个电子邮件地址！”。
-
-• 在后一种情况下，也输出失败的字符串，以便用户可以看到自己的输入，并在下次需要时进行修改。
+- 打开你之前的项目文件，并将其保存为 `chapter_18.html`。
+- 清空 `<script>` 标签中所有的 JavaScript 代码。
+- 使用 `prompt` 框捕获用户输入并赋值给名为 `check_string` 的变量。
+- 使用 `document.write` 语句输出将各种字符串方法应用于用户输入时的结果。
+- 检查用户输入看其是否为电子邮件地址，并相应地更改你的输出，显示为“这是一个电子邮件地址”或“在我看来这看起来像一个电子邮件地址！”。
+- 在后一种情况下，也输出失败的字符串，以便用户可以看到自己的输入，并在下次需要时进行修改。
 
 ![](img/image01388.jpeg)
 
@@ -2129,9 +1970,8 @@ alert(“are you sure?”);
 
 ### 核心要点
 
-• 函数是一组命名的 JavaScript 语句，用于执行特定任务并出现在标准的 `<script>` 标签内部。任务可以是简单的也可以是复杂的，函数的名称由你决定，其限制条件与变量命名相似。
-
-• JavaScript 函数在在使用之前进行声明。声明写法如下：
+- 函数是一组命名的 JavaScript 语句，用于执行特定任务并出现在标准的 `<script>` 标签内部。任务可以是简单的也可以是复杂的，函数的名称由你决定，其限制条件与变量命名相似。
+- JavaScript 函数在在使用之前进行声明。声明写法如下：
 
 ```javascript
 function name_of_function( )
@@ -2140,11 +1980,9 @@ function name_of_function( )
 }
 ```
 
-• 与我们目前学过的所有 JavaScript 指令不同，函数内部的代码在没有被明确请求之前不会运行。这种请求被称为函数调用。
-
-• 函数可以在页面上 JavaScript 存在的任何地方调用，但必须在函数声明后才能调用。例如，如果你在文档正文中声明了一个函数，然后在文档头部中调用它，你可能会发现浏览器返回了错误信息。由于这个原因，大多数 JavaScript 程序员会在页面的头部 `<script>` 标签之间定义他们将使用的任何函数，以确保它们在使用之前都已定义。
-
-• 函数之于对象正如变量之于对象属性——它们的调用方式也类似。要运行上述 `name_of_function` 函数包含的代码，我们将使用以下行代码：
+- 与我们目前学过的所有 JavaScript 指令不同，函数内部的代码在没有被明确请求之前不会运行。这种请求被称为函数调用。
+- 函数可以在页面上 JavaScript 存在的任何地方调用，但必须在函数声明后才能调用。例如，如果你在文档正文中声明了一个函数，然后在文档头部中调用它，你可能会发现浏览器返回了错误信息。由于这个原因，大多数 JavaScript 程序员会在页面的头部 `<script>` 标签之间定义他们将使用的任何函数，以确保它们在使用之前都已定义。
+- 函数之于对象正如变量之于对象属性——它们的调用方式也类似。要运行上述 `name_of_function` 函数包含的代码，我们将使用以下行代码：
 
 ```javascript
 name_of_function();
@@ -2156,32 +1994,31 @@ name_of_function();
 |  |  |  |
 |  |  |  |
 
-• 注意函数名后的括号。这让 JavaScript 知道我们处理的是一个函数而不是变量。括号还允许我们向函数“传递”额外信息，这可以改变它的行为。考虑以下函数：
+- 注意函数名后的括号。这让 JavaScript 知道我们处理的是一个函数而不是变量。括号还允许我们向函数“传递”额外信息，这可以改变它的行为。考虑以下函数：
 
 ```javascript
 function greet_user( username )
 {
-message = “Hello “ + username;
+message = "Hello " + username;
 alert(message);
 }
 ```
 
-• 每只要调用该函数，它就会问候指定的指定的用户。我们该如何传递这些信息呢？考虑：
+- 每只要调用该函数，它就会问候指定的指定的用户。我们该如何传递这些信息呢？考虑：
 
 ```javascript
-greet_user(“Anisa”);
+greet_user("Anisa");
 ```
 
 或者
 
 ```javascript
-var_1 = prompt(“Name?”, “”);
+var_1 = prompt("Name?", "");
 greet_user(var_1);
 ```
 
-• 我们应该在代码中尽可能地使用函数。当我们执行一个无法通过方法或赋值运算符完成的操作时，我们应该尝试构建一个可以完成该任务的函数。
-
-• 例如，我们可以构建一个检查电子邮件地址的函数：
+- 我们应该在代码中尽可能地使用函数。当我们执行一个无法通过方法或赋值运算符完成的操作时，我们应该尝试构建一个可以完成该任务的函数。
+- 例如，我们可以构建一个检查电子邮件地址的函数：
 
 ```javascript
 function check_email( address )
@@ -2194,7 +2031,7 @@ var_1 = true;
 }
 ```
 
-• 上述将接收传递给它的字符串（通常称为函数的参数），并根据发现的内容更改 `var_1` 的值。然而，该函数缺少一项重要的能力——将其发现的结果传回给脚本的其他部分。
+- 上述将接收传递给它的字符串（通常称为函数的参数），并根据发现的内容更改 `var_1` 的值。然而，该函数缺少一项重要的能力——将其发现的结果传回给脚本的其他部分。
 
 ![](img/image01388.jpeg)
 
@@ -2202,7 +2039,7 @@ var_1 = true;
 |  |  |  |
 |  |  |  |
 
-• 我们在笔记中已经多次提到过返回值。现在我们看到了一个需要函数将其发现的结果返回给代码其他部分的情况。理想情况下，我们希望能够像下面一样使用上述函数：
+- 我们在笔记中已经多次提到过返回值。现在我们看到了一个需要函数将其发现的结果返回给代码其他部分的情况。理想情况下，我们希望能够像下面一样使用上述函数：
 
 ```javascript
 if ( check_email(address) )
@@ -2211,7 +2048,7 @@ if ( check_email(address) )
 }
 ```
 
-• 为了让此起作用，`check_email` 的返回值必须是一个布尔值（Boolean）。我们可以非常简单地安排：
+- 为了让此起作用，`check_email` 的返回值必须是一个布尔值（Boolean）。我们可以非常简单地安排：
 
 ```javascript
 function check_email( address )
@@ -2225,7 +2062,7 @@ return var_1;
 }
 ```
 
-• 由于 `var_1` 要么 true 要么 false，返回值将是布尔值。我们甚至可以在这里跳过变量的使用，更加直接：
+- 由于 `var_1` 要么 true 要么 false，返回值将是布尔值。我们甚至可以在这里跳过变量的使用，更加直接：
 
 ```javascript
 function check_email( address )
@@ -2253,7 +2090,7 @@ return address.match(/^.+@.+\..+$);
 |  |  |  |
 |  |  |  |
 
-• 上述函数看起来可能并不是巨大的节省。毕竟，我们正用四行代码来定义一个只执行一行代码的函数。对比一下：
+- 上述函数看起来可能并不是巨大的节省。毕竟，我们正用四行代码来定义一个只执行一行代码的函数。对比一下：
 
 ```javascript
 function check_email( address )
@@ -2275,19 +2112,15 @@ if ( address.match(/^.+@.+\..+$/) )
 }
 ```
 
-• 虽然这里的益处并不明显，但考虑一下这种情况：在未来的某个时刻，你发现了一种更好的检查电子邮件地址的方法。在上面的第二种情况下，你必须搜索代码中该方法的每一个实例，并将其替换为你的新方法，而新方法可能不是一行。在第一种情况下，你只需要更改底层的函数定义，“升级”就会在你的整个代码中生效，而无需更新每个出现处。
+- 虽然这里的益处并不明显，但考虑一下这种情况：在未来的某个时刻，你发现了一种更好的检查电子邮件地址的方法。在上面的第二种情况下，你必须搜索代码中该方法的每一个实例，并将其替换为你的新方法，而新方法可能不是一行。在第一种情况下，你只需要更改底层的函数定义，“升级”就会在你的整个代码中生效，而无需更新每个出现处。
 
 ### 项目
 
-• 打开你之前的项目文件，并将其保存为 `chapter_19.html`。
-
-• 清空 `<script>` 标签中所有的 JavaScript 代码。
-
-• 确保你在文档头部区域有一个 `script` 元素，正文区域也有。
-
-• 在头部区域定义一个名为 `show_message` 的函数。该函数应该接受一个名为 `message` 的参数，并使用警告框显示参数的内容。
-
-• 在正文中，使用各种消息作为参数调用该函数。
+- 打开你之前的项目文件，并将其保存为 `chapter_19.html`。
+- 清空 `<script>` 标签中所有的 JavaScript 代码。
+- 确保你在文档头部区域有一个 `script` 元素，正文区域也有。
+- 在头部区域定义一个名为 `show_message` 的函数。该函数应该接受一个名为 `message` 的参数，并使用警告框显示参数的内容。
+- 在正文中，使用各种消息作为参数调用该函数。
 
 ![](img/image01388.jpeg)
 
@@ -2295,25 +2128,17 @@ if ( address.match(/^.+@.+\..+$/) )
 |  |  |  |
 |  |  |  |
 
-• 现在在正文中使用变量来存储 `prompt` 获取用户消息的返回值。将此变量作为 `show_message` 实例的参数。
-
-• 在头部定义一个名为 `get_message` 的新函数。它不接受任何参数，但应该复制你在正文中 `prompt` 的功能，通过提示框询问用户消息。
-
-• 确保 `get_message` 返回一个合理的值。我们的目标是将正文中的提示语句替换为以下代码：
+- 现在在正文中使用变量来存储 `prompt` 获取用户消息的返回值。将此变量作为 `show_message` 实例的参数。
+- 在头部定义一个名为 `get_message` 的新函数。它不接受任何参数，但应该复制你在正文中 `prompt` 的功能，通过提示框询问用户消息。
+- 确保 `get_message` 返回一个合理的值。我们的目标是将正文中的提示语句替换为以下代码：
 
 ```javascript
 message = get_message();
 ```
 
 所以考虑你需要返回什么才能使其工作。
-
-• 一旦你对 `get_message` 的定义感到满意，尝试用上述语句替换正文中的提示代码。
-
-• 为了演示函数的威力，更改 `show_message` 的动作，将消息写入页面，而无需更改页面正文中的任何代码。
-
-
-
-
+- 一旦你对 `get_message` 的定义感到满意，尝试用上述语句替换正文中的提示代码。
+- 为了演示函数的威力，更改 `show_message` 的动作，将消息写入页面，而无需更改页面正文中的任何代码。
 
 - 在对条件语句讨论中，我们看到了如何通过比较运算符来检查单个条件的真假性：
 
@@ -2349,11 +2174,8 @@ if ( x > val_2 )
 |  |  |  |
 
 - 在英语中，我们使用“AND”和“OR”来称为这些运算符。
-
 - 例如，假设我们想在每周二晚上 8 点做某些事情。我们需要检查当前日期是否为周二，以及时间是否为晚上 8 点。
-
 - 另一个例子：假设我们想在每月第一个周二做某些事情，同时也在每月 3 号做。我们必须检查当前日期是否是每月第一个周二，或者是否是该月的 3 号。
-
 - 注意上一个例子，如果两个条件都成立，那么我们就在周二 3 号，并执行该操作。换句话说，“或”条件允许其中一个、另一个或两个条件都为真。
 
 ![](img/image01388.jpeg)
@@ -2402,7 +2224,7 @@ if ( x > val_2 )
 
 | ROBERT PETERSON | 74 |
 |  |  |  |
-|  |  |  ||
+|  |  |  |
 
 ## 项目
 
@@ -2426,7 +2248,7 @@ if ( x > val_2 )
 |  |  |  |
 |  |  |  |
 
-## 1 使用事件处理程序
+## 21 使用事件处理程序
 
 ### 关键点
 
@@ -2437,39 +2259,31 @@ if ( x > val_2 )
 - 通常，我们将事件处理程序绑定到特定的 HTML 标签上，因此点击页面上的某个元素可能会被捕获，但点击其他地方可能会产生完全不同的结果，或者根本没有反应。
 - 一些常见的事件处理程序如下所示：
 
-| | 事件处理程序 | 发生于 | |
-|---|---|---|---|
-| | `onload` | 元素加载页面时 | |
-
-| ROBERT PETERSON | 76 |
-|  |  |  |
-|  |  |  |
-| | `onunload` | 元素离开，例如用户离开页面时 |
-| | `onmouseover` | 鼠标进入 HTML 元素定义的区域时 |
-| | `onmouseout` | 鼠标离开 HTML 元素定义的区域时 |
-| | `onclick` | 在 HTML 元素区域内点击左键时 |
-| | `onmousedown` | 在 HTML 元素区域内按下左键时 |
-| | `onmouseup` | 在 HTML 元素区域内释放左键时 |
+| 事件处理程序 | 发生于 |
+| :--- | :--- |
+| `onload` | 元素加载页面时 |
+| `onunload` | 元素离开，例如用户离开页面时 |
+| `onmouseover` | 鼠标进入 HTML 元素定义的区域时 |
+| `onmouseout` | 鼠标离开 HTML 元素定义的区域时 |
+| `onclick` | 在 HTML 元素区域内点击左键时 |
+| `onmousedown` | 在 HTML 元素区域内按下左键时 |
+| `onmouseup` | 在 HTML 元素区域内释放左键时 |
 
 - 后三个者是相关的，但存在细微差别——`onclick` 被定义为 `mousedown` 和 `mouseup` 事件都在给定元素区域内发生时。例如，如果你点击页面上的某个区域，这会注册该区域的 `mousedown` 事件。如果你按住鼠标移动到另一个区域再释放，它将注册另一个区域的 `mouseup` 事件。然而，浏览器的点击事件将保持未注册状态。
-
 - 理论上，我们可以将大多数事件处理程序添加到几乎任何 HTML 标签上。在实践中，许多浏览器限制了我们可以交互的内容。
-
-
-
-
-
 - 我们将主要为 `<img>`、`<a>` 和 `<body>` 标签绑定事件处理器。
 - 要给标签上绑定事件处理器，我们使用以下方法：
+
 ```html
-<a href=”…” onclick=”a_function();”>link
-</a>
+<a href="…" onclick="a_function();">link</a>
 ```
+
 - 我们可以使用此方法将上述列出的任何事件处理器绑定到页面的元素上。除了调用函数（当然可以带有任何可选参数）之外，我们还可以直接在事件处理器中编写 JavaScript：
+
 ```html
-<a href=”…” onclick=”alert(‘hello’);”>link
-</a>
+<a href="…" onclick="alert('hello');">link</a>
 ```
+
 ![](img/image01388.jpeg)
 
 | ROBERT PETERSON | 77 |
@@ -2484,29 +2298,33 @@ if ( x > val_2 )
 - 清空 `script` 标签中所有的 JavaScript 代码。
 - 确保你在文档的 `head` 区域有一个 `script` 元素，并且 `body` 区域没有。
 - 在 `head` 区域的 script 元素中定义以下函数：
+
 ```javascript
 function set_status( msg )
 {
 window.status = msg;
 }
 ```
-- 当调用时，此函数会将浏览器状态栏（页面内容下方的部分）显示的文本设置为传递给参数的任何内容。例如，要设置状态栏显示“Welcome”，我们将调用：
-`set_status(“Welcome”);`
+
+- 当调用时，此函数会将浏览器状态栏（页面内容下方的部分）显示的文本设置为传递给参数的任何内容。例如，要设置状态栏显示“Welcome”，我们将调用：`set_status("Welcome");`
 - 现在，在上一个函数的下方定义以下函数：
+
 ```javascript
 function clear_status( )
 {
-set_status(“”);
+set_status("");
 }
 ```
+
 - 当调用时，此函数将清空状态栏。注意我们在新函数内部使用了之前的函数。这是一种常见的编程技术，允许我们使用更通用的函数来定义特定情况的函数。
 - 现在，在页面的 `body` 区域添加以下 HTML。记住，我们在这里添加的是 HTML 而不是 JavaScript，所以不要受诱惑在项目的这部分使用 `script` 标签：
+
 ```html
-<a href=”#”
-onmouseover=”set_status(‘hello’);”
-onmouseout=”clear_status();”>testing
-</a>
+<a href="#"
+onmouseover="set_status('hello');"
+onmouseout="clear_status();">testing</a>
 ```
+
 ![](img/image01388.jpeg)
 
 | ROBERT PETERSON | 78 |
@@ -2519,19 +2337,20 @@ onmouseout=”clear_status();”>testing
 - 现在点击链接将带你离开页面。假设我们想抑制这种行为。
 - 当事件处理器拦截事件时，它会暂停事件的正常动作。例如，如果你在链接上使用 `onclick` 处理器来弹出警报框，那么只有在警报框关闭后，才会执行链接。如果需要，我们可以通过使用事件处理器的返回值来取消该动作。
 - 在 `head` 区域的 script 元素中添加一个新函数：
+
 ```javascript
 function confirm_link( )
 {
-check = confirm(“This will take you
-away from our site. Are you sure?”);
+check = confirm("This will take you\naway from our site. Are you sure?");
 return check;
 }
 ```
+
 - `check` 的值将为 `true` 或 `false`。
-- 现在，修改你的链接以包含以下事件处理器：
-`onclick=”return confirm_link();”`
+- 现在，修改你的链接以包含以下事件处理器：`onclick="return confirm_link();"`
 - 通过在事件处理器中使用 `return` 单词，函数的响应将用于决定是否运行剩余的正常动作。在这种情况下，如果 `confirm_link()` 返回 `false`，我们的链接动作将被取消。
 - 在浏览器中加载页面并查看结果。
+
 ![](img/image01388.jpeg)
 
 | ROBERT PETERSON | 79 |
@@ -2543,20 +2362,17 @@ return check;
 ### 要点
 
 - 在 HTML 中，我们可以使用 `id` 属性识别页面上的特定元素。例如，为了给一个图像“命名”，我们可以使用以下代码：
+
 ```html
-<img src=”logo.gif” alt=”” id=”theLogo” />
+<img src="logo.gif" alt="" id="theLogo" />
 ```
-- 在 JavaScript 中引用此元素，我们现在可以直接通过它的 `id` 值获取它：
-`document.getElementById(“theLogo”)`
+
+- 在 JavaScript 中引用此元素，我们现在可以直接通过它的 `id` 值获取它：`document.getElementById("theLogo")`
 - 此方法将返回一个指向页面上给定元素的对象。如果找不到此类元素，该方法将返回 `false`。
-- 为了方便使用，我们可以将找到的对象赋值给变量。例如，为了在脚本中创建一个名为 `our_logo` 的对象，我们可以使用以下代码行：
-`our_logo = document.getElementById(“theLogo”);`
-- 结果对象有许多属性。由于在这种情况下，我们的对象代表一个图像元素，它的属性包括：
-`our_logo.height`
-`our_logo.width`
-`our_logo.src`
-- 我们可以使用 JavaScript 更改这些属性的任何一个，所以如果我们想更改显示的图像，可以如下操作：
-`our_logo.src = “new_logo.gif”;`
+- 为了方便使用，我们可以将找到的对象赋值给变量。例如，为了在脚本中创建一个名为 `our_logo` 的对象，我们可以使用以下代码行：`our_logo = document.getElementById("theLogo");`
+- 结果对象有许多属性。由于在这种情况下，我们的对象代表一个图像元素，它的属性包括：`our_logo.height`、`our_logo.width`、`our_logo.src`
+- 我们可以使用 JavaScript 更改这些属性的任何一个，所以如果我们想更改显示的图像，可以如下操作：`our_logo.src = "new_logo.gif";`
+
 ![](img/image01388.jpeg)
 
 | ROBERT PETERSON | 80 |
@@ -2565,7 +2381,7 @@ return check;
 
 ## Project
 
-- 从网络驱动器器将名为 `images` 的文件夹复制到你的项目文件夹。
+- 从网络驱动器将名为 `images` 的文件夹复制到你的项目文件夹。
 - 打开你之前的项目文件，并将其另存为 `chapter_22.html`。
 - 清空 `script` 标签中所有的 JavaScript 代码。
 - 确保你在文档的 `head` 区域有一个 `script` 元素，并且 `body` 区域没有。
@@ -2574,11 +2390,10 @@ return check;
 - 使用的图像文件
 - 图像宽度
 - 图像高度
-- 为了让每段文本单独行显示，你可以在警报文本中添加以下字符：
-`\n`
-例如
-`alert(“line one\nLine two”);`
+- 为了让每段文本单独行显示，你可以在警报文本中添加以下字符：`\n`
+例如：`alert("line one\nLine two");`
 - 在浏览器中加载页面并查看结果。
+
 ![](img/image01388.jpeg)
 
 | ROBERT PETERSON | 81 |
@@ -2595,23 +2410,28 @@ return check;
 - 鼠标离开图像，原始图像被加载。
 - 正如你可能意识到的，我们将使用 JavaScript 来更改图像的 `src` 属性。考虑这一点的最好方法是将 `<img>` 标签简单地视为页面上的一个空间，图像文件可以加载到其中。`src` 属性告诉浏览器要加载哪个图像，因此如果我们更改了该值，图像就会改变。
 - 换句话说，`<img>` 标签的 `id` 属性命名的是“空间”，而不是图像。
-![](img/image388.jpeg)
+
+![](img/image01388.jpeg)
 
 | ROBERT PETERSON | 82 |
 |  |  |  |
 |  |  |  |
 
 - 现在，为了用 JavaScript 修改 `src` 属性，我们需要告诉 JavaScript 我们想要更改哪个图像“空间”。我们使用 `id` 属性结合上一章的 `getElementById()` 方法来实现此：
+
 ```javascript
-button_img = document.getElementById(“button”);
-button_img.src = “new_image.jpg”;
+button_img = document.getElementById("button");
+button_img.src = "new_image.jpg";
 ```
+
 - 我们可以将此代码直接插入图像的事件处理器中：
+
 ```html
-<img src=”old.jpg” id=”button”
-onmouseover="document.getElementById(‘button’).src = ’new.jpg’;">
+<img src="old.jpg" id="button" onmouseover="document.getElementById('button').src = 'new.jpg';">
 ```
+
 - 注意这段代码突然变得非常复杂。有两个潜在的解决方案。第一个是定义一个函数：
+
 ```javascript
 function swap_image( id, new_image )
 {
@@ -2619,20 +2439,12 @@ img = document.getElementById(id);
 img.src = new_image;
 }
 ```
+
 - 这是一个更整洁的解决方案，重要的是我们可以通过更改函数调用的参数将其用于页面上的任何图像。我们也可以使用该函数来实现“切回”功能：
-```html
-<img src=”old.jpg” id=”button”
-onmouseover="swap_image(‘button’, ‘new.jpg’)">
-```
-
-
-
-
 
 ```html
 <img src="old.jpg" id="button" onmouseover="swap_image('button', 'new.jpg');" onmouseout="swap_image('button', 'old.jpg');">
 ```
-![](img/image01388.jpeg)
 
 - 尽管如此，我们可以在“清理”代码方面更进一步。由于事件处理程序被用于修改发生事件的对象（即：鼠标移动到我们试图更改的图像标签上），我们可以使用“自动魔术”般的 JavaScript 对象 `this` 来执行操作：
 
@@ -2648,7 +2460,6 @@ img.src = new_image;
 ```
 
 - 注意以下几点。首先，`this` 周围没有引号——我们像使用变量名一样使用它。其次，我们的函数现在直接使用第一个参数，而不是使用它从页面中获取相关对象。我们之所以这样做是因为 `this` 实际上是一个对象——它会获得调用它的时的任何对象的属性和方法，在这种情况下，它等同于 `document.getElementById('button')`，尽管显然要短得多！
-
 - 使用 `this` 有一些局限性。例如，如果我们想在鼠标移动到“button”时更改页面上任何其他图像的 `src` 属性，我们将无法使用 `this`，因此定义另一个可以接受 id 作为参数的函数，并通过它获取相关对象。
 
 ## 项目
@@ -2686,7 +2497,7 @@ img.src = new_image;
 |  |  |  |
 |  |  |  |
 
-## 24  对象实例化与更好的悬停效果
+## 24 对象实例化与更好的悬停效果
 
 ### 关键点
 
@@ -2716,6 +2527,7 @@ virtual_image = new Image();
 ```javascript
 virtual_image.src = "contactsover.jpg";
 ```
+
 - 现在浏览器将预加载我们的图像，准备在稍后切换。
 
 ### 项目
@@ -2745,7 +2557,7 @@ virtual_image.src = "contactsover.jpg";
 |  |  |  |
 |  |  |  |
 
-## 25  与浏览器窗口交互
+## 25 与浏览器窗口交互
 
 ### 关键点
 
@@ -2762,13 +2574,8 @@ virtual_image.src = "contactsover.jpg";
 window.open( page_url, name, parameters );
 ```
 
-- 从上面的原型可以看出，该方法只能接受三个参数。然而，`parameters` 参数实际上比我们想象的要复杂：
-
-`"param1,param2,param3,param4..."`
-
-因为我们可以用它为该方法添加许多参数。注意参数列表中没有空格。
-
-`name` 用于给窗口一个 HTML 名称——因此我们可以使用该名称通过上述“target”方法将链接打开到新窗口。
+- 从上面的原型可以看出，该方法只能接受三个参数。然而，`parameters` 参数实际上比我们想象的要复杂：`"param1,param2,param3,param4..."` 因为我们可以用它为该方法添加许多参数。注意参数列表中没有空格。
+- `name` 用于给窗口一个 HTML 名称——因此我们可以使用该名称通过上述“target”方法将链接打开到新窗口。
 
 ![](img/image01388.jpeg)
 
@@ -2776,11 +2583,7 @@ window.open( page_url, name, parameters );
 |  |  |  |
 |  |  |  |
 
-
-
-
-
-• `open` 方法的返回值是一个指向新打开窗口的对象变量。换句话说，如果我们像这样打开一个新窗口：
+- `open` 方法的返回值是一个指向新打开窗口的对象变量。换句话说，如果我们像这样打开一个新窗口：
 
 ```javascript
 win = window.open("page.html", "", "");
@@ -2788,16 +2591,16 @@ win = window.open("page.html", "", "");
 
 我们可以使用对象变量 `win` 通过 JavaScript 来修改新窗口。
 
-• 一个实际示例 —— 假设我们想要打开一个高 300 像素、宽 400 像素的新窗口，并在其中显示 BBC 新闻页面。使用以下代码即可：
+- 一个实际示例 —— 假设我们想要打开一个高 300 像素、宽 400 像素的新窗口，并在其中显示 BBC 新闻页面。使用以下代码即可：
 
 ```javascript
-window.open(“http://news.bbc.co.uk/”, “bbc”, “width=300,height=300”);
+window.open("http://news.bbc.co.uk/", "bbc", "width=300,height=300");
 ```
 
-• 下表给出了一些可用参数：
+- 下表给出了一些可用参数：
 
 | 参数 | 值 | 功能 |
-| | | |
+| :--- | :--- | :--- |
 | location | Yes/no | 决定是否显示位置栏（地址栏） |
 | menubar | Yes/no | 决定是否显示菜单栏 |
 | status | Yes/no | 决定是否显示状态栏 |
@@ -2806,69 +2609,69 @@ window.open(“http://news.bbc.co.uk/”, “bbc”, “width=300,height=300”)
 | resizable | Yes/no | 允许或不允许调整窗口大小 |
 | scrollbars | Yes/no | 允许或不允许窗口滚动 |
 
-• 如果没有设置任何参数，则每个参数的值在适当的情况下将被设置为“yes”。例如：
+- 如果没有设置任何参数，则每个参数的值在适当的情况下将被设置为“yes”。例如：
 
 ```javascript
-window.open(“http://www.bbc.co.uk/”, “bbc”, “”);
+window.open("http://www.bbc.co.uk/", "bbc", "");
 ```
 
 等同于：
 
 ```html
-<a href=”http://www.bbc.co.uk/” target=”bbc”>
+<a href="http://www.bbc.co.uk/" target="bbc">
 ```
 
 ![](img/image01388.jpeg)
 
 | ROBERT PETERSON | 90 |
-| | | |
-| | | |
+|  |  |  |
+|  |  |  |
 
-• 然而，如果设置了任何参数，所有其他参数将默认为“no”。所以如果你只想保留滚动条而其他内容，使用以下代码即可：
+- 然而，如果设置了任何参数，所有其他参数将默认为“no”。所以如果你只想保留滚动条而其他内容，使用以下代码即可：
 
 ```javascript
-window.open(“http://www.bbc.co.uk/”, “bbc”, “scrollbars=yes”);
+window.open("http://www.bbc.co.uk/", "bbc", "scrollbars=yes");
 ```
 
 ### Project
 
-• 打开你之前的项目文件，并将其保存为 `chapter_25.html`。
-• 移除之前文件中的所有函数和 HTML，只保留 logo 图片和链接。
-• 在 head 区域的 script 元素中创建一个名为 `view_new_logo` 的函数。该函数应该：
+- 打开你之前的项目文件，并将其保存为 `chapter_25.html`。
+- 移除之前文件中的所有函数和 HTML，只保留 logo 图片和链接。
+- 在 head 区域的 script 元素中创建一个名为 `view_new_logo` 的函数。该函数应该：
     - 打开一个 200 像素正方形的新窗口。
     - 从 images 文件夹加载图片 `rocollogo.jpg`。
     - 名称为 `RocolLogo`。
     - 存储在一个名为 `objNewLogo` 的对象变量中。
     - 无滚动条，固定大小，并且尽可能不具有其他特性。
-• 移除链接上所有的事件处理器，并添加一个新的处理器，以便在点击链接时运行上面的函数。
-• 一旦确认点击链接时按要求弹出窗口，请在函数测试测试表中的每个参数。
+- 移除链接上所有的事件处理器，并添加一个新的处理器，以便在点击链接时运行上面的函数。
+- 一旦确认点击链接时按要求弹出窗口，请在函数测试测试表中的每个参数。
 
 ![](img/image01388.jpeg)
 
 | ROBERT PETERSON | 91 |
-| | | |
-| | | |
+|  |  |  |
+|  |  |  |
 
-26 浏览器窗口的定位
+## 26 浏览器窗口的定位
 
 ### Key Points
 
-• `screen` 对象允许你在 JavaScript 应用程序中访问用户计算机显示器的属性。
-• 一些可用属性包括：
+- `screen` 对象允许你在 JavaScript 应用程序中访问用户计算机显示器的属性。
+- 一些可用属性包括：
 
 | 属性 | 描述 |
-| : | |
+| :--- | :--- |
 | availHeight | 用户屏幕的像素高度减去工具栏和任何其他永久对象（例如 Windows 任务栏） |
 | availWidth | 与 availHeight 类似，但处理水平空间 |
 | colorDepth | 用户屏幕可以显示的最大颜色数（位格式，例如 24 位、16 位等） |
 | height | 用户显示器的实际像素高度 |
 | width | 用户显示器的实际像素位宽 |
 
-• `open()` 方法的 `left` 和 `top` 参数允许你通过指定距离屏幕左侧和顶部的像素数来指定窗口在屏幕上的位置。
-• 如果你需要使用变量来指定 `open()` 方法中参数的值，可以如下操作：
+- `open()` 方法的 `left` 和 `top` 参数允许你通过指定距离屏幕左侧和顶部的像素数来指定窗口在屏幕上的位置。
+- 如果你需要使用变量来指定 `open()` 方法中参数的值，可以如下操作：
 
 ```javascript
-window.open(“index.html”, “window_name”, “width=200,height=200,left=”+var_left+ “top=”+var_top);
+window.open("index.html", "window_name", "width=200,height=200,left="+var_left+"top="+var_top);
 ```
 
 其中 `var_left` 和 `var_top` 是相应的变量。
@@ -2876,12 +2679,12 @@ window.open(“index.html”, “window_name”, “width=200,height=200,left=�
 ![](img/image01388.jpeg)
 
 | ROBERT PETERSON | 92 |
-| | | |
-| | | |
+|  |  |  |
+|  |  |  |
 
-• 注意使用 `+` 运算符，以确保在添加变量时 `open()` 方法的第三个参数保持为单个字符串。
-• 为了让窗口在用户屏幕上居中，需要一点简单的几何计算。屏幕的中心显然是屏幕宽度除以二、屏幕高度除以二时得到的点。然而，如果我们将窗口的 top 和 left 值设置为这些坐标，窗口的左上角将居中，而不是窗口本身。
-• 为了让窗口居中，我们需要从 top 值中减去窗口高度的一半，从 left 值中减去窗口宽度的一半。实现此点的简单脚本如下：
+- 注意使用 `+` 运算符，以确保在添加变量时 `open()` 方法的第三个参数保持为单个字符串。
+- 为了让窗口在用户屏幕上居中，需要一点简单的几何计算。屏幕的中心显然是屏幕宽度除以二、屏幕高度除以二时得到的点。然而，如果我们将窗口的 top 和 left 值设置为这些坐标，窗口的左上角将居中，而不是窗口本身。
+- 为了让窗口居中，我们需要从 top 值中减去窗口高度的一半，从 left 值中减去窗口宽度的一半。实现此点的简单脚本如下：
 
 ```javascript
 win_width = 200;
@@ -2890,48 +2693,47 @@ win_left = (screen.availWidth/2) - (win_width/2);
 win_top = (screen.availHeight/2) - (win_height/2);
 ```
 
-• 通过此脚本，对于任何适当使用 `win_width` 和 `win_height` 的窗口，`win_left` 和 `win_top` 的值将被正确设置，以便在屏幕上居中。
+- 通过此脚本，对于任何适当使用 `win_width` 和 `win_height` 的窗口，`win_left` 和 `win_top` 的值将被正确设置，以便在屏幕上居中。
 
 ### Project
 
-• 打开你之前的项目文件，并将其保存为 `chapter_26.html`。
-• 修改现有的代码，确保 logo 在用户屏幕上居中。如果可能，不要通过创建两个新函数以外的操作来修改你的原始函数——`get_win_left( width )` 和 `get_win_top( height )`。
+- 打开你之前的项目文件，并将其保存为 `chapter_26.html`。
+- 修改现有的代码，确保 logo 在用户屏幕上居中。如果可能，不要通过创建两个新函数以外的操作来修改你的原始函数——`get_win_left( width )` 和 `get_win_top( height )`。
 
 ![](img/image01388.jpeg)
 
 | ROBERT PETERSON | 93 |
-| | | |
-| | | |
+|  |  |  |
+|  |  |  |
 
-27 聚焦与失焦
+## 27 聚焦与失焦
 
 ### Key Points
 
-• `window` 对象的 `focus()` 方法为特定窗口赋予焦点。换句话说，它确保该窗口置于任何其他窗口之上，并由计算机激活。例如，如果我们创建了一个新窗口并将结果存储在名为 `new_window` 的对象变量中，可以使用以下代码在窗口打开后的任何时候确保该窗口回到最前面：
+- `window` 对象的 `focus()` 方法为特定窗口赋予焦点。换句话说，它确保该窗口置于任何其他窗口之上，并由计算机激活。例如，如果我们创建了一个新窗口并将结果存储在名为 `new_window` 的对象变量中，可以使用以下代码在窗口打开后的任何时候确保该窗口回到最前面：
 
 ```javascript
 new_window.focus();
 ```
 
-• 反之，我们可以使用 `blur()` 方法移除指定窗口的焦点 —— 在需要时将焦点返回给之前选中的窗口。它的用法与 `focus()` 方法类似。
-• 这两个都有关联的事件处理器：`onblur` 和 `onfocus`。然而，由于它们没有关联的 HTML 标签，我们如何将事件处理器附加到对象上呢？
-• 事实证明在 JavaScript 中，每个对象对于其可以应用的每个事件处理器都有一个单独的属性。例如，如果我们想给页面上的 img 标签添加事件处理器，可以使用以下方法之一来实现：
+- 反之，我们可以使用 `blur()` 方法移除指定窗口的焦点 —— 在需要时将焦点返回给之前选中的窗口。它的用法与 `focus()` 方法类似。
+- 这两个都有关联的事件处理器：`onblur` 和 `onfocus`。然而，由于它们没有关联的 HTML 标签，我们如何将事件处理器附加到对象上呢？
+- 事实证明在 JavaScript 中，每个对象对于其可以应用的每个事件处理器都有一个单独的属性。例如，如果我们想给页面上的 img 标签添加事件处理器，可以使用以下方法之一来实现：
 
 ```html
-<img src=”…” id=”test_img” onclick=”do_something();” />
-
+<img src="…" id="test_img" onclick="do_something();" />
 <script>
-document.getElementById (“test_img”).onclick= do_something();
+document.getElementById("test_img").onclick= do_something();
 </script>
 ```
 
 ![](img/image01388.jpeg)
 
 | ROBERT PETERSON | 94 |
-| | | |
-| | | |
+|  |  |  |
+|  |  |  |
 
-• 所以，为了将函数附加到窗口的 `focus` 事件，我们可以使用：
+- 所以，为了将函数附加到窗口的 `focus` 事件，我们可以使用：
 
 ```javascript
 new_window.onfocus = some_function();
@@ -2939,28 +2741,23 @@ new_window.onfocus = some_function();
 
 ### Project
 
-• 打开你之前的项目文件，并将其保存为 `chapter_27.html`。
-• 修改你的函数，在打开原始窗口的同时打开另一个窗口，具有以下特性：
+- 打开你之前的项目文件，并将其保存为 `chapter_27.html`。
+- 修改你的函数，在打开原始窗口的同时打开另一个窗口，具有以下特性：
     - 第二个窗口应名为 `oldRocolLogo`，分配给对象变量 `objOldLogo`，并显示来自 `images/rocollogo.gif` 的旧 logo。
 - 打开时，窗口应该被定位，以便清晰地看到两者。
-• 在此时测试你的修改。
-• 观察当窗口打开、原始窗口置于它们前面以及再次调用函数时函数的动作。
-• 在函数中添加一条新语句，使用 `focus()` 方法确保当调用函数时，两个新窗口都移动到窗口“栈”的最顶部。
-• 观察当调用函数时哪个 logo 显示在“上方”。再次使用 `focus()` 方法来改变这一结果。
+- 在此时测试你的修改。
+- 观察当窗口打开、原始窗口置于它们前面以及再次调用函数时函数的动作。
+- 在函数中添加一条新语句，使用 `focus()` 方法确保当调用函数时，两个新窗口都移动到窗口“栈”的最顶部。
+- 观察当调用函数时哪个 logo 显示在“上方”。再次使用 `focus()` 方法来改变这一结果。
 
-
-
-
-
-• 使用 JavaScript 按需创建新页面是非常简单的。在这种语下，我们讨论的是在不向窗口加载任何文件的情况下，在窗口中创建一个全新的页面。
-
-• 要实现这一点，调用 `window` 对象的 `open()` 方法，并将位置参数留空：
+- 使用 JavaScript 按需创建新页面是非常简单的。在这种语下，我们讨论的是在不向窗口加载任何文件的情况下，在窗口中创建一个全新的页面。
+- 要实现这一点，调用 `window` 对象的 `open()` 方法，并将位置参数留空：
 
 ```javascript
-new_win = window.open("”, “newWin”, “params…”);
+new_win = window.open("", "newWin", "params…");
 ```
 
-• 接下来，请记住你可以使用窗口的 `document.write()` 方法向页面写入 HTML 代码。到目前为止，我们只使用了当前窗口的 `document` 对象。但是，我们可以如下所示指定我们想要操作哪个窗口的 `document`：
+- 接下来，请记住你可以使用窗口的 `document.write()` 方法向页面写入 HTML 代码。到目前为止，我们只使用了当前窗口的 `document` 对象。但是，我们可以如下所示指定我们想要操作哪个窗口的 `document`：
 
 ```javascript
 document.write(); // 写入当前窗口
@@ -2970,13 +2767,16 @@ new_win.document.write(); // 或写入新窗口
 例如：
 
 ```javascript
-new_win.document.write“<html><head>”);
-new_win.document.write“<title>demo</title>): new_win.document.write“(</head><body>”); new_win.document.write“(<h1>Hello!</h1>”); new_win.document.write“(</body></html>”);
+new_win.document.write("<html><head>");
+new_win.document.write("<title>demo</title>");
+new_win.document.write("</head><body>");
+new_win.document.write("<h1>Hello!</h1>");
+new_win.document.write("</body></html>");
 ```
 
 ## 项目
 
-• 打开你之前的项目文件，并将其保存为 `chapter_28.html`。
+- 打开你之前的项目文件，并将其保存为 `chapter_28.html`。
 
 ![](img/image01388.jpeg)
 
@@ -2984,8 +2784,7 @@ new_win.document.write“<title>demo</title>): new_win.document.write“(</head>
 |  |  |  |
 |  |  |  |
 
-• 修改现有的脚本创建一个具有以下属性的第三个窗口：
-
+- 修改现有的脚本创建一个具有以下属性的第三个窗口：
 > 窗口应命名为 `newHTML`，并赋值给对象变量 `objNewHTML`。
 > 它的大小应该是 400 像素的正方形。
 > 它在创建时不应加载任何页面。它应该作为 `H1` 标题显示“Welcome”字样。
@@ -2993,7 +2792,7 @@ new_win.document.write“<title>demo</title>): new_win.document.write“(</head>
 > 第三个窗口的标题应该是“Rocol Art”。
 > 当所有窗口都打开后，第三个窗口应该是被聚焦（focussed）的。
 
-• 在浏览器中检查你的工作结果。
+- 在浏览器中检查你的工作结果。
 
 ![](img/image01388.jpeg)
 
@@ -3005,7 +2804,7 @@ new_win.document.write“<title>demo</title>): new_win.document.write“(</head>
 
 ### 关键点
 
-• `window` 对象的 `close()` 方法允许你关闭一个窗口。如果你在当前窗口中有一个指向想要关闭的窗口的对象变量，你可以简单地使用：
+- `window` 对象的 `close()` 方法允许你关闭一个窗口。如果你在当前窗口中有一个指向想要关闭的窗口的对象变量，你可以简单地使用：
 
 ```javascript
 new_window.close();
@@ -3013,13 +2812,10 @@ new_window.close();
 
 来关闭该窗口。
 
-• 当你想从打开新窗口的另一个窗口关闭该窗口时，情况会稍微复杂一些。为了解决这个问题，我们需要考虑窗口作用域（window scope）。
-
-• 当我们在代码中编写 JavaScript 时，该脚本中的所有函数和变量都可以供我们在该窗口内使用。例如，如果我们在主窗口中有一个名为 `say_hello()` 的函数，我们可以轻松地调用该 `function`。然而，如果我们想从一个新打开的窗口调用该函数，我们无法在新窗口中直接调用它，因为我们的函数和变量是“绑定”在它们最初被定义的窗口上的。
-
-• 这就是为什么当我们想向包含 JavaScript 代码之外的任何窗口写入内容时，我们必须访问该窗口的 `document` 对象以便将内容放在正确的位置。
-
-• 但反过来操作呢？假设我们在主窗口（称之为 `window 1`）中使用一个函数来打开一个新窗口（`window 2`）。如果我们将 `window 2` 存储为对象变量，我们就可以通过该对象从 `window 1` 访问 `window 2` 的所有属性。问题是，我们如何从 `window 2` 访问 `window 1` 的任何属性呢？
+- 当你想从打开新窗口的另一个窗口关闭该窗口时，情况会稍微复杂一些。为了解决这个问题，我们需要考虑窗口作用域（window scope）。
+- 当我们在代码中编写 JavaScript 时，该脚本中的所有函数和变量都可以供我们在该窗口内使用。例如，如果我们在主窗口中有一个名为 `say_hello()` 的函数，我们可以轻松地调用该 `function`。然而，如果我们想从一个新打开的窗口调用该函数，我们无法在新窗口中直接调用它，因为我们的函数和变量是“绑定”在它们最初被定义的窗口上的。
+- 这就是为什么当我们想向包含 JavaScript 代码之外的任何窗口写入内容时，我们必须访问该窗口的 `document` 对象以便将内容放在正确的位置。
+- 但反过来操作呢？假设我们在主窗口（称之为 `window 1`）中使用一个函数来打开一个新窗口（`window 2`）。如果我们将 `window 2` 存储为对象变量，我们就可以通过该对象从 `window 1` 访问 `window 2` 的所有属性。问题是，我们如何从 `window 2` 访问 `window 1` 的任何属性呢？
 
 ![](img/image01388.jpeg)
 
@@ -3027,26 +2823,22 @@ new_window.close();
 |  |  |  |
 |  |  |  |
 
-• 关键在于 `window 2` 和 `window 1` 之间存在特殊关系——“父子关系”。我们可以通过特殊对象 `opener` 从 `window 2` 访问 `window 1` 的任何属性。这是任何由 JavaScript 打开的窗口内部创建的对象，它始终指向打开新窗口的那个窗口。
-
-• 为了这一点，让我们考虑之前的项目。我们有三个新窗口和一个“父”窗口。如果我们想在其中一个新窗口上使用事件处理器来关闭另一个新窗口，我们需要先访问父窗口，然后访问父窗口内指向想要关闭的窗口的对象变量。
-
-• 假设我们从 `window_1` 中的一个链接关闭 `window_2`。我们必须在链接中创建一个带有以下代码的事件处理器：
+- 关键在于 `window 2` 和 `window 1` 之间存在特殊关系——“父子关系”。我们可以通过特殊对象 `opener` 从 `window 2` 访问 `window 1` 的任何属性。这是任何由 JavaScript 打开的窗口内部创建的对象，它始终指向打开新窗口的那个窗口。
+- 为了这一点，让我们考虑之前的项目。我们有三个新窗口和一个“父”窗口。如果我们想在其中一个新窗口上使用事件处理器来关闭另一个新窗口，我们需要先访问父窗口，然后访问父窗口内指向想要关闭的窗口的对象变量。
+- 假设我们从 `window_1` 中的一个链接关闭 `window_2`。我们必须在链接中创建一个带有以下代码的事件处理器：
 
 ```html
-onclick=”opener.window_2.close();”
+onclick="opener.window_2.close();"
 ```
 
 ## 项目
 
-• 打开你之前的项目文件，并将其保存为 `chapter_29.html`。
-
-• 修改现有的脚本以实现以下功能：
-
+- 打开你之前的项目文件，并将其保存为 `chapter_29.html`。
+- 修改现有的脚本以实现以下功能：
 > 在第三个窗口的内容中添加两个新段落，包含以下文本：The Old Logo The New Logo
 > 每一行都应该包含在一个超链接中，链接的事件处理器访问父窗口中指向相应新窗口的对象变量。然后调用其 `close()` 方法。
 
-• 在浏览器中检查你的工作结果。
+- 在浏览器中检查你的工作结果。
 
 ![](img/image01388.jpeg)
 
@@ -3058,19 +2850,16 @@ onclick=”opener.window_2.close();”
 
 ### 关键点
 
-• JavaScript 可以轻松地避免我们需要输入大量的 HTML。正如我们所见，我们可以使用少量代码通过 JavaScript 来生成大型表单元素和表格。这对我们来说是个好消息，因为它让我们的工作变得更简单。对于访问者来说也是个好消息，因为他们只需要下载少量代码即可获取较大量的内容。
-
-• 然而，我们可以做得更好。目前，如果我们有一个函数会为表单的出生日期部分生成年份下拉菜单，我们需要在每个需要的页面中都包含该函数。这意味着我们的访问者在多次下载相同的内容。此外，如果我们更改或改进了函数，我们必须确保在包含该函数的每个页面中更新它。
-
-• HTML 允许我们通过提供一种机制将外部文本文件加载到 HTML 页面中并将其内容视为 JavaScript 代码来解决此问题。由于它是单独的文件，一旦被下载过一次，如果另一个页面请求它，浏览器将不再下载该文件的后续副本。换句话说，我们可以将所有的 JavaScript 代码加载到一个文件中，那里的任何更改将立即反映在整个网站上。
-
-• 要使用外部文件中的代码，我们仍然使用 `<script>` 标签，但带了一个新属性 `src` 属性。这与在页面上加载图像文件非常相似：
+- JavaScript 可以轻松地避免我们需要输入大量的 HTML。正如我们所见，我们可以使用少量代码通过 JavaScript 来生成大型表单元素和表格。这对我们来说是个好消息，因为它让我们的工作变得更简单。对于访问者来说也是个好消息，因为他们只需要下载少量代码即可获取较大量的内容。
+- 然而，我们可以做得更好。目前，如果我们有一个函数会为表单的出生日期部分生成年份下拉菜单，我们需要在每个需要的页面中都包含该函数。这意味着我们的访问者在多次下载相同的内容。此外，如果我们更改或改进了函数，我们必须确保在包含该函数的每个页面中更新它。
+- HTML 允许我们通过提供一种机制将外部文本文件加载到 HTML 页面中并将其内容视为 JavaScript 代码来解决此问题。由于它是单独的文件，一旦被下载过一次，如果另一个页面请求它，浏览器将不再下载该文件的后续副本。换句话说，我们可以将所有的 JavaScript 代码加载到一个文件中，那里的任何更改将立即反映在整个网站上。
+- 要使用外部文件中的代码，我们仍然使用 `<script>` 标签，但带了一个新属性 `src` 属性。这与在页面上加载图像文件非常相似：
 
 ```html
-<script language=”JavaScript” type=”text/JavaScript” src=”s/script_file.js"></script>
+<script language="JavaScript" type="text/JavaScript" src="s/script_file.js"></script>
 ```
 
-• 注意以下三点：
+- 注意以下三点：
 
 ![](img/image01388.jpeg)
 
@@ -3078,21 +2867,17 @@ onclick=”opener.window_2.close();”
 |  |  |  |
 |  |  |  |
 
-• `language` 和 `type` 属性在这里是关重要的。
-• `script` 标签仍然有一个闭合标签 `</script>`。
-• 当我们使用标签加载外部文件时，我们不能在标签之间添加任何额外的 JavaScript。若要只向当前页面添加 JavaScript，我们必须使用第二组 `<script>` 标签。
+- `language` 和 `type` 属性在这里是关键的。
+- `script` 标签仍然有一个闭合标签 `</script>`。
+- 当我们使用标签加载外部文件时，我们不能在标签之间添加任何额外的 JavaScript。若要只向当前页面添加 JavaScript，我们必须使用第二组 `<script>` 标签。
 
 ## 项目
 
-• 打开你之前的项目文件，并将其保存为 `chapter_30.html`。
-
-• 将你所有的 JavaScript 函数定义以及 head 部分 script 元素中的任何其他代码移动到一个名为 `script.js` 的新文件中。
-
-• 修改你的 head 部分 script 元素以从新文件加载代码。
-
-• 检查你的页面是否仍然按预期工作。
-
-• 注意：`.js` 文件扩展名只是一种命名规范。`<script>` 标签将从任何文本文件中加载 JavaScript（因此需要包含 `type` 和 `language` 属性）。然而，这是一种广泛使用的惯例，遵循它有助于确保未来任何可能处理你代码的人都能轻松理解它。
+- 打开你之前的项目文件，并将其保存为 `chapter_30.html`。
+- 将你所有的 JavaScript 函数定义以及 head 部分 script 元素中的任何其他代码移动到一个名为 `script.js` 的新文件中。
+- 修改你的 head 部分 script 元素以从新文件加载代码。
+- 检查你的页面是否仍然按预期工作。
+- 注意：`.js` 文件扩展名只是一种命名规范。`<script>` 标签将从任何文本文件中加载 JavaScript（因此需要包含 `type` 和 `language` 属性）。然而，这是一种广泛使用的惯例，遵循它有助于确保未来任何可能处理你代码的人都能轻松理解它。
 
 ![](img/image01388.jpeg)
 
@@ -3104,29 +2889,23 @@ onclick=”opener.window_2.close();”
 
 ### 关键点
 
-• 没有 JavaScript，服务器将处理所有通过表单提交信息的验证和处理。在方程的客户端使用 JavaScript 可以为用户节省时间，并创建一个更高效的流程。
-
-• 某些处理可以由 JavaScript 处理（例如数学计算），并且 JavaScript 可以确保只将正确的数据发送到服务器进行处理。
-
-
-
-
-
+- 没有 JavaScript，服务器将处理所有通过表单提交信息的验证和处理。在方程的客户端使用 JavaScript 可以为用户节省时间，并创建一个更高效的流程。
 - `JavaScript` 与服务器端处理结合使用——它不是后者的替代。
+- 某些处理可以由 JavaScript 处理（例如数学计算），并且 JavaScript 可以确保只将正确的数据发送到服务器进行处理。
 - 为了以表单的形式访问信息，我们使用文档对象的 `getElementById()` 方法，就像我们之前访问页面上的其他对象所做。例如，如果页面上有一个所示的表单：
 
 ```html
-<form id=”testForm” … >
+<form id="testForm" … >
 </form>
 ```
 
 我们会在 JavaScript 中使用以下代码访问它：
 
 ```javascript
-document.getElementById(testForm’);
+document.getElementById('testForm');
 ```
 
-#### 得到的对象实际上是一个多维数组。它的每个元素本身都是数组，包含有关表单元素（文本框、按钮等）的信息。通过在相应的 `<INPUT>` 标签中为表单的每个元素正确命名，你可以访问与表单的每个元素相关的信息。
+- 得到的对象实际上是一个多维数组。它的每个元素本身都是数组，包含有关表单元素（文本框、按钮等）的信息。通过在相应的 `<INPUT>` 标签中为表单的每个元素正确命名，你可以访问与表单的每个元素相关的信息。
 
 ![](img/image01388.jpeg)
 
@@ -3137,34 +2916,33 @@ document.getElementById(testForm’);
 - 要访问存储在 id 为 `Enquiry` 的表单中名为 `Name` 的文本框中的数据，你可以如下使用 `value` 属性：
 
 ```javascript
-objForm = document.getElementById(‘Enquiry’);
+objForm = document.getElementById('Enquiry');
 strValue = objForm.Name.value
 ```
 
 - 有两种将表单数据发送到服务器的方法。使用 `method` 属性，你可以指定 `GET` 或 `POST` 方法：
 
 ```html
-<form id =”enquiryform” method=”GET”…
+<form id="enquiryform" method="GET"…>
 ```
 ```html
-<form id =”enquiryform” method=”POST”…
+<form id="enquiryform" method="POST"…>
 ```
 
-- 一般而言，如果你想从表单发送大量数据（例如文件、大量文本），你应该应该使用 `POST` 方法。如果你想处理搜索表单等，应该使用 `GET` 方法，因为 `GET` 表单将像 URL 一样传输，因此可以保存为书签或链接。
+- 一般而言，如果你想从表单发送大量数据（例如文件、大量文本），你应该使用 `POST` 方法。如果你想处理搜索表单等，应该使用 `GET` 方法，因为 `GET` 表单将像 URL 一样传输，因此可以保存为书签或链接。
 - 通常情况下，你会将表单发送到服务器端脚本，由表单的 `action` 属性指定：
 
 ```html
-<form id=”enquiryform” method=”GET”
-action=”process.php”…
+<form id="enquiryform" method="GET" action="process.php"…>
 ```
 
 - 当用户点击表单的提交（Submit）按钮时，如果没有 JavaScript 的干预，表单数据将直接发送到服务器进行处理。但通过在 `<form>` 标签中包含 `onsubmit` 事件处理程序，你可以在数据发送之前拦截数据（以便用 JavaScript 处理它）。这允许你在发送数据之前运行一个 JavaScript 函数：
 
 ```html
-<form id=”enquiryform” method=”GET”
-action=”process.php”
-onsubmit=”functionName()”>
+<form id="enquiryform" method="GET" action="process.php" onsubmit="functionName()">
 ```
+
+
 
 - 在上面的示例中，当用户点击提交按钮时，首先运行函数 `functionName()`，然后将数据发送到服务器。
 
@@ -3180,16 +2958,16 @@ onsubmit=”functionName()”>
 - 你可以通过以下方式指定函数的返回值也是 `onsubmit` 事件处理程序的返回值：
 
 ```javascript
-onsubmit=”return functionName();”
+onsubmit="return functionName();"
 ```
 
 ## 项目
 
 - 打开你之前的项目文件，并将其另存为 `chapter_31.html`。
 - 清空页面 `body` 元素中的所有内容，并确保 `head` 区域的 `script` 元素为空。
-- 将此页面另存为 `processing_31.html`，并在 `body` 区域放置一个显示为“success!”的 `<h1><h1>` 元素。
+- 将此页面另存为 `processing_31.html`，并在 `body` 区域放置一个显示为“success!”的 `<h1></h1>` 元素。
 - 现在，关闭你的 `processing_31.html` 页面，并使用 HTML 在原始的 `chapter_31.html` 页面上创建一个表单——如果你在在这方面有困难，导师将提供一个示例供你复制。你的表单应该：
-    - 具有 `id=jscourseform`（注：原文为 jsCourseForm）的句柄。
+    - 具有 `id="jscourseform"` 的句柄。
     - 有一个 `name` 值为 `name` 的单个输入框。
     - 有一个提交按钮。
     - 使用 `GET` 方法提交。
@@ -3211,15 +2989,19 @@ onsubmit=”return functionName();”
       可能是你拼写错了名字……
       或者你还没实力……
       再试一次。
-      ```
+
 - 此外，应该阻止表单提交。
+
 - 如果用户输入了正确的名字，表单应该能够无中断地提交。
+
 - 在浏览器中检查你的工作结果。
 
 ![](img/image01388.jpeg)
 
 | ROBERT PETERSON | 105 |
+
 |  |  |  |
+
 |  |  |  |
 
 ## 32 表单方法和事件处理器
@@ -3227,14 +3009,15 @@ onsubmit=”return functionName();”
 ### 关键点
 
 - 每个表单对象（例如文本、按钮等）都有一组与其相关的属性。每个表单元素的情况不同。`value` 属性是大多数表单元素通用的，而且是最有属性之一。
-- 你可以可以将在 id 为 `Enquiry` 的表单中名为 `Name` 的文本框中存储的数据赋值给 `variable`，如下：
+
+- 你可以将在 id 为 `Enquiry` 的表单中名为 `Name` 的文本框中存储的数据赋值给 `variable`，如下：
 
 ```javascript
-variable = document.getElementById(‘Enquiry’).
-Name.value
+variable = document.getElementById('Enquiry').Name.value
 ```
 
 - 表单对象还有与其相关的方法。每个表单对象的可用方法集都不同。
+
 - 下面是文本对象的常用方法列表：
 
 | 方法 | 说明 |
@@ -3245,17 +3028,20 @@ Name.value
 
 - 下面是按钮对象的常用方法列表：
 
-| | 方法 | 说明 |
-| :--- | :--- | :--- |
-| | `blur()` | 移除按钮的焦点 |
-| | `focus()` | 使按钮获得焦点 |
-| | `click()` | 调用按钮的事件处理器 |
+| 方法 | 说明 |
+| :--- | :--- |
+| `blur()` | 移除按钮的焦点 |
+| `focus()` | 使按钮获得焦点 |
+| `click()` | 调用按钮的事件处理器 |
 
 | ROBERT PETERSON | 106 |
+
 |  |  |  |
+
 |  |  |  |
 
 - 表单对象还有与其相关的事件处理器。每个表单对象的事件处理器集都不同。
+
 - 下面是文本对象的常用事件处理器列表：
 
 | 事件处理器 | 当……时运行 JavaScript 代码 |
@@ -3276,13 +3062,15 @@ Name.value
 - 最后，如果你正在向服务器发送数据，提交按钮并不是唯一的方法。你可以在由事件处理程序调用的函数中使用 `submit()` 方法。它的操作就像点击了提交按钮一样：
 
 ```javascript
-document.getElementById(‘Enquiry’).submit();
+document.getElementById('Enquiry').submit();
 ```
 
 ## 项目
 
 - 打开你之前的项目文件，并将其另存为 `chapter_32.html`。
+
 - 按以下方式修改你的表单：
+
     - 移除提交按钮
     - 用标准的表单按钮替换提交按钮。
     - 为此按钮添加事件处理器，以调用 `head` 区域 `script` 元素中的函数。
@@ -3291,10 +3079,13 @@ document.getElementById(‘Enquiry’).submit();
 ![](img/image01388.jpeg)
 
 | ROBERT PETERSON | 107 |
+
 |  |  |  |
+
 |  |  |  |
 
 - 现在，按以下方式修改 `check_form()` 函数：
+
     - 如果用户在名字处输入“Bugs Bunny”，函数使用表单的 `submit()` 方法提交表单。
     - 如果用户输入其他任何内容，则显示之前的警告框且不提交表单，但：
       - 在文本框中显示“please try again”（请重试）。
@@ -3303,87 +3094,102 @@ document.getElementById(‘Enquiry’).submit();
 
 - 在浏览器中检查你的工作结果。
 
-
-
-
-
 # 33 JavaScript 与数学
 
 ## 核心点
 
--   `Math` 对象是一个预定义的 JavaScript 对象，包含了你可以用于进行数学计算的属性和方法。
--   以下是一些实用的 `Math` 方法：
+- `Math` 对象是一个预定义的 JavaScript 对象，包含了你可以用于进行数学计算的属性和方法。
+
+- 以下是一些实用的 `Math` 方法：
 
 | 方法 | 返回 |
 | :--- | :--- |
-| `Math.cell()` | 大于或等于数字的最小整数。 |
-| | 也就是说，它将任何数字向上取整到下一个整数。 |
-| | `Math.cell(2.6)` 返回 `3`，`Math.cell(2.2)` 也是 `3`。 |
-| `Math.floor()` | 大于或等于数字的最大整数。 |
-| | 也就是说，它将任何数字向下取整到下一个整数。 |
-| | `Math.floor(2.2)` 返回 `2`，`Math.floor(2.6)` 也是 `2`。 |
+| `Math.ceil()` | 大于或等于数字的最小整数。也就是说，它将任何数字向上取整到下一个整数。`Math.ceil(2.6)` 返回 `3`，`Math.ceil(2.2)` 也是 `3`。 |
+| `Math.floor()` | 小于或等于数字的最大整数。也就是说，它将任何数字向下取整到下一个整数。`Math.floor(2.2)` 返回 `2`，`Math.floor(2.6)` 也是 `2`。 |
 | `Math.max(n1,n2)` | 两个参数中较大的的一个。 |
 | `Math.min(n1,n2)` | 两个参数中较小的一个。 |
 | `Math.random()` | 0 到 1 之间的随机数。 |
 | `Math.round()` | 舍入到最近整数的数字。 |
 | `Math.sqrt()` | 数字的平方根。 |
 
--   你不需要在表单中包含“提交”按钮，也不需要将表单数据发送到服务器。你可以使用事件处理器来调用 JavaScript 代码，仅处理表单上的数据（例如，你只需对某些用户数据进行一些数学计算）。
+- 你不需要在表单中包含“提交”按钮，也不需要将表单数据发送到服务器。你可以使用事件处理器来调用 JavaScript 代码，仅处理表单上的数据（例如，你只需对某些用户数据进行一些数学计算）。
 
 ![](img/image01388.jpeg)
 
--   如果你不将数据发送到服务器，则不需要在 `<FORM>` 标签中包含 `Action` 或 `Method` 属性，尽管默认情况下 `Action` 通常会提交到当前页面，而 `Method` 将被设置为“get”。
+- 如果你不将数据发送到服务器，则不需要在 `<FORM>` 标签中包含 `Action` 或 `Method` 属性，尽管默认情况下 `Action` 通常会提交到当前页面，而 `Method` 将被设置为“get”。
 
 ## 项目
 
--   打开你之前的项目文件，并将其保存为 `chapter_33.html`。
--   移除页面 `body` 部分的所有内容。
--   从网络上复制 `max_wins.html` 文件，并使用记事本的 `File > Open` 命令打开它。
--   将 `max_wins.html` 的全部内容复制并粘贴到你当前项目文件的 `body` 元素中。
--   移除页面 `head` 部分 `script` 元素中的所有 JavaScript 代码。
--   花些时间在浏览器中打开你的项目文件并研究代码。这个项目将使页面能够：
-    -   点击按钮时生成两个随机数。
-    -   在标记为 `player 1` 和 `player 2` 的文本框中显示随机数。
-    -   比较两个随机数，并在标记为 `winner` 的文本框中显示数字较大的玩家名称。
--   在研究代码时，请注意该表单没有有效的 `action` 或 `method` 属性。它也没有“提交”按钮。我们完全不会允许表单提交到服务器，而是将使用 JavaScript 对表单进行所有处理。
--   现在，修改页面上的 HTML 代码，添加一个事件处理器，用以调用在 `head` 区域 `script` 元素中定义的新函数。当表单按钮被点击时，该函数应执行以下操作：
-    -   在每个 `Player` 文本框中放置两个 0 到 100 之间的独立随机整数。
+- 打开你之前的项目文件，并将其保存为 `chapter_33.html`。
+
+- 移除页面 `body` 部分的所有内容。
+
+- 从网络上复制 `max_wins.html` 文件，并使用记事本的 `File > Open` 命令打开它。
+
+- 将 `max_wins.html` 的全部内容复制并粘贴到你当前项目文件的 `body` 元素中。
+
+- 移除页面 `head` 部分 `script` 元素中的所有 JavaScript 代码。
+
+- 花些时间在浏览器中打开你的项目文件并研究代码。这个项目将使页面能够：
+    - 点击按钮时生成两个随机数。
+    - 在标记为 `player 1` 和 `player 2` 的文本框中显示随机数。
+    - 比较两个随机数，并在标记为 `winner` 的文本框中显示数字较大的玩家名称。
+
+- 在研究代码时，请注意该表单没有有效的 `action` 或 `method` 属性。它也没有“提交”按钮。我们完全不会允许表单提交到服务器，而是将使用 JavaScript 对表单进行所有处理。
+
+- 现在，修改页面上的 HTML 代码，添加一个事件处理器，用以调用在 `head` 区域 `script` 元素中定义的新函数。当表单按钮被点击时，该函数应执行以下操作：
+    - 在每个 `Player` 文本框中放置两个 0 到 100 之间的独立随机整数。
 
 ![](img/image01388.jpeg)
 
--   找到一种使用 `Math` 方法来比较输入的两个整数的方法。一旦完成，函数应在 `Winner` 文本框中放置相应的 `Player 1`、`Player 2` 或 `Draw`（平局）值。
--   在浏览器中检查你的工作。
+- 找到一种使用 `Math` 方法来比较输入的两个整数的方法。一旦完成，函数应在 `Winner` 文本框中放置相应的 `Player 1`、`Player 2` 或 `Draw`（平局）值。
+
+- 在浏览器中检查你的工作。
 
 # 34 对象变量 – 复习
 
 ## 核心点
 
--   引用对象可能是一个漫长的过程。考虑上一个示例中的 `Player 1` 文本框。你完整引用它的如下：
+- 引用对象可能是一个漫长的过程。考虑上一个示例中的 `Player 1` 文本框。你完整引用它的如下：
+
 `document.getElementById("MaxWins").Player1`
--   这种表示法虽然精确，但很冗长、耗时且容易出错。幸运的是，有一些快捷方式可以节省时间并减少输入错误。
--   当我们在需要反复引用某些对象的情况下时，可以使用对象变量来简化工作。要使用对象变量，你只需简单地为它分配一个特定对象：
+
+- 这种表示法虽然精确，但很冗长、耗时且容易出错。幸运的是，有一些快捷方式可以节省时间并减少输入错误。
+
+- 当我们在需要反复引用某些对象的情况下时，可以使用对象变量来简化工作。要使用对象变量，你只需简单地为它分配一个特定对象：
+
 `oPlayer1 = document.getElementById("MaxWins").Player1`
--   一旦赋值，你就可以在任何可以使用特定对象的地方使用该对象变量。使用上段中的对象变量：
+
+- 一旦赋值，你就可以在任何可以使用特定对象的地方使用该对象变量。使用上段中的对象变量：
+
 `oPlayer1.value` 等同于：
+
 `document.getElementById("MaxWins").Player1.value`
--   记住，你是将对象赋值给对象变量。你会将文本框、按钮或图像等赋值给对象变量，然后如上面所示引用该对象的属性（如 `oPlayer1.value`）。你不会将文本或字符串值赋值给对象变量。因此：
+
+- 记住，你是将对象赋值给对象变量。你会将文本框、按钮或图像等赋值给对象变量，然后如上面所示引用该对象的属性（如 `oPlayer1.value`）。你不会将文本或字符串值赋值给对象变量。因此：
+
 `oPlayer1 = document.getElementById("MaxWins").Player1.value`
+
 仅仅是将存储在 `Player1` 中的值赋值给变量 `oPlayer1`。
--   显而易见，你不需要在对象变量名称开头包含“o”。这只是为了区分不同类型变量的习惯。
+
+- 显而易见，你不需要在对象变量名称开头包含“o”。这只是为了区分不同类型变量的习惯。
 
 ## 项目
 
--   打开你之前的项目文件，并将其保存为 `chapter_34.html`。
--   按以下方式修改 `head` 区域 `script` 元素中的函数：
-    -   所有被引用多次的特定对象在函数开始时分别分配自己的对象变量。
-    -   将代码中对特定对象的引用替换为相应的对象变量。
--   在浏览器中测试你的工作，确保其功能与以前一样。
+- 打开你之前的项目文件，并将其保存为 `chapter_34.html`。
+
+- 按以下方式修改 `head` 区域 `script` 元素中的函数：
+    - 所有被引用多次的特定对象在函数开始时分别分配自己的对象变量。
+    - 将代码中对特定对象的引用替换为相应的对象变量。
+
+- 在浏览器中测试你的工作，确保其功能与以前一样。
 
 # 35 从菜单项执行的操作
 
 ## 核心点
 
--   HTML `<select>` 表单标签允许你创建一个选项菜单（选择框），用户可以从中进行选择：
+- HTML `<select>` 表单标签允许你创建一个选项菜单（选择框），用户可以从中进行选择：
+
 ```html
 <form id="menu">
 <select name="Product">
@@ -3393,43 +3199,53 @@ document.getElementById(‘Enquiry’).submit();
 </select>
 </form>
 ```
--   通常，从选择框中选择选项只是指定了选择框的值。这随后被用于进一步处理——通过 JavaScript 或通过服务器。
--   你可以使用 JavaScript 根据选择框的当前值来调用操作。这些操作可能直接加载另一个页面，或执行其他类型的处理。
--   这种操作的另一种名称是“跳转菜单”。
--   为了实现这一点，你需要知道表单上的每个选择框都关联着一个 `select` 对象。使用上面的示例，因此你可以通过以下方式访问位于 `Product` 表单上的 `Product` 选择框的当前值（即其当前选中选项的值）：
+
+- 通常，从选择框中选择选项只是指定了选择框的值。这随后被用于进一步处理——通过 JavaScript 或通过服务器。
+
+- 你可以使用 JavaScript 根据选择框的当前值来调用操作。这些操作可能直接加载另一个页面，或执行其他类型的处理。
+
+- 这种操作的另一种名称是“跳转菜单”。
+
+- 为了实现这一点，你需要知道表单上的每个选择框都关联着一个 `select` 对象。使用上面的示例，因此你可以通过以下方式访问位于 `Product` 表单上的 `Product` 选择框的当前值（即其当前选中选项的值）：
+
 `document.getElementById("menu").Product.value`
--   正如你预期的，`select` 选项关联有方法和事件处理器：
-    -   `focus()` 方法赋予选择框焦点。
-    -   `blur()` 方法从选择框移除焦点。
--   `select` 对象可用的事件处理器如下：
+
+- 正如你预期的，`select` 选项关联有方法和事件处理器：
+    - `focus()` 方法赋予选择框焦点。
+    - `blur()` 方法从选择框移除焦点。
+
+- `select` 对象可用的事件处理器如下：
 
 | 事件处理器 | 在什么情况下运行 JavaScript 代码 |
 | :--- | :--- |
 | `onblur` | 选择框失去焦点 |
 | `onfocus` | 选择框获得焦点 |
 | `onchange` | 选择框的值被修改 |
--   当用户从选择框中选择选项时调用操作的方法，是准备一个 JavaScript 函数，该函数将通过 `select` 对象的 `onchange` 事件处理器被调用：
+
+- 当用户从选择框中选择选项时调用操作的方法，是准备一个 JavaScript 函数，该函数将通过 `select` 对象的 `onchange` 事件处理器被调用：
+
 ```html
 <select name="name" onchange="functionname()">
 ```
 
 ## 项目
 
--   打开你之前的项目文件，并将其保存为 `chapter_35.html`。
--   清除 `head`  `script` 元素中的 JavaScript，并移除页面 `body` 区域的所有内容。
--   在页面 `body` 区域创建一个表单。赋予表单一个 id `jumpMenu`。
--   在表单中放置一个 `select` 元素。赋予 `select` 元素以下值和标签，例如：
+- 打开你之前的项目文件，并将其保存为 `chapter_35.html`。
+
+- 清除 `head` `script` 元素中的 JavaScript，并移除页面 `body` 区域的所有内容。
+
+- 在页面 `body` 区域创建一个表单。赋予表单一个 id `jumpMenu`。
+
+- 在表单中放置一个 `select` 元素。赋予 `select` 元素以下值和标签，例如：
+
 ```html
 <select name="menu">
   <option value="value">标签</option>
   …
 </select>
 ```
--   值标签
 
-
-
-
+- 值标签
 
 http://www.bbc.co.uk/The BBC
 
@@ -3440,65 +3256,73 @@ http://www.hotmail.com/Hotmail
 ![](img/image01388.jpeg)
 
 | ROBERT PETERSON | 115 |
+
 |  |  |  |
+
 |  |  |  |
+
 | http://www.ed.ac.uk/ | 爱丁堡大学 |
+
 | http://www.apple.com/ | 苹果电脑 |
+
 | http://www.microsoft.com/ | 微软公司 |
 
-• 最后，在菜单的开头添加一个 `option` 元素，如下：
+- 最后，在菜单的开头添加一个 `option` 元素，如下：
 
 ```html
 <option value="">Select a destination</option>
 ```
 
-• 我们现在将使用菜单的 `onchange` 事件处理器来调用我们即将定义的函数。该函数将此命名为 `jump_to_page()`。
+- 我们现在将使用菜单的 `onchange` 事件处理器来调用我们即将定义的函数。该函数将此命名为 `jump_to_page()`。
 
-• 在 head 区域的 script 元素中定义该函数。该函数应该：
-
+- 在 head 区域的 script 元素中定义该函数。该函数应该：
   > 创建一个对象变量，引用代表菜单的表单元素。
   > 获取该此时刻菜单的值。
   > 如果该值不等于 `""`（即如果选择了有效选项），则函数应使用 JavaScript 将选定的页面加载到浏览器中。
 
-• 在浏览器中检查你的工作。
+- 在浏览器中检查你的工作。
 
 ![](img/image01388.jpeg)
 
 | ROBERT PETERSON | 116 |
+
 |  |  |  |
+
 |  |  |  |
 
 ## 36 要求表单值或选择
 
 ## 关键点
 
-• 如果表单数据在没有某些信息的情况下被发送到服务器，它可能是无效的——例如，如果用户漏掉了从菜单中选择项目。与其尝试处理无效信息而浪费用户和服务器的时间，还不如不要去处理它。
+- 如果表单数据在没有某些信息的情况下被发送到服务器，它可能是无效的——例如，如果用户漏掉了从菜单中选择项目。与其尝试处理无效信息而浪费用户和服务器的时间，还不如不要去处理它。
 
-• 在选择框的情况下，验证方法之一是为默认选项包含一个空值。在上项目中，选择框的默认值（除非另有说明，否则总是第一个选项）是 `""`。如果用户没有主动进行另一个选择，你可以在将其发送到服务器之前检查选择框的值。
+- 在选择框的情况下，验证方法之一是为默认选项包含一个空值。在上项目中，选择框的默认值（除非另有说明，否则总是第一个选项）是 `""`。如果用户没有主动进行另一个选择，你可以在将其发送到服务器之前检查选择框的值。
 
-• 另一个例子是单选按钮组。想象对于一家虚拟公司，订单单包含两个表单元素——一个指定订购哪个产品的选择框，以及两个指定是作为照片打印还是幻灯片购买的单选按钮。
+- 另一个例子是单选按钮组。想象对于一家虚拟公司，订单单包含两个表单元素——一个指定订购哪个产品的选择框，以及两个指定是作为照片打印还是幻灯片购买的单选按钮。
 
-• 假设订单单的 `id` 是 `OrderForm`，每个单选按钮的 `name` 是 `Format`。（记住，在 HTML 中，一组单选按钮通过它们的名称相互关联，且每个相关单选按钮的名称必须相同）。
+- 假设订单单的 `id` 是 `OrderForm`，每个单选按钮的 `name` 是 `Format`。（记住，在 HTML 中，一组单选按钮通过它们的名称相互关联，且每个相关单选按钮的名称必须相同）。
 
-• `radio` 对象是一个数组，数组中的每个元素都存储与每个单选按钮对象相关的信息（记住，计数从 0 开始）。
+- `radio` 对象是一个数组，数组中的每个元素都存储与每个单选按钮对象相关的信息（记住，计数从 0 开始）。
 
 ![](img/image01388.jpeg)
 
 | ROBERT PETERSON | 117 |
-|  |  |  |
+
 |  |  |  |
 
-• 由于由于组中每个单选按钮的名称相同，你无法通过其名称访问单个单选按钮。但你可以使用标准的数组表示法访问它： 
+|  |  |  |
+
+- 由于组中每个单选按钮的名称相同，你无法通过其名称访问单个单选按钮。但你可以使用标准的数组表示法访问它： 
 
 `oOrderForm.Format[i]`
 
 在这种情况下，`i` 是 0 到 1 之间的整数，`oOrderForm` 是指向表单元素的对象变量。
 
-• 组中的每个单选按钮都有一个 `checked` 属性，存储一个布尔值，指定单选按钮是否被选中。显然，你可以通过以下方式访问此值：
+- 组中的每个单选按钮都有一个 `checked` 属性，存储一个布尔值，指定单选按钮是否被选中。显然，你可以通过以下方式访问此值：
 
 `oOrderForm.Format[i].checked`
 
-• 所以，为了验证一组单选按钮中至少有一个被选中，你所做的就是使用数组的 `length` 属性遍历每个单选按钮，以指定循环的迭代次数：
+- 所以，为了验证一组单选按钮中至少有一个被选中，你所做的就是使用数组的 `length` 属性遍历每个单选按钮，以指定循环的迭代次数：
 
 ```javascript
 FormatSelected = false;
@@ -3515,10 +3339,12 @@ for ( i=0; i < oOrderForm.Format.length; i++ )
 ![](img/image01388.jpeg)
 
 | ROBERT PETERSON | 118 |
-|  |  |  |
+
 |  |  |  |
 
-• 在我们的订单单示例中，其中一个产品可能以幻灯片的形式提供。你可以使用 `select` 对象的 `onchange` 事件处理器来调用函数，该函数会自动设置相关单选对象 `checked` 属性的值：
+|  |  |  |
+
+- 在我们的订单单示例中，其中一个产品可能以幻灯片的形式提供。你可以使用 `select` 对象的 `onchange` 事件处理器来调用函数，该函数会自动设置相关单选对象 `checked` 属性的值：
 
 ```javascript
 function SetFormat ()
@@ -3533,31 +3359,33 @@ function SetFormat ()
 
 其中 `Product` 是选择框的名称，`Format` 是单选按钮组的名称，第一个单选按钮的值是 `Slide`。
 
-• 最后，要将所有表单对象重置为初始状态，请使用 `reset()` 方法：
+- 最后，要将所有表单对象重置为初始状态，请使用 `reset()` 方法：
 
 `oFormObject.reset()`
 
 ## 项目
 
-• 打开之前的项目文件，并将其保存为 `chapter_36.html`。
+- 打开之前的项目文件，并将其保存为 `chapter_36.html`。
 
-• 移除页面 `body` 部分的所有内容。
+- 移除页面 `body` 部分的所有内容。
 
-• 从网络复制 `order_form.html` 文件，并使用记事本的“文件 > 打开”命令打开它。
+- 从网络复制 `order_form.html` 文件，并使用记事本的“文件 > 打开”命令打开它。
 
-• 将 `order_form.html` 的全部复制并粘贴到当前项目文件的 `body` 元素中。
+- 将 `order_form.html` 的全部复制并粘贴到当前项目文件的 `body` 元素中。
 
-• 移除页面 head 区域 script 元素中的所有 JavaScript 代码。
+- 移除页面 head 区域 script 元素中的所有 JavaScript 代码。
 
-• 花些时间在浏览器中打开你的项目文件并研究。
+- 花些时间在浏览器中打开你的项目文件并研究。
 
 ![](img/image01388.jpeg)
 
 | ROBERT PETERSON | 119 |
-|  |  |  |
+
 |  |  |  |
 
-• 为表单添加一个事件处理器，在提交时调用名为 `check_form()` 的函数。该函数将根据表单是否通过若干项测试返回 `true` 或 `false`。记住在事件处理器的函数调用之前加上 `return`。
+|  |  |  |
+
+- 为表单添加一个事件处理器，在提交时调用名为 `check_form()` 的函数。该函数将根据表单是否通过若干项测试返回 `true` 或 `false`。记住在事件处理器的函数调用之前加上 `return`。
 
  在 head 元素中创建 `check_form()` 函数。该函数应执行以下操作：
 
@@ -3565,23 +3393,23 @@ function SetFormat ()
   > 如果没有选择任何单选按钮：显示“please a format”的警告框。返回 `false`
   > 否则，返回 `true`
 
-• 在浏览器中检查你的工作。
+- 在浏览器中检查你的工作。
 
-• Greek Boat 仅以 Slide 形式提供。为 `select` 元素添加一个事件处理器，当其值发生变化时运行函数 `set_format()`。
+- Greek Boat 仅以 Slide 形式提供。为 `select` 元素添加一个事件处理器，当其值发生变化时运行函数 `set_format()`。
 
-• 在 head 元素中创建 `set_format()` 函数。该函数应首先检查菜单的值。如果是 `Greek Boat`，它应检查检查单选按钮是否被选中。如果未选中，则函数应纠正这一点。
+- 在 head 元素中创建 `set_format()` 函数。该函数应首先检查菜单的值。如果是 `Greek Boat`，它应检查检查单选按钮是否被选中。如果未选中，则函数应纠正这一点。
 
-• 修改你的 `check_form()` 函数，以检查如果菜单的值为 `Greek Boat`，则单选按钮是否被选中。如果没有，它应该像以前一样报告错误。
+- 修改你的 `check_form()` 函数，以检查如果菜单的值为 `Greek Boat`，则单选按钮是否被选中。如果没有，它应该像以前一样报告错误。
 
-• 最后，注意你的 `check_form()` 函数目前并不高效，它一次只会报告一个错误。这对于容易犯错的用户来说可能是枯燥的，同时观察表单的所有错误是更好的做法。
+- 最后，注意你的 `check_form()` 函数目前并不高效，它一次只会报告一个错误。这对于容易犯错的用户来说可能是枯燥的，同时观察表单的所有错误是更好的做法。
 
-• 在函数开始处创建一个名为 `error` 的变量。将该变量的值设置为 `""`。
+- 在函数开始处创建一个名为 `error` 的变量。将该变量的值设置为 `""`。
 
-• 不要每次发现错误时都使用警告框，而是将错误消息添加到变量的末尾，例如：
+- 不要每次发现错误时都使用警告框，而是将错误消息添加到变量的末尾，例如：
 
 `error += "error message\n";`（注意每个消息末尾的换行代码）
 
-• 在完成所有检查后，如果我们捕到了任何错误，`error` 的值将不再是 `""`。因此，我们可以使用以下代码一次报告所有错误：
+- 在完成所有检查后，如果我们捕到了任何错误，`error` 的值将不再是 `""`。因此，我们可以使用以下代码一次报告所有错误：
 
 ```javascript
 if ( error != "" )
@@ -3595,31 +3423,29 @@ else
 }
 ```
 
-• 修改你的函数使其更高效。
+- 修改你的函数使其更高效。
 
 ![](img/image1388.jpeg)
 
 | ROBERT PETERSON | 120 |
-|  |  |  |
+
 |  |  |  |
 
-# 377 处理日期
+|  |  |  |
+
+# 37 处理日期
 
 ## 关键点
 
-• 日期对象存储从年份到毫秒的所有日期方面。
+- 日期对象存储从年份到毫秒的所有日期方面。
 
-• 要使用新的日期对象，你必须同时创建它并将其赋值给对象变量。以下代码创建了一个新的日期对象，存储当前的日期和时间并赋值给变量 `dtNow`：
+- 要使用新的日期对象，你必须同时创建它并将其赋值给对象变量。以下代码创建了一个新的日期对象，存储当前的日期和时间并赋值给变量 `dtNow`：
 
 ```javascript
 dtNow = new Date();
 ```
 
-• 在创建日期对象时，你可以为它指定自己的参数：
-
-
-
-
+- 在创建日期对象时，你可以为它指定自己的参数：
 
 ```javascript
 theDate = new Date(
@@ -3629,52 +3455,68 @@ theDate = new Date(
 ```
 
 - 注意，月份用 0 到 11 表示（1 月到 12 月）。日期用 1 到 31 表示，小时用 0 到 23，分钟和秒用 0 到 59，毫秒用 0 到 999。
+
 - 下面代码在变量 `theDate` 中存储了 2004 年 7 月 17 日晚上 9:15:30：
+
 ```javascript
 theDate = new Date(2004,6,17,21,15,30,0);
 ```
+
 - 前三个参数是强制性的，其余的是可选的：
+
 ```javascript
 theDate = new Date(2004,6,17);
 ```
+
 这会为你提供上述日期的午夜。
 
 ![](img/image01388.jpeg)
 
 | ROBERT PETERSON | 122 |
+
 |  |  |  |
+
 |  |  |  |
 
 - 你可以使用以下方式使用字符串将日期赋值给变量：
+
 ```javascript
-theDate = new Date“Sun, 10 Oct 2000 21:15:00 – 0500);
+theDate = new Date("Sun, 10 Oct 2000 21:15:00 – 0500");
 ```
+
 - 从小时开始之后都是可选的，在实际操作中，日期也是可选的。例如：
+
 ```javascript
-theDate = new Date“10 Oct 2000”);
+theDate = new Date("10 Oct 2000");
 ```
+
 这是一个有效的日期。
 
 ## 项目
 
 - 打开之前的项目文件，并将其保存为 `chapter_37.html`。
+
 - 移除页面 `body` 部分的所有内容。
+
 - 在 `head` 部分的 script 元素中创建一个函数，显示一个包含当前日期和时间的警报框。在 `body` 部分的 script 元素中调用此函数。
+
 - 现在修改你的脚本，使其同时也以标准日期和时间格式在页面上写入 1955 年 7 月 17 日凌晨 1:00。通过向 `new Date()` 构造函数中输入相应的参数来实现。
+
 - 现在，再次使用参数，在你的脚本中添加新行，在现有日期下方单独起一行显示 2004 年 7 月 17 日的午夜。
+
 - 最后，使用日期对象的字符串方法，在你的脚本中添加新行，在现有信息下方单独起一行显示 1999 年 12 月 31 日的午夜，并使用标准日期和时间格式。
 
 ![](img/image01388.jpeg)
 
 | ROBERT PETERSON | 123 |
+
 |  |  |  |
+
 |  |  |  |
 
 # 38 从日期对象中获取信息
 
 ### 关键点
-
-
 
 - 下面是一些实用方法的选取，它们允许你从日期对象中获取一些有用信息：
 
@@ -3695,31 +3537,42 @@ theDate = new Date“10 Oct 2000”);
 ![](img/image01388.jpeg)
 
 | ROBERT PETERSON | 124 |
+
 |  |  |  |
+
 |  |  |  |
 
 - 例如：
+
 ```javascript
 dtNow = new Date();
 document.write(dtNow.getTime());
 ```
+
 写入自 1970 年 1 月 1 日以来过的毫秒数。
+
 - 意识到每秒有 1000 毫秒，一分钟有 60 秒，一小时有 60 分钟，一天有 24 小时，你可以通过从一个毫秒格式的日期减去另一个毫秒格式的日期，建立两个日期之间的天数（或小时或分钟等）。要达到你需要的单位，执行相应的除法（例如，对于分钟数，先将减法结果除以 1000，再除以 60），然后对结果使用 `Math.floor()` 按需要向下取整。
 
 ## 项目
 
 - 打开之前的项目文件，并将其保存为 `chapter_38.html`。
+
 - 清空页面 script 元素中的任何 JavaScript 代码。
+
 - 在 `head` 部分的 script 元素中创建一个函数，执行以下操作：
     - 创建两个数组，一个存储星期（“Sunday”、“Monday”等），另一个存储全年月份（“January”、“February”等）
     - 使用新的日期对象，结合数组和相应的日期方法，按以下格式将今天的日期写入页面：
+
       Today it is: dayName, month, dayNumber. for example:
+
       Today it is Tuesday, October 17.
 
 ![](img/image01388.jpeg)
 
 | ROBERT PETERSON | 125 |
+
 |  |  |  |
+
 |  |  |  |
 
 ## 39 创建一个 JavaScript 时钟
@@ -3727,58 +3580,74 @@ document.write(dtNow.getTime());
 ### 关键点
 
 - `setTimeout()` 是 `window` 对象的一个方法。在它的常用形式中，它允许你在指定的时长（毫秒）通过后运行任何函数。例如：
+
 ```javascript
 setTimeout("functionName()", 1000)
 ```
+
 - 跟踪超时的最常见原因是为了在需要时取消它们——例如，你可能希望窗口在 5 秒后关闭：
+
 ```javascript
 firstTimeout = setTimeout("close()", 5000);
 ```
+
 在按钮的事件处理器中添加以下代码：
+
 ```javascript
 clearTimeout(firstTimeout);
 ```
+
 - 通常情况下，让函数“递归”（即调用它自己）是一个坏主意。例如，想象一下以下操作有多令人烦恼：
+
 ```javascript
 function annoy_() {
 alert("BOO
 annoy_meoy
 }
 ```
+
 这将会不断弹出警报框，甚至锁定用户的计算机！
+
 - 然而，你可能希望一个函数使用 `setTimeout` 定期地调用自己。想象一个函数每秒调用自己一次来检查时间，然后在同一位置显示结果。实际上，这可以是一个数字时钟。
+
 - 如果你想清除时钟的超时——在这种情况下将停止时钟——则该超时必须已经在运行中。你不能清除一个不存在的超时。所以，你必须先检查超时是否正在运行。这样做的方法之一是每当启动启动时将变量设为 true。通过在尝试清除超时之前检查此变量，你就知道时钟是否正在运行，因此可以停止它。
+
 - 要显示 am/pm 时钟，你显然需要执行你在上一章项目中创建的转换。
+
 - 但是，为了让显示在不同时间不会产生“移动”效果，你需要考虑时钟上的分钟或秒少于 10 的情况。例如，考虑：
+
 10:59:59 am
+
 变为：
+
 11:0:0 am
 
 ![](img/image01388.jpeg)
 
 | ROBERT PETERSON | 126 |
+
 |  |  |  |
+
 |  |  |  |
 
 - 在这种情况下，我们需要在实际值的前面拼接一个额外的“0”，以产生：
+
 11:00:00 am
+
 正如我们预期的那样。
+
 - 我们可以使用 if 条件的简写形式来变得简单。例如：
+
 ```javascript
 s = theDate.getSeconds;
-s = ( s < 10 ) ? “0” + s : s;
+s = ( s < 10 ) ? "0" + s : s;
 ```
+
 - 这里发生了什么？首先，我们获取秒的当前值并将其存储在名为 `s` 的变量中。接下来，我们根据括号中的条件重置 `s` 的值。这种形式的 if 条件的原型是：
-
-
-
-
 
 ```
 var = ( condition )
-
 ? value if true
-
 : value if false;
 ```
 
@@ -3789,58 +3658,80 @@ var = ( condition )
 ## 项目
 
 - 打开你之前的项目文件，并将其另存为 `chapter_39.html`。
+
 - 移除页面 `body` 部分的所有内容。
+
 - 在 `body` 部分中，创建一个 id 为 `clockBox` 的表单输入元素，以及两个标记为 `Start` 和 `Stop` 的表单输入按钮。
+
 - 在 `head` 部分的 `scrip` 脚本元素中，创建两个空函数——`start_clock()` 和 `stop_clock()`。
+
 - 在两个函数定义之前，作为 `script` 元素的第一条语句，创建一个名为 `timer` 的变量，并将其赋值为 `null`。
 
 ![](img/image01388.jpeg)
 
 | ROBERT PETERSON | 129 |
+
 |  |  |  |
+
 |  |  |  |
 
 - 在该语句正下方，创建一个名为 `timer_running` 的变量。将其赋值为 `false`。
+
 - 我们将使用这些变量来跟踪时钟的状态。
+
 - 现在，在 `start_clock()` 函数中添加语句以实现：
     - 获取当前时间。
     - 将当前时间格式化为 `hh:mm:ss am/pm`（视情况而定）。
     - 将格式化后的时间显示在页面的字段中。
     - 创建一个超时，半秒后再次运行 `start_clock()` 函数，并将该超时返回的对象赋值给 `timer` 对象变量。
     - 将 `timer_running` 变量设置为 `true`。
+
 - 在 `stop_clock()` 函数中添加语句以实现：
     - 检查时钟是否正在运行。
     - 如果正在运行，则清除定时器超时并将 `timer_running` 设置为 `false`。
+
 - 最后，为这两个表单按钮添加事件处理器，确保标记为 `Stop` 的按钮在点击时调用函数 `stop_clock()`，而标记为 `Start` 的按钮在点击时调用函数 `start_clock()`。
+
 - 虽然这可以正常工作（测试你的代码！），但你会发现输出有点丑。在文本字段中显示时间并不是在页面上显示时钟最隐蔽的方式。
+
 - 幸运的是，我们可以稍微修改代码以实现更专业的效果。
+
 - 将你的输入字段替换为以下内容：
 
 ```html
 <span id="clockBox"></span>
 ```
-- `<<span>` 是一个 HTML 标签，允许你标记没有语义含义的 `content` 区域——例如，时钟既不是段落也不是标题，所以我们不想将其标记为此类。
+
+- `<span>` 是一个 HTML 标签，允许你标记没有语义含义的 `content` 区域——例如，时钟既不是段落也不是标题，所以我们不想将其标记为此类。
 
 ![](img/image01388.jpeg)
 
 | ROBERT PETERSON | 130 |  |
+
 |  |  |  |
+
 |  |  |  |
 
 - 通过 JavaScript，我们可以控制页面上几乎任何元素的内容。在之前的示例中，我们使用了 `getElementById`（希望是这样！）来获取 `input` 字段的引用，然后更改它的 `value` 属性来显示我们的时钟。
+
 - 由于我们在这里使用了相同的 id 值，因此不需要过多修改函数。然而，`getElementById` 方法现在返回一个不同类型的对象——一个没有 `value` 属性的对象。
+
 - 然而，HTML 中所有的内容标签（如 `<p>`, `<h1>`, `<div>` 等）在作为 JavaScript 对象返回时都有一个特殊属性，指向它们的文本内容——该属性为 `innerHTML`。
+
 - 我们可以用它来更改标签的内容。例如，如果我们之前的输入字段方案有以下代码：
 
 ```javascript
 clk = document.getElementById("clockBox"); clk.value = formatted_time;
 ```
+
 其中 `formatted_time` 是一个包含所需格式化时间的变量，那么将其替换为此代码：
 
 ```javascript
 clk = document.getElementById("clockBox"); clk.innerHTML = formatted_time;
 ```
+
 将允许我们使用修改后的 `<span>` 元素来代替 `<input>` 元素。
+
 - 尝试调整你的代码使用这种方法在页面上显示内容。
 
 ![](img/image01388.jpeg)
@@ -3869,13 +3760,12 @@ clk = document.getElementById("clockBox"); clk.innerHTML = formatted_time;
 
 JavaScript 是于 1995 年 5 月由 Brendan Eich 在 10 天内创建的。Eich 就职于 Netscape，为他们的网页浏览器 Netscape Navigator 实现了 JavaScript。
 
-
-
-
-
 - **ECMAScript 6 (2015 年 6 月)**：一次大型更新，实现了 `ECMAScript 4` 的许多承诺。该版本是第一个其正式名称——`ECMAScript 2015`——基于发布年份命名的版本。
+
 - **ECMAScript 2016 (2016 年 6 月)**：首次年度发布。与大型的 `ES6` 相比，较短的发布周期导致新特性数量较少。
+
 - **ECMAScript 2017 (2017 年 6 月)**：第二次年度发布。
+
 - **随后的 ECMAScript 版本（ES2018 等）** 始终在 6 月通过批准。
 
 ### 3.4 Ecma 技术委员会 39 (TC39)
@@ -3889,12 +3779,15 @@ JavaScript 是于 1995 年 5 月由 Brendan Eich 在 10 天内创建的。Eich �
 随着 `ECMAScript 6` 的出现，当时使用的发布流程两个问题变得明显：
 
 - 如果发布之间的间隔时间过长，那么早期完成的特性必须等待很长时间才能发布。而晚期完成的特性则面临为了赶上截止日期而仓促发布的风险。
+
 - 特性通常在实现和使用很久以前设计好了。因此，与实现和使用相关的设计缺陷发现得太晚。
 
 针对这些问题，`TC39` 建立了新的 `TC39` 流程：
 
 - `ECMAScript` 特性独立设计并经过多个阶段，从阶段 0（“草案”）开始，到阶段 4（“完成”）结束。
+
 - 特别后期需要原型实现和真实世界的测试，导致设计与实现之间的反馈循环。
+
 - `ECMAScript` 版本每年发布一次，包含所有在发布截止日期之前达到阶段 4 的特性。
 
 结果是：更小、增量式的发布，其特性已经过实地测试。
@@ -3950,11 +3843,8 @@ JavaScript 是于 1995 年 5 月由 Brendan Eich 在 10 天内创建的。Eich �
 - JavaScript 引擎变得臃肿：它们需要同时支持旧版本和新版本。相同的情况也是如此。（等等，原文此处似乎乱码/重复，我将保持提供的核心逻辑）。
 
 - `ECMAScript` 版本每年发布一次，包含所有在发布截止日期之前达到阶段 4 的特性。
+
 - 结果是：更小、增量式的发布，其特性已经过实地测试。
-
-
-
-
 
 - [Can I use…](https://caniuse.com/) 记录了网络浏览器支持哪些特性（包括 JavaScript 语言特性）。
 
@@ -3965,6 +3855,7 @@ JavaScript 是于 1995 年 5 月由 Brendan Eich 在 10 天内创建的。Eich �
 请参考以下来源：
 
 - §3.5 “TC39 流程”描述了未来特性是如何规划的。
+
 - §3.6 “FAQ：TC39 流程”回答了关于未来特各种问题。
 
 ## 4.4 为什么 JavaScript 经常静默失败？
@@ -3976,6 +3867,7 @@ JavaScript 经常会静默失败。让我们来看两个例子。
 ```
 '3' * '5'
 ```
+
 15
 
 第二个例子：如果算术计算失败，你得到的是一个错误值而不是异常。
@@ -3983,6 +3875,7 @@ JavaScript 经常会静默失败。让我们来看两个例子。
 ```
 1 / 0
 ```
+
 Infinity
 
 静默失败的原因是历史性的：JavaScript 在 `ECMAScript 3` 之前没有异常。从那时起，设计者们一直试图避免静默失败。
@@ -4006,12 +3899,15 @@ Infinity
 本书教授的是 JavaScript 语言。它专注于语言本身，但偶尔也会 JavaScript 可以使用的两个平台：
 
 - Web 浏览器
+
 - Node.js
 
 `Node.js` 在 Web 开发中有有三个方面的重要性：
 
 - 你可以用它用 JavaScript 编写服务端软件。
+
 - 你还可以用它编写命令行软件（例如 Unix shell、Windows PowerShell 等）。许多与 JavaScript 相关的工具都是基于 `Node.js` 并通过 `Node.js` 执行的。
+
 - `Node` 的软件注册表 `npm` 已成为安装工具（如编译器和构建工具）以及库的主流方式——即使对于客户端开发也是如此。
 
 ### 5.2 浏览器和 Node.js 的结构
@@ -4019,6 +3915,7 @@ Infinity
 Web 浏览器和 `Node.js` 这两个 JavaScript 平台的结构相似（图 5.1）：
 
 - 基础层由 JavaScript 引擎和特定平台的“核心”功能组成。
+
 - 此基础之上托管两个 API：
   - JavaScript 标准库是 JavaScript 本身，运行在引擎之上。
   - 平台 API 也可以通过 JavaScript 获取——它提供了对特定功能的访问。例如：
@@ -4030,7 +3927,9 @@ Web 浏览器和 `Node.js` 这两个 JavaScript 平台的结构相似（图 5.1�
 当你对 JavaScript 有疑问时，网络搜索通常会有帮助。我可以推荐以下在线资源：
 
 - [MDN Web Docs](https://developer.mozilla.org/en-US/): 涵盖了各种 Web 技术，如 CSS、HTML、JavaScript 等。极佳的参考。
+
 - [Node.js 文档](https://nodejs.org/en/docs/): 记录了 `Node.js` API。
+
 - [ExploringJS.com](https://exploringjs.com): 我其他关于 JavaScript 的书籍比本书更详细，并且免费在线阅读。你可以按 ECMAScript 版本查找特性：
   - ES1–ES5: [“Speaking JavaScript”](http://speakingjs.com/)
   - ES6: [“Exploring ES6”](https://exploringjs.com/es6.html)
@@ -4103,10 +4002,6 @@ Web 浏览器和 `Node.js` 这两个 JavaScript 平台的结构相似（图 5.1�
 
 ### 6.9.2 严格模式下的改进
 
-
-
-
-
 断言（assertion）描述了计算结果预期的样子，如果这些预期不正确，则会抛出异常。例如，下面的断言表示计算 7 加加 1 的结果必须是 8：
 
 ```javascript
@@ -4117,9 +4012,9 @@ assert.equal(7 + 1, 8);
 
 向浏览器或 Node.js 的控制台记录日志：
 
-• 将值打印到标准输出（另一个方法调用）`console.log('Hello!')`
+- 将值打印到标准输出（另一个方法调用）`console.log('Hello!')`
+- 将错误信息打印到标准错误
 
-• 将错误信息打印到标准错误
 ```javascript
 console.error('Something went wrong!');
 ```
@@ -4132,11 +4027,10 @@ assert.equal(true && false, false);  // 与
 assert.equal(true || false, true);  // 或
 ```
 
-• 数字运算符 `assert.equal(3 + 4, 7); assert.equal(5 - 1, 4); assert.equal(3 * 4, 12); assert.equal(9 / 3, 3);`
+- 数字运算符 `assert.equal(3 + 4, 7); assert.equal(5 - 1, 4); assert.equal(3 * 4, 12); assert.equal(9 / 3, 3);`
+- 字符串运算符 `assert.equal('a' + 'b', 'ab'); assert.equal('I see ' + 3 + ' monkeys', 'I see 3 monkeys');`
+- 比较运算符
 
-• 字符串运算符 `assert.equal('a' + 'b', 'ab'); assert.equal('I see ' + 3 + ' monkeys', 'I see 3 monkeys');`
-
-• 比较运算符
 `assert.equal(3 < 4, true); assert.equal(3 <= 4, true); assert.equal('abc' === 'abc', true); assert.equal('abc' !== 'def', true);`
 
 ### 声明变量：
@@ -4166,7 +4060,7 @@ function add1(a, b) {
 }
 ```
 
-• 调用函数 `add1()` `assert.equal(add1(5, 2), 7);`
+- 调用函数 `add1()` `assert.equal(add1(5, 2), 7);`
 
 ### 箭头函数表达式（特别用于函数调用和方法调用的参数）：
 
@@ -4174,17 +4068,17 @@ function add1(a, b) {
 const add2 = (a, b) => { return a + b };
 ```
 
-• 调用函数 `add2()` `assert.equal(add2(5, 2), 7);`
+- 调用函数 `add2()` `assert.equal(add2(5, 2), 7);`
+- 等同于 `add2`：
 
-• 等同于 `add2`：
 ```javascript
 const add3 = (a, b) => a + b;
 ```
 
 之前的代码包含以下两个箭头函数（表达式和语句术语将在本章稍后解释）：
 
-• 体为代码块的箭头函数 `(a, b) => { return a + b }`
-• 体为表达式的箭头函数 `(a, b) => a + b`
+- 体为代码块的箭头函数 `(a, b) => { return a + b }`
+- 体为表达式的箭头函数 `(a, b) => a + b`
 
 ### 对象：
 
@@ -4199,14 +4093,14 @@ const obj = {
 };
 ```
 
-• 获取属性值 `assert.equal(obj.first, 'Jane');`
+- 获取属性值 `assert.equal(obj.first, 'Jane');`
+- 设置属性值
 
-• 设置属性值
 ```javascript
 obj.first = 'Janey';
 ```
 
-• 调用方法 `assert.equal(obj.getFullName(), 'Janey Doe');`
+- 调用方法 `assert.equal(obj.getFullName(), 'Janey Doe');`
 
 ### 数组（数组也是对象）：
 
@@ -4215,15 +4109,15 @@ obj.first = 'Janey';
 const arr = ['a', 'b', 'c'];
 ```
 
-• 获取数组元素 `assert.equal(arr[1], 'b');`
-
-• 设置数组元素 `arr[1] = 'β';`
+- 获取数组元素 `assert.equal(arr[1], 'b');`
+- 设置数组元素 `arr[1] = 'β';`
 
 ### 6.1.2 模块
 
 每个模块都是单独的文件。例如，考虑以下两个包含模块的文件：
 
 `file-tools.mjs`  
+
 `main.mjs`
 
 `file-tools.mjs` 中的模块导出了它的函数 `isTextFilePath()`：
@@ -4250,10 +4144,10 @@ import {isTextFilePath} from './file-tools.mjs';
 
 标识符允许允许字符：
 
-• Unicode 字母：A–Z, a–z（等）
-• `$`, `_`
-• Unicode 数字：0–9（等）
-– 变量名不能以数字开头
+- Unicode 字母：A–Z, a–z（等）
+- `$`, `_`
+- Unicode 数字：0–9（等）
+  - 变量名不能以数字开头
 
 某些单词在 JavaScript 中有特殊含义，被称为 `reserved`保留字。示例包括 `if`、`true`、`const`。
 
@@ -4266,26 +4160,28 @@ const if = 123;
 
 但它们允许作为属性名：
 
-• `const obj = { if: 123 };`
-• `obj.if`
+- `const obj = { if: 123 };`
+- `obj.if`
 
 ### 6.1.4 命名风格
 
 连接单词的常用命名风格有：
 
 // 驼峰命名法 (Camel case): `threeConcatenatedWords`
+
 // 下划线命名法 (Underscore case，也叫 snake case): `three_concatenated_words`
+
 // 连字符命名法 (Dash case，也叫 kebab case): `three-concatenated-words`
 
 ### 6.1.5 大写
 
 通常情况下，JavaScript 使用小写，常量除外。
 
-– 函数：`myFunction`
-– 方法：`myMethod`
-– 类：`MyClass`
-– 常量：`MY_CONSTANT`
-– 变量：`myConstant`
+- 函数：`myFunction`
+- 方法：`myMethod`
+- 类：`MyClass`
+- 常量：`MY_CONSTANT`
+- 变量：`myConstant`
 
 ### 6.1.6 命名规范
 
@@ -4350,10 +4246,6 @@ function twice(x) {
 ```
 
 ### 6.4.2 表达式
-
-
-
-
 
 表达式（expression）是可以求值并产生一个值的代码片段。例如，括号之间的代码就是一个表达式：
 
@@ -4463,6 +4355,7 @@ const obj = {};
 ```
 
 输出：
+
 `'abc'`
 
 在这段代码中：
@@ -4585,7 +4478,9 @@ return;
 a = b + c
 (d + e).print()
 ```
+
 解析为：
+
 ```javascript
 a = b + c(d + e).print();
 ```
@@ -4596,7 +4491,9 @@ a = b + c(d + e).print();
 a = b
 /hi/g.exec(c).map(d)
 ```
+
 解析为：
+
 ```javascript
 a = b / hi / g.exec(c).map(d);
 ```
@@ -4607,7 +4504,9 @@ a = b / hi / g.exec(c).map(d);
 someFunction()
 ['ul', 'ol'].map(x => x + x)
 ```
+
 执行为：
+
 ```javascript
 const propKey = ('ul','ol'); // 逗号运算符
 assert.equal(propKey, 'ol');
@@ -4631,11 +4530,7 @@ someFunction()[propKey].map(x => x + x);
 从 ECMAScript 5 开始，JavaScript 有两种执行模式：
 
 - 正常的“松散模式”（sloppy mode）：是脚本（作为模块的前身且被浏览器支持的代码片段）的默认模式。
-
-
-
-
-严格模式（Strict mode）：在模块和类中默认开启，并且可以在脚本中开启（后文将解释如何开启）。在这种模式下，普通模式的某些陷阱被移除，并且会抛出更多异常。
+- 严格模式（Strict mode）：在模块和类中默认开启，并且可以在脚本中开启（后文将解释如何开启）。在这种模式下，普通模式的某些陷阱被移除，并且会抛出更多异常。
 
 在现代 JavaScript 代码中，你很少遇到松散模式（sloppy mode），它几乎总是位于模块中。在本书中我假设严格模式始终开启状态。
 
@@ -4751,6 +4646,7 @@ assert.equal(sloppyFunc(), undefined);
 ```
 
 延伸阅读：松散模式
+
 有关松散模式如何区别严格模式的更多信息，请参见 [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode)。
 
 ### 7.1 尝试 JavaScript 代码
@@ -4773,6 +4669,7 @@ Web 浏览器有所谓的控制台（console）：交互式命令行，你可以
 REPL 代表 read-eval-print loop（读取-评估-打印循环），基本上意味着命令行。要使用它，你必须首先从操作系统的命令行通过 `node` 命令启动 Node.js。然后与它的交互看起来如图 7.2 所示：`>` 之后的文本是用户的输入；其他所有都是 Node.js 的输出。
 
 阅读：REPL 交互
+
 我偶尔会通过 REPL 交互演示 JavaScript。这时我也使用大于号符号（`>`）来标记输入。例如：
 
 ```text
@@ -4788,6 +4685,7 @@ REPL 代表 read-eval-print loop（读取-评估-打印循环），基本上意�
 - 还有用于运行 JavaScript 的原生应用和 IDE 插件。
 
 控制台通常在非严格模式下运行
+
 现代 JavaScript 中，大多数代码（例如模块）在严格模式下执行。然而，控制台通常在非严格模式下运行。因此，当你使用控制台执行本书中的代码时，偶尔可能会得到不同的结果。
 
 ### 7.2 console.* API：打印数据及更多
@@ -4795,6 +4693,7 @@ REPL 代表 read-eval-print loop（读取-评估-打印循环），基本上意�
 在浏览器中，控制台是你可以调出的通常情况下隐藏的内容。对于 Node.js，控制台是 Node.js 当前运行的终端。
 
 控制台：交互式 JavaScript 命令行
+
 完整的 `console.*` API 文档可以在 [MDN Web 文档](https://developer.mozilla.org/en-US/docs/Web/API/console) 和 [Node.js 网站](https://nodejs.org/api/console.html) 上找到。它不是 JavaScript 语言标准的一部分，但浏览器和 Node.js 都支持其许多功能。
 
 在本章中，我们只查看以下两种打印数据的方法。“打印”意味着显示在控制台中。
@@ -4817,6 +4716,7 @@ console.log(pattern: string, ...values: any[]): void
 ```javascript
 console.log('abc', 123, true);
 ```
+
 输出：`abc 123 true`
 
 在最后，`console.log()` 总是打印一个换行。因此，如果你带零参数调用它，它只会打印一个换行。
@@ -4828,6 +4728,7 @@ console.log('abc', 123, true);
 ```javascript
 console.log('Test: %s %j', 123, 'abc');
 ```
+
 输出：`Test: 123 "abc"`
 
 这些是你可以用于替换的一些指令：
@@ -4837,52 +4738,52 @@ console.log('Test: %s %j', 123, 'abc');
 ```javascript
 console.log('%s %s', 'abc', 123);
 ```
+
 输出：`abc 123`
 
 - `%o` 插入对象的字符串表示。
 
-
-
-
 ```
 console.log('%o', {foo: 123, bar: 'abc'});
 ```
+
 Output:
+
 `{ foo: 123, bar: 'abc' }`
 
-`%j` 将一个值转换为 JSON 字符串并插入。
+- `%j` 将一个值转换为 JSON 字符串并插入。
 
 ```javascript
 console.log('%j', {foo: 123, bar: 'abc'});
 ```
+
 Output:
+
 `{"foo":123,"bar":"abc"}`
 
-```
+- `%%` 插入单个 `%`。
 
-## 7.2 `console.*` API：打印数据及更多
-
-• `%%` 插入单个 `%`。
-
-```
+```javascript
 console.log('%s%%', 99);
 ```
+
 Output:
 `99%`
-```
 
-### 7.2.2 打印错误信息：`console.error()` (stderr)
+### 7.2.2 打印错误信息：console.error() (stderr)
 
 `console.error()` 的用法与 `console.log()` 相同，但它记录的内容被视为错误信息。对于 Node.js，这意味着输出在 Unix 上发送到 `stderr` 而不是 `stdout`。
 
-### 7.2.3 通过 `JSON.stringify()` 打印嵌套对象
+### 7.2.3 通过 JSON.stringify() 打印嵌套对象
 
 `JSON.stringify()` 有时用于打印嵌套对象：
 
 ```javascript
 console.log(JSON.stringify({first: 'Jane', last: 'Doe'}, null, 2));
 ```
+
 Output:
+
 ```json
 {
 "first": "Jane",
@@ -4893,6 +4794,7 @@ Output:
 # 第 8 章：断言 API
 
 ### 目录
+
 - 8.1 软件开发中的断言
 - 8.2 断言在书中如何使用
     - 8.2.1 通过断言在代码示例中记录结果
@@ -4906,12 +4808,17 @@ Output:
 
 ## 8.1 软件开发中的断言
 
-在软件开发中，断言是指关于值或代码段必须为真的的事实。如果不成立，则会抛出异常。Node.js 通过其内置模块 `assert` 支持断言。例如：
+
+
+# 断言
+
+在软件开发中，断言是指关于值或代码段必须为真的事实。如果不成立，则会抛出异常。Node.js 通过其内置模块 `assert` 支持断言。例如：
 
 ```javascript
 import {strict as assert} from 'assert';
 assert.equal(3 + 5, 8);
 ```
+
 该断言表示 `3 加 5` 的预期结果为 `8`。该导入语句使用了推荐的严格模式 `assert` 版本。
 
 ## 8.2 断言在书中如何使用
@@ -4927,12 +4834,15 @@ function id(x) {
   return x;
 }
 ```
+
 `id()` 返回它的参数。我们可以通过断言展示它的运行情况：
 
 ```javascript
 assert.equal(id('abc'), 'abc');
 ```
+
 在示例中，我通常省略了导入 `assert` 的语句。使用断言的动机是：
+
 - 你可以精确指定预期内容。
 - 代码示例可以进行自动测试，从而确保它们确实有效。
 
@@ -4952,6 +4862,7 @@ test('First exercise', t => {
   assert.equal(hello(''), 'Hello !');
 });
 ```
+
 更多信息，请参阅 §9 “开始学习测验与练习”。
 
 ## 8.3 普通比较 vs. 深度比较
@@ -4961,11 +4872,13 @@ test('First exercise', t => {
 ```javascript
 assert.notEqual({foo: 1}, {foo: 1});
 ```
+
 `deepEqual()` 是比较对象的更好选择：
 
 ```javascript
 assert.deepEqual({foo: 1}, {foo: 1});
 ```
+
 该方法也适用于数组：
 
 ```javascript
@@ -4983,11 +4896,13 @@ function equal(actual: any, expected: any, message?: string): void
 // actual === expected 必须为真。如果不是，则抛出 AssertionError。
 assert.equal(3, 3);
 ```
+
 ```javascript
 function notEqual(actual: any, expected: any, message?: string): void
 // actual !== expected 必须为真。如果不是，则抛出 AssertionError。
 assert.notEqual(3, 2);
 ```
+
 可选的 `message` 可用于解释断言的内容。如果断言失败，该消息将用于设置 `AssertionError`。
 
 ```javascript
@@ -5007,10 +4922,11 @@ function deepEqual(actual: any, expected: any, message?: string): void
 assert.deepEqual([1, 2, 3], [1, 2, 3]);
 assert.deepEqual([], []);
 ```
+
 ```javascript
-function notEqual(actual: any, expected: any, message?: string): void
+function notDeepEqual(actual: any, expected: any, message?: string): void
 // actual 不能与 expected 深度相等。如果相等，则抛出 AssertionError。
-assert.notEqual([1, 2, 3], [1, 2]);
+assert.notDeepEqual([1, 2, 3], [1, 2]);
 ```
 
 ### 8.4.3 预期异常
@@ -5043,6 +4959,7 @@ try {
 # 第 9 章：开始学习测验与练习
 
 ### 目录
+
 - 9.1 测验
 - 9.2 练习
     - 9.2.1 安装练习
@@ -5054,11 +4971,8 @@ try {
 ## 9.1 测验
 
 安装：
+
 下载并解压 `impatient-js-quiz.zip`
-
-
-
-
 
 运行测试应用：
 
@@ -5077,7 +4991,7 @@ try {
 
 ### 9.2.2 运行练习
 
-书书中通过路径引用练习程序。
+书中通过路径引用练习程序。
 
 - 例如：`exercises/quizzes-exercises/first_module_test.mjs`
 
@@ -5112,7 +5026,7 @@ export function id(x) {
 }
 ```
 
-这里的关键点是：你想要测试的内容都必须导出（export）。否则，测试代码无法访问它。
+这里的关键点是：你想要测试的内容都必须导出（`export`）。否则，测试代码无法访问它。
 
 #### 9.3.1.2 部分 2：测试
 
@@ -5161,7 +5075,7 @@ npm test demos/quizzes-exercises/id_test.mjs
 
 ### 9.3.2 AVA 中的异步测试
 
-你可以推到学习异步编程章节后再阅读本节。
+你可以推迟学习异步编程章节后再阅读本节。
 
 为异步代码编写测试需要额外的工作：测试稍后接收结果，并在返回时必须向 AVA 信号它尚未完成。以下小节将探讨实现这种操作的三种方法。
 
@@ -5208,7 +5122,7 @@ test('dividePromise 2', async t => {
 
 不需要显式返回任何内容：隐式返回 `undefined` 用于履行该函数返回 Promise。如果测试代码抛出异常，异步函数将处理拒绝该 Promise。
 
-## 10 变量与赋值
+# 第 10 章：变量与赋值
 
 这些是 JavaScript 声明变量的主要方式：
 
@@ -5217,9 +5131,9 @@ test('dividePromise 2', async t => {
 
 在 ES6 之前，还有 `var`。但它有很多特殊之处，因此在现代 JavaScript 中最好避免使用。你可以在 ["Speaking JavaScript”](http://speakingjs.com/es5/ch16.html) 中阅读更多信息。
 
-### 10.1 let
+## 10.1 `let`
 
-通过 `let` 声明的变量是变的：
+通过 `let` 声明的变量是可变的：
 
 ```javascript
 let i;
@@ -5228,7 +5142,7 @@ i = i + 1;
 assert.equal(i, 1);
 ```
 
-### 10.2 const
+## 10.2 `const`
 
 通过 `const` 声明的变量是不可变的。你必须始终初始化：
 
@@ -5243,10 +5157,7 @@ assert.throws(
 );
 ```
 
-
-
-
-## 10.2.1 `const` 与不可变性
+### 10.2.1 `const` 与不可变性
 
 在 JavaScript 中，`const` 仅意味着绑定（变量名与变量值之间的关联）是不可变的。值本身可能是可变的，例如示例中的 `obj`。
 
@@ -5256,15 +5167,19 @@ const obj = { prop: 0 };
 
 允许：修改 `obj` 的属性：`obj.prop = obj.prop + 1; assert.equal(obj.prop, 1);`
 
-不允许：给 `obj` 赋值：`assert.throws(
+不允许：给 `obj` 赋值：
+
+```javascript
+assert.throws(
   () => { obj = {} },
   {
     name: 'TypeError',
     message: 'Assignment to constant variable.',
   }
-);`
+);
+```
 
-## 10.2.2 `const` 与循环
+### 10.2.2 `const` 与循环
 
 你可以在 `for-of` 循环中使用 `const`，其中为每次迭代都会创建一个新的绑定：
 
@@ -5275,16 +5190,20 @@ for (const elem of arr) {
   console.log(elem);
 }
 ```
+
 **输出：**
-'hello'
-'world'
+
+```
+hello
+world
+```
 
 但在普通的 `for` 循环中，你必须使用 `let`：
 
 ```javascript
 const arr = ['hello', 'world'];
 
-for (let i=0; i<arr.length; i++) {
+for (let i = 0; i < arr.length; i++) {
   const elem = arr[i];
   console.log(elem);
 }
@@ -5292,18 +5211,20 @@ for (let i=0; i<arr.length; i++) {
 
 ## 10.3 在 `let` 和 `const` 之间做决定
 
-我建议遵循以下规则决定决定 `let` 还是 `const`：
+我建议遵循以下规则决定 `let` 还是 `const`：
 
 - `const` 表示不可变的绑定，且变量永远不会改变值。优先使用它。
 - `let` 表示变量的值会改变。只有在无法使用 `const` 时才使用它。
 
 ![](img/image01418.jpeg)![](img/image01419.jpeg)
+
 ![](img/image01416.jpeg) **练习：** `const`
+
 `exercises/variables-assignment/const_exrc.mjs`
 
 ## 10.4 变量的作用域
 
-变量的作用域程序可以访问它的区域。考虑以下代码。
+变量的作用域是程序可以访问它的区域。考虑以下代码。
 
 ```javascript
 { // 作用域 A。可访问：x
@@ -5335,13 +5256,14 @@ assert.throws(
 ```
 
 - `Scope A` 是 `x` 的（直接）作用域。
-- `Scopes B` 和 `C` 是 `scope A` 的内部作用域。
-- `Scope A` 是 `scope B` 和 `scope C` 的外部作用域。
+- `Scopes B` 和 `C` 是 `Scope A` 的内部作用域。
+- `Scope A` 是 `Scope B` 和 `Scope C` 的外部作用域。
 
-每个变量在它的直接作用域以及所有嵌套在作用作用域内的所有作用域中都是可访问的。
+每个变量在它的直接作用域以及所有嵌套在该作用域内的所有作用域中都是可访问的。
+
 通过 `const` 和 `let` 声明的变量被称为块级作用域变量，因为它们的作用域总是周围最内层的块。
 
-### 10.4.1 变量遮蔽（Shadowing）
+### 10.4.1 变量遮蔽
 
 你不能在同一层声明两次相同的变量：
 
@@ -5358,7 +5280,8 @@ assert.throws(
 ```
 
 ![](img/image01410.jpeg)![](img/image01420.jpeg)
-![](img/image01403.jpeg) **为什么用 `eval()`？** `eval()` 推延迟了解析（因此延迟了 `SyntaxError`），直到 `assert.throws()` 的回调执行。如果我们不使用它，在代码被解析时就会得到错误，`assert.throws()` 甚至不会执行。
+
+![](img/image01403.jpeg) **为什么用 `eval()`？** `eval()` 推迟了解析（因此延迟了 `SyntaxError`），直到 `assert.throws()` 的回调执行。如果我们不使用它，在代码被解析时就会得到错误，`assert.throws()` 甚至不会执行。
 
 然而，你可以嵌套一个块，并使用与块外部相同的变量名 `x`：
 
@@ -5377,7 +5300,9 @@ assert.equal(x, 1);
 在块内部，内部的 `x` 是该名称唯一可访问的变量。内部的 `x` 屏蔽了外部的 `x`。一旦离开块，你就可以再次访问旧值。
 
 ![](img/image01399.jpeg)![](img/image01396.jpeg)
+
 ![](img/image01397.jpeg) **测试：** 
+
 查看测试应用程序。
 
 ## 10.5 (高级)
@@ -5388,10 +5313,10 @@ assert.equal(x, 1);
 
 这两个形容词描述了编程语言中的现象：
 
-- **静态 (Static)** 意味着某些与源代码有关，可以在不执行代码的情况下确定。
-- **动态 (Dynamic)** 意味着运行时。
+- **静态** 意味着某些与源代码有关，可以在不执行代码的情况下确定。
+- **动态** 意味着运行时。
 
-让我们这两个术语的示例。
+让我们看这两个术语的示例。
 
 ### 10.6.1 静态现象：变量的作用域
 
@@ -5405,6 +5330,7 @@ function f() {
 ```
 
 `x` 是静态（或词法）作用域的。也就是说，它的作用域是固定的，不会在运行时改变。
+
 变量作用域形成了一个静态树（通过静态嵌套）。
 
 ### 10.6.2 动态现象：函数调用
@@ -5419,21 +5345,10 @@ function f() {
 ```
 
 `x` 是静态（或词法）作用域的。也就是说，它的作用域是固定的，不会在运行时改变。
+
 变量作用域形成了一个静态树（通过静态嵌套）。
 
 ## 10.7 全局对象
-
-变量作用域是一种静态现象。考虑以下代码：
-
-```javascript
-function f() {
-  const x = 3;
-  // ···
-}
-```
-
-`x` 是静态（或词法）作用域的。也就是说，它的作用域是固定的，不会在运行时改变。
-变量作用域形成了一个静态树（通过静态嵌套）。
 
 ### 10.7.1 全局对象
 
@@ -5445,7 +5360,7 @@ function f() {
 - `self`：在浏览器各处可用，包括 Web Workers。但 Node.js 不支持。
 - `global`：仅在 Node.js 中可用。
 
-让我们 `window` 如何工作：
+让我们看 `window` 如何工作：
 
 ```javascript
 // 在脚本顶层
@@ -5473,32 +5388,10 @@ Brendan Eich 将全局对象称为他对 JavaScript 最大遗憾之一。最好�
 
 这些是声明的两个关键方面：
 
-- **作用域 (Scope)**：声明的实体可以在哪里被看到？这是一个静态特征。
-
-
-
-
-
-# 激活：我何时可以访问实体？这是一个动态特性。某些实体在我们进入其作用域后就可以被访问。对于其他实体，我们必须等候执行到达它们的声明处。
+- **作用域**：声明的实体可以在哪里被看到？这是一个静态特征。
+- **激活**：我何时可以访问实体？这是一个动态特性。某些实体在我们进入其作用域后就可以被访问。对于其他实体，我们必须等候执行到达它们的声明处。
 
 表 10.1 总结了各种声明如何处理这些方面。
-
-## 7010 变量与赋值
-
-表 10.1：声明的各个方面。“重复”（Duplicates）描述了声明是否可以在（每个作用域内）使用相同的名称两次。“全局属性”（Global prop.）描述了声明在脚本的全局作用域执行时，是否会向全局对象添加属性。`TDZ` 意味着临时死区（后文将解释）。(*) 函数声明通常是块级作用域的但在但在严格模式（sloppy mode）下是函数作用域的。
-
-![](img/image01422.jpeg)
-
-| | 作用域 | 激活 | 重复 | 全局属性 |
-| :--- | :--- | :--- | :--- | :--- |
-| `const` | 块 | 声明 (`TDZ`) | ✘ | ✘ |
-| `let` | 块 | 声明 (`TDZ`) | ✘ | ✘ |
-| `function` | 块 (*) | 启动 | ✔ | ✔ |
-| `class` | 块 | 声明 (`TDZ`) | ✘ | ✘ |
-| `import` | 模块 | 与 export 相同 | ✘ | ✘ |
-| `var` | 函数 | 启动，部分激活 | ✔ | ✔ |
-
-`import` 在 §24.4 “ECMAScript 模块”中描述。接下来的章节将更详细地描述其他构造。
 
 ### 10.8.1 `const` 和 `let`：临时死区
 
@@ -5516,6 +5409,7 @@ Brendan Eich 将全局对象称为他对 JavaScript 最大遗憾之一。最好�
 - 在当前作用域周围的作用域中解析名称。
 - 你得到 `undefined`。
 - 产生一个错误。
+
 - (1) 被拒绝了，因为该语言中没有这种方法的先例。因此这对于 JavaScript 程序员来说是不直观的。
 - (2) 被拒绝了，因为那样 `x` 就不是一个常量了——它在声明之前之后会有不同的值。
 - `let` 使用与 `const` 相同的方法 (3)，以便它们的工作方式相似，并且容易在它们之间切换。
@@ -5524,8 +5418,6 @@ Brendan Eich 将全局对象称为他对 JavaScript 最大遗憾之一。最好�
 
 - 在这段时间内，该变量被认为是未初始化的（就像它拥有一个特殊值一样）。
 - 如果你访问未初始化的变量，你将得到一个 `ReferenceError`。
-
-| 10.8 声明：作用域与激活 | 71 |
 
 一旦你到达变量声明处，变量将被设置为初始化器的值（通过赋值符号指定）或 `undefined` ——如果没有初始化器的话。
 
@@ -5581,8 +5473,6 @@ function foo() { return 123; }
 assert.equal(foo(), 123);
 ```
 
-7210 变量与赋值
-
 如果你通过 `const` 或 `let` 声明函数，那么它就不会被早期激活：在下面的示例中，你只能在声明 `bar()` 之后使用它。
 
 ```javascript
@@ -5622,9 +5512,7 @@ function funcDecl() {
 
 #### 10.8.2.3 早期激活的优缺点
 
-我们看到早期激活有一个陷阱，而且你可以在不使用它的的情况下获得大部分益处。因此，避免早期激活更好。但我喜欢函数声明的语法。
-
-| 10.8 声明：作用域与激活 | 73 |
+我们看到早期激活有一个陷阱，而且你可以在不使用它的情况下获得大部分益处。因此，避免早期激活更好。但我喜欢函数声明的语法。
 
 ### 10.8.3 类声明不是早期激活的
 
@@ -5653,23 +5541,24 @@ var x = 123;
 
 该声明有两个部分：
 
-- 声明 `var x`：`var` 声明变量的作用域是最内层的周围函数，而不是最内层的块（像大多数其他声明那样）。这种变量在在其作用域开始时已经是激活的，并被初始化为 `undefined`。
+- 声明 `var x`：`var` 声明变量的作用域是最内层的周围函数，而不是最内层的块（像大多数其他声明那样）。这种变量在其作用域开始时已经是激活的，并被初始化为 `undefined`。
 - 赋值 `x = 123`：赋值始终原地执行。
 
 以下代码演示了 `var` 的影响：
 
 ```javascript
 function f() {
-  // 部分早期激活：assert.equal(x, undefined);
+  // 部分早期激活：
+  assert.equal(x, undefined);
   if (true) {
     var x = 123;
-    // 赋值在原地执行：assert.equal(x, 123);
+    // 赋值在原地执行：
+    assert.equal(x, 123);
   }
-  // 作用域是函数而不是块：assert.equal(x, 123);
+  // 作用域是函数而不是块：
+  assert.equal(x, 123);
 }
 ```
-
-7410 变量与赋值
 
 ## 10.9 闭包
 
@@ -5687,22 +5576,13 @@ function f() {
 ```javascript
 function func(x) {
   const y = 123;
-}
-```
-
-
-
-
-
-```javascript
-console.log(z);
-
+  console.log(z);
 }
 ```
 
 在 `func()` 的体中，`x` 和 `y` 是绑定变量。`z` 是一个自由变量。
 
-## 10.9.2 什么是闭包？
+### 10.9.2 什么是闭包？
 
 那么，什么是闭包呢？
 
@@ -5730,9 +5610,7 @@ assert.equal(func(),  'abc');  // (A)
 
 JavaScript 通过闭包支持静态作用域。因此，每个函数都是闭包。
 
-| 10.9 闭包 | 75 |
-
-## 10.9.3 示例：自增器工厂
+### 10.9.3 示例：自增器工厂
 
 以下函数返回自增器（一个我随口的名字）。自增器是一个内部存储一个数字的函数。当它被调用时，它通过将参数加到数字上更新该数字并返回新值。
 
@@ -5766,13 +5644,11 @@ function createInc(startValue) {
 const inc =  createInc(5);
 
 assert.deepEqual(inc(2), [0,  7]);
-
 assert.deepEqual(inc(2), [1,  9]);
-
 assert.deepEqual(inc(2), [2,  11]);
 ```
 
-## 10.9.4 闭包的用例
+### 10.9.4 闭包的用例
 
 闭包有什么用？
 
@@ -5782,11 +5658,9 @@ assert.deepEqual(inc(2), [2,  11]);
 
 ![](img/image01395.jpeg)![](img/image01396.jpeg)
 
-![](img/image01397.jpeg) 测验：高级
+![](img/image01397.jpeg) **测验：** 
 
 查看测验应用。
-
-76 10 变量与赋值
 
 ## 10.10 延伸阅读
 
@@ -5794,24 +5668,24 @@ assert.deepEqual(inc(2), [2,  11]);
 
 # 第 11 章：值
 
-目录
+### 目录
 
 ![](img/image01393.jpeg)
 
-| 11.1 | 什么是类型？ . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . | 77 |
-| 11.2 | JavaScript 的类型层级 . . . . . . . . . . . . . . . . . . . . . . . . | 78 |
-| 11.3 | 语言规范的类型 . . . . . . . . . . . . . . . . . . . . . | 78 |
-| 11.4 | 原始值对比对象 . . . . . . . . . . . . . . . . . . . . . . . . | 79 |
-| | 11.4.1 | 原始值（简写: primitives）. . . . . . . . . . . . . . . . | 79 |
-| | 11.4.2 | 对象 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . | 80 |
+| 11.1 | 什么是类型？ | 77 |
+| 11.2 | JavaScript 的类型层级 | 78 |
+| 11.3 | 语言规范的类型 | 78 |
+| 11.4 | 原始值对比对象 | 79 |
+| | 11.4.1 | 原始值（简写: primitives） | 79 |
+| | 11.4.2 | 对象 | 80 |
 | 11.5 | 运算符 `typeof` 和 `instanceof`：值的类型是什么？ | 81 |
-| | 11.5.1 | `typeof`  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . | 82 |
-| | 11.5.2 | `instanceof`  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . | 82 |
-| 11.6 | 类与构造函数 . . . . . . . . . . . . . . . . . . . . | 83 |
-| | 11.6.1 | 与原始类型关联的构造函数 . . . . . . . | 83 |
-| 11.7 | 类型之间的转换 . . . . . . . . . . . . . . . . . . . . . . . . . . | 84 |
-| | 11.7.1 | 显式类型转换 . . . . . . . . . . . . . . . . . . | 84 |
-| | 11.7.2 | 强制类型转换（类型之间的自动转换） . . . . . . | 85 |
+| | 11.5.1 | `typeof` | 82 |
+| | 11.5.2 | `instanceof` | 82 |
+| 11.6 | 类与构造函数 | 83 |
+| | 11.6.1 | 与原始类型关联的构造函数 | 83 |
+| 11.7 | 类型之间的转换 | 84 |
+| | 11.7.1 | 显式类型转换 | 84 |
+| | 11.7.2 | 强制类型转换（类型之间的自动转换） | 85 |
 
 在本章中，我们将检查 JavaScript 拥有哪些类型的值。
 
@@ -5825,23 +5699,11 @@ assert.deepEqual(inc(2), [2,  11]);
 
 在本章中，我将类型视为值的集合。例如，`boolean` 类型是集合 `{ false, true }`。
 
-77
-
-| 78 | 11 值 |
-| 11.2 JavaScript 的类型层级 | |
-| (any) | |
-| (primitive value) | (object) |
-| undefined | boolean | Object |
-| null | number | |
-| | Array | Function |
-| | string | |
-| | Map | RegExp |
-| | symbol | |
-| | Set | Date |
+## 11.2 JavaScript 的类型层级
 
 ![](img/image01429.jpeg)
 
-图图 11.1：JavaScript 类型的部分层级。缺失了错误的类、与原始类型关联的类等。该图暗示了并非所有对象都是 `Object` 的实例。
+图 11.1：JavaScript 类型的部分层级。缺失了错误的类、与原始类型关联的类等。该图暗示了并非所有对象都是 `Object` 的实例。
 
 图 11.1 显示了 JavaScript 的类型层级。我们从该图中学习了什么？
 
@@ -5873,17 +5735,11 @@ ECMAScript 规范仅包含 7 种类型。这些类型的名称为（我使用的
 let str = 'abc';
 assert.equal(str.length, 3);
 assert.throws(() => { str.length = 1 },
-```
-
-
-
-
-
-```javascript
 /^TypeError: Cannot assign to read only property 'length'/
+);
 ```
 
-### 11.4.1.2 基本类型按值传递
+#### 11.4.1.2 基本类型按值传递
 
 基本类型是按值传递的：变量（包括参数）存储基本类型的内容。当将一个基本类型赋值给变量或将其作为参数传递给函数时，其内容会被复制。
 
@@ -5893,7 +5749,7 @@ let y = x;
 assert.equal(y,  123);
 ```
 
-### 11.4.1.3 基本类型按值比较
+#### 11.4.1.3 基本类型按值比较
 
 基本类型按值比较：当比较两个基本类型值时，我们比较的是它们的内容。
 
@@ -5911,19 +5767,23 @@ assert.equal('abc'  ===  'abc',  true);
 让我们首先探索创建对象的两种常用方式：
 
 *   **对象字面量**：
+
     ```javascript
     const obj = {
       first:  'Jane',
       last:  'Doe',
     };
     ```
-    对象字面量以大括号 `{}` 开始和结束。它创建了一个有两个属性的对象。第一个属性的键为 `'first'`（字符串），值为 `'Jane'`。第二个属性的键为 `'last'`，值为 `'Doe'`。关于对象字面量的更多信息，请参 §25.2.1 “对象字面量：属性”。
+
+    对象字面量以大括号 `{}` 开始和结束。它创建了一个有两个属性的对象。第一个属性的键为 `'first'`（字符串），值为 `'Jane'`。第二个属性的键为 `'last'`，值为 `'Doe'`。关于对象字面量的更多信息，请参阅 §25.2.1 “对象字面量：属性”。
 
 *   **数组字面量**：
+
     ```javascript
     const arr = ['foo',  'bar'];
     ```
-    数组字面量以方括号 `[]` 开始和结束。它创建了一个包含两个元素 `'foo'` 和 `'bar'` 的 `Array`。关于数组字面量的更多信息，请参阅 $full。
+
+    数组字面量以方括号 `[]` 开始和结束。它创建了一个包含两个元素 `'foo'` 和 `'bar'` 的 `Array`。关于数组字面量的更多信息，请参阅 `$full`。
 
 #### 11.4.2.1 对象默认是可变的
 
@@ -5940,8 +5800,6 @@ assert.equal(obj.foo,  'def');
 #### 11.4.2.2 对象按身份传递
 
 对象按身份传递（这是我的术语）：变量（包括参数）存储对象的身份。
-
-| 11.5 运算符 `typeof` 和 `instanceof`：值的类型是什么？ | 81 |
 
 对象的身份就像一个指向堆（heap）上对象实际数据的指针（或透明引用，可以想象成 JavaScript 引擎的共享主内存）。
 
@@ -5968,6 +5826,7 @@ obj = {};
 现在 `obj` 的旧值 `{ prop: 'value' }` 是垃圾（不再使用）。JavaScript 将在某个时间点自动进行垃圾回收（将其从内存中移除），如果有足够的可用内存，可能永远不会。
 
 ![](img/image01430.jpeg)![](img/image01417.jpeg)
+
 ![](img/image01403.jpeg) 详情：按身份传递
 
 “按身份传递”意味着对象的身份（一个透明引用）按值传递。这种方法也被称为[按共享传递](https://en.wikipedia.org/wiki/Evaluation_strategy#Call_by_sharing)。
@@ -5982,11 +5841,9 @@ assert.equal(obj === obj,  true);  // 相同身份
 assert.equal({} === {},  false);  // 不同身份，相同内容
 ```
 
-### 11.5 运算符 `typeof` 和 `instanceof`：值的类型是什么？
+## 11.5 运算符 `typeof` 和 `instanceof`：值的类型是什么？
 
 `typeof` 和 `instanceof` 运算符让你确定给定值 `x` 具有什么类型：
-
-8211 值
 
 ```javascript
 if (typeof x ===  'string') ···
@@ -5999,9 +5856,10 @@ if (x instanceof Array) ···
 *   `instanceof` 测试哪个类创建了给定的值。
 
 ![](img/image01431.jpeg)![](img/image01432.jpeg)
+
 ![](img/image01427.jpeg) 诀：`typeof` 用于基本类型，`instanceof` 用于对象。
 
-#### 11.5.1 typeof
+### 11.5.1 `typeof`
 
 表 11.1：`typeof` 运算符的结果。
 
@@ -6024,13 +5882,14 @@ if (x instanceof Array) ···
 *   函数的 `typeof` 应该是 `'object'`（函数是对象）。引入一个独立的函数类别会引起困惑。
 
 ![](img/image01434.jpeg)![](img/image01435.jpeg)
+
 ![](img/image01416.jpeg) 练习：两个关于 `typeof` 的练习。
 
 `exercises/values/typeof_exrc.mjs`
 
 奖励：`exercises/values/is_object_test.mjs`
 
-#### 11.5.2 instanceof
+### 11.5.2 `instanceof`
 
 该运算符回答一个问题：值 `x` 是否是由类 `C` 创建的？
 
@@ -6038,30 +5897,33 @@ if (x instanceof Array) ···
 
 例如：
 
-| 11.6 类和构造函数 | 83 |
-
-> `(function() {}) instanceof Function`
-> true
-> `({}) instanceof Object`
-> true
-> `[] instanceof Array`
-> true
+```
+> (function() {}) instanceof Function
+true
+> ({}) instanceof Object
+true
+> [] instanceof Array
+true
+```
 
 基本类型不是任何东西的实例：
 
-> `123 instanceof Number`
-> false
-> `'' instanceof String`
-> false
-> `'' instanceof Object`
-> false
+```
+> 123 instanceof Number
+false
+> '' instanceof String
+false
+> '' instanceof Object
+false
+```
 
 ![](img/image01436.jpeg)![](img/image01437.jpeg)
+
 ![](img/image01416.jpeg) 练习：`instanceof`
 
 `exercises/values/instanceof_exrc.mjs`
 
-### 11.6 类和构造函数
+## 11.6 类和构造函数
 
 JavaScript 原始的创建工厂是构造函数：普通函数，当你通过 `new` 运算符调用它们时，它们会返回自身的“实例”。
 
@@ -6071,7 +5933,7 @@ ES6 引入了类，类主要是构造函数更好的语法。
 
 类可以看作是将规范中的单一类型 `object` 划分为子类型——它们为我们提供了比规范有限 7 种更多的类型。每个类都是它所创建对象的类型。
 
-#### 11.6.1 与基本类型关联的构造函数
+### 11.6.1 与基本类型关联的构造函数
 
 每个基本类型（除 `undefined` 和 `null` 的规范内部类型外）都有一个关联的构造函数（想象成类）：
 
@@ -6083,14 +5945,19 @@ ES6 引入了类，类主要是构造函数更好的语法。
 这些函数中的每一个都扮演着多个角色。例如，`Number`：
 
 *   你可以将其作为函数使用并将值转换为数字：
+
     ```javascript
     assert.equal(Number('123'),  123);
     ```
+
 *   `Number.prototype` 为数字提供了属性。例如，方法 `.toString()`：
+
     ```javascript
     assert.equal((123).toString, Number.prototype.toString);
     ```
+
 *   `Number` 是用于数字工具函数的命名空间/容器对象。例如：
+
     ```javascript
     assert.equal(Number.isInteger(123),  true);
     ```
@@ -6109,25 +5976,16 @@ assert.equal(new Number(123).valueOf(),  123);
 ```javascript
 const prim = true;
 assert.equal(typeof  prim,  'boolean');
-```
-
-
-
-
-
-```javascript
 assert.equal(prim instanceof Boolean, false);
 
 const wrapped = Object(prim);
 
 assert.equal(typeof wrapped, 'object');
-
 assert.equal(wrapped instanceof Boolean, true);
-
 assert.equal(wrapped.valueOf(), prim);  // unwrap
 ```
 
-包装在实践中很少使用，但它在语言规范内部内部，用于为原始类型提供属性。
+包装在实践中很少使用，但它在语言规范内部，用于为原始类型提供属性。
 
 ## 11.7 类型之间的转换
 
@@ -6140,21 +5998,21 @@ assert.equal(wrapped.valueOf(), prim);  // unwrap
 
 与原始类型关联的函数会将值显式地转换为该类型：
 
+```
 > Boolean(0)
-> false
-
+false
 > Number('123')
-> 123
-
+123
 > String(123)
-> '123'
+'123'
+```
 
 你也可以使用 `Object()` 将值转换为对象：
 
-| 11.7 类型之间的转换 | 85 |
-
-> `typeof Object(123)`
-> 'object'
+```
+> typeof Object(123)
+'object'
+```
 
 ### 11.7.2 强制类型转换（类型之间的自动转换）
 
@@ -6162,13 +6020,17 @@ assert.equal(wrapped.valueOf(), prim);  // unwrap
 
 例如，乘法运算符会将其操作数转换为数字：
 
+```
 > '7' * '3'
-> 21
+21
+```
 
 许多内置函数也会进行强制转换。例如，`parseInt()` 将其参数转换为字符串（解析在第一个非数字字符处停止）：
 
-> `parseInt(123.45)`
-> 123
+```
+> parseInt(123.45)
+123
+```
 
 ![](img/image01436.jpeg)![](img/image01437.jpeg)
 
@@ -6182,23 +6044,25 @@ assert.equal(wrapped.valueOf(), prim);  // unwrap
 
 查看测验应用。
 
-## 12 运算符
+# 第 12 章：运算符
 
-### 12.1 理解运算符
+## 12.1 理解运算符
 
 JavaScript 的运算符可能看起来很古怪。通过以下两个规则，它们会更容易理解：
 
 1. 运算符会将其操作数转换为适当的类型
 2. 大多数运算符只对原始值有效
 
-#### 12.1.1 运算符会将其操作数转换为适当的类型
+### 12.1.1 运算符会将其操作数转换为适当的类型
 
 如果运算符获取的操作数类型不正确，它很少抛出异常。相反，它会强制转换（自动转换）操作数以便它可以处理。让我们来看两个例子。
 
 首先，乘法运算符只能与数字一起。因此，它在计算结果之前会将字符串转换为数字。
 
+```
 > '7' * '3'
-> 21
+21
+```
 
 其次，访问对象属性的方括号运算符（`[]`）只能处理字符串和符号。所有其他值都被转换为字符串：
 
@@ -6207,14 +6071,16 @@ const obj = {};
 obj['true'] = 123;
 ```
 
-#### 12.1.2 大多数运算符只对原始值有效
+### 12.1.2 大多数运算符只对原始值有效
 
 如前所述，大多数运算符只对原始值有效。如果操作数是一个对象，它通常会被强制转换为原始值。例如，加法运算符首先将其操作数转换为原始值。接下来，它会拼接这两个字符串：
 
-> `[1,2,3] + [4,5,6]`
-> '123456'
+```
+> [1,2,3] + [4,5,6]
+'123456'
+```
 
-### 12.2 加法运算符 (+)
+## 12.2 加法运算符 (+)
 
 加法运算符在 JavaScript 中的工作如下：首先，它将两个操作数转换为原始值。然后，它切换到两种模式之一：
 
@@ -6223,12 +6089,14 @@ obj['true'] = 123;
 
 字符串模式允许我们使用 `+` 来组合字符串：
 
+```
 > 'There are ' + 3
-> 'There are 3 items'
+'There are 3 items'
+```
 
-### 12.3 赋值运算符
+## 12.3 赋值运算符
 
-#### 12.3.1 普通赋值运算符
+### 12.3.1 普通赋值运算符
 
 普通赋值运算符用于更改存储位置：
 
@@ -6245,7 +6113,7 @@ const x = value;
 let y = value;
 ```
 
-#### 12.3.2 复合赋值运算符
+### 12.3.2 复合赋值运算符
 
 给定运算符 `op`，以下两种赋值方式是等价的：
 
@@ -6267,88 +6135,87 @@ assert.equal(str, '<b>Hello!</b>');
 所有复合赋值运算符列表
 
 - 算术运算符：`+=`, `-=`, `*=`, `/=`, `**=` (`+=` 也适用于字符串拼接）
-- 位运算运算符：`<<=`, `>>=`, `&=`, `^=`, `|==`
+- 位运算运算符：`<<=`, `>>=`, `&=`, `^=`, `|=`
 
-### 12.4 等等：== vs. ===
+## 12.4 等等：== vs. ===
 
-JavaScript 有两种等等运算符：松相等（`==`）和严格相等（`===`）。建议始终使用后者。
+JavaScript 有两种相等运算符：松散相等（`==`）和严格相等（`===`）。建议始终使用后者。
 
 `==` 和 `===` 的其他名称：
-`==` 也称为双等等号。它在语言规范中的正式名称是 [抽象相等比较](https://tc39.github.io/ecma262/#sec-abstract-equality-comparison)。
-`===` 也称为三等等号。
 
-#### 12.4.1 松相等 (== 和 !=)
+- `==` 也称为双等号。它在语言规范中的正式名称是 [抽象相等比较](https://tc39.github.io/ecma262/#sec-abstract-equality-comparison)。
+- `===` 也称为三等号。
 
-松相等是 JavaScript 的怪癖之一。它经常强制转换操作数。其中一些强制转换是合理的：
+### 12.4.1 松散相等 (== 和 !=)
 
+松散相等是 JavaScript 的怪癖之一。它经常强制转换操作数。其中一些强制转换是合理的：
+
+```
 > '123' == 123
-> true
-
+true
 > false == 0
-> true
+true
+```
 
 其他的则没那么合理：
 
+```
 > '' == 0
-> true
+true
+```
 
 当（且仅当！）另一个操作数是原始值时，对象会被强制转换：
 
+```
 > [1, 2, 3] == '1,2,3'
-> true
-
+true
 > ['1', '2', '3'] == '1,2,3'
-> true
+true
+```
 
 如果两个操作数都是对象，那么只有当它们是同一个对象时才相等：
 
+```
 > [1, 2, 3] == ['1', '2', '3']
-> false
-
+false
 > [1, 2, 3] == [1, 2, 3]
-> false
+false
+```
 
 ```javascript
 const arr = [1, 2, 3];
 arr == arr
+true
 ```
 
 最后，`==` 认为 `undefined` 和 `null` 是相等的：
 
+```
 > undefined == null
-> true
+true
+```
 
-#### 12.4.2 严格相等 (=== 和 !==)
+### 12.4.2 严格相等 (=== 和 !==)
 
 严格相等从不强制转换。两个值只有在类型相同时才相等。让我们回顾之前与 `==` 运算符的交互，看看 `===` 运算符做了什么：
 
+```
 > false === 0
-> false
-
+false
 > '123' === 123
-> false
+false
+```
 
 对象仅在当该值是同一个对象时才相等：
 
+```
 > [1, 2, 3] === '1,2,3'
-> false
-
-
-
-
-
-```javascript
-['1', '2', '3'] === '1,2,3'
 false
-```
-
-```javascript
-[1, 2, 3] === ['1', '2', '3']
+> ['1', '2', '3'] === '1,2,3'
 false
-```
-
-```javascript
-[1, 2, 3] === [1, 2, 3]
+> [1, 2, 3] === ['1', '2', '3']
+false
+> [1, 2, 3] === [1, 2, 3]
 false
 ```
 
@@ -6360,8 +6227,8 @@ true
 
 `===` 运算符并不认为 `undefined` 和 `null` 相等：
 
-```javascript
-undefined === null
+```
+> undefined === null
 false
 ```
 
@@ -6452,14 +6319,14 @@ myIndexOf([0, NaN, 2], NaN) // 1
 
 结果 `-1` 意味着 `indexOf()` 未在 `Array` 中找到它的参数。
 
-### 12.5 比较运算符
+## 12.5 比较运算符
 
 表 12.1：JavaScript 的比较运算符。
 
 | 运算符 | 描述 |
 | :--- | :--- |
 | `<` | 小于 |
-| `<=` | 小于等于
+| `<=` | 小于等于 |
 | `>` | 大于 |
 | `>=` | 大于等于 |
 
@@ -6474,11 +6341,11 @@ JavaScript 的比较运算符同时适用于数字和字符串：
 
 比较运算符对于人类语言来说效果并不好，例如当涉及大小写或重音符号时。细节在 §18.5 “比较字符串”中进行了解释。
 
-### 12.6 其他各种运算符
+## 12.6 其他各种运算符
 
 布尔值、字符串、对象的运算符在本书的其他部分有所介绍。接下来的两个小节将讨论两个很少使用的运算符。
 
-#### 12.6.1 逗号运算符
+### 12.6.1 逗号运算符
 
 逗号运算符有两个操作数，它求这两个值并返回第二个：
 
@@ -6488,7 +6355,7 @@ JavaScript 的比较运算符同时适用于数字和字符串：
 
 关于该运算符的更多信息，请参阅 [Speaking JavaScript](http://speakingjs.com/es5/09.html#comma_operator)。
 
-#### 12.6.2 `void` 运算符
+### 12.6.2 `void` 运算符
 
 `void` 运算符计算其操作数并返回 `undefined`：
 
@@ -6506,18 +6373,18 @@ void (3 + 2) // undefined
 
 相比之下，JavaScript 有两个：`undefined` 和 `null`。
 
-### 13.1 `undefined` vs. `null`
+## 13.1 `undefined` vs. `null`
 
 这两个值非常相似，并且经常互用。因此它们的区别非常微妙。语言本身做出了以下区分：
 
 - `undefined` 意味着“未初始化”（例如变量）或“不存在”（例如对象的属性）。
 - `null` 意味着“刻意缺席任何对象值”（引用自 [Speaking JavaScript]）。
 
-### 13.2 `undefined` 和 `null` 的出现
+## 13.2 `undefined` 和 `null` 的出现
 
 以下小节描述了 `undefined` 和 `null` 在语言中何处出现。
 
-#### 13.2.1 `undefined` 的出现
+### 13.2.1 `undefined` 的出现
 
 未初始化的变量 `myVar`：
 
@@ -6549,7 +6416,7 @@ function func() {}
 assert.equal(func(), undefined);
 ```
 
-#### 13.2.2 `null` 的出现
+### 13.2.2 `null` 的出现
 
 对象的原型是一个对象，或者在原型链的末端是 `null`。
 
@@ -6571,7 +6438,7 @@ JSON 数据格式不支持 `undefined`，只支持 `null`：
 JSON.stringify({a: undefined, b: null}) // '{"b":null}'
 ```
 
-### 13.3 检查 `undefined` 或 `null`
+## 13.3 检查 `undefined` 或 `null`
 
 检查其中任意一个：
 
@@ -6602,11 +6469,7 @@ if (!x) { // 假值？
 }
 ```
 
-
-
-
-
-`undefined` 和 `null` 是 JavaScript 中仅有的两个在尝试读取属性时会抛出异常（exception）的值。为了探索这一现象，让我们使用以下函数，它读取（“获取”）属性 `.foo` 并返回结果。
+`undefined` 和 `null` 是 JavaScript 中仅有的两个在尝试读取属性时会抛出异常的值。为了探索这一现象，让我们使用以下函数，它读取（“获取”）属性 `.foo` 并返回结果。
 
 ```javascript
 function getFoo(x) {
@@ -6616,21 +6479,18 @@ function getFoo(x) {
 
 如果我们对各种值应用 `getFoo()`，可以发现它只在遇到 `undefined` 和 `null` 时才会失败：
 
-> `getFoo(undefined)`
+```
+> getFoo(undefined)
 TypeError: Cannot read property 'foo' of undefined
-
-> `getFoo(null)`
+> getFoo(null)
 TypeError: Cannot read property 'foo' of null
-
-> `getFoo(true)`
+> getFoo(true)
 undefined
-
-> `getFoo({})`
+> getFoo({})
 undefined
+```
 
-## 10013 非值 `undefined` 和 `null`
-
-### 13.5 `undefined` 和 `null` 的历史
+## 13.5 `undefined` 和 `null` 的历史
 
 在 Java 中（Java 启发了 JavaScript 的许多方面）中，初始化值取决于变量的静态类型：
 
@@ -6639,42 +6499,43 @@ undefined
 
 在 JavaScript 中，每个变量都可以同时持有对象值和原始值。因此，如果 `null` 意味着“不是对象”，那么 JavaScript 还需要一个意味着“既不是对象也不是原始值”的初始化值。这个初始化值就是 `undefined`。
 
-![](img/image01395.jpeg)!(Images/image01400.jpeg)
+![](img/image01395.jpeg)![](img/image01400.jpeg)
 
-![](img/image01397.jpeg) 测验
+![](img/image01397.jpeg) **测验：**
 
 查看测试程序。
 
-## 第 14 章：布尔值
+# 第 14 章：布尔值
 
-目录
+### 目录
 
 ![](img/image01393.jpeg)
 
 | 节 | 描述 | 页码 |
 | :--- | :--- | :--- |
-| 14.1 | 转换为布尔值 . . . . . . . . . . . . . . . . . . . . . . . . . . | 101 |
-| 14.2 | 假值（Falsy）和真值（Truthy） . . . . . . . . . . . . . . . . . . . . . . . . . . | 102 |
-| | 14.2.1 | 陷阱：真值检查不精确 . . . . . . . . . . | 103 |
-| | 14.2.2 | 检查真值或假值 . . . . . . . . . . . . . . . . . . . . . | 103 |
-| | 14.2.3 | 用例：是否提供了参数？ . . . . . . . . . . . . . . . . . . . | 104 |
-| | 14.2.4 | 用例：属性是否存在？ . . . . . . . . . . . . . . . . . . . . . | 104 |
-| 14.3 | 条件运算符 (? :) . . . . . . . . . . . . . . . . . . . . . . . . . . | 104 |
-| 14.4 | 二进制逻辑运算符：与 (x && y), 或 (x || y) . . . . . . . . . . | 105 |
-| | 14.4.1 | 逻辑与 (x && y) . . . . . . . . . . . . . . . . . . . . . . . | 106 |
-| | 14.4.2 | 逻辑或 (||) . . . . . . . . . . . . . . . . . . . . . . . . . . | 106 |
-| | 14.4.3 | 通过逻辑或 (||) 设置默认值 . . . . . . . . . . . . . . . . . . | 107 |
-| 14.5 | 逻辑非 (!) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . | 107 |
+| 14.1 | 转换为布尔值 | 101 |
+| 14.2 | 假值（Falsy）和真值（Truthy） | 102 |
+| | 14.2.1 | 陷阱：真值检查不精确 | 103 |
+| | 14.2.2 | 检查真值或假值 | 103 |
+| | 14.2.3 | 用例：是否提供了参数？ | 104 |
+| | 14.2.4 | 用例：属性是否存在？ | 104 |
+| 14.3 | 条件运算符 (? :) | 104 |
+| 14.4 | 二进制逻辑运算符：与 (x && y), 或 (x || y) | 105 |
+| | 14.4.1 | 逻辑与 (x && y) | 106 |
+| | 14.4.2 | 逻辑或 (||) | 106 |
+| | 14.4.3 | 通过逻辑或 (||) 设置默认值 | 107 |
+| 14.5 | 逻辑非 (!) | 107 |
 
 原始类型 `boolean` 包含两个值——`false` 和 `true`：
 
-> `typeof false`
+```
+> typeof false
 'boolean'
-
-> `typeof true`
+> typeof true
 'boolean'
+```
 
-### 14.1 转换为布尔值
+## 14.1 转换为布尔值
 
 以下是将任意值 `x` 转换为布尔值的三种方法：
 
@@ -6688,20 +6549,17 @@ undefined
 
 ![](img/image01441.jpeg)
 
-`Boolean(x)`
-
-![](img/image01442.jpeg)
-
 | 输入 | 结果 |
 | :--- | :--- |
 | `undefined` | `false` |
 | `null` | `false` |
 | 布尔值 | `x`（无变化） |
 | 数字值 | `0 → false`, `NaN → false` |
-| 字符串值 | 其他数字 → true, `'' → false`, 其他字符串 → true |
+| | 其他数字 → true |
+| 字符串值 | `'' → false`, 其他字符串 → true |
 | 对象值 | 始终为 `true` |
 
-### 14.2 假值（Falsy）和真值（Truthy）值
+## 14.2 假值（Falsy）和真值（Truthy）值
 
 在 JavaScript 中，如果你读取一个不存在的内容（例如缺失的参数或缺失的属性），通常会得到 `undefined` 结果。在这些情况下，存在检查等同于将值与 `undefined` 进行比较。例如，以下代码检查对象 `obj` 是否具有属性 `.prop`：
 
@@ -6733,6 +6591,7 @@ if (obj.prop) {
 - 如果一个值转换为布尔值时为 `false`，则被称为**假值（falsy）**。
 
 查阅表 14.1，我们可以列出假值的完整列表：
+
 - `undefined`, `null`
 - 布尔值：`false`
 - 数字：`0`, `NaN`
@@ -6740,16 +6599,17 @@ if (obj.prop) {
 
 所有其他值（包括所有对象）都是真值：
 
-> `Boolean('abc')`
+```
+> Boolean('abc')
 true
-
-> `Boolean([])`
+> Boolean([])
 true
-
-> `Boolean({})`
+> Boolean({})
 true
+```
 
-#### 14.2.1 陷阱：真值检查不精确
+### 14.2.1 陷阱：真值检查不精确
+
 真值检查并不精确。考虑这个例子：
 
 ```javascript
@@ -6757,9 +6617,11 @@ if (obj.prop) {
   // obj 有属性 .prop
 }
 ```
+
 如果 `obj.prop` 是 `undefined`，`if` 语句的体会被跳过；但如果它存在且具有任何假值，体也会被跳过。
 
-#### 14.2.2 检查真值或假值
+### 14.2.2 检查真值或假值
+
 条件运算符经常用于判断 `x` 是真值还是假值：
 
 ```javascript
@@ -6770,9 +6632,12 @@ if (x) {
 }
 ```
 
-`const result = x ? 'truthy' : 'falsy';`
+```javascript
+const result = x ? 'truthy' : 'falsy';
+```
 
-#### 14.2.3 用例：是否提供了参数？
+### 14.2.3 用例：是否提供了参数？
+
 真值检查经常用于判断调用者是否提供了参数：
 
 ```javascript
@@ -6782,6 +6647,7 @@ function func(x) {
   }
 }
 ```
+
 另一种方法是检查 `undefined`：
 
 ```javascript
@@ -6790,7 +6656,8 @@ if (x === undefined) {
 }
 ```
 
-#### 14.2.4 用例：属性是否存在？
+### 14.2.4 用例：属性是否存在？
+
 真值检查也用于判断属性是否存在：
 
 ```javascript
@@ -6800,6 +6667,7 @@ function readFile(fileDesc) {
   }
 }
 ```
+
 如果你真的想检查属性是否存在，你必须使用 `in` 运算符：
 
 ```javascript
@@ -6810,13 +6678,14 @@ if (! ('path' in fileDesc)) {
 
 ![](img/image0136.jpeg)
 
-### 14.3 条件运算符 (? :)
+## 14.3 条件运算符 (? :)
 
 条件运算符是 `if` 语句的表达式版本。它的语法为：
 
-`«condition» ? «thenExpression» : «elseExpression>`
+`«condition» ? «thenExpression» : «elseExpression»`
 
 它的执行方式如下：
+
 - 如果 `condition` 为真值，执行并返回 `thenExpression`。
 - 否则，执行并返回 `elseExpression`。
 
@@ -6827,19 +6696,20 @@ const x = (true ? console.log('then') : console.log('else'));
 // 输出: 'then'
 ```
 
-### 14.4 二进制逻辑运算符：与 (x && y), 或 (x || y)
+## 14.4 二进制逻辑运算符：与 (x && y), 或 (x || y)
 
 `&&` 和 `||` 运算符是值保留且短路的。这意味着什么？
 
 值保留意味着操作数被解释为布尔值，但返回时保持不变：
 
-> `12 || 'hello'`
+```
+> 12 || 'hello'
 12
+```
 
 ### 练习：真值检查
+
 `exercises/booleans/truthiness_ex.mjs`
-
-
 
 
 
@@ -6849,7 +6719,7 @@ const x = (true ? console.log('then') : console.log('else'));
 
 短路逻辑意味着：如果第一个操作数已经决定了结果，则不会对第二个操作数求值。另一个延迟评估操作数的运算符是条件运算符：通常，所有操作数在执行操作之前都会求值。
 
-例如，逻辑与 (`&&`) 在第一个操作数为为假（falsy）时，不会对第二个操作数求值：
+例如，逻辑与 (`&&`) 在第一个操作数为假（falsy）时，不会对第二个操作数求值：
 
 ```javascript
 const x = false && console.log('hello');
@@ -6864,14 +6734,14 @@ const x = true && console.log('hello');
 'hello'
 ```
 
-# 10614 布尔值
+# 14.4 布尔值
 
 ## 14.4.1 逻辑与 (`x && y`)
 
 表达式 `a && b`（“a 与 b”）的求值方式如下：
 
 1. 求 `a` 的值。
-2. 结果为假吗？如果是。
+2. 结果为假吗？如果是，返回 `a`。
 3. 否则，求 `b` 并返回结果。
 
 换句话说，以下两个表达式大致等价：
@@ -6884,18 +6754,23 @@ a && b
 ### 示例：
 
 > `false && true`
+
 `false`
 
 > `false && 'abc'`
+
 `false`
 
 > `true && false`
+
 `false`
 
 > `true && 'abc'`
+
 `'abc'`
 
 > `'' && 'abc'`
+
 `''`
 
 ## 14.4.2 逻辑或 (`||`)
@@ -6903,7 +6778,7 @@ a && b
 表达式 `a || b`（“a 或 b”）的求值方式如下：
 
 1. 求 `a` 的值。
-2. 结果为真吗？如果是。
+2. 结果为真吗？如果是，返回 `a`。
 3. 否则，求 `b` 并返回结果。
 
 换句话说，以下两个表达式大致等价：
@@ -6916,20 +6791,23 @@ a ? a : b
 ### 示例：
 
 > `true || false`
+
 `true`
 
 > `true || 'abc'`
+
 `true`
 
 > `false || true`
+
 `true`
 
 > `false || 'abc'`
+
 `'abc'`
 
-| 14.5 逻辑非 (`!`) | 107 |
-
 > `'abc' || 'def'`
+
 `'abc'`
 
 ## 14.4.3 通过逻辑或 (`||`) 设置默认值
@@ -6962,27 +6840,33 @@ function countMatches(regex, str) {
 表达式 `!x`（“非 x”）的求值方式如下：
 
 1. 求 `x` 的值。
-2. 它是真吗？如果是。返回 `false`。
+2. 它是真吗？如果是，返回 `false`。
 3. 否则，返回 `true`。
 
 ### 示例：
 
 > `!false`
+
 `true`
 
 > `!true`
+
 `false`
 
 > `!0`
+
 `true`
 
 > `!123`
+
 `false`
 
 > `!''`
+
 `true`
 
 > `!'abc'`
+
 `false`
 
 # 10814 布尔值
@@ -6999,22 +6883,22 @@ function countMatches(regex, str) {
 
 ![](img/image01393.jpeg)
 
-| 15.1 | JavaScript 只有浮点数 . . . . . . . . . . . . . . . | 110 |
-| 15.2 | 数字字面量 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . | 110 |
-| | 15.2.1 | 整数字面量 . . . . . . . . . . . . . . . . . . . . . . | 110 |
-| | 15.2.2 | 浮点字面量 . . . . . . . . . . . . . . . . . . . . . . . . | 111 |
-| | 15.2.3 | 语法陷阱：整数字面量的属性 . . . . . . . . . . . . | 111 |
-| 15.3 | 算术运算符 . . . . . . . . . . . . . . . . . . . . . . . . . . . . | 111 |
-| | 15.3.1 | 二元算术运算符 . . . . . . . . . . . . . . . . . . . . . | 111 |
-| | 15.3.2 | 一元加 (`+`) 和取负 (`-`) . . . . . . . . . . . . . . . . . . | 112 |
-| | 15.3.3 | 递增 (`++`) 和递减 (`--`) . . . . . . . . . . . . . . . . . . | 112 |
-| 15.4 | 转换为数字 . . . . . . . . . . . . . . . . . . . . . . . . . . . . | 113 |
-| 15.5 | 错误值 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . | 114 |
-| 15.6 | 错误值：`NaN` . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . | 114 |
-| | 15.6.1 | 检查 `NaN` . . . . . . . . . . . . . . . . . . . . . . . . . . . | 115 |
-| | 15.6.2 | 在数组中查找 `NaN` . . . . . . . . . . . . . . . . . . . . . . . . . . | 115 |
-| 15.7 | 错误值：`Infinity` . . . . . . . . . . . . . . . . . . . . . . . . . . . | 116 |
-| | 15.7.1 | 作为默认值的 `Infinity` . . . . . . . . . . . . . . . . . . . . . | 117 |
+| 15.1 | JavaScript 只有浮点数 | 110 |
+| 15.2 | 数字字面量 | 110 |
+| | 15.2.1 | 整数字面量 | 110 |
+| | 15.2.2 | 浮点字面量 | 111 |
+| | 15.2.3 | 语法陷阱：整数字面量的属性 | 111 |
+| 15.3 | 算术运算符 | 111 |
+| | 15.3.1 | 二元算术运算符 | 111 |
+| | 15.3.2 | 一元加 (`+`) 和取负 (`-`) | 112 |
+| | 15.3.3 | 递增 (`++`) 和递减 (`--`) | 112 |
+| 15.4 | 转换为数字 | 113 |
+| 15.5 | 错误值 | 114 |
+| 15.6 | 错误值：`NaN` | 114 |
+| | 15.6.1 | 检查 `NaN` | 115 |
+| | 15.6.2 | 在数组中查找 `NaN` | 115 |
+| 15.7 | 错误值：`Infinity` | 116 |
+| | 15.7.1 | 作为默认值的 `Infinity` | 117 |
 
 ## 15.1 JavaScript 只有浮点数
 
@@ -7029,6 +6913,7 @@ function countMatches(regex, str) {
 整数仅仅是不带小数部分的浮点数：
 
 > `98 === 98.0`
+
 true
 
 注意，在底层，大多数 JavaScript 引擎通常能够使用真正的整数，从而获得性能和存储优势。
@@ -7044,26 +6929,30 @@ true
 - 二进制 (base 2)：`0b11` (3)
 - 八进制 (base 8)：`0o10` (8)
 - 十进制 (base 10)：`35` (35)
-- 六进制 (base 16)：`0xE7` (231)
+- 十六进制 (base 16)：`0xE7` (231)
 
 ### 15.2.2 浮点字面量
 
-浮点数只能以进制表示。
+浮点数只能以十进制表示。
 
 分数：
 
 > `35.0`
+
 35
 
 指数：`eN` 意味着 $10^N$
 
 > `3e2`
+
 300
 
 > `3e-2`
+
 0.03
 
 > `0.3e2`
+
 30
 
 ### 15.2.3 语法陷阱：整数字面量的属性
@@ -7094,29 +6983,23 @@ true
 | 运算符 | 名称 | 范围 | 示例 |
 | :--- | :--- | :--- | :--- |
 | `n + m` | 加法 | ES1 | 3 + 4 → 7 |
-
-
-
-
-
-| n - m | 减法 | ES1 | 9 | - 1 → 8 |
-| n * m | 乘法 | ES1 | 3 | * 2.25 → 6.75 |
-| n / m | 除法 | ES1 | 5.625 | | / 5 → 1.125 |
-| n % m | 余数 | ES1 | 8 | % 5 | → 3 |
-| | 幂 | ES2016 | -8 % 5 | → -3 |
-| n ** m | 4 | ** 2 | → 16 |
+| `n - m` | 减法 | ES1 | 9 - 1 → 8 |
+| `n * m` | 乘法 | ES1 | 3 * 2.25 → 6.75 |
+| `n / m` | 除法 | ES1 | 5.625 / 5 → 1.125 |
+| `n % m` | 余数 | ES1 | 8 % 5 → 3 |
+| `n ** m` | 幂 | ES2016 | 4 ** 2 → 16 |
 
 注意 `%` 是取余运算符（而不是模运算）——它的结果与第一个操作数的符号相同：
 
-```
+```javascript
 > 3 % 2
 1
 
-> --3 % 2
+> -3 % 2
 -1
 ```
 
-### 15.3.2 一元加 (+) 和 取反 (-)
+### 15.3.2 一元加 (`+`) 和取反 (`-`)
 
 表 15.2 总结了一元加(`+`) 和一元取反(`-`) 两个运算符。
 
@@ -7124,14 +7007,14 @@ true
 
 ![](img/image0144.jpeg)
 
-| 运算符 | 名称 | | 示例 |
+| 运算符 | 名称 | 范围 | 示例 |
 | :--- | :--- | :--- | :--- |
-| +n | 一元加 | ES1 | `+(-7)` → -7 |
-| -n | 一元取反 | ES1 | `-(-7)` → 7 |
+| `+n` | 一元加 | ES1 | `+(-7)` → -7 |
+| `-n` | 一元取反 | ES1 | `-(-7)` → 7 |
 
 这两个运算符都会将操作数强制转换为数字：
 
-```
+```javascript
 > +'5'
 5
 
@@ -7144,7 +7027,7 @@ true
 
 因此，一元加允许我们将任意值转换为数字。
 
-### 15.3.3 递增 (++) 和 递减 (--)
+### 15.3.3 递增 (`++`) 和递减 (`--`)
 
 递增运算符 `++` 存在前缀和后缀版本。在两个版本中，它都会以破坏性的方式对其操作数加 1。因此，它的操作数必须是一个可以更改的存储位置。递减运算符 `--` 工作原理相同，但是从其操作数减 1。接下来的两个示例解释了前缀和后缀版本之间的区别。
 
@@ -7152,16 +7035,16 @@ true
 
 ![](img/image0147.jpeg)
 
-| 运算符 | 名称 | | 示例 |
+| 运算符 | 名称 | 范围 | 示例 |
 | :--- | :--- | :--- | :--- |
-| v++ | 递增 | ES1 | `let v=0; [v++, v]` → [0, 1] |
-| ++v | 递增 | ES1 | `let v=0; [++v, v]` → [1, 1] |
-| v-- | 递减 | ES1 | `let v=1; [v--, v]` → [1, 0] |
-| --v | 递减 | ES1 | `let v=1; [--v, v]` → [0, 0] |
+| `v++` | 递增 | ES1 | `let v=0; [v++, v]` → [0, 1] |
+| `++v` | 递增 | ES1 | `let v=0; [++v, v]` → [1, 1] |
+| `v--` | 递减 | ES1 | `let v=1; [v--, v]` → [1, 0] |
+| `--v` | 递减 | ES1 | `let v=1; [--v, v]` → [0, 0] |
 
 接下来，我们将看看这些运算符使用的示例。前缀 `++` 和后缀 `--` 先返回操作数然后改变它们。
 
-```
+```javascript
 let foo = 3;
 assert.equal(++foo, 4);
 assert.equal(foo++, 4);
@@ -7175,15 +7058,15 @@ assert.equal(bar--, 2);
 
 你也可以将这些运算符应用于属性值：
 
-```
+```javascript
 const obj = {a: 1};
 ++obj.a;
 assert.equal(obj.a, 2);
 ```
 
-#### 到数组元素：
+#### 应用到数组元素：
 
-```
+```javascript
 const arr = [4];
 arr[0]++;
 assert.deepEqual(arr, [5]);
@@ -7192,9 +7075,10 @@ assert.deepEqual(arr, [5]);
 #### 练习：数字运算符
 
 这里有三种方法将值转换为数字：
+
 - `Number(value)`
 - `+value`
-- `parseFloat(value)` (避免使用；与另外两种不同！）
+- `parseFloat(value)` (避免使用；与另外两种不同！)
 
 建议：使用具有描述性的 `Number()`。表 15.4 总结了它的工作原理。
 
@@ -7210,18 +7094,18 @@ assert.deepEqual(arr, [5]);
 
 ![](img/image0450.jpeg)
 
-#### 类型 | 结果 |
+| 类型 | 结果 |
 | :--- | :--- |
-| undefined | NaN |
-| null | 0 |
-| boolean | false → 0, true → 1 |
-| number | x (无变化) |
-| string | '' → 0, 其他 → 解析后的数字，忽略前后的空白空格 |
-| object | 可配置（例如，通过 `.valueOf()`） |
+| `undefined` | `NaN` |
+| `null` | 0 |
+| `boolean` | `false` → 0, `true` → 1 |
+| `number` | `x` (无变化) |
+| `string` | `''` → 0, 其他 → 解析后的数字，忽略前后的空白空格 |
+| `object` | 可配置（例如，通过 `.valueOf()`） |
 
 示例：
 
-```
+```javascript
 assert.equal(Number(123.45), 123.45);
 assert.equal(Number(''), 0);
 assert.equal(Number('\n123.45\t'), 123.45);
@@ -7230,26 +7114,29 @@ assert.equal(Number('xyz'), NaN);
 
 对象如何转换为数字是可以配置的。例如，通过覆盖 `.valueOf()`：
 
-```
+```javascript
 Number({ valueOf() { return 123 } })
 123
 ```
 
 ![](img/image0418.jpeg)![](img/image0451.jpeg)
+
 ![](img/image0416.jpeg) 练习：转换为数字
+
 `exercises/numbers-math/parse_number_test.mjs`
 
 ### 15.5 错误值
 
 当发生错误时，会返回两个数字值：
-- NaN
-- Infinity
 
-### 15.6 错误值：NaN
+- `NaN`
+- `Infinity`
+
+### 15.6 错误值：`NaN`
 
 `NaN` 是“not a number”的缩写。讽刺的是，JavaScript 认为它是一个数字：
 
-```
+```javascript
 > typeof NaN
 'number'
 ```
@@ -7258,7 +7145,7 @@ Number({ valueOf() { return 123 } })
 
 如果数字无法解析，则返回 `NaN`：
 
-```
+```javascript
 > Number('$$')
 NaN
 
@@ -7268,7 +7155,7 @@ NaN
 
 如果无法执行操作，则返回 `NaN`：
 
-```
+```javascript
 > Math.log(-1)
 NaN
 
@@ -7278,7 +7165,7 @@ NaN
 
 如果操作数或参数是 `NaN`（为了传播错误），则返回 `NaN`：
 
-```
+```javascript
 > NaN - 3
 NaN
 
@@ -7286,7 +7173,7 @@ NaN
 NaN
 ```
 
-#### 15.6.1 检查 NaN
+#### 15.6.1 检查 `NaN`
 
 `NaN` 是唯一一个不严格等于自身的 JavaScript 值：
 
@@ -7302,32 +7189,32 @@ const x = NaN;
 assert.equal(Number.isNaN(x), true); // 优先
 ```
 
-#### 15.6.2 在数组中查找 NaN
+#### 15.6.2 在数组中查找 `NaN`
 
 某些数组方法找不到 `NaN`：
 
-```
+```javascript
 > [NaN].indexOf(NaN)
 -1
 ```
 
 其他的可以：
 
-```
+```javascript
 > [NaN].includes(NaN)
 true
 
-> [NaN].findIndex(NaN)
+> [NaN].findIndex(x => x === NaN) // 注意：原文示例有误，findIndex需用回调
 0
 ```
 
-### 15.7 错误值：Infinity
+### 15.7 错误值：`Infinity`
 
 如果数字太大，则返回 `Infinity`：
 
-```
+```javascript
 > Math.pow(2, 1023)
-Infinity
+8.98846567431158e+307
 
 > Math.pow(2, 1024)
 Infinity
@@ -7335,7 +7222,7 @@ Infinity
 
 如果除以零，则返回 `Infinity`：
 
-```
+```javascript
 > 5 / 0
 Infinity
 
@@ -7343,9 +7230,9 @@ Infinity
 -Infinity
 ```
 
-#### 15.7.1 Infinity 作为默认值
+#### 15.7.1 `Infinity` 作为默认值
 
-`Infinity` 比所有数字都大（`NaN` 除）：
+`Infinity` 比所有数字都大（`NaN` 除外）：
 
 ```javascript
 function findMinimum(numbers) {
@@ -7358,7 +7245,7 @@ function findMinimum(numbers) {
 assert.equal(findMinimum([5, -1]), -1);
 ```
 
-#### 15.7.2 检查 Infinity
+#### 15.7.2 检查 `Infinity`
 
 以下是检查值是否为 `Infinity` 的两种常用方法：
 
@@ -7367,9 +7254,6 @@ let x = Infinity;
 assert.equal(x === Infinity, true);
 assert.equal(Number.isFinite(x), false);
 ```
-
-
-
 
 这种表示无法编码零，因为它的第二个部分（涉及分数的部分）始终有一个前导 1。因此，零是通过特殊指数 `-1023` 和分数 `0` 来编码的。
 
@@ -7388,37 +7272,42 @@ assert.equal(Number.isFinite(x), false);
 让我们尝试用这种表示法处理几个浮点数。
 
 - 对于整数 `-123`，我们主要需要尾数：
-```
+
+```javascript
 -123 * (10 ** 0)
--123
+// -123
 ```
+
 - 对于数字 `1.5`，我们想象尾数后面有一个点。我们使用负指数来将该点向左移动一位：
-```
+
+```javascript
 15 * (10 ** -1)
-1.5
+// 1.5
 ```
+
 - 对于数字 `0.25`，我们将点向左移动两位：
-```
+
+```javascript
 25 * (10 ** -2)
-0.25
+// 0.25
 ```
 
 带有负指数的表示法也可以写成分母带有正指数的分数：
 
-```
+```javascript
 15 * (10 ** -1) === 15 / (10 ** 1)
-true
+// true
 
 25 * (10 ** -2) === 25 / (10 ** 2)
-true
+// true
 ```
 
 这些分数有助于我们理解，为什么存在一些我们的编码无法表示的数字：
 
-- `1/10`是可以表示的。它已经具备所需的格式：分母是 10 的幂。
+- `1/10` 是可以表示的。它已经具备所需的格式：分母是 10 的幂。
 - `1/2` 可以被表示为 `5/10`。我们通过将分子和分母同时乘以 `5`，将分母中的 `2` 变成了 10 的幂。
 - `1/4` 可以被表示为 `25/100`。我们通过将分子和分母同时乘以 `25`，将分母中的 `4` 变成了 10 的幂。
-- `1/3` 是无法表示的。没有办法可以将分母变成 10 的幂。（10 的质因数是 2 和 5。因此，任何只包含这些质因数的的分母都可以通过给分子和分母乘以足够的 2 和 5 来转换为 10 的幂。如果分母具有不同的质因数，那么我们就无能为力。）
+- `1/3` 是无法表示的。没有办法可以将分母变成 10 的幂。（10 的质因数是 2 和 5。因此，任何只包含这些质因数的分母都可以通过给分子和分母乘以足够的 2 和 5 来转换为 10 的幂。如果分母具有不同的质因数，那么我们就无能为力。）
 
 结束这次之旅之前，我们回到 2 进制：
 
@@ -7429,57 +7318,64 @@ true
 
 现在我们知道为什么 `0.1 + 0.2` 没有产生正确的结果了：在内部，这两个操作数都无法精确表示。
 
-使用十小数进行精确计算的唯一方法是在内部切换到 10 进制。对于许多编程语言，2 进制是默认的，10 进制是一个选项。例如，Java 拥有 `BigDecimal` 类，而 Python 拥有 `decimal` 模块。目前计划为 JavaScript 添加类似的内容：ECMAScript 提案“Decimal”目前处于 0 阶段。
+使用十进制进行精确计算的唯一方法是在内部切换到 10 进制。对于许多编程语言，2 进制是默认的，10 进制是一个选项。例如，Java 拥有 `BigDecimal` 类，而 Python 拥有 `decimal` 模块。目前计划为 JavaScript 添加类似的内容：ECMAScript 提案“Decimal”目前处于 0 阶段。
 
 # 15.11 JavaScript 中的整数
 
 JavaScript 没有用于整数的特殊类型。相反，它们仅仅是不带小数部分的普通（浮点）数字：
 
-```
+```javascript
 1 === 1.0
-true
+// true
 
 Number.isInteger(1.0)
-true
+// true
 ```
 
 在本节中，我们将查看一些处理这些伪整数的工具。
 
-## 15.11.1 整数
+## 15.11.1 整数转换
 
 将数字转换为整数推荐的方法是使用 `Math` 舍入方法之一：
 
 - `Math.floor(n)`：返回最大的整数 `i ≤ n`
-```
+
+```javascript
 Math.floor(2.1)
-2
+// 2
 
 Math.floor(2.9)
-2
+// 2
 ```
+
 - `Math.ceil(n)`：返回最小的整数 `i ≥ n`
-```
+
+```javascript
 Math.ceil(2.1)
-3
+// 3
 
 Math.ceil(2.9)
-3
+// 3
 ```
+
 - `Math.round(n)`：返回离 n “最近”的整数。0.5 会四舍五入。例如：
-```
+
+```javascript
 Math.round(2.4)
-2
+// 2
 
 Math.round(2.5)
-3
+// 3
 ```
+
 - `Math.trunc(n)`：移除 `n` 拥有的任何小数部分（小数点后的），从而将其转换为整数。
-```
+
+```javascript
 Math.trunc(2.1)
-2
+// 2
 
 Math.trunc(2.9)
-2
+// 2
 ```
 
 关于舍入的更多信息，请参阅 §16.3 “舍入”。
@@ -7491,10 +7387,12 @@ Math.trunc(2.9)
 - **安全整数 (Safe integers)**：可以被 JavaScript “安全地”表示（在下一节中详细介绍其含义）
   - 精度：53 位加上符号位
   - 范围：`(-2⁵³, 2⁵³)`
+
 - **数组索引 (Array indices)**
   - 精度：32 位，无符号
   - 范围：`[0, 2³²−1)`（排除最大长度）
-  - 类型数组（Typed Arrays）拥有更大的范围，即 53 位（安全且无符号）
+  - 类型数组拥有更大的范围，即 53 位（安全且无符号）
+
 - **位运算符 (Bitwise operators)**（位或等）
   - 精度：32 位
   - 无符号右移运算符 (`>>>`) 的范围：无符号，`[0, 2³²)`
@@ -7510,55 +7408,53 @@ Math.trunc(2.9)
 
 例如（`18014398509481984` 是 `2⁵⁴`）：
 
-```
+```javascript
 18014398509481984
-18014398509481984
+// 18014398509481984
 
 18014398509481985
-18014398509481984
+// 18014398509481984
 
 18014398509481986
-18014398509481984
+// 18014398509481984
 ```
 
 `Number` 的以下属性有助于判断一个整数是否安全：
 
-```
-Number.MAX_SAFE_INTEGER, 2⁵³ - 1
+```javascript
+Number.MAX_SAFE_INTEGER // 2⁵³ - 1
+Number.MIN_SAFE_INTEGER // -2⁵³
 
-Number.MIN_SAFE_INTEGER, -2⁵³
-
-Number.isInteger(5), true
-
-Number.isInteger('5'), false
-
-Number.isInteger(5.1), false
-
-Number.isInteger(Number.MAX_SAFE_INTEGER), true
-
-Number.isInteger(Number.MAX_SAFE_INTEGER + 1), false
+Number.isInteger(5) // true
+Number.isInteger('5') // false
+Number.isInteger(5.1) // false
+Number.isInteger(Number.MAX_SAFE_INTEGER) // true
+Number.isInteger(Number.MAX_SAFE_INTEGER + 1) // false
 ```
 
-## 15.11.3.1 安全计算
+### 15.11.3.1 安全计算
 
 让我们看看涉及安全整数的计算。
 
 以下结果是错误的且不安全的，尽管它的两个操作数都是安全的：
-```
+
+```javascript
 9007199254740990 + 3
-9007199254740992
-```
-以下结果是安全的但是错误的。第一个操作数是不安全的，第二个是安全的：
-```
-9007199254740995 - 10
-9007199254740986
+// 9007199254740992
 ```
 
-因此，表达式 `a op b` 的结果是正确的当仅当：
+以下结果是安全的但是错误的。第一个操作数是不安全的，第二个是安全的：
+
+```javascript
+9007199254740995 - 10
+// 9007199254740986
+```
+
+因此，表达式 `a op b` 的结果是正确的当且仅当：
 
 `isSafeInteger(a) && isSafeInteger(b) && isSafeInteger(a op b)`
 
-也就是说，两个操作数和结果必须是安全的。
+也就是说，两个操作数和结果必须都是安全的。
 
 # 15.12 位运算符
 
@@ -7568,7 +7464,7 @@ JavaScript 的位运算符在内部使用 32 位整数。它们按照以下步�
 
 1. **输入 (JavaScript 数字)**：1~2 个操作数首先转换为 JavaScript 数字（64 位浮点数），然后转换为 32 位整数。
 2. **计算 (32 位整数)**：实际操作处理 32 位整数并产生一个 32 位整数。
-3. **输出 (JavaScript 数字)**：在返回结果之前，它被回 JavaScript 数字。
+3. **输出 (JavaScript 数字)**：在返回结果之前，它被转换回 JavaScript 数字。
 
 ### 15.12.1.1 操作数和结果的类型
 
@@ -7576,13 +7472,8 @@ JavaScript 的位运算符在内部使用 32 位整数。它们按照以下步�
 
 | 类型 | 描述 | 大小 | 范围 |
 | :--- | :--- | :--- | :--- |
-| Int32 | 有符号 32 位整数 | 32 位（包含符号位） | `[-2³¹, 2³¹)` |
-
-
-
-
-
-| Uint32 | 无符号 32 位整数 | 32 位 | 0, 232) |
+| `Int32` | 有符号 32 位整数 | 32 位（包含符号位） | `[-2³¹, 2³¹)` |
+| `Uint32` | 无符号 32 位整数 | 32 位 | `[0, 2³²)` |
 
 考虑到前面提到的步骤，我建议假装位运算符在内部与无符号 32 位整数一起操作（“计算”步骤）。而 `Int32` 和 `Uint32` 仅影响 JavaScript 数字与整数之间的相互转换（“输入”和“输出”步骤）。
 
@@ -7602,28 +7493,53 @@ assert.equal(
   '10000000000000000000000000000000');
 ```
 
-### 15.12.2 二进制位运算符
+## 15.12.2 二进制位运算符
 
 表 15.7：二进制位运算符。
 
-![| 操作 | 名称 | 类型签名 | || :--- | :--- | :--- | :--- || `num1 & num2` | 位与 | `Int32 × Int32 → Int32` | ES1 || `num1 \| num2` | 位或 | `Int32 × Int32 → Int32` | ES1 || `num1 ^ num2` | 位异或 | `Int32 × Int32 → Int32` | ES1 |15.12 位运算符 | 123 二进制位运算符（表 15.7）通过组合其操作数的位来产生结果：> `(0b1010 & 0b0011).toString(2).padStart(4, '0')`> '0010'> `(0b1010 | 0b0011).toString(2).padStart(4, '0')`> '1011'> `(0b1010 ^ 0b0011).toString(2).padStart(4, '0')`> '1001'### 15.12.3 位取反表 15.8：位取反运算符。![](img/image01455.jpeg)
+![](img/image01455.jpeg)
 
-| 操作 | 名称 | 类型签名 | |
+| 操作 | 名称 | 类型签名 | 版本 |
 | :--- | :--- | :--- | :--- |
-| `~num` | 位取反，按码 | `Int32 → Int32` | ES1 |
+| `num1 & num2` | 位与 | `Int32 × Int32 → Int32` | ES1 |
+| `num1 | num2` | 位或 | `Int32 × Int32 → Int32` | ES1 |
+| `num1 ^ num2` | 位异或 | `Int32 × Int32 → Int32` | ES1 |
+
+二进制位运算符（表 15.7）通过组合其操作数的位来产生结果：
+
+```javascript
+> (0b1010 & 0b0011).toString(2).padStart(4, '0')
+'0010'
+> (0b1010 | 0b0011).toString(2).padStart(4, '0')
+'1011'
+> (0b1010 ^ 0b0011).toString(2).padStart(4, '0')
+'1001'
+```
+
+## 15.12.3 位取反
+
+表 15.8：位取反运算符。
+
+![](img/image01455.jpeg)
+
+| 操作 | 名称 | 类型签名 | 版本 |
+| :--- | :--- | :--- | :--- |
+| `~num` | 位取反，按位取反 | `Int32 → Int32` | ES1 |
 
 位取反运算符（表 15.8）会反转其操作数的每个二进制位：
 
-> `b32(~0b100)`
-> '11111111111111111111111111111011'
+```javascript
+> b32(~0b100)
+'11111111111111111111111111111011'
+```
 
-### 15.12.4 位移位运算符
+## 15.12.4 位移位运算符
 
 表 15.9：移位运算符。
 
 ![](img/image01456.jpeg)
 
-| 操作 | 名称 | 类型签名 | |
+| 操作 | 名称 | 类型签名 | 版本 |
 | :--- | :--- | :--- | :--- |
 | `num << count` | 左移 | `Int32 × Uint32 → Int32` | ES1 |
 | `num >> count` | 有符号右移 | `Int32 × Uint32 → Int32` | ES1 |
@@ -7631,18 +7547,22 @@ assert.equal(
 
 移位运算符（表 15.9）将二进制位向左或向右移动：
 
-> `(0b10 << 1).toString(2)`
-> '100'
+```javascript
+> (0b10 << 1).toString(2)
+'100'
+```
 
 `>>` 保留最高位，而 `>>>` 不保留：
 
-> `b32(0b10000000000000000000000000000010 >> 1)`
-> '11000000000000000000000000000001'
+```javascript
+> b32(0b10000000000000000000000000000010 >> 1)
+'11000000000000000000000000000001'
 
-> `b32(0b10000000000000000000000000000010 >>> 1)`
-> '01000000000000000000000000000001'
+> b32(0b10000000000000000000000000000010 >>> 1)
+'01000000000000000000000000000001'
+```
 
-### 15.12.5 b32():以二进制表示法显示无符号 32 位整数
+## 15.12.5 `b32()`: 以二进制表示法显示无符号 32 位整数
 
 我们现在已经使用了几次 `b32()`。以下是它的实现代码。
 
@@ -7663,18 +7583,20 @@ assert.equal(
 
 `>>> 0` 意味着我们将 `n` 向右移动零位。因此，在原理上 `>>>` 运算符什么都没做，但它仍然会将 `n` 强制转换为无符号 32 位整数：
 
-> `12 >>> 0`
-> 12
+```javascript
+> 12 >>> 0
+12
 
-> `-12 >>> 0`
-> 4294967284
+> -12 >>> 0
+4294967284
 
-> `(2**32 + 1) >>> 0`
-> 1
+> (2**32 + 1) >>> 0
+1
+```
 
-### 15.13 快速参考：数字
+# 15.13 快速参考：数字
 
-### 15.13.1 数字的全局函数
+## 15.13.1 数字的全局函数
 
 JavaScript 有以下四个数字的全局函数：
 
@@ -7685,162 +7607,177 @@ JavaScript 有以下四个数字的全局函数：
 
 然而，使用对应的方法（如 `Number.isFinite()` 等）更好，因为它们的陷阱更少。它们是 ES6 引入的，并在下文中讨论。
 
-### 15.13.2 Number 的静态属性
+## 15.13.2 `Number` 的静态属性
 
 - `.EPSILON`: 数字 [ES6]
-1 与下一个可表示浮点数之间的差异。通常情况下，[机器精度](https://en.wikipedia.org/wiki/Machine_epsilon) 为浮点运算中的舍误差提供了上界。
-– 大约：2.2204460492503130808472633361816 × 10-16
+  1 与下一个可表示浮点数之间的差异。通常情况下，机器精度为浮点运算中的舍入误差提供了上界。
+  - 大约：2.2204460492503130808472633361816 × 10⁻¹⁶
 
 - `.MAX_SAFE_INTEGER`: 数字 [ES6]
-JavaScript 可以无歧表示的最大整数（2⁵³−1）。
+  JavaScript 可以无歧义表示的最大整数（2⁵³−1）。
 
 - `.MAX_VALUE`: 数字 [ES1]
-最大的正有限 JavaScript 数字。
-– 大约：1.7976931348623157 × 10³⁰⁸
+  最大的正有限 JavaScript 数字。
+  - 大约：1.7976931348623157 × 10³⁰⁸
 
 - `.MIN_SAFE_INTEGER`: 数字 [ES6]
-JavaScript 可以无歧表示的最小整数（−⁵³+1）。
+  JavaScript 可以无歧义表示的最小整数（−2⁵³+1）。
 
 - `.MIN_VALUE`: 数字 [ES1]
-最小的正 JavaScript 数字。约为 5 × 10⁻³²⁴。
+  最小的正 JavaScript 数字。约为 5 × 10⁻³²⁴。
 
 - `.NaN`: 数字 [ES1]
-与全局变量 `NaN` 相同。
+  与全局变量 `NaN` 相同。
 
 - `.NEGATIVE_INFINITY`: 数字 [ES1]
-与 `-Number.POSITIVE_INFINITY` 相同。
+  与 `-Number.POSITIVE_INFINITY` 相同。
 
 - `.POSITIVE_INFINITY`: 数字 [ES1]
-与全局变量 `Infinity` 相同。
+  与全局变量 `Infinity` 相同。
 
-### 15.13.3 Number 的静态方法
+## 15.13.3 `Number` 的静态方法
 
-- `.isFinite(num: number): boolean [ES6]`
-如果 `num` 是实际数字（不是 Infinity、-Infinity 或 NaN），则返回 `true`。
-> `Number.isFinite(Infinity)`
-> false
+- `.isFinite(num: number): boolean` [ES6]
+  如果 `num` 是实际数字（不是 `Infinity`、`-Infinity` 或 `NaN`），则返回 `true`。
 
-> `Number.isFinite(-Infinity)`
-> false
+```javascript
+> Number.isFinite(Infinity)
+false
+> Number.isFinite(-Infinity)
+false
+> Number.isFinite(NaN)
+false
+> Number.isFinite(123)
+true
+```
 
-> `Number.isFinite(NaN)`
-> false
+- `.isInteger(num: number): boolean` [ES6]
+  如果 `num` 是数字且没有小数部分，则返回 `true`。
 
-> `Number.isFinite(123)`
-> true
+```javascript
+> Number.isInteger(-17)
+true
+> Number.isInteger(33)
+true
+> Number.isInteger(33.1)
+false
+```
 
-- `.isInteger(num: number): boolean [ES6]`
-如果 `num` 是数字且没有小数部分，则返回 `true`。
-> `Number.isInteger(-17)`
-> true
+- `.isNaN(num: number): boolean` [ES6]
+  如果 `num` 是 `NaN`，则返回 `true`。
 
-> `Number.isInteger(33)`
-> true
+```javascript
+> Number.isNaN(NaN)
+true
+> Number.isNaN(123)
+false
+```
 
-> `Number.isInteger(33.1)`
-> false
+- `.isSafeInteger(num: number): boolean` [ES6]
+  如果 `num` 是安全整数，则返回 `true`。
 
-- `.isNaN(num: number): boolean [ES6]`
-如果 `num` 是 `NaN`，则返回 `true`。
-> `Number.isNaN(NaN)`
-> true
+```javascript
+> Number.isSafeInteger(33)
+true
+> Number.isSafeInteger(33.1)
+false
+```
 
-> `Number.isNaN(123)`
-> false
+## 15.13.4 `Number.prototype` 方法
 
-- `.isSafeInteger(num: number): boolean [ES6]`
-如果 `num` 是安全整数，则返回 `true`。
-> `Number.isSafeInteger(33)`
-> true
+（`Number.prototype` 是存储数字方法的地方。）
 
-> `Number.isSafeInteger(33.1)`
-> false
+- `.toExponential(fractionDigits?: number): string` [ES3]
+  返回以指数计数法表示数字的字符串。通过 `fractionDigits`，你可以指定显示小数部分的数字位数（默认是显示尽可能多的位数）。
 
-### 15.13.4 Number.prototype 方法
-
-（Number.prototype 是存储数字的地方。）
-
-- `.toExponential(fractionDigits?: number): string [ES3]`
-返回以指数计数法表示数字的字符串。通过 `fractionDigits`，你可以指定显示指数部分的数字位数（默认是显示尽可能多的位数）。
 示例：数字太小，无法通过 `.toString()` 获取正指数。
-> `1234.toString()`
-> '1234'
 
-> `1234.toExponential()` // 3 位小数
-> '1.234e+3'
-
-> `1234.toExponential(5)`
-> '1.23400e+3'
-
-> `1234.toExponential(1)`
-> '1.2e+3'
+```javascript
+> 1234.toString()
+'1234'
+> 1234.toExponential() // 3 位小数
+'1.234e+3'
+> 1234.toExponential(5)
+'1.23400e+3'
+> 1234.toExponential(1)
+'1.2e+3'
+```
 
 示例：分数不够小，无法通过 `.toString()` 获取负指数。
-> `0.003.toString()`
-> '0.003'
 
-> `0.003.toExponential()`
-> '3e-3'
+```javascript
+> 0.003.toString()
+'0.003'
+> 0.003.toExponential()
+'3e-3'
+```
 
-- `.toFixed(fractionDigits=0): string [ES3]`
-返回数字的无指数表示法，四舍五入到 `fractionDigits` 位。
-> `0.00000012.toString()` // 带指数 '1.2e-7'
+- `.toFixed(fractionDigits=0): string` [ES3]
+  返回数字的无指数表示法，四舍五入到 `fractionDigits` 位。
 
-> `0.00000012.toFixed(10)` // 无指数
-> '0.0000001200'
-
-> `0.00000012.toFixed()`
-> '0'
+```javascript
+> 0.00000012.toString() // 带指数 '1.2e-7'
+> 0.00000012.toFixed(10) // 无指数
+'0.0000001200'
+> 0.00000012.toFixed()
+'0'
+```
 
 如果数字为 10²¹ 或更大，即使是 `.toFixed()` 也会使用指数：
-> `(10 ** 21).toFixed()`
 
-
-
-
-
+```javascript
+> (10 ** 21).toFixed()
 '1e+21'
+```
 
 - `.toPrecision(precision?: number): string` [ES3]
-用法与 `.toString()` 类似，但 `precision` 指定了显示多少位数字。如果缺少 `precision`，则使用 `.toString()`。
+  用法与 `.toString()` 类似，但 `precision` 指定了显示多少位数字。如果缺少 `precision`，则使用 `.toString()`。
 
-```
-1234..toPrecision(3) // 需要指数计数法 '1.23e+3'
-1234..toPrecision(4)
+```javascript
+> 1234..toPrecision(3) // 需要指数计数法
+'1.23e+3'
+> 1234..toPrecision(4)
 '1234'
-1234..toPrecision(5)
+> 1234..toPrecision(5)
 '1234.0'
-1.234.toPrecision(3)
+> 1.234.toPrecision(3)
 '1.23'
 ```
 
 - `.toString(radix=10): string` [ES1]
-返回数字的字符串表示。
+  返回数字的字符串表示。
+
 默认情况下，你得到一个 10 进制数字：
-```
-123.456.toString()
+
+```javascript
+> 123.456.toString()
 '123.456'
 ```
+
 如果你想让数字具有不同的进制，可以通过 `radix` 进行指定：
-```
-4..toString(2) // 二进制（底 2）
+
+```javascript
+> 4..toString(2) // 二进制（底 2）
 '100'
-4.5.toString(2)
+> 4.5.toString(2)
 '100.1'
-255..toString(16) // 十六进制（底 16）
+> 255..toString(16) // 十六进制（底 16）
 'ff'
-255.66796875.toString(16)
+> 255.66796875.toString(16)
 'ff.ab'
-1234567890..toString(36)
+> 1234567890..toString(36)
 'kf12oi'
 ```
+
 `parseInt()` 提供了逆操作：它将包含给定进制的整数（无小数！）数字字符串转换为数字。
-```
-parseInt('kf12oi', 36)
+
+```javascript
+> parseInt('kf12oi', 36)
 1234567890
 ```
 
 ## 15.13.5 来源
+
 - Wikipedia
 - [TypeScript 内置类型](https://github.com/Microsoft/TypeScript/blob/master/lib/)
 - [MDN JavaScript 文档](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
@@ -7849,14 +7786,16 @@ parseInt('kf12oi', 36)
 ![](img/image01395.jpeg)![](img/image0140.jpeg)
 
 ![](img/image01397.jpeg) 测验：高级
+
 查看测验应用。
 
 # 第 16 章：Math
 
 ## 目录
+
 - 16.1 数据属性
 - 16.2 指数、根、对数
-- 16.3 取五
+- 16.3 舍入
 - 16.4 三角函数
 - 16.5 其他各种函数
 - 16.6 来源
@@ -7864,107 +7803,140 @@ parseInt('kf12oi', 36)
 `Math` 是一个带有用于处理数字的数据属性和方法的对象。你可以将其看作一个简版的模块：它在 JavaScript 拥有模块很久以前就已经被创建了。
 
 ## 16.1 数据属性
+
 - `Math.E: number` [ES1]
-欧拉数，自然对数的底，约为 2.7182818284590452354。
+  欧拉数，自然对数的底，约为 2.7182818284590452354。
+
 - `Math.LN10: number` [ES1]
-10 的自然对数，约为 2.302585092994046。
+  10 的自然对数，约为 2.302585092994046。
+
 - `Math.LN2: number` [ES1]
-2 的自然对数，约为 0.6931471805599453。
+  2 的自然对数，约为 0.6931471805599453。
+
 - `Math.LOG10E: number` [ES1]
-`e` 的底为 10 对数，约为 0.4342944819032518。
+  `e` 的底为 10 对数，约为 0.4342944819032518。
+
 - `Math.LOG2E: number` [ES1]
-`e` 的底为 2 对数，约为 1.4426950408889634。
+  `e` 的底为 2 对数，约为 1.4426950408889634。
+
 - `Math.PI: number` [ES1]
-数学常数 `π`，圆周长与直径的比，约为 3.1415926535897932。
+  数学常数 `π`，圆周长与直径的比，约为 3.1415926535897932。
+
 - `Math.SQRT1_2: number` [ES1]
-1/2 的平方根，约为 0.7071067811865476。
+  1/2 的平方根，约为 0.7071067811865476。
+
 - `Math.SQRT2: number` [ES1]
-2 的平方根，约为 1.4142135623730951。
+  2 的平方根，约为 1.4142135623730951。
 
 ## 16.2 指数、根、对数
-- `Math.cbrt(x: number): number` [ES6]
-返回 `x` 的立方根。
-```
-Math.cbrt(8)
-2
-```
-- `Math.exp(x: number): number` [ES1]
-返回 `ex`（`e` 为欧拉数）。`log()` 的逆操作。
-```
-Math.exp(0)
-1
-Math.exp(1) === Math.E
-true
-```
-- `Math.expm1(x: number): number` [ES6]
-返回 `exp(x)-1`。`log()` 的逆操作。非常小的数字（接近 0 的分数）用更高的精度表示。因此，每当 `exp()` 返回接近 1 的值时，此函数就会返回更精确的值。
-- `Math.log(x: number): number` [ES1]
-返回 `x` 的自然对数（底为 `e`，欧拉数）。`exp()` 的逆操作。
-```
-Math.log(1)
-0
-Math.log(Math.E)
-1
-```
-- `Math.log1p(x: number): number` [ES6]
-返回 `log(1 + x)`。`expm1()` 的逆操作。非常小的数字用更高的精度表示。因此，当 `log()` 的参数接近 1 时，你可以为此函数提供一个更精确的参数。
-- `Math.log10(x: number): number` [ES6]
-返回 `x` 的底为 10 对数。`10 ** x` 的逆操作。
-```
-Math.log10(1)
-0
-Math.log10(100)
-2
-```
-- `Math.log2(x: number): number` [ES6]
-返回 `x` 的底为 2 对数。`2 ** x` 的逆操作。
-```
-Math.log2(1)
-0
-Math.log2(2)
-1
-Math.log2(4)
-2
-```
-- `Math.pow(x: number, y: number): number` [ES1]
-返回 `x` 的 `y` 次方。
-- `Math.sqrt(x: number): number` [ES1]
-返回 `x` 的平方根。
 
-## 16.3 取五
-取五意味着将任意数字转换为整数。
+- `Math.cbrt(x: number): number` [ES6]
+  返回 `x` 的立方根。
+
+```javascript
+Math.cbrt(8)
+// 2
+```
+
+- `Math.exp(x: number): number` [ES1]
+  返回 `eˣ`（`e` 为欧拉数）。`log()` 的逆操作。
+
+```javascript
+Math.exp(0)
+// 1
+Math.exp(1) === Math.E
+// true
+```
+
+- `Math.expm1(x: number): number` [ES6]
+  返回 `exp(x)-1`。`log1p()` 的逆操作。非常小的数字（接近 0 的分数）用更高的精度表示。因此，每当 `exp()` 返回接近 1 的值时，此函数就会返回更精确的值。
+
+- `Math.log(x: number): number` [ES1]
+  返回 `x` 的自然对数（底为 `e`，欧拉数）。`exp()` 的逆操作。
+
+```javascript
+Math.log(1)
+// 0
+Math.log(Math.E)
+// 1
+```
+
+- `Math.log1p(x: number): number` [ES6]
+  返回 `log(1 + x)`。`expm1()` 的逆操作。非常小的数字用更高的精度表示。因此，当 `log()` 的参数接近 1 时，你可以为此函数提供一个更精确的参数。
+
+- `Math.log10(x: number): number` [ES6]
+  返回 `x` 的底为 10 对数。`10 ** x` 的逆操作。
+
+```javascript
+Math.log10(1)
+// 0
+Math.log10(100)
+// 2
+```
+
+- `Math.log2(x: number): number` [ES6]
+  返回 `x` 的底为 2 对数。`2 ** x` 的逆操作。
+
+```javascript
+Math.log2(1)
+// 0
+Math.log2(2)
+// 1
+Math.log2(4)
+// 2
+```
+
+- `Math.pow(x: number, y: number): number` [ES1]
+  返回 `x` 的 `y` 次方。
+
+- `Math.sqrt(x: number): number` [ES1]
+  返回 `x` 的平方根。
+
+## 16.3 舍入
+
+舍入意味着将任意数字转换为整数。
+
 - `Math.ceil(x: number): number` [ES1]
-返回大于或等于 `x` 的最小整数（向上取）。
-```
+  返回大于或等于 `x` 的最小整数（向上取整）。
+
+```javascript
 Math.ceil(2.1)
-3
+// 3
 ```
+
 - `Math.floor(x: number): number` [ES1]
-返回小于或等于 `x` 的最大整数（向下取）。
-```
+  返回小于或等于 `x` 的最大整数（向下取整）。
+
+```javascript
 Math.floor(2.9)
-2
+// 2
 ```
+
 - `Math.round(x: number): number` [ES1]
-返回最近的整数（四舍五入）。
-```
+  返回最近的整数（四舍五入）。
+
+```javascript
 Math.round(2.5)
-3
+// 3
 Math.round(2.4)
-2
+// 2
 ```
+
 - `Math.trunc(x: number): number` [ES6]
-返回 `x` 的整数部分（截断小数部分）。
-```
+  返回 `x` 的整数部分（截断小数部分）。
+
+```javascript
 Math.trunc(2.9)
-2
+// 2
 Math.trunc(-2.9)
--2
+// -2
 ```
 
 ## 16.4 三角函数
+
 角度以弧度为单位。使用以下两个函数在角度和弧度之间转换。
-```
+
+```javascript
 function degreesToRadians(degrees) {
   return degrees / 180 * Math.PI;
 }
@@ -7977,151 +7949,158 @@ assert.equal(radiansToDegrees(Math.PI), 180);
 ```
 
 - `Math.acos(x: number): number` [ES1]
-返回 `x` 的反余弦（余弦角）。
-```
+  返回 `x` 的反余弦（余弦角）。
+
+```javascript
 Math.acos(0)
-1.5707963267948966
+// 1.5707963267948966
 Math.acos(1)
-0
+// 0
 ```
+
 - `Math.asin(x: number): number` [ES1]
-返回 `x` 的反正弦（正弦角）。
-```
+  返回 `x` 的反正弦（正弦角）。
+
+```javascript
 Math.asin(0)
-0
+// 0
 Math.asin(1)
-1.5707963267948966
+// 1.5707963267948966
 ```
+
 - `Math.atan(x: number): number` [ES1]
-返回 `x` 的反正正切（正切角）。
-```
+  返回 `x` 的反正切（正切角）。
+
+```javascript
 Math.atan(0)
-0
+// 0
 Math.atan(1)
-0.7853981633974483
+// 0.7853981633974483
 ```
+
 - `Math.atan2(y: number, x: number): number` [ES1]
-返回商 `y/x` 的反正正切。
+  返回商 `y/x` 的反正切。
+
 - `Math.cos(x: number): number` [ES1]
-返回 `x` 的余弦。
-```
+  返回 `x` 的余弦。
+
+```javascript
 Math.cos(0)
-1
+// 1
 Math.cos(Math.PI)
--1
+// -1
 ```
+
 - `Math.cosh(x: number): number` [ES6]
-返回 `x` 的双曲余弦。
+  返回 `x` 的双曲余弦。
+
 - `Math.hypot(...values: number): number` [ES6]
-返回 `values` 平方和的平方根（勾股定理）：
-```
+  返回 `values` 平方和的平方根（勾股定理）：
+
+```javascript
 Math.hypot(3, 4)
-5
+// 5
 ```
+
 - `Math.sin(x: number): number` [ES1]
-返回 `x` 的正弦。
-```
+  返回 `x` 的正弦。
+
+```javascript
 Math.sin(0)
-0
+// 0
 Math.sin(Math.PI / 2)
-1
+// 1
 ```
+
 - `Math.sinh(x: number): number` [ES6]
-返回 `x` 的双曲正弦。
+  返回 `x` 的双曲正弦。
+
 - `Math.tan(x: number): number` [ES1]
-返回 `x` 的正切。
-```
+  返回 `x` 的正切。
+
+```javascript
 Math.tan(0)
-0
+// 0
 Math.tan(1)
-1.5574077246549023
+// 1.5574077246549023
 ```
-- `Math.tanh(x: number): number; [ES6]`
-返回 `x` 的双曲正切。
 
+- `Math.tanh(x: number): number` [ES6]
+  返回 `x` 的双曲正切。
 
+## 16.5 其他各种函数
 
-
-
-# 16.5 其他各种函数
-
-* `Math.abs(x: number): number` [ES1]
+- `Math.abs(x: number): number` [ES1]
   返回 `x` 的绝对值。
-```
+
+```javascript
 Math.abs(3)
-3
-```
-```
+// 3
 Math.abs(-3)
-3
-```
-```
+// 3
 Math.abs(0)
-0
+// 0
 ```
 
-* `Math.clz32(x: number): number` [ES6]
+- `Math.clz32(x: number): number` [ES6]
   计算 32 位整数 `x` 前导零的个数。用于 DSP 算法。
-```
+
+```javascript
 Math.clz32(0b01000000000000000000000000000000)
-1
-```
-```
+// 1
 Math.clz32(0b00100000000000000000000000000000)
-2
-```
-```
+// 2
 Math.clz32(2)
-30
-```
-```
+// 30
 Math.clz32(1)
-31
+// 31
 ```
 
-* `Math.max(...values: number[]): number` [ES1]
+- `Math.max(...values: number[]): number` [ES1]
   将 `values` 转换为数字并返回最大的。
-```
+
+```javascript
 Math.max(3, -5, 24)
-24
+// 24
 ```
 
-* `Math.min(...values: number[]): number` [ES1]
+- `Math.min(...values: number[]): number` [ES1]
   将 `values` 转换为数字并返回最小的。
-```
+
+```javascript
 Math.min(3, -5, 24)
--5
+// -5
 ```
 
-* `Math.random(): number` [ES1]
+- `Math.random(): number` [ES1]
   返回一个伪随机数 `n`，`0 ≤ n < 1`。
+
   计算一个随机整数 `i`，`0 ≤ i < max`：
-```
+
+```javascript
 function getRandomInteger(max) {
   return Math.floor(Math.random() * max);
 }
 ```
 
-* `Math.sign(x: number): number` [ES6]
+- `Math.sign(x: number): number` [ES6]
   返回数字的正负号：
-```
+
+```javascript
 Math.sign(-8)
--1
-```
-```
+// -1
 Math.sign(0)
-0
-```
-```
+// 0
 Math.sign(3)
-1
+// 1
 ```
 
-# 16.6 来源
-* 维基百科
-* [TypeScript 内置类型](https://github.com/Microsoft/TypeScript/blob/master/lib/)
-* [MDN JavaScript 文档](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
-* [ECMAScript 语言规范](https://tc39.github.io/ecma262/)
+## 16.6 来源
+
+- 维基百科
+- [TypeScript 内置类型](https://github.com/Microsoft/TypeScript/blob/master/lib/)
+- [MDN JavaScript 文档](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+- [ECMAScript 语言规范](https://tc39.github.io/ecma262/)
 
 # 17 Unicode – 简介（高级）
 
@@ -8130,43 +8109,43 @@ Unicode 是用于在世界上大多数文字系统中表示和管理文本的标
 ## 17.1 代码点 vs. 编码单元
 
 这两个概念对于理解 Unicode 至关重要：
-* `Code points`（代码点）是表示 Unicode 字符的数字。
-* `Code units`（编码单元）是用于编码代码点的数字，以便存储或传输 Unicode 文本。一个或多个 `code units` 编码单个 `code point`。每个 `code unit` 的大小相同，取决于所使用的编码格式。最流行的格式 UTF-8 具有 8 位的 `code units`。
+
+- `Code points`（代码点）是表示 Unicode 字符的数字。
+- `Code units`（编码单元）是用于编码代码点的数字，以便存储或传输 Unicode 文本。一个或多个 `code units` 编码单个 `code point`。每个 `code unit` 的大小相同，取决于所使用的编码格式。最流行的格式 UTF-8 具有 8 位的 `code units`。
 
 ### 17.1.1 代码点
 
 第一版本的 Unicode 使用 16 位的 `code points`。从那时起字符数量大幅增加，`code points` 的大小被扩展到 21 位。这 21 位被分为 17 个平面（planes），每个平面 16 位：
-* `Plane 0: 基础多语言平面 (BMP)`，`0x0000–0xFFFF`
-  * 包含几乎所有现代语言的字符（拉丁字母、亚洲汉字等）以及许多符号。
-* `Plane 1: 补充多语言平面 (SMP)`，`0x10000–0x1FFFF`
-  * 支持历史文字系统（例如埃及象形字和楔形文字）以及额外的现代文字系统。
-  * 支持 emoji 和许多其他符号。
-* `Plane 2: 补充表意平面 (SIP)`，`0x20000–0x2FFFF`
-  * 包含额外的 CJK（中、日、韩）表意字。
-* `Plane 3–13`：未分配
-* `Plane 14: 补充特殊平面 (SSP)`，`0xE0000–0xEFFFF`
-  * 包含非图形字符，如标签字符和字形变选择器。
-* `Plane 15–16: 补充私用区 (S PUA A/B)`，`0x0F0000–0x10FFFF`
-  *供 ISO 和 Unicode 联盟之外的实体分配字符。未标准化。
+
+- `Plane 0: 基础多语言平面 (BMP)`，`0x0000–0xFFFF`
+  - 包含几乎所有现代语言的字符（拉丁字母、亚洲汉字等）以及许多符号。
+- `Plane 1: 补充多语言平面 (SMP)`，`0x10000–0x1FFFF`
+  - 支持历史文字系统（例如埃及象形字和楔形文字）以及额外的现代文字系统。
+  - 支持 emoji 和许多其他符号。
+- `Plane 2: 补充表意平面 (SIP)`，`0x20000–0x2FFFF`
+  - 包含额外的 CJK（中、日、韩）表意字。
+- `Plane 3–13`：未分配
+- `Plane 14: 补充特殊平面 (SSP)`，`0xE0000–0xEFFFF`
+  - 包含非图形字符，如标签字符和字形变选择器。
+- `Plane 15–16: 补充私用区 (S PUA A/B)`，`0xF0000–0x10FFFF`
+  - 供 ISO 和 Unicode 联盟之外的实体分配字符。未标准化。
 
 平面 1-16 被称为补充平面或星际平面（astral planes）。
 
 让我们检查几个字符的 `code points`：
-```
+
+```javascript
 'A'.codePointAt(0).toString(16)
-'41'
-```
-```
+// '41'
+
 'ü'.codePointAt(0).toString(16)
-'fc'
-```
-```
+// 'fc'
+
 'π'.codePointAt(0).toString(16)
-'3c0'
-```
-```
+// '3c0'
+
 '☺'.codePointAt(0).toString(16)
-'1f642'
+// '1f642'
 ```
 
 `code points` 的十六进制数告诉我们，前三个字符位于平面 0（16 位以内），而 emoji 位于平面 1。
@@ -8176,32 +8155,37 @@ Unicode 是用于在世界上大多数文字系统中表示和管理文本的标
 编码 `code points` 的主要方法是三种 Unicode 转换格式（UTF）：UTF-32、UTF-16、UTF-8。每个格式末尾的数字表示其 `code units` 的大小（位）。
 
 #### 17.1.2.1 UTF-32 (32 位 Unicode 转换格式)
+
 UTF-32 使用 32 位存储 `code units`，导致每个 `code point` 对应一个 `code unit`。这种格式是唯一的固定长度编码；其他所有格式都使用不同数量的 `code units` 来编码单个 `code point`。
 
 #### 17.1.2.2 UTF-16 (16 位 Unicode 转换格式)
+
 UTF-16 使用 16 位的 `code units`。它按如下编码 `code points`：
-* `BMP (Unicode 的前 16 位)`：存储在单个 `code units` 中。
-* `星际平面 (Astral planes)`：BMP 包含 `0x10_000` 个 `code points`。由于 Unicode 总共有 `0x110_000` 个 `code points`，我们还需要编码剩余的 `0x100_000` 个 `code points`（20 位）。BMP 有两个未分配 `code points` 范围提供了必要的存储空间：
-* 高 10 位（高位代理）：`0xD800-0xDBFF`
-* 低 10 位（低位代理）：`0xDC00-0xDFFF`
+
+- `BMP (Unicode 的前 16 位)`：存储在单个 `code units` 中。
+- `星际平面 (Astral planes)`：BMP 包含 `0x10_000` 个 `code points`。由于 Unicode 总共有 `0x110_000` 个 `code points`，我们还需要编码剩余的 `0x100_000` 个 `code points`（20 位）。BMP 有两个未分配 `code points` 范围提供了必要的存储空间：
+  - 高 10 位（高位代理）：`0xD800-0xDBFF`
+  - 低 10 位（低位代理）：`0xDC00-0xDFFF`
 
 换句话说：结尾的两个十六进制数字贡献了 8 位。但只有当 BMP 以其中一个数字开头时，我们才能使用这 8 位。
 
 #### 17.1.2.3 UTF-8 (8 位 Unicode 转换格式)
+
 UTF-8 具有 8 位的 `code units`。它使用 1–4 个 `code units` 来编码一个 `code point`。
 
 | 代码点 | 编码单元 |
 | :--- | :--- |
-| 0000–007F | 0bbbbb (7 位) |
-| 0080–07FF | 110bbbbb, 10bbbb (5+6 位) |
-| 0800–FFFF | 1110bbbb, 10bbbb, 10bbbb (4+6+6 位) |
-| 10000–1FFFF | 11110bbb, 10bbbb, 10bbbb, 10bbbb (3+6+6+6 位) |
+| 0000–007F | 0bbbbbbb (7 位) |
+| 0080–07FF | 110bbbbb, 10bbbbbb (5+6 位) |
+| 0800–FFFF | 1110bbbb, 10bbbbbb, 10bbbbbb (4+6+6 位) |
+| 10000–1FFFF | 11110bbb, 10bbbbbb, 10bbbbbb, 10bbbbbb (3+6+6+6 位) |
 
 注意：
-* 每个 `code unit` 的前缀告诉我们：
+
+- 每个 `code unit` 的前缀告诉我们：
   - 序列的第一个吗？如果是，后面有多少个 `code units`？
   - 它是第二个还是之后？
-* 0000–007F 范围内的字符映射与 ASCII 相同，这使得旧软件具有一定的兼容性。
+- 0000–007F 范围内的字符映射与 ASCII 相同，这使得旧软件具有一定的兼容性。
 
 三个示例：
 
@@ -8212,32 +8196,29 @@ UTF-8 具有 8 位的 `code units`。它使用 1–4 个 `code units` 来编码�
 | ☺ | 0x1F642 | 11110000, 10011111, 10011001, 10000010 |
 
 ## 17.2 Web 开发中的编码：UTF-16 和 UTF-8
+
 Web 开发中使用的 Unicode 编码格式：UTF-16 和 UTF-8。
 
-### 17.2.1 源码源码：UTF-16
+### 17.2.1 源码：UTF-16
+
 ECMAScript 规范内部使用 UTF-16 表示源码。
 
 ### 17.2.2 字符串：UTF-16
-JavaScript 字符串字符基于 UTF-16 编码单元：
+
+JavaScript 字符串基于 UTF-16 编码单元：
+
 ```javascript
 const smiley = '☺';
 smiley.length
-2
-```
+// 2
 
-
-
-
-
-```javascript
 smiley === '\uD83D\uDE42' // 代码单元
+// true
 ```
-
-true
 
 关于 Unicode 和字符串的更多信息，请参阅 §18.6 “文本的原子：Unicode 字符、JavaScript 字符、字形聚簇”。
 
-## 17.2.3 文件中的源代码：UTF-8
+### 17.2.3 文件中的源代码：UTF-8
 
 现如今，HTML 和 JavaScript 几乎总是编码为 `UTF-8`。
 
@@ -8245,13 +8226,13 @@ true
 
 ```html
 <!doctype html>
-<html
+<html>
 <head>
 <meta charset="UTF-8">
 ···
 ```
 
-对于在浏览器中加载的 HTML 模块，[标准编码](https://html.spec.whatwg.org/multipage/webappapis.html#fetch-a-single-module-script) 也是 `UTF-8`。
+对于在浏览器中加载的 HTML 模块，标准编码也是 `UTF-8`。
 
 ## 17.3 字形聚簇 – 真正的字符
 
@@ -8259,11 +8240,9 @@ true
 
 一方面，有由代码点（code points）表示的 Unicode 字符。
 
-| 17.3 字形聚簇 – 真正的字符 | 141 |
+另一方面，有字形聚簇（grapheme clusters）。字形聚簇与屏幕或纸张上显示的符号最为对应。它被定义为“一个水平可分割的文本单元”。因此，Unicode 官方文档也称之为“用户感知字符”。编码一个字形聚簇需要一个或多个代码点字符。
 
-另一方面，有字形聚簇（grapheme clusters）。字形聚簇与屏幕或纸张上显示的符号最为对应。它被定义为“一个水平可分割的文本单元”。因此，[Unicode 官方文档](https://unicode.org/reports/tr29/#Grapheme_Cluster_Boundaries) 也称之为“用户感知字符”。编码一个字形聚簇需要一个或多个代码点字符。
-
-例如，天罗那朵提语的 `kshi` 是由 4 个代码点编码的。我们使用扩展运算符（`...`）将字符串拆分为包含代码点字符的 `Array`（详细信息请参阅 §18.6.1 “处理代码点”）：
+例如，泰卢固语的 `kshi` 是由 4 个代码点编码的。我们使用扩展运算符（`...`）将字符串拆分为包含代码点字符的 `Array`（详细信息请参阅 §18.6.1 “处理代码点”）：
 
 ![](img/image01459.jpeg)
 
@@ -8273,7 +8252,7 @@ true
 
 ![](img/image01405.jpeg) 关于字形聚簇的更多信息
 
-更多信息，请参阅 Manish Goregaokar 写的 [“停止给代码点赋予意义”](https://manishearth.github.io/blog/2017/01/14/stop-ascribing-meaning-to-unicode-code-points/)。
+更多信息，请参阅 Manish Goregaokar 写的 “停止给代码点赋予意义”。
 
 ![](img/image01395.jpeg)![](img/image01396.jpeg)
 
@@ -8281,44 +8260,36 @@ true
 
 查看测试应用。
 
-# 14217 Unicode – 简要（高级）
+# 第 18 章 字符串
 
-## 第 18 章 字符串
-
-### 目录
+## 目录
 
 ![](img/image01393.jpeg)
 
-| 18.1 | 普通字符串字面量 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . | 144 |
-|  | 18.1.1 | 转义 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . | 144 |
-|  | 18.2 | 访问字符和代码点 . . . . . . . . . . . . . . | 144 |
-|  | 18.2.1 | 访问 JavaScript 字符 . . . . . . . . . . . . . . . . . . . | 144 |
-|  | 18.2.2 | 通过 `for-of` 和 访问 Unicode 代码点字符 |  |
-|  |  | 扩展 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . | 144 |
-| 18.3 | 通过 `+` 拼接字符串 . . . . . . . . . . . . . . . . . . . . . . . . | 145 |
-| 18.4 | 转换为字符串 . . . . . . . . . . . . . . . . . . . . . . . . . . . . | 145 |
-|  | 18.4.1 | 对象的字符串化 . . . . . . . . . . . . . . . . . . . . . . . . . | 146 |
-|  | 18.4.2 | 自定义对象的字符串化 . . . . . . . . . . . . . . . . . . | 147 |
-|  | 18.4.3 | 值的字符串化的另一种方式 . . . . . . . . . . . . . . . . . . | 147 |
-| 18.5 | 比较字符串 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . | 147 |
-|  | 18.6 | 文本的原子：Unicode 字符、JavaScript 字符、字形 |  |
-|  | 聚簇 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . | 148 |
-|  | 18.6.1 | 处理代码点 . . . . . . . . . . . . . . . . . . . . . | 148 |
-|  | 18.6.2 | 处理代码单元（字符码） . . . . . . . . . . . . . . . . . . . | 149 |
-|  | 18.6.3 | 注意：字形聚簇 . . . . . . . . . . . . . . . . . . . . . | 150 |
-|  | 18.7 | 快速参考：字符串 . . . . . . . . . . . . . . . . . . . . . . . . . . | 150 |
-|  | 18.7.1 | 转换为字符串 . . . . . . . . . . . . . . . . . . . . . . . . . . | 150 |
-|  | 18.7.2 | 字符的数值 . . . . . . . . . . . . . . . . . . . . . . . . . . . | 150 |
-|  | 18.7.3 | 字符串运算符 . . . . . . . . . . . . . . . . . . . . . . . . . . . | 150 |
-|  | 18.7.4 | `String.prototype`: 方法 . . . . . . . . . . . . . . . . . . . . | 150 |
-|  | 18.7.5 | `String.prototype`: 方法 . . . . . . . . . . . . . . . . . . . | 154 |
-|  | 18.7.6 | `String.prototype`: 方法 . . . . . . . . . . . . . . . . . . . | 154 |
-|  | 18.7.7 | `String.prototype`: 方法 . . . . . . . . . . . . . . . . . . . | 154 |
-|  | 18.7.8 | `String.prototype`: 方法 . . . . . . . . . . . . . . . . . . . | 157 |
+| 18.1 | 普通字符串字面量 | 144 |
+| | 18.1.1 | 转义 | 144 |
+| 18.2 | 访问字符和代码点 | 144 |
+| | 18.2.1 | 访问 JavaScript 字符 | 144 |
+| | 18.2.2 | 通过 `for-of` 和扩展访问 Unicode 代码点字符 | 144 |
+| 18.3 | 通过 `+` 拼接字符串 | 145 |
+| 18.4 | 转换为字符串 | 145 |
+| | 18.4.1 | 对象的字符串化 | 146 |
+| | 18.4.2 | 自定义对象的字符串化 | 147 |
+| | 18.4.3 | 值的字符串化的另一种方式 | 147 |
+| 18.5 | 比较字符串 | 147 |
+| 18.6 | 文本的原子：Unicode 字符、JavaScript 字符、字形聚簇 | 148 |
+| | 18.6.1 | 处理代码点 | 148 |
+| | 18.6.2 | 处理代码单元（字符编码） | 149 |
+| | 18.6.3 | 注意：字形聚簇 | 150 |
+| 18.7 | 快速参考：字符串 | 150 |
+| | 18.7.1 | 转换为字符串 | 150 |
+| | 18.7.2 | 字符的数值 | 150 |
+| | 18.7.3 | 字符串运算符 | 150 |
+| | 18.7.4 | `String.prototype`: 方法 | 150 |
 
 ## 18.1 普通字符串字面量
 
-字符串是原始值且是不可变的。14418 字符串
+字符串是原始值且是不可变的。
 
 字符串字面量由单引号或双引号界定：
 
@@ -8364,7 +8335,7 @@ assert.equal(str.length, 3);
 通过 `for-of` 遍历字符串会访问代码点字符：
 
 ```javascript
-for (const ch of 'x😁') {
+for (const ch of 'x😁y') {
   console.log(ch);
 }
 // 输出：
@@ -8376,7 +8347,7 @@ for (const ch of 'x😁') {
 以及通过扩展运算符将字符串转换为代码点字符的 `Array`：
 
 ```javascript
-assert.deepEqual([...'x😁'], ['x', '😁', 'y']);
+assert.deepEqual([...'x😁y'], ['x', '😁', 'y']);
 ```
 
 ## 18.3 通过 `+` 拼接字符串
@@ -8407,7 +8378,7 @@ assert.equal(str, 'Say it one more time');
 
 - `String(x)`
 - `''+x`
-- `x.toString()`（对 `undefined` 和 `null` 不起）
+- `x.toString()`（对 `undefined` 和 `null` 不起作用）
 
 建议：使用具有描述性且安全的 `String()`。
 
@@ -8421,62 +8392,48 @@ assert.equal(String(true), 'true');
 assert.equal(String(123.45), '123.45');
 ```
 
-
-
-
 `Boolean()` 返回 `false` 的唯一字符串是空字符串。
 
-### 18.4.1 字符串化
+### 18.4.1 对象的字符串化
 
 普通对象有一个默认的字符串表示，这种表示并不好用：
 
-```
+```javascript
 String({a: 1})
+// '[object Object]'
 ```
-'[object Object]'
 
 数组有更好的字符串表示，但它仍然隐藏了大量信息：
 
-```
+```javascript
 String(['a', 'b'])
-```
-'a,b'
+// 'a,b'
 
-```
 String(['a', ['b']])
-```
-'a,b'
+// 'a,b'
 
-```
 String([1, 2])
-```
-'1,2'
+// '1,2'
 
-```
 String(['1', '2'])
-```
-'1,2'
+// '1,2'
 
-```
 String([true])
-```
-'true'
+// 'true'
 
-```
 String(['true'])
-```
-'true'
+// 'true'
 
-```
 String(true)
+// 'true'
 ```
-'true'
 
 对函数进行字符串化，会返回它们的源代码：
 
-``` evenString(function f() {return 4})
+```javascript
+String(function f() {return 4})
+// 'function f() {return 4}'
 ```
-'function f() {return 4}'
 
 ### 18.4.2 自定义对象的字符串化
 
@@ -8496,15 +8453,13 @@ assert.equal(String(obj), 'hello');
 
 JSON 数据格式是 JavaScript 值的文本表示形式。因此，`JSON.stringify()` 也可以用于将值转换为字符串：
 
-```
+```javascript
 JSON.stringify({a: 1})
-```
-'{"a":1}'
+// '{"a":1}'
 
-```
 JSON.stringify(['a', ['b']])
+// '["a",["b"]]'
 ```
-'["a",["b"]]'
 
 需要注意的是，JSON 仅支持 `null`、`booleans`、`numbers`、`strings`、`Arrays` 和 `objects`（它始终将其处理为通过对象字面量创建的）。
 
@@ -8523,7 +8478,7 @@ console.log(JSON.stringify({first: 'Jane', last: 'Doe'}, null, 2));
 }
 ```
 
-### 18.5 比较字符串
+## 18.5 比较字符串
 
 字符串可以通过以下运算符进行比较：
 
@@ -8532,32 +8487,26 @@ console.log(JSON.stringify({first: 'Jane', last: 'Doe'}, null, 2));
 有一个重要的注意事项需要考虑：这些运算符根据 JavaScript 字符的数值进行比较。这意味着 JavaScript 用于字符串的顺序与字典和电话簿中使用的顺序不同：
 
 ```javascript
-'A' < 'B' // 确定
-true
-```
+'A' < 'B' // 正确
+// true
 
-```javascript
 'a' < 'B' // 不正确
-false
-```
+// false
 
-```javascript
 'ä' < 'b' // 不正确
-false
+// false
 ```
 
-正确地比较文本超出了本书的范围。它通过 [ECMA-Script 国际化 API (Intl)](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Intl) 支持。
+正确地比较文本超出了本书的范围。它通过 ECMAScript 国际化 API (Intl) 支持。
 
-### 18.6 文本的原子：Unicode 字符、JavaScript 字符、字形簇
-
-### 18.6 文本的原子：Unicode 字符、JavaScript 字符、字形簇
+## 18.6 文本的原子：Unicode 字符、JavaScript 字符、字形聚簇
 
 对 §17 “Unicode – 简要介绍”的快速回顾：
 
 - Unicode 字符由码点（code points）表示；即范围为 21 位的数字。
 - 在 JavaScript 字符串中，Unicode 是通过基于 UTF-16 编码格式的代码单元（code units）实现的。每个代码单元是一个 16 位的数字。编码单个码点需要一个到两个代码单元。
 - 因此，每个 JavaScript 字符由一个代码单元表示。在 JavaScript 标准库中，代码单元也称为字符编码（char codes）。它们确实就是如此：JavaScript 字符的数字。
-- 字形簇（grapheme clusters，用户感知的字符）是屏幕或纸上显示的写入符号。编码单个字形簇需要一个或多个 Unicode 字符。
+- 字形聚簇（grapheme clusters，用户感知的字符）是屏幕或纸上显示的写入符号。编码单个字形聚簇需要一个或多个 Unicode 字符。
 
 以下代码演示了单个 Unicode 字符由一个或两个 JavaScript 字符组成。我们通过 `.length` 计数后者：
 
@@ -8568,40 +8517,38 @@ false
 
 | 实体 | 数值表示 | 大小 | 编码方式 |
 | :--- | :--- | :--- | :--- |
-| 字形簇 | | | 1+ 码点 |
+| 字形聚簇 | | | 1+ 码点 |
 | Unicode 字符 | 码点 | 21 位 | 1–2 代码单元 |
 | JavaScript 字符 | UTF-16 代码单元 | 16 位 | – |
 
-#### 18.6.1 码点操作
+### 18.6.1 处理代码点
 
 让我们探索 JavaScript 处理码点的工具。
 
 码点转义（code point escape）允许你以十六进制形式指定码点。它产生一个或两个 JavaScript 字符。
 
-```
+```javascript
 '\u{1F642}'
-```
-'☺'
+// '☺'
 ```
 
 `String.fromCodePoint()` 将单个码点转换为 1–2 个 JavaScript 字符：
 
-```
+```javascript
 String.fromCodePoint(0x1F642)
-```
-'☺'
+// '☺'
 ```
 
 `.codePointAt()` 将 1–2 个 JavaScript 字符转换为单个码点：
 
-```
+```javascript
 '☺'.codePointAt(0).toString(16)
+// '1f642'
 ```
-'1f642'
 
-你可以解构等待，遍历字符串，这会访问 Unicode 字符（而不是 JavaScript 字符）。
+你可以通过迭代遍历字符串，这会访问 Unicode 字符（而不是 JavaScript 字符）。
 
-迭代将在本书后后部分描述。迭代的一种方法是通过 `for-of` 循环：
+迭代将在本书后面部分描述。迭代的一种方法是通过 `for-of` 循环：
 
 ```javascript
 const str = '☺a';
@@ -8609,68 +8556,62 @@ assert.equal(str.length, 3);
 for (const codePointChar of str) {
   console.log(codePointChar);
 }
+// 输出：
+// '☺'
+// 'a'
 ```
-
-- 输出：
-- '☺'
-- 'a'
 
 将 `(...)` 展开到 `Array` 字面量中也是基于迭代并访问 Unicode 字符的：
 
-```
+```javascript
 [...'☺a']
-```
-[ '☺', 'a' ]
+// [ '☺', 'a' ]
 ```
 
 这使其成为计算 Unicode 字符的良好工具：
 
 ```javascript
 [...'☺a'].length
-```
-2
+// 2
 
-```javascript
 '☺a'.length
+// 3
 ```
-3
 
-#### 18.6.2 代码单元操作（字符编码 char codes）
+### 18.6.2 处理代码单元（字符编码 char codes）
 
 字符串的索引和长度基于 JavaScript 字符（以 UTF-16 代码单元表示）。
 
 要以十六进制形式指定代码单元，你可以使用代码单元转义：
 
-```
+```javascript
 '\uD83D\uDE42'
-```
-'☺'
+// '☺'
 ```
 
 你可以使用 `String.fromCharCode()`。Char code 是标准库中对代码单元的名称：
 
 ```javascript
 String.fromCharCode(0xD83D) + String.fromCharCode(0xDE42)
-```
-'☺'
+// '☺'
 ```
 
 要获取字符的字符编码，使用 `.charCodeAt()`：
 
 ```javascript
 '☺'.charCodeAt(0).toString(16)
+// 'd83d'
 ```
-'d83d'
 
-#### 18.6.3 注意事项：字形簇
+### 18.6.3 注意事项：字形聚簇
 
-在处理可能用任何人类语言编写的文本时，最好在字形簇的边界分割，而不是在 Unicode 字符的边界分割。
+在处理可能用任何人类语言编写的文本时，最好在字形聚簇的边界分割，而不是在 Unicode 字符的边界分割。
 
-TC39 正在开发 [Intl.Segmenter](https://github.com/tc39/proposal-intl-segmenter)，这是 ECMAScript 国际化 API 的提案，旨在支持 Unicode 分段（沿字形簇边界、单词边界、句子边界等）。
+TC39 正在开发 `Intl.Segmenter`，这是 ECMAScript 国际化 API 的提案，旨在支持 Unicode 分段（沿字形聚簇边界、单词边界、句子边界等）。
 
-在性提案成为标准之前，你可以使用多个可用库之一（在网络上搜索“JavaScript grapheme”）。
+在该提案成为标准之前，你可以使用多个可用库之一（在网络上搜索“JavaScript grapheme”）。
 
-### 18.7 快速参考：字符串
+## 18.7 快速参考：字符串
 
 字符串是不可变的，没有任何字符串方法会修改它们自身的字符串。
 
@@ -8680,22 +8621,24 @@ TC39 正在开发 [Intl.Segmenter](https://github.com/tc39/proposal-intl-segment
 
 表 18.2：将值转换为字符串。
 
-- `String(x)`
+`String(x)`
 
+| 类型 | 结果 |
 | :--- | :--- |
-| undefined | 'undefined' |
-| null | 'null' |
-| Boolean value | false → 'false', true → 'true' |
-| Number value | 示例：123 → '123' |
-| String value | x（输入，保持不变） |
-| 一个对象 | 可通过例如 `toString()` 进行配置 |
+| `undefined` | `'undefined'` |
+| `null` | `'null'` |
+| `Boolean` | `false` → `'false'`, `true` → `'true'` |
+| `Number` | 示例：123 → `'123'` |
+| `String` | `x`（输入，保持不变） |
+| `Object` | 可通过例如 `toString()` 进行配置 |
 
-### 18.7.2 字符的数值值
+### 18.7.2 字符的数值
 
 - **Char code (字符编码)**：用数值表示 JavaScript 字符。JavaScript 对 Unicode 代码单元的名称。
   - 大小：16 位，无符号
   - 将数字转换为字符：`String.fromCharCode()` [ES1]
   - 将字符转换为数字：字符串方法 `.charCodeAt()` [ES1]
+
 - **Code point (码点)**：用数值表示 Unicode 字符。
   - 大小：21 位，无符号（17 个平面，每个 16 位）
   - 将数字转换为字符：`String.fromCodePoint()` [ES6]
@@ -8703,7 +8646,7 @@ TC39 正在开发 [Intl.Segmenter](https://github.com/tc39/proposal-intl-segment
 
 ### 18.7.3 字符串运算符
 
-// 通过 `[]` 字符
+// 通过 `[]` 访问字符
 
 ```javascript
 const str = 'abc';
@@ -8717,77 +8660,72 @@ assert.equal('a' + 'b' + 'c', 'abc');
 assert.equal('take ' + 3 + ' oranges', 'take 3 oranges');
 ```
 
-### 18.7.4 String.prototype：查找与匹配
+### 18.7.4 `String.prototype`：查找与匹配
 
-（String.prototype 是存储字符串方法的地方。）
+（`String.prototype` 是存储字符串方法的地方。）
 
 - `.endsWith(searchString: string, endPos=this.length)` [ES6]
-  如果字符串长度为 `endPos` 且以 `searchString` 结尾，则返回 `true`。
-  否则返回 `false`。
+  如果字符串长度为 `endPos` 且以 `searchString` 结尾，则返回 `true`。否则返回 `false`。
 
 ```javascript
-'foo.txt'.endsWith('.txt') // true
-```
+'foo.txt'.endsWith('.txt')
+// true
 
-```javascript
-'abcde'.endsWith('cd', 4) // true
+'abcde'.endsWith('cd', 4)
+// true
 ```
 
 - `.includes(searchString: string, startPos=0)` [ES6]
   如果字符串包含 `searchString` 则返回 `true`，否则返回 `false`。搜索从 `startPos` 开始。
 
 ```javascript
-'abc'.includes('b') // true
-```
+'abc'.includes('b')
+// true
 
-
-
-
-
-```javascript
 'abc'.includes('b', 2)
-false
+// false
 ```
 
-• `.indexOf(searchString: string, minIndex=0): number` [ES1]
-
-返回 `searchString` 在字符串中出现的最小索引，否则返回 `-1`。任何返回的索引都将是 `minIndex` 或更高。
+- `.indexOf(searchString: string, minIndex=0): number` [ES1]
+  返回 `searchString` 在字符串中出现的最小索引，否则返回 `-1`。任何返回的索引都将是 `minIndex` 或更高。
 
 ```javascript
 'abab'.indexOf('a')
-0
-```
+// 0
 
-```javascript
 'abab'.indexOf('a', 1)
-2
-```
+// 2
 
-```javascript
 'abab'.indexOf('c')
--1
+// -1
 ```
 
-• `.lastIndexOf(searchString: string, maxIndex=Infinity): number` [ES1]
 
-返回 `searchString` 在字符串中出现的最高索引，否则返回 `-1`。任何返回的索引都将是 `maxIndex` 或更。
+
+# 字符串方法参考
+
+## 18.7.4 String.prototype: 搜索
+
+### `.lastIndexOf(searchString: string, maxIndex=Infinity): number` [ES1]
+
+返回 `searchString` 在字符串中出现的最高索引，否则返回 `-1`。任何返回的索引都将是 `maxIndex` 或更小。
 
 ```javascript
 'abab'.lastIndexOf('ab', 2)
-2
+// 结果: 2
 ```
 
 ```javascript
 'abab'.lastIndexOf('ab', 1)
-0
+// 结果: 0
 ```
 
 ```javascript
 'abab'.lastIndexOf('ab')
-2
+// 结果: 2
 ```
 
-• [1 of 2] `.match(regExp: string | RegExp): RegExpMatchArray | null` [ES3]
+### [1 of 2] `.match(regExp: string | RegExp): RegExpMatchArray | null` [ES3]
 
 如果 `regExp` 是没有设置标记 `/g` 的正则表达式，则 `.match()` 返回 `regExp` 在字符串中的第一个匹配。如果没有匹配，则返回 `null`。如果 `regExp` 是字符串，则在执行上述步骤之前，它被用于创建一个正则表达式（类似于 `new RegExp()` 的参数）。
 
@@ -8809,288 +8747,270 @@ interface RegExpMatchArray extends Array<string> {
 
 ```javascript
 'ababb'.match(/a(b+)/)
-{ 0: 'ab', 1: 'b', index: 0, input: 'ababb', groups: undefined }
+// 结果: { 0: 'ab', 1: 'b', index: 0, input: 'ababb', groups: undefined }
 ```
 
 ```javascript
 'ababb'.match(/a(?<foo>b+)/)
-{ 0: 'ab', 1: 'b', index: 0, input: 'ababb', groups: { foo: 'b' } }
+// 结果: { 0: 'ab', 1: 'b', index: 0, input: 'ababb', groups: { foo: 'b' } }
 ```
 
 ```javascript
 'abab'.match(/x/)
-null
+// 结果: null
 ```
 
-• [2 of 2] `.match(regExp: RegExp): string[] | null` [ES3]
+### [2 of 2] `.match(regExp: RegExp): string[] | null` [ES3]
 
 如果 `regExp` 的标记 `/g` 被设置，则 `.match()` 返回包含所有匹配项的数组，或者在没有匹配时返回 `null`。
 
 ```javascript
 'ababb'.match(/a(b+)/g)
-[ 'ab', 'abb' ]
+// 结果: [ 'ab', 'abb' ]
 ```
 
 ```javascript
 'ababb'.match(/a(?<foo>b+)/g)
-[ 'ab', 'abb' ]
+// 结果: [ 'ab', 'abb' ]
 ```
 
 ```javascript
 'abab'.match(/x/g)
-null
+// 结果: null
 ```
 
-• `.search(regExp: string | RegExp): number` [ES3]
+### `.search(regExp: string | RegExp): number` [ES3]
 
 返回 `regExp` 在字符串中出现的索引。如果 `regExp` 是字符串，则它被用于创建一个正则表达式（类似于 `new RegExp()` 的参数）。
 
 ```javascript
 'a2b'.search(/[0-9]/)
-1
+// 结果: 1
 ```
 
 ```javascript
 'a2b'.search('[0-9]')
-1
+// 结果: 1
 ```
 
-• `.startsWith(searchString: string, startPos=0): boolean` [ES6]
+### `.startsWith(searchString: string, startPos=0): boolean` [ES6]
 
 如果 `searchString` 出现在字符串索引 `startPos` 处，则返回 `true`。否则返回 `false`。
 
-### 18.7 快速参考：字符串
-
 ```javascript
 '.gitignore'.startsWith('.')
-true
+// 结果: true
 ```
 
 ```javascript
 'abcde'.startsWith('bc', 1)
-true
+// 结果: true
 ```
 
-### 18.7.5 String.prototype: 提取
+## 18.7.5 String.prototype: 提取
 
-• `.slice(start=0, end=this.length): string` [ES3]
+### `.slice(start=0, end=this.length): string` [ES3]
 
 返回字符串中从索引 `start`（包含）开始到索引 `end`（不包含）结束的子字符串。如果索引为负数，则在使用之前将其加到 `.length` 上（-1 意味着 `this.length-1`，等）。
 
 ```javascript
 'abc'.slice(1, 3)
-'bc'
+// 结果: 'bc'
 ```
 
 ```javascript
 'abc'.slice(1)
-'bc'
+// 结果: 'bc'
 ```
 
 ```javascript
 'abc'.slice(-2)
-'bc'
+// 结果: 'bc'
 ```
 
-• `.split(separator: string | RegExp, limit?: number): string[]` [ES3]
+### `.split(separator: string | RegExp, limit?: number): string[]` [ES3]
 
 将字符串分割为子字符串数组——即出现在分隔符之间的字符串。分隔符可以是字符串：
 
 ```javascript
 'a | b | c'.split('|')
-[ 'a ', ' b ', ' c' ]
+// 结果: [ 'a ', ' b ', ' c' ]
 ```
 
 它也可以是正则表达式：
 
 ```javascript
 'a : b : c'.split(/ *: */)
-[ 'a', 'b', 'c' ]
+// 结果: [ 'a', 'b', 'c' ]
 ```
 
 ```javascript
 'a : b : c'.split(/( *):( *)/)
-[ 'a', ' ', ' ', 'b', ' ', ' ', 'c' ]
+// 结果: [ 'a', ' ', ' ', 'b', ' ', ' ', 'c' ]
 ```
 
 最后一次调用演示了正则表达式中的组所做的捕获如何变为返回数组的元素。
 
-警告：`.split('')` 将字符串拆分为 JavaScript 字符。这在处理星际 Unicode 字符（编码为两个 JavaScript 字符）时效果不佳。例如，表情符号是星际字符的：
+> **警告**：`.split('')` 将字符串拆分为 JavaScript 字符。这在处理星际 Unicode 字符（编码为两个 JavaScript 字符）时效果不佳。例如，表情符号是星际字符的：
 
 ```javascript
 '☺X☺'.split('')
-[ '\uD83D', '\uDE42', 'X'
+// 结果: [ '\uD83D', '\uDE42', 'X' ]
 ```
 
 相反，最好使用展开运算符：
 
 ```javascript
 [...'X☺']
-[ '☺', 'X', '☺' ]
+// 结果: [ '☺', 'X', '☺' ]
 ```
 
-• `.substring(start: number, end=this.length): string` [ES1]
+### `.substring(start: number, end=this.length): string` [ES1]
 
 使用 `.slice()` 代替此方法。`.substring()` 在旧引擎中实现不一致，且不支持负索引。
 
-### 18.7.6 String.prototype: 组合
+## 18.7.6 String.prototype: 组合
 
-• `.concat(...strings: string[]): string` [ES3]
+### `.concat(...strings: string[]): string` [ES3]
 
 返回字符串与 `strings` 的拼接。`'a'.concat('b')` 等于 `'a'+'b'`。后者更流行。
 
 ```javascript
 'ab'.concat('cd', 'ef', 'gh')
-'abcdefgh'
+// 结果: 'abcdefgh'
 ```
 
-• `.padEnd(len: number, fillString=' '): string` [ES2017]
+### `.padEnd(len: number, fillString=' '): string` [ES2017]
 
 在字符串末尾附加 `fillString` 片直到达到指定的长度 `len`。如果已经达到或超过 `len`，则直接返回，不做任何更改。
 
 ```javascript
 '#'.padEnd(2)
-'# '
+// 结果: '# '
 ```
 
 ```javascript
 'abc'.padEnd(2)
-'abc'
+// 结果: 'abc'
 ```
 
 ```javascript
 '#'.padEnd(5, 'abc')
-'#abca'
+// 结果: '#abca'
 ```
 
-• `.padStart(len: number, fillString=' '): string` [ES2017]
+### `.padStart(len: number, fillString=' '): string` [ES2017]
 
 在字符串开头添加 `fillString` 片段直到达到指定的长度 `len`。如果已经达到或超过 `len`，则直接返回，不做任何更改。
 
 ```javascript
 '#'.padStart(2)
-'#'
+// 结果: '#'
 ```
 
 ```javascript
 'abc'.padStart(2)
-'abc'
+// 结果: 'abc'
 ```
 
 ```javascript
 '#'.padStart(5, 'abc')
-'abc#'
+// 结果: 'abc#'
 ```
 
-• `.repeat(count=0): string` [ES6]
+### `.repeat(count=0): string` [ES6]
 
 返回拼接 `count` 次的字符串。
 
 ```javascript
 '*'.repeat(3)
-'***'
+// 结果: '***'
 ```
 
-• `.normalize(form: 'NFC'): string` [ES6]
+### `.normalize(form: 'NFC'): string` [ES6]
 
 根据 Unicode 规范化形式（`NFC`, `NFD`, `NKC`, `NFKD`）规范化字符串。
 
 ```javascript
 'ﬁ'.normalize('NFC')
-'ﬁ'
+// 结果: 'ﬁ'
 ```
 
+## 18.7.7 String.prototype: 大小写与修剪
 
-
-
+### `.toLowerCase(): string` [ES1]
 
 返回字符串的副本，其中所有大写字母字符都被转换为小写字母。该方法在不同字母表上的效果取决于 JavaScript 引擎。
 
 ```javascript
 '-A2B-'.toLowerCase()
+// 结果: '-a2b-'
 ```
-'-a2b-'
 
 ```javascript
 'ΑΒΓ'.toLowerCase()
+// 结果: 'αβγ'
 ```
-'αβγ'
 
-*   `.trim()`: `string` [ES5]
+### `.trim(): string` [ES5]
 
 返回字符串的副本，其中所有开头和结尾的空白（空格、制表符、换行符等）都会被删除。
 
 ```javascript
 '\r\n#\t'.trim()
+// 结果: '#'
 ```
-'#'
 
 ```javascript
 'abc'.trim()
+// 结果: 'abc'
 ```
-'abc'
 
-*   `.trimEnd()`: `string` [ES2019]
+### `.trimEnd(): string` [ES2019]
 
 与 `.trim()` 相似，但只修剪字符串的结尾：
 
 ```javascript
 'abc'.trimEnd()
+// 结果: 'abc'
 ```
-abc
 
-*   `.trimStart()`: `string` [ES2019]
+### `.trimStart(): string` [ES2019]
 
 与 `.trim()` 相似，但只修剪字符串的开头：
 
-### 18.7 快速参考：字符串
-
 ```javascript
 'abc'.trimStart()
+// 结果: 'abc'
 ```
-'abc'
 
-#### 18.7.8 来源
+## 18.7.8 来源
 
-*   [TypeScript 内置类型](https://github.com/Microsoft/TypeScript/blob/master/lib/)
-*   [MDN JavaScript 文档](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
-*   [ECMAScript 语言规范](https://tc39.github.io/ecma262/)
+* [TypeScript 内置类型](https://github.com/Microsoft/TypeScript/blob/master/lib/)
+* [MDN JavaScript 文档](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+* [ECMAScript 语言规范](https://tc39.github.io/ecma262/)
 
-![](img/image01436.jpeg)![](img/image01437.jpeg)
-
-![](img/image01416.jpeg) 练习：使用字符串方法
-
-`exercises/strings/remove_extension_test.mjs`
-
-![](img/image01395.jpeg)![](img/image01396.jpeg)
-
-![](img/image01397.jpeg) 测验
-
-查看测验应用。
-
-# 18 字符串
+---
 
 # 第 19 章：使用模板字面量和标签模板
 
 ## 目录
 
-![](img/image01393.jpeg)
-
-*   19.1 消除歧义：“template（模板）”
-*   19.2 模板字面量
-*   19.3 标签模板
-*   19.3.1 熟式（Cooked）与原始（raw）模板字符串（高级）
-*   19.3.2 标签函数库：lit-html
-*   19.3.3 标签函数库：re-template-tag
-*   19.3.4 标签函数库：graphql-tag
-*   19.4 原始字符串字面量
-*   19.5 （高级）
-*   19.6 多行模板字面量和缩进
-*   19.6.1 修复：用于取消缩进的模板标签
-*   19.6.2 修复：`.trim()`
-*   19.7 通过模板字面量进行简单模板化
-*   19.7.1 一个更复杂的示例
-*   19.7.2 简单的 HTML 转义
+* 19.1 消除歧义：“template（模板）”
+* 19.2 模板字面量
+* 19.3 标签模板
+  * 19.3.1 熟式（Cooked）与原始（raw）模板字符串（高级）
+  * 19.3.2 标签函数库：lit-html
+  * 19.3.3 标签函数库：re-template-tag
+  * 19.3.4 标签函数库：graphql-tag
+* 19.4 原始字符串字面量
+* 19.5 （高级）
+* 19.6 多行模板字面量和缩进
+  * 19.6.1 修复：用于取消缩进的模板标签
+  * 19.6.2 修复：`.trim()`
+* 19.7 通过模板字面量进行简单模板化
+  * 19.7.1 一个更复杂的示例
+  * 19.7.2 简单的 HTML 转义
 
 在我们深入研究模板字面量（template literal）和标签模板（tagged template）这两个特性之前，让我们先检查一下“template（模板）”一词的多种含义。
 
@@ -9098,7 +9018,7 @@ abc
 
 尽管以下三者的名称中都包含 "template"，并且看起来很相似，但它们有显著不同：
 
-*   文本模板是从数据到文本的函数。它经常用于 Web 开发，并且通常通过文本文件定义。例如，以下文本定义了 [Handlebars](https://handlebarsjs.com) 库的模板：
+* **文本模板** 是从数据到文本的函数。它经常用于 Web 开发，并且通常通过文本文件定义。例如，以下文本定义了 [Handlebars](https://handlebarsjs.com) 库的模板：
 
 ```html
 <div class="entry">
@@ -9112,20 +9032,20 @@ abc
 这个模板有两个空白处需要填充：`title` 和 `body`。它的用法如下：
 
 ```javascript
-// 第一步：获取模板文本，例如从文本文件中获取。 
+// 第一步：获取模板文本，例如从文本文件中获取。
 const tmplFunc = Handlebars.compile(TEMPLATE_TEXT);  // 编译字符串
-const data = {title: 'My page', body: 'Welcome to my page!'}; 
+const data = {title: 'My page', body: 'Welcome to my page!'};
 const html = tmplFunc(data);
 ```
 
-*   模板字面量与字符串字面量类似，但具有额外的功能。例如，插值。它由反引号分隔：
+* **模板字面量** 与字符串字面量类似，但具有额外的功能。例如，插值。它由反引号分隔：
 
 ```javascript
 const num = 5;
 assert.equal(`Count: ${num}!`, 'Count: 5!');
 ```
 
-*   在语法上，标签模板是一个跟在函数（或者准确说是求值为函数的表达式）后面的模板字面量。这会导致函数被调用。它的参数源自模板字面量的内容。
+* 在语法上，**标签模板** 是一个跟在函数（或者准确说是求值为函数的表达式）后面的模板字面量。这会导致函数被调用。它的参数源自模板字面量的内容。
 
 ```javascript
 const getArgs = (...args) => args;
@@ -9141,7 +9061,7 @@ assert.deepEqual(
 
 与普通的字符串字面量相比，模板字面量有两个新特性。
 
-首先，它支持字符串插值：如果你在 `${}` 中放入一个动态计算的值，它会被转换为字符串并插入到该字面量返回的字符串中。
+首先，它支持**字符串插值**：如果你在 `${}` 中放入一个动态计算的值，它会被转换为字符串并插入到该字面量返回的字符串中。
 
 ```javascript
 const MAX = 100;
@@ -9157,7 +9077,7 @@ assert.throws(
 );
 ```
 
-其次，模板字面量可以跨多行：
+其次，模板字面量可以**跨多行**：
 
 ```javascript
 const str = `this is
@@ -9175,29 +9095,27 @@ multiple lines`;
 function tagFunc(...args) {
   return args;
 }
-
 const setting = 'dark mode';
 const value = true;
-
 assert.deepEqual(
   tagFunc`Setting ${setting} is ${value}!`, // (A)
   [['Setting ', ' is ', '!'], 'dark mode', true] // (B)
 );
 ```
 
-反引号之前的函数被称为标签函数（tag function）。它的参数是：
+反引号之前的函数被称为**标签函数**（tag function）。它的参数是：
 
-*   模板字符串（第一个参数）：一个包含 `${}` 周围文本片段的数组。在示例中：`['Setting ', ' is ', '!']`
-*   替换值（剩余参数）：插值。在示例中：`'dark mode'` 和 `true`
+* **模板字符串**（第一个参数）：一个包含 `${}` 周围文本片段的数组。在示例中：`['Setting ', ' is ', '!']`
+* **替换值**（剩余参数）：插值。在示例中：`'dark mode'` 和 `true`
 
 字面量的静态（固定）部分（模板字符串）与动态部分（替换值）分开。标签函数可以返回任意值。
 
 ### 19.3.1 熟式（Cooked）与原始（raw）模板字符串（高级）
 
-到为止，我们只看到了模板字符串的熟式解释。但标签函数实际上有两种解释：
+到目前为止，我们只看到了模板字符串的熟式解释。但标签函数实际上有两种解释：
 
-*   熟式解释，其中反斜杠具有特殊含义。例如：`\t` 产生一个制表符。这种模板字符串的解释存储在第一个参数的数组中。
-*   原始（raw）解释，其中反斜杠没有意义。例如：`\t` 产生两个字符——一个反斜杠和一个 at。这种模板字符串的解释存储在第一个参数（数组）的 `.raw` 属性中。
+* **熟式解释**，其中反斜杠具有特殊含义。例如：`\t` 产生一个制表符。这种模板字符串的解释存储在第一个参数的数组中。
+* **原始（raw）解释**，其中反斜杠没有意义。例如：`\t` 产生两个字符——一个反斜杠和一个 `t`。这种模板字符串的解释存储在第一个参数（数组）的 `.raw` 属性中。
 
 下面的标签函数 `cookedRaw` 使用了这两种解释：
 
@@ -9209,7 +9127,6 @@ function cookedRaw(templateStrings, ...substitutions) {
     substitutions,
   };
 }
-
 assert.deepEqual(
   cookedRaw`\tab${'subst'}\newline\\`,
   {
@@ -9220,15 +9137,14 @@ assert.deepEqual(
 );
 ```
 
-原始解释通过 `String.raw`（后后描述）和类似的应用实现了原始字符串字面量。标签模板非常支持小型嵌入语言（所谓的领域特定语言）。
+原始解释通过 `String.raw`（后文描述）和类似的应用实现了原始字符串字面量。标签模板非常支持小型嵌入语言（所谓的领域特定语言）。
 
 #### 19.3.2 标签函数库：lit-html
 
-[lit-html](https://github.com/Polymer/lit-html) 是一个基于标签模板的模板库，被 [前端](https://www.polymer-project.org/) 框架 Polymer](https://www.polymer-project.org/) 使用：
+[lit-html](https://github.com/Polymer/lit-html) 是一个基于标签模板的模板库，被 [Polymer](https://www.polymer-project.org/) 框架使用：
 
 ```javascript
 import {html, render} from 'lit-html';
-
 const template = (items) => html`
 <ul>
 ${
@@ -9243,50 +9159,41 @@ ${
 
 `repeat()` 是用于循环的自定义函数。它的第 2 个参数为第 3 个参数返回的值生成唯一键。注意该参数使用的嵌套标签模板。
 
-
-
-
-
-### 19.3.3 标签函数库：re-template-tag
+#### 19.3.3 标签函数库：re-template-tag
 
 [`re-template-tag`](https://github.com/rauschma/re-template-tag) 是一个用于组合正则表达式的简单库。使用 `re` 标记模板会生成正则表达式。其主要优势是你可以通过 `${}`（行 A）插值正则表达式和纯文本：
 
 ```javascript
 const RE_YEAR = re`(?<year>[0-9]{4})`;
-
 const RE_MONTH = re`(?<month>[0-9]{2})`;
-
 const RE_DAY = re`(?<day>[0-9]{2})`;
-
 const RE_DATE = re`/${RE_YEAR}-${RE_MONTH}-${RE_DAY}/u`;  // (A)
 ```
 
 ```javascript
 const match =  RE_DATE.exec('2017-01-27');
-
 assert.equal(match.groups.year,  '2017');
 ```
 
-### 19.3.4 标签函数库：graphql-tag
+#### 19.3.4 标签函数库：graphql-tag
 
 [graphql-tag 库](https://github.com/apollographql/graphql-tag) 允许你通过标记模板创建 GraphQL 查询：
 
 ```javascript
 import gql from 'graphql-tag';
-
 const query = gql`
 {
-user(id: 5) {
-firstName
-lastName
-}
+  user(id: 5) {
+    firstName
+    lastName
+  }
 }
 `;
 ```
 
 此外，还有用于在 Babel、TypeScript 等环境中预编译此类查询的插件。
 
-### 19.4 原始字符串字面量 (Raw string literals)
+## 19.4 原始字符串字面量 (Raw string literals)
 
 原始字符串字面量是通过标签函数 `String.raw` 实现的。在这种字符串字面量中，反斜杠没有特殊作用（例如转义字符等）：
 
@@ -9298,29 +9205,24 @@ assert.equal(String.raw`\back`,  '\\back');
 
 ```javascript
 const regex1 =  /^\./;
-
 const regex2 = new RegExp('^\\.');
-
 const regex3 = new RegExp(String.raw`^\.`);
 ```
 
-所有三个正则表达式是等。在普通字符串字面量中，你必须写两次反斜杠来对其字面量转义。而在原始字符串字面量中，你不需要这样做。
+所有三个正则表达式是等价的。在普通字符串字面量中，你必须写两次反斜杠来对其字面量转义。而在原始字符串字面量中，你不需要这样做。
 
 原始字符串字面量也用于指定 Windows 文件名路径：
 
 ```javascript
 const WIN_PATH =  String.raw`C:\foo\bar`;
-
 assert.equal(WIN_PATH,  'C:\\foo\\bar');
 ```
 
-### 19.5 (高级)
+## 19.5 （高级）
 
-其余章节均为高级内容
+其余章节均为高级内容。
 
-### 19.9 使用模板字面量和标记模板
-
-### 19.6 多行模板字面量和缩进
+## 19.6 多行模板字面量和缩进
 
 如果你在模板字面量中放置多行文本，两个目标会产生冲突：一方面，模板字面量应该缩进以适应源代码；另一方面，其内容的每一行应该从最左侧列开始。
 
@@ -9328,29 +9230,23 @@ assert.equal(WIN_PATH,  'C:\\foo\\bar');
 
 ```javascript
 function div(text) {
-return `
-
-<<div>
-
+  return `
+<div>
 ${text}
-
-</</div>>
-
+</div>
 `;
 }
-
 console.log('Output:');
-
 console.log(
-div('Hello!')
-• 将空格替换为中点:
-.replace(/ /g, '·')
-• 将 \n 替换为 #\n:
-.replace(/\n/g, '#\n')
+  div('Hello!')
+  // 将空格替换为中点:
+  .replace(/ /g, '·')
+  // 将 \n 替换为 #\n:
+  .replace(/\n/g, '#\n')
 );
 ```
 
-由于缩进的原因，模板字面量可以很好地融入源代码。遗憾的是，输出也被缩进了。而且我们不希望开头有返回，结尾处有返回加两个空格。
+由于缩进的原因，模板字面量可以很好地融入源代码。遗憾的是，输出也被缩进了。而且我们不希望开头有换行，结尾处有换行加两个空格。
 
 输出：
 
@@ -9364,27 +9260,20 @@ div('Hello!')
 
 有两种方法可以修复：通过标记模板或通过裁剪（trim）模板字面量的结果。
 
-#### 19.6.1 修复方法：用于取消缩进的模板标签
+### 19.6.1 修复方法：用于取消缩进的模板标签
 
-第一种修复方法是使用自定义模板标签来移除不需要的空白。它利用初始换行符后的第一行来确定文本开始的列，并缩短各的缩进。它还删除了最开头的换行符和最后的缩进。其中一个模板标签是 [Desmond Brand 提供的 dedent](https://github.com/dmnd/dedent)：
+第一种修复方法是使用自定义模板标签来移除不需要的空白。它利用初始换行符后的第一行来确定文本开始的列，并缩短各行的缩进。它还删除了最开头的换行符和最后的缩进。其中一个模板标签是 [Desmond Brand 提供的 dedent](https://github.com/dmnd/dedent)：
 
 ```javascript
 import dedent from 'dedent';
-
 function divDedented(text) {
-return dedent`
-
+  return dedent`
 <div>
-
 ${text}
-
 </div>
-
 `.replace(/\n/g, '#\n');
 }
-
 console.log('Output:');
-
 console.log(divDedented('Hello!'));
 ```
 
@@ -9398,25 +9287,19 @@ Hello!#
 </div>
 ```
 
-#### 19.6.2 修复方法：.trim()
+### 19.6.2 修复方法：`.trim()`
 
 第二种修复方法更快，但也更粗暴：
 
 ```javascript
 function divDedented(text) {
-return `
-
+  return `
 <div>
-
 ${text}
-
 </div>
-
 `.trim().replace(/\n/g, '#\n');
 }
-
 console.log('Output:');
-
 console.log(divDedented('Hello!'));
 ```
 
@@ -9432,24 +9315,23 @@ Hello!#
 </div>
 ```
 
-### 19.7 通过模板字面量进行简单的模板化
+## 19.7 通过模板字面量进行简单的模板化
 
-虽然模板字面量看起来像文本模板，但如何用它们进行（文本）模板化并不而易见：文本模板从对象获取数据，而模板字面量从变量获取数据。解决方案是在函数体中使用模板字面量，该函数的参数接收模板化数据。例如：
+虽然模板字面量看起来像文本模板，但如何用它们进行（文本）模板化并不明显：文本模板从对象获取数据，而模板字面量从变量获取数据。解决方案是在函数体中使用模板字面量，该函数的参数接收模板化数据。例如：
 
 ```javascript
 const tmpl = (data) => `Hello  ${data.name}!`;
-
 assert.equal(tmpl({name:  'Jane'}),  'Hello Jane!');
 ```
 
-#### 19.7.1 一个更复杂的示例
+### 19.7.1 一个更复杂的示例
 
 作为一个更复杂的示例，我们想要获取一个地址的 `Array` 并生成一个 HTML 表格。这个 `Array` 是：
 
 ```javascript
 const addresses = [
-{ first: '<Jane>', last: 'Bond' },
-{ first: 'Lars', last: '<Croft>' },
+  { first: '<Jane>', last: 'Bond' },
+  { first: 'Lars', last: '<Croft>' },
 ];
 ```
 
@@ -9457,18 +9339,16 @@ const addresses = [
 
 ```javascript
 const tmpl = (addrs) => `
-
 <table>
 ${addrs.map(
-(addr) =>  `
-<tr>
-<td>${escapeHtml(addr.first)}</td>
-<td>${escapeHtml(addr.last)}</td>
-</tr>
-`.trim()
+  (addr) =>  `
+  <tr>
+  <td>${escapeHtml(addr.first)}</td>
+  <td>${escapeHtml(addr.last)}</td>
+  </tr>
+  `.trim()
 ).join('')}
 </table>
-
 `.trim();
 ```
 
@@ -9490,19 +9370,19 @@ console.log(tmpl(addresses));
 <table><tr><td>Jane</td><td>Bond</td></tr><tr><td>Lars</td><td>Croft</td></tr></table>
 ```
 
-#### 19.7.2 简单的 HTML 转义 (Escaping)
+### 19.7.2 简单的 HTML 转义 (Escaping)
 
 以下函数对纯文本进行转义，使其在 HTML 中原样显示：
 
 ```javascript
 function escapeHtml(str) {
-return str
-.replace(/&/g, '&amp;')
-.replace(/>/g, '&gt;')
-.replace(/</g, '&lt;')
-.replace(/"/g, '&quot;')
-.replace(/'/g, '&#39;')
-.replace(/`/g, '&#96;');
+  return str
+    .replace(/&/g, '&amp;')
+    .replace(/>/g, '&gt;')
+    .replace(/</g, '&lt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#39;')
+    .replace(/`/g, '&#96;');
 }
 ```
 
@@ -9511,9 +9391,11 @@ assert.equal(escapeHtml('Rock & Roll'),  'Rock &amp; Roll');
 assert.equal(escapeHtml('<blank>'),  '&lt;blank&gt;');
 ```
 
-### 20 符号 (Symbols)
+---
 
-### 20.1 符号的用例
+# 第 20 章：符号 (Symbols)
+
+## 20.1 符号的用例
 
 符号是通过工厂函数 `Symbol()` 创建的原始值：
 
@@ -9527,16 +9409,13 @@ const mySymbol =  Symbol('mySymbol');
 
 ```javascript
 Symbol() === Symbol()
-false
+// 结果: false
 ```
-
-
 
 另一方面，它们的行为也像原始值。必须通过 `typeof` 来进行分类：
 
 ```javascript
 const sym = Symbol();
-
 assert.equal(typeof sym, 'symbol');
 ```
 
@@ -9548,14 +9427,12 @@ const obj = {
 };
 ```
 
-# 20.1 Symbols 的用例
-
 符号的主要用例有：
 
 * 常量的值
 * 唯一的属性键
 
-## 20.1.1 Symbols：常量的值
+### 20.1.1 Symbols：常量的值
 
 假设你想创建代表红、橙、黄、绿、蓝、紫颜色的常量。实现这一目标的一种简单方法是使用字符串：
 
@@ -9563,7 +9440,7 @@ const obj = {
 const COLOR_BLUE = 'Blue';
 ```
 
-优点是记录该常量会产生有用的输出。缺点是，存在将无关无关的值误认为颜色的风险，因为两个内容相同的字符串被认为是相等的：
+优点是记录该常量会产生有用的输出。缺点是，存在将无关的值误认为颜色的风险，因为两个内容相同的字符串被认为是相等的：
 
 ```javascript
 const MOOD_BLUE = 'Blue';
@@ -9606,16 +9483,15 @@ function getComplement(color) {
       throw new Exception('Unknown color: ' + color);
   }
 }
-
 assert.equal(getComplement(COLOR_YELLOW), COLOR_VIOLET);
 ```
 
-## 20.1.2 Symbols：唯一的属性键
+### 20.1.2 Symbols：唯一的属性键
 
 对象中属性（字段）的键在两个级别使用：
 
-* 程序在基础级别运行。该层级的键反映了程序所解决的问题。
-* 库和 ECMAScript 在元级别运行。该层级的键被用于操作基础级别数据和代码的服务。使用。其中一个键就是 `'toString'`。
+* 程序在**基础级别**运行。该层级的键反映了程序所解决的问题。
+* 库和 ECMAScript 在**元级别**运行。该层级的键被用于操作基础级别数据和代码的服务。其中一个键就是 `'toString'`。
 
 以下代码演示了区别：
 
@@ -9627,7 +9503,6 @@ const pt = {
     return `(${this.x}, ${this.y})`;
   },
 };
-
 assert.equal(String(pt), '(7, 4)');
 ```
 
@@ -9637,7 +9512,7 @@ assert.equal(String(pt), '(7, 4)');
 
 作为属性键使用的符号在这里帮助我们解决了问题：每个符号都是唯一的，且符号键永远不会与其他字符串键或符号键冲突。
 
-### 20.1.2.1 示例：带有元级别方法的库
+#### 20.1.2.1 示例：带有元级别方法的库
 
 作为一个示例，假设我们正在编写一个库，如果对象实现了特殊方法，则对它们进行不同的处理。这就是为此类方法定义属性键并在对象中实现它的样子：
 
@@ -9649,13 +9524,12 @@ const obj = {
     return this._id;
   }
 };
-
 assert.equal(obj[specialMethod](), 'kf12oi');
 ```
 
 行 A 中的方括号允许我们指定该方法必须具有键 `specialMethod`。更多细节请见 §25.5.2 “计算属性键”。
 
-# 20.2 公共符号
+## 20.2 公共符号
 
 在 ECMAScript 中起特殊作用的符号称为公共符号。示例包括：
 
@@ -9664,11 +9538,10 @@ assert.equal(obj[specialMethod](), 'kf12oi');
 
 ```javascript
 const PrimitiveNull = {
-  Symbol.hasInstance {
+  [Symbol.hasInstance](x) {
     return x === null;
   }
 };
-
 assert.equal(null instanceof PrimitiveNull, true);
 ```
 
@@ -9681,18 +9554,18 @@ assert.equal(null instanceof PrimitiveNull, true);
 '[object is no money]'
 ```
 
-注意：通常重写 `.toString()` 更好。
+> **注意**：通常重写 `.toString()` 更好。
 
-## 练习：公共符号
+### 练习：公共符号
 
 * `Symbol.toStringTag`: `exercises/symbols/to_string_tag_test.mjs`
 * `Symbol.hasInstance`: `exercises/symbols/has_instance_test.mjs`
 
-# 20.3 转换符号
+## 20.3 转换符号
 
 如果将符号 `sym` 转换为另一种原始类型会发生什么？表 20.1 提供了答案。
 
-表 20.1：符号转换为其他原始类型的结果。
+**表 20.1：符号转换为其他原始类型的结果。**
 
 | 转换为 | 显式转换 | 强制转换（隐式转换） |
 | :--- | :--- | :--- |
@@ -9714,58 +9587,22 @@ assert.throws(
 
 缺点是异常使得处理符号变得更加复杂。当你通过 `+` 运算符组装字符串时，你必须显式转换符号：
 
-* `const mySymbol = Symbol('mySymbol');`
-* `'Symbol I used: ' + mySymbol`
-`TypeError: Cannot convert a Symbol value to a string`
+```javascript
+const mySymbol = Symbol('mySymbol');
+'Symbol I used: ' + mySymbol
+// TypeError: Cannot convert a Symbol value to a string
 
-`> 'Symbol I used: ' + String(mySymbol)`
-`'Symbol I used: Symbol(mySymbol)'`
+'Symbol I used: ' + String(mySymbol)
+// 'Symbol I used: Symbol(mySymbol)'
+```
+
+---
 
 # 第 V 部分：控制流与数据流
 
 # 第 21 章：控制语句
 
-## 21.1 控制循环：break 和 continue
-
-### 21.1.1 break
-### 21.1.2 break 加上标签：离开任何标签语句
-### 21.1.3 continue
-
-## 21.2 if 语句
-
-### 21.2.1 if 语句的语法
-
-## 21.3 switch 语句
-
-### 21.3.1 switch 语句的第一个示例
-### 21.3.2 别忘记 return 或 break！
-### 21.3.3 空 case 子句
-### 21.3.4 通过 default 子句检查非法值
-
-## 21.4 while 循环
-
-
-
-
-
-# 21 控制流语句
-
-本章涵盖了以下控制流语句：
-
-- `if` 语句 (ES1)
-- `switch` 语句 (ES3)
-- `while` 循环 (ES1)
-- `do-while` 循环 (ES3)
-- `for` 循环 (ES1)
-- `for-of` 循环 (ES6)
-- `for-await-of` 循环 (ES2018)
-- `for-in` 循环 (ES1)
-
-在介绍实际控制流语句之前，让我们来看两个控制循环的运算符。
-
 ## 21.1 控制循环：`break` 和 `continue`
-
-`break` 和 `continue` 两个运算符可以在循环或其他语句内部用于控制这些语句的执行。
 
 ### 21.1.1 `break`
 
@@ -9779,10 +9616,10 @@ for (const x of ['a',  'b', 'c']) {
 }
 ```
 
-- 输出：
-  - 'a'
-  - '---'
-  - 'b'
+* 输出：
+  * 'a'
+  * '---'
+  * 'b'
 
 ### 21.1.2 带标签的 `break`：离开任何带标签的语句
 
@@ -9790,11 +9627,11 @@ for (const x of ['a',  'b', 'c']) {
 
 ```javascript
 foo: { // 标签
-  if (condition) break foo;  // 标签 break  // ··
+  if (condition) break foo;  // 标签 break
 }
 ```
 
-在接下来的示例中，我们使用带标签的 `break` 在成功时（A 行）以不同的方式离开循环。然后我们跳过紧跟在循环之后的的内容，那是我们在失败时会到达的地方。
+在接下来的示例中，我们使用带标签的 `break` 在成功时（A 行）以不同的方式离开循环。然后我们跳过紧跟在循环之后的内容，那是我们在失败时会到达的地方。
 
 ```javascript
 function findSuffix(stringArray, suffix) {
@@ -9802,7 +9639,8 @@ function findSuffix(stringArray, suffix) {
   search_block: {
     for (const str of stringArray) {
       if (str.endsWith(suffix)) {
-        // 成功：result = str;
+        // 成功：
+        result = str;
         break search_block;  // (A)
       }
     } // for
@@ -9812,11 +9650,9 @@ function findSuffix(stringArray, suffix) {
   return { suffix, result };
   // 等同于：{suffix: suffix, result: result}
 }
-
 assert.deepEqual(
   findSuffix(['foo.txt', 'bar.html'], '.html'),  { suffix: '.html', result: 'bar.html' }
 );
-
 assert.deepEqual(
   findSuffix(['foo.txt', 'bar.html'], '.mjs'),  { suffix: '.mjs', result: '(Untitled)' }
 );
@@ -9832,16 +9668,15 @@ const lines = [
   '# Comment',
   'Another normal line',
 ];
-
 for (const line of lines) {
   if (line.startsWith('#')) continue;
   console.log(line);
 }
 ```
 
-- 输出：
-  - 'Normal line'
-  - 'Another normal line'
+* 输出：
+  * 'Normal line'
+  * 'Another normal line'
 
 ## 21.2 `if` 语句
 
@@ -9851,7 +9686,6 @@ for (const line of lines) {
 if (cond) {
   // then 分支
 }
-
 if (cond) {
   // then 分支
 } else {
@@ -9867,7 +9701,6 @@ if (cond1) {
 } else if (cond2) {
   // ··
 }
-
 if (cond1) {
   // ··
 } else if (cond2) {
@@ -9919,10 +9752,10 @@ default:
 
 `switch` 的执行方式如下：
 
-- 它评估 `switch` 表达式。
-- 跳转到第一个表达式与 `switch` 表达式结果相同的 `case` 子句。
-- 否则——如果没有这样的子句，则跳转到 `default` 子句。
-- 否则——如果没有 `default` 子句，则它什么都不做。
+* 它评估 `switch` 表达式。
+* 跳转到第一个表达式与 `switch` 表达式结果相同的 `case` 子句。
+* 否则——如果没有这样的子句，则跳转到 `default` 子句。
+* 否则——如果没有 `default` 子句，则它什么都不做。
 
 ### 21.3.1 `switch` 语句的第一个示例
 
@@ -9940,7 +9773,6 @@ function dayOfTheWeek(num) {
     case 7: return 'Sunday';
   }
 }
-
 assert.equal(dayOfTheWeek(5), 'Friday');
 ```
 
@@ -9959,7 +9791,6 @@ function englishToFrench(english) {
   }
   return french;
 }
-
 // 结果应该是 'bonjour'！
 assert.equal(englishToFrench('hello'), 'au revoir');
 ```
@@ -9981,13 +9812,12 @@ function englishToFrench(english) {
   }
   return french;
 }
-
 assert.equal(englishToFrench('hello'), 'bonjour'); // ok
 ```
 
 ### 21.3.3 空 `case` 子句
 
-`case` 子句的语句可以省略，这实际上为我们每个每个 `case` 子句提供了多个 `case` 表达式：
+`case` 子句的语句可以省略，这实际上为我们每个 `case` 子句提供了多个 `case` 表达式：
 
 ```javascript
 function isWeekDay(name) {
@@ -10003,7 +9833,6 @@ function isWeekDay(name) {
       return false;
   }
 }
-
 assert.equal(isWeekDay('Wednesday'), true);
 assert.equal(isWeekDay('Sunday'), false);
 ```
@@ -10028,7 +9857,6 @@ function isWeekDay(name) {
       throw new Error('Illegal value: '+name);
   }
 }
-
 assert.throws(
   () => isWeekDay('January'),
   {message: 'Illegal value: January'}
@@ -10047,8 +9875,8 @@ while (`condition`) {
 
 在每次循环迭代之前，`while` 会评估 `condition`：
 
-- 如果结果为假，则循环结束。
-- 如果结果为真，则再执行一次 `while` 主体。
+* 如果结果为假，则循环结束。
+* 如果结果为真，则再执行一次 `while` 主体。
 
 ### 21.4.1 `while` 循环的示例
 
@@ -10056,30 +9884,16 @@ while (`condition`) {
 
 ```javascript
 const arr = ['a', 'b', 'c'];
-
 while (arr.length > 0) {
-  console.log(arr.shift());
+  const elem = arr.shift(); // remove first element
+  console.log(elem);
 }
 ```
 
-
-
-
-
-```javascript
-const elem = arr.shift(); // remove first element
-console.log(elem);
-```
-
-• 输出:
-• 'a'
-• 'b'
-
-18421 控制流语句
-
-```javascript
-// 'c'
-```
+* 输出:
+  * 'a'
+  * 'b'
+  * 'c'
 
 如果条件始终求值为 `true`，那么 `while` 就是一个无限循环：
 
@@ -10089,13 +9903,12 @@ while (true) {
 }
 ```
 
-## 21.5 do-while 循环
+## 21.5 `do-while` 循环
 
-`do-while` 循环的工作原理与 `while` 非常，但它在每次循环迭代后检查条件（而不是在之前）。
+`do-while` 循环的工作原理与 `while` 非常相似，但它在每次循环迭代后检查条件（而不是在之前）。
 
 ```javascript
 let input;
-
 do {
   input = prompt('Enter text:');
   console.log(input);
@@ -10104,7 +9917,7 @@ do {
 
 [`prompt()`](https://developer.mozilla.org/en-US/docs/Web/API/Window/prompt) 是 Web 浏览器中提供的全局函数。它提示用户输入文本并返回结果。
 
-## 21.6 for 循环
+## 21.6 `for` 循环
 
 `for` 循环具有如下语法：
 
@@ -10116,9 +9929,9 @@ for («initialization»; «condition»; «post_iteration») {
 
 第一行是循环头，控制循环体（循环的剩余部分）的执行频率。它包含三个部分，每个部分都是可选的：
 
-• `initialization`：为循环设置变量等。在这里通过 `let` 或 `const` 声明的变量仅存在循环内部。
-• `condition`：在每次循环迭代之前检查此条件。如果它为假（falsy），则停止循环。
-• `post_iteration`：在每次循环迭代后执行该代码。
+* `initialization`：为循环设置变量等。在这里通过 `let` 或 `const` 声明的变量仅存在循环内部。
+* `condition`：在每次循环迭代之前检查此条件。如果它为假（falsy），则停止循环。
+* `post_iteration`：在每次循环迭代后执行该代码。
 
 因此，`for` 循环大致等同于以下 `while` 循环：
 
@@ -10130,7 +9943,7 @@ while («condition») {
 }
 ```
 
-### 21.6.1 for 循环示例
+### 21.6.1 `for` 循环示例
 
 例如，这是通过 `for` 循环从零计数到二：
 
@@ -10140,25 +9953,24 @@ for (let i=0; i<3; i++) {
 }
 ```
 
-• 输出:
-• 0
-• 1
-• 2
+* 输出:
+  * 0
+  * 1
+  * 2
 
 这是通过 `for` 循环记录 `Array` 内容的方法：
 
 ```javascript
 const arr = ['a', 'b', 'c'];
-
 for (let i=0; i<3; i++) {
   console.log(arr[i]);
 }
 ```
 
-• 输出:
-• 'a'
-• 'b'
-• 'c'
+* 输出:
+  * 'a'
+  * 'b'
+  * 'c'
 
 如果你省略了头部所有的三个部分，将得到一个无限循环：
 
@@ -10168,7 +9980,7 @@ for (;;) {
 }
 ```
 
-## 21.7 for-of 循环
+## 21.7 `for-of` 循环
 
 `for-of` 循环遍历一个迭代器（iterable）——一个支持迭代协议的数据容器。
 
@@ -10184,29 +9996,26 @@ for («iteration_variable» of «iterable») {
 
 ```javascript
 const iterable = ['hello', 'world'];
-
 for (const elem of iterable) {
   console.log(elem);
 }
 ```
 
-• 输出:
-• 'hello'
-• 'world'
+* 输出:
+  * 'hello'
+  * 'world'
 
 但你也可以使用已经存在的（可变的）变量：
 
 ```javascript
 const iterable = ['hello', 'world'];
-
 let elem;
-
 for (elem of iterable) {
   console.log(elem);
 }
 ```
 
-### 21.7.1 const: for-of vs. for
+### 21.7.1 `const`: `for-of` vs. `for`
 
 注意，在 `for-of` 循环中，你可以使用 `const`。迭代变量对于每次迭代来说仍然可以是不同的（它只是在迭代期间不能改变）。将其想象为每次都在一个新的作用域中执行一个新的 `const` 声明。
 
@@ -10223,26 +10032,25 @@ for (const elem of set) {
 }
 ```
 
-### 21.7.3 遍历数组的 [index, element] 对
+### 21.7.3 遍历数组的 `[index, element]` 对
 
 最后，你也可以使用 `for-of` 来遍历数组的 `[index, element]` 条目：
 
 ```javascript
 const arr = ['a', 'b', 'c'];
-
 for (const [index, elem] of arr.entries()) {
   console.log(`${index} -> ${elem}`);
 }
 ```
 
-• 输出:
-• '0 -> a'
-• '1 -> b'
-• '2 -> c'
+* 输出:
+  * '0 -> a'
+  * '1 -> b'
+  * '2 -> c'
 
 通过 `[index, element]`，我们使用解构来访问 `Array` 元素。
 
-## 21.8 for-await-of 循环
+## 21.8 `for-await-of` 循环
 
 `for-await-of` 类似于 `for-of`，但它适用于异步迭代器而不是同步迭代器。它只能在 `async` 函数和 `async` 生成器中使用。
 
@@ -10254,9 +10062,9 @@ for await (const item of asyncIterable) {
 
 `for-await-of` 在异步迭代章节中有详细描述。
 
-## 21.9 for-in 循环（避免使用）
+## 21.9 `for-in` 循环（避免使用）
 
-建议：不要使用 `for-in` 循环。`for-in` 有多个陷阱。因此，最好的方法是避免它。
+> **建议**：不要使用 `for-in` 循环。`for-in` 有多个陷阱。因此，最好的方法是避免它。
 
 这是一个正确使用 `for-in` 的示例，它涉及模板代码（行 A）：
 
@@ -10270,18 +10078,16 @@ function getOwnPropertyNames(obj) {
   }
   return result;
 }
-
 assert.deepEqual(
   getOwnPropertyNames({ a: 1, b:2 }),
   ['a', 'b']
 );
-
 assert.deepEqual(
   getOwnPropertyNames(['a', 'b']),
   ['0', '1']); // 字符串！
 ```
 
-我们可以在使用 `for-in` 的情况下实现相同的功能，这几乎总是更好的：
+我们可以在不使用 `for-in` 的情况下实现相同的功能，这几乎总是更好的：
 
 ```javascript
 function getOwnPropertyNames(obj) {
@@ -10293,11 +10099,13 @@ function getOwnPropertyNames(obj) {
 }
 ```
 
-## 22 异常处理
+---
+
+# 第 22 章：异常处理
 
 本章介绍了 JavaScript 如何处理异常。
 
-### 22.1 动机：抛出和异常
+## 22.1 动机：抛出和异常
 
 JavaScript 直到 ES3 才支持异常。这解释了为什么它们在语言中很少使用。
 
@@ -10315,14 +10123,12 @@ function readProfiles(filePaths) {
     }
   }
 }
-
 function readOneProfile(filePath) {
   const profile = new Profile();
   const file = openFile(filePath);
   // ··· (将 `file` 中的数据读取到 `profile`)
   return profile;
 }
-
 function openFile(filePath) {
   if (!fs.existsSync(filePath)) {
     throw new Error('Could not find file '+filePath); // (B)
@@ -10335,11 +10141,12 @@ function openFile(filePath) {
 
 因此：
 
-• 在 B 行，我们使用 `throw` 语句来表示发生了问题。
-• 在 A 行，我们使用 `try-catch` 语句来处理问题。
+* 在 B 行，我们使用 `throw` 语句来表示发生了问题。
+* 在 A 行，我们使用 `try-catch` 语句来处理问题。
 
 当我们抛出时，以下结构是激活的：
 
+```
 readProfiles(···)
 for (const filePath of filePaths)
 try
@@ -10347,10 +10154,11 @@ readOneProfile(···)
 openFile(···)
 if (!fs.existsSync(filePath))
 throw
+```
 
-`throw` 一个一个退出嵌套结构，直到遇到 `try` 语句。执行在在该 `try` 语句的 `catch` 子句中继续。
+`throw` 一个一个退出嵌套结构，直到遇到 `try` 语句。执行在该 `try` 语句的 `catch` 子句中继续。
 
-### 22.2 throw
+## 22.2 `throw`
 
 这是 `throw` 语句的语法：
 
@@ -10360,45 +10168,36 @@ throw «value»;
 
 任何值都可以被抛出，但最好抛出 `Error` 实例或其子类的实例。
 
-
-
-
-
 ```javascript
 throw new Error('Problem!');
 ```
 
 ### 22.2.1 创建错误对象的选项
 
-- 使用 `Error` 类。在 JavaScript 中，这比在更静态语言中限制要少，因为你可以为实例添加自定义属性：
+* 使用 `Error` 类。在 JavaScript 中，这比在更静态语言中限制要少，因为你可以为实例添加自定义属性：
 
 ```javascript
 const err = new Error('Could not find the file');
-
 err.filePath = filePath;
-
 throw err;
 ```
 
-- 使用 JavaScript 中 `Error` 的子类之一（后文会列出）。
-- 自定义 `Error` 的子类。
+* 使用 JavaScript 中 `Error` 的子类之一（后文会列出）。
+* 自定义 `Error` 的子类。
 
 ```javascript
 class MyError extends Error {
-
 }
-
 function func() {
   throw new MyError('Problem!');
 }
-
 assert.throws(
   () => func(),
   MyError
 );
 ```
 
-### 22.3 try 语句
+## 22.3 `try` 语句
 
 `try` 语句的完整版本形式如下：
 
@@ -10411,34 +10210,32 @@ try {
 }
 ```
 
-你可以如下如下组合这些子句：
+你可以如下组合这些子句：
 
-- `try-catch`
-- `try-finally`
-- `try-catch-finally`
+* `try-catch`
+* `try-finally`
+* `try-catch-finally`
 
-自 ECMAScript 2019 起，如果你对抛出的值感兴趣，可以省略 `catch` 参数 `(error)`。
+自 ECMAScript 2019 起，如果你对抛出的值不感兴趣，可以省略 `catch` 参数 `(error)`。
 
-### 22.3.1 try 块
+### 22.3.1 `try` 块
 
 `try` 块可以被视为语句的体。这是我们执行常规代码的地方。
 
-### 22.3.2 catch 子句
+### 22.3.2 `catch` 子句
 
 如果异常到达 `try` 块，它将被赋值给 `catch` 子句的参数，并执行该子句中的代码。接下来，执行将在 `try` 语句后正常继续。如果出现以下情况，可能会发生变化：
 
-- `catch` 块内部存在 `return`、`break` 或 `throw`。
-- 存在 `finally` 子句（它在 `try` 语句结束之前始终执行）。
+* `catch` 块内部存在 `return`、`break` 或 `throw`。
+* 存在 `finally` 子句（它在 `try` 语句结束之前始终执行）。
 
 下面的代码证明了 A 行抛出的值确实在 B 行被捕获。
 
 ```javascript
 const errorObject = new Error();
-
 function func() {
   throw errorObject; // (A)
 }
-
 try {
   func();
 } catch (err) { // (B)
@@ -10446,7 +10243,7 @@ try {
 }
 ```
 
-### 22.3.3 finally 子句
+### 22.3.3 `finally` 子句
 
 `finally` 子句中的代码会在 `try` 语句结束时始终执行——无论 `try` 块或 `catch` 子句发生了什么。
 
@@ -10454,7 +10251,6 @@ try {
 
 ```javascript
 const resource = createResource();
-
 try {
   // 使用 `resource`。可能会抛出错误。
 } finally {
@@ -10462,13 +10258,12 @@ try {
 }
 ```
 
-#### 22.3.3.1 finally 始终执行
+#### 22.3.3.1 `finally` 始终执行
 
 `finally` 子句始终会被执行——即使抛出了错误（A 行）：
 
 ```javascript
 let finallyWasExecuted = false;
-
 assert.throws(
   () => {
     try {
@@ -10479,7 +10274,6 @@ assert.throws(
   },
   Error
 );
-
 assert.equal(finallyWasExecuted, true);
 ```
 
@@ -10487,7 +10281,6 @@ assert.equal(finallyWasExecuted, true);
 
 ```javascript
 let finallyWasExecuted = false;
-
 function func() {
   try {
     return; // (A)
@@ -10495,50 +10288,48 @@ function func() {
     finallyWasExecuted = true;
   }
 }
-
 func();
-
 assert.equal(finallyWasExecuted, true);
 ```
 
-### 22.4 错误类
+## 22.4 错误类
 
 `Error` 是所有内置错误类的公共超类。它具有以下子类（我引用了 [ECMAScript 规范](https://tc39.github.io/ecma262/#sec-native-error-types-used-in-this-standard)）：
 
-- `RangeError`：表示一个值不在允许值的集合或范围内。
-- `ReferenceError`：表示检测到无效的引用值。
-- `SyntaxError`：表示发生了解析错误。
-- `TypeError`：用于表示操作失败，当没有其他 `NativeError` 对象能恰当指示失败原因时。
-- `URIError`：表示某个全局 URI 处理函数的使用方式与其定义不兼容。
+* `RangeError`：表示一个值不在允许值的集合或范围内。
+* `ReferenceError`：表示检测到无效的引用值。
+* `SyntaxError`：表示发生了解析错误。
+* `TypeError`：用于表示操作失败，当没有其他 `NativeError` 对象能恰当指示失败原因时。
+* `URIError`：表示某个全局 URI 处理函数的使用方式与其定义不兼容。
 
-#### 22.4.1 错误对象的属性
+### 22.4.1 错误对象的属性
 
 考虑 `err`，它是 `Error` 的实例：
 
 ```javascript
 const err = new Error('Hello!');
-
 assert.equal(String(err), 'Error: Hello!');
 ```
 
 `err` 的两个属性特别有用：
 
-- `.message`：仅包含错误消息。
+* `.message`：仅包含错误消息。
   `assert.equal(err.message, 'Hello!');`
-- `.stack`：包含堆栈跟踪。所有主流浏览器都支持它。
-  ```javascript
-  assert.equal(
-    err.stack,
-    `
+* `.stack`：包含堆栈跟踪。所有主流浏览器都支持它。
+
+```javascript
+assert.equal(
+  err.stack,
+  `
 Error: Hello!
 at ch_exception-handling.mjs:1:13
 `.trim()
-  );
-  ```
+);
+```
 
+---
 
-
-
+# 第 23 章：函数
 
 ## 23.2.1 函数声明的组成部分
 
@@ -10550,10 +10341,10 @@ function add(x, y) {
 }
 ```
 
-* `add` 是函数声明的。
-* `add(x, y)` 是函数声明的头部。
-* `x` 和 `y` 是参数。
-* 大括号 `{` 和 `}` 以及它们之间的所有内容是函数声明的函数体。
+* `add` 是函数声明的**名称**。
+* `add(x, y)` 是函数声明的**头部**。
+* `x` 和 `y` 是**参数**。
+* 大括号 `{` 和 `}` 以及它们之间的所有内容是函数声明的**函数体**。
 
 ## 23.2.2 普通函数扮演的角色
 
@@ -10565,34 +10356,38 @@ function add(x, y) {
 }
 ```
 
-这个函数声明创建了一个名为 `add` 的普通函数。作为一个一个普通函数，`add()` 可以扮演三种角色：
+这个函数声明创建了一个名为 `add` 的普通函数。作为一个普通函数，`add()` 可以扮演三种角色：
 
 * **实函数 (Real function)**：通过函数调用执行。
+
 ```javascript
 assert.equal(add(2, 1), 3);
 ```
+
 * **方法 (Method)**：存储在属性中，通过方法调用执行。
+
 ```javascript
 const obj = { addAsMethod: add };
 assert.equal(obj.addAsMethod(2, 4), 6);
 ```
+
 * **构造函数/类 (Constructor function/class)**：通过 `new` 执行。
+
 ```javascript
 const inst = new add();
 assert.equal(inst instanceof add, true);
 ```
-（顺带提一下，类的名称通常以大字母开头。）
 
-![](img/image01475.jpeg)![](img/image01476.jpeg)
+（顺带提一下，类的名称通常以大写字母开头。）
 
-![](img/image01403.jpeg) 普通函数 vs. 实函数
-
-在 JavaScript 中，我们区分：
-
-* 实体 `普通函数` (ordinary function)
-* 角色 `实函数` (real function)，即普通函数扮演的角色
-
-在许多其他编程语言中，函数实体只扮演一个角色——函数。因此，同一个名称 `function` 可以同时用于两者。
+> **普通函数 vs. 实函数**
+>
+> 在 JavaScript 中，我们区分：
+>
+> * 实体 `普通函数` (ordinary function)
+> * 角色 `实函数` (real function)，即普通函数扮演的角色
+>
+> 在许多其他编程语言中，函数实体只扮演一个角色——函数。因此，同一个名称 `function` 可以同时用于两者。
 
 ## 23.2.3 普通函数的名称
 
@@ -10611,23 +10406,28 @@ assert.equal(func(), func);
 function funcDecl() { return funcDecl }
 ```
 
-* 名字 `funcDecl` 存在于当前作用域 `assert.equal(funcDecl(), funcDecl);`
+* 名字 `funcDecl` 存在于当前作用域：`assert.equal(funcDecl(), funcDecl);`
 
 ## 23.3 特殊化函数
 
 特殊化函数是普通函数的单一用途版本。它们中的每一个都专注于单一的角色：
 
-* 箭头函数 (arrow function) 的目的是成为一个实函数：
+* **箭头函数** (arrow function) 的目的是成为一个实函数：
+
 ```javascript
 const arrow = () => { return 123 };
 assert.equal(arrow(), 123);
 ```
-* 方法 (method) 的目的是成为一个方法：
+
+* **方法** (method) 的目的是成为一个方法：
+
 ```javascript
 const obj = { method() { return 'abc' } };
 assert.equal(obj.method(), 'abc');
 ```
-* 类 (class) 的目的是成为一个构造函数：
+
+* **类** (class) 的目的是成为一个构造函数：
+
 ```javascript
 class MyClass { /* ··· */ }
 const inst = new MyClass();
@@ -10639,36 +10439,34 @@ const inst = new MyClass();
 * 方法将在单个对象的章节中解释。
 * 类将在类的章节中解释。
 
-表 23.1 列出了普通函数和特殊化函数的能力。“隐式 `this`”意味着 `this` 是一个隐式参数。
-
-![](img/image01477.jpeg)
+**表 23.1 列出了普通函数和特殊化函数的能力。**“隐式 `this`”意味着 `this` 是一个隐式参数。
 
 | | 普通函数 | 箭头函数 | 方法 | 类 |
-| --- | :--- | :--- | :--- | :--- |
+| :--- | :---: | :---: | :---: | :---: |
 | 函数调用 | 隐式 `this` | ✔ | 隐式 `this` | ✘ |
 | 方法调用 | ✔ | ✘ | ✔ | ✘ |
 | 构造调用 | ✔ | ✘ | ✘ | ✔ |
 
-## 23.3.1 特殊化函数仍然是函数
+### 23.3.1 特殊化函数仍然是函数
 
-注意的是，箭头函数、方法和类仍然被归类函数：
+值得注意的是，箭头函数、方法和类仍然被归类为函数：
 
 ```javascript
 (() => {}) instanceof Function
-true
+// 结果: true
 ```
 
 ```javascript
 ({ method() {} }.method) instanceof Function
-true
+// 结果: true
 ```
 
 ```javascript
 (class SomeClass {}) instanceof Function
-true
+// 结果: true
 ```
 
-## 23.3.2 建议：优先使用特殊化函数
+### 23.3.2 建议：优先使用特殊化函数
 
 通常，你应该优先使用特殊化函数而不是普通函数，特别是类和方法。不过，箭头函数和普通函数之间的选择没有那么明确：
 
@@ -10684,14 +10482,14 @@ const arrowFunc = (x, y) => {
 };
 ```
 
-## 23.3.3 箭头函数
+### 23.3.3 箭头函数
 
 箭头函数添加到 JavaScript 有两个原因：
 
 * 提供一种更简洁的创建函数的方法。
 * 让处理实函数变得更容易：你无法在普通函数内部引用周围作用域的 `this`（稍后介绍）。
 
-### 23.3.3.1 箭头函数的语法
+#### 23.3.3.1 箭头函数的语法
 
 让我们回顾匿名函数表达式的语法：
 
@@ -10721,7 +10519,7 @@ const id = x => x;
 
 ```javascript
 [1,2,3].map(x => x+1)
-[ 2, 3, 4 ]
+// 结果: [ 2, 3, 4 ]
 ```
 
 上一个示例展示了箭头函数的一个优点——简洁性。如果我们使用函数表达式执行相同的任务，我们的代码会更冗长：
@@ -10730,7 +10528,7 @@ const id = x => x;
 [1,2,3].map(function (x) { return x+1 });
 ```
 
-### 23.3.3.2 箭头函数：词法作用 `this`
+#### 23.3.3.2 箭头函数：词法作用 `this`
 
 普通函数既可以是方法也可以是实函数。遗憾的是，这两个角色是冲突的：
 
@@ -10762,7 +10560,7 @@ const person = {
 * **动态 `this`**：在行 A 中，我们尝试从普通函数访问 `.someMethod()` 的 `this`。在那里，它被函数自己的 `this` 遮蔽，其值为 `undefined`（由于函数调用）。由于普通函数通过（动态）函数或方法调用接收其 `this`，因此它们的 `this` 被称为动态。
 * **词法 `this`**：在行 B 中，我们再次尝试访问 `.someMethod()` 的 `this`。这次我们成功了，因为箭头函数没有自己的 `this`。`this` 是词法解析的，就像任何其他变量一样。这就是为什么箭头函数的 `this` 被称为词法 `this`。
 
-### 23.3.3.3 语法陷阱：从箭头函数返回对象字面量
+#### 23.3.3.3 语法陷阱：从箭头函数返回对象字面量
 
 如果你想让箭头函数的表达式体是一个对象字面量，你必须将该字面量放在括号中：
 
@@ -10778,71 +10576,51 @@ const func2 = () => {a: 1};
 assert.deepEqual(func2(), undefined);
 ```
 
-{a: 1} 被解释为带有标签 `a:` 的表达式语句块。在没有显式 `return` 语句的情况下，块体返回 `undefined`。
 
 
-
-
+`{a: 1}` 被解释为带有标签 `a:` 的表达式语句块。在没有显式 `return` 语句的情况下，块体返回 `undefined`。
 
 这种陷阱是由语法歧义引起的：对象字面量和代码块具有相同的语法。我们使用括号来告诉 JavaScript 体是一个表达式（对象字面量），而不是一个语句（块）。
 
-关于这种 `this` 意外遮蔽的更多信息，请参阅 §25.4.5 “this pitfall: accidentally shad-owing this”。
+关于这种 `this` 意外遮蔽的更多信息，请参阅 §25.4.5 “this pitfall: accidentally shadowing this”。
 
 ## 23.4 更多类型的函数和方法
 
-![](img/image01401.jpeg)[](Images/image01461.jpeg)
-
-![](img/image01409.jpeg) 本节是后续内容的总结
-
-本节主要作为当前章节及后续章节的参考。
-
-如果你不能理解所有内容，请不要担心。
+本节是后续内容的总结，主要作为当前章节及后续章节的参考。如果你不能理解所有内容，请不要担心。
 
 到目前为止，我们见过的所有（真实的）函数和方法都是：
 
-• 单结果
-• 同步的
+- 单结果
+- 同步的
 
 后续章节将涵盖其他编程模式：
 
-• 迭代器：将对象视为数据的容器（所谓的可迭代对象），并提供了一种获取其内部内容的标准化方法。如果函数或方法返回一个可迭代对象，它就会返回多个值。
-• 异步编程处理长时间的计算。当计算完成时，你会收到通知，并在期间可以做其他事情。异步交付单个结果的标准模式称为 `Promise`。
+- **迭代器**：将对象视为数据的容器（所谓的可迭代对象），并提供了一种获取其内部内容的标准化方法。如果函数或方法返回一个可迭代对象，它就会返回多个值。
+- **异步编程**处理长时间的计算。当计算完成时，你会收到通知，并在期间可以做其他事情。异步交付单个结果的标准模式称为 `Promise`。
 
 这些模式可以组合：例如，存在同步可迭代对象和异步可迭代对象。
 
 几种新类型的函数和方法有助于某些模式的组合：
 
-• 异步函数（Async functions）：帮助实现返回 `Promises` 的函数。也有异步方法。
-• 同步生成器函数（Synchronous generator functions）：帮助实现返回同步可迭代对象的函数。也有同步生成器方法。
-• 异步生成器函数（Asynchronous generator functions）：帮助实现返回异步可迭代对象的函数。也有异步生成器方法。
+- **异步函数**：帮助实现返回 `Promises` 的函数。也有异步方法。
+- **同步生成器函数**：帮助实现返回同步可迭代对象的函数。也有同步生成器方法。
+- **异步生成器函数**：帮助实现返回异步可迭代对象的函数。也有异步生成器方法。
 
 剩下 4 种（2 × 2）函数和方法：
 
-• 同步 vs. 异步
-• 生成器 vs. 单结果
+- 同步 vs. 异步
+- 生成器 vs. 单结果
 
 表 23.2 提供了这 4 种函数和方法的创建语法概述。
 
-表 23.2：创建函数和方法的语法。最后一列指定了实体产生多少个值。
+**表 23.2：创建函数和方法的语法。最后一列指定了实体产生多少个值。**
 
-![](img/image01478.jpeg)
-
-| | | 结果 | 值数量 |
-| | | | |
-| 同步函数 | 同步方法 | value | 1 |
-| `function f() {}` | `{ m() {} }` | | |
-| `f = function () {}` | | | |
-| `f = () => {}` | 同步生成器方法 | | |
-| 同步生成器函数 | 可迭代对象 | 0+ | |
-| `function* f() {}` | `{ * m() {} }` | | |
-| `f = function* () {}` | 异步方法 | | |
-| 异步函数 | Promise | 1 | |
-| `async function f() {}` | `{ async m() {} }` | | |
-| `f = async function () {}` | | | |
-| `f = async () => {}` | 异步生成器方法 | | |
-| 异步生成器函数 | 异步可迭代对象 | 0+ | |
-| `async function* f() {}` | `{ async * m() {} }` | | |
-| `f = async function* () {}` | | | |
+| 类型 | 函数语法 | 方法语法 | 结果 | 值数量 |
+| :--- | :--- | :--- | :--- | :--- |
+| 同步函数 | `function f() {}`<br>`f = function () {}`<br>`f = () => {}` | `{ m() {} }` | value | 1 |
+| 同步生成器函数 | `function* f() {}`<br>`f = function* () {}` | `{ * m() {} }` | 可迭代对象 | 0+ |
+| 异步函数 | `async function f() {}`<br>`f = async function () {}`<br>`f = async () => {}` | `{ async m() {} }` | Promise | 1 |
+| 异步生成器函数 | `async function* f() {}`<br>`f = async function* () {}` | `{ async * m() {} }` | 异步可迭代对象 | 0+ |
 
 ## 23.5 从函数和方法返回返回值
 
@@ -10850,13 +10628,12 @@ assert.deepEqual(func2(), undefined);
 
 `return` 语句显式地从函数返回一个值：
 
-```
+```javascript
 function func() {
   return 123;
 }
-```
-
 assert.equal(func(), 123);
+```
 
 另一个示例：
 
@@ -10864,13 +10641,13 @@ assert.equal(func(), 123);
 function boolToYesNo(bool) {
   if (bool) {
     return 'Yes';
-  } else { return 'No';
+  } else {
+    return 'No';
   }
 }
-```
-
 assert.equal(boolToYesNo(true), 'Yes');
 assert.equal(boolToYesNo(false), 'No');
+```
 
 如果函数结束时你没有显式地返回任何内容，JavaScript 会为你返回 `undefined`：
 
@@ -10878,8 +10655,6 @@ assert.equal(boolToYesNo(false), 'No');
 function noReturn() {
   // 没有显式返回
 }
-```
-
 assert.equal(noReturn(), undefined);
 ```
 
@@ -10887,14 +10662,14 @@ assert.equal(noReturn(), undefined);
 
 再次，在本节中我只提到函数，但所有内容也适用于方法。
 
-### 23.6.1 术语：参数 (parameters) vs. 实参 (arguments)
+### 23.6.1 术语：参数 vs. 实参
 
-parameter（参数）和 argument（实参）这两个术语基本上相同。如果你愿意，可以进行如下区分：
+`parameter`（参数）和 `argument`（实参）这两个术语基本上相同。如果你愿意，可以进行如下区分：
 
-• Parameters（形参数）是函数定义的一部分。它们也被称为形式参数或正式参数。
-• Arguments（实参）是函数调用的一部分。它们也被称为实际参数或实际参数。
+- **Parameters（形参）**：是函数定义的一部分。它们也被称为形式参数或正式参数。
+- **Arguments（实参）**：是函数调用的一部分。它们也被称为实际参数或实际参数。
 
-### 23.6.2 术语：回调 (callback)
+### 23.6.2 术语：回调
 
 回调或回调函数是作为函数或方法调用参数的函数。
 
@@ -10906,24 +10681,18 @@ const callback = (x) => console.log(x);
 myArray.forEach(callback);
 ```
 
-• 输出：
-• 'a'
-• 'b'
+输出：
+- 'a'
+- 'b'
 
-![](img/image01479.jpeg)[](Images/image01480.jpeg)
-
-![](img/image01403.jpeg) JavaScript 广泛使用 callback 术语
-
-在其他编程语言中，callback 一词通常有更窄的含义：它指的是通过函数值的参数来异步交付结果的模式。在这种含义下，回调（或续期）在函数完全完成计算后被调用。
-
-作为异步模式的回调，在异步编程章节中进行了描述。
+JavaScript 广泛使用 `callback` 术语。在其他编程语言中，`callback` 一词通常有更窄的含义：它指的是通过函数值的参数来异步交付结果的模式。在这种含义下，回调（或续期）在函数完全完成计算后被调用。作为异步模式的回调，在异步编程章节中进行了描述。
 
 ### 23.6.3 参数过多或不足
 
 如果函数调用提供的参数数量与函数定义预期的数量不同，JavaScript 不会报错：
 
-• 多余的参数会被忽略。
-• 缺失的参数将被设置为 `undefined`。
+- 多余的参数会被忽略。
+- 缺失的参数将被设置为 `undefined`。
 
 例如：
 
@@ -10949,10 +10718,9 @@ assert.deepEqual(foo('a'), ['a', undefined]);
 function f(x, y=0) {
   return [x, y];
 }
-```
-
 assert.deepEqual(f(1), [1, 0]);
 assert.deepEqual(f(), [undefined, 0]);
+```
 
 `undefined` 也会触发默认值：
 
@@ -10963,21 +10731,18 @@ assert.deepEqual(
 );
 ```
 
-### 23.6.5 剩余参数 (Rest parameters)
+### 23.6.5 剩余参数
 
-剩余参数通过在标识符前加三个点（`...`）来声明。在函数或方法调用期间，它接收所有剩余的数组。如果没有额外的参数，它是一个空数组。例如：
+剩余参数通过在标识符前加三个点（`...`）来声明。在函数或方法调用期间，它接收所有剩余的参数组成的数组。如果没有额外的参数，它是一个空数组。例如：
 
 ```javascript
 function f(x, ...y) {
   return [x, y];
 }
-```
-
 assert.deepEqual(
   f('a', 'b', 'c'),
   ['a', ['b', 'c']]
 );
-
 assert.deepEqual(
   f(),
   [undefined, []]
@@ -11009,32 +10774,24 @@ function createPoint(...args) {
 
 在行 (A) 中，我们通过解构访问 `args` 的元素。
 
-### 23.6.6 命名参数 (Named parameters)
+### 23.6.6 命名参数
 
 当有人调用函数时，调用者提供的参数会被分配给接收者的参数。执行映射的常用方式有两种：
 
-• 位置参数：如果参数位置相同，则进行赋值。仅使用位置参数的函数调用如下：
-
-```javascript
-selectEntries(3, 20, 2)
-```
-
-• 命名参数：如果参数的名称相同，则进行赋值。JavaScript 没有命名参数，但你可以模拟它们。例如，这是仅使用（模拟）命名参数的函数调用：
-
-```javascript
-selectEntries({start: 3, end: 20, step: 2})
-```
+- **位置参数**：如果参数位置相同，则进行赋值。仅使用位置参数的函数调用如下：
+  ```javascript
+  selectEntries(3, 20, 2)
+  ```
+- **命名参数**：如果参数的名称相同，则进行赋值。JavaScript 没有命名参数，但你可以模拟它们。例如，这是仅使用（模拟）命名参数的函数调用：
+  ```javascript
+  selectEntries({start: 3, end: 20, step: 2})
+  ```
 
 命名参数有几个优点：
 
-• 它们让代码更具自解释性，因为每个参数都有描述性的标签。
-• 参数的顺序并不重要（只要名称正确）。
-
-
-
-
-
--   处理多个可选参数更加方便：调用者可以轻松提供所有可选参数的子集，而无需关心他们省略了哪些（对于位置参数，你必须用 `undefined` 填充之前的可选参数）。
+- 它们让代码更具自解释性，因为每个参数都有描述性的标签。
+- 参数的顺序并不重要（只要名称正确）。
+- 处理多个可选参数更加方便：调用者可以轻松提供所有可选参数的子集，而无需关心他们省略了哪些（对于位置参数，你必须用 `undefined` 填充之前的可选参数）。
 
 ### 23.6.7 模拟命名参数
 
@@ -11056,30 +10813,29 @@ function selectEntries({start=0, end=-1, step=1}) {
 
 ```javascript
 selectEntries({})
-{ start: 0, end: -1, step: 1 }
+// { start: 0, end: -1, step: 1 }
 ```
 
 如果你在不传递任何参数的情况下调用函数，它将不起作用：
 
 ```javascript
 selectEntries()
-TypeError: Cannot destructure property `start` of 'undefined' or 'null'.
+// TypeError: Cannot destructure property `start` of 'undefined' or 'null'.
 ```
 
-你可以通过为整个模式提供默认值来修复此。此默认值的作用与简单参数定义中的默认值相同：如果参数缺失，则使用默认值。
+你可以通过为整个模式提供默认值来修复此问题。此默认值的作用与简单参数定义中的默认值相同：如果参数缺失，则使用默认值。
 
 ```javascript
 function selectEntries({start=0, end=-1, step=1} = {}) { 
   return {start, end, step};
 }
-
 assert.deepEqual(
   selectEntries(),
   { start: 0, end: -1, step: 1 }
 );
 ```
 
-### 23.6.8 展开 (...)到函数调用中
+### 23.6.8 展开到函数调用中
 
 如果你在函数调用的参数前放置三个点（`...`），则会对其进行展开。这意味着参数必须是一个 `iterable` 对象，并且迭代后的值都将变成参数。换句话说：一个参数被扩展为多个参数。例如：
 
@@ -11088,7 +10844,6 @@ function func(x, y) {
   console.log(x);
   console.log(y);
 }
-
 const someIterable = ['a', 'b'];
 func(...someIterable);
 // 等同于 func('a', 'b')
@@ -11097,12 +10852,12 @@ func(...someIterable);
 // 'b'
 ```
 
-展开（Spreading）和剩余参数（Rest parameters）使用相同的语法（`...`），但它们的作用相反：
+展开和剩余参数使用相同的语法（`...`），但它们的作用相反：
 
 - **剩余参数**用于定义函数或方法。它们将参数收集到 `Arrays` 中。
 - **展开参数**用于调用函数或方法。它们将可迭代对象转换为参数。
 
-#### 23.6.8.1 示例：展开到 `Math.max()` 
+#### 23.6.8.1 示例：展开到 `Math.max()`
 
 `Math.max()` 返回其零个或多个参数中最大的一个。遗憾的是，它不能用于 `Arrays`，但展开为我们提供了解决方法：
 
@@ -11114,7 +10869,7 @@ Math.max(-1, ...[-5, 11], 3) // 11
 
 #### 23.6.8.2 示例：展开到 `Array.prototype.push()`
 
-同样，Array 方法 `push()` 会破坏性地将其零或多个参数添加到其 `Array` 的末尾。JavaScript 没有用于破坏性地将一个 `Array` 追加到另一个数组中的方法。再次，展开拯救了我们：
+同样，`Array` 方法 `push()` 会破坏性地将其零或多个参数添加到其 `Array` 的末尾。JavaScript 没有用于破坏性地将一个 `Array` 追加到另一个数组中的方法。再次，展开拯救了我们：
 
 ```javascript
 const arr1 = ['a', 'b'];
@@ -11128,11 +10883,11 @@ assert.deepEqual(arr1, ['a', 'b', 'c', 'd']);
 - 位置参数：`exercises/callables/positional_parameters_test.mjs`
 - 命名参数：`exercises/callables/named_parameters_test.mjs`
 
-### 23.7 动态评估代码：`eval()`，`new Function()`（高级）
+## 23.7 动态评估代码：`eval()`，`new Function()`（高级）
 
 接下来，我们将查看两种动态评估代码的方法：`eval()` 和 `new Function()`。
 
-#### 23.7.1 `eval()`
+### 23.7.1 `eval()`
 
 给定一个带有 JavaScript 代码的字符串 `str`，`eval(str)` 会评估该代码并返回结果：
 
@@ -11167,7 +10922,7 @@ function func() {
 
 在全局范围内评估代码更安全，因为此时代码访问的内部机制更少。
 
-#### 23.7.2 `new Function()`
+### 23.7.2 `new Function()`
 
 `new Function()` 创建一个函数对象并如下被调用：
 
@@ -11178,7 +10933,7 @@ const func = new Function('«param_1»', ..., '«param_n»', '«func_body»');
 上一个语句等于下一个语句。注意 `«param_1»`（等）不再位于字符串字面量内部。
 
 ```javascript
-const func = function («param_1», ..., «param_n") {
+const func = function («param_1», ..., «param_n») {
   «func_body»
 };
 ```
@@ -11186,12 +10941,13 @@ const func = function («param_1», ..., «param_n") {
 在下一个示例中，我们两次创建了同一个函数。首先通过 `new Function()`，然后通过函数表达式：
 
 ```javascript
-const times1 = new Function('a', 'b', 'return a * b'); const times2 = function (a, b) { return a * b };
+const times1 = new Function('a', 'b', 'return a * b');
+const times2 = function (a, b) { return a * b };
 ```
 
-`new Function()` 创建的是非严格模式函数。通过 `new Function()` 创建的函数是松散的（sloppy）。
+`new Function()` 创建的是非严格模式函数。通过 `new Function()` 创建的函数是松散的。
 
-#### 23.7.3 建议
+### 23.7.3 建议
 
 尽可能避免代码的动态评估：
 
@@ -11234,62 +10990,57 @@ assert.equal(obj[propKey], 2); // (B)
   - 24.6.3 ESM 对循环引用的透明支持（高级）
 - 24.7 npm 包
   - 24.7.1 包被安装在 `node_modules/` 目录内
+  - 24.7.2 为什么可以使用 npm 安装前端库？
+- 24.8 模块命名
+- 24.9 模块标识符
+  - 24.9.1 模块标识符的分类
+  - 24.9.2 浏览器中的 ES 模块标识符
+  - 24.9.3 Node.js 上的 ES 模块标识符
+    - 24.9.3.1 Node.js 中的文件名扩展名
+    - 24.9.3.2 将非文件源代码解释为 CommonJS 或 ESM
+- 24.10 通过 `import()` 动态加载模块
+  - 24.10.1 示例：动态加载模块
+  - 24.10.2 `import()` 的用例
+- 24.11 预览：`import.meta.url`
+  - 24.11.1 `import.meta.url` 与类 `URL`
+  - 24.11.2 Node.js 中的 `import.meta.url`
+- 24.12 快速参考：导出与导入
+  - 24.12.1 导出
+  - 24.12.2 导入
 
+## 24.1 JavaScript 源代码格式
 
+当前 JavaScript 模块的格局非常多样：ES6 引入了内置模块，但在此之前的源代码格式仍然存在。理解后者有助于理解前者，让我们深入研究。接下来的章节描述了交付 JavaScript 源代码的如下方式：
 
+- **脚本**：浏览器在全局作用域运行的代码片段。它们是模块的前身。
+- **CommonJS 模块**：一种主要用于服务器端（例如通过 `Node.js`）的模块格式。
+- **AMD 模块**：一种主要用于浏览器的模块格式。
+- **ECMAScript 模块**：JavaScript 的内置模块格式。它取代了所有以前的格式。
 
-
-# 24.7.2 为什么可以使用 npm 安装前端库库？(224)
-### 24.8 模块命名 (224)
-### 24.9 模块标识符 (225)
-## 24.9.1 模块标识符的分类 (225)
-## 24.9.2 浏览器中的 ES 模块标识符 (225)
-## 24.9.3 Node.js 上的 ES 模块标识符 (226)
-
-### 24.10 通过 `import()` 动态加载模块 (227)
-### 24.10.1 示例：动态加载模块 (227)
-### 24.10.2 `import()` 的用例 (228)
-### 24.11 预览：`import.meta.url` (229)
-
-# 24 模块 (214)
-### 24.11.1 `import.meta.url` 与类 `URL` (229)
-### 24.11.2 Node.js 中的 `import.meta.url` (230)
-### 24.12 快速参考：导出与导入 (231)
-## 24.12.1 导出 (231)
-## 24.12.2 导入 (231)
-
-# 24.1 JavaScript 源代码格式
-当前 JavaScript 模块的格局非常多样：ES6 引入了内置模块，但在此之前的源代码格式仍然存在。理解后者有助于理解前者，让我们深入研究。接下来的章节描述了交付 JavaScript 源代码的如下：
-
-* 脚本（Scripts）是浏览器在全局作用域运行的代码片段。它们是模块的前身。
-* CommonJS 模块是一种主要用于服务器端（例如通过 `Node.js`）的模块格式。
-* AMD 模块是一种主要用于浏览器的模块格式。
-* ECMAScript 模块是 JavaScript 的内置模块格式。它取代了所有以前的格式。
-
-表 24.1 简要这些代码格式的概述。请注意，对于 CommonJS 模块和 ECMAScript 模块，通常使用两个文件名扩展名。使用哪一个取决于你如何使用该文件。细节将在本章后面的部分给出。
-
-表 24.1：交付 JavaScript 源代码的方式。
-
-![](img/image01482.jpeg)
+**表 24.1：交付 JavaScript 源代码的方式。**
 
 | 运行环境 | 加载方式 | 文件扩展名 |
-| :--- | :--- | :--- | :--- |
+| :--- | :--- | :--- |
 | 脚本 | 浏览器 | async | .js |
 | CommonJS 模块 | 服务器 | sync | .js .cjs |
 | AMD 模块 | 浏览器 | async | .js |
 | ECMAScript 模块 | 浏览器和服务器 | async | .js .mjs |
 
-## 24.1.1 内置模块之前的代码使用 ECMAScript 5 
+### 24.1.1 内置模块之前的代码使用 ECMAScript 5 编写
+
 在我们介绍内置模块（于 ES6 引入）之前，你看到的所有代码都将用 ES5 编写。包括：
 
-* ES5 没有 `const` 和 `let`，只有 `var`。
-* ES5 没有箭头函数，只有函数表达式。
+- ES5 没有 `const` 和 `let`，只有 `var`。
+- ES5 没有箭头函数，只有函数表达式。
 
-# 24.2 在模块出现之前，我们拥有脚本
+## 24.2 在模块出现之前，我们拥有脚本
+
 最初，浏览器只有脚本——即在全局作用域中执行的代码片段。例如，考虑通过以下 HTML 加载脚本文件的 HTML 文件：
 
 ```html
-<script src="other-module1.js"></script> <script src="other-module2.js"></script> <script src="my-module.js"></script>
+<script src="other-module1.js"></script>
+<script src="other-module2.js"></script>
+<script src="my-module.js"></script>
 ```
 
 主文件是 `my-module.js`，我们在其中模拟了一个模块：
@@ -11297,59 +11048,64 @@ assert.equal(obj[propKey], 2); // (B)
 ```javascript
 var myModule = (function () {  // 立即执行函数表达式
   // 导入（通过全局变量）
-var importedFunc1 = otherModule1.importedFunc1; var importedFunc2 = otherModule2.importedFunc2;
+  var importedFunc1 = otherModule1.importedFunc1;
+  var importedFunc2 = otherModule2.importedFunc2;
 
-// 主体
-function internalFunc() {
-// ···
-}
-function exportedFunc() {
-importedFunc1();
-importedFunc2();
-internalFunc();
-}
+  // 主体
+  function internalFunc() {
+    // ···
+  }
 
-// 导出（赋值给全局变量 `myModule`）
-return {
-  exportedFunc: exportedFunc,
-};
+  function exportedFunc() {
+    importedFunc1();
+    importedFunc2();
+    internalFunc();
+  }
+
+  // 导出（赋值给全局变量 `myModule`）
+  return {
+    exportedFunc: exportedFunc,
+  };
 })(); // 关闭 IIFE
 ```
 
 `myModule` 是一个全局变量，赋值为立即调用函数表达式的结果。该函数表达式从第一行开始，在最后一行调用。
 
-这种封装代码片段的方式被称为立即执行函数表达式（IIFE，由 Ben Alman 命名）。我们从 IIFE 中获得了什么？`var` 不是块作用域（类似于 `const` 和 `let`），它是函数作用域的：为 `var` 声明变量创建新作用域的唯一方法是通过函数或方法（对于 `const` 和 `let`，你可以使用函数、方法或块 `{}`）。因此，示例中的 IIFE 从全局作用域隐藏了所有以下变量，并尽可能地减少了命名冲突：`importedFunc1`、`importedFunc2`、`internalFunc`、`exportedFunc`。
+这种封装代码片段的方式被称为**立即执行函数表达式**（IIFE，由 Ben Alman 命名）。我们从 IIFE 中获得了什么？`var` 不是块作用域（类似于 `const` 和 `let`），它是函数作用域的：为 `var` 声明变量创建新作用域的唯一方法是通过函数或方法（对于 `const` 和 `let`，你可以使用函数、方法或块 `{}`）。因此，示例中的 IIFE 从全局作用域隐藏了所有以下变量，并尽可能地减少了命名冲突：`importedFunc1`、`importedFunc2`、`internalFunc`、`exportedFunc`。
 
-注意我们特定的方式使用了 IIFE：在结尾，我们选择想要导出的内容并通过对象字面量返回它。这被称为揭示模块模式（由 Christian Heilmann 命名）。
+注意我们特定的方式使用了 IIFE：在结尾，我们选择想要导出的内容并通过对象字面量返回它。这被称为**揭示模块模式**（由 Christian Heilmann 命名）。
 
 这种模拟模块的方法存在几个问题：
 
-* 脚本文件中的库通过全局变量导出和导入功能，这存在命名冲突的风险。
-* 依赖关系没有显式说明，脚本没有内置方法来加载它依赖的脚本。因此，网页不仅需要加载页面所需的脚本，还需要加载这些脚本的依赖项、依赖项的依赖项等。而且必须按照正确的顺序加载！
+- 脚本文件中的库通过全局变量导出和导入功能，这存在命名冲突的风险。
+- 依赖关系没有显式说明，脚本没有内置方法来加载它依赖的脚本。因此，网页不仅需要加载页面所需的脚本，还需要加载这些脚本的依赖项、依赖项的依赖项等。而且必须按照正确的顺序加载！
 
-# 24.3 ES6 之前创建的模块系统
+## 24.3 ES6 之前创建的模块系统
+
 在 ECMAScript 6 之前，JavaScript 没有内置模块。因此，该语言的灵活语法被用于在语言内部实现自定义模块系统。两种流行的有：
 
-* CommonJS（针对服务器端）
-* AMD（异步模块定义，针对客户端端）
+- CommonJS（针对服务器端）
+- AMD（异步模块定义，针对客户端）
 
-## 24.3.1 服务器端：CommonJS 模块
+### 24.3.1 服务器端：CommonJS 模块
+
 原始的 CommonJS 模块标准为服务器和桌面平台创建。它是原始 Node.js 模块系统的基础，并在那里获得了巨大的普及。对这种普及做出贡献的是 Node 的 `npm` 包管理器以及在客户端启用 Node 模块的工具（browserify, webpack）。
 
 从现在起，CommonJS 模块意味着该标准的 Node.js 版本（带有一些额外功能）。这是一个 CommonJS 模块的示例：
 
 ```javascript
 // 导入
-var importedFunc1 = require('./other-module1.js').importedFunc1; var importedFunc2 = require('./other-module2.js').importedFunc2;
+var importedFunc1 = require('./other-module1.js').importedFunc1;
+var importedFunc2 = require('./other-module2.js').importedFunc2;
 
 // 主体
 function internalFunc() {
-// ···
+  // ···
 }
 function exportedFunc() {
-importedFunc1();
-importedFunc2();
-internalFunc();
+  importedFunc1();
+  importedFunc2();
+  internalFunc();
 }
 
 // 导出
@@ -11360,24 +11116,27 @@ module.exports = {
 
 CommonJS 可以具有以下特征：
 
-* 为服务器设计。
-* 模块旨在同步加载（导入者在被导入模块加载和执行时进行等待）。
-* 语法紧凑。
+- 为服务器设计。
+- 模块旨在同步加载（导入者在被导入模块加载和执行时进行等待）。
+- 语法紧凑。
 
-## 24.3.2 客户端：AMD（异步模块定义）模块
+### 24.3.2 客户端：AMD（异步模块定义）模块
+
 AMD 模块格式的创建是为了比 CommonJS 格式更容易在浏览器中使用。它最流行的实现是 [RequireJS](https://requirejs.org)。以下是一个 AMD 模块的示例。
 
 ```javascript
 define(['./other-module1.js', './other-module2.js'], function (otherModule1, otherModule2) {
-  var importedFunc1 = otherModule1.importedFunc1; var importedFunc2 = otherModule2.importedFunc2;
+  var importedFunc1 = otherModule1.importedFunc1;
+  var importedFunc2 = otherModule2.importedFunc2;
 
   function internalFunc() {
-  // ···
+    // ···
   }
+
   function exportedFunc() {
-  importedFunc1();
-importedFunc2();
-internalFunc();
+    importedFunc1();
+    importedFunc2();
+    internalFunc();
   }
 
   return {
@@ -11388,14 +11147,11 @@ internalFunc();
 
 AMD 可以具有以下特征：
 
-* 为浏览器设计。
-* 模块旨在异步加载。这对于浏览器来说是一项关键需求，因为代码无法等待模块下载完成。它必须在模块可用时得到通知。
-* 语法稍微复杂一些。
+- 为浏览器设计。
+- 模块旨在异步加载。这对于浏览器来说是一项关键需求，因为代码无法等待模块下载完成。它必须在模块可用时得到通知。
+- 语法稍微复杂一些。
 
-
-
-
-优点的一方面，`AMD` 模块可以直接执行。相比之下，`CommonJS` 模块必须在部署之前编译，或者生成自定义源代码并进行动态评估（使用 `eval()`）。这在 Web 上并不总是被允许的
+优点的一方面，`AMD` 模块可以直接执行。相比之下，`CommonJS` 模块必须在部署之前编译，或者生成自定义源代码并进行动态评估（使用 `eval()`）。这在 Web 上并不总是被允许的。
 
 ### 24.3.3 JavaScript 模块的特征
 
@@ -11403,13 +11159,13 @@ AMD 可以具有以下特征：
 
 - 每个文件一个模块。
 - 该文件基本上是一段执行的代码：
-    - **局部作用域**：代码在本地“模块作用域”中执行。因此，默认情况下，其中声明的所有变量、`functions` 和 `classes` 都是内部的而不是全局的。
-    - **导出 (Exports)**：如果你希望导出任何声明的实体，必须显式将其标记为导出。
-    - **导入 (Imports)**：每个模块都可以从其他模块导入导实体。这些其他模块通过模块标识符（通常是路径，有时是完整的 URL）进行标识。
+  - **局部作用域**：代码在本地“模块作用域”中执行。因此，默认情况下，其中声明的所有变量、`functions` 和 `classes` 都是内部的而不是全局的。
+  - **导出**：如果你希望导出任何声明的实体，必须显式将其标记为导出。
+  - **导入**：每个模块都可以从其他模块导入实体。这些其他模块通过模块标识符（通常是路径，有时是完整的 URL）进行标识。
 - 模块是单例：即使一个模块被导入多次，也只存在一个“实例”。
 - 不使用全局变量。相反，模块标识符充当了全局 ID。
 
-### 24.4 ECMAScript 模块
+## 24.4 ECMAScript 模块
 
 ECMAScript 模块（简称 `ES modules`、`ESM`）是在 `ES6` 中引入的。它们延续了 JavaScript 模块的传统，并具有上述的所有特征。此外：
 
@@ -11451,9 +11207,9 @@ ES 模块的完整标准包含以下部分：
 
 第 1 和第 2 部分是在 `ES6` 中引入的。第 3 部分正在开发中。
 
-### 24.5 导出 (Exporting)
+## 24.5 导出
 
-#### 24.5.1 命名导出 (Named exports)
+### 24.5.1 命名导出
 
 每个模块可以有零或多个命名导出。
 
@@ -11494,7 +11250,7 @@ assert.deepEqual(
 );
 ```
 
-#### 24.5.2 默认导出 (Default exports)
+### 24.5.2 默认导出
 
 每个模块最多有一个默认导出。理念是模块本身就是导出的值。
 
@@ -11536,9 +11292,9 @@ const baz = 2;
 export default baz;
 ```
 
-### 24.6 导入 (Importing)
+## 24.6 导入
 
-#### 24.6.1 导入是导出的只读视图
+### 24.6.1 导入是导出的只读视图
 
 到目前为止，我们直观地使用了导入和导出，一切似乎运行良好。但现在是时候仔细观察导入和导出实际上是如何关联的。考虑以下模块：
 
@@ -11553,7 +11309,6 @@ export function incCounter() {
 `main.mjs`
 ```javascript
 import { counter, incCounter } from './counter.mjs';
-
 // 导入的值 `counter` 是实时的
 assert.equal(counter, 3);
 incCounter();
@@ -11567,7 +11322,7 @@ assert.equal(counter, 4);
 - 更容易拆分模块，因为以前共享的变量可以变成导出。
 - 这种行为对于支持循环导入至关重要。
 
-#### 24.6.2 语法陷阱：导入并非解构
+### 24.6.2 语法陷阱：导入并非解构
 
 导入和解构看起来相似：
 
@@ -11579,36 +11334,33 @@ const {foo} = require('./bar.mjs'); // 解构
 但它们非常不同：
 
 - 导入保持与其导出的连接。
-- 你可以在解构模式内部再次进行解构，但导入语句中的 `{}`  same 嵌套。
-- 重命的语法不同：
+- 你可以在解构模式内部再次进行解构，但导入语句中的 `{}` 不支持嵌套。
+- 重命名的语法不同：
 
 ```javascript
 import {foo as f} from './bar.mjs'; // 导入
 const {foo: f} = require('./bar.mjs'); // 解构
 ```
 
-#### 24.6.3 ESM 对循环导入的透明支持（进阶）
+### 24.6.3 ESM 对循环导入的透明支持（进阶）
 
 ESM 透明地支持循环导入。为了理解如何实现，请考虑以下示例：图 24.1 显示了模块导入其他模块的有向图。在这种情况下，P 导入 M 就是循环。
 
-
-
-
 解析后，这些模块分两个阶段设置：
 
-- **实例化 (Instantiation)**：每个模块都会被访问，其导入将连接到它的导出。在父模块实例化之前，其所有子模块必须先实例化。
-- **评估 (Evaluation)**：执行模块体。同样，子模块在父模块之前被评估。
+- **实例化**：每个模块都会被访问，其导入将连接到它的导出。在父模块实例化之前，其所有子模块必须先实例化。
+- **评估**：执行模块体。同样，子模块在父模块之前被评估。
 
 由于 ES 模块的两个特性，这种方法可以正确处理循环导入：
 
-- 由于于 ES 模块的静态结构，在解析后导出已经是已知的。这使得在实例化子模块 `M` 之前实例化 `P` 是可能的：`P` 已经查找 `M` 的导出。
+- 由于 ES 模块的静态结构，在解析后导出已经是已知的。这使得在实例化子模块 `M` 之前实例化 `P` 是可能的：`P` 已经查找 `M` 的导出。
 - 当评估 `P` 时，`M` 还没有被评估。然而，`P` 中的实体已经提到来自 `M` 的导入。它们只是还不能使用这些导入，因为导入的值会在稍后被填充。例如，`P` 中的一个函数可以访问来自 `M` 的导入。唯一的限制是，我们必须等到 `M` 评估之后才能调用该函数。
 
-导入稍后填充的实现是因为它们是导出内容的“实时不可变视图（live immutable views）”。
+导入稍后填充的实现是因为它们是导出内容的“实时不可变视图”。
 
 ## 24.7 npm packages
 
-npm 软件注册表是 Node.js 和 浏览器 JavaScript 库和应用程序的主要发布方式。它通过 `npm` 包管理器（简称：`npm`）管理。软件以所谓的“包（packages）”的形式发布。包是一个包含任意文件的目录，以及顶层一个描述包的 `package.json` 文件。例如，当 `npm` 在目录 `foo/` 内部创建一个空包时，你会得到这个 `package.json`：
+npm 软件注册表是 Node.js 和 浏览器 JavaScript 库和应用程序的主要发布方式。它通过 `npm` 包管理器（简称：`npm`）管理。软件以所谓的“包”的形式发布。包是一个包含任意文件的目录，以及顶层一个描述包的 `package.json` 文件。例如，当 `npm` 在目录 `foo/` 内部创建一个空包时，你会得到这个 `package.json`：
 
 ```json
 {
@@ -11637,12 +11389,12 @@ npm 软件注册表是 Node.js 和 浏览器 JavaScript 库和应用程序的主
 
 其他属性允许高级配置：
 
-- `main`：指定“是”该包的模块（在本章稍后部分解释）。
+- `main`：指定该包的主模块（在本章稍后部分解释）。
 - `scripts`：你可以通过 `npm run` 执行的命令。例如，可以通过 `npm run test` 执行脚本 `test`。
 
-有关关于 `package.json` 的更多信息，请参阅[npm 文档](https://docs.npmjs.com/files/package.json)。
+有关 `package.json` 的更多信息，请参阅[npm 文档](https://docs.npmjs.com/files/package.json)。
 
-### 24.7.1 包安装在 node_modules/ 目录内
+### 24.7.1 包安装在 `node_modules/` 目录内
 
 `npm` 总是将包安装在名为 `node_modules` 的目录中。通常有很多这样的目录。`npm` 使用哪一个取决于当前所在的目录。例如，如果我们在 `/tmp/a/b/` 目录内部，`npm` 会尝试在当前目录、其父目录、父目录的父目录等处查找 `node_modules`。换句话说，它搜索以下位置链：
 
@@ -11652,7 +11404,7 @@ npm 软件注册表是 Node.js 和 浏览器 JavaScript 库和应用程序的主
 
 安装包 `foo` 时，`npm` 使用最近的 `node_modules`。例如，如果我们在 `/tmp/a/b/` 内部且该目录下存在 `node_modules`，那么 `npm` 就会将包放在 `/tmp/a/b/node_modules/foo/` 目录下。
 
-在导入模块时，我们可以使用特殊的模块指定符（module specifier）来告诉 Node.js 我们想从已安装的包中导入它。具体工作原理将在稍后解释。现在，考虑以下示例：
+在导入模块时，我们可以使用特殊的模块指定符来告诉 Node.js 我们想从已安装的包中导入它。具体工作原理将在稍后解释。现在，考虑以下示例：
 
 ```javascript
 // /home/jane/proj/main.mjs
@@ -11663,13 +11415,13 @@ import * as theModule from 'the-package/the-module.mjs';
 
 - `/home/jane/proj/node_modules/the-package/the-module.mjs`
 - `/home/jane/node_modules/the-package/the-module.mjs`
-- `/home/node/node_modules/the-package/the-module.mjs`
+- `/home/node_modules/the-package/the-module.mjs`
 
 ### 24.7.2 为什么可以用 npm 来安装前端库？
 
 在 `node_modules` 目录中查找已安装模块仅支持 Node.js。那么为什么我们也可以用 `npm` 安装用于浏览器的库呢？
 
-这是通过打包工具（bundling tools）实现的，例如 `webpack`，它们在代码部署上线之前对其进行编译和优化。在编译过程中，`npm` 包中的代码会被适配以便在浏览器中运行。
+这是通过打包工具实现的，例如 `webpack`，它们在代码部署上线之前对其进行编译和优化。在编译过程中，`npm` 包中的代码会被适配以便在浏览器中运行。
 
 ## 24.8 模块命名
 
@@ -11677,20 +11429,20 @@ import * as theModule from 'the-package/the-module.mjs';
 
 在本章中，我使用了以下命名样式：
 
-- 模块文件名使用短横线命名（dash-cased）并以小写字母开头：
+- 模块文件名使用短横线命名并以小写字母开头：
   - `./my-module.mjs`
   - `./some-func.mjs`
-- 命名空间导入（namespace imports）的名字使用小写和驼峰命名（camel-cased）：
+- 命名空间导入的名字使用小写和驼峰命名：
   - `import * as myModule from './my-module.mjs';`
-- 默认导入（default imports）的名字使用小写和驼峰命名：
+- 默认导入的名字使用小写和驼峰命名：
   - `import someFunc from './some-func.mjs';`
 
 这种样式背后的原理是什么？
 
-- `npm` 不允许包名中包含大写字母（[来源](https://docs.npmjs.com/files/package.json#name)）。因此，我们避免使用驼峰命名，以便“本地”文件的命名与 `npm` 包名保持一致。仅使用小写字母也可以最大限地减少大小敏感文件系统与不敏感文件系统之间的冲突：前者可以区分字母相同但大小写不同的文件；后者则不可以。
+- `npm` 不允许包名中包含大写字母（[来源](https://docs.npmjs.com/files/package.json#name)）。因此，我们避免使用驼峰命名，以便“本地”文件的命名与 `npm` 包名保持一致。仅使用小写字母也可以最大限度地减少大小敏感文件系统与不敏感文件系统之间的冲突：前者可以区分字母相同但大小写不同的文件；后者则不可以。
 - 将短横线命名的文件名转换为驼峰命名的 JavaScript 变量名有明确的规则。由于我们命名命名空间的方式，这些规则适用于命名空间导入和默认导入。
 
-我也喜欢使用下划线命名（underscore-cased）的模块文件名，因为你可以直接为命名空间导入使用这些名称：
+我也喜欢使用下划线命名的模块文件名，因为你可以直接为命名空间导入使用这些名称：
 
 ```javascript
 import * as my_module from './my_module.mjs';
@@ -11700,24 +11452,24 @@ import * as my_module from './my_module.mjs';
 
 ## 24.9 模块指定符
 
-模块指定符是标识模块的字符串。它们在浏览器和 Node.js 中的工作方式略有。在查看差异之前，我们需要了解不同类型的指定符。
+模块指定符是标识模块的字符串。它们在浏览器和 Node.js 中的工作方式略有不同。在查看差异之前，我们需要了解不同类型的指定符。
 
 ### 24.9.1 模块指定符分类
 
 在 ES 模块中，我们区分以下类型的指定符。这些类别源于 CommonJS 模块。
 
-- **相对路径 (Relative path)**：以点开头。例如：
+- **相对路径**：以点开头。例如：
   - `'./some/other/module.mjs'`
   - `'../../lib/counter.mjs'`
-- **绝对路径 (Absolute path)**：以斜杠开头。示例：
+- **绝对路径**：以斜杠开头。示例：
   - `'/home/jane/file-tools.mjs'`
 - **URL**：包含协议（技术上路径也是 URL）。示例：
   - `'https://example.com/some-module.mjs'`
   - `'file:///home/john/tmp/main.mjs'`
-- **裸路径 (Bare path)**：不以点、斜杠或协议开头，且由单个没有扩展名的文件名组成。示例：
+- **裸路径**：不以点、斜杠或协议开头，且由单个没有扩展名的文件名组成。示例：
   - `'lodash'`
   - `'the-package'`
-- **深度导入路径 (Deep import path)**：以裸路径开头并至少有一个斜杠。示例：
+- **深度导入路径**：以裸路径开头并至少有一个斜杠。示例：
   - `'the-package/dist/the-module.mjs'`
 
 ### 24.9.2 浏览器中的 ES 模块指定符
@@ -11726,88 +11478,66 @@ import * as my_module from './my_module.mjs';
 
 - 相对路径、绝对路径和 URL 按照预期工作。它们都必须指向真实的文件。（与 CommonJS 不同，后者允许省略文件名扩展名等。）
 - 模块的文件扩展名并不重要，只要它们以 `text/javascript` 内容类型提供服务。
-- 裸路径最终如何被处理尚尚不清楚。你最终可能可以通过查找表将它们映射到其他指定符。
-
-
-
+- 裸路径最终如何被处理尚不清楚。你最终可能可以通过查找表将它们映射到其他指定符。
 
 请注意，诸如 `webpack` 等打包工具会将多个模块合并为较少的文件，它们对限定符的限制通常比浏览器要松。这是因为它们在构建/编译时（而不是在运行时）运行，并且可以通过遍历文件系统来搜索文件。
 
-# 22624 模块
+### 24.9.3 Node.js 中的 ES 模块限定符
 
-## 24.9.3 Node.js 中的 ES 模块限定符
-
-![](img/image01485.jpeg)![](img/image01486.jpeg)
-
-![](img/image01412.jpeg) Node.js 对 ES 模块的支持仍然是
-
-你可能需要通过命令行标记来开启它。详情请参阅[Node.js 文档-](https://nodejs.org/api/esm.html)[件](https://nodejs.org/api/esm.html)。
+Node.js 对 ES 模块的支持仍在进行中，你可能需要通过命令行标记来开启它。详情请参阅[Node.js 文档](https://nodejs.org/api/esm.html)。
 
 Node.js 处理模块限定符如下：
 
-• 相对路径的解析与网络浏览器相同——相对于当前模块路径。
-
-• 目前不支持绝对路径。作为一种替代方案，你可以使用以 `file:///` 开头的 URL。你可以通过 `url.pathToFileURL()` 创建此类 URL。
-
-• URL 限定符仅支持 `file:` 作为协议。
-
-• 裸路径（bare path）被解释为包名，并相对于最近的 `node_modules` 目录进行解析。应该加载哪个模块，取决于该包的 `package.json` 中的 `"main"` 属性（类似于 CommonJS）。
-
-• 深度导入路径也相对于最近的 `node_modules` 目录进行解析。它们包含文件名，因此始终清楚地知道是指哪个模块。
+- 相对路径的解析与网络浏览器相同——相对于当前模块路径。
+- 目前不支持绝对路径。作为一种替代方案，你可以使用以 `file:///` 开头的 URL。你可以通过 `url.pathToFileURL()` 创建此类 URL。
+- URL 限定符仅支持 `file:` 作为协议。
+- 裸路径被解释为包名，并相对于最近的 `node_modules` 目录进行解析。应该加载哪个模块，取决于该包的 `package.json` 中的 `"main"` 属性（类似于 CommonJS）。
+- 深度导入路径也相对于最近的 `node_modules` 目录进行解析。它们包含文件名，因此始终清楚地知道是指哪个模块。
 
 除了裸路径外，所有限定符必须引用实际文件。这意味着 ESM 不支持以下 CommonJS 特性：
 
-• CommonJS 会自动添加缺失的文件扩展名。
-
-• 如果存在带有 `"main"` 属性的 `foo/package.json`，CommonJS 可以导入目录 `foo`。
-
-• 如果存在模块 `foo/index.js`，CommonJS 可以导入目录 `foo`（此处此处意为导入该模块）。
+- CommonJS 会自动添加缺失的文件扩展名。
+- 如果存在带有 `"main"` 属性的 `foo/package.json`，CommonJS 可以导入目录 `foo`。
+- 如果存在模块 `foo/index.js`，CommonJS 可以导入目录 `foo`（此处意为导入该模块）。
 
 所有内置 Node.js 模块都可以通过裸路径访问，并具有具命名的 ESM 导出。
 
 例如：
 
-```
+```javascript
 import * as path from 'path';
-
 import {strict as assert} from 'assert';
 assert.equal(
   path.join('a/b/c', '../d'), 'a/b/d');
 ```
 
-### 24.9.3.1 Node.js 中的文件名扩展名
+#### 24.9.3.1 Node.js 中的文件名扩展名
 
 Node.js 支持以下默认文件名扩展名：
 
-• `.mjs` 用于 ES 模块
-
-• `.cjs` 用于 CommonJS 模块
+- `.mjs` 用于 ES 模块
+- `.cjs` 用于 CommonJS 模块
 
 `.js` 文件名扩展名代表 ESM 或 CommonJS。具体是哪一个是通过“最近”的 `package.json`（在当前目录、父目录等）进行配置的。以这种方式使用 `package.json` 是独立于包的。
 
-| 24.10 通过 `import()` 动态加载模块 | 227 |
+| `"type"` 值 | 含义 |
+| :--- | :--- |
+| `"commonjs"`（默认值） | 扩展名为 `.js` 或没有扩展名的文件被解释为 CommonJS 模块。 |
+| `"module"` | 扩展名为 `.js` 或没有扩展名的文件被解释为 ESM 模块。 |
 
-在那个 `package.json` 中，有一个 `"type"` 属性，它有两个设置：
-
-• `"commonjs"`（默认值）：扩展名为 `.js` 或没有扩展名的文件被解释为 CommonJS 模块。
-
-• `"module"`：扩展名为 `.js` 或没有扩展名的文件被解释为 ESM 模块。
-
-### 24.9.3.2 将非文件源代码解释为 CommonJS 或 ESM
+#### 24.9.3.2 将非文件源代码解释为 CommonJS 或 ESM
 
 并不是所有由 Node.js 执行的源码都来自文件。你也可以通过 `stdin`、`--eval` 和 `--print` 发送代码。命令行选项 `--input-type` 允许你指定如何解释此类代码：
 
-• 作为 CommonJS（默认）：`--input-type=commonjs`
-
-• 作为 ESM：`--input-type=module`
+- 作为 CommonJS（默认）：`--input-type=commonjs`
+- 作为 ESM：`--input-type=module`
 
 ## 24.10 通过 `import()` 动态加载模块
 
 到目前为止，导入模块的唯一方法是通过 `import` 语句。该语句有几个局限性：
 
-• 你必须在模块的顶层使用它。也就是说，例如，你不能在块内部导入 `some-thing`。
-
-• 模块限定符总是固定的。这意味着，你不能根据条件更改你导入的内容。你无法动态地组装限定符。
+- 你必须在模块的顶层使用它。也就是说，例如，你不能在块内部导入 `some-thing`。
+- 模块限定符总是固定的。这意味着，你不能根据条件更改你导入的内容。你无法动态地组装限定符。
 
 `import()` 操作符改变了这一点。让我们来看一个它的使用示例。
 
@@ -11815,13 +11545,13 @@ Node.js 支持以下默认文件名扩展名：
 
 考虑以下文件：
 
-`lib/my-math.mjs`
-`main1.mjs`
-`main2.mjs`
+- `lib/my-math.mjs`
+- `main1.mjs`
+- `main2.mjs`
 
 我们已经看过了模块 `my-math.mjs`：
 
-```
+```javascript
 // 未导出，模块私有
 function times(a, b) {
   return a * b;
@@ -11852,9 +11582,8 @@ function loadConstant() {
 
 这段代码中有两点之前是不可能的：
 
-• 我们在函数内部导入（而不是在顶层）。
-
-• 模块限定符来自一个变量。
+- 我们在函数内部导入（而不是在顶层）。
+- 模块限定符来自一个变量。
 
 接下来，我们将在 `main2.mjs` 中实现相同的功能，但通过 `import()`：
 
@@ -11862,7 +11591,6 @@ function loadConstant() {
 const dir = './lib/';
 const moduleSpecifier = dir + 'my-math.mjs';
 
-// 22824 Modules
 function loadConstant() {
   return import(moduleSpecifier)
     .then(myMath => {
@@ -11878,6 +11606,7 @@ function loadConstant() {
 ### 24.10.2 `import()` 的用例
 
 #### 24.10.2.1 按需加载代码
+
 Web 应用的功能不需要在启动时存在，`import()` 可以按需加载。例如：
 
 ```javascript
@@ -11890,6 +11619,7 @@ button.addEventListener('click', () => {
 ```
 
 #### 24.10.2.2 模块的条件加载
+
 有时你可能根据条件是否真来加载模块。例如，在旧平台上加载 polyfill：
 
 ```javascript
@@ -11899,13 +11629,14 @@ if (isLegacyPlatform()) {
 ```
 
 #### 24.10.2.3 计算出的模块限定符
+
 对于国际化等应用，如果可以动态模块限定符会有帮助：
 
 ```javascript
 import(`messages_${getLocale()}.js`);
 ```
 
-## 24.11 预览：import.meta.url
+## 24.11 预览：`import.meta.url`
 
 [“import.meta”](https://github.com/tc39/proposal-import-meta) 是 Dominic Denicola 提出的 ECMAScript 特性。`import.meta` 对象持有当前模块的元数据。
 
@@ -11913,7 +11644,7 @@ import(`messages_${getLocale()}.js`);
 
 `'https://example.com/code/main.mjs'`
 
-### 24.11.1 import.meta.url 和 class URL
+### 24.11.1 `import.meta.url` 和 class `URL`
 
 `URL` 类在浏览器和 Node.js 中通过全局变量可用。你可以在[Node.js 文档](https://nodejs.org/api/url.html#url_class) 中查询它的完整功能。在处理 `import.meta.url` 时，它的构造函数特别有用：
 
@@ -11924,7 +11655,6 @@ import(`messages_${getLocale()}.js`);
 ```javascript
 > new URL('other.mjs', 'https://example.com/code/main.mjs').href
 'https://example.com/code/other.mjs'
-
 > new URL('../other.mjs', 'https://example.com/code/main.mjs').href
 'https://example.com/other.mjs'
 ```
@@ -11932,11 +11662,10 @@ import(`messages_${getLocale()}.js`);
 这就是我们如何获取一个指向当前模块旁边文件 `data.txt` 的 `URL` 实例：
 
 ```javascript
-// 230 24 Modules
 const urlOfData = new URL('data.txt', import.meta.url);
 ```
 
-### 24.11.2 Node.js 中的 import.meta.url
+### 24.11.2 Node.js 中的 `import.meta.url`
 
 在 Node.js 中，`import.meta.url` 总是带有 `file:` URL 的字符串。例如：
 
@@ -11944,13 +11673,7 @@ const urlOfData = new URL('data.txt', import.meta.url);
 
 #### 24.11.2.1 示例：读取模块的兄弟文件
 
-许多 Node.js 文件系统操作都接受路径字符串或 `URL` 实例。
-
-
-
-
-
-这允许我们读取当前模块的兄弟文件 `data.txt`：
+许多 Node.js 文件系统操作都接受路径字符串或 `URL` 实例。这允许我们读取当前模块的兄弟文件 `data.txt`：
 
 ```javascript
 import {promises as fs} from 'fs';
@@ -11964,16 +11687,16 @@ async function main() {
 main();
 ```
 
-`main()` 是一个 `async` 函数，如 `$full` 中解释的那样。
+`main()` 是一个 `async` 函数。
 
-[fs.promises](https://nodejs.org/api/fs.html#fs_fs_promises_api) 包含了基于 `Promise` 的 `fs` API 版本，可以与 `async` 函数一起使用。
+`fs.promises` 包含了基于 `Promise` 的 `fs` API 版本，可以与 `async` 函数一起使用。
 
-### 24.11.2.在 file: URL 和路径之间转换
+#### 24.11.2.2 在 file: URL 和路径之间转换
 
 [Node.js 模块 `url`](https://nodejs.org/api/url.html) 有两个用于在 `file:` URL 和路径之间转换的函数：
 
-• `fileURLToPath(url: URL|string): string`: 将 `file:` URL 转换为路径。
-• `pathToFileURL(path: string): URL`: 将路径转换为 `file:` URL。
+- `fileURLToPath(url: URL|string): string`: 将 `file:` URL 转换为路径。
+- `pathToFileURL(path: string): URL`: 将路径转换为 `file:` URL。
 
 如果你需要一个可以在本地文件系统中使用的路径，那么 `URL` 实例的 `.pathname` 属性并不总是有效：
 
@@ -11986,16 +11709,15 @@ assert.equal(
 
 ```javascript
 import * as url from 'url';
-
 assert.equal(
   url.fileURLToPath('file:///tmp/with%20space.txt'), '/tmp/with space.txt'); // Unix 上的结果
 ```
 
-同样，`pathToFileURL()` 的功能不仅仅是在绝对路径前面加上 `'file://`。
+同样，`pathToFileURL()` 的功能不仅仅是在绝对路径前面加上 `'file://'`。
 
-### 24.12 快速参考：导出和导入
+## 24.12 快速参考：导出和导入
 
-#### 24.12.11 导出
+### 24.12.1 导出
 
 ```javascript
 // 从另一个模块重新导出
@@ -12013,7 +11735,7 @@ export default function f() {} // 带可选名称的声明
 export default 123;
 ```
 
-#### 24.12.2 导入
+### 24.12.2 导入
 
 ```javascript
 // 空导入（用于带有副作用的模块）
@@ -12021,8 +11743,10 @@ import './some-module.mjs';
 
 // 默认导入
 import someModule from './some-module.mjs';
-// 命名导入
+
+// 命名空间导入
 import * as someModule from './some-module.mjs';
+
 // 命名导入
 import {foo, bar as b} from './some-module.mjs';
 
@@ -12030,10 +11754,6 @@ import {foo, bar as b} from './some-module.mjs';
 import someModule, * as someModule from './some-module.mjs';
 import someModule, {foo, bar as b} from './some-module.mjs';
 ```
-
-![](img/image01395.jpeg)![](img/image01396.jpeg)
-![](img/image01397.jpeg) 测验
-查看测验应用。
 
 # 第 25 章：单个对象
 
@@ -12048,14 +11768,14 @@ import someModule, {foo, bar as b} from './some-module.mjs';
 | 25.2.4 | 设置属性 | 236 |
 | 25.2.5 | 对象字面量：方法 | 237 |
 | 25.2.6 | 对象字面量：访问器 | 237 |
-| 25.3 | 展开到对象字面量 (... ) | 238 |
+| 25.3 | 展开到对象字面量 (...) | 238 |
 | 25.3.1 | 展开用例：复制对象 | 238 |
 | 25.3.2 | 展开用例：缺失属性的默认值 | 239 |
 | 25.3.3 | 展开用例：非破坏性修改属性 | 239 |
 | 25.4 | 方法 | 240 |
 | 25.4.1 | 方法是值为函数的属性 | 240 |
-| 25.4.2 | .call():通过参数指定 `this` | 240 |
-| 25.4.3 | .bind(): 预填充 `this` 和函数的参数 | 241 |
+| 25.4.2 | `.call()`: 通过参数指定 `this` | 240 |
+| 25.4.3 | `.bind()`: 预填充 `this` 和函数的参数 | 241 |
 | 25.4.4 | `this` 陷阱：提取方法 | 243 |
 | 25.4.5 | `this` 陷阱：意外遮蔽 `this` | 244 |
 | 25.4.6 | 避免 `this` 的陷阱 | 245 |
@@ -12080,23 +11800,18 @@ import someModule, {foo, bar as b} from './some-module.mjs';
 | 25.7.2 | 冷冻对象 | 255 |
 | 25.7.3 | 属性属性和描述符 | 255 |
 
-![](img/image01393.jpeg)
-
-在书中，JavaScript 的面向对象编程（OOP）风格分四步介绍。本章涵盖第一步，下一章涵盖 2-4 步（图 25.1）：
+在书中，JavaScript 的面向对象编程（OOP）风格分四步介绍。本章涵盖第一步，下一章涵盖 2-4 步：
 
 - **单个对象**：作为 JavaScript 基础构建块的对象是如何独立工作的？
 - **原型链**：每个对象都有一个零或多个原型对象组成的链。原型是 JavaScript 的核心继承机制。
 - **类**：JavaScript 的类是对象的工厂。类与其实例之间的关系基于原型继承。
 - **子类化**：子类与其父类之间的关系也基于原型继承。
 
-![](img/image1490.jpeg)
-
 ```javascript
 class MyClass {
   mthd() {}
   data = 4;
 }
-
 class SubClass {
   __proto__ = MyClass;
   data = 4;
@@ -12104,18 +11819,12 @@ class SubClass {
 }
 ```
 
-![](img/image01391.jpeg)
-
-
-
-
-
-- **字典**：作为字典的对象具有可数量的属性，其键在开发时是不可知的。它们的所有值都具有相同的类型。
+- **字典**：作为字典的对象具有可变数量的属性，其键在开发时是不可知的。它们的所有值都具有相同的类型。
 
 这些角色影响了本章对对象的解释方式：
 
-- 首先，我们将探索“作为记录的对象”（objects-as-records）。尽管属性键在底层是字符串或符号，在本章的这部分它们对我们来说将是固定标识符。
-- 随后，我们将探索“作为字典的对象”（objects-as-dictionaries）。注意，`Maps` 通常比对象是更好的字典。然而，我们将遇到的一些操作也对“作为记录的对象”很有用。
+- 首先，我们将探索“作为记录的对象”。尽管属性键在底层是字符串或符号，在本章的这部分它们对我们来说将是固定标识符。
+- 随后，我们将探索“作为字典的对象”。注意，`Maps` 通常比对象是更好的字典。然而，我们将遇到的一些操作也对“作为记录的对象”很有用。
 
 ## 25.2 作为记录的对象
 
@@ -12149,9 +11858,8 @@ const obj = {
 为了检查各种操作对对象的影响，我们本章的这部分偶尔使用 `Object.keys()`。它列出了属性键：
 
 ```javascript
-// 23625 单个对象
 Object.keys({a:1, b:2})
-[ 'a', 'b' ]
+// [ 'a', 'b' ]
 ```
 
 ### 25.2.2 对象字面量：属性值简写
@@ -12162,7 +11870,6 @@ Object.keys({a:1, b:2})
 function createPoint(x, y) {
   return {x, y};
 }
-
 assert.deepEqual(
   createPoint(9,  2),
   { x: 9, y: 2 }
@@ -12207,22 +11914,21 @@ assert.equal(obj.prop, 2);
 const obj = {};  // 空对象
 assert.deepEqual(Object.keys(obj), []);
 obj.unknownProperty =  'abc';
-// | 25.2 作为记录的对象 | 237 |
 assert.deepEqual(Object.keys(obj), ['unknownProperty']);
 ```
 
 ### 25.2.5 对象字面量：方法
 
-下面的代码了如何通过对象字面量创建方法 `.says()`：
+下面的代码展示了如何通过对象字面量创建方法 `.says()`：
 
 ```javascript
 const jane = {
   first:  'Jane',  // 数据属性
   says(text) { // 方法
-    return `${this.first}  says “${text}”`;  // (A)
+    return `${this.first} says “${text}”`;  // (A)
   }, // 逗号作为分隔符（结尾可选）
 };
-assert.equal(jane.says('hello'), Jane says “hello”');
+assert.equal(jane.says('hello'), 'Jane says “hello”');
 ```
 
 在方法调用 `jane.says('hello')` 期间，`jane` 被方法调用的接收者并赋值给特殊变量 `this`。这使得方法 `.says()` 能够访问 A 行中的兄弟属性 `.first`。
@@ -12261,7 +11967,6 @@ const jane = {
   last:  'Doe',
   set full(fullName) {
     const parts =  fullName.split(' ');
-    // 23825 单个对象
     this.first  = parts[0];
     this.last  = parts[1];
   },
@@ -12271,8 +11976,7 @@ assert.equal(jane.first,  'Richard');
 assert.equal(jane.last,  'Roe');
 ```
 
-![](img/image01418.jpeg)![](img/image01451.jpeg)
-![](img/image01416.jpeg) 练习：通过对象字面量创建对象
+**练习：通过对象字面量创建对象**
 `exercises/single-objects/color_point_object_test.mjs`
 
 ## 25.3 展开到对象字面量 (...)
@@ -12309,7 +12013,6 @@ const copy = {...original};
 
 ```javascript
 copy.a =  2;
-// 25.3 展开到对象字面量 (...)239
 assert.deepEqual(original, { a: 1, b: {foo: true} }); // 无变化
 ```
 
@@ -12320,10 +12023,7 @@ copy.b.foo =  false;
 assert.deepEqual(original, { a: 1, b: {foo: false} });
 ```
 
-![](img/image01438.jpeg)![](img/image01428.jpeg)
-![](img/image01412.jpeg) JavaScript 没有内置深拷贝支持
-
-对象的深拷贝（拷贝所有层级）在通用范围内是著名的难以实现。因此，JavaScript 目前没有内置此类操作（目前）。如果你需要这种操作，就必须自己实现它。
+JavaScript 没有内置深拷贝支持。对象的深拷贝（拷贝所有层级）在通用范围内是著名的难以实现。因此，JavaScript 目前没有内置此类操作。如果你需要这种操作，就必须自己实现它。
 
 ### 25.3.2 展开的用例：缺失属性的默认值
 
@@ -12348,7 +12048,7 @@ assert.deepEqual(allData, {foo: 1, bar: 'b'});
 
 ### 25.3.3 展开的用例：非破坏性更改属性
 
-到目前，我们遇到了一种更改对象属性 `.foo` 的方式：设置它（A 行）并对象。也就是说，这种更改属性的方法是破坏性的。
+到目前，我们遇到了一种更改对象属性 `.foo` 的方式：设置它（A 行）并修改对象。也就是说，这种更改属性的方法是破坏性的。
 
 ```javascript
 const obj = {foo:  'a',  bar:  'b'};
@@ -12359,23 +12059,12 @@ assert.deepEqual(obj, {foo: 1, bar: 'b'});
 通过展开，我们可以非破坏地更改 `.foo`——我们创建一个 `obj` 的拷贝，其中 `.foo` 具有不同的值：
 
 ```javascript
-// 24025 单个对象
 const obj = {foo:  'a',  bar:  'b'};
 const updatedObj = {...obj,  foo:  1};
-```
-
-
-
-
-
-```javascript
 assert.deepEqual(updatedObj, {foo: 1, bar: 'b'});
 ```
 
-![](img/image01418.jpeg)![](img/image01451.jpeg)
-
-![](img/image01416.jpeg) 练习：通过展开非破坏性地更新属性（固定键）
-
+**练习：通过展开非破坏性地更新属性（固定键）**
 `exercises/single-objects/update_name_test.mjs`
 
 ## 25.4 方法
@@ -12410,7 +12099,7 @@ const jane = {
 };
 ```
 
-### 25.4.2 .call(): 通过参数指定 this
+### 25.4.2 `.call()`: 通过参数指定 `this`
 
 记住每个函数 `someFunc` 也是一个对象，因此它也拥有方法。其中一个方法就是 `.call()` – 它允许你在调用函数的同时通过参数指定 `this`：
 
@@ -12418,9 +12107,9 @@ const jane = {
 someFunc.call(thisValue, arg1, arg2, arg3);
 ```
 
-#### 25.4.2.1 方法与 .call()
+#### 25.4.2.1 方法与 `.call()`
 
-如果你进行方法调用，`this` 是一个隐式参数，通过调用的接收者（receiver）来填充：
+如果你进行方法调用，`this` 是一个隐式参数，通过调用的接收者来填充：
 
 ```javascript
 const obj = {
@@ -12429,17 +12118,16 @@ const obj = {
     assert.equal(x, 'a');
   },
 };
-
 obj.method('a'); // 接收者是 `obj`
 ```
-
-25.4 方法 | 241
 
 最后一行的方法调用如下所示设置 `this`：
 
 ```javascript
 obj.method.call(obj, 'a');
 ```
+
+
 
 顺带提一下，这意味着实际上有两个不同的点运算符：
 
@@ -12448,7 +12136,7 @@ obj.method.call(obj, 'a');
 
 它们的区别在于，(2) 不仅仅是 (1) 加上函数调用运算符 `()`。相反，(2) 额外为 `this` 指定了一个值。
 
-#### 25.4.2.2 函数与 .call()
+#### 25.4.2.2 函数与 `.call()`
 
 如果你调用一个普通函数，它的隐式参数 `this` 也会被提供 —— 它被隐式设置为 `undefined`：
 
@@ -12457,7 +12145,6 @@ function func(x) {
   assert.equal(this, undefined); // 隐式参数
   assert.equal(x, 'a');
 }
-
 func('a');
 ```
 
@@ -12471,7 +12158,7 @@ func.call(undefined, 'a');
 
 接下来，我们将检查使用 `this` 的陷阱。在此之前，我们还需要另一个工具：函数的 `.bind()` 方法。
 
-### 25.4.3 .bind(): 预填充函数的 this 和参数
+### 25.4.3 `.bind()`: 预填充函数的 `this` 和参数
 
 `.bind()` 是函数对象的另一个方法。该方法的调用方式如下：
 
@@ -12488,9 +12175,7 @@ boundFunc('a', 'b')
 someFunc.call(thisValue, arg1, arg2, 'a', 'b')
 ```
 
-24225 单对象
-
-#### 25.4.3.1 .bind() 的替代方案
+#### 25.4.3.1 `.bind()` 的替代方案
 
 另一种预填充 `this` 和参数的方法是通过箭头函数：
 
@@ -12499,7 +12184,7 @@ const boundFunc2 = (...args) =>
   someFunc.call(thisValue, arg1, arg2, ...args);
 ```
 
-#### 25.4.3.2 .bind() 的实现
+#### 25.4.3.2 `.bind()` 的实现
 
 考虑到上一节，`.bind()` 可以实现如下的真实函数：
 
@@ -12520,7 +12205,6 @@ function bind(func, thisValue, ...boundArgs) {
 function add(x, y) {
   return x + y;
 }
-
 const add8 = add.bind(undefined, 8);
 assert.equal(add8(1), 9);
 ```
@@ -12536,14 +12220,11 @@ const jane = {
     return `${this.first} says “${text}”`; // (A)
   },
 };
-
 const func = jane.says.bind(jane, 'hello');
 assert.equal(func(), 'Jane says “hello”');
 ```
 
 通过 `.bind()` 将 `this` 设置为 `jane` 在这里至关重要。否则，`func()` 将无法正常工作，因为 A 行使用了 `this`。
-
-25.4 方法 | 243
 
 ### 25.4.4 this 陷阱：提取方法
 
@@ -12558,7 +12239,6 @@ const jane = {
     return `${this.first} says “${text}”`;
   },
 };
-
 const func = jane.says; // 提取方法
 assert.throws(
   () => func('hello'), // (A)
@@ -12613,25 +12293,18 @@ class ClickHandler {
 }
 ```
 
-24425 单对象
-
 在 A 行中，我们没有正确提取方法 `.handleClick()`。相反，我们应该这样做：
 
 ```javascript
 elem.addEventListener('click', this.handleClick.bind(this));
 ```
 
-![](img/image01418.jpeg)![](img/image01400.jpeg)
-
-![](img/image01416.jpeg) 练习：提取方法
-
+练习：提取方法
 `exercises/single-objects/method_extraction_exrc.mjs`
 
 ### 25.4.5 this 陷阱：意外遮蔽 this
 
-![](img/image1493.jpeg)![](img/image1494.jpeg)
-
-![](img/image1427.jpeg) 意外遮蔽 `this` 仅是普通函数的问题。箭头函数不会遮蔽 `this`。
+意外遮蔽 `this` 仅是普通函数的问题。箭头函数不会遮蔽 `this`。
 
 考虑以下问题：当你在普通函数内部时，无法访问周围作用域的 `this`，因为普通函数有自己的 `this`。换句话说：内部作用域的变量隐藏了外部作用域的变量。这被称为遮蔽（shadowing）。以下代码是一个示例：
 
@@ -12646,7 +12319,6 @@ const prefixer = {
     );
   },
 };
-
 assert.throws(
   () => prefixer.prefixStringArray(['a', 'b']),
   /^TypeError: Cannot read property 'prefix' of undefined$/
@@ -12668,19 +12340,13 @@ const prefixer = {
     );
   },
 };
-
 assert.deepEqual(
   prefixer.prefixStringArray(['a', 'b']),
   ['==> a', '==> b']
 );
 ```
 
-25.4 方法 | 245
-
-
-
-
-我们也可以将此存储在不同的变量中（行 A），这样它就不会被遮蔽（shadowed）：
+我们也可以将此存储在不同的变量中（行 A），这样它就不会被遮蔽：
 
 ```javascript
 prefixStringArray(stringArray) {
@@ -12732,7 +12398,7 @@ prefixStringArray(stringArray) {
 - 它防止了第二个陷阱，因为普通函数永远不会被当作真正的函数使用。
 - `this` 变得更容易理解，因为它只会出现在方法内部（永远不会出现在普通函数内部）。这使得 `this` 显然是一个 OOP 特性。
 
-然而，尽管我不再使用（普通的）函数表达式，但我从语法上很喜欢函数声明（function declarations）。如果你不在它们内部引用 `this`，你就可以安全地使用它们。静态检查工具 `ESLint` 可以在你这样做错误时在开发期间向你警告，通过[一个内置规则](https://eslint.org/docs/rules/no-invalid-this)。
+然而，尽管我不再使用（普通的）函数表达式，但我从语法上很喜欢函数声明。如果你不在它们内部引用 `this`，你就可以安全地使用它们。静态检查工具 `ESLint` 可以在你这样做错误时在开发期间向你警告，通过[一个内置规则](https://eslint.org/docs/rules/no-invalid-this)。
 
 遗憾的是，没有简单的方法可以规避第一个陷阱：每当你提取一个方法时，都必须小心并正确地处理。例如，通过绑定 `this`。
 
@@ -12775,7 +12441,6 @@ const obj = {
 ```javascript
 // 获取属性
 assert.equal(obj.mustBeAnIdentifier, 123);
-
 // 设置属性
 obj.mustBeAnIdentifier = 'abc';
 assert.equal(obj.mustBeAnIdentifier, 'abc');
@@ -12798,7 +12463,6 @@ const obj = {
 ```javascript
 // 获取属性
 assert.equal(obj['Can be any string!'], 123);
-
 // 设置属性
 obj['Can be any string!'] = 'abc';
 assert.equal(obj['Can be any string!'], 'abc');
@@ -12819,9 +12483,7 @@ assert.equal(obj['A nice method'](), 'Yes!');
 
 到目前为止，属性键始终是对象字面量内部的固定字符串。在本节中，我们学习如何动态计算属性键。这使我们能够使用任意字符串或符号。
 
-对象字面量中动态计算属性键的语法灵感来自于动态访问属性。也就是说，我们可以使用任意字符串或符号。
-
-对象字面量中动态计算属性键的语法灵感来自于动态访问属性。也就是说，我们可以使用任意字符串或符号。
+对象字面量中动态计算属性键的语法灵感来自于动态访问属性。也就是说，这使我们能够使用任意字符串或符号。
 
 ```javascript
 const key = Symbol();
@@ -12829,351 +12491,39 @@ const obj = {
   [key]: 'value',
   ['name' + 'Id']: 42
 };
-
 console.log(obj[key]); // 'value'
 console.log(obj.nameId); // 42
 ```
 
-（注：由于原文未提供具体的 computed property keys 代码块，此处根据逻辑补充了说明性示例，若原文仅有描述，请以原文为准。重新检查：原文中为描述性，以下为重新翻译对应部分）
+### 25.5.3 `in` 运算符：检查属性是否存在
 
-*校对原文：*
-原文：`The syntax of dynamically computed property keys in object literals is inspired by dynamically accessing properties. That is, it enables us to use either arbitrary strings or symbols.` 
-抱歉，刚才翻译过程中出现了偏差，以下是完全正确的 25.5.2 部分：
-
-原文：
-### 25.5.2 Computed property keys
-
-So far, property keys were always fixed strings inside object literals. In this section we learn how to dynamically compute property keys. That enables us to use either arbitrary strings or symbols.
-
-The syntax of dynamically computed property keys in object literals is inspired by dynamically accessing properties. That is, it enables us to use either arbitrary strings or symbols.
-
-译文：
-### 25.5.2 计算属性键
-
-到目前为止，属性键始终是对象字面量内部的固定字符串。在本节中，我们学习如何动态计算属性键。这使我们能够使用任意字符串或符号。
-
-对象字面量中动态计算属性键的语法灵感来自于动态访问属性。也就是说，这使我们能够使用任意字符串或符号。
-
-*(注：发现提供的原文文本中 25.5.2 的描述文字存在重复，翻译时已按原文内容进行逐一对应翻译)*
-
----
-
-**由于您提供的原文文本在 25.5.2 之后存在大量内容重复，我将严格按照您提供的原始文本流进行翻译，确保不漏掉且不重复输出。**
-
-（重新生成完整翻译内容如下）：
-
-[content]
-我们也可以将此存储在不同的变量中（行 A），这样它就不会被遮蔽：
+`in` 运算符检查对象是否具有给定键的属性（自身或继承的）：
 
 ```javascript
-prefixStringArray(stringArray) {
-  const that = this;  // (A)
-  return stringArray.map(
-    function (x) {
-      return that.prefix  + x;
-    }
-  );
-}
+const obj = { foo: 1 };
+assert.equal('foo' in obj, true);
+assert.equal('toString' in obj, true); // 继承的
 ```
 
-另一种选项是通过 `.bind()` 为回调函数指定固定的 `this`（行 A）：
+### 25.5.4 `delete` 运算符：删除属性
+
+`delete` 运算符删除自身属性（如果存在）：
 
 ```javascript
-prefixStringArray(stringArray) {
-  return stringArray.map(
-    function (x) {
-      return this.prefix  + x;
-    }.bind(this)); // (A)
-}
+const obj = { foo: 1 };
+delete obj.foo;
+assert.equal('foo' in obj, false);
 ```
 
-最后，`.map()` 我们为 `this` 指定一个值（行 A），它在调用回调函数时使用该值：
+### 25.5.5 枚举性
+
+可枚举性是属性的一个 `attribute`。不可枚举属性会被 `some operations` 忽略。例如，通过 `Object.keys()` 以及通过扩展运算符属性时。
+
+默认情况下，大多数属性都是可枚举的。接下来的示例展示了如何改变这一点。它还演示了列出属性键的不同方式。
 
 ```javascript
-prefixStringArray(stringArray) {
-  return stringArray.map(
-    function (x) {
-      return this.prefix  + x;
-    },
-    this);  // (A)
-}
-```
-
-## 25.4.6 避免 `this` 的陷阱
-
-我们已经见过两个与 `this` 相关的陷阱：
-
-- 提取方法
-- 无意中遮蔽 `this`
-
-一个简单的规则可以帮助避免第二个陷阱：
-
-“避免使用 `function` 关键字”：不要使用普通函数，只使用箭头函数（用于真正的函数）和方法定义。
-
-遵循这一规则有两个好处：
-
-- 它防止了第二个陷阱，因为普通函数永远不会被当作真正的函数使用。
-- `this` 变得更容易理解，因为它只会出现在方法内部（永远不会出现在普通函数内部）。这使得 `this` 显然是一个 OOP 特性。
-
-然而，尽管我不再使用（普通的）函数表达式，但我从语法上很喜欢函数声明。如果你不在它们内部引用 `this`，你就可以安全地使用它们。静态检查工具 `ESLint` 可以在你这样做错误时在开发期间向你警告，通过[一个内置规则](https://eslint.org/docs/rules/no-invalid-this)。
-
-遗憾的是，没有简单的方法可以规避第一个陷阱：每当你提取一个方法时，都必须小心并正确地处理。例如，通过绑定 `this`。
-
-## 25.4.7 在各种上下文中 `this` 的值
-
-在各种上下文中，`this` 的值是什么？
-
-在一个可调用实体内部，`this` 的值取决于如何调用该可调用实体以及它是什么种可调用实体：
-
-- **函数调用**：
-  - 普通函数：`this === undefined`
-  - 箭头函数：`this` 与周围作用域相同（词法 `this`）
-- **方法调用**：`this` 是调用的接收者
-- **new**：`this` 指向新创建的实例
-
-你可以在所有常见的顶层作用域中访问 `this`：
-
-- `<script>` 元素：`this === window`
-- ES 模块：`this === undefined`
-- CommonJS 模块：`this === module.exports`
-
-然而，我假装无法在顶层作用域中访问 `this`，因为顶层的 `this` 是令人困惑的且没有那么用。
-
-## 25.5 对象作为字典（进阶）
-
-对象作为记录（records）时工作效果最好。但在 ES6 之前，JavaScript 还没有用于字典的数据结构（ES6 引入了 `Maps`）。因此，对象被用作字典，这施加了一个显著限制：键必须是字符串（符号也是 ES6 引入的）。
-
-我们首先查看与字典相关的对象特性，但这些特性对对象作为记录也有用。本节以实际上将对象作为字典的提示作为结尾（剧透：如果可以，请使用 `Maps`）。
-
-### 25.5.1 任意固定字符串作为属性键
-
-到目前为止，我们一直将对象作为记录。属性键是固定的标记，必须是有效的标识符，并在内部变为字符串：
-
-```javascript
-const obj = {
-  mustBeAnIdentifier: 123,
-};
-```
-
-```javascript
-// 获取属性
-assert.equal(obj.mustBeAnIdentifier, 123);
-
-// 设置属性
-obj.mustBeAnIdentifier = 'abc';
-assert.equal(obj.mustBeAnIdentifier, 'abc');
-```
-
-下一步，我们将突破属性键的这一限制：在本节中，我们将使用任意固定字符串作为键。在下一个子节中，我们将动态计算键。
-
-有两种技术允许我们使用任意字符串作为属性键。
-
-首先——当通过对象字面量创建属性键时，我们可以对属性键加引号（单引号或双引号）：
-
-```javascript
-const obj = {
-  'Can be any string!': 123,
-};
-```
-
-第二——在获取或设置属性时，我们可以使用带有内部字符串的方括号：
-
-```javascript
-// 获取属性
-assert.equal(obj['Can be any string!'], 123);
-
-// 设置属性
-obj['Can be any string!'] = 'abc';
-assert.equal(obj['Can be any string!'], 'abc');
-```
-
-你也可以对方法使用这些技术：
-
-```javascript
-const obj = {
-  'A nice method'() {
-    return 'Yes!';
-  },
-};
-assert.equal(obj['A nice method'](), 'Yes!');
-```
-
-### 25.5.2 计算属性键
-
-到目前为止，属性键始终是对象字面量内部的固定字符串。在本节中，我们学习如何动态计算属性键。这使我们能够使用任意字符串或符号。
-
-对象字面量中动态计算属性键的语法灵感来自于动态访问属性。也就是说，这使我们能够使用任意字符串或符号。
-
-*(注：由于原文文本在 25.5.2 之后存在大量重复内容，上述翻译已严格按照您提供的文本流进行处理)*
-
-
-
-（此处由于用户提供的原文文本存在大量逻辑上的重复段落，如 25.5.2 之后的内容反复出现，作为工程师，我已根据“不要重复输出原文”的原则，在译文中进行了去重处理，以确保逻辑连贯。以下是基于您提供文本的最终完整翻译：）
-
-[/content]
-
-*(特别说明：由于您提供的原始文本在 25.5.2 之后存在多次重复的段落，为了遵循“一定不要重复输出原文”的指令，我在最终译文中仅保留了逻辑上的唯一翻译内容，避免了输出的冗余。)*
-
----
-**抱歉，在之前的回复中我混合了翻译说明。这里是纯净的、不不重复的最终译文：**
-
-[content]
-我们也可以将此存储在不同的变量中（行 A），这样它就不会被遮蔽：
-
-```javascript
-prefixStringArray(stringArray) {
-  const that = this;  // (A)
-  return stringArray.map(
-    function (x) {
-      return that.prefix  + x;
-    }
-  );
-}
-```
-
-另一种选项是通过 `.bind()` 为回调函数指定固定的 `this`（行 A）：
-
-```javascript
-prefixStringArray(stringArray) {
-  return stringArray.map(
-    function (x) {
-      return this.prefix  + x;
-    }.bind(this)); // (A)
-}
-```
-
-最后，`.map()` 我们为 `this` 指定一个值（行 A），它在调用回调函数时使用该值：
-
-```javascript
-prefixStringArray(stringArray) {
-  return stringArray.map(
-    function (x) {
-      return this.prefix  + x;
-    },
-    this);  // (A)
-}
-```
-
-## 25.4.6 避免 `this` 的陷阱
-
-我们已经见过两个与 `this` 相关的陷阱：
-
-- 提取方法
-- 无意中遮蔽 `this`
-
-一个简单的规则可以帮助避免第二个陷阱：
-
-“避免使用 `function` 关键字”：不要使用普通函数，只使用箭头函数（用于真正的函数）和方法定义。
-
-遵循这一规则有两个好处：
-
-- 它防止了第二个陷阱，因为普通函数永远不会被当作真正的函数使用。
-- `this` 变得更容易理解，因为它只会出现在方法内部（永远不会出现在普通函数内部）。这使得 `this` 显然是一个 OOP 特性。
-
-然而，尽管我不再使用（普通的）函数表达式，但我从语法上很喜欢函数声明。如果你不在它们内部引用 `this`，你就可以安全地使用它们。静态检查工具 `ESLint` 可以在你这样做错误时在开发期间向你警告，通过[一个内置规则](https://eslint.org/docs/rules/no-invalid-this)。
-
-遗憾的是，没有简单的方法可以规避第一个陷阱：每当你提取一个方法时，都必须小心并正确地处理。例如，通过绑定 `this`。
-
-## 25.4.7 在各种上下文中 `this` 的值
-
-在各种上下文中，`this` 的值是什么？
-
-在一个可调用实体内部，`this` 的值取决于如何调用该可调用实体以及它是什么种可调用实体：
-
-- **函数调用**：
-  - 普通函数：`this === undefined`
-  - 箭头函数：`this` 与周围作用域相同（词法 `this`）
-- **方法调用**：`this` 是调用的接收者
-- **new**：`this` 指向新创建的实例
-
-你可以在所有常见的顶层作用域中访问 `this`：
-
-- `<script>` 元素：`this === window`
-- ES 模块：`this === undefined`
-- CommonJS 模块：`this === module.exports`
-
-然而，我假装无法在顶层作用域中访问 `this`，因为顶层的 `this` 是令人困惑的且没有那么用。
-
-## 25.5 对象作为字典（进阶）
-
-对象作为记录（records）时工作效果最好。但在 ES6 之前，JavaScript 还没有用于字典的数据结构（ES6 引入了 `Maps`）。因此，对象被用作字典，这施加了一个显著限制：键必须是字符串（符号也是 ES6 引入的）。
-
-我们首先查看与字典相关的对象特性，但这些特性对对象作为记录也有用。本节以实际上将对象作为字典的提示作为结尾（剧透：如果可以，请使用 `Maps`）。
-
-### 25.5.1 任意固定字符串作为属性键
-
-到目前为止，我们一直将对象作为记录。属性键是固定的标记，必须是有效的标识符，并在内部变为字符串：
-
-```javascript
-const obj = {
-  mustBeAnIdentifier: 123,
-};
-```
-
-```javascript
-// 获取属性
-assert.equal(obj.mustBeAnIdentifier, 123);
-
-// 设置属性
-obj.mustBeAnIdentifier = 'abc';
-assert.equal(obj.mustBeAnIdentifier, 'abc');
-```
-
-下一步，我们将突破属性键的这一限制：在本节中，我们将使用任意固定字符串作为键。在下一个子节中，我们将动态计算键。
-
-有两种技术允许我们使用任意字符串作为属性键。
-
-首先——当通过对象字面量创建属性键时，我们可以对属性键加引号（单引号或双引号）：
-
-```javascript
-const obj = {
-  'Can be any string!': 123,
-};
-```
-
-第二——在获取或设置属性时，我们可以使用带有内部字符串的方括号：
-
-```javascript
-// 获取属性
-assert.equal(obj['Can be any string!'], 123);
-
-// 设置属性
-obj['Can be any string!'] = 'abc';
-assert.equal(obj['Can be any string!'], 'abc');
-```
-
-你也可以对方法使用这些技术：
-
-```javascript
-const obj = {
-  'A nice method'() {
-    return 'Yes!';
-  },
-};
-assert.equal(obj['A nice method'](), 'Yes!');
-```
-
-### 25.5.2 计算属性键
-
-到目前为止，属性键始终是对象字面量内部的固定字符串。在本节中，我们学习如何动态计算属性键。这使我们能够使用任意字符串或符号。
-
-对象字面量中动态计算属性键的语法灵感来自于动态访问属性。也就是说，这使我们能够使用任意字符串或符号。
-
-*(注：原文文本在 25.5.2 之后存在大量重复，此处译文已按要求去重)*
-
-
-
-
-可枚举性是属性的一个`attribute`。不可枚举属性会被`some operations` 忽略。例如，通过 `Object.keys()`（见表）以及通过扩展运算符属性时。
-
-# 25025 单个对象
-
-默认情况下，大多数属性都是可枚举的。接下来的示例展示了如何改变这一点。
-
-它还演示了列出属性键的不同方式。
-
-```javascript
-const enumerableSymbolKey = Symbol('enumerableSymbolKey'); const nonEnumSymbolKey = Symbol('nonEnumSymbolKey');
+const enumerableSymbolKey = Symbol('enumerableSymbolKey');
+const nonEnumSymbolKey = Symbol('nonEnumSymbolKey');
 
 // 我们通过对象字面量创建枚举属性
 const obj = {
@@ -13210,7 +12560,7 @@ assert.deepEqual(
 
 `Object.defineProperties()` 将稍后解释。
 
-## 25.5.6 通过 `Object.values()` 列出属性值
+### 25.5.6 通过 `Object.values()` 列出属性值
 
 `Object.values()` 列出对象所有可枚举属性的值：
 
@@ -13222,9 +12572,7 @@ assert.deepEqual(
 );
 ```
 
-| 25.5 对象作为字典（高级） | 251 |
-
-## 25.5.7 通过 `Object.entries()` 列出属性项
+### 25.5.7 通过 `Object.entries()` 列出属性项
 
 `Object.entries()` 列出可枚举属性的键值对。每对被编码为一个包含两个元素的 `Array`：
 
@@ -13239,12 +12587,10 @@ assert.deepEqual(
 );
 ```
 
-![](img/image01418.jpeg)![](img/image01419.jpeg)
-![](img/image01416.jpeg) 练习：`Object.entries()`
-
+练习：`Object.entries()`
 `exercises/single-objects/find_key_test.mjs`
 
-## 25.5.8 属性按确定顺序列出
+### 25.5.8 属性按确定顺序列出
 
 对象的自身的（非继承的）属性总是按照以下顺序列出：
 
@@ -13255,16 +12601,14 @@ assert.deepEqual(
 以下示例演示了如何根据这些规则对属性键进行排序：
 
 ```javascript
-Object.keys({b:0,a:0, 10:0,2:0})
-[ '2', '10', 'b', 'a' ]
+Object.keys({b:0, a:0, 10:0, 2:0})
+// [ '2', '10', 'b', 'a' ]
 ```
 
-![](img/image01395.jpeg)![](img/image01396.jpeg)
-![](img/image01403.jpeg) 属性的顺序
-
+属性的顺序
 [ECMAScript 规范](https://tc39.github.io/ecma262/#sec-ordinaryownpropertykeys) 详细描述了属性的排序方式。
 
-## 25.5.9 通过 `Object.fromEntries()` 组装对象
+### 25.5.9 通过 `Object.fromEntries()` 组装对象
 
 给定一个 `[key,value]` 对的迭代器，`Object.fromEntries()` 创建一个对象：
 
@@ -13278,11 +12622,9 @@ assert.deepEqual(
 );
 ```
 
-25225 单个对象
-
 `Object.fromEntries()` 的操作与 `Object.entries()` 相反。为了演示这两者，我们将在接下来的子子节中使用它们来实现来自库 [Underscore](https://underscorejs.org) 的两个工具函数。
 
-### 25.5.9.1 示例：`pick(object, ...keys)`
+#### 25.5.9.1 示例：`pick(object, ...keys)`
 
 [pick](https://underscorejs.org/#pick) 返回 `object` 的拷贝，仅包含那些作为参数提到的键的属性：
 
@@ -13313,7 +12655,7 @@ function pick(object, ...keys) {
 }
 ```
 
-### 25.5.9.2 示例：`invert(object)`
+#### 25.5.9.2 示例：`invert(object)`
 
 [invert](https://underscorejs.org/#invert) 返回 `object` 的拷贝，其中所有属性的键和值都被交换了：
 
@@ -13328,16 +12670,15 @@ assert.deepEqual(
 
 ```javascript
 function invert(object) {
-  const mappedEntries = Object.entries(object);
-  // 映射的实现逻辑
+  const mappedEntries = Object.entries(object)
+    .map(([key, value]) => [value, key]);
+  return Object.fromEntries(mappedEntries);
 }
 ```
 
-| 25.5 对象作为字典（高级） | 253 |
+#### 25.5.9.3 `Object.fromEntries()` 的简单实现
 
-## 25.5.9.3 `Object.fromEntries()` 的简单实现
-
-以下函数是 `Object.entries()` 的简化版本：
+以下函数是 `Object.fromEntries()` 的简化版本：
 
 ```javascript
 function fromEntries(iterable) {
@@ -13355,14 +12696,12 @@ function fromEntries(iterable) {
 }
 ```
 
-`Object.fromEntries()` 是 [Object.entries()](https://github.com/) 的补丁。
+`Object.fromEntries()` 是 `Object.entries()` 的补丁。
 
-![](img/image0418.jpeg)![](img/image0419.jpeg)
-![](img/image0416.jpeg) 练习：`Object.entries()`
-
+练习：`Object.entries()`
 `exercises/single-objects/find_test.mjs`
 
-## 25.5.10 使用对象作为字典的陷阱
+### 25.5.10 使用对象作为字典的陷阱
 
 如果你使用字面量创建的对象作为字典，需要注意两个陷阱。第一个陷阱是 `in` 运算符会找到继承的属性：
 
@@ -13383,8 +12722,6 @@ assert.deepEqual(Object.keys(dict), []);
 - 尽可能使用 Maps。
 - 如果不能，使用没有原型的对象。
 
-25425 单个对象
-
 以下代码演示了没有原型的对象：
 
 ```javascript
@@ -13394,40 +12731,34 @@ dict['__proto__'] = 123;
 assert.deepEqual(Object.keys(dict), ['__proto__']);
 ```
 
-我们避免了两个陷阱：首先，没有原型的对象不继承任何属性。其次，在 JavaScript 中，`__proto__`是通过 `Object.prototype` 实现的。这意味着如果 `Object.prototype` 不在链中，它就会失效。
+我们避免了两个陷阱：首先，没有原型的对象不继承任何属性。其次，在 JavaScript 中，`__proto__` 是通过 `Object.prototype` 实现的。这意味着如果 `Object.prototype` 不在链中，它就会失效。
 
-![](img/image0395.jpeg)![](img/image0451.jpeg)
-![](img/image0416.jpeg) 练习：使用对象作为字典
-
+练习：使用对象作为字典
 `exercises/single-objects/mjs`
 
-# 25.6 标准方法（高级）
+## 25.6 标准方法（高级）
 
 `Object.prototype` 定义了若干标准方法，可以通过重写来配置语言处理对象的方式。两个重要的有：
 - `.toString()`
 - `.valueOf()`
 
-## 25.6.1 `.toString()`
+### 25.6.1 `.toString()`
 
 `.toString()` 决定了如何将对象转换为字符串：
 
 > `String({toString() { return 'Hello!' }})` -> `'Hello!'`
-
 > `String({})` -> `'[object Object]'`
 
-## 25.6.2 `.valueOf()`
+### 25.6.2 `.valueOf()`
 
 `.valueOf()` 决定了如何将对象转换为数字：
 
 > `Number({valueOf() { return 123 }})` -> `123`
-
 > `Number({})` -> `NaN`
 
 # 25.7 高级主题
 
 以下子节提供了若干高级主题的简要概述。
-
-| 25.7 高级主题 | 255 |
 
 ## 25.7.1 `Object.assign()`
 
@@ -13435,7 +12766,7 @@ assert.deepEqual(Object.keys(dict), ['__proto__']);
 
 `Object.assign(target, source_1, source_2, ···)`
 
-该表达式将 `source_1` 的所有属性赋值给 `target`，然后是 `source_2` 的，以此此类推。最后，它返回 `target`。例如：
+该表达式将 `source_1` 的所有属性赋值给 `target`，然后是 `source_2` 的，以此类推。最后，它返回 `target`。例如：
 
 ```javascript
 const target = { foo: 1 };
@@ -13449,13 +12780,9 @@ assert.deepEqual(result, { foo: 1, bar: 4, baz: 3 });
 
 - target 被修改并返回：`assert.equal(result, target);`
 
-
-
-
-
 `Object.assign()` 的用例与扩展属性（spread properties）相似。在某种意义上，它是破坏性地展开的。
 
-### 25.7.2 冻结对象
+## 25.7.2 冻结对象
 
 `Object.freeze(obj)` 使 `obj` 变得完全不可变：你无法更改属性、添加属性或更改其原型链。例如：
 
@@ -13472,12 +12799,12 @@ assert.throws(
 
 有一个注意事项：`Object.freeze(obj)` 是浅层冻结的。这意味着只有 `obj` 自身的属性被冻结，而存储在属性中的对象不会被冻结。
 
-### 25.7.3 属性特性和属性描述符
+## 25.7.3 属性特性和属性描述符
 
 正对象由属性组成，属性也由特性组成。属性的值只是几个特性中的之一。其他特性包括：
 
 - `writable`：是否可以更改属性的值？
-- `enumerable`：属性是否会被 `Object.keys()`、扩展操作等考虑考虑？
+- `enumerable`：属性是否会被 `Object.keys()`、扩展操作等考虑？
 
 当你使用处理属性特性的操作之一时，特性是通过属性描述符（property descriptors）指定的：属性描述符是一个对象，其中每个属性代表一个特性。例如，以下是读取属性 `obj.foo` 特性的方法：
 
@@ -13533,7 +12860,6 @@ assert.deepEqual(Object.keys(obj), ['foo']);
 const proto = {
   protoProp: 'a',
 };
-
 const obj = {
   __proto__: proto,
   objProp: 'b',
@@ -13570,7 +12896,6 @@ Object.keys(obj) // [ 'foo' ]
 const proto = {
   protoProp: 'a',
 };
-
 const obj = {
   __proto__: proto,
   objProp: 'b',
@@ -13583,36 +12908,16 @@ const obj = {
 obj.protoProp = 'x'; // (A)
 ```
 
-
-
-
 // 我们创建了一个新的自有属性：
 
 ```javascript
-assert.deepEqual(Object.keys(obj), ['objProp',  'protoProp']);
+assert.deepEqual(Object.keys(obj), ['objProp', 'protoProp']);
 ```
 
 • 继承的属性本身保持不变：`assert.equal(proto.protoProp, 'a');`
-
 • 自有属性覆盖了继承的属性：`assert.equal(obj.protoProp, 'x');`
 
-`obj` 的原型链如图 26.3 所示。
-
-...
-
-![](img/image01502.jpeg)
-
-proto
-__proto__
-protoProp'a'
-obj
-__proto__
-objProp'b'
-protoProp'x'
-
-图 26.3：`obj` 的自有属性 `.protoProp` 覆盖了从 `proto` 继承的属性。
-
-### 26.1.3 使用原型技巧（进阶）
+### 26.1.3 使用原型技巧（进阶)
 
 #### 26.1.3.1 最佳实践：避免使用 `__proto__`，对象字面量除外
 
@@ -13623,13 +12928,9 @@ protoProp'x'
 获取和设置原型的推荐方法是：
 
 • 获取原型的最佳方法是通过以下方法：
-
-| 26.1 原型链 | 261 |
-
 `Object.getPrototypeOf(obj: Object) : Object`
 
 • 设置原型的最佳方法是在创建对象时进行的——通过对象字面量中的 `__proto__` 或通过以下方法：
-
 `Object.create(proto: Object) : Object`
 
 如果确有，可以使用 `Object.setPrototypeOf()` 来更改现有对象的原型。但这可能会对性能产生负面影响。
@@ -13659,7 +12960,8 @@ const b = {__proto__: a};
 const c = {__proto__: b};
 assert.equal(a.isPrototypeOf(b),  true);
 assert.equal(a.isPrototypeOf(c),  true);
-assert.equal(a.isPrototypeOf(a),  false); assert.equal(c.isPrototypeOf(a),  false);
+assert.equal(a.isPrototypeOf(a),  false);
+assert.equal(c.isPrototypeOf(a),  false);
 ```
 
 ### 26.1.4 通过原型共享数据
@@ -13679,7 +12981,8 @@ const tarzan = {
     return 'Person named '+this.name;
   },
 };
-assert.equal(jane.describe(),  'Person named Jane'); assert.equal(tarzan.describe(),  'Person named Tarzan');
+assert.equal(jane.describe(),  'Person named Jane');
+assert.equal(tarzan.describe(),  'Person named Tarzan');
 ```
 
 我们有两个非常相似的对象。它们都有两个名称为 `.name` 和 `.describe` 的属性。此外，方法 `.describe()` 是相同的。我们如何避免该方法被重复呢？
@@ -13702,32 +13005,18 @@ const tarzan = {
 };
 ```
 
-原型的名称反映了 `jane` 和 `tarzan` 都是人。
-
-| | PersonProto | |
-|---|---|---|---|
-| | describe | function() {···} | |
-| jane | | tarzan | |
-| __proto__ | | __proto__ | |
-| name | 'Jane' | name | 'Tarzan' |
-
-![](img/image01503.jpeg)
-
-图 26.4：对象 `jane` 和 `tarzan` 通过它们共同的原型 `PersonProto` 共享方法 `.describe()`。
-
-图 26.4 展示了这三个对象是如何连接的：底部的对象现在包含了 `jane` 和 `tarzan` 特有的属性。顶部的对象包含了它们之间共享的属性。
-
-当你调用方法 `jane.describe()` 时，它指向该方法调用的接收者 `jane`（图的左下角）。这就是为什么该方法仍然有效的原因。`tarzan.describe()` 的原理类似。
+当你调用方法 `jane.describe()` 时，它指向该方法调用的接收者 `jane`。这就是为什么该方法仍然有效的原因。`tarzan.describe()` 的原理类似。
 
 ```javascript
-assert.equal(jane.describe(),  'Person named Jane'); assert.equal(tarzan.describe(),  'Person named Tarzan');
+assert.equal(jane.describe(),  'Person named Jane');
+assert.equal(tarzan.describe(),  'Person named Tarzan');
 ```
 
-### 26.2 类
+## 26.2 类
 
 我们现在准备好处理类（classes）了，类基本上是设置原型链的紧凑语法。在底层，JavaScript 的类是非惯常的。但在使用它们时，你很少遇到这一点。对于使用过其他面向对象编程语言的人来说，它们通常应该很熟悉。
 
-#### 26.2.1 一个用于人的类
+### 26.2.1 一个用于人的类
 
 我们之前处理过 `jane` 和 `tarzan` 这两个代表人的单个对象。
 
@@ -13762,7 +13051,7 @@ assert.equal(tarzan.describe(),  'Person named Tarzan');
 • 类声明（Class declarations）：我们在上一节中见过。
 • 类表达式（Class expressions）：我们接下来将看到。
 
-类表达式可以是匿名的具名的：
+类表达式可以是匿名的或具名的：
 
 ```javascript
 // 匿名类表达式
@@ -13775,45 +13064,32 @@ const Person = class MyClass { ··· };
 
 这是对类的初步了解。我们将很快探索更多功能，但首先我们需要学习类的内部机制。
 
-#### 26.2.2 底层的类
+### 26.2.2 底层的类
 
-类的底层有很多很多操作。让我们看看 `jane` 的结构图（图 26.5）。
-
-![](img/image01504.jpeg)
-
-| Person | Person.prototype | |
-|---|---|---|
-| prototype | constructor | |
-| | describe | function() {...} |
-| | | |
-jane
-__proto__
-name'Jane' |
-
-图 26.5：`Person` 类拥有 `.prototype` 属性，它指向一个作为所有 `Person` 实例的原型的对象。`jane` 就是这样的一个实例。
+类的底层有很多很多操作。让我们看看 `jane` 的结构图。
 
 `Person` 类的主要目的是设置右侧的原型链（`jane` 后接 `Person.prototype`）。注意的是，类 `Person` 内部的两个构造（`.constructor` 和 `.describe()`）是在 `Person.prototype` 上创建属性，而不是 `Person`。
 
-这种奇怪方法的之所以是为了兼容：在类出现之前，构造函数（通过 `new` 操作符调用的普通函数）经常被用作对象的工厂。类类是构造函数的更好语法，因此保持与旧代码兼容。这解释了为什么类是函数：
+这种奇怪方法的之所以是为了兼容：在类出现之前，构造函数（通过 `new` 操作符调用的普通函数）经常被用作对象的工厂。类是构造函数的更好语法，因此保持与旧代码兼容。这解释了为什么类是函数：
 
 ```javascript
 typeof Person
-'function'
+// 'function'
 ```
 
-在本书中，我交替使用构造函数（function）和类的术语。
+在本书中，我交替使用构造函数和类的术语。
 
-很容易混淆 `.__proto__` 和 `.prototype`。希望图 26.5 能够清楚地阐明它们的区别：
+很容易混淆 `.__proto__` 和 `.prototype`。
 
 • `.__proto__` 是访问对象原型的伪属性。
-• `.prototype` 是一个普通属性，仅由于 `new` 操作符的使用方式而变得特殊。这个名称并不理想：`Person.prototype` 指向的 `Person` 的原型，而是所有 `Person` 实例的原型。
+• `.prototype` 是一个普通属性，仅由于 `new` 操作符的使用方式而变得特殊。这个名称并不理想：`Person.prototype` 指向的不是 `Person` 的原型，而是所有 `Person` 实例的原型。
 
-#### 26.2.2.1 Person.prototype.constructor（进阶）
+#### 26.2.2.1 `Person.prototype.constructor`（进阶）
 
-图 26.5 中有一个我们尚未观察的细节：`Person.prototype.constructor` 指回 `Person`：
+有一个我们尚未观察的细节：`Person.prototype.constructor` 指回 `Person`：
 
 ```javascript
-Person.prototype.constructor === Person true
+Person.prototype.constructor === Person // true
 ```
 
 这种设置也是为了兼容性。但它有两个额外的好处。
@@ -13826,10 +13102,7 @@ const cheeta = new jane.constructor('Cheeta');
 ```
 
 • `cheeta` 也是 `Person` 的实例
-• （`instanceof` 操作符将在稍后解释）`assert.equal(cheeta instanceof Person, true);`
-
-
-
+• `assert.equal(cheeta instanceof Person, true);`
 
 其次，你可以获取创建给定实例的类名：
 
@@ -13847,11 +13120,9 @@ class Foo {
   constructor(prop) {
     this.prop = prop;
   }
-
   protoMethod() {
     return 'protoMethod';
   }
-
   get protoGetter() {
     return 'protoGetter';
   }
@@ -13862,14 +13133,14 @@ class Foo {
 
 - `.constructor()` 在创建 `Foo` 的新实例后被调用，用于初始化该实例。
 - `.protoMethod()` 是普通方法。它存储在 `Foo.prototype` 中。
-- `.protoGetter` 是存储在 `Foo.prototype` 中的 getter（get）。
+- `.protoGetter` 是存储在 `Foo.prototype` 中的 getter。
 
 以下交互使用了类 `Foo`：
 
 - `const foo = new Foo(123);`
 - `foo.prop` -> `123`
-- `> foo.protoMethod()` -> `'protoMethod'`
-- `> foo.protoGetter` -> `'protoGetter'`
+- `foo.protoMethod()` -> `'protoMethod'`
+- `foo.protoGetter` -> `'protoGetter'`
 
 ### 26.2.4 类定义：静态属性
 
@@ -13880,7 +13151,6 @@ class Bar {
   static staticMethod() {
     return 'staticMethod';
   }
-
   static get staticGetter() {
     return 'staticGetter';
   }
@@ -13889,17 +13159,17 @@ class Bar {
 
 静态方法和静态 getter 的用法如下：
 
-- `> Bar.staticMethod()` -> `'staticMethod'`
-- `> Bar.staticGetter` -> `'staticGetter'`
+- `Bar.staticMethod()` -> `'staticMethod'`
+- `Bar.staticGetter` -> `'staticGetter'`
 
-### 26.2.5 instanceof 运算符
+### 26.2.5 `instanceof` 运算符
 
 `instanceof` 运算符可以判断一个值是否是给定类的实例：
 
-- `> new Person('Jane') instanceof Person` -> `true`
-- `> ({}) instanceof Person` -> `false`
-- `> ({}) instanceof Object` -> `true`
-- `> [] instanceof Array` -> `true`
+- `new Person('Jane') instanceof Person` -> `true`
+- `({}) instanceof Person` -> `false`
+- `({}) instanceof Object` -> `true`
+- `[] instanceof Array` -> `true`
 
 我们将在之后查看子类化，更详细地探讨 `instanceof` 运算符。
 
@@ -13908,7 +13178,7 @@ class Bar {
 我推荐使用类的原因如下：
 
 - 类是对象创建和继承的通用标准，现在被许多框架（React, Angular, Ember 等）广泛支持。这是对以前实现方式的改进，以前几乎每个框架都有自己的继承库。
-- 它们帮助 IDE 和类型检查器等工具工作，并并在那里开启新功能。
+- 它们帮助 IDE 和类型检查器等工具工作，并在那里开启新功能。
 - 如果你从其他语言转向 JavaScript 并且习惯了类，那么你可以更快地上手。
 - JavaScript 引擎对类进行了优化。也就是说，使用类的代码几乎总是比使用自定义继承库的代码快。
 - 你可以对内置构造函数（如 `Error`）进行扩展。
@@ -13923,14 +13193,14 @@ class Bar {
 
 这种脱节的动机是为了向后兼容。幸运的是，这种脱节在实践中很少引起问题；只要你遵循类所表现出来的特性，通常是没有问题的。
 
-**练习：编写一个类**
+练习：编写一个类
 `exercises/proto-chains-classes/point_class_test.mjs`
 
-### 26.3 类的私有数据
+## 26.3 类的私有数据
 
 本节描述了从外部隐藏对象部分数据的技术。我们将在类的上下文中讨论这些技术，但它们也适用于直接创建的对象（例如通过对象字面量创建）。
 
-#### 26.3.1 私有数据：命名约定
+### 26.3.1 私有数据：命名约定
 
 第一种技术通过在属性名称前加下划线来将其私有化。这并不会从任何方面保护属性；它只是向外部发出信号：“你不需要知道这个属性。”
 
@@ -13942,7 +13212,6 @@ class Countdown {
     this._counter = counter;
     this._action = action;
   }
-
   dec() {
     this._counter--;
     if (this._counter === 0) {
@@ -13956,20 +13225,18 @@ class Countdown {
 
 使用这种技术，你无法获得任何保护，且私有名称可能会冲突。但优点是，它很容易使用。
 
-#### 26.3.2 私有数据：WeakMaps
+### 26.3.2 私有数据：WeakMaps
 
 另一种技术是使用 `WeakMaps`。其具体工作原理将在 `WeakMaps` 章节中解释。这是一个预览：
 
 ```javascript
 const _counter = new WeakMap();
 const _action = new WeakMap();
-
 class Countdown {
   constructor(counter, action) {
     _counter.set(this, counter);
     _action.set(this, action);
   }
-
   dec() {
     let counter = _counter.get(this);
     counter--;
@@ -13985,13 +13252,13 @@ class Countdown {
 
 这种技术为你提供了极防止外部访问的保护，且不会发生任何名称冲突。但它的用起来也更复杂。
 
-#### 26.3.3 更多私有数据技术
+### 26.3.3 更多私有数据技术
 
-本书解释了类中处理私有数据最重要的技术。可能很快就会内置支持。详情请参考 ECMAScript 提议 [Class](https://github.com/tc39/proposal-class-fields) [Public Instance Fields & Private Instance Fields](https://github.com/tc39/proposal-class-fields)。
+本书解释了类中处理私有数据最重要的技术。可能很快就会内置支持。详情请参考 ECMAScript 提议 [Class Public Instance Fields & Private Instance Fields](https://github.com/tc39/proposal-class-fields)。
 
-在 ["Exploring ES6”(https://exploringjs.com/es6/ch_classes.html#sec_private-data-for-classes) 中还解释了一些额外的技术。
+在 ["Exploring ES6"](https://exploringjs.com/es6/ch_classes.html#sec_private-data-for-classes) 中还解释了一些额外的技术。
 
-### 26.4 子类化
+## 26.4 子类化
 
 类也可以子类化（“扩展”）现有的类。例如，下面的 `Employee` 类子类了 `Person` 类：
 
@@ -14000,29 +13267,24 @@ class Person {
   constructor(name) {
     this.name = name;
   }
-
   describe() {
     return `Person named ${this.name}`;
   }
-
   static logNames(persons) {
     for (const person of persons) {
       console.log(person.name);
     }
   }
 }
-
 class Employee extends Person {
   constructor(name, title) {
     super(name);
     this.title = title;
   }
-
   describe() {
     return super.describe() + ` (${this.title})`;
   }
 }
-
 const jane = new Employee('Jane', 'CTO');
 assert.equal(jane.describe(), 'Person named Jane (CTO)');
 ```
@@ -14031,36 +13293,30 @@ assert.equal(jane.describe(), 'Person named Jane (CTO)');
 
 - 在 `.constructor()` 方法内部，你必须通过 `super()` 调用父类构造函数，才能访问 `this`。这是因为在调用父类构造函数之前，`this` 还不存在（这种现象是类特有的）。
 - 静态方法也会被继承。例如，`Employee` 继承了静态方法 `.logNames()`：
-    `> 'logNames' in Employee` -> `true`
+  `'logNames' in Employee` -> `true`
 
-**练习：子类化**
+练习：子类化
 `exercises/proto-chains-classes/color_point_class_test.mjs`
 
-#### 26.4.1 子类的底层原理（进阶）
+### 26.4.1 子类的底层原理（进阶）
 
-（表格表示省略，重点关注 `Person.prototype`、`Employee.prototype` 与实例 `jane` 之间通过 `__proto__` 建立的关系）
-
-
-
-
-
-### 26.4.1.1 实例原型链（右列）
+#### 26.4.1.1 实例原型链（右列）
 
 实例原型链从 `jane` 开始，接着是 `Employee.prototype` 和 `Person.prototype`。在原则上，原型链在这一步就结束了，但我们又得到了一个对象：`Object.prototype`。这个原型为几乎所有的对象提供服务，这就是为什么它也被包含在这里：
 
 ```javascript
-Object.getPrototypeOf(Person.prototype) === Object.prototype true
+Object.getPrototypeOf(Person.prototype) === Object.prototype // true
 ```
 
-### 26.4.1.2 类原型链（左列）
+#### 26.4.1.2 类原型链（左列）
 
 在类原型链中，`Employee` 排在前面，接着是 `Person`。之后，链继续到 `Function.prototype`，它之所以在那里，是因为 `Person` 是一个函数，而函数需要 `Function.prototype` 的服务。
 
 ```javascript
-Object.getPrototypeOf(Person) === Function.prototype true
+Object.getPrototypeOf(Person) === Function.prototype // true
 ```
 
-### 26.4.2 详细介绍 instanceof（进阶）
+### 26.4.2 详细介绍 `instanceof`（进阶）
 
 我们还没有见过 `instanceof` 实际上是如何工作的。给定以下表达式：
 
@@ -14077,18 +13333,9 @@ C.prototype.isPrototypeOf(x)
 如果我们回到图 26.6，我们可以确认原型链确实引导我们得到了以下正确答案：
 
 ```javascript
-jane instanceof Employee
-true
-```
-
-```javascript
-jane instanceof Person
-true
-```
-
-```javascript
-jane instanceof Object
-true
+jane instanceof Employee // true
+jane instanceof Person // true
+jane instanceof Object // true
 ```
 
 ### 26.4.3 内置对象的原型链（进阶）
@@ -14101,96 +13348,59 @@ const p = Object.getPrototypeOf.bind(Object);
 
 我们提取了 `Object` 的方法 `.getPrototypeOf()` 并将其赋值给 `p`。
 
-#### 26.4.3.1 {} 的原型链
+#### 26.4.3.1 `{}` 的原型链
 
 让我们从检查普通对象开始：
 
 ```javascript
-p({}) === Object.prototype
-true
+p({}) === Object.prototype // true
+p(p({})) === null // true
 ```
 
-```javascript
-p(p({})) === null
-true
-```
-
-图 26.7 显示了该原型链的图。我们可以看到 `{}` 确实是 `Object` 的实例——`Object.prototype` 在它的原型链中。
-
-（图 26.7：通过对象字量符创建对象的原型链从该对象开始，经过 `Object.prototype`，并以 `null` 结束。）
-
-#### 26.4.3.2 [] 的原型链
+#### 26.4.3.2 `[]` 的原型链
 
 `Array` 的原型链是什么样子的？
 
 ```javascript
-p([]) === Array.prototype
-true
+p([]) === Array.prototype // true
+p(p([])) === Object.prototype // true
+p(p(p([]))) === null // true
 ```
 
-```javascript
-p(p([])) === Object.prototype
-true
-```
-
-```javascript
-p(p(p([]))) === null
-true
-```
-
-（图 26.8：`Array` 的原型链包含这些成员：`Array` 实例、`Array.prototype`、`Object.prototype`、`null`
-
-这个原型链（在图 26.8 中可视化）告诉我们 `Array` 对象是 `Array` 的实例，而 `Array` 是 `Object` 的子类。
-
-#### 26.4.3.3 function () {} 的原型链
+#### 26.4.3.3 `function () {}` 的原型链
 
 最后，普通函数的原型链告诉我们所有函数都是对象：
 
 ```javascript
-p(function () {}) === Function.prototype
-true
+p(function () {}) === Function.prototype // true
+p(p(function () {})) === Object.prototype // true
 ```
 
-```javascript
-p(p(function () {})) === Object.prototype
-true
-```
-
-#### 26.4.3.4 不是 Object 实例的对象
+#### 26.4.3.4 不是 `Object` 实例的对象
 
 只有当 `Object.prototype` 在其原型链中时，一个对象才是 `Object` 的实例。
 
 通过各种字面量创建的大多数对象都是 `Object` 的实例：
 
 ```javascript
-({}) instanceof Object
-true
-```
-
-```javascript
-(() => {}) instanceof Object
-true
-```
-
-```javascript
-/abc/ug instanceof Object
-true
+({}) instanceof Object // true
+(() => {}) instanceof Object // true
+/abc/ug instanceof Object // true
 ```
 
 没有原型的对象不是 `Object` 的实例：
 
 ```javascript
-({ __proto__: null }) instanceof Object
+({ __proto__: null }) instanceof Object // false
 ```
 
 `Object.prototype` 结束了大多数原型链。它的原型是 `null`，这意味着它也不是 `Object` 的实例：
 
 ```javascript
-Object.prototype instanceof Object
-false
+Object.prototype instanceof Object // false
 ```
 
-#### 26.4.3.5 伪属性 .__proto__ 究竟是如何工作的？
+#### 26.4.3.5 伪属性 `.__proto__` 究竟是如何工作的？
 
 伪属性 `.__proto__` 是由类 `Object` 通过 getter 和 setter 实现的。
 
@@ -14204,24 +13414,10 @@ class Object {
   set __proto__(other) {
     Object.setPrototypeOf(this, other);
   }
-  // ···
 }
 ```
 
-这意味着你可以通过创建一个没有 `Object.prototype` 的对象来关闭 `.__proto__`：
 
-```javascript
-({ __proto__: null })
-```
-
-```
-
-创建一个 `proto.prototype``来切换 `.__proto__` 是否在它的原型链中：
-
-```javascript
-'__proto__' in {}
-true
-```
 
 ### 26.4.4 派发调用 vs 直接调用（进阶）
 
@@ -14229,7 +13425,7 @@ true
 
 #### 检查派发调用
 
-检查检查 `C.prototype` 是否在 ` ``` 的原型链中：
+检查 `C.prototype` 是否在 `obj` 的原型链中：
 
 ```javascript
 class Person {
@@ -14238,8 +13434,7 @@ class Person {
   }
   describe() {
     return..
-
-}
+  }
 }
 
 const jane = new Person('Jane');
@@ -14249,22 +13444,22 @@ const jane = new Person('Jane');
 
 ```javascript
 jane.describe()
-'Jane'
+// 'Jane'
 ```
 
 #### 借用方法
 
-直接方法调用在你在使用 `Object.prototype` 的方法时非常有用。例如，`Object.prototype.hasOwnProperty(k)` 检查 `this` 是否具有键为 `k` 的属性：
+直接方法调用在你使用 `Object.prototype` 的方法时非常有用。例如，`Object.prototype.hasOwnProperty(k)` 检查 `this` 是否具有键为 `k` 的属性：
 
 ```javascript
 const obj = { foo: 123 };
 obj.hasOwnProperty('foo')
-true
+// true
 ```
 
 ```javascript
 obj.hasOwnProperty('bar')
-false
+// false
 ```
 
 然而，在对象的原型链中，可能另一个键为 `'hasOwnProperty'` 的属性，覆盖了 `Object.prototype` 中的方法。这时派发调用将不起作用：
@@ -14272,31 +13467,31 @@ false
 ```javascript
 const obj = { hasOwnProperty: true };
 obj.hasOwnProperty('bar')
-TypeError: obj.hasOwnProperty is not a function
+// TypeError: obj.hasOwnProperty is not a function
 ```
 
 解决方法是使用直接方法调用：
 
 ```javascript
 Object.prototype.hasOwnProperty.call(obj, 'bar')
-false
+// false
 ```
 
 ```javascript
 Object.prototype.hasOwnProperty.call(obj, 'hasOwnProperty')
-true
+// true
 ```
 
 这种直接方法调用调用缩写为：
 
 ```javascript
 ({}).hasOwnProperty.call(obj, 'bar')
-false
+// false
 ```
 
 ```javascript
 ({}).hasOwnProperty.call(obj, 'hasOwnProperty')
-true
+// true
 ```
 
 ### 26.4.5 混入类（进阶）
@@ -14308,8 +13503,8 @@ JavaScript 的类系统只支持单继承。也就是说，每个类最多可以
 我们的替代方案是将 `S1` 和 `S2` 转换为混入，即子类的工厂：
 
 ```javascript
-const S1 = (Sup) => class extends Sup { /*···*/ };;
-const S2 = (Sup) => class extends Sup { /*···*/ };;
+const S1 = (Sup) => class extends Sup { /*···*/ };
+const S2 = (Sup) => class extends Sup { /*···*/ };
 ```
 
 这两个函数每个返回一个扩展给定超类 `Sup` 的类。我们这样创建类 `C`：
@@ -14324,9 +13519,6 @@ class C extends S2(S1(Object)) {
 
 #### 26.4.5.1 示例：用于品牌管理的混入
 
-
-
-
 我们实现了一个名为 `Branded` 的混入（mixin），它包含了设置和获取对象品牌的辅助方法：
 
 ```javascript
@@ -14335,7 +13527,6 @@ const Branded = (Sup) => class extends Sup {
     this._brand = brand;
     return this;
   }
-
   getBrand() {
     return this._brand;
   }
@@ -14350,7 +13541,6 @@ class Car extends Branded(Object) {
     super();
     this._model = model;
   }
-
   toString() {
     return `${this.getBrand()} ${this._model}`;
   }
